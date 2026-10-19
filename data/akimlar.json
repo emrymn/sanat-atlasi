@@ -1,0 +1,266 @@
+[
+ {
+  "ad": "Antik Yunan ve Roma",
+  "sira": 0,
+  "komsular": [
+   "Neoklasisizm",
+   "Yüksek Rönesans"
+  ]
+ },
+ {
+  "ad": "Romanesk",
+  "sira": 1,
+  "komsular": [
+   "Gotik"
+  ]
+ },
+ {
+  "ad": "Gotik",
+  "sira": 2,
+  "komsular": [
+   "Proto-Rönesans",
+   "Uluslararası Gotik",
+   "Romanesk"
+  ]
+ },
+ {
+  "ad": "Proto-Rönesans",
+  "sira": 3,
+  "komsular": [
+   "Gotik",
+   "Erken Rönesans"
+  ]
+ },
+ {
+  "ad": "Uluslararası Gotik",
+  "sira": 4,
+  "komsular": [
+   "Gotik",
+   "Kuzey Rönesansı",
+   "Erken Rönesans"
+  ]
+ },
+ {
+  "ad": "Erken Rönesans",
+  "sira": 5,
+  "komsular": [
+   "Proto-Rönesans",
+   "Yüksek Rönesans",
+   "Venedik Rönesansı"
+  ]
+ },
+ {
+  "ad": "Kuzey Rönesansı",
+  "sira": 6,
+  "komsular": [
+   "Uluslararası Gotik",
+   "Erken Rönesans",
+   "Flaman Barok"
+  ]
+ },
+ {
+  "ad": "Yüksek Rönesans",
+  "sira": 7,
+  "komsular": [
+   "Erken Rönesans",
+   "Venedik Rönesansı",
+   "Maniyerizm"
+  ]
+ },
+ {
+  "ad": "Venedik Rönesansı",
+  "sira": 8,
+  "komsular": [
+   "Yüksek Rönesans",
+   "Maniyerizm"
+  ]
+ },
+ {
+  "ad": "Maniyerizm",
+  "sira": 9,
+  "komsular": [
+   "Yüksek Rönesans",
+   "Venedik Rönesansı",
+   "İtalyan Barok ve Caravaggizm"
+  ]
+ },
+ {
+  "ad": "İtalyan Barok ve Caravaggizm",
+  "sira": 10,
+  "komsular": [
+   "İspanyol Barok",
+   "Flaman Barok",
+   "Hollanda Altın Çağı",
+   "Maniyerizm"
+  ]
+ },
+ {
+  "ad": "İspanyol Barok",
+  "sira": 11,
+  "komsular": [
+   "İtalyan Barok ve Caravaggizm",
+   "Hollanda Altın Çağı"
+  ]
+ },
+ {
+  "ad": "Flaman Barok",
+  "sira": 12,
+  "komsular": [
+   "Hollanda Altın Çağı",
+   "İtalyan Barok ve Caravaggizm"
+  ]
+ },
+ {
+  "ad": "Hollanda Altın Çağı",
+  "sira": 13,
+  "komsular": [
+   "Flaman Barok",
+   "İspanyol Barok",
+   "İtalyan Barok ve Caravaggizm"
+  ]
+ },
+ {
+  "ad": "Fransız Klasisizmi",
+  "sira": 14,
+  "komsular": [
+   "Rokoko",
+   "İtalyan Barok ve Caravaggizm",
+   "Neoklasisizm"
+  ]
+ },
+ {
+  "ad": "Rokoko",
+  "sira": 15,
+  "komsular": [
+   "Fransız Klasisizmi",
+   "Neoklasisizm"
+  ]
+ },
+ {
+  "ad": "Neoklasisizm",
+  "sira": 16,
+  "komsular": [
+   "Rokoko",
+   "Akademizm ve Oryantalizm",
+   "Romantizm"
+  ]
+ },
+ {
+  "ad": "Romantizm",
+  "sira": 17,
+  "komsular": [
+   "Neoklasisizm",
+   "Prerafaelitler",
+   "Barbizon ve Realizm"
+  ]
+ },
+ {
+  "ad": "Prerafaelitler",
+  "sira": 18,
+  "komsular": [
+   "Romantizm",
+   "Sembolizm",
+   "Akademizm ve Oryantalizm"
+  ]
+ },
+ {
+  "ad": "Akademizm ve Oryantalizm",
+  "sira": 19,
+  "komsular": [
+   "Neoklasisizm",
+   "Romantizm",
+   "Prerafaelitler"
+  ]
+ },
+ {
+  "ad": "Barbizon ve Realizm",
+  "sira": 20,
+  "komsular": [
+   "Romantizm",
+   "Empresyonizm"
+  ]
+ },
+ {
+  "ad": "Empresyonizm",
+  "sira": 21,
+  "komsular": [
+   "Barbizon ve Realizm",
+   "Post-Empresyonizm"
+  ]
+ },
+ {
+  "ad": "Ukiyo-e (Japon baskısı)",
+  "sira": 22,
+  "komsular": [
+   "Empresyonizm",
+   "Post-Empresyonizm"
+  ]
+ },
+ {
+  "ad": "Post-Empresyonizm",
+  "sira": 23,
+  "komsular": [
+   "Empresyonizm",
+   "Sembolizm",
+   "Ekspresyonizm"
+  ]
+ },
+ {
+  "ad": "Sembolizm",
+  "sira": 24,
+  "komsular": [
+   "Post-Empresyonizm",
+   "Prerafaelitler",
+   "Art Nouveau ve Viyana Secession"
+  ]
+ },
+ {
+  "ad": "Art Nouveau ve Viyana Secession",
+  "sira": 25,
+  "komsular": [
+   "Sembolizm",
+   "Ekspresyonizm"
+  ]
+ },
+ {
+  "ad": "Ekspresyonizm",
+  "sira": 26,
+  "komsular": [
+   "Post-Empresyonizm",
+   "Art Nouveau ve Viyana Secession",
+   "Kübizm"
+  ]
+ },
+ {
+  "ad": "Kübizm",
+  "sira": 27,
+  "komsular": [
+   "Ekspresyonizm",
+   "Dada"
+  ]
+ },
+ {
+  "ad": "Dada",
+  "sira": 28,
+  "komsular": [
+   "Kübizm",
+   "Sürrealizm"
+  ]
+ },
+ {
+  "ad": "Sürrealizm",
+  "sira": 29,
+  "komsular": [
+   "Dada",
+   "Sembolizm"
+  ]
+ },
+ {
+  "ad": "Savaş sonrası figürasyon",
+  "sira": 30,
+  "komsular": [
+   "Sürrealizm",
+   "Ekspresyonizm"
+  ]
+ }
+]
