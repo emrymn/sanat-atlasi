@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#F1E8D6"/>
+  <g id="motif">
+    <!-- kemerli pencere / çerçeve -->
+    <path d="M128 436V236a128 128 0 0 1 256 0v200z" fill="#9A6B1F"/>
+    <path d="M152 412V238a104 104 0 0 1 208 0v174z" fill="#F8F2E6"/>
+    <!-- güneş -->
+    <circle cx="256" cy="246" r="34" fill="#9A6B1F"/>
+    <!-- tepeler -->
+    <path d="M152 352c40-30 74-40 110-22s66 18 98-6v88H152z" fill="#6B5D4D"/>
+    <path d="M152 384c46-22 92-24 132-8s54 10 76-2v38H152z" fill="#352B21"/>
+    <!-- kaide -->
+    <rect x="108" y="436" width="296" height="22" rx="4" fill="#352B21"/>
+  </g>
+</svg>

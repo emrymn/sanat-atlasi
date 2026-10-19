@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr" data-tema="sepya">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Sanat Atlası</title>
+    <meta name="description" content="Kişisel sanat tarihi çalışma uygulaması" />
+    <meta name="theme-color" content="#F1E8D6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Atlas" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- yazı tipi çizimi engellemesin: önce print olarak yükle, sonra etkinleştir -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&display=swap"
+      crossorigin
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+    <script>
+      // Temayı ilk boyamadan önce uygula (yanıp sönmeyi önler)
+      try {
+        var t = JSON.parse(localStorage.getItem('sanat-atlasi:ilerleme') || '{}').ayarlar.tema;
+        if (t) document.documentElement.setAttribute('data-tema', t);
+      } catch (e) {}
+    </script>
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body>
+    <main id="uygulama" tabindex="-1"><p class="ikincil" style="padding-top: 40vh; text-align: center">Yükleniyor…</p></main>
+    <div id="bildirim" role="status" aria-live="polite" hidden></div>
+    <noscript>Sanat Atlası JavaScript gerektirir.</noscript>
+  </body>
+</html>

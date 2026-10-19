@@ -1,0 +1,20 @@
+{
+  "head": { "vars": ["item", "resim", "tarih", "sitelinks", "tr", "en", "mul"] },
+  "results": { "bindings": [
+    { "item": { "type": "uri", "value": "http://www.wikidata.org/entity/Q100" },
+      "resim": { "type": "uri", "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Giotto%20-%20Scrovegni%20-%20-36-%20-%20Lamentation.jpg" },
+      "tarih": { "type": "literal", "value": "1305-01-01T00:00:00Z" }, "sitelinks": { "type": "literal", "value": "40" },
+      "tr": { "xml:lang": "tr", "type": "literal", "value": "Ağıt" }, "en": { "xml:lang": "en", "type": "literal", "value": "Lamentation" } },
+    { "item": { "type": "uri", "value": "http://www.wikidata.org/entity/Q101" },
+      "resim": { "type": "uri", "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Ognissanti%20Madonna.jpg" },
+      "sitelinks": { "type": "literal", "value": "20" },
+      "en": { "xml:lang": "en", "type": "literal", "value": "Ognissanti Madonna" } },
+    { "item": { "type": "uri", "value": "http://www.wikidata.org/entity/Q102" },
+      "resim": { "type": "uri", "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Etiketsiz.jpg" },
+      "sitelinks": { "type": "literal", "value": "1" } },
+    { "item": { "type": "uri", "value": "http://www.wikidata.org/entity/Q103" },
+      "resim": { "type": "uri", "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Antik.jpg" },
+      "tarih": { "type": "literal", "value": "-0450-01-01T00:00:00Z" }, "sitelinks": { "type": "literal", "value": "3" },
+      "mul": { "xml:lang": "mul", "type": "literal", "value": "Antik eser" } }
+  ] }
+}

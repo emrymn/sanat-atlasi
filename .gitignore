@@ -1,0 +1,6 @@
+node_modules/
+test-results/
+playwright-report/
+qwen_kod_raporu.md
+qwen_icerik_raporu.md
+.DS_Store

@@ -1,0 +1,13 @@
+{
+  "entities": {
+    "Q1": { "id": "Q1", "claims": { "P31": [{ "rank": "normal", "mainsnak": { "snaktype": "value", "datavalue": { "value": { "id": "Q5" } } } }],
+      "P569": [{ "rank": "normal", "mainsnak": { "snaktype": "value", "datavalue": { "value": { "time": "+1267-00-00T00:00:00Z", "precision": 9 } } } }] } },
+    "Q2": { "id": "Q2", "claims": { "P31": [{ "rank": "normal", "mainsnak": { "snaktype": "value", "datavalue": { "value": { "id": "Q3863" } } } }] } },
+    "Q3": { "id": "Q3", "claims": { "P31": [{ "rank": "normal", "mainsnak": { "snaktype": "value", "datavalue": { "value": { "id": "Q5" } } } }],
+      "P569": [{ "rank": "normal", "mainsnak": { "snaktype": "value", "datavalue": { "value": { "time": "-0490-01-01T00:00:00Z", "precision": 9 } } }, "qualifiers": { "P1480": [{}] } }] } },
+    "Q4": { "id": "Q4", "claims": { "P31": [{ "rank": "normal", "mainsnak": { "snaktype": "value", "datavalue": { "value": { "id": "Q5" } } } }],
+      "P569": [{ "rank": "normal", "mainsnak": { "snaktype": "value", "datavalue": { "value": { "time": "+1856-08-27T00:00:00Z", "precision": 11 } } } }] } },
+    "Q5x": { "id": "Q5x", "claims": { "P31": [{ "rank": "deprecated", "mainsnak": { "snaktype": "value", "datavalue": { "value": { "id": "Q5" } } } }] } },
+    "Q6": { "id": "Q6", "claims": { "P31": [{ "rank": "normal", "mainsnak": { "snaktype": "value", "datavalue": { "value": { "id": "Q16979650" } } } }] } }
+  }
+}
