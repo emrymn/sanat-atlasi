@@ -12,7 +12,8 @@ export function kaynakYazisi(eser, gorsel) {
 }
 
 // kotuler: { eserAnahtarı: [görsel anahtarları] } — "Görsel kötü" ile güncellenir, degisti() çağrılır
-export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null }) {
+// notu: (eser) → kısa açıklama (data/eser_notlari.json); gizliyken (cevaptan önce) gösterilmez
+export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null }) {
   let sira = baslangic;
   let olcek = 1;
   let tx = 0;
@@ -77,7 +78,9 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     resim.alt = gizli ? 'Soru görseli' : e.baslik;
     if (!gizli) {
       const sayfa = gorselSayfasi(g);
+      const not = notu ? notu(e) : '';
       alt.innerHTML = `<p class="gor-baslik">${kacis(e.baslik)}${e.tarih ? ` <span class="ikincil">· ${kacis(e.tarih)}</span>` : ''}</p>
+        ${not ? `<p class="gor-not" data-test="eser-notu">${kacis(not)}</p>` : ''}
         <p class="gor-kaynak">${kacis(kaynakYazisi(e, g))}${sayfa ? ` · <a href="${kacis(sayfa)}" target="_blank" rel="noopener">${g.k === 'wikiart' ? 'eser sayfası' : 'kaynak sayfası'}</a>` : ''}${eserler.length > 1 ? ` · ${sira + 1} / ${eserler.length}` : ''}</p>`;
     }
     // komşuları önceden yükle
