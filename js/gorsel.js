@@ -2,6 +2,7 @@
 // Görsel biçimi: { k: 'commons'|'met'|'aic'|'cma'|'nga', d?: Commons dosyası, u?: doğrudan URL,
 //                  i?: IIIF kimliği/adresi, l?: lisans, s?: kaynak sayfası, p?: kalite puanı }
 import { resimUrl, dosyaSayfasi, dosyaNormal } from './yardimci.js';
+import { md5 } from './md5.js';
 
 export const KAYNAK_ADI = {
   commons: 'Wikimedia Commons',
@@ -27,6 +28,20 @@ export function gorselUrl(g, genislik = 800) {
     default:
       return g.u;
   }
+}
+
+// Palet çıkarmak için CORS'a açık adres. Commons'ta Special:FilePath yönlendirmesi CORS başlığı
+// göndermediği için doğrudan upload.wikimedia.org küçük resmi (standart 330 px genişlik) kullanılır.
+export const PALET_GENISLIGI = 330;
+export function paletUrl(g) {
+  if (!g) return '';
+  if (g.k !== 'commons') return gorselUrl(g, 400);
+  const ad = dosyaNormal(g.d);
+  const h = md5(ad);
+  const uzanti = (/\.([a-z0-9]+)$/i.exec(ad) || [])[1] || '';
+  const ek = /^(jpe?g|png|gif|webp)$/i.test(uzanti) ? '' : /^svg$/i.test(uzanti) ? '.png' : '.jpg';
+  const kod = encodeURIComponent(ad);
+  return `https://upload.wikimedia.org/wikipedia/commons/thumb/${h[0]}/${h.slice(0, 2)}/${kod}/${PALET_GENISLIGI}px-${kod}${ek}`;
 }
 
 export function gorselSayfasi(g) {

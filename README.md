@@ -2,11 +2,14 @@
 
 Kenney Mencher'in *Art History: Renaissance to 20th Century* kursuyla birlikte büyüyen, kişisel sanat tarihi çalışma uygulaması. iPhone'da ana ekrana eklenen bir **PWA**; sunucu, hesap ya da analiz yok — yalnızca statik dosyalar.
 
-- **Göz At:** akımlar kronolojik sırada → sanatçılar → sanatçı sayfası (kurs notu / anlatım, “Nasıl tanırım?”, eser ızgarası) → tam ekran görüntüleyici (iki parmakla yakınlaştır, kaydırarak eserler arasında geç).
+Görünüm: **“Kadife ve resim rengi”** — kadife gibi koyu zemin, Bodoni Moda başlıklar; her ekranın vurgu rengi o an gösterilen eserin kendi renklerinden çıkarılır. Alttaki sekme çubuğu: **Bugün · Göz At · Pekiştir · İlerleme**.
+
+- **Bugün:** Günün sanatçısının en bilinen eseri ekranın üstünü kaplar; adı, “Resmin renkleri” şeridi, Pekiştir düğmeleri, son çalıştığın sanatçılar.
+- **Göz At:** akımlar kronolojik sırada → sanatçılar → sanatçı sayfası (eserlerin kırpılmadan yatay galerisi, notların, “Nasıl tanırım?”, dönem çizelgesi) → tam ekran görüntüleyici (iki parmakla yakınlaştır, kaydırarak eserler arasında geç; resim hiç kırpılmaz).
 - **Pekiştir · Döneme göre:** bir akım (ya da “Hepsi, dönem sırasıyla”) seç; “Bu eser kimin?”
-- **Pekiştir · Karışık:** tüm açık sanatçılar; her kartta “Bu eser kimin?” ve “Hangi akım?”.
-- **İlerleme:** işlediğin konuları “işlendi” yap → o konunun sanatçıları açılır. Akımlara göre doğruluk, en zayıf sanatçılar.
-- **Ayarlar:** günlük kart sayısı, tema (Sepya / Açık / Koyu), görselleri çevrimdışı indirme, yedekle / geri yükle.
+- **Pekiştir · Karışık:** tüm açık sanatçılar; her kartta önce “Bu eser kimin?”, sonra “Hangi akım?”. Cevaptan sonra alttan bir yaprak sonucu, kısa bilgiyi ve ipucunu gösterir.
+- **İlerleme:** işlediğin konuları “işlendi” yap → o konunun sanatçıları açılır. Akımlara göre doğruluk, en zayıf sanatçılar. Sağ üstteki dişliyle **Ayarlar**.
+- **Ayarlar:** günlük kart sayısı, tema (**Gece** varsayılan / Sepya / Açık), görselleri çevrimdışı indirme, yedekle / geri yükle.
 
 Yanlış yaptığın sanatçılar aynı turda 3–5 kart sonra tekrar gelir; sonra Leitner kutularıyla (1, 3, 7, 14, 30 gün) aralıklı tekrar edilir.
 
@@ -28,6 +31,7 @@ Derleme adımı yok; GitHub Pages depo kökünü olduğu gibi sunar. (`.nojekyll
 **Yedek:** Ayarlar → **Yedekle** ilerlemeni panoya kopyalar; Notlar'a yapıştırıp sakla. Geri yüklemek için metni **Yedeği geri yükle** kutusuna yapıştır.
 
 **Güncelleme:** Yeni bir sürüm yayınlandığında uygulama “Uygulamanın yeni sürümü hazır” der; **Yenile**'ye dokun.
+(1.5.0'dan itibaren üstteki saat/pil çubuğu da koyu sayfanın üstünde durur. iOS bu ayarı ana ekrana eklerken okuduğu için, çubuk hâlâ açık renkli görünürse simgeyi silip yeniden **Ana Ekrana Ekle** yap. Simgeyi silmek ilerlemeyi de siler: önce **Ayarlar → Yedekle**, yeniden ekledikten sonra **Yedeği geri yükle**.)
 
 ## Geliştirme
 

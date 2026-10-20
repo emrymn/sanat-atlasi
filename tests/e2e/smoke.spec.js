@@ -68,16 +68,21 @@ test('Pekiştir · Karışık: 5 kart cevapla', async ({ page }) => {
     const sanatci = page.locator('[data-test="sanatci-secenekleri"] button');
     await expect(sanatci).toHaveCount(4);
     await expect(page.getByText('Bu eser kimin?')).toBeVisible();
+    await expect(page.getByText('Soru 1 / 2')).toBeVisible();
     await sanatci.nth(i % 4).click();
+    // 1. sorudan sonra: sonuç yaprağı, doğru seçenek yeşil; akım henüz söylenmez
+    await expect(page.locator('[data-test="sonuc"]')).toBeVisible();
+    await expect(page.locator('[data-test="sanatci-secenekleri"] .dogru')).toHaveCount(1);
+    await page.locator('[data-ikinci]').click();
     const akim = page.locator('[data-test="akim-secenekleri"] button');
     await expect(page.getByText('Hangi akım?')).toBeVisible();
+    await expect(page.getByText('Soru 2 / 2')).toBeVisible();
     await expect(akim).toHaveCount(4);
     await akim.nth((i + 1) % 4).click();
     await expect(page.locator('[data-test="sonuc"]')).toBeVisible();
     await expect(page.getByRole('link', { name: /Sanatçı sayfası/ })).toBeVisible();
-    // doğru seçenek yeşil işaretli
-    await expect(page.locator('[data-test="sanatci-secenekleri"] .dogru')).toHaveCount(1);
     await expect(page.locator('[data-test="akim-secenekleri"] .dogru')).toHaveCount(1);
+    await expect(page.locator('.alt-yaprak')).toContainText('Komşu akımlar');
     const sonraki = page.locator('[data-sonraki]');
     await expect(sonraki).toBeInViewport();
     await sonraki.click();
@@ -148,11 +153,14 @@ test('Ayarlar: yedekle → geri yükle gidiş-dönüşü', async ({ page, contex
   await page.goto('./#/pekistir/karisik');
   const s = page.locator('[data-test="sanatci-secenekleri"] button');
   await s.first().click();
+  await page.locator('[data-ikinci]').click();
   await page.locator('[data-test="akim-secenekleri"] button').first().click();
   await page.goto('./#/ayarlar');
   await page.getByRole('button', { name: 'Artır' }).click();
-  await page.getByRole('radio', { name: 'Koyu' }).check();
-  await expect(page.locator('html')).toHaveAttribute('data-tema', 'koyu');
+  // varsayılan tema Gece; Sepya seçilir
+  await expect(page.locator('html')).toHaveAttribute('data-tema', 'gece');
+  await page.getByRole('radio', { name: 'Sepya' }).check();
+  await expect(page.locator('html')).toHaveAttribute('data-tema', 'sepya');
   const asil = await ilerleme(page);
   await page.getByRole('button', { name: 'Yedekle', exact: true }).click();
   await expect(page.locator('#yedek-mesaj')).not.toBeEmpty();
@@ -171,7 +179,7 @@ test('Ayarlar: yedekle → geri yükle gidiş-dönüşü', async ({ page, contex
   });
   await page.reload();
   await page.goto('./#/ayarlar');
-  await expect(page.locator('html')).toHaveAttribute('data-tema', 'sepya');
+  await expect(page.locator('html')).toHaveAttribute('data-tema', 'gece');
   expect(Object.keys((await ilerleme(page)).skorlar)).toHaveLength(0);
 
   page.once('dialog', (d) => d.accept());
@@ -182,7 +190,8 @@ test('Ayarlar: yedekle → geri yükle gidiş-dönüşü', async ({ page, contex
   expect(geri.skorlar).toEqual(asil.skorlar);
   expect(geri.islenen).toEqual(asil.islenen);
   expect(geri.ayarlar).toEqual(asil.ayarlar);
-  await expect(page.locator('html')).toHaveAttribute('data-tema', 'koyu');
+  expect(geri.sonCalisilanlar).toEqual(asil.sonCalisilanlar);
+  await expect(page.locator('html')).toHaveAttribute('data-tema', 'sepya');
 
   // bozuk yedek reddedilir
   await page.locator('#yedek-girdi').fill('{bozuk');
@@ -197,4 +206,51 @@ test('yatay kaydırma yok (390 px)', async ({ page }) => {
     const genis = await page.evaluate(() => document.documentElement.scrollWidth);
     expect(genis, r).toBeLessThanOrEqual(390);
   }
+});
+
+test('resim rengi: Bugün paleti çıkarılır, vurgu renkleri yazılır ve IndexedDB önbelleğine girer', async ({ page }) => {
+  await page.goto('./');
+  await expect(page.locator('[data-palet] .palet span').first()).toBeAttached();
+  const vurgu = await page.evaluate(() => document.documentElement.style.getPropertyValue('--vurgu-acik'));
+  expect(vurgu).toMatch(/^#[0-9a-f]{6}$/);
+  const kayit = await page.evaluate(
+    () =>
+      new Promise((coz) => {
+        const r = indexedDB.open('sanat-atlasi');
+        r.onsuccess = () => {
+          const q = r.result.transaction('palet').objectStore('palet').count();
+          q.onsuccess = () => coz(q.result);
+        };
+      }),
+  );
+  expect(kayit).toBeGreaterThan(0);
+  // Pekiştir kartında renk sorulan eserden gelir; cevaptan sonra yaprakta paleti görünür
+  await page.goto('./#/pekistir/karisik');
+  await page.locator('[data-test="sanatci-secenekleri"] button').first().click();
+  await expect(page.locator('.alt-yaprak .palet span').first()).toBeAttached();
+});
+
+test('Sanatçı: bilinen ad büyük satırda; galerinin sonundaki "Tümü (N)" ızgarayı açar', async ({ page }) => {
+  await page.goto('./#/sanatci/rembrandt-van-rijn');
+  await expect(page.locator('h1 .ad-son')).toHaveText('Rembrandt');
+  await expect(page.locator('h1 .ad-ilk')).toHaveText('van Rijn');
+  await expect(page.getByRole('heading', { name: 'Rembrandt van Rijn' })).toBeVisible();
+  const n = await page.locator('.eserler .eser').count();
+  expect(n).toBeGreaterThan(1);
+  const tumu = page.locator('[data-test="tumu"]');
+  await expect(tumu).toHaveText(`Tümü (${n})`);
+  await tumu.click();
+  await expect(page.locator('.izgara .eser')).toHaveCount(n);
+  await page.locator('.izgara .eser').nth(1).click();
+  await expect(page.locator('.gor .gor-kaynak')).toContainText(`2 / ${n}`);
+});
+
+test("Pekiştir: soru 390 px'te tek satır", async ({ page }) => {
+  await page.goto('./#/pekistir/karisik');
+  const h = page.locator('.soru-baslik h2');
+  await expect(h).toHaveText('Bu eser kimin?');
+  const tek = await h.evaluate(
+    (el) => el.scrollWidth <= el.clientWidth + 1 && el.getBoundingClientRect().height < parseFloat(getComputedStyle(el).fontSize) * 1.6,
+  );
+  expect(tek).toBe(true);
 });

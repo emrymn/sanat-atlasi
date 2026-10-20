@@ -43,16 +43,25 @@ export function akimYuzyillari(uyeler) {
 }
 
 const YOLLAR = {
-  geri: '<path d="M15 5l-7 7 7 7"/>',
-  ileri: '<path d="M9 5l7 7-7 7"/>',
-  kapat: '<path d="M6 6l12 12M18 6L6 18"/>',
-  dogru: '<path d="M5 12.5l4.5 4.5L19 7.5"/>',
-  yanlis: '<path d="M7 7l10 10M17 7L7 17"/>',
+  geri: '<path d="m15 18-6-6 6-6"/>',
+  ileri: '<path d="m9 18 6-6-6-6"/>',
+  kapat: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
+  dogru: '<path d="M20 6 9 17l-5-5"/>',
+  yanlis: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
   kilit: '<rect x="5.5" y="10.5" width="13" height="9" rx="1.5"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/>',
   buyut: '<path d="M14 5h5v5M10 19H5v-5M19 5l-6 6M5 19l6-6"/>',
+  // sekme çubuğu (tasarım A mockup'larındaki çizgi ikonlar)
+  bugun:
+    '<path d="M12 2v8"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22 22H2"/><path d="m8 6 4-4 4 4"/><path d="M16 18a4 4 0 0 0-8 0"/>',
+  gozat: '<path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2l8 5H4z"/>',
+  pekistir:
+    '<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M22 12.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/><path d="M22 17.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>',
+  ilerleme: '<path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>',
+  ayarlar:
+    '<path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/>',
 };
 
 // İnce çizgi ikon (dekoratif; erişilebilir ad düğmede verilir)
-export function ikon(ad, boyut = 20) {
-  return `<svg class="ikon" width="${boyut}" height="${boyut}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${YOLLAR[ad] || ''}</svg>`;
+export function ikon(ad, boyut = 20, kalinlik = 1.6) {
+  return `<svg class="ikon" width="${boyut}" height="${boyut}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${kalinlik}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${YOLLAR[ad] || ''}</svg>`;
 }

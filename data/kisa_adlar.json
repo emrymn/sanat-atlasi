@@ -1,0 +1,27 @@
+{
+  "aciklama": "Bilinen (kısa) adlar: büyük satırda gösterilen ad ve küçük satırda adın geri kalanı. data/sanatcilar.json taranarak çıkarıldı; listede olmayanlarda son kelime (van/de/da… ekleriyle) büyük satıra gelir. Bkz. KARARLAR.md.",
+  "adlar": {
+    "giotto-di-bondone": { "buyuk": "Giotto", "kucuk": "di Bondone" },
+    "duccio-di-buoninsegna": { "buyuk": "Duccio", "kucuk": "di Buoninsegna" },
+    "arnolfo-di-cambio": { "buyuk": "Arnolfo", "kucuk": "di Cambio" },
+    "gentile-da-fabriano": { "buyuk": "Gentile", "kucuk": "da Fabriano" },
+    "domenico-di-michelino": { "buyuk": "Domenico", "kucuk": "di Michelino" },
+    "piero-della-francesca": { "buyuk": "Piero", "kucuk": "della Francesca" },
+    "leonardo-da-vinci": { "buyuk": "Leonardo", "kucuk": "da Vinci" },
+    "michelangelo": { "buyuk": "Michelangelo", "kucuk": "Buonarroti" },
+    "raphael": { "buyuk": "Raffaello", "kucuk": "Sanzio" },
+    "titian": { "buyuk": "Tiziano", "kucuk": "Vecellio" },
+    "daniele-da-volterra": { "buyuk": "Daniele", "kucuk": "da Volterra" },
+    "rosso-fiorentino": { "buyuk": "Rosso", "kucuk": "Fiorentino" },
+    "artemisia-gentileschi": { "buyuk": "Artemisia", "kucuk": "Gentileschi" },
+    "rembrandt-van-rijn": { "buyuk": "Rembrandt", "kucuk": "van Rijn" },
+    "francisco-de-zurbaran": { "buyuk": "Zurbarán", "kucuk": "Francisco de" },
+    "francisco-de-goya": { "buyuk": "Goya", "kucuk": "Francisco de" },
+    "elisabeth-vigee-le-brun": { "buyuk": "Vigée Le Brun", "kucuk": "Élisabeth" },
+    "hans-baldung-grien": { "buyuk": "Baldung Grien", "kucuk": "Hans" },
+    "william-holman-hunt": { "buyuk": "Holman Hunt", "kucuk": "William" },
+    "henri-de-toulouse-lautrec": { "buyuk": "Toulouse-Lautrec", "kucuk": "Henri de" },
+    "pierre-puvis-de-chavannes": { "buyuk": "Puvis de Chavannes", "kucuk": "Pierre" },
+    "man-ray": { "buyuk": "Man Ray", "kucuk": "" }
+  }
+}

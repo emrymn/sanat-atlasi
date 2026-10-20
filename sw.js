@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia görselleri: bayatken-yeniden-doğrula, ~300 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.4.0';
+const SURUM = '1.6.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim';
 const WIKIDATA = 'atlas-wikidata';
@@ -24,6 +24,7 @@ const KABUK_DOSYALARI = [
   'index.html',
   'manifest.webmanifest',
   'css/app.css',
+  'js/adlar.js',
   'js/app.js',
   'js/celdirici.js',
   'js/depo.js',
@@ -34,7 +35,9 @@ const KABUK_DOSYALARI = [
   'js/idb.js',
   'js/kilit.js',
   'js/leitner.js',
+  'js/md5.js',
   'js/oturum.js',
+  'js/renk.js',
   'js/resim.js',
   'js/tasarim.js',
   'js/wikidata.js',
@@ -49,6 +52,7 @@ const KABUK_DOSYALARI = [
   'data/eser_turleri.json',
   'data/akim_bilgi.json',
   'data/biyografiler.json',
+  'data/kisa_adlar.json',
 ];
 // Olmasa da kurulumu bozmayan dosyalar
 const ISTEGE_BAGLI = ['data/eserler_onbellek.json', 'icons/icon-maskable-512.png'];
@@ -78,6 +82,8 @@ self.addEventListener('fetch', (e) => {
   const istek = e.request;
   if (istek.method !== 'GET') return;
   const url = new URL(istek.url);
+  // Palet çıkarmak için CORS ile istenen görseller önbellekteki opak yanıtı kullanamaz: doğrudan ağa gider
+  if (istek.mode === 'cors' && istek.destination === 'image' && url.origin !== self.location.origin) return;
   if (url.origin === self.location.origin) {
     e.respondWith(kabuk(istek));
   } else if (url.hostname === 'commons.wikimedia.org' && url.pathname.includes('Special:FilePath')) {
