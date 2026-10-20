@@ -16,7 +16,7 @@ import { paletGetir, renkTemasi } from './renk.js';
 import { idbAl, idbKoy, idbSil } from './idb.js';
 import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from './devam.js';
 
-const SURUM = '1.7.0';
+const SURUM = '1.8.0';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -1435,7 +1435,7 @@ function ayarlarSayfasi() {
         <p class="mesaj" id="geri-mesaj" aria-live="polite"></p>
       </div>
     </div>
-    <p class="alt-not">Sanat Atlası ${SURUM} · Görseller: Wikimedia Commons ve müze açık erişim koleksiyonları · Eser listeleri: Wikidata</p>`);
+    <p class="alt-not">Sanat Atlası ${SURUM} · Görseller: Wikimedia Commons, müze açık erişim koleksiyonları ve WikiArt · Eser listeleri: Wikidata</p>`);
   indirBilgisi();
 }
 
