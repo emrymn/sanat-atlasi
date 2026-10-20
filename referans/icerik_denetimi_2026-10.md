@@ -1,0 +1,478 @@
+# İçerik denetimi · 2026-10
+
+Üç model (Qwen 3.7, Qwen 3.8, Kimi K3) `sanatcilar.json`, `akim_bilgi.json` ve `biyografiler.json` dosyalarını denetledi. Her iddia Claude tarafından tek tek kontrol edildi; yalnızca açık olgu hataları, yanlış çeviriler ve bozuk Türkçe düzeltildi. Model kısaltmaları: ki = Kimi K3, q8 = Qwen 3.8, q7 = Qwen 3.7.
+
+## Sanatçı kayıtları ve akım bilgileri
+
+### Uygulanan düzeltmeler (24)
+
+- **charles-le-brun** · `kurs_notu` [ki,q8,q7]: “Rembrandt'ın hayatını anlatan eski bir filmde başrolü oynayan aktör.” → “XIV. Louis'nin baş ressamı; Kraliyet Resim ve Heykel Akademisi'ni yöneten ve Versailles'ın süslemesini (Aynalı Galeri tavanı) yürüten ressam.” — Not, 1936 yapımı Rembrandt filminin başrol oyuncusu Charles Laughton'a ait; 'Charles' adı yüzünden Le Brun'ün kartına kaymış.
+- **charles-garnier** · `kurs_notu` [ki,q8,q7]: “Rembrandt'ın hayatını anlatan eski bir filmde başrolü oynayan aktör.” → “Paris Operası'nın (Palais Garnier) mimarı; görkemli, eklektik Beaux-Arts üslubunun temsilcisi.” — Not Charles Laughton'a ait; Garnier mimardır (1825–1898), kartın kendi eseri de Palais Garnier.
+- **charles-barry-ve-augustus-pugin** · `kurs_notu` [ki,q8,q7]: “Rembrandt'ın hayatını anlatan eski bir filmde başrolü oynayan aktör.” → “Londra'daki Westminster Sarayı'nın (Parlamento binası) Neogotik üslupta yeniden yapımını tasarlayan mimarlar (Barry 1795–1860; Pugin 1812–1852).” — Not Charles Laughton'a ait; Barry ve Pugin Westminster Sarayı'nın mimarlarıdır. Pugin'in yılları da nota eklendi, çünkü dogum/olum alanları yalnızca Barry'nin yıllarını taşıyabiliyor.
+- **louis-le-vau** · `kurs_notu` [ki,q8,q7]: “Madame du Barry ve Louise O'Murphy'nin bağlı olduğu Fransız kralı.” → “Vaux-le-Vicomte'u yapan ve Versailles'ın ilk büyük genişletmesini tasarlayan XIV. Louis dönemi mimarı.” — Tanım XV. Louis'ye ait ('Louis' adı karışmış); Le Vau (1612–1670) XIV. Louis'nin mimarıdır.
+- **henry-fuseli** · `kurs_notu` [ki,q8,q7]: “1598'de Nantes Fermanı'nı çıkaran Fransız kralı.” → “İsviçre doğumlu, Londra'da çalışan Romantik ressam; Kâbus (The Nightmare) gibi doğaüstü ve edebî sahneleriyle tanınır.” — Tanım Fransa Kralı IV. Henri'ye ait ('Henry' adı karışmış); Fuseli İsviçre doğumlu Romantik ressamdır.
+- **thomas-jefferson** · `kurs_notu` [ki,q8,q7]: “Aristoteles'in fikirlerini teoloji ve mantıkta kullanan yazar.” → “Monticello'yu ve Virginia Üniversitesi'ni tasarlayan, Amerika'da Neoklasik mimarinin öncüsü olan ABD'nin 3. başkanı.” — Tanım Thomas Aquinas'a ait ('Thomas' adı karışmış; not 2. konudan, Antik Yunan bölümünden gelmiş).
+- **francis-bacon** · `kurs_notu` [ki,q8,q7]: “Fransa Kralı; An Allegory'nin belki diplomatik hediye olarak gönderildiği kişi.” → “Bükülmüş, çarpıtılmış figürleri ve triptikleriyle tanınan, savaş sonrası figüratif resmin İrlanda doğumlu İngiliz ressamı.” — Tanım Fransa Kralı I. François'ya (Francis I) ait; Bronzino'nun Alegori'sinin ona hediye edildiği düşünülür. Not 24. konudan (Maniyerizm) kaymış.
+- **francisco-de-goya** · `kurs_notu` [ki,q8,q7]: “Velázquez'in Sevilla'daki ilk hocası.” → “Velázquez'i örnek alan İspanyol saray ressamı; Los Caprichos, Savaşın Felaketleri, 3 Mayıs 1808 ve Kara Resimler'in sanatçısı.” — Velázquez'in Sevilla'daki ilk hocası Francisco de Herrera'dır ('Francisco' adı karışmış); Goya Velázquez'den bir asır sonra doğdu.
+- **william-blake** · `kurs_notu` [ki,q8]: “Habersizce bir şeyin parçası olan kişi temasını sonra işleyecek İngiliz ressam.” → “Kendi şiir kitaplarını gravürle resimleyip basan, hayalci ve mistik konular işleyen İngiliz şair-ressam.” — Aynı not Hogarth'ın kartında da var; not 38. konudan (Rokoko) geliyor ve 'sonra işlenecek' İngiliz ressam Hogarth (40. konu). 'William' adı yüzünden Blake'e de kopyalanmış.
+- **gustave-caillebotte** · `kurs_notu` [ki,q8,q7]: “İzlenimcilerden hemen önce gelen, çiftlik sahibi babasının mali desteğini alan ressam.” → “İzlenimcilere 1876'da katılan, ailesinden kalan servetle grubun sergilerini destekleyip resimlerini satın alan ressam.” — Not Gustave Courbet'ye ait (Courbet'nin kartında da aynısı var; babası Ornans'ta toprak sahibiydi). Caillebotte İzlenimcilerin öncüsü değil, üyesi ve hamisidir.
+- **orazio-gentileschi** · `kurs_notu` [ki,q8,q7]: “Susanna'yı gergin ve savunmasız resmeden, kendi tecavüz davası bu konuya ilgisiyle ilişkilendirilen ressam.” → “Caravaggio'nun yakın çevresinden Barok ressam; Artemisia'nın babası ve hocası, ömrünün sonunda Londra'da I. Charles'ın saray ressamı oldu.” — Not birebir Artemisia Gentileschi'nin kartındaki not; Susanna (1610) ve 1612 davası Artemisia'ya aittir.
+- **pietro-lorenzetti** · `kurs_notu` [ki,q7]: “Merkezi planlı yapıyı gösteren, Raphael'inkiyle karşılaştırılan resmin ressamı.” → “Sienalı ressam; Meryem'in Doğumu'nda (1342) üç bölmeli çerçeveyi resimdeki odanın mimarisiyle birleştirerek derin bir iç mekân kurar.” — Not birebir Perugino'nun kartındaki not (Anahtarların Teslimi'ndeki merkezi planlı yapı, Raphael'in Meryem'in Evlenmesi ile karşılaştırma); 'Pietro' adı yüzünden kaymış.
+- **lorenzo-ghiberti** · `kurs_notu` [q8]: “Floransa siyasetinin ve kültürünün merkezi figürü.” → “1401 Vaftizhane kapıları yarışmasını kazanan ve Cennet Kapıları'nı yapan Floransalı heykeltıraş.” — Bu tanım Lorenzo de' Medici'ye (Muhteşem Lorenzo) ait; diğer kaymalar gibi 'Lorenzo' adı yüzünden Ghiberti'ye düşmüş. Ghiberti siyasi bir figür değildi.
+- **raphael** · `kurs_notu` [ki,q8,q7]: “Floransa'da yetişmiş” → “Perugino'nun yanında yetişip Floransa'da olgunlaşmış” — Raphael Urbino'da babasından, sonra Perugia'da Perugino'nun atölyesinde yetişti; Floransa'ya (y. 1504) yetişmiş bir usta olarak gitti.
+- **sofonisba-anguissola** · `kurs_notu` [ki,q8,q7]: “evlenince resmi bıraktı” → “evlenince saraydan ayrıldı ama resim yapmayı sürdürdü” — Anguissola evlendikten sonra Sicilya ve Cenova'da resim yapmayı sürdürdü (ör. geç otoportreleri; 1624'te Van Dyck onu Palermo'da ziyaret etti); yalnızca İspanya sarayından ayrıldı.
+- **andrea-palladio** · `kurs_notu` [ki]: “Vitruvius'u yeniden yayımlar” → “Daniele Barbaro'nun Vitruvius baskısının (1556) çizimlerini yapar” — Vitruvius'u yayımlayan Daniele Barbaro'dur; Palladio bu baskının çizimlerini yaptı. Kendi kitabı I Quattro Libri'dir (1570).
+- **jules-hardouin-mansart** · `kurs_notu` [ki,q8,q7]: “Mansard çatısıyla tanınan Versailles mimarı.” → “Aynalı Galeri, Grand Trianon ve Invalides kubbesiyle tanınan Versailles mimarı; mansard çatı adını büyük amcası François Mansart'tan alır.” — Mansard çatıya adını veren büyük amcası François Mansart'tır; Jules Hardouin-Mansart'ı tanıtan yapılar Aynalı Galeri, Grand Trianon ve Invalides kubbesidir.
+- **giotto-di-bondone** · `kurs_eserleri[2].baslik` [ki]: “Mallarını yolda dağıtan Francis” → “Pelerinini yoksul bir şövalyeye veren Francis” — Bağlı görsel 'St Francis Giving his Mantle to a Poor Man' sahnesidir; 'mallarını dağıtan' ifadesi yanlış ve listedeki 'servetinden vazgeçen Francis' sahnesiyle karışıyor.
+- **mary-cassatt** · `kurs_eserleri[2].baslik` [ki,q7]: “(mektup yazan kadın baskısı)” → “(mektubunun zarfını kapatan kadın baskısı)” — Cassatt'ın The Letter (1890–91) baskısında kadın mektup yazmıyor, zarfın kapağını dudağıyla yalayıp kapatıyor.
+- **dante-gabriel-rossetti** · `onemli_eserler[0].tr` [ki]: “Meryem'in Kızlığı” → “Meryem'in Genç Kızlığı” — 'Kızlık' tek başına öncelikle 'bekâret' diye okunur; 'Girlhood' Meryem'in genç kızlık çağını anlatır, ufak bir ekle anlam belirsizliği giderilir.
+- **İspanyol Barok** · `metin` [ki]: “(Sevilla'lı Sucu)” → “(Sevillalı Sucu)” — Özel adlara gelen yapım eki (-lı) kesmesiz yazılır (TDK: İstanbullu, Ankaralı).
+- **Rokoko** · `metin` [ki]: “Kythera Adasına Hac” → “Kythera Adası'na Hac” — 'Kythera Adası' özel addır; çekim eki kesmeyle ayrılır (Marmara Adası'na gibi).
+- **Art Nouveau ve Viyana Secession** · `metin` [ki]: “akademinin tutucu sergilerinden” → “Viyana Sanatçılar Birliği'nin (Künstlerhaus) tutucu sergilerinden” — 1897'de Klimt ve arkadaşları Güzel Sanatlar Akademisi'nden değil, Künstlerhaus'ta sergi açan yerleşik sanatçılar birliğinden ayrıldı.
+- **Art Nouveau ve Viyana Secession** · `metin` [q8]: “Sergi binalarının girişinde” → “Secession binasının girişinde” — 'Der Zeit ihre Kunst, der Kunst ihre Freiheit' yazıtı tek bir yapıda, Olbrich'in 1898 tarihli Secession binasının cephesindedir.
+
+### Reddedilen iddialar (77)
+
+- **gislebertus** · `kurs_notu` [q8,q7]: Not Giotto'nun Gislebertus'u kopyaladığını söylemiyor; Giotto'nun da izlediği geleneksel Son Yargı düzeninin Fransız örneğini anlatıyor. Kurs karşılaştırması, savunulabilir.
+- **giovanni-pisano** · `anlatim` [q8]: 'Mesleği' burada belirtme hâlindedir (meslek+i); 'mesleği öğrenmek' dilbilgisi açısından doğrudur.
+- **limbourg-kardesler** · `kurs_notu` [ki,q7]: Not 39. konudan alınmış, kardeşler ise 10. konuda işlenmiş; 'kursta daha önce görülen' anlamı açık. Öğrencinin kendi notu, olgu hatası yok.
+- **giotto-di-bondone** · `kurs_eserleri[11].baslik` [q7]: Scrovegni'de 'Tüccarların Tapınaktan Kovulması' sahnesi var (görsel dosyası da bu); eşleşme doğru.
+- **giotto-di-bondone** · `kurs_eserleri[5]/[6]/[8]` [q7]: Mükerrer kayıtlar olgu hatası değil (farklı slaytlar); silme bu öneri biçiminin kapsamı dışında.
+- **domenico-di-michelino** · `kurs_eserleri[0].baslik` [q7]: Betimleyici başlık yanlış değil; üslup tercihi.
+- **lorenzo-ghiberti** · `kurs_eserleri[0]/[1]/[2]` [q7]: Mükerrer ya da biçimsel sorun; olgu hatası yok.
+- **filippo-brunelleschi** · `kurs_eserleri[0].baslik` [q7]: Brunelleschi de 1401 yarışmasına bir panel sundu (Bargello); eşleşme doğru.
+- **fra-angelico** · `anlatim` [q7]: II. Ioannes Paulus 1982'de beato ilan etti; bilgi doğru, iddia kendi içinde çelişkili.
+- **piero-della-francesca** · `anlatim` [q7]: Eserin yerleşik başlığı tam olarak 'De prospectiva pingendi'dir.
+- **piero-della-francesca** · `onemli_eserler[3].yil` [ki]: Tarihleme tartışmalı; 'yak.' ile verilmiş, emin_degil notunda da belirtilmiş.
+- **albrecht-durer** · `kurs_eserleri[2].baslik` [q8,q7]: Slayttan alınmış, soru işaretiyle çekinceli verilmiş; gravürün anlamı (Venüs ve Güzellik Tanrıçaları, Discordia vb.) zaten tartışmalı.
+- **hans-baldung-grien** · `kurs_notu` [q7]: Baldung'un 1513 tarihli Aristoteles ve Phyllis ağaç baskısı iyi bilinir; atıf doğru.
+- **quentin-metsys** · `kurs_notu` [ki]: Van Mander'den beri gelen yerleşik gelenek; kurs da böyle anlatıyor. Kesin hata değil.
+- **michelangelo** · `kurs_notu` [q7]: Laokoon'un (1506) Michelangelo'ya etkisi standart bir kurs anlatısı; savunulabilir.
+- **marcantonio-raimondi** · `kurs_notu` [q7]: Not anlaşılır (Manet kompozisyonu bu baskıdan tanır); bozuk Türkçe değil.
+- **tintoretto** · `kurs_notu` [ki,q7]: Hangi Susanna versiyonunun slaytta olduğu bilinmiyor (Tintoretto birkaç Susanna yaptı); kesin hata olarak gösterilemez.
+- **francesco-salviati** · `kurs_eserleri[0].baslik` [ki,q7]: Not zaten 'Slayta göre' çekincesiyle yazılmış; Ghirlandaio atfı da kanıtsız. Slayt kontrol edilmeden değiştirilmemeli.
+- **sofonisba-anguissola** · `kurs_notu` [q8]: Babası Amilcare'nin kızlarının eğitimini düzenleyip desteklemesi ünlüdür; 'yetiştirilen' geniş anlamda doğru.
+- **sofonisba-anguissola** · `kurs_notu` [ki]: Kraliçe Elisabeth de Valois'nın nedimesi ve resim hocası olarak fiilen saray ressamlığı yaptı; sadeleştirme savunulabilir.
+- **sofonisba-anguissola** · `kurs_eserleri[0]/[2]` [ki,q8,q7]: Mükerrer kayıt olgu hatası değil; silme bu öneri biçiminin kapsamı dışında.
+- **el-greco** · `kurs_notu` [ki,q8,q7]: Not 31. konudan (Caravaggio) gelmiş, Caravaggio'nun çağdaşı olarak anılması muhtemel. Kopuk ama başka bir kişiye ait olduğu kanıtlanamıyor; slayt kontrolü önerilir.
+- **caravaggio** · `kurs_notu` [ki,q8,q7]: Not 52. konudaki (Degas) karşılaştırmadan alınmış; eliptik ama anlaşılır, olgu hatası yok.
+- **gian-lorenzo-bernini / caravaggio / caillebotte** · `kurs_eserleri` [ki,q8,q7]: Aynı eserin iki slayt başlığı; olgu hatası değil, silme kapsam dışı.
+- **andrea-palladio / carlo-maderno / gian-lorenzo-bernini / annibale-carracci / georges-de-la-tour** · `akim` [q8,q7]: 'akim' alanı kurs bölüm başlığıdır ve değiştirilmesi yasak.
+- **orazio-gentileschi** · `kurs_eserleri[0].baslik` [ki]: Slayttan alınmış eser; yanlış olduğuna dair kanıt yok.
+- **diego-velazquez** · `kurs_notu` [q7]: Öğrencinin bağlam notu; Velázquez'in eserleri getirdiğini söylemiyor.
+- **rembrandt-van-rijn** · `kurs_notu` [q8,q7]: Kursun ifadesi; Rembrandt'ın chiaroscurosu Caravaggio geleneğinden (Lastman, Utrecht) gelir. Savunulabilir sadeleştirme.
+- **peter-paul-rubens** · `kurs_eserleri[1].baslik` [q8]: 'The Destiny of Marie de' Medici' döngünün açılış panosunun adıdır; slayt başlığı olarak savunulabilir.
+- **jan-steen** · `onemli_eserler[0].tr` [ki]: TDK'de 'tuvalet yapmak' = giyinip kuşanmak, süslenmek; teknik olarak doğru. İstenirse 'Süslenen Kadın' yapılabilir ama hata değil.
+- **andre-charles-boulle** · `kurs_notu` [q7]: XIV. Louis üslubu Barok'tur; akım başlığıyla çelişki hata değil.
+- **nicolas-poussin** · `kurs_notu` [ki,q8,q7]: Poussin'in olgunlaşması Roma'dadır; Akademi aracılığıyla sonraki Fransız resmine ölçü oldu. Kurs sadeleştirmesi, savunulabilir.
+- **francois-boucher** · `kurs_notu` [q7]: Boucher'in 'L'Odalisque brune' (Esmer Odalık, 1745, Louvre) adlı eseri vardır; doğru.
+- **jean-honore-fragonard** · `kurs_eserleri[0].baslik` [ki]: Parantez açıkça slayttaki yazıyı aktarıyor; serinin bir adı da 'Les Amours des bergers' olarak geçer.
+- **jean-baptiste-simeon-chardin / jean-baptiste-greuze** · `akim` [ki]: 'akim' alanı değiştirilemez; kurs bölüm başlığı.
+- **giovanni-battista-tiepolo** · `taninma` [q8]: Tiepolo figürlerini bilinçli olarak Veronese tarzı 16. yüzyıl kıyafetleriyle giydirir (ör. Kleopatra'nın Ziyafeti); doğru.
+- **jean-baptiste-greuze** · `kurs_notu` [q8,q7]: Alışılmadık sözcük seçimi ama yanlış değil; öğrencinin notu, üslup.
+- **william-hogarth** · `kurs_notu` [q8]: Not Hogarth'a ait (38. konuda 'sonra işlenecek' denen İngiliz ressam; Hogarth 40. konuda). Kendi notu olarak anlaşılır.
+- **william-hogarth / lord-burlington / elisabeth-vigee-le-brun / charles-garnier / william-adolphe-bouguereau / alexandre-cabanel / jean-auguste-dominique-ingres / edouard-manet / auguste-rodin / wassily-kandinsky / charles-barry-ve-augustus-pugin** · `akim` [ki,q8,q7]: 'akim' alanı kurs bölüm başlığıdır, değiştirilmesi yasak.
+- **william-blake** · `kurs_eserleri[0].baslik` [ki]: Slayttaki ad; yaygın bir alternatif ad, hata değil.
+- **charles-barry-ve-augustus-pugin** · `dogum/olum` [ki,q8,q7]: İki kişilik kartta sayısal alan tek değer alabilir; Barry'nin yılları doğru. Pugin'in yılları kurs notuna eklendi.
+- **edgar-degas** · `kurs_notu` [ki,q8,q7]: Not 51. konudan (Manet) alınmış kurs ifadesi; Manet ile Degas karşılıklı etkileşim içindeydi. Kesin hata değil.
+- **paul-cezanne** · `kurs_notu` [ki]: Notun bağlamı Post-Empresyonizm'in İzlenimcilikten sonra gelmesi; savunulabilir.
+- **gustave-caillebotte** · `kurs_notu` [ki,q8]: Notun tamamı Courbet'nin notuyla değiştirildi (yukarıdaki uygula maddesi).
+- **paul-signac** · `anlatim` [q7]: Kitap adının doğru çevirisi; yazar cümlenin öznesi.
+- **henri-de-toulouse-lautrec** · `anlatim` [q7]: Toulouse-Lautrec'in Van Gogh portresi (1887, Van Gogh Müzesi) kartona pasteldir; doğru.
+- **fernand-khnopff** · `anlatim` [q7]: Okşamalar'daki sfenksin gövdesi benekli leopar/çita gövdesidir; doğru.
+- **hannah-hoch** · `anlatim` [q8]: 'Kursun Dada konusu' doğru bir tamlama; özne (Höch) bağlamdan açık.
+- **salvador-dali** · `anlatim/taninma/onemli_eserler` [q7]: Boş alan olgu hatası değil; içerik ekleme bu işin kapsamı dışında.
+- **Gotik** · `donem` [q8,q7]: Kayıt İtalyan resmine odaklanıyor (yer alanı da bunu söylüyor); sadeleştirme savunulabilir.
+- **Proto-Rönesans** · `metin` [q8]: Kara Ölüm 1347–1348'de geldi, yani 1340'ların içinde; doğru.
+- **Proto-Rönesans** · `donem` [q7]: Yaklaşık aralık; savunulabilir.
+- **Kuzey Rönesansı** · `metin` [q7]: Metin icat ettiğini söylemiyor; doğru.
+- **Venedik Rönesansı** · `metin` [q7]: 'y. 1470' ile uyumlu bir yaklaşık ifade.
+- **Maniyerizm** · `metin` [q8]: Salviati'nin önemli portreleri vardır; savunulabilir.
+- **İtalyan Barok ve Caravaggizm** · `metin` [ki]: Türkçe yazında 'Çağrılışı' biçimi de kullanılır; hata değil.
+- **İtalyan Barok ve Caravaggizm** · `metin` [ki]: Orazio da Judith, Danaë gibi kadın kahramanlar resmetti; birleşik ifade savunulabilir.
+- **İspanyol Barok** · `yer` [q7]: Ribera'nın Napoli'de çalıştığını metin zaten söylüyor; hata değil.
+- **Flaman Barok** · `metin` [ki]: Van Dyck'in Rubens'in öğrencisi olarak anılması yaygın; savunulabilir sadeleştirme.
+- **Fransız Klasisizmi** · `metin` [q7]: Yazım tercihi; metinler genelinde tutarlı kullanılıyor.
+- **Rokoko** · `metin` [q7]: Louvre versiyonu 1717 tarihli kabul eseridir; doğru.
+- **Neoklasisizm** · `metin` [ki]: Marat 'Mara' okunduğu için ek söylenişe göre '-nın' alır (Seurat'nın gibi); mevcut yazım doğru.
+- **Neoklasisizm** · `metin` [ki]: 'Kauffman' yazımı da yaygın ve kayıttaki id ile tutarlı.
+- **Neoklasisizm** · `metin` [q8,q7]: Metin onu zaten geçiş figürü olarak niteliyor; savunulabilir.
+- **Prerafaelitler** · `metin` [ki]: Millais 'Mile' okunur, ünlüyle bitiyor; '-nin' söylenişe göre doğru.
+- **Prerafaelitler** · `metin` [q7]: Türkçede Erken Felemenk ustalarına 'Flaman' denmesi yerleşiktir.
+- **Akademizm ve Oryantalizm** · `metin` [ki]: Salon 19. yüzyılın büyük kısmında yıllıktı; sadeleştirme savunulabilir.
+- **Barbizon ve Realizm** · `metin` [ki]: Anlaşılır ve doğru Türkçe; üslup.
+- **Barbizon ve Realizm** · `metin` [q8]: Corot Barbizon/Fontainebleau'da çalıştı ve okulla birlikte anılır; doğru.
+- **Barbizon ve Realizm** · `metin` [q8]: Üslup tekrarı; olgu hatası değil.
+- **Barbizon ve Realizm** · `metin` [q7]: Tüp boya 1841; akım 1870'e kadar sürüyor. Doğru.
+- **Sembolizm** · `yer` [q8]: Ana merkezler; metin Orta Avrupa'yı ayrıca anıyor.
+- **Ukiyo-e (Japon baskısı)** · `metin` [q8]: Üretimin büyük bölümü 1765 sonrası çok renkli nishiki-e; savunulabilir.
+- **Ukiyo-e (Japon baskısı)** · `metin` [q7]: 'da' ile önceki etkiyi dışlamıyor; doğru.
+- **Art Nouveau ve Viyana Secession** · `metin` [q8]: 'Der Kunst ihre Freiheit' karşılığı olarak yerleşik çeviri; belirsizlik yok.
+- **Ekspresyonizm** · `metin` [q7]: Öznesi (Ekspresyonizm) bağlamdan açık; doğru Türkçe.
+- **Kübizm** · `metin` [q7]: Doğru ve yerleşik bir ifade.
+
+## Biyografiler
+
+### Uygulanan düzeltmeler (237)
+
+- **simone-martini** · `metin` [ki,q7]: “San Gimignano'da Lippo Memmi tarafından kısa bir süre sonra yürütülen çalışmanın bir kopyası,” → “Lippo Memmi'nin kısa bir süre sonra San Gimignano'da yaptığı bu eserin bir kopyası,” — Mevcut cümle Memmi'nin eserinin kopyalandığını söylüyor; kaynakta kopya olan, Memmi'nin Simone'un Maestà'sından yaptığı eserdir.
+- **giotto-di-bondone** · `metin` [ki,q8]: “Bardi ve Peruzzi banker ailelerine ait kiliselerde çalıştı.” → “Floransa'daki Santa Croce Bazilikası'nda Bardi ve Peruzzi banker ailelerine ait şapellerde çalıştı.” — Bardi ve Peruzzi yapıları ayrı kiliseler değil, Santa Croce içindeki aile şapelleridir.
+- **giotto-di-bondone** · `metin` [ki]: “1334 yılında Floransa Katedrali müdürü oldu.” → “1334 yılında Floransa Katedrali inşaatının baş ustası (capomaestro) oldu.” — Giotto'nun görevi idari müdürlük değil, katedral yapı işlerinin baş ustalığıdır; terim yanlış aktarılmış.
+- **giotto-di-bondone** · `metin` [ki,q7]: “Giotto Di Bondone,” → “Giotto di Bondone,” — İtalyanca addaki 'di' küçük harfle yazılır.
+- **masaccio** · `metin` [ki,q8,q7]: “Hümanizm içeren çizimleri, daha önce hiç görünmemiş plastikliği ilk defa kullandı Massicio, Tommaso'ya mizahı bir yaklaşımdı. Manası "büyük", "dağınık" Tom manasına geliyordu.” → “Hümanizm içeren resimlerinde daha önce hiç görülmemiş bir plastikliği ilk kez kullandı. "Masaccio" lakabı, Tommaso adının alaycı bir biçimiydi ve "iri, dağınık Tom" anlamına geliyordu.” — Cümle düşük ve anlamsızdı, ad 'Massicio' diye yanlış yazılmıştı; lakap açıklaması ayrı cümleye alındı.
+- **masaccio** · `metin` [ki]: “Sebebi de büyük ihtimal organize olmayan ve kişisel hijyeninin olmaması yüzündendi.” → “Bunun nedeni büyük ihtimalle dağınık olması ve kişisel bakımına özen göstermemesiydi.” — Bozuk Türkçe cümle düzeltildi.
+- **masaccio** · `metin` [ki,q8]: “ressam Biççi di Lorenzo'ye atölyesinde” → “ressam Bicci di Lorenzo'nun atölyesinde” — Ad 'Bicci' olmalı; iyelik eki de yanlıştı.
+- **masaccio** · `metin` [q8,q7]: “heyketraş Donatello” → “heykeltıraş Donatello” — Yazım hatası.
+- **masaccio** · `metin` [q8,q7]: “bilimsel perspektif kullanabilmesine ona destek sağladı” → “bilimsel perspektifi kullanabilmesini sağladı” — Bozuk cümle yapısı.
+- **andrea-mantegna** · `metin` [ki,q8,q7]: “kabul edilmektedir. Dünyanın her yerinde rakursiye en güzel örnek gösterilen tablosu Türkçe adıyla Ölü İsa'dır. Bunun dışında Rönesans'ı anlatan yüzlerce tablosu da vardır.” → “kabul edilmektedir. Rakursinin (kısaltmalı perspektif) en çok örnek gösterilen tablosu Ölü İsa'dır.” — Metnin başındaki iki cümle sonda aynen tekrarlanıyordu; sondaki tekrar silindi.
+- **andrea-mantegna** · `metin` [ki]: “Vicenza yakınlarındaki Padova'da doğdu.” → “Padova yakınlarındaki Isola di Carturo'da doğdu.” — Mantegna Padova kentinde değil, Vicenza ile Padova arasındaki Isola di Carturo'da doğmuştur.
+- **andrea-mantegna** · `metin` [ki,q8]: “Papa VIII. İnnocenti'nin mihrabını süsleme işini üzerine aldı.” → “Papa VIII. Innocentius'un Vatikan'daki şapelini süsleme işini üstlendi.” — Hristiyan yapısında 'mihrap' olmaz; Mantegna'nın işi Belvedere'deki papalık şapelinin süslenmesiydi. Papa adı Türkçede Innocentius yazılır.
+- **andrea-mantegna** · `metin` [ki,q8,q7]: “"Günahları Anlayan Minerva"” → “"Kötülükleri Erdem Bahçesinden Kovan Minerva"” — Eserin adı 'Minerva Expelling the Vices from the Garden of Virtue'; 'kovan' fiili 'anlayan' diye yanlış çevrilmiş.
+- **fra-angelico** · `metin` [ki,q8,q7]: “asıl adı Giovanni da Fiesole,” → “asıl adı Guido di Pietro (keşiş adıyla Fra Giovanni da Fiesole),” — Doğum adı Guido di Pietro'dur; Giovanni da Fiesole keşiş olunca aldığı addır.
+- **fra-angelico** · `metin` [ki]: “(Fra; Peder demektir)” → “(Fra; 'kardeş' demektir)” — Fra, İtalyanca frate'den gelir ve 'kardeş/keşiş' demektir; 'peder' padre'dir.
+- **fra-angelico** · `metin` [ki]: “İlk ürünlerinin büyük bir bölümü,” → “Yapıtlarının önemli bir bölümü,” — San Marco freskleri 1438–1445 dolaylarına, yani olgunluk dönemine aittir; 'ilk ürünler' yanlış.
+- **fra-angelico** · `metin` [ki,q8,q7]: “minmyatür” → “minyatür” — Yazım hatası.
+- **fra-angelico** · `metin` [ki,q8]: “başpsikoposu” → “başpiskoposu” — Yazım hatası.
+- **paolo-uccello** · `metin` [ki,q8,q7]: “" adlı sanatkarlar biyografisinden kaynaklıdır.” → “Hayatı hakkındaki bilgilerin çoğu Giorgio Vasari'nin "Sanatçıların Hayatları" (Le Vite) adlı biyografi derlemesinden kaynaklıdır.” — Eser adı ve cümlenin başı düşmüştü; Vasari'nin derlemesi (1550) Uccello'nun ölümünden 75 yıl sonradır.
+- **paolo-uccello** · `metin` [ki,q8]: “çok ünlü bir genç ressam olan Lorenzo Ghiberti'nin” → “ünlü heykeltıraş ve kuyumcu Lorenzo Ghiberti'nin” — Ghiberti ressam değil, Vaftizhane kapılarıyla ünlü heykeltıraş ve kuyumcudur.
+- **paolo-uccello** · `metin` [ki]: “d'Antonia di Giovanni del Beccuto” → “Antonia di Giovanni del Beccuto” — İtalyanca kaynaktaki 'd'' (ve -den) edatı ada yapışmış; annenin adı Antonia'dır.
+- **paolo-uccello** · `metin` [ki,q7]: “1397'da” → “1397'de” — Ünlü uyumu: 'yedi' → -de.
+- **pietro-perugino** · `metin` [q8]: “bu dönemde Perugia ekolünün dev ismi Piero della Francesca'dan” → “bu dönemde Piero della Francesca'dan” — Piero della Francesca Sansepolcro'lu olup Perugia ekolüne mensup değildir.
+- **pietro-perugino** · `metin` [q7]: “Beato Angelico ve Benozzo Gozzoli önemli sanatçıları ağırlamaktadır.” → “Beato Angelico ve Benozzo Gozzoli gibi önemli sanatçıları ağırlamıştır.” — Eksik 'gibi' ve uyumsuz zaman kipiyle bozuk cümle.
+- **albrecht-durer** · `metin` [q8]: “Alman ressam, matematikçi ve matbaacı.” → “Alman ressam, matematikçi ve baskı sanatçısı.” — İngilizce 'printmaker' karşılığı 'baskı sanatçısı'dır; 'matbaacı' basımevi işletmecisini çağrıştırır.
+- **albrecht-durer** · `metin` [q8,q7]: “I. Maximillian” → “I. Maximilian” — Yazım hatası.
+- **rogier-van-der-weyden** · `metin` [q8]: “babası Henri de le Pasture ve Agnes de Watrélos'dur.” → “babası Henri de le Pasture, annesi Agnes de Watrélos'tur.” — Anne adı babanın adı gibi sunulmuştu.
+- **rogier-van-der-weyden** · `metin` [ki,q8,q7]: “O zamanlar bu görev, Brüksel'in Burgonya Dükalığı'nın en önemli ikamet yerlerinden biri idi.” → “O zamanlar Brüksel, Burgonya Dükalığı'nın en önemli ikamet yerlerinden biriydi.” — Bir 'görev' ikamet yeri olamaz; çeviri bozukluğu.
+- **rogier-van-der-weyden** · `metin` [ki,q8]: “Rogier Felemenkçe konusan kısmına” → “Rogier ülkenin Felemenkçe konuşulan kısmına” — Eksik sözcük ve yanlış çekim.
+- **hans-baldung-grien** · `metin` [ki,q8,q7]: “kandine has” → “kendine has” — Yazım hatası.
+- **hans-baldung-grien** · `metin` [ki,q8,q7]: “konulari işleyen tablolar, protreler, eskizler, tahta baskılar, dokuma duvar halılari” → “konuları işleyen tablolar, portreler, eskizler, tahta baskılar, dokuma duvar halıları” — Yazım hataları.
+- **hans-baldung-grien** · `metin` [q8]: “Schwäbisch Gmund şehrinde” → “Schwäbisch Gmünd şehrinde” — Şehir adı ilk geçişteki gibi 'Gmünd' yazılmalı.
+- **hans-baldung-grien** · `metin` [ki,q7]: “Babası bir hukukçu-avukat olup 1534'te o zaman tüm Alman olan Alsaş'a yerleşti.” → “Babası üniversite eğitimli bir hukukçu olup 1492'den itibaren o dönemde Alman topraklarında bulunan Alsas'ta, Strazburg piskoposunun hukuk danışmanı olarak görev yaptı.” — Bozuk çeviri; ayrıca baba 1534'te değil 1492'den itibaren Strazburg'da görevliydi (1534 otoportre tarihidir).
+- **hans-baldung-grien** · `metin` [ki,q8,q7]: “bilindiği içim doğumunun 1484-1485 yıllarında olması büyük olasılıklıdır.” → “bilindiği için doğumunun büyük olasılıkla 1484-1485 yıllarında olduğu düşünülür.” — 'içim' yazım hatası ve 'olasılıklıdır' Türkçede yok.
+- **hans-baldung-grien** · `metin` [q8]: “Hans Baldung, ailesi içinde üniversite eğitimi yapmayan” → “Hans Baldung'un, ailesi içinde üniversite eğitimi almayan” — Özne-yüklem uyumsuzluğu.
+- **lucas-cranach-yasl** · `metin` [ki]: “Barbara Brengbier ile evlendi; 26 Aralık 1540'ta Wittenberg'de öldü.” → “Barbara Brengbier ile evlendi; Barbara 26 Aralık 1540'ta Wittenberg'de öldü.” — Özne belirsizdi; 1540'ta ölen Cranach değil eşi Barbara'dır (Cranach 1553'te öldü).
+- **hans-holbein-genc** · `metin` [ki]: “1526'da İngiltere'ye giden henüz 29 yaşında olmasına karşın burada büyük başarı kazandı.” → “1526'da İngiltere'ye gitti; henüz 29 yaşında olmasına karşın burada büyük başarı kazandı.” — Ana fiil düşmüş, cümle bozuktu.
+- **hans-holbein-genc** · `metin` [ki,q7]: “Ambrosius Holbein da ressam” → “Ambrosius Holbein de ressam” — Bağlaç ünlü uyumuna göre 'de' olmalı.
+- **hieronymus-bosch** · `metin` [ki,q8,q7]: “Bocsh'un” → “Bosch'un” — Ad yanlış yazılmış.
+- **pieter-bruegel-yasl** · `metin` [ki,q8,q7]: “Pieter Brueghel ya da Brueghel” → “Pieter Bruegel ya da Brueghel” — Aynı yazım iki kez verilmişti.
+- **pieter-bruegel-yasl** · `metin` [ki,q8]: “Aynı zamanda matbaacı, manzara ve köylü sahneleriyle tür resmi ünlüdür.” → “Aynı zamanda baskı tasarımcısıdır; manzaraları ve köylü sahnelerini konu alan tür resimleriyle ünlüdür.” — 'Printmaker' matbaacı diye çevrilmiş ve cümlenin yüklemi bozuktu.
+- **pieter-bruegel-yasl** · `metin` [ki,q8]: “natürmort resimler aracılığıyla” → “manzara resimleri aracılığıyla” — Bruegel natürmort yapmamıştır; manzara ve köylü sahneleriyle tanınır (yanlış çeviri).
+- **pieter-bruegel-yasl** · `metin` [q7]: “daha sonra yenilikçi konu seçimlerinde resim yapıyordu;” → “konu seçimlerinde de yenilikçiydi;” — Kaynaktaki 'innovative in his choices of subject matter' anlamsız biçimde çevrilmişti.
+- **leonardo-da-vinci** · `metin` [ki,q8,q7]: “Leonardo, alt sınıftan Piero da Vinci, Floransalı bir noter ve Caterina di Meo Lippi (y. 1434–1494) ile evlilik dışı oğulları olarak dünyaya geldi.” → “Leonardo, Floransalı noter Piero da Vinci ile alt sınıftan Caterina di Meo Lippi'nin (y. 1434–1494) evlilik dışı oğlu olarak dünyaya geldi.” — 'Alt sınıftan' nitelemesi noter babaya bağlanmıştı; mütevazı kökenli olan annedir. Cümle yapısı da bozuktu.
+- **michelangelo** · `metin` [q7]: “Michelangelo, ölümünden sonra bazı değişikliklerle kubbe gibi Batı ucu da kendi tasarımına göre tamamlanacak şekilde planı dönüştürdü.” → “Michelangelo planı, batı ucu kendi tasarımına göre, kubbe de ölümünden sonra bazı değişikliklerle tamamlanacak şekilde dönüştürdü.” — Cümle, Michelangelo'nun planı ölümünden sonra dönüştürdüğü gibi okunuyordu; anlam düzeltildi.
+- **raphael** · `metin` [ki,q8,q7]: “insan ihtişamın neoplatonic (Platon'un insan hakkındaki fikirleri) fikirlerinin ifadesindeki görsel başarıları” → “Yeni Platoncu insan ihtişamı idealini görsel olarak ifade etmedeki başarısı” — İngilizce terim çevrilmemiş, tamlama bozuktu.
+- **raphael** · `metin` [ki,q8,q7]: “fresk edilmiş Rafael odası, Vatikan Palace'da bulunmaktadır” → “fresklerle bezeli Rafael Odaları'nda, Vatikan Sarayı'nda bulunmaktadır” — 'Palace' çevrilmemişti; eser grubu çoğul 'Rafael Odaları' (Stanze) olarak bilinir.
+- **raphael** · `metin` [q8]: “Hayatı boyunca her ne kadar Roma dışındaki eserleri daha çok ortaklaşa gravür olarak bilinse de aşırı derecede nüfuzludur.” → “Hayatı boyunca son derece etkiliydi; ancak Roma dışında eserleri daha çok ortaklaşa üretilen gravürler aracılığıyla tanınıyordu.” — Mekanik ve bozuk çeviri.
+- **raphael** · `metin` [ki,q8,q7]: “Mesleki başarısı, doğal olarak üç faza ve üç tarza indi.” → “Kariyeri doğal olarak üç evreye ve üç üsluba ayrılır.” — 'Fell into three phases' anlamsız biçimde çevrilmişti.
+- **donato-bramante** · `metin` [ki,q8]: “En ünlü eserinin Vatikan'da Katolik dünyasının en önemli tapınağı olduğu kabul edilen Vatikan'da kurulu Aziz Petrus Bazilikası'dır.” → “En ünlü eseri, Katolik dünyasının en önemli tapınağı olduğu kabul edilen, Vatikan'daki Aziz Petrus Bazilikası'dır.” — Yinelenen 'Vatikan'da' ve bozuk cümle çatısı.
+- **donato-bramante** · `metin` [ki,q8,q7]: “Melözzo da Forlì” → “Melozzo da Forlì” — Ressamın adı Melozzo'dur.
+- **donato-bramante** · `metin` [ki]: “"yüksek rönesans" mimarı stilinin” → “"yüksek rönesans" mimari stilinin” — Yazım hatası.
+- **donato-bramante** · `metin` [ki,q7]: “1444de doğdu” → “1444'te doğdu” — Kesme işareti ve ek hatası.
+- **correggio** · `metin` [ki]: “Dinamik kompozisyonu eşsiz kullanımı” → “Dinamik kompozisyonu eşsiz kullanışı” — Tamlama bozuktu ('kompozisyonu ... kullanımı').
+- **correggio** · `metin` [ki,q7]: “yandan görülen bir şeyin boyunu kısa gösteren dramatik kısaltma çalışmalarıyla” → “derinlikteki figürleri perspektif gereği kısaltarak gösteren dramatik kısaltma (rakursi) çalışmalarıyla” — Foreshortening'in açıklaması yanlıştı; yandan görünümle ilgisi yoktur.
+- **correggio** · `metin` [q8]: “Francesco Bianchi Ferrara’ya” → “Francesco Bianchi Ferrari’ye” — Ustanın adı Francesco Bianchi Ferrari'dir; Ferrara şehir adıdır.
+- **correggio** · `metin` [ki,q8,q7]: “Corregio’nun, Lorenzo Costa ve Francesco Francia gibi sanatçıların klasisizm biçimiyle bu dönemde tanışmıştır.” → “Correggio, Lorenzo Costa ve Francesco Francia gibi sanatçıların klasisizm biçimiyle bu dönemde tanışmıştır.” — Ad yanlış yazılmış ve özne yanlış ek almıştı.
+- **marcantonio-raimondi** · `metin` [ki,q7]: “reprodüksiyon tablo yapımının” → “reprodüksiyon baskı (gravür) yapımının” — Raimondi tablo değil, tabloların baskı kopyalarını üretmiştir.
+- **marcantonio-raimondi** · `metin` [ki,q8,q7]: “bir taşbaskı tekniğini de geliştirmiştir” → “bir bakır oyma gravür tekniğini de geliştirmiştir” — Taşbaskı (litografi) 1796'da icat edildi; Raimondi bakır levha oymacısıdır (anakronizm).
+- **titian** · `metin` [q8,q7]: “ilk yapıtlarından olan” → “İlk yapıtlarından biri olan” — Cümle küçük harfle başlıyor ve 'biri' eksikti.
+- **titian** · `metin` [q7]: “dengeli kutleler” → “dengeli kütleler” — Yazım hatası.
+- **giovanni-bellini** · `metin` [q8]: “Kayınbiraderi, Rönesans” → “Eniştesi, Rönesans” — Mantegna, Giovanni'nin kız kardeşi Nicolosia ile evlendi; yani eniştesidir (metin sonra zaten 'eniştesi' diyor).
+- **giovanni-bellini** · `metin` [q8,q7]: “bazı Meryem Ana heykelleri” → “bazı Meryem Ana tabloları” — Bellini ressamdır; söz konusu eserler tablodur.
+- **giovanni-bellini** · `metin` [q8,q7]: “The Cruxifixion” → “The Crucifixion” — Yazım hatası.
+- **giovanni-bellini** · `metin` [q8,q7]: “(National Gall, Londra)” → “(National Gallery, Londra)” — Kurum adı kesik.
+- **giovanni-bellini** · `metin` [q8,q7]: “Doge Loredano (National Gall, London), St.” → “Doge Loredano (National Gallery, Londra).” — Kurum adı kesik ve liste 'St.' ile yarım kalmıştı.
+- **giorgione** · `metin` [q7]: “Doge Agostino Barberigo” → “Doge Agostino Barbarigo” — Doçun soyadı Barbarigo'dur.
+- **tintoretto** · `metin` [q8,q7]: “Jacobo Tintoretto (asıl ismi: Jacobo Comin)” → “Jacopo Tintoretto (asıl ismi: Jacopo Comin)” — İtalyanca ad Jacopo'dur; 'Jacobo' İspanyolca biçimdir.
+- **tintoretto** · `metin` [q8,q7]: “Jacopo Jacobo Tintoretto çok” → “Jacopo Tintoretto çok” — Ad iki kez yazılmış.
+- **tintoretto** · `metin` [q8,q7]: “Jacobo Tintoretto'nun asıl ismi "Jacobo Comin"” → “Jacopo Tintoretto'nun asıl ismi "Jacopo Comin"” — Ad yazımı.
+- **tintoretto** · `metin` [q8,q7]: “(1509-1516) imparatorluk askerlerine karşı büyük bir cesaret ve metanetle savunan babası "Jacobo Robusti"'nin ismi ile anılmıştır.” → “(1508-1516) imparatorluk askerlerine karşı büyük bir cesaret ve metanetle savunan babasına verilen "Robusti" adıyla da anılmıştır.” — Babanın adı Jacopo değil Giovanni Battista'dır; 'Robusti' babanın Padova savunmasından gelen addır. Cambrai Ligi Savaşı 1508–1516 tarihlidir.
+- **tintoretto** · `metin` [q8,q7]: “"Jacobo Furioso (Kızgın Jacobo)"” → “"Jacopo Furioso (Kızgın Jacopo)"” — Ad yazımı.
+- **paolo-veronese** · `metin` [q8,q7]: “Paola daha çok gençken” → “Paolo daha çok gençken” — Sanatçının adı Paolo'dur.
+- **agnolo-bronzino** · `metin` [q8]: “– o. 23 Kasım 1572” → “– ö. 23 Kasım 1572” — Ölüm kısaltması 'ö.' olmalı.
+- **agnolo-bronzino** · `metin` [q8,q7]: “dolayasıyla” → “dolayısıyla” — Yazım hatası.
+- **rosso-fiorentino** · `metin` [q8]: “Giovanni Battista di Jocopo'dur” → “Giovanni Battista di Jacopo'dur” — Ad yazımı.
+- **rosso-fiorentino** · `metin` [q8]: “İtalyan Maniyerimini” → “İtalyan Maniyerizmini” — Yazım hatası.
+- **caravaggio** · `metin` [q8]: “Caravaggio, soyadını doğduğu kasabadan almıştır.” → “Caravaggio, soyadını ailesinin geldiği kasabadan almıştır.” — Metin doğum yeri olarak Milano'yu veriyor; Caravaggio ailenin memleketidir.
+- **caravaggio** · `metin` [q8,q7]: “Tiziano’nun öğrencisi iken Venedik Okulu'yla da ilişki kurmuştur.” → “Tiziano'nun öğrencisi olan Peterzano aracılığıyla Venedik Okulu'yla da ilişki kurmuştur.” — Tiziano 1576'da öldüğünde Caravaggio beş yaşındaydı; Tiziano'nun öğrencisi olan hocası Peterzano'dur.
+- **caravaggio** · `metin` [q8,q7]: “Bazıları, pastörize edilmemiş süt ürünlerinden sıtma veya muhtemelen bruselloz olduğunu söyledi.” → “Bazıları ölüm nedeninin sıtma ya da pastörize edilmemiş süt ürünlerinden bulaşan bruselloz olduğunu öne sürdü.” — Sıtma sütten bulaşmaz; cümle hem bozuk hem yanlış ilişki kuruyordu.
+- **artemisia-gentileschi** · `metin` [q8,q7]: “savaşçılar olarak. eserlerinde” → “savaşçılar olarak eserlerinde” — Cümle ortasında yanlış nokta.
+- **diego-velazquez** · `metin` [q8]: “6 Haziran 1599'ta” → “6 Haziran 1599'da” — Ünlü uyumu: 'dokuz' → -da.
+- **diego-velazquez** · `metin` [q7]: “Portekizli bir Yahudi olan avukat baba” → “Portekiz kökenli avukat baba” — Babanın Yahudi (converso) kökeni kanıtlanmış değildir; kesin bilgi gibi sunulamaz.
+- **francisco-de-zurbaran** · `metin` [q7]: “Luis de Zurbaron” → “Luis de Zurbarán” — Ad yazımı.
+- **francisco-de-zurbaran** · `metin` [q8]: “yörel ressamın” → “yöresel ressamın” — 'Yörel' sözcüğü yok.
+- **francisco-de-zurbaran** · `metin` [q8]: “Maria Paet” → “María Páez” — İlk eşinin adı María Páez'dir.
+- **francisco-de-zurbaran** · `metin` [q8,q7]: “Domiken tarikatı” → “Dominiken tarikatı” — Yazım hatası.
+- **peter-paul-rubens** · `metin` [q8]: “Anvers'teki yayıncılar için ön parçaları yaptı.” → “Anvers'teki yayıncılar için kitapların ön sayfa resimlerini (frontispis) yaptı.” — 'Frontispieces' anlamsız biçimde 'ön parçalar' diye çevrilmiş.
+- **peter-paul-rubens** · `metin` [q8]: “hem İspanya Kralı IV. Felipe ve İngiltere Kralı I. Charles‘dan” → “hem İspanya Kralı IV. Felipe'den hem de İngiltere Kralı I. Charles'tan” — 'Hem... ve' yapısı bozuk, ek de yanlıştı.
+- **anthony-van-dyck** · `metin` [q8]: “Jacop Jordaens” → “Jacob Jordaens” — Ad yazımı.
+- **anthony-van-dyck** · `metin` [q8,q7]: “Ansver'de” → “Anvers'te” — Şehir adı yanlış.
+- **rembrandt-van-rijn** · `metin` [q7]: “Rembrandt'an tablo” → “Rembrandt'tan tablo” — Ek hatası.
+- **rembrandt-van-rijn** · `metin` [q8,q7]: “1630'da babası ölen Rembdrandt, üç yıl sonra Amsterdam'da Hendrick van Uylenburg'un evini kiralamıştır ki bu adamın kuzeni olan Saskia van Uylenburgh ile de sadece bir yıl sonra 1634'te evlenmiştir.” → “1630'da babası ölen Rembrandt, 1631'de Amsterdam'a taşınarak Hendrick van Uylenburgh'un evine yerleşmiştir; bu adamın kuzeni olan Saskia van Uylenburgh ile de 1634'te evlenmiştir.” — Ad 'Rembdrandt' diye yanlış yazılmıştı; Rembrandt Amsterdam'a 1631'de taşınıp Uylenburgh'un evine yerleşti, 'üç yıl sonra' yanlış.
+- **frans-hals** · `metin` [q7]: “Pietr de Hoogh” → “Pieter de Hooch” — Ad yazımı.
+- **frans-hals** · `metin` [q8]: “Harlem'de” → “Haarlem'de” — Hollanda şehrinin adı Haarlem'dir.
+- **frans-hals** · `metin` [q8,q7]: “Frans Hals'In” → “Frans Hals'ın” — Yazım hatası.
+- **johannes-vermeer** · `metin` [q8]: “Ölümünün ardında iki yüzyıl” → “Ölümünün ardından iki yüzyıl” — Ek hatası.
+- **johannes-vermeer** · `metin` [q8,q7]: “Bürger, Vermeer'in 66 eseri hakkında bir makale yayınladı O günden” → “Bürger, Vermeer'e atfettiği 66 eser hakkında bir makale yayınladı. O günden” — Nokta eksikti; ayrıca bu 66 eserin çoğu sonradan Vermeer'e ait bulunmadı (bugün ~35 eser kabul edilir).
+- **jan-steen** · `metin` [ki]: “aşırı renk kullanımıdır” → “zengin renk kullanımıdır” — Kaynaktaki 'abundance of colour' olumsuz 'aşırı' diye çevrilmiş.
+- **jan-steen** · `metin` [ki,q8]: “Nicolaes Knupfer'den (1603–1660)” → “Nicolaes Knüpfer'den (y. 1609–1655)” — Knüpfer 1655'te ölmüştür (doğumu y. 1609).
+- **jan-steen** · `metin` [ki,q8]: “Ostande'nin” → “Ostade'nin” — Ad yazımı.
+- **jan-steen** · `metin` [q7]: “Ressamın ilk eşinden sekiz çocuğu oldu.” → “Steen'in ilk eşinden sekiz çocuğu oldu.” — Önceki cümlede 'ressam' van Goyen'i gösterdiği için kişi karışıyordu.
+- **charles-le-brun** · `metin` [ki,q8,q7]: “Romada 4 yıl kalan Charles La Brun” → “Roma'da 4 yıl kalan Charles Le Brun” — Ek ve soyadı yazımı.
+- **charles-le-brun** · `metin` [ki]: “1661 yılında asilzade sanı ve "Sarayın Baş Ressamı" (Premier Peintre du Roi) adını aldı” → “1662'de asilzade sanı, 1664'te de "Sarayın Baş Ressamı" (Premier Peintre du Roi) unvanını aldı” — Le Brun 1662'de soylulaştırıldı, 1664'te Premier Peintre du Roi oldu.
+- **charles-le-brun** · `metin` [q8,q7]: “Markiz Louvois” → “Marki de Louvois” — Louvois erkekti; 'markiz' kadın unvanıdır.
+- **nicolas-poussin** · `metin` [ki,q8,q7]: “Jean-Auguste-Dominique Ingres and Paul Cézanne” → “Jean-Auguste-Dominique Ingres ve Paul Cézanne” — İngilizce bağlaç kalmış.
+- **nicolas-poussin** · `metin` [ki,q7]: “Nicolas Poussin'nin erken” → “Nicolas Poussin'in erken” — Ek hatası.
+- **nicolas-poussin** · `metin` [ki,q7]: “Poussin'nin Les Andelys” → “Poussin'in Les Andelys” — Ek hatası.
+- **nicolas-poussin** · `metin` [q8]: “on sekiz yaşında geldiğinde” → “on sekiz yaşına geldiğinde” — Ek hatası.
+- **claude-lorrain** · `metin` [ki,q8,q7]: “13 yaşında yerlisi oldugu Roma'dan 1613'te ayrıldı.” → “13 yaşında, 1613'te memleketi Lorraine'den ayrıldı.” — Claude, Lorraine Dükalığı'ndaki Chamagne'de doğmuştur; Roma'nın yerlisi değildir.
+- **claude-lorrain** · `metin` [ki,q8,q7]: “çekilişteki her alıcıyı dikkatlice işaretledi” → “çiziminin üzerine alıcısının adını dikkatlice not etti” — 'Drawing' (çizim) kelimesi 'çekiliş' diye yanlış çevrilmiş; Liber Veritatis çizimlerinin arkasına alıcının adı yazılırdı.
+- **francois-boucher** · `metin` [ki,q8,q7]: “Nicholas Boucher” → “Nicolas Boucher” — Babasının adı Fransızca Nicolas'tır.
+- **francois-boucher** · `metin` [ki,q8,q7]: “eğitiminem” → “eğitimine” — Yazım hatası.
+- **giovanni-battista-tiepolo** · `metin` [ki,q8,q7]: “ariskotrat” → “aristokrat” — Yazım hatası.
+- **giovanni-battista-tiepolo** · `metin` [ki,q7]: “Sebastiano Ricci and Giovanni” → “Sebastiano Ricci ve Giovanni” — İngilizce bağlaç kalmış.
+- **jean-baptiste-greuze** · `metin` [ki,q8,q7]: “Le Père de famille exliquant la Bible a ses enfants” → “Le Père de famille expliquant la Bible à ses enfants” — Fransızca eser adında yazım hataları.
+- **william-hogarth** · `metin` [ki,q8,q7]: “Dünyada ilk kez resimle yazıyı birleştiren, konuşma balonları hazırlayan ressam William Hogarth'tır.” → “Resimle yazıyı birleştiren ve konuşma balonlarından yararlanan öncü ressamlardan biridir.” — Resim-yazı birlikteliği ve konuşma şeritleri Orta Çağ'dan beri vardır; 'dünyada ilk' iddiası yanlış.
+- **william-hogarth** · `metin` [q8]: “Karikatür gibi serili sanatların öncüsü” → “Karikatür gibi seri hâlindeki resimli anlatı sanatlarının öncüsü” — 'Serili' Türkçede yok.
+- **canaletto** · `metin` [ki,q8,q7]: “Canalatto” → “Canaletto” — Ad yazımı.
+- **canaletto** · `metin` [ki,q8]: “Warwick Castle and Alnwick Castle” → “Warwick Castle ve Alnwick Castle” — İngilizce bağlaç kalmış.
+- **canaletto** · `metin` [ki,q8,q7]: “venduta ressamı” → “veduta ressamı” — Terim 'veduta'dır.
+- **thomas-gainsborough** · `metin` [ki,q8,q7]: “Wiliam Hogarth” → “William Hogarth” — Ad yazımı.
+- **thomas-gainsborough** · `metin` [ki,q8,q7]: “Margeret Burr” → “Margaret Burr” — Ad yazımı.
+- **thomas-gainsborough** · `metin` [ki,q7]: “binaya resimlendirmek” → “binayı resimlendirmek” — Ek hatası.
+- **thomas-gainsborough** · `metin` [ki,q7]: “Thomas bu ailesinin” → “Thomas ailesinin” — Fazla 'bu' cümleyi bozuyordu.
+- **jacques-louis-david** · `metin` [ki,q8,q7]: “1780'lerde, tarihsel resimleriyle Rokoko tarzından klasik bir tat ile kullandı.” → “1780'lerde tarih resimleriyle beğeninin Rokoko'dan klasik bir sadeliğe yönelmesine öncülük etti.” — Cümle anlamsızdı.
+- **jacques-louis-david** · `metin` [ki]: “Oldukça fazla hayranı vardı” → “Çok sayıda öğrencisi vardı” — Kaynakta 'çok sayıda öğrencisi' olduğu ve bu yüzden 19. yüzyıl Fransız sanatına yön verdiği belirtilir; 'hayran' yanlış çeviri.
+- **angelica-kauffman** · `metin` [ki]: “Kraliyet Akademisi'nin kadın ressam olan iki kurucu üyesinden biri oldu” → “Kraliyet Akademisi'nin iki kadın kurucu üyesinden biri oldu” — Bozuk söz dizimi.
+- **william-blake** · `metin` [ki,q8,q7]: “” Hayatı boyunca Londra dışına bir günlük yürüyüşten daha uzun süre çıkmamış olmasına rağmen, yaratıcı görüşü, hayal gücünü “Tanrı’nın bedeni” ya da “insanın kendi varoluşu” olarak benimseyen, çeşitli ve sembolik olarak zengin bir bedeni ortaya çıkardı.” → “Felpham'da geçirdiği üç yıl dışında hayatı boyunca Londra'da yaşamasına rağmen, hayal gücünü “Tanrı’nın bedeni” ya da “insanın kendi varoluşu” olarak benimseyen yaratıcı görüşüyle çeşitli ve sembolik açıdan zengin bir eser bütünü ortaya koydu.” — Blake 1800–1803'te Felpham'da yaşamıştır; 'body of work' da 'beden' diye çevrilmişti. Başıboş tırnak kaldırıldı.
+- **william-blake** · `metin` [ki]: “Blake, daha sonra eleştirmenler tarafından yapıtları, anlatım gücü, yaratıcılığı, felsefi ve gizemli eğilimi yüksek takdir gördü.” → “Blake'in yapıtları, anlatım gücü, yaratıcılığı ve felsefi, gizemli eğilimi nedeniyle daha sonra eleştirmenlerce büyük takdir gördü.” — Özne-yüklem uyumu bozuktu.
+- **william-blake** · `metin` [q8,q7]: “hem romantik akımın hem de romantik akımı öncesi parçasıdır” → “hem romantik akımın hem de romantizm öncesinin parçasıdır” — Tamlama bozuktu.
+- **william-blake** · `metin` [ki,q8,q7]: “19. ” olarak nitelemiştir.” → “19. yüzyıl eleştirmeni William Michael Rossetti onu “parlak bir ışık” (glorious luminary) olarak nitelemiştir.” — Cümle yarım kalmıştı; İngilizce kaynaktaki Rossetti nitelemesiyle tamamlandı.
+- **william-blake** · `metin` [ki]: “ikisi gebelikte ölen” → “ikisi bebekken ölen” — 'Died in infancy' 'gebelikte' diye yanlış çevrilmiş.
+- **william-blake** · `metin` [q8,q7]: “Babası bir mensuatçıydı.” → “Babası bir çorap ve mensucat satıcısıydı.” — 'Mensuatçı' sözcüğü yok; babası çorapçı (hosier) idi.
+- **henry-fuseli** · `metin` [q8]: “İsviçreli ressam, teknik ressam ve sanat yazarı” → “İsviçreli ressam, desen sanatçısı ve sanat yazarı” — 'Draughtsman' teknik ressam diye yanlış çevrilmiş.
+- **henry-fuseli** · `metin` [ki,q8]: “Portre ressamı olan Füssli, Johann Caspar Füssli'nin oğludur.” → “Füssli, portre ressamı Johann Caspar Füssli'nin oğludur.” — Portre ressamı olan Henry değil babası Johann Caspar'dır.
+- **henry-fuseli** · `metin` [ki,q8,q7]: “Daha sonra, The Nightmare ismiyle bilinen tablosunu Detroit Sanat Enstitüsü'nde sergilemiştir. 1782 yılında, yaptığı tablonun Kraliyet Sanat Akademisi’nde sergilenmesiyle şöhreti artmıştır.” → “1782 yılında, bugün Detroit Sanat Enstitüsü'nde bulunan The Nightmare adlı tablosunun Kraliyet Sanat Akademisi’nde sergilenmesiyle şöhreti artmıştır.” — Tablo Detroit'te değil 1782'de Kraliyet Akademisi'nde sergilendi; Detroit bugünkü yeridir.
+- **henry-fuseli** · `metin` [q8]: “Kontes Guildford” → “Kontes Guilford” — Unvan Countess of Guilford'dur.
+- **henry-fuseli** · `metin` [ki,q7]: “St Paul Katedrali mezarlığına gömülmüştür.” → “St Paul Katedrali'nin kriptine gömülmüştür.” — Füssli katedralin kriptine gömülmüştür.
+- **caspar-david-friedrich** · `metin` [q7]: “Ancak onun manzara resmini temel alan bir kariyer izlemesinde ilahiyatçı Ludwig Gotthard Kosegarten ile tanışması oldu.” → “Ancak manzara resmine dayalı bir kariyer izlemesinde asıl etkili olan, ilahiyatçı Ludwig Gotthard Kosegarten ile tanışması oldu.” — Cümlede yüklem eksikti.
+- **john-constable** · `metin` [ki]: “"resim hissin bir diğer anlamıdır"” → “"resim, duygunun bir başka adıdır"” — 'Painting is but another word for feeling' yanlış çevrilmiş.
+- **eugene-delacroix** · `metin` [ki,q8,q7]: “" Delacroix, Fransız ressam Théodore” → “Delacroix, Fransız ressam Théodore” — Başıboş tırnak işareti.
+- **eugene-delacroix** · `metin` [ki,q8,q7]: “tablosu,Fransız” → “tablosu, Fransız” — Virgülden sonra boşluk.
+- **francisco-de-goya** · `metin` [ki,q8]: “duvar halısı karikatürleri” → “duvar halısı kartonları (taslakları)” — 'Tapestry cartoons' karikatür değil, halı için hazırlanan büyük taslaklardır.
+- **francisco-de-goya** · `metin` [ki,q7]: “duyma yetkisini” → “duyma yetisini” — Yanlış sözcük: 'yetki' değil 'yeti'.
+- **j-m-w-turner** · `metin` [ki,q8]: “Annesi Mary Marshall, hızla akıl sağlığını yitirmeye başlamış, belki de kısmen de olsa, Turner'ın küçük kız kardeşi Helen Turner'ın 1786 yılında ölümüne neden olmuştur.” → “Annesi Mary Marshall, belki de kısmen Turner'ın küçük kız kardeşi Helen Turner'ın 1786'daki ölümünün etkisiyle, hızla akıl sağlığını yitirmeye başlamıştır.” — Neden-sonuç ters çevrilmişti: annenin hastalığı kız kardeşin ölümünün sonucudur, nedeni değil.
+- **j-m-w-turner** · `metin` [ki,q8,q7]: “Bethlam (Bedlam)” → “Bethlem (Bedlam)” — Hastanenin adı Bethlem'dir.
+- **j-m-w-turner** · `metin` [ki,q8]: “okulununa” → “okuluna” — Yazım hatası.
+- **dante-gabriel-rossetti** · `metin` [q8]: “eğitimli bir aileye doğdu” → “eğitimli bir ailede doğdu” — İngilizceden kalıp; Türkçede bulunma eki gerekir.
+- **dante-gabriel-rossetti** · `metin` [ki,q8]: “Rossetti kendini “kendine” → “Rossetti, “kendine” — 'Kendini' ile edilgen 'tanımlanmaktadır' çelişiyordu; nitelemeler başkalarınındır.
+- **dante-gabriel-rossetti** · `metin` [ki,q7]: “hissedildi. eleştirmenlerin” → “hissedildi. Eleştirmenlerin” — Cümle küçük harfle başlıyordu.
+- **dante-gabriel-rossetti** · `metin` [ki,q7]: “zihinsel dengesizliği artırdı bunun üzerine karartılmış bir duruma düştü.” → “zihinsel dengesizliğini artırdı ve sanatçı derin bir bunalıma girdi.” — Bozuk ve anlaşılmaz cümle.
+- **john-everett-millais** · `metin` [ki,q7]: “tablosu ziyadesiyle sanatsaldı.” → “tablosu büyük tartışma yarattı.” — Tablo gerçekçi tasviri nedeniyle büyük tartışma yaratmıştır (kaynak: 'highly controversial').
+- **john-everett-millais** · `metin` [q8]: “sert eleştirelere” → “sert eleştirilere” — Yazım hatası.
+- **william-holman-hunt** · `metin` [ki,q8,q7]: “"Kraliyet Akademisi (Royal Academy") Okuluna” → “Kraliyet Akademisi (Royal Academy) Okulu'na” — Tırnak işareti parantezin içine kaçmıştı.
+- **william-holman-hunt** · `metin` [ki,q8]: “akademiyi kurucularından "Joshua Reynolds" etkileri hakim olmasına” → “akademinin kurucularından Joshua Reynolds'un etkilerinin hâlâ hâkim olmasına” — Tamlama ekleri bozuktu.
+- **william-holman-hunt** · `metin` [ki]: “katılması 7 kişiden” → “katılmasıyla 7 kişiden” — Ek eksikti.
+- **william-holman-hunt** · `metin` [ki,q8,q7]: “"On-Raffaeloculuk Kardeşliği"” → “"Ön-Raffaeloculuk Kardeşliği"” — Yazım hatası.
+- **william-holman-hunt** · `metin` [ki,q8,q7]: “ve özellikle 18.” → “ve özellikle 18. yüzyılda Joshua Reynolds'un temsil ettiği akademik resim anlayışından uzaklaşmaktı.” — Metin yarıda kesilmişti; Kardeşliğin bilinen hedefiyle tamamlandı.
+- **jean-auguste-dominique-ingres** · `metin` [ki]: “1797'e” → “1797'ye” — Ek hatası.
+- **jean-auguste-dominique-ingres** · `metin` [ki,q7]: “1806 yılında bir sergiye yolladığı eserleri gotik görüldü ve sergiye çıkmadı.” → “1806 Salonu'na gönderdiği eserler sergilendi, ancak eleştirmenlerce "gotik" bulunarak olumsuz karşılandı.” — 1806 Salonu'nda eserleri sergilenmiş, fakat 'gotik' bulunarak eleştirilmiştir.
+- **jean-leon-gerome** · `metin` [ki,q8,q7]: “Odilon, Redon” → “Odilon Redon” — Tek kişi virgülle ikiye bölünmüştü.
+- **jean-leon-gerome** · `metin` [ki,q7]: “iki horoz dövüşen horozlar ile çıplak bir genç adam ve çok ince dökümlü genç bir kadını” → “dövüşen iki horozla birlikte çıplak bir genç adamı ve ince dökümlü giysili genç bir kadını” — 'Horoz dövüşen horozlar' bozuk tekrar.
+- **william-adolphe-bouguereau** · `metin` [ki,q8]: “Özellikle köy çocuklarını konu alan çalışmalarıyla tanınan sanatçı güzel köy çocukları çizdiği için romantik ressam olarak görülürdü.” → “Özellikle köy çocuklarını idealleştirilmiş biçimde konu alan çalışmalarıyla tanınırdı.” — Bouguereau Romantik ressam sayılmaz; kastedilen konularını romantikleştirmesidir.
+- **honore-daumier** · `metin` [q8]: “bir kapıcının yanına” → “bir icra memurunun (huissier) yanına” — Kaynakta 'huissier de justice' (icra memuru) geçer; 'kapıcı' yanlış çeviri.
+- **gustave-courbet** · `metin` [ki,q8]: “Courbet hayat görüşünü şöyle açıkladı: ” → “” — Alıntı düşmüştü; ardından gelmeyen alıntıyı haber veren cümle kaldırıldı.
+- **gustave-courbet** · `metin` [q8]: “akademizmin, idealizmin ve romantizmin aşırılıklarının kriterlerine karşı çıkar” → “akademizmin ve idealizmin ölçütlerine ve romantizmin aşırılıklarına karşı çıkar” — 'Aşırılıkların kriterleri' anlamsızdı.
+- **gustave-courbet** · `metin` [ki]: “manuel işçilere” → “el emekçilerine” — 'Manual worker' kalıbı Türkçede kullanılmaz.
+- **camille-corot** · `metin` [ki,q8,q7]: “Fransız izlenimci ressam.” → “Fransız manzara ressamı.” — Corot izlenimci değildir; Barbizon çevresinden, izlenimciliğe öncülük eden bir manzara ressamıdır.
+- **camille-corot** · `metin` [ki,q8,q7]: “eserleri ise neoklasik geleneğe refarans olmuştur.” → “eserleri ise neoklasik geleneğe göndermeler içerir.” — Yazım hatası ve yanlış kullanım ('references' çevirisi).
+- **camille-corot** · `metin` [ki,q8]: “Claude Monet'in onun hakkında "Burada yalnızca tek bir efendi var. " sözünü söylemiştir.” → “Claude Monet onun hakkında "Burada yalnızca tek bir usta var." demiştir.” — Tamlayan-yüklem uyumu bozuktu; 'master' bağlamında 'usta' doğru karşılıktır.
+- **camille-corot** · `metin` [q8,q7]: “Figure painting'e” → “Figür resmine” — İngilizce terim çevrilmemiş.
+- **camille-corot** · `metin` [q8]: “şiirsel güce yöne doğru kaydı” → “şiirsel güce doğru kaydırdı” — Bozuk fiil yapısı.
+- **camille-corot** · `metin` [q8,q7]: “La Piazetta” → “La Piazzetta” — Yazım hatası.
+- **edouard-manet** · `metin` [q8,q7]: “İsveç Prensi Charles Bernadotte'nin torunuydu” → “İsveç veliahdı Charles Bernadotte'nin vaftiz kızıydı” — Manet'nin annesi Bernadotte'nin torunu değil vaftiz kızıydı.
+- **edouard-manet** · `metin` [q8]: “babası isteği” → “babasının isteği” — İyelik eki eksik.
+- **berthe-morisot** · `metin` [q8,q7]: “Morisot ‘un eserleri ilk kez çok saygın Salon de Paris'(türkçe: Paris Salonu)‘nda” → “Morisot'nun eserleri ilk kez çok saygın Salon de Paris'te (Paris Salonu)” — Ek, boşluk ve iç içe tırnak bozuktu.
+- **berthe-morisot** · `metin` [q8,q7]: “Alfred Sisley'inde” → “Alfred Sisley'nin de” — Ek ve bağlaç hatası.
+- **berthe-morisot** · `metin` [q7]: ““ üç büyük kadınlar” ından” → ““üç büyük kadın”ından” — Dizgi ve çoğul-tekil uyumsuzluğu.
+- **claude-monet** · `metin` [q8,q7]: “fakat annesi şarkıcı olan Claude sanatçı olmasını istiyordu.” → “fakat şarkıcı olan annesi, Claude'un sanatçı olmasını istiyordu.” — Cümle annenin adı Claude'muş gibi okunuyordu.
+- **camille-pissarro** · `metin` [ki,q8]: “annesi ise Dominik Cumhuriyeti vatandaşı St. Thomas adasından” → “annesi ise St. Thomas adasından” — St. Thomas o dönemde Danimarka kolonisiydi; 'Dominik Cumhuriyeti vatandaşı' ifadesi tutarsız ve yanlış.
+- **camille-pissarro** · `metin` [ki,q8]: “bir erkeğin teyzesiyle evlenmesi yasaktı” → “bir erkeğin amcasının dul eşiyle (yengesiyle) evlenmesi yasaktı” — Rachel, Frederick'in amcasının dul eşiydi; Türkçede bu 'yenge'dir, 'teyze' değil.
+- **alfred-sisley** · `metin` [ki,q8]: “Babası onu 13 yıl Londra'ya gönderip” → “Babası onu 18 yaşında dört yıllığına Londra'ya gönderip” — Sisley 1857'de 18 yaşında Londra'ya gönderildi ve yaklaşık dört yıl kaldı.
+- **alfred-sisley** · `metin` [q8]: “Orada Bazile,” → “Orada Bazille,” — Ad yazımı.
+- **alfred-sisley** · `metin` [ki,q8]: “Durand Royal” → “Durand-Ruel” — Sanat simsarı Paul Durand-Ruel'dir.
+- **alfred-sisley** · `metin` [ki,q8,q7]: “Thames Nehri nin” → “Thames Nehri'nin” — Kesme işareti eksik.
+- **alfred-sisley** · `metin` [ki,q8]: “vardır. bunlar yeşil, pembe, mor, tozlu mavi ve kremanın” → “vardır. Bunlar yeşil, pembe, mor, tozlu mavi ve krem renginin” — Cümle küçük harfle başlıyordu; 'krema' yiyecektir, renk 'krem'dir.
+- **katsushika-hokusai** · `metin` [ki,q8]: “Hokusai'ın en bilinen eseri, 1820'li yıllarda ürettiği” → “Hokusai'nin en bilinen eseri, 1830'ların başında ürettiği” — Fuji'nin 36 Manzarası y. 1830–1832'de yayımlandı; ek de ünlü uyumuna aykırıydı.
+- **katsushika-hokusai** · `metin` [q8]: “Hokusai'a önce” → “Hokusai'yi önce” — Ek hatası.
+- **katsushika-hokusai** · `metin` [ki,q8,q7]: “sanatformunu büyük ölçüde sosyete orospuları ve oyunculara” → “sanat formunu büyük ölçüde kurtizanlara ve oyunculara” — Kaba ve yanlış çeviri ('courtesans'); bitişik yazım.
+- **katsushika-hokusai** · `metin` [ki]: “on beş ciltten fazla ciltte” → “on beşten fazla ciltte” — Sözcük tekrarıyla bozuk ifade.
+- **paul-cezanne** · `metin` [ki,q8]: “post-empresyonist ressam ve gezgin.” → “post-empresyonist ressam.” — Cézanne 'gezgin' olarak tanınmaz; hatalı ekleme.
+- **paul-cezanne** · `metin` [ki,q8,q7]: “Renoir, Pissaro,” → “Renoir, Pissarro,” — Ad yazımı.
+- **paul-cezanne** · `metin` [ki,q8]: “Bu nedenle Cézanne tablolarını ilk kez” → “Cézanne ise tablolarını ilk kez” — 1863 sergisi 1864–69 retlerinden öncedir; 'bu nedenle' kronolojik çelişki yaratıyordu.
+- **paul-cezanne** · `metin` [ki]: “eserleri nadiren gösterime sunmuş” → “eserlerini nadiren gösterime sunmuş” — Belirtme eki eksik.
+- **georges-seurat** · `metin` [ki,q8]: “Babası Paris La Villette'te bir polisti.” → “Babası Paris La Villette'te bir adliye görevlisiydi.” — Babası Antoine Seurat polis değil, adliye görevlisi (huissier) idi.
+- **georges-seurat** · `metin` [ki,q8,q7]: “Kurumsal ve plastik araştırmalara büyük ilgi duyan Seuret” → “Biçimsel ve plastik araştırmalara büyük ilgi duyan Seurat” — 'Formal' kurumsal diye yanlış çevrilmiş; ad yanlış yazılmış.
+- **georges-seurat** · `metin` [ki]: “ve Eugène Delacroix kuramlarını” → “ve Eugène Delacroix'nın kuramlarını” — İyelik eki eksik.
+- **paul-signac** · `metin` [ki,q8]: “Suyu boyayla resim yapmayı severdi.” → “Suluboyayla resim yapmayı severdi.” — Bozuk ifade; Signac'ın çok sayıda suluboya yaptığı bilinir, kaynak metnin anlamı da budur.
+- **paul-signac** · `metin` [ki]: “(puantiliz)” → “(puantilizm)” — Yazım hatası.
+- **vincent-van-gogh** · `metin` [ki,q8,q7]: “aVangart” → “avangart” — Yazım hatası.
+- **henri-de-toulouse-lautrec** · `metin` [ki,q8,q7]: “Toulouse-Lautre'dir” → “Toulouse-Lautrec'tir” — Soyadı eksik yazılmış.
+- **henri-de-toulouse-lautrec** · `metin` [q8]: “akraba evliği” → “akraba evliliği” — Yazım hatası.
+- **henri-de-toulouse-lautrec** · `metin` [ki]: “Sekiz yaşındaki Henri, 1868 yılında” → “Sekiz yaşındaki Henri, 1872 yılında” — 1864 doğumlu Henri annesiyle Paris'e 1872'de, sekiz yaşında taşındı.
+- **paul-gauguin** · `metin` [ki,q8,q7]: “Ancak sonrasında yalnız kalmanın etkisiyle depresyona girer ve intihara kalkışır.” → “Yıllar sonra, 1897'de Tahiti'de yalnızlık ve yoksulluk içinde depresyona girer ve intihara kalkışır.” — Cümle intihar girişimini Arles dönemine bağlıyordu; Gauguin'in girişimi 1897'de Tahiti'dedir.
+- **paul-gauguin** · `metin` [ki]: “onu tüm zamanında resim yapmaya yöneltir” → “onu tüm zamanını resme ayırmaya yöneltir” — Bozuk ifade.
+- **arnold-bocklin** · `metin` [ki,q7]: “İkinci bir kadın evlenmeyi reddetti.” → “İkinci bir kadın onunla evlenmeyi reddetti.” — Nesne düşmüştü.
+- **gustav-klimt** · `metin` [ki,q8]: “genç yaşıtı Egon Schiele” → “kendisinden genç çağdaşı Egon Schiele” — Schiele Klimt'ten 28 yaş küçüktür; 'younger contemporary' yanlış çevrilmiş.
+- **edvard-munch** · `metin` [ki]: “açık arttırma” → “açık artırma” — TDK yazımı.
+- **ernst-ludwig-kirchner** · `metin` [ki]: “Aynı sene 600'den fazla eseri satıldı ya da yok edildi.” → “1937'de 600'den fazla eseri satıldı ya da yok edildi.” — Eserlere el konması ve imhası 1933'te değil 1937'dedir.
+- **wassily-kandinsky** · `metin` [ki]: “Bu resimler, kompozisyon koyu üzerine açık ve ışıklı formlar ile kurgulanmıştır.” → “Bu resimlerin kompozisyonu, koyu zemin üzerine açık ve ışıklı formlarla kurgulanmıştır.” — Bozuk çeviri.
+- **wassily-kandinsky** · `metin` [ki]: “eski Rus milliyetçilerinin çoğunlukla yaşadığı Münih'e” → “çok sayıda Rus gurbetçinin yaşadığı Münih'e” — 'Expatriates' sözcüğü 'eski milliyetçiler' diye yanlış çevrilmiş; Münih'te kalabalık bir Rus sanatçı topluluğu vardı.
+- **wassily-kandinsky** · `metin` [ki]: “Moskova Sanatçılar Birliği beraberinde sergiler düzenledi” → “Moskova Sanatçılar Birliği ile birlikte sergiler düzenledi” — 'Beraberinde' yanlış kullanılmış.
+- **wassily-kandinsky** · `metin` [ki,q8,q7]: “Her yönden yetenekli bir sanatçıydı ve öncelerinde öğrencisi olduğu Phalanx grubunun daha sonra öğretmeni oldu.” → “Her yönden yetenekli bir sanatçıydı; daha önce öğrenci olan Kandinsky, kurduğu Phalanx grubunun okulunda öğretmenlik yaptı.” — Kendi kurduğu grubun öğrencisi olamaz; kaynaktaki 'önce öğrenciydi, şimdi Phalanx okulunda öğretmen oldu' anlamı bozulmuştu.
+- **franz-marc** · `metin` [ki,q8,q7]: “ 1911'de sanatçı Ağustosu Macke'yle önemli bir arkadaşlığı geliştirdi.” → “ Ressam August Macke ile yakın bir dostluk kurdu.” — Aynı bilgi farklı yılla tekrar ediliyordu ve 'August' adı 'Ağustosu' diye bozulmuştu.
+- **pablo-picasso** · `metin` [q8]: “Juventut'ta” → “Joventut'ta” — Barselona'daki Katalanca derginin adı Joventut'tur.
+- **man-ray** · `metin` [ki]: “ölümünden sonraki yıllar itibarı giderek artmıştır” → “ölümünden sonraki yıllarda itibarı giderek artmıştır” — Ek eksikliği cümleyi bozuyordu.
+- **man-ray** · `metin` [q7]: “belirterek kendisini 20. yüzyılın” → “belirterek Man Ray'i 20. yüzyılın” — Dönüşlü zamir dergiye gönderme yapıyordu.
+- **man-ray** · `metin` [ki]: “Kendisine rehberlik eden ilkeleri "karşınıza çıkan bütün kapıları açın ve oradan özgürce yürüyün" olmuştur.” → “Dergiye göre Man Ray'in yaratıcı zekâsı "karşısına çıkan bütün kapıları açmış ve oradan özgürce yürümüştür."” — Bu söz Man Ray'in ilkesi değil, ARTnews'in onun hakkındaki değerlendirmesidir.
+- **salvador-dali** · `metin` [q8]: “2003'te "en iyi kısa animasyon filmi" dalında Akademi Ödülü adayı olmuştur” → “2004'te "en iyi kısa animasyon filmi" dalında Akademi Ödülü'ne aday gösterilmiştir” — Adaylık 76. tören kapsamında 2004'te açıklandı.
+- **rene-magritte** · `metin` [q8]: “Lèopold” → “Léopold” — Aksan hatası.
+- **rene-magritte** · `metin` [ki,q8,q7]: “Kayıp Jokey (Le Jockey Perdu)i çizdi.” → “Kayıp Jokey (Le Jockey perdu) adlı eserini yaptı.” — Ek kesmesiz bitişmişti.
+- **joan-miro** · `metin` [ki,q8]: “La Lonja's Escuela” → “La Lonja'daki Escuela” — İngilizce iyelik eki kalmış.
+- **joan-miro** · `metin` [ki]: “burada memur olarak göreve başladı” → “bir ticaret şirketinde memur olarak çalışmaya başladı” — Miró okulda değil bir ticaret şirketinde kâtip olarak çalıştı.
+- **joan-miro** · `metin` [q8]: “Francesc Galí’s Escola d’Art” → “Francesc Galí'nin Escola d’Art” — İngilizce iyelik eki kalmış.
+- **joan-miro** · `metin` [ki,q8]: “Paris'teki ilk sergisi 1925'te Galeri Pierre'de büyük bir sürrealist hareket olarak yankı buldu.” → “1925'te Paris'te Galeri Pierre'de açtığı sergi, önemli bir sürrealist olay olarak büyük yankı uyandırdı.” — Paris'teki ilk kişisel sergisi 1921'de La Licorne'daydı; ayrıca 'event' hareket diye çevrilmişti.
+- **joan-miro** · `metin` [ki,q8,q7]: “1941'de geri döndü. Aynı yıl New York, The Museum of Modern Arts'da” → “1940'ta geri döndü. 1941'de New York'taki Museum of Modern Art'ta” — İspanya'ya 1940'ta döndü; MoMA retrospektifi 1941'dedir; kurum adı tekil 'Art'.
+- **joan-miro** · `metin` [ki,q8,q7]: “Josep Lloerns y Artigas” → “Josep Llorens i Artigas” — Seramikçinin adı yanlış yazılmış.
+- **bonaventura-berlinghieri** · `metin` [ki]: “Francesco'nun ölümünden yalnızca birkaç yıl sonra yapılmış” → “Francesco'nun ölümünden (1226) yalnızca dokuz yıl sonra, 1235'te yapılmış” — Aziz 1226'da öldü, pano 1235 tarihli; 'birkaç yıl' yanıltıcı.
+- **cimabue** · `metin` [ki,q8]: “Floransa Katedrali için mozaik işlerinde de çalıştığı bilinir.” → “Pisa Katedrali'nin apsis mozaiği üzerinde de çalıştığı bilinir.” — Belgeli mozaik çalışması Pisa Katedrali'ndedir (1301–1302).
+- **robert-campin** · `metin` [ki,q8,q7]: “(y. 1378 –” → “(y. 1375 –” — Yaygın kabul ve İngilizce kaynak y. 1375'tir.
+- **jacopo-pontormo** · `metin` [ki,q8]: “Içine kapanık” → “İçine kapanık” — Büyük harf noktalı İ olmalı.
+- **annibale-carracci** · `metin` [ki,q8]: “Küçük kardeşi Agostino Carracci” → “Ağabeyi Agostino Carracci” — Agostino 1557, Annibale 1560 doğumludur; Agostino ağabeydir.
+- **orazio-gentileschi** · `metin` [ki,q8]: “Floransa Cumhuriyeti'nde doğdu” → “Pisa'da doğdu” — 1563'te Floransa Cumhuriyeti yoktu (Dükalık); doğum yeri Pisa'dır.
+- **fernand-khnopff** · `metin` [ki]: “pek çok portrede yer alan sık bir modeliydi” → “pek çok resminde yer alan, en sık başvurduğu modeliydi” — 'Frequent model' kalıbı anlamsız biçimde çevrilmişti.
+- **hannah-hoch** · `metin` [ki,q8,q7]: “Berlin Dada grubundaki tek kadınlardan biriydi.” → “Berlin Dada grubunun tek kadın üyesiydi.” — 'Tek ... -lardan biri' çelişkili; kaynak onu grubun tek kadını olarak verir.
+- **hannah-hoch** · `metin` [ki]: “mesleği olan, erkeksi ve erkekle” → “mesleği olan, androjen ve erkekle” — 'Androgynous' 'erkeksi' diye yanlış çevrilmiş.
+
+### Reddedilen iddialar (121)
+
+- **duccio-di-buoninsegna** · `metin` [ki,q8,q7]: Ölüm yılı kaynaklarda 1318/1319 olarak geçer; ayrıca bu dosyada başlık/tarih alanı yok, metindeki 1318 savunulabilir.
+- **simone-martini** · `metin` [q8,q7]: Anlam tekrarı üslup sorunudur, olgu ya da dil bozukluğu değil.
+- **simone-martini** · `metin` [ki]: Cümle anlaşılır ve dilbilgisi açısından kabul edilebilir; üslup değişikliği.
+- **giotto-di-bondone** · `metin` [ki]: 'Yavaş yavaş' ifadesiyle derinlik arayışına işaret eden savunulabilir bir sadeleştirme.
+- **giotto-di-bondone** · `metin` [q8,q7]: Belirsiz ama açıkça yanlış değil; ışık-gölge kullanımı metnin sonunda zaten anlatılıyor.
+- **andrea-mantegna** · `metin` [ki]: Sezar'ın Zaferi tuvalleri 1501'de Mantova'da bir tiyatro dekoru olarak da kullanılmıştır; ifade savunulabilir.
+- **andrea-mantegna** · `metin` [ki,q8]: Anlamı 'günümüze ulaşan'; üslup tercihi.
+- **andrea-mantegna** · `metin` [q7]: Genel bir abartı ifadesi; tekrarı silindikten sonra ilk geçiş yerinde bırakıldı.
+- **paolo-uccello** · `metin` [ki]: Anlaşılır; üslup değişikliği.
+- **sandro-botticelli** · `metin` [q7]: 'Botticello' (küçük fıçı) lakabın özgün biçimidir; değiştirilmemeli.
+- **pietro-perugino** · `metin` [q8,q7]: Doğum yılı tartışmalıdır (1446–1452) ve metin bunu zaten belirtiyor; dosyada ayrı tarih alanı yok.
+- **albrecht-durer** · `metin` [q8,q7]: Dürer'in erken eğitimi geç Gotik ve Felemenk etkili Nürnberg geleneğidir; savunulabilir sadeleştirme.
+- **albrecht-durer** · `metin` [q8]: Çıraklığı 1489 sonunda bitti, yolculuk 1490 başında başladı; fark önemsiz ve kaynakla uyumlu.
+- **jan-van-eyck** · `metin` [ki,q8,q7]: Doğum yılı kesin bilinmez (y. 1380–1395); bu dosyada çelişen bir tarih alanı yok.
+- **lucas-cranach-yasl** · `metin` [q7]: Kaynaklar annesinin soyadını Hübner olarak verir; doğru.
+- **lucas-cranach-yasl** · `metin` [q8]: Cranach gerçekten bir matbaa ve yayın işi yürütmüştür; savunulabilir.
+- **lucas-cranach-yasl** · `metin` [q7]: Ağır ama anlaşılır çeviri; olgu hatası yok.
+- **hans-holbein-genc** · `metin` [q7]: Kaynak metnin yorumu; olgu hatası değil.
+- **hieronymus-bosch** · `metin` [q7]: Bilgi doğru; spekülatif itiraz.
+- **pieter-bruegel-yasl** · `metin` [q8,q7]: Türkçede 'Hollandalı' Felemenk karşılığı olarak yaygın; metin Flaman bağlamını da veriyor.
+- **leonardo-da-vinci** · `metin` [q7]: Leonardo'nun notlarında 'Catelina' biçimi gerçekten geçer.
+- **michelangelo** · `metin` [q8]: 'Arketipik' Türkçede kullanılan bir sözcüktür.
+- **raphael** · `metin` [q8]: Eski üslup ama dilbilgisi yerinde.
+- **donato-bramante** · `metin` [ki]: Doğum yeri kaynaklarda doğru biçimde Monte Asdrualdo (bugün Fermignano) olarak geçer.
+- **donato-bramante** · `metin` [ki]: Belirsiz bir genelleme; açık bir hata sayılmadı.
+- **donato-bramante** · `metin` [q7]: Ağır ama anlaşılır (yanılsamacılık); üslup.
+- **donato-bramante** · `metin` [q7]: Özel ada gelen ek kesmeyle ayrılır; mevcut yazım doğru.
+- **correggio** · `metin` [ki,q7]: Eser adının İngilizce bırakılması hata değil; üslup.
+- **titian** · `metin` [q7]: Tiziano'nun (modelden olmasa da) Kanuni portreleri yaptığı kabul edilir.
+- **giorgione** · `metin` [q7]: Akım etiketi bu dosyada yok; metin ifadesi savunulabilir.
+- **tintoretto** · `metin` [q7]: Ağır ama anlaşılır; üslup.
+- **paolo-veronese** · `metin` [q7]: Kaynakta taş yontuculuğu olarak verilen meslek; savunulabilir.
+- **el-greco** · `metin` [q7]: Venedik yönetimindeki Girit'in resmî adı 'Regno di Candia' (Kandiye Krallığı) idi; doğru.
+- **el-greco** · `metin` [q8]: 1541 doğumlu sanatçı 1567 dolayında 26 yaşındaydı; tutarlı.
+- **el-greco** · `metin` [q7]: Literatürde yaygın bir değerlendirme.
+- **rosso-fiorentino** · `metin` [q8]: Ölüm yeri kaynaklarda Paris olarak da geçiyor; emin olunamadığı için değiştirilmedi (Claude).
+- **rosso-fiorentino** · `metin` [q7]: Uffizi'deki 'Müzisyen Melek' (Angelo musicante) Rosso'nun en bilinen eseridir; doğru.
+- **diego-velazquez** · `metin` [q7]: Anlaşılır; üslup.
+- **peter-paul-rubens** · `metin` [q8,q7]: Rubens o dönemde yaşamıştır ve metin onu açıkça Flaman olarak tanıtıyor; savunulabilir.
+- **anthony-van-dyck** · `metin` [q7]: Eser adı sadeleştirmesi; hata değil.
+- **frans-hals** · `metin` [q8,q7]: Eski bir Türkçe karşılık; anlaşılır.
+- **frans-hals** · `metin` [q8]: Eser National Gallery'ye 1980'de alınmıştır; doğru.
+- **johannes-vermeer** · `metin` [q7]: Eleştirmenin yaygın kullanılan adıdır.
+- **jan-steen** · `metin` [ki]: Anlaşılır; üslup.
+- **charles-le-brun** · `metin` [q7]: 'San' soyluluk unvanı için de kullanılır.
+- **claude-lorrain** · `metin` [ki]: Kaynak ifadesi doğrulanamadı; belirsiz.
+- **claude-lorrain** · `metin` [ki]: Anlamı belirsiz ama kaynak metin doğrulanamadı; tahmini yeniden yazım yapılmadı.
+- **claude-lorrain** · `metin` [q8]: Kaynak doğrulanamadı; model de emin değil.
+- **claude-lorrain** · `metin` [q7]: Anlaşılır; üslup.
+- **jean-baptiste-greuze** · `metin` [ki]: Anlaşılır; üslup.
+- **william-hogarth** · `metin` [q8]: Kaynaktaki 'editorial cartoonist' ifadesinin karşılığı; savunulabilir.
+- **canaletto** · `metin` [q7]: Anlaşılır; üslup.
+- **jacques-louis-david** · `metin` [ki]: Özgün adın kullanımı hata değil.
+- **jacques-louis-david** · `metin` [q8]: Üslup.
+- **jacques-louis-david** · `metin` [q7]: Kaynakta da 'dictator of the arts' denir.
+- **william-blake** · `metin` [q8]: Model de emin değil; adres ayrıntısı önemsiz.
+- **john-constable** · `metin` [ki,q8]: Constable doğalcı geleneğe bağlıdır; savunulabilir ve dosyada akım alanı yok.
+- **john-constable** · `metin` [ki,q7]: Tam üyelik 1829'da 52 yaşında; 1819'daki yardımcı üyelik ayrıntısı eksik ama ifade yanlış değil.
+- **j-m-w-turner** · `metin` [q8]: İngilizce kaynak kız kardeşin adını Helen olarak verir.
+- **theodore-gericault** · `metin` [ki]: 'X'e tercih etmek' doğru Türkçedir.
+- **theodore-gericault** · `metin` [q7]: Eser adı zaten doğru yazılmış.
+- **dante-gabriel-rossetti** · `metin` [q8]: Önceki cümlede 1872 verildiği için anlaşılır.
+- **john-everett-millais** · `metin` [ki]: Sıfat-fiil 'kuracağı' kuruluşu doğru şekilde sonraya bağlıyor; cümle yanlış değil.
+- **john-everett-millais** · `metin` [q7]: 'A Huguenot' = Fransız Protestan; kabul edilebilir çeviri.
+- **william-holman-hunt** · `metin` [ki,q8]: 'Refüze' TDK sözlüğünde yer alır.
+- **william-holman-hunt** · `metin` [q7]: Türkçede kullanılmış bir yazım; hata değil.
+- **jean-auguste-dominique-ingres** · `metin` [q8,q7]: Türkçe yazım varyantı; tutarlılık sorunu, hata değil.
+- **jean-auguste-dominique-ingres** · `metin` [q8]: Musée Granet'de Ingres'in 'Jüpiter ve Thetis'i bulunur; doğru.
+- **alexandre-cabanel** · `metin` [q7]: Terimin açıklanmaması hata değil.
+- **honore-daumier** · `metin` [q8,q7]: Akım alanı bu dosyada yok.
+- **gustave-courbet** · `metin` [ki]: Anlaşılır; savunulabilir.
+- **gustave-courbet** · `metin` [q8]: Akım alanı bu dosyada yok.
+- **jean-francois-millet** · `metin` [q8]: İngilizce kaynak da 'Paul Dumouchel' der; model emin değil.
+- **jean-francois-millet** · `metin` [q8]: Kaynaktaki 'Barbizon school in rural France' ifadesi; anlaşılır.
+- **jean-francois-millet** · `metin` [q7]: Önemsiz terim farkı.
+- **gustave-caillebotte** · `metin` [q7]: Birim tercihi hata değil.
+- **claude-monet** · `metin` [q8]: Kısa fırça vuruşları için savunulabilir sadeleştirme.
+- **claude-monet** · `metin` [q8]: Önemsiz yazım.
+- **pierre-auguste-renoir** · `metin` [q8]: Renoir ailesinin Paris'teki evi gerçekten rue d'Argenteuil'deydi (Louvre yakını).
+- **pierre-auguste-renoir** · `metin` [q8]: Aksan eksikliği; önemsiz.
+- **camille-pissarro** · `metin` [ki]: Model emin değil; kırsal konuları ve yapıya ilgisiyle savunulabilir.
+- **camille-pissarro** · `metin` [q7]: Frederick ile Abraham Gabriel aynı kişidir (Frédéric Abraham Gabriel Pissarro); itiraz yanlış.
+- **alfred-sisley** · `metin` [ki]: 'Katkısız' (saf) mecazen anlaşılır.
+- **utagawa-hiroshige** · `metin` [ki]: Türkçe çeviriyazım tercihi.
+- **utagawa-hiroshige** · `metin` [ki,q7]: Yer adı (八代洲) okunuşu tartışmalı; önerilen düzeltmeler doğrulanamadı.
+- **utagawa-hiroshige** · `metin` [ki,q8]: Sıralama tuhaf ama olgular yanlış değil (Toyohiro 1828'de öldü).
+- **paul-signac** · `metin` [q8]: Türkçe ve Fransızca kaynaklar babayı varlıklı bir saraç/eyerci olarak verir.
+- **paul-signac** · `metin` [ki]: Seurat 'Söra' okunduğundan 'Seurat'nın' doğrudur.
+- **vincent-van-gogh** · `metin` [ki]: Arles 'Arl' okunur; 'Arles'da' doğrudur.
+- **henri-de-toulouse-lautrec** · `metin` [ki]: Doğru ve anlaşılır (kuzen evliliği).
+- **henri-de-toulouse-lautrec** · `metin` [q8]: Türkçede post-empresyonizm karşılığı olarak kullanılır.
+- **paul-gauguin** · `metin` [ki]: Üslup.
+- **paul-gauguin** · `metin` [q8]: Tekrar üslup sorunu.
+- **arnold-bocklin** · `metin` [q8,q7]: Kronoloji sırası üslup sorunu; bilgi doğru.
+- **gustav-klimt** · `metin` [ki,q7]: Noktalama üslubu; olgu iddiası da Türkçe kaynaktaki savunulabilir bir ifade.
+- **edvard-munch** · `metin` [ki,q7]: Eser 1893'te 'Umutsuzluk' adıyla sergilenmiş, Munch'un verdiği ad 'Doğanın Çığlığı'dır; ikisi de doğru.
+- **emil-nolde** · `metin` [ki]: Üslup.
+- **marcel-duchamp** · `metin` [ki]: Önemsiz yazım tutarsızlığı.
+- **marcel-duchamp** · `metin` [q7]: Ağır ama anlaşılır; olgu hatası sayılmadı.
+- **salvador-dali** · `metin` [q7]: Dalí'nin kendi iddiasıdır; doğru aktarılmış.
+- **joan-miro** · `metin` [ki]: Üslup.
+- **joan-miro** · `metin` [ki]: Aksan tutarlılığı önemsiz.
+- **bonaventura-berlinghieri** · `metin` [ki,q8]: 'Anlatı sahneleriyle göstermek' doğru Türkçedir.
+- **gentile-da-fabriano** · `metin` [q7]: Türkçe sanat tarihinde yerleşik karşılık.
+- **domenico-di-michelino** · `metin` [ki]: İngilizce kaynak hocasını 'the cassone painter Michelino di Benedetto' diye tanıtır; doğru.
+- **robert-campin** · `metin` [ki]: Üslup.
+- **petrus-christus** · `metin` [q8]: İngilizce kaynağın ifadesi; metin kronolojiyi ayrıca açıklıyor.
+- **petrus-christus** · `metin` [q8]: Kaynağın değerlendirmesi; model emin değil.
+- **sofonisba-anguissola** · `metin` [q7]: İngilizce kaynak 'relatively poor noble family' der; doğru.
+- **sofonisba-anguissola** · `metin` [q8]: Geç Rönesans ressamı olarak doğru.
+- **annibale-carracci** · `metin` [ki]: Yazım tutarlılığı önemsiz; akım etiketi itirazları bu dosyada değil.
+- **orazio-gentileschi** · `metin` [q7]: Kabul edilebilir eser adı çevirisi.
+- **hyacinthe-rigaud** · `metin` [ki,q8,q7]: Akım alanı bu dosyada yok; metin doğru.
+- **georges-de-la-tour** · `metin` [q8,q7]: Akım alanı bu dosyada yok.
+- **jean-honore-fragonard** · `metin` [ki]: Mecazi ve anlaşılır.
+- **jean-baptiste-simeon-chardin** · `metin` [ki]: Sanatçının yaygın ve doğru adı.
+- **theodore-rousseau** · `metin` [ki]: 1836'dan itibaren Barbizon'da kalmaya başladı; savunulabilir.
+- **pierre-puvis-de-chavannes** · `metin` [ki]: Orsay'da çok sayıda Puvis eseri vardır; savunulabilir.
+- **pierre-puvis-de-chavannes** · `metin` [q8]: Kaynaktaki ifade; model emin değil.
+- **fernand-khnopff** · `metin` [ki]: Ağır ama anlaşılır.
+- **fernand-khnopff** · `metin` [q7]: Kaynakla uyumlu; model emin değil.
