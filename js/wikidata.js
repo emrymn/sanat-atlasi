@@ -31,6 +31,7 @@ function gecerliIddialar(varlik, ozellik) {
 
 // Doğum tarihi için tolerans: yıl hassasiyetinde ±3 (yönerge). Tarih "yaklaşık" (P1480)
 // nitelendirmeliyse ya da on yıl hassasiyetindeyse ±10, yüzyıl hassasiyetindeyse ±100.
+// Antik sanatçılarda (doğum yılı MÖ) en az ±15 kullanılır (bkz. adayUygunMu).
 export function dogumTolerans(iddia) {
   const deger = iddia.mainsnak.datavalue.value || {};
   const hassasiyet = deger.precision;
@@ -39,6 +40,8 @@ export function dogumTolerans(iddia) {
   if (hassasiyet === 8 || yaklasik) return 10;
   return 3;
 }
+
+export const ANTIK_TOLERANS = 15;
 
 // Aday varlık sanatçıyla eşleşiyor mu? (P31 = Q5 ya da grup; doğum yılı toleransı)
 export function adayUygunMu(varlik, sanatci) {
@@ -50,7 +53,8 @@ export function adayUygunMu(varlik, sanatci) {
   if (sanatci.dogum === null || sanatci.dogum === undefined) return true;
   return gecerliIddialar(varlik, 'P569').some((c) => {
     const y = yilAyikla(c.mainsnak.datavalue.value.time);
-    return y !== null && Math.abs(y - sanatci.dogum) <= dogumTolerans(c);
+    const tolerans = sanatci.dogum < 0 ? Math.max(ANTIK_TOLERANS, dogumTolerans(c)) : dogumTolerans(c);
+    return y !== null && Math.abs(y - sanatci.dogum) <= tolerans;
   });
 }
 
