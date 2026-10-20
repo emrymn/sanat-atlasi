@@ -36,9 +36,32 @@ npm ci                         # yalnızca testler için (@playwright/test)
 npm run serve                  # http://localhost:4173/sanat-atlasi/  (Pages alt yolunu taklit eder)
 npm run test:unit              # node:test — çeldirici, Leitner, kilit, Wikidata, yedek
 npm run test:e2e               # Playwright, 390×844 (iPhone 13); dış istekler fikstürle
-node scripts/onbellek.mjs      # data/eserler_onbellek.json'u Wikidata'dan yeniden üretir
+node scripts/onbellek.mjs      # data/eserler_onbellek.json'u tüm kaynaklardan yeniden üretir (aşağıya bak)
 node scripts/ikonlar.mjs       # icons/ikon.svg'den PNG ikonlar
 ```
+
+### Eser önbelleği ve kaynaklar
+
+`scripts/onbellek.mjs` her sanatçı için şu açık kaynakları birleştirir (hiçbiri anahtar istemez):
+
+- **Kurs eserleri:** `data/sanatcilar.json`; yalnızca resim olanlar, `data/eser_turleri.json`'a göre.
+- **Wikidata:** yaratıcı (P170) ve resim türleri (P31/P279*).
+- **The Met:** `isPublicDomain`.
+- **Art Institute of Chicago:** `is_public_domain`, IIIF.
+- **Cleveland Museum of Art:** CC0.
+- **National Gallery of Art:** açık veri CSV'leri, IIIF.
+- **Wikimedia Commons:** “Paintings by …” kategorileri, yalnızca müze/Google Art Project taramaları.
+
+Ham yanıtlar `scripts/.ham/` altında saklanır (git'e girmez); yeniden çalıştırmada ağa gidilmez (`TAZE=1` ile yenilenir). NGA CSV'leri bir kez indirilmeli:
+
+```bash
+mkdir -p scripts/.ham/nga && cd scripts/.ham/nga
+for f in objects objects_constituents constituents published_images; do
+  curl -sSO https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/$f.csv
+done
+```
+
+Elle verilen görsel kararları (`data/gorsel_kararlari.json`) önbellek üretilirken uygulanır.
 
 Vekil sunucu arkasında `onbellek.mjs` için: `NODE_USE_ENV_PROXY=1 node scripts/onbellek.mjs`. Yalnızca bazı sanatçıları yenilemek için id'lerini argüman olarak ver; tümünü baştan almak için `YENIDEN=1`.
 

@@ -1,15 +1,16 @@
 // Sanat Atlası — uygulama: yönlendirme ve ekranlar.
-import { kacis, yillarYaz, resimUrl, rastgeleYap, bulunmaEki } from './yardimci.js';
+import { kacis, yillarYaz, rastgeleYap, bulunmaEki } from './yardimci.js';
 import { acikSanatcilar, akimDurumlari, yeniAcilanlar, islenenKume } from './kilit.js';
 import { bugunStr, cevapla, vadesiGeldiMi, gorulduMu, GUNLUK_YENI_SINIRI } from './leitner.js';
 import { sanatciSecenekleri, akimSecenekleri, akimOrtaYillari } from './celdirici.js';
 import { kartlariSec, Oturum, kategori } from './oturum.js';
-import { sanatciEserleri, eserSec, TEST_HAVUZU, eserTurleriniAyarla, hazirOnbellek } from './eserler.js';
+import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU } from './eserler.js';
+import { gorselUrl, secilenGorsel } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, TEMALAR } from './depo.js';
 import { goruntuleyiciAc, kaynakYazisi } from './goruntuleyici.js';
 
-const SURUM = '1.1.0';
+const SURUM = '1.2.0';
 const TEMA_RENK = { sepya: '#F1E8D6', acik: '#FBFAF7', koyu: '#1D1A17' };
 const TEMA_AD = { sepya: 'Sepya', acik: 'Açık', koyu: 'Koyu' };
 const TAHMINI_GORSEL_KB = 180;
@@ -55,6 +56,28 @@ function acikListe() {
 
 function skor(id) {
   return (d.ilerleme.skorlar[id] ||= {});
+}
+
+// "Görsel kötü" tercihleri (ilerlemeyle birlikte saklanır ve yedeklenir)
+function kotuler() {
+  return (d.ilerleme.kotuGorseller ||= {});
+}
+
+function gorselTercihi(sonra = null) {
+  return {
+    kotuler: kotuler(),
+    degisti: () => {
+      kaydet();
+      if (sonra) sonra();
+    },
+  };
+}
+
+// Izgara küçük görseli: 400 px; açılmazsa (ör. çevrimdışı) 800 px denenir
+function kucukGorsel(e) {
+  const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
+  if (!g) return '';
+  return `<img loading="lazy" decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}">`;
 }
 
 // ---------- bildirim ----------
@@ -259,6 +282,7 @@ async function sanatciSayfasi(id) {
     <h2>Eserler</h2>
     <div id="eserler"><p class="ikincil">Eserler yükleniyor…</p></div>`);
   const eserler = await sanatciEserleri(s);
+  d.sonEserListesi = eserler; // testler ve hata ayıklama için
   const kutu = document.getElementById('eserler');
   if (!kutu || location.hash !== `#/sanatci/${encodeURIComponent(id)}`) return;
   if (!eserler.length) {
@@ -268,13 +292,13 @@ async function sanatciSayfasi(id) {
   kutu.innerHTML = `<p class="ikincil kucuk">${eserler.length} eser · önce kursta geçenler</p><div class="izgara">${eserler
     .map(
       (e, i) => `<button class="eser" type="button" data-eser="${i}" aria-label="${kacis(e.baslik)} — büyüt">
-        <span class="kare"><img loading="lazy" decoding="async" alt="" src="${resimUrl(e.dosya, 400)}" data-yedek="${resimUrl(e.dosya, 800)}"></span>
+        <span class="kare">${kucukGorsel(e)}</span>
         <span class="alt"><b>${kacis(e.baslik)}</b><span class="ikincil">${kacis(e.tarih || '')}${e.kaynak === 'kurs' ? `${e.tarih ? ' · ' : ''}kurs` : ''}</span></span></button>`,
     )
     .join('')}</div>`;
   kutu.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-eser]');
-    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.eser) });
+    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.eser), ...gorselTercihi() });
   });
 }
 
@@ -361,7 +385,7 @@ function kartHazirla(o, konum) {
   const s = d.harita.get(k.id);
   return sanatciEserleri(s).then((eserler) => {
     const son = d.ilerleme.sonEserler[s.id] || [];
-    const eser = eserSec(eserler, son, d.rng);
+    const eser = eserSec(eserler, son, d.rng, kotuler());
     if (!eser) return { konum, id: s.id, eser: null };
     d.ilerleme.sonEserler[s.id] = [...son.filter((x) => x !== eser.anahtar), eser.anahtar].slice(-8);
     const acikIdler = new Set(acikListe().map((x) => x.id));
@@ -430,7 +454,7 @@ function kartGoster(o) {
       <p class="sonuc ${tumDogru ? 'dogru' : 'yanlis'}" data-test="sonuc">${sonucMetni}</p>
       <p><b>${kacis(s.ad)}</b> <span class="ikincil">(${kacis(yillarYaz(s))})</span><br>${kacis(s.akim)}</p>
       <p class="ikincil">${kacis(k.eser.baslik)}${k.eser.tarih ? ` · ${kacis(k.eser.tarih)}` : ''}</p>
-      <p class="ikincil kucuk">${kacis(kaynakYazisi(k.eser))}</p>
+      <p class="ikincil kucuk">${kacis(kaynakYazisi(k.eser, secilenGorsel(k.eser, kotuler())))}</p>
       ${ipucu ? `<h3>${s.taninma ? 'Nasıl tanırım?' : 'Kurs notu'}</h3><p class="okuma">${kacis(ipucu)}</p>` : ''}
       <p><a href="#/sanatci/${encodeURIComponent(s.id)}">Sanatçı sayfası →</a></p>
     </section>`;
@@ -446,7 +470,7 @@ function kartGoster(o) {
   })}
     <div class="ilerleme-cubuk" aria-hidden="true"><i style="width:${yuzde}%"></i></div>
     <button class="soru-resim" type="button" data-buyut aria-label="Görseli büyüt" style="margin-top:12px">
-      <img alt="Soru görseli" src="${resimUrl(k.eser.dosya, 800)}" data-test="soru-resim">
+      <img alt="Soru görseli" src="${gorselUrl(secilenGorsel(k.eser, kotuler()), 800)}" data-test="soru-resim">
       <span class="durum" data-durum>Yükleniyor…</span>
     </button>
     <p class="soru">Bu eser kimin?</p>
@@ -485,7 +509,7 @@ function kartGoster(o) {
   // Sonraki kartı önceden hazırla, görselini yükle
   if (!o.sonrakiKart && ot.konum + 1 < ot.toplam) {
     o.sonrakiKart = kartHazirla(o, ot.konum + 1).then((h) => {
-      if (h && h.eser) new Image().src = resimUrl(h.eser.dosya, 800);
+      if (h && h.eser) new Image().src = gorselUrl(secilenGorsel(h.eser, kotuler()), 800);
       return h;
     });
   }
@@ -501,6 +525,7 @@ function baskaEser(o) {
     k.eserler.filter((e) => e.anahtar !== k.eser.anahtar),
     [],
     d.rng,
+    kotuler(),
   );
   if (diger) {
     k.eserler = k.eserler.filter((e) => e.anahtar !== k.eser.anahtar);
@@ -530,7 +555,15 @@ ekran.addEventListener('click', (e) => {
   const ab = e.target.closest('[data-akim]');
   if (e.target.closest('[data-buyut]') && o && o.kart) {
     const k = o.kart;
-    goruntuleyiciAc({ eserler: [k.eser], gizli: !k.bitti });
+    goruntuleyiciAc({
+      eserler: [k.eser],
+      gizli: !k.bitti,
+      ...gorselTercihi(() => {
+        // soru görseli reddedildiyse kartı yeni görselle çiz
+        if (secilenGorsel(k.eser, kotuler())) kartGoster(o);
+        else if (!k.bitti) baskaEser(o);
+      }),
+    });
     return;
   }
   if (sb && o && o.kart && o.kart.cevapSanatci === null) {
@@ -692,7 +725,7 @@ async function indirilecekler() {
   const urller = [];
   for (const s of acikListe()) {
     const eserler = await sanatciEserleri(s);
-    for (const e of eserler.slice(0, TEST_HAVUZU)) urller.push(resimUrl(e.dosya, 800));
+    for (const e of pekistirmeHavuzu(eserler, kotuler())) urller.push(gorselUrl(secilenGorsel(e, kotuler()), 800));
   }
   return [...new Set(urller)];
 }

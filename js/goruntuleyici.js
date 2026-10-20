@@ -1,14 +1,17 @@
 // Tam ekran eser görüntüleyici: iki parmakla yakınlaştırma, kaydırma, eserler arası geçiş.
-import { kacis, resimUrl, dosyaSayfasi } from './yardimci.js';
+import { kacis } from './yardimci.js';
+import { gorselUrl, gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle } from './gorsel.js';
 
 const EN_BUYUK = 6;
 
-export function kaynakYazisi(eser) {
-  if (eser.kaynak === 'kurs') return `Wikimedia Commons · ${eser.lisans || 'lisans: dosya sayfası'}`;
-  return 'Wikidata · Wikimedia Commons';
+// Görsel kaynağı ve (varsa) eserin müzesi
+export function kaynakYazisi(eser, gorsel) {
+  const g = gorsel || (eser.gorseller || [])[0];
+  return [eser.muze, g ? gorselKaynakYazisi(g) : ''].filter(Boolean).join(' · ');
 }
 
-export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null }) {
+// kotuler: { eserAnahtarı: [görsel anahtarları] } — "Görsel kötü" ile güncellenir, degisti() çağrılır
+export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null }) {
   let sira = baslangic;
   let olcek = 1;
   let tx = 0;
@@ -27,14 +30,16 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     <div class="gor-sahne"><img class="gor-resim" alt="" draggable="false"><p class="gor-yukleniyor">Yükleniyor…</p></div>
     <button class="gor-kapat" type="button" aria-label="Kapat">✕</button>
     ${eserler.length > 1 ? '<button class="gor-ok gor-onceki" type="button" aria-label="Önceki eser">‹</button><button class="gor-ok gor-sonraki" type="button" aria-label="Sonraki eser">›</button>' : ''}
-    <div class="gor-alt" ${gizli ? 'hidden' : ''}></div>`;
+    <div class="gor-alt"><div class="gor-yazi" ${gizli ? 'hidden' : ''}></div>
+      <button class="gor-kotu" type="button">Görsel kötü</button><p class="gor-mesaj" role="status" aria-live="polite"></p></div>`;
   document.body.appendChild(kok);
   document.documentElement.classList.add('gor-acik');
 
   const sahne = kok.querySelector('.gor-sahne');
   const resim = kok.querySelector('.gor-resim');
   const yukleniyor = kok.querySelector('.gor-yukleniyor');
-  const alt = kok.querySelector('.gor-alt');
+  const alt = kok.querySelector('.gor-yazi');
+  const mesaj = kok.querySelector('.gor-mesaj');
 
   function uygula(gecis = false) {
     resim.style.transition = gecis ? 'transform .2s ease-out' : 'none';
@@ -58,21 +63,39 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     uygula();
   }
 
-  function goster() {
+  function goster(gorsel = null) {
     const e = eserler[sira];
+    const g = gorsel || secilenGorsel(e, kotuler) || e.gorseller[0];
     sifirla();
     yukleniyor.hidden = false;
     yukleniyor.textContent = 'Yükleniyor…';
+    if (!gorsel) mesaj.textContent = '';
     resim.onload = () => (yukleniyor.hidden = true);
     resim.onerror = () => (yukleniyor.textContent = 'Görsel yüklenemedi.');
-    resim.src = resimUrl(e.dosya, 800);
+    resim.src = gorselUrl(g, 800);
     resim.alt = gizli ? 'Soru görseli' : e.baslik;
     if (!gizli) {
+      const sayfa = gorselSayfasi(g);
       alt.innerHTML = `<p class="gor-baslik">${kacis(e.baslik)}${e.tarih ? ` <span class="ikincil">· ${kacis(e.tarih)}</span>` : ''}</p>
-        <p class="gor-kaynak">${kacis(kaynakYazisi(e))} · <a href="${dosyaSayfasi(e.dosya)}" target="_blank" rel="noopener">dosya sayfası</a>${eserler.length > 1 ? ` · ${sira + 1} / ${eserler.length}` : ''}</p>`;
+        <p class="gor-kaynak">${kacis(kaynakYazisi(e, g))}${sayfa ? ` · <a href="${kacis(sayfa)}" target="_blank" rel="noopener">kaynak sayfası</a>` : ''}${eserler.length > 1 ? ` · ${sira + 1} / ${eserler.length}` : ''}</p>`;
     }
     // komşuları önceden yükle
-    for (const k of [sira - 1, sira + 1]) if (eserler[k]) new Image().src = resimUrl(eserler[k].dosya, 800);
+    for (const k of [sira - 1, sira + 1]) if (eserler[k]) new Image().src = gorselUrl(secilenGorsel(eserler[k], kotuler) || eserler[k].gorseller[0], 800);
+  }
+
+  // "Görsel kötü": sıradaki en iyi görsele geç; tercih kotuler'e yazılır (cihazda saklanır)
+  function kotuGorsel() {
+    const e = eserler[sira];
+    const simdiki = secilenGorsel(e, kotuler);
+    if (!simdiki) return;
+    const sonraki = kotuIsaretle(e, simdiki, kotuler);
+    if (degisti) degisti(e);
+    if (sonraki) {
+      goster(sonraki);
+      mesaj.textContent = 'Başka bir görsele geçildi.';
+    } else {
+      mesaj.textContent = 'Bu eserin başka görseli yok; pekiştirmede gösterilmeyecek.';
+    }
   }
 
   function git(fark) {
@@ -102,6 +125,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   document.addEventListener('keydown', tus);
 
   kok.querySelector('.gor-kapat').addEventListener('click', kapat);
+  kok.querySelector('.gor-kotu').addEventListener('click', kotuGorsel);
   const onceki = kok.querySelector('.gor-onceki');
   const sonraki = kok.querySelector('.gor-sonraki');
   if (onceki) onceki.addEventListener('click', () => git(-1));

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { eserleriBirlestir, eserSec, tazeMi, TEST_HAVUZU } from '../../js/eserler.js';
+import { eserleriBirlestir, eserSec, tazeMi, TEST_HAVUZU, onbellekEseri, pekistirmeHavuzu } from '../../js/eserler.js';
 import { resimUrl, dosyaNormal } from '../../js/yardimci.js';
 import { rastgeleYap } from '../../js/yardimci.js';
 import { sanatcilar } from './yardimci.mjs';
@@ -28,26 +28,29 @@ test('birleştirme: kurs eserleri önce, aynı dosya ya da aynı başlık yinele
   );
   assert.equal(e[2].baslik, 'Stefaneschi Triptych');
   assert.equal(e[2].tarih, 'MÖ 20');
-  assert.equal(e[0].lisans, 'Public domain');
+  assert.equal(e[0].gorseller[0].l, 'Public domain');
+  assert.equal(e[2].anahtar, 'q:Q3');
 });
 
 test('tüm kurs eserleri geçerli bir dosya adına sahip ve birleştirmeden geçer', () => {
   for (const s of sanatcilar) {
     const e = eserleriBirlestir(s.kurs_eserleri || [], []);
     assert.ok(e.length >= Math.min(1, (s.kurs_eserleri || []).length), s.id);
-    for (const x of e) assert.match(resimUrl(x.dosya), /^https:\/\/commons\.wikimedia\.org\/wiki\/Special:FilePath\/[^ ]+\?width=800$/);
+    for (const x of e) assert.match(resimUrl(x.gorseller[0].d), /^https:\/\/commons\.wikimedia\.org\/wiki\/Special:FilePath\/[^ ]+\?width=800$/);
   }
 });
 
+const es = (anahtar, ek = {}) => ({ anahtar, gorseller: [{ k: 'commons', d: anahtar + '.jpg' }], pekistirme: true, ...ek });
+
 test('eser seçimi son gösterilenlerden kaçınır', () => {
-  const eserler = ['a', 'b', 'c', 'd'].map((anahtar) => ({ anahtar }));
+  const eserler = ['a', 'b', 'c', 'd'].map((a) => es(a));
   const rng = rastgeleYap(4);
   for (let i = 0; i < 50; i++) assert.equal(eserSec(eserler, ['a', 'b', 'c'], rng).anahtar, 'd');
   // tek eser varsa onu verir
-  assert.equal(eserSec([{ anahtar: 'x' }], ['x'], rng).anahtar, 'x');
+  assert.equal(eserSec([es('x')], ['x'], rng).anahtar, 'x');
   assert.equal(eserSec([], [], rng), null);
   // havuz sınırı
-  const cok = Array.from({ length: 30 }, (_, i) => ({ anahtar: 'e' + i }));
+  const cok = Array.from({ length: 30 }, (_, i) => es('e' + i));
   for (let i = 0; i < 100; i++) assert.ok(Number(eserSec(cok, [], rng).anahtar.slice(1)) < TEST_HAVUZU);
 });
 
@@ -76,4 +79,30 @@ test('bulunma eki', async () => {
     60: "60'ta",
     100: "100'de",
   });
+});
+
+test('pekiştirme havuzu: görseli elle kötü işaretli ya da kullanıcının reddettiği eserler çıkar', () => {
+  const eserler = [es('a', { pekistirme: false }), es('b'), es('c', { gorseller: [{ k: 'commons', d: 'c.jpg', p: 5 }] }), es('d')];
+  assert.deepEqual(
+    pekistirmeHavuzu(eserler).map((e) => e.anahtar),
+    ['b', 'd'],
+  );
+  assert.deepEqual(
+    pekistirmeHavuzu(eserler, { d: ['c:d.jpg'] }).map((e) => e.anahtar),
+    ['b'],
+  );
+  const r = rastgeleYap(1);
+  for (let i = 0; i < 20; i++) assert.notEqual(eserSec(eserler, [], r).anahtar, 'a');
+});
+
+test('önbellek kaydı eser nesnesine çevrilir', () => {
+  const e = onbellekEseri({ baslik: 'Ağıt', yil: 1305, muze: 'Scrovegni', kurs: true, konu: 4, qid: 'Q1', kaynaklar: ['kurs', 'wikidata', 'nga'], sl: 9, gorseller: [{ k: 'nga', i: 'https://api.nga.gov/iiif/x' }, { k: 'commons', d: 'A.jpg' }] });
+  assert.equal(e.kaynak, 'kurs');
+  assert.equal(e.tarih, '1305');
+  assert.equal(e.kursKonu, 4);
+  assert.equal(e.anahtar, 'nga:https://api.nga.gov/iiif/x');
+  const w = onbellekEseri({ baslik: 'X', qid: 'Q9', kaynaklar: ['wikidata'], gorseller: [{ k: 'commons', d: 'X.jpg' }], pekistirme: false });
+  assert.equal(w.anahtar, 'q:Q9');
+  assert.equal(w.pekistirme, false);
+  assert.equal(w.tarih, '');
 });

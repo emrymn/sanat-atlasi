@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia görselleri: bayatken-yeniden-doğrula, ~300 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.1.0';
+const SURUM = '1.2.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim';
 const WIKIDATA = 'atlas-wikidata';
@@ -10,6 +10,14 @@ const FONT = 'atlas-font';
 const RESIM_SINIRI = 300 * 1024 * 1024;
 const RESIM_HEDEF = 270 * 1024 * 1024;
 const RESIM_TAZELIK = 30 * 24 * 60 * 60 * 1000;
+
+// Müze görselleri (The Met, Art Institute of Chicago IIIF, NGA IIIF, Cleveland)
+const MUZE_GORSELLERI = [
+  { host: 'images.metmuseum.org', yol: '/' },
+  { host: 'www.artic.edu', yol: '/iiif/' },
+  { host: 'api.nga.gov', yol: '/iiif/' },
+  { host: 'openaccess-cdn.clevelandart.org', yol: '/' },
+];
 
 const KABUK_DOSYALARI = [
   './',
@@ -21,6 +29,7 @@ const KABUK_DOSYALARI = [
   'js/depo.js',
   'js/eserler.js',
   'js/goruntuleyici.js',
+  'js/gorsel.js',
   'js/idb.js',
   'js/kilit.js',
   'js/leitner.js',
@@ -71,6 +80,8 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(resim(e));
   } else if (url.hostname === 'upload.wikimedia.org' || url.hostname === 'thumb.wikimedia.org') {
     e.respondWith(resim(e));
+  } else if (MUZE_GORSELLERI.some((h) => url.hostname === h.host && url.pathname.startsWith(h.yol))) {
+    e.respondWith(resim(e));
   } else if (url.hostname === 'www.wikidata.org' || url.hostname === 'query.wikidata.org') {
     e.respondWith(onceAg(istek, WIKIDATA));
   } else if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
@@ -119,7 +130,8 @@ async function onceAg(istek, ad) {
 
 // ---- görseller (LRU) ----
 function tahminiBoyut(url) {
-  const g = parseInt(new URL(url).searchParams.get('width') || '800', 10);
+  const u = new URL(url);
+  const g = parseInt(u.searchParams.get('width') || (/\/full\/(400),/.test(u.pathname) ? '400' : '800'), 10);
   return g <= 400 ? 60 * 1024 : 180 * 1024;
 }
 
