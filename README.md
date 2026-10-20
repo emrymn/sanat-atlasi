@@ -69,6 +69,13 @@ Elle verilen görsel kararları (`data/gorsel_kararlari.json`) önbellek üretil
 
 Vekil sunucu arkasında `onbellek.mjs` için: `NODE_USE_ENV_PROXY=1 node scripts/onbellek.mjs`. Yalnızca bazı sanatçıları yenilemek için id'lerini argüman olarak ver; tümünü baştan almak için `YENIDEN=1`.
 
+**WikiArt (yedek görsel kaynağı, anahtar ister):** az eserli sanatçılar ve 20. yüzyıl akımları için `scripts/kaynaklar/wikiart.mjs` çalışır. Anahtarlar yalnızca ortam değişkeninden okunur; dosyaya yazma:
+
+```sh
+WIKIART_ACCESS_KEY=… WIKIART_SECRET_KEY=… node scripts/kaynaklar/wikiart.mjs   # saatte en çok 350 istek; kesilirse aynı komutla sürer
+UYGULA=1 node scripts/kaynaklar/wikiart.mjs                                      # ağa gitmeden data/wikiart.json'ı önbelleğe uygular
+```
+
 **Sürüm çıkarırken:** `sw.js` içindeki `SURUM` değerini artır (yoksa telefondaki önbellek eski dosyaları vermeye devam eder). Yeni bir `js/` dosyası eklersen `sw.js`'deki listeye de ekle (birim testi bunu denetler).
 
 ### Dosyalar
@@ -79,6 +86,7 @@ Vekil sunucu arkasında `onbellek.mjs` için: `NODE_USE_ENV_PROXY=1 node scripts
 | `sw.js`, `manifest.webmanifest`, `icons/` | PWA |
 | `data/*.json` | İçerik (sanatçılar, akımlar, konular, başlangıç ilerlemesi) |
 | `data/eserler_onbellek.json` | Wikidata QID'leri ve eser listeleri (derleme zamanı önbelleği; olmasa da çalışır) |
+| `data/wikiart.json` | WikiArt'tan derleme zamanında alınan eserler (başlık, yıl, eser sayfası, görsel adresi) |
 | `scripts/` | Önbellek, ikon üretimi, yerel sunucu |
 | `tests/` | Birim (`unit/`), uçtan uca (`e2e/`), fikstürler |
 | `tools/` | Qwen inceleme betikleri (dokunulmaz) |

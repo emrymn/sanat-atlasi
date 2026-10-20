@@ -4,6 +4,10 @@ import { baslikNormal, dosyaNormal } from '../../js/yardimci.js';
 
 export const ESER_SINIRI = 60; // sanatçı başına en fazla eser
 export const MUZE_SINIRI = 25; // bir müze kaynağından sanatçı başına en fazla yeni eser
+// WikiArt görselleri müze ve Commons taramalarının altında, "fotoğraf gibi"nin (10) üstünde.
+// Sanatçı eşleşmesi şüpheliyse görsel elle "kötü" gibi (5) sayılır: Göz At'ta görünür, pekiştirmeye girmez.
+export const WIKIART_PUANI = 40;
+export const WIKIART_SUPHELI_PUANI = 5;
 
 // "Fotoğraf gibi" görseller (çerçeve, galeri ortamı, sergi, yerinde çekim…) sona atılır.
 // "National Gallery", "Art Gallery" gibi kurum adlarındaki "gallery" sayılmaz.
@@ -27,6 +31,7 @@ export function fotoGibiMi(dosya) {
 // Görsel kalitesi: müzenin resmi taraması > Commons'ta Google Art Project / müze kaynaklı > diğer Commons.
 // Elle "kötü" işaretlenenler en sona (5) iner.
 export function gorselPuani(g, kararlar = {}) {
+  if (g.k === 'wikiart') return g.supheli ? WIKIART_SUPHELI_PUANI : WIKIART_PUANI;
   if (g.k !== 'commons') return 100;
   const dosya = dosyaNormal(g.d);
   if (kararlar[dosya.toLowerCase()] === 'kotu') return 5;
@@ -208,4 +213,81 @@ export function birlestir({ kurs = [], wd = [], muzeler = [], commons = [], kara
     .sort((a, b) => puan(b.e) - puan(a.e) || a.i - b.i)
     .map((x) => x.e);
   return [...kursLar, ...digerleri].slice(0, ESER_SINIRI);
+}
+
+// ---- WikiArt (data/wikiart.json) ----
+// Hem birlestir() çıktısına hem de data/eserler_onbellek.json'daki sade kayıtlara uygulanabilir.
+// Önce eski WikiArt katkıları silinir; böylece aynı veriyle yeniden uygulamak sonucu değiştirmez.
+
+function gorselleriSirala(e) {
+  e.gorseller = e.gorseller
+    .map((g, i) => ({ g, i }))
+    .sort((a, b) => (b.g.p ?? 0) - (a.g.p ?? 0) || a.i - b.i)
+    .map((x) => x.g);
+  e.pekistirme = e.gorseller.some((g) => (g.p ?? 100) > 5);
+}
+
+export function wikiartCikar(eserler = []) {
+  const sonuc = [];
+  for (const e of eserler) {
+    if (!(e.kaynaklar || []).includes('wikiart') && !(e.gorseller || []).some((g) => g.k === 'wikiart')) {
+      sonuc.push(e);
+      continue;
+    }
+    const kalan = { ...e, kaynaklar: e.kaynaklar.filter((k) => k !== 'wikiart'), gorseller: e.gorseller.filter((g) => g.k !== 'wikiart') };
+    if (!kalan.gorseller.length || !kalan.kaynaklar.length) continue;
+    gorselleriSirala(kalan);
+    sonuc.push(kalan);
+  }
+  return sonuc;
+}
+
+/**
+ * eserler: birlestir() çıktısı ya da önbellek kayıtları
+ * kayit: data/wikiart.json'daki sanatçı kaydı { durum: 'eslesti'|'supheli'|…, eserler: [{ baslik, yil, sayfa, gorsel }] }
+ * Kopya: başlık aynı ve iki yıl da biliniyor, fark ≤ 5 (genel başlıklar — "Self-Portrait", "Landscape" — yılsız birleşmesin).
+ * Bir mevcut esere en fazla bir WikiArt eseri katılır. Toplam ESER_SINIRI'nı aşan yeni eserler alınmaz.
+ */
+export function wikiartEkle(eserler, kayit) {
+  const liste = wikiartCikar(eserler);
+  if (!kayit || !['eslesti', 'supheli'].includes(kayit.durum) || !(kayit.eserler || []).length) return liste;
+  const supheli = kayit.durum === 'supheli';
+  const katilan = new Set();
+  for (const w of kayit.eserler) {
+    const g = { k: 'wikiart', u: w.gorsel, s: w.sayfa, l: '' };
+    g.p = gorselPuani({ ...g, supheli });
+    const aday = { baslik: w.baslik, yil: w.yil ?? null };
+    const hedef =
+      aday.yil == null ? null : liste.find((e) => !katilan.has(e) && e.yil != null && ayniEserMi({ baslik: e.baslik, baslikEn: e.baslikEn, yil: e.yil }, aday));
+    if (hedef) {
+      katilan.add(hedef);
+      const i = liste.indexOf(hedef);
+      const yeni = { ...hedef, kaynaklar: [...hedef.kaynaklar, 'wikiart'], gorseller: [...hedef.gorseller, g] };
+      gorselleriSirala(yeni);
+      liste[i] = yeni;
+      katilan.add(yeni);
+      continue;
+    }
+    if (liste.length >= ESER_SINIRI) continue;
+    const yeni = { baslik: w.baslik, kaynaklar: ['wikiart'], gorseller: [g] };
+    if (aday.yil != null) yeni.yil = aday.yil;
+    gorselleriSirala(yeni);
+    liste.push(yeni);
+  }
+  return liste;
+}
+
+// data/eserler_onbellek.json biçimi: pekistirme yalnızca false iken yazılır
+export function wikiartiUygula(onbellek, wikiart) {
+  const kayitlar = (wikiart && wikiart.sanatcilar) || {};
+  for (const [id, k] of Object.entries(onbellek.sanatcilar || {})) {
+    const once = JSON.stringify(k.eserler);
+    const eserler = wikiartEkle(k.eserler || [], kayitlar[id]).map((e) => {
+      const o = { ...e };
+      if (o.pekistirme !== false) delete o.pekistirme;
+      return o;
+    });
+    if (JSON.stringify(eserler) !== once) k.eserler = eserler;
+  }
+  return onbellek;
 }

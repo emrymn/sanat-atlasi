@@ -1,0 +1,2678 @@
+{
+ "surum": 1,
+ "sanatcilar": {
+  "hagesandros-athenodoros-ve-polydoros-laokoon-heykeltraslar": {
+   "durum": "atlandi",
+   "neden": "doğum yılı bilinmiyor, eşleştirilemez",
+   "eserler": []
+  },
+  "gislebertus": {
+   "durum": "atlandi",
+   "neden": "doğum yılı bilinmiyor, eşleştirilemez",
+   "eserler": []
+  },
+  "diotisalvi": {
+   "durum": "atlandi",
+   "neden": "doğum yılı bilinmiyor, eşleştirilemez",
+   "eserler": []
+  },
+  "lorenzo-ghiberti": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "giambologna": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "benvenuto-cellini": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "andrea-palladio": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "gian-lorenzo-bernini": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "louis-le-vau": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "andre-le-notre": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "jules-hardouin-mansart": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "jacques-germain-soufflot": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "horatio-greenough": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "antonio-canova": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "charles-barry-ve-augustus-pugin": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "auguste-rodin": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "phidias": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "polykleitos": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "myron": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "praxiteles": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "nicola-pisano": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "giovanni-pisano": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "arnolfo-di-cambio": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "bonaventura-berlinghieri": {
+   "secim": "5 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "domenico-di-michelino": {
+   "secim": "11 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "donatello": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesti",
+   "wikiart": "donatello",
+   "elenen": 16,
+   "eserler": []
+  },
+  "michelozzo": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "leon-battista-alberti": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "filippo-brunelleschi": {
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
+  },
+  "donato-bramante": {
+   "secim": "5 kullanılabilir eser",
+   "durum": "eslesti",
+   "wikiart": "donato-bramante",
+   "elenen": 13,
+   "eserler": [
+    {
+     "baslik": "Crying Heraclitus and Laughing Democritus",
+     "yil": 1477,
+     "sayfa": "https://www.wikiart.org/en/donato-bramante/crying-heraclitus-and-laughing-democritus-1477",
+     "gorsel": "https://uploads3.wikiart.org/00291/images/donato-bramante/donato-d-angelo-d-mocrite-et-eraclite.JPG!HalfHD.JPG"
+    },
+    {
+     "baslik": "Man with a Mace",
+     "yil": 1487,
+     "sayfa": "https://www.wikiart.org/en/donato-bramante/man-with-a-mace-1487",
+     "gorsel": "https://uploads6.wikiart.org/00291/images/donato-bramante/bramante-man-with-a-mace-c-1486.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "St. Christopher with the Infant Jesus",
+     "yil": 1490,
+     "sayfa": "https://www.wikiart.org/en/donato-bramante/st-christopher-with-the-infant-jesus-1490",
+     "gorsel": "https://uploads1.wikiart.org/00291/images/donato-bramante/donato-bramante-st-christopher-with-the-infant-jesus-google-art-project.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Christ at the Column",
+     "yil": 1480,
+     "sayfa": "https://www.wikiart.org/en/donato-bramante/christ-at-the-column-1480",
+     "gorsel": "https://uploads3.wikiart.org/00291/images/donato-bramante/bramante-cristo-alla-colonna.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Poet Laureate with Red Hat",
+     "yil": 1490,
+     "sayfa": "https://www.wikiart.org/en/donato-bramante/poet-laureate-with-red-hat-1490",
+     "gorsel": "https://uploads8.wikiart.org/00291/images/donato-bramante/bramante-poet-laureate-with-red-hat-1490-2.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Uomo dall'alabarda",
+     "yil": 1487,
+     "sayfa": "https://www.wikiart.org/en/donato-bramante/uomo-dallalabarda-1487",
+     "gorsel": "https://uploads7.wikiart.org/00291/images/donato-bramante/bramante-uomo-dall-alabarda-1486-87-brera.JPG!HalfHD.JPG"
+    },
+    {
+     "baslik": "The Chanter",
+     "yil": 1490,
+     "sayfa": "https://www.wikiart.org/en/donato-bramante/the-chanter-1490",
+     "gorsel": "https://uploads0.wikiart.org/00291/images/donato-bramante/bramante-the-chanter-1490-2.jpg"
+    },
+    {
+     "baslik": "Aramato",
+     "yil": 1487,
+     "sayfa": "https://www.wikiart.org/en/donato-bramante/aramato-1487",
+     "gorsel": "https://uploads1.wikiart.org/00291/images/donato-bramante/donato-bramante-man-at-arms-wga3053.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Man at Arms",
+     "yil": 1487,
+     "sayfa": "https://www.wikiart.org/en/donato-bramante/man-at-arms-1487",
+     "gorsel": "https://uploads4.wikiart.org/00291/images/donato-bramante/bramante-man-at-arms-1486-circa.jpg"
+    }
+   ]
+  },
+  "carlo-maderno": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "andre-charles-boulle": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "lord-burlington": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "thomas-jefferson": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "charles-garnier": {
+   "secim": "0 kullanılabilir eser",
+   "durum": "eslesmedi",
+   "neden": "WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok",
+   "eserler": []
+  },
+  "emil-nolde": {
+   "secim": "1 kullanılabilir eser",
+   "durum": "eslesti",
+   "wikiart": "emil-nolde",
+   "elenen": 0,
+   "eserler": [
+    {
+     "baslik": "Pentecost",
+     "yil": 1909,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/pentecast-1909",
+     "gorsel": "https://uploads4.wikiart.org/images/emil-nolde/pentecast-1909.jpg"
+    },
+    {
+     "baslik": "The Last Supper",
+     "yil": 1909,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/the-last-supper-1909",
+     "gorsel": "https://uploads3.wikiart.org/images/emil-nolde/the-last-supper-1909.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Dance Around the Golden Calf",
+     "yil": 1910,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/dance-around-the-golden-calf-1910",
+     "gorsel": "https://uploads7.wikiart.org/images/emil-nolde/dance-around-the-golden-calf-1910.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Young Couple",
+     "yil": 1935,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/young-couple-1935",
+     "gorsel": "https://uploads0.wikiart.org/images/emil-nolde/young-couple-1935.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Colored sky above the Marais",
+     "yil": 1940,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/colored-sky-above-the-marais",
+     "gorsel": "https://uploads2.wikiart.org/images/emil-nolde/colored-sky-above-the-marais.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Autumn Sea VII",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/autumn-sea-vii",
+     "gorsel": "https://uploads6.wikiart.org/images/emil-nolde/autumn-sea-vii.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Excited People",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/excited-people",
+     "gorsel": "https://uploads6.wikiart.org/images/emil-nolde/excited-people.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Mocking of Christ",
+     "yil": 1909,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/mocking-of-christ-1909",
+     "gorsel": "https://uploads3.wikiart.org/images/emil-nolde/mocking-of-christ-1909.jpg"
+    },
+    {
+     "baslik": "Bonnichsen family",
+     "yil": 1915,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/bonnichsen-family-1915",
+     "gorsel": "https://uploads5.wikiart.org/images/emil-nolde/bonnichsen-family-1915.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Flower Garden",
+     "yil": 1908,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/flower-garden-1908",
+     "gorsel": "https://uploads8.wikiart.org/images/emil-nolde/flower-garden-1908.jpg"
+    },
+    {
+     "baslik": "Дымящие пароходы",
+     "yil": 1910,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/dymyashchie-parokhody-1910",
+     "gorsel": "https://uploads3.wikiart.org/00192/images/emil-nolde/5b4817c0edc2c90a546a1c8a.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Forest Path",
+     "yil": 1909,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/lesnaya-doroga-1909",
+     "gorsel": "https://uploads1.wikiart.org/00192/images/emil-nolde/5b4816d6edc2c90a545a2384.jpg"
+    },
+    {
+     "baslik": "Self-portrait",
+     "yil": 1912,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/self-portrait-1912",
+     "gorsel": "https://uploads1.wikiart.org/images/emil-nolde/self-portrait-1912.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Prophet",
+     "yil": 1912,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/prophet-1912",
+     "gorsel": "https://uploads2.wikiart.org/00171/images/emil-nolde/btgyqak.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Candle Dancers",
+     "yil": 1912,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/candle-dancers-1912",
+     "gorsel": "https://uploads2.wikiart.org/images/emil-nolde/candle-dancers-1912.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Mask Still Life III",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/mask-still-life-iii-1911",
+     "gorsel": "https://uploads7.wikiart.org/images/emil-nolde/mask-still-life-iii-1911.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Child and Large Bird",
+     "yil": 1912,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/child-and-large-bird-1912",
+     "gorsel": "https://uploads8.wikiart.org/images/emil-nolde/child-and-large-bird-1912.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Беседа",
+     "yil": 1910,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/beseda-1910",
+     "gorsel": "https://uploads1.wikiart.org/00192/images/emil-nolde/5b48174aedc2c90a5462483c.jpg"
+    },
+    {
+     "baslik": "The missionary",
+     "yil": 1912,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/the-missionary-1912",
+     "gorsel": "https://uploads2.wikiart.org/images/emil-nolde/the-missionary-1912.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "At the Café",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/at-the-caf",
+     "gorsel": "https://uploads0.wikiart.org/images/emil-nolde/at-the-caf.jpg"
+    },
+    {
+     "baslik": "Papuan youth",
+     "yil": 1914,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/papuan-youth-1914",
+     "gorsel": "https://uploads7.wikiart.org/images/emil-nolde/papuan-youth-1914.jpg"
+    },
+    {
+     "baslik": "Kneeling negro girl",
+     "yil": 1913,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/kneeling-negro-girl-1913",
+     "gorsel": "https://uploads5.wikiart.org/images/emil-nolde/kneeling-negro-girl-1913.jpg"
+    },
+    {
+     "baslik": "Burial",
+     "yil": 1915,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/burial-1915",
+     "gorsel": "https://uploads1.wikiart.org/images/emil-nolde/burial-1915.jpg"
+    },
+    {
+     "baslik": "Saint Mary of Egypt",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/emil-nolde/saint-mary-of-egypt-1911",
+     "gorsel": "https://uploads8.wikiart.org/00181/images/emil-nolde/f2235b90bdba2e12b006ae86e2859ebb.jpg"
+    }
+   ]
+  },
+  "pablo-picasso": {
+   "secim": "20. yüzyıl akımı (13 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "pablo-picasso",
+   "elenen": 4,
+   "eserler": [
+    {
+     "baslik": "Child with dove",
+     "yil": 1901,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/child-with-dove-1901",
+     "gorsel": "https://uploads6.wikiart.org/images/pablo-picasso/child-with-dove-1901.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The old blind guitarist",
+     "yil": 1903,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/the-old-blind-guitarist-1903",
+     "gorsel": "https://uploads3.wikiart.org/00198/images/pablo-picasso/old-guitarist-chicago.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Girl on the ball",
+     "yil": 1905,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/girl-on-the-ball-1905",
+     "gorsel": "https://uploads7.wikiart.org/images/pablo-picasso/girl-on-the-ball-1905.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The girls of Avignon",
+     "yil": 1907,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/the-girls-of-avignon-1907",
+     "gorsel": "https://uploads3.wikiart.org/00492/images/pablo-picasso/les-demoiselles-d-avignon-1907.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of Ambroise Vollard",
+     "yil": 1910,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/portrait-of-ambroise-vollard-1910",
+     "gorsel": "https://uploads1.wikiart.org/images/pablo-picasso/portrait-of-ambroise-vollard-1910.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of woman in d`hermine pass (Olga)",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/untitled-1937-8",
+     "gorsel": "https://uploads1.wikiart.org/images/pablo-picasso/untitled-1937-8.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Figures at the Seaside",
+     "yil": 1931,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/figures-at-the-seaside-1931",
+     "gorsel": "https://uploads2.wikiart.org/images/pablo-picasso/figures-at-the-seaside-1931.jpg"
+    },
+    {
+     "baslik": "Guernica",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/guernica-1937",
+     "gorsel": "https://uploads1.wikiart.org/00139/images/pablo-picasso/guernica-by-pablo-picasso.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of Dora Maar",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/portrait-of-dora-maar-1937-1",
+     "gorsel": "https://uploads5.wikiart.org/images/pablo-picasso/portrait-of-dora-maar-1937-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Cat catching a bird",
+     "yil": 1939,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/cat-catching-a-bird-1939",
+     "gorsel": "https://uploads8.wikiart.org/images/pablo-picasso/cat-catching-a-bird-1939.jpg"
+    },
+    {
+     "baslik": "Le Marin",
+     "yil": 1943,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/le-marin-1943",
+     "gorsel": "https://uploads8.wikiart.org/00234/images/pablo-picasso/picasso-sailor.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Charnel House",
+     "yil": 1945,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/the-charnel-house-1945",
+     "gorsel": "https://uploads3.wikiart.org/00251/images/pablo-picasso/cri-000000456393.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Crane, book and oil lamp",
+     "yil": 1946,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/crane-book-and-oil-lamp-1946",
+     "gorsel": "https://uploads5.wikiart.org/images/pablo-picasso/crane-book-and-oil-lamp-1946.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The barefoot girl",
+     "yil": 1895,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/the-barefoot-girl-1895",
+     "gorsel": "https://uploads8.wikiart.org/images/pablo-picasso/the-barefoot-girl-1895.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Tragedy",
+     "yil": 1903,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/the-tragedy-1903",
+     "gorsel": "https://uploads2.wikiart.org/images/pablo-picasso/the-tragedy-1903.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Italian woman with a flower",
+     "yil": 1917,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/the-italian-woman-with-a-flower-1917",
+     "gorsel": "https://uploads8.wikiart.org/00363/images/pablo-picasso/2019-par-16949-0014-000-pablo-picasso-litalienne-a-la-fleur122020.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Seated woman",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/seated-woman-1923",
+     "gorsel": "https://uploads3.wikiart.org/images/pablo-picasso/seated-woman-1923.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Horse Head. Sketch for \"Guernica\"",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/horse-head-sketch-for-guernica-1937",
+     "gorsel": "https://uploads8.wikiart.org/00181/images/pablo-picasso/de00119-0.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Painter and his model",
+     "yil": 1963,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/painter-and-his-model-1963-2",
+     "gorsel": "https://uploads5.wikiart.org/images/pablo-picasso/painter-and-his-model-1963-2.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Seated old man",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/seated-old-man-1970",
+     "gorsel": "https://uploads5.wikiart.org/images/pablo-picasso/seated-old-man-1970.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Self-Portrait",
+     "yil": 1896,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/self-portrait-1896",
+     "gorsel": "https://uploads4.wikiart.org/images/pablo-picasso/self-portrait-1896.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Life",
+     "yil": 1903,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/life-1903",
+     "gorsel": "https://uploads4.wikiart.org/images/pablo-picasso/life-1903.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Seated woman",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/seated-woman-1923-1",
+     "gorsel": "https://uploads5.wikiart.org/images/pablo-picasso/seated-woman-1923-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Crying woman",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/crying-woman-1937",
+     "gorsel": "https://uploads3.wikiart.org/images/pablo-picasso/crying-woman-1937.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Man with lamb, man eating watermelon and flutist",
+     "yil": 1967,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/man-with-lamb-man-eating-watermelon-and-flutist-1967",
+     "gorsel": "https://uploads2.wikiart.org/images/pablo-picasso/man-with-lamb-man-eating-watermelon-and-flutist-1967.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Bust of woman",
+     "yil": 1971,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/bust-of-woman-1971",
+     "gorsel": "https://uploads4.wikiart.org/images/pablo-picasso/bust-of-woman-1971.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Academical study",
+     "yil": 1895,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/academical-study",
+     "gorsel": "https://uploads2.wikiart.org/images/pablo-picasso/academical-study.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Harem",
+     "yil": 1906,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/the-harem-1906",
+     "gorsel": "https://uploads0.wikiart.org/images/pablo-picasso/the-harem-1906.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Olga",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/olga-1923",
+     "gorsel": "https://uploads4.wikiart.org/images/pablo-picasso/olga-1923.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Still life with candlestick",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/still-life-with-candlestick-1937",
+     "gorsel": "https://uploads0.wikiart.org/images/pablo-picasso/still-life-with-candlestick-1937.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Woman with child",
+     "yil": 1962,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/woman-with-child",
+     "gorsel": "https://uploads2.wikiart.org/images/pablo-picasso/woman-with-child.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Woman with bird",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/woman-with-bird-1970",
+     "gorsel": "https://uploads6.wikiart.org/images/pablo-picasso/woman-with-bird-1970.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Science and Charity",
+     "yil": 1897,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/science-and-charity-1897",
+     "gorsel": "https://uploads1.wikiart.org/images/pablo-picasso/science-and-charity-1897.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Self-Portrait",
+     "yil": 1906,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/self-portrait-1906",
+     "gorsel": "https://uploads4.wikiart.org/images/pablo-picasso/self-portrait-1906.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Man and woman",
+     "yil": 1927,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/man-and-woman-1927",
+     "gorsel": "https://uploads4.wikiart.org/images/pablo-picasso/man-and-woman-1927.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of Dora Maar",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/portrait-of-dora-maar-1937",
+     "gorsel": "https://uploads3.wikiart.org/images/pablo-picasso/portrait-of-dora-maar-1937.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of woman (Dora Maar)",
+     "yil": 1942,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/portrait-of-woman-dora-maar-1942",
+     "gorsel": "https://uploads0.wikiart.org/images/pablo-picasso/portrait-of-woman-dora-maar-1942.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Seated man (Self-portrait)",
+     "yil": 1965,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/seated-man-self-portrait-1965",
+     "gorsel": "https://uploads6.wikiart.org/images/pablo-picasso/seated-man-self-portrait-1965.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The eight names of Picasso",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/the-eight-names-of-picasso-1970",
+     "gorsel": "https://uploads6.wikiart.org/images/pablo-picasso/the-eight-names-of-picasso-1970.jpg"
+    },
+    {
+     "baslik": "Portrait of the Artist's Mother",
+     "yil": 1896,
+     "sayfa": "https://www.wikiart.org/en/pablo-picasso/portrait-of-the-artist-s-mother-1896",
+     "gorsel": "https://uploads4.wikiart.org/images/pablo-picasso/portrait-of-the-artist-s-mother-1896.jpg!HalfHD.jpg"
+    }
+   ]
+  },
+  "marcel-duchamp": {
+   "secim": "20. yüzyıl akımı (2 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "marcel-duchamp",
+   "elenen": 16,
+   "eserler": [
+    {
+     "baslik": "L.H.O.O.Q, Mona Lisa with moustache",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/l-h-o-o-q-mona-lisa-with-moustache-1919",
+     "gorsel": "https://uploads8.wikiart.org/images/marcel-duchamp/l-h-o-o-q-mona-lisa-with-moustache-1919.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Bride Stripped Bare by her Bachelors",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/the-bride-stripped-bare-by-her-bachelors-1923",
+     "gorsel": "https://uploads5.wikiart.org/images/marcel-duchamp/the-bride-stripped-bare-by-her-bachelors-1923.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Rotorelief n°11 - Total Eclipse / Rotorelief n°12 - White spiral",
+     "yil": 1935,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/rotorelief-n-11-total-eclipse-rotorelief-n-12-white-spiral-1935",
+     "gorsel": "https://uploads3.wikiart.org/images/marcel-duchamp/rotorelief-n-11-total-eclipse-rotorelief-n-12-white-spiral-1935.jpg"
+    },
+    {
+     "baslik": "Disks Bearing Spirals",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/disks-bearing-spirals-1923",
+     "gorsel": "https://uploads2.wikiart.org/images/marcel-duchamp/disks-bearing-spirals-1923.jpg"
+    },
+    {
+     "baslik": "Monte Carlo bond",
+     "yil": 1924,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/monte-carlo-bond-1924",
+     "gorsel": "https://uploads6.wikiart.org/images/marcel-duchamp/monte-carlo-bond-1924.jpg"
+    },
+    {
+     "baslik": "Portrait of Yvonne Duchamp",
+     "yil": 1907,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/portrait-of-yvonne-duchamp",
+     "gorsel": "https://uploads4.wikiart.org/images/marcel-duchamp/portrait-of-yvonne-duchamp.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Nude Descending a Staircase, No.2",
+     "yil": 1912,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/nude-descending-a-staircase-no-2-1912",
+     "gorsel": "https://uploads6.wikiart.org/00475/images/marcel-duchamp/nude-descending-a-staircase-no-2-marcel-duchamp-1912.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Study for \"Given: 1. The Waterfall, 2. Illuminating Gas\"",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/study-for-given-1-the-waterfall-2-illuminating-gas",
+     "gorsel": "https://uploads1.wikiart.org/images/marcel-duchamp/study-for-given-1-the-waterfall-2-illuminating-gas.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "With My Tongue in My Cheek",
+     "yil": 1959,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/with-my-tongue-in-my-cheek-1959",
+     "gorsel": "https://uploads0.wikiart.org/images/marcel-duchamp/with-my-tongue-in-my-cheek-1959.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Bec Auer",
+     "yil": 1967,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/the-bec-auer-1967",
+     "gorsel": "https://uploads4.wikiart.org/images/marcel-duchamp/the-bec-auer-1967.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Man seated by a window",
+     "yil": 1907,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/man-seated-by-a-window-1907",
+     "gorsel": "https://uploads5.wikiart.org/images/marcel-duchamp/man-seated-by-a-window-1907.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Standing Nude",
+     "yil": 1910,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/standing-nude-1910-1",
+     "gorsel": "https://uploads7.wikiart.org/images/marcel-duchamp/standing-nude-1910-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Bare Stripped Bride",
+     "yil": 1968,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/bare-stripped-bride-1968",
+     "gorsel": "https://uploads0.wikiart.org/images/marcel-duchamp/bare-stripped-bride-1968.jpg"
+    },
+    {
+     "baslik": "Portrait of Yvonne Duchamp",
+     "yil": 1901,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/portrait-of-yvonne-duchamp-1901",
+     "gorsel": "https://uploads0.wikiart.org/images/marcel-duchamp/portrait-of-yvonne-duchamp-1901.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Baptism",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/baptism-1911",
+     "gorsel": "https://uploads8.wikiart.org/images/marcel-duchamp/baptism-1911.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Self Portrait in Profile",
+     "yil": 1958,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/self-portrait-in-profile-1958",
+     "gorsel": "https://uploads5.wikiart.org/images/marcel-duchamp/self-portrait-in-profile-1958.jpg"
+    },
+    {
+     "baslik": "After love",
+     "yil": 1968,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/after-love-1968",
+     "gorsel": "https://uploads0.wikiart.org/images/marcel-duchamp/after-love-1968.jpg"
+    },
+    {
+     "baslik": "Church at Blainville",
+     "yil": 1902,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/church-at-blainville-1902",
+     "gorsel": "https://uploads3.wikiart.org/images/marcel-duchamp/church-at-blainville-1902.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Sonata",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/sonata-1911",
+     "gorsel": "https://uploads7.wikiart.org/images/marcel-duchamp/sonata-1911.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Play",
+     "yil": 1902,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/play-1902",
+     "gorsel": "https://uploads5.wikiart.org/images/marcel-duchamp/play-1902.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Nude with black stockings",
+     "yil": 1910,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/nude-with-black-stockings-1910",
+     "gorsel": "https://uploads8.wikiart.org/images/marcel-duchamp/nude-with-black-stockings-1910.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Yvonne (in kimono)",
+     "yil": 1901,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/yvonne-in-kimono-1901",
+     "gorsel": "https://uploads8.wikiart.org/images/marcel-duchamp/yvonne-in-kimono-1901.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Sad young man in a train",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/sad-young-man-in-a-train-1911",
+     "gorsel": "https://uploads7.wikiart.org/images/marcel-duchamp/sad-young-man-in-a-train-1911.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of Jacques Villon",
+     "yil": 1905,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/portrait-of-jacques-villon",
+     "gorsel": "https://uploads4.wikiart.org/images/marcel-duchamp/portrait-of-jacques-villon.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Bush",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/the-bush",
+     "gorsel": "https://uploads4.wikiart.org/images/marcel-duchamp/the-bush.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Parva Domus, Magna Quies",
+     "yil": 1902,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/parva-domus-magna-quies-1902",
+     "gorsel": "https://uploads4.wikiart.org/images/marcel-duchamp/parva-domus-magna-quies-1902.jpg"
+    },
+    {
+     "baslik": "Landscape, Study for 'Paradise'",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/landscape-study-for-paradise-1911",
+     "gorsel": "https://uploads2.wikiart.org/images/marcel-duchamp/landscape-study-for-paradise-1911.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Landscape at Blainville",
+     "yil": 1902,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/landscape-at-blainville-1902",
+     "gorsel": "https://uploads4.wikiart.org/images/marcel-duchamp/landscape-at-blainville-1902.jpg"
+    },
+    {
+     "baslik": "Portrait of Dr. Dumouchel",
+     "yil": 1910,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/portrait-of-dr-dumouchel-1910",
+     "gorsel": "https://uploads7.wikiart.org/images/marcel-duchamp/portrait-of-dr-dumouchel-1910.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Bride",
+     "yil": 1912,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/bride-1912",
+     "gorsel": "https://uploads6.wikiart.org/images/marcel-duchamp/bride-1912.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of Chess Players",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/portrait-of-chess-players-1911",
+     "gorsel": "https://uploads8.wikiart.org/images/marcel-duchamp/portrait-of-chess-players-1911.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Chocolate Grinder",
+     "yil": 1914,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/chocolate-grinder-1914-1",
+     "gorsel": "https://uploads2.wikiart.org/images/marcel-duchamp/chocolate-grinder-1914-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Chocolate Grinder",
+     "yil": 1914,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/chocolate-grinder-1914",
+     "gorsel": "https://uploads0.wikiart.org/images/marcel-duchamp/chocolate-grinder-1914.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "About Young Sister",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/about-young-sister-1911",
+     "gorsel": "https://uploads1.wikiart.org/images/marcel-duchamp/about-young-sister-1911.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Yvonne and Magdeleine Torn in Tatters",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/yvonne-and-magdeleine-torn-in-tatters-1911",
+     "gorsel": "https://uploads2.wikiart.org/images/marcel-duchamp/yvonne-and-magdeleine-torn-in-tatters-1911.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of the artist's father",
+     "yil": 1910,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/portrait-of-the-artist-s-father-1910",
+     "gorsel": "https://uploads5.wikiart.org/images/marcel-duchamp/portrait-of-the-artist-s-father-1910.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "King and Queen surrounded by swift nudes",
+     "yil": 1912,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/king-and-queen-surrounded-by-swift-nudes-1912",
+     "gorsel": "https://uploads5.wikiart.org/images/marcel-duchamp/king-and-queen-surrounded-by-swift-nudes-1912.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Two Nudes",
+     "yil": 1910,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/two-nudes-1910",
+     "gorsel": "https://uploads1.wikiart.org/images/marcel-duchamp/two-nudes-1910.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait (Dulcinea)",
+     "yil": 1911,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/portrait-dulcinea-1911",
+     "gorsel": "https://uploads0.wikiart.org/images/marcel-duchamp/portrait-dulcinea-1911.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Standing Nude",
+     "yil": 1910,
+     "sayfa": "https://www.wikiart.org/en/marcel-duchamp/standing-nude-1910",
+     "gorsel": "https://uploads5.wikiart.org/images/marcel-duchamp/standing-nude-1910.jpg!HalfHD.jpg"
+    }
+   ]
+  },
+  "hannah-hoch": {
+   "secim": "20. yüzyıl akımı (2 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "hannah-hoch",
+   "elenen": 0,
+   "eserler": [
+    {
+     "baslik": "Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/cut-with-the-kitchen-knife-through-the-beer-belly-of-the-weimar-republic-1919",
+     "gorsel": "https://uploads5.wikiart.org/images/hannah-hoch/cut-with-the-kitchen-knife-through-the-beer-belly-of-the-weimar-republic-1919.jpg"
+    },
+    {
+     "baslik": "Study for Man and Machine",
+     "yil": 1921,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/study-for-man-and-machine-1921",
+     "gorsel": "https://uploads3.wikiart.org/images/hannah-hoch/study-for-man-and-machine-1921.jpg"
+    },
+    {
+     "baslik": "J.B. und sein Engel",
+     "yil": 1925,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/j-b-und-sein-engel-1925",
+     "gorsel": "https://uploads5.wikiart.org/images/hannah-hoch/j-b-und-sein-engel-1925.jpg"
+    },
+    {
+     "baslik": "Watched",
+     "yil": 1925,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/watched-1925",
+     "gorsel": "https://uploads3.wikiart.org/images/hannah-hoch/watched-1925.jpg"
+    },
+    {
+     "baslik": "Von oben",
+     "yil": 1927,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/von-oben-1927",
+     "gorsel": "https://uploads4.wikiart.org/images/hannah-hoch/von-oben-1927.jpg"
+    },
+    {
+     "baslik": "Reed Pen Collage",
+     "yil": 1922,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/reed-pen-collage-1922",
+     "gorsel": "https://uploads3.wikiart.org/images/hannah-hoch/reed-pen-collage-1922.jpg"
+    },
+    {
+     "baslik": "Untitled (From an Ethnographic Museum)",
+     "yil": 1930,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/untitled-from-an-ethnographic-museum-1930",
+     "gorsel": "https://uploads5.wikiart.org/images/hannah-hoch/untitled-from-an-ethnographic-museum-1930.jpg"
+    },
+    {
+     "baslik": "Raumfahrt",
+     "yil": 1956,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/raumfahrt-1956",
+     "gorsel": "https://uploads5.wikiart.org/images/hannah-hoch/raumfahrt-1956.jpg"
+    },
+    {
+     "baslik": "Strauss",
+     "yil": 1965,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/strauss-1965",
+     "gorsel": "https://uploads3.wikiart.org/images/hannah-hoch/strauss-1965.jpg"
+    },
+    {
+     "baslik": "Made for a Party",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/made-for-a-party-1936",
+     "gorsel": "https://uploads3.wikiart.org/images/hannah-hoch/made-for-a-party-1936.jpg"
+    },
+    {
+     "baslik": "Little Sun",
+     "yil": 1969,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/little-sun-1969",
+     "gorsel": "https://uploads6.wikiart.org/images/hannah-hoch/little-sun-1969.jpg"
+    },
+    {
+     "baslik": "Around a Red Mouth",
+     "yil": 1967,
+     "sayfa": "https://www.wikiart.org/en/hannah-hoch/around-a-red-mouth-1967",
+     "gorsel": "https://uploads5.wikiart.org/images/hannah-hoch/around-a-red-mouth-1967.jpg"
+    }
+   ]
+  },
+  "jean-arp": {
+   "secim": "20. yüzyıl akımı (0 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "jean-arp",
+   "elenen": 14,
+   "eserler": [
+    {
+     "baslik": "Abstract Composition",
+     "yil": 1915,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/abstract-composition",
+     "gorsel": "https://uploads8.wikiart.org/images/jean-arp/abstract-composition.jpg"
+    },
+    {
+     "baslik": "Head with mustache",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/head-with-mustache",
+     "gorsel": "https://uploads6.wikiart.org/images/jean-arp/head-with-mustache.jpg"
+    },
+    {
+     "baslik": "Configuration",
+     "yil": 1927,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/configuration",
+     "gorsel": "https://uploads3.wikiart.org/images/jean-arp/configuration.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "According to the Laws of Chance",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/according-to-the-laws-of-chance-1933",
+     "gorsel": "https://uploads2.wikiart.org/images/jean-arp/according-to-the-laws-of-chance-1933(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Torn-Up Woodcut",
+     "yil": 1954,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/torn-up-woodcut-1954",
+     "gorsel": "https://uploads1.wikiart.org/images/jean-arp/torn-up-woodcut-1954.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Danger of Death (T05007)",
+     "yil": 1954,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/danger-of-death-t05007-1954",
+     "gorsel": "https://uploads8.wikiart.org/images/jean-arp/danger-of-death-t05007-1954.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Abstract Composition, Knossos",
+     "yil": 1956,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/abstract-composition-knossos",
+     "gorsel": "https://uploads7.wikiart.org/images/jean-arp/abstract-composition-knossos.jpg"
+    },
+    {
+     "baslik": "Frond and navel",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/frond-and-navel",
+     "gorsel": "https://uploads3.wikiart.org/images/jean-arp/frond-and-navel.jpg"
+    },
+    {
+     "baslik": "Man, mustache, navel",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/man-mustache-navel",
+     "gorsel": "https://uploads6.wikiart.org/images/jean-arp/man-mustache-navel.jpg"
+    },
+    {
+     "baslik": "Squares or Rectangles Arranged According to the Laws of Chance",
+     "yil": 1917,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/squares-or-rectangles-arranged-according-to-laws-of-change-1917",
+     "gorsel": "https://uploads8.wikiart.org/images/jean-arp/squares-or-rectangles-arranged-according-to-laws-of-change-1917.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Hasard",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/hasard",
+     "gorsel": "https://uploads5.wikiart.org/images/jean-arp/hasard.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Hitler",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/hitler",
+     "gorsel": "https://uploads5.wikiart.org/images/jean-arp/hitler.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Collage with Squares Arranged According to the Laws of Chance",
+     "yil": 1917,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/untitled",
+     "gorsel": "https://uploads7.wikiart.org/images/jean-arp/untitled.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Geometric Collage",
+     "yil": 1916,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/geometric-collage",
+     "gorsel": "https://uploads7.wikiart.org/images/jean-arp/geometric-collage.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Shirt Front and Fork",
+     "yil": 1922,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/shirt-front-and-fork-1922",
+     "gorsel": "https://uploads4.wikiart.org/images/jean-arp/shirt-front-and-fork-1922.jpg"
+    },
+    {
+     "baslik": "Before my Birth",
+     "yil": 1914,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/before-my-birth-1914",
+     "gorsel": "https://uploads8.wikiart.org/images/jean-arp/before-my-birth-1914.jpg"
+    },
+    {
+     "baslik": "Mustache Hat",
+     "yil": 1932,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/mustache-hat",
+     "gorsel": "https://uploads0.wikiart.org/images/jean-arp/mustache-hat.jpg"
+    },
+    {
+     "baslik": "Christ on the Cross II",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/christ-on-the-cross-ii",
+     "gorsel": "https://uploads1.wikiart.org/images/jean-arp/christ-on-the-cross-ii.jpg"
+    },
+    {
+     "baslik": "Illustration for Tristan Tzara's \"Vingt-cinq poèmes\"",
+     "yil": 1918,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/illustration-for-tristan-tzara-s-vingt-cinq-po-mes-1918-3",
+     "gorsel": "https://uploads0.wikiart.org/images/jean-arp/illustration-for-tristan-tzara-s-vingt-cinq-po-mes-1918-3.jpg"
+    },
+    {
+     "baslik": "Illustration for Tristan Tzara's \"Vingt-cinq poèmes\"",
+     "yil": 1918,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/illustration-for-tristan-tzara-s-vingt-cinq-po-mes-1918-1",
+     "gorsel": "https://uploads0.wikiart.org/images/jean-arp/illustration-for-tristan-tzara-s-vingt-cinq-po-mes-1918-1.jpg"
+    },
+    {
+     "baslik": "Illustration for Tristan Tzara's \"Vingt-cinq poèmes\"",
+     "yil": 1918,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/illustration-for-tristan-tzara-s-vingt-cinq-po-mes-1918-6",
+     "gorsel": "https://uploads0.wikiart.org/images/jean-arp/illustration-for-tristan-tzara-s-vingt-cinq-po-mes-1918-6.jpg"
+    },
+    {
+     "baslik": "Moustaches",
+     "yil": 1925,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/moustaches-1925",
+     "gorsel": "https://uploads5.wikiart.org/images/jean-arp/moustaches-1925.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Untitled",
+     "yil": 1953,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/untitled-1",
+     "gorsel": "https://uploads0.wikiart.org/images/jean-arp/untitled-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Idole",
+     "yil": 1961,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/idole",
+     "gorsel": "https://uploads4.wikiart.org/images/jean-arp/idole.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Automatic Drawing",
+     "yil": 1916,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/automatic-drawing",
+     "gorsel": "https://uploads7.wikiart.org/images/jean-arp/automatic-drawing.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Tete Paysage",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/tete-paysage-1926",
+     "gorsel": "https://uploads7.wikiart.org/images/jean-arp/tete-paysage-1926.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Sun Recircled",
+     "yil": 1966,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/the-sun-recircled-1966",
+     "gorsel": "https://uploads1.wikiart.org/images/jean-arp/the-sun-recircled-1966.jpg"
+    },
+    {
+     "baslik": "Sun",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/sun",
+     "gorsel": "https://uploads2.wikiart.org/images/jean-arp/sun.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Leafage and Drops",
+     "yil": 1920,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/leafage-and-drops",
+     "gorsel": "https://uploads7.wikiart.org/images/jean-arp/leafage-and-drops.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Sun Recircled",
+     "yil": 1966,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/the-sun-recircled-1966-1",
+     "gorsel": "https://uploads3.wikiart.org/images/jean-arp/the-sun-recircled-1966-1.jpg"
+    },
+    {
+     "baslik": "Enak's Tears. Terrestrial Forms",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/enak-s-tears-terrestrial-forms",
+     "gorsel": "https://uploads2.wikiart.org/images/jean-arp/enak-s-tears-terrestrial-forms.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Constellation with 5 White Forms & 2 Black",
+     "yil": 1932,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/constellation-with-5-white-forms-2-black",
+     "gorsel": "https://uploads1.wikiart.org/images/jean-arp/constellation-with-5-white-forms-2-black.jpg"
+    },
+    {
+     "baslik": "Constellation",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/constellation",
+     "gorsel": "https://uploads1.wikiart.org/images/jean-arp/constellation.jpg"
+    },
+    {
+     "baslik": "Geometric Forms",
+     "yil": 1914,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/geometric-forms",
+     "gorsel": "https://uploads3.wikiart.org/images/jean-arp/geometric-forms.jpg"
+    },
+    {
+     "baslik": "Relief, Clock",
+     "yil": 1914,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/relief-clock",
+     "gorsel": "https://uploads0.wikiart.org/images/jean-arp/relief-clock.jpg"
+    },
+    {
+     "baslik": "Constellations",
+     "yil": 1938,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/constellations",
+     "gorsel": "https://uploads2.wikiart.org/images/jean-arp/constellations.jpg"
+    },
+    {
+     "baslik": "Moondancer",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/moondancer",
+     "gorsel": "https://uploads7.wikiart.org/images/jean-arp/moondancer.jpg"
+    },
+    {
+     "baslik": "Overturned Blue Shoe With Two Heels Under a Black Vault",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/not_detected_242996",
+     "gorsel": "https://uploads7.wikiart.org/images/jean-arp/not_detected_242996.jpg"
+    },
+    {
+     "baslik": "Not far from the sun, the moon and the stars",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/not-far-from-the-sun-the-moon-and-the-stars",
+     "gorsel": "https://uploads4.wikiart.org/images/jean-arp/not-far-from-the-sun-the-moon-and-the-stars.jpg"
+    },
+    {
+     "baslik": "Еgg Board",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/jean-arp/not_detected_242994",
+     "gorsel": "https://uploads7.wikiart.org/images/jean-arp/not_detected_242994.jpg"
+    }
+   ]
+  },
+  "man-ray": {
+   "secim": "20. yüzyıl akımı (2 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "man-ray",
+   "elenen": 27,
+   "eserler": [
+    {
+     "baslik": "Premier Promenade",
+     "yil": 1912,
+     "sayfa": "https://www.wikiart.org/en/man-ray/premier-promenade",
+     "gorsel": "https://uploads6.wikiart.org/images/man-ray/premier-promenade.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Untitled Abstract",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/man-ray/untitled-abstract",
+     "gorsel": "https://uploads6.wikiart.org/images/man-ray/untitled-abstract.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Untitled (The Three Graces)",
+     "yil": 1969,
+     "sayfa": "https://www.wikiart.org/en/man-ray/untitled-the-three-graces",
+     "gorsel": "https://uploads3.wikiart.org/images/man-ray/untitled-the-three-graces.jpg"
+    },
+    {
+     "baslik": "The hill",
+     "yil": 1913,
+     "sayfa": "https://www.wikiart.org/en/man-ray/the-hill",
+     "gorsel": "https://uploads6.wikiart.org/images/man-ray/the-hill.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Imaginary Portrait of the Marquis de Sade",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/man-ray/the-imaginary-portrait-of-the-marquis-de-sade",
+     "gorsel": "https://uploads5.wikiart.org/images/man-ray/the-imaginary-portrait-of-the-marquis-de-sade.jpg"
+    },
+    {
+     "baslik": "Self-Portrait",
+     "yil": 1941,
+     "sayfa": "https://www.wikiart.org/en/man-ray/self-portrait",
+     "gorsel": "https://uploads2.wikiart.org/images/man-ray/self-portrait.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "A Night at Saint Jean",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/man-ray/a-night-at-saint-jean",
+     "gorsel": "https://uploads8.wikiart.org/images/man-ray/a-night-at-saint-jean.jpg"
+    },
+    {
+     "baslik": "Nut Girls (Les Filles des Noix)",
+     "yil": 1941,
+     "sayfa": "https://www.wikiart.org/en/man-ray/nut-girls-les-filles-des-noix",
+     "gorsel": "https://uploads0.wikiart.org/images/man-ray/nut-girls-les-filles-des-noix.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Optical Hopes and Illusions",
+     "yil": 1928,
+     "sayfa": "https://www.wikiart.org/en/man-ray/optical-hopes-and-illusions",
+     "gorsel": "https://uploads7.wikiart.org/images/man-ray/optical-hopes-and-illusions.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Composition (Marchand de Couleurs)",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/man-ray/composition-marchand-de-couleurs",
+     "gorsel": "https://uploads1.wikiart.org/images/man-ray/composition-marchand-de-couleurs.jpg"
+    },
+    {
+     "baslik": "Observatory Time: The Lovers",
+     "yil": 1934,
+     "sayfa": "https://www.wikiart.org/en/man-ray/observatory-time-the-lovers",
+     "gorsel": "https://uploads5.wikiart.org/images/man-ray/observatory-time-the-lovers.jpg"
+    },
+    {
+     "baslik": "Self-Portrait Assemblage",
+     "yil": 1916,
+     "sayfa": "https://www.wikiart.org/en/man-ray/self-portrait-assemblage",
+     "gorsel": "https://uploads2.wikiart.org/images/man-ray/self-portrait-assemblage.jpg"
+    },
+    {
+     "baslik": "Untitled",
+     "yil": 1908,
+     "sayfa": "https://www.wikiart.org/en/man-ray/untitled",
+     "gorsel": "https://uploads4.wikiart.org/images/man-ray/untitled.jpg"
+    },
+    {
+     "baslik": "Electro-Magie",
+     "yil": 1972,
+     "sayfa": "https://www.wikiart.org/en/man-ray/electro-magie",
+     "gorsel": "https://uploads0.wikiart.org/images/man-ray/electro-magie.jpg"
+    },
+    {
+     "baslik": "Shakespearean Equation: King Lear",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/man-ray/shakespearean-equation-king-lear",
+     "gorsel": "https://uploads3.wikiart.org/images/man-ray/shakespearean-equation-king-lear.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Jazz",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/man-ray/jazz",
+     "gorsel": "https://uploads2.wikiart.org/images/man-ray/jazz.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Shakespearean Equation: Twelfth Night",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/man-ray/shakespearean-equation-twelfth-night",
+     "gorsel": "https://uploads7.wikiart.org/images/man-ray/shakespearean-equation-twelfth-night.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Landscape",
+     "yil": 1914,
+     "sayfa": "https://www.wikiart.org/en/man-ray/landscape",
+     "gorsel": "https://uploads5.wikiart.org/images/man-ray/landscape.jpg"
+    },
+    {
+     "baslik": "As You Like It",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/man-ray/as-you-like-it",
+     "gorsel": "https://uploads3.wikiart.org/images/man-ray/as-you-like-it.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of Juliet",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/man-ray/portrait-of-juliet",
+     "gorsel": "https://uploads5.wikiart.org/images/man-ray/portrait-of-juliet.jpg"
+    },
+    {
+     "baslik": "Hills",
+     "yil": 1914,
+     "sayfa": "https://www.wikiart.org/en/man-ray/hills",
+     "gorsel": "https://uploads1.wikiart.org/images/man-ray/hills.jpg"
+    },
+    {
+     "baslik": "Le Beau Temps",
+     "yil": 1939,
+     "sayfa": "https://www.wikiart.org/en/man-ray/le-beau-temps-1939",
+     "gorsel": "https://uploads7.wikiart.org/images/man-ray/le-beau-temps-1939.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Departure of Summer",
+     "yil": 1914,
+     "sayfa": "https://www.wikiart.org/en/man-ray/departure-of-summer",
+     "gorsel": "https://uploads6.wikiart.org/images/man-ray/departure-of-summer.jpg"
+    },
+    {
+     "baslik": "Untitled",
+     "yil": 1915,
+     "sayfa": "https://www.wikiart.org/en/man-ray/untitled-2",
+     "gorsel": "https://uploads8.wikiart.org/images/man-ray/untitled-2.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Shakespearean Equation: Measure For Measure",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/man-ray/shakespearean-equation-measure-for-measure",
+     "gorsel": "https://uploads2.wikiart.org/images/man-ray/shakespearean-equation-measure-for-measure.jpg"
+    },
+    {
+     "baslik": "Invention",
+     "yil": 1916,
+     "sayfa": "https://www.wikiart.org/en/man-ray/invention",
+     "gorsel": "https://uploads5.wikiart.org/images/man-ray/invention.jpg"
+    },
+    {
+     "baslik": "La Fortune",
+     "yil": 1938,
+     "sayfa": "https://www.wikiart.org/en/man-ray/la-fortune",
+     "gorsel": "https://uploads6.wikiart.org/images/man-ray/la-fortune.jpg"
+    },
+    {
+     "baslik": "Diderot's Harpsichord or The Merchant of Venice",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/man-ray/diderot-s-harpsichord-or-the-merchant-of-venice",
+     "gorsel": "https://uploads7.wikiart.org/images/man-ray/diderot-s-harpsichord-or-the-merchant-of-venice.jpg"
+    },
+    {
+     "baslik": "Orquesta Sinfonica",
+     "yil": 1916,
+     "sayfa": "https://www.wikiart.org/en/man-ray/orquesta-sinfonica-1916",
+     "gorsel": "https://uploads3.wikiart.org/images/man-ray/orquesta-sinfonica-1916.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Still Life with Red Tea Kettle",
+     "yil": 1913,
+     "sayfa": "https://www.wikiart.org/en/man-ray/still-life-with-red-tea-kettle",
+     "gorsel": "https://uploads8.wikiart.org/images/man-ray/still-life-with-red-tea-kettle.jpg"
+    },
+    {
+     "baslik": "The Black Tray",
+     "yil": 1914,
+     "sayfa": "https://www.wikiart.org/en/man-ray/the-black-tray",
+     "gorsel": "https://uploads1.wikiart.org/images/man-ray/the-black-tray.jpg"
+    },
+    {
+     "baslik": "Silhouette",
+     "yil": 1916,
+     "sayfa": "https://www.wikiart.org/en/man-ray/silhouette",
+     "gorsel": "https://uploads6.wikiart.org/images/man-ray/silhouette.jpg"
+    },
+    {
+     "baslik": "The Meeting from the portfolio Revolving Doors",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/man-ray/the-meeting-from-the-portfolio-revolving-doors-1926",
+     "gorsel": "https://uploads2.wikiart.org/images/man-ray/the-meeting-from-the-portfolio-revolving-doors-1926.jpg"
+    }
+   ]
+  },
+  "salvador-dali": {
+   "secim": "20. yüzyıl akımı (0 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "salvador-dali",
+   "elenen": 1,
+   "eserler": [
+    {
+     "baslik": "The Great Masturbator",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/the-great-masturbator-1929",
+     "gorsel": "https://uploads4.wikiart.org/00475/images/salvador-dali/salvador-dali-the-great-masturbator-1929-obelisk-art-history.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Persistence of Memory",
+     "yil": 1931,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/the-persistence-of-memory-1931",
+     "gorsel": "https://uploads2.wikiart.org/00475/images/salvador-dali/w1siziisijm4njq3mcjdlfsiccisimnvbnzlcnqilcitcxvhbgl0esa5mcatcmvzaxplidiwmdb4mjawmfx1mdazzsjdxq.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Dream Caused by the Flight of a Bee around a Pomegranate a Second before Awakening",
+     "yil": 1944,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/dream-caused-by-the-flight-of-a-bee-around-a-pomegranate-one-second-before-awakening",
+     "gorsel": "https://uploads4.wikiart.org/00183/images/salvador-dali/624-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Young Virgin Auto-Sodomized by the Horns of Her Own Chastity",
+     "yil": 1954,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/young-virgin-auto-sodomized-by-the-horns-of-her-own-chastity",
+     "gorsel": "https://uploads1.wikiart.org/images/salvador-dali/young-virgin-auto-sodomized-by-the-horns-of-her-own-chastity.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Disintegration of the Persistence of Memory",
+     "yil": 1954,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/the-disintegration-of-the-persistence-of-memory",
+     "gorsel": "https://uploads6.wikiart.org/images/salvador-dali/the-disintegration-of-the-persistence-of-memory.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Discovery of America by Christopher Columbus",
+     "yil": 1959,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/the-discovery-of-america-by-christopher-columbus-1959",
+     "gorsel": "https://uploads3.wikiart.org/images/salvador-dali/the-discovery-of-america-by-christopher-columbus-1959.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Hallucinogenic Toreador",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/hallucinogenic-toreador-1970",
+     "gorsel": "https://uploads5.wikiart.org/images/salvador-dali/hallucinogenic-toreador-1970.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Enigma of William Tell",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/the-enigma-of-william-tell",
+     "gorsel": "https://uploads3.wikiart.org/images/salvador-dali/the-enigma-of-william-tell.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Spider Of The Evening",
+     "yil": 1940,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/spider-of-the-evening",
+     "gorsel": "https://uploads7.wikiart.org/images/salvador-dali/spider-of-the-evening.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Christ of St. John of the Cross",
+     "yil": 1951,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/christ-of-st-john-of-the-cross-1951",
+     "gorsel": "https://uploads0.wikiart.org/00475/images/salvador-dali/christ-of-saint-john-of-the-cross-1951.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Study for the Decoration of the Ceiling in Pubol",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/study-for-the-decoration-of-the-ceiling-in-pubol",
+     "gorsel": "https://uploads7.wikiart.org/images/salvador-dali/study-for-the-decoration-of-the-ceiling-in-pubol.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Towers",
+     "yil": 1981,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/the-towers",
+     "gorsel": "https://uploads5.wikiart.org/images/salvador-dali/the-towers.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Invention of the Monsters",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/invention-of-the-monsters",
+     "gorsel": "https://uploads2.wikiart.org/images/salvador-dali/invention-of-the-monsters.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Two Pieces of Bread Expressing the Sentiment of Love",
+     "yil": 1940,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/two-pieces-of-bread-expressing-the-sentiment-of-love",
+     "gorsel": "https://uploads2.wikiart.org/images/salvador-dali/two-pieces-of-bread-expressing-the-sentiment-of-love.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Eucharistic Still Life",
+     "yil": 1952,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/eucharistic-still-life",
+     "gorsel": "https://uploads8.wikiart.org/images/salvador-dali/eucharistic-still-life.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Roger Freeing Angelica (St. George and the Damsel)",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/roger-freeing-angelica-st-george-and-the-damsel",
+     "gorsel": "https://uploads6.wikiart.org/images/salvador-dali/roger-freeing-angelica-st-george-and-the-damsel.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Figure Inspired by the Adam of the Ceiling of the Sistine Chapel",
+     "yil": 1982,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/figure-inspired-by-the-adam-of-the-ceiling-of-the-sistine-chapel",
+     "gorsel": "https://uploads5.wikiart.org/images/salvador-dali/figure-inspired-by-the-adam-of-the-ceiling-of-the-sistine-chapel.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Study for \"Honey is Sweeter than Blood\"",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/honey-is-sweeter-than-blood",
+     "gorsel": "https://uploads4.wikiart.org/images/salvador-dali/honey-is-sweeter-than-blood.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Queen Salome",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/queen-salome",
+     "gorsel": "https://uploads7.wikiart.org/images/salvador-dali/queen-salome.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Elephants (Large)",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/the-elephants-large",
+     "gorsel": "https://uploads5.wikiart.org/images/salvador-dali/the-elephants-large.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Transparent Horse",
+     "yil": 1952,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/transparent-horse",
+     "gorsel": "https://uploads3.wikiart.org/images/salvador-dali/transparent-horse.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Bed and Two Bedside Tables Ferociously Attacking a Cello (Final Stage)",
+     "yil": 1983,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/bed-and-two-bedside-tables-ferociously-attacking-a-cello-final-stage",
+     "gorsel": "https://uploads0.wikiart.org/images/salvador-dali/bed-and-two-bedside-tables-ferociously-attacking-a-cello-final-stage.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Female Bather",
+     "yil": 1928,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/female-bather",
+     "gorsel": "https://uploads8.wikiart.org/images/salvador-dali/female-bather.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Metamorphosis of Narcissus",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/the-metamorphosis-of-narcissus",
+     "gorsel": "https://uploads7.wikiart.org/images/salvador-dali/the-metamorphosis-of-narcissus.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The First Study for the Madonna of Port Lligat",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/the-first-study-for-the-madonna-of-port-lligat",
+     "gorsel": "https://uploads5.wikiart.org/images/salvador-dali/the-first-study-for-the-madonna-of-port-lligat.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Dali at the Age of Six When He Thought He Was a Girl Lifting the Skin of the Water to See the Dog Sleeping in the Shade of the Sea",
+     "yil": 1950,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/dali-at-the-age-of-six-when-he-thought-he-was-a-girl-lifting-the-skin-of-the-water-to-see-the",
+     "gorsel": "https://uploads7.wikiart.org/images/salvador-dali/dali-at-the-age-of-six-when-he-thought-he-was-a-girl-lifting-the-skin-of-the-water-to-see-the.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Hercules Lifts the Skin of the Sea and Stops Venus for an Instant from Waking Love",
+     "yil": 1963,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/hercules-lifts-the-skin-of-the-sea-and-stops-venus-for-an-instant-from-waking-love",
+     "gorsel": "https://uploads5.wikiart.org/images/salvador-dali/hercules-lifts-the-skin-of-the-sea-and-stops-venus-for-an-instant-from-waking-love.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Untitled (Michelangelo Head with Drawers)",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/untitled-michelangelo-head-with-drawers",
+     "gorsel": "https://uploads7.wikiart.org/images/salvador-dali/untitled-michelangelo-head-with-drawers.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Ole",
+     "yil": 1982,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/ole",
+     "gorsel": "https://uploads7.wikiart.org/images/salvador-dali/ole.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Port of Cadaques (Night)",
+     "yil": 1918,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/port-of-cadaques-night",
+     "gorsel": "https://uploads8.wikiart.org/images/salvador-dali/port-of-cadaques-night.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Figure on the Rocks",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/figure-on-the-rocks",
+     "gorsel": "https://uploads5.wikiart.org/images/salvador-dali/figure-on-the-rocks.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Arabs - the Death of Raymond Lulle",
+     "yil": 1963,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/arabs-the-death-of-raymond-lulle",
+     "gorsel": "https://uploads0.wikiart.org/images/salvador-dali/arabs-the-death-of-raymond-lulle.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Duck",
+     "yil": 1918,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/duck",
+     "gorsel": "https://uploads8.wikiart.org/images/salvador-dali/duck.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Cubist Figure",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/cubist-figure",
+     "gorsel": "https://uploads8.wikiart.org/images/salvador-dali/cubist-figure.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Desoxyribonucleic Acid Arabs",
+     "yil": 1963,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/desoxyribonucleic-acid-arabs",
+     "gorsel": "https://uploads5.wikiart.org/images/salvador-dali/desoxyribonucleic-acid-arabs.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Crepuscular Old Man",
+     "yil": 1918,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/crepuscular-old-man-1918",
+     "gorsel": "https://uploads1.wikiart.org/images/salvador-dali/crepuscular-old-man-1918.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Patio of Port Lligat",
+     "yil": 1968,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/the-patio-of-port-lligat",
+     "gorsel": "https://uploads1.wikiart.org/images/salvador-dali/the-patio-of-port-lligat.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Les Dlemoilselles D'Avignon (The Girls of Avignon)",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/les-clemolselles-d-avignon-the-girls-of-avignon",
+     "gorsel": "https://uploads6.wikiart.org/images/salvador-dali/les-clemolselles-d-avignon-the-girls-of-avignon.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Pianc",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/pianc",
+     "gorsel": "https://uploads0.wikiart.org/images/salvador-dali/pianc.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of a Gipsy",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/salvador-dali/portrait-of-a-gipsy",
+     "gorsel": "https://uploads5.wikiart.org/images/salvador-dali/portrait-of-a-gipsy.jpg!HalfHD.jpg"
+    }
+   ]
+  },
+  "max-ernst": {
+   "secim": "20. yüzyıl akımı (0 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "max-ernst",
+   "elenen": 0,
+   "eserler": [
+    {
+     "baslik": "The Elephant Celebes",
+     "yil": 1921,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/the-elephant-celebes-1921",
+     "gorsel": "https://uploads7.wikiart.org/images/max-ernst/the-elephant-celebes-1921.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "A Friends' Reunion",
+     "yil": 1922,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/a-friends-reunion-1922",
+     "gorsel": "https://uploads7.wikiart.org/images/max-ernst/a-friends-reunion-1922(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Ubu Imperator",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/ubu-imperator-1923",
+     "gorsel": "https://uploads0.wikiart.org/images/max-ernst/ubu-imperator-1923.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Virgin Spanking the Christ Child before Three Witnesses: Andre Breton, Paul Eluard, and the Painter",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/the-virgin-spanking-the-christ-child-before-three-witnesses-andre-breton-paul-eluard-and-the-1926",
+     "gorsel": "https://uploads7.wikiart.org/images/max-ernst/the-virgin-spanking-the-christ-child-before-three-witnesses-andre-breton-paul-eluard-and-the-1926.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Forest and Dove",
+     "yil": 1927,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/forest-and-dove-1927",
+     "gorsel": "https://uploads0.wikiart.org/images/max-ernst/forest-and-dove-1927.jpg"
+    },
+    {
+     "baslik": "Loplop Introduces Loplop",
+     "yil": 1930,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/loplop-introduces-loplop-1930",
+     "gorsel": "https://uploads0.wikiart.org/images/max-ernst/loplop-introduces-loplop-1930.jpg"
+    },
+    {
+     "baslik": "The Angel of the home or the Triumph of Surrealism",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/the-angel-of-the-home-or-the-triumph-of-surrealism-1937",
+     "gorsel": "https://uploads1.wikiart.org/images/max-ernst/the-angel-of-the-home-or-the-triumph-of-surrealism-1937.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Europe after the Rain II",
+     "yil": 1941,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/europe-after-the-rain-ii",
+     "gorsel": "https://uploads7.wikiart.org/images/max-ernst/europe-after-the-rain-ii(1).jpg"
+    },
+    {
+     "baslik": "Vox Angelica",
+     "yil": 1945,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/vox-angelica-1945",
+     "gorsel": "https://uploads6.wikiart.org/images/max-ernst/vox-angelica-1945.jpg"
+    },
+    {
+     "baslik": "Of This Men Shall Know Nothing",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/of-this-men-shall-know-nothing-1923",
+     "gorsel": "https://uploads8.wikiart.org/images/max-ernst/of-this-men-shall-know-nothing-1923.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Landscape with Wheat Germ",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/landscape-with-wheat-germ-1936",
+     "gorsel": "https://uploads3.wikiart.org/images/max-ernst/landscape-with-wheat-germ-1936.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Spanish Physician",
+     "yil": 1940,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/the-spanish-physician-1940",
+     "gorsel": "https://uploads8.wikiart.org/images/max-ernst/the-spanish-physician-1940.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Colorado River",
+     "yil": 1958,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/colorado-river-1958",
+     "gorsel": "https://uploads1.wikiart.org/images/max-ernst/colorado-river-1958.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "La Dernière Forêt",
+     "yil": 1969,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/la-derni-re-for-t-1969",
+     "gorsel": "https://uploads4.wikiart.org/images/max-ernst/la-derni-re-for-t-1969.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Red Forest",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/red-forest-1970",
+     "gorsel": "https://uploads6.wikiart.org/images/max-ernst/red-forest-1970.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "My Friend Pierrot",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/my-friend-pierrot",
+     "gorsel": "https://uploads8.wikiart.org/images/max-ernst/my-friend-pierrot.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Aquis submersus",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/aquis-submersus-1919",
+     "gorsel": "https://uploads2.wikiart.org/images/max-ernst/aquis-submersus-1919.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "After Us Motherhood",
+     "yil": 1927,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/after-us-motherhood-1927",
+     "gorsel": "https://uploads6.wikiart.org/images/max-ernst/after-us-motherhood-1927.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Nymph Echo",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/the-nymph-echo-1936",
+     "gorsel": "https://uploads1.wikiart.org/images/max-ernst/the-nymph-echo-1936.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Cocktail Drinker",
+     "yil": 1945,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/cocktail-drinker-1945-1",
+     "gorsel": "https://uploads5.wikiart.org/images/max-ernst/cocktail-drinker-1945-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Obscure Gods",
+     "yil": 1957,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/the-obscure-gods-1957",
+     "gorsel": "https://uploads3.wikiart.org/images/max-ernst/the-obscure-gods-1957.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Le jardin de la France",
+     "yil": 1962,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/le-jardin-de-la-france-1962",
+     "gorsel": "https://uploads0.wikiart.org/images/max-ernst/le-jardin-de-la-france-1962.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Configuration No.16",
+     "yil": 1974,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/configuration-no-16-1974",
+     "gorsel": "https://uploads6.wikiart.org/images/max-ernst/configuration-no-16-1974.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "A young nude",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/a-young-nude",
+     "gorsel": "https://uploads3.wikiart.org/images/max-ernst/a-young-nude.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Pieta (Revolution by Night)",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/pieta-revolution-by-night-1923",
+     "gorsel": "https://uploads3.wikiart.org/images/max-ernst/pieta-revolution-by-night-1923.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "La Ville Entiere",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/la-ville-entiere-1936",
+     "gorsel": "https://uploads3.wikiart.org/images/max-ernst/la-ville-entiere-1936.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Anti-Pope",
+     "yil": 1941,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/the-anti-pope-1941",
+     "gorsel": "https://uploads0.wikiart.org/images/max-ernst/the-anti-pope-1941.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Praise to Tanguy",
+     "yil": 1955,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/not_detected_234399",
+     "gorsel": "https://uploads1.wikiart.org/images/max-ernst/not_detected_234399.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Two sisters",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/two-sisters",
+     "gorsel": "https://uploads2.wikiart.org/images/max-ernst/two-sisters.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Ambiguous Figures (1 copper plate, 1 zinc plate, 1 rubber cloth...)",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/ambiguous-figures-1-copper-plate-1-zinc-plate-1-rubber-cloth",
+     "gorsel": "https://uploads6.wikiart.org/images/max-ernst/ambiguous-figures-1-copper-plate-1-zinc-plate-1-rubber-cloth.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Oedipus Rex",
+     "yil": 1922,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/oedipus-rex-1922",
+     "gorsel": "https://uploads7.wikiart.org/images/max-ernst/oedipus-rex-1922.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Robing of the Bride",
+     "yil": 1940,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/the-robing-of-the-bride-1940",
+     "gorsel": "https://uploads1.wikiart.org/images/max-ernst/the-robing-of-the-bride-1940.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Self-Portrait",
+     "yil": 1909,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/self-portrait-1909",
+     "gorsel": "https://uploads0.wikiart.org/images/max-ernst/self-portrait-1909.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Immortality",
+     "yil": 1913,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/immortality-1913",
+     "gorsel": "https://uploads7.wikiart.org/images/max-ernst/immortality-1913.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Landscape with Sun",
+     "yil": 1909,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/landscape-with-sun-1909",
+     "gorsel": "https://uploads5.wikiart.org/images/max-ernst/landscape-with-sun-1909.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Untitled",
+     "yil": 1909,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/untitled-1909",
+     "gorsel": "https://uploads4.wikiart.org/images/max-ernst/untitled-1909.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Crucifixion",
+     "yil": 1913,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/crucifixion-1913",
+     "gorsel": "https://uploads7.wikiart.org/images/max-ernst/crucifixion-1913.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Shells and Flowers",
+     "yil": 1965,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/shells-and-flowers",
+     "gorsel": "https://uploads0.wikiart.org/images/max-ernst/shells-and-flowers.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The world map makes a mockery",
+     "yil": 1975,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/the-world-map-makes-a-mockery-1975",
+     "gorsel": "https://uploads7.wikiart.org/images/max-ernst/the-world-map-makes-a-mockery-1975.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "My Absolute",
+     "yil": 1934,
+     "sayfa": "https://www.wikiart.org/en/max-ernst/my-absolute-1934",
+     "gorsel": "https://uploads7.wikiart.org/images/max-ernst/my-absolute-1934.jpg!HalfHD.jpg"
+    }
+   ]
+  },
+  "rene-magritte": {
+   "secim": "20. yüzyıl akımı (0 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "rene-magritte",
+   "elenen": 1,
+   "eserler": [
+    {
+     "baslik": "Attempting the Impossible",
+     "yil": 1928,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/attempting-the-impossible-1928",
+     "gorsel": "https://uploads1.wikiart.org/images/rene-magritte/attempting-the-impossible-1928(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The false mirror",
+     "yil": 1928,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-false-mirror-1928",
+     "gorsel": "https://uploads8.wikiart.org/images/rene-magritte/the-false-mirror-1928(1).jpg"
+    },
+    {
+     "baslik": "The treachery of images (This is not a pipe)",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-treachery-of-images-this-is-not-a-pipe-1948",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/the-treachery-of-images-this-is-not-a-pipe-1948(2).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Collective Invention",
+     "yil": 1934,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/collective-invention-1934",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/collective-invention-1934(1).jpg"
+    },
+    {
+     "baslik": "The human condition",
+     "yil": 1935,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-human-condition-1935",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/the-human-condition-1935(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Not to be Reproduced",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/not-to-be-reproduced-1937",
+     "gorsel": "https://uploads5.wikiart.org/images/rene-magritte/not-to-be-reproduced-1937(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Time transfixed",
+     "yil": 1938,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/time-transfixed-1938",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/time-transfixed-1938(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Black Magic",
+     "yil": 1945,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/black-magic-1945",
+     "gorsel": "https://uploads5.wikiart.org/images/rene-magritte/black-magic-1945(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Listening Room",
+     "yil": 1952,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-listening-room-1952",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/the-listening-room-1952(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Golconda",
+     "yil": 1953,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/gonconda-1953",
+     "gorsel": "https://uploads2.wikiart.org/images/rene-magritte/gonconda-1953(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Son of Man",
+     "yil": 1964,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/son-of-man-1964",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/son-of-man-1964(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The menaced assassin",
+     "yil": 1927,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-menaced-assassin-1927",
+     "gorsel": "https://uploads2.wikiart.org/images/rene-magritte/the-menaced-assassin-1927.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Human Condition",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-human-condition-1933",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/the-human-condition-1933(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Rights of Man",
+     "yil": 1947,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-rights-of-man-1947",
+     "gorsel": "https://uploads2.wikiart.org/images/rene-magritte/the-rights-of-man-1947(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Manet's Balcony",
+     "yil": 1950,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/manet-s-balcony-1950",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/manet-s-balcony-1950(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Beautiful world",
+     "yil": 1962,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/beautiful-world-1962",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/beautiful-world-1962(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The beneficial promise",
+     "yil": 1927,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-beneficial-promise-1927",
+     "gorsel": "https://uploads7.wikiart.org/images/rene-magritte/the-beneficial-promise-1927(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The red model",
+     "yil": 1934,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-red-model-1934",
+     "gorsel": "https://uploads7.wikiart.org/images/rene-magritte/the-red-model-1934(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Philosophy in the bedroom",
+     "yil": 1947,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/philosophy-in-the-bedroom-1947",
+     "gorsel": "https://uploads1.wikiart.org/images/rene-magritte/philosophy-in-the-bedroom-1947(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The fountain of youth",
+     "yil": 1958,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-fountain-of-youth-1958",
+     "gorsel": "https://uploads6.wikiart.org/images/rene-magritte/the-fountain-of-youth-1958(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The blank signature",
+     "yil": 1965,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-blank-signature-1965",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/the-blank-signature-1965(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Checkmate",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/checkmate-1926",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/checkmate-1926(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The domain of Arnheim",
+     "yil": 1938,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/not_detected_211404",
+     "gorsel": "https://uploads5.wikiart.org/images/rene-magritte/not_detected_211404.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Memory",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/memory-1948",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/memory-1948(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Banquet",
+     "yil": 1955,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/banquet-1955",
+     "gorsel": "https://uploads1.wikiart.org/images/rene-magritte/banquet-1955(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Souvenirs from travel",
+     "yil": 1963,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/souvenirs-from-travel-1963",
+     "gorsel": "https://uploads3.wikiart.org/00123/images/rene-magritte/souvenirs-de-voyage.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The musings of the solitary walker",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-musings-of-the-solitary-walker-1926",
+     "gorsel": "https://uploads1.wikiart.org/images/rene-magritte/the-musings-of-the-solitary-walker-1926(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Rape",
+     "yil": 1935,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/rape-1935",
+     "gorsel": "https://uploads7.wikiart.org/images/rene-magritte/rape-1935(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Applied dialectics",
+     "yil": 1945,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/applied-dialectics-1945",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/applied-dialectics-1945(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Invisible world",
+     "yil": 1954,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/invisible-world-1954",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/invisible-world-1954(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The land of miracles",
+     "yil": 1964,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-land-of-miracles-1964",
+     "gorsel": "https://uploads5.wikiart.org/images/rene-magritte/the-land-of-miracles-1964(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The silver gap",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-silver-gap-1926",
+     "gorsel": "https://uploads8.wikiart.org/images/rene-magritte/the-silver-gap-1926(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Philosopher's lamp",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/philosopher-s-lamp-1936",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/philosopher-s-lamp-1936(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Delusions of grandeur",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/delusions-of-grandeur-1948",
+     "gorsel": "https://uploads6.wikiart.org/images/rene-magritte/delusions-of-grandeur-1948(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Labours of Alexander",
+     "yil": 1950,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-labours-of-alexander-1950",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/the-labours-of-alexander-1950(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The anger of gods",
+     "yil": 1960,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-anger-of-gods-1960",
+     "gorsel": "https://uploads2.wikiart.org/images/rene-magritte/the-anger-of-gods-1960(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Discovery",
+     "yil": 1927,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/discovery-1927",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/discovery-1927(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The revealing of the present",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-revealing-of-the-present-1936",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/the-revealing-of-the-present-1936(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Return",
+     "yil": 1940,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-return-1940",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/the-return-1940(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Nude",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/nude-1919",
+     "gorsel": "https://uploads7.wikiart.org/images/rene-magritte/nude-1919(1).jpg!HalfHD.jpg"
+    }
+   ]
+  },
+  "joan-miro": {
+   "secim": "20. yüzyıl akımı (0 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "joan-miro",
+   "elenen": 2,
+   "eserler": [
+    {
+     "baslik": "The Farm",
+     "yil": 1922,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-farm-1922",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/the-farm-1922.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Ear of Grain",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-ear-of-corn-1923",
+     "gorsel": "https://uploads0.wikiart.org/images/joan-miro/the-ear-of-corn-1923.jpg"
+    },
+    {
+     "baslik": "The Tilled Field",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-tilled-field-1924",
+     "gorsel": "https://uploads3.wikiart.org/images/joan-miro/the-tilled-field-1924.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Maternity",
+     "yil": 1924,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/maternity",
+     "gorsel": "https://uploads0.wikiart.org/images/joan-miro/maternity.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Dancer",
+     "yil": 1925,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/dancer",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/dancer.jpg"
+    },
+    {
+     "baslik": "Painting",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/painting-1936",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227973.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Beautiful Bird Revealing the Unknown to a Pair of Lovers (from the Constellation series)",
+     "yil": 1941,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227933",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227933.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Smile of the Flamboyant Wings",
+     "yil": 1953,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-smile-of-the-flamboyant-wings",
+     "gorsel": "https://uploads6.wikiart.org/images/joan-miro/the-smile-of-the-flamboyant-wings.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Great Carnivore",
+     "yil": 1969,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-great-carnivore-1969",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/the-great-carnivore-1969.jpg"
+    },
+    {
+     "baslik": "Hope of a Condemned Man II",
+     "yil": 1974,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/hope-of-a-condemned-man-ii-1974",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/hope-of-a-condemned-man-ii-1974.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Hope of a Condemned Man III",
+     "yil": 1974,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/hope-of-a-condemned-man-iii-1974",
+     "gorsel": "https://uploads5.wikiart.org/images/joan-miro/hope-of-a-condemned-man-iii-1974.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Dutch Interior II",
+     "yil": 1928,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/dutch-interior-ii",
+     "gorsel": "https://uploads2.wikiart.org/images/joan-miro/dutch-interior-ii(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Rhythmic Characters",
+     "yil": 1934,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227978",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227978.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Woman and Bird in the Moonlight",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/woman-and-bird-in-the-moonlight",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/woman-and-bird-in-the-moonlight.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Characters in the Night",
+     "yil": 1950,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227937",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227937.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Song of the Vowels",
+     "yil": 1967,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-song-of-the-vowels",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/the-song-of-the-vowels.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Woman and Bird in the Night",
+     "yil": 1975,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227979",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227979.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Untitled",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227959",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227959.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Cap d'home",
+     "yil": 1932,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/cap-d-home",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/cap-d-home.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Escape Ladder",
+     "yil": 1940,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-escape-ladder-1940",
+     "gorsel": "https://uploads2.wikiart.org/00187/images/joan-miro/cri-000000009549.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Sun Embracing the Lover",
+     "yil": 1952,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-sun-embracing-the-lover-1952",
+     "gorsel": "https://uploads5.wikiart.org/images/joan-miro/the-sun-embracing-the-lover-1952.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Woman and Bird I",
+     "yil": 1967,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227944",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227944.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Donna (Wall)",
+     "yil": 1977,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/donna-wall",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/donna-wall.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Untitled",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227977",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227977.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of Mrs Mills in 1750 (after Constable)",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/portrait-of-mrs-mills-in-1750-after-constable",
+     "gorsel": "https://uploads0.wikiart.org/images/joan-miro/portrait-of-mrs-mills-in-1750-after-constable.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Snail Woman Flower Star",
+     "yil": 1934,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/fleur-femme-etoile-escargot",
+     "gorsel": "https://uploads0.wikiart.org/images/joan-miro/fleur-femme-etoile-escargot.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Figures and Dog in Front of the Sun",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/figures-and-dog-in-front-of-the-sun",
+     "gorsel": "https://uploads8.wikiart.org/images/joan-miro/figures-and-dog-in-front-of-the-sun.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Dragonfly with Red-Tipped Wing in Pursuit of a Serpent Spiralling Toward a Comet",
+     "yil": 1951,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/dragonfly-with-red-tipped-wing-in-pursuit-of-a-serpent-spiralling-toward-a-comet-1951",
+     "gorsel": "https://uploads8.wikiart.org/images/joan-miro/dragonfly-with-red-tipped-wing-in-pursuit-of-a-surpent-spiralling-toward-a-comet.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Woman in the Night",
+     "yil": 1967,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227958",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227958.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Burnt Canvas I",
+     "yil": 1973,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227955",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227955.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Les adieux",
+     "yil": 1981,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227986",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227986.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Siesta",
+     "yil": 1925,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/siesta",
+     "gorsel": "https://uploads6.wikiart.org/images/joan-miro/siesta.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Painting",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/painting-1",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/painting-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Painting",
+     "yil": 1943,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/painting-3",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/painting-3.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Magdalenians",
+     "yil": 1958,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227938",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227938.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Nude with Mirror",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/nude-with-mirror",
+     "gorsel": "https://uploads7.wikiart.org/images/joan-miro/nude-with-mirror.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Self-Portrait (in red overall)",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/self-portrait-1",
+     "gorsel": "https://uploads6.wikiart.org/images/joan-miro/self-portrait-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of a Spanish Dancer",
+     "yil": 1921,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/portrait-of-a-spanish-dancer",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/portrait-of-a-spanish-dancer.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Church and the Village of Montroig",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227965",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227965.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Vegetable Garden with Donkey",
+     "yil": 1918,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-vegetable-garden-with-donkey",
+     "gorsel": "https://uploads5.wikiart.org/images/joan-miro/the-vegetable-garden-with-donkey.jpg!HalfHD.jpg"
+    }
+   ]
+  },
+  "francis-bacon": {
+   "secim": "20. yüzyıl akımı (0 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "francis-bacon",
+   "elenen": 1,
+   "eserler": [
+    {
+     "baslik": "Three Studies for a Crucifixion",
+     "yil": 1962,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-for-a-crucifixion-1962",
+     "gorsel": "https://uploads8.wikiart.org/00108/images/francis-bacon/7.jpg"
+    },
+    {
+     "baslik": "Double Portrait of Lucian Freud and Frank Auerbach",
+     "yil": 1964,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/double-portrait-of-lucian-freud-and-frank-auerbach-1964",
+     "gorsel": "https://uploads5.wikiart.org/00108/images/francis-bacon/bacon-francis-dubbelportratt-av-lucian-freud-och-frank-auerbach-1964-1500x874.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Crucifixion",
+     "yil": 1965,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/crucifixion-1965",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/5-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Study for the Portrait of Pope Innocent X",
+     "yil": 1965,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/study-for-the-portrait-of-pope-innocent-x-1965",
+     "gorsel": "https://uploads1.wikiart.org/00108/images/francis-bacon/4.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Gouache",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/gouache-1929",
+     "gorsel": "https://uploads3.wikiart.org/images/francis-bacon/not_detected_197527.jpg"
+    },
+    {
+     "baslik": "Portrait",
+     "yil": 1930,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/portrait-1930",
+     "gorsel": "https://uploads4.wikiart.org/00108/images/francis-bacon/portrait-1930.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Three Studies for Figures at the Base of a Crucifixion",
+     "yil": 1944,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-for-figures-at-the-base-of-a-crucifixion-1944",
+     "gorsel": "https://uploads0.wikiart.org/images/francis-bacon/three-studies-for-figures-at-the-base-of-a-crucifixion-1944.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Study for a Head",
+     "yil": 1955,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/study-for-a-head-1955",
+     "gorsel": "https://uploads6.wikiart.org/00108/images/francis-bacon/1x-1-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Three Studies of Lucian Freud",
+     "yil": 1969,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-of-lucian-freud-1969",
+     "gorsel": "https://uploads5.wikiart.org/00108/images/francis-bacon/63039caf449ef726420f6a706700f0ff.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "In Memory of George Dyer",
+     "yil": 1971,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/in-memory-of-george-dyer-1971",
+     "gorsel": "https://uploads1.wikiart.org/00108/images/francis-bacon/20-francis-bacon-triptych-in-memory-of-george-dyer-1971.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "After Picasso 'LA DANSE'",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/after-picasso-la-danse-1933",
+     "gorsel": "https://uploads0.wikiart.org/00108/images/francis-bacon/after-picasso-la-danse-1933.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Painting",
+     "yil": 1946,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/painting-1946",
+     "gorsel": "https://uploads5.wikiart.org/images/francis-bacon/not_detected_197528.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Man in Blue VII",
+     "yil": 1954,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/man-in-blue-vii-1954",
+     "gorsel": "https://uploads1.wikiart.org/00286/images/francis-bacon/man-in-blue-vii-1954.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of Isabel Rawsthorn standing in a street in soho",
+     "yil": 1967,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/portrait-of-isabel-rawsthorn-standing-in-a-street-in-soho-1967",
+     "gorsel": "https://uploads1.wikiart.org/images/francis-bacon/portrait-of-isabel-rawsthorn-standing-in-a-street-in-soho(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Jet of Water",
+     "yil": 1979,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/jet-of-water-1979",
+     "gorsel": "https://uploads0.wikiart.org/00108/images/francis-bacon/jet-of-water-1979-the-estate-of-francis-bacon.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Diptych: Study from the Human Body - from a Drawing by Ingres",
+     "yil": 1984,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/diptych-study-from-the-human-body-from-a-drawing-by-ingres-1984",
+     "gorsel": "https://uploads2.wikiart.org/00108/images/francis-bacon/71jdiponajl.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Rug",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/rug-1929-1",
+     "gorsel": "https://uploads1.wikiart.org/00108/images/francis-bacon/rug.jpg"
+    },
+    {
+     "baslik": "Composition (Figure)",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/composition-figure-1933",
+     "gorsel": "https://uploads3.wikiart.org/images/francis-bacon/composition-figure-1933(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Head IV (Man with a Monkey)",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/head-iv-man-with-a-monkey-1949",
+     "gorsel": "https://uploads3.wikiart.org/00227/images/francis-bacon/1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Painting",
+     "yil": 1950,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/painting-1950",
+     "gorsel": "https://uploads6.wikiart.org/00108/images/francis-bacon/590-10.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Two Figures Lying on a Bed with Attendants",
+     "yil": 1968,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/two-figures-lying-on-a-bed-with-attendants-1968",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/3-2.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Triptych March 1974",
+     "yil": 1974,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/triptych-march-1974-1974",
+     "gorsel": "https://uploads3.wikiart.org/00226/images/francis-bacon/triptych-march-1974.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Triptych 1986-1987",
+     "yil": 1987,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/triptych-1986-1987-1987",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/4-8.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Rug",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/rug-1929",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/rug-1.jpg"
+    },
+    {
+     "baslik": "Figures in a Garden",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/figures-in-a-garden-1936",
+     "gorsel": "https://uploads6.wikiart.org/images/francis-bacon/figures-in-a-garden(1).jpg"
+    },
+    {
+     "baslik": "Head I",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/head-i-1948",
+     "gorsel": "https://uploads4.wikiart.org/images/francis-bacon/head-i(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Study for Portrait V",
+     "yil": 1953,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/study-for-portrait-v-1953",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/francis-bacon-study-for-portrait-v-1953.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Three Studies for Portrait of Isabel Rawsthorne (on a dark background)",
+     "yil": 1965,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-for-portrait-of-isabel-rawsthorne-on-a-dark-background-1965",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/6-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Two Studies for a Self-Portrait",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/two-studies-for-a-self-portrait-1970",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/7-2.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Second Version of Triptych 1944",
+     "yil": 1988,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/second-version-of-triptych-1944-1988",
+     "gorsel": "https://uploads2.wikiart.org/00228/images/francis-bacon/second-version-of-triptych-1944-1988.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Rug",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/rug-1929-0",
+     "gorsel": "https://uploads6.wikiart.org/00108/images/francis-bacon/rug-1929.jpg"
+    },
+    {
+     "baslik": "The Crucifixion",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/the-crucifixion-1933",
+     "gorsel": "https://uploads0.wikiart.org/images/francis-bacon/the-crucifixion-1933(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Study from the human body",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/study-from-the-human-body-1949",
+     "gorsel": "https://uploads3.wikiart.org/images/francis-bacon/study-from-the-human-body(1).jpg"
+    },
+    {
+     "baslik": "Study after Velazquez's portrait of Pope Innocent X",
+     "yil": 1953,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/study-after-velazquezs-portrait-of-pope-innocent-x-1953",
+     "gorsel": "https://uploads4.wikiart.org/images/francis-bacon/study-after-velazquez-s-portrait-of-pope-innocent-x(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Three Studies for Portrait of Isabel Rawsthorne",
+     "yil": 1968,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-for-portrait-of-isabel-rawsthorne-1968",
+     "gorsel": "https://uploads6.wikiart.org/00108/images/francis-bacon/58406326edc2c97ffccc1e8f.png!HalfHD.png"
+    },
+    {
+     "baslik": "Triptych - Studies of the Human Body",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/triptych-studies-of-the-human-body-1970",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/5-2.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Triptych Inspired by Oresteia of Aeschylus",
+     "yil": 1981,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/triptych-inspired-by-oresteia-of-aeschylus-1981",
+     "gorsel": "https://uploads2.wikiart.org/00108/images/francis-bacon/11.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Crucifixion",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/crucifixion-1933",
+     "gorsel": "https://uploads5.wikiart.org/00108/images/francis-bacon/francis-bacon-crucifixion-dacsx600.jpg"
+    },
+    {
+     "baslik": "Head VI",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/head-vi-1949",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/head-vi-1949.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Three Studies for Figures at the Base of a Crucifixion (2nd version)",
+     "yil": 1988,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-for-figures-at-the-base-of-a-crucifixion-2nd-version-1944",
+     "gorsel": "https://uploads1.wikiart.org/00108/images/francis-bacon/5.jpg!HalfHD.jpg"
+    }
+   ]
+  }
+ },
+ "kaynak": "WikiArt (https://www.wikiart.org) · scripts/kaynaklar/wikiart.mjs",
+ "olusturma": "2026-10-20T10:34:53.840Z"
+}

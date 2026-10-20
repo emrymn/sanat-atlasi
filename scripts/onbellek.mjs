@@ -21,7 +21,7 @@ import { aicEserleri } from './kaynaklar/aic.mjs';
 import { cmaEserleri } from './kaynaklar/cma.mjs';
 import { ngaEserleri } from './kaynaklar/nga.mjs';
 import { commonsEserleri } from './kaynaklar/commons.mjs';
-import { birlestir, makulYilMi } from './kaynaklar/birlestir.mjs';
+import { birlestir, makulYilMi, wikiartiUygula } from './kaynaklar/birlestir.mjs';
 
 export const SURUM = 3;
 const COMMONS_ESIGI = 12; // daha az eseri olan sanatçılar için Commons kategorisine de bakılır
@@ -117,4 +117,7 @@ for (const s of sanatcilar) {
   onbellek.olusturma = new Date().toISOString();
   await writeFile(hedef, JSON.stringify(onbellek));
 }
+// WikiArt (data/wikiart.json, scripts/kaynaklar/wikiart.mjs) ağa gitmeden eklenir
+wikiartiUygula(onbellek, await oku('data/wikiart.json', { sanatcilar: {} }));
+await writeFile(hedef, JSON.stringify(onbellek));
 console.log('Bitti:', Object.keys(onbellek.sanatcilar).length, 'sanatçı');

@@ -597,3 +597,116 @@ Kaynak: `tasarim-A/TASARIM.md` ve üç mockup (`A-Bugun`, `A-Sanatci`, `A-Pekist
     - 7 günlük kayıt silinsin.
     
     Yedek testi yarım oturumun gidiş-dönüşünü de denetler. SW 1.7.0.
+
+## WikiArt · yedek görsel kaynağı (2026-10-20)
+
+132. **Yalnızca derleme zamanı:** WikiArt'ı yalnızca `scripts/kaynaklar/wikiart.mjs` kullanır. Telefon WikiArt API'sine hiç gitmez, yalnızca `uploads*.wikiart.org` görsellerini indirir; service worker bunları diğer görseller gibi önbelleğe alır.
+    - Anahtarlar yalnızca `WIKIART_ACCESS_KEY` ve `WIKIART_SECRET_KEY` ortam değişkenlerinden okunur. Depoya, önbelleğe ve günlüğe yazılmaz; günlüğe giden her metinden silinir.
+    - Oturum anahtarı yalnızca bellekte tutulur.
+133. **Canlı denenen API** (belge eski):
+    - **Çalışanlar:**
+      - v2 `GET /en/Api/2/login?accessCode=…&secretCode=…` → `SessionKey`; hesap sınırı saatte 400 istek ve 10 oturum.
+      - v2 `GET /en/api/2/Painting?id=…&imageFormat=HalfHD&authSessionKey=…` → tür (`genres`), üslup, malzeme (`media`), müze, eser adresi ve görsel. Görsel adresi HalfHD varsa `…!HalfHD.jpg`, yoksa özgün dosyadır.
+      - v2 `PaintingSearch?term=…` (sanatçı adresi tahmini tutmazsa yedek olarak).
+      - v2 `PaintingsByArtist?id=<v2 sanatçı kimliği>`: çalışıyor ama kronolojik sıralı ve v2 sanatçı kimliği isteyen bir uç nokta. Belgedeki `artistUrl=` ve `id=<adres>` biçimleri 404 “Artist not found” döndürüyor.
+    - **v2'de olmadığı için sitenin eski JSON uç noktaları:**
+      - Sanatçı ayrıntısı (v2 belgesinde “TODO”): `GET /en/<adres>?json=2` → ad, özgün ad, doğum ve ölüm.
+      - Öne çıkanlar (bilinirlik sırası): `/en/<adres>/mode/featured?json=2&layout=new&page=1&resultType=masonry`.
+      - Tam liste: `/en/<adres>/mode/all-paintings?json=2&…&page=N` (kronolojik, görsel boyutlarıyla). Bu listelerdeki eser kimlikleri v2 kimlikleri.
+      - `mode/popular` ve `mode/most-viewed` 302 döndürüyor, yok.
+    - **Kullanılmayan:** eski `App/Painting/ImageJson/<id>` çalışıyor, ama görsel adresini her zaman `!Large.jpg` veriyor. Özgünü 750×600'den küçük eserlerde bu adres 404 (denendi).
+134. **Görsel adresi:** veride v2'nin verdiği adres saklanır (HalfHD ya da küçükse özgün dosya). Uygulama 400 px ve altındaki küçük resimlerde `!HalfHD.jpg` yerine `!Large.jpg` ister. HalfHD varsa Large da vardır, çünkü küçük resimler yalnızca özgün dosya daha büyükse üretilir. WikiArt görselleri CORS'a açık (`*`), bu yüzden resim rengi paleti de çıkarılabiliyor.
+135. **Sınırlar:**
+    - En çok 3 istek/sn: ardışık istekler arasında ≥ 354 ms.
+    - En çok 350 istek/saat ve 8 oturum/saat: kayan pencereyle. Zaman damgaları `scripts/.ham/wikiart/gunluk.json`'da tutulduğu için betik yeniden başlasa da geçerli.
+    - Sınır dolunca betik bekler.
+    - 429 alınca 60 sn beklenir. 5xx'te üstel geri çekilme yapılır; v2'de 5xx alınırsa oturum bir kez yenilenir. Süresi dolan oturum 500 döndürdü (gözlendi), Magritte/Miró/Bacon ilk çalıştırmada bu yüzden düştü.
+    - Ham yanıtlar `scripts/.ham/wikiart/yanit/` altında (git'e girmez). Kesilen çalıştırma aynı komutla kaldığı yerden sürer.
+    - Bu iş toplam ≈ 660 istek tuttu.
+136. **Hangi sanatçılar:**
+    - Pekiştirmede kullanılabilir eseri (WikiArt katkısı çıkarılarak sayılır) 12'den az olanlar.
+    - 20. yüzyıl akımları. Veride Fütürizm ve Pop ayrı akım olarak yok; “Fütürizm'den Savaş sonrası/Pop'a” aralığını Kübizm, Dada, Sürrealizm ve Savaş sonrası figürasyon olarak aldım. Kübizm, Fütürizm'in komşusu ve aynı yıllarda.
+    - Ekspresyonizm'in kalabalık sanatçıları (Munch, Kirchner, Kandinsky, Marc) dışarıda kaldı. Nolde az eseri olduğu için girdi.
+    - `ana_ugras_disi` listesindekiler ve doğum yılı bilinmeyenler (eşleştirilemez) hiç sorgulanmadı.
+137. **Eşleştirme:** WikiArt'taki ad, özgün ad ya da “soyad ad” biçimi bizim `ad`/`ad_arama`/Wikidata İngilizce adlarından biriyle aynı olmalı ve doğum yılı ±3 tutmalı.
+    - Ölüm yılı da biliniyorsa ±3 tutmalı; tutmazsa eşleşme **şüpheli** sayılır. Yalnızca soyad tutuyorsa ya da antik sanatçıda doğum ±15 ise de şüpheli sayılır.
+    - Şüpheli eşleşmenin görselleri puan 5 alır: Göz At'ta görünür, pekiştirmeye girmez.
+    - Eşleşmeyen sanatçıdan hiçbir şey alınmaz.
+    - Bu çalıştırmada şüpheli eşleşme çıkmadı.
+138. **Yalnızca resim:**
+    - WikiArt tür sözlüğünden (grup 3) şu türler çıkarılır: heykel, mimari, fotoğraf, enstalasyon, tasarım, performans, video, animasyon, mobil/stabil, takı, süs, eşya, nesne, mobilya, dijital, seramik, mozaik, duvar halısı, reklam, sahte/kopya.
+    - Malzemesi yalnızca heykel ya da nesne malzemesi olanlar (mermer, bronz, taş, alçı, cam, metal…) çıkarılır.
+    - Fotoğraf malzemesi olanlar (gelatin silver, photogram…) her durumda çıkarılır.
+    - Başlığında “film still / photograph / rayograph / readymade” geçenler de çıkarılır.
+    - Eser yılı sanatçının çalışma hayatı dışındaysa alınmaz (müzelerdeki kuralın aynısı). Görselin uzun kenarı 400 px'ten kısaysa da alınmaz. Telifli eserlerin WikiArt görselleri çoğunlukla ~350×470 olduğu için ilk düşünülen 500 px sınırı Höch'ü neredeyse boşaltıyordu.
+139. **Hangi 40 eser:** önce WikiArt'ın öne çıkardıkları (bilinirlik sırası), sonra tam listeden on yıllara göre sırayla birer eser (her on yılda büyük görsel önce). Böylece 40 eser kariyerin tamamına yayılır.
+    - Uzun listelerde en çok 8 sayfa, eşit aralıkla okunur.
+    - Sanatçı başına en çok 60 eser ayrıntısı istenir.
+    - Kabul edilenler: öne çıkanlar, sonra üslubu akımına uyanlar (ör. Sürrealizm → Surrealism), sonra diğerleri.
+140. **Veri:** `data/wikiart.json` sanatçı başına durum ve eser listesi tutar. Her eserde yalnızca başlık, yıl, eser sayfası ve görsel URL'si var; depoda görsel dosyası yok. `data/eserler_onbellek.json`'a ağa gitmeden uygulanır (`UYGULA=1 node scripts/kaynaklar/wikiart.mjs`). Uygulama önce eski WikiArt katkısını siler, bu yüzden tekrar uygulamak sonucu değiştirmez. `scripts/onbellek.mjs` de tam yeniden üretimin sonunda `data/wikiart.json`'ı aynı fonksiyonla (`wikiartiUygula`) ekler.
+141. **Kopyalar:** WikiArt eseri mevcut bir eserle başlık + yıl (±5) tutarsa (Türkçe başlık + İngilizce başlık dahil) yeni eser açılmaz, görsel o esere eklenir.
+    - İki yıl da bilinmeli. “Self-Portrait”, “Landscape” gibi genel başlıklar yılsız birleşmesin diye.
+    - Bir esere en çok bir WikiArt eseri katılır.
+    - Aynı başlık ve yılı taşıyan iki WikiArt kaydı da tek esere iner (ör. Arp *The Sun Recircled*). Bu yüzden “alınan” ile “yeni + birleşen” sayısı birkaç farklı olabilir.
+142. **Görsel önceliği:** müze taraması (100) > Google Art Project (80) > müze kaynaklı Commons (70) > diğer Commons (50) > **WikiArt (40)** > fotoğraf gibi (10) > elle kötü / şüpheli WikiArt (5). Dalí'nin *Büyük Mastürbatör*'ünde (1929) Commons'taki elle “kötü” işaretli fotoğrafın yerine WikiArt görseli ilk görsel oldu ve eser pekiştirmeye girdi.
+143. **Altyazı:** görüntüleyicide “Kaynak: WikiArt · eser sayfası” (WikiArt sayfasına bağlantı), pekiştirme cevap yaprağında da aynı satır. Ayarlar'daki künyeye “WikiArt” eklendi.
+    - Lisans: WikiArt'taki 20. yüzyıl eserleri telifli. Kişisel, ticari olmayan çalışma için kullanılıyor; görseller depoya konmuyor, yalnızca bağlantıları var.
+144. **Ana uğraşı resim olmayanlar:** Alberti'nin WikiArt'taki tek eseri bronz otoportre kabartması, Brunelleschi'ninki bir makine çizimi. İkisi `ana_ugras_disi` listesine eklendi (Ghiberti ve Cellini için verilen 43. kararla aynı gerekçe). Donatello WikiArt'ta eşleşti ama tür süzgecinden resim çıkmadı.
+145. **Bilinen sınır:** Arp'ın ve birkaç Man Ray eserinin WikiArt'ta malzemesi boş. Bunlar arasında boyalı ahşap kabartma ya da asamblaj olabilir, tür alanı “abstract/figurative” dediği için ayıklanamadı. Görüntüleyicideki “Görsel kötü” düğmesiyle tek tek çıkarılabilir.
+146. Testler: `tests/unit/wikiart.test.mjs` aşağıdakileri sınar. Uçtan uca testler WikiArt görsellerini fikstürle yanıtlar. SW 1.8.0.
+    - adres üretimi, yıl çözme, eşleşme (kesin/şüpheli/eşleşmez),
+    - resim süzgeci, aday sırası, sayfa seçimi, hedef seçimi, istek sınırlayıcı,
+    - birleştirme (kopya, yeniden uygulama, şüpheli), puan sırası ve uygulamadaki adres ve altyazı.
+
+### WikiArt: sanatçı başına sonuç
+
+Toplam: 13 sanatçıya 388 WikiArt eseri (yeni ya da mevcut esere katılan). Önbellekte artık 6762 eser var. “Pekiştirmede kullanılabilir” sütunu, WikiArt dahil toplam kullanılabilir eser sayısıdır (uygulama pekiştirmede bunların ilk 12'sini kullanır).
+
+| Sanatçı | Akım | WikiArt | Alınan | Yeni eser | Birleşen | Pekiştirmede kullanılabilir (toplam) | Not |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Phidias | Antik Yunan ve Roma | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Polykleitos | Antik Yunan ve Roma | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Myron | Antik Yunan ve Roma | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Hagesandros, Athenodoros ve Polydoros (Laokoon heykeltıraşları) | Antik Yunan ve Roma | atlandı | 0 | 0 | 0 | 0 | doğum yılı bilinmiyor, eşleştirilemez |
+| Praxiteles | Antik Yunan ve Roma | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Gislebertus | Romanesk | atlandı | 0 | 0 | 0 | 0 | doğum yılı bilinmiyor, eşleştirilemez |
+| Diotisalvi | Romanesk | atlandı | 0 | 0 | 0 | 0 | doğum yılı bilinmiyor, eşleştirilemez |
+| Nicola Pisano | Gotik | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Giovanni Pisano | Gotik | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Arnolfo di Cambio | Gotik | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Bonaventura Berlinghieri | Gotik | eşleşmedi | 0 | 0 | 0 | 5 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Domenico di Michelino | Erken Rönesans | eşleşmedi | 0 | 0 | 0 | 11 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Lorenzo Ghiberti | Erken Rönesans | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Donatello | Erken Rönesans | eşleşti (`donatello`) | 0 | 0 | 0 | 0 | resim türünde eser kalmadı |
+| Michelozzo | Erken Rönesans | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Leon Battista Alberti | Erken Rönesans | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Filippo Brunelleschi | Erken Rönesans | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Donato Bramante | Yüksek Rönesans | eşleşti (`donato-bramante`) | 9 | 9 | 0 | 14 |  |
+| Giambologna | Maniyerizm | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Benvenuto Cellini | Maniyerizm | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Andrea Palladio | Maniyerizm | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Carlo Maderno | İtalyan Barok ve Caravaggizm | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Gian Lorenzo Bernini | İtalyan Barok ve Caravaggizm | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Louis Le Vau | Fransız Klasisizmi | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| André Le Nôtre | Fransız Klasisizmi | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Jules Hardouin-Mansart | Fransız Klasisizmi | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| André-Charles Boulle | Fransız Klasisizmi | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Jacques-Germain Soufflot | Neoklasisizm | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Lord Burlington | Neoklasisizm | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Thomas Jefferson | Neoklasisizm | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Horatio Greenough | Neoklasisizm | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Antonio Canova | Neoklasisizm | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Charles Barry ve Augustus Pugin | Romantizm | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Charles Garnier | Akademizm ve Oryantalizm | eşleşmedi | 0 | 0 | 0 | 0 | WikiArt’ta ad + doğum yılı (±3) tutan sanatçı yok |
+| Auguste Rodin | Post-Empresyonizm | atlandı | 0 | 0 | 0 | 0 | ana uğraşı resim değil (eser_turleri.json) |
+| Emil Nolde | Ekspresyonizm | eşleşti (`emil-nolde`) | 24 | 24 | 0 | 25 |  |
+| Pablo Picasso | Kübizm | eşleşti (`pablo-picasso`) | 40 | 33 | 4 | 50 |  |
+| Marcel Duchamp | Dada | eşleşti (`marcel-duchamp`) | 40 | 36 | 3 | 40 |  |
+| Hannah Höch | Dada | eşleşti (`hannah-hoch`) | 12 | 12 | 0 | 14 |  |
+| Jean Arp | Dada | eşleşti (`jean-arp`) | 40 | 36 | 2 | 38 |  |
+| Man Ray | Dada | eşleşti (`man-ray`) | 33 | 32 | 1 | 34 |  |
+| Salvador Dalí | Sürrealizm | eşleşti (`salvador-dali`) | 40 | 39 | 1 | 40 |  |
+| Max Ernst | Sürrealizm | eşleşti (`max-ernst`) | 40 | 40 | 0 | 40 |  |
+| René Magritte | Sürrealizm | eşleşti (`rene-magritte`) | 40 | 37 | 2 | 39 |  |
+| Joan Miró | Sürrealizm | eşleşti (`joan-miro`) | 40 | 38 | 1 | 39 |  |
+| Francis Bacon | Savaş sonrası figürasyon | eşleşti (`francis-bacon`) | 40 | 36 | 2 | 38 |  |
