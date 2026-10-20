@@ -62,4 +62,10 @@ Tarifte (CLAUDE.md) açık bırakılan ya da yorum gerektiren yerlerde verdiğim
 
 `scripts/onbellek.mjs` çalıştırıldığında QID'i doğrulanamayan, bu yüzden yalnızca kurs eserleriyle görünen sanatçılar:
 
-<!-- LISTE -->
+- **Phidias:** Wikidata'da doğum tarihi MÖ 490 (yıl hassasiyetinde, “yaklaşık” nitelendirmesi yok), veride MÖ 480. Fark 10 yıl olduğu için eşleşmedi. 4 kurs eseriyle görünür.
+- **Tintoretto:** “Tintoretto” aramasının ilk 7 sonucunda asıl ressam (Jacopo Tintoretto) çıkmıyor, yalnızca oğlu Domenico gibi adaşlar var. Doğum yılları tutmadığı için hiçbiri kabul edilmedi. 2 kurs eseriyle görünür. (`ad_arama` içerik alanı olduğu için değiştirmedim. İstenirse içerik tarafında “Jacopo Tintoretto” yapılabilir.)
+- **Laokoon heykeltıraşları (Hagesandros, Athenodoros, Polydoros):** Wikidata'da arama sonucu yok ve kurs eseri de yok. Bu yüzden görseli yok, pekiştirmeye girmez; yalnızca Göz At'ta metniyle görünür.
+
+Ayrıca **Francis Bacon** doğru QID'e (Q154340) bağlandı, ama eserleri telif kapsamında olduğu için Wikidata'da görseli (P18) olan eseri yok. Kurs eseri de olmadığından pekiştirmeye girmez.
+
+Önbellek: 169 sanatçı, 5431 Wikidata eseri (sanatçı başına en fazla 40), üretim tarihi 2026-10-20.
