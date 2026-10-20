@@ -385,3 +385,27 @@ Toplam: 134 görünür sanatçıda 6381 eser. Kaynaklar: Wikidata 4713, kurs 171
 | Joan Miró · Wall of the Conferences and Exhibitions Palace of Madrid | `Palacio_de_Congresos_y_Exposiciones_(Madrid)_01_Kopie.jpg` | çıkarıldı | bina fotoğrafı · başka görseli yok |
 | Joan Miró · Mural for IBM | `Presentació_Mural_per_a_IBM.jpg` | pekiştirmede kullanılmaz | fotoğraf gibi: çerçeve, salon, eğik açı ya da siyah-beyaz · başka görseli yok |
 | Joan Miró · Dona | `Interior_Palau_del_Parlament_de_Catalunya_1.JPG` | çıkarıldı | salon fotoğrafı · başka görseli yok |
+
+## Aşama 3 · Günün sanatçısı (2026-10-20)
+
+60. **Seçim:** `js/gunun.js`. Havuz, resmi olan bütün sanatçılardır (kilitliler dahil, kurs ilerlemesinden bağımsız; şu an 134). Seçim deterministiktir:
+    - 2026-01-01'den bugüne kadar her gün için sabit bir karıştırma fonksiyonu, son 30 günde seçilmemiş adaylardan birini seçer.
+    - Aynı gün her cihazda ve her açılışta aynı sanatçı gelir; 30 gün içinde tekrar yoktur.
+    - Havuz değişirse (konu, sanatçı ya da görsel değişimi) dizilim de değişebilir. Bu, tek kullanıcılı uygulamada kabul edilebilir.
+61. **“Başka bir sanatçı”** rastgele, bugünkünden farklı bir sanatçının bölümünü (`#/gunun/<id>`) açar. Bu seçim kaydedilmez; ertesi gün yine takvime göre seçilen gelir.
+62. **Kurs durumu:** `kaynak: "ek"` ise “Kurs dışı”; konu işlendiyse “Kursta: Konu N”; değilse “Henüz kursta yok”.
+63. **Biyografiler** (`data/biyografiler.json`, `scripts/biyografi.mjs`): Wikidata site bağlantısından Türkçe Vikipedi bulunur.
+    - Önce maddenin giriş bölümü alınır. 120 kelimeden kısaysa maddenin devamından cümleler eklenir; kaynakça, dış bağlantılar ve notlar kesilir, bölüm başlıkları atılır.
+    - Metin 180 kelimede, cümle sonunda kısaltılır.
+    - 105 sanatçıda Türkçe madde kullanıldı. 29 sanatçıda Türkçe madde yoktu ya da 40 kelimeden kısaydı; bunlarda İngilizce girişi ben sade Türkçeye çevirdim (`dil: "en→tr"`). Kaynak çok kısaysa yalnızca kesin bilinen birkaç bilgi ekledim.
+    - Betik bu çevirileri korur; yeniden çalıştırınca silinmez.
+    - Tarifteki “REST page/summary” yerine MediaWiki `extracts` kullanıldı. Özet uç noktası yalnızca ilk paragrafı veriyor ve bu ortamda sık sık 429 döndürüyordu.
+    - Türkçe maddesi kısa olduğu için 120 kelimenin altında kalanlar: Angelica Kauffman (53), Jan van Eyck (58), William Hogarth (82), Duccio di Buoninsegna (83), Jean-Auguste-Dominique Ingres (87), Rogier van der Weyden (92), John Constable (96), Jacques-Louis David (100), Rosso Fiorentino (112). Türkçe kaynak tercih edildiği için bunlar çevriyle değiştirilmedi.
+    - Türkçe Vikipedi metinleri olduğu gibi alındı; kalitesi maddeye göre değişir. Qwen içerik denetimi bunlara da bakabilir.
+64. **Dönem bilgisi** (`data/akim_bilgi.json`): görünür 28 akımın her biri için 150–175 kelimelik metin yazdım. Her metin zaman ve yer, ana özellikler, önemli temsilciler ve önceki/sonraki akımla farkı kapsar. Emin olmadığım ayrıntıları yazmadım. Her kayıt `"kaynak": "Claude taslağı · Qwen denetimi bekliyor"` taşır ve bu ibare uygulamada da görünür.
+65. **Galeri:** sanatçının eserleri Wikidata site bağlantısına göre (en bilinenler önce) yatay kaydırılan büyük kartlarda gösterilir; her biri tam ekran açılır ve yakınlaştırılabilir. Başta en bilinen eser büyük gösterilir.
+66. **“Bu sanatçıyı pekiştirmeye ekle”:** sanatçı `ilerleme.ekSanatcilar` listesine girer, bu yüzden konusu işlenmemiş olsa da pekiştirmede açık sayılır.
+    - Sanatçı ve akım skorları kutu 0, bugün vadeli olarak başlatılır. Böylece günlük yeni sanatçı sınırına takılmadan bugünkü tekrarlara girer.
+    - Göz At'taki kilit durumu değişmez (o, kursu izler).
+    - Liste yedeğe girer.
+67. **Çevrimdışı:** iki yeni veri dosyası service worker'ın kabuk önbelleğinde. SW 1.3.0.

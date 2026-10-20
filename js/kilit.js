@@ -8,9 +8,11 @@ export function acikMi(sanatci, islenen) {
   return islenenKume(islenen).has(sanatci.konu);
 }
 
-export function acikSanatcilar(sanatcilar, islenen) {
+// ekIdler: konusu işlenmemiş ama elle pekiştirmeye eklenmiş sanatçılar ("Günün sanatçısı")
+export function acikSanatcilar(sanatcilar, islenen, ekIdler = []) {
   const k = islenenKume(islenen);
-  return sanatcilar.filter((s) => k.has(s.konu));
+  const ek = new Set(ekIdler);
+  return sanatcilar.filter((s) => k.has(s.konu) || ek.has(s.id));
 }
 
 // Her akım için: açık sanatçı sayısı, toplam ve henüz kapalıysa açılacağı en erken konu.

@@ -7,10 +7,11 @@ import { kartlariSec, Oturum, kategori } from './oturum.js';
 import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU } from './eserler.js';
 import { gorselUrl, secilenGorsel } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
+import { gununSanatcisi, baskaSanatci } from './gunun.js';
 import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, TEMALAR } from './depo.js';
 import { goruntuleyiciAc, kaynakYazisi } from './goruntuleyici.js';
 
-const SURUM = '1.2.0';
+const SURUM = '1.3.0';
 const TEMA_RENK = { sepya: '#F1E8D6', acik: '#FBFAF7', koyu: '#1D1A17' };
 const TEMA_AD = { sepya: 'Sepya', acik: 'Açık', koyu: 'Koyu' };
 const TAHMINI_GORSEL_KB = 180;
@@ -51,7 +52,7 @@ function islenen() {
 }
 
 function acikListe() {
-  return acikSanatcilar(d.sanatcilar, islenen());
+  return acikSanatcilar(d.sanatcilar, islenen(), d.ilerleme.ekSanatcilar || []);
 }
 
 function skor(id) {
@@ -110,6 +111,8 @@ const rotalar = [
   [/^#\/pekistir\/karisik$/, () => pekistir('karisik', null)],
   [/^#\/ilerleme$/, () => ilerlemeSayfasi()],
   [/^#\/ayarlar$/, ayarlarSayfasi],
+  [/^#\/gunun$/, () => gununSayfasi(null)],
+  [/^#\/gunun\/(.+)$/, (id) => gununSayfasi(id)],
 ];
 
 function yonlendir() {
@@ -205,9 +208,18 @@ function anaSayfa() {
   d.yigin = ['#/'];
   const ist = istatistik();
   const g = gunlukGuncelle(d.ilerleme, bugun());
+  const gs = d.harita.get(gununId());
   ciz(`
     <div class="baslik-blok"><h1 tabindex="-1">Sanat Atlası</h1>
     <p class="ikincil">Rönesans'tan 20. yüzyıla — kursla birlikte büyüyen atlas</p></div>
+    ${
+      gs
+        ? `<a class="gunun-kart" href="#/gunun" data-test="gunun-kart">
+      <span class="gunun-gorsel" data-gunun-gorsel></span>
+      <span class="gunun-yazi"><span class="etiket">Günün sanatçısı</span><b>${kacis(gs.ad)}</b>
+      <span class="ikincil kucuk">${kacis(yillarYaz(gs))} · ${kacis(gs.akim)}</span></span></a>`
+        : ''
+    }
     <section class="sayilar" aria-label="Özet">
       <div class="sayi"><b data-test="acik-sayi">${ist.acik}</b><span>açık sanatçı</span></div>
       <div class="sayi"><b>${ist.vade}</b><span>bugün tekrarı gelen</span></div>
@@ -221,7 +233,153 @@ function anaSayfa() {
       <a class="dugme" href="#/ilerleme">İlerleme <small>konular, doğruluk</small></a>
       <a class="dugme" href="#/ayarlar">Ayarlar</a>
     </nav>`);
+  if (gs) gununKartGorseli(gs);
 }
+
+// ---------- Günün sanatçısı ----------
+function gununId() {
+  return gununSanatcisi(
+    d.sanatcilar.map((s) => s.id),
+    bugun(),
+  );
+}
+
+// En bilinen eser: Wikidata site bağlantısı en çok olan (yoksa listedeki ilk), görseli kullanılabilir olan
+function enBilinen(eserler) {
+  const uygun = eserler.filter((e) => secilenGorsel(e, kotuler()) && e.pekistirme !== false);
+  const liste = uygun.length ? uygun : eserler;
+  return liste.reduce((en, e) => ((e.sl || 0) > (en.sl || 0) ? e : en), liste[0]);
+}
+
+function bilinirlikSirasi(eserler) {
+  return eserler
+    .map((e, i) => ({ e, i }))
+    .sort((a, b) => (b.e.sl || 0) - (a.e.sl || 0) || a.i - b.i)
+    .map((x) => x.e);
+}
+
+async function gununKartGorseli(s) {
+  const eserler = await sanatciEserleri(s);
+  const kutu = ekran.querySelector('[data-gunun-gorsel]');
+  if (!kutu || !eserler.length) return;
+  const e = enBilinen(eserler);
+  kutu.innerHTML = `<img alt="" src="${kacis(gorselUrl(secilenGorsel(e, kotuler()) || e.gorseller[0], 400))}">`;
+}
+
+let ekVeri = null;
+function ekVeriYukle() {
+  if (!ekVeri) {
+    ekVeri = Promise.all([
+      jsonGetir('data/biyografiler.json').catch(() => ({ sanatcilar: {} })),
+      jsonGetir('data/akim_bilgi.json').catch(() => ({ akimlar: {} })),
+    ]).then(([biyografiler, akimBilgi]) => ({ biyografiler, akimBilgi }));
+  }
+  return ekVeri;
+}
+
+function kursDurumu(s) {
+  if (s.kaynak === 'ek') return 'Kurs dışı';
+  return islenen().has(s.konu) ? `Kursta: Konu ${s.konu}` : 'Henüz kursta yok';
+}
+
+function pekistirmedeMi(s) {
+  return acikListe().some((x) => x.id === s.id);
+}
+
+async function gununSayfasi(id) {
+  const bugunku = gununId();
+  const s = d.harita.get(id || bugunku);
+  if (!s) return hataGoster(new Error('Sanatçı bulunamadı.'));
+  const { biyografiler, akimBilgi } = await ekVeriYukle();
+  const bio = biyografiler.sanatcilar[s.id];
+  const akim = akimBilgi.akimlar[s.akim];
+  const not = s.kurs_notu || s.anlatim;
+  ciz(`${ust(id && id !== bugunku ? 'Sanatçı' : 'Günün sanatçısı')}
+    <article class="gunun">
+      <div class="gunun-kahraman" data-kahraman><span class="ikincil">Yükleniyor…</span></div>
+      <h2 class="gunun-ad">${kacis(s.ad)}</h2>
+      <p class="kunye">${kacis(yillarYaz(s))} · <a class="rozet akim-rozet" href="#/akim/${encodeURIComponent(s.akim)}">${kacis(s.akim)}</a> <span class="rozet" data-test="kurs-durumu">${kacis(kursDurumu(s))}</span></p>
+      <section aria-labelledby="bio-b">
+        <h3 id="bio-b">Kısa biyografi</h3>
+        ${
+          bio
+            ? `<p class="okuma" data-test="biyografi">${kacis(bio.metin)}</p>
+          <p class="ikincil kucuk">Kaynak: <a href="${kacis(bio.kaynak.url)}" target="_blank" rel="noopener">${kacis(bio.kaynak.ad)}</a>${bio.dil === 'en→tr' ? ' (İngilizceden kısaltılarak çevrildi)' : ''}</p>`
+            : '<p class="ikincil">Bu sanatçı için biyografi henüz yok.</p>'
+        }
+        ${not ? `<div class="not-kutu"><p class="etiket">Notlarımdan</p><p class="okuma">${kacis(not)}</p></div>` : ''}
+      </section>
+      ${
+        akim
+          ? `<section class="donem-kutu" aria-labelledby="donem-b">
+        <h3 id="donem-b">Dönem hakkında · ${kacis(s.akim)}</h3>
+        <p class="ikincil kucuk">${kacis(akim.donem)} · ${kacis(akim.yer)}</p>
+        <p class="okuma" data-test="donem">${kacis(akim.metin)}</p>
+        <p class="ikincil kucuk">${kacis(akim.kaynak)}</p>
+      </section>`
+          : ''
+      }
+      <section aria-labelledby="eser-b">
+        <h3 id="eser-b">Eserleri incele</h3>
+        <div class="galeri" data-galeri><p class="ikincil">Eserler yükleniyor…</p></div>
+      </section>
+      <div class="menu">
+        ${
+          pekistirmedeMi(s)
+            ? '<p class="ikincil kucuk">Bu sanatçı pekiştirmede.</p>'
+            : `<button class="dugme birincil" type="button" data-pekistirmeye-ekle="${kacis(s.id)}">Bu sanatçıyı pekiştirmeye ekle</button>`
+        }
+        <a class="dugme" href="#/gunun/${encodeURIComponent(
+          baskaSanatci(
+            d.sanatcilar.map((x) => x.id),
+            s.id,
+            d.rng,
+          ),
+        )}" data-test="baska">Başka bir sanatçı</a>
+      </div>
+    </article>`);
+  const eserler = bilinirlikSirasi(await sanatciEserleri(s));
+  if (!location.hash.startsWith('#/gunun')) return;
+  const kahraman = ekran.querySelector('[data-kahraman]');
+  const galeri = ekran.querySelector('[data-galeri]');
+  if (!eserler.length) {
+    kahraman.remove();
+    galeri.innerHTML = '<p class="ikincil">Bu sanatçı için doğrulanmış görsel bulunamadı.</p>';
+    return;
+  }
+  const ilk = enBilinen(eserler);
+  kahraman.innerHTML = `<button class="kahraman-dugme" type="button" data-galeri-eser="${eserler.indexOf(ilk)}" aria-label="${kacis(ilk.baslik)} — büyüt">
+    <img alt="" src="${kacis(gorselUrl(secilenGorsel(ilk, kotuler()) || ilk.gorseller[0], 800))}"></button>`;
+  galeri.innerHTML = eserler
+    .map(
+      (e, i) => `<button class="galeri-eser" type="button" data-galeri-eser="${i}">
+      <span class="galeri-kare">${kucukGorsel(e)}</span>
+      <span class="galeri-etiket"><i>${kacis(e.baslik)}</i><span class="ikincil">${[e.tarih, e.muze].filter(Boolean).map(kacis).join(' · ')}</span></span></button>`,
+    )
+    .join('');
+  const ac = (ev) => {
+    const b = ev.target.closest('[data-galeri-eser]');
+    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.galeriEser), ...gorselTercihi() });
+  };
+  galeri.addEventListener('click', ac);
+  kahraman.addEventListener('click', ac);
+}
+
+// Kilitli olsa bile sanatçıyı tekrar sırasına al: bugün vadeli, kutu 0
+ekran.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-pekistirmeye-ekle]');
+  if (!b) return;
+  const id = b.dataset.pekistirmeyeEkle;
+  const ek = (d.ilerleme.ekSanatcilar ||= []);
+  if (!ek.includes(id)) ek.push(id);
+  const sk = skor(id);
+  if (!sk.sanatci) sk.sanatci = { kutu: 0, sonraki: bugun(), dogru: 0, yanlis: 0, son: bugun() };
+  if (!sk.akim) sk.akim = { kutu: 0, sonraki: bugun(), dogru: 0, yanlis: 0, son: bugun() };
+  d.oturum = null;
+  kaydet();
+  b.replaceWith(Object.assign(document.createElement('p'), { className: 'ikincil kucuk', textContent: 'Eklendi: bu sanatçı bugünkü tekrarlarda.' }));
+  bildir(`${d.harita.get(id).ad} pekiştirmeye eklendi.`);
+});
 
 // ---------- Göz At ----------
 function gozAt() {
@@ -275,7 +433,7 @@ async function sanatciSayfasi(id) {
     <p class="kunye">${kacis(yillarYaz(s))} · <a href="#/akim/${encodeURIComponent(s.akim)}">${kacis(s.akim)}</a></p>
     <p class="kunye kucuk">Konu ${s.konu}${konu ? ` · ${kacis(konu.baslik)}` : ''}
       ${s.kaynak === 'ek' ? ' <span class="rozet">kurs dışı</span>' : ''}${s.not_cikarilmadi ? ' <span class="rozet">taslak</span>' : ''}</p>
-    ${acik ? '' : `<p class="mesaj">Bu sanatçı Konu ${s.konu} işlenince pekiştirmeye girer.</p>`}
+    ${acik || pekistirmedeMi(s) ? '' : `<p class="mesaj">Bu sanatçı Konu ${s.konu} işlenince pekiştirmeye girer.</p>`}
     ${metin}
     ${s.taninma ? `<h2>Nasıl tanırım?</h2><p class="okuma">${kacis(s.taninma)}</p>` : ''}
     ${onemli}${emin}

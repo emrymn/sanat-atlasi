@@ -9,10 +9,14 @@ test('yedek → geri yükleme gidiş-dönüşü kayıpsız', () => {
   i.skorlar.giotto = { sanatci: cevapla(yeniSkor(), true, '2026-10-19'), akim: cevapla(yeniSkor(), false, '2026-10-19') };
   i.ayarlar.tema = 'koyu';
   i.ayarlar.gunlukKart = 30;
+  i.ekSanatcilar = ['claude-monet'];
+  i.kotuGorseller = { 'q:Q1': ['c:a.jpg'] };
   const geri = yedekCoz(yedekMetni(i));
   assert.deepEqual(geri.islenen, [1, 2, 3]);
   assert.deepEqual(geri.skorlar, i.skorlar);
   assert.deepEqual(geri.ayarlar, { gunlukKart: 30, tema: 'koyu' });
+  assert.deepEqual(geri.ekSanatcilar, ['claude-monet']);
+  assert.deepEqual(geri.kotuGorseller, { 'q:Q1': ['c:a.jpg'] });
 });
 
 test('bozuk yedekler anlaşılır hata verir', () => {
