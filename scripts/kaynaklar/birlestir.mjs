@@ -120,7 +120,9 @@ export function birlestir({ kurs = [], wd = [], muzeler = [], commons = [], kara
       eserler.find((e) => (e.qid && e.qid === w.qid) || e.gorseller.some((g) => g.k === 'commons' && dosyalar.includes(dosyaNormal(g.d).toLowerCase()))) ||
       // Wikidata öğesi bilinmeyen kurs eseri: başlıkla eşleşir (ör. aynı resmin başka bir fotoğrafı)
       eserler.find((e) => e.kurs && !e.qid && ayniEserMi(e, w));
-    const gorseller = w.dosyalar.map((d) => ({ k: 'commons', d: dosyaNormal(d), l: '' }));
+    // Boş dosya adları (P18 "bilinmeyen değer" kırıntıları) alınmaz
+    const gorseller = w.dosyalar.map((d) => ({ k: 'commons', d: dosyaNormal(d), l: '' })).filter((g) => g.d);
+    if (!gorseller.length && !hedef) continue;
     if (hedef) {
       hedef.qid = hedef.qid || w.qid;
       hedef.baslikEn = hedef.baslikEn || w.baslikEn;

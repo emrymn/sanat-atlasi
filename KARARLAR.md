@@ -246,7 +246,7 @@ Daha önce doğrulanamayan iki sanatçı Emre'nin isteğiyle düzeltildi (2026-1
 58. **Ham yanıt önbelleği** `scripts/.ham/` altında tutulur (git'e girmez). Yeniden üretim birkaç dakikada, ağa gitmeden biter.
 59. **Giambologna ve Soufflot** müzelerden yalnızca birer çizim kaldığı için (bir heykel etüdü ve bir kilise çizimi) “ana uğraşı resim değil” listesine eklendi.
 
-Toplam: 134 görünür sanatçıda 6381 eser. Kaynaklar: Wikidata 4713, kurs 171, Met 1013, AIC 396, Cleveland 186, NGA 341, Commons kategorisi 6; bir eser birden çok kaynakta olabilir.
+Toplam: 134 görünür sanatçıda 6380 eser. Kaynaklar: Wikidata 4712, kurs 171, Met 1013, AIC 396, Cleveland 186, NGA 341, Commons kategorisi 6; bir eser birden çok kaynakta olabilir.
 
 ### Sanatçı başına eser sayısı
 
@@ -277,7 +277,7 @@ Toplam: 134 görünür sanatçıda 6381 eser. Kaynaklar: Wikidata 4713, kurs 171
 - **Ekspresyonizm:** Edvard Munch 60 · Ernst Ludwig Kirchner 60 · Emil Nolde 1 · Wassily Kandinsky 46 · Franz Marc 53
 - **Kübizm:** Pablo Picasso 16
 - **Dada:** Marcel Duchamp 6 (2 pekiştirmede) · Hannah Höch 5 (2 pekiştirmede) · Man Ray 2
-- **Sürrealizm:** Salvador Dalí 5 (0 pekiştirmede) · René Magritte 2 (1 pekiştirmede) · Joan Miró 4 (0 pekiştirmede)
+- **Sürrealizm:** Salvador Dalí 5 (0 pekiştirmede) · René Magritte 1 (0 pekiştirmede) · Joan Miró 4 (0 pekiştirmede)
 
 ### Gözle denetlenen görseller
 
@@ -409,3 +409,31 @@ Toplam: 134 görünür sanatçıda 6381 eser. Kaynaklar: Wikidata 4713, kurs 171
     - Göz At'taki kilit durumu değişmez (o, kursu izler).
     - Liste yedeğe girer.
 67. **Çevrimdışı:** iki yeni veri dosyası service worker'ın kabuk önbelleğinde. SW 1.3.0.
+
+## Aşama 4 · “Müze kataloğu” tasarımı (2026-10-20)
+
+İşlevler değişmedi; yalnızca görünüm, yerleşim ve birkaç görüntü hatası düzeltildi.
+
+68. **Akım renkleri:** `data/akimlar.json` kayıtlarına `renk` alanı eklendi (istenen renkler; istekte adı geçmeyen akımlara aynı aileden, komşu akımlardan ayrışan tonlar verdim). Renk; zaman çizelgesi bandında, rozet noktasında ve kenarında, not/dönem kutusu kenarında, doğruluk çubuklarında ve görsel yüklenirken paspartu zemininde kullanılır.
+69. **Metinde renk yalnızca yeterli kontrastla:** `js/tasarim.js` WCAG kontrast oranını hesaplar. Akım rengi bir başlıkta ancak temanın yüzeyine karşı ≥ 4,5 ise kullanılır; değilse metin mürekkep rengindedir (koyu temada koyu akım renkleri bu yüzden metne hiç geçmez). Rozet yazısı her zaman mürekkep rengidir; renk yalnızca noktada ve kenarda.
+70. **Kâğıt dokusu:** dışarıdan görsel indirmemek için SVG `feTurbulence` gürültüsü veri URI'si olarak CSS'te; çok düşük opaklıkta, her temada ayrı ton.
+71. **Yazı tipleri:** başlıklar Cormorant Garamond 600/700, gövde Literata 17,5 px, küçük etiketler sistem sans, büyük harf ve harf aralıklı. Google Fonts `media=print onload` ile engellemeden yüklenir; yoksa Georgia/Iowan Old Style'a düşer.
+72. **Paspartu:** her eser 10 px açık paspartu, 1 px koyu çerçeve ve yumuşak gölge içinde. Koyu temada (“akşam müzesi”) paspartu koyu gri (#3a3530). Görsel yüklenene kadar zemin akım rengindedir.
+73. **Müze etiketi içeriği bağlama göre:** sanatçı sayfasında ad zaten başlıkta olduğu için etikette “yıl · müze”; pekiştirmede cevaptan sonra “sanatçı · yıl · akım”. Pekiştirmede cevap verilmeden önce kart kenarı ve yükleme zemini nötrdür; akım rengi ipucu vermesin diye renk ancak cevaptan sonra görünür.
+74. **Cevap sonrası:** kart 0,24 sn hafifçe döner ve müze etiketi belirir; seçeneklerde doğru yeşil, yanlış kırmızı, ikisi de ince çizgili ✓/× SVG simgesiyle (yalnızca renge dayanılmasın diye). Üstte ince ilerleme çizgisi.
+75. **Simgeler:** ‹ › ✕ ✓ ✗ karakterleri ince çizgili SVG simgelerle değiştirildi (`ikon()`); emoji yok.
+76. **Hareket:** geçişler 150–250 ms; `prefers-reduced-motion` açıkken tüm animasyon ve geçişler kapanır.
+77. **Göz At:** dikey zaman çizelgesi; her akımda sol renk bandı, yüzyıl aralığı (açık sanatçıların doğum+20 … ölüm yıllarından), sayı ve 3 küçük önizleme. Kilitli akımlar soluk ve “Konu N'de açılır”.
+
+### Ekran görüntüleriyle öz-eleştiri (390×844, sepya ve koyu)
+
+Her ekranın görüntüsü alındı (ana sayfa, Günün sanatçısı, Göz At, akım, sanatçı, pekiştirme soru/cevap, İlerleme, Ayarlar, görüntüleyici). Birinci turda bulunan ve düzeltilenler:
+
+78. Ana sayfadaki “Bugün tekrar yok; yeni sanatçılarla devam et” cümlesi tek kelimeyi alt satıra bırakıyordu → metin kısaltıldı ve başlıklarla birlikte `text-wrap: balance` eklendi.
+79. Göz At önizlemelerinde boş renkli kareler: önizleme ilk 3 sanatçıdan seçiliyordu, eseri olmayan mimar/heykeltıraşlar (Ghiberti, Donatello…) boş kalıyordu → eseri olan ilk 3 sanatçı alınıyor.
+80. Miró'nun temsilî görseli bir QR kod sergi fotoğrafıydı. `enBilinen` artık yalnızca uygun görseli olan eserlerden seçer; hiçbiri uygun değilse temsilî görsel (kahraman, küçük kare, önizleme) gösterilmez. Galeri ve eser listesi değişmedi.
+81. Magritte'in “The Human Condition” eseri boş dosya adlı bir görselle önbellekte kalmıştı (Wikidata'da görsel “bilinmeyen değer”); pekiştirmede kırık görsel çıkabilirdi. Birleştirme betiği boş dosya adlarını artık almıyor; önbellekten bu eser silindi (6380 eser).
+82. Günün sanatçısı biyografilerinde Vikipedi şablon kırıntıları vardı (Kandinsky “U. 4 Aralık] 1866…”, van Gogh “(telaffuz:”, Munch/Rembrandt IPA, El Greco “,,”, Zurbarán “) hakkında”, Bronzino'da eser listesi). `scripts/kaynaklar/biyografi_duzelt.mjs` elle düzeltmeleri tutar ve `biyografi.mjs` her çalıştırmada uygular; 11 biyografi düzeltildi.
+83. İlerleme'de uzun bölüm başlıklarında (x/y) sayacı sağ sütuna kayıyordu → başlıkla aynı satır akışına alındı.
+84. İkinci turda bu sorunlar görülmedi. Bilinen küçük nokta: Limbourg “March” eserinin yılı Wikidata'da 1440 (sonradan tamamlanan minyatür); veri olduğu gibi bırakıldı.
+85. SW 1.4.0.
