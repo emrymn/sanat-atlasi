@@ -437,3 +437,67 @@ Her ekranın görüntüsü alındı (ana sayfa, Günün sanatçısı, Göz At, a
 83. İlerleme'de uzun bölüm başlıklarında (x/y) sayacı sağ sütuna kayıyordu → başlıkla aynı satır akışına alındı.
 84. İkinci turda bu sorunlar görülmedi. Bilinen küçük nokta: Limbourg “March” eserinin yılı Wikidata'da 1440 (sonradan tamamlanan minyatür); veri olduğu gibi bırakıldı.
 85. SW 1.4.0.
+
+## Tasarım A · “Gece galerisi” (2026-10-20)
+
+Kaynak: `tasarim-A/TASARIM.md` ve üç mockup (`A-Bugun`, `A-Sanatci`, `A-Pekistir`). İstekte `referans/tasarim-A/` yazıyordu; dosyalar deponun kökünde, `tasarim-A/` altında bulundu ve oradan okundu. `referans/v0/` içindeki TabBar, ArtistScreen ve MovementTimeline yalnızca yapı için örnek alındı. Renk, yazı tipi ve görünüm tamamen TASARIM.md'den geliyor. Bu bölüm, Aşama 4'teki görünüm kararlarının (68–77) yerine geçer. İşlevler, veri ve depolama aynı kaldı.
+
+86. **Tema token'ları:** Bütün renkler `:root[data-tema=…]` altında CSS değişkeni olarak tanımlı (`--bg`, `--raised`, `--ink`, `--ink-2`, `--ink-3`, `--gold`, `--gold-hi`, `--frame`, `--hair*`, `--right*`, `--wrong*`). Mockup'ta tek seferlik geçen tonlar da token oldu: etiket yazısı `#D9CDB8`, okuma metni `#E3D8C4`, soluk seçenek `#7A6F60`.
+87. **Gece varsayılan tema.** Sepya ve Açık, Ayarlar'da seçenek olarak kaldı ve aynı yerleşimi kullanıyor. Bu temalarda spot ışığı yerine yumuşak kâğıt gölgesi var; renkler eski paletten. Koyu tema kaldırıldı, çünkü Gece onun yerini alıyor. İlerleme nesnesi sürüm 2 oldu: sürüm 1 kayıtlarında Sepya (eski varsayılan) ve Koyu **bir kez** Gece'ye geçer. Açık seçimi korunur, geçişten sonra Sepya'ya dönmek de kalıcıdır. Aynı kural ilk boyamadan önce `index.html` içinde de uygulanır, böylece tema yanıp sönmez.
+88. **Yazı tipleri:** Cormorant Garamond (500, 600, italik 500) ve Figtree (400, 500, 600) kullanılıyor; Literata kaldırıldı. Okuma metinleri (biyografi, dönem, “Nasıl tanırım?”) Cormorant 19 px, “Notlarımdan” bunun italiği. CLAUDE.md'deki “gövde ≥ 17 px” kuralı okuma metinlerinde korunuyor. Arayüz etiketleri ise mockup ölçülerinde (10,5–16 px).
+89. **Durum çubuğu:** `apple-mobile-web-app-status-bar-style` artık `black-translucent`. Sayfa saat/pil çubuğunun altına uzanır ve her yerde `env(safe-area-inset-*)` kullanılır; sahte durum çubuğu yok. Sepya ve Açık'ta durum çubuğunun beyaz yazısı okunsun diye üstte, güvenli alan yüksekliğinde koyu bir şerit var. iOS bu ayarı ana ekrana eklerken okuduğu için README'ye yeniden ekleme notu yazıldı (önce yedek alınmalı).
+90. **Akım renkleri** artık yalnızca küçük bir noktada kullanılıyor: Göz At, Pekiştir listesi, İlerleme doğruluk satırları. Bantlar, rozet kenarları ve çubuklar altın rengi. TASARIM.md “yeni görsel fikir yok, altın vurgular” diyor.
+91. **Sekme çubuğu** (Bugün / Göz At / Pekiştir / İlerleme), v0'daki gibi 58 px + güvenli alan yüksekliğinde. Arka plan `--bg` .92, üstte saç çizgisi; mockup'taki çizgi ikonlar kullanıldı, etkin sekme altın ve 1,6 çizgili. Pekiştir kartında gizlenir.
+    - Göz At'ın alt ekranları (akım, sanatçı) Göz At sekmesinde, Günün sanatçısı Bugün sekmesinde, Ayarlar İlerleme sekmesinde görünür.
+    - Ayarlar'a İlerleme başlığındaki dişliden ve Bugün'ün alt satırındaki bağlantıdan gidilir.
+    - Pekiştir sekmesi yeni bir **Pekiştir** ekranını (`#/pekistir`) açar: üstte Karışık düğmesi, altında “Döneme göre” listesi. `#/pekistir/donem` de aynı ekranı açar.
+92. **Bugün:**
+    - Üstte “Bugün” etiketi ve “20 Ekim, Salı” tarihi; sağdaki hap “N tekrar bekliyor” ya da “Bugün tekrar yok” der.
+    - Spot ışıklı sahnede Günün sanatçısının en bilinen eseri, altında duvar etiketi: yıllar · akım · Konu N (kurs dışı sanatçıda “Kurs dışı”) ve eserin adı. Kart dokununca Günün sanatçısı bölümünü açar.
+    - **Son çalıştıkların** için yeni bir alan eklendi: `ilerleme.sonCalisilanlar`. En yeni başta, en fazla 12 kayıt tutulur. Bir kartın ilk sorusu cevaplanınca güncellenir ve yedeğe girer.
+    - Kısa sanatçı adı verisi olmadığı için tam ad yazılıyor; ad, resmin genişliğinde iki satıra kırılır. “Tümü” Göz At'ı açar.
+    - CLAUDE.md'deki sayılar (açık sanatçı, doğru oranı, bugünkü kart) altta sakin bir satırda kalıyor. Ekranda görünmeyen bir “Sanat Atlası” başlığı erişilebilirlik için duruyor.
+93. **Geniş resim kuralı:** çerçevedeki resmin genişliği `min(kullanılabilir genişlik, sahne yüksekliği × oran)`. Bunu CSS sağlıyor: `max-width` + `max-height`, `width/height: auto`, `object-fit: contain`. Pekiştir'de ve görüntüleyicide resim **hiç kırpılmaz**. Kahraman görseli ve küçük resimler mockup'taki gibi kırpılabilir. Görsel yüklenene kadar çerçeve sabit boyutlu bir kutu tutar, yüklenince resim 0,2 sn'de görünür.
+94. **Sanatçı sayfası:**
+    - Kenardan kenara 350 px kahraman (dokununca görüntüleyici açılır); ad bunun 46 px üstüne biner.
+    - Künye: yıllar · akım (bağlantı) · altın renkli “Konu N”.
+    - “Notlarımdan” bölümü `kurs_notu` gösterir, ek sanatçıda `anlatim`. Varsa “Nasıl tanırım?”, ardından “Dönemi” çizelgesi.
+    - Kursun İngilizce konu başlığı satırı mockup'ta olmadığı için kaldırıldı.
+    - “Eserleri” çerçeveli küçük resimlerden oluşan yatay bir şerit. **Hepsini gör (N)** aynı eserleri iki sütunlu galeriye çevirir (bu kırpmasız, var olan galeri), tekrar dokununca şeride döner. Her eser tam ekran görüntüleyicide açılır.
+95. **Dönem çizelgesi** (v0'daki MovementTimeline): önceki ← bu akım → sonraki. Komşular Göz At'ta görünen akımların zaman sırasından gelir (`akimlar.json` `sira`). Ortadaki parça kalın altın çizgi, yanlar saç çizgisi. Adlar ilgili akımın sayfasına bağlanır. Sanatçı, Günün sanatçısı ve akım sayfalarında kullanılır.
+96. **Pekiştir kartı:**
+    - Sekme çubuğu yok. Üstte kapat düğmesi, “Pekiştir · Karışık · i / n” ve 2 px altın ilerleme çizgisi; ardından spot ışıklı resim, “Soru 1 / 2” etiketi, Cormorant 32 px soru ve A–D harfli dört seçenek.
+    - Karışık kartta iki soru artık **sırayla** geliyor (önceden aynı ekrandaydı). Cevaptan sonra doğru seçenek yeşil ✓, seçilen yanlış kırmızı ×, kalanlar soluk görünür.
+    - Alttan gelen yaprakta sonuç satırı, bilgi, ipucu ve kaynak satırı, altında “Sanatçı sayfası” ve “Hangi akım? →” / “Sonraki kart →” düğmeleri var. Yanlışta sonuç satırı “Yanlış · bu kart 3–5 kart sonra yine gelecek” der.
+    - **Spoiler kuralı:**
+      - 1. sorudan sonra yalnızca sanatçı ve eser gösterilir.
+      - İpucu (`taninma` / `kurs_notu` / `anlatim`) akımın adını ya da kökünü içeriyorsa (ör. “klasik” → Fransız Klasisizmi, “Hollandalı” → Hollanda Altın Çağı) 1. soruda gizlenir, 2. soruda gösterilir.
+      - 2. sorudan sonra akım, sanatçının yılları ve “Komşu akımlar: …” gösterilir.
+    - Akım doğru ama sanatçı yanlışsa sonuç “Doğru · sanatçı yanlıştı, bu kart 3–5 kart sonra yine gelecek” olur, çünkü Leitner kartı yine geri getirir.
+    - Döneme göre kartında tek soru var (“Soru 1 / 1”).
+    - Seçeneklerdeki yıllar mockup'a uymak için kaldırıldı; yıllar yaprakta görünüyor. Kaynak/lisans satırı CLAUDE.md gereği yaprakta duruyor.
+    - Yaprak açıkken sayfanın altına yaprak kadar boşluk eklenir ve işaretli seçenekler yaprağın üstünde kalacak şekilde sayfa kaydırılır. Aşama 4'teki kart çevirme animasyonu kaldırıldı.
+97. **Çizilmemiş ekranlar** (Göz At, akım, Pekiştir menüsü, İlerleme, Ayarlar, görüntüleyici) aynı parçalarla yapıldı: altın etiketler, Cormorant başlıklar, saç çizgisi ayraçlar, çerçeveli küçük resimler, altın anahtar ve çubuklar, 12 px köşeli düğmeler. **Görüntüleyici** her temada Gece renklerini kullanır; eser karanlık zeminde en iyi görünüyor.
+98. **Testler:**
+    - Karışık test artık iki adımı izliyor: 1. soruyu cevapla, `[data-ikinci]` ile geç, 2. soruyu cevapla. Yedek testi Koyu yerine Sepya seçiyor ve ilk açılışta Gece'yi bekliyor.
+    - Yeni birim testleri: tema geçişi ve “son çalışılanlar”.
+    - Yeni `tests/e2e/ekran.spec.js`: 390×844'te Bugün, Sanatçı, Pekiştir (soru, 1. cevap, 2. cevap) ve çizilmemiş ekranların görüntülerini `test-results/ekran/` altına yazar. CI'da fikstürle çalışır; `EKRAN_GERCEK=1` ile gerçek görseller ve yazı tipleri yüklenir.
+99. **Mockup karşılaştırması** (gerçek görsellerle 390×844). Mockup'ın satır içi stilleriyle aynı olanlar:
+    - Kenar boşluğu 22 px.
+    - Sahne 300/290 px, resim yüksekliği 236/242 px.
+    - Çerçeve 6 px ve küçük resim çerçevesi 4 px; altın halka .45/.35.
+    - Etiketler 10,5–11 px, harf aralığı .18–.22em.
+    - Ad 38/44 px, soru 32 px, seçenek 50 px ve 12 px köşe.
+    - Yaprak `--raised` ve .3 saç çizgisi; düğmeler 46 px.
+    - Sekme çubuğu 58 px + güvenli alan.
+
+    Bilinçli farklar:
+    - Mockup 47 px'lik durum çubuğunu da çiziyor. Playwright'ta güvenli alan 0 olduğu için görüntülerde içerik ~46 px daha yukarıda; telefonda aynı hizaya gelir.
+    - Örnek sayılar (12 tekrar, 4 / 20) gerçek durumdan geliyor.
+    - Mockup'taki sabit resim boyutları yerine gerçek en-boy oranı kullanılıyor: geniş Kandinsky daha alçak bir çerçevede.
+100. **Öz-eleştiri turunda düzeltilenler:**
+    - Son çalışılanlar ve eser şeridindeki çerçeveler resimden genişti (esnek kutu esnemesi) → çerçeve resmi sarıyor, yazı resim genişliğinde kırılıyor.
+    - Günün sanatçısında “Kurs dışı” iki kez yazıyordu → yalnızca hapta.
+    - Sanatçı sayfasındaki İngilizce konu başlığı satırı kaldırıldı.
+    - Cevap yaprağı işaretli seçenekleri örtüyordu → otomatik kaydırma eklendi.
+101. SW 1.5.0; manifest `theme_color` / `background_color` #15120F.

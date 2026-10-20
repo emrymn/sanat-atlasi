@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="tr" data-tema="sepya">
+<html lang="tr" data-tema="gece">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Sanat Atlası</title>
     <meta name="description" content="Kişisel sanat tarihi çalışma uygulaması" />
-    <meta name="theme-color" content="#F1E8D6" />
+    <meta name="theme-color" content="#15120F" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Atlas" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="icons/icon-192.png" type="image/png" />
@@ -18,7 +18,7 @@
     <!-- yazı tipi çizimi engellemesin: önce print olarak yükle, sonra etkinleştir -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;500;600&display=swap"
       crossorigin
       media="print"
       onload="this.media = 'all'"
@@ -27,7 +27,10 @@
     <script>
       // Temayı ilk boyamadan önce uygula (yanıp sönmeyi önler)
       try {
-        var t = JSON.parse(localStorage.getItem('sanat-atlasi:ilerleme') || '{}').ayarlar.tema;
+        var i = JSON.parse(localStorage.getItem('sanat-atlasi:ilerleme') || '{}');
+        var t = i.ayarlar.tema;
+        // sürüm 1: Sepya (eski varsayılan) ve Koyu bir kez Gece'ye geçer (js/depo.js ile aynı kural)
+        if (!(i.surum >= 2) && (t === 'sepya' || t === 'koyu')) t = 'gece';
         if (t) document.documentElement.setAttribute('data-tema', t);
       } catch (e) {}
     </script>
@@ -35,6 +38,7 @@
   </head>
   <body>
     <main id="uygulama" tabindex="-1"><p class="ikincil" style="padding-top: 40vh; text-align: center">Yükleniyor…</p></main>
+    <nav id="sekmeler" class="sekmeler" aria-label="Ana gezinme" hidden></nav>
     <div id="bildirim" role="status" aria-live="polite" hidden></div>
     <noscript>Sanat Atlası JavaScript gerektirir.</noscript>
   </body>

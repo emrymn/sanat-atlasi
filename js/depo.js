@@ -3,19 +3,22 @@ import { idbAl, idbKoy } from './idb.js';
 import { bugunStr } from './leitner.js';
 
 export const ANAHTAR = 'sanat-atlasi:ilerleme';
-export const SURUM = 1;
-export const TEMALAR = ['sepya', 'acik', 'koyu'];
+// 2: "Gece galerisi" teması varsayılan oldu (eski varsayılan Sepya ve kaldırılan Koyu bir kez Gece'ye geçer)
+export const SURUM = 2;
+export const TEMALAR = ['gece', 'sepya', 'acik'];
+export const VARSAYILAN_TEMA = 'gece';
 
 export function varsayilanIlerleme(islenen = []) {
   return {
     surum: SURUM,
     islenen: islenen.slice(),
-    ayarlar: { gunlukKart: 20, tema: 'sepya' },
+    ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA },
     skorlar: {},
     gunluk: { tarih: bugunStr(), yeni: 0, kart: 0, yeniIdler: [] },
     sonEserler: {},
     kotuGorseller: {},
     ekSanatcilar: [],
+    sonCalisilanlar: [],
     olusturma: new Date().toISOString(),
   };
 }
@@ -43,7 +46,9 @@ export function ilerlemeDogrula(nesne) {
   }
   const t = varsayilanIlerleme();
   const ayarlar = { ...t.ayarlar, ...(v.ayarlar || {}) };
-  if (!TEMALAR.includes(ayarlar.tema)) ayarlar.tema = 'sepya';
+  // Sürüm 1'de varsayılan Sepya'ydı ve Koyu tema vardı: ikisi de bir kez Gece'ye geçer (Açık seçimi korunur)
+  if (!(v.surum >= 2) && (ayarlar.tema === 'sepya' || ayarlar.tema === 'koyu')) ayarlar.tema = VARSAYILAN_TEMA;
+  if (!TEMALAR.includes(ayarlar.tema)) ayarlar.tema = VARSAYILAN_TEMA;
   ayarlar.gunlukKart = Math.min(100, Math.max(5, parseInt(ayarlar.gunlukKart, 10) || 20));
   return {
     ...t,
@@ -57,8 +62,15 @@ export function ilerlemeDogrula(nesne) {
     sonEserler: v.sonEserler && typeof v.sonEserler === 'object' ? v.sonEserler : {},
     kotuGorseller: kotuGorselleriDogrula(v.kotuGorseller),
     ekSanatcilar: Array.isArray(v.ekSanatcilar) ? [...new Set(v.ekSanatcilar.filter((x) => typeof x === 'string'))] : [],
+    sonCalisilanlar: Array.isArray(v.sonCalisilanlar) ? [...new Set(v.sonCalisilanlar.filter((x) => typeof x === 'string'))].slice(0, SON_CALISILAN) : [],
     olusturma: v.olusturma || t.olusturma,
   };
+}
+
+// Ana sayfadaki "Son çalıştıkların" için en son pekiştirilen sanatçılar (en yeni başta)
+export const SON_CALISILAN = 12;
+export function sonCalisilanEkle(ilerleme, id) {
+  ilerleme.sonCalisilanlar = [id, ...(ilerleme.sonCalisilanlar || []).filter((x) => x !== id)].slice(0, SON_CALISILAN);
 }
 
 // { eserAnahtarı: [görselAnahtarı, …] } — geçersiz kayıtlar atılır
