@@ -75,4 +75,5 @@ test('eser sorgusu P170 ve resim süzgecini kullanır, QID doğrular', () => {
   assert.match(q, /LIMIT 40/);
   assert.throws(() => eserSorgusu('Q1} ?x ?y {'));
   assert.equal(dosyaAdiAyikla('Ay%C5%9Fe.jpg'), 'Ayşe.jpg');
+  assert.equal(dosyaAdiAyikla('http://www.wikidata.org/.well-known/genid/abc123'), null, 'bilinmeyen değer');
 });

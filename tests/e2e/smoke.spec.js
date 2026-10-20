@@ -41,6 +41,27 @@ test('ana sayfa → Göz At → sanatçı → eser tam ekran', async ({ page }) 
   await expect(gor).toHaveCount(0);
 });
 
+test('Görsel kötü: sıradaki görsele geçer ve tercih saklanır', async ({ page }) => {
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await expect(page.locator('.eser').first()).toBeVisible();
+  // birden fazla görseli olan ilk eser
+  const i = await page.evaluate(() => window.__atlas.sonEserListesi.findIndex((e) => e.gorseller.length > 1));
+  expect(i).toBeGreaterThanOrEqual(0);
+  await page.locator('.eser').nth(i).click();
+  const gor = page.locator('.gor');
+  const ilk = await gor.locator('.gor-resim').getAttribute('src');
+  await gor.getByRole('button', { name: 'Görsel kötü' }).click();
+  await expect(gor.locator('.gor-mesaj')).toContainText('Başka bir görsele');
+  await expect(gor.locator('.gor-resim')).not.toHaveAttribute('src', ilk);
+  const ilerleme = await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:ilerleme')));
+  expect(Object.values(ilerleme.kotuGorseller).flat().length).toBe(1);
+  // yeniden açınca aynı tercih geçerli
+  await gor.getByRole('button', { name: 'Kapat' }).click();
+  await page.reload();
+  await page.locator('.eser').nth(i).click();
+  await expect(page.locator('.gor .gor-resim')).not.toHaveAttribute('src', ilk);
+});
+
 test('Pekiştir · Karışık: 5 kart cevapla', async ({ page }) => {
   await page.goto('./#/pekistir/karisik');
   for (let i = 0; i < 5; i++) {

@@ -1,16 +1,22 @@
-// Bir sanatçının eserleri: önce kurs eserleri (doğrulanmış), sonra Wikidata.
-// Wikidata sonuçları IndexedDB'de 30 gün saklanır; data/eserler_onbellek.json varsa ilk açılışta ondan gelir.
+// Bir sanatçının eserleri.
+// 1) data/eserler_onbellek.json (surum 3): kurs eserleri + Wikidata + müzeler (Met, AIC, Cleveland, NGA) +
+//    Commons, derleme zamanında birleştirilmiş ve sıralanmış hâli. Varsa esas budur.
+// 2) Yoksa: kurs eserleri (yalnızca resim) + Wikidata (IndexedDB'de 30 gün saklanır, canlı yenilenir).
+// Önbellek dosyası 30 günden eskiyse canlı Wikidata sonuçlarındaki yeni eserler listenin sonuna eklenir.
 import { idbAl, idbKoy } from './idb.js';
 import { qidCoz, eserleriGetir, jsonGetiriciYap, KULLANICI_AJANI } from './wikidata.js';
-import { baslikNormal, dosyaNormal } from './yardimci.js';
+import { baslikNormal, dosyaNormal, yilYaz } from './yardimci.js';
 import { kursResimleri } from './resim.js';
+import { gorselAnahtari, pekistirmeyeUygunMu } from './gorsel.js';
 
 export const TAZELIK_GUN = 30;
 export const TEST_HAVUZU = 12; // pekiştirmede bir sanatçı için kullanılan en fazla eser
 
 const GUN_MS = 24 * 60 * 60 * 1000;
-// 2: yalnızca resimsel eserler. Daha eski kayıtlar (heykel/mimari içerebilir) kullanılmaz.
-export const ONBELLEK_SURUMU = 2;
+// Önbellek dosyası biçimi: 3 = çok kaynaklı, görsel listeli. Daha eskisi kullanılmaz.
+export const ONBELLEK_SURUMU = 3;
+// IndexedDB'deki canlı Wikidata kayıtlarının biçimi (2 = yalnızca resimler)
+export const IDB_SURUMU = 2;
 
 let turler = null;
 // data/eser_turleri.json — hangi kurs eserlerinin resim olduğu
@@ -19,38 +25,79 @@ export function eserTurleriniAyarla(t) {
   bellek.clear();
 }
 
-// Kurs eserleri + Wikidata eserleri → tek liste (kurs önce, yinelenenler atılır)
-export function eserleriBirlestir(kursEserleri = [], wdEserleri = []) {
-  const sonuc = [];
-  const dosyalar = new Set();
-  const basliklar = new Set();
-  const ekle = (e) => {
-    const d = dosyaNormal(e.dosya).toLowerCase();
+function tarihYaz(yil) {
+  return yil === null || yil === undefined ? '' : yilYaz(yil);
+}
+
+// Önbellek dosyasındaki bir kaydı uygulamanın eser nesnesine çevirir
+export function onbellekEseri(e) {
+  const ilk = e.gorseller[0];
+  const anahtar = e.kurs ? gorselAnahtari(ilk) : e.qid ? 'q:' + e.qid : gorselAnahtari(ilk);
+  return {
+    anahtar,
+    kaynak: e.kurs ? 'kurs' : e.kaynaklar[0],
+    kaynaklar: e.kaynaklar,
+    baslik: e.baslik,
+    tarih: e.tarih || tarihYaz(e.yil),
+    yil: e.yil ?? null,
+    muze: e.muze || '',
+    kursKonu: e.konu ?? null,
+    qid: e.qid || null,
+    gorseller: e.gorseller,
+    pekistirme: e.pekistirme !== false,
+  };
+}
+
+// Önbellek yokken: kurs eserleri + Wikidata eserleri → tek liste (kurs önce, yinelenenler atılır)
+export function eserleriBirlestir(kursEserleri = [], wdEserleri = [], mevcut = []) {
+  const sonuc = mevcut.slice();
+  const dosyalar = new Set(mevcut.flatMap((e) => e.gorseller.filter((g) => g.k === 'commons').map((g) => dosyaNormal(g.d).toLowerCase())));
+  const basliklar = new Set(mevcut.map((e) => baslikNormal(e.baslik)).filter(Boolean));
+  const qidler = new Set(mevcut.map((e) => e.qid).filter(Boolean));
+  const ekle = (e, dosya) => {
+    const d = dosyaNormal(dosya).toLowerCase();
     const b = baslikNormal(e.baslik);
-    if (!e.dosya || dosyalar.has(d) || (b && basliklar.has(b))) return;
+    if (!dosya || dosyalar.has(d) || (b && basliklar.has(b)) || (e.qid && qidler.has(e.qid))) return;
     dosyalar.add(d);
     if (b) basliklar.add(b);
-    sonuc.push({ ...e, anahtar: d });
+    if (e.qid) qidler.add(e.qid);
+    sonuc.push({ ...e, anahtar: e.kaynak === 'kurs' || !e.qid ? 'c:' + d : 'q:' + e.qid });
   };
   for (const e of kursEserleri) {
-    ekle({
-      kaynak: 'kurs',
-      baslik: e.baslik,
-      tarih: e.tarih || '',
-      yer: e.yer || '',
-      dosya: e.commons_dosya,
-      lisans: e.lisans || '',
-      kursKonu: e.konu ?? null,
-    });
+    const g = { k: 'commons', d: dosyaNormal(e.commons_dosya), l: e.lisans || '' };
+    ekle(
+      {
+        kaynak: 'kurs',
+        kaynaklar: ['kurs'],
+        baslik: e.baslik,
+        tarih: e.tarih || '',
+        yil: null,
+        muze: e.yer || '',
+        kursKonu: e.konu ?? null,
+        qid: null,
+        gorseller: [g],
+        pekistirme: true,
+      },
+      e.commons_dosya,
+    );
   }
   for (const e of wdEserleri) {
-    ekle({
-      kaynak: 'wikidata',
-      baslik: e.baslik,
-      tarih: e.yil === null || e.yil === undefined ? '' : e.yil < 0 ? `MÖ ${-e.yil}` : String(e.yil),
-      dosya: e.dosya,
-      qid: e.qid,
-    });
+    const g = { k: 'commons', d: dosyaNormal(e.dosya), l: '' };
+    ekle(
+      {
+        kaynak: 'wikidata',
+        kaynaklar: ['wikidata'],
+        baslik: e.baslik,
+        tarih: tarihYaz(e.yil),
+        yil: e.yil ?? null,
+        muze: '',
+        kursKonu: null,
+        qid: e.qid,
+        gorseller: [g],
+        pekistirme: true,
+      },
+      e.dosya,
+    );
   }
   return sonuc;
 }
@@ -74,44 +121,52 @@ const getir = jsonGetiriciYap({ basliklar: { 'Api-User-Agent': KULLANICI_AJANI }
 const bellek = new Map();
 const suren = new Map();
 
-async function wikidataKaydi(sanatci, { canli }) {
+// Canlı Wikidata kaydı (IndexedDB). gerekli=false ise yalnızca taze kayıt ya da arka planda yenileme.
+async function canliWikidata(sanatci, qid, { canli, bekle }) {
   const idb = await idbAl('eserler', sanatci.id);
-  const kayit = idb && idb.surum === ONBELLEK_SURUMU ? idb : null;
+  const kayit = idb && idb.surum === IDB_SURUMU ? idb : null;
   if (kayit && tazeMi(kayit.zaman)) return kayit;
-  const hazir = await hazirOnbellek();
-  const hk = hazir && hazir.sanatcilar && hazir.sanatcilar[sanatci.id];
-  const hazirZaman = hazir && Date.parse(hazir.olusturma);
-  if (hk && tazeMi(hazirZaman)) return { qid: hk.qid, eserler: hk.eserler, zaman: hazirZaman };
-  const eski = kayit || (hk ? { qid: hk.qid, eserler: hk.eserler, zaman: hazirZaman || 0 } : null);
-  if (!canli || (typeof navigator !== 'undefined' && navigator.onLine === false)) return eski;
+  if (!canli || (typeof navigator !== 'undefined' && navigator.onLine === false)) return kayit;
   const yenile = async () => {
     try {
-      const qid = eski && eski.qid ? eski.qid : await qidCoz(sanatci, getir);
-      const eserler = qid ? await eserleriGetir(qid, getir) : [];
-      const yeni = { qid, eserler, zaman: Date.now(), surum: ONBELLEK_SURUMU };
+      const q = qid || (kayit && kayit.qid) || (await qidCoz(sanatci, getir));
+      const eserler = q ? await eserleriGetir(q, getir) : [];
+      const yeni = { qid: q, eserler, zaman: Date.now(), surum: IDB_SURUMU };
       await idbKoy('eserler', sanatci.id, yeni);
       bellek.delete(sanatci.id);
       return yeni;
     } catch (e) {
-      return eski;
+      return kayit;
     }
   };
-  // Eski veri varsa hemen onu kullan, arka planda yenile.
-  if (eski) {
+  if (kayit || !bekle) {
     yenile();
-    return eski;
+    return kayit;
   }
   return yenile();
 }
 
-// Sanatçının birleşik eser listesi
+async function hesapla(sanatci, { canli }) {
+  const hazir = await hazirOnbellek();
+  const hk = hazir && hazir.sanatcilar && hazir.sanatcilar[sanatci.id];
+  if (hk) {
+    const liste = hk.eserler.map(onbellekEseri);
+    if (tazeMi(Date.parse(hazir.olusturma))) return liste;
+    // Dosya eski: canlı Wikidata'daki yeni eserleri sona ekle (arka planda yenilenir)
+    const wd = await canliWikidata(sanatci, hk.qid, { canli, bekle: false });
+    return eserleriBirlestir([], (wd && wd.eserler) || [], liste);
+  }
+  const wd = await canliWikidata(sanatci, null, { canli, bekle: true });
+  return eserleriBirlestir(kursResimleri(sanatci, turler), (wd && wd.eserler) || []);
+}
+
+// Sanatçının birleşik eser listesi (en bilinenler önce; kurs eserleri en başta)
 export function sanatciEserleri(sanatci, { canli = true } = {}) {
   if (bellek.has(sanatci.id)) return Promise.resolve(bellek.get(sanatci.id));
   if (suren.has(sanatci.id)) return suren.get(sanatci.id);
-  const soz = wikidataKaydi(sanatci, { canli })
-    .catch(() => null)
-    .then((wd) => {
-      const eserler = eserleriBirlestir(kursResimleri(sanatci, turler), (wd && wd.eserler) || []);
+  const soz = hesapla(sanatci, { canli })
+    .catch(() => eserleriBirlestir(kursResimleri(sanatci, turler), []))
+    .then((eserler) => {
       bellek.set(sanatci.id, eserler);
       suren.delete(sanatci.id);
       return eserler;
@@ -120,9 +175,14 @@ export function sanatciEserleri(sanatci, { canli = true } = {}) {
   return soz;
 }
 
+// Pekiştirme havuzu: görseli kullanılabilir ilk TEST_HAVUZU eser
+export function pekistirmeHavuzu(eserler, kotuler = {}) {
+  return eserler.filter((e) => pekistirmeyeUygunMu(e, kotuler)).slice(0, TEST_HAVUZU);
+}
+
 // Pekiştirmede gösterilecek eseri seç: son gösterilenlerden kaçın.
-export function eserSec(eserler, sonGosterilenler = [], rng = Math.random) {
-  const havuz = eserler.slice(0, TEST_HAVUZU);
+export function eserSec(eserler, sonGosterilenler = [], rng = Math.random, kotuler = {}) {
+  const havuz = pekistirmeHavuzu(eserler, kotuler);
   if (!havuz.length) return null;
   const kacinilacak = new Set(sonGosterilenler.slice(-Math.min(5, havuz.length - 1)));
   const adaylar = havuz.filter((e) => !kacinilacak.has(e.anahtar));

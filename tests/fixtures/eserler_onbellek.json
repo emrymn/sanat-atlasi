@@ -1,13 +1,39 @@
 {
-  "surum": 2,
+  "surum": 3,
   "olusturma": "__SIMDI__",
   "sanatcilar": {
     "giotto-di-bondone": {
       "qid": "Q7814",
       "eserler": [
-        { "qid": "Q100", "baslik": "Fixture: Ağıt", "yil": 1305, "dosya": "Fixture_Lamentation.jpg", "sl": 40 },
-        { "qid": "Q101", "baslik": "Fixture: Ognissanti Madonna", "yil": 1310, "dosya": "Fixture_Ognissanti.jpg", "sl": 20 },
-        { "qid": "Q102", "baslik": "Fixture: Stefaneschi Triptiği", "yil": 1320, "dosya": "Fixture_Stefaneschi.jpg", "sl": 10 }
+        {
+          "baslik": "Fixture: Ağıt",
+          "yil": 1305,
+          "muze": "National Gallery of Art, Washington",
+          "qid": "Q100",
+          "kaynaklar": ["wikidata", "nga"],
+          "sl": 40,
+          "gorseller": [
+            { "k": "nga", "i": "https://api.nga.gov/iiif/fixture-1", "l": "CC0", "s": "https://www.nga.gov/collection/art-object-page.1.html", "p": 100 },
+            { "k": "commons", "d": "Fixture_Lamentation.jpg", "l": "", "p": 50 }
+          ]
+        },
+        {
+          "baslik": "Fixture: Ognissanti Madonna",
+          "yil": 1310,
+          "qid": "Q101",
+          "kaynaklar": ["wikidata", "aic"],
+          "gorseller": [
+            { "k": "aic", "i": "fixture-2", "l": "CC0", "s": "https://www.artic.edu/artworks/2", "p": 100 },
+            { "k": "commons", "d": "Fixture_Ognissanti.jpg", "l": "", "p": 50 }
+          ]
+        },
+        {
+          "baslik": "Fixture: Stefaneschi Triptiği",
+          "yil": 1320,
+          "qid": "Q102",
+          "kaynaklar": ["wikidata"],
+          "gorseller": [{ "k": "commons", "d": "Fixture_Stefaneschi.jpg", "l": "", "p": 50 }]
+        }
       ]
     }
   }

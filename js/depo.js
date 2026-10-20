@@ -14,6 +14,7 @@ export function varsayilanIlerleme(islenen = []) {
     skorlar: {},
     gunluk: { tarih: bugunStr(), yeni: 0, kart: 0, yeniIdler: [] },
     sonEserler: {},
+    kotuGorseller: {},
     olusturma: new Date().toISOString(),
   };
 }
@@ -53,8 +54,17 @@ export function ilerlemeDogrula(nesne) {
         ? { ...t.gunluk, ...v.gunluk, yeniIdler: Array.isArray(v.gunluk.yeniIdler) ? v.gunluk.yeniIdler : [] }
         : t.gunluk,
     sonEserler: v.sonEserler && typeof v.sonEserler === 'object' ? v.sonEserler : {},
+    kotuGorseller: kotuGorselleriDogrula(v.kotuGorseller),
     olusturma: v.olusturma || t.olusturma,
   };
+}
+
+// { eserAnahtarı: [görselAnahtarı, …] } — geçersiz kayıtlar atılır
+function kotuGorselleriDogrula(k) {
+  if (!k || typeof k !== 'object' || Array.isArray(k)) return {};
+  const sonuc = {};
+  for (const [a, liste] of Object.entries(k)) if (Array.isArray(liste)) sonuc[a] = liste.filter((x) => typeof x === 'string');
+  return sonuc;
 }
 
 export function yedekMetni(ilerleme) {
