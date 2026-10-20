@@ -1,0 +1,903 @@
+{
+ "aciklama": "Yalnızca iki boyutlu resimsel eserler gösterilir. 'kurs': kurs_eserleri'nin Commons dosyasına (küçük harf) göre karar. 'ana_ugras_disi': resmi az ya da yalnızca mimari çizim/heykel etüdü olan, ana uğraşı heykel ya da mimarlık olan ve bu yüzden gösterilmeyen sanatçılar. Ayrıntı: KARARLAR.md.",
+ "olusturma": "2026-10-20",
+ "ana_ugras_disi": {
+  "gian-lorenzo-bernini": "heykeltıraş ve mimar; birkaç tuval resmi var ama üslubu heykelleriyle tanınır",
+  "antonio-canova": "heykeltıraş; Wikidata'daki resimleri az sayıda ve ikincil",
+  "auguste-rodin": "heykeltıraş; Wikidata'da yalnızca desenleri var (heykel etüdleri)",
+  "andrea-palladio": "mimar; tek 'eser' bir mimari çizim",
+  "lorenzo-ghiberti": "heykeltıraş; tek 'eser' bir vitray tasarımı",
+  "benvenuto-cellini": "heykeltıraş ve kuyumcu; tek 'eser' bir desen",
+  "louis-le-vau": "mimar; tek 'eser' bir mimari kesit çizimi",
+  "andre-le-notre": "peyzaj mimarı; eserleri bahçe planları",
+  "jules-hardouin-mansart": "mimar; tek 'eser' bir meydan projesi",
+  "horatio-greenough": "heykeltıraş; eserleri heykel etüdleri",
+  "charles-barry-ve-augustus-pugin": "mimarlar; eserleri mimari çizimler"
+ },
+ "kurs": {
+  "\"guernica\"_by_picasso_at_moma,_nyc.jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi"
+  },
+  "'sistine_chapel_ceiling'_by_michelangelo_jbu21.jpg": {
+   "karar": "resim",
+   "neden": "fresk"
+  },
+  "01_st_peter's_bramante_crossing.jpg": {
+   "karar": "degil",
+   "neden": "mimari / mimari plan"
+  },
+  "02_10_2024_photo_paolo_villa-napoli-mann-museo_archeologico-fo232526tris-arte_greca_copia_romana-policleto_doriforo_polykleitos_doryphoros_from_pompeii-marmo_marble_carrara.jpg": {
+   "karar": "degil",
+   "neden": "heykel (Doryphoros)"
+  },
+  "07-villa-rotonda-palladio.jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "0_mariage_par_procuration_de_marie_de_médicis_et_de_henrii_iv_-_p.p._rubens_2.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q29655360 (painting)"
+  },
+  "0_the_vitruvian_man_-_by_leonardo_da_vinci.jpg": {
+   "karar": "resim",
+   "neden": "desen"
+  },
+  "1665_girl_with_a_pearl_earring.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q185372 (painting)"
+  },
+  "a._mantegna,_1465-74_camera_picta,_ceiling_3.jpg": {
+   "karar": "resim",
+   "neden": "fresk (Wikidata eşleşmesi bir üslup öğesine gidiyor)"
+  },
+  "a_panoramic_view_of_the_auditorium_of_opera_garnier_in_paris,_6_july_2015.jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "a_rake's_progress,_plate_7_met_dp825210.jpg": {
+   "karar": "resim",
+   "neden": "baskı serisi"
+  },
+  "albrecht_dürer,_adam_and_eve,_1504,_engraving.jpg": {
+   "karar": "resim",
+   "neden": "gravür (Wikidata eşleşmesi bir çevrim içi sergiye gidiyor)"
+  },
+  "albrecht_dürer,_knight,_death_and_devil,_1513,_nga_6637.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1755464 (print)"
+  },
+  "albrecht_dürer_-_1500_self-portrait_(high_resolution_and_detail).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2546309 (painting)"
+  },
+  "andrea_mantegna,_camera_degli_sposi,_1465-74,_volta,_03.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q125753676 (painting)"
+  },
+  "andrea_mantegna_or_follower_(possibly_giulio_campagnola)_-_judith_with_the_head_of_holofernes_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3769182 (painting)"
+  },
+  "angelo_bronzino_-_venus,_cupid,_folly_and_time_-_national_gallery,_london.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1430990 (painting)"
+  },
+  "annibale_carracci_-_the_flight_into_egypt_-_wga04437.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1115595 (painting)"
+  },
+  "antonio_allegri,_called_correggio_-_jupiter_and_io_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q700834 (painting)"
+  },
+  "aristotle_and_phyllis.jpg": {
+   "karar": "resim",
+   "neden": "ahşap baskı (Wikidata eşleşmesi bir edebî konuya gidiyor)"
+  },
+  "artemisia_gentileschi_-_judith_and_her_maidservant_with_the_head_of_holofernes_-_52.253_-_detroit_institute_of_arts.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3769173 (painting)"
+  },
+  "artemisia_gentileschi_-_susanna_and_the_elders_near_a_balcony.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q30605361 (painting)"
+  },
+  "baldaquin_bernin_saint-pierre_vatican.jpg": {
+   "karar": "degil",
+   "neden": "heykel / mimari"
+  },
+  "baldassare_castiglione,_by_raffaello_sanzio,_from_c2rmf_retouched.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q546977 (painting)"
+  },
+  "basilica_di_san_giorgio_maggiore_(venice).jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "basilica_di_san_pietro_in_vaticano_september_2015-1a.jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "basket_of_fruit-caravaggio_(c.1595)fxd.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2270291 (painting)"
+  },
+  "benjamin_west_-_the_death_of_general_wolfe_-_wga25558.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q956541 (painting)"
+  },
+  "bernini_colonnade_at_st_peter's_square,_rome_-_2626.jpg": {
+   "karar": "degil",
+   "neden": "heykel / mimari"
+  },
+  "bewitched_stable_groom_by_hans_baldung_grien.jpg": {
+   "karar": "resim",
+   "neden": "ahşap baskı"
+  },
+  "bosch_-_haywain_triptych.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2213811 (triptych)"
+  },
+  "boy_bitten_by_a_lizard-caravaggio_(longhi).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q131543672 (painting)"
+  },
+  "boy_with_a_basket_of_fruit-caravaggio_(1593).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2610936 (painting)"
+  },
+  "bramante;_plan_for_st._peter's.jpg": {
+   "karar": "degil",
+   "neden": "mimari / mimari plan"
+  },
+  "brunelleschi's_competition_panel.jpg": {
+   "karar": "degil",
+   "neden": "bronz rölyef"
+  },
+  "caravaggio,_michelangelo_merisi_da_-_the_calling_of_saint_matthew_-_1599-1600_(hi_res).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q969377 (painting)"
+  },
+  "caravaggio_-_boy_bitten_by_a_lizard.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q585437 (painting)"
+  },
+  "caravaggio_saint_matthew_dli_06163009908.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q25412019 (painting series)"
+  },
+  "cathedral_(parma)_-_assumption_by_correggio.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q771210 (fresco)"
+  },
+  "claude_monet,_impression,_soleil_levant.jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi (Wikidata eşleşmesi yüzyıl/sergi öğelerine gidiyor)"
+  },
+  "claude_monet_-_rouen_cathedral,_facade_(sunset).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q17436673 (painting)"
+  },
+  "colonnades_in_saint_peter's_square-architecture_by_gianlorenzo_bernini.jpg": {
+   "karar": "degil",
+   "neden": "heykel / mimari"
+  },
+  "conversion_on_the_way_to_damascus-caravaggio_(c.1600-1).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2273517 (painting)"
+  },
+  "cornaro_chapel_in_santa_maria_della_vittoria_in_rome_hdr.jpg": {
+   "karar": "degil",
+   "neden": "heykel / mimari"
+  },
+  "cornelia,_gracchus_kardeşlerini_gösteriyor.jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi"
+  },
+  "correggio_-_ganymede_-_wga05343.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q939962 (painting)"
+  },
+  "crucifix._cimabue._santa_croce_before_1966.jpg": {
+   "karar": "resim",
+   "neden": "boyalı haç (ahşap pano resmi)"
+  },
+  "david_-_the_death_of_socrates.jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi (Wikidata eşleşmesi akım/yıl öğelerine gidiyor)"
+  },
+  "david_by_bernini,_1623-1624,_villa_borghese,_rome.jpg": {
+   "karar": "degil",
+   "neden": "heykel / mimari"
+  },
+  "death_of_marat_by_david.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q636537 (painting)"
+  },
+  "degas_-_the_morning_bath,_1887-90.jpg": {
+   "karar": "resim",
+   "neden": "pastel"
+  },
+  "diego_velázquez_-_the_waterseller_of_seville_-_wga24366.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2627810 (painting)"
+  },
+  "dome_of_saint_peter's_basilica_(exterior).jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "domenico_di_michelino_dante_duomo_florence_duomofirenze.it.jpg": {
+   "karar": "resim",
+   "neden": "pano resmi (Wikidata eşleşmesi sanatçının kendisine gidiyor)"
+  },
+  "donatello,_banchetto_di_erode,_1427,_11.jpg": {
+   "karar": "degil",
+   "neden": "bronz rölyef"
+  },
+  "donatello_-_david_-_florença.jpg": {
+   "karar": "degil",
+   "neden": "bronz heykel"
+  },
+  "draughtsman_making_a_perspective_drawing_of_a_reclining_woman_met_dt248024.jpg": {
+   "karar": "resim",
+   "neden": "ahşap baskı"
+  },
+  "duccio_di_buoninsegna_-_annunciation_-_wga06752.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q26706454 (painting)"
+  },
+  "duccio_di_buoninsegna_-_last_supper_-_wga06786.jpg": {
+   "karar": "resim",
+   "neden": "Maestà pano resmi"
+  },
+  "duccio_di_buoninsegna_-_the_nativity_with_the_prophets_isaiah_and_ezekiel_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3873252 (painting)"
+  },
+  "ecstasy_of_saint_teresa_september_2015-2a.jpg": {
+   "karar": "degil",
+   "neden": "heykel / mimari"
+  },
+  "ecstasy_of_st._theresa.jpg": {
+   "karar": "degil",
+   "neden": "heykel / mimari"
+  },
+  "edgar_degas,_the_rehearsal,_c._1874..jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3924387 (painting)"
+  },
+  "edouard_manet,_a_bar_at_the_folies-bergère.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1245354 (painting)"
+  },
+  "edouard_manet_-_olympia_-_google_art_project_3.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q737062 (painting)"
+  },
+  "el_greco_-_the_burial_of_the_count_of_orgaz.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q94802 (painting)"
+  },
+  "el_tres_de_mayo,_by_francisco_de_goya,_from_prado_thin_black_margin.jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi"
+  },
+  "elektrotypie_replik_der_porta_del_paradiso_von_lorenzo_ghiberti,_1867,_franchi_&_sons,_london,_victoria_and_albert_museum.jpg": {
+   "karar": "degil",
+   "neden": "bronz kapı rölyefleri"
+  },
+  "engraving_of_four_witches_1497.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q79944048 (print)"
+  },
+  "escapan_entre_las_llamas,_los_desastres_de_la_guerra_(goya).jpg": {
+   "karar": "resim",
+   "neden": "gravür serisi"
+  },
+  "eugène_delacroix_-_the_women_of_algiers,_1834.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1212737 (painting)"
+  },
+  "ferdinand-victor-eugène_delacroix_-_paganini_-_google_art_project_(cropped).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q23939633 (painting)"
+  },
+  "florencia_palazzo_rucellai_08.jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "four_horsemen_of_the_apocalypse_met_dp816772.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q5980742 (woodcut print, print)"
+  },
+  "francisco_de_goya,_saturno_devorando_a_su_hijo_(1819-1823).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1150997 (painting)"
+  },
+  "francisco_josé_de_goya_y_lucientes_-_the_sleep_of_reason_produces_monsters_(no._43),_from_los_caprichos_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q671237 (aquatint print)"
+  },
+  "françois_boucher,_marie-louise_o'murphy_de_boisfaily.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1131176 (painting series)"
+  },
+  "françois_boucher_-_odaliske.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q18783512 (painting)"
+  },
+  "george_washington_greenough_statue.jpg": {
+   "karar": "degil",
+   "neden": "heykel"
+  },
+  "ghiberti_and_brunelleschi,_sacrifice_of_isaac,_competition_reliefs,_1401-2,_bargello,_florence.jpg": {
+   "karar": "degil",
+   "neden": "bronz rölyef"
+  },
+  "gian_lorenzo_bernini,_ritratto_del_cardinale_scipione_borghese,_1632_ca,_cclxv_01.jpg": {
+   "karar": "degil",
+   "neden": "heykel / mimari"
+  },
+  "gian_lorenzo_bernini,_self-portrait,_c1623.jpg": {
+   "karar": "degil",
+   "neden": "heykel / mimari"
+  },
+  "giotto_-_legend_of_st_francis_-_-02-_-_st_francis_giving_his_mantle_to_a_poor_man.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3947102 (fresco)"
+  },
+  "giotto_-_legend_of_st_francis_-_-05-_-_renunciation_of_wordly_goods.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3947114 (fresco)"
+  },
+  "giotto_-_scrovegni_-_-27-_-_expulsion_of_the_money-changers_from_the_temple.jpg": {
+   "karar": "resim",
+   "neden": "fresk"
+  },
+  "giotto_-_scrovegni_-_-36-_-_lamentation_(the_mourning_of_christ)_adj.jpg": {
+   "karar": "resim",
+   "neden": "fresk"
+  },
+  "giotto_di_bondone_-_last_judgment_-_wga09228.jpg": {
+   "karar": "resim",
+   "neden": "fresk"
+  },
+  "giotto_di_bondone_-_legend_of_st_francis_-_19._stigmatization_of_st_francis_-_wga09145.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3947110 (fresco)"
+  },
+  "giotto_di_bondone_-_no._45_the_seven_virtues_-_charity_-_wga09272.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3658720 (fresco)"
+  },
+  "giotto_di_bondone_-_no._50_the_seven_vices_-_injustice_-_wga09277.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3798688 (fresco)"
+  },
+  "giovanni_di_paolo_rucellai.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q124414174 (painting)"
+  },
+  "giovanni_pisano,_pulpito_di_sant'andrea,_1298-1301,_05.jpg": {
+   "karar": "degil",
+   "neden": "mermer kürsü, rölyef"
+  },
+  "giulio-romano-fall-of-the-giants-fresco-in-the-sala-dei-giganti-palazzo-del-te-1530-1532.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q97378803 (painting)"
+  },
+  "grand_staircase_of_opéra_garnier_05.jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "gustave_caillebotte_-_paris_street,_rainy_day_-_1964.336_-_art_institute_of_chicago.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1452762 (painting)"
+  },
+  "gustave_caillebotte_-_paris_street;_rainy_day_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1452762 (painting)"
+  },
+  "hamburg_kunsthalle_cambridge_fitzwilliam_museum_blake_frontispiece_europe_a_prophecy.jpg": {
+   "karar": "resim",
+   "neden": "el boyaması kabartma baskı"
+  },
+  "hans_holbein-_the_body_of_the_dead_christ_in_the_tomb.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q4310527 (painting)"
+  },
+  "henry_fuseli_(1741–1825),_the_nightmare,_1781.jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi"
+  },
+  "hieronymus_bosch_-_death_and_the_miser_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2203011 (painting)"
+  },
+  "hogarth-harlot-1.png": {
+   "karar": "resim",
+   "neden": "baskı serisi (Wikidata eşleşmesi bir kişiye gidiyor)"
+  },
+  "interior_of_teatro_olimpico_(vicenza)_scena_.jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "jacopo_pontormo_-_deposition_-_wga18113_(cropped).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3705703 (painting)"
+  },
+  "jacopo_robusti,_called_tintoretto_-_susanna_and_the_elders_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3978277 (painting)"
+  },
+  "jacopo_tintoretto_-_the_last_supper_-_wga22649.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2472983 (painting)"
+  },
+  "jacques-louis_david_-_oath_of_the_horatii_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q28797801 (painting)"
+  },
+  "japanese_footbridge,_giverny_(1895)_claude_monet_-_philadelphia_museum_of_art_-_inv.1993-151-2_(w_1419).jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi (Japon köprüsü)"
+  },
+  "jean-honoré_fragonard_-_the_bolt_-_wga8080.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3228069 (painting)"
+  },
+  "jean_auguste_dominique_ingres,_apotheosis_of_homer,_1827.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3202169 (painting)"
+  },
+  "jean_auguste_dominique_ingres,_la_grande_odalisque,_1814.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1978815 (painting)"
+  },
+  "jean_baptiste_creuze_broken_eggs.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q19904884 (painting)"
+  },
+  "jean_siméon_chardin_-_soap_bubbles_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q20177882 (painting)"
+  },
+  "joean_honoré_fragonard_-_the_swing.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2629559 (painting)"
+  },
+  "johannes_vermeer_-_the_lacemaker_(c.1669-1671).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1216387 (painting)"
+  },
+  "joseph_mallord_william_turner_-_the_burning_of_the_houses_of_lords_and_commons,_16_october_1834_-_1942.647_-_cleveland_museum_of_art.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q60514853 (painting)"
+  },
+  "judith_slaying_holofernes_by_artemisia_gentileschi.jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi"
+  },
+  "jupiter_and_thetis_(ingres).jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi"
+  },
+  "l'embarquement_pour_cythère,_by_antoine_watteau,_from_c2rmf_retouched.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q531329 (reception piece, painting)"
+  },
+  "l'indifférent_-_jean-antoine_watteau_-_musée_du_louvre_peintures_mi_1122.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3204146 (painting)"
+  },
+  "las_meninas,_by_diego_velázquez,_from_prado_in_google_earth.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q208758 (painting)"
+  },
+  "last_judgement_(michelangelo).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q567861 (fresco)"
+  },
+  "laurentian_library,_15th_century,_designed_by_michelangelo;_florence_(2)_(48768482511).jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "laurentian_library,_15th_century,_designed_by_michelangelo;_florence_(3)_(48768481076).jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "le_jupiter_olympien_ou_l'art_de_la_sculpture_antique.jpg": {
+   "karar": "degil",
+   "neden": "heykel (görsel bir canlandırma)"
+  },
+  "left_wall_(1.1)_-_capella_degli_scrovegni_-_padua_2016.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q26903165 (cycle of frescoes)"
+  },
+  "leonardo_-_st._anne_cartoon.jpg": {
+   "karar": "resim",
+   "neden": "pano resmi"
+  },
+  "leonardo_da_vinci,_drawing_of_a_flying_machine.jpg": {
+   "karar": "resim",
+   "neden": "desen"
+  },
+  "leonardo_da_vinci_(1452-1519)_-_the_last_supper_(1495-1498).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q128910 (wall painting, work of art)"
+  },
+  "leonardo_da_vinci_-_anatomical_studies_of_the_shoulder_-_wga12824.jpg": {
+   "karar": "resim",
+   "neden": "desen"
+  },
+  "lorenzo_ghiberti-the_gates_of_paradise_-_original-museo_dell'opera_del_duomo_(florence).jpg": {
+   "karar": "degil",
+   "neden": "bronz kapı rölyefleri"
+  },
+  "lorenzo_ghiberti_-_esaú_e_jacó_-_porta_do_paraíso.jpg": {
+   "karar": "degil",
+   "neden": "bronz rölyef"
+  },
+  "madame_récamier,_née_julie_(dite_juliette)_bernard_-_jacques-louis_david_-_musée_dulouvre_peintures_inv_3708.jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi"
+  },
+  "madonna_di_ognissanti_by_giotto.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2016193 (altarpiece, painting)"
+  },
+  "maesta.duccio._detail.jpg": {
+   "karar": "resim",
+   "neden": "Maestà pano resmi (Wikidata eşleşmesi yanlış öğeye gidiyor)"
+  },
+  "marriage_a-la-mode_1,_the_marriage_settlement_-_william_hogarth.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q6772902 (painting)"
+  },
+  "mary_cassatt,_maternal_caress,_c._1891,_nga_1068.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q64960323 (print)"
+  },
+  "mary_cassatt,_the_letter,_1890-1891,_nga_45971.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q65362417 (print)"
+  },
+  "mary_cassatt_-_baby's_first_caress.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q137698002 (pastel artwork)"
+  },
+  "mary_cassatt_-_the_child's_bath_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3172226 (painting)"
+  },
+  "masaccio,_holy_trinity,_1425-28,_santa_maria_novella,_florence.jpg": {
+   "karar": "resim",
+   "neden": "fresk"
+  },
+  "masaccio,_trinità.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q977200 (fresco)"
+  },
+  "massysm_quentin_—_the_moneylender_and_his_wife_—_1514.jpg": {
+   "karar": "resim",
+   "neden": "pano resmi"
+  },
+  "michelangelo's_david_2015.jpg": {
+   "karar": "degil",
+   "neden": "mermer heykel"
+  },
+  "michelangelo's_moses_(rome).jpg": {
+   "karar": "degil",
+   "neden": "mermer heykel"
+  },
+  "michelangelo's_pietà_saint_peter's_basilica_vatican_city.jpg": {
+   "karar": "degil",
+   "neden": "mermer heykel"
+  },
+  "michelangelo,_ignudo_02.jpg": {
+   "karar": "resim",
+   "neden": "fresk figürleri"
+  },
+  "michelangelo,_tomb_of_pope_julius_ii,_1513–15;_in_san_pietro_in_vincoli,_rome_(2).jpg": {
+   "karar": "degil",
+   "neden": "mezar anıtı, heykel"
+  },
+  "michelangelo_-_delphic_sibyl.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3482971 (fresco)"
+  },
+  "michelangelo_-_sistine_chapel_-_lunette_eleazar_and_mathan_-_wga.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3721239 (fresco)"
+  },
+  "michelangelo_buonarroti_-_last_judgment_-_wga15472.jpg": {
+   "karar": "resim",
+   "neden": "fresk"
+  },
+  "milan_pinacothèque_lamentation_of_christ_par_mantegna.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q546297 (painting)"
+  },
+  "model_for_an_equestrian_monument_to_louis_xiv_of_france,_by_gian_lorenzo_bernini,_1669-1670,_terracotta_-_galleria_borghese_-_rome,_italy_-_dsc04698.jpg": {
+   "karar": "degil",
+   "neden": "heykel / mimari"
+  },
+  "mona_lisa,_by_leonardo_da_vinci,_from_c2rmf_retouched.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q12418 (painting)"
+  },
+  "nicolas_poussin_-_echo_and_narcissus_-_wga18271.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q5817081 (painting)"
+  },
+  "nicolas_poussin_-_et_in_arcadia_ego_(deuxième_version).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1140358 (painting)"
+  },
+  "nymphéas_(1906)_claude_monet_(w_1685).jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi"
+  },
+  "odalisque_with_slave,_by_jean-auguste-dominique_ingres_and_jean-paul_flandrin.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q110923349 (painting)"
+  },
+  "orazio_gentileschi_-_the_holy_family_with_the_infant_saint_john_the_baptist.png": {
+   "karar": "resim",
+   "neden": "Wikidata Q29042578 (painting)"
+  },
+  "padova_cappella_degli_scrovegni_innen_fresken_1.jpg": {
+   "karar": "resim",
+   "neden": "fresk döngüsü"
+  },
+  "parterre_du_midi_garden_pond_and_palace_of_versailles_at_golden_hour_with_blue_sky_in_france.jpg": {
+   "karar": "degil",
+   "neden": "bahçe düzenlemesi"
+  },
+  "perugino,_consegna_delle_chiavi,_cappella_sistina_(roma)_-_panoramio.jpg": {
+   "karar": "resim",
+   "neden": "fresk"
+  },
+  "peter_paul_rubens_-_the_fates_spinning_marie's_destiny_-_wga20346.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q29655375 (painting)"
+  },
+  "peter_paul_rubens_-_the_landing_of_marie_de_médicis_at_marseilles_-_wga20337.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2843410 (painting)"
+  },
+  "peter_paul_rubens_-_the_rape_of_the_daughters_of_leucippus.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q644936 (painting)"
+  },
+  "phidias,_parthenon_frieze_north_xliii,_447-433_bc,_plaster_cast,_hostinné,_188268.jpg": {
+   "karar": "degil",
+   "neden": "friz ve metop rölyefleri"
+  },
+  "pietro_lorenzetti_-_the_birth_of_mary_-_wga13553.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3873247 (painting)"
+  },
+  "pisa_baptistery_pulpit_01_crop.jpg": {
+   "karar": "degil",
+   "neden": "mermer kürsü, rölyef"
+  },
+  "plate_43_from_'los_caprichos'-_the_sleep_of_reason_produces_monsters_(el_sueño_de_la_razon_produce_monstruos)_met_22aa_bg05r4.jpg": {
+   "karar": "resim",
+   "neden": "gravür"
+  },
+  "pontormo_-_ritratto_di_cosimo_il_vecchio_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3937502 (painting)"
+  },
+  "portrait_bust_of_michelangelo_buonarroti.png": {
+   "karar": "degil",
+   "neden": "büst"
+  },
+  "portrait_of_louis_xiv_of_france_in_coronation_robes_(by_hyacinthe_rigaud)_-_louvre_museum.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3399440 (painting)"
+  },
+  "portrait_of_niccolò_paganini_met_dp886016.jpg": {
+   "karar": "resim",
+   "neden": "desen"
+  },
+  "portrait_of_pope_innocent_x_(by_diego_velázquez)_-_doria_pamphilj_gallery,_rome.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1240092 (painting)"
+  },
+  "poussin,_a_bacchanalian_revel_before_a_term_(1632).jpg": {
+   "karar": "resim",
+   "neden": "tuval resmi"
+  },
+  "raffaello_sanzio.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q555821 (painting)"
+  },
+  "raimondi_-_the_judgment_of_paris,_27.1390.jpg": {
+   "karar": "resim",
+   "neden": "gravür"
+  },
+  "rembrandt_-_evangelist_matthew_and_the_angel_-_wga19119.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q9396869 (painting)"
+  },
+  "rembrandt_-_rembrandt_and_saskia_in_the_scene_of_the_prodigal_son_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1111394 (painting)"
+  },
+  "rembrandt_-_susanna_and_the_elders.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q16913597 (painting)"
+  },
+  "rembrandt_harmensz._van_rijn_022.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q21401882 (painting)"
+  },
+  "rembrandt_harmensz_van_rijn_-_return_of_the_prodigal_son_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q512755 (painting)"
+  },
+  "rembrandt_van_rijn_-_self-portrait_-_google_art_projectfxd.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2872723 (painting)"
+  },
+  "robert_campin_-_mérode_altarpiece_-_wga14410.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q285392 (altarpiece, painting)"
+  },
+  "rom,_vatikan,_petersdom,_cathedra_petri_(bernini)_4.jpg": {
+   "karar": "degil",
+   "neden": "heykel / mimari"
+  },
+  "rome_palazzo_farnese_ceiling_carracci_frescos_04.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3998957 (painting)"
+  },
+  "san_francesco_cimabue.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3843027 (painting)"
+  },
+  "self-portrait_as_the_allegory_of_painting_(la_pittura)_-_artemisia_gentileschi.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3630745 (painting)"
+  },
+  "self-portrait_at_the_easel_painting_a_devotional_panel_by_sofonisba_anguissola.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q23009844 (painting)"
+  },
+  "self_portrait_at_an_easel_(ca._1779),_pastel,_40.5_x_32.5_cm.,_louvre.jpg": {
+   "karar": "resim",
+   "neden": "pastel"
+  },
+  "simone_martini_and_lippo_memmi_-_the_annunciation_and_two_saints_-_wga15010.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q979440 (painting, triptych)"
+  },
+  "slave-ship.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q219344 (painting)"
+  },
+  "sofonisba_anguissola_-_portrait_of_the_artist's_sisters_playing_chess_-_wga00697.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q23008305 (painting)"
+  },
+  "staircase_of_the_laurentian_library,_15th_century,_designed_by_michelangelo;_florence_(1)_(48768085723).jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "staircase_of_the_laurentian_library,_15th_century,_designed_by_michelangelo;_florence_(2)_(48768620157).jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "supper_at_emmaus-caravaggio_(1601).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q318947 (painting)"
+  },
+  "tempietto_und_glockenturm_von_san_pietro_in_montorio.jpg": {
+   "karar": "degil",
+   "neden": "mimari / mimari plan"
+  },
+  "the_chess_game_(sofonisba_anguissola)_1555_(4096x3236px).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q23008305 (painting)"
+  },
+  "the_creation_of_adam_perspective_fix.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q500242 (fresco)"
+  },
+  "the_dead_christ_with_three_mourners_(by_andrea_mantegna)_–_pinacoteca_di_brera.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q546297 (painting)"
+  },
+  "the_garden_of_earthly_delights_by_bosch_high_resolution.jpg": {
+   "karar": "resim",
+   "neden": "triptik (Wikidata eşleşmesi bir filme gidiyor)"
+  },
+  "the_martyrdom_of_saint_matthew-caravaggio_(c._1599-1600).jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q2338417 (painting)"
+  },
+  "the_pisa_baptistery_of_st._john.jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "the_progress_of_love_-_the_meeting_-_fragonard_1771-72.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q18686539 (painting)"
+  },
+  "the_sagrestia_nuova_at_the_medici_chapel_-_48170012017.jpg": {
+   "karar": "degil",
+   "neden": "heykel"
+  },
+  "the_school_of_athens_fresco_by_raphael_(ank_kumar,_infosys_limited)_02.jpg": {
+   "karar": "resim",
+   "neden": "fresk"
+  },
+  "the_tribute_money_by_masaccio.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q1759631 (fresco)"
+  },
+  "the_virgin_and_child_with_saint_anne_by_leonardo_da_vinci,_taken_at_the_louvre_on_july_26,_2026.jpg": {
+   "karar": "resim",
+   "neden": "pano resmi"
+  },
+  "thomas_jefferson's_monticello.jpg": {
+   "karar": "degil",
+   "neden": "mimari"
+  },
+  "three_goddesses_parthenon-british_museum.jpg": {
+   "karar": "degil",
+   "neden": "alınlık heykeli"
+  },
+  "théodore_géricault_-_the_raft_of_the_medusa_-_wga08630.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q212616 (painting)"
+  },
+  "théodore_géricault_-_têtes_coupées.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q18599152 (painting, study)"
+  },
+  "tiziano_-_venere_di_urbino_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q727875 (painting)"
+  },
+  "turner-the_burning_of_the_houses_of_lords_and_commons.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q3204090 (painting)"
+  },
+  "van_eyck_-_arnolfini_portrait.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q220859 (painting)"
+  },
+  "view_looking_towards_the_rear_-_capella_degli_scrovegni_-_padua_2016_(2).jpg": {
+   "karar": "resim",
+   "neden": "fresk döngüsü"
+  },
+  "west_pediment_a_parthenon_bm.jpg": {
+   "karar": "degil",
+   "neden": "alınlık heykelleri"
+  },
+  "william_hogarth_-_after_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q20184523 (painting)"
+  },
+  "william_hogarth_-_beer_street.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q21651887 (engraving, print)"
+  },
+  "william_hogarth_-_before_-_google_art_project.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q20183486 (painting)"
+  },
+  "william_hogarth_-_gin_lane.jpg": {
+   "karar": "resim",
+   "neden": "gravür (Wikidata eşleşmesi bir salgın öğesine gidiyor)"
+  },
+  "édouard_manet_-_le_déjeuner_sur_l'herbe.jpg": {
+   "karar": "resim",
+   "neden": "Wikidata Q152509 (painting)"
+  }
+ }
+}

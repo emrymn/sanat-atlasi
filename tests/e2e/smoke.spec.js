@@ -82,14 +82,16 @@ test('Pekiştir · Döneme göre: bir akım seç ve cevapla', async ({ page }) =
 test('İlerleme: konu işaretlenince yeni sanatçı açılır', async ({ page }) => {
   await page.goto('./');
   const once = Number(await page.locator('[data-test="acik-sayi"]').textContent());
+  // henüz işlenmemiş ve (resmi olan) sanatçısı bulunan ilk konu
+  const { no, ad, akim } = await page.evaluate(() => {
+    const d = window.__atlas;
+    const s = d.sanatcilar.filter((x) => !d.ilerleme.islenen.includes(x.konu)).sort((a, b) => a.konu - b.konu)[0];
+    return { no: s.konu, ad: s.ad, akim: s.akim };
+  });
   await page.goto('./#/ilerleme');
   await expect(page.getByRole('heading', { name: 'İlerleme' })).toBeVisible();
-  const anahtar = page.getByRole('switch', { name: 'Konu 12 işlendi' });
-  if (!(await anahtar.isVisible()))
-    await page
-      .locator('details[data-bolum] summary', { hasText: 'Bölüm' })
-      .filter({ has: page.locator('xpath=..//input[@data-konu="12"]') })
-      .click();
+  const anahtar = page.getByRole('switch', { name: `Konu ${no} işlendi` });
+  if (!(await anahtar.isVisible())) await page.locator(`details[data-bolum]:has(input[data-konu="${no}"]) > summary`).click();
   await expect(anahtar).not.toBeChecked();
   await anahtar.check();
   await expect(page.locator('#bildirim')).toContainText('Açıldı:');
@@ -98,11 +100,26 @@ test('İlerleme: konu işaretlenince yeni sanatçı açılır', async ({ page })
   const sonra = Number(await page.locator('[data-test="acik-sayi"]').textContent());
   expect(sonra).toBeGreaterThan(once);
   // Göz At'ta yeni sanatçı görünür
-  const yeniAd = await page.evaluate(() => window.__atlas.sanatcilar.find((s) => s.konu === 12).ad);
   await page.goto('./#/gozat');
-  const akim = await page.evaluate(() => window.__atlas.sanatcilar.find((s) => s.konu === 12).akim);
-  await page.getByRole('link', { name: new RegExp(akim) }).click();
-  await expect(page.getByRole('link', { name: new RegExp(yeniAd) })).toBeVisible();
+  await page.getByRole('link').filter({ hasText: akim }).first().click();
+  await expect(page.getByRole('link').filter({ hasText: ad })).toBeVisible();
+});
+
+test('yalnızca resim: heykeltıraş ve mimarlar ile resimsiz akımlar görünmez', async ({ page }) => {
+  await page.goto('./#/gozat');
+  await expect(page.getByRole('heading', { name: 'Göz At' })).toBeVisible();
+  await expect(page.getByText('Antik Yunan ve Roma')).toHaveCount(0);
+  await expect(page.getByText('Romanesk', { exact: true })).toHaveCount(0);
+  await page.getByRole('link').filter({ hasText: 'Erken Rönesans' }).click();
+  await expect(page.getByText('Masaccio')).toBeVisible();
+  await expect(page.getByText('Brunelleschi')).toHaveCount(0);
+  await expect(page.getByText('Donatello')).toHaveCount(0);
+  // Michelangelo'nun sayfasında heykelleri yok
+  await page.goto('./#/sanatci/michelangelo');
+  await expect(page.locator('.eser').first()).toBeVisible();
+  await expect(page.locator('.eser', { hasText: 'Pietà' })).toHaveCount(0);
+  await expect(page.locator('.eser', { hasText: /^\s*David/ })).toHaveCount(0);
+  await expect(page.locator('.eser', { hasText: 'Creation of Adam' })).toHaveCount(1);
 });
 
 test('Ayarlar: yedekle → geri yükle gidiş-dönüşü', async ({ page, context }) => {

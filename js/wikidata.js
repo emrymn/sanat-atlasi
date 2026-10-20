@@ -101,14 +101,74 @@ export async function qidCoz(sanatci, getir) {
   return null;
 }
 
+// ---- Yalnızca iki boyutlu resimsel eserler (P31 ve alt sınıfları) ----
+// Bu köklerin alt sınıfı olan türler resim sayılır.
+export const RESIM_KOKLERI = [
+  'Q3305213', // painting
+  'Q219423', // mural
+  'Q22669139', // fresco
+  'Q134194', // fresco painting
+  'Q15711026', // altarpiece
+  'Q1278452', // polyptych (triptik, diptik)
+  'Q282129', // miniature
+  'Q8362', // manuscript illumination
+  'Q48498', // illuminated manuscript
+  'Q93184', // drawing
+  'Q11060274', // print (gravür, ahşap baskı, litografi…)
+  'Q12043905', // pastel artwork
+  'Q18761202', // watercolor painting
+];
+// Alt sınıf zinciri olmadan doğrudan resim sayılan türler (dizi, döngü, poster…)
+export const RESIM_TURLERI = [
+  'Q15727816', // painting series
+  'Q18573970', // group of paintings
+  'Q16905550', // cycle of frescoes
+  'Q16905563', // cycle of paintings
+  'Q22078284', // fresco series
+  'Q114054440', // pair of paintings
+  'Q110315192', // series of similar 2-D artworks
+  'Q19960510', // series of prints
+  'Q19828370', // drawing series
+  'Q1416517', // cartoon (hazırlık çizimi)
+  'Q1411766', // predella
+  'Q3024324', // desco da parto
+  'Q141134046', // apostolado
+  'Q429785', // poster
+  'Q3045706', // e-hon
+];
+// Bu köklerin alt sınıfı olan (ve aynı zamanda resim kökü taşımayan) bir türü varsa eser çıkarılır.
+export const RESIM_DISI_KOKLER = [
+  'Q860861', // sculpture
+  'Q245117', // relief
+  'Q811979', // built structure (bina, kilise, saray…)
+  'Q391414', // architectural element
+  'Q47597', // architectural plan
+  'Q14745', // furniture
+  'Q133067', // mosaic
+  'Q1473346', // stained glass
+  'Q184296', // tapestry
+  'Q41207', // coin
+];
+
+const deger = (liste) => liste.map((q) => 'wd:' + q).join(' ');
+
+// ?item değişkeni için resim süzgeci (SPARQL parçası)
+export function resimSuzgeci(v = '?item') {
+  return `FILTER EXISTS { ${v} wdt:P31 ?rt1 . { ?rt1 wdt:P279* ?rk1 . VALUES ?rk1 { ${deger(RESIM_KOKLERI)} } } UNION { VALUES ?rt1 { ${deger(RESIM_TURLERI)} } } }
+  FILTER NOT EXISTS { ${v} wdt:P31 ?rt2 . ?rt2 wdt:P279* ?nk2 . VALUES ?nk2 { ${deger(RESIM_DISI_KOKLER)} }
+    FILTER NOT EXISTS { ?rt2 wdt:P279* ?rk2 . VALUES ?rk2 { ${deger(RESIM_KOKLERI)} } } }`;
+}
+
 export function eserSorgusu(qid) {
   if (!/^Q\d+$/.test(qid)) throw new Error('geçersiz QID');
   // wdt: yalnızca en iyi sıradaki iddiaları verir. "Muhtemelen/tartışmalı" gibi
   // P5102 niteleyicisi taşıyan (atıf = Q230768 dışındaki) yaratıcı iddiaları elenir.
+  // P84 (mimar) artık kullanılmaz: yalnızca resimler isteniyor.
   return `SELECT ?item (SAMPLE(?img) AS ?resim) (MIN(?inc) AS ?tarih) (SAMPLE(?sl) AS ?sitelinks)
   (SAMPLE(?ltr) AS ?tr) (SAMPLE(?len) AS ?en) (SAMPLE(?lmul) AS ?mul) WHERE {
-  { ?item wdt:P170 wd:${qid} . } UNION { ?item wdt:P84 wd:${qid} . }
+  ?item wdt:P170 wd:${qid} .
   FILTER NOT EXISTS { ?item p:P170 ?st . ?st ps:P170 wd:${qid} ; pq:P5102 ?nit . FILTER(?nit != wd:Q230768) }
+  ${resimSuzgeci('?item')}
   ?item wdt:P18 ?img .
   ?item wikibase:sitelinks ?sl .
   OPTIONAL { ?item wdt:P571 ?inc . }
@@ -116,6 +176,12 @@ export function eserSorgusu(qid) {
   OPTIONAL { ?item rdfs:label ?len . FILTER(LANG(?len) = "en") }
   OPTIONAL { ?item rdfs:label ?lmul . FILTER(LANG(?lmul) = "mul") }
 } GROUP BY ?item ORDER BY DESC(?sitelinks) LIMIT 40`;
+}
+
+// Verilen öğelerden resim olanları döndüren sorgu (kurs eserlerinin sınıflandırılması için)
+export function resimMiSorgusu(qidler) {
+  for (const q of qidler) if (!/^Q\d+$/.test(q)) throw new Error('geçersiz QID');
+  return `SELECT ?item WHERE { VALUES ?item { ${deger(qidler)} } ${resimSuzgeci('?item')} }`;
 }
 
 // Commons dosya adı: P18 değeri "http://commons.wikimedia.org/wiki/Special:FilePath/X.jpg" biçimindedir.

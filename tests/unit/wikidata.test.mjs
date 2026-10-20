@@ -66,10 +66,11 @@ test('SPARQL sonucu: etiket tr→en→mul, etiketsiz eser atılır, dosya adı �
   assert.equal(e[2].baslik, 'Antik eser');
 });
 
-test('eser sorgusu P170/P84 kullanır ve QID doğrular', () => {
+test('eser sorgusu P170 ve resim süzgecini kullanır, QID doğrular', () => {
   const q = eserSorgusu('Q7814');
   assert.match(q, /wdt:P170 wd:Q7814/);
-  assert.match(q, /wdt:P84 wd:Q7814/);
+  assert.doesNotMatch(q, /P84/);
+  assert.match(q, /wdt:P279\*/);
   assert.match(q, /wdt:P18/);
   assert.match(q, /LIMIT 40/);
   assert.throws(() => eserSorgusu('Q1} ?x ?y {'));
