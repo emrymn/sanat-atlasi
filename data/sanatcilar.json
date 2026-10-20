@@ -2476,7 +2476,7 @@
   "not_cikarilmadi": false,
   "dogum": 1571,
   "olum": 1610,
-  "kurs_notu": "Gölgelerde kahverengi ve koyu tonlar kullanan eski ressamlar; Degas'nın yerel olmayan renkleriyle karşıtlık için anılır. Caravaggio Barok chiaroscuro'nun örneğidir.",
+  "kurs_notu": "Barok chiaroscuro'nun (sert ışık-gölge) öncüsü; sıradan insanları model alıp dinsel sahneleri karanlık fonda, yandan gelen sert ışıkla resmeden ressam.",
   "kurs_notu_konu": 52,
   "ad_arama": "Caravaggio",
   "kurs_eserleri": [
@@ -2597,6 +2597,253 @@
   "emin_degil": [
    "Eserlerinin çoğu tarihsiz olduğu için verilen yıllar yaklaşıktır.",
    "İtalya'ya gidip gitmediği bilinmediği için Caravaggio etkisinin doğrudan mı, Utrecht Caravaggistleri aracılığıyla mı geldiği belirsizdir; metinde bu ayrıntıya girilmemiştir."
+  ]
+ },
+ {
+  "id": "bartolomeo-manfredi",
+  "ad": "Bartolomeo Manfredi",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "konu": 31,
+  "konu_baslik": "Baroque Art Caravaggio",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1582,
+  "olum": 1622,
+  "ad_arama": "Bartolomeo Manfredi",
+  "anlatim": "Bartolomeo Manfredi, Mantova yakınlarında doğup Roma'da çalışmış İtalyan ressamdır. Caravaggio'nun ölümünden sonra onun üslubunu en çok yayan sanatçı oldu: Caravaggio'nun kart oyunu, falcı ve meyhane gibi gündelik konularını, karanlık fon ve sert yan ışıkla yarım boy figürlerin kalabalık masa çevresinde toplandığı sahnelere dönüştürdü. Roma'ya gelen Fransız ve Hollandalı genç ressamlar bu formülü ondan öğrendi; Alman ressam ve yazar Joachim von Sandrart buna 'Manfredi yöntemi' (Manfrediana methodus) adını verdi. Kursta işlenen Caravaggio ile Utrecht ekolü arasındaki köprü olarak düşünülebilir.",
+  "taninma": "Karanlık bir odada masa çevresinde toplanmış, yarım boy görülen asker, kumarbaz ve müzisyenler; tek kaynaktan gelen sert yan ışık ve kırmızı, kahverengi ağırlıklı palet. Caravaggio'ya çok yakındır ama figürleri daha kalabalık ve kompozisyonu daha düz, sahne gibi dizilmiştir; Caravaggio'daki psikolojik gerilim ve keskin anlatı ondan yumuşamıştır. Utrecht ressamlarından (Honthorst, ter Brugghen) daha İtalyan, daha koyu ve sıcak tonludur.",
+  "onemli_eserler": [
+   {
+    "baslik": "Cupid Chastised",
+    "tr": "Cezalandırılan Kupid",
+    "yil": "1613"
+   },
+   {
+    "baslik": "The Fortune Teller",
+    "tr": "Falcı",
+    "yil": "y. 1616–1618"
+   },
+   {
+    "baslik": "Bacchus and a Drinker",
+    "tr": "Bakkhos ve İçki İçen Adam",
+    "yil": "y. 1621"
+   }
+  ],
+  "emin_degil": [
+   "Caravaggio'nun atölyesinde ya da yanında çalışıp çalışmadığı kesin değildir; metinde yalnızca üslubunu yaydığı söylenmiştir.",
+   "İmzalı ya da belgeli eseri yok denecek kadar azdır; eser atıfları üslup karşılaştırmasına dayanır ve tarihler yaklaşıktır."
+  ]
+ },
+ {
+  "id": "hendrick-ter-brugghen",
+  "ad": "Hendrick ter Brugghen",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "konu": 31,
+  "konu_baslik": "Baroque Art Caravaggio",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1588,
+  "olum": 1629,
+  "ad_arama": "Hendrick ter Brugghen",
+  "anlatim": "Hendrick ter Brugghen, Utrecht'te Abraham Bloemaert'in yanında yetişmiş Hollandalı ressamdır. Yaklaşık on yıl İtalya'da kaldı ve 1614 civarında Utrecht'e döndüğünde Caravaggio'nun yolunu Kuzey'e taşıyan 'Utrecht Caravaggistleri'nin ilki oldu. Dinsel sahnelerin yanında yarım boy flütçü, gaydacı ve şarkıcı figürleriyle tanınır. Kursta işlenen Caravaggio'dan aldığı gerçekçiliği ve ışık-gölgeyi, Hollanda resmine özgü serin ve açık bir ışıkla birleştirdi. Genç yaşta öldü ve uzun süre unutuldu; 20. yüzyılda yeniden değer kazandı.",
+  "taninma": "Gümüşi, serin ve açık bir ışık; soluk mavi, krem, gri tonlar ve neredeyse porselen gibi pürüzsüz ten. Figürler sıradan, hatta kaba yüzlüdür; yarım boy müzisyenler sık görülür. Caravaggio'nun ve Manfredi'nin koyu, sıcak fonlarından bu aydınlık serinlikle ayrılır; Honthorst'un mum ışıklı, gülen figürlerine karşılık ter Brugghen'de gün ışığı ve durgun, ciddi bir hava vardır.",
+  "onemli_eserler": [
+   {
+    "baslik": "The Calling of Saint Matthew",
+    "tr": "Aziz Matta'nın Çağrılışı",
+    "yil": "1621"
+   },
+   {
+    "baslik": "The Flute Player",
+    "tr": "Flütçü",
+    "yil": "1621"
+   },
+   {
+    "baslik": "Saint Sebastian Tended by Irene",
+    "tr": "İrene'nin Bakımındaki Aziz Sebastian",
+    "yil": "1625"
+   }
+  ],
+  "emin_degil": [
+   "Doğum yeri (Lahey ya da Utrecht çevresi) kaynaklarda farklı geçtiği için metinde belirtilmemiştir.",
+   "İtalya'da kaldığı yıllar yaklaşık olarak 1604–1614 kabul edilir."
+  ]
+ },
+ {
+  "id": "gerrit-van-honthorst",
+  "ad": "Gerrit van Honthorst",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "konu": 31,
+  "konu_baslik": "Baroque Art Caravaggio",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1592,
+  "olum": 1656,
+  "ad_arama": "Gerrit van Honthorst",
+  "anlatim": "Gerrit van Honthorst, Utrecht'te Abraham Bloemaert'in öğrencisi olmuş Hollandalı ressamdır. 1610'larda Roma'da çalıştı ve mum ya da kandil ışığında geçen gece sahneleri yüzünden İtalyanlar ona 'Gherardo delle Notti' (Gecelerin Gerard'ı) dediler. 1620'de Utrecht'e döndü ve Caravaggio'dan aldığı ışık-gölgeyi neşeli kemancılar, içki içenler ve şarkı söyleyen gençlerle yaygınlaştırdı. Sonraki yıllarda Lahey sarayının ve İngiliz kralı I. Charles'ın ressamı olarak daha açık renkli portre ve saray resimlerine yöneldi.",
+  "taninma": "Saklı bir mum ya da kandilin aydınlattığı yüzler: ışık kaynağı çoğu kez bir el ya da figürle örtülür ve yüzler alttan turuncu bir parıltıyla aydınlanır. Utrecht dönemi tür resimlerinde gülen, seyirciye dönüp bakan kemancılar ve içki içenler vardır. La Tour'un sessiz, geometrik mum ışığı sahnelerine karşılık Honthorst daha kalabalık, hareketli ve neşelidir; ter Brugghen'in serin gün ışığından da sıcak gece ışığıyla ayrılır.",
+  "onemli_eserler": [
+   {
+    "baslik": "Christ before the High Priest",
+    "tr": "Başrahibin Önünde İsa",
+    "yil": "y. 1617"
+   },
+   {
+    "baslik": "Adoration of the Child",
+    "tr": "Çocuğa Tapınma",
+    "yil": "y. 1620"
+   },
+   {
+    "baslik": "The Merry Fiddler",
+    "tr": "Neşeli Kemancı",
+    "yil": "1623"
+   },
+   {
+    "baslik": "The Procuress",
+    "tr": "Muhabbetçi Kadın",
+    "yil": "1625"
+   }
+  ],
+  "emin_degil": [
+   "Roma'ya geliş yılı (1610 ile 1616 arası) kaynaklarda farklı verilir."
+  ]
+ },
+ {
+  "id": "dirck-van-baburen",
+  "ad": "Dirck van Baburen",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "konu": 31,
+  "konu_baslik": "Baroque Art Caravaggio",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1595,
+  "olum": 1624,
+  "ad_arama": "Dirck van Baburen",
+  "anlatim": "Dirck van Baburen, Utrecht'te yetişmiş ve 1610'ların ortasından 1620 civarına kadar Roma'da çalışmış Hollandalı ressamdır. Roma'da San Pietro in Montorio kilisesi için Caravaggio'yu doğrudan anımsatan bir 'İsa'nın Gömülüşü' yaptı. Utrecht'e döndükten sonra Honthorst ve ter Brugghen ile birlikte Utrecht Caravaggistlerinin üçlüsünü oluşturdu, ama genç yaşta öldü. Çalgı çalan gençleri ve 'Muhabbetçi Kadın' tablosuyla tanınır; bu tablo kursta işlenen Vermeer'in iki resminde duvarda asılı resim olarak görünür, çünkü Vermeer'in kayınvalidesine aitti.",
+  "taninma": "İri, yakından görülen yarım boy figürler resim yüzeyine adeta sıkıştırılmıştır; geniş, düz renk alanları, kalın konturlar ve kaba, gündelik tipler. Işık Caravaggio'daki gibi yandan gelir ama gölgeler daha yumuşaktır. Ter Brugghen'in incelikli serinliğine ve Honthorst'un mum ışığına karşılık Baburen daha iri, daha sert ve 'gürültülü'dür.",
+  "onemli_eserler": [
+   {
+    "baslik": "The Entombment of Christ",
+    "tr": "İsa'nın Gömülüşü",
+    "yil": "y. 1617"
+   },
+   {
+    "baslik": "Young Man Playing a Jew's Harp",
+    "tr": "Ağız Kopuzu Çalan Genç",
+    "yil": "1621"
+   },
+   {
+    "baslik": "The Procuress",
+    "tr": "Muhabbetçi Kadın",
+    "yil": "1622"
+   },
+   {
+    "baslik": "Prometheus Being Chained by Vulcan",
+    "tr": "Vulcanus'un Zincirlediği Prometheus",
+    "yil": "1623"
+   }
+  ],
+  "emin_degil": [
+   "Doğum yılı tam bilinmez (1594 ya da 1595); 1595 alınmıştır."
+  ]
+ },
+ {
+  "id": "valentin-de-boulogne",
+  "ad": "Valentin de Boulogne",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "konu": 31,
+  "konu_baslik": "Baroque Art Caravaggio",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1591,
+  "olum": 1632,
+  "ad_arama": "Valentin de Boulogne",
+  "anlatim": "Valentin de Boulogne, Paris yakınlarındaki Coulommiers'de doğmuş, bütün kariyerini Roma'da geçirmiş Fransız ressamdır. Caravaggio'nun en sadık ve en güçlü takipçilerinden sayılır: kalabalık meyhane, konser, kumar ve falcı sahnelerini Manfredi'den öğrendiği düzenle ama daha derin bir duyguyla resmetti. Barberini ailesinin desteğiyle Aziz Petrus Bazilikası için bir sunak resmi siparişi aldı. Kursta işlenen Caravaggio'nun etkisinin bir kuşak sonra hâlâ ne kadar canlı olduğunu gösterir.",
+  "taninma": "Karanlık fonda, masa çevresinde toplanmış müzisyen, asker ve kumarbazlar; ama hiçbiri gülmez: yüzlerde dalgın, melankolik bir sessizlik vardır. Kırmızı ve kahverengi ağırlıklı, zengin ve koyu bir palet; masanın önünde çoğu kez antik bir kabartma ya da mermer blok görülür. Manfredi'ye benzer ama daha incelikli ve duygulu; Honthorst'un neşeli figürlerinin tam tersidir.",
+  "onemli_eserler": [
+   {
+    "baslik": "Card Sharps",
+    "tr": "Hilebaz Kumarbazlar",
+    "yil": "y. 1615–1618"
+   },
+   {
+    "baslik": "Concert with a Bas-Relief",
+    "tr": "Kabartmalı Konser",
+    "yil": "y. 1622–1625"
+   },
+   {
+    "baslik": "Martyrdom of Saints Processus and Martinian",
+    "tr": "Aziz Processus ile Martinianus'un Şehitliği",
+    "yil": "1629–1630"
+   }
+  ],
+  "emin_degil": [
+   "Roma'ya geliş yılı belirsizdir (1609 ile 1614 arası).",
+   "Ölümüyle ilgili, gece eğlencesinden sonra soğuk bir çeşmeye girdiği yolundaki anlatı kaynaklarda geçer ama doğrulanamadığı için metne alınmamıştır."
+  ]
+ },
+ {
+  "id": "jusepe-de-ribera",
+  "ad": "Jusepe de Ribera",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "konu": 31,
+  "konu_baslik": "Baroque Art Caravaggio",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1591,
+  "olum": 1652,
+  "ad_arama": "Jusepe de Ribera",
+  "anlatim": "Jusepe de Ribera, Valensiya yakınlarındaki Xàtiva'da doğmuş İspanyol ressamdır; genç yaşta İtalya'ya gitti ve 1616'dan ölümüne kadar o dönemde İspanyol yönetimindeki Napoli'de çalıştı. İtalyanlar ona 'Lo Spagnoletto' (Küçük İspanyol) dediler. Kursta işlenen Caravaggio'nun sert ışık-gölgesini yaşlı, kırışık bedenlere ve şehitlik sahnelerine uyguladı; geç döneminde paleti açıldı ve renkleri aydınlandı. Napoli üzerinden İspanyol resmine de güçlü bir etki yaptı.",
+  "taninma": "Karanlıktan çıkan, kırışık derili, kemikli yaşlı adamlar: azizler, filozoflar, dilenciler. Ten, yaşlılığın her izi görünecek kadar dokulu ve kalın boyalıdır; şehitlik sahnelerinde acı açıkça gösterilir. Caravaggio'nun genç, pürüzsüz figürlerinden bu yaşlı ve yıpranmış bedenlerle ayrılır; Zurbarán'ın sakin, heykel gibi keşişlerine karşılık Ribera daha dramatik ve dokunsal, daha 'etli'dir.",
+  "onemli_eserler": [
+   {
+    "baslik": "Magdalena Ventura with Her Husband (The Bearded Woman)",
+    "tr": "Kocasıyla Magdalena Ventura (Sakallı Kadın)",
+    "yil": "1631"
+   },
+   {
+    "baslik": "Apollo and Marsyas",
+    "tr": "Apollon ve Marsyas",
+    "yil": "1637"
+   },
+   {
+    "baslik": "The Martyrdom of Saint Philip",
+    "tr": "Aziz Filipus'un Şehitliği",
+    "yil": "1639"
+   },
+   {
+    "baslik": "The Clubfoot",
+    "tr": "Topal Çocuk",
+    "yil": "1642"
+   }
+  ],
+  "emin_degil": [
+   "İspanyol olduğu için İspanyol Barok akımına da konabilirdi; Caravaggio takipçisi olarak tanındığı için burada tutulmuştur."
+  ]
+ },
+ {
+  "id": "alessandro-magnasco",
+  "ad": "Alessandro Magnasco",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "konu": 31,
+  "konu_baslik": "Baroque Art Caravaggio",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1667,
+  "olum": 1749,
+  "ad_arama": "Alessandro Magnasco",
+  "anlatim": "Alessandro Magnasco, Cenova'da doğmuş, uzun yıllar Milano'da ve bir dönem Floransa'da Medici sarayı için çalışmış geç Barok İtalyan ressamdır; 'Lissandrino' lakabıyla da anılır. Caravaggio'dan bir asır sonra yaşadı ve onun takipçisi değildir, ama koyu fonları ve ışık-gölge karşıtlığıyla bu akımın karanlık geleneğini sürdürür. Keşişler, çingeneler, askerler, sorgu ve hapishane sahneleri ile fırtınalı manzaralarıyla tanınır. Hızlı, titrek fırça darbeleri 18. yüzyıl Venedik ressamlarını ve çok sonra bazı modern ressamları etkiledi.",
+  "taninma": "Kahverengi-gri karanlık bir ortamda küçük, uzun, iskelet gibi ince figürler; hızlı, titrek, alev gibi kıvrılan fırça darbeleri ve beyaz ışık vuruşları. Keşiş toplulukları, harabeler ve fırtınalı deniz kıyıları sık görülür. Caravaggio ve takipçilerinin büyük, yakın planda, ağır ve heykel gibi figürlerinin tam tersine Magnasco'da figürler küçüktür ve sahnede eriyip giderler.",
+  "onemli_eserler": [
+   {
+    "baslik": "Reception in a Garden in Albaro",
+    "tr": "Albaro'da Bir Bahçede Kabul",
+    "yil": "y. 1735–1740"
+   }
+  ],
+  "emin_degil": [
+   "Caravaggio'dan yaklaşık bir asır sonra yaşamış, ona doğrudan bağlı olmayan geç Barok bir ressamdır; uygulamada ayrı bir 'geç İtalyan Barok' akımı olmadığı için bu akıma konmuştur.",
+   "Eserlerinin çoğu tarihsizdir; atıflar üsluba dayanır, bu yüzden yalnızca belgeli bir eser listelenmiştir."
   ]
  },
  {

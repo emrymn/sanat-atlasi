@@ -729,3 +729,12 @@ Toplam: 13 sanatçıya 388 WikiArt eseri (yeni ya da mevcut esere katılan). Ön
 4. **En önemli bulgu:** bazı `kurs_notu` alanları ders notlarındaki adaşından kaymıştı (Charles Le Brun/Garnier/Barry ← aktör Charles Laughton; Louis Le Vau ← XV. Louis; Henry Fuseli ← IV. Henri; Thomas Jefferson ← Thomas Aquinas; Francis Bacon ← I. François; Goya ← Francisco Herrera; Blake ← Hogarth; Caillebotte ← Courbet; Pietro Lorenzetti ← Perugino; Orazio ← Artemisia; Ghiberti ← Lorenzo de' Medici). Bu 13 kayıttaki not artık ders notundan değil, Claude'un yazdığı kısa tanımdan oluşuyor.
 5. **Wikidata vandalizmi:** Rembrandt'ın *Savurgan Oğlun Dönüşü* kaydının İngilizce etiketi Wikidata'da bozulmuştu; önbellekteki `baslikEn` silindi (uygulamada gösterilmiyordu). `scripts/onbellek.mjs` yeniden çalıştırılırsa Wikidata düzelmediyse geri gelebilir.
 6. Sürüm 1.9.1.
+
+## İş 3 · Caravaggio takipçileri (2026-10-20)
+
+1. **Yedi yeni kurs dışı sanatçı**, "İtalyan Barok ve Caravaggizm" akımında, Konu 31 (Caravaggio) ile açılır: Bartolomeo Manfredi, Hendrick ter Brugghen, Gerrit van Honthorst, Dirck van Baburen, Valentin de Boulogne, Jusepe de Ribera, Alessandro Magnasco. Amaç Caravaggio için gerçekten zor yanlış şıklar. Metinleri (anlatim, taninma, önemli eserler) Claude yazdı; emin olunmayan noktalar `emin_degil` alanında.
+2. **Ribera** İspanyol Barok'a da konabilirdi; Caravaggio takipçisi olarak tanındığı için Caravaggizm'de tutuldu.
+3. **Magnasco** Caravaggio'dan yaklaşık bir asır sonra yaşamış geç Barok bir ressam; Emre'nin isteğiyle eklendi, ayrı bir geç İtalyan Barok akımı olmadığı için bu akıma kondu. Üslubu (küçük, titrek figürler) çok farklı olduğu için onun için zor çeldirici olmaz.
+4. **Eser listeleri:** derleme zamanı önbelleğe (`eserler_onbellek.json`) henüz eklenmedi; uygulama bu sanatçıların eserlerini ilk açılışta canlı Wikidata'dan çeker (internet gerekir) ve IndexedDB'de saklar. Önbellek sonraki pakette `node scripts/onbellek.mjs <id…>` ile eklenecek. Biyografi ("Hayatı") bölümü bu sanatçılarda henüz yok.
+5. **Caravaggio'nun kurs notu** Degas dersinden kaymıştı ("Gölgelerde kahverengi ve koyu tonlar kullanan eski ressamlar…"); Claude'un yazdığı kısa tanımla değiştirildi.
+6. Kısa adlar: Ribera ve Valentin. Sürüm 1.10.0.
