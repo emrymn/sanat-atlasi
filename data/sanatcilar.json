@@ -385,7 +385,7 @@
   "not_cikarilmadi": false,
   "dogum": 1280,
   "olum": 1348,
-  "kurs_notu": "Merkezi planlı yapıyı gösteren, Raphael'inkiyle karşılaştırılan resmin ressamı.",
+  "kurs_notu": "Sienalı ressam; Meryem'in Doğumu'nda (1342) üç bölmeli çerçeveyi resimdeki odanın mimarisiyle birleştirerek derin bir iç mekân kurar.",
   "kurs_notu_konu": 18,
   "ad_arama": "Pietro Lorenzetti",
   "kurs_eserleri": [
@@ -470,7 +470,7 @@
     "lisans": "Public domain"
    },
    {
-    "baslik": "Mallarını yolda dağıtan Francis (Üst Kilise freski)",
+    "baslik": "Pelerinini yoksul bir şövalyeye veren Francis (Üst Kilise freski)",
     "tarih": "",
     "yer": "Basilica of St. Francis, Assisi",
     "konu": 3,
@@ -633,7 +633,7 @@
   "not_cikarilmadi": false,
   "dogum": 1378,
   "olum": 1455,
-  "kurs_notu": "Floransa siyasetinin ve kültürünün merkezi figürü.",
+  "kurs_notu": "1401 Vaftizhane kapıları yarışmasını kazanan ve Cennet Kapıları'nı yapan Floransalı heykeltıraş.",
   "kurs_notu_konu": 1,
   "ad_arama": "Lorenzo Ghiberti",
   "kurs_eserleri": [
@@ -1642,7 +1642,7 @@
   "not_cikarilmadi": false,
   "dogum": 1483,
   "olum": 1520,
-  "kurs_notu": "Floransa'da yetişmiş, II. Julius'un Roma'ya çağırdığı ressam; Atina Okulu'nu yaptı ve kendini sağ alt köşeye koydu.",
+  "kurs_notu": "Perugino'nun yanında yetişip Floransa'da olgunlaşmış, II. Julius'un Roma'ya çağırdığı ressam; Atina Okulu'nu yaptı ve kendini sağ alt köşeye koydu.",
   "kurs_notu_konu": 20,
   "ad_arama": "Raphael",
   "kurs_eserleri": [
@@ -2036,7 +2036,7 @@
   "not_cikarilmadi": false,
   "dogum": 1532,
   "olum": 1625,
-  "kurs_notu": "Babası tarafından yetiştirilen Rönesans kadın ressamı; İspanya kraliçesinin saray ressamı ve sırdaşı oldu, evlenince resmi bıraktı.",
+  "kurs_notu": "Babası tarafından yetiştirilen Rönesans kadın ressamı; İspanya kraliçesinin saray ressamı ve sırdaşı oldu, evlenince saraydan ayrıldı ama resim yapmayı sürdürdü.",
   "kurs_notu_konu": 17,
   "ad_arama": "Sofonisba Anguissola",
   "kurs_eserleri": [
@@ -2276,7 +2276,7 @@
   "not_cikarilmadi": false,
   "dogum": 1508,
   "olum": 1580,
-  "kurs_notu": "Vicenza ve Venedik'te çalışan mimar; Teatro Olimpico, Villa Rotonda ve San Giorgio Maggiore'nin tasarımcısı, Vitruvius'u yeniden yayımlar.",
+  "kurs_notu": "Vicenza ve Venedik'te çalışan mimar; Teatro Olimpico, Villa Rotonda ve San Giorgio Maggiore'nin tasarımcısı, Daniele Barbaro'nun Vitruvius baskısının (1556) çizimlerini yapar.",
   "kurs_notu_konu": 26,
   "ad_arama": "Andrea Palladio",
   "kurs_eserleri": [
@@ -2657,7 +2657,7 @@
   "not_cikarilmadi": false,
   "dogum": 1563,
   "olum": 1639,
-  "kurs_notu": "Susanna'yı gergin ve savunmasız resmeden, kendi tecavüz davası bu konuya ilgisiyle ilişkilendirilen ressam.",
+  "kurs_notu": "Caravaggio'nun yakın çevresinden Barok ressam; Artemisia'nın babası ve hocası, ömrünün sonunda Londra'da I. Charles'ın saray ressamı oldu.",
   "kurs_notu_konu": 32,
   "ad_arama": "Orazio Gentileschi",
   "kurs_eserleri": [
@@ -3071,7 +3071,7 @@
   "not_cikarilmadi": false,
   "dogum": 1612,
   "olum": 1670,
-  "kurs_notu": "Madame du Barry ve Louise O'Murphy'nin bağlı olduğu Fransız kralı.",
+  "kurs_notu": "Vaux-le-Vicomte'u yapan ve Versailles'ın ilk büyük genişletmesini tasarlayan XIV. Louis dönemi mimarı.",
   "kurs_notu_konu": 38,
   "ad_arama": "Louis Le Vau",
   "kurs_eserleri": []
@@ -3086,7 +3086,7 @@
   "not_cikarilmadi": false,
   "dogum": 1619,
   "olum": 1690,
-  "kurs_notu": "Rembrandt'ın hayatını anlatan eski bir filmde başrolü oynayan aktör.",
+  "kurs_notu": "XIV. Louis'nin baş ressamı; Kraliyet Resim ve Heykel Akademisi'ni yöneten ve Versailles'ın süslemesini (Aynalı Galeri tavanı) yürüten ressam.",
   "kurs_notu_konu": 32,
   "ad_arama": "Charles Le Brun",
   "kurs_eserleri": []
@@ -3125,7 +3125,7 @@
   "not_cikarilmadi": false,
   "dogum": 1646,
   "olum": 1708,
-  "kurs_notu": "Mansard çatısıyla tanınan Versailles mimarı.",
+  "kurs_notu": "Aynalı Galeri, Grand Trianon ve Invalides kubbesiyle tanınan Versailles mimarı; mansard çatı adını büyük amcası François Mansart'tan alır.",
   "kurs_notu_konu": 37,
   "ad_arama": "Jules Hardouin-Mansart",
   "kurs_eserleri": []
@@ -3728,7 +3728,7 @@
   "not_cikarilmadi": false,
   "dogum": 1743,
   "olum": 1826,
-  "kurs_notu": "Aristoteles'in fikirlerini teoloji ve mantıkta kullanan yazar.",
+  "kurs_notu": "Monticello'yu ve Virginia Üniversitesi'ni tasarlayan, Amerika'da Neoklasik mimarinin öncüsü olan ABD'nin 3. başkanı.",
   "kurs_notu_konu": 2,
   "ad_arama": "Thomas Jefferson",
   "kurs_eserleri": [
@@ -3857,7 +3857,7 @@
   "not_cikarilmadi": false,
   "dogum": 1757,
   "olum": 1827,
-  "kurs_notu": "Habersizce bir şeyin parçası olan kişi temasını sonra işleyecek İngiliz ressam.",
+  "kurs_notu": "Kendi şiir kitaplarını gravürle resimleyip basan, hayalci ve mistik konular işleyen İngiliz şair-ressam.",
   "kurs_notu_konu": 38,
   "ad_arama": "William Blake",
   "kurs_eserleri": [
@@ -3881,7 +3881,7 @@
   "not_cikarilmadi": false,
   "dogum": 1741,
   "olum": 1825,
-  "kurs_notu": "1598'de Nantes Fermanı'nı çıkaran Fransız kralı.",
+  "kurs_notu": "İsviçre doğumlu, Londra'da çalışan Romantik ressam; Kâbus (The Nightmare) gibi doğaüstü ve edebî sahneleriyle tanınır.",
   "kurs_notu_konu": 37,
   "ad_arama": "Henry Fuseli",
   "kurs_eserleri": [
@@ -3994,7 +3994,7 @@
   "not_cikarilmadi": false,
   "dogum": 1746,
   "olum": 1828,
-  "kurs_notu": "Velázquez'in Sevilla'daki ilk hocası.",
+  "kurs_notu": "Velázquez'i örnek alan İspanyol saray ressamı; Los Caprichos, Savaşın Felaketleri, 3 Mayıs 1808 ve Kara Resimler'in sanatçısı.",
   "kurs_notu_konu": 34,
   "ad_arama": "Francisco de Goya",
   "kurs_eserleri": [
@@ -4122,7 +4122,7 @@
   "not_cikarilmadi": false,
   "dogum": 1795,
   "olum": 1860,
-  "kurs_notu": "Rembrandt'ın hayatını anlatan eski bir filmde başrolü oynayan aktör.",
+  "kurs_notu": "Londra'daki Westminster Sarayı'nın (Parlamento binası) Neogotik üslupta yeniden yapımını tasarlayan mimarlar (Barry 1795–1860; Pugin 1812–1852).",
   "kurs_notu_konu": 32,
   "ad_arama": "Charles Barry",
   "kurs_eserleri": []
@@ -4143,7 +4143,7 @@
   "onemli_eserler": [
    {
     "baslik": "The Girlhood of Mary Virgin",
-    "tr": "Meryem'in Kızlığı",
+    "tr": "Meryem'in Genç Kızlığı",
     "yil": "1848–1849"
    },
    {
@@ -4410,7 +4410,7 @@
   "not_cikarilmadi": false,
   "dogum": 1825,
   "olum": 1898,
-  "kurs_notu": "Rembrandt'ın hayatını anlatan eski bir filmde başrolü oynayan aktör.",
+  "kurs_notu": "Paris Operası'nın (Palais Garnier) mimarı; görkemli, eklektik Beaux-Arts üslubunun temsilcisi.",
   "kurs_notu_konu": 32,
   "ad_arama": "Charles Garnier",
   "kurs_eserleri": [
@@ -4583,7 +4583,7 @@
   "not_cikarilmadi": false,
   "dogum": 1848,
   "olum": 1894,
-  "kurs_notu": "İzlenimcilerden hemen önce gelen, çiftlik sahibi babasının mali desteğini alan ressam.",
+  "kurs_notu": "İzlenimcilere 1876'da katılan, ailesinden kalan servetle grubun sergilerini destekleyip resimlerini satın alan ressam.",
   "kurs_notu_konu": 52,
   "ad_arama": "Gustave Caillebotte",
   "kurs_eserleri": [
@@ -4708,7 +4708,7 @@
     "lisans": "Public domain"
    },
    {
-    "baslik": "The Letter (mektup yazan kadın baskısı)",
+    "baslik": "The Letter (mektubunun zarfını kapatan kadın baskısı)",
     "tarih": "1891",
     "yer": "",
     "konu": 53,
@@ -5820,7 +5820,7 @@
   "not_cikarilmadi": true,
   "dogum": 1909,
   "olum": 1992,
-  "kurs_notu": "Fransa Kralı; An Allegory'nin belki diplomatik hediye olarak gönderildiği kişi.",
+  "kurs_notu": "Bükülmüş, çarpıtılmış figürleri ve triptikleriyle tanınan, savaş sonrası figüratif resmin İrlanda doğumlu İngiliz ressamı.",
   "kurs_notu_konu": 24,
   "ad_arama": "Francis Bacon",
   "kurs_eserleri": []
