@@ -1584,6 +1584,8 @@ async function basla() {
   d.ortaYillar = akimOrtaYillari(sanatcilar);
   d.ilerleme = await ilerlemeYukle(() => jsonGetir('data/baslangic_ilerleme.json'));
   d.yarim = await yarimYukle();
+  // Yarım oturum varken uygulama bir oturum adresinde açıldıysa (yenileme, yeni sürüm) Bugün'deki devam kartına dön
+  if (d.yarim && /^#\/pekistir\/(karisik|donem\/.+)$/.test(location.hash)) history.replaceState(null, '', '#/');
   gunlukGuncelle(d.ilerleme, bugun());
   kaydet();
   temaUygula();
