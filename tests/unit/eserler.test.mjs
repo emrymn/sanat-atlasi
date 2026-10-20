@@ -96,7 +96,20 @@ test('pekiştirme havuzu: görseli elle kötü işaretli ya da kullanıcının r
 });
 
 test('önbellek kaydı eser nesnesine çevrilir', () => {
-  const e = onbellekEseri({ baslik: 'Ağıt', yil: 1305, muze: 'Scrovegni', kurs: true, konu: 4, qid: 'Q1', kaynaklar: ['kurs', 'wikidata', 'nga'], sl: 9, gorseller: [{ k: 'nga', i: 'https://api.nga.gov/iiif/x' }, { k: 'commons', d: 'A.jpg' }] });
+  const e = onbellekEseri({
+    baslik: 'Ağıt',
+    yil: 1305,
+    muze: 'Scrovegni',
+    kurs: true,
+    konu: 4,
+    qid: 'Q1',
+    kaynaklar: ['kurs', 'wikidata', 'nga'],
+    sl: 9,
+    gorseller: [
+      { k: 'nga', i: 'https://api.nga.gov/iiif/x' },
+      { k: 'commons', d: 'A.jpg' },
+    ],
+  });
   assert.equal(e.kaynak, 'kurs');
   assert.equal(e.tarih, '1305');
   assert.equal(e.kursKonu, 4);

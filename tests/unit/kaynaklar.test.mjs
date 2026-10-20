@@ -7,9 +7,20 @@ import { csvAyristir } from '../../scripts/kaynaklar/nga.mjs';
 import { gorselUrl, gorselAnahtari, secilenGorsel, kotuIsaretle, pekistirmeyeUygunMu } from '../../js/gorsel.js';
 
 test('atıf süzgeci: atölye, çevre, takipçi, atfedilen, kopya, okul alınmaz', () => {
-  for (const x of ['Workshop of Rembrandt', 'Circle of Titian', 'Follower of Caravaggio', 'Attributed to Giotto', 'Copy after Raphael', 'School of Fontainebleau', 'Titian and Workshop', 'Style of Boucher', 'Rembrandt Workshop (possibly Govert Flinck)'])
+  for (const x of [
+    'Workshop of Rembrandt',
+    'Circle of Titian',
+    'Follower of Caravaggio',
+    'Attributed to Giotto',
+    'Copy after Raphael',
+    'School of Fontainebleau',
+    'Titian and Workshop',
+    'Style of Boucher',
+    'Rembrandt Workshop (possibly Govert Flinck)',
+  ])
     assert.equal(dogrudanAtifMi(x), false, x);
-  for (const x of ['Rembrandt van Rijn', 'Claude Monet (French, 1840–1926)', '', 'Jean-Honoré Fragonard', 'Théodore Géricault']) assert.equal(dogrudanAtifMi(x), true, x);
+  for (const x of ['Rembrandt van Rijn', 'Claude Monet (French, 1840–1926)', '', 'Jean-Honoré Fragonard', 'Théodore Géricault'])
+    assert.equal(dogrudanAtifMi(x), true, x);
 });
 
 test('sanatçı eşleşmesi: ad + doğum yılı ±3; yıl yoksa alınmaz', () => {
@@ -20,7 +31,12 @@ test('sanatçı eşleşmesi: ad + doğum yılı ±3; yıl yoksa alınmaz', () =>
   assert.equal(sanatciEslesirMi(monet, { ad: 'Claude Monet', dogum: 1850 }), false);
   assert.equal(sanatciEslesirMi(monet, { ad: 'Claude Monet', dogum: null }), false);
   assert.equal(sanatciEslesirMi(monet, { ad: 'Michel Monet', dogum: 1840 }), false);
-  assert.equal(sanatciEslesirMi({ ad: 'Rembrandt van Rijn', ad_arama: 'Rembrandt', dogum: 1606 }, { ad: 'Rembrandt Harmensz. van Rijn', dogum: 1606 }, ['Rembrandt Harmensz. van Rijn']), true);
+  assert.equal(
+    sanatciEslesirMi({ ad: 'Rembrandt van Rijn', ad_arama: 'Rembrandt', dogum: 1606 }, { ad: 'Rembrandt Harmensz. van Rijn', dogum: 1606 }, [
+      'Rembrandt Harmensz. van Rijn',
+    ]),
+    true,
+  );
 });
 
 test('müze türleri: yalnızca iki boyutlu resimsel', () => {
@@ -35,6 +51,11 @@ test('aynı eser: başlık + tarih ±5 + müze', () => {
   assert.equal(ayniEserMi(a, { baslik: 'Lamentation', yil: 1305, muze: 'Art Institute of Chicago' }), false, 'başka müze');
   assert.equal(ayniEserMi(a, { baslik: 'Lamentation', yil: null, muze: '' }), true, 'bilinmeyen alan engel değil');
   assert.equal(ayniEserMi(a, { baslik: 'Pietà', yil: 1305, muze: '' }), false);
+  assert.equal(
+    ayniEserMi({ baslik: 'The School of Athens (Atina Okulu)' }, { baslik: 'Atina Okulu', baslikEn: 'The School of Athens' }),
+    true,
+    'parantezli kurs başlığı',
+  );
 });
 
 test('görsel puanı: müze taraması > Google Art Project > müze kaynaklı Commons > diğer > fotoğraf gibi', () => {
@@ -43,7 +64,15 @@ test('görsel puanı: müze taraması > Google Art Project > müze kaynaklı Com
   assert.equal(p('Vermeer_-_The_Milkmaid_-_Google_Art_Project.jpg'), 80);
   assert.equal(p('Giotto_di_Bondone_-_Last_Judgment_-_WGA09228.jpg'), 70);
   assert.equal(p('Mona_Lisa.jpg'), 50);
-  for (const d of ['Mona_Lisa_framed.jpg', 'Nightwatch_in_situ.jpg', 'Guernica_exhibition_2017.jpg', 'Louvre_gallery_view.jpg', 'Leonardo_St_Anne_taken_at_the_Louvre.jpg', 'Perugino,_Consegna_-_panoramio.jpg']) assert.equal(p(d), 10, d);
+  for (const d of [
+    'Mona_Lisa_framed.jpg',
+    'Nightwatch_in_situ.jpg',
+    'Guernica_exhibition_2017.jpg',
+    'Louvre_gallery_view.jpg',
+    'Leonardo_St_Anne_taken_at_the_Louvre.jpg',
+    'Perugino,_Consegna_-_panoramio.jpg',
+  ])
+    assert.equal(p(d), 10, d);
   assert.equal(fotoGibiMi('Arnolfini_National_Gallery_London.jpg'), false, 'kurum adı');
   assert.equal(gorselPuani({ k: 'commons', d: 'Kotu.jpg' }, { 'kotu.jpg': 'kotu' }), 5);
 });
@@ -52,12 +81,38 @@ test('birleştirme: kurs önce; Wikidata ve müze kopyaları tek esere iner; mü
   const sonuc = birlestir({
     kurs: [{ baslik: 'Ağıt', tarih: '1305', yer: 'Padova', lisans: 'PD', konu: 4, dosya: 'Giotto_Lamentation_photo_in_situ.jpg', qid: 'Q1' }],
     wd: [
-      { qid: 'Q1', baslik: 'Ağıt', baslikEn: 'Lamentation', yil: 1305, dosyalar: ['Giotto_Lamentation_GAP_-_Google_Art_Project.jpg'], sl: 20, muze: '', muzeIdler: {} },
-      { qid: 'Q2', baslik: 'Madonna', baslikEn: 'Madonna', yil: 1310, dosyalar: ['Madonna.jpg'], sl: 30, muze: 'National Gallery of Art', muzeIdler: { nga: '41' } },
+      {
+        qid: 'Q1',
+        baslik: 'Ağıt',
+        baslikEn: 'Lamentation',
+        yil: 1305,
+        dosyalar: ['Giotto_Lamentation_GAP_-_Google_Art_Project.jpg'],
+        sl: 20,
+        muze: '',
+        muzeIdler: {},
+      },
+      {
+        qid: 'Q2',
+        baslik: 'Madonna',
+        baslikEn: 'Madonna',
+        yil: 1310,
+        dosyalar: ['Madonna.jpg'],
+        sl: 30,
+        muze: 'National Gallery of Art',
+        muzeIdler: { nga: '41' },
+      },
       { qid: 'Q3', baslik: 'Az bilinen', baslikEn: 'Obscure', yil: 1320, dosyalar: ['Obscure.jpg'], sl: 1, muze: '', muzeIdler: {} },
     ],
     muzeler: [
-      { kaynak: 'nga', kimlik: '41', baslik: 'Madonna and Child', yil: 1310, muze: 'National Gallery of Art, Washington', populer: 1, gorsel: { k: 'nga', i: 'https://api.nga.gov/iiif/m' } },
+      {
+        kaynak: 'nga',
+        kimlik: '41',
+        baslik: 'Madonna and Child',
+        yil: 1310,
+        muze: 'National Gallery of Art, Washington',
+        populer: 1,
+        gorsel: { k: 'nga', i: 'https://api.nga.gov/iiif/m' },
+      },
       { kaynak: 'aic', kimlik: '7', baslik: 'Obscure', yil: 1322, muze: 'Art Institute of Chicago', populer: 3, gorsel: { k: 'aic', i: 'abc' } },
       { kaynak: 'met', kimlik: '9', baslik: 'Saint', yil: 1315, muze: 'The Met', populer: 0, gorsel: { k: 'met', u: 'https://images.metmuseum.org/x.jpg' } },
     ],
@@ -80,8 +135,14 @@ test('birleştirme: elle kötü işaretli tek görseli olan eser pekiştirmeye g
 });
 
 test('Commons dosya adından başlık ve yıl', () => {
-  assert.deepEqual(dosyaBasligi('Johannes_Vermeer_(1632-1675)_-_The_Girl_With_The_Pearl_Earring_(1665).jpg', ['Johannes Vermeer'], [1632, 1675]), { baslik: 'The Girl With The Pearl Earring', yil: 1665 });
-  assert.deepEqual(dosyaBasligi('Jan_Vermeer_van_Delft_-_The_Milkmaid_-_Google_Art_Project.jpg', ['Jan Vermeer van Delft']), { baslik: 'The Milkmaid', yil: null });
+  assert.deepEqual(dosyaBasligi('Johannes_Vermeer_(1632-1675)_-_The_Girl_With_The_Pearl_Earring_(1665).jpg', ['Johannes Vermeer'], [1632, 1675]), {
+    baslik: 'The Girl With The Pearl Earring',
+    yil: 1665,
+  });
+  assert.deepEqual(dosyaBasligi('Jan_Vermeer_van_Delft_-_The_Milkmaid_-_Google_Art_Project.jpg', ['Jan Vermeer van Delft']), {
+    baslik: 'The Milkmaid',
+    yil: null,
+  });
   assert.equal(TARAMA.test('Postcard_of_Dresden.jpg'), false);
   assert.equal(TARAMA.test('The_Milkmaid_-_Google_Art_Project.jpg'), true);
 });
@@ -100,7 +161,13 @@ test('görsel URL ve "Görsel kötü" tercihi', () => {
   assert.equal(gorselUrl({ k: 'nga', i: 'https://api.nga.gov/iiif/u' }, 800), 'https://api.nga.gov/iiif/u/full/!800,800/0/default.jpg');
   assert.equal(gorselUrl({ k: 'met', u: 'https://images.metmuseum.org/a.jpg' }), 'https://images.metmuseum.org/a.jpg');
   assert.match(gorselUrl({ k: 'commons', d: 'A b.jpg' }, 400), /Special:FilePath\/A_b\.jpg\?width=400$/);
-  const eser = { anahtar: 'q:Q1', gorseller: [{ k: 'aic', i: 'abc' }, { k: 'commons', d: 'A.jpg' }] };
+  const eser = {
+    anahtar: 'q:Q1',
+    gorseller: [
+      { k: 'aic', i: 'abc' },
+      { k: 'commons', d: 'A.jpg' },
+    ],
+  };
   const kotuler = {};
   assert.equal(secilenGorsel(eser, kotuler).k, 'aic');
   assert.equal(kotuIsaretle(eser, eser.gorseller[0], kotuler).k, 'commons');
@@ -117,4 +184,43 @@ test('müze kaydının yılı sanatçının hayatıyla uyuşmalı', () => {
   assert.equal(makulYilMi({ dogum: 1488, olum: 1576 }, 1485), false, 'doğumundan önce');
   assert.equal(makulYilMi(raffaello, null), true);
   assert.equal(makulYilMi({ dogum: null, olum: 1416 }, 1410), true);
+});
+
+test('elle "çıkar" denen görsel atılır; görseli kalmayan eser düşer', () => {
+  const sonuc = birlestir({
+    wd: [
+      { qid: 'Q1', baslik: 'A', dosyalar: ['A.jpg', 'A_bina.jpg'], sl: 2, muze: '', muzeIdler: {} },
+      { qid: 'Q2', baslik: 'B', dosyalar: ['B.jpg'], sl: 1, muze: '', muzeIdler: {} },
+    ],
+    kararlar: { 'a_bina.jpg': 'cikar', 'b.jpg': 'cikar' },
+  });
+  assert.deepEqual(
+    sonuc.map((e) => e.qid),
+    ['Q1'],
+  );
+  assert.deepEqual(
+    sonuc[0].gorseller.map((g) => g.d),
+    ['A.jpg'],
+  );
+});
+
+test('Wikidata öğesi bilinmeyen kurs eseri başlıkla Wikidata eserine katılır, iyi görsel öne geçer', () => {
+  const [e] = birlestir({
+    kurs: [{ baslik: 'The Virgin and Child with Saint Anne', dosya: 'St_Anne_taken_at_the_Louvre.jpg' }],
+    wd: [
+      {
+        qid: 'Q9',
+        baslik: 'Azize Anna',
+        baslikEn: 'The Virgin and Child with Saint Anne',
+        yil: 1503,
+        dosyalar: ['St_Anne_C2RMF_retouched.jpg'],
+        sl: 50,
+        muze: 'Louvre',
+        muzeIdler: {},
+      },
+    ],
+  });
+  assert.equal(e.qid, 'Q9');
+  assert.equal(e.gorseller[0].d, 'St_Anne_C2RMF_retouched.jpg');
+  assert.equal(e.pekistirme, true);
 });

@@ -188,6 +188,8 @@ export function resimMiSorgusu(qidler) {
 export function dosyaAdiAyikla(deger) {
   if (!deger) return null;
   const i = deger.indexOf('Special:FilePath/');
+  // "bilinmeyen değer" P18'i boş düğüm URI'si olarak gelir (…/.well-known/genid/…): görsel değil
+  if (i < 0 && /^https?:\/\//.test(deger)) return null;
   let ad = i >= 0 ? deger.slice(i + 'Special:FilePath/'.length) : deger;
   try {
     ad = decodeURIComponent(ad);

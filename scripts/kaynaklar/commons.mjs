@@ -2,7 +2,8 @@
 // Kategori adı sanatçının Wikidata Commons kategorisinden (P373) türetilir. Bu kategorilerin doğrudan
 // dosyaları arasında kartpostal ve galeri fotoğrafları çok olduğu için yalnızca müze taraması ya da
 // Google Art Project kaynaklı dosyalar alınır.
-export const TARAMA = /google[ _]art[ _]project|\bwga\d+|metropolitan[ _]museum|\bmet[ _]d[pt]\d|rijksmuseum|nationalmuseum|mauritshuis|the[ _]yorck[ _]project|national[ _]gallery[ _]of[ _]art/i;
+export const TARAMA =
+  /google[ _]art[ _]project|\bwga\d+|metropolitan[ _]museum|\bmet[ _]d[pt]\d|rijksmuseum|nationalmuseum|mauritshuis|the[ _]yorck[ _]project|national[ _]gallery[ _]of[ _]art/i;
 import { onbellekli, bekle } from './ortak.mjs';
 import { jsonGetiriciYap, KULLANICI_AJANI } from '../../js/wikidata.js';
 

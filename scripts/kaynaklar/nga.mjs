@@ -43,7 +43,12 @@ let dizin = null;
 async function dizinKur() {
   if (dizin) return dizin;
   const oku = async (ad) => csvAyristir(await readFile(new URL(`nga/${ad}.csv`, HAM), 'utf8'));
-  const [kurucular, iliskiler, nesneler, gorseller] = await Promise.all([oku('constituents'), oku('objects_constituents'), oku('objects'), oku('published_images')]);
+  const [kurucular, iliskiler, nesneler, gorseller] = await Promise.all([
+    oku('constituents'),
+    oku('objects_constituents'),
+    oku('objects'),
+    oku('published_images'),
+  ]);
   const qidden = new Map();
   for (const k of kurucular) if (k.wikidataid) qidden.set(k.wikidataid, k.constituentid);
   const kurucuEserleri = new Map();

@@ -65,11 +65,39 @@ export function eserleriBirlestir(kursEserleri = [], wdEserleri = [], mevcut = [
   };
   for (const e of kursEserleri) {
     const g = { k: 'commons', d: dosyaNormal(e.commons_dosya), l: e.lisans || '' };
-    ekle({ kaynak: 'kurs', kaynaklar: ['kurs'], baslik: e.baslik, tarih: e.tarih || '', yil: null, muze: e.yer || '', kursKonu: e.konu ?? null, qid: null, gorseller: [g], pekistirme: true }, e.commons_dosya);
+    ekle(
+      {
+        kaynak: 'kurs',
+        kaynaklar: ['kurs'],
+        baslik: e.baslik,
+        tarih: e.tarih || '',
+        yil: null,
+        muze: e.yer || '',
+        kursKonu: e.konu ?? null,
+        qid: null,
+        gorseller: [g],
+        pekistirme: true,
+      },
+      e.commons_dosya,
+    );
   }
   for (const e of wdEserleri) {
     const g = { k: 'commons', d: dosyaNormal(e.dosya), l: '' };
-    ekle({ kaynak: 'wikidata', kaynaklar: ['wikidata'], baslik: e.baslik, tarih: tarihYaz(e.yil), yil: e.yil ?? null, muze: '', kursKonu: null, qid: e.qid, gorseller: [g], pekistirme: true }, e.dosya);
+    ekle(
+      {
+        kaynak: 'wikidata',
+        kaynaklar: ['wikidata'],
+        baslik: e.baslik,
+        tarih: tarihYaz(e.yil),
+        yil: e.yil ?? null,
+        muze: '',
+        kursKonu: null,
+        qid: e.qid,
+        gorseller: [g],
+        pekistirme: true,
+      },
+      e.dosya,
+    );
   }
   return sonuc;
 }

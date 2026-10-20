@@ -33,7 +33,8 @@ export async function onbellekli(anahtar, fn) {
 export const bekle = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // Doğrudan atıf olmayanlar: atölye, çevre, takipçi, "atfedilen", kopya, okul, üslup…
-export const ATIF_DISI = /\b(workshop|atelier|studio|circle|followers?|attributed|attribution|copy|copies|after|school|manner|style|imitators?|pupils?|assistants?|entourage|possibly|probably|perhaps|formerly|or)\b/i;
+export const ATIF_DISI =
+  /\b(workshop|atelier|studio|circle|followers?|attributed|attribution|copy|copies|after|school|manner|style|imitators?|pupils?|assistants?|entourage|possibly|probably|perhaps|formerly|or)\b/i;
 
 export function dogrudanAtifMi(metin) {
   return !ATIF_DISI.test(String(metin || ''));
@@ -63,5 +64,7 @@ export function sanatciEslesirMi(sanatci, { ad, dogum }, ekAdlar = []) {
 
 // İki boyutlu resimsel türler (müze sınıflandırmaları)
 export function resimselTurMu(tur) {
-  return /^(paintings?|drawings?|prints?|drawing and watercolor|miniatures?|watercolors?|pastels?|manuscripts? and illuminations|illuminations?)$/i.test(String(tur || '').trim());
+  return /^(paintings?|drawings?|prints?|drawing and watercolor|miniatures?|watercolors?|pastels?|manuscripts? and illuminations|illuminations?)$/i.test(
+    String(tur || '').trim(),
+  );
 }

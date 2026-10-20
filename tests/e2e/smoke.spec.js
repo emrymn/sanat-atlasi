@@ -43,11 +43,9 @@ test('ana sayfa → Göz At → sanatçı → eser tam ekran', async ({ page }) 
 
 test('Görsel kötü: sıradaki görsele geçer ve tercih saklanır', async ({ page }) => {
   await page.goto('./#/sanatci/giotto-di-bondone');
+  await expect(page.locator('.eser').first()).toBeVisible();
   // birden fazla görseli olan ilk eser
-  const i = await page.evaluate(async () => {
-    const d = window.__atlas;
-    return d.sonEserListesi.findIndex((e) => e.gorseller.length > 1);
-  });
+  const i = await page.evaluate(() => window.__atlas.sonEserListesi.findIndex((e) => e.gorseller.length > 1));
   expect(i).toBeGreaterThanOrEqual(0);
   await page.locator('.eser').nth(i).click();
   const gor = page.locator('.gor');

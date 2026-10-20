@@ -9,9 +9,11 @@ export const MUZE_SINIRI = 25; // bir müze kaynağından sanatçı başına en 
 // "National Gallery", "Art Gallery" gibi kurum adlarındaki "gallery" sayılmaz.
 const FOTO = /\b(frame|framed|in[ _]situ|exhibition|ausstellung|taken[ _]at|panoramio|dsc[ _]?\d|img[ _]?\d|p\d{7})\b/i;
 const GALERI = /gallery|galleria|galerie/i;
-const KURUM_GALERI = /(national|art|portrait|corcoran|walker|dulwich|tate|uffizi|borghese|nazionale|dell'accademia|accademia|staatsgalerie|gemäldegalerie|gemaldegalerie)[ _]+(gallery|galleria|galerie)|(gallery|galleria|galerie)[ _]+(of[ _]+art|nazionale|borghese|dell)/i;
+const KURUM_GALERI =
+  /(national|art|portrait|corcoran|walker|dulwich|tate|uffizi|borghese|nazionale|dell'accademia|accademia|staatsgalerie|gemäldegalerie|gemaldegalerie)[ _]+(gallery|galleria|galerie)|(gallery|galleria|galerie)[ _]+(of[ _]+art|nazionale|borghese|dell)/i;
 const GAP = /google[ _]art[ _]project/i;
-const MUZE_TARAMASI = /\bwga\d+|\bmet[ _]d[pt]\d|\bdp\d{5,}|metropolitan[ _]museum|rijksmuseum|nationalmuseum|mauritshuis|the[ _]yorck[ _]project|national[ _]gallery[ _]of[ _]art|\bnga[ _]\d/i;
+const MUZE_TARAMASI =
+  /\bwga\d+|\bmet[ _]d[pt]\d|\bdp\d{5,}|metropolitan[ _]museum|rijksmuseum|nationalmuseum|mauritshuis|the[ _]yorck[ _]project|national[ _]gallery[ _]of[ _]art|\bnga[ _]\d/i;
 
 // Dosya adlarında "_" sözcük ayırıcıdır; düzenli ifadeler boşluklu hâl üzerinde çalışır
 const bosluklu = (d) => String(d || '').replace(/_/g, ' ');
@@ -59,9 +61,18 @@ export function muzeNormal(m) {
 }
 
 // Aynı eser mi? başlık + tarih ±5 + müze (bilinmeyen alan engel değil; başlık şart)
+// Başlığın karşılaştırma biçimleri: "The School of Athens (Atina Okulu)" → tamamı, parantez dışı, parantez içi
+function baslikBicimleri(...basliklar) {
+  const sonuc = [];
+  for (const b of basliklar.filter(Boolean)) {
+    sonuc.push(b, b.replace(/\s*\([^)]*\)/g, ''), ...[...b.matchAll(/\(([^)]*)\)/g)].map((m) => m[1]));
+  }
+  return [...new Set(sonuc.map(baslikNormal).filter((x) => x.length >= 4))];
+}
+
 export function ayniEserMi(a, b) {
-  const ab = [a.baslik, a.baslikEn].filter(Boolean).map(baslikNormal);
-  const bb = [b.baslik, b.baslikEn].filter(Boolean).map(baslikNormal);
+  const ab = baslikBicimleri(a.baslik, a.baslikEn);
+  const bb = baslikBicimleri(b.baslik, b.baslikEn);
   if (!ab.some((x) => x && bb.includes(x))) return false;
   if (a.yil != null && b.yil != null && Math.abs(a.yil - b.yil) > 5) return false;
   const am = a.muze ? muzeNormal(a.muze) : '';
@@ -105,7 +116,10 @@ export function birlestir({ kurs = [], wd = [], muzeler = [], commons = [], kara
   // 2) Wikidata: kurs eseriyle aynı öğe (ya da aynı dosya) ise ona katılır
   for (const w of wd) {
     const dosyalar = w.dosyalar.map((d) => dosyaNormal(d).toLowerCase());
-    const hedef = eserler.find((e) => (e.qid && e.qid === w.qid) || e.gorseller.some((g) => g.k === 'commons' && dosyalar.includes(dosyaNormal(g.d).toLowerCase())));
+    const hedef =
+      eserler.find((e) => (e.qid && e.qid === w.qid) || e.gorseller.some((g) => g.k === 'commons' && dosyalar.includes(dosyaNormal(g.d).toLowerCase()))) ||
+      // Wikidata öğesi bilinmeyen kurs eseri: başlıkla eşleşir (ör. aynı resmin başka bir fotoğrafı)
+      eserler.find((e) => e.kurs && !e.qid && ayniEserMi(e, w));
     const gorseller = w.dosyalar.map((d) => ({ k: 'commons', d: dosyaNormal(d), l: '' }));
     if (hedef) {
       hedef.qid = hedef.qid || w.qid;
@@ -170,7 +184,12 @@ export function birlestir({ kurs = [], wd = [], muzeler = [], commons = [], kara
       populer: m.populer || 0,
     });
   }
-  // 4) görselleri kaliteye göre sırala; en iyi görsel elle “kötü” ise ve başka yoksa pekiştirmede kullanma
+  // 4) elle “çıkar” denen görseller atılır (eser değil / atfı şüpheli); görseli kalmayan eser düşer.
+  //    Sonra görseller kaliteye göre sıralanır; en iyi görsel elle “kötü” ise ve başka yoksa pekiştirmede kullanılmaz.
+  for (const e of eserler) e.gorseller = e.gorseller.filter((g) => !(g.k === 'commons' && kararlar[dosyaNormal(g.d).toLowerCase()] === 'cikar'));
+  const kalan = eserler.filter((e) => e.gorseller.length);
+  eserler.length = 0;
+  eserler.push(...kalan);
   for (const e of eserler) {
     e.gorseller = e.gorseller
       .map((g, i) => ({ g, i, p: gorselPuani(g, kararlar) }))

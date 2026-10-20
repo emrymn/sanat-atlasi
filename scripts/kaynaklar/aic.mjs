@@ -17,7 +17,16 @@ export async function aicEserleri(sanatci, ekAdlar = []) {
   };
   const yanit = await onbellekli(`aic-eser:${ajan.id}`, () => getir(`${KOK}/artworks/search?params=${encodeURIComponent(JSON.stringify(params))}`));
   return (yanit.data || [])
-    .filter((e) => e.image_id && resimselTurMu(e.artwork_type_title) && dogrudanAtifMi(String(e.artist_display || '').split('\n')[0].split('(')[0]))
+    .filter(
+      (e) =>
+        e.image_id &&
+        resimselTurMu(e.artwork_type_title) &&
+        dogrudanAtifMi(
+          String(e.artist_display || '')
+            .split('\n')[0]
+            .split('(')[0],
+        ),
+    )
     .map((e) => ({
       kaynak: 'aic',
       kimlik: String(e.id),
