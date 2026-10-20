@@ -5,14 +5,16 @@
   "komsular": [
    "Neoklasisizm",
    "Yüksek Rönesans"
-  ]
+  ],
+  "renk": "#B0643C"
  },
  {
   "ad": "Romanesk",
   "sira": 1,
   "komsular": [
    "Gotik"
-  ]
+  ],
+  "renk": "#7D7468"
  },
  {
   "ad": "Gotik",
@@ -21,7 +23,8 @@
    "Proto-Rönesans",
    "Uluslararası Gotik",
    "Romanesk"
-  ]
+  ],
+  "renk": "#A8842C"
  },
  {
   "ad": "Proto-Rönesans",
@@ -29,7 +32,8 @@
   "komsular": [
    "Gotik",
    "Erken Rönesans"
-  ]
+  ],
+  "renk": "#2F4E8C"
  },
  {
   "ad": "Uluslararası Gotik",
@@ -38,7 +42,8 @@
    "Gotik",
    "Kuzey Rönesansı",
    "Erken Rönesans"
-  ]
+  ],
+  "renk": "#A2463A"
  },
  {
   "ad": "Erken Rönesans",
@@ -47,7 +52,8 @@
    "Proto-Rönesans",
    "Yüksek Rönesans",
    "Venedik Rönesansı"
-  ]
+  ],
+  "renk": "#B98A4E"
  },
  {
   "ad": "Kuzey Rönesansı",
@@ -56,7 +62,8 @@
    "Uluslararası Gotik",
    "Erken Rönesans",
    "Flaman Barok"
-  ]
+  ],
+  "renk": "#3F5B45"
  },
  {
   "ad": "Yüksek Rönesans",
@@ -65,7 +72,8 @@
    "Erken Rönesans",
    "Venedik Rönesansı",
    "Maniyerizm"
-  ]
+  ],
+  "renk": "#2B4A9A"
  },
  {
   "ad": "Venedik Rönesansı",
@@ -73,7 +81,8 @@
   "komsular": [
    "Yüksek Rönesans",
    "Maniyerizm"
-  ]
+  ],
+  "renk": "#9E3B2E"
  },
  {
   "ad": "Maniyerizm",
@@ -82,7 +91,8 @@
    "Yüksek Rönesans",
    "Venedik Rönesansı",
    "İtalyan Barok ve Caravaggizm"
-  ]
+  ],
+  "renk": "#8C4A7A"
  },
  {
   "ad": "İtalyan Barok ve Caravaggizm",
@@ -92,7 +102,8 @@
    "Flaman Barok",
    "Hollanda Altın Çağı",
    "Maniyerizm"
-  ]
+  ],
+  "renk": "#7A2230"
  },
  {
   "ad": "İspanyol Barok",
@@ -100,7 +111,8 @@
   "komsular": [
    "İtalyan Barok ve Caravaggizm",
    "Hollanda Altın Çağı"
-  ]
+  ],
+  "renk": "#5A2A2A"
  },
  {
   "ad": "Flaman Barok",
@@ -108,7 +120,8 @@
   "komsular": [
    "Hollanda Altın Çağı",
    "İtalyan Barok ve Caravaggizm"
-  ]
+  ],
+  "renk": "#A7652A"
  },
  {
   "ad": "Hollanda Altın Çağı",
@@ -117,7 +130,8 @@
    "Flaman Barok",
    "İspanyol Barok",
    "İtalyan Barok ve Caravaggizm"
-  ]
+  ],
+  "renk": "#4E5A4A"
  },
  {
   "ad": "Fransız Klasisizmi",
@@ -126,7 +140,8 @@
    "Rokoko",
    "İtalyan Barok ve Caravaggizm",
    "Neoklasisizm"
-  ]
+  ],
+  "renk": "#2E3F6E"
  },
  {
   "ad": "Rokoko",
@@ -134,7 +149,8 @@
   "komsular": [
    "Fransız Klasisizmi",
    "Neoklasisizm"
-  ]
+  ],
+  "renk": "#C98A92"
  },
  {
   "ad": "Neoklasisizm",
@@ -143,7 +159,8 @@
    "Rokoko",
    "Akademizm ve Oryantalizm",
    "Romantizm"
-  ]
+  ],
+  "renk": "#6E7F8C"
  },
  {
   "ad": "Romantizm",
@@ -152,7 +169,8 @@
    "Neoklasisizm",
    "Prerafaelitler",
    "Barbizon ve Realizm"
-  ]
+  ],
+  "renk": "#4A5568"
  },
  {
   "ad": "Prerafaelitler",
@@ -161,7 +179,8 @@
    "Romantizm",
    "Sembolizm",
    "Akademizm ve Oryantalizm"
-  ]
+  ],
+  "renk": "#2F6B55"
  },
  {
   "ad": "Akademizm ve Oryantalizm",
@@ -170,7 +189,8 @@
    "Neoklasisizm",
    "Romantizm",
    "Prerafaelitler"
-  ]
+  ],
+  "renk": "#B0895A"
  },
  {
   "ad": "Barbizon ve Realizm",
@@ -178,7 +198,8 @@
   "komsular": [
    "Romantizm",
    "Empresyonizm"
-  ]
+  ],
+  "renk": "#6B5A3E"
  },
  {
   "ad": "Empresyonizm",
@@ -186,7 +207,8 @@
   "komsular": [
    "Barbizon ve Realizm",
    "Post-Empresyonizm"
-  ]
+  ],
+  "renk": "#5C8FB8"
  },
  {
   "ad": "Ukiyo-e (Japon baskısı)",
@@ -194,7 +216,8 @@
   "komsular": [
    "Empresyonizm",
    "Post-Empresyonizm"
-  ]
+  ],
+  "renk": "#1F4E79"
  },
  {
   "ad": "Post-Empresyonizm",
@@ -203,7 +226,8 @@
    "Empresyonizm",
    "Sembolizm",
    "Ekspresyonizm"
-  ]
+  ],
+  "renk": "#C9A227"
  },
  {
   "ad": "Sembolizm",
@@ -212,7 +236,8 @@
    "Post-Empresyonizm",
    "Prerafaelitler",
    "Art Nouveau ve Viyana Secession"
-  ]
+  ],
+  "renk": "#4B3B6B"
  },
  {
   "ad": "Art Nouveau ve Viyana Secession",
@@ -220,7 +245,8 @@
   "komsular": [
    "Sembolizm",
    "Ekspresyonizm"
-  ]
+  ],
+  "renk": "#8A8A3A"
  },
  {
   "ad": "Ekspresyonizm",
@@ -229,7 +255,8 @@
    "Post-Empresyonizm",
    "Art Nouveau ve Viyana Secession",
    "Kübizm"
-  ]
+  ],
+  "renk": "#B23A2A"
  },
  {
   "ad": "Kübizm",
@@ -237,7 +264,8 @@
   "komsular": [
    "Ekspresyonizm",
    "Dada"
-  ]
+  ],
+  "renk": "#8B7B5E"
  },
  {
   "ad": "Dada",
@@ -245,7 +273,8 @@
   "komsular": [
    "Kübizm",
    "Sürrealizm"
-  ]
+  ],
+  "renk": "#333333"
  },
  {
   "ad": "Sürrealizm",
@@ -253,7 +282,8 @@
   "komsular": [
    "Dada",
    "Sembolizm"
-  ]
+  ],
+  "renk": "#3E6E9E"
  },
  {
   "ad": "Savaş sonrası figürasyon",
@@ -261,6 +291,7 @@
   "komsular": [
    "Sürrealizm",
    "Ekspresyonizm"
-  ]
+  ],
+  "renk": "#A6605A"
  }
 ]

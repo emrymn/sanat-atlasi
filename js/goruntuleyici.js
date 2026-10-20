@@ -1,5 +1,6 @@
 // Tam ekran eser görüntüleyici: iki parmakla yakınlaştırma, kaydırma, eserler arası geçiş.
 import { kacis } from './yardimci.js';
+import { ikon } from './tasarim.js';
 import { gorselUrl, gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle } from './gorsel.js';
 
 const EN_BUYUK = 6;
@@ -28,8 +29,8 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   kok.setAttribute('aria-label', 'Eser görüntüleyici');
   kok.innerHTML = `
     <div class="gor-sahne"><img class="gor-resim" alt="" draggable="false"><p class="gor-yukleniyor">Yükleniyor…</p></div>
-    <button class="gor-kapat" type="button" aria-label="Kapat">✕</button>
-    ${eserler.length > 1 ? '<button class="gor-ok gor-onceki" type="button" aria-label="Önceki eser">‹</button><button class="gor-ok gor-sonraki" type="button" aria-label="Sonraki eser">›</button>' : ''}
+    <button class="gor-kapat" type="button" aria-label="Kapat">${ikon('kapat', 22)}</button>
+    ${eserler.length > 1 ? `<button class="gor-ok gor-onceki" type="button" aria-label="Önceki eser">${ikon('geri', 24)}</button><button class="gor-ok gor-sonraki" type="button" aria-label="Sonraki eser">${ikon('ileri', 24)}</button>` : ''}
     <div class="gor-alt"><div class="gor-yazi" ${gizli ? 'hidden' : ''}></div>
       <button class="gor-kotu" type="button">Görsel kötü</button><p class="gor-mesaj" role="status" aria-live="polite"></p></div>`;
   document.body.appendChild(kok);

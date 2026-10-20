@@ -6,6 +6,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { SPARQL } from '../js/wikidata.js';
 import { getir, onbellekli, bekle, HAM } from './kaynaklar/ortak.mjs';
+import { biyografiDuzelt } from './kaynaklar/biyografi_duzelt.mjs';
 
 const EN_FAZLA = 180;
 const EN_AZ = 120;
@@ -82,6 +83,7 @@ for (const { id, qid } of kimlikler) {
         const uzun = kisalt(await giris('tr', b.tr, true));
         if (kelime(uzun) > kelime(metin)) metin = uzun;
       }
+      metin = biyografiDuzelt(id, metin);
       if (kelime(metin) >= 40) {
         sonuc.sanatcilar[id] = {
           metin,
