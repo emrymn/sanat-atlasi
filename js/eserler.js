@@ -3,11 +3,21 @@
 import { idbAl, idbKoy } from './idb.js';
 import { qidCoz, eserleriGetir, jsonGetiriciYap, KULLANICI_AJANI } from './wikidata.js';
 import { baslikNormal, dosyaNormal } from './yardimci.js';
+import { kursResimleri } from './resim.js';
 
 export const TAZELIK_GUN = 30;
 export const TEST_HAVUZU = 12; // pekiştirmede bir sanatçı için kullanılan en fazla eser
 
 const GUN_MS = 24 * 60 * 60 * 1000;
+// 2: yalnızca resimsel eserler. Daha eski kayıtlar (heykel/mimari içerebilir) kullanılmaz.
+export const ONBELLEK_SURUMU = 2;
+
+let turler = null;
+// data/eser_turleri.json — hangi kurs eserlerinin resim olduğu
+export function eserTurleriniAyarla(t) {
+  turler = t;
+  bellek.clear();
+}
 
 // Kurs eserleri + Wikidata eserleri → tek liste (kurs önce, yinelenenler atılır)
 export function eserleriBirlestir(kursEserleri = [], wdEserleri = []) {
@@ -50,10 +60,11 @@ export function tazeMi(zaman, simdi = Date.now()) {
 }
 
 let onbellekDosyasi = null;
-function hazirOnbellek() {
+export function hazirOnbellek() {
   if (!onbellekDosyasi) {
     onbellekDosyasi = fetch('data/eserler_onbellek.json')
       .then((y) => (y.ok ? y.json() : null))
+      .then((j) => (j && j.surum >= ONBELLEK_SURUMU ? j : null))
       .catch(() => null);
   }
   return onbellekDosyasi;
@@ -64,7 +75,8 @@ const bellek = new Map();
 const suren = new Map();
 
 async function wikidataKaydi(sanatci, { canli }) {
-  const kayit = await idbAl('eserler', sanatci.id);
+  const idb = await idbAl('eserler', sanatci.id);
+  const kayit = idb && idb.surum === ONBELLEK_SURUMU ? idb : null;
   if (kayit && tazeMi(kayit.zaman)) return kayit;
   const hazir = await hazirOnbellek();
   const hk = hazir && hazir.sanatcilar && hazir.sanatcilar[sanatci.id];
@@ -76,7 +88,7 @@ async function wikidataKaydi(sanatci, { canli }) {
     try {
       const qid = eski && eski.qid ? eski.qid : await qidCoz(sanatci, getir);
       const eserler = qid ? await eserleriGetir(qid, getir) : [];
-      const yeni = { qid, eserler, zaman: Date.now() };
+      const yeni = { qid, eserler, zaman: Date.now(), surum: ONBELLEK_SURUMU };
       await idbKoy('eserler', sanatci.id, yeni);
       bellek.delete(sanatci.id);
       return yeni;
@@ -99,7 +111,7 @@ export function sanatciEserleri(sanatci, { canli = true } = {}) {
   const soz = wikidataKaydi(sanatci, { canli })
     .catch(() => null)
     .then((wd) => {
-      const eserler = eserleriBirlestir(sanatci.kurs_eserleri || [], (wd && wd.eserler) || []);
+      const eserler = eserleriBirlestir(kursResimleri(sanatci, turler), (wd && wd.eserler) || []);
       bellek.set(sanatci.id, eserler);
       suren.delete(sanatci.id);
       return eserler;

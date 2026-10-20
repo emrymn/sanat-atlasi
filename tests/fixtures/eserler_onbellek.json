@@ -1,11 +1,14 @@
 {
-  "surum": 1,
+  "surum": 2,
   "olusturma": "__SIMDI__",
   "sanatcilar": {
-    "giotto-di-bondone": { "qid": "Q7814", "eserler": [
-      { "qid": "Q100", "baslik": "Fixture: Ağıt", "yil": 1305, "dosya": "Fixture_Lamentation.jpg", "sl": 40 },
-      { "qid": "Q101", "baslik": "Fixture: Ognissanti Madonna", "yil": 1310, "dosya": "Fixture_Ognissanti.jpg", "sl": 20 },
-      { "qid": "Q102", "baslik": "Fixture: Stefaneschi Triptiği", "yil": 1320, "dosya": "Fixture_Stefaneschi.jpg", "sl": 10 }
-    ] }
+    "giotto-di-bondone": {
+      "qid": "Q7814",
+      "eserler": [
+        { "qid": "Q100", "baslik": "Fixture: Ağıt", "yil": 1305, "dosya": "Fixture_Lamentation.jpg", "sl": 40 },
+        { "qid": "Q101", "baslik": "Fixture: Ognissanti Madonna", "yil": 1310, "dosya": "Fixture_Ognissanti.jpg", "sl": 20 },
+        { "qid": "Q102", "baslik": "Fixture: Stefaneschi Triptiği", "yil": 1320, "dosya": "Fixture_Stefaneschi.jpg", "sl": 10 }
+      ]
+    }
   }
 }

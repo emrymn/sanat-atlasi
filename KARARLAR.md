@@ -19,7 +19,7 @@ Tarifte (CLAUDE.md) açık bırakılan ya da yorum gerektiren yerlerde verdiğim
    - yüzyıl hassasiyetindeyse ±100 yıl,
    - doğum yılı MÖ olan (antik) sanatçılarda en az ±15 yıl (Emre'nin isteği; Phidias böylece eşleşir).
 
-   Bu genişletme yalnızca sanatçının kendisini doğrulamak için. Eser atfı kuralı değişmedi: eser yalnızca doğrulanmış QID'e P170/P84 ile bağlıysa alınır. Bu kurallarla bile doğrulanamayan sanatçılar tahmin edilmez; listesi aşağıda.
+   Bu genişletme yalnızca sanatçının kendisini doğrulamak için. Eser atfı kuralı değişmedi: eser yalnızca doğrulanmış QID'e P170 ile bağlıysa alınır (P84 “mimar” Aşama 1'de bırakıldı, bkz. 40). Bu kurallarla bile doğrulanamayan sanatçılar tahmin edilmez; listesi aşağıda.
 9. **Grup sanatçılar** (Limbourg kardeşler gibi): P31 değeri insan grubu, kardeş grubu, ikili ya da üçlü ise kabul edilir. `dogum` boşsa doğum yılı denetimi yapılmaz.
 10. **Kuşkulu atıflar elenir:** yaratıcı iddiasında P5102 (ifadenin niteliği) varsa ve değeri “atıf” (Q230768) değilse (ör. “muhtemelen”, “tartışmalı”) eser alınmaz. Yalnızca en iyi sıradaki (`wdt:`) iddialar kullanılır.
 11. **Eser başlığı** sırasıyla `tr`, `en`, `mul` etiketinden. Üçü de yoksa eser atlanır. Yıl P571'in en erkeni.
@@ -76,3 +76,130 @@ Daha önce doğrulanamayan iki sanatçı Emre'nin isteğiyle düzeltildi (2026-1
 - **Tintoretto:** `ad_arama` “Tintoretto” → “Jacopo Tintoretto” yapıldı (veride tek içerik değişikliği; Emre istedi). Asıl ressam bulundu (Q9319, 40 eser).
 
 Önbellek: 169 sanatçı, 5483 Wikidata eseri (sanatçı başına en fazla 40), üretim tarihi 2026-10-20.
+
+## Aşama 1 · Yalnızca resim (2026-10-20)
+
+39. **Ne resim sayılır:** resim (tuval/pano), fresk ve duvar resmi, sunak resmi, panel resmi, triptik/poliptik/diptik, minyatür ve el yazması süslemesi, desen/çizim/karton, gravür/baskı/ahşap baskı/litografi/poster, pastel ve suluboya. Heykel, rölyef, mimari (bina, mimari öğe, mimari plan), mobilya, mozaik, vitray, duvar halısı, sikke çıkarılır. Mozaik, vitray ve duvar halısı listede olmadığı için çıkarıldı.
+40. **Wikidata eserleri:** tür, P31'in alt sınıf zinciriyle (P279*) belirlenir. Kurallar `js/wikidata.js` içinde (`RESIM_KOKLERI`, `RESIM_TURLERI`, `RESIM_DISI_KOKLER`):
+    - Eser, P31'lerinden biri bir resim kökünün alt sınıfıysa ya da doğrudan bir resim türüyse alınır. Doğrudan resim türleri: resim dizisi, fresk döngüsü, predella, desco da parto, poster…
+    - P31'lerinden biri resim kökü taşımayan bir resim dışı türse eser çıkarılır. Örneğin hem sunak hem heykel olan oyma bir sunak çıkar.
+    - Bu kökler önbellekteki 5483 eserin 379 farklı P31 sınıfı tek tek incelenerek seçildi. Örneğin “altarpiece” Wikidata'da mobilyanın da alt sınıfı; bu yüzden mobilya yalnızca resim kökü taşımayan sınıflarda eleyici sayılır.
+    - Mimar ilişkisi (P84) artık kullanılmıyor. Yalnızca sınıfı bilinmeyen “sanat eseri” gibi genel türler de alınmaz.
+41. **Kurs eserleri:** Commons dosyasının Wikidata öğesi iki yoldan arandı:
+    - P18 (221 dosyadan 97'si eşleşti),
+    - Commons yapılandırılmış verisi “digital representation of” (P6243; 57 dosya daha).
+    
+    Eşleşen öğe resim türündeyse karar “resim” oldu (122 eser). Eşleşmeyen ya da yanlış öğeye giden dosyalara başlıktan karar verdim. Örneğin Garden of Earthly Delights'ın P6243'ü bir filme, Impression Sunrise'ınki “19. yüzyıl” öğesine gidiyordu. Bu kararlar aşağıdaki tabloda; tamamı `data/eser_turleri.json`'da. `sanatcilar.json` değişmedi; süzgeç uygulama tarafında (`js/resim.js`). Tabloda olmayan yeni bir kurs eseri varsayılan olarak gösterilir.
+42. **Gösterilmeyen sanatçılar:** hiç resmi kalmayanlar, Göz At'tan, pekiştirmeden ve yanlış şıklardan otomatik çıkar. Örnekler: Phidias, Donatello, Brunelleschi, Alberti, Michelozzo, Pisano'lar, Arnolfo, Giambologna, Maderno, Soufflot, Jefferson, Garnier, Jean Arp, Max Ernst (resimleri telifli olduğundan Wikidata'da görseli yok), Francis Bacon.
+43. **Ana uğraşı heykel ya da mimari olan sanatçılar:** Bernini, Canova ve Rodin'in Wikidata'da birkaç tuval resmi ya da çok sayıda heykel etüdü/deseni var. Palladio, Le Vau, Le Nôtre, Hardouin-Mansart ve Barry & Pugin'de kalanlar mimari çizim. Ghiberti, Cellini ve Greenough'da birer desen ya da vitray tasarımı kalıyor.
+    - Bu sanatçıları üslupla tanımak resimden olmaz; Emre de örnek olarak istemişti. Bu yüzden `data/eser_turleri.json` → `ana_ugras_disi` listesiyle gizlendiler.
+    - **Bramante kaldı:** Brera'daki *Kolondaki İsa* ve *Herakleitos ile Demokritos* gibi gerçek resimleri var.
+44. **Gizlenen akımlar:** resim sanatçısı kalmayan *Antik Yunan ve Roma* ve *Romanesk* Göz At'ta, akım şıklarında ve akım çubuklarında görünmez. Komşu listelerinde geçseler de şık olarak seçilmezler.
+45. **Eski önbellekler:** önbellek dosyası `surum: 2` taşır; IndexedDB kayıtları da sürümlüdür. Heykel ve mimari içerebilen eski kayıtlar kullanılmaz, yeniden sorgulanır.
+46. **Önbellek** kayıtlı QID'lerle yalnızca resimler için yeniden üretildi (`ESERLER=1 node scripts/onbellek.mjs`): 4862 eser.
+
+### Başlığa göre karar verilen kurs eserleri
+
+| Eser | Karar | Neden |
+| --- | --- | --- |
+| Phidias · Three Goddesses, Parthenon alınlığı | çıkarıldı | alınlık heykeli |
+| Phidias · Parthenon alınlık heykelleri ve “Üç Tanrıça” (Elgin Marbles) | çıkarıldı | alınlık heykelleri |
+| Phidias · Parthenon frizi (Panathenaia Alayı) ve metoplar (Lapitler ve Kentaurlar) | çıkarıldı | friz ve metop rölyefleri |
+| Phidias · Olympia'daki Zeus heykeli | çıkarıldı | heykel (görsel bir canlandırma) |
+| Polykleitos · Canon (Kanōn) – inceleme | çıkarıldı | heykel (Doryphoros) |
+| Diotisalvi · Pisa Baptistry (Pisa Vaftizhanesi) | çıkarıldı | mimari |
+| Nicola Pisano · Pulpit (Kürsü) – Annunciation and Nativity panosu | çıkarıldı | mermer kürsü, rölyef |
+| Nicola Pisano · Pisa Vaftizhanesi kürsüsü (pulpit) | çıkarıldı | mermer kürsü, rölyef |
+| Cimabue · Crucifix | resim | boyalı haç (ahşap pano resmi) |
+| Duccio di Buoninsegna · Christ's Entry into Jerusalem (Maestà arka yüzü) | resim | Maestà pano resmi (Wikidata eşleşmesi yanlış öğeye gidiyor) |
+| Duccio di Buoninsegna · Last Supper (Maestà arka yüzü) | resim | Maestà pano resmi |
+| Giotto di Bondone · Lamentation | resim | fresk |
+| Giotto di Bondone · Scrovegni Şapeli'ndeki çalışmalar | resim | fresk döngüsü |
+| Giotto di Bondone · Last Judgment | resim | fresk |
+| Giotto di Bondone · Arena Şapeli (Scrovegni Chapel) freskleri | resim | fresk döngüsü |
+| Giotto di Bondone · The Expulsion of the Money Changers | resim | fresk |
+| Domenico di Michelino · Dante'yi Divine Comedy ile gösteren resim | resim | pano resmi (Wikidata eşleşmesi sanatçının kendisine gidiyor) |
+| Lorenzo Ghiberti · Baptistery of San Giovanni bronz kapıları; Gates of Paradise | çıkarıldı | bronz kapı rölyefleri |
+| Lorenzo Ghiberti · Competition Panel, Abraham (İshak'ın Kurban Edilmesi yarışma paneli) | çıkarıldı | bronz rölyef |
+| Lorenzo Ghiberti · Competition Panel – Abraham and Isaac (Sacrifice of Isaac) | çıkarıldı | bronz rölyef |
+| Lorenzo Ghiberti · The Gates of Paradise (Porta del Paradiso) – Eastern Door | çıkarıldı | bronz kapı rölyefleri |
+| Lorenzo Ghiberti · The Story of Jacob and Esau (Gates of Paradise panosu) | çıkarıldı | bronz rölyef |
+| Masaccio · The Holy Trinity (fresk) | resim | fresk |
+| Donatello · David | çıkarıldı | bronz heykel |
+| Donatello · Feast of Herod (vaftiz kurnası rölyefi) | çıkarıldı | bronz rölyef |
+| Andrea Mantegna · Camera Picta (Camera degli Sposi) | resim | fresk (Wikidata eşleşmesi bir üslup öğesine gidiyor) |
+| Leon Battista Alberti · Palazzo Rucellai | çıkarıldı | mimari |
+| Filippo Brunelleschi · Competition Panel, Abraham (İshak'ın Kurban Edilmesi yarışma paneli) | çıkarıldı | bronz rölyef |
+| Pietro Perugino · Christ Giving the Keys to Saint Peter | resim | fresk |
+| Albrecht Dürer · Adam and Eve (Adem ile Havva) | resim | gravür (Wikidata eşleşmesi bir çevrim içi sergiye gidiyor) |
+| Albrecht Dürer · Alberti's Veil / perspektif aletleri diyagramları | resim | ahşap baskı |
+| Quentin Metsys · The Moneylender and His Wife | resim | pano resmi |
+| Hans Baldung Grien · Aristotle and Phyllis | resim | ahşap baskı (Wikidata eşleşmesi bir edebî konuya gidiyor) |
+| Hans Baldung Grien · The Bewitched Groom (Büyülenmiş Seyis) | resim | ahşap baskı |
+| Hieronymus Bosch · Garden of Earthly Delights | resim | triptik (Wikidata eşleşmesi bir filme gidiyor) |
+| Leonardo da Vinci · Vitruvian Man | resim | desen |
+| Leonardo da Vinci · The Virgin and Child with Saint Anne | resim | pano resmi |
+| Leonardo da Vinci · Anatomi çalışmaları (defter sayfaları) | resim | desen |
+| Leonardo da Vinci · Uçan makine ve paraşüt çizimleri | resim | desen |
+| Leonardo da Vinci · The Virgin and Child with Saint Anne için cartoon (hazırlık çizimi) | resim | pano resmi |
+| Michelangelo · Sistine Şapeli tavanı | resim | fresk |
+| Michelangelo · Aziz Petrus kubbesi | çıkarıldı | mimari |
+| Michelangelo · San Lorenzo kütüphane girişi (vestibül) ve merdiveni | çıkarıldı | mimari |
+| Michelangelo · Medici mezarları için heykeller | çıkarıldı | heykel |
+| Michelangelo · Sistine Şapeli tavanı ve The Last Judgment (Son Yargı) | resim | fresk |
+| Michelangelo · San Lorenzo kütüphanesi ve New Sacristy | çıkarıldı | mimari |
+| Michelangelo · David | çıkarıldı | mermer heykel |
+| Michelangelo · San Lorenzo kütüphanesi merdiveni | çıkarıldı | mimari |
+| Michelangelo · Pietà | çıkarıldı | mermer heykel |
+| Michelangelo · Tomb of Julius II (II. Julius'un Mezarı) | çıkarıldı | mezar anıtı, heykel |
+| Michelangelo · Moses (Musa) | çıkarıldı | mermer heykel |
+| Michelangelo · Ignudi | resim | fresk figürleri |
+| Michelangelo · San Lorenzo Kütüphanesi | çıkarıldı | mimari |
+| Raphael · The School of Athens (Atina Okulu) | resim | fresk |
+| Donato Bramante · Tempietto | çıkarıldı | mimari / mimari plan |
+| Donato Bramante · Yeni Aziz Petrus Bazilikası (St. Peter's Basilica) | çıkarıldı | mimari / mimari plan |
+| Donato Bramante · St. Peter's Basilica | çıkarıldı | mimari / mimari plan |
+| Donato Bramante · St. Peter's için özgün central plan (merkezî plan) | çıkarıldı | mimari / mimari plan |
+| Marcantonio Raimondi · The Judgment of Paris (baskı) | resim | gravür |
+| Daniele da Volterra · Bust of Michelangelo | çıkarıldı | büst |
+| Andrea Palladio · Teatro Olimpico (Olympic Theatre) | çıkarıldı | mimari |
+| Andrea Palladio · Villa Rotonda (Villa Capra) | çıkarıldı | mimari |
+| Andrea Palladio · San Giorgio Maggiore | çıkarıldı | mimari |
+| Carlo Maderno · Uzatılmış nef ve Barok ön cephe | çıkarıldı | mimari |
+| Gian Lorenzo Bernini · Baldacchino | çıkarıldı | heykel / mimari |
+| Gian Lorenzo Bernini · Aziz Petrus Meydanı'nın kavisli sütun dizileri (colonnades) | çıkarıldı | heykel / mimari |
+| Gian Lorenzo Bernini · Ecstasy of St Teresa | çıkarıldı | heykel / mimari |
+| Gian Lorenzo Bernini · Cardinal Scipione Borghese portresi | çıkarıldı | heykel / mimari |
+| Gian Lorenzo Bernini · Louis XIV'ün atlı heykeli için kil model | çıkarıldı | heykel / mimari |
+| Gian Lorenzo Bernini · David | çıkarıldı | heykel / mimari |
+| Gian Lorenzo Bernini · Self Portrait | çıkarıldı | heykel / mimari |
+| Gian Lorenzo Bernini · Cornaro Chapel | çıkarıldı | heykel / mimari |
+| Gian Lorenzo Bernini · Ecstasy of Saint Teresa | çıkarıldı | heykel / mimari |
+| Gian Lorenzo Bernini · St. Peter's kolonadı ve St. Peter's Square (Piazza San Pietro) | çıkarıldı | heykel / mimari |
+| Gian Lorenzo Bernini · Cathedra Petri (Chair of St. Peter) | çıkarıldı | heykel / mimari |
+| Artemisia Gentileschi · Judith Slaying Holofernes | resim | tuval resmi |
+| André Le Nôtre · Versailles bahçeleri ve South parterre | çıkarıldı | bahçe düzenlemesi |
+| Nicolas Poussin · Bacchanal Before a Statue of Pan | resim | tuval resmi |
+| Jean-Baptiste-Siméon Chardin · Self Portrait at the Easel (pastel otoportre) | resim | pastel |
+| William Hogarth · Gin Lane | resim | gravür (Wikidata eşleşmesi bir salgın öğesine gidiyor) |
+| William Hogarth · A Harlot's Progress (baskı serisi) | resim | baskı serisi (Wikidata eşleşmesi bir kişiye gidiyor) |
+| William Hogarth · A Rake's Progress | resim | baskı serisi |
+| Jacques-Louis David · The Death of Socrates | resim | tuval resmi (Wikidata eşleşmesi akım/yıl öğelerine gidiyor) |
+| Jacques-Louis David · Madame Récamier | resim | tuval resmi |
+| Angelica Kauffman · Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures) | resim | tuval resmi |
+| Thomas Jefferson · Monticello | çıkarıldı | mimari |
+| Horatio Greenough · George Washington | çıkarıldı | heykel |
+| William Blake · Europe: A Prophecy, frontispiece (slaytta: God as the Divine Geometer) | resim | el boyaması kabartma baskı |
+| Henry Fuseli · The Nightmare (iki versiyon) | resim | tuval resmi |
+| Francisco de Goya · The Sleep of Reason Produces Monsters (El Sueño de la Razon Produce Monstruos), Los Caprichos 43. levha | resim | gravür |
+| Francisco de Goya · The Disasters of War (baskı serisi) | resim | gravür serisi |
+| Francisco de Goya · The Third of May, 1808 | resim | tuval resmi |
+| Jean-Auguste-Dominique Ingres · Jupiter and Thetis | resim | tuval resmi |
+| Jean-Auguste-Dominique Ingres · Portrait of Paganini | resim | desen |
+| Charles Garnier · Paris Opéra (Palais Garnier) | çıkarıldı | mimari |
+| Charles Garnier · Paris Opéra'nın büyük merdiveni (Grand Staircase) | çıkarıldı | mimari |
+| Edgar Degas · The Morning Bath | resim | pastel |
+| Claude Monet · Impression, Sunrise (Impression, Soleil Levant) | resim | tuval resmi (Wikidata eşleşmesi yüzyıl/sergi öğelerine gidiyor) |
+| Claude Monet · Giverny'deki bahçe, nilüferli havuz ve Japon tarzı köprü | resim | tuval resmi (Japon köprüsü) |
+| Claude Monet · Water Lilies (Nymphéas) serisi | resim | tuval resmi |
+| Pablo Picasso · Guernica | resim | tuval resmi |

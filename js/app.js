@@ -4,11 +4,12 @@ import { acikSanatcilar, akimDurumlari, yeniAcilanlar, islenenKume } from './kil
 import { bugunStr, cevapla, vadesiGeldiMi, gorulduMu, GUNLUK_YENI_SINIRI } from './leitner.js';
 import { sanatciSecenekleri, akimSecenekleri, akimOrtaYillari } from './celdirici.js';
 import { kartlariSec, Oturum, kategori } from './oturum.js';
-import { sanatciEserleri, eserSec, TEST_HAVUZU } from './eserler.js';
+import { sanatciEserleri, eserSec, TEST_HAVUZU, eserTurleriniAyarla, hazirOnbellek } from './eserler.js';
+import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, TEMALAR } from './depo.js';
 import { goruntuleyiciAc, kaynakYazisi } from './goruntuleyici.js';
 
-const SURUM = '1.0.1';
+const SURUM = '1.1.0';
 const TEMA_RENK = { sepya: '#F1E8D6', acik: '#FBFAF7', koyu: '#1D1A17' };
 const TEMA_AD = { sepya: 'Sepya', acik: 'Açık', koyu: 'Koyu' };
 const TAHMINI_GORSEL_KB = 180;
@@ -868,9 +869,21 @@ function swKaydet() {
 
 // ---------- başlangıç ----------
 async function basla() {
-  const [sanatcilar, akimlar, konular] = await Promise.all([jsonGetir('data/sanatcilar.json'), jsonGetir('data/akimlar.json'), jsonGetir('data/konular.json')]);
+  const [tumSanatcilar, akimlar, konular, turler] = await Promise.all([
+    jsonGetir('data/sanatcilar.json'),
+    jsonGetir('data/akimlar.json'),
+    jsonGetir('data/konular.json'),
+    jsonGetir('data/eser_turleri.json').catch(() => null),
+  ]);
+  eserTurleriniAyarla(turler);
+  // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
+  const sanatcilar = gorunurSanatcilar(tumSanatcilar, turler, await hazirOnbellek());
+  d.tumSanatcilar = tumSanatcilar;
   d.sanatcilar = sanatcilar;
-  d.akimlar = akimlar.slice().sort((a, b) => a.sira - b.sira);
+  d.akimlar = gorunurAkimlar(
+    akimlar.slice().sort((a, b) => a.sira - b.sira),
+    sanatcilar,
+  );
   d.konular = konular;
   d.harita = new Map(sanatcilar.map((s) => [s.id, s]));
   d.akimSira = Object.fromEntries(d.akimlar.map((a) => [a.ad, a.sira]));
