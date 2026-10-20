@@ -182,6 +182,8 @@ test('Ayarlar: yedekle → geri yükle gidiş-dönüşü', async ({ page, contex
   await page.reload();
   await page.goto('./#/ayarlar');
   await expect(page.locator('html')).toHaveAttribute('data-tema', 'gece');
+  // uygulama ilerlemeyi açılışta yazar; yazılmadan okunmasın (yük altında yarış)
+  await expect.poll(async () => (await ilerleme(page)) !== null).toBe(true);
   expect(Object.keys((await ilerleme(page)).skorlar)).toHaveLength(0);
 
   page.once('dialog', (d) => d.accept());

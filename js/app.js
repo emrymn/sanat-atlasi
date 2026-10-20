@@ -15,8 +15,9 @@ import { adParcala, bilinenAd } from './adlar.js';
 import { paletGetir, renkTemasi } from './renk.js';
 import { idbAl, idbKoy, idbSil } from './idb.js';
 import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from './devam.js';
+import { taninmaMetni, eserNotu, notlariAl, karsilastirmaAdresi, benzerSanatcilar } from './karsilastir.js';
 
-const SURUM = '1.8.0';
+const SURUM = '1.9.0';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -46,6 +47,8 @@ const d = {
   indirme: null,
   akimRenk: {},
   kisaAdlar: {},
+  tanimaNotlari: {}, // data/tanima_notlari.json: kurs sanatçılarının "Nasıl tanırım?" notları
+  eserNotlari: {}, // data/eser_notlari.json: önemli eserlere kısa açıklama
 };
 
 const ekran = document.getElementById('uygulama');
@@ -89,6 +92,15 @@ function gorselTercihi(sonra = null) {
       if (sonra) sonra();
     },
   };
+}
+
+function taninma(s) {
+  return taninmaMetni(s, d.tanimaNotlari);
+}
+
+// Görüntüleyicide eser notu (sanatçıya göre anahtar): goruntuleyiciAc({ notu })
+function notuIcin(sanatciId) {
+  return (e) => eserNotu(sanatciId, e, d.eserNotlari);
 }
 
 // Izgara küçük görseli: 400 px; açılmazsa (ör. çevrimdışı) 800 px denenir
@@ -273,6 +285,7 @@ const rotalar = [
   [/^#\/akim\/(.+)$/, akimSayfasi, 'gozat'],
   [/^#\/sanatci\/(.+)\/eserler$/, tumEserler, 'gozat'],
   [/^#\/sanatci\/(.+)$/, sanatciSayfasi, 'gozat'],
+  [/^#\/karsilastir\/([^/]+)\/([^/]+)$/, karsilastirSayfasi, null],
   [/^#\/pekistir$/, pekistirMenusu, 'pekistir'],
   [/^#\/pekistir\/donem$/, pekistirMenusu, 'pekistir'],
   [/^#\/pekistir\/donem\/(.+)$/, (ad) => pekistir('donem', ad), null],
@@ -535,7 +548,7 @@ function eserSeridi(eserler, sinif, veri) {
 function notBolumleri(s) {
   const not = s.kurs_notu || s.anlatim;
   return `${not ? `<section class="bolum">${etiket('Notlarımdan', { vurgu: true })}<p class="okuma italik">${kacis(not)}</p></section>` : ''}
-    ${s.taninma ? `<section class="bolum">${etiket('Nasıl tanırım?')}<p class="okuma">${kacis(s.taninma)}</p></section>` : ''}`;
+    ${taninma(s) ? `<section class="bolum">${etiket('Nasıl tanırım?')}<p class="okuma" data-test="taninma">${kacis(taninma(s))}</p></section>` : ''}`;
 }
 
 async function gununSayfasi(id) {
@@ -599,7 +612,7 @@ async function gununSayfasi(id) {
   galeri.innerHTML = eserSeridi(eserler, 'galeri-eser', 'data-galeri-eser');
   galeri.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-galeri-eser]');
-    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.galeriEser), ...gorselTercihi() });
+    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.galeriEser), notu: notuIcin(s.id), ...gorselTercihi() });
   });
 }
 
@@ -710,6 +723,7 @@ async function sanatciSayfasi(id) {
     <div class="eserler" id="eserler"><p class="ikincil kucuk">Eserler yükleniyor…</p></div>
     ${notBolumleri(s)}
     <section class="bolum">${etiket('Dönemi')}${donemCizelgesi(s.akim)}</section>
+    ${karsilastirSecici(s)}
     ${onemli}${emin}
     </article>`);
   const eserler = await eserSozu;
@@ -724,7 +738,7 @@ async function sanatciSayfasi(id) {
   kutu.innerHTML = `${eserSeridi(eserler, 'eser', 'data-eser')}<a class="tumu" href="#/sanatci/${encodeURIComponent(s.id)}/eserler" data-test="tumu">Tümü (${eserler.length})</a>`;
   kutu.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-eser]');
-    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.eser), ...gorselTercihi() });
+    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.eser), notu: notuIcin(s.id), ...gorselTercihi() });
   });
 }
 
@@ -745,8 +759,78 @@ async function tumEserler(id) {
   if (kutu)
     kutu.addEventListener('click', (ev) => {
       const b = ev.target.closest('[data-eser]');
-      if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.eser), ...gorselTercihi() });
+      if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.eser), notu: notuIcin(s.id), ...gorselTercihi() });
     });
+}
+
+// ---------- yan yana karşılaştırma ----------
+function kilitliMi(s) {
+  return !acikListe().some((x) => x.id === s.id);
+}
+
+// Sanatçı sayfasında "Karşılaştır": aynı/komşu akımdan, ±50 yıl içindeki en çok 8 sanatçı
+function karsilastirSecici(s) {
+  const benzer = benzerSanatcilar(s, d.sanatcilar, d.akimlar, 8);
+  if (!benzer.length) return '';
+  return `<details class="bolum karsilastir-sec" data-test="karsilastir-sec">
+      <summary class="dugme">${ikon('karsilastir', 18, 1.6)}<span>Karşılaştır</span></summary>
+      <p class="kucuk ikincil" style="margin:0">Benzer bir sanatçıyla yan yana gör:</p>
+      <ul class="liste">${benzer
+        .map(
+          (x) =>
+            `<li><a class="satir" href="${karsilastirmaAdresi(s.id, x.id)}"><span class="metin"><b>${kacis(x.ad)}${kilitliMi(x) ? ' <span class="rozet">Henüz kursta yok</span>' : ''}</b><span>${kacis(yillarYaz(x))} · ${kacis(x.akim)}</span></span>${ikon('ileri', 20, 1.4)}</a></li>`,
+        )
+        .join('')}</ul>
+    </details>`;
+}
+
+function karsilastirmaSutunu(s, k) {
+  const p = adParcala(s.ad, d.kisaAdlar[s.id]);
+  const t = taninma(s);
+  return `<section class="kars-sutun" data-kars="${k}" aria-label="${kacis(s.ad)}">
+      <a class="kars-ad" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="${kacis(s.ad)} — sanatçı sayfası">${p.ilk ? `<span class="ad-ilk">${kacis(p.ilk)}</span>` : ''}<b>${kacis(p.son)}</b></a>
+      <p class="kars-meta">${kacis(yillarYaz(s))}<br>${akimNoktasi(s.akim)}${kacis(s.akim)}</p>
+      ${kilitliMi(s) ? '<span class="rozet">Henüz kursta yok</span>' : ''}
+      ${t ? `<div class="kars-tanima">${etiket('Nasıl tanırım?')}<p class="kars-not" data-test="kars-taninma">${kacis(t)}</p></div>` : '<p class="kucuk ikincil" style="margin:0">Bu sanatçı için “Nasıl tanırım?” notu henüz yok.</p>'}
+      <div class="kars-eserler" data-kars-eserler="${k}"><p class="ikincil kucuk">Eserler yükleniyor…</p></div>
+    </section>`;
+}
+
+async function karsilastirSayfasi(a, b) {
+  const sa = d.harita.get(a);
+  const sb = d.harita.get(b);
+  if (!sa || !sb || a === b) return hataGoster(new Error('Karşılaştırılacak sanatçı bulunamadı.'));
+  const adres = location.hash;
+  const sozler = [sanatciEserleri(sa), sanatciEserleri(sb)];
+  ekranRengi(
+    sozler[0].then((l) => l[0] || null),
+    akimRenk(sa.akim),
+  );
+  ciz(`<div class="hale" aria-hidden="true"></div>
+    ${ust('Karşılaştır', `#/sanatci/${encodeURIComponent(a)}`, { ustEtiket: 'Yan yana' })}
+    <div class="kars" data-test="karsilastirma">${karsilastirmaSutunu(sa, 'a')}${karsilastirmaSutunu(sb, 'b')}</div>`);
+  const listeler = await Promise.all(sozler);
+  if (location.hash !== adres) return;
+  [sa, sb].forEach((s, i) => {
+    const kutu = ekran.querySelector(`[data-kars-eserler="${i ? 'b' : 'a'}"]`);
+    if (!kutu) return;
+    const eserler = bilinirlikSirasi(listeler[i]).slice(0, 4);
+    if (!eserler.length) {
+      kutu.innerHTML = '<p class="ikincil kucuk">Doğrulanmış görsel yok.</p>';
+      return;
+    }
+    kutu.innerHTML = eserler
+      .map((e, j) => {
+        const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
+        if (!g) return '';
+        return `<button class="kars-eser" type="button" data-kars-eser="${j}" aria-label="${kacis(e.baslik)} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"><span class="eser-yazi">${kacis(e.baslik)}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
+      })
+      .join('');
+    kutu.addEventListener('click', (ev) => {
+      const btn = ev.target.closest('[data-kars-eser]');
+      if (btn) goruntuleyiciAc({ eserler, baslangic: Number(btn.dataset.karsEser), notu: notuIcin(s.id), ...gorselTercihi() });
+    });
+  });
 }
 
 function pekistirMenusu() {
@@ -1011,7 +1095,7 @@ function akimiAciklarMi(metin, akim) {
 }
 
 function ipucuMetni(s) {
-  return s.taninma || s.kurs_notu || s.anlatim || '';
+  return taninma(s) || s.kurs_notu || s.anlatim || '';
 }
 
 function kartGoster(o) {
@@ -1039,12 +1123,15 @@ function kartGoster(o) {
     let bilgi;
     let not;
     let ileri;
+    let karsilastirBag = '';
     if (!ikinci) {
       // 1. soru (sanatçı): yalnızca sanatçı ve eser; karışıkta akım henüz söylenmez
       dogru = sanatciDogru;
       sonuc = dogru ? 'Doğru' : `Yanlış · ${tekrarNotu}`;
       bilgi = `${s.ad} · ${eserAdi(k.eser)}`;
       not = karisik && akimiAciklarMi(ipucu, s.akim) ? '' : ipucu;
+      if (!dogru && k.cevapSanatci && d.harita.has(k.cevapSanatci))
+        karsilastirBag = `<a class="karsilastir-bag" href="${karsilastirmaAdresi(s.id, k.cevapSanatci)}" data-test="karsilastir">${ikon('karsilastir', 18, 1.6)}<span>Karşılaştır: ${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))} ↔ ${kacis(bilinenAd(d.harita.get(k.cevapSanatci).ad, d.kisaAdlar[k.cevapSanatci]))}</span></a>`;
       ileri = karisik
         ? '<button class="dugme acik" type="button" data-ikinci>Hangi akım? →</button>'
         : `<button class="dugme acik" type="button" data-sonraki>${sonrakiYazi}</button>`;
@@ -1066,6 +1153,7 @@ function kartGoster(o) {
       <div data-yaprak-palet>${paletHtml(k.palet)}</div>
       ${not ? `<p class="ipucu">${kacis(not)}</p>` : ''}
       <p class="kaynak-satir">${kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler()))}</p>
+      ${karsilastirBag}
       <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="Sanatçı sayfası">Sanatçı</a>${ileri}</div>
     </section>`;
   }
@@ -1190,6 +1278,7 @@ ekran.addEventListener('click', (e) => {
     goruntuleyiciAc({
       eserler: [k.eser],
       gizli: !k.bitti,
+      notu: notuIcin(k.id),
       ...gorselTercihi(() => {
         // soru görseli reddedildiyse kartı yeni görselle çiz
         if (secilenGorsel(k.eser, kotuler())) {
@@ -1568,13 +1657,18 @@ function swKaydet() {
 
 // ---------- başlangıç ----------
 async function basla() {
-  const [tumSanatcilar, akimlar, konular, turler] = await Promise.all([
+  // İsteğe bağlı notlar (data/tanima_notlari.json, data/eser_notlari.json) aynı anda istenir; yoksa ya da bozuksa boş kalır
+  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
     jsonGetir('data/konular.json'),
     jsonGetir('data/eser_turleri.json').catch(() => null),
+    jsonGetir('data/tanima_notlari.json').catch(() => null),
+    jsonGetir('data/eser_notlari.json').catch(() => null),
   ]);
   d.kisaAdlar = (await jsonGetir('data/kisa_adlar.json').catch(() => ({ adlar: {} }))).adlar || {};
+  d.tanimaNotlari = notlariAl(tanima);
+  d.eserNotlari = notlariAl(eserNot);
   eserTurleriniAyarla(turler);
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
   const sanatcilar = gorunurSanatcilar(tumSanatcilar, turler, await hazirOnbellek());

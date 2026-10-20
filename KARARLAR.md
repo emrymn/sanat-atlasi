@@ -710,3 +710,13 @@ Toplam: 13 sanatçıya 388 WikiArt eseri (yeni ya da mevcut esere katılan). Ön
 | René Magritte | Sürrealizm | eşleşti (`rene-magritte`) | 40 | 37 | 2 | 39 |  |
 | Joan Miró | Sürrealizm | eşleşti (`joan-miro`) | 40 | 38 | 1 | 39 |  |
 | Francis Bacon | Savaş sonrası figürasyon | eşleşti (`francis-bacon`) | 40 | 36 | 2 | 38 |  |
+
+## İş 1 · Ek notlar ve yan yana karşılaştırma (2026-10-20)
+
+1. **İki isteğe bağlı veri dosyası:** `data/tanima_notlari.json` (`{"surum":1,"notlar":{"<sanatciId>":"metin"}}`) ve `data/eser_notlari.json` (anahtar eserin QID'i, QID yoksa `"<sanatciId>|<eser başlığı>"`). Açılışta diğer veri dosyalarıyla aynı anda istenir; yoksa ya da bozuksa boş kabul edilir (`js/karsilastir.js` → `notlariAl`). Service worker bunları isteğe bağlı kabuk dosyası olarak önbelleğe alır. İçerikleri (Kimi K3 ve Qwen taslakları) denetimden sonra ayrıca eklenecek.
+2. **"Nasıl tanırım?":** önce sanatçının kendi `taninma` alanı, yoksa `tanima_notlari.json`'daki not. Aynı kural pekiştirmedeki ipucu satırında da kullanılır (karışık kartta akımı ele veren ipucu kuralı değişmedi).
+3. **Eser notu:** tam ekran görüntüleyicide başlığın altında. Pekiştirmede cevaptan önce görüntüleyici gizli kipte açıldığı için not da görünmez.
+4. **Yan yana karşılaştırma:** `#/karsilastir/<a>/<b>`; sekme çubuğu yok, geri düğmesi tarayıcı geçmişine döner. İki sütun: ad (kısa ad kuralı), yıllar, akım, "Nasıl tanırım?", bilinirlik sırasına göre 4 eser alt alta, kırpılmadan; esere dokununca görüntüleyici (notuyla). Kilitli sanatçıda "Henüz kursta yok" rozeti.
+5. **Girişler:** (a) sanatçı sorusunda yanlış cevapta cevap yaprağında "Karşılaştır: Doğru ↔ Seçtiğin" bağlantısı; oturum bellekte kaldığı için geri dönünce kart aynı (cevaplanmış) halde sürer, yarım oturum kaydı değişmez. (b) Sanatçı sayfasında "Karşılaştır" açılır listesi: aynı akım önce, sonra komşu akımlar, doğum yılı farkı ≤ 50, en çok 8 sanatçı.
+6. **Test yarışı:** `smoke.spec.js` yedekle/geri yükle testinde, sayfa yenilendikten hemen sonra ilerleme okunuyordu; yük altında uygulama ilerlemeyi henüz yazmamış olabiliyordu. Okumadan önce kaydın oluşması bekleniyor.
+7. Sürüm 1.9.0.

@@ -1553,6 +1553,127 @@ html.sekmesiz .sekmeler {
   min-height: 1.2em;
 }
 
+/* Görüntüleyicide eser notu */
+.gor-not {
+  margin: 2px 0 2px;
+  font: 400 15px/1.45 var(--serif);
+  color: var(--ink);
+}
+
+/* Cevap yaprağında "Karşılaştır: A ↔ B" */
+.karsilastir-bag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: var(--vurgu-acik);
+  font: 600 14px/1.25 var(--sans);
+  text-decoration: none;
+}
+.karsilastir-bag .ikon {
+  flex: none;
+}
+
+/* Sanatçı sayfasında "Karşılaştır" seçicisi */
+.karsilastir-sec > summary {
+  list-style: none;
+  width: auto;
+  align-self: flex-start;
+}
+.karsilastir-sec > summary::-webkit-details-marker {
+  display: none;
+}
+.karsilastir-sec[open] > summary {
+  border-color: var(--vurgu-acik);
+}
+
+/* Yan yana karşılaştırma: iki sütun, eserler alt alta, kırpma yok */
+.kars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding-top: 18px;
+  align-items: start;
+}
+.kars-sutun {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.kars-sutun > .rozet {
+  align-self: flex-start;
+}
+.kars-ad {
+  display: flex;
+  flex-direction: column;
+  color: var(--ink);
+  text-decoration: none;
+  min-height: 44px;
+}
+.kars-ad .ad-ilk {
+  font: italic 400 15px/1.2 var(--serif);
+  color: var(--ink-2);
+}
+.kars-ad b {
+  font: 400 30px/1.02 var(--serif);
+  overflow-wrap: anywhere;
+}
+.kars-meta {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+.kars-meta .akim-nokta {
+  margin-right: 6px;
+}
+.kars-tanima {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.kars-not {
+  margin: 0;
+  font: 400 15px/1.45 var(--serif);
+  color: var(--ink);
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.kars-eserler {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 4px;
+}
+.kars-eser {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  text-align: left;
+  font: 400 12.5px/1.35 var(--sans);
+  cursor: zoom-in;
+}
+.kars-eser img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  background: var(--surface);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.kars-eser img.yuklendi {
+  opacity: 1;
+}
+.kars-eser img:not(.yuklendi) {
+  aspect-ratio: 3 / 4;
+}
+
 /* Bütün animasyonlar azaltılmış hareket tercihinde kapanır */
 @media (prefers-reduced-motion: reduce) {
   *,
