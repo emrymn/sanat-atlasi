@@ -441,6 +441,36 @@ img.kirik {
   flex: none;
 }
 
+/* ---------- Yarım kalan oturum ---------- */
+.devam-kart {
+  display: grid;
+  gap: 12px;
+  margin: 4px 0 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+.devam-yazi {
+  display: grid;
+  gap: 2px;
+}
+.devam-yazi span {
+  color: var(--ink-2);
+}
+.devam-dugmeler {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 10px;
+}
+.devam-dugmeler .dugme {
+  min-height: 48px;
+}
+.gunun-kart.devam-alti .bugun-kahraman {
+  margin-top: 0;
+  height: 460px;
+}
+
 /* ---------- Bugün ---------- */
 .gunun-kart {
   display: block;

@@ -166,6 +166,8 @@ test('Ayarlar: yedekle → geri yükle gidiş-dönüşü', async ({ page, contex
   await expect(page.locator('#yedek-mesaj')).not.toBeEmpty();
   const yedek = await page.locator('#yedek-cikti').inputValue();
   expect(JSON.parse(yedek).ilerleme.islenen).toEqual(asil.islenen);
+  // yarım kalan oturum da yedekte
+  expect(JSON.parse(yedek).yarimOturum.kip).toBe('karisik');
   const pano = await page.evaluate(() => navigator.clipboard.readText());
   expect(pano).toBe(yedek);
 
@@ -192,6 +194,9 @@ test('Ayarlar: yedekle → geri yükle gidiş-dönüşü', async ({ page, contex
   expect(geri.ayarlar).toEqual(asil.ayarlar);
   expect(geri.sonCalisilanlar).toEqual(asil.sonCalisilanlar);
   await expect(page.locator('html')).toHaveAttribute('data-tema', 'sepya');
+  await page.goto('./#/');
+  await expect(page.locator('[data-test="devam-ozet"]')).toHaveText(/^Karışık · 2 \//);
+  await page.goto('./#/ayarlar');
 
   // bozuk yedek reddedilir
   await page.locator('#yedek-girdi').fill('{bozuk');

@@ -8,13 +8,15 @@ import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirm
 import { gorselUrl, secilenGorsel, paletUrl, gorselSayfasi } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { gununSanatcisi, baskaSanatci } from './gunun.js';
-import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, sonCalisilanEkle, TEMALAR } from './depo.js';
+import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, yedekYarimOturum, sonCalisilanEkle, TEMALAR } from './depo.js';
 import { goruntuleyiciAc, kaynakYazisi } from './goruntuleyici.js';
 import { akimYuzyillari, ikon } from './tasarim.js';
 import { adParcala, bilinenAd } from './adlar.js';
 import { paletGetir, renkTemasi } from './renk.js';
+import { idbAl, idbKoy, idbSil } from './idb.js';
+import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from './devam.js';
 
-const SURUM = '1.6.1';
+const SURUM = '1.7.0';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -37,6 +39,7 @@ const d = {
   ortaYillar: {},
   ilerleme: null,
   oturum: null,
+  yarim: null, // IndexedDB'deki yarım kalan oturum kaydı (js/devam.js)
   yigin: [],
   acikBolumler: new Set(),
   rng: rastgeleYap(Date.now() & 0xffffffff),
@@ -274,6 +277,7 @@ const rotalar = [
   [/^#\/pekistir\/donem$/, pekistirMenusu, 'pekistir'],
   [/^#\/pekistir\/donem\/(.+)$/, (ad) => pekistir('donem', ad), null],
   [/^#\/pekistir\/karisik$/, () => pekistir('karisik', null), null],
+  [/^#\/pekistir\/devam$/, () => devamEt(), null],
   [/^#\/ilerleme$/, () => ilerlemeSayfasi(), 'ilerleme'],
   [/^#\/ayarlar$/, ayarlarSayfasi, 'ilerleme'],
   [/^#\/gunun$/, () => gununSayfasi(null), 'bugun'],
@@ -400,11 +404,13 @@ function anaSayfa() {
   const tekrar = `${kacis(tarih)} · ${ist.vade ? `${ist.vade} tekrar` : 'tekrar yok'}`;
   const son = (d.ilerleme.sonCalisilanlar || []).map((id) => d.harita.get(id)).filter(Boolean);
   const sayi = ist.vade || Math.max(0, d.ilerleme.ayarlar.gunlukKart - g.kart);
+  const devam = devamKarti();
   ciz(`
     <h1 class="ekran-disi" tabindex="-1">Sanat Atlası</h1>
+    ${devam}
     ${
       gs
-        ? `<a class="gunun-kart" href="#/gunun" data-test="gunun-kart">
+        ? `<a class="gunun-kart${devam ? ' devam-alti' : ''}" href="#/gunun" data-test="gunun-kart">
       <div class="bugun-kahraman" data-gunun-gorsel>
         <div class="bugun-ust"><span class="etiket vurgu">Günün sanatçısı</span><span class="hap" data-test="tekrar">${tekrar}</span></div>
       </div>
@@ -749,6 +755,7 @@ function pekistirMenusu() {
   const vadeSay = (ad) => acikListe().filter((s) => (!ad || s.akim === ad) && kategori(d.ilerleme.skorlar, s.id, 'donem', b) === 0).length;
   gununRengi();
   ciz(`${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}
+    ${devamKarti()}
     ${
       durumlar.length
         ? `<a class="dugme vurgu" href="#/pekistir/karisik" style="margin-top:6px;min-height:54px;border-radius:16px">Pekiştir · Karışık <span class="sayi" aria-label="${istatistik().vade} tekrar">${istatistik().vade}</span></a>
@@ -802,6 +809,8 @@ async function oturumKur(kip, akim) {
     ),
     kart: null,
     sonrakiKart: null,
+    kimlik: `${Date.now().toString(36)}-${Math.floor(d.rng() * 1e9).toString(36)}`,
+    gosterilen: [],
   };
 }
 
@@ -813,10 +822,12 @@ function kipKisa(kip, akim) {
   return kip === 'karisik' ? 'Karışık' : akim === 'hepsi' ? 'Hepsi' : akim;
 }
 
-async function pekistir(kip, akim, { yeni = false } = {}) {
+async function pekistir(kip, akim, { yeni = false, onayli = false } = {}) {
   const baslik = kipAdi(kip, akim);
   const o = d.oturum;
   if (yeni || !o || o.kip !== kip || o.akim !== akim || o.oturum.bitti) {
+    // Yarım kalan oturum varken yeni oturum: önce sor (sayfa içinde)
+    if (d.yarim && !onayli) return yarimSor(kip, akim);
     if (!acikListe().length) return ciz(`${ust(baslik, '#/pekistir')}${bosAcik()}`);
     ciz(`${ust(baslik, '#/pekistir')}<p class="ikincil">Kartlar hazırlanıyor…</p>`);
     d.oturum = await oturumKur(kip, akim);
@@ -860,6 +871,19 @@ async function kartCiz() {
   if (!o) return anaSayfa();
   if (o.oturum.bitti) return ozetCiz();
   const konum = o.oturum.konum;
+  if ((!o.kart || o.kart.konum !== konum) && o.bekleyenKart) {
+    // Devam: kayıttaki kart aynı eserle ve aynı adımdan; sanatçı, eser ya da seçenek artık yoksa kart atlanır
+    const bk = o.bekleyenKart;
+    o.bekleyenKart = null;
+    const geri = bk.konum === konum ? await kartiGeriKur(bk) : null;
+    if (d.oturum !== o) return;
+    if (bk.konum === konum && !geri) {
+      o.oturum.ilerle();
+      yarimKaydet(o);
+      return kartCiz();
+    }
+    if (geri) o.kart = geri;
+  }
   if (!o.kart || o.kart.konum !== konum) {
     let hazir = o.sonrakiKart && (await o.sonrakiKart);
     if (!hazir || hazir.konum !== konum || hazir.id !== o.oturum.simdiki.id) hazir = await kartHazirla(o, konum);
@@ -870,8 +894,94 @@ async function kartCiz() {
       return kartCiz();
     }
     o.kart = hazir;
+    o.gosterilen.push({ id: hazir.id, eser: hazir.eser.anahtar });
+    yarimKaydet(o);
   }
   kartGoster(o);
+}
+
+// ---------- yarım kalan oturum ----------
+// Cevap verilmiş bir oturum her adımda IndexedDB'ye yazılır; bitince ya da "Bitir" ile silinir.
+function cevapVarMi(o) {
+  const ot = o.oturum;
+  return ot.konum > 0 || ot.dogru + ot.yanlis > 0 || !!(o.kart && o.kart.cevapSanatci !== null);
+}
+
+function yarimKaydet(o) {
+  if (!o || d.oturum !== o) return;
+  if (o.oturum.bitti) return yarimSil();
+  if (!cevapVarMi(o)) return;
+  d.yarim = kayitYap(o);
+  idbKoy('oturum', 'yarim', JSON.parse(JSON.stringify(d.yarim)));
+}
+
+function yarimSil() {
+  d.yarim = null;
+  idbSil('oturum', 'yarim');
+}
+
+async function yarimYukle() {
+  const k = await idbAl('oturum', 'yarim');
+  if (kayitGecerliMi(k)) return k;
+  if (k) idbSil('oturum', 'yarim'); // bozuk ya da 7 günden eski: sessizce silinir
+  return null;
+}
+
+function devamKarti() {
+  const y = d.yarim;
+  if (!y || !kayitGecerliMi(y)) return '';
+  return `<section class="devam-kart" data-test="devam-kart" aria-label="Yarım kalan oturum">
+      <div class="devam-yazi"><b>Kaldığın yerden devam et</b><span data-test="devam-ozet">${kacis(devamOzeti(y))}</span></div>
+      <div class="devam-dugmeler"><a class="dugme vurgu" href="#/pekistir/devam" data-test="devam-et">Devam et</a><button class="dugme" type="button" data-yarim-bitir>Bitir</button></div>
+    </section>`;
+}
+
+function yarimSor(kip, akim) {
+  ciz(`${ust(kipAdi(kip, akim), '#/pekistir')}
+    <div class="bos-kutu" data-test="yarim-soru">
+      <p>Yarım kalan oturum silinsin mi?</p>
+      <p class="kucuk ikincil">${kacis(devamOzeti(d.yarim))}</p>
+      <div class="iki-dugme"><button class="dugme vurgu" type="button" data-yarim-sil data-kip="${kip}" data-akim="${kacis(akim || '')}">Sil, yeni başla</button><a class="dugme" href="#/pekistir/devam">Hayır, devam et</a></div>
+    </div>`);
+}
+
+async function kartiGeriKur(bk) {
+  const s = d.harita.get(bk.id);
+  if (!s) return null;
+  if (!bk.secenekler.every((id) => d.harita.has(id))) return null;
+  const akimAdlari = new Set(d.akimlar.map((a) => a.ad));
+  if (bk.akimSecenekleri && !bk.akimSecenekleri.every((a) => akimAdlari.has(a))) return null;
+  const eserler = await sanatciEserleri(s);
+  const eser = eserler.find((e) => e.anahtar === bk.eser);
+  if (!eser) return null;
+  return { ...bk, eser, eserler, bitti: false };
+}
+
+async function devamEt() {
+  const y = d.yarim;
+  if (d.oturum && y && d.oturum.kimlik === y.kimlik && !d.oturum.oturum.bitti) return kartCiz();
+  if (!y || !kayitGecerliMi(y)) {
+    yarimSil();
+    return location.replace('#/pekistir');
+  }
+  const acik = new Set(acikListe().map((s) => s.id));
+  const kur = kayittanKur(y, { varMi: (id) => d.harita.has(id) && acik.has(id), rng: d.rng });
+  if (!kur) {
+    yarimSil();
+    return location.replace('#/pekistir');
+  }
+  d.oturum = {
+    kip: y.kip,
+    akim: y.akim,
+    rota: y.kip === 'karisik' ? '#/pekistir/karisik' : `#/pekistir/donem/${encodeURIComponent(y.akim)}`,
+    oturum: kur.oturum,
+    kart: null,
+    sonrakiKart: null,
+    bekleyenKart: kur.kart,
+    kimlik: y.kimlik,
+    gosterilen: (y.gosterilen || []).slice(),
+  };
+  return kartCiz();
 }
 
 // A–D harfli seçenek; cevaptan sonra doğru yeşil ✓, seçilen yanlış kırmızı ×, kalanlar soluk
@@ -1059,6 +1169,19 @@ function kartiBitir(o, dogruMu) {
 }
 
 ekran.addEventListener('click', (e) => {
+  if (e.target.closest('[data-yarim-bitir]')) {
+    if (d.oturum && d.yarim && d.oturum.kimlik === d.yarim.kimlik) d.oturum = null;
+    yarimSil();
+    yonlendir();
+    return;
+  }
+  const ys = e.target.closest('[data-yarim-sil]');
+  if (ys) {
+    if (d.oturum && d.yarim && d.oturum.kimlik === d.yarim.kimlik) d.oturum = null;
+    yarimSil();
+    pekistir(ys.dataset.kip, ys.dataset.kip === 'karisik' ? null : ys.dataset.akim, { yeni: true, onayli: true }).catch(hataGoster);
+    return;
+  }
   const o = d.oturum;
   const sb = e.target.closest('[data-sanatci]');
   const ab = e.target.closest('[data-akim]');
@@ -1087,11 +1210,13 @@ ekran.addEventListener('click', (e) => {
     baskaDeneme = 0;
     if (o.kip === 'donem') kartiBitir(o, dogru);
     else kaydet();
+    yarimKaydet(o);
     kartGoster(o);
     return;
   }
   if (e.target.closest('[data-ikinci]') && o && o.kart && o.kart.cevapSanatci !== null) {
     o.kart.adim = 2;
+    yarimKaydet(o);
     kartGoster(o);
     ekran.querySelector('.soru-baslik h2').focus({ preventScroll: true });
     return;
@@ -1103,11 +1228,13 @@ ekran.addEventListener('click', (e) => {
     const dogru = k.cevapAkim === s.akim;
     skor(k.id).akim = cevapla(skor(k.id).akim, dogru, bugun());
     kartiBitir(o, dogru && k.cevapSanatci === k.id);
+    yarimKaydet(o);
     kartGoster(o);
     return;
   }
   if (e.target.closest('[data-sonraki]') && o) {
     o.oturum.ilerle();
+    yarimKaydet(o);
     kartCiz();
     return;
   }
@@ -1121,6 +1248,7 @@ ekran.addEventListener('click', (e) => {
 function ozetCiz() {
   const o = d.oturum;
   const ot = o.oturum;
+  if (d.yarim && d.yarim.kimlik === o.kimlik) yarimSil();
   const toplam = ot.dogru + ot.yanlis;
   ciz(`${ust(kipAdi(o.kip, o.akim), '#/pekistir', { ustEtiket: 'Tur bitti' })}
     <div class="ozet">
@@ -1376,7 +1504,7 @@ ekran.addEventListener('click', async (e) => {
   }
   if (e.target.closest('[data-indir]')) return gorselleriIndir();
   if (e.target.closest('[data-yedekle]')) {
-    const metin = yedekMetni(d.ilerleme);
+    const metin = yedekMetni(d.ilerleme, d.yarim);
     const ta = document.getElementById('yedek-cikti');
     const m = document.getElementById('yedek-mesaj');
     ta.hidden = false;
@@ -1396,10 +1524,16 @@ ekran.addEventListener('click', async (e) => {
   if (e.target.closest('[data-geri-yukle]')) {
     const m = document.getElementById('geri-mesaj');
     try {
-      const yeni = yedekCoz(document.getElementById('yedek-girdi').value);
+      const girdi = document.getElementById('yedek-girdi').value;
+      const yeni = yedekCoz(girdi);
       if (!confirm('Mevcut ilerlemenin yerine bu yedek yüklensin mi?')) return;
       d.ilerleme = yeni;
       d.oturum = null;
+      const yarim = yedekYarimOturum(girdi);
+      if (kayitGecerliMi(yarim)) {
+        d.yarim = yarim;
+        idbKoy('oturum', 'yarim', yarim);
+      } else yarimSil();
       kaydet();
       temaUygula();
       m.className = 'mesaj tamam';
@@ -1456,6 +1590,9 @@ async function basla() {
   d.akimRenk = Object.fromEntries(akimlar.map((a) => [a.ad, a.renk]));
   d.ortaYillar = akimOrtaYillari(sanatcilar);
   d.ilerleme = await ilerlemeYukle(() => jsonGetir('data/baslangic_ilerleme.json'));
+  d.yarim = await yarimYukle();
+  // Yarım oturum varken uygulama bir oturum adresinde açıldıysa (yenileme, yeni sürüm) Bugün'deki devam kartına dön
+  if (d.yarim && /^#\/pekistir\/(karisik|donem\/.+)$/.test(location.hash)) history.replaceState(null, '', '#/');
   gunlukGuncelle(d.ilerleme, bugun());
   kaydet();
   temaUygula();

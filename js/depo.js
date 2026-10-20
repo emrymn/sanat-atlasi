@@ -81,8 +81,21 @@ function kotuGorselleriDogrula(k) {
   return sonuc;
 }
 
-export function yedekMetni(ilerleme) {
-  return JSON.stringify({ uygulama: 'sanat-atlasi', surum: SURUM, tarih: new Date().toISOString(), ilerleme }, null, 1);
+// yarimOturum: yarım kalan pekiştirme oturumu (js/devam.js), yoksa alan yazılmaz
+export function yedekMetni(ilerleme, yarimOturum = null) {
+  const y = { uygulama: 'sanat-atlasi', surum: SURUM, tarih: new Date().toISOString(), ilerleme };
+  if (yarimOturum) y.yarimOturum = yarimOturum;
+  return JSON.stringify(y, null, 1);
+}
+
+// Yedekteki yarım oturum (doğrulaması js/devam.js kayitGecerliMi ile yapılır)
+export function yedekYarimOturum(metin) {
+  try {
+    const n = JSON.parse(String(metin || '').trim());
+    return (n && n.yarimOturum) || null;
+  } catch (e) {
+    return null;
+  }
 }
 
 export function yedekCoz(metin) {
