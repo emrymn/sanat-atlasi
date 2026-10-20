@@ -311,8 +311,12 @@ async function istek(yol, { v2 = false } = {}) {
   if (v2) {
     if (!oturumAnahtari) await oturumAc();
     const ek = () => `${url.includes('?') ? '&' : '?'}authSessionKey=${encodeURIComponent(oturumAnahtari)}`;
-    sonuc = await hamIstek(url + ek());
-    if (sonuc.durum === 401 || sonuc.durum === 403) {
+    // Süresi dolan oturum 401/403 ya da (gözlendi) 500 döndürür: oturum bir kez yenilenir
+    sonuc = await hamIstek(url + ek()).catch((e) => {
+      if (/HTTP 5\d\d/.test(e.message)) return { durum: 500, govde: null };
+      throw e;
+    });
+    if (sonuc.durum === 401 || sonuc.durum === 403 || sonuc.durum >= 500) {
       await oturumAc();
       sonuc = await hamIstek(url + ek());
     }

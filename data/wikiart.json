@@ -149,32 +149,14 @@
    "eserler": []
   },
   "leon-battista-alberti": {
-   "secim": "0 kullanılabilir eser",
-   "durum": "eslesti",
-   "wikiart": "leon-battista-alberti",
-   "elenen": 6,
-   "eserler": [
-    {
-     "baslik": "Self Portrait",
-     "yil": 1435,
-     "sayfa": "https://www.wikiart.org/en/leon-battista-alberti/self-portrait-1435",
-     "gorsel": "https://uploads5.wikiart.org/00246/images/leon-battista-alberti/self-portrait-c-1435.jpg!HalfHD.jpg"
-    }
-   ]
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
   },
   "filippo-brunelleschi": {
-   "secim": "0 kullanılabilir eser",
-   "durum": "eslesti",
-   "wikiart": "filippo-brunelleschi",
-   "elenen": 11,
-   "eserler": [
-    {
-     "baslik": "Sketches of the machines",
-     "yil": 1430,
-     "sayfa": "https://www.wikiart.org/en/filippo-brunelleschi/sketches-of-the-machines",
-     "gorsel": "https://uploads0.wikiart.org/images/filippo-brunelleschi/sketches-of-the-machines(1).jpg"
-    }
-   ]
+   "durum": "atlandi",
+   "neden": "ana uğraşı resim değil (eser_turleri.json)",
+   "eserler": []
   },
   "donato-bramante": {
    "secim": "5 kullanılabilir eser",
@@ -1945,8 +1927,752 @@
      "gorsel": "https://uploads7.wikiart.org/images/max-ernst/my-absolute-1934.jpg!HalfHD.jpg"
     }
    ]
+  },
+  "rene-magritte": {
+   "secim": "20. yüzyıl akımı (0 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "rene-magritte",
+   "elenen": 1,
+   "eserler": [
+    {
+     "baslik": "Attempting the Impossible",
+     "yil": 1928,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/attempting-the-impossible-1928",
+     "gorsel": "https://uploads1.wikiart.org/images/rene-magritte/attempting-the-impossible-1928(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The false mirror",
+     "yil": 1928,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-false-mirror-1928",
+     "gorsel": "https://uploads8.wikiart.org/images/rene-magritte/the-false-mirror-1928(1).jpg"
+    },
+    {
+     "baslik": "The treachery of images (This is not a pipe)",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-treachery-of-images-this-is-not-a-pipe-1948",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/the-treachery-of-images-this-is-not-a-pipe-1948(2).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Collective Invention",
+     "yil": 1934,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/collective-invention-1934",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/collective-invention-1934(1).jpg"
+    },
+    {
+     "baslik": "The human condition",
+     "yil": 1935,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-human-condition-1935",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/the-human-condition-1935(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Not to be Reproduced",
+     "yil": 1937,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/not-to-be-reproduced-1937",
+     "gorsel": "https://uploads5.wikiart.org/images/rene-magritte/not-to-be-reproduced-1937(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Time transfixed",
+     "yil": 1938,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/time-transfixed-1938",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/time-transfixed-1938(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Black Magic",
+     "yil": 1945,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/black-magic-1945",
+     "gorsel": "https://uploads5.wikiart.org/images/rene-magritte/black-magic-1945(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Listening Room",
+     "yil": 1952,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-listening-room-1952",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/the-listening-room-1952(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Golconda",
+     "yil": 1953,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/gonconda-1953",
+     "gorsel": "https://uploads2.wikiart.org/images/rene-magritte/gonconda-1953(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Son of Man",
+     "yil": 1964,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/son-of-man-1964",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/son-of-man-1964(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The menaced assassin",
+     "yil": 1927,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-menaced-assassin-1927",
+     "gorsel": "https://uploads2.wikiart.org/images/rene-magritte/the-menaced-assassin-1927.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Human Condition",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-human-condition-1933",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/the-human-condition-1933(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Rights of Man",
+     "yil": 1947,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-rights-of-man-1947",
+     "gorsel": "https://uploads2.wikiart.org/images/rene-magritte/the-rights-of-man-1947(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Manet's Balcony",
+     "yil": 1950,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/manet-s-balcony-1950",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/manet-s-balcony-1950(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Beautiful world",
+     "yil": 1962,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/beautiful-world-1962",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/beautiful-world-1962(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The beneficial promise",
+     "yil": 1927,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-beneficial-promise-1927",
+     "gorsel": "https://uploads7.wikiart.org/images/rene-magritte/the-beneficial-promise-1927(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The red model",
+     "yil": 1934,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-red-model-1934",
+     "gorsel": "https://uploads7.wikiart.org/images/rene-magritte/the-red-model-1934(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Philosophy in the bedroom",
+     "yil": 1947,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/philosophy-in-the-bedroom-1947",
+     "gorsel": "https://uploads1.wikiart.org/images/rene-magritte/philosophy-in-the-bedroom-1947(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The fountain of youth",
+     "yil": 1958,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-fountain-of-youth-1958",
+     "gorsel": "https://uploads6.wikiart.org/images/rene-magritte/the-fountain-of-youth-1958(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The blank signature",
+     "yil": 1965,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-blank-signature-1965",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/the-blank-signature-1965(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Checkmate",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/checkmate-1926",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/checkmate-1926(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The domain of Arnheim",
+     "yil": 1938,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/not_detected_211404",
+     "gorsel": "https://uploads5.wikiart.org/images/rene-magritte/not_detected_211404.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Memory",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/memory-1948",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/memory-1948(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Banquet",
+     "yil": 1955,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/banquet-1955",
+     "gorsel": "https://uploads1.wikiart.org/images/rene-magritte/banquet-1955(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Souvenirs from travel",
+     "yil": 1963,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/souvenirs-from-travel-1963",
+     "gorsel": "https://uploads3.wikiart.org/00123/images/rene-magritte/souvenirs-de-voyage.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The musings of the solitary walker",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-musings-of-the-solitary-walker-1926",
+     "gorsel": "https://uploads1.wikiart.org/images/rene-magritte/the-musings-of-the-solitary-walker-1926(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Rape",
+     "yil": 1935,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/rape-1935",
+     "gorsel": "https://uploads7.wikiart.org/images/rene-magritte/rape-1935(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Applied dialectics",
+     "yil": 1945,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/applied-dialectics-1945",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/applied-dialectics-1945(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Invisible world",
+     "yil": 1954,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/invisible-world-1954",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/invisible-world-1954(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The land of miracles",
+     "yil": 1964,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-land-of-miracles-1964",
+     "gorsel": "https://uploads5.wikiart.org/images/rene-magritte/the-land-of-miracles-1964(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The silver gap",
+     "yil": 1926,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-silver-gap-1926",
+     "gorsel": "https://uploads8.wikiart.org/images/rene-magritte/the-silver-gap-1926(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Philosopher's lamp",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/philosopher-s-lamp-1936",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/philosopher-s-lamp-1936(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Delusions of grandeur",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/delusions-of-grandeur-1948",
+     "gorsel": "https://uploads6.wikiart.org/images/rene-magritte/delusions-of-grandeur-1948(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Labours of Alexander",
+     "yil": 1950,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-labours-of-alexander-1950",
+     "gorsel": "https://uploads0.wikiart.org/images/rene-magritte/the-labours-of-alexander-1950(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The anger of gods",
+     "yil": 1960,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-anger-of-gods-1960",
+     "gorsel": "https://uploads2.wikiart.org/images/rene-magritte/the-anger-of-gods-1960(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Discovery",
+     "yil": 1927,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/discovery-1927",
+     "gorsel": "https://uploads3.wikiart.org/images/rene-magritte/discovery-1927(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The revealing of the present",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-revealing-of-the-present-1936",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/the-revealing-of-the-present-1936(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Return",
+     "yil": 1940,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/the-return-1940",
+     "gorsel": "https://uploads4.wikiart.org/images/rene-magritte/the-return-1940(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Nude",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/rene-magritte/nude-1919",
+     "gorsel": "https://uploads7.wikiart.org/images/rene-magritte/nude-1919(1).jpg!HalfHD.jpg"
+    }
+   ]
+  },
+  "joan-miro": {
+   "secim": "20. yüzyıl akımı (0 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "joan-miro",
+   "elenen": 2,
+   "eserler": [
+    {
+     "baslik": "The Farm",
+     "yil": 1922,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-farm-1922",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/the-farm-1922.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Ear of Grain",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-ear-of-corn-1923",
+     "gorsel": "https://uploads0.wikiart.org/images/joan-miro/the-ear-of-corn-1923.jpg"
+    },
+    {
+     "baslik": "The Tilled Field",
+     "yil": 1923,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-tilled-field-1924",
+     "gorsel": "https://uploads3.wikiart.org/images/joan-miro/the-tilled-field-1924.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Maternity",
+     "yil": 1924,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/maternity",
+     "gorsel": "https://uploads0.wikiart.org/images/joan-miro/maternity.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Dancer",
+     "yil": 1925,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/dancer",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/dancer.jpg"
+    },
+    {
+     "baslik": "Painting",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/painting-1936",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227973.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Beautiful Bird Revealing the Unknown to a Pair of Lovers (from the Constellation series)",
+     "yil": 1941,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227933",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227933.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Smile of the Flamboyant Wings",
+     "yil": 1953,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-smile-of-the-flamboyant-wings",
+     "gorsel": "https://uploads6.wikiart.org/images/joan-miro/the-smile-of-the-flamboyant-wings.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Great Carnivore",
+     "yil": 1969,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-great-carnivore-1969",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/the-great-carnivore-1969.jpg"
+    },
+    {
+     "baslik": "Hope of a Condemned Man II",
+     "yil": 1974,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/hope-of-a-condemned-man-ii-1974",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/hope-of-a-condemned-man-ii-1974.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Hope of a Condemned Man III",
+     "yil": 1974,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/hope-of-a-condemned-man-iii-1974",
+     "gorsel": "https://uploads5.wikiart.org/images/joan-miro/hope-of-a-condemned-man-iii-1974.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Dutch Interior II",
+     "yil": 1928,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/dutch-interior-ii",
+     "gorsel": "https://uploads2.wikiart.org/images/joan-miro/dutch-interior-ii(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Rhythmic Characters",
+     "yil": 1934,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227978",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227978.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Woman and Bird in the Moonlight",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/woman-and-bird-in-the-moonlight",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/woman-and-bird-in-the-moonlight.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Characters in the Night",
+     "yil": 1950,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227937",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227937.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Song of the Vowels",
+     "yil": 1967,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-song-of-the-vowels",
+     "gorsel": "https://uploads4.wikiart.org/images/joan-miro/the-song-of-the-vowels.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Woman and Bird in the Night",
+     "yil": 1975,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227979",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227979.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Untitled",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227959",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227959.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Cap d'home",
+     "yil": 1932,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/cap-d-home",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/cap-d-home.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Escape Ladder",
+     "yil": 1940,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-escape-ladder-1940",
+     "gorsel": "https://uploads2.wikiart.org/00187/images/joan-miro/cri-000000009549.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Sun Embracing the Lover",
+     "yil": 1952,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-sun-embracing-the-lover-1952",
+     "gorsel": "https://uploads5.wikiart.org/images/joan-miro/the-sun-embracing-the-lover-1952.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Woman and Bird I",
+     "yil": 1967,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227944",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227944.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Donna (Wall)",
+     "yil": 1977,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/donna-wall",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/donna-wall.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Untitled",
+     "yil": null,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227977",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227977.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of Mrs Mills in 1750 (after Constable)",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/portrait-of-mrs-mills-in-1750-after-constable",
+     "gorsel": "https://uploads0.wikiart.org/images/joan-miro/portrait-of-mrs-mills-in-1750-after-constable.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Snail Woman Flower Star",
+     "yil": 1934,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/fleur-femme-etoile-escargot",
+     "gorsel": "https://uploads0.wikiart.org/images/joan-miro/fleur-femme-etoile-escargot.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Figures and Dog in Front of the Sun",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/figures-and-dog-in-front-of-the-sun",
+     "gorsel": "https://uploads8.wikiart.org/images/joan-miro/figures-and-dog-in-front-of-the-sun.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Dragonfly with Red-Tipped Wing in Pursuit of a Serpent Spiralling Toward a Comet",
+     "yil": 1951,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/dragonfly-with-red-tipped-wing-in-pursuit-of-a-serpent-spiralling-toward-a-comet-1951",
+     "gorsel": "https://uploads8.wikiart.org/images/joan-miro/dragonfly-with-red-tipped-wing-in-pursuit-of-a-surpent-spiralling-toward-a-comet.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Woman in the Night",
+     "yil": 1967,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227958",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227958.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Burnt Canvas I",
+     "yil": 1973,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227955",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227955.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Les adieux",
+     "yil": 1981,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227986",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227986.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Siesta",
+     "yil": 1925,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/siesta",
+     "gorsel": "https://uploads6.wikiart.org/images/joan-miro/siesta.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Painting",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/painting-1",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/painting-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Painting",
+     "yil": 1943,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/painting-3",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/painting-3.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Magdalenians",
+     "yil": 1958,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227938",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227938.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Nude with Mirror",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/nude-with-mirror",
+     "gorsel": "https://uploads7.wikiart.org/images/joan-miro/nude-with-mirror.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Self-Portrait (in red overall)",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/self-portrait-1",
+     "gorsel": "https://uploads6.wikiart.org/images/joan-miro/self-portrait-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of a Spanish Dancer",
+     "yil": 1921,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/portrait-of-a-spanish-dancer",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/portrait-of-a-spanish-dancer.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Church and the Village of Montroig",
+     "yil": 1919,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/not_detected_227965",
+     "gorsel": "https://uploads1.wikiart.org/images/joan-miro/not_detected_227965.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "The Vegetable Garden with Donkey",
+     "yil": 1918,
+     "sayfa": "https://www.wikiart.org/en/joan-miro/the-vegetable-garden-with-donkey",
+     "gorsel": "https://uploads5.wikiart.org/images/joan-miro/the-vegetable-garden-with-donkey.jpg!HalfHD.jpg"
+    }
+   ]
+  },
+  "francis-bacon": {
+   "secim": "20. yüzyıl akımı (0 kullanılabilir eser)",
+   "durum": "eslesti",
+   "wikiart": "francis-bacon",
+   "elenen": 1,
+   "eserler": [
+    {
+     "baslik": "Three Studies for a Crucifixion",
+     "yil": 1962,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-for-a-crucifixion-1962",
+     "gorsel": "https://uploads8.wikiart.org/00108/images/francis-bacon/7.jpg"
+    },
+    {
+     "baslik": "Double Portrait of Lucian Freud and Frank Auerbach",
+     "yil": 1964,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/double-portrait-of-lucian-freud-and-frank-auerbach-1964",
+     "gorsel": "https://uploads5.wikiart.org/00108/images/francis-bacon/bacon-francis-dubbelportratt-av-lucian-freud-och-frank-auerbach-1964-1500x874.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Crucifixion",
+     "yil": 1965,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/crucifixion-1965",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/5-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Study for the Portrait of Pope Innocent X",
+     "yil": 1965,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/study-for-the-portrait-of-pope-innocent-x-1965",
+     "gorsel": "https://uploads1.wikiart.org/00108/images/francis-bacon/4.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Gouache",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/gouache-1929",
+     "gorsel": "https://uploads3.wikiart.org/images/francis-bacon/not_detected_197527.jpg"
+    },
+    {
+     "baslik": "Portrait",
+     "yil": 1930,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/portrait-1930",
+     "gorsel": "https://uploads4.wikiart.org/00108/images/francis-bacon/portrait-1930.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Three Studies for Figures at the Base of a Crucifixion",
+     "yil": 1944,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-for-figures-at-the-base-of-a-crucifixion-1944",
+     "gorsel": "https://uploads0.wikiart.org/images/francis-bacon/three-studies-for-figures-at-the-base-of-a-crucifixion-1944.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Study for a Head",
+     "yil": 1955,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/study-for-a-head-1955",
+     "gorsel": "https://uploads6.wikiart.org/00108/images/francis-bacon/1x-1-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Three Studies of Lucian Freud",
+     "yil": 1969,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-of-lucian-freud-1969",
+     "gorsel": "https://uploads5.wikiart.org/00108/images/francis-bacon/63039caf449ef726420f6a706700f0ff.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "In Memory of George Dyer",
+     "yil": 1971,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/in-memory-of-george-dyer-1971",
+     "gorsel": "https://uploads1.wikiart.org/00108/images/francis-bacon/20-francis-bacon-triptych-in-memory-of-george-dyer-1971.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "After Picasso 'LA DANSE'",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/after-picasso-la-danse-1933",
+     "gorsel": "https://uploads0.wikiart.org/00108/images/francis-bacon/after-picasso-la-danse-1933.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Painting",
+     "yil": 1946,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/painting-1946",
+     "gorsel": "https://uploads5.wikiart.org/images/francis-bacon/not_detected_197528.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Man in Blue VII",
+     "yil": 1954,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/man-in-blue-vii-1954",
+     "gorsel": "https://uploads1.wikiart.org/00286/images/francis-bacon/man-in-blue-vii-1954.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Portrait of Isabel Rawsthorn standing in a street in soho",
+     "yil": 1967,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/portrait-of-isabel-rawsthorn-standing-in-a-street-in-soho-1967",
+     "gorsel": "https://uploads1.wikiart.org/images/francis-bacon/portrait-of-isabel-rawsthorn-standing-in-a-street-in-soho(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Jet of Water",
+     "yil": 1979,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/jet-of-water-1979",
+     "gorsel": "https://uploads0.wikiart.org/00108/images/francis-bacon/jet-of-water-1979-the-estate-of-francis-bacon.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Diptych: Study from the Human Body - from a Drawing by Ingres",
+     "yil": 1984,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/diptych-study-from-the-human-body-from-a-drawing-by-ingres-1984",
+     "gorsel": "https://uploads2.wikiart.org/00108/images/francis-bacon/71jdiponajl.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Rug",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/rug-1929-1",
+     "gorsel": "https://uploads1.wikiart.org/00108/images/francis-bacon/rug.jpg"
+    },
+    {
+     "baslik": "Composition (Figure)",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/composition-figure-1933",
+     "gorsel": "https://uploads3.wikiart.org/images/francis-bacon/composition-figure-1933(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Head IV (Man with a Monkey)",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/head-iv-man-with-a-monkey-1949",
+     "gorsel": "https://uploads3.wikiart.org/00227/images/francis-bacon/1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Painting",
+     "yil": 1950,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/painting-1950",
+     "gorsel": "https://uploads6.wikiart.org/00108/images/francis-bacon/590-10.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Two Figures Lying on a Bed with Attendants",
+     "yil": 1968,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/two-figures-lying-on-a-bed-with-attendants-1968",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/3-2.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Triptych March 1974",
+     "yil": 1974,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/triptych-march-1974-1974",
+     "gorsel": "https://uploads3.wikiart.org/00226/images/francis-bacon/triptych-march-1974.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Triptych 1986-1987",
+     "yil": 1987,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/triptych-1986-1987-1987",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/4-8.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Rug",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/rug-1929",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/rug-1.jpg"
+    },
+    {
+     "baslik": "Figures in a Garden",
+     "yil": 1936,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/figures-in-a-garden-1936",
+     "gorsel": "https://uploads6.wikiart.org/images/francis-bacon/figures-in-a-garden(1).jpg"
+    },
+    {
+     "baslik": "Head I",
+     "yil": 1948,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/head-i-1948",
+     "gorsel": "https://uploads4.wikiart.org/images/francis-bacon/head-i(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Study for Portrait V",
+     "yil": 1953,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/study-for-portrait-v-1953",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/francis-bacon-study-for-portrait-v-1953.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Three Studies for Portrait of Isabel Rawsthorne (on a dark background)",
+     "yil": 1965,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-for-portrait-of-isabel-rawsthorne-on-a-dark-background-1965",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/6-1.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Two Studies for a Self-Portrait",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/two-studies-for-a-self-portrait-1970",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/7-2.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Second Version of Triptych 1944",
+     "yil": 1988,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/second-version-of-triptych-1944-1988",
+     "gorsel": "https://uploads2.wikiart.org/00228/images/francis-bacon/second-version-of-triptych-1944-1988.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Rug",
+     "yil": 1929,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/rug-1929-0",
+     "gorsel": "https://uploads6.wikiart.org/00108/images/francis-bacon/rug-1929.jpg"
+    },
+    {
+     "baslik": "The Crucifixion",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/the-crucifixion-1933",
+     "gorsel": "https://uploads0.wikiart.org/images/francis-bacon/the-crucifixion-1933(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Study from the human body",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/study-from-the-human-body-1949",
+     "gorsel": "https://uploads3.wikiart.org/images/francis-bacon/study-from-the-human-body(1).jpg"
+    },
+    {
+     "baslik": "Study after Velazquez's portrait of Pope Innocent X",
+     "yil": 1953,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/study-after-velazquezs-portrait-of-pope-innocent-x-1953",
+     "gorsel": "https://uploads4.wikiart.org/images/francis-bacon/study-after-velazquez-s-portrait-of-pope-innocent-x(1).jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Three Studies for Portrait of Isabel Rawsthorne",
+     "yil": 1968,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-for-portrait-of-isabel-rawsthorne-1968",
+     "gorsel": "https://uploads6.wikiart.org/00108/images/francis-bacon/58406326edc2c97ffccc1e8f.png!HalfHD.png"
+    },
+    {
+     "baslik": "Triptych - Studies of the Human Body",
+     "yil": 1970,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/triptych-studies-of-the-human-body-1970",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/5-2.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Triptych Inspired by Oresteia of Aeschylus",
+     "yil": 1981,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/triptych-inspired-by-oresteia-of-aeschylus-1981",
+     "gorsel": "https://uploads2.wikiart.org/00108/images/francis-bacon/11.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Crucifixion",
+     "yil": 1933,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/crucifixion-1933",
+     "gorsel": "https://uploads5.wikiart.org/00108/images/francis-bacon/francis-bacon-crucifixion-dacsx600.jpg"
+    },
+    {
+     "baslik": "Head VI",
+     "yil": 1949,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/head-vi-1949",
+     "gorsel": "https://uploads3.wikiart.org/00108/images/francis-bacon/head-vi-1949.jpg!HalfHD.jpg"
+    },
+    {
+     "baslik": "Three Studies for Figures at the Base of a Crucifixion (2nd version)",
+     "yil": 1988,
+     "sayfa": "https://www.wikiart.org/en/francis-bacon/three-studies-for-figures-at-the-base-of-a-crucifixion-2nd-version-1944",
+     "gorsel": "https://uploads1.wikiart.org/00108/images/francis-bacon/5.jpg!HalfHD.jpg"
+    }
+   ]
   }
  },
  "kaynak": "WikiArt (https://www.wikiart.org) · scripts/kaynaklar/wikiart.mjs",
- "olusturma": "2026-10-20T10:32:33.805Z"
+ "olusturma": "2026-10-20T10:34:53.840Z"
 }
