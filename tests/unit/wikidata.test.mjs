@@ -26,7 +26,23 @@ test('aday doğrulama: insan + doğum yılı ±3', () => {
 
 test('“yaklaşık” nitelendirmeli doğum tarihinde tolerans ±10', () => {
   assert.equal(adayUygunMu(ent.Q3, { dogum: -480 }), true);
-  assert.equal(adayUygunMu(ent.Q3, { dogum: -470 }), false);
+  // MÖ doğumlu sanatçılarda tolerans en az ±15
+  assert.equal(adayUygunMu(ent.Q3, { dogum: -475 }), true);
+  assert.equal(adayUygunMu(ent.Q3, { dogum: -474 }), false);
+});
+
+test('antik sanatçılar (MÖ doğum) için ±15, MS için ±3 kalır', () => {
+  const kisi = (time) => ({
+    claims: {
+      P31: [{ rank: 'normal', mainsnak: { snaktype: 'value', datavalue: { value: { id: 'Q5' } } } }],
+      P569: [{ rank: 'normal', mainsnak: { snaktype: 'value', datavalue: { value: { time, precision: 9 } } } }],
+    },
+  });
+  // Phidias: Wikidata MÖ 490 (yıl hassasiyeti), veride MÖ 480
+  assert.equal(adayUygunMu(kisi('-0490-01-01T00:00:00Z'), { dogum: -480 }), true);
+  assert.equal(adayUygunMu(kisi('-0496-01-01T00:00:00Z'), { dogum: -480 }), false);
+  assert.equal(adayUygunMu(kisi('+1528-01-01T00:00:00Z'), { dogum: 1518 }), false);
+  assert.equal(adayUygunMu(kisi('+1520-01-01T00:00:00Z'), { dogum: 1518 }), true);
 });
 
 test('qidCoz: doğrulanamayan aday tahmin edilmez', async () => {

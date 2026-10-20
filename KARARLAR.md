@@ -14,7 +14,12 @@ Tarifte (CLAUDE.md) açık bırakılan ya da yorum gerektiren yerlerde verdiğim
 
 ## Wikidata ve görseller
 
-8. **Doğum yılı doğrulaması:** tarifteki ±3 yıl kuralı yıl hassasiyetindeki tarihler için aynen uygulanır. Ancak antik ve ortaçağ sanatçılarında Wikidata tarihleri çoğu zaman “yaklaşık” ya da yüzyıl hassasiyetinde. Bu yüzden: tarih “yaklaşık” nitelendirmeliyse (P1480) ya da on yıl hassasiyetindeyse ±10 yıl, yüzyıl hassasiyetindeyse ±100 yıl. Bu genişletme yalnızca sanatçının kendisini doğrulamak için. Eser atfı kuralı değişmedi: eser yalnızca doğrulanmış QID'e P170/P84 ile bağlıysa alınır. Bu kurallarla bile doğrulanamayan sanatçılar tahmin edilmez; listesi aşağıda.
+8. **Doğum yılı doğrulaması:** tarifteki ±3 yıl kuralı yıl hassasiyetindeki tarihler için aynen uygulanır. Ancak antik ve ortaçağ sanatçılarında Wikidata tarihleri çoğu zaman “yaklaşık” ya da yüzyıl hassasiyetinde. Bu yüzden:
+   - tarih “yaklaşık” nitelendirmeliyse (P1480) ya da on yıl hassasiyetindeyse ±10 yıl,
+   - yüzyıl hassasiyetindeyse ±100 yıl,
+   - doğum yılı MÖ olan (antik) sanatçılarda en az ±15 yıl (Emre'nin isteği; Phidias böylece eşleşir).
+
+   Bu genişletme yalnızca sanatçının kendisini doğrulamak için. Eser atfı kuralı değişmedi: eser yalnızca doğrulanmış QID'e P170/P84 ile bağlıysa alınır. Bu kurallarla bile doğrulanamayan sanatçılar tahmin edilmez; listesi aşağıda.
 9. **Grup sanatçılar** (Limbourg kardeşler gibi): P31 değeri insan grubu, kardeş grubu, ikili ya da üçlü ise kabul edilir. `dogum` boşsa doğum yılı denetimi yapılmaz.
 10. **Kuşkulu atıflar elenir:** yaratıcı iddiasında P5102 (ifadenin niteliği) varsa ve değeri “atıf” (Q230768) değilse (ör. “muhtemelen”, “tartışmalı”) eser alınmaz. Yalnızca en iyi sıradaki (`wdt:`) iddialar kullanılır.
 11. **Eser başlığı** sırasıyla `tr`, `en`, `mul` etiketinden. Üçü de yoksa eser atlanır. Yıl P571'in en erkeni.
@@ -60,12 +65,14 @@ Tarifte (CLAUDE.md) açık bırakılan ya da yorum gerektiren yerlerde verdiğim
 
 ## Wikidata'da doğrulanamayan sanatçılar
 
-`scripts/onbellek.mjs` çalıştırıldığında QID'i doğrulanamayan, bu yüzden yalnızca kurs eserleriyle görünen sanatçılar:
+`scripts/onbellek.mjs` çalıştırıldığında QID'i doğrulanamayan sanatçılar (tahmin edilmez; varsa yalnızca kurs eserleriyle görünürler):
 
-- **Phidias:** Wikidata'da doğum tarihi MÖ 490 (yıl hassasiyetinde, “yaklaşık” nitelendirmesi yok), veride MÖ 480. Fark 10 yıl olduğu için eşleşmedi. 4 kurs eseriyle görünür.
-- **Tintoretto:** “Tintoretto” aramasının ilk 7 sonucunda asıl ressam (Jacopo Tintoretto) çıkmıyor, yalnızca oğlu Domenico gibi adaşlar var. Doğum yılları tutmadığı için hiçbiri kabul edilmedi. 2 kurs eseriyle görünür. (`ad_arama` içerik alanı olduğu için değiştirmedim. İstenirse içerik tarafında “Jacopo Tintoretto” yapılabilir.)
 - **Laokoon heykeltıraşları (Hagesandros, Athenodoros, Polydoros):** Wikidata'da arama sonucu yok ve kurs eseri de yok. Bu yüzden görseli yok, pekiştirmeye girmez; yalnızca Göz At'ta metniyle görünür.
 
 Ayrıca **Francis Bacon** doğru QID'e (Q154340) bağlandı, ama eserleri telif kapsamında olduğu için Wikidata'da görseli (P18) olan eseri yok. Kurs eseri de olmadığından pekiştirmeye girmez.
 
-Önbellek: 169 sanatçı, 5431 Wikidata eseri (sanatçı başına en fazla 40), üretim tarihi 2026-10-20.
+Daha önce doğrulanamayan iki sanatçı Emre'nin isteğiyle düzeltildi (2026-10-20):
+- **Phidias:** Wikidata'da doğum MÖ 490, veride MÖ 480. Antik toleransı (±15) ile eşleşti (Q177302, 12 eser).
+- **Tintoretto:** `ad_arama` “Tintoretto” → “Jacopo Tintoretto” yapıldı (veride tek içerik değişikliği; Emre istedi). Asıl ressam bulundu (Q9319, 40 eser).
+
+Önbellek: 169 sanatçı, 5483 Wikidata eseri (sanatçı başına en fazla 40), üretim tarihi 2026-10-20.

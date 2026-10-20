@@ -8,7 +8,7 @@ import { sanatciEserleri, eserSec, TEST_HAVUZU } from './eserler.js';
 import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, TEMALAR } from './depo.js';
 import { goruntuleyiciAc, kaynakYazisi } from './goruntuleyici.js';
 
-const SURUM = '1.0.0';
+const SURUM = '1.0.1';
 const TEMA_RENK = { sepya: '#F1E8D6', acik: '#FBFAF7', koyu: '#1D1A17' };
 const TEMA_AD = { sepya: 'Sepya', acik: 'Açık', koyu: 'Koyu' };
 const TAHMINI_GORSEL_KB = 180;
