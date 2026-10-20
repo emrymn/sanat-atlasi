@@ -11,7 +11,7 @@ test('Günün sanatçısı: ana sayfada kart, bölüm içeriği, aynı gün ayn�
   await expect(kart).toBeVisible();
   // ana sayfada en üstteki kart
   const ilkY = await kart.boundingBox();
-  const menuY = await page.getByRole('link', { name: 'Pekiştir · Karışık' }).boundingBox();
+  const menuY = await page.locator('[data-test="pekistir"]').boundingBox();
   expect(ilkY.y).toBeLessThan(menuY.y);
   const ad = (await kart.locator('b').textContent()).trim();
   await kart.click();

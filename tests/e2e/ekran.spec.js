@@ -41,8 +41,10 @@ async function al(page, ad, tam = false) {
 test('ekran görüntüleri: Bugün, Sanatçı, Pekiştir ve çizilmemiş ekranlar', async ({ page }) => {
   await page.goto('./');
   await expect(page.locator('[data-test="gunun-kart"]')).toBeVisible();
+  await expect(page.locator('[data-palet] .palet span').first()).toBeAttached({ timeout: 20_000 });
   await bekle(page);
   await al(page, 'bugun');
+  await al(page, 'bugun-tam', true);
 
   await page.goto('./#/sanatci/johannes-vermeer');
   await expect(page.locator('.eser').first()).toBeVisible();
@@ -57,7 +59,7 @@ test('ekran görüntüleri: Bugün, Sanatçı, Pekiştir ve çizilmemiş ekranla
   await al(page, 'pekistir-soru1');
   await secenekler.first().click();
   await expect(page.locator('.alt-yaprak')).toBeVisible();
-  await page.waitForTimeout(300);
+  await page.waitForTimeout(800);
   await al(page, 'pekistir-cevap1');
   await page.locator('[data-ikinci]').click();
   await page.locator('[data-test="akim-secenekleri"] button').nth(1).click();

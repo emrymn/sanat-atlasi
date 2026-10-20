@@ -2,10 +2,10 @@
 
 Kenney Mencher'in *Art History: Renaissance to 20th Century* kursuyla birlikte büyüyen, kişisel sanat tarihi çalışma uygulaması. iPhone'da ana ekrana eklenen bir **PWA**; sunucu, hesap ya da analiz yok — yalnızca statik dosyalar.
 
-Görünüm: **“Gece galerisi”** (`tasarim-A/TASARIM.md`) — koyu duvar, spot ışığında çerçeveli eserler, altın vurgular. Alttaki sekme çubuğu: **Bugün · Göz At · Pekiştir · İlerleme**.
+Görünüm: **“Kadife ve resim rengi”** — kadife gibi koyu zemin, Bodoni Moda başlıklar; her ekranın vurgu rengi o an gösterilen eserin kendi renklerinden çıkarılır. Alttaki sekme çubuğu: **Bugün · Göz At · Pekiştir · İlerleme**.
 
-- **Bugün:** tarih, bekleyen tekrar sayısı, Günün sanatçısı (spot ışığında en bilinen eseri ve duvar etiketi), Pekiştir düğmeleri, son çalıştığın sanatçılar.
-- **Göz At:** akımlar kronolojik sırada → sanatçılar → sanatçı sayfası (kenardan kenara eser, notların, “Nasıl tanırım?”, dönem çizelgesi, eser şeridi / “Hepsini gör” galerisi) → tam ekran görüntüleyici (iki parmakla yakınlaştır, kaydırarak eserler arasında geç; resim hiç kırpılmaz).
+- **Bugün:** Günün sanatçısının en bilinen eseri ekranın üstünü kaplar; adı, “Resmin renkleri” şeridi, Pekiştir düğmeleri, son çalıştığın sanatçılar.
+- **Göz At:** akımlar kronolojik sırada → sanatçılar → sanatçı sayfası (eserlerin kırpılmadan yatay galerisi, notların, “Nasıl tanırım?”, dönem çizelgesi) → tam ekran görüntüleyici (iki parmakla yakınlaştır, kaydırarak eserler arasında geç; resim hiç kırpılmaz).
 - **Pekiştir · Döneme göre:** bir akım (ya da “Hepsi, dönem sırasıyla”) seç; “Bu eser kimin?”
 - **Pekiştir · Karışık:** tüm açık sanatçılar; her kartta önce “Bu eser kimin?”, sonra “Hangi akım?”. Cevaptan sonra alttan bir yaprak sonucu, kısa bilgiyi ve ipucunu gösterir.
 - **İlerleme:** işlediğin konuları “işlendi” yap → o konunun sanatçıları açılır. Akımlara göre doğruluk, en zayıf sanatçılar. Sağ üstteki dişliyle **Ayarlar**.

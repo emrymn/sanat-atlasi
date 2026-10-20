@@ -39,7 +39,7 @@ test('service worker kaydolur ve ilk açılıştan sonra çevrimdışı çalış
   await expect(page.getByRole('heading', { name: /Giotto/ })).toBeVisible();
   await page.goto('./#/');
   await expect(page.getByRole('heading', { name: 'Sanat Atlası' })).toBeVisible();
-  await page.getByRole('link', { name: 'Pekiştir · Karışık' }).click();
+  await page.locator('[data-test="pekistir"]').click();
   await expect(page.locator('[data-test="sanatci-secenekleri"] button')).toHaveCount(4);
   await page.getByRole('link', { name: /Göz At/ }).count(); // gezinme hatasız
   await context.setOffline(false);

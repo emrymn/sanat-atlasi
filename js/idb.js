@@ -1,7 +1,8 @@
 // Küçük IndexedDB sarmalayıcısı. IndexedDB yoksa (ör. özel tarama) sessizce başarısız olur.
 const DB_ADI = 'sanat-atlasi';
-const DB_SURUM = 1;
-export const DEPOLAR = ['eserler', 'ilerleme'];
+// 2: resim paletleri (js/renk.js)
+const DB_SURUM = 2;
+export const DEPOLAR = ['eserler', 'ilerleme', 'palet'];
 
 let dbSozu = null;
 

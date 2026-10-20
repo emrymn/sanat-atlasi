@@ -207,3 +207,25 @@ test('yatay kaydırma yok (390 px)', async ({ page }) => {
     expect(genis, r).toBeLessThanOrEqual(390);
   }
 });
+
+test('resim rengi: Bugün paleti çıkarılır, vurgu renkleri yazılır ve IndexedDB önbelleğine girer', async ({ page }) => {
+  await page.goto('./');
+  await expect(page.locator('[data-palet] .palet span').first()).toBeAttached();
+  const vurgu = await page.evaluate(() => document.documentElement.style.getPropertyValue('--vurgu-acik'));
+  expect(vurgu).toMatch(/^#[0-9a-f]{6}$/);
+  const kayit = await page.evaluate(
+    () =>
+      new Promise((coz) => {
+        const r = indexedDB.open('sanat-atlasi');
+        r.onsuccess = () => {
+          const q = r.result.transaction('palet').objectStore('palet').count();
+          q.onsuccess = () => coz(q.result);
+        };
+      }),
+  );
+  expect(kayit).toBeGreaterThan(0);
+  // Pekiştir kartında renk sorulan eserden gelir; cevaptan sonra yaprakta paleti görünür
+  await page.goto('./#/pekistir/karisik');
+  await page.locator('[data-test="sanatci-secenekleri"] button').first().click();
+  await expect(page.locator('.alt-yaprak .palet span').first()).toBeAttached();
+});

@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia görselleri: bayatken-yeniden-doğrula, ~300 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.5.0';
+const SURUM = '1.6.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim';
 const WIKIDATA = 'atlas-wikidata';
@@ -34,7 +34,9 @@ const KABUK_DOSYALARI = [
   'js/idb.js',
   'js/kilit.js',
   'js/leitner.js',
+  'js/md5.js',
   'js/oturum.js',
+  'js/renk.js',
   'js/resim.js',
   'js/tasarim.js',
   'js/wikidata.js',
@@ -78,6 +80,8 @@ self.addEventListener('fetch', (e) => {
   const istek = e.request;
   if (istek.method !== 'GET') return;
   const url = new URL(istek.url);
+  // Palet çıkarmak için CORS ile istenen görseller önbellekteki opak yanıtı kullanamaz: doğrudan ağa gider
+  if (istek.mode === 'cors' && istek.destination === 'image' && url.origin !== self.location.origin) return;
   if (url.origin === self.location.origin) {
     e.respondWith(kabuk(istek));
   } else if (url.hostname === 'commons.wikimedia.org' && url.pathname.includes('Special:FilePath')) {

@@ -501,3 +501,56 @@ Kaynak: `tasarim-A/TASARIM.md` ve üç mockup (`A-Bugun`, `A-Sanatci`, `A-Pekist
     - Sanatçı sayfasındaki İngilizce konu başlığı satırı kaldırıldı.
     - Cevap yaprağı işaretli seçenekleri örtüyordu → otomatik kaydırma eklendi.
 101. SW 1.5.0; manifest `theme_color` / `background_color` #15120F.
+
+## Tasarım E · “Kadife ve resim rengi” (2026-10-20)
+
+“Gece galerisi” yerine bu tasarım uygulandı. Tema/token altyapısı, sekme çubuğu ve ekran iskeleti korundu; renkler, yazı tipleri ve Bugün, Sanatçı, Pekiştir düzenleri değişti. Bu bölüm 86–101'deki görünüm kararlarının yerine geçer (tema geçişi, sekme çubuğu, spoiler kuralı, kırpmama kuralı ve testler aynen geçerli).
+
+102. **Renkler (Gece):** `--bg #0B0A0B`, `--surface #171517`, `--border #2A272A`, `--ink #F4EFE6`, `--ink-2 #ABA39A`, `--ink-3 #827A72`; doğru `#6FB487` (ikon `#8FD0A2`), yanlış `#D66854` (ikon `#F09A86`). Altın vurgu kaldırıldı. Zemin dokusu: `radial-gradient(rgba(255,255,255,.035) 1px, transparent 1px)`, 3 px ızgara. Sepya ve Açık aynı yerleşimi kullanır; doku orada koyu noktalıdır.
+103. **Yazı tipleri:** başlık, isim ve okuma metinleri Bodoni Moda (400, 500, italik 400), arayüz Archivo (400–700). Cormorant ve Figtree kaldırıldı. Okuma metinleri Bodoni 19 px, böylece CLAUDE.md'nin “gövde ≥ 17 px” kuralı korunuyor.
+104. **Resim rengi** (`js/renk.js`):
+    - Görsel `crossOrigin="anonymous"` ile 64 px'lik bir canvas'a çizilir. Median-cut ile en fazla 6 renk ve her rengin payı çıkarılır.
+    - `--vurgu`: payı en az %4 olan renkler arasında açıklığı .25–.72 olan en doygun ton.
+    - `--vurgu-acik`: aynı tonun zeminde okunan hali. Gece'de açılarak, Sepya ve Açık'ta koyulaşarak zemine karşı en az 4,5:1'e getirilir.
+    - Dolu düğmeler: yazı rengi (koyu ya da beyaz) zeminle en az 4,5:1 olacak şekilde seçilir; yetmezse düğme renginin açıklığı ayarlanır.
+    - `--vurgu-koyu`: vurgunun zeminle karışmış çok koyu tonu (cevap yaprağının gradyanı). `--vurgu-rgb`: hale ve gölgeler için.
+    - Bütün kurallar birim testlerinde.
+105. **Kaynak eser:** Bugün'de ve Günün sanatçısı bölümünde günün eseri, Sanatçı'da sanatçının listedeki ilk eseri, Pekiştir'de sorulan eser. Sekme ekranları (Göz At, akım, İlerleme, Ayarlar, Pekiştir menüsü) Günün sanatçısının rengini taşır. Ekran değişince, geç gelen bir paletin yeni ekranın rengini ezmemesi için istek sırası tutulur.
+106. **CORS:** Commons'un `Special:FilePath` yönlendirmesi `Access-Control-Allow-Origin` göndermiyor (denendi); böyle bir görselden palet okunamaz.
+    - Palet için dosyanın MD5 yolundan doğrudan `upload.wikimedia.org` küçük resmi alınır (`js/md5.js`, `paletUrl`).
+    - Genişlik 330 px, çünkü Wikimedia artık yalnızca standart küçük resim genişliklerini veriyor (200 ve 400 px 400/429 döndü, 330 ve 500 px 200).
+    - Müze görselleri kendi adresleriyle denenir; Met ve AIC CORS'a açık.
+    - Service worker, CORS kipindeki görsel isteklerine karışmaz; önbellekteki opak yanıtlar CORS isteğini bozardı.
+107. **Yedek renk:** palet çıkarılamazsa (CORS, çevrimdışı, 429) istenen şekilde akımın sabit rengi (`akimlar.json` `renk`) tek renkli palet olarak kullanılır. **Pekiştir'de cevaptan önce akım rengi kullanılmaz**, çünkü cevabı ele verir; orada nötr vurguda kalınır. Başarılı paletler IndexedDB'de (`palet` deposu, veritabanı sürümü 2) görsel adresiyle saklanır, başarısızlar saklanmaz.
+108. **Bugün:**
+    - Günün eseri ekranın üst 520 px'ini (+ güvenli alan) kenardan kenara kaplar (`object-position` üstten); 14 sn'de 1,08'den 1'e yakınlaşır, altta zemine erir.
+    - Üstte “GÜNÜN SANATÇISI” (11,5 px, .2em, `--vurgu-acik`) ve sağda “tarih · N tekrar” hapı. Etiket parlak resimlerde okunsun diye hafif gölgeli; üst kenardaki karartma biraz artırıldı.
+    - İsim resmin altına biner: ad italik 22 px, soyad Bodoni 400, 64 px; ardından “yıllar · akım · Konu N”.
+    - **Ad bölme:** son kelime soyaddır; van/de/da/di/der… ekleri soyada katılır (“Jan / van Eyck”). Tek kelimelik adlar (Caravaggio) yalnızca soyad satırında; parantez içi (Yaşlı) soyada eklenir; “Limbourg kardeşler” bölünmez. Uzun soyadlar satıra sığana kadar 34 px'e kadar küçülür.
+    - Altında “RESMİN RENKLERİ” şeridi: 12 px, renk payına göre genişlik, açılışta soldan uzar.
+    - Düğmeler: “Pekiştir” ve sayı (bekleyen tekrar; yoksa bugün kalan kart) `--vurgu` dolu, radius 16, yükseklik 54, renkli gölge; “Döneme göre” surface + border.
+    - “SON” satırı: üst üste binen yuvarlak küçük resimler + “İsim, İsim +N”. Resimler 40 px ve 2 px zemin çerçevesiyle 44 px dokunma hedefi; adlar soyad kısmı.
+    - Sayılar ve Ayarlar bağlantısı altta sakin bir satırda.
+109. **Sanatçı:**
+    - Üstte geri düğmesi ve akım adı (büyük harf, `--vurgu-acik`, akım sayfasına bağlantı). İsim (ad italik 22, soyad 60) ve “yıllar · Kursta Konu N”.
+    - Eserler yatay kaydırmalı galeride: yükseklik 236 px, genişlik oranına göre, kırpma yok, radius 6, altında italik başlık. Dokununca mevcut görüntüleyici açılır. Önceki “Hepsini gör” iki sütunlu galerisi yeni tasarımda olmadığı için kaldırıldı.
+    - Sonra Notlarımdan (Bodoni italik 19; ek sanatçıda `anlatim`), varsa “Nasıl tanırım?”, ardından üç sütunlu dönem (4 px çizgiler, ortadaki `--vurgu`). Sol üstte vurgu renginde yumuşak hale var.
+    - Günün sanatçısı bölümü aynı düzeni kullanır; üstüne biyografi, dönem metni ve iki düğme eklenir.
+110. **Pekiştir:**
+    - Üstte kapat, “KARIŞIK” (ya da akım adı / “HEPSİ”) ve “i / n”; altında 3 px `--vurgu-acik` ilerleme çubuğu.
+    - Eser yanlarda 12 px boşlukla, radius 10, hiç kırpılmadan gösterilir. Yüksekliği ekrana göre: `clamp(190px, 100dvh − 470px − güvenli alanlar, 430px)`. Arkasında eserin renginde 7 sn'de nefes alan bir hale var.
+    - Soru Bodoni 500, 40 px; sağda “SORU 1 / 2”. 390 px'te “Bu eser kimin?” iki satıra kırılıyor; boyut tarifteki gibi bırakıldı.
+    - Seçenekler 50 px, radius 14, surface + border. Doğru/yanlış/soluk durumları ve spoiler kuralı aynı.
+    - Cevap yaprağı: üst köşeler 24 px, `--vurgu-koyu`'dan `--bg`'ye gradyan; sonuç satırı, Bodoni 25 px bilgi, 8 px palet şeridi, ipucu, kaynak satırı, “Sanatçı” (erişilebilir adı “Sanatçı sayfası”) ve `--vurgu-acik` dolu “sonraki” düğmesi.
+111. **Sekme çubuğu** aynı; etkin sekme `--vurgu-acik`. Göz At, İlerleme, Ayarlar ve görüntüleyici aynı token ve yazı tiplerine geçti. Küçük resimler çerçevesiz, 6 px köşeli; anahtarlar ve çubuklar `--vurgu-acik`.
+112. **Hareket:** yakınlaşma, şeridin uzaması, hale nefesi, yaprak ve geçişler `prefers-reduced-motion` açıkken kapanır.
+113. **Kırık görseller:** yedek boyut da açılmazsa görsel gizlenir, tarayıcının kırık resim simgesi görünmez.
+114. **Testler:**
+    - Ana sayfa düğmesi artık yalnızca “Pekiştir” yazdığı için testler onu `data-test="pekistir"` ile buluyor.
+    - Yeni birim testleri: palet, vurgu seçimi, kontrast, MD5 ve palet adresi.
+    - Yeni e2e testi: Bugün paleti çıkarılıyor, `--vurgu-acik` yazılıyor, IndexedDB'ye kaydediliyor ve Pekiştir yaprağında palet görünüyor.
+    - Ekran testi Bugün'ün tam sayfa görüntüsünü de alıyor.
+115. **Ekran görüntüsü kontrolü** (gerçek görsellerle, 390×844):
+    - Bugün'de Kandinsky'nin 6 renkli paleti ve resimden gelen turuncu vurgu çalıştı, Sepya'da da.
+    - Bu ortamdan Wikimedia aralıklı 429 (hız sınırı) döndürdüğü için bazı Sanatçı ve Pekiştir görüntülerinde yedek renk görüldü. Adresler ve CORS başlıkları ayrıca doğrulandı; telefonda tek kullanıcıyla bu sınıra takılması beklenmez, takılırsa bir sonraki açılışta yeniden denenir.
+116. SW 1.6.0 (yeni `js/renk.js`, `js/md5.js` kabukta); manifest renkleri `#0B0A0B`.
