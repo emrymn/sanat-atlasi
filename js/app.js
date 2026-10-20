@@ -14,7 +14,7 @@ import { akimYuzyillari, ikon } from './tasarim.js';
 import { adParcala, bilinenAd } from './adlar.js';
 import { paletGetir, renkTemasi } from './renk.js';
 
-const SURUM = '1.6.0';
+const SURUM = '1.6.1';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };

@@ -13,8 +13,9 @@ test('bilinen adlar büyük satırda', () => {
   assert.deepEqual(parcala('leonardo-da-vinci'), { ilk: 'da Vinci', son: 'Leonardo' });
   assert.deepEqual(parcala('giotto-di-bondone'), { ilk: 'di Bondone', son: 'Giotto' });
   assert.equal(parcala('michelangelo').son, 'Michelangelo');
-  assert.equal(parcala('raphael').son, 'Raffaello');
-  assert.equal(parcala('titian').son, 'Tiziano');
+  // Raphael ve Titian verideki adlarıyla (listede yok, tek kelime → büyük satır)
+  assert.deepEqual(parcala('raphael'), { ilk: '', son: 'Raphael' });
+  assert.deepEqual(parcala('titian'), { ilk: '', son: 'Titian' });
   assert.equal(bilinenAd(s('rembrandt-van-rijn').ad, kisa['rembrandt-van-rijn']), 'Rembrandt');
 });
 
