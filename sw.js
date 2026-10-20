@@ -1,6 +1,6 @@
 // Sanat Atlası service worker
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
-// - Wikimedia görselleri: bayatken-yeniden-doğrula, ~300 MB üst sınır, en eski kullanılan silinir (LRU)
+// - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~300 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
 const SURUM = '1.6.1';
 const KABUK = `atlas-kabuk-${SURUM}`;
@@ -90,6 +90,9 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(resim(e));
   } else if (url.hostname === 'upload.wikimedia.org' || url.hostname === 'thumb.wikimedia.org') {
     e.respondWith(resim(e));
+  } else if (/^uploads\d*\.wikiart\.org$/.test(url.hostname)) {
+    // WikiArt görselleri (yalnızca görsel; WikiArt API'sine telefondan hiç gidilmez)
+    e.respondWith(resim(e));
   } else if (MUZE_GORSELLERI.some((h) => url.hostname === h.host && url.pathname.startsWith(h.yol))) {
     e.respondWith(resim(e));
   } else if (url.hostname === 'www.wikidata.org' || url.hostname === 'query.wikidata.org') {
@@ -141,6 +144,7 @@ async function onceAg(istek, ad) {
 // ---- görseller (LRU) ----
 function tahminiBoyut(url) {
   const u = new URL(url);
+  if (u.hostname.endsWith('wikiart.org')) return /!Large\.jpg$/i.test(u.pathname) ? 90 * 1024 : 220 * 1024;
   const g = parseInt(u.searchParams.get('width') || (/\/full\/(400),/.test(u.pathname) ? '400' : '800'), 10);
   return g <= 400 ? 60 * 1024 : 180 * 1024;
 }

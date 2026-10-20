@@ -1,5 +1,5 @@
 // Bir eserin görselleri: kaynağa göre URL, kaynak yazısı ve kullanıcının "kötü" işaretledikleri.
-// Görsel biçimi: { k: 'commons'|'met'|'aic'|'cma'|'nga', d?: Commons dosyası, u?: doğrudan URL,
+// Görsel biçimi: { k: 'commons'|'met'|'aic'|'cma'|'nga'|'wikiart', d?: Commons dosyası, u?: doğrudan URL,
 //                  i?: IIIF kimliği/adresi, l?: lisans, s?: kaynak sayfası, p?: kalite puanı }
 import { resimUrl, dosyaSayfasi, dosyaNormal } from './yardimci.js';
 import { md5 } from './md5.js';
@@ -10,6 +10,7 @@ export const KAYNAK_ADI = {
   aic: 'Art Institute of Chicago',
   cma: 'Cleveland Museum of Art',
   nga: 'National Gallery of Art',
+  wikiart: 'WikiArt',
 };
 
 export function gorselAnahtari(g) {
@@ -25,6 +26,9 @@ export function gorselUrl(g, genislik = 800) {
       return `https://www.artic.edu/iiif/2/${g.i}/full/${genislik <= 400 ? 400 : 843},/0/default.jpg`;
     case 'nga':
       return `${g.i}/full/!${genislik},${genislik}/0/default.jpg`;
+    case 'wikiart':
+      // Veride HalfHD (1366×800) ya da daha küçük özgün dosya; küçük resimde Large (750×600) yeter
+      return genislik <= 400 ? String(g.u).replace(/!HalfHD\.jpg$/i, '!Large.jpg') : g.u;
     default:
       return g.u;
   }
@@ -49,6 +53,7 @@ export function gorselSayfasi(g) {
 }
 
 export function gorselKaynakYazisi(g) {
+  if (g.k === 'wikiart') return 'Kaynak: WikiArt';
   return `${KAYNAK_ADI[g.k] || g.k}${g.l ? ' · ' + g.l : ''}`;
 }
 

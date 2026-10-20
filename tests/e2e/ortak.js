@@ -12,7 +12,7 @@ export async function agiHazirla(context) {
   for (const [id, k] of Object.entries(sabit.sanatcilar)) sanatcilar[id] = { ...k, eserler: [...((gercek.sanatcilar[id] || {}).eserler || []), ...k.eserler] };
   const onbellek = JSON.stringify({ ...gercek, olusturma: new Date().toISOString(), sanatcilar });
   await context.route(
-    /commons\.wikimedia\.org\/wiki\/Special:FilePath|upload\.wikimedia\.org|images\.metmuseum\.org|www\.artic\.edu\/iiif|api\.nga\.gov\/iiif|openaccess-cdn\.clevelandart\.org/,
+    /commons\.wikimedia\.org\/wiki\/Special:FilePath|upload\.wikimedia\.org|images\.metmuseum\.org|www\.artic\.edu\/iiif|api\.nga\.gov\/iiif|openaccess-cdn\.clevelandart\.org|uploads\d*\.wikiart\.org/,
     (r) => r.fulfill({ status: 200, contentType: 'image/png', body: resim, headers: { 'access-control-allow-origin': '*' } }),
   );
   await context.route(/www\.wikidata\.org\/w\/api\.php/, (r) =>

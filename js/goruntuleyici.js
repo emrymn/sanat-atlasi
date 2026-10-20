@@ -78,7 +78,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     if (!gizli) {
       const sayfa = gorselSayfasi(g);
       alt.innerHTML = `<p class="gor-baslik">${kacis(e.baslik)}${e.tarih ? ` <span class="ikincil">· ${kacis(e.tarih)}</span>` : ''}</p>
-        <p class="gor-kaynak">${kacis(kaynakYazisi(e, g))}${sayfa ? ` · <a href="${kacis(sayfa)}" target="_blank" rel="noopener">kaynak sayfası</a>` : ''}${eserler.length > 1 ? ` · ${sira + 1} / ${eserler.length}` : ''}</p>`;
+        <p class="gor-kaynak">${kacis(kaynakYazisi(e, g))}${sayfa ? ` · <a href="${kacis(sayfa)}" target="_blank" rel="noopener">${g.k === 'wikiart' ? 'eser sayfası' : 'kaynak sayfası'}</a>` : ''}${eserler.length > 1 ? ` · ${sira + 1} / ${eserler.length}` : ''}</p>`;
     }
     // komşuları önceden yükle
     for (const k of [sira - 1, sira + 1]) if (eserler[k]) new Image().src = gorselUrl(secilenGorsel(eserler[k], kotuler) || eserler[k].gorseller[0], 800);

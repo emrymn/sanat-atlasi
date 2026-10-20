@@ -5,7 +5,7 @@ import { bugunStr, cevapla, vadesiGeldiMi, gorulduMu, GUNLUK_YENI_SINIRI } from 
 import { sanatciSecenekleri, akimSecenekleri, akimOrtaYillari } from './celdirici.js';
 import { kartlariSec, Oturum, kategori } from './oturum.js';
 import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU } from './eserler.js';
-import { gorselUrl, secilenGorsel, paletUrl } from './gorsel.js';
+import { gorselUrl, secilenGorsel, paletUrl, gorselSayfasi } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { gununSanatcisi, baskaSanatci } from './gunun.js';
 import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, sonCalisilanEkle, TEMALAR } from './depo.js';
@@ -20,6 +20,13 @@ const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
 const TAHMINI_GORSEL_KB = 180;
 const HARFLER = 'ABCD';
+
+// Cevap yaprağındaki kaynak satırı; WikiArt görselinde eser sayfasının bağlantısı da
+function kaynakSatiri(eser, g) {
+  const yazi = kacis(kaynakYazisi(eser, g));
+  const sayfa = g && g.k === 'wikiart' ? gorselSayfasi(g) : '';
+  return sayfa ? `${yazi} · <a href="${kacis(sayfa)}" target="_blank" rel="noopener">eser sayfası</a>` : yazi;
+}
 
 const d = {
   sanatcilar: [],
@@ -948,7 +955,7 @@ function kartGoster(o) {
       <p class="bilgi">${kacis(bilgi)}</p>
       <div data-yaprak-palet>${paletHtml(k.palet)}</div>
       ${not ? `<p class="ipucu">${kacis(not)}</p>` : ''}
-      <p class="kaynak-satir">${kacis(kaynakYazisi(k.eser, secilenGorsel(k.eser, kotuler())))}</p>
+      <p class="kaynak-satir">${kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler()))}</p>
       <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="Sanatçı sayfası">Sanatçı</a>${ileri}</div>
     </section>`;
   }

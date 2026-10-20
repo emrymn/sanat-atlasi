@@ -42,6 +42,8 @@ const HEYKEL_MALZEME =
   /^(marble|bronze|stone|limestone|sandstone|granite|terracotta|terra cotta|plaster|ceramic|porcelain|glass|stained glass|steel|iron|metal|aluminium|aluminum|brass|copper|silver|gold|wax|ivory|alabaster|concrete|plexiglas|plexiglass|neon|wood|gelatin silver print|photograph|photography|photogram|film|readymade|found object|polyester|resin|fiberglass)$/i;
 const RESIM_MALZEME =
   /oil|tempera|acrylic|watercolou?r|gouache|pastel|ink|pencil|graphite|chalk|charcoal|crayon|fresco|canvas|paper|panel|board|cardboard|etching|engraving|lithograph|woodcut|linocut|print|collage|enamel paint|distemper|encaustic|vellum|parchment|silk/i;
+// Fotoğraf malzemesi her durumda çıkar ("gelatin silver print" bir baskı değil, fotoğraftır)
+const FOTO_MALZEME = /gelatin silver|photograph|photogram|chromogenic|cyanotype|albumen|platinum print|daguerreotype/i;
 const BASLIK_HARIC = /\b(film still|photograph|photogram|rayograph|readymade)\b/i;
 
 // Akımların WikiArt üslup adları (yalnızca sıralama için: üslubu akımına uyan eserler öne alınır)
@@ -127,6 +129,7 @@ export function resimMi(d) {
   if (BASLIK_HARIC.test(d.title || '')) return false;
   if ((d.genres || []).some((t) => HARIC_TURLER.has(String(t).toLowerCase()))) return false;
   const media = (d.media || []).map((m) => String(m).trim()).filter(Boolean);
+  if (media.some((m) => FOTO_MALZEME.test(m))) return false;
   if (media.length && media.some((m) => HEYKEL_MALZEME.test(m)) && !media.some((m) => RESIM_MALZEME.test(m))) return false;
   return true;
 }
