@@ -229,3 +229,28 @@ test('resim rengi: Bugün paleti çıkarılır, vurgu renkleri yazılır ve Inde
   await page.locator('[data-test="sanatci-secenekleri"] button').first().click();
   await expect(page.locator('.alt-yaprak .palet span').first()).toBeAttached();
 });
+
+test('Sanatçı: bilinen ad büyük satırda; galerinin sonundaki "Tümü (N)" ızgarayı açar', async ({ page }) => {
+  await page.goto('./#/sanatci/rembrandt-van-rijn');
+  await expect(page.locator('h1 .ad-son')).toHaveText('Rembrandt');
+  await expect(page.locator('h1 .ad-ilk')).toHaveText('van Rijn');
+  await expect(page.getByRole('heading', { name: 'Rembrandt van Rijn' })).toBeVisible();
+  const n = await page.locator('.eserler .eser').count();
+  expect(n).toBeGreaterThan(1);
+  const tumu = page.locator('[data-test="tumu"]');
+  await expect(tumu).toHaveText(`Tümü (${n})`);
+  await tumu.click();
+  await expect(page.locator('.izgara .eser')).toHaveCount(n);
+  await page.locator('.izgara .eser').nth(1).click();
+  await expect(page.locator('.gor .gor-kaynak')).toContainText(`2 / ${n}`);
+});
+
+test("Pekiştir: soru 390 px'te tek satır", async ({ page }) => {
+  await page.goto('./#/pekistir/karisik');
+  const h = page.locator('.soru-baslik h2');
+  await expect(h).toHaveText('Bu eser kimin?');
+  const tek = await h.evaluate(
+    (el) => el.scrollWidth <= el.clientWidth + 1 && el.getBoundingClientRect().height < parseFloat(getComputedStyle(el).fontSize) * 1.6,
+  );
+  expect(tek).toBe(true);
+});

@@ -11,6 +11,7 @@ import { gununSanatcisi, baskaSanatci } from './gunun.js';
 import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, sonCalisilanEkle, TEMALAR } from './depo.js';
 import { goruntuleyiciAc, kaynakYazisi } from './goruntuleyici.js';
 import { akimYuzyillari, ikon } from './tasarim.js';
+import { adParcala, bilinenAd } from './adlar.js';
 import { paletGetir, renkTemasi } from './renk.js';
 
 const SURUM = '1.6.0';
@@ -34,6 +35,7 @@ const d = {
   rng: rastgeleYap(Date.now() & 0xffffffff),
   indirme: null,
   akimRenk: {},
+  kisaAdlar: {},
 };
 
 const ekran = document.getElementById('uygulama');
@@ -119,36 +121,27 @@ function kunye(s, { bag = true, konuYok = false } = {}) {
   return `${kacis(yillarYaz(s))} · ${akim}${konu}${s.not_cikarilmadi ? ' <span class="rozet">taslak</span>' : ''}`;
 }
 
-// "Wassily Kandinsky" → ad: Wassily, soyad: Kandinsky; "Jan van Eyck" → Jan / van Eyck;
-// tek kelimelik adlar (Caravaggio) yalnızca soyad satırında; parantez içi (Yaşlı) soyada eklenir
-const AD_EKLERI = new Set(['van', 'von', 'de', 'der', 'den', 'da', 'di', 'del', 'della', 'du', 'la', 'le', 'ter', 'el']);
-function adParcala(ad) {
-  const m = /^(.*?)(\s*\([^)]*\))?$/.exec(ad.trim());
-  const ana = m[1].trim();
-  const parantez = (m[2] || '').trim();
-  const k = ana.split(/\s+/);
-  let i = k.length - 1;
-  // "Limbourg kardeşler" gibi küçük harfle biten adlar bölünmez
-  if (k.length === 2 && k[1] === k[1].toLocaleLowerCase('tr')) i = 0;
-  while (i > 0 && AD_EKLERI.has(k[i - 1].toLocaleLowerCase('tr'))) i--;
-  return { ilk: k.slice(0, i).join(' '), son: [k.slice(i).join(' '), parantez].filter(Boolean).join(' ') };
+// Ad iki satırda: küçük satır italik Bodoni 22 px, büyük satır (bilinen ad) Bodoni 64 px — sığmazsa küçülür.
+// Erişilebilir ad her zaman tam addır.
+function isimHtml(sanatci, { etiketAdi = 'b', sinif = '', ek = '' } = {}) {
+  const p = adParcala(sanatci.ad, d.kisaAdlar[sanatci.id]);
+  return `<${etiketAdi} class="isim${sinif ? ' ' + sinif : ''}" aria-label="${kacis(sanatci.ad)}"${ek}>${p.ilk ? `<span class="ad-ilk">${kacis(p.ilk)}</span> ` : ''}<span class="ad-son">${kacis(p.son)}</span></${etiketAdi}>`;
 }
 
-// Ad italik Bodoni 22 px, soyad Bodoni 64 px (sığmazsa küçülür)
-function isimHtml(ad, { etiketAdi = 'b', sinif = '', ek = '' } = {}) {
-  const p = adParcala(ad);
-  return `<${etiketAdi} class="isim${sinif ? ' ' + sinif : ''}"${ek}>${p.ilk ? `<span class="ad-ilk">${kacis(p.ilk)}</span> ` : ''}<span class="ad-son">${kacis(p.son)}</span></${etiketAdi}>`;
-}
-
-function adlariSigdir() {
-  for (const el of ekran.querySelectorAll('.ad-son')) {
-    el.style.fontSize = '';
-    let boy = parseFloat(getComputedStyle(el).fontSize);
-    while (el.scrollWidth > el.clientWidth + 1 && boy > 34) {
-      boy -= 2;
-      el.style.fontSize = `${boy}px`;
-    }
+// Bir öğenin yazısını tek satıra sığana kadar küçültür (en küçük `enAz` px)
+function sigdir(el, enAz) {
+  el.style.fontSize = '';
+  let boy = parseFloat(getComputedStyle(el).fontSize);
+  while (el.scrollWidth > el.clientWidth + 1 && boy > enAz) {
+    boy -= 1;
+    el.style.fontSize = `${boy}px`;
   }
+}
+
+// Büyük ad (en az 34 px) ve Pekiştir sorusu (34 px'ten başlar, en az 24 px) tek satıra sığar
+function adlariSigdir() {
+  for (const el of ekran.querySelectorAll('.ad-son')) sigdir(el, 34);
+  for (const el of ekran.querySelectorAll('.soru-baslik h2')) sigdir(el, 24);
 }
 
 // Resmin renkleri: genişlik renk payına göre
@@ -268,6 +261,7 @@ const rotalar = [
   [/^#?\/?$/, anaSayfa, 'bugun'],
   [/^#\/gozat$/, gozAt, 'gozat'],
   [/^#\/akim\/(.+)$/, akimSayfasi, 'gozat'],
+  [/^#\/sanatci\/(.+)\/eserler$/, tumEserler, 'gozat'],
   [/^#\/sanatci\/(.+)$/, sanatciSayfasi, 'gozat'],
   [/^#\/pekistir$/, pekistirMenusu, 'pekistir'],
   [/^#\/pekistir\/donem$/, pekistirMenusu, 'pekistir'],
@@ -330,7 +324,7 @@ function ciz(html) {
   window.scrollTo(0, 0);
   const h = ekran.querySelector('h1');
   if (h) h.focus({ preventScroll: true });
-  if (ekran.querySelector('.ad-son')) {
+  if (ekran.querySelector('.ad-son, .soru-baslik h2')) {
     adlariSigdir();
     if (document.fonts) document.fonts.ready.then(adlariSigdir);
   }
@@ -407,7 +401,7 @@ function anaSayfa() {
       <div class="bugun-kahraman" data-gunun-gorsel>
         <div class="bugun-ust"><span class="etiket vurgu">Günün sanatçısı</span><span class="hap" data-test="tekrar">${tekrar}</span></div>
       </div>
-      <div class="isim-blok">${isimHtml(gs.ad)}<p class="meta">${kunye(gs, { bag: false })}</p></div>
+      <div class="isim-blok">${isimHtml(gs)}<p class="meta">${kunye(gs, { bag: false })}</p></div>
     </a>
     <section class="bolum" style="gap:10px;padding-top:20px">${etiket('Resmin renkleri')}<div data-palet>${paletHtml(null)}</div></section>`
         : `<header class="ust"><div class="ust-yazi">${etiket('Bugün', { vurgu: true })}<span class="hap" data-test="tekrar">${tekrar}</span></div></header>`
@@ -421,12 +415,12 @@ function anaSayfa() {
         ? `<div class="son-satir">${etiket('Son')}<div class="yuvarlaklar">${son
             .slice(0, 4)
             .map((s) => `<a href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="${kacis(s.ad)}" data-mini="${kacis(s.id)}"></a>`)
-            .join('')}</div><span class="son-adlar">${kacis(
+            .join('')}</div><span class="son-adlar"><span>${kacis(
             son
               .slice(0, 2)
-              .map((s) => adParcala(s.ad).son)
+              .map((s) => bilinenAd(s.ad, d.kisaAdlar[s.id]))
               .join(', '),
-          )}${son.length > 2 ? ` +${son.length - 2}` : ''}</span></div>`
+          )}</span>${son.length > 2 ? `<span class="ek">+${son.length - 2}</span>` : ''}</span></div>`
         : ''
     }
     <p class="sakin"><span data-test="acik-sayi">${ist.acik}</span> açık sanatçı · ${ist.oran === null ? 'henüz cevap yok' : `%${ist.oran} doğru`} · bugün ${g.kart} / ${d.ilerleme.ayarlar.gunlukKart} kart · <a href="#/ayarlar">Ayarlar</a></p>`);
@@ -544,7 +538,7 @@ async function gununSayfasi(id) {
     <header class="sanatci-ust">${geriDugmesi('#/')}<h1 class="etiket vurgu" tabindex="-1">${id && id !== bugunku ? 'Sanatçı' : 'Günün sanatçısı'}</h1>
       <span class="hap" data-test="kurs-durumu">${kacis(kursDurumu(s))}</span></header>
     <article class="gunun">
-      <div class="isim-blok">${isimHtml(s.ad, { etiketAdi: 'h2', sinif: 'gunun-ad' })}<p class="meta">${kunye(s)}</p></div>
+      <div class="isim-blok">${isimHtml(s, { etiketAdi: 'h2', sinif: 'gunun-ad' })}<p class="meta">${kunye(s)}</p></div>
       <div class="eserler" data-galeri><p class="ikincil kucuk">Eserler yükleniyor…</p></div>
       ${notBolumleri(s)}
       <section class="bolum">
@@ -696,7 +690,7 @@ async function sanatciSayfasi(id) {
     <header class="sanatci-ust">${geriDugmesi(akimYolu)}<a class="etiket vurgu" href="${akimYolu}">${kacis(s.akim)}</a></header>
     <article>
     <div class="isim-blok">
-      ${isimHtml(s.ad, { etiketAdi: 'h1', ek: ' tabindex="-1"' })}
+      ${isimHtml(s, { etiketAdi: 'h1', ek: ' tabindex="-1"' })}
       <p class="meta">${kacis(yillarYaz(s))} · <span class="vurgu-yazi">${s.kaynak === 'ek' ? 'Kurs dışı' : `Kursta Konu ${s.konu}`}</span>${s.not_cikarilmadi ? ' <span class="rozet">taslak</span>' : ''}</p>
       ${acik || pekistirmedeMi(s) ? '' : `<p class="mesaj-not">Bu sanatçı Konu ${s.konu} işlenince pekiştirmeye girer.</p>`}
     </div>
@@ -713,11 +707,33 @@ async function sanatciSayfasi(id) {
     kutu.innerHTML = '<p class="ikincil kucuk">Bu sanatçı için doğrulanmış görsel bulunamadı.</p>';
     return;
   }
-  kutu.innerHTML = eserSeridi(eserler, 'eser', 'data-eser');
+  // galerinin sonunda "Tümü (N)": bütün eserlerin ızgara görünümü
+  kutu.innerHTML = `${eserSeridi(eserler, 'eser', 'data-eser')}<a class="tumu" href="#/sanatci/${encodeURIComponent(s.id)}/eserler" data-test="tumu">Tümü (${eserler.length})</a>`;
   kutu.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-eser]');
     if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.eser), ...gorselTercihi() });
   });
+}
+
+// Bir sanatçının bütün eserleri: iki sütunlu ızgara, kırpma yok; dokununca görüntüleyici
+async function tumEserler(id) {
+  const s = d.harita.get(id);
+  if (!s) return hataGoster(new Error('Sanatçı bulunamadı.'));
+  const eserSozu = sanatciEserleri(s);
+  ekranRengi(
+    eserSozu.then((l) => l[0] || null),
+    akimRenk(s.akim),
+  );
+  const eserler = await eserSozu;
+  ciz(`<div class="hale" aria-hidden="true"></div>
+    ${ust(bilinenAd(s.ad, d.kisaAdlar[s.id]), `#/sanatci/${encodeURIComponent(s.id)}`, { ustEtiket: `Tüm eserler · ${eserler.length}` })}
+    ${eserler.length ? `<div class="izgara" data-izgara>${eserSeridi(eserler, 'eser', 'data-eser')}</div>` : '<p class="ikincil kucuk">Bu sanatçı için doğrulanmış görsel bulunamadı.</p>'}`);
+  const kutu = ekran.querySelector('[data-izgara]');
+  if (kutu)
+    kutu.addEventListener('click', (ev) => {
+      const b = ev.target.closest('[data-eser]');
+      if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.eser), ...gorselTercihi() });
+    });
 }
 
 function pekistirMenusu() {
@@ -1417,6 +1433,7 @@ async function basla() {
     jsonGetir('data/konular.json'),
     jsonGetir('data/eser_turleri.json').catch(() => null),
   ]);
+  d.kisaAdlar = (await jsonGetir('data/kisa_adlar.json').catch(() => ({ adlar: {} }))).adlar || {};
   eserTurleriniAyarla(turler);
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
   const sanatcilar = gorunurSanatcilar(tumSanatcilar, turler, await hazirOnbellek());

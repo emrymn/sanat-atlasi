@@ -540,12 +540,21 @@ img.kirik {
   display: block;
 }
 .son-adlar {
+  display: flex;
+  gap: 6px;
   font-size: 13px;
   color: var(--ink-2);
   min-width: 0;
+  white-space: nowrap;
+}
+/* adlar sığmazsa kısalır, "+N" her zaman görünür */
+.son-adlar > span:first-child {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+}
+.son-adlar .ek {
+  flex: none;
 }
 .sakin {
   margin-top: 20px;
@@ -628,6 +637,48 @@ img.kirik {
 .eser img:not(.yuklendi),
 .galeri-eser img:not(.yuklendi) {
   width: 177px;
+}
+/* galerinin sonundaki "Tümü (N)" */
+.tumu {
+  flex: none;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 236px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--vurgu-acik);
+  font: 600 15px/1.2 var(--sans);
+  text-decoration: none;
+  scroll-snap-align: start;
+}
+/* bütün eserler: iki sütunlu ızgara, kırpma yok */
+.izgara {
+  columns: 2;
+  column-gap: 12px;
+  margin-top: 8px;
+}
+.izgara .eser {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  margin: 0 0 18px;
+  break-inside: avoid;
+}
+.izgara .eser img {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+.izgara .eser img:not(.yuklendi) {
+  width: 100%;
+  height: 180px;
+}
+.izgara .eser-yazi {
+  -webkit-line-clamp: 3;
 }
 .eser-yazi {
   font: italic 400 15px/1.3 var(--serif);
@@ -893,7 +944,11 @@ img.kirik {
   padding-top: 18px;
 }
 .soru-baslik h2 {
-  font: 500 40px/1.05 var(--serif);
+  flex: 1;
+  min-width: 0;
+  font: 500 34px/1.1 var(--serif);
+  white-space: nowrap;
+  overflow: hidden;
 }
 .soru-baslik .etiket {
   flex: none;

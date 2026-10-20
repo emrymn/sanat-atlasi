@@ -46,11 +46,15 @@ test('ekran görüntüleri: Bugün, Sanatçı, Pekiştir ve çizilmemiş ekranla
   await al(page, 'bugun');
   await al(page, 'bugun-tam', true);
 
-  await page.goto('./#/sanatci/johannes-vermeer');
+  await page.goto('./#/sanatci/rembrandt-van-rijn');
   await expect(page.locator('.eser').first()).toBeVisible();
   await bekle(page);
   await al(page, 'sanatci');
   await al(page, 'sanatci-tam', true);
+  await page.locator('[data-test="tumu"]').click();
+  await expect(page.locator('.izgara .eser').first()).toBeVisible();
+  await bekle(page);
+  await al(page, 'tum-eserler');
 
   await page.goto('./#/pekistir/karisik');
   const secenekler = page.locator('[data-test="sanatci-secenekleri"] button');
@@ -79,7 +83,7 @@ test('ekran görüntüleri: Bugün, Sanatçı, Pekiştir ve çizilmemiş ekranla
     await al(page, ad);
   }
 
-  await page.goto('./#/sanatci/johannes-vermeer');
+  await page.goto('./#/sanatci/rembrandt-van-rijn');
   await page.locator('.eser').first().click();
   await expect(page.locator('.gor')).toBeVisible();
   await bekle(page);

@@ -24,6 +24,7 @@ const KABUK_DOSYALARI = [
   'index.html',
   'manifest.webmanifest',
   'css/app.css',
+  'js/adlar.js',
   'js/app.js',
   'js/celdirici.js',
   'js/depo.js',
@@ -51,6 +52,7 @@ const KABUK_DOSYALARI = [
   'data/eser_turleri.json',
   'data/akim_bilgi.json',
   'data/biyografiler.json',
+  'data/kisa_adlar.json',
 ];
 // Olmasa da kurulumu bozmayan dosyalar
 const ISTEGE_BAGLI = ['data/eserler_onbellek.json', 'icons/icon-maskable-512.png'];

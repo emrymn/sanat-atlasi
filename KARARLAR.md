@@ -554,3 +554,15 @@ Kaynak: `tasarim-A/TASARIM.md` ve üç mockup (`A-Bugun`, `A-Sanatci`, `A-Pekist
     - Bugün'de Kandinsky'nin 6 renkli paleti ve resimden gelen turuncu vurgu çalıştı, Sepya'da da.
     - Bu ortamdan Wikimedia aralıklı 429 (hız sınırı) döndürdüğü için bazı Sanatçı ve Pekiştir görüntülerinde yedek renk görüldü. Adresler ve CORS başlıkları ayrıca doğrulandı; telefonda tek kullanıcıyla bu sınıra takılması beklenmez, takılırsa bir sonraki açılışta yeniden denenir.
 116. SW 1.6.0 (yeni `js/renk.js`, `js/md5.js` kabukta); manifest renkleri `#0B0A0B`.
+
+### Birleştirmeden önceki düzeltmeler
+
+117. **Bilinen adlar** (`data/kisa_adlar.json`, `js/adlar.js`): ilk adıyla ya da başka bir kısa adla tanınan sanatçılarda büyük satıra bilinen ad, küçük satıra adın geri kalanı yazılıyor. `sanatcilar.json` taranarak çıkarılan 22 kayıt:
+    - **İlk adıyla tanınanlar:** Giotto (di Bondone), Duccio (di Buoninsegna), Arnolfo (di Cambio), Gentile (da Fabriano), Domenico (di Michelino), Piero (della Francesca), Leonardo (da Vinci), Michelangelo (Buonarroti), Raffaello (Sanzio), Tiziano (Vecellio), Daniele (da Volterra), Rosso (Fiorentino), Artemisia (Gentileschi), Rembrandt (van Rijn).
+    - **Soyadın bir kısmıyla ya da birleşik adla tanınanlar:** Zurbarán (Francisco de), Goya (Francisco de), Vigée Le Brun (Élisabeth), Baldung Grien (Hans), Holman Hunt (William), Toulouse-Lautrec (Henri de), Puvis de Chavannes (Pierre), Man Ray.
+    - Raphael ve Titian verideki İngilizce adlarıyla duruyor (seçeneklerde ve listelerde öyle görünür); büyük satırda istendiği gibi İtalyanca bilinen adları (Raffaello, Tiziano) kullanılıyor. Artemisia, babası Orazio ile “Gentileschi” olarak karışmasın diye ilk adıyla.
+    - Listede olmayanlarda eski kural geçerli: son kelime büyük satıra gelir ve van/de/da ekleri ona katılır (Jan / van Eyck, Georges / de La Tour, Vincent / van Gogh).
+    - Bilinen ad büyük isim satırlarında (Bugün, Sanatçı, Günün sanatçısı), “SON” satırında ve tüm eserler sayfasının başlığında kullanılıyor. Seçeneklerde, listelerde ve bilgi satırlarında tam ad kalıyor. Ekran okuyucu için isim öğesinin erişilebilir adı her zaman tam ad.
+118. **Pekiştir sorusu** 34 px ve tek satır. Sığmazsa JS en fazla 24 px'e kadar küçültür (`sigdir`). 390 px'te “Bu eser kimin?” ve “Hangi akım?” 34 px'te sığıyor.
+119. **“Tümü (N)”:** Sanatçı sayfasındaki yatay galerinin sonunda, galeriyle aynı yükseklikte bir kutu. Yeni `#/sanatci/<id>/eserler` ekranını açar: bütün eserler iki sütunlu ızgarada, kırpılmadan, başlık ve yılıyla; dokununca görüntüleyici açılır. Önceki yerinde açılan “Hepsini gör” düzeni yerine ayrı bir ekran seçildi; geri düğmesi sanatçıya döner.
+120. Testler: kısa ad birim testleri, “Tümü (N)” → ızgara → görüntüleyici ve sorunun tek satırda kaldığını kontrol eden e2e testleri eklendi. SW 1.6.0'da kaldı (henüz yayınlanmadı); yeni dosyalar kabuk listesinde.
