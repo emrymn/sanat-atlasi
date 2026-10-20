@@ -1,8 +1,8 @@
 // Küçük IndexedDB sarmalayıcısı. IndexedDB yoksa (ör. özel tarama) sessizce başarısız olur.
 const DB_ADI = 'sanat-atlasi';
-// 2: resim paletleri (js/renk.js)
-const DB_SURUM = 2;
-export const DEPOLAR = ['eserler', 'ilerleme', 'palet'];
+// 2: resim paletleri (js/renk.js) · 3: yarım kalan pekiştirme oturumu (js/devam.js)
+const DB_SURUM = 3;
+export const DEPOLAR = ['eserler', 'ilerleme', 'palet', 'oturum'];
 
 let dbSozu = null;
 
@@ -41,6 +41,10 @@ export function idbAl(depo, anahtar) {
 
 export function idbKoy(depo, anahtar, deger) {
   return islem(depo, 'readwrite', (s) => s.put(deger, anahtar)).catch(() => undefined);
+}
+
+export function idbSil(depo, anahtar) {
+  return islem(depo, 'readwrite', (s) => s.delete(anahtar)).catch(() => undefined);
 }
 
 export function idbTemizle(depo) {

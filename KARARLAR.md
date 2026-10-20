@@ -567,3 +567,33 @@ Kaynak: `tasarim-A/TASARIM.md` ve üç mockup (`A-Bugun`, `A-Sanatci`, `A-Pekist
 119. **“Tümü (N)”:** Sanatçı sayfasındaki yatay galerinin sonunda, galeriyle aynı yükseklikte bir kutu. Yeni `#/sanatci/<id>/eserler` ekranını açar: bütün eserler iki sütunlu ızgarada, kırpılmadan, başlık ve yılıyla; dokununca görüntüleyici açılır. Önceki yerinde açılan “Hepsini gör” düzeni yerine ayrı bir ekran seçildi; geri düğmesi sanatçıya döner.
 120. Testler: kısa ad birim testleri, “Tümü (N)” → ızgara → görüntüleyici ve sorunun tek satırda kaldığını kontrol eden e2e testleri eklendi. SW 1.6.0'da kaldı (henüz yayınlanmadı); yeni dosyalar kabuk listesinde.
 121. Raphael ve Titian `kisa_adlar.json`'dan çıkarıldı (büyük satırda verideki ad). Veri dosyası kabuk önbelleğinde olduğu için telefona ulaşsın diye SW 1.6.1.
+
+## Yarım kalan pekiştirmeye devam (2026-10-20)
+
+122. **Kayıt** (`js/devam.js`): cevap verilmiş bir oturum her adımda IndexedDB'ye (`oturum` deposu, `yarim` anahtarı; veritabanı sürümü 3) yazılır. Yazılan anlar: sanatçı cevabı, “Hangi akım? →”, akım cevabı, “Sonraki kart →” ve yeni kartın gösterilmesi. Kaydedilenler:
+    - kip, akım (`hepsi` dahil),
+    - kart sırası (tekrar kuyruğuyla birlikte), konum, sanatçı başına tekrar sayacı, doğru/yanlış sayıları,
+    - şu anki kart: eser anahtarı, dört seçenek, akım seçenekleri, adım, verilen cevaplar,
+    - gösterilen eserler (son 200).
+    
+    Hiç cevap verilmemiş oturum kaydedilmez; böylece Pekiştir'i açıp çıkmak yarım oturum bırakmaz. IndexedDB yeni sürümde, uygulama kapanınca ya da telefon kilitlenince silinmez.
+123. **Devam kartı:** Bugün ekranının en üstünde (Günün sanatçısının üstünde), Pekiştir menüsünde ve Döneme göre ekranında aynı kart görünür: “Kaldığın yerden devam et”, altında “Döneme göre · Gotik · 7 / 20” ya da “Karışık · 3 / 20”, yanında **Devam et** ve **Bitir**. Kart varken Bugün'deki büyük resim üst kenara taşmaz, 460 px'e iner.
+124. **Sıra numarası:** şu anki kart tamamlanmışsa (iki soru da cevaplıysa) sıradaki kart gösterilir. 5 kart cevaplanıp yenilenirse devam 6. karttan sürer.
+125. **Aynı kart, aynı eser, aynı adım:** yarım kart, kayıttaki eser anahtarıyla bulunur. Seçenekler, adım ve verilen cevaplar aynen geri gelir.
+    - Örneğin sanatçı cevaplanmış ama akım cevaplanmamışsa “Soru 2 / 2”den sürer.
+    - Yeni kart gösterildiği anda da kayıt yazılır. Böylece cevaplanmamış kart da aynı eserle döner.
+126. **Leitner:** verilen cevaplar kayıtta olduğu için yeniden sayılmaz. Cevaplanmış soruların düğmeleri kapalı gelir. Günlük kart sayısı ve yeni sanatçı sayacı da bir kez artar. Devam edilen oturum aynı oturumdur:
+    - Yanlışların tekrar kuyruğu ve tekrar sınırı (3) sürer.
+    - Tur sonundaki doğru/yanlış özeti bütün oturumu kapsar.
+127. **Atlanan kartlar:** sanatçı veride yoksa ya da artık açık değilse (konu işaretinin kaldırılması) kart kuyruktan çıkar. Kayıttaki eser bulunamazsa ya da seçeneklerden biri veride yoksa yarım kart atlanır. Hiç kart kalmazsa kayıt silinir.
+128. **Çakışma:** yarım oturum varken yeni bir oturum başlatılırsa sayfa içinde “Yarım kalan oturum silinsin mi?” sorusu çıkar (`confirm()` yok). Düğmeler: “Sil, yeni başla” ve “Hayır, devam et”. Uygulama yarım oturum varken bir oturum adresinde açılırsa (yenileme, yeni sürüm) Bugün'e döner; bu, devam kartını gösterir ve yanlışlıkla soru ekranına düşmeyi önler.
+129. **Silme:** “Bitir”e basılınca ya da tur bitince kayıt silinir. 7 günden eski ya da bozuk kayıt açılışta sessizce silinir.
+130. **Yedek:** yedek JSON'una `yarimOturum` alanı eklendi (varsa). Geri yüklemede doğrulanır; geçersizse ya da yedekte yoksa mevcut yarım oturum silinir. Yedek biçiminin sürümü değişmedi, eski yedekler aynen yüklenir.
+131. **Testler:** `tests/unit/devam.test.mjs` (kayıt, 7 gün, aynı kart/adım, atlama, sayaçlar, özet, yedek) ve `tests/e2e/devam.spec.js`. Uçtan uca testler:
+    - 5 kart cevapla, yenile, Devam et ile 6. karttan aynı eserle sür; skor ve günlük sayı değişmesin.
+    - Akım sorusundan devam et.
+    - Yeni oturumda sayfa içi soru çıksın.
+    - Bitir kaydı silsin.
+    - 7 günlük kayıt silinsin.
+    
+    Yedek testi yarım oturumun gidiş-dönüşünü de denetler. SW 1.7.0.
