@@ -101,7 +101,8 @@
    "İspanyol Barok",
    "Flaman Barok",
    "Hollanda Altın Çağı",
-   "Maniyerizm"
+   "Maniyerizm",
+   "Geç İtalyan Barok"
   ],
   "renk": "#7A2230"
  },
@@ -139,22 +140,34 @@
   "komsular": [
    "Rokoko",
    "İtalyan Barok ve Caravaggizm",
-   "Neoklasisizm"
+   "Neoklasisizm",
+   "Geç İtalyan Barok"
   ],
   "renk": "#2E3F6E"
  },
  {
-  "ad": "Rokoko",
+  "ad": "Geç İtalyan Barok",
   "sira": 15,
   "komsular": [
+   "İtalyan Barok ve Caravaggizm",
+   "Rokoko",
+   "Fransız Klasisizmi"
+  ],
+  "renk": "#3E7A7A"
+ },
+ {
+  "ad": "Rokoko",
+  "sira": 16,
+  "komsular": [
    "Fransız Klasisizmi",
-   "Neoklasisizm"
+   "Neoklasisizm",
+   "Geç İtalyan Barok"
   ],
   "renk": "#C98A92"
  },
  {
   "ad": "Neoklasisizm",
-  "sira": 16,
+  "sira": 17,
   "komsular": [
    "Rokoko",
    "Akademizm ve Oryantalizm",
@@ -164,7 +177,7 @@
  },
  {
   "ad": "Romantizm",
-  "sira": 17,
+  "sira": 18,
   "komsular": [
    "Neoklasisizm",
    "Prerafaelitler",
@@ -174,7 +187,7 @@
  },
  {
   "ad": "Prerafaelitler",
-  "sira": 18,
+  "sira": 19,
   "komsular": [
    "Romantizm",
    "Sembolizm",
@@ -184,7 +197,7 @@
  },
  {
   "ad": "Akademizm ve Oryantalizm",
-  "sira": 19,
+  "sira": 20,
   "komsular": [
    "Neoklasisizm",
    "Romantizm",
@@ -194,7 +207,7 @@
  },
  {
   "ad": "Barbizon ve Realizm",
-  "sira": 20,
+  "sira": 21,
   "komsular": [
    "Romantizm",
    "Empresyonizm"
@@ -203,7 +216,7 @@
  },
  {
   "ad": "Empresyonizm",
-  "sira": 21,
+  "sira": 22,
   "komsular": [
    "Barbizon ve Realizm",
    "Post-Empresyonizm"
@@ -212,7 +225,7 @@
  },
  {
   "ad": "Ukiyo-e (Japon baskısı)",
-  "sira": 22,
+  "sira": 23,
   "komsular": [
    "Empresyonizm",
    "Post-Empresyonizm"
@@ -221,7 +234,7 @@
  },
  {
   "ad": "Post-Empresyonizm",
-  "sira": 23,
+  "sira": 24,
   "komsular": [
    "Empresyonizm",
    "Sembolizm",
@@ -231,7 +244,7 @@
  },
  {
   "ad": "Sembolizm",
-  "sira": 24,
+  "sira": 25,
   "komsular": [
    "Post-Empresyonizm",
    "Prerafaelitler",
@@ -241,7 +254,7 @@
  },
  {
   "ad": "Art Nouveau ve Viyana Secession",
-  "sira": 25,
+  "sira": 26,
   "komsular": [
    "Sembolizm",
    "Ekspresyonizm"
@@ -250,7 +263,7 @@
  },
  {
   "ad": "Ekspresyonizm",
-  "sira": 26,
+  "sira": 27,
   "komsular": [
    "Post-Empresyonizm",
    "Art Nouveau ve Viyana Secession",
@@ -260,7 +273,7 @@
  },
  {
   "ad": "Kübizm",
-  "sira": 27,
+  "sira": 28,
   "komsular": [
    "Ekspresyonizm",
    "Dada"
@@ -269,7 +282,7 @@
  },
  {
   "ad": "Dada",
-  "sira": 28,
+  "sira": 29,
   "komsular": [
    "Kübizm",
    "Sürrealizm"
@@ -278,7 +291,7 @@
  },
  {
   "ad": "Sürrealizm",
-  "sira": 29,
+  "sira": 30,
   "komsular": [
    "Dada",
    "Sembolizm"
@@ -287,7 +300,7 @@
  },
  {
   "ad": "Savaş sonrası figürasyon",
-  "sira": 30,
+  "sira": 31,
   "komsular": [
    "Sürrealizm",
    "Ekspresyonizm"

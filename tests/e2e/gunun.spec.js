@@ -19,7 +19,7 @@ test('Günün sanatçısı: ana sayfada kart, bölüm içeriği, aynı gün ayn�
   await expect(page.locator('.gunun-ad')).toHaveText(ad);
   await expect(page.locator('[data-test="kurs-durumu"]')).toHaveText(/Kursta: Konu \d+|Henüz kursta yok|Kurs dışı/);
   await expect(page.locator('[data-test="donem"]')).not.toBeEmpty();
-  await expect(page.getByText('Claude taslağı · Qwen denetimi bekliyor')).toBeVisible();
+  await expect(page.getByText(/^Claude taslağı · /)).toBeVisible();
   await expect(page.locator('.galeri-eser').first()).toBeVisible();
   // galeri eseri tam ekran açılır
   await page.locator('.galeri-eser').first().click();

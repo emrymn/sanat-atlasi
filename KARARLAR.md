@@ -738,3 +738,13 @@ Toplam: 13 sanatçıya 388 WikiArt eseri (yeni ya da mevcut esere katılan). Ön
 4. **Eser listeleri:** derleme zamanı önbelleğe (`eserler_onbellek.json`) henüz eklenmedi; uygulama bu sanatçıların eserlerini ilk açılışta canlı Wikidata'dan çeker (internet gerekir) ve IndexedDB'de saklar. Önbellek sonraki pakette `node scripts/onbellek.mjs <id…>` ile eklenecek. Biyografi ("Hayatı") bölümü bu sanatçılarda henüz yok.
 5. **Caravaggio'nun kurs notu** Degas dersinden kaymıştı ("Gölgelerde kahverengi ve koyu tonlar kullanan eski ressamlar…"); Claude'un yazdığı kısa tanımla değiştirildi.
 6. Kısa adlar: Ribera ve Valentin. Sürüm 1.10.0.
+
+## İş 4 · Geç İtalyan Barok ve Bolonya ekolü (2026-10-20)
+
+1. **Yeni akım "Geç İtalyan Barok"** (y. 1640–1750; sıra 15, Fransız Klasisizmi ile Rokoko arasında; komşular: İtalyan Barok ve Caravaggizm, Rokoko, Fransız Klasisizmi; renk #3E7A7A). Sonraki akımların `sira` değeri birer arttı. Akım bilgisi metni Claude taslağı.
+2. **Dokuz kurs dışı sanatçı**, Konu 38 (Fransız Barok ve Rokoko) ile, yani Tiepolo ile birlikte açılır: Salvator Rosa, Mattia Preti, Luca Giordano, Giovanni Battista Gaulli (Baciccio), Andrea Pozzo, Francesco Solimena, Giuseppe Maria Crespi, Sebastiano Ricci, Giovanni Battista Piazzetta. Magnasco İş 3'teki geçici yerinden bu akıma taşındı. Ricci, Piazzetta ve Giordano Tiepolo için zor çeldirici olur.
+3. **Bolonya ekolü:** Guido Reni ve Guercino, "İtalyan Barok ve Caravaggizm" akımına, Konu 30 (Carracci) ile açılacak şekilde eklendi.
+4. **Hata düzeltmesi:** derleme zamanı önbelleği (`eserler_onbellek.json`) varken, önbellekte kaydı olmayan sanatçılar gizleniyordu; İş 3'te eklenen sanatçılar bu yüzden uygulamada görünmeyecekti. Artık önbellekte hiç kaydı olmayan (sonradan eklenmiş) sanatçı "bilinmiyor" sayılıp gösteriliyor ve eserleri canlı Wikidata'dan geliyor; önbellekte boş kaydı olan (heykel, mimari) sanatçılar eskisi gibi gizli.
+5. **Günün sanatçısı havuzu:** eser önbelleği varken yalnızca önbellekte kaydı olan sanatçılardan seçilir (görseli çevrimdışı da hazır olsun). Yeni eklenen 16 sanatçı önbellek yenilenince havuza girer. Havuz değiştiği için günün sanatçısı sırası da değişti.
+6. **Akım bilgisi kaynak satırı:** denetimden geçen 28 akımda "Qwen denetimi bekliyor" yerine "Qwen ve Kimi ile denetlendi"; yeni akımda "henüz denetlenmedi".
+7. Tavan freskleri (Gaulli, Pozzo, Giordano) telefonda küçük görünebilir; görsel denetiminde bakılacak. Sürüm 1.11.0.

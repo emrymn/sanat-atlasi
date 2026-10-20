@@ -2467,6 +2467,84 @@
   ]
  },
  {
+  "id": "guido-reni",
+  "ad": "Guido Reni",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "konu": 30,
+  "konu_baslik": "Baroque Art The Carracci",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1575,
+  "olum": 1642,
+  "ad_arama": "Guido Reni",
+  "anlatim": "Guido Reni, Bolonya'da Carracci'lerin akademisinde yetişmiş İtalyan ressamdır. 1600'lerin başında Roma'da kısa bir süre Caravaggio'nun ışık-gölgesini denedi, ama asıl ününü kursta işlenen Annibale Carracci'nin klasisizmini daha da zarif ve idealize bir güzelliğe taşıyarak kazandı. Roma'daki Aurora tavan freskiyle tanındı, sonra Bolonya'ya dönüp kentin en ünlü ressamı oldu. Gökyüzüne bakan azizleri ve kusursuz yüzleriyle 17. ve 18. yüzyılda Raffaello kadar hayranlık gördü; geç döneminde paleti gümüşi ve soluk tonlara döndü.",
+  "taninma": "Porselen gibi pürüzsüz, soluk ten; yukarıya, göğe dönük iri, nemli gözler; heykel gibi zarif, dengeli pozlar ve kumaşlarda yumuşak, temiz kıvrımlar. Gölgeler hafiftir, renkler açık ve soğuktur (geç döneminde neredeyse gümüş-gri). Caravaggio'nun karanlığından ve kaba tiplerinden tam olarak ayrılır; Guercino'ya göre daha temiz, daha soğuk ve daha az gölgelidir; Carracci'den daha idealize ve 'tatlı'dır.",
+  "onemli_eserler": [
+   {
+    "baslik": "Crucifixion of Saint Peter",
+    "tr": "Aziz Petrus'un Çarmıha Gerilişi",
+    "yil": "1604–1605"
+   },
+   {
+    "baslik": "Massacre of the Innocents",
+    "tr": "Masumların Katliamı",
+    "yil": "1611"
+   },
+   {
+    "baslik": "Aurora",
+    "tr": "Aurora",
+    "yil": "1614"
+   },
+   {
+    "baslik": "Atalanta and Hippomenes",
+    "tr": "Atalante ve Hippomenes",
+    "yil": "y. 1618–1619"
+   }
+  ],
+  "emin_degil": [
+   "Atalante ve Hippomenes'in iki versiyonu (Madrid ve Napoli) vardır; hangisinin önce yapıldığı tartışmalıdır."
+  ]
+ },
+ {
+  "id": "guercino",
+  "ad": "Guercino",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "konu": 30,
+  "konu_baslik": "Baroque Art The Carracci",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1591,
+  "olum": 1666,
+  "ad_arama": "Guercino",
+  "anlatim": "Guercino (asıl adı Giovanni Francesco Barbieri), Bolonya yakınlarındaki Cento'da doğmuş İtalyan ressamdır; lakabı 'şaşı' anlamına gelir. Büyük ölçüde kendi kendini yetiştirdi; Ludovico Carracci'nin resimlerinden etkilendi. Bolonyalı Papa XV. Gregorius döneminde Roma'da çalıştı ve Casino Ludovisi'deki Aurora tavanını yaptı. 1642'de Guido Reni ölünce Bolonya'ya taşınıp kentin önde gelen ressamı oldu. Erken dönemindeki güçlü, lekeli ışık-gölgeden zamanla Reni'ye yakın, açık ve sakin bir üsluba geçti.",
+  "taninma": "Erken dönemde: büyük, düzensiz gölge lekeleri, parça parça aydınlanan figürler, sıcak kahverengi-mavi tonlar ve canlı, hareketli bir fırça. Geç dönemde: Reni'ye benzer açık ve sakin kompozisyonlar ama daha yumuşak, daha sıcak ve daha 'etli' figürler. Caravaggio'nun keskin, tek yönlü ışığına karşılık Guercino'nun ışığı titrek ve dağınıktır; Reni'nin soğuk mükemmelliğinden daha insani ve sıcaktır.",
+  "onemli_eserler": [
+   {
+    "baslik": "Et in Arcadia ego",
+    "tr": "Arkadya'da Ben de Varım",
+    "yil": "y. 1618–1622"
+   },
+   {
+    "baslik": "Elijah Fed by Ravens",
+    "tr": "Kuzgunların Beslediği İlyas",
+    "yil": "1620"
+   },
+   {
+    "baslik": "Aurora",
+    "tr": "Aurora",
+    "yil": "1621"
+   },
+   {
+    "baslik": "The Burial of Saint Petronilla",
+    "tr": "Aziz Petronilla'nın Gömülüşü",
+    "yil": "1623"
+   }
+  ],
+  "emin_degil": [
+   "Arkadya'da Ben de Varım'ın tarihi kaynaklarda 1618 ile 1622 arasında değişir."
+  ]
+ },
+ {
   "id": "caravaggio",
   "ad": "Caravaggio",
   "akim": "İtalyan Barok ve Caravaggizm",
@@ -2819,31 +2897,6 @@
   ],
   "emin_degil": [
    "İspanyol olduğu için İspanyol Barok akımına da konabilirdi; Caravaggio takipçisi olarak tanındığı için burada tutulmuştur."
-  ]
- },
- {
-  "id": "alessandro-magnasco",
-  "ad": "Alessandro Magnasco",
-  "akim": "İtalyan Barok ve Caravaggizm",
-  "konu": 31,
-  "konu_baslik": "Baroque Art Caravaggio",
-  "kaynak": "ek",
-  "not_cikarilmadi": false,
-  "dogum": 1667,
-  "olum": 1749,
-  "ad_arama": "Alessandro Magnasco",
-  "anlatim": "Alessandro Magnasco, Cenova'da doğmuş, uzun yıllar Milano'da ve bir dönem Floransa'da Medici sarayı için çalışmış geç Barok İtalyan ressamdır; 'Lissandrino' lakabıyla da anılır. Caravaggio'dan bir asır sonra yaşadı ve onun takipçisi değildir, ama koyu fonları ve ışık-gölge karşıtlığıyla bu akımın karanlık geleneğini sürdürür. Keşişler, çingeneler, askerler, sorgu ve hapishane sahneleri ile fırtınalı manzaralarıyla tanınır. Hızlı, titrek fırça darbeleri 18. yüzyıl Venedik ressamlarını ve çok sonra bazı modern ressamları etkiledi.",
-  "taninma": "Kahverengi-gri karanlık bir ortamda küçük, uzun, iskelet gibi ince figürler; hızlı, titrek, alev gibi kıvrılan fırça darbeleri ve beyaz ışık vuruşları. Keşiş toplulukları, harabeler ve fırtınalı deniz kıyıları sık görülür. Caravaggio ve takipçilerinin büyük, yakın planda, ağır ve heykel gibi figürlerinin tam tersine Magnasco'da figürler küçüktür ve sahnede eriyip giderler.",
-  "onemli_eserler": [
-   {
-    "baslik": "Reception in a Garden in Albaro",
-    "tr": "Albaro'da Bir Bahçede Kabul",
-    "yil": "y. 1735–1740"
-   }
-  ],
-  "emin_degil": [
-   "Caravaggio'dan yaklaşık bir asır sonra yaşamış, ona doğrudan bağlı olmayan geç Barok bir ressamdır; uygulamada ayrı bir 'geç İtalyan Barok' akımı olmadığı için bu akıma konmuştur.",
-   "Eserlerinin çoğu tarihsizdir; atıflar üsluba dayanır, bu yüzden yalnızca belgeli bir eser listelenmiştir."
   ]
  },
  {
@@ -3598,6 +3651,297 @@
     "commons_dosya": "Jean-Honor%C3%A9_Fragonard_-_The_Bolt_-_WGA8080.jpg",
     "lisans": "Public domain"
    }
+  ]
+ },
+ {
+  "id": "salvator-rosa",
+  "ad": "Salvator Rosa",
+  "akim": "Geç İtalyan Barok",
+  "konu": 38,
+  "konu_baslik": "French Baroque and Rococo Art",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1615,
+  "olum": 1673,
+  "ad_arama": "Salvator Rosa",
+  "anlatim": "Salvator Rosa, Napoli'de doğmuş, Roma ve Floransa'da çalışmış İtalyan ressam, şair ve hicivcidir. Döneminin kurallarına uymayan, asi bir sanatçı imajı vardı. Ünü özellikle vahşi doğa manzaralarından gelir: sarp kayalıklar, kırık ağaçlar, fırtınalı gökler ve aralarında dolaşan haydutlar, askerler, münzeviler. Cadılık sahneleri ve filozof figürleri de resmetti. 18. yüzyıl İngiliz gezginleri ve Romantikler onu çok sevdi; Claude Lorrain'in dingin manzarasının tam karşıtı sayıldı.",
+  "taninma": "Sarp, karanlık kayalıklar, yıldırım çarpmış ya da kırılmış ağaç gövdeleri, kurşuni bulutlu gök; içinde küçük, hareketli haydut ya da asker figürleri. Kahverengi, kurşuni ve zeytin yeşili ağırlıklı bir palet ve kaba, hızlı fırça. Claude Lorrain'in altın ışıklı, sakin ideal manzarasından bu tehditkâr havayla ayrılır; Magnasco'ya benzeyen küçük figürleri vardır ama Rosa'da asıl kahraman manzaradır.",
+  "onemli_eserler": [
+   {
+    "baslik": "Witches at their Incantations",
+    "tr": "Büyü Yapan Cadılar",
+    "yil": "y. 1646"
+   },
+   {
+    "baslik": "Self-Portrait",
+    "tr": "Otoportre",
+    "yil": "y. 1645"
+   },
+   {
+    "baslik": "Democritus in Meditation",
+    "tr": "Düşünceye Dalmış Demokritos",
+    "yil": "1650"
+   }
+  ],
+  "emin_degil": [
+   "Otoportrenin tarihi yaklaşıktır."
+  ]
+ },
+ {
+  "id": "mattia-preti",
+  "ad": "Mattia Preti",
+  "akim": "Geç İtalyan Barok",
+  "konu": 38,
+  "konu_baslik": "French Baroque and Rococo Art",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1613,
+  "olum": 1699,
+  "ad_arama": "Mattia Preti",
+  "anlatim": "Mattia Preti, Calabria'daki Taverna'da doğmuş, 'Cavalier Calabrese' (Calabrialı Şövalye) lakaplı İtalyan ressamdır. Roma'da Caravaggio'nun ve takipçilerinin ışık-gölgesini, Venedik resminin zengin rengi ve büyük kalabalık kompozisyonlarıyla birleştirdi. 1656 veba salgınından sonra Napoli'de çalıştı. Malta Şövalyeleri tarikatına katıldı ve ömrünün son kırk yılını Malta'da geçirdi; Valletta'daki St. John Ko-Katedrali'nin tonozunu Vaftizci Yahya'nın hayatıyla süsledi.",
+  "taninma": "Caravaggio'dan gelen koyu fon ve sert ışık, ama çok daha büyük ve kalabalık sahnelerde; geniş jestler, aşağıdan bakılan anıtsal figürler ve Veronese'yi hatırlatan sıcak, zengin renkler. Caravaggio takipçilerinin dar, yakın planlı sahnelerinden bu genişlik ve teatrallikle ayrılır; Luca Giordano'dan daha koyu, daha ağır ve daha ciddidir.",
+  "onemli_eserler": [
+   {
+    "baslik": "The Feast of Absalom",
+    "tr": "Abşalom'un Şöleni",
+    "yil": "y. 1660"
+   },
+   {
+    "baslik": "Life of Saint John the Baptist (vault, St John's Co-Cathedral, Valletta)",
+    "tr": "Vaftizci Yahya'nın Hayatı (Valletta Katedrali tonozu)",
+    "yil": "1661–1666"
+   }
+  ],
+  "emin_degil": [
+   "Napoli'deki veba adak freskleri kayıptır; yalnızca hazırlık eskizleri kalmıştır, bu yüzden listeye alınmadı."
+  ]
+ },
+ {
+  "id": "luca-giordano",
+  "ad": "Luca Giordano",
+  "akim": "Geç İtalyan Barok",
+  "konu": 38,
+  "konu_baslik": "French Baroque and Rococo Art",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1634,
+  "olum": 1705,
+  "ad_arama": "Luca Giordano",
+  "anlatim": "Luca Giordano, Napoli'de doğmuş ve gençliğinde Ribera'nın etkisinde yetişmiş İtalyan ressamdır. İnanılmaz hızı yüzünden 'Luca fa presto' (Luca çabuk yapar) diye anıldı ve binlerce eser bıraktı. Ribera'nın koyu gerçekçiliğinden başladı, sonra Rubens, Veronese ve Pietro da Cortona'dan aldığı parlak renk ve akıcı hareketle aydınlık bir üsluba geçti. Floransa'da Palazzo Medici-Riccardi'nin galerisini, İspanya'da on yıl boyunca II. Carlos için El Escorial'in tavanlarını boyadı.",
+  "taninma": "Gökyüzüne açılan, bulutlar arasında dönen kalabalık figürler; parlak, sıcak ve akıcı renkler, hızlı ve hafif fırça. Kompozisyonlar dairesel ve hareketlidir, figürler çoğu kez yarı saydam bir ışık içinde erir. Erken dönem eserleri Ribera gibi koyu ve kaba olabilir. Mattia Preti'den daha aydınlık ve hafif, Solimena'dan daha akıcı ve az gölgelidir; Tiepolo'nun aydınlık tavanlarının habercisidir.",
+  "onemli_eserler": [
+   {
+    "baslik": "The Fall of the Rebel Angels",
+    "tr": "Asi Meleklerin Düşüşü",
+    "yil": "y. 1666"
+   },
+   {
+    "baslik": "Ceiling of the Galleria, Palazzo Medici-Riccardi",
+    "tr": "Palazzo Medici-Riccardi galeri tavanı",
+    "yil": "1682–1685"
+   },
+   {
+    "baslik": "Ceiling frescoes, El Escorial",
+    "tr": "El Escorial tavan freskleri",
+    "yil": "1692–1694"
+   }
+  ],
+  "emin_degil": [
+   "Ribera'nın doğrudan öğrencisi olup olmadığı kesin değildir; metinde yalnızca etkisinden söz edilmiştir."
+  ]
+ },
+ {
+  "id": "giovanni-battista-gaulli",
+  "ad": "Giovanni Battista Gaulli (Baciccio)",
+  "akim": "Geç İtalyan Barok",
+  "konu": 38,
+  "konu_baslik": "French Baroque and Rococo Art",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1639,
+  "olum": 1709,
+  "ad_arama": "Giovanni Battista Gaulli",
+  "anlatim": "Giovanni Battista Gaulli, 'Baciccio' lakabıyla bilinen, Cenova'da doğup Roma'da çalışmış İtalyan ressamdır. Bernini'nin himayesine girdi ve onun heykel ile mimariyi resimle birleştiren anlayışını tavan resmine taşıdı. En ünlü eseri, Roma'daki Cizvit kilisesi Il Gesù'nün tonozunu kaplayan İsa Adının Zaferi'dir: figürler çerçeveden taşıp kilisenin içine dökülüyor gibi görünür. Aynı zamanda papaların ve Bernini'nin portrelerini yapan başarılı bir portre ressamıydı.",
+  "taninma": "Çerçevesinden taşan tavan resmi: bulutlar ve figürler resim alanının dışına, mimarinin üzerine dökülür; ortada parlak, altın bir ışık kaynağı, kenarlarda karanlığa düşen kalabalıklar. Altın ışık ile koyu gölge arasındaki sert geçiş ve aşağıdan bakılan, uçan figürler. Pozzo'nun mimari yanılsamasına karşılık Gaulli'de mimari değil, ışık ve figür kalabalığı ön plandadır.",
+  "onemli_eserler": [
+   {
+    "baslik": "Triumph of the Name of Jesus",
+    "tr": "İsa Adının Zaferi",
+    "yil": "1672–1685"
+   },
+   {
+    "baslik": "Portrait of Gian Lorenzo Bernini",
+    "tr": "Gian Lorenzo Bernini'nin Portresi",
+    "yil": "y. 1665"
+   }
+  ],
+  "emin_degil": [
+   "Il Gesù tonozunun bitiş tarihi kaynaklarda 1679 ile 1685 arasında değişir; Bernini portresinin tarihi yaklaşıktır."
+  ]
+ },
+ {
+  "id": "andrea-pozzo",
+  "ad": "Andrea Pozzo",
+  "akim": "Geç İtalyan Barok",
+  "konu": 38,
+  "konu_baslik": "French Baroque and Rococo Art",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1642,
+  "olum": 1709,
+  "ad_arama": "Andrea Pozzo",
+  "anlatim": "Andrea Pozzo, Trento'da doğmuş, Cizvit tarikatına rahip olmayan bir kardeş olarak katılmış İtalyan ressam ve mimardır. Perspektifin ustasıydı: Roma'daki Sant'Ignazio kilisesinin düz tavanını, gökyüzüne yükselen mimariyle Aziz Ignatius'un Yüceltilişi'ne dönüştürdü ve yapılamamış kubbenin yerine tuval üzerine sahte bir kubbe boyadı. Perspektif üzerine yazdığı kitap Avrupa'da ders kitabı oldu. Son yıllarını Viyana'da geçirdi.",
+  "taninma": "Düz tavanda gökyüzüne doğru yükselen sütunlar, kemerler ve kornişler: mimari öyle kusursuz çizilmiştir ki tavan yok olmuş gibi görünür; ortada bulutlar arasında yükselen aziz ve figürler. Yanılsama ancak yerdeki belirli bir noktadan bakınca tam çalışır. Gaulli'nin ışık ve bulut ağırlıklı tavanına karşılık Pozzo'da asıl kahraman perspektifle çizilmiş mimaridir.",
+  "onemli_eserler": [
+   {
+    "baslik": "False dome, Sant'Ignazio",
+    "tr": "Sant'Ignazio'nun sahte kubbesi",
+    "yil": "1685"
+   },
+   {
+    "baslik": "Apotheosis of Saint Ignatius",
+    "tr": "Aziz Ignatius'un Yüceltilişi",
+    "yil": "1691–1694"
+   }
+  ],
+  "emin_degil": []
+ },
+ {
+  "id": "francesco-solimena",
+  "ad": "Francesco Solimena",
+  "akim": "Geç İtalyan Barok",
+  "konu": 38,
+  "konu_baslik": "French Baroque and Rococo Art",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1657,
+  "olum": 1747,
+  "ad_arama": "Francesco Solimena",
+  "anlatim": "Francesco Solimena, Napoli yakınlarında doğmuş, Luca Giordano'dan sonra Napoli'nin en önemli ressamı olmuş İtalyan ressamdır; 'Abate Ciccio' lakabıyla da bilinir. Mattia Preti'nin koyu ışık-gölgesini Giordano'nun büyük kalabalık kompozisyonlarıyla birleştirdi, ama onlardan daha sıkı, daha düzenli bir yapı kurdu. Napoli kiliselerine büyük freskler yaptı ve kalabalık atölyesinde 18. yüzyılın pek çok ressamını yetiştirdi.",
+  "taninma": "Çapraz çizgiler boyunca kurulmuş, merdivenlerde ve mimari basamaklarda sıralanan kalabalık figürler; koyu gölgelerle parlak, sert ışıklı alanların keskin karşıtlığı ve heykel gibi sıkı modellenmiş bedenler. Giordano'nun akıcı, aydınlık hafifliğine karşılık Solimena daha koyu, daha sert ve daha 'yapılı'dır; Preti'den daha düzenli ve akademiktir.",
+  "onemli_eserler": [
+   {
+    "baslik": "Expulsion of Heliodorus from the Temple",
+    "tr": "Heliodoros'un Tapınaktan Kovuluşu",
+    "yil": "1725"
+   }
+  ],
+  "emin_degil": [
+   "Eserlerinin çoğu tarihsiz ya da yalnızca yaklaşık tarihlidir; yalnızca belgeli olan fresk listelenmiştir."
+  ]
+ },
+ {
+  "id": "giuseppe-maria-crespi",
+  "ad": "Giuseppe Maria Crespi",
+  "akim": "Geç İtalyan Barok",
+  "konu": 38,
+  "konu_baslik": "French Baroque and Rococo Art",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1665,
+  "olum": 1747,
+  "ad_arama": "Giuseppe Maria Crespi",
+  "anlatim": "Giuseppe Maria Crespi, Bolonya'da doğmuş, giyimi yüzünden 'Lo Spagnuolo' (İspanyol) diye anılan İtalyan ressamdır. Dinsel ve mitolojik konuların yanında, İtalya'da o güne kadar pek ciddiye alınmayan gündelik hayat sahnelerini büyük bir sıcaklıkla resmetti: çamaşırcılar, bulaşıkçılar, pire arayan bir kadın. Yedi Kutsal Sır dizisi, dinsel konuyu bile sade bir gündelik sahne gibi anlatır. Venedikli Piazzetta onun öğrencisiydi.",
+  "taninma": "Sıcak, kahverengi-altın bir karanlıktan çıkan sade insanlar ve gündelik işler; yumuşak, dağınık bir ışık, tozlu ve dokulu yüzeyler, hızlı ama yumuşak fırça. Kahramanlık değil sessiz, sıradan anlar vardır. Hollanda tür resmini hatırlatır ama ışık daha sıcak ve koyudur; Chardin'in sessiz ev içi sahnelerine yakındır, ama Crespi'de daha çok karanlık ve hareket vardır.",
+  "onemli_eserler": [
+   {
+    "baslik": "The Flea",
+    "tr": "Pire",
+    "yil": "y. 1709–1710"
+   },
+   {
+    "baslik": "The Seven Sacraments",
+    "tr": "Yedi Kutsal Sır",
+    "yil": "y. 1712"
+   },
+   {
+    "baslik": "Library Shelves",
+    "tr": "Kitap Rafları",
+    "yil": "y. 1725"
+   }
+  ],
+  "emin_degil": [
+   "'Pire' tablosunun Floransa ve Paris'te iki versiyonu vardır."
+  ]
+ },
+ {
+  "id": "sebastiano-ricci",
+  "ad": "Sebastiano Ricci",
+  "akim": "Geç İtalyan Barok",
+  "konu": 38,
+  "konu_baslik": "French Baroque and Rococo Art",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1659,
+  "olum": 1734,
+  "ad_arama": "Sebastiano Ricci",
+  "anlatim": "Sebastiano Ricci, Belluno'da doğmuş Venedikli ressamdır. Viyana'dan Londra'ya Avrupa'nın pek çok sarayında çalıştı ve Venedik resminin 18. yüzyıldaki yükselişini başlattı. 16. yüzyılın Venedikli ustası Veronese'nin açık, parlak renklerini ve görkemli kalabalıklarını yeniden canlandırdı. Bu aydınlık üslup, Rokoko'nun Venedikli büyük ustası Tiepolo'ya giden yolu açtı.",
+  "taninma": "Veronese'yi hatırlatan açık, parlak ve gümüşi renkler: pembe, sarı, açık mavi; şık kostümlü, hareketli kalabalıklar ve mimari dekorlar, hafif ve akıcı fırça. Gölgeler azdır, genel hava neşeli ve aydınlıktır. Tiepolo'ya çok benzer ama ondan daha az havadar ve daha ağırdır; Piazzetta'nın koyu kahverengi gölgelerinin tam tersidir.",
+  "onemli_eserler": [
+   {
+    "baslik": "Resurrection of Christ (apse, Royal Hospital Chelsea)",
+    "tr": "İsa'nın Dirilişi (Royal Hospital Chelsea apsisi)",
+    "yil": "y. 1714"
+   },
+   {
+    "baslik": "Pope Pius V with Saints Thomas Aquinas and Peter Martyr",
+    "tr": "Papa V. Pius ile Aziz Tommaso d'Aquino ve Şehit Petrus",
+    "yil": "1730–1733"
+   }
+  ],
+  "emin_degil": [
+   "Chelsea apsis resminin tarihi yaklaşıktır."
+  ]
+ },
+ {
+  "id": "giovanni-battista-piazzetta",
+  "ad": "Giovanni Battista Piazzetta",
+  "akim": "Geç İtalyan Barok",
+  "konu": 38,
+  "konu_baslik": "French Baroque and Rococo Art",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1682,
+  "olum": 1754,
+  "ad_arama": "Giovanni Battista Piazzetta",
+  "anlatim": "Giovanni Battista Piazzetta, Venedik'te doğmuş ve Bolonya'da Giuseppe Maria Crespi'nin yanında yetişmiş İtalyan ressamdır. Ricci ve Tiepolo'nun aydınlık Venedik resmine karşılık, Caravaggio'dan gelen güçlü ışık-gölge geleneğini sürdürdü. Yavaş ve titiz çalışırdı; dinsel resimlerin yanında köylü kızlar ve gençlerin yarım boy 'tür' figürleriyle tanındı. 1750'de kurulan Venedik Akademisi'nin ilk yöneticisi oldu.",
+  "taninma": "Koyu kahverengi-kızıl gölgeler içinden çıkan, sert yandan aydınlanmış figürler; sınırlı, toprak tonlu bir palet (kahverengi, krem, kızıl, soluk mavi) ve kalın, heykelsi modelleme. Figürler çoğu kez aşağıdan bakılmış ve çapraz hareketlidir. Tiepolo ve Ricci'nin parlak, havadar renklerinden bu koyu ağırlıkla ayrılır; hocası Crespi'den daha anıtsal ve daha keskin ışıklıdır.",
+  "onemli_eserler": [
+   {
+    "baslik": "The Glory of Saint Dominic",
+    "tr": "Aziz Dominik'in Yüceltilişi",
+    "yil": "1727"
+   },
+   {
+    "baslik": "The Fortune Teller",
+    "tr": "Falcı",
+    "yil": "1740"
+   }
+  ],
+  "emin_degil": []
+ },
+ {
+  "id": "alessandro-magnasco",
+  "ad": "Alessandro Magnasco",
+  "akim": "Geç İtalyan Barok",
+  "konu": 38,
+  "konu_baslik": "French Baroque and Rococo Art",
+  "kaynak": "ek",
+  "not_cikarilmadi": false,
+  "dogum": 1667,
+  "olum": 1749,
+  "ad_arama": "Alessandro Magnasco",
+  "anlatim": "Alessandro Magnasco, Cenova'da doğmuş, uzun yıllar Milano'da ve bir dönem Floransa'da Medici sarayı için çalışmış geç Barok İtalyan ressamdır; 'Lissandrino' lakabıyla da anılır. Keşişler, çingeneler, askerler, sorgu ve hapishane sahneleri ile fırtınalı manzaralarıyla tanınır. Koyu fonları ve ışık-gölgesi Barok geleneğinden gelir, ama hızlı, titrek fırça darbeleri ve küçük, ürkek figürleri onu döneminin büyük kilise ressamlarından ayırır. Bu serbest fırça, 18. yüzyıl Venedik ressamlarını ve çok sonra bazı modern ressamları etkiledi.",
+  "taninma": "Kahverengi-gri karanlık bir ortamda küçük, uzun, iskelet gibi ince figürler; hızlı, titrek, alev gibi kıvrılan fırça darbeleri ve beyaz ışık vuruşları. Keşiş toplulukları, harabeler ve fırtınalı deniz kıyıları sık görülür. Salvator Rosa'nın vahşi manzaralarına yakındır ama Magnasco'da figürler daha çok ve daha titrektir; Giordano ve Solimena'nın büyük, anıtsal figürlerinin tam tersine figürler sahnede eriyip gider.",
+  "onemli_eserler": [
+   {
+    "baslik": "Reception in a Garden in Albaro",
+    "tr": "Albaro'da Bir Bahçede Kabul",
+    "yil": "y. 1735–1740"
+   }
+  ],
+  "emin_degil": [
+   "Eserlerinin çoğu tarihsizdir; atıflar üsluba dayanır, bu yüzden yalnızca belgeli bir eser listelenmiştir."
   ]
  },
  {

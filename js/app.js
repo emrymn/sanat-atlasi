@@ -17,7 +17,7 @@ import { idbAl, idbKoy, idbSil } from './idb.js';
 import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from './devam.js';
 import { taninmaMetni, eserNotu, notlariAl, karsilastirmaAdresi, benzerSanatcilar } from './karsilastir.js';
 
-const SURUM = '1.10.0';
+const SURUM = '1.11.0';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -45,6 +45,7 @@ const d = {
   acikBolumler: new Set(),
   rng: rastgeleYap(Date.now() & 0xffffffff),
   indirme: null,
+  onbellekIdleri: null,
   akimRenk: {},
   kisaAdlar: {},
   tanimaNotlari: {}, // data/tanima_notlari.json: kurs sanatçılarının "Nasıl tanırım?" notları
@@ -461,11 +462,14 @@ function anaSayfa() {
 }
 
 // ---------- Günün sanatçısı ----------
+// Günün sanatçısı havuzu: eser önbelleği varsa yalnızca orada kaydı olanlar (görseli çevrimdışı da hazır olsun);
+// önbellekten sonra eklenen sanatçılar önbellek yenilenince havuza katılır.
+function gununHavuzu() {
+  return d.sanatcilar.filter((s) => !d.onbellekIdleri || d.onbellekIdleri.has(s.id)).map((s) => s.id);
+}
+
 function gununId() {
-  return gununSanatcisi(
-    d.sanatcilar.map((s) => s.id),
-    bugun(),
-  );
+  return gununSanatcisi(gununHavuzu(), bugun());
 }
 
 // Sanatçıyı temsil eden eser: uygun görseli olanlar arasında Wikidata site bağlantısı en çok olan.
@@ -594,11 +598,7 @@ async function gununSayfasi(id) {
             : `<button class="dugme vurgu" type="button" data-pekistirmeye-ekle="${kacis(s.id)}">Bu sanatçıyı pekiştirmeye ekle</button>`
         }
         <a class="dugme" href="#/gunun/${encodeURIComponent(
-          baskaSanatci(
-            d.sanatcilar.map((x) => x.id),
-            s.id,
-            d.rng,
-          ),
+          baskaSanatci(gununHavuzu(), s.id, d.rng),
         )}" data-test="baska">Başka bir sanatçı</a>
       </div>
     </article>`);
@@ -1671,7 +1671,9 @@ async function basla() {
   d.eserNotlari = notlariAl(eserNot);
   eserTurleriniAyarla(turler);
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
-  const sanatcilar = gorunurSanatcilar(tumSanatcilar, turler, await hazirOnbellek());
+  const hazir = await hazirOnbellek();
+  d.onbellekIdleri = hazir && hazir.sanatcilar ? new Set(Object.keys(hazir.sanatcilar)) : null;
+  const sanatcilar = gorunurSanatcilar(tumSanatcilar, turler, hazir);
   d.tumSanatcilar = tumSanatcilar;
   d.sanatcilar = sanatcilar;
   d.akimlar = gorunurAkimlar(

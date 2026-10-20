@@ -40,7 +40,9 @@ test('hiç resmi olmayan ya da ana uğraşı heykel/mimari olan sanatçılar giz
 
 test('görünür her sanatçının en az bir resmi var', () => {
   for (const s of gorunurSanatcilar(sanatcilar, turler, onbellek)) {
-    const n = kursResimleri(s, turler).length + onbellek.sanatcilar[s.id].eserler.length;
+    const k = onbellek.sanatcilar[s.id];
+    if (!k) continue; // önbellekte henüz yok: eserleri canlı Wikidata'dan gelir (aşağıdaki test)
+    const n = kursResimleri(s, turler).length + k.eserler.length;
     assert.ok(n > 0, s.id);
   }
 });
@@ -67,4 +69,10 @@ test('Wikidata sorgusu resim süzgecini içerir, mimar (P84) kullanmaz', () => {
   for (const k of [...RESIM_KOKLERI, ...RESIM_DISI_KOKLER]) assert.ok(q.includes('wd:' + k), k);
   assert.ok(!q.includes('P84'));
   assert.ok(onbellek.surum >= 2);
+});
+
+test('önbellekten sonra eklenen sanatçı: kaydı yoksa gösterilir, boş kaydı varsa gizlenir', () => {
+  const ob = { sanatcilar: { bos: { qid: 'Q1', eserler: [] } } };
+  assert.equal(resimSanatcisiMi({ id: 'yeni', kurs_eserleri: [] }, turler, ob), true);
+  assert.equal(resimSanatcisiMi({ id: 'bos', kurs_eserleri: [] }, turler, ob), false);
 });
