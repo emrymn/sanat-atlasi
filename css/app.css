@@ -777,3 +777,123 @@ progress {
     transition: none !important;
   }
 }
+
+/* Günün sanatçısı */
+.etiket {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ikincil);
+  font-weight: 600;
+}
+.gunun-kart {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+  margin: 14px 0 6px;
+  background: var(--yuzey);
+  border: 1px solid var(--cizgi);
+  border-radius: 14px;
+  color: inherit;
+  text-decoration: none;
+  min-height: 44px;
+}
+.gunun-gorsel {
+  flex: none;
+  width: 96px;
+  height: 96px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--cizgi);
+}
+.gunun-gorsel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.gunun-yazi b {
+  display: block;
+  font-family: 'Literata', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 2px 0;
+}
+.gunun-kahraman {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.kahraman-dugme {
+  border: 0;
+  padding: 0;
+  background: none;
+  width: 100%;
+  cursor: zoom-in;
+}
+.kahraman-dugme img {
+  width: 100%;
+  max-height: 52vh;
+  object-fit: contain;
+  display: block;
+}
+.gunun-ad {
+  font-size: 2rem;
+  margin: 8px 0 4px;
+}
+.donem-kutu {
+  border-left: 4px solid var(--vurgu);
+  padding: 2px 0 2px 14px;
+  margin: 20px 0;
+}
+.galeri {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 4px 2px 12px;
+  margin: 0 -16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  scroll-padding: 16px;
+}
+.galeri-eser {
+  flex: none;
+  width: 72%;
+  max-width: 320px;
+  scroll-snap-align: start;
+  border: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: zoom-in;
+}
+.galeri-kare {
+  display: block;
+  aspect-ratio: 4 / 5;
+  background: var(--cizgi);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.galeri-kare img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.galeri-etiket {
+  display: block;
+  padding: 8px 2px;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+.galeri-etiket i {
+  display: block;
+  font-family: 'Literata', Georgia, serif;
+}

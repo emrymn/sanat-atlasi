@@ -15,6 +15,7 @@ export function varsayilanIlerleme(islenen = []) {
     gunluk: { tarih: bugunStr(), yeni: 0, kart: 0, yeniIdler: [] },
     sonEserler: {},
     kotuGorseller: {},
+    ekSanatcilar: [],
     olusturma: new Date().toISOString(),
   };
 }
@@ -55,6 +56,7 @@ export function ilerlemeDogrula(nesne) {
         : t.gunluk,
     sonEserler: v.sonEserler && typeof v.sonEserler === 'object' ? v.sonEserler : {},
     kotuGorseller: kotuGorselleriDogrula(v.kotuGorseller),
+    ekSanatcilar: Array.isArray(v.ekSanatcilar) ? [...new Set(v.ekSanatcilar.filter((x) => typeof x === 'string'))] : [],
     olusturma: v.olusturma || t.olusturma,
   };
 }

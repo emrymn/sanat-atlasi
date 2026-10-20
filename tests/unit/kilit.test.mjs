@@ -57,3 +57,15 @@ test('veri tutarlılığı: her sanatçının akımı ve komşu akımlar tanıml
   for (const s of sanatcilar) assert.ok(adlar.has(s.akim), s.id);
   for (const a of akimlar) for (const k of a.komsular) assert.ok(adlar.has(k), `${a.ad} → ${k}`);
 });
+
+test('pekiştirmeye elle eklenen sanatçı, konusu işlenmemiş olsa da açık sayılır', () => {
+  const kapali = sanatcilar.find((s) => s.konu === 66 || s.konu > 60);
+  assert.equal(
+    acikSanatcilar(sanatcilar, [1]).some((s) => s.id === kapali.id),
+    false,
+  );
+  assert.equal(
+    acikSanatcilar(sanatcilar, [1], [kapali.id]).some((s) => s.id === kapali.id),
+    true,
+  );
+});
