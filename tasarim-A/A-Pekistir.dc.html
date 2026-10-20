@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>A · Pekiştir</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Figtree:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#C9A45C}a:hover{color:#E2C487}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; position: relative; overflow: hidden; box-sizing: border-box; background: #15120F; color: #EDE4D3; font-family: Figtree, system-ui, sans-serif">
+
+  <div style="padding: 52px 16px 0 10px; display: flex; align-items: center; gap: 10px">
+    <a href="Main.dc.html" aria-label="Kapat" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #A89A85">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+    </a>
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 6px">
+      <div style="display: flex; justify-content: space-between; font-size: 12px; color: #A89A85">
+        <span>Pekiştir · Karışık</span>
+        <span>4 / 20</span>
+      </div>
+      <div style="height: 2px; background: rgba(201,164,92,0.2)">
+        <div style="width: 20%; height: 2px; background: #C9A45C"></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 290px; margin-top: 8px; display: flex; justify-content: center; align-items: center; background: radial-gradient(ellipse 210px 160px at 50% 48%, rgba(255,222,160,0.14), rgba(255,222,160,0) 100%)">
+    <div style="padding: 6px; background: #2A2119; box-shadow: 0 0 0 1px rgba(201,164,92,0.45), 0 24px 40px -14px rgba(0,0,0,0.85), 0 0 60px rgba(201,164,92,0.18)">
+      <img src="/_blob/75448e00f841881ad82d1b4ece8cf6f3" alt="Sorulan eser" style="display: block; width: 322px; height: 242px; object-fit: cover">
+    </div>
+  </div>
+
+  <div style="padding: 6px 22px 0; display: flex; flex-direction: column; gap: 2px">
+    <span style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A45C">{{adimEtiket}}</span>
+    <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 32px; font-weight: 600; line-height: 1.1">{{soru}}</span>
+  </div>
+
+  <div style="padding: 12px 22px 0; display: flex; flex-direction: column; gap: 8px">
+    <sc-for list="{{secenekler}}" as="o" hint-placeholder-count="4">
+      <button type="button" onClick="{{o.pick}}" style="{{o.st}}">
+        <span style="width: 18px; font-size: 12px; letter-spacing: 0.08em; color: #C9A45C">{{o.harf}}</span>
+        <span style="flex: 1">{{o.ad}}</span>
+        <sc-if value="{{o.dogru}}" hint-placeholder-val="{{false}}">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7CC293" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Doğru cevap"><path d="M20 6 9 17l-5-5"></path></svg>
+        </sc-if>
+        <sc-if value="{{o.yanlis}}" hint-placeholder-val="{{false}}">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E08A76" stroke-width="2" stroke-linecap="round" role="img" aria-label="Senin cevabın, yanlış"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </sc-if>
+      </button>
+    </sc-for>
+  </div>
+
+  <sc-if value="{{cevaplandi}}" hint-placeholder-val="{{false}}">
+    <div style="position: absolute; left: 0; right: 0; bottom: 0; box-sizing: border-box; padding: 14px 22px 34px; display: flex; flex-direction: column; gap: 8px; background: #1E1A16; border-top: 1px solid rgba(201,164,92,0.3)">
+      <span style="{{sonucStil}}">{{sonuc}}</span>
+      <span style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; font-weight: 600; line-height: 1.2">{{bilgi}}</span>
+      <span style="font-size: 13px; line-height: 1.45; color: #A89A85">{{ipucu}}</span>
+      <div style="display: flex; gap: 10px; padding-top: 4px">
+        <button type="button" style="height: 46px; padding: 0 16px; border-radius: 12px; border: 1px solid rgba(201,164,92,0.45); background: transparent; color: #EDE4D3; font: 500 14px Figtree, system-ui, sans-serif">Sanatçı sayfası</button>
+        <button type="button" onClick="{{ileri}}" style="flex: 1; height: 46px; border-radius: 12px; border: 0; background: #C9A45C; color: #1A140D; font: 600 15px Figtree, system-ui, sans-serif">{{ileriYazi}}</button>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { adim: 1, s1: null, s2: null };
+  }
+  renderVals() {
+    const st = this.state;
+    const temel = 'display:flex;align-items:center;gap:12px;width:100%;height:50px;padding:0 16px;box-sizing:border-box;border-radius:12px;font:500 16px Figtree,system-ui,sans-serif;text-align:left;cursor:pointer;';
+    const renk = {
+      notr: 'background:transparent;border:1px solid rgba(201,164,92,0.35);color:#EDE4D3;',
+      dogru: 'background:rgba(95,167,119,0.16);border:1px solid #5FA777;color:#EDE4D3;',
+      yanlis: 'background:rgba(208,113,92,0.14);border:1px solid #D0715C;color:#EDE4D3;',
+      soluk: 'background:transparent;border:1px solid rgba(201,164,92,0.14);color:#7A6F60;'
+    };
+    const yap = (liste, dogru, sec, anahtar) => liste.map((ad, i) => {
+      const d = sec === null ? 'notr' : (i === dogru ? 'dogru' : (i === sec ? 'yanlis' : 'soluk'));
+      return {
+        ad: ad, harf: 'ABCD'[i], st: temel + renk[d], dogru: d === 'dogru', yanlis: d === 'yanlis',
+        pick: () => { if (this.state[anahtar] === null) this.setState({ [anahtar]: i }); }
+      };
+    });
+    const adim1 = st.adim === 1;
+    const secenekler = adim1
+      ? yap(['John Constable', 'J. M. W. Turner', 'Caspar David Friedrich', 'Théodore Géricault'], 1, st.s1, 's1')
+      : yap(['Neoklasisizm', 'Barbizon ve Realizm', 'Romantizm', 'Prerafaelitler'], 2, st.s2, 's2');
+    const cevap = adim1 ? st.s1 : st.s2;
+    const bildi = adim1 ? st.s1 === 1 : st.s2 === 2;
+    return {
+      adimEtiket: adim1 ? 'Soru 1 / 2' : 'Soru 2 / 2',
+      soru: adim1 ? 'Bu eser kimin?' : 'Hangi akım?',
+      secenekler: secenekler,
+      cevaplandi: cevap !== null,
+      sonuc: bildi ? 'Doğru' : 'Yanlış · bu kart 3–5 kart sonra yine gelecek',
+      sonucStil: 'font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:' + (bildi ? '#7CC293' : '#E08A76'),
+      bilgi: adim1 ? 'J. M. W. Turner · Köle Gemisi, 1840' : 'Romantizm · J. M. W. Turner (1775–1851)',
+      ipucu: adim1
+        ? 'Işık içinde eriyen, buğulu ve dramatik sahne. Constable daha sağlam, gözleme dayalı; Friedrich daha durgun ve keskin hatlı.'
+        : 'Komşu akımlar: Neoklasisizm, Prerafaelitler, Barbizon ve Realizm. Doğanın gücü ve yücelik duygusu Romantizm işaretidir.',
+      ileriYazi: adim1 ? 'Hangi akım? →' : 'Sonraki kart →',
+      ileri: () => {
+        if (this.state.adim === 1) this.setState({ adim: 2 });
+        else this.setState({ adim: 1, s1: null, s2: null });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
