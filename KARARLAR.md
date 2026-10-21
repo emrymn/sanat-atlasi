@@ -770,3 +770,11 @@ Dayanak: aralıklı tekrar ve karışık (interleaved) çalışma zaten vardı. 
 2. **Kullanım (öğrenme sırası):** pekiştirmede eser seçilirken sanatçının sanatçı sorusundaki Leitner kutusu seviye sayılır. Kutu 0–1 (yeni ya da yanlış yapılan): puanlı adayların en kolay yarısından. Kutu 2–3: hepsinden. Kutu 4–5: en zor yarısından. Önce tipik ve ünlü eserlerle üslup oturur, sonra az bilinen ve alışılmadık eserlerle sınanır. "Son gösterilenlerden kaçın" kuralı önce uygulanır. Puansız eserler yalnızca orta seviyede gelir; puanlı aday 2'den azsa süzme yapılmaz.
 3. **Tanışma** ekranındaki 3 eser artık en kolaylar (en tipik + ünlü); puan yoksa eskisi gibi bilinirlik.
 4. Dosya yoksa davranış eskisi gibi (rastgele). Sürüm 1.14.0.
+
+## İş 8 · Başyapıt yakın okumaları (2026-10-21)
+
+1. **Seçim (107 eser):** her kurs sanatçısının en ünlü ve en tipik eseri (İş 7'deki puanlarla; 83 eser) ve her akımdan en ünlü bir kurs dışı eser (24). Liste `icerik/basyapit_secim.json`.
+2. **Üretim:** Claude Opus 5.5, görseli (1024 px) ve künyesiyle eser başına iki istek: (a) yazım: "Ne görüyoruz?", "Kompozisyon, ışık ve renk", "Anlam ve semboller", "Neden önemli?" (toplam 250–350 kelime), "Yakından bak" (3 ayrıntı). Emre'nin isteğiyle soru yok: bölüm yalnızca okuma ve bilgi; (b) denetim: aynı görsel ve metin ayrı istekte olgu, tartışmalı yorum ve Türkçe açısından kontrol edilir, düzeltilmiş metin kullanılır. Betik `icerik/claude_okuma.py`.
+3. **`data/basyapitlar.json`** (isteğe bağlı; yoksa sayfa "Henüz yakın okuma yok" der). Yalnızca açılınca indirilir.
+4. **Ekranlar:** Göz At'ın başında "Başyapıt okumaları" girişi → akımlara göre zaman sıralı liste (`#/basyapitlar`; kursta henüz işlenmemiş sanatçılarda "henüz kursta yok" rozeti, ama okunabilir) → okuma sayfası (`#/basyapit/<anahtar>`; büyük görsel, dokununca görüntüleyici). Sanatçı sayfasında o sanatçının okumasına "Yakın okuma" bağlantısı.
+5. Sürüm 1.15.0.
