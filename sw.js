@@ -1,14 +1,14 @@
 // Sanat Atlası service worker
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
-// - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~300 MB üst sınır, en eski kullanılan silinir (LRU)
+// - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.17.0';
+const SURUM = '1.17.1';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
 const FONT = 'atlas-font';
-const RESIM_SINIRI = 300 * 1024 * 1024;
-const RESIM_HEDEF = 270 * 1024 * 1024;
+const RESIM_SINIRI = 700 * 1024 * 1024;
+const RESIM_HEDEF = 650 * 1024 * 1024;
 // CORS başlığı gönderdiği bilinen görsel sunucuları: cors kipiyle istenir, böylece durum kodu görülür
 const CORS_HOSTLARI = new Set(['upload.wikimedia.org', 'thumb.wikimedia.org', 'api.nga.gov', 'www.artic.edu']);
 
@@ -61,7 +61,7 @@ const KABUK_DOSYALARI = [
   'data/kisa_adlar.json',
 ];
 // Olmasa da kurulumu bozmayan dosyalar
-const ISTEGE_BAGLI = ['data/eserler_onbellek.json', 'data/tanima_notlari.json', 'data/eser_notlari.json', 'data/eser_adlari_tr.json', 'data/eser_zorluk.json', 'data/basyapitlar.json', 'data/ikonografi.json', 'icons/icon-maskable-512.png'];
+const ISTEGE_BAGLI = ['data/eserler_onbellek.json', 'data/tanima_notlari.json', 'data/eser_notlari.json', 'data/eser_adlari_tr.json', 'data/eser_zorluk.json', 'data/basyapitlar.json', 'data/ikonografi.json', 'data/yerel_gorseller.json', 'icons/icon-maskable-512.png'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
@@ -98,7 +98,10 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(istek.url);
   // Palet çıkarmak için CORS ile istenen görseller önbellekteki opak yanıtı kullanamaz: doğrudan ağa gider
   if (istek.mode === 'cors' && istek.destination === 'image' && url.origin !== self.location.origin) return;
-  if (url.origin === self.location.origin) {
+  if (url.origin === self.location.origin && url.pathname.includes('/gorseller/')) {
+    // uygulamayla yayınlanan görsel kopyaları: sürümden bağımsız görsel önbelleği (LRU)
+    e.respondWith(resim(e));
+  } else if (url.origin === self.location.origin) {
     e.respondWith(kabuk(istek));
   } else if (url.hostname === 'commons.wikimedia.org' && url.pathname.includes('Special:FilePath')) {
     e.respondWith(resim(e));
@@ -180,6 +183,11 @@ async function sinirli(fn, en = 4) {
 
 // { y, saklanir }: yalnızca gerçekten görsel olduğu bilinen (ya da doğrulanamayan opak) yanıtlar saklanır
 async function agdan(url) {
+  // uygulamayla yayınlanan görsel kopyaları (gorseller/): aynı köken, durum kodu görünür
+  if (new URL(url).origin === self.location.origin) {
+    const y = await fetch(url);
+    return { y, saklanir: y.ok };
+  }
   if (CORS_HOSTLARI.has(new URL(url).hostname)) {
     try {
       const y = await fetch(url, { mode: 'cors', credentials: 'omit' });

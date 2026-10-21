@@ -5,7 +5,7 @@ import { bugunStr, cevapla, vadesiGeldiMi, gorulduMu, GUNLUK_YENI_SINIRI } from 
 import { sanatciSecenekleri, akimSecenekleri, akimOrtaYillari } from './celdirici.js';
 import { kartlariSec, Oturum, kategori } from './oturum.js';
 import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU, eserAdlariniAyarla, adlariAl, eserBaslik, kolaylikAl } from './eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi } from './gorsel.js';
+import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, yerelGorselleriAyarla } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { gununSanatcisi, baskaSanatci } from './gunun.js';
 import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, yedekYarimOturum, sonCalisilanEkle, TEMALAR } from './depo.js';
@@ -20,11 +20,11 @@ import { tanismaGerekirMi, tanismaEserleri, karisanEkle, enCokKarisanlar, KARISA
 import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir } from './basyapit.js';
 import { konulariAl, konuBul, konuHaritasiniAyarla, TUR_AD, TUR_SIRA } from './ikonografi.js';
 
-const SURUM = '1.17.0';
+const SURUM = '1.17.1';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
-const TAHMINI_GORSEL_KB = 180;
+const TAHMINI_GORSEL_KB = 300;
 const HARFLER = 'ABCD';
 
 // Cevap yaprağındaki kaynak satırı; WikiArt görselinde eser sayfasının bağlantısı da
@@ -1955,7 +1955,7 @@ function swKaydet() {
 // ---------- başlangıç ----------
 async function basla() {
   // İsteğe bağlı notlar (data/tanima_notlari.json, data/eser_notlari.json) aynı anda istenir; yoksa ya da bozuksa boş kalır
-  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot, eserAd, zorluk] = await Promise.all([
+  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot, eserAd, zorluk, yerelG] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
     jsonGetir('data/konular.json'),
@@ -1964,12 +1964,14 @@ async function basla() {
     jsonGetir('data/eser_notlari.json').catch(() => null),
     jsonGetir('data/eser_adlari_tr.json').catch(() => null),
     jsonGetir('data/eser_zorluk.json').catch(() => null),
+    jsonGetir('data/yerel_gorseller.json').catch(() => null),
   ]);
   d.kisaAdlar = (await jsonGetir('data/kisa_adlar.json').catch(() => ({ adlar: {} }))).adlar || {};
   d.tanimaNotlari = notlariAl(tanima);
   d.eserNotlari = notlariAl(eserNot);
   eserAdlariniAyarla(adlariAl(eserAd));
   d.kolaylik = kolaylikAl(zorluk);
+  yerelGorselleriAyarla(yerelG && yerelG.gorseller, yerelG && yerelG.buyuk);
   eserTurleriniAyarla(turler);
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
   const hazir = await hazirOnbellek();

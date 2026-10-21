@@ -39,8 +39,31 @@ export function gorselYedek(g) {
   return g.k === 'commons' ? resimUrl(g.d, 800) : gorselUrl(g, 800);
 }
 
+// Uygulamayla birlikte yayınlanan görsel kopyaları (data/yerel_gorseller.json; gorseller/ klasörü).
+// Wikimedia'nın hız sınırı (429) ve müze engelleri (403) bu görselleri etkilemez. Anahtar: kaynak + özgün kimlik.
+let yerel = {};
+let buyukYerel = new Set();
+// harita: { "kaynak:kimlik": "ad" }; buyuk: 1280 px kopyası da olanların anahtarları (başyapıtlar)
+export function yerelGorselleriAyarla(harita, buyuk = []) {
+  yerel = harita && typeof harita === 'object' && !Array.isArray(harita) ? harita : {};
+  buyukYerel = new Set(Array.isArray(buyuk) ? buyuk : []);
+}
+export function yerelAnahtar(g) {
+  return `${g.k}:${g.d || g.i || g.u || ''}`;
+}
+export function yerelUrl(g, genislik = 800) {
+  const a = g && yerelAnahtar(g);
+  const ad = a && yerel[a];
+  if (!ad) return '';
+  if (genislik <= 400) return `gorseller/k/${ad}.jpg`;
+  // 1280 px kopya (buyuk listesinde); eski biçimdeki 800'lük kopya yalnızca listede yoksa
+  return buyukYerel.has(a) || !buyukYerel.size ? `gorseller/b/${ad}.jpg` : `gorseller/${ad}.jpg`;
+}
+
 export function gorselUrl(g, genislik = 800) {
   if (!g) return '';
+  const y = yerelUrl(g, genislik);
+  if (y) return y;
   switch (g.k) {
     case 'commons':
       return commonsKucuk(g.d, genislik);
@@ -61,6 +84,7 @@ export function gorselUrl(g, genislik = 800) {
 export const PALET_GENISLIGI = 330;
 export function paletUrl(g) {
   if (!g) return '';
+  if (yerelUrl(g, 400)) return yerelUrl(g, 400); // aynı köken: CORS sorunu yok
   if (g.k !== 'commons') return gorselUrl(g, 400);
   return commonsKucuk(g.d, PALET_GENISLIGI);
 }
