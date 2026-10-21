@@ -160,7 +160,7 @@ test('görsel URL ve "Görsel kötü" tercihi', () => {
   assert.equal(gorselUrl({ k: 'aic', i: 'abc' }, 800), 'https://www.artic.edu/iiif/2/abc/full/843,/0/default.jpg');
   assert.equal(gorselUrl({ k: 'nga', i: 'https://api.nga.gov/iiif/u' }, 800), 'https://api.nga.gov/iiif/u/full/!800,800/0/default.jpg');
   assert.equal(gorselUrl({ k: 'met', u: 'https://images.metmuseum.org/a.jpg' }), 'https://images.metmuseum.org/a.jpg');
-  assert.match(gorselUrl({ k: 'commons', d: 'A b.jpg' }, 400), /Special:FilePath\/A_b\.jpg\?width=400$/);
+  assert.match(gorselUrl({ k: 'commons', d: 'A b.jpg' }, 400), /^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/thumb\/.+\/A_b\.jpg\/500px-A_b\.jpg$/);
   const eser = {
     anahtar: 'q:Q1',
     gorseller: [

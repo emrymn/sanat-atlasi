@@ -32,7 +32,7 @@ test('service worker kaydolur ve ilk açılıştan sonra çevrimdışı çalış
   await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller)).toBe(true);
   await page.goto('./#/sanatci/giotto-di-bondone');
   await expect(page.locator('.eser img').first()).toBeVisible();
-  await expect.poll(() => page.evaluate(async () => (await (await caches.open('atlas-resim')).keys()).length)).toBeGreaterThan(0);
+  await expect.poll(() => page.evaluate(async () => (await (await caches.open('atlas-resim-2')).keys()).length)).toBeGreaterThan(0);
 
   await context.setOffline(true);
   await page.reload();

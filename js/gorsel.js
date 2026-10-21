@@ -17,11 +17,33 @@ export function gorselAnahtari(g) {
   return g.k === 'commons' ? 'c:' + dosyaNormal(g.d).toLowerCase() : `${g.k}:${g.i || g.u}`;
 }
 
+// Wikimedia'nın hazır küçük resim basamakları; başka genişlik istenince yeniden üretilir ve 429'a takılır
+export const ADIMLAR = [330, 500, 960, 1280, 1920];
+
+// Commons küçük resmi doğrudan upload.wikimedia.org'dan (CORS'a açık, yönlendirmesiz).
+// Özgün dosyadan büyük genişlikte bu adres hata verir: o zaman gorselYedek (Special:FilePath) kullanılır.
+export function commonsKucuk(dosya, genislik) {
+  const ad = dosyaNormal(dosya);
+  const h = md5(ad);
+  const uz = ((/\.([a-z0-9]+)$/i.exec(ad) || [])[1] || '').toLowerCase();
+  const w = ADIMLAR.find((a) => a >= genislik) || ADIMLAR[ADIMLAR.length - 1];
+  const on = /^tiff?$/.test(uz) ? 'lossy-page1-' : /^(pdf|djvu)$/.test(uz) ? 'page1-' : '';
+  const ek = /^(jpe?g|png|gif|webp)$/.test(uz) ? '' : uz === 'svg' ? '.png' : '.jpg';
+  const kod = encodeURIComponent(ad);
+  return `https://upload.wikimedia.org/wikipedia/commons/thumb/${h[0]}/${h.slice(0, 2)}/${kod}/${on}${w}px-${kod}${ek}`;
+}
+
+// Birincil adres açılmazsa denenecek adres (data-yedek): Commons'ta Special:FilePath, diğerlerinde 800 px
+export function gorselYedek(g) {
+  if (!g) return '';
+  return g.k === 'commons' ? resimUrl(g.d, 800) : gorselUrl(g, 800);
+}
+
 export function gorselUrl(g, genislik = 800) {
   if (!g) return '';
   switch (g.k) {
     case 'commons':
-      return resimUrl(g.d, genislik);
+      return commonsKucuk(g.d, genislik);
     case 'aic':
       return `https://www.artic.edu/iiif/2/${g.i}/full/${genislik <= 400 ? 400 : 843},/0/default.jpg`;
     case 'nga':
@@ -40,12 +62,7 @@ export const PALET_GENISLIGI = 330;
 export function paletUrl(g) {
   if (!g) return '';
   if (g.k !== 'commons') return gorselUrl(g, 400);
-  const ad = dosyaNormal(g.d);
-  const h = md5(ad);
-  const uzanti = (/\.([a-z0-9]+)$/i.exec(ad) || [])[1] || '';
-  const ek = /^(jpe?g|png|gif|webp)$/i.test(uzanti) ? '' : /^svg$/i.test(uzanti) ? '.png' : '.jpg';
-  const kod = encodeURIComponent(ad);
-  return `https://upload.wikimedia.org/wikipedia/commons/thumb/${h[0]}/${h.slice(0, 2)}/${kod}/${PALET_GENISLIGI}px-${kod}${ek}`;
+  return commonsKucuk(g.d, PALET_GENISLIGI);
 }
 
 export function gorselSayfasi(g) {
