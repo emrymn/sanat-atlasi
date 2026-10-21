@@ -75,11 +75,11 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     resim.onload = () => (yukleniyor.hidden = true);
     resim.onerror = () => (yukleniyor.textContent = 'Görsel yüklenemedi.');
     resim.src = gorselUrl(g, 800);
-    resim.alt = gizli ? 'Soru görseli' : e.baslik;
+    resim.alt = gizli ? 'Soru görseli' : e.ad || e.baslik;
     if (!gizli) {
       const sayfa = gorselSayfasi(g);
       const not = notu ? notu(e) : '';
-      alt.innerHTML = `<p class="gor-baslik">${kacis(e.baslik)}${e.tarih ? ` <span class="ikincil">· ${kacis(e.tarih)}</span>` : ''}</p>
+      alt.innerHTML = `<p class="gor-baslik">${kacis(e.ad || e.baslik)}${e.tarih ? ` <span class="ikincil">· ${kacis(e.tarih)}</span>` : ''}</p>${e.ad && e.ad !== e.baslik ? `<p class="gor-ozgun" data-test="ozgun-ad">${kacis(e.baslik)}</p>` : ''}
         ${not ? `<p class="gor-not" data-test="eser-notu">${kacis(not)}</p>` : ''}
         <p class="gor-kaynak">${kacis(kaynakYazisi(e, g))}${sayfa ? ` · <a href="${kacis(sayfa)}" target="_blank" rel="noopener">${g.k === 'wikiart' ? 'eser sayfası' : 'kaynak sayfası'}</a>` : ''}${eserler.length > 1 ? ` · ${sira + 1} / ${eserler.length}` : ''}</p>`;
     }

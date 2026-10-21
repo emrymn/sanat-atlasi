@@ -4,7 +4,7 @@ import { acikSanatcilar, akimDurumlari, yeniAcilanlar, islenenKume } from './kil
 import { bugunStr, cevapla, vadesiGeldiMi, gorulduMu, GUNLUK_YENI_SINIRI } from './leitner.js';
 import { sanatciSecenekleri, akimSecenekleri, akimOrtaYillari } from './celdirici.js';
 import { kartlariSec, Oturum, kategori } from './oturum.js';
-import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU } from './eserler.js';
+import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU, eserAdlariniAyarla, adlariAl, eserBaslik } from './eserler.js';
 import { gorselUrl, secilenGorsel, paletUrl, gorselSayfasi } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { gununSanatcisi, baskaSanatci } from './gunun.js';
@@ -18,7 +18,7 @@ import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from './devam.js';
 import { taninmaMetni, eserNotu, notlariAl, karsilastirmaAdresi, benzerSanatcilar } from './karsilastir.js';
 import { tanismaGerekirMi, tanismaEserleri, karisanEkle, enCokKarisanlar, KARISAN_ESIGI } from './ogrenme.js';
 
-const SURUM = '1.12.0';
+const SURUM = '1.13.0';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -135,7 +135,7 @@ function etiket(metin, { vurgu = false } = {}) {
 
 // Eserin adı ve tarihi: "İnci Küpeli Kız, y. 1665"
 function eserAdi(e) {
-  return `${e.baslik}${e.tarih ? `, ${e.tarih}` : ''}`;
+  return `${eserBaslik(e)}${e.tarih ? `, ${e.tarih}` : ''}`;
 }
 
 // Künye: yıllar · akım · Konu N (Konu N vurgu renginde; kurs dışı sanatçıda "Kurs dışı")
@@ -501,7 +501,7 @@ async function gununKartGorseli(s) {
   const g = secilenGorsel(e, kotuler());
   kutu.insertAdjacentHTML(
     'afterbegin',
-    `<img decoding="async" alt="${kacis(`${s.ad}, ${e.baslik}`)}" src="${kacis(gorselUrl(g, 1200))}" data-yedek="${kacis(gorselUrl(g, 800))}">`,
+    `<img decoding="async" alt="${kacis(`${s.ad}, ${eserBaslik(e)}`)}" src="${kacis(gorselUrl(g, 1200))}" data-yedek="${kacis(gorselUrl(g, 800))}">`,
   );
 }
 
@@ -544,8 +544,8 @@ function eserSeridi(eserler, sinif, veri) {
     .map((e, i) => {
       const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
       if (!g) return '';
-      return `<button class="${sinif}" type="button" ${veri}="${i}" aria-label="${kacis(e.baslik)} — büyüt">
-      <img ${i > 3 ? 'loading="lazy" ' : ''}decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"><span class="eser-yazi">${kacis(e.baslik)}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
+      return `<button class="${sinif}" type="button" ${veri}="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt">
+      <img ${i > 3 ? 'loading="lazy" ' : ''}decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"><span class="eser-yazi">${kacis(eserBaslik(e))}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
     })
     .join('');
 }
@@ -824,7 +824,7 @@ async function karsilastirSayfasi(a, b) {
       .map((e, j) => {
         const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
         if (!g) return '';
-        return `<button class="kars-eser" type="button" data-kars-eser="${j}" aria-label="${kacis(e.baslik)} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"><span class="eser-yazi">${kacis(e.baslik)}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
+        return `<button class="kars-eser" type="button" data-kars-eser="${j}" aria-label="${kacis(eserBaslik(e))} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"><span class="eser-yazi">${kacis(eserBaslik(e))}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
       })
       .join('');
     kutu.addEventListener('click', (ev) => {
@@ -1150,7 +1150,7 @@ function tanismaGoster(o) {
           ? `<div class="tanisma-eserler">${eserler
               .map((e, i) => {
                 const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
-                return `<button class="tanisma-eser" type="button" data-tanisma-eser="${i}" aria-label="${kacis(e.baslik)} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"></button>`;
+                return `<button class="tanisma-eser" type="button" data-tanisma-eser="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"></button>`;
               })
               .join('')}</div>`
           : ''
@@ -1760,17 +1760,19 @@ function swKaydet() {
 // ---------- başlangıç ----------
 async function basla() {
   // İsteğe bağlı notlar (data/tanima_notlari.json, data/eser_notlari.json) aynı anda istenir; yoksa ya da bozuksa boş kalır
-  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot] = await Promise.all([
+  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot, eserAd] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
     jsonGetir('data/konular.json'),
     jsonGetir('data/eser_turleri.json').catch(() => null),
     jsonGetir('data/tanima_notlari.json').catch(() => null),
     jsonGetir('data/eser_notlari.json').catch(() => null),
+    jsonGetir('data/eser_adlari_tr.json').catch(() => null),
   ]);
   d.kisaAdlar = (await jsonGetir('data/kisa_adlar.json').catch(() => ({ adlar: {} }))).adlar || {};
   d.tanimaNotlari = notlariAl(tanima);
   d.eserNotlari = notlariAl(eserNot);
+  eserAdlariniAyarla(adlariAl(eserAd));
   eserTurleriniAyarla(turler);
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
   const hazir = await hazirOnbellek();

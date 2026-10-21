@@ -167,12 +167,40 @@ export function sanatciEserleri(sanatci, { canli = true } = {}) {
   const soz = hesapla(sanatci, { canli })
     .catch(() => eserleriBirlestir(kursResimleri(sanatci, turler), []))
     .then((eserler) => {
+      for (const e of eserler) {
+        const ad = eserAdiBul(sanatci.id, e);
+        if (ad && ad !== e.baslik) e.ad = ad;
+      }
       bellek.set(sanatci.id, eserler);
       suren.delete(sanatci.id);
       return eserler;
     });
   suren.set(sanatci.id, soz);
   return soz;
+}
+
+// Türkçe eser adları (data/eser_adlari_tr.json): anahtar eserin QID'i, yoksa "sanatçıId|başlık".
+// Eser nesnesine `ad` alanı olarak eklenir; `baslik` (özgün ad) değişmez, notlar ve eşleştirme onu kullanır.
+let eserAdlari = {};
+export function eserAdlariniAyarla(adlar) {
+  eserAdlari = adlar || {};
+  for (const liste of bellek.values()) for (const e of liste) delete e.ad;
+  bellek.clear();
+}
+export function eserAdiBul(sanatciId, e, adlar = eserAdlari) {
+  return (e.qid && adlar[e.qid]) || adlar[`${sanatciId}|${e.baslik}`] || '';
+}
+// Ekranda gösterilecek ad: Türkçe ad varsa o, yoksa özgün başlık
+export function eserBaslik(e) {
+  return (e && (e.ad || e.baslik)) || '';
+}
+// Veri dosyasının "adlar" alanını güvenle okur (dosya yok / bozuk → {})
+export function adlariAl(json) {
+  const a = json && typeof json === 'object' ? json.adlar : null;
+  if (!a || typeof a !== 'object' || Array.isArray(a)) return {};
+  const sonuc = {};
+  for (const [k, v] of Object.entries(a)) if (typeof v === 'string' && v.trim()) sonuc[k] = v.trim();
+  return sonuc;
 }
 
 // Pekiştirme havuzu: görseli kullanılabilir ilk TEST_HAVUZU eser
