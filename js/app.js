@@ -4,7 +4,7 @@ import { acikSanatcilar, akimDurumlari, yeniAcilanlar, islenenKume } from './kil
 import { bugunStr, cevapla, vadesiGeldiMi, gorulduMu, GUNLUK_YENI_SINIRI } from './leitner.js';
 import { sanatciSecenekleri, akimSecenekleri, akimOrtaYillari } from './celdirici.js';
 import { kartlariSec, Oturum, kategori } from './oturum.js';
-import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU, eserAdlariniAyarla, adlariAl, eserBaslik } from './eserler.js';
+import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU, eserAdlariniAyarla, adlariAl, eserBaslik, kolaylikAl } from './eserler.js';
 import { gorselUrl, secilenGorsel, paletUrl, gorselSayfasi } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { gununSanatcisi, baskaSanatci } from './gunun.js';
@@ -18,7 +18,7 @@ import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from './devam.js';
 import { taninmaMetni, eserNotu, notlariAl, karsilastirmaAdresi, benzerSanatcilar } from './karsilastir.js';
 import { tanismaGerekirMi, tanismaEserleri, karisanEkle, enCokKarisanlar, KARISAN_ESIGI } from './ogrenme.js';
 
-const SURUM = '1.13.0';
+const SURUM = '1.14.0';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -47,6 +47,7 @@ const d = {
   rng: rastgeleYap(Date.now() & 0xffffffff),
   indirme: null,
   onbellekIdleri: null,
+  kolaylik: {},
   akimRenk: {},
   kisaAdlar: {},
   tanimaNotlari: {}, // data/tanima_notlari.json: kurs sanatçılarının "Nasıl tanırım?" notları
@@ -932,7 +933,7 @@ function kartHazirla(o, konum) {
   const s = d.harita.get(k.id);
   return sanatciEserleri(s).then((eserler) => {
     const son = d.ilerleme.sonEserler[s.id] || [];
-    const eser = eserSec(eserler, son, d.rng, kotuler());
+    const eser = eserSec(eserler, son, d.rng, kotuler(), { kolaylik: kolaylikFn(s.id), seviye: sanatciSeviyesi(s.id) });
     if (!eser) return { konum, id: s.id, eser: null };
     d.ilerleme.sonEserler[s.id] = [...son.filter((x) => x !== eser.anahtar), eser.anahtar].slice(-8);
     const acikIdler = new Set(acikListe().map((x) => x.id));
@@ -1123,6 +1124,18 @@ function karsiSeritDoldur() {
   }
 }
 
+// Eser kolaylık puanı (data/eser_zorluk.json): 2 zor … 10 kolay; puan yoksa undefined
+function kolaylikFn(sanatciId) {
+  if (!d.kolaylik || !Object.keys(d.kolaylik).length) return null;
+  return (e) => (e.qid && d.kolaylik[e.qid]) || d.kolaylik[`${sanatciId}|${e.baslik}`];
+}
+
+// Sanatçının seviyesi: sanatçı sorusundaki Leitner kutusu (hiç sorulmadıysa 0)
+function sanatciSeviyesi(id) {
+  const s = (d.ilerleme.skorlar[id] || {}).sanatci;
+  return gorulduMu(s) ? s.kutu : 0;
+}
+
 // Ayarlardan kapatılabilir (testler window.__atlasTanismaYok ile kapatır)
 function tanismaAcik() {
   return d.ilerleme.ayarlar.tanisma !== false && !window.__atlasTanismaYok;
@@ -1133,7 +1146,7 @@ function tanismaGoster(o) {
   const k = o.kart;
   const s = d.harita.get(k.id);
   const ot = o.oturum;
-  const eserler = tanismaEserleri(pekistirmeHavuzu(k.eserler || [], kotuler()), k.eser.anahtar, 3);
+  const eserler = tanismaEserleri(pekistirmeHavuzu(k.eserler || [], kotuler()), k.eser.anahtar, 3, kolaylikFn(k.id));
   k.tanismaEserleri = eserler;
   const ipucu = ipucuMetni(s);
   ciz(`<header class="soru-ust">
@@ -1760,7 +1773,7 @@ function swKaydet() {
 // ---------- başlangıç ----------
 async function basla() {
   // İsteğe bağlı notlar (data/tanima_notlari.json, data/eser_notlari.json) aynı anda istenir; yoksa ya da bozuksa boş kalır
-  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot, eserAd] = await Promise.all([
+  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot, eserAd, zorluk] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
     jsonGetir('data/konular.json'),
@@ -1768,11 +1781,13 @@ async function basla() {
     jsonGetir('data/tanima_notlari.json').catch(() => null),
     jsonGetir('data/eser_notlari.json').catch(() => null),
     jsonGetir('data/eser_adlari_tr.json').catch(() => null),
+    jsonGetir('data/eser_zorluk.json').catch(() => null),
   ]);
   d.kisaAdlar = (await jsonGetir('data/kisa_adlar.json').catch(() => ({ adlar: {} }))).adlar || {};
   d.tanimaNotlari = notlariAl(tanima);
   d.eserNotlari = notlariAl(eserNot);
   eserAdlariniAyarla(adlariAl(eserAd));
+  d.kolaylik = kolaylikAl(zorluk);
   eserTurleriniAyarla(turler);
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
   const hazir = await hazirOnbellek();
