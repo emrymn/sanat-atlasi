@@ -131,7 +131,9 @@ test('İlerleme: konu işaretlenince yeni sanatçı açılır', async ({ page })
   await expect(page.getByRole('link').filter({ hasText: ad })).toBeVisible();
 });
 
-test('yalnızca resim: heykeltıraş ve mimarlar ile resimsiz akımlar görünmez', async ({ page }) => {
+test('yalnızca resim: heykeltıraş ve mimarlar ile resimsiz akımlar görünmez', async ({ page, context }) => {
+  // Eserler özgün adlarıyla aranır: Türkçe adlar dosyası bu testte yok sayılır
+  await context.route(/\/data\/eser_adlari_tr\.json$/, (r) => r.fulfill({ status: 404, body: '' }));
   await page.goto('./#/gozat');
   await expect(page.getByRole('heading', { name: 'Göz At' })).toBeVisible();
   await expect(page.getByText('Antik Yunan ve Roma')).toHaveCount(0);

@@ -1781,3 +1781,10 @@ html.sekmesiz .sekmeler {
 .tanisma-ad .ad-son {
   font-size: 48px;
 }
+
+/* İş 6 · Türkçe eser adı varken özgün ad küçük satırda */
+.gor-ozgun {
+  margin: 0;
+  font: italic 400 13px/1.35 var(--sans);
+  color: var(--ink-2);
+}

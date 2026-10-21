@@ -757,3 +757,9 @@ Dayanak: aralıklı tekrar ve karışık (interleaved) çalışma zaten vardı. 
 2. **Karıştırılan ikililer:** Sanatçı sorusunda her yanlış cevap `ilerleme.karisanlar` içinde ikili olarak sayılır (`"a|b": { n, son }`, yedeğe dahil). Aynı ikili 2. kez (ve sonrasında) karıştırılınca cevap yaprağında iki sanatçının en bilinen ikişer eseri yan yana gösterilir (sorulan eser hariç); tam karşılaştırma bağlantısı da durur.
 3. **İlerleme:** "En çok karıştırdıkların" bölümü: en az 2 kez karıştırılan en fazla 5 ikili, yan yana karşılaştırma ekranına bağlantıyla.
 4. Mantık `js/ogrenme.js`'de (birim testli). Sürüm 1.12.0.
+
+## İş 6 · Türkçe eser adları (2026-10-21)
+
+1. **`data/eser_adlari_tr.json`** (`{"surum":1,"adlar":{"<QID ya da sanatçıId|başlık>":"Türkçe ad"}}`): yaklaşık 7.450 eser adı Claude API (Sonnet 5.5, Batch) ile Türkçeleştirildi. Betikler Emre'nin Mac'inde çalışır (`icerik/claude_adlar.py`, `icerik/adlar_uygula.py`); anahtar `~/.claude_api_key`'de, repoda değil. Yerleşik Türkçe adlar tercih edildi; katalog gürültüsü (envanter no, müze adı) atıldı; şüpheli görülenler (çok kısa/uzun, biçim bozuk) dosyaya alınmadı.
+2. **Uygulamada:** eser nesnesine `ad` alanı eklenir; galeriler, karşılaştırma, tanışma, cevap yaprağı ve görüntüleyici Türkçe adı gösterir. Görüntüleyicide Türkçe ad özgünden farklıysa özgün ad altında küçük satırda durur (yanlış çeviri fark edilsin diye). `baslik` değişmez: eser notları, yinelenen eser ayıklama ve kayıtlar onu kullanmaya devam eder.
+3. Dosya yoksa uygulama özgün adları gösterir. Sürüm 1.13.0.
