@@ -3,7 +3,9 @@ import { readFileSync } from 'node:fs';
 
 const fx = (ad) => readFileSync(new URL(`../fixtures/${ad}`, import.meta.url));
 
-export async function agiHazirla(context) {
+export async function agiHazirla(context, { tanisma = false } = {}) {
+  // Yeni sanatçı tanışma ekranı çoğu testte kapalı (doğrudan soruya geçilir); ogrenme.spec.js açar
+  if (!tanisma) await context.addInitScript(() => (window.__atlasTanismaYok = true));
   const resim = fx('eser.png');
   // gerçek önbellek + Giotto'nun listesinin sonuna sabit fikstür eserleri (yerel dosya; ağa çıkılmaz)
   const gercek = JSON.parse(readFileSync(new URL('../../data/eserler_onbellek.json', import.meta.url), 'utf8'));

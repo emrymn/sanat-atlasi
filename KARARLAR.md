@@ -729,3 +729,31 @@ Toplam: 13 sanatçıya 388 WikiArt eseri (yeni ya da mevcut esere katılan). Ön
 4. **En önemli bulgu:** bazı `kurs_notu` alanları ders notlarındaki adaşından kaymıştı (Charles Le Brun/Garnier/Barry ← aktör Charles Laughton; Louis Le Vau ← XV. Louis; Henry Fuseli ← IV. Henri; Thomas Jefferson ← Thomas Aquinas; Francis Bacon ← I. François; Goya ← Francisco Herrera; Blake ← Hogarth; Caillebotte ← Courbet; Pietro Lorenzetti ← Perugino; Orazio ← Artemisia; Ghiberti ← Lorenzo de' Medici). Bu 13 kayıttaki not artık ders notundan değil, Claude'un yazdığı kısa tanımdan oluşuyor.
 5. **Wikidata vandalizmi:** Rembrandt'ın *Savurgan Oğlun Dönüşü* kaydının İngilizce etiketi Wikidata'da bozulmuştu; önbellekteki `baslikEn` silindi (uygulamada gösterilmiyordu). `scripts/onbellek.mjs` yeniden çalıştırılırsa Wikidata düzelmediyse geri gelebilir.
 6. Sürüm 1.9.1.
+
+## İş 3 · Caravaggio takipçileri (2026-10-20)
+
+1. **Yedi yeni kurs dışı sanatçı**, "İtalyan Barok ve Caravaggizm" akımında, Konu 31 (Caravaggio) ile açılır: Bartolomeo Manfredi, Hendrick ter Brugghen, Gerrit van Honthorst, Dirck van Baburen, Valentin de Boulogne, Jusepe de Ribera, Alessandro Magnasco. Amaç Caravaggio için gerçekten zor yanlış şıklar. Metinleri (anlatim, taninma, önemli eserler) Claude yazdı; emin olunmayan noktalar `emin_degil` alanında.
+2. **Ribera** İspanyol Barok'a da konabilirdi; Caravaggio takipçisi olarak tanındığı için Caravaggizm'de tutuldu.
+3. **Magnasco** Caravaggio'dan yaklaşık bir asır sonra yaşamış geç Barok bir ressam; Emre'nin isteğiyle eklendi, ayrı bir geç İtalyan Barok akımı olmadığı için bu akıma kondu. Üslubu (küçük, titrek figürler) çok farklı olduğu için onun için zor çeldirici olmaz.
+4. **Eser listeleri:** derleme zamanı önbelleğe (`eserler_onbellek.json`) henüz eklenmedi; uygulama bu sanatçıların eserlerini ilk açılışta canlı Wikidata'dan çeker (internet gerekir) ve IndexedDB'de saklar. Önbellek sonraki pakette `node scripts/onbellek.mjs <id…>` ile eklenecek. Biyografi ("Hayatı") bölümü bu sanatçılarda henüz yok.
+5. **Caravaggio'nun kurs notu** Degas dersinden kaymıştı ("Gölgelerde kahverengi ve koyu tonlar kullanan eski ressamlar…"); Claude'un yazdığı kısa tanımla değiştirildi.
+6. Kısa adlar: Ribera ve Valentin. Sürüm 1.10.0.
+
+## İş 4 · Geç İtalyan Barok ve Bolonya ekolü (2026-10-20)
+
+1. **Yeni akım "Geç İtalyan Barok"** (y. 1640–1750; sıra 15, Fransız Klasisizmi ile Rokoko arasında; komşular: İtalyan Barok ve Caravaggizm, Rokoko, Fransız Klasisizmi; renk #3E7A7A). Sonraki akımların `sira` değeri birer arttı. Akım bilgisi metni Claude taslağı.
+2. **Dokuz kurs dışı sanatçı**, Konu 38 (Fransız Barok ve Rokoko) ile, yani Tiepolo ile birlikte açılır: Salvator Rosa, Mattia Preti, Luca Giordano, Giovanni Battista Gaulli (Baciccio), Andrea Pozzo, Francesco Solimena, Giuseppe Maria Crespi, Sebastiano Ricci, Giovanni Battista Piazzetta. Magnasco İş 3'teki geçici yerinden bu akıma taşındı. Ricci, Piazzetta ve Giordano Tiepolo için zor çeldirici olur.
+3. **Bolonya ekolü:** Guido Reni ve Guercino, "İtalyan Barok ve Caravaggizm" akımına, Konu 30 (Carracci) ile açılacak şekilde eklendi.
+4. **Hata düzeltmesi:** derleme zamanı önbelleği (`eserler_onbellek.json`) varken, önbellekte kaydı olmayan sanatçılar gizleniyordu; İş 3'te eklenen sanatçılar bu yüzden uygulamada görünmeyecekti. Artık önbellekte hiç kaydı olmayan (sonradan eklenmiş) sanatçı "bilinmiyor" sayılıp gösteriliyor ve eserleri canlı Wikidata'dan geliyor; önbellekte boş kaydı olan (heykel, mimari) sanatçılar eskisi gibi gizli.
+5. **Günün sanatçısı havuzu:** eser önbelleği varken yalnızca önbellekte kaydı olan sanatçılardan seçilir (görseli çevrimdışı da hazır olsun). Yeni eklenen 16 sanatçı önbellek yenilenince havuza girer. Havuz değiştiği için günün sanatçısı sırası da değişti.
+6. **Akım bilgisi kaynak satırı:** denetimden geçen 28 akımda "Qwen denetimi bekliyor" yerine "Qwen ve Kimi ile denetlendi"; yeni akımda "henüz denetlenmedi".
+7. Tavan freskleri (Gaulli, Pozzo, Giordano) telefonda küçük görünebilir; görsel denetiminde bakılacak. Sürüm 1.11.0.
+
+## İş 5 · Öğrenme yöntemi: tanışma ve karşıtlık (2026-10-21)
+
+Dayanak: aralıklı tekrar ve karışık (interleaved) çalışma zaten vardı. Eksik iki şey eklendi: yeni sanatçıyla ilk karşılaşmadan önce kısa bir tanışma ve sık karıştırılan ikilileri yan yana görme (Kang ve Pashler 2012, ressam üsluplarının yan yana gösterildiğinde daha iyi ayırt edildiğini bulmuştu).
+
+1. **Tanışma:** Bir sanatçı hiç sorulmamışsa (ne sanatçı ne akım skoru var) ilk kartından önce tanışma ekranı gelir: ad, yıllar, akım, en bilinen 3 uygun eser (dokununca görüntüleyici, eser notuyla) ve "Nasıl tanırım?" metni. Soru, tanışmada gösterilmeyen bir eserle gelir. Yarım oturumdan dönülen kartta tanışma tekrarlanmaz. Ayarlar'da "Yeni sanatçıyla önce tanış" anahtarıyla kapatılabilir (`ayarlar.tanisma`, varsayılan açık). Testlerde `window.__atlasTanismaYok` ile kapalıdır; `tests/e2e/ogrenme.spec.js` açar.
+2. **Karıştırılan ikililer:** Sanatçı sorusunda her yanlış cevap `ilerleme.karisanlar` içinde ikili olarak sayılır (`"a|b": { n, son }`, yedeğe dahil). Aynı ikili 2. kez (ve sonrasında) karıştırılınca cevap yaprağında iki sanatçının en bilinen ikişer eseri yan yana gösterilir (sorulan eser hariç); tam karşılaştırma bağlantısı da durur.
+3. **İlerleme:** "En çok karıştırdıkların" bölümü: en az 2 kez karıştırılan en fazla 5 ikili, yan yana karşılaştırma ekranına bağlantıyla.
+4. Mantık `js/ogrenme.js`'de (birim testli). Sürüm 1.12.0.

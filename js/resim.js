@@ -18,7 +18,9 @@ export function resimSanatcisiMi(sanatci, turler, onbellek) {
   if (kursResimleri(sanatci, turler).length) return true;
   if (!onbellek) return !(sanatci.kurs_eserleri || []).length; // bilinmiyor: kurs eseri yoksa göster
   const k = onbellek.sanatcilar && onbellek.sanatcilar[sanatci.id];
-  return !!(k && k.eserler && k.eserler.length);
+  // Önbellekte hiç kaydı yoksa (önbellekten sonra eklenmiş sanatçı) bilinmiyor sayılır: eserleri canlı Wikidata'dan gelir
+  if (!k) return !(sanatci.kurs_eserleri || []).length;
+  return !!(k.eserler && k.eserler.length);
 }
 
 export function gorunurSanatcilar(sanatcilar, turler, onbellek) {
