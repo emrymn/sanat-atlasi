@@ -1,7 +1,7 @@
 // Tam ekran eser görüntüleyici: iki parmakla yakınlaştırma, kaydırma, eserler arası geçiş.
 import { kacis } from './yardimci.js';
 import { ikon } from './tasarim.js';
-import { gorselUrl, gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle } from './gorsel.js';
+import { gorselUrl, gorselYedek,gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle } from './gorsel.js';
 import { eserKonusu } from './ikonografi.js';
 
 const EN_BUYUK = 6;
@@ -73,8 +73,20 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     yukleniyor.hidden = false;
     yukleniyor.textContent = 'Yükleniyor…';
     if (!gorsel) mesaj.textContent = '';
+    // Tek <img> yeniden kullanılır: önceki eserin "kirik"/"yuklendi" işareti sonrakine geçmesin
+    resim.classList.remove('kirik', 'yuklendi');
+    const yedek = gorselYedek(g);
+    let yedekDenendi = false;
     resim.onload = () => (yukleniyor.hidden = true);
-    resim.onerror = () => (yukleniyor.textContent = 'Görsel yüklenemedi.');
+    resim.onerror = () => {
+      // Birincil adres (ör. özgünden büyük küçük resim) açılmazsa bir kez yedek adres
+      if (!yedekDenendi && yedek && resim.src !== yedek) {
+        yedekDenendi = true;
+        resim.src = yedek;
+        return;
+      }
+      yukleniyor.textContent = 'Görsel yüklenemedi.';
+    };
     resim.src = gorselUrl(g, 800);
     resim.alt = gizli ? 'Soru görseli' : e.ad || e.baslik;
     if (!gizli) {

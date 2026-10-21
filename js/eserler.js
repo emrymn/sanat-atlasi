@@ -45,6 +45,7 @@ export function onbellekEseri(e) {
     qid: e.qid || null,
     gorseller: e.gorseller,
     pekistirme: e.pekistirme !== false,
+    sl: e.sl || 0, // bilinirlik sıralaması (enBilinen, bilinirlikSirasi) bunu kullanır
   };
 }
 

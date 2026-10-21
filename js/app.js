@@ -5,7 +5,7 @@ import { bugunStr, cevapla, vadesiGeldiMi, gorulduMu, GUNLUK_YENI_SINIRI } from 
 import { sanatciSecenekleri, akimSecenekleri, akimOrtaYillari } from './celdirici.js';
 import { kartlariSec, Oturum, kategori } from './oturum.js';
 import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU, eserAdlariniAyarla, adlariAl, eserBaslik, kolaylikAl } from './eserler.js';
-import { gorselUrl, secilenGorsel, paletUrl, gorselSayfasi } from './gorsel.js';
+import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { gununSanatcisi, baskaSanatci } from './gunun.js';
 import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, yedekYarimOturum, sonCalisilanEkle, TEMALAR } from './depo.js';
@@ -20,7 +20,7 @@ import { tanismaGerekirMi, tanismaEserleri, karisanEkle, enCokKarisanlar, KARISA
 import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir } from './basyapit.js';
 import { konulariAl, konuBul, konuHaritasiniAyarla, TUR_AD, TUR_SIRA } from './ikonografi.js';
 
-const SURUM = '1.16.0';
+const SURUM = '1.17.0';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -112,7 +112,7 @@ function notuIcin(sanatciId) {
 function kucukGorsel(e, genislik = 400) {
   const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
   if (!g) return '';
-  return `<img loading="lazy" decoding="async" alt="" src="${kacis(gorselUrl(g, genislik))}" data-yedek="${kacis(gorselUrl(g, 800))}">`;
+  return `<img loading="lazy" decoding="async" alt="" src="${kacis(gorselUrl(g, genislik))}" data-yedek="${kacis(gorselYedek(g))}">`;
 }
 
 function akimRenk(ad) {
@@ -128,7 +128,7 @@ function akimNoktasi(ad) {
 function cerceve(e, { genislik = 400, alt = '', tembel = false } = {}) {
   const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
   if (!g) return '';
-  const yedek = genislik < 800 ? ` data-yedek="${kacis(gorselUrl(g, 800))}"` : '';
+  const yedek = genislik < 800 ? ` data-yedek="${kacis(gorselYedek(g))}"` : '';
   return `<span class="cerceve"><img ${tembel ? 'loading="lazy" ' : ''}decoding="async" alt="${kacis(alt)}" src="${kacis(gorselUrl(g, genislik))}"${yedek}></span>`;
 }
 
@@ -375,7 +375,10 @@ ekran.addEventListener('click', (e) => {
 document.addEventListener(
   'load',
   (e) => {
-    if (e.target && e.target.tagName === 'IMG') e.target.classList.add('yuklendi');
+    if (e.target && e.target.tagName === 'IMG') {
+      e.target.classList.remove('kirik');
+      e.target.classList.add('yuklendi');
+    }
   },
   true,
 );
@@ -386,6 +389,8 @@ document.addEventListener(
   (e) => {
     const img = e.target;
     if (!img || img.tagName !== 'IMG') return;
+    // Hata gövdesi (429/403) önbelleğe girmiş olabilir: service worker'dan sildir
+    if (img.currentSrc || img.src) navigator.serviceWorker?.controller?.postMessage({ tip: 'resim-sil', url: img.currentSrc || img.src });
     if (img.dataset.yedek && img.src !== img.dataset.yedek) {
       const y = img.dataset.yedek;
       delete img.dataset.yedek;
@@ -508,7 +513,7 @@ async function gununKartGorseli(s) {
   const g = secilenGorsel(e, kotuler());
   kutu.insertAdjacentHTML(
     'afterbegin',
-    `<img decoding="async" alt="${kacis(`${s.ad}, ${eserBaslik(e)}`)}" src="${kacis(gorselUrl(g, 1200))}" data-yedek="${kacis(gorselUrl(g, 800))}">`,
+    `<img decoding="async" alt="${kacis(`${s.ad}, ${eserBaslik(e)}`)}" src="${kacis(gorselUrl(g, 1200))}" data-yedek="${kacis(gorselYedek(g))}">`,
   );
 }
 
@@ -552,7 +557,7 @@ function eserSeridi(eserler, sinif, veri) {
       const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
       if (!g) return '';
       return `<button class="${sinif}" type="button" ${veri}="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt">
-      <img ${i > 3 ? 'loading="lazy" ' : ''}decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"><span class="eser-yazi">${kacis(eserBaslik(e))}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
+      <img ${i > 3 ? 'loading="lazy" ' : ''}decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}"><span class="eser-yazi">${kacis(eserBaslik(e))}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
     })
     .join('');
 }
@@ -723,7 +728,7 @@ async function basyapitSayfasi(kodlu) {
     kutu.innerHTML = '<p class="ikincil kucuk">Bu eserin görseli bulunamadı.</p>';
     return;
   }
-  kutu.innerHTML = `<button class="basyapit-buyut" type="button" data-basyapit-buyut aria-label="${kacis(b.baslik)} — büyüt"><img decoding="async" alt="${kacis(`${s.ad}, ${b.baslik}`)}" src="${kacis(gorselUrl(g, 1200))}" data-yedek="${kacis(gorselUrl(g, 800))}"></button>`;
+  kutu.innerHTML = `<button class="basyapit-buyut" type="button" data-basyapit-buyut aria-label="${kacis(b.baslik)} — büyüt"><img decoding="async" alt="${kacis(`${s.ad}, ${b.baslik}`)}" src="${kacis(gorselUrl(g, 1200))}" data-yedek="${kacis(gorselYedek(g))}"></button>`;
   kutu.querySelector('[data-basyapit-buyut]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ...gorselTercihi() }));
 }
 
@@ -796,7 +801,7 @@ async function konuSayfasi(kodlu) {
       const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
       const s = d.harita.get(e.sid);
       return `<button class="eser" type="button" data-konu-eser="${i}" aria-label="${kacis(`${s.ad}, ${eserBaslik(e)}`)} — büyüt">
-        <img ${i > 5 ? 'loading="lazy" ' : ''}decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"><span class="eser-yazi"><b>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}</b> · ${kacis(eserBaslik(e))}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
+        <img ${i > 5 ? 'loading="lazy" ' : ''}decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}"><span class="eser-yazi"><b>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}</b> · ${kacis(eserBaslik(e))}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
     })
     .join('');
   kutu.addEventListener('click', (ev) => {
@@ -1000,7 +1005,7 @@ async function karsilastirSayfasi(a, b) {
       .map((e, j) => {
         const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
         if (!g) return '';
-        return `<button class="kars-eser" type="button" data-kars-eser="${j}" aria-label="${kacis(eserBaslik(e))} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"><span class="eser-yazi">${kacis(eserBaslik(e))}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
+        return `<button class="kars-eser" type="button" data-kars-eser="${j}" aria-label="${kacis(eserBaslik(e))} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}"><span class="eser-yazi">${kacis(eserBaslik(e))}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
       })
       .join('');
     kutu.addEventListener('click', (ev) => {
@@ -1338,7 +1343,7 @@ function tanismaGoster(o) {
           ? `<div class="tanisma-eserler">${eserler
               .map((e, i) => {
                 const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
-                return `<button class="tanisma-eser" type="button" data-tanisma-eser="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"></button>`;
+                return `<button class="tanisma-eser" type="button" data-tanisma-eser="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}"></button>`;
               })
               .join('')}</div>`
           : ''
@@ -1854,7 +1859,9 @@ async function gorselleriIndir() {
     while (sira < urller.length) {
       const u = urller[sira++];
       try {
-        await fetch(u, { mode: 'no-cors' });
+        // Commons/NGA/AIC cors ile gelir: durum kodu görülür, 429 "indirildi" sayılmaz. CORS yoksa opak (doğrulanamaz)
+        const y = await fetch(u, { mode: 'cors' }).catch(() => fetch(u, { mode: 'no-cors' }));
+        if (y.type !== 'opaque' && !y.ok) d.indirme.hata++;
       } catch (e) {
         d.indirme.hata++;
       }
@@ -1862,7 +1869,7 @@ async function gorselleriIndir() {
       indirmeGoster();
     }
   };
-  await Promise.all([isci(), isci(), isci(), isci()]);
+  await Promise.all([isci(), isci()]);
   d.indirme.bitti = true;
   indirmeGoster();
 }

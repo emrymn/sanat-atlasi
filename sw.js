@@ -2,14 +2,15 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~300 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.16.0';
+const SURUM = '1.17.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
-const RESIM = 'atlas-resim';
+const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
 const FONT = 'atlas-font';
 const RESIM_SINIRI = 300 * 1024 * 1024;
 const RESIM_HEDEF = 270 * 1024 * 1024;
-const RESIM_TAZELIK = 30 * 24 * 60 * 60 * 1000;
+// CORS başlığı gönderdiği bilinen görsel sunucuları: cors kipiyle istenir, böylece durum kodu görülür
+const CORS_HOSTLARI = new Set(['upload.wikimedia.org', 'thumb.wikimedia.org', 'api.nga.gov', 'www.artic.edu']);
 
 // Müze görselleri (The Met, Art Institute of Chicago IIIF, NGA IIIF, Cleveland)
 const MUZE_GORSELLERI = [
@@ -77,10 +78,18 @@ self.addEventListener('activate', (e) => {
   e.waitUntil(
     (async () => {
       const adlar = await caches.keys();
-      await Promise.all(adlar.filter((a) => a.startsWith('atlas-kabuk-') && a !== KABUK).map((a) => caches.delete(a)));
+      await Promise.all(adlar.filter((a) => (a.startsWith('atlas-kabuk-') && a !== KABUK) || a === 'atlas-resim').map((a) => caches.delete(a)));
+      await tx('readwrite', (st) => st.clear()).catch(() => {}); // eski önbelleğin meta kayıtları
       await self.clients.claim();
     })(),
   );
+});
+
+// Sayfa yüklenemeyen (büyük olasılıkla hata gövdeli opak) bir görseli bildirir: önbellekten sil
+self.addEventListener('message', (e) => {
+  if (e.data && e.data.tip === 'resim-sil' && typeof e.data.url === 'string') {
+    e.waitUntil(caches.open(RESIM).then((c) => c.delete(e.data.url)).then(() => metaSil(e.data.url)).catch(() => {}));
+  }
 });
 
 self.addEventListener('fetch', (e) => {
@@ -117,7 +126,7 @@ async function kabuk(istek) {
   const k = await c.match(istek, { ignoreSearch: true });
   if (k) return k;
   const y = await fetch(istek);
-  if (y.ok && new URL(istek.url).pathname.match(/\.(js|css|json|png|webmanifest)$/)) c.put(istek, y.clone());
+  if (y.ok && new URL(istek.url).pathname.match(/\.(js|css|json|png|webmanifest)$/)) c.put(istek, y.clone()).catch(() => {});
   return y;
 }
 
@@ -126,7 +135,7 @@ async function oncePaket(istek, ad) {
   const k = await c.match(istek);
   if (k) return k;
   const y = await fetch(istek);
-  if (y.ok || y.type === 'opaque') c.put(istek, y.clone());
+  if (y.ok || y.type === 'opaque') c.put(istek, y.clone()).catch(() => {});
   return y;
 }
 
@@ -135,7 +144,7 @@ async function onceAg(istek, ad) {
   try {
     const y = await fetch(istek);
     if (y.ok) {
-      c.put(istek.url, y.clone());
+      c.put(istek.url, y.clone()).catch(() => {});
       return y;
     }
     return (await c.match(istek.url)) || y;
@@ -154,45 +163,100 @@ function tahminiBoyut(url) {
   return g <= 400 ? 60 * 1024 : 180 * 1024;
 }
 
+// Wikimedia'ya aynı anda en çok 4 istek; 429'da (cors kipinde görülebilir) bir kez bekleyip tekrar denenir
+let aktif = 0;
+const kuyruk = [];
+async function sinirli(fn, en = 4) {
+  if (aktif >= en) await new Promise((r) => kuyruk.push(r));
+  aktif++;
+  try {
+    return await fn();
+  } finally {
+    aktif--;
+    const r = kuyruk.shift();
+    if (r) r();
+  }
+}
+
+// { y, saklanir }: yalnızca gerçekten görsel olduğu bilinen (ya da doğrulanamayan opak) yanıtlar saklanır
+async function agdan(url) {
+  if (CORS_HOSTLARI.has(new URL(url).hostname)) {
+    try {
+      const y = await fetch(url, { mode: 'cors', credentials: 'omit' });
+      const gorselMi = (y.headers.get('content-type') || '').startsWith('image/');
+      return { y, saklanir: y.ok && gorselMi };
+    } catch (err) {
+      /* CORS yoksa no-cors'a düş */
+    }
+  }
+  const y = await fetch(url, { mode: 'no-cors', credentials: 'omit' });
+  return { y, saklanir: y.type === 'opaque' }; // hata gövdesi çıkarsa sayfa bildirir, kayıt silinir
+}
+
+async function agdanTekrarli(url) {
+  let s = await sinirli(() => agdan(url));
+  if (s.y.status === 429) {
+    const ra = parseInt(s.y.headers.get('retry-after') || '', 10);
+    await new Promise((r) => setTimeout(r, Math.min(Number.isFinite(ra) ? ra : 2, 5) * 1000));
+    s = await sinirli(() => agdan(url));
+  }
+  return s;
+}
+
+// Önbelleğe yazma yanıtı geciktirmez ve başarısız olursa görseli düşürmez
+async function sakla(c, url, y, boyut) {
+  try {
+    await c.put(url, y.clone());
+  } catch (err) {
+    await budama(true).catch(() => {});
+    try {
+      await c.put(url, y.clone());
+    } catch (err2) {
+      return;
+    }
+  }
+  await metaYaz(url, { boyut, erisim: Date.now(), zaman: Date.now() });
+  await budama().catch(() => {});
+}
+
 async function resim(e) {
   const anahtar = e.request.url;
   const c = await caches.open(RESIM);
   const kayitli = await c.match(anahtar);
-  const getir = () =>
-    fetch(anahtar, { mode: 'no-cors', credentials: 'omit' }).then(async (y) => {
-      if (y.ok || y.type === 'opaque') {
-        let boyut = tahminiBoyut(anahtar);
-        if (y.type !== 'opaque') {
-          const u = parseInt(y.headers.get('content-length') || '', 10);
-          if (u > 0) boyut = u;
-        }
-        await c.put(anahtar, y.clone());
-        await metaYaz(anahtar, { boyut, erisim: Date.now(), zaman: Date.now() });
-        budama();
-      }
-      return y;
-    });
   if (kayitli) {
+    // Görseller değişmeyen dosyalardır: yeniden doğrulama yok (hata yanıtı sağlam kaydın üstüne yazılmasın)
     const m = await metaOku(anahtar);
-    if (!m || Date.now() - m.zaman > RESIM_TAZELIK) e.waitUntil(getir().catch(() => {}));
+    if (!m) e.waitUntil(metaYaz(anahtar, { boyut: tahminiBoyut(anahtar), erisim: Date.now(), zaman: Date.now() }));
     else if (Date.now() - m.erisim > 60 * 60 * 1000) e.waitUntil(metaYaz(anahtar, { ...m, erisim: Date.now() }));
     return kayitli;
   }
-  return getir();
+  const { y, saklanir } = await agdanTekrarli(anahtar);
+  if (saklanir) {
+    let boyut = tahminiBoyut(anahtar);
+    if (y.type !== 'opaque') {
+      const u = parseInt(y.headers.get('content-length') || '', 10);
+      if (u > 0) boyut = u;
+    }
+    e.waitUntil(sakla(c, anahtar, y, boyut));
+  }
+  return y;
 }
 
 let budamaSuruyor = false;
-async function budama() {
+async function budama(zorla = false) {
   if (budamaSuruyor) return;
   budamaSuruyor = true;
   try {
-    const hepsi = await metaHepsi();
-    let toplam = hepsi.reduce((t, m) => t + m.boyut, 0);
-    if (toplam <= RESIM_SINIRI) return;
     const c = await caches.open(RESIM);
+    const meta = new Map((await metaHepsi()).map((m) => [m.url, m]));
+    // Önbellek anahtarları esas alınır: meta kaydı olmayan (sahipsiz) girdiler en eski sayılır
+    const hepsi = (await c.keys()).map((r) => meta.get(r.url) || { url: r.url, boyut: tahminiBoyut(r.url), erisim: 0 });
+    let toplam = hepsi.reduce((t, m) => t + m.boyut, 0);
+    if (!zorla && toplam <= RESIM_SINIRI) return;
     hepsi.sort((a, b) => a.erisim - b.erisim);
+    const hedef = zorla ? Math.min(RESIM_HEDEF, toplam * 0.9) : RESIM_HEDEF;
     for (const m of hepsi) {
-      if (toplam <= RESIM_HEDEF) break;
+      if (toplam <= hedef) break;
       await c.delete(m.url);
       await metaSil(m.url);
       toplam -= m.boyut;
@@ -209,9 +273,21 @@ function dbAc() {
   db = new Promise((coz, reddet) => {
     const r = indexedDB.open('atlas-sw', 1);
     r.onupgradeneeded = () => r.result.createObjectStore('resimler', { keyPath: 'url' });
-    r.onsuccess = () => coz(r.result);
+    r.onsuccess = () => {
+      const x = r.result;
+      x.onclose = x.onversionchange = () => {
+        try {
+          x.close();
+        } catch (err) {
+          /* zaten kapalı */
+        }
+        db = null;
+      };
+      coz(x);
+    };
     r.onerror = () => reddet(r.error);
   });
+  db.catch(() => (db = null)); // bozuk bağlantı bir sonraki istekte yeniden açılır
   return db;
 }
 function tx(kip, fn) {
@@ -222,6 +298,7 @@ function tx(kip, fn) {
         const r = fn(t.objectStore('resimler'));
         t.oncomplete = () => coz(r && r.result);
         t.onerror = () => reddet(t.error);
+        t.onabort = () => reddet(t.error || new Error('abort'));
       }),
   );
 }

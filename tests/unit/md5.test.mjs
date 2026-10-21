@@ -24,6 +24,6 @@ test('palet adresi: Commons küçük resmi doğrudan upload.wikimedia.org yolund
     paletUrl({ k: 'commons', d: 'Vassily Kandinsky, 1913 - Composition 7.jpg' }),
     'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Vassily_Kandinsky%2C_1913_-_Composition_7.jpg/330px-Vassily_Kandinsky%2C_1913_-_Composition_7.jpg',
   );
-  assert.match(paletUrl({ k: 'commons', d: 'Eser.tif' }), /\/330px-Eser\.tif\.jpg$/);
+  assert.match(paletUrl({ k: 'commons', d: 'Eser.tif' }), /\/lossy-page1-330px-Eser\.tif\.jpg$/);
   assert.match(paletUrl({ k: 'aic', i: 'abc' }), /^https:\/\/www\.artic\.edu\/iiif\//);
 });
