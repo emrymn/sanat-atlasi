@@ -1859,3 +1859,15 @@ html.sekmesiz .sekmeler {
 .basyapit-bak li + li {
   margin-top: 6px;
 }
+
+/* İş 9 · Konular */
+.gor-konu {
+  display: inline-block;
+  margin: 2px 0 4px;
+  font: 600 14px/1.3 var(--sans);
+  color: var(--vurgu-acik);
+  text-decoration: none;
+}
+.konu-eserler .eser-yazi b {
+  font-weight: 600;
+}

@@ -18,8 +18,9 @@ import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from './devam.js';
 import { taninmaMetni, eserNotu, notlariAl, karsilastirmaAdresi, benzerSanatcilar } from './karsilastir.js';
 import { tanismaGerekirMi, tanismaEserleri, karisanEkle, enCokKarisanlar, KARISAN_ESIGI } from './ogrenme.js';
 import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir } from './basyapit.js';
+import { konulariAl, konuBul, konuHaritasiniAyarla, TUR_AD, TUR_SIRA } from './ikonografi.js';
 
-const SURUM = '1.15.0';
+const SURUM = '1.16.0';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -291,6 +292,8 @@ const rotalar = [
   [/^#\/sanatci\/(.+)$/, sanatciSayfasi, 'gozat'],
   [/^#\/karsilastir\/([^/]+)\/([^/]+)$/, karsilastirSayfasi, null],
   [/^#\/basyapitlar$/, basyapitListesi, 'gozat'],
+  [/^#\/konular$/, konuListesi, 'gozat'],
+  [/^#\/konu\/(.+)$/, konuSayfasi, 'gozat'],
   [/^#\/basyapit\/(.+)$/, basyapitSayfasi, 'gozat'],
   [/^#\/pekistir$/, pekistirMenusu, 'pekistir'],
   [/^#\/pekistir\/donem$/, pekistirMenusu, 'pekistir'],
@@ -724,12 +727,91 @@ async function basyapitSayfasi(kodlu) {
   kutu.querySelector('[data-basyapit-buyut]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ...gorselTercihi() }));
 }
 
+// ---------- Konular ve hikâyeleri ----------
+let ikonografiSozu = null;
+function ikonografiVeri() {
+  if (!ikonografiSozu)
+    ikonografiSozu = jsonGetir('data/ikonografi.json')
+      .catch(() => null)
+      .then((j) => {
+        const l = konulariAl(j, (id) => d.harita.has(id));
+        konuHaritasiniAyarla(l);
+        return l;
+      });
+  return ikonografiSozu;
+}
+
+async function konuListesi() {
+  gununRengi();
+  ciz(`${ust('Konular', '#/gozat', { ustEtiket: 'İkonografi' })}<p class="ikincil kucuk">Yükleniyor…</p>`);
+  const liste = await ikonografiVeri();
+  if (location.hash !== '#/konular') return;
+  if (!liste.length) return ciz(`${ust('Konular', '#/gozat', { ustEtiket: 'İkonografi' })}<p class="ikincil">Henüz konu yok.</p>`);
+  const gruplar = TUR_SIRA.map((t) => ({ t, l: liste.filter((k) => k.tur === t) })).filter((g) => g.l.length);
+  ciz(`${ust('Konular', '#/gozat', { ustEtiket: `İkonografi · ${liste.length}` })}
+    <p class="kucuk ikincil" style="margin:0 0 6px">Resimlerde en sık işlenen hikâyeler. Her konuda hikâye, resimde nasıl tanındığı ve bu konuyu işleyen eserler.</p>
+    ${gruplar
+      .map(
+        ({ t, l }) => `<h2 class="etiket bolum-baslik">${kacis(TUR_AD[t])}</h2>
+      <ul class="liste" data-test="konu-listesi">${l
+        .map(
+          (k) =>
+            `<li><a class="satir" href="#/konu/${encodeURIComponent(k.id)}"><span class="metin"><b>${kacis(k.ad)}</b><span>${kacis(k.ozet)} · ${k.eserler.length} eser</span></span>${ikon('ileri', 20, 1.4)}</a></li>`,
+        )
+        .join('')}</ul>`,
+      )
+      .join('')}`);
+}
+
+async function konuSayfasi(kodlu) {
+  const k = konuBul(await ikonografiVeri(), decodeURIComponent(kodlu));
+  if (!k) return hataGoster(new Error('Bu konu bulunamadı.'));
+  gununRengi();
+  ciz(`<div class="hale" aria-hidden="true"></div>
+    <header class="sanatci-ust">${geriDugmesi('#/konular')}<a class="etiket vurgu" href="#/konular">${kacis(TUR_AD[k.tur])}</a></header>
+    <article class="basyapit" data-test="konu">
+      <h1 class="basyapit-ad" tabindex="-1">${kacis(k.ad)}</h1>
+      ${k.kaynak ? `<p class="meta">Kaynak: ${kacis(k.kaynak)}</p>` : ''}
+      ${k.ozet ? `<p class="basyapit-ozet okuma">${kacis(k.ozet)}</p>` : ''}
+      <section class="bolum">${etiket('Hikâye')}${k.hikaye.map((p) => `<p class="okuma">${kacis(p)}</p>`).join('')}</section>
+      ${k.tanima.length ? `<section class="bolum">${etiket('Resimde nasıl tanınır?', { vurgu: true })}<ul class="okuma basyapit-bak">${k.tanima.map((x) => `<li>${kacis(x)}</li>`).join('')}</ul></section>` : ''}
+      <section class="bolum">${etiket(`Bu konuyu işleyen eserler · ${k.eserler.length}`)}<p class="kucuk ikincil" style="margin:0 0 8px">Zaman sırasıyla; aynı hikâyenin farklı ressamlardaki hâli.</p>
+        <div class="izgara konu-eserler" data-konu-eserler><p class="ikincil kucuk">Eserler yükleniyor…</p></div></section>
+      <p class="kucuk ikincil" style="margin-top:18px">Metni Claude yazdı, ikinci bir istekte denetledi. Konu, eserlerin adından çıkarıldı; arada yanlış eşleşme olabilir.</p>
+    </article>`);
+  // eserler: sanatçı başına bir kez yüklenir
+  const sanatcilar = [...new Set(k.eserler.map((x) => x[1]))];
+  const listeler = new Map(await Promise.all(sanatcilar.map(async (sid) => [sid, await sanatciEserleri(d.harita.get(sid))])));
+  const eserler = k.eserler
+    .map(([a, sid]) => eserEslestir(listeler.get(sid) || [], { anahtar: a, sanatci: sid }))
+    .filter((e) => e && (secilenGorsel(e, kotuler()) || e.gorseller[0]));
+  const kutu = ekran.querySelector('[data-konu-eserler]');
+  if (!kutu) return;
+  if (!eserler.length) {
+    kutu.innerHTML = '<p class="ikincil kucuk">Bu konudaki eserlerin görseli bulunamadı.</p>';
+    return;
+  }
+  kutu.innerHTML = eserler
+    .map((e, i) => {
+      const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
+      const s = d.harita.get(e.sid);
+      return `<button class="eser" type="button" data-konu-eser="${i}" aria-label="${kacis(`${s.ad}, ${eserBaslik(e)}`)} — büyüt">
+        <img ${i > 5 ? 'loading="lazy" ' : ''}decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"><span class="eser-yazi"><b>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}</b> · ${kacis(eserBaslik(e))}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</span></button>`;
+    })
+    .join('');
+  kutu.addEventListener('click', (ev) => {
+    const b = ev.target.closest('[data-konu-eser]');
+    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.konuEser), notu: (e) => notuIcin(e.sid)(e), ...gorselTercihi() });
+  });
+}
+
 // ---------- Göz At: akımlar zaman sırasıyla ----------
 function gozAt() {
   const durumlar = akimDurumlari(d.akimlar, d.sanatcilar, islenen());
   gununRengi();
   ciz(`${ust('Göz At', '#/', { geriYok: true, ustEtiket: 'Akımlar' })}
     <a class="basyapit-giris" href="#/basyapitlar" data-test="basyapit-giris">${ikon('kitap', 22, 1.5)}<span><b>Başyapıt okumaları</b><small>Kursun önemli eserlerine yakından bakış: ne görüyoruz, ne anlatıyor, neden önemli</small></span>${ikon('ileri', 20, 1.4)}</a>
+    <a class="basyapit-giris" href="#/konular" data-test="konu-giris">${ikon('kitap', 22, 1.5)}<span><b>Konular ve hikâyeleri</b><small>İncil'den, mitolojiden ve aziz hayatlarından sahneler; resimde nasıl tanınırlar</small></span>${ikon('ileri', 20, 1.4)}</a>
     <p class="kucuk ikincil" style="margin:0 0 6px">Zaman sırasıyla. Soluk olanlar, ilgili konu işlenince açılır.</p>
     <ol class="zaman">${durumlar
       .map((a) => {
@@ -1907,6 +1989,8 @@ async function basla() {
   window.addEventListener('hashchange', yonlendir);
   yonlendir();
   swKaydet();
+  // Konular (görüntüleyicideki "Konu:" bağlantısı için) ilk ekrandan sonra arka planda
+  setTimeout(ikonografiVeri, 1500);
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
   // test ve hata ayıklama için
   window.__atlas = d;

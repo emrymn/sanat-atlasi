@@ -168,6 +168,7 @@ export function sanatciEserleri(sanatci, { canli = true } = {}) {
     .catch(() => eserleriBirlestir(kursResimleri(sanatci, turler), []))
     .then((eserler) => {
       for (const e of eserler) {
+        e.sid = sanatci.id;
         const ad = eserAdiBul(sanatci.id, e);
         if (ad && ad !== e.baslik) e.ad = ad;
       }
