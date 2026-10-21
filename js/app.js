@@ -17,8 +17,9 @@ import { idbAl, idbKoy, idbSil } from './idb.js';
 import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from './devam.js';
 import { taninmaMetni, eserNotu, notlariAl, karsilastirmaAdresi, benzerSanatcilar } from './karsilastir.js';
 import { tanismaGerekirMi, tanismaEserleri, karisanEkle, enCokKarisanlar, KARISAN_ESIGI } from './ogrenme.js';
+import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir } from './basyapit.js';
 
-const SURUM = '1.14.0';
+const SURUM = '1.15.0';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -289,6 +290,8 @@ const rotalar = [
   [/^#\/sanatci\/(.+)\/eserler$/, tumEserler, 'gozat'],
   [/^#\/sanatci\/(.+)$/, sanatciSayfasi, 'gozat'],
   [/^#\/karsilastir\/([^/]+)\/([^/]+)$/, karsilastirSayfasi, null],
+  [/^#\/basyapitlar$/, basyapitListesi, 'gozat'],
+  [/^#\/basyapit\/(.+)$/, basyapitSayfasi, 'gozat'],
   [/^#\/pekistir$/, pekistirMenusu, 'pekistir'],
   [/^#\/pekistir\/donem$/, pekistirMenusu, 'pekistir'],
   [/^#\/pekistir\/donem\/(.+)$/, (ad) => pekistir('donem', ad), null],
@@ -634,11 +637,99 @@ ekran.addEventListener('click', (e) => {
   bildir(`${d.harita.get(id).ad} pekiştirmeye eklendi.`);
 });
 
+// ---------- Başyapıt yakın okumaları ----------
+let basyapitSozu = null;
+function basyapitVeri() {
+  if (!basyapitSozu)
+    basyapitSozu = jsonGetir('data/basyapitlar.json')
+      .catch(() => null)
+      .then((j) => basyapitlariAl(j, (id) => d.harita.has(id)));
+  return basyapitSozu;
+}
+
+const basyapitAdresi = (k) => `#/basyapit/${encodeURIComponent(k)}`;
+
+async function basyapitBaglariniDoldur(id) {
+  const liste = sanatcininBasyapitlari(await basyapitVeri(), id);
+  const kutu = ekran.querySelector(`[data-basyapit-bag="${CSS.escape(id)}"]`);
+  if (!kutu || !liste.length) return;
+  kutu.innerHTML = `<section class="bolum">${etiket('Yakın okuma')}${liste
+    .map((b) => `<a class="satir basyapit-bag" href="${basyapitAdresi(b.anahtar)}" data-test="basyapit-bag"><span class="metin"><b>${kacis(b.baslik)}</b><span>${kacis(b.ozet)}</span></span>${ikon('ileri', 20, 1.4)}</a>`)
+    .join('')}</section>`;
+}
+
+async function basyapitListesi() {
+  gununRengi();
+  ciz(`${ust('Başyapıtlar', '#/gozat', { ustEtiket: 'Yakın okuma' })}<p class="ikincil kucuk">Yükleniyor…</p>`);
+  const liste = await basyapitVeri();
+  if (location.hash !== '#/basyapitlar') return;
+  if (!liste.length) return ciz(`${ust('Başyapıtlar', '#/gozat', { ustEtiket: 'Yakın okuma' })}<p class="ikincil">Henüz yakın okuma yok.</p>`);
+  const k = islenen();
+  const gruplar = [];
+  for (const a of d.akimlar) {
+    const l = liste.filter((b) => d.harita.get(b.sanatci).akim === a.ad);
+    if (l.length) gruplar.push({ a, l });
+  }
+  ciz(`${ust('Başyapıtlar', '#/gozat', { ustEtiket: `Yakın okuma · ${liste.length}` })}
+    <p class="kucuk ikincil" style="margin:0 0 6px">Her eserde ne görüldüğü, kompozisyon, anlam ve önemi. Zaman sırasıyla.</p>
+    ${gruplar
+      .map(
+        ({ a, l }) => `<h2 class="etiket bolum-baslik">${akimNoktasi(a.ad)}${kacis(a.ad)}</h2>
+      <ul class="liste" data-test="basyapit-listesi">${l
+        .map((b) => {
+          const s = d.harita.get(b.sanatci);
+          const kilit = k.has(s.konu) ? '' : ' <span class="rozet">henüz kursta yok</span>';
+          return `<li><a class="satir" href="${basyapitAdresi(b.anahtar)}"><span class="kucuk-kare" data-basyapit-kucuk="${kacis(b.anahtar)}"></span><span class="metin"><b>${kacis(b.baslik)}${kilit}</b><span>${kacis(s.ad)}${b.tarih ? ` · ${kacis(b.tarih)}` : ''}</span></span>${ikon('ileri', 20, 1.4)}</a></li>`;
+        })
+        .join('')}</ul>`,
+      )
+      .join('')}`);
+  for (const el of ekran.querySelectorAll('[data-basyapit-kucuk]')) {
+    const b = basyapitBul(liste, el.dataset.basyapitKucuk);
+    sanatciEserleri(d.harita.get(b.sanatci)).then((eserler) => {
+      const e = eserEslestir(eserler, b);
+      if (e && el.isConnected) el.innerHTML = kucukGorsel(e, 400);
+    });
+  }
+}
+
+async function basyapitSayfasi(kodlu) {
+  const anahtar = decodeURIComponent(kodlu);
+  const b = basyapitBul(await basyapitVeri(), anahtar);
+  if (!b) return hataGoster(new Error('Bu eser için yakın okuma bulunamadı.'));
+  const s = d.harita.get(b.sanatci);
+  const eserSozu = sanatciEserleri(s).then((l) => eserEslestir(l, b));
+  ekranRengi(eserSozu, akimRenk(s.akim));
+  ciz(`<div class="hale" aria-hidden="true"></div>
+    <header class="sanatci-ust">${geriDugmesi('#/basyapitlar')}<a class="etiket vurgu" href="#/akim/${encodeURIComponent(s.akim)}">${kacis(s.akim)}</a></header>
+    <article class="basyapit" data-test="basyapit">
+      <h1 class="basyapit-ad" tabindex="-1">${kacis(b.baslik)}</h1>
+      <p class="meta"><a href="#/sanatci/${encodeURIComponent(s.id)}">${kacis(s.ad)}</a>${b.tarih ? ` · ${kacis(b.tarih)}` : ''}${b.muze ? ` · ${kacis(b.muze)}` : ''}</p>
+      ${b.ozgun && b.ozgun !== b.baslik ? `<p class="gor-ozgun">${kacis(b.ozgun)}</p>` : ''}
+      <div class="basyapit-gorsel" data-basyapit-gorsel><p class="ikincil kucuk">Görsel yükleniyor…</p></div>
+      ${b.ozet ? `<p class="basyapit-ozet okuma">${kacis(b.ozet)}</p>` : ''}
+      ${b.bolumler.map((x) => `<section class="bolum">${etiket(x.baslik)}<p class="okuma">${kacis(x.metin)}</p></section>`).join('')}
+      ${b.bak.length ? `<section class="bolum">${etiket('Yakından bak', { vurgu: true })}<ol class="okuma basyapit-bak">${b.bak.map((x) => `<li>${kacis(x)}</li>`).join('')}</ol></section>` : ''}
+      <p class="kucuk ikincil" style="margin-top:18px">Metni Claude yazdı, ikinci bir istekte olgu ve dil açısından denetledi. Yine de hata görürsen not al.</p>
+    </article>`);
+  const e = await eserSozu;
+  const kutu = ekran.querySelector('[data-basyapit-gorsel]');
+  if (!kutu) return;
+  const g = e && secilenGorsel(e, kotuler());
+  if (!g) {
+    kutu.innerHTML = '<p class="ikincil kucuk">Bu eserin görseli bulunamadı.</p>';
+    return;
+  }
+  kutu.innerHTML = `<button class="basyapit-buyut" type="button" data-basyapit-buyut aria-label="${kacis(b.baslik)} — büyüt"><img decoding="async" alt="${kacis(`${s.ad}, ${b.baslik}`)}" src="${kacis(gorselUrl(g, 1200))}" data-yedek="${kacis(gorselUrl(g, 800))}"></button>`;
+  kutu.querySelector('[data-basyapit-buyut]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ...gorselTercihi() }));
+}
+
 // ---------- Göz At: akımlar zaman sırasıyla ----------
 function gozAt() {
   const durumlar = akimDurumlari(d.akimlar, d.sanatcilar, islenen());
   gununRengi();
   ciz(`${ust('Göz At', '#/', { geriYok: true, ustEtiket: 'Akımlar' })}
+    <a class="basyapit-giris" href="#/basyapitlar" data-test="basyapit-giris">${ikon('kitap', 22, 1.5)}<span><b>Başyapıt okumaları</b><small>Kursun önemli eserlerine yakından bakış: ne görüyoruz, ne anlatıyor, neden önemli</small></span>${ikon('ileri', 20, 1.4)}</a>
     <p class="kucuk ikincil" style="margin:0 0 6px">Zaman sırasıyla. Soluk olanlar, ilgili konu işlenince açılır.</p>
     <ol class="zaman">${durumlar
       .map((a) => {
@@ -724,10 +815,12 @@ async function sanatciSayfasi(id) {
     </div>
     <div class="eserler" id="eserler"><p class="ikincil kucuk">Eserler yükleniyor…</p></div>
     ${notBolumleri(s)}
+    <div data-basyapit-bag="${kacis(s.id)}"></div>
     <section class="bolum">${etiket('Dönemi')}${donemCizelgesi(s.akim)}</section>
     ${karsilastirSecici(s)}
     ${onemli}${emin}
     </article>`);
+  basyapitBaglariniDoldur(s.id);
   const eserler = await eserSozu;
   d.sonEserListesi = eserler; // testler ve hata ayıklama için
   const kutu = document.getElementById('eserler');
