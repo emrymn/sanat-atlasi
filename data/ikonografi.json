@@ -4697,6 +4697,98 @@
    ]
   },
   {
+   "id": "bacchus",
+   "ad": "Bacchus (Dionysos)",
+   "ozgun": "Bacchus",
+   "tur": "mitoloji",
+   "ozet": "Zeus ile ölümlü Semele'nin oğlu olan şarap, bağ ve coşku tanrısı Bacchus, peşindeki sarhoş ve coşkun maiyetiyle dünyayı dolaşır, onu tanıyanları ödüllendirir, kültünü reddedenleri ise ağır biçimde cezalandırır.",
+   "kaynak": "Ovidius, Dönüşümler · Euripides, Bakkhalar",
+   "hikaye": [
+    "Ovidius'a göre Bacchus, Zeus (Jüpiter) ile Thebai prensesi Semele'nin oğludur. Kıskanç Hera (Juno), Semele'yi kandırır ve sevgilisinden kendisine gerçek, ilahi kılığıyla görünmesini istemesini sağlar. Zeus yıldırımlarıyla gelince Semele yanarak ölür. Zeus henüz doğmamış çocuğu kurtarır ve doğum vakti gelene dek kendi uyluğunda taşır. Çocuk perilerin elinde gizlice büyür.",
+    "Bacchus, bağcılığı ve şarabı insanlara getiren, coşku ve kendinden geçişin tanrısıdır. Maiyetinde bakkhalar (maenadlar), satirler ve onu yetiştiren yaşlı, şişman ve hep sarhoş Silenus bulunur. Ovidius, tanrıyı tanımayanların başına gelenleri anlatır. Thebai kralı Pentheus, onun ayinlerini yasaklar ve sonunda kendi annesi ile teyzeleri tarafından parçalanır. Aynı olayı Euripides'in Bakkhalar tragedyası da işler. Onu kaçırmaya kalkan Tyrrhenli denizciler yunusa, ayinlerini küçümseyen Minyas'ın kızları ise yarasaya dönüştürülür.",
+    "Ovidius, tanrının cömert yüzünü de gösterir. Kaybolan Silenus'u geri getiren Kral Midas'a dokunduğunu altına çevirme gücünü bağışlar. Theseus'un Naksos adasında terk ettiği Ariadne'yi teselli eder ve tacını gökyüzüne yıldız takımı olarak yerleştirir. Bacchus'un vaşak ve kaplanların çektiği arabasıyla yaptığı muzaffer alay, antik dönemden itibaren sevilen bir konu olmuştur.",
+    "Rönesans ve Barok ressamları için Bacchus, bolluğu, duyusal hazzı, sarhoşluğu ve sonbaharı simgeler. Bakkhanal sahneleri, çıplak bedeni ve taşkın neşeyi resmetmek için elverişli bir bahane sunmuştur. Bazı ressamlar ise konuyu ahlaki bir uyarı ya da tür sahnesi havasında yorumlamıştır."
+   ],
+   "tanima": [
+    "Başında asma yaprakları ve üzüm salkımlarından ya da sarmaşıktan çelenk taşıyan, genç, yumuşak hatlı ve çoğunlukla yarı çıplak bir erkek figürü",
+    "Elinde şarap kadehi, testi ya da üzüm salkımı; yakınında şarap fıçısı veya küpleri",
+    "Thyrsos: ucunda çam kozalağı bulunan, sarmaşık sarılı asa",
+    "Omzunda ya da altında panter veya leopar postu; arabasını çeken ya da yanında duran panter, kaplan veya vaşak",
+    "Maiyet: tef çalan, dans eden bakkhalar, keçi bacaklı satirler ve çoğu zaman eşeğe binmiş ya da başkalarınca taşınan sarhoş, şişman Silenus",
+    "Kır, bağ ya da şölen ortamı; sarhoşluk, uyuklama ve taşkın eğlence"
+   ],
+   "eserler": [
+    [
+     "andrea-mantegna|Bacchanal with Wine Vat",
+     "andrea-mantegna"
+    ],
+    [
+     "andrea-mantegna|Bacchanal with a Wine Vat",
+     "andrea-mantegna"
+    ],
+    [
+     "andrea-mantegna|Bacchanal with Silenus",
+     "andrea-mantegna"
+    ],
+    [
+     "giovanni-bellini|The Infant Bacchus",
+     "giovanni-bellini"
+    ],
+    [
+     "Q3632504",
+     "rosso-fiorentino"
+    ],
+    [
+     "Q2011510",
+     "caravaggio"
+    ],
+    [
+     "Q2293936",
+     "caravaggio"
+    ],
+    [
+     "Q20179293",
+     "hendrick-ter-brugghen"
+    ],
+    [
+     "Q123935",
+     "diego-velazquez"
+    ],
+    [
+     "Q9163852",
+     "nicolas-poussin"
+    ],
+    [
+     "Q21727949",
+     "luca-giordano"
+    ],
+    [
+     "Q22909956",
+     "alessandro-magnasco"
+    ],
+    [
+     "Q107438373",
+     "angelica-kauffman"
+    ],
+    [
+     "Q17353990",
+     "gustave-courbet"
+    ],
+    [
+     "william-adolphe-bouguereau|Bacchante on a Panther",
+     "william-adolphe-bouguereau"
+    ],
+    [
+     "Q114347627",
+     "camille-corot"
+    ],
+    [
+     "Q18177688",
+     "camille-corot"
+    ]
+   ]
+  },
+  {
    "id": "jacob",
    "ad": "Yakup'un Hikâyesi",
    "ozgun": "Jacob",
@@ -5364,82 +5456,6 @@
     [
      "pablo-picasso|The Barbaric Dance (Before Salomé and Herod)",
      "pablo-picasso"
-    ]
-   ]
-  },
-  {
-   "id": "bacchus",
-   "ad": "Bacchus (Dionysos)",
-   "ozgun": "Bacchus",
-   "tur": "mitoloji",
-   "ozet": "Zeus ile ölümlü Semele'nin oğlu olan şarap, bağ ve coşku tanrısı Bacchus, peşindeki sarhoş ve coşkun maiyetiyle dünyayı dolaşır, onu tanıyanları ödüllendirir, kültünü reddedenleri ise ağır biçimde cezalandırır.",
-   "kaynak": "Ovidius, Dönüşümler · Euripides, Bakkhalar",
-   "hikaye": [
-    "Ovidius'a göre Bacchus, Zeus (Jüpiter) ile Thebai prensesi Semele'nin oğludur. Kıskanç Hera (Juno), Semele'yi kandırır ve sevgilisinden kendisine gerçek, ilahi kılığıyla görünmesini istemesini sağlar. Zeus yıldırımlarıyla gelince Semele yanarak ölür. Zeus henüz doğmamış çocuğu kurtarır ve doğum vakti gelene dek kendi uyluğunda taşır. Çocuk perilerin elinde gizlice büyür.",
-    "Bacchus, bağcılığı ve şarabı insanlara getiren, coşku ve kendinden geçişin tanrısıdır. Maiyetinde bakkhalar (maenadlar), satirler ve onu yetiştiren yaşlı, şişman ve hep sarhoş Silenus bulunur. Ovidius, tanrıyı tanımayanların başına gelenleri anlatır. Thebai kralı Pentheus, onun ayinlerini yasaklar ve sonunda kendi annesi ile teyzeleri tarafından parçalanır. Aynı olayı Euripides'in Bakkhalar tragedyası da işler. Onu kaçırmaya kalkan Tyrrhenli denizciler yunusa, ayinlerini küçümseyen Minyas'ın kızları ise yarasaya dönüştürülür.",
-    "Ovidius, tanrının cömert yüzünü de gösterir. Kaybolan Silenus'u geri getiren Kral Midas'a dokunduğunu altına çevirme gücünü bağışlar. Theseus'un Naksos adasında terk ettiği Ariadne'yi teselli eder ve tacını gökyüzüne yıldız takımı olarak yerleştirir. Bacchus'un vaşak ve kaplanların çektiği arabasıyla yaptığı muzaffer alay, antik dönemden itibaren sevilen bir konu olmuştur.",
-    "Rönesans ve Barok ressamları için Bacchus, bolluğu, duyusal hazzı, sarhoşluğu ve sonbaharı simgeler. Bakkhanal sahneleri, çıplak bedeni ve taşkın neşeyi resmetmek için elverişli bir bahane sunmuştur. Bazı ressamlar ise konuyu ahlaki bir uyarı ya da tür sahnesi havasında yorumlamıştır."
-   ],
-   "tanima": [
-    "Başında asma yaprakları ve üzüm salkımlarından ya da sarmaşıktan çelenk taşıyan, genç, yumuşak hatlı ve çoğunlukla yarı çıplak bir erkek figürü",
-    "Elinde şarap kadehi, testi ya da üzüm salkımı; yakınında şarap fıçısı veya küpleri",
-    "Thyrsos: ucunda çam kozalağı bulunan, sarmaşık sarılı asa",
-    "Omzunda ya da altında panter veya leopar postu; arabasını çeken ya da yanında duran panter, kaplan veya vaşak",
-    "Maiyet: tef çalan, dans eden bakkhalar, keçi bacaklı satirler ve çoğu zaman eşeğe binmiş ya da başkalarınca taşınan sarhoş, şişman Silenus",
-    "Kır, bağ ya da şölen ortamı; sarhoşluk, uyuklama ve taşkın eğlence"
-   ],
-   "eserler": [
-    [
-     "andrea-mantegna|Bacchanal with Wine Vat",
-     "andrea-mantegna"
-    ],
-    [
-     "andrea-mantegna|Bacchanal with a Wine Vat",
-     "andrea-mantegna"
-    ],
-    [
-     "andrea-mantegna|Bacchanal with Silenus",
-     "andrea-mantegna"
-    ],
-    [
-     "giovanni-bellini|The Infant Bacchus",
-     "giovanni-bellini"
-    ],
-    [
-     "Q3632504",
-     "rosso-fiorentino"
-    ],
-    [
-     "Q2011510",
-     "caravaggio"
-    ],
-    [
-     "Q2293936",
-     "caravaggio"
-    ],
-    [
-     "Q20179293",
-     "hendrick-ter-brugghen"
-    ],
-    [
-     "Q123935",
-     "diego-velazquez"
-    ],
-    [
-     "Q21727949",
-     "luca-giordano"
-    ],
-    [
-     "william-adolphe-bouguereau|Bacchante on a Panther",
-     "william-adolphe-bouguereau"
-    ],
-    [
-     "Q114347627",
-     "camille-corot"
-    ],
-    [
-     "Q18177688",
-     "camille-corot"
     ]
    ]
   },
@@ -6375,6 +6391,70 @@
    ]
   },
   {
+   "id": "apollo-and-marsyas",
+   "ad": "Apollon ve Marsyas",
+   "ozgun": "Apollo and Marsyas",
+   "tur": "mitoloji",
+   "ozet": "Satir Marsyas müzik yarışmasında tanrı Apollon'a meydan okur, yenilir ve cezası olarak canlı canlı derisi yüzülür.",
+   "kaynak": "Ovidius, Dönüşümler (yarışmanın ayrıntıları için ayrıca Apollodoros ve Hyginus gibi antik mitoloji derleyicileri)",
+   "hikaye": [
+    "Antik anlatılara göre çifte flütü (aulos) tanrıça Athena icat etmiş, ancak çalarken yanaklarının şiştiğini ve yüzünün çirkinleştiğini görünce onu atıp lanetlemiştir. Frigyalı satir Marsyas flütü bulur, ustalıkla çalmayı öğrenir ve sonunda kendini, lir çalan müzik tanrısı Apollon'dan daha iyi bir müzisyen sanacak kadar kibre kapılır.",
+    "Mitoloji derleyicilerine göre ikisi, galibin yenilene dilediğini yapması koşuluyla yarışır; hakemlik çoğunlukla Musalara verilir. Apollon, lirini ters çevirerek çalıp şarkı söyler ve Marsyas'tan da aynısını ister. Flütle bu yapılamayacağı için Marsyas yenilir. Ovidius yarışmayı kısaca geçer, asıl olarak cezaya odaklanır: Apollon satirin canlı canlı derisini yüzer (Apollodoros'a göre onu önce bir çam ağacına astırır). Marsyas'ın acı çığlıklarına karşın deri vücudundan sıyrılır, kaslar ve damarlar açığa çıkar.",
+    "Ovidius'a göre ormanların tanrıları, faunlar, satirler ve nimfalar Marsyas'a ağlar; dökülen gözyaşlarından onun adını taşıyan berrak bir ırmak doğar.",
+    "Hikâye, tanrılara karşı kibrin (hybris) cezalandırılmasının en sert örneklerinden biridir. Rönesans'ta Yeni Platoncu düşünce bu hikâyede, Apollon'un lirinin simgelediği ilahi ve akli uyumun, flütün temsil ettiği bedensel ve hayvani tutkulara üstün gelişini de görmüştür. Ayrıca derinin yüzülmesi, ruhun bedenden arınması olarak yorumlanmıştır."
+   ],
+   "tanima": [
+    "Defne çelengi taşıyan, genç ve çoğunlukla çıplak ya da pelerinli Apollon; elinde lir, Rönesans resimlerinde ise sıklıkla bir yaylı çalgı (lira da braccio, viyola) veya derisini yüzdüğü sahnelerde bıçak",
+    "Keçi bacaklı ya da sivri kulaklı, sakallı satir Marsyas; elinde çifte flüt veya ressamların Pan'la karıştırmasından kaynaklanan Pan flütü (syrinx)",
+    "İki ana sahne tipi: sakin bir yarışma sahnesi ya da Marsyas'ın bir ağaca, çoğu zaman baş aşağı bağlandığı, acıyla haykırdığı derisini yüzme sahnesi",
+    "Yere atılmış ya da ağaca asılmış flüt",
+    "Arka planda ağlayan ve dehşete düşen satirler, faunlar ve nimfalar; bazen hakem olarak Musalar",
+    "Kimi resimlerde eşek kulaklı Kral Midas; bu figür aslında Apollon ile Pan arasındaki başka bir yarışmaya aittir ve ressamlar bu iki hikâyeyi sıkça birleştirmiştir"
+   ],
+   "eserler": [
+    [
+     "Q673112",
+     "pietro-perugino"
+    ],
+    [
+     "Q21723151",
+     "agnolo-bronzino"
+    ],
+    [
+     "Q3925598",
+     "titian"
+    ],
+    [
+     "Q78638248",
+     "bartolomeo-manfredi"
+    ],
+    [
+     "Q97185664",
+     "luca-giordano"
+    ],
+    [
+     "Q5701552",
+     "jusepe-de-ribera"
+    ],
+    [
+     "Q67203478",
+     "jusepe-de-ribera"
+    ],
+    [
+     "Q85606274",
+     "luca-giordano"
+    ],
+    [
+     "Q28093459",
+     "dirck-van-baburen"
+    ],
+    [
+     "Q119951811",
+     "salvator-rosa"
+    ]
+   ]
+  },
+  {
    "id": "flagellation",
    "ad": "İsa'nın Kırbaçlanması",
    "ozgun": "Flagellation",
@@ -6738,6 +6818,61 @@
     [
      "Q65023666",
      "marcantonio-raimondi"
+    ]
+   ]
+  },
+  {
+   "id": "bacchus-and-ariadne",
+   "ad": "Bakkhus ve Ariadne",
+   "ozgun": "Bacchus and Ariadne",
+   "tur": "mitoloji",
+   "ozet": "Theseus'un Naksos Adası'nda terk ettiği Giritli prenses Ariadne'yi şarap tanrısı Bakkhus (Dionysos) bulur, ona âşık olur ve tacını gökyüzünde bir takımyıldıza dönüştürerek onu ölümsüzleştirir.",
+   "kaynak": "Ovidius, Dönüşümler (ayrıca Ovidius, Aşk Sanatı; Heroides; Catullus)",
+   "hikaye": [
+    "Ariadne, Girit kralı Minos'un kızıdır. Atinalı kahraman Theseus, Labirent'teki Minotauros'u öldürmeye geldiğinde Ariadne ona âşık olur ve verdiği bir ip yumağı sayesinde Theseus'un Labirent'ten çıkış yolunu bulmasını sağlar. Ardından Theseus'la birlikte Girit'ten kaçar.",
+    "Yolda uğradıkları Naksos (antik kaynaklarda Dia) Adası'nda Theseus, Ariadne'yi uyurken bırakıp gemisiyle uzaklaşır. Uyanan Ariadne kendini ıssız bir kıyıda yapayalnız bulur ve terk edilişine ağıt yakar. Ovidius, Aşk Sanatı'nda bu anı canlı biçimde anlatır: Bakkhus coşkulu alayıyla, yani satirler, sarhoş Silenos ve zil çalan mainadlarla birlikte kıyıya gelir. Kaplanların ya da panterlerin çektiği arabasından atlayarak korkmuş Ariadne'ye yaklaşır ve ona eşi olacağına dair güvence verir.",
+    "Dönüşümler'de ise öykünün sonu kısaca anlatılır: Bakkhus, terk edilmiş Ariadne'ye yardım eder ve onun sonsuza dek anılması için başındaki tacı alıp göğe fırlatır. Taçtaki taşlar yıldızlara dönüşür ve Kuzey Tacı takımyıldızını oluşturur.",
+    "Konu, ihanetten ve çaresizlikten tanrısal aşka ve ölümsüzlüğe geçişi simgeler. Rönesans ve Barok ressamları için bu sahne hem hareketli, kalabalık bir şenlik alayı hem de aşk, evlilik ve göğe yükseliş temalarını bir araya getirme fırsatı sunmuştur. Bu nedenle sahne zafer alayı biçiminde ya da Venüs'ün aracılık ettiği bir evlilik sahnesi olarak sıkça resmedilmiştir."
+   ],
+   "tanima": [
+    "Deniz kıyısında yalnız ve çoğu zaman şaşkın ya da korkmuş bir genç kadın (Ariadne); uzakta Theseus'un açılan gemisi",
+    "Sarmaşık ya da asma yapraklarından çelenk takan genç tanrı Bakkhus; elinde üzüm, şarap kabı veya ucu çam kozalaklı asa (thyrsos)",
+    "Kaplanlar, panterler ya da leoparlar tarafından çekilen araba",
+    "Coşkulu tanrı alayı: satirler, zil ve tef çalan mainadlar (bakkhalar), eşeğe binmiş şişman ve sarhoş Silenos",
+    "Ariadne'nin başının üzerinde yıldızlara dönüşen taç; bazen tacı Bakkhus'un ya da Venüs'ün takması veya evlilik simgesi olarak yüzük uzatılması"
+   ],
+   "eserler": [
+    [
+     "Q1206860",
+     "titian"
+    ],
+    [
+     "Q9372115",
+     "tintoretto"
+    ],
+    [
+     "Q109051113",
+     "guido-reni"
+    ],
+    [
+     "giovanni-battista-tiepolo|Bacchus and Ariadne",
+     "giovanni-battista-tiepolo"
+    ],
+    [
+     "Q23047545",
+     "angelica-kauffman"
+    ],
+    [
+     "Q5703908",
+     "angelica-kauffman"
+    ],
+    [
+     "Q88588179",
+     "jean-baptiste-greuze"
+    ],
+    [
+     "Q3998957",
+     "annibale-carracci"
     ]
    ]
   },
@@ -7609,6 +7744,57 @@
    ]
   },
   {
+   "id": "diana-and-callisto",
+   "ad": "Diana ve Kallisto",
+   "ozgun": "Diana and Callisto",
+   "tur": "mitoloji",
+   "ozet": "Avcı tanrıça Diana, Jüpiter tarafından kandırılıp gebe bırakılan perisi Kallisto'nun hamileliğini yıkanma sırasında fark eder ve onu topluluğundan kovar.",
+   "kaynak": "Ovidius, Dönüşümler",
+   "hikaye": [
+    "Kallisto, Arkadyalı bir peridir ve bekâret yemini etmiş avcı tanrıça Diana'nın (Yunanca Artemis) en sevdiği yoldaşlarındandır. Ovidius'a göre Jüpiter (Zeus) onu ormanda yalnız görür ve şüphe uyandırmamak için Diana kılığına girerek yanına yaklaşır. Kallisto onu tanrıçası sanar; gerçeği anladığında direnmeye çalışır ama karşı koyamaz. Bu olaydan sonra utancını saklayarak Diana'nın topluluğunda yaşamayı sürdürür.",
+    "Aylar sonra, sıcak bir günde Diana ve perileri bir pınarda yıkanmaya karar verir. Kallisto soyunmakta ağır davranır; öteki periler onun giysilerini çıkarınca gebeliği ortaya çıkar. Diana öfkeyle onu kutsal sudan ve kendi topluluğundan uzaklaştırır. Resimlerde en çok işlenen an budur: tanrıçanın buyurgan jesti ve Kallisto'nun teşhir edilip yargılanışı.",
+    "Hikâye burada bitmez. Kallisto, Arkas adında bir oğul doğurur. Kıskançlıkla öfkelenen Juno (Hera) onu bir ayıya dönüştürür. Yıllar sonra avcı olan Arkas ormanda bu ayıyla karşılaşır ve annesini tanımadan onu öldürmek üzereyken Jüpiter araya girer. Tanrı ikisini göğe çıkarıp birbirine komşu yıldız kümeleri yapar; Kallisto Büyük Ayı olur. Juno'nun ricası üzerine Okeanos ile Tethys, bu takımyıldızın okyanusa inip yıkanmasına izin vermez. Bu yüzden takımyıldız hiç batmaz.",
+    "Konu, ressamlara pınar başında çıplak kadın figürleri çizme imkânı verirken masumiyet, aldatılma, haksız cezalandırma ve iffet gibi ahlaki temaları da gündeme getirdi. Rönesans ve Barok dönemlerde özellikle Venedik ve Flaman resminde sevilen bir sahne oldu."
+   ],
+   "tanima": [
+    "Alnında hilal biçimli ay takısı bulunan, yay ve sadakla tasvir edilen, kovucu bir jestle eliyle işaret eden Diana",
+    "Periler tarafından soyulan ya da tutulan, karnı belirgin, utanç içinde yüzünü veya bedenini saklamaya çalışan Kallisto",
+    "Pınar, çeşme ya da havuz başında, orman içinde geçen yıkanma sahnesi",
+    "Çevrede yıkanan ya da şaşkınlıkla bakan çıplak periler topluluğu",
+    "Av köpekleri, yaylar, sadaklar ve yere bırakılmış giysiler gibi av atribüleri"
+   ],
+   "eserler": [
+    [
+     "Q4161055",
+     "titian"
+    ],
+    [
+     "Q3706769",
+     "peter-paul-rubens"
+    ],
+    [
+     "Q11345762",
+     "francois-boucher"
+    ],
+    [
+     "Q28495558",
+     "francois-boucher"
+    ],
+    [
+     "Q122253129",
+     "angelica-kauffman"
+    ],
+    [
+     "Q123456096",
+     "sebastiano-ricci"
+    ],
+    [
+     "Q119350640",
+     "angelica-kauffman"
+    ]
+   ]
+  },
+  {
    "id": "mocking-of-christ",
    "ad": "İsa'nın Alaya Alınması",
    "ozgun": "Mocking of Christ",
@@ -7853,54 +8039,6 @@
     [
      "Q3967207",
      "luca-giordano"
-    ]
-   ]
-  },
-  {
-   "id": "apollo-and-marsyas",
-   "ad": "Apollon ve Marsyas",
-   "ozgun": "Apollo and Marsyas",
-   "tur": "mitoloji",
-   "ozet": "Satir Marsyas müzik yarışmasında tanrı Apollon'a meydan okur, yenilir ve cezası olarak canlı canlı derisi yüzülür.",
-   "kaynak": "Ovidius, Dönüşümler (yarışmanın ayrıntıları için ayrıca Apollodoros ve Hyginus gibi antik mitoloji derleyicileri)",
-   "hikaye": [
-    "Antik anlatılara göre çifte flütü (aulos) tanrıça Athena icat etmiş, ancak çalarken yanaklarının şiştiğini ve yüzünün çirkinleştiğini görünce onu atıp lanetlemiştir. Frigyalı satir Marsyas flütü bulur, ustalıkla çalmayı öğrenir ve sonunda kendini, lir çalan müzik tanrısı Apollon'dan daha iyi bir müzisyen sanacak kadar kibre kapılır.",
-    "Mitoloji derleyicilerine göre ikisi, galibin yenilene dilediğini yapması koşuluyla yarışır; hakemlik çoğunlukla Musalara verilir. Apollon, lirini ters çevirerek çalıp şarkı söyler ve Marsyas'tan da aynısını ister. Flütle bu yapılamayacağı için Marsyas yenilir. Ovidius yarışmayı kısaca geçer, asıl olarak cezaya odaklanır: Apollon satirin canlı canlı derisini yüzer (Apollodoros'a göre onu önce bir çam ağacına astırır). Marsyas'ın acı çığlıklarına karşın deri vücudundan sıyrılır, kaslar ve damarlar açığa çıkar.",
-    "Ovidius'a göre ormanların tanrıları, faunlar, satirler ve nimfalar Marsyas'a ağlar; dökülen gözyaşlarından onun adını taşıyan berrak bir ırmak doğar.",
-    "Hikâye, tanrılara karşı kibrin (hybris) cezalandırılmasının en sert örneklerinden biridir. Rönesans'ta Yeni Platoncu düşünce bu hikâyede, Apollon'un lirinin simgelediği ilahi ve akli uyumun, flütün temsil ettiği bedensel ve hayvani tutkulara üstün gelişini de görmüştür. Ayrıca derinin yüzülmesi, ruhun bedenden arınması olarak yorumlanmıştır."
-   ],
-   "tanima": [
-    "Defne çelengi taşıyan, genç ve çoğunlukla çıplak ya da pelerinli Apollon; elinde lir, Rönesans resimlerinde ise sıklıkla bir yaylı çalgı (lira da braccio, viyola) veya derisini yüzdüğü sahnelerde bıçak",
-    "Keçi bacaklı ya da sivri kulaklı, sakallı satir Marsyas; elinde çifte flüt veya ressamların Pan'la karıştırmasından kaynaklanan Pan flütü (syrinx)",
-    "İki ana sahne tipi: sakin bir yarışma sahnesi ya da Marsyas'ın bir ağaca, çoğu zaman baş aşağı bağlandığı, acıyla haykırdığı derisini yüzme sahnesi",
-    "Yere atılmış ya da ağaca asılmış flüt",
-    "Arka planda ağlayan ve dehşete düşen satirler, faunlar ve nimfalar; bazen hakem olarak Musalar",
-    "Kimi resimlerde eşek kulaklı Kral Midas; bu figür aslında Apollon ile Pan arasındaki başka bir yarışmaya aittir ve ressamlar bu iki hikâyeyi sıkça birleştirmiştir"
-   ],
-   "eserler": [
-    [
-     "Q673112",
-     "pietro-perugino"
-    ],
-    [
-     "Q78638248",
-     "bartolomeo-manfredi"
-    ],
-    [
-     "Q97185664",
-     "luca-giordano"
-    ],
-    [
-     "Q85606274",
-     "luca-giordano"
-    ],
-    [
-     "Q28093459",
-     "dirck-van-baburen"
-    ],
-    [
-     "Q119951811",
-     "salvator-rosa"
     ]
    ]
   },
@@ -8519,6 +8657,50 @@
    ]
   },
   {
+   "id": "narcissus",
+   "ad": "Narkissos (Narkissos ve Ekho)",
+   "ozgun": "Narcissus",
+   "tur": "mitoloji",
+   "ozet": "Sevenlerini reddeden güzel genç Narkissos, sudaki yansımasına âşık olur ve ona kavuşamadan eriyip gider; yerinde nergis çiçeği biter.",
+   "kaynak": "Ovidius, Dönüşümler",
+   "hikaye": [
+    "Narkissos, ırmak tanrısı Kephisos ile su perisi Leiriope'nin oğludur. Kâhin Teiresias, annesine oğlunun ancak \"kendini tanımazsa\" uzun yaşayacağını söyler. Narkissos büyüyüp olağanüstü güzel bir genç olur. Pek çok genç kız ve erkek ona tutulur, ama o kibirle hepsini geri çevirir.",
+    "Onu sevenlerden biri de peri Ekho'dur. Ekho, Jüpiter'in sevgilileri kaçabilsin diye Juno'yu (Hera'yı) laf kalabalığıyla oyalamıştır. Bu yüzden tanrıça onu yalnızca duyduğu son sözleri tekrarlamakla cezalandırır. Ormanda Narkissos'a yaklaşan Ekho sert biçimde reddedilir. Utancından mağaralara çekilir, acıdan erir ve kemikleri taşa döner. Ondan geriye yalnızca sesi kalır.",
+    "Reddedilenlerden biri, Narkissos da sevdiğine kavuşamasın diye beddua eder ve intikam tanrıçası Nemesis bu duayı işitir. Avdan yorgun düşen Narkissos, kimsenin bozmadığı berrak bir pınardan su içerken yansımasını görür ve ona âşık olur. Sonunda sevdiğinin kendisi olduğunu anlar, ama kendinden ayrılamaz. Yiyip içmeden erir. Ekho onun son \"elveda\"sını tekrarlar. Ovidius'a göre Narkissos yeraltında bile Styks'in sularında kendini seyretmeyi sürdürür. Su perileri ölü yakma ateşini hazırladığında beden ortada yoktur. Yerinde, ortası sarı, yaprakları beyaz bir çiçek, nergis bitmiştir.",
+    "Hikâye kibir, kendine hayranlık ve karşılıksız aşk üzerine güçlü bir ibret öyküsüdür. Resim sanatında yansıma, bakış ve yanılsama temalarını işlemek için sık kullanılmıştır. Psikolojideki \"narsisizm\" kavramı da adını bu öyküden alır. Pausanias gibi başka antik yazarlarda farklı anlatılar da vardır. Örneğin bir anlatıya göre Narkissos, ölen ikiz kız kardeşinin yüzünü sudaki kendi yansımasında görerek avunur. Ancak resimlerdeki yerleşik anlatı Ovidius'unkidir."
+   ],
+   "tanima": [
+    "Bir su kenarında diz çökmüş ya da suya eğilmiş, kendi yansımasına dalmış genç ve güzel bir erkek",
+    "Durgun, ayna gibi bir pınar veya göl ile sudaki yansıma; kompozisyon çoğu zaman genç ile yansıması arasında simetri kurar",
+    "Arka planda ya da kayalıklar arasında solgun, eriyip giden veya taşa dönüşmekte olan peri Ekho",
+    "Nergis çiçekleri; özellikle ölmüş ya da ölmekte olan Narkissos'un yanında",
+    "Su başında cansız yatan Narkissos; bazen yanında meşale tutan Eros (Cupid)",
+    "Av teması: yanında bırakılmış yay, ok, mızrak ya da av köpeği"
+   ],
+   "eserler": [
+    [
+     "Q746716",
+     "caravaggio"
+    ],
+    [
+     "Q5817081",
+     "nicolas-poussin"
+    ],
+    [
+     "Q19913204",
+     "alexandre-cabanel"
+    ],
+    [
+     "max-ernst|The Nymph Echo",
+     "max-ernst"
+    ],
+    [
+     "Q106471832",
+     "dirck-van-baburen"
+    ]
+   ]
+  },
+  {
    "id": "saint-andrew",
    "ad": "Aziz Andreas",
    "ozgun": "Saint Andrew",
@@ -8737,6 +8919,49 @@
    ]
   },
   {
+   "id": "silenus",
+   "ad": "Sarhoş Silenos",
+   "ozgun": "Silenus",
+   "tur": "mitoloji",
+   "ozet": "Şarap tanrısı Dionysos'un yaşlı hocası ve yoldaşı Silenos, ressamlarca çoğunlukla sarhoşluktan ayakta duramayan, satirlerin taşıdığı şişman bir ihtiyar olarak tasvir edilir.",
+   "kaynak": "Ovidius, Dönüşümler · Vergilius, Eklogalar (Çoban Şiirleri)",
+   "hikaye": [
+    "Yunan mitolojisinde Silenos, şarap tanrısı Dionysos'un (Romalılarda Bacchus/Baküs) yaşlı eğiticisi ve alayının en kıdemli üyesidir. Bazı geleneklerde satirlerin babası sayılır. Görünüşü çirkin, karnı şiş ve kafası keldir. Hep sarhoştur ama aynı zamanda gizli bilgilere sahip bir bilge olarak anılır.",
+    "Ovidius'un Dönüşümler'inde anlatıldığına göre Frigyalı köylüler, sarhoş hâlde yolunu kaybetmiş Silenos'u yakalayıp çiçek zincirleriyle bağlar ve Kral Midas'a götürür. Midas onu tanır, on gün boyunca şölenlerle ağırlar ve sonra Dionysos'a geri teslim eder. Hocasına kavuşmaktan memnun kalan tanrı, Midas'a bir dilek hakkı verir. Kral, dokunduğu her şeyin altına dönüşmesini ister. Ünlü \"altın dokunuş\" öyküsü buradan doğar.",
+    "Vergilius'un Eklogalar'ında ise iki genç çoban ile su perisi Aigle, sarhoş uyuyan Silenos'u çelenklerle bağlar ve yüzünü dut suyuyla boyar. Bunun üzerine Silenos onlara dünyanın yaratılışını ve eski efsaneleri anlatan bir şarkı söyler.",
+    "Barok dönemde Silenos, özellikle Rubens çevresinde ve Ribera'da sevilen bir konu oldu. Ressamlar onu tek bir öykü sahnesinden çok, bedensel aşırılığın, şehvetin ve şarabın kişileştirilmesi olarak resmetti. Bu yorum, ressamlara yaşlı ve şişman çıplak bedeni gerçekçi biçimde işleme fırsatı da verdi."
+   ],
+   "tanima": [
+    "Kel, sakallı, göbekli, çoğunlukla çıplak ya da yarı çıplak yaşlı bir adam",
+    "Sarhoşluktan sendeleyen ya da yere yayılmış hâl; çoğu zaman satirler veya bakkhalar onu kollarından tutup taşır",
+    "Elinde şarap kadehi, kâse ya da tulum; yanında şarap teknesi veya testi",
+    "Başında asma yaprakları ve üzüm salkımlarından bir çelenk",
+    "Yanında bindiği eşek; çevresinde keçi ayaklı satirler, Pan ya da Dionysos alayından figürler"
+   ],
+   "eserler": [
+    [
+     "Q3960488",
+     "anthony-van-dyck"
+    ],
+    [
+     "Q17652393",
+     "jusepe-de-ribera"
+    ],
+    [
+     "jusepe-de-ribera|Drunken Silenus",
+     "jusepe-de-ribera"
+    ],
+    [
+     "jusepe-de-ribera|Silenus at the Wine Vat",
+     "jusepe-de-ribera"
+    ],
+    [
+     "jusepe-de-ribera|Silenus",
+     "jusepe-de-ribera"
+    ]
+   ]
+  },
+  {
    "id": "saint-agnes",
    "ad": "Aziz Agnes",
    "ozgun": "Saint Agnes",
@@ -8942,84 +9167,6 @@
     [
      "Q24049413",
      "mattia-preti"
-    ]
-   ]
-  },
-  {
-   "id": "bacchus-and-ariadne",
-   "ad": "Bakkhus ve Ariadne",
-   "ozgun": "Bacchus and Ariadne",
-   "tur": "mitoloji",
-   "ozet": "Theseus'un Naksos Adası'nda terk ettiği Giritli prenses Ariadne'yi şarap tanrısı Bakkhus (Dionysos) bulur, ona âşık olur ve tacını gökyüzünde bir takımyıldıza dönüştürerek onu ölümsüzleştirir.",
-   "kaynak": "Ovidius, Dönüşümler (ayrıca Ovidius, Aşk Sanatı; Heroides; Catullus)",
-   "hikaye": [
-    "Ariadne, Girit kralı Minos'un kızıdır. Atinalı kahraman Theseus, Labirent'teki Minotauros'u öldürmeye geldiğinde Ariadne ona âşık olur ve verdiği bir ip yumağı sayesinde Theseus'un Labirent'ten çıkış yolunu bulmasını sağlar. Ardından Theseus'la birlikte Girit'ten kaçar.",
-    "Yolda uğradıkları Naksos (antik kaynaklarda Dia) Adası'nda Theseus, Ariadne'yi uyurken bırakıp gemisiyle uzaklaşır. Uyanan Ariadne kendini ıssız bir kıyıda yapayalnız bulur ve terk edilişine ağıt yakar. Ovidius, Aşk Sanatı'nda bu anı canlı biçimde anlatır: Bakkhus coşkulu alayıyla, yani satirler, sarhoş Silenos ve zil çalan mainadlarla birlikte kıyıya gelir. Kaplanların ya da panterlerin çektiği arabasından atlayarak korkmuş Ariadne'ye yaklaşır ve ona eşi olacağına dair güvence verir.",
-    "Dönüşümler'de ise öykünün sonu kısaca anlatılır: Bakkhus, terk edilmiş Ariadne'ye yardım eder ve onun sonsuza dek anılması için başındaki tacı alıp göğe fırlatır. Taçtaki taşlar yıldızlara dönüşür ve Kuzey Tacı takımyıldızını oluşturur.",
-    "Konu, ihanetten ve çaresizlikten tanrısal aşka ve ölümsüzlüğe geçişi simgeler. Rönesans ve Barok ressamları için bu sahne hem hareketli, kalabalık bir şenlik alayı hem de aşk, evlilik ve göğe yükseliş temalarını bir araya getirme fırsatı sunmuştur. Bu nedenle sahne zafer alayı biçiminde ya da Venüs'ün aracılık ettiği bir evlilik sahnesi olarak sıkça resmedilmiştir."
-   ],
-   "tanima": [
-    "Deniz kıyısında yalnız ve çoğu zaman şaşkın ya da korkmuş bir genç kadın (Ariadne); uzakta Theseus'un açılan gemisi",
-    "Sarmaşık ya da asma yapraklarından çelenk takan genç tanrı Bakkhus; elinde üzüm, şarap kabı veya ucu çam kozalaklı asa (thyrsos)",
-    "Kaplanlar, panterler ya da leoparlar tarafından çekilen araba",
-    "Coşkulu tanrı alayı: satirler, zil ve tef çalan mainadlar (bakkhalar), eşeğe binmiş şişman ve sarhoş Silenos",
-    "Ariadne'nin başının üzerinde yıldızlara dönüşen taç; bazen tacı Bakkhus'un ya da Venüs'ün takması veya evlilik simgesi olarak yüzük uzatılması"
-   ],
-   "eserler": [
-    [
-     "Q1206860",
-     "titian"
-    ],
-    [
-     "Q9372115",
-     "tintoretto"
-    ],
-    [
-     "giovanni-battista-tiepolo|Bacchus and Ariadne",
-     "giovanni-battista-tiepolo"
-    ],
-    [
-     "Q3998957",
-     "annibale-carracci"
-    ]
-   ]
-  },
-  {
-   "id": "diana-and-callisto",
-   "ad": "Diana ve Kallisto",
-   "ozgun": "Diana and Callisto",
-   "tur": "mitoloji",
-   "ozet": "Avcı tanrıça Diana, Jüpiter tarafından kandırılıp gebe bırakılan perisi Kallisto'nun hamileliğini yıkanma sırasında fark eder ve onu topluluğundan kovar.",
-   "kaynak": "Ovidius, Dönüşümler",
-   "hikaye": [
-    "Kallisto, Arkadyalı bir peridir ve bekâret yemini etmiş avcı tanrıça Diana'nın (Yunanca Artemis) en sevdiği yoldaşlarındandır. Ovidius'a göre Jüpiter (Zeus) onu ormanda yalnız görür ve şüphe uyandırmamak için Diana kılığına girerek yanına yaklaşır. Kallisto onu tanrıçası sanar; gerçeği anladığında direnmeye çalışır ama karşı koyamaz. Bu olaydan sonra utancını saklayarak Diana'nın topluluğunda yaşamayı sürdürür.",
-    "Aylar sonra, sıcak bir günde Diana ve perileri bir pınarda yıkanmaya karar verir. Kallisto soyunmakta ağır davranır; öteki periler onun giysilerini çıkarınca gebeliği ortaya çıkar. Diana öfkeyle onu kutsal sudan ve kendi topluluğundan uzaklaştırır. Resimlerde en çok işlenen an budur: tanrıçanın buyurgan jesti ve Kallisto'nun teşhir edilip yargılanışı.",
-    "Hikâye burada bitmez. Kallisto, Arkas adında bir oğul doğurur. Kıskançlıkla öfkelenen Juno (Hera) onu bir ayıya dönüştürür. Yıllar sonra avcı olan Arkas ormanda bu ayıyla karşılaşır ve annesini tanımadan onu öldürmek üzereyken Jüpiter araya girer. Tanrı ikisini göğe çıkarıp birbirine komşu yıldız kümeleri yapar; Kallisto Büyük Ayı olur. Juno'nun ricası üzerine Okeanos ile Tethys, bu takımyıldızın okyanusa inip yıkanmasına izin vermez. Bu yüzden takımyıldız hiç batmaz.",
-    "Konu, ressamlara pınar başında çıplak kadın figürleri çizme imkânı verirken masumiyet, aldatılma, haksız cezalandırma ve iffet gibi ahlaki temaları da gündeme getirdi. Rönesans ve Barok dönemlerde özellikle Venedik ve Flaman resminde sevilen bir sahne oldu."
-   ],
-   "tanima": [
-    "Alnında hilal biçimli ay takısı bulunan, yay ve sadakla tasvir edilen, kovucu bir jestle eliyle işaret eden Diana",
-    "Periler tarafından soyulan ya da tutulan, karnı belirgin, utanç içinde yüzünü veya bedenini saklamaya çalışan Kallisto",
-    "Pınar, çeşme ya da havuz başında, orman içinde geçen yıkanma sahnesi",
-    "Çevrede yıkanan ya da şaşkınlıkla bakan çıplak periler topluluğu",
-    "Av köpekleri, yaylar, sadaklar ve yere bırakılmış giysiler gibi av atribüleri"
-   ],
-   "eserler": [
-    [
-     "Q4161055",
-     "titian"
-    ],
-    [
-     "Q3706769",
-     "peter-paul-rubens"
-    ],
-    [
-     "Q123456096",
-     "sebastiano-ricci"
-    ],
-    [
-     "Q119350640",
-     "angelica-kauffman"
     ]
    ]
   },
@@ -9838,6 +9985,958 @@
     [
      "Q23929208",
      "sebastiano-ricci"
+    ]
+   ]
+  },
+  {
+   "id": "crucifixion-of-saint-peter",
+   "ad": "Aziz Petrus'un Çarmıha Gerilişi",
+   "ozgun": "Crucifixion of Saint Peter",
+   "tur": "aziz",
+   "ozet": "Havarilerin önderi Petrus'un Roma'da, kendi isteğiyle baş aşağı çarmıha gerilerek şehit edilmesi.",
+   "kaynak": "Apokrif Petrus'un İşleri; ayrıca erken Kilise geleneği ve Altın Efsane (Yeni Ahit'te, Yuhanna İncili'nde yalnızca ölümüne dair bir ima vardır)",
+   "hikaye": [
+    "Petrus, İsa'nın on iki havarisinden biri ve ilk Hıristiyan topluluğunun önderidir. Kitab-ı Mukaddes onun ölümünü anlatmaz. Yuhanna İncili'nde dirilen İsa, Petrus'a yaşlandığında ellerini uzatacağını ve başkasının onu istemediği yere götüreceğini söyler. Bu söz, Petrus'un nasıl öleceğine dair bir ima olarak yorumlanmıştır. Erken Kilise geleneği, Petrus'un Roma'da İmparator Neron döneminde Hıristiyanlara yönelik zulüm sırasında öldürüldüğünü kabul eder.",
+    "Ayrıntılı anlatı, 2. yüzyıla ait apokrif Petrus'un İşleri adlı metinden gelir. Buna göre Petrus zulümden kaçmak için Roma'dan ayrılırken yolda İsa'yla karşılaşır ve ona 'Quo vadis?' (Nereye gidiyorsun?) diye sorar. İsa, yeniden çarmıha gerilmek için Roma'ya gittiğini söyler. Utanan Petrus şehre döner ve tutuklanır. Kendini Efendisi gibi ölmeye layık görmediği için baş aşağı çarmıha gerilmeyi ister. Bu ayrıntı daha sonra Kilise yazarları ve Altın Efsane aracılığıyla yaygınlaşmıştır.",
+    "Gelenek, Petrus'un Vatikan tepesinde öldürüldüğünü ve oraya gömüldüğünü söyler. Aziz Petrus Bazilikası da onun mezarı sayılan yerin üzerine inşa edilmiştir. Bu nedenle sahne, papalığın temelini oluşturan şehitliğin ve alçakgönüllü imanın simgesidir. Rönesans ve Barok ressamları, ağır haçı kaldırmaya uğraşan cellatların fiziksel çabasını ve yaşlı azizin sükûnetini dramatik bir karşıtlık içinde işlemiştir."
+   ],
+   "tanima": [
+    "Baş aşağı çevrilmiş ya da bu konuma kaldırılmakta olan bir haç",
+    "Haçta beyaz saçlı, kısa beyaz sakallı, yaşlı ve güçlü yapılı bir adam",
+    "Halat, kürek ya da kaldıraçla haçı kaldırmaya veya dikmeye çalışan cellatlar; çivi ve çekiç",
+    "Haçın dikileceği çukur ya da kayalık zemin",
+    "Çevrede Romalı askerler ve izleyiciler",
+    "Bazen yakında ya da gökte Petrus'un atribüsü olan anahtarlar"
+   ],
+   "eserler": [
+    [
+     "Q1886263",
+     "michelangelo"
+    ],
+    [
+     "Q685916",
+     "caravaggio"
+    ],
+    [
+     "Q3698229",
+     "luca-giordano"
+    ]
+   ]
+  },
+  {
+   "id": "rape-of-the-sabine-women",
+   "ad": "Sabin Kadınlarının Kaçırılışı",
+   "ozgun": "Rape of the Sabine Women",
+   "tur": "tarih_edebiyat",
+   "ozet": "Kadın ve dolayısıyla gelecek kuşak sıkıntısı çeken yeni kurulmuş Roma'nın erkekleri, Romulus'un düzenlediği bir şenlik sırasında komşu Sabin halkının genç kızlarını zorla kaçırır.",
+   "kaynak": "Titus Livius, Roma Tarihi (Ab Urbe Condita) · Plutarkhos, Paralel Hayatlar (Romulus) · ayrıca Ovidius, Aşk Sanatı (Ars Amatoria)",
+   "hikaye": [
+    "Livius'un anlatısına göre Romulus, Roma'yı kurduktan sonra şehri hızla erkek nüfusla doldurdu, ancak kadın sayısı çok azdı. Bu yüzden şehrin kendi soyunu sürdürüp sürdüremeyeceği belirsizdi. Romulus komşu halklara elçiler gönderip evlilik bağı kurmayı önerdi, fakat bu halklar yeni ve itibarsız sayılan bu topluluğu küçümseyerek teklifi reddetti.",
+    "Bunun üzerine Romulus bir hile tasarladı. Tanrı Consus (Neptunus Equester ile ilişkilendirilir) onuruna Consualia adlı görkemli bir bayram ve oyunlar düzenleyerek komşuları, özellikle Sabinleri aileleriyle birlikte davet etti. Gösteriler sürerken önceden kararlaştırılmış bir işaret verildi ve Romalı gençler genç kızları yakalayıp kaçırdı. Plutarkhos'a göre işaret, Romulus'un ayağa kalkıp pelerinini açıp yeniden toplamasıydı. Livius, Romulus'un kaçırılan kadınlara yasal evlilik, yurttaşlık hakları ve saygı vaat ettiğini de aktarır.",
+    "Kaçırılan kızların halkları savaş açtı. En çetin çatışma, Titus Tatius komutasındaki Sabinlerle yaşandı. İki ordu çarpışırken Sabin kadınları saçları dağınık hâlde babaları ile kocalarının arasına atılıp kan dökülmesini durdurmaları için yalvardı. Sonunda barış yapıldı, iki halk birleşti ve Romulus ile Tatius birlikte hüküm sürdü.",
+    "Burada İngilizcedeki 'rape' sözcüğü, Latince raptio'dan, yani 'kaçırma, zorla alıp götürme' anlamından gelir. Konu, Rönesans ve Barok dönemde hem Roma'nın kökenini anlatan bir tarih sahnesi hem de hareketli, çok figürlü kompozisyonlar için bir fırsat olarak sevildi. Kadınların araya girişi ise ayrı bir konu olarak da resmedilir."
+   ],
+   "tanima": [
+    "Kadınları kollarında havaya kaldırarak taşıyan, çoğu zırhlı ya da antik giysili Romalı erkekler",
+    "Yüksek bir kürsü ya da basamakta durup pelerinini kaldırarak işaret veren Romulus",
+    "Klasik tapınak cepheleri ve sütunlarla çevrili, antik Roma kentini çağrıştıran açık bir meydan",
+    "Çığlık atan, direnen ya da kurtulmaya çalışan kadınlar; kaçışan yaşlılar, çocuklar ve çaresiz babalar",
+    "Kalabalık, hareketli, çapraz hatlarla kurulmuş dramatik bir kargaşa ortamı"
+   ],
+   "eserler": [
+    [
+     "Q27096409",
+     "nicolas-poussin"
+    ],
+    [
+     "Q140756320",
+     "luca-giordano"
+    ],
+    [
+     "luca-giordano|The Abduction of the Sabine Women",
+     "luca-giordano"
+    ]
+   ]
+  },
+  {
+   "id": "apollo-and-the-muses",
+   "ad": "Apollon ve Musalar",
+   "ozgun": "Apollo and the Muses",
+   "tur": "mitoloji",
+   "ozet": "Sanatların koruyucusu Apollon'un, şiir, müzik ve bilimlere ilham veren dokuz Musa ile birlikte Helikon ya da Parnassos Dağı'nda müzik yapması.",
+   "kaynak": "Hesiodos, Theogonia · Homeros, İlyada · Ovidius, Dönüşümler",
+   "hikaye": [
+    "Bu konu tek bir olayı değil, Apollon'un Musaların önderi (Apollon Musagetes) olarak dokuz kız kardeşle birlikte bulunduğu ideal bir sahneyi anlatır. Hesiodos, Theogonia'da Musaların Zeus ile Bellek tanrıçası Mnemosyne'nin kızları olduğunu söyler. Onları Helikon Dağı'nda dans edip şarkı söylerken anlatır ve kendisine şiir yeteneğini de onların bağışladığını belirtir. Homeros'un İlyada'sında ise tanrıların şöleninde Apollon lir çalar, Musalar da ona şarkılarıyla eşlik eder.",
+    "Musaların yurdu olarak iki dağ öne çıkar. Helikon'da, kanatlı at Pegasos'un toynağının açtığı Hippokrene pınarı bulunur. Ovidius, Dönüşümler'de Minerva'nın bu pınarı görmek için Musaları ziyaret ettiğini anlatır. Delfi'nin üzerindeki Parnassos Dağı ve oradaki Kastalia pınarı ise Apollon'un kehanet merkezine yakınlığı nedeniyle onunla özdeşleşmiştir. Bu pınarların suyu şairlere ilham veren kaynak sayılırdı.",
+    "Antik metinler Musaların görev alanlarını tam bir sistem hâlinde vermez. Her Musa'nın belirli bir sanata bağlanması ve kendine özgü eşyalarla tasvir edilmesi, büyük ölçüde Roma dönemi ile Rönesans'ta, özellikle Cesare Ripa'nın İkonologia'sı gibi kitaplarda yerleşmiş sonraki bir gelenektir. Rönesans'tan itibaren konu, sanatın ve şiirin yüceliğini simgeleyen bir alegori olarak sevilmiştir. Ressamlar onu ya Apollon'un merkezde yer aldığı figürlü bir kompozisyon olarak ya da Claude Lorrain'deki gibi geniş, şiirsel bir manzaranın içine yerleştirilmiş küçük figürlerle işlemiştir."
+   ],
+   "tanima": [
+    "Defne tacı takan, genç ve genellikle yarı çıplak Apollon; elinde lir, kithara ya da Rönesans resimlerinde bir yaylı çalgı bulunur",
+    "Apollon'un çevresinde toplanmış dokuz genç kadın, yani Musalar",
+    "Musaların eşyaları (sonraki gelenek): Kalliope'de yazı tableti ya da kitap, Kleio'da parşömen ya da trompet, Euterpe'de flüt, Thaleia'da komedi maskesi, Melpomene'de trajedi maskesi, Terpsikhore ile Erato'da lir, Urania'da gök küresi; Polyhymnia ise düşünceli bir duruşla gösterilir",
+    "Dağlık, pastoral bir manzara ve defne ağaçları",
+    "Bir pınar (Hippokrene ya da Kastalia) ve kimi zaman kanatlı at Pegasos"
+   ],
+   "eserler": [
+    [
+     "claude-lorrain|Landscape with Apollo and the Muses",
+     "claude-lorrain"
+    ],
+    [
+     "Q20538816",
+     "claude-lorrain"
+    ],
+    [
+     "Q2841156",
+     "gustave-moreau"
+    ]
+   ]
+  },
+  {
+   "id": "hercules-and-omphale",
+   "ad": "Herkül ve Omphale",
+   "ozgun": "Hercules and Omphale",
+   "tur": "mitoloji",
+   "ozet": "İşlediği bir cinayetin kefareti olarak köle diye satılan Herkül'ün Lidya kraliçesi Omphale'nin hizmetine girmesi ve sonraki anlatılarda rollerin tersine dönerek kahramanın kadın giysileriyle yün eğirmesi.",
+   "kaynak": "Apollodoros, Kütüphane; Ovidius, Kahramanlık Mektupları ve Fasti",
+   "hikaye": [
+    "Herkül, bir delilik nöbetinde Eurytos'un oğlu İphitos'u öldürür ve ardından ağır bir hastalığa yakalanır. Arınmak için Delfi'ye gider. Kâhin kadın onu yanıtsız bırakınca Herkül kutsal üçayağı kaçırmaya kalkar ve Apollon'la çatışır. Zeus kavgayı yıldırımla ayırır. Sonunda verilen kehanete göre Herkül köle olarak satılacak, belli bir süre hizmet edecek ve bedeli kurbanın ailesine ödenecektir. Apollodoros bu süreyi üç yıl olarak verir. Hermes onu Lidya kraliçesi Omphale'ye satar.",
+    "Apollodoros'a göre Herkül bu hizmet sırasında da kahramanlıklarını sürdürür. Örneğin yol kesen Kerkoplar'ı yakalar ve bağcılığa zorlayan Syleus'u öldürür. Konuyu resimde tanınır kılan ayrıntılar ise başta Ovidius olmak üzere Latin şairlerinden ve Lukianos gibi yazarlardan gelir. Bu anlatılarda Omphale kahramanın aslan postunu giyip topuzunu taşır. Herkül ise kadın giysileri içinde kraliçenin ayakları dibinde iğ ve öreke ile yün eğirir.",
+    "Ovidius'un Fasti'sinde bu giysi değişimi gülünç bir öyküye de bağlanır. Omphale'ye yaklaşmak isteyen Faunus karanlık mağarada giysilerden yanılır ve Herkül'e sarkıntılık eder. Bazı geleneklerde hizmet süresi bitince Omphale ile Herkül'ün birleştiği ve çocukları olduğu anlatılır.",
+    "Konu Rönesans'tan itibaren aşkın ve kadının en güçlü erkeğe bile boyun eğdirebileceğinin simgesi olarak sevildi. Barok ve özellikle Rokoko dönemlerinde ressamlar onu çoğunlukla erotik, şakacı ve ironik bir ton içinde işlediler."
+   ],
+   "tanima": [
+    "Kaslı, sakallı Herkül'ün elinde iğ ve öreke ya da yün yumağı tutması; bazen kadın giysileri veya takılarıyla görülmesi",
+    "Omphale'nin aslan postuna bürünmüş olması ve Herkül'ün topuzunu taşıması",
+    "Herkül'ün Omphale'nin ayakları dibinde ya da onun karşısında boyun eğmiş bir tavırla oturması",
+    "Çevrede eğirme işiyle uğraşan nedimeler veya Herkül'e gülen hizmetkârlar",
+    "Sahneye eşlik eden Eros/Amor figürleri; bunların kimi zaman kahramanın silahlarıyla oynaması",
+    "Saray ya da yatak odası gibi kapalı, lüks bir mekân"
+   ],
+   "eserler": [
+    [
+     "Q116689348",
+     "sebastiano-ricci"
+    ],
+    [
+     "Q12900239",
+     "francois-boucher"
+    ],
+    [
+     "Q134721319",
+     "sebastiano-ricci"
+    ]
+   ]
+  },
+  {
+   "id": "birth-of-saint-john-the-baptist",
+   "ad": "Vaftizci Yahya'nın Doğuşu",
+   "ozgun": "Birth of Saint John the Baptist",
+   "tur": "aziz",
+   "ozet": "Yaşlı ve kısır Elizabet'in, meleğin müjdesi üzerine Vaftizci Yahya'yı doğurması ve dilsiz kalan Zekeriya'nın oğlunun adını yazdığı anda yeniden konuşmaya başlaması.",
+   "kaynak": "Yeni Ahit, Luka İncili",
+   "hikaye": [
+    "Luka İncili'ne göre kâhin Zekeriya ile karısı Elizabet doğru ve dindar insanlardı, ama Elizabet kısır olduğu ve ikisi de yaşlandığı için çocukları olmamıştı. Zekeriya tapınakta buhur yakarken melek Cebrail ona göründü. Melek, Elizabet'in bir oğul doğuracağını ve adının Yahya konacağını müjdeledi. Zekeriya bu habere inanmakta güçlük çekince, sözler gerçekleşene dek dilsiz kalacağı bildirildi.",
+    "Elizabet gebe kaldı. Altıncı ayında akrabası Meryem onu ziyaret etti ve bir süre yanında kaldı. Vakti gelince Elizabet bir oğul doğurdu, komşuları ve akrabaları da Tanrı'nın ona gösterdiği merhamete sevindiler. Sekizinci gün çocuğu sünnet etmeye geldiklerinde ona babasının adını, Zekeriya'yı vermek istediler. Elizabet ise adının Yahya olacağını söyledi. Akrabalar ailede bu adı taşıyan kimse olmadığını belirterek işaretle Zekeriya'ya sordular. Zekeriya bir yazı levhası istedi ve 'Adı Yahya'dır' diye yazdı. O anda dili çözüldü ve Tanrı'yı öven bir ilahi söylemeye başladı.",
+    "Sonraki gelenek, örneğin Altın Efsane, Meryem'in doğuma kadar Elizabet'in yanında kaldığını ve yeni doğan çocuğu kucağına aldığını anlatır. Bu ayrıntı İncil'de yer almaz, ama resimlere sık sık girmiştir.",
+    "Konu önemlidir, çünkü Yahya, İsa'nın yolunu hazırlayan son peygamber olarak görülür. Doğumu, tıpkı İsa'nınki gibi meleğin müjdesiyle gelen mucizevi bir olay sayılır. Kilise takviminde 24 Haziran'da kutlanan bu doğum, ressamlara kutsal bir olayı sıcak, gündelik bir ev ortamında işleme fırsatı vermiştir."
+   ],
+   "tanima": [
+    "Arka planda yatağında uzanan yaşlı bir kadın (Elizabet) ve ona yiyecek ya da içecek getiren hizmetçi kadınlar",
+    "Ön planda yeni doğan bebeği leğende yıkayan, kundaklayan ya da ateş başında havlu ısıtan kadınlar",
+    "Bir köşede oturmuş, levhaya ya da kâğıda bebeğin adını yazan yaşlı, sakallı bir adam (Zekeriya)",
+    "Bazen bebeği kucağında tutan, haleli genç bir kadın: Meryem (sonraki geleneğe dayanır)",
+    "Leğen, ibrik, havlular, beşik gibi eşyalarla dolu, dönemin evlerini yansıtan bir yatak odası",
+    "Doğum anı ile sekizinci gündeki ad koyma sahnesi çoğu kez aynı resimde birleştirilir"
+   ],
+   "eserler": [
+    [
+     "Q11789743",
+     "jan-van-eyck"
+    ],
+    [
+     "Q3873251",
+     "jacopo-pontormo"
+    ],
+    [
+     "Q2835885",
+     "tintoretto"
+    ]
+   ]
+  },
+  {
+   "id": "death-of-the-virgin",
+   "ad": "Meryem'in Ölümü (Doğu geleneğinde Meryem'in Uykuya Dalışı / Koimesis)",
+   "ozgun": "Death of the Virgin",
+   "tur": "yeni_ahit",
+   "ozet": "Meryem'in, her yandan mucizevi biçimde bir araya getirilen havarilerin arasında ölümünü ve ruhunun İsa tarafından teslim alınmasını anlatan sahne.",
+   "kaynak": "Kitab-ı Mukaddes'te yer almaz; apokrif \"Transitus Mariae\" (Meryem'in Göçü) metinleri ve Jacobus de Voragine'nin Altın Efsane'si",
+   "hikaye": [
+    "Yeni Ahit, Meryem'in hayatının sonu hakkında hiçbir şey söylemez. Elçilerin İşleri'nde havarilerle birlikte dua ederken anılması, Meryem'in Kitab-ı Mukaddes'te geçen son izidir. Ölümüne dair anlatı, erken Hristiyanlık döneminde yazılan apokrif \"Transitus Mariae\" metinlerinden gelir. Batı'da yaygınlaşması ise büyük ölçüde 13. yüzyılda derlenen Altın Efsane sayesinde olmuştur.",
+    "Bu geleneğe göre yaşlanan Meryem'e bir melek görünür, ona bir hurma dalı verir ve ölümünün yaklaştığını bildirir. Meryem son kez havarileri görmek ister. Dünyanın dört bir yanında vaaz eden havariler bulutlarla mucizevi biçimde Kudüs'e, onun evine taşınır. Bazı anlatımlarda Tomas geç kalır. Meryem yatağında, havarilerin duaları arasında huzurla can verir. İsa meleklerle birlikte gelerek annesinin ruhunu kollarına alır.",
+    "Anlatıların devamında havariler cenazeyi törenle mezara taşır. Sonraki gelenek, bedenin üç gün sonra göğe alındığını ekler. Bu olay Meryem'in Göğe Alınışı olarak bilinir ve Katolik Kilisesi 1950'de bunu dogma olarak ilan etmiştir. Ortodoks dünyasında ise Meryem'in ölümü, ölümden çok bir uykuya dalış anlamına gelen Koimesis adıyla kutlanır; bu bayram göğe alınış inancını da kapsar.",
+    "Konu, Meryem kültünün gelişmesiyle Orta Çağ'dan itibaren kilise sanatında sevilen bir sahne hâline geldi. Ressamlar onu ya ilahi bir geçiş ya da gerçekçi bir ölüm döşeği sahnesi olarak işlediler. Kuzey Avrupa sanatçıları ise ölüm anındaki dinî ritüellerin ayrıntılarına özellikle yer verdiler."
+   ],
+   "tanima": [
+    "Yatakta ya da sedirde uzanan, ölmek üzere olan veya ölmüş yaşlıca Meryem",
+    "Yatağın çevresinde toplanmış, yas tutan ya da dua eden on iki havari",
+    "Çoğunlukla rahip giysileri içinde, dua kitabı veya kutsal su serpme fırçasıyla ayini yöneten Petrus",
+    "Yatağa yakın duran genç ve sakalsız Yuhanna; kimi zaman meleğin getirdiği hurma dalını taşır",
+    "Kuzey Avrupa geleneğinde Meryem'in eline tutuşturulan yanan mum; ayrıca buhurdan ve kutsal su kabı",
+    "Bizans/Ortodoks Koimesis tasvirlerinde, Meryem'in ruhunu kundaklı küçük bir çocuk olarak kucağında tutan İsa"
+   ],
+   "eserler": [
+    [
+     "albrecht-durer|The Death of the Virgin, from the The Life of the Virgin",
+     "albrecht-durer"
+    ],
+    [
+     "Q3863232",
+     "pieter-bruegel-yasl"
+    ],
+    [
+     "Q597114",
+     "caravaggio"
+    ]
+   ]
+  },
+  {
+   "id": "rebecca-at-the-well",
+   "ad": "Rebeka Kuyu Başında",
+   "ozgun": "Rebecca at the Well",
+   "tur": "eski_ahit",
+   "ozet": "İbrahim'in oğlu İshak'a eş bulmak için yola çıkan hizmetkâr, kuyu başında kendisine ve develerine su veren genç Rebeka'yı Tanrı'nın seçtiği gelin olarak tanır.",
+   "kaynak": "Eski Ahit, Yaratılış",
+   "hikaye": [
+    "Yaşlanan İbrahim, oğlu İshak'ın Kenanlı bir kadınla evlenmesini istemez. Bu yüzden evinin en kıdemli hizmetkârını kendi akrabalarının yaşadığı Mezopotamya'ya, Nahor kentine gönderir. Yaratılış kitabındaki anlatıda bu hizmetkârın adı geçmez. Onu Eliezer olarak adlandırmak daha sonraki yorum geleneğine dayanır ve sanatta da yaygın biçimde böyle anılır.",
+    "Hizmetkâr on deveyle akşamüstü kentin dışındaki kuyuya varır. Kadınların su çekmeye geldiği bu saatte bir işaret ister: Kendisine su veren ve develerini de sulamayı öneren kız, Tanrı'nın İshak için seçtiği kişi olacaktır. Duası bitmeden omzunda testisiyle Rebeka gelir. Rebeka, İbrahim'in kardeşi Nahor'un torunu, Betuel'in kızıdır. Hizmetkâra su verir, sonra develeri de doyana kadar sular. Hizmetkâr ona altın bir burun halkası ve iki bilezik armağan eder.",
+    "Rebeka koşarak evine haber verir. Kardeşi Laban konuğu karşılar. Hizmetkâr başından geçenleri anlatır ve aile bu işte Tanrı'nın elini görerek evliliğe razı olur. Rebeka da gitmeyi kabul eder. Kenan'a vardığında İshak'la evlenir ve İshak, annesi Sara'nın ölümünün ardından onunla teselli bulur. Rebeka daha sonra Esav ile Yakup'un annesi olur.",
+    "Sahne, ilahi takdirin gündelik bir an içinde işleyişini ve misafirperverlik, cömertlik gibi erdemleri gösterdiği için önemlidir. Hristiyan yorumcular Rebeka'yı zaman zaman Kilise'nin ya da Meryem'in önceden işareti olarak okumuştur. Ressamlar çoğunlukla hizmetkârın mücevherleri sunduğu ya da Rebeka'nın su verdiği anı seçer. Barok dönemde bu konu zarif bir kadın figürü, egzotik giysiler ve develerle zengin bir anlatı sahnesi kurma fırsatı olarak sevilmiştir."
+   ],
+   "tanima": [
+    "Bir kuyu ya da çeşme başında, yanında su testisi bulunan genç bir kadın (Rebeka)",
+    "Ona mücevher (bilezik, burun halkası ya da küpe) uzatan ya da su içen yaşlı, sakallı bir adam (İbrahim'in hizmetkârı, gelenekte Eliezer)",
+    "Arka planda develer ve hizmetkârın yol arkadaşları",
+    "Testileriyle su almaya gelmiş, sahneyi izleyen başka genç kadınlar",
+    "Kırsal ya da kent dışı bir manzara, sıklıkla akşamüstü ışığı",
+    "Doğulu izlenimi veren giysiler, sarıklar ve hediye kapları"
+   ],
+   "eserler": [
+    [
+     "Q21722894",
+     "francesco-solimena"
+    ],
+    [
+     "Q20092326",
+     "giovanni-battista-piazzetta"
+    ],
+    [
+     "Q119891779",
+     "francesco-solimena"
+    ]
+   ]
+  },
+  {
+   "id": "marriage-at-cana",
+   "ad": "Kana'da Düğün",
+   "ozgun": "Marriage at Cana",
+   "tur": "yeni_ahit",
+   "ozet": "İsa, annesi Meryem ve öğrencileriyle davetli olduğu Kana'daki bir düğünde şarap tükenince suyu şaraba dönüştürür; bu, Yuhanna İncili'ne göre onun ilk mucizesidir.",
+   "kaynak": "Yeni Ahit, Yuhanna İncili",
+   "hikaye": [
+    "Celile'deki Kana kasabasında bir düğün yapılır. İsa'nın annesi Meryem oradadır; İsa ve öğrencileri de davetlidir. Şenlik sürerken şarap tükenir. Meryem bunu İsa'ya bildirir. İsa ona \"Kadın, benden ne istiyorsun? Benim saatim daha gelmedi\" diye karşılık verir. Meryem ise hizmetkârlara \"Size ne derse onu yapın\" der.",
+    "Orada Yahudilerin arınma törenleri için kullanılan altı taş küp vardır. İsa hizmetkârlara küpleri suyla doldurmalarını, sonra bundan biraz alıp ziyafet başkanına götürmelerini söyler. Ziyafet başkanı, suyun nereden geldiğini bilmeden, şaraba dönüşmüş suyu tadar ve damadı çağırır. Herkesin önce iyi şarabı, konuklar kanınca da kötüsünü sunduğunu, damadın ise iyi şarabı şimdiye sakladığını söyler.",
+    "Yuhanna, bunun İsa'nın gerçekleştirdiği belirtilerin ilki olduğunu, İsa'nın böylece yüceliğini gösterdiğini ve öğrencilerinin ona iman ettiğini yazar. Hıristiyan yorum geleneği bu olayı evliliğin kutsanması olarak, suyun şaraba dönüşmesi açısından da Evharistiya'nın (Komünyon) habercisi olarak okumuştur. Sonradan gelişen bir gelenek ise İncil'de adı geçmeyen damadı Havari Yuhanna olarak tanımlar. Altın Efsane'de de yer alan bu geleneğe göre Yuhanna, düğünden sonra gelinini bırakarak İsa'yı izlemiştir.",
+    "Ressamlar konuyu çoğu zaman kalabalık bir ziyafet sahnesi olarak işlemiştir. Erken dönem eserlerde sahne birkaç figürle yalın biçimde verilirken, Rönesans ve sonrasında özellikle Venedik resminde mimari, müzisyenler ve çok sayıda konukla gösterişli bir şölene dönüşür."
+   ],
+   "tanima": [
+    "Uzun bir ziyafet sofrası ve çevresinde toplanmış konuklar",
+    "Sofrada, çoğunlukla haleli ve merkezde ya da belirgin bir yerde oturan İsa",
+    "İsa'nın yanında veya yakınında, ona şarabın bittiğini söyleyen Meryem",
+    "Hizmetkârların su doldurduğu ya da içinden şarap döktüğü büyük taş küpler (resimlerde sayıları ve biçimleri değişebilir)",
+    "İsa'nın küplere doğru kutsama jesti",
+    "Şarabı tadan ya da kadehini inceleyen ziyafet başkanı, sofrada gelin ve damat"
+   ],
+   "eserler": [
+    [
+     "Q11931777",
+     "duccio-di-buoninsegna"
+    ],
+    [
+     "Q185255",
+     "paolo-veronese"
+    ],
+    [
+     "giuseppe-maria-crespi|The Wedding at Cana",
+     "giuseppe-maria-crespi"
+    ]
+   ]
+  },
+  {
+   "id": "saint-anthony-abbot",
+   "ad": "Büyük Aziz Antonios (Başrahip Aziz Antonius)",
+   "ozgun": "Saint Anthony Abbot",
+   "tur": "aziz",
+   "ozet": "Mısır çölüne çekilip şeytanların ayartmalarına direnen ve Hristiyan keşişliğinin babası sayılan inzivacı azizdir.",
+   "kaynak": "İskenderiyeli Athanasios, Antonios'un Hayatı; sonraki gelenekler: Hieronymus, Münzevi Pavlus'un Hayatı ve Jacobus de Voragine, Altın Efsane",
+   "hikaye": [
+    "Antonios 3. yüzyılda Mısır'da varlıklı ve Hristiyan bir ailede doğdu. Çağdaşı İskenderiye piskoposu Athanasios'un yazdığı yaşamöyküsüne göre, anne babası öldükten sonra kilisede İncil'deki \"Eğer yetkin olmak istiyorsan, git, malını sat, parasını yoksullara ver\" sözünü duydu. Bunun üzerine mirasını dağıtıp önce köyünün yakınında, sonra bir mezarlıkta, ardından çöldeki terk edilmiş bir kalede ve en sonunda Kızıldeniz yakınlarındaki bir dağda yalnız yaşadı.",
+    "Athanasios'un anlatısının merkezinde şeytanla mücadele yer alır. Şeytanlar ona önce düşünceler ve hayallerle, kadın biçiminde ya da altın gibi ayartıcı görüntülerle yaklaştılar. Ardından vahşi hayvan ve canavar kılığında saldırıp onu dövdüler. Antonios oruç, dua ve imanla hepsine direndi. Ünü yayıldıkça çevresinde çileci topluluklar oluştu. Kendisi hiçbir zaman gerçek anlamda bir manastırın başrahibi olmasa da Batı'da \"Başrahip\" unvanıyla anılması bu yüzdendir. Yüz yaşını aştığında öldü.",
+    "Hieronymus'un aktardığı bir öyküye göre Antonios, çölde yaşayan münzevi Pavlus'u ziyaret etmiş, bir kuzgun ikisine ekmek getirmiş, Pavlus öldüğünde de iki aslan mezarını kazmıştır. Orta Çağ'da Fransa'da kurulan Antonit tarikatı hastanelerinde \"Aziz Antonius ateşi\" denen hastalığın kurbanlarına baktı. Domuz, çan ve alev gibi atribüler büyük ölçüde bu sonraki gelenekten gelir.",
+    "Antonios ruhun bedensel ve zihinsel ayartmalara karşı verdiği savaşın simgesi olarak sanatçılar için hem dindarca bir örnek hem de fantastik şeytan sahneleri için bir fırsat olmuştur."
+   ],
+   "tanima": [
+    "Uzun beyaz sakallı, yaşlı bir keşiş; kapüşonlu, kaba kumaştan bir cübbe giyer.",
+    "T biçimli (tau) değnek ya da koltuk değneği; cübbesinde mavi bir T işareti bulunabilir.",
+    "Ayaklarının dibinde bir domuz, sıklıkla da bir çan.",
+    "Alev ya da ateş; Aziz Antonius ateşine gönderme yapar.",
+    "Çevresini saran şeytanlar, canavarlar ya da ayartıcı bir kadın figürü; Antonios'un Ayartılması sahnesidir.",
+    "Çöl ya da mağara ortamı, elinde kitap veya tespih; bazen yanında münzevi Pavlus ve ekmek getiren kuzgun."
+   ],
+   "eserler": [
+    [
+     "Q3948774",
+     "jacopo-pontormo"
+    ],
+    [
+     "Q28229525",
+     "mattia-preti"
+    ],
+    [
+     "Q64799051",
+     "giuseppe-maria-crespi"
+    ]
+   ]
+  },
+  {
+   "id": "saint-luke",
+   "ad": "Aziz Luka",
+   "ozgun": "Saint Luke",
+   "tur": "aziz",
+   "ozet": "Hristiyan geleneğinin üçüncü İncil'in ve Elçilerin İşleri'nin yazarı saydığı, Pavlus'un yol arkadaşı hekim Luka; sonraki gelenekte Meryem'i resmettiğine inanıldığı için ressamların koruyucu azizidir.",
+   "kaynak": "Yeni Ahit, Luka İncili, Elçilerin İşleri ve Pavlus'un mektupları",
+   "hikaye": [
+    "Luka, dört müjdeciden (İncil yazarından) biridir. Hristiyan geleneği ona Luka İncili'ni ve Elçilerin İşleri'ni atfeder; iki kitap da Teofilos adlı birine hitaben yazılmıştır. Pavlus'un mektuplarında Luka, Pavlus'un yol arkadaşı ve \"sevgili hekim\" olarak anılır. Elçilerin İşleri'nin bazı bölümlerinde anlatıcının \"biz\" diye konuşması, yazarın Pavlus'la birlikte yolculuk ettiği şeklinde yorumlanmıştır.",
+    "Luka İncili, Müjde, Meryem'in Elizabet'i ziyareti, çobanların tapınması ve İsa'nın tapınağa sunulması gibi İsa'nın doğumuna ve çocukluğuna ait sahneleri en ayrıntılı anlatan İncil'dir. Bu yüzden Luka, Meryem'le özellikle ilişkilendirilmiştir. Kitab-ı Mukaddes onun ressam olduğundan hiç söz etmez. Luka'nın Meryem'in portresini yaptığı inancı sonradan, Bizans döneminde yaygınlaşan bir gelenektir ve pek çok Meryem ikonasının onun elinden çıktığına inanılmıştır. Hayatının sonuna ve ölümüne dair anlatılar da kutsal metinden değil, birbiriyle çelişen geç geleneklerden gelir.",
+    "Bu gelenek sayesinde Luka ressamların koruyucu azizi olmuş, Orta Çağ'dan itibaren Avrupa'daki birçok ressam loncası \"Aziz Luka Loncası\" adını almıştır. Ressamlar Luka'yı Meryem'i resmederken tasvir ederek kendi mesleklerine kutsal bir köken kazandırmış, kimi zaman ona kendi yüzlerini vermişlerdir. Hekimliği nedeniyle hekimlerin de koruyucusudur. Simgesi olan öküz, Hezekiel ve Vahiy kitaplarındaki dört yaratıktan gelir. Kilise Babaları bu simgeyi, İncil'inin Zekeriya'nın tapınakta görev yapmasıyla açılmasını ve kurban fikrini gerekçe göstererek Luka'ya bağlamıştır."
+   ],
+   "tanima": [
+    "Yanında genellikle kanatlı bir öküz ya da boğa bulunur; bu, müjdeci simgesidir.",
+    "Elinde kitap, tomar veya kalem tutar ya da yazı yazarken gösterilir; bu, İncil yazarı olduğunu belirtir.",
+    "Şövale, fırça ve palet gibi ressam araçlarıyla, çoğu zaman kucağında Çocuk İsa'yla Meryem'i resmederken tasvir edilir.",
+    "Bazen Meryem ikonası ya da portresi tutarken görülür.",
+    "Çoğunlukla sakallı, olgun yaşta bir adam olarak resmedilir; nadiren hekimliğini anıştıran ayrıntılarla birlikte gösterilir."
+   ],
+   "eserler": [
+    [
+     "Q20179271",
+     "simone-martini"
+    ],
+    [
+     "Q7211358",
+     "frans-hals"
+    ],
+    [
+     "Q6119249",
+     "francisco-de-zurbaran"
+    ]
+   ]
+  },
+  {
+   "id": "parnassus",
+   "ad": "Parnassos",
+   "ozgun": "Parnassus",
+   "tur": "mitoloji",
+   "ozet": "Şiir ve sanatların tanrısı Apollon'un dokuz Musa'yla birlikte kutsal Parnassos Dağı'nda bulunduğu, çoğu zaman ünlü şairlerin de eşlik ettiği alegorik bir sahnedir.",
+   "kaynak": "Antik Yunan geleneği; Hesiodos, Theogonia · Ovidius, Dönüşümler",
+   "hikaye": [
+    "Parnassos, bir olay örgüsü anlatan bir hikâyeden çok, antik geleneğin şiir ve ilhamla özdeşleştirdiği kutsal bir mekânın tasviridir. Orta Yunanistan'daki Parnassos Dağı, eteğindeki Delfi kehanet merkezi nedeniyle Apollon'a adanmıştı. Delfi yakınındaki Kastalia pınarının suyunun şairlere ilham verdiğine inanılırdı.",
+    "Hesiodos'un Theogonia'sına göre Musalar, Zeus ile bellek tanrıçası Mnemosyne'nin dokuz kızıdır. Hesiodos onları özellikle Helikon Dağı'yla ilişkilendirir. Sonraki antik ve Rönesans geleneğinde Musalar, Apollon'un önderliğinde Parnassos'ta yaşayan ilham perileri olarak da düşünülmüştür. Apollon bu rolüyle Musaların önderi (Musagetes) diye anılır. Ovidius'un Dönüşümler'inde Parnassos çeşitli anlatılarda geçer. Aynı eserde Apollon'un Daphne'ye duyduğu aşk sonucunda defneyi kendi kutsal ağacı yapması anlatılır. Defne tacı bu yüzden şairlik onurunun simgesi olmuştur.",
+    "Rönesans'ta Helikon ile Parnassos ve iki dağın pınarları sıkça birbirine karıştırılmış, Pegasos'un toynağıyla açtığı söylenen Hippokrene pınarı da bu sahnelerle ilişkilendirilmiştir. Ressamlar sahneye antik çağdan ve kendi dönemlerinden şairleri ekleyerek konuyu şiirin ve sanatın yüceltildiği bir alegoriye dönüştürmüşlerdir. Konunun önemi de buradan gelir: Parnassos, şiirsel ilhamın ve klasik kültür mirasının görsel bir ifadesidir."
+   ],
+   "tanima": [
+    "Merkezde ya da yüksek bir noktada lir veya benzeri bir telli çalgı çalan, çoğunlukla defne taçlı genç Apollon",
+    "Çevresinde dokuz kadın figürü olarak Musalar; bazen kitap, maske, çalgı gibi ayırt edici eşyalarla",
+    "Defne ağaçları ve defne çelenkleri; şairlerin başına konan ya da sunulan taçlar",
+    "Defne taçlı şairler; örneğin kör Homeros ve ellerinde kitap ya da tomar tutan figürler",
+    "Bir pınar veya akarsu (Kastalia ya da Hippokrene), bazen pınar perisi ya da kanatlı at Pegasos",
+    "Ağaçlıklı bir dağ tepesi ya da yamaçta, pastoral ve uyumlu bir topluluk düzeni"
+   ],
+   "eserler": [
+    [
+     "Q2715152",
+     "raphael"
+    ],
+    [
+     "Q14914880",
+     "nicolas-poussin"
+    ],
+    [
+     "Q47532948",
+     "marcantonio-raimondi"
+    ]
+   ]
+  },
+  {
+   "id": "doubting-thomas",
+   "ad": "Tomas'ın Şüphesi (Şüpheci Tomas)",
+   "ozgun": "Doubting Thomas",
+   "tur": "yeni_ahit",
+   "ozet": "Dirilen İsa'yı görmedikçe inanmayacağını söyleyen havari Tomas'a İsa görünür ve onu yaralarını görmeye ve onlara dokunmaya çağırır.",
+   "kaynak": "Yeni Ahit, Yuhanna İncili",
+   "hikaye": [
+    "Yuhanna İncili'ne göre İsa dirildiği günün akşamı, kapıları kilitli bir odada toplanmış öğrencilerine göründü. On iki havariden biri olan ve \"İkiz\" diye de anılan Tomas o sırada aralarında değildi. Diğerleri ona Rab'bi gördüklerini söylediklerinde Tomas, İsa'nın ellerindeki çivi izlerini görmedikçe, parmağını bu izlere ve elini böğrüne koymadıkça inanmayacağını söyledi.",
+    "Sekiz gün sonra öğrenciler yine kapalı bir odada toplanmıştı; bu kez Tomas da aralarındaydı. İsa aralarında belirdi ve onlara esenlik diledi. Ardından Tomas'a dönerek parmağını uzatıp ellerine bakmasını, elini uzatıp böğrüne koymasını, kuşkuyu bırakıp iman etmesini söyledi. Tomas \"Rabbim ve Tanrım!\" diye karşılık verdi. İsa da \"Beni gördüğün için mi iman ettin? Görmeden iman edenlere ne mutlu!\" dedi.",
+    "Metin, Tomas'ın yaraya gerçekten dokunup dokunmadığını açıkça söylemez. Ressamlar ise çoğunlukla bu dokunma anını tasvir etmiştir. Özellikle Barok dönemde Tomas'ın parmağını yaranın içine soktuğu, İsa'nın da onun elini yönlendirdiği çarpıcı ve bedensel sahneler yaygınlaşmıştır.",
+    "Sahne, dirilişin bir hayalet görünümü değil gerçek ve bedensel olduğunu vurgular. İmanla görme ve kanıt arasındaki ilişki üzerine güçlü bir ders olarak da yorumlanmıştır. Tomas'ın daha sonra Hindistan'a giderek orada vaaz ettiği ve şehit edildiği anlatısı İncil'de yer almaz; bu anlatı apokrif \"Tomas'ın İşleri\" ve sonraki geleneklerden gelir."
+   ],
+   "tanima": [
+    "Elleri, ayakları ve böğrü yaralı, çoğu zaman yarı çıplak ya da örtüsünü açmış dirilmiş İsa",
+    "İsa'nın böğründeki yaraya parmağını uzatan ya da sokan Tomas",
+    "Tomas'ın elini tutarak yaraya yönlendiren İsa",
+    "Sahneyi yakından ve şaşkınlıkla izleyen birkaç havari",
+    "Kapalı, iç mekân havası taşıyan oda",
+    "Bazı resimlerde Tomas'ın genel atribüsü olan mızrak ya da gönye"
+   ],
+   "eserler": [
+    [
+     "Q18572249",
+     "francesco-salviati"
+    ],
+    [
+     "Q2419166",
+     "caravaggio"
+    ],
+    [
+     "Q11791844",
+     "hendrick-ter-brugghen"
+    ]
+   ]
+  },
+  {
+   "id": "jupiter-and-antiope",
+   "ad": "Jüpiter ve Antiope",
+   "ozgun": "Jupiter and Antiope",
+   "tur": "mitoloji",
+   "ozet": "Tanrıların başı Jüpiter (Zeus), satir kılığına girerek ormanda uyuyan güzel Antiope'ye yaklaşır ve ondan ikiz oğulları Amphion ile Zethos dünyaya gelir.",
+   "kaynak": "Ovidius, Dönüşümler; ayrıca Homeros, Odysseia",
+   "hikaye": [
+    "Antiope, Yunan mitolojisinde güzelliğiyle ün salmış bir Thebai prensesidir. Homeros'un Odysseia'sında Asopos ırmağının kızı olarak anılır ve Zeus'tan Thebai'nin kurucuları sayılan Amphion ile Zethos'u doğurduğu söylenir. Ovidius'un Dönüşümler'inde ise Nykteus'un kızıdır. Ovidius, Arakhne'nin tanrıların aşk maceralarını dokuduğu kumaşı anlatırken Jüpiter'in Antiope'ye bir satir kılığında yaklaşıp onu ikizlere gebe bıraktığını kısaca belirtir. Konunun ressamlar için en önemli ayrıntısı olan satir kılığı bu kaynaktan gelir.",
+    "Hikâyenin devamı Ovidius'ta yoktur. Bu bölüm başka antik kaynaklarda, özellikle Euripides'in günümüze yalnızca parçalar hâlinde ulaşan Antiope tragedyasında ve sonraki mitoloji derlemelerinde anlatılır. Buna göre hamile kalan Antiope babasının öfkesinden kaçar. Daha sonra amcası Lykos ile onun karısı Dirke'nin eline düşer ve yıllarca kötü muamele görür. Dağda çobanlar tarafından büyütülen ikizler sonunda annelerini tanır ve onu kurtarır. Dirke'yi bir boğaya bağlayarak cezalandırırlar.",
+    "Rönesans ve Barok ressamları, mitin bütün bu bölümleri arasından neredeyse yalnızca ilk sahneyi seçmiştir. Bu sahnede yarı hayvan satir, ormanda çıplak uyuyan Antiope'nin örtüsünü kaldırıp onu seyreder. Sahne, uyuyan çıplak kadın figürünü mitolojik bir gerekçeyle resmetme olanağı verdiği için çok sevilmiştir. Bu yüzden bazı eserler, Watteau'nunki gibi, genel olarak 'Nimf ve Satir' adıyla da anılır. Konu ayrıca kaba arzu ile masum güzelliğin karşıtlığını işler."
+   ],
+   "tanima": [
+    "Ormanda ya da bir ağacın altında uyuyan çıplak genç kadın (Antiope)",
+    "Keçi bacaklı, sivri kulaklı, bazen boynuzlu bir satir (kılık değiştirmiş Jüpiter)",
+    "Satirin Antiope'nin üzerindeki örtüyü kaldırması ya da ona eğilip gizlice bakması",
+    "Jüpiter'in kimliğini ele veren kartal veya yıldırım (her zaman bulunmaz)",
+    "Sahneye eşlik eden Kupid ya da Eros figürü",
+    "Gölgeli, kuytu bir orman veya pastoral doğa ortamı"
+   ],
+   "eserler": [
+    [
+     "Q11729456",
+     "anthony-van-dyck"
+    ],
+    [
+     "Q1713754",
+     "jean-antoine-watteau"
+    ],
+    [
+     "Q18649388",
+     "jacques-louis-david"
+    ]
+   ]
+  },
+  {
+   "id": "prometheus",
+   "ad": "Prometheus",
+   "ozgun": "Prometheus",
+   "tur": "mitoloji",
+   "ozet": "Tanrılardan ateşi çalıp insanlara veren Titan Prometheus'un, Zeus tarafından bir kayaya zincirlenerek ciğerini her gün bir kartala yedirme cezasına çarptırılması.",
+   "kaynak": "Hesiodos, Theogonia ve İşler ve Günler · Aiskhylos, Zincire Vurulmuş Prometheus",
+   "hikaye": [
+    "Prometheus, Titan İapetos'un oğludur ve adı \"önceden düşünen\" anlamına gelir. Hesiodos'a göre Mekone'de tanrılar ile insanlar arasındaki kurban paylaşımında Zeus'u kandırmaya çalışır. Bir yanda yağa sarılmış kemikleri, öbür yanda işkembeye gizlenmiş eti koyar ve Zeus'tan seçim yapmasını ister. Zeus yağlı kemikleri seçer ve buna öfkelenerek ateşi insanlardan esirger. Prometheus ise ateşi içi boş bir rezene sapına saklayarak çalar ve insanlara geri verir.",
+    "Zeus iki yönlü bir ceza verir. İnsanlara bir \"armağan\" olarak ilk kadın Pandora'yı yollar. Prometheus'u ise zincirlerle bağlatır ve her gün bir kartalın gelip ciğerini yemesini buyurur. Ciğer her gece yeniden büyüdüğü için işkence sonsuzca sürer. Hesiodos'a göre kartalı sonunda Herakles öldürür ve Prometheus'u bu eziyetten kurtarır.",
+    "Aiskhylos'un tragedyasında zincirleme sahnesi ayrıntılıdır. Kratos (Güç) ve Bia (Şiddet) Prometheus'u dünyanın ucunda, İskit ülkesindeki ıssız bir kayaya getirir, Hephaistos da onu istemeye istemeye çiviler. Sonraki gelenekte bu kaya Kafkas dağlarına yerleştirilir. Prometheus, Zeus'un düşüşüne yol açabilecek bir sırrı bildiği için boyun eğmez. Prometheus'un insanı balçıktan yarattığı anlatısı ise daha sonraki kaynaklarda, örneğin Ovidius'un Dönüşümler'inde yer alır.",
+    "Prometheus, insanlık uğruna tanrılara başkaldıran ve acı çeken kahramanın simgesi olmuştur. Bu yönüyle özellikle Barok dönemde ve Romantizmde bedensel acının ve yılmaz iradenin güçlü bir imgesi olarak sevilmiştir."
+   ],
+   "tanima": [
+    "Dağda sarp bir kayaya zincirlenmiş, çıplak ve kaslı bir erkek figürü",
+    "Göğsünü ya da böğrünü parçalayıp ciğerini yiyen bir kartal (bazı tasvirlerde akbaba)",
+    "Acıyla kıvranan beden ya da tersine, meydan okuyan dik bir duruş",
+    "Ateş, meşale veya alevli bir sap; çalınan ateşe gönderme",
+    "Zincirleme sahnelerinde çekiç ve zincirlerle Hephaistos/Vulcanus, yanında çoğu kez Hermes/Merkür ya da Kratos",
+    "Yaratılış sahnelerinde balçıktan insan biçimlendiren Prometheus (sonraki gelenekte yanında Athena/Minerva)"
+   ],
+   "eserler": [
+    [
+     "Q16933788",
+     "dirck-van-baburen"
+    ],
+    [
+     "Q96410427",
+     "salvator-rosa"
+    ],
+    [
+     "Q127420355",
+     "gustave-moreau"
+    ]
+   ]
+  },
+  {
+   "id": "christ-before-pilate",
+   "ad": "İsa Pilatus'un Huzurunda",
+   "ozgun": "Christ before Pilate",
+   "tur": "yeni_ahit",
+   "ozet": "Tutuklanan İsa, Romalı vali Pontius Pilatus'un önüne çıkarılarak sorgulanır; Pilatus onda suç bulmadığını söylese de halkın baskısıyla onu çarmıha gerilmek üzere teslim eder.",
+   "kaynak": "Yeni Ahit, Matta, Markos, Luka ve Yuhanna İncilleri",
+   "hikaye": [
+    "Getsemani bahçesinde tutuklanan İsa, önce Yahudi başkâhinlerin ve Yüksek Kurul'un önünde sorgulanır. Ardından sabah erkenden Yahudiye'nin Romalı valisi Pontius Pilatus'a götürülür, çünkü ölüm cezası verme yetkisi Roma'dadır. Suçlayanlar İsa'nın kendini Yahudilerin Kralı ilan ettiğini ve halkı kışkırttığını öne sürer. Pilatus 'Sen Yahudilerin Kralı mısın?' diye sorar; İsa 'Sen söylüyorsun' diye karşılık verir ve suçlamalar karşısında çoğunlukla susar. Yuhanna İncili'nde İsa krallığının bu dünyadan olmadığını söyler, Pilatus da 'Gerçek nedir?' diye sorar.",
+    "Luka İncili'ne göre Pilatus, İsa'nın Celileli olduğunu öğrenince onu o sırada Kudüs'te bulunan Hirodes Antipas'a gönderir. Hirodes İsa'yla alay eder, ona gösterişli bir giysi giydirip geri yollar. Pilatus İsa'da suç bulamaz. Fısıh Bayramı'nda bir tutsağı serbest bırakma geleneğine dayanarak halka İsa'yı salıvermeyi önerir, ancak kalabalık Barabba'nın bırakılmasını ve İsa'nın çarmıha gerilmesini ister. Matta İncili'nde Pilatus'un karısı, rüyasında gördükleri yüzünden kocasını bu adil adama dokunmaması konusunda uyarır. Pilatus da halkın önünde ellerini yıkayarak bu kandan sorumlu olmadığını ilan eder. Karısına sonradan verilen Prokula adı, İncil'de geçmez; apokrif geleneğe aittir.",
+    "Sonunda Pilatus İsa'yı kamçılatır ve çarmıha gerilmek üzere askerlere teslim eder. Sahne, Çile döngüsünün kilit anıdır: masum olanın dünyevi iktidar tarafından yargılanmasını ve sorumluluktan kaçmayı simgeler. Bu yüzden Orta Çağ'dan itibaren İsa'nın Çilesi'ni anlatan dizilerde sıkça yer alır."
+   ],
+   "tanima": [
+    "Yüksek bir kürsü ya da taht üzerinde oturan, Roma kıyafetli veya Rönesans'ta sıkça doğulu sarıklı ve kaftanlı gösterilen yargıç Pilatus",
+    "Elleri bağlı, ayakta, sessiz ve başı eğik duran İsa; çoğu zaman beyaz ya da sade bir giysiyle tasvir edilir",
+    "Pilatus'un yanında ibrik ve leğen tutan bir hizmetkâr; el yıkama anı Pilatus'u tanıtan en belirgin işarettir",
+    "İsa'yı tutan ya da çevreleyen mızraklı, zırhlı Romalı askerler",
+    "İsa'yı işaret ederek suçlayan başkâhinler, yaşlılar ve bağrışan kalabalık",
+    "Sütunlu bir saray avlusu veya vali konağı (praetorium) mekânı"
+   ],
+   "eserler": [
+    [
+     "Q111821706",
+     "duccio-di-buoninsegna"
+    ],
+    [
+     "Q111821733",
+     "duccio-di-buoninsegna"
+    ],
+    [
+     "Q16553687",
+     "tintoretto"
+    ]
+   ]
+  },
+  {
+   "id": "beer-street-and-gin-lane",
+   "ad": "Bira Sokağı ve Cin Sokağı",
+   "ozgun": "Beer Street and Gin Lane",
+   "tur": "diger",
+   "ozet": "William Hogarth'ın 1751'de yayımladığı bu iki gravürlük dizi, bira içen sağlıklı ve müreffeh Londralılarla cin yüzünden çöküşe sürüklenen yoksul bir mahalleyi karşı karşıya koyan ahlaki bir hicivdir.",
+   "kaynak": "Kutsal metin ya da mitoloji değil; William Hogarth'ın kendi kurguladığı gravürler (1751) ve altlarına eklenen, Rahip James Townley'ye ait dizeler",
+   "hikaye": [
+    "Bu konu bir kutsal metne ya da antik mite dayanmaz. William Hogarth'ın, 18. yüzyılın ilk yarısında Londra'yı saran ve tarihçilerin \"cin çılgınlığı\" (Gin Craze) dediği toplumsal krize tepki olarak tasarladığı bir çift baskıdır. Ucuz ve kolay bulunan cin, özellikle yoksul kesimlerde bağımlılığa, suça, hastalığa ve ölümlere yol açıyordu.",
+    "Cin Sokağı'nda sarhoşluğun her şeyi yıktığı bir mahalle görülür. İnsanlar sefalet içindedir, binalar çökmektedir ve ölüm her köşededir. Bu mahallede yalnızca tefeci, cenaze kaldırıcısı ve cin imalatçısı kazanır. Bira Sokağı ise bunun tam tersidir. Bira içen işçiler ve esnaf sağlıklı, neşeli ve çalışkandır. Burada iflas eden tek kişi tefecidir. Bira, o dönemde \"ulusal\" ve zararsız bir içecek olarak sunulur.",
+    "Hogarth baskıları bilinçli olarak ucuza sattı ki geniş halk kitlelerine ulaşsın. Baskılar, aynı yıl çıkan ve cin satışını sınırlayan yasayı (Gin Act, 1751) destekleyen kamuoyu kampanyasının parçası olarak görülür. Hogarth'ın dostu Henry Fielding'in suçun artışını cine bağlayan yazılarıyla da aynı ortamda ortaya çıkmışlardır.",
+    "Eser, sanat tarihinde toplumsal eleştiri amaçlı grafik sanatın ve görsel propagandanın öncü örneklerinden sayılır. İki görüntünün birbirinin aynası olarak kurulması, karşıtlık yoluyla ahlaki ders vermenin klasik bir modelidir."
+   ],
+   "tanima": [
+    "İki sahnenin birbirinin karşıtı olarak çiftler hâlinde kurgulanması: bir yanda bolluk ve düzen, diğer yanda yıkım ve kaos",
+    "Cin Sokağı'nın ön planında, sarhoşluktan bebeğini merdiven boşluğuna düşüren yarı çıplak bir anne figürü",
+    "Cin Sokağı'nda gelişen tefeci dükkânı, çöken binalar, cesetler ve tabutlar; Bira Sokağı'nda ise kepenk indirmiş, yıkılmak üzere olan tefeci dükkânı",
+    "Bira Sokağı'nda ellerinde köpüklü bira maşrapalarıyla dinlenen, iyi beslenmiş işçiler, esnaf ve balıkçı kadınlar",
+    "Arka planda Londra kilise kuleleri ve kentin tanınabilir mimari silueti",
+    "Gravür tekniği, siyah-beyaz çizgi dili ve altta yer alan ahlaki öğüt içeren dizeler"
+   ],
+   "eserler": [
+    [
+     "Q21651887",
+     "william-hogarth"
+    ],
+    [
+     "william-hogarth|Gin Lane",
+     "william-hogarth"
+    ],
+    [
+     "Q4879965",
+     "william-hogarth"
+    ]
+   ]
+  },
+  {
+   "id": "saint-apollonia",
+   "ad": "Azize Apollonia",
+   "ozgun": "Saint Apollonia",
+   "tur": "aziz",
+   "ozet": "İskenderiyeli bakire Apollonia, Hristiyanlara karşı bir halk ayaklanmasında dişleri kırıldıktan sonra inancını inkâr etmeyi reddedip kendini ateşe atarak şehit olmuş ve diş ağrısı çekenlerin koruyucu azizesi sayılmıştır.",
+   "kaynak": "Kayseriyeli Eusebius, Kilise Tarihi VI.41 (İskenderiye Piskoposu Dionysius'un mektubundan aktarım); kerpeten motifi için geç dönem efsaneleri ve halk geleneği",
+   "hikaye": [
+    "Apollonia'nın hikâyesinin en eski kaynağı, İskenderiye Piskoposu Dionysius'un bir mektubudur. Bu mektubu Eusebius, Kilise Tarihi adlı eserinde aktarır. Anlatıya göre 3. yüzyılın ortasında, İmparator Decius dönemindeki büyük zulümden kısa süre önce, İskenderiye'de Hristiyanlara karşı bir halk ayaklanması çıktı. Kalabalık evleri yağmaladı, inananları sokaklarda öldürdü.",
+    "Dionysius, Apollonia'yı ileri yaşta, saygın bir bakire olarak tanıtır. Kalabalık onu yakaladı, yüzüne vurarak dişlerini kırdı. Ardından şehir dışında bir ateş yaktılar ve Tanrı'ya küfretmezse onu diri diri yakacaklarını söylediler. Apollonia biraz düşünmek için izin istedi. Serbest bırakılınca kimse onu zorlamadan kendini ateşe attı ve orada öldü.",
+    "Sonraki yüzyıllarda hikâye değişti. Geç dönem efsanelerinde ve halk geleneğinde dişlerinin kerpetenle tek tek söküldüğü anlatılır. Ressamlar da Apollonia'yı çoğunlukla genç ve güzel bir bakire olarak tasvir etmiştir. Oysa en eski kaynak onu yaşlı bir kadın olarak anar.",
+    "Uğradığı işkence yüzünden Apollonia diş ağrısı çekenlerin ve diş hekimlerinin koruyucu azizesi kabul edilir. Bayramı 9 Şubat'tır. Orta Çağ'dan itibaren özellikle sunak resimlerinde ve tek figürlü aziz portrelerinde sevilen bir konu olmuştur. Kendi isteğiyle ateşe atlaması, kilise yazarları arasında gönüllü şehitlik üzerine tartışmalara da konu olmuştur."
+   ],
+   "tanima": [
+    "Elinde bir diş tutan kerpeten ya da pense: Apollonia'nın en belirgin atribüsü ve onu öbür bakire şehitlerden ayıran işaret",
+    "Şehitlik palmiyesi: çoğu zaman kerpetenle birlikte, öbür elinde",
+    "Genç, uzun saçlı, zarif giyimli bir kadın figürü; kimi zaman başında taç ya da hale",
+    "Kimi resimlerde elinde kitap: inancının ve bilgeliğinin simgesi",
+    "Anlatı sahnelerinde ağzına kerpeten sokan cellatlar ya da arka planda yanan bir ateş"
+   ],
+   "eserler": [
+    [
+     "Q3948792",
+     "piero-della-francesca"
+    ],
+    [
+     "Q6034540",
+     "francisco-de-zurbaran"
+    ],
+    [
+     "Q27830965",
+     "artemisia-gentileschi"
+    ]
+   ]
+  },
+  {
+   "id": "medusa",
+   "ad": "Medusa",
+   "ozgun": "Medusa",
+   "tur": "mitoloji",
+   "ozet": "Bakışıyla insanları taşa çeviren yılan saçlı Gorgon Medusa'nın başı kahraman Perseus tarafından kesilir.",
+   "kaynak": "Ovidius, Dönüşümler; Hesiodos, Theogonia",
+   "hikaye": [
+    "Hesiodos'a göre Medusa, Phorkys ile Keto'nun kızları olan üç Gorgon'dan biridir ve kız kardeşleri Sthenno ile Euryale ölümsüzken yalnızca o ölümlüdür. Ovidius'un Dönüşümler'inde Perseus'un ağzından anlatılan hikâyeye göre Medusa bir zamanlar güzelliği, özellikle de saçlarıyla ünlü bir kızdır. Poseidon onu Athena'nın tapınağında kirletince öfkelenen tanrıça, Medusa'nın saçlarını yılanlara çevirir. Artık onun yüzüne bakan herkes taşa dönüşmektedir.",
+    "Perseus, Medusa'nın doğrudan yüzüne bakmamak için kalkanındaki yansımayı kullanır ve uyurken başını keser. Kesik boyundan akan kandan kanatlı at Pegasus ile kardeşi Khrysaor doğar. Perseus'un tanrılardan aldığı kanatlı sandaletler, görünmezlik başlığı, kesik başı koyduğu torba ve eğri kılıç gibi armağanlar ise daha çok Apollodoros gibi sonraki kaynaklarda ayrıntılı biçimde anlatılır.",
+    "Ovidius'a göre Perseus Libya üzerinden uçarken baştan damlayan kan yılanlara dönüşür. Kesik baş ölümden sonra da gücünü korur: Perseus bu başla Atlas'ı dağa, düşmanlarını ise taşa çevirir. Sonunda baş, Athena'nın göğüslüğüne ya da kalkanına (aegis) yerleştirilir ve koruyucu bir simgeye dönüşür.",
+    "Medusa, Antikçağ'dan beri hem korkunç hem de kötülüğü uzaklaştıran bir imge olarak görülmüştür. Rönesans ve Barok ressamları konuyu çoğunlukla dehşet anının ve ölümün bir tasviri ve sanatın izleyiciyi 'taşa çevirme' gücünü sınayan bir konu olarak ele almıştır."
+   ],
+   "tanima": [
+    "Saçlarının yerinde kıvrılan, birbirine dolanan canlı yılanlar",
+    "Çoğunlukla gövdeden ayrılmış, yere ya da bir yüzeye bırakılmış kesik baş",
+    "Ağzı açık, gözleri dehşetle büyümüş, çığlık atan ya da can çekişen bir yüz",
+    "Kesik boyundan fışkıran ya da akan kan; çevresinde bazen yılan, kertenkele gibi sürüngenler",
+    "Kalkan üzerine resmedilmiş baş (gorgoneion); sahnede bulunuyorsa elinde kılıç ve başla Perseus"
+   ],
+   "eserler": [
+    [
+     "Q2293905",
+     "caravaggio"
+    ],
+    [
+     "Q3492887",
+     "leonardo-da-vinci"
+    ],
+    [
+     "Q647202",
+     "peter-paul-rubens"
+    ]
+   ]
+  },
+  {
+   "id": "raft-of-the-medusa",
+   "ad": "Medusa'nın Salı",
+   "ozgun": "Raft of the Medusa",
+   "tur": "tarih_edebiyat",
+   "ozet": "1816'da Batı Afrika açıklarında karaya oturan Fransız firkateyni Méduse'den bir sala bindirilip denize terk edilen insanların açlık, şiddet ve yamyamlıkla geçen günleri ve sonunda kurtarılmalarıdır.",
+   "kaynak": "Tarihî olay; hayatta kalan Alexandre Corréard ve Henri Savigny'nin anlatısı, Naufrage de la frégate la Méduse (1817)",
+   "hikaye": [
+    "1816 yazında Fransız donanmasına ait Méduse firkateyni, Senegal'i yeniden Fransız yönetimine almak üzere yola çıktı. Gemiyi, yıllardır denize çıkmamış, Restorasyon rejimine yakın bir soylu olan kaptan Hugues Duroy de Chaumareys yönetiyordu. Kaptanın yanlış rotası yüzünden gemi, bugünkü Moritanya kıyısı açıklarındaki Arguin sığlığına oturdu.",
+    "Filikalar herkese yetmeyince yaklaşık yüz elli kişi, geminin direk ve kalaslarından çatılmış derme çatma bir sala dolduruldu. Salı çeken filikaların halatları kısa süre sonra çözüldü ve sal açık denizde kaderine terk edildi. Sonraki on üç gün boyunca salda isyanlar, boğuşmalar ve cinayetler yaşandı. Zayıflar ve yaralılar denize atıldı, hayatta kalanlar ölülerin etiyle beslendi. Sonunda Argus adlı brik salı buldu. Kurtarılan on beş kişiden birkaçı kısa süre içinde öldü.",
+    "Kurtulanlardan cerrah Savigny ile mühendis Corréard'ın tanıklıkları yayımlanınca büyük bir skandal patlak verdi. Olay, liyakatsiz atamaları ve sorumsuzluğu yüzünden Bourbon yönetiminin simgesi hâline geldi. Théodore Géricault bu çağdaş felaketi, o güne dek dinî ya da antik konulara ayrılan dev boyutlu tarih resmi ölçeğinde işledi. Bunun için hayatta kalanlarla görüştü, salın bir maketini yaptırdı ve hastanelerde ölüm ile çürümeyi inceledi. Eser 1819 Salonu'nda «Bir Deniz Kazası Sahnesi» adıyla sergilendi. Hem siyasi bir suçlama hem de Romantizmin kurucu yapıtlarından biri olarak kabul edilir."
+   ],
+   "tanima": [
+    "Dalgalı bir denizde, derme çatma direğine rüzgârla şişmiş bir yelken gerilmiş, insanlarla dolu bir sal",
+    "Ön planda cesetler ve ölmek üzere olan, çıplak ya da yarı çıplak bedenler",
+    "Piramit biçiminde yükselen kompozisyonun tepesinde, ufuktaki gemiye bez sallayan siyah bir figür",
+    "Ufukta seçilmesi güç, küçük bir gemi silueti (kurtarıcı Argus)",
+    "Ölü bir genci kucağında tutan, umutsuzca düşünceye dalmış yaşlı bir adam",
+    "Direğin dibinde ufku işaret eden, hayatta kalanların temsilcisi olarak görülen figürler (Savigny ve Corréard)"
+   ],
+   "eserler": [
+    [
+     "Q29855615",
+     "theodore-gericault"
+    ],
+    [
+     "theodore-gericault|Six studies for Corréard and Savigny in the \"Raft of the Medusa\"",
+     "theodore-gericault"
+    ],
+    [
+     "Q212616",
+     "theodore-gericault"
+    ]
+   ]
+  },
+  {
+   "id": "fortune-teller",
+   "ad": "Falcı (Çingene Falcı)",
+   "ozgun": "Fortune Teller",
+   "tur": "diger",
+   "ozet": "Genellikle Çingene olarak tasvir edilen bir kadın, saf bir gencin avucuna bakıp geleceğini okurken o ya da suç ortakları gencin parasını, yüzüğünü veya kesesini çalar.",
+   "kaynak": "Belirli bir metin kaynağı yoktur; 16.–17. yüzyıl tür resmi geleneği (özellikle Caravaggio ve Caravaggiocular)",
+   "hikaye": [
+    "Falcı, Kitab-ı Mukaddes'e ya da mitolojiye dayanmayan, gündelik hayattan alınmış bir tür resmi konusudur. Sahnenin merkezinde gösterişli giyimli, toy bir genç ile onun avucuna bakarak geleceğini okuyan, dönemin tasvir geleneğinde Çingene olarak gösterilen bir kadın bulunur. Genç kendisine söylenenlere dalıp gitmişken kadın ya da yanındaki suç ortakları onu soyar: parmağından yüzük sıyrılır, kesesi kesilir ya da cebinden para çekilir.",
+    "Konu, 1590'ların ortasında Caravaggio'nun yaptığı falcı resimleriyle Roma'da büyük ilgi gördü. Onu izleyen Caravaggiocular, yani Bartolomeo Manfredi, Simon Vouet, Nicolas Régnier ve Valentin de Boulogne, sahneyi çoğu zaman kalabalık bir meyhane ortamına taşıdılar. Bu resimlerde falcının yanında müzisyenler, içki içen ve kâğıt oynayan figürler yer alır. Lorraine'li ressam Georges de La Tour da konuyu, yankesicilerle çevrili bir gencin soyulduğu bir sahne olarak işlemiştir.",
+    "Sahnenin ahlaki bir mesajı vardır: saflığın, kibrin ve geleceği bilme merakının insanı aldatılmaya açık hâle getirdiği gösterilir. Konu, dönemin sokak hayatını anlatan pikaresk edebiyatıyla ve tiyatrodaki dolandırıcı tipleriyle akrabadır. İzleyiciye, resimdeki gencin göremediği hırsızlığı fark etme fırsatı verilir. Böylece resim hem eğlendirir hem de dikkatli olma uyarısı yapar. Konu, Barok tür resminin en sevilen konularından biri hâline gelmiştir."
+   ],
+   "tanima": [
+    "Başında sarık ya da türban, omzunda bağlanmış geniş bir şal veya pelerin taşıyan, Çingene olarak tasvir edilmiş bir kadın",
+    "Kadının gencin elini tutup avucuna bakması, yani el falı jesti",
+    "Tüylü şapkalı, kılıçlı, şık giyimli ve dalgın bakışlı genç bir adam",
+    "Gencin fark etmeden soyulması: sıyrılan yüzük, kesilen kese, cebe uzanan el",
+    "Figürler arasında anlamlı bakışlar ve izleyiciyi suça ortak eden göz teması",
+    "Meyhane ortamı: şarap, müzisyenler, oyun kâğıtları ve karanlık zemin üzerinde sert ışık-gölge (tenebrizm)"
+   ],
+   "eserler": [
+    [
+     "Q20278620",
+     "valentin-de-boulogne"
+    ],
+    [
+     "Q125339790",
+     "valentin-de-boulogne"
+    ],
+    [
+     "Q107436971",
+     "valentin-de-boulogne"
+    ]
+   ]
+  },
+  {
+   "id": "don-quixote-and-sancho-panza",
+   "ad": "Don Kişot ve Sancho Panza",
+   "ozgun": "Don Quixote and Sancho Panza",
+   "tur": "tarih_edebiyat",
+   "ozet": "Şövalye romanlarıyla aklını yitirip gezgin şövalye olmaya karar veren yaşlı bir soylu ile onun saf ve gerçekçi silahtarı Sancho Panza'nın La Mancha yollarındaki gülünç ve hüzünlü maceraları.",
+   "kaynak": "Miguel de Cervantes, Don Kişot (iki bölüm hâlinde yayımlanmış roman)",
+   "hikaye": [
+    "La Mancha'da yaşayan yoksul bir soylu olan Alonso Quijano, şövalye romanlarını okuya okuya aklını yitirir. Kendine Don Kişot adını verir, eski bir zırh kuşanır ve sıska atı Rocinante'ye biner. Köylü bir kızı hayalinde soylu sevgilisi Dulcinea del Toboso'ya dönüştürür. Ardından haksızlıkları düzeltmek için yollara düşer.",
+    "Yanına silahtar olarak komşusu Sancho Panza'yı alır. Sancho kısa boylu, tombul ve okuma yazma bilmeyen bir köylüdür. Ona bir ada valiliği vaat edilmiştir ve eşeğiyle efendisinin peşinden gider. Don Kişot yel değirmenlerini dev, koyun sürülerini ordu, bir berberin tıraş leğenini efsanevi bir miğfer sanır. Sancho ise her seferinde gerçeği görür, yine de efendisine sadık kalır. Romanın ikinci bölümünde ikili, onlarla eğlenen bir dük ile düşesin sarayına düşer. Sancho burada şaka olsun diye bir 'ada'ya vali yapılır ve beklenmedik bir sağduyu gösterir.",
+    "Sonunda Don Kişot, onu evine döndürmek isteyen bir köylüsünün kılık değiştirerek giriştiği düelloda yenilir ve köyüne döner. Ölüm döşeğinde aklı başına gelir, şövalyelikten vazgeçer ve Alonso Quijano olarak ölür.",
+    "Eser modern romanın öncülerinden sayılır. İdealizm ile gerçekçilik, hayal ile dünya arasındaki karşıtlığın simgesi olmuştur. Özellikle 19. yüzyılda ressamlar Don Kişot'u gülünç olduğu kadar trajik bir idealist olarak da yorumlamıştır. Daumier konuyu defalarca ele almış, iki figürü çoğu zaman ayrıntıdan arındırılmış, ışıklı ve çorak bir manzarada siluet gibi resmetmiştir."
+   ],
+   "tanima": [
+    "Uzun boylu, sıska, sakallı yaşlı bir adam: eski püskü zırh, mızrak ve kalkan taşır, başında bazen tıraş leğeni ya da derme çatma bir miğfer vardır",
+    "Kemikleri sayılan zayıf at Rocinante",
+    "Eşeğe binmiş kısa boylu, şişman köylü silahtar Sancho Panza; yanında heybe ya da yiyecek taşır",
+    "İki figür arasındaki belirgin zıtlık: uzun ve ince ile kısa ve tombul, öndeki şövalye ile arkadan gelen silahtar",
+    "Çorak, güneşli İspanyol kırsalı; bazen arka planda yel değirmenleri"
+   ],
+   "eserler": [
+    [
+     "Q104530565",
+     "honore-daumier"
+    ],
+    [
+     "Q18686024",
+     "honore-daumier"
+    ],
+    [
+     "Q8561671",
+     "honore-daumier"
+    ]
+   ]
+  },
+  {
+   "id": "pygmalion-and-galatea",
+   "ad": "Pygmalion ve Galatea",
+   "ozgun": "Pygmalion and Galatea",
+   "tur": "mitoloji",
+   "ozet": "Kıbrıslı heykeltıraş Pygmalion kendi yonttuğu kadın heykeline âşık olur ve Venüs'ün lütfuyla heykel canlanarak onun karısı olur.",
+   "kaynak": "Ovidius, Dönüşümler",
+   "hikaye": [
+    "Ovidius'un Dönüşümler'inde bu hikâyeyi Orpheus anlatır. Kıbrıslı heykeltıraş Pygmalion, Venüs'ün tanrısallığını inkâr ettikleri için cezalandırılan Propoetidesler'in utanmaz yaşamını görür ve kadınlardan tiksinerek evlenmemeye karar verir. Bunun yerine fildişinden kusursuz güzellikte bir kadın heykeli yontar ve kendi eserine âşık olur. Heykele dokunur, onu öper, giydirip süsler, hediyeler getirir ve yanına yatırır.",
+    "Kıbrıs'ta kutlanan Venüs bayramında Pygmalion sunağın önünde dua eder. Utancından 'heykelimi' diyemez, 'fildişi kızıma benzeyen bir eş' ister. Venüs dileğin gerçek anlamını anlar ve sunaktaki alev üç kez parlar. Pygmalion eve dönüp heykeli öptüğünde fildişinin ısındığını, balmumu gibi yumuşadığını, damarlarının attığını hisseder. Heykel canlanır, kızarır ve gözlerini ilk kez açtığında hem gökyüzünü hem de âşığını görür. Venüs'ün de katıldığı düğünden dokuz ay sonra çiftin Paphos adlı bir çocuğu doğar.",
+    "Ovidius heykelin adını vermez. 'Galatea' adı sonradan eklenmiştir ve özellikle 18. yüzyılda, Rousseau'nun Pygmalion adlı eseriyle yaygınlaşmıştır. Hikâye, sanatın yaşamı taklit edip aşması, sanatçının yaratıcı gücü ve aşkın dönüştürücü etkisi üzerine bir mesel olarak Rönesans'tan 19. yüzyıl akademik resmine dek sevilen bir konu olmuştur."
+   ],
+   "tanima": [
+    "Heykeltıraş atölyesi; keski, tokmak gibi aletler ve yarım kalmış yontular",
+    "Kaide üzerinde çıplak bir kadın heykeli; çoğu zaman bir kısmı canlı tene dönüşmüş, bir kısmı hâlâ taş renginde (Ovidius fildişi der, ressamlar sık sık mermer olarak gösterir)",
+    "Heykele sarılan, onu öpen ya da önünde diz çökmüş bir erkek figürü",
+    "Tütsü yanan bir sunak ve dua eden Pygmalion; bulutlar arasında Venüs",
+    "Ok ve yayıyla Cupido (Eros), aşkın simgesi olarak sahnede ya da havada"
+   ],
+   "eserler": [
+    [
+     "Q111577849",
+     "agnolo-bronzino"
+    ],
+    [
+     "jean-leon-gerome|Pygmalion and Galatea",
+     "jean-leon-gerome"
+    ],
+    [
+     "Q109562503",
+     "jean-leon-gerome"
+    ]
+   ]
+  },
+  {
+   "id": "cain-and-abel",
+   "ad": "Kabil ve Habil",
+   "ozgun": "Cain and Abel",
+   "tur": "eski_ahit",
+   "ozet": "Âdem ile Havva'nın oğlu Kabil, kurbanı Tanrı tarafından kabul edilen kardeşi Habil'i kıskançlıkla öldürür ve insanlık tarihindeki ilk cinayeti işler.",
+   "kaynak": "Eski Ahit, Yaratılış",
+   "hikaye": [
+    "Âdem ile Havva cennetten kovulduktan sonra iki oğulları olur: büyük oğul Kabil toprağı işleyen bir çiftçi, küçük oğul Habil ise çobandır. Bir gün ikisi de Tanrı'ya sunu getirir. Kabil toprağın ürünlerinden, Habil ise sürüsünün ilk doğan kuzularından ve bunların yağlarından sunar. Tanrı Habil'in sunusunu kabul eder, Kabil'inkini ise kabul etmez. Kabil öfkelenir. Tanrı onu uyararak günahın kapıda pusuya yattığını ve ona egemen olması gerektiğini söyler.",
+    "Kabil, kardeşini kıra çağırır ve orada ona saldırarak onu öldürür. Kitab-ı Mukaddes cinayetin hangi aletle işlendiğini söylemez. Sanatta görülen eşek çene kemiği, sopa, taş ya da tarım aleti sonradan oluşan geleneklerden ve ressamların tercihlerinden gelir. Tanrı Kabil'e kardeşinin nerede olduğunu sorar. Kabil \"Ben kardeşimin bekçisi miyim?\" diye karşılık verir. Tanrı, Habil'in kanının topraktan kendisine feryat ettiğini söyler.",
+    "Tanrı, Kabil'i lanetler: Toprak artık ona ürün vermeyecek, o da yeryüzünde kaçak ve serseri olarak dolaşacaktır. Kabil cezasının ağırlığından yakınınca Tanrı, kimse onu öldürmesin diye üzerine bir işaret koyar. Kabil de Aden'in doğusundaki Nod diyarına gider.",
+    "Öykü, kıskançlığın, kardeş katlinin ve suçun yeryüzüne yayılışının ilk örneği sayılır. Hristiyan yorumunda masum ve kurbanı kabul edilen Habil, haksız yere kanı dökülen İsa'nın bir ön örneği olarak görülmüştür. Yeni Ahit de Habil'i imanıyla övülen doğru bir kişi olarak anar."
+   ],
+   "tanima": [
+    "Biri saldıran, diğeri yere yıkılmış iki genç ya da yetişkin erkek; öldürme anı çoğunlukla dramatik bir çapraz kompozisyonla verilir.",
+    "Kabil'in elinde sopa, taş, çene kemiği ya da çapa ve tırpan gibi bir tarım aleti; Habil'in yanında kuzu veya koyun ile çoban asası bulunur.",
+    "İki sunak ya da ateş: Habil'inkinin dumanı göğe yükselir, Kabil'inkinin dumanı yere çöker. Bu ayrıntı metinde yoktur, yaygın bir resim geleneğidir.",
+    "Açık arazi, kır ya da tarla; arka planda ekin demetleri veya meyve gibi Kabil'in sunusu görülebilir.",
+    "Cinayet sonrası sahnelerde gökten seslenen ya da beliren Tanrı ve korkuyla kaçan, yüzünü kapatan Kabil yer alır."
+   ],
+   "eserler": [
+    [
+     "Q85860172",
+     "tintoretto"
+    ],
+    [
+     "Q26722830",
+     "bartolomeo-manfredi"
+    ],
+    [
+     "odilon-redon|Cain and Abel",
+     "odilon-redon"
+    ]
+   ]
+  },
+  {
+   "id": "presentation-of-the-virgin",
+   "ad": "Meryem'in Tapınağa Sunuluşu",
+   "ozgun": "Presentation of the Virgin",
+   "tur": "yeni_ahit",
+   "ozet": "Küçük Meryem'i anne babası Yoakim ile Anna, verdikleri adağı yerine getirmek için Kudüs Tapınağı'na getirir ve onu Tanrı'ya adar.",
+   "kaynak": "Apokrif: Yakup'un İlk İncili (Protoevangelium); ayrıca Sözde-Matta İncili ve Altın Efsane (Yeni Ahit'te yer almaz)",
+   "hikaye": [
+    "Bu konu, verilen 'Yeni Ahit' etiketine rağmen Kitab-ı Mukaddes'te geçmez. Kanonik İnciller Meryem'in çocukluğundan hiç söz etmez. Hikâye, 2. yüzyıla tarihlenen apokrif Yakup'un İlk İncili'ne dayanır. Buna göre uzun süre çocuksuz kalan Yoakim ile Anna, bir çocukları olursa onu Tanrı'ya adayacaklarına söz verir. Meryem doğar ve üç yaşına geldiğinde anne babası onu Kudüs Tapınağı'na götürür.",
+    "Anlatıya göre çocuğun geri dönmeye heves etmemesi için ellerinde kandillerle İbrani bakireler ona eşlik eder. Kâhin (gelenekte çoğunlukla Vaftizci Yahya'nın babası Zekeriya ile özdeşleştirilir) Meryem'i kabul edip kutsar ve onu sunağın üçüncü basamağına oturtur. Küçük kız orada sevinçle dans eder ve bütün İsrail halkı onu sever. Meryem on iki yaşına dek tapınakta kalır ve bu süre boyunca bir meleğin elinden beslenir.",
+    "Sonraki gelenekler sahneyi zenginleştirmiştir. Sözde-Matta İncili ve onu izleyen Altın Efsane, tapınağın on beş basamaklı bir merdiveni olduğunu anlatır. Bu kaynaklara göre küçük Meryem bu basamakları kimsenin yardımı olmadan, arkasına bakmadan tek başına tırmanır. Ressamların sahneyi büyük bir merdiven etrafında kurmasının nedeni bu ayrıntıdır.",
+    "Konu, Meryem'in doğuştan Tanrı'ya adanmışlığını ve saflığını vurgular. Doğu Kilisesi'nde büyük bayramlardan biri olarak (21 Kasım) önem taşır. Batı'da ise Meryem'in hayatını anlatan resim dizilerinin yerleşik bir sahnesi hâline gelmiştir."
+   ],
+   "tanima": [
+    "Yüksek bir merdiveni tek başına tırmanan küçük bir kız çocuğu (Meryem), çoğu zaman başında hâleyle",
+    "Merdivenin tepesinde onu karşılayan, kollarını açmış yaşlı başrahip ya da kâhin",
+    "Merdivenin dibinde onu izleyen anne babası Yoakim ile Anna",
+    "Görkemli tapınak mimarisi: basamaklar, sütunlar, sunak",
+    "Mum ya da kandil taşıyan genç kızlar ve sahneyi izleyen kalabalık"
+   ],
+   "eserler": [
+    [
+     "Q3910927",
+     "giotto-di-bondone"
+    ],
+    [
+     "Q11826430",
+     "tintoretto"
+    ],
+    [
+     "Q140161106",
+     "daniele-da-volterra"
+    ]
+   ]
+  },
+  {
+   "id": "saint-roch",
+   "ad": "Aziz Roch (San Rocco)",
+   "ozgun": "Saint Roch",
+   "tur": "aziz",
+   "ozet": "Veba salgınında hastalara bakan, sonra kendisi de vebaya yakalanıp ormanda bir köpeğin getirdiği ekmekle hayatta kalan ve vebaya karşı koruyucu aziz olarak sevilen Fransız hacının hikâyesi.",
+   "kaynak": "Kitab-ı Mukaddes'te yer almaz; 15. yüzyılda yazıya geçmiş azizlik anlatıları (hagiografi) ve halk geleneği",
+   "hikaye": [
+    "Aziz Roch'un hayatı Kitab-ı Mukaddes'e değil, ölümünden yaklaşık bir asır sonra yazıya geçirilen azizlik anlatılarına dayanır. Tarihsel bilgiler belirsizdir, anlatılar da birbirinden ayrıntılarda ayrılır. Geleneğe göre Roch 14. yüzyılda Montpellier'de varlıklı bir ailenin çocuğu olarak doğdu. Anne babasını genç yaşta kaybedince mirasını yoksullara dağıttı ve hacı kılığında Roma'ya doğru yola çıktı.",
+    "İtalya'da veba salgınına rastladı. Kaçmak yerine kasaba kasaba dolaşıp hastalara baktı. Anlatıya göre üzerlerine haç çıkararak pek çoğunu mucizevi biçimde iyileştirdi. Sonunda kendisi de vebaya yakalandı. Kimseye yük olmamak için bir ormana çekildi. Burada her gün bir köpek ona efendisinin sofrasından ekmek getirdi ve yaralarını yaladı. Bazı anlatılarda bir melek de yanına gelip onu iyileştirir. Köpeğin sahibi, sonradan Roch'un izinden giden Gothard adlı bir soyluydu.",
+    "İyileşen Roch memleketine döndü. Ancak savaş ortamında casus sanılarak tutuklandı. Kimliğini açıklamadı ve yıllarca hapiste kaldıktan sonra orada öldü. Kimliği ancak ölümünden sonra, göğsündeki haç biçimli doğum lekesinden anlaşıldı.",
+    "Roch, Avrupa'yı defalarca kasıp kavuran veba salgınları yüzünden çok sevilen bir koruyucu aziz oldu. Kalıntılarının 15. yüzyılın sonunda Venedik'e getirildiği kabul edilir. Bu nedenle kente özel bir bağı vardır ve Venedik'teki Scuola Grande di San Rocco onun adını taşır. Salgın dönemlerinde kiliselere ve adak resimlerine sıkça konu edildi."
+   ],
+   "tanima": [
+    "Hacı kıyafeti: pelerin, geniş kenarlı şapka, uzun asa ve çoğu zaman beline ya da asasına asılı su kabağı",
+    "Şapkada veya pelerinde hacıların simgesi olan deniz kabuğu, bazen de Roma hacılarını gösteren çapraz anahtarlar",
+    "En belirgin işaret: azizin elbisesini kaldırıp uyluğundaki veba yarasını göstermesi",
+    "Ayağının dibinde, çoğu zaman ağzında bir somun ekmek taşıyan köpek",
+    "Yarasına dokunan ya da onu iyileştiren bir melek",
+    "Çevresinde veba hastaları veya yoksullar; kurtuluş sahnelerinde bulutlar ve meleklerle göğe yükselen aziz"
+   ],
+   "eserler": [
+    [
+     "Q16551556",
+     "annibale-carracci"
+    ],
+    [
+     "Q204243",
+     "tintoretto"
+    ],
+    [
+     "giovanni-battista-tiepolo|Saint Roch Carried to Heaven by Angels",
+     "giovanni-battista-tiepolo"
+    ]
+   ]
+  },
+  {
+   "id": "lictors-bringing-brutus-the-bodies-of-his-sons",
+   "ad": "Brutus'a Oğullarının Cesetlerini Getiren Liktörler",
+   "ozgun": "Lictors Bringing Brutus the Bodies of his Sons",
+   "tur": "tarih_edebiyat",
+   "ozet": "Roma Cumhuriyeti'nin kurucusu Lucius Junius Brutus, krallığı geri getirmek için komplo kuran oğullarını ölüme mahkûm eder ve devlete bağlılığı uğruna babalık duygularını feda eder.",
+   "kaynak": "Titus Livius, Roma'nın Kuruluşundan İtibaren (Ab Urbe Condita); ayrıca Plutarkhos, Publicola'nın Hayatı",
+   "hikaye": [
+    "Lucretia'nın kral ailesinden Sextus Tarquinius tarafından tecavüze uğrayıp canına kıymasının ardından Lucius Junius Brutus halkı ayaklandırdı ve son kral Tarquinius Superbus'u Roma'dan kovdu. Krallık kaldırıldı, yerine her yıl seçilen iki konsülün yönettiği cumhuriyet kuruldu. Brutus ilk konsüllerden biri oldu.",
+    "Kısa süre sonra bazı genç soylular sürgündeki Tarquinius ailesini yeniden tahta çıkarmak için gizlice anlaştı. Komplocular arasında Brutus'un iki oğlu Titus ve Tiberius da vardı. Livius'a göre bir köle konuşmalarına kulak misafiri oldu ve durumu yetkililere bildirdi. Suçlular yakalanıp yargılandı. Konsül olarak cezayı uygulatmak Brutus'a düşüyordu. Oğulları herkesin gözü önünde soyuldu, değneklerle dövüldü ve baltayla başları kesildi. Livius, Brutus'un infazı izlediğini ve cezanın uygulanması sırasında yüzünden bir babanın acısının okunduğunu yazar.",
+    "Hikâye, kamu görevini ve yasaya bağlılığı kişisel bağların üstünde tutan Roma erdeminin (virtus) en sert örneklerinden biri olarak anılır. Daha önceki ressamlar genellikle yargılama ya da infaz anını işlemiştir. Liktörlerin cesetleri eve getirdiği an ise antik kaynaklarda doğrudan anlatılmaz. Bu sahne büyük ölçüde sonradan kurgulanmıştır ve Voltaire'in Brutus tragedyası gibi 18. yüzyıl yorumlarının etkisi sıkça anılır. David'in 1787 tarihli tablosu bu anı ünlü kılmıştır. Tablo, Fransız Devrimi öncesi ve sırasında cumhuriyetçi fedakârlığın simgesi olarak okunmuştur."
+   ],
+   "tanima": [
+    "Gölgede, düşünceli ve kaskatı oturan yaşlı bir Romalı erkek (Brutus), çoğu zaman acısını gizleyen bir duruşla ve sırtını arkasından taşınan oğullarının cesetlerine dönmüş hâlde",
+    "Fasces (değnek demeti ve balta) taşıyan liktörler ve bir sedye üzerinde taşınan genç erkek cesetleri",
+    "Aydınlıkta yas tutan, çığlık atan ya da bayılan kadınlar (Brutus'un karısı ve kızları); erkeklerin stoacı sessizliğiyle kadınların duygu taşkınlığı arasındaki karşıtlık",
+    "Roma tanrıçası ya da Roma'yı simgeleyen bir heykel, devletin aileye üstünlüğünü vurgular",
+    "Sade, sütunlu bir Roma evi iç mekânı ve neoklasik, sahne düzenine benzer bir kompozisyon"
+   ],
+   "eserler": [
+    [
+     "jacques-louis-david|Study for the Wife and Daughters of Brutus (recto); Study of a Male Nude (verso)",
+     "jacques-louis-david"
+    ],
+    [
+     "jacques-louis-david|Study for The Lictors Bringing Brutus the Bodies of his Sons",
+     "jacques-louis-david"
+    ],
+    [
+     "jacques-louis-david|The Lictors Bringing Brutus the Bodies of his Sons",
+     "jacques-louis-david"
+    ]
+   ]
+  },
+  {
+   "id": "death-of-socrates",
+   "ad": "Sokrates'in Ölümü",
+   "ozgun": "Death of Socrates",
+   "tur": "tarih_edebiyat",
+   "ozet": "Atina mahkemesince ölüme mahkûm edilen filozof Sokrates, kaçma fırsatını reddederek dostlarıyla ruhun ölümsüzlüğünü tartışır ve baldıran zehrini sakince içerek ölür.",
+   "kaynak": "Platon, Phaidon (ayrıca Sokrates'in Savunması ve Kriton)",
+   "hikaye": [
+    "MÖ 399'da Atina'da yetmiş yaşındaki Sokrates, şehrin tanrılarını tanımamak ve gençleri baştan çıkarmakla suçlanarak yargılandı ve ölüme mahkûm edildi. Platon'un Savunma'sında, Sokrates'in yargıçlar önünde görüşlerinden vazgeçmeyi reddettiği anlatılır. Cezanın infazı, Delos'a giden kutsal geminin dönüşüne kadar ertelendiği için filozof bir süre hapiste kaldı.",
+    "Platon'un Kriton diyaloğunda, yakın dostu Kriton hapishaneye gelip kaçış planını açar. Sokrates ise yasalara karşı gelmenin haksızlık olacağını, bir ömür boyunca bağlı kaldığı şehrin kurallarını şimdi çiğneyemeyeceğini söyleyerek teklifi reddeder.",
+    "Son gün Phaidon diyaloğunda anlatılır. Anlatıcı Phaidon'dur; Platon'un hasta olduğu için orada bulunmadığı belirtilir. Sokrates eşi Ksantippe'yi ve çocuğunu gönderir, dostlarıyla ruhun ölümsüzlüğünü tartışır. Akşamüstü On Birler'in görevlisi gözyaşları içinde vedalaşıp ayrılır; ardından zehri hazırlayan adam kâseyi getirir. Sokrates kâseyi sakince içer, ağlayan dostlarını azarlar, biraz dolaştıktan sonra uzanır. Uyuşma bacaklarından yukarı doğru yayılır. Son sözleri Kriton'a yöneliktir: Asklepios'a bir horoz borçlu olduklarını ve bunu ödemeleri gerektiğini söyler.",
+    "Sahne, ilkeleri uğruna ölümü soğukkanlılıkla kabul eden bilgenin simgesi hâline geldi. Özellikle 18. yüzyıl Neoklasik resminde erdem, akıl ve yurttaşlık görevi temalarını işlemek için sıkça seçildi."
+   ],
+   "tanima": [
+    "Hapishane hücresinde, yatağın ya da sedirin üzerinde oturan, yaşlı ve sakallı, çoğunlukla yarı çıplak bir filozof",
+    "Bir görevlinin uzattığı ya da Sokrates'in eline aldığı zehir (baldıran) kâsesi",
+    "Konuşmayı sürdüren Sokrates'in yukarıyı ya da göğü işaret eden öğretici el jesti; Neoklasik tasvirlerde yaygındır",
+    "Etrafında yas tutan, ağlayan, yüzünü kapatan ya da duvara yaslanan öğrenciler ve dostlar; Sokrates'in dizine dokunan Kriton",
+    "Arka planda uzaklaştırılan Ksantippe ve kadınlar; yüzünü çeviren ya da ağlayan zindancı",
+    "Sade, taş duvarlı, zincirlerin görülebildiği kasvetli mekân"
+   ],
+   "eserler": [
+    [
+     "jacques-louis-david|Crito",
+     "jacques-louis-david"
+    ],
+    [
+     "jacques-louis-david|The Death of Socrates",
+     "jacques-louis-david"
+    ],
+    [
+     "Q1752990",
+     "jacques-louis-david"
     ]
    ]
   }
