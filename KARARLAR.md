@@ -778,3 +778,11 @@ Dayanak: aralıklı tekrar ve karışık (interleaved) çalışma zaten vardı. 
 3. **`data/basyapitlar.json`** (isteğe bağlı; yoksa sayfa "Henüz yakın okuma yok" der). Yalnızca açılınca indirilir.
 4. **Ekranlar:** Göz At'ın başında "Başyapıt okumaları" girişi → akımlara göre zaman sıralı liste (`#/basyapitlar`; kursta henüz işlenmemiş sanatçılarda "henüz kursta yok" rozeti, ama okunabilir) → okuma sayfası (`#/basyapit/<anahtar>`; büyük görsel, dokununca görüntüleyici). Sanatçı sayfasında o sanatçının okumasına "Yakın okuma" bağlantısı.
 5. Sürüm 1.15.0.
+
+## İş 9 · Konular ve hikâyeleri (2026-10-21)
+
+1. **Neden:** Avrupa resminin büyük kısmı aynı İncil, aziz ve mitoloji hikâyelerini anlatır; hikâyeyi bilmeden resim okunmaz. Aynı konunun farklı ressamlardaki hâlini yan yana görmek üslubu da öğretir.
+2. **Üretim** (`icerik/claude_konular.py`): (a) 7.450 eserin konusu adlarından bulundu (Sonnet 5.5, Batch); yerleşik İngilizce konu adlarına indirgendi (ör. "Descent from the Cross" → Deposition). (b) En az 3 eserde geçen en çok 120 konu için Opus 5.5 Türkçe hikâye (kaynağıyla), tek cümlelik özet ve "resimde nasıl tanınır" işaretleri yazdı; ayrı bir istekte denetlendi.
+3. **`data/ikonografi.json`** (isteğe bağlı): konular ve her konunun eserleri (`[anahtar, sanatçıId]`, zaman sırasıyla).
+4. **Ekranlar:** Göz At'ta "Konular ve hikâyeleri" → türe göre liste (Eski Ahit, Yeni Ahit, Azizler, Mitoloji, Tarih ve edebiyat) → konu sayfası: hikâye, tanıma işaretleri, bu konuyu işleyen bütün eserler (ızgara; dokununca görüntüleyicide aralarında geçiş). Görüntüleyicide eserin konusu varsa "Konu: … →" bağlantısı (cevaptan önceki gizli kipte gösterilmez). Konu verisi açılıştan 1,5 sn sonra arka planda yüklenir.
+5. Eser nesnelerine `sid` (sanatçı kimliği) eklendi. Sürüm 1.16.0.

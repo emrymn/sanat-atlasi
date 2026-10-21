@@ -2,6 +2,7 @@
 import { kacis } from './yardimci.js';
 import { ikon } from './tasarim.js';
 import { gorselUrl, gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle } from './gorsel.js';
+import { eserKonusu } from './ikonografi.js';
 
 const EN_BUYUK = 6;
 
@@ -79,8 +80,10 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     if (!gizli) {
       const sayfa = gorselSayfasi(g);
       const not = notu ? notu(e) : '';
+      const konu = eserKonusu(e);
       alt.innerHTML = `<p class="gor-baslik">${kacis(e.ad || e.baslik)}${e.tarih ? ` <span class="ikincil">· ${kacis(e.tarih)}</span>` : ''}</p>${e.ad && e.ad !== e.baslik ? `<p class="gor-ozgun" data-test="ozgun-ad">${kacis(e.baslik)}</p>` : ''}
         ${not ? `<p class="gor-not" data-test="eser-notu">${kacis(not)}</p>` : ''}
+        ${konu ? `<a class="gor-konu" href="#/konu/${encodeURIComponent(konu.id)}" data-gor-konu data-test="gor-konu">Konu: ${kacis(konu.ad)} →</a>` : ''}
         <p class="gor-kaynak">${kacis(kaynakYazisi(e, g))}${sayfa ? ` · <a href="${kacis(sayfa)}" target="_blank" rel="noopener">${g.k === 'wikiart' ? 'eser sayfası' : 'kaynak sayfası'}</a>` : ''}${eserler.length > 1 ? ` · ${sira + 1} / ${eserler.length}` : ''}</p>`;
     }
     // komşuları önceden yükle
@@ -129,6 +132,10 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   document.addEventListener('keydown', tus);
 
   kok.querySelector('.gor-kapat').addEventListener('click', kapat);
+  // "Konu:" bağlantısı: görüntüleyici kapanır, sayfa konu ekranına geçer
+  alt.addEventListener('click', (ev) => {
+    if (ev.target.closest('[data-gor-konu]')) kapat();
+  });
   kok.querySelector('.gor-kotu').addEventListener('click', kotuGorsel);
   const onceki = kok.querySelector('.gor-onceki');
   const sonraki = kok.querySelector('.gor-sonraki');
