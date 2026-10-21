@@ -11,11 +11,13 @@ export function tanismaGerekirMi(skor) {
 
 // Tanışmada gösterilecek eserler: uygun olanlar arasından en bilinenler, sorulacak eser hariç
 // (soru tanışmada görülmeyen bir eserle gelsin).
-export function tanismaEserleri(havuz, haricAnahtar, adet = 3) {
+// kolaylik(e): varsa en tipik/ünlü eserler önce (zorluk puanı), yoksa bilinirlik (sl)
+export function tanismaEserleri(havuz, haricAnahtar, adet = 3, kolaylik = null) {
+  const p = (e) => (kolaylik && typeof kolaylik(e) === 'number' ? kolaylik(e) : -1);
   return havuz
     .filter((e) => e.anahtar !== haricAnahtar)
     .map((e, i) => ({ e, i }))
-    .sort((a, b) => (b.e.sl || 0) - (a.e.sl || 0) || a.i - b.i)
+    .sort((a, b) => p(b.e) - p(a.e) || (b.e.sl || 0) - (a.e.sl || 0) || a.i - b.i)
     .slice(0, adet)
     .map((x) => x.e);
 }

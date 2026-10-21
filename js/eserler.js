@@ -208,12 +208,34 @@ export function pekistirmeHavuzu(eserler, kotuler = {}) {
   return eserler.filter((e) => pekistirmeyeUygunMu(e, kotuler)).slice(0, TEST_HAVUZU);
 }
 
-// Pekiştirmede gösterilecek eseri seç: son gösterilenlerden kaçın.
-export function eserSec(eserler, sonGosterilenler = [], rng = Math.random, kotuler = {}) {
+// Zorluk dilimi: kolaylık puanı olan adaylardan sanatçının seviyesine uyan kısım (bkz. KARARLAR İş 7).
+// seviye: sanatçının sanatçı sorusundaki Leitner kutusu (yeni = 0). 0–1 → en kolay yarı, 4–5 → en zor yarı, 2–3 → hepsi.
+// Puanı olmayan eserler yalnızca orta seviyede seçilir; puanlı aday 2'den azsa süzme yapılmaz.
+export function zorlukDilimi(adaylar, kolaylik, seviye) {
+  if (!kolaylik || seviye === null || seviye === undefined) return adaylar;
+  const puanli = adaylar.map((e, i) => ({ e, i, p: kolaylik(e) })).filter((x) => typeof x.p === 'number');
+  if (puanli.length < 2) return adaylar;
+  if (seviye >= 2 && seviye <= 3) return adaylar;
+  puanli.sort((a, b) => b.p - a.p || a.i - b.i);
+  const yari = Math.ceil(puanli.length / 2);
+  return (seviye <= 1 ? puanli.slice(0, yari) : puanli.slice(puanli.length - yari)).map((x) => x.e);
+}
+
+// Pekiştirmede gösterilecek eseri seç: son gösterilenlerden kaçın; puan varsa sanatçının seviyesine göre zorluk.
+export function eserSec(eserler, sonGosterilenler = [], rng = Math.random, kotuler = {}, { kolaylik = null, seviye = null } = {}) {
   const havuz = pekistirmeHavuzu(eserler, kotuler);
   if (!havuz.length) return null;
   const kacinilacak = new Set(sonGosterilenler.slice(-Math.min(5, havuz.length - 1)));
   const adaylar = havuz.filter((e) => !kacinilacak.has(e.anahtar));
-  const liste = adaylar.length ? adaylar : havuz;
+  const liste = zorlukDilimi(adaylar.length ? adaylar : havuz, kolaylik, seviye);
   return liste[Math.floor(rng() * liste.length)];
+}
+
+// Eser kolaylık puanları (data/eser_zorluk.json): anahtar QID ya da "sanatçıId|başlık", değer 2 (zor) … 10 (kolay)
+export function kolaylikAl(json) {
+  const k = json && typeof json === 'object' ? json.kolaylik : null;
+  if (!k || typeof k !== 'object' || Array.isArray(k)) return {};
+  const sonuc = {};
+  for (const [a, v] of Object.entries(k)) if (Number.isFinite(v) && v >= 2 && v <= 10) sonuc[a] = v;
+  return sonuc;
 }
