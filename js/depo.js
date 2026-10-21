@@ -1,6 +1,7 @@
 // İlerleme nesnesi: localStorage'da tutulur, IndexedDB'ye yansıtılır (yedek).
 import { idbAl, idbKoy } from './idb.js';
 import { bugunStr } from './leitner.js';
+import { karisanlarDogrula } from './ogrenme.js';
 
 export const ANAHTAR = 'sanat-atlasi:ilerleme';
 // 2: "Gece galerisi" teması varsayılan oldu (eski varsayılan Sepya ve kaldırılan Koyu bir kez Gece'ye geçer)
@@ -12,13 +13,14 @@ export function varsayilanIlerleme(islenen = []) {
   return {
     surum: SURUM,
     islenen: islenen.slice(),
-    ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA },
+    ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA, tanisma: true },
     skorlar: {},
     gunluk: { tarih: bugunStr(), yeni: 0, kart: 0, yeniIdler: [] },
     sonEserler: {},
     kotuGorseller: {},
     ekSanatcilar: [],
     sonCalisilanlar: [],
+    karisanlar: {},
     olusturma: new Date().toISOString(),
   };
 }
@@ -50,6 +52,7 @@ export function ilerlemeDogrula(nesne) {
   if (!(v.surum >= 2) && (ayarlar.tema === 'sepya' || ayarlar.tema === 'koyu')) ayarlar.tema = VARSAYILAN_TEMA;
   if (!TEMALAR.includes(ayarlar.tema)) ayarlar.tema = VARSAYILAN_TEMA;
   ayarlar.gunlukKart = Math.min(100, Math.max(5, parseInt(ayarlar.gunlukKart, 10) || 20));
+  ayarlar.tanisma = ayarlar.tanisma !== false;
   return {
     ...t,
     islenen: [...new Set(v.islenen)].sort((a, b) => a - b),
@@ -63,6 +66,7 @@ export function ilerlemeDogrula(nesne) {
     kotuGorseller: kotuGorselleriDogrula(v.kotuGorseller),
     ekSanatcilar: Array.isArray(v.ekSanatcilar) ? [...new Set(v.ekSanatcilar.filter((x) => typeof x === 'string'))] : [],
     sonCalisilanlar: Array.isArray(v.sonCalisilanlar) ? [...new Set(v.sonCalisilanlar.filter((x) => typeof x === 'string'))].slice(0, SON_CALISILAN) : [],
+    karisanlar: karisanlarDogrula(v.karisanlar),
     olusturma: v.olusturma || t.olusturma,
   };
 }

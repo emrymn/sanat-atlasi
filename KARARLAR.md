@@ -748,3 +748,12 @@ Toplam: 13 sanatçıya 388 WikiArt eseri (yeni ya da mevcut esere katılan). Ön
 5. **Günün sanatçısı havuzu:** eser önbelleği varken yalnızca önbellekte kaydı olan sanatçılardan seçilir (görseli çevrimdışı da hazır olsun). Yeni eklenen 16 sanatçı önbellek yenilenince havuza girer. Havuz değiştiği için günün sanatçısı sırası da değişti.
 6. **Akım bilgisi kaynak satırı:** denetimden geçen 28 akımda "Qwen denetimi bekliyor" yerine "Qwen ve Kimi ile denetlendi"; yeni akımda "henüz denetlenmedi".
 7. Tavan freskleri (Gaulli, Pozzo, Giordano) telefonda küçük görünebilir; görsel denetiminde bakılacak. Sürüm 1.11.0.
+
+## İş 5 · Öğrenme yöntemi: tanışma ve karşıtlık (2026-10-21)
+
+Dayanak: aralıklı tekrar ve karışık (interleaved) çalışma zaten vardı. Eksik iki şey eklendi: yeni sanatçıyla ilk karşılaşmadan önce kısa bir tanışma ve sık karıştırılan ikilileri yan yana görme (Kang ve Pashler 2012, ressam üsluplarının yan yana gösterildiğinde daha iyi ayırt edildiğini bulmuştu).
+
+1. **Tanışma:** Bir sanatçı hiç sorulmamışsa (ne sanatçı ne akım skoru var) ilk kartından önce tanışma ekranı gelir: ad, yıllar, akım, en bilinen 3 uygun eser (dokununca görüntüleyici, eser notuyla) ve "Nasıl tanırım?" metni. Soru, tanışmada gösterilmeyen bir eserle gelir. Yarım oturumdan dönülen kartta tanışma tekrarlanmaz. Ayarlar'da "Yeni sanatçıyla önce tanış" anahtarıyla kapatılabilir (`ayarlar.tanisma`, varsayılan açık). Testlerde `window.__atlasTanismaYok` ile kapalıdır; `tests/e2e/ogrenme.spec.js` açar.
+2. **Karıştırılan ikililer:** Sanatçı sorusunda her yanlış cevap `ilerleme.karisanlar` içinde ikili olarak sayılır (`"a|b": { n, son }`, yedeğe dahil). Aynı ikili 2. kez (ve sonrasında) karıştırılınca cevap yaprağında iki sanatçının en bilinen ikişer eseri yan yana gösterilir (sorulan eser hariç); tam karşılaştırma bağlantısı da durur.
+3. **İlerleme:** "En çok karıştırdıkların" bölümü: en az 2 kez karıştırılan en fazla 5 ikili, yan yana karşılaştırma ekranına bağlantıyla.
+4. Mantık `js/ogrenme.js`'de (birim testli). Sürüm 1.12.0.

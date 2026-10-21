@@ -16,8 +16,9 @@ import { paletGetir, renkTemasi } from './renk.js';
 import { idbAl, idbKoy, idbSil } from './idb.js';
 import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from './devam.js';
 import { taninmaMetni, eserNotu, notlariAl, karsilastirmaAdresi, benzerSanatcilar } from './karsilastir.js';
+import { tanismaGerekirMi, tanismaEserleri, karisanEkle, enCokKarisanlar, KARISAN_ESIGI } from './ogrenme.js';
 
-const SURUM = '1.11.0';
+const SURUM = '1.12.0';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -977,6 +978,7 @@ async function kartCiz() {
       o.oturum.ilerle();
       return kartCiz();
     }
+    hazir.tanisma = tanismaAcik() && tanismaGerekirMi(d.ilerleme.skorlar[hazir.id]);
     o.kart = hazir;
     o.gosterilen.push({ id: hazir.id, eser: hazir.eser.anahtar });
     yarimKaydet(o);
@@ -1098,8 +1100,71 @@ function ipucuMetni(s) {
   return taninma(s) || s.kurs_notu || s.anlatim || '';
 }
 
+// Aynı ikiliyi KARISAN_ESIGI kez karıştırınca cevap yaprağında iki sanatçının ikişer eseri yan yana
+function karsiSeritHtml(dogruS, secilenS, n) {
+  const sutun = (x, etiketYazi) =>
+    `<div class="karsi-sutun"><span class="karsi-ad">${etiketYazi} · <b>${kacis(bilinenAd(x.ad, d.kisaAdlar[x.id]))}</b></span><div class="karsi-kucukler" data-karsi="${kacis(x.id)}"><span></span><span></span></div></div>`;
+  return `<div class="karsi-serit" data-test="karsi-serit">
+      <p class="karsi-baslik">Bu ikisini ${n}. kez karıştırdın. Yan yana bak:</p>
+      <div class="karsi-ikili">${sutun(dogruS, 'Doğrusu')}${sutun(secilenS, 'Senin cevabın')}</div>
+    </div>`;
+}
+
+function karsiSeritDoldur() {
+  const soruEseri = d.oturum && d.oturum.kart && d.oturum.kart.eser ? d.oturum.kart.eser.anahtar : null;
+  for (const kutu of ekran.querySelectorAll('[data-karsi]')) {
+    const s = d.harita.get(kutu.dataset.karsi);
+    if (!s) continue;
+    sanatciEserleri(s).then((eserler) => {
+      if (!kutu.isConnected) return;
+      const iki = bilinirlikSirasi(pekistirmeHavuzu(eserler, kotuler()).filter((e) => e.anahtar !== soruEseri)).slice(0, 2);
+      kutu.innerHTML = iki.map((e) => `<span>${kucukGorsel(e, 400)}</span>`).join('') + '<span></span>'.repeat(2 - iki.length);
+    });
+  }
+}
+
+// Ayarlardan kapatılabilir (testler window.__atlasTanismaYok ile kapatır)
+function tanismaAcik() {
+  return d.ilerleme.ayarlar.tanisma !== false && !window.__atlasTanismaYok;
+}
+
+// Yeni sanatçı: sorudan önce en bilinen 3 eseri (sorulacak eser hariç) ve "Nasıl tanırım?"
+function tanismaGoster(o) {
+  const k = o.kart;
+  const s = d.harita.get(k.id);
+  const ot = o.oturum;
+  const eserler = tanismaEserleri(pekistirmeHavuzu(k.eserler || [], kotuler()), k.eser.anahtar, 3);
+  k.tanismaEserleri = eserler;
+  const ipucu = ipucuMetni(s);
+  ciz(`<header class="soru-ust">
+      <button class="kapat" type="button" data-geri="#/pekistir" aria-label="Kapat">${ikon('kapat', 22, 1.7)}</button>
+      <span class="etiket">${kacis(kipKisa(o.kip, o.akim))}</span>
+      <span data-test="sayac">${Math.min(ot.konum + 1, ot.toplam)} / ${ot.toplam}</span>
+    </header>
+    <section class="tanisma" data-test="tanisma">
+      ${etiket('Yeni sanatçı · önce tanış', { vurgu: true })}
+      ${isimHtml(s, { etiketAdi: 'h2', sinif: 'tanisma-ad', ek: ' tabindex="-1"' })}
+      <p class="meta">${kacis(yillarYaz(s))} · ${kacis(s.akim)}</p>
+      ${
+        eserler.length
+          ? `<div class="tanisma-eserler">${eserler
+              .map((e, i) => {
+                const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
+                return `<button class="tanisma-eser" type="button" data-tanisma-eser="${i}" aria-label="${kacis(e.baslik)} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselUrl(g, 800))}"></button>`;
+              })
+              .join('')}</div>`
+          : ''
+      }
+      ${ipucu ? `<p class="okuma tanisma-not">${kacis(ipucu)}</p>` : ''}
+      <p class="kucuk ikincil">Birazdan bu sanatçının burada görmediğin bir eseri sorulacak.</p>
+      <button class="dugme vurgu tanisma-gec" type="button" data-tanisma-gec>Tanıdım, soruya geç →</button>
+    </section>`);
+  ekran.querySelector('.tanisma-ad').focus({ preventScroll: true });
+}
+
 function kartGoster(o) {
   const k = o.kart;
+  if (k.tanisma) return tanismaGoster(o);
   const s = d.harita.get(k.id);
   const ot = o.oturum;
   const karisik = o.kip === 'karisik';
@@ -1130,8 +1195,10 @@ function kartGoster(o) {
       sonuc = dogru ? 'Doğru' : `Yanlış · ${tekrarNotu}`;
       bilgi = `${s.ad} · ${eserAdi(k.eser)}`;
       not = karisik && akimiAciklarMi(ipucu, s.akim) ? '' : ipucu;
+      if (!dogru && k.cevapSanatci && d.harita.has(k.cevapSanatci) && (k.karisanSayi || 0) >= KARISAN_ESIGI)
+        karsilastirBag = karsiSeritHtml(s, d.harita.get(k.cevapSanatci), k.karisanSayi);
       if (!dogru && k.cevapSanatci && d.harita.has(k.cevapSanatci))
-        karsilastirBag = `<a class="karsilastir-bag" href="${karsilastirmaAdresi(s.id, k.cevapSanatci)}" data-test="karsilastir">${ikon('karsilastir', 18, 1.6)}<span>Karşılaştır: ${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))} ↔ ${kacis(bilinenAd(d.harita.get(k.cevapSanatci).ad, d.kisaAdlar[k.cevapSanatci]))}</span></a>`;
+        karsilastirBag += `<a class="karsilastir-bag" href="${karsilastirmaAdresi(s.id, k.cevapSanatci)}" data-test="karsilastir">${ikon('karsilastir', 18, 1.6)}<span>Karşılaştır: ${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))} ↔ ${kacis(bilinenAd(d.harita.get(k.cevapSanatci).ad, d.kisaAdlar[k.cevapSanatci]))}</span></a>`;
       ileri = karisik
         ? '<button class="dugme acik" type="button" data-ikinci>Hangi akım? →</button>'
         : `<button class="dugme acik" type="button" data-sonraki>${sonrakiYazi}</button>`;
@@ -1201,6 +1268,7 @@ function kartGoster(o) {
     if (!k.bitti && k.cevapSanatci === null) baskaEser(o);
   });
 
+  karsiSeritDoldur();
   const y = ekran.querySelector('.alt-yaprak');
   if (y) {
     // yaprak son seçeneklerin üstünü örtmesin: sayfanın altına onun kadar boşluk
@@ -1271,6 +1339,17 @@ ekran.addEventListener('click', (e) => {
     return;
   }
   const o = d.oturum;
+  if (e.target.closest('[data-tanisma-gec]') && o && o.kart) {
+    o.kart.tanisma = false;
+    kartGoster(o);
+    ekran.querySelector('.soru-baslik h2').focus({ preventScroll: true });
+    return;
+  }
+  const te = e.target.closest('[data-tanisma-eser]');
+  if (te && o && o.kart && o.kart.tanismaEserleri) {
+    goruntuleyiciAc({ eserler: o.kart.tanismaEserleri, baslangic: Number(te.dataset.tanismaEser), notu: notuIcin(o.kart.id), ...gorselTercihi() });
+    return;
+  }
   const sb = e.target.closest('[data-sanatci]');
   const ab = e.target.closest('[data-akim]');
   if (e.target.closest('[data-buyut]') && o && o.kart) {
@@ -1294,6 +1373,7 @@ ekran.addEventListener('click', (e) => {
     yeniSanatciSay(k.id, o.kip);
     k.cevapSanatci = sb.dataset.sanatci;
     const dogru = k.cevapSanatci === k.id;
+    k.karisanSayi = dogru ? 0 : karisanEkle(d.ilerleme, k.id, k.cevapSanatci, bugun());
     skor(k.id).sanatci = cevapla(skor(k.id).sanatci, dogru, bugun());
     sonCalisilanEkle(d.ilerleme, k.id);
     baskaDeneme = 0;
@@ -1350,6 +1430,20 @@ function ozetCiz() {
 }
 
 // ---------- İlerleme ----------
+// Sık karıştırılan ikililer: yan yana karşılaştırmaya bağlantı
+function karisanlarBolumu() {
+  const liste = enCokKarisanlar(d.ilerleme.karisanlar, { varMi: (id) => d.harita.has(id) });
+  if (!liste.length) return '';
+  const ad = (id) => kacis(bilinenAd(d.harita.get(id).ad, d.kisaAdlar[id]));
+  return `<h2 class="etiket bolum-baslik">En çok karıştırdıkların</h2>
+    <ul class="liste" data-test="karisanlar">${liste
+      .map(
+        (x) =>
+          `<li><a class="satir" href="${karsilastirmaAdresi(x.a, x.b)}"><span class="metin"><b>${ad(x.a)} ↔ ${ad(x.b)}</b><span>${x.n} kez karıştırdın · yan yana bak</span></span>${ikon('karsilastir', 20, 1.4)}</a></li>`,
+      )
+      .join('')}</ul>`;
+}
+
 function ilerlemeSayfasi(kaydirmayiKoru = false) {
   const k = islenen();
   const b = bugun();
@@ -1417,6 +1511,7 @@ function ilerlemeSayfasi(kaydirmayiKoru = false) {
       .join('')}
     <h2 class="etiket bolum-baslik">Akımlara göre doğruluk</h2>
     ${akimSatirlari.length ? `<div style="border-top:1px solid var(--border)">${akimSatirlari.join('')}</div>` : '<p class="ikincil">Henüz açık akım yok.</p>'}
+    ${karisanlarBolumu()}
     <h2 class="etiket bolum-baslik">En zayıf sanatçılar</h2>
     ${
       zayiflar.length
@@ -1505,6 +1600,8 @@ function ayarlarSayfasi() {
           ${TEMALAR.map((t) => `<label><input type="radio" name="tema" value="${t}" ${a.tema === t ? 'checked' : ''}><span>${TEMA_AD[t]}</span></label>`).join('')}
         </div>
       </div>
+      <div class="ayar"><label class="konu"><span class="metin"><b>Yeni sanatçıyla önce tanış</b><small>Bir sanatçı ilk kez sorulmadan önce en bilinen 3 eseri ve “Nasıl tanırım?” notu gösterilir.</small></span>
+        <input class="anahtar" type="checkbox" role="switch" data-ayar-tanisma ${a.tanisma !== false ? 'checked' : ''} aria-label="Yeni sanatçıyla önce tanış"></label></div>
       <div class="ayar"><b>Görselleri çevrimdışı indir</b>
         <p id="indir-bilgi">Açık sanatçıların pekiştirme görselleri (sanatçı başına en fazla ${TEST_HAVUZU}) hesaplanıyor…</p>
         <button class="dugme" type="button" data-indir>İndir</button>
@@ -1635,6 +1732,11 @@ ekran.addEventListener('click', async (e) => {
 });
 
 ekran.addEventListener('change', (e) => {
+  if (e.target.matches('[data-ayar-tanisma]')) {
+    d.ilerleme.ayarlar.tanisma = e.target.checked;
+    kaydet();
+    return;
+  }
   if (e.target.name === 'tema' && TEMALAR.includes(e.target.value)) {
     d.ilerleme.ayarlar.tema = e.target.value;
     kaydet();
