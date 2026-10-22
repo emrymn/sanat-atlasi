@@ -370,7 +370,7 @@ export async function gununSayfasi(id) {
         ${
           bio
             ? `<p class="okuma" data-test="biyografi">${kacis(bio.metin)}</p>
-          <p class="kucuk ikincil" style="margin:4px 0 0">Kaynak: <a href="${kacis(bio.kaynak.url)}" target="_blank" rel="noopener">${kacis(bio.kaynak.ad)}</a>${bio.dil === 'en→tr' ? ' (İngilizceden kısaltılarak çevrildi)' : ''}</p>`
+          <p class="kucuk ikincil" style="margin:4px 0 0">Kaynak: <a href="${kacis(bio.kaynak.url)}" target="_blank" rel="noopener">${kacis(bio.kaynak.ad)}</a>${bio.dil === 'en→tr' ? ' (İngilizceden kısaltılarak çevrildi)' : bio.dil === 'claude' ? ' (bilgilerinden Claude özeti)' : ''}</p>`
             : '<p class="ikincil">Bu sanatçı için biyografi henüz yok.</p>'
         }
       </section>

@@ -1,5 +1,5 @@
 {
- "aciklama": "Kısa biyografiler. tr: Türkçe Vikipedi giriş bölümü (kısaltılmış). en→tr: İngilizce Vikipedi girişinden Claude çevirisi.",
+ "aciklama": "Kısa biyografiler. tr: Türkçe Vikipedi giriş bölümü (kısaltılmış). en→tr: İngilizce Vikipedi girişinden Claude çevirisi. claude: Vikipedi bilgilerine dayanarak Claude tarafından yazılmış kısa özet.",
  "olusturma": "2026-10-20T03:08:23.833Z",
  "sanatcilar": {
   "duccio-di-buoninsegna": {
@@ -1072,6 +1072,158 @@
    "kaynak": {
     "ad": "İngilizce Vikipedi",
     "url": "https://en.wikipedia.org/wiki/Hannah_H%C3%B6ch"
+   }
+  },
+  "guido-reni": {
+   "metin": "Guido Reni (1575–1642) Bolognalı bir ressamdı. Carracci kardeşlerin akademisinde yetişti, 1600'lerin başında Roma'da çalıştı. Casino Rospigliosi'nin tavanındaki Aurora freski (1614) onu ünlü yaptı. Bologna'ya dönünce kentin önde gelen ressamı oldu. Raffaello'yu örnek alan, idealleştirilmiş ve zarif figürleri, yumuşak duyguları ve ilerleyen yıllarda giderek açılan gümüşi renkleriyle tanınır. Masum Çocukların Katliamı ile Atalanta ve Hippomenes en bilinen eserlerindendir. Caravaggio'nun sert gerçekçiliğine karşı klasik ve dingin bir yolu temsil eder.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Guido_Reni"
+   }
+  },
+  "guercino": {
+   "metin": "Guercino (asıl adı Giovanni Francesco Barbieri, 1591–1666), Bologna yakınlarındaki Cento'da doğdu. Takma adı \"şaşı\" anlamına gelir. Büyük ölçüde kendi kendini yetiştirdi. İlk dönem resimleri güçlü ışık-gölge karşıtlıkları ve hızlı, canlı fırça işçiliğiyle dikkat çeker. 1621–1623'te Bolognalı Papa XV. Gregorius'un çağrısıyla Roma'da çalıştı. Casino Ludovisi'deki Aurora tavanı ve Aziz Petronilla'nın Gömülüşü bu yıllardandır. 1642'de Guido Reni ölünce Bologna'nın önde gelen ressamı oldu. Üslubu da Reni'ninki gibi daha aydınlık ve klasik bir hâl aldı. Usta bir desenci olarak çok sayıda çizim bıraktı.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Guercino"
+   }
+  },
+  "bartolomeo-manfredi": {
+   "metin": "Bartolomeo Manfredi (1582–1622), Mantova yakınlarındaki Ostiano'da doğdu ve Roma'da çalıştı. Caravaggio'yu en yakından izleyen ressamlardan biriydi. Meyhane sahneleri, kâğıt oynayan askerler, falcılar ve müzisyenler gibi konuları yarım boy figürler ve keskin ışıkla resmetti. Çağdaşları bu yola \"Manfredi yöntemi\" adını verdi. Roma'ya gelen Fransız ve Hollandalı ressamlar, özellikle Valentin de Boulogne ile Utrecht'li Caravaggistler, bu yöntemi onun resimlerinden öğrendi. Belgelenmiş eseri azdır, birçok tablo ona yalnızca üsluptan atfedilir.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Bartolomeo_Manfredi"
+   }
+  },
+  "hendrick-ter-brugghen": {
+   "metin": "Hendrick ter Brugghen (1588–1629) Utrecht'te Abraham Bloemaert'in yanında yetişti. Yaklaşık on yıl İtalya'da kalıp Caravaggio'nun resimlerini yakından tanıdı. 1614'te Utrecht'e döndü ve Honthorst ile Baburen'le birlikte Utrecht Caravaggistlerinin önde gelenlerinden biri oldu. Yarım boy flüt çalanları ve şarkıcıları, açık ve serin renkleri, yumuşak gün ışığıyla tanınır. Aziz Matta'nın Çağrılışı ve İrene'nin Bakımındaki Aziz Sebastian başlıca eserleridir. 41 yaşında öldü. Işığa duyarlılığıyla sonraki Delft ressamlarını etkilediği düşünülür.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Hendrick_ter_Brugghen"
+   }
+  },
+  "gerrit-van-honthorst": {
+   "metin": "Gerrit van Honthorst (1592–1656) Utrecht'te Bloemaert'in öğrencisiydi. Yaklaşık 1610–1620 yılları arasında Roma'da çalıştı ve Marchese Giustiniani ile Kardinal Scipione Borghese gibi hamiler buldu. Mum ışığında geçen gece sahneleri yüzünden İtalyanlar ona \"Gecelerin Gherardo'su\" (Gherardo delle Notti) adını verdi. Başrahip Önünde İsa bu türün en ünlü örneğidir. 1620'de Utrecht'e döndü ve çok başarılı oldu. Daha sonra İngiltere Kralı I. Charles için ve Lahey sarayında çalıştı. Geç döneminde daha klasik, gösterişli saray portrelerine yöneldi.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Gerrit_van_Honthorst"
+   }
+  },
+  "dirck-van-baburen": {
+   "metin": "Dirck van Baburen (yaklaşık 1595–1624) Utrecht'te Paulus Moreelse'nin yanında yetişti. Yaklaşık 1612–1620 yıllarında Roma'da çalıştı. San Pietro in Montorio kilisesi için yaptığı Gömülme sunak resmi, Caravaggio'nun etkisini açıkça gösterir. Utrecht'e dönünce Honthorst ve ter Brugghen ile birlikte kentte Caravaggio üslubunu yaydı. En ünlü eseri Pezevenk (1622), Vermeer'in iki tablosunda duvarda asılı resim olarak görünür. Kalın hatlı, iri figürleri ve güçlü ışığıyla tanınır. Genç yaşta, 1624'te öldü.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Dirck_van_Baburen"
+   }
+  },
+  "valentin-de-boulogne": {
+   "metin": "Valentin de Boulogne (1591–1632) Fransız bir ressamdı. Yaklaşık 1614'ten ölümüne kadar Roma'da yaşadı. Caravaggio'nun ve Manfredi'nin izinden giderek meyhaneler, falcılar, kâğıt oyuncuları ve konserler resmetti. Figürlerine özgü hüzünlü ve düşünceli bir hava verir. Barberini ailesinin desteğini kazandı ve Aziz Petrus Bazilikası için Aziz Processus ile Martinianus'un Şehitliği sunak resmini yaptı. Caravaggio'dan sonra Roma'daki en yetenekli izleyicilerinden biri sayılır. 1632'de genç yaşta öldü.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Valentin_de_Boulogne"
+   }
+  },
+  "jusepe-de-ribera": {
+   "metin": "Jusepe de Ribera (1591–1652) Valensiya yakınlarındaki Xàtiva'da doğan İspanyol bir ressamdı. Gençken İtalya'ya geçti ve 1616'dan ölümüne kadar o sırada İspanya'ya bağlı olan Napoli'de çalıştı. \"Lo Spagnoletto\" (küçük İspanyol) diye anıldı. Caravaggio'nun karanlık ışığını sert bir gerçekçilikle birleştirdi. Kırışık tenli yaşlı azizler, şehitlik sahneleri (Aziz Bartholomeus'un Şehitliği) ve Topal Çocuk (1642) en bilinen eserlerindendir. Usta bir gravürcüydü. Geç döneminde renkleri açıldı. Napoli ressamlarını ve İspanyol resmini derinden etkiledi.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Jusepe_de_Ribera"
+   }
+  },
+  "salvator-rosa": {
+   "metin": "Salvator Rosa (1615–1673) Napoli'de doğdu. Ressamlığın yanı sıra şair, hicivci ve oyuncuydu. Roma'da ve 1640–1649 arasında Medicilerin Floransa'sında çalıştıktan sonra yeniden Roma'ya yerleşti. Vahşi kayalıklar, fırtınalı gökler, kırık ağaçlar ve haydutlarla dolu manzaraları onun imzasıdır. Bu manzaralar, Claude Lorrain'in dingin ve düzenli doğasının tam karşıtıdır. Cadılık sahneleri ve felsefi konular da resmetti. Bağımsız ve gururlu kişiliği ve karanlık, coşkulu doğa anlayışıyla 18. yüzyılda \"yüce\" kavramının ve Romantizmin öncüsü sayıldı.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Salvator_Rosa"
+   }
+  },
+  "mattia-preti": {
+   "metin": "Mattia Preti (1613–1699) Calabria'daki Taverna'da doğdu ve \"Calabria Şövalyesi\" (Il Cavalier Calabrese) diye anıldı. Roma'da Caravaggio'nun ve Guercino'nun etkisiyle yetişti, Venedik resminin renklerinden de beslendi. 1653–1660 yıllarında Napoli'de çalıştı ve veba salgınından sonra kent kapıları için adak freskleri yaptı. 1661'de Malta'ya geçip Aziz Yuhanna Şövalyeleri tarikatına katıldı. Ömrünün geri kalanında Valletta'daki Aziz Yuhanna Ko-Katedrali'nin tavanını ve sunaklarını resmetti. Karanlık zemin üzerindeki güçlü figürleri ve geniş kompozisyonlarıyla tanınır.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Mattia_Preti"
+   }
+  },
+  "luca-giordano": {
+   "metin": "Luca Giordano (1634–1705) Napolili bir ressamdı. Çok hızlı çalıştığı için \"Luca fa presto\" (Luca çabuk yapar) diye anıldı ve binlerce eser bıraktı. Gençliğinde Ribera'dan etkilendi, sonra Roma'da Pietro da Cortona'yı, Venedik'te Veronese'yi inceledi. Floransa'da Palazzo Medici Riccardi'nin galeri tavanını (1682–1685) resmetti. 1692–1702 yıllarında İspanya Kralı II. Carlos için çalıştı ve El Escorial'in merdiven ve kilise tonozlarını süsledi. Aydınlık renkleri ve akıcı, hareketli kompozisyonlarıyla Geç Barok'tan Rokoko'ya geçişi hazırlayan ressamlardandır.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Luca_Giordano"
+   }
+  },
+  "giovanni-battista-gaulli": {
+   "metin": "Giovanni Battista Gaulli (1639–1709), lakabıyla Baciccio, Cenova'da doğdu ve gençken Roma'ya geldi. Bernini'nin desteğini kazandı ve onun heykellerindeki coşkuyu resme taşıdı. Başyapıtı, Cizvitlerin Roma'daki ana kilisesi Il Gesù'nun tavanındaki İsa Adının Zaferi freskidir (1672–1685). Bu freskte figürler ve bulutlar resim çerçevesinden taşıp alçı kabartmaların üstüne yayılır. Böylece tavan göğe açılıyormuş gibi görünür. Papa ve Bernini portreleriyle de tanınan Gaulli, Barok tavan yanılsamasının en etkileyici örneklerinden birini yarattı.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Giovanni_Battista_Gaulli"
+   }
+  },
+  "andrea-pozzo": {
+   "metin": "Andrea Pozzo (1642–1709) Trento'da doğdu ve Cizvit tarikatına rahip olmayan bir kardeş olarak katıldı. Mimariyi resimle sürdüren yanılsama tekniğinin, \"quadratura\"nın en büyük ustasıdır. Roma'daki Sant'Ignazio kilisesinde Aziz Ignatius'un Göğe Yükselişi tavanını (1691–1694) ve gerçekte var olmayan, düz bir tuvale boyanmış sahte kubbeyi yaptı. Tavan yalnızca yerdeki bir işaretten bakıldığında kusursuz görünür. Perspektif üzerine yazdığı iki ciltlik kitap Avrupa'da çok okundu. Son yıllarını Viyana'da geçirdi ve orada öldü.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Andrea_Pozzo"
+   }
+  },
+  "francesco-solimena": {
+   "metin": "Francesco Solimena (1657–1747) Avellino yakınlarında doğdu ve Luca Giordano'dan sonra Napoli'nin önde gelen ressamı oldu. Preti'nin güçlü ışık-gölgesini Giordano'nun hareketli kompozisyonlarıyla ve klasik bir düzenle birleştirdi. Napoli'de San Paolo Maggiore'nin kutsal eşya odasındaki freskler ve Gesù Nuovo kilisesindeki Heliodoros'un Kovuluşu (1725) başlıca eserleridir. Avrupa'nın dört bir yanından sipariş aldı. Kalabalık atölyesinde Francesco de Mura gibi Napolili ressamlar ve İskoç portreci Allan Ramsay yetişti.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Francesco_Solimena"
+   }
+  },
+  "giuseppe-maria-crespi": {
+   "metin": "Giuseppe Maria Crespi (1665–1747) Bolognalı bir ressamdı ve \"Lo Spagnuolo\" diye anıldı. Dönemin büyük dinî ve mitolojik resimlerinin yanında gündelik hayata yöneldi: çamaşırcılar, köylüler, pire arayan bir kadın, panayırlar. Bu sahneleri sıcak, kahverengi bir karanlık ve yumuşak ışıkla resmetti. Toskana Büyük Prensi Ferdinando de' Medici onun hamisiydi. Dresden'deki Yedi Kutsal Ayin dizisi en ünlü eseridir. Piazzetta ve Pietro Longhi onun öğrencileriydi; böylece etkisi 18. yüzyıl Venedik resmine ulaştı.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Giuseppe_Maria_Crespi"
+   }
+  },
+  "sebastiano-ricci": {
+   "metin": "Sebastiano Ricci (1659–1734) Belluno'da doğdu ve Venedik'te yetişti. Bologna, Parma, Roma, Floransa ve Viyana'da çalıştı. 1712–1716 yıllarında Londra'da kaldı, Paris'e de uğradı. Veronese'nin parlak renklerini ve geniş, şenlikli kompozisyonlarını yeniden canlandırarak Venedik resmini karanlık tonlardan aydınlığa taşıdı. Bu yönüyle Tiepolo'nun ve Venedik Rokokosu'nun öncüsü sayılır. Manzara ressamı yeğeni Marco Ricci ile birlikte de çalıştı.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Sebastiano_Ricci"
+   }
+  },
+  "giovanni-battista-piazzetta": {
+   "metin": "Giovanni Battista Piazzetta (1682–1754) Venedikli bir ahşap oymacısının oğluydu. Bologna'da Giuseppe Maria Crespi'nin yanında çalıştı ve ondan güçlü ışık-gölgeyi öğrendi. Venedik'in aydınlık renklerine karşın koyu, toprak tonlarında, ağır ve heykelsi figürler resmetti. Santi Giovanni e Paolo'daki Aziz Dominik'in Zaferi tavanı ile Falcı (1740) başlıca eserleridir. Tasso'nun Kurtarılmış Kudüs'ü için kitap resimleri de yaptı. 1750'de kurulan Venedik Akademisi'nin ilk yöneticisi oldu. Genç Tiepolo onun etkisiyle başladı.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Giovanni_Battista_Piazzetta"
+   }
+  },
+  "alessandro-magnasco": {
+   "metin": "Alessandro Magnasco (1667–1749) Cenova'da doğdu ve \"Lissandrino\" diye anıldı. Uzun yıllar Milano'da çalıştı, bir süre de Floransa'da Büyük Prens Ferdinando de' Medici için resim yaptı. 1735'te Cenova'ya döndü. Fırtınalı manzaralar, harabeler ve karanlık iç mekânlar içinde küçük keşişler, dilenciler, çingeneler ve askerler resmetti. Titrek, hızlı ve sinirli fırça darbeleri tuvallerine huzursuz bir hava verir. Engizisyon ve manastır sahneleri de yaptı. Çağının en sıra dışı ressamlarından sayılır.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Alessandro_Magnasco"
+   }
+  },
+  "francis-bacon": {
+   "metin": "Francis Bacon (1909–1992) Dublin'de İngiliz bir ailede doğdu. Resmi kendi kendine öğrendi. Gençken evden ayrıldı, Berlin'de ve Paris'te yaşadı ve bir süre iç mimar olarak çalıştı. 1944'te yaptığı Çarmıhın Dibindeki Figürler İçin Üç Çalışma onu birden tanınır kıldı. Velázquez'in Papa X. Innocentius portresinden yola çıkan çığlık atan papalar, kafes gibi çizgisel mekânlarda bükülen ve dağılan bedenler ve büyük üçlü panolar (triptikler) onun imzasıdır. Muybridge'in hareket fotoğraflarından da yararlandı. Sevgilisi George Dyer'ın ölümünden sonra yaptığı Kara Triptikler en sarsıcı eserlerindendir. 1992'de Madrid'de öldü.",
+   "dil": "claude",
+   "kaynak": {
+    "ad": "İngilizce Vikipedi",
+    "url": "https://en.wikipedia.org/wiki/Francis_Bacon_(artist)"
    }
   }
  }
