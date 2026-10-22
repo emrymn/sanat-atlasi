@@ -5,14 +5,14 @@ import { bugunStr, cevapla, vadesiGeldiMi, gorulduMu, GUNLUK_YENI_SINIRI } from 
 import { sanatciSecenekleri, akimSecenekleri, akimOrtaYillari } from './celdirici.js';
 import { kartlariSec, Oturum, kategori } from './oturum.js';
 import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU, eserAdlariniAyarla, adlariAl, eserBaslik, kolaylikAl } from './eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, yerelGorselleriAyarla } from './gorsel.js';
+import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, yerelGorselleriAyarla, oranlariAyarla, gorselOrani } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { gununSanatcisi, baskaSanatci } from './gunun.js';
 import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, yedekYarimOturum, sonCalisilanEkle, TEMALAR } from './depo.js';
 import { goruntuleyiciAc, kaynakYazisi } from './goruntuleyici.js';
 import { akimYuzyillari, ikon } from './tasarim.js';
 import { adParcala, bilinenAd } from './adlar.js';
-import { paletGetir, renkTemasi } from './renk.js';
+import { paletGetir, renkTemasi, karistir, hsl, hsldenHex } from './renk.js';
 import { idbAl, idbKoy, idbSil } from './idb.js';
 import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from './devam.js';
 import { taninmaMetni, eserNotu, notlariAl, karsilastirmaAdresi, benzerSanatcilar } from './karsilastir.js';
@@ -227,7 +227,7 @@ function ekranRengi(eser, yedekRenk, sonra = null) {
 function gununRengi() {
   const s = d.harita.get(gununId());
   if (!s) return ekranRengi(null, null);
-  return ekranRengi(sanatciEserleri(s).then(enBilinen), akimRenk(s.akim));
+  return ekranRengi(sanatciEserleri(s).then(gununEseri), akimRenk(s.akim));
 }
 
 // [data-kucuk="<sanatçı id>"] kutularına en bilinen eserin küçük görseli
@@ -270,7 +270,8 @@ const SEKMELER = [
   ['ilerleme', 'İlerleme', '#/ilerleme'],
 ];
 
-// etkin: sekme kimliği; null → sekme çubuğu yok (pekiştirme kartı)
+// etkin: sekme kimliği; null → sekme çubuğu yok (pekiştirme kartı).
+// Çubuk bir kez kurulur; sonra yalnızca seçili sekme ve elmas işaret güncellenir (işaret kayarak geçer).
 function sekmeleriCiz(etkin) {
   const nav = document.getElementById('sekmeler');
   document.documentElement.classList.toggle('sekmesiz', etkin === null);
@@ -279,9 +280,20 @@ function sekmeleriCiz(etkin) {
     return;
   }
   nav.hidden = false;
-  nav.innerHTML = SEKMELER.map(
-    ([id, ad, hash]) => `<a href="${hash}"${id === etkin ? ' aria-current="page"' : ''}>${ikon(id, 23, id === etkin ? 1.6 : 1.4)}<span>${ad}</span></a>`,
-  ).join('');
+  if (!nav.querySelector('.sekme-isaret')) {
+    nav.innerHTML =
+      '<span class="sekme-isaret" aria-hidden="true"></span>' +
+      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" data-sekme="${id}">${ikon(id, 23, 1.5)}<span>${ad}</span></a>`).join('');
+  }
+  const i = SEKMELER.findIndex(([id]) => id === etkin);
+  // sekme değişince yeni ekran geldiği yönden kayar (sağdaki sekme sağdan)
+  const onceki = Number(nav.style.getPropertyValue('--i'));
+  ekran.dataset.yon = nav.style.getPropertyValue('--i') === '' || onceki === i ? '' : i > onceki ? 'sag' : 'sol';
+  nav.style.setProperty('--i', Math.max(i, 0));
+  for (const a of nav.querySelectorAll('a')) {
+    if (a.dataset.sekme === etkin) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
+  }
 }
 
 // ---------- yönlendirme ----------
@@ -353,7 +365,14 @@ function ust(baslik, yedek = '#/', { geriYok = false, sag = '', ustEtiket = '' }
   return `<header class="ust">${geriYok ? '' : geriDugmesi(yedek)}<div class="ust-yazi">${ustEtiket ? etiket(ustEtiket, { vurgu: true }) : ''}<h1 tabindex="-1">${kacis(baslik)}</h1></div>${sag}</header>`;
 }
 
-function ciz(html) {
+// hareket: 'giris' (yeni ekran, öğeler sırayla belirir), kart için 'yeni-kart' | 'yeni-soru' | 'cevap', '' (yok).
+// Verilmezse adres değiştiyse 'giris', aynı ekran yeniden çiziliyorsa hareketsiz.
+let sonCizilenAdres = null;
+function ciz(html, hareket) {
+  const adres = location.hash || '#/';
+  ekran.dataset.hareket = hareket ?? (adres !== sonCizilenAdres ? 'giris' : '');
+  sonCizilenAdres = adres;
+  ekran.classList.remove('perde');
   ekran.innerHTML = html;
   ekran.style.paddingBottom = '';
   window.scrollTo(0, 0);
@@ -424,6 +443,78 @@ function istatistik() {
   return { acik: acik.length, vade, oran: toplam ? Math.round((100 * dogru) / toplam) : null, toplam };
 }
 
+// Bugünün turu: halka bugünkü kart ilerlemesini gösterir, ortasında kalan (ya da vadesi gelen) kart sayısı
+function turKarti(ist, g, sayi) {
+  const hedef = d.ilerleme.ayarlar.gunlukKart || 1;
+  const oran = Math.min(100, Math.round((100 * g.kart) / hedef));
+  const dk = Math.max(1, Math.round((sayi * 20) / 60));
+  const alt = sayi ? `${sayi} ${ist.vade ? 'tekrar' : 'kart'} · karışık · ~${dk} dk` : 'Bugünkü kartlar bitti · yine de pekiştir';
+  return `<a class="tur" href="#/pekistir/karisik" data-test="pekistir">
+      <span class="tur-halka" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" pathLength="100"/><circle class="dolu" cx="32" cy="32" r="28" pathLength="100" style="--oran:${oran}"/></svg>
+        <b>${sayi}</b>
+      </span>
+      <span class="tur-yazi"><span class="etiket vurgu">Bugünün turu</span><b>Pekiştirmeye başla</b><small>${kacis(alt)}</small></span>
+      ${ikon('ileri', 22, 1.5)}
+    </a>`;
+}
+
+// Bugün sahnesi: tablo ekranı kaplar ve kaydırırken yerinde kalır; kaydırdıkça tabloya yaklaşılır
+// (büyür, kararır) ve üstünden müze duvar etiketleri geçer. Pekiştir düğmesi sahne boyunca başparmağın altında durur.
+function sahneHtml(gs, { tekrar, sayi, vade, devam }) {
+  const not = gs.kurs_notu || gs.anlatim;
+  const tn = taninma(gs);
+  const panel = (baslik, metin, italik) =>
+    `<div class="sahne-panel"><div class="duvar-etiketi">${etiket(baslik, { vurgu: true })}<p class="okuma${italik ? ' italik' : ''}">${kacis(metin)}</p></div></div>`;
+  return `<section class="sahne${devam ? ' devam-alti' : ''}" data-test="gunun-kart">
+      <div class="bugun-kahraman sahne-yapiskan" data-gunun-gorsel>
+        <div class="bugun-ust"><span class="etiket vurgu">Günün sanatçısı</span><span class="hap" data-test="tekrar">${tekrar}</span></div>
+        <a class="sahne-isim isim-blok" href="#/gunun">${isimHtml(gs)}<p class="meta">${kunye(gs, { bag: false })}</p></a>
+        <span class="kaydir-ipucu" aria-hidden="true">${ikon('asagi', 22, 1.4)}</span>
+      </div>
+      <div class="sahne-paneller">
+        <div class="sahne-panel" data-sahne-bio hidden><div class="duvar-etiketi">${etiket('Hayatı', { vurgu: true })}<p class="okuma"></p></div></div>
+        ${tn ? panel('Nasıl tanırım?', tn, false) : ''}
+        ${not ? panel('Notlarımdan', not, true) : ''}
+      </div>
+      <a class="sahne-dugme" href="#/pekistir/karisik" data-test="pekistir">
+        <span>Pekiştir</span><span class="sayi" aria-label="${sayi} ${vade ? 'tekrar' : 'kart'}">${sayi}</span>${ikon('ileri', 18, 1.6)}
+      </a>
+    </section>`;
+}
+
+// Sahnenin altı: eserleri (Tümünü göster), resmin renkleri, hayatı ve dönemi
+function gununHikayesi(gs) {
+  return `<section class="hikaye" data-test="hikaye" data-tablo-devami>
+      <div class="susleme" aria-hidden="true"><span></span><i></i><span></span></div>
+      <div data-ana-galeri-kutu>${etiket('Eserleri')}<div class="eserler" data-ana-galeri><p class="ikincil kucuk">Eserler yükleniyor…</p></div></div>
+      <section class="bolum">${etiket('Resmin renkleri')}<div data-palet>${paletHtml(null)}</div></section>
+      <a class="dugme ince" href="#/gunun">Hayatı ve dönemi ${ikon('ileri', 18, 1.5)}</a>
+    </section>`;
+}
+
+// Yatay eser şeridinin üstü: başlık ve "Tümünü göster" (şeridin sonuna kadar kaydırmak gerekmesin)
+function seritUst(s, n, baslik = 'Eserleri') {
+  return `<div class="serit-ust">${etiket(`${baslik} · ${n}`)}<a class="tumunu-goster" href="#/sanatci/${encodeURIComponent(s.id)}/eserler" data-test="tumunu-goster">Tümünü göster ${ikon('ileri', 15, 1.7)}</a></div>`;
+}
+
+async function anaGaleriDoldur(gs) {
+  const eserler = bilinirlikSirasi(await sanatciEserleri(gs));
+  const galeri = ekran.querySelector('[data-ana-galeri]');
+  if (!galeri) return;
+  const kutu = galeri.parentElement;
+  if (!eserler.length) {
+    kutu.remove();
+    return;
+  }
+  kutu.querySelector('.etiket').outerHTML = seritUst(gs, eserler.length);
+  galeri.innerHTML = eserSeridi(eserler, 'galeri-eser', 'data-ana-eser');
+  galeri.addEventListener('click', (ev) => {
+    const b = ev.target.closest('[data-ana-eser]');
+    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.anaEser), notu: notuIcin(gs.id), ...gorselTercihi() });
+  });
+}
+
 function anaSayfa() {
   d.yigin = ['#/'];
   const ist = istatistik();
@@ -439,19 +530,10 @@ function anaSayfa() {
     ${devam}
     ${
       gs
-        ? `<a class="gunun-kart${devam ? ' devam-alti' : ''}" href="#/gunun" data-test="gunun-kart">
-      <div class="bugun-kahraman" data-gunun-gorsel>
-        <div class="bugun-ust"><span class="etiket vurgu">Günün sanatçısı</span><span class="hap" data-test="tekrar">${tekrar}</span></div>
-      </div>
-      <div class="isim-blok">${isimHtml(gs)}<p class="meta">${kunye(gs, { bag: false })}</p></div>
-    </a>
-    <section class="bolum" style="gap:10px;padding-top:20px">${etiket('Resmin renkleri')}<div data-palet>${paletHtml(null)}</div></section>`
-        : `<header class="ust"><div class="ust-yazi">${etiket('Bugün', { vurgu: true })}<span class="hap" data-test="tekrar">${tekrar}</span></div></header>`
+        ? sahneHtml(gs, { tekrar, sayi, vade: ist.vade, devam: !!devam })
+        : `<header class="ust"><div class="ust-yazi">${etiket('Bugün', { vurgu: true })}<span class="hap" data-test="tekrar">${tekrar}</span></div></header>${turKarti(ist, g, sayi)}`
     }
-    <div class="iki-dugme">
-      <a class="dugme vurgu" href="#/pekistir/karisik" data-test="pekistir">Pekiştir <span class="sayi" aria-label="${sayi} ${ist.vade ? 'tekrar' : 'kart'}">${sayi}</span></a>
-      <a class="dugme" href="#/pekistir/donem">Döneme göre</a>
-    </div>
+    ${gs ? gununHikayesi(gs) : ''}
     ${
       son.length
         ? `<div class="son-satir">${etiket('Son')}<div class="yuvarlaklar">${son
@@ -466,8 +548,14 @@ function anaSayfa() {
         : ''
     }
     <p class="sakin"><span data-test="acik-sayi">${ist.acik}</span> açık sanatçı · ${ist.oran === null ? 'henüz cevap yok' : `%${ist.oran} doğru`} · bugün ${g.kart} / ${d.ilerleme.ayarlar.gunlukKart} kart · <a href="#/ayarlar">Ayarlar</a></p>`);
-  if (gs) gununKartGorseli(gs);
-  else ekranRengi(null, null);
+  // uygulama açılışında bir kez: tablo perde açılır gibi belirir, isim satır satır gelir
+  ekran.classList.toggle('perde', !d.perdeAcildi);
+  d.perdeAcildi = true;
+  if (gs) {
+    gununKartGorseli(gs);
+    sahneBiyografisi(gs);
+    anaGaleriDoldur(gs);
+  } else ekranRengi(null, null);
   for (const el of ekran.querySelectorAll('[data-mini]')) {
     sanatciEserleri(d.harita.get(el.dataset.mini)).then((eserler) => {
       const e = enBilinen(eserler);
@@ -479,8 +567,21 @@ function anaSayfa() {
 // ---------- Günün sanatçısı ----------
 // Günün sanatçısı havuzu: eser önbelleği varsa yalnızca orada kaydı olanlar (görseli çevrimdışı da hazır olsun);
 // önbellekten sonra eklenen sanatçılar önbellek yenilenince havuza katılır.
+// Ana sayfa tabloyu ekran boyu gösterdiği için dikey eseri olan sanatçılar seçilir (data/gorsel_oranlari.json yoksa hepsi).
 function gununHavuzu() {
-  return d.sanatcilar.filter((s) => !d.onbellekIdleri || d.onbellekIdleri.has(s.id)).map((s) => s.id);
+  const havuz = d.sanatcilar.filter((s) => !d.onbellekIdleri || d.onbellekIdleri.has(s.id));
+  const dikey = d.dikeyler ? havuz.filter((s) => d.dikeyler.has(s.id)) : [];
+  return (dikey.length ? dikey : havuz).map((s) => s.id);
+}
+
+// Günün eseri: en bilinen dikey eser (ekranı kırpılmadan doldurur); yoksa en bilinen eser
+const DIKEY_ORAN = 0.85;
+function gununEseri(eserler) {
+  const dikey = eserler.filter((e) => {
+    const g = secilenGorsel(e, kotuler());
+    return g && e.pekistirme !== false && (gorselOrani(g) ?? 9) <= DIKEY_ORAN;
+  });
+  return enBilinen(dikey) || enBilinen(eserler);
 }
 
 function gununId() {
@@ -504,19 +605,60 @@ function bilinirlikSirasi(eserler) {
 
 // Günün eseri: ekranın üstünü kenardan kenara kaplar; renkleri ekranın vurgusu olur
 async function gununKartGorseli(s) {
-  const eSozu = sanatciEserleri(s).then(enBilinen);
+  const eSozu = sanatciEserleri(s).then(gununEseri);
   ekranRengi(eSozu, akimRenk(s.akim), (p) => {
     const k = ekran.querySelector('[data-palet]');
     if (k) k.innerHTML = paletHtml(p);
+    paletZemini(p);
   });
   const e = await eSozu;
   const kutu = ekran.querySelector('[data-gunun-gorsel]');
   if (!kutu || !e) return;
   const g = secilenGorsel(e, kotuler());
+  const url = gorselUrl(g, 1200);
   kutu.insertAdjacentHTML(
     'afterbegin',
-    `<img decoding="async" alt="${kacis(`${s.ad}, ${eserBaslik(e)}`)}" src="${kacis(gorselUrl(g, 1200))}" data-yedek="${kacis(gorselYedek(g))}">`,
+    `<img decoding="async" alt="${kacis(`${s.ad}, ${eserBaslik(e)}`)}" src="${kacis(url)}" data-yedek="${kacis(gorselYedek(g))}">`,
   );
+}
+
+// Sahnenin altı tablonun devamı gibi: resmin paletinden keskin kenarlı bloklar (Mondrian'vari mozaik).
+// Her satırda iki blok; bölünme yeri iki rengin resimdeki paylarının oranı. Renkler zeminle karıştırılır, yazı okunur kalsın.
+const MOZAIK_SATIRLARI = [22, 30, 26, 22]; // yüzde yükseklik
+function paletZemini(p) {
+  const kutu = ekran.querySelector('[data-tablo-devami]');
+  if (!kutu || !p || !p.length) return;
+  const zemin = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim() || '#0b0a0b';
+  const koyu = hsl(zemin)[2] < 0.5;
+  const ayarla = (r) => {
+    const [h, sa, l] = hsl(r);
+    // koyu temada açıklık %18–38 arası, açık temada en az %80
+    return karistir(hsldenHex(h, Math.min(sa, 0.65), koyu ? Math.max(0.18, Math.min(l, 0.38)) : Math.max(l, 0.8)), zemin, 0.85);
+  };
+  const n = p.length;
+  let y = 0;
+  const katmanlar = MOZAIK_SATIRLARI.map((boy, i) => {
+    const a = p[(2 * i + 1) % n];
+    const b = p[(2 * i + (i % 2 ? 0 : 2)) % n];
+    const bolum = Math.round(100 * Math.min(0.75, Math.max(0.25, a.pay / (a.pay + b.pay || 1))));
+    // background-position yüzdesi kaydırma değil hizalamadır: üst kenarı y%'ye koymak için y / (100 - boy)
+    const konum = boy >= 100 ? 0 : (100 * y) / (100 - boy);
+    const k = `linear-gradient(90deg, ${ayarla(a.renk)} 0 ${bolum}%, ${ayarla(b.renk)} ${bolum}% 100%) 0 ${konum.toFixed(2)}% / 100% ${boy + 0.2}% no-repeat`;
+    y += boy;
+    return k;
+  });
+  kutu.style.setProperty('--palet-zemin', katmanlar.join(', '));
+}
+
+// Sahnede ilk duvar etiketi: biyografinin ilk cümleleri (veri gelince doldurulur, yoksa etiket kalkar)
+async function sahneBiyografisi(gs) {
+  const { biyografiler } = await ekVeriYukle();
+  const kutu = ekran.querySelector('[data-sahne-bio]');
+  if (!kutu) return;
+  const bio = biyografiler.sanatcilar[gs.id];
+  if (!bio || !bio.metin) return kutu.remove();
+  kutu.querySelector('.okuma').textContent = bio.metin;
+  kutu.hidden = false;
 }
 
 let ekVeri = null;
@@ -624,6 +766,7 @@ async function gununSayfasi(id) {
     galeri.innerHTML = '<p class="ikincil kucuk">Bu sanatçı için doğrulanmış görsel bulunamadı.</p>';
     return;
   }
+  galeri.insertAdjacentHTML('beforebegin', seritUst(s, eserler.length));
   galeri.innerHTML = eserSeridi(eserler, 'galeri-eser', 'data-galeri-eser');
   galeri.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-galeri-eser]');
@@ -670,18 +813,18 @@ async function basyapitBaglariniDoldur(id) {
 
 async function basyapitListesi() {
   gununRengi();
-  ciz(`${ust('Başyapıtlar', '#/gozat', { ustEtiket: 'Yakın okuma' })}<p class="ikincil kucuk">Yükleniyor…</p>`);
+  ciz(`${gozAtUst('basyapitlar')}<p class="ikincil kucuk">Yükleniyor…</p>`);
   const liste = await basyapitVeri();
   if (location.hash !== '#/basyapitlar') return;
-  if (!liste.length) return ciz(`${ust('Başyapıtlar', '#/gozat', { ustEtiket: 'Yakın okuma' })}<p class="ikincil">Henüz yakın okuma yok.</p>`);
+  if (!liste.length) return ciz(`${gozAtUst('basyapitlar')}<p class="ikincil">Henüz yakın okuma yok.</p>`);
   const k = islenen();
   const gruplar = [];
   for (const a of d.akimlar) {
     const l = liste.filter((b) => d.harita.get(b.sanatci).akim === a.ad);
     if (l.length) gruplar.push({ a, l });
   }
-  ciz(`${ust('Başyapıtlar', '#/gozat', { ustEtiket: `Yakın okuma · ${liste.length}` })}
-    <p class="kucuk ikincil" style="margin:0 0 6px">Her eserde ne görüldüğü, kompozisyon, anlam ve önemi. Zaman sırasıyla.</p>
+  ciz(`${gozAtUst('basyapitlar')}
+    <p class="bolum-aciklama">${liste.length} yakın okuma: her eserde ne görüldüğü, kompozisyon, anlam ve önemi. Zaman sırasıyla.</p>
     ${gruplar
       .map(
         ({ a, l }) => `<h2 class="etiket bolum-baslik">${akimNoktasi(a.ad)}${kacis(a.ad)}</h2>
@@ -750,13 +893,13 @@ function ikonografiVeri() {
 
 async function konuListesi() {
   gununRengi();
-  ciz(`${ust('Konular', '#/gozat', { ustEtiket: 'İkonografi' })}<p class="ikincil kucuk">Yükleniyor…</p>`);
+  ciz(`${gozAtUst('konular')}<p class="ikincil kucuk">Yükleniyor…</p>`);
   const liste = await ikonografiVeri();
   if (location.hash !== '#/konular') return;
-  if (!liste.length) return ciz(`${ust('Konular', '#/gozat', { ustEtiket: 'İkonografi' })}<p class="ikincil">Henüz konu yok.</p>`);
+  if (!liste.length) return ciz(`${gozAtUst('konular')}<p class="ikincil">Henüz konu yok.</p>`);
   const gruplar = TUR_SIRA.map((t) => ({ t, l: liste.filter((k) => k.tur === t) })).filter((g) => g.l.length);
-  ciz(`${ust('Konular', '#/gozat', { ustEtiket: `İkonografi · ${liste.length}` })}
-    <p class="kucuk ikincil" style="margin:0 0 6px">Resimlerde en sık işlenen hikâyeler. Her konuda hikâye, resimde nasıl tanındığı ve bu konuyu işleyen eserler.</p>
+  ciz(`${gozAtUst('konular')}
+    <p class="bolum-aciklama">Resimlerde en sık işlenen ${liste.length} hikâye: her birinde hikâye, resimde nasıl tanındığı ve bu konuyu işleyen eserler.</p>
     ${gruplar
       .map(
         ({ t, l }) => `<h2 class="etiket bolum-baslik">${kacis(TUR_AD[t])}</h2>
@@ -813,17 +956,32 @@ async function konuSayfasi(kodlu) {
 }
 
 // ---------- Göz At: akımlar zaman sırasıyla ----------
+// Göz At'ın üç bölümü; sayfa değişince elmas işaret önceki bölümden kayarak gelir
+const GOZAT_BOLUMLERI = [
+  ['akimlar', 'Akımlar', '#/gozat', ''],
+  ['basyapitlar', 'Başyapıtlar', '#/basyapitlar', 'basyapit-giris'],
+  ['konular', 'Konular', '#/konular', 'konu-giris'],
+];
+let sonGozAtBolumu = 0;
+function gozAtUst(etkin) {
+  const i = GOZAT_BOLUMLERI.findIndex(([id]) => id === etkin);
+  const j = sonGozAtBolumu;
+  sonGozAtBolumu = i;
+  return `${ust('Göz At', '#/', { geriYok: true, ustEtiket: 'Galeri' })}
+    <nav class="bolumler" aria-label="Göz At bölümleri" style="--i:${i};--j:${j}">${GOZAT_BOLUMLERI.map(
+      ([id, ad, hash, test]) => `<a href="${hash}"${test ? ` data-test="${test}"` : ''}${id === etkin ? ' aria-current="page"' : ''}>${ad}</a>`,
+    ).join('')}<span class="bolumler-isaret" aria-hidden="true"></span></nav>`;
+}
+
 function gozAt() {
   const durumlar = akimDurumlari(d.akimlar, d.sanatcilar, islenen());
   gununRengi();
-  ciz(`${ust('Göz At', '#/', { geriYok: true, ustEtiket: 'Akımlar' })}
-    <a class="basyapit-giris" href="#/basyapitlar" data-test="basyapit-giris">${ikon('kitap', 22, 1.5)}<span><b>Başyapıt okumaları</b><small>Kursun önemli eserlerine yakından bakış: ne görüyoruz, ne anlatıyor, neden önemli</small></span>${ikon('ileri', 20, 1.4)}</a>
-    <a class="basyapit-giris" href="#/konular" data-test="konu-giris">${ikon('kitap', 22, 1.5)}<span><b>Konular ve hikâyeleri</b><small>İncil'den, mitolojiden ve aziz hayatlarından sahneler; resimde nasıl tanınırlar</small></span>${ikon('ileri', 20, 1.4)}</a>
-    <p class="kucuk ikincil" style="margin:0 0 6px">Zaman sırasıyla. Soluk olanlar, ilgili konu işlenince açılır.</p>
+  ciz(`${gozAtUst('akimlar')}
+    <p class="bolum-aciklama">Zaman sırasıyla. Soluk olanlar, ilgili konu işlenince açılır.</p>
     <ol class="zaman">${durumlar
       .map((a) => {
         const uyeler = d.sanatcilar.filter((x) => x.akim === a.ad);
-        const ic = `<span class="etiket vurgu">${akimNoktasi(a.ad)}${kacis(akimYuzyillari(uyeler))}</span><b>${kacis(a.ad)}</b>
+        const ic = `<span class="etiket vurgu">${akimNoktasi(a.ad)}${kacis(akimYuzyillari(uyeler, { roma: true }))}</span><b>${kacis(a.ad)}</b>
           <span class="sayi">${a.acik ? `${a.acikSayisi} / ${a.toplam} sanatçı açık` : `<span class="kilit-notu">${ikon('kilit', 14)}Konu ${bulunmaEki(a.acilacagiKonu)} açılır</span>`}</span>
           <span class="onizleme" data-onizleme="${kacis(a.ad)}"></span>`;
         return `<li class="zaman-oge${a.acik ? '' : ' kilitli'}">${
@@ -869,7 +1027,7 @@ function akimSayfasi(ad) {
   const acik = uyeler.filter((s) => k.has(s.konu));
   const kapali = uyeler.filter((s) => !k.has(s.konu));
   gununRengi();
-  ciz(`${ust(ad, '#/gozat', { ustEtiket: akimYuzyillari(uyeler) })}
+  ciz(`${ust(ad, '#/gozat', { ustEtiket: akimYuzyillari(uyeler, { roma: true }) })}
     <section class="bolum" style="padding-top:8px">${etiket('Dönemi')}${donemCizelgesi(ad)}</section>
     <section class="bolum">${etiket('Sanatçılar')}
     <ul class="liste">${acik.map((s) => sanatciSatiri(s, true)).join('')}${kapali.map((s) => sanatciSatiri(s, false)).join('')}</ul></section>
@@ -918,7 +1076,8 @@ async function sanatciSayfasi(id) {
     kutu.innerHTML = '<p class="ikincil kucuk">Bu sanatçı için doğrulanmış görsel bulunamadı.</p>';
     return;
   }
-  // galerinin sonunda "Tümü (N)": bütün eserlerin ızgara görünümü
+  // üstte "Tümünü göster", galerinin sonunda "Tümü (N)": bütün eserlerin ızgara görünümü
+  kutu.insertAdjacentHTML('beforebegin', seritUst(s, eserler.length));
   kutu.innerHTML = `${eserSeridi(eserler, 'eser', 'data-eser')}<a class="tumu" href="#/sanatci/${encodeURIComponent(s.id)}/eserler" data-test="tumu">Tümü (${eserler.length})</a>`;
   kutu.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-eser]');
@@ -1340,6 +1499,7 @@ function tanismaGoster(o) {
   const eserler = tanismaEserleri(pekistirmeHavuzu(k.eserler || [], kotuler()), k.eser.anahtar, 3, kolaylikFn(k.id));
   k.tanismaEserleri = eserler;
   const ipucu = ipucuMetni(s);
+  o.sonCizim = { konum: ot.konum, adim: 0, cevap: false, yuzde: Math.round((100 * ot.konum) / ot.toplam) };
   ciz(`<header class="soru-ust">
       <button class="kapat" type="button" data-geri="#/pekistir" aria-label="Kapat">${ikon('kapat', 22, 1.7)}</button>
       <span class="etiket">${kacis(kipKisa(o.kip, o.akim))}</span>
@@ -1362,7 +1522,9 @@ function tanismaGoster(o) {
       ${ipucu ? `<p class="okuma tanisma-not">${kacis(ipucu)}</p>` : ''}
       <p class="kucuk ikincil">Birazdan bu sanatçının burada görmediğin bir eseri sorulacak.</p>
       <button class="dugme vurgu tanisma-gec" type="button" data-tanisma-gec>Tanıdım, soruya geç →</button>
-    </section>`);
+    </section>`,
+    'yeni-kart',
+  );
   ekran.querySelector('.tanisma-ad').focus({ preventScroll: true });
 }
 
@@ -1396,8 +1558,8 @@ function kartGoster(o) {
     if (!ikinci) {
       // 1. soru (sanatçı): yalnızca sanatçı ve eser; karışıkta akım henüz söylenmez
       dogru = sanatciDogru;
-      sonuc = dogru ? 'Doğru' : `Yanlış · ${tekrarNotu}`;
-      bilgi = `${s.ad} · ${eserAdi(k.eser)}`;
+      sonuc = dogru ? ['Doğru', ''] : ['Yanlış', tekrarNotu];
+      bilgi = [s.ad, eserAdi(k.eser)];
       not = karisik && akimiAciklarMi(ipucu, s.akim) ? '' : ipucu;
       if (!dogru && k.cevapSanatci && d.harita.has(k.cevapSanatci) && (k.karisanSayi || 0) >= KARISAN_ESIGI)
         karsilastirBag = karsiSeritHtml(s, d.harita.get(k.cevapSanatci), k.karisanSayi);
@@ -1409,8 +1571,8 @@ function kartGoster(o) {
     } else {
       // 2. soru (akım): akım ve komşuları
       dogru = k.cevapAkim === s.akim;
-      sonuc = dogru ? (sanatciDogru ? 'Doğru' : `Doğru · sanatçı yanlıştı, ${tekrarNotu}`) : `Yanlış · ${tekrarNotu}`;
-      bilgi = `${s.akim} · ${s.ad} (${yillarYaz(s)})`;
+      sonuc = dogru ? (sanatciDogru ? ['Doğru', ''] : ['Doğru', `sanatçı yanlıştı, ${tekrarNotu}`]) : ['Yanlış', tekrarNotu];
+      bilgi = [s.akim, `${s.ad} (${yillarYaz(s)})`];
       const gorunur = new Set(d.akimlar.map((a) => a.ad));
       const komsular = ((d.akimlar.find((a) => a.ad === s.akim) || {}).komsular || []).filter((x) => gorunur.has(x));
       const ilkteGizlenen = akimiAciklarMi(ipucu, s.akim) ? ipucu : '';
@@ -1419,8 +1581,8 @@ function kartGoster(o) {
     }
     const tumDogru = ikinci ? sanatciDogru && k.cevapAkim === s.akim : sanatciDogru;
     yaprak = `<section class="alt-yaprak" aria-live="polite">
-      <p class="sonuc" data-test="sonuc" data-dogru="${ikinci || !karisik ? tumDogru : dogru}">${kacis(sonuc)}</p>
-      <p class="bilgi">${kacis(bilgi)}</p>
+      <p class="sonuc" data-test="sonuc" data-dogru="${ikinci || !karisik ? tumDogru : dogru}">${ikon(dogru ? 'dogru' : 'yanlis', 18, 2)}<b>${sonuc[0]}</b>${sonuc[1] ? `<span class="sonuc-not">${kacis(sonuc[1])}</span>` : ''}</p>
+      <p class="bilgi"><b>${kacis(bilgi[0])}</b><i>${kacis(bilgi[1])}</i></p>
       ${seviyeSatiri(k)}
       <div data-yaprak-palet>${paletHtml(k.palet)}</div>
       ${not ? `<p class="ipucu">${kacis(not)}</p>` : ''}
@@ -1430,13 +1592,19 @@ function kartGoster(o) {
     </section>`;
   }
 
+  // Hareket: yeni kartta tablo belirir; karışıkta 2. soruda yalnızca seçenekler; cevapta doğru parlar, yanlış sarsılır
+  const onceki = o.sonCizim;
+  const adim = ikinci ? 2 : 1;
+  const hareket = !onceki || onceki.konum !== ot.konum ? 'yeni-kart' : onceki.adim !== adim ? 'yeni-soru' : cevap !== null && !onceki.cevap ? 'cevap' : '';
+  const oncekiYuzde = onceki && onceki.konum !== ot.konum ? onceki.yuzde : yuzde;
+  o.sonCizim = { konum: ot.konum, adim, cevap: cevap !== null, yuzde };
   const g = secilenGorsel(k.eser, kotuler()) || k.eser.gorseller[0];
   ciz(`<header class="soru-ust">
       <button class="kapat" type="button" data-geri="#/pekistir" aria-label="Kapat">${ikon('kapat', 22, 1.7)}</button>
       <span class="etiket">${kacis(kipKisa(o.kip, o.akim))}</span>
       <span data-test="sayac">${sira} / ${ot.toplam}</span>
     </header>
-    <div class="ince-cubuk" aria-hidden="true"><i style="width:${yuzde}%"></i></div>
+    <div class="ince-cubuk" aria-hidden="true"><i style="width:${yuzde}%;--onceki:${oncekiYuzde}%"></i></div>
     <div class="soru-sahne">
       <span class="hale-nefes" aria-hidden="true"></span>
       <button class="soru-resim" type="button" data-buyut aria-label="Görseli büyüt">
@@ -1449,7 +1617,9 @@ function kartGoster(o) {
       ${etiket(`${karisik ? `Soru ${ikinci ? 2 : 1} / 2` : 'Soru 1 / 1'} · ${SEVIYELER[k.seviye ?? 0].ad}`)}
     </div>
     ${secenekler}
-    ${yaprak}`);
+    ${yaprak}`,
+    hareket,
+  );
 
   // Renk: sorulan eserden. Cevaptan önce akım rengine düşülmez (ipucu olurdu): palet yoksa nötr kalır.
   if (k.palet === undefined)
@@ -1634,7 +1804,34 @@ function ozetCiz() {
       <p class="okuma italik">${ot.yanlis ? 'Yanlış yaptıkların daha sık karşına çıkacak.' : 'Hepsi doğru, harika.'}</p>
     </div>
     ${gecenlerHtml(o.gecenler || [])}
-    <div class="menu"><button class="dugme vurgu" type="button" data-yeni-tur>Bir tur daha</button><a class="dugme" href="#/">Bugün</a></div>`);
+    <div class="menu"><button class="dugme vurgu" type="button" data-yeni-tur>Bir tur daha</button><a class="dugme" href="#/">Bugün</a></div>
+    ${toplam && !ot.yanlis ? yaldizYapraklari() : ''}`);
+  sayarakYaz(ekran.querySelector('.ozet .ad'), ot.dogru, toplam);
+}
+
+// Sonuç sayısı sıfırdan sayarak gelir (hareket azaltma açıksa doğrudan yazılır)
+function sayarakYaz(el, hedef, toplam) {
+  if (!el || !hedef || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const bas = performance.now();
+  const sure = Math.min(1200, 300 + hedef * 60);
+  const adim = (t) => {
+    if (!el.isConnected) return;
+    const x = Math.min(1, (t - bas) / sure);
+    el.textContent = `${Math.round(hedef * (1 - (1 - x) ** 3))} / ${toplam}`;
+    if (x < 1) requestAnimationFrame(adim);
+  };
+  el.textContent = `0 / ${toplam}`;
+  requestAnimationFrame(adim);
+}
+
+// Hepsi doğruysa ekranın üstünden süzülen yaldız yaprakları (dekoratif)
+function yaldizYapraklari() {
+  let h = '';
+  for (let i = 0; i < 18; i++) {
+    const r = (n) => ((Math.sin(i * 12.9898 + n * 78.233) * 43758.5453) % 1 + 1) % 1;
+    h += `<i style="--x:${(r(1) * 100).toFixed(1)}%;--g:${(r(2) * 1.6).toFixed(2)}s;--s:${(2.6 + r(3) * 2).toFixed(2)}s;--d:${Math.round(r(4) * 360)}deg;--b:${(6 + r(5) * 8).toFixed(1)}px"></i>`;
+  }
+  return `<div class="yaldiz-yapraklar" aria-hidden="true">${h}</div>`;
 }
 
 // ---------- Seviyeler ----------
@@ -2020,7 +2217,7 @@ function swKaydet() {
 // ---------- başlangıç ----------
 async function basla() {
   // İsteğe bağlı notlar (data/tanima_notlari.json, data/eser_notlari.json) aynı anda istenir; yoksa ya da bozuksa boş kalır
-  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot, eserAd, zorluk, yerelG] = await Promise.all([
+  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot, eserAd, zorluk, yerelG, oranG] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
     jsonGetir('data/konular.json'),
@@ -2030,6 +2227,7 @@ async function basla() {
     jsonGetir('data/eser_adlari_tr.json').catch(() => null),
     jsonGetir('data/eser_zorluk.json').catch(() => null),
     jsonGetir('data/yerel_gorseller.json').catch(() => null),
+    jsonGetir('data/gorsel_oranlari.json').catch(() => null),
   ]);
   d.kisaAdlar = (await jsonGetir('data/kisa_adlar.json').catch(() => ({ adlar: {} }))).adlar || {};
   d.tanimaNotlari = notlariAl(tanima);
@@ -2037,6 +2235,8 @@ async function basla() {
   eserAdlariniAyarla(adlariAl(eserAd));
   d.kolaylik = kolaylikAl(zorluk);
   yerelGorselleriAyarla(yerelG && yerelG.gorseller, yerelG && yerelG.buyuk);
+  oranlariAyarla(oranG && oranG.oranlar);
+  d.dikeyler = oranG && Array.isArray(oranG.dikeyler) ? new Set(oranG.dikeyler) : null;
   eserTurleriniAyarla(turler);
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
   const hazir = await hazirOnbellek();

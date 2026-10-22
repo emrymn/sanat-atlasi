@@ -14,7 +14,7 @@ test('Günün sanatçısı: ana sayfada kart, bölüm içeriği, aynı gün ayn�
   const menuY = await page.locator('[data-test="pekistir"]').boundingBox();
   expect(ilkY.y).toBeLessThan(menuY.y);
   const ad = (await kart.locator('b').textContent()).trim();
-  await kart.click();
+  await kart.locator('.sahne-isim').click();
   await expect(page.getByRole('heading', { name: 'Günün sanatçısı' })).toBeVisible();
   await expect(page.locator('.gunun-ad')).toHaveText(ad);
   await expect(page.locator('[data-test="kurs-durumu"]')).toHaveText(/Kursta: Konu \d+|Henüz kursta yok|Kurs dışı/);
