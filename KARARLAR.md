@@ -863,3 +863,14 @@ Emre'nin isteği: “Kolay, orta, zor diye bölümler; birinde %80 başarı olma
    - Hepsi `prefers-reduced-motion` ile kapanır (sayaç doğrudan yazılır).
 12. **Yarım kalan duvar etiketleri (Emre'nin isteği):** Hayatı / Nasıl tanırım / Notlarımdan etiketleri 9 satırda kesilir; metin sığmıyorsa etiket dokunulabilir olur, altında "Devamı ↓" yazar, dokununca tamamı açılır ("Kısalt ↑" ile geri kapanır). Klavyeyle Enter/Boşluk da çalışır.
 13. **Mozaik sayfanın sonuna kadar:** "Son" satırı ve küçük sayılar mozaik bölümünün içine alındı; zemin sekme çubuğunun arkasından ekranın en altına kadar iner (`display: flow-root` ile son satırın boşluğu dışarı taşmaz).
+
+## İş 12b · Seviye dönem başına, Giotto Gotik'te (2026-10-22)
+
+Emre'nin geri bildirimi: “kolay orta zor kısımlarını döneme göre yap, rastgele yapma”, ardından seçenekler arasından **dönem başına seviye**yi seçti. Ayrıca “Giotto'yu önceki akımla birleştir, tek başına saçma oldu”. Bu bölüm İş 12'nin 1., 4. ve 5. maddelerinin yerine geçer; geçiş ölçütü, eser ve şık zorluğu (İş 12 madde 2–3) aynı kaldı.
+
+1. **Seviye dönem (akım) başına tutulur:** `ilerleme.seviyeler[akım adı] = { s, son }`. Her dönem Kolay'dan başlar. O dönemin herhangi bir sanatçısına verilen sanatçı cevabı (Döneme göre, Hepsi ya da Karışık fark etmez) o dönemin penceresine yazılır. Son 10 cevabın %80'i doğruysa (en az 5) dönem Orta'ya, sonra Zor'a geçer. Dönemin seviyesi o dönemdeki her sanatçının sorusunu belirler: eser ve şıklar.
+2. **Ayrı “Seviyeye göre” bölümü ve `#/pekistir/seviye/…` kaldırıldı.** Seviye artık dönemin bir özelliği: Pekiştir · Döneme göre listesinde her dönemin yanında rozet var (“Kolay · 3/5”, “Orta · 4/6 doğru”, “Zor · usta”). Dönemi seçince tur o dönemin seviyesinde açılır. Alt seviyelere dönüp tekrar seçeneği yok (gerekirse sonra eklenir).
+3. **Geri bildirim:** cevap yaprağında “Gotik · Kolay · son 6 cevapta 5 doğru · Orta için %80”; geçişte “Gotik Orta seviyeye geçti”; tur özetinde “Seviye atlayan dönemler”; sanatçı sayfasında “Gotik dönemi: Kolay …”; İlerleme'deki akım doğruluk çubuklarında dönemin seviyesi.
+4. PR #21 henüz merge edilmediği için sanatçı başına kayıtlardan geçiş yazılmadı; eski biçimdeki anahtarlar (sanatçı kimlikleri) hiçbir döneme denk gelmez ve kullanılmaz.
+5. **Proto-Rönesans kaldırıldı, Giotto Gotik'e taşındı:** tek sanatçılı akım ayrı bir pekiştirme ve şık kaynağı olarak anlamsızdı. `sanatcilar.json`'da yalnızca Giotto'nun `akim` alanı değişti (Emre'nin açık isteği). `akimlar.json`'da akım silindi, `sira` yeniden numaralandı; Gotik'in komşularına Erken Rönesans eklendi, Erken Rönesans'ın komşusu Gotik oldu. `akim_bilgi.json`'da Proto-Rönesans metni Gotik metninin sonuna eklendi (içerik değişmedi). Skorlar sanatçı kimliğiyle tutulduğu için ilerleme kaybolmaz.
+6. Veri dosyaları önce-önbellek olduğu için sürüm 1.19.2 (İş 13'ün 1.19.1'inin üstüne).

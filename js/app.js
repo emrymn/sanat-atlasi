@@ -19,9 +19,9 @@ import { taninmaMetni, eserNotu, notlariAl, karsilastirmaAdresi, benzerSanatcila
 import { tanismaGerekirMi, tanismaEserleri, karisanEkle, enCokKarisanlar, KARISAN_ESIGI } from './ogrenme.js';
 import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir } from './basyapit.js';
 import { konulariAl, konuBul, konuHaritasiniAyarla, TUR_AD, TUR_SIRA } from './ikonografi.js';
-import { SEVIYELER, seviyeBul, seviyeKaydi, seviyeIsle, seviyeDurumu, eserSeviyesi, seviyeSayilari, GECIS_ORANI } from './seviye.js';
+import { SEVIYELER, seviyeKaydi, seviyeIsle, seviyeDurumu, seviyeKisa, eserSeviyesi, GECIS_ORANI } from './seviye.js';
 
-const SURUM = '1.18.0';
+const SURUM = '1.19.2';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -312,7 +312,6 @@ const rotalar = [
   [/^#\/pekistir\/donem$/, pekistirMenusu, 'pekistir'],
   [/^#\/pekistir\/donem\/(.+)$/, (ad) => pekistir('donem', ad), null],
   [/^#\/pekistir\/karisik$/, () => pekistir('karisik', null), null],
-  [/^#\/pekistir\/seviye\/(kolay|orta|zor)$/, (sv) => pekistir('seviye', sv), null],
   [/^#\/pekistir\/devam$/, () => devamEt(), null],
   [/^#\/ilerleme$/, () => ilerlemeSayfasi(), 'ilerleme'],
   [/^#\/ayarlar$/, ayarlarSayfasi, 'ilerleme'],
@@ -1092,7 +1091,7 @@ async function sanatciSayfasi(id) {
     <div class="isim-blok">
       ${isimHtml(s, { etiketAdi: 'h1', ek: ' tabindex="-1"' })}
       <p class="meta">${kacis(yillarYaz(s))} · <span class="vurgu-yazi">${s.kaynak === 'ek' ? 'Kurs dışı' : `Kursta Konu ${s.konu}`}</span>${s.not_cikarilmadi ? ' <span class="rozet">taslak</span>' : ''}</p>
-      ${acik || pekistirmedeMi(s) ? `<p class="seviye-satir" data-test="sanatci-seviye">${kacis(seviyeDurumu(seviyeKaydi(d.ilerleme, s.id)))}</p>` : `<p class="mesaj-not">Bu sanatçı Konu ${s.konu} işlenince pekiştirmeye girer.</p>`}
+      ${acik || pekistirmedeMi(s) ? `<p class="seviye-satir" data-test="sanatci-seviye">${kacis(`${s.akim} dönemi: ${seviyeDurumu(seviyeKaydi(d.ilerleme, s.akim))}`)}</p>` : `<p class="mesaj-not">Bu sanatçı Konu ${s.konu} işlenince pekiştirmeye girer.</p>`}
     </div>
     <div class="eserler" id="eserler"><p class="ikincil kucuk">Eserler yükleniyor…</p></div>
     ${notBolumleri(s)}
@@ -1220,11 +1219,11 @@ function pekistirMenusu() {
     ${
       durumlar.length
         ? `<a class="dugme vurgu" href="#/pekistir/karisik" style="margin-top:6px;min-height:54px;border-radius:16px">Pekiştir · Karışık <span class="sayi" aria-label="${istatistik().vade} tekrar">${istatistik().vade}</span></a>
-    ${seviyelerBolumu()}
     <section class="bolum">${etiket('Döneme göre')}
+    <p class="kucuk ikincil" style="margin:0">${seviyeAciklamasi()}</p>
     <ul class="liste">
       <li><a class="satir" href="#/pekistir/donem/hepsi"><span class="metin"><b>Hepsi, dönem sırasıyla</b><span>${acikListe().length} sanatçı · ${vadeSay(null)} tekrar</span></span>${ikon('ileri', 20, 1.4)}</a></li>
-      ${durumlar.map((a) => `<li><a class="satir" href="#/pekistir/donem/${encodeURIComponent(a.ad)}"><span class="metin"><b>${kacis(a.ad)} ${akimNoktasi(a.ad)}</b><span>${a.acikSayisi} sanatçı · ${vadeSay(a.ad)} tekrar</span></span>${ikon('ileri', 20, 1.4)}</a></li>`).join('')}
+      ${durumlar.map((a) => `<li><a class="satir" href="#/pekistir/donem/${encodeURIComponent(a.ad)}"><span class="metin"><b>${kacis(a.ad)} ${akimNoktasi(a.ad)}</b><span>${a.acikSayisi} sanatçı · ${vadeSay(a.ad)} tekrar</span></span>${seviyeRozeti(a.ad)}${ikon('ileri', 20, 1.4)}</a></li>`).join('')}
     </ul></section>`
         : bosAcik()
     }`);
@@ -1246,12 +1245,7 @@ function eserVarMi(s) {
 
 async function oturumKur(kip, akim) {
   const acik = acikListe();
-  let adaylar =
-    kip === 'seviye'
-      ? acik.filter((s) => seviyeKaydi(d.ilerleme, s.id).s === seviyeBul(akim).no)
-      : kip === 'donem' && akim !== 'hepsi'
-        ? acik.filter((s) => s.akim === akim)
-        : acik;
+  let adaylar = kip === 'donem' && akim !== 'hepsi' ? acik.filter((s) => s.akim === akim) : acik;
   const varMi = await Promise.all(adaylar.map(eserVarMi));
   adaylar = adaylar.filter((_, i) => varMi[i]);
   const g = gunlukGuncelle(d.ilerleme, bugun());
@@ -1261,7 +1255,7 @@ async function oturumKur(kip, akim) {
     bugun: bugun(),
     adet: d.ilerleme.ayarlar.gunlukKart,
     yeniKota: GUNLUK_YENI_SINIRI - g.yeni,
-    kip: kip === 'karisik' ? 'karisik' : 'donem',
+    kip,
     sirala: kip === 'karisik' ? 'agirlikli' : akim === 'hepsi' ? 'kronolojik' : 'oncelik',
     akimSira: d.akimSira,
     rng: d.rng,
@@ -1278,17 +1272,15 @@ async function oturumKur(kip, akim) {
     sonrakiKart: null,
     kimlik: `${Date.now().toString(36)}-${Math.floor(d.rng() * 1e9).toString(36)}`,
     gosterilen: [],
-    gecenler: [], // bu turda seviye atlayanlar: [{ id, seviye }]
+    gecenler: [], // bu turda seviye atlayan dönemler: [{ akim, seviye }]
   };
 }
 
 function kipAdi(kip, akim) {
-  if (kip === 'seviye') return `Pekiştir · ${seviyeBul(akim).ad} seviye`;
   return kip === 'karisik' ? 'Pekiştir · Karışık' : akim === 'hepsi' ? 'Pekiştir · Hepsi' : `Pekiştir · ${akim}`;
 }
 
 function kipKisa(kip, akim) {
-  if (kip === 'seviye') return seviyeBul(akim).ad;
   return kip === 'karisik' ? 'Karışık' : akim === 'hepsi' ? 'Hepsi' : akim;
 }
 
@@ -1317,8 +1309,8 @@ function kartHazirla(o, konum) {
   const s = d.harita.get(k.id);
   return sanatciEserleri(s).then((eserler) => {
     const son = d.ilerleme.sonEserler[s.id] || [];
-    // Sanatçının seviyesi sorunun zorluğunu belirler: eser (kolay → tipik/ünlü) ve şıklar (kolay → uzak dönemler)
-    const sv = seviyeKaydi(d.ilerleme, s.id).s;
+    // Dönemin seviyesi sorunun zorluğunu belirler: eser (kolay → tipik/ünlü) ve şıklar (kolay → uzak dönemler)
+    const sv = seviyeKaydi(d.ilerleme, s.akim).s;
     const eser = eserSec(eserler, son, d.rng, kotuler(), { kolaylik: kolaylikFn(s.id), seviye: eserSeviyesi(sv) });
     if (!eser) return { konum, id: s.id, eser: null };
     d.ilerleme.sonEserler[s.id] = [...son.filter((x) => x !== eser.anahtar), eser.anahtar].slice(-8);
@@ -1449,7 +1441,7 @@ async function devamEt() {
   d.oturum = {
     kip: y.kip,
     akim: y.akim,
-    rota: y.kip === 'karisik' ? '#/pekistir/karisik' : y.kip === 'seviye' ? `#/pekistir/seviye/${y.akim}` : `#/pekistir/donem/${encodeURIComponent(y.akim)}`,
+    rota: y.kip === 'karisik' ? '#/pekistir/karisik' : `#/pekistir/donem/${encodeURIComponent(y.akim)}`,
     oturum: kur.oturum,
     kart: null,
     sonrakiKart: null,
@@ -1784,11 +1776,12 @@ ekran.addEventListener('click', (e) => {
     const dogru = k.cevapSanatci === k.id;
     k.karisanSayi = dogru ? 0 : karisanEkle(d.ilerleme, k.id, k.cevapSanatci, bugun());
     skor(k.id).sanatci = cevapla(skor(k.id).sanatci, dogru, bugun());
-    k.seviyeSonuc = seviyeIsle(d.ilerleme, k.id, dogru);
-    if (k.seviyeSonuc.gecti) (o.gecenler ||= []).push({ id: k.id, seviye: k.seviyeSonuc.sonra });
+    const akim = d.harita.get(k.id).akim;
+    k.seviyeSonuc = { akim, ...seviyeIsle(d.ilerleme, akim, dogru) };
+    if (k.seviyeSonuc.gecti) (o.gecenler ||= []).push({ akim, seviye: k.seviyeSonuc.sonra });
     sonCalisilanEkle(d.ilerleme, k.id);
     baskaDeneme = 0;
-    if (o.kip !== 'karisik') kartiBitir(o, dogru);
+    if (o.kip === 'donem') kartiBitir(o, dogru);
     else kaydet();
     yarimKaydet(o);
     kartGoster(o);
@@ -1868,53 +1861,33 @@ function yaldizYapraklari() {
   return `<div class="yaldiz-yapraklar" aria-hidden="true">${h}</div>`;
 }
 
-// ---------- Seviyeler ----------
-// Cevap yaprağında: kartın seviyesi, bu seviyedeki ilerleme; seviye atlandıysa kutlama
+// ---------- Seviyeler (dönem başına) ----------
+// Cevap yaprağında: dönemin seviyesi ve bu seviyedeki ilerleme; dönem seviye atladıysa kutlama
 function seviyeSatiri(k) {
   const r = k.seviyeSonuc;
   if (!r) return '';
+  const akim = r.akim || d.harita.get(k.id).akim;
   if (r.gecti)
-    return `<p class="seviye-satir gecti" data-test="seviye-gecti">${ikon('dogru', 16, 2)} ${kacis(d.harita.get(k.id).ad)} ${kacis(SEVIYELER[r.sonra].ad)} seviyeye geçti</p>`;
-  return `<p class="seviye-satir" data-test="seviye">${kacis(seviyeDurumu(seviyeKaydi(d.ilerleme, k.id)))}</p>`;
+    return `<p class="seviye-satir gecti" data-test="seviye-gecti">${ikon('dogru', 16, 2)} ${kacis(akim)} ${kacis(SEVIYELER[r.sonra].ad)} seviyeye geçti</p>`;
+  return `<p class="seviye-satir" data-test="seviye">${kacis(`${akim} · ${seviyeDurumu(seviyeKaydi(d.ilerleme, akim))}`)}</p>`;
 }
 
 function gecenlerHtml(gecenler) {
-  const liste = gecenler.filter((x) => d.harita.has(x.id));
+  const liste = gecenler.filter((x) => x.akim && d.akimlar.some((a) => a.ad === x.akim));
   if (!liste.length) return '';
-  return `<section class="bolum" data-test="gecenler">${etiket('Seviye atlayanlar')}<ul class="liste">${liste
-    .map((x) => `<li><a class="satir" href="#/sanatci/${encodeURIComponent(x.id)}"><span class="metin"><b>${kacis(d.harita.get(x.id).ad)}</b><span>${kacis(SEVIYELER[x.seviye].ad)} seviyeye geçti</span></span>${ikon('ileri', 20, 1.4)}</a></li>`)
+  return `<section class="bolum" data-test="gecenler">${etiket('Seviye atlayan dönemler')}<ul class="liste">${liste
+    .map((x) => `<li><a class="satir" href="#/pekistir/donem/${encodeURIComponent(x.akim)}"><span class="metin"><b>${kacis(x.akim)}</b><span>${kacis(SEVIYELER[x.seviye].ad)} seviyeye geçti</span></span>${ikon('ileri', 20, 1.4)}</a></li>`)
     .join('')}</ul></section>`;
 }
 
-// Pekiştir menüsünde: her seviyedeki açık sanatçılar. Bir üst seviye, sanatçı alttakinde %80 başarınca açılır.
-function seviyelerBolumu() {
-  const idler = acikListe().map((s) => s.id);
-  const sayilar = seviyeSayilari(d.ilerleme, idler);
-  const yuzde = Math.round(GECIS_ORANI * 100);
-  return `<section class="bolum" data-test="seviyeler">${etiket('Seviyeye göre')}
-    <p class="kucuk ikincil" style="margin:0">Her sanatçı Kolay'dan başlar; bir seviyede son cevaplarının %${yuzde}'i doğru olmadan üst seviyeye geçmez.</p>
-    <ul class="liste">${sayilar
-      .map((x) => {
-        const alt = x.sayi
-          ? `${x.sayi} sanatçı${x.usta ? ` · ${x.usta} ustalaştı` : ''} · ${x.aciklama}`
-          : x.no === 0
-            ? 'Bu seviyede sanatçı kalmadı'
-            : `Kilitli · bir sanatçı ${SEVIYELER[x.no - 1].ad}'da %${yuzde} başarınca açılır`;
-        return x.sayi
-          ? `<li><a class="satir" href="#/pekistir/seviye/${x.anahtar}" data-seviye-sec="${x.anahtar}"><span class="metin"><b>${x.ad}</b><span>${kacis(alt)}</span></span>${ikon('ileri', 20, 1.4)}</a></li>`
-          : `<li><div class="satir kilitli" aria-disabled="true" data-seviye-kilit="${x.anahtar}"><span class="metin"><b>${x.ad}</b><span>${kacis(alt)}</span></span></div></li>`;
-      })
-      .join('')}</ul></section>`;
+function seviyeAciklamasi() {
+  return `Her dönem Kolay'dan başlar; o dönemde son cevaplarının %${Math.round(GECIS_ORANI * 100)}'i doğru olmadan Orta'ya, sonra Zor'a geçmez.`;
 }
 
-// İlerleme ekranında: seviyelere göre sanatçı sayıları
-function seviyeOzeti() {
-  const sayilar = seviyeSayilari(
-    d.ilerleme,
-    acikListe().map((s) => s.id),
-  );
-  return `<h2 class="etiket bolum-baslik">Seviyeler</h2>
-    <p class="kucuk" data-test="seviye-ozet">${sayilar.map((x) => `${x.ad} ${x.sayi}${x.usta ? ` (${x.usta} usta)` : ''}`).join(' · ')}</p>`;
+// Dönem satırlarında seviye rozeti: "Kolay · 3/5"
+function seviyeRozeti(akim) {
+  const k = seviyeKaydi(d.ilerleme, akim);
+  return `<span class="seviye-rozet sv-${SEVIYELER[k.s].anahtar}" data-test="seviye-rozet">${kacis(seviyeKisa(k))}</span>`;
 }
 
 // ---------- İlerleme ----------
@@ -1946,7 +1919,7 @@ function ilerlemeSayfasi(kaydirmayiKoru = false) {
         for (const x of [sk.sanatci, sk.akim]) if (x) ((dg += x.dogru), (tp += x.dogru + x.yanlis));
       }
       const y = tp ? Math.round((100 * dg) / tp) : null;
-      return `<div class="cubuk-satir"><span>${akimNoktasi(a.ad)}${kacis(a.ad)}</span><span class="cubuk" role="img" aria-label="${y === null ? 'veri yok' : '%' + y}"><i style="width:${y ?? 0}%"></i></span><span class="yuzde">${y === null ? '–' : '%' + y}</span></div>`;
+      return `<div class="cubuk-satir"><span>${akimNoktasi(a.ad)}${kacis(a.ad)} <span class="seviye-etiket" data-test="seviye-ozet">${SEVIYELER[seviyeKaydi(d.ilerleme, a.ad).s].ad}</span></span><span class="cubuk" role="img" aria-label="${y === null ? 'veri yok' : '%' + y}"><i style="width:${y ?? 0}%"></i></span><span class="yuzde">${y === null ? '–' : '%' + y}</span></div>`;
     });
   // en zayıf sanatçılar
   const zayiflar = acikSanatcilar(d.sanatcilar, k)
@@ -1999,7 +1972,6 @@ function ilerlemeSayfasi(kaydirmayiKoru = false) {
       .join('')}
     <h2 class="etiket bolum-baslik">Akımlara göre doğruluk</h2>
     ${akimSatirlari.length ? `<div style="border-top:1px solid var(--border)">${akimSatirlari.join('')}</div>` : '<p class="ikincil">Henüz açık akım yok.</p>'}
-    ${seviyeOzeti()}
     ${karisanlarBolumu()}
     <h2 class="etiket bolum-baslik">En zayıf sanatçılar</h2>
     ${
@@ -2290,7 +2262,7 @@ async function basla() {
   d.ilerleme = await ilerlemeYukle(() => jsonGetir('data/baslangic_ilerleme.json'));
   d.yarim = await yarimYukle();
   // Yarım oturum varken uygulama bir oturum adresinde açıldıysa (yenileme, yeni sürüm) Bugün'deki devam kartına dön
-  if (d.yarim && /^#\/pekistir\/(karisik|donem\/.+|seviye\/.+)$/.test(location.hash)) history.replaceState(null, '', '#/');
+  if (d.yarim && /^#\/pekistir\/(karisik|donem\/.+)$/.test(location.hash)) history.replaceState(null, '', '#/');
   gunlukGuncelle(d.ilerleme, bugun());
   kaydet();
   temaUygula();

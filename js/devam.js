@@ -2,9 +2,6 @@
 // Kayıt: kip, akım, kart sırası (kuyruk), konum, şu anki kart (eser, seçenekler, adım, verilen cevaplar),
 // yanlışların tekrar sayacı, doğru/yanlış sayıları ve gösterilen eserler. Saf fonksiyonlar (birim testli).
 import { Oturum } from './oturum.js';
-import { SEVIYELER } from './seviye.js';
-
-const SEVIYE_AD = Object.fromEntries(SEVIYELER.map((x) => [x.anahtar, x.ad]));
 
 export const KAYIT_SURUMU = 1;
 export const EN_UZUN_GUN = 7;
@@ -53,7 +50,7 @@ const metinMi = (x) => typeof x === 'string';
 export function kayitGecerliMi(k, simdi = Date.now()) {
   if (!k || typeof k !== 'object' || k.surum !== KAYIT_SURUMU) return false;
   if (!Number.isFinite(k.zaman) || simdi - k.zaman > EN_UZUN_GUN * GUN_MS) return false;
-  if (!['donem', 'karisik', 'seviye'].includes(k.kip) || (k.kip !== 'karisik' && !metinMi(k.akim))) return false;
+  if (!['donem', 'karisik'].includes(k.kip) || (k.kip === 'donem' && !metinMi(k.akim))) return false;
   if (!Array.isArray(k.kuyruk) || !k.kuyruk.every((x) => x && metinMi(x.id))) return false;
   if (!Number.isInteger(k.konum) || k.konum < 0 || k.konum > k.kuyruk.length) return false;
   if (k.kart !== null && k.kart !== undefined) {
@@ -102,11 +99,6 @@ export function devamKonumu(k) {
 
 // "Döneme göre · Gotik · 7 / 20", "Karışık · 3 / 20"
 export function devamOzeti(k) {
-  const ad =
-    k.kip === 'karisik'
-      ? 'Karışık'
-      : k.kip === 'seviye'
-        ? `Seviye · ${SEVIYE_AD[k.akim] || k.akim}`
-        : `Döneme göre · ${k.akim === 'hepsi' ? 'Hepsi' : k.akim}`;
+  const ad = k.kip === 'karisik' ? 'Karışık' : `Döneme göre · ${k.akim === 'hepsi' ? 'Hepsi' : k.akim}`;
   return `${ad} · ${devamKonumu(k)} / ${k.kuyruk.length}`;
 }

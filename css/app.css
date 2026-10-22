@@ -2844,3 +2844,26 @@ main[data-hareket='giris'] .ozet .ad {
   align-items: center;
   gap: 6px;
 }
+/* dönem satırında seviye rozeti; Orta altın, Zor koyu vurgu */
+.seviye-rozet {
+  font: 500 12px/1.2 var(--sans);
+  color: var(--ink-2);
+  padding: 4px 9px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.seviye-rozet.sv-orta {
+  color: var(--vurgu-yazi);
+  border-color: currentColor;
+}
+.seviye-rozet.sv-zor {
+  color: var(--vurgu-acik-yazi);
+  background: var(--vurgu-acik);
+  border-color: transparent;
+}
+.seviye-etiket {
+  font: 500 11px/1 var(--sans);
+  color: var(--ink-2);
+}
