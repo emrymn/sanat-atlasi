@@ -146,7 +146,7 @@ test('İlerleme kitaplığı: her konu bir kitap, sıradaki çekili; kartta işl
   });
   expect(renkler.no).toBe(renkler.ink);
   expect(renkler.dugme).toBe('rgba(0, 0, 0, 0)');
-  // sıradaki kitaba dokun → kart açılır → işlendi yap → kitap akım rengine boyanır
+  // sıradaki kitaba dokun → kart açılır → işlendi yap → kitap mürekkep rengine döner
   await page.locator(`[data-kurs-konu="${sira}"]`).click();
   const kart = page.locator('[data-test="konu-karti"]');
   await expect(kart).toBeVisible();
@@ -156,4 +156,46 @@ test('İlerleme kitaplığı: her konu bir kitap, sıradaki çekili; kartta işl
   // aynı kitaba yeniden dokununca kart kapanır
   await kitap.click();
   await expect(kart).toHaveCount(0);
+});
+
+test('İlerleme kitaplığı: değişiklik sayfayı baştan çizmez; "buraya kadar hepsi" ve işaretle kipi; kitaplar renksiz', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('./#/ilerleme');
+  await expect(page.locator('.kitaplik')).toBeVisible();
+  // sayfanın üst kısmına işaret koy: yerinde güncellemede kaybolmamalı
+  await page.evaluate(() => (document.querySelector('.ozet-satir').previousElementSibling.dataset.isaret = '1'));
+  const hedef = await page.evaluate(() => {
+    const isl = new Set(window.__atlas.ilerleme.islenen);
+    // işlenmemiş konulardan sonra gelen bir konu (öncesinde en az iki işlenmemiş)
+    const bos = window.__atlas.konular.filter((k) => !isl.has(k.no));
+    return bos[2].no;
+  });
+  await page.locator(`[data-kurs-konu="${hedef}"]`).click();
+  const kadar = page.locator('[data-test="konu-kadar"]');
+  await expect(kadar).toBeVisible();
+  await kadar.click();
+  const sonuc = await page.evaluate((h) => {
+    const d = window.__atlas;
+    const isl = new Set(d.ilerleme.islenen);
+    return d.konular.filter((k) => k.no <= h).every((k) => isl.has(k.no));
+  }, hedef);
+  expect(sonuc).toBe(true);
+  await expect(page.locator('[data-test="konu-kadar"]')).toHaveCount(0);
+  await expect(page.locator('[data-isaret="1"]')).toHaveCount(1);
+  // işlenmiş kitap akım rengi değil, mürekkep
+  const renk = await page.evaluate((h) => {
+    const k = document.querySelector(`[data-kurs-konu="${h}"]`);
+    return { bg: getComputedStyle(k).backgroundColor, ink: getComputedStyle(document.body).color };
+  }, hedef);
+  expect(renk.bg).toBe(renk.ink);
+  // işaretle kipi: dokunuş kart açmadan konuyu değiştirir, tekrar dokunuş geri alır
+  await page.locator('[data-kurs-kip="isaretle"]').click();
+  await expect(page.locator('[data-test="konu-karti"]')).toHaveCount(0);
+  const kitap = page.locator(`[data-kurs-konu="${hedef}"]`);
+  await kitap.click();
+  await expect(kitap).not.toHaveClass(/islendi/);
+  await expect(page.locator('[data-test="konu-karti"]')).toHaveCount(0);
+  await kitap.click();
+  await expect(kitap).toHaveClass(/islendi/);
+  await expect(page.locator('[data-isaret="1"]')).toHaveCount(1);
 });
