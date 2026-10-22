@@ -41,11 +41,12 @@ test('Ö1: ad verilir, dört eserden biri doğru; doğru cevap tek soruda kartı
   await expect(page.locator('[data-test="ters-secenekleri"] .ters-eser')).toHaveCount(4);
   await page.locator(`[data-test="ters-secenekleri"] [data-sanatci="${k.id}"]`).click();
   await expect(page.locator('[data-test="sonuc"]')).toHaveAttribute('data-dogru', 'true');
-  // akım sorusu yok, doğrudan sonraki kart; eserler tek sırada ve yaprağın üstünde
+  // akım sorusu yok, doğrudan sonraki kart; doğru eser sahnede, dördü tek sırada ve yaprağın üstünde
   await expect(page.locator('[data-ikinci]')).toHaveCount(0);
   await expect(page.locator('[data-sonraki]')).toBeVisible();
-  await expect(page.locator('.ters-izgara.cevapli')).toBeVisible();
-  const kutular = await page.locator('.ters-eser').evaluateAll((l) => l.map((x) => x.getBoundingClientRect()));
+  await expect(page.locator('.ters-sahne img')).toBeVisible();
+  const kutular = await page.locator('.ters-mini').evaluateAll((l) => l.map((x) => x.getBoundingClientRect()));
+  expect(kutular).toHaveLength(4);
   expect(new Set(kutular.map((r) => Math.round(r.top))).size).toBe(1);
   const yaprak = await page.locator('.alt-yaprak').boundingBox();
   for (const r of kutular) expect(r.bottom).toBeLessThanOrEqual(yaprak.y + 1);
@@ -68,8 +69,8 @@ test('Ö1: yanlış eser seçilince seçilenin sanatçısı söylenir, karşıla
   await expect(page.locator('[data-test="sonuc"]')).toHaveAttribute('data-dogru', 'false');
   await expect(page.locator('[data-test="ters-secilen"]')).toContainText(yanlisAd);
   await expect(page.locator('[data-test="karsilastir"]')).toBeVisible();
-  await expect(page.locator('.ters-eser.dogru')).toHaveCount(1);
-  await expect(page.locator('.ters-eser.yanlis')).toHaveCount(1);
+  await expect(page.locator('.ters-mini.dogru')).toHaveCount(1);
+  await expect(page.locator('.ters-mini.yanlis')).toHaveCount(1);
   const i = await ilerleme(page);
   expect(i.skorlar[id].sanatci.yanlis).toBe(1);
   expect(Object.keys(i.karisanlar)).toHaveLength(1);

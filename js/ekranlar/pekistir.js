@@ -437,11 +437,13 @@ function yaprakYerlestir() {
   const ustu = sahne.getBoundingClientRect().top + window.scrollY;
   const resimH = img ? img.getBoundingClientRect().height : 0;
   // görselin altındaki her şey (başlık, iki seçenek) + yaprak
-  const alti = ekran.querySelector('.secenekler').getBoundingClientRect().bottom - sahne.getBoundingClientRect().bottom;
+  // son öğe: seçenekler ya da ters sorunun eser şeridi
+  const son = ekran.querySelector('[data-yaprak-son]') || ekran.querySelector('.secenekler');
+  const alti = son.getBoundingClientRect().bottom - sahne.getBoundingClientRect().bottom;
   const bos = window.innerHeight - y.offsetHeight - 14 - ustu - alti;
   const hedef = Math.max(140, Math.min(bos, resimH || bos));
   sahne.style.setProperty('--soru-resim-h', `${Math.round(hedef)}px`);
-  const tasma = ekran.querySelector('.secenekler').getBoundingClientRect().bottom - (window.innerHeight - y.offsetHeight) + 12;
+  const tasma = son.getBoundingClientRect().bottom - (window.innerHeight - y.offsetHeight) + 12;
   if (tasma > 0) window.scrollBy(0, tasma);
 }
 
@@ -464,8 +466,18 @@ function ipucuCevir(p) {
   yaprakYerlestir();
 }
 
-// Ters soru (Ö1): ad verilir, dört eserden biri onun. Cevaptan sonra doğru eser işaretlenir, yanlış seçilen
-// eserin sanatçısı söylenir; tek soru (karışıkta akım sorusu yok).
+// Ters soru (Ö1): ad bir isim levhasında verilir, dört eserden biri onun. Cevaptan sonra doğru eser büyüyerek
+// sahneye çıkar, dördü altında küçük kartlar olarak kalır; tek soru (karışıkta akım sorusu yok).
+// Tasarım: 'kartpostal' (masaya dağılmış kartpostallar; cevapta ters dönüp arkalarında sanatçının adı)
+// ya da 'kaydir' (eserler büyük, yana kaydırarak tek tek; her birinin altında "Bu" düğmesi).
+function tersTasarimi() {
+  try {
+    return localStorage.getItem('ters-tasarim') === 'kaydir' ? 'kaydir' : 'kartpostal';
+  } catch {
+    return 'kartpostal';
+  }
+}
+
 function tersGoster(o) {
   const k = o.kart;
   const s = d.harita.get(k.id);
@@ -473,33 +485,48 @@ function tersGoster(o) {
   const sira = Math.min(ot.konum + 1, ot.toplam);
   const yuzde = Math.round((100 * ot.konum) / ot.toplam);
   const cevap = k.cevapSanatci;
-  const salon = (() => {
-    try {
-      return localStorage.getItem('ters-tasarim') === 'salon';
-    } catch {
-      return false;
-    }
-  })();
-  const kutular = k.ters
-    .map((x, i) => {
-      const g = secilenGorsel(x.eser, kotuler()) || x.eser.gorseller[0];
-      let sinif = 'ters-eser';
-      let isaret = '';
-      if (cevap !== null) {
-        if (x.id === k.id) {
-          sinif += ' dogru';
-          isaret = `<span class="ters-isaret" role="img" aria-label="Doğru cevap">${ikon('dogru', 18, 2.2)}</span>`;
-        } else if (x.id === cevap) {
-          sinif += ' yanlis';
-          isaret = `<span class="ters-isaret" role="img" aria-label="Senin cevabın, yanlış">${ikon('yanlis', 18, 2.2)}</span>`;
-        } else sinif += ' soluk';
-      }
-      const veri = cevap === null ? `data-sanatci="${kacis(x.id)}"` : `data-ters-eser="${i}"`;
-      const etiketi = cevap !== null && x.id !== k.id ? `<span class="ters-kimin">${kacis(bilinenAd(d.harita.get(x.id).ad, d.kisaAdlar[x.id]))}</span>` : '';
-      return `<button class="${sinif}" type="button" ${veri} style="--i:${i}" aria-label="${HARFLER[i]} seçeneği${cevap !== null ? `: ${kacis(d.harita.get(x.id).ad)}` : ''}"><span class="ters-cerceve"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}"></span><span class="harf">${HARFLER[i]}</span>${isaret}${etiketi}</button>`;
-    })
-    .join('');
-  const bilmiyorum = cevap === null ? `<button class="bilmiyorum" type="button" data-bilmiyorum data-test="bilmiyorum">Bilmiyorum</button>` : '';
+  const tasarim = tersTasarimi();
+  const gorsel = (x) => secilenGorsel(x.eser, kotuler()) || x.eser.gorseller[0];
+  const resim = (x, w) => `<img decoding="async" alt="" src="${kacis(gorselUrl(gorsel(x), w))}" data-yedek="${kacis(gorselYedek(gorsel(x)))}">`;
+  const adi = (id) => kacis(bilinenAd(d.harita.get(id).ad, d.kisaAdlar[id]));
+  let govde;
+  if (cevap === null && tasarim === 'kaydir') {
+    const slaytlar = k.ters
+      .map(
+        (x, i) =>
+          `<figure class="ters-slayt" style="--i:${i}" data-slayt="${i}"><span class="ters-cerceve">${resim(x, 800)}</span><figcaption><span class="harf">${HARFLER[i]}</span><button class="dugme ters-bu" type="button" data-sanatci="${kacis(x.id)}" aria-label="${HARFLER[i]}: bu eser">Bu</button></figcaption></figure>`,
+      )
+      .join('');
+    const sekmeler = k.ters.map((x, i) => `<button type="button" class="ters-sekme${i ? '' : ' etkin'}" data-slayta="${i}" aria-label="${HARFLER[i]} eserine git">${HARFLER[i]}</button>`).join('');
+    govde = `<div class="ters-sekmeler" aria-hidden="false">${sekmeler}</div>
+      <div class="ters-kaydir" data-test="ters-secenekleri" data-ters-kaydir>${slaytlar}</div>
+      <button class="bilmiyorum" type="button" data-bilmiyorum data-test="bilmiyorum">Bilmiyorum</button>`;
+  } else if (cevap === null) {
+    const kartlar = k.ters
+      .map(
+        (x, i) =>
+          `<button class="ters-eser kartpostal" type="button" data-sanatci="${kacis(x.id)}" style="--i:${i}" aria-label="${HARFLER[i]} seçeneği"><span class="kp-on"><span class="ters-cerceve">${resim(x, 400)}</span><span class="kp-pul">${HARFLER[i]}</span></span></button>`,
+      )
+      .join('');
+    govde = `<div class="ters-izgara masa" data-test="ters-secenekleri">${kartlar}</div>
+      <button class="bilmiyorum" type="button" data-bilmiyorum data-test="bilmiyorum">Bilmiyorum</button>`;
+  } else {
+    // doğru eser sahnede; dördü altında küçük kartlar: kartpostalda ters dönüp sanatçının adını gösterir
+    const dogruI = k.ters.findIndex((x) => x.id === k.id);
+    const serit = k.ters
+      .map((x, i) => {
+        const sinif = x.id === k.id ? ' dogru' : x.id === cevap ? ' yanlis' : ' soluk';
+        const isaret = x.id === k.id ? ikon('dogru', 14, 2.4) : x.id === cevap ? ikon('yanlis', 14, 2.4) : '';
+        if (tasarim === 'kartpostal')
+          return `<button class="ters-mini kartpostal doner${sinif}" type="button" data-ters-eser="${i}" style="--i:${i}" aria-label="${kacis(d.harita.get(x.id).ad)}"><span class="kp-ic"><span class="kp-on"><span class="ters-cerceve">${resim(x, 400)}</span></span><span class="kp-arka"><span class="kp-isaret">${isaret}</span><b>${adi(x.id)}</b><small>${kacis(yillarYaz(d.harita.get(x.id)))}</small></span></span></button>`;
+        return `<button class="ters-mini${sinif}" type="button" data-ters-eser="${i}" style="--i:${i}" aria-label="${kacis(d.harita.get(x.id).ad)}"><span class="ters-cerceve">${resim(x, 400)}</span><span class="ters-kimin">${isaret}${adi(x.id)}</span></button>`;
+      })
+      .join('');
+    govde = `<div class="soru-sahne ters-sahne">
+        <button class="soru-resim" type="button" data-ters-eser="${dogruI}" aria-label="Görseli büyüt"><img decoding="async" alt="${kacis(eserAdi(k.eser))}" src="${kacis(gorselUrl(gorsel(k.ters[dogruI]), 800))}"></button>
+      </div>
+      <div class="ters-serit ${tasarim}" data-test="ters-secenekleri" data-yaprak-son>${serit}</div>`;
+  }
   let yaprak = '';
   if (cevap !== null) {
     const dogru = cevap === k.id;
@@ -509,7 +536,7 @@ function tersGoster(o) {
     let karsilastirBag = '';
     if (secilen && d.harita.has(cevap)) {
       if ((k.karisanSayi || 0) >= KARISAN_ESIGI) karsilastirBag = karsiSeritHtml(s, d.harita.get(cevap), k.karisanSayi);
-      karsilastirBag += `<a class="karsilastir-bag" href="${karsilastirmaAdresi(s.id, cevap)}" data-test="karsilastir">${ikon('karsilastir', 18, 1.6)}<span>Karşılaştır: ${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))} ↔ ${kacis(bilinenAd(d.harita.get(cevap).ad, d.kisaAdlar[cevap]))}</span></a>`;
+      karsilastirBag += `<a class="karsilastir-bag" href="${karsilastirmaAdresi(s.id, cevap)}" data-test="karsilastir">${ikon('karsilastir', 18, 1.6)}<span>Karşılaştır: ${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))} ↔ ${adi(cevap)}</span></a>`;
     }
     const sonrakiYazi = ot.konum + 1 >= ot.toplam ? 'Turu bitir' : 'Sonraki kart →';
     const ipucu = ipucuMetni(s);
@@ -535,12 +562,13 @@ function tersGoster(o) {
       <span data-test="sayac">${sira} / ${ot.toplam}</span>
     </header>
     <div class="ince-cubuk" aria-hidden="true"><i style="width:${yuzde}%;--onceki:${oncekiYuzde}%"></i></div>
-    <div class="soru-baslik ters-baslik">
-      ${etiket(`Ters soru · ${SEVIYELER[k.seviye ?? 0].ad}`)}
-      <h2 tabindex="-1" data-test="ters-soru">Hangisi bir <span class="ters-ad">${kacis(s.ad)}</span> eseri?</h2>
+    <div class="ters-levha${cevap !== null ? ' kucuk' : ''}" data-test="ters-soru">
+      <span class="ters-ust">${etiket(`Ters soru · ${SEVIYELER[k.seviye ?? 0].ad}`)}<span class="ters-yil">${kacis(yillarYaz(s))}</span></span>
+      <span class="ters-sor">Hangisi bir</span>
+      <h2 tabindex="-1" class="ters-isim">${kacis(s.ad)}</h2>
+      <span class="ters-sor sag">eseri?</span>
     </div>
-    <div class="ters-izgara${salon ? ' salon' : ''}${cevap !== null ? ' cevapli' : ''}" data-test="ters-secenekleri">${kutular}</div>
-    ${bilmiyorum}
+    ${govde}
     ${yaprak}`,
     hareket,
   );
@@ -550,6 +578,13 @@ function tersGoster(o) {
   if (y) {
     y.querySelector('[data-sonraki]').focus({ preventScroll: true });
     ipucuIsaretle(y);
+    yaprakYerlestir();
+    // ekranın rengi doğru eserden (cevaptan sonra artık ipucu değil)
+    if (k.palet === undefined) ekranRengi(k.eser, null, (p) => (k.palet = p));
+    else renkSabitle(k.palet);
+  } else {
+    const kay = ekran.querySelector('[data-ters-kaydir]');
+    if (kay) tersKaydirBagla(kay);
   }
   if (!o.sonrakiKart && ot.konum + 1 < ot.toplam) {
     o.sonrakiKart = kartHazirla(o, ot.konum + 1).then((h) => {
@@ -557,6 +592,21 @@ function tersGoster(o) {
       return h;
     });
   }
+}
+
+// Kaydırmalı ters soru: üstteki A–D sekmeleri görünen esere göre işaretlenir, dokununca o esere kayar
+function tersKaydirBagla(kay) {
+  const sekmeler = [...ekran.querySelectorAll('[data-slayta]')];
+  const isaretle = () => {
+    const i = Math.round(kay.scrollLeft / (kay.firstElementChild.offsetWidth + 12));
+    sekmeler.forEach((b, j) => b.classList.toggle('etkin', j === i));
+  };
+  kay.addEventListener('scroll', isaretle, { passive: true });
+  for (const b of sekmeler)
+    b.addEventListener('click', () => {
+      const hedef = kay.children[Number(b.dataset.slayta)];
+      kay.scrollTo({ left: hedef.offsetLeft - kay.offsetLeft, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    });
 }
 
 function kartGoster(o) {

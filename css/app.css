@@ -3318,26 +3318,66 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   }
 }
 
-/* ---------- Ö1 · Ters soru: ad verilir, dört eserden biri onun ----------
-   A (varsayılan) kare kırpılmış 2×2; B "salon": eserler kendi oranında, paspartu ve ince çerçeveyle. */
-.ters-baslik {
-  display: block;
-  padding-top: 14px;
+/* ---------- Ö1 · Ters soru: isim levhası, dört eser; cevapta doğru eser sahneye çıkar ----------
+   kartpostal: masaya dağılmış kartpostallar; cevapta küçük kartlar ters dönüp arkalarında sanatçının adını gösterir.
+   kaydir: eserler büyük, yana kaydırarak tek tek; altında "Bu" düğmesi. */
+.ters-levha {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 12px;
+  padding: 12px 0 14px;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--border);
+  animation: levha-gel 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
 }
-.ters-baslik h2 {
-  margin-top: 6px;
+.ters-ust {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.ters-yil {
+  font: 600 11px/1.3 var(--sans);
+  letter-spacing: 0.14em;
+  color: var(--ink-2);
+  font-variant-numeric: lining-nums;
+}
+.ters-sor {
+  margin-top: 8px;
+  font: italic 400 18px/1 var(--serif);
+  color: var(--ink-2);
+}
+.ters-sor.sag {
+  margin-top: 2px;
+  justify-self: end;
+}
+.ters-levha h2.ters-isim {
+  margin: 2px 0 0;
+  font: 500 40px/1.02 var(--serif);
+  letter-spacing: -0.01em;
   white-space: normal;
-  font: 400 26px/1.2 var(--serif);
 }
-.ters-ad {
-  font-weight: 600;
-  font-style: italic;
+.ters-levha.kucuk {
+  padding: 8px 0 8px;
 }
+.ters-levha.kucuk .ters-sor {
+  display: none;
+}
+.ters-levha.kucuk h2.ters-isim {
+  font-size: 26px;
+}
+@keyframes levha-gel {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+
+/* kartpostal: krem kenarlı kartlar masaya hafif eğik düşer; pul köşesinde harf */
 .ters-izgara {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding-top: 14px;
+  gap: 16px 14px;
+  margin-top: 18px;
+  padding: 0 4px;
 }
 .ters-eser {
   position: relative;
@@ -3346,121 +3386,128 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   background: none;
   color: var(--ink);
   cursor: pointer;
-  animation: ters-gel 0.45s calc(var(--i) * 70ms) cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
-  transition:
-    opacity 0.3s,
-    transform 0.3s;
 }
-.ters-eser:active {
-  transform: scale(0.97);
+.kartpostal {
+  --egim: -2.5deg;
+}
+.kartpostal:nth-child(2) {
+  --egim: 2deg;
+}
+.kartpostal:nth-child(3) {
+  --egim: 1.5deg;
+}
+.kartpostal:nth-child(4) {
+  --egim: -1.8deg;
+}
+.ters-eser.kartpostal {
+  transform: rotate(var(--egim));
+  animation: kp-dus 0.6s calc(var(--i) * 110ms) cubic-bezier(0.25, 1.4, 0.5, 1) backwards;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.ters-eser.kartpostal:active {
+  transform: rotate(0deg) scale(1.04);
+}
+.kp-on {
+  position: relative;
+  display: block;
+  padding: 6px 6px 22px;
+  background: #fbf7ee;
+  box-shadow:
+    0 1px 0 rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(53, 43, 33, 0.14);
 }
 .ters-cerceve {
   display: block;
-  aspect-ratio: 1;
   overflow: hidden;
-  background: var(--surface);
-  outline: 1px solid var(--border);
+  line-height: 0;
+}
+.kp-on .ters-cerceve {
+  aspect-ratio: 4 / 5;
 }
 .ters-cerceve img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
-.ters-eser .harf {
-  position: absolute;
-  left: 0;
-  top: 0;
-  min-width: 26px;
-  padding: 5px 7px;
-  font: 600 12px/1 var(--sans);
-  background: var(--bg);
-  color: var(--ink);
-}
-.ters-eser.dogru .ters-cerceve {
-  outline: 4px solid var(--right);
-  outline-offset: -4px;
-}
-.ters-eser.yanlis .ters-cerceve {
-  outline: 4px solid var(--wrong);
-  outline-offset: -4px;
-}
-.ters-eser.soluk {
-  opacity: 0.35;
-}
-.ters-isaret {
+.kp-pul {
   position: absolute;
   right: 6px;
-  top: 6px;
-  display: grid;
-  place-items: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: var(--bg);
+  bottom: 3px;
+  min-width: 18px;
+  padding: 1px 3px;
+  font: italic 600 13px/1.1 var(--serif);
+  color: #6b5d4d;
+  border: 1px dashed #b59b74;
+  text-align: center;
 }
-.ters-eser.dogru .ters-isaret {
-  color: var(--right);
+@keyframes kp-dus {
+  from {
+    transform: translateY(-40px) rotate(calc(var(--egim) * -4)) scale(1.08);
+    opacity: 0;
+  }
 }
-.ters-eser.yanlis .ters-isaret {
-  color: var(--wrong);
-}
-.ters-kimin {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 4px 6px;
-  font: 600 11.5px/1.2 var(--sans);
-  text-align: left;
-  background: var(--bg);
-  color: var(--ink-2);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.ters-secilen {
-  margin: 2px 0 0;
-  font-size: 14px;
-  color: var(--ink-2);
-}
-/* cevaptan sonra dört eser tek sıraya küçülür; cevap yaprağı onları örtmez */
-.ters-izgara.cevapli {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+/* kaydir: büyük eserler yana kayar; üstte A–D sekmeleri, altta "Bu" */
+.ters-sekmeler {
+  display: flex;
   gap: 6px;
+  margin-top: 14px;
 }
-.cevapli .ters-eser {
-  animation: none;
+.ters-sekme {
+  flex: 1;
+  min-height: 36px;
+  border: 0;
+  border-bottom: 2px solid var(--border);
+  background: none;
+  color: var(--ink-3);
+  font: italic 500 18px/1 var(--serif);
+  transition:
+    color 0.2s,
+    border-color 0.2s;
 }
-.cevapli .ters-eser.dogru {
-  animation: ters-dogru 0.5s cubic-bezier(0.3, 1.6, 0.5, 1);
+.ters-sekme.etkin {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
 }
-.cevapli .ters-eser.yanlis {
-  animation: sarsil 0.4s;
+.ters-kaydir {
+  display: flex;
+  gap: 12px;
+  margin: 12px calc(-1 * var(--yan)) 0;
+  padding: 0 var(--yan);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 var(--yan);
+  scrollbar-width: none;
 }
-.cevapli .ters-isaret {
-  right: 3px;
-  top: 3px;
-  width: 22px;
-  height: 22px;
-}
-.cevapli .ters-isaret svg {
-  width: 14px;
-  height: 14px;
-}
-.cevapli .ters-eser .harf {
+.ters-kaydir::-webkit-scrollbar {
   display: none;
 }
-.cevapli .ters-kimin {
-  font-size: 10px;
-  padding: 3px 4px;
+.ters-slayt {
+  flex: 0 0 82%;
+  margin: 0;
+  scroll-snap-align: start;
+  animation: ters-gel 0.5s calc(var(--i) * 80ms) cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
 }
-.salon.cevapli .ters-cerceve {
-  padding: 3px;
-  border-width: 2px;
+.ters-slayt .ters-cerceve {
+  height: clamp(240px, calc(100dvh - 430px), 520px);
+  background: var(--surface);
 }
-.salon.cevapli .ters-cerceve img {
-  max-height: 84px;
+.ters-slayt .ters-cerceve img {
+  object-fit: contain;
+}
+.ters-slayt figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 10px;
+}
+.ters-slayt .harf {
+  font: italic 500 26px/1 var(--serif);
+}
+.ters-bu {
+  min-width: 96px;
 }
 @keyframes ters-gel {
   from {
@@ -3468,50 +3515,169 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
     opacity: 0;
   }
 }
-@keyframes ters-dogru {
-  50% {
-    transform: scale(1.04);
+
+/* cevaptan sonra: doğru eser sahnede, dördü küçük şeritte */
+.ters-sahne {
+  margin-top: 10px;
+}
+.ters-sahne .soru-resim {
+  cursor: zoom-in;
+}
+.ters-sahne .soru-resim img {
+  opacity: 1;
+  border-radius: 0;
+  outline: 4px solid var(--right);
+  outline-offset: 3px;
+  animation: sahneye-cik 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+@keyframes sahneye-cik {
+  from {
+    transform: scale(0.45) translateY(30%);
+    opacity: 0;
   }
 }
-/* B · salon: eserin kendi oranı, krem paspartu ve mürekkep çerçeve; sütunlar alta hizalı */
-.ters-izgara.salon {
-  align-items: end;
-  gap: 14px 12px;
+.ters-serit {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 16px;
 }
-.salon .ters-cerceve {
+.ters-mini {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  cursor: zoom-in;
+  text-align: left;
+  animation: ters-gel 0.4s calc(var(--i) * 60ms) cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+.ters-mini .ters-cerceve {
+  aspect-ratio: 1;
+  outline: 3px solid transparent;
+  outline-offset: -3px;
+}
+.ters-mini .ters-cerceve img {
+  height: 100%;
+  object-fit: cover;
+}
+.ters-mini.dogru .ters-cerceve {
+  outline-color: var(--right);
+}
+.ters-mini.yanlis .ters-cerceve {
+  outline-color: var(--wrong);
+}
+.ters-mini.yanlis {
+  animation: sarsil 0.4s;
+}
+.ters-mini.soluk {
+  opacity: 0.45;
+}
+.ters-kimin {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font: 600 10.5px/1.2 var(--sans);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ters-mini.dogru .ters-kimin svg {
+  color: var(--right);
+}
+.ters-mini.yanlis .ters-kimin svg {
+  color: var(--wrong);
+}
+/* kartpostal minileri: önce resim yüzü, sonra sırayla ters döner; arkada sanatçının adı */
+.ters-mini.kartpostal {
+  perspective: 600px;
+  animation: none;
+}
+.kp-ic {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  transform-style: preserve-3d;
+  animation: kp-don 0.7s calc(0.35s + var(--i) * 140ms) cubic-bezier(0.3, 0.9, 0.3, 1) both;
+}
+.kp-ic > span {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.ters-mini .kp-on {
+  padding: 3px;
+}
+.ters-mini .kp-on .ters-cerceve {
   aspect-ratio: auto;
-  padding: 7px;
-  background: var(--surface);
-  outline: 0;
-  border: 3px solid var(--ink);
+  height: 100%;
 }
-.salon .ters-cerceve img {
-  height: auto;
-  max-height: 170px;
-  object-fit: contain;
+.kp-arka {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  padding: 6px;
+  background: #fbf7ee;
+  color: #352b21;
+  box-shadow: 0 0 0 1px rgba(53, 43, 33, 0.14);
+  text-align: left;
 }
-.salon .ters-eser .harf {
-  left: 50%;
-  top: auto;
-  bottom: -11px;
-  transform: translateX(-50%);
-  border: 1px solid var(--ink);
+.kp-arka b {
+  font: italic 500 12.5px/1.1 var(--serif);
+  overflow-wrap: anywhere;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
-.salon .ters-eser.dogru .ters-cerceve {
-  outline: 0;
-  border-color: var(--right);
+.kp-arka small {
+  font: 600 9.5px/1 var(--sans);
+  color: #6b5d4d;
 }
-.salon .ters-eser.yanlis .ters-cerceve {
-  outline: 0;
-  border-color: var(--wrong);
+.kp-isaret {
+  height: 16px;
 }
-.salon .ters-kimin {
-  bottom: 3px;
-  left: 3px;
-  right: 3px;
+.ters-mini.kartpostal.dogru .kp-arka {
+  box-shadow: inset 0 0 0 3px var(--right);
+}
+.ters-mini.kartpostal.yanlis .kp-arka {
+  box-shadow: inset 0 0 0 3px var(--wrong);
+}
+.ters-mini.kartpostal.dogru .kp-isaret {
+  color: var(--right);
+}
+.ters-mini.kartpostal.yanlis .kp-isaret {
+  color: var(--wrong);
+}
+.ters-mini.kartpostal.soluk {
+  opacity: 0.6;
+}
+@keyframes kp-don {
+  to {
+    transform: rotateY(180deg);
+  }
+}
+.ters-secilen {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: var(--ink-2);
 }
 @media (prefers-reduced-motion: reduce) {
-  .ters-eser {
+  .ters-eser,
+  .ters-slayt,
+  .ters-mini,
+  .ters-levha,
+  .ters-sahne .soru-resim img {
     animation: none !important;
+  }
+  .kp-ic {
+    animation: none !important;
+    transform: rotateY(180deg);
   }
 }
