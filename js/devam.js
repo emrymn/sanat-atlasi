@@ -24,6 +24,9 @@ export function kayitYap(o, simdi = Date.now()) {
     yanlis: ot.yanlis,
     gosterilen: (o.gosterilen || []).slice(-200),
     gecenler: (o.gecenler || []).slice(),
+    // Ö9: dönem turunda seçilen alt seviye; Ö5: hatalarım turundaki ikililer (id → eşi)
+    seviye: Number.isInteger(o.seviye) ? o.seviye : null,
+    esler: o.esler ? { ...o.esler } : null,
     kart:
       k && k.eser
         ? {
@@ -47,12 +50,14 @@ export function kayitYap(o, simdi = Date.now()) {
 }
 
 const metinMi = (x) => typeof x === 'string';
+// donem (akim: akım adı ya da "hepsi"), karisik, konu (akim: konu numarası, Ö6), hatalar (Ö5)
+export const KIPLER = ['donem', 'karisik', 'konu', 'hatalar'];
 
 // Biçimi doğru ve 7 günden yeni mi? (yedekten gelen kayıtlar da buradan geçer)
 export function kayitGecerliMi(k, simdi = Date.now()) {
   if (!k || typeof k !== 'object' || k.surum !== KAYIT_SURUMU) return false;
   if (!Number.isFinite(k.zaman) || simdi - k.zaman > EN_UZUN_GUN * GUN_MS) return false;
-  if (!['donem', 'karisik'].includes(k.kip) || (k.kip === 'donem' && !metinMi(k.akim))) return false;
+  if (!KIPLER.includes(k.kip) || ((k.kip === 'donem' || k.kip === 'konu') && !metinMi(k.akim))) return false;
   if (!Array.isArray(k.kuyruk) || !k.kuyruk.every((x) => x && metinMi(x.id))) return false;
   if (!Number.isInteger(k.konum) || k.konum < 0 || k.konum > k.kuyruk.length) return false;
   if (k.kart !== null && k.kart !== undefined) {
@@ -107,8 +112,15 @@ export function devamKonumu(k) {
   return Math.min(k.kuyruk.length, k.konum + (tamam ? 2 : 1));
 }
 
-// "Döneme göre · Gotik · 7 / 20", "Karışık · 3 / 20"
+// "Döneme göre · Gotik · 7 / 20", "Karışık · 3 / 20", "Konu 12 · 2 / 8", "Hatalarım · 4 / 9"
 export function devamOzeti(k) {
-  const ad = k.kip === 'karisik' ? 'Karışık' : `Döneme göre · ${k.akim === 'hepsi' ? 'Hepsi' : k.akim}`;
+  const ad =
+    k.kip === 'karisik'
+      ? 'Karışık'
+      : k.kip === 'konu'
+        ? `Konu ${k.akim}`
+        : k.kip === 'hatalar'
+          ? 'Hatalarım'
+          : `Döneme göre · ${k.akim === 'hepsi' ? 'Hepsi' : k.akim}`;
   return `${ad} · ${devamKonumu(k)} / ${k.kuyruk.length}`;
 }

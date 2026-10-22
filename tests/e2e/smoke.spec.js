@@ -121,7 +121,8 @@ test('İlerleme: konu işaretlenince yeni sanatçı açılır', async ({ page })
   if (!(await anahtar.isVisible())) await page.locator(`[data-kurs-konu="${no}"]`).click();
   await expect(anahtar).not.toBeChecked();
   await anahtar.check();
-  await expect(page.locator('#bildirim')).toContainText('Açıldı:');
+  // Ö6: yeni sanatçılar bildirim yerine alttan "Tanış" kartında
+  await expect(page.locator('[data-test="tanis-karti"]')).toContainText('yeni sanatçı açıldı');
   await expect(anahtar).toBeChecked();
   await page.goto('./');
   const sonra = Number(await page.locator('[data-test="acik-sayi"]').textContent());

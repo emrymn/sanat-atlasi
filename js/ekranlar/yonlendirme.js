@@ -22,6 +22,8 @@ const rotalar = [
   [/^#\/pekistir\/donem$/, pekistirMenusu, 'pekistir'],
   [/^#\/pekistir\/donem\/(.+)$/, (ad) => pekistir('donem', ad), null],
   [/^#\/pekistir\/karisik$/, () => pekistir('karisik', null), null],
+  [/^#\/pekistir\/konu\/(\d+)$/, (no) => pekistir('konu', no), null],
+  [/^#\/pekistir\/hatalar$/, () => pekistir('hatalar', null), null],
   [/^#\/pekistir\/devam$/, () => devamEt(), null],
   [/^#\/ilerleme$/, () => ilerlemeSayfasi(), 'ilerleme'],
   [/^#\/ayarlar$/, ayarlarSayfasi, 'ilerleme'],

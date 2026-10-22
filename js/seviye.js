@@ -86,3 +86,19 @@ export function seviyelerDogrula(v) {
   }
   return sonuc;
 }
+
+// ---------- Ö9 · Seviye seçimi ----------
+// Dönem turunda ısınmak için açılmış bir alt seviye seçilebilir; açılmamış (üst) seviye kilitli.
+export function seviyeSecenekleri(kayit) {
+  return SEVIYELER.map((x) => ({ no: x.no, anahtar: x.anahtar, ad: x.ad, acik: x.no <= kayit.s }));
+}
+
+// Kartın sorulacağı seviye: seçim yoksa dönemin seviyesi; seçim üst seviyeye çıkamaz
+export function kartSeviyesi(kayit, secili) {
+  return secili === null || secili === undefined ? kayit.s : Math.max(0, Math.min(secili, kayit.s));
+}
+
+// Alt seviyede verilen cevap dönemin (üst seviyenin) penceresine yazılmaz
+export function pencereyeYazilirMi(kayit, kartSv) {
+  return (kartSv ?? kayit.s) >= kayit.s;
+}
