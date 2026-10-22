@@ -91,7 +91,7 @@ test('SW: kayıtlı görsel yeniden doğrulanıp hata yanıtıyla ezilmez', asyn
 
 test('SW: sürüm, yeni resim önbelleği, hata bildirimi ve onabort', () => {
   const kaynak = readFileSync(new URL('../../sw.js', import.meta.url), 'utf8');
-  assert.match(kaynak, /const SURUM = '1\.19\.0'/);
+  assert.match(kaynak, /const SURUM = '1\.19\.1'/);
   assert.match(kaynak, /const RESIM = 'atlas-resim-2'/);
   assert.match(kaynak, /a === 'atlas-resim'/);
   assert.match(kaynak, /tip === 'resim-sil'/);

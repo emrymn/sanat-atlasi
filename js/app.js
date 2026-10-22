@@ -484,12 +484,13 @@ function sahneHtml(gs, { tekrar, sayi, vade, devam }) {
 }
 
 // Sahnenin altı: eserleri (Tümünü göster), resmin renkleri, hayatı ve dönemi
-function gununHikayesi(gs) {
+function gununHikayesi(gs, alt = '') {
   return `<section class="hikaye" data-test="hikaye" data-tablo-devami>
       <div class="susleme" aria-hidden="true"><span></span><i></i><span></span></div>
       <div data-ana-galeri-kutu>${etiket('Eserleri')}<div class="eserler" data-ana-galeri><p class="ikincil kucuk">Eserler yükleniyor…</p></div></div>
       <section class="bolum">${etiket('Resmin renkleri')}<div data-palet>${paletHtml(null)}</div></section>
       <a class="dugme ince" href="#/gunun">Hayatı ve dönemi ${ikon('ileri', 18, 1.5)}</a>
+      ${alt}
     </section>`;
 }
 
@@ -525,16 +526,8 @@ function anaSayfa() {
   const son = (d.ilerleme.sonCalisilanlar || []).map((id) => d.harita.get(id)).filter(Boolean);
   const sayi = ist.vade || Math.max(0, d.ilerleme.ayarlar.gunlukKart - g.kart);
   const devam = devamKarti();
-  ciz(`
-    <h1 class="ekran-disi" tabindex="-1">Sanat Atlası</h1>
-    ${devam}
-    ${
-      gs
-        ? sahneHtml(gs, { tekrar, sayi, vade: ist.vade, devam: !!devam })
-        : `<header class="ust"><div class="ust-yazi">${etiket('Bugün', { vurgu: true })}<span class="hap" data-test="tekrar">${tekrar}</span></div></header>${turKarti(ist, g, sayi)}`
-    }
-    ${gs ? gununHikayesi(gs) : ''}
-    ${
+  // en alt satırlar sahne varsa mozaiğin içinde kalır: tablonun renkleri sayfanın sonuna kadar sürer
+  const alt = `${
       son.length
         ? `<div class="son-satir">${etiket('Son')}<div class="yuvarlaklar">${son
             .slice(0, 4)
@@ -547,7 +540,16 @@ function anaSayfa() {
           )}</span>${son.length > 2 ? `<span class="ek">+${son.length - 2}</span>` : ''}</span></div>`
         : ''
     }
-    <p class="sakin"><span data-test="acik-sayi">${ist.acik}</span> açık sanatçı · ${ist.oran === null ? 'henüz cevap yok' : `%${ist.oran} doğru`} · bugün ${g.kart} / ${d.ilerleme.ayarlar.gunlukKart} kart · <a href="#/ayarlar">Ayarlar</a></p>`);
+    <p class="sakin"><span data-test="acik-sayi">${ist.acik}</span> açık sanatçı · ${ist.oran === null ? 'henüz cevap yok' : `%${ist.oran} doğru`} · bugün ${g.kart} / ${d.ilerleme.ayarlar.gunlukKart} kart · <a href="#/ayarlar">Ayarlar</a></p>`;
+  ciz(`
+    <h1 class="ekran-disi" tabindex="-1">Sanat Atlası</h1>
+    ${devam}
+    ${
+      gs
+        ? sahneHtml(gs, { tekrar, sayi, vade: ist.vade, devam: !!devam })
+        : `<header class="ust"><div class="ust-yazi">${etiket('Bugün', { vurgu: true })}<span class="hap" data-test="tekrar">${tekrar}</span></div></header>${turKarti(ist, g, sayi)}`
+    }
+    ${gs ? gununHikayesi(gs, alt) : alt}`);
   // uygulama açılışında bir kez: tablo perde açılır gibi belirir, isim satır satır gelir
   ekran.classList.toggle('perde', !d.perdeAcildi);
   d.perdeAcildi = true;
@@ -555,6 +557,7 @@ function anaSayfa() {
     gununKartGorseli(gs);
     sahneBiyografisi(gs);
     anaGaleriDoldur(gs);
+    etiketleriIsaretle();
   } else ekranRengi(null, null);
   for (const el of ekran.querySelectorAll('[data-mini]')) {
     sanatciEserleri(d.harita.get(el.dataset.mini)).then((eserler) => {
@@ -659,7 +662,38 @@ async function sahneBiyografisi(gs) {
   if (!bio || !bio.metin) return kutu.remove();
   kutu.querySelector('.okuma').textContent = bio.metin;
   kutu.hidden = false;
+  etiketleriIsaretle();
 }
+
+// Duvar etiketlerinde metin sığmıyorsa etiket dokunulabilir olur; dokununca tamamı açılır, yine dokununca kısalır
+function etiketleriIsaretle() {
+  for (const el of ekran.querySelectorAll('.duvar-etiketi')) {
+    const p = el.querySelector('.okuma');
+    if (!p || el.classList.contains('acik') || el.closest('[hidden]')) continue;
+    const kesik = p.scrollHeight > p.clientHeight + 2;
+    el.classList.toggle('kesik', kesik);
+    if (kesik) {
+      el.setAttribute('role', 'button');
+      el.tabIndex = 0;
+      el.setAttribute('aria-expanded', 'false');
+    }
+  }
+}
+function etiketiCevir(el) {
+  const acik = el.classList.toggle('acik');
+  el.setAttribute('aria-expanded', String(acik));
+}
+ekran.addEventListener('click', (e) => {
+  const el = e.target.closest('.duvar-etiketi.kesik');
+  if (el) etiketiCevir(el);
+});
+ekran.addEventListener('keydown', (e) => {
+  const el = (e.key === 'Enter' || e.key === ' ') && e.target.closest?.('.duvar-etiketi.kesik');
+  if (el) {
+    e.preventDefault();
+    etiketiCevir(el);
+  }
+});
 
 let ekVeri = null;
 function ekVeriYukle() {

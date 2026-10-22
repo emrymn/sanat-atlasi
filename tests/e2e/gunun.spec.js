@@ -65,3 +65,23 @@ test('biyografi ve dönem bilgisi çevrimdışı açılır', async ({ page, cont
   await expect(page.locator('[data-test="donem"]')).not.toBeEmpty();
   await context.setOffline(false);
 });
+
+test('Bugün: sığmayan duvar etiketi dokununca tamamen açılır; mozaik sayfanın sonuna kadar', async ({ page }) => {
+  await page.goto('./');
+  const etiket = page.locator('.duvar-etiketi.kesik').first();
+  await expect(etiket).toHaveAttribute('aria-expanded', 'false');
+  const metin = etiket.locator('.okuma');
+  const once = (await metin.boundingBox()).height;
+  await etiket.click();
+  await expect(etiket).toHaveAttribute('aria-expanded', 'true');
+  expect((await metin.boundingBox()).height).toBeGreaterThan(once);
+  await etiket.click();
+  await expect(etiket).toHaveAttribute('aria-expanded', 'false');
+  // mozaik zemini ekranın altına kadar iner
+  const fark = await page.evaluate(() => {
+    const h = document.querySelector('.hikaye');
+    const alt = h.getBoundingClientRect().bottom - parseFloat(getComputedStyle(h, '::before').bottom);
+    return Math.abs(document.getElementById('uygulama').getBoundingClientRect().bottom - alt);
+  });
+  expect(fark).toBeLessThan(2);
+});

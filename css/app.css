@@ -226,6 +226,9 @@ p {
 html.sekmesiz #uygulama {
   padding-bottom: calc(env(safe-area-inset-bottom) + 24px);
 }
+html.sekmesiz .hikaye::before {
+  bottom: calc(-1 * (env(safe-area-inset-bottom) + 24px));
+}
 
 /* ---------- Üst başlık ---------- */
 .ust {
@@ -1928,6 +1931,32 @@ html.sekmesiz .sekmeler {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+/* sığmayan etiket dokunulabilir: altında "Devamı", açılınca tamamı ve "Kısalt" */
+.duvar-etiketi.kesik {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.duvar-etiketi.kesik::after {
+  content: 'Devamı ↓';
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  font: 500 14px/1 var(--sans);
+  color: var(--vurgu-acik);
+}
+.duvar-etiketi.acik .okuma {
+  display: block;
+  -webkit-line-clamp: none;
+  overflow: visible;
+}
+.duvar-etiketi.acik::after {
+  content: 'Kısalt ↑';
+}
+.duvar-etiketi:focus-visible {
+  outline: 2px solid var(--vurgu-acik);
+  outline-offset: 3px;
+}
 /* Pekiştir: sahne boyunca sekme çubuğunun hemen üstünde duran cam hap */
 .sahne-dugme {
   position: sticky;
@@ -1996,6 +2025,8 @@ html.sekmesiz .sekmeler {
 .hikaye {
   position: relative;
   isolation: isolate;
+  /* son satırın alt boşluğu dışarı taşmasın: mozaik tam ekran altında bitsin */
+  display: flow-root;
   margin-top: 0;
   padding-top: 12px;
 }
@@ -2006,7 +2037,8 @@ html.sekmesiz .sekmeler {
   z-index: -1;
   /* düğmenin alt boşluğunu da örter: tablo ile şeritler arasında boşluk kalmasın */
   top: -14px;
-  bottom: 0;
+  /* sayfanın sonuna kadar: ekranın alt boşluğunu (sekme çubuğunun arkası) da örter */
+  bottom: calc(-1 * (var(--sekme-alt) + var(--sekme-h) + 28px));
   left: calc(-1 * (env(safe-area-inset-left) + var(--yan)));
   right: calc(-1 * (env(safe-area-inset-right) + var(--yan)));
   background: var(--palet-zemin, none);
