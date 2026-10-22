@@ -81,3 +81,28 @@ export function bulunmaEki(n) {
   if (sayi % 100) return `${n}'${onlar[(sayi / 10) % 10]}`;
   return `${n}'de`; // yüz, bin
 }
+
+// Kurs notlarından kalan "slayt/metin" açıklamalarını gösterimden atar (D8). Veri değişmez; yalnızca görünen yazı.
+// "1401 (slayt yazısı)" → "1401", "slaytta c1308–11" → "c1308–11", "Slayta göre Uffizi" → "Uffizi",
+// "metinde 1520'ler; slaytta c1500" → "1520'ler" (ders metninin verdiği tarih varken slayt notu düşer).
+const NOT_KELIME = /(?<![\p{L}])(slayt\p{L}*|metin\p{L}*|metne|künye\p{L}*|altyaz\p{L}*)/iu;
+const NOT_ONEK =
+  /^(slayt\p{L}*\s+(künye\p{L}*|yazı\p{L}*|altyazı\p{L}*|etiket\p{L}*)(\s+göre)?|slayt\p{L}*(\s+göre)?|metin\p{L}*(\s+göre)?|metne\s+göre)\s*:?\s*/iu;
+export function notTemizle(metin) {
+  let s = String(metin ?? '');
+  if (!NOT_KELIME.test(s)) return s;
+  // parantez içi notlar: "(slayt yazısı)", "(slaytta: …)", "(metin)", "(metinde ikisi de geçer)"
+  s = s.replace(/\s*\(([^()]*)\)/g, (tum, ic) => (NOT_KELIME.test(ic) ? '' : tum));
+  const parcalar = s
+    .split(';')
+    .map((p) => p.trim())
+    .filter(Boolean)
+    .map((p) => {
+      const onekli = NOT_ONEK.test(p);
+      return { metin: p.replace(NOT_ONEK, '').trim(), slayt: onekli && /^slayt/i.test(p), metinden: onekli && /^met/i.test(p) };
+    })
+    .filter((p) => p.metin && !NOT_KELIME.test(p.metin));
+  // ders metninden gelen bir tarih varsa slayttaki tarih tekrar sayılır ve düşer
+  const kalan = parcalar.some((p) => p.metinden) ? parcalar.filter((p) => !p.slayt) : parcalar;
+  return kalan.map((p) => p.metin).join('; ');
+}

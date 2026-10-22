@@ -1,3 +1,5 @@
+import { notTemizle } from './yardimci.js';
+
 // Başyapıt yakın okumaları (data/basyapitlar.json): veri doğrulama ve arama. Bkz. KARARLAR.md "İş 8".
 // Kayıt: { anahtar (QID ya da "sanatçıId|başlık"), sanatci (id), baslik (Türkçe), ozgun, tarih, muze,
 //          ozet, bolumler: [{ baslik, metin }], bak: [metin] }
@@ -19,6 +21,10 @@ export function basyapitlariAl(json, varMi = () => true) {
   ).map((e) => ({
     ...e,
     ozet: yazi(e.ozet) ? e.ozet : '',
+    // ders notu artıkları gösterimden atılır (D8); anahtar değişmez
+    tarih: notTemizle(e.tarih || ''),
+    muze: notTemizle(e.muze || ''),
+    ozgun: notTemizle(e.ozgun || ''),
     bak: Array.isArray(e.bak) ? e.bak.filter(yazi) : [],
   }));
 }

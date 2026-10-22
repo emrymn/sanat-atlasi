@@ -242,7 +242,8 @@ test('resim rengi: Bugün paleti çıkarılır, vurgu renkleri yazılır ve Inde
 test('Sanatçı: bilinen ad büyük satırda; galerinin sonundaki "Tümü (N)" ızgarayı açar', async ({ page }) => {
   await page.goto('./#/sanatci/rembrandt-van-rijn');
   await expect(page.locator('h1 .ad-son')).toHaveText('Rembrandt');
-  await expect(page.locator('h1 .ad-ilk')).toHaveText('van Rijn');
+  // D7: bilinen ad tam adın başında → büyük satırın altında tam ad
+  await expect(page.locator('h1 .ad-tam')).toHaveText('Rembrandt van Rijn');
   await expect(page.getByRole('heading', { name: 'Rembrandt van Rijn' })).toBeVisible();
   const n = await page.locator('.eserler .eser').count();
   expect(n).toBeGreaterThan(1);
