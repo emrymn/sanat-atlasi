@@ -23,6 +23,7 @@ export function varsayilanIlerleme(islenen = []) {
     sonCalisilanlar: [],
     karisanlar: {},
     seviyeler: {},
+    sonYedek: null, // son yedeğin günü "YYYY-MM-DD" (İ3)
     olusturma: new Date().toISOString(),
   };
 }
@@ -70,6 +71,7 @@ export function ilerlemeDogrula(nesne) {
     sonCalisilanlar: Array.isArray(v.sonCalisilanlar) ? [...new Set(v.sonCalisilanlar.filter((x) => typeof x === 'string'))].slice(0, SON_CALISILAN) : [],
     karisanlar: karisanlarDogrula(v.karisanlar),
     seviyeler: seviyelerDogrula(v.seviyeler),
+    sonYedek: typeof v.sonYedek === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v.sonYedek) ? v.sonYedek : null,
     olusturma: v.olusturma || t.olusturma,
   };
 }
@@ -152,4 +154,29 @@ export function ilerlemeKaydet(ilerleme) {
   }
   clearTimeout(idbZamanlayici);
   idbZamanlayici = setTimeout(() => idbKoy('ilerleme', 'ana', JSON.parse(JSON.stringify(ilerleme))), 300);
+}
+
+// ---------- Yedek hatırlatması (İ3) ----------
+export const YEDEK_ARALIGI = 14; // gün
+
+function gunFarki(a, b) {
+  const g = (x) => {
+    const [y, m, d] = x.split('-').map(Number);
+    return Date.UTC(y, m - 1, d);
+  };
+  return Math.round((g(b) - g(a)) / 86400000);
+}
+
+// Bugün'ün altındaki satır: son yedekten (hiç yoksa ilk kullanımdan) 14 gün geçtiyse ve kaydedilecek ilerleme varsa
+// { gun, metin }; değilse null.
+export function yedekHatirlatmasi(ilerleme, bugun = bugunStr()) {
+  if (!ilerleme || !Object.keys(ilerleme.skorlar || {}).length) return null;
+  if (ilerleme.sonYedek) {
+    const gun = gunFarki(ilerleme.sonYedek, bugun);
+    return gun >= YEDEK_ARALIGI ? { gun, metin: `Son yedek ${gun} gün önce` } : null;
+  }
+  const ilk = String(ilerleme.olusturma || '').slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(ilk)) return null;
+  const gun = gunFarki(ilk, bugun);
+  return gun >= YEDEK_ARALIGI ? { gun, metin: 'Henüz yedek almadın' } : null;
 }

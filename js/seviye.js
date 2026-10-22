@@ -20,8 +20,12 @@ export function seviyeKaydi(ilerleme, akim) {
   return k ? { s: k.s, son: k.son.slice() } : { s: 0, son: [] };
 }
 
+// Pencerede 1 = doğru, 0 = yanlış, 2 = "Bilmiyorum" (Ö4): yanlış sayılır ama yarım ağırlıkla
+export const BILMIYORUM = 2;
+const agirlik = (x) => (x === BILMIYORUM ? 0.5 : 1);
 export function oran(son) {
-  return son.length ? son.filter(Boolean).length / son.length : 0;
+  const payda = son.reduce((t, x) => t + agirlik(x), 0);
+  return payda ? son.filter((x) => x === 1).length / payda : 0;
 }
 
 // Ustalık: Zor'da da geçiş ölçütünü sağlamak
@@ -30,8 +34,9 @@ export function ustaMi(k) {
 }
 
 // Sanatçı sorusunun cevabından sonra: yeni kayıt ve seviye atlandı mı
+// dogru: true | false | 'bilmiyorum'
 export function seviyeCevapla(kayit, dogru) {
-  const son = [...kayit.son, dogru ? 1 : 0].slice(-PENCERE);
+  const son = [...kayit.son, dogru === 'bilmiyorum' ? BILMIYORUM : dogru ? 1 : 0].slice(-PENCERE);
   if (kayit.s < 2 && son.length >= EN_AZ && oran(son) >= GECIS_ORANI) return { kayit: { s: kayit.s + 1, son: [] }, gecti: true };
   return { kayit: { s: kayit.s, son }, gecti: false };
 }
@@ -49,7 +54,7 @@ export function seviyeIsle(ilerleme, akim, dogru) {
 export function seviyeDurumu(k) {
   const sv = seviyeBul(k.s);
   const n = k.son.length;
-  const d = k.son.filter(Boolean).length;
+  const d = k.son.filter((x) => x === 1).length;
   const sonraki = SEVIYELER[k.s + 1];
   const sayi = n ? `son ${n} cevapta ${d} doğru` : 'henüz cevap yok';
   if (!sonraki) return `${sv.ad} · ${sayi}${ustaMi(k) ? ' · ustalaştın' : ''}`;
@@ -67,7 +72,7 @@ export function seviyeKisa(k) {
   const sv = seviyeBul(k.s);
   if (ustaMi(k)) return `${sv.ad} · usta`;
   const n = k.son.length;
-  const d = k.son.filter(Boolean).length;
+  const d = k.son.filter((x) => x === 1).length;
   return n < EN_AZ ? `${sv.ad} · ${n}/${EN_AZ}` : `${sv.ad} · ${d}/${n} doğru`;
 }
 
@@ -77,7 +82,7 @@ export function seviyelerDogrula(v) {
   const sonuc = {};
   for (const [id, k] of Object.entries(v)) {
     if (!k || ![0, 1, 2].includes(k.s) || !Array.isArray(k.son)) continue;
-    sonuc[id] = { s: k.s, son: k.son.filter((x) => x === 0 || x === 1).slice(-PENCERE) };
+    sonuc[id] = { s: k.s, son: k.son.filter((x) => x === 0 || x === 1 || x === BILMIYORUM).slice(-PENCERE) };
   }
   return sonuc;
 }

@@ -117,7 +117,8 @@ test('İlerleme: konu işaretlenince yeni sanatçı açılır', async ({ page })
   await page.goto('./#/ilerleme');
   await expect(page.getByRole('heading', { name: 'İlerleme' })).toBeVisible();
   const anahtar = page.getByRole('switch', { name: `Konu ${no} işlendi` });
-  if (!(await anahtar.isVisible())) await page.locator(`details[data-bolum]:has(input[data-konu="${no}"]) > summary`).click();
+  // konuya dokununca konu kartı açılır; anahtar kartın içinde
+  if (!(await anahtar.isVisible())) await page.locator(`[data-kurs-konu="${no}"]`).click();
   await expect(anahtar).not.toBeChecked();
   await anahtar.check();
   await expect(page.locator('#bildirim')).toContainText('Açıldı:');
