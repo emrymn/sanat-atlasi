@@ -3319,8 +3319,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 }
 
 /* ---------- Ö1 · Ters soru: isim levhası, dört eser; cevapta doğru eser sahneye çıkar ----------
-   kartpostal: masaya dağılmış kartpostallar; cevapta küçük kartlar ters dönüp arkalarında sanatçının adını gösterir.
-   kaydir: eserler büyük, yana kaydırarak tek tek; altında "Bu" düğmesi. */
+   Eserler masaya dağılmış kartpostallar; dokununca büyür. Cevapta küçük kartlar ters dönüp arkalarında sanatçının adını gösterir. */
 .ters-levha {
   display: grid;
   grid-template-columns: 1fr;
@@ -3448,66 +3447,104 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   }
 }
 
-/* kaydir: büyük eserler yana kayar; üstte A–D sekmeleri, altta "Bu" */
-.ters-sekmeler {
+/* büyütülen kartpostal: kart dokunulan yerden büyüyüp ekranı kaplar; yana kaydırarak diğerleri */
+.kp-buyuk {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
   display: flex;
-  gap: 6px;
-  margin-top: 14px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: calc(env(safe-area-inset-top) + 20px) 0 calc(env(safe-area-inset-bottom) + 22px);
+  background: var(--bg);
+  transform-origin: var(--kaynak-x, 50%) var(--kaynak-y, 50%);
+  animation: kp-kalk 0.38s cubic-bezier(0.2, 0.9, 0.25, 1) both;
 }
-.ters-sekme {
-  flex: 1;
-  min-height: 36px;
-  border: 0;
-  border-bottom: 2px solid var(--border);
-  background: none;
-  color: var(--ink-3);
-  font: italic 500 18px/1 var(--serif);
-  transition:
-    color 0.2s,
-    border-color 0.2s;
+.kp-buyuk.kapaniyor {
+  animation: kp-birak 0.25s cubic-bezier(0.4, 0, 1, 1) both;
 }
-.ters-sekme.etkin {
-  color: var(--ink);
-  border-bottom-color: var(--ink);
+@keyframes kp-birak {
+  to {
+    transform: scale(0.3) rotate(3deg);
+    opacity: 0;
+  }
 }
-.ters-kaydir {
+@keyframes kp-kalk {
+  from {
+    transform: scale(0.3) rotate(-3deg);
+    opacity: 0;
+  }
+}
+.kp-kaydir {
   display: flex;
-  gap: 12px;
-  margin: 12px calc(-1 * var(--yan)) 0;
-  padding: 0 var(--yan);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scroll-padding: 0 var(--yan);
   scrollbar-width: none;
 }
-.ters-kaydir::-webkit-scrollbar {
+.kp-kaydir::-webkit-scrollbar {
   display: none;
 }
-.ters-slayt {
-  flex: 0 0 82%;
+.kp-slayt {
+  flex: 0 0 100%;
   margin: 0;
-  scroll-snap-align: start;
-  animation: ters-gel 0.5s calc(var(--i) * 80ms) cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: center;
 }
-.ters-slayt .ters-cerceve {
-  height: clamp(240px, calc(100dvh - 430px), 520px);
-  background: var(--surface);
+.kp-slayt .kp-on {
+  display: inline-block;
+  max-width: calc(100% - 36px);
+  padding: 10px 10px 34px;
+  transform: rotate(-1deg);
 }
-.ters-slayt .ters-cerceve img {
+.kp-slayt:nth-child(even) .kp-on {
+  transform: rotate(1deg);
+}
+.kp-slayt .ters-cerceve {
+  aspect-ratio: auto;
+}
+.kp-slayt .ters-cerceve img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100dvh - 250px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   object-fit: contain;
 }
-.ters-slayt figcaption {
+.kp-slayt .kp-pul {
+  right: 10px;
+  bottom: 7px;
+  font-size: 17px;
+  min-width: 26px;
+}
+.kp-noktalar {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  margin-top: 10px;
+  justify-content: center;
+  gap: 8px;
 }
-.ters-slayt .harf {
-  font: italic 500 26px/1 var(--serif);
+.kp-noktalar i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--border);
+  transition:
+    background 0.2s,
+    transform 0.2s;
 }
-.ters-bu {
-  min-width: 96px;
+.kp-noktalar i.etkin {
+  background: var(--ink);
+  transform: scale(1.3);
+}
+.kp-dugmeler {
+  display: flex;
+  gap: 10px;
+  padding: 0 var(--yan);
+}
+.kp-dugmeler .dugme {
+  flex: 1;
+}
+.kp-dugmeler .kp-bu {
+  flex: 1.4;
 }
 @keyframes ters-gel {
   from {
@@ -3575,21 +3612,6 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 }
 .ters-mini.soluk {
   opacity: 0.45;
-}
-.ters-kimin {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  font: 600 10.5px/1.2 var(--sans);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.ters-mini.dogru .ters-kimin svg {
-  color: var(--right);
-}
-.ters-mini.yanlis .ters-kimin svg {
-  color: var(--wrong);
 }
 /* kartpostal minileri: önce resim yüzü, sonra sırayla ters döner; arkada sanatçının adı */
 .ters-mini.kartpostal {
@@ -3670,7 +3692,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 }
 @media (prefers-reduced-motion: reduce) {
   .ters-eser,
-  .ters-slayt,
+  .kp-buyuk,
   .ters-mini,
   .ters-levha,
   .ters-sahne .soru-resim img {
