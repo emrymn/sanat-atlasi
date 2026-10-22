@@ -469,6 +469,7 @@ function sahneHtml(gs, { tekrar, sayi, vade, devam }) {
         <span class="kaydir-ipucu" aria-hidden="true">${ikon('asagi', 22, 1.4)}</span>
       </div>
       <div class="sahne-paneller">
+        <div class="sahne-panel" data-sahne-bio hidden><div class="duvar-etiketi">${etiket('Hayatı', { vurgu: true })}<p class="okuma"></p></div></div>
         ${tn ? panel('Nasıl tanırım?', tn, false) : ''}
         ${not ? panel('Notlarımdan', not, true) : ''}
       </div>
@@ -545,6 +546,7 @@ function anaSayfa() {
     <p class="sakin"><span data-test="acik-sayi">${ist.acik}</span> açık sanatçı · ${ist.oran === null ? 'henüz cevap yok' : `%${ist.oran} doğru`} · bugün ${g.kart} / ${d.ilerleme.ayarlar.gunlukKart} kart · <a href="#/ayarlar">Ayarlar</a></p>`);
   if (gs) {
     gununKartGorseli(gs);
+    sahneBiyografisi(gs);
     anaGaleriDoldur(gs);
   } else ekranRengi(null, null);
   for (const el of ekran.querySelectorAll('[data-mini]')) {
@@ -592,10 +594,24 @@ async function gununKartGorseli(s) {
   const kutu = ekran.querySelector('[data-gunun-gorsel]');
   if (!kutu || !e) return;
   const g = secilenGorsel(e, kotuler());
+  // tablo kırpılmadan ortada durur; arkasında aynı resmin bulanık, karartılmış kopyası ekranı doldurur
+  const url = kacis(gorselUrl(g, 1200));
+  const yedek = kacis(gorselYedek(g));
   kutu.insertAdjacentHTML(
     'afterbegin',
-    `<img decoding="async" alt="${kacis(`${s.ad}, ${eserBaslik(e)}`)}" src="${kacis(gorselUrl(g, 1200))}" data-yedek="${kacis(gorselYedek(g))}">`,
+    `<img class="sahne-arka" decoding="async" alt="" aria-hidden="true" src="${url}" data-yedek="${yedek}"><img class="sahne-tablo" decoding="async" alt="${kacis(`${s.ad}, ${eserBaslik(e)}`)}" src="${url}" data-yedek="${yedek}">`,
   );
+}
+
+// Sahnede ilk duvar etiketi: biyografinin ilk cümleleri (veri gelince doldurulur, yoksa etiket kalkar)
+async function sahneBiyografisi(gs) {
+  const { biyografiler } = await ekVeriYukle();
+  const kutu = ekran.querySelector('[data-sahne-bio]');
+  if (!kutu) return;
+  const bio = biyografiler.sanatcilar[gs.id];
+  if (!bio || !bio.metin) return kutu.remove();
+  kutu.querySelector('.okuma').textContent = bio.metin;
+  kutu.hidden = false;
 }
 
 let ekVeri = null;

@@ -1859,8 +1859,30 @@ html.sekmesiz .sekmeler {
   height: 100svh;
   z-index: 0;
 }
-.sahne-yapiskan > img {
-  object-position: 50% 40%;
+/* bulanık arka plan ekranı doldurur; tablo kırpılmadan isim bloğunun üstündeki alanın ortasında durur */
+.sahne-yapiskan > img.sahne-arka {
+  position: absolute;
+  inset: -40px;
+  width: calc(100% + 80px);
+  height: calc(100% + 80px);
+  object-fit: cover;
+  filter: blur(30px) brightness(0.55) saturate(1.1);
+}
+.sahne-yapiskan > img.sahne-tablo {
+  position: absolute;
+  z-index: 1;
+  top: calc(env(safe-area-inset-top) + 72px);
+  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 250px);
+  left: calc(env(safe-area-inset-left) + 16px);
+  width: calc(100% - 32px - env(safe-area-inset-left) - env(safe-area-inset-right));
+  /* top + bottom görsel öğelerde yüksekliği belirlemez; açıkça hesaplanır */
+  height: calc(100% - env(safe-area-inset-top) - 72px - var(--sekme-alt) - var(--sekme-h) - 250px);
+  object-fit: contain;
+  object-position: 50% 50%;
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.65));
+}
+.sahne-panel[hidden] {
+  display: none;
 }
 .sahne.devam-alti .sahne-yapiskan {
   margin-top: 0;
@@ -2236,12 +2258,17 @@ main[data-hareket='giris'] > :nth-child(n + 6) {
 
 /* Bugün sahnesi: kaydırdıkça tabloya yaklaşılır (büyür, kararır); isim ve ipucu silinir */
 @supports (animation-timeline: scroll()) {
-  .sahne-yapiskan > img {
+  .sahne-yapiskan > img.sahne-tablo {
     animation:
       yakinlas 14s cubic-bezier(0.2, 0.6, 0.3, 1) both,
       yaklas linear both;
     animation-timeline: auto, scroll(root);
-    animation-range: normal, 0 180svh;
+    animation-range: normal, 0 200svh;
+  }
+  .sahne-yapiskan > img.sahne-arka {
+    animation: arka-karar linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 120svh;
   }
   .sahne-isim {
     animation: isim-sil linear both;
@@ -2264,8 +2291,14 @@ main[data-hareket='giris'] > :nth-child(n + 6) {
 }
 @keyframes yaklas {
   to {
-    scale: 1.35;
-    filter: brightness(0.38) saturate(0.85);
+    scale: 1.6;
+    translate: 0 8svh;
+    filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.65)) brightness(0.4) saturate(0.85);
+  }
+}
+@keyframes arka-karar {
+  to {
+    filter: blur(30px) brightness(0.2) saturate(1.1);
   }
 }
 @keyframes isim-sil {
