@@ -37,10 +37,11 @@ import {
   bilinirlikSirasi,
 } from './ortak.js';
 import { donemCizelgesi, pekistirmedeMi, notBolumleri, seritUst, eserSeridi } from './bugun.js';
+import { kimlikDoldur } from './akim.js';
 
 // ---------- Başyapıt yakın okumaları ----------
 let basyapitSozu = null;
-function basyapitVeri() {
+export function basyapitVeri() {
   if (!basyapitSozu)
     basyapitSozu = jsonGetir('data/basyapitlar.json')
       .catch(() => null)
@@ -48,7 +49,7 @@ function basyapitVeri() {
   return basyapitSozu;
 }
 
-const basyapitAdresi = (k) => `#/basyapit/${encodeURIComponent(k)}`;
+export const basyapitAdresi = (k) => `#/basyapit/${encodeURIComponent(k)}`;
 
 async function basyapitBaglariniDoldur(id) {
   const liste = sanatcininBasyapitlari(await basyapitVeri(), id);
@@ -207,18 +208,20 @@ export async function konuSayfasi(kodlu) {
 }
 
 // ---------- Göz At: akımlar zaman sırasıyla ----------
-// Göz At'ın üç bölümü; sayfa değişince elmas işaret önceki bölümden kayarak gelir
+// Göz At'ın dört bölümü; sayfa değişince elmas işaret önceki bölümden kayarak gelir
 const GOZAT_BOLUMLERI = [
   ['akimlar', 'Akımlar', '#/gozat', ''],
   ['basyapitlar', 'Başyapıtlar', '#/basyapitlar', 'basyapit-giris'],
   ['konular', 'Konular', '#/konular', 'konu-giris'],
+  ['zaman', 'Zaman', '#/zaman', 'zaman-giris'],
 ];
 let sonGozAtBolumu = 0;
-function gozAtUst(etkin) {
+export function gozAtUst(etkin) {
   const i = GOZAT_BOLUMLERI.findIndex(([id]) => id === etkin);
   const j = sonGozAtBolumu;
   sonGozAtBolumu = i;
   return `${ust('Göz At', '#/', { geriYok: true, ustEtiket: 'Galeri' })}
+    <a class="arama-hapi" href="#/ara" data-test="arama-hapi">${ikon('ara', 18, 1.6)}<span>Sanatçı, eser, konu ara</span></a>
     <nav class="bolumler" aria-label="Göz At bölümleri" style="--i:${i};--j:${j}">${GOZAT_BOLUMLERI.map(
       ([id, ad, hash, test]) => `<a href="${hash}"${test ? ` data-test="${test}"` : ''}${id === etkin ? ' aria-current="page"' : ''}>${ad}</a>`,
     ).join('')}<span class="bolumler-isaret" aria-hidden="true"></span></nav>`;
@@ -280,10 +283,13 @@ export function akimSayfasi(ad) {
   gununRengi();
   ciz(`${ust(ad, '#/gozat', { ustEtiket: akimYuzyillari(uyeler, { roma: true }) })}
     <section class="bolum" style="padding-top:8px">${etiket('Dönemi')}${donemCizelgesi(ad)}</section>
+    <div data-akim-kimlik></div>
     <section class="bolum">${etiket('Sanatçılar')}
     <ul class="liste">${acik.map((s) => sanatciSatiri(s, true)).join('')}${kapali.map((s) => sanatciSatiri(s, false)).join('')}</ul></section>
     ${acik.length ? `<div class="menu"><a class="dugme birincil" href="#/pekistir/donem/${encodeURIComponent(ad)}">Bu akımı pekiştir</a></div>` : ''}`);
   kucukKareleriDoldur();
+  // K3: kimlik kartı (palet, özellikler, tipik konular, en bilinen eserler) arka planda dolar
+  kimlikDoldur(ad).catch(() => {});
 }
 
 export async function sanatciSayfasi(id) {

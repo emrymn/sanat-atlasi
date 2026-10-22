@@ -2096,7 +2096,7 @@ html.sekmesiz .sekmeler {
 .bolumler {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   margin: 4px 0 18px;
   border-bottom: 1px solid var(--border);
 }
@@ -2105,7 +2105,7 @@ html.sekmesiz .sekmeler {
   justify-content: center;
   align-items: center;
   min-height: 48px;
-  font: 400 18px/1.1 var(--serif);
+  font: 400 16.5px/1.1 var(--serif);
   color: var(--ink-3);
   text-decoration: none;
   transition: color 0.3s ease;
@@ -2117,7 +2117,7 @@ html.sekmesiz .sekmeler {
   position: absolute;
   bottom: -1px;
   left: 0;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   height: 1px;
   display: flex;
   justify-content: center;
@@ -3950,6 +3950,434 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 @media (prefers-reduced-motion: reduce) {
   .tanis-karti.gir,
   .tanis-karti.gir .kucuk-kare {
+    animation: none;
+  }
+}
+
+/* ---------- K1 · Arama ----------
+   Göz At'ın başında ince çizgili bir hap; arama sayfasında kutusuz, alt çizgili büyük serif girdi. */
+.arama-hapi {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  margin: 2px 0 12px;
+  padding: 0 16px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  color: var(--ink-2);
+  font: 400 16px/1 var(--sans);
+  text-decoration: none;
+  transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.arama-hapi .ikon {
+  color: var(--ink);
+}
+.arama-hapi:active {
+  transform: scale(0.98);
+}
+.arama-alan {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0 18px;
+  border-bottom: 2px solid var(--ink);
+  color: var(--ink);
+}
+.arama-alan input {
+  flex: 1;
+  min-width: 0;
+  min-height: 52px;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: 400 24px/1.2 var(--serif);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.arama-alan input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.arama-temizle {
+  width: 44px;
+  min-height: 44px;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.arama-alan input::placeholder {
+  color: var(--ink-soluk);
+}
+.arama-alan:focus-within {
+  border-bottom-color: var(--vurgu-acik, var(--ink));
+}
+.arama-grup .liste {
+  animation: sahne-gir 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+.arama-eser {
+  width: 100%;
+  border: 0;
+  background: none;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.arama-eser .metin i {
+  font: italic 400 13px/1.3 var(--serif);
+  color: var(--ink-2);
+}
+.arama-fazla,
+.arama-ipucu {
+  margin: 6px 0 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .arama-grup .liste {
+    animation: none;
+  }
+}
+
+/* ---------- K2 · Zaman şeridi ----------
+   Yatay kayan tuval: üstte eksen, akım bantları keskin akım renginde, altta ince yaşam çizgileri (adı çizginin üstünde). */
+.zaman-araclar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin: 4px 0 6px;
+}
+.zaman-yakin {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  background: none;
+  color: var(--ink);
+  font: 400 22px/1 var(--serif);
+  cursor: pointer;
+}
+.zaman-kaydir {
+  margin: 0 calc(-1 * var(--yan));
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+}
+.zaman-kaydir::-webkit-scrollbar {
+  display: none;
+}
+.zaman-tuval {
+  position: relative;
+  margin: 0 12px;
+}
+.zaman-eksen {
+  position: sticky;
+  top: 0;
+  height: 22px;
+  border-bottom: 1px solid var(--ink);
+}
+.centik {
+  position: absolute;
+  bottom: 0;
+  height: 6px;
+  border-left: 1px solid var(--ink-3);
+  padding-left: 3px;
+  font: 500 10.5px/1 var(--sans);
+  font-variant-numeric: lining-nums tabular-nums;
+  color: var(--ink-2);
+  white-space: nowrap;
+  transform: translateY(-2px);
+}
+.centik.buyuk {
+  height: 14px;
+  border-left-color: var(--ink);
+  color: var(--ink);
+  font-weight: 650;
+}
+.zaman-bant {
+  position: absolute;
+  height: calc(22px - 3px);
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  background: var(--renk);
+  color: #fff;
+  font: 500 11.5px/1 var(--sans);
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+  transform-origin: left;
+  animation: bant-ac 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+.zaman-bant span {
+  position: sticky;
+  left: 4px;
+}
+.zaman-cubuk {
+  position: absolute;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  overflow: visible;
+}
+.zaman-cubuk i {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 6px;
+  height: 4px;
+  background: var(--renk);
+  transform-origin: left;
+  animation: bant-ac 0.5s calc(min(var(--i), 60) * 8ms) cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+.zaman-cubuk span {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font: 400 13px/1 var(--serif);
+  white-space: nowrap;
+}
+.zaman-cubuk.kilitli {
+  color: var(--ink-soluk);
+}
+.zaman-cubuk.kilitli i {
+  opacity: 0.3;
+}
+.zaman-cubuk.secili span {
+  font-weight: 700;
+}
+.zaman-cubuk.secili i {
+  height: 6px;
+  bottom: 5px;
+}
+.zaman-tuval.durgun .zaman-bant,
+.zaman-tuval.durgun .zaman-cubuk i {
+  animation: none;
+}
+.zaman-sanatci {
+  position: fixed;
+  left: calc(env(safe-area-inset-left) + 14px);
+  right: calc(env(safe-area-inset-right) + 14px);
+  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 10px);
+  z-index: 40;
+  max-width: 520px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px 10px 10px;
+  border-left: 6px solid var(--renk);
+  border-radius: 4px;
+  background: var(--ink);
+  color: var(--bg);
+  box-shadow: 0 14px 30px -14px rgba(0, 0, 0, 0.55);
+  animation: tanis-gel 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+.zaman-sanatci .kucuk-kare {
+  width: 44px;
+  height: 44px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--ink-2);
+}
+.zaman-sanatci .kucuk-kare img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.zaman-sanatci-yazi {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.zaman-sanatci-yazi b {
+  font: 400 17px/1.2 var(--serif);
+}
+.zaman-sanatci-yazi span,
+.zaman-sanatci-yazi small {
+  font-size: 12.5px;
+  opacity: 0.8;
+}
+.zaman-sanatci-dugme {
+  min-height: 44px;
+  padding: 0 14px;
+  background: var(--bg);
+  color: var(--ink);
+  border-color: var(--bg);
+}
+.zaman-sanatci-kapat {
+  width: 36px;
+  min-height: 44px;
+  border: 0;
+  background: none;
+  color: var(--bg);
+  opacity: 0.7;
+  cursor: pointer;
+}
+@keyframes bant-ac {
+  from {
+    transform: scaleX(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .zaman-bant,
+  .zaman-cubuk i,
+  .zaman-sanatci {
+    animation: none;
+  }
+}
+
+/* ---------- K3 · Akım kimlik kartı ve akım karşılaştırması ----------
+   Kutu yok: üstte akımın ortalama paletinden keskin şerit (mozaik zeminiyle aynı dil), maddeler numaralı. */
+.akim-kimlik {
+  margin: 6px 0 4px;
+  padding-top: 4px;
+}
+.akim-palet {
+  display: flex;
+  height: 30px;
+  margin: 0 0 16px;
+  overflow: hidden;
+}
+.akim-palet span {
+  min-width: 6px;
+  transform-origin: left;
+  animation: bant-ac 0.6s calc(var(--i) * 70ms) cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+.akim-palet.bos {
+  background: var(--renk);
+}
+.akim-ozellik {
+  margin: 4px 0 16px;
+  padding: 0;
+  list-style: none;
+  counter-reset: oz;
+}
+.akim-ozellik li {
+  counter-increment: oz;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  gap: 6px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+  font: 400 17px/1.4 var(--serif);
+}
+.akim-ozellik li::before {
+  content: counter(oz);
+  font: 600 13px/1.9 var(--sans);
+  color: var(--renk);
+}
+.akim-konular,
+.akim-komsular {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 6px 0 16px;
+}
+.akim-konular a,
+.akim-komsular a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  color: var(--ink);
+  font: 400 15px/1 var(--sans);
+  text-decoration: none;
+}
+.akim-konular small {
+  font-weight: 650;
+  color: var(--ink-2);
+}
+.akim-eserler {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 12px;
+  margin: 8px 0 16px;
+}
+.akim-eser {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  text-align: left;
+  font: 400 13px/1.3 var(--sans);
+  cursor: pointer;
+}
+.akim-eser .cerceve {
+  display: block;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+.akim-eser .cerceve {
+  border-radius: 2px;
+}
+.akim-eser .cerceve img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  display: block;
+}
+.akim-eser b {
+  display: block;
+  font: italic 400 15px/1.25 var(--serif);
+}
+.akim-karsi {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.akim-karsi-sutun {
+  min-width: 0;
+  padding-top: 8px;
+  border-top: 4px solid var(--renk);
+}
+.akim-karsi-ad {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font: 400 21px/1.15 var(--serif);
+  color: var(--ink);
+  text-decoration: none;
+}
+.akim-karsi-yil {
+  display: block;
+  margin: 2px 0 10px;
+  font: 500 12px/1 var(--sans);
+  color: var(--ink-2);
+}
+.akim-karsi .akim-eserler {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.akim-karsi .akim-ozellik li {
+  grid-template-columns: 18px minmax(0, 1fr);
+  font-size: 15px;
+}
+.akim-karsi .akim-konular a {
+  min-height: 34px;
+  padding: 0 10px;
+  font-size: 13px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .akim-palet span {
     animation: none;
   }
 }
