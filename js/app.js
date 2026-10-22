@@ -270,7 +270,8 @@ const SEKMELER = [
   ['ilerleme', 'İlerleme', '#/ilerleme'],
 ];
 
-// etkin: sekme kimliği; null → sekme çubuğu yok (pekiştirme kartı)
+// etkin: sekme kimliği; null → sekme çubuğu yok (pekiştirme kartı).
+// Çubuk bir kez kurulur; sonra yalnızca seçili sekme ve elmas işaret güncellenir (işaret kayarak geçer).
 function sekmeleriCiz(etkin) {
   const nav = document.getElementById('sekmeler');
   document.documentElement.classList.toggle('sekmesiz', etkin === null);
@@ -279,9 +280,17 @@ function sekmeleriCiz(etkin) {
     return;
   }
   nav.hidden = false;
-  nav.innerHTML = SEKMELER.map(
-    ([id, ad, hash]) => `<a href="${hash}"${id === etkin ? ' aria-current="page"' : ''}>${ikon(id, 23, id === etkin ? 1.6 : 1.4)}<span>${ad}</span></a>`,
-  ).join('');
+  if (!nav.querySelector('.sekme-isaret')) {
+    nav.innerHTML =
+      '<span class="sekme-isaret" aria-hidden="true"></span>' +
+      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" data-sekme="${id}">${ikon(id, 23, 1.5)}<span>${ad}</span></a>`).join('');
+  }
+  const i = SEKMELER.findIndex(([id]) => id === etkin);
+  nav.style.setProperty('--i', Math.max(i, 0));
+  for (const a of nav.querySelectorAll('a')) {
+    if (a.dataset.sekme === etkin) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
+  }
 }
 
 // ---------- yönlendirme ----------
@@ -353,7 +362,13 @@ function ust(baslik, yedek = '#/', { geriYok = false, sag = '', ustEtiket = '' }
   return `<header class="ust">${geriYok ? '' : geriDugmesi(yedek)}<div class="ust-yazi">${ustEtiket ? etiket(ustEtiket, { vurgu: true }) : ''}<h1 tabindex="-1">${kacis(baslik)}</h1></div>${sag}</header>`;
 }
 
-function ciz(html) {
+// hareket: 'giris' (yeni ekran, öğeler sırayla belirir), kart için 'yeni-kart' | 'yeni-soru' | 'cevap', '' (yok).
+// Verilmezse adres değiştiyse 'giris', aynı ekran yeniden çiziliyorsa hareketsiz.
+let sonCizilenAdres = null;
+function ciz(html, hareket) {
+  const adres = location.hash || '#/';
+  ekran.dataset.hareket = hareket ?? (adres !== sonCizilenAdres ? 'giris' : '');
+  sonCizilenAdres = adres;
   ekran.innerHTML = html;
   ekran.style.paddingBottom = '';
   window.scrollTo(0, 0);
@@ -823,7 +838,7 @@ function gozAt() {
     <ol class="zaman">${durumlar
       .map((a) => {
         const uyeler = d.sanatcilar.filter((x) => x.akim === a.ad);
-        const ic = `<span class="etiket vurgu">${akimNoktasi(a.ad)}${kacis(akimYuzyillari(uyeler))}</span><b>${kacis(a.ad)}</b>
+        const ic = `<span class="etiket vurgu">${akimNoktasi(a.ad)}${kacis(akimYuzyillari(uyeler, { roma: true }))}</span><b>${kacis(a.ad)}</b>
           <span class="sayi">${a.acik ? `${a.acikSayisi} / ${a.toplam} sanatçı açık` : `<span class="kilit-notu">${ikon('kilit', 14)}Konu ${bulunmaEki(a.acilacagiKonu)} açılır</span>`}</span>
           <span class="onizleme" data-onizleme="${kacis(a.ad)}"></span>`;
         return `<li class="zaman-oge${a.acik ? '' : ' kilitli'}">${
@@ -869,7 +884,7 @@ function akimSayfasi(ad) {
   const acik = uyeler.filter((s) => k.has(s.konu));
   const kapali = uyeler.filter((s) => !k.has(s.konu));
   gununRengi();
-  ciz(`${ust(ad, '#/gozat', { ustEtiket: akimYuzyillari(uyeler) })}
+  ciz(`${ust(ad, '#/gozat', { ustEtiket: akimYuzyillari(uyeler, { roma: true }) })}
     <section class="bolum" style="padding-top:8px">${etiket('Dönemi')}${donemCizelgesi(ad)}</section>
     <section class="bolum">${etiket('Sanatçılar')}
     <ul class="liste">${acik.map((s) => sanatciSatiri(s, true)).join('')}${kapali.map((s) => sanatciSatiri(s, false)).join('')}</ul></section>
@@ -1340,6 +1355,7 @@ function tanismaGoster(o) {
   const eserler = tanismaEserleri(pekistirmeHavuzu(k.eserler || [], kotuler()), k.eser.anahtar, 3, kolaylikFn(k.id));
   k.tanismaEserleri = eserler;
   const ipucu = ipucuMetni(s);
+  o.sonCizim = { konum: ot.konum, adim: 0, cevap: false, yuzde: Math.round((100 * ot.konum) / ot.toplam) };
   ciz(`<header class="soru-ust">
       <button class="kapat" type="button" data-geri="#/pekistir" aria-label="Kapat">${ikon('kapat', 22, 1.7)}</button>
       <span class="etiket">${kacis(kipKisa(o.kip, o.akim))}</span>
@@ -1362,7 +1378,9 @@ function tanismaGoster(o) {
       ${ipucu ? `<p class="okuma tanisma-not">${kacis(ipucu)}</p>` : ''}
       <p class="kucuk ikincil">Birazdan bu sanatçının burada görmediğin bir eseri sorulacak.</p>
       <button class="dugme vurgu tanisma-gec" type="button" data-tanisma-gec>Tanıdım, soruya geç →</button>
-    </section>`);
+    </section>`,
+    'yeni-kart',
+  );
   ekran.querySelector('.tanisma-ad').focus({ preventScroll: true });
 }
 
@@ -1430,13 +1448,19 @@ function kartGoster(o) {
     </section>`;
   }
 
+  // Hareket: yeni kartta tablo belirir; karışıkta 2. soruda yalnızca seçenekler; cevapta doğru parlar, yanlış sarsılır
+  const onceki = o.sonCizim;
+  const adim = ikinci ? 2 : 1;
+  const hareket = !onceki || onceki.konum !== ot.konum ? 'yeni-kart' : onceki.adim !== adim ? 'yeni-soru' : cevap !== null && !onceki.cevap ? 'cevap' : '';
+  const oncekiYuzde = onceki && onceki.konum !== ot.konum ? onceki.yuzde : yuzde;
+  o.sonCizim = { konum: ot.konum, adim, cevap: cevap !== null, yuzde };
   const g = secilenGorsel(k.eser, kotuler()) || k.eser.gorseller[0];
   ciz(`<header class="soru-ust">
       <button class="kapat" type="button" data-geri="#/pekistir" aria-label="Kapat">${ikon('kapat', 22, 1.7)}</button>
       <span class="etiket">${kacis(kipKisa(o.kip, o.akim))}</span>
       <span data-test="sayac">${sira} / ${ot.toplam}</span>
     </header>
-    <div class="ince-cubuk" aria-hidden="true"><i style="width:${yuzde}%"></i></div>
+    <div class="ince-cubuk" aria-hidden="true"><i style="width:${yuzde}%;--onceki:${oncekiYuzde}%"></i></div>
     <div class="soru-sahne">
       <span class="hale-nefes" aria-hidden="true"></span>
       <button class="soru-resim" type="button" data-buyut aria-label="Görseli büyüt">
@@ -1449,7 +1473,9 @@ function kartGoster(o) {
       ${etiket(`${karisik ? `Soru ${ikinci ? 2 : 1} / 2` : 'Soru 1 / 1'} · ${SEVIYELER[k.seviye ?? 0].ad}`)}
     </div>
     ${secenekler}
-    ${yaprak}`);
+    ${yaprak}`,
+    hareket,
+  );
 
   // Renk: sorulan eserden. Cevaptan önce akım rengine düşülmez (ipucu olurdu): palet yoksa nötr kalır.
   if (k.palet === undefined)

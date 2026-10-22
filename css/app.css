@@ -20,7 +20,7 @@
   --wrong-ikon: #f09a86;
   --wrong-bg: rgba(214, 104, 84, 0.14);
   --doku: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  --tab-bg: rgba(11, 10, 11, 0.92);
+  --tab-bg: rgba(20, 18, 17, 0.78);
   --overlay-btn: rgba(11, 10, 11, 0.6);
   --durum-cubugu: transparent;
   /* resim rengi gelene kadar nötr vurgu */
@@ -49,7 +49,7 @@
   --wrong-ikon: #a23b2a;
   --wrong-bg: rgba(162, 59, 42, 0.1);
   --doku: radial-gradient(rgba(53, 43, 33, 0.06) 1px, transparent 1px);
-  --tab-bg: rgba(241, 232, 214, 0.92);
+  --tab-bg: rgba(248, 242, 230, 0.84);
   --overlay-btn: rgba(241, 232, 214, 0.8);
   --durum-cubugu: #2b241d;
   --vurgu: #6b5d4d;
@@ -76,7 +76,7 @@
   --wrong-ikon: #a23b2a;
   --wrong-bg: rgba(162, 59, 42, 0.08);
   --doku: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-  --tab-bg: rgba(251, 250, 247, 0.92);
+  --tab-bg: rgba(255, 255, 255, 0.84);
   --overlay-btn: rgba(251, 250, 247, 0.85);
   --durum-cubugu: #24201b;
   --vurgu: #5f574d;
@@ -91,7 +91,8 @@
   --serif: 'Bodoni Moda', 'Didot', 'Bodoni 72', Georgia, serif;
   --sans: Archivo, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --yan: 22px; /* kenar boşluğu */
-  --sekme-h: 58px;
+  --sekme-h: 62px;
+  --sekme-alt: max(12px, env(safe-area-inset-bottom));
   --ust-bosluk: calc(env(safe-area-inset-top) + 12px);
 }
 
@@ -217,7 +218,7 @@ p {
   margin: 0 auto;
   min-height: 100vh;
   min-height: 100dvh;
-  padding: var(--ust-bosluk) calc(env(safe-area-inset-right) + var(--yan)) calc(env(safe-area-inset-bottom) + var(--sekme-h) + 28px)
+  padding: var(--ust-bosluk) calc(env(safe-area-inset-right) + var(--yan)) calc(var(--sekme-alt) + var(--sekme-h) + 28px)
     calc(env(safe-area-inset-left) + var(--yan));
 }
 html.sekmesiz #uygulama {
@@ -822,16 +823,46 @@ img.kirik {
 }
 
 /* ---------- Göz At ---------- */
+/* zaman çizelgesi: solda yukarıdan aşağı akan yaldız çizgi; her akım çizgi üzerinde bir düğüm */
 .zaman {
+  position: relative;
   list-style: none;
-  padding: 0;
-  margin: 6px 0 0;
-  border-top: 1px solid var(--border);
+  padding: 0 0 0 26px;
+  margin: 10px 0 0;
+}
+.zaman::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 22px;
+  bottom: 24px;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(var(--vurgu-rgb), 0.9), rgba(var(--vurgu-rgb), 0.35) 70%, transparent);
 }
 .zaman-oge {
-  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.zaman-oge + .zaman-oge::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent 85%);
+}
+.zaman-kart .akim-nokta {
+  position: absolute;
+  left: -26px;
+  width: 9px;
+  height: 9px;
+  box-shadow:
+    0 0 0 3px var(--bg),
+    0 0 0 4px rgba(var(--vurgu-rgb), 0.5),
+    0 0 12px var(--akim, transparent);
 }
 .zaman-kart {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -1378,35 +1409,87 @@ progress {
   color: var(--ink-3);
 }
 
-/* ---------- Sekme çubuğu ---------- */
+/* ---------- Sekme çubuğu: yüzen hap ---------- */
+/* Ekranın altında havada duran yuvarlak çubuk; seçili sekmenin arkasında resim renginde bir hap kayar (--i: sekme sırası). */
 .sekmeler {
+  --sekme-pad: 6px;
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left: calc(env(safe-area-inset-left) + 14px);
+  right: calc(env(safe-area-inset-right) + 14px);
+  bottom: var(--sekme-alt);
   z-index: 30;
-  height: calc(var(--sekme-h) + env(safe-area-inset-bottom));
-  padding: 6px calc(env(safe-area-inset-right) + 8px) env(safe-area-inset-bottom) calc(env(safe-area-inset-left) + 8px);
+  height: var(--sekme-h);
+  max-width: 520px;
+  margin: 0 auto;
+  padding: var(--sekme-pad);
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-radius: 999px;
   background: var(--tab-bg);
-  border-top: 1px solid var(--border);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
+  border: 1px solid rgba(var(--vurgu-rgb), 0.38);
+  box-shadow:
+    0 18px 38px -10px rgba(0, 0, 0, 0.55),
+    0 2px 6px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(16px) saturate(1.3);
+  backdrop-filter: blur(16px) saturate(1.3);
+  animation: sekme-gel 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes sekme-gel {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+}
+.sekme-isaret {
+  position: absolute;
+  top: var(--sekme-pad);
+  bottom: var(--sekme-pad);
+  left: var(--sekme-pad);
+  width: calc((100% - 2 * var(--sekme-pad)) / 4);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(var(--vurgu-rgb), 0.42), rgba(var(--vurgu-rgb), 0.14));
+  box-shadow:
+    inset 0 0 0 1px rgba(var(--vurgu-rgb), 0.65),
+    0 0 18px -4px rgba(var(--vurgu-rgb), 0.6);
+  transform: translateX(calc(var(--i, 0) * 100%));
+  transition:
+    transform 0.45s cubic-bezier(0.3, 1.35, 0.5, 1),
+    background 0.6s ease;
+  pointer-events: none;
 }
 .sekmeler a {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3px;
+  gap: 2px;
+  border-radius: 999px;
   color: var(--ink-3);
   text-decoration: none;
   font: 500 10.5px/1.2 var(--sans);
   letter-spacing: 0.04em;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.3s ease;
+}
+.sekmeler a .ikon {
+  transition: transform 0.2s ease;
+}
+.sekmeler a:active .ikon {
+  transform: scale(0.86);
 }
 .sekmeler a[aria-current='page'] {
-  color: var(--vurgu-acik);
+  color: var(--ink);
+}
+.sekmeler a[aria-current='page'] .ikon {
+  stroke-width: 1.7;
+  animation: sekme-zipla 0.45s cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+@keyframes sekme-zipla {
+  40% {
+    transform: translateY(-3px) scale(1.12);
+  }
 }
 html.sekmesiz .sekmeler {
   display: none;
@@ -1416,7 +1499,7 @@ html.sekmesiz .sekmeler {
 #bildirim {
   position: fixed;
   left: 50%;
-  bottom: calc(env(safe-area-inset-bottom) + var(--sekme-h) + 14px);
+  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 12px);
   transform: translateX(-50%);
   width: max-content;
   max-width: min(calc(100vw - 2 * var(--yan)), 560px);
@@ -1675,6 +1758,152 @@ html.sekmesiz .sekmeler {
 }
 
 /* Bütün animasyonlar azaltılmış hareket tercihinde kapanır */
+/* ---------- Hareket ---------- */
+/* Yeni ekran: öğeler sırayla, hafifçe yükselerek belirir (sabit konumlu öğeler hariç; transform onları bozar) */
+main[data-hareket='giris'] > :not(.alt-yaprak) {
+  animation: sahne-gir 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+main[data-hareket='giris'] > :nth-child(2) {
+  animation-delay: 50ms;
+}
+main[data-hareket='giris'] > :nth-child(3) {
+  animation-delay: 100ms;
+}
+main[data-hareket='giris'] > :nth-child(4) {
+  animation-delay: 150ms;
+}
+main[data-hareket='giris'] > :nth-child(5) {
+  animation-delay: 200ms;
+}
+main[data-hareket='giris'] > :nth-child(n + 6) {
+  animation-delay: 250ms;
+}
+@keyframes sahne-gir {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+/* Göz At zaman çizelgesi ve listeler: kaydırdıkça belirir (destekleyen tarayıcılarda; iOS 26 Safari) */
+@supports (animation-timeline: view()) {
+  .zaman-oge,
+  .liste > li {
+    animation: sahne-gir linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 60%;
+  }
+}
+
+/* Pekiştir: yeni kart → tablo çerçeveden belirir, seçenekler sırayla gelir */
+main[data-hareket='yeni-kart'] .soru-resim {
+  animation: tablo-gir 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+main[data-hareket='yeni-kart'] .soru-baslik,
+main[data-hareket='yeni-soru'] .soru-baslik {
+  animation: sahne-gir 0.45s 0.12s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+main:is([data-hareket='yeni-kart'], [data-hareket='yeni-soru']) .secenek {
+  animation: sahne-gir 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+main:is([data-hareket='yeni-kart'], [data-hareket='yeni-soru']) .secenek:nth-child(1) {
+  animation-delay: 0.18s;
+}
+main:is([data-hareket='yeni-kart'], [data-hareket='yeni-soru']) .secenek:nth-child(2) {
+  animation-delay: 0.23s;
+}
+main:is([data-hareket='yeni-kart'], [data-hareket='yeni-soru']) .secenek:nth-child(3) {
+  animation-delay: 0.28s;
+}
+main:is([data-hareket='yeni-kart'], [data-hareket='yeni-soru']) .secenek:nth-child(4) {
+  animation-delay: 0.33s;
+}
+main[data-hareket='yeni-kart'] .tanisma > * {
+  animation: sahne-gir 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+main[data-hareket='yeni-kart'] .tanisma-eser:nth-child(2) {
+  animation-delay: 80ms;
+}
+main[data-hareket='yeni-kart'] .tanisma-eser:nth-child(3) {
+  animation-delay: 160ms;
+}
+@keyframes tablo-gir {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(10px);
+  }
+}
+/* ilerleme çubuğu önceki karttan bu karta dolar */
+.ince-cubuk > i {
+  animation: dol 0.6s cubic-bezier(0.3, 0.8, 0.3, 1);
+}
+@keyframes dol {
+  from {
+    width: var(--onceki);
+  }
+}
+
+/* Cevap: doğru seçenek yaldız ışığıyla parlar, yanlış seçilen hafifçe sarsılır */
+main[data-hareket='cevap'] .secenek.dogru {
+  position: relative;
+  overflow: hidden;
+  animation: dogru-pop 0.45s cubic-bezier(0.3, 1.5, 0.5, 1);
+}
+main[data-hareket='cevap'] .secenek.dogru::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 30%, rgba(255, 230, 170, 0.45) 50%, transparent 70%);
+  transform: translateX(-100%);
+  animation: yaldiz 0.9s 0.1s ease-out forwards;
+  pointer-events: none;
+}
+main[data-hareket='cevap'] .secenek.yanlis {
+  animation: sarsil 0.42s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+main[data-hareket='cevap'] .secenek .ikon {
+  animation: isaret-gel 0.35s 0.08s cubic-bezier(0.3, 1.6, 0.5, 1) backwards;
+}
+main[data-hareket='cevap'] .sonuc {
+  animation: sahne-gir 0.35s 0.15s ease-out backwards;
+}
+@keyframes dogru-pop {
+  40% {
+    transform: scale(1.03);
+  }
+}
+@keyframes yaldiz {
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes sarsil {
+  20%,
+  60% {
+    transform: translateX(-6px);
+  }
+  40%,
+  80% {
+    transform: translateX(6px);
+  }
+}
+@keyframes isaret-gel {
+  from {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+}
+/* basılan seçenek ve düğmeler parmağın altında hafifçe çöker */
+.secenek:active:not(:disabled) {
+  transform: scale(0.98);
+}
+.secenek {
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.12s ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

@@ -836,3 +836,11 @@ Emre'nin isteği: “Kolay, orta, zor diye bölümler; birinde %80 başarı olma
    - Sanatçı sayfasında seviye durumu, İlerleme'de seviyelere göre sayılar.
 6. **Yarım oturum:** seviye kipi, kartın seviyesi ve seviye sonucu kayda girer (İş “Yarım kalan pekiştirmeye devam”); aynı yerden döner.
 7. Testler: `tests/unit/seviye.test.mjs`, `tests/e2e/seviye.spec.js` (Orta kilitli → Kolay'da %80 → geçiş → Orta açılır ve Orta şıklarında aynı akım yok; yanlış cevapta geçilmez). Sürüm 1.18.0.
+
+## Hareket ve yüzen sekme çubuğu (İş 13)
+
+1. **Sekme çubuğu:** Emre'nin seçtiği “A · Yüzen hap”. Çubuk ekranın altında havada duran yuvarlak bir hap; seçili sekmenin arkasında resim renginde (vurgu) bir hap kayar. Çubuk bir kez kurulur, sekme değişince yalnızca `--i` ve `aria-current` güncellenir (kayma animasyonu bu yüzden çalışır). Ana içeriğin alt boşluğu ve bildirim konumu `--sekme-alt` ile çubuğa göre ayarlandı.
+2. **Ekran geçişi:** `ciz(html, hareket)`. Adres değişince `main[data-hareket='giris']`: doğrudan çocuklar sırayla 12 px yükselerek belirir. Aynı ekranın yeniden çizimi (konu işaretleme, palet) hareketsiz. View Transitions API kullanılmadı: geri çağrısı eşzamansız, `ciz` sonrası DOM'a hemen erişen kodu bozardı.
+3. **Pekiştir:** yeni kartta tablo ölçeklenerek belirir, seçenekler sırayla gelir; karışıkta 2. soruda yalnızca başlık ve seçenekler. Cevapta doğru seçenek yaldız ışığıyla parlar ve hafifçe büyür, yanlış seçilen sarsılır. İlerleme çubuğu önceki karttaki değerden dolar (`--onceki`).
+4. **Göz At:** zaman çizelgesi solda yaldız bir çizgi, her akım üzerinde bir düğüm (akım rengi). Yüzyıllar Roma rakamıyla (“XIII–XIV. yüzyıl”; `yuzyilAraligi(…, { roma: true })`). Liste öğeleri kaydırdıkça belirir (CSS `animation-timeline: view()`, desteklemeyen tarayıcıda hareketsiz).
+5. Hareket azaltma açıkken tüm animasyonlar kapalı (mevcut `prefers-reduced-motion` kuralı). Sürüm 1.19.0.
