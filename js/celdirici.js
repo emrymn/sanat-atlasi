@@ -39,10 +39,14 @@ function ortaNokta(a) {
   return a ? (a[0] + a[1]) / 2 : 0;
 }
 
-// Sanatçı sorusu için 3 çeldirici.
-// Sıra: 1) aynı akım (önce açık, sonra kapalı), 2) komşu akımlar ±50 yıl örtüşen,
-// 3) ±100 yıl içindeki herkes, 4) (yedek) zamanca en yakınlar.
-export function sanatciCeldiricileri(hedef, { sanatcilar, akimlar, acikIdler = new Set(), rng = Math.random, adet = 3, ortaYillar = null }) {
+// Sanatçı sorusu için 3 çeldirici. seviye (js/seviye.js) şıkların ne kadar benzer olacağını belirler:
+// 'zor':   1) aynı akım (önce açık, sonra kapalı), 2) komşu akımlar ±50 yıl örtüşen,
+//          3) ±100 yıl içindeki herkes, 4) (yedek) zamanca en yakınlar.
+// 'orta':  aynı akım yok; önce komşu akımlar (±50 yıl), sonra başka akımlardan ±100 yıl içindekiler.
+// 'kolay': aynı ve komşu akımlar yok; dönem sırasında en az UZAK_FARK uzak akımlardan.
+// Orta ve kolayda yeterli aday yoksa zor sıraya düşülür (her zaman 4 seçenek olsun).
+export const UZAK_FARK = 3;
+export function sanatciCeldiricileri(hedef, { sanatcilar, akimlar, acikIdler = new Set(), rng = Math.random, adet = 3, ortaYillar = null, seviye = 'zor' }) {
   const oy = ortaYillar || akimOrtaYillari(sanatcilar);
   const hedefAralik = yasamAraligi(hedef, oy);
   const akim = akimlar.find((a) => a.ad === hedef.akim);
@@ -65,6 +69,15 @@ export function sanatciCeldiricileri(hedef, { sanatcilar, akimlar, acikIdler = n
     }
   };
 
+  if (seviye === 'kolay') {
+    const sira = Object.fromEntries(akimlar.map((a) => [a.ad, a.sira]));
+    const uzak = (s) => akim && sira[s.akim] !== undefined && !komsular.has(s.akim) && Math.abs(sira[s.akim] - akim.sira) >= UZAK_FARK;
+    ekle(acikOnce(sanatcilar.filter(uzak)));
+    ekle(acikOnce(sanatcilar.filter((s) => s.akim !== hedef.akim && !komsular.has(s.akim))));
+  } else if (seviye === 'orta') {
+    ekle(acikOnce(sanatcilar.filter((s) => komsular.has(s.akim) && ortusur(hedefAralik, yasamAraligi(s, oy), 50))));
+    ekle(acikOnce(sanatcilar.filter((s) => s.akim !== hedef.akim && ortusur(hedefAralik, yasamAraligi(s, oy), 100))));
+  }
   ekle(acikOnce(sanatcilar.filter((s) => s.akim === hedef.akim)));
   ekle(acikOnce(sanatcilar.filter((s) => komsular.has(s.akim) && ortusur(hedefAralik, yasamAraligi(s, oy), 50))));
   ekle(acikOnce(sanatcilar.filter((s) => ortusur(hedefAralik, yasamAraligi(s, oy), 100))));
@@ -82,11 +95,19 @@ export function sanatciSecenekleri(hedef, baglam) {
 }
 
 // Akım sorusu: doğru akım + en fazla 3 komşu, sonra kronolojik olarak en yakınlar.
-export function akimSecenekleri(akimAdi, akimlar, rng = Math.random, adet = 4) {
+// seviye 'kolay': komşular yerine dönem sırasında en az UZAK_FARK uzak akımlar (yetmezse en yakınlar).
+export function akimSecenekleri(akimAdi, akimlar, rng = Math.random, adet = 4, seviye = 'zor') {
   const akim = akimlar.find((a) => a.ad === akimAdi);
   if (!akim) return [akimAdi];
   const secilen = [akimAdi];
-  for (const k of karistir(akim.komsular || [], rng)) {
+  if (seviye === 'kolay') {
+    const komsu = new Set(akim.komsular || []);
+    for (const a of karistir(akimlar.filter((a) => !komsu.has(a.ad) && Math.abs(a.sira - akim.sira) >= UZAK_FARK), rng)) {
+      if (secilen.length >= adet) break;
+      secilen.push(a.ad);
+    }
+  }
+  for (const k of seviye === 'kolay' ? [] : karistir(akim.komsular || [], rng)) {
     if (secilen.length >= adet) break;
     if (!secilen.includes(k) && akimlar.some((a) => a.ad === k)) secilen.push(k);
   }

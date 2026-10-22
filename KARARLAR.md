@@ -816,3 +816,23 @@ Kaynak: dış bir hata denetimi raporu ("bazen resimler yüklenmiyor") ve görse
 2. **`scripts/gorsel_indir.py`** (Mac'te, `sips` ile): pekiştirme havuzundaki (sanatçı başına 12) ve başyapıt okumalarındaki eserlerin ilk görselini kaynağın 1280 px'lik standart küçük resminden indirir (Wikimedia önbellekte tuttuğu için 429 daha az), kendisi küçültür: `gorseller/b/<ad>.jpg` (1280 px; iPhone 13 ekranı 1170 gerçek piksel genişliğinde, bu yüzden 800 px görseller bulanık kalıyordu ve yakınlaştırmada bozuluyordu) ve `gorseller/k/<ad>.jpg` (400 px, ızgara). Toplam ≈ 650–700 MB (GitHub Pages sınırı 1 GB). `data/yerel_gorseller.json` = `{ "gorseller": { "kaynak:kimlik": "ad" }, "buyuk": [anahtar] }`. Yalnızca özgür lisanslı kaynaklar (Commons, müzelerin CC0 görselleri); WikiArt alınmaz. Wikimedia'ya istekler arası en az 1,5 sn bekleme. Engel (429) ya da sunucu hatasında görsel atlanmaz: üst üste her retle bekleme katlanır (30 sn → … en çok 15 dk; Retry-After daha uzunsa o) ve temel bekleme 10 sn'ye kadar artar, başarılarla geri iner; yalnızca 404/410 ya da müze 403'ünde atlanır.
 3. **Uygulama:** `gorselUrl` ve `paletUrl` yerel kopya varsa onu döndürür (1200 px istekleri de 800'lük kopyaya gider). Service worker `gorseller/` yolunu sürümden bağımsız görsel önbelleğine (LRU) alır. Galerilerdeki diğer eserler ve konu sayfaları eskisi gibi kaynaktan gelir. Kaynak ve lisans yazısı değişmez.
 4. 1280 px kopyalar daha büyük olduğu için service worker'ın görsel önbellek sınırı 300 MB'tan 700 MB'a çıkarıldı (LRU); Ayarlar'daki indirme tahmini görsel başına 300 KB. İş 10'un (hata denetimi) üstüne uygulandı; yerel kopya varsa Commons küçük resim adresinden önce gelir. Sürüm 1.17.1.
+
+## İş 12 · Seviyeler: Kolay, Orta, Zor (2026-10-22)
+
+Emre'nin isteği: “Kolay, orta, zor diye bölümler; birinde %80 başarı olmadan öbürüne geçilmesin ki sanatçılar tam anlaşılsın.” Bu iş önce Emre'nin Mac'indeki bir oturumda başlamıştı, ama o oturumun değişiklikleri GitHub'a gönderilmemişti. Özellik güncel main üzerine baştan yazıldı (`js/seviye.js`, birim testli).
+
+1. **Seviye sanatçı başına tutulur** (`ilerleme.seviyeler[id] = { s: 0–2, son: [1,0,…] }`, yedeğe dahil). Her sanatçı Kolay'dan başlar. Yalnızca sanatçı sorusu sayılır.
+2. **Geçiş:** o seviyedeki son 10 cevabın en az %80'i doğru ve en az 5 cevap varsa üst seviyeye geçilir; yeni seviyede sayaç sıfırlanır. Kayan pencere sayesinde erken yanlışlar zamanla düşer. Seviye düşürme yok. Zor'da aynı ölçüt “ustalaştın” olarak gösterilir.
+3. **Seviye sorunun zorluğunu belirler:**
+   - **Eser:** Kolay'da sanatçının en tipik ve ünlü yarısından, Orta'da hepsinden, Zor'da en az bilinen yarısından (İş 7'deki kolaylık puanları). İş 7'de bu dilim Leitner kutusuna bağlıydı; artık seviyeye bağlı.
+   - **Sanatçı şıkları:** Kolay'da aynı ve komşu akımlar yok, dönem sırasında en az 3 akım uzak sanatçılar. Orta'da aynı akım yok, komşu akımlar (±50 yıl). Zor'da eski kural (aynı akım önce; CLAUDE.md §5). Aday yetmezse bir alt kurala düşülür, her zaman 4 şık olur.
+   - **Akım şıkları (Karışık):** Kolay'da en az 3 akım uzak akımlar; Orta ve Zor'da eski kural (komşular).
+   - CLAUDE.md §5'teki “yanlış şıklar zor olmalı” kuralı bu yüzden yalnızca Zor seviyede birebir geçerli; alt seviyeler Emre'nin yeni isteğiyle kasıtlı olarak daha kolay.
+4. **Kilit:** Karışık ve Döneme göre her sanatçıyı kendi seviyesinde sorar; böylece %80 olmadan hiçbir sanatçı zor şıklarla karşılaşmaz. Pekiştir menüsüne “Seviyeye göre” bölümü eklendi: her seviyedeki açık sanatçı sayısı. Seviyede sanatçı yoksa satır kilitli görünür (“bir sanatçı Kolay'da %80 başarınca açılır”). Seviye oturumu (`#/pekistir/seviye/<kolay|orta|zor>`) yalnızca o seviyedeki sanatçıları tek soruyla (sanatçı) sorar.
+5. **Geri bildirim:**
+   - Soru etiketi “Soru 1 / 1 · Kolay”.
+   - Cevap yaprağında “Kolay · son 6 cevapta 5 doğru · Orta için %80”; geçişte “… Orta seviyeye geçti”.
+   - Tur özetinde “Seviye atlayanlar”.
+   - Sanatçı sayfasında seviye durumu, İlerleme'de seviyelere göre sayılar.
+6. **Yarım oturum:** seviye kipi, kartın seviyesi ve seviye sonucu kayda girer (İş “Yarım kalan pekiştirmeye devam”); aynı yerden döner.
+7. Testler: `tests/unit/seviye.test.mjs`, `tests/e2e/seviye.spec.js` (Orta kilitli → Kolay'da %80 → geçiş → Orta açılır ve Orta şıklarında aynı akım yok; yanlış cevapta geçilmez). Sürüm 1.18.0.

@@ -2,6 +2,7 @@
 import { idbAl, idbKoy } from './idb.js';
 import { bugunStr } from './leitner.js';
 import { karisanlarDogrula } from './ogrenme.js';
+import { seviyelerDogrula } from './seviye.js';
 
 export const ANAHTAR = 'sanat-atlasi:ilerleme';
 // 2: "Gece galerisi" teması varsayılan oldu (eski varsayılan Sepya ve kaldırılan Koyu bir kez Gece'ye geçer)
@@ -21,6 +22,7 @@ export function varsayilanIlerleme(islenen = []) {
     ekSanatcilar: [],
     sonCalisilanlar: [],
     karisanlar: {},
+    seviyeler: {},
     olusturma: new Date().toISOString(),
   };
 }
@@ -67,6 +69,7 @@ export function ilerlemeDogrula(nesne) {
     ekSanatcilar: Array.isArray(v.ekSanatcilar) ? [...new Set(v.ekSanatcilar.filter((x) => typeof x === 'string'))] : [],
     sonCalisilanlar: Array.isArray(v.sonCalisilanlar) ? [...new Set(v.sonCalisilanlar.filter((x) => typeof x === 'string'))].slice(0, SON_CALISILAN) : [],
     karisanlar: karisanlarDogrula(v.karisanlar),
+    seviyeler: seviyelerDogrula(v.seviyeler),
     olusturma: v.olusturma || t.olusturma,
   };
 }
