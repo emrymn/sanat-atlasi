@@ -62,7 +62,7 @@ const KABUK_DOSYALARI = [
   'data/kisa_adlar.json',
 ];
 // Olmasa da kurulumu bozmayan dosyalar
-const ISTEGE_BAGLI = ['data/eserler_onbellek.json', 'data/tanima_notlari.json', 'data/eser_notlari.json', 'data/eser_adlari_tr.json', 'data/eser_zorluk.json', 'data/basyapitlar.json', 'data/ikonografi.json', 'data/yerel_gorseller.json', 'icons/icon-maskable-512.png'];
+const ISTEGE_BAGLI = ['data/eserler_onbellek.json', 'data/tanima_notlari.json', 'data/eser_notlari.json', 'data/eser_adlari_tr.json', 'data/eser_zorluk.json', 'data/basyapitlar.json', 'data/ikonografi.json', 'data/yerel_gorseller.json', 'data/gorsel_oranlari.json', 'icons/icon-maskable-512.png'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(

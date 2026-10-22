@@ -10,7 +10,8 @@
     "test:e2e": "playwright test",
     "serve": "node scripts/sunucu.mjs",
     "onbellek": "node scripts/onbellek.mjs",
-    "ikonlar": "node scripts/ikonlar.mjs"
+    "ikonlar": "node scripts/ikonlar.mjs",
+    "oranlar": "node scripts/oranlar.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.56.1"

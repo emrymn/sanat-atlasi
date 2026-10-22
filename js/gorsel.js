@@ -48,6 +48,16 @@ export function yerelGorselleriAyarla(harita, buyuk = []) {
   yerel = harita && typeof harita === 'object' && !Array.isArray(harita) ? harita : {};
   buyukYerel = new Set(Array.isArray(buyuk) ? buyuk : []);
 }
+// En/boy oranları (data/gorsel_oranlari.json; scripts/oranlar.mjs): yalnızca yerel kopyası olan görseller
+let oranlar = {};
+export function oranlariAyarla(o) {
+  oranlar = o && typeof o === 'object' ? o : {};
+}
+// genişlik / yükseklik; bilinmiyorsa undefined
+export function gorselOrani(g) {
+  const ad = g && yerel[yerelAnahtar(g)];
+  return ad ? oranlar[ad] : undefined;
+}
 export function yerelAnahtar(g) {
   return `${g.k}:${g.d || g.i || g.u || ''}`;
 }

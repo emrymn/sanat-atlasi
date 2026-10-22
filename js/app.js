@@ -5,7 +5,7 @@ import { bugunStr, cevapla, vadesiGeldiMi, gorulduMu, GUNLUK_YENI_SINIRI } from 
 import { sanatciSecenekleri, akimSecenekleri, akimOrtaYillari } from './celdirici.js';
 import { kartlariSec, Oturum, kategori } from './oturum.js';
 import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU, eserAdlariniAyarla, adlariAl, eserBaslik, kolaylikAl } from './eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, yerelGorselleriAyarla } from './gorsel.js';
+import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, yerelGorselleriAyarla, oranlariAyarla, gorselOrani } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { gununSanatcisi, baskaSanatci } from './gunun.js';
 import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, yedekYarimOturum, sonCalisilanEkle, TEMALAR } from './depo.js';
@@ -481,7 +481,7 @@ function sahneHtml(gs, { tekrar, sayi, vade, devam }) {
 
 // Sahnenin altı: eserleri (Tümünü göster), resmin renkleri, hayatı ve dönemi
 function gununHikayesi(gs) {
-  return `<section class="hikaye" data-test="hikaye">
+  return `<section class="hikaye" data-test="hikaye" data-tablo-devami>
       <div class="susleme" aria-hidden="true"><span></span><i></i><span></span></div>
       <div data-ana-galeri-kutu>${etiket('Eserleri')}<div class="eserler" data-ana-galeri><p class="ikincil kucuk">Eserler yükleniyor…</p></div></div>
       <section class="bolum">${etiket('Resmin renkleri')}<div data-palet>${paletHtml(null)}</div></section>
@@ -560,8 +560,21 @@ function anaSayfa() {
 // ---------- Günün sanatçısı ----------
 // Günün sanatçısı havuzu: eser önbelleği varsa yalnızca orada kaydı olanlar (görseli çevrimdışı da hazır olsun);
 // önbellekten sonra eklenen sanatçılar önbellek yenilenince havuza katılır.
+// Ana sayfa tabloyu ekran boyu gösterdiği için dikey eseri olan sanatçılar seçilir (data/gorsel_oranlari.json yoksa hepsi).
 function gununHavuzu() {
-  return d.sanatcilar.filter((s) => !d.onbellekIdleri || d.onbellekIdleri.has(s.id)).map((s) => s.id);
+  const havuz = d.sanatcilar.filter((s) => !d.onbellekIdleri || d.onbellekIdleri.has(s.id));
+  const dikey = d.dikeyler ? havuz.filter((s) => d.dikeyler.has(s.id)) : [];
+  return (dikey.length ? dikey : havuz).map((s) => s.id);
+}
+
+// Günün eseri: en bilinen dikey eser (ekranı kırpılmadan doldurur); yoksa en bilinen eser
+const DIKEY_ORAN = 0.85;
+function gununEseri(eserler) {
+  const dikey = eserler.filter((e) => {
+    const g = secilenGorsel(e, kotuler());
+    return g && e.pekistirme !== false && (gorselOrani(g) ?? 9) <= DIKEY_ORAN;
+  });
+  return enBilinen(dikey) || enBilinen(eserler);
 }
 
 function gununId() {
@@ -585,7 +598,7 @@ function bilinirlikSirasi(eserler) {
 
 // Günün eseri: ekranın üstünü kenardan kenara kaplar; renkleri ekranın vurgusu olur
 async function gununKartGorseli(s) {
-  const eSozu = sanatciEserleri(s).then(enBilinen);
+  const eSozu = sanatciEserleri(s).then(gununEseri);
   ekranRengi(eSozu, akimRenk(s.akim), (p) => {
     const k = ekran.querySelector('[data-palet]');
     if (k) k.innerHTML = paletHtml(p);
@@ -594,13 +607,14 @@ async function gununKartGorseli(s) {
   const kutu = ekran.querySelector('[data-gunun-gorsel]');
   if (!kutu || !e) return;
   const g = secilenGorsel(e, kotuler());
-  // tablo kırpılmadan ortada durur; arkasında aynı resmin bulanık, karartılmış kopyası ekranı doldurur
-  const url = kacis(gorselUrl(g, 1200));
-  const yedek = kacis(gorselYedek(g));
+  const url = gorselUrl(g, 1200);
   kutu.insertAdjacentHTML(
     'afterbegin',
-    `<img class="sahne-arka" decoding="async" alt="" aria-hidden="true" src="${url}" data-yedek="${yedek}"><img class="sahne-tablo" decoding="async" alt="${kacis(`${s.ad}, ${eserBaslik(e)}`)}" src="${url}" data-yedek="${yedek}">`,
+    `<img decoding="async" alt="${kacis(`${s.ad}, ${eserBaslik(e)}`)}" src="${kacis(url)}" data-yedek="${kacis(gorselYedek(g))}">`,
   );
+  // sahnenin altı tablonun devamı gibi: aynı resim ters çevrilip bulanıklaştırılır, renkleri aşağı doğru akar
+  const devami = ekran.querySelector('[data-tablo-devami]');
+  if (devami) devami.style.setProperty('--tablo', `url("${new URL(url, location.href).href.replace(/"/g, '%22')}")`);
 }
 
 // Sahnede ilk duvar etiketi: biyografinin ilk cümleleri (veri gelince doldurulur, yoksa etiket kalkar)
@@ -2143,7 +2157,7 @@ function swKaydet() {
 // ---------- başlangıç ----------
 async function basla() {
   // İsteğe bağlı notlar (data/tanima_notlari.json, data/eser_notlari.json) aynı anda istenir; yoksa ya da bozuksa boş kalır
-  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot, eserAd, zorluk, yerelG] = await Promise.all([
+  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot, eserAd, zorluk, yerelG, oranG] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
     jsonGetir('data/konular.json'),
@@ -2153,6 +2167,7 @@ async function basla() {
     jsonGetir('data/eser_adlari_tr.json').catch(() => null),
     jsonGetir('data/eser_zorluk.json').catch(() => null),
     jsonGetir('data/yerel_gorseller.json').catch(() => null),
+    jsonGetir('data/gorsel_oranlari.json').catch(() => null),
   ]);
   d.kisaAdlar = (await jsonGetir('data/kisa_adlar.json').catch(() => ({ adlar: {} }))).adlar || {};
   d.tanimaNotlari = notlariAl(tanima);
@@ -2160,6 +2175,8 @@ async function basla() {
   eserAdlariniAyarla(adlariAl(eserAd));
   d.kolaylik = kolaylikAl(zorluk);
   yerelGorselleriAyarla(yerelG && yerelG.gorseller, yerelG && yerelG.buyuk);
+  oranlariAyarla(oranG && oranG.oranlar);
+  d.dikeyler = oranG && Array.isArray(oranG.dikeyler) ? new Set(oranG.dikeyler) : null;
   eserTurleriniAyarla(turler);
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
   const hazir = await hazirOnbellek();
