@@ -837,7 +837,7 @@ Emre'nin isteği: “Kolay, orta, zor diye bölümler; birinde %80 başarı olma
 6. **Yarım oturum:** seviye kipi, kartın seviyesi ve seviye sonucu kayda girer (İş “Yarım kalan pekiştirmeye devam”); aynı yerden döner.
 7. Testler: `tests/unit/seviye.test.mjs`, `tests/e2e/seviye.spec.js` (Orta kilitli → Kolay'da %80 → geçiş → Orta açılır ve Orta şıklarında aynı akım yok; yanlış cevapta geçilmez). Sürüm 1.18.0.
 
-## Hareket ve yüzen sekme çubuğu (İş 13)
+## İş 13 · Hareket ve yüzen sekme çubuğu (2026-10-22)
 
 1. **Sekme çubuğu:** Emre'nin seçtiği “A · Yüzen hap”. Çubuk ekranın altında havada duran yuvarlak bir hap; seçili sekmenin arkasında resim renginde (vurgu) bir hap kayar. Çubuk bir kez kurulur, sekme değişince yalnızca `--i` ve `aria-current` güncellenir (kayma animasyonu bu yüzden çalışır). Ana içeriğin alt boşluğu ve bildirim konumu `--sekme-alt` ile çubuğa göre ayarlandı.
 2. **Ekran geçişi:** `ciz(html, hareket)`. Adres değişince `main[data-hareket='giris']`: doğrudan çocuklar sırayla 12 px yükselerek belirir. Aynı ekranın yeniden çizimi (konu işaretleme, palet) hareketsiz. View Transitions API kullanılmadı: geri çağrısı eşzamansız, `ciz` sonrası DOM'a hemen erişen kodu bozardı.
