@@ -91,7 +91,9 @@ test('SW: kayıtlı görsel yeniden doğrulanıp hata yanıtıyla ezilmez', asyn
 
 test('SW: sürüm, yeni resim önbelleği, hata bildirimi ve onabort', () => {
   const kaynak = readFileSync(new URL('../../sw.js', import.meta.url), 'utf8');
-  assert.match(kaynak, /const SURUM = '1\.19\.2'/);
+  // service worker sürümü uygulamanın sürümüyle aynı (önbellek her sürümde yenilenir)
+  const uygulama = /const SURUM = '([\d.]+)'/.exec(readFileSync(new URL('../../js/app.js', import.meta.url), 'utf8'))[1];
+  assert.match(kaynak, new RegExp(`const SURUM = '${uygulama.replace(/\./g, '\\.')}'`));
   assert.match(kaynak, /const RESIM = 'atlas-resim-2'/);
   assert.match(kaynak, /a === 'atlas-resim'/);
   assert.match(kaynak, /tip === 'resim-sil'/);

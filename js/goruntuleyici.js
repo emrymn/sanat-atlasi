@@ -1,5 +1,5 @@
 // Tam ekran eser görüntüleyici: iki parmakla yakınlaştırma, kaydırma, eserler arası geçiş.
-import { kacis } from './yardimci.js';
+import { kacis, notTemizle } from './yardimci.js';
 import { ikon } from './tasarim.js';
 import { gorselUrl, gorselYedek,gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle } from './gorsel.js';
 import { eserKonusu } from './ikonografi.js';
@@ -93,7 +93,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       const sayfa = gorselSayfasi(g);
       const not = notu ? notu(e) : '';
       const konu = eserKonusu(e);
-      alt.innerHTML = `<p class="gor-baslik">${kacis(e.ad || e.baslik)}${e.tarih ? ` <span class="ikincil">· ${kacis(e.tarih)}</span>` : ''}</p>${e.ad && e.ad !== e.baslik ? `<p class="gor-ozgun" data-test="ozgun-ad">${kacis(e.baslik)}</p>` : ''}
+      alt.innerHTML = `<p class="gor-baslik">${kacis(notTemizle(e.ad || e.baslik))}${e.tarih ? ` <span class="ikincil">· ${kacis(e.tarih)}</span>` : ''}</p>${e.ad && e.ad !== e.baslik ? `<p class="gor-ozgun" data-test="ozgun-ad">${kacis(notTemizle(e.baslik))}</p>` : ''}
         ${not ? `<p class="gor-not" data-test="eser-notu">${kacis(not)}</p>` : ''}
         ${konu ? `<a class="gor-konu" href="#/konu/${encodeURIComponent(konu.id)}" data-gor-konu data-test="gor-konu">Konu: ${kacis(konu.ad)} →</a>` : ''}
         <p class="gor-kaynak">${kacis(kaynakYazisi(e, g))}${sayfa ? ` · <a href="${kacis(sayfa)}" target="_blank" rel="noopener">${g.k === 'wikiart' ? 'eser sayfası' : 'kaynak sayfası'}</a>` : ''}${eserler.length > 1 ? ` · ${sira + 1} / ${eserler.length}` : ''}</p>`;

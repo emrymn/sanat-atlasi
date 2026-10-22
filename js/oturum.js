@@ -114,3 +114,26 @@ export class Oturum {
     this.konum++;
   }
 }
+
+// Tur önizlemesi (D1): kartlariSec'in aynı adaylarla kaç kart seçeceği ve bunların türleri.
+// Bugün hapı, Pekiştir menüsü ve tur sayacı aynı sayıyı gösterir.
+// Bileşim öncelik sırasına göredir (vadesi gelen, zayıf, yeni, diğer); ağırlıklı (karışık) kipte toplam aynıdır.
+export function turOzeti({ adaylar, skorlar, bugun, adet, yeniKota, kip = 'donem' }) {
+  const say = [0, 0, 0, 0];
+  for (const s of adaylar) say[kategori(skorlar, s.id, kip, bugun)]++;
+  const yeniUygun = Math.min(say[2], Math.max(0, yeniKota));
+  const toplam = Math.max(0, Math.min(adet, say[0] + say[1] + say[3] + yeniUygun));
+  const tekrar = Math.min(say[0], toplam);
+  const zayif = Math.min(say[1], toplam - tekrar);
+  const yeni = Math.min(yeniUygun, toplam - tekrar - zayif);
+  return { toplam, tekrar, zayif, yeni, diger: toplam - tekrar - zayif - yeni };
+}
+
+// "8 kart" altındaki kısa satır: "0 tekrar · 8 yeni" (zayıf ve diğer kartlar "pekiştirme" sayılır)
+export function turAltYazisi(o) {
+  if (!o.toplam) return 'bugünkü kartlar bitti';
+  const parca = [`${o.tekrar} tekrar`];
+  if (o.zayif + o.diger) parca.push(`${o.zayif + o.diger} pekiştirme`);
+  parca.push(`${o.yeni} yeni`);
+  return parca.join(' · ');
+}

@@ -3,7 +3,7 @@ import { kacis, yillarYaz, rastgeleYap, bulunmaEki } from './yardimci.js';
 import { acikSanatcilar, akimDurumlari, yeniAcilanlar, islenenKume } from './kilit.js';
 import { bugunStr, cevapla, vadesiGeldiMi, gorulduMu, GUNLUK_YENI_SINIRI } from './leitner.js';
 import { sanatciSecenekleri, akimSecenekleri, akimOrtaYillari } from './celdirici.js';
-import { kartlariSec, Oturum, kategori } from './oturum.js';
+import { kartlariSec, Oturum, kategori, turOzeti, turAltYazisi } from './oturum.js';
 import { sanatciEserleri, eserSec, eserTurleriniAyarla, hazirOnbellek, pekistirmeHavuzu, TEST_HAVUZU, eserAdlariniAyarla, adlariAl, eserBaslik, kolaylikAl } from './eserler.js';
 import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, yerelGorselleriAyarla, oranlariAyarla, gorselOrani } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
@@ -21,7 +21,7 @@ import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir } fro
 import { konulariAl, konuBul, konuHaritasiniAyarla, TUR_AD, TUR_SIRA } from './ikonografi.js';
 import { SEVIYELER, seviyeKaydi, seviyeIsle, seviyeDurumu, seviyeKisa, eserSeviyesi, GECIS_ORANI } from './seviye.js';
 
-const SURUM = '1.19.2';
+const SURUM = '1.20.0';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -153,7 +153,7 @@ function kunye(s, { bag = true, konuYok = false } = {}) {
 // Erişilebilir ad her zaman tam addır.
 function isimHtml(sanatci, { etiketAdi = 'b', sinif = '', ek = '' } = {}) {
   const p = adParcala(sanatci.ad, d.kisaAdlar[sanatci.id]);
-  return `<${etiketAdi} class="isim${sinif ? ' ' + sinif : ''}" aria-label="${kacis(sanatci.ad)}"${ek}>${p.ilk ? `<span class="ad-ilk">${kacis(p.ilk)}</span> ` : ''}<span class="ad-son">${kacis(p.son)}</span></${etiketAdi}>`;
+  return `<${etiketAdi} class="isim${sinif ? ' ' + sinif : ''}" aria-label="${kacis(sanatci.ad)}"${ek}>${p.ilk ? `<span class="ad-ilk">${kacis(p.ilk)}</span> ` : ''}<span class="ad-son">${kacis(p.son)}</span>${p.tam ? ` <span class="ad-ilk ad-tam">${kacis(p.tam)}</span>` : ''}</${etiketAdi}>`;
 }
 
 // Bir öğenin yazısını tek satıra sığana kadar küçültür (en küçük `enAz` px)
@@ -442,25 +442,40 @@ function istatistik() {
   return { acik: acik.length, vade, oran: toplam ? Math.round((100 * dogru) / toplam) : null, toplam };
 }
 
+// Turda kaç kart gelecek (D1): oturumKur'un seçeceği kartların sayısı ve türleri; her yerde bu sayı gösterilir.
+// Eser listesi henüz bilinmeyen (önbellekte ve kursta eseri olmayan) sanatçılar sayılır; görselsiz çıkarlarsa tur biraz kısalır.
+function turBilgisi(kip = 'karisik', akim = null) {
+  const adaylar = acikListe().filter((s) => kip !== 'donem' || !akim || akim === 'hepsi' || s.akim === akim);
+  const g = gunlukGuncelle(d.ilerleme, bugun());
+  return turOzeti({
+    adaylar,
+    skorlar: d.ilerleme.skorlar,
+    bugun: bugun(),
+    adet: d.ilerleme.ayarlar.gunlukKart,
+    yeniKota: GUNLUK_YENI_SINIRI - g.yeni,
+    kip,
+  });
+}
+
 // Bugünün turu: halka bugünkü kart ilerlemesini gösterir, ortasında kalan (ya da vadesi gelen) kart sayısı
-function turKarti(ist, g, sayi) {
+function turKarti(tur, g) {
   const hedef = d.ilerleme.ayarlar.gunlukKart || 1;
   const oran = Math.min(100, Math.round((100 * g.kart) / hedef));
-  const dk = Math.max(1, Math.round((sayi * 20) / 60));
-  const alt = sayi ? `${sayi} ${ist.vade ? 'tekrar' : 'kart'} · karışık · ~${dk} dk` : 'Bugünkü kartlar bitti · yine de pekiştir';
+  const dk = Math.max(1, Math.round((tur.toplam * 20) / 60));
+  const alt = tur.toplam ? `${turAltYazisi(tur)} · ~${dk} dk` : 'Bugünkü kartlar bitti';
   return `<a class="tur" href="#/pekistir/karisik" data-test="pekistir">
       <span class="tur-halka" aria-hidden="true">
         <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" pathLength="100"/><circle class="dolu" cx="32" cy="32" r="28" pathLength="100" style="--oran:${oran}"/></svg>
-        <b>${sayi}</b>
+        <b data-test="tur-sayi">${tur.toplam}</b>
       </span>
-      <span class="tur-yazi"><span class="etiket vurgu">Bugünün turu</span><b>Pekiştirmeye başla</b><small>${kacis(alt)}</small></span>
+      <span class="tur-yazi"><span class="etiket vurgu">Bugünün turu</span><b>${tur.toplam} kart</b><small data-test="tur-alt">${kacis(alt)}</small></span>
       ${ikon('ileri', 22, 1.5)}
     </a>`;
 }
 
 // Bugün sahnesi: tablo ekranı kaplar ve kaydırırken yerinde kalır; kaydırdıkça tabloya yaklaşılır
 // (büyür, kararır) ve üstünden müze duvar etiketleri geçer. Pekiştir düğmesi sahne boyunca başparmağın altında durur.
-function sahneHtml(gs, { tekrar, sayi, vade, devam }) {
+function sahneHtml(gs, { tekrar, tur, devam }) {
   const not = gs.kurs_notu || gs.anlatim;
   const tn = taninma(gs);
   const panel = (baslik, metin, italik) =>
@@ -477,7 +492,7 @@ function sahneHtml(gs, { tekrar, sayi, vade, devam }) {
         ${not ? panel('Notlarımdan', not, true) : ''}
       </div>
       <a class="sahne-dugme" href="#/pekistir/karisik" data-test="pekistir">
-        <span>Pekiştir</span><span class="sayi" aria-label="${sayi} ${vade ? 'tekrar' : 'kart'}">${sayi}</span>${ikon('ileri', 18, 1.6)}
+        <span class="sahne-dugme-yazi"><span>Pekiştir · <b data-test="tur-sayi">${tur.toplam}</b> kart</span><small data-test="tur-alt">${kacis(turAltYazisi(tur))}</small></span>${ikon('ileri', 18, 1.6)}
       </a>
     </section>`;
 }
@@ -521,9 +536,9 @@ function anaSayfa() {
   const g = gunlukGuncelle(d.ilerleme, bugun());
   const gs = d.harita.get(gununId());
   const tarih = new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' });
-  const tekrar = `${kacis(tarih)} · ${ist.vade ? `${ist.vade} tekrar` : 'tekrar yok'}`;
+  const tur = turBilgisi('karisik');
+  const tekrar = `${kacis(tarih)} · ${tur.tekrar ? `${tur.tekrar} tekrar` : 'tekrar yok'}`;
   const son = (d.ilerleme.sonCalisilanlar || []).map((id) => d.harita.get(id)).filter(Boolean);
-  const sayi = ist.vade || Math.max(0, d.ilerleme.ayarlar.gunlukKart - g.kart);
   const devam = devamKarti();
   // en alt satırlar sahne varsa mozaiğin içinde kalır: tablonun renkleri sayfanın sonuna kadar sürer
   const alt = `${
@@ -545,8 +560,8 @@ function anaSayfa() {
     ${devam}
     ${
       gs
-        ? sahneHtml(gs, { tekrar, sayi, vade: ist.vade, devam: !!devam })
-        : `<header class="ust"><div class="ust-yazi">${etiket('Bugün', { vurgu: true })}<span class="hap" data-test="tekrar">${tekrar}</span></div></header>${turKarti(ist, g, sayi)}`
+        ? sahneHtml(gs, { tekrar, tur, devam: !!devam })
+        : `<header class="ust"><div class="ust-yazi">${etiket('Bugün', { vurgu: true })}<span class="hap" data-test="tekrar">${tekrar}</span></div></header>${turKarti(tur, g)}`
     }
     ${gs ? gununHikayesi(gs, alt) : alt}`);
   // uygulama açılışında bir kez: tablo perde açılır gibi belirir, isim satır satır gelir
@@ -1164,7 +1179,7 @@ function karsilastirmaSutunu(s, k) {
   const p = adParcala(s.ad, d.kisaAdlar[s.id]);
   const t = taninma(s);
   return `<section class="kars-sutun" data-kars="${k}" aria-label="${kacis(s.ad)}">
-      <a class="kars-ad" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="${kacis(s.ad)} — sanatçı sayfası">${p.ilk ? `<span class="ad-ilk">${kacis(p.ilk)}</span>` : ''}<b>${kacis(p.son)}</b></a>
+      <a class="kars-ad" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="${kacis(s.ad)} — sanatçı sayfası">${p.ilk ? `<span class="ad-ilk">${kacis(p.ilk)}</span>` : ''}<b>${kacis(p.son)}</b>${p.tam ? `<span class="ad-ilk ad-tam">${kacis(p.tam)}</span>` : ''}</a>
       <p class="kars-meta">${kacis(yillarYaz(s))}<br>${akimNoktasi(s.akim)}${kacis(s.akim)}</p>
       ${kilitliMi(s) ? '<span class="rozet">Henüz kursta yok</span>' : ''}
       ${t ? `<div class="kars-tanima">${etiket('Nasıl tanırım?')}<p class="kars-not" data-test="kars-taninma">${kacis(t)}</p></div>` : '<p class="kucuk ikincil" style="margin:0">Bu sanatçı için “Nasıl tanırım?” notu henüz yok.</p>'}
@@ -1211,19 +1226,20 @@ async function karsilastirSayfasi(a, b) {
 
 function pekistirMenusu() {
   const durumlar = akimDurumlari(d.akimlar, d.sanatcilar, islenen()).filter((a) => a.acik);
-  const b = bugun();
-  const vadeSay = (ad) => acikListe().filter((s) => (!ad || s.akim === ad) && kategori(d.ilerleme.skorlar, s.id, 'donem', b) === 0).length;
+  // her satırda o turun kart sayısı (D1): turu açınca sayaç aynı sayıyı gösterir
+  const turYazi = (t) => `${t.toplam} kart${t.tekrar ? ` · ${t.tekrar} tekrar` : ''}`;
+  const karisik = turBilgisi('karisik');
   gununRengi();
   ciz(`${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}
     ${devamKarti()}
     ${
       durumlar.length
-        ? `<a class="dugme vurgu" href="#/pekistir/karisik" style="margin-top:6px;min-height:54px;border-radius:16px">Pekiştir · Karışık <span class="sayi" aria-label="${istatistik().vade} tekrar">${istatistik().vade}</span></a>
+        ? `<a class="dugme vurgu karisik-dugme" href="#/pekistir/karisik" data-test="karisik-dugme"><span>Pekiştir · Karışık · <b data-test="tur-sayi">${karisik.toplam}</b> kart</span><small data-test="tur-alt">${kacis(turAltYazisi(karisik))}</small></a>
     <section class="bolum">${etiket('Döneme göre')}
     <p class="kucuk ikincil" style="margin:0">${seviyeAciklamasi()}</p>
     <ul class="liste">
-      <li><a class="satir" href="#/pekistir/donem/hepsi"><span class="metin"><b>Hepsi, dönem sırasıyla</b><span>${acikListe().length} sanatçı · ${vadeSay(null)} tekrar</span></span>${ikon('ileri', 20, 1.4)}</a></li>
-      ${durumlar.map((a) => `<li><a class="satir" href="#/pekistir/donem/${encodeURIComponent(a.ad)}"><span class="metin"><b>${kacis(a.ad)} ${akimNoktasi(a.ad)}</b><span>${a.acikSayisi} sanatçı · ${vadeSay(a.ad)} tekrar</span></span>${seviyeRozeti(a.ad)}${ikon('ileri', 20, 1.4)}</a></li>`).join('')}
+      <li><a class="satir" href="#/pekistir/donem/hepsi"><span class="metin"><b>Hepsi, dönem sırasıyla</b><span>${acikListe().length} sanatçı · ${turYazi(turBilgisi('donem', 'hepsi'))}</span></span>${ikon('ileri', 20, 1.4)}</a></li>
+      ${durumlar.map((a) => `<li><a class="satir" href="#/pekistir/donem/${encodeURIComponent(a.ad)}"><span class="metin"><b>${kacis(a.ad)} ${akimNoktasi(a.ad)}</b><span>${a.acikSayisi} sanatçı · ${turYazi(turBilgisi('donem', a.ad))}</span></span>${seviyeRozeti(a.ad)}${ikon('ileri', 20, 1.4)}</a></li>`).join('')}
     </ul></section>`
         : bosAcik()
     }`);

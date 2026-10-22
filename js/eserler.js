@@ -5,7 +5,7 @@
 // Önbellek dosyası 30 günden eskiyse canlı Wikidata sonuçlarındaki yeni eserler listenin sonuna eklenir.
 import { idbAl, idbKoy } from './idb.js';
 import { qidCoz, eserleriGetir, jsonGetiriciYap, KULLANICI_AJANI } from './wikidata.js';
-import { baslikNormal, dosyaNormal, yilYaz } from './yardimci.js';
+import { baslikNormal, dosyaNormal, yilYaz, notTemizle } from './yardimci.js';
 import { kursResimleri } from './resim.js';
 import { gorselAnahtari, pekistirmeyeUygunMu } from './gorsel.js';
 
@@ -38,9 +38,9 @@ export function onbellekEseri(e) {
     kaynak: e.kurs ? 'kurs' : e.kaynaklar[0],
     kaynaklar: e.kaynaklar,
     baslik: e.baslik,
-    tarih: e.tarih || tarihYaz(e.yil),
+    tarih: notTemizle(e.tarih) || tarihYaz(e.yil),
     yil: e.yil ?? null,
-    muze: e.muze || '',
+    muze: notTemizle(e.muze || ''),
     kursKonu: e.konu ?? null,
     qid: e.qid || null,
     gorseller: e.gorseller,
@@ -71,9 +71,9 @@ export function eserleriBirlestir(kursEserleri = [], wdEserleri = [], mevcut = [
         kaynak: 'kurs',
         kaynaklar: ['kurs'],
         baslik: e.baslik,
-        tarih: e.tarih || '',
+        tarih: notTemizle(e.tarih || ''),
         yil: null,
-        muze: e.yer || '',
+        muze: notTemizle(e.yer || ''),
         kursKonu: e.konu ?? null,
         qid: null,
         gorseller: [g],
@@ -194,7 +194,7 @@ export function eserAdiBul(sanatciId, e, adlar = eserAdlari) {
 }
 // Ekranda gösterilecek ad: Türkçe ad varsa o, yoksa özgün başlık
 export function eserBaslik(e) {
-  return (e && (e.ad || e.baslik)) || '';
+  return notTemizle((e && (e.ad || e.baslik)) || '');
 }
 // Veri dosyasının "adlar" alanını güvenle okur (dosya yok / bozuk → {})
 export function adlariAl(json) {
