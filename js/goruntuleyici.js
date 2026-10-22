@@ -3,6 +3,7 @@ import { kacis, notTemizle } from './yardimci.js';
 import { ikon } from './tasarim.js';
 import { gorselUrl, gorselYedek,gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle } from './gorsel.js';
 import { eserKonusu } from './ikonografi.js';
+import { NEDENLER } from './bildirim.js';
 
 const EN_BUYUK = 6;
 
@@ -14,7 +15,9 @@ export function kaynakYazisi(eser, gorsel) {
 
 // kotuler: { eserAnahtarı: [görsel anahtarları] } — "Görsel kötü" ile güncellenir, degisti() çağrılır
 // notu: (eser) → kısa açıklama (data/eser_notlari.json); gizliyken (cevaptan önce) gösterilmez
-export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null }) {
+// koleksiyon: { varMi(eser), degistir(eser) → yeni durum } — K4, sağ üstte işaret düğmesi (yoksa düğme çıkmaz)
+// bildir: (eser, neden, gorsel) → bildirimden sonra seçilen görsel — İ5, "⋯" menüsü (yoksa menü çıkmaz)
+export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null, koleksiyon = null, bildir = null }) {
   let sira = baslangic;
   let olcek = 1;
   let tx = 0;
@@ -32,9 +35,12 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   kok.innerHTML = `
     <div class="gor-sahne"><img class="gor-resim" alt="" draggable="false"><p class="gor-yukleniyor">Yükleniyor…</p></div>
     <button class="gor-kapat" type="button" aria-label="Kapat">${ikon('kapat', 22)}</button>
+    ${koleksiyon ? `<button class="gor-isaret" type="button" aria-pressed="false" aria-label="Koleksiyonuma ekle" hidden>${ikon('isaret', 22)}</button>` : ''}
     ${eserler.length > 1 ? `<button class="gor-ok gor-onceki" type="button" aria-label="Önceki eser">${ikon('geri', 24)}</button><button class="gor-ok gor-sonraki" type="button" aria-label="Sonraki eser">${ikon('ileri', 24)}</button>` : ''}
     <div class="gor-alt"><div class="gor-yazi" ${gizli ? 'hidden' : ''}></div>
-      <button class="gor-kotu" type="button">Görsel kötü</button><p class="gor-mesaj" role="status" aria-live="polite"></p></div>`;
+      <div class="gor-eylemler"><button class="gor-kotu" type="button">Görsel kötü</button>${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
+      ${bildir ? `<div class="gor-bildir-menu" data-test="gor-bildir-menu" hidden>${NEDENLER.map((n) => `<button type="button" data-gor-neden="${n}">${n}</button>`).join('')}</div>` : ''}
+      <p class="gor-mesaj" role="status" aria-live="polite"></p></div>`;
   document.body.appendChild(kok);
   document.documentElement.classList.add('gor-acik');
 
@@ -43,6 +49,19 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   const yukleniyor = kok.querySelector('.gor-yukleniyor');
   const alt = kok.querySelector('.gor-yazi');
   const mesaj = kok.querySelector('.gor-mesaj');
+  const isaret = kok.querySelector('.gor-isaret');
+  const daha = kok.querySelector('.gor-daha');
+  const menu = kok.querySelector('.gor-bildir-menu');
+
+  // K4: işaret düğmesi o anki eserin koleksiyondaki durumunu gösterir; sanatçısı bilinmeyen eserde gizli
+  function isaretiGuncelle() {
+    if (!isaret) return;
+    const e = eserler[sira];
+    isaret.hidden = !e.sid;
+    const var_ = !!koleksiyon.varMi(e);
+    isaret.setAttribute('aria-pressed', String(var_));
+    isaret.setAttribute('aria-label', var_ ? 'Koleksiyonumdan çıkar' : 'Koleksiyonuma ekle');
+  }
 
   function uygula(gecis = false) {
     resim.style.transition = gecis ? 'transform .2s ease-out' : 'none';
@@ -89,6 +108,11 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     };
     resim.src = gorselUrl(g, 800);
     resim.alt = gizli ? 'Soru görseli' : e.ad || e.baslik;
+    isaretiGuncelle();
+    if (menu) {
+      menu.hidden = true;
+      daha.setAttribute('aria-expanded', 'false');
+    }
     if (!gizli) {
       const sayfa = gorselSayfasi(g);
       const not = notu ? notu(e) : '';
@@ -107,7 +131,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     const e = eserler[sira];
     const simdiki = secilenGorsel(e, kotuler);
     if (!simdiki) return;
-    const sonraki = kotuIsaretle(e, simdiki, kotuler);
+    const sonraki = bildir ? bildir(e, 'Kötü görsel', simdiki) : kotuIsaretle(e, simdiki, kotuler);
     if (degisti) degisti(e);
     if (sonraki) {
       goster(sonraki);
@@ -115,6 +139,16 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     } else {
       mesaj.textContent = 'Bu eserin başka görseli yok; pekiştirmede gösterilmeyecek.';
     }
+  }
+
+  // İ5: menüden bir neden seçildi. "Kötü görsel" bilinen akışı kullanır; diğerlerinde eser pekiştirmeden çıkar
+  function nedenSec(neden) {
+    menu.hidden = true;
+    daha.setAttribute('aria-expanded', 'false');
+    if (neden === 'Kötü görsel') return kotuGorsel();
+    bildir(eserler[sira], neden, secilenGorsel(eserler[sira], kotuler));
+    if (degisti) degisti(eserler[sira]);
+    mesaj.textContent = 'Bildirildi: bu eser artık pekiştirmede çıkmayacak.';
   }
 
   function git(fark) {
@@ -128,7 +162,14 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     goster();
   }
 
+  // T2: eser notları açılıştan sonra yüklenir; görüntüleyici daha önce açıldıysa not gelince başlık yazısı yenilenir
+  const notlarGeldi = () => {
+    if (!gizli && notu) goster();
+  };
+  window.addEventListener('atlas-notlar', notlarGeldi);
+
   function kapat() {
+    window.removeEventListener('atlas-notlar', notlarGeldi);
     document.removeEventListener('keydown', tus);
     document.documentElement.classList.remove('gor-acik');
     kok.remove();
@@ -149,6 +190,23 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     if (ev.target.closest('[data-gor-konu]')) kapat();
   });
   kok.querySelector('.gor-kotu').addEventListener('click', kotuGorsel);
+  if (isaret)
+    isaret.addEventListener('click', () => {
+      const e = eserler[sira];
+      const simdi = koleksiyon.degistir(e);
+      isaretiGuncelle();
+      mesaj.textContent = simdi ? 'Koleksiyonuna eklendi.' : 'Koleksiyonundan çıkarıldı.';
+    });
+  if (daha) {
+    daha.addEventListener('click', () => {
+      menu.hidden = !menu.hidden;
+      daha.setAttribute('aria-expanded', String(!menu.hidden));
+    });
+    menu.addEventListener('click', (ev) => {
+      const b = ev.target.closest('[data-gor-neden]');
+      if (b) nedenSec(b.dataset.gorNeden);
+    });
+  }
   const onceki = kok.querySelector('.gor-onceki');
   const sonraki = kok.querySelector('.gor-sonraki');
   if (onceki) onceki.addEventListener('click', () => git(-1));

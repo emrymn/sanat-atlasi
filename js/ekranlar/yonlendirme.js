@@ -7,6 +7,7 @@ import { ilerlemeSayfasi } from './ilerleme.js';
 import { ayarlarSayfasi } from './ayarlar.js';
 import { aramaSayfasi } from './arama.js';
 import { zamanSayfasi } from './zaman.js';
+import { koleksiyonSayfasi } from './koleksiyon.js';
 import { akimKarsilastirSayfasi } from './akim.js';
 
 // ---------- yönlendirme ----------
@@ -33,6 +34,7 @@ const rotalar = [
   [/^#\/pekistir\/devam$/, () => devamEt(), null],
   [/^#\/ilerleme$/, () => ilerlemeSayfasi(), 'ilerleme'],
   [/^#\/ayarlar$/, ayarlarSayfasi, 'ilerleme'],
+  [/^#\/koleksiyon$/, koleksiyonSayfasi, 'ilerleme'],
   [/^#\/gunun$/, () => gununSayfasi(null), 'bugun'],
   [/^#\/gunun\/(.+)$/, (id) => gununSayfasi(id), 'bugun'],
 ];
