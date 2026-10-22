@@ -85,3 +85,9 @@ test('Bugün: sığmayan duvar etiketi dokununca tamamen açılır; mozaik sayfa
   });
   expect(fark).toBeLessThan(2);
 });
+
+test('V2: elle yazılmış biyografi (Guido Reni) kaynak notuyla görünür', async ({ page }) => {
+  await page.goto('./#/gunun/guido-reni');
+  await expect(page.locator('[data-test="biyografi"]')).toContainText('Bologna');
+  await expect(page.getByText('(bilgilerinden Claude özeti)')).toBeVisible();
+});

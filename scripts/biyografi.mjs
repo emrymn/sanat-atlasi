@@ -94,7 +94,7 @@ for (const { id, qid } of kimlikler) {
         continue;
       }
     }
-    if (mevcut.sanatcilar[id] && mevcut.sanatcilar[id].dil === 'en→tr') {
+    if (mevcut.sanatcilar[id] && ['en→tr', 'claude'].includes(mevcut.sanatcilar[id].dil)) {
       sonuc.sanatcilar[id] = mevcut.sanatcilar[id];
       console.log(id, 'en→tr (korundu)');
       continue;
