@@ -615,33 +615,32 @@ async function gununKartGorseli(s) {
   );
 }
 
-// Sahnenin altı tablonun devamı gibi: resmin paletinden renk alanları (Rothko'vari yumuşak lekeler).
-// Renkler zeminle karıştırılıp koyulaştırılır, üstündeki yazı okunur kalsın.
+// Sahnenin altı tablonun devamı gibi: resmin paletinden keskin kenarlı bloklar (Mondrian'vari mozaik).
+// Her satırda iki blok; bölünme yeri iki rengin resimdeki paylarının oranı. Renkler zeminle karıştırılır, yazı okunur kalsın.
+const MOZAIK_SATIRLARI = [22, 30, 26, 22]; // yüzde yükseklik
 function paletZemini(p) {
   const kutu = ekran.querySelector('[data-tablo-devami]');
   if (!kutu || !p || !p.length) return;
   const zemin = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim() || '#0b0a0b';
-  const koyu = zemin && hsl(zemin)[2] < 0.5;
-  // zemin: baskın renk; lekeler: en doygun renkler (paletin canlı tarafı görünsün)
-  const ayarla = (r, pay) => {
+  const koyu = hsl(zemin)[2] < 0.5;
+  const ayarla = (r) => {
     const [h, sa, l] = hsl(r);
-    // koyu temada açıklık %22–40 arası, açık temada en az %78
-    const ayarli = hsldenHex(h, Math.min(sa, 0.7), koyu ? Math.max(0.22, Math.min(l, 0.4)) : Math.max(l, 0.78));
-    return karistir(ayarli, zemin, pay);
+    // koyu temada açıklık %18–38 arası, açık temada en az %80
+    return karistir(hsldenHex(h, Math.min(sa, 0.65), koyu ? Math.max(0.18, Math.min(l, 0.38)) : Math.max(l, 0.8)), zemin, 0.85);
   };
-  const doygun = [...p].sort((x, y) => hsl(y.renk)[1] * (0.4 + y.pay) - hsl(x.renk)[1] * (0.4 + x.pay));
-  const sec = (i) => (doygun[i] || doygun[0]).renk;
-  const a = ayarla(p[0].renk, 0.7);
-  const [b, c, e] = [ayarla(sec(0), 0.95), ayarla(sec(1), 0.9), ayarla(sec(2), 0.85)];
-  kutu.style.setProperty(
-    '--palet-zemin',
-    [
-      `radial-gradient(75% 30% at 10% 20%, ${b}, transparent 72%)`,
-      `radial-gradient(70% 28% at 92% 46%, ${c}, transparent 72%)`,
-      `radial-gradient(85% 30% at 28% 76%, ${e}, transparent 72%)`,
-      `linear-gradient(180deg, ${a} 0%, ${a} 35%, ${karistir(a, zemin, 0.6)} 70%, ${zemin} 100%)`,
-    ].join(', '),
-  );
+  const n = p.length;
+  let y = 0;
+  const katmanlar = MOZAIK_SATIRLARI.map((boy, i) => {
+    const a = p[(2 * i + 1) % n];
+    const b = p[(2 * i + (i % 2 ? 0 : 2)) % n];
+    const bolum = Math.round(100 * Math.min(0.75, Math.max(0.25, a.pay / (a.pay + b.pay || 1))));
+    // background-position yüzdesi kaydırma değil hizalamadır: üst kenarı y%'ye koymak için y / (100 - boy)
+    const konum = boy >= 100 ? 0 : (100 * y) / (100 - boy);
+    const k = `linear-gradient(90deg, ${ayarla(a.renk)} 0 ${bolum}%, ${ayarla(b.renk)} ${bolum}% 100%) 0 ${konum.toFixed(2)}% / 100% ${boy + 0.2}% no-repeat`;
+    y += boy;
+    return k;
+  });
+  kutu.style.setProperty('--palet-zemin', katmanlar.join(', '));
 }
 
 // Sahnede ilk duvar etiketi: biyografinin ilk cümleleri (veri gelince doldurulur, yoksa etiket kalkar)
