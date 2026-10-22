@@ -107,9 +107,9 @@ test('İ5: cevap yaprağında ⋯ → "Heykel/mimari" bildirimi', async ({ page 
   await expect(page.locator('[data-test="sonuc"]')).toBeVisible();
   const ac = page.locator('[data-bildir-ac]');
   await expect(ac).toBeVisible();
-  const kutu = await ac.boundingBox();
-  expect(kutu.width).toBeGreaterThanOrEqual(44);
-  expect(kutu.height).toBeGreaterThanOrEqual(44);
+  // yaprak açılırken hafifçe ölçeklenir; giriş hareketi bitince ölçülür
+  await expect.poll(async () => (await ac.boundingBox()).width).toBeGreaterThanOrEqual(44);
+  await expect.poll(async () => (await ac.boundingBox()).height).toBeGreaterThanOrEqual(44);
   await ac.click();
   await page.locator('[data-test="bildir-secenekler"]').getByRole('button', { name: 'Heykel/mimari' }).click();
   await expect(page.locator('[data-test="bildir-mesaj"]')).toContainText('pekiştirmede çıkmayacak');
@@ -248,7 +248,7 @@ test('T4: sürüm değişince Bugün’de bir kez “Yenilikler”; Ayarlar’da
   await expect(not).toBeVisible();
   await expect(not).toContainText('1.26 ·');
   await expect(not).toContainText('Koleksiyonum');
-  expect((await ilerleme(page)).sonSurum).toBe('1.26.0');
+  expect((await ilerleme(page)).sonSurum).toBe('1.26.1');
   // aynı oturumda ana sayfaya dönünce durur; kapatılınca gider; sonraki açılışta yok
   await not.getByRole('button', { name: 'Yenilikler notunu kapat' }).click();
   await expect(not).toHaveCount(0);
@@ -263,7 +263,7 @@ test('T4: yepyeni kullanıcıya Yenilikler notu gösterilmez', async ({ page }) 
   await page.goto('./');
   await hazir(page);
   await expect(page.locator('[data-test="yenilik-not"]')).toHaveCount(0);
-  expect((await ilerleme(page)).sonSurum).toBe('1.26.0');
+  expect((await ilerleme(page)).sonSurum).toBe('1.26.1');
 });
 
 test('T2: eser notları ilk ekrandan sonra yüklenir; önce açılan görüntüleyici not gelince yenilenir', async ({ page, context }) => {

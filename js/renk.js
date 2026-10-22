@@ -142,10 +142,21 @@ export function doluButon(renk) {
   return { zemin: KOYU_YAZI, yazi: BEYAZ_YAZI };
 }
 
+// Vurgu yağlı boya tonunda kalır, parlak ya da neon renk çıkmaz (Emre: "yağlı boya renkleri olsun").
+// Sarılar okra kayar; bütün renklerin doygunluğu ve açıklığı toprak boyalarının aralığına indirilir.
+export function yumusat(renk) {
+  let [h, s, l] = hsl(renk);
+  if (h >= 45 && h < 75) h = 36 + (h - 45) * 0.15;
+  s = Math.min(s, h >= 75 && h < 170 ? 0.28 : 0.4);
+  l = Math.min(Math.max(l, 0.3), 0.46);
+  return hsldenHex(h, s, l);
+}
+
 // Paletten CSS değişkenleri; zemin: temanın --bg rengi
 export function renkTemasi(palet, zemin) {
-  const ana = vurguSec(palet);
-  if (!ana) return null;
+  const secilen = vurguSec(palet);
+  if (!secilen) return null;
+  const ana = yumusat(secilen);
   const dolu = doluButon(ana);
   const acik = acikHal(ana, zemin);
   const acikYazi = kontrast(acik, KOYU_YAZI) >= kontrast(acik, BEYAZ_YAZI) ? KOYU_YAZI : BEYAZ_YAZI;

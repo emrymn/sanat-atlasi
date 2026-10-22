@@ -69,3 +69,21 @@ test('renk teması: bütün değişkenler ve kontrast kuralları', () => {
   assert.match(t.vurguRgb, /^\d+, \d+, \d+$/);
   assert.equal(renkTemasi([], GECE), null);
 });
+
+test('vurgu yumuşatma: yağlı boya tonları; neon sarı okra döner, hiçbir renk parlak kalmaz', async () => {
+  const { yumusat } = await import('../../js/renk.js');
+  for (const neon of ['#d0c766', '#e6e639', '#c8d040']) {
+    const [h] = hsl(yumusat(neon));
+    assert.ok(h >= 34 && h <= 42, `${neon} → ton ${h}`);
+  }
+  for (const c of ['#d0c766', '#40ff60', '#ff2050', '#20a0ff', '#b8452f', '#f0f0a0']) {
+    const [, s, l] = hsl(yumusat(c));
+    assert.ok(s <= 0.41, `${c} → doygunluk ${s}`);
+    assert.ok(l >= 0.29 && l <= 0.47, `${c} → açıklık ${l}`);
+  }
+  assert.ok(hsl(yumusat('#40ff60'))[1] <= 0.29);
+  // Hogarth (Bugün) paletinden gelen sarı: dolu düğme okra tonunda, kontrast kuralı korunur
+  const t = renkTemasi([{ renk: '#d0c766', pay: 1 }], GECE);
+  assert.ok(hsl(t.vurgu)[1] <= 0.41, t.vurgu);
+  assert.ok(kontrast(t.vurgu, t.vurguYazi) >= 4.5);
+});
