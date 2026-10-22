@@ -455,26 +455,54 @@ function turKarti(ist, g, sayi) {
     </a>`;
 }
 
-// Ana sayfanın altı: kaydırdıkça günün sanatçısı anlatılmaya devam eder
+// Bugün sahnesi: tablo ekranı kaplar ve kaydırırken yerinde kalır; kaydırdıkça tabloya yaklaşılır
+// (büyür, kararır) ve üstünden müze duvar etiketleri geçer. Pekiştir düğmesi sahne boyunca başparmağın altında durur.
+function sahneHtml(gs, { tekrar, sayi, vade, devam }) {
+  const not = gs.kurs_notu || gs.anlatim;
+  const tn = taninma(gs);
+  const panel = (baslik, metin, italik) =>
+    `<div class="sahne-panel"><div class="duvar-etiketi">${etiket(baslik, { vurgu: true })}<p class="okuma${italik ? ' italik' : ''}">${kacis(metin)}</p></div></div>`;
+  return `<section class="sahne${devam ? ' devam-alti' : ''}" data-test="gunun-kart">
+      <div class="bugun-kahraman sahne-yapiskan" data-gunun-gorsel>
+        <div class="bugun-ust"><span class="etiket vurgu">Günün sanatçısı</span><span class="hap" data-test="tekrar">${tekrar}</span></div>
+        <a class="sahne-isim isim-blok" href="#/gunun">${isimHtml(gs)}<p class="meta">${kunye(gs, { bag: false })}</p></a>
+        <span class="kaydir-ipucu" aria-hidden="true">${ikon('asagi', 22, 1.4)}</span>
+      </div>
+      <div class="sahne-paneller">
+        ${tn ? panel('Nasıl tanırım?', tn, false) : ''}
+        ${not ? panel('Notlarımdan', not, true) : ''}
+      </div>
+      <a class="sahne-dugme" href="#/pekistir/karisik" data-test="pekistir">
+        <span>Pekiştir</span><span class="sayi" aria-label="${sayi} ${vade ? 'tekrar' : 'kart'}">${sayi}</span>${ikon('ileri', 18, 1.6)}
+      </a>
+    </section>`;
+}
+
+// Sahnenin altı: eserleri (Tümünü göster), resmin renkleri, hayatı ve dönemi
 function gununHikayesi(gs) {
   return `<section class="hikaye" data-test="hikaye">
       <div class="susleme" aria-hidden="true"><span></span><i></i><span></span></div>
-      <p class="hikaye-baslik">Günün sanatçısını tanı</p>
-      <section class="bolum">${etiket('Eserleri')}<div class="eserler" data-ana-galeri><p class="ikincil kucuk">Eserler yükleniyor…</p></div></section>
-      ${notBolumleri(gs)}
+      <div data-ana-galeri-kutu>${etiket('Eserleri')}<div class="eserler" data-ana-galeri><p class="ikincil kucuk">Eserler yükleniyor…</p></div></div>
       <section class="bolum">${etiket('Resmin renkleri')}<div data-palet>${paletHtml(null)}</div></section>
       <a class="dugme ince" href="#/gunun">Hayatı ve dönemi ${ikon('ileri', 18, 1.5)}</a>
     </section>`;
 }
 
+// Yatay eser şeridinin üstü: başlık ve "Tümünü göster" (şeridin sonuna kadar kaydırmak gerekmesin)
+function seritUst(s, n, baslik = 'Eserleri') {
+  return `<div class="serit-ust">${etiket(`${baslik} · ${n}`)}<a class="tumunu-goster" href="#/sanatci/${encodeURIComponent(s.id)}/eserler" data-test="tumunu-goster">Tümünü göster ${ikon('ileri', 15, 1.7)}</a></div>`;
+}
+
 async function anaGaleriDoldur(gs) {
-  const eserler = bilinirlikSirasi(await sanatciEserleri(gs)).slice(0, 8);
+  const eserler = bilinirlikSirasi(await sanatciEserleri(gs));
   const galeri = ekran.querySelector('[data-ana-galeri]');
   if (!galeri) return;
+  const kutu = galeri.parentElement;
   if (!eserler.length) {
-    galeri.closest('.bolum').remove();
+    kutu.remove();
     return;
   }
+  kutu.querySelector('.etiket').outerHTML = seritUst(gs, eserler.length);
   galeri.innerHTML = eserSeridi(eserler, 'galeri-eser', 'data-ana-eser');
   galeri.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-ana-eser]');
@@ -497,20 +525,10 @@ function anaSayfa() {
     ${devam}
     ${
       gs
-        ? `<a class="gunun-kart${devam ? ' devam-alti' : ''}" href="#/gunun" data-test="gunun-kart">
-      <div class="bugun-kahraman" data-gunun-gorsel>
-        <div class="bugun-ust"><span class="etiket vurgu">Günün sanatçısı</span><span class="hap" data-test="tekrar">${tekrar}</span></div>
-      </div>
-      <div class="isim-blok">${isimHtml(gs)}<p class="meta">${kunye(gs, { bag: false })}</p></div>
-    </a>`
-        : `<header class="ust"><div class="ust-yazi">${etiket('Bugün', { vurgu: true })}<span class="hap" data-test="tekrar">${tekrar}</span></div></header>`
+        ? sahneHtml(gs, { tekrar, sayi, vade: ist.vade, devam: !!devam })
+        : `<header class="ust"><div class="ust-yazi">${etiket('Bugün', { vurgu: true })}<span class="hap" data-test="tekrar">${tekrar}</span></div></header>${turKarti(ist, g, sayi)}`
     }
-    ${turKarti(ist, g, sayi)}
-    <dl class="sayilar">
-      <div><dt>açık sanatçı</dt><dd data-test="acik-sayi">${ist.acik}</dd></div>
-      <div><dt>doğru</dt><dd>${ist.oran === null ? '–' : `%${ist.oran}`}</dd></div>
-      <div><dt>bugün</dt><dd>${g.kart}<small> / ${d.ilerleme.ayarlar.gunlukKart}</small></dd></div>
-    </dl>
+    ${gs ? gununHikayesi(gs) : ''}
     ${
       son.length
         ? `<div class="son-satir">${etiket('Son')}<div class="yuvarlaklar">${son
@@ -524,8 +542,7 @@ function anaSayfa() {
           )}</span>${son.length > 2 ? `<span class="ek">+${son.length - 2}</span>` : ''}</span></div>`
         : ''
     }
-    ${gs ? gununHikayesi(gs) : ''}
-    <p class="sakin"><a href="#/ayarlar">${ikon('ayarlar', 16, 1.5)} Ayarlar</a></p>`);
+    <p class="sakin"><span data-test="acik-sayi">${ist.acik}</span> açık sanatçı · ${ist.oran === null ? 'henüz cevap yok' : `%${ist.oran} doğru`} · bugün ${g.kart} / ${d.ilerleme.ayarlar.gunlukKart} kart · <a href="#/ayarlar">Ayarlar</a></p>`);
   if (gs) {
     gununKartGorseli(gs);
     anaGaleriDoldur(gs);
@@ -686,6 +703,7 @@ async function gununSayfasi(id) {
     galeri.innerHTML = '<p class="ikincil kucuk">Bu sanatçı için doğrulanmış görsel bulunamadı.</p>';
     return;
   }
+  galeri.insertAdjacentHTML('beforebegin', seritUst(s, eserler.length));
   galeri.innerHTML = eserSeridi(eserler, 'galeri-eser', 'data-galeri-eser');
   galeri.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-galeri-eser]');
@@ -995,7 +1013,8 @@ async function sanatciSayfasi(id) {
     kutu.innerHTML = '<p class="ikincil kucuk">Bu sanatçı için doğrulanmış görsel bulunamadı.</p>';
     return;
   }
-  // galerinin sonunda "Tümü (N)": bütün eserlerin ızgara görünümü
+  // üstte "Tümünü göster", galerinin sonunda "Tümü (N)": bütün eserlerin ızgara görünümü
+  kutu.insertAdjacentHTML('beforebegin', seritUst(s, eserler.length));
   kutu.innerHTML = `${eserSeridi(eserler, 'eser', 'data-eser')}<a class="tumu" href="#/sanatci/${encodeURIComponent(s.id)}/eserler" data-test="tumu">Tümü (${eserler.length})</a>`;
   kutu.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-eser]');

@@ -1848,38 +1848,146 @@ html.sekmesiz .sekmeler {
   font-size: 12.5px;
   color: var(--ink-2);
 }
-/* üç küçük sayı: müze etiketi gibi, ince çizgilerle ayrılmış */
-.sayilar {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin: 18px 0 0;
+/* ---------- Bugün sahnesi ---------- */
+.sahne {
+  position: relative;
 }
-.sayilar > div {
+.sahne-yapiskan.bugun-kahraman {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  z-index: 0;
+}
+.sahne-yapiskan > img {
+  object-position: 50% 40%;
+}
+.sahne.devam-alti .sahne-yapiskan {
+  margin-top: 0;
+}
+.sahne-yapiskan.bugun-kahraman::after {
+  background: linear-gradient(180deg, rgba(var(--bg-rgb), 0.7) 0%, rgba(var(--bg-rgb), 0) 20%, rgba(var(--bg-rgb), 0) 45%, rgba(var(--bg-rgb), 0.92) 88%);
+}
+.sahne-isim {
+  position: absolute;
+  z-index: 2;
+  left: calc(env(safe-area-inset-left) + var(--yan));
+  right: calc(env(safe-area-inset-right) + var(--yan));
+  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 92px);
+  color: inherit;
+  text-decoration: none;
+}
+.sahne-isim:hover {
+  color: inherit;
+}
+.kaydir-ipucu {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  margin-left: -11px;
+  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 62px);
+  color: var(--ink-2);
+  line-height: 0;
+}
+.sahne-paneller {
+  position: relative;
+  z-index: 1;
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  gap: 2px;
-  padding: 4px 0;
+  flex-direction: column;
+  gap: 30svh;
+  padding: 20svh 0 30svh;
 }
-.sayilar > div + div {
-  border-left: 1px solid var(--border);
+.sahne-panel {
+  display: flex;
+  justify-content: center;
 }
-.sayilar dt {
-  font: 500 10.5px/1.2 var(--sans);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-3);
+.duvar-etiketi {
+  max-width: 440px;
+  padding: 22px 22px 24px;
+  border-radius: 4px;
+  background: rgba(var(--bg-rgb), 0.72);
+  border: 1px solid rgba(var(--vurgu-rgb), 0.3);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.sayilar dd {
+.duvar-etiketi .okuma {
   margin: 0;
-  font: 400 26px/1.1 var(--serif);
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-.sayilar dd small {
-  font-size: 15px;
-  color: var(--ink-3);
+/* Pekiştir: sahne boyunca sekme çubuğunun hemen üstünde duran cam hap */
+.sahne-dugme {
+  position: sticky;
+  z-index: 3;
+  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  min-height: 52px;
+  margin: 0 auto 8px;
+  padding: 0 18px 0 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--vurgu-rgb), 0.6);
+  background: rgba(var(--bg-rgb), 0.55);
+  -webkit-backdrop-filter: blur(16px) saturate(1.3);
+  backdrop-filter: blur(16px) saturate(1.3);
+  box-shadow:
+    0 14px 30px -12px rgba(0, 0, 0, 0.7),
+    0 0 24px -6px rgba(var(--vurgu-rgb), 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  color: var(--ink);
+  font: italic 400 21px/1 var(--serif);
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+.sahne-dugme:hover {
+  color: var(--ink);
+}
+.sahne-dugme:active {
+  transform: scale(0.97);
+}
+.sahne-dugme .sayi {
+  font: 600 13px/1 var(--sans);
+  font-style: normal;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: var(--vurgu-acik);
+  color: var(--vurgu-acik-yazi);
+}
+.sahne-dugme .ikon {
+  color: var(--vurgu-acik);
+}
+/* Eser şeridinin üstü: başlık + Tümünü göster */
+.serit-ust {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+}
+.serit-ust + .eserler {
+  margin-top: 8px;
+}
+.tumunu-goster {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  font: 500 14px/1 var(--sans);
+  color: var(--vurgu-acik);
+  text-decoration: none;
+  white-space: nowrap;
 }
 .hikaye {
-  margin-top: 40px;
+  margin-top: 12px;
 }
 .susleme {
   display: flex;
@@ -2126,31 +2234,66 @@ main[data-hareket='giris'] > :nth-child(n + 6) {
   }
 }
 
-/* Bugün: kaydırınca resim yavaşça kayar ve kararır, isim yukarı süzülür */
+/* Bugün sahnesi: kaydırdıkça tabloya yaklaşılır (büyür, kararır); isim ve ipucu silinir */
 @supports (animation-timeline: scroll()) {
-  .bugun-kahraman > img {
+  .sahne-yapiskan > img {
     animation:
       yakinlas 14s cubic-bezier(0.2, 0.6, 0.3, 1) both,
-      kahraman-kay linear both;
+      yaklas linear both;
     animation-timeline: auto, scroll(root);
-    animation-range: normal, 0 520px;
+    animation-range: normal, 0 180svh;
   }
-  .gunun-kart .isim-blok {
-    animation: isim-suz linear both;
+  .sahne-isim {
+    animation: isim-sil linear both;
     animation-timeline: scroll(root);
-    animation-range: 0 520px;
+    animation-range: 0 45svh;
+  }
+  .kaydir-ipucu {
+    animation:
+      ipucu-zipla 2.4s ease-in-out infinite,
+      isim-sil linear both;
+    animation-timeline: auto, scroll(root);
+    animation-range: normal, 0 12svh;
+  }
+  /* duvar etiketi alttan belirir, ortada netleşir, yukarıda silinir */
+  .duvar-etiketi {
+    animation: etiket-gec linear both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
   }
 }
-@keyframes kahraman-kay {
+@keyframes yaklas {
   to {
-    translate: 0 160px;
-    filter: brightness(0.45) saturate(0.8);
+    scale: 1.35;
+    filter: brightness(0.38) saturate(0.85);
   }
 }
-@keyframes isim-suz {
+@keyframes isim-sil {
   to {
-    translate: 0 -40px;
-    opacity: 0.35;
+    translate: 0 -48px;
+    opacity: 0;
+  }
+}
+@keyframes ipucu-zipla {
+  50% {
+    transform: translateY(6px);
+  }
+}
+@keyframes etiket-gec {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.96);
+    filter: blur(6px);
+  }
+  30%,
+  70% {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.98);
   }
 }
 
