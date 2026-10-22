@@ -214,6 +214,8 @@ p {
 #uygulama {
   position: relative;
   isolation: isolate;
+  /* yandan kayan geçişler yatay kaydırma açmasın (clip, sticky'yi bozmaz) */
+  overflow-x: clip;
   max-width: 620px;
   margin: 0 auto;
   min-height: 100vh;
