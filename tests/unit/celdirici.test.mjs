@@ -93,10 +93,10 @@ test('akım sorusu: doğru + komşular, sonra kronolojik olarak yakın olanlar',
   assert.equal(sec.length, 4);
   assert.ok(sec.includes('Romanesk'));
   assert.ok(sec.includes('Gotik')); // tek komşu
-  // kalan ikisi en yakın sıradakiler: Antik (0) ve Proto-Rönesans (3)
-  assert.deepEqual(new Set(sec), new Set(['Romanesk', 'Gotik', 'Antik Yunan ve Roma', 'Proto-Rönesans']));
+  // kalan ikisi en yakın sıradakiler: Antik (0) ve Uluslararası Gotik (3)
+  assert.deepEqual(new Set(sec), new Set(['Romanesk', 'Gotik', 'Antik Yunan ve Roma', 'Uluslararası Gotik']));
   const g = akimSecenekleri('Gotik', akimlar, rastgeleYap(2));
-  assert.deepEqual(new Set(g), new Set(['Gotik', 'Proto-Rönesans', 'Uluslararası Gotik', 'Romanesk']));
+  assert.deepEqual(new Set(g), new Set(['Gotik', 'Erken Rönesans', 'Uluslararası Gotik', 'Romanesk']));
   for (const a of akimlar) {
     const x = akimSecenekleri(a.ad, akimlar, rastgeleYap(a.sira));
     assert.equal(new Set(x).size, 4, a.ad);

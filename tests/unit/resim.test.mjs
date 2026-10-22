@@ -51,7 +51,7 @@ test('resim sanatçısı kalmayan akımlar gizlenir', () => {
   const gor = gorunurAkimlar(akimlar, gorunurSanatcilar(sanatcilar, turler, onbellek)).map((a) => a.ad);
   assert.ok(!gor.includes('Antik Yunan ve Roma'));
   assert.ok(!gor.includes('Romanesk'));
-  assert.ok(gor.includes('Proto-Rönesans'));
+  assert.ok(gor.includes('Gotik'));
   assert.deepEqual(
     gor,
     akimlar.filter((a) => gor.includes(a.ad)).map((a) => a.ad),

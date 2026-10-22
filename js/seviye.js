@@ -1,6 +1,7 @@
-// Seviyeler: her sanatçı Kolay'dan başlar; o seviyedeki son cevaplarında %80 başarı olmadan bir üst seviyeye geçmez.
-// Seviye sorunun zorluğunu belirler: hangi eser sorulur (js/eserler.js zorlukDilimi) ve yanlış şıklar ne kadar
-// benzer (js/celdirici.js). Yalnızca sanatçı sorusu sayılır. Bkz. KARARLAR.md "İş 12".
+// Seviyeler dönem (akım) başına tutulur: her dönem Kolay'dan başlar; o dönemin o seviyedeki son cevaplarında
+// %80 başarı olmadan bir üst seviyeye geçmez. Dönemin seviyesi o dönemin sanatçılarına sorulan her sorunun
+// zorluğunu belirler: hangi eser sorulur (js/eserler.js zorlukDilimi) ve yanlış şıklar ne kadar benzer
+// (js/celdirici.js). Yalnızca sanatçı sorusu sayılır. Anahtar: akım adı. Bkz. KARARLAR.md "İş 12".
 
 export const SEVIYELER = [
   { no: 0, anahtar: 'kolay', ad: 'Kolay', aciklama: 'Tanınmış, tipik eserler; şıklar uzak dönemlerden' },
@@ -13,9 +14,9 @@ export const EN_AZ = 5; // geçiş için o seviyede en az bu kadar cevap
 
 export const seviyeBul = (anahtarYaNo) => SEVIYELER.find((x) => x.anahtar === anahtarYaNo || x.no === anahtarYaNo) || SEVIYELER[0];
 
-// { s: 0–2, son: [1, 0, …] (bu seviyedeki son cevaplar, en yeni sonda) }
-export function seviyeKaydi(ilerleme, id) {
-  const k = ilerleme && ilerleme.seviyeler && ilerleme.seviyeler[id];
+// { s: 0–2, son: [1, 0, …] (bu seviyedeki son cevaplar, en yeni sonda) }; akim: akım adı
+export function seviyeKaydi(ilerleme, akim) {
+  const k = ilerleme && ilerleme.seviyeler && Object.hasOwn(ilerleme.seviyeler, akim) && ilerleme.seviyeler[akim];
   return k ? { s: k.s, son: k.son.slice() } : { s: 0, son: [] };
 }
 
@@ -35,12 +36,12 @@ export function seviyeCevapla(kayit, dogru) {
   return { kayit: { s: kayit.s, son }, gecti: false };
 }
 
-// Cevabı ilerleme nesnesine işler; { once, sonra, gecti } döndürür
-export function seviyeIsle(ilerleme, id, dogru) {
-  const once = seviyeKaydi(ilerleme, id);
+// Cevabı dönemin kaydına işler; { once, sonra, gecti } döndürür
+export function seviyeIsle(ilerleme, akim, dogru) {
+  const once = seviyeKaydi(ilerleme, akim);
   const { kayit, gecti } = seviyeCevapla(once, dogru);
   ilerleme.seviyeler = ilerleme.seviyeler || {};
-  ilerleme.seviyeler[id] = kayit;
+  ilerleme.seviyeler[akim] = kayit;
   return { once: once.s, sonra: kayit.s, gecti };
 }
 
@@ -61,15 +62,13 @@ export function eserSeviyesi(s) {
   return s === 0 ? 0 : s === 1 ? 2 : 5;
 }
 
-// Seviyelere göre sayım: [{ ...seviye, sayi, usta }]
-export function seviyeSayilari(ilerleme, idler) {
-  const sonuc = SEVIYELER.map((x) => ({ ...x, sayi: 0, usta: 0 }));
-  for (const id of idler) {
-    const k = seviyeKaydi(ilerleme, id);
-    sonuc[k.s].sayi++;
-    if (ustaMi(k)) sonuc[k.s].usta++;
-  }
-  return sonuc;
+// Kısa durum (menü ve rozetler): "Kolay · 3/5", "Orta · 4/7 doğru", "Zor · usta"
+export function seviyeKisa(k) {
+  const sv = seviyeBul(k.s);
+  if (ustaMi(k)) return `${sv.ad} · usta`;
+  const n = k.son.length;
+  const d = k.son.filter(Boolean).length;
+  return n < EN_AZ ? `${sv.ad} · ${n}/${EN_AZ}` : `${sv.ad} · ${d}/${n} doğru`;
 }
 
 // Yedekten / depodan gelen kaydı doğrular; geçersiz girdiler atılır
