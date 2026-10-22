@@ -12,7 +12,7 @@ import { ilerlemeYukle, ilerlemeKaydet, gunlukGuncelle, yedekMetni, yedekCoz, ye
 import { goruntuleyiciAc, kaynakYazisi } from './goruntuleyici.js';
 import { akimYuzyillari, ikon } from './tasarim.js';
 import { adParcala, bilinenAd } from './adlar.js';
-import { paletGetir, renkTemasi } from './renk.js';
+import { paletGetir, renkTemasi, karistir, hsl, hsldenHex } from './renk.js';
 import { idbAl, idbKoy, idbSil } from './idb.js';
 import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from './devam.js';
 import { taninmaMetni, eserNotu, notlariAl, karsilastirmaAdresi, benzerSanatcilar } from './karsilastir.js';
@@ -227,7 +227,7 @@ function ekranRengi(eser, yedekRenk, sonra = null) {
 function gununRengi() {
   const s = d.harita.get(gununId());
   if (!s) return ekranRengi(null, null);
-  return ekranRengi(sanatciEserleri(s).then(enBilinen), akimRenk(s.akim));
+  return ekranRengi(sanatciEserleri(s).then(gununEseri), akimRenk(s.akim));
 }
 
 // [data-kucuk="<sanatçı id>"] kutularına en bilinen eserin küçük görseli
@@ -602,6 +602,7 @@ async function gununKartGorseli(s) {
   ekranRengi(eSozu, akimRenk(s.akim), (p) => {
     const k = ekran.querySelector('[data-palet]');
     if (k) k.innerHTML = paletHtml(p);
+    paletZemini(p);
   });
   const e = await eSozu;
   const kutu = ekran.querySelector('[data-gunun-gorsel]');
@@ -612,9 +613,35 @@ async function gununKartGorseli(s) {
     'afterbegin',
     `<img decoding="async" alt="${kacis(`${s.ad}, ${eserBaslik(e)}`)}" src="${kacis(url)}" data-yedek="${kacis(gorselYedek(g))}">`,
   );
-  // sahnenin altı tablonun devamı gibi: aynı resim ters çevrilip bulanıklaştırılır, renkleri aşağı doğru akar
-  const devami = ekran.querySelector('[data-tablo-devami]');
-  if (devami) devami.style.setProperty('--tablo', `url("${new URL(url, location.href).href.replace(/"/g, '%22')}")`);
+}
+
+// Sahnenin altı tablonun devamı gibi: resmin paletinden renk alanları (Rothko'vari yumuşak lekeler).
+// Renkler zeminle karıştırılıp koyulaştırılır, üstündeki yazı okunur kalsın.
+function paletZemini(p) {
+  const kutu = ekran.querySelector('[data-tablo-devami]');
+  if (!kutu || !p || !p.length) return;
+  const zemin = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim() || '#0b0a0b';
+  const koyu = zemin && hsl(zemin)[2] < 0.5;
+  // zemin: baskın renk; lekeler: en doygun renkler (paletin canlı tarafı görünsün)
+  const ayarla = (r, pay) => {
+    const [h, sa, l] = hsl(r);
+    // koyu temada açıklık %22–40 arası, açık temada en az %78
+    const ayarli = hsldenHex(h, Math.min(sa, 0.7), koyu ? Math.max(0.22, Math.min(l, 0.4)) : Math.max(l, 0.78));
+    return karistir(ayarli, zemin, pay);
+  };
+  const doygun = [...p].sort((x, y) => hsl(y.renk)[1] * (0.4 + y.pay) - hsl(x.renk)[1] * (0.4 + x.pay));
+  const sec = (i) => (doygun[i] || doygun[0]).renk;
+  const a = ayarla(p[0].renk, 0.7);
+  const [b, c, e] = [ayarla(sec(0), 0.95), ayarla(sec(1), 0.9), ayarla(sec(2), 0.85)];
+  kutu.style.setProperty(
+    '--palet-zemin',
+    [
+      `radial-gradient(75% 30% at 10% 20%, ${b}, transparent 72%)`,
+      `radial-gradient(70% 28% at 92% 46%, ${c}, transparent 72%)`,
+      `radial-gradient(85% 30% at 28% 76%, ${e}, transparent 72%)`,
+      `linear-gradient(180deg, ${a} 0%, ${a} 35%, ${karistir(a, zemin, 0.6)} 70%, ${zemin} 100%)`,
+    ].join(', '),
+  );
 }
 
 // Sahnede ilk duvar etiketi: biyografinin ilk cümleleri (veri gelince doldurulur, yoksa etiket kalkar)

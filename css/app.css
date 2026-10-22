@@ -2000,7 +2000,7 @@ html.sekmesiz .sekmeler {
   margin-top: 0;
   padding-top: 12px;
 }
-/* tablonun devamı: aynı resim dikeyde aynalanır, bulanıklaşır ve aşağıda zemine karışır */
+/* tablonun devamı: resmin paletinden yumuşak renk alanları (js: paletZemini); üstte sahneye erir, altta zemine solar */
 .hikaye::before {
   content: '';
   position: absolute;
@@ -2009,12 +2009,10 @@ html.sekmesiz .sekmeler {
   bottom: -40px;
   left: calc(-1 * (env(safe-area-inset-left) + var(--yan)));
   right: calc(-1 * (env(safe-area-inset-right) + var(--yan)));
-  background: var(--tablo, none) center bottom / cover no-repeat;
-  transform: scaleY(-1);
-  filter: blur(36px) brightness(0.7) saturate(1.15);
-  /* aynalandığı için yön ters: altta (görünürde üstte) yumuşak giriş, sonra aşağı doğru solma */
-  -webkit-mask-image: linear-gradient(0deg, transparent 0%, #000 22%, rgba(0, 0, 0, 0.7) 55%, transparent 100%);
-  mask-image: linear-gradient(0deg, transparent 0%, #000 22%, rgba(0, 0, 0, 0.7) 55%, transparent 100%);
+  background: var(--palet-zemin, none);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 75%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 22%, #000 75%, transparent 100%);
+  transition: opacity 0.6s ease;
   pointer-events: none;
 }
 .susleme {
