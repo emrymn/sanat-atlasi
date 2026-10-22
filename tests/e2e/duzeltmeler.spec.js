@@ -29,6 +29,7 @@ test('D1: dönem satırındaki kart sayısı turun sayacıyla aynı', async ({ p
 });
 
 test('D4: soru görseli kalan yüksekliği doldurur, seçenekler 2×2', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' }); // seçenekler sırayla kayarak gelir; konumlar hareket bitince ölçülür
   await page.goto('./#/pekistir/karisik');
   const secenekler = page.locator('[data-test="sanatci-secenekleri"] button');
   await expect(secenekler).toHaveCount(4);
