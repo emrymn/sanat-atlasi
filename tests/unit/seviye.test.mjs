@@ -54,7 +54,7 @@ test('seviyeIsle dönemin kaydına yazar; kısa durum, yedek doğrulaması', () 
   assert.equal(seviyeKisa({ s: 2, son: [1, 1, 1, 1, 1] }), 'Zor · usta');
   const geri = ilerlemeDogrula(JSON.parse(JSON.stringify({ ilerleme })));
   assert.deepEqual(geri.seviyeler, ilerleme.seviyeler, 'yedekte korunur');
-  assert.deepEqual(seviyelerDogrula({ x: { s: 7, son: [] }, y: { s: 1, son: [1, 2, 0] }, z: null }), { y: { s: 1, son: [1, 0] } });
+  assert.deepEqual(seviyelerDogrula({ x: { s: 7, son: [] }, y: { s: 1, son: [1, 2, 3, 0] }, z: null }), { y: { s: 1, son: [1, 2, 0] } }); // 2 = Bilmiyorum (Ö4)
 });
 
 test('eser zorluğu: Kolay en kolay yarı, Orta hepsi, Zor en zor yarı', () => {
@@ -126,4 +126,19 @@ test('yarım oturum: ayrı seviye kipi yok (seviye dönemin içinde)', () => {
   assert.equal(kayitGecerliMi(k, 0), false);
   assert.equal(kayitGecerliMi({ ...k, kip: 'donem', akim: 'Gotik' }, 0), true);
   assert.equal(devamOzeti({ ...k, kip: 'donem', akim: 'Gotik' }), 'Döneme göre · Gotik · 1 / 2');
+});
+
+test('Ö4: "Bilmiyorum" yanlış sayılır ama pencereye yarım ağırlıkla girer', async () => {
+  const { seviyeCevapla, oran, BILMIYORUM } = await import('../../js/seviye.js');
+  // 4 doğru + 1 yanlış = %80 → geçer; 4 doğru + 1 bilmiyorum = 4 / 4.5 ≈ %89 → geçer
+  assert.equal(oran([1, 1, 1, 1, 0]), 0.8);
+  assert.ok(Math.abs(oran([1, 1, 1, 1, BILMIYORUM]) - 4 / 4.5) < 1e-9);
+  // 3 doğru + 2 yanlış = %60 kalır; 3 doğru + 2 bilmiyorum = 3/4 = %75, yine geçmez ama yanlıştan daha az cezalı
+  assert.ok(oran([1, 1, 1, BILMIYORUM, BILMIYORUM]) > oran([1, 1, 1, 0, 0]));
+  let k = { s: 0, son: [] };
+  for (const c of [true, true, true, true]) k = seviyeCevapla(k, c).kayit;
+  const r = seviyeCevapla(k, 'bilmiyorum');
+  assert.equal(r.gecti, true);
+  const y = seviyeCevapla({ s: 0, son: [1, 1, 1] }, 'bilmiyorum');
+  assert.deepEqual(y.kayit.son, [1, 1, 1, BILMIYORUM]);
 });
