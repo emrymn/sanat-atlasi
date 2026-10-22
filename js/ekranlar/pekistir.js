@@ -14,6 +14,8 @@ import { idbAl, idbKoy, idbSil } from '../idb.js';
 import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from '../devam.js';
 import { karsilastirmaAdresi } from '../karsilastir.js';
 import { tanismaGerekirMi, tanismaEserleri, karisanEkle, KARISAN_ESIGI } from '../ogrenme.js';
+import { tersSorulurMu, tersSecenekleri } from '../ters.js';
+import { eserKonusu } from '../ikonografi.js';
 import { SEVIYELER, seviyeKaydi, seviyeIsle, seviyeDurumu, seviyeKisa, eserSeviyesi, GECIS_ORANI } from '../seviye.js';
 import {
   d,
@@ -155,26 +157,38 @@ function kartHazirla(o, konum) {
     if (!eser) return { konum, id: s.id, eser: null };
     d.ilerleme.sonEserler[s.id] = [...son.filter((x) => x !== eser.anahtar), eser.anahtar].slice(-8);
     const acikIdler = new Set(acikListe().map((x) => x.id));
-    return {
-      konum,
-      id: s.id,
-      eser,
-      eserler,
-      seviye: sv,
-      secenekler: sanatciSecenekleri(s, {
+    const secici = () =>
+      sanatciSecenekleri(s, {
         sanatcilar: d.sanatcilar,
         akimlar: d.akimlar,
         acikIdler,
         rng: d.rng,
         ortaYillar: d.ortaYillar,
         seviye: SEVIYELER[sv].anahtar,
-      }).map((x) => x.id),
+      }).map((x) => x.id);
+    const secenekler = secici();
+    const kart = {
+      konum,
+      id: s.id,
+      eser,
+      eserler,
+      seviye: sv,
+      secenekler,
       akimSecenekleri: o.kip === 'karisik' ? akimSecenekleri(s.akim, d.akimlar, d.rng, 4, SEVIYELER[sv].anahtar) : null,
       adim: 1,
       cevapSanatci: null,
       cevapAkim: null,
       bitti: false,
     };
+    // d.tersOrani: testler için (window.__atlas); yoksa TERS_ORANI
+    if (!tersSorulurMu({ kip: o.kip, seviye: sv, rng: d.rng, oran: d.tersOrani })) return kart;
+    // Ö1 ters soru: aynı çeldiricilerin eserleri (eseri olmayan sanatçının yerine ikinci seçimden biri)
+    const adaylar = [...new Set([...secenekler, ...secici()])].filter((id) => id !== s.id && d.harita.has(id));
+    return Promise.all(adaylar.map((id) => sanatciEserleri(d.harita.get(id)).then((l) => ({ id, eserler: l }), () => ({ id, eserler: [] })))).then((celdiriciler) => {
+      const ters = tersSecenekleri({ dogru: { id: s.id, eser }, celdiriciler, rng: d.rng, kotuler: kotuler(), konusu: eserKonusu });
+      if (!ters) return kart;
+      return { ...kart, tur: 'ters', ters, secenekler: ters.map((x) => x.id), akimSecenekleri: null };
+    });
   });
 }
 
@@ -267,6 +281,18 @@ async function kartiGeriKur(bk) {
   const eserler = await sanatciEserleri(s);
   const eser = eserler.find((e) => e.anahtar === bk.eser);
   if (!eser) return null;
+  if (bk.tur === 'ters') {
+    // ters sorunun dört eseri: biri bile artık yoksa kart atlanır
+    const ters = await Promise.all(
+      (bk.ters || []).map(async (x) => {
+        if (x.id === s.id) return { id: x.id, eser };
+        const e = (await sanatciEserleri(d.harita.get(x.id))).find((y) => y.anahtar === x.eser);
+        return e ? { id: x.id, eser: e } : null;
+      }),
+    );
+    if (ters.length !== 4 || ters.some((x) => !x)) return null;
+    return { ...bk, eser, eserler, ters, bitti: false };
+  }
   return { ...bk, eser, eserler, bitti: false };
 }
 
@@ -411,11 +437,13 @@ function yaprakYerlestir() {
   const ustu = sahne.getBoundingClientRect().top + window.scrollY;
   const resimH = img ? img.getBoundingClientRect().height : 0;
   // görselin altındaki her şey (başlık, iki seçenek) + yaprak
-  const alti = ekran.querySelector('.secenekler').getBoundingClientRect().bottom - sahne.getBoundingClientRect().bottom;
+  // son öğe: seçenekler ya da ters sorunun eser şeridi
+  const son = ekran.querySelector('[data-yaprak-son]') || ekran.querySelector('.secenekler');
+  const alti = son.getBoundingClientRect().bottom - sahne.getBoundingClientRect().bottom;
   const bos = window.innerHeight - y.offsetHeight - 14 - ustu - alti;
   const hedef = Math.max(140, Math.min(bos, resimH || bos));
   sahne.style.setProperty('--soru-resim-h', `${Math.round(hedef)}px`);
-  const tasma = ekran.querySelector('.secenekler').getBoundingClientRect().bottom - (window.innerHeight - y.offsetHeight) + 12;
+  const tasma = son.getBoundingClientRect().bottom - (window.innerHeight - y.offsetHeight) + 12;
   if (tasma > 0) window.scrollBy(0, tasma);
 }
 
@@ -438,9 +466,159 @@ function ipucuCevir(p) {
   yaprakYerlestir();
 }
 
+// Ters soru (Ö1): ad bir isim levhasında verilir, dört eser masaya dağılmış kartpostallar. Karta dokununca kart
+// büyür (yana kaydırarak diğerleri), "Bu eser" ile cevaplanır. Cevaptan sonra doğru eser sahneye çıkar, dört kart
+// küçülüp sırayla ters döner ve arkalarında sanatçının adı görünür. Tek soru (karışıkta akım sorusu yok).
+function tersGoster(o) {
+  const k = o.kart;
+  const s = d.harita.get(k.id);
+  const ot = o.oturum;
+  const sira = Math.min(ot.konum + 1, ot.toplam);
+  const yuzde = Math.round((100 * ot.konum) / ot.toplam);
+  const cevap = k.cevapSanatci;
+  const gorsel = (x) => secilenGorsel(x.eser, kotuler()) || x.eser.gorseller[0];
+  const resim = (x, w) => `<img decoding="async" alt="" src="${kacis(gorselUrl(gorsel(x), w))}" data-yedek="${kacis(gorselYedek(gorsel(x)))}">`;
+  const adi = (id) => kacis(bilinenAd(d.harita.get(id).ad, d.kisaAdlar[id]));
+  let govde;
+  if (cevap === null) {
+    const kartlar = k.ters
+      .map(
+        (x, i) =>
+          `<button class="ters-eser kartpostal" type="button" data-kp-ac="${i}" data-kp-id="${kacis(x.id)}" style="--i:${i}" aria-label="${HARFLER[i]} eserini büyüt"><span class="kp-on"><span class="ters-cerceve">${resim(x, 400)}</span><span class="kp-pul">${HARFLER[i]}</span></span></button>`,
+      )
+      .join('');
+    govde = `<div class="ters-izgara masa" data-test="ters-secenekleri">${kartlar}</div>
+      <button class="bilmiyorum" type="button" data-bilmiyorum data-test="bilmiyorum">Bilmiyorum</button>`;
+  } else {
+    // doğru eser sahnede; dördü altında küçük kartlar: kartpostalda ters dönüp sanatçının adını gösterir
+    const dogruI = k.ters.findIndex((x) => x.id === k.id);
+    const serit = k.ters
+      .map((x, i) => {
+        const sinif = x.id === k.id ? ' dogru' : x.id === cevap ? ' yanlis' : ' soluk';
+        const isaret = x.id === k.id ? ikon('dogru', 14, 2.4) : x.id === cevap ? ikon('yanlis', 14, 2.4) : '';
+        return `<button class="ters-mini kartpostal doner${sinif}" type="button" data-ters-eser="${i}" style="--i:${i}" aria-label="${kacis(d.harita.get(x.id).ad)}"><span class="kp-ic"><span class="kp-on"><span class="ters-cerceve">${resim(x, 400)}</span></span><span class="kp-arka"><span class="kp-isaret">${isaret}</span><b>${adi(x.id)}</b><small>${kacis(yillarYaz(d.harita.get(x.id)))}</small></span></span></button>`;
+      })
+      .join('');
+    govde = `<div class="soru-sahne ters-sahne">
+        <button class="soru-resim" type="button" data-ters-eser="${dogruI}" aria-label="Görseli büyüt"><img decoding="async" alt="${kacis(eserAdi(k.eser))}" src="${kacis(gorselUrl(gorsel(k.ters[dogruI]), 800))}"></button>
+      </div>
+      <div class="ters-serit" data-test="ters-secenekleri" data-yaprak-son>${serit}</div>`;
+  }
+  let yaprak = '';
+  if (cevap !== null) {
+    const dogru = cevap === k.id;
+    const tekrarNotu = 'bu kart 3–5 kart sonra yine gelecek';
+    const sonuc = dogru ? ['Doğru', ''] : cevap === BILMIYORUM ? ['Bilmiyorum', tekrarNotu] : ['Yanlış', tekrarNotu];
+    const secilen = !dogru && cevap !== BILMIYORUM ? k.ters.find((x) => x.id === cevap) : null;
+    let karsilastirBag = '';
+    if (secilen && d.harita.has(cevap)) {
+      if ((k.karisanSayi || 0) >= KARISAN_ESIGI) karsilastirBag = karsiSeritHtml(s, d.harita.get(cevap), k.karisanSayi);
+      karsilastirBag += `<a class="karsilastir-bag" href="${karsilastirmaAdresi(s.id, cevap)}" data-test="karsilastir">${ikon('karsilastir', 18, 1.6)}<span>Karşılaştır: ${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))} ↔ ${adi(cevap)}</span></a>`;
+    }
+    const sonrakiYazi = ot.konum + 1 >= ot.toplam ? 'Turu bitir' : 'Sonraki kart →';
+    const ipucu = ipucuMetni(s);
+    yaprak = `<section class="alt-yaprak" aria-live="polite">
+      <p class="sonuc" data-test="sonuc" data-dogru="${dogru}">${ikon(dogru ? 'dogru' : 'yanlis', 18, 2)}<b>${sonuc[0]}</b>${sonuc[1] ? `<span class="sonuc-not">${kacis(sonuc[1])}</span>` : ''}</p>
+      <p class="bilgi"><b>${kacis(eserAdi(k.eser))}</b><i>${kacis(`${s.ad} · ${s.akim}`)}</i></p>
+      ${secilen ? `<p class="ters-secilen" data-test="ters-secilen">Seçtiğin: ${kacis(eserAdi(secilen.eser))} · ${kacis(d.harita.get(cevap).ad)}</p>` : ''}
+      ${seviyeSatiri(k)}
+      ${ipucu ? `<div class="ipucu-kutu" data-ipucu><p class="ipucu">${kacis(ipucu)}</p></div>` : ''}
+      <p class="kaynak-satir">${kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler()))}</p>
+      ${karsilastirBag}
+      <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="Sanatçı sayfası">Sanatçı</a><button class="dugme acik" type="button" data-sonraki>${sonrakiYazi}</button></div>
+    </section>`;
+  }
+  const onceki = o.sonCizim;
+  const hareket = !onceki || onceki.konum !== ot.konum ? 'yeni-kart' : cevap !== null && !onceki.cevap ? 'cevap' : '';
+  const oncekiYuzde = onceki && onceki.konum !== ot.konum ? onceki.yuzde : yuzde;
+  o.sonCizim = { konum: ot.konum, adim: 1, cevap: cevap !== null, yuzde };
+  ciz(
+    `<header class="soru-ust">
+      <button class="kapat" type="button" data-geri="#/pekistir" aria-label="Kapat">${ikon('kapat', 22, 1.7)}</button>
+      <span class="etiket">${kacis(kipKisa(o.kip, o.akim))}</span>
+      <span data-test="sayac">${sira} / ${ot.toplam}</span>
+    </header>
+    <div class="ince-cubuk" aria-hidden="true"><i style="width:${yuzde}%;--onceki:${oncekiYuzde}%"></i></div>
+    <div class="ters-levha${cevap !== null ? ' kucuk' : ''}" data-test="ters-soru">
+      <span class="ters-ust">${etiket(`Ters soru · ${SEVIYELER[k.seviye ?? 0].ad}`)}<span class="ters-yil">${kacis(yillarYaz(s))}</span></span>
+      <span class="ters-sor">Hangisi bir</span>
+      <h2 tabindex="-1" class="ters-isim">${kacis(s.ad)}</h2>
+      <span class="ters-sor sag">eseri?</span>
+    </div>
+    ${govde}
+    ${yaprak}`,
+    hareket,
+  );
+  renkSabitle(null);
+  karsiSeritDoldur();
+  const y = ekran.querySelector('.alt-yaprak');
+  if (y) {
+    y.querySelector('[data-sonraki]').focus({ preventScroll: true });
+    ipucuIsaretle(y);
+    yaprakYerlestir();
+    // ekranın rengi doğru eserden (cevaptan sonra artık ipucu değil)
+    if (k.palet === undefined) ekranRengi(k.eser, null, (p) => (k.palet = p));
+    else renkSabitle(k.palet);
+  }
+  if (!o.sonrakiKart && ot.konum + 1 < ot.toplam) {
+    o.sonrakiKart = kartHazirla(o, ot.konum + 1).then((h) => {
+      if (h && h.eser) new Image().src = gorselUrl(secilenGorsel(h.eser, kotuler()), 800);
+      return h;
+    });
+  }
+}
+
+// Kartpostalı büyüt: kart masadan kalkıp ekranı kaplar; yana kaydırarak diğer kartlar, "Bu eser" ile cevap
+function kartpostalAc(o, i, kaynak) {
+  const k = o.kart;
+  const gorsel = (x) => secilenGorsel(x.eser, kotuler()) || x.eser.gorseller[0];
+  const el = document.createElement('div');
+  el.className = 'kp-buyuk';
+  el.setAttribute('role', 'dialog');
+  el.setAttribute('aria-label', 'Eserler büyük');
+  el.dataset.test = 'kp-buyuk';
+  el.innerHTML = `<div class="kp-kaydir" data-kp-kaydir>${k.ters
+    .map(
+      (x, j) =>
+        `<figure class="kp-slayt"><span class="kp-on"><span class="ters-cerceve"><img decoding="async" alt="${HARFLER[j]} eseri" src="${kacis(gorselUrl(gorsel(x), 800))}" data-yedek="${kacis(gorselYedek(gorsel(x)))}"></span><span class="kp-pul">${HARFLER[j]}</span></span></figure>`,
+    )
+    .join('')}</div>
+    <div class="kp-noktalar" aria-hidden="true">${k.ters.map((x, j) => `<i data-kp-nokta="${j}"></i>`).join('')}</div>
+    <div class="kp-dugmeler"><button class="dugme" type="button" data-kp-kapat>Masaya bırak</button><button class="dugme acik kp-bu" type="button" data-sanatci="${kacis(k.ters[i].id)}" data-test="kp-bu">Bu eser · ${HARFLER[i]}</button></div>`;
+  // kart, dokunulan yerden büyür
+  if (kaynak) {
+    const r = kaynak.getBoundingClientRect();
+    el.style.setProperty('--kaynak-x', `${r.left + r.width / 2}px`);
+    el.style.setProperty('--kaynak-y', `${r.top + r.height / 2}px`);
+  }
+  ekran.appendChild(el);
+  const kay = el.querySelector('[data-kp-kaydir]');
+  kay.scrollLeft = i * kay.clientWidth;
+  const bu = el.querySelector('.kp-bu');
+  const isaretle = () => {
+    const j = Math.max(0, Math.min(3, Math.round(kay.scrollLeft / kay.clientWidth)));
+    bu.dataset.sanatci = k.ters[j].id;
+    bu.textContent = `Bu eser · ${HARFLER[j]}`;
+    el.querySelectorAll('[data-kp-nokta]').forEach((n) => n.classList.toggle('etkin', Number(n.dataset.kpNokta) === j));
+  };
+  isaretle();
+  kay.addEventListener('scroll', isaretle, { passive: true });
+  bu.focus({ preventScroll: true });
+}
+
+function kartpostalKapat() {
+  const el = ekran.querySelector('.kp-buyuk');
+  if (!el) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return el.remove();
+  el.classList.add('kapaniyor');
+  el.addEventListener('animationend', () => el.remove(), { once: true });
+  setTimeout(() => el.remove(), 400); // animasyon çalışmazsa da kalksın
+}
+
 function kartGoster(o) {
   const k = o.kart;
   if (k.tanisma) return tanismaGoster(o);
+  if (k.tur === 'ters') return tersGoster(o);
   const s = d.harita.get(k.id);
   const ot = o.oturum;
   const karisik = o.kip === 'karisik';
@@ -633,7 +811,7 @@ function sanatciCevapla(o, deger) {
   if (k.seviyeSonuc.gecti) (o.gecenler ||= []).push({ akim, seviye: k.seviyeSonuc.sonra });
   sonCalisilanEkle(d.ilerleme, k.id);
   baskaDeneme = 0;
-  if (o.kip === 'donem') kartiBitir(o, dogru);
+  if (o.kip === 'donem' || k.tur === 'ters') kartiBitir(o, dogru);
   else kaydet();
   yarimKaydet(o);
   kartGoster(o);
@@ -733,6 +911,7 @@ export function olaylariBagla() {
   });
 
   ekran.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && ekran.querySelector('.kp-buyuk')) return kartpostalKapat();
     const p = (e.key === 'Enter' || e.key === ' ') && e.target.closest?.('[data-ipucu].kesik');
     if (p) {
       e.preventDefault();
@@ -782,6 +961,21 @@ export function olaylariBagla() {
           } else if (!k.bitti) baskaEser(o);
         }),
       });
+      return;
+    }
+    const kpa = e.target.closest('[data-kp-ac]');
+    if (kpa && o && o.kart && o.kart.ters && o.kart.cevapSanatci === null) {
+      kartpostalAc(o, Number(kpa.dataset.kpAc), kpa);
+      return;
+    }
+    if (e.target.closest('[data-kp-kapat]')) {
+      kartpostalKapat();
+      return;
+    }
+    const tb = e.target.closest('[data-ters-eser]');
+    if (tb && o && o.kart && o.kart.ters) {
+      const sira = o.kart.ters;
+      goruntuleyiciAc({ eserler: sira.map((x) => x.eser), baslangic: Number(tb.dataset.tersEser), ...gorselTercihi() });
       return;
     }
     const bil = e.target.closest('[data-bilmiyorum]');
