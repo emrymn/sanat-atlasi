@@ -24,7 +24,7 @@ import { SEVIYELER, seviyeKaydi, seviyeIsle, seviyeDurumu, seviyeKisa, eserSeviy
 // "Bilmiyorum" cevabının değeri (Ö4): hiçbir sanatçı kimliği ya da akım adıyla çakışmaz
 const BILMIYORUM = '?';
 
-const SURUM = '1.21.0';
+const SURUM = '1.21.1';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
 const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
 const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
@@ -49,7 +49,7 @@ const d = {
   oturum: null,
   yarim: null, // IndexedDB'deki yarım kalan oturum kaydı (js/devam.js)
   yigin: [],
-  acikBolumler: new Set(),
+  kursSecili: null, // İlerleme: kartı açık konu
   rng: rastgeleYap(Date.now() & 0xffffffff),
   indirme: null,
   onbellekIdleri: null,
@@ -2045,12 +2045,54 @@ function siradakiKonuHtml(k, sayi) {
   return `<section class="siradaki${d.siradakiGecti ? ' gecti' : ''}" data-test="siradaki-konu" aria-label="Sıradaki konu">
       <span class="siradaki-no" aria-hidden="true">${x.no}</span>
       <div class="siradaki-yazi">
-        ${etiket('Sıradaki konu', { vurgu: true })}
+        ${etiket('Sıradaki konu')}
         <b>${kacis(konuBasligi(x))}</b>
         <small>${n ? `${n} sanatçı açılacak` : 'yeni sanatçı açılmaz'} · Konu ${x.no}</small>
       </div>
-      <button class="dugme vurgu siradaki-dugme" type="button" data-konu-isle="${x.no}">İşlendi yap</button>
+      <button class="dugme siradaki-dugme" type="button" data-konu-isle="${x.no}">İşlendi yap</button>
     </section>`;
+}
+
+const ROMA = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
+const bolumNo = (bl) => ROMA[Number(String(bl.bolum).replace(/\D/g, '')) - 1] || kacis(bl.bolum);
+
+// Kurs konuları: tek kitaplık, her konu bir kitap sırtı (boyu sanatçı sayısı, rengi akımı).
+// Bir konuya dokununca kitaplığın altında konu kartı açılır; "işlendi" anahtarı kartın içindedir.
+function konuSanatcilari(no) {
+  const l = d.sanatcilar.filter((s) => s.konu === no);
+  return [...l.filter((s) => s.kaynak === 'kurs'), ...l.filter((s) => s.kaynak !== 'kurs')];
+}
+function konuKarti(x, k) {
+  const l = konuSanatcilari(x.no);
+  const acik = k.has(x.no);
+  return `<div class="konu-karti" data-test="konu-karti">
+      <span class="konu-karti-no">${x.no}</span>
+      <div class="konu-karti-yazi">
+        <b>${kacis(konuBasligi(x))}</b>
+        ${konuBasligi(x) !== x.baslik ? `<span class="ozgun-konu" lang="en">${kacis(x.baslik)}</span>` : ''}
+        <span class="konu-karti-adlar">${l.length ? l.map((s) => (acik ? `<a href="#/sanatci/${encodeURIComponent(s.id)}">${kacis(s.ad)}</a>` : `<span>${kacis(s.ad)}</span>`)).join('') : '<em>Bu konuda yeni sanatçı yok</em>'}</span>
+      </div>
+      <label class="konu konu-karti-anahtar"><span class="metin">İşlendi</span><input class="anahtar" type="checkbox" role="switch" data-konu="${x.no}" ${acik ? 'checked' : ''} aria-label="Konu ${x.no} işlendi"></label>
+    </div>`;
+}
+function kursBolumleriHtml(bolumler, k) {
+  const siradaki = (d.konular.find((x) => !k.has(x.no)) || {}).no;
+  const durum = (x) => (k.has(x.no) ? ' islendi' : x.no === siradaki ? ' sira' : '');
+  const kitap = (x, i) => {
+    const l = konuSanatcilari(x.no);
+    const renk = l.length ? akimRenk(l[0].akim) : 'var(--ink-3)';
+    const boy = 104 + Math.min(l.length, 7) * 8;
+    return `<button type="button" class="kitap${durum(x)}${d.kursSecili === x.no ? ' secili' : ''}" data-kurs-konu="${x.no}" style="--renk:${renk};--boy:${boy}px;--i:${i}" aria-label="Konu ${x.no}: ${kacis(konuBasligi(x))}${k.has(x.no) ? ', işlendi' : ''}"><span class="kitap-no">${x.no}</span><span class="kitap-ad">${kacis(konuBasligi(x))}</span></button>`;
+  };
+  // tek kitaplık: bölümler arasında Roma rakamlı kitap desteği, kart rafın altında
+  const secili = d.konular.find((x) => x.no === d.kursSecili);
+  let i = 0;
+  return `<div class="kurs-bolumleri"><div class="kitaplik">${bolumler
+    .map((bl) => {
+      const bitti = bl.konular.filter((x) => k.has(x.no)).length;
+      return `<span class="destek${bitti === bl.konular.length ? ' tam' : ''}" title="${kacis(bolumAdi(bl))}"><b>${bolumNo(bl)}</b><small>${bitti}/${bl.konular.length}</small></span>${bl.konular.map((x) => kitap(x, i++)).join('')}`;
+    })
+    .join('')}</div>${secili ? konuKarti(secili, k) : ''}</div>`;
 }
 
 function ilerlemeSayfasi(kaydirmayiKoru = false) {
@@ -2090,10 +2132,6 @@ function ilerlemeSayfasi(kaydirmayiKoru = false) {
     bl.konular.push(konu);
   }
   const sayi = (no) => d.sanatcilar.filter((s) => s.konu === no).length;
-  if (!d.acikBolumler.size) {
-    const sonraki = d.konular.find((x) => !k.has(x.no) && sayi(x.no) > 0);
-    if (sonraki) d.acikBolumler.add(sonraki.bolum);
-  }
   const vade = acikSanatcilar(d.sanatcilar, k).filter((s) => kategori(d.ilerleme.skorlar, s.id, 'karisik', b) === 0).length;
   const kaydirma = window.scrollY;
   const html = `${ust('İlerleme', '#/', {
@@ -2104,21 +2142,8 @@ function ilerlemeSayfasi(kaydirmayiKoru = false) {
     <p class="ozet-satir">${k.size} / ${d.konular.length} konu işlendi · ${acikSanatcilar(d.sanatcilar, k).length} sanatçı açık · ${vade} tekrar bekliyor</p>
     ${siradakiKonuHtml(k, sayi)}
     <h2 class="etiket bolum-baslik">Kurs konuları</h2>
-    <p class="kucuk ikincil" style="margin:-4px 0 10px">Bir konuyu bitirince “işlendi” yap; o konunun sanatçıları açılır.</p>
-    ${bolumler
-      .map(
-        (bl) => `<details class="konu-bolum" data-bolum="${kacis(bl.bolum)}" ${d.acikBolumler.has(bl.bolum) ? 'open' : ''}>
-      <summary><span>${kacis(bl.bolum)} · ${kacis(bolumAdi(bl))} <small>(${bl.konular.filter((x) => k.has(x.no)).length}/${bl.konular.length})</small></span>${ikon('ileri', 18, 1.4)}</summary>
-      <ul class="liste">${bl.konular
-        .map(
-          (
-            x,
-          ) => `<li><label class="konu"><span class="metin"><b>Konu ${x.no}</b> · ${kacis(konuBasligi(x))}<small>${sayi(x.no) ? `${sayi(x.no)} sanatçı` : 'sanatçı yok'}${konuBasligi(x) !== x.baslik ? ` · <span class="ozgun-konu" lang="en">${kacis(x.baslik)}</span>` : ''}</small></span>
-        <input class="anahtar" type="checkbox" role="switch" data-konu="${x.no}" ${k.has(x.no) ? 'checked' : ''} aria-label="Konu ${x.no} işlendi"></label></li>`,
-        )
-        .join('')}</ul></details>`,
-      )
-      .join('')}
+    <p class="kucuk ikincil" style="margin:-4px 0 10px">Bir konuya dokun, bitirdiysen “işlendi” yap; o konunun sanatçıları açılır.</p>
+    ${kursBolumleriHtml(bolumler, k)}
     <h2 class="etiket bolum-baslik">Akımlara göre doğruluk</h2>
     ${akimSatirlari.length ? `<div style="border-top:1px solid var(--border)">${akimSatirlari.join('')}</div>` : '<p class="ikincil">Henüz açık akım yok.</p>'}
     ${karisanlarBolumu()}
@@ -2169,6 +2194,16 @@ ekran.addEventListener('change', (e) => {
 });
 
 ekran.addEventListener('click', (e) => {
+  const kk = e.target.closest('[data-kurs-konu]');
+  if (!kk) return;
+  const no = Number(kk.dataset.kursKonu);
+  d.kursSecili = d.kursSecili === no ? null : no;
+  ilerlemeSayfasi(true);
+  const kart = ekran.querySelector('.konu-karti');
+  if (kart) kart.scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+});
+
+ekran.addEventListener('click', (e) => {
   const b = e.target.closest('[data-konu-isle]');
   if (!b) return;
   const no = Number(b.dataset.konuIsle);
@@ -2179,17 +2214,6 @@ ekran.addEventListener('click', (e) => {
   const yeni = ekran.querySelector('[data-konu-isle]');
   if (yeni) yeni.focus({ preventScroll: true });
 });
-
-ekran.addEventListener(
-  'toggle',
-  (e) => {
-    const det = e.target.closest && e.target.closest('details[data-bolum]');
-    if (!det) return;
-    if (det.open) d.acikBolumler.add(det.dataset.bolum);
-    else d.acikBolumler.delete(det.dataset.bolum);
-  },
-  true,
-);
 
 // ---------- Ayarlar ----------
 async function indirilecekler() {

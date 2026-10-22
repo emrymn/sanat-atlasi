@@ -2973,7 +2973,7 @@ main[data-hareket='giris'] .ozet .ad {
   gap: 4px 16px;
   margin: 6px 0 22px;
   padding: 14px 0 16px;
-  border-top: 1px solid var(--vurgu-acik);
+  border-top: 1px solid var(--ink);
   border-bottom: 1px solid var(--border);
   overflow: hidden;
 }
@@ -2981,7 +2981,7 @@ main[data-hareket='giris'] .ozet .ad {
   grid-row: span 2;
   min-width: 1.4ch;
   font: 400 64px/0.9 var(--serif);
-  color: var(--vurgu-acik);
+  color: var(--ink);
   font-variant-numeric: lining-nums;
 }
 .siradaki-yazi {
@@ -3003,6 +3003,14 @@ main[data-hareket='giris'] .ozet .ad {
   min-height: 44px;
   padding: 0 20px;
   border-radius: 999px;
+  background: transparent;
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  box-shadow: none;
+}
+.siradaki-dugme:active {
+  background: var(--ink);
+  color: var(--bg);
 }
 .siradaki.gecti .siradaki-no {
   animation: numara-gel 0.55s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
@@ -3122,4 +3130,190 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 /* D3: yaprakta ipucu ilk hâlinde 3 satır; eser daha büyük kalır, tamamı dokununca */
 .alt-yaprak .ipucu {
   -webkit-line-clamp: 3;
+}
+
+/* ---------- İlerleme: kurs konuları ----------
+   Her bölüm bir raf ya da bir duvar. Parlak gün rengi yok: renk akımın kendi renginden ya da eserin kendisinden gelir. */
+/* Kitaplık: her konu bir kitap sırtı; boyu sanatçı sayısı, rengi akımı. Okunmamışlar
+   kâğıt renginde; sıradaki raftan yarı çekilmiş. */
+.kitaplik {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: flex-start;
+  gap: 0 3px;
+  padding: 0 2px;
+  /* her sıra 186 px; altındaki 4 px raf tahtası */
+  background: repeating-linear-gradient(to bottom, transparent 0 182px, var(--ink) 182px 186px);
+}
+.kitaplik > * {
+  /* her öğe 182 px'lik sırayı tam doldurur, böylece kitaplar rafın üstüne oturur */
+  margin-top: calc(182px - var(--boy, 92px));
+  margin-bottom: 4px;
+}
+.destek {
+  flex: none;
+  width: 30px;
+  height: 92px;
+  margin-left: 6px;
+  margin-right: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  padding-bottom: 8px;
+  border-left: 3px solid var(--ink);
+  clip-path: polygon(0 0, 100% 38%, 100% 100%, 0 100%);
+  background: var(--border);
+  color: var(--ink);
+}
+.destek b {
+  font: italic 400 16px/1 var(--serif);
+}
+.destek small {
+  font: 600 10px/1 var(--sans);
+  color: var(--ink-2);
+}
+.destek.tam {
+  background: var(--ink);
+  color: var(--bg);
+}
+.destek.tam small {
+  color: var(--bg);
+}
+.kitap {
+  flex: none;
+  position: relative;
+  width: 26px;
+  height: var(--boy);
+  padding: 8px 0 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--ink-3);
+  border-bottom: 0;
+  border-radius: 2px 2px 0 0;
+  background: var(--bg);
+  color: var(--ink-2);
+  cursor: pointer;
+  transform-origin: bottom;
+  animation: kitap-gel 0.5s calc(var(--i) * 35ms) cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.kitap.islendi {
+  background: var(--renk);
+  border-color: var(--renk);
+  color: #fff;
+  box-shadow: inset 3px 0 0 rgba(255, 255, 255, 0.18), inset -3px 0 0 rgba(0, 0, 0, 0.18);
+}
+.kitap.islendi::before,
+.kitap.islendi::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.55);
+}
+.kitap.islendi::before {
+  top: 28px;
+}
+.kitap.islendi::after {
+  bottom: 16px;
+}
+.kitap.sira {
+  border: 1.5px solid var(--ink);
+  color: var(--ink);
+  transform: translateY(-14px) rotate(-4deg);
+  background: repeating-linear-gradient(0deg, transparent 0 5px, var(--border) 5px 6px), var(--bg);
+}
+.kitap.secili {
+  transform: translateY(-18px);
+}
+.kitap.sira.secili {
+  transform: translateY(-24px) rotate(-4deg);
+}
+.kitap-no {
+  font: 600 11px/1 var(--sans);
+  font-variant-numeric: lining-nums;
+}
+.kitap-ad {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font: 400 12.5px/1 var(--serif);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@keyframes kitap-gel {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+}
+
+/* Konu kartı: kutu değil, iki ince çizgi arasında bir satır; yukarı kayarak açılır */
+.konu-karti {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 4px 14px;
+  margin-top: 14px;
+  padding: 12px 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--border);
+  animation: sahne-gir 0.35s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+.konu-karti-no {
+  grid-row: span 2;
+  font: 400 44px/0.9 var(--serif);
+  font-variant-numeric: lining-nums;
+}
+.konu-karti-yazi {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.konu-karti-yazi b {
+  font: 400 19px/1.25 var(--serif);
+}
+.konu-karti-yazi .ozgun-konu {
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+.konu-karti-adlar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 12px;
+  margin-top: 4px;
+  font-size: 14px;
+}
+.konu-karti-adlar a {
+  color: var(--ink);
+}
+.konu-karti-adlar span,
+.konu-karti-adlar em {
+  color: var(--ink-3);
+}
+.konu-karti-anahtar {
+  grid-column: 2;
+  min-height: 44px;
+  padding: 0;
+}
+.konu-karti-anahtar .anahtar:checked {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.konu-karti-anahtar .anahtar:checked::after {
+  background: var(--bg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .kitap,
+  .konu-karti {
+    animation: none !important;
+  }
 }

@@ -94,9 +94,11 @@ test('D6: İlerleme Türkçe konu adları ve Sıradaki konu; İşlendi yap bir s
   await expect(kart.locator('.siradaki-no')).toHaveText(String(sonraki));
   const i = await ilerleme(page);
   expect(i.islenen).toContain(no);
-  // konu listesinde Türkçe başlık ve özgün ad
-  await page.locator('details[data-bolum] > summary').first().click();
-  await expect(page.locator('.konu').filter({ hasText: 'Konu 4 · Giotto, Dante ve Arena Şapeli' })).toContainText('Giotto, Dante and the Arena Chapel');
+  // kitaplıkta konuya dokununca konu kartı: Türkçe başlık ve özgün ad
+  await page.locator('[data-kurs-konu="4"]').click();
+  const konuKarti = page.locator('[data-test="konu-karti"]');
+  await expect(konuKarti).toContainText('Giotto, Dante ve Arena Şapeli');
+  await expect(konuKarti).toContainText('Giotto, Dante and the Arena Chapel');
 });
 
 test('İ3: 14 günden eski yedekte Bugün’de hatırlatma; Yedekle panoya kopyalar ve satır kalkar', async ({ page, context }) => {
@@ -122,4 +124,36 @@ test('İ3: 14 günden eski yedekte Bugün’de hatırlatma; Yedekle panoya kopya
   expect(i.sonYedek).toBe(i.gunluk.tarih);
   await page.reload();
   await expect(page.locator('[data-test="yedek-hatirlat"]')).toHaveCount(0);
+});
+
+test('İlerleme kitaplığı: her konu bir kitap, sıradaki çekili; kartta işlendi yapılır', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('./#/ilerleme');
+  await expect(page.locator('.kitaplik')).toBeVisible();
+  const { konuSayisi, islenen, sira } = await page.evaluate(() => {
+    const d = window.__atlas;
+    const isl = new Set(d.ilerleme.islenen);
+    return { konuSayisi: d.konular.length, islenen: [...isl], sira: d.konular.find((k) => !isl.has(k.no)).no };
+  });
+  await expect(page.locator('.kitap')).toHaveCount(konuSayisi);
+  await expect(page.locator('.destek')).toHaveCount(9);
+  await expect(page.locator('.kitap.islendi')).toHaveCount(islenen.length);
+  await expect(page.locator('.kitap.sira')).toHaveAttribute('data-kurs-konu', String(sira));
+  // parlak gün rengi kullanılmaz: sıradaki numarası ve düğmesi mürekkep renginde
+  const renkler = await page.evaluate(() => {
+    const cs = (s) => getComputedStyle(document.querySelector(s));
+    return { no: cs('.siradaki-no').color, dugme: cs('.siradaki-dugme').backgroundColor, ink: getComputedStyle(document.body).color };
+  });
+  expect(renkler.no).toBe(renkler.ink);
+  expect(renkler.dugme).toBe('rgba(0, 0, 0, 0)');
+  // sıradaki kitaba dokun → kart açılır → işlendi yap → kitap akım rengine boyanır
+  await page.locator(`[data-kurs-konu="${sira}"]`).click();
+  const kart = page.locator('[data-test="konu-karti"]');
+  await expect(kart).toBeVisible();
+  await kart.getByRole('switch', { name: `Konu ${sira} işlendi` }).check();
+  const kitap = page.locator(`[data-kurs-konu="${sira}"]`);
+  await expect(kitap).toHaveClass(/islendi/);
+  // aynı kitaba yeniden dokununca kart kapanır
+  await kitap.click();
+  await expect(kart).toHaveCount(0);
 });
