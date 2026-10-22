@@ -22,29 +22,38 @@ export function yuzyil(yil) {
   return yil > 0 ? Math.floor((yil - 1) / 100) + 1 : -(Math.floor(-yil / 100) + 1);
 }
 
-function yuzyilYaz(y) {
-  return y < 0 ? `MÖ ${-y}.` : `${y}.`;
+// 14 → "XIV" (yüzyıllar için yeter: 1–39)
+export function roma(n) {
+  return 'X'.repeat(Math.floor(n / 10)) + ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'][n % 10];
 }
 
-// "13.–14. yüzyıl" ya da "15. yüzyıl"
-export function yuzyilAraligi(bas, son) {
+function yuzyilYaz(y, r) {
+  const n = Math.abs(y);
+  const yazi = r ? roma(n) : `${n}.`;
+  return y < 0 ? `MÖ ${yazi}` : yazi;
+}
+
+// "13.–14. yüzyıl" ya da "15. yüzyıl"; roma: true → "XIII–XIV. yüzyıl", "XV. yüzyıl"
+export function yuzyilAraligi(bas, son, { roma: r = false } = {}) {
   if (bas == null && son == null) return '';
   const a = yuzyil(bas ?? son);
   const b = yuzyil(son ?? bas);
-  return a === b ? `${yuzyilYaz(a)} yüzyıl` : `${yuzyilYaz(a)}–${yuzyilYaz(b)} yüzyıl`;
+  const nokta = r ? '.' : '';
+  return a === b ? `${yuzyilYaz(a, r)}${nokta} yüzyıl` : `${yuzyilYaz(a, r)}–${yuzyilYaz(b, r)}${nokta} yüzyıl`;
 }
 
 // Bir akımın sanatçılarından yüzyıl aralığı (çalışma hayatı: doğum + 20 … ölüm)
-export function akimYuzyillari(uyeler) {
+export function akimYuzyillari(uyeler, secenek) {
   const bas = uyeler.map((s) => (s.dogum != null ? s.dogum + 20 : s.olum != null ? s.olum - 30 : null)).filter((x) => x != null);
   const son = uyeler.map((s) => s.olum ?? (s.dogum != null ? s.dogum + 60 : null)).filter((x) => x != null);
   if (!bas.length) return '';
-  return yuzyilAraligi(Math.min(...bas), Math.max(...son));
+  return yuzyilAraligi(Math.min(...bas), Math.max(...son), secenek);
 }
 
 const YOLLAR = {
   geri: '<path d="m15 18-6-6 6-6"/>',
   ileri: '<path d="m9 18 6-6-6-6"/>',
+  asagi: '<path d="m6 9 6 6 6-6"/>',
   kapat: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
   dogru: '<path d="M20 6 9 17l-5-5"/>',
   yanlis: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',

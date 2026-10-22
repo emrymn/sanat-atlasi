@@ -26,6 +26,10 @@ test('yüzyıl hesabı ve aralık yazımı', () => {
   assert.equal(yuzyilAraligi(1420, 1490), '15. yüzyıl');
   assert.equal(yuzyilAraligi(1270, 1340), '13.–14. yüzyıl');
   assert.equal(yuzyilAraligi(null, null), '');
+  assert.equal(yuzyilAraligi(1270, 1340, { roma: true }), 'XIII–XIV. yüzyıl');
+  assert.equal(yuzyilAraligi(1420, 1490, { roma: true }), 'XV. yüzyıl');
+  assert.equal(yuzyilAraligi(-450, -420, { roma: true }), 'MÖ V. yüzyıl');
+  assert.equal(akimYuzyillari([{ dogum: 1867, olum: 1947 }], { roma: true }), 'XIX–XX. yüzyıl');
   assert.equal(akimYuzyillari([{ dogum: 1267, olum: 1337 }]), '13.–14. yüzyıl');
 });
 
