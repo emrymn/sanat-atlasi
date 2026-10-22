@@ -973,3 +973,9 @@ Emre'nin geri bildirimi: “kurs ilerleme kısmı çok kullanışsız olmuş, he
 - V2'nin geri kalanı (yaklaşık 1.370 eser notu, 374 Türkçe eser adı, 232 zorluk puanı) kredi sınırı yüzünden yapılmadı. Bunlar Emre'nin Mac'inde API ile çalışan bir oturuma bırakıldı.
 - **V3:** Geç İtalyan Barok metni denetlendi. Solimena'nın Ribera'dan doğrudan "yola çıktığı" ifadesi yumuşatıldı, kaynak etiketi "denetlendi" oldu. Gotik metninde Proto-Rönesans paragrafının başındaki tekrar ("…başlatacaktır. Proto-Rönesans, … bir dönemdir.") tek bir geçiş cümlesine indirildi.
 - Testler: `tests/unit/biyografi_v2.test.mjs` ve `gunun.spec.js` içinde V2 testi.
+
+## İş V2b · V2'nin kalanı (API ile, 2026-10-22)
+
+1. Eksik Türkçe eser adları, eksik zorluk puanları ve eksik eser notları yalnızca eksik olanlar için üretildi; var olan kayıtlara dokunulmadı (`icerik/v2_kalan.py`).
+2. Adlar: Claude Sonnet 5.5, önceki kurallarla. Zorluk: Claude Opus 5.5, görselle (sanatçının bütün havuzu birlikte, kolaylık = tipiklik + ünlülük). Notlar: Claude Sonnet 5.5, yalnızca başlık ve künyeye dayanır, eseri kesin tanımadığı yerde boş bırakır; görselle denetlenmedi (kaynak etiketinde belirtildi).
+3. Sürüm 1.25.2 (data/ dosyaları sürümlü önbellekte olduğu için yükseltildi).
