@@ -69,3 +69,19 @@ test('renk teması: bütün değişkenler ve kontrast kuralları', () => {
   assert.match(t.vurguRgb, /^\d+, \d+, \d+$/);
   assert.equal(renkTemasi([], GECE), null);
 });
+
+test('vurgu yumuşatma: neon sarı altın tonuna kayar, doygunluğu düşer; sakin renkler değişmez', async () => {
+  const { yumusat } = await import('../../js/renk.js');
+  for (const neon of ['#d0c766', '#e6e639', '#c8d040']) {
+    const [h, s] = hsl(yumusat(neon));
+    assert.ok(h >= 40 && h <= 51, `${neon} → ton ${h}`);
+    assert.ok(s <= 0.43, `${neon} → doygunluk ${s}`);
+  }
+  assert.ok(hsl(yumusat('#40ff60'))[1] <= 0.39);
+  assert.equal(yumusat('#b8452f'), '#b8452f');
+  assert.equal(yumusat('#2b4a9a'), '#2b4a9a');
+  // Hogarth (Bugün) paletinden gelen sarı vurgu artık temanın altın tonuna yakın
+  const t = renkTemasi([{ renk: '#d0c766', pay: 1 }], GECE);
+  assert.ok(hsl(t.vurgu)[1] <= 0.45, t.vurgu);
+  assert.ok(kontrast(t.vurgu, t.vurguYazi) >= 4.5);
+});

@@ -142,10 +142,23 @@ export function doluButon(renk) {
   return { zemin: KOYU_YAZI, yazi: BEYAZ_YAZI };
 }
 
+// Neon görünen tonları temaya yaklaştırır: sarılar altın tonuna kayar ve doygunluğu düşer,
+// yeşiller ve öbür renkler de üst sınırla yumuşar (Emre: "neon sarı temayı bozuyor")
+export function yumusat(renk) {
+  let [h, s, l] = hsl(renk);
+  if (h >= 45 && h < 75) {
+    h = 40 + (h - 40) * 0.3;
+    s = Math.min(s, 0.42);
+  } else if (h >= 75 && h < 170) s = Math.min(s, 0.38);
+  else s = Math.min(s, 0.6);
+  return hsldenHex(h, s, l);
+}
+
 // Paletten CSS değişkenleri; zemin: temanın --bg rengi
 export function renkTemasi(palet, zemin) {
-  const ana = vurguSec(palet);
-  if (!ana) return null;
+  const secilen = vurguSec(palet);
+  if (!secilen) return null;
+  const ana = yumusat(secilen);
   const dolu = doluButon(ana);
   const acik = acikHal(ana, zemin);
   const acikYazi = kontrast(acik, KOYU_YAZI) >= kontrast(acik, BEYAZ_YAZI) ? KOYU_YAZI : BEYAZ_YAZI;

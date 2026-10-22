@@ -243,13 +243,14 @@ test('gosterilecekler: son görülen sürümden sonrakiler; ilk kullanımda yaln
 test('yenilikYazisi biçimi ve listenin başı şimdiki sürüm', () => {
   assert.equal(yenilikYazisi({ surum: '1.20.0', metin: 'Ters soru, arama eklendi' }), '1.20 · Ters soru, arama eklendi');
   assert.equal(yenilikYazisi({ surum: '1.21.1', metin: 'x' }), '1.21.1 · x');
-  assert.equal(YENILIKLER[0].surum, SURUM);
+  // yalnızca düzeltme olan sürümler (1.26.1 gibi) listeye girmez: baş satır şimdiki sürümün ana.ara sürümü
+  assert.equal(YENILIKLER[0].surum.split('.').slice(0, 2).join('.'), SURUM.split('.').slice(0, 2).join('.'));
 });
 
 // ---------- sürüm, kabuk, T2, T3 ----------
-test('sürüm: js/surum.js ile sw.js aynı, 1.26.0', () => {
-  assert.equal(SURUM, '1.26.0');
-  assert.match(oku('sw.js'), /const SURUM = '1\.26\.0';/);
+test('sürüm: js/surum.js ile sw.js aynı, 1.26.1', () => {
+  assert.equal(SURUM, '1.26.1');
+  assert.match(oku('sw.js'), /const SURUM = '1\.26\.1';/);
 });
 
 test('T2: eser notları açılışta beklenmez, ilk ekrandan sonra yüklenir', () => {
