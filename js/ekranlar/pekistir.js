@@ -13,6 +13,7 @@ import { bilinenAd } from '../adlar.js';
 import { idbAl, idbKoy, idbSil } from '../idb.js';
 import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from '../devam.js';
 import { karsilastirmaAdresi } from '../karsilastir.js';
+import { akimKarsilastirmaAdresi } from '../akim.js';
 import { tanismaGerekirMi, tanismaEserleri, karisanEkle, KARISAN_ESIGI } from '../ogrenme.js';
 import { tersSorulurMu, tersSecenekleri } from '../ters.js';
 import { konuTuru, konuTanismalari, hatalarTuru, esiEkle } from '../turlar.js';
@@ -805,6 +806,9 @@ function kartGoster(o) {
       const gorunur = new Set(d.akimlar.map((a) => a.ad));
       const komsular = ((d.akimlar.find((a) => a.ad === s.akim) || {}).komsular || []).filter((x) => gorunur.has(x));
       const ilkteGizlenen = akimiAciklarMi(ipucu, s.akim) ? ipucu : '';
+      // K3: akım yanlışsa iki akımın karşılaştırması
+      if (!dogru && k.cevapAkim && k.cevapAkim !== BILMIYORUM && d.akimlar.some((a) => a.ad === k.cevapAkim))
+        karsilastirBag = `<a class="karsilastir-bag" href="${akimKarsilastirmaAdresi(s.akim, k.cevapAkim)}" data-test="akim-karsilastir">${ikon('karsilastir', 18, 1.6)}<span>Karşılaştır: ${kacis(s.akim)} ↔ ${kacis(k.cevapAkim)}</span></a>`;
       not = [komsular.length ? `Komşu akımlar: ${komsular.join(', ')}.` : '', ilkteGizlenen].filter(Boolean).join(' ');
       ileri = `<button class="dugme acik" type="button" data-sonraki>${sonrakiYazi}</button>`;
     }

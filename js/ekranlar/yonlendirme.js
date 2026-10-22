@@ -5,11 +5,17 @@ import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, bas
 import { pekistirMenusu, pekistir, devamEt } from './pekistir.js';
 import { ilerlemeSayfasi } from './ilerleme.js';
 import { ayarlarSayfasi } from './ayarlar.js';
+import { aramaSayfasi } from './arama.js';
+import { zamanSayfasi } from './zaman.js';
+import { akimKarsilastirSayfasi } from './akim.js';
 
 // ---------- yönlendirme ----------
 const rotalar = [
   [/^#?\/?$/, anaSayfa, 'bugun'],
   [/^#\/gozat$/, gozAt, 'gozat'],
+  [/^#\/ara$/, aramaSayfasi, 'gozat'],
+  [/^#\/zaman$/, zamanSayfasi, 'gozat'],
+  [/^#\/akim-karsilastir\/([^/]+)\/([^/]+)$/, akimKarsilastirSayfasi, null],
   [/^#\/akim\/(.+)$/, akimSayfasi, 'gozat'],
   [/^#\/sanatci\/(.+)\/eserler$/, tumEserler, 'gozat'],
   [/^#\/sanatci\/(.+)$/, sanatciSayfasi, 'gozat'],

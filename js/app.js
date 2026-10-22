@@ -13,6 +13,9 @@ import { yonlendir } from './ekranlar/yonlendirme.js';
 import { olaylariBagla as bugunOlaylari } from './ekranlar/bugun.js';
 import { olaylariBagla as ilerlemeOlaylari } from './ekranlar/ilerleme.js';
 import { olaylariBagla as ayarlarOlaylari } from './ekranlar/ayarlar.js';
+import { olaylariBagla as aramaOlaylari } from './ekranlar/arama.js';
+import { olaylariBagla as zamanOlaylari } from './ekranlar/zaman.js';
+import { olaylariBagla as akimOlaylari } from './ekranlar/akim.js';
 
 // ---------- service worker ----------
 function swKaydet() {
@@ -90,5 +93,8 @@ bugunOlaylari();
 pekistirOlaylari();
 ilerlemeOlaylari();
 ayarlarOlaylari();
+aramaOlaylari();
+zamanOlaylari();
+akimOlaylari();
 
 basla().catch(hataGoster);

@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.24.0';
+const SURUM = '1.25.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -57,6 +57,12 @@ const KABUK_DOSYALARI = [
   'js/tasarim.js',
   'js/ters.js',
   'js/turlar.js',
+  'js/arama.js',
+  'js/ekranlar/arama.js',
+  'js/zaman.js',
+  'js/ekranlar/zaman.js',
+  'js/akim.js',
+  'js/ekranlar/akim.js',
   'js/wikidata.js',
   'js/yardimci.js',
   'icons/icon-192.png',
@@ -70,9 +76,21 @@ const KABUK_DOSYALARI = [
   'data/akim_bilgi.json',
   'data/biyografiler.json',
   'data/kisa_adlar.json',
+  'data/akim_ozellikleri.json',
 ];
 // Olmasa da kurulumu bozmayan dosyalar
-const ISTEGE_BAGLI = ['data/eserler_onbellek.json', 'data/tanima_notlari.json', 'data/eser_notlari.json', 'data/eser_adlari_tr.json', 'data/eser_zorluk.json', 'data/basyapitlar.json', 'data/ikonografi.json', 'data/yerel_gorseller.json', 'data/gorsel_oranlari.json', 'icons/icon-maskable-512.png'];
+const ISTEGE_BAGLI = [
+  'data/eserler_onbellek.json',
+  'data/tanima_notlari.json',
+  'data/eser_notlari.json',
+  'data/eser_adlari_tr.json',
+  'data/eser_zorluk.json',
+  'data/basyapitlar.json',
+  'data/ikonografi.json',
+  'data/yerel_gorseller.json',
+  'data/gorsel_oranlari.json',
+  'icons/icon-maskable-512.png',
+];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
@@ -99,7 +117,13 @@ self.addEventListener('activate', (e) => {
 // Sayfa yüklenemeyen (büyük olasılıkla hata gövdeli opak) bir görseli bildirir: önbellekten sil
 self.addEventListener('message', (e) => {
   if (e.data && e.data.tip === 'resim-sil' && typeof e.data.url === 'string') {
-    e.waitUntil(caches.open(RESIM).then((c) => c.delete(e.data.url)).then(() => metaSil(e.data.url)).catch(() => {}));
+    e.waitUntil(
+      caches
+        .open(RESIM)
+        .then((c) => c.delete(e.data.url))
+        .then(() => metaSil(e.data.url))
+        .catch(() => {}),
+    );
   }
 });
 

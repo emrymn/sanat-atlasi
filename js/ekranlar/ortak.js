@@ -193,7 +193,7 @@ function renkleriYaz(palet) {
 }
 
 // Eserin paleti; CORS ya da ağ hatasında yedek renk (tek renkli palet) ya da null
-async function eserPaleti(e, yedekRenk) {
+export async function eserPaleti(e, yedekRenk) {
   const g = e && (secilenGorsel(e, kotuler()) || e.gorseller[0]);
   try {
     return await paletGetir(paletUrl(g));
