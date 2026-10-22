@@ -140,6 +140,7 @@ function parcalar() {
     ozet: `<p class="ozet-satir" data-parca="ozet">${k.size} / ${d.konular.length} konu işlendi · ${acikSanatcilar(d.sanatcilar, k).length} sanatçı açık · ${vade} tekrar bekliyor</p>`,
     siradaki: `<div data-parca="siradaki">${siradakiKonuHtml(k, sayi)}</div>`,
     kurs: `<div data-parca="kurs">${kursBolumleriHtml(bolumler, k)}</div>`,
+    tanis: `<div data-parca="tanis">${tanisKartiHtml()}</div>`,
     alt: `<div data-parca="alt">
     <h2 class="etiket bolum-baslik">Akımlara göre doğruluk</h2>
     ${akimSatirlari.length ? `<div style="border-top:1px solid var(--border)">${akimSatirlari.join('')}</div>` : '<p class="ikincil">Henüz açık akım yok.</p>'}
@@ -159,6 +160,7 @@ function parcalar() {
 }
 
 export function ilerlemeSayfasi() {
+  d.tanisKarti = null;
   d.kitaplikDurgun = false;
   d.kartDurgun = false;
   const p = parcalar();
@@ -173,7 +175,8 @@ export function ilerlemeSayfasi() {
     <h2 class="etiket bolum-baslik">Kurs konuları</h2>
     <p class="kucuk ikincil" style="margin:-4px 0 10px">Bir konuya dokun, bitirdiysen “işlendi” yap; o konunun sanatçıları açılır.</p>
     ${p.kurs}
-    ${p.alt}`);
+    ${p.alt}
+    ${p.tanis}`);
   // kitaplar yalnızca sayfa ilk açılınca rafa dizilerek gelir; sonraki değişikliklerde yerinde durur
   d.kitaplikDurgun = true;
   kucukKareleriDoldur();
@@ -190,12 +193,37 @@ function yenile(adlar = ['kurs'], kartAcildi = false) {
     if (el) el.outerHTML = p[ad];
   }
   window.scrollTo(0, kaydirma);
-  if (adlar.includes('alt')) kucukKareleriDoldur();
+  if (adlar.includes('alt') || adlar.includes('tanis')) kucukKareleriDoldur();
 }
-const HEPSI = ['ozet', 'siradaki', 'kurs', 'alt'];
+const HEPSI = ['ozet', 'siradaki', 'kurs', 'alt', 'tanis'];
+
+// Ö6 · Konu işlenince alttan kart: "4 yeni sanatçı açıldı · Tanış" → #/pekistir/konu/<no>
+function tanisKartiHtml() {
+  const t = d.tanisKarti;
+  if (!t) return '';
+  const l = t.idler.map((id) => d.harita.get(id)).filter(Boolean);
+  if (!l.length) return '';
+  // yalnızca ilk çizimde alttan kayarak gelir; yerinde güncellemelerde durur
+  const gir = t.anahtar !== d.tanisCizilen;
+  d.tanisCizilen = t.anahtar;
+  return `<aside class="tanis-karti${gir ? ' gir' : ''}" data-test="tanis-karti" aria-label="Yeni açılan sanatçılar">
+      <div class="tanis-kareler" aria-hidden="true">${l
+        .slice(0, 4)
+        .map((s) => `<span class="kucuk-kare" data-kucuk="${kacis(s.id)}"></span>`)
+        .join('')}</div>
+      <div class="tanis-yazi"><b>${l.length} yeni sanatçı açıldı</b><span>Konu ${t.no} · ${kacis(l.map((s) => bilinenAd(s.ad, d.kisaAdlar[s.id])).join(', '))}</span></div>
+      <a class="dugme tanis-dugme" href="#/pekistir/konu/${t.no}" data-test="tanis-dugme">Tanış</a>
+      <button class="tanis-kapat" type="button" data-tanis-kapat aria-label="Kapat">${ikon('kapat', 18, 1.7)}</button>
+    </aside>`;
+}
+
+// Tek konu işlendiyse ve yeni sanatçı açıldıysa kart (bildirim yerine)
+function tanisKartiAc(no, yeni) {
+  d.tanisKarti = yeni.length ? { no, idler: yeni.map((s) => s.id), anahtar: Date.now() } : null;
+}
 
 // Konuları işlendi / işlenmedi yapar; yeni açılan sanatçıları bildirir
-function konuIsaretle(nolar, islendi) {
+function konuIsaretle(nolar, islendi, { kartla = false } = {}) {
   const once = d.ilerleme.islenen.slice();
   const s = new Set(once);
   for (const no of [].concat(nolar)) islendi ? s.add(no) : s.delete(no);
@@ -203,6 +231,8 @@ function konuIsaretle(nolar, islendi) {
   kaydet();
   d.oturum = null;
   const yeni = yeniAcilanlar(d.sanatcilar, once, d.ilerleme.islenen);
+  if (kartla) tanisKartiAc(nolar, islendi ? yeni : []);
+  if (kartla && islendi && yeni.length) return yeni;
   if (yeni.length > 6) bildir(`${yeni.length} sanatçı açıldı.`);
   else if (yeni.length) bildir(`Açıldı: ${yeni.map((x) => x.ad).join(', ')}`);
   else if (!islendi) bildir(`Konu ${nolar} işlenmedi olarak işaretlendi.`);
@@ -220,12 +250,17 @@ export function olaylariBagla() {
     const kutu = e.target.closest('[data-konu]');
     if (!kutu) return;
     const no = Number(kutu.dataset.konu);
-    konuIsaretle(no, kutu.checked);
+    konuIsaretle(no, kutu.checked, { kartla: true });
     yenile(HEPSI);
     odakla(`[data-konu="${no}"]`);
   });
 
   ekran.addEventListener('click', (e) => {
+    if (e.target.closest('[data-tanis-kapat]')) {
+      d.tanisKarti = null;
+      yenile(['tanis']);
+      return;
+    }
     const kp = e.target.closest('[data-kurs-kip]');
     if (kp) {
       d.kursHizli = kp.dataset.kursKip === 'isaretle';
@@ -236,6 +271,7 @@ export function olaylariBagla() {
     const kd = e.target.closest('[data-konu-kadar]');
     if (kd) {
       const son = Number(kd.dataset.konuKadar);
+      d.tanisKarti = null;
       konuIsaretle(
         d.konular.filter((x) => x.no <= son).map((x) => x.no),
         true,
@@ -249,7 +285,7 @@ export function olaylariBagla() {
     const no = Number(kk.dataset.kursKonu);
     if (d.kursHizli) {
       // İşaretle kipi: dokunuş doğrudan işlendi / işlenmedi
-      konuIsaretle(no, !islenen().has(no));
+      konuIsaretle(no, !islenen().has(no), { kartla: true });
       yenile(HEPSI);
       odakla(`[data-kurs-konu="${no}"]`);
       return;
@@ -265,7 +301,7 @@ export function olaylariBagla() {
     const b = e.target.closest('[data-konu-isle]');
     if (!b) return;
     const no = Number(b.dataset.konuIsle);
-    konuIsaretle(no, true);
+    konuIsaretle(no, true, { kartla: true });
     d.siradakiGecti = true; // yeni sıradaki konu kayarak gelir
     yenile(HEPSI);
     d.siradakiGecti = false;

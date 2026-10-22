@@ -3761,3 +3761,195 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
     transform: rotateY(180deg);
   }
 }
+
+/* ---------- Rapor 5. paket ----------
+   Ö6 · Konu işlenince alttan tanışma kartı: mürekkep şerit, açılan sanatçıların küçük eserleri yelpaze gibi açılır.
+   Ö5 · Hatalarım satırı: kutu yok; solda büyük kırmızı sayı, altında karıştırılan ikililer.
+   Ö9 · Dönem turunun üstünde üç seviye hapı. */
+.tanis-karti {
+  position: fixed;
+  left: calc(env(safe-area-inset-left) + 14px);
+  right: calc(env(safe-area-inset-right) + 14px);
+  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 10px);
+  z-index: 40;
+  max-width: 520px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 4px 10px 12px;
+  border-radius: 4px;
+  background: var(--ink);
+  color: var(--bg);
+  box-shadow: 0 14px 30px -14px rgba(0, 0, 0, 0.55);
+}
+.tanis-karti.gir {
+  animation: tanis-gel 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+.tanis-kareler {
+  display: flex;
+  padding-left: 10px;
+}
+.tanis-kareler .kucuk-kare {
+  width: 34px;
+  height: 34px;
+  margin-left: -12px;
+  border: 2px solid var(--ink);
+  border-radius: 3px;
+  background: var(--ink-2);
+  overflow: hidden;
+  transform: rotate(calc((var(--k, 0) - 1.5) * 6deg));
+}
+.tanis-kareler .kucuk-kare:nth-child(1) {
+  --k: 0;
+}
+.tanis-kareler .kucuk-kare:nth-child(2) {
+  --k: 1;
+}
+.tanis-kareler .kucuk-kare:nth-child(3) {
+  --k: 2;
+}
+.tanis-kareler .kucuk-kare:nth-child(4) {
+  --k: 3;
+}
+.tanis-karti.gir .kucuk-kare {
+  animation: tanis-yelpaze 0.6s calc(0.25s + var(--k) * 70ms) cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+.tanis-kareler img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.tanis-yazi {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.tanis-yazi b {
+  font: 400 16px/1.2 var(--serif);
+}
+.tanis-yazi span {
+  font-size: 12.5px;
+  opacity: 0.75;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tanis-dugme {
+  min-height: 44px;
+  padding: 0 16px;
+  background: var(--bg);
+  color: var(--ink);
+  border-color: var(--bg);
+  font-weight: 650;
+}
+.tanis-kapat {
+  width: 36px;
+  min-height: 44px;
+  border: 0;
+  background: none;
+  color: var(--bg);
+  opacity: 0.7;
+  cursor: pointer;
+}
+@keyframes tanis-gel {
+  from {
+    transform: translateY(calc(100% + 30px));
+  }
+}
+@keyframes tanis-yelpaze {
+  from {
+    transform: rotate(0deg) translateX(calc(var(--k) * -14px));
+    opacity: 0;
+  }
+}
+
+.hatalar-satir {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 4px 14px;
+  margin-top: 14px;
+  padding: 12px 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--border);
+  color: var(--ink);
+  text-decoration: none;
+}
+.hatalar-sayi {
+  min-width: 1.2ch;
+  font: 400 44px/0.9 var(--serif);
+  font-variant-numeric: lining-nums;
+  color: var(--wrong);
+}
+.hatalar-satir .metin {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.hatalar-satir .metin b {
+  font: 400 19px/1.2 var(--serif);
+}
+.hatalar-satir .metin > span {
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+.hatalar-ikili {
+  font: italic 400 14px/1.35 var(--serif);
+  color: var(--ink);
+}
+
+.seviye-haplar {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+.seviye-hap {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 34px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: none;
+  color: var(--ink-2);
+  font: 500 13.5px/1 var(--sans);
+  cursor: pointer;
+  position: relative;
+}
+/* dokunma alanı 44 px */
+.seviye-hap::after {
+  content: '';
+  position: absolute;
+  inset: -5px 0;
+}
+.seviye-hap.secili {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+  font-weight: 650;
+}
+.seviye-hap small {
+  font: italic 400 12px/1 var(--serif);
+  opacity: 0.8;
+}
+.seviye-hap.kilitli {
+  border-style: dashed;
+  color: var(--ink-soluk);
+  cursor: default;
+}
+.seviye-haplar + .soru-sahne {
+  --soru-resim-h: clamp(200px, calc(100dvh - 372px - env(safe-area-inset-top) - env(safe-area-inset-bottom)), 700px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .tanis-karti.gir,
+  .tanis-karti.gir .kucuk-kare {
+    animation: none;
+  }
+}
