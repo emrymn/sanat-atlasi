@@ -1871,3 +1871,17 @@ html.sekmesiz .sekmeler {
 .konu-eserler .eser-yazi b {
   font-weight: 600;
 }
+
+/* ---------- Seviyeler ---------- */
+.seviye-satir {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.seviye-satir.gecti {
+  color: var(--right, var(--ink));
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
