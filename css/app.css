@@ -2351,12 +2351,6 @@ main[data-hareket='yeni-kart'] .tanisma-eser:nth-child(2) {
 main[data-hareket='yeni-kart'] .tanisma-eser:nth-child(3) {
   animation-delay: 160ms;
 }
-@keyframes tablo-gir {
-  from {
-    opacity: 0;
-    transform: scale(0.94) translateY(10px);
-  }
-}
 /* ilerleme çubuğu önceki karttan bu karta dolar */
 .ince-cubuk > i {
   animation: dol 0.6s cubic-bezier(0.3, 0.8, 0.3, 1);
@@ -2426,6 +2420,184 @@ main[data-hareket='cevap'] .sonuc {
     background-color 0.15s ease,
     border-color 0.15s ease,
     transform 0.12s ease;
+}
+
+/* ---------- Hareket · 2 ---------- */
+/* Sekme değişince yeni ekran geldiği yönden kayar */
+main[data-hareket='giris'][data-yon='sag'] > :not(.alt-yaprak) {
+  animation-name: sahne-sag;
+}
+main[data-hareket='giris'][data-yon='sol'] > :not(.alt-yaprak) {
+  animation-name: sahne-sol;
+}
+@keyframes sahne-sag {
+  from {
+    opacity: 0;
+    transform: translateX(28px);
+  }
+}
+@keyframes sahne-sol {
+  from {
+    opacity: 0;
+    transform: translateX(-28px);
+  }
+}
+
+/* Bugün açılışı: tablo galeri ışıkları yanar gibi aşağıdan yukarı açılır, sonra isim satır satır belirir */
+.sahne-yapiskan::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--bg);
+  transform: scaleY(0);
+  transform-origin: top;
+  pointer-events: none;
+}
+main.perde .sahne-yapiskan::before {
+  animation: perde 1.1s cubic-bezier(0.7, 0, 0.2, 1) both;
+}
+@keyframes perde {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+main.perde .sahne-isim > * {
+  animation: sahne-gir 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+main.perde .sahne-isim .ad-ilk {
+  animation: sahne-gir 0.7s 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+main.perde .sahne-isim .ad-son {
+  display: block;
+  animation: isim-acil 0.9s 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+main.perde .sahne-isim .meta {
+  animation-delay: 0.95s;
+}
+main.perde .sahne-dugme {
+  animation: sahne-gir 0.6s 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+@keyframes isim-acil {
+  from {
+    opacity: 0;
+    letter-spacing: 0.08em;
+    filter: blur(4px);
+  }
+}
+
+/* Pekiştir hapının üstünden arada bir yaldız ışığı geçer */
+.sahne-dugme {
+  overflow: hidden;
+}
+.sahne-dugme::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 236, 190, 0.28) 50%, transparent 65%);
+  transform: translateX(-120%);
+  animation: hap-isik 6s 2.2s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes hap-isik {
+  0% {
+    transform: translateX(-120%);
+  }
+  18%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+/* Mozaik kaydırdıkça yukarıdan aşağı örülür */
+@supports (animation-timeline: view()) {
+  .hikaye {
+    view-timeline: --mozaik block;
+  }
+  .hikaye::before {
+    animation: mozaik-ac linear both;
+    animation-timeline: --mozaik;
+    animation-range: entry 0% entry 90%;
+  }
+}
+@keyframes mozaik-ac {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Pekiştir: yeni kart sağdan, bir sonraki tablo gibi kayarak gelir */
+@keyframes tablo-gir {
+  from {
+    opacity: 0;
+    transform: translateX(48px) scale(0.96);
+  }
+}
+
+/* Tur özeti: sayı sayarak gelir; hepsi doğruysa yaldız yaprakları süzülür */
+main[data-hareket='giris'] .ozet .ad {
+  animation: dogru-pop 0.6s 1s cubic-bezier(0.3, 1.5, 0.5, 1);
+}
+.yaldiz-yapraklar {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  overflow: hidden;
+  pointer-events: none;
+}
+.yaldiz-yapraklar i {
+  position: absolute;
+  top: -20px;
+  left: var(--x);
+  width: var(--b);
+  height: calc(var(--b) * 0.6);
+  border-radius: 2px 6px;
+  background: linear-gradient(135deg, #f3dc9a, var(--vurgu-acik) 55%, #8a6a2a);
+  opacity: 0;
+  animation: yaprak-dus var(--s) var(--g) cubic-bezier(0.3, 0.2, 0.6, 1) forwards;
+}
+@keyframes yaprak-dus {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(var(--d));
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(40px, 105vh) rotate(calc(var(--d) + 540deg));
+  }
+}
+
+/* İlerleme çubukları sıfırdan dolar; seviye atlama satırı parlar */
+.cubuk > i {
+  animation: cubuk-dol 0.9s 0.2s cubic-bezier(0.3, 0.8, 0.3, 1) backwards;
+}
+@keyframes cubuk-dol {
+  from {
+    width: 0;
+  }
+}
+.seviye-satir.gecti {
+  animation: dogru-pop 0.6s 0.3s cubic-bezier(0.3, 1.5, 0.5, 1);
+}
+
+/* Küçük resimler yüklenince hafifçe yerine oturur */
+.cerceve img.yuklendi,
+.eserler img.yuklendi {
+  animation: resim-otur 0.5s ease-out;
+}
+@keyframes resim-otur {
+  from {
+    transform: scale(1.04);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

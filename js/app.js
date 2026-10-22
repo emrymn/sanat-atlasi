@@ -286,6 +286,9 @@ function sekmeleriCiz(etkin) {
       SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" data-sekme="${id}">${ikon(id, 23, 1.5)}<span>${ad}</span></a>`).join('');
   }
   const i = SEKMELER.findIndex(([id]) => id === etkin);
+  // sekme değişince yeni ekran geldiği yönden kayar (sağdaki sekme sağdan)
+  const onceki = Number(nav.style.getPropertyValue('--i'));
+  ekran.dataset.yon = nav.style.getPropertyValue('--i') === '' || onceki === i ? '' : i > onceki ? 'sag' : 'sol';
   nav.style.setProperty('--i', Math.max(i, 0));
   for (const a of nav.querySelectorAll('a')) {
     if (a.dataset.sekme === etkin) a.setAttribute('aria-current', 'page');
@@ -369,6 +372,7 @@ function ciz(html, hareket) {
   const adres = location.hash || '#/';
   ekran.dataset.hareket = hareket ?? (adres !== sonCizilenAdres ? 'giris' : '');
   sonCizilenAdres = adres;
+  ekran.classList.remove('perde');
   ekran.innerHTML = html;
   ekran.style.paddingBottom = '';
   window.scrollTo(0, 0);
@@ -544,6 +548,9 @@ function anaSayfa() {
         : ''
     }
     <p class="sakin"><span data-test="acik-sayi">${ist.acik}</span> açık sanatçı · ${ist.oran === null ? 'henüz cevap yok' : `%${ist.oran} doğru`} · bugün ${g.kart} / ${d.ilerleme.ayarlar.gunlukKart} kart · <a href="#/ayarlar">Ayarlar</a></p>`);
+  // uygulama açılışında bir kez: tablo perde açılır gibi belirir, isim satır satır gelir
+  ekran.classList.toggle('perde', !d.perdeAcildi);
+  d.perdeAcildi = true;
   if (gs) {
     gununKartGorseli(gs);
     sahneBiyografisi(gs);
@@ -1797,7 +1804,34 @@ function ozetCiz() {
       <p class="okuma italik">${ot.yanlis ? 'Yanlış yaptıkların daha sık karşına çıkacak.' : 'Hepsi doğru, harika.'}</p>
     </div>
     ${gecenlerHtml(o.gecenler || [])}
-    <div class="menu"><button class="dugme vurgu" type="button" data-yeni-tur>Bir tur daha</button><a class="dugme" href="#/">Bugün</a></div>`);
+    <div class="menu"><button class="dugme vurgu" type="button" data-yeni-tur>Bir tur daha</button><a class="dugme" href="#/">Bugün</a></div>
+    ${toplam && !ot.yanlis ? yaldizYapraklari() : ''}`);
+  sayarakYaz(ekran.querySelector('.ozet .ad'), ot.dogru, toplam);
+}
+
+// Sonuç sayısı sıfırdan sayarak gelir (hareket azaltma açıksa doğrudan yazılır)
+function sayarakYaz(el, hedef, toplam) {
+  if (!el || !hedef || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const bas = performance.now();
+  const sure = Math.min(1200, 300 + hedef * 60);
+  const adim = (t) => {
+    if (!el.isConnected) return;
+    const x = Math.min(1, (t - bas) / sure);
+    el.textContent = `${Math.round(hedef * (1 - (1 - x) ** 3))} / ${toplam}`;
+    if (x < 1) requestAnimationFrame(adim);
+  };
+  el.textContent = `0 / ${toplam}`;
+  requestAnimationFrame(adim);
+}
+
+// Hepsi doğruysa ekranın üstünden süzülen yaldız yaprakları (dekoratif)
+function yaldizYapraklari() {
+  let h = '';
+  for (let i = 0; i < 18; i++) {
+    const r = (n) => ((Math.sin(i * 12.9898 + n * 78.233) * 43758.5453) % 1 + 1) % 1;
+    h += `<i style="--x:${(r(1) * 100).toFixed(1)}%;--g:${(r(2) * 1.6).toFixed(2)}s;--s:${(2.6 + r(3) * 2).toFixed(2)}s;--d:${Math.round(r(4) * 360)}deg;--b:${(6 + r(5) * 8).toFixed(1)}px"></i>`;
+  }
+  return `<div class="yaldiz-yapraklar" aria-hidden="true">${h}</div>`;
 }
 
 // ---------- Seviyeler ----------
