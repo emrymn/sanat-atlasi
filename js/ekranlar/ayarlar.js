@@ -5,10 +5,15 @@ import { gorselUrl, secilenGorsel } from '../gorsel.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
-import { acikListe, kotuler, d, gununRengi, ciz, ust, TEMA_AD, TAHMINI_GORSEL_KB, ekran, kaydet, temaUygula } from './ortak.js';
+import { acikListe, bugun, kotuler, d, gununRengi, ciz, ust, TEMA_AD, TAHMINI_GORSEL_KB, ekran, kaydet, temaUygula } from './ortak.js';
 import { yedekTarihiYaz } from './bugun.js';
 import { yarimSil } from './pekistir.js';
 import { SURUM } from '../surum.js';
+import { kacis } from '../yardimci.js';
+import { vadeSayisi, yarinVade } from '../gecmis.js';
+import { rozetDestekli, rozetYaz, rozetIzni } from '../rozet.js';
+import { bildirimMetni } from '../bildirim.js';
+import { YENILIKLER, yenilikYazisi } from '../yenilikler.js';
 
 // ---------- Ayarlar ----------
 async function indirilecekler() {
@@ -27,6 +32,27 @@ async function alanYazisi() {
   } catch (e) {
     return '';
   }
+}
+
+// İ5: bildirilen görseller; JSON olarak kopyalanır (bir Claude oturumuna verilip gorsel_kararlari.json'a işletilir)
+function bildirimBolumu() {
+  const b = d.ilerleme.bildirimler || [];
+  const ilk = b.slice(0, 8);
+  return `<div class="ayar" data-test="bildirimler"><b>Bildirdiğim görseller</b>
+        <p>${b.length ? `${b.length} bildirim. Bildirilen görseller ve eserler pekiştirmede çıkmaz. Listeyi kopyalayıp bir Claude oturumuna ver; görsel kararlarına işlensin.` : 'Henüz bildirdiğin görsel yok. Eser görüntüleyicide ya da cevap yaprağında “⋯” ile bildirebilirsin.'}</p>
+        ${ilk.length ? `<ul class="bildir-liste">${ilk.map((x) => `<li>${kacis(x.baslik || x.a)}<small>${kacis(x.neden)} · ${kacis(x.t)}</small></li>`).join('')}${b.length > ilk.length ? `<li><small>ve ${b.length - ilk.length} bildirim daha</small></li>` : ''}</ul>` : ''}
+        ${b.length ? '<button class="dugme" type="button" data-bildirim-kopyala>JSON olarak kopyala</button> <button class="dugme" type="button" data-bildirim-temizle>Listeyi temizle</button>' : ''}
+        <textarea id="bildirim-cikti" readonly hidden aria-label="Bildirim listesi"></textarea>
+        <p class="mesaj" id="bildirim-mesaj" aria-live="polite"></p>
+      </div>`;
+}
+
+// İ2: rozet sayısı. Uygulama açıkken bugünün, gizlenirken (kapanırken) yarının vadeli sanatçı sayısı
+export function rozetiGuncelle(kapaniyor = false) {
+  if (!d.ilerleme || !d.ilerleme.ayarlar.rozet) return Promise.resolve(false);
+  const idler = acikListe().map((s) => s.id);
+  const n = kapaniyor ? yarinVade(d.ilerleme.skorlar, idler, bugun()) : vadeSayisi(d.ilerleme.skorlar, idler, bugun());
+  return rozetYaz(n);
 }
 
 export function ayarlarSayfasi() {
@@ -49,6 +75,9 @@ export function ayarlarSayfasi() {
       </div>
       <div class="ayar"><label class="konu"><span class="metin"><b>Yeni sanatçıyla önce tanış</b><small>Bir sanatçı ilk kez sorulmadan önce en bilinen 3 eseri ve “Nasıl tanırım?” notu gösterilir.</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-tanisma ${a.tanisma !== false ? 'checked' : ''} aria-label="Yeni sanatçıyla önce tanış"></label></div>
+      <div class="ayar"><label class="konu"><span class="metin"><b>Simge rozeti</b><small>${rozetDestekli() ? 'Ana ekrandaki Atlas simgesinde tekrarı gelen sanatçı sayısı görünür. İzin ister; sayı uygulama kapanırken yarının sayısına ayarlanır.' : 'Bu tarayıcı simge rozetini desteklemiyor (iOS 16.4+ ana ekran uygulaması gerekir).'}</small></span>
+        <input class="anahtar" type="checkbox" role="switch" data-ayar-rozet ${a.rozet ? 'checked' : ''} ${rozetDestekli() ? '' : 'disabled'} aria-label="Simge rozeti"></label>
+        <p class="mesaj" id="rozet-mesaj" aria-live="polite"></p></div>
       <div class="ayar"><b>Görselleri çevrimdışı indir</b>
         <p id="indir-bilgi">Açık sanatçıların pekiştirme görselleri (sanatçı başına en fazla ${TEST_HAVUZU}) hesaplanıyor…</p>
         <button class="dugme" type="button" data-indir>İndir</button>
@@ -66,6 +95,10 @@ export function ayarlarSayfasi() {
         <textarea id="yedek-girdi" aria-label="Geri yüklenecek yedek" placeholder='{"uygulama":"sanat-atlasi", …}'></textarea>
         <button class="dugme" type="button" data-geri-yukle>Geri yükle</button>
         <p class="mesaj" id="geri-mesaj" aria-live="polite"></p>
+      </div>
+      ${bildirimBolumu()}
+      <div class="ayar"><b>Yenilikler</b>
+        <ul class="yenilik-liste" data-test="yenilikler">${YENILIKLER.map((x) => `<li>${kacis(yenilikYazisi(x))}</li>`).join('')}</ul>
       </div>
     </div>
     <p class="alt-not">Sanat Atlası ${SURUM} · Görseller: Wikimedia Commons, müze açık erişim koleksiyonları ve WikiArt · Eser listeleri: Wikidata</p>`);
@@ -140,6 +173,31 @@ export function olaylariBagla() {
       return;
     }
     if (e.target.closest('[data-indir]')) return gorselleriIndir();
+    if (e.target.closest('[data-bildirim-kopyala]')) {
+      const metin = bildirimMetni(d.ilerleme);
+      const ta = document.getElementById('bildirim-cikti');
+      const m = document.getElementById('bildirim-mesaj');
+      ta.hidden = false;
+      ta.value = metin;
+      try {
+        await navigator.clipboard.writeText(metin);
+        m.className = 'mesaj tamam';
+        m.textContent = 'Bildirim listesi panoya kopyalandı.';
+      } catch (err) {
+        ta.focus();
+        ta.select();
+        m.className = 'mesaj';
+        m.textContent = 'Panoya otomatik kopyalanamadı; metni seçip kopyala.';
+      }
+      return;
+    }
+    if (e.target.closest('[data-bildirim-temizle]')) {
+      if (!confirm('Bildirim listesi silinsin mi? (Bildirilen görseller pekiştirmeden çıkmış olarak kalır.)')) return;
+      d.ilerleme.bildirimler = [];
+      kaydet();
+      ayarlarSayfasi();
+      return;
+    }
     if (e.target.closest('[data-yedekle]')) {
       yedekTarihiYaz();
       const metin = yedekMetni(d.ilerleme, d.yarim);
@@ -183,7 +241,23 @@ export function olaylariBagla() {
     }
   });
 
-  ekran.addEventListener('change', (e) => {
+  ekran.addEventListener('change', async (e) => {
+    if (e.target.matches('[data-ayar-rozet]')) {
+      const m = document.getElementById('rozet-mesaj');
+      if (e.target.checked && !(await rozetIzni())) {
+        e.target.checked = false;
+        m.className = 'mesaj hata';
+        m.textContent = 'Bildirim izni verilmedi; rozet açılamadı. iOS Ayarlar’dan Atlas için bildirimlere izin verebilirsin.';
+        return;
+      }
+      d.ilerleme.ayarlar.rozet = e.target.checked;
+      kaydet();
+      if (e.target.checked) await rozetiGuncelle();
+      else await rozetYaz(0);
+      m.className = 'mesaj tamam';
+      m.textContent = e.target.checked ? 'Rozet açıldı.' : 'Rozet kapatıldı.';
+      return;
+    }
     if (e.target.matches('[data-ayar-tanisma]')) {
       d.ilerleme.ayarlar.tanisma = e.target.checked;
       kaydet();

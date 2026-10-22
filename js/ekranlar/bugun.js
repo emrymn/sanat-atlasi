@@ -42,6 +42,8 @@ import {
   bildir,
 } from './ortak.js';
 import { devamKarti } from './pekistir.js';
+import { SURUM } from '../surum.js';
+import { gosterilecekler, yenilikYazisi } from '../yenilikler.js';
 
 // ---------- sayımlar ----------
 function istatistik() {
@@ -177,6 +179,7 @@ export function anaSayfa() {
         )}</span>${son.length > 2 ? `<span class="ek">+${son.length - 2}</span>` : ''}</span></div>`
       : ''
   }
+    ${yenilikHtml()}
     ${yedekHatirlatHtml()}
     <p class="sakin"><span data-test="acik-sayi">${ist.acik}</span> açık sanatçı · ${ist.oran === null ? 'henüz cevap yok' : `%${ist.oran} doğru`} · bugün ${g.kart} / ${d.ilerleme.ayarlar.gunlukKart} kart · <a href="#/ayarlar">Ayarlar</a></p>`;
   ciz(`
@@ -217,6 +220,21 @@ function yedekHatirlatHtml() {
   if (!h) return '';
   const paylas = typeof navigator.share === 'function' ? '<button type="button" data-hizli-yedek="paylas">Paylaş</button>' : '';
   return `<p class="yedek-hatirlat" data-test="yedek-hatirlat" aria-live="polite"><span>${kacis(h.metin)}</span><button type="button" data-hizli-yedek="kopyala">Yedekle</button>${paylas}</p>`;
+}
+
+// ---------- Yenilikler (T4) ----------
+// Sürüm değişince Bugün'de bir kez: not o oturum boyunca (kapatılana kadar) durur, sürüm hemen "görüldü" yazılır
+function yenilikHtml() {
+  if (d.yenilikNot === undefined) {
+    const calismis = Object.keys(d.ilerleme.skorlar).length > 0 || Object.keys(d.ilerleme.gecmis || {}).length > 0;
+    d.yenilikNot = gosterilecekler(d.ilerleme.sonSurum, SURUM, calismis);
+    if (d.ilerleme.sonSurum !== SURUM) {
+      d.ilerleme.sonSurum = SURUM;
+      kaydet();
+    }
+  }
+  if (!d.yenilikNot.length || d.yenilikKapali) return '';
+  return `<div class="yenilik-not" data-test="yenilik-not"><div class="metin"><b>Yenilikler</b>${d.yenilikNot.map((x) => `<span>${kacis(yenilikYazisi(x))}</span>`).join('<br>')}</div><button class="yenilik-kapat" type="button" data-yenilik-kapat aria-label="Yenilikler notunu kapat">${ikon('kapat', 18, 1.7)}</button></div>`;
 }
 
 // ---------- Günün sanatçısı ----------
@@ -427,6 +445,14 @@ export function olaylariBagla() {
       // pano izni yoksa ya da paylaşım iptal edildiyse Ayarlar'daki metin kutusu kalır
       if (err && err.name === 'AbortError') return;
       git('#/ayarlar');
+    }
+  });
+
+  ekran.addEventListener('click', (e) => {
+    const yk = e.target.closest('[data-yenilik-kapat]');
+    if (yk) {
+      d.yenilikKapali = true;
+      yk.closest('.yenilik-not').remove();
     }
   });
 

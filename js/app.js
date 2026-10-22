@@ -12,7 +12,7 @@ import { yarimYukle, olaylariBagla as pekistirOlaylari } from './ekranlar/pekist
 import { yonlendir } from './ekranlar/yonlendirme.js';
 import { olaylariBagla as bugunOlaylari } from './ekranlar/bugun.js';
 import { olaylariBagla as ilerlemeOlaylari } from './ekranlar/ilerleme.js';
-import { olaylariBagla as ayarlarOlaylari } from './ekranlar/ayarlar.js';
+import { olaylariBagla as ayarlarOlaylari, rozetiGuncelle } from './ekranlar/ayarlar.js';
 import { olaylariBagla as aramaOlaylari } from './ekranlar/arama.js';
 import { olaylariBagla as zamanOlaylari } from './ekranlar/zaman.js';
 import { olaylariBagla as akimOlaylari } from './ekranlar/akim.js';
@@ -30,16 +30,31 @@ function swKaydet() {
   });
 }
 
+// T2: eser notları (~100 KB) yalnızca görüntüleyicide gerekir; ilk ekran çizildikten sonra yüklenir.
+// Görüntüleyici notlardan önce açıldıysa 'atlas-notlar' olayıyla yazısını yeniler.
+async function notlariYukle() {
+  d.eserNotlari = notlariAl(await jsonGetir('data/eser_notlari.json').catch(() => null));
+  d.eserNotlariHazir = true;
+  window.dispatchEvent(new Event('atlas-notlar'));
+}
+
+// İ2: uygulama açılınca bugünün, gizlenirken (kapanırken) yarının vadeli sayısı rozete yazılır
+function rozetiBagla() {
+  rozetiGuncelle(false);
+  document.addEventListener('visibilitychange', () => rozetiGuncelle(document.visibilityState === 'hidden'));
+  window.addEventListener('pagehide', () => rozetiGuncelle(true));
+}
+
 // ---------- başlangıç ----------
 async function basla() {
-  // İsteğe bağlı notlar (data/tanima_notlari.json, data/eser_notlari.json) aynı anda istenir; yoksa ya da bozuksa boş kalır
-  const [tumSanatcilar, akimlar, konular, turler, tanima, eserNot, eserAd, zorluk, yerelG, oranG] = await Promise.all([
+  // İsteğe bağlı notlar (data/tanima_notlari.json, …) aynı anda istenir; yoksa ya da bozuksa boş kalır.
+  // Eser notları (T2) ilk ekran çizildikten sonra yüklenir (aşağıda notlariYukle)
+  const [tumSanatcilar, akimlar, konular, turler, tanima, eserAd, zorluk, yerelG, oranG] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
     jsonGetir('data/konular.json'),
     jsonGetir('data/eser_turleri.json').catch(() => null),
     jsonGetir('data/tanima_notlari.json').catch(() => null),
-    jsonGetir('data/eser_notlari.json').catch(() => null),
     jsonGetir('data/eser_adlari_tr.json').catch(() => null),
     jsonGetir('data/eser_zorluk.json').catch(() => null),
     jsonGetir('data/yerel_gorseller.json').catch(() => null),
@@ -48,7 +63,6 @@ async function basla() {
   d.kisaAdlar = (await jsonGetir('data/kisa_adlar.json').catch(() => ({ adlar: {} }))).adlar || {};
   d.konularTr = await jsonGetir('data/konular_tr.json').catch(() => null);
   d.tanimaNotlari = notlariAl(tanima);
-  d.eserNotlari = notlariAl(eserNot);
   eserAdlariniAyarla(adlariAl(eserAd));
   d.kolaylik = kolaylikAl(zorluk);
   yerelGorselleriAyarla(yerelG && yerelG.gorseller, yerelG && yerelG.buyuk);
@@ -82,6 +96,8 @@ async function basla() {
   swKaydet();
   // Konular (görüntüleyicideki "Konu:" bağlantısı için) ilk ekrandan sonra arka planda
   setTimeout(ikonografiVeri, 1500);
+  setTimeout(notlariYukle, 0);
+  rozetiBagla();
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
   // test ve hata ayıklama için
   window.__atlas = d;

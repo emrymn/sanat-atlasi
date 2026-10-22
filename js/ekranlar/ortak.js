@@ -11,6 +11,8 @@ import { ikon } from '../tasarim.js';
 import { adParcala } from '../adlar.js';
 import { paletGetir, renkTemasi } from '../renk.js';
 import { taninmaMetni, eserNotu } from '../karsilastir.js';
+import { koleksiyondaMi, koleksiyonDegistir } from '../koleksiyon.js';
+import { eseriBildir } from '../bildirim.js';
 
 // "Bilmiyorum" cevabının değeri (Ö4): hiçbir sanatçı kimliği ya da akım adıyla çakışmaz
 export const BILMIYORUM = '?';
@@ -85,6 +87,16 @@ export function kotuler() {
 export function gorselTercihi(sonra = null) {
   return {
     kotuler: kotuler(),
+    // K4: işaret düğmesi; İ5: "⋯" bildirim menüsü
+    koleksiyon: {
+      varMi: (e) => koleksiyondaMi(d.ilerleme, e),
+      degistir: (e) => {
+        const simdi = koleksiyonDegistir(d.ilerleme, e, bugunStr());
+        ilerlemeKaydet(d.ilerleme);
+        return simdi;
+      },
+    },
+    bildir: (e, neden, gorsel) => eseriBildir(d.ilerleme, e, gorsel, neden, bugunStr()),
     degisti: () => {
       kaydet();
       if (sonra) sonra();

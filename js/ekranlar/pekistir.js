@@ -7,6 +7,8 @@ import { kartlariSec, Oturum, kategori, turAltYazisi } from '../oturum.js';
 import { sanatciEserleri, eserSec, pekistirmeHavuzu, eserBaslik } from '../eserler.js';
 import { gorselUrl, gorselYedek, secilenGorsel } from '../gorsel.js';
 import { gunlukGuncelle, sonCalisilanEkle } from '../depo.js';
+import { gecmisEkle } from '../gecmis.js';
+import { bildirimSatiriHtml, bildirimTikla } from './bildirim.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { ikon } from '../tasarim.js';
 import { bilinenAd } from '../adlar.js';
@@ -819,7 +821,7 @@ function kartGoster(o) {
       ${seviyeSatiri(k)}
       <div data-yaprak-palet>${paletHtml(k.palet)}</div>
       ${not ? `<div class="ipucu-kutu" data-ipucu><p class="ipucu">${kacis(not)}</p></div>` : ''}
-      <p class="kaynak-satir">${kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler()))}</p>
+      ${bildirimSatiriHtml(kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler())))}
       ${karsilastirBag}
       <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="Sanatçı sayfası">Sanatçı</a>${ileri}</div>
     </section>`;
@@ -927,6 +929,8 @@ function kartiBitir(o, dogruMu) {
   o.kart.bitti = true;
   o.oturum.isle(dogruMu);
   gunlukGuncelle(d.ilerleme, bugun()).kart++;
+  const s = d.harita.get(o.kart.id);
+  gecmisEkle(d.ilerleme, bugun(), { dogru: dogruMu, akim: s && s.akim });
   kaydet();
 }
 
@@ -1144,6 +1148,7 @@ export function olaylariBagla() {
       });
       return;
     }
+    if (o && o.kart && o.kart.eser && bildirimTikla(e, o.kart.eser)) return;
     const kpa = e.target.closest('[data-kp-ac]');
     if (kpa && o && o.kart && o.kart.ters && o.kart.cevapSanatci === null) {
       kartpostalAc(o, Number(kpa.dataset.kpAc), kpa);

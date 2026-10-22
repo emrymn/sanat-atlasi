@@ -3,6 +3,9 @@ import { idbAl, idbKoy } from './idb.js';
 import { bugunStr } from './leitner.js';
 import { karisanlarDogrula } from './ogrenme.js';
 import { seviyelerDogrula } from './seviye.js';
+import { gecmisDogrula } from './gecmis.js';
+import { koleksiyonDogrula } from './koleksiyon.js';
+import { bildirimlerDogrula } from './bildirim.js';
 
 export const ANAHTAR = 'sanat-atlasi:ilerleme';
 // 2: "Gece galerisi" teması varsayılan oldu (eski varsayılan Sepya ve kaldırılan Koyu bir kez Gece'ye geçer)
@@ -14,7 +17,7 @@ export function varsayilanIlerleme(islenen = []) {
   return {
     surum: SURUM,
     islenen: islenen.slice(),
-    ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA, tanisma: true },
+    ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA, tanisma: true, rozet: false },
     skorlar: {},
     gunluk: { tarih: bugunStr(), yeni: 0, kart: 0, yeniIdler: [] },
     sonEserler: {},
@@ -24,6 +27,10 @@ export function varsayilanIlerleme(islenen = []) {
     karisanlar: {},
     seviyeler: {},
     sonYedek: null, // son yedeğin günü "YYYY-MM-DD" (İ3)
+    gecmis: {}, // günlük çalışma kaydı (İ1/İ4, js/gecmis.js)
+    koleksiyon: [], // işaretlenen eserler (K4)
+    bildirimler: [], // "Bu görsel hatalı" bildirimleri (İ5)
+    sonSurum: null, // Bugün'de "Yenilikler" notunun son gösterildiği sürüm (T4)
     olusturma: new Date().toISOString(),
   };
 }
@@ -56,6 +63,7 @@ export function ilerlemeDogrula(nesne) {
   if (!TEMALAR.includes(ayarlar.tema)) ayarlar.tema = VARSAYILAN_TEMA;
   ayarlar.gunlukKart = Math.min(100, Math.max(5, parseInt(ayarlar.gunlukKart, 10) || 20));
   ayarlar.tanisma = ayarlar.tanisma !== false;
+  ayarlar.rozet = ayarlar.rozet === true;
   return {
     ...t,
     islenen: [...new Set(v.islenen)].sort((a, b) => a - b),
@@ -72,6 +80,10 @@ export function ilerlemeDogrula(nesne) {
     karisanlar: karisanlarDogrula(v.karisanlar),
     seviyeler: seviyelerDogrula(v.seviyeler),
     sonYedek: typeof v.sonYedek === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v.sonYedek) ? v.sonYedek : null,
+    gecmis: gecmisDogrula(v.gecmis),
+    koleksiyon: koleksiyonDogrula(v.koleksiyon),
+    bildirimler: bildirimlerDogrula(v.bildirimler),
+    sonSurum: typeof v.sonSurum === 'string' && /^\d+\.\d+\.\d+$/.test(v.sonSurum) ? v.sonSurum : null,
     olusturma: v.olusturma || t.olusturma,
   };
 }

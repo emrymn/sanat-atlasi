@@ -14,13 +14,20 @@ export default defineConfig({
   reporter: [['list']],
   use: {
     ...devices['iPhone 13'],
-    browserName: 'chromium',
     viewport: { width: 390, height: 844 },
     baseURL: `http://localhost:${PORT}/sanat-atlasi/`,
     locale: 'tr-TR',
     timezoneId: 'Europe/Istanbul',
     trace: 'retain-on-failure',
   },
+  projects: [
+    // Varsayılan: bütün uçtan uca testler (npm run test:e2e)
+    { name: 'chromium', use: { browserName: 'chromium' } },
+    // T3: gerçek Safari motoru. Mac'te `npx playwright install webkit`, sonra `npm run test:webkit`.
+    // Yalnızca iPhone'a özgü davranışı sınayan testler (scroll() / view() zaman çizgileri, taşma); service worker
+    // ve ağ fikstürü ayrıntıları WebKit'te farklı olduğundan bütün takım orada çalıştırılmaz.
+    { name: 'webkit', use: { browserName: 'webkit' }, testMatch: /safari\.spec\.js$/ },
+  ],
   webServer: {
     command: `node scripts/sunucu.mjs ${PORT}`,
     url: `http://localhost:${PORT}/sanat-atlasi/`,

@@ -8,6 +8,7 @@ import { bilinenAd } from '../adlar.js';
 import { karsilastirmaAdresi } from '../karsilastir.js';
 import { enCokKarisanlar } from '../ogrenme.js';
 import { SEVIYELER, seviyeKaydi } from '../seviye.js';
+import { takvimHtml, egriHtml, koleksiyonBagi } from './calisma.js';
 import { d, etiket, islenen, bugun, akimNoktasi, ust, gununRengi, ciz, ekran, kucukKareleriDoldur, kaydet, bildir } from './ortak.js';
 
 // ---------- İlerleme ----------
@@ -138,6 +139,7 @@ function parcalar() {
   const vade = acikSanatcilar(d.sanatcilar, k).filter((s) => kategori(d.ilerleme.skorlar, s.id, 'karisik', b) === 0).length;
   return {
     ozet: `<p class="ozet-satir" data-parca="ozet">${k.size} / ${d.konular.length} konu işlendi · ${acikSanatcilar(d.sanatcilar, k).length} sanatçı açık · ${vade} tekrar bekliyor</p>`,
+    calisma: `<div data-parca="calisma">${takvimHtml(d.calismaGir)}${egriHtml(d.calismaGir)}${koleksiyonBagi()}</div>`,
     siradaki: `<div data-parca="siradaki">${siradakiKonuHtml(k, sayi)}</div>`,
     kurs: `<div data-parca="kurs">${kursBolumleriHtml(bolumler, k)}</div>`,
     tanis: `<div data-parca="tanis">${tanisKartiHtml()}</div>`,
@@ -163,7 +165,9 @@ export function ilerlemeSayfasi() {
   d.tanisKarti = null;
   d.kitaplikDurgun = false;
   d.kartDurgun = false;
+  d.calismaGir = true; // takvim ve grafikler yalnızca sayfa ilk açılınca çizilerek gelir
   const p = parcalar();
+  d.calismaGir = false;
   gununRengi();
   ciz(`${ust('İlerleme', '#/', {
     geriYok: true,
@@ -171,6 +175,7 @@ export function ilerlemeSayfasi() {
     sag: `<a class="ust-dugme" href="#/ayarlar" aria-label="Ayarlar">${ikon('ayarlar', 22, 1.4)}</a>`,
   })}
     ${p.ozet}
+    ${p.calisma}
     ${p.siradaki}
     <h2 class="etiket bolum-baslik">Kurs konuları</h2>
     <p class="kucuk ikincil" style="margin:-4px 0 10px">Bir konuya dokun, bitirdiysen “işlendi” yap; o konunun sanatçıları açılır.</p>
@@ -195,7 +200,7 @@ function yenile(adlar = ['kurs'], kartAcildi = false) {
   window.scrollTo(0, kaydirma);
   if (adlar.includes('alt') || adlar.includes('tanis')) kucukKareleriDoldur();
 }
-const HEPSI = ['ozet', 'siradaki', 'kurs', 'alt', 'tanis'];
+const HEPSI = ['ozet', 'calisma', 'siradaki', 'kurs', 'alt', 'tanis'];
 
 // Ö6 · Konu işlenince alttan kart: "4 yeni sanatçı açıldı · Tanış" → #/pekistir/konu/<no>
 function tanisKartiHtml() {
