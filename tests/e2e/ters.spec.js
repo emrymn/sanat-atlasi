@@ -86,7 +86,7 @@ test('Ö1: yanlış eser seçilince seçilenin sanatçısı söylenir, karşıla
   await expect(page.locator('[data-test="ters-secilen"]')).toContainText(yanlisAd);
   await expect(page.locator('[data-test="karsilastir"]')).toBeVisible();
   await expect(page.locator('.ters-mini.dogru')).toHaveCount(1);
-  await expect(page.locator('.ters-mini.yanlis .kp-arka')).toContainText(await page.evaluate((y) => window.__atlas.kisaAdlar[y] || window.__atlas.harita.get(y).ad.split(' ').pop(), yanlis));
+  await expect(page.locator('.ters-mini.yanlis .kp-arka')).toContainText(await page.evaluate((y) => (window.__atlas.kisaAdlar[y] || {}).buyuk || window.__atlas.harita.get(y).ad.split(' ').pop(), yanlis));
   await expect(page.locator('.ters-mini.yanlis')).toHaveCount(1);
   const i = await ilerleme(page);
   expect(i.skorlar[id].sanatci.yanlis).toBe(1);
