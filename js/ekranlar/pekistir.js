@@ -14,6 +14,8 @@ import { idbAl, idbKoy, idbSil } from '../idb.js';
 import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from '../devam.js';
 import { karsilastirmaAdresi } from '../karsilastir.js';
 import { tanismaGerekirMi, tanismaEserleri, karisanEkle, KARISAN_ESIGI } from '../ogrenme.js';
+import { tersSorulurMu, tersSecenekleri } from '../ters.js';
+import { eserKonusu } from '../ikonografi.js';
 import { SEVIYELER, seviyeKaydi, seviyeIsle, seviyeDurumu, seviyeKisa, eserSeviyesi, GECIS_ORANI } from '../seviye.js';
 import {
   d,
@@ -155,26 +157,38 @@ function kartHazirla(o, konum) {
     if (!eser) return { konum, id: s.id, eser: null };
     d.ilerleme.sonEserler[s.id] = [...son.filter((x) => x !== eser.anahtar), eser.anahtar].slice(-8);
     const acikIdler = new Set(acikListe().map((x) => x.id));
-    return {
-      konum,
-      id: s.id,
-      eser,
-      eserler,
-      seviye: sv,
-      secenekler: sanatciSecenekleri(s, {
+    const secici = () =>
+      sanatciSecenekleri(s, {
         sanatcilar: d.sanatcilar,
         akimlar: d.akimlar,
         acikIdler,
         rng: d.rng,
         ortaYillar: d.ortaYillar,
         seviye: SEVIYELER[sv].anahtar,
-      }).map((x) => x.id),
+      }).map((x) => x.id);
+    const secenekler = secici();
+    const kart = {
+      konum,
+      id: s.id,
+      eser,
+      eserler,
+      seviye: sv,
+      secenekler,
       akimSecenekleri: o.kip === 'karisik' ? akimSecenekleri(s.akim, d.akimlar, d.rng, 4, SEVIYELER[sv].anahtar) : null,
       adim: 1,
       cevapSanatci: null,
       cevapAkim: null,
       bitti: false,
     };
+    // d.tersOrani: testler için (window.__atlas); yoksa TERS_ORANI
+    if (!tersSorulurMu({ kip: o.kip, seviye: sv, rng: d.rng, oran: d.tersOrani })) return kart;
+    // Ö1 ters soru: aynı çeldiricilerin eserleri (eseri olmayan sanatçının yerine ikinci seçimden biri)
+    const adaylar = [...new Set([...secenekler, ...secici()])].filter((id) => id !== s.id && d.harita.has(id));
+    return Promise.all(adaylar.map((id) => sanatciEserleri(d.harita.get(id)).then((l) => ({ id, eserler: l }), () => ({ id, eserler: [] })))).then((celdiriciler) => {
+      const ters = tersSecenekleri({ dogru: { id: s.id, eser }, celdiriciler, rng: d.rng, kotuler: kotuler(), konusu: eserKonusu });
+      if (!ters) return kart;
+      return { ...kart, tur: 'ters', ters, secenekler: ters.map((x) => x.id), akimSecenekleri: null };
+    });
   });
 }
 
@@ -267,6 +281,18 @@ async function kartiGeriKur(bk) {
   const eserler = await sanatciEserleri(s);
   const eser = eserler.find((e) => e.anahtar === bk.eser);
   if (!eser) return null;
+  if (bk.tur === 'ters') {
+    // ters sorunun dört eseri: biri bile artık yoksa kart atlanır
+    const ters = await Promise.all(
+      (bk.ters || []).map(async (x) => {
+        if (x.id === s.id) return { id: x.id, eser };
+        const e = (await sanatciEserleri(d.harita.get(x.id))).find((y) => y.anahtar === x.eser);
+        return e ? { id: x.id, eser: e } : null;
+      }),
+    );
+    if (ters.length !== 4 || ters.some((x) => !x)) return null;
+    return { ...bk, eser, eserler, ters, bitti: false };
+  }
   return { ...bk, eser, eserler, bitti: false };
 }
 
@@ -438,9 +464,105 @@ function ipucuCevir(p) {
   yaprakYerlestir();
 }
 
+// Ters soru (Ö1): ad verilir, dört eserden biri onun. Cevaptan sonra doğru eser işaretlenir, yanlış seçilen
+// eserin sanatçısı söylenir; tek soru (karışıkta akım sorusu yok).
+function tersGoster(o) {
+  const k = o.kart;
+  const s = d.harita.get(k.id);
+  const ot = o.oturum;
+  const sira = Math.min(ot.konum + 1, ot.toplam);
+  const yuzde = Math.round((100 * ot.konum) / ot.toplam);
+  const cevap = k.cevapSanatci;
+  const salon = (() => {
+    try {
+      return localStorage.getItem('ters-tasarim') === 'salon';
+    } catch {
+      return false;
+    }
+  })();
+  const kutular = k.ters
+    .map((x, i) => {
+      const g = secilenGorsel(x.eser, kotuler()) || x.eser.gorseller[0];
+      let sinif = 'ters-eser';
+      let isaret = '';
+      if (cevap !== null) {
+        if (x.id === k.id) {
+          sinif += ' dogru';
+          isaret = `<span class="ters-isaret" role="img" aria-label="Doğru cevap">${ikon('dogru', 18, 2.2)}</span>`;
+        } else if (x.id === cevap) {
+          sinif += ' yanlis';
+          isaret = `<span class="ters-isaret" role="img" aria-label="Senin cevabın, yanlış">${ikon('yanlis', 18, 2.2)}</span>`;
+        } else sinif += ' soluk';
+      }
+      const veri = cevap === null ? `data-sanatci="${kacis(x.id)}"` : `data-ters-eser="${i}"`;
+      const etiketi = cevap !== null && x.id !== k.id ? `<span class="ters-kimin">${kacis(bilinenAd(d.harita.get(x.id).ad, d.kisaAdlar[x.id]))}</span>` : '';
+      return `<button class="${sinif}" type="button" ${veri} style="--i:${i}" aria-label="${HARFLER[i]} seçeneği${cevap !== null ? `: ${kacis(d.harita.get(x.id).ad)}` : ''}"><span class="ters-cerceve"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}"></span><span class="harf">${HARFLER[i]}</span>${isaret}${etiketi}</button>`;
+    })
+    .join('');
+  const bilmiyorum = cevap === null ? `<button class="bilmiyorum" type="button" data-bilmiyorum data-test="bilmiyorum">Bilmiyorum</button>` : '';
+  let yaprak = '';
+  if (cevap !== null) {
+    const dogru = cevap === k.id;
+    const tekrarNotu = 'bu kart 3–5 kart sonra yine gelecek';
+    const sonuc = dogru ? ['Doğru', ''] : cevap === BILMIYORUM ? ['Bilmiyorum', tekrarNotu] : ['Yanlış', tekrarNotu];
+    const secilen = !dogru && cevap !== BILMIYORUM ? k.ters.find((x) => x.id === cevap) : null;
+    let karsilastirBag = '';
+    if (secilen && d.harita.has(cevap)) {
+      if ((k.karisanSayi || 0) >= KARISAN_ESIGI) karsilastirBag = karsiSeritHtml(s, d.harita.get(cevap), k.karisanSayi);
+      karsilastirBag += `<a class="karsilastir-bag" href="${karsilastirmaAdresi(s.id, cevap)}" data-test="karsilastir">${ikon('karsilastir', 18, 1.6)}<span>Karşılaştır: ${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))} ↔ ${kacis(bilinenAd(d.harita.get(cevap).ad, d.kisaAdlar[cevap]))}</span></a>`;
+    }
+    const sonrakiYazi = ot.konum + 1 >= ot.toplam ? 'Turu bitir' : 'Sonraki kart →';
+    const ipucu = ipucuMetni(s);
+    yaprak = `<section class="alt-yaprak" aria-live="polite">
+      <p class="sonuc" data-test="sonuc" data-dogru="${dogru}">${ikon(dogru ? 'dogru' : 'yanlis', 18, 2)}<b>${sonuc[0]}</b>${sonuc[1] ? `<span class="sonuc-not">${kacis(sonuc[1])}</span>` : ''}</p>
+      <p class="bilgi"><b>${kacis(eserAdi(k.eser))}</b><i>${kacis(`${s.ad} · ${s.akim}`)}</i></p>
+      ${secilen ? `<p class="ters-secilen" data-test="ters-secilen">Seçtiğin: ${kacis(eserAdi(secilen.eser))} · ${kacis(d.harita.get(cevap).ad)}</p>` : ''}
+      ${seviyeSatiri(k)}
+      ${ipucu ? `<div class="ipucu-kutu" data-ipucu><p class="ipucu">${kacis(ipucu)}</p></div>` : ''}
+      <p class="kaynak-satir">${kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler()))}</p>
+      ${karsilastirBag}
+      <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="Sanatçı sayfası">Sanatçı</a><button class="dugme acik" type="button" data-sonraki>${sonrakiYazi}</button></div>
+    </section>`;
+  }
+  const onceki = o.sonCizim;
+  const hareket = !onceki || onceki.konum !== ot.konum ? 'yeni-kart' : cevap !== null && !onceki.cevap ? 'cevap' : '';
+  const oncekiYuzde = onceki && onceki.konum !== ot.konum ? onceki.yuzde : yuzde;
+  o.sonCizim = { konum: ot.konum, adim: 1, cevap: cevap !== null, yuzde };
+  ciz(
+    `<header class="soru-ust">
+      <button class="kapat" type="button" data-geri="#/pekistir" aria-label="Kapat">${ikon('kapat', 22, 1.7)}</button>
+      <span class="etiket">${kacis(kipKisa(o.kip, o.akim))}</span>
+      <span data-test="sayac">${sira} / ${ot.toplam}</span>
+    </header>
+    <div class="ince-cubuk" aria-hidden="true"><i style="width:${yuzde}%;--onceki:${oncekiYuzde}%"></i></div>
+    <div class="soru-baslik ters-baslik">
+      ${etiket(`Ters soru · ${SEVIYELER[k.seviye ?? 0].ad}`)}
+      <h2 tabindex="-1" data-test="ters-soru">Hangisi bir <span class="ters-ad">${kacis(s.ad)}</span> eseri?</h2>
+    </div>
+    <div class="ters-izgara${salon ? ' salon' : ''}${cevap !== null ? ' cevapli' : ''}" data-test="ters-secenekleri">${kutular}</div>
+    ${bilmiyorum}
+    ${yaprak}`,
+    hareket,
+  );
+  renkSabitle(null);
+  karsiSeritDoldur();
+  const y = ekran.querySelector('.alt-yaprak');
+  if (y) {
+    y.querySelector('[data-sonraki]').focus({ preventScroll: true });
+    ipucuIsaretle(y);
+  }
+  if (!o.sonrakiKart && ot.konum + 1 < ot.toplam) {
+    o.sonrakiKart = kartHazirla(o, ot.konum + 1).then((h) => {
+      if (h && h.eser) new Image().src = gorselUrl(secilenGorsel(h.eser, kotuler()), 800);
+      return h;
+    });
+  }
+}
+
 function kartGoster(o) {
   const k = o.kart;
   if (k.tanisma) return tanismaGoster(o);
+  if (k.tur === 'ters') return tersGoster(o);
   const s = d.harita.get(k.id);
   const ot = o.oturum;
   const karisik = o.kip === 'karisik';
@@ -633,7 +755,7 @@ function sanatciCevapla(o, deger) {
   if (k.seviyeSonuc.gecti) (o.gecenler ||= []).push({ akim, seviye: k.seviyeSonuc.sonra });
   sonCalisilanEkle(d.ilerleme, k.id);
   baskaDeneme = 0;
-  if (o.kip === 'donem') kartiBitir(o, dogru);
+  if (o.kip === 'donem' || k.tur === 'ters') kartiBitir(o, dogru);
   else kaydet();
   yarimKaydet(o);
   kartGoster(o);
@@ -782,6 +904,12 @@ export function olaylariBagla() {
           } else if (!k.bitti) baskaEser(o);
         }),
       });
+      return;
+    }
+    const tb = e.target.closest('[data-ters-eser]');
+    if (tb && o && o.kart && o.kart.ters) {
+      const sira = o.kart.ters;
+      goruntuleyiciAc({ eserler: sira.map((x) => x.eser), baslangic: Number(tb.dataset.tersEser), ...gorselTercihi() });
       return;
     }
     const bil = e.target.closest('[data-bilmiyorum]');

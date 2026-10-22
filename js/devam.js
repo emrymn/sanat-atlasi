@@ -39,6 +39,8 @@ export function kayitYap(o, simdi = Date.now()) {
             // kartın sorulduğu seviye ve (cevaplandıysa) seviye sonucu (js/seviye.js)
             seviye: k.seviye ?? 0,
             seviyeSonuc: k.seviyeSonuc || null,
+            // ters soru (Ö1): dört eserin sanatçısı ve anahtarı
+            ...(k.tur === 'ters' && k.ters ? { tur: 'ters', ters: k.ters.map((x) => ({ id: x.id, eser: x.eser.anahtar })) } : {}),
           }
         : null,
   };
@@ -56,6 +58,7 @@ export function kayitGecerliMi(k, simdi = Date.now()) {
   if (k.kart !== null && k.kart !== undefined) {
     const c = k.kart;
     if (!Number.isInteger(c.konum) || !metinMi(c.id) || !metinMi(c.eser) || !Array.isArray(c.secenekler)) return false;
+    if (c.tur === 'ters' && !(Array.isArray(c.ters) && c.ters.length === 4 && c.ters.every((x) => x && metinMi(x.id) && metinMi(x.eser)))) return false;
   }
   return true;
 }
@@ -85,7 +88,14 @@ export function kayittanKur(k, { varMi, rng = Math.random } = {}) {
   let kart = null;
   if (k.kart && kartKonumu === konum) {
     if (k.kart.bitti) ot.ilerle();
-    else kart = { ...k.kart, konum, secenekler: k.kart.secenekler.slice(), akimSecenekleri: k.kart.akimSecenekleri ? k.kart.akimSecenekleri.slice() : null };
+    else
+      kart = {
+        ...k.kart,
+        konum,
+        secenekler: k.kart.secenekler.slice(),
+        akimSecenekleri: k.kart.akimSecenekleri ? k.kart.akimSecenekleri.slice() : null,
+        ...(k.kart.ters ? { ters: k.kart.ters.map((x) => ({ ...x })) } : {}),
+      };
   }
   if (ot.bitti) return null;
   return { oturum: ot, kart };
