@@ -316,12 +316,21 @@ html.sekmesiz .hikaye::before {
   background: var(--vurgu);
   border-color: transparent;
   color: var(--vurgu-yazi);
-  box-shadow: 0 12px 26px -14px rgba(var(--vurgu-rgb), 0.75);
 }
 .dugme.acik {
   background: var(--vurgu-acik);
   border-color: transparent;
   color: var(--vurgu-acik-yazi);
+}
+/* Dolu düğmelerin yazısı nazik bir serif (başlıklarla aynı aile, italik), kalın sans değil; parlama gölgesi yok */
+.dugme.vurgu,
+.dugme.acik {
+  font: italic 400 19px/1.2 var(--serif);
+  letter-spacing: 0.01em;
+}
+.dugme.vurgu b,
+.dugme.acik b {
+  font-weight: 500;
 }
 .dugme:disabled {
   opacity: 0.55;
@@ -2897,7 +2906,7 @@ main[data-hareket='giris'] .ozet .ad {
   gap: 4px;
 }
 .karisik-dugme b {
-  font-weight: 700;
+  font-weight: 500;
 }
 .karisik-dugme small {
   font: 500 12.5px/1 var(--sans);
