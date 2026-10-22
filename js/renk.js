@@ -142,15 +142,13 @@ export function doluButon(renk) {
   return { zemin: KOYU_YAZI, yazi: BEYAZ_YAZI };
 }
 
-// Neon görünen tonları temaya yaklaştırır: sarılar altın tonuna kayar ve doygunluğu düşer,
-// yeşiller ve öbür renkler de üst sınırla yumuşar (Emre: "neon sarı temayı bozuyor")
+// Vurgu yağlı boya tonunda kalır, parlak ya da neon renk çıkmaz (Emre: "yağlı boya renkleri olsun").
+// Sarılar okra kayar; bütün renklerin doygunluğu ve açıklığı toprak boyalarının aralığına indirilir.
 export function yumusat(renk) {
   let [h, s, l] = hsl(renk);
-  if (h >= 45 && h < 75) {
-    h = 40 + (h - 40) * 0.3;
-    s = Math.min(s, 0.42);
-  } else if (h >= 75 && h < 170) s = Math.min(s, 0.38);
-  else s = Math.min(s, 0.6);
+  if (h >= 45 && h < 75) h = 36 + (h - 45) * 0.15;
+  s = Math.min(s, h >= 75 && h < 170 ? 0.28 : 0.4);
+  l = Math.min(Math.max(l, 0.3), 0.46);
   return hsldenHex(h, s, l);
 }
 

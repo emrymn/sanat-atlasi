@@ -70,18 +70,20 @@ test('renk teması: bütün değişkenler ve kontrast kuralları', () => {
   assert.equal(renkTemasi([], GECE), null);
 });
 
-test('vurgu yumuşatma: neon sarı altın tonuna kayar, doygunluğu düşer; sakin renkler değişmez', async () => {
+test('vurgu yumuşatma: yağlı boya tonları; neon sarı okra döner, hiçbir renk parlak kalmaz', async () => {
   const { yumusat } = await import('../../js/renk.js');
   for (const neon of ['#d0c766', '#e6e639', '#c8d040']) {
-    const [h, s] = hsl(yumusat(neon));
-    assert.ok(h >= 40 && h <= 51, `${neon} → ton ${h}`);
-    assert.ok(s <= 0.43, `${neon} → doygunluk ${s}`);
+    const [h] = hsl(yumusat(neon));
+    assert.ok(h >= 34 && h <= 42, `${neon} → ton ${h}`);
   }
-  assert.ok(hsl(yumusat('#40ff60'))[1] <= 0.39);
-  assert.equal(yumusat('#b8452f'), '#b8452f');
-  assert.equal(yumusat('#2b4a9a'), '#2b4a9a');
-  // Hogarth (Bugün) paletinden gelen sarı vurgu artık temanın altın tonuna yakın
+  for (const c of ['#d0c766', '#40ff60', '#ff2050', '#20a0ff', '#b8452f', '#f0f0a0']) {
+    const [, s, l] = hsl(yumusat(c));
+    assert.ok(s <= 0.41, `${c} → doygunluk ${s}`);
+    assert.ok(l >= 0.29 && l <= 0.47, `${c} → açıklık ${l}`);
+  }
+  assert.ok(hsl(yumusat('#40ff60'))[1] <= 0.29);
+  // Hogarth (Bugün) paletinden gelen sarı: dolu düğme okra tonunda, kontrast kuralı korunur
   const t = renkTemasi([{ renk: '#d0c766', pay: 1 }], GECE);
-  assert.ok(hsl(t.vurgu)[1] <= 0.45, t.vurgu);
+  assert.ok(hsl(t.vurgu)[1] <= 0.41, t.vurgu);
   assert.ok(kontrast(t.vurgu, t.vurguYazi) >= 4.5);
 });
