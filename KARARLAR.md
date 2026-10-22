@@ -861,3 +861,5 @@ Emre'nin isteği: “Kolay, orta, zor diye bölümler; birinde %80 başarı olma
    - **Tur özeti:** doğru sayısı sıfırdan sayarak gelir; hepsi doğruysa ekranın üstünden yaldız yaprakları süzülür (dekoratif, sabit tohumlu).
    - **İlerleme:** akım çubukları sıfırdan dolar; seviye atlama satırı parlar. Küçük resimler yüklenince hafifçe yerine oturur.
    - Hepsi `prefers-reduced-motion` ile kapanır (sayaç doğrudan yazılır).
+12. **Yarım kalan duvar etiketleri (Emre'nin isteği):** Hayatı / Nasıl tanırım / Notlarımdan etiketleri 9 satırda kesilir; metin sığmıyorsa etiket dokunulabilir olur, altında "Devamı ↓" yazar, dokununca tamamı açılır ("Kısalt ↑" ile geri kapanır). Klavyeyle Enter/Boşluk da çalışır.
+13. **Mozaik sayfanın sonuna kadar:** "Son" satırı ve küçük sayılar mozaik bölümünün içine alındı; zemin sekme çubuğunun arkasından ekranın en altına kadar iner (`display: flow-root` ile son satırın boşluğu dışarı taşmaz).
