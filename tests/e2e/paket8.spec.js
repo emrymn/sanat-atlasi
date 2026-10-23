@@ -179,6 +179,10 @@ test('İ4: vadesi gelen sanatçı gelecek yük grafiğinde bugüne yazılır', a
   expect(id).toBeTruthy();
   await page.goto('./#/ilerleme');
   await expect(page.locator('[data-test="yuk"] g[data-gun="0"]')).toHaveAttribute('data-sayi', /^[1-9]\d*$/);
+  // çubuk gerçekten çizilir: genel .cubuk (4 px ilerleme çubuğu) kuralı SVG çubuğunun yüksekliğini ezmiyor (İş 22)
+  await page.waitForTimeout(1200);
+  const yukseklik = await page.locator('[data-test="yuk"] g[data-gun="0"] rect').evaluate((r) => r.getBoundingClientRect().height);
+  expect(yukseklik).toBeGreaterThan(20);
 });
 
 test('İ2: rozet ayarı izin ister, sayıyı yazar; gizlenirken yarının sayısı; kapatınca temizlenir', async ({ page }) => {
@@ -248,7 +252,7 @@ test('T4: sürüm değişince Bugün’de bir kez “Yenilikler”; Ayarlar’da
   await expect(not).toBeVisible();
   await expect(not).toContainText('1.26 ·');
   await expect(not).toContainText('Koleksiyonum');
-  expect((await ilerleme(page)).sonSurum).toBe('1.26.1');
+  expect((await ilerleme(page)).sonSurum).toBe('1.27.0');
   // aynı oturumda ana sayfaya dönünce durur; kapatılınca gider; sonraki açılışta yok
   await not.getByRole('button', { name: 'Yenilikler notunu kapat' }).click();
   await expect(not).toHaveCount(0);
@@ -256,14 +260,15 @@ test('T4: sürüm değişince Bugün’de bir kez “Yenilikler”; Ayarlar’da
   await expect(page.locator('[data-test="gunun-kart"], [data-test="pekistir"]').first()).toBeVisible();
   await expect(page.locator('[data-test="yenilik-not"]')).toHaveCount(0);
   await page.goto('./#/ayarlar');
-  await expect(page.locator('[data-test="yenilikler"] li').first()).toContainText('1.26 ·');
+  await expect(page.locator('[data-test="yenilikler"] li').first()).toContainText('1.27 ·');
+  await expect(page.locator('[data-test="yenilikler"] li').nth(1)).toContainText('1.26 ·');
 });
 
 test('T4: yepyeni kullanıcıya Yenilikler notu gösterilmez', async ({ page }) => {
   await page.goto('./');
   await hazir(page);
   await expect(page.locator('[data-test="yenilik-not"]')).toHaveCount(0);
-  expect((await ilerleme(page)).sonSurum).toBe('1.26.1');
+  expect((await ilerleme(page)).sonSurum).toBe('1.27.0');
 });
 
 test('T2: eser notları ilk ekrandan sonra yüklenir; önce açılan görüntüleyici not gelince yenilenir', async ({ page, context }) => {

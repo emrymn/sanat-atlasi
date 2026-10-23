@@ -336,6 +336,19 @@ export function ust(baslik, yedek = '#/', { geriYok = false, sag = '', ustEtiket
 // hareket: 'giris' (yeni ekran, öğeler sırayla belirir), kart için 'yeni-kart' | 'yeni-soru' | 'cevap', '' (yok).
 // Verilmezse adres değiştiyse 'giris', aynı ekran yeniden çiziliyorsa hareketsiz.
 let sonCizilenAdres = null;
+// Yarış durumu koruması (hata denetimi #9): her yönlendirmede artan sayaç. Asenkron ekranlar girişte
+// cizimNo() alır, her await'ten sonra guncelMi(no) değilse çizmeden çıkar; böylece eski ekran yenisinin üstüne çizilmez.
+let cizimSayaci = 0;
+export function cizimBaslat() {
+  return ++cizimSayaci;
+}
+export function cizimNo() {
+  return cizimSayaci;
+}
+export function guncelMi(no) {
+  return no === cizimSayaci;
+}
+
 export function ciz(html, hareket) {
   const adres = location.hash || '#/';
   ekran.dataset.hareket = hareket ?? (adres !== sonCizilenAdres ? 'giris' : '');

@@ -119,3 +119,25 @@ test('önbellek kaydı eser nesnesine çevrilir', () => {
   assert.equal(w.pekistirme, false);
   assert.equal(w.tarih, '');
 });
+
+test('K4: Koleksiyonum’daki eser iki kat sık seçilir; yoksa davranış aynı', () => {
+  const eserler = ['a', 'b', 'c', 'd'].map((a) => es(a));
+  const say = (isaretli) => {
+    const rng = rastgeleYap(11);
+    const n = {};
+    for (let i = 0; i < 4000; i++) {
+      const e = eserSec(eserler, [], rng, {}, { isaretli });
+      n[e.anahtar] = (n[e.anahtar] || 0) + 1;
+    }
+    return n;
+  };
+  const n = say(new Set(['b']));
+  assert.ok(n.b > 1.6 * n.a && n.b < 2.5 * n.a, JSON.stringify(n));
+  // işaretli eser adaylar arasında değilse ya da küme boşsa eski seçim (aynı rastgele dizi, aynı sonuç)
+  const r1 = rastgeleYap(5);
+  const r2 = rastgeleYap(5);
+  for (let i = 0; i < 20; i++) assert.equal(eserSec(eserler, [], r1, {}, { isaretli: new Set(['z']) }).anahtar, eserSec(eserler, [], r2).anahtar);
+  // son gösterilenlerden kaçınma önce gelir
+  const r3 = rastgeleYap(6);
+  for (let i = 0; i < 30; i++) assert.notEqual(eserSec(eserler, ['b'], r3, {}, { isaretli: new Set(['b']) }).anahtar, 'b');
+});

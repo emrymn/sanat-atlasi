@@ -49,6 +49,14 @@ function rozetiBagla() {
 async function basla() {
   // İsteğe bağlı notlar (data/tanima_notlari.json, …) aynı anda istenir; yoksa ya da bozuksa boş kalır.
   // Eser notları (T2) ilk ekran çizildikten sonra yüklenir (aşağıda notlariYukle)
+  // T2: eser önbelleği (2 MB), kısa adlar, Türkçe konu adları, ilerleme ve yarım oturum da aynı anda istenir
+  // (önceden ilk dokuz dosyanın bitmesini sırayla bekliyorlardı). Türkçe eser adları ertelenmedi: ayrıştırması
+  // Chromium'da ~2 ms; ilk ekranda göründükleri için ertelemek özgün addan Türkçeye sıçrama yaratırdı (KARARLAR İş 22).
+  const hazirSozu = hazirOnbellek();
+  const kisaSozu = jsonGetir('data/kisa_adlar.json').catch(() => ({ adlar: {} }));
+  const konularTrSozu = jsonGetir('data/konular_tr.json').catch(() => null);
+  const ilerlemeSozu = ilerlemeYukle(() => jsonGetir('data/baslangic_ilerleme.json'));
+  const yarimSozu = yarimYukle();
   const [tumSanatcilar, akimlar, konular, turler, tanima, eserAd, zorluk, yerelG, oranG] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
@@ -60,8 +68,8 @@ async function basla() {
     jsonGetir('data/yerel_gorseller.json').catch(() => null),
     jsonGetir('data/gorsel_oranlari.json').catch(() => null),
   ]);
-  d.kisaAdlar = (await jsonGetir('data/kisa_adlar.json').catch(() => ({ adlar: {} }))).adlar || {};
-  d.konularTr = await jsonGetir('data/konular_tr.json').catch(() => null);
+  d.kisaAdlar = (await kisaSozu).adlar || {};
+  d.konularTr = await konularTrSozu;
   d.tanimaNotlari = notlariAl(tanima);
   eserAdlariniAyarla(adlariAl(eserAd));
   d.kolaylik = kolaylikAl(zorluk);
@@ -70,7 +78,7 @@ async function basla() {
   d.dikeyler = oranG && Array.isArray(oranG.dikeyler) ? new Set(oranG.dikeyler) : null;
   eserTurleriniAyarla(turler);
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
-  const hazir = await hazirOnbellek();
+  const hazir = await hazirSozu;
   d.onbellekIdleri = hazir && hazir.sanatcilar ? new Set(Object.keys(hazir.sanatcilar)) : null;
   const sanatcilar = gorunurSanatcilar(tumSanatcilar, turler, hazir);
   d.tumSanatcilar = tumSanatcilar;
@@ -84,8 +92,8 @@ async function basla() {
   d.akimSira = Object.fromEntries(d.akimlar.map((a) => [a.ad, a.sira]));
   d.akimRenk = Object.fromEntries(akimlar.map((a) => [a.ad, a.renk]));
   d.ortaYillar = akimOrtaYillari(sanatcilar);
-  d.ilerleme = await ilerlemeYukle(() => jsonGetir('data/baslangic_ilerleme.json'));
-  d.yarim = await yarimYukle();
+  d.ilerleme = await ilerlemeSozu;
+  d.yarim = await yarimSozu;
   // Yarım oturum varken uygulama bir oturum adresinde açıldıysa (yenileme, yeni sürüm) Bugün'deki devam kartına dön
   if (d.yarim && /^#\/pekistir\/(karisik|hatalar|donem\/.+|konu\/.+)$/.test(location.hash)) history.replaceState(null, '', '#/');
   gunlukGuncelle(d.ilerleme, bugun());

@@ -1,5 +1,5 @@
 // Adres (#/…) → ekran eşlemesi.
-import { d, sekmeleriCiz, hataGoster } from './ortak.js';
+import { d, sekmeleriCiz, hataGoster, cizimBaslat } from './ortak.js';
 import { anaSayfa, gununSayfasi } from './bugun.js';
 import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuSayfasi, basyapitSayfasi } from './gozat.js';
 import { pekistirMenusu, pekistir, devamEt } from './pekistir.js';
@@ -41,6 +41,7 @@ const rotalar = [
 
 export function yonlendir() {
   const h = location.hash || '#/';
+  cizimBaslat();
   // geri düğmesi için basit yığın
   if (d.yigin.length > 1 && d.yigin[d.yigin.length - 2] === h) d.yigin.pop();
   else if (d.yigin[d.yigin.length - 1] !== h) d.yigin.push(h);

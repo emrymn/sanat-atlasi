@@ -96,7 +96,7 @@ function yukGrafigi(gir) {
             const h = n ? Math.max(3, (n / en) * (Y - 16)) : 0;
             const cx = 4 + i * adim + adim / 2;
             return `<g data-gun="${i}" data-sayi="${n}">
-              <rect class="cubuk${i === 0 ? ' bugun' : ''}" x="${(cx - adim * 0.3).toFixed(1)}" y="${(Y - h).toFixed(1)}" width="${(adim * 0.6).toFixed(1)}" height="${h.toFixed(1)}" style="--i:${i}"/>
+              <rect class="yuk-cubuk${i === 0 ? ' bugun' : ''}" x="${(cx - adim * 0.3).toFixed(1)}" y="${(Y - h).toFixed(1)}" width="${(adim * 0.6).toFixed(1)}" height="${h.toFixed(1)}" style="--i:${i}"/>
               ${n ? `<text x="${cx.toFixed(1)}" y="${(Y - h - 4).toFixed(1)}" text-anchor="middle">${n}</text>` : ''}
               <text class="gun" x="${cx.toFixed(1)}" y="${Y + 13}" text-anchor="middle"><title>${GUN_ADLARI[haftaGunu(t)]} ${tarihYazisi(t)}</title>${GUN_HARFI[haftaGunu(t)]}</text>
               <text class="gun-no" x="${cx.toFixed(1)}" y="${Y + 25}" text-anchor="middle">${Number(t.slice(8))}</text>
