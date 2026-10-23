@@ -1007,3 +1007,11 @@ Emre: "pekiştir sekmesinde yine rengi neon sarı". Sebep bir gerileme değil: v
 5. **Hata denetimi #10 · Eser listesi.** (a) Önbellek dosyası ağ hatasında artık kalıcı `null` kalmaz, sonraki çağrı yeniden dener. (b) Wikidata'ya ulaşılamayınca (çevrimdışı, 429) sanatçının listesi belleğe yazılmaz; 60 sn aynı liste verilir, sonra yeniden denenir (`GECICI_SURE`). (c) Önbellek dosyası 30 günü geçince (bu dosya 2026-10-21'de üretildi, yani 20 Kasım'da) her sanatçı için aynı anda Wikidata yenilemesi başlıyordu; artık arka plan yenilemeleri sırayla, aralarında 1,5 sn ile ve oturum başına en çok 24 sanatçı (`ARKA_PLAN_SINIRI`). Birim testi: `tests/unit/hata_denetimi2.test.mjs` (üçü de eski kodda kırılıyor).
 6. **Hata denetimi #11 · Met/CMA özgün dosya.** Veriye bakıldı: 1.218 Met görselinin hepsi `web-large`, 265 CMA görselinin hepsi `_web.jpg`; `original`/`_print` yok. Sorun yok, değişiklik yapılmadı. (Pekiştirme havuzundaki eserlerin küçük resimleri zaten yerel `gorseller/k/` kopyalarından geliyor.)
 7. Sürüm 1.27.0; Yenilikler'e satır eklendi.
+
+## İş 22b · Eksik verinin son turu (API, 2026-10-23, v1.27.1)
+
+1. `icerik/v3_kalan.py`; yalnızca eksikler, var olan kayıtlara dokunulmadı. Sağlayıcı: önce Vercel AI Gateway (anthropic/claude-…-5.5), kredi bitince Anthropic.
+2. Türkçe adlar: v2'de yalnızca köşeli parantez yüzünden alınmayan 4 Lorenzetti panel adı ([sol panel] → (sol panel)).
+3. Zorluk: AIC 403 yüzünden puansız kalan havuz eserleri, depodaki yerel kopyalarla (Opus 5.5, sanatçının bütün havuzu birlikte).
+4. Eser notları: v2'de boş kalanlar bu kez görselle (Sonnet 5.5); görselde açıkça görüneni ve başlıkla uyumlu olanı yazar, uymuyorsa boş bırakır.
+5. Konular: en az 2 eserde geçen yeni konular (Opus 5.5 hikâye + ayrı istekte denetim, önceki 149 konunun yöntemiyle); var olan konular değişmedi.
