@@ -19,6 +19,7 @@ const TURLER = {
   '.png': 'image/png',
   '.svg': 'image/svg+xml',
   '.jpg': 'image/jpeg',
+  '.webp': 'image/webp',
 };
 
 createServer(async (istek, yanit) => {

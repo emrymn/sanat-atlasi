@@ -9,6 +9,7 @@ import { karsilastirmaAdresi } from '../karsilastir.js';
 import { enCokKarisanlar } from '../ogrenme.js';
 import { SEVIYELER, seviyeKaydi } from '../seviye.js';
 import { takvimHtml, egriHtml, koleksiyonBagi } from './calisma.js';
+import { haritaBagi } from './harita.js';
 import { d, etiket, islenen, bugun, akimNoktasi, ust, gununRengi, ciz, ekran, kucukKareleriDoldur, kaydet, bildir } from './ortak.js';
 
 // ---------- İlerleme ----------
@@ -139,7 +140,7 @@ function parcalar() {
   const vade = acikSanatcilar(d.sanatcilar, k).filter((s) => kategori(d.ilerleme.skorlar, s.id, 'karisik', b) === 0).length;
   return {
     ozet: `<p class="ozet-satir" data-parca="ozet">${k.size} / ${d.konular.length} konu işlendi · ${acikSanatcilar(d.sanatcilar, k).length} sanatçı açık · ${vade} tekrar bekliyor</p>`,
-    calisma: `<div data-parca="calisma">${takvimHtml(d.calismaGir)}${egriHtml(d.calismaGir)}${koleksiyonBagi()}</div>`,
+    calisma: `<div data-parca="calisma">${haritaBagi()}${takvimHtml(d.calismaGir)}${egriHtml(d.calismaGir)}${koleksiyonBagi()}</div>`,
     siradaki: `<div data-parca="siradaki">${siradakiKonuHtml(k, sayi)}</div>`,
     kurs: `<div data-parca="kurs">${kursBolumleriHtml(bolumler, k)}</div>`,
     tanis: `<div data-parca="tanis">${tanisKartiHtml()}</div>`,

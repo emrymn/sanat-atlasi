@@ -16,6 +16,7 @@ import { olaylariBagla as ayarlarOlaylari, rozetiGuncelle } from './ekranlar/aya
 import { olaylariBagla as aramaOlaylari } from './ekranlar/arama.js';
 import { olaylariBagla as zamanOlaylari } from './ekranlar/zaman.js';
 import { olaylariBagla as akimOlaylari } from './ekranlar/akim.js';
+import { olaylariBagla as haritaOlaylari } from './ekranlar/harita.js';
 
 // ---------- service worker ----------
 function swKaydet() {
@@ -120,5 +121,6 @@ ayarlarOlaylari();
 aramaOlaylari();
 zamanOlaylari();
 akimOlaylari();
+haritaOlaylari();
 
 basla().catch(hataGoster);
