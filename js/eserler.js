@@ -113,7 +113,11 @@ export function hazirOnbellek() {
     onbellekDosyasi = fetch('data/eserler_onbellek.json')
       .then((y) => (y.ok ? y.json() : null))
       .then((j) => (j && j.surum >= ONBELLEK_SURUMU ? j : null))
-      .catch(() => null);
+      .catch(() => {
+        // ağ hatası kalıcı sayılmaz: sonraki çağrı yeniden dener (hata denetimi #10)
+        onbellekDosyasi = null;
+        return null;
+      });
   }
   return onbellekDosyasi;
 }
@@ -141,39 +145,69 @@ async function canliWikidata(sanatci, qid, { canli, bekle }) {
     }
   };
   if (kayit || !bekle) {
-    yenile();
+    arkaPlanda(sanatci.id, yenile);
     return kayit;
   }
   return yenile();
 }
 
+// Arka plan yenilemeleri tek tek ve oturum başına sınırlı (hata denetimi #10): önbellek dosyası 30 günü
+// geçince Göz At ve çevrimdışı indirme her sanatçı için yenileme başlatıyordu; onlarca SPARQL sorgusu aynı anda
+// gidince Wikidata 429 veriyordu. Artık sırayla, aralarında bekleyerek ve en çok ARKA_PLAN_SINIRI kez.
+export const ARKA_PLAN_SINIRI = 24;
+const ARKA_PLAN_ARALIK = 1500;
+let arkaPlanZinciri = Promise.resolve();
+const arkaPlanIdleri = new Set();
+function arkaPlanda(id, is) {
+  if (arkaPlanIdleri.has(id) || arkaPlanIdleri.size >= ARKA_PLAN_SINIRI) return;
+  arkaPlanIdleri.add(id);
+  arkaPlanZinciri = arkaPlanZinciri
+    .then(is)
+    .catch(() => null)
+    .then(() => new Promise((r) => setTimeout(r, ARKA_PLAN_ARALIK)));
+}
+export function arkaPlanDurumu() {
+  return { istenen: arkaPlanIdleri.size };
+}
+
+// Dönen: { liste, kalici } — kalici=false ise (Wikidata'ya ulaşılamadı) sonuç belleğe yazılmaz, kısa süre sonra yeniden denenir
 async function hesapla(sanatci, { canli }) {
   const hazir = await hazirOnbellek();
   const hk = hazir && hazir.sanatcilar && hazir.sanatcilar[sanatci.id];
   if (hk) {
     const liste = hk.eserler.map(onbellekEseri);
-    if (tazeMi(Date.parse(hazir.olusturma))) return liste;
-    // Dosya eski: canlı Wikidata'daki yeni eserleri sona ekle (arka planda yenilenir)
+    if (tazeMi(Date.parse(hazir.olusturma))) return { liste, kalici: true };
+    // Dosya eski: canlı Wikidata'daki yeni eserleri sona ekle (arka planda, sırayla yenilenir)
     const wd = await canliWikidata(sanatci, hk.qid, { canli, bekle: false });
-    return eserleriBirlestir([], (wd && wd.eserler) || [], liste);
+    return { liste: eserleriBirlestir([], (wd && wd.eserler) || [], liste), kalici: true };
   }
   const wd = await canliWikidata(sanatci, null, { canli, bekle: true });
-  return eserleriBirlestir(kursResimleri(sanatci, turler), (wd && wd.eserler) || []);
+  return { liste: eserleriBirlestir(kursResimleri(sanatci, turler), (wd && wd.eserler) || []), kalici: !!wd };
 }
+
+// Geçici sonuç (hata ya da Wikidata'ya ulaşılamadı): bu kadar süre aynı liste verilir, sonra yeniden denenir
+export const GECICI_SURE = 60 * 1000;
+const gecici = new Map();
 
 // Sanatçının birleşik eser listesi (en bilinenler önce; kurs eserleri en başta)
 export function sanatciEserleri(sanatci, { canli = true } = {}) {
   if (bellek.has(sanatci.id)) return Promise.resolve(bellek.get(sanatci.id));
   if (suren.has(sanatci.id)) return suren.get(sanatci.id);
+  const g = gecici.get(sanatci.id);
+  if (g && Date.now() - g.zaman < GECICI_SURE) return Promise.resolve(g.liste);
   const soz = hesapla(sanatci, { canli })
-    .catch(() => eserleriBirlestir(kursResimleri(sanatci, turler), []))
-    .then((eserler) => {
+    .catch(() => ({ liste: eserleriBirlestir(kursResimleri(sanatci, turler), []), kalici: false }))
+    .then(({ liste: eserler, kalici }) => {
       for (const e of eserler) {
         e.sid = sanatci.id;
         const ad = eserAdiBul(sanatci.id, e);
         if (ad && ad !== e.baslik) e.ad = ad;
       }
-      bellek.set(sanatci.id, eserler);
+      // geçici hata (çevrimdışı açılış, Wikidata 429) oturum boyunca kalıcı olmasın (hata denetimi #10)
+      if (kalici) {
+        bellek.set(sanatci.id, eserler);
+        gecici.delete(sanatci.id);
+      } else gecici.set(sanatci.id, { liste: eserler, zaman: Date.now() });
       suren.delete(sanatci.id);
       return eserler;
     });
@@ -188,6 +222,7 @@ export function eserAdlariniAyarla(adlar) {
   eserAdlari = adlar || {};
   for (const liste of bellek.values()) for (const e of liste) delete e.ad;
   bellek.clear();
+  gecici.clear();
 }
 export function eserAdiBul(sanatciId, e, adlar = eserAdlari) {
   return (e.qid && adlar[e.qid]) || adlar[`${sanatciId}|${e.baslik}`] || '';
@@ -224,13 +259,20 @@ export function zorlukDilimi(adaylar, kolaylik, seviye) {
 }
 
 // Pekiştirmede gösterilecek eseri seç: son gösterilenlerden kaçın; puan varsa sanatçının seviyesine göre zorluk.
-export function eserSec(eserler, sonGosterilenler = [], rng = Math.random, kotuler = {}, { kolaylik = null, seviye = null } = {}) {
+// isaretli: Koleksiyonum'daki eser anahtarları (K4); adaylar arasında olanlar iki kat ağırlıkla seçilir.
+// Koleksiyondaki bir eser pekiştirme havuzunda (sanatçı başına ilk 12) değilse soruya girmez.
+export const KOLEKSIYON_AGIRLIGI = 2;
+export function eserSec(eserler, sonGosterilenler = [], rng = Math.random, kotuler = {}, { kolaylik = null, seviye = null, isaretli = null } = {}) {
   const havuz = pekistirmeHavuzu(eserler, kotuler);
   if (!havuz.length) return null;
   const kacinilacak = new Set(sonGosterilenler.slice(-Math.min(5, havuz.length - 1)));
   const adaylar = havuz.filter((e) => !kacinilacak.has(e.anahtar));
   const liste = zorlukDilimi(adaylar.length ? adaylar : havuz, kolaylik, seviye);
-  return liste[Math.floor(rng() * liste.length)];
+  if (!isaretli || !isaretli.size || !liste.some((e) => isaretli.has(e.anahtar))) return liste[Math.floor(rng() * liste.length)];
+  const agirlik = (e) => (isaretli.has(e.anahtar) ? KOLEKSIYON_AGIRLIGI : 1);
+  let r = rng() * liste.reduce((t, e) => t + agirlik(e), 0);
+  for (const e of liste) if ((r -= agirlik(e)) < 0) return e;
+  return liste[liste.length - 1];
 }
 
 // Eser kolaylık puanları (data/eser_zorluk.json): anahtar QID ya da "sanatçıId|başlık", değer 2 (zor) … 10 (kolay)

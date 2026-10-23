@@ -35,6 +35,8 @@ import {
   acikListe,
   taninma,
   bilinirlikSirasi,
+  cizimNo,
+  guncelMi,
 } from './ortak.js';
 import { donemCizelgesi, pekistirmedeMi, notBolumleri, seritUst, eserSeridi } from './bugun.js';
 import { kimlikDoldur } from './akim.js';
@@ -100,7 +102,9 @@ export async function basyapitListesi() {
 
 export async function basyapitSayfasi(kodlu) {
   const anahtar = decodeURIComponent(kodlu);
+  const no = cizimNo();
   const b = basyapitBul(await basyapitVeri(), anahtar);
+  if (!guncelMi(no)) return;
   if (!b) return hataGoster(new Error('Bu eser için yakın okuma bulunamadı.'));
   const s = d.harita.get(b.sanatci);
   const eserSozu = sanatciEserleri(s).then((l) => eserEslestir(l, b));
@@ -119,7 +123,7 @@ export async function basyapitSayfasi(kodlu) {
     </article>`);
   const e = await eserSozu;
   const kutu = ekran.querySelector('[data-basyapit-gorsel]');
-  if (!kutu) return;
+  if (!kutu || !guncelMi(no)) return;
   const g = e && secilenGorsel(e, kotuler());
   if (!g) {
     kutu.innerHTML = '<p class="ikincil kucuk">Bu eserin görseli bulunamadı.</p>';
@@ -166,7 +170,9 @@ export async function konuListesi() {
 }
 
 export async function konuSayfasi(kodlu) {
+  const no = cizimNo();
   const k = konuBul(await ikonografiVeri(), decodeURIComponent(kodlu));
+  if (!guncelMi(no)) return;
   if (!k) return hataGoster(new Error('Bu konu bulunamadı.'));
   gununRengi();
   ciz(`<div class="hale" aria-hidden="true"></div>
@@ -184,6 +190,7 @@ export async function konuSayfasi(kodlu) {
   // eserler: sanatçı başına bir kez yüklenir
   const sanatcilar = [...new Set(k.eserler.map((x) => x[1]))];
   const listeler = new Map(await Promise.all(sanatcilar.map(async (sid) => [sid, await sanatciEserleri(d.harita.get(sid))])));
+  if (!guncelMi(no)) return;
   const eserler = k.eserler
     .map(([a, sid]) => eserEslestir(listeler.get(sid) || [], { anahtar: a, sanatci: sid }))
     .filter((e) => e && (secilenGorsel(e, kotuler()) || e.gorseller[0]));
@@ -351,7 +358,9 @@ export async function tumEserler(id) {
     eserSozu.then((l) => l[0] || null),
     akimRenk(s.akim),
   );
+  const no = cizimNo();
   const eserler = await eserSozu;
+  if (!guncelMi(no)) return;
   ciz(`<div class="hale" aria-hidden="true"></div>
     ${ust(bilinenAd(s.ad, d.kisaAdlar[s.id]), `#/sanatci/${encodeURIComponent(s.id)}`, { ustEtiket: `Tüm eserler · ${eserler.length}` })}
     ${eserler.length ? `<div class="izgara" data-izgara>${eserSeridi(eserler, 'eser', 'data-eser')}</div>` : '<p class="ikincil kucuk">Bu sanatçı için doğrulanmış görsel bulunamadı.</p>'}`);

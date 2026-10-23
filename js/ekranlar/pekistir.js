@@ -61,6 +61,8 @@ import {
   hataGoster,
   notuIcin,
   gorselTercihi,
+  cizimNo,
+  guncelMi,
 } from './ortak.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
 import { yonlendir } from './yonlendirme.js';
@@ -205,7 +207,11 @@ export async function pekistir(kip, akim, { yeni = false, onayli = false } = {})
     if (d.yarim && !onayli) return yarimSor(kip, akim);
     if (!acikListe().length) return ciz(`${ust(baslik, '#/pekistir')}${bosAcik()}`);
     ciz(`${ust(baslik, '#/pekistir')}<p class="ikincil">Kartlar hazırlanıyor…</p>`);
-    d.oturum = await oturumKur(kip, akim);
+    const no = cizimNo();
+    const yeniOturum = await oturumKur(kip, akim);
+    // hazırlanırken (çevrimdışıyken sanatçı başına 6 sn sürebilir) başka ekrana geçildiyse kart çizilmez
+    if (!guncelMi(no)) return;
+    d.oturum = yeniOturum;
     if (!d.oturum.oturum.toplam) {
       d.oturum = null;
       return ciz(
@@ -233,7 +239,9 @@ function kartHazirla(o, konum) {
     const sv = kartSeviyesi(seviyeKaydi(d.ilerleme, s.akim), o.seviye);
     // Ö6: tanışmada görülen eserler de sorulmaz
     const kacin = [...son, ...((o.tanismaGorulen || {})[s.id] || [])];
-    const eser = eserSec(eserler, kacin, d.rng, kotuler(), { kolaylik: kolaylikFn(s.id), seviye: eserSeviyesi(sv) });
+    // K4: Koleksiyonum'daki eserler iki kat sık
+    const isaretli = new Set((d.ilerleme.koleksiyon || []).filter((x) => x.s === s.id).map((x) => x.a));
+    const eser = eserSec(eserler, kacin, d.rng, kotuler(), { kolaylik: kolaylikFn(s.id), seviye: eserSeviyesi(sv), isaretli });
     if (!eser) return { konum, id: s.id, eser: null };
     d.ilerleme.sonEserler[s.id] = [...son.filter((x) => x !== eser.anahtar), eser.anahtar].slice(-8);
     const acikIdler = new Set(acikListe().map((x) => x.id));
@@ -288,12 +296,18 @@ async function kartCiz() {
   if (o.oturum.bitti) return ozetCiz();
   if (o.tanisma && o.tanisma.konum < o.tanisma.sira.length) return konuTanismaGoster(o);
   const konum = o.oturum.konum;
+  const no = cizimNo();
   if ((!o.kart || o.kart.konum !== konum) && o.bekleyenKart) {
     // Devam: kayıttaki kart aynı eserle ve aynı adımdan; sanatçı, eser ya da seçenek artık yoksa kart atlanır
     const bk = o.bekleyenKart;
     o.bekleyenKart = null;
     const geri = bk.konum === konum ? await kartiGeriKur(bk) : null;
     if (d.oturum !== o) return;
+    if (!guncelMi(no)) {
+      // kart kurulurken başka ekrana geçildi: kart başka ekranın üstüne çizilmez, devamda yeniden kurulur
+      o.bekleyenKart = bk;
+      return;
+    }
     if (bk.konum === konum && !geri) {
       o.oturum.ilerle();
       yarimKaydet(o);
@@ -306,6 +320,10 @@ async function kartCiz() {
     if (!hazir || hazir.konum !== konum || hazir.id !== o.oturum.simdiki.id) hazir = await kartHazirla(o, konum);
     o.sonrakiKart = null;
     if (d.oturum !== o) return;
+    if (!guncelMi(no)) {
+      o.sonrakiKart = Promise.resolve(hazir);
+      return;
+    }
     if (!hazir || !hazir.eser) {
       o.oturum.ilerle();
       return kartCiz();

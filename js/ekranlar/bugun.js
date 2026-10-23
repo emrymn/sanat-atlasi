@@ -40,6 +40,8 @@ import {
   gununHavuzu,
   skor,
   bildir,
+  cizimNo,
+  guncelMi,
 } from './ortak.js';
 import { devamKarti } from './pekistir.js';
 import { SURUM } from '../surum.js';
@@ -371,9 +373,11 @@ export async function gununSayfasi(id) {
   const bugunku = gununId();
   const s = d.harita.get(id || bugunku);
   if (!s) return hataGoster(new Error('Sanatçı bulunamadı.'));
+  const no = cizimNo();
   const eserSozu = sanatciEserleri(s);
   ekranRengi(eserSozu.then(enBilinen), akimRenk(s.akim));
   const { biyografiler, akimBilgi } = await ekVeriYukle();
+  if (!guncelMi(no)) return;
   const bio = biyografiler.sanatcilar[s.id];
   const akim = akimBilgi.akimlar[s.akim];
   ciz(`<div class="hale" aria-hidden="true"></div>
@@ -413,18 +417,20 @@ export async function gununSayfasi(id) {
       </div>
     </article>`);
   const eserler = bilinirlikSirasi(await eserSozu);
-  if (!location.hash.startsWith('#/gunun')) return;
+  if (!guncelMi(no)) return;
   const galeri = ekran.querySelector('[data-galeri]');
+  if (!galeri) return;
   if (!eserler.length) {
     galeri.innerHTML = '<p class="ikincil kucuk">Bu sanatçı için doğrulanmış görsel bulunamadı.</p>';
     return;
   }
   galeri.insertAdjacentHTML('beforebegin', seritUst(s, eserler.length));
   galeri.innerHTML = eserSeridi(eserler, 'galeri-eser', 'data-galeri-eser');
-  galeri.addEventListener('click', (ev) => {
+  // onclick: aynı galeriye ikinci dinleyici eklenmez (iki görüntüleyici üst üste açılıyordu)
+  galeri.onclick = (ev) => {
     const b = ev.target.closest('[data-galeri-eser]');
     if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.galeriEser), notu: notuIcin(s.id), ...gorselTercihi() });
-  });
+  };
 }
 
 // Ekranın olay dinleyicileri; app.js özgün sırayla bir kez bağlar
