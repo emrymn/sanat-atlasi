@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.28.0', metin: 'Yolculuk haritası: dönemler boyanmış adalar, akımlar duraklar; İlerleme’nin başında' },
   { surum: '1.27.0', metin: 'Koleksiyondaki eserler tekrar turunda daha sık; daha hızlı açılış; gelecek yük grafiği düzeldi' },
   { surum: '1.26.0', metin: 'Koleksiyonum, çalışma takvimi ve seri, öğrenme eğrisi, hatalı görsel bildirimi, ikon rozeti' },
   { surum: '1.25.0', metin: 'Genel arama, zaman şeridi, akım kimlik kartı' },

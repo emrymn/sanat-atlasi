@@ -8,6 +8,7 @@ import { ayarlarSayfasi } from './ayarlar.js';
 import { aramaSayfasi } from './arama.js';
 import { zamanSayfasi } from './zaman.js';
 import { koleksiyonSayfasi } from './koleksiyon.js';
+import { haritaSayfasi } from './harita.js';
 import { akimKarsilastirSayfasi } from './akim.js';
 
 // ---------- yönlendirme ----------
@@ -35,6 +36,7 @@ const rotalar = [
   [/^#\/ilerleme$/, () => ilerlemeSayfasi(), 'ilerleme'],
   [/^#\/ayarlar$/, ayarlarSayfasi, 'ilerleme'],
   [/^#\/koleksiyon$/, koleksiyonSayfasi, 'ilerleme'],
+  [/^#\/harita$/, () => haritaSayfasi(), 'ilerleme'],
   [/^#\/gunun$/, () => gununSayfasi(null), 'bugun'],
   [/^#\/gunun\/(.+)$/, (id) => gununSayfasi(id), 'bugun'],
 ];
