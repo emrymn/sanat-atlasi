@@ -2874,22 +2874,23 @@ main[data-hareket='giris'][data-yon='sol'] > :not(.alt-yaprak) {
 /* ad katman katman havada: tablodan uzaklaştıkça daha çok kayar (alt satır az, ilk ad orta, soyad en çok);
    soyadın gölgesi ters yöne gider, yazı ile gölgesi arasında boşluk açılır. Gölge text-shadow değil, soyadın bir kez
    çizilen bulanık kopyası (::before): her karede yalnız kaydırılır, yazı yeniden çizilmez (text-shadow'u her karede
-   değiştirmek iPhone'da kasıyordu). Açılış animasyonları transform kullandığından burada translate. */
+   değiştirmek iPhone'da kasıyordu). Açılış animasyonları transform kullandığından burada translate. Ad tablodan
+   yavaş izler (--yzx/--yzy, js/egim.js): hızlı kayması rahatsız ediyordu, gecikme derinliği de artırır. */
 .bugun-kahraman.egimli > img,
 .bugun-kahraman.egimli .sahne-isim :is(.meta, .ad-ilk, .ad-son),
 .bugun-kahraman.egimli .sahne-isim .ad-son::before {
   will-change: translate;
 }
 .bugun-kahraman.egimli .sahne-isim .meta {
-  translate: calc(var(--egx, 0) * 4px) calc(var(--egy, 0) * 3px);
+  translate: calc(var(--yzx, 0) * 4px) calc(var(--yzy, 0) * 3px);
 }
 .bugun-kahraman.egimli .sahne-isim .ad-ilk {
-  translate: calc(var(--egx, 0) * 10px) calc(var(--egy, 0) * 6px);
+  translate: calc(var(--yzx, 0) * 10px) calc(var(--yzy, 0) * 6px);
 }
 .bugun-kahraman.egimli .sahne-isim .ad-son {
   position: relative;
   z-index: 0;
-  translate: calc(var(--egx, 0) * 18px) calc(var(--egy, 0) * 11px);
+  translate: calc(var(--yzx, 0) * 18px) calc(var(--yzy, 0) * 11px);
 }
 .bugun-kahraman.egimli .sahne-isim .ad-son::before {
   content: attr(data-ad);
@@ -2899,7 +2900,7 @@ main[data-hareket='giris'][data-yon='sol'] > :not(.alt-yaprak) {
   padding: inherit;
   color: rgba(0, 0, 0, 0.5);
   filter: blur(5px);
-  translate: calc(var(--egx, 0) * -10px) calc(3px + var(--egy, 0) * -7px);
+  translate: calc(var(--yzx, 0) * -10px) calc(3px + var(--yzy, 0) * -7px);
   pointer-events: none;
 }
 .egim-isik {
