@@ -155,3 +155,57 @@ test('vakit: 07–19 gündüz, gerisi gece', () => {
   assert.equal(vakit(new Date(2026, 0, 1, 18, 59)), 'gunduz');
   assert.equal(vakit(new Date(2026, 0, 1, 19, 0)), 'gece');
 });
+
+// ---------- İş 30 · katmanlar ----------
+import { bolumEserleri, BOLUM_ESER, TANITIM_SEVIYE } from '../../js/bolum.js';
+import { sanatciCeldiricileri, soyadi, akrabaMi } from '../../js/celdirici.js';
+
+test('katmanlar: Kolay ilk 5 (en kolay), Orta sonraki 5, az eserli sanatçıda Orta = Kolay; Zor sınırsız', () => {
+  const h = Array.from({ length: 12 }, (_, i) => ({ anahtar: `e${i}`, sl: 100 - i }));
+  const puan = { e3: 10, e7: 9 }; // en kolaylar önce
+  const k = bolumEserleri(h, 'kolay', (e) => puan[e.anahtar]);
+  assert.equal(k.length, BOLUM_ESER);
+  assert.deepEqual(k.map((e) => e.anahtar), ['e3', 'e7', 'e0', 'e1', 'e2']);
+  const o = bolumEserleri(h, 'orta', (e) => puan[e.anahtar]);
+  assert.deepEqual(o.map((e) => e.anahtar), ['e4', 'e5', 'e6', 'e8', 'e9']);
+  assert.ok(o.every((e) => !k.includes(e)));
+  assert.deepEqual(bolumEserleri(h.slice(0, 4), 'orta').map((e) => e.anahtar), ['e0', 'e1', 'e2', 'e3']);
+  assert.equal(bolumEserleri(h, 'zor'), null);
+  assert.equal(TANITIM_SEVIYE['tanitim-orta'], 'orta');
+});
+
+test('katmanlar: tanıtım kayıtları (Kolay ve Orta ayrı) doğrulanır', () => {
+  const il = {};
+  tanitimGoruldu(il, '3-1', 'orta');
+  assert.deepEqual(il.bolumler['3-1'], { tanitimOrta: true });
+  tanitimGoruldu(il, '3-1');
+  assert.deepEqual(bolumlerDogrula(il.bolumler), { '3-1': { tanitim: true, tanitimOrta: true } });
+});
+
+test('şıklar: karma = 1 şaşırtmalı (aynı/komşu akım) + 2 uzak; akrabalar hiçbir seviyede şık değil', () => {
+  const tum = gorunurSanatcilar(oku('data/sanatcilar.json'), oku('data/eser_turleri.json'), oku('data/eserler_onbellek.json'));
+  const ak = gorunurAkimlar(oku('data/akimlar.json').sort((a, b) => a.sira - b.sira), tum);
+  const sira = Object.fromEntries(ak.map((a) => [a.ad, a.sira]));
+  let r = 0.11;
+  const rng = () => ((r = (r * 9301 + 49297) % 233280), r / 233280);
+  for (const hedef of tum.slice(0, 60)) {
+    const a = ak.find((x) => x.ad === hedef.akim);
+    const c = sanatciCeldiricileri(hedef, { sanatcilar: tum, akimlar: ak, rng, seviye: 'karma' });
+    assert.equal(c.length, 3, hedef.id);
+    const benzer = c.filter((s) => s.akim === hedef.akim || (a.komsular || []).includes(s.akim));
+    const uzak = c.filter((s) => Math.abs(sira[s.akim] - a.sira) >= 3 && !(a.komsular || []).includes(s.akim));
+    assert.ok(benzer.length <= 1, `${hedef.id}: ${benzer.map((s) => s.id)}`);
+    assert.ok(uzak.length >= 2, `${hedef.id}: ${c.map((s) => s.akim)}`);
+  }
+  const pietro = tum.find((s) => s.id.includes('pietro-lorenzetti'));
+  const ambrogio = tum.find((s) => s.id.includes('ambrogio-lorenzetti'));
+  assert.ok(pietro && ambrogio && akrabaMi(pietro, ambrogio));
+  assert.equal(soyadi({ ad: 'Pieter Bruegel the Elder' }), 'bruegel');
+  for (const seviye of ['kolay', 'orta', 'zor', 'karma'])
+    for (let i = 0; i < 30; i++) {
+      const c = sanatciCeldiricileri(pietro, { sanatcilar: tum, akimlar: ak, rng, seviye });
+      assert.ok(!c.some((s) => akrabaMi(s, pietro)), seviye);
+      const soy = c.map(soyadi);
+      assert.equal(new Set(soy).size, soy.length);
+    }
+});

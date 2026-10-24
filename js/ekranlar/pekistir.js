@@ -69,12 +69,13 @@ import {
 } from './ortak.js';
 import { akimIstatistigi, seviyeIziHtml } from './pano.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
-import { BOLUM_SORU, BOLUM_GECME, SEVIYE_NO, bolumKartlari, bolumSonucuIsle, tanitimGoruldu, bolumKaydi, bolumAdi } from '../bolum.js';
+import { BOLUM_SORU, BOLUM_GECME, SEVIYE_NO, TANITIM_SEVIYE, bolumKartlari, bolumSonucuIsle, tanitimGoruldu, bolumKaydi, bolumAdi, bolumEserleri } from '../bolum.js';
+import { akrabaMi } from '../celdirici.js';
 import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
 import { yonlendir } from './yonlendirme.js';
 
 // ---------- İş 24 · harita bölümleri ----------
-const BOLUM_SV_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor', tanitim: 'Tanıtım' };
+const BOLUM_SV_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor', tanitim: 'Tanıtım', 'tanitim-orta': 'Orta tanıtımı' };
 const BOLUM_YONELME = { kolay: 'Kolay’a', orta: 'Orta’ya', zor: 'Zor’a' };
 function bolumBilgi(akim) {
   const [id, sv] = String(akim || '').split('/');
@@ -273,8 +274,10 @@ function turSec(kip, akim, adaylar) {
     // İş 24: bölümün sanatçıları sabit sayıda soruda; ilk Kolay'dan (ya da "Tanıtım"dan) önce hepsiyle tanışma
     const { id, sv } = bolumBilgi(akim);
     const idler = adaylar.map((x) => x.id);
-    if (sv === 'tanitim') return { idler: [], tanisma: idler };
-    const ilk = sv === 'kolay' && !bolumKaydi(d.ilerleme, id).tanitim;
+    if (sv === 'tanitim' || sv === 'tanitim-orta') return { idler: [], tanisma: idler };
+    // İş 30: Kolay'dan ve Orta'dan önce (ilk kez) o seviyenin eserleriyle tanışma
+    const kayit = bolumKaydi(d.ilerleme, id);
+    const ilk = (sv === 'kolay' && !kayit.tanitim) || (sv === 'orta' && !kayit.tanitimOrta);
     return { idler: bolumKartlari(idler, BOLUM_SORU[sv], d.rng), tanisma: ilk ? idler : [] };
   }
   if (kip === 'konu')
@@ -352,7 +355,8 @@ export async function pekistir(kip, akim, { yeni = false, onayli = false } = {})
   if (kip === 'bolum') {
     const { id, sv } = bolumBilgi(akim);
     const x = bolumDurumu().durumlar.find((y) => y.id === id);
-    if (!x || !x.acik || (sv !== 'tanitim' && !x.seviyeAcik[sv]))
+    const gerekli = sv === 'tanitim' ? null : sv === 'tanitim-orta' ? 'orta' : sv;
+    if (!x || !x.acik || (gerekli && !x.seviyeAcik[gerekli]))
       return ciz(`${ust(baslik, '#/harita')}<div class="bos-kutu" data-test="bolum-kapali"><p>Bu bölüm ya da seviye henüz açılmadı.</p><p><a class="dugme" href="#/harita">Haritaya dön</a></p></div>`);
   }
   const o = d.oturum;
@@ -391,11 +395,15 @@ function kartHazirla(o, konum) {
     // Dönemin seviyesi sorunun zorluğunu belirler: eser (kolay → tipik/ünlü) ve şıklar (kolay ��� uzak dönemler).
     // Ö9: dönem turunda alt seviye seçildiyse o seviye
     const sv = o.kip === 'bolum' ? o.seviye : kartSeviyesi(seviyeKaydi(d.ilerleme, s.akim), o.seviye);
-    // Ö6: tanışmada görülen eserler de sorulmaz
-    const kacin = [...son, ...((o.tanismaGorulen || {})[s.id] || [])];
+    // Ö6: tanışmada görülen eserler de sorulmaz — İş 30: bölümde tersine, soru yalnız tanıtılan eserlerden
+    const bolumSv = o.kip === 'bolum' ? SEVIYELER[sv].anahtar : null;
+    const katman = bolumSv ? bolumEserleri(pekistirmeHavuzu(eserler, kotuler()), bolumSv, kolaylikFn(s.id)) : null;
+    const kacin = katman ? son : [...son, ...((o.tanismaGorulen || {})[s.id] || [])];
     // K4: Koleksiyonum'daki eserler iki kat sık
     const isaretli = new Set((d.ilerleme.koleksiyon || []).filter((x) => x.s === s.id).map((x) => x.a));
-    const eser = eserSec(eserler, kacin, d.rng, kotuler(), { kolaylik: kolaylikFn(s.id), seviye: eserSeviyesi(sv), isaretli });
+    const eser = katman
+      ? eserSec(katman, kacin, d.rng, kotuler(), { kolaylik: null, seviye: null, isaretli })
+      : eserSec(eserler, kacin, d.rng, kotuler(), { kolaylik: kolaylikFn(s.id), seviye: eserSeviyesi(sv), isaretli });
     if (!eser) return { konum, id: s.id, eser: null };
     d.ilerleme.sonEserler[s.id] = [...son.filter((x) => x !== eser.anahtar), eser.anahtar].slice(-8);
     const acikIdler = new Set(acikListe().map((x) => x.id));
@@ -406,12 +414,13 @@ function kartHazirla(o, konum) {
         acikIdler,
         rng: d.rng,
         ortaYillar: d.ortaYillar,
-        seviye: SEVIYELER[sv].anahtar,
+        // İş 30: bölümün Kolay ve Orta'sında 1 şaşırtmalı + 2 uzak şık
+        seviye: katman ? 'karma' : SEVIYELER[sv].anahtar,
       }).map((x) => x.id);
     let secenekler = secici();
     // Ö5: karıştırılan ikilinin eşi şıklarda
     const es = o.esler && o.esler[s.id];
-    if (es && d.harita.has(es)) secenekler = esiEkle(secenekler, s.id, es, d.rng);
+    if (es && d.harita.has(es) && !akrabaMi(s, d.harita.get(es))) secenekler = esiEkle(secenekler, s.id, es, d.rng);
     const kart = {
       konum,
       id: s.id,
@@ -451,7 +460,8 @@ async function kartCiz() {
   if (o.tanisma && o.tanisma.konum < o.tanisma.sira.length) return konuTanismaGoster(o);
   if (o.kip === 'bolum' && o.tanisma && !o.tanitimIsaret) {
     o.tanitimIsaret = true;
-    tanitimGoruldu(d.ilerleme, bolumBilgi(o.akim).id);
+    const { id, sv } = bolumBilgi(o.akim);
+    tanitimGoruldu(d.ilerleme, id, TANITIM_SEVIYE[sv]);
     kaydet();
   }
   const konum = o.oturum.konum;
@@ -488,7 +498,7 @@ async function kartCiz() {
       return kartCiz();
     }
     // konu turunda tanışmalar turdan önce yapıldı
-    hazir.tanisma = o.kip !== 'konu' && tanismaAcik() && tanismaGerekirMi(d.ilerleme.skorlar[hazir.id]);
+    hazir.tanisma = o.kip !== 'konu' && o.kip !== 'bolum' && tanismaAcik() && tanismaGerekirMi(d.ilerleme.skorlar[hazir.id]);
     o.kart = hazir;
     o.gosterilen.push({ id: hazir.id, eser: hazir.eser.anahtar });
     yarimKaydet(o);
@@ -718,7 +728,10 @@ async function konuTanismaGoster(o) {
   const s = d.harita.get(id);
   const eserler = s ? await sanatciEserleri(s) : [];
   if (d.oturum !== o) return;
-  const sec = tanismaEserleri(pekistirmeHavuzu(eserler || [], kotuler()), null, 3, kolaylikFn(id));
+  const havuz = pekistirmeHavuzu(eserler || [], kotuler());
+  // İş 30: bölümde o seviyenin BOLUM_ESER eseri (sorular yalnız bunlardan); konu turunda en bilinen 3
+  const tanSv = o.kip === 'bolum' ? TANITIM_SEVIYE[bolumBilgi(o.akim).sv] : null;
+  const sec = tanSv ? bolumEserleri(havuz, tanSv, kolaylikFn(id)) : tanismaEserleri(havuz, null, 3, kolaylikFn(id));
   if (!s || !sec.length) {
     t.konum++;
     return kartCiz();
@@ -728,18 +741,18 @@ async function konuTanismaGoster(o) {
   const bolum = o.kip === 'bolum';
   tanismaCiz(o, s, sec, {
     sayac: `Tanışma ${t.konum + 1} / ${t.sira.length}`,
-    etiketYazi: bolum ? `${bolumAdi(bolumBilgi(o.akim).b)} · tanıtım` : `Konu ${o.akim} · yeni sanatçı`,
+    etiketYazi: bolum ? `${bolumAdi(bolumBilgi(o.akim).b)} · ${tanSv === 'orta' ? 'Orta tanıtımı' : 'tanıtım'}` : `Konu ${o.akim} · yeni sanatçı`,
     not: son
       ? bolum
         ? o.oturum.toplam
-          ? `Sırada bu sanatçılardan ${o.oturum.toplam} soruluk Kolay seviye var. Geçmek için %${Math.round(BOLUM_GECME * 100)} doğru.`
+          ? `Sırada bu sanatçılardan ${o.oturum.toplam} soruluk ${BOLUM_SV_AD[tanSv]} seviye var; sorular buradaki eserlerden. Geçmek için %${Math.round(BOLUM_GECME * 100)} doğru.`
           : 'Tanıtım bitti.'
         : `Sırada bu konunun sanatçılarından ${o.oturum.toplam} kartlık kısa bir tur var.`
       : bolum
         ? 'Sonra bu bölümün öbür sanatçısı geliyor.'
         : 'Sonra bu konunun öbür yeni sanatçısı geliyor.',
     dugme: `<button class="dugme vurgu tanisma-gec" type="button" data-konu-tanisma-gec data-test="konu-tanisma-gec">${
-      son ? (bolum && !o.oturum.toplam ? 'Haritaya dön →' : bolum ? 'Kolay’a başla →' : 'Tura başla →') : 'Sonraki sanatçı →'
+      son ? (bolum && !o.oturum.toplam ? 'Haritaya dön →' : bolum ? `${BOLUM_YONELME[tanSv] || 'Kolay’a'} başla →` : 'Tura başla →') : 'Sonraki sanatçı →'
     }</button>`,
   });
 }

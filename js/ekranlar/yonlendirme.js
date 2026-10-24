@@ -33,7 +33,7 @@ const rotalar = [
   [/^#\/pekistir\/konu\/(\d+)$/, (no) => pekistir('konu', no), null],
   [/^#\/pekistir\/hatalar$/, () => pekistir('hatalar', null), null],
   [/^#\/pekistir\/devam$/, () => devamEt(), null],
-  [/^#\/pekistir\/bolum\/(\d+-\d+)\/(kolay|orta|zor|tanitim)$/, (id, sv) => pekistir('bolum', `${id}/${sv}`), null],
+  [/^#\/pekistir\/bolum\/(\d+-\d+)\/(kolay|orta|zor|tanitim|tanitim-orta)$/, (id, sv) => pekistir('bolum', `${id}/${sv}`), null],
   [/^#\/ilerleme$/, () => ilerlemeSayfasi(), 'ilerleme'],
   [/^#\/ayarlar$/, ayarlarSayfasi, 'ilerleme'],
   [/^#\/koleksiyon$/, koleksiyonSayfasi, 'ilerleme'],
