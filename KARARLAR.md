@@ -1035,3 +1035,9 @@ Emre: "pekiştir sekmesinde yine rengi neon sarı". Sebep bir gerileme değil: v
 5. **Sekmeler:** Bugün · Harita · Pekiştir · İlerleme. Göz At sekmesi haritaya katıldı (durak penceresinden sanatçılara ve akım sayfasına); akım listesi `#/gozat` adresinde durur. Harita sekmesi büyük ve yükseltilmiş. Sekme çubuğu parmağı izler, bırakınca o sekmeye geçer (bağlantı sürükleme ve iOS önizlemesi kapalı).
 6. Ekran denetiminde bulunan iki hata: kilitli durağın saydamlığı genel `img.yuklendi { opacity: 1 !important }` kuralına takılıyordu (saydamlık düğmeye taşındı); ışık sütununun yanları köşeliydi (elips + maske).
 7. Testler: `tests/unit/harita.test.mjs`, `tests/e2e/harita.spec.js` (bölüm turu baştan sona). Sürüm 1.29.0.
+
+## İş 24b · Göz At sekmesi geri (2026-10-24, v1.29.1)
+
+1. 1.29.0'da Göz At sekmesi haritaya katılmıştı; akım listesi ve sanatçı sayfaları duruyordu ama onlara açılan düğme kalmamıştı. Emre sekmenin geri gelmesini istedi, sırayı o seçti: Bugün · Harita · Göz At · Pekiştir · İlerleme. Harita büyük kalır.
+2. Akım, sanatçı, başyapıt, konu, arama ve zaman şeridi sayfaları yine Göz At sekmesinde görünür (1.28.0'daki gibi). Sekme çubuğu 5 sütun (`--sekme-n`).
+3. Yenilikler'e satır eklenmedi (yama sürümü).

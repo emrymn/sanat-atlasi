@@ -14,8 +14,9 @@ test('Harita sekmesi: 8 dönem resmi, her bölüm bir durak, buradasın yolcusu,
   await hazir(page);
   // büyük Harita sekmesi ikinci sırada
   const sekmeler = page.locator('#sekmeler a');
-  await expect(sekmeler).toHaveCount(4);
+  await expect(sekmeler).toHaveCount(5);
   await expect(sekmeler.nth(1)).toHaveAttribute('data-sekme', 'harita');
+  await expect(sekmeler.nth(2)).toHaveAttribute('data-sekme', 'gozat');
   await sekmeler.nth(1).click();
   await expect(page).toHaveURL(/#\/harita$/);
   await expect(page.locator('[data-test="harita-bolge"]')).toHaveCount(8);

@@ -1430,6 +1430,7 @@ progress {
 /* Ekranın altında havada duran yuvarlak çubuk; seçili sekmenin arkasında resim renginde bir hap kayar (--i: sekme sırası). */
 .sekmeler {
   --sekme-pad: 6px;
+  --sekme-n: 5; /* İş 24b: Bugün · Harita · Göz At · Pekiştir · İlerleme */
   position: fixed;
   left: calc(env(safe-area-inset-left) + 14px);
   right: calc(env(safe-area-inset-right) + 14px);
@@ -1440,7 +1441,7 @@ progress {
   margin: 0 auto;
   padding: var(--sekme-pad);
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--sekme-n), minmax(0, 1fr));
   border-radius: 999px;
   background: var(--tab-bg);
   border: 1px solid rgba(var(--vurgu-rgb), 0.38);
@@ -1463,7 +1464,7 @@ progress {
   top: var(--sekme-pad);
   bottom: var(--sekme-pad);
   left: var(--sekme-pad);
-  width: calc((100% - 2 * var(--sekme-pad)) / 4);
+  width: calc((100% - 2 * var(--sekme-pad)) / var(--sekme-n));
   border-radius: 999px;
   background: linear-gradient(180deg, rgba(var(--vurgu-rgb), 0.42), rgba(var(--vurgu-rgb), 0.14));
   box-shadow:
