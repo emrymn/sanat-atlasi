@@ -34,3 +34,12 @@ test('data/ikonografi.json (varsa): biçim', () => {
   assert.ok(l.length > 10);
   assert.equal(new Set(l.map((k) => k.id)).size, l.length, 'yinelenen konu kimliği');
 });
+
+test('konu kapağı: en çok Wikipedia dili olan eser; eşitlikte kurs eseri, sonra sıra', async () => {
+  const { kapakSec } = await import('../../js/ikonografi.js');
+  assert.equal(kapakSec([]), null);
+  assert.equal(kapakSec([null, { baslik: 'a' }]).baslik, 'a');
+  assert.equal(kapakSec([{ baslik: 'a', sl: 3 }, { baslik: 'b', sl: 40 }, { baslik: 'c', sl: 12 }]).baslik, 'b');
+  assert.equal(kapakSec([{ baslik: 'a', sl: 5 }, { baslik: 'b', sl: 5, kurs: true }]).baslik, 'b');
+  assert.equal(kapakSec([{ baslik: 'a' }, { baslik: 'b' }]).baslik, 'a');
+});

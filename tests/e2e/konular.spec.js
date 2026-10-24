@@ -29,6 +29,12 @@ test('konular: Göz At → liste → konu sayfası; eserler yan yana; görüntü
   await page.locator('[data-test="konu-giris"]').click();
   await expect(page.locator('[data-test="konu-listesi"]')).toContainText('TEST Konusu');
   await expect(page.getByRole('heading', { name: 'Mitoloji' })).toBeVisible();
+  // İş 25: kartta yalnız ad ve en ünlü resim (özet yazısı yok)
+  const kart = page.locator('[data-test="konu-listesi"] .konu-kart').first();
+  await expect(kart.locator('img')).toHaveCount(1);
+  await expect(kart).not.toContainText('TEST özet.');
+  const unlu = [...t].sort((a, b) => (b.sl || 0) - (a.sl || 0))[0];
+  await expect(kart.locator('img')).toHaveAttribute('data-kapak', anahtar(unlu, 'j-m-w-turner'));
   await page.locator('[data-test="konu-listesi"] a').first().click();
   const k = page.locator('[data-test="konu"]');
   await expect(k.locator('h1')).toHaveText('TEST Konusu');

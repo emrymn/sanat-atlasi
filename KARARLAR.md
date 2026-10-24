@@ -1041,3 +1041,9 @@ Emre: "pekiştir sekmesinde yine rengi neon sarı". Sebep bir gerileme değil: v
 1. 1.29.0'da Göz At sekmesi haritaya katılmıştı; akım listesi ve sanatçı sayfaları duruyordu ama onlara açılan düğme kalmamıştı. Emre sekmenin geri gelmesini istedi, sırayı o seçti: Bugün · Harita · Göz At · Pekiştir · İlerleme. Harita büyük kalır.
 2. Akım, sanatçı, başyapıt, konu, arama ve zaman şeridi sayfaları yine Göz At sekmesinde görünür (1.28.0'daki gibi). Sekme çubuğu 5 sütun (`--sekme-n`).
 3. Yenilikler'e satır eklenmedi (yama sürümü).
+
+## İş 25 · Konular kart ızgarası (2026-10-24, v1.29.2)
+
+1. Emre'nin isteği: Konular listesi yazı yazı değil; her konu başlığı ve o konunun en ünlü resmiyle bir kart, dokununca konunun sayfası (hikâye ve öbür resimler). Düzeni o seçti: iki sütun, resim üstte (4:5, kırpılmış), ad altında; Eski Ahit · Yeni Ahit · Mitoloji başlıkları kalır. Kartta özet ve eser sayısı yok; ikisi konu sayfasında.
+2. "En ünlü": konunun görseli olan eserleri arasında Wikipedia'da maddesi olan dil sayısı (`sl`) en büyük olan; eşitse kurs eseri, o da eşitse listedeki ilk (`kapakSec`, js/ikonografi.js, birim testli). "Görsel kötü" denen görsel kapakta da kullanılmaz.
+3. Sanatçıların eser listeleri sayfa açılınca bir kez yüklenir; kapaklar tembel yüklenir.

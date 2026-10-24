@@ -2874,6 +2874,51 @@ main[data-hareket='giris'] .ozet .ad {
 .konu-eserler .eser-yazi b {
   font-weight: 600;
 }
+/* İş 25 · Konular: iki sütun kart, en ünlü resim ve konunun adı */
+.konu-izgara {
+  list-style: none;
+  margin: 8px 0 26px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 12px;
+}
+.konu-kart {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  color: var(--ink);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.konu-kapak {
+  display: block;
+  aspect-ratio: 4 / 5;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+.konu-kapak img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+.konu-kart:active .konu-kapak img {
+  transform: scale(0.97);
+}
+.konu-kart b {
+  font: 400 19px/1.2 var(--serif);
+  text-wrap: balance;
+}
+.konu-kart.kapaksiz .konu-kapak {
+  display: none;
+}
 
 /* ---------- Seviyeler ---------- */
 .seviye-satir {
