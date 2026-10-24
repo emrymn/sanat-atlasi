@@ -9,7 +9,6 @@ import { karsilastirmaAdresi } from '../karsilastir.js';
 import { enCokKarisanlar } from '../ogrenme.js';
 import { SEVIYELER, seviyeKaydi } from '../seviye.js';
 import { takvimHtml, egriHtml, koleksiyonBagi } from './calisma.js';
-import { haritaBagi } from './harita.js';
 import { d, etiket, islenen, bugun, akimNoktasi, ust, gununRengi, ciz, ekran, kucukKareleriDoldur, kaydet, bildir, acikListe, akimRenk } from './ortak.js';
 import { kutuDagilimi, merdivenHtml, akimIstatistigi, seviyeIziHtml, halkaHtml, kutuPipHtml } from './pano.js';
 import { hatalarBilgisi } from './pekistir.js';
@@ -73,12 +72,16 @@ function konuKarti(x, k) {
   const acik = k.has(x.no);
   // önceki konulardan işlenmemiş varsa tek dokunuşla hepsi (çok konuyu tek tek açmak uzun sürüyordu)
   const oncekiAcik = d.konular.some((y) => y.no <= x.no && !k.has(y.no));
-  return `<div class="konu-karti${d.kartDurgun ? ' durgun' : ''}" data-test="konu-karti">
+  const portre = (s, i) =>
+    acik
+      ? `<a class="konu-portre" href="#/sanatci/${encodeURIComponent(s.id)}" style="--i:${i}"><span class="konu-portre-resim" data-kucuk="${kacis(s.id)}"></span><span>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}</span></a>`
+      : `<span class="konu-portre kapali" style="--i:${i}"><span class="konu-portre-resim" data-kucuk="${kacis(s.id)}"></span><span>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}</span></span>`;
+  return `<div class="konu-karti${d.kartDurgun ? ' durgun' : ''}${acik ? ' acik' : ''}" data-test="konu-karti">
       <span class="konu-karti-no">${x.no}</span>
       <div class="konu-karti-yazi">
         <b>${kacis(konuBasligi(x))}</b>
         ${konuBasligi(x) !== x.baslik ? `<span class="ozgun-konu" lang="en">${kacis(x.baslik)}</span>` : ''}
-        <span class="konu-karti-adlar">${l.length ? l.map((s) => (acik ? `<a href="#/sanatci/${encodeURIComponent(s.id)}">${kacis(s.ad)}</a>` : `<span>${kacis(s.ad)}</span>`)).join('') : '<em>Bu konuda yeni sanatçı yok</em>'}</span>
+        <span class="konu-karti-adlar">${l.length ? l.map(portre).join('') : '<em>Bu konuda yeni sanatçı yok</em>'}</span>
       </div>
       <label class="konu konu-karti-anahtar"><span class="metin">İşlendi</span><input class="anahtar" type="checkbox" role="switch" data-konu="${x.no}" ${acik ? 'checked' : ''} aria-label="Konu ${x.no} işlendi"></label>
       ${oncekiAcik ? `<button class="konu-kadar" type="button" data-konu-kadar="${x.no}" data-test="konu-kadar">1–${x.no} arası hepsi işlendi</button>` : ''}
@@ -87,12 +90,21 @@ function konuKarti(x, k) {
 function kursBolumleriHtml(bolumler, k) {
   const siradaki = (d.konular.find((x) => !k.has(x.no)) || {}).no;
   const durum = (x) => (k.has(x.no) ? ' islendi' : x.no === siradaki ? ' sira' : '');
+  // her konu bir tablo: kapağı konunun ilk sanatçısının en bilinen eseri; işlenmemişler soluk ve kilitli
   const kitap = (x, i) => {
     const l = konuSanatcilari(x.no);
-    const boy = 104 + Math.min(l.length, 7) * 8;
-    return `<button type="button" class="kitap${durum(x)}${d.kursSecili === x.no ? ' secili' : ''}" data-kurs-konu="${x.no}" style="--boy:${boy}px;--i:${i}" aria-label="Konu ${x.no}: ${kacis(konuBasligi(x))}${k.has(x.no) ? ', işlendi' : ''}"><span class="kitap-no">${x.no}</span><span class="kitap-ad">${kacis(konuBasligi(x))}</span></button>`;
+    const isl = k.has(x.no);
+    const isaret = isl ? ikon('dogru', 14, 2) : x.no === siradaki ? '' : ikon('kilit', 13, 1.8);
+    return `<button type="button" class="kitap${durum(x)}${d.kursSecili === x.no ? ' secili' : ''}${l.length ? '' : ' bos'}" data-kurs-konu="${x.no}" style="--i:${i}" aria-label="Konu ${x.no}: ${kacis(konuBasligi(x))}${isl ? ', işlendi' : ''}" aria-pressed="${d.kursSecili === x.no}">
+      <span class="kitap-resim" aria-hidden="true">${l.length ? `<span data-kucuk="${kacis(l[0].id)}"></span>` : ''}</span>
+      <span class="kitap-no">${x.no}</span>
+      ${isaret ? `<span class="kitap-isaret" aria-hidden="true">${isaret}</span>` : ''}
+      ${x.no === siradaki ? '<span class="kitap-sira-etiket">Sıradaki</span>' : ''}
+      <span class="kitap-ad">${kacis(konuBasligi(x))}</span>
+      <small class="kitap-alt">${l.length ? `${l.length} sanatçı` : 'sanatçı yok'}</small>
+    </button>`;
   };
-  // tek kitaplık: bölümler arasında Roma rakamlı kitap desteği, kart rafın altında
+  // bölümler galeri salonları: her biri yatay kayan bir duvar; seçili konunun kartı o salonun altında
   const secili = d.konular.find((x) => x.no === d.kursSecili);
   let i = 0;
   // İşaretle kipinde kitaba dokunmak konuyu doğrudan işlendi / işlenmedi yapar (kart açılmaz)
@@ -100,11 +112,21 @@ function kursBolumleriHtml(bolumler, k) {
     `<button type="button" class="kip-dugme${!!d.kursHizli === deger ? ' secili' : ''}" data-kurs-kip="${ad}" aria-pressed="${!!d.kursHizli === deger}">${yazi}</button>`;
   return `<div class="kurs-bolumleri"><div class="kurs-kip" role="group" aria-label="Kitaba dokununca" data-test="kurs-kip">${kip('bilgi', false, 'Dokununca bilgi')}${kip('isaretle', true, 'Dokununca işaretle')}</div>
     <div class="kitaplik${d.kitaplikDurgun ? ' durgun' : ''}${d.kursHizli ? ' hizli' : ''}">${bolumler
-      .map((bl) => {
+      .map((bl, bi) => {
         const bitti = bl.konular.filter((x) => k.has(x.no)).length;
-        return `<span class="destek${bitti === bl.konular.length ? ' tam' : ''}" title="${kacis(bolumAdi(bl))}"><b>${bolumNo(bl)}</b><small>${bitti}/${bl.konular.length}</small></span>${bl.konular.map((x) => kitap(x, i++)).join('')}`;
+        const y = Math.round((100 * bitti) / bl.konular.length);
+        const kartBurada = secili && !d.kursHizli && bl.konular.includes(secili);
+        return `<section class="salon-raf${bitti === bl.konular.length ? ' tam' : ''}" style="--b:${bi}" aria-label="Bölüm ${bolumNo(bl)}: ${kacis(bolumAdi(bl))}">
+          <header class="salon-raf-bas">
+            <span class="destek${bitti === bl.konular.length ? ' tam' : ''}"><b>${bolumNo(bl)}</b></span>
+            <span class="salon-raf-yazi"><b>${kacis(bolumAdi(bl))}</b><small>${bitti}/${bl.konular.length} konu</small></span>
+            <span class="salon-raf-halka" role="img" aria-label="%${y}" style="--y:${y}"><i>${y}</i></span>
+          </header>
+          <div class="kitap-serit" data-serit="${bi}">${bl.konular.map((x) => kitap(x, i++)).join('')}</div>
+          ${kartBurada ? konuKarti(secili, k) : ''}
+        </section>`;
       })
-      .join('')}</div>${secili && !d.kursHizli ? konuKarti(secili, k) : ''}</div>`;
+      .join('')}</div></div>`;
 }
 
 // Sayfanın parçaları: değişiklikte yalnızca ilgili parçalar yerinde değişir (sayfa baştan çizilmez)
@@ -176,7 +198,7 @@ function parcalar() {
       <div class="pk-bolum-bas"><span class="etiket vurgu">Leitner kutuları</span><h2 class="pk-baslik">Hafıza merdiveni</h2></div>
       ${merdivenHtml(dagilim)}
     </section>`,
-    calisma: `<div data-parca="calisma">${haritaBagi()}${takvimHtml(d.calismaGir)}${egriHtml(d.calismaGir)}${koleksiyonBagi()}</div>`,
+    calisma: `<div data-parca="calisma">${takvimHtml(d.calismaGir)}${egriHtml(d.calismaGir)}${koleksiyonBagi()}</div>`,
     siradaki: `<div data-parca="siradaki">${siradakiKonuHtml(k, sayi)}</div>`,
     kurs: `<div data-parca="kurs">${kursBolumleriHtml(bolumler, k)}</div>`,
     tanis: `<div data-parca="tanis">${tanisKartiHtml()}</div>`,
@@ -243,6 +265,9 @@ export function ilerlemeSayfasi() {
     ${p.tanis}`);
   // kitaplar yalnızca sayfa ilk açılınca rafa dizilerek gelir; sonraki değişikliklerde yerinde durur
   d.kitaplikDurgun = true;
+  // sıradaki konunun salonunda şerit o tabloya kayar
+  const sira = ekran.querySelector('.kitap.sira');
+  if (sira) sira.parentElement.scrollLeft = Math.max(0, sira.offsetLeft - sira.parentElement.offsetLeft - 16);
   kucukKareleriDoldur();
 }
 
@@ -252,12 +277,15 @@ function yenile(adlar = ['kurs'], kartAcildi = false) {
   d.kartDurgun = !kartAcildi;
   const p = parcalar();
   const kaydirma = window.scrollY;
+  // salon şeritlerinin yatay konumu yeniden çizimde korunur
+  const seritler = new Map([...ekran.querySelectorAll('[data-serit]')].map((s) => [s.dataset.serit, s.scrollLeft]));
   for (const ad of adlar) {
     const el = ekran.querySelector(`[data-parca="${ad}"]`);
     if (el) el.outerHTML = p[ad];
   }
+  for (const s of ekran.querySelectorAll('[data-serit]')) if (seritler.has(s.dataset.serit)) s.scrollLeft = seritler.get(s.dataset.serit);
   window.scrollTo(0, kaydirma);
-  if (adlar.includes('alt') || adlar.includes('tanis')) kucukKareleriDoldur();
+  if (adlar.some((a) => a === 'alt' || a === 'tanis' || a === 'kurs' || a === 'siradaki')) kucukKareleriDoldur();
 }
 const HEPSI = ['ozet', 'pano', 'merdiven', 'calisma', 'siradaki', 'kurs', 'alt', 'tanis'];
 

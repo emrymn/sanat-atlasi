@@ -264,15 +264,26 @@ export function gozAtUst(etkin) {
 export function gozAt() {
   const durumlar = akimDurumlari(d.akimlar, d.sanatcilar, islenen());
   gununRengi();
+  const acikSayi = durumlar.filter((a) => a.acik).length;
   ciz(`${gozAtUst('akimlar')}
-    <p class="bolum-aciklama">Zaman sırasıyla. Soluk olanlar, ilgili konu işlenince açılır.</p>
+    <section class="gz-perde" aria-label="Galeri girişi">
+      <div class="gz-serit" aria-hidden="true"><div class="gz-serit-ic" data-gz-serit></div></div>
+      <div class="gz-perde-yazi">
+        <span class="etiket vurgu">Sanat tarihi koridoru</span>
+        <p class="gz-perde-baslik">${durumlar.length} akım, <em>yedi yüzyıl</em></p>
+        <p class="gz-perde-alt">${acikSayi} salon açık · soluk olanlar ilgili konu işlenince açılır</p>
+      </div>
+    </section>
     <ol class="zaman">${durumlar
-      .map((a) => {
+      .map((a, i) => {
         const uyeler = d.sanatcilar.filter((x) => x.akim === a.ad);
-        const ic = `<span class="etiket vurgu">${akimNoktasi(a.ad)}${kacis(akimYuzyillari(uyeler, { roma: true }))}</span><b>${kacis(a.ad)}</b>
+        const ic = `<span class="zaman-fon" data-zaman-fon aria-hidden="true"></span><span class="zaman-sira" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
+          <span class="etiket vurgu">${akimNoktasi(a.ad)}${kacis(akimYuzyillari(uyeler, { roma: true }))}</span><b>${kacis(a.ad)}</b>
           <span class="sayi">${a.acik ? `${a.acikSayisi} / ${a.toplam} sanatçı açık` : `<span class="kilit-notu">${ikon('kilit', 14)}Konu ${bulunmaEki(a.acilacagiKonu)} açılır</span>`}</span>
-          <span class="onizleme" data-onizleme="${kacis(a.ad)}"></span>`;
-        return `<li class="zaman-oge${a.acik ? '' : ' kilitli'}">${
+          ${a.acik ? `<span class="zaman-doluluk" role="img" aria-label="%${Math.round((100 * a.acikSayisi) / (a.toplam || 1))} açık"><i style="--y:${Math.round((100 * a.acikSayisi) / (a.toplam || 1))}%"></i></span>` : ''}
+          <span class="onizleme" data-onizleme="${kacis(a.ad)}"></span>
+          ${a.acik ? `<span class="zaman-ok" aria-hidden="true">${ikon('ileri', 18, 1.6)}</span>` : ''}`;
+        return `<li class="zaman-oge${a.acik ? '' : ' kilitli'}" style="--i:${i};--akim:${akimRenk(a.ad)}">${
           a.acik ? `<a class="zaman-kart" href="#/akim/${encodeURIComponent(a.ad)}">${ic}</a>` : `<div class="zaman-kart" aria-disabled="true">${ic}</div>`
         }</li>`;
       })
@@ -280,25 +291,42 @@ export function gozAt() {
   onizlemeleriDoldur();
 }
 
-// Her akıma 3 çerçeveli küçük eser: açık sanatçılar önce
+// Her akıma 3 çerçeveli küçük eser (açık sanatçılar önce); ilk eser kartın arka planı olur,
+// açık akımların ilk eserleri üstteki sonsuz şeride dizilir
 function onizlemeleriDoldur() {
   const k = islenen();
+  const no = cizimNo();
+  const seritIcin = [];
+  const sozler = [];
   for (const el of ekran.querySelectorAll('[data-onizleme]')) {
     // Eseri olmayan (ör. mimar/heykeltıraş) sanatçılar atlanır; ilk 3 eserli sanatçı gösterilir
     const uyeler = d.sanatcilar
       .filter((x) => x.akim === el.dataset.onizleme)
       .sort((a, b) => Number(k.has(b.konu)) - Number(k.has(a.konu)) || (a.dogum ?? 0) - (b.dogum ?? 0))
       .slice(0, 8);
-    Promise.all(uyeler.map((x) => sanatciEserleri(x))).then((listeler) => {
-      if (!el.isConnected) return;
-      el.innerHTML = listeler
-        .map(enBilinen)
-        .filter(Boolean)
-        .slice(0, 3)
-        .map((e) => cerceve(e, { genislik: 400, tembel: true }))
-        .join('');
-    });
+    const acikMi = !el.closest('.kilitli');
+    sozler.push(
+      Promise.all(uyeler.map((x) => sanatciEserleri(x).catch(() => []))).then((listeler) => {
+        if (!el.isConnected) return;
+        const eserler = listeler.map(enBilinen).filter(Boolean).slice(0, 3);
+        el.innerHTML = eserler.map((e, i) => cerceve(e, { genislik: 400, tembel: true }).replace('class="cerceve"', `class="cerceve" style="--j:${i}"`)).join('');
+        const fon = el.closest('.zaman-kart')?.querySelector('[data-zaman-fon]');
+        if (fon && eserler[0]) fon.innerHTML = kucukGorsel(eserler[0], 800);
+        if (acikMi) seritIcin.push(...eserler.slice(0, 2));
+      }),
+    );
   }
+  Promise.all(sozler).then(() => {
+    const serit = ekran.querySelector('[data-gz-serit]');
+    if (!serit || !guncelMi(no)) return;
+    let l = seritIcin.length ? seritIcin : [];
+    if (!l.length) return serit.closest('.gz-perde')?.classList.add('seritsiz');
+    while (l.length < 8) l = l.concat(l);
+    const kare = (e, i) => `<span class="gz-kare" style="--j:${i % 4}">${kucukGorsel(e, 400)}</span>`;
+    serit.innerHTML = l.map(kare).join('') + l.map(kare).join('');
+    serit.style.setProperty('--n', l.length);
+    serit.classList.add('hazir');
+  });
 }
 
 function sanatciSatiri(s, acik) {
