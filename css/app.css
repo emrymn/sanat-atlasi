@@ -5804,9 +5804,35 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   opacity: 0.6;
 }
 /* "buradasın": yolcu, yukarıdan inen ışık sütunu, yerde ışık, yükselen kıvılcımlar */
+/* yolcu duraklar gibi krem + koyu konturlu, altın ışıkla parlar, arkasında beyaz hale, başının üstünde altın ok:
+   kalabalıkta ve yanındaki durak sembolünün önünde seçilsin */
 .harita-yolcu {
   position: absolute;
   height: auto;
+  pointer-events: none;
+  transform-origin: 17% 100%;
+  filter: saturate(1.3) contrast(1.08) brightness(1.06) url(#durak-kontur) drop-shadow(0 0 4px #fff2cf) drop-shadow(0 0 12px rgba(255, 206, 110, 0.95));
+}
+.harita-yolcu-hale {
+  position: absolute;
+  width: 26%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.95), rgba(255, 248, 228, 0.6) 45%, rgba(255, 244, 220, 0));
+  pointer-events: none;
+}
+.harita.gece .harita-yolcu-hale {
+  background: radial-gradient(closest-side, rgba(255, 250, 236, 0.85), rgba(255, 236, 196, 0.45) 45%, rgba(255, 236, 196, 0));
+}
+.harita-yolcu-ok {
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  translate: -50% -100%;
+  background: linear-gradient(180deg, #f6dc8e, #c0902f);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  filter: drop-shadow(0 0 1.5px #fff8e6) drop-shadow(0 0 1.5px #fff8e6) drop-shadow(0 2px 2px rgba(20, 12, 6, 0.55));
   pointer-events: none;
 }
 .harita-sutun {
@@ -5867,6 +5893,15 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   .harita-kivilcim {
     animation: harita-kivilcim 2.4s linear infinite;
   }
+  .harita-yolcu {
+    animation: harita-yolcu-yuru 1.4s ease-in-out infinite;
+  }
+  .harita-yolcu-hale {
+    animation: harita-yolcu-hale 2.4s ease-in-out infinite;
+  }
+  .harita-yolcu-ok {
+    animation: harita-yolcu-ok 1.2s ease-in-out infinite;
+  }
   .harita-durak.yeni {
     animation: harita-belir 1.6s 0.3s ease-out backwards;
   }
@@ -5896,6 +5931,38 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   }
   50% {
     opacity: 0.95;
+  }
+}
+@keyframes harita-yolcu-yuru {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-3%) rotate(-1.5deg);
+  }
+  75% {
+    transform: translateY(-3%) rotate(1.5deg);
+  }
+}
+@keyframes harita-yolcu-hale {
+  0%,
+  100% {
+    opacity: 0.75;
+    scale: 0.92;
+  }
+  50% {
+    opacity: 1;
+    scale: 1.08;
+  }
+}
+@keyframes harita-yolcu-ok {
+  0%,
+  100% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(2px);
   }
 }
 @keyframes harita-kivilcim {
@@ -8675,19 +8742,11 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
   pointer-events: none;
   z-index: -1;
 }
-.harita-durak.simdiki img {
-  filter:
-    drop-shadow(0 0 1.5px #fff2cf)
-    drop-shadow(0 0 1.5px #fff2cf)
-    drop-shadow(0 0 12px rgba(255, 210, 120, 0.85));
-}
-.harita-durak.simdiki::after { width: 90%; border-color: #ffe7a8; }
 @media (prefers-reduced-motion: no-preference) {
   .harita-durak.acik::after,
   .harita-durak.simdiki::after { animation: durak-halka 2.6s ease-out infinite; }
-  .harita-durak.simdiki::after { animation-duration: 1.8s; }
-  .harita-durak.acik img { animation: durak-sallan 4.2s ease-in-out infinite; }
-  .harita-durak.simdiki img { animation: durak-zipla 1.8s ease-in-out infinite; }
+  .harita-durak.acik img,
+  .harita-durak.simdiki img { animation: durak-sallan 4.2s ease-in-out infinite; }
   .harita-durak.kilit::before { animation: durak-muhur 3.4s ease-in-out infinite; }
 }
 @keyframes durak-halka {
@@ -8846,7 +8905,6 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-.harita-durak.simdiki::after { width: 42%; }
 .harita-durak.kilit::after {
   border: 1.5px solid rgba(255, 236, 196, 0.8);
   box-shadow: 0 0 8px rgba(255, 214, 140, 0.5);
@@ -9022,12 +9080,11 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
   background: radial-gradient(closest-side, rgba(255, 238, 190, 0.95), rgba(255, 214, 130, 0.5) 55%, rgba(255, 214, 130, 0) 100%);
 }
 .harita-filtre { position: absolute; width: 0; height: 0; overflow: hidden; }
+/* "buradasın" durağının sembolü parlamaz, açık duraklar gibi durur; parıltı yanındaki yolcuda */
 .harita-durak img,
-.harita-durak.acik img {
-  filter: saturate(1.2) contrast(1.06) url(#durak-kontur) drop-shadow(0 4px 4px rgba(20, 12, 6, 0.45));
-}
+.harita-durak.acik img,
 .harita-durak.simdiki img {
-  filter: saturate(1.3) contrast(1.08) url(#durak-kontur) drop-shadow(0 0 9px rgba(255, 206, 110, 0.95));
+  filter: saturate(1.2) contrast(1.06) url(#durak-kontur) drop-shadow(0 4px 4px rgba(20, 12, 6, 0.45));
 }
 .harita-durak.kilit img {
   filter: grayscale(0.75) sepia(0.3) brightness(1.04) url(#durak-kontur) drop-shadow(0 0 0 rgba(255, 214, 140, 0));

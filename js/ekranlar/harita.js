@@ -12,6 +12,9 @@ import { sanatciEserleri } from '../eserler.js';
 
 const W = 390;
 const H = 585;
+// Yolcu (karakter) resimdeki kalabalık figürlerden büyük çizilir; durağın soluna konur (semboller sağa doğru açılır)
+const YOLCU_OLCEK = 1.6;
+const YOLCU_ARA = 40;
 let veriSozu = null;
 export function haritaVerisi() {
   veriSozu ||= jsonGetir('data/harita.json').catch(() => ({ bolgeler: {}, eserler: {} }));
@@ -48,13 +51,17 @@ function durakHtml(b, x, h, tur, simdiki, yeni) {
   if (x.acik) parca = `<span class="harita-isik" aria-hidden="true" style="${taban};animation-delay:${((x.no * 0.37) % 2.8).toFixed(2)}s"></span>` + parca;
   if (x.id === simdiki && b.yolcu) {
     const y = b.yolcu;
-    const hx = x.x * W + (x.x < 0.5 ? 24 : -24);
+    const yw = y.w * YOLCU_OLCEK;
+    const yh = y.h * YOLCU_OLCEK;
+    const hx = Math.max(22, x.x * W - YOLCU_ARA);
     const hy = ustY + 4;
     parca += `<span class="harita-sutun" aria-hidden="true" style="left:${(hx / W) * 100}%;top:${((hy - 170) / toplamY) * 100}%;height:${(174 / toplamY) * 100}%"></span>
       <span class="harita-yer" aria-hidden="true" style="left:${(hx / W) * 100}%;top:${((hy - 2) / toplamY) * 100}%"></span>
       ${[0, 1, 2, 3, 4, 5].map((i) => `<span class="harita-kivilcim" aria-hidden="true" style="left:${((hx - 12 + ((i * 37) % 24)) / W) * 100}%;top:${((hy - 6 - ((i * 13) % 10)) / toplamY) * 100}%;animation-delay:${i * 0.4}s"></span>`).join('')}
+      <span class="harita-yolcu-hale" aria-hidden="true" style="left:${(hx / W) * 100}%;top:${((hy - yh * 0.5) / toplamY) * 100}%"></span>
       <img class="harita-yolcu" data-test="harita-yolcu" alt="" decoding="async" src="${yolcuAdresi(b.id, tur)}"
-        style="left:${((hx - y.ax * y.w) / W) * 100}%;top:${((hy - y.ay * y.h) / toplamY) * 100}%;width:${(y.w / W) * 100}%">`;
+        style="left:${((hx - y.ax * yw) / W) * 100}%;top:${((hy - y.ay * yh) / toplamY) * 100}%;width:${(yw / W) * 100}%">
+      <span class="harita-yolcu-ok" aria-hidden="true" style="left:${(hx / W) * 100}%;top:${((hy - yh - 6) / toplamY) * 100}%"></span>`;
   }
   return parca;
 }
