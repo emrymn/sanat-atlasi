@@ -2854,6 +2854,39 @@ main[data-hareket='giris'][data-yon='sol'] > :not(.alt-yaprak) {
   }
 }
 
+/* Telefonu eğince (İş 32): tablo eğilen yöne hafifçe döner ve kayar (kenarları görünmesin diye biraz taşar), ışık
+   üstünden geçer, ad ters yöne kayar. Değişkenleri js/egim.js yazar; resmin kendi animasyonları transform ve scale
+   kullandığı için burada translate ve rotate, adda transform (adın animasyonu translate kullanır). */
+.bugun-kahraman.egimli {
+  perspective: 900px;
+}
+.bugun-kahraman.egimli > img {
+  width: calc(100% + 56px);
+  height: calc(100% + 56px);
+  margin: -28px 0 0 -28px;
+  translate: calc(var(--egx, 0) * -14px) calc(var(--egy, 0) * -10px);
+  rotate: var(--egim-eksen, 0 1 0 0deg);
+}
+.bugun-kahraman.egimli .sahne-isim {
+  transform: translate3d(calc(var(--egx, 0) * 9px), calc(var(--egy, 0) * 6px), 0);
+}
+.egim-isik {
+  display: none;
+}
+.bugun-kahraman.egimli .egim-isik {
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(
+    60% 45% at calc(50% + var(--egx, 0) * 45%) calc(35% + var(--egy, 0) * 35%),
+    rgba(255, 246, 225, 0.32),
+    rgba(255, 246, 225, 0) 70%
+  );
+  mix-blend-mode: soft-light;
+}
+
 /* Bugün açılışı: tablo galeri ışıkları yanar gibi aşağıdan yukarı açılır, sonra isim satır satır belirir */
 .sahne-yapiskan::before {
   content: '';

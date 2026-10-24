@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.34.0', metin: 'Bugün’de telefonu sağa sola, öne arkaya eğince günün tablosu hafifçe döner, ışık üstünden kayar, sanatçının adı derinlikle kayar. Ayarlar’dan kapatılabilir; iPhone ilk dokunuşta hareket izni sorar.' },
   { surum: '1.33.0', metin: 'Haritada dönem geçişleri: dönemlerin arası açıldı, her geçişte sis aralanır ve yeni dönemin adı belirir; kaydırırken duraklar yere konar, sis ve yazılar derinlikle kayar, sağ üstte hangi dönemde olduğun yazar; gündüz/gece düğmesi her yerden erişilir; yolcu büyüdü ve parlıyor; Rönesans ve XIX. yüzyıl durakları düzenli dizildi.' },
   { surum: '1.31.0', metin: 'Haritada katmanlar: Kolay ve Orta’dan önce her sanatçının 5 eseri tanıtılır, sorular yalnız bu eserlerden gelir; şıklarda biri şaşırtmalı, ikisi uzak dönemlerden; aynı soyadlı akrabalar hiçbir soruda birbirinin şıkkı olmaz.' },
   { surum: '1.30.0', metin: 'Yeni görünüm: Pekiştir (Atölye) ve İlerleme (Defter) baştan tasarlandı; yeni sekme adları ve simgeleri, eser yelpazeli düğmeler, Galeri ve haritada yenilikler. Tasarım v0 ile yapıldı.' },
