@@ -26,10 +26,17 @@ export const UC = 0.42;
 // üste kabaca eşit aralıkla, yolun bir sağına bir soluna (Modern'deki gibi düzenli). data/harita.json'daki noktalar
 // bu bölgelerde dip dipeydi (Rönesans'ta üç durak uzaktaki yolda üst üste, XIX. yüzyılda yedi durak kısa yolda).
 // Gündüz ve gece resimleri aynı resimden olduğu için ikisinde de aynı noktalar. olcek: o bölgenin sembol boyutu;
-// nesne: sembol resmi değiştiyse onun ölçüsü ve ayak noktası ({ w, h, ax, ay }, data/harita.json'daki gibi).
+// nesne: sembol resmi değiştiyse onun ölçüsü ve ayak noktası ({ w, h, ax, ay }, data/harita.json'daki gibi);
+// dosya: yeni sembolün dosya adı kökü (gorseller/ önbelleği sürümden bağımsız: aynı adla değişen resim telefonda yenilenmez).
 export const DURAK_DUZENI = {
   ronesans: {
     duraklar: [[0.52, 0.95], [0.3, 0.8], [0.68, 0.74], [0.28, 0.66], [0.68, 0.59], [0.44, 0.29], [0.53, 0.19]],
+    nesne: { w: 22.3, h: 46.0, ax: 0.5821, ay: 1.0 }, // mermer büst (eskiden düz beyaz kaide)
+    dosya: 'ronesans_bust',
+  },
+  romantik: {
+    nesne: { w: 41.7, h: 34.0, ax: 0.304, ay: 1.0 }, // kayaya yaslanmış ressam paleti (eskiden yol tabelası)
+    dosya: 'romantik_palet',
   },
   ondokuz: {
     duraklar: [[0.43, 0.875], [0.32, 0.805], [0.55, 0.735], [0.43, 0.665], [0.51, 0.595], [0.34, 0.525], [0.66, 0.455]],
@@ -48,7 +55,7 @@ export function vakit(tarih = new Date()) {
 }
 
 export const resimAdresi = (bolge, tur) => `gorseller/harita/${bolge}_${tur}.webp`;
-export const nesneAdresi = (bolge, tur) => `gorseller/harita/nesne_${bolge}_${tur}.webp`;
+export const nesneAdresi = (bolge, tur) => `gorseller/harita/nesne_${(DURAK_DUZENI[bolge] && DURAK_DUZENI[bolge].dosya) || bolge}_${tur}.webp`;
 export const yolcuAdresi = (bolge, tur) => `gorseller/harita/yolcu_${bolge}_${tur}.webp`;
 
 /**
