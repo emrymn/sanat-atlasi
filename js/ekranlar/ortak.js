@@ -141,6 +141,47 @@ export function etiket(metin, { vurgu = false } = {}) {
   return `<span class="etiket${vurgu ? ' vurgu' : ''}">${kacis(metin)}</span>`;
 }
 
+// Zemin, yelpazedeki üç eserden (sıra 0-2) farklı olsun ve her düğmede/her gün değişsin
+let zeminSayaci = 0;
+const zeminSirasi = () => 3 + ((Math.floor(Date.now() / 864e5) + zeminSayaci++ * 3) % 7);
+
+// Eser düğmesi: tur başlatan her düğme. Bir sanatçının üç eseri düğmenin üstünden yelpaze gibi yükselir;
+// gövde arkadaki resmin rengini alan buzlu camdır. ilerleme: { yapilan, hedef } → altta günlük hedef çizgisi.
+export function tabloDugme({ href, baslik, alt = '', sayi, test = '', sanatciId = '', kapakId = '', sinif = '', ilerleme = null }) {
+  const kaynak = sanatciId || kapakId;
+  const oran = ilerleme && ilerleme.hedef ? Math.min(100, Math.round((100 * ilerleme.yapilan) / ilerleme.hedef)) : null;
+  const yelpaze = kaynak
+    ? `<span class="ed-yelpaze" aria-hidden="true">${[0, 1, 2]
+        .map((i) => `<span class="ed-tuval" style="--i:${i}"><span data-eser-kucuk="${kacis(kaynak)}" data-sira="${i}"></span></span>`)
+        .join('')}</span>`
+    : '';
+  return `<a class="eser-dugme${kaynak ? ' yelpazeli' : ''}${sinif ? ` ${sinif}` : ''}" href="${href}"${test ? ` data-test="${test}"` : ''}>
+      ${yelpaze}
+      <span class="ed-govde">
+        ${kaynak ? `<span class="ed-zemin" aria-hidden="true" data-eser-kucuk="${kacis(kaynak)}" data-sira="${zeminSirasi()}"></span>` : ''}
+        <span class="ed-yazi"><span class="ed-baslik">${kacis(baslik)}</span>${alt ? `<small data-test="tur-alt">${kacis(alt)}</small>` : ''}</span>
+        <span class="ed-sayi"><b data-test="tur-sayi">${sayi}</b><small>kart</small></span>
+        <span class="ed-ok" aria-hidden="true">${ikon('ileri', 18, 1.8)}</span>
+        ${oran === null ? '' : `<span class="ed-hedef" role="img" aria-label="Bugün ${ilerleme.yapilan} / ${ilerleme.hedef} kart"><i style="--oran:${oran}%"></i></span>`}
+      </span>
+    </a>`;
+}
+
+// [data-eser-kucuk="<sanatçı id>"][data-sira="n"] kutularına sanatçının en bilinen n. eseri
+export function eserKareleriDoldur() {
+  for (const el of ekran.querySelectorAll('[data-eser-kucuk]')) {
+    const s = d.harita.get(el.dataset.eserKucuk);
+    if (!s) continue;
+    sanatciEserleri(s).then((eserler) => {
+      const sirali = bilinirlikSirasi(eserler).filter((e) => e.gorseller && e.gorseller.length);
+      if (!sirali.length || !el.isConnected) return;
+      const e = sirali[Number(el.dataset.sira) % sirali.length];
+      el.innerHTML = kucukGorsel(e, 400);
+      el.closest('.ed-tuval')?.classList.add('dolu');
+    });
+  }
+}
+
 // Eserin adı ve tarihi: "İnci Küpeli Kız, y. 1665"
 export function eserAdi(e) {
   return `${eserBaslik(e)}${e.tarih ? `, ${e.tarih}` : ''}`;
@@ -242,12 +283,13 @@ export function gununRengi() {
 
 // [data-kucuk="<sanatçı id>"] kutularına en bilinen eserin küçük görseli
 export function kucukKareleriDoldur() {
+  eserKareleriDoldur();
   for (const el of ekran.querySelectorAll('[data-kucuk]')) {
     const s = d.harita.get(el.dataset.kucuk);
     if (!s) continue;
     sanatciEserleri(s).then((eserler) => {
       const e = enBilinen(eserler);
-      if (e && el.isConnected) el.innerHTML = kucukGorsel(e, 400);
+      if (e && el.isConnected) el.innerHTML = kucukGorsel(e, Number(el.dataset.genislik) || 400);
     });
   }
 }
@@ -275,11 +317,11 @@ export function temaUygula() {
 // ---------- sekme çubuğu ----------
 // İş 24: Göz At haritaya katıldı; büyük Harita sekmesi ikinci sırada
 const SEKMELER = [
-  ['bugun', 'Bugün', '#/'],
-  ['harita', 'Harita', '#/harita'],
-  ['gozat', 'Göz At', '#/gozat'],
-  ['pekistir', 'Pekiştir', '#/pekistir'],
-  ['ilerleme', 'İlerleme', '#/ilerleme'],
+  ['bugun', 'Tuval', '#/'],
+  ['harita', 'Yolculuk', '#/harita'],
+  ['gozat', 'Galeri', '#/gozat'],
+  ['pekistir', 'Atölye', '#/pekistir'],
+  ['ilerleme', 'Defter', '#/ilerleme'],
 ];
 
 // etkin: sekme kimliği; null → sekme çubuğu yok (pekiştirme kartı).
@@ -295,7 +337,7 @@ export function sekmeleriCiz(etkin) {
   if (!nav.querySelector('.sekme-isaret')) {
     nav.innerHTML =
       '<span class="sekme-isaret" aria-hidden="true"></span>' +
-      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}"${id === 'harita' ? ' class="buyuk"' : ''}>${ikon(id, id === 'harita' ? 27 : 23, 1.5)}<span>${ad}</span></a>`).join('');
+      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}">${ikon('sekme-' + id, 22, 1.5)}<span>${ad}</span></a>`).join('');
     sekmeSurukle(nav);
   }
   const i = SEKMELER.findIndex(([id]) => id === etkin);

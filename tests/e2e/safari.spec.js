@@ -25,10 +25,11 @@ test('zaman çizgisi desteği rapora yazılır; Bugün ve ana ekranlarda yatay t
   }
 });
 
-test('Bugün sahnesi: sayfa kaydırılabilir ve pekiştir düğmesi kaydırırken ekranda kalır', async ({ page }) => {
+test('Bugün sahnesi: sayfa kaydırılabilir ve sekme çubuğu (Pekiştir) kaydırırken ekranda kalır', async ({ page }) => {
+  // 1.30: tablonun önünde düğme yok; Pekiştir'e alttaki sekme çubuğundan gidilir
   await page.goto('./');
-  const dugme = page.locator('.sahne-dugme').first();
-  if (!(await dugme.count())) test.skip(true, 'bu veride Günün sanatçısı sahnesi yok');
+  await expect(page.locator('[data-test="gunun-kart"]')).toBeVisible();
+  const dugme = page.locator('#sekmeler a[data-sekme="pekistir"]');
   await expect(dugme).toBeVisible();
   await page.evaluate(() => window.scrollTo(0, 600));
   await page.waitForTimeout(300);

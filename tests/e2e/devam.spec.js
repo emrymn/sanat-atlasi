@@ -28,11 +28,11 @@ test('yarım oturum: 5 kart cevapla, yenile, devam et → 6. karttan sürer', as
   await expect(kart).toBeVisible();
   await expect(kart).toContainText('Kaldığın yerden devam et');
   await expect(page.locator('[data-test="devam-ozet"]')).toHaveText(`Karışık · 6 / ${toplam}`);
-  // kart, Pekiştir düğmesinden önce
+  // kart, günün sanatçısı sahnesinden önce (1.30: sahnede Pekiştir düğmesi yok)
   const sira = await page.evaluate(() => {
     const k = document.querySelector('[data-test="devam-kart"]');
-    const p = document.querySelector('[data-test="pekistir"]');
-    return !!(k.compareDocumentPosition(p) & Node.DOCUMENT_POSITION_FOLLOWING);
+    const p = document.querySelector('[data-test="gunun-kart"]');
+    return !p || !!(k.compareDocumentPosition(p) & Node.DOCUMENT_POSITION_FOLLOWING);
   });
   expect(sira).toBe(true);
 
@@ -60,7 +60,7 @@ test('yarım oturum: akım sorusundan devam, Bitir ve yeni oturum sorusu', async
   // yarım varken yeni oturum → sayfa içi soru
   await page.goto('./#/pekistir/donem');
   await expect(page.locator('[data-test="devam-kart"]')).toBeVisible();
-  await page.getByRole('link', { name: /^Gotik/ }).click();
+  await page.locator('a[href="#/pekistir/donem/Gotik"]').click();
   await expect(page.locator('[data-test="yarim-soru"]')).toContainText('Yarım kalan oturum silinsin mi?');
   await page.getByRole('button', { name: 'Sil, yeni başla' }).click();
   await expect(page.locator('[data-test="sanatci-secenekleri"] button')).toHaveCount(4);

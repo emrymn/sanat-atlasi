@@ -43,9 +43,15 @@ export function zamanSayfasi() {
   gununRengi();
   if (!d.zamanPx) d.zamanPx = 2.4;
   ciz(`${gozAtUst('zaman')}
-    <p class="bolum-aciklama">Kim kimin çağdaşıydı: her çizgi bir sanatçının ömrü, rengi akımı. İki parmakla yakınlaştır, çizgiye dokun.</p>
-    <div class="zaman-araclar"><button type="button" class="zaman-yakin" data-zaman-yakin="-1" aria-label="Uzaklaştır">−</button><button type="button" class="zaman-yakin" data-zaman-yakin="1" aria-label="Yakınlaştır">+</button></div>
-    <div class="zaman-kaydir" data-zaman-kaydir>${seritHtml(d.zamanPx)}</div>
+    <div class="zaman-pano">
+      <p class="zaman-yil" aria-live="polite"><b data-zaman-yil>—</b><span><span data-zaman-canli>0</span> sanatçı aynı anda yaşıyor</span></p>
+      <div class="zaman-araclar" role="group" aria-label="Yakınlaştırma"><button type="button" class="zaman-yakin" data-zaman-yakin="-1" aria-label="Uzaklaştır">${ikon('eksi', 16, 1.8)}</button><button type="button" class="zaman-yakin" data-zaman-yakin="1" aria-label="Yakınlaştır">${ikon('arti', 16, 1.8)}</button></div>
+    </div>
+    <div class="zaman-pencere">
+      <div class="zaman-kaydir" data-zaman-kaydir>${seritHtml(d.zamanPx)}</div>
+      <span class="zaman-imlec" aria-hidden="true"></span>
+    </div>
+    <p class="zaman-ipucu">Kaydır: ortadaki çizgi yılı okur, o yılda yaşayanlar parlar. Çizgiye dokun, sanatçıyı aç.</p>
     <div data-zaman-kart></div>`);
   const k = ekran.querySelector('[data-zaman-kaydir]');
   // ilk açılışta açık sanatçıların ortasına kaydır
@@ -55,8 +61,35 @@ export function zamanSayfasi() {
     const orta = acik.length ? acik.reduce((t, s) => t + s.dogum, 0) / acik.length : 1500;
     k.scrollLeft = yilX(orta, d.zamanPx) - k.clientWidth / 2;
   }
-  k.addEventListener('scroll', () => (d.zamanKaydirma = k.scrollLeft), { passive: true });
+  let kare = 0;
+  k.addEventListener(
+    'scroll',
+    () => {
+      d.zamanKaydirma = k.scrollLeft;
+      if (!kare) kare = requestAnimationFrame(() => ((kare = 0), imleciGuncelle(k)));
+    },
+    { passive: true },
+  );
+  imleciGuncelle(k);
   yakinlastirmaBagla(k);
+}
+
+// Ortadaki imleç: o yılı yazar ve o yılda yaşayan sanatçıların çizgilerini parlatır
+const TUVAL_PAY = 12;
+function imleciGuncelle(k) {
+  const x = k.scrollLeft + k.clientWidth / 2 - TUVAL_PAY;
+  const yil = Math.round(BAS + x / d.zamanPx);
+  let n = 0;
+  for (const c of k.querySelectorAll('.zaman-cubuk')) {
+    const sol = c.offsetLeft;
+    const canli = x >= sol && x <= sol + c.offsetWidth;
+    c.classList.toggle('canli', canli);
+    if (canli) n++;
+  }
+  const y = ekran.querySelector('[data-zaman-yil]');
+  const s = ekran.querySelector('[data-zaman-canli]');
+  if (y) y.textContent = Math.min(SON, Math.max(BAS, yil));
+  if (s) s.textContent = n;
 }
 
 // Yakınlaştırma: merkezdeki (ya da parmakların ortasındaki) yıl yerinde kalır
@@ -70,6 +103,7 @@ function yakinlastir(k, yeniPx, merkezX = k.clientWidth / 2) {
   k.querySelector('.zaman-tuval').classList.add('durgun');
   k.scrollLeft = (yil - BAS) * px - merkezX;
   d.zamanKaydirma = k.scrollLeft;
+  imleciGuncelle(k);
 }
 
 function yakinlastirmaBagla(k) {

@@ -42,6 +42,7 @@ import {
   bildir,
   cizimNo,
   guncelMi,
+  eserKareleriDoldur,
 } from './ortak.js';
 import { devamKarti } from './pekistir.js';
 import { SURUM } from '../surum.js';
@@ -101,8 +102,8 @@ function turKarti(tur, g) {
 }
 
 // Bugün sahnesi: tablo ekranı kaplar ve kaydırırken yerinde kalır; kaydırdıkça tabloya yaklaşılır
-// (büyür, kararır) ve üstünden müze duvar etiketleri geçer. Pekiştir düğmesi sahne boyunca başparmağın altında durur.
-function sahneHtml(gs, { tekrar, tur, devam }) {
+// (büyür, kararır) ve üstünden müze duvar etiketleri geçer. Tablonun önünde düğme yok; Pekiştir alt çubukta.
+function sahneHtml(gs, { tekrar, tur, devam, g }) {
   const not = gs.kurs_notu || gs.anlatim;
   const tn = taninma(gs);
   const panel = (baslik, metin, italik) =>
@@ -118,9 +119,6 @@ function sahneHtml(gs, { tekrar, tur, devam }) {
         ${tn ? panel('Nasıl tanırım?', tn, false) : ''}
         ${not ? panel('Notlarımdan', not, true) : ''}
       </div>
-      <a class="sahne-dugme" href="#/pekistir/karisik" data-test="pekistir">
-        <span class="sahne-dugme-yazi"><span>Pekiştir · <b data-test="tur-sayi">${tur.toplam}</b> kart</span><small data-test="tur-alt">${kacis(turAltYazisi(tur))}</small></span>${ikon('ileri', 18, 1.6)}
-      </a>
     </section>`;
 }
 
@@ -164,7 +162,7 @@ export function anaSayfa() {
   const gs = d.harita.get(gununId());
   const tarih = new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' });
   const tur = turBilgisi('karisik');
-  const tekrar = `${kacis(tarih)} · ${tur.tekrar ? `${tur.tekrar} tekrar` : 'tekrar yok'}`;
+  const tekrar = kacis(tarih);
   const son = (d.ilerleme.sonCalisilanlar || []).map((id) => d.harita.get(id)).filter(Boolean);
   const devam = devamKarti();
   // en alt satırlar sahne varsa mozaiğin içinde kalır: tablonun renkleri sayfanın sonuna kadar sürer
@@ -183,13 +181,13 @@ export function anaSayfa() {
   }
     ${yenilikHtml()}
     ${yedekHatirlatHtml()}
-    <p class="sakin"><span data-test="acik-sayi">${ist.acik}</span> açık sanatçı · ${ist.oran === null ? 'henüz cevap yok' : `%${ist.oran} doğru`} · bugün ${g.kart} / ${d.ilerleme.ayarlar.gunlukKart} kart · <a href="#/ayarlar">Ayarlar</a></p>`;
+    ${defterHtml(ist, g)}`;
   ciz(`
     <h1 class="ekran-disi" tabindex="-1">Sanat Atlası</h1>
     ${devam}
     ${
       gs
-        ? sahneHtml(gs, { tekrar, tur, devam: !!devam })
+        ? sahneHtml(gs, { tekrar, tur, devam: !!devam, g })
         : `<header class="ust"><div class="ust-yazi">${etiket('Bugün', { vurgu: true })}<span class="hap" data-test="tekrar">${tekrar}</span></div></header>${turKarti(tur, g)}`
     }
     ${gs ? gununHikayesi(gs, alt) : alt}`);
@@ -200,6 +198,7 @@ export function anaSayfa() {
     gununKartGorseli(gs);
     sahneBiyografisi(gs);
     anaGaleriDoldur(gs);
+    eserKareleriDoldur();
     etiketleriIsaretle();
   } else ekranRengi(null, null);
   for (const el of ekran.querySelectorAll('[data-mini]')) {
@@ -208,6 +207,22 @@ export function anaSayfa() {
       if (e && el.isConnected) el.innerHTML = kucukGorsel(e, 400);
     });
   }
+}
+
+// ---------- Günün defteri ----------
+// Sayfanın sonunda üç müze etiketi: açık sanatçı, doğruluk ve günlük hedef halkası
+function defterHtml(ist, g) {
+  const hedef = d.ilerleme.ayarlar.gunlukKart;
+  const oran = hedef ? Math.min(1, g.kart / hedef) : 0;
+  const cevre = 2 * Math.PI * 15;
+  return `<section class="defter" aria-label="Günün defteri">
+      <a class="defter-hucre" href="#/ilerleme"><b data-test="acik-sayi">${ist.acik}</b><small>açık sanatçı</small></a>
+      <a class="defter-hucre" href="#/ilerleme"><b>${ist.oran === null ? '—' : `%${ist.oran}`}</b><small>${ist.oran === null ? 'cevap yok' : 'doğru'}</small></a>
+      <a class="defter-hucre defter-hedef" href="#/ayarlar" aria-label="Bugün ${g.kart} / ${hedef} kart, hedefi değiştir">
+        <svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" class="iz"/><circle cx="18" cy="18" r="15" class="dolu" style="stroke-dasharray:${cevre};--bos:${cevre * (1 - oran)}"/></svg>
+        <span><b>${g.kart}<i>/${hedef}</i></b><small>bugün</small></span>
+      </a>
+    </section>`;
 }
 
 // ---------- Yedek hatırlatması (İ3) ----------

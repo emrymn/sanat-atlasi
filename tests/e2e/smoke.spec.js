@@ -9,7 +9,7 @@ test('ana sayfa → Göz At → sanatçı → eser tam ekran', async ({ page }) 
   await page.goto('./');
   await expect(page.getByRole('heading', { name: 'Sanat Atlası' })).toBeVisible();
   await expect(page.getByText('açık sanatçı')).toBeVisible();
-  await page.getByRole('link', { name: /Göz At/ }).click();
+  await page.locator('#sekmeler a[data-sekme="gozat"]').click();
   await expect(page.getByRole('heading', { name: 'Göz At' })).toBeVisible();
   // kilitli akım gri ve "Konu N'de açılır" yazar
   await expect(page.getByText(/Konu \d+'(de|da|te|ta) açılır/).first()).toBeVisible();
@@ -97,7 +97,7 @@ test('Pekiştir · Karışık: 5 kart cevapla', async ({ page }) => {
 test('Pekiştir · Döneme göre: bir akım seç ve cevapla', async ({ page }) => {
   await page.goto('./#/pekistir/donem');
   await expect(page.getByRole('link', { name: /Hepsi, dönem sırasıyla/ })).toBeVisible();
-  await page.getByRole('link', { name: /^Gotik / }).click();
+  await page.locator('a[href="#/pekistir/donem/Gotik"]').click();
   const secenekler = page.locator('[data-test="sanatci-secenekleri"] button');
   await expect(secenekler).toHaveCount(4);
   await secenekler.first().click();

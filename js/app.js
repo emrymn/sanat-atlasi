@@ -18,6 +18,7 @@ import { olaylariBagla as zamanOlaylari } from './ekranlar/zaman.js';
 import { olaylariBagla as akimOlaylari } from './ekranlar/akim.js';
 import { olaylariBagla as haritaOlaylari } from './ekranlar/harita.js';
 
+
 // ---------- service worker ----------
 function swKaydet() {
   if (!('serviceWorker' in navigator)) return;

@@ -9,10 +9,10 @@ test('Günün sanatçısı: ana sayfada kart, bölüm içeriği, aynı gün ayn�
   await page.goto('./');
   const kart = page.locator('[data-test="gunun-kart"]');
   await expect(kart).toBeVisible();
-  // ana sayfada en üstteki kart
+  // ana sayfada en üstte (1.30: altında günün defteri)
   const ilkY = await kart.boundingBox();
-  const menuY = await page.locator('[data-test="pekistir"]').boundingBox();
-  expect(ilkY.y).toBeLessThan(menuY.y);
+  const defterY = await page.locator('.defter').boundingBox();
+  expect(ilkY.y).toBeLessThan(defterY.y);
   const ad = (await kart.locator('b.isim').textContent()).trim();
   await kart.locator('.sahne-isim').click();
   await expect(page.getByRole('heading', { name: 'Günün sanatçısı' })).toBeVisible();

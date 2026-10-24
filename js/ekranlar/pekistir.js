@@ -41,6 +41,7 @@ import {
   etiket,
   acikListe,
   akimNoktasi,
+  akimRenk,
   bugun,
   kotuler,
   geri,
@@ -63,7 +64,10 @@ import {
   gorselTercihi,
   cizimNo,
   guncelMi,
+  kucukKareleriDoldur,
+  tabloDugme,
 } from './ortak.js';
+import { akimIstatistigi, seviyeIziHtml } from './pano.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
 import { BOLUM_SORU, BOLUM_GECME, SEVIYE_NO, bolumKartlari, bolumSonucuIsle, tanitimGoruldu, bolumKaydi, bolumAdi } from '../bolum.js';
 import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
@@ -77,26 +81,141 @@ function bolumBilgi(akim) {
   return { id, sv, b: tumBolumler().find((x) => x.id === id) || null };
 }
 
+const DONEM_SIRALARI = [
+  ['sira', 'Sırayla'],
+  ['tekrar', 'Tekrarı olan'],
+  ['zayif', 'Zayıf önce'],
+];
+const HEDEFLER = [10, 20, 30];
+
+// Bugünkü turun sahnesi: destenin ilk üç kartı, kart sayısı, türlerin oranı ve günlük hedef seçimi
+function turSahnesi(karisik) {
+  const b = bugun();
+  const skorlar = d.ilerleme.skorlar;
+  const deste = acikListe()
+    .map((s) => ({ s, k: kategori(skorlar, s.id, 'karisik', b) }))
+    .sort((x, y) => x.k - y.k)
+    .slice(0, 3);
+  const pek = karisik.zayif + karisik.diger;
+  const dk = Math.max(1, Math.round((karisik.toplam * 20) / 60));
+  const parca = [
+    ['tekrar', karisik.tekrar, 'tekrar'],
+    ['pek', pek, 'pekiştirme'],
+    ['yeni', karisik.yeni, 'yeni'],
+  ];
+  const hedef = d.ilerleme.ayarlar.gunlukKart;
+  const hedefler = [...new Set([...HEDEFLER, hedef])].sort((x, y) => x - y);
+  const kapak = deste[0] ? deste[0].s : acikListe()[0];
+  return `<section class="pk-sahne" aria-label="Bugünkü karışık tur">
+      <div class="pk-resim" aria-hidden="true">${kapak ? `<span data-kucuk="${kacis(kapak.id)}" data-genislik="960"></span>` : ''}</div>
+      <div class="pk-ust">${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}</div>
+      <div class="pk-deste${deste.length ? '' : ' bos'}" aria-hidden="true">${deste
+        .map((x, i) => `<span class="pk-kart" style="--i:${i}"><span class="kucuk-kare" data-kucuk="${kacis(x.s.id)}"></span></span>`)
+        .join('')}</div>
+      <div class="pk-govde">
+        ${etiket('Bugünkü tur', { vurgu: true })}
+        <p class="pk-sayi"><b>${karisik.toplam}</b><span>kart<br>~${dk} dk</span></p>
+        <span class="tur-karisim" role="img" aria-label="${parca.map(([, n, ad]) => `${n} ${ad}`).join(', ')}">${parca
+          .filter(([, n]) => n)
+          .map(([cls, n]) => `<i class="k-${cls}" style="flex-grow:${n}"></i>`)
+          .join('')}</span>
+        <ul class="tur-lejant">${parca.map(([cls, n, ad]) => `<li><i class="k-${cls}" aria-hidden="true"></i>${n} ${ad}</li>`).join('')}</ul>
+        ${tabloDugme({
+          href: '#/pekistir/karisik',
+          test: 'karisik-dugme',
+          baslik: 'Turu başlat',
+          alt: turAltYazisi(karisik),
+          sayi: karisik.toplam,
+          sanatciId: kapak && kapak.id,
+          sinif: 'pk-eser-dugme',
+        })}
+      </div>
+    </section>
+    <div class="hedef-sec pk-hedef"><span class="etiket" id="hedef-etiket">Günlük hedef</span><div class="secim-hap" role="group" aria-labelledby="hedef-etiket">${hedefler
+      .map((n) => `<button type="button" data-gunluk-hedef="${n}" aria-pressed="${n === hedef}">${n}</button>`)
+      .join('')}</div></div>`;
+}
+
+// Dönem salonu: dönemin temsilî eseri tam kart arka planı; ad, seviye ve doğruluk halkası üstünde
+function temsilci(ad, acik) {
+  const l = acik.filter((s) => s.akim === ad);
+  return l.find((s) => s.kaynak === 'kurs') || l[0];
+}
+function oranHalkasi(oran) {
+  const y = oran === null ? 0 : Math.round(100 * oran);
+  return `<span class="salon-halka" role="img" aria-label="${oran === null ? 'henüz cevap yok' : `%${y} doğru`}"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19" pathLength="100"/><circle class="dolu" cx="22" cy="22" r="19" pathLength="100" style="--oran:${y}"/></svg><b>${oran === null ? '–' : y}</b></span>`;
+}
+function donemSatiri(a, turYazi, ist, i, acik) {
+  const k = seviyeKaydi(d.ilerleme, a.ad);
+  const s = temsilci(a.ad, acik);
+  return `<li style="--i:${i}"><a class="salon donem-satir" href="#/pekistir/donem/${encodeURIComponent(a.ad)}" style="--akim:${akimRenk(a.ad)}">
+      <span class="salon-resim" aria-hidden="true">${s ? `<span data-kucuk="${kacis(s.id)}" data-genislik="500"></span>` : ''}</span>
+      <span class="salon-yazi">
+        <span class="salon-ust">${akimNoktasi(a.ad)}${seviyeRozeti(a.ad)}</span>
+        <b class="salon-ad">${kacis(a.ad)}</b>
+        <span class="salon-alt">${a.acikSayisi} sanatçı · ${turYazi(turBilgisi('donem', a.ad))}</span>
+        ${seviyeIziHtml(k)}
+      </span>
+      ${oranHalkasi(ist.oran)}
+    </a></li>`;
+}
+function hepsiSalonu(acik, turYazi) {
+  const ornek = [];
+  const gorulen = new Set();
+  for (const s of acik) if (!gorulen.has(s.akim) && ornek.length < 4) (gorulen.add(s.akim), ornek.push(s));
+  return `<li style="--i:0"><a class="salon salon-hepsi" href="#/pekistir/donem/hepsi">
+      <span class="salon-mozaik" aria-hidden="true">${ornek.map((s) => `<span data-kucuk="${kacis(s.id)}"></span>`).join('')}</span>
+      <span class="salon-yazi">
+        <span class="salon-ust"><span class="etiket vurgu">Bütün salonlar</span></span>
+        <b class="salon-ad">Hepsi, dönem sırasıyla</b>
+        <span class="salon-alt">${acik.length} sanatçı · ${turYazi(turBilgisi('donem', 'hepsi'))}</span>
+      </span>
+      <span class="salon-ok" aria-hidden="true">${ikon('ileri', 22, 1.5)}</span>
+    </a></li>`;
+}
+
 export function pekistirMenusu() {
   const durumlar = akimDurumlari(d.akimlar, d.sanatcilar, islenen()).filter((a) => a.acik);
   // her satırda o turun kart sayısı (D1): turu açınca sayaç aynı sayıyı gösterir
   const turYazi = (t) => `${t.toplam} kart${t.tekrar ? ` · ${t.tekrar} tekrar` : ''}`;
   const karisik = turBilgisi('karisik');
+  const acik = acikListe();
+  const b = bugun();
+  const istler = new Map(durumlar.map((a) => [a.ad, akimIstatistigi(a.ad, acik, d.ilerleme.skorlar, b)]));
+  const sira = d.pekSira || 'sira';
+  const sirali = durumlar.slice();
+  if (sira === 'tekrar') sirali.sort((x, y) => istler.get(y.ad).vade - istler.get(x.ad).vade);
+  if (sira === 'zayif')
+    sirali.sort((x, y) => {
+      const ox = istler.get(x.ad).oran;
+      const oy = istler.get(y.ad).oran;
+      return seviyeKaydi(d.ilerleme, x.ad).s - seviyeKaydi(d.ilerleme, y.ad).s || (ox ?? 2) - (oy ?? 2);
+    });
   gununRengi();
-  ciz(`${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}
+  ciz(`${
+    durumlar.length
+      ? `${turSahnesi(karisik)}
     ${devamKarti()}
-    ${
-      durumlar.length
-        ? `<a class="dugme vurgu karisik-dugme" href="#/pekistir/karisik" data-test="karisik-dugme"><span>Pekiştir · Karışık · <b data-test="tur-sayi">${karisik.toplam}</b> kart</span><small data-test="tur-alt">${kacis(turAltYazisi(karisik))}</small></a>
     ${hatalarSatiri()}
-    <section class="bolum">${etiket('Döneme göre')}
-    <p class="kucuk ikincil" style="margin:0">${seviyeAciklamasi()}</p>
-    <ul class="liste">
-      <li><a class="satir" href="#/pekistir/donem/hepsi"><span class="metin"><b>Hepsi, dönem sırasıyla</b><span>${acikListe().length} sanatçı · ${turYazi(turBilgisi('donem', 'hepsi'))}</span></span>${ikon('ileri', 20, 1.4)}</a></li>
-      ${durumlar.map((a) => `<li><a class="satir" href="#/pekistir/donem/${encodeURIComponent(a.ad)}"><span class="metin"><b>${kacis(a.ad)} ${akimNoktasi(a.ad)}</b><span>${a.acikSayisi} sanatçı · ${turYazi(turBilgisi('donem', a.ad))}</span></span>${seviyeRozeti(a.ad)}${ikon('ileri', 20, 1.4)}</a></li>`).join('')}
-    </ul></section>`
-        : bosAcik()
-    }`);
+    <section class="bolum pk-salonlar">
+      <div class="pk-bolum-bas"><span class="etiket vurgu">Döneme göre</span><h2 class="pk-baslik">Salonlar</h2></div>
+      <p class="kucuk ikincil" style="margin:0">${seviyeAciklamasi()}</p>
+      <div class="secim-hap donem-sira" role="group" aria-label="Dönemleri sırala">${DONEM_SIRALARI.map(([id, ad]) => `<button type="button" data-pek-sira="${id}" aria-pressed="${sira === id}">${ad}</button>`).join('')}</div>
+      <ul class="salon-liste">
+        ${hepsiSalonu(acik, turYazi)}
+        ${sirali.map((a, i) => donemSatiri(a, turYazi, istler.get(a.ad), i + 1, acik)).join('')}
+      </ul>
+    </section>`
+      : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
+  }`);
+  kucukKareleriDoldur();
+}
+
+// Sıralama ve hedef değişince menü yerinde yeniden çizilir; kaydırma yeri korunur
+function menuyuYenile() {
+  const y = window.scrollY;
+  pekistirMenusu();
+  window.scrollTo(0, y);
 }
 
 // Ö5 · Hatalarım: son 7 günde yanlış yapılan sanatçılar ve karıştırılan ikililer (yoksa satır görünmez)
@@ -269,7 +388,7 @@ function kartHazirla(o, konum) {
   const s = d.harita.get(k.id);
   return sanatciEserleri(s).then((eserler) => {
     const son = d.ilerleme.sonEserler[s.id] || [];
-    // Dönemin seviyesi sorunun zorluğunu belirler: eser (kolay → tipik/ünlü) ve şıklar (kolay → uzak dönemler).
+    // Dönemin seviyesi sorunun zorluğunu belirler: eser (kolay → tipik/ünlü) ve şıklar (kolay ��� uzak dönemler).
     // Ö9: dönem turunda alt seviye seçildiyse o seviye
     const sv = o.kip === 'bolum' ? o.seviye : kartSeviyesi(seviyeKaydi(d.ilerleme, s.akim), o.seviye);
     // Ö6: tanışmada görülen eserler de sorulmaz
@@ -784,7 +903,7 @@ function kartpostalAc(o, i, kaynak) {
     .join('')}</div>
     <div class="kp-noktalar" aria-hidden="true">${k.ters.map((x, j) => `<i data-kp-nokta="${j}"></i>`).join('')}</div>
     <div class="kp-dugmeler"><button class="dugme" type="button" data-kp-kapat>Masaya bırak</button><button class="dugme acik kp-bu" type="button" data-sanatci="${kacis(k.ters[i].id)}" data-test="kp-bu">Bu eser · ${HARFLER[i]}</button></div>`;
-  // kart, dokunulan yerden büyür
+  // kart, dokunulan yerden b��yür
   if (kaynak) {
     const r = kaynak.getBoundingClientRect();
     el.style.setProperty('--kaynak-x', `${r.left + r.width / 2}px`);
@@ -1205,6 +1324,24 @@ export function olaylariBagla() {
     if (p) {
       e.preventDefault();
       ipucuCevir(p);
+    }
+  });
+
+  ekran.addEventListener('click', (e) => {
+    const ps = e.target.closest('[data-pek-sira]');
+    if (ps) {
+      d.pekSira = ps.dataset.pekSira;
+      menuyuYenile();
+      ekran.querySelector(`[data-pek-sira="${ps.dataset.pekSira}"]`)?.focus({ preventScroll: true });
+      return;
+    }
+    const gh = e.target.closest('[data-gunluk-hedef]');
+    if (gh) {
+      d.ilerleme.ayarlar.gunlukKart = Math.min(100, Math.max(5, Number(gh.dataset.gunlukHedef)));
+      kaydet();
+      menuyuYenile();
+      ekran.querySelector(`[data-gunluk-hedef="${gh.dataset.gunlukHedef}"]`)?.focus({ preventScroll: true });
+      return;
     }
   });
 

@@ -6,7 +6,8 @@ import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
 import { haritaKur, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul } from '../harita.js';
-import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir } from './ortak.js';
+import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen } from './ortak.js';
+import { sanatciEserleri } from '../eserler.js';
 
 const W = 390;
 const H = 585;
@@ -26,8 +27,10 @@ export function durumlar() {
 }
 
 const SEVIYE_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor' };
+// Yıldız yazı tipinden bağımsız çizilir (Bodoni'de ★ glifi yok, kutu görünüyordu)
+const YILDIZ = '<i class="yildiz-sekil" aria-hidden="true"></i>';
 const yildizHtml = (n) =>
-  `<span class="harita-yildiz" aria-label="${n} / 3 yıldız">${[0, 1, 2].map((i) => `<i class="${i < n ? 'dolu' : ''}">★</i>`).join('')}</span>`;
+  `<span class="harita-yildiz" role="img" aria-label="${n} / 3 yıldız">${[0, 1, 2].map((i) => `<i class="yildiz-sekil${i < n ? ' dolu' : ''}" style="--i:${i}"></i>`).join('')}</span>`;
 
 function durakHtml(b, x, h, tur, simdiki, yeni) {
   const n = b.nesne;
@@ -83,7 +86,7 @@ export async function haritaSayfasi() {
     .join('');
   ciz(`<div class="harita-ust">
       <h1>Yolculuk</h1>
-      <p class="harita-ozet" data-test="harita-ozet"><b>${acikSayi}</b>/${liste.length} bölüm · <b>${yildiz}</b> ★</p>
+      <p class="harita-ozet" data-test="harita-ozet"><b>${acikSayi}</b>/${liste.length} bölüm · <b>${yildiz}</b> ${YILDIZ.replace('yildiz-sekil', 'yildiz-sekil dolu')}<span class="ekran-disi">yıldız</span></p>
       <button type="button" class="harita-vakit" data-harita-vakit aria-label="${tur === 'gece' ? 'Gündüze geç' : 'Geceye geç'}">${ikon(tur === 'gece' ? 'gunes' : 'ay', 20, 1.6)}</button>
     </div>
     <div class="harita ${tur}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
@@ -94,24 +97,90 @@ export async function haritaSayfasi() {
               src="${resimAdresi(b.id, tur)}" style="top:${((b.ust / h) * 100).toFixed(3)}%;height:${((1 / h) * 100).toFixed(3)}%;z-index:${i + 1}">`,
         )
         .join('')}
+      <svg class="harita-filtre" width="0" height="0" aria-hidden="true" focusable="false"><filter id="durak-kontur" color-interpolation-filters="sRGB"><feComponentTransfer in="SourceAlpha" result="m"><feFuncA type="discrete" tableValues="0 0 0 1 1 1"/></feComponentTransfer><feComposite in="SourceGraphic" in2="m" operator="in" result="g"/><feMorphology in="m" operator="dilate" radius="1.4" result="k"/><feFlood flood-color="#fff4dc"/><feComposite in2="k" operator="in" result="krem"/><feMorphology in="m" operator="dilate" radius="2.4" result="d"/><feFlood flood-color="#24170c"/><feComposite in2="d" operator="in" result="koyu"/><feMerge><feMergeNode in="koyu"/><feMergeNode in="krem"/><feMergeNode in="g"/></feMerge></filter></svg>
       <div class="harita-katman">${katman}</div>
     </div>
+    ${simdiki ? `<button type="button" class="harita-konum" data-harita-konum data-test="harita-konum" hidden><span class="harita-konum-nokta" aria-hidden="true"></span>Buradasın<span class="harita-konum-ok" aria-hidden="true">${ikon('ileri', 14, 2)}</span></button>` : ''}
     <div class="harita-pencere" data-harita-pencere hidden></div>`);
   const hedef = ekran.querySelector('.harita-durak.simdiki') || ekran.querySelector('.harita-resim');
-  const kaydir = () => {
-    const el = ekran.querySelector('.harita-durak.simdiki');
-    if (!el) return window.scrollTo(0, document.documentElement.scrollHeight);
-    const r = el.getBoundingClientRect();
-    window.scrollTo(0, Math.max(0, r.top + window.scrollY - window.innerHeight * 0.55));
-  };
   if (hedef) {
-    kaydir();
-    requestAnimationFrame(kaydir);
+    konumaKaydir();
+    requestAnimationFrame(() => konumaKaydir());
   }
+  konumIzle();
+  for (const img of ekran.querySelectorAll('.harita-durak img')) ayagaYerlestir(img);
   if (yeniler.size) {
     d.ilerleme.haritaGorulen = gorulenDogrula([...gorulen, ...yeniler]);
     kaydet();
   }
+}
+
+  // Sembollerin ayağı (bayrak direği, kaide…) görselden görsele değişir; halkayı tam oraya koymak için
+  // en alttaki opak satırın ortasını ölçeriz. Gölgeler yarı saydam olduğundan eşiğin altında kalır.
+  const ayakOnbellek = new Map();
+  function ayakOlc(img) {
+    const w = 96;
+    const h = Math.max(1, Math.round((img.naturalHeight / img.naturalWidth) * w));
+    const tuval = document.createElement('canvas');
+    tuval.width = w;
+    tuval.height = h;
+    const c = tuval.getContext('2d', { willReadFrequently: true });
+    c.drawImage(img, 0, 0, w, h);
+    const veri = c.getImageData(0, 0, w, h).data;
+    for (let y = h - 1; y >= 0; y--) {
+      let top = 0;
+      let say = 0;
+      for (let x = 0; x < w; x++) {
+        if (veri[(y * w + x) * 4 + 3] > 200) {
+          top += x;
+          say++;
+        }
+      }
+      if (say) return { x: ((top / say + 0.5) / w) * 100, y: ((y + 0.5) / h) * 100 };
+    }
+    return { x: 50, y: 92 };
+  }
+  function ayagaYerlestir(img) {
+    const uygula = () => {
+      if (!img.naturalWidth) return;
+      let ayak = ayakOnbellek.get(img.src);
+      if (!ayak) {
+        try {
+          ayak = ayakOlc(img);
+        } catch {
+          ayak = { x: 50, y: 92 };
+        }
+        ayakOnbellek.set(img.src, ayak);
+      }
+      const durak = img.parentElement;
+      durak.style.setProperty('--ayak-x', `${ayak.x.toFixed(1)}%`);
+      durak.style.setProperty('--ayak-y', `${ayak.y.toFixed(1)}%`);
+    };
+    if (img.complete) uygula();
+    else img.addEventListener('load', uygula, { once: true });
+  }
+
+  // ---------- "Buradasın" ----------
+function konumaKaydir(yumusak = false) {
+  const el = ekran.querySelector('.harita-durak.simdiki');
+  if (!el) return window.scrollTo(0, document.documentElement.scrollHeight);
+  const r = el.getBoundingClientRect();
+  window.scrollTo({ top: Math.max(0, r.top + window.scrollY - window.innerHeight * 0.55), behavior: yumusak ? 'smooth' : 'auto' });
+}
+
+// Şimdiki durak görüş alanından çıkınca üstte küçük bir konum hapı belirir; ok durağın yönünü gösterir
+let konumGozcu = null;
+function konumIzle() {
+  if (konumGozcu) konumGozcu.disconnect();
+  const durak = ekran.querySelector('.harita-durak.simdiki');
+  const dugme = ekran.querySelector('[data-harita-konum]');
+  if (!durak || !dugme || typeof IntersectionObserver !== 'function') return;
+  konumGozcu = new IntersectionObserver(([g]) => {
+    if (!dugme.isConnected) return konumGozcu.disconnect();
+    dugme.hidden = g.isIntersecting;
+    dugme.classList.toggle('asagi', g.boundingClientRect.top > 0);
+  });
+  konumGozcu.observe(durak);
 }
 
 // ---------- küçük pencereler ----------
@@ -134,9 +203,10 @@ function durakPenceresi(id) {
     const gecti = (en ?? 0) >= BOLUM_GECME;
     const bilgi = en === undefined ? `${BOLUM_SORU[sv]} soru` : `en iyi %${Math.round(en * 100)}`;
     const ad = `${SEVIYE_AD[sv]}${sv === 'zor' ? ' · isteğe bağlı' : ''}`;
+    const cizgi = `<span class="harita-seviye-cizgi" aria-hidden="true" style="--gec:${Math.round(BOLUM_GECME * 100)}%"><i style="--o:${Math.round((en ?? 0) * 100)}%"></i></span>`;
     return acik
       ? `<a class="harita-seviye${gecti ? ' gecti' : ''}" href="#/pekistir/bolum/${x.id}/${sv}" data-test="harita-seviye" data-seviye="${sv}">
-          <b>${ad}</b><span>${bilgi}${gecti ? ' · geçti' : ''}</span>${gecti ? '<i aria-hidden="true">★</i>' : ikon('ileri', 18, 1.5)}</a>`
+          <b>${ad}</b><span>${bilgi}${gecti ? ' · geçti' : ''}</span>${gecti ? YILDIZ.replace('yildiz-sekil', 'yildiz-sekil dolu') : ikon('ileri', 18, 1.5)}${cizgi}</a>`
       : `<span class="harita-seviye kapali" data-test="harita-seviye" data-seviye="${sv}"><b>${ad}</b><span>${sv === 'orta' ? 'Kolay’ı geçince' : 'Orta’yı geçince'}</span>${ikon('kilit', 16, 1.7)}</span>`;
   }).join('');
   const govde = x.acik
@@ -146,13 +216,19 @@ function durakPenceresi(id) {
       <p class="harita-pencere-alt">Geçmek için %${Math.round(BOLUM_GECME * 100)} doğru</p>`
     : `<p class="harita-pencere-durum" data-test="harita-kilit">${kacis(kilitMetni(x, bolumler()))}</p>`;
   return `<div class="harita-pencere-ic${x.acik ? '' : ' kilitli'}" role="dialog" aria-label="${kacis(bolumAdi(x))}">
+      ${sanatcilar.length ? `<span class="hp-kapak" aria-hidden="true" data-kapak="${kacis(sanatcilar.map((s) => s.id).join(','))}"></span>` : ''}
       <button class="harita-pencere-kapat" type="button" data-harita-kapat aria-label="Kapat">${ikon('kapat', 20, 1.7)}</button>
-      <span class="etiket">${kacis(bolge.ad)}</span>
-      <h2>${kacis(bolumAdi(x))}</h2>
+      <header class="hp-baslik">
+        <span class="etiket">${kacis(bolge.ad)}</span>
+        <h2>${kacis(bolumAdi(x))}</h2>
+      </header>
       ${govde}
-      <p class="harita-pencere-sanatcilar">${sanatcilar
-        .map((s) => (x.acik ? `<a href="#/sanatci/${encodeURIComponent(s.id)}">${kacis(s.ad)}</a>` : `<span>${kacis(s.ad)}</span>`))
-        .join(' · ')}</p>
+      <div class="harita-pencere-sanatcilar">${sanatcilar
+        .map((s, i) => {
+          const ic = `<span class="harita-yuz" style="--i:${i}" data-kucuk="${kacis(s.id)}" data-genislik="200"></span><span class="harita-yuz-ad">${kacis(s.ad)}</span>`;
+          return x.acik ? `<a href="#/sanatci/${encodeURIComponent(s.id)}">${ic}</a>` : `<span class="kilitli">${ic}</span>`;
+        })
+        .join('')}</div>
       <div class="harita-pencere-dugmeler"><a class="dugme" href="#/akim/${encodeURIComponent(x.akim)}" data-test="harita-akim">Akım sayfası</a>${
         x.acik ? `<a class="dugme" href="#/pekistir/bolum/${x.id}/tanitim" data-test="harita-tanitim">Tanıtım</a>` : ''
       }</div>
@@ -182,7 +258,47 @@ function pencereAc(html) {
   kutu.innerHTML = html;
   kutu.hidden = false;
   requestAnimationFrame(() => kutu.classList.add('acik'));
-  kutu.querySelector('[data-harita-kapat]').focus({ preventScroll: true });
+  kutu.querySelector('[data-harita-kapat]').focus({ preventScroll: true, focusVisible: false });
+  kucukKareleriDoldur();
+  kapakDoldur(kutu.querySelector('[data-kapak]'));
+}
+
+function gorselBoyutu(src) {
+  return new Promise((coz) => {
+    const img = new Image();
+    img.onload = () => coz(img.naturalWidth / img.naturalHeight || 0);
+    img.onerror = () => coz(0);
+    img.src = src;
+  });
+}
+
+// Bölümün sanatçılarının en bilinen eserleri arasından kapağa en yatay olanı seçilir; eser kırpılmadan ortalanır,
+// boşluğu kendi bulanık kopyası doldurur.
+async function kapakDoldur(el) {
+  if (!el) return;
+  const ids = el.dataset.kapak.split(',').slice(0, 6);
+  const adaylar = (
+    await Promise.all(ids.map((id) => d.harita.get(id)).filter(Boolean).map((s) => sanatciEserleri(s).then(enBilinen).catch(() => null)))
+  ).filter(Boolean);
+  const kalip = document.createElement('template');
+  const olcumler = await Promise.all(
+    adaylar.map(async (e) => {
+      kalip.innerHTML = kucukGorsel(e, 640);
+      const src = kalip.content.querySelector('img')?.getAttribute('src');
+      return { html: kalip.innerHTML, oran: src ? await gorselBoyutu(src) : 0, ad: e.baslik || e.ad || '' };
+    }),
+  );
+  const sirali = olcumler.filter((o) => o.oran).sort((a, b) => b.oran - a.oran);
+  const en = sirali[0];
+  if (!en || !el.isConnected) return;
+  const yanlar = sirali.slice(1, 3);
+  const yan = (o, taraf) => (o ? `<span class="hp-kapak-yan ${taraf}">${o.html}</span>` : '');
+  const toz = Array.from({ length: 9 }, (_, i) => `<i style="--x:${(18 + ((i * 41) % 64)).toFixed(0)}%;--g:${((i * 0.83) % 6).toFixed(2)}s;--s:${(5 + (i % 4)).toFixed(0)}s"></i>`).join('');
+  const ad = en.ad;
+  el.innerHTML = `<span class="hp-kapak-isik" aria-hidden="true"></span><span class="hp-kapak-toz" aria-hidden="true">${toz}</span>
+    <span class="hp-kapak-duvar">${yan(yanlar[0], 'sol')}<span class="hp-kapak-eser">${en.html}</span>${yan(yanlar[1], 'sag')}</span>
+    ${ad ? `<span class="hp-kapak-kunye">${kacis(ad)}</span>` : ''}`;
+  el.classList.add('dolu');
 }
 
 function pencereKapat() {
@@ -207,6 +323,11 @@ export function olaylariBagla() {
     const motif = e.target.closest('[data-motif]');
     if (motif) {
       pencereAc(motifPenceresi(motif.dataset.motif));
+      return;
+    }
+    if (e.target.closest('[data-harita-konum]')) {
+      pencereKapat();
+      konumaKaydir(true);
       return;
     }
     if (e.target.closest('[data-harita-vakit]')) {
@@ -234,7 +355,7 @@ export function haritaBagi() {
   const b = s ? bolgeBul(s.sira) : bolgeBul(0);
   return `<a class="harita-bag" href="#/harita" data-test="harita-bag">
       <span class="harita-bag-resim" aria-hidden="true"><img alt="" loading="lazy" src="${resimAdresi(b.id, vakit())}"></span>
-      <span class="metin"><b>Yolculuk haritası</b><span>${s ? `Buradasın: ${kacis(bolumAdi(s))}` : 'Yolculuk başlamadı'}</span><span>${acik}/${liste.length} bölüm · ${yildiz} ★</span></span>
+      <span class="metin"><b>Yolculuk haritası</b><span>${s ? `Buradasın: ${kacis(bolumAdi(s))}` : 'Yolculuk başlamadı'}</span><span>${acik}/${liste.length} bölüm · ${yildiz} yıldız</span></span>
       ${ikon('ileri', 20, 1.4)}
     </a>`;
 }
