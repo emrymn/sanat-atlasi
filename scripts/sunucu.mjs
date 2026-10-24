@@ -30,15 +30,18 @@ const TURLER = {
 
 const sunucu = createServer(async (istek, yanit) => {
   const yol = decodeURIComponent(new URL(istek.url, 'http://x').pathname);
-  if (!yol.startsWith(ONEK)) {
+  // Önizlemede (--sw-yok) yönlendirme yok: uygulama kökte de açılır (yollar göreli). v0'ın vekil sunucusu
+  // adresi kendi düzenliyor; /sanat-atlasi/ yönlendirmesi orada sonsuz döngüye giriyordu (ERR_TOO_MANY_REDIRECTS).
+  if (!SW_YOK && !yol.startsWith(ONEK)) {
     yanit.writeHead(302, { location: ONEK });
     return yanit.end();
   }
-  if (SW_YOK && yol === `${ONEK}sw.js`) {
+  const goreli = yol.startsWith(ONEK) ? yol.slice(ONEK.length) : yol.replace(/^\/+/, '');
+  if (SW_YOK && goreli === 'sw.js') {
     yanit.writeHead(404, { 'content-type': 'text/plain; charset=utf-8' });
     return yanit.end('Önizlemede service worker kapalı');
   }
-  let dosya = normalize(join(KOK, yol.slice(ONEK.length)));
+  let dosya = normalize(join(KOK, goreli));
   if (!dosya.startsWith(KOK) || /node_modules|\.git/.test(dosya)) {
     yanit.writeHead(403);
     return yanit.end();
@@ -60,4 +63,4 @@ sunucu.on('error', (h) => {
     sunucu.listen(++deneme);
   } else throw h;
 });
-sunucu.listen(deneme, () => console.log(`http://localhost:${deneme}${ONEK}${SW_YOK ? ' (service worker kapalı)' : ''}`));
+sunucu.listen(deneme, () => console.log(`http://localhost:${deneme}${SW_YOK ? '/ (service worker kapalı)' : ONEK}`));
