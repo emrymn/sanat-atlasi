@@ -33,6 +33,16 @@
         if (!(i.surum >= 2) && (t === 'sepya' || t === 'koyu')) t = 'gece';
         if (t) document.documentElement.setAttribute('data-tema', t);
       } catch (e) {}
+      // Gömülü önizleme ortamları (ör. v0) her hash değişiminde document.querySelector(location.hash)
+      // çağırıp çapaya kaydırmaya çalışıyor; '#/gozat' gibi rota hash'leri geçerli seçici olmadığı için
+      // SyntaxError fırlıyor. Rota hash'lerini "eşleşen öğe yok" olarak yanıtla.
+      (function () {
+        var asil = Document.prototype.querySelector;
+        Document.prototype.querySelector = function (secici) {
+          if (typeof secici === 'string' && secici.charAt(0) === '#' && secici.charAt(1) === '/') return null;
+          return asil.call(this, secici);
+        };
+      })();
     </script>
     <script type="module" src="js/app.js"></script>
   </head>
