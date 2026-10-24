@@ -182,12 +182,12 @@ test('İlerleme kitaplığı: değişiklik sayfayı baştan çizmez; "buraya kad
   expect(sonuc).toBe(true);
   await expect(page.locator('[data-test="konu-kadar"]')).toHaveCount(0);
   await expect(page.locator('[data-isaret="1"]')).toHaveCount(1);
-  // işlenmiş kitap akım rengi değil, mürekkep
+  // işlenmiş kitap akım rengi değil, renksiz (1.30: mürekkep ya da zemin tonu)
   const renk = await page.evaluate((h) => {
     const k = document.querySelector(`[data-kurs-konu="${h}"]`);
-    return { bg: getComputedStyle(k).backgroundColor, ink: getComputedStyle(document.body).color };
+    return getComputedStyle(k).backgroundColor.match(/\d+/g).slice(0, 3).map(Number);
   }, hedef);
-  expect(renk.bg).toBe(renk.ink);
+  expect(Math.max(...renk) - Math.min(...renk)).toBeLessThanOrEqual(12);
   // işaretle kipi: dokunuş kart açmadan konuyu değiştirir, tekrar dokunuş geri alır
   await page.locator('[data-kurs-kip="isaretle"]').click();
   await expect(page.locator('[data-test="konu-karti"]')).toHaveCount(0);

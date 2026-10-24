@@ -6,22 +6,21 @@ test.beforeEach(async ({ context }) => {
   await agiHazirla(context);
 });
 
-test('D1: Bugün hapı, Pekiştir menüsü ve tur sayacı aynı kart sayısını gösterir', async ({ page }) => {
-  await page.goto('./');
-  const hap = page.locator('.sahne-dugme [data-test="tur-sayi"]');
+test('D1: Pekiştir menüsü ve tur sayacı aynı kart sayısını gösterir', async ({ page }) => {
+  // 1.30: Bugün'deki tablonun önünde düğme yok (Pekiştir alt çubukta)
+  await page.goto('./#/pekistir');
+  const hap = page.locator('[data-test="karisik-dugme"] [data-test="tur-sayi"]');
   await expect(hap).toBeVisible();
   const n = Number(await hap.textContent());
   expect(n).toBeGreaterThan(0);
-  await expect(page.locator('.sahne-dugme [data-test="tur-alt"]')).toHaveText(/^\d+ tekrar( · \d+ pekiştirme)? · \d+ yeni$/);
-  await page.goto('./#/pekistir');
-  await expect(page.locator('[data-test="karisik-dugme"] [data-test="tur-sayi"]')).toHaveText(String(n));
+  await expect(page.locator('[data-test="karisik-dugme"] [data-test="tur-alt"]')).toHaveText(/^\d+ tekrar( · \d+ pekiştirme)? · \d+ yeni$/);
   await page.locator('[data-test="karisik-dugme"]').click();
   await expect(page.locator('[data-test="sayac"]')).toHaveText(`1 / ${n}`);
 });
 
 test('D1: dönem satırındaki kart sayısı turun sayacıyla aynı', async ({ page }) => {
   await page.goto('./#/pekistir');
-  const satir = page.getByRole('link', { name: /^Gotik / });
+  const satir = page.locator('a[href="#/pekistir/donem/Gotik"]');
   const m = /(\d+) kart/.exec(await satir.textContent());
   expect(m).toBeTruthy();
   await satir.click();

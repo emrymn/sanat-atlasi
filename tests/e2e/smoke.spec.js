@@ -97,7 +97,7 @@ test('Pekiştir · Karışık: 5 kart cevapla', async ({ page }) => {
 test('Pekiştir · Döneme göre: bir akım seç ve cevapla', async ({ page }) => {
   await page.goto('./#/pekistir/donem');
   await expect(page.getByRole('link', { name: /Hepsi, dönem sırasıyla/ })).toBeVisible();
-  await page.getByRole('link', { name: /^Gotik / }).click();
+  await page.locator('a[href="#/pekistir/donem/Gotik"]').click();
   const secenekler = page.locator('[data-test="sanatci-secenekleri"] button');
   await expect(secenekler).toHaveCount(4);
   await secenekler.first().click();
