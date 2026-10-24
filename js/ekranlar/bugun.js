@@ -43,6 +43,7 @@ import {
   cizimNo,
   guncelMi,
   tabloDugme,
+  eserKareleriDoldur,
 } from './ortak.js';
 import { devamKarti } from './pekistir.js';
 import { SURUM } from '../surum.js';
@@ -123,6 +124,7 @@ function sahneHtml(gs, { tekrar, tur, devam, g }) {
         href: '#/pekistir/karisik',
         test: 'pekistir',
         sinif: 'sahne-dugme',
+        sanatciId: gs.id,
         baslik: 'Pekiştir',
         alt: turAltYazisi(tur),
         sayi: tur.toplam,
@@ -207,6 +209,7 @@ export function anaSayfa() {
     gununKartGorseli(gs);
     sahneBiyografisi(gs);
     anaGaleriDoldur(gs);
+    eserKareleriDoldur();
     etiketleriIsaretle();
   } else ekranRengi(null, null);
   for (const el of ekran.querySelectorAll('[data-mini]')) {

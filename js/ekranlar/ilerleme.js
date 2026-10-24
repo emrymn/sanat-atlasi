@@ -192,7 +192,7 @@ function parcalar() {
         <div><dt>Kalıcı</dt><dd>${dagilim.kalici}<small>${acik.length ? ` %${Math.round((100 * dagilim.kalici) / acik.length)}` : ''}</small></dd></div>
         <div><dt>Tekrar</dt><dd>${vade}</dd></div>
       </dl>
-      ${vade ? tabloDugme({ href: '#/pekistir/karisik', baslik: 'Tekrar bekliyor', alt: 'karışık turu başlat', sayi: vade, sinif: 'ilr-baslat' }) : ''}
+      ${vade ? tabloDugme({ href: '#/pekistir/karisik', baslik: 'Tekrar bekliyor', alt: 'karışık turu başlat', sayi: vade, sinif: 'ilr-baslat', sanatciId: d.ilerleme.sonCalisilanlar?.[0] || '' }) : ''}
     </div>`,
     calisma: `<div data-parca="calisma">${takvimHtml(d.calismaGir)}${egriHtml(d.calismaGir)}${koleksiyonBagi()}</div>`,
     siradaki: `<div data-parca="siradaki">${siradakiKonuHtml(k, sayi)}</div>`,

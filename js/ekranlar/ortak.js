@@ -141,18 +141,40 @@ export function etiket(metin, { vurgu = false } = {}) {
   return `<span class="etiket${vurgu ? ' vurgu' : ''}">${kacis(metin)}</span>`;
 }
 
-// Tablo düğmesi: yaldız çerçeve + tuval iç yüz + pirinç müze plakası. Tur başlatan her düğme bu dili kullanır.
-// ilerleme: { yapilan, hedef } verilirse tuvalin altında günlük hedef çubuğu görünür.
-export function tabloDugme({ href, baslik, alt = '', sayi, test = '', kapakId = '', sinif = '', ilerleme = null }) {
+// Eser düğmesi: tur başlatan her düğme. Bir sanatçının üç eseri düğmenin üstünden yelpaze gibi yükselir;
+// gövde arkadaki resmin rengini alan buzlu camdır. ilerleme: { yapilan, hedef } → altta günlük hedef çizgisi.
+export function tabloDugme({ href, baslik, alt = '', sayi, test = '', sanatciId = '', kapakId = '', sinif = '', ilerleme = null }) {
+  const kaynak = sanatciId || kapakId;
   const oran = ilerleme && ilerleme.hedef ? Math.min(100, Math.round((100 * ilerleme.yapilan) / ilerleme.hedef)) : null;
-  return `<a class="tablo-dugme${sinif ? ` ${sinif}` : ''}" href="${href}"${test ? ` data-test="${test}"` : ''}>
-      <span class="tablo-ic">
-        ${kapakId ? `<span class="tablo-minyatur" aria-hidden="true"><span class="kucuk-kare" data-kucuk="${kacis(kapakId)}"></span></span>` : ''}
-        <span class="tablo-yazi"><span class="tablo-baslik">${kacis(baslik)}</span>${alt ? `<small data-test="tur-alt">${kacis(alt)}</small>` : ''}</span>
-        <span class="tablo-plaka"><b data-test="tur-sayi">${sayi}</b><small>kart</small></span>
-        ${oran === null ? '' : `<span class="tablo-hedef" role="img" aria-label="Bugün ${ilerleme.yapilan} / ${ilerleme.hedef} kart"><i style="--oran:${oran}%"></i></span>`}
+  const yelpaze = kaynak
+    ? `<span class="ed-yelpaze" aria-hidden="true">${[0, 1, 2]
+        .map((i) => `<span class="ed-tuval" style="--i:${i}"><span data-eser-kucuk="${kacis(kaynak)}" data-sira="${i}"></span></span>`)
+        .join('')}</span>`
+    : '';
+  return `<a class="eser-dugme${kaynak ? ' yelpazeli' : ''}${sinif ? ` ${sinif}` : ''}" href="${href}"${test ? ` data-test="${test}"` : ''}>
+      ${yelpaze}
+      <span class="ed-govde">
+        <span class="ed-yazi"><span class="ed-baslik">${kacis(baslik)}</span>${alt ? `<small data-test="tur-alt">${kacis(alt)}</small>` : ''}</span>
+        <span class="ed-sayi"><b data-test="tur-sayi">${sayi}</b><small>kart</small></span>
+        <span class="ed-ok" aria-hidden="true">${ikon('ileri', 18, 1.8)}</span>
+        ${oran === null ? '' : `<span class="ed-hedef" role="img" aria-label="Bugün ${ilerleme.yapilan} / ${ilerleme.hedef} kart"><i style="--oran:${oran}%"></i></span>`}
       </span>
     </a>`;
+}
+
+// [data-eser-kucuk="<sanatçı id>"][data-sira="n"] kutularına sanatçının en bilinen n. eseri
+export function eserKareleriDoldur() {
+  for (const el of ekran.querySelectorAll('[data-eser-kucuk]')) {
+    const s = d.harita.get(el.dataset.eserKucuk);
+    if (!s) continue;
+    sanatciEserleri(s).then((eserler) => {
+      const sirali = bilinirlikSirasi(eserler).filter((e) => e.gorseller && e.gorseller.length);
+      if (!sirali.length || !el.isConnected) return;
+      const e = sirali[Number(el.dataset.sira) % sirali.length];
+      el.innerHTML = kucukGorsel(e, 400);
+      el.closest('.ed-tuval')?.classList.add('dolu');
+    });
+  }
 }
 
 // Eserin adı ve tarihi: "İnci Küpeli Kız, y. 1665"
@@ -256,6 +278,7 @@ export function gununRengi() {
 
 // [data-kucuk="<sanatçı id>"] kutularına en bilinen eserin küçük görseli
 export function kucukKareleriDoldur() {
+  eserKareleriDoldur();
   for (const el of ekran.querySelectorAll('[data-kucuk]')) {
     const s = d.harita.get(el.dataset.kucuk);
     if (!s) continue;

@@ -126,7 +126,8 @@ function turSahnesi(karisik) {
           baslik: 'Turu başlat',
           alt: turAltYazisi(karisik),
           sayi: karisik.toplam,
-          kapakId: kapak && kapak.id,
+          sanatciId: kapak && kapak.id,
+          sinif: 'pk-eser-dugme',
         })}
       </div>
     </section>
