@@ -3,7 +3,8 @@
 Böylece Wikimedia'nın hız sınırı (429) ve müze engelleri (403) bu görselleri etkilemez.
 
 Çalıştır (depo kökünde, macOS; küçültme için hazır gelen `sips` kullanılır):
-  python3 scripts/gorsel_indir.py
+  python3 scripts/gorsel_indir.py              # hepsi
+  python3 scripts/gorsel_indir.py --kapaklar   # yalnız İlerleme kitaplığının kapakları (scripts/kapaklar.mjs, node gerekir)
 Yarıda kalırsa yeniden çalıştır: inmiş dosyalar atlanır. Wikimedia'yı yormamak için istekler arası bekleme var (~1 saat).
 
 Kaynak 1280 px istenir (Wikimedia'nın standart küçük resim boyutu: önbellekte hazır durduğu için 429 daha az) ve burada küçültülür.
@@ -60,7 +61,19 @@ def secilecekler():
                         buyuk.add(anahtar(e['gorseller'][0]))
     except FileNotFoundError:
         pass
+    for g in kapaklar():
+        secim[anahtar(g)] = g
     return {a: g for a, g in secim.items() if kaynak_url(g)}, buyuk
+
+
+# İlerleme kitaplığının kapakları (İş 28): seçimi uygulamanın kendi kodu yapar (js/kurs.js), burada yeniden yazılmaz
+def kapaklar():
+    try:
+        cikti = subprocess.run(['node', str(KOK / 'scripts/kapaklar.mjs')], capture_output=True, text=True, check=True).stdout
+    except (OSError, subprocess.CalledProcessError) as e:
+        print(f'kapak listesi alınamadı ({e}); kapaklar atlanıyor', flush=True)
+        return []
+    return [{k: v for k, v in g.items() if k != 'konu'} for g in json.loads(cikti)]
 
 
 # Engel (429) ya da sunucu hatası gelince görsel atlanmaz: beklenir ve yeniden denenir.
@@ -107,7 +120,10 @@ def main():
     harita_yolu = KOK / 'data/yerel_gorseller.json'
     eski = json.loads(harita_yolu.read_text()) if harita_yolu.exists() else {}
     harita, buyukler = eski.get('gorseller', {}), set(eski.get('buyuk', []))
-    secim, buyuk_secim = secilecekler()
+    if '--kapaklar' in sys.argv:
+        secim = {anahtar(g): g for g in kapaklar() if kaynak_url(g)}
+    else:
+        secim, _ = secilecekler()
 
     def yaz():
         harita_yolu.write_text(json.dumps({'surum': 1, 'gorseller': harita, 'buyuk': sorted(buyukler)}, ensure_ascii=False, separators=(',', ':')))

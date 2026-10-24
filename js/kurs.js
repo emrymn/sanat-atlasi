@@ -8,6 +8,7 @@
 //  5) o dersteki herhangi bir resim, 6) o dersteki herhangi bir eserin fotoğrafı
 // Hiç eseri olmayan konu kitaplıkta gösterilmez; veri silinmez, "işlendi" kaydı durur.
 import { kursResimleri } from './resim.js';
+import { dosyaNormal } from './yardimci.js';
 
 const kelimeler = (x) => String(x || '').toLocaleLowerCase('en').split(/[^a-zà-ÿ]+/).filter(Boolean);
 const soyadi = (s) => kelimeler(s.ad_arama || s.ad).pop() || '';
@@ -28,7 +29,8 @@ function enUygun(l, baslik) {
   const adli = l.filter((x) => baslikta(x.s, baslik));
   return adli.length ? adli.reduce((a, x) => (puan(x) > puan(a) ? x : a)) : null;
 }
-const eserKapagi = (x) => ({ sanatci: x.s.id, dosya: x.e.commons_dosya, baslik: x.e.baslik });
+// dosya adı çözülmüş biçimde (%27 → '): yerel kopya anahtarı ve indirme betiği aynı adı kullansın
+const eserKapagi = (x) => ({ sanatci: x.s.id, dosya: dosyaNormal(x.e.commons_dosya), baslik: x.e.baslik });
 
 // sanatcilar: görünür sanatçılar; tumSanatcilar: heykeltıraş ve mimarlar dahil hepsi (4. adım için)
 export function konuKapagi(konu, sanatcilar, turler, tumSanatcilar = sanatcilar) {
