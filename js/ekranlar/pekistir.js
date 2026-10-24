@@ -65,7 +65,17 @@ import {
   guncelMi,
 } from './ortak.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
+import { BOLUM_SORU, BOLUM_GECME, SEVIYE_NO, bolumKartlari, bolumSonucuIsle, tanitimGoruldu, bolumKaydi, bolumAdi } from '../bolum.js';
+import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
 import { yonlendir } from './yonlendirme.js';
+
+// ---------- İş 24 · harita bölümleri ----------
+const BOLUM_SV_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor', tanitim: 'Tanıtım' };
+const BOLUM_YONELME = { kolay: 'Kolay’a', orta: 'Orta’ya', zor: 'Zor’a' };
+function bolumBilgi(akim) {
+  const [id, sv] = String(akim || '').split('/');
+  return { id, sv, b: tumBolumler().find((x) => x.id === id) || null };
+}
 
 export function pekistirMenusu() {
   const durumlar = akimDurumlari(d.akimlar, d.sanatcilar, islenen()).filter((a) => a.acik);
@@ -122,6 +132,11 @@ function eserVarMi(s) {
 // Turun adayları: dönem → o akımın, konu → o konunun açık sanatçıları; hatalarım → yalnızca hatalı olanlar
 function turAdaylari(kip, akim) {
   const acik = acikListe();
+  if (kip === 'bolum') {
+    const { b } = bolumBilgi(akim);
+    const ids = new Set(b ? b.sanatcilar : []);
+    return b ? b.sanatcilar.map((id) => acik.find((s) => s.id === id)).filter((s) => s && ids.has(s.id)) : [];
+  }
   if (kip === 'donem' && akim !== 'hepsi') return acik.filter((s) => s.akim === akim);
   if (kip === 'konu') return acik.filter((s) => s.konu === Number(akim));
   if (kip === 'hatalar') {
@@ -135,6 +150,14 @@ function turAdaylari(kip, akim) {
 // Turun kart sırası (sanatçı kimlikleri) ve kipin ek bilgileri
 function turSec(kip, akim, adaylar) {
   const skorlar = d.ilerleme.skorlar;
+  if (kip === 'bolum') {
+    // İş 24: bölümün sanatçıları sabit sayıda soruda; ilk Kolay'dan (ya da "Tanıtım"dan) önce hepsiyle tanışma
+    const { id, sv } = bolumBilgi(akim);
+    const idler = adaylar.map((x) => x.id);
+    if (sv === 'tanitim') return { idler: [], tanisma: idler };
+    const ilk = sv === 'kolay' && !bolumKaydi(d.ilerleme, id).tanitim;
+    return { idler: bolumKartlari(idler, BOLUM_SORU[sv], d.rng), tanisma: ilk ? idler : [] };
+  }
   if (kip === 'konu')
     // Ö6: günlük yeni sınırı yok; tanışmalar turdan önce arka arkaya
     return { idler: konuTuru(adaylar, skorlar, d.rng), tanisma: tanismaAcik() ? konuTanismalari(adaylar, skorlar) : [] };
@@ -168,7 +191,8 @@ async function oturumKur(kip, akim) {
     rota: location.hash,
     oturum: new Oturum(tur.idler, { rng: d.rng }),
     esler: tur.esler || null, // Ö5: ikilinin eşi çeldirici olur
-    seviye: null, // Ö9: dönem turunda seçilen alt seviye (null: dönemin seviyesi)
+    seviye: kip === 'bolum' ? (SEVIYE_NO[bolumBilgi(akim).sv] ?? 0) : null, // Ö9: dönem turunda seçilen alt seviye; İş 24: bölümün seviyesi
+    bolumSay: kip === 'bolum' ? { dogru: 0, toplam: 0 } : null, // İş 24: yalnız ilk denemeler sayılır
     tanisma: tur.tanisma && tur.tanisma.length ? { sira: tur.tanisma, konum: 0 } : null, // Ö6
     tanismaGorulen: {}, // tanışmada gösterilen eserler: soru bunlardan gelmesin
     kart: null,
@@ -184,6 +208,10 @@ function kipAdi(kip, akim) {
 }
 
 function kipKisa(kip, akim) {
+  if (kip === 'bolum') {
+    const { sv, b } = bolumBilgi(akim);
+    return `${b ? bolumAdi(b) : 'Bölüm'} · ${BOLUM_SV_AD[sv] || ''}`;
+  }
   if (kip === 'karisik') return 'Karışık';
   if (kip === 'konu') return `Konu ${akim}`;
   if (kip === 'hatalar') return 'Hatalarım';
@@ -192,6 +220,7 @@ function kipKisa(kip, akim) {
 
 // Turun adresi (yarım oturumdan dönünce)
 export function turAdresi(kip, akim) {
+  if (kip === 'bolum') return `#/pekistir/bolum/${akim}`;
   if (kip === 'karisik' || kip === 'hatalar') return `#/pekistir/${kip}`;
   return `#/pekistir/${kip}/${encodeURIComponent(akim)}`;
 }
@@ -201,6 +230,12 @@ const tekSorulu = (o) => o.kip !== 'karisik';
 
 export async function pekistir(kip, akim, { yeni = false, onayli = false } = {}) {
   const baslik = kipAdi(kip, akim);
+  if (kip === 'bolum') {
+    const { id, sv } = bolumBilgi(akim);
+    const x = bolumDurumu().durumlar.find((y) => y.id === id);
+    if (!x || !x.acik || (sv !== 'tanitim' && !x.seviyeAcik[sv]))
+      return ciz(`${ust(baslik, '#/harita')}<div class="bos-kutu" data-test="bolum-kapali"><p>Bu bölüm ya da seviye henüz açılmadı.</p><p><a class="dugme" href="#/harita">Haritaya dön</a></p></div>`);
+  }
   const o = d.oturum;
   if (yeni || !o || o.kip !== kip || o.akim !== akim || o.oturum.bitti) {
     // Yarım kalan oturum varken yeni oturum: önce sor (sayfa içinde)
@@ -212,7 +247,7 @@ export async function pekistir(kip, akim, { yeni = false, onayli = false } = {})
     // hazırlanırken (çevrimdışıyken sanatçı başına 6 sn sürebilir) başka ekrana geçildiyse kart çizilmez
     if (!guncelMi(no)) return;
     d.oturum = yeniOturum;
-    if (!d.oturum.oturum.toplam) {
+    if (!d.oturum.oturum.toplam && !(d.oturum.kip === 'bolum' && d.oturum.tanisma)) {
       d.oturum = null;
       return ciz(
         `${ust(baslik, '#/pekistir')}<div class="bos-kutu"><p>Bu seçim için şu an kart yok.</p><p class="kucuk ikincil">${
@@ -236,7 +271,7 @@ function kartHazirla(o, konum) {
     const son = d.ilerleme.sonEserler[s.id] || [];
     // Dönemin seviyesi sorunun zorluğunu belirler: eser (kolay → tipik/ünlü) ve şıklar (kolay → uzak dönemler).
     // Ö9: dönem turunda alt seviye seçildiyse o seviye
-    const sv = kartSeviyesi(seviyeKaydi(d.ilerleme, s.akim), o.seviye);
+    const sv = o.kip === 'bolum' ? o.seviye : kartSeviyesi(seviyeKaydi(d.ilerleme, s.akim), o.seviye);
     // Ö6: tanışmada görülen eserler de sorulmaz
     const kacin = [...son, ...((o.tanismaGorulen || {})[s.id] || [])];
     // K4: Koleksiyonum'daki eserler iki kat sık
@@ -295,6 +330,11 @@ async function kartCiz() {
   if (!o) return anaSayfa();
   if (o.oturum.bitti) return ozetCiz();
   if (o.tanisma && o.tanisma.konum < o.tanisma.sira.length) return konuTanismaGoster(o);
+  if (o.kip === 'bolum' && o.tanisma && !o.tanitimIsaret) {
+    o.tanitimIsaret = true;
+    tanitimGoruldu(d.ilerleme, bolumBilgi(o.akim).id);
+    kaydet();
+  }
   const konum = o.oturum.konum;
   const no = cizimNo();
   if ((!o.kart || o.kart.konum !== konum) && o.bekleyenKart) {
@@ -345,7 +385,7 @@ function cevapVarMi(o) {
 }
 
 function yarimKaydet(o) {
-  if (!o || d.oturum !== o) return;
+  if (!o || d.oturum !== o || o.kip === 'bolum') return;
   if (o.oturum.bitti) return yarimSil();
   if (!cevapVarMi(o)) return;
   d.yarim = kayitYap(o);
@@ -566,11 +606,22 @@ async function konuTanismaGoster(o) {
   }
   t.gosterilen = sec.map((e) => e.anahtar);
   const son = t.konum + 1 >= t.sira.length;
+  const bolum = o.kip === 'bolum';
   tanismaCiz(o, s, sec, {
     sayac: `Tanışma ${t.konum + 1} / ${t.sira.length}`,
-    etiketYazi: `Konu ${o.akim} · yeni sanatçı`,
-    not: son ? `Sırada bu konunun sanatçılarından ${o.oturum.toplam} kartlık kısa bir tur var.` : 'Sonra bu konunun öbür yeni sanatçısı geliyor.',
-    dugme: `<button class="dugme vurgu tanisma-gec" type="button" data-konu-tanisma-gec data-test="konu-tanisma-gec">${son ? 'Tura başla →' : 'Sonraki sanatçı →'}</button>`,
+    etiketYazi: bolum ? `${bolumAdi(bolumBilgi(o.akim).b)} · tanıtım` : `Konu ${o.akim} · yeni sanatçı`,
+    not: son
+      ? bolum
+        ? o.oturum.toplam
+          ? `Sırada bu sanatçılardan ${o.oturum.toplam} soruluk Kolay seviye var. Geçmek için %${Math.round(BOLUM_GECME * 100)} doğru.`
+          : 'Tanıtım bitti.'
+        : `Sırada bu konunun sanatçılarından ${o.oturum.toplam} kartlık kısa bir tur var.`
+      : bolum
+        ? 'Sonra bu bölümün öbür sanatçısı geliyor.'
+        : 'Sonra bu konunun öbür yeni sanatçısı geliyor.',
+    dugme: `<button class="dugme vurgu tanisma-gec" type="button" data-konu-tanisma-gec data-test="konu-tanisma-gec">${
+      son ? (bolum && !o.oturum.toplam ? 'Haritaya dön →' : bolum ? 'Kolay’a başla →' : 'Tura başla →') : 'Sonraki sanatçı →'
+    }</button>`,
   });
 }
 
@@ -935,7 +986,7 @@ function baskaEser(o) {
 
 function yeniSanatciSay(id, kip) {
   // Ö6: konu turunda günlük yeni sınırı uygulanmaz, bu tanışmalar sayılmaz
-  if (kip === 'konu') return;
+  if (kip === 'konu' || kip === 'bolum') return;
   const g = gunlukGuncelle(d.ilerleme, bugun());
   if (kategori(d.ilerleme.skorlar, id, kip, bugun()) === 2 && !g.yeniIdler.includes(id)) {
     g.yeniIdler.push(id);
@@ -945,6 +996,10 @@ function yeniSanatciSay(id, kip) {
 
 function kartiBitir(o, dogruMu) {
   o.kart.bitti = true;
+  if (o.bolumSay && o.oturum.simdiki && !o.oturum.simdiki.tekrar) {
+    o.bolumSay.toplam++;
+    if (dogruMu) o.bolumSay.dogru++;
+  }
   o.oturum.isle(dogruMu);
   gunlukGuncelle(d.ilerleme, bugun()).kart++;
   const s = d.harita.get(o.kart.id);
@@ -965,7 +1020,8 @@ function sanatciCevapla(o, deger) {
   const akim = d.harita.get(k.id).akim;
   const kayit = seviyeKaydi(d.ilerleme, akim);
   // Ö9: ısınma için seçilen alt seviyedeki cevap dönemin penceresine yazılmaz
-  if (o.seviye !== null && o.seviye !== undefined && !pencereyeYazilirMi(kayit, k.seviye))
+  if (o.kip === 'bolum') k.seviyeSonuc = { akim, bolum: o.akim };
+  else if ((o.seviye !== null && o.seviye !== undefined && !pencereyeYazilirMi(kayit, k.seviye)))
     k.seviyeSonuc = { akim, isinma: true, once: kayit.s, sonra: kayit.s, gecti: false };
   else k.seviyeSonuc = { akim, ...seviyeIsle(d.ilerleme, akim, bilmiyor ? 'bilmiyorum' : dogru) };
   if (k.seviyeSonuc.gecti) (o.gecenler ||= []).push({ akim, seviye: k.seviyeSonuc.sonra });
@@ -988,8 +1044,45 @@ function akimCevapla(o, deger) {
   kartGoster(o);
 }
 
+function bolumOzeti(o) {
+  const { id, sv, b } = bolumBilgi(o.akim);
+  if (sv === 'tanitim') {
+    d.oturum = null;
+    return location.replace('#/harita');
+  }
+  if (o.bolumSonuc === undefined) {
+    o.bolumSonuc = bolumSonucuIsle(d.ilerleme, id, sv, o.bolumSay.dogru, o.bolumSay.toplam);
+    kaydet();
+  }
+  const r = o.bolumSonuc;
+  const sonraki = sv === 'kolay' ? 'orta' : sv === 'orta' ? 'zor' : null;
+  const yuzde = Math.round(r.oran * 100);
+  const metin = r.gecti
+    ? sv === 'orta'
+      ? 'Orta’yı geçtin: sıradaki bölümün yolu açıldı.'
+      : sv === 'kolay'
+        ? 'Kolay’ı geçtin: Orta açıldı.'
+        : 'Zor’u da geçtin: bu bölümü ustaca bitirdin.'
+    : `Geçmek için %${Math.round(BOLUM_GECME * 100)} gerekiyor. Yanlış yaptıkların daha sık karşına çıkacak.`;
+  ciz(`${ust(kipKisa(o.kip, o.akim), '#/harita', { ustEtiket: r.gecti ? 'Geçtin' : 'Bir daha dene' })}
+    <div class="ozet" data-test="bolum-ozet" data-gecti="${r.gecti}">
+      ${etiket('Sonuç', { vurgu: true })}
+      <b class="ad">%${yuzde}</b>
+      <span class="meta">${o.bolumSay.dogru} / ${o.bolumSay.toplam} doğru · ${kacis(b ? bolumAdi(b) : '')}</span>
+      <span class="harita-yildiz ozet-yildiz" aria-label="${r.yildizSonra} / 3 yıldız">${[0, 1, 2].map((i) => `<i class="${i < r.yildizSonra ? 'dolu' : ''}">★</i>`).join('')}</span>
+      <p class="okuma italik">${metin}</p>
+    </div>
+    <div class="menu">
+      ${r.gecti && sonraki ? `<a class="dugme vurgu" href="#/pekistir/bolum/${id}/${sonraki}" data-test="bolum-sonraki">${BOLUM_YONELME[sonraki]} geç</a>` : ''}
+      ${r.gecti ? '' : `<button class="dugme vurgu" type="button" data-yeni-tur data-test="bolum-tekrar">Tekrar dene</button>`}
+      <a class="dugme" href="#/harita" data-test="bolum-harita">Haritaya dön</a>
+    </div>
+    ${r.yeniGecti ? yaldizYapraklari() : ''}`);
+}
+
 function ozetCiz() {
   const o = d.oturum;
+  if (o.kip === 'bolum') return bolumOzeti(o);
   const ot = o.oturum;
   if (d.yarim && d.yarim.kimlik === o.kimlik) yarimSil();
   const toplam = ot.dogru + ot.yanlis;
@@ -1037,6 +1130,12 @@ function seviyeSatiri(k) {
   const r = k.seviyeSonuc;
   if (!r) return '';
   const akim = r.akim || d.harita.get(k.id).akim;
+  // İş 24: bölüm turunda dönem seviyesi değil bölümün geçme sınırı
+  if (r.bolum) {
+    const { b, sv } = bolumBilgi(r.bolum);
+    const n = BOLUM_SORU[sv] || 0;
+    return `<p class="seviye-satir" data-test="seviye-bolum">${kacis(`${b ? bolumAdi(b) : 'Bölüm'} · ${BOLUM_SV_AD[sv] || ''} · geçmek için ${Math.ceil(n * BOLUM_GECME)} / ${n} doğru`)}</p>`;
+  }
   if (r.isinma)
     return `<p class="seviye-satir" data-test="seviye-isinma">${kacis(`Isınma · ${SEVIYELER[k.seviye ?? 0].ad} · ${akim} ${SEVIYELER[r.once].ad} penceresine yazılmadı`)}</p>`;
   if (r.gecti)

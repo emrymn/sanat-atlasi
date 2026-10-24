@@ -6,6 +6,7 @@ import { seviyelerDogrula } from './seviye.js';
 import { gecmisDogrula } from './gecmis.js';
 import { koleksiyonDogrula } from './koleksiyon.js';
 import { gorulenDogrula } from './harita.js';
+import { bolumlerDogrula } from './bolum.js';
 import { bildirimlerDogrula } from './bildirim.js';
 
 export const ANAHTAR = 'sanat-atlasi:ilerleme';
@@ -30,7 +31,8 @@ export function varsayilanIlerleme(islenen = []) {
     sonYedek: null, // son yedeğin günü "YYYY-MM-DD" (İ3)
     gecmis: {}, // günlük çalışma kaydı (İ1/İ4, js/gecmis.js)
     koleksiyon: [], // işaretlenen eserler (K4)
-    haritaGorulen: [], // yolculuk haritasında görülmüş (açık) duraklar (İş 23)
+    haritaGorulen: [], // yolculuk haritasında görülmüş (açık) bölümler (İş 23/24)
+    bolumler: {}, // İş 24: harita bölümlerinin en iyi oranları { 'sira-no': { kolay, orta, zor, tanitim } }
     bildirimler: [], // "Bu görsel hatalı" bildirimleri (İ5)
     sonSurum: null, // Bugün'de "Yenilikler" notunun son gösterildiği sürüm (T4)
     olusturma: new Date().toISOString(),
@@ -85,6 +87,7 @@ export function ilerlemeDogrula(nesne) {
     gecmis: gecmisDogrula(v.gecmis),
     koleksiyon: koleksiyonDogrula(v.koleksiyon),
     haritaGorulen: gorulenDogrula(v.haritaGorulen),
+    bolumler: bolumlerDogrula(v.bolumler),
     bildirimler: bildirimlerDogrula(v.bildirimler),
     sonSurum: typeof v.sonSurum === 'string' && /^\d+\.\d+\.\d+$/.test(v.sonSurum) ? v.sonSurum : null,
     olusturma: v.olusturma || t.olusturma,
