@@ -2,7 +2,8 @@
 // /sanat-atlasi/ alt yolunda sunar (göreli yolların doğru çalıştığını sınar).
 // Kullanım: node scripts/sunucu.mjs [port] [--sw-yok]
 // --sw-yok (npm run dev, v0 önizlemesi): sw.js verilmez, service worker kurulmaz; böylece her
-// değişiklik önbelleğe takılmadan hemen görünür. Port verilmezse PORT ortam değişkeni, o da yoksa 4173.
+// değişiklik önbelleğe takılmadan hemen görünür. Port verilmezse PORT ortam değişkeni, o da yoksa 4173
+// (--sw-yok ile 3000). Port doluysa (yalnız port elle verilmediyse) sıradaki boş port denenir.
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
@@ -12,7 +13,8 @@ const KOK = fileURLToPath(new URL('../', import.meta.url));
 const ONEK = '/sanat-atlasi/';
 const argumanlar = process.argv.slice(2);
 const SW_YOK = argumanlar.includes('--sw-yok');
-const port = Number(argumanlar.find((x) => /^\d+$/.test(x)) || process.env.PORT || 4173);
+const elle = argumanlar.find((x) => /^\d+$/.test(x)) || process.env.PORT;
+const port = Number(elle || (SW_YOK ? 3000 : 4173));
 const TURLER = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
@@ -26,7 +28,7 @@ const TURLER = {
   '.webp': 'image/webp',
 };
 
-createServer(async (istek, yanit) => {
+const sunucu = createServer(async (istek, yanit) => {
   const yol = decodeURIComponent(new URL(istek.url, 'http://x').pathname);
   if (!yol.startsWith(ONEK)) {
     yanit.writeHead(302, { location: ONEK });
@@ -50,4 +52,12 @@ createServer(async (istek, yanit) => {
     yanit.writeHead(404, { 'content-type': 'text/plain; charset=utf-8' });
     yanit.end('Bulunamadı');
   }
-}).listen(port, () => console.log(`http://localhost:${port}${ONEK}${SW_YOK ? ' (service worker kapalı)' : ''}`));
+});
+let deneme = port;
+sunucu.on('error', (h) => {
+  if (h.code === 'EADDRINUSE' && !elle && deneme < port + 20) {
+    console.log(`port ${deneme} dolu, ${deneme + 1} deneniyor`);
+    sunucu.listen(++deneme);
+  } else throw h;
+});
+sunucu.listen(deneme, () => console.log(`http://localhost:${deneme}${ONEK}${SW_YOK ? ' (service worker kapalı)' : ''}`));
