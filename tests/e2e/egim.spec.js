@@ -29,7 +29,12 @@ test('Bugün: telefon sağa çevrilince tablo döner, Ayarlar’dan kapatılınc
   }
   await expect(kutu).toHaveClass(/egimli/);
   await donus(page, 80, 0.4); // sağa çevir
-  await expect.poll(() => kutu.evaluate((el) => parseFloat(getComputedStyle(el).getPropertyValue('--egx')) || 0)).toBeGreaterThan(0.5);
+  const deger = (ad) => kutu.evaluate((el, a) => parseFloat(el.style.getPropertyValue(a)) || 0, ad);
+  // ad tablodan geride kalır (daha yavaş izler), ama o da sağa kayar
+  const [tablo, ad] = [await deger('--egx'), await deger('--yzx')];
+  expect(ad).toBeLessThan(tablo);
+  await expect.poll(() => deger('--egx')).toBeGreaterThan(0.5);
+  await expect.poll(() => deger('--yzx')).toBeGreaterThan(0.1);
   // soyadın gölgesi ayrı katman (her karede yeniden çizilen text-shadow değil)
   const golge = await page.locator('.sahne-isim .ad-son').evaluate((el) => ({ kopya: getComputedStyle(el, '::before').content, ts: getComputedStyle(el).textShadow }));
   expect(golge.kopya).not.toBe('none');

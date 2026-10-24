@@ -5,13 +5,16 @@
 // telefon dikken kararsızlaşıp (gimbal kilidi) adı rastgele yerlere atıyordu. Jiroskop yoksa açılar yedek olarak,
 // takla atmayan biçimde kullanılır.
 // iOS hareket verisini ancak bir dokunuşla istenen izinle verir (DeviceMotionEvent.requestPermission).
-// Saf hesap burada (birim testli); CSS değişkenleri: --egx, --egy (-1…1), --egim-eksen (rotate değeri).
+// Saf hesap burada (birim testli); CSS değişkenleri: --egx, --egy (-1…1), --egim-eksen (rotate değeri) tablo için;
+// --yzx, --yzy ad için (aynı değer, daha yavaş izler).
 
 const SINIR = 22; // bu kadar derece dönüş / eğim tam etki
 const EN_COK_ACI = 5; // tablonun en çok dönüş açısı (derece)
 const SONUM = 1.6; // jiroskop: toplanan dönüş bu kadar saniyede ~%63 söner (bırakınca ortaya dönüş)
 const TAKIP = 0.003; // açı yedeği: sıfır noktası tutuş açısını olay başına bu hızla izler
 const SUZGEC = 0.3; // açı yedeği: algılayıcı titremesine karşı yumuşatma (olay başına)
+const TABLO_IZ = 0.2; // tablo hedefe her karede bu kadar yaklaşır
+const YAZI_IZ = 0.06; // ad daha ağır izler (hızlı kayması rahatsız ediyordu)
 
 const sinirla = (v) => Math.max(-1, Math.min(1, v));
 const DERECE = Math.PI / 180;
@@ -96,6 +99,7 @@ export async function egimIzni() {
 let kok = null;
 let hedef = { x: 0, y: 0 };
 let anlik = { x: 0, y: 0 };
+let yazi = { x: 0, y: 0 };
 let kare = 0;
 let bekleyen = null; // izin için beklenen ilk dokunuş
 // jiroskop
@@ -128,15 +132,21 @@ function yon(e) {
   if (!kare) kare = requestAnimationFrame(ciz);
 }
 
+const yaklas = (a, b, k) => ({ x: a.x + (b.x - a.x) * k, y: a.y + (b.y - a.y) * k });
+
 // Ekrana yumuşakça uygulanır; kök sayfadan çıkınca dinleme kendiliğinden biter
 function ciz() {
   kare = 0;
   if (!kok || !kok.isConnected) return egimDurdur();
-  anlik = { x: anlik.x + (hedef.x - anlik.x) * 0.2, y: anlik.y + (hedef.y - anlik.y) * 0.2 };
+  anlik = yaklas(anlik, hedef, TABLO_IZ);
+  yazi = yaklas(yazi, hedef, YAZI_IZ);
   kok.style.setProperty('--egx', anlik.x.toFixed(3));
   kok.style.setProperty('--egy', anlik.y.toFixed(3));
   kok.style.setProperty('--egim-eksen', eksenYaz(anlik.x, anlik.y));
-  if (Math.abs(hedef.x - anlik.x) > 0.002 || Math.abs(hedef.y - anlik.y) > 0.002) kare = requestAnimationFrame(ciz);
+  kok.style.setProperty('--yzx', yazi.x.toFixed(3));
+  kok.style.setProperty('--yzy', yazi.y.toFixed(3));
+  const uzak = (a) => Math.abs(hedef.x - a.x) > 0.002 || Math.abs(hedef.y - a.y) > 0.002;
+  if (uzak(anlik) || uzak(yazi)) kare = requestAnimationFrame(ciz);
 }
 
 // el: tablonun kutusu. acik: ayardaki seçim. İzin gerekiyorsa ve henüz alınmadıysa ilk dokunuşta istenir.
@@ -176,6 +186,7 @@ export function egimDurdur() {
   kok = null;
   hedef = { x: 0, y: 0 };
   anlik = { x: 0, y: 0 };
+  yazi = { x: 0, y: 0 };
   donus = { x: 0, y: 0 };
   sonZaman = 0;
   jiroskop = false;
