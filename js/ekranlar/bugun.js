@@ -42,7 +42,6 @@ import {
   bildir,
   cizimNo,
   guncelMi,
-  tabloDugme,
   eserKareleriDoldur,
 } from './ortak.js';
 import { devamKarti } from './pekistir.js';
@@ -103,7 +102,7 @@ function turKarti(tur, g) {
 }
 
 // Bugün sahnesi: tablo ekranı kaplar ve kaydırırken yerinde kalır; kaydırdıkça tabloya yaklaşılır
-// (büyür, kararır) ve üstünden müze duvar etiketleri geçer. Pekiştir düğmesi sahne boyunca başparmağın altında durur.
+// (büyür, kararır) ve üstünden müze duvar etiketleri geçer. Tablonun önünde düğme yok; Pekiştir alt çubukta.
 function sahneHtml(gs, { tekrar, tur, devam, g }) {
   const not = gs.kurs_notu || gs.anlatim;
   const tn = taninma(gs);
@@ -120,16 +119,6 @@ function sahneHtml(gs, { tekrar, tur, devam, g }) {
         ${tn ? panel('Nasıl tanırım?', tn, false) : ''}
         ${not ? panel('Notlarımdan', not, true) : ''}
       </div>
-      ${tabloDugme({
-        href: '#/pekistir/karisik',
-        test: 'pekistir',
-        sinif: 'sahne-dugme',
-        sanatciId: gs.id,
-        baslik: 'Pekiştir',
-        alt: turAltYazisi(tur),
-        sayi: tur.toplam,
-        ilerleme: { yapilan: g.kart, hedef: d.ilerleme.ayarlar.gunlukKart },
-      })}
     </section>`;
 }
 
