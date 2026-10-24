@@ -1,11 +1,12 @@
-// Yolculuk haritası (İş 24): 8 dönem resmi sisle birbirine geçer; alttan (Orta Çağ) yukarıya (Modern) çıkılır.
+// Yolculuk haritası (İş 24): 8 dönem resmi alttan (Orta Çağ) yukarıya (Modern) dizilir; aralarındaki sisli geçiş
+// şeridine gelince sis aralanır, yeni dönemin adı belirir ve dönemin resmi solukken renklenir.
 // Her bölüm yolun kenarında, o dönemin nesnesiyle bir durak; açık durakların altında yumuşak bir ışık yanıp
 // söner, "buradasın" durağında dönemin yolcusu ve yukarıdan inen ışık. Durağa dokununca küçük pencere
 // (seviyeler, yıldızlar, sanatçılar, akım sayfası); resimdeki saklı motife dokununca eserin hikâyesi.
 import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
-import { haritaKur, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul } from '../harita.js';
+import { haritaKur, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul, BINME, ARA } from '../harita.js';
 import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen } from './ortak.js';
 import { sanatciEserleri } from '../eserler.js';
 
@@ -66,6 +67,23 @@ function motifHtml(b, m, i, h) {
       aria-label="Saklı motif ${i + 1}"></button>`;
 }
 
+// Dönem geçişi: iki resmin kenar renkleri bulanıkça birbirine akar (resimler yüklenince JS doldurur), ortada sis
+// ve yeni dönemin adı. Şerit resimlerin sisli kenarlarının altına da uzanır.
+function gecisHtml(g, h) {
+  const s = g.sonraki;
+  const ustY = g.ust - BINME;
+  const boy = g.alt + BINME - ustY;
+  const acik = s.duraklar.filter((x) => x.acik).length;
+  const bilgi = `${s.duraklar.length} bölüm · ${acik ? `${acik} açık` : 'henüz kilitli'}`;
+  return `<div class="harita-gecis${acik ? '' : ' kilitli'}" data-test="harita-gecis" data-gecis="${s.id}" data-onceki="${g.onceki.id}"
+      style="top:${((ustY / h) * 100).toFixed(3)}%;height:${((boy / h) * 100).toFixed(3)}%">
+      <span class="harita-gecis-renk ust" aria-hidden="true"></span><span class="harita-gecis-renk alt" aria-hidden="true"></span>
+      <span class="harita-gecis-sis sol" aria-hidden="true"></span><span class="harita-gecis-sis sag" aria-hidden="true"></span>
+      <span class="harita-gecis-isik" aria-hidden="true"></span>
+      <p class="harita-gecis-yazi"><span class="harita-gecis-yuzyil">${kacis(s.yuzyil)}</span><b>${kacis(s.ad)}</b><span class="harita-gecis-bilgi">${bilgi}</span></p>
+    </div>`;
+}
+
 export async function haritaSayfasi() {
   const no = cizimNo();
   const [veri, bilgi] = await Promise.all([haritaVerisi(), d.akimBilgi ? null : jsonGetir('data/akim_bilgi.json').catch(() => null)]);
@@ -73,7 +91,7 @@ export async function haritaSayfasi() {
   if (!guncelMi(no)) return;
   const tur = d.haritaVakti || vakit();
   const { durumlar: liste, simdiki } = durumlar();
-  const harita = haritaKur(liste, veri, tur);
+  const harita = haritaKur(liste, veri, tur, ARA);
   const gorulen = new Set(d.ilerleme.haritaGorulen || []);
   const yeniler = new Set(liste.filter((x) => x.acik && !gorulen.has(x.id)).map((x) => x.id));
   const acikSayi = liste.filter((x) => x.acik).length;
@@ -93,10 +111,11 @@ export async function haritaSayfasi() {
       ${harita.bolgeler
         .map(
           (b, i) =>
-            `<img class="harita-resim${i ? ' sisli' : ''}" data-test="harita-bolge" data-bolge="${b.id}" alt="${kacis(b.ad)}" decoding="async" ${i < 2 ? '' : 'loading="lazy"'}
+            `<img class="harita-resim${i ? ' sis-alt' : ''}${i < harita.bolgeler.length - 1 ? ' sis-ust' : ''}" data-test="harita-bolge" data-bolge="${b.id}" alt="${kacis(b.ad)}" decoding="async" ${i < 2 ? '' : 'loading="lazy"'}
               src="${resimAdresi(b.id, tur)}" style="top:${((b.ust / h) * 100).toFixed(3)}%;height:${((1 / h) * 100).toFixed(3)}%;z-index:${i + 1}">`,
         )
         .join('')}
+      ${harita.gecisler.map((g) => gecisHtml(g, h)).join('')}
       <svg class="harita-filtre" width="0" height="0" aria-hidden="true" focusable="false"><filter id="durak-kontur" color-interpolation-filters="sRGB"><feComponentTransfer in="SourceAlpha" result="m"><feFuncA type="discrete" tableValues="0 0 0 1 1 1"/></feComponentTransfer><feComposite in="SourceGraphic" in2="m" operator="in" result="g"/><feMorphology in="m" operator="dilate" radius="1.4" result="k"/><feFlood flood-color="#fff4dc"/><feComposite in2="k" operator="in" result="krem"/><feMorphology in="m" operator="dilate" radius="2.4" result="d"/><feFlood flood-color="#24170c"/><feComposite in2="d" operator="in" result="koyu"/><feMerge><feMergeNode in="koyu"/><feMergeNode in="krem"/><feMergeNode in="g"/></feMerge></filter></svg>
       <div class="harita-katman">${katman}</div>
     </div>
@@ -108,6 +127,7 @@ export async function haritaSayfasi() {
     requestAnimationFrame(() => konumaKaydir());
   }
   konumIzle();
+  gecisleriIzle();
   for (const img of ekran.querySelectorAll('.harita-durak img')) ayagaYerlestir(img);
   if (yeniler.size) {
     d.ilerleme.haritaGorulen = gorulenDogrula([...gorulen, ...yeniler]);
@@ -181,6 +201,51 @@ function konumIzle() {
     dugme.classList.toggle('asagi', g.boundingClientRect.top > 0);
   });
   konumGozcu.observe(durak);
+}
+
+// ---------- dönem geçişleri ----------
+// Şeritler komşu resimler yüklenince onların kenar renkleriyle dolar (fazladan istek yok, tembel yükleme bozulmaz).
+// Şerit görüş alanına yeterince girince "gorundu" (animasyon), tamamen çıkınca geri alınır: her geçişte yeniden oynar.
+// Resim ilk kez görülünce "uyandi" (renklenir); açılışta zaten görünenler geçişsiz uyanır.
+let gecisGozcu = null;
+function gecisleriIzle() {
+  if (gecisGozcu) gecisGozcu.disconnect();
+  const kap = ekran.querySelector('[data-test="harita"]');
+  if (!kap) return;
+  const resim = (id) => kap.querySelector(`.harita-resim[data-bolge="${id}"]`);
+  for (const g of kap.querySelectorAll('.harita-gecis')) {
+    for (const [sinif, id] of [['ust', g.dataset.gecis], ['alt', g.dataset.onceki]]) {
+      const img = resim(id);
+      const renk = g.querySelector(`.harita-gecis-renk.${sinif}`);
+      if (!img || !renk) continue;
+      const doldur = () => img.naturalWidth && (renk.style.backgroundImage = `url("${img.currentSrc || img.src}")`);
+      if (img.complete) doldur();
+      else img.addEventListener('load', doldur, { once: true });
+    }
+  }
+  if (typeof IntersectionObserver !== 'function') return;
+  kap.classList.add('izleniyor');
+  let ilk = true;
+  gecisGozcu = new IntersectionObserver(
+    (girdiler) => {
+      if (!kap.isConnected) return gecisGozcu.disconnect();
+      for (const g of girdiler) {
+        const el = g.target;
+        if (el.classList.contains('harita-resim')) {
+          if (g.intersectionRatio >= 0.2) el.classList.add('uyandi');
+        } else if (g.intersectionRatio >= 0.45) {
+          el.classList.add('gorundu');
+          resim(el.dataset.gecis)?.classList.add('uyandi');
+        } else if (!g.isIntersecting) el.classList.remove('gorundu');
+      }
+      if (ilk) {
+        ilk = false;
+        requestAnimationFrame(() => requestAnimationFrame(() => kap.classList.add('hazir')));
+      }
+    },
+    { threshold: [0, 0.2, 0.45] },
+  );
+  for (const el of kap.querySelectorAll('.harita-gecis, .harita-resim')) gecisGozcu.observe(el);
 }
 
 // ---------- küçük pencereler ----------
