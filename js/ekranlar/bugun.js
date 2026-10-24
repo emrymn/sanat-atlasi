@@ -47,6 +47,7 @@ import {
 import { devamKarti } from './pekistir.js';
 import { SURUM } from '../surum.js';
 import { gosterilecekler, yenilikYazisi } from '../yenilikler.js';
+import { egimBaslat } from '../egim.js';
 
 // ---------- sayımlar ----------
 function istatistik() {
@@ -110,6 +111,7 @@ function sahneHtml(gs, { tekrar, tur, devam, g }) {
     `<div class="sahne-panel"><div class="duvar-etiketi">${etiket(baslik, { vurgu: true })}<p class="okuma${italik ? ' italik' : ''}">${kacis(metin)}</p></div></div>`;
   return `<section class="sahne${devam ? ' devam-alti' : ''}" data-test="gunun-kart">
       <div class="bugun-kahraman sahne-yapiskan" data-gunun-gorsel>
+        <span class="egim-isik" aria-hidden="true"></span>
         <div class="bugun-ust"><span class="etiket vurgu">Günün sanatçısı</span><span class="hap" data-test="tekrar">${tekrar}</span></div>
         <a class="sahne-isim isim-blok" href="#/gunun">${isimHtml(gs)}<p class="meta">${kunye(gs, { bag: false })}</p></a>
         <span class="kaydir-ipucu" aria-hidden="true">${ikon('asagi', 22, 1.4)}</span>
@@ -195,6 +197,8 @@ export function anaSayfa() {
   ekran.classList.toggle('perde', !d.perdeAcildi);
   d.perdeAcildi = true;
   if (gs) {
+    // telefonu eğince tablo döner, ışık üstünden kayar (İş 32)
+    egimBaslat(ekran.querySelector('[data-gunun-gorsel]'), d.ilerleme.ayarlar.egim !== false);
     gununKartGorseli(gs);
     sahneBiyografisi(gs);
     anaGaleriDoldur(gs);

@@ -198,7 +198,7 @@ export function kunye(s, { bag = true, konuYok = false } = {}) {
 // Erişilebilir ad her zaman tam addır.
 export function isimHtml(sanatci, { etiketAdi = 'b', sinif = '', ek = '' } = {}) {
   const p = adParcala(sanatci.ad, d.kisaAdlar[sanatci.id]);
-  return `<${etiketAdi} class="isim${sinif ? ' ' + sinif : ''}" aria-label="${kacis(sanatci.ad)}"${ek}>${p.ilk ? `<span class="ad-ilk">${kacis(p.ilk)}</span> ` : ''}<span class="ad-son">${kacis(p.son)}</span>${p.tam ? ` <span class="ad-ilk ad-tam">${kacis(p.tam)}</span>` : ''}</${etiketAdi}>`;
+  return `<${etiketAdi} class="isim${sinif ? ' ' + sinif : ''}" aria-label="${kacis(sanatci.ad)}"${ek}>${p.ilk ? `<span class="ad-ilk">${kacis(p.ilk)}</span> ` : ''}<span class="ad-son" data-ad="${kacis(p.son)}">${kacis(p.son)}</span>${p.tam ? ` <span class="ad-ilk ad-tam">${kacis(p.tam)}</span>` : ''}</${etiketAdi}>`;
 }
 
 // Bir öğenin yazısını tek satıra sığana kadar küçültür (en küçük `enAz` px)
