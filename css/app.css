@@ -8312,3 +8312,159 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
 }
 .harita-pencere-kapat:focus-visible { outline-color: var(--hp-yaldiz); }
+
+/* ===== "İşlendi yap": tuvale çekilmiş tek bir fırça darbesi =====
+   Kenarlar SVG gürültüsüyle yırtık, üstünde kıl izleri; basınca darbe yeniden çekilir. */
+.siradaki-dugme,
+.siradaki.resimli .siradaki-dugme {
+  position: relative;
+  isolation: isolate;
+  min-height: 52px;
+  padding: 0 30px 2px;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+  color: var(--vurgu-yazi, #fff);
+  font: italic 400 18px/1 var(--serif);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  justify-self: start;
+  width: max-content;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  transform: rotate(-1.5deg);
+}
+.siradaki-dugme::before {
+  content: '';
+  position: absolute;
+  inset: 0 -6px;
+  z-index: -1;
+  background:
+    repeating-linear-gradient(179deg, rgba(255, 255, 255, 0.07) 0 1px, transparent 1px 5px, rgba(0, 0, 0, 0.08) 5px 6px, transparent 6px 11px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.18), rgba(255, 255, 255, 0.12) 30%, transparent 60%, rgba(0, 0, 0, 0.22)),
+    var(--vurgu);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 60' preserveAspectRatio='none'%3E%3Cfilter id='f' x='-5%25' y='-20%25' width='110%25' height='140%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.035 0.6' numOctaves='3' seed='4'/%3E%3CfeDisplacementMap in='SourceGraphic' scale='13'/%3E%3C/filter%3E%3Cpath filter='url(%23f)' d='M10 16 C60 6 170 4 228 12 C236 22 236 40 226 48 C160 56 70 58 14 50 C4 40 4 24 10 16Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 60' preserveAspectRatio='none'%3E%3Cfilter id='f' x='-5%25' y='-20%25' width='110%25' height='140%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.035 0.6' numOctaves='3' seed='4'/%3E%3CfeDisplacementMap in='SourceGraphic' scale='13'/%3E%3C/filter%3E%3Cpath filter='url(%23f)' d='M10 16 C60 6 170 4 228 12 C236 22 236 40 226 48 C160 56 70 58 14 50 C4 40 4 24 10 16Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.35));
+  transform-origin: left center;
+  transition: transform 0.25s ease;
+}
+.siradaki-dugme::after {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  width: 14px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--vurgu);
+  transform: translateY(-40%) rotate(-12deg);
+  opacity: 0.85;
+  z-index: -1;
+}
+.siradaki-dugme:hover::before { transform: scaleX(1.03); }
+.siradaki-dugme:active,
+.siradaki.resimli .siradaki-dugme:active {
+  background: none;
+  color: var(--vurgu-yazi, #fff);
+}
+.siradaki-dugme:focus-visible { outline: 2px dashed var(--vurgu-acik); outline-offset: 6px; }
+@media (prefers-reduced-motion: no-preference) {
+  .siradaki-dugme::before { animation: firca-cek 0.7s cubic-bezier(0.3, 0.7, 0.2, 1) 0.2s backwards; }
+  .siradaki-dugme:active::before { animation: firca-cek 0.45s cubic-bezier(0.3, 0.7, 0.2, 1); }
+}
+@keyframes firca-cek {
+  from { transform: scaleX(0.04); opacity: 0.6; }
+  to { transform: scaleX(1); opacity: 1; }
+}
+
+/* Eser düğmesi zemini: resim tam ortada, yalnızca nefes alır (kayma yok) */
+.ed-zemin img {
+  object-position: 50% 50%;
+  transform-origin: 50% 50%;
+  animation: ed-nefes 14s ease-in-out infinite alternate;
+}
+@keyframes ed-nefes {
+  from { transform: scale(1.04); }
+  to { transform: scale(1.14); }
+}
+
+/* ===== Harita durakları: daha belirgin ===== */
+.harita-durak img {
+  filter:
+    drop-shadow(0 0 1px rgba(255, 240, 205, 0.95))
+    drop-shadow(0 0 1px rgba(255, 240, 205, 0.95))
+    drop-shadow(0 6px 6px rgba(30, 18, 8, 0.45));
+  transition: transform 0.25s ease;
+}
+.harita-durak.kilit { opacity: 0.82; }
+.harita-durak.kilit img {
+  filter:
+    grayscale(1) brightness(1.08) contrast(0.95)
+    drop-shadow(0 0 1px rgba(255, 255, 255, 0.7))
+    drop-shadow(0 4px 4px rgba(20, 14, 8, 0.35));
+}
+/* kilitli durağın üstünde küçük mühür */
+.harita-durak.kilit::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -4px;
+  width: 20px;
+  height: 20px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f3e6cc' stroke-width='2.2' stroke-linecap='round'%3E%3Crect x='6' y='11' width='12' height='9' rx='2'/%3E%3Cpath d='M9 11V8a3 3 0 0 1 6 0v3'/%3E%3C/svg%3E") center / 12px no-repeat,
+    rgba(40, 30, 22, 0.82);
+  box-shadow: 0 0 0 1.5px rgba(243, 230, 204, 0.7), 0 3px 6px rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+/* açık duraklar: tabanda yayılan halka */
+.harita-durak.acik::after,
+.harita-durak.simdiki::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  width: 70%;
+  aspect-ratio: 3 / 1;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 226, 160, 0.9);
+  box-shadow: 0 0 10px rgba(255, 214, 130, 0.7);
+  pointer-events: none;
+  z-index: -1;
+}
+.harita-durak.simdiki img {
+  filter:
+    drop-shadow(0 0 1.5px #fff2cf)
+    drop-shadow(0 0 1.5px #fff2cf)
+    drop-shadow(0 0 12px rgba(255, 210, 120, 0.85));
+}
+.harita-durak.simdiki::after { width: 90%; border-color: #ffe7a8; }
+@media (prefers-reduced-motion: no-preference) {
+  .harita-durak.acik::after,
+  .harita-durak.simdiki::after { animation: durak-halka 2.6s ease-out infinite; }
+  .harita-durak.simdiki::after { animation-duration: 1.8s; }
+  .harita-durak.acik img { animation: durak-sallan 4.2s ease-in-out infinite; }
+  .harita-durak.simdiki img { animation: durak-zipla 1.8s ease-in-out infinite; }
+  .harita-durak.kilit::before { animation: durak-muhur 3.4s ease-in-out infinite; }
+}
+@keyframes durak-halka {
+  0% { transform: translateX(-50%) scale(0.6); opacity: 0.95; }
+  100% { transform: translateX(-50%) scale(1.5); opacity: 0; }
+}
+@keyframes durak-sallan {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3%); }
+}
+@keyframes durak-zipla {
+  0%, 100% { transform: translateY(0) scale(1); }
+  40% { transform: translateY(-7%) scale(1.04); }
+  60% { transform: translateY(-5%) scale(1.03); }
+}
+@keyframes durak-muhur {
+  0%, 100% { transform: translateX(-50%) rotate(0deg); }
+  50% { transform: translateX(-50%) rotate(-8deg); }
+}
