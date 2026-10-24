@@ -63,7 +63,9 @@ import {
   gorselTercihi,
   cizimNo,
   guncelMi,
+  kucukKareleriDoldur,
 } from './ortak.js';
+import { kutuDagilimi, merdivenHtml, akimIstatistigi, seviyeIziHtml } from './pano.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
 import { BOLUM_SORU, BOLUM_GECME, SEVIYE_NO, bolumKartlari, bolumSonucuIsle, tanitimGoruldu, bolumKaydi, bolumAdi } from '../bolum.js';
 import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
@@ -77,26 +79,100 @@ function bolumBilgi(akim) {
   return { id, sv, b: tumBolumler().find((x) => x.id === id) || null };
 }
 
+const DONEM_SIRALARI = [
+  ['sira', 'Sırayla'],
+  ['tekrar', 'Tekrarı olan'],
+  ['zayif', 'Zayıf önce'],
+];
+const HEDEFLER = [10, 20, 30];
+
+// Bugünkü turun sahnesi: destenin ilk üç kartı, kart sayısı, türlerin oranı ve günlük hedef seçimi
+function turSahnesi(karisik) {
+  const b = bugun();
+  const skorlar = d.ilerleme.skorlar;
+  const deste = acikListe()
+    .map((s) => ({ s, k: kategori(skorlar, s.id, 'karisik', b) }))
+    .sort((x, y) => x.k - y.k)
+    .slice(0, 3);
+  const pek = karisik.zayif + karisik.diger;
+  const dk = Math.max(1, Math.round((karisik.toplam * 20) / 60));
+  const parca = [
+    ['tekrar', karisik.tekrar, 'tekrar'],
+    ['pek', pek, 'pekiştirme'],
+    ['yeni', karisik.yeni, 'yeni'],
+  ];
+  const hedef = d.ilerleme.ayarlar.gunlukKart;
+  const hedefler = [...new Set([...HEDEFLER, hedef])].sort((x, y) => x - y);
+  return `<section class="tur-sahne" aria-label="Bugünkü karışık tur">
+      <div class="tur-sahne-ust">
+        <div class="tur-deste${deste.length ? '' : ' bos'}" aria-hidden="true">${deste.map((x) => `<span class="kucuk-kare" data-kucuk="${kacis(x.s.id)}"></span>`).join('')}</div>
+        <div class="tur-sahne-yazi">
+          ${etiket('Bugünkü tur', { vurgu: true })}
+          <p class="tur-sahne-sayi"><b>${karisik.toplam}</b><span>kart<br>~${dk} dk</span></p>
+          <span class="tur-karisim" role="img" aria-label="${parca.map(([, n, ad]) => `${n} ${ad}`).join(', ')}">${parca
+            .filter(([, n]) => n)
+            .map(([cls, n]) => `<i class="k-${cls}" style="flex-grow:${n}"></i>`)
+            .join('')}</span>
+          <ul class="tur-lejant">${parca.map(([cls, n, ad]) => `<li><i class="k-${cls}" aria-hidden="true"></i>${n} ${ad}</li>`).join('')}</ul>
+        </div>
+      </div>
+      <a class="dugme vurgu karisik-dugme" href="#/pekistir/karisik" data-test="karisik-dugme"><span>Karışık turu başlat · <b data-test="tur-sayi">${karisik.toplam}</b> kart</span><small data-test="tur-alt">${kacis(turAltYazisi(karisik))}</small></a>
+      <div class="hedef-sec"><span class="etiket" id="hedef-etiket">Günlük hedef</span><div class="secim-hap" role="group" aria-labelledby="hedef-etiket">${hedefler
+        .map((n) => `<button type="button" data-gunluk-hedef="${n}" aria-pressed="${n === hedef}">${n}</button>`)
+        .join('')}</div></div>
+    </section>`;
+}
+
+function donemSatiri(a, turYazi, ist) {
+  const k = seviyeKaydi(d.ilerleme, a.ad);
+  return `<li><a class="satir donem-satir" href="#/pekistir/donem/${encodeURIComponent(a.ad)}"><span class="metin"><b>${kacis(a.ad)} ${akimNoktasi(a.ad)}</b><span>${a.acikSayisi} sanatçı · ${turYazi(turBilgisi('donem', a.ad))}</span>${seviyeIziHtml(k)}</span><span class="donem-sag">${seviyeRozeti(a.ad)}${
+    ist.oran === null ? '' : `<small class="donem-oran">%${Math.round(100 * ist.oran)} doğru</small>`
+  }</span>${ikon('ileri', 20, 1.4)}</a></li>`;
+}
+
 export function pekistirMenusu() {
   const durumlar = akimDurumlari(d.akimlar, d.sanatcilar, islenen()).filter((a) => a.acik);
   // her satırda o turun kart sayısı (D1): turu açınca sayaç aynı sayıyı gösterir
   const turYazi = (t) => `${t.toplam} kart${t.tekrar ? ` · ${t.tekrar} tekrar` : ''}`;
   const karisik = turBilgisi('karisik');
+  const acik = acikListe();
+  const b = bugun();
+  const istler = new Map(durumlar.map((a) => [a.ad, akimIstatistigi(a.ad, acik, d.ilerleme.skorlar, b)]));
+  const sira = d.pekSira || 'sira';
+  const sirali = durumlar.slice();
+  if (sira === 'tekrar') sirali.sort((x, y) => istler.get(y.ad).vade - istler.get(x.ad).vade);
+  if (sira === 'zayif')
+    sirali.sort((x, y) => {
+      const ox = istler.get(x.ad).oran;
+      const oy = istler.get(y.ad).oran;
+      return seviyeKaydi(d.ilerleme, x.ad).s - seviyeKaydi(d.ilerleme, y.ad).s || (ox ?? 2) - (oy ?? 2);
+    });
   gununRengi();
   ciz(`${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}
     ${devamKarti()}
     ${
       durumlar.length
-        ? `<a class="dugme vurgu karisik-dugme" href="#/pekistir/karisik" data-test="karisik-dugme"><span>Pekiştir · Karışık · <b data-test="tur-sayi">${karisik.toplam}</b> kart</span><small data-test="tur-alt">${kacis(turAltYazisi(karisik))}</small></a>
+        ? `${turSahnesi(karisik)}
     ${hatalarSatiri()}
+    <section class="bolum">${etiket('Hafıza merdiveni')}
+    ${merdivenHtml(kutuDagilimi(acik, d.ilerleme.skorlar))}</section>
     <section class="bolum">${etiket('Döneme göre')}
     <p class="kucuk ikincil" style="margin:0">${seviyeAciklamasi()}</p>
+    <div class="secim-hap donem-sira" role="group" aria-label="Dönemleri sırala">${DONEM_SIRALARI.map(([id, ad]) => `<button type="button" data-pek-sira="${id}" aria-pressed="${sira === id}">${ad}</button>`).join('')}</div>
     <ul class="liste">
-      <li><a class="satir" href="#/pekistir/donem/hepsi"><span class="metin"><b>Hepsi, dönem sırasıyla</b><span>${acikListe().length} sanatçı · ${turYazi(turBilgisi('donem', 'hepsi'))}</span></span>${ikon('ileri', 20, 1.4)}</a></li>
-      ${durumlar.map((a) => `<li><a class="satir" href="#/pekistir/donem/${encodeURIComponent(a.ad)}"><span class="metin"><b>${kacis(a.ad)} ${akimNoktasi(a.ad)}</b><span>${a.acikSayisi} sanatçı · ${turYazi(turBilgisi('donem', a.ad))}</span></span>${seviyeRozeti(a.ad)}${ikon('ileri', 20, 1.4)}</a></li>`).join('')}
+      <li><a class="satir" href="#/pekistir/donem/hepsi"><span class="metin"><b>Hepsi, dönem sırasıyla</b><span>${acik.length} sanatçı · ${turYazi(turBilgisi('donem', 'hepsi'))}</span></span>${ikon('ileri', 20, 1.4)}</a></li>
+      ${sirali.map((a) => donemSatiri(a, turYazi, istler.get(a.ad))).join('')}
     </ul></section>`
         : bosAcik()
     }`);
+  kucukKareleriDoldur();
+}
+
+// Sıralama ve hedef değişince menü yerinde yeniden çizilir; kaydırma yeri korunur
+function menuyuYenile() {
+  const y = window.scrollY;
+  pekistirMenusu();
+  window.scrollTo(0, y);
 }
 
 // Ö5 · Hatalarım: son 7 günde yanlış yapılan sanatçılar ve karıştırılan ikililer (yoksa satır görünmez)
@@ -1205,6 +1281,24 @@ export function olaylariBagla() {
     if (p) {
       e.preventDefault();
       ipucuCevir(p);
+    }
+  });
+
+  ekran.addEventListener('click', (e) => {
+    const ps = e.target.closest('[data-pek-sira]');
+    if (ps) {
+      d.pekSira = ps.dataset.pekSira;
+      menuyuYenile();
+      ekran.querySelector(`[data-pek-sira="${ps.dataset.pekSira}"]`)?.focus({ preventScroll: true });
+      return;
+    }
+    const gh = e.target.closest('[data-gunluk-hedef]');
+    if (gh) {
+      d.ilerleme.ayarlar.gunlukKart = Math.min(100, Math.max(5, Number(gh.dataset.gunlukHedef)));
+      kaydet();
+      menuyuYenile();
+      ekran.querySelector(`[data-gunluk-hedef="${gh.dataset.gunlukHedef}"]`)?.focus({ preventScroll: true });
+      return;
     }
   });
 
