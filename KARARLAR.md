@@ -1047,3 +1047,8 @@ Emre: "pekiştir sekmesinde yine rengi neon sarı". Sebep bir gerileme değil: v
 1. Emre'nin isteği: Konular listesi yazı yazı değil; her konu başlığı ve o konunun en ünlü resmiyle bir kart, dokununca konunun sayfası (hikâye ve öbür resimler). Düzeni o seçti: iki sütun, resim üstte (4:5, kırpılmış), ad altında; Eski Ahit · Yeni Ahit · Mitoloji başlıkları kalır. Kartta özet ve eser sayısı yok; ikisi konu sayfasında.
 2. "En ünlü": konunun görseli olan eserleri arasında Wikipedia'da maddesi olan dil sayısı (`sl`) en büyük olan; eşitse kurs eseri, o da eşitse listedeki ilk (`kapakSec`, js/ikonografi.js, birim testli). "Görsel kötü" denen görsel kapakta da kullanılmaz.
 3. Sanatçıların eser listeleri sayfa açılınca bir kez yüklenir; kapaklar tembel yüklenir.
+
+## İş 26 · v0 önizlemesi için `npm run dev` (2026-10-24)
+
+1. Emre projeyi v0'a bağladı; v0 önizleme için package.json'da `dev` betiği arıyor ("No Dev Script Found"). `npm run dev` = `node scripts/sunucu.mjs --sw-yok`: uygulamayı yine /sanat-atlasi/ altında sunar, portu `PORT` ortam değişkeninden alır.
+2. `--sw-yok`: sw.js 404 döner, service worker kurulmaz. Uygulama kabuğu önbellekten (cache-first) geldiği için, aksi hâlde v0'ın yaptığı değişiklikler önizlemede sürüm değişene kadar görünmezdi. Uygulamanın kendisi ve yayın değişmedi; testler ve `npm run serve` eskisi gibi service worker'lı.
