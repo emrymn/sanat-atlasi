@@ -78,24 +78,25 @@ export async function basyapitListesi() {
     if (l.length) gruplar.push({ a, l });
   }
   ciz(`${gozAtUst('basyapitlar')}
-    <p class="bolum-aciklama">${liste.length} yakın okuma: her eserde ne görüldüğü, kompozisyon, anlam ve önemi. Zaman sırasıyla.</p>
+    <p class="bolum-aciklama">${liste.length} yakın okuma: her eserde ne görüldüğü, kompozisyon, anlam ve önemi.</p>
     ${gruplar
       .map(
-        ({ a, l }) => `<h2 class="etiket bolum-baslik">${akimNoktasi(a.ad)}${kacis(a.ad)}</h2>
-      <ul class="liste" data-test="basyapit-listesi">${l
-        .map((b) => {
+        ({ a, l }, gi) => `<section class="vitrin" style="--akim:${akimRenk(a.ad)};--g:${gi}">
+      <h2 class="vitrin-bas"><span class="vitrin-ad">${kacis(a.ad)}</span><span class="vitrin-say">${l.length} eser</span></h2>
+      <ul class="vitrin-serit" data-test="basyapit-listesi">${l
+        .map((b, i) => {
           const s = d.harita.get(b.sanatci);
-          const kilit = k.has(s.konu) ? '' : ' <span class="rozet">henüz kursta yok</span>';
-          return `<li><a class="satir" href="${basyapitAdresi(b.anahtar)}"><span class="kucuk-kare" data-basyapit-kucuk="${kacis(b.anahtar)}"></span><span class="metin"><b>${kacis(b.baslik)}${kilit}</b><span>${kacis(s.ad)}${b.tarih ? ` · ${kacis(b.tarih)}` : ''}</span></span>${ikon('ileri', 20, 1.4)}</a></li>`;
+          const kilit = k.has(s.konu) ? '' : '<span class="vitrin-kilit">henüz kursta yok</span>';
+          return `<li style="--i:${i}"><a class="vitrin-kart" href="${basyapitAdresi(b.anahtar)}"><span class="vitrin-resim" data-basyapit-kucuk="${kacis(b.anahtar)}"></span><span class="vitrin-yazi">${kilit}<b>${kacis(b.baslik)}</b><span>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}${b.tarih ? ` · ${kacis(b.tarih)}` : ''}</span></span></a></li>`;
         })
-        .join('')}</ul>`,
+        .join('')}</ul></section>`,
       )
       .join('')}`);
   for (const el of ekran.querySelectorAll('[data-basyapit-kucuk]')) {
     const b = basyapitBul(liste, el.dataset.basyapitKucuk);
     sanatciEserleri(d.harita.get(b.sanatci)).then((eserler) => {
       const e = eserEslestir(eserler, b);
-      if (e && el.isConnected) el.innerHTML = kucukGorsel(e, 400);
+      if (e && el.isConnected) el.innerHTML = kucukGorsel(e, 500);
     });
   }
 }
@@ -159,11 +160,11 @@ export async function konuListesi() {
     <p class="bolum-aciklama">Resimlerde en sık işlenen ${liste.length} hikâye.</p>
     ${gruplar
       .map(
-        ({ t, l }) => `<h2 class="etiket bolum-baslik">${kacis(TUR_AD[t])}</h2>
+        ({ t, l }) => `<h2 class="konu-grup-bas"><span>${kacis(TUR_AD[t])}</span><small>${l.length}</small></h2>
       <ul class="konu-izgara" data-test="konu-listesi">${l
         .map(
-          (k) =>
-            `<li><a class="konu-kart" href="#/konu/${encodeURIComponent(k.id)}" data-konu-kart="${kacis(k.id)}"><span class="konu-kapak" data-konu-kapak></span><b>${kacis(k.ad)}</b></a></li>`,
+          (k, i) =>
+            `<li style="--i:${i % 8}"><a class="konu-kart" href="#/konu/${encodeURIComponent(k.id)}" data-konu-kart="${kacis(k.id)}"><span class="konu-kapak" data-konu-kapak></span><span class="konu-kart-yazi"><b>${kacis(k.ad)}</b><small>${k.eserler.length} eser</small></span></a></li>`,
         )
         .join('')}</ul>`,
       )
@@ -258,7 +259,7 @@ export function gozAtUst(etkin) {
     <a class="arama-hapi" href="#/ara" data-test="arama-hapi">${ikon('ara', 18, 1.6)}<span>Sanatçı, eser, konu ara</span></a>
     <nav class="bolumler" aria-label="Göz At bölümleri" style="--i:${i};--j:${j}">${GOZAT_BOLUMLERI.map(
       ([id, ad, hash, test]) => `<a href="${hash}"${test ? ` data-test="${test}"` : ''}${id === etkin ? ' aria-current="page"' : ''}>${ad}</a>`,
-    ).join('')}<span class="bolumler-isaret" aria-hidden="true"></span></nav>`;
+    ).join('')}</nav>`;
 }
 
 export function gozAt() {

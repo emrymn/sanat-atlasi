@@ -192,7 +192,7 @@ function parcalar() {
         <div><dt>Kalıcı</dt><dd>${dagilim.kalici}<small>${acik.length ? ` %${Math.round((100 * dagilim.kalici) / acik.length)}` : ''}</small></dd></div>
         <div><dt>Tekrar</dt><dd>${vade}</dd></div>
       </dl>
-      ${vade ? `<a class="pk-baslat ilr-baslat" href="#/pekistir/karisik"><span class="pk-baslat-yazi"><span><b>${vade}</b> tekrar bekliyor</span><small>karışık turu başlat</small></span><span class="pk-baslat-ok" aria-hidden="true">${ikon('ileri', 22, 1.6)}</span></a>` : ''}
+      ${vade ? `<a class="pk-baslat ilr-baslat" href="#/pekistir/karisik"><span class="pk-baslat-sayi"><b>${vade}</b><small>kart</small></span><span class="pk-baslat-yazi"><span>Tekrar bekliyor</span><small>karışık turu başlat</small></span><span class="pk-baslat-ok" aria-hidden="true">${ikon('ileri', 20, 1.8)}</span></a>` : ''}
     </div>`,
     merdiven: `<section class="bolum pk-merdiven" data-parca="merdiven">
       <div class="pk-bolum-bas"><span class="etiket vurgu">Leitner kutuları</span><h2 class="pk-baslik">Hafıza merdiveni</h2></div>
@@ -223,7 +223,7 @@ function parcalar() {
   };
 }
 
-// Açık sanatçıların eserlerinden üç sütunlu, ters yönlere süzülen duvar (sonsuz döngü için her sütun iki kez)
+// Açık sanatçıların eserlerinden üç sütunlu, ters yönlere süzülen duvar (sonsuz döngü için her s��tun iki kez)
 function eserDuvari() {
   const acik = acikListe();
   let l = acik.length ? acik.slice() : d.sanatcilar.slice(0, 9);

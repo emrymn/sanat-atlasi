@@ -119,7 +119,7 @@ function turSahnesi(karisik) {
           .map(([cls, n]) => `<i class="k-${cls}" style="flex-grow:${n}"></i>`)
           .join('')}</span>
         <ul class="tur-lejant">${parca.map(([cls, n, ad]) => `<li><i class="k-${cls}" aria-hidden="true"></i>${n} ${ad}</li>`).join('')}</ul>
-        <a class="pk-baslat karisik-dugme" href="#/pekistir/karisik" data-test="karisik-dugme"><span class="pk-baslat-yazi"><span>Karışık turu başlat · <b data-test="tur-sayi">${karisik.toplam}</b> kart</span><small data-test="tur-alt">${kacis(turAltYazisi(karisik))}</small></span><span class="pk-baslat-ok" aria-hidden="true">${ikon('ileri', 22, 1.6)}</span></a>
+        <a class="pk-baslat karisik-dugme" href="#/pekistir/karisik" data-test="karisik-dugme"><span class="pk-baslat-sayi"><b data-test="tur-sayi">${karisik.toplam}</b><small>kart</small></span><span class="pk-baslat-yazi"><span>Turu başlat</span><small data-test="tur-alt">${kacis(turAltYazisi(karisik))}</small></span><span class="pk-baslat-ok" aria-hidden="true">${ikon('ileri', 20, 1.8)}</span></a>
       </div>
     </section>
     <div class="hedef-sec pk-hedef"><span class="etiket" id="hedef-etiket">Günlük hedef</span><div class="secim-hap" role="group" aria-labelledby="hedef-etiket">${hedefler
