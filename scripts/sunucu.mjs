@@ -1,6 +1,8 @@
 // Yerel deneme sunucusu. GitHub Pages proje sitesini taklit etmek için uygulamayı
 // /sanat-atlasi/ alt yolunda sunar (göreli yolların doğru çalıştığını sınar).
-// Kullanım: node scripts/sunucu.mjs [port]
+// Kullanım: node scripts/sunucu.mjs [port] [--sw-yok]
+// --sw-yok (npm run dev, v0 önizlemesi): sw.js verilmez, service worker kurulmaz; böylece her
+// değişiklik önbelleğe takılmadan hemen görünür. Port verilmezse PORT ortam değişkeni, o da yoksa 4173.
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
@@ -8,7 +10,9 @@ import { fileURLToPath } from 'node:url';
 
 const KOK = fileURLToPath(new URL('../', import.meta.url));
 const ONEK = '/sanat-atlasi/';
-const port = Number(process.argv[2] || process.env.PORT || 4173);
+const argumanlar = process.argv.slice(2);
+const SW_YOK = argumanlar.includes('--sw-yok');
+const port = Number(argumanlar.find((x) => /^\d+$/.test(x)) || process.env.PORT || 4173);
 const TURLER = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
@@ -28,6 +32,10 @@ createServer(async (istek, yanit) => {
     yanit.writeHead(302, { location: ONEK });
     return yanit.end();
   }
+  if (SW_YOK && yol === `${ONEK}sw.js`) {
+    yanit.writeHead(404, { 'content-type': 'text/plain; charset=utf-8' });
+    return yanit.end('Önizlemede service worker kapalı');
+  }
   let dosya = normalize(join(KOK, yol.slice(ONEK.length)));
   if (!dosya.startsWith(KOK) || /node_modules|\.git/.test(dosya)) {
     yanit.writeHead(403);
@@ -42,4 +50,4 @@ createServer(async (istek, yanit) => {
     yanit.writeHead(404, { 'content-type': 'text/plain; charset=utf-8' });
     yanit.end('Bulunamadı');
   }
-}).listen(port, () => console.log(`http://localhost:${port}${ONEK}`));
+}).listen(port, () => console.log(`http://localhost:${port}${ONEK}${SW_YOK ? ' (service worker kapalı)' : ''}`));
