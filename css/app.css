@@ -2872,8 +2872,14 @@ main[data-hareket='giris'][data-yon='sol'] > :not(.alt-yaprak) {
   rotate: var(--egim-eksen, 0 1 0 0deg);
 }
 /* ad katman katman havada: tablodan uzaklaştıkça daha çok kayar (alt satır az, ilk ad orta, soyad en çok);
-   soyadın gölgesi ters yöne gider, yazı ile gölgesi arasında boşluk açılır. Açılış animasyonları transform
-   kullandığından burada translate. */
+   soyadın gölgesi ters yöne gider, yazı ile gölgesi arasında boşluk açılır. Gölge text-shadow değil, soyadın bir kez
+   çizilen bulanık kopyası (::before): her karede yalnız kaydırılır, yazı yeniden çizilmez (text-shadow'u her karede
+   değiştirmek iPhone'da kasıyordu). Açılış animasyonları transform kullandığından burada translate. */
+.bugun-kahraman.egimli > img,
+.bugun-kahraman.egimli .sahne-isim :is(.meta, .ad-ilk, .ad-son),
+.bugun-kahraman.egimli .sahne-isim .ad-son::before {
+  will-change: translate;
+}
 .bugun-kahraman.egimli .sahne-isim .meta {
   translate: calc(var(--egx, 0) * 4px) calc(var(--egy, 0) * 3px);
 }
@@ -2881,11 +2887,20 @@ main[data-hareket='giris'][data-yon='sol'] > :not(.alt-yaprak) {
   translate: calc(var(--egx, 0) * 10px) calc(var(--egy, 0) * 6px);
 }
 .bugun-kahraman.egimli .sahne-isim .ad-son {
+  position: relative;
+  z-index: 0;
   translate: calc(var(--egx, 0) * 18px) calc(var(--egy, 0) * 11px);
-  text-shadow: calc(var(--egx, 0) * -10px) calc(3px + var(--egy, 0) * -7px) 12px rgba(0, 0, 0, 0.55);
 }
-.bugun-kahraman.egimli .sahne-isim .ad-ilk:not(.ad-tam) {
-  text-shadow: calc(var(--egx, 0) * -6px) calc(2px + var(--egy, 0) * -4px) 8px rgba(0, 0, 0, 0.45);
+.bugun-kahraman.egimli .sahne-isim .ad-son::before {
+  content: attr(data-ad);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  padding: inherit;
+  color: rgba(0, 0, 0, 0.5);
+  filter: blur(5px);
+  translate: calc(var(--egx, 0) * -10px) calc(3px + var(--egy, 0) * -7px);
+  pointer-events: none;
 }
 .egim-isik {
   display: none;

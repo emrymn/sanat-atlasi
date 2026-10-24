@@ -79,7 +79,7 @@ export function ayarlarSayfasi() {
       <div class="ayar"><label class="konu"><span class="metin"><b>Simge rozeti</b><small>${rozetDestekli() ? 'Ana ekrandaki Atlas simgesinde tekrarı gelen sanatçı sayısı görünür. İzin ister; sayı uygulama kapanırken yarının sayısına ayarlanır.' : 'Bu tarayıcı simge rozetini desteklemiyor (iOS 16.4+ ana ekran uygulaması gerekir).'}</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-rozet ${a.rozet ? 'checked' : ''} ${rozetDestekli() ? '' : 'disabled'} aria-label="Simge rozeti"></label>
         <p class="mesaj" id="rozet-mesaj" aria-live="polite"></p></div>
-      <div class="ayar"><label class="konu"><span class="metin"><b>Telefonu eğince tablo oynasın</b><small>${egimVar() ? 'Bugün’deki günün tablosu telefonu sağa sola, öne arkaya eğdikçe hafifçe döner, ışık üstünden kayar.' + (izinGerekli() ? ' iPhone hareket izni ister.' : '') : 'Bu tarayıcı hareket algılayıcısını desteklemiyor.'}</small></span>
+      <div class="ayar"><label class="konu"><span class="metin"><b>Telefonu eğince tablo oynasın</b><small>${egimVar() ? 'Bugün’deki günün tablosu telefonu sağa sola çevirdikçe, öne arkaya eğdikçe hafifçe döner, ışık üstünden kayar.' + (izinGerekli() ? ' iPhone hareket izni ister.' : '') : 'Bu tarayıcı hareket algılayıcısını desteklemiyor.'}</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-egim ${a.egim !== false ? 'checked' : ''} ${egimVar() ? '' : 'disabled'} aria-label="Telefonu eğince tablo oynasın"></label>
         <p class="mesaj" id="egim-mesaj" aria-live="polite"></p></div>
       <div class="ayar"><b>Görselleri çevrimdışı indir</b>

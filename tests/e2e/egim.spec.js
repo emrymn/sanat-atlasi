@@ -1,11 +1,20 @@
-// Telefonu eğince Bugün'ün tablosu hareket eder (İş 32). Eğim olayı elle gönderilir; izin isteyen tarayıcıda önce dokunulur.
+// Telefonu eğince Bugün'ün tablosu hareket eder (İş 32). Jiroskop olayı elle gönderilir; izin isteyen tarayıcıda önce dokunulur.
 import { test, expect } from '@playwright/test';
 import { agiHazirla } from './ortak.js';
 
-const egim = (page, beta, gamma) =>
-  page.evaluate(([b, g]) => window.dispatchEvent(new DeviceOrientationEvent('deviceorientation', { beta: b, gamma: g, alpha: 0 })), [beta, gamma]);
+// jiroskop: sn saniye boyunca saniyede gamma derece sağa dönüş (60 olay/sn)
+const donus = (page, gamma, sn) =>
+  page.evaluate(
+    async ([g, t]) => {
+      for (let i = 0; i < t * 60; i++) {
+        window.dispatchEvent(new DeviceMotionEvent('devicemotion', { rotationRate: { alpha: 0, beta: 0, gamma: g }, interval: 16 }));
+        await new Promise((r) => setTimeout(r, 16));
+      }
+    },
+    [gamma, sn],
+  );
 
-test('Bugün: telefon sağa eğilince tablo döner, Ayarlar’dan kapatılınca durur', async ({ page, context }) => {
+test('Bugün: telefon sağa çevrilince tablo döner, Ayarlar’dan kapatılınca durur', async ({ page, context }) => {
   await agiHazirla(context);
   await context.grantPermissions(['accelerometer', 'gyroscope']);
   await page.goto('./#/');
@@ -18,9 +27,12 @@ test('Bugün: telefon sağa eğilince tablo döner, Ayarlar’dan kapatılınca 
     await page.locator('.bugun-ust .etiket').click();
   }
   await expect(kutu).toHaveClass(/egimli/);
-  await egim(page, 40, 0); // tutuş açısı
-  await egim(page, 40, 20); // sağa eğ
+  await donus(page, 80, 0.4); // sağa çevir
   await expect.poll(() => kutu.evaluate((el) => parseFloat(getComputedStyle(el).getPropertyValue('--egx')) || 0)).toBeGreaterThan(0.5);
+  // soyadın gölgesi ayrı katman (her karede yeniden çizilen text-shadow değil)
+  const golge = await page.locator('.sahne-isim .ad-son').evaluate((el) => ({ kopya: getComputedStyle(el, '::before').content, ts: getComputedStyle(el).textShadow }));
+  expect(golge.kopya).not.toBe('none');
+  expect(golge.ts).toBe('none');
   const eksen = await kutu.evaluate((el) => el.style.getPropertyValue('--egim-eksen'));
   expect(eksen).toMatch(/deg$/);
   await expect(page.locator('.egim-isik')).toBeVisible();
