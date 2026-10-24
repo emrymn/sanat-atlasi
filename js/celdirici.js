@@ -44,8 +44,22 @@ function ortaNokta(a) {
 //          3) ±100 yıl içindeki herkes, 4) (yedek) zamanca en yakınlar.
 // 'orta':  aynı akım yok; önce komşu akımlar (±50 yıl), sonra başka akımlardan ±100 yıl içindekiler.
 // 'kolay': aynı ve komşu akımlar yok; dönem sırasında en az UZAK_FARK uzak akımlardan.
+// 'karma': 1 şaşırtmalı (aynı ya da komşu akım) + gerisi 'kolay' gibi uzak (İş 30, harita bölümleri).
 // Orta ve kolayda yeterli aday yoksa zor sıraya düşülür (her zaman 4 seçenek olsun).
 export const UZAK_FARK = 3;
+// İş 30 · aynı soyadlı akrabalar (Lorenzetti kardeşler, Orazio ve Artemisia Gentileschi …) hiçbir soruda birbirinin şıkkı olmaz.
+// Soyadı: adın son kelimesi; "the Elder/Younger", "il Giovane/Vecchio", "Jr." ve parantezler atılır.
+export function soyadi(s) {
+  const t = String((s && (s.ad_arama || s.ad)) || '')
+    .replace(/\(.*?\)/g, ' ')
+    .replace(/,.*$/, '')
+    .replace(/\b(the (elder|younger)|il (giovane|vecchio)|jr\.?|sr\.?)/gi, ' ')
+    .trim()
+    .toLocaleLowerCase('tr')
+    .split(/\s+/);
+  return t[t.length - 1] || '';
+}
+export const akrabaMi = (a, b) => !!a && !!b && a.id !== b.id && soyadi(a) !== '' && soyadi(a) === soyadi(b);
 export function sanatciCeldiricileri(hedef, { sanatcilar, akimlar, acikIdler = new Set(), rng = Math.random, adet = 3, ortaYillar = null, seviye = 'zor' }) {
   const oy = ortaYillar || akimOrtaYillari(sanatcilar);
   const hedefAralik = yasamAraligi(hedef, oy);
@@ -59,31 +73,49 @@ export function sanatciCeldiricileri(hedef, { sanatcilar, akimlar, acikIdler = n
     const k = karistir(liste, rng);
     return [...k.filter((s) => acikIdler.has(s.id)), ...k.filter((s) => !acikIdler.has(s.id))];
   };
-  const ekle = (liste) => {
+  const soyadlar = new Set([soyadi(hedef)]);
+  // gevşek: şıklar birbirinin akrabası olabilir ama hedefin akrabası asla (yalnız aday yetmezse, 4 şık olsun diye)
+  let gevsek = false;
+  const ekle = (liste, sinir = adet) => {
     for (const s of liste) {
-      if (secilen.length >= adet) return;
+      if (secilen.length >= sinir) return;
       if (kullanilan.has(s.id) || kullanilanAd.has(s.ad)) continue;
+      if (gevsek ? soyadi(s) === soyadi(hedef) : soyadlar.has(soyadi(s))) continue;
+      soyadlar.add(soyadi(s));
       kullanilan.add(s.id);
       kullanilanAd.add(s.ad);
       secilen.push(s);
     }
   };
 
+  const sira = Object.fromEntries(akimlar.map((a) => [a.ad, a.sira]));
+  const uzak = (s) => akim && sira[s.akim] !== undefined && !komsular.has(s.akim) && Math.abs(sira[s.akim] - akim.sira) >= UZAK_FARK;
   if (seviye === 'kolay') {
-    const sira = Object.fromEntries(akimlar.map((a) => [a.ad, a.sira]));
-    const uzak = (s) => akim && sira[s.akim] !== undefined && !komsular.has(s.akim) && Math.abs(sira[s.akim] - akim.sira) >= UZAK_FARK;
+    ekle(acikOnce(sanatcilar.filter(uzak)));
+    ekle(acikOnce(sanatcilar.filter((s) => s.akim !== hedef.akim && !komsular.has(s.akim))));
+  } else if (seviye === 'karma') {
+    // İş 30 · harita bölümlerinde Kolay ve Orta: biri şaşırtmalı (aynı akım, yoksa komşu akım), gerisi uzak dönemlerden
+    ekle(acikOnce(sanatcilar.filter((s) => s.akim === hedef.akim)), 1);
+    ekle(acikOnce(sanatcilar.filter((s) => komsular.has(s.akim) && ortusur(hedefAralik, yasamAraligi(s, oy), 50))), 1);
     ekle(acikOnce(sanatcilar.filter(uzak)));
     ekle(acikOnce(sanatcilar.filter((s) => s.akim !== hedef.akim && !komsular.has(s.akim))));
   } else if (seviye === 'orta') {
     ekle(acikOnce(sanatcilar.filter((s) => komsular.has(s.akim) && ortusur(hedefAralik, yasamAraligi(s, oy), 50))));
     ekle(acikOnce(sanatcilar.filter((s) => s.akim !== hedef.akim && ortusur(hedefAralik, yasamAraligi(s, oy), 100))));
   }
-  ekle(acikOnce(sanatcilar.filter((s) => s.akim === hedef.akim)));
-  ekle(acikOnce(sanatcilar.filter((s) => komsular.has(s.akim) && ortusur(hedefAralik, yasamAraligi(s, oy), 50))));
-  ekle(acikOnce(sanatcilar.filter((s) => ortusur(hedefAralik, yasamAraligi(s, oy), 100))));
+  const genel = () => {
+    ekle(acikOnce(sanatcilar.filter((s) => s.akim === hedef.akim)));
+    ekle(acikOnce(sanatcilar.filter((s) => komsular.has(s.akim) && ortusur(hedefAralik, yasamAraligi(s, oy), 50))));
+    ekle(acikOnce(sanatcilar.filter((s) => ortusur(hedefAralik, yasamAraligi(s, oy), 100))));
+    if (secilen.length < adet) {
+      const m = ortaNokta(hedefAralik);
+      ekle(sanatcilar.slice().sort((a, b) => Math.abs(ortaNokta(yasamAraligi(a, oy)) - m) - Math.abs(ortaNokta(yasamAraligi(b, oy)) - m)));
+    }
+  };
+  genel();
   if (secilen.length < adet) {
-    const m = ortaNokta(hedefAralik);
-    ekle(sanatcilar.slice().sort((a, b) => Math.abs(ortaNokta(yasamAraligi(a, oy)) - m) - Math.abs(ortaNokta(yasamAraligi(b, oy)) - m)));
+    gevsek = true;
+    genel();
   }
   return secilen;
 }

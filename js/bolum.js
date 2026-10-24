@@ -5,6 +5,7 @@
 // sonraki akımın ilk bölümü açılır. Ayrıca bölümün bütün sanatçılarının konusu kursta işlenmiş olmalı.
 // Saf mantık burada (birim testli); ekranlar js/ekranlar/harita.js ve js/ekranlar/pekistir.js.
 import { islenenKume } from './kilit.js';
+import { tanismaEserleri } from './ogrenme.js';
 
 export const BOLUM_SEVIYELER = ['kolay', 'orta', 'zor'];
 export const BOLUM_SORU = { kolay: 8, orta: 10, zor: 10 };
@@ -146,8 +147,25 @@ export function bolumSonucuIsle(ilerleme, id, seviye, dogru, toplam) {
   return { oran, gecti: oran >= BOLUM_GECME, yeniGecti: oran >= BOLUM_GECME && !gectiMi(once, seviye), yildizOnce: yildizSayisi(once), yildizSonra: yildizSayisi(sonra) };
 }
 
-export function tanitimGoruldu(ilerleme, id) {
-  ilerleme.bolumler = { ...(ilerleme.bolumler || {}), [id]: { ...bolumKaydi(ilerleme, id), tanitim: true } };
+// seviye 'kolay' → tanitim, 'orta' → tanitimOrta (İş 30: Orta'nın da kendi tanıtımı var)
+export function tanitimGoruldu(ilerleme, id, seviye = 'kolay') {
+  const alan = seviye === 'orta' ? 'tanitimOrta' : 'tanitim';
+  ilerleme.bolumler = { ...(ilerleme.bolumler || {}), [id]: { ...bolumKaydi(ilerleme, id), [alan]: true } };
+}
+
+// ---------- İş 30 · katmanlar: tanıtımda gösterilen eserler soruların ta kendisi ----------
+// Her sanatçının pekiştirme havuzu kolaydan zora sıralanır (zorluk puanı, yoksa bilinirlik):
+// Kolay = ilk BOLUM_ESER eser, Orta = sonraki BOLUM_ESER eser (sanatçının o kadar eseri yoksa Kolay'ınkiler).
+// Tanıtım bu eserleri gösterir, o seviyenin soruları yalnız bunlardan gelir. Zor sınırlanmaz (havuzun hepsi).
+export const BOLUM_ESER = 5;
+export const TANITIM_SEVIYE = { tanitim: 'kolay', 'tanitim-orta': 'orta', kolay: 'kolay', orta: 'orta' };
+export function bolumEserleri(havuz, seviye, kolaylik = null) {
+  if (seviye !== 'kolay' && seviye !== 'orta') return null;
+  const sirali = tanismaEserleri(havuz || [], null, Infinity, kolaylik);
+  const kolay = sirali.slice(0, BOLUM_ESER);
+  if (seviye === 'kolay') return kolay;
+  const orta = sirali.slice(BOLUM_ESER, 2 * BOLUM_ESER);
+  return orta.length ? orta : kolay;
 }
 
 // Yedekten / depodan gelen kaydı doğrular
@@ -159,6 +177,7 @@ export function bolumlerDogrula(v) {
     const t = {};
     for (const s of BOLUM_SEVIYELER) if (typeof k[s] === 'number' && k[s] >= 0 && k[s] <= 1) t[s] = k[s];
     if (k.tanitim === true) t.tanitim = true;
+    if (k.tanitimOrta === true) t.tanitimOrta = true;
     sonuc[id] = t;
   }
   return sonuc;

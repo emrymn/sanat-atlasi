@@ -80,7 +80,7 @@ const akimlar = Array.from({ length: 8 }, (_, i) => ({
   komsular: ['A' + (i - 1), 'A' + (i + 1)].filter((x) => x !== 'A-1' && x !== 'A8'),
 }));
 const sanatcilar = akimlar.flatMap((a, i) =>
-  [0, 1, 2].map((j) => ({ id: `${a.ad}-${j}`, ad: `${a.ad} ${j}`, akim: a.ad, dogum: 1300 + i * 40 + j * 5, olum: 1360 + i * 40 + j * 5 })),
+  [0, 1, 2].map((j) => ({ id: `${a.ad}-${j}`, ad: `Ad ${a.ad}x${j}`, akim: a.ad, dogum: 1300 + i * 40 + j * 5, olum: 1360 + i * 40 + j * 5 })),
 );
 const sira = Object.fromEntries(akimlar.map((a) => [a.ad, a.sira]));
 

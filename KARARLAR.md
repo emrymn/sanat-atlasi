@@ -1076,3 +1076,14 @@ Emre: "pekiştir sekmesinde yine rengi neon sarı". Sebep bir gerileme değil: v
 1. Sebep: kitapların yazı rengi temanın zemin rengiydi (`color: var(--bg)`); koyu temada kararmış resmin üstüne kara yazı düşüyordu. Yazı artık her temada açık renk.
 2. Emre: "arka plan daha önemli, büyük ve baskın yazılar olmasın". Numara 30 → 21 px, konu adı 14 → 13 px ve en çok 2 satır, alt satır 9 px; yazının arkasında yalnız altta yumuşak gölge, üstteki karartma azaltıldı; işlenmemiş kapaklar biraz daha aydınlık (parlaklık 0.55 → 0.68).
 3. Sanatçısı olmayan (kapağı ders eserinden gelen) konularda yanıltıcı "sanatçı yok" yazısı kaldırıldı.
+
+## İş 30 · Haritada katmanlar (2026-10-24, v1.31.0)
+
+Emre'nin istekleri ve seçimleri:
+1. **Kolay:** tanıtımda her sanatçının 5 eseri (eskiden 3) ve Kolay'ın soruları yalnız bu eserlerden; "rastgele başka eser" yok.
+2. **Orta:** ilk Orta'dan önce kendi tanıtımı (`tanitimOrta` kaydı; haritadaki pencerede "Orta tanıtımı" bağlantısı, `#/pekistir/bolum/<id>/tanitim-orta`). Kolay'da görülmeyen, orta zorlukta yeni 5 eser; Orta soruları yalnız onlardan.
+   Seçim (`bolumEserleri`, js/bolum.js): sanatçının pekiştirme havuzu kolaydan zora (zorluk puanı, yoksa Wikipedia dil sayısı) sıralanır; Kolay = ilk 5, Orta = sonraki 5. Sanatçının 5'ten fazla eseri yoksa Orta, Kolay'ın eserlerini sorar. Seçim belirlenimli: aynı bölüm her açılışta aynı eserleri tanıtır (bir görsel "kötü" işaretlenirse sıradaki gelir). Zor sınırlanmaz.
+3. **Şıklar (Kolay ve Orta):** 1 şaşırtmalı (aynı akım, yoksa komşu akım ±50 yıl) + 2 uzak dönemden (`seviye: 'karma'`, js/celdirici.js). Zor eskisi gibi (aynı akım).
+4. **Akrabalar her yerde:** aynı soyadlı sanatçılar hiçbir soruda (bütün kipler ve seviyeler, karıştırılan ikili eşi dahil) hedefin şıkkı olmaz, şıklar da birbirinin akrabası olmaz. Soyadı adın son kelimesi ("the Elder/Younger", "il Giovane" atılır). Görünür veride üç çift: Pietro/Ambrogio Lorenzetti, Orazio/Artemisia Gentileschi, Charles Le Brun/Élisabeth Vigée Le Brun (son ikisi akraba değil ama aynı soyad, kural onları da ayırır). Aday yetmezse şıklar birbirinin akrabası olabilir, hedefinki asla (4 şık kalsın diye).
+5. Bölüm turunda ayrıca yeni sanatçı tanışması açılmaz (bölümün tanıtımı zaten yapıldı).
+6. Testlerde iki eski fikstürün sanatçı adları aynı son kelimeyi paylaşıyordu ("B yakın", "D yakın"); yeni kural yüzünden benzersiz adlar verildi, testlerin anlamı aynı.

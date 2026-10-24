@@ -32,10 +32,10 @@ test('aynı akım yetmezse komşu akımdan ±50 yıl örtüşen gelir, uzak olan
   const liste = [
     s('h', 'Hedef', 'A', 1400, 1450),
     s('a1', 'A1', 'A', 1410, 1460),
-    s('b-yakin', 'B yakın', 'B', 1480, 1530), // 1450+50 = 1500 sınırı içinde başlıyor
-    s('b-uzak', 'B uzak', 'B', 1700, 1750),
-    s('d-yakin', 'D yakın', 'D', 1420, 1470), // komşu değil ama ±100 içinde
-    s('e-uzak', 'E uzak', 'E', 1900, 1950),
+    s('b-yakin', 'Byakın', 'B', 1480, 1530), // 1450+50 = 1500 sınırı içinde başlıyor
+    s('b-uzak', 'Buzak', 'B', 1700, 1750),
+    s('d-yakin', 'Dyakın', 'D', 1420, 1470), // komşu değil ama ±100 içinde
+    s('e-uzak', 'Euzak', 'E', 1900, 1950),
   ];
   const c = sanatciCeldiricileri(liste[0], { sanatcilar: liste, akimlar: AKIMLAR, rng: rastgeleYap(3) }).map((x) => x.id);
   assert.deepEqual(c, ['a1', 'b-yakin', 'd-yakin']);
