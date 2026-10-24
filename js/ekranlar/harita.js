@@ -97,6 +97,7 @@ export async function haritaSayfasi() {
               src="${resimAdresi(b.id, tur)}" style="top:${((b.ust / h) * 100).toFixed(3)}%;height:${((1 / h) * 100).toFixed(3)}%;z-index:${i + 1}">`,
         )
         .join('')}
+      <svg class="harita-filtre" width="0" height="0" aria-hidden="true" focusable="false"><filter id="durak-kontur" color-interpolation-filters="sRGB"><feComponentTransfer in="SourceAlpha" result="m"><feFuncA type="discrete" tableValues="0 0 0 1 1 1"/></feComponentTransfer><feComposite in="SourceGraphic" in2="m" operator="in" result="g"/><feMorphology in="m" operator="dilate" radius="1.4" result="k"/><feFlood flood-color="#fff4dc"/><feComposite in2="k" operator="in" result="krem"/><feMorphology in="m" operator="dilate" radius="2.4" result="d"/><feFlood flood-color="#24170c"/><feComposite in2="d" operator="in" result="koyu"/><feMerge><feMergeNode in="koyu"/><feMergeNode in="krem"/><feMergeNode in="g"/></feMerge></filter></svg>
       <div class="harita-katman">${katman}</div>
     </div>
     ${simdiki ? `<button type="button" class="harita-konum" data-harita-konum data-test="harita-konum" hidden><span class="harita-konum-nokta" aria-hidden="true"></span>Buradasın<span class="harita-konum-ok" aria-hidden="true">${ikon('ileri', 14, 2)}</span></button>` : ''}

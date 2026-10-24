@@ -8770,3 +8770,63 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
   .hp-kapak-yan { animation: none; opacity: 1; }
   .hp-kapak-toz { display: none; }
 }
+
+/* ===== Harita sembolleri: kalabalık resimden ayrışsın — krem + koyu mürekkep konturu, arkada parşömen halesi ===== */
+.harita-durak { scale: 1.14; }
+.harita-durak::before,
+.harita-durak.kilit::before,
+.harita-durak.acik::before,
+.harita-durak.simdiki::before {
+  content: none;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 96%;
+  height: auto;
+  aspect-ratio: 1;
+  transform: none;
+  translate: -50% -50%;
+  box-shadow: none;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 244, 220, 0.78), rgba(255, 236, 200, 0.42) 58%, rgba(255, 236, 200, 0) 100%);
+  pointer-events: none;
+  z-index: -2;
+}
+.harita-durak.kilit::before {
+  background: radial-gradient(closest-side, rgba(240, 232, 218, 0.62), rgba(240, 232, 218, 0.3) 58%, rgba(240, 232, 218, 0) 100%);
+}
+.harita-durak.simdiki::before {
+  width: 118%;
+  background: radial-gradient(closest-side, rgba(255, 238, 190, 0.95), rgba(255, 214, 130, 0.5) 55%, rgba(255, 214, 130, 0) 100%);
+}
+.harita-filtre { position: absolute; width: 0; height: 0; overflow: hidden; }
+.harita-durak img,
+.harita-durak.acik img {
+  filter: saturate(1.2) contrast(1.06) url(#durak-kontur) drop-shadow(0 4px 4px rgba(20, 12, 6, 0.45));
+}
+.harita-durak.simdiki img {
+  filter: saturate(1.3) contrast(1.08) url(#durak-kontur) drop-shadow(0 0 9px rgba(255, 206, 110, 0.95));
+}
+.harita-durak.kilit img {
+  filter: grayscale(0.75) sepia(0.3) brightness(1.04) url(#durak-kontur) drop-shadow(0 0 0 rgba(255, 214, 140, 0));
+}
+@keyframes kilit-uyan {
+  0%, 100% {
+    transform: translateY(0);
+    filter: grayscale(0.75) sepia(0.3) brightness(1.04) url(#durak-kontur) drop-shadow(0 0 0 rgba(255, 214, 140, 0));
+  }
+  50% {
+    transform: translateY(-4%);
+    filter: grayscale(0.15) sepia(0.15) brightness(1.1) url(#durak-kontur) drop-shadow(0 0 9px rgba(255, 214, 140, 0.9));
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .harita-durak::before,
+  .harita-durak.kilit::before { animation: durak-hale 3.6s ease-in-out infinite; }
+  .harita-durak.simdiki::before { animation-duration: 1.8s; }
+}
+@keyframes durak-hale {
+  0%, 100% { scale: 0.92; opacity: 0.8; }
+  50% { scale: 1.06; opacity: 1; }
+}
