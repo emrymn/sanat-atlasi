@@ -12,6 +12,11 @@ import { takvimHtml, egriHtml, koleksiyonBagi } from './calisma.js';
 import { d, etiket, islenen, bugun, akimNoktasi, ust, gununRengi, ciz, ekran, kucukKareleriDoldur, kaydet, bildir, acikListe, akimRenk, tabloDugme } from './ortak.js';
 import { kutuDagilimi, akimIstatistigi, seviyeIziHtml, halkaHtml, kutuPipHtml } from './pano.js';
 import { hatalarBilgisi } from './pekistir.js';
+import { gorselUrl, gorselYedek } from '../gorsel.js';
+
+// İş 28: kitaplıkta yalnız kapağı (resmi) olan kurs konuları; heykel, mimari ve eseri olmayan dersler gösterilmez
+const kurs = () => d.kursKonulari || d.konular;
+const islenmis = (k) => kurs().filter((x) => k.has(x.no)).length;
 
 // ---------- İlerleme ----------
 // Sık karıştırılan ikililer: yan yana karşılaştırmaya bağlantı
@@ -38,7 +43,7 @@ function bolumAdi(bl) {
 
 // Sıradaki konu (D6): kurs sırasında işlenmemiş ilk konu; dokununca "işlendi" olur
 function siradakiKonuHtml(k, sayi) {
-  const x = d.konular.find((y) => !k.has(y.no));
+  const x = kurs().find((y) => !k.has(y.no));
   if (!x) return '<p class="siradaki-bitti" data-test="siradaki-konu">Bütün konular işlendi.</p>';
   const n = sayi(x.no);
   const onizleme = konuSanatcilari(x.no).slice(0, 4);
@@ -71,7 +76,7 @@ function konuKarti(x, k) {
   const l = konuSanatcilari(x.no);
   const acik = k.has(x.no);
   // önceki konulardan işlenmemiş varsa tek dokunuşla hepsi (çok konuyu tek tek açmak uzun sürüyordu)
-  const oncekiAcik = d.konular.some((y) => y.no <= x.no && !k.has(y.no));
+  const oncekiAcik = kurs().some((y) => y.no <= x.no && !k.has(y.no));
   const portre = (s, i) =>
     acik
       ? `<a class="konu-portre" href="#/sanatci/${encodeURIComponent(s.id)}" style="--i:${i}"><span class="konu-portre-resim" data-kucuk="${kacis(s.id)}"></span><span>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}</span></a>`
@@ -87,16 +92,26 @@ function konuKarti(x, k) {
       ${oncekiAcik ? `<button class="konu-kadar" type="button" data-konu-kadar="${x.no}" data-test="konu-kadar">1–${x.no} arası hepsi işlendi</button>` : ''}
     </div>`;
 }
+// Kapak: konunun sanatçısının en bilinen eseri; sanatçısı yoksa o derste işlenen resim (js/kurs.js)
+function kitapKapagi(x, l) {
+  const kp = x.kapak;
+  if (kp && kp.dosya) {
+    const g = { k: 'commons', d: kp.dosya };
+    return `<img loading="lazy" decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}">`;
+  }
+  const id = l.length ? l[0].id : kp && kp.sanatci;
+  return id ? `<span data-kucuk="${kacis(id)}"></span>` : '';
+}
 function kursBolumleriHtml(bolumler, k) {
-  const siradaki = (d.konular.find((x) => !k.has(x.no)) || {}).no;
+  const siradaki = (kurs().find((x) => !k.has(x.no)) || {}).no;
   const durum = (x) => (k.has(x.no) ? ' islendi' : x.no === siradaki ? ' sira' : '');
   // her konu bir tablo: kapağı konunun ilk sanatçısının en bilinen eseri; işlenmemişler soluk ve kilitli
   const kitap = (x, i) => {
     const l = konuSanatcilari(x.no);
     const isl = k.has(x.no);
     const isaret = isl ? ikon('dogru', 14, 2) : x.no === siradaki ? '' : ikon('kilit', 13, 1.8);
-    return `<button type="button" class="kitap${durum(x)}${d.kursSecili === x.no ? ' secili' : ''}${l.length ? '' : ' bos'}" data-kurs-konu="${x.no}" style="--i:${i}" aria-label="Konu ${x.no}: ${kacis(konuBasligi(x))}${isl ? ', işlendi' : ''}" aria-pressed="${d.kursSecili === x.no}">
-      <span class="kitap-resim" aria-hidden="true">${l.length ? `<span data-kucuk="${kacis(l[0].id)}"></span>` : ''}</span>
+    return `<button type="button" class="kitap${durum(x)}${d.kursSecili === x.no ? ' secili' : ''}${l.length || x.kapak ? '' : ' bos'}" data-kurs-konu="${x.no}" style="--i:${i}" aria-label="Konu ${x.no}: ${kacis(konuBasligi(x))}${isl ? ', işlendi' : ''}" aria-pressed="${d.kursSecili === x.no}">
+      <span class="kitap-resim" aria-hidden="true">${kitapKapagi(x, l)}</span>
       <span class="kitap-no">${x.no}</span>
       ${isaret ? `<span class="kitap-isaret" aria-hidden="true">${isaret}</span>` : ''}
       ${x.no === siradaki ? '<span class="kitap-sira-etiket">Sıradaki</span>' : ''}
@@ -105,7 +120,7 @@ function kursBolumleriHtml(bolumler, k) {
     </button>`;
   };
   // bölümler galeri salonları: her biri yatay kayan bir duvar; seçili konunun kartı o salonun altında
-  const secili = d.konular.find((x) => x.no === d.kursSecili);
+  const secili = kurs().find((x) => x.no === d.kursSecili);
   let i = 0;
   // İşaretle kipinde kitaba dokunmak konuyu doğrudan işlendi / işlenmedi yapar (kart açılmaz)
   const kip = (ad, deger, yazi) =>
@@ -173,19 +188,19 @@ function parcalar() {
     .slice(0, 10);
   // konular bölümlere göre
   const bolumler = [];
-  for (const konu of d.konular) {
+  for (const konu of kurs()) {
     let bl = bolumler.find((x) => x.bolum === konu.bolum);
     if (!bl) bolumler.push((bl = { bolum: konu.bolum, ad: konu.bolum_ad, konular: [] }));
     bl.konular.push(konu);
   }
   const sayi = (no) => d.sanatcilar.filter((s) => s.konu === no).length;
   const vade = acikSanatcilar(d.sanatcilar, k).filter((s) => kategori(d.ilerleme.skorlar, s.id, 'karisik', b) === 0).length;
-  const yuzde = Math.round((100 * k.size) / (d.konular.length || 1));
+  const yuzde = Math.round((100 * islenmis(k)) / (kurs().length || 1));
   return {
-    ozet: `<p class="ozet-satir ekran-disi" data-parca="ozet">${k.size} / ${d.konular.length} konu işlendi · ${acikSanatcilar(d.sanatcilar, k).length} sanatçı açık · ${vade} tekrar bekliyor</p>`,
+    ozet: `<p class="ozet-satir ekran-disi" data-parca="ozet">${islenmis(k)} / ${kurs().length} konu işlendi · ${acikSanatcilar(d.sanatcilar, k).length} sanatçı açık · ${vade} tekrar bekliyor</p>`,
     pano: `<div class="ilr-govde" data-parca="pano" aria-label="Genel durum">
       <span class="etiket vurgu">Kursun neresindesin</span>
-      <p class="ilr-buyuk"><b>${k.size}</b><span>/ ${d.konular.length}<small>konu işlendi</small></span></p>
+      <p class="ilr-buyuk"><b>${islenmis(k)}</b><span>/ ${kurs().length}<small>konu işlendi</small></span></p>
       <span class="ilr-cizgi" role="img" aria-label="%${yuzde} tamamlandı"><i style="--y:${yuzde}%"></i></span>
       <dl class="ilr-sayilar">
         <div><dt>Sanatçı</dt><dd>${acik.length}<small>/${d.sanatcilar.length}</small></dd></div>

@@ -83,7 +83,8 @@ test('D6: İlerleme Türkçe konu adları ve Sıradaki konu; İşlendi yap bir s
   const { no, sonraki } = await page.evaluate(() => {
     const d = window.__atlas;
     const isl = new Set(d.ilerleme.islenen);
-    const bekleyen = d.konular.filter((k) => !isl.has(k.no));
+    // İş 28: İlerleme yalnız kapağı olan kurs konularını gösterir
+    const bekleyen = d.kursKonulari.filter((k) => !isl.has(k.no));
     return { no: bekleyen[0].no, sonraki: bekleyen[1].no };
   });
   await expect(kart.locator('.siradaki-no')).toHaveText(String(no));
@@ -133,7 +134,8 @@ test('İlerleme kitaplığı: her konu bir kitap, sıradaki çekili; kartta işl
   const { konuSayisi, islenen, sira } = await page.evaluate(() => {
     const d = window.__atlas;
     const isl = new Set(d.ilerleme.islenen);
-    return { konuSayisi: d.konular.length, islenen: [...isl], sira: d.konular.find((k) => !isl.has(k.no)).no };
+    const kk = d.kursKonulari;
+    return { konuSayisi: kk.length, islenen: kk.filter((k) => isl.has(k.no)).map((k) => k.no), sira: kk.find((k) => !isl.has(k.no)).no };
   });
   await expect(page.locator('.kitap')).toHaveCount(konuSayisi);
   await expect(page.locator('.destek')).toHaveCount(9);
