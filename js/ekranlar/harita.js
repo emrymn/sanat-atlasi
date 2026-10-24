@@ -238,12 +238,13 @@ async function kapakDoldur(el) {
     adaylar.map(async (e) => {
       kalip.innerHTML = kucukGorsel(e, 640);
       const src = kalip.content.querySelector('img')?.getAttribute('src');
-      return { html: kalip.innerHTML, oran: src ? await gorselBoyutu(src) : 0 };
+      return { html: kalip.innerHTML, oran: src ? await gorselBoyutu(src) : 0, ad: e.baslik || e.ad || '' };
     }),
   );
   const en = olcumler.filter((o) => o.oran).sort((a, b) => b.oran - a.oran)[0];
   if (!en || !el.isConnected) return;
-  el.innerHTML = `<span class="hp-kapak-zemin">${en.html}</span><span class="hp-kapak-eser">${en.html}</span>`;
+  const ad = en.ad;
+  el.innerHTML = `<span class="hp-kapak-eser">${en.html}</span>${ad ? `<span class="hp-kapak-kunye">${kacis(ad)}</span>` : ''}`;
   el.classList.add('dolu');
 }
 

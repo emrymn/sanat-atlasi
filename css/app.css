@@ -8138,33 +8138,32 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .harita-pencere-ic > :not(.hp-kapak):not(.harita-pencere-kapat):not(.harita-pencere-sanatcilar) {
   margin-inline: 18px;
 }
+/* Kapak: galeri duvarı — eser yaldız çerçevede, üstten spot ışığıyla asılı; altında pirinç künye */
 .hp-kapak {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 168px;
-  margin-bottom: -22px;
+  gap: 12px;
+  height: 196px;
+  margin-bottom: 18px;
+  padding: 20px 48px 0;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.04);
-}
-.hp-kapak-zemin {
-  position: absolute;
-  inset: -24px;
-}
-.hp-kapak-zemin img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: blur(18px) saturate(1.2) brightness(0.55);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background:
+    radial-gradient(ellipse 60% 85% at 50% -12%, rgba(255, 236, 200, 0.2), transparent 70%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(0, 0, 0, 0.25));
 }
 .hp-kapak-eser {
-  position: relative;
-  z-index: 1;
   display: flex;
-  height: 100%;
-  max-width: calc(100% - 48px);
-  padding: 16px 0 34px;
+  justify-content: center;
+  min-height: 0;
+  flex: 1;
+  max-width: 100%;
+  opacity: 0;
+  transform: translateY(-6px);
+  animation: hp-as 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) 0.1s forwards;
 }
 .hp-kapak-eser img {
   display: block;
@@ -8172,17 +8171,36 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   max-height: 100%;
   width: auto;
   height: auto;
-  margin: auto;
   object-fit: contain;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14), 0 14px 30px -8px rgba(0, 0, 0, 0.8);
+  border: 4px solid var(--hp-yaldiz);
+  outline: 1px solid rgba(0, 0, 0, 0.6);
+  outline-offset: 0;
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 230, 170, 0.35),
+    0 18px 22px -12px rgba(0, 0, 0, 0.9);
 }
-.hp-kapak::after {
-  content: '';
-  position: absolute;
-  inset: auto 0 0;
-  height: 48px;
-  z-index: 2;
-  background: linear-gradient(180deg, rgba(var(--bg-rgb), 0) 0%, rgba(var(--bg-rgb), 0.98) 100%);
+.hp-kapak-kunye {
+  flex-shrink: 0;
+  max-width: 100%;
+  margin-bottom: 14px;
+  padding: 4px 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #d8b866, #a8843a);
+  color: #2a1f0c;
+  font: 600 9.5px/1.2 var(--sans);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.35) inset, 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+@keyframes hp-as {
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hp-kapak-eser { animation: none; opacity: 1; transform: none; }
 }
 .harita-pencere-ic:not(:has(.hp-kapak)) .hp-baslik,
 .harita-pencere-ic.motif > .etiket { margin-top: 20px; }
