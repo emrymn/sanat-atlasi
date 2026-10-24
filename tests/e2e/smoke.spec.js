@@ -9,7 +9,7 @@ test('ana sayfa → Göz At → sanatçı → eser tam ekran', async ({ page }) 
   await page.goto('./');
   await expect(page.getByRole('heading', { name: 'Sanat Atlası' })).toBeVisible();
   await expect(page.getByText('açık sanatçı')).toBeVisible();
-  await page.getByRole('link', { name: /Göz At/ }).click();
+  await page.locator('#sekmeler a[data-sekme="gozat"]').click();
   await expect(page.getByRole('heading', { name: 'Göz At' })).toBeVisible();
   // kilitli akım gri ve "Konu N'de açılır" yazar
   await expect(page.getByText(/Konu \d+'(de|da|te|ta) açılır/).first()).toBeVisible();

@@ -162,7 +162,7 @@ export function anaSayfa() {
   const gs = d.harita.get(gununId());
   const tarih = new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' });
   const tur = turBilgisi('karisik');
-  const tekrar = `${kacis(tarih)} · ${tur.tekrar ? `${tur.tekrar} tekrar` : 'tekrar yok'}`;
+  const tekrar = kacis(tarih);
   const son = (d.ilerleme.sonCalisilanlar || []).map((id) => d.harita.get(id)).filter(Boolean);
   const devam = devamKarti();
   // en alt satırlar sahne varsa mozaiğin içinde kalır: tablonun renkleri sayfanın sonuna kadar sürer

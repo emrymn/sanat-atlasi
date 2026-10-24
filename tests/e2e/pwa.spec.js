@@ -41,7 +41,7 @@ test('service worker kaydolur ve ilk açılıştan sonra çevrimdışı çalış
   await expect(page.getByRole('heading', { name: 'Sanat Atlası' })).toBeVisible();
   await page.locator('[data-test="pekistir"]').click();
   await expect(page.locator('[data-test="sanatci-secenekleri"] button')).toHaveCount(4);
-  await page.getByRole('link', { name: /Göz At/ }).count(); // gezinme hatasız
+  await page.locator('#sekmeler a[data-sekme="gozat"]').count(); // gezinme hatasız
   await context.setOffline(false);
 });
 

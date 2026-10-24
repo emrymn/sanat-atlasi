@@ -317,11 +317,11 @@ export function temaUygula() {
 // ---------- sekme çubuğu ----------
 // İş 24: Göz At haritaya katıldı; büyük Harita sekmesi ikinci sırada
 const SEKMELER = [
-  ['bugun', 'Bugün', '#/'],
-  ['harita', 'Harita', '#/harita'],
-  ['gozat', 'Göz At', '#/gozat'],
-  ['pekistir', 'Pekiştir', '#/pekistir'],
-  ['ilerleme', 'İlerleme', '#/ilerleme'],
+  ['bugun', 'Tuval', '#/'],
+  ['harita', 'Yolculuk', '#/harita'],
+  ['gozat', 'Galeri', '#/gozat'],
+  ['pekistir', 'Atölye', '#/pekistir'],
+  ['ilerleme', 'Defter', '#/ilerleme'],
 ];
 
 // etkin: sekme kimliği; null → sekme çubuğu yok (pekiştirme kartı).
@@ -337,7 +337,7 @@ export function sekmeleriCiz(etkin) {
   if (!nav.querySelector('.sekme-isaret')) {
     nav.innerHTML =
       '<span class="sekme-isaret" aria-hidden="true"></span>' +
-      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}">${ikon(id, 22, 1.5)}<span>${ad}</span></a>`).join('');
+      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}">${ikon('sekme-' + id, 22, 1.5)}<span>${ad}</span></a>`).join('');
     sekmeSurukle(nav);
   }
   const i = SEKMELER.findIndex(([id]) => id === etkin);

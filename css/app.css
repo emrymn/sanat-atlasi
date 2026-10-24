@@ -8574,6 +8574,61 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
   opacity: 0.9;
 }
 
+/* Fırça düğmesi: sakin, yumuşak yazı — büyük harf ve geniş aralık yok */
+.siradaki-dugme,
+.siradaki.resimli .siradaki-dugme {
+  font: 500 15px/1 var(--sans);
+  letter-spacing: 0.01em;
+  text-transform: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Bugün: yalnızca tarih, çerçevesiz; resmin açık tonunda yumuşak yazı */
+.bugun-ust .hap {
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 500;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55);
+}
+
+/* Künye: pirinç şerit yerine müze duvar kartı — krem kâğıt, italik eser adı, ince iç çizgi */
+.hp-kapak-kunye {
+  position: relative;
+  z-index: 3;
+  padding: 5px 14px 6px;
+  border-radius: 1px;
+  background: rgba(244, 238, 226, 0.94);
+  color: #2b2420;
+  font: italic 400 12px/1.2 var(--serif);
+  letter-spacing: 0.01em;
+  text-transform: none;
+  box-shadow:
+    inset 0 0 0 3px rgba(244, 238, 226, 0.94),
+    inset 0 0 0 4px rgba(43, 36, 32, 0.22),
+    0 6px 12px -6px rgba(0, 0, 0, 0.7);
+}
+
+/* Kilitli duraklar: sembolün tam ortasında küçük, nefes alan bir hale */
+.harita-durak.kilit::after {
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  width: 58%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid rgba(255, 236, 196, 0.75);
+  box-shadow: 0 0 10px rgba(255, 214, 140, 0.45);
+}
+@keyframes kilit-taban {
+  0%, 100% { transform: translate(-50%, -50%) scale(0.85); opacity: 0.35; }
+  50% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.95; }
+}
+
 /* ===== Galeri kapağı: salon duvarı — ortada ana eser, yanlarda iki küçük eser, hareketli spot ve toz ===== */
 .hp-kapak {
   height: 212px;

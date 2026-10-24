@@ -73,6 +73,12 @@ const YOLLAR = {
   pekistir:
     '<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M22 12.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/><path d="M22 17.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>',
   ilerleme: '<path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>',
+  // sekme çubuğu: atölye nesneleri — şövale, pusula, çerçeve, palet, eskiz defteri
+  'sekme-bugun': '<rect x="5" y="3" width="14" height="10" rx="1"/><path d="M12 1.5V3"/><path d="M12 13v8"/><path d="m8.5 21 2-8"/><path d="m15.5 21-2-8"/><path d="m8 10 2.5-3 2 2 1.5-1.5L16 10"/>',
+  'sekme-harita': '<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/><path d="M12 3v1.5M12 19.5V21M3 12h1.5M19.5 12H21"/>',
+  'sekme-gozat': '<rect x="3" y="3.5" width="18" height="17" rx="1"/><rect x="6.5" y="7" width="11" height="10"/><path d="m6.5 15 3-3 2.5 2.5 2-2 3.5 3.5"/>',
+  'sekme-pekistir': '<path d="M12 3a9 9 0 1 0 0 18c1 0 1.6-.7 1.6-1.6 0-.4-.2-.8-.4-1.1-.3-.3-.5-.7-.5-1.1 0-.9.7-1.6 1.6-1.6H16a5 5 0 0 0 5-5C21 6.3 17 3 12 3z"/><circle cx="7.5" cy="11.5" r="1"/><circle cx="9.5" cy="7.5" r="1"/><circle cx="14.5" cy="7.5" r="1"/>',
+  'sekme-ilerleme': '<rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M8.5 2.5v3M12 2.5v3M15.5 2.5v3"/><path d="M8 16c1.4-3.2 2.8-3.2 3.8 0s2.6 1.2 4.2-3"/>',
   // yolculuk haritası: katlanmış harita ve üstünde yol
   harita: '<path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5"/><path d="M15 6.5V20"/>',
   gunes: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>',
