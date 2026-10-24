@@ -8613,20 +8613,30 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
     0 6px 12px -6px rgba(0, 0, 0, 0.7);
 }
 
-/* Kilitli duraklar: sembolün tam ortasında küçük, nefes alan bir hale */
+/* Halkalar sembolün ayağında (direğin dibinde) yere yatık küçük bir elips; konum JS'in ölçtüğü --ayak-x/--ayak-y */
+.harita-durak.acik::after,
+.harita-durak.simdiki::after,
 .harita-durak.kilit::after {
-  left: 50%;
-  top: 50%;
+  left: var(--ayak-x, 50%);
+  top: var(--ayak-y, 92%);
   bottom: auto;
-  width: 58%;
-  aspect-ratio: 1;
+  width: 34%;
+  aspect-ratio: 5 / 2;
   transform: translate(-50%, -50%);
-  border: 1.5px solid rgba(255, 236, 196, 0.75);
-  box-shadow: 0 0 10px rgba(255, 214, 140, 0.45);
+  border-radius: 50%;
+}
+.harita-durak.simdiki::after { width: 42%; }
+.harita-durak.kilit::after {
+  border: 1.5px solid rgba(255, 236, 196, 0.8);
+  box-shadow: 0 0 8px rgba(255, 214, 140, 0.5);
 }
 @keyframes kilit-taban {
-  0%, 100% { transform: translate(-50%, -50%) scale(0.85); opacity: 0.35; }
-  50% { transform: translate(-50%, -50%) scale(1.05); opacity: 0.95; }
+  0%, 100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.4; }
+  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+}
+@keyframes durak-halka {
+  0% { transform: translate(-50%, -50%) scale(0.6); opacity: 0.95; }
+  100% { transform: translate(-50%, -50%) scale(1.6); opacity: 0; }
 }
 
 /* ===== Galeri kapağı: salon duvarı — ortada ana eser, yanlarda iki küçük eser, hareketli spot ve toz ===== */

@@ -107,13 +107,59 @@ export async function haritaSayfasi() {
     requestAnimationFrame(() => konumaKaydir());
   }
   konumIzle();
+  for (const img of ekran.querySelectorAll('.harita-durak img')) ayagaYerlestir(img);
   if (yeniler.size) {
     d.ilerleme.haritaGorulen = gorulenDogrula([...gorulen, ...yeniler]);
     kaydet();
   }
 }
 
-// ---------- "Buradasın" ----------
+  // Sembollerin ayağı (bayrak direği, kaide…) görselden görsele değişir; halkayı tam oraya koymak için
+  // en alttaki opak satırın ortasını ölçeriz. Gölgeler yarı saydam olduğundan eşiğin altında kalır.
+  const ayakOnbellek = new Map();
+  function ayakOlc(img) {
+    const w = 96;
+    const h = Math.max(1, Math.round((img.naturalHeight / img.naturalWidth) * w));
+    const tuval = document.createElement('canvas');
+    tuval.width = w;
+    tuval.height = h;
+    const c = tuval.getContext('2d', { willReadFrequently: true });
+    c.drawImage(img, 0, 0, w, h);
+    const veri = c.getImageData(0, 0, w, h).data;
+    for (let y = h - 1; y >= 0; y--) {
+      let top = 0;
+      let say = 0;
+      for (let x = 0; x < w; x++) {
+        if (veri[(y * w + x) * 4 + 3] > 200) {
+          top += x;
+          say++;
+        }
+      }
+      if (say) return { x: ((top / say + 0.5) / w) * 100, y: ((y + 0.5) / h) * 100 };
+    }
+    return { x: 50, y: 92 };
+  }
+  function ayagaYerlestir(img) {
+    const uygula = () => {
+      if (!img.naturalWidth) return;
+      let ayak = ayakOnbellek.get(img.src);
+      if (!ayak) {
+        try {
+          ayak = ayakOlc(img);
+        } catch {
+          ayak = { x: 50, y: 92 };
+        }
+        ayakOnbellek.set(img.src, ayak);
+      }
+      const durak = img.parentElement;
+      durak.style.setProperty('--ayak-x', `${ayak.x.toFixed(1)}%`);
+      durak.style.setProperty('--ayak-y', `${ayak.y.toFixed(1)}%`);
+    };
+    if (img.complete) uygula();
+    else img.addEventListener('load', uygula, { once: true });
+  }
+
+  // ---------- "Buradasın" ----------
 function konumaKaydir(yumusak = false) {
   const el = ekran.querySelector('.harita-durak.simdiki');
   if (!el) return window.scrollTo(0, document.documentElement.scrollHeight);
