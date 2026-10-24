@@ -241,10 +241,16 @@ async function kapakDoldur(el) {
       return { html: kalip.innerHTML, oran: src ? await gorselBoyutu(src) : 0, ad: e.baslik || e.ad || '' };
     }),
   );
-  const en = olcumler.filter((o) => o.oran).sort((a, b) => b.oran - a.oran)[0];
+  const sirali = olcumler.filter((o) => o.oran).sort((a, b) => b.oran - a.oran);
+  const en = sirali[0];
   if (!en || !el.isConnected) return;
+  const yanlar = sirali.slice(1, 3);
+  const yan = (o, taraf) => (o ? `<span class="hp-kapak-yan ${taraf}">${o.html}</span>` : '');
+  const toz = Array.from({ length: 9 }, (_, i) => `<i style="--x:${(18 + ((i * 41) % 64)).toFixed(0)}%;--g:${((i * 0.83) % 6).toFixed(2)}s;--s:${(5 + (i % 4)).toFixed(0)}s"></i>`).join('');
   const ad = en.ad;
-  el.innerHTML = `<span class="hp-kapak-eser">${en.html}</span>${ad ? `<span class="hp-kapak-kunye">${kacis(ad)}</span>` : ''}`;
+  el.innerHTML = `<span class="hp-kapak-isik" aria-hidden="true"></span><span class="hp-kapak-toz" aria-hidden="true">${toz}</span>
+    <span class="hp-kapak-duvar">${yan(yanlar[0], 'sol')}<span class="hp-kapak-eser">${en.html}</span>${yan(yanlar[1], 'sag')}</span>
+    ${ad ? `<span class="hp-kapak-kunye">${kacis(ad)}</span>` : ''}`;
   el.classList.add('dolu');
 }
 
