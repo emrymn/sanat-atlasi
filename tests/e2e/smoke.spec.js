@@ -141,7 +141,8 @@ test('yalnızca resim: heykeltıraş ve mimarlar ile resimsiz akımlar görünme
   await expect(page.getByText('Antik Yunan ve Roma')).toHaveCount(0);
   await expect(page.getByText('Romanesk', { exact: true })).toHaveCount(0);
   await page.getByRole('link').filter({ hasText: 'Erken Rönesans' }).click();
-  await expect(page.getByText('Masaccio')).toBeVisible();
+  // akım sayfasındaki eser şeridi de sanatçı adını yazar ve geç yüklenir: yalnız sanatçı satırına bak
+  await expect(page.getByRole('link', { name: /^Masaccio/ })).toBeVisible();
   await expect(page.getByText('Brunelleschi')).toHaveCount(0);
   await expect(page.getByText('Donatello')).toHaveCount(0);
   // Michelangelo'nun sayfasında heykelleri yok
