@@ -168,9 +168,12 @@ function durakPenceresi(id) {
       <p class="harita-pencere-alt">Geçmek için %${Math.round(BOLUM_GECME * 100)} doğru</p>`
     : `<p class="harita-pencere-durum" data-test="harita-kilit">${kacis(kilitMetni(x, bolumler()))}</p>`;
   return `<div class="harita-pencere-ic${x.acik ? '' : ' kilitli'}" role="dialog" aria-label="${kacis(bolumAdi(x))}">
+      ${sanatcilar[0] ? `<span class="hp-kapak" aria-hidden="true" data-kucuk="${kacis(sanatcilar[0].id)}" data-genislik="640"></span>` : ''}
       <button class="harita-pencere-kapat" type="button" data-harita-kapat aria-label="Kapat">${ikon('kapat', 20, 1.7)}</button>
-      <span class="etiket">${kacis(bolge.ad)}</span>
-      <h2>${kacis(bolumAdi(x))}</h2>
+      <header class="hp-baslik">
+        <span class="etiket">${kacis(bolge.ad)}</span>
+        <h2>${kacis(bolumAdi(x))}</h2>
+      </header>
       ${govde}
       <div class="harita-pencere-sanatcilar">${sanatcilar
         .map((s, i) => {
