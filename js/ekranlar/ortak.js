@@ -295,7 +295,7 @@ export function sekmeleriCiz(etkin) {
   if (!nav.querySelector('.sekme-isaret')) {
     nav.innerHTML =
       '<span class="sekme-isaret" aria-hidden="true"></span>' +
-      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}"${id === 'harita' ? ' class="buyuk"' : ''}>${ikon(id, id === 'harita' ? 27 : 23, 1.5)}<span>${ad}</span></a>`).join('');
+      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}">${ikon(id, 22, 1.5)}<span>${ad}</span></a>`).join('');
     sekmeSurukle(nav);
   }
   const i = SEKMELER.findIndex(([id]) => id === etkin);
