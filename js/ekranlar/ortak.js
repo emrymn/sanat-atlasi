@@ -141,6 +141,20 @@ export function etiket(metin, { vurgu = false } = {}) {
   return `<span class="etiket${vurgu ? ' vurgu' : ''}">${kacis(metin)}</span>`;
 }
 
+// Tablo düğmesi: yaldız çerçeve + tuval iç yüz + pirinç müze plakası. Tur başlatan her düğme bu dili kullanır.
+// ilerleme: { yapilan, hedef } verilirse tuvalin altında günlük hedef çubuğu görünür.
+export function tabloDugme({ href, baslik, alt = '', sayi, test = '', kapakId = '', sinif = '', ilerleme = null }) {
+  const oran = ilerleme && ilerleme.hedef ? Math.min(100, Math.round((100 * ilerleme.yapilan) / ilerleme.hedef)) : null;
+  return `<a class="tablo-dugme${sinif ? ` ${sinif}` : ''}" href="${href}"${test ? ` data-test="${test}"` : ''}>
+      <span class="tablo-ic">
+        ${kapakId ? `<span class="tablo-minyatur" aria-hidden="true"><span class="kucuk-kare" data-kucuk="${kacis(kapakId)}"></span></span>` : ''}
+        <span class="tablo-yazi"><span class="tablo-baslik">${kacis(baslik)}</span>${alt ? `<small data-test="tur-alt">${kacis(alt)}</small>` : ''}</span>
+        <span class="tablo-plaka"><b data-test="tur-sayi">${sayi}</b><small>kart</small></span>
+        ${oran === null ? '' : `<span class="tablo-hedef" role="img" aria-label="Bugün ${ilerleme.yapilan} / ${ilerleme.hedef} kart"><i style="--oran:${oran}%"></i></span>`}
+      </span>
+    </a>`;
+}
+
 // Eserin adı ve tarihi: "İnci Küpeli Kız, y. 1665"
 export function eserAdi(e) {
   return `${eserBaslik(e)}${e.tarih ? `, ${e.tarih}` : ''}`;

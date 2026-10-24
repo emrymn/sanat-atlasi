@@ -65,8 +65,9 @@ import {
   cizimNo,
   guncelMi,
   kucukKareleriDoldur,
+  tabloDugme,
 } from './ortak.js';
-import { kutuDagilimi, merdivenHtml, akimIstatistigi, seviyeIziHtml } from './pano.js';
+import { akimIstatistigi, seviyeIziHtml } from './pano.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
 import { BOLUM_SORU, BOLUM_GECME, SEVIYE_NO, bolumKartlari, bolumSonucuIsle, tanitimGoruldu, bolumKaydi, bolumAdi } from '../bolum.js';
 import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
@@ -119,7 +120,14 @@ function turSahnesi(karisik) {
           .map(([cls, n]) => `<i class="k-${cls}" style="flex-grow:${n}"></i>`)
           .join('')}</span>
         <ul class="tur-lejant">${parca.map(([cls, n, ad]) => `<li><i class="k-${cls}" aria-hidden="true"></i>${n} ${ad}</li>`).join('')}</ul>
-        <a class="pk-baslat karisik-dugme" href="#/pekistir/karisik" data-test="karisik-dugme"><span class="pk-baslat-sayi"><b data-test="tur-sayi">${karisik.toplam}</b><small>kart</small></span><span class="pk-baslat-yazi"><span>Turu başlat</span><small data-test="tur-alt">${kacis(turAltYazisi(karisik))}</small></span><span class="pk-baslat-ok" aria-hidden="true">${ikon('ileri', 20, 1.8)}</span></a>
+        ${tabloDugme({
+          href: '#/pekistir/karisik',
+          test: 'karisik-dugme',
+          baslik: 'Turu başlat',
+          alt: turAltYazisi(karisik),
+          sayi: karisik.toplam,
+          kapakId: kapak && kapak.id,
+        })}
       </div>
     </section>
     <div class="hedef-sec pk-hedef"><span class="etiket" id="hedef-etiket">Günlük hedef</span><div class="secim-hap" role="group" aria-labelledby="hedef-etiket">${hedefler
@@ -196,10 +204,6 @@ export function pekistirMenusu() {
         ${hepsiSalonu(acik, turYazi)}
         ${sirali.map((a, i) => donemSatiri(a, turYazi, istler.get(a.ad), i + 1, acik)).join('')}
       </ul>
-    </section>
-    <section class="bolum pk-merdiven">
-      <div class="pk-bolum-bas"><span class="etiket vurgu">Leitner kutuları</span><h2 class="pk-baslik">Hafıza merdiveni</h2></div>
-      ${merdivenHtml(kutuDagilimi(acik, d.ilerleme.skorlar))}
     </section>`
       : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
   }`);

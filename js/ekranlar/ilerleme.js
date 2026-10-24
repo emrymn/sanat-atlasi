@@ -9,8 +9,8 @@ import { karsilastirmaAdresi } from '../karsilastir.js';
 import { enCokKarisanlar } from '../ogrenme.js';
 import { SEVIYELER, seviyeKaydi } from '../seviye.js';
 import { takvimHtml, egriHtml, koleksiyonBagi } from './calisma.js';
-import { d, etiket, islenen, bugun, akimNoktasi, ust, gununRengi, ciz, ekran, kucukKareleriDoldur, kaydet, bildir, acikListe, akimRenk } from './ortak.js';
-import { kutuDagilimi, merdivenHtml, akimIstatistigi, seviyeIziHtml, halkaHtml, kutuPipHtml } from './pano.js';
+import { d, etiket, islenen, bugun, akimNoktasi, ust, gununRengi, ciz, ekran, kucukKareleriDoldur, kaydet, bildir, acikListe, akimRenk, tabloDugme } from './ortak.js';
+import { kutuDagilimi, akimIstatistigi, seviyeIziHtml, halkaHtml, kutuPipHtml } from './pano.js';
 import { hatalarBilgisi } from './pekistir.js';
 
 // ---------- İlerleme ----------
@@ -192,12 +192,8 @@ function parcalar() {
         <div><dt>Kalıcı</dt><dd>${dagilim.kalici}<small>${acik.length ? ` %${Math.round((100 * dagilim.kalici) / acik.length)}` : ''}</small></dd></div>
         <div><dt>Tekrar</dt><dd>${vade}</dd></div>
       </dl>
-      ${vade ? `<a class="pk-baslat ilr-baslat" href="#/pekistir/karisik"><span class="pk-baslat-sayi"><b>${vade}</b><small>kart</small></span><span class="pk-baslat-yazi"><span>Tekrar bekliyor</span><small>karışık turu başlat</small></span><span class="pk-baslat-ok" aria-hidden="true">${ikon('ileri', 20, 1.8)}</span></a>` : ''}
+      ${vade ? tabloDugme({ href: '#/pekistir/karisik', baslik: 'Tekrar bekliyor', alt: 'karışık turu başlat', sayi: vade, sinif: 'ilr-baslat' }) : ''}
     </div>`,
-    merdiven: `<section class="bolum pk-merdiven" data-parca="merdiven">
-      <div class="pk-bolum-bas"><span class="etiket vurgu">Leitner kutuları</span><h2 class="pk-baslik">Hafıza merdiveni</h2></div>
-      ${merdivenHtml(dagilim)}
-    </section>`,
     calisma: `<div data-parca="calisma">${takvimHtml(d.calismaGir)}${egriHtml(d.calismaGir)}${koleksiyonBagi()}</div>`,
     siradaki: `<div data-parca="siradaki">${siradakiKonuHtml(k, sayi)}</div>`,
     kurs: `<div data-parca="kurs">${kursBolumleriHtml(bolumler, k)}</div>`,
@@ -255,7 +251,6 @@ export function ilerlemeSayfasi() {
       ${p.pano}
     </section>
     ${p.ozet}
-    ${p.merdiven}
     ${p.calisma}
     ${p.siradaki}
     <h2 class="etiket bolum-baslik">Kurs konuları</h2>
@@ -287,7 +282,7 @@ function yenile(adlar = ['kurs'], kartAcildi = false) {
   window.scrollTo(0, kaydirma);
   if (adlar.some((a) => a === 'alt' || a === 'tanis' || a === 'kurs' || a === 'siradaki')) kucukKareleriDoldur();
 }
-const HEPSI = ['ozet', 'pano', 'merdiven', 'calisma', 'siradaki', 'kurs', 'alt', 'tanis'];
+const HEPSI = ['ozet', 'pano', 'calisma', 'siradaki', 'kurs', 'alt', 'tanis'];
 
 // Ö6 · Konu işlenince alttan kart: "4 yeni sanatçı açıldı · Tanış" → #/pekistir/konu/<no>
 function tanisKartiHtml() {

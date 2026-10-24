@@ -6,7 +6,7 @@ import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
 import { haritaKur, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul } from '../harita.js';
-import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir } from './ortak.js';
+import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur } from './ortak.js';
 
 const W = 390;
 const H = 585;
@@ -26,8 +26,10 @@ export function durumlar() {
 }
 
 const SEVIYE_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor' };
+// Yıldız yazı tipinden bağımsız çizilir (Bodoni'de ★ glifi yok, kutu görünüyordu)
+const YILDIZ = '<i class="yildiz-sekil" aria-hidden="true"></i>';
 const yildizHtml = (n) =>
-  `<span class="harita-yildiz" aria-label="${n} / 3 yıldız">${[0, 1, 2].map((i) => `<i class="${i < n ? 'dolu' : ''}">★</i>`).join('')}</span>`;
+  `<span class="harita-yildiz" role="img" aria-label="${n} / 3 yıldız">${[0, 1, 2].map((i) => `<i class="yildiz-sekil${i < n ? ' dolu' : ''}" style="--i:${i}"></i>`).join('')}</span>`;
 
 function durakHtml(b, x, h, tur, simdiki, yeni) {
   const n = b.nesne;
@@ -83,7 +85,7 @@ export async function haritaSayfasi() {
     .join('');
   ciz(`<div class="harita-ust">
       <h1>Yolculuk</h1>
-      <p class="harita-ozet" data-test="harita-ozet"><b>${acikSayi}</b>/${liste.length} bölüm · <b>${yildiz}</b> ★</p>
+      <p class="harita-ozet" data-test="harita-ozet"><b>${acikSayi}</b>/${liste.length} bölüm · <b>${yildiz}</b> ${YILDIZ.replace('yildiz-sekil', 'yildiz-sekil dolu')}<span class="ekran-disi">yıldız</span></p>
       <button type="button" class="harita-vakit" data-harita-vakit aria-label="${tur === 'gece' ? 'Gündüze geç' : 'Geceye geç'}">${ikon(tur === 'gece' ? 'gunes' : 'ay', 20, 1.6)}</button>
     </div>
     <div class="harita ${tur}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
@@ -96,22 +98,41 @@ export async function haritaSayfasi() {
         .join('')}
       <div class="harita-katman">${katman}</div>
     </div>
+    ${simdiki ? `<button type="button" class="harita-konum" data-harita-konum data-test="harita-konum" hidden><span class="harita-konum-nokta" aria-hidden="true"></span>Buradasın<span class="harita-konum-ok" aria-hidden="true">${ikon('ileri', 14, 2)}</span></button>` : ''}
     <div class="harita-pencere" data-harita-pencere hidden></div>`);
   const hedef = ekran.querySelector('.harita-durak.simdiki') || ekran.querySelector('.harita-resim');
-  const kaydir = () => {
-    const el = ekran.querySelector('.harita-durak.simdiki');
-    if (!el) return window.scrollTo(0, document.documentElement.scrollHeight);
-    const r = el.getBoundingClientRect();
-    window.scrollTo(0, Math.max(0, r.top + window.scrollY - window.innerHeight * 0.55));
-  };
   if (hedef) {
-    kaydir();
-    requestAnimationFrame(kaydir);
+    konumaKaydir();
+    requestAnimationFrame(() => konumaKaydir());
   }
+  konumIzle();
   if (yeniler.size) {
     d.ilerleme.haritaGorulen = gorulenDogrula([...gorulen, ...yeniler]);
     kaydet();
   }
+}
+
+// ---------- "Buradasın" ----------
+function konumaKaydir(yumusak = false) {
+  const el = ekran.querySelector('.harita-durak.simdiki');
+  if (!el) return window.scrollTo(0, document.documentElement.scrollHeight);
+  const r = el.getBoundingClientRect();
+  window.scrollTo({ top: Math.max(0, r.top + window.scrollY - window.innerHeight * 0.55), behavior: yumusak ? 'smooth' : 'auto' });
+}
+
+// Şimdiki durak görüş alanından çıkınca üstte küçük bir konum hapı belirir; ok durağın yönünü gösterir
+let konumGozcu = null;
+function konumIzle() {
+  if (konumGozcu) konumGozcu.disconnect();
+  const durak = ekran.querySelector('.harita-durak.simdiki');
+  const dugme = ekran.querySelector('[data-harita-konum]');
+  if (!durak || !dugme || typeof IntersectionObserver !== 'function') return;
+  konumGozcu = new IntersectionObserver(([g]) => {
+    if (!dugme.isConnected) return konumGozcu.disconnect();
+    dugme.hidden = g.isIntersecting;
+    dugme.classList.toggle('asagi', g.boundingClientRect.top > 0);
+  });
+  konumGozcu.observe(durak);
 }
 
 // ---------- küçük pencereler ----------
@@ -134,9 +155,10 @@ function durakPenceresi(id) {
     const gecti = (en ?? 0) >= BOLUM_GECME;
     const bilgi = en === undefined ? `${BOLUM_SORU[sv]} soru` : `en iyi %${Math.round(en * 100)}`;
     const ad = `${SEVIYE_AD[sv]}${sv === 'zor' ? ' · isteğe bağlı' : ''}`;
+    const cizgi = `<span class="harita-seviye-cizgi" aria-hidden="true" style="--gec:${Math.round(BOLUM_GECME * 100)}%"><i style="--o:${Math.round((en ?? 0) * 100)}%"></i></span>`;
     return acik
       ? `<a class="harita-seviye${gecti ? ' gecti' : ''}" href="#/pekistir/bolum/${x.id}/${sv}" data-test="harita-seviye" data-seviye="${sv}">
-          <b>${ad}</b><span>${bilgi}${gecti ? ' · geçti' : ''}</span>${gecti ? '<i aria-hidden="true">★</i>' : ikon('ileri', 18, 1.5)}</a>`
+          <b>${ad}</b><span>${bilgi}${gecti ? ' · geçti' : ''}</span>${gecti ? YILDIZ.replace('yildiz-sekil', 'yildiz-sekil dolu') : ikon('ileri', 18, 1.5)}${cizgi}</a>`
       : `<span class="harita-seviye kapali" data-test="harita-seviye" data-seviye="${sv}"><b>${ad}</b><span>${sv === 'orta' ? 'Kolay’ı geçince' : 'Orta’yı geçince'}</span>${ikon('kilit', 16, 1.7)}</span>`;
   }).join('');
   const govde = x.acik
@@ -150,9 +172,12 @@ function durakPenceresi(id) {
       <span class="etiket">${kacis(bolge.ad)}</span>
       <h2>${kacis(bolumAdi(x))}</h2>
       ${govde}
-      <p class="harita-pencere-sanatcilar">${sanatcilar
-        .map((s) => (x.acik ? `<a href="#/sanatci/${encodeURIComponent(s.id)}">${kacis(s.ad)}</a>` : `<span>${kacis(s.ad)}</span>`))
-        .join(' · ')}</p>
+      <div class="harita-pencere-sanatcilar">${sanatcilar
+        .map((s, i) => {
+          const ic = `<span class="harita-yuz" style="--i:${i}" data-kucuk="${kacis(s.id)}" data-genislik="200"></span><span class="harita-yuz-ad">${kacis(s.ad)}</span>`;
+          return x.acik ? `<a href="#/sanatci/${encodeURIComponent(s.id)}">${ic}</a>` : `<span class="kilitli">${ic}</span>`;
+        })
+        .join('')}</div>
       <div class="harita-pencere-dugmeler"><a class="dugme" href="#/akim/${encodeURIComponent(x.akim)}" data-test="harita-akim">Akım sayfası</a>${
         x.acik ? `<a class="dugme" href="#/pekistir/bolum/${x.id}/tanitim" data-test="harita-tanitim">Tanıtım</a>` : ''
       }</div>
@@ -182,7 +207,8 @@ function pencereAc(html) {
   kutu.innerHTML = html;
   kutu.hidden = false;
   requestAnimationFrame(() => kutu.classList.add('acik'));
-  kutu.querySelector('[data-harita-kapat]').focus({ preventScroll: true });
+  kutu.querySelector('[data-harita-kapat]').focus({ preventScroll: true, focusVisible: false });
+  kucukKareleriDoldur();
 }
 
 function pencereKapat() {
@@ -207,6 +233,11 @@ export function olaylariBagla() {
     const motif = e.target.closest('[data-motif]');
     if (motif) {
       pencereAc(motifPenceresi(motif.dataset.motif));
+      return;
+    }
+    if (e.target.closest('[data-harita-konum]')) {
+      pencereKapat();
+      konumaKaydir(true);
       return;
     }
     if (e.target.closest('[data-harita-vakit]')) {
@@ -234,7 +265,7 @@ export function haritaBagi() {
   const b = s ? bolgeBul(s.sira) : bolgeBul(0);
   return `<a class="harita-bag" href="#/harita" data-test="harita-bag">
       <span class="harita-bag-resim" aria-hidden="true"><img alt="" loading="lazy" src="${resimAdresi(b.id, vakit())}"></span>
-      <span class="metin"><b>Yolculuk haritası</b><span>${s ? `Buradasın: ${kacis(bolumAdi(s))}` : 'Yolculuk başlamadı'}</span><span>${acik}/${liste.length} bölüm · ${yildiz} ★</span></span>
+      <span class="metin"><b>Yolculuk haritası</b><span>${s ? `Buradasın: ${kacis(bolumAdi(s))}` : 'Yolculuk başlamadı'}</span><span>${acik}/${liste.length} bölüm · ${yildiz} yıldız</span></span>
       ${ikon('ileri', 20, 1.4)}
     </a>`;
 }
