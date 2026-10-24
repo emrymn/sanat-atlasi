@@ -25,7 +25,8 @@ export const UC = 0.42;
 // Durak yerleşimi data/harita.json yerine burada elle verilen bölgeler: noktalar resimdeki yolun kenarında, alttan
 // üste kabaca eşit aralıkla, yolun bir sağına bir soluna (Modern'deki gibi düzenli). data/harita.json'daki noktalar
 // bu bölgelerde dip dipeydi (Rönesans'ta üç durak uzaktaki yolda üst üste, XIX. yüzyılda yedi durak kısa yolda).
-// Gündüz ve gece resimleri aynı resimden olduğu için ikisinde de aynı noktalar. olcek: o bölgenin sembol boyutu.
+// Gündüz ve gece resimleri aynı resimden olduğu için ikisinde de aynı noktalar. olcek: o bölgenin sembol boyutu;
+// nesne: sembol resmi değiştiyse onun ölçüsü ve ayak noktası ({ w, h, ax, ay }, data/harita.json'daki gibi).
 export const DURAK_DUZENI = {
   ronesans: {
     duraklar: [[0.52, 0.95], [0.3, 0.8], [0.68, 0.74], [0.28, 0.66], [0.68, 0.59], [0.44, 0.29], [0.53, 0.19]],
@@ -71,7 +72,7 @@ export function haritaKur(durumlar, veri, tur, ara = 0, uc = 0) {
     return {
       ...b,
       ust: yukseklik - uc - 1 - i * adim,
-      nesne: v.nesne,
+      nesne: (duzen && duzen.nesne) || v.nesne,
       olcek: (duzen && duzen.olcek) || 1,
       yolcu: v.yolcu,
       duraklar: bunlar.map((x, j) => {
