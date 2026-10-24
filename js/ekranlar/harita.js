@@ -6,7 +6,8 @@ import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
 import { haritaKur, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul } from '../harita.js';
-import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur } from './ortak.js';
+import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen } from './ortak.js';
+import { sanatciEserleri } from '../eserler.js';
 
 const W = 390;
 const H = 585;
@@ -168,7 +169,7 @@ function durakPenceresi(id) {
       <p class="harita-pencere-alt">Geçmek için %${Math.round(BOLUM_GECME * 100)} doğru</p>`
     : `<p class="harita-pencere-durum" data-test="harita-kilit">${kacis(kilitMetni(x, bolumler()))}</p>`;
   return `<div class="harita-pencere-ic${x.acik ? '' : ' kilitli'}" role="dialog" aria-label="${kacis(bolumAdi(x))}">
-      ${sanatcilar[0] ? `<span class="hp-kapak" aria-hidden="true" data-kucuk="${kacis(sanatcilar[0].id)}" data-genislik="640"></span>` : ''}
+      ${sanatcilar.length ? `<span class="hp-kapak" aria-hidden="true" data-kapak="${kacis(sanatcilar.map((s) => s.id).join(','))}"></span>` : ''}
       <button class="harita-pencere-kapat" type="button" data-harita-kapat aria-label="Kapat">${ikon('kapat', 20, 1.7)}</button>
       <header class="hp-baslik">
         <span class="etiket">${kacis(bolge.ad)}</span>
@@ -212,6 +213,38 @@ function pencereAc(html) {
   requestAnimationFrame(() => kutu.classList.add('acik'));
   kutu.querySelector('[data-harita-kapat]').focus({ preventScroll: true, focusVisible: false });
   kucukKareleriDoldur();
+  kapakDoldur(kutu.querySelector('[data-kapak]'));
+}
+
+function gorselBoyutu(src) {
+  return new Promise((coz) => {
+    const img = new Image();
+    img.onload = () => coz(img.naturalWidth / img.naturalHeight || 0);
+    img.onerror = () => coz(0);
+    img.src = src;
+  });
+}
+
+// Bölümün sanatçılarının en bilinen eserleri arasından kapağa en yatay olanı seçilir; eser kırpılmadan ortalanır,
+// boşluğu kendi bulanık kopyası doldurur.
+async function kapakDoldur(el) {
+  if (!el) return;
+  const ids = el.dataset.kapak.split(',').slice(0, 6);
+  const adaylar = (
+    await Promise.all(ids.map((id) => d.harita.get(id)).filter(Boolean).map((s) => sanatciEserleri(s).then(enBilinen).catch(() => null)))
+  ).filter(Boolean);
+  const kalip = document.createElement('template');
+  const olcumler = await Promise.all(
+    adaylar.map(async (e) => {
+      kalip.innerHTML = kucukGorsel(e, 640);
+      const src = kalip.content.querySelector('img')?.getAttribute('src');
+      return { html: kalip.innerHTML, oran: src ? await gorselBoyutu(src) : 0 };
+    }),
+  );
+  const en = olcumler.filter((o) => o.oran).sort((a, b) => b.oran - a.oran)[0];
+  if (!en || !el.isConnected) return;
+  el.innerHTML = `<span class="hp-kapak-zemin">${en.html}</span><span class="hp-kapak-eser">${en.html}</span>`;
+  el.classList.add('dolu');
 }
 
 function pencereKapat() {
