@@ -9,7 +9,8 @@ test('ana sayfa → Göz At → sanatçı → eser tam ekran', async ({ page }) 
   await page.goto('./');
   await expect(page.getByRole('heading', { name: 'Sanat Atlası' })).toBeVisible();
   await expect(page.getByText('açık sanatçı')).toBeVisible();
-  await page.getByRole('link', { name: /Göz At/ }).click();
+  // Göz At sekmesi Harita'ya katıldı (İş 24); akım listesi #/gozat adresinde durur
+  await page.goto('./#/gozat');
   await expect(page.getByRole('heading', { name: 'Göz At' })).toBeVisible();
   // kilitli akım gri ve "Konu N'de açılır" yazar
   await expect(page.getByText(/Konu \d+'(de|da|te|ta) açılır/).first()).toBeVisible();

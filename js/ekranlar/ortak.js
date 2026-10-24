@@ -273,9 +273,10 @@ export function temaUygula() {
 }
 
 // ---------- sekme çubuğu ----------
+// İş 24: Göz At haritaya katıldı; büyük Harita sekmesi ikinci sırada
 const SEKMELER = [
   ['bugun', 'Bugün', '#/'],
-  ['gozat', 'Göz At', '#/gozat'],
+  ['harita', 'Harita', '#/harita'],
   ['pekistir', 'Pekiştir', '#/pekistir'],
   ['ilerleme', 'İlerleme', '#/ilerleme'],
 ];
@@ -293,7 +294,8 @@ export function sekmeleriCiz(etkin) {
   if (!nav.querySelector('.sekme-isaret')) {
     nav.innerHTML =
       '<span class="sekme-isaret" aria-hidden="true"></span>' +
-      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" data-sekme="${id}">${ikon(id, 23, 1.5)}<span>${ad}</span></a>`).join('');
+      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}"${id === 'harita' ? ' class="buyuk"' : ''}>${ikon(id, id === 'harita' ? 27 : 23, 1.5)}<span>${ad}</span></a>`).join('');
+    sekmeSurukle(nav);
   }
   const i = SEKMELER.findIndex(([id]) => id === etkin);
   // sekme değişince yeni ekran geldiği yönden kayar (sağdaki sekme sağdan)
@@ -304,6 +306,66 @@ export function sekmeleriCiz(etkin) {
     if (a.dataset.sekme === etkin) a.setAttribute('aria-current', 'page');
     else a.removeAttribute('aria-current');
   }
+}
+
+// Apple tarzı sekme çubuğu: parmak çubukta gezinirken vurgu parmağı izler, bırakınca o sekmeye geçer
+function sekmeSurukle(nav) {
+  let basla = null;
+  const sekmeAt = (x) => {
+    const linkler = [...nav.querySelectorAll('a')];
+    let en = 0;
+    let fark = Infinity;
+    linkler.forEach((a, i) => {
+      const r = a.getBoundingClientRect();
+      const f = Math.abs(r.left + r.width / 2 - x);
+      if (f < fark) {
+        fark = f;
+        en = i;
+      }
+    });
+    return en;
+  };
+  nav.addEventListener('pointerdown', (e) => {
+    basla = { x: e.clientX, i: Number(nav.style.getPropertyValue('--i')) || 0, kaydi: false };
+  });
+  nav.addEventListener('pointermove', (e) => {
+    if (!basla || (Math.abs(e.clientX - basla.x) < 8 && !basla.kaydi)) return;
+    basla.kaydi = true;
+    nav.classList.add('suruklen');
+    const r = nav.getBoundingClientRect();
+    const linkler = nav.querySelectorAll('a');
+    // vurgu parmağın altında, sekmeler arasında serbestçe kayar
+    const k = Math.max(0, Math.min(linkler.length - 1, ((e.clientX - r.left) / r.width) * linkler.length - 0.5));
+    nav.style.setProperty('--surukle', k.toFixed(3));
+  });
+  const bitir = (e) => {
+    if (!basla) return;
+    const kaydi = basla.kaydi;
+    basla = null;
+    nav.classList.remove('suruklen');
+    nav.style.removeProperty('--surukle');
+    if (!kaydi) return;
+    nav.dataset.yeniKaydi = '1';
+    setTimeout(() => delete nav.dataset.yeniKaydi, 400);
+    const a = nav.querySelectorAll('a')[sekmeAt(e.clientX)];
+    if (a) {
+      e.preventDefault();
+      if (location.hash !== a.getAttribute('href') && !(a.getAttribute('href') === '#/' && (location.hash === '' || location.hash === '#/'))) location.hash = a.getAttribute('href');
+    }
+  };
+  nav.addEventListener('pointerup', bitir);
+  nav.addEventListener('pointercancel', () => {
+    basla = null;
+    nav.classList.remove('suruklen');
+    nav.style.removeProperty('--surukle');
+  });
+  // sürüklemeden sonra gelen tıklama ikinci kez gezinmesin
+  nav.addEventListener('click', (e) => {
+    if (nav.dataset.yeniKaydi) {
+      e.preventDefault();
+      delete nav.dataset.yeniKaydi;
+    }
+  });
 }
 
 export function git(hash) {
