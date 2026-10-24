@@ -1070,3 +1070,9 @@ Emre: "pekiştir sekmesinde yine rengi neon sarı". Sebep bir gerileme değil: v
 4. Bu kapakların çoğunun yerel kopyası yok, Wikimedia'dan gelir (ilk görülüşten sonra önbellekte).
 5. Emre: kapaklar da indirilsin. `scripts/kapaklar.mjs` kitaplıktaki 57 kapağın görselini uygulamanın kendi seçimiyle (js/kurs.js, enBilinen) listeler; `scripts/gorsel_indir.py --kapaklar` yalnız bunları indirir (normal çalıştırma da artık kapakları içerir). Kapak dosya adları çözülmüş biçimde tutulur (`dosyaNormal`), yerel kopya anahtarı tutsun diye. WikiArt'tan gelen 4 kapak (konu 63–66: Picasso, Duchamp, Dalí, Bacon) eski karar gereği indirilmez (telifli olabilir), çevrimiçi kalır.
 6. Emre: "boş kalmasın, çirkin duruyor". Kapak görseli yüklenemezse (çevrimdışı ilk açılış ya da çevrimiçi kalan WikiArt kapakları) artık kara kutu değil, yaldız ışıklı bir pano görünür; numara ve konu adı üstünde kalır.
+
+## İş 29 · Kitaplıkta okunmayan yazılar (2026-10-24, v1.30.2)
+
+1. Sebep: kitapların yazı rengi temanın zemin rengiydi (`color: var(--bg)`); koyu temada kararmış resmin üstüne kara yazı düşüyordu. Yazı artık her temada açık renk.
+2. Emre: "arka plan daha önemli, büyük ve baskın yazılar olmasın". Numara 30 → 21 px, konu adı 14 → 13 px ve en çok 2 satır, alt satır 9 px; yazının arkasında yalnız altta yumuşak gölge, üstteki karartma azaltıldı; işlenmemiş kapaklar biraz daha aydınlık (parlaklık 0.55 → 0.68).
+3. Sanatçısı olmayan (kapağı ders eserinden gelen) konularda yanıltıcı "sanatçı yok" yazısı kaldırıldı.
