@@ -1,7 +1,7 @@
 // Telefonu eğince Bugün'ün tablosu (İş 32): jiroskop toplaması, açı yedeği (eğim hesabı, sıfır noktası, takla)
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { egimHesapla, tabanIzle, donusIzle, donustenEgim, egimAcilari } from '../../js/egim.js';
+import { egimHesapla, tabanIzle, donusIzle, donustenEgim, egimAcilari, hizEksenleri } from '../../js/egim.js';
 
 test('eğim: tutuş açısı sıfır, 22° tam etki, sınırın ötesi kırpılır', () => {
   const taban = { beta: 40, gamma: 0 };
@@ -61,4 +61,11 @@ test('açı yedeği: dik tutuşta takla atan beta/gamma aynı duruş için aynı
   assert.ok(Math.abs(c.yan - 20) < 1e-9 && Math.abs(c.on) < 1e-9);
   // 359° ile 1° arası fark 2°
   assert.ok(Math.abs(egimHesapla(0, 1, { beta: 0, gamma: 359 }).x - 2 / 22) < 1e-9);
+});
+
+test('dönüş hızı eksenleri: standartta beta yatay, gamma dikey; iOS alpha yatay, beta dikey', () => {
+  const r = { alpha: 1, beta: 2, gamma: 3 };
+  assert.deepEqual(hizEksenleri(r, false), { beta: 2, gamma: 3 });
+  // iPhone'da sağa sola çevirme beta'da gelir: tablonun sağa sola kayması (gamma) ona bağlanır
+  assert.deepEqual(hizEksenleri(r, true), { beta: 1, gamma: 2 });
 });

@@ -33,6 +33,15 @@ export function donusIzle(durum, hiz, dt, sonum = SONUM) {
   return { x: sin(durum.x * k + (hiz.gamma || 0) * dt), y: sin(durum.y * k + (hiz.beta || 0) * dt) };
 }
 
+// rotationRate'in eksenleri: standartta (Chrome) beta yatay eksen, gamma dikey eksen; iOS Safari ise kaydırır:
+// alpha yatay eksen, beta dikey eksen. Bunu bilmeden iPhone'da sağa sola çevirmek tabloyu yukarı aşağı oynatıyordu.
+export function hizEksenleri(r, ios) {
+  return ios ? { beta: r.alpha, gamma: r.beta } : { beta: r.beta, gamma: r.gamma };
+}
+export const iosMu = () =>
+  typeof navigator !== 'undefined' &&
+  (/iP(hone|ad|od)/.test(navigator.userAgent) || (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1));
+
 export function donustenEgim(durum) {
   const x = sinirla(durum.x / SINIR);
   const y = sinirla(durum.y / SINIR);
@@ -97,8 +106,9 @@ let jiroskop = false; // dönüş hızı geldiyse açı yedeği kullanılmaz
 let taban = null;
 let suzulmus = null;
 
+const IOS = iosMu();
 function hareket(e) {
-  const r = e.rotationRate;
+  const r = e.rotationRate && hizEksenleri(e.rotationRate, IOS);
   if (!r || (r.beta == null && r.gamma == null)) return;
   jiroskop = true;
   const simdi = performance.now();

@@ -2,12 +2,13 @@
 import { test, expect } from '@playwright/test';
 import { agiHazirla } from './ortak.js';
 
-// jiroskop: sn saniye boyunca saniyede gamma derece sağa dönüş (60 olay/sn)
+// jiroskop: sn saniye boyunca saniyede gamma derece sağa dönüş (60 olay/sn). Dikey eksen etrafındaki dönüş
+// standartta gamma'da, iOS'ta beta'da gelir (test iPhone kimliğiyle çalışır): ikisine de yazılır.
 const donus = (page, gamma, sn) =>
   page.evaluate(
     async ([g, t]) => {
       for (let i = 0; i < t * 60; i++) {
-        window.dispatchEvent(new DeviceMotionEvent('devicemotion', { rotationRate: { alpha: 0, beta: 0, gamma: g }, interval: 16 }));
+        window.dispatchEvent(new DeviceMotionEvent('devicemotion', { rotationRate: { alpha: 0, beta: g, gamma: g }, interval: 16 }));
         await new Promise((r) => setTimeout(r, 16));
       }
     },
