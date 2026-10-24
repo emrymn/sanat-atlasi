@@ -37,7 +37,7 @@ const yildizHtml = (n) =>
   `<span class="harita-yildiz" role="img" aria-label="${n} / 3 yıldız">${[0, 1, 2].map((i) => `<i class="yildiz-sekil${i < n ? ' dolu' : ''}" style="--i:${i}"></i>`).join('')}</span>`;
 
 function durakHtml(b, x, h, tur, simdiki, yeni) {
-  const n = b.nesne;
+  const n = { ...b.nesne, w: b.nesne.w * b.olcek, h: b.nesne.h * b.olcek };
   const ustY = (b.ust + x.y) * H; // tabanın haritadaki yüksekliği (pt, harita yüksekliği h*H)
   const toplamY = h * H;
   const sol = ((x.x * W - n.ax * n.w) / W) * 100;

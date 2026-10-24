@@ -19,6 +19,20 @@ export const BINME = 0.12;
 // hissedilsin. BINME'den büyük olunca resimler artık üst üste binmez, aradaki boşluğu geçiş şeridi doldurur.
 export const ARA = 0.5;
 
+// Durak yerleşimi data/harita.json yerine burada elle verilen bölgeler: noktalar resimdeki yolun kenarında, alttan
+// üste kabaca eşit aralıkla, yolun bir sağına bir soluna (Modern'deki gibi düzenli). data/harita.json'daki noktalar
+// bu bölgelerde dip dipeydi (Rönesans'ta üç durak uzaktaki yolda üst üste, XIX. yüzyılda yedi durak kısa yolda).
+// Gündüz ve gece resimleri aynı resimden olduğu için ikisinde de aynı noktalar. olcek: o bölgenin sembol boyutu.
+export const DURAK_DUZENI = {
+  ronesans: {
+    duraklar: [[0.52, 0.95], [0.3, 0.8], [0.68, 0.74], [0.28, 0.66], [0.68, 0.59], [0.44, 0.29], [0.53, 0.19]],
+  },
+  ondokuz: {
+    duraklar: [[0.43, 0.875], [0.32, 0.805], [0.55, 0.735], [0.43, 0.665], [0.51, 0.595], [0.34, 0.525], [0.66, 0.455]],
+    olcek: 0.72,
+  },
+};
+
 export function bolgeBul(sira) {
   return BOLGELER.find((b) => sira >= b.ilk && sira <= b.son) || BOLGELER[BOLGELER.length - 1];
 }
@@ -36,7 +50,7 @@ export const yolcuAdresi = (bolge, tur) => `gorseller/harita/yolcu_${bolge}_${tu
 /**
  * durumlar: bolumDurumlari().durumlar (akım sırasıyla); veri: data/harita.json; tur: 'gunduz' | 'gece'
  * ara: dönemler arası geçiş şeridi (resim yüksekliği cinsinden; 0 → resimler doğrudan sisle biner, ekran ARA verir)
- * Dönen: { bolgeler: [{ ...bolge, ust (resmin haritadaki üst kenarı, resim yüksekliği cinsinden), duraklar: [{ ...durum, x, y }], motifler }],
+ * Dönen: { bolgeler: [{ ...bolge, ust (resmin haritadaki üst kenarı, resim yüksekliği cinsinden), olcek (sembol boyutu), duraklar: [{ ...durum, x, y }], motifler }],
  *          gecisler: [{ onceki, sonraki, ust, alt }] (alttaki resmin üst kenarı ile üstteki resmin alt kenarı arası),
  *          yukseklik (resim yüksekliği cinsinden) }. Bölgeler alttan üste (Orta Çağ ilk); haritada Modern en üstte.
  */
@@ -46,14 +60,17 @@ export function haritaKur(durumlar, veri, tur, ara = 0) {
   const yukseklik = 1 + (n - 1) * adim;
   const bolgeler = BOLGELER.map((b, i) => {
     const v = (veri && veri.bolgeler && veri.bolgeler[b.id] && veri.bolgeler[b.id][tur]) || { duraklar: [], motifler: [] };
+    const duzen = DURAK_DUZENI[b.id];
+    const noktalar = (duzen && duzen.duraklar) || v.duraklar || [];
     const bunlar = durumlar.filter((x) => bolgeBul(x.sira).id === b.id);
     return {
       ...b,
       ust: yukseklik - 1 - i * adim,
       nesne: v.nesne,
+      olcek: (duzen && duzen.olcek) || 1,
       yolcu: v.yolcu,
       duraklar: bunlar.map((x, j) => {
-        const k = v.duraklar[j] || v.duraklar[v.duraklar.length - 1] || [0.5, 0.5];
+        const k = noktalar[j] || noktalar[noktalar.length - 1] || [0.5, 0.5];
         return { ...x, x: k[0], y: k[1] };
       }),
       motifler: v.motifler || [],
