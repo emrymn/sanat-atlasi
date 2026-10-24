@@ -247,7 +247,7 @@ export function kucukKareleriDoldur() {
     if (!s) continue;
     sanatciEserleri(s).then((eserler) => {
       const e = enBilinen(eserler);
-      if (e && el.isConnected) el.innerHTML = kucukGorsel(e, 400);
+      if (e && el.isConnected) el.innerHTML = kucukGorsel(e, Number(el.dataset.genislik) || 400);
     });
   }
 }

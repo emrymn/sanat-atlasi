@@ -42,7 +42,13 @@ function siradakiKonuHtml(k, sayi) {
   const x = d.konular.find((y) => !k.has(y.no));
   if (!x) return '<p class="siradaki-bitti" data-test="siradaki-konu">Bütün konular işlendi.</p>';
   const n = sayi(x.no);
-  return `<section class="siradaki${d.siradakiGecti ? ' gecti' : ''}" data-test="siradaki-konu" aria-label="Sıradaki konu">
+  const onizleme = konuSanatcilari(x.no).slice(0, 4);
+  return `<section class="siradaki${d.siradakiGecti ? ' gecti' : ''}${onizleme.length ? ' resimli' : ''}" data-test="siradaki-konu" aria-label="Sıradaki konu">
+      ${
+        onizleme.length
+          ? `<div class="siradaki-onizleme" aria-hidden="true">${onizleme.map((s, i) => `<span class="kilitli-kare" style="--i:${i}"><span data-kucuk="${kacis(s.id)}"></span></span>`).join('')}<span class="kilit-ikon">${ikon('kilit', 18, 1.6)}</span></div>`
+          : ''
+      }
       <span class="siradaki-no" aria-hidden="true">${x.no}</span>
       <div class="siradaki-yazi">
         ${etiket('Sıradaki konu')}
@@ -118,7 +124,10 @@ function parcalar() {
     const alt = [ist.tp ? `${ist.dg}/${ist.tp} doğru` : 'henüz cevap yok', `${ist.n} sanatçı`, ist.vade ? `${ist.vade} tekrar` : '', ist.kalici ? `${ist.kalici} kalıcı` : '']
       .filter(Boolean)
       .join(' · ');
+    const tl = acik.filter((s) => s.akim === a.ad);
+    const tm = tl.find((s) => s.kaynak === 'kurs') || tl[0];
     return `<li><a class="akim-kart" href="#/pekistir/donem/${encodeURIComponent(a.ad)}" style="--akim:${akimRenk(a.ad)}">
+        <span class="akim-kart-resim" aria-hidden="true">${tm ? `<span data-kucuk="${kacis(tm.id)}" data-genislik="500"></span>` : ''}</span>
         <span class="akim-kart-ust">${akimNoktasi(a.ad)}<b>${kacis(a.ad)}</b><span class="seviye-etiket sv-${sv.anahtar}" data-test="seviye-ozet">${sv.ad}</span><span class="akim-kart-yuzde">${y === null ? '–' : `%${y}`}</span></span>
         <span class="cubuk akim-cubuk" role="img" aria-label="${y === null ? 'veri yok' : `%${y} doğru`}"><i style="width:${y ?? 0}%"></i></span>
         <span class="akim-kart-alt"><small>${alt}</small>${seviyeIziHtml(kayit)}</span>
@@ -149,16 +158,22 @@ function parcalar() {
   }
   const sayi = (no) => d.sanatcilar.filter((s) => s.konu === no).length;
   const vade = acikSanatcilar(d.sanatcilar, k).filter((s) => kategori(d.ilerleme.skorlar, s.id, 'karisik', b) === 0).length;
+  const yuzde = Math.round((100 * k.size) / (d.konular.length || 1));
   return {
-    ozet: `<p class="ozet-satir" data-parca="ozet">${k.size} / ${d.konular.length} konu işlendi · ${acikSanatcilar(d.sanatcilar, k).length} sanatçı açık · ${vade} tekrar bekliyor</p>`,
-    pano: `<section class="pano" data-parca="pano" aria-label="Genel durum">
-      <div class="halkalar">
-        ${halkaHtml({ deger: k.size, toplam: d.konular.length, ad: 'Konu' })}
-        ${halkaHtml({ deger: acik.length, toplam: d.sanatcilar.length, ad: 'Sanatçı' })}
-        ${halkaHtml({ deger: dagilim.kalici, toplam: acik.length || 0, ad: 'Kalıcı', alt: acik.length ? `%${Math.round((100 * dagilim.kalici) / acik.length)} hafıza` : '/ 0' })}
-      </div>
-      ${vade ? `<a class="dugme vurgu pano-dugme" href="#/pekistir/karisik">${vade} tekrar bekliyor · başlat</a>` : ''}
-      <h2 class="etiket bolum-baslik">Hafıza merdiveni</h2>
+    ozet: `<p class="ozet-satir ekran-disi" data-parca="ozet">${k.size} / ${d.konular.length} konu işlendi · ${acikSanatcilar(d.sanatcilar, k).length} sanatçı açık · ${vade} tekrar bekliyor</p>`,
+    pano: `<div class="ilr-govde" data-parca="pano" aria-label="Genel durum">
+      <span class="etiket vurgu">Kursun neresindesin</span>
+      <p class="ilr-buyuk"><b>${k.size}</b><span>/ ${d.konular.length}<small>konu işlendi</small></span></p>
+      <span class="ilr-cizgi" role="img" aria-label="%${yuzde} tamamlandı"><i style="--y:${yuzde}%"></i></span>
+      <dl class="ilr-sayilar">
+        <div><dt>Sanatçı</dt><dd>${acik.length}<small>/${d.sanatcilar.length}</small></dd></div>
+        <div><dt>Kalıcı</dt><dd>${dagilim.kalici}<small>${acik.length ? ` %${Math.round((100 * dagilim.kalici) / acik.length)}` : ''}</small></dd></div>
+        <div><dt>Tekrar</dt><dd>${vade}</dd></div>
+      </dl>
+      ${vade ? `<a class="pk-baslat ilr-baslat" href="#/pekistir/karisik"><span class="pk-baslat-yazi"><span><b>${vade}</b> tekrar bekliyor</span><small>karışık turu başlat</small></span><span class="pk-baslat-ok" aria-hidden="true">${ikon('ileri', 22, 1.6)}</span></a>` : ''}
+    </div>`,
+    merdiven: `<section class="bolum pk-merdiven" data-parca="merdiven">
+      <div class="pk-bolum-bas"><span class="etiket vurgu">Leitner kutuları</span><h2 class="pk-baslik">Hafıza merdiveni</h2></div>
       ${merdivenHtml(dagilim)}
     </section>`,
     calisma: `<div data-parca="calisma">${haritaBagi()}${takvimHtml(d.calismaGir)}${egriHtml(d.calismaGir)}${koleksiyonBagi()}</div>`,
@@ -186,6 +201,20 @@ function parcalar() {
   };
 }
 
+// Açık sanatçıların eserlerinden üç sütunlu, ters yönlere süzülen duvar (sonsuz döngü için her sütun iki kez)
+function eserDuvari() {
+  const acik = acikListe();
+  let l = acik.length ? acik.slice() : d.sanatcilar.slice(0, 9);
+  l = [...l.filter((s) => s.kaynak === 'kurs'), ...l.filter((s) => s.kaynak !== 'kurs')].slice(0, 12);
+  while (l.length && l.length < 9) l = l.concat(l).slice(0, 9);
+  const sutunlar = [[], [], []];
+  l.forEach((s, i) => sutunlar[i % 3].push(s));
+  const kare = (s) => `<span class="duvar-kare"><span data-kucuk="${kacis(s.id)}"></span></span>`;
+  return `<div class="duvar${acik.length ? '' : ' kilitli'}" aria-hidden="true">${sutunlar
+    .map((c, i) => `<div class="duvar-sutun" style="--i:${i}"><div class="duvar-serit">${c.map(kare).join('')}${c.map(kare).join('')}</div></div>`)
+    .join('')}</div>`;
+}
+
 export function ilerlemeSayfasi() {
   d.tanisKarti = null;
   d.kitaplikDurgun = false;
@@ -194,13 +223,17 @@ export function ilerlemeSayfasi() {
   const p = parcalar();
   d.calismaGir = false;
   gununRengi();
-  ciz(`${ust('İlerleme', '#/', {
-    geriYok: true,
-    ustEtiket: 'Kurs',
-    sag: `<a class="ust-dugme" href="#/ayarlar" aria-label="Ayarlar">${ikon('ayarlar', 22, 1.4)}</a>`,
-  })}
+  ciz(`<section class="ilr-sahne">
+      ${eserDuvari()}
+      <div class="pk-ust">${ust('İlerleme', '#/', {
+        geriYok: true,
+        ustEtiket: 'Kurs',
+        sag: `<a class="ust-dugme" href="#/ayarlar" aria-label="Ayarlar">${ikon('ayarlar', 22, 1.4)}</a>`,
+      })}</div>
+      ${p.pano}
+    </section>
     ${p.ozet}
-    ${p.pano}
+    ${p.merdiven}
     ${p.calisma}
     ${p.siradaki}
     <h2 class="etiket bolum-baslik">Kurs konuları</h2>
@@ -226,7 +259,7 @@ function yenile(adlar = ['kurs'], kartAcildi = false) {
   window.scrollTo(0, kaydirma);
   if (adlar.includes('alt') || adlar.includes('tanis')) kucukKareleriDoldur();
 }
-const HEPSI = ['ozet', 'pano', 'calisma', 'siradaki', 'kurs', 'alt', 'tanis'];
+const HEPSI = ['ozet', 'pano', 'merdiven', 'calisma', 'siradaki', 'kurs', 'alt', 'tanis'];
 
 // Ö6 · Konu işlenince alttan kart: "4 yeni sanatçı açıldı · Tanış" → #/pekistir/konu/<no>
 function tanisKartiHtml() {
