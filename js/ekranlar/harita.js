@@ -6,7 +6,7 @@
 import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
-import { haritaKur, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul, BINME, ARA } from '../harita.js';
+import { haritaKur, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul, BOLGELER, BINME, ARA, UC } from '../harita.js';
 import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen } from './ortak.js';
 import { sanatciEserleri } from '../eserler.js';
 
@@ -85,20 +85,45 @@ function gecisHtml(g, h) {
   return `<div class="harita-gecis${acik ? '' : ' kilitli'}" data-test="harita-gecis" data-gecis="${s.id}" data-onceki="${g.onceki.id}"
       style="top:${((ustY / h) * 100).toFixed(3)}%;height:${((boy / h) * 100).toFixed(3)}%">
       <span class="harita-gecis-renk ust" aria-hidden="true"></span><span class="harita-gecis-renk alt" aria-hidden="true"></span>
-      <span class="harita-gecis-sis sol" aria-hidden="true"></span><span class="harita-gecis-sis sag" aria-hidden="true"></span>
-      <span class="harita-gecis-isik" aria-hidden="true"></span>
+      ${SISLER}
       <p class="harita-gecis-yazi"><span class="harita-gecis-yuzyil">${kacis(s.yuzyil)}</span><b>${kacis(s.ad)}</b><span class="harita-gecis-bilgi">${bilgi}</span></p>
     </div>`;
 }
+const SISLER = `<span class="harita-gecis-sisler" aria-hidden="true"><span class="harita-gecis-sis sol"></span><span class="harita-gecis-sis sag"></span></span>
+      <span class="harita-gecis-isik" aria-hidden="true"></span>`;
 
-export async function haritaSayfasi() {
+// Haritanın iki ucu: en alt resmin altında yolculuğun başladığı dönemin adı, en üst resmin üstünde yolun sonu.
+// Şerit resmin kenar rengiyle başlar, sayfanın zeminine doğru söner (siyah bir kenarla kesilmez).
+function ucHtml(u, yer, h, liste) {
+  const b = u.bolge;
+  const ustY = yer === 'alt' ? u.ust - BINME : u.ust;
+  const boy = u.alt - u.ust + BINME;
+  const acik = liste.filter((x) => x.acik).length;
+  const yazi =
+    yer === 'alt'
+      ? `<span class="harita-gecis-yuzyil">${kacis(b.yuzyil)}</span><b>${kacis(b.ad)}</b><span class="harita-gecis-bilgi">Yolculuk buradan başlar · ${b.duraklar.length} bölüm</span>`
+      : `<span class="harita-gecis-yuzyil">${kacis(b.yuzyil)} ve sonrası</span><b>Yolun sonu</b><span class="harita-gecis-bilgi">${acik}/${liste.length} bölüm açık</span>`;
+  // alttaki şeridin üstünde en alt resmin alt kenarı ("ust" renk), üstteki şeridin altında en üst resmin üst kenarı
+  const renk = yer === 'alt' ? 'ust' : 'alt';
+  const veri = yer === 'alt' ? `data-gecis="${b.id}"` : `data-onceki="${b.id}"`;
+  return `<div class="harita-gecis harita-uc ${yer}" data-test="harita-uc" ${veri}
+      style="top:${((ustY / h) * 100).toFixed(3)}%;height:${((boy / h) * 100).toFixed(3)}%">
+      <span class="harita-gecis-renk ${renk}" aria-hidden="true"></span>
+      ${SISLER}
+      <p class="harita-gecis-yazi">${yazi}</p>
+    </div>`;
+}
+
+// konumuKoru: gündüz/gece değişince harita yeniden çizilir ama sayfa "buradasın"a zıplamaz, olduğu yerde kalır
+export async function haritaSayfasi({ konumuKoru = false } = {}) {
+  const eskiY = window.scrollY;
   const no = cizimNo();
   const [veri, bilgi] = await Promise.all([haritaVerisi(), d.akimBilgi ? null : jsonGetir('data/akim_bilgi.json').catch(() => null)]);
   if (bilgi) d.akimBilgi = bilgi;
   if (!guncelMi(no)) return;
   const tur = d.haritaVakti || vakit();
   const { durumlar: liste, simdiki } = durumlar();
-  const harita = haritaKur(liste, veri, tur, ARA);
+  const harita = haritaKur(liste, veri, tur, ARA, UC);
   const gorulen = new Set(d.ilerleme.haritaGorulen || []);
   const yeniler = new Set(liste.filter((x) => x.acik && !gorulen.has(x.id)).map((x) => x.id));
   const acikSayi = liste.filter((x) => x.acik).length;
@@ -112,8 +137,9 @@ export async function haritaSayfasi() {
   ciz(`<div class="harita-ust">
       <h1>Yolculuk</h1>
       <p class="harita-ozet" data-test="harita-ozet"><b>${acikSayi}</b>/${liste.length} bölüm · <b>${yildiz}</b> ${YILDIZ.replace('yildiz-sekil', 'yildiz-sekil dolu')}<span class="ekran-disi">yıldız</span></p>
-      <button type="button" class="harita-vakit" data-harita-vakit aria-label="${tur === 'gece' ? 'Gündüze geç' : 'Geceye geç'}">${ikon(tur === 'gece' ? 'gunes' : 'ay', 20, 1.6)}</button>
     </div>
+    <button type="button" class="harita-vakit" data-harita-vakit aria-label="${tur === 'gece' ? 'Gündüze geç' : 'Geceye geç'}">${ikon(tur === 'gece' ? 'gunes' : 'ay', 20, 1.6)}</button>
+    <p class="harita-zaman" data-harita-zaman data-test="harita-zaman"><span class="harita-zaman-ic"><b></b><span></span></span></p>
     <div class="harita ${tur}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
       ${harita.bolgeler
         .map(
@@ -123,18 +149,22 @@ export async function haritaSayfasi() {
         )
         .join('')}
       ${harita.gecisler.map((g) => gecisHtml(g, h)).join('')}
+      ${ucHtml(harita.uclar.alt, 'alt', h, liste)}${ucHtml(harita.uclar.ust, 'ust', h, liste)}
       <svg class="harita-filtre" width="0" height="0" aria-hidden="true" focusable="false"><filter id="durak-kontur" color-interpolation-filters="sRGB"><feComponentTransfer in="SourceAlpha" result="m"><feFuncA type="discrete" tableValues="0 0 0 1 1 1"/></feComponentTransfer><feComposite in="SourceGraphic" in2="m" operator="in" result="g"/><feMorphology in="m" operator="dilate" radius="1.4" result="k"/><feFlood flood-color="#fff4dc"/><feComposite in2="k" operator="in" result="krem"/><feMorphology in="m" operator="dilate" radius="2.4" result="d"/><feFlood flood-color="#24170c"/><feComposite in2="d" operator="in" result="koyu"/><feMerge><feMergeNode in="koyu"/><feMergeNode in="krem"/><feMergeNode in="g"/></feMerge></filter></svg>
       <div class="harita-katman">${katman}</div>
     </div>
     ${simdiki ? `<button type="button" class="harita-konum" data-harita-konum data-test="harita-konum" hidden><span class="harita-konum-nokta" aria-hidden="true"></span>Buradasın<span class="harita-konum-ok" aria-hidden="true">${ikon('ileri', 14, 2)}</span></button>` : ''}
     <div class="harita-pencere" data-harita-pencere hidden></div>`);
   const hedef = ekran.querySelector('.harita-durak.simdiki') || ekran.querySelector('.harita-resim');
-  if (hedef) {
+  if (konumuKoru) window.scrollTo(0, eskiY);
+  else if (hedef) {
     konumaKaydir();
     requestAnimationFrame(() => konumaKaydir());
   }
   konumIzle();
   gecisleriIzle();
+  kaydirmaIzle();
+  requestAnimationFrame(kaydirmaIzle);
   for (const img of ekran.querySelectorAll('.harita-durak img')) ayagaYerlestir(img);
   if (yeniler.size) {
     d.ilerleme.haritaGorulen = gorulenDogrula([...gorulen, ...yeniler]);
@@ -213,7 +243,8 @@ function konumIzle() {
 // ---------- dönem geçişleri ----------
 // Şeritler komşu resimler yüklenince onların kenar renkleriyle dolar (fazladan istek yok, tembel yükleme bozulmaz).
 // Şerit görüş alanına yeterince girince "gorundu" (animasyon), tamamen çıkınca geri alınır: her geçişte yeniden oynar.
-// Resim ilk kez görülünce "uyandi" (renklenir); açılışta zaten görünenler geçişsiz uyanır.
+// Resim ilk kez görülünce "uyandi" (renklenir); açılışta zaten görünenler geçişsiz uyanır. Durak ilk kez ekrana
+// girince "kondu" + "inis" (yere konma animasyonu).
 let gecisGozcu = null;
 function gecisleriIzle() {
   if (gecisGozcu) gecisGozcu.disconnect();
@@ -236,9 +267,18 @@ function gecisleriIzle() {
   gecisGozcu = new IntersectionObserver(
     (girdiler) => {
       if (!kap.isConnected) return gecisGozcu.disconnect();
+      let konan = 0;
       for (const g of girdiler) {
         const el = g.target;
-        if (el.classList.contains('harita-resim')) {
+        if (el.classList.contains('harita-durak')) {
+          // ekrana giren durak yerine konar; açılışta zaten görünenler animasyonsuz
+          if (!g.isIntersecting || el.classList.contains('kondu')) continue;
+          el.classList.add('kondu');
+          if (kap.classList.contains('hazir')) {
+            el.style.setProperty('--kon-gecikme', `${(konan++ * 0.09).toFixed(2)}s`);
+            el.classList.add('inis');
+          }
+        } else if (el.classList.contains('harita-resim')) {
           if (g.intersectionRatio >= 0.2) el.classList.add('uyandi');
         } else if (g.intersectionRatio >= 0.45) {
           el.classList.add('gorundu');
@@ -252,7 +292,58 @@ function gecisleriIzle() {
     },
     { threshold: [0, 0.2, 0.45] },
   );
-  for (const el of kap.querySelectorAll('.harita-gecis, .harita-resim')) gecisGozcu.observe(el);
+  for (const el of kap.querySelectorAll('.harita-gecis, .harita-resim, .harita-durak')) gecisGozcu.observe(el);
+}
+
+// ---------- kaydırma: derinlik ve zaman göstergesi ----------
+// Geçiş şeritlerinde sis ve yazı haritadan farklı hızda kayar (--p: şeridin ekran ortasına uzaklığı, ekran boyu
+// cinsinden). Sağ üstteki gösterge ekranın ortasına en yakın dönemi yazar; dönem değişince kayarak değişir.
+const azHareket = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+let kaydirmaBekliyor = false;
+function kaydirmaIzle() {
+  const kap = ekran.querySelector('[data-test="harita"]');
+  if (!kap) return;
+  const boy = window.innerHeight;
+  if (!azHareket()) {
+    for (const g of kap.querySelectorAll('.harita-gecis')) {
+      const r = g.getBoundingClientRect();
+      if (r.bottom < -boy * 0.5 || r.top > boy * 1.5) continue;
+      const p = Math.max(-1.5, Math.min(1.5, (r.top + r.height / 2 - boy / 2) / boy));
+      g.style.setProperty('--p', p.toFixed(3));
+    }
+  }
+  const gosterge = ekran.querySelector('[data-harita-zaman]');
+  if (!gosterge) return;
+  let en = null;
+  let enUzak = Infinity;
+  for (const img of kap.querySelectorAll('.harita-resim')) {
+    const r = img.getBoundingClientRect();
+    const uzak = Math.abs(r.top + r.height / 2 - boy * 0.5);
+    if (uzak < enUzak) {
+      enUzak = uzak;
+      en = img.dataset.bolge;
+    }
+  }
+  const b = BOLGELER.find((x) => x.id === en);
+  if (!b || gosterge.dataset.bolge === en) return;
+  const ilk = !gosterge.dataset.bolge;
+  gosterge.dataset.bolge = en;
+  gosterge.querySelector('b').textContent = b.ad;
+  gosterge.querySelector('b + span').textContent = b.yuzyil;
+  gosterge.classList.add('gorunur');
+  if (ilk) return;
+  const ic = gosterge.querySelector('.harita-zaman-ic');
+  ic.classList.remove('degisti');
+  void ic.offsetWidth; // animasyonu baştan oynatmak için
+  ic.classList.add('degisti');
+}
+function kaydirmaSirasi() {
+  if (kaydirmaBekliyor) return;
+  kaydirmaBekliyor = true;
+  requestAnimationFrame(() => {
+    kaydirmaBekliyor = false;
+    kaydirmaIzle();
+  });
 }
 
 // ---------- küçük pencereler ----------
@@ -406,7 +497,10 @@ export function olaylariBagla() {
     }
     if (e.target.closest('[data-harita-vakit]')) {
       d.haritaVakti = (d.haritaVakti || vakit()) === 'gece' ? 'gunduz' : 'gece';
-      haritaSayfasi();
+      const cevir = () => haritaSayfasi({ konumuKoru: true });
+      // destekleyen tarayıcıda gündüz ve gece birbirine yumuşakça geçer
+      if (typeof document.startViewTransition === 'function' && !azHareket()) document.startViewTransition(cevir);
+      else cevir();
       return;
     }
     if (e.target.closest('[data-harita-kapat]')) {
@@ -418,6 +512,8 @@ export function olaylariBagla() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') pencereKapat();
   });
+  window.addEventListener('scroll', kaydirmaSirasi, { passive: true });
+  window.addEventListener('resize', kaydirmaSirasi, { passive: true });
 }
 
 // İlerleme'nin başındaki giriş: haritanın küçük özeti

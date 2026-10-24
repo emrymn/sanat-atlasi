@@ -18,6 +18,9 @@ export const BINME = 0.12;
 // Haritada dönemler arasına konan geçiş şeridi (resim yüksekliğine oranla); kaydırırken yeni döneme geçildiği
 // hissedilsin. BINME'den büyük olunca resimler artık üst üste binmez, aradaki boşluğu geçiş şeridi doldurur.
 export const ARA = 0.5;
+// Haritanın iki ucundaki şerit (resim yüksekliğine oranla): altta yolculuğun başladığı Orta Çağ'ın adı, üstte
+// yolun sonu; resimler sayfanın zeminine keskin kenarla değil, sisle karışarak biter.
+export const UC = 0.42;
 
 // Durak yerleşimi data/harita.json yerine burada elle verilen bölgeler: noktalar resimdeki yolun kenarında, alttan
 // üste kabaca eşit aralıkla, yolun bir sağına bir soluna (Modern'deki gibi düzenli). data/harita.json'daki noktalar
@@ -50,14 +53,16 @@ export const yolcuAdresi = (bolge, tur) => `gorseller/harita/yolcu_${bolge}_${tu
 /**
  * durumlar: bolumDurumlari().durumlar (akım sırasıyla); veri: data/harita.json; tur: 'gunduz' | 'gece'
  * ara: dönemler arası geçiş şeridi (resim yüksekliği cinsinden; 0 → resimler doğrudan sisle biner, ekran ARA verir)
+ * uc: haritanın üst ve alt ucundaki şerit (aynı birimle; 0 → yok, ekran UC verir)
  * Dönen: { bolgeler: [{ ...bolge, ust (resmin haritadaki üst kenarı, resim yüksekliği cinsinden), olcek (sembol boyutu), duraklar: [{ ...durum, x, y }], motifler }],
  *          gecisler: [{ onceki, sonraki, ust, alt }] (alttaki resmin üst kenarı ile üstteki resmin alt kenarı arası),
+ *          uclar: { ust: { bolge, ust, alt }, alt: { bolge, ust, alt } } (en üst resmin üstü, en alt resmin altı),
  *          yukseklik (resim yüksekliği cinsinden) }. Bölgeler alttan üste (Orta Çağ ilk); haritada Modern en üstte.
  */
-export function haritaKur(durumlar, veri, tur, ara = 0) {
+export function haritaKur(durumlar, veri, tur, ara = 0, uc = 0) {
   const n = BOLGELER.length;
   const adim = 1 - BINME + ara;
-  const yukseklik = 1 + (n - 1) * adim;
+  const yukseklik = 1 + (n - 1) * adim + 2 * uc;
   const bolgeler = BOLGELER.map((b, i) => {
     const v = (veri && veri.bolgeler && veri.bolgeler[b.id] && veri.bolgeler[b.id][tur]) || { duraklar: [], motifler: [] };
     const duzen = DURAK_DUZENI[b.id];
@@ -65,7 +70,7 @@ export function haritaKur(durumlar, veri, tur, ara = 0) {
     const bunlar = durumlar.filter((x) => bolgeBul(x.sira).id === b.id);
     return {
       ...b,
-      ust: yukseklik - 1 - i * adim,
+      ust: yukseklik - uc - 1 - i * adim,
       nesne: v.nesne,
       olcek: (duzen && duzen.olcek) || 1,
       yolcu: v.yolcu,
@@ -77,7 +82,11 @@ export function haritaKur(durumlar, veri, tur, ara = 0) {
     };
   });
   const gecisler = bolgeler.slice(1).map((sonraki, i) => ({ onceki: bolgeler[i], sonraki, ust: sonraki.ust + 1, alt: bolgeler[i].ust }));
-  return { bolgeler, gecisler, yukseklik };
+  const uclar = {
+    ust: { bolge: bolgeler[n - 1], ust: 0, alt: uc },
+    alt: { bolge: bolgeler[0], ust: yukseklik - uc, alt: yukseklik },
+  };
+  return { bolgeler, gecisler, uclar, yukseklik };
 }
 
 // Kayıttaki "haritada görülen duraklar" listesini doğrular (yedekten gelen)
