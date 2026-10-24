@@ -3747,6 +3747,11 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 }
 .kitap-resim {
   z-index: -2;
+  /* İş 28: görsel gelmezse (çevrimdışı ilk açılış, WikiArt kapakları) boş kara kutu değil, yaldız ışıklı bir pano */
+  background:
+    radial-gradient(120% 85% at 25% 15%, rgba(var(--vurgu-rgb), 0.38), transparent 62%),
+    radial-gradient(90% 70% at 85% 100%, rgba(var(--vurgu-rgb), 0.18), transparent 70%),
+    linear-gradient(165deg, var(--surface), var(--bg));
 }
 .kitap-resim img {
   object-fit: cover;
