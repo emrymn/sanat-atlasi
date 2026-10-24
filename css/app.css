@@ -9226,15 +9226,16 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
   background: none;
   animation: none;
 }
-/* Rönesans büstü krem rengi: krem kontur büstle birleşip arkasında beyaz leke gibi duruyordu; yalnız ince koyu kontur */
-.harita-durak[data-donem='ronesans'] img {
+/* Rönesans ve Romantizm'in yeni sembolleri: krem kontur onları resmin üstüne yapıştırılmış çıkartma gibi
+   gösteriyordu (büstte arkasında beyaz leke); yalnız ince koyu kontur, resmin içine otursunlar */
+.harita-durak:is([data-donem='ronesans'], [data-donem='romantik']) img {
   filter: saturate(1.1) contrast(1.06) url(#durak-kontur-ince) drop-shadow(0 3px 3px rgba(20, 12, 6, 0.5));
 }
-.harita-durak.kilit[data-donem='ronesans'] img {
+.harita-durak.kilit:is([data-donem='ronesans'], [data-donem='romantik']) img {
   filter: grayscale(0.6) sepia(0.3) brightness(1.02) url(#durak-kontur-ince) drop-shadow(0 0 0 rgba(255, 214, 140, 0));
 }
 @media (prefers-reduced-motion: no-preference) {
-  .harita-durak.kilit[data-donem='ronesans'] img {
+  .harita-durak.kilit:is([data-donem='ronesans'], [data-donem='romantik']) img {
     animation-name: kilit-uyan-ince;
   }
 }
@@ -9248,8 +9249,8 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
     filter: grayscale(0.15) sepia(0.15) brightness(1.08) url(#durak-kontur-ince) drop-shadow(0 0 6px rgba(255, 214, 140, 0.7));
   }
 }
-/* gece paleti kilitliyken de renkli durur, parlayıp sönmez */
+/* Romantizm'in feneri gece kilitliyken de renkli durur (ışığı yanık), parlayıp sönmez */
 .harita.gece .harita-durak.kilit[data-donem='romantik'] img {
-  filter: saturate(1.05) url(#durak-kontur) drop-shadow(0 4px 4px rgba(20, 12, 6, 0.45));
+  filter: saturate(1.05) url(#durak-kontur-ince) drop-shadow(0 3px 3px rgba(20, 12, 6, 0.5));
   animation: none;
 }

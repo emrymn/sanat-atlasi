@@ -31,12 +31,12 @@ export const UC = 0.42;
 export const DURAK_DUZENI = {
   ronesans: {
     duraklar: [[0.52, 0.95], [0.3, 0.8], [0.68, 0.74], [0.28, 0.66], [0.68, 0.59], [0.44, 0.29], [0.53, 0.19]],
-    nesne: { w: 22.3, h: 46.0, ax: 0.5821, ay: 1.0 }, // mermer büst (eskiden düz beyaz kaide)
-    dosya: 'ronesans_bust',
+    nesne: { w: 24.0, h: 52.0, ax: 0.4653, ay: 1.0 }, // kaide üstünde mermer büst (eskiden düz beyaz kaide)
+    dosya: 'ronesans_bust2',
   },
   romantik: {
-    nesne: { w: 41.7, h: 34.0, ax: 0.304, ay: 1.0 }, // kayaya yaslanmış ressam paleti (eskiden yol tabelası)
-    dosya: 'romantik_palet',
+    nesne: { w: 32.0, h: 50.0, ax: 0.6146, ay: 0.8733 }, // sarmaşıklı direkte fener (eskiden yol tabelası)
+    dosya: 'romantik_fener',
   },
   ondokuz: {
     duraklar: [[0.43, 0.875], [0.32, 0.805], [0.55, 0.735], [0.43, 0.665], [0.51, 0.595], [0.34, 0.525], [0.66, 0.455]],
