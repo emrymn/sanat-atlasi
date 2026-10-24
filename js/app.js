@@ -18,6 +18,17 @@ import { olaylariBagla as zamanOlaylari } from './ekranlar/zaman.js';
 import { olaylariBagla as akimOlaylari } from './ekranlar/akim.js';
 import { olaylariBagla as haritaOlaylari } from './ekranlar/harita.js';
 
+// Gömülü önizleme ortamları (ör. v0) her hash değişiminde document.querySelector(location.hash)
+// çağırıp çapaya kaydırmaya çalışıyor; '#/gozat' gibi rota hash'leri geçerli seçici olmadığı için
+// SyntaxError fırlıyor. Rota hash'lerini "eşleşen öğe yok" olarak yanıtla.
+{
+  const asil = Document.prototype.querySelector;
+  Document.prototype.querySelector = function (secici) {
+    if (typeof secici === 'string' && secici.startsWith('#/')) return null;
+    return asil.call(this, secici);
+  };
+}
+
 // ---------- service worker ----------
 function swKaydet() {
   if (!('serviceWorker' in navigator)) return;
