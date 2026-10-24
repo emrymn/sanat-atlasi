@@ -154,6 +154,7 @@ export function tabloDugme({ href, baslik, alt = '', sayi, test = '', sanatciId 
   return `<a class="eser-dugme${kaynak ? ' yelpazeli' : ''}${sinif ? ` ${sinif}` : ''}" href="${href}"${test ? ` data-test="${test}"` : ''}>
       ${yelpaze}
       <span class="ed-govde">
+        ${kaynak ? `<span class="ed-zemin" aria-hidden="true" data-eser-kucuk="${kacis(kaynak)}" data-sira="1"></span>` : ''}
         <span class="ed-yazi"><span class="ed-baslik">${kacis(baslik)}</span>${alt ? `<small data-test="tur-alt">${kacis(alt)}</small>` : ''}</span>
         <span class="ed-sayi"><b data-test="tur-sayi">${sayi}</b><small>kart</small></span>
         <span class="ed-ok" aria-hidden="true">${ikon('ileri', 18, 1.8)}</span>
