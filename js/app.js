@@ -1,6 +1,7 @@
 // Sanat Atlası — uygulamanın girişi: veriyi yükler, ekranların dinleyicilerini bağlar, yönlendirmeyi başlatır.
 // Ekranlar js/ekranlar/ altında (bkz. KARARLAR.md "İş 16").
 import { akimOrtaYillari } from './celdirici.js';
+import { kursKonulari } from './kurs.js';
 import { eserTurleriniAyarla, hazirOnbellek, eserAdlariniAyarla, adlariAl, kolaylikAl } from './eserler.js';
 import { yerelGorselleriAyarla, oranlariAyarla } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
@@ -90,6 +91,7 @@ async function basla() {
     sanatcilar,
   );
   d.konular = konular;
+  d.kursKonulari = kursKonulari(konular, sanatcilar, turler, tumSanatcilar);
   d.harita = new Map(sanatcilar.map((s) => [s.id, s]));
   d.akimSira = Object.fromEntries(d.akimlar.map((a) => [a.ad, a.sira]));
   d.akimRenk = Object.fromEntries(akimlar.map((a) => [a.ad, a.renk]));
