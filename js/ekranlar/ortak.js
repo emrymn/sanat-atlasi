@@ -277,6 +277,7 @@ export function temaUygula() {
 const SEKMELER = [
   ['bugun', 'Bugün', '#/'],
   ['harita', 'Harita', '#/harita'],
+  ['gozat', 'Göz At', '#/gozat'],
   ['pekistir', 'Pekiştir', '#/pekistir'],
   ['ilerleme', 'İlerleme', '#/ilerleme'],
 ];
