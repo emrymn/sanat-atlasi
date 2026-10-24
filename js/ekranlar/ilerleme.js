@@ -116,7 +116,7 @@ function kursBolumleriHtml(bolumler, k) {
       ${isaret ? `<span class="kitap-isaret" aria-hidden="true">${isaret}</span>` : ''}
       ${x.no === siradaki ? '<span class="kitap-sira-etiket">Sıradaki</span>' : ''}
       <span class="kitap-ad">${kacis(konuBasligi(x))}</span>
-      <small class="kitap-alt">${l.length ? `${l.length} sanatçı` : 'sanatçı yok'}</small>
+      ${l.length ? `<small class="kitap-alt">${l.length} sanatçı</small>` : '<small class="kitap-alt" aria-hidden="true"></small>'}
     </button>`;
   };
   // bölümler galeri salonları: her biri yatay kayan bir duvar; seçili konunun kartı o salonun altında
