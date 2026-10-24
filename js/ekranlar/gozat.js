@@ -8,7 +8,7 @@ import { akimYuzyillari, ikon } from '../tasarim.js';
 import { adParcala, bilinenAd } from '../adlar.js';
 import { karsilastirmaAdresi, benzerSanatcilar } from '../karsilastir.js';
 import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir } from '../basyapit.js';
-import { konulariAl, konuBul, konuHaritasiniAyarla, TUR_AD, TUR_SIRA } from '../ikonografi.js';
+import { konulariAl, konuBul, konuHaritasiniAyarla, kapakSec, TUR_AD, TUR_SIRA } from '../ikonografi.js';
 import { seviyeKaydi, seviyeDurumu } from '../seviye.js';
 import {
   jsonGetir,
@@ -154,19 +154,46 @@ export async function konuListesi() {
   if (location.hash !== '#/konular') return;
   if (!liste.length) return ciz(`${gozAtUst('konular')}<p class="ikincil">Henüz konu yok.</p>`);
   const gruplar = TUR_SIRA.map((t) => ({ t, l: liste.filter((k) => k.tur === t) })).filter((g) => g.l.length);
+  // İş 25: yazı yerine kart: konunun adı ve en ünlü resmi; dokununca konunun sayfası (hikâye ve öbür resimler)
   ciz(`${gozAtUst('konular')}
-    <p class="bolum-aciklama">Resimlerde en sık işlenen ${liste.length} hikâye: her birinde hikâye, resimde nasıl tanındığı ve bu konuyu işleyen eserler.</p>
+    <p class="bolum-aciklama">Resimlerde en sık işlenen ${liste.length} hikâye.</p>
     ${gruplar
       .map(
         ({ t, l }) => `<h2 class="etiket bolum-baslik">${kacis(TUR_AD[t])}</h2>
-      <ul class="liste" data-test="konu-listesi">${l
+      <ul class="konu-izgara" data-test="konu-listesi">${l
         .map(
           (k) =>
-            `<li><a class="satir" href="#/konu/${encodeURIComponent(k.id)}"><span class="metin"><b>${kacis(k.ad)}</b><span>${kacis(k.ozet)} · ${k.eserler.length} eser</span></span>${ikon('ileri', 20, 1.4)}</a></li>`,
+            `<li><a class="konu-kart" href="#/konu/${encodeURIComponent(k.id)}" data-konu-kart="${kacis(k.id)}"><span class="konu-kapak" data-konu-kapak></span><b>${kacis(k.ad)}</b></a></li>`,
         )
         .join('')}</ul>`,
       )
       .join('')}`);
+  konuKapaklariniDoldur(liste);
+}
+
+// Kapaklar: her konunun eserleri arasında en ünlüsü (kapakSec). Sanatçıların eser listeleri bir kez yüklenir.
+async function konuKapaklariniDoldur(liste) {
+  const no = cizimNo();
+  const sanatcilar = [...new Set(liste.flatMap((k) => k.eserler.map((x) => x[1])))];
+  const listeler = new Map(await Promise.all(sanatcilar.map(async (sid) => [sid, await sanatciEserleri(d.harita.get(sid)).catch(() => [])])));
+  if (!guncelMi(no)) return;
+  const kotu = kotuler();
+  for (const k of liste) {
+    const kart = ekran.querySelector(`[data-konu-kart="${CSS.escape(k.id)}"]`);
+    if (!kart) continue;
+    const adaylar = k.eserler
+      .map(([a, sid]) => eserEslestir(listeler.get(sid) || [], { anahtar: a, sanatci: sid }))
+      .filter((e) => e && (secilenGorsel(e, kotu) || e.gorseller[0]));
+    const e = kapakSec(adaylar);
+    const kutu = kart.querySelector('[data-konu-kapak]');
+    if (!e || !kutu) {
+      kart.classList.add('kapaksiz');
+      continue;
+    }
+    const g = secilenGorsel(e, kotu) || e.gorseller[0];
+    const s = d.harita.get(e.sid);
+    kutu.innerHTML = `<img loading="lazy" decoding="async" data-kapak="${kacis(e.qid || `${e.sid}|${e.baslik}`)}" alt="${kacis(`${s ? s.ad : ''}, ${eserBaslik(e)}`)}" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}">`;
+  }
 }
 
 export async function konuSayfasi(kodlu) {

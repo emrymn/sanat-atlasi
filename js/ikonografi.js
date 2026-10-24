@@ -44,3 +44,14 @@ export function eserKonusu(e, h = harita) {
   if (!e) return null;
   return (e.qid && h.get(e.qid)) || (e.sid && h.get(`${e.sid}|${e.baslik}`)) || null;
 }
+
+// Konular ızgarasının kapağı: konunun görseli olan eserleri arasında en ünlüsü.
+// Ünlülük: Wikipedia'da maddesi olan dil sayısı (`sl`); eşitse kurs eseri, o da eşitse listedeki sıra.
+export function kapakSec(eserler) {
+  let en = null;
+  for (const e of eserler) {
+    if (!e) continue;
+    if (!en || (e.sl || 0) > (en.sl || 0) || ((e.sl || 0) === (en.sl || 0) && e.kurs && !en.kurs)) en = e;
+  }
+  return en;
+}
