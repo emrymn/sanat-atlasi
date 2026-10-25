@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.36.0', metin: 'Akım sayfaları yenilendi (v0): en önemliler üstte, ipuçlarının yanında eserden yakın plan ayrıntı, her dönemin kendi tekniğiyle kurulan “Bu dönemi pekiştir” düğmesi (vitray, mozaik, chiaroscuro…). Haritada dönem geçişinde dönemin renginde perde; İlerleme’de fırça izli “İşlendi yap”.' },
   { surum: '1.35.0', metin: 'Haritada her dönem geçişinde ekranın ortasında bölüm kartı: altın çizgiler açılır, yüzyıl ve dönemin adı belirip silinir. Bugün’de yazılar artık kutusuz, doğrudan tablonun üstünde ve tam açık.' },
   { surum: '1.34.0', metin: 'Bugün’de telefonu sağa sola çevirince, öne arkaya eğince günün tablosu hafifçe döner, ışık üstünden kayar, sanatçının adı katman katman, gölgesiyle derinlikle kayar. Ayarlar’dan kapatılabilir; iPhone ilk dokunuşta hareket izni sorar.' },
   { surum: '1.33.0', metin: 'Haritada dönem geçişleri: dönemlerin arası açıldı, her geçişte sis aralanır ve yeni dönemin adı belirir; kaydırırken duraklar yere konar, sis ve yazılar derinlikle kayar, sağ üstte hangi dönemde olduğun yazar; gündüz/gece düğmesi her yerden erişilir; yolcu büyüdü ve parlıyor; Rönesans ve XIX. yüzyıl durakları düzenli dizildi.' },
