@@ -143,3 +143,24 @@ test('bölüm: tanıtım, Kolay %75 ile geçilince Orta açılır; Orta geçilin
   await page.goto('./#/harita');
   await expect(page.locator('[data-test="harita-durak"][data-acik="true"]')).toHaveCount(2);
 });
+
+test('Harita: kaydırırken her dönem geçişinde bölüm kartı oynar, "Buradasın" kaydırması oynatmaz', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/harita');
+  await hazir(page);
+  await expect(page.locator('[data-test="harita-bolge"]')).toHaveCount(8);
+  const kart = page.locator('[data-test="harita-kart"]');
+  await page.waitForTimeout(600);
+  await expect(kart).not.toHaveClass(/oynuyor/);
+  // Rönesans resminin ortasına kaydır (açılışta Orta Çağ'dayız): kart Rönesans'ı duyurur
+  await page.evaluate(() => {
+    const r = document.querySelector('.harita-resim[data-bolge="ronesans"]').getBoundingClientRect();
+    window.scrollBy(0, r.top + r.height / 2 - innerHeight / 2);
+  });
+  await expect(kart).toHaveClass(/oynuyor/);
+  await expect(kart.locator('b')).toHaveText('Rönesans');
+  await expect(kart).toContainText('bölüm');
+  // kart dokunmayı engellemez ve kendiliğinden kapanır
+  expect(await kart.evaluate((el) => getComputedStyle(el).pointerEvents)).toBe('none');
+  await expect(kart).not.toHaveClass(/oynuyor/, { timeout: 4000 });
+});
