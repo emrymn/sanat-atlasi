@@ -9752,3 +9752,319 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
   align-items: center;
   justify-content: flex-end;
 }
+
+/* ===== Dönem üslupları: pekiştir düğmesi ve bölüm başlıkları her dönemin kendi dilinde ===== */
+.akim-kimlik {
+  --kagit: #f7f1e6;
+  --murekkep: #1b1612;
+  --altin: #c9a24a;
+}
+.akim-kimlik > .akim-bolum:first-of-type { margin-top: 30px; }
+.akim-kimlik .liste { margin-top: 0; }
+.donem-cta {
+  margin: 30px 0 6px;
+  padding: 0 2px;
+}
+.donem-dugme {
+  --zemin: var(--renk);
+  --yazi: var(--kagit);
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 112px;
+  padding: 20px 18px 18px;
+  background: var(--zemin);
+  color: var(--yazi);
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+.donem-dugme:hover { color: var(--yazi); filter: brightness(1.08); }
+.donem-dugme:active { transform: scale(0.98); }
+.donem-dugme:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+.donem-dugme-ust {
+  font: 600 10px/1 var(--sans);
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+.donem-dugme-ad {
+  font: italic 400 25px/1.1 var(--serif);
+  text-wrap: balance;
+}
+.donem-dugme-alt {
+  font: 400 13px/1.3 var(--sans);
+  opacity: 0.8;
+}
+
+/* Antik — Roma kapitali yazı, sütun yivleri, çift çizgi */
+[data-uslup='antik'] .donem-dugme {
+  background:
+    repeating-linear-gradient(90deg, transparent 0 13px, rgba(0, 0, 0, 0.1) 13px 15px),
+    var(--zemin);
+  border-block: 4px double var(--yazi);
+}
+[data-uslup='antik'] .donem-dugme-ad,
+[data-uslup='antik'] .akim-bolum-bas h2 {
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+[data-uslup='antik'] .donem-dugme-ad { font-size: 19px; }
+[data-uslup='antik'] .akim-bolum-bas h2 { font-size: 22px; }
+[data-uslup='antik'] .akim-bolum-bas { border-bottom: 3px double var(--border); }
+
+/* Orta Çağ — altın varak ve sivri kemer, tezhipli baş harf */
+[data-uslup='ortacag'] .donem-dugme {
+  --yazi: #2a1d08;
+  padding-top: 34px;
+  background: linear-gradient(135deg, #f1d58a, #a8842c 35%, #f3dc95 55%, #8a6a1c);
+  clip-path: polygon(0 100%, 0 32%, 9% 15%, 26% 4%, 50% 0, 74% 4%, 91% 15%, 100% 32%, 100% 100%);
+}
+[data-uslup='ortacag'] .akim-bolum-bas h2 { font-style: normal; }
+[data-uslup='ortacag'] .akim-bolum-bas h2::first-letter {
+  font-size: 1.5em;
+  color: var(--altin);
+}
+
+/* Rönesans — ölçü ve denge: ortalı başlıklar, ince çift çerçeve */
+[data-uslup='ronesans'] .donem-dugme {
+  border-radius: 2px;
+  box-shadow:
+    inset 0 0 0 5px var(--zemin),
+    inset 0 0 0 6px color-mix(in srgb, var(--yazi) 55%, transparent),
+    inset 0 0 0 9px var(--zemin),
+    inset 0 0 0 10px color-mix(in srgb, var(--yazi) 30%, transparent);
+}
+[data-uslup='ronesans'] .donem-dugme-ad { font-style: normal; font-variant: small-caps; letter-spacing: 0.04em; }
+[data-uslup='ronesans'] .akim-bolum-bas { align-items: center; text-align: center; }
+[data-uslup='ronesans'] .akim-bolum-bas::after { left: 50%; translate: -50% 0; }
+
+/* Barok — chiaroscuro: karanlıktan doğan ışık, yaldızlı çerçeve */
+[data-uslup='barok'] .donem-dugme {
+  background:
+    radial-gradient(circle at var(--isik, 30%) 25%, color-mix(in srgb, var(--renk), #fff 35%) 0, var(--renk) 32%, #0d0907 88%);
+  box-shadow:
+    inset 0 0 0 2px var(--altin),
+    inset 0 0 0 6px #0d0907,
+    inset 0 0 0 7px color-mix(in srgb, var(--altin) 60%, transparent),
+    0 18px 36px -18px #000;
+}
+[data-uslup='barok'] .akim-bolum-bas h2 {
+  font-size: 32px;
+  text-shadow: 0 2px 18px color-mix(in srgb, var(--renk) 60%, transparent);
+}
+[data-uslup='barok'] .akim-bolum-bas::after { width: 100%; height: 1px; background: linear-gradient(90deg, var(--altin), transparent); }
+
+/* Rokoko — pastel, yuvarlak madalyon, kıvrımlı süsler */
+[data-uslup='rokoko'] .donem-dugme {
+  --zemin: color-mix(in srgb, var(--renk) 50%, #fff4f1);
+  --yazi: #4a2a30;
+  border-radius: 56px;
+  box-shadow: inset 0 0 0 6px var(--zemin), inset 0 0 0 7px color-mix(in srgb, var(--yazi) 35%, transparent);
+}
+[data-uslup='rokoko'] .donem-dugme-ad::before,
+[data-uslup='rokoko'] .donem-dugme-ad::after { content: ' \2767 '; font-size: 0.7em; opacity: 0.6; }
+[data-uslup='rokoko'] .akim-bolum-bas { align-items: center; text-align: center; border-bottom-style: dotted; }
+[data-uslup='rokoko'] .akim-bolum-bas::after { left: 50%; translate: -50% 0; width: 10px; height: 10px; bottom: -6px; border-radius: 50%; }
+
+/* Neoklasik — mermer, alınlık, kazınmış büyük harfler */
+[data-uslup='neoklasik'] .donem-dugme {
+  --zemin: #e9e5df;
+  --yazi: color-mix(in srgb, var(--renk), #000 45%);
+  padding-top: 30px;
+  background: linear-gradient(115deg, #f5f2ed, #d8d3cc 38%, #f6f4f0 58%, #cdc7bf);
+  clip-path: polygon(0 16%, 50% 0, 100% 16%, 100% 100%, 0 100%);
+}
+[data-uslup='neoklasik'] .donem-dugme-ad,
+[data-uslup='neoklasik'] .akim-bolum-bas h2 { font-style: normal; text-transform: uppercase; letter-spacing: 0.12em; }
+[data-uslup='neoklasik'] .donem-dugme-ad { font-size: 19px; }
+[data-uslup='neoklasik'] .akim-bolum-bas h2 { font-size: 21px; }
+
+/* Romantizm / Sembolizm — sisli gökyüzü, ağır bulutlar */
+[data-uslup='romantik'] .donem-dugme {
+  border-radius: 6px;
+  overflow: hidden;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--renk), #000 45%), var(--renk) 55%, color-mix(in srgb, var(--renk), #fff 30%));
+}
+[data-uslup='romantik'] .donem-dugme::before {
+  content: '';
+  position: absolute;
+  inset: -20%;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 40% 18% at 20% 70%, rgba(255, 255, 255, 0.25), transparent 70%),
+    radial-gradient(ellipse 35% 14% at 75% 40%, rgba(255, 255, 255, 0.18), transparent 70%);
+}
+[data-uslup='romantik'] .akim-bolum-bas h2 { text-shadow: 0 0 22px color-mix(in srgb, var(--renk) 70%, transparent); }
+
+/* Realizm — kaba tuval dokusu, ahşap çerçeve */
+[data-uslup='realizm'] .donem-dugme {
+  background:
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.07) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 3px),
+    var(--zemin);
+  border: 5px solid color-mix(in srgb, var(--renk), #000 45%);
+}
+[data-uslup='realizm'] .donem-dugme-ad,
+[data-uslup='realizm'] .akim-bolum-bas h2 { font-style: normal; }
+[data-uslup='realizm'] .akim-bolum-bas::after { width: 100%; height: 3px; opacity: 0.5; }
+
+/* Empresyonizm — kırık renk lekeleri, ışığın titreşimi */
+[data-uslup='empresyonizm'] .donem-dugme {
+  border-radius: 22px 10px 26px 12px;
+  background:
+    radial-gradient(ellipse 9px 4px at 20% 30%, color-mix(in srgb, var(--renk), #fff 45%) 70%, transparent 74%),
+    radial-gradient(ellipse 8px 3px at 70% 20%, color-mix(in srgb, var(--renk), #ff0 25%) 70%, transparent 74%),
+    radial-gradient(ellipse 10px 4px at 45% 75%, color-mix(in srgb, var(--renk), #000 25%) 70%, transparent 74%),
+    radial-gradient(ellipse 7px 3px at 88% 70%, color-mix(in srgb, var(--renk), #fff 60%) 70%, transparent 74%),
+    var(--zemin);
+  background-size: 46px 30px;
+}
+[data-uslup='empresyonizm'] .akim-bolum-bas::after {
+  width: 100%;
+  height: 3px;
+  background: repeating-linear-gradient(90deg, var(--renk) 0 9px, transparent 9px 14px, color-mix(in srgb, var(--renk), #fff 40%) 14px 19px, transparent 19px 24px);
+  border-radius: 2px;
+}
+
+/* Ukiyo-e — düz renk tahta baskı, kalın mürekkep çizgisi, kırmızı mühür */
+[data-uslup='ukiyoe'] .donem-dugme {
+  border: 3px solid var(--murekkep);
+  box-shadow: 5px 5px 0 var(--murekkep);
+}
+[data-uslup='ukiyoe'] .donem-dugme::after {
+  content: '\5370';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  background: #b8322a;
+  color: var(--kagit);
+  font: 700 14px/1 var(--serif);
+}
+[data-uslup='ukiyoe'] .donem-dugme-ad,
+[data-uslup='ukiyoe'] .akim-bolum-bas h2 { font-style: normal; }
+[data-uslup='ukiyoe'] .akim-bolum-bas::after { width: 12px; height: 12px; bottom: 14px; left: auto; right: 0; background: #b8322a; }
+
+/* Art Nouveau — kamçı kıvrımları, asimetrik organik çerçeve */
+[data-uslup='artnouveau'] .donem-dugme {
+  border-radius: 64px 10px 64px 10px;
+  box-shadow: inset 0 0 0 6px var(--zemin), inset 0 0 0 7px var(--altin);
+}
+[data-uslup='artnouveau'] .akim-bolum-bas::after {
+  width: 90px;
+  height: 12px;
+  bottom: -7px;
+  background: none;
+  border-bottom: 2px solid var(--renk);
+  border-radius: 0 0 60% 40% / 0 0 100% 100%;
+}
+
+/* Ekspresyonizm — yırtık kenar, kaba siyah fırça, eğik duruş */
+[data-uslup='ekspresyonizm'] .donem-dugme {
+  rotate: -1.2deg;
+  clip-path: polygon(2% 6%, 18% 0, 36% 5%, 55% 1%, 74% 6%, 97% 0, 100% 34%, 96% 62%, 100% 96%, 78% 100%, 54% 94%, 32% 100%, 10% 95%, 0 100%, 3% 60%, 0 30%);
+  box-shadow: inset 0 -8px 0 rgba(0, 0, 0, 0.35);
+}
+[data-uslup='ekspresyonizm'] .donem-dugme-ad,
+[data-uslup='ekspresyonizm'] .akim-bolum-bas h2 {
+  font: 800 22px/1.1 var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+[data-uslup='ekspresyonizm'] .akim-bolum-bas h2 { rotate: -1deg; }
+[data-uslup='ekspresyonizm'] .akim-bolum-bas::after { width: 70%; height: 5px; rotate: -1deg; }
+
+/* Kübizm — kırık düzlemler, çok açılı yüzeyler */
+[data-uslup='kubizm'] .donem-dugme {
+  background:
+    conic-gradient(from 25deg at 32% 58%, color-mix(in srgb, var(--renk), #000 30%) 0 22%, var(--renk) 0 48%, color-mix(in srgb, var(--renk), #fff 25%) 0 70%, color-mix(in srgb, var(--renk), #000 15%) 0);
+  clip-path: polygon(4% 0, 100% 7%, 95% 100%, 0 90%);
+}
+[data-uslup='kubizm'] .donem-dugme-ad,
+[data-uslup='kubizm'] .akim-bolum-bas h2 { font-style: normal; }
+[data-uslup='kubizm'] .akim-bolum-bas::after {
+  width: 22px;
+  height: 8px;
+  box-shadow: 26px -4px 0 color-mix(in srgb, var(--renk) 60%, transparent), 50px 0 0 color-mix(in srgb, var(--renk) 30%, transparent);
+}
+
+/* Dada — kolaj: bantlanmış kâğıt, fidye mektubu harfleri */
+[data-uslup='dada'] .donem-dugme {
+  --zemin: #efe7d3;
+  --yazi: var(--murekkep);
+  rotate: -1.5deg;
+  box-shadow: 4px 6px 0 rgba(0, 0, 0, 0.35);
+}
+[data-uslup='dada'] .donem-dugme::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 70px;
+  height: 18px;
+  translate: -50% 0;
+  rotate: 3deg;
+  background: rgba(240, 225, 160, 0.75);
+}
+[data-uslup='dada'] .donem-dugme-ad { font-style: normal; }
+[data-uslup='dada'] .kesik {
+  display: inline-block;
+  padding: 0 2px;
+  margin: 1px;
+  rotate: calc((var(--k) - 1.5) * 3deg);
+}
+[data-uslup='dada'] .kesik[style*='--k:0'] { background: var(--murekkep); color: var(--zemin); font-family: var(--sans); font-weight: 800; }
+[data-uslup='dada'] .kesik[style*='--k:1'] { font-family: var(--serif); font-style: italic; }
+[data-uslup='dada'] .kesik[style*='--k:2'] { background: #b8322a; color: var(--kagit); font-family: var(--sans); }
+[data-uslup='dada'] .kesik[style*='--k:3'] { font-family: var(--serif); text-transform: uppercase; }
+[data-uslup='dada'] .akim-bolum-bas h2 { font-style: normal; rotate: -1deg; }
+
+/* Sürrealizm — eriyen, damlayan biçim */
+[data-uslup='surrealizm'] .donem-dugme {
+  margin-bottom: 18px;
+  border-radius: 18px 18px 26px 10px;
+}
+[data-uslup='surrealizm'] .donem-dugme::after {
+  content: '';
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  right: 0;
+  height: 22px;
+  background:
+    radial-gradient(ellipse 7px 18px at 18% 0, var(--zemin) 98%, transparent),
+    radial-gradient(ellipse 5px 11px at 46% 0, var(--zemin) 98%, transparent),
+    radial-gradient(ellipse 8px 22px at 79% 0, var(--zemin) 98%, transparent);
+}
+[data-uslup='surrealizm'] .akim-bolum-bas h2 { letter-spacing: 0.02em; }
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-uslup='barok'] .donem-dugme { animation: barok-isik 6s ease-in-out infinite alternate; }
+  [data-uslup='romantik'] .donem-dugme::before { animation: sis-kay 9s ease-in-out infinite alternate; }
+  [data-uslup='surrealizm'] .donem-dugme::after { transform-origin: top; animation: damla 3.5s ease-in-out infinite alternate; }
+  [data-uslup='dada'] .donem-dugme:hover .kesik { rotate: calc((var(--k) - 1.5) * -4deg); }
+  .donem-dugme { animation-delay: 0.3s; }
+}
+@property --isik {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 30%;
+}
+@keyframes barok-isik {
+  to { --isik: 70%; }
+}
+@keyframes sis-kay {
+  to { translate: 12% -4%; }
+}
+@keyframes damla {
+  to { transform: scaleY(1.35); }
+}

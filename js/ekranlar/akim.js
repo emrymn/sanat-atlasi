@@ -138,43 +138,83 @@ function eserIzgarasi(eserler, veri) {
     .join('')}</div>`;
 }
 
-// Akım sayfasındaki kimlik kartı: yer tutucuya yazılır
+// Her akım sayfası kendi döneminin üslubuyla giyinir (pekiştir düğmesi ve bölüm başlıkları)
+const USLUPLAR = {
+  antik: ['Antik Yunan ve Roma'],
+  ortacag: ['Romanesk', 'Gotik', 'Uluslararası Gotik'],
+  ronesans: ['Erken Rönesans', 'Kuzey Rönesansı', 'Yüksek Rönesans', 'Venedik Rönesansı', 'Maniyerizm', 'Fransız Klasisizmi'],
+  barok: ['İtalyan Barok ve Caravaggizm', 'İspanyol Barok', 'Flaman Barok', 'Hollanda Altın Çağı', 'Geç İtalyan Barok'],
+  rokoko: ['Rokoko'],
+  neoklasik: ['Neoklasisizm', 'Akademizm ve Oryantalizm'],
+  romantik: ['Romantizm', 'Prerafaelitler', 'Sembolizm'],
+  realizm: ['Barbizon ve Realizm'],
+  empresyonizm: ['Empresyonizm', 'Post-Empresyonizm'],
+  ukiyoe: ['Ukiyo-e (Japon baskısı)'],
+  artnouveau: ['Art Nouveau ve Viyana Secession'],
+  ekspresyonizm: ['Ekspresyonizm', 'Savaş sonrası figürasyon'],
+  kubizm: ['Kübizm'],
+  dada: ['Dada'],
+  surrealizm: ['Sürrealizm'],
+};
+const USLUP_HARITA = new Map(Object.entries(USLUPLAR).flatMap(([u, l]) => l.map((a) => [a, u])));
+export function akimUslubu(ad) {
+  return USLUP_HARITA.get(ad) || 'ronesans';
+}
+
+// Dada'da düğme adı fidye mektubu gibi harf harf karışık kesilir
+function dugmeAdi(ad, uslup) {
+  if (uslup !== 'dada') return kacis(ad);
+  return [...ad].map((c, i) => (c === ' ' ? ' ' : `<span class="kesik" style="--k:${i % 4}">${kacis(c)}</span>`)).join('');
+}
+
+export function pekistirDugmesi(ad, uslup, adet) {
+  return `<div class="donem-cta"><a class="donem-dugme" href="#/pekistir/donem/${encodeURIComponent(ad)}" aria-label="${kacis(ad)} dönemini pekiştir">
+    <span class="donem-dugme-ust">Bu dönemi pekiştir</span>
+    <span class="donem-dugme-ad">${dugmeAdi(ad, uslup)}</span>
+    <span class="donem-dugme-alt">${adet} sanatçı · tura başla</span>
+  </a></div>`;
+}
+
+export { bolumBasligi };
+
+// Akım sayfasındaki kimlik bölümleri iki yer tutucuya yazılır: üstte en önemliler (tanıma, eserler),
+// altta tamamlayıcılar (karşılaştırma, tipik konular). Sanatçılar ve dönem çizelgesi aradadır.
 let kimlikEserleri = [];
 export async function kimlikDoldur(ad) {
-  const kutu = ekran.querySelector('[data-akim-kimlik]');
-  if (!kutu) return;
+  const ustKutu = ekran.querySelector('[data-kimlik-ust]');
+  const altKutu = ekran.querySelector('[data-kimlik-alt]');
+  if (!ustKutu) return;
   const v = await akimVerisi(ad);
-  if (!kutu.isConnected) return;
+  if (!ustKutu.isConnected) return;
   kimlikEserleri = v.eserler;
   const komsular = karsilastirmaKomsulari(ad, d.akimlar).slice(0, 3);
-  kutu.innerHTML = `<section class="akim-kimlik" data-test="akim-kimlik" style="--renk:${akimRenk(ad)}">
-      ${paletSeridi(v.palet)}
+  ustKutu.innerHTML = `${paletSeridi(v.palet)}
       ${
         v.ozellikler.length
           ? `<div class="akim-bolum">${bolumBasligi('Göz eğitimi', 'Nasıl tanınır?')}${tanimaNotlari(v.ozellikler, v.eserler, v.palet)}</div>`
           : ''
       }
       ${
-        v.konular.length
-          ? `<div class="akim-bolum">${bolumBasligi('Tuvallerde en çok', 'Tipik konular')}${konuDizini(v.konular)}</div>`
-          : ''
-      }
-      ${
         v.eserler.length
           ? `<div class="akim-bolum">${bolumBasligi('Duvardakiler', 'En bilinen eserler')}${eserIzgarasi(v.eserler, 'data-kimlik-eser')}</div>`
           : ''
-      }
+      }`;
+  if (!altKutu) return;
+  altKutu.innerHTML = `${
+    komsular.length
+      ? `<div class="akim-bolum">${bolumBasligi('Karıştırma', 'Yan yana koy')}<p class="akim-komsular akim-komsu-liste">${komsular
+          .map(
+            (k) =>
+              `<a href="${akimKarsilastirmaAdresi(ad, k)}" data-test="akim-karsilastir-bag" style="--karsi:${akimRenk(k)}"><span class="akim-komsu-nokta" aria-hidden="true"></span><span>${kacis(ad)} <i>ile</i> ${kacis(k)}</span><span class="akim-komsu-ok" aria-hidden="true">→</span></a>`,
+          )
+          .join('')}</p></div>`
+      : ''
+  }
       ${
-        komsular.length
-          ? `<div class="akim-bolum">${bolumBasligi('Karıştırma', 'Yan yana koy')}<p class="akim-komsular akim-komsu-liste">${komsular
-              .map(
-                (k) =>
-                  `<a href="${akimKarsilastirmaAdresi(ad, k)}" data-test="akim-karsilastir-bag" style="--karsi:${akimRenk(k)}"><span class="akim-komsu-nokta" aria-hidden="true"></span><span>${kacis(ad)} <i>ile</i> ${kacis(k)}</span><span class="akim-komsu-ok" aria-hidden="true">→</span></a>`,
-              )
-              .join('')}</p></div>`
+        v.konular.length
+          ? `<div class="akim-bolum">${bolumBasligi('Tuvallerde en çok', 'Tipik konular')}${konuDizini(v.konular)}</div>`
           : ''
-      }
-    </section>`;
+      }`;
 }
 
 // ---------- Akım karşılaştırması ----------
