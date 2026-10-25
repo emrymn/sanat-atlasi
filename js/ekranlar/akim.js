@@ -426,6 +426,33 @@ function sahneyiBaslat(dugme) {
   gozcu.observe(dugme);
 }
 
+// Dönemin hikâyesi (data/akim_bilgi.json): sayfanın başında, birkaç satırla kısaltılmış; "Devamını oku" açar.
+// Metin sığıyorsa düğme gizlenir (hikayeyiHazirla).
+function donemHikayesi(ad) {
+  const b = d.akimBilgi && d.akimBilgi.akimlar && d.akimBilgi.akimlar[ad];
+  if (!b || !b.metin) return '';
+  const yer = (b.yer || '').split(';')[0].trim();
+  const kunye = [b.donem, yer].filter(Boolean).map(kacis).join(' · ');
+  return `<div class="akim-bolum akim-hikaye" data-test="akim-hikaye">${bolumBasligi('Kısaca', 'Dönemin hikâyesi')}
+      ${kunye ? `<p class="akim-hikaye-kunye">${kunye}</p>` : ''}
+      <p class="okuma akim-hikaye-metin" id="akim-hikaye-metin">${kacis(b.metin)}</p>
+      <button type="button" class="akim-hikaye-dugme" data-hikaye-ac aria-expanded="false" aria-controls="akim-hikaye-metin" hidden>Devamını oku</button>
+    </div>`;
+}
+function hikayeyiHazirla(kutu) {
+  const metin = kutu.querySelector('.akim-hikaye-metin');
+  const dugme = kutu.querySelector('[data-hikaye-ac]');
+  if (!metin || !dugme) return;
+  if (metin.scrollHeight <= metin.clientHeight + 2) return;
+  kutu.querySelector('.akim-hikaye').classList.add('kesik');
+  dugme.hidden = false;
+  dugme.addEventListener('click', () => {
+    const acik = kutu.querySelector('.akim-hikaye').classList.toggle('acik');
+    dugme.setAttribute('aria-expanded', String(acik));
+    dugme.textContent = acik ? 'Kısalt' : 'Devamını oku';
+  });
+}
+
 // Akım sayfasındaki kimlik bölümleri iki yer tutucuya yazılır: üstte en önemliler (tanıma, eserler),
 // altta tamamlayıcılar (karşılaştırma, tipik konular). Sanatçılar ve dönem çizelgesi aradadır.
 let kimlikEserleri = [];
@@ -439,6 +466,7 @@ export async function kimlikDoldur(ad) {
   dugmeyiGiydir(ad, v.eserler);
   const komsular = karsilastirmaKomsulari(ad, d.akimlar).slice(0, 3);
   ustKutu.innerHTML = `${paletSeridi(v.palet)}
+      ${donemHikayesi(ad)}
       ${
         v.ozellikler.length
           ? `<div class="akim-bolum">${bolumBasligi('Göz eğitimi', 'Nasıl tanınır?')}${tanimaNotlari(v.ozellikler, v.eserler, v.palet)}</div>`
@@ -449,6 +477,7 @@ export async function kimlikDoldur(ad) {
           ? `<div class="akim-bolum">${bolumBasligi('Duvardakiler', 'En bilinen eserler')}${eserIzgarasi(v.eserler, 'data-kimlik-eser')}</div>`
           : ''
       }`;
+  hikayeyiHazirla(ustKutu);
   if (!altKutu) return;
   altKutu.innerHTML = `${
     komsular.length
