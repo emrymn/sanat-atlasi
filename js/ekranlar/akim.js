@@ -125,7 +125,7 @@ function konuDizini(l) {
     .join('<span class="akim-konu-ayrac" aria-hidden="true">·</span>')}</p>`;
 }
 
-function bolumBasligi(ust, baslik) {
+export function bolumBasligi(ust, baslik) {
   return `<header class="akim-bolum-bas"><span>${kacis(ust)}</span><h2>${kacis(baslik)}</h2></header>`;
 }
 
@@ -422,8 +422,6 @@ function sahneyiBaslat(dugme) {
   );
   gozcu.observe(dugme);
 }
-
-export { bolumBasligi };
 
 // Akım sayfasındaki kimlik bölümleri iki yer tutucuya yazılır: üstte en önemliler (tanıma, eserler),
 // altta tamamlayıcılar (karşılaştırma, tipik konular). Sanatçılar ve dönem çizelgesi aradadır.
