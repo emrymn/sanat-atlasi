@@ -140,6 +140,7 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     </div>
     <button type="button" class="harita-vakit" data-harita-vakit aria-label="${tur === 'gece' ? 'Gündüze geç' : 'Geceye geç'}">${ikon(tur === 'gece' ? 'gunes' : 'ay', 20, 1.6)}</button>
     <p class="harita-zaman" data-harita-zaman data-test="harita-zaman"><span class="harita-zaman-ic"><b></b><span></span></span></p>
+    <div class="harita-bolum-kart" data-harita-kart data-test="harita-kart" aria-hidden="true"><span class="harita-bolum-kart-ic"><span class="harita-bolum-kart-cizgi"></span><span class="harita-bolum-kart-yuzyil"></span><b></b><span class="harita-bolum-kart-bilgi"></span><span class="harita-bolum-kart-cizgi"></span></span></div>
     <div class="harita ${tur}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
       ${harita.bolgeler
         .map(
@@ -219,6 +220,8 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
 
   // ---------- "Buradasın" ----------
 function konumaKaydir(yumusak = false) {
+  // uygulamanın kendi kaydırması (açılış, "Buradasın") dönem kartlarını oynatmaz
+  kartSustur = Date.now() + (yumusak ? 1500 : 400);
   const el = ekran.querySelector('.harita-durak.simdiki');
   if (!el) return window.scrollTo(0, document.documentElement.scrollHeight);
   const r = el.getBoundingClientRect();
@@ -327,6 +330,7 @@ function kaydirmaIzle() {
   const b = BOLGELER.find((x) => x.id === en);
   if (!b || gosterge.dataset.bolge === en) return;
   const ilk = !gosterge.dataset.bolge;
+  if (!ilk) bolumKarti(b);
   gosterge.dataset.bolge = en;
   gosterge.querySelector('b').textContent = b.ad;
   gosterge.querySelector('b + span').textContent = b.yuzyil;
@@ -336,6 +340,32 @@ function kaydirmaIzle() {
   ic.classList.remove('degisti');
   void ic.offsetWidth; // animasyonu baştan oynatmak için
   ic.classList.add('degisti');
+}
+// Dönem değişince ekranın ortasında kısa bir bölüm kartı: altın çizgi açılır, yüzyıl ve dönemin adı bulanıktan
+// netleşir, sonra yukarı doğru silinir. Hızlı kaydırınca her yeni dönemde baştan oynar. Dokunmayı engellemez.
+let kartSustur = 0;
+let kartZamanlayici = null;
+function bolumKarti(b) {
+  const kart = ekran.querySelector('[data-harita-kart]');
+  if (!kart || azHareket() || Date.now() < kartSustur) return;
+  const liste = (d.haritaDurum && d.haritaDurum.liste) || [];
+  const bolum = liste.filter((x) => bolgeBul(x.sira).id === b.id);
+  const acik = bolum.filter((x) => x.acik).length;
+  kart.querySelector('.harita-bolum-kart-yuzyil').textContent = b.yuzyil;
+  kart.querySelector('b').textContent = b.ad;
+  kart.querySelector('.harita-bolum-kart-bilgi').textContent = `${bolum.length} bölüm · ${acik ? `${acik} açık` : 'henüz kilitli'}`;
+  kart.classList.toggle('kilitli', !acik);
+  kart.classList.remove('oynuyor');
+  void kart.offsetWidth; // animasyonu baştan oynatmak için
+  kart.classList.add('oynuyor');
+  // kart oynarken şeritlerin kendi dönem yazısı gizlenir (aynı ad iki kez üst üste görünmesin)
+  const kap = ekran.querySelector('[data-test="harita"]');
+  kap?.classList.add('kart-acik');
+  clearTimeout(kartZamanlayici);
+  kartZamanlayici = setTimeout(() => {
+    kart.classList.remove('oynuyor');
+    kap?.classList.remove('kart-acik');
+  }, 1900);
 }
 function kaydirmaSirasi() {
   if (kaydirmaBekliyor) return;

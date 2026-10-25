@@ -1121,3 +1121,11 @@ Emre'nin isteği: Bugün sahnesindeki yazı kutuları (Hayatı, Nasıl tanırım
 2. Başlığın (HAYATI vb.) yanından sağa doğru sönen ince altın bir çizgi uzanır; okuma metni 19 px; ilk harf altın renkte ve büyük. "Devamını oku →" artık çizgisiz, 44 px dokunma yüksekliğinde.
 3. Kaydırınca tablo biraz daha kararır (parlaklık 0.62 → 0.52): ışıklı tablolarda da yazı okunsun.
 4. **Metinler tam açık, Notlarımdan kalktı (v1.34.8, Emre'nin isteği):** sahnedeki etiketler kesilmez, "Devamını oku" ve dokununca açma kalktı (ilgili JS ve CSS silindi). "Notlarımdan" sahneden kaldırıldı (Günün sanatçısı sayfasındaki not yerinde). Uzun biyografi ekrandan uzun olabildiğinden: arkadaki karartma boydan bağımsız (üstte ve altta 90 px'te söner, yanlarda maske), belirip silinme animasyonu da kenarlara bağlı (üst kenar ilk 300 px'te netleşir, alt kenar son 220 px'te silinir) — okunurken solmaz.
+
+## İş 34 · Harita: her dönem geçişinde bölüm kartı (2026-10-25, v1.35.0)
+
+Emre: "harita kısmında kaydırma çok hızlı geçiyor, her dönem geçişinde bir animasyon olsun".
+1. Sağ üstteki zaman göstergesinin dönem değişimini algılayan yer (ekranın ortasına en yakın dönem resmi) aynı anda ekranın ortasında **bölüm kartı** oynatır (`bolumKarti`, js/ekranlar/harita.js): kısa süre kararan yumuşak bir hale (kenarsız), açılan iki altın çizgi arasında yüzyıl, dönemin adı (bulanıktan netleşir) ve "N bölüm · M açık / henüz kilitli"; 1,9 sn sonra yukarı doğru silinir. Kart sabit (fixed) olduğu için şerit hızla geçse de ekranda kalır; geçişi yavaşlatma hissi buradan gelir. Kaydırma kilidi ya da yakalama (scroll-snap) eklenmedi: "Buradasın"a kaydırmayı bozar, parmağı tutar.
+2. Hızlı kaydırınca her yeni dönemde kart baştan oynar. Kart oynarken şeritlerin kendi dönem yazısı gizlenir (aynı ad iki kez üst üste görünüyordu). Dokunmayı engellemez (`pointer-events: none`).
+3. Uygulamanın kendi kaydırması (açılışta "buradasın"a, "Buradasın" düğmesi) kart oynatmaz. Hareket azaltma açıksa kart yok (gösterge yeterli). İlk açılışta da yok.
+4. Test: `tests/e2e/harita.spec.js` (Rönesans'a kaydırınca kart Rönesans'ı duyurur, kendiliğinden kapanır).
