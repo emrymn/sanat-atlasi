@@ -105,10 +105,9 @@ function turKarti(tur, g) {
 // Bugün sahnesi: tablo ekranı kaplar ve kaydırırken yerinde kalır; kaydırdıkça tabloya yaklaşılır
 // (büyür, kararır) ve üstünden müze duvar etiketleri geçer. Tablonun önünde düğme yok; Pekiştir alt çubukta.
 function sahneHtml(gs, { tekrar, tur, devam, g }) {
-  const not = gs.kurs_notu || gs.anlatim;
   const tn = taninma(gs);
-  const panel = (baslik, metin, italik) =>
-    `<div class="sahne-panel"><div class="duvar-etiketi">${etiket(baslik, { vurgu: true })}<p class="okuma${italik ? ' italik' : ''}">${kacis(metin)}</p></div></div>`;
+  const panel = (baslik, metin) =>
+    `<div class="sahne-panel"><div class="duvar-etiketi">${etiket(baslik, { vurgu: true })}<p class="okuma">${kacis(metin)}</p></div></div>`;
   return `<section class="sahne${devam ? ' devam-alti' : ''}" data-test="gunun-kart">
       <div class="bugun-kahraman sahne-yapiskan" data-gunun-gorsel>
         <span class="egim-isik" aria-hidden="true"></span>
@@ -120,7 +119,6 @@ function sahneHtml(gs, { tekrar, tur, devam, g }) {
       <div class="sahne-paneller">
         <div class="sahne-panel" data-sahne-bio hidden><div class="duvar-etiketi">${etiket('Hayatı', { vurgu: true })}<p class="okuma"></p></div></div>
         ${tn ? panel('Nasıl tanırım?', tn, false) : ''}
-        ${not ? panel('Notlarımdan', not, true) : ''}
       </div>
     </section>`;
 }
@@ -204,7 +202,6 @@ export function anaSayfa() {
     sahneBiyografisi(gs);
     anaGaleriDoldur(gs);
     eserKareleriDoldur();
-    etiketleriIsaretle();
   } else ekranRengi(null, null);
   for (const el of ekran.querySelectorAll('[data-mini]')) {
     sanatciEserleri(d.harita.get(el.dataset.mini)).then((eserler) => {
@@ -316,26 +313,6 @@ async function sahneBiyografisi(gs) {
   if (!bio || !bio.metin) return kutu.remove();
   kutu.querySelector('.okuma').textContent = bio.metin;
   kutu.hidden = false;
-  etiketleriIsaretle();
-}
-
-// Duvar etiketlerinde metin sığmıyorsa etiket dokunulabilir olur; dokununca tamamı açılır, yine dokununca kısalır
-function etiketleriIsaretle() {
-  for (const el of ekran.querySelectorAll('.duvar-etiketi')) {
-    const p = el.querySelector('.okuma');
-    if (!p || el.classList.contains('acik') || el.closest('[hidden]')) continue;
-    const kesik = p.scrollHeight > p.clientHeight + 2;
-    el.classList.toggle('kesik', kesik);
-    if (kesik) {
-      el.setAttribute('role', 'button');
-      el.tabIndex = 0;
-      el.setAttribute('aria-expanded', 'false');
-    }
-  }
-}
-function etiketiCevir(el) {
-  const acik = el.classList.toggle('acik');
-  el.setAttribute('aria-expanded', String(acik));
 }
 
 let ekVeri = null;
@@ -479,19 +456,6 @@ export function olaylariBagla() {
     if (yk) {
       d.yenilikKapali = true;
       yk.closest('.yenilik-not').remove();
-    }
-  });
-
-  ekran.addEventListener('click', (e) => {
-    const el = e.target.closest('.duvar-etiketi.kesik');
-    if (el) etiketiCevir(el);
-  });
-
-  ekran.addEventListener('keydown', (e) => {
-    const el = (e.key === 'Enter' || e.key === ' ') && e.target.closest?.('.duvar-etiketi.kesik');
-    if (el) {
-      e.preventDefault();
-      etiketiCevir(el);
     }
   });
 
