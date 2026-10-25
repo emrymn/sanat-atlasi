@@ -9502,69 +9502,60 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
   animation: none;
 }
 
-/* ===== Defter: "İşlendi yap" bir fırça darbesi =====
-   Düğmenin kendisi saydam; arkasındaki mürekkep izi pürüzlü kenarlı, sonu kuru fırça gibi dağılan bir darbedir
-   ve her çizimde soldan sağa sürülür. Yazı darbenin peşinden, el yazısı inceliğinde italik serif. */
-.siradaki .siradaki-dugme.firca,
-.siradaki.resimli .siradaki-dugme.firca {
-  position: relative;
-  isolation: isolate;
-  min-height: 52px;
-  padding: 0 34px 2px 26px;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
+/* ===== Defter: "İşlendi yap" ince çerçeveli hap (Emre seçti, tasarım B) =====
+   Boşken ince vurgu çerçevesi ve boş halka; dokununca soldan sağa vurgu rengiyle dolar, halka tik olur, yazı
+   "İşlendi"ye döner, ardından sıradaki konu kayarak gelir (js: ilerleme.js). Eski fırça darbesinin yerine. */
+.siradaki .siradaki-dugme.isle-ince,
+.siradaki.resimli .siradaki-dugme.isle-ince {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 22px 0 16px;
+  border: 1px solid var(--vurgu-acik);
+  border-radius: 999px;
+  background-color: transparent;
+  background-image: linear-gradient(var(--vurgu-acik), var(--vurgu-acik));
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
   box-shadow: none;
-  color: var(--bg);
-  font: italic 400 21px/1 var(--serif);
-  letter-spacing: 0.01em;
-  overflow: visible;
+  color: var(--ink);
+  font: 600 15px/1 var(--sans);
+  letter-spacing: 0.02em;
+  transition:
+    background-size 0.45s cubic-bezier(0.3, 0.7, 0.2, 1),
+    color 0.25s ease 0.1s;
 }
-.siradaki .siradaki-dugme.firca::before,
-.siradaki .siradaki-dugme.firca::after { content: none; }
-.firca-iz {
-  position: absolute;
-  z-index: -1;
-  inset: -4px -10px -2px -8px;
-  --firca-renk: var(--ink);
-  background:
-    repeating-linear-gradient(178deg, rgba(0, 0, 0, 0.16) 0 1px, transparent 1px 4px),
-    linear-gradient(180deg, color-mix(in srgb, var(--firca-renk) 86%, #fff) 0%, var(--firca-renk) 45%, color-mix(in srgb, var(--firca-renk) 82%, #000) 100%);
-  -webkit-mask: var(--firca-sekil) center / 100% 100% no-repeat;
-  mask: var(--firca-sekil) center / 100% 100% no-repeat;
-  --firca-sekil: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 60' preserveAspectRatio='none'%3E%3Cpath fill-rule='evenodd' d='M6 31C5 21 13 13 27 11C52 8 82 10 112 8C146 6 182 7 206 8C220 9 231 11 236 15C239 18 234 20 229 21C236 23 240 27 237 30C233 32 228 32 226 33C234 35 239 39 235 43C231 46 225 46 221 47C228 49 230 52 224 53C198 56 160 53 122 55C86 57 52 55 28 52C14 50 6 42 6 31ZM172 18C190 17 210 18 226 19C210 20 190 20 172 20ZM150 40C172 39 196 40 214 41C196 42 172 42 150 42ZM120 27C150 26 182 27 204 28C182 29 150 29 120 29ZM190 46C200 45 210 46 218 47C210 48 200 48 190 48Z'/%3E%3C/svg%3E");
-  clip-path: inset(0 0 0 0);
-  transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.25, 1.2);
+.siradaki .siradaki-dugme.isle-ince::before,
+.siradaki .siradaki-dugme.isle-ince::after { content: none; }
+.isle-halka {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--vurgu-acik);
+  border-radius: 50%;
+  transition: border-color 0.25s ease;
 }
-.siradaki.resimli .firca-iz { --firca-renk: var(--vurgu); }
-.siradaki.resimli .siradaki-dugme.firca { color: var(--vurgu-yazi); }
-.firca-yazi {
-  position: relative;
-  display: inline-block;
+.isle-halka svg {
+  opacity: 0;
+  transform: scale(0.4);
+  transition:
+    opacity 0.2s ease 0.2s,
+    transform 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.4) 0.2s;
 }
-.siradaki .siradaki-dugme.firca:hover .firca-iz { transform: scaleX(1.04) rotate(-0.6deg); }
-.siradaki .siradaki-dugme.firca:active { transform: scale(0.97); color: var(--bg); }
-.siradaki.resimli .siradaki-dugme.firca:active { color: var(--vurgu-yazi); }
-.siradaki .siradaki-dugme.firca:focus-visible {
-  outline: 2px solid var(--ink);
-  outline-offset: 6px;
+.siradaki .siradaki-dugme.isle-ince:hover .isle-halka svg { opacity: 0.45; transform: scale(0.8); }
+.siradaki .siradaki-dugme.isle-ince:active { transform: scale(0.97); background-color: transparent; color: var(--ink); }
+.siradaki .siradaki-dugme.isle-ince.doldu {
+  background-size: 100% 100%;
+  color: var(--vurgu-acik-yazi);
 }
-@media (prefers-reduced-motion: no-preference) {
-  .firca-iz {
-    animation: firca-sur 0.75s 0.15s cubic-bezier(0.55, 0.05, 0.25, 1) both;
-  }
-  .firca-yazi {
-    animation: firca-yazi 0.6s 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-  }
-}
-@keyframes firca-sur {
-  0% { clip-path: inset(0 100% 0 0); transform: skewX(-8deg); }
-  70% { transform: skewX(-2deg); }
-  100% { clip-path: inset(0 0 0 0); transform: none; }
-}
-@keyframes firca-yazi {
-  0% { opacity: 0; clip-path: inset(0 100% 0 0); translate: -6px 0; }
-  100% { opacity: 1; clip-path: inset(0 0 0 0); translate: 0 0; }
+.siradaki-dugme.isle-ince.doldu .isle-halka { border-color: transparent; }
+.siradaki-dugme.isle-ince.doldu .isle-halka svg { opacity: 1; transform: none; }
+.siradaki .siradaki-dugme.isle-ince:focus-visible {
+  outline: 2px solid var(--vurgu-acik);
+  outline-offset: 4px;
 }
 
 /* ===== Akım sayfası: kimlik bölümleri ===== */

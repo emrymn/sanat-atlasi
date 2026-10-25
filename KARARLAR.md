@@ -1145,3 +1145,10 @@ Emre: "dönem açıklamalarını yazdırmıştık, onları dönemin içine ekley
 1. `data/akim_bilgi.json`'daki metin (28 akım, 150–175 kelime; şimdiye kadar akım sayfasında yalnız ilk cümlesi pekiştir düğmesindeydi, tamamı Günün sanatçısı sayfasında) akım sayfasının başına, palet şeridinin altına "Kısaca · Dönemin hikâyesi" bölümü olarak girdi; üstünde dönem ve yer.
 2. 6 satırla kısaltılır, alt kenarı söner; altında "Devamını oku ↓" (44 px), açılınca "Kısalt ↑" (`aria-expanded`). Metin 6 satıra sığarsa düğme hiç görünmez. Metin değişmedi.
 3. Sürüm 1.36.1 (yalnız ekleme; Yenilikler listesine düzeltme sürümleri girmez). Test: `tests/e2e/kesif.spec.js`.
+
+## İş 37 · Defter: "İşlendi yap" ince çerçeveli hap (2026-10-26, v1.36.2)
+
+Emre v0'daki fırça izli "İşlendi yap" için alternatif istedi; tasarım tuvalinde dört seçenek (mühür, ince çerçeve, kaydırarak onayla, defter işareti) gösterildi, Emre **B · ince çerçeve**yi seçti.
+1. Düğme boşken ince vurgu çerçeveli bir hap, solunda boş halka. Dokununca soldan sağa vurgu rengiyle dolar, halka tike döner, yazı "İşlendi" olur; 0,52 sn sonra konu işlenir ve sıradaki konu eskisi gibi kayarak gelir. Dolarken ikinci dokunuş yok sayılır. Hareket azaltma açıksa beklemeden işlenir.
+2. Renk sabit altın değil, uygulamanın o günkü vurgusu (`--vurgu-acik`, dolunca yazı `--vurgu-acik-yazi`): üç temada da okunur.
+3. Fırça darbesi kaldırıldı (`.firca-iz`, `.firca-yazi` ve onların `@keyframes firca-sur`/`firca-yazi` kuralları). İkinci `firca-sur` tanımı Günün tablosundaki altı çizili yazının aynı adlı animasyonunu eziyordu; o da düzeldi.
