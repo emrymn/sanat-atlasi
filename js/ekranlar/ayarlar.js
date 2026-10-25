@@ -9,7 +9,8 @@ import { acikListe, bugun, kotuler, d, gununRengi, ciz, ust, TEMA_AD, TAHMINI_GO
 import { yedekTarihiYaz } from './bugun.js';
 import { yarimSil } from './pekistir.js';
 import { SURUM } from '../surum.js';
-import { egimVar, izinGerekli, egimIzni } from '../egim.js';
+import { egimVar, izinGerekli, egimIzni, izinVarMi } from '../egim.js';
+import { ikon } from '../tasarim.js';
 import { kacis } from '../yardimci.js';
 import { vadeSayisi, yarinVade } from '../gecmis.js';
 import { rozetDestekli, rozetYaz, rozetIzni } from '../rozet.js';
@@ -79,8 +80,9 @@ export function ayarlarSayfasi() {
       <div class="ayar"><label class="konu"><span class="metin"><b>Simge rozeti</b><small>${rozetDestekli() ? 'Ana ekrandaki Atlas simgesinde tekrarı gelen sanatçı sayısı görünür. İzin ister; sayı uygulama kapanırken yarının sayısına ayarlanır.' : 'Bu tarayıcı simge rozetini desteklemiyor (iOS 16.4+ ana ekran uygulaması gerekir).'}</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-rozet ${a.rozet ? 'checked' : ''} ${rozetDestekli() ? '' : 'disabled'} aria-label="Simge rozeti"></label>
         <p class="mesaj" id="rozet-mesaj" aria-live="polite"></p></div>
-      <div class="ayar"><label class="konu"><span class="metin"><b>Telefonu eğince tablo oynasın</b><small>${egimVar() ? 'Bugün’deki günün tablosu telefonu sağa sola çevirdikçe, öne arkaya eğdikçe hafifçe döner, ışık üstünden kayar.' + (izinGerekli() ? ' iPhone hareket izni ister.' : '') : 'Bu tarayıcı hareket algılayıcısını desteklemiyor.'}</small></span>
+      <div class="ayar"><label class="konu"><span class="metin"><b>Telefonu eğince tablo oynasın</b><small>${egimVar() ? 'Bugün’deki günün tablosu telefonu sağa sola çevirdikçe, öne arkaya eğdikçe hafifçe döner, ışık üstünden kayar.' + (izinGerekli() ? ' iPhone hareket izni ister ve uygulama kapanınca çoğu zaman unutur: o zaman Bugün’deki ya da buradaki düğmeyle yeniden ver.' : '') : 'Bu tarayıcı hareket algılayıcısını desteklemiyor.'}</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-egim ${a.egim !== false ? 'checked' : ''} ${egimVar() ? '' : 'disabled'} aria-label="Telefonu eğince tablo oynasın"></label>
+        <button class="dugme ince" type="button" data-egim-izin data-test="egim-izin" hidden>${ikon('hareket', 18, 1.6)} Hareket iznini ver</button>
         <p class="mesaj" id="egim-mesaj" aria-live="polite"></p></div>
       <div class="ayar"><b>Görselleri çevrimdışı indir</b>
         <p id="indir-bilgi">Açık sanatçıların pekiştirme görselleri (sanatçı başına en fazla ${TEST_HAVUZU}) hesaplanıyor…</p>
@@ -107,6 +109,17 @@ export function ayarlarSayfasi() {
     </div>
     <p class="alt-not">Sanat Atlası ${SURUM} · Görseller: Wikimedia Commons, müze açık erişim koleksiyonları ve WikiArt · Eser listeleri: Wikidata</p>`);
   indirBilgisi();
+  egimIzinDugmesi();
+}
+
+// "Hareket iznini ver": yalnız izin isteyen tarayıcıda (iPhone), hareket açıkken ve iOS izni hatırlamıyorsa görünür
+async function egimIzinDugmesi() {
+  const btn = ekran.querySelector('[data-egim-izin]');
+  if (!btn) return;
+  btn.hidden = true;
+  if (!izinGerekli() || d.ilerleme.ayarlar.egim === false) return;
+  const hatirliyor = await izinVarMi();
+  if (btn.isConnected) btn.hidden = hatirliyor;
 }
 
 async function indirBilgisi() {
@@ -177,6 +190,14 @@ export function olaylariBagla() {
       return;
     }
     if (e.target.closest('[data-indir]')) return gorselleriIndir();
+    if (e.target.closest('[data-egim-izin]')) {
+      const m = document.getElementById('egim-mesaj');
+      const tamam = await egimIzni();
+      m.className = `mesaj ${tamam ? 'tamam' : 'hata'}`;
+      m.textContent = tamam ? 'İzin verildi: Bugün’de telefonu çevir.' : 'Hareket izni verilmedi. Uygulamayı kapatıp açınca yeniden sorulur.';
+      egimIzinDugmesi();
+      return;
+    }
     if (e.target.closest('[data-bildirim-kopyala]')) {
       const metin = bildirimMetni(d.ilerleme);
       const ta = document.getElementById('bildirim-cikti');
@@ -273,7 +294,8 @@ export function olaylariBagla() {
       d.ilerleme.ayarlar.egim = e.target.checked;
       kaydet();
       m.className = 'mesaj tamam';
-      m.textContent = e.target.checked ? 'Açıldı: Bugün’de telefonu eğ.' : 'Kapatıldı.';
+      m.textContent = e.target.checked ? 'Açıldı: Bugün’de telefonu çevir.' : 'Kapatıldı.';
+      egimIzinDugmesi();
       return;
     }
     if (e.target.matches('[data-ayar-tanisma]')) {

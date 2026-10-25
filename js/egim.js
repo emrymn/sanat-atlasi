@@ -4,7 +4,10 @@
 // (iPhone duvar kâğıdındaki gibi). Telefon hangi açıda tutulursa tutulsun aynı çalışır; cihaz açıları (beta/gamma)
 // telefon dikken kararsızlaşıp (gimbal kilidi) adı rastgele yerlere atıyordu. Jiroskop yoksa açılar yedek olarak,
 // takla atmayan biçimde kullanılır.
-// iOS hareket verisini ancak bir dokunuşla istenen izinle verir (DeviceMotionEvent.requestPermission).
+// iOS hareket verisini ancak izinle verir (DeviceMotionEvent.requestPermission). İzin istemek dokunuş ister ve iOS izni
+// kalıcı tutmaz (uygulama kapanıp açılınca çoğu zaman unutur). Açılışta önce dokunuşsuz sorulur: iOS hatırlıyorsa kutu
+// çıkmadan evet der; hatırlamıyorsa tablonun üstünde "Hareketi aç" düğmesi belirir, izin yalnız ona (ya da Ayarlar'daki
+// düğmeye) dokununca istenir.
 // Saf hesap burada (birim testli); CSS değişkenleri: --egx, --egy (-1…1), --egim-eksen (rotate değeri) tablo için;
 // --yzx, --yzy ad için (aynı değer, daha yavaş izler).
 
@@ -83,6 +86,20 @@ export const izinGerekli = () => egimVar() && !!izinVeren();
 const azHareket = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 let izinDurumu = null; // null: sorulmadı, true / false
+// Dokunuşsuz soru: iOS daha önceki izni hatırlıyorsa evet; hatırlamıyorsa (dokunuş gerektiği için) hayır, kutu açılmaz.
+// Hayır, reddedildi sayılmaz.
+export async function izinVarMi() {
+  if (izinDurumu !== null) return izinDurumu;
+  const t = izinVeren();
+  if (!t) return egimVar();
+  try {
+    if ((await t.requestPermission()) === 'granted') izinDurumu = true;
+  } catch {
+    // dokunuş gerekiyor: düğme gösterilecek
+  }
+  return izinDurumu === true;
+}
+
 // Dokunuşun içinden çağrılmalı (iOS; hareket ve yön için tek izin); izin gerekmeyen tarayıcıda hemen evet
 export async function egimIzni() {
   if (!egimVar()) return false;
@@ -101,7 +118,6 @@ let hedef = { x: 0, y: 0 };
 let anlik = { x: 0, y: 0 };
 let yazi = { x: 0, y: 0 };
 let kare = 0;
-let bekleyen = null; // izin için beklenen ilk dokunuş
 // jiroskop
 let donus = { x: 0, y: 0 };
 let sonZaman = 0;
@@ -149,40 +165,39 @@ function ciz() {
   if (uzak(anlik) || uzak(yazi)) kare = requestAnimationFrame(ciz);
 }
 
-// el: tablonun kutusu. acik: ayardaki seçim. İzin gerekiyorsa ve henüz alınmadıysa ilk dokunuşta istenir.
+// el: tablonun kutusu (içinde [data-egim-dugme] "Hareketi aç" düğmesi). acik: ayardaki seçim.
 export function egimBaslat(el, acik) {
   egimDurdur();
   if (!el || !acik || !egimVar() || azHareket() || izinDurumu === false) return;
   kok = el;
   const dinle = () => {
     if (kok !== el) return;
+    el.classList.remove('egim-izinsiz');
     window.addEventListener('devicemotion', hareket);
     window.addEventListener('deviceorientation', yon);
     el.classList.add('egimli');
   };
   if (!izinGerekli() || izinDurumu) return dinle();
-  bekleyen = async () => {
-    dokunusuBirak();
-    if (await egimIzni()) dinle();
-  };
-  document.addEventListener('click', bekleyen, true);
-  document.addEventListener('touchend', bekleyen, true);
-}
-
-function dokunusuBirak() {
-  if (!bekleyen) return;
-  document.removeEventListener('click', bekleyen, true);
-  document.removeEventListener('touchend', bekleyen, true);
-  bekleyen = null;
+  const dugme = el.querySelector('[data-egim-dugme]');
+  if (dugme) {
+    dugme.onclick = async () => {
+      if (await egimIzni()) dinle();
+      else el.classList.remove('egim-izinsiz'); // reddedildi: bu açılışta bir daha sorulmaz
+    };
+  }
+  izinVarMi().then((hatirliyor) => {
+    if (kok !== el) return;
+    if (hatirliyor) dinle();
+    else if (dugme) el.classList.add('egim-izinsiz');
+  });
 }
 
 export function egimDurdur() {
-  dokunusuBirak();
   window.removeEventListener('devicemotion', hareket);
   window.removeEventListener('deviceorientation', yon);
   if (kare) cancelAnimationFrame(kare);
   kare = 0;
-  if (kok) kok.classList.remove('egimli');
+  if (kok) kok.classList.remove('egimli', 'egim-izinsiz');
   kok = null;
   hedef = { x: 0, y: 0 };
   anlik = { x: 0, y: 0 };

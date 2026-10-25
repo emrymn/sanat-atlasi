@@ -2894,6 +2894,7 @@ main[data-hareket='giris'][data-yon='sol'] > :not(.alt-yaprak) {
 }
 .bugun-kahraman.egimli .sahne-isim .ad-son::before {
   content: attr(data-ad);
+  content: attr(data-ad) / ''; /* ekran okuyucu adı iki kez okumasın (destekleyen tarayıcıda) */
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -2902,6 +2903,48 @@ main[data-hareket='giris'][data-yon='sol'] > :not(.alt-yaprak) {
   filter: blur(5px);
   translate: calc(var(--yzx, 0) * -10px) calc(3px + var(--yzy, 0) * -7px);
   pointer-events: none;
+}
+/* "Hareketi aç": iOS izni hatırlamıyorsa tablonun sağ üstünde (js/egim.js .egim-izinsiz ekler); izin yalnız buna
+   dokununca istenir, ekranın rastgele bir yerine dokununca kutu çıkmaz */
+.egim-dugme {
+  display: none;
+}
+.bugun-kahraman.egim-izinsiz .egim-dugme {
+  position: absolute;
+  z-index: 3;
+  top: calc(env(safe-area-inset-top) + 52px);
+  right: calc(env(safe-area-inset-right) + var(--yan));
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 0 14px 0 12px;
+  border: 1px solid rgba(201, 162, 74, 0.7);
+  border-radius: 999px;
+  background: rgba(var(--bg-rgb), 0.62);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  backdrop-filter: blur(14px) saturate(1.3);
+  color: var(--ink);
+  font: 600 13px/1 var(--sans);
+  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.6);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .bugun-kahraman.egim-izinsiz .egim-dugme .ikon {
+    animation: egim-salla 2.4s ease-in-out infinite;
+  }
+}
+@keyframes egim-salla {
+  0%,
+  60%,
+  100% {
+    rotate: 0deg;
+  }
+  70% {
+    rotate: -14deg;
+  }
+  85% {
+    rotate: 14deg;
+  }
 }
 .egim-isik {
   display: none;
