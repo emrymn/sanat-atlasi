@@ -77,13 +77,17 @@ test('Bugün: duvar etiketleri tam açık gelir, Notlarımdan yok; mozaik sayfan
     expect(await p.evaluate((x) => x.scrollHeight - x.clientHeight)).toBeLessThanOrEqual(1);
     await expect(el).not.toHaveAttribute('role', 'button');
   }
-  // mozaik zemini ekranın altına kadar iner
-  const fark = await page.evaluate(() => {
-    const h = document.querySelector('.hikaye');
-    const alt = h.getBoundingClientRect().bottom - parseFloat(getComputedStyle(h, '::before').bottom);
-    return Math.abs(document.getElementById('uygulama').getBoundingClientRect().bottom - alt);
-  });
-  expect(fark).toBeLessThan(2);
+  // mozaik zemini ekranın altına kadar iner (sayfa geç gelen içerikle yerleşene kadar beklenir: hemen ölçülünce
+  // yavaş makinede yerleşmemiş düzen yakalanıyordu)
+  await expect
+    .poll(() =>
+      page.evaluate(() => {
+        const h = document.querySelector('.hikaye');
+        const alt = h.getBoundingClientRect().bottom - parseFloat(getComputedStyle(h, '::before').bottom);
+        return Math.abs(document.getElementById('uygulama').getBoundingClientRect().bottom - alt);
+      }),
+    )
+    .toBeLessThan(2);
 });
 
 test('V2: elle yazılmış biyografi (Guido Reni) kaynak notuyla görünür', async ({ page }) => {
