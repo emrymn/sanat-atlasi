@@ -39,7 +39,7 @@ import {
   guncelMi,
 } from './ortak.js';
 import { donemCizelgesi, pekistirmedeMi, notBolumleri, seritUst, eserSeridi } from './bugun.js';
-import { kimlikDoldur } from './akim.js';
+import { kimlikDoldur, akimUslubu, pekistirDugmesi, bolumBasligi } from './akim.js';
 
 // ---------- Başyapıt yakın okumaları ----------
 let basyapitSozu = null;
@@ -344,14 +344,20 @@ export function akimSayfasi(ad) {
   const acik = uyeler.filter((s) => k.has(s.konu));
   const kapali = uyeler.filter((s) => !k.has(s.konu));
   gununRengi();
+  const uslup = akimUslubu(ad);
+  // Sıra en önemliden en az önemliye: tanıma → eserler → sanatçılar → pekiştir → dönem → karşılaştırma → tipik konular
   ciz(`${ust(ad, '#/gozat', { ustEtiket: akimYuzyillari(uyeler, { roma: true }) })}
-    <section class="bolum" style="padding-top:8px">${etiket('Dönemi')}${donemCizelgesi(ad)}</section>
-    <div data-akim-kimlik></div>
-    <section class="bolum">${etiket('Sanatçılar')}
-    <ul class="liste">${acik.map((s) => sanatciSatiri(s, true)).join('')}${kapali.map((s) => sanatciSatiri(s, false)).join('')}</ul></section>
-    ${acik.length ? `<div class="menu"><a class="dugme birincil" href="#/pekistir/donem/${encodeURIComponent(ad)}">Bu akımı pekiştir</a></div>` : ''}`);
+    <section class="akim-kimlik" data-test="akim-kimlik" data-uslup="${uslup}" style="--renk:${akimRenk(ad)}">
+      <div data-kimlik-ust><div class="akim-palet bos" aria-hidden="true"></div></div>
+      <section class="akim-bolum">${bolumBasligi('Ustalar', 'Sanatçılar')}
+        <ul class="liste">${acik.map((s) => sanatciSatiri(s, true)).join('')}${kapali.map((s) => sanatciSatiri(s, false)).join('')}</ul>
+      </section>
+      ${acik.length ? pekistirDugmesi(ad, uslup, acik.length) : ''}
+      <section class="akim-bolum">${bolumBasligi('Zaman çizgisi', 'Dönemi')}${donemCizelgesi(ad)}</section>
+      <div data-kimlik-alt></div>
+    </section>`);
   kucukKareleriDoldur();
-  // K3: kimlik kartı (palet, özellikler, tipik konular, en bilinen eserler) arka planda dolar
+  // K3: kimlik bölümleri (palet, özellikler, eserler, karşılaştırma, tipik konular) arka planda dolar
   kimlikDoldur(ad).catch(() => {});
 }
 

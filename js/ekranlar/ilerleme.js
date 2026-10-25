@@ -59,7 +59,7 @@ function siradakiKonuHtml(k, sayi) {
         <b>${kacis(konuBasligi(x))}</b>
         <small>${n ? `${n} sanatçı açılacak` : 'yeni sanatçı açılmaz'} · Konu ${x.no}</small>
       </div>
-      <button class="dugme siradaki-dugme" type="button" data-konu-isle="${x.no}">İşlendi yap</button>
+      <button class="dugme siradaki-dugme firca" type="button" data-konu-isle="${x.no}"><span class="firca-iz" aria-hidden="true"></span><span class="firca-yazi">İşlendi yap</span></button>
     </section>`;
 }
 
