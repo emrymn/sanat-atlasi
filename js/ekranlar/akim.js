@@ -395,6 +395,9 @@ function dugmeyiGiydir(ad, eserler) {
     const uslup = dugme.dataset.teknik;
     const r = tohumlu(ad);
     sahne.style.setProperty('--resim', `url("${kaynak}")`);
+    // Dikey tablolarda yüz genelde üst üçte birdedir; ortadan kırpınca baş kesilir
+    const oran = img.naturalHeight / img.naturalWidth;
+    sahne.style.setProperty('--odak', oran > 1.05 ? '22%' : oran > 0.85 ? '35%' : '50%');
     if (uslup === 'surrealizm') sahne.style.setProperty('--damla', damlaMaskesi(r));
     sahne.insertAdjacentHTML('beforeend', `<span class="tuval"></span>${sahneParcalari(uslup, r)}`);
     dugme.classList.add('tablolu');
