@@ -66,17 +66,17 @@ test('biyografi ve dönem bilgisi çevrimdışı açılır', async ({ page, cont
   await context.setOffline(false);
 });
 
-test('Bugün: sığmayan duvar etiketi dokununca tamamen açılır; mozaik sayfanın sonuna kadar', async ({ page }) => {
+test('Bugün: duvar etiketleri tam açık gelir, Notlarımdan yok; mozaik sayfanın sonuna kadar', async ({ page }) => {
   await page.goto('./');
-  const etiket = page.locator('.duvar-etiketi.kesik').first();
-  await expect(etiket).toHaveAttribute('aria-expanded', 'false');
-  const metin = etiket.locator('.okuma');
-  const once = (await metin.boundingBox()).height;
-  await etiket.click();
-  await expect(etiket).toHaveAttribute('aria-expanded', 'true');
-  expect((await metin.boundingBox()).height).toBeGreaterThan(once);
-  await etiket.click();
-  await expect(etiket).toHaveAttribute('aria-expanded', 'false');
+  const etiketler = page.locator('.sahne-paneller .duvar-etiketi');
+  await expect(etiketler.first()).toBeVisible();
+  await expect(page.locator('.sahne-paneller')).not.toContainText('Notlarımdan');
+  // metin kesilmez: her etiketin metni kendi kutusuna tam sığar, dokunulacak "Devamını oku" yok
+  for (const el of await etiketler.all()) {
+    const p = el.locator('.okuma');
+    expect(await p.evaluate((x) => x.scrollHeight - x.clientHeight)).toBeLessThanOrEqual(1);
+    await expect(el).not.toHaveAttribute('role', 'button');
+  }
   // mozaik zemini ekranın altına kadar iner
   const fark = await page.evaluate(() => {
     const h = document.querySelector('.hikaye');

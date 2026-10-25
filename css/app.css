@@ -2200,36 +2200,6 @@ html.sekmesiz .sekmeler {
 }
 .duvar-etiketi .okuma {
   margin: 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 9;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-/* sığmayan etiket dokunulabilir: altında "Devamı", açılınca tamamı ve "Kısalt" */
-.duvar-etiketi.kesik {
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-}
-.duvar-etiketi.kesik::after {
-  content: 'Devamı ↓';
-  align-self: flex-start;
-  display: inline-flex;
-  align-items: center;
-  min-height: 28px;
-  font: 500 14px/1 var(--sans);
-  color: var(--vurgu-acik);
-}
-.duvar-etiketi.acik .okuma {
-  display: block;
-  -webkit-line-clamp: none;
-  overflow: visible;
-}
-.duvar-etiketi.acik::after {
-  content: 'Kısalt ↑';
-}
-.duvar-etiketi:focus-visible {
-  outline: 2px solid var(--vurgu-acik);
-  outline-offset: 3px;
 }
 /* Pekiştir: sahne boyunca sekme çubuğunun hemen üstünde duran cam hap */
 .sahne-dugme {
@@ -2692,11 +2662,17 @@ main[data-hareket='giris'] > :nth-child(n + 6) {
       normal,
       0 12svh;
   }
-  /* duvar etiketi alttan belirir, ortada netleşir, yukarıda silinir */
+  /* duvar etiketi alttan belirir, yukarıda silinir; metin tam gösterildiğinden boyu ne olursa olsun
+     okunurken solmasın: giriş üst kenarın, çıkış alt kenarın ilk/son birkaç yüz pikseline bağlı */
   .duvar-etiketi {
-    animation: etiket-gec linear both;
+    animation: etiket-gir linear both;
     animation-timeline: view();
-    animation-range: cover 0% cover 100%;
+    animation-range: cover 0px cover 300px;
+  }
+  .sahne-panel {
+    animation: etiket-cik linear both;
+    animation-timeline: view();
+    animation-range: cover calc(100% - 220px) cover 100%;
   }
 }
 @keyframes yaklas {
@@ -2716,19 +2692,15 @@ main[data-hareket='giris'] > :nth-child(n + 6) {
     transform: translateY(6px);
   }
 }
-@keyframes etiket-gec {
-  0% {
+@keyframes etiket-gir {
+  from {
     opacity: 0;
     transform: translateY(60px) scale(0.96);
     filter: blur(6px);
   }
-  30%,
-  70% {
-    opacity: 1;
-    transform: none;
-    filter: none;
-  }
-  100% {
+}
+@keyframes etiket-cik {
+  to {
     opacity: 0;
     transform: translateY(-40px) scale(0.98);
   }
@@ -8597,12 +8569,16 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   position: absolute;
   z-index: -1;
   inset: -90px calc(-1 * var(--yan));
-  background: radial-gradient(
-    ellipse 72% 58% at 50% 50%,
-    rgba(var(--bg-rgb), 0.72),
-    rgba(var(--bg-rgb), 0.42) 55%,
+  /* metin tam gösterildiğinden boy değişir: karanlık üstte ve altta sabit 90 px'te söner, yanlarda yumuşar */
+  background: linear-gradient(
+    180deg,
+    rgba(var(--bg-rgb), 0) 0,
+    rgba(var(--bg-rgb), 0.62) 90px,
+    rgba(var(--bg-rgb), 0.62) calc(100% - 90px),
     rgba(var(--bg-rgb), 0) 100%
   );
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 22%, #000 78%, transparent);
   pointer-events: none;
 }
 .sahne-paneller .duvar-etiketi .etiket {
@@ -8626,28 +8602,12 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
     0 1px 2px rgba(var(--bg-rgb), 0.55),
     0 0 18px rgba(var(--bg-rgb), 0.75);
 }
-.sahne-paneller .duvar-etiketi .okuma:not(.italik)::first-letter {
+.sahne-paneller .duvar-etiketi .okuma::first-letter {
   float: left;
   font: 400 3.2em/0.8 var(--serif);
   margin: 0.07em 0.1em 0 0;
   color: var(--vurgu-acik);
 }
-.sahne-paneller .duvar-etiketi.kesik:not(.acik) .okuma {
-  -webkit-mask-image: linear-gradient(180deg, #000 68%, transparent);
-  mask-image: linear-gradient(180deg, #000 68%, transparent);
-}
-.sahne-paneller .duvar-etiketi.kesik::after {
-  content: 'Devamını oku →';
-  align-self: flex-start;
-  min-height: 44px;
-  padding: 0;
-  border: none;
-  font: 600 12px/1 var(--sans);
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  text-shadow: 0 1px 8px rgba(var(--bg-rgb), 0.8);
-}
-.sahne-paneller .duvar-etiketi.acik::after { content: 'Kısalt ↑'; }
 
 @media (prefers-reduced-motion: reduce) {
   .ed-zemin img { animation: none; transform: scale(1.1); }
