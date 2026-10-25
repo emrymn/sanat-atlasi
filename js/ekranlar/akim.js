@@ -193,38 +193,234 @@ function dugmeBilgisi(ad) {
   return `${kunye ? `<span class="donem-dugme-kunye">${kunye}</span>` : ''}${cumle ? `<span class="donem-dugme-soz">${kacis(cumle)}</span>` : ''}`;
 }
 
+// Düğmedeki tablo, dönemin kendi tekniğiyle sahnede yeniden kurulur
+const TEKNIKLER = {
+  antik: 'Mozaik — taş taş döşenir',
+  ortacag: 'Vitray — ışık camdan süzülür',
+  ronesans: 'Perspektif — kaçış noktasından kurulur',
+  barok: 'Chiaroscuro — karanlıktan ışığa',
+  rokoko: 'Yelpaze — zarafetle açılır',
+  neoklasik: 'Sütunlar — düzen ve simetri',
+  romantik: 'Fırtına — sisin ardından şimşek',
+  realizm: 'Örtü — olduğu gibi, süssüz',
+  empresyonizm: 'Fırça lekeleri — ışığın izlenimi',
+  ukiyoe: 'Kalıp baskı — önce çizgi, sonra renk',
+  artnouveau: 'Kamçı çizgisi — doğadan doğan biçim',
+  ekspresyonizm: 'Bıçak darbesi — ham duygu',
+  kubizm: 'Yüzeyler — aynı anda her açıdan',
+  dada: 'Kolaj — yırt, yapıştır, karıştır',
+  surrealizm: 'Rüya — akar, süzülür',
+};
+
 export function pekistirDugmesi(ad, uslup, adet) {
-  return `<div class="donem-cta"><a class="donem-dugme" href="#/pekistir/donem/${encodeURIComponent(ad)}" aria-label="${kacis(ad)} dönemini pekiştir">
-    <span class="donem-dugme-tablo" data-dugme-tablo aria-hidden="true"></span>
-    <span class="donem-dugme-ust">Bu dönemi pekiştir</span>
-    <span class="donem-dugme-ad">${dugmeAdi(ad, uslup)}</span>
-    <span class="donem-dugme-bilgi" data-dugme-bilgi>${dugmeBilgisi(ad)}</span>
-    <span class="donem-dugme-alt">${adet} sanatçı · tura başla</span>
-    <span class="donem-dugme-eser" data-dugme-eser></span>
+  return `<div class="donem-cta"><a class="donem-dugme" data-teknik="${uslup}" href="#/pekistir/donem/${encodeURIComponent(ad)}" aria-label="${kacis(ad)} dönemini pekiştir">
+    <span class="donem-sahne" aria-hidden="true" data-dugme-tablo></span>
+    <span class="donem-dugme-etiket">
+      <span class="donem-dugme-ust"><span>Bu dönemi pekiştir</span><span class="donem-dugme-sayi">${adet} sanatçı</span></span>
+      <span class="donem-dugme-ad">${dugmeAdi(ad, uslup)}</span>
+      <span class="donem-dugme-teknik">${kacis(TEKNIKLER[uslup] || '')}</span>
+      <span class="donem-dugme-bilgi" data-dugme-bilgi>${dugmeBilgisi(ad)}</span>
+      <span class="donem-dugme-eser" data-dugme-eser></span>
+      <span class="donem-dugme-ok">Tura başla <span aria-hidden="true">&rarr;</span></span>
+    </span>
   </a></div>`;
 }
 
-// Kimlik verisi gelince düğmenin içine dönemin en bilinen eseri (yavaşça gezinen tablo) ve dönem bilgisi yerleşir
+// Dönem adından türeyen tohumlu rastgele: her ziyarette aynı kompozisyon
+function tohumlu(metin) {
+  let h = 2166136261;
+  for (const c of metin) h = Math.imul(h ^ c.charCodeAt(0), 16777619);
+  return () => {
+    h = Math.imul(h ^ (h >>> 15), 2246822507);
+    h = Math.imul(h ^ (h >>> 13), 3266489909);
+    return ((h ^= h >>> 16) >>> 0) / 4294967296;
+  };
+}
+
+const yuzde = (n) => `${n.toFixed(2)}%`;
+const parca = (sinif, stil) => `<span class="${sinif}" style="${stil}"></span>`;
+
+// Titreşimli ızgara: komşu hücreler köşe paylaşır, böylece parçalar kusursuz birleşir
+function titrekIzgara(sutun, satir, oynama, r) {
+  const n = [];
+  for (let y = 0; y <= satir; y++)
+    for (let x = 0; x <= sutun; x++) {
+      const kenarX = x === 0 || x === sutun;
+      const kenarY = y === 0 || y === satir;
+      n.push([
+        (x / sutun) * 100 + (kenarX ? 0 : (r() - 0.5) * oynama),
+        (y / satir) * 100 + (kenarY ? 0 : (r() - 0.5) * oynama),
+      ]);
+    }
+  const nokta = (x, y) => n[y * (sutun + 1) + x];
+  const hucreler = [];
+  for (let y = 0; y < satir; y++)
+    for (let x = 0; x < sutun; x++) hucreler.push({ x, y, k: [nokta(x, y), nokta(x + 1, y), nokta(x + 1, y + 1), nokta(x, y + 1)] });
+  return hucreler;
+}
+
+// Çokgeni ağırlık merkezine doğru büzer: aradaki boşluk kurşun/derz çizgisi olur
+function cokgen(koseler, buzme) {
+  const mx = koseler.reduce((s, k) => s + k[0], 0) / koseler.length;
+  const my = koseler.reduce((s, k) => s + k[1], 0) / koseler.length;
+  const yol = koseler.map(([x, y]) => `${yuzde(x + (mx - x) * buzme)} ${yuzde(y + (my - y) * buzme)}`).join(',');
+  return { yol: `polygon(${yol})`, mx, my };
+}
+
+function sahneParcalari(uslup, r) {
+  const p = [];
+  if (uslup === 'antik') {
+    const S = 9;
+    const Y = 7;
+    for (let y = 0; y < Y; y++)
+      for (let x = 0; x < S; x++) {
+        const g = 0.35;
+        const ins = `inset(${yuzde((y / Y) * 100 + g)} ${yuzde(100 - ((x + 1) / S) * 100 + g)} ${yuzde(100 - ((y + 1) / Y) * 100 + g)} ${yuzde((x / S) * 100 + g)})`;
+        p.push(parca('tas', `clip-path:${ins};--g:${(r() * 0.9 + (x + y) * 0.06).toFixed(2)}s;--p:${(0.9 + r() * 0.2).toFixed(2)}`));
+      }
+  } else if (uslup === 'ortacag' || uslup === 'kubizm') {
+    const kubik = uslup === 'kubizm';
+    const hucreler = titrekIzgara(kubik ? 4 : 4, kubik ? 3 : 5, kubik ? 34 : 14, r);
+    hucreler.forEach(({ x, y, k }) => {
+      const parcalar = kubik ? (r() > 0.5 ? [[k[0], k[1], k[2]], [k[0], k[2], k[3]]] : [[k[0], k[1], k[3]], [k[1], k[2], k[3]]]) : [k];
+      parcalar.forEach((kose, i) => {
+        const c = cokgen(kose, kubik ? 0.02 : 0.05);
+        const gecikme = kubik ? r() * 0.8 : y * 0.22 + r() * 0.25;
+        const stil = [
+          `clip-path:${c.yol}`,
+          `transform-origin:${yuzde(c.mx)} ${yuzde(c.my)}`,
+          `--g:${gecikme.toFixed(2)}s`,
+          `--p:${(kubik ? (i ? 0.86 : 1.08) - r() * 0.06 : 0.96 + r() * 0.1).toFixed(2)}`,
+          `--dx:${((r() - 0.5) * 70).toFixed(1)}px`,
+          `--dy:${((r() - 0.5) * 50).toFixed(1)}px`,
+          `--dr:${((r() - 0.5) * 24).toFixed(1)}deg`,
+          `--kx:${((r() - 0.5) * 4).toFixed(1)}px`,
+          `--ky:${((r() - 0.5) * 4).toFixed(1)}px`,
+          `--kr:${((r() - 0.5) * 2.4).toFixed(2)}deg`,
+        ].join(';');
+        p.push(parca(kubik ? 'yuzey' : 'cam', stil));
+      });
+      if (!kubik && x === 0 && y === 0) p.push('<span class="cam-isik"></span>');
+    });
+  } else if (uslup === 'dada') {
+    titrekIzgara(3, 2, 26, r).forEach(({ k }, i) => {
+      const kenar = [];
+      k.forEach((a, j) => {
+        const b = k[(j + 1) % 4];
+        kenar.push(a);
+        for (let t = 1; t < 4; t++) kenar.push([a[0] + (b[0] - a[0]) * (t / 4) + (r() - 0.5) * 3, a[1] + (b[1] - a[1]) * (t / 4) + (r() - 0.5) * 3]);
+      });
+      const c = cokgen(kenar, 0.04);
+      p.push(
+        parca(
+          'kupur',
+          `clip-path:${c.yol};transform-origin:${yuzde(c.mx)} ${yuzde(c.my)};--g:${(i * 0.16).toFixed(2)}s;--dx:${((r() - 0.5) * 260).toFixed(0)}px;--dy:${(-120 - r() * 120).toFixed(0)}px;--dr:${((r() - 0.5) * 90).toFixed(0)}deg;--kx:${((r() - 0.5) * 8).toFixed(1)}px;--ky:${((r() - 0.5) * 8).toFixed(1)}px;--kr:${((r() - 0.5) * 7).toFixed(1)}deg`,
+        ),
+      );
+    });
+    p.push('<span class="bant bant-1"></span><span class="bant bant-2"></span>');
+  } else if (uslup === 'ekspresyonizm') {
+    const B = 5;
+    for (let i = 0; i < B; i++) {
+      const ust = (i / B) * 100;
+      const alt = ((i + 1) / B) * 100;
+      const egim = 14;
+      const yol = `polygon(-5% ${yuzde(ust + egim + (r() - 0.5) * 4)}, 105% ${yuzde(ust - egim + (r() - 0.5) * 4)}, 105% ${yuzde(alt - egim + (r() - 0.5) * 4 - 0.8)}, -5% ${yuzde(alt + egim + (r() - 0.5) * 4 - 0.8)})`;
+      p.push(parca('kesik-serit', `clip-path:${yol};--g:${(i * 0.13).toFixed(2)}s;--yon:${i % 2 ? 1 : -1}`));
+    }
+  } else if (uslup === 'neoklasik') {
+    const S = 7;
+    for (let i = 0; i < S; i++) {
+      const sol = (i / S) * 100 + 0.6;
+      const sag = 100 - ((i + 1) / S) * 100 + 0.6;
+      p.push(parca('sutun', `clip-path:inset(0 ${yuzde(sag)} 0 ${yuzde(sol)});--g:${(Math.abs(i - (S - 1) / 2) * 0.14).toFixed(2)}s`));
+    }
+  } else if (uslup === 'empresyonizm') {
+    for (let i = 0; i < 46; i++) {
+      const x = r() * 100;
+      const y = r() * 100;
+      p.push(parca('leke', `--x:${yuzde(x)};--y:${yuzde(y)};--rx:${(9 + r() * 10).toFixed(1)}%;--ry:${(6 + r() * 7).toFixed(1)}%;--g:${(r() * 1.3).toFixed(2)}s`));
+    }
+  } else if (uslup === 'ronesans') {
+    const cizgi = [];
+    const kx = 50;
+    const ky = 46;
+    for (let i = 0; i <= 10; i++) {
+      cizgi.push(`<line pathLength="1" x1="${kx}" y1="${ky}" x2="${i * 10}" y2="100" style="--g:${(i * 0.05).toFixed(2)}s"/>`);
+      cizgi.push(`<line pathLength="1" x1="${kx}" y1="${ky}" x2="${i * 10}" y2="0" style="--g:${(0.3 + i * 0.05).toFixed(2)}s"/>`);
+    }
+    [62, 74, 88].forEach((y, i) => cizgi.push(`<line pathLength="1" x1="0" y1="${y}" x2="100" y2="${y}" style="--g:${(0.7 + i * 0.1).toFixed(2)}s"/>`));
+    p.push(`<svg class="perspektif" viewBox="0 0 100 100" preserveAspectRatio="none">${cizgi.join('')}<circle cx="${kx}" cy="${ky}" r="1.2"/></svg>`);
+  } else if (uslup === 'artnouveau') {
+    p.push(
+      `<svg class="kamci" viewBox="0 0 100 100" preserveAspectRatio="none"><path pathLength="1" d="M8 98 C2 90 14 84 10 76 L8 40 C8 14 30 4 50 4 C70 4 92 14 92 40 L90 76 C86 84 98 90 92 98"/><path pathLength="1" d="M4 96 C10 92 14 98 8 100 M96 96 C90 92 86 98 92 100"/></svg>`,
+    );
+  } else if (uslup === 'ukiyoe') {
+    p.push('<span class="hanko"></span>');
+  } else if (uslup === 'surrealizm') {
+    p.push('<span class="golge"></span>');
+  }
+  return p.join('');
+}
+
+// Sürrealizm perdesi: üstte dolu, ortada damlalı kenar, altta boş — aşağı kaydıkça resim "akar"
+function damlaMaskesi(r) {
+  let yol = 'M0 0 H100 V100';
+  for (let x = 100; x > 0; x -= 10) {
+    const boy = 8 + r() * 22;
+    yol += ` L${x - 2} 100 C${x - 2} ${100 + boy} ${x - 7} ${100 + boy} ${x - 7} 100 L${x - 10} 100`;
+  }
+  yol += ' Z';
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 300" preserveAspectRatio="none"><path d="${yol}" fill="black"/></svg>`;
+  return `url("data:image/svg+xml,${encodeURIComponent(svg)}")`;
+}
+
+// Kimlik verisi gelince düğmeye dönemin en bilinen eseri yerleşir; görününce dönemin tekniğiyle kurulur
 function dugmeyiGiydir(ad, eserler) {
   const dugme = ekran.querySelector('.donem-dugme');
   if (!dugme) return;
   const bilgi = dugme.querySelector('[data-dugme-bilgi]');
   if (bilgi && !bilgi.innerHTML.trim()) bilgi.innerHTML = dugmeBilgisi(ad);
   const ilk = eserler[0];
-  const tablo = dugme.querySelector('[data-dugme-tablo]');
-  if (!ilk || !tablo || tablo.firstChild) return;
-  tablo.innerHTML = kucukGorsel(ilk.e, 800);
-  const img = tablo.querySelector('img');
+  const sahne = dugme.querySelector('[data-dugme-tablo]');
+  if (!ilk || !sahne || sahne.firstChild) return;
+  sahne.innerHTML = kucukGorsel(ilk.e, 800);
+  const img = sahne.querySelector('img');
   if (!img) return;
   img.loading = 'eager';
   const eserYazi = dugme.querySelector('[data-dugme-eser]');
   const goster = () => {
-    if (img.naturalWidth === 0) return;
+    if (img.naturalWidth === 0 || dugme.classList.contains('tablolu')) return;
+    const kaynak = (img.currentSrc || img.src).replace(/["\\\n]/g, (c) => `\\${c === '\n' ? 'a ' : c}`);
+    const uslup = dugme.dataset.teknik;
+    const r = tohumlu(ad);
+    sahne.style.setProperty('--resim', `url("${kaynak}")`);
+    if (uslup === 'surrealizm') sahne.style.setProperty('--damla', damlaMaskesi(r));
+    sahne.insertAdjacentHTML('beforeend', `<span class="tuval"></span>${sahneParcalari(uslup, r)}`);
     dugme.classList.add('tablolu');
     if (eserYazi) eserYazi.textContent = `${eserBaslik(ilk.e)} — ${bilinenAd(ilk.s.ad, d.kisaAdlar[ilk.s.id])}`;
+    sahneyiBaslat(dugme);
   };
   if (img.complete) goster();
   else img.addEventListener('load', goster);
+}
+
+// Gösteri düğme ekrana girince başlar; parça katmanları iş bitince kaldırılır ki sayfa hafiflesin
+function sahneyiBaslat(dugme) {
+  const baslat = () => {
+    dugme.classList.add('oynuyor');
+    setTimeout(() => dugme.classList.add('kuruldu'), 3600);
+  };
+  if (!('IntersectionObserver' in window)) return baslat();
+  const gozcu = new IntersectionObserver(
+    (girdiler) => {
+      if (!girdiler.some((g) => g.isIntersecting)) return;
+      gozcu.disconnect();
+      baslat();
+    },
+    { threshold: 0.35 },
+  );
+  gozcu.observe(dugme);
 }
 
 export { bolumBasligi };
