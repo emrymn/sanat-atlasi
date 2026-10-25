@@ -14,6 +14,7 @@ import {
   islenen,
   ust,
   cerceve,
+  kucukGorsel,
   akimRenk,
   akimNoktasi,
   eserPaleti,
@@ -91,6 +92,43 @@ function konuBaglari(l) {
     : '';
 }
 
+const ROMA = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
+// Uzman gözüyle ipuçları: her ipucunun yanında akımın bir eserinden yakın plan bir ayrıntı (büyüteç),
+// eser yoksa paletten bir boya lekesi. Kayan bir kesit gibi sırayla belirir.
+const AYRINTI_ODAK = ['30% 35%', '68% 28%', '45% 70%', '22% 60%', '75% 65%', '50% 45%'];
+function tanimaNotlari(l, eserler, palet) {
+  return `<ol class="akim-ozellik akim-ipucu">${l
+    .map((x, i) => {
+      const eser = eserler.length ? eserler[i % eserler.length].e : null;
+      const gorsel = eser ? kucukGorsel(eser, 400) : '';
+      const renk = palet.length ? palet[i % palet.length].renk : 'var(--renk)';
+      const no = ROMA[i] || String(i + 1);
+      const sol = gorsel
+        ? `<span class="akim-ipucu-lens" style="--odak:${AYRINTI_ODAK[i % AYRINTI_ODAK.length]};--leke:${renk}" aria-hidden="true">${gorsel}</span>`
+        : `<span class="akim-ipucu-rakam" aria-hidden="true">${no}</span>`;
+      return `<li style="--i:${i}" class="${gorsel ? '' : 'yazili'}">
+        ${sol}
+        <span class="akim-ipucu-yazi">${gorsel ? `<span class="akim-ipucu-no">${no}</span>` : ''}${kacis(x)}</span>
+      </li>`;
+    })
+    .join('')}</ol>`;
+}
+
+// Tipik konular: bir sergi kataloğunun dizini gibi, iri serif adlar ve üstte eser sayısı
+function konuDizini(l) {
+  const enCok = Math.max(...l.map((k) => k.n), 1);
+  return `<p class="akim-konu-dizin">${l
+    .map(
+      (k) =>
+        `<a href="#/konu/${encodeURIComponent(k.id)}" style="--agirlik:${(0.55 + 0.45 * (k.n / enCok)).toFixed(2)}"><span>${kacis(k.ad)}</span><sup>${k.n}</sup></a>`,
+    )
+    .join('<span class="akim-konu-ayrac" aria-hidden="true">·</span>')}</p>`;
+}
+
+function bolumBasligi(ust, baslik) {
+  return `<header class="akim-bolum-bas"><span>${kacis(ust)}</span><h2>${kacis(baslik)}</h2></header>`;
+}
+
 function eserIzgarasi(eserler, veri) {
   return `<div class="akim-eserler">${eserler
     .map(
@@ -111,14 +149,29 @@ export async function kimlikDoldur(ad) {
   const komsular = karsilastirmaKomsulari(ad, d.akimlar).slice(0, 3);
   kutu.innerHTML = `<section class="akim-kimlik" data-test="akim-kimlik" style="--renk:${akimRenk(ad)}">
       ${paletSeridi(v.palet)}
-      ${v.ozellikler.length ? `${etiket('Nasıl tanınır?')}${ozellikListesi(v.ozellikler)}` : ''}
-      ${v.konular.length ? `${etiket('Tipik konular')}${konuBaglari(v.konular)}` : ''}
-      ${v.eserler.length ? `${etiket('En bilinen eserler')}${eserIzgarasi(v.eserler, 'data-kimlik-eser')}` : ''}
+      ${
+        v.ozellikler.length
+          ? `<div class="akim-bolum">${bolumBasligi('Göz eğitimi', 'Nasıl tanınır?')}${tanimaNotlari(v.ozellikler, v.eserler, v.palet)}</div>`
+          : ''
+      }
+      ${
+        v.konular.length
+          ? `<div class="akim-bolum">${bolumBasligi('Tuvallerde en çok', 'Tipik konular')}${konuDizini(v.konular)}</div>`
+          : ''
+      }
+      ${
+        v.eserler.length
+          ? `<div class="akim-bolum">${bolumBasligi('Duvardakiler', 'En bilinen eserler')}${eserIzgarasi(v.eserler, 'data-kimlik-eser')}</div>`
+          : ''
+      }
       ${
         komsular.length
-          ? `${etiket('Karıştırma')}<p class="akim-komsular">${komsular
-              .map((k) => `<a href="${akimKarsilastirmaAdresi(ad, k)}" data-test="akim-karsilastir-bag">${kacis(ad)} ↔ ${kacis(k)}</a>`)
-              .join('')}</p>`
+          ? `<div class="akim-bolum">${bolumBasligi('Karıştırma', 'Yan yana koy')}<p class="akim-komsular akim-komsu-liste">${komsular
+              .map(
+                (k) =>
+                  `<a href="${akimKarsilastirmaAdresi(ad, k)}" data-test="akim-karsilastir-bag" style="--karsi:${akimRenk(k)}"><span class="akim-komsu-nokta" aria-hidden="true"></span><span>${kacis(ad)} <i>ile</i> ${kacis(k)}</span><span class="akim-komsu-ok" aria-hidden="true">→</span></a>`,
+              )
+              .join('')}</p></div>`
           : ''
       }
     </section>`;
