@@ -9829,57 +9829,86 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
 }
 .donem-dugme-eser:empty { display: none; }
 
-/* İçteki tablo: dönemin en bilinen eseri, renk perdesinin ardında yavaşça gezinir */
-.donem-dugme-tablo {
-  position: absolute;
-  inset: var(--tablo-ic, 0);
-  z-index: -2;
+/* İçteki tablo: dönemin en bilinen eseri, filtresiz, düğmenin üstünde çerçeveli bir tablo olarak asılı durur.
+   Eser künyesi hemen altında müze etiketi gibi okunur; dönemin adı ondan sonra gelir. */
+.donem-dugme-tablo { display: none; }
+.donem-dugme.tablolu { padding: 14px 14px 22px; gap: 8px; }
+.donem-dugme.tablolu .donem-dugme-tablo {
+  position: relative;
+  display: block;
+  order: -2;
+  align-self: stretch;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
-  border-radius: inherit;
-  opacity: 0;
-  transition: opacity 0.9s ease;
+  background: color-mix(in srgb, var(--yazi) 12%, transparent);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--yazi) 35%, transparent),
+    0 10px 22px -12px rgba(0, 0, 0, 0.7);
   pointer-events: none;
 }
 .donem-dugme-tablo img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  scale: 1.12;
+  transition: scale 0.6s ease;
 }
+.donem-dugme.tablolu:hover .donem-dugme-tablo img { scale: 1.05; }
+/* Galeri ışığı: tablonun yüzeyinden ara ara süzülen ince bir parıltı */
 .donem-dugme-tablo::after {
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 85% 70% at 50% 50%, color-mix(in srgb, var(--zemin) 82%, transparent), color-mix(in srgb, var(--zemin) 45%, transparent));
+  background: linear-gradient(105deg, transparent 38%, rgba(255, 255, 255, 0.22) 50%, transparent 62%);
+  translate: -120% 0;
 }
-.donem-dugme.tablolu .donem-dugme-tablo { opacity: 1; }
-.donem-dugme.tablolu { min-height: 200px; padding-block: 28px 24px; }
-.donem-dugme.tablolu > span:not(.donem-dugme-tablo) { text-shadow: 0 1px 10px color-mix(in srgb, var(--zemin) 90%, transparent); }
+.donem-dugme.tablolu .donem-dugme-eser {
+  order: -1;
+  margin-bottom: 6px;
+  font: italic 400 12px/1.35 var(--serif);
+  opacity: 0.85;
+}
 [data-uslup='ortacag'] .donem-dugme { --zemin: #d6b25a; }
-[data-uslup='ronesans'] .donem-dugme { --tablo-ic: 10px; }
-[data-uslup='barok'] .donem-dugme { --zemin: #150e0a; --tablo-ic: 7px; }
-[data-uslup='rokoko'] .donem-dugme,
-[data-uslup='artnouveau'] .donem-dugme { --tablo-ic: 7px; }
-[data-uslup='ukiyoe'] .donem-dugme-tablo img { filter: saturate(1.3) contrast(1.1); }
-[data-uslup='empresyonizm'] .donem-dugme-tablo img { filter: blur(0.6px) saturate(1.2); }
-[data-uslup='kubizm'] .donem-dugme-tablo img,
-[data-uslup='dada'] .donem-dugme-tablo img { filter: grayscale(0.6) contrast(1.15); }
-[data-uslup='neoklasik'] .donem-dugme-tablo img { filter: grayscale(0.85); }
+[data-uslup='barok'] .donem-dugme { --zemin: #150e0a; }
+[data-uslup='barok'] .donem-dugme.tablolu .donem-dugme-tablo,
+[data-uslup='rokoko'] .donem-dugme.tablolu .donem-dugme-tablo,
+[data-uslup='artnouveau'] .donem-dugme.tablolu .donem-dugme-tablo {
+  box-shadow: 0 0 0 3px var(--altin), 0 10px 22px -12px rgba(0, 0, 0, 0.8);
+}
+[data-uslup='rokoko'] .donem-dugme.tablolu .donem-dugme-tablo { border-radius: 44px 44px 6px 6px; }
+[data-uslup='artnouveau'] .donem-dugme.tablolu .donem-dugme-tablo { border-radius: 52px 6px 52px 6px; }
+[data-uslup='ortacag'] .donem-dugme.tablolu .donem-dugme-tablo { border-radius: 50% 50% 0 0 / 18% 18% 0 0; }
+[data-uslup='ukiyoe'] .donem-dugme.tablolu .donem-dugme-tablo { box-shadow: 0 0 0 3px var(--murekkep); }
+[data-uslup='surrealizm'] .donem-dugme.tablolu .donem-dugme-tablo { border-radius: 14px 14px 22px 8px; }
 @media (prefers-reduced-motion: no-preference) {
-  .donem-dugme.tablolu .donem-dugme-tablo { animation: tablo-perde 1.2s cubic-bezier(0.6, 0, 0.2, 1) both; }
-  .donem-dugme.tablolu .donem-dugme-tablo img { animation: tablo-gezin 22s ease-in-out infinite alternate; }
-  .donem-dugme.tablolu:hover .donem-dugme-tablo img { animation-duration: 8s; }
-  .donem-dugme.tablolu .donem-dugme-bilgi > *,
-  .donem-dugme.tablolu .donem-dugme-eser { animation: bilgi-belir 0.8s ease both; animation-delay: 0.5s; }
+  .donem-dugme.tablolu .donem-dugme-tablo { animation: tablo-asil 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .donem-dugme.tablolu .donem-dugme-tablo img { animation: tablo-odak 1.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .donem-dugme.tablolu .donem-dugme-tablo::after { animation: tablo-isik 6s ease-in-out 1.4s infinite; }
+  .donem-dugme.tablolu .donem-dugme-eser,
+  .donem-dugme.tablolu .donem-dugme-ust,
+  .donem-dugme.tablolu .donem-dugme-ad,
+  .donem-dugme.tablolu .donem-dugme-bilgi,
+  .donem-dugme.tablolu .donem-dugme-alt { animation: bilgi-belir 0.7s ease both; }
+  .donem-dugme.tablolu .donem-dugme-eser { animation-delay: 0.5s; }
+  .donem-dugme.tablolu .donem-dugme-ust { animation-delay: 0.62s; }
+  .donem-dugme.tablolu .donem-dugme-ad { animation-delay: 0.72s; }
+  .donem-dugme.tablolu .donem-dugme-bilgi { animation-delay: 0.84s; }
+  .donem-dugme.tablolu .donem-dugme-alt { animation-delay: 0.96s; }
 }
-@keyframes tablo-perde {
-  from { clip-path: inset(0 100% 0 0); }
-  to { clip-path: inset(0 0 0 0); }
+/* Tablo duvara asılır gibi hafifçe sallanarak yerine oturur, görüntü bulanıktan netleşir */
+@keyframes tablo-asil {
+  0% { opacity: 0; translate: 0 -14px; rotate: -2.5deg; }
+  55% { opacity: 1; rotate: 1.2deg; }
+  80% { rotate: -0.5deg; }
+  100% { translate: 0 0; rotate: 0deg; }
 }
-@keyframes tablo-gezin {
-  from { scale: 1.12; translate: -4% 2%; }
-  to { scale: 1.3; translate: 4% -3%; }
+@keyframes tablo-odak {
+  from { filter: blur(8px); scale: 1.08; }
+  to { filter: blur(0); scale: 1; }
+}
+@keyframes tablo-isik {
+  0%, 55% { translate: -120% 0; }
+  100% { translate: 120% 0; }
 }
 @keyframes bilgi-belir {
   from { opacity: 0; translate: 0 6px; }
