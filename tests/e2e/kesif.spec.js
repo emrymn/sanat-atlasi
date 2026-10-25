@@ -120,3 +120,24 @@ test('K3: akım sayfasında kimlik kartı; karşılaştırma sayfası; akım sor
   await expect(ab).toContainText(`${k.akim} ↔ ${yanlis}`);
   await expect(ab).toHaveAttribute('href', `#/akim-karsilastir/${encodeURIComponent(k.akim)}/${encodeURIComponent(yanlis)}`);
 });
+
+test('Akım sayfası: dönemin hikâyesi kısaltılmış gelir, "Devamını oku" tamamını açar, "Kısalt" geri kapar', async ({ page }) => {
+  await page.goto(`./#/akim/${encodeURIComponent('Empresyonizm')}`);
+  await hazir(page);
+  const hikaye = page.locator('[data-test="akim-hikaye"]');
+  await expect(hikaye).toBeVisible();
+  const beklenen = await page.evaluate(async () => (await (await fetch('data/akim_bilgi.json')).json()).akimlar.Empresyonizm.metin);
+  const metin = hikaye.locator('.akim-hikaye-metin');
+  await expect(metin).toHaveText(beklenen);
+  const dugme = hikaye.locator('[data-hikaye-ac]');
+  await expect(dugme).toBeVisible();
+  await expect(dugme).toHaveAttribute('aria-expanded', 'false');
+  const kisa = (await metin.boundingBox()).height;
+  await dugme.click();
+  await expect(dugme).toHaveText('Kısalt');
+  await expect(dugme).toHaveAttribute('aria-expanded', 'true');
+  expect((await metin.boundingBox()).height).toBeGreaterThan(kisa * 1.5);
+  await dugme.click();
+  await expect(dugme).toHaveText('Devamını oku');
+  expect(Math.round((await metin.boundingBox()).height)).toBe(Math.round(kisa));
+});

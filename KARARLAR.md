@@ -1138,3 +1138,10 @@ Emre v0'da (`v0/donem-gecis-firca-akim`, 7 kayıt, güncel main'in üstünde) de
 3. Eksik olan tek şey sürümdü: v0 sürümü artırmamıştı, service worker kabuğu önbellekten verdiği için değişiklikler telefona gelmezdi. 1.36.0 + Yenilikler satırı eklendi.
 4. Öteki dallar: birleşmemiş görünen kayıtları olan eski dallar (`claude/pekistirme-devam`, `claude/project-thread-qufexy`, `-vejy41`, `claude/seviyeler`) incelendi; işleri main'e squash ile girmiş (KARARLAR İş 18, devam kartı), alınacak bir şey yok.
 5. Not: İş 18'de fırça izi dokusu düğmelerde denenmiş, Emre beğenmemişti; v0'daki fırça izli "İşlendi yap" Emre'nin kendi v0 çalışması olduğu için olduğu gibi alındı.
+
+## İş 36 · Akım sayfasında dönemin hikâyesi (2026-10-25, v1.36.1)
+
+Emre: "dönem açıklamalarını yazdırmıştık, onları dönemin içine ekleyelim ama uzayıp gitmesin, devamını oku şeklinde kısalt".
+1. `data/akim_bilgi.json`'daki metin (28 akım, 150–175 kelime; şimdiye kadar akım sayfasında yalnız ilk cümlesi pekiştir düğmesindeydi, tamamı Günün sanatçısı sayfasında) akım sayfasının başına, palet şeridinin altına "Kısaca · Dönemin hikâyesi" bölümü olarak girdi; üstünde dönem ve yer.
+2. 6 satırla kısaltılır, alt kenarı söner; altında "Devamını oku ↓" (44 px), açılınca "Kısalt ↑" (`aria-expanded`). Metin 6 satıra sığarsa düğme hiç görünmez. Metin değişmedi.
+3. Sürüm 1.36.1 (yalnız ekleme; Yenilikler listesine düzeltme sürümleri girmez). Test: `tests/e2e/kesif.spec.js`.

@@ -9602,6 +9602,57 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
   text-wrap: balance;
 }
 
+/* Dönemin hikâyesi: 6 satırla kısaltılır, alt kenarı söner; "Devamını oku" tamamını açar */
+.akim-hikaye-kunye {
+  margin: -4px 0 10px;
+  font: 600 12px/1.4 var(--sans);
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+.akim-hikaye-metin {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-wrap: pretty;
+}
+.akim-hikaye.kesik:not(.acik) .akim-hikaye-metin {
+  -webkit-mask-image: linear-gradient(180deg, #000 62%, transparent);
+  mask-image: linear-gradient(180deg, #000 62%, transparent);
+}
+.akim-hikaye.acik .akim-hikaye-metin {
+  display: block;
+  -webkit-line-clamp: none;
+  overflow: visible;
+}
+.akim-hikaye-dugme {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 4px;
+  padding: 0;
+  border: none;
+  background: none;
+  font: 600 12px/1 var(--sans);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--renk);
+  cursor: pointer;
+}
+.akim-hikaye-dugme::after {
+  content: '↓';
+  letter-spacing: 0;
+}
+.akim-hikaye.acik .akim-hikaye-dugme::after {
+  content: '↑';
+}
+.akim-hikaye-dugme:focus-visible {
+  outline: 2px solid var(--renk);
+  outline-offset: 3px;
+}
+
 /* Nasıl tanınır? — büyüteç ayrıntılı ipuçları */
 .akim-ozellik.akim-ipucu {
   margin: 0;
