@@ -59,7 +59,7 @@ function siradakiKonuHtml(k, sayi) {
         <b>${kacis(konuBasligi(x))}</b>
         <small>${n ? `${n} sanatçı açılacak` : 'yeni sanatçı açılmaz'} · Konu ${x.no}</small>
       </div>
-      <button class="dugme siradaki-dugme firca" type="button" data-konu-isle="${x.no}"><span class="firca-iz" aria-hidden="true"></span><span class="firca-yazi">İşlendi yap</span></button>
+      <button class="dugme siradaki-dugme isle-ince" type="button" data-konu-isle="${x.no}"><span class="isle-halka" aria-hidden="true">${ikon('dogru', 14, 2.2)}</span><span class="isle-yazi">İşlendi yap</span></button>
     </section>`;
 }
 
@@ -408,12 +408,21 @@ export function olaylariBagla() {
 
   ekran.addEventListener('click', (e) => {
     const b = e.target.closest('[data-konu-isle]');
-    if (!b) return;
+    if (!b || b.classList.contains('doldu')) return;
     const no = Number(b.dataset.konuIsle);
-    konuIsaretle(no, true, { kartla: true });
-    d.siradakiGecti = true; // yeni sıradaki konu kayarak gelir
-    yenile(HEPSI);
-    d.siradakiGecti = false;
-    odakla('[data-konu-isle]');
+    const isle = () => {
+      konuIsaretle(no, true, { kartla: true });
+      d.siradakiGecti = true; // yeni sıradaki konu kayarak gelir
+      yenile(HEPSI);
+      d.siradakiGecti = false;
+      odakla('[data-konu-isle]');
+    };
+    // düğme önce soldan sağa dolar ve "İşlendi" olur, sonra sıradaki konu gelir (hareket azaltma açıksa beklemeden)
+    if (!b.classList.contains('isle-ince') || matchMedia('(prefers-reduced-motion: reduce)').matches) return isle();
+    b.classList.add('doldu');
+    b.querySelector('.isle-yazi').textContent = 'İşlendi';
+    setTimeout(() => {
+      if (b.isConnected) isle();
+    }, 520);
   });
 }
