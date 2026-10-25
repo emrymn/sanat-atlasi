@@ -1,4 +1,4 @@
-// Telefonu eğince Bugün'ün tablosu hareket eder (İş 32). Jiroskop olayı elle gönderilir; izin isteyen tarayıcıda önce dokunulur.
+// Telefonu eğince Bugün'ün tablosu hareket eder (İş 32). Jiroskop olayı elle gönderilir; iPhone'un izin davranışı taklit edilir.
 import { test, expect } from '@playwright/test';
 import { agiHazirla } from './ortak.js';
 
@@ -15,19 +15,34 @@ const donus = (page, gamma, sn) =>
     [gamma, sn],
   );
 
-test('Bugün: telefon sağa çevrilince tablo döner, Ayarlar’dan kapatılınca durur', async ({ page, context }) => {
+// iPhone'un izin davranışı: requestPermission dokunuş olmadan reddeder (iOS izni unuttuysa), dokunuşla izin verir.
+// hatirliyor: iOS daha önceki izni hatırlıyormuş gibi dokunuşsuz da evet. Dokunuş, tıklama olayıyla anlaşılır
+// (navigator.userActivation Playwright'ta açılışta da etkin görünebiliyor).
+const iPhoneIzni = (context, hatirliyor = false) =>
+  context.addInitScript((h) => {
+    let dokunus = false;
+    window.addEventListener('click', () => ((dokunus = true), setTimeout(() => (dokunus = false), 500)), true);
+    const iste = () =>
+      h || dokunus ? Promise.resolve('granted') : Promise.reject(new DOMException('dokunuş gerekli', 'NotAllowedError'));
+    window.DeviceMotionEvent.requestPermission = iste;
+    window.DeviceOrientationEvent.requestPermission = iste;
+  }, hatirliyor);
+
+test('Bugün: izin unutulmuşsa “Hareketi aç” düğmesi; dokununca tablo döner, ad yavaş izler; Ayarlar’dan kapatılınca durur', async ({ page, context }) => {
   await agiHazirla(context);
-  await context.grantPermissions(['accelerometer', 'gyroscope']);
+  await iPhoneIzni(context);
   await page.goto('./#/');
   const kutu = page.locator('[data-gunun-gorsel]');
   await expect(kutu).toBeVisible();
-  // iPhone gibi izin isteyen tarayıcıda dinleme ilk dokunuşta başlar (izin dokunuşun içinden istenir)
-  const izinli = await page.evaluate(() => typeof DeviceOrientationEvent.requestPermission === 'function');
-  if (izinli) {
-    await expect(kutu).not.toHaveClass(/egimli/);
-    await page.locator('.bugun-ust .etiket').click();
-  }
+  // ekranın rastgele bir yerine dokunmak izin istemez; düğme görünür
+  const dugme = page.locator('[data-egim-dugme]');
+  await expect(dugme).toBeVisible();
+  await page.locator('.bugun-ust .etiket').click();
+  await expect(kutu).not.toHaveClass(/egimli/);
+  await expect(dugme).toBeVisible();
+  await dugme.click();
   await expect(kutu).toHaveClass(/egimli/);
+  await expect(dugme).toBeHidden();
   await donus(page, 80, 0.4); // sağa çevir
   const deger = (ad) => kutu.evaluate((el, a) => parseFloat(el.style.getPropertyValue(a)) || 0, ad);
   // ad tablodan geride kalır (daha yavaş izler), ama o da sağa kayar
@@ -43,7 +58,14 @@ test('Bugün: telefon sağa çevrilince tablo döner, Ayarlar’dan kapatılınc
   expect(eksen).toMatch(/deg$/);
   await expect(page.locator('.egim-isik')).toBeVisible();
 
+  // yeniden açılış (iOS izni unuttu): Ayarlar'da da "Hareket iznini ver"
   await page.goto('./#/ayarlar');
+  await page.reload();
+  const izinDugmesi = page.locator('[data-egim-izin]');
+  await expect(izinDugmesi).toBeVisible();
+  await izinDugmesi.click();
+  await expect(page.locator('#egim-mesaj')).toContainText('İzin verildi');
+  await expect(izinDugmesi).toBeHidden();
   const anahtar = page.locator('[data-ayar-egim]');
   await expect(anahtar).toBeChecked();
   await anahtar.click();
@@ -52,4 +74,15 @@ test('Bugün: telefon sağa çevrilince tablo döner, Ayarlar’dan kapatılınc
   await page.goto('./#/');
   await expect(page.locator('[data-gunun-gorsel]')).toBeVisible();
   await expect(page.locator('[data-gunun-gorsel]')).not.toHaveClass(/egimli/);
+});
+
+test('Bugün: iOS izni hatırlıyorsa düğme çıkmaz, hareket hemen başlar', async ({ page, context }) => {
+  await agiHazirla(context);
+  await iPhoneIzni(context, true);
+  await page.goto('./#/');
+  await expect(page.locator('[data-gunun-gorsel]')).toHaveClass(/egimli/);
+  await expect(page.locator('[data-egim-dugme]')).toBeHidden();
+  await page.goto('./#/ayarlar');
+  await expect(page.locator('[data-ayar-egim]')).toBeChecked();
+  await expect(page.locator('[data-egim-izin]')).toBeHidden();
 });
