@@ -9800,6 +9800,90 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
   font: 400 13px/1.3 var(--sans);
   opacity: 0.8;
 }
+.donem-dugme-bilgi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  max-width: 34ch;
+}
+.donem-dugme-bilgi:empty { display: none; }
+.donem-dugme-kunye {
+  font: 600 11px/1.3 var(--sans);
+  letter-spacing: 0.08em;
+  opacity: 0.9;
+}
+.donem-dugme-soz {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  font: italic 400 14px/1.45 var(--serif);
+  text-wrap: pretty;
+}
+.donem-dugme-eser {
+  font: 400 12px/1.3 var(--sans);
+  opacity: 0.7;
+  max-width: 30ch;
+  text-wrap: balance;
+}
+.donem-dugme-eser:empty { display: none; }
+
+/* İçteki tablo: dönemin en bilinen eseri, renk perdesinin ardında yavaşça gezinir */
+.donem-dugme-tablo {
+  position: absolute;
+  inset: var(--tablo-ic, 0);
+  z-index: -2;
+  overflow: hidden;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+  pointer-events: none;
+}
+.donem-dugme-tablo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 1.12;
+}
+.donem-dugme-tablo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 85% 70% at 50% 50%, color-mix(in srgb, var(--zemin) 82%, transparent), color-mix(in srgb, var(--zemin) 45%, transparent));
+}
+.donem-dugme.tablolu .donem-dugme-tablo { opacity: 1; }
+.donem-dugme.tablolu { min-height: 200px; padding-block: 28px 24px; }
+.donem-dugme.tablolu > span:not(.donem-dugme-tablo) { text-shadow: 0 1px 10px color-mix(in srgb, var(--zemin) 90%, transparent); }
+[data-uslup='ortacag'] .donem-dugme { --zemin: #d6b25a; }
+[data-uslup='ronesans'] .donem-dugme { --tablo-ic: 10px; }
+[data-uslup='barok'] .donem-dugme { --zemin: #150e0a; --tablo-ic: 7px; }
+[data-uslup='rokoko'] .donem-dugme,
+[data-uslup='artnouveau'] .donem-dugme { --tablo-ic: 7px; }
+[data-uslup='ukiyoe'] .donem-dugme-tablo img { filter: saturate(1.3) contrast(1.1); }
+[data-uslup='empresyonizm'] .donem-dugme-tablo img { filter: blur(0.6px) saturate(1.2); }
+[data-uslup='kubizm'] .donem-dugme-tablo img,
+[data-uslup='dada'] .donem-dugme-tablo img { filter: grayscale(0.6) contrast(1.15); }
+[data-uslup='neoklasik'] .donem-dugme-tablo img { filter: grayscale(0.85); }
+@media (prefers-reduced-motion: no-preference) {
+  .donem-dugme.tablolu .donem-dugme-tablo { animation: tablo-perde 1.2s cubic-bezier(0.6, 0, 0.2, 1) both; }
+  .donem-dugme.tablolu .donem-dugme-tablo img { animation: tablo-gezin 22s ease-in-out infinite alternate; }
+  .donem-dugme.tablolu:hover .donem-dugme-tablo img { animation-duration: 8s; }
+  .donem-dugme.tablolu .donem-dugme-bilgi > *,
+  .donem-dugme.tablolu .donem-dugme-eser { animation: bilgi-belir 0.8s ease both; animation-delay: 0.5s; }
+}
+@keyframes tablo-perde {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+@keyframes tablo-gezin {
+  from { scale: 1.12; translate: -4% 2%; }
+  to { scale: 1.3; translate: 4% -3%; }
+}
+@keyframes bilgi-belir {
+  from { opacity: 0; translate: 0 6px; }
+}
 
 /* Antik — Roma kapitali yazı, sütun yivleri, çift çizgi */
 [data-uslup='antik'] .donem-dugme {

@@ -167,12 +167,64 @@ function dugmeAdi(ad, uslup) {
   return [...ad].map((c, i) => (c === ' ' ? ' ' : `<span class="kesik" style="--k:${i % 4}">${kacis(c)}</span>`)).join('');
 }
 
+let bilgiSozu = null;
+function akimBilgisi() {
+  if (d.akimBilgi) return Promise.resolve(d.akimBilgi);
+  if (!bilgiSozu)
+    bilgiSozu = jsonGetir('data/akim_bilgi.json').then(
+      (j) => (d.akimBilgi = j || { akimlar: {} }),
+      () => {
+        bilgiSozu = null;
+        return { akimlar: {} };
+      },
+    );
+  return bilgiSozu;
+}
+
+const ILK_CUMLE = /^(.+?[.!?])(?=\s+[A-ZÇĞİÖŞÜ])/s;
+// Düğmedeki dönem bilgisi: "y. 1400–1490 · Floransa merkezli" ve açıklamanın ilk cümlesi; veri yoksa boş
+function dugmeBilgisi(ad) {
+  const b = d.akimBilgi && d.akimBilgi.akimlar && d.akimBilgi.akimlar[ad];
+  if (!b) return '';
+  const yer = (b.yer || '').split(';')[0].trim();
+  const kunye = [b.donem, yer].filter(Boolean).map(kacis).join(' · ');
+  const metin = (b.metin || '').trim();
+  const cumle = (metin.match(ILK_CUMLE) || [null, metin])[1];
+  return `${kunye ? `<span class="donem-dugme-kunye">${kunye}</span>` : ''}${cumle ? `<span class="donem-dugme-soz">${kacis(cumle)}</span>` : ''}`;
+}
+
 export function pekistirDugmesi(ad, uslup, adet) {
   return `<div class="donem-cta"><a class="donem-dugme" href="#/pekistir/donem/${encodeURIComponent(ad)}" aria-label="${kacis(ad)} dönemini pekiştir">
+    <span class="donem-dugme-tablo" data-dugme-tablo aria-hidden="true"></span>
     <span class="donem-dugme-ust">Bu dönemi pekiştir</span>
     <span class="donem-dugme-ad">${dugmeAdi(ad, uslup)}</span>
+    <span class="donem-dugme-bilgi" data-dugme-bilgi>${dugmeBilgisi(ad)}</span>
     <span class="donem-dugme-alt">${adet} sanatçı · tura başla</span>
+    <span class="donem-dugme-eser" data-dugme-eser></span>
   </a></div>`;
+}
+
+// Kimlik verisi gelince düğmenin içine dönemin en bilinen eseri (yavaşça gezinen tablo) ve dönem bilgisi yerleşir
+function dugmeyiGiydir(ad, eserler) {
+  const dugme = ekran.querySelector('.donem-dugme');
+  if (!dugme) return;
+  const bilgi = dugme.querySelector('[data-dugme-bilgi]');
+  if (bilgi && !bilgi.innerHTML.trim()) bilgi.innerHTML = dugmeBilgisi(ad);
+  const ilk = eserler[0];
+  const tablo = dugme.querySelector('[data-dugme-tablo]');
+  if (!ilk || !tablo || tablo.firstChild) return;
+  tablo.innerHTML = kucukGorsel(ilk.e, 800);
+  const img = tablo.querySelector('img');
+  if (!img) return;
+  img.loading = 'eager';
+  const eserYazi = dugme.querySelector('[data-dugme-eser]');
+  const goster = () => {
+    if (img.naturalWidth === 0) return;
+    dugme.classList.add('tablolu');
+    if (eserYazi) eserYazi.textContent = `${eserBaslik(ilk.e)} — ${bilinenAd(ilk.s.ad, d.kisaAdlar[ilk.s.id])}`;
+  };
+  if (img.complete) goster();
+  else img.addEventListener('load', goster);
 }
 
 export { bolumBasligi };
@@ -184,9 +236,10 @@ export async function kimlikDoldur(ad) {
   const ustKutu = ekran.querySelector('[data-kimlik-ust]');
   const altKutu = ekran.querySelector('[data-kimlik-alt]');
   if (!ustKutu) return;
-  const v = await akimVerisi(ad);
+  const [v] = await Promise.all([akimVerisi(ad), akimBilgisi()]);
   if (!ustKutu.isConnected) return;
   kimlikEserleri = v.eserler;
+  dugmeyiGiydir(ad, v.eserler);
   const komsular = karsilastirmaKomsulari(ad, d.akimlar).slice(0, 3);
   ustKutu.innerHTML = `${paletSeridi(v.palet)}
       ${
