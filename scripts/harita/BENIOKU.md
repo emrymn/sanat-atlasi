@@ -18,6 +18,14 @@ Uygulamaya henüz dokunulmadı. Bu klasör yalnız yeni harita resimlerini denem
 - Çıktılar hiçbir zaman üstüne yazılmaz (aynı ad varsa `-v2`).
 - İlk deneme: Rönesans. GPT Image 2 ve Nano Banana Pro hem referanssız hem depodaki tablolarla (modelin sınırı kadar); FLUX.2 Pro, Seedream 5 Pro, Nano Banana 2, Grok Imagine 2.0 yalnız referanssız.
 
+## Uygulamaya bağlama kararları (Emre, Rönesans bittikten sonra)
+
+- Önce bütün dönemler bitecek, uygulamaya en son hep birlikte bağlanacak.
+- Sepya renklenme (alttan yukarı, açık son seviyeye kadar renkli) bütün dönemlerde.
+- Gizli eserler eski haritadaki gibi: dokununca künye, hikâye ve sanatçı sayfası bağlantısı (`data/harita.json` `eserler`).
+- Her dönemin resmi 1:3; harita kurulumu (`js/harita.js` `haritaKur`) dönem başına yükseklik alacak. Her seviyenin kendi sembolü; karakter bütün haritada aynı genç sanat öğrencisi, dönem kıyafetiyle.
+- Rönesans tamam: `ronesans_secim.json` (gündüz, gece, 7 seviye noktası, semboller, karakter).
+
 ## Çalıştırma (Mac)
 
 ```sh
