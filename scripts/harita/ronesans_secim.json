@@ -7,12 +7,12 @@
       0.926
     ],
     [
-      0.752,
-      0.738
+      0.7686,
+      0.7282
     ],
     [
-      0.472,
-      0.612
+      0.469,
+      0.6135
     ],
     [
       0.767,
@@ -61,5 +61,9 @@
     ]
   ],
   "kaynak_resim": "cikti/ronesans/gpt-image-2-maske-cep-v5.jpg",
-  "yerlesim": "Sembolün tabanı (alfa kanalında en alt %30'daki en geniş satırın ortası) meydanın merkezine oturur; karakter meydanın sağ kenarında, ayakları yerde."
+  "yerlesim": "Sembolün tabanı (alfa kanalında en alt %30'daki en geniş satırın ortası) meydanın merkezine oturur; karakter meydanın sağ kenarında, ayakları yerde.",
+  "karakter_kayma": [
+    0.085,
+    -0.012
+  ]
 }

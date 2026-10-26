@@ -52,6 +52,9 @@ const ISLER = [
   { ad: 'gpt-image-2-serit', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-maske', maske: 'serit', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.18 },
   // Seçilen resme (F) yeni meydan ekleme: yalnız 4 küçük alan açık (Emre: seviyeler meydanlarda olsun)
   { ad: 'gpt-image-2-meydan-ekle', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-maske', maske: 'ekle', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.15 },
+  // Gece (Emre'nin seçimi: Nano Banana Pro düzenlemesi): seçilen gündüz resmi --kaynak ile; 9:16'ya kenarla genişletilip
+  // ortadaki 1:3 geri kesilir. Yer kaymamalı: sonuç gündüzle üst üste konup meydanlar kontrol edilir.
+  { ad: 'nano-banana-pro-gece', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'ronesans-secilen', gece: true, oran: '9:16', ref: false, fiyat: 0.15 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -218,6 +221,13 @@ async function main() {
       ({ kutu, dolgu } = { kutu: { x: 0, y: 0, w: 1, h: 1 }, dolgu: false });
       istem = duzenleIstemi(is, tablolar.slice(0, n));
       tur = 'image/jpeg';
+      if (is.gece) {
+        // 1:3'ü çizemeyen model: iki yana düz kenar, sonra ortadaki 1:3 kesilir
+        const png = await sharp(resim).png().toBuffer();
+        ({ resim, kutu, dolgu } = await tuvaleYerlestir(png, is.oran));
+        istem = (await readFile(path.join(BURASI, 'istemler', 'gece.txt'), 'utf8')).trim();
+        tur = 'image/png';
+      }
     } else {
       ({ resim, kutu, dolgu } = await tuvaleYerlestir(taslak, is.oran));
       istem = istemKur(temel, is, dolgu, tablolar.slice(0, n));
