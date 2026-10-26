@@ -46,6 +46,7 @@ const ISLER = [
   { ad: 'gpt-image-2-maske-meydan', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: 'meydan', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
   // Dar maske: yol, kol ve meydanlar yolun tam kenarına kadar kilitli; açık renkler, sade istem (Emre'nin seçimi)
   { ad: 'gpt-image-2-maske-dar', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: 'dar', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
+  { ad: 'gpt-image-2-maske-orta', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: 'orta', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
