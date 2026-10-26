@@ -10,6 +10,7 @@
 //   node ciz.mjs ronesans --calistir --yalniz gpt-image-2-yalin   → tek iş (virgülle birkaç iş)
 //   node ciz.mjs ronesans --iskelet cep …   → 'ana yol ve cepler' iskeletiyle (varsayılan: yilankavi)
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import path from 'node:path';
@@ -140,7 +141,9 @@ async function main() {
     console.log(`\nPlan bu. Çizmek için: node ciz.mjs ${process.argv.slice(2).filter((x) => x !== '--istem').join(' ')} --calistir`);
     return;
   }
-  if (!process.env.AI_GATEWAY_API_KEY) throw new Error('AI_GATEWAY_API_KEY tanımlı değil');
+  // Anahtar her pencerede export edilmesin diye scripts/harita/.env'den okunur (git'e girmez, .gitignore)
+  if (!process.env.AI_GATEWAY_API_KEY && existsSync(path.join(BURASI, '.env'))) process.loadEnvFile(path.join(BURASI, '.env'));
+  if (!process.env.AI_GATEWAY_API_KEY) throw new Error('AI_GATEWAY_API_KEY yok: scripts/harita/.env dosyasına AI_GATEWAY_API_KEY=... yazın');
 
   const klasor = path.join(BURASI, 'cikti', donem);
   await mkdir(path.join(klasor, 'ham'), { recursive: true });

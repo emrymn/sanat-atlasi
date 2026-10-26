@@ -20,7 +20,7 @@ Uygulamaya henüz dokunulmadı. Bu klasör yalnız yeni harita resimlerini denem
 ```sh
 cd scripts/harita
 npm ci
-export AI_GATEWAY_API_KEY=...          # Vercel → AI Gateway → API Keys
+echo 'AI_GATEWAY_API_KEY=...' > .env   # bir kez; Vercel → AI Gateway → API Keys (.env git'e girmez)
 node ciz.mjs ronesans                  # plan ve tahmini maliyet; hiçbir şey harcanmaz
 node ciz.mjs ronesans --calistir       # 8 çizim, ~1,5 $
 node ciz.mjs ronesans --calistir --yalniz flux-2-pro-yalin   # tek iş (virgülle birkaç iş)
@@ -30,7 +30,7 @@ node ciz.mjs ronesans --iskelet cep --istem                # cep iskeletiyle gid
 Çıktılar `cikti/ronesans/` altında (`ham/` modelin döndürdüğü, üstteki 1024×3072'ye kesilmiş) ve bir `ozet_….json`. Klasör git'e girmez; sonuçları göstermek için:
 
 ```sh
-git add -f cikti/ronesans && git commit -m "Harita: Rönesans deneme çizimleri" && git push
+sh gonder.sh "Rönesans: deneme"   # yalnız JPG'ler ve özetler; ham/ girmez
 ```
 
 ## Notlar
