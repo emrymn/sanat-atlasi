@@ -1,5 +1,5 @@
 {
-  "aciklama": "Orta Çağ gizli eserleri (Emre onayladı): seviye başına 1, üst yarıda 1 ek. Hepsi depodaki yerel kopyalar.",
+  "aciklama": "Orta Çağ gizli eserleri (Emre onayladı): seviye başına 1, üst yarıda 1 ek. Hepsi depodaki yerel kopyalar. Limbourg Şubat: içeride ısınan köylüler ve burç kemerindeki çıplak figür kesitin dışında (GPT reddetmesin).",
   "tablolar": [
     {
       "oncelik": 1,
@@ -19,8 +19,14 @@
       "oncelik": 3,
       "seviye": 3,
       "sanatci": "Limbourg brothers",
-      "eser": "Très Riches Heures, February",
-      "dosya": "gorseller/b/85a16ae0801e44e1.jpg"
+      "eser": "Très Riches Heures, February (detail: the snowy farmyard)",
+      "dosya": "gorseller/b/85a16ae0801e44e1.jpg",
+      "kirp": [
+        230,
+        400,
+        769,
+        1280
+      ]
     },
     {
       "oncelik": 4,
