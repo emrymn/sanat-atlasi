@@ -17,6 +17,24 @@ const ORTAK =
   "Painted in the same light, bright storybook style as the map in Image 1 (same palette, soft daylight from the upper left, visible brushwork), and at the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
 
 const ISLER = {
+  // Orta Çağ (Emre onayladı): ikona, Siena kalkanı, Saatler Kitabı; karakter aynı öğrenci, Orta Çağ kıyafetiyle.
+  // Örnek olarak Rönesans'ın yeni sembolü ve karakteri gider: bütün haritada aynı oyun taşı görünümü ve aynı yüz.
+  ortacag: {
+    harita: 'cikti/ortacag/ortacag-secilen.jpg',
+    ornekNesne: 'cikti/ronesans/sprite/sembol-1.webp',
+    ornekYolcu: 'cikti/ronesans/sprite/karakter.webp',
+    isler: [
+      { ad: 'sembol-1', metin: 'A small Byzantine-style icon panel of the Virgin and Child with a burnished gold background and a gilded arched frame, standing upright on a small round paved stone base, as painted by Cimabue or Berlinghieri.' },
+      { ad: 'sembol-2', metin: 'A heraldic shield of Siena, the Balzana, split horizontally: white on top and black below, with a gilded rim, standing upright on a small round paved stone base.' },
+      { ad: 'sembol-3', metin: 'An open illuminated Book of Hours on a small carved wooden lectern, its pages showing tiny jewel-coloured miniatures, a deep blue page with gold stars, and gilded initials, as made by the Limbourg brothers, standing on a small round paved stone base.' },
+      {
+        ad: 'karakter',
+        yolcu: true,
+        metin:
+          'The same young male art student as in Image 2 (same face, hair, age, satchel and sketchbook), now dressed in clothing of 14th-century Italy: a simple belted wool tunic in muted red, a hooded short cape, hose and soft leather shoes. Full body, walking forward, friendly face. Same scale and feel as the traveller figure in Image 2.',
+      },
+    ],
+  },
   ronesans: {
     harita: 'cikti/ronesans/gpt-image-2-maske-cep.jpg', // Adım 12 (Emre'nin beğendiği renkler)
     ornekNesne: '../../gorseller/harita/nesne_ronesans_bust2_gunduz.webp',
