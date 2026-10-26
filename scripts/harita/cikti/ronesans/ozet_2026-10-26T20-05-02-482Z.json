@@ -1,0 +1,198 @@
+[
+  {
+    "ad": "gpt-image-2-ref",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.4,
+    "iskelet": "cep",
+    "hata": "Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_26ea0e7b36f940af8a96a6e539e29515. safety_violations=[sexual]."
+  },
+  {
+    "ad": "nano-banana-pro-ref",
+    "model": "google/gemini-3-pro-image",
+    "tur": "gemini",
+    "oran": "9:16",
+    "ref": true,
+    "refSiniri": 14,
+    "fiyat": 0.3,
+    "iskelet": "cep",
+    "sure": 56,
+    "ham": [
+      1536,
+      2752
+    ],
+    "kesilen": {
+      "left": 313,
+      "top": 0,
+      "width": 910,
+      "height": 2752
+    },
+    "uyari": null,
+    "tablolar": [
+      "The Chess Game",
+      "The Deposition",
+      "Saint Francis in the Desert",
+      "The Battle of San Romano",
+      "Madonna with the Long Neck",
+      "The Tempest",
+      "The Annunciation",
+      "The Wedding at Cana",
+      "View of Toledo",
+      "The Arnolfini Portrait",
+      "The Hunters in the Snow",
+      "The Garden of Earthly Delights",
+      "The School of Athens"
+    ],
+    "istemOzeti": "1430b98ad5",
+    "ek": {
+      "usage": {
+        "inputTokens": 9129,
+        "inputTokenDetails": {
+          "noCacheTokens": 1160,
+          "cacheReadTokens": 7969
+        },
+        "outputTokens": 1747,
+        "outputTokenDetails": {
+          "textTokens": 1120,
+          "reasoningTokens": 627
+        },
+        "totalTokens": 10876
+      },
+      "providerMetadata": {
+        "googleVertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "cachedContentTokenCount": 7969,
+            "thoughtsTokenCount": 627,
+            "promptTokenCount": 9129,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 10876,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1289
+              },
+              {
+                "modality": "IMAGE",
+                "tokenCount": 7840
+              }
+            ],
+            "cacheTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 6844
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 1125
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "vertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "cachedContentTokenCount": 7969,
+            "thoughtsTokenCount": 627,
+            "promptTokenCount": 9129,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 10876,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1289
+              },
+              {
+                "modality": "IMAGE",
+                "tokenCount": 7840
+              }
+            ],
+            "cacheTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 6844
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 1125
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "google/gemini-3-pro-image",
+            "resolvedProvider": "vertex",
+            "fallbacksAvailable": [
+              "google"
+            ],
+            "planningReasoning": "System credentials planned for: vertex, google. Total execution order: vertex(system) → google(system)",
+            "canonicalSlug": "google/gemini-3-pro-image",
+            "finalProvider": "vertex",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "google/gemini-3-pro-image",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "vertex",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793045048463,
+                    "endTime": 1793045090414,
+                    "statusCode": 200,
+                    "providerResponseId": "OLLfavK5LfauvNkPx9D7sAs"
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1,
+            "affinity": {
+              "outcome": "no_pin"
+            },
+            "clientSessionId": "85c88ae8ae60c06b8a1559a266a8c9dd",
+            "clientSessionIdSource": "fingerprint"
+          },
+          "cost": "0.1458378",
+          "marketCost": "0.1458378",
+          "surchargeCost": "0",
+          "gatewayCost": "0.1458378",
+          "inferenceCost": "0.1458378",
+          "inputInferenceCost": "0.0039138",
+          "outputInferenceCost": "0.141924",
+          "generationId": "gen_01M5WX0AZMPQXNQYV9EPH766E5"
+        }
+      }
+    }
+  }
+]
