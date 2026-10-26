@@ -2,11 +2,14 @@
 # Yol, kollar ve meydanlar biraz genişletilip kilitlenir; GPT Image 2 yalnız geri kalanı boyar.
 #   iskelet/<dönem>_iskelet_<biçim>_maske.png    OpenAI maskesi: saydam = boyanacak, opak = kilitli
 #   iskelet/<dönem>_iskelet_<biçim>_yumusak.png  gri: çizimden sonra kaynak resmin yolunu yumuşak kenarla geri koymak için
+#   iskelet/<dönem>_iskelet_<biçim>_maske_meydan.png  yalnız 7 meydan kilitli; yolu ve kolları da GPT boyar
+#   (Emre: tüm yol kilitliyken yolun iki yanında yeşil bir şerit kalıyordu, yol yapıştırılmış gibi duruyordu)
 # Kullanım: python3 scripts/harita/maske.py ronesans cep
+import json
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter
 
 PAY = 41  # kilitli alanın taslaktaki yoldan taşması (px, tek sayı): model yolu birkaç piksel kaydırabiliyor
 YUMUSAK = 14  # geri koyarken kenar yumuşatma (px)
@@ -22,6 +25,17 @@ def maske(donem, bicim):
     m.putalpha(kilit)
     m.save(klasor / f'{donem}_iskelet{ek}_maske.png')
     kilit.filter(ImageFilter.GaussianBlur(YUMUSAK)).save(klasor / f'{donem}_iskelet{ek}_yumusak.png')
+    # yalnız meydanlar: iskeletteki oval (yarıçap 70×43 px) biraz payla
+    duraklar = json.loads((klasor / f'{donem}_iskelet{ek}.json').read_text())['duraklar']
+    w, h = sk.size
+    yalniz = Image.new('L', sk.size, 0)
+    d = ImageDraw.Draw(yalniz)
+    for x, y in duraklar:
+        cx, cy = x * w, y * h
+        d.ellipse([cx - 82, cy - 54, cx + 82, cy + 54], fill=255)
+    m2 = Image.new('RGBA', sk.size, (0, 0, 0, 0))
+    m2.putalpha(yalniz)
+    m2.save(klasor / f'{donem}_iskelet{ek}_maske_meydan.png')
 
 
 if __name__ == '__main__':

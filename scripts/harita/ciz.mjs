@@ -42,6 +42,8 @@ const ISLER = [
   // GPT + maske (Emre'nin seçimi): kaynak çizimin yolu, kolları ve meydanları maskeyle kilitli (maske.py); GPT yalnız
   // çevreyi boyar. Ardından kaynak yol yumuşak kenarla geri konur (-birlesik): GPT maskeye tam uymasa da seviyeler yerinde.
   { ad: 'gpt-image-2-maske', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: true, oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
+  // Yalnız 7 meydan kilitli (Emre: yolu da GPT boyasın, yeşil şerit kalmasın)
+  { ad: 'gpt-image-2-maske-meydan', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: 'meydan', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -165,7 +167,14 @@ async function main() {
     maske: await readFile(path.join(BURASI, 'istemler', 'maske.txt'), 'utf8'),
   };
   const duzenleIstemi = (is, secilen) =>
-    sablonlar[is.maske ? 'maske' : 'duzenle'].trim().replace('{{SEVIYELER}}', seviyeler) +
+    sablonlar[is.maske ? 'maske' : 'duzenle']
+      .trim()
+      .replace(
+        '{{KILIT}}',
+        is.maske === 'meydan'
+          ? 'The mask locks only its 7 round plazas: leave them exactly as they are. Repaint everything else, including the main road and the side paths, which stay where they are in Image 1 and lead to the plazas.'
+          : 'The mask locks its road, side paths and 7 round plazas: leave them exactly as they are. Repaint everything else around them as one continuous landscape.',
+      ).replace('{{SEVIYELER}}', seviyeler) +
     `\n\nImage 1 is the map to edit. The other images are the original paintings for the hidden details; use them only as references.\n` +
     secilen.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for level ${t.seviye}).`).join('\n');
   const kacTablo = (is) => (is.ref ? Math.min(tablolar.length, is.refSiniri - 1) : 0);
@@ -200,7 +209,7 @@ async function main() {
     }
     const gorseller = [{ veri: resim, tur }, ...refler.slice(0, n)];
     const iskEk = bicim === 'yilankavi' ? '' : '_' + bicim;
-    const maske = is.maske ? await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${iskEk}_maske.png`)) : null;
+    const maske = is.maske ? await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${iskEk}_maske${is.maske === 'meydan' ? '_meydan' : ''}.png`)) : null;
     const bas = Date.now();
     // Eski çıktının üstüne yazılmaz (Emre: yedeksiz hiçbir şey silinmesin): aynı ad varsa -v2, -v3…
     let dosyaAdi = `${is.ad}-${bicim}`;
@@ -211,7 +220,7 @@ async function main() {
       await writeFile(path.join(klasor, 'ham', `${dosyaAdi}.png`), veri);
       const { jpg, ham, alan } = await kes(veri, kutu);
       await writeFile(path.join(klasor, `${dosyaAdi}.jpg`), jpg);
-      if (is.maske) await writeFile(path.join(klasor, `${dosyaAdi}-birlesik.jpg`), await yoluGeriKoy(jpg, resim, path.join(BURASI, 'iskelet', `${donem}_iskelet${iskEk}_yumusak.png`)));
+      if (is.maske === true) await writeFile(path.join(klasor, `${dosyaAdi}-birlesik.jpg`), await yoluGeriKoy(jpg, resim, path.join(BURASI, 'iskelet', `${donem}_iskelet${iskEk}_yumusak.png`)));
       const beklenen = oranSayi(is.oran);
       const gelen = ham.width / ham.height;
       const uyari = Math.abs(gelen - beklenen) / beklenen > 0.03 ? `istenen oran ${is.oran}, gelen ${ham.width}×${ham.height}` : null;

@@ -1,5 +1,5 @@
 {
-  "aciklama": "Rönesans gizli eserleri: Emre 17'den 9'a indirdi (seviye başına 1–2; 'çok kalabalık oldu'). Hepsi depodaki yerel kopyalar. 9 tablo + taslak = GPT Image 2'nin 10 görsel sınırı. cikarilan: önceki listeden çıkanlar (Venüs GPT reddettiği için önceden çıkmıştı). kirp: OpenAI çıplak figürler yüzünden (Bosch, Âdem) isteği reddetti; bu iki tablodan yalnız gizli eserin parçası gider (piksel kutusu, 1280 px'lik yerel kopyada).",
+  "aciklama": "Rönesans gizli eserleri: Emre 17'den 9'a, sonra 7'ye indirdi (seviye başına 1; 'çok kalabalık', 'gözü yoruyor'). Hepsi depodaki yerel kopyalar. 9 tablo + taslak = GPT Image 2'nin 10 görsel sınırı. cikarilan: önceki listeden çıkanlar (Venüs GPT reddettiği için önceden çıkmıştı). kirp: OpenAI çıplak figürler yüzünden (Bosch, Âdem) isteği reddetti; bu iki tablodan yalnız gizli eserin parçası gider (piksel kutusu, 1280 px'lik yerel kopyada).",
   "tablolar": [
     {
       "oncelik": 1,
@@ -27,20 +27,6 @@
     },
     {
       "oncelik": 4,
-      "seviye": 3,
-      "sanatci": "Hieronymus Bosch",
-      "eser": "The Garden of Earthly Delights (detail: the pink Fountain of Life in the left panel)",
-      "dosya": "gorseller/b/1434ee16ca10ad2c.jpg",
-      "kaynak": "commons:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg",
-      "kirp": [
-        15,
-        110,
-        295,
-        425
-      ]
-    },
-    {
-      "oncelik": 5,
       "seviye": 4,
       "sanatci": "Michelangelo",
       "eser": "The Creation of Adam (detail: the two reaching hands)",
@@ -54,15 +40,7 @@
       ]
     },
     {
-      "oncelik": 6,
-      "seviye": 4,
-      "sanatci": "Raphael",
-      "eser": "The School of Athens",
-      "dosya": "gorseller/b/3e754c9aae3c41f3.jpg",
-      "kaynak": "commons:The_School_of_Athens_Fresco_by_Raphael_(Ank_Kumar,_Infosys_Limited)_02.jpg"
-    },
-    {
-      "oncelik": 7,
+      "oncelik": 5,
       "seviye": 5,
       "sanatci": "Paolo Veronese",
       "eser": "The Wedding at Cana",
@@ -70,7 +48,7 @@
       "kaynak": "commons:Les_Noces_de_Cana_-_Paolo_Veronese_-_Musée_du_Louvre_Peintures_INV_142_;_MR_384.jpg"
     },
     {
-      "oncelik": 8,
+      "oncelik": 6,
       "seviye": 6,
       "sanatci": "Sofonisba Anguissola",
       "eser": "The Chess Game",
@@ -78,7 +56,7 @@
       "kaynak": "commons:Sofonisba_Anguissola_-_Portrait_of_the_Artist's_Sisters_Playing_Chess_-_WGA00697.jpg"
     },
     {
-      "oncelik": 9,
+      "oncelik": 7,
       "seviye": 7,
       "sanatci": "El Greco",
       "eser": "View of Toledo",
@@ -87,6 +65,28 @@
     }
   ],
   "cikarilan": [
+    {
+      "oncelik": 4,
+      "seviye": 3,
+      "sanatci": "Hieronymus Bosch",
+      "eser": "The Garden of Earthly Delights (detail: the pink Fountain of Life in the left panel)",
+      "dosya": "gorseller/b/1434ee16ca10ad2c.jpg",
+      "kaynak": "commons:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg",
+      "kirp": [
+        15,
+        110,
+        295,
+        425
+      ]
+    },
+    {
+      "oncelik": 6,
+      "seviye": 4,
+      "sanatci": "Raphael",
+      "eser": "The School of Athens",
+      "dosya": "gorseller/b/3e754c9aae3c41f3.jpg",
+      "kaynak": "commons:The_School_of_Athens_Fresco_by_Raphael_(Ank_Kumar,_Infosys_Limited)_02.jpg"
+    },
     {
       "oncelik": 3,
       "seviye": 6,
