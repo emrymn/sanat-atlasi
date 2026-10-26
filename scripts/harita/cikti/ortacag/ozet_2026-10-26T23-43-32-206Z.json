@@ -1,0 +1,88 @@
+[
+  {
+    "ad": "gpt-image-2-melek",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "duzenle": "nano-banana-pro-uslup",
+    "maske": "duzelt",
+    "sablon": "melek",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": false,
+    "ekRef": [
+      "gorseller/b/4f667b920dd4b8c9.jpg",
+      "gorseller/b/e3ad1487857b631e.jpg"
+    ],
+    "fiyat": 0.18,
+    "iskelet": "cep",
+    "sure": 61,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [],
+    "istemOzeti": "0175148c75",
+    "ek": {
+      "providerMetadata": {
+        "openai": {
+          "images": [
+            {
+              "created": 1793058207,
+              "size": "1024x3072",
+              "quality": "high",
+              "background": "opaque",
+              "outputFormat": "png",
+              "imageTokens": 3052,
+              "textTokens": 227
+            }
+          ]
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "openai/gpt-image-2",
+            "resolvedProvider": "openai",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: openai. Total execution order: openai(system)",
+            "canonicalSlug": "openai/gpt-image-2",
+            "finalProvider": "openai",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "openai/gpt-image-2",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "openai",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793058152694,
+                    "endTime": 1793058209177,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.144111",
+          "marketCost": "0.144111",
+          "surchargeCost": "0",
+          "gatewayCost": "0.144111",
+          "inferenceCost": "0.144111",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.144111",
+          "generationId": "gen_01M5X9G7V6QA605W4D4GV4793Q"
+        }
+      },
+      "warnings": []
+    }
+  }
+]
