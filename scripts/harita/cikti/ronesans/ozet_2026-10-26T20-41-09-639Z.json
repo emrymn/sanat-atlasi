@@ -1,0 +1,28 @@
+[
+  {
+    "ad": "gpt-image-2-ref",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.4,
+    "iskelet": "cep",
+    "hata": "Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_9a9cbccf8d9241f4883e92b39ca3ffdd. safety_violations=[sexual]."
+  },
+  {
+    "ad": "gpt-image-2-maske",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "duzenle": "nano-banana-pro-ref",
+    "maske": true,
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.2,
+    "iskelet": "cep",
+    "hata": "Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_b6d9a495f8984ccbbd7acc00414d3322. safety_violations=[sexual]."
+  }
+]
