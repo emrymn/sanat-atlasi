@@ -144,11 +144,14 @@ async function ciz(is, istem, gorseller, oran, maske) {
 
 async function main() {
   const [donem, ...bayraklar] = process.argv.slice(2);
-  if (!donem) throw new Error('Kullanım: node ciz.mjs <dönem> [--iskelet yilankavi|cep] [--calistir] [--yalniz <iş adı>]');
+  if (!donem) throw new Error('Kullanım: node ciz.mjs <dönem> [--iskelet yilankavi|cep] [--calistir] [--yalniz <iş adı>] [--tekrar N] [--kaynak <dosya>]');
+  const secilenKaynak = bayraklar.includes('--kaynak') ? bayraklar[bayraklar.indexOf('--kaynak') + 1].replace(/\.jpg$/, '') : null;
+  // --tekrar N: aynı işi N kez (taslağa uyan çıkana kadar denemek için; Emre'nin seçimi)
+  const tekrar = bayraklar.includes('--tekrar') ? Math.max(1, parseInt(bayraklar[bayraklar.indexOf('--tekrar') + 1], 10) || 1) : 1;
   const bicim = bayraklar.includes('--iskelet') ? bayraklar[bayraklar.indexOf('--iskelet') + 1] : 'yilankavi';
   const calistir = bayraklar.includes('--calistir');
   const yalniz = bayraklar.includes('--yalniz') ? bayraklar[bayraklar.indexOf('--yalniz') + 1] : null;
-  const isler = ISLER.filter((x) => !yalniz || yalniz.split(',').includes(x.ad)); // virgülle birden çok iş
+  const isler = ISLER.filter((x) => !yalniz || yalniz.split(',').includes(x.ad)).flatMap((x) => Array(tekrar).fill(x)); // virgülle birden çok iş
   if (!isler.length) throw new Error(`iş bulunamadı: ${yalniz}`);
 
   const taslak = await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${bicim === 'yilankavi' ? '' : '_' + bicim}.png`));
@@ -205,9 +208,9 @@ async function main() {
     const n = kacTablo(is);
     let resim, kutu, dolgu, istem, tur;
     if (is.duzenle) {
-      // kaynak çizimin en son sürümü (-v2, -v3… varsa sonuncusu)
-      let kaynak = `${is.duzenle}-${bicim}`;
-      for (let v = 2; existsSync(path.join(klasor, `${is.duzenle}-${bicim}-v${v}.jpg`)); v++) kaynak = `${is.duzenle}-${bicim}-v${v}`;
+      // kaynak: --kaynak <dosya adı> verilmişse o, yoksa kaynak çizimin en son sürümü (-v2, -v3… varsa sonuncusu)
+      let kaynak = secilenKaynak || `${is.duzenle}-${bicim}`;
+      if (!secilenKaynak) for (let v = 2; existsSync(path.join(klasor, `${is.duzenle}-${bicim}-v${v}.jpg`)); v++) kaynak = `${is.duzenle}-${bicim}-v${v}`;
       resim = await readFile(path.join(klasor, `${kaynak}.jpg`)); // 1024×3072, kesilmiş
       ({ kutu, dolgu } = { kutu: { x: 0, y: 0, w: 1, h: 1 }, dolgu: false });
       istem = duzenleIstemi(is, tablolar.slice(0, n));
