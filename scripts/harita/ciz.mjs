@@ -7,7 +7,8 @@
 //   export AI_GATEWAY_API_KEY=...
 //   node ciz.mjs ronesans              → yalnız plan ve tahmini maliyet (hiçbir şey harcanmaz)
 //   node ciz.mjs ronesans --calistir   → çizer
-//   node ciz.mjs ronesans --calistir --yalniz gpt-image-2-yalin   → tek iş
+//   node ciz.mjs ronesans --calistir --yalniz gpt-image-2-yalin   → tek iş (virgülle birkaç iş)
+//   node ciz.mjs ronesans --iskelet cep …   → 'ana yol ve cepler' iskeletiyle (varsayılan: yilankavi)
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -31,7 +32,9 @@ const ISLER = [
   { ad: 'nano-banana-pro-ref', model: 'google/gemini-3-pro-image', tur: 'gemini', oran: '9:16', ref: true, refSiniri: 14, fiyat: 0.3 },
   { ad: 'nano-banana-2-yalin', model: 'google/gemini-3.1-flash-image', tur: 'gemini', oran: '1:4', ref: false, fiyat: 0.1 },
   { ad: 'flux-2-pro-yalin', model: 'bfl/flux-2-pro', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.08 },
-  { ad: 'seedream-5-pro-yalin', model: 'bytedance/seedream-5.0-pro', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.05 },
+  { ad: 'seedream-5-pro-yalin', model: 'bytedance/seedream-5.0-pro', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.04 },
+  // ilk denemede tablosuz eserler uydurma çıktı; Seedream'in referans sınırı kesin bilinmiyor, 10'da tutuldu
+  { ad: 'seedream-5-pro-ref', model: 'bytedance/seedream-5.0-pro', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.05 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -76,7 +79,7 @@ function istemKur(temel, is, dolgu, tablolar) {
   if (is.ref) {
     const liste = tablolar.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for level ${t.seviye}).`).join('\n');
     metin +=
-      `\n\nImage 1 is the layout sketch. The other images are the original paintings for the hidden details; use them only as references so those details look like the real works. Blend them into the landscape; never paste them as framed pictures.\n${liste}`;
+      `\n\nImage 1 is the layout sketch. The other images are the original paintings for the hidden details; use them as references so each hidden detail is a recognisable recreation of the real composition (same figures, poses and colours), painted small inside the landscape. Never paste them as framed pictures.\n${liste}`;
   }
   return metin;
 }
@@ -101,21 +104,24 @@ async function ciz(is, istem, gorseller, oran) {
     model: gateway.image(is.model),
     prompt: { text: istem, images: gorseller.map((g) => g.veri) },
     ...(is.boyut ? { size: is.boyut } : { aspectRatio: oran }),
-    providerOptions: is.model.startsWith('openai/') ? { openai: { quality: 'high' } } : undefined,
+    // Seedream varsayılan olarak sağ alta "AI generated" filigranı koyuyor (ilk denemede vardı)
+    providerOptions: is.model.startsWith('openai/') ? { openai: { quality: 'high' } } : is.model.startsWith('bytedance/') ? { bytedance: { watermark: false } } : undefined,
   });
   return { veri: Buffer.from(sonuc.image.uint8Array), ek: { providerMetadata: sonuc.providerMetadata, warnings: sonuc.warnings } };
 }
 
 async function main() {
   const [donem, ...bayraklar] = process.argv.slice(2);
-  if (!donem) throw new Error('Kullanım: node ciz.mjs <dönem> [--calistir] [--yalniz <iş adı>]');
+  if (!donem) throw new Error('Kullanım: node ciz.mjs <dönem> [--iskelet yilankavi|cep] [--calistir] [--yalniz <iş adı>]');
+  const bicim = bayraklar.includes('--iskelet') ? bayraklar[bayraklar.indexOf('--iskelet') + 1] : 'yilankavi';
   const calistir = bayraklar.includes('--calistir');
   const yalniz = bayraklar.includes('--yalniz') ? bayraklar[bayraklar.indexOf('--yalniz') + 1] : null;
-  const isler = ISLER.filter((x) => !yalniz || x.ad === yalniz);
+  const isler = ISLER.filter((x) => !yalniz || yalniz.split(',').includes(x.ad)); // virgülle birden çok iş
   if (!isler.length) throw new Error(`iş bulunamadı: ${yalniz}`);
 
-  const taslak = await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet.png`));
-  const temel = await readFile(path.join(BURASI, 'istemler', `${donem}_gunduz.txt`), 'utf8');
+  const taslak = await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${bicim === 'yilankavi' ? '' : '_' + bicim}.png`));
+  const yerlesim = await readFile(path.join(BURASI, 'istemler', `yerlesim_${bicim}.txt`), 'utf8');
+  const temel = (await readFile(path.join(BURASI, 'istemler', `${donem}_gunduz.txt`), 'utf8')).replace('{{YERLESIM}}', yerlesim.trim());
   // tablolar depodaki yerel kopyalardan (indirme yok); öncelik sırasıyla, 1024 px'e küçültülüp JPEG (istek boyutu)
   const tablolar = JSON.parse(await readFile(path.join(BURASI, `${donem}_referanslar.json`), 'utf8')).tablolar.sort((a, b) => a.oncelik - b.oncelik);
   const refler = await Promise.all(
@@ -125,10 +131,12 @@ async function main() {
   );
   const kacTablo = (is) => (is.ref ? Math.min(tablolar.length, is.refSiniri - 1) : 0);
 
-  console.log(`${donem}: ${isler.length} çizim, tahmini toplam ~${isler.reduce((t, x) => t + x.fiyat, 0).toFixed(2)} $`);
+  console.log(`${donem} (${bicim}): ${isler.length} çizim, tahmini toplam ~${isler.reduce((t, x) => t + x.fiyat, 0).toFixed(2)} $`);
   for (const is of isler) console.log(`  ${is.ad.padEnd(26)} ${is.model.padEnd(34)} oran ${is.oran.padEnd(5)} ${is.ref ? `taslak + ${kacTablo(is)} tablo` : 'yalnız taslak'}  ~${is.fiyat} $`);
   if (!calistir) {
-    console.log('\nPlan bu. Çizmek için: node ciz.mjs ' + donem + ' --calistir');
+    // --istem: ilk işe gidecek istemi göster (harcamadan kontrol için)
+    if (bayraklar.includes('--istem')) console.log('\n' + istemKur(temel, isler[0], (await tuvaleYerlestir(taslak, isler[0].oran)).dolgu, tablolar.slice(0, kacTablo(isler[0]))));
+    console.log(`\nPlan bu. Çizmek için: node ciz.mjs ${process.argv.slice(2).filter((x) => x !== '--istem').join(' ')} --calistir`);
     return;
   }
   if (!process.env.AI_GATEWAY_API_KEY) throw new Error('AI_GATEWAY_API_KEY tanımlı değil');
@@ -142,19 +150,20 @@ async function main() {
     const istem = istemKur(temel, is, dolgu, tablolar.slice(0, n));
     const gorseller = [{ veri: resim, tur: 'image/png' }, ...refler.slice(0, n)];
     const bas = Date.now();
-    process.stdout.write(`${is.ad} … `);
+    const dosyaAdi = `${is.ad}-${bicim}`;
+    process.stdout.write(`${dosyaAdi} … `);
     try {
       const { veri, ek } = await ciz(is, istem, gorseller, is.oran);
-      await writeFile(path.join(klasor, 'ham', `${is.ad}.png`), veri);
+      await writeFile(path.join(klasor, 'ham', `${dosyaAdi}.png`), veri);
       const { png, ham, alan } = await kes(veri, kutu);
-      await writeFile(path.join(klasor, `${is.ad}.png`), png);
+      await writeFile(path.join(klasor, `${dosyaAdi}.png`), png);
       const beklenen = oranSayi(is.oran);
       const gelen = ham.width / ham.height;
       const uyari = Math.abs(gelen - beklenen) / beklenen > 0.03 ? `istenen oran ${is.oran}, gelen ${ham.width}×${ham.height}` : null;
-      ozet.push({ ...is, sure: Math.round((Date.now() - bas) / 1000), ham: [ham.width, ham.height], kesilen: alan, uyari, tablolar: tablolar.slice(0, n).map((t) => t.eser), istemOzeti: createHash('sha1').update(istem).digest('hex').slice(0, 10), ek });
+      ozet.push({ ...is, iskelet: bicim, sure: Math.round((Date.now() - bas) / 1000), ham: [ham.width, ham.height], kesilen: alan, uyari, tablolar: tablolar.slice(0, n).map((t) => t.eser), istemOzeti: createHash('sha1').update(istem).digest('hex').slice(0, 10), ek });
       console.log(`tamam (${ham.width}×${ham.height}${uyari ? ', UYARI: ' + uyari : ''})`);
     } catch (e) {
-      ozet.push({ ...is, hata: String(e && e.message ? e.message : e).slice(0, 500) });
+      ozet.push({ ...is, iskelet: bicim, hata: String(e && e.message ? e.message : e).slice(0, 500) });
       console.log(`HATA: ${e && e.message ? e.message : e}`);
     }
   }

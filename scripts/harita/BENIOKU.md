@@ -10,6 +10,9 @@ Uygulamaya henüz dokunulmadı. Bu klasör yalnız yeni harita resimlerini denem
 - Her seviyenin yanında döneme ait bir yapı; üslup tek ressama bağlı değil, dönemin ünlü resimleri iç içe.
 - Gizli eserler o seviyenin sanatçılarından.
 - Gece: gündüz resminden düzenlenecek (yol ve seviyeler kaymasın).
+- İki iskelet denenecek: yılankavi ve "ana yol ve cepler" (`--iskelet cep`).
+- Yol bölgeye göre değişir (yeri ve genişliği aynı); seviye yerleri boş, küçük yuvarlak meydan; manzara kenardan kenara tek parça.
+- İlk Seedream denemesinde (tablosuz) eserler uydurma çıktı, "AI generated" filigranı vardı: Seedream de tablolarla denenecek, filigran kapatıldı.
 - İlk deneme: Rönesans. GPT Image 2 ve Nano Banana Pro hem referanssız hem depodaki tablolarla (modelin sınırı kadar); FLUX.2 Pro, Seedream 5 Pro, Nano Banana 2, Grok Imagine 2.0 yalnız referanssız.
 
 ## Çalıştırma (Mac)
@@ -20,7 +23,8 @@ npm ci
 export AI_GATEWAY_API_KEY=...          # Vercel → AI Gateway → API Keys
 node ciz.mjs ronesans                  # plan ve tahmini maliyet; hiçbir şey harcanmaz
 node ciz.mjs ronesans --calistir       # 8 çizim, ~1,5 $
-node ciz.mjs ronesans --calistir --yalniz flux-2-pro-yalin   # tek iş (hata verirse yeniden)
+node ciz.mjs ronesans --calistir --yalniz flux-2-pro-yalin   # tek iş (virgülle birkaç iş)
+node ciz.mjs ronesans --iskelet cep --istem                # cep iskeletiyle gidecek istemi göster
 ```
 
 Çıktılar `cikti/ronesans/` altında (`ham/` modelin döndürdüğü, üstteki 1024×3072'ye kesilmiş) ve bir `ozet_….json`. Klasör git'e girmez; sonuçları göstermek için:
