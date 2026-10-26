@@ -1,0 +1,33 @@
+{
+  "aciklama": "Orta Çağ gizli eserleri (Emre onayladı): seviye başına 1, üst yarıda 1 ek. Hepsi depodaki yerel kopyalar.",
+  "tablolar": [
+    {
+      "oncelik": 1,
+      "seviye": 1,
+      "sanatci": "Giotto",
+      "eser": "Lamentation",
+      "dosya": "gorseller/b/e3ad1487857b631e.jpg"
+    },
+    {
+      "oncelik": 2,
+      "seviye": 2,
+      "sanatci": "Duccio",
+      "eser": "Christ's Entry into Jerusalem",
+      "dosya": "gorseller/b/0b55d8270d39493e.jpg"
+    },
+    {
+      "oncelik": 3,
+      "seviye": 3,
+      "sanatci": "Limbourg brothers",
+      "eser": "Très Riches Heures, February",
+      "dosya": "gorseller/b/85a16ae0801e44e1.jpg"
+    },
+    {
+      "oncelik": 4,
+      "seviye": "the open country above plaza 3",
+      "sanatci": "Gentile da Fabriano",
+      "eser": "Adoration of the Magi",
+      "dosya": "gorseller/b/5f89fc48ceabb25d.jpg"
+    }
+  ]
+}

@@ -111,10 +111,10 @@ function istemKur(temel, is, dolgu, tablolar) {
   let metin = temel.trim();
   if (dolgu) {
     metin +=
-      '\n\nThe flat grey margins around the sketch are not part of the layout: fill them with the same scenery continuing naturally. The road and the 7 ovals inside the sketch area must stay exactly where they are.';
+      '\n\nThe flat grey margins around the sketch are not part of the layout: fill them with the same scenery continuing naturally. The road and the {{N}} ovals inside the sketch area must stay exactly where they are.';
   }
   if (is.ref) {
-    const liste = tablolar.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for level ${t.seviye}).`).join('\n');
+    const liste = tablolar.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for ${typeof t.seviye === "number" ? "level " + t.seviye : t.seviye}).`).join('\n');
     metin +=
       `\n\nImage 1 is the layout sketch; its road, side paths and plazas stay exactly in place no matter how many paintings are attached. The other images are the original paintings for the hidden details; use them as references so each hidden detail is a recognisable recreation of the real composition (same figures, poses and colours), painted small inside the landscape. Never paste them as framed pictures.\n${liste}`;
   }
@@ -161,7 +161,10 @@ async function main() {
 
   const taslak = await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${bicim === 'yilankavi' ? '' : '_' + bicim}.png`));
   const yerlesim = await readFile(path.join(BURASI, 'istemler', `yerlesim_${bicim}.txt`), 'utf8');
-  const temel = (await readFile(path.join(BURASI, 'istemler', `${donem}_gunduz.txt`), 'utf8')).replace('{{YERLESIM}}', yerlesim.trim());
+  // seviye sayısı iskeletten (istemlerdeki {{N}}); Rönesans 7, Orta Çağ 3…
+  const seviyeSayisi = JSON.parse(await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${bicim === 'yilankavi' ? '' : '_' + bicim}.json`), 'utf8')).duraklar.length;
+  const N = (t) => t.replaceAll('{{N}}', String(seviyeSayisi));
+  const temel = N((await readFile(path.join(BURASI, 'istemler', `${donem}_gunduz.txt`), 'utf8')).replace('{{YERLESIM}}', yerlesim.trim()));
   // tablolar depodaki yerel kopyalardan (indirme yok); öncelik sırasıyla, 1024 px'e küçültülüp JPEG (istek boyutu)
   const tablolar = JSON.parse(await readFile(path.join(BURASI, `${donem}_referanslar.json`), 'utf8')).tablolar.sort((a, b) => a.oncelik - b.oncelik);
   const refler = await Promise.all(
@@ -188,18 +191,18 @@ async function main() {
       .replace(
         '{{KILIT}}',
         is.maske === 'meydan'
-          ? 'The mask locks only its 7 round plazas: leave them exactly as they are. Repaint everything else, including the main road and the side paths, which stay where they are in Image 1 and lead to the plazas.'
-          : 'The mask locks its road, side paths and 7 round plazas: leave them exactly as they are. Repaint everything else around them as one continuous landscape.',
+          ? 'The mask locks only its {{N}} round plazas: leave them exactly as they are. Repaint everything else, including the main road and the side paths, which stay where they are in Image 1 and lead to the plazas.'
+          : 'The mask locks its road, side paths and {{N}} round plazas: leave them exactly as they are. Repaint everything else around them as one continuous landscape.',
       ).replace('{{SEVIYELER}}', seviyeler) +
     (secilen.length ? `\n\nImage 1 is the map to edit. The other images are the original paintings for the hidden details; use them only as references.\n` : '') +
-    secilen.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for level ${t.seviye}).`).join('\n');
+    secilen.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for ${typeof t.seviye === "number" ? "level " + t.seviye : t.seviye}).`).join('\n');
   const kacTablo = (is) => (is.ref ? Math.min(tablolar.length, is.refSiniri - 1) : 0);
 
   console.log(`${donem} (${bicim}): ${isler.length} çizim, tahmini toplam ~${isler.reduce((t, x) => t + x.fiyat, 0).toFixed(2)} $`);
   for (const is of isler) console.log(`  ${is.ad.padEnd(26)} ${is.model.padEnd(34)} oran ${is.oran.padEnd(5)} ${is.duzenle ? `${is.duzenle} + ${kacTablo(is)} tablo` : is.ref ? `taslak + ${kacTablo(is)} tablo` : 'yalnız taslak'}  ~${is.fiyat} $`);
   if (!calistir) {
     // --istem: ilk işe gidecek istemi göster (harcamadan kontrol için)
-    if (bayraklar.includes('--istem')) console.log('\n' + (isler[0].duzenle ? duzenleIstemi(isler[0], tablolar.slice(0, kacTablo(isler[0]))) : istemKur(temel, isler[0], (await tuvaleYerlestir(taslak, isler[0].oran)).dolgu, tablolar.slice(0, kacTablo(isler[0])))));
+    if (bayraklar.includes('--istem')) console.log('\n' + N(isler[0].duzenle ? duzenleIstemi(isler[0], tablolar.slice(0, kacTablo(isler[0]))) : istemKur(temel, isler[0], (await tuvaleYerlestir(taslak, isler[0].oran)).dolgu, tablolar.slice(0, kacTablo(isler[0])))));
     console.log(`\nPlan bu. Çizmek için: node ciz.mjs ${process.argv.slice(2).filter((x) => x !== '--istem').join(' ')} --calistir`);
     return;
   }
@@ -219,7 +222,7 @@ async function main() {
       if (!secilenKaynak) for (let v = 2; existsSync(path.join(klasor, `${is.duzenle}-${bicim}-v${v}.jpg`)); v++) kaynak = `${is.duzenle}-${bicim}-v${v}`;
       resim = await readFile(path.join(klasor, `${kaynak}.jpg`)); // 1024×3072, kesilmiş
       ({ kutu, dolgu } = { kutu: { x: 0, y: 0, w: 1, h: 1 }, dolgu: false });
-      istem = duzenleIstemi(is, tablolar.slice(0, n));
+      istem = N(duzenleIstemi(is, tablolar.slice(0, n)));
       tur = 'image/jpeg';
       if (is.gece) {
         // 1:3'ü çizemeyen model: iki yana düz kenar, sonra ortadaki 1:3 kesilir
@@ -230,7 +233,7 @@ async function main() {
       }
     } else {
       ({ resim, kutu, dolgu } = await tuvaleYerlestir(taslak, is.oran));
-      istem = istemKur(temel, is, dolgu, tablolar.slice(0, n));
+      istem = N(istemKur(temel, is, dolgu, tablolar.slice(0, n)));
       tur = 'image/png';
     }
     const gorseller = [{ veri: resim, tur }, ...refler.slice(0, n)];
