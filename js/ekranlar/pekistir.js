@@ -84,6 +84,7 @@ import {
 import { akrabaMi } from '../celdirici.js';
 import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
 import { yonlendir } from './yonlendirme.js';
+import { sallanmaBaslat } from '../sallanma.js';
 
 // ---------- İş 24 · harita bölümleri ----------
 const BOLUM_SV_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor', tanitim: 'Tanıtım', 'tanitim-orta': 'Orta tanıtımı' };
@@ -1347,7 +1348,8 @@ function bolumOzeti(o) {
     <div class="ozet bolum-sonuc" data-test="bolum-ozet" data-gecti="${r.gecti}">
       ${
         eserler.length
-          ? `<section class="sergi-duvar" aria-label="Bu bölümde karşına çıkan eserler">
+          ? `<section class="sergi-duvar" aria-label="Bu bölümde karşına çıkan eserler" data-sergi-duvar>
+        <button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 16, 1.6)}Hareketi aç</button>
         <ul class="sergi-asilar" style="--n:${eserler.length}">${duvar}</ul>
         <span class="sergi-isik" aria-hidden="true"></span>
       </section>`
@@ -1379,6 +1381,8 @@ function bolumOzeti(o) {
     ${r.yeniGecti ? yaldizYapraklari() : ''}`);
   yuzdeSayarakYaz(ekran.querySelector('.bolum-sonuc .ad'), yuzde);
   for (const el of ekran.querySelectorAll('[data-gecis]')) el.addEventListener('click', gecisiAk);
+  // telefonu eğince asılı tablolar ipinden sallanır (İş 39; Ayarlar'daki hareket seçimine uyar)
+  sallanmaBaslat(ekran.querySelector('[data-sergi-duvar]'), d.ilerleme.ayarlar.egim !== false);
 }
 
 function gecisiAk(e) {

@@ -1463,6 +1463,8 @@ img.kirik {
   width: 68px;
   transform-origin: 50% -14px;
   rotate: var(--egim);
+  /* telefonu eğince ipinden sallanma (js/sallanma.js --sal yazar); asılış animasyonu rotate'i tuttuğu için ayrı transform */
+  transform: rotate(var(--sal, 0deg));
   animation: asi-asil 1.1s cubic-bezier(0.3, 1.4, 0.4, 1) both;
   animation-delay: calc(0.35s + var(--i) * 0.12s);
 }
@@ -3483,6 +3485,26 @@ main[data-hareket='giris'][data-yon='sol'] > :not(.alt-yaprak) {
   filter: blur(5px);
   translate: calc(var(--yzx, 0) * -10px) calc(3px + var(--yzy, 0) * -7px);
   pointer-events: none;
+}
+/* Bölüm sonucu: iOS izni hatırlamıyorsa sergi duvarının üstünde aynı düğme; duvar ona yer açar */
+.sergi-duvar.egim-izinsiz {
+  padding-top: 64px;
+}
+.sergi-duvar.egim-izinsiz .egim-dugme {
+  position: absolute;
+  z-index: 2;
+  top: 18px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 0 14px 0 12px;
+  border: 1px solid rgba(201, 162, 74, 0.7);
+  border-radius: 999px;
+  background: rgba(var(--bg-rgb), 0.62);
+  color: var(--ink);
+  font: 600 13px/1 var(--sans);
 }
 /* "Hareketi aç": iOS izni hatırlamıyorsa tablonun sağ üstünde (js/egim.js .egim-izinsiz ekler); izin yalnız buna
    dokununca istenir, ekranın rastgele bir yerine dokununca kutu çıkmaz */

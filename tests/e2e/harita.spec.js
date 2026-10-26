@@ -112,6 +112,18 @@ test('bölüm: tanıtım, Kolay %75 ile geçilince Orta açılır; Orta geçilin
   const kolayEserleri = await tanit();
   await cevapla(8, kolayEserleri);
   await expect(page.locator('[data-test="bolum-ozet"]')).toHaveAttribute('data-gecti', 'true');
+  // İş 39: telefonu sağa çevirince sergi duvarındaki asılı tablolar ipinden sola salınır (jiroskop olayı elle;
+  // dikey eksen etrafındaki dönüş standartta gamma'da, iOS'ta beta'da gelir: ikisine de yazılır)
+  await expect(page.locator('.sergi-duvar .asi').first()).toBeVisible();
+  await page.evaluate(async () => {
+    for (let i = 0; i < 30; i++) {
+      window.dispatchEvent(new DeviceMotionEvent('devicemotion', { rotationRate: { alpha: 0, beta: 120, gamma: 120 }, interval: 16 }));
+      await new Promise((r) => setTimeout(r, 16));
+    }
+  });
+  await expect
+    .poll(() => page.locator('.sergi-duvar .asi').first().evaluate((e) => parseFloat(e.style.getPropertyValue('--sal')) || 0))
+    .toBeLessThan(-1);
   const kayit = await page.evaluate((b) => window.__atlas.ilerleme.bolumler[b], id);
   expect(kayit.kolay).toBe(1);
   expect(kayit.tanitim).toBe(true);

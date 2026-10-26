@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.36.3';
+const SURUM = '1.37.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -54,6 +54,7 @@ const KABUK_DOSYALARI = [
   'js/oturum.js',
   'js/renk.js',
   'js/resim.js',
+  'js/sallanma.js',
   'js/seviye.js',
   'js/surum.js',
   'js/tasarim.js',
