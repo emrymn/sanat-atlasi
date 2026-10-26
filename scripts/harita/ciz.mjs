@@ -22,13 +22,13 @@ const H = 3072;
 const DOLGU = { r: 214, g: 210, b: 198 }; // taslağın dışına eklenen düz kenar (modelden doldurması istenir)
 
 // Deneme turu (Emre'nin seçimi): GPT Image 2 ve Nano Banana Pro hem referanssız hem referanslı;
-// ötekiler yalnız referanssız. oran: modelden istenen en-boy; 1:3 tek parçada çizilemiyorsa taslak o orana
+// ötekiler yalnız referanssız. refSiniri: modelin aldığı en çok görsel (taslak dahil); tablolar öncelik sırasıyla o kadar gider. oran: modelden istenen en-boy; 1:3 tek parçada çizilemiyorsa taslak o orana
 // düz kenarla genişletilir, çıktıdan ortadaki 1:3 kesilir. fiyat: kaba tahmin ($), yalnız planda gösterilir.
 const ISLER = [
   { ad: 'gpt-image-2-yalin', model: 'openai/gpt-image-2', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.3 },
-  { ad: 'gpt-image-2-ref', model: 'openai/gpt-image-2', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: true, fiyat: 0.35 },
+  { ad: 'gpt-image-2-ref', model: 'openai/gpt-image-2', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.4 },
   { ad: 'nano-banana-pro-yalin', model: 'google/gemini-3-pro-image', tur: 'gemini', oran: '9:16', ref: false, fiyat: 0.24 },
-  { ad: 'nano-banana-pro-ref', model: 'google/gemini-3-pro-image', tur: 'gemini', oran: '9:16', ref: true, fiyat: 0.26 },
+  { ad: 'nano-banana-pro-ref', model: 'google/gemini-3-pro-image', tur: 'gemini', oran: '9:16', ref: true, refSiniri: 14, fiyat: 0.3 },
   { ad: 'nano-banana-2-yalin', model: 'google/gemini-3.1-flash-image', tur: 'gemini', oran: '1:4', ref: false, fiyat: 0.1 },
   { ad: 'flux-2-pro-yalin', model: 'bfl/flux-2-pro', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.08 },
   { ad: 'seedream-5-pro-yalin', model: 'bytedance/seedream-5.0-pro', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.05 },
@@ -67,14 +67,14 @@ export async function kes(cikti, kutu) {
   return { png: await sharp(cikti).extract(alan).resize(W, H, { fit: 'fill' }).png().toBuffer(), ham: m, alan };
 }
 
-function istemKur(temel, is, dolgu, referanslar) {
+function istemKur(temel, is, dolgu, tablolar) {
   let metin = temel.trim();
   if (dolgu) {
     metin +=
       '\n\nThe flat grey margins around the sketch are not part of the layout: fill them with the same scenery continuing naturally. The road and the 7 ovals inside the sketch area must stay exactly where they are.';
   }
   if (is.ref) {
-    const liste = referanslar.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for level ${t.seviye}).`).join('\n');
+    const liste = tablolar.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for level ${t.seviye}).`).join('\n');
     metin +=
       `\n\nImage 1 is the layout sketch. The other images are the original paintings for the hidden details; use them only as references so those details look like the real works. Blend them into the landscape; never paste them as framed pictures.\n${liste}`;
   }
@@ -88,7 +88,7 @@ async function ciz(is, istem, gorseller, oran) {
       messages: [
         {
           role: 'user',
-          content: [{ type: 'text', text: istem }, ...gorseller.map((g) => ({ type: 'image', image: g, mediaType: 'image/png' }))],
+          content: [{ type: 'text', text: istem }, ...gorseller.map((g) => ({ type: 'image', image: g.veri, mediaType: g.tur }))],
         },
       ],
       providerOptions: { google: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio: oran, imageSize: '2K' } } },
@@ -99,7 +99,7 @@ async function ciz(is, istem, gorseller, oran) {
   }
   const sonuc = await generateImage({
     model: gateway.image(is.model),
-    prompt: { text: istem, images: gorseller },
+    prompt: { text: istem, images: gorseller.map((g) => g.veri) },
     ...(is.boyut ? { size: is.boyut } : { aspectRatio: oran }),
     providerOptions: is.model.startsWith('openai/') ? { openai: { quality: 'high' } } : undefined,
   });
@@ -116,12 +116,17 @@ async function main() {
 
   const taslak = await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet.png`));
   const temel = await readFile(path.join(BURASI, 'istemler', `${donem}_gunduz.txt`), 'utf8');
-  const refBilgi = JSON.parse(await readFile(path.join(BURASI, `${donem}_referanslar.json`), 'utf8')).tablolar;
-  // referansları 1024 px'e küçült (istek boyutu ve jeton maliyeti); PNG olarak gönder
-  const refler = await Promise.all(refBilgi.map((t) => readFile(path.join(KOK, t.dosya)).then((b) => sharp(b).resize(1024, 1024, { fit: 'inside' }).png().toBuffer())));
+  // tablolar depodaki yerel kopyalardan (indirme yok); öncelik sırasıyla, 1024 px'e küçültülüp JPEG (istek boyutu)
+  const tablolar = JSON.parse(await readFile(path.join(BURASI, `${donem}_referanslar.json`), 'utf8')).tablolar.sort((a, b) => a.oncelik - b.oncelik);
+  const refler = await Promise.all(
+    tablolar.map((t) =>
+      readFile(path.join(KOK, t.dosya)).then(async (b) => ({ veri: await sharp(b).resize(1024, 1024, { fit: 'inside' }).jpeg({ quality: 88 }).toBuffer(), tur: 'image/jpeg' })),
+    ),
+  );
+  const kacTablo = (is) => (is.ref ? Math.min(tablolar.length, is.refSiniri - 1) : 0);
 
   console.log(`${donem}: ${isler.length} çizim, tahmini toplam ~${isler.reduce((t, x) => t + x.fiyat, 0).toFixed(2)} $`);
-  for (const is of isler) console.log(`  ${is.ad.padEnd(26)} ${is.model.padEnd(34)} oran ${is.oran.padEnd(5)} ${is.ref ? `taslak + ${refler.length} tablo` : 'yalnız taslak'}  ~${is.fiyat} $`);
+  for (const is of isler) console.log(`  ${is.ad.padEnd(26)} ${is.model.padEnd(34)} oran ${is.oran.padEnd(5)} ${is.ref ? `taslak + ${kacTablo(is)} tablo` : 'yalnız taslak'}  ~${is.fiyat} $`);
   if (!calistir) {
     console.log('\nPlan bu. Çizmek için: node ciz.mjs ' + donem + ' --calistir');
     return;
@@ -133,8 +138,9 @@ async function main() {
   const ozet = [];
   for (const is of isler) {
     const { resim, kutu, dolgu } = await tuvaleYerlestir(taslak, is.oran);
-    const istem = istemKur(temel, is, dolgu, refBilgi);
-    const gorseller = is.ref ? [resim, ...refler] : [resim];
+    const n = kacTablo(is);
+    const istem = istemKur(temel, is, dolgu, tablolar.slice(0, n));
+    const gorseller = [{ veri: resim, tur: 'image/png' }, ...refler.slice(0, n)];
     const bas = Date.now();
     process.stdout.write(`${is.ad} … `);
     try {
@@ -145,7 +151,7 @@ async function main() {
       const beklenen = oranSayi(is.oran);
       const gelen = ham.width / ham.height;
       const uyari = Math.abs(gelen - beklenen) / beklenen > 0.03 ? `istenen oran ${is.oran}, gelen ${ham.width}×${ham.height}` : null;
-      ozet.push({ ...is, sure: Math.round((Date.now() - bas) / 1000), ham: [ham.width, ham.height], kesilen: alan, uyari, istemOzeti: createHash('sha1').update(istem).digest('hex').slice(0, 10), ek });
+      ozet.push({ ...is, sure: Math.round((Date.now() - bas) / 1000), ham: [ham.width, ham.height], kesilen: alan, uyari, tablolar: tablolar.slice(0, n).map((t) => t.eser), istemOzeti: createHash('sha1').update(istem).digest('hex').slice(0, 10), ek });
       console.log(`tamam (${ham.width}×${ham.height}${uyari ? ', UYARI: ' + uyari : ''})`);
     } catch (e) {
       ozet.push({ ...is, hata: String(e && e.message ? e.message : e).slice(0, 500) });

@@ -10,7 +10,7 @@ Uygulamaya henüz dokunulmadı. Bu klasör yalnız yeni harita resimlerini denem
 - Her seviyenin yanında döneme ait bir yapı; üslup tek ressama bağlı değil, dönemin ünlü resimleri iç içe.
 - Gizli eserler o seviyenin sanatçılarından.
 - Gece: gündüz resminden düzenlenecek (yol ve seviyeler kaymasın).
-- İlk deneme: Rönesans. GPT Image 2 ve Nano Banana Pro hem referanssız hem 7 baş tabloyla; FLUX.2 Pro, Seedream 5 Pro, Nano Banana 2, Grok Imagine 2.0 yalnız referanssız.
+- İlk deneme: Rönesans. GPT Image 2 ve Nano Banana Pro hem referanssız hem depodaki tablolarla (modelin sınırı kadar); FLUX.2 Pro, Seedream 5 Pro, Nano Banana 2, Grok Imagine 2.0 yalnız referanssız.
 
 ## Çalıştırma (Mac)
 
@@ -32,5 +32,5 @@ git add -f cikti/ronesans && git commit -m "Harita: Rönesans deneme çizimleri"
 ## Notlar
 
 - 1:3'ü tek parçada çizemeyen modellerde (Nano Banana 2 → 1:4, Nano Banana Pro → 9:16, Grok → 1:2) taslak düz kenarla o orana genişletilir; çıktıdan ortadaki 1:3 kesilir. Model istenen orandan farklı bir resim döndürürse betik uyarır.
-- Referans tablolar depodaki yerel kopyalar (`ronesans_referanslar.json`).
+- Referans tablolar depodaki yerel kopyalar, indirme yok (`ronesans_referanslar.json`, 16 tablo, az bilinen önce). Her modele sınırı kadar gider: GPT Image 2 → taslak + 9, Nano Banana Pro → taslak + 13. Dürer'in Genç Tavşan'ı depoda yok, yalnız tarifle.
 - Fiyatlar kaba tahmin; gerçek harcama Vercel panosunda.
