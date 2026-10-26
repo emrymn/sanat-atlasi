@@ -44,6 +44,8 @@ const ISLER = [
   { ad: 'gpt-image-2-maske', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: true, oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
   // Yalnız 7 meydan kilitli (Emre: yolu da GPT boyasın, yeşil şerit kalmasın)
   { ad: 'gpt-image-2-maske-meydan', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: 'meydan', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
+  // Dar maske: yol, kol ve meydanlar yolun tam kenarına kadar kilitli; açık renkler, sade istem (Emre'nin seçimi)
+  { ad: 'gpt-image-2-maske-dar', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: 'dar', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -209,7 +211,7 @@ async function main() {
     }
     const gorseller = [{ veri: resim, tur }, ...refler.slice(0, n)];
     const iskEk = bicim === 'yilankavi' ? '' : '_' + bicim;
-    const maske = is.maske ? await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${iskEk}_maske${is.maske === 'meydan' ? '_meydan' : ''}.png`)) : null;
+    const maske = is.maske ? await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${iskEk}_maske${typeof is.maske === 'string' ? '_' + is.maske : ''}.png`)) : null;
     const bas = Date.now();
     // Eski çıktının üstüne yazılmaz (Emre: yedeksiz hiçbir şey silinmesin): aynı ad varsa -v2, -v3…
     let dosyaAdi = `${is.ad}-${bicim}`;

@@ -13,6 +13,7 @@ from PIL import Image, ImageDraw, ImageFilter
 
 PAY = 41  # kilitli alanın taslaktaki yoldan taşması (px, tek sayı): model yolu birkaç piksel kaydırabiliyor
 YUMUSAK = 14  # geri koyarken kenar yumuşatma (px)
+DAR = 7  # dar maskenin payı (px, tek sayı)
 
 
 def maske(donem, bicim):
@@ -36,6 +37,11 @@ def maske(donem, bicim):
     m2 = Image.new('RGBA', sk.size, (0, 0, 0, 0))
     m2.putalpha(yalniz)
     m2.save(klasor / f'{donem}_iskelet{ek}_maske_meydan.png')
+    # dar: yol, kol ve meydanlar yalnız birkaç piksel payla (geniş payda yolun iki yanında yeşil şerit kalıyordu,
+    # yalnız meydanlar kilitliyken de GPT yolu baştan çizip yerleşimi bozdu)
+    m3 = Image.new('RGBA', sk.size, (0, 0, 0, 0))
+    m3.putalpha(yol.filter(ImageFilter.MaxFilter(DAR)))
+    m3.save(klasor / f'{donem}_iskelet{ek}_maske_dar.png')
 
 
 if __name__ == '__main__':
