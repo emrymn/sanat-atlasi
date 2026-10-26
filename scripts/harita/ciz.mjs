@@ -150,7 +150,12 @@ async function main() {
   const tablolar = JSON.parse(await readFile(path.join(BURASI, `${donem}_referanslar.json`), 'utf8')).tablolar.sort((a, b) => a.oncelik - b.oncelik);
   const refler = await Promise.all(
     tablolar.map((t) =>
-      readFile(path.join(KOK, t.dosya)).then(async (b) => ({ veri: await sharp(b).resize(1024, 1024, { fit: 'inside' }).jpeg({ quality: 88 }).toBuffer(), tur: 'image/jpeg' })),
+      // kirp: [x0, y0, x1, y1] yerel kopyada; tablonun yalnız gizli eserlik parçası gider (çıplak figürler OpenAI'de reddediliyordu)
+      readFile(path.join(KOK, t.dosya)).then(async (b) => {
+        let r = sharp(b);
+        if (t.kirp) r = sharp(await r.extract({ left: t.kirp[0], top: t.kirp[1], width: t.kirp[2] - t.kirp[0], height: t.kirp[3] - t.kirp[1] }).toBuffer());
+        return { veri: await r.resize(1024, 1024, { fit: 'inside' }).jpeg({ quality: 88 }).toBuffer(), tur: 'image/jpeg' };
+      }),
     ),
   );
   // Düzenleme istemi: seviye listesi ana istemdeki "From bottom to top:" bölümünden alınır

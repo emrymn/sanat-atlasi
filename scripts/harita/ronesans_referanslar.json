@@ -1,5 +1,5 @@
 {
-  "aciklama": "Rönesans gizli eserleri: Emre 17'den 9'a indirdi (seviye başına 1–2; 'çok kalabalık oldu'). Hepsi depodaki yerel kopyalar. 9 tablo + taslak = GPT Image 2'nin 10 görsel sınırı. cikarilan: önceki listeden çıkanlar (Venüs GPT reddettiği için önceden çıkmıştı).",
+  "aciklama": "Rönesans gizli eserleri: Emre 17'den 9'a indirdi (seviye başına 1–2; 'çok kalabalık oldu'). Hepsi depodaki yerel kopyalar. 9 tablo + taslak = GPT Image 2'nin 10 görsel sınırı. cikarilan: önceki listeden çıkanlar (Venüs GPT reddettiği için önceden çıkmıştı). kirp: OpenAI çıplak figürler yüzünden (Bosch, Âdem) isteği reddetti; bu iki tablodan yalnız gizli eserin parçası gider (piksel kutusu, 1280 px'lik yerel kopyada).",
   "tablolar": [
     {
       "oncelik": 1,
@@ -29,17 +29,29 @@
       "oncelik": 4,
       "seviye": 3,
       "sanatci": "Hieronymus Bosch",
-      "eser": "The Garden of Earthly Delights",
+      "eser": "The Garden of Earthly Delights (detail: the pink Fountain of Life in the left panel)",
       "dosya": "gorseller/b/1434ee16ca10ad2c.jpg",
-      "kaynak": "commons:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg"
+      "kaynak": "commons:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg",
+      "kirp": [
+        15,
+        110,
+        295,
+        425
+      ]
     },
     {
       "oncelik": 5,
       "seviye": 4,
       "sanatci": "Michelangelo",
-      "eser": "The Creation of Adam",
+      "eser": "The Creation of Adam (detail: the two reaching hands)",
       "dosya": "gorseller/b/3492a085a4197805.jpg",
-      "kaynak": "commons:The_Creation_of_Adam_perspective_fix.jpg"
+      "kaynak": "commons:The_Creation_of_Adam_perspective_fix.jpg",
+      "kirp": [
+        320,
+        195,
+        760,
+        300
+      ]
     },
     {
       "oncelik": 6,
