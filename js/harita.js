@@ -55,8 +55,13 @@ export function vakit(tarih = new Date()) {
 }
 
 export const resimAdresi = (bolge, tur) => `gorseller/harita/${bolge}_${tur}.webp`;
-export const nesneAdresi = (bolge, tur) => `gorseller/harita/nesne_${(DURAK_DUZENI[bolge] && DURAK_DUZENI[bolge].dosya) || bolge}_${tur}.webp`;
-export const yolcuAdresi = (bolge, tur) => `gorseller/harita/yolcu_${bolge}_${tur}.webp`;
+// Yolcular ve bu bölgelerin sembolleri ekrandaki boyutlarının 3 katı çözünürlükte (_3x; İş 40): eskileri 1,25–2 kattı,
+// iPhone'un 3 kat ekranında büyütülüp bulanık görünüyordu. Rönesans büstü, Romantizm feneri ve XIX. yüzyıl sembolü
+// zaten ~3 kat. Yeni ad şart: gorseller/ önbelleği sürümden bağımsız, aynı adla değişen resim telefonda yenilenmez.
+const NESNE_3X = new Set(['ortacag', 'barok', 'barok2', 'aydinlanma', 'modern']);
+export const nesneAdresi = (bolge, tur) =>
+  `gorseller/harita/nesne_${(DURAK_DUZENI[bolge] && DURAK_DUZENI[bolge].dosya) || bolge}_${tur}${NESNE_3X.has(bolge) ? '_3x' : ''}.webp`;
+export const yolcuAdresi = (bolge, tur) => `gorseller/harita/yolcu_${bolge}_${tur}_3x.webp`;
 
 /**
  * durumlar: bolumDurumlari().durumlar (akım sırasıyla); veri: data/harita.json; tur: 'gunduz' | 'gece'
