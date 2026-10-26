@@ -1,0 +1,158 @@
+[
+  {
+    "ad": "nano-banana-pro-uslup",
+    "model": "google/gemini-3-pro-image",
+    "tur": "gemini",
+    "duzenle": "gpt-image-2-maske",
+    "gece": true,
+    "istemDosya": "uslup",
+    "oran": "9:16",
+    "ref": true,
+    "refSiniri": 14,
+    "fiyat": 0.15,
+    "iskelet": "cep",
+    "sure": 43,
+    "ham": [
+      1536,
+      2752
+    ],
+    "kesilen": {
+      "left": 313,
+      "top": 0,
+      "width": 910,
+      "height": 2752
+    },
+    "uyari": null,
+    "tablolar": [
+      "Saint Francis Giving His Cloak to a Poor Knight",
+      "Christ's Entry into Jerusalem",
+      "Très Riches Heures, February (detail: the snowy farmyard)",
+      "Adoration of the Magi"
+    ],
+    "istemOzeti": "36956fde00",
+    "ek": {
+      "usage": {
+        "inputTokens": 3224,
+        "inputTokenDetails": {
+          "noCacheTokens": 3224,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 1460,
+        "outputTokenDetails": {
+          "textTokens": 1120,
+          "reasoningTokens": 340
+        },
+        "totalTokens": 4684
+      },
+      "providerMetadata": {
+        "googleVertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "thoughtsTokenCount": 340,
+            "promptTokenCount": 3224,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 4684,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 424
+              },
+              {
+                "modality": "IMAGE",
+                "tokenCount": 2800
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "vertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "thoughtsTokenCount": 340,
+            "promptTokenCount": 3224,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 4684,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 424
+              },
+              {
+                "modality": "IMAGE",
+                "tokenCount": 2800
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "google/gemini-3-pro-image",
+            "resolvedProvider": "vertex",
+            "fallbacksAvailable": [
+              "google"
+            ],
+            "planningReasoning": "System credentials planned for: vertex, google. Total execution order: vertex(system) → google(system)",
+            "canonicalSlug": "google/gemini-3-pro-image",
+            "finalProvider": "vertex",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "google/gemini-3-pro-image",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "vertex",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793057325835,
+                    "endTime": 1793057355380,
+                    "statusCode": 200,
+                    "providerResponseId": "LuLfatT3H5u3mPUPpcucmQQ"
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1,
+            "affinity": {
+              "outcome": "no_pin"
+            },
+            "clientSessionId": "eaea782ea6a3cfe79c09b7fa6abb8829",
+            "clientSessionIdSource": "fingerprint"
+          },
+          "cost": "0.144928",
+          "marketCost": "0.144928",
+          "surchargeCost": "0",
+          "gatewayCost": "0.144928",
+          "inferenceCost": "0.144928",
+          "inputInferenceCost": "0.006448",
+          "outputInferenceCost": "0.13848",
+          "generationId": "gen_01M5X8Q0FRA34HW6CMN57ENPKS"
+        }
+      }
+    }
+  }
+]
