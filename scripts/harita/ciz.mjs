@@ -61,6 +61,9 @@ const ISLER = [
   // Üslup sonrası düzeltme (Emre: altın kısımlar boş, melek ekle): ekRef ile yalnız bu işe giden örnek tablolar
   { ad: 'nano-banana-pro-duzelt', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'nano-banana-pro-uslup', gece: true, istemDosya: 'duzelt', oran: '9:16', ref: false,
     ekRef: ['gorseller/b/4f667b920dd4b8c9.jpg', 'gorseller/b/e3ad1487857b631e.jpg'], fiyat: 0.15 },
+  // Altın göğe melek (maskeyle; tek istekteki üç değişikliği Nano Banana Pro baştan çizdi): yalnız altın alanlar ve sol alt köşe açık
+  { ad: 'gpt-image-2-melek', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-uslup', maske: 'duzelt', sablon: 'melek', oran: '1:3', boyut: '1024x3072', ref: false,
+    ekRef: ['gorseller/b/4f667b920dd4b8c9.jpg', 'gorseller/b/e3ad1487857b631e.jpg'], fiyat: 0.18 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -190,9 +193,10 @@ async function main() {
     maske: await readFile(path.join(BURASI, 'istemler', 'maske.txt'), 'utf8'),
     serit: await readFile(path.join(BURASI, 'istemler', 'serit.txt'), 'utf8'),
     ekle: await readFile(path.join(BURASI, 'istemler', 'ekle.txt'), 'utf8'),
+    melek: await readFile(path.join(BURASI, 'istemler', 'melek.txt'), 'utf8'),
   };
   const duzenleIstemi = (is, secilen) =>
-    sablonlar[is.maske === 'serit' || is.maske === 'ekle' ? is.maske : is.maske ? 'maske' : 'duzenle']
+    sablonlar[is.sablon || (is.maske === 'serit' || is.maske === 'ekle' ? is.maske : is.maske ? 'maske' : 'duzenle')]
       .trim()
       .replace(
         '{{KILIT}}',
