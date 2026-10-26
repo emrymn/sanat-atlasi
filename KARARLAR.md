@@ -1164,3 +1164,10 @@ Emre (ekran görüntüsüyle): "sallanma efektini bu üstteki resimler için de 
 2. Algılayıcı, izin ve "Hareketi aç" Bugün'dekiyle aynı (`egimBaslat`'a isteğe bağlı `degisince` geri çağırması eklendi). iOS izni hatırlamıyorsa duvarın sağ üstünde "Hareketi aç" düğmesi; duvar ona yer açar. Ayarlar'daki hareket anahtarına ve hareket azaltmaya uyar.
 3. Salınım `transform: rotate(var(--sal))` olarak tablonun asılış eğimine (`rotate: --egim`) eklenir; asılış animasyonu `rotate`'i tuttuğu için ayrı özellik. Dönme noktası çivi (ipin üstü).
 4. Test: `tests/unit/sallanma.test.mjs` (aşma, durulma, ortaya dönüş, ip boyu, büyük adımda kararlılık), `tests/e2e/harita.spec.js` (jiroskop olayıyla tablolar sola salınır). Sürüm 1.37.0 + Yenilikler satırı.
+
+## İş 40 · Haritadaki karakterler netleşti (2026-10-26, v1.37.1)
+
+Emre: "haritadaki karakterler çok bulanık". Sebep: yolcular ekranda ~74 pt boyunda ama dosyaları 92 px'ti (1,25 px/pt); iPhone 13'ün 3 kat ekranında 2,4 kat büyütülüp bulanıklaşıyordu. Orta Çağ, Barok, Barok II, Aydınlanma ve Modern sembolleri 2 px/pt'ydi (1,5 kat büyütülüyordu); Rönesans büstü, Romantizm feneri ve XIX. yüzyıl sembolü zaten ~3 px/pt.
+1. Orijinal büyük çizimler depoda olmadığı için mevcut sprite'lar Emre'nin Mac'inde Real-ESRGAN (realesrgan-ncnn-vulkan, `realesrgan-x4plus-anime`) ile 4 kat büyütüldü ve 3 px/pt'ye (yolcu 222 px boy) Lanczos ile indirildi (bu oturumda dış model ağırlığı çalıştırmak izin sistemine takıldığı için Emre kendi bilgisayarında çalıştırdı; komutlar sohbette). Emre `harita-3x` dalına itti; en-boy oranları ve saydamlık korunmuş, ayak noktası oranla ölçüldüğü için `data/harita.json` değişmedi.
+2. Yeni adlar `_3x` sonekli (`js/harita.js` `yolcuAdresi`, `nesneAdresi` + `NESNE_3X`): gorseller/ önbelleği sürümden bağımsız, aynı adla değişen resim telefonda yenilenmezdi. Eski 26 dosya silindi.
+3. Harita arka plan resimleri 2 px/pt (780×1170); onlardaki küçük boyalı figürler ayrı iş.
