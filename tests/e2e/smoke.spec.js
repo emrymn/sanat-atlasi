@@ -143,8 +143,12 @@ test('yalnızca resim: heykeltıraş ve mimarlar ile resimsiz akımlar görünme
   await page.getByRole('link').filter({ hasText: 'Erken Rönesans' }).click();
   // akım sayfasındaki eser şeridi de sanatçı adını yazar ve geç yüklenir: yalnız sanatçı satırına bak
   await expect(page.getByRole('link', { name: /^Masaccio/ })).toBeVisible();
-  await expect(page.getByText('Brunelleschi')).toHaveCount(0);
-  await expect(page.getByText('Donatello')).toHaveCount(0);
+  // dönemin hikâyesi (akim_bilgi metni) bu adları anlatı içinde geçirebilir; sanatçı ve eser olarak hiçbir yerde yoklar
+  // (önce hikâyenin, yani geç dolan kimlik bölümünün gelmesi beklenir: aşağıdaki "yok" denetimi dolu sayfada yapılsın)
+  await expect(page.locator('.akim-hikaye-metin')).toContainText('Brunelleschi');
+  await expect(page.locator('.akim-eser').first()).toBeVisible();
+  await expect(page.getByText('Brunelleschi').and(page.locator(':not(.akim-hikaye-metin)'))).toHaveCount(0);
+  await expect(page.getByText('Donatello').and(page.locator(':not(.akim-hikaye-metin)'))).toHaveCount(0);
   // Michelangelo'nun sayfasında heykelleri yok
   await page.goto('./#/sanatci/michelangelo');
   await expect(page.locator('.eser').first()).toBeVisible();

@@ -1129,3 +1129,26 @@ Emre: "harita kısmında kaydırma çok hızlı geçiyor, her dönem geçişinde
 2. Hızlı kaydırınca her yeni dönemde kart baştan oynar. Kart oynarken şeritlerin kendi dönem yazısı gizlenir (aynı ad iki kez üst üste görünüyordu). Dokunmayı engellemez (`pointer-events: none`).
 3. Uygulamanın kendi kaydırması (açılışta "buradasın"a, "Buradasın" düğmesi) kart oynatmaz. Hareket azaltma açıksa kart yok (gösterge yeterli). İlk açılışta da yok.
 4. Test: `tests/e2e/harita.spec.js` (Rönesans'a kaydırınca kart Rönesans'ı duyurur, kendiliğinden kapanır).
+
+## İş 35 · v0 dalı içeri alındı: dönem düğmesi, akım sayfası, harita perdesi (2026-10-25, v1.36.0)
+
+Emre v0'da (`v0/donem-gecis-firca-akim`, 7 kayıt, güncel main'in üstünde) değişiklik yaptı ve birleştirilmesini istedi ("sorun varsa diğer dallara da bak").
+1. v0'ın getirdikleri: akım sayfası önem sırasına göre (tanıma → eserler → sanatçılar → pekiştir → dönem → karşılaştırma → tipik konular), bölüm başlıkları, ipuçlarının yanında eserden yakın plan "büyüteç"; "Bu dönemi pekiştir" düğmesinde dönemin en bilinen eseri, dönemin tekniğiyle sahnede kurulur (`akimUslubu`, `TEKNIKLER`: vitray, mozaik, perspektif, chiaroscuro…); haritadaki bölüm kartının arkasında dönemin renginde üç katlı perde (ileri giderken alttan, geri dönerken üstten); İlerleme'de fırça izli "İşlendi yap".
+2. Denetim: bütün akımların bir üslubu var (`akimlar.json`'daki her ad `USLUPLAR`'da); yeni dosya yok (çevrimdışı kabuk listesi değişmedi); birim 244/244, e2e 82/82; akım sayfası, harita ve İlerleme tarayıcıda açılıp bakıldı, konsolda hata yok.
+3. Eksik olan tek şey sürümdü: v0 sürümü artırmamıştı, service worker kabuğu önbellekten verdiği için değişiklikler telefona gelmezdi. 1.36.0 + Yenilikler satırı eklendi.
+4. Öteki dallar: birleşmemiş görünen kayıtları olan eski dallar (`claude/pekistirme-devam`, `claude/project-thread-qufexy`, `-vejy41`, `claude/seviyeler`) incelendi; işleri main'e squash ile girmiş (KARARLAR İş 18, devam kartı), alınacak bir şey yok.
+5. Not: İş 18'de fırça izi dokusu düğmelerde denenmiş, Emre beğenmemişti; v0'daki fırça izli "İşlendi yap" Emre'nin kendi v0 çalışması olduğu için olduğu gibi alındı.
+
+## İş 36 · Akım sayfasında dönemin hikâyesi (2026-10-25, v1.36.1)
+
+Emre: "dönem açıklamalarını yazdırmıştık, onları dönemin içine ekleyelim ama uzayıp gitmesin, devamını oku şeklinde kısalt".
+1. `data/akim_bilgi.json`'daki metin (28 akım, 150–175 kelime; şimdiye kadar akım sayfasında yalnız ilk cümlesi pekiştir düğmesindeydi, tamamı Günün sanatçısı sayfasında) akım sayfasının başına, palet şeridinin altına "Kısaca · Dönemin hikâyesi" bölümü olarak girdi; üstünde dönem ve yer.
+2. 6 satırla kısaltılır, alt kenarı söner; altında "Devamını oku ↓" (44 px), açılınca "Kısalt ↑" (`aria-expanded`). Metin 6 satıra sığarsa düğme hiç görünmez. Metin değişmedi.
+3. Sürüm 1.36.1 (yalnız ekleme; Yenilikler listesine düzeltme sürümleri girmez). Test: `tests/e2e/kesif.spec.js`.
+
+## İş 37 · Defter: "İşlendi yap" ince çerçeveli hap (2026-10-26, v1.36.2)
+
+Emre v0'daki fırça izli "İşlendi yap" için alternatif istedi; tasarım tuvalinde dört seçenek (mühür, ince çerçeve, kaydırarak onayla, defter işareti) gösterildi, Emre **B · ince çerçeve**yi seçti.
+1. Düğme boşken ince vurgu çerçeveli bir hap, solunda boş halka. Dokununca soldan sağa vurgu rengiyle dolar, halka tike döner, yazı "İşlendi" olur; 0,52 sn sonra konu işlenir ve sıradaki konu eskisi gibi kayarak gelir. Dolarken ikinci dokunuş yok sayılır. Hareket azaltma açıksa beklemeden işlenir.
+2. Renk sabit altın değil, uygulamanın o günkü vurgusu (`--vurgu-acik`, dolunca yazı `--vurgu-acik-yazi`): üç temada da okunur.
+3. Fırça darbesi kaldırıldı (`.firca-iz`, `.firca-yazi` ve onların `@keyframes firca-sur`/`firca-yazi` kuralları). İkinci `firca-sur` tanımı Günün tablosundaki altı çizili yazının aynı adlı animasyonunu eziyordu; o da düzeldi.

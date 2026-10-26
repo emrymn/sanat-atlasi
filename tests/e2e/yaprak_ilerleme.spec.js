@@ -91,8 +91,15 @@ test('D6: İlerleme Türkçe konu adları ve Sıradaki konu; İşlendi yap bir s
   // Türkçe kısa başlık; özgün İngilizce ad listede küçük satırda
   const tr = await page.evaluate((no) => window.__atlas.konularTr.konular[String(no)], no);
   await expect(kart).toContainText(tr);
-  await kart.locator('[data-konu-isle]').click();
+  // önce düğme dolar ve "İşlendi" olur, sonra sıradaki konu gelir; dolu hâl yarım saniye sürdüğü için tıklamayla
+  // aynı anda okunur (yavaş makinede ayrı bir beklemeyle kaçabiliyordu)
+  const dolu = await kart.locator('[data-konu-isle]').evaluate((b) => {
+    b.click();
+    return { doldu: b.classList.contains('doldu'), yazi: b.textContent.trim() };
+  });
+  expect(dolu).toEqual({ doldu: true, yazi: 'İşlendi' });
   await expect(kart.locator('.siradaki-no')).toHaveText(String(sonraki));
+  await expect(kart.locator('[data-konu-isle]')).toHaveText('İşlendi yap');
   const i = await ilerleme(page);
   expect(i.islenen).toContain(no);
   // kitaplıkta konuya dokununca konu kartı: Türkçe başlık ve özgün ad

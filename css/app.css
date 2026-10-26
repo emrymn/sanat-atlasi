@@ -11181,23 +11181,29 @@ a.harita-seviye:active {
   animation: none;
 }
 
-/* ===== Defter: "İşlendi yap" bir fırça darbesi =====
-   Düğmenin kendisi saydam; arkasındaki mürekkep izi pürüzlü kenarlı, sonu kuru fırça gibi dağılan bir darbedir
-   ve her çizimde soldan sağa sürülür. Yazı darbenin peşinden, el yazısı inceliğinde italik serif. */
-.siradaki .siradaki-dugme.firca,
-.siradaki.resimli .siradaki-dugme.firca {
-  position: relative;
-  isolation: isolate;
-  min-height: 52px;
-  padding: 0 34px 2px 26px;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
+/* ===== Defter: "İşlendi yap" ince çerçeveli hap (Emre seçti, tasarım B) =====
+   Boşken ince vurgu çerçevesi ve boş halka; dokununca soldan sağa vurgu rengiyle dolar, halka tik olur, yazı
+   "İşlendi"ye döner, ardından sıradaki konu kayarak gelir (js: ilerleme.js). Eski fırça darbesinin yerine. */
+.siradaki .siradaki-dugme.isle-ince,
+.siradaki.resimli .siradaki-dugme.isle-ince {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 22px 0 16px;
+  border: 1px solid var(--vurgu-acik);
+  border-radius: 999px;
+  background-color: transparent;
+  background-image: linear-gradient(var(--vurgu-acik), var(--vurgu-acik));
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
   box-shadow: none;
-  color: var(--bg);
-  font: italic 400 21px/1 var(--serif);
-  letter-spacing: 0.01em;
-  overflow: visible;
+  color: var(--ink);
+  font: 600 15px/1 var(--sans);
+  letter-spacing: 0.02em;
+  transition:
+    background-size 0.45s cubic-bezier(0.3, 0.7, 0.2, 1),
+    color 0.25s ease 0.1s;
 }
 .siradaki .siradaki-dugme.firca::before,
 .siradaki .siradaki-dugme.firca::after {
@@ -11274,6 +11280,37 @@ a.harita-seviye:active {
     translate: 0 0;
   }
 }
+.siradaki .siradaki-dugme.isle-ince::before,
+.siradaki .siradaki-dugme.isle-ince::after { content: none; }
+.isle-halka {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--vurgu-acik);
+  border-radius: 50%;
+  transition: border-color 0.25s ease;
+}
+.isle-halka svg {
+  opacity: 0;
+  transform: scale(0.4);
+  transition:
+    opacity 0.2s ease 0.2s,
+    transform 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.4) 0.2s;
+}
+.siradaki .siradaki-dugme.isle-ince:hover .isle-halka svg { opacity: 0.45; transform: scale(0.8); }
+.siradaki .siradaki-dugme.isle-ince:active { transform: scale(0.97); background-color: transparent; color: var(--ink); }
+.siradaki .siradaki-dugme.isle-ince.doldu {
+  background-size: 100% 100%;
+  color: var(--vurgu-acik-yazi);
+}
+.siradaki-dugme.isle-ince.doldu .isle-halka { border-color: transparent; }
+.siradaki-dugme.isle-ince.doldu .isle-halka svg { opacity: 1; transform: none; }
+.siradaki .siradaki-dugme.isle-ince:focus-visible {
+  outline: 2px solid var(--vurgu-acik);
+  outline-offset: 4px;
+}
 
 /* ===== Akım sayfası: kimlik bölümleri ===== */
 .akim-bolum {
@@ -11308,6 +11345,57 @@ a.harita-seviye:active {
   font: italic 400 30px/1.1 var(--serif);
   color: var(--ink);
   text-wrap: balance;
+}
+
+/* Dönemin hikâyesi: 6 satırla kısaltılır, alt kenarı söner; "Devamını oku" tamamını açar */
+.akim-hikaye-kunye {
+  margin: -4px 0 10px;
+  font: 600 12px/1.4 var(--sans);
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+.akim-hikaye-metin {
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-wrap: pretty;
+}
+.akim-hikaye.kesik:not(.acik) .akim-hikaye-metin {
+  -webkit-mask-image: linear-gradient(180deg, #000 62%, transparent);
+  mask-image: linear-gradient(180deg, #000 62%, transparent);
+}
+.akim-hikaye.acik .akim-hikaye-metin {
+  display: block;
+  -webkit-line-clamp: none;
+  overflow: visible;
+}
+.akim-hikaye-dugme {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 4px;
+  padding: 0;
+  border: none;
+  background: none;
+  font: 600 12px/1 var(--sans);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--renk);
+  cursor: pointer;
+}
+.akim-hikaye-dugme::after {
+  content: '↓';
+  letter-spacing: 0;
+}
+.akim-hikaye.acik .akim-hikaye-dugme::after {
+  content: '↑';
+}
+.akim-hikaye-dugme:focus-visible {
+  outline: 2px solid var(--renk);
+  outline-offset: 3px;
 }
 
 /* Nasıl tanınır? — büyüteç ayrıntılı ipuçları */
