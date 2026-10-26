@@ -1,0 +1,10 @@
+{
+  "name": "sanat-atlasi-harita-cizim",
+  "private": true,
+  "type": "module",
+  "description": "Yeni harita resimlerini Vercel AI Gateway ile çizen betik (Emre'nin Mac'inde çalışır; uygulamanın parçası değil)",
+  "dependencies": {
+    "ai": "7.0.120",
+    "sharp": "0.35.4"
+  }
+}

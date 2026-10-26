@@ -1,0 +1,12 @@
+{
+  "aciklama": "Rönesans deneme turunda referanslı çizime giden 7 baş tablo (seviye 1 → 7). Görseller depodaki yerel kopyalar (data/yerel_gorseller.json); kaynakları data/eserler_onbellek.json'da.",
+  "tablolar": [
+    { "seviye": 1, "sanatci": "Sandro Botticelli", "eser": "The Birth of Venus", "dosya": "gorseller/b/f3d7a2ffa8f82966.jpg", "kaynak": "commons:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg" },
+    { "seviye": 2, "sanatci": "Jan van Eyck", "eser": "The Arnolfini Portrait", "dosya": "gorseller/b/84d3c15e96896efe.jpg", "kaynak": "commons:Van_Eyck_-_Arnolfini_Portrait.jpg" },
+    { "seviye": 3, "sanatci": "Pieter Bruegel the Elder", "eser": "The Hunters in the Snow", "dosya": "gorseller/b/216d1fc681535d27.jpg", "kaynak": "commons:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg" },
+    { "seviye": 4, "sanatci": "Leonardo da Vinci", "eser": "Mona Lisa (its background landscape)", "dosya": "gorseller/b/ae10d40e1edfe39a.jpg", "kaynak": "commons:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" },
+    { "seviye": 5, "sanatci": "Giorgione", "eser": "The Tempest", "dosya": "gorseller/b/22fa70122f47c863.jpg", "kaynak": "commons:Giorgione_-_Das_Gewitter.jpg" },
+    { "seviye": 6, "sanatci": "Jacopo Pontormo", "eser": "The Deposition", "dosya": "gorseller/b/1769a17bdd359be0.jpg", "kaynak": "commons:Jacopo_Pontormo_-_Deposition_-_WGA18113_(cropped).jpg" },
+    { "seviye": 7, "sanatci": "El Greco", "eser": "View of Toledo", "dosya": "gorseller/b/00dd533f1f362e72.jpg", "kaynak": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP349564.jpg" }
+  ]
+}
