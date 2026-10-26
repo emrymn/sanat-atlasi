@@ -13,6 +13,9 @@ Uygulamaya henüz dokunulmadı. Bu klasör yalnız yeni harita resimlerini denem
 - İki iskelet denenecek: yılankavi ve "ana yol ve cepler" (`--iskelet cep`).
 - Yol bölgeye göre değişir (yeri ve genişliği aynı); seviye yerleri boş, küçük yuvarlak meydan; manzara kenardan kenara tek parça.
 - İlk Seedream denemesinde (tablosuz) eserler uydurma çıktı, "AI generated" filigranı vardı: Seedream de tablolarla denenecek, filigran kapatıldı.
+- Rönesans'ta gizli eserler 17'den 9'a indi ("çok kalabalık"); üslup Nano Banana'nın açık renkleri.
+- "GPT + maske": `maske.py` iskeletten maske üretir; GPT yalnız yolun çevresini boyar, ardından kaynak yol geri konur (`-birlesik.jpg`).
+- Çıktılar hiçbir zaman üstüne yazılmaz (aynı ad varsa `-v2`).
 - İlk deneme: Rönesans. GPT Image 2 ve Nano Banana Pro hem referanssız hem depodaki tablolarla (modelin sınırı kadar); FLUX.2 Pro, Seedream 5 Pro, Nano Banana 2, Grok Imagine 2.0 yalnız referanssız.
 
 ## Çalıştırma (Mac)

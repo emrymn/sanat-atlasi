@@ -1,8 +1,64 @@
 {
-  "aciklama": "Rönesans referanslı çizimine giden tablolar. Hepsi depodaki yerel kopyalar (data/yerel_gorseller.json; kaynakları data/eserler_onbellek.json). Her modele sınırı kadar gider (taslak dahil), öncelik sırasıyla: az bilinen eserler önce; çok bilinenler sona kalır, sığmazsa yalnız istemdeki tarifle çizilir. Dürer'in Genç Tavşan'ının depoda kopyası yok, yalnız tarif. Venüs'ün Doğuşu çıkarıldı (GPT Image 2 çıplaklık yüzünden reddetti; Emre yerine Michelino'nun Dante'sini seçti).",
+  "aciklama": "Rönesans gizli eserleri: Emre 17'den 9'a indirdi (seviye başına 1–2; 'çok kalabalık oldu'). Hepsi depodaki yerel kopyalar. 9 tablo + taslak = GPT Image 2'nin 10 görsel sınırı. cikarilan: önceki listeden çıkanlar (Venüs GPT reddettiği için önceden çıkmıştı).",
   "tablolar": [
     {
       "oncelik": 1,
+      "seviye": 1,
+      "sanatci": "Domenico di Michelino",
+      "eser": "Dante and the Three Kingdoms",
+      "dosya": "gorseller/b/1a2e0d27e42761b0.jpg",
+      "kaynak": "commons:Dante_et_la_Divine_Comédie-edit-crop.jpg"
+    },
+    {
+      "oncelik": 2,
+      "seviye": 2,
+      "sanatci": "Jan van Eyck",
+      "eser": "The Arnolfini Portrait",
+      "dosya": "gorseller/b/84d3c15e96896efe.jpg",
+      "kaynak": "commons:Van_Eyck_-_Arnolfini_Portrait.jpg"
+    },
+    {
+      "oncelik": 3,
+      "seviye": 3,
+      "sanatci": "Pieter Bruegel the Elder",
+      "eser": "The Hunters in the Snow",
+      "dosya": "gorseller/b/216d1fc681535d27.jpg",
+      "kaynak": "commons:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg"
+    },
+    {
+      "oncelik": 4,
+      "seviye": 3,
+      "sanatci": "Hieronymus Bosch",
+      "eser": "The Garden of Earthly Delights",
+      "dosya": "gorseller/b/1434ee16ca10ad2c.jpg",
+      "kaynak": "commons:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg"
+    },
+    {
+      "oncelik": 5,
+      "seviye": 4,
+      "sanatci": "Michelangelo",
+      "eser": "The Creation of Adam",
+      "dosya": "gorseller/b/3492a085a4197805.jpg",
+      "kaynak": "commons:The_Creation_of_Adam_perspective_fix.jpg"
+    },
+    {
+      "oncelik": 6,
+      "seviye": 4,
+      "sanatci": "Raphael",
+      "eser": "The School of Athens",
+      "dosya": "gorseller/b/3e754c9aae3c41f3.jpg",
+      "kaynak": "commons:The_School_of_Athens_Fresco_by_Raphael_(Ank_Kumar,_Infosys_Limited)_02.jpg"
+    },
+    {
+      "oncelik": 7,
+      "seviye": 5,
+      "sanatci": "Paolo Veronese",
+      "eser": "The Wedding at Cana",
+      "dosya": "gorseller/b/870f58ce77c32209.jpg",
+      "kaynak": "commons:Les_Noces_de_Cana_-_Paolo_Veronese_-_Musée_du_Louvre_Peintures_INV_142_;_MR_384.jpg"
+    },
+    {
+      "oncelik": 8,
       "seviye": 6,
       "sanatci": "Sofonisba Anguissola",
       "eser": "The Chess Game",
@@ -10,13 +66,15 @@
       "kaynak": "commons:Sofonisba_Anguissola_-_Portrait_of_the_Artist's_Sisters_Playing_Chess_-_WGA00697.jpg"
     },
     {
-      "oncelik": 2,
-      "seviye": 1,
-      "sanatci": "Domenico di Michelino",
-      "eser": "Dante and the Three Kingdoms",
-      "dosya": "gorseller/b/1a2e0d27e42761b0.jpg",
-      "kaynak": "commons:Dante_et_la_Divine_Comédie-edit-crop.jpg"
-    },
+      "oncelik": 9,
+      "seviye": 7,
+      "sanatci": "El Greco",
+      "eser": "View of Toledo",
+      "dosya": "gorseller/b/00dd533f1f362e72.jpg",
+      "kaynak": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP349564.jpg"
+    }
+  ],
+  "cikarilan": [
     {
       "oncelik": 3,
       "seviye": 6,
@@ -64,62 +122,6 @@
       "eser": "The Annunciation",
       "dosya": "gorseller/b/8fda010e67a76e56.jpg",
       "kaynak": "commons:Angelico_-_Annunciation_-_San_Marco_north_corridor.jpg"
-    },
-    {
-      "oncelik": 9,
-      "seviye": 5,
-      "sanatci": "Paolo Veronese",
-      "eser": "The Wedding at Cana",
-      "dosya": "gorseller/b/870f58ce77c32209.jpg",
-      "kaynak": "commons:Les_Noces_de_Cana_-_Paolo_Veronese_-_Musée_du_Louvre_Peintures_INV_142_;_MR_384.jpg"
-    },
-    {
-      "oncelik": 10,
-      "seviye": 7,
-      "sanatci": "El Greco",
-      "eser": "View of Toledo",
-      "dosya": "gorseller/b/00dd533f1f362e72.jpg",
-      "kaynak": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP349564.jpg"
-    },
-    {
-      "oncelik": 11,
-      "seviye": 2,
-      "sanatci": "Jan van Eyck",
-      "eser": "The Arnolfini Portrait",
-      "dosya": "gorseller/b/84d3c15e96896efe.jpg",
-      "kaynak": "commons:Van_Eyck_-_Arnolfini_Portrait.jpg"
-    },
-    {
-      "oncelik": 12,
-      "seviye": 3,
-      "sanatci": "Pieter Bruegel the Elder",
-      "eser": "The Hunters in the Snow",
-      "dosya": "gorseller/b/216d1fc681535d27.jpg",
-      "kaynak": "commons:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg"
-    },
-    {
-      "oncelik": 13,
-      "seviye": 3,
-      "sanatci": "Hieronymus Bosch",
-      "eser": "The Garden of Earthly Delights",
-      "dosya": "gorseller/b/1434ee16ca10ad2c.jpg",
-      "kaynak": "commons:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg"
-    },
-    {
-      "oncelik": 14,
-      "seviye": 4,
-      "sanatci": "Raphael",
-      "eser": "The School of Athens",
-      "dosya": "gorseller/b/3e754c9aae3c41f3.jpg",
-      "kaynak": "commons:The_School_of_Athens_Fresco_by_Raphael_(Ank_Kumar,_Infosys_Limited)_02.jpg"
-    },
-    {
-      "oncelik": 15,
-      "seviye": 4,
-      "sanatci": "Michelangelo",
-      "eser": "The Creation of Adam",
-      "dosya": "gorseller/b/3492a085a4197805.jpg",
-      "kaynak": "commons:The_Creation_of_Adam_perspective_fix.jpg"
     },
     {
       "oncelik": 16,

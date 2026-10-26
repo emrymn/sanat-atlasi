@@ -39,6 +39,9 @@ const ISLER = [
   // İki adım (Emre'nin seçimi): yerleşimi doğru çıkan bir çizimi (kaynak) GPT Image 2 düzenler; yer ve açık renkler kalır,
   // gizli eserler tablolara benzetilir. Taslak yerine kaynak çizim gider (cikti/<dönem>/<kaynak>-<iskelet>.jpg).
   { ad: 'gpt-image-2-duzenle', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
+  // GPT + maske (Emre'nin seçimi): kaynak çizimin yolu, kolları ve meydanları maskeyle kilitli (maske.py); GPT yalnız
+  // çevreyi boyar. Ardından kaynak yol yumuşak kenarla geri konur (-birlesik): GPT maskeye tam uymasa da seviyeler yerinde.
+  { ad: 'gpt-image-2-maske', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: true, oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -75,6 +78,22 @@ export async function kes(cikti, kutu) {
   return { jpg: await sharp(cikti).extract(alan).resize(W, H, { fit: 'fill' }).jpeg({ quality: 90, mozjpeg: true }).toBuffer(), ham: m, alan };
 }
 
+// Maskeli çizimden sonra: kaynak resmin yolu, kolları ve meydanları yumuşak kenarlı maskeyle çizimin üstüne geri konur
+export async function yoluGeriKoy(cizim, kaynak, yumusakYolu) {
+  // Saydamlık elle eklenir: sharp 0.35'te joinChannel/greyscale birleşimi kanal eklemiyordu (test edildi)
+  const rgb = await sharp(kaynak).resize(W, H).removeAlpha().raw().toBuffer();
+  const a = await sharp(yumusakYolu).resize(W, H).extractChannel(0).raw().toBuffer();
+  const rgba = Buffer.alloc(W * H * 4);
+  for (let i = 0; i < W * H; i++) {
+    rgba[i * 4] = rgb[i * 3];
+    rgba[i * 4 + 1] = rgb[i * 3 + 1];
+    rgba[i * 4 + 2] = rgb[i * 3 + 2];
+    rgba[i * 4 + 3] = a[i];
+  }
+  const ust = await sharp(rgba, { raw: { width: W, height: H, channels: 4 } }).png().toBuffer();
+  return sharp(cizim).resize(W, H).composite([{ input: ust }]).jpeg({ quality: 90, mozjpeg: true }).toBuffer();
+}
+
 function istemKur(temel, is, dolgu, tablolar) {
   let metin = temel.trim();
   if (dolgu) {
@@ -89,7 +108,7 @@ function istemKur(temel, is, dolgu, tablolar) {
   return metin;
 }
 
-async function ciz(is, istem, gorseller, oran) {
+async function ciz(is, istem, gorseller, oran, maske) {
   if (is.tur === 'gemini') {
     const sonuc = await generateText({
       model: gateway(is.model),
@@ -107,7 +126,7 @@ async function ciz(is, istem, gorseller, oran) {
   }
   const sonuc = await generateImage({
     model: gateway.image(is.model),
-    prompt: { text: istem, images: gorseller.map((g) => g.veri) },
+    prompt: { text: istem, images: gorseller.map((g) => g.veri), ...(maske ? { mask: maske } : {}) },
     ...(is.boyut ? { size: is.boyut } : { aspectRatio: oran }),
     // Seedream varsayılan olarak sağ alta "AI generated" filigranı koyuyor (ilk denemede vardı)
     providerOptions: is.model.startsWith('openai/') ? { openai: { quality: 'high' } } : is.model.startsWith('bytedance/') ? { bytedance: { watermark: false } } : undefined,
@@ -136,9 +155,12 @@ async function main() {
   );
   // Düzenleme istemi: seviye listesi ana istemdeki "From bottom to top:" bölümünden alınır
   const seviyeler = temel.split('From bottom to top:')[1].split(/\n\s*\n/)[0].trim();
-  const duzenleSablon = await readFile(path.join(BURASI, 'istemler', 'duzenle.txt'), 'utf8');
+  const sablonlar = {
+    duzenle: await readFile(path.join(BURASI, 'istemler', 'duzenle.txt'), 'utf8'),
+    maske: await readFile(path.join(BURASI, 'istemler', 'maske.txt'), 'utf8'),
+  };
   const duzenleIstemi = (is, secilen) =>
-    duzenleSablon.trim().replace('{{SEVIYELER}}', seviyeler) +
+    sablonlar[is.maske ? 'maske' : 'duzenle'].trim().replace('{{SEVIYELER}}', seviyeler) +
     `\n\nImage 1 is the map to edit. The other images are the original paintings for the hidden details; use them only as references.\n` +
     secilen.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for level ${t.seviye}).`).join('\n');
   const kacTablo = (is) => (is.ref ? Math.min(tablolar.length, is.refSiniri - 1) : 0);
@@ -172,14 +194,19 @@ async function main() {
       tur = 'image/png';
     }
     const gorseller = [{ veri: resim, tur }, ...refler.slice(0, n)];
+    const iskEk = bicim === 'yilankavi' ? '' : '_' + bicim;
+    const maske = is.maske ? await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${iskEk}_maske.png`)) : null;
     const bas = Date.now();
-    const dosyaAdi = `${is.ad}-${bicim}`;
+    // Eski çıktının üstüne yazılmaz (Emre: yedeksiz hiçbir şey silinmesin): aynı ad varsa -v2, -v3…
+    let dosyaAdi = `${is.ad}-${bicim}`;
+    for (let v = 2; existsSync(path.join(klasor, `${dosyaAdi}.jpg`)); v++) dosyaAdi = `${is.ad}-${bicim}-v${v}`;
     process.stdout.write(`${dosyaAdi} … `);
     try {
-      const { veri, ek } = await ciz(is, istem, gorseller, is.oran);
+      const { veri, ek } = await ciz(is, istem, gorseller, is.oran, maske);
       await writeFile(path.join(klasor, 'ham', `${dosyaAdi}.png`), veri);
       const { jpg, ham, alan } = await kes(veri, kutu);
       await writeFile(path.join(klasor, `${dosyaAdi}.jpg`), jpg);
+      if (is.maske) await writeFile(path.join(klasor, `${dosyaAdi}-birlesik.jpg`), await yoluGeriKoy(jpg, resim, path.join(BURASI, 'iskelet', `${donem}_iskelet${iskEk}_yumusak.png`)));
       const beklenen = oranSayi(is.oran);
       const gelen = ham.width / ham.height;
       const uyari = Math.abs(gelen - beklenen) / beklenen > 0.03 ? `istenen oran ${is.oran}, gelen ${ham.width}×${ham.height}` : null;
