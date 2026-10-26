@@ -36,6 +36,9 @@ const ISLER = [
   { ad: 'seedream-5-pro-yalin', model: 'bytedance/seedream-5.0-pro', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.04 },
   // ilk denemede tablosuz eserler uydurma çıktı; Seedream'in referans sınırı kesin bilinmiyor, 10'da tutuldu
   { ad: 'seedream-5-pro-ref', model: 'bytedance/seedream-5.0-pro', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.05 },
+  // İki adım (Emre'nin seçimi): yerleşimi doğru çıkan bir çizimi (kaynak) GPT Image 2 düzenler; yer ve açık renkler kalır,
+  // gizli eserler tablolara benzetilir. Taslak yerine kaynak çizim gider (cikti/<dönem>/<kaynak>-<iskelet>.jpg).
+  { ad: 'gpt-image-2-duzenle', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -131,13 +134,20 @@ async function main() {
       readFile(path.join(KOK, t.dosya)).then(async (b) => ({ veri: await sharp(b).resize(1024, 1024, { fit: 'inside' }).jpeg({ quality: 88 }).toBuffer(), tur: 'image/jpeg' })),
     ),
   );
+  // Düzenleme istemi: seviye listesi ana istemdeki "From bottom to top:" bölümünden alınır
+  const seviyeler = temel.split('From bottom to top:')[1].split(/\n\s*\n/)[0].trim();
+  const duzenleSablon = await readFile(path.join(BURASI, 'istemler', 'duzenle.txt'), 'utf8');
+  const duzenleIstemi = (is, secilen) =>
+    duzenleSablon.trim().replace('{{SEVIYELER}}', seviyeler) +
+    `\n\nImage 1 is the map to edit. The other images are the original paintings for the hidden details; use them only as references.\n` +
+    secilen.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for level ${t.seviye}).`).join('\n');
   const kacTablo = (is) => (is.ref ? Math.min(tablolar.length, is.refSiniri - 1) : 0);
 
   console.log(`${donem} (${bicim}): ${isler.length} çizim, tahmini toplam ~${isler.reduce((t, x) => t + x.fiyat, 0).toFixed(2)} $`);
-  for (const is of isler) console.log(`  ${is.ad.padEnd(26)} ${is.model.padEnd(34)} oran ${is.oran.padEnd(5)} ${is.ref ? `taslak + ${kacTablo(is)} tablo` : 'yalnız taslak'}  ~${is.fiyat} $`);
+  for (const is of isler) console.log(`  ${is.ad.padEnd(26)} ${is.model.padEnd(34)} oran ${is.oran.padEnd(5)} ${is.duzenle ? `${is.duzenle} + ${kacTablo(is)} tablo` : is.ref ? `taslak + ${kacTablo(is)} tablo` : 'yalnız taslak'}  ~${is.fiyat} $`);
   if (!calistir) {
     // --istem: ilk işe gidecek istemi göster (harcamadan kontrol için)
-    if (bayraklar.includes('--istem')) console.log('\n' + istemKur(temel, isler[0], (await tuvaleYerlestir(taslak, isler[0].oran)).dolgu, tablolar.slice(0, kacTablo(isler[0]))));
+    if (bayraklar.includes('--istem')) console.log('\n' + (isler[0].duzenle ? duzenleIstemi(isler[0], tablolar.slice(0, kacTablo(isler[0]))) : istemKur(temel, isler[0], (await tuvaleYerlestir(taslak, isler[0].oran)).dolgu, tablolar.slice(0, kacTablo(isler[0])))));
     console.log(`\nPlan bu. Çizmek için: node ciz.mjs ${process.argv.slice(2).filter((x) => x !== '--istem').join(' ')} --calistir`);
     return;
   }
@@ -149,10 +159,19 @@ async function main() {
   await mkdir(path.join(klasor, 'ham'), { recursive: true });
   const ozet = [];
   for (const is of isler) {
-    const { resim, kutu, dolgu } = await tuvaleYerlestir(taslak, is.oran);
     const n = kacTablo(is);
-    const istem = istemKur(temel, is, dolgu, tablolar.slice(0, n));
-    const gorseller = [{ veri: resim, tur: 'image/png' }, ...refler.slice(0, n)];
+    let resim, kutu, dolgu, istem, tur;
+    if (is.duzenle) {
+      resim = await readFile(path.join(klasor, `${is.duzenle}-${bicim}.jpg`)); // 1024×3072, kesilmiş
+      ({ kutu, dolgu } = { kutu: { x: 0, y: 0, w: 1, h: 1 }, dolgu: false });
+      istem = duzenleIstemi(is, tablolar.slice(0, n));
+      tur = 'image/jpeg';
+    } else {
+      ({ resim, kutu, dolgu } = await tuvaleYerlestir(taslak, is.oran));
+      istem = istemKur(temel, is, dolgu, tablolar.slice(0, n));
+      tur = 'image/png';
+    }
+    const gorseller = [{ veri: resim, tur }, ...refler.slice(0, n)];
     const bas = Date.now();
     const dosyaAdi = `${is.ad}-${bicim}`;
     process.stdout.write(`${dosyaAdi} … `);
