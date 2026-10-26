@@ -1,0 +1,49 @@
+{
+  "aciklama": "Emre'nin seçtiği Rönesans resmi (Adım 16, F) ve seviye ayak noktaları (resmin genişliği/yüksekliğine oranla, alttan üste). Resimde 3 boş meydan var (2, 4, 6); ötekiler yol/kol uçlarında. Önizleme: Adım 17.",
+  "resim": "cikti/ronesans/gpt-image-2-maske-cep-v5.jpg",
+  "duraklar": [
+    [
+      0.585,
+      0.905
+    ],
+    [
+      0.735,
+      0.748
+    ],
+    [
+      0.4,
+      0.6
+    ],
+    [
+      0.735,
+      0.447
+    ],
+    [
+      0.55,
+      0.31
+    ],
+    [
+      0.775,
+      0.168
+    ],
+    [
+      0.41,
+      0.09
+    ]
+  ],
+  "semboller": [
+    "sprite/sembol-1.webp",
+    "sprite/sembol-2.webp",
+    "sprite/sembol-3.webp",
+    "sprite/sembol-4.webp",
+    "sprite/sembol-5.webp",
+    "sprite/sembol-6.webp",
+    "sprite/sembol-7.webp"
+  ],
+  "karakter": "sprite/karakter.webp",
+  "boyut_pt": {
+    "sembol": 60,
+    "karakter": 74
+  },
+  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)"
+}
