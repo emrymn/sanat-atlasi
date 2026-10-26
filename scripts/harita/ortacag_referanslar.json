@@ -1,5 +1,5 @@
 {
-  "aciklama": "Orta Çağ gizli eserleri (Emre onayladı): seviye başına 1, üst yarıda 1 ek. Hepsi depodaki yerel kopyalar. Limbourg Şubat: içeride ısınan köylüler ve burç kemerindeki çıplak figür kesitin dışında (GPT reddetmesin). Emre: Giotto'nun Ağıt'ı yerine Pelerinini Veren Francis, Duccio'nun Kudüs'e Giriş'i yerine Rucellai Madonnası (GPT Ağıt'ı iki kez, Siena'yı küçük çizmişti).",
+  "aciklama": "Orta Çağ gizli eserleri (Emre onayladı): seviye başına 1, üst yarıda 1 ek. Hepsi depodaki yerel kopyalar. Limbourg Şubat: içeride ısınan köylüler ve burç kemerindeki çıplak figür kesitin dışında (GPT reddetmesin). Emre: Giotto'nun Ağıt'ı yerine Pelerinini Veren Francis, Duccio'nun Kudüs'e Giriş'i yerine Rucellai Madonnası (GPT Ağıt'ı iki kez, Siena'yı küçük çizmişti). Claude'un seçimi (Emre: 'sen seç'): Giotto Pelerin kalır (iki denemede de iyi çıktı), Rucellai yerine yine Duccio'nun Kudüs'e Giriş'i (Rucellai iki kez çerçeveli pano oldu; şehir kapısı sahnesi manzaraya karışıyor).",
   "tablolar": [
     {
       "oncelik": 1,
@@ -12,8 +12,8 @@
       "oncelik": 2,
       "seviye": 2,
       "sanatci": "Duccio",
-      "eser": "Rucellai Madonna",
-      "dosya": "gorseller/b/4f667b920dd4b8c9.jpg"
+      "eser": "Christ's Entry into Jerusalem",
+      "dosya": "gorseller/b/0b55d8270d39493e.jpg"
     },
     {
       "oncelik": 3,
@@ -48,8 +48,8 @@
       "oncelik": 2,
       "seviye": 2,
       "sanatci": "Duccio",
-      "eser": "Christ's Entry into Jerusalem",
-      "dosya": "gorseller/b/0b55d8270d39493e.jpg"
+      "eser": "Rucellai Madonna",
+      "dosya": "gorseller/b/4f667b920dd4b8c9.jpg"
     }
   ]
 }
