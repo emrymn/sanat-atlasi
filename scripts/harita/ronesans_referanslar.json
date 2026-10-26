@@ -1,5 +1,5 @@
 {
-  "aciklama": "Rönesans referanslı çizimine giden tablolar. Hepsi depodaki yerel kopyalar (data/yerel_gorseller.json; kaynakları data/eserler_onbellek.json). Her modele sınırı kadar gider (taslak dahil), öncelik sırasıyla: az bilinen eserler önce; çok bilinenler sona kalır, sığmazsa yalnız istemdeki tarifle çizilir. Dürer'in Genç Tavşan'ının depoda kopyası yok, yalnız tarif.",
+  "aciklama": "Rönesans referanslı çizimine giden tablolar. Hepsi depodaki yerel kopyalar (data/yerel_gorseller.json; kaynakları data/eserler_onbellek.json). Her modele sınırı kadar gider (taslak dahil), öncelik sırasıyla: az bilinen eserler önce; çok bilinenler sona kalır, sığmazsa yalnız istemdeki tarifle çizilir. Dürer'in Genç Tavşan'ının depoda kopyası yok, yalnız tarif. Venüs'ün Doğuşu çıkarıldı (GPT Image 2 çıplaklık yüzünden reddetti; Emre yerine Michelino'nun Dante'sini seçti).",
   "tablolar": [
     {
       "oncelik": 1,
@@ -11,6 +11,14 @@
     },
     {
       "oncelik": 2,
+      "seviye": 1,
+      "sanatci": "Domenico di Michelino",
+      "eser": "Dante and the Three Kingdoms",
+      "dosya": "gorseller/b/1a2e0d27e42761b0.jpg",
+      "kaynak": "commons:Dante_et_la_Divine_Comédie-edit-crop.jpg"
+    },
+    {
+      "oncelik": 3,
       "seviye": 6,
       "sanatci": "Jacopo Pontormo",
       "eser": "The Deposition",
@@ -18,7 +26,7 @@
       "kaynak": "commons:Jacopo_Pontormo_-_Deposition_-_WGA18113_(cropped).jpg"
     },
     {
-      "oncelik": 3,
+      "oncelik": 4,
       "seviye": 5,
       "sanatci": "Giovanni Bellini",
       "eser": "Saint Francis in the Desert",
@@ -26,7 +34,7 @@
       "kaynak": "commons:Giovanni_Bellini_-_Saint_Francis_in_the_Desert_-_Google_Art_Project.jpg"
     },
     {
-      "oncelik": 4,
+      "oncelik": 5,
       "seviye": 1,
       "sanatci": "Paolo Uccello",
       "eser": "The Battle of San Romano",
@@ -34,7 +42,7 @@
       "kaynak": "commons:Uccello_—_the_Battle_of_San_Romano.jpg"
     },
     {
-      "oncelik": 5,
+      "oncelik": 6,
       "seviye": 7,
       "sanatci": "Parmigianino",
       "eser": "Madonna with the Long Neck",
@@ -42,7 +50,7 @@
       "kaynak": "commons:Parmigianino_-_Madonna_and_Child_with_Angels,_known_as_the_Madonna_with_the_Long_Neck.jpg"
     },
     {
-      "oncelik": 6,
+      "oncelik": 7,
       "seviye": 5,
       "sanatci": "Giorgione",
       "eser": "The Tempest",
@@ -50,7 +58,7 @@
       "kaynak": "commons:Giorgione_-_Das_Gewitter.jpg"
     },
     {
-      "oncelik": 7,
+      "oncelik": 8,
       "seviye": 1,
       "sanatci": "Fra Angelico",
       "eser": "The Annunciation",
@@ -58,7 +66,7 @@
       "kaynak": "commons:Angelico_-_Annunciation_-_San_Marco_north_corridor.jpg"
     },
     {
-      "oncelik": 8,
+      "oncelik": 9,
       "seviye": 5,
       "sanatci": "Paolo Veronese",
       "eser": "The Wedding at Cana",
@@ -66,7 +74,7 @@
       "kaynak": "commons:Les_Noces_de_Cana_-_Paolo_Veronese_-_Musée_du_Louvre_Peintures_INV_142_;_MR_384.jpg"
     },
     {
-      "oncelik": 9,
+      "oncelik": 10,
       "seviye": 7,
       "sanatci": "El Greco",
       "eser": "View of Toledo",
@@ -74,7 +82,7 @@
       "kaynak": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP349564.jpg"
     },
     {
-      "oncelik": 10,
+      "oncelik": 11,
       "seviye": 2,
       "sanatci": "Jan van Eyck",
       "eser": "The Arnolfini Portrait",
@@ -82,7 +90,7 @@
       "kaynak": "commons:Van_Eyck_-_Arnolfini_Portrait.jpg"
     },
     {
-      "oncelik": 11,
+      "oncelik": 12,
       "seviye": 3,
       "sanatci": "Pieter Bruegel the Elder",
       "eser": "The Hunters in the Snow",
@@ -90,7 +98,7 @@
       "kaynak": "commons:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg"
     },
     {
-      "oncelik": 12,
+      "oncelik": 13,
       "seviye": 3,
       "sanatci": "Hieronymus Bosch",
       "eser": "The Garden of Earthly Delights",
@@ -98,20 +106,12 @@
       "kaynak": "commons:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg"
     },
     {
-      "oncelik": 13,
+      "oncelik": 14,
       "seviye": 4,
       "sanatci": "Raphael",
       "eser": "The School of Athens",
       "dosya": "gorseller/b/3e754c9aae3c41f3.jpg",
       "kaynak": "commons:The_School_of_Athens_Fresco_by_Raphael_(Ank_Kumar,_Infosys_Limited)_02.jpg"
-    },
-    {
-      "oncelik": 14,
-      "seviye": 1,
-      "sanatci": "Sandro Botticelli",
-      "eser": "The Birth of Venus",
-      "dosya": "gorseller/b/f3d7a2ffa8f82966.jpg",
-      "kaynak": "commons:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
     },
     {
       "oncelik": 15,

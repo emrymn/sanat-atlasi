@@ -67,7 +67,8 @@ export async function kes(cikti, kutu) {
     width: Math.round(kutu.w * m.width),
     height: Math.round(kutu.h * m.height),
   };
-  return { png: await sharp(cikti).extract(alan).resize(W, H, { fit: 'fill' }).png().toBuffer(), ham: m, alan };
+  // JPG: kesilmiş 1024×3072 PNG ~7 MB tutuyordu, depoyu şişiriyordu (karşılaştırma için q90 yeter)
+  return { jpg: await sharp(cikti).extract(alan).resize(W, H, { fit: 'fill' }).jpeg({ quality: 90, mozjpeg: true }).toBuffer(), ham: m, alan };
 }
 
 function istemKur(temel, is, dolgu, tablolar) {
@@ -91,7 +92,7 @@ async function ciz(is, istem, gorseller, oran) {
       messages: [
         {
           role: 'user',
-          content: [{ type: 'text', text: istem }, ...gorseller.map((g) => ({ type: 'image', image: g.veri, mediaType: g.tur }))],
+          content: [{ type: 'text', text: istem }, ...gorseller.map((g) => ({ type: 'file', data: g.veri, mediaType: g.tur }))],
         },
       ],
       providerOptions: { google: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio: oran, imageSize: '2K' } } },
@@ -155,8 +156,8 @@ async function main() {
     try {
       const { veri, ek } = await ciz(is, istem, gorseller, is.oran);
       await writeFile(path.join(klasor, 'ham', `${dosyaAdi}.png`), veri);
-      const { png, ham, alan } = await kes(veri, kutu);
-      await writeFile(path.join(klasor, `${dosyaAdi}.png`), png);
+      const { jpg, ham, alan } = await kes(veri, kutu);
+      await writeFile(path.join(klasor, `${dosyaAdi}.jpg`), jpg);
       const beklenen = oranSayi(is.oran);
       const gelen = ham.width / ham.height;
       const uyari = Math.abs(gelen - beklenen) / beklenen > 0.03 ? `istenen oran ${is.oran}, gelen ${ham.width}×${ham.height}` : null;
@@ -168,7 +169,7 @@ async function main() {
     }
   }
   await writeFile(path.join(klasor, `ozet_${new Date().toISOString().replace(/[:.]/g, '-')}.json`), JSON.stringify(ozet, null, 2));
-  console.log(`\nÇıktılar: ${path.relative(KOK, klasor)}/  (ham/ = modelin döndürdüğü, üstteki = 1024×3072'ye kesilmiş)`);
+  console.log(`\nÇıktılar: ${path.relative(KOK, klasor)}/  (ham/ = modelin döndürdüğü, yalnız bu Mac'te; .jpg = 1024×3072'ye kesilmiş)`);
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {
