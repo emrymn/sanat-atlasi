@@ -1,17 +1,17 @@
 {
-  "aciklama": "Emre'nin seçtiği Rönesans resmi (Adım 16, F) ve seviye ayak noktaları (resmin genişliği/yüksekliğine oranla, alttan üste). Resimde 3 boş meydan var (2, 4, 6); ötekiler yol/kol uçlarında. Önizleme: Adım 17.",
+  "aciklama": "Emre'nin seçtiği Rönesans resmi (F/v5). Resim taslağa uymadı; seviyeler F'nin kendi yolu boyunca kabaca eşit aralıkla: 2, 4, 6 F'nin boş meydanlarında, 1, 3, 5 için yolun üstüne GPT yeni meydan boyar; 7 tepedeki kemerin içinde, yolun üstünde (kemer bozulmasın diye boyatılmaz) (yeni_meydanlar, maske: iskelet/ronesans_iskelet_cep_maske_ekle.png). İlk yerleşim önizlemesi (Adım 17) Emre'ye göre 'çok kötü' oldu.",
   "resim": "cikti/ronesans/gpt-image-2-maske-cep-v5.jpg",
   "duraklar": [
     [
-      0.585,
-      0.905
+      0.48,
+      0.89
     ],
     [
       0.735,
       0.748
     ],
     [
-      0.4,
+      0.465,
       0.6
     ],
     [
@@ -19,7 +19,7 @@
       0.447
     ],
     [
-      0.55,
+      0.54,
       0.31
     ],
     [
@@ -27,8 +27,8 @@
       0.168
     ],
     [
-      0.41,
-      0.09
+      0.42,
+      0.095
     ]
   ],
   "semboller": [
@@ -45,5 +45,19 @@
     "sembol": 60,
     "karakter": 74
   },
-  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)"
+  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)",
+  "yeni_meydanlar": [
+    [
+      0.48,
+      0.89
+    ],
+    [
+      0.465,
+      0.6
+    ],
+    [
+      0.54,
+      0.31
+    ]
+  ]
 }

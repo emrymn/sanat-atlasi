@@ -50,6 +50,8 @@ const ISLER = [
   // İki geçiş (Emre'nin seçimi): önce geniş maske (yer kesin tutar), sonra yalnız yol kenarındaki şerit açık maske
   // (sonuncu gpt-image-2-maske çıktısını düzenler; tablo gitmez). İkisi aynı komutta sırayla: --yalniz gpt-image-2-maske,gpt-image-2-serit
   { ad: 'gpt-image-2-serit', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-maske', maske: 'serit', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.18 },
+  // Seçilen resme (F) yeni meydan ekleme: yalnız 4 küçük alan açık (Emre: seviyeler meydanlarda olsun)
+  { ad: 'gpt-image-2-meydan-ekle', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-maske', maske: 'ekle', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.15 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -175,9 +177,10 @@ async function main() {
     duzenle: await readFile(path.join(BURASI, 'istemler', 'duzenle.txt'), 'utf8'),
     maske: await readFile(path.join(BURASI, 'istemler', 'maske.txt'), 'utf8'),
     serit: await readFile(path.join(BURASI, 'istemler', 'serit.txt'), 'utf8'),
+    ekle: await readFile(path.join(BURASI, 'istemler', 'ekle.txt'), 'utf8'),
   };
   const duzenleIstemi = (is, secilen) =>
-    sablonlar[is.maske === 'serit' ? 'serit' : is.maske ? 'maske' : 'duzenle']
+    sablonlar[is.maske === 'serit' || is.maske === 'ekle' ? is.maske : is.maske ? 'maske' : 'duzenle']
       .trim()
       .replace(
         '{{KILIT}}',

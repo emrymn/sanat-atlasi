@@ -56,5 +56,24 @@ def maske(donem, bicim):
     m5.save(klasor / f'{donem}_iskelet{ek}_maske_serit.png')
 
 
+def ekle(donem, bicim):
+    # Seçilen resme (taslağa uymamış) yeni meydan: yalnız <dönem>_secim.json'daki yeni_meydanlar açık, gerisi kilitli.
+    # GPT büyük kilitli alana uyuyor (şerit geçişinde görüldü); küçük açık alanlara meydan boyar.
+    klasor = Path(__file__).parent / 'iskelet'
+    ek = '' if bicim == 'yilankavi' else f'_{bicim}'
+    secim = json.loads((Path(__file__).parent / f'{donem}_secim.json').read_text())
+    w, h = 1024, 3072
+    acik = Image.new('L', (w, h), 0)
+    d = ImageDraw.Draw(acik)
+    for x, y in secim.get('yeni_meydanlar', []):
+        cx, cy = x * w, y * h
+        d.ellipse([cx - 95, cy - 62, cx + 95, cy + 62], fill=255)
+    m = Image.new('RGBA', (w, h), (0, 0, 0, 0))
+    m.putalpha(ImageChops.invert(acik))
+    m.save(klasor / f'{donem}_iskelet{ek}_maske_ekle.png')
+
+
 if __name__ == '__main__':
     maske(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else 'yilankavi')
+    if (Path(__file__).parent / f'{sys.argv[1]}_secim.json').exists():
+        ekle(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else 'yilankavi')
