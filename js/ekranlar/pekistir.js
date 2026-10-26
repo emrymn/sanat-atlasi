@@ -69,7 +69,18 @@ import {
 } from './ortak.js';
 import { akimIstatistigi, seviyeIziHtml } from './pano.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
-import { BOLUM_SORU, BOLUM_GECME, SEVIYE_NO, TANITIM_SEVIYE, bolumKartlari, bolumSonucuIsle, tanitimGoruldu, bolumKaydi, bolumAdi, bolumEserleri } from '../bolum.js';
+import {
+  BOLUM_SORU,
+  BOLUM_GECME,
+  SEVIYE_NO,
+  TANITIM_SEVIYE,
+  bolumKartlari,
+  bolumSonucuIsle,
+  tanitimGoruldu,
+  bolumKaydi,
+  bolumAdi,
+  bolumEserleri,
+} from '../bolum.js';
 import { akrabaMi } from '../celdirici.js';
 import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
 import { yonlendir } from './yonlendirme.js';
@@ -193,9 +204,10 @@ export function pekistirMenusu() {
       return seviyeKaydi(d.ilerleme, x.ad).s - seviyeKaydi(d.ilerleme, y.ad).s || (ox ?? 2) - (oy ?? 2);
     });
   gununRengi();
-  ciz(`${
-    durumlar.length
-      ? `${turSahnesi(karisik)}
+  ciz(
+    `${
+      durumlar.length
+        ? `${turSahnesi(karisik)}
     ${devamKarti()}
     ${hatalarSatiri()}
     <section class="bolum pk-salonlar">
@@ -207,8 +219,9 @@ export function pekistirMenusu() {
         ${sirali.map((a, i) => donemSatiri(a, turYazi, istler.get(a.ad), i + 1, acik)).join('')}
       </ul>
     </section>`
-      : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
-  }`);
+        : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
+    }`,
+  );
   kucukKareleriDoldur();
 }
 
@@ -357,7 +370,9 @@ export async function pekistir(kip, akim, { yeni = false, onayli = false } = {})
     const x = bolumDurumu().durumlar.find((y) => y.id === id);
     const gerekli = sv === 'tanitim' ? null : sv === 'tanitim-orta' ? 'orta' : sv;
     if (!x || !x.acik || (gerekli && !x.seviyeAcik[gerekli]))
-      return ciz(`${ust(baslik, '#/harita')}<div class="bos-kutu" data-test="bolum-kapali"><p>Bu bölüm ya da seviye henüz açılmadı.</p><p><a class="dugme" href="#/harita">Haritaya dön</a></p></div>`);
+      return ciz(
+        `${ust(baslik, '#/harita')}<div class="bos-kutu" data-test="bolum-kapali"><p>Bu bölüm ya da seviye henüz açılmadı.</p><p><a class="dugme" href="#/harita">Haritaya dön</a></p></div>`,
+      );
   }
   const o = d.oturum;
   if (yeni || !o || o.kip !== kip || o.akim !== akim || o.oturum.bitti) {
@@ -813,9 +828,10 @@ async function konuTanismaGoster(o) {
 // İleri düğmesi: müze kartelası gibi; üstte küçük yön yazısı, altta sıradaki adım, sağda dönen mühürlü ok.
 // toplam verilirse üstünde tanışma adımlarını gösteren çentikler çıkar; geri verilirse solda geri düğmesi.
 function gecDugme({ ozellik, ust, ana, adim = 0, toplam = 0, geri = '' }) {
-  const centik = toplam > 1
-    ? `<span class="gec-centikler" aria-hidden="true">${Array.from({ length: toplam }, (_, i) => `<i class="${i < adim ? 'gecti' : i === adim ? 'simdi' : ''}"></i>`).join('')}</span>`
-    : '';
+  const centik =
+    toplam > 1
+      ? `<span class="gec-centikler" aria-hidden="true">${Array.from({ length: toplam }, (_, i) => `<i class="${i < adim ? 'gecti' : i === adim ? 'simdi' : ''}"></i>`).join('')}</span>`
+      : '';
   const geriDugme = geri
     ? `<button class="tanisma-geri" type="button" data-konu-tanisma-geri data-test="konu-tanisma-geri" aria-label="Önceki sanatçı: ${kacis(geri)}">${ikon('geri', 20, 1.6)}</button>`
     : '';
@@ -1236,7 +1252,7 @@ function sanatciCevapla(o, deger) {
   const kayit = seviyeKaydi(d.ilerleme, akim);
   // Ö9: ısınma için seçilen alt seviyedeki cevap dönemin penceresine yazılmaz
   if (o.kip === 'bolum') k.seviyeSonuc = { akim, bolum: o.akim };
-  else if ((o.seviye !== null && o.seviye !== undefined && !pencereyeYazilirMi(kayit, k.seviye)))
+  else if (o.seviye !== null && o.seviye !== undefined && !pencereyeYazilirMi(kayit, k.seviye))
     k.seviyeSonuc = { akim, isinma: true, once: kayit.s, sonra: kayit.s, gecti: false };
   else k.seviyeSonuc = { akim, ...seviyeIsle(d.ilerleme, akim, bilmiyor ? 'bilmiyorum' : dogru) };
   if (k.seviyeSonuc.gecti) (o.gecenler ||= []).push({ akim, seviye: k.seviyeSonuc.sonra });
@@ -1292,19 +1308,31 @@ function bolumOzeti(o) {
         : 'Zor’u da geçtin: bu bölümü ustaca bitirdin.'
     : `Geçmek için %${Math.round(BOLUM_GECME * 100)} gerekiyor. Yanlış yaptıkların daha sık karşına çıkacak.`;
   const yeniAcilan = r.gecti ? sonraki : null;
+  const SIRA = ['kolay', 'orta', 'zor'];
   const ROMA = ['I', 'II', 'III'];
-  const salonlar = ['kolay', 'orta', 'zor']
-    .map((x, i) => {
-      const durum = i < r.yildizSonra ? 'gecti' : x === yeniAcilan ? 'acildi' : 'kilitli';
-      const durumAd = durum === 'gecti' ? 'geçildi' : durum === 'acildi' ? 'yeni açıldı' : 'kilitli';
-      return `<li class="salon ${durum}${x === sv ? ' bu' : ''}" style="--i:${i}" aria-label="${BOLUM_SV_AD[x]} salonu: ${durumAd}">
-        <span class="salon-no" aria-hidden="true">${ROMA[i]}</span>
-        <span class="salon-ad" aria-hidden="true">${BOLUM_SV_AD[x]}</span>
-        <span class="salon-durum" aria-hidden="true">${durum === 'gecti' ? '<i class="yildiz-sekil"></i>' : durum === 'acildi' ? 'Açık' : ikon('kilit', 14, 1.6)}</span>
+  const buradaI = Math.max(0, SIRA.indexOf(sv));
+  const hedefI = yeniAcilan ? SIRA.indexOf(yeniAcilan) : buradaI;
+  const duraklar = SIRA.map((x, i) => {
+    const durum = i < r.yildizSonra ? 'gecti' : x === yeniAcilan ? 'acildi' : 'kilitli';
+    const durumAd = durum === 'gecti' ? 'geçildi' : durum === 'acildi' ? 'yeni açıldı' : 'kilitli';
+    const burada = i === buradaI;
+    const alt = burada ? 'Buradasın' : durum === 'acildi' ? 'Açıldı' : durum === 'gecti' ? 'Geçildi' : 'Kapalı';
+    return `<li class="durak ${durum}${burada ? ' burada' : ''}" style="--i:${i}" aria-label="${BOLUM_SV_AD[x]} salonu: ${durumAd}${burada ? ', buradasın' : ''}">
+        <span class="durak-nokta" aria-hidden="true">${durum === 'kilitli' ? ikon('kilit', 11, 1.8) : ''}</span>
+        <b aria-hidden="true">${ROMA[i]}</b>
+        <span class="durak-ad" aria-hidden="true">${BOLUM_SV_AD[x]}</span>
+        <small aria-hidden="true">${alt}</small>
       </li>`;
-    })
-    .join('');
+  }).join('');
+  const etiket = b ? bolumAdi(b) : kipKisa(o.kip, o.akim);
+  const yanlisSay = o.bolumSay.toplam - o.bolumSay.dogru;
+  const gecis = (yazi, ad) =>
+    `<span class="gecis-yazi"><small>${yazi}</small><b>${ad}</b></span>
+     <span class="gecis-ok" aria-hidden="true">${ikon('ileri', 20, 1.7)}</span>`;
   const eserler = o.sergi || [];
+  const izSirasi = eserler.length ? eserler.map((e) => !!e.dogru) : Array.from({ length: o.bolumSay.toplam }, (_, i) => i < o.bolumSay.dogru);
+  const izler = izSirasi.map((ok, i) => `<span class="skor-iz${ok ? ' dogru' : ''}" style="--i:${i}"></span>`).join('');
+  const hedefYuzde = Math.round(BOLUM_GECME * 100);
   const duvar = eserler
     .map((e, i) => {
       const egim = e.dogru ? ((i * 37) % 5) - 2 : i % 2 ? 7 : -8;
@@ -1325,25 +1353,46 @@ function bolumOzeti(o) {
       </section>`
           : ''
       }
-      <article class="kartel" style="--gecikme:${0.5 + eserler.length * 0.12}s">
-        <header class="kartel-ust">
-          <small>${kacis(b ? bolumAdi(b) : kipKisa(o.kip, o.akim))}</small>
-          <small>${BOLUM_SV_AD[sv] || ''} salonu</small>
-        </header>
-        <b class="ad">%${yuzde}</b>
-        <p class="kartel-dogru"><b>${o.bolumSay.dogru}</b> / ${o.bolumSay.toplam} eseri sahibiyle eşleştirdin</p>
-        <p class="kartel-not">${metin}</p>
-        <span class="kartel-damga" aria-hidden="true">${r.gecti ? 'Geçti' : `%${Math.round(BOLUM_GECME * 100)} gerek`}</span>
-      </article>
-      <ol class="salon-plan" aria-label="Salonlar">${salonlar}</ol>
-    </div>
-    <div class="menu sonuc-menu">
-      ${r.gecti && sonraki ? `<a class="sonuc-ileri" href="#/pekistir/bolum/${id}/${sonraki}" data-test="bolum-sonraki"><span class="kapi" aria-hidden="true"><i></i><i></i></span><span class="sonuc-ileri-yazi"><small>Sıradaki salon</small><b>${BOLUM_SV_AD[sonraki]}</b></span>${ikon('ileri', 20, 1.6)}</a>` : ''}
-      ${r.gecti ? '' : `<button class="sonuc-ileri" type="button" data-yeni-tur data-test="bolum-tekrar"><span class="kapi" aria-hidden="true"><i></i><i></i></span><span class="sonuc-ileri-yazi"><small>Eserleri yeniden as</small><b>Tekrar dene</b></span>${ikon('ileri', 20, 1.6)}</button>`}
-      <a class="sonuc-ikincil" href="#/harita" data-test="bolum-harita">Haritaya dön</a>
+      <div class="sonuc-alt" style="--gecikme:${0.5 + eserler.length * 0.12}s">
+        <section class="skor" aria-label="Sonuç" style="--oran:${yuzde}%;--hedef:${hedefYuzde}%">
+          <p class="skor-ust"><b>Senin gözün</b> · ${kacis(etiket)} · ${BOLUM_SV_AD[sv] || ''}</p>
+          <p class="skor-yuzde"><i class="ad">%${yuzde}</i><span class="skor-durum">${r.gecti ? 'Geçti' : 'Az kaldı'}</span></p>
+          <div class="skor-cizgi" aria-hidden="true">
+            <span class="skor-dolu"></span>
+            <span class="skor-hedef"><small>Hedef %${hedefYuzde}</small></span>
+          </div>
+          <div class="skor-izler" role="img" aria-label="${o.bolumSay.dogru} doğru, ${yanlisSay} yanlış, ${o.bolumSay.toplam} eser">${izler}</div>
+          <p class="skor-sayi" aria-hidden="true"><span><b>${o.bolumSay.dogru}</b> doğru</span><span><b>${yanlisSay}</b> yanlış</span><span><b>${o.bolumSay.toplam}</b> eser</span></p>
+          <p class="skor-not">${metin}</p>
+        </section>
+        <section class="yol" aria-label="Salonlar" style="--bas:${buradaI};--son:${hedefI}">
+          <ol class="yol-duraklar">${duraklar}</ol>
+          <span class="yol-isik" aria-hidden="true"></span>
+        </section>
+        <div class="menu sonuc-menu">
+          ${r.gecti && sonraki ? `<a class="gecis" href="#/pekistir/bolum/${id}/${sonraki}" data-gecis data-test="bolum-sonraki">${gecis(`${BOLUM_SV_AD[sonraki]} salonu açıldı`, `${BOLUM_SV_AD[sonraki]} salonuna geç`)}</a>` : ''}
+          ${r.gecti ? '' : `<button class="gecis" type="button" data-gecis data-yeni-tur data-test="bolum-tekrar">${gecis('Eserler yeniden asılsın', 'Tekrar dene')}</button>`}
+          <a class="sonuc-harita" href="#/harita" data-test="bolum-harita">${ikon('harita', 16, 1.6)}<span>Haritaya dön</span></a>
+        </div>
+      </div>
     </div>
     ${r.yeniGecti ? yaldizYapraklari() : ''}`);
   yuzdeSayarakYaz(ekran.querySelector('.bolum-sonuc .ad'), yuzde);
+  for (const el of ekran.querySelectorAll('[data-gecis]')) el.addEventListener('click', gecisiAk);
+}
+
+function gecisiAk(e) {
+  const el = e.currentTarget;
+  if (el.dataset.akti || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  e.preventDefault();
+  e.stopPropagation();
+  if (el.classList.contains('akiyor')) return;
+  el.classList.add('akiyor');
+  setTimeout(() => {
+    if (!el.isConnected) return;
+    el.dataset.akti = '1';
+    el.click();
+  }, 520);
 }
 
 function yuzdeSayarakYaz(el, hedef) {
