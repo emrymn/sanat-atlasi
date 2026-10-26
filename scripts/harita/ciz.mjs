@@ -55,6 +55,9 @@ const ISLER = [
   // Gece (Emre'nin seçimi: Nano Banana Pro düzenlemesi): seçilen gündüz resmi --kaynak ile; 9:16'ya kenarla genişletilip
   // ortadaki 1:3 geri kesilir. Yer kaymamalı: sonuç gündüzle üst üste konup meydanlar kontrol edilir.
   { ad: 'nano-banana-pro-gece', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'ronesans-secilen', gece: true, oran: '9:16', ref: false, fiyat: 0.15 },
+  // Üslup düzenlemesi (Emre: 'dönemi yansıtmamış'): seçilen çizimi Nano Banana Pro yalnız üslubunu değiştirerek yeniden
+  // boyar (gecede olduğu gibi yer kaymaz). İstem: istemler/<dönem>_uslup.txt; üslup örneği olarak dönemin tabloları gider.
+  { ad: 'nano-banana-pro-uslup', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-maske', gece: true, istemDosya: 'uslup', oran: '9:16', ref: true, refSiniri: 14, fiyat: 0.15 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -228,7 +231,8 @@ async function main() {
         // 1:3'ü çizemeyen model: iki yana düz kenar, sonra ortadaki 1:3 kesilir
         const png = await sharp(resim).png().toBuffer();
         ({ resim, kutu, dolgu } = await tuvaleYerlestir(png, is.oran));
-        istem = (await readFile(path.join(BURASI, 'istemler', 'gece.txt'), 'utf8')).trim();
+        istem = (await readFile(path.join(BURASI, 'istemler', is.istemDosya ? `${donem}_${is.istemDosya}.txt` : 'gece.txt'), 'utf8')).trim();
+        if (n) istem += `\n\nThe other images are the original paintings, as examples of the styles:\n` + tablolar.slice(0, n).map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser}.`).join('\n');
         tur = 'image/png';
       }
     } else {
