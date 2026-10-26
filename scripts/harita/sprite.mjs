@@ -61,6 +61,9 @@ async function saydamYap(veri) {
     yigin.push([x + 1, y], [x - 1, y], [x, y + 1], [x, y - 1]);
   }
   const morumsu = (i) => (data[i] + data[i + 2]) / 2 - data[i + 1] > 70;
+  // kapalı boşluklar (terazi zincirleri arası, çemberin içi): köşeden ulaşılamaz; mora çok yakın her piksel silinir
+  // (istem nesnede mor kullanmamayı söylüyor)
+  for (let i = 0; i < data.length; i += 4) if (data[i] > 200 && data[i + 2] > 200 && data[i + 1] < 90) data[i + 3] = 0;
   for (let tur = 0; tur < 2; tur++) {
     const sil = [];
     for (let y = 1; y < h - 1; y++)
