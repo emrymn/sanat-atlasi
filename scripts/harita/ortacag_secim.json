@@ -1,6 +1,6 @@
 {
-  "aciklama": "Orta Çağ seçimi: GPT v4 (Claude'un seçtiği eserler) → Nano Banana Pro üslup (Giotto freski / Siena altın zemin / Limbourg minyatürü) → GPT melekler (maskeyle, birleştirildi). Emre: 1. ve 3. seviye kendi bölgesinde (aralık eşit değil). 2. seviye Siena meydanı resimde var; 1 ve 3 eklenecek.",
-  "resim": "cikti/ortacag/ortacag-melek-birlesik.jpg",
+  "aciklama": "Orta Çağ seçimi: GPT v4 (Claude'un seçtiği eserler) → Nano Banana Pro üslup (Giotto freski / Siena altın zemin / Limbourg minyatürü) → GPT melekler (maskeyle, birleştirildi). Emre: 1. ve 3. seviye kendi bölgesinde (aralık eşit değil). 2. seviye Siena meydanı resimde var; 1 ve 3 eklenecek. Meydanlar: 1 GPT'nin eklediği (birlestir.py), 2 resimde vardı, 3 GPT'nin çiziminde kaymıştı; onun meydan kesiti %1,5 sola alınıp yola oturtuldu.",
+  "resim": "cikti/ortacag/ortacag-secilen.jpg",
   "yeni_meydanlar": [
     [
       0.475,
@@ -9,6 +9,20 @@
     [
       0.53,
       0.305
+    ]
+  ],
+  "duraklar": [
+    [
+      0.462,
+      0.874
+    ],
+    [
+      0.685,
+      0.667
+    ],
+    [
+      0.54,
+      0.366
     ]
   ]
 }
