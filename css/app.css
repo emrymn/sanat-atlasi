@@ -3103,32 +3103,124 @@ main[data-hareket='giris'] .ozet .ad {
 
 /* İş 5 · Yeni sanatçıyla tanışma (sorudan önce) */
 .tanisma {
+  --kenar: 22px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding-top: 18px;
+  gap: 20px;
+  padding-top: 14px;
+}
+.tanisma-kartel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 .tanisma .meta {
-  margin: -4px 0 0;
+  margin: 0;
   color: var(--ink-2);
   font: 500 14px/1.3 var(--sans);
+  letter-spacing: 0.02em;
 }
 .tanisma-ad:focus {
   outline: none;
 }
-.tanisma-eserler {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+/* Vitrin: tablo duvarda asılı gibi, paspartu içinde, oranı korunarak */
+.tanisma-vitrin {
+  margin: 0 calc(-1 * var(--kenar, 20px));
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tanisma-pano {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(220px, 40svh, 420px);
+  padding: 20px 28px;
+  border: 0;
+  background-color: var(--surface);
+  background-image: var(--doku);
+  background-size: 6px 6px;
+  cursor: zoom-in;
+}
+.tanisma-pano img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  outline: 6px solid var(--bg);
+  box-shadow:
+    0 0 0 7px var(--border),
+    0 18px 30px -14px rgba(0, 0, 0, 0.45);
+}
+.tanisma-pano.degisti img {
+  animation: vitrin-gel 0.42s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+@keyframes vitrin-gel {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+.tanisma-alyazi {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 var(--kenar, 20px);
+}
+.tanisma-baslik-yazi {
+  min-width: 0;
+  font: italic 400 16px/1.3 var(--serif);
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tanisma-sira {
+  flex: none;
+  font: 500 12px/1 var(--sans);
+  letter-spacing: 0.08em;
+  color: var(--ink-2);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Şerit: dokununca vitrin değişir */
+.tanisma-serit {
+  display: flex;
   gap: 8px;
+  margin: -8px calc(-1 * var(--kenar, 20px)) 0;
+  padding: 4px var(--kenar, 20px);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+}
+.tanisma-serit::-webkit-scrollbar {
+  display: none;
 }
 .tanisma-eser {
+  flex: none;
+  width: 52px;
+  height: 64px;
   padding: 0;
   border: 0;
-  background: var(--surface);
-  border-radius: 10px;
+  border-radius: 6px;
   overflow: hidden;
-  aspect-ratio: 3 / 4;
-  max-width: 100%;
+  background: var(--surface);
+  opacity: 0.55;
+  scroll-snap-align: start;
+  transition:
+    opacity 0.2s,
+    box-shadow 0.2s;
+  cursor: pointer;
+}
+.tanisma-eser[aria-pressed='true'] {
+  opacity: 1;
+  box-shadow:
+    0 0 0 2px var(--bg),
+    0 0 0 3.5px var(--ink);
   cursor: zoom-in;
 }
 .tanisma-eser img {
@@ -3137,12 +3229,254 @@ main[data-hareket='giris'] .ozet .ad {
   object-fit: cover;
   display: block;
 }
+
+.tanisma-ipucu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.tanisma-ipucu-baslik {
+  margin: 0;
+  font: 600 12px/1 var(--sans);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
 .tanisma-not {
   margin: 0;
+  font-size: 17px;
+  line-height: 1.55;
+  text-wrap: pretty;
 }
+
+/* Alt: not + düğme ekranın altına yapışık */
+.tanisma-alt {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin: -8px calc(-1 * var(--kenar, 20px)) 0;
+  padding: 16px var(--kenar, 20px) calc(14px + env(safe-area-inset-bottom));
+  background: linear-gradient(to bottom, rgba(var(--bg-rgb), 0), rgb(var(--bg-rgb)) 18px);
+}
+.tanisma-sonra {
+  margin: 0;
+  text-wrap: pretty;
+}
+/* İleri düğmesi: duvardaki müze kartelası. Fildişi kart, ince iç çerçeve, sağda koyu ok mührü. */
+.gec-centikler {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+.gec-centikler i {
+  flex: 1;
+  height: 2px;
+  background: var(--border);
+  transition: background 0.4s ease;
+}
+.gec-centikler i.gecti { background: var(--ink-3); }
+.gec-centikler i.simdi {
+  position: relative;
+  overflow: hidden;
+}
+.gec-centikler i.simdi::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--vurgu-acik);
+  transform-origin: left;
+  animation: centik-dol 0.9s cubic-bezier(0.6, 0, 0.2, 1) 0.15s backwards;
+}
+@keyframes centik-dol { from { transform: scaleX(0); } }
+
+.gec-satir {
+  display: flex;
+  gap: 8px;
+  animation: gec-gel 0.55s cubic-bezier(0.2, 0.9, 0.3, 1.15) backwards;
+}
+@keyframes gec-gel {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+}
+
+.tanisma-geri {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 52px;
+  min-height: 64px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+  animation: gec-geri-gel 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.15) 0.1s backwards;
+}
+@keyframes gec-geri-gel {
+  from { opacity: 0; transform: translateX(-12px); }
+}
+.tanisma-geri svg { transition: transform 0.25s cubic-bezier(0.3, 1.4, 0.5, 1); }
+.tanisma-geri:active { transform: scale(0.95); }
+.tanisma-geri:active svg { transform: translateX(-4px); }
+@media (hover: hover) {
+  .tanisma-geri:hover { border-color: var(--ink-3); }
+  .tanisma-geri:hover svg { transform: translateX(-3px); }
+}
+.tanisma-geri:focus-visible {
+  outline: 2px solid var(--vurgu-acik);
+  outline-offset: 3px;
+}
+
 .tanisma-gec {
-  align-self: stretch;
-  min-height: 48px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  align-items: center;
+  gap: 14px;
+  min-height: 64px;
+  padding: 10px 10px 10px 18px;
+  border: 0;
+  border-radius: 3px;
+  background: var(--vurgu-acik);
+  color: var(--vurgu-acik-yazi);
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25), 0 10px 24px -14px rgba(0, 0, 0, 0.7);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.tanisma-gec::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px solid currentColor;
+  border-radius: 1px;
+  opacity: 0.18;
+  pointer-events: none;
+}
+.gec-yazi {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
+}
+.gec-ust {
+  font: 600 11px/1 var(--sans);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.gec-ana {
+  font: italic 400 21px/1.15 var(--serif);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation: gec-ad-ac 0.8s cubic-bezier(0.6, 0, 0.2, 1) 0.25s backwards;
+}
+/* Sıradaki ad, perde açılır gibi soldan sağa belirir */
+@keyframes gec-ad-ac {
+  from { clip-path: inset(0 100% 0 0); transform: translateX(-6px); }
+  to { clip-path: inset(0 0 0 0); }
+}
+.gec-yazi,
+.gec-ok {
+  position: relative;
+  z-index: 1;
+  transition: color 0.25s ease;
+}
+/* Yaldız parıltısı: arada bir kartelanın üstünden geçer */
+.gec-parilti {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(105deg, transparent 38%, rgba(255, 255, 255, 0.55) 50%, transparent 62%);
+  background-size: 260% 100%;
+  background-position: 130% 0;
+  mix-blend-mode: soft-light;
+  animation: gec-parla 4.8s ease-in-out 1.1s infinite;
+}
+@keyframes gec-parla {
+  0% { background-position: 130% 0; }
+  30%, 100% { background-position: -30% 0; }
+}
+/* Basılan noktadan koyu mürekkep yayılır */
+.gec-dalga {
+  position: absolute;
+  left: var(--x, 85%);
+  top: var(--y, 50%);
+  z-index: 0;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 50%;
+  background: var(--vurgu-acik-yazi);
+  transform: scale(0);
+  pointer-events: none;
+}
+.tanisma-gec.gidiyor .gec-dalga { animation: gec-murekkep 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+@keyframes gec-murekkep { to { transform: scale(70); } }
+.tanisma-gec.gidiyor .gec-yazi { color: var(--vurgu-acik); }
+.tanisma-gec.gidiyor .gec-parilti { animation: none; opacity: 0; }
+
+.gec-ok {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--vurgu-acik-yazi);
+  color: var(--vurgu-acik);
+  transition: transform 0.25s cubic-bezier(0.3, 1.4, 0.5, 1), background 0.25s ease;
+}
+/* Mühür halkası: okun çevresinde yavaşça döner */
+.gec-halka {
+  position: absolute;
+  inset: -5px;
+  border: 1px dashed var(--vurgu-acik-yazi);
+  border-radius: 50%;
+  opacity: 0.45;
+  animation: gec-don 14s linear infinite;
+}
+@keyframes gec-don { to { transform: rotate(360deg); } }
+.gec-ok svg { animation: gec-durt 2.6s ease-in-out 1.4s infinite; }
+@keyframes gec-durt {
+  0%, 70%, 100% { transform: translateX(0); }
+  78% { transform: translateX(5px); }
+  86% { transform: translateX(-1px); }
+  92% { transform: translateX(3px); }
+}
+.tanisma-gec.gidiyor .gec-ok { background: var(--vurgu-acik); color: var(--vurgu-acik-yazi); transform: scale(1.08); }
+.tanisma-gec.gidiyor .gec-halka { border-color: var(--vurgu-acik); animation-duration: 0.9s; }
+.tanisma-gec.gidiyor .gec-ok svg { animation: gec-firla 0.34s cubic-bezier(0.5, 0, 0.8, 0.4) forwards; }
+@keyframes gec-firla {
+  40% { transform: translateX(-3px); }
+  to { transform: translateX(28px); opacity: 0; }
+}
+.tanisma-gec:active {
+  transform: translateY(1px) scale(0.985);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.25), 0 4px 12px -8px rgba(0, 0, 0, 0.7);
+}
+@media (hover: hover) {
+  .tanisma-gec:hover .gec-ok { transform: translateX(3px); }
+  .tanisma-gec:hover .gec-halka { animation-duration: 3s; }
+}
+.tanisma-gec:focus-visible {
+  outline: 2px solid var(--vurgu-acik);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tanisma-gec, .gec-ok, .gec-centikler i, .tanisma-geri, .tanisma-geri svg { transition: none; }
+  .gec-satir, .tanisma-geri, .gec-ana, .gec-parilti, .gec-halka, .gec-ok svg,
+  .gec-centikler i.simdi::after, .tanisma-gec.gidiyor .gec-dalga { animation: none; }
 }
 
 /* İş 5 · Sık karıştırılan ikili: cevap yaprağında ikişer eser yan yana */
@@ -5815,7 +6149,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   user-select: none;
   -webkit-user-drag: none;
 }
-/* resimlerin kenarları aradaki dönem geçişi şeridine sisle karış��r */
+/* resimlerin kenarları aradaki dönem geçişi şeridine sisle karış����r */
 .harita-resim.sis-alt {
   -webkit-mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
   mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
@@ -9904,7 +10238,7 @@ a.harita-seviye:active { background: rgba(255, 255, 255, 0.07); }
 .donem-dugme:hover .donem-dugme-ok span { translate: 4px 0; }
 .donem-dugme:active { scale: 0.99; }
 
-/* ---------- Dönem paletleri ve son hâller ---------- */
+/* ---------- Dönem paletleri ve son h��ller ---------- */
 
 /* Antik — Pompei kırmızısı, traverten etiket; tablo derzli mozaik taşlarından oluşur */
 .donem-dugme[data-teknik='antik'] { --d-zemin: #ebe1d0; --d-yazi: #2b2118; --d-vurgu: #9a3b22; --d-sahne: #6e5f4f; --d-kose: 2px; }

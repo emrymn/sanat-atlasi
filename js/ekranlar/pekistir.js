@@ -671,6 +671,55 @@ function tanismaAcik() {
   return d.ilerleme.ayarlar.tanisma !== false && !window.__atlasTanismaYok;
 }
 
+// Paspartulu büyük eser + küçük şerit. Şeritte başka esere dokunmak vitrini değiştirir,
+// seçili olana (ya da vitrine) dokunmak görüntüleyiciyi açar.
+function tanismaVitrin(eserler) {
+  const bilgi = eserler.map((e) => {
+    const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
+    return { baslik: eserBaslik(e), buyuk: gorselUrl(g, 900), kucuk: gorselUrl(g, 240), yedek: gorselYedek(g) };
+  });
+  const ilk = bilgi[0];
+  const n = bilgi.length;
+  return `<figure class="tanisma-vitrin">
+      <button class="tanisma-pano" type="button" data-tanisma-eser="0" aria-label="${kacis(ilk.baslik)} — büyüt">
+        <img decoding="async" alt="" src="${kacis(ilk.buyuk)}" data-yedek="${kacis(ilk.yedek)}">
+      </button>
+      <figcaption class="tanisma-alyazi">
+        <span class="tanisma-baslik-yazi">${kacis(ilk.baslik)}</span>
+        ${n > 1 ? `<span class="tanisma-sira" aria-hidden="true">1 / ${n}</span>` : ''}
+      </figcaption>
+    </figure>
+    ${
+      n > 1
+        ? `<div class="tanisma-serit" role="group" aria-label="Eserler">${bilgi
+            .map(
+              (b, i) =>
+                `<button class="tanisma-eser" type="button" data-tanisma-eser="${i}" data-buyuk="${kacis(b.buyuk)}" data-yedek-buyuk="${kacis(b.yedek)}" data-baslik="${kacis(b.baslik)}" aria-pressed="${i === 0}" aria-label="${kacis(b.baslik)}"><img decoding="async" alt="" src="${kacis(b.kucuk)}" data-yedek="${kacis(b.yedek)}"></button>`,
+            )
+            .join('')}</div>`
+        : ''
+    }`;
+}
+
+function tanismaVitrinSec(dugme) {
+  const serit = dugme.closest('.tanisma-serit');
+  const pano = ekran.querySelector('.tanisma-pano');
+  if (!serit || !pano) return;
+  const i = dugme.dataset.tanismaEser;
+  const img = pano.querySelector('img');
+  img.dataset.yedek = dugme.dataset.yedekBuyuk;
+  img.src = dugme.dataset.buyuk;
+  pano.dataset.tanismaEser = i;
+  pano.setAttribute('aria-label', `${dugme.dataset.baslik} — büyüt`);
+  ekran.querySelector('.tanisma-baslik-yazi').textContent = dugme.dataset.baslik;
+  const sira = ekran.querySelector('.tanisma-sira');
+  if (sira) sira.textContent = `${Number(i) + 1} / ${serit.children.length}`;
+  for (const b of serit.children) b.setAttribute('aria-pressed', String(b === dugme));
+  pano.classList.remove('degisti');
+  void pano.offsetWidth;
+  pano.classList.add('degisti');
+}
+
 // Tanışma ekranı: sanatçının en bilinen 3 eseri ve "Nasıl tanırım?"
 // sayac: sağ üstteki yazı; not: alttaki açıklama; dugme: ileri düğmesinin HTML'i
 function tanismaCiz(o, s, eserler, { sayac, not, dugme, etiketYazi = 'Yeni sanatçı · önce tanış' }) {
@@ -683,22 +732,15 @@ function tanismaCiz(o, s, eserler, { sayac, not, dugme, etiketYazi = 'Yeni sanat
       <span data-test="sayac">${sayac}</span>
     </header>
     <section class="tanisma" data-test="tanisma">
-      ${etiket(etiketYazi, { vurgu: true })}
-      ${isimHtml(s, { etiketAdi: 'h2', sinif: 'tanisma-ad', ek: ' tabindex="-1"' })}
-      <p class="meta">${kacis(yillarYaz(s))} · ${kacis(s.akim)}</p>
-      ${
-        eserler.length
-          ? `<div class="tanisma-eserler">${eserler
-              .map((e, i) => {
-                const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
-                return `<button class="tanisma-eser" type="button" data-tanisma-eser="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}"></button>`;
-              })
-              .join('')}</div>`
-          : ''
-      }
-      ${ipucu ? `<p class="okuma tanisma-not">${kacis(ipucu)}</p>` : ''}
-      <p class="kucuk ikincil">${not}</p>
-      ${dugme}
+      <div class="tanisma-kartel">
+        ${etiket(etiketYazi, { vurgu: true })}
+        ${isimHtml(s, { etiketAdi: 'h2', sinif: 'tanisma-ad', ek: ' tabindex="-1"' })}
+        <p class="meta">${kacis(yillarYaz(s))} · ${kacis(s.akim)}</p>
+      </div>
+      ${eserler.length ? tanismaVitrin(eserler) : ''}
+      ${ipucu ? `<div class="tanisma-ipucu"><h3 class="tanisma-ipucu-baslik">Nasıl tanırım?</h3><p class="okuma tanisma-not">${kacis(ipucu)}</p></div>` : ''}
+      <p class="kucuk ikincil tanisma-sonra">${not}</p>
+      <div class="tanisma-alt">${dugme}</div>
     </section>`,
     'yeni-kart',
   );
@@ -716,7 +758,7 @@ function tanismaGoster(o) {
   tanismaCiz(o, s, eserler, {
     sayac: `${Math.min(ot.konum + 1, ot.toplam)} / ${ot.toplam}`,
     not: 'Birazdan bu sanatçının burada görmediğin bir eseri sorulacak.',
-    dugme: '<button class="dugme vurgu tanisma-gec" type="button" data-tanisma-gec>Tanıdım, soruya geç →</button>',
+    dugme: gecDugme({ ozellik: 'data-tanisma-gec', ust: 'Tanıdım', ana: 'Soruya geç' }),
   });
 }
 
@@ -751,10 +793,50 @@ async function konuTanismaGoster(o) {
       : bolum
         ? 'Sonra bu bölümün öbür sanatçısı geliyor.'
         : 'Sonra bu konunun öbür yeni sanatçısı geliyor.',
-    dugme: `<button class="dugme vurgu tanisma-gec" type="button" data-konu-tanisma-gec data-test="konu-tanisma-gec">${
-      son ? (bolum && !o.oturum.toplam ? 'Haritaya dön →' : bolum ? `${BOLUM_YONELME[tanSv] || 'Kolay’a'} başla →` : 'Tura başla →') : 'Sonraki sanatçı →'
-    }</button>`,
+    dugme: gecDugme({
+      ozellik: 'data-konu-tanisma-gec data-test="konu-tanisma-gec"',
+      ust: son ? (bolum && !o.oturum.toplam ? 'Tanıtım bitti' : 'Hazırsan') : 'Sıradaki sanatçı',
+      ana: son
+        ? bolum && !o.oturum.toplam
+          ? 'Haritaya dön'
+          : bolum
+            ? `${BOLUM_YONELME[tanSv] || 'Kolay’a'} başla`
+            : 'Tura başla'
+        : d.harita.get(t.sira[t.konum + 1])?.ad || 'Sonraki sanatçı',
+      adim: t.konum,
+      toplam: t.sira.length,
+      geri: t.gecmis && t.gecmis.length ? d.harita.get(t.sira[t.gecmis[t.gecmis.length - 1]])?.ad || 'Önceki sanatçı' : '',
+    }),
   });
+}
+
+// İleri düğmesi: müze kartelası gibi; üstte küçük yön yazısı, altta sıradaki adım, sağda dönen mühürlü ok.
+// toplam verilirse üstünde tanışma adımlarını gösteren çentikler çıkar; geri verilirse solda geri düğmesi.
+function gecDugme({ ozellik, ust, ana, adim = 0, toplam = 0, geri = '' }) {
+  const centik = toplam > 1
+    ? `<span class="gec-centikler" aria-hidden="true">${Array.from({ length: toplam }, (_, i) => `<i class="${i < adim ? 'gecti' : i === adim ? 'simdi' : ''}"></i>`).join('')}</span>`
+    : '';
+  const geriDugme = geri
+    ? `<button class="tanisma-geri" type="button" data-konu-tanisma-geri data-test="konu-tanisma-geri" aria-label="Önceki sanatçı: ${kacis(geri)}">${ikon('geri', 20, 1.6)}</button>`
+    : '';
+  return `${centik}<div class="gec-satir">${geriDugme}<button class="tanisma-gec" type="button" ${ozellik}>
+    <span class="gec-dalga" aria-hidden="true"></span>
+    <span class="gec-parilti" aria-hidden="true"></span>
+    <span class="gec-yazi"><span class="gec-ust">${kacis(ust)}</span><span class="gec-ana">${kacis(ana)}</span></span>
+    <span class="gec-ok" aria-hidden="true"><span class="gec-halka"></span>${ikon('ileri', 20, 1.6)}</span>
+  </button></div>`;
+}
+
+// Basınca kartın üstüne basılan noktadan mürekkep yayılır, ok fırlar; sonra adım değişir.
+function gecAnimasyonu(e, btn, sonra) {
+  if (btn.classList.contains('gidiyor')) return;
+  const r = btn.getBoundingClientRect();
+  const klavye = e.detail === 0;
+  btn.style.setProperty('--x', `${klavye ? r.width - 32 : e.clientX - r.left}px`);
+  btn.style.setProperty('--y', `${klavye ? r.height / 2 : e.clientY - r.top}px`);
+  btn.classList.add('gidiyor');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return sonra();
+  setTimeout(sonra, 340);
 }
 
 // Cevap yaprağı (D3): eser ve kalan iki seçenek yaprağın üstünde, kaydırmadan görünür.
@@ -1378,21 +1460,41 @@ export function olaylariBagla() {
       seviyeSec(o, Number(sv.dataset.seviyeSec));
       return;
     }
-    if (e.target.closest('[data-konu-tanisma-gec]') && o && o.tanisma) {
+    const kg = e.target.closest('[data-konu-tanisma-gec]');
+    if (kg && o && o.tanisma) {
+      gecAnimasyonu(e, kg, () => {
+        if (d.oturum !== o) return;
+        const t = o.tanisma;
+        o.tanismaGorulen[t.sira[t.konum]] = t.gosterilen || [];
+        t.gecmis = [...(t.gecmis || []), t.konum];
+        t.konum++;
+        kartCiz();
+      });
+      return;
+    }
+    if (e.target.closest('[data-konu-tanisma-geri]') && o && o.tanisma && o.tanisma.gecmis && o.tanisma.gecmis.length) {
       const t = o.tanisma;
-      o.tanismaGorulen[t.sira[t.konum]] = t.gosterilen || [];
-      t.konum++;
+      t.konum = t.gecmis[t.gecmis.length - 1];
+      t.gecmis = t.gecmis.slice(0, -1);
       kartCiz();
       return;
     }
-    if (e.target.closest('[data-tanisma-gec]') && o && o.kart) {
-      o.kart.tanisma = false;
-      kartGoster(o);
-      ekran.querySelector('.soru-baslik h2').focus({ preventScroll: true });
+    const tg = e.target.closest('[data-tanisma-gec]');
+    if (tg && o && o.kart) {
+      gecAnimasyonu(e, tg, () => {
+        if (d.oturum !== o || !o.kart) return;
+        o.kart.tanisma = false;
+        kartGoster(o);
+        ekran.querySelector('.soru-baslik h2').focus({ preventScroll: true });
+      });
       return;
     }
     const te = e.target.closest('[data-tanisma-eser]');
     if (te && o && o.tanismaEserleri) {
+      if (te.classList.contains('tanisma-eser') && te.getAttribute('aria-pressed') === 'false') {
+        tanismaVitrinSec(te);
+        return;
+      }
       const id = o.tanisma && o.tanisma.konum < o.tanisma.sira.length ? o.tanisma.sira[o.tanisma.konum] : o.kart && o.kart.id;
       goruntuleyiciAc({ eserler: o.tanismaEserleri, baslangic: Number(te.dataset.tanismaEser), notu: notuIcin(id), ...gorselTercihi() });
       return;
