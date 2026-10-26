@@ -8,7 +8,7 @@
     ],
     [
       0.7686,
-      0.7282
+      0.7335
     ],
     [
       0.469,
@@ -65,5 +65,6 @@
   "karakter_kayma": [
     0.085,
     -0.012
-  ]
+  ],
+  "resim_gece": "cikti/ronesans/ronesans-secilen-gece.jpg"
 }
