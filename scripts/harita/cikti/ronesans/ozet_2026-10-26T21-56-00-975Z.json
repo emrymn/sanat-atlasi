@@ -1,0 +1,180 @@
+[
+  {
+    "ad": "nano-banana-pro-ref",
+    "model": "google/gemini-3-pro-image",
+    "tur": "gemini",
+    "oran": "9:16",
+    "ref": true,
+    "refSiniri": 14,
+    "fiyat": 0.3,
+    "iskelet": "cep",
+    "sure": 52,
+    "ham": [
+      1536,
+      2752
+    ],
+    "kesilen": {
+      "left": 313,
+      "top": 0,
+      "width": 910,
+      "height": 2752
+    },
+    "uyari": null,
+    "tablolar": [
+      "Dante and the Three Kingdoms",
+      "The Moneylender and His Wife",
+      "The Hunters in the Snow",
+      "The Creation of Adam (detail: the two reaching hands)",
+      "The Wedding at Cana",
+      "The Chess Game",
+      "View of Toledo"
+    ],
+    "istemOzeti": "8ef70ff185",
+    "ek": {
+      "usage": {
+        "inputTokens": 5599,
+        "inputTokenDetails": {
+          "noCacheTokens": 1739,
+          "cacheReadTokens": 3860
+        },
+        "outputTokens": 2083,
+        "outputTokenDetails": {
+          "textTokens": 1120,
+          "reasoningTokens": 963
+        },
+        "totalTokens": 7682
+      },
+      "providerMetadata": {
+        "googleVertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "cachedContentTokenCount": 3860,
+            "thoughtsTokenCount": 963,
+            "promptTokenCount": 5599,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 7682,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 4480
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 1119
+              }
+            ],
+            "cacheTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 3089
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 771
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "vertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "cachedContentTokenCount": 3860,
+            "thoughtsTokenCount": 963,
+            "promptTokenCount": 5599,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 7682,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 4480
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 1119
+              }
+            ],
+            "cacheTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 3089
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 771
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "google/gemini-3-pro-image",
+            "resolvedProvider": "vertex",
+            "fallbacksAvailable": [
+              "google"
+            ],
+            "planningReasoning": "System credentials planned for: vertex, google. Total execution order: vertex(system) → google(system)",
+            "canonicalSlug": "google/gemini-3-pro-image",
+            "finalProvider": "vertex",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "google/gemini-3-pro-image",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "vertex",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793051710307,
+                    "endTime": 1793051753761,
+                    "statusCode": 200,
+                    "providerResponseId": "PszfauGHGvHvhcIPloKHEQ"
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1,
+            "affinity": {
+              "outcome": "no_pin"
+            },
+            "clientSessionId": "5cd658347566ef68d696e1740c279648",
+            "clientSessionIdSource": "fingerprint"
+          },
+          "cost": "0.150206",
+          "marketCost": "0.150206",
+          "surchargeCost": "0",
+          "gatewayCost": "0.150206",
+          "inferenceCost": "0.150206",
+          "inputInferenceCost": "0.00425",
+          "outputInferenceCost": "0.145956",
+          "generationId": "gen_01M5X3BMPAXEH5FHN8Y9SCBZH4"
+        }
+      }
+    }
+  }
+]
