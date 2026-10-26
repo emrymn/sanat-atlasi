@@ -14,7 +14,7 @@ const BURASI = path.dirname(fileURLToPath(import.meta.url));
 const KOK = path.resolve(BURASI, '../..');
 
 const ORTAK =
-  "Painted in the same light, bright storybook style as the map in Image 1 (same palette, soft daylight from the upper left, visible brushwork), and at the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. Transparent background (if that is not possible, a flat pure white background). No cast shadow beyond the base, no text, no frame.";
+  "Painted in the same light, bright storybook style as the map in Image 1 (same palette, soft daylight from the upper left, visible brushwork), and at the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
 
 const ISLER = {
   ronesans: {
@@ -39,7 +39,8 @@ const ISLER = {
   },
 };
 
-// Saydam değilse: köşelerden başlayıp arka plana benzer pikselleri sil (taşma dolgusu), kenarı 1 px yumuşat
+// Saydam değilse: köşelerden başlayıp arka plana benzer pikselleri sil (taşma dolgusu); sonra kenardaki mor
+// sızıntıyı (yarı mor kenar pikselleri) iki tur temizle
 async function saydamYap(veri) {
   const { data, info } = await sharp(veri).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const { width: w, height: h } = info;
@@ -59,7 +60,17 @@ async function saydamYap(veri) {
     data[o(x, y) + 3] = 0;
     yigin.push([x + 1, y], [x - 1, y], [x, y + 1], [x, y - 1]);
   }
-  return { png: await sharp(data, { raw: { width: w, height: h, channels: 4 } }).png().toBuffer(), yontem: 'köşeden silindi' };
+  const morumsu = (i) => (data[i] + data[i + 2]) / 2 - data[i + 1] > 70;
+  for (let tur = 0; tur < 2; tur++) {
+    const sil = [];
+    for (let y = 1; y < h - 1; y++)
+      for (let x = 1; x < w - 1; x++) {
+        const i = o(x, y);
+        if (data[i + 3] && morumsu(i) && (!data[o(x + 1, y) + 3] || !data[o(x - 1, y) + 3] || !data[o(x, y + 1) + 3] || !data[o(x, y - 1) + 3])) sil.push(i);
+      }
+    for (const i of sil) data[i + 3] = 0;
+  }
+  return { png: await sharp(data, { raw: { width: w, height: h, channels: 4 } }).png().toBuffer(), yontem: 'mor zemin silindi' };
 }
 
 async function main() {
@@ -94,7 +105,9 @@ async function main() {
         model: gateway.image('openai/gpt-image-2'),
         prompt: { text: `${is.metin}\n\n${ORTAK}`, images: [harita, is.yolcu ? ornekYolcu : ornekNesne] },
         size: '1024x1024',
-        providerOptions: { openai: { quality: 'high', background: 'transparent' } },
+        // GPT Image 2 saydam arka plan desteklemiyor ('Transparent background is not supported'): düz mor zemin istenir,
+        // saydamYap köşelerden siler. Mor seçildi: fildişi şah, beyaz vazo gibi açık nesneler beyaz zeminle karışırdı.
+        providerOptions: { openai: { quality: 'high' } },
       });
       const { png, yontem } = await saydamYap(Buffer.from(sonuc.image.uint8Array));
       const kirpik = await sharp(png).trim().toBuffer(); // saydam kenarlar kırpılır
