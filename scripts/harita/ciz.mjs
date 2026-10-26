@@ -58,6 +58,9 @@ const ISLER = [
   // Üslup düzenlemesi (Emre: 'dönemi yansıtmamış'): seçilen çizimi Nano Banana Pro yalnız üslubunu değiştirerek yeniden
   // boyar (gecede olduğu gibi yer kaymaz). İstem: istemler/<dönem>_uslup.txt; üslup örneği olarak dönemin tabloları gider.
   { ad: 'nano-banana-pro-uslup', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-maske', gece: true, istemDosya: 'uslup', oran: '9:16', ref: true, refSiniri: 14, fiyat: 0.15 },
+  // Üslup sonrası düzeltme (Emre: altın kısımlar boş, melek ekle): ekRef ile yalnız bu işe giden örnek tablolar
+  { ad: 'nano-banana-pro-duzelt', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'nano-banana-pro-uslup', gece: true, istemDosya: 'duzelt', oran: '9:16', ref: false,
+    ekRef: ['gorseller/b/4f667b920dd4b8c9.jpg', 'gorseller/b/e3ad1487857b631e.jpg'], fiyat: 0.15 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -240,7 +243,8 @@ async function main() {
       istem = N(istemKur(temel, is, dolgu, tablolar.slice(0, n)));
       tur = 'image/png';
     }
-    const gorseller = [{ veri: resim, tur }, ...refler.slice(0, n)];
+    const ek = is.ekRef ? await Promise.all(is.ekRef.map(async (d) => ({ veri: await sharp(await readFile(path.join(KOK, d))).resize(1024, 1024, { fit: 'inside' }).jpeg({ quality: 88 }).toBuffer(), tur: 'image/jpeg' }))) : [];
+    const gorseller = [{ veri: resim, tur }, ...refler.slice(0, n), ...ek];
     const iskEk = bicim === 'yilankavi' ? '' : '_' + bicim;
     const maske = is.maske ? await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${iskEk}_maske${typeof is.maske === 'string' ? '_' + is.maske : ''}.png`)) : null;
     const bas = Date.now();
