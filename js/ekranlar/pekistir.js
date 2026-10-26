@@ -69,7 +69,18 @@ import {
 } from './ortak.js';
 import { akimIstatistigi, seviyeIziHtml } from './pano.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
-import { BOLUM_SORU, BOLUM_GECME, SEVIYE_NO, TANITIM_SEVIYE, bolumKartlari, bolumSonucuIsle, tanitimGoruldu, bolumKaydi, bolumAdi, bolumEserleri } from '../bolum.js';
+import {
+  BOLUM_SORU,
+  BOLUM_GECME,
+  SEVIYE_NO,
+  TANITIM_SEVIYE,
+  bolumKartlari,
+  bolumSonucuIsle,
+  tanitimGoruldu,
+  bolumKaydi,
+  bolumAdi,
+  bolumEserleri,
+} from '../bolum.js';
 import { akrabaMi } from '../celdirici.js';
 import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
 import { yonlendir } from './yonlendirme.js';
@@ -193,9 +204,10 @@ export function pekistirMenusu() {
       return seviyeKaydi(d.ilerleme, x.ad).s - seviyeKaydi(d.ilerleme, y.ad).s || (ox ?? 2) - (oy ?? 2);
     });
   gununRengi();
-  ciz(`${
-    durumlar.length
-      ? `${turSahnesi(karisik)}
+  ciz(
+    `${
+      durumlar.length
+        ? `${turSahnesi(karisik)}
     ${devamKarti()}
     ${hatalarSatiri()}
     <section class="bolum pk-salonlar">
@@ -207,8 +219,9 @@ export function pekistirMenusu() {
         ${sirali.map((a, i) => donemSatiri(a, turYazi, istler.get(a.ad), i + 1, acik)).join('')}
       </ul>
     </section>`
-      : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
-  }`);
+        : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
+    }`,
+  );
   kucukKareleriDoldur();
 }
 
@@ -357,7 +370,9 @@ export async function pekistir(kip, akim, { yeni = false, onayli = false } = {})
     const x = bolumDurumu().durumlar.find((y) => y.id === id);
     const gerekli = sv === 'tanitim' ? null : sv === 'tanitim-orta' ? 'orta' : sv;
     if (!x || !x.acik || (gerekli && !x.seviyeAcik[gerekli]))
-      return ciz(`${ust(baslik, '#/harita')}<div class="bos-kutu" data-test="bolum-kapali"><p>Bu bölüm ya da seviye henüz açılmadı.</p><p><a class="dugme" href="#/harita">Haritaya dön</a></p></div>`);
+      return ciz(
+        `${ust(baslik, '#/harita')}<div class="bos-kutu" data-test="bolum-kapali"><p>Bu bölüm ya da seviye henüz açılmadı.</p><p><a class="dugme" href="#/harita">Haritaya dön</a></p></div>`,
+      );
   }
   const o = d.oturum;
   if (yeni || !o || o.kip !== kip || o.akim !== akim || o.oturum.bitti) {
@@ -671,6 +686,55 @@ function tanismaAcik() {
   return d.ilerleme.ayarlar.tanisma !== false && !window.__atlasTanismaYok;
 }
 
+// Paspartulu büyük eser + küçük şerit. Şeritte başka esere dokunmak vitrini değiştirir,
+// seçili olana (ya da vitrine) dokunmak görüntüleyiciyi açar.
+function tanismaVitrin(eserler) {
+  const bilgi = eserler.map((e) => {
+    const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
+    return { baslik: eserBaslik(e), buyuk: gorselUrl(g, 900), kucuk: gorselUrl(g, 240), yedek: gorselYedek(g) };
+  });
+  const ilk = bilgi[0];
+  const n = bilgi.length;
+  return `<figure class="tanisma-vitrin">
+      <button class="tanisma-pano" type="button" data-tanisma-eser="0" aria-label="${kacis(ilk.baslik)} — büyüt">
+        <img decoding="async" alt="" src="${kacis(ilk.buyuk)}" data-yedek="${kacis(ilk.yedek)}">
+      </button>
+      <figcaption class="tanisma-alyazi">
+        <span class="tanisma-baslik-yazi">${kacis(ilk.baslik)}</span>
+        ${n > 1 ? `<span class="tanisma-sira" aria-hidden="true">1 / ${n}</span>` : ''}
+      </figcaption>
+    </figure>
+    ${
+      n > 1
+        ? `<div class="tanisma-serit" role="group" aria-label="Eserler">${bilgi
+            .map(
+              (b, i) =>
+                `<button class="tanisma-eser" type="button" data-tanisma-eser="${i}" data-buyuk="${kacis(b.buyuk)}" data-yedek-buyuk="${kacis(b.yedek)}" data-baslik="${kacis(b.baslik)}" aria-pressed="${i === 0}" aria-label="${kacis(b.baslik)}"><img decoding="async" alt="" src="${kacis(b.kucuk)}" data-yedek="${kacis(b.yedek)}"></button>`,
+            )
+            .join('')}</div>`
+        : ''
+    }`;
+}
+
+function tanismaVitrinSec(dugme) {
+  const serit = dugme.closest('.tanisma-serit');
+  const pano = ekran.querySelector('.tanisma-pano');
+  if (!serit || !pano) return;
+  const i = dugme.dataset.tanismaEser;
+  const img = pano.querySelector('img');
+  img.dataset.yedek = dugme.dataset.yedekBuyuk;
+  img.src = dugme.dataset.buyuk;
+  pano.dataset.tanismaEser = i;
+  pano.setAttribute('aria-label', `${dugme.dataset.baslik} — büyüt`);
+  ekran.querySelector('.tanisma-baslik-yazi').textContent = dugme.dataset.baslik;
+  const sira = ekran.querySelector('.tanisma-sira');
+  if (sira) sira.textContent = `${Number(i) + 1} / ${serit.children.length}`;
+  for (const b of serit.children) b.setAttribute('aria-pressed', String(b === dugme));
+  pano.classList.remove('degisti');
+  void pano.offsetWidth;
+  pano.classList.add('degisti');
+}
+
 // Tanışma ekranı: sanatçının en bilinen 3 eseri ve "Nasıl tanırım?"
 // sayac: sağ üstteki yazı; not: alttaki açıklama; dugme: ileri düğmesinin HTML'i
 function tanismaCiz(o, s, eserler, { sayac, not, dugme, etiketYazi = 'Yeni sanatçı · önce tanış' }) {
@@ -683,22 +747,15 @@ function tanismaCiz(o, s, eserler, { sayac, not, dugme, etiketYazi = 'Yeni sanat
       <span data-test="sayac">${sayac}</span>
     </header>
     <section class="tanisma" data-test="tanisma">
-      ${etiket(etiketYazi, { vurgu: true })}
-      ${isimHtml(s, { etiketAdi: 'h2', sinif: 'tanisma-ad', ek: ' tabindex="-1"' })}
-      <p class="meta">${kacis(yillarYaz(s))} · ${kacis(s.akim)}</p>
-      ${
-        eserler.length
-          ? `<div class="tanisma-eserler">${eserler
-              .map((e, i) => {
-                const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
-                return `<button class="tanisma-eser" type="button" data-tanisma-eser="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt"><img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}"></button>`;
-              })
-              .join('')}</div>`
-          : ''
-      }
-      ${ipucu ? `<p class="okuma tanisma-not">${kacis(ipucu)}</p>` : ''}
-      <p class="kucuk ikincil">${not}</p>
-      ${dugme}
+      <div class="tanisma-kartel">
+        ${etiket(etiketYazi, { vurgu: true })}
+        ${isimHtml(s, { etiketAdi: 'h2', sinif: 'tanisma-ad', ek: ' tabindex="-1"' })}
+        <p class="meta">${kacis(yillarYaz(s))} · ${kacis(s.akim)}</p>
+      </div>
+      ${eserler.length ? tanismaVitrin(eserler) : ''}
+      ${ipucu ? `<div class="tanisma-ipucu"><h3 class="tanisma-ipucu-baslik">Nasıl tanırım?</h3><p class="okuma tanisma-not">${kacis(ipucu)}</p></div>` : ''}
+      <p class="kucuk ikincil tanisma-sonra">${not}</p>
+      <div class="tanisma-alt">${dugme}</div>
     </section>`,
     'yeni-kart',
   );
@@ -716,7 +773,7 @@ function tanismaGoster(o) {
   tanismaCiz(o, s, eserler, {
     sayac: `${Math.min(ot.konum + 1, ot.toplam)} / ${ot.toplam}`,
     not: 'Birazdan bu sanatçının burada görmediğin bir eseri sorulacak.',
-    dugme: '<button class="dugme vurgu tanisma-gec" type="button" data-tanisma-gec>Tanıdım, soruya geç →</button>',
+    dugme: gecDugme({ ozellik: 'data-tanisma-gec', ust: 'Tanıdım', ana: 'Soruya geç' }),
   });
 }
 
@@ -751,10 +808,51 @@ async function konuTanismaGoster(o) {
       : bolum
         ? 'Sonra bu bölümün öbür sanatçısı geliyor.'
         : 'Sonra bu konunun öbür yeni sanatçısı geliyor.',
-    dugme: `<button class="dugme vurgu tanisma-gec" type="button" data-konu-tanisma-gec data-test="konu-tanisma-gec">${
-      son ? (bolum && !o.oturum.toplam ? 'Haritaya dön →' : bolum ? `${BOLUM_YONELME[tanSv] || 'Kolay’a'} başla →` : 'Tura başla →') : 'Sonraki sanatçı →'
-    }</button>`,
+    dugme: gecDugme({
+      ozellik: 'data-konu-tanisma-gec data-test="konu-tanisma-gec"',
+      ust: son ? (bolum && !o.oturum.toplam ? 'Tanıtım bitti' : 'Hazırsan') : 'Sıradaki sanatçı',
+      ana: son
+        ? bolum && !o.oturum.toplam
+          ? 'Haritaya dön'
+          : bolum
+            ? `${BOLUM_YONELME[tanSv] || 'Kolay’a'} başla`
+            : 'Tura başla'
+        : d.harita.get(t.sira[t.konum + 1])?.ad || 'Sonraki sanatçı',
+      adim: t.konum,
+      toplam: t.sira.length,
+      geri: t.gecmis && t.gecmis.length ? d.harita.get(t.sira[t.gecmis[t.gecmis.length - 1]])?.ad || 'Önceki sanatçı' : '',
+    }),
   });
+}
+
+// İleri düğmesi: müze kartelası gibi; üstte küçük yön yazısı, altta sıradaki adım, sağda dönen mühürlü ok.
+// toplam verilirse üstünde tanışma adımlarını gösteren çentikler çıkar; geri verilirse solda geri düğmesi.
+function gecDugme({ ozellik, ust, ana, adim = 0, toplam = 0, geri = '' }) {
+  const centik =
+    toplam > 1
+      ? `<span class="gec-centikler" aria-hidden="true">${Array.from({ length: toplam }, (_, i) => `<i class="${i < adim ? 'gecti' : i === adim ? 'simdi' : ''}"></i>`).join('')}</span>`
+      : '';
+  const geriDugme = geri
+    ? `<button class="tanisma-geri" type="button" data-konu-tanisma-geri data-test="konu-tanisma-geri" aria-label="Önceki sanatçı: ${kacis(geri)}">${ikon('geri', 20, 1.6)}</button>`
+    : '';
+  return `${centik}<div class="gec-satir">${geriDugme}<button class="tanisma-gec" type="button" ${ozellik}>
+    <span class="gec-dalga" aria-hidden="true"></span>
+    <span class="gec-parilti" aria-hidden="true"></span>
+    <span class="gec-yazi"><span class="gec-ust">${kacis(ust)}</span><span class="gec-ana">${kacis(ana)}</span></span>
+    <span class="gec-ok" aria-hidden="true"><span class="gec-halka"></span>${ikon('ileri', 20, 1.6)}</span>
+  </button></div>`;
+}
+
+// Basınca kartın üstüne basılan noktadan mürekkep yayılır, ok fırlar; sonra adım değişir.
+function gecAnimasyonu(e, btn, sonra) {
+  if (btn.classList.contains('gidiyor')) return;
+  const r = btn.getBoundingClientRect();
+  const klavye = e.detail === 0;
+  btn.style.setProperty('--x', `${klavye ? r.width - 32 : e.clientX - r.left}px`);
+  btn.style.setProperty('--y', `${klavye ? r.height / 2 : e.clientY - r.top}px`);
+  btn.classList.add('gidiyor');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return sonra();
+  setTimeout(sonra, 340);
 }
 
 // Cevap yaprağı (D3): eser ve kalan iki seçenek yaprağın üstünde, kaydırmadan görünür.
@@ -1131,6 +1229,7 @@ function kartiBitir(o, dogruMu) {
   if (o.bolumSay && o.oturum.simdiki && !o.oturum.simdiki.tekrar) {
     o.bolumSay.toplam++;
     if (dogruMu) o.bolumSay.dogru++;
+    sergiyeEkle(o, dogruMu);
   }
   o.oturum.isle(dogruMu);
   gunlukGuncelle(d.ilerleme, bugun()).kart++;
@@ -1153,7 +1252,7 @@ function sanatciCevapla(o, deger) {
   const kayit = seviyeKaydi(d.ilerleme, akim);
   // Ö9: ısınma için seçilen alt seviyedeki cevap dönemin penceresine yazılmaz
   if (o.kip === 'bolum') k.seviyeSonuc = { akim, bolum: o.akim };
-  else if ((o.seviye !== null && o.seviye !== undefined && !pencereyeYazilirMi(kayit, k.seviye)))
+  else if (o.seviye !== null && o.seviye !== undefined && !pencereyeYazilirMi(kayit, k.seviye))
     k.seviyeSonuc = { akim, isinma: true, once: kayit.s, sonra: kayit.s, gecti: false };
   else k.seviyeSonuc = { akim, ...seviyeIsle(d.ilerleme, akim, bilmiyor ? 'bilmiyorum' : dogru) };
   if (k.seviyeSonuc.gecti) (o.gecenler ||= []).push({ akim, seviye: k.seviyeSonuc.sonra });
@@ -1176,6 +1275,18 @@ function akimCevapla(o, deger) {
   kartGoster(o);
 }
 
+function sergiyeEkle(o, dogruMu) {
+  const k = o.kart;
+  const g = k.eser && (secilenGorsel(k.eser, kotuler()) || k.eser.gorseller?.[0]);
+  if (!g) return;
+  (o.sergi ||= []).push({
+    g: gorselUrl(g, 240),
+    y: gorselYedek(g),
+    sanatci: d.harita.get(k.id)?.ad || '',
+    dogru: dogruMu,
+  });
+}
+
 function bolumOzeti(o) {
   const { id, sv, b } = bolumBilgi(o.akim);
   if (sv === 'tanitim') {
@@ -1196,20 +1307,105 @@ function bolumOzeti(o) {
         ? 'Kolay’ı geçtin: Orta açıldı.'
         : 'Zor’u da geçtin: bu bölümü ustaca bitirdin.'
     : `Geçmek için %${Math.round(BOLUM_GECME * 100)} gerekiyor. Yanlış yaptıkların daha sık karşına çıkacak.`;
-  ciz(`${ust(kipKisa(o.kip, o.akim), '#/harita', { ustEtiket: r.gecti ? 'Geçtin' : 'Bir daha dene' })}
-    <div class="ozet" data-test="bolum-ozet" data-gecti="${r.gecti}">
-      ${etiket('Sonuç', { vurgu: true })}
-      <b class="ad">%${yuzde}</b>
-      <span class="meta">${o.bolumSay.dogru} / ${o.bolumSay.toplam} doğru · ${kacis(b ? bolumAdi(b) : '')}</span>
-      <span class="harita-yildiz ozet-yildiz" aria-label="${r.yildizSonra} / 3 yıldız">${[0, 1, 2].map((i) => `<i class="${i < r.yildizSonra ? 'dolu' : ''}">★</i>`).join('')}</span>
-      <p class="okuma italik">${metin}</p>
-    </div>
-    <div class="menu">
-      ${r.gecti && sonraki ? `<a class="dugme vurgu" href="#/pekistir/bolum/${id}/${sonraki}" data-test="bolum-sonraki">${BOLUM_YONELME[sonraki]} geç</a>` : ''}
-      ${r.gecti ? '' : `<button class="dugme vurgu" type="button" data-yeni-tur data-test="bolum-tekrar">Tekrar dene</button>`}
-      <a class="dugme" href="#/harita" data-test="bolum-harita">Haritaya dön</a>
+  const yeniAcilan = r.gecti ? sonraki : null;
+  const SIRA = ['kolay', 'orta', 'zor'];
+  const ROMA = ['I', 'II', 'III'];
+  const buradaI = Math.max(0, SIRA.indexOf(sv));
+  const hedefI = yeniAcilan ? SIRA.indexOf(yeniAcilan) : buradaI;
+  const duraklar = SIRA.map((x, i) => {
+    const durum = i < r.yildizSonra ? 'gecti' : x === yeniAcilan ? 'acildi' : 'kilitli';
+    const durumAd = durum === 'gecti' ? 'geçildi' : durum === 'acildi' ? 'yeni açıldı' : 'kilitli';
+    const burada = i === buradaI;
+    const alt = burada ? 'Buradasın' : durum === 'acildi' ? 'Açıldı' : durum === 'gecti' ? 'Geçildi' : 'Kapalı';
+    return `<li class="durak ${durum}${burada ? ' burada' : ''}" style="--i:${i}" aria-label="${BOLUM_SV_AD[x]} salonu: ${durumAd}${burada ? ', buradasın' : ''}">
+        <span class="durak-nokta" aria-hidden="true">${durum === 'kilitli' ? ikon('kilit', 11, 1.8) : ''}</span>
+        <b aria-hidden="true">${ROMA[i]}</b>
+        <span class="durak-ad" aria-hidden="true">${BOLUM_SV_AD[x]}</span>
+        <small aria-hidden="true">${alt}</small>
+      </li>`;
+  }).join('');
+  const etiket = b ? bolumAdi(b) : kipKisa(o.kip, o.akim);
+  const yanlisSay = o.bolumSay.toplam - o.bolumSay.dogru;
+  const gecis = (yazi, ad) =>
+    `<span class="gecis-yazi"><small>${yazi}</small><b>${ad}</b></span>
+     <span class="gecis-ok" aria-hidden="true">${ikon('ileri', 20, 1.7)}</span>`;
+  const eserler = o.sergi || [];
+  const izSirasi = eserler.length ? eserler.map((e) => !!e.dogru) : Array.from({ length: o.bolumSay.toplam }, (_, i) => i < o.bolumSay.dogru);
+  const izler = izSirasi.map((ok, i) => `<span class="skor-iz${ok ? ' dogru' : ''}" style="--i:${i}"></span>`).join('');
+  const hedefYuzde = Math.round(BOLUM_GECME * 100);
+  const duvar = eserler
+    .map((e, i) => {
+      const egim = e.dogru ? ((i * 37) % 5) - 2 : i % 2 ? 7 : -8;
+      return `<li class="asi${e.dogru ? '' : ' egri'}" style="--i:${i};--egim:${egim * 0.5}deg;--ip:${10 + ((i * 13) % 4) * 6}px" aria-label="${kacis(e.sanatci)}: ${e.dogru ? 'tanıdın' : 'tanıyamadın'}">
+        <span class="asi-ip" aria-hidden="true"></span>
+        <span class="asi-cerceve"><img decoding="async" loading="lazy" alt="" src="${kacis(e.g)}" data-yedek="${kacis(e.y)}"></span>
+        ${e.dogru ? '' : `<span class="asi-pul" aria-hidden="true">?</span>`}
+      </li>`;
+    })
+    .join('');
+  ciz(`${ust(b ? bolumAdi(b) : kipKisa(o.kip, o.akim), '#/harita', { ustEtiket: `${r.gecti ? 'Sergi açıldı' : 'Sergi hazırlanıyor'} · ${BOLUM_SV_AD[sv] || ''}` })}
+    <div class="ozet bolum-sonuc" data-test="bolum-ozet" data-gecti="${r.gecti}">
+      ${
+        eserler.length
+          ? `<section class="sergi-duvar" aria-label="Bu bölümde karşına çıkan eserler">
+        <ul class="sergi-asilar" style="--n:${eserler.length}">${duvar}</ul>
+        <span class="sergi-isik" aria-hidden="true"></span>
+      </section>`
+          : ''
+      }
+      <div class="sonuc-alt" style="--gecikme:${0.5 + eserler.length * 0.12}s">
+        <section class="skor" aria-label="Sonuç" style="--oran:${yuzde}%;--hedef:${hedefYuzde}%">
+          <p class="skor-ust"><b>Senin gözün</b> · ${kacis(etiket)} · ${BOLUM_SV_AD[sv] || ''}</p>
+          <p class="skor-yuzde"><i class="ad">%${yuzde}</i><span class="skor-durum">${r.gecti ? 'Geçti' : 'Az kaldı'}</span></p>
+          <div class="skor-cizgi" aria-hidden="true">
+            <span class="skor-dolu"></span>
+            <span class="skor-hedef"><small>Hedef %${hedefYuzde}</small></span>
+          </div>
+          <div class="skor-izler" role="img" aria-label="${o.bolumSay.dogru} doğru, ${yanlisSay} yanlış, ${o.bolumSay.toplam} eser">${izler}</div>
+          <p class="skor-sayi" aria-hidden="true"><span><b>${o.bolumSay.dogru}</b> doğru</span><span><b>${yanlisSay}</b> yanlış</span><span><b>${o.bolumSay.toplam}</b> eser</span></p>
+          <p class="skor-not">${metin}</p>
+        </section>
+        <section class="yol" aria-label="Salonlar" style="--bas:${buradaI};--son:${hedefI}">
+          <ol class="yol-duraklar">${duraklar}</ol>
+          <span class="yol-isik" aria-hidden="true"></span>
+        </section>
+        <div class="menu sonuc-menu">
+          ${r.gecti && sonraki ? `<a class="gecis" href="#/pekistir/bolum/${id}/${sonraki}" data-gecis data-test="bolum-sonraki">${gecis(`${BOLUM_SV_AD[sonraki]} salonu açıldı`, `${BOLUM_SV_AD[sonraki]} salonuna geç`)}</a>` : ''}
+          ${r.gecti ? '' : `<button class="gecis" type="button" data-gecis data-yeni-tur data-test="bolum-tekrar">${gecis('Eserler yeniden asılsın', 'Tekrar dene')}</button>`}
+          <a class="sonuc-harita" href="#/harita" data-test="bolum-harita">${ikon('harita', 16, 1.6)}<span>Haritaya dön</span></a>
+        </div>
+      </div>
     </div>
     ${r.yeniGecti ? yaldizYapraklari() : ''}`);
+  yuzdeSayarakYaz(ekran.querySelector('.bolum-sonuc .ad'), yuzde);
+  for (const el of ekran.querySelectorAll('[data-gecis]')) el.addEventListener('click', gecisiAk);
+}
+
+function gecisiAk(e) {
+  const el = e.currentTarget;
+  if (el.dataset.akti || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  e.preventDefault();
+  e.stopPropagation();
+  if (el.classList.contains('akiyor')) return;
+  el.classList.add('akiyor');
+  setTimeout(() => {
+    if (!el.isConnected) return;
+    el.dataset.akti = '1';
+    el.click();
+  }, 520);
+}
+
+function yuzdeSayarakYaz(el, hedef) {
+  if (!el || !hedef || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const bas = performance.now() + 350;
+  const adim = (t) => {
+    if (!el.isConnected) return;
+    const x = Math.max(0, Math.min(1, (t - bas) / 900));
+    el.textContent = `%${Math.round(hedef * (1 - (1 - x) ** 3))}`;
+    if (x < 1) requestAnimationFrame(adim);
+  };
+  el.textContent = '%0';
+  requestAnimationFrame(adim);
 }
 
 function ozetCiz() {
@@ -1378,21 +1574,41 @@ export function olaylariBagla() {
       seviyeSec(o, Number(sv.dataset.seviyeSec));
       return;
     }
-    if (e.target.closest('[data-konu-tanisma-gec]') && o && o.tanisma) {
+    const kg = e.target.closest('[data-konu-tanisma-gec]');
+    if (kg && o && o.tanisma) {
+      gecAnimasyonu(e, kg, () => {
+        if (d.oturum !== o) return;
+        const t = o.tanisma;
+        o.tanismaGorulen[t.sira[t.konum]] = t.gosterilen || [];
+        t.gecmis = [...(t.gecmis || []), t.konum];
+        t.konum++;
+        kartCiz();
+      });
+      return;
+    }
+    if (e.target.closest('[data-konu-tanisma-geri]') && o && o.tanisma && o.tanisma.gecmis && o.tanisma.gecmis.length) {
       const t = o.tanisma;
-      o.tanismaGorulen[t.sira[t.konum]] = t.gosterilen || [];
-      t.konum++;
+      t.konum = t.gecmis[t.gecmis.length - 1];
+      t.gecmis = t.gecmis.slice(0, -1);
       kartCiz();
       return;
     }
-    if (e.target.closest('[data-tanisma-gec]') && o && o.kart) {
-      o.kart.tanisma = false;
-      kartGoster(o);
-      ekran.querySelector('.soru-baslik h2').focus({ preventScroll: true });
+    const tg = e.target.closest('[data-tanisma-gec]');
+    if (tg && o && o.kart) {
+      gecAnimasyonu(e, tg, () => {
+        if (d.oturum !== o || !o.kart) return;
+        o.kart.tanisma = false;
+        kartGoster(o);
+        ekran.querySelector('.soru-baslik h2').focus({ preventScroll: true });
+      });
       return;
     }
     const te = e.target.closest('[data-tanisma-eser]');
     if (te && o && o.tanismaEserleri) {
+      if (te.classList.contains('tanisma-eser') && te.getAttribute('aria-pressed') === 'false') {
+        tanismaVitrinSec(te);
+        return;
+      }
       const id = o.tanisma && o.tanisma.konum < o.tanisma.sira.length ? o.tanisma.sira[o.tanisma.konum] : o.kart && o.kart.id;
       goruntuleyiciAc({ eserler: o.tanismaEserleri, baslangic: Number(te.dataset.tanismaEser), notu: notuIcin(id), ...gorselTercihi() });
       return;
