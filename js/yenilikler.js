@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.37.0', metin: 'Bölüm sonucunda sergi duvarındaki tablolar telefonu sağa sola çevirince ipinden sallanır, bırakınca durulur (Ayarlar’daki hareket seçimine uyar). Sanatçı tanıtımı ve bölüm sonucu yenilendi (v0).' },
   { surum: '1.36.0', metin: 'Akım sayfaları yenilendi (v0): en önemliler üstte, ipuçlarının yanında eserden yakın plan ayrıntı, her dönemin kendi tekniğiyle kurulan “Bu dönemi pekiştir” düğmesi (vitray, mozaik, chiaroscuro…). Haritada dönem geçişinde dönemin renginde perde; İlerleme’de fırça izli “İşlendi yap”.' },
   { surum: '1.35.0', metin: 'Haritada her dönem geçişinde ekranın ortasında bölüm kartı: altın çizgiler açılır, yüzyıl ve dönemin adı belirip silinir. Bugün’de yazılar artık kutusuz, doğrudan tablonun üstünde ve tam açık.' },
   { surum: '1.34.0', metin: 'Bugün’de telefonu sağa sola çevirince, öne arkaya eğince günün tablosu hafifçe döner, ışık üstünden kayar, sanatçının adı katman katman, gölgesiyle derinlikle kayar. Ayarlar’dan kapatılabilir; iPhone ilk dokunuşta hareket izni sorar.' },

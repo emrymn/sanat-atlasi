@@ -125,6 +125,8 @@ let jiroskop = false; // dönüş hızı geldiyse açı yedeği kullanılmaz
 // açı yedeği
 let taban = null;
 let suzulmus = null;
+// isteğe bağlı: hedef eğim her değişince çağrılır (bölüm sonucundaki asılı tablolar kendi sarkaç fiziğini sürer)
+let dinleyici = null;
 
 const IOS = iosMu();
 function hareket(e) {
@@ -136,6 +138,7 @@ function hareket(e) {
   sonZaman = simdi;
   donus = donusIzle(donus, r, dt);
   hedef = donustenEgim(donus);
+  if (dinleyici) dinleyici(hedef);
   if (!kare) kare = requestAnimationFrame(ciz);
 }
 
@@ -145,6 +148,7 @@ function yon(e) {
   suzulmus = tabanIzle(suzulmus, on, yan, SUZGEC);
   taban = tabanIzle(taban, suzulmus.beta, suzulmus.gamma);
   hedef = egimHesapla(suzulmus.beta, suzulmus.gamma, taban);
+  if (dinleyici) dinleyici(hedef);
   if (!kare) kare = requestAnimationFrame(ciz);
 }
 
@@ -166,10 +170,12 @@ function ciz() {
 }
 
 // el: tablonun kutusu (içinde [data-egim-dugme] "Hareketi aç" düğmesi). acik: ayardaki seçim.
-export function egimBaslat(el, acik) {
+// degisince: isteğe bağlı, hedef eğim ({ x, y }, -1…1) her değiştiğinde çağrılır.
+export function egimBaslat(el, acik, degisince = null) {
   egimDurdur();
   if (!el || !acik || !egimVar() || azHareket() || izinDurumu === false) return;
   kok = el;
+  dinleyici = degisince;
   const dinle = () => {
     if (kok !== el) return;
     el.classList.remove('egim-izinsiz');
@@ -199,6 +205,7 @@ export function egimDurdur() {
   kare = 0;
   if (kok) kok.classList.remove('egimli', 'egim-izinsiz');
   kok = null;
+  dinleyici = null;
   hedef = { x: 0, y: 0 };
   anlik = { x: 0, y: 0 };
   yazi = { x: 0, y: 0 };

@@ -1156,3 +1156,11 @@ Emre v0'daki fırça izli "İşlendi yap" için alternatif istedi; tasarım tuva
 ## İş 38 · v0 değişiklikleri telefona gelmiyordu: sürüm artırıldı (2026-10-26, v1.36.3)
 
 Emre: "son güncelleme uygulamaya gelmiyor". Sebep: PR #60 (v0: sanatçı tanıtımı, bölüm sonucu) Pages'e doğru yayınlandı (pages build #60 başarılı) ama `sw.js` `SURUM` 1.36.2'de kalmıştı (v0 sürümü artırmamış; İş 35'teki aynı durum). Uygulama kabuğu önbellekten (cache-first, `atlas-kabuk-<SURUM>`) verildiği için sürüm değişmeyince telefon yeni css/js'i hiç çekmez. 1.36.3'e çıkarıldı (`sw.js`, `js/surum.js`, sürüm testleri). Kural: kabuk dosyalarında (css/js/html/data) her değişiklik sürüm artırmalı; v0 dalına her değişiklikten sonra "sürümü artır" denmeli.
+
+## İş 39 · Bölüm sonucunda asılı tablolar eğimle sallanır (2026-10-26, v1.37.0)
+
+Emre (ekran görüntüsüyle): "sallanma efektini bu üstteki resimler için de yap, sağa sola gitsin telefonu eğince". Bölüm sonucunun sergi duvarındaki tablolar (v0'ın PR #60'ı) asılırken bir kez sallanıyordu.
+1. `js/sallanma.js`: her tablo yaylı bir sarkaç. Telefon sağa dönünce hedef açı −9°'ye kadar (yerçekimi yerinde kalır, tablo ekrana göre ters yöne salınır); hedef değişince tablo hedefi aşar, birkaç kez gidip gelerek durulur (sürtünme 2,4). Sertlik ip boyuyla ters orantılı (`ipSertligi`): uzun ipli tablo daha ağır sallanır, tablolar aynı anda değil, hafif farklı ritimde salınır. Durulunca döngü durur (pil).
+2. Algılayıcı, izin ve "Hareketi aç" Bugün'dekiyle aynı (`egimBaslat`'a isteğe bağlı `degisince` geri çağırması eklendi). iOS izni hatırlamıyorsa duvarın sağ üstünde "Hareketi aç" düğmesi; duvar ona yer açar. Ayarlar'daki hareket anahtarına ve hareket azaltmaya uyar.
+3. Salınım `transform: rotate(var(--sal))` olarak tablonun asılış eğimine (`rotate: --egim`) eklenir; asılış animasyonu `rotate`'i tuttuğu için ayrı özellik. Dönme noktası çivi (ipin üstü).
+4. Test: `tests/unit/sallanma.test.mjs` (aşma, durulma, ortaya dönüş, ip boyu, büyük adımda kararlılık), `tests/e2e/harita.spec.js` (jiroskop olayıyla tablolar sola salınır). Sürüm 1.37.0 + Yenilikler satırı.
