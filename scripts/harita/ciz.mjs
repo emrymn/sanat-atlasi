@@ -79,7 +79,7 @@ function istemKur(temel, is, dolgu, tablolar) {
   if (is.ref) {
     const liste = tablolar.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for level ${t.seviye}).`).join('\n');
     metin +=
-      `\n\nImage 1 is the layout sketch. The other images are the original paintings for the hidden details; use them as references so each hidden detail is a recognisable recreation of the real composition (same figures, poses and colours), painted small inside the landscape. Never paste them as framed pictures.\n${liste}`;
+      `\n\nImage 1 is the layout sketch; its road, side paths and plazas stay exactly in place no matter how many paintings are attached. The other images are the original paintings for the hidden details; use them as references so each hidden detail is a recognisable recreation of the real composition (same figures, poses and colours), painted small inside the landscape. Never paste them as framed pictures.\n${liste}`;
   }
   return metin;
 }
