@@ -1152,3 +1152,7 @@ Emre v0'daki fırça izli "İşlendi yap" için alternatif istedi; tasarım tuva
 1. Düğme boşken ince vurgu çerçeveli bir hap, solunda boş halka. Dokununca soldan sağa vurgu rengiyle dolar, halka tike döner, yazı "İşlendi" olur; 0,52 sn sonra konu işlenir ve sıradaki konu eskisi gibi kayarak gelir. Dolarken ikinci dokunuş yok sayılır. Hareket azaltma açıksa beklemeden işlenir.
 2. Renk sabit altın değil, uygulamanın o günkü vurgusu (`--vurgu-acik`, dolunca yazı `--vurgu-acik-yazi`): üç temada da okunur.
 3. Fırça darbesi kaldırıldı (`.firca-iz`, `.firca-yazi` ve onların `@keyframes firca-sur`/`firca-yazi` kuralları). İkinci `firca-sur` tanımı Günün tablosundaki altı çizili yazının aynı adlı animasyonunu eziyordu; o da düzeldi.
+
+## İş 38 · v0 değişiklikleri telefona gelmiyordu: sürüm artırıldı (2026-10-26, v1.36.3)
+
+Emre: "son güncelleme uygulamaya gelmiyor". Sebep: PR #60 (v0: sanatçı tanıtımı, bölüm sonucu) Pages'e doğru yayınlandı (pages build #60 başarılı) ama `sw.js` `SURUM` 1.36.2'de kalmıştı (v0 sürümü artırmamış; İş 35'teki aynı durum). Uygulama kabuğu önbellekten (cache-first, `atlas-kabuk-<SURUM>`) verildiği için sürüm değişmeyince telefon yeni css/js'i hiç çekmez. 1.36.3'e çıkarıldı (`sw.js`, `js/surum.js`, sürüm testleri). Kural: kabuk dosyalarında (css/js/html/data) her değişiklik sürüm artırmalı; v0 dalına her değişiklikten sonra "sürümü artır" denmeli.
