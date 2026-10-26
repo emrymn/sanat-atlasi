@@ -9,11 +9,12 @@ import json
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 PAY = 41  # kilitli alanın taslaktaki yoldan taşması (px, tek sayı): model yolu birkaç piksel kaydırabiliyor
 YUMUSAK = 14  # geri koyarken kenar yumuşatma (px)
 DAR = 7  # dar maskenin payı (px, tek sayı)
+SERIT_YOL = 5  # şerit maskesinde yolun kendisi (biraz payla) kilitli kalır
 ORTA = 21  # orta maske: GPT dar maskeyi yok saydı (Adım 14), geniş (41) yeşil şerit bıraktı (Adım 12)
 
 
@@ -46,6 +47,13 @@ def maske(donem, bicim):
     m4 = Image.new('RGBA', sk.size, (0, 0, 0, 0))
     m4.putalpha(yol.filter(ImageFilter.MaxFilter(ORTA)))
     m4.save(klasor / f'{donem}_iskelet{ek}_maske_orta.png')
+    # şerit (iki geçişin ikincisi): yalnız yolun iki yanındaki bant açık (geniş kilit ile yolun kendisi arası), geri
+    # kalan her yer kilitli. Geniş maskeyle çizilen resimde kalan yeşil şeridi GPT çevreyle kaynaştırsın diye.
+    yol_dar = yol.filter(ImageFilter.MaxFilter(SERIT_YOL))
+    bant = ImageChops.subtract(kilit, yol_dar)
+    m5 = Image.new('RGBA', sk.size, (0, 0, 0, 0))
+    m5.putalpha(ImageChops.invert(bant))
+    m5.save(klasor / f'{donem}_iskelet{ek}_maske_serit.png')
 
 
 if __name__ == '__main__':

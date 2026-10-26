@@ -47,6 +47,9 @@ const ISLER = [
   // Dar maske: yol, kol ve meydanlar yolun tam kenarına kadar kilitli; açık renkler, sade istem (Emre'nin seçimi)
   { ad: 'gpt-image-2-maske-dar', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: 'dar', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
   { ad: 'gpt-image-2-maske-orta', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: 'orta', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
+  // İki geçiş (Emre'nin seçimi): önce geniş maske (yer kesin tutar), sonra yalnız yol kenarındaki şerit açık maske
+  // (sonuncu gpt-image-2-maske çıktısını düzenler; tablo gitmez). İkisi aynı komutta sırayla: --yalniz gpt-image-2-maske,gpt-image-2-serit
+  { ad: 'gpt-image-2-serit', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-maske', maske: 'serit', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.18 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -168,9 +171,10 @@ async function main() {
   const sablonlar = {
     duzenle: await readFile(path.join(BURASI, 'istemler', 'duzenle.txt'), 'utf8'),
     maske: await readFile(path.join(BURASI, 'istemler', 'maske.txt'), 'utf8'),
+    serit: await readFile(path.join(BURASI, 'istemler', 'serit.txt'), 'utf8'),
   };
   const duzenleIstemi = (is, secilen) =>
-    sablonlar[is.maske ? 'maske' : 'duzenle']
+    sablonlar[is.maske === 'serit' ? 'serit' : is.maske ? 'maske' : 'duzenle']
       .trim()
       .replace(
         '{{KILIT}}',
@@ -178,7 +182,7 @@ async function main() {
           ? 'The mask locks only its 7 round plazas: leave them exactly as they are. Repaint everything else, including the main road and the side paths, which stay where they are in Image 1 and lead to the plazas.'
           : 'The mask locks its road, side paths and 7 round plazas: leave them exactly as they are. Repaint everything else around them as one continuous landscape.',
       ).replace('{{SEVIYELER}}', seviyeler) +
-    `\n\nImage 1 is the map to edit. The other images are the original paintings for the hidden details; use them only as references.\n` +
+    (secilen.length ? `\n\nImage 1 is the map to edit. The other images are the original paintings for the hidden details; use them only as references.\n` : '') +
     secilen.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for level ${t.seviye}).`).join('\n');
   const kacTablo = (is) => (is.ref ? Math.min(tablolar.length, is.refSiniri - 1) : 0);
 
@@ -201,7 +205,10 @@ async function main() {
     const n = kacTablo(is);
     let resim, kutu, dolgu, istem, tur;
     if (is.duzenle) {
-      resim = await readFile(path.join(klasor, `${is.duzenle}-${bicim}.jpg`)); // 1024×3072, kesilmiş
+      // kaynak çizimin en son sürümü (-v2, -v3… varsa sonuncusu)
+      let kaynak = `${is.duzenle}-${bicim}`;
+      for (let v = 2; existsSync(path.join(klasor, `${is.duzenle}-${bicim}-v${v}.jpg`)); v++) kaynak = `${is.duzenle}-${bicim}-v${v}`;
+      resim = await readFile(path.join(klasor, `${kaynak}.jpg`)); // 1024×3072, kesilmiş
       ({ kutu, dolgu } = { kutu: { x: 0, y: 0, w: 1, h: 1 }, dolgu: false });
       istem = duzenleIstemi(is, tablolar.slice(0, n));
       tur = 'image/jpeg';

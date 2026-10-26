@@ -23,7 +23,7 @@ const ISLER = {
     ornekYolcu: '../../gorseller/harita/yolcu_ronesans_gunduz_3x.webp',
     isler: [
       { ad: 'sembol-1', metin: "A small painted model of Brunelleschi's dome of Florence Cathedral (terracotta tiles, white ribs, lantern on top) standing on a small round paved stone base." },
-      { ad: 'sembol-2', metin: 'A round convex mirror in a carved wooden frame with small painted roundels, as in Van Eyck’s Arnolfini Portrait, standing upright on a small wooden stand on a small round paved stone base.' },
+      { ad: 'sembol-2', metin: 'A small pair of brass balance scales with two shallow pans and a few gold coins, as on the table in Quentin Metsys’s The Moneylender and His Wife, standing on a small round paved stone base.' }, // Arnolfini aynası yerine (Emre)
       { ad: 'sembol-3', metin: 'A celestial globe on a brass stand, as on the shelf in Holbein’s The Ambassadors, standing on a small round paved stone base.' },
       { ad: 'sembol-4', metin: 'An upright bronze ring with a square inside it, the circle and square of Leonardo’s Vitruvian Man (no human figure), standing on a small round paved stone base.' },
       { ad: 'sembol-5', metin: 'A Venetian striped mooring pole (blue and white spiral stripes) with a small iron lantern hanging from it, standing on a small round paved stone base.' },

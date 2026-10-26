@@ -1,5 +1,5 @@
 {
-  "aciklama": "Rönesans gizli eserleri: Emre 17'den 9'a, sonra 7'ye indirdi (seviye başına 1; 'çok kalabalık', 'gözü yoruyor'). Hepsi depodaki yerel kopyalar. 9 tablo + taslak = GPT Image 2'nin 10 görsel sınırı. cikarilan: önceki listeden çıkanlar (Venüs GPT reddettiği için önceden çıkmıştı). kirp: OpenAI çıplak figürler yüzünden (Bosch, Âdem) isteği reddetti; bu iki tablodan yalnız gizli eserin parçası gider (piksel kutusu, 1280 px'lik yerel kopyada).",
+  "aciklama": "Rönesans gizli eserleri: Emre 17'den 9'a, sonra 7'ye indirdi (seviye başına 1; 'çok kalabalık', 'gözü yoruyor'). Hepsi depodaki yerel kopyalar. 9 tablo + taslak = GPT Image 2'nin 10 görsel sınırı. cikarilan: önceki listeden çıkanlar (Venüs GPT reddettiği için önceden çıkmıştı). kirp: OpenAI çıplak figürler yüzünden (Bosch, Âdem) isteği reddetti; bu iki tablodan yalnız gizli eserin parçası gider (piksel kutusu, 1280 px'lik yerel kopyada). Arnolfini çıktı (Emre: 'garip durmuş, yıkık evin dışından'); yerine Metsys'in Sarraf ve Karısı.",
   "tablolar": [
     {
       "oncelik": 1,
@@ -12,10 +12,10 @@
     {
       "oncelik": 2,
       "seviye": 2,
-      "sanatci": "Jan van Eyck",
-      "eser": "The Arnolfini Portrait",
-      "dosya": "gorseller/b/84d3c15e96896efe.jpg",
-      "kaynak": "commons:Van_Eyck_-_Arnolfini_Portrait.jpg"
+      "sanatci": "Quentin Metsys",
+      "eser": "The Moneylender and His Wife",
+      "dosya": "gorseller/b/66b6e1b09c3c3978.jpg",
+      "kaynak": "commons:Massysm_Quentin_—_The_Moneylender_and_his_Wife_—_1514.jpg"
     },
     {
       "oncelik": 3,
@@ -65,6 +65,14 @@
     }
   ],
   "cikarilan": [
+    {
+      "oncelik": 2,
+      "seviye": 2,
+      "sanatci": "Jan van Eyck",
+      "eser": "The Arnolfini Portrait",
+      "dosya": "gorseller/b/84d3c15e96896efe.jpg",
+      "kaynak": "commons:Van_Eyck_-_Arnolfini_Portrait.jpg"
+    },
     {
       "oncelik": 4,
       "seviye": 3,
