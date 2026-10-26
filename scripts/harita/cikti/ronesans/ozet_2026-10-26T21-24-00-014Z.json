@@ -1,0 +1,173 @@
+[
+  {
+    "ad": "gpt-image-2-maske",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "duzenle": "nano-banana-pro-ref",
+    "maske": true,
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.2,
+    "iskelet": "cep",
+    "sure": 70,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [
+      "Dante and the Three Kingdoms",
+      "The Moneylender and His Wife",
+      "The Hunters in the Snow",
+      "The Creation of Adam (detail: the two reaching hands)",
+      "The Wedding at Cana",
+      "The Chess Game",
+      "View of Toledo"
+    ],
+    "istemOzeti": "340f8841cd",
+    "ek": {
+      "providerMetadata": {
+        "openai": {
+          "images": [
+            {
+              "created": 1793049778,
+              "size": "1024x3072",
+              "quality": "high",
+              "background": "opaque",
+              "outputFormat": "png",
+              "imageTokens": 6796,
+              "textTokens": 791
+            }
+          ]
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "openai/gpt-image-2",
+            "resolvedProvider": "openai",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: openai. Total execution order: openai(system)",
+            "canonicalSlug": "openai/gpt-image-2",
+            "finalProvider": "openai",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "openai/gpt-image-2",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "openai",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793049714881,
+                    "endTime": 1793049779808,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.176883",
+          "marketCost": "0.176883",
+          "surchargeCost": "0",
+          "gatewayCost": "0.176883",
+          "inferenceCost": "0.176883",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.176883",
+          "generationId": "gen_01M5X1ER2CT3FJFBEV7S8HB6H9"
+        }
+      },
+      "warnings": []
+    }
+  },
+  {
+    "ad": "gpt-image-2-serit",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "duzenle": "gpt-image-2-maske",
+    "maske": "serit",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": false,
+    "fiyat": 0.18,
+    "iskelet": "cep",
+    "sure": 57,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [],
+    "istemOzeti": "1a665b4953",
+    "ek": {
+      "providerMetadata": {
+        "openai": {
+          "images": [
+            {
+              "created": 1793049836,
+              "size": "1024x3072",
+              "quality": "high",
+              "background": "opaque",
+              "outputFormat": "png",
+              "imageTokens": 1452,
+              "textTokens": 115
+            }
+          ]
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "openai/gpt-image-2",
+            "resolvedProvider": "openai",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: openai. Total execution order: openai(system)",
+            "canonicalSlug": "openai/gpt-image-2",
+            "finalProvider": "openai",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "openai/gpt-image-2",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "openai",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793049783660,
+                    "endTime": 1793049837272,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.130751",
+          "marketCost": "0.130751",
+          "surchargeCost": "0",
+          "gatewayCost": "0.130751",
+          "inferenceCost": "0.130751",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.130751",
+          "generationId": "gen_01M5X1GV1DX4J13Z0H5CPMZ5N0"
+        }
+      },
+      "warnings": []
+    }
+  }
+]
