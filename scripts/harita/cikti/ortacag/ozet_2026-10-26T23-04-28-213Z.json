@@ -1,0 +1,89 @@
+[
+  {
+    "ad": "gpt-image-2-maske",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "duzenle": "nano-banana-pro-ref",
+    "maske": true,
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.2,
+    "iskelet": "cep",
+    "sure": 71,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [
+      "Lamentation",
+      "Christ's Entry into Jerusalem",
+      "Très Riches Heures, February (detail: the snowy farmyard)",
+      "Adoration of the Magi"
+    ],
+    "istemOzeti": "e29f924662",
+    "ek": {
+      "providerMetadata": {
+        "openai": {
+          "images": [
+            {
+              "created": 1793055863,
+              "size": "1024x3072",
+              "quality": "high",
+              "background": "opaque",
+              "outputFormat": "png",
+              "imageTokens": 4588,
+              "textTokens": 600
+            }
+          ]
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "openai/gpt-image-2",
+            "resolvedProvider": "openai",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: openai. Total execution order: openai(system)",
+            "canonicalSlug": "openai/gpt-image-2",
+            "finalProvider": "openai",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "openai/gpt-image-2",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "openai",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793055799048,
+                    "endTime": 1793055865152,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.158264",
+          "marketCost": "0.158264",
+          "surchargeCost": "0",
+          "gatewayCost": "0.158264",
+          "inferenceCost": "0.158264",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.158264",
+          "generationId": "gen_01M5X78DPCAGH6H3P86P5WNX40"
+        }
+      },
+      "warnings": []
+    }
+  }
+]
