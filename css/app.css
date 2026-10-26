@@ -1416,6 +1416,281 @@ img.kirik {
   font: 400 64px/1 var(--serif);
 }
 
+/* Bölüm sonucu: duvara asılan yaldız çerçeve, geçince köşeye basılan mühür, Kolay–Orta–Zor yolu */
+.bolum-sonuc {
+  margin-top: 28px;
+  gap: 26px;
+}
+.sonuc-cerceve {
+  position: relative;
+  margin: 0;
+  width: min(100%, 300px);
+  padding: 12px;
+  border-radius: 4px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.28), transparent 40%, rgba(0, 0, 0, 0.22) 75%, rgba(255, 255, 255, 0.14)),
+    var(--vurgu);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.25),
+    inset 0 0 0 5px rgba(0, 0, 0, 0.12),
+    0 22px 40px -18px rgba(0, 0, 0, 0.55);
+  transform-origin: 50% -40px;
+}
+.sonuc-ic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 26px 16px 22px;
+  background: var(--doku), var(--surface);
+  background-size: 6px 6px, auto;
+  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.25);
+}
+.sonuc-etiket {
+  font: 600 11px/1 var(--sans, inherit);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.bolum-sonuc .ad {
+  font: 400 76px/0.95 var(--serif);
+  color: var(--ink);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.sonuc-dogru {
+  color: var(--ink-2);
+  font-size: 15px;
+}
+.bolum-sonuc[data-gecti='false'] .sonuc-cerceve {
+  filter: saturate(0.25) brightness(0.85);
+}
+.bolum-sonuc[data-gecti='false'] .ad {
+  color: var(--ink-2);
+}
+
+.sonuc-muhur {
+  position: absolute;
+  right: -18px;
+  bottom: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 46% 54% 50% 50% / 52% 46% 54% 48%;
+  background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.22), transparent 45%), var(--vurgu-koyu);
+  color: var(--vurgu-acik);
+  box-shadow:
+    inset 0 0 0 5px rgba(0, 0, 0, 0.14),
+    inset 0 0 0 6px rgba(255, 255, 255, 0.18),
+    0 6px 14px -4px rgba(0, 0, 0, 0.5);
+  rotate: -14deg;
+}
+.sonuc-muhur .yildiz-sekil {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+.sonuc-muhur small {
+  font: 600 10px/1 var(--sans, inherit);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.sonuc-merdiven {
+  display: flex;
+  justify-content: space-between;
+  width: min(100%, 280px);
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.sonuc-merdiven::before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 18px;
+  right: 18px;
+  height: 1px;
+  background: repeating-linear-gradient(90deg, var(--ink-3) 0 4px, transparent 4px 8px);
+}
+.sonuc-merdiven li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.sonuc-merdiven .tas {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--ink-soluk);
+  font-size: 15px;
+}
+.sonuc-merdiven small {
+  font-size: 13px;
+  color: var(--ink-3);
+}
+.sonuc-merdiven .gecti .tas {
+  border-color: transparent;
+  background: var(--vurgu);
+  color: var(--vurgu-yazi);
+}
+.sonuc-merdiven .gecti small,
+.sonuc-merdiven .bu small {
+  color: var(--ink);
+}
+.sonuc-merdiven .bu small {
+  font-weight: 600;
+}
+.sonuc-merdiven .acildi .tas {
+  border: 1px solid var(--vurgu);
+  color: var(--vurgu);
+}
+.sonuc-merdiven .acildi small {
+  color: var(--ink-2);
+}
+.sonuc-metin {
+  margin: 0;
+  max-width: 30ch;
+  text-wrap: balance;
+}
+
+.sonuc-menu {
+  align-items: stretch;
+}
+.sonuc-ileri {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 56px;
+  overflow: hidden;
+}
+.sonuc-ileri svg {
+  transition: translate 0.25s ease;
+}
+.sonuc-ileri:active svg {
+  translate: 6px 0;
+}
+.sonuc-ileri::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, transparent 35%, rgba(255, 255, 255, 0.35) 50%, transparent 65%);
+  translate: -110% 0;
+  pointer-events: none;
+}
+.sonuc-ikincil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  color: var(--ink-2);
+  font-size: 15px;
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sonuc-cerceve {
+    animation: cerceve-asil 1.1s cubic-bezier(0.3, 1.4, 0.5, 1) both;
+  }
+  .sonuc-muhur {
+    animation: muhur-bas 0.45s 1.35s cubic-bezier(0.5, 0, 0.75, 0) both;
+  }
+  .bolum-sonuc[data-gecti='true'] .sonuc-ic {
+    animation: cerceve-sars 0.35s 1.8s ease-out;
+  }
+  .sonuc-merdiven::before {
+    animation: yol-ciz 0.7s 0.9s ease-out both;
+    transform-origin: left;
+  }
+  .sonuc-merdiven li {
+    animation: tas-gel 0.4s calc(1s + var(--i) * 0.15s) ease-out both;
+  }
+  .sonuc-merdiven .acildi .tas {
+    animation: tas-nabiz 1.8s 2.2s ease-in-out infinite;
+  }
+  .sonuc-metin,
+  .sonuc-menu {
+    animation: tas-gel 0.5s 1.9s ease-out both;
+  }
+  .sonuc-ileri::after {
+    animation: dugme-parilti 3.6s 2.6s ease-in-out infinite;
+  }
+}
+@keyframes cerceve-asil {
+  0% {
+    opacity: 0;
+    transform: translateY(-36px) rotate(-7deg);
+  }
+  45% {
+    opacity: 1;
+    transform: translateY(0) rotate(4deg);
+  }
+  70% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes muhur-bas {
+  0% {
+    opacity: 0;
+    scale: 2.6;
+    rotate: -40deg;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    rotate: -14deg;
+  }
+}
+@keyframes cerceve-sars {
+  30% {
+    transform: translate(1.5px, 2px);
+  }
+  60% {
+    transform: translate(-1px, -1px);
+  }
+}
+@keyframes yol-ciz {
+  from {
+    transform: scaleX(0);
+  }
+}
+@keyframes tas-gel {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@keyframes tas-nabiz {
+  50% {
+    box-shadow: 0 0 0 7px rgba(var(--vurgu-rgb), 0.18);
+  }
+}
+@keyframes dugme-parilti {
+  0%,
+  60% {
+    translate: -110% 0;
+  }
+  85%,
+  100% {
+    translate: 110% 0;
+  }
+}
+
 /* ---------- İlerleme ---------- */
 .ozet-satir {
   color: var(--ink-2);

@@ -1213,6 +1213,7 @@ function kartiBitir(o, dogruMu) {
   if (o.bolumSay && o.oturum.simdiki && !o.oturum.simdiki.tekrar) {
     o.bolumSay.toplam++;
     if (dogruMu) o.bolumSay.dogru++;
+    sergiyeEkle(o, dogruMu);
   }
   o.oturum.isle(dogruMu);
   gunlukGuncelle(d.ilerleme, bugun()).kart++;
@@ -1258,6 +1259,18 @@ function akimCevapla(o, deger) {
   kartGoster(o);
 }
 
+function sergiyeEkle(o, dogruMu) {
+  const k = o.kart;
+  const g = k.eser && (secilenGorsel(k.eser, kotuler()) || k.eser.gorseller?.[0]);
+  if (!g) return;
+  (o.sergi ||= []).push({
+    g: gorselUrl(g, 240),
+    y: gorselYedek(g),
+    sanatci: d.harita.get(k.id)?.ad || '',
+    dogru: dogruMu,
+  });
+}
+
 function bolumOzeti(o) {
   const { id, sv, b } = bolumBilgi(o.akim);
   if (sv === 'tanitim') {
@@ -1278,20 +1291,72 @@ function bolumOzeti(o) {
         ? 'Kolay’ı geçtin: Orta açıldı.'
         : 'Zor’u da geçtin: bu bölümü ustaca bitirdin.'
     : `Geçmek için %${Math.round(BOLUM_GECME * 100)} gerekiyor. Yanlış yaptıkların daha sık karşına çıkacak.`;
-  ciz(`${ust(kipKisa(o.kip, o.akim), '#/harita', { ustEtiket: r.gecti ? 'Geçtin' : 'Bir daha dene' })}
-    <div class="ozet" data-test="bolum-ozet" data-gecti="${r.gecti}">
-      ${etiket('Sonuç', { vurgu: true })}
-      <b class="ad">%${yuzde}</b>
-      <span class="meta">${o.bolumSay.dogru} / ${o.bolumSay.toplam} doğru · ${kacis(b ? bolumAdi(b) : '')}</span>
-      <span class="harita-yildiz ozet-yildiz" aria-label="${r.yildizSonra} / 3 yıldız">${[0, 1, 2].map((i) => `<i class="${i < r.yildizSonra ? 'dolu' : ''}">★</i>`).join('')}</span>
-      <p class="okuma italik">${metin}</p>
+  const yeniAcilan = r.gecti ? sonraki : null;
+  const ROMA = ['I', 'II', 'III'];
+  const salonlar = ['kolay', 'orta', 'zor']
+    .map((x, i) => {
+      const durum = i < r.yildizSonra ? 'gecti' : x === yeniAcilan ? 'acildi' : 'kilitli';
+      const durumAd = durum === 'gecti' ? 'geçildi' : durum === 'acildi' ? 'yeni açıldı' : 'kilitli';
+      return `<li class="salon ${durum}${x === sv ? ' bu' : ''}" style="--i:${i}" aria-label="${BOLUM_SV_AD[x]} salonu: ${durumAd}">
+        <span class="salon-no" aria-hidden="true">${ROMA[i]}</span>
+        <span class="salon-ad" aria-hidden="true">${BOLUM_SV_AD[x]}</span>
+        <span class="salon-durum" aria-hidden="true">${durum === 'gecti' ? '<i class="yildiz-sekil"></i>' : durum === 'acildi' ? 'Açık' : ikon('kilit', 14, 1.6)}</span>
+      </li>`;
+    })
+    .join('');
+  const eserler = o.sergi || [];
+  const duvar = eserler
+    .map((e, i) => {
+      const egim = e.dogru ? ((i * 37) % 5) - 2 : i % 2 ? 7 : -8;
+      return `<li class="asi${e.dogru ? '' : ' egri'}" style="--i:${i};--egim:${egim * 0.5}deg;--ip:${10 + ((i * 13) % 4) * 6}px" aria-label="${kacis(e.sanatci)}: ${e.dogru ? 'tanıdın' : 'tanıyamadın'}">
+        <span class="asi-ip" aria-hidden="true"></span>
+        <span class="asi-cerceve"><img decoding="async" loading="lazy" alt="" src="${kacis(e.g)}" data-yedek="${kacis(e.y)}"></span>
+        ${e.dogru ? '' : `<span class="asi-pul" aria-hidden="true">?</span>`}
+      </li>`;
+    })
+    .join('');
+  ciz(`${ust(b ? bolumAdi(b) : kipKisa(o.kip, o.akim), '#/harita', { ustEtiket: `${r.gecti ? 'Sergi açıldı' : 'Sergi hazırlanıyor'} · ${BOLUM_SV_AD[sv] || ''}` })}
+    <div class="ozet bolum-sonuc" data-test="bolum-ozet" data-gecti="${r.gecti}">
+      ${
+        eserler.length
+          ? `<section class="sergi-duvar" aria-label="Bu bölümde karşına çıkan eserler">
+        <ul class="sergi-asilar" style="--n:${eserler.length}">${duvar}</ul>
+        <span class="sergi-isik" aria-hidden="true"></span>
+      </section>`
+          : ''
+      }
+      <article class="kartel" style="--gecikme:${0.5 + eserler.length * 0.12}s">
+        <header class="kartel-ust">
+          <small>${kacis(b ? bolumAdi(b) : kipKisa(o.kip, o.akim))}</small>
+          <small>${BOLUM_SV_AD[sv] || ''} salonu</small>
+        </header>
+        <b class="ad">%${yuzde}</b>
+        <p class="kartel-dogru"><b>${o.bolumSay.dogru}</b> / ${o.bolumSay.toplam} eseri sahibiyle eşleştirdin</p>
+        <p class="kartel-not">${metin}</p>
+        <span class="kartel-damga" aria-hidden="true">${r.gecti ? 'Geçti' : `%${Math.round(BOLUM_GECME * 100)} gerek`}</span>
+      </article>
+      <ol class="salon-plan" aria-label="Salonlar">${salonlar}</ol>
     </div>
-    <div class="menu">
-      ${r.gecti && sonraki ? `<a class="dugme vurgu" href="#/pekistir/bolum/${id}/${sonraki}" data-test="bolum-sonraki">${BOLUM_YONELME[sonraki]} geç</a>` : ''}
-      ${r.gecti ? '' : `<button class="dugme vurgu" type="button" data-yeni-tur data-test="bolum-tekrar">Tekrar dene</button>`}
-      <a class="dugme" href="#/harita" data-test="bolum-harita">Haritaya dön</a>
+    <div class="menu sonuc-menu">
+      ${r.gecti && sonraki ? `<a class="sonuc-ileri" href="#/pekistir/bolum/${id}/${sonraki}" data-test="bolum-sonraki"><span class="kapi" aria-hidden="true"><i></i><i></i></span><span class="sonuc-ileri-yazi"><small>Sıradaki salon</small><b>${BOLUM_SV_AD[sonraki]}</b></span>${ikon('ileri', 20, 1.6)}</a>` : ''}
+      ${r.gecti ? '' : `<button class="sonuc-ileri" type="button" data-yeni-tur data-test="bolum-tekrar"><span class="kapi" aria-hidden="true"><i></i><i></i></span><span class="sonuc-ileri-yazi"><small>Eserleri yeniden as</small><b>Tekrar dene</b></span>${ikon('ileri', 20, 1.6)}</button>`}
+      <a class="sonuc-ikincil" href="#/harita" data-test="bolum-harita">Haritaya dön</a>
     </div>
     ${r.yeniGecti ? yaldizYapraklari() : ''}`);
+  yuzdeSayarakYaz(ekran.querySelector('.bolum-sonuc .ad'), yuzde);
+}
+
+function yuzdeSayarakYaz(el, hedef) {
+  if (!el || !hedef || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const bas = performance.now() + 350;
+  const adim = (t) => {
+    if (!el.isConnected) return;
+    const x = Math.max(0, Math.min(1, (t - bas) / 900));
+    el.textContent = `%${Math.round(hedef * (1 - (1 - x) ** 3))}`;
+    if (x < 1) requestAnimationFrame(adim);
+  };
+  el.textContent = '%0';
+  requestAnimationFrame(adim);
 }
 
 function ozetCiz() {
