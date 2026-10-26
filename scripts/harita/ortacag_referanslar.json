@@ -1,19 +1,19 @@
 {
-  "aciklama": "Orta Çağ gizli eserleri (Emre onayladı): seviye başına 1, üst yarıda 1 ek. Hepsi depodaki yerel kopyalar. Limbourg Şubat: içeride ısınan köylüler ve burç kemerindeki çıplak figür kesitin dışında (GPT reddetmesin).",
+  "aciklama": "Orta Çağ gizli eserleri (Emre onayladı): seviye başına 1, üst yarıda 1 ek. Hepsi depodaki yerel kopyalar. Limbourg Şubat: içeride ısınan köylüler ve burç kemerindeki çıplak figür kesitin dışında (GPT reddetmesin). Emre: Giotto'nun Ağıt'ı yerine Pelerinini Veren Francis, Duccio'nun Kudüs'e Giriş'i yerine Rucellai Madonnası (GPT Ağıt'ı iki kez, Siena'yı küçük çizmişti).",
   "tablolar": [
     {
       "oncelik": 1,
       "seviye": 1,
       "sanatci": "Giotto",
-      "eser": "Lamentation",
-      "dosya": "gorseller/b/e3ad1487857b631e.jpg"
+      "eser": "Saint Francis Giving His Cloak to a Poor Knight",
+      "dosya": "gorseller/b/4b174291b538e698.jpg"
     },
     {
       "oncelik": 2,
       "seviye": 2,
       "sanatci": "Duccio",
-      "eser": "Christ's Entry into Jerusalem",
-      "dosya": "gorseller/b/0b55d8270d39493e.jpg"
+      "eser": "Rucellai Madonna",
+      "dosya": "gorseller/b/4f667b920dd4b8c9.jpg"
     },
     {
       "oncelik": 3,
@@ -34,6 +34,22 @@
       "sanatci": "Gentile da Fabriano",
       "eser": "Adoration of the Magi",
       "dosya": "gorseller/b/5f89fc48ceabb25d.jpg"
+    }
+  ],
+  "cikarilan": [
+    {
+      "oncelik": 1,
+      "seviye": 1,
+      "sanatci": "Giotto",
+      "eser": "Lamentation",
+      "dosya": "gorseller/b/e3ad1487857b631e.jpg"
+    },
+    {
+      "oncelik": 2,
+      "seviye": 2,
+      "sanatci": "Duccio",
+      "eser": "Christ's Entry into Jerusalem",
+      "dosya": "gorseller/b/0b55d8270d39493e.jpg"
     }
   ]
 }
