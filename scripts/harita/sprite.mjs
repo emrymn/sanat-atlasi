@@ -29,6 +29,26 @@ const ORTAK_EMPRESYONIZM =
   "Painted in the same luminous Impressionist style as the map in Image 1 (loose, broken, flickering brushstrokes, the same warm palette), lit by the same warm golden late-afternoon sunlight falling from the upper left, with soft violet-blue shadows on the far side. The object itself is well lit so it reads clearly. At the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
 
 const ISLER = {
+  // Modern sanat (Emre onayladı; 2. seviye Paris kafesi): Marc'ın mavi atı, kübist keman, Man Ray'in Hediye'si,
+  // Magritte'in melon şapkası ve elması, boş yaldızlı çerçeve; karakter aynı öğrenci, 1950'lerin sanat öğrencisi.
+  modern: {
+    harita: 'cikti/modern/modern-secilen.jpg',
+    ornekNesne: 'cikti/ortacag/sprite/sembol-1.webp',
+    ornekYolcu: 'cikti/postempresyonizm/sprite/karakter.webp',
+    isler: [
+      { ad: 'sembol-1', metin: "A small statue of a bright cobalt-blue horse with a curved neck, as in Franz Marc's paintings, painted with bold expressive strokes, standing on a small round paved stone base." },
+      { ad: 'sembol-2', metin: 'A small Cubist violin as in Picasso and Braque: the violin broken into flat geometric planes and facets in warm ochre, brown, cream and soft blue, assembled like a sculpture, standing upright on a small round paved stone base.' },
+      { ad: 'sembol-3', metin: "Man Ray's Dada object The Gift: an old black flat iron with a row of small metal tacks glued in a line down the middle of its flat bottom, the iron tipped up to show them, standing on a small round paved stone base." },
+      { ad: 'sembol-4', metin: "A black bowler hat floating a little above a small round paved stone base, with a green apple hovering in front of it, in the smooth, precise style of René Magritte, a soft shadow on the base." },
+      { ad: 'sembol-5', metin: 'An empty, ornate gilded picture frame standing upright on a small easel-like stand, nothing inside it but the background, standing on a small round paved stone base.' },
+      {
+        ad: 'karakter',
+        yolcu: true,
+        metin:
+          'The same young male art student as in Image 2 (same face, age, satchel and sketchbook), now dressed as an art student of the 1950s: a black turtleneck sweater, blue jeans rolled at the ankle and dark canvas shoes, no hat. Full body, walking forward, friendly face. Same scale and feel as the traveller figure in Image 2.',
+      },
+    ],
+  },
   // Empresyonizm (Emre onayladı; 7 seviyelik dönemin ilk yarısı): Degas'nın balerin pabuçları, İzlenim tuvalli şövale,
   // Büyük Dalga'lı yelpaze; karakter aynı öğrenci, 1870'lerin Parisli genci olarak.
   empresyonizm: {
