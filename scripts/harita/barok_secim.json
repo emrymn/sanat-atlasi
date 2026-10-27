@@ -36,5 +36,25 @@
       0.63,
       0.352
     ]
-  ]
+  ],
+  "resim": "cikti/barok/barok-secilen.jpg",
+  "semboller": [
+    "sprite/sembol-1.webp",
+    "sprite/sembol-2.webp",
+    "sprite/sembol-3.webp",
+    "sprite/sembol-4.webp",
+    "sprite/sembol-5.webp"
+  ],
+  "karakter": "sprite/karakter.webp",
+  "boyut_pt": {
+    "sembol": 56,
+    "karakter": 72
+  },
+  "karakter_kayma": [
+    0.085,
+    -0.012
+  ],
+  "karakter_kayma_notu": "meydan sağdaysa karakter sola (−0,085)",
+  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)",
+  "sembol_notu": "sembol-4 şapkanın tüy uçlarındaki mor sızıntı krem tona çevrildi; önceki hâli sprite/sembol-4-onceki.webp"
 }
