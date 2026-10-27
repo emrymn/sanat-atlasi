@@ -1,13 +1,53 @@
 {
-  "aciklama": "Klasisizm ve Geç Barok gizli eserleri (Emre onayladı; Gaulli ve Pozzo tavanları yerine Piazzetta ve Ricci). Hepsi depodaki yerel kopyalar. Üslup: alt yarı Poussin/Claude Lorrain, üst yarı Pozzo/Gaulli tavan freski (Emre).",
+  "aciklama": "Klasisizm ve Geç Barok gizli eserleri (Emre onayladı; Gaulli ve Pozzo tavanları yerine Piazzetta ve Ricci). Hepsi depodaki yerel kopyalar. Üslup: alt yarı Poussin/Claude Lorrain, üst yarı Pozzo/Gaulli tavan freski (Emre). Emre (baştan): deniz/liman yerine Claude Lorrain'in Köy Şenliği; yol iki kenara kesintisiz; canlı ve çeşitli renkler baştan istemde; meydanlarda fıskiye/havuz yok.",
   "tablolar": [
-    { "oncelik": 1, "seviye": 1, "sanatci": "Nicolas Poussin", "eser": "Et in Arcadia Ego", "dosya": "gorseller/b/22120cc801296cf0.jpg" },
-    { "oncelik": 2, "seviye": "the harbour near the lower edge, below plaza 1", "sanatci": "Claude Lorrain", "eser": "Seaport with the Embarkation of Saint Ursula", "dosya": "gorseller/b/3124538ac2720d16.jpg" },
-    { "oncelik": 3, "seviye": 2, "sanatci": "Giovanni Battista Piazzetta", "eser": "Rebecca and Eliezer at the Well", "dosya": "gorseller/b/562f15ca3f17c538.jpg" },
-    { "oncelik": 4, "seviye": "the sky above plaza 2", "sanatci": "Sebastiano Ricci", "eser": "Apotheosis of Saint Sebastian", "dosya": "gorseller/b/cb401c8ac504385c.jpg" }
+    {
+      "oncelik": 1,
+      "seviye": 1,
+      "sanatci": "Nicolas Poussin",
+      "eser": "Et in Arcadia Ego",
+      "dosya": "gorseller/b/22120cc801296cf0.jpg"
+    },
+    {
+      "oncelik": 2,
+      "seviye": "the pastoral valley near the bottom edge, below plaza 1",
+      "sanatci": "Claude Lorrain",
+      "eser": "The Village Festival",
+      "dosya": "gorseller/b/e39b2066cca1060d.jpg"
+    },
+    {
+      "oncelik": 3,
+      "seviye": 2,
+      "sanatci": "Giovanni Battista Piazzetta",
+      "eser": "Rebecca and Eliezer at the Well",
+      "dosya": "gorseller/b/562f15ca3f17c538.jpg"
+    },
+    {
+      "oncelik": 4,
+      "seviye": "the sky above plaza 2",
+      "sanatci": "Sebastiano Ricci",
+      "eser": "Apotheosis of Saint Sebastian",
+      "dosya": "gorseller/b/cb401c8ac504385c.jpg"
+    }
   ],
   "cikarilan": [
-    { "sanatci": "Giovanni Battista Gaulli", "eser": "Triumph of the Name of Jesus", "dosya": "gorseller/b/6ca1ecc975a709cf.jpg", "neden": "Emre: son ikisi değişsin" },
-    { "sanatci": "Andrea Pozzo", "eser": "Allegory of the Jesuits' Missionary Work", "dosya": "gorseller/b/ed38fb2823626fbb.jpg", "neden": "Emre: son ikisi değişsin" }
+    {
+      "sanatci": "Giovanni Battista Gaulli",
+      "eser": "Triumph of the Name of Jesus",
+      "dosya": "gorseller/b/6ca1ecc975a709cf.jpg",
+      "neden": "Emre: son ikisi değişsin"
+    },
+    {
+      "sanatci": "Andrea Pozzo",
+      "eser": "Allegory of the Jesuits' Missionary Work",
+      "dosya": "gorseller/b/ed38fb2823626fbb.jpg",
+      "neden": "Emre: son ikisi değişsin"
+    },
+    {
+      "sanatci": "Claude Lorrain",
+      "eser": "Seaport with the Embarkation of Saint Ursula",
+      "dosya": "gorseller/b/3124538ac2720d16.jpg",
+      "neden": "Emre: en altta deniz olmasın, yol kesintisiz devam etsin"
+    }
   ]
 }
