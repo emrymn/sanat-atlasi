@@ -1,0 +1,172 @@
+[
+  {
+    "ad": "gpt-image-2-ref",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.4,
+    "iskelet": "cep",
+    "sure": 68,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [
+      "Wanderer above the Sea of Fog",
+      "The Burning of the Houses of Lords and Commons",
+      "Ophelia",
+      "The Gleaners"
+    ],
+    "istemOzeti": "121f744470",
+    "ek": {
+      "providerMetadata": {
+        "openai": {
+          "images": [
+            {
+              "created": 1793101358,
+              "size": "1024x3072",
+              "quality": "high",
+              "background": "opaque",
+              "outputFormat": "png",
+              "imageTokens": 4556,
+              "textTokens": 1518
+            }
+          ]
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "openai/gpt-image-2",
+            "resolvedProvider": "openai",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: openai. Total execution order: openai(system)",
+            "canonicalSlug": "openai/gpt-image-2",
+            "finalProvider": "openai",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "openai/gpt-image-2",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "openai",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793101296915,
+                    "endTime": 1793101360121,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.162598",
+          "marketCost": "0.162598",
+          "surchargeCost": "0",
+          "gatewayCost": "0.162598",
+          "inferenceCost": "0.162598",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.162598",
+          "generationId": "gen_01M5YJMX0N3PKMX33ESAVC17W7"
+        }
+      },
+      "warnings": []
+    }
+  },
+  {
+    "ad": "gpt-image-2-ref",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.4,
+    "iskelet": "cep",
+    "sure": 70,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [
+      "Wanderer above the Sea of Fog",
+      "The Burning of the Houses of Lords and Commons",
+      "Ophelia",
+      "The Gleaners"
+    ],
+    "istemOzeti": "121f744470",
+    "ek": {
+      "providerMetadata": {
+        "openai": {
+          "images": [
+            {
+              "created": 1793101427,
+              "size": "1024x3072",
+              "quality": "high",
+              "background": "opaque",
+              "outputFormat": "png",
+              "imageTokens": 4556,
+              "textTokens": 1518
+            }
+          ]
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "openai/gpt-image-2",
+            "resolvedProvider": "openai",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: openai. Total execution order: openai(system)",
+            "canonicalSlug": "openai/gpt-image-2",
+            "finalProvider": "openai",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "openai/gpt-image-2",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "openai",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793101364441,
+                    "endTime": 1793101429581,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.162598",
+          "marketCost": "0.162598",
+          "surchargeCost": "0",
+          "gatewayCost": "0.162598",
+          "inferenceCost": "0.162598",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.162598",
+          "generationId": "gen_01M5YJPZ4S4V0QVSVYGWBJAMZJ"
+        }
+      },
+      "warnings": []
+    }
+  }
+]
