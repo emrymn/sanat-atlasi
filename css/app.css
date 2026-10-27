@@ -7038,26 +7038,45 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .harita-gecis.kilitli .harita-gecis-yazi b {
   opacity: 0.75;
 }
-/* dönem eşiğinde durma (JS: esikte/esik): harita ekte kısa bir an bekler, ekranın kenarları kararır, ek ortada parlar */
-.harita::after {
-  content: '';
+/* zaman yarığı (JS: --p, --k): ek ortaya yaklaştıkça ekranın kenarları kararır; beklemez, kaydırmayla oynar */
+.harita-perde {
   position: fixed;
   inset: 0;
   z-index: 20;
   pointer-events: none;
-  background: radial-gradient(ellipse 120% 60% at 50% 50%, rgba(14, 10, 6, 0) 35%, rgba(14, 10, 6, 0.62) 100%);
+  background: radial-gradient(ellipse 130% 55% at 50% 50%, rgba(14, 10, 6, 0) 40%, rgba(14, 10, 6, 0.7) 100%);
   opacity: 0;
-  transition: opacity 0.6s ease;
+  will-change: opacity;
 }
-.harita.esikte::after {
-  opacity: 1;
-  transition-duration: 0.35s;
+/* iki dönemin arasından sızan sıcak ışık: yarık ortada açılır */
+.harita-gecis-yarik {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 38%;
+  height: 24%;
+  background: linear-gradient(to bottom, rgba(255, 226, 160, 0), rgba(255, 232, 180, 0.75) 50%, rgba(255, 226, 160, 0));
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 22%, #000 78%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 22%, #000 78%, transparent);
+  mix-blend-mode: screen;
+  transform: scaleY(0);
+  opacity: 0;
 }
-.harita-gecis-cizgi .elmas {
-  transition: scale 0.4s ease;
+.harita-gecis-kivilcim {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
 }
-.harita-gecis.esik .harita-gecis-cizgi .elmas {
-  scale: 1.35;
+.harita-gecis-kivilcim i {
+  position: absolute;
+  left: var(--x);
+  top: 50%;
+  width: var(--b);
+  height: var(--b);
+  border-radius: 50%;
+  background: #ffe2a0;
+  box-shadow: 0 0 6px 1px rgba(255, 220, 150, 0.8);
+  opacity: 0;
 }
 /* henüz ekrana girmemiş duraklar görünmez; girince yere konar (JS: kondu, inis) */
 .harita.izleniyor .harita-durak:not(.kondu) {
@@ -7070,69 +7089,55 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   .harita-zaman-ic.degisti {
     animation: harita-zaman-degis 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
-  /* derinlik: ekin yazısı haritadan biraz yavaş kayar (--p: ekin ekran ortasına uzaklığı, JS) */
+  /* zaman yarığı: her şey kaydırmaya bağlı (JS her karede --p ve --k yazar), zamanlayıcı yok, beklemez.
+     Yalnız transform/opacity değişir; kaydırma akıcı kalır. Uzaklaşınca aynı yoldan geri sarılır. */
   .harita-gecis-yazi {
-    translate: 0 calc(var(--p, 0) * 28px);
+    translate: 0 calc(var(--p, 0) * 46px);
   }
-  /* ek orta bölgeye girince (JS: gorundu): çizgi elmastan iki yana açılır, elmas döner, yüzyıl yükselir, ad
-     bulanık ve geniş aralıktan netleşir, en son bölüm bilgisi; çıkınca geri sarılır, tekrar girince baştan oynar */
-  .harita.izleniyor .harita-gecis-cizgi :is(.sol, .sag) {
-    transform: scaleX(0);
-    transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.15s;
+  /* iki dönemin kenarları yarıktan iki yana çekilir */
+  .harita-gecis-renk.ust {
+    translate: 0 calc(var(--k, 0) * 9px);
   }
-  .harita.izleniyor .harita-gecis-cizgi .elmas {
-    scale: 0;
-    rotate: -135deg;
-    transition:
-      scale 0.5s cubic-bezier(0.3, 1.5, 0.5, 1),
-      rotate 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+  .harita-gecis-renk.alt {
+    translate: 0 calc(var(--k, 0) * -9px);
   }
-  .harita.izleniyor .harita-gecis-yuzyil,
-  .harita.izleniyor .harita-gecis-bilgi {
-    opacity: 0;
-    transform: translateY(8px);
-    transition:
-      opacity 0.6s ease 0.35s,
-      transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.35s;
+  .harita-gecis-yarik {
+    transform: scaleY(var(--k, 0));
+    opacity: var(--k, 0);
   }
-  .harita.izleniyor .harita-gecis-bilgi {
-    transform: translateY(-6px);
-    transition-delay: 0.8s;
+  .harita-gecis-cizgi :is(.sol, .sag) {
+    transform: scaleX(var(--k, 1));
   }
-  .harita.izleniyor .harita-gecis-yazi b {
-    opacity: 0;
-    letter-spacing: 0.28em;
-    filter: blur(6px);
-    transition:
-      opacity 0.9s ease 0.45s,
-      letter-spacing 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) 0.45s,
-      filter 0.9s ease 0.45s;
+  /* elmas kaydırma yönünde döner ve ortada büyür */
+  .harita-gecis-cizgi .elmas {
+    rotate: calc(45deg + var(--p, 0) * 360deg);
+    scale: calc(0.5 + var(--k, 1) * 0.6);
   }
-  .harita.izleniyor .harita-gecis.gorundu .harita-gecis-cizgi :is(.sol, .sag) {
-    transform: none;
+  /* ışık çizgi boyunca kaydırmayla birlikte süzülür */
+  .harita-gecis-isik {
+    transform: translateX(calc(110% - var(--p, 0) * 260%));
+    opacity: var(--k, 0);
   }
-  .harita.izleniyor .harita-gecis.gorundu .harita-gecis-cizgi .elmas {
-    scale: 1;
-    rotate: 45deg;
-    animation: harita-elmas-parla 3.4s ease-in-out 1.4s infinite;
+  /* kıvılcımlar her biri kendi hızında, yarıktan yukarı/aşağı saçılır */
+  .harita-gecis-kivilcim i {
+    transform: translateY(calc(var(--p, 0) * var(--hiz) * 90px)) scale(calc(0.4 + var(--k, 0)));
+    opacity: calc(var(--k, 0) * 0.95);
   }
-  .harita.izleniyor .harita-gecis.gorundu :is(.harita-gecis-yuzyil, .harita-gecis-bilgi) {
-    opacity: 1;
-    transform: none;
+  .harita-gecis-yuzyil {
+    opacity: var(--k, 1);
+    transform: translateY(calc((1 - var(--k, 1)) * 14px));
   }
-  .harita.izleniyor .harita-gecis.gorundu .harita-gecis-bilgi {
-    opacity: 0.85;
+  .harita-gecis-yazi b {
+    display: block;
+    opacity: calc(var(--k, 1) * 1.3 - 0.15);
+    transform: scale(calc(0.86 + var(--k, 1) * 0.14));
   }
-  .harita.izleniyor .harita-gecis.gorundu .harita-gecis-yazi b {
-    opacity: 1;
-    letter-spacing: 0.02em;
-    filter: none;
+  .harita-gecis.kilitli .harita-gecis-yazi b {
+    opacity: calc(var(--k, 1) * 0.95 - 0.15);
   }
-  .harita.izleniyor .harita-gecis.gorundu.kilitli .harita-gecis-yazi b {
-    opacity: 0.75;
-  }
-  .harita.izleniyor .harita-gecis.gorundu .harita-gecis-isik {
-    animation: harita-gecis-isik 1.6s cubic-bezier(0.4, 0, 0.2, 1) 0.5s both;
+  .harita-gecis-bilgi {
+    opacity: calc(var(--k, 1) * 0.85);
+    transform: translateY(calc((1 - var(--k, 1)) * -10px));
   }
 }
 /* durak yukarıdan küçük gelir, yere değip hafifçe sekerek yerine oturur (bitiş: kendi ölçeği ve konumu) */

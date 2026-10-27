@@ -99,6 +99,7 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     <button type="button" class="harita-vakit" data-harita-vakit aria-label="${tur === 'gece' ? 'Gündüze geç' : 'Geceye geç'}">${ikon(tur === 'gece' ? 'gunes' : 'ay', 20, 1.6)}</button>
     <p class="harita-zaman" data-harita-zaman data-test="harita-zaman"><span class="harita-zaman-ic"><b></b><span></span></span></p>
     <div class="harita-bolum-kart" data-harita-kart data-test="harita-kart" aria-hidden="true"><span class="harita-bolum-kart-ic"><span class="harita-bolum-kart-cizgi"></span><span class="harita-bolum-kart-yuzyil"></span><b></b><span class="harita-bolum-kart-bilgi"></span><span class="harita-bolum-kart-cizgi"></span></span></div>
+    <div class="harita-perde" data-harita-perde aria-hidden="true"></div>
     <div class="harita ${tur}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
       ${harita.bolgeler.map((b, i) => resimHtml(b, i, h, tur, sinir)).join('')}
       ${harita.bolgeler
@@ -117,8 +118,6 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     requestAnimationFrame(() => konumaKaydir());
   }
   konumIzle();
-  durOrtaY = null;
-  durAtlanan = null;
   gecisleriIzle();
   kaydirmaIzle();
   requestAnimationFrame(kaydirmaIzle);
@@ -197,6 +196,8 @@ function resimHtml(b, i, h, tur, sinir) {
 // bulanır; tam ekte altın bir sınır çizgisi, üstünde yeni (yukarıdaki) dönemin adı. Ek ekrana girince çizgi
 // ortadan iki yana açılır, ad netleşir, bant boyunca bir ışık geçer (js: gecisleriIzle → "gorundu").
 const GECIS_BOY = 0.16; // bandın yüksekliği, dönem resmi yüksekliğine oranla
+// yarıktan yükselen altın kıvılcımlar: [yatay konum %, kaydırmaya göre hız, boy px]
+const KIVILCIMLAR = [[12, 1.6, 3], [24, -1.1, 2], [37, 2.3, 4], [49, -1.8, 2], [58, 1.2, 3], [71, -2.4, 3], [83, 1.9, 2], [92, -1.3, 4]];
 function gecisHtml(alt, ustB, h, tur, sinir, liste) {
   const ek = alt.ust; // alttaki resmin üst kenarı = üstteki resmin alt kenarı (haritanın üstünden, resim boyu cinsinden)
   const bolum = liste.filter((x) => bolgeBul(x.sira).id === ustB.id);
@@ -208,7 +209,9 @@ function gecisHtml(alt, ustB, h, tur, sinir, liste) {
       <span class="harita-gecis-renk ust" aria-hidden="true" style="${serit};background-image:url('${resimAdresi(ustB.id, tur)}')"></span>
       <span class="harita-gecis-renk alt" aria-hidden="true" style="${serit};background-image:url('${resimAdresi(alt.id, tur)}')"></span>
       <span class="harita-gecis-bulanik" aria-hidden="true"></span>
+      <span class="harita-gecis-yarik" aria-hidden="true"></span>
       <span class="harita-gecis-isik" aria-hidden="true"></span>
+      <span class="harita-gecis-kivilcim" aria-hidden="true">${KIVILCIMLAR.map(([x, hiz, b]) => `<i style="--x:${x}%;--hiz:${hiz};--b:${b}px"></i>`).join('')}</span>
       <span class="harita-gecis-cizgi" aria-hidden="true"><i class="sol"></i><i class="elmas"></i><i class="sag"></i></span>
       <p class="harita-gecis-yazi">
         <span class="harita-gecis-ad"><span class="harita-gecis-yuzyil">${kacis(ustB.yuzyil)}</span><b>${kacis(ustB.ad)}</b></span>
@@ -296,16 +299,24 @@ let kaydirmaBekliyor = false;
 function kaydirmaIzle() {
   const kap = ekran.querySelector('[data-test="harita"]');
   if (!kap) return;
-  esikteDur(kap);
   const boy = window.innerHeight;
-  // derinlik: ekin yazısı haritadan biraz yavaş kayar (--p: ekin ekran ortasına uzaklığı, ekran boyu cinsinden)
+  // zaman yarığı: animasyon kaydırmaya bağlıdır, beklemez. --p: ekin ekran ortasına uzaklığı (ekran boyu
+  // cinsinden, -1…1); --k: ortaya yakınlık (0…1, yumuşatılmış). Ek ortaya geldikçe yarık açılır, çizgi uzar,
+  // elmas döner, kıvılcımlar farklı hızlarda kayar, ekran kenarları kararır; uzaklaştıkça hepsi geri sarılır.
+  const perde = ekran.querySelector('[data-harita-perde]');
   if (!azHareket()) {
+    let enK = 0;
     for (const ek of kap.querySelectorAll('.harita-gecis')) {
       const r = ek.getBoundingClientRect();
       if (r.bottom < -boy || r.top > boy * 2) continue;
       const p = Math.max(-1, Math.min(1, (r.top + r.height / 2 - boy * 0.5) / boy));
+      const t = Math.max(0, 1 - Math.abs(p) / 0.5);
+      const k = t * t * (3 - 2 * t);
+      if (k > enK) enK = k;
       ek.style.setProperty('--p', p.toFixed(3));
+      ek.style.setProperty('--k', k.toFixed(3));
     }
+    if (perde) perde.style.opacity = (enK * 0.85).toFixed(3);
   }
   const gosterge = ekran.querySelector('[data-harita-zaman]');
   if (!gosterge) return;
@@ -360,65 +371,6 @@ function bolumKarti(b) {
     kap?.classList.remove('kart-acik');
   }, 2300);
 }
-// ---------- dönem eşiğinde durma ----------
-// Kaydırırken bir dönem eki ekranın ortasından geçince harita orada kısa bir süre durur: ek yumuşakça ortaya
-// oturur, kenarlar kararır, bölüm kartı oynar; bu sürede tekerlek/dokunma/tuş kaydırması yutulur, sonra serbest.
-// Aynı ek, ekran ondan uzaklaşana dek tekrar durdurmaz; uygulamanın kendi kaydırmasında (kartSustur) durulmaz.
-const DUR_SURE = 1400;
-const DUR_OTURMA = 550; // yumuşak oturma süresi; sonrasında kalan ivme hedefe geri çekilir
-let durOrtaY = null;
-let durBas = 0;
-let durHedef = 0;
-let durAtlanan = null;
-let durZamanlayici = null;
-const durdu = () => durBas && Date.now() - durBas < DUR_SURE;
-function esikteDur(kap) {
-  const boy = window.innerHeight;
-  const orta = window.scrollY + boy / 2;
-  if (durdu()) {
-    if (Date.now() - durBas > DUR_OTURMA && Math.abs(window.scrollY - durHedef) > 1) window.scrollTo(0, durHedef);
-    return;
-  }
-  const onceki = durOrtaY;
-  durOrtaY = orta;
-  // büyük sıçramalar (kaydırma çubuğu, bağlantı) durdurmaz; yalnız sürekli kaydırma
-  if (onceki === null || onceki === orta || Math.abs(orta - onceki) > boy * 0.6 || Date.now() < kartSustur) return;
-  for (const ek of kap.querySelectorAll('.harita-gecis')) {
-    const r = ek.getBoundingClientRect();
-    const y = r.top + r.height / 2 + window.scrollY;
-    if (ek === durAtlanan) {
-      if (Math.abs(y - orta) > boy * 0.45) durAtlanan = null;
-      continue;
-    }
-    if ((onceki < y && orta >= y) || (onceki > y && orta <= y)) return dur(kap, ek, y);
-  }
-}
-function dur(kap, ek, y) {
-  durAtlanan = ek;
-  durBas = Date.now();
-  durHedef = Math.max(0, Math.round(y - window.innerHeight / 2));
-  kap.classList.add('esikte');
-  ek.classList.add('esik');
-  window.scrollTo({ top: durHedef, behavior: azHareket() ? 'auto' : 'smooth' });
-  // dokunmatik ivme (parmak kalktıktan sonra) engellenemez; oturma bitince ek yeniden ortaya çekilir
-  setTimeout(() => {
-    if (durdu() && Math.abs(window.scrollY - durHedef) > 1) window.scrollTo({ top: durHedef, behavior: azHareket() ? 'auto' : 'smooth' });
-  }, DUR_OTURMA);
-  clearTimeout(durZamanlayici);
-  durZamanlayici = setTimeout(() => {
-    durBas = 0;
-    kap.classList.remove('esikte');
-    ek.classList.remove('esik');
-    durOrtaY = window.scrollY + window.innerHeight / 2;
-  }, DUR_SURE);
-}
-const DUR_TUSLAR = new Set(['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' ']);
-function durGirdisi(e) {
-  if (!durdu()) return;
-  if (e.type === 'keydown' && !DUR_TUSLAR.has(e.key)) return;
-  e.preventDefault();
-}
-
 function kaydirmaSirasi() {
   if (kaydirmaBekliyor) return;
   kaydirmaBekliyor = true;
@@ -598,7 +550,6 @@ export function olaylariBagla() {
   });
   window.addEventListener('scroll', kaydirmaSirasi, { passive: true });
   window.addEventListener('resize', kaydirmaSirasi, { passive: true });
-  for (const tur of ['wheel', 'touchmove', 'keydown']) window.addEventListener(tur, durGirdisi, { passive: false });
 }
 
 // İlerleme'nin başındaki giriş: haritanın küçük özeti
