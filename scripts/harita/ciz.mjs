@@ -73,6 +73,9 @@ const ISLER = [
   // Klasisizm (Emre: üst yarı canlı, alt yarı yarı yarıya, barok2-renk-B.jpg): alt meydan fıskiyeli havuza dönmüştü; maskeyle
   // boş taş meydana boyanır (iskelet/barok2_iskelet_cep_maske_havuz.png). Kaynak: --kaynak barok2-renk-B; sonra birlestir.py
   { ad: 'gpt-image-2-havuz', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-ref', maske: 'havuz', sablon: 'havuz', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.15 },
+  // Klasisizm alt kenar (Emre: en altta deniz olmasın, yol kesintisiz alt kenara insin): Nano düzenler (GPT bu resmi
+  // reddediyor), birlestir.py ile yalnız alt kısım (iskelet/barok2_iskelet_cep_maske_alt.png) alınır. --kaynak barok2-secilen
+  { ad: 'nano-banana-pro-alt', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'alt', oran: '9:16', ref: false, fiyat: 0.15 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
