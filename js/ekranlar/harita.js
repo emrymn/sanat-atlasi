@@ -101,6 +101,10 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     <div class="harita-bolum-kart" data-harita-kart data-test="harita-kart" aria-hidden="true"><span class="harita-bolum-kart-ic"><span class="harita-bolum-kart-cizgi"></span><span class="harita-bolum-kart-yuzyil"></span><b></b><span class="harita-bolum-kart-bilgi"></span><span class="harita-bolum-kart-cizgi"></span></span></div>
     <div class="harita ${tur}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
       ${harita.bolgeler.map((b, i) => resimHtml(b, i, h, tur, sinir)).join('')}
+      ${harita.bolgeler
+        .slice(0, -1)
+        .map((b, i) => gecisHtml(b, harita.bolgeler[i + 1], h, tur, sinir, liste))
+        .join('')}
       <svg class="harita-filtre" width="0" height="0" aria-hidden="true" focusable="false"><filter id="durak-kontur" color-interpolation-filters="sRGB"><feComponentTransfer in="SourceAlpha" result="m"><feFuncA type="discrete" tableValues="0 0 0 1 1 1"/></feComponentTransfer><feComposite in="SourceGraphic" in2="m" operator="in" result="g"/><feMorphology in="m" operator="dilate" radius="1.4" result="k"/><feFlood flood-color="#fff4dc"/><feComposite in2="k" operator="in" result="krem"/><feMorphology in="m" operator="dilate" radius="2.4" result="d"/><feFlood flood-color="#24170c"/><feComposite in2="d" operator="in" result="koyu"/><feMerge><feMergeNode in="koyu"/><feMergeNode in="krem"/><feMergeNode in="g"/></feMerge></filter><filter id="durak-kontur-ince" color-interpolation-filters="sRGB"><feComponentTransfer in="SourceAlpha" result="m"><feFuncA type="discrete" tableValues="0 0 0 1 1 1"/></feComponentTransfer><feComposite in="SourceGraphic" in2="m" operator="in" result="g"/><feMorphology in="m" operator="dilate" radius="1" result="d"/><feFlood flood-color="#24170c"/><feComposite in2="d" operator="in" result="koyu"/><feMerge><feMergeNode in="koyu"/><feMergeNode in="g"/></feMerge></filter></svg>
       <div class="harita-katman">${katman}</div>
     </div>
@@ -185,6 +189,32 @@ function resimHtml(b, i, h, tur, sinir) {
   return html;
 }
 
+// ---------- dönem ekleri ----------
+// Resimler bitişik kalır (koordinatlar değişmez); her ekin üstüne ince bir bant konur. Bantta iki resmin kenarı
+// aynalanıp yarı saydam olarak karşı tarafa akar (ekte ikisi %50 karışır, uçlara doğru söner), ortası hafifçe
+// bulanır; tam ekte altın bir sınır çizgisi, üstünde yeni (yukarıdaki) dönemin adı. Ek ekrana girince çizgi
+// ortadan iki yana açılır, ad netleşir, bant boyunca bir ışık geçer (js: gecisleriIzle → "gorundu").
+const GECIS_BOY = 0.16; // bandın yüksekliği, dönem resmi yüksekliğine oranla
+function gecisHtml(alt, ustB, h, tur, sinir, liste) {
+  const ek = alt.ust; // alttaki resmin üst kenarı = üstteki resmin alt kenarı (haritanın üstünden, resim boyu cinsinden)
+  const bolum = liste.filter((x) => bolgeBul(x.sira).id === ustB.id);
+  const acik = bolum.filter((x) => x.acik).length;
+  const sepya = ek <= sinir;
+  const yer = `top:${(((ek - GECIS_BOY / 2) / h) * 100).toFixed(3)}%;height:${((GECIS_BOY / h) * 100).toFixed(3)}%`;
+  const serit = `background-size:100% ${(200 / GECIS_BOY).toFixed(1)}%`;
+  return `<div class="harita-gecis${sepya ? ' sepya' : ''}${acik ? '' : ' kilitli'}" data-test="harita-gecis" data-gecis="${ustB.id}" style="${yer}">
+      <span class="harita-gecis-renk ust" aria-hidden="true" style="${serit};background-image:url('${resimAdresi(ustB.id, tur)}')"></span>
+      <span class="harita-gecis-renk alt" aria-hidden="true" style="${serit};background-image:url('${resimAdresi(alt.id, tur)}')"></span>
+      <span class="harita-gecis-bulanik" aria-hidden="true"></span>
+      <span class="harita-gecis-isik" aria-hidden="true"></span>
+      <span class="harita-gecis-cizgi" aria-hidden="true"><i class="sol"></i><i class="elmas"></i><i class="sag"></i></span>
+      <p class="harita-gecis-yazi">
+        <span class="harita-gecis-ad"><span class="harita-gecis-yuzyil">${kacis(ustB.yuzyil)}</span><b>${kacis(ustB.ad)}</b></span>
+        <span class="harita-gecis-bilgi">${bolum.length} bölüm · ${acik ? `${acik} açık` : 'kilitli'}</span>
+      </p>
+    </div>`;
+}
+
 function konumaKaydir(yumusak = false) {
   // uygulamanın kendi kaydırması (açılış, "Buradasın") dönem kartlarını oynatmaz
   kartSustur = Date.now() + (yumusak ? 1500 : 400);
@@ -243,7 +273,18 @@ function gecisleriIzle() {
     { threshold: [0] },
   );
   for (const el of kap.querySelectorAll('.harita-durak')) gecisGozcu.observe(el);
+  ekGozcu?.disconnect();
+  // ek ekranın orta bölgesine girdikçe animasyon baştan oynar, çıkınca geri sarılır
+  ekGozcu = new IntersectionObserver(
+    (girdiler) => {
+      if (!kap.isConnected) return ekGozcu.disconnect();
+      for (const g of girdiler) g.target.classList.toggle('gorundu', g.isIntersecting);
+    },
+    { rootMargin: '-18% 0px -18% 0px', threshold: [0] },
+  );
+  for (const el of kap.querySelectorAll('.harita-gecis')) ekGozcu.observe(el);
 }
+let ekGozcu = null;
 
 // ---------- kaydırma: derinlik ve zaman göstergesi ----------
 // Geçiş şeritlerinde sis ve yazı haritadan farklı hızda kayar (--p: şeridin ekran ortasına uzaklığı, ekran boyu
@@ -254,6 +295,15 @@ function kaydirmaIzle() {
   const kap = ekran.querySelector('[data-test="harita"]');
   if (!kap) return;
   const boy = window.innerHeight;
+  // derinlik: ekin yazısı haritadan biraz yavaş kayar (--p: ekin ekran ortasına uzaklığı, ekran boyu cinsinden)
+  if (!azHareket()) {
+    for (const ek of kap.querySelectorAll('.harita-gecis')) {
+      const r = ek.getBoundingClientRect();
+      if (r.bottom < -boy || r.top > boy * 2) continue;
+      const p = Math.max(-1, Math.min(1, (r.top + r.height / 2 - boy * 0.5) / boy));
+      ek.style.setProperty('--p', p.toFixed(3));
+    }
+  }
   const gosterge = ekran.querySelector('[data-harita-zaman]');
   if (!gosterge) return;
   let en = null;
