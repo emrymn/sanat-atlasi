@@ -6973,11 +6973,9 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   mix-blend-mode: screen;
   opacity: 0;
 }
-/* yapışkan dönem adı: ara ekranın ortasından geçerken ad ortada bekler */
+/* dönem adı köprünün ortasında sabit durur; kaydırmayla birlikte akar, ekranı takip etmez */
 .harita-gecis-yazi {
-  position: sticky;
-  top: calc(50vh - 58px);
-  bottom: calc(50vh - 58px);
+  position: relative;
   z-index: 2;
   margin: 0;
   padding-inline: 8%;
