@@ -98,7 +98,7 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     </div>
     <button type="button" class="harita-vakit" data-harita-vakit aria-label="${tur === 'gece' ? 'Gündüze geç' : 'Geceye geç'}">${ikon(tur === 'gece' ? 'gunes' : 'ay', 20, 1.6)}</button>
     <p class="harita-zaman" data-harita-zaman data-test="harita-zaman"><span class="harita-zaman-ic"><b></b><span></span></span></p>
-    <div class="harita-bolum-kart" data-harita-kart data-test="harita-kart" aria-hidden="true"><span class="harita-perde"><span class="harita-perde-kat"></span><span class="harita-perde-kat"></span><span class="harita-perde-kat"></span></span><span class="harita-bolum-kart-ic"><span class="harita-bolum-kart-cizgi"></span><span class="harita-bolum-kart-yuzyil"></span><b></b><span class="harita-bolum-kart-bilgi"></span><span class="harita-bolum-kart-cizgi"></span></span></div>
+    <div class="harita-bolum-kart" data-harita-kart data-test="harita-kart" aria-hidden="true"><span class="harita-bolum-kart-ic"><span class="harita-bolum-kart-cizgi"></span><span class="harita-bolum-kart-yuzyil"></span><b></b><span class="harita-bolum-kart-bilgi"></span><span class="harita-bolum-kart-cizgi"></span></span></div>
     <div class="harita ${tur}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
       ${harita.bolgeler.map((b, i) => resimHtml(b, i, h, tur, sinir)).join('')}
       <svg class="harita-filtre" width="0" height="0" aria-hidden="true" focusable="false"><filter id="durak-kontur" color-interpolation-filters="sRGB"><feComponentTransfer in="SourceAlpha" result="m"><feFuncA type="discrete" tableValues="0 0 0 1 1 1"/></feComponentTransfer><feComposite in="SourceGraphic" in2="m" operator="in" result="g"/><feMorphology in="m" operator="dilate" radius="1.4" result="k"/><feFlood flood-color="#fff4dc"/><feComposite in2="k" operator="in" result="krem"/><feMorphology in="m" operator="dilate" radius="2.4" result="d"/><feFlood flood-color="#24170c"/><feComposite in2="d" operator="in" result="koyu"/><feMerge><feMergeNode in="koyu"/><feMergeNode in="krem"/><feMergeNode in="g"/></feMerge></filter><filter id="durak-kontur-ince" color-interpolation-filters="sRGB"><feComponentTransfer in="SourceAlpha" result="m"><feFuncA type="discrete" tableValues="0 0 0 1 1 1"/></feComponentTransfer><feComposite in="SourceGraphic" in2="m" operator="in" result="g"/><feMorphology in="m" operator="dilate" radius="1" result="d"/><feFlood flood-color="#24170c"/><feComposite in2="d" operator="in" result="koyu"/><feMerge><feMergeNode in="koyu"/><feMergeNode in="g"/></feMerge></filter></svg>
@@ -282,30 +282,12 @@ function kaydirmaIzle() {
 }
 // Dönem değişince ekranın ortasında kısa bir bölüm kartı: altın çizgi açılır, yüzyıl ve dönemin adı bulanıktan
 // netleşir, sonra yukarı doğru silinir. Hızlı kaydırınca her yeni dönemde baştan oynar. Dokunmayı engellemez.
-// Kartın arkasında dönemin pigmentinden üç katlı bir perde ekranı süpürür: ileri giderken (yukarı) alttan,
-// geri dönerken üstten gelir; kullanıcı yeni bir bölüme girdiğini hisseder.
-const PERDE_RENK = {
-  ortacag: '#5a1f1c',
-  ronesans: '#2f4a5c',
-  barok: '#3a2414',
-  barok2: '#4a3a1e',
-  aydinlanma: '#6a4a56',
-  romantik: '#2c3a3a',
-  empresyonizm: '#34506a',
-  postempresyonizm: '#3a3050',
-  modern: '#1e1e2a',
-};
+// (Emre: dönem değişince ekranı süpüren renkli perde kalktı; kart ve yazısı kalıyor)
 let kartSustur = 0;
 let kartZamanlayici = null;
-let sonKartBolge = null;
 function bolumKarti(b) {
   const kart = ekran.querySelector('[data-harita-kart]');
-  const onceki = sonKartBolge;
-  sonKartBolge = b.id;
   if (!kart || azHareket() || Date.now() < kartSustur) return;
-  const sira = (id) => BOLGELER.findIndex((x) => x.id === id);
-  kart.classList.toggle('geri', onceki != null && sira(b.id) < sira(onceki));
-  kart.style.setProperty('--perde', PERDE_RENK[b.id] || '#2a2420');
   const liste = (d.haritaDurum && d.haritaDurum.liste) || [];
   const bolum = liste.filter((x) => bolgeBul(x.sira).id === b.id);
   const acik = bolum.filter((x) => x.acik).length;
