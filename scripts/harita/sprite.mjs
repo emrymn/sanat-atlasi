@@ -21,6 +21,23 @@ const ORTAK_BAROK =
   "Painted in the same Baroque oil-painting style as the map in Image 1: glossy oil paint, warm golden theatrical light falling from the upper left, soft deep shadows on the far side, in the manner of Caravaggio and Rembrandt. The object itself is well lit so it reads clearly. At the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
 
 const ISLER = {
+  // Klasisizm ve Geç Barok (Emre onayladı): Güneş Kral'ın altın güneş amblemi, bulut üstünde yaldızlı putto; karakter aynı
+  // öğrenci, 17. yüzyıl sonu Fransız kıyafetiyle. Harita açık renkli (alt Lorrain, üst tavan freski): ortak açık üslup.
+  barok2: {
+    harita: 'cikti/barok2/barok2-secilen.jpg',
+    ornekNesne: 'cikti/ortacag/sprite/sembol-1.webp',
+    ornekYolcu: 'cikti/barok/sprite/karakter.webp',
+    isler: [
+      { ad: 'sembol-1', metin: "The golden sun emblem of Louis XIV, the Sun King: a gilded sun with a calm human face and straight and wavy rays, mounted upright on a small carved and gilded pedestal, standing on a small round paved stone base." },
+      { ad: 'sembol-2', metin: 'A small gilded Baroque putto (a winged child angel, wearing a fluttering pale rose drape) sitting on a little white cloud and holding up a laurel wreath, as in a Roman ceiling fresco by Gaulli or Pozzo, the cloud resting on a small round paved stone base.' },
+      {
+        ad: 'karakter',
+        yolcu: true,
+        metin:
+          'The same young male art student as in Image 2 (same face, hair, age, satchel and sketchbook), now dressed in late 17th-century French clothing: a long dark blue justaucorps coat with turned-back cuffs, a lace cravat, breeches, white stockings, buckled shoes and a tricorne hat. Full body, walking forward, friendly face. Same scale and feel as the traveller figure in Image 2.',
+      },
+    ],
+  },
   // Barok (Emre onayladı): Bernini'nin Davut'u, Caravaggio'nun Meyve Sepeti, Velázquez'in paleti, Rubens'in şapkası,
   // Vermeer'in süt testisi; karakter aynı öğrenci, 17. yüzyıl Flaman/Hollanda kıyafetiyle.
   barok: {
