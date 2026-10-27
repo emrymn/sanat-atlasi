@@ -1,15 +1,28 @@
 {
-  "aciklama": "Klasisizm ve Geç Barok seçimi (Emre): GPT Image 2 + 4 tablo (gpt-image-2-ref-cep.jpg) → Nano Banana Pro renk düzenlemesi (nano-banana-pro-uslup-cep.jpg). Emre: üst yarı canlı hâl, alt yarı ikisinin yarı yarıya karışımı (barok2-renk-B.jpg; y 0,47–0,55 arası yumuşak geçiş). Alt meydan havuza dönmüştü: gpt-image-2-havuz ile boş meydana boyanacak. GPT havuz düzenlemesini reddetti (resmin üstündeki melekler yüzünden olabilir); B'de havuz zaten taş zemine dönmüştü, yalnız fıskiyenin suyu elle yan zeminle örtüldü (barok2-secilen.jpg).",
-  "kaynak_resim": "cikti/barok2/barok2-renk-B.jpg",
+  "aciklama": "Klasisizm ve Geç Barok seçimi (Emre, baştan): GPT Image 2 + 2 tablo (gpt-image-2-ref-cep-v2.jpg; Piazzetta ve Ricci yalnız tarifle) → Nano Banana Pro bir tık canlı renk (nano-banana-pro-uslup-cep-v2.jpg, Emre 'ortadaki') → gökyüzüne çıkan yol Nano ile kaldırıldı, yalnız iskelet/barok2_iskelet_cep_maske_gokyol.png alanı birleştirildi (barok2-secilen.jpg). Önceki seçim yedekte: barok2-secilen-eski.jpg.",
+  "resim": "cikti/barok2/barok2-secilen.jpg",
   "duraklar": [
     [
-      0.317,
-      0.75
+      0.375,
+      0.7435
     ],
     [
-      0.605,
-      0.369
+      0.504,
+      0.403
     ]
   ],
-  "resim": "cikti/barok2/barok2-secilen.jpg"
+  "semboller": [
+    "sprite/sembol-1.webp",
+    "sprite/sembol-2.webp"
+  ],
+  "karakter": "sprite/karakter.webp",
+  "boyut_pt": {
+    "sembol": 56,
+    "karakter": 72
+  },
+  "karakter_kayma": [
+    0.085,
+    -0.012
+  ],
+  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)"
 }
