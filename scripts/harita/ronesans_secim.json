@@ -3,8 +3,16 @@
   "resim": "cikti/ronesans/ronesans-secilen.jpg",
   "duraklar": [
     [
+      0.293,
+      0.962
+    ],
+    [
       0.519,
       0.926
+    ],
+    [
+      0.332,
+      0.765
     ],
     [
       0.7686,
@@ -66,5 +74,47 @@
     0.085,
     -0.012
   ],
-  "resim_gece": "cikti/ronesans/ronesans-secilen-gece.jpg"
+  "resim_gece": "cikti/ronesans/ronesans-secilen-gece.jpg",
+  "duraklar_eski": [
+    [
+      0.519,
+      0.926
+    ],
+    [
+      0.7686,
+      0.7335
+    ],
+    [
+      0.469,
+      0.6135
+    ],
+    [
+      0.767,
+      0.4456
+    ],
+    [
+      0.544,
+      0.304
+    ],
+    [
+      0.772,
+      0.1667
+    ],
+    [
+      0.42,
+      0.105
+    ]
+  ],
+  "seviye_semboller": [
+    "sembol-ghiberti",
+    "sembol-uccello",
+    "sembol-1",
+    "sembol-2",
+    "sembol-3",
+    "sembol-4",
+    "sembol-5",
+    "sembol-6",
+    "sembol-7"
+  ],
+  "meydan_notu": "Emre: uygulamada 9 seviye (Erken Rönesans ×3 …), haritada 7 meydan vardı; 2 meydan 4. meydandan kopyalanıp eklendi (gündüz ve gece; ücretsiz). Yedek: ronesans-secilen-eski-meydan.jpg."
 }

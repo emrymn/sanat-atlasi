@@ -184,6 +184,8 @@ const ISLER = {
       { ad: 'sembol-1', metin: 'A small Byzantine-style icon panel of the Virgin and Child with a burnished gold background and a gilded arched frame, standing upright on a small round paved stone base, as painted by Cimabue or Berlinghieri.' },
       { ad: 'sembol-2', metin: 'A heraldic shield of Siena, the Balzana, split horizontally: white on top and black below, with a gilded rim, standing upright on a small round paved stone base.' },
       { ad: 'sembol-3', metin: 'An open illuminated Book of Hours on a small carved wooden lectern, its pages showing tiny jewel-coloured miniatures, a deep blue page with gold stars, and gilded initials, as made by the Limbourg brothers, standing on a small round paved stone base.' },
+      { ad: 'sembol-antik', metin: 'A Greek black-figure amphora with two handles, orange clay with black painted figures of a horse-drawn chariot and warriors with round shields, and a meander band, standing on a small round paved stone base.' },
+      { ad: 'sembol-romanesk', metin: 'A small model of the round Romanesque Baptistery of Pisa by Diotisalvi, in white and grey striped marble with rows of small round arches and a domed roof, standing on a small round paved stone base.' },
       {
         ad: 'karakter',
         yolcu: true,
@@ -204,6 +206,8 @@ const ISLER = {
       { ad: 'sembol-5', metin: 'A Venetian striped mooring pole (blue and white spiral stripes) with a small iron lantern hanging from it, standing on a small round paved stone base.' },
       { ad: 'sembol-6', metin: 'A large carved chess king piece in ivory and gold, as in Sofonisba Anguissola’s The Chess Game, standing on a small round paved stone base.' },
       { ad: 'sembol-7', metin: 'A tall vase with a very long, elegant neck, as held by the angel in Parmigianino’s Madonna with the Long Neck, standing on a small round paved stone base.' },
+      { ad: 'sembol-ghiberti', metin: "A small gilded bronze relief panel from Ghiberti's Gates of Paradise in Florence, a square panel with tiny figures and buildings in perspective inside a decorated gilt frame, standing upright on a small round paved stone base." },
+      { ad: 'sembol-uccello', metin: "A mazzocchio, the faceted wooden ring-shaped headdress frame drawn in perspective by Paolo Uccello: a torus made of many small checkered facets in black and pale wood, resting on a small round paved stone base." },
       {
         ad: 'karakter',
         yolcu: true,
