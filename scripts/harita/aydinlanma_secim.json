@@ -1,5 +1,5 @@
 {
-  "aciklama": "Rokoko ve Neoklasisizm seçimi (Emre): GPT Image 2 + 3 tablo, 2. deneme (gpt-image-2-ref-cep-v2.jpg, B). Emre: gökyüzüne giden yol kalksın → yolun ufkun üstündeki parçası soldaki gök ve kent silüetiyle elle örtüldü (180 px kaydırılmış kopya, yumuşak kenar); aydinlanma-secilen.jpg.",
+  "aciklama": "Rokoko ve Neoklasisizm seçimi (Emre): GPT Image 2 + 3 tablo, 2. deneme (gpt-image-2-ref-cep-v2.jpg, B). Emre: gökyüzüne giden yol kalksın → yolun ufkun üstündeki parçası soldaki gök ve kent silüetiyle elle örtüldü (180 px kaydırılmış kopya, yumuşak kenar); aydinlanma-secilen.jpg. Emre: en üstte meydanı aşıp binalara dayanan yol parçası da kalksın → bolge.mjs ile GPT'ye yalnız üst bant (y 0–1536) gönderildi, maske ustyol; yol artık Panthéon meydanında bitiyor (aydinlanma_ustyol-birlesik.jpg = aydinlanma-secilen.jpg). Önceki: aydinlanma-secilen-eski.jpg.",
   "kaynak_resim": "cikti/aydinlanma/gpt-image-2-ref-cep-v2.jpg",
   "resim": "cikti/aydinlanma/aydinlanma-secilen.jpg",
   "duraklar": [
@@ -15,5 +15,20 @@
       0.78,
       0.201
     ]
-  ]
+  ],
+  "semboller": [
+    "sprite/sembol-1.webp",
+    "sprite/sembol-2.webp",
+    "sprite/sembol-3.webp"
+  ],
+  "karakter": "sprite/karakter.webp",
+  "boyut_pt": {
+    "sembol": 56,
+    "karakter": 72
+  },
+  "karakter_kayma": [
+    0.085,
+    -0.012
+  ],
+  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)"
 }
