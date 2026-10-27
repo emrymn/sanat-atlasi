@@ -7030,10 +7030,11 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
     opacity: var(--k, 1);
     transform: translateY(calc((1 - var(--k, 1)) * 14px));
   }
+  /* bulanıktan netleşme (filter: blur) yok: iOS Safari kaydırırken her karede yeniden çizilen bulanık katmanın
+     kenarında macenta dik bir çizgi bırakıyordu (İş 45); ad solukluktan belirip büyüyerek gelir */
   .harita-gecis-yazi b {
     opacity: calc(var(--k, 1) * 1.3 - 0.15);
     transform: scale(calc(0.86 + var(--k, 1) * 0.14));
-    filter: blur(calc((1 - var(--k, 1)) * 4px));
   }
   .harita-gecis.kilitli .harita-gecis-yazi b {
     opacity: calc(var(--k, 1) * 0.95 - 0.15);
