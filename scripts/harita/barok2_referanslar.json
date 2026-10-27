@@ -14,20 +14,6 @@
       "sanatci": "Claude Lorrain",
       "eser": "The Village Festival",
       "dosya": "gorseller/b/e39b2066cca1060d.jpg"
-    },
-    {
-      "oncelik": 3,
-      "seviye": 2,
-      "sanatci": "Giovanni Battista Piazzetta",
-      "eser": "Rebecca and Eliezer at the Well",
-      "dosya": "gorseller/b/562f15ca3f17c538.jpg"
-    },
-    {
-      "oncelik": 4,
-      "seviye": "the sky above plaza 2",
-      "sanatci": "Sebastiano Ricci",
-      "eser": "Apotheosis of Saint Sebastian",
-      "dosya": "gorseller/b/cb401c8ac504385c.jpg"
     }
   ],
   "cikarilan": [
@@ -48,6 +34,18 @@
       "eser": "Seaport with the Embarkation of Saint Ursula",
       "dosya": "gorseller/b/3124538ac2720d16.jpg",
       "neden": "Emre: en altta deniz olmasın, yol kesintisiz devam etsin"
+    },
+    {
+      "sanatci": "Giovanni Battista Piazzetta",
+      "eser": "Rebecca and Eliezer at the Well",
+      "dosya": "gorseller/b/562f15ca3f17c538.jpg",
+      "neden": "GPT iki kez reddetti (safety: sexual; dekolte/yarı çıplak figürler); yalnız istemdeki tarifle (giyinik) çizilecek"
+    },
+    {
+      "sanatci": "Sebastiano Ricci",
+      "eser": "Apotheosis of Saint Sebastian",
+      "dosya": "gorseller/b/cb401c8ac504385c.jpg",
+      "neden": "GPT iki kez reddetti (safety: sexual; dekolte/yarı çıplak figürler); yalnız istemdeki tarifle (giyinik) çizilecek"
     }
   ]
 }
