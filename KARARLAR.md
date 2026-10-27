@@ -1183,3 +1183,11 @@ Emre: "harita kısmını baştan yapmak istiyorum… seviyelerin duruşu düzeni
 6. `scripts/harita/uygulama_hazirla.py` resimleri, sembolleri ve `data/harita.json`'ı (sürüm 2) üretir. Yeni dosya adları (`donem_`, `sembol_`, `ogrenci_`), çünkü gorseller/ önbelleği sürümden bağımsız. Eski harita silinmedi: `gorseller/harita_eski/` (eski harita.json dahil).
 7. Seviye sayısı uygulamanın gösterdiği (görseli olan) sanatçılardan kurulur: Orta Çağ 3, Rönesans 7… Bir ara bütün sanatçılarla sayıp iki döneme fazladan meydan ekledim; yanlıştı, geri alındı.
 8. Test: `tests/unit/harita.test.mjs` (meydan ve sembol sayıları, dosyalar, motif hikâyeleri, bitişik yerleşim, sepya sınırı), `tests/e2e/harita.spec.js` (9 dönem, sepya). Bölüm sonucundaki sallanma testi bu ortamda (Playwright 1.63) değişiklikten önce de başarısızdı.
+
+## İş 42 · Geliştirici modu (2026-10-27, v1.39.0)
+
+Emre: "geliştirici butonu ekle her şeyi açsın kapanınca en son haline geri dönsün".
+1. Ayarlar'da "Geliştirici modu" anahtarı. Açılınca o anki ilerleme (ve yarım kalan oturum) `ilerleme.gelistirici.yedek` içine kopyalanır; bütün konular işlenmiş, bütün harita bölümlerinin Kolay'ı ve Orta'sı geçilmiş sayılır (Zor da açılır, tanıtımlar ilk girişte yine gösterilir).
+2. Kapanınca yedek olduğu gibi geri gelir: mod açıkken verilen cevaplar, bölüm sonuçları, işaretlenen konular atılır. Yalnız ayarlar (tema, kart sayısı…) güncel hâliyle kalır, çünkü onlar ilerleme değil.
+3. Yedek ayrı bir anahtarda değil ilerlemenin içinde tutulur: uygulama kapanıp açılınca, IndexedDB yansısında ve "Yedekle" metninde de korunur; bozuk yedek kaydı modu kapatır (asıl ilerlemeye dokunmaz).
+4. Test: `tests/unit/depo.test.mjs` (aç → yedek metni → kapat gidiş-dönüşü), `tests/e2e/gelistirici.spec.js` (harita: 1 açık durak → hepsi açık → yeniden açılışta mod sürer → kapatınca yine 1).

@@ -2,7 +2,7 @@
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { sanatciEserleri, pekistirmeHavuzu, TEST_HAVUZU } from '../eserler.js';
 import { gorselUrl, secilenGorsel } from '../gorsel.js';
-import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR } from '../depo.js';
+import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
 import { acikListe, bugun, kotuler, d, gununRengi, ciz, ust, TEMA_AD, TAHMINI_GORSEL_KB, ekran, kaydet, temaUygula } from './ortak.js';
@@ -16,6 +16,7 @@ import { vadeSayisi, yarinVade } from '../gecmis.js';
 import { rozetDestekli, rozetYaz, rozetIzni } from '../rozet.js';
 import { bildirimMetni } from '../bildirim.js';
 import { YENILIKLER, yenilikYazisi } from '../yenilikler.js';
+import { bolumler } from './harita.js';
 
 // ---------- Ayarlar ----------
 async function indirilecekler() {
@@ -103,6 +104,9 @@ export function ayarlarSayfasi() {
         <p class="mesaj" id="geri-mesaj" aria-live="polite"></p>
       </div>
       ${bildirimBolumu()}
+      <div class="ayar"><label class="konu"><span class="metin"><b>Geliştirici modu</b><small>Bütün konular, sanatçılar ve harita bölümleri açılır. Kapatınca açmadan önceki ilerlemen olduğu gibi geri gelir; mod açıkken çözdüklerin sayılmaz.</small></span>
+        <input class="anahtar" type="checkbox" role="switch" data-ayar-gelistirici ${d.ilerleme.gelistirici ? 'checked' : ''} aria-label="Geliştirici modu"></label>
+        <p class="mesaj" id="gelistirici-mesaj" aria-live="polite"></p></div>
       <div class="ayar"><b>Yenilikler</b>
         <ul class="yenilik-liste" data-test="yenilikler">${YENILIKLER.map((x) => `<li>${kacis(yenilikYazisi(x))}</li>`).join('')}</ul>
       </div>
@@ -296,6 +300,27 @@ export function olaylariBagla() {
       m.className = 'mesaj tamam';
       m.textContent = e.target.checked ? 'Açıldı: Bugün’de telefonu çevir.' : 'Kapatıldı.';
       egimIzinDugmesi();
+      return;
+    }
+    if (e.target.matches('[data-ayar-gelistirici]')) {
+      const m = document.getElementById('gelistirici-mesaj');
+      if (e.target.checked) {
+        const konular = [...new Set([...d.konular.map((k) => k.no), ...d.sanatcilar.map((s) => s.konu)])].filter(Number.isInteger);
+        d.ilerleme = gelistiriciAc(d.ilerleme, konular, bolumler().map((b) => b.id), d.yarim);
+        m.textContent = 'Açıldı: her şey açık. Kapatınca ilerlemen geri gelir.';
+      } else {
+        const { ilerleme, yarim } = gelistiriciKapat(d.ilerleme);
+        d.ilerleme = ilerleme;
+        if (kayitGecerliMi(yarim)) {
+          d.yarim = yarim;
+          idbKoy('oturum', 'yarim', yarim);
+        } else yarimSil();
+        m.textContent = 'Kapatıldı: ilerlemen açmadan önceki haline döndü.';
+      }
+      d.oturum = null;
+      kaydet();
+      temaUygula();
+      m.className = 'mesaj tamam';
       return;
     }
     if (e.target.matches('[data-ayar-tanisma]')) {
