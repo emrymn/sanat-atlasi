@@ -24,5 +24,12 @@
     0.085,
     -0.012
   ],
-  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)"
+  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)",
+  "resim_gece": "cikti/barok2/barok2-secilen-gece.jpg",
+  "gece_notu": "Nano Banana Pro, istemler/barok2_gece.txt (Versailles gece şenliği: havai fişek, meşale, fener; Emre). Gündüzle üst üste ölçüldü, meydanlar boş, yanlarında fener.",
+  "gece_sembol_tonu": [
+    0.88,
+    0.7,
+    0.48
+  ]
 }
