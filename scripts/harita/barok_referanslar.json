@@ -1,0 +1,14 @@
+{
+  "aciklama": "Barok gizli eserleri (Emre onayladı; Breda yerine Las Meninas). Seviye başına 1; Vermeer'in Delft Görünümü 5. seviyenin yapısı (bölgeli düzende üstte seviyesiz alan kalmadı). Hepsi depodaki yerel kopyalar. Rubens: yalnız orta pano (yan panolar kesildi).",
+  "tablolar": [
+    { "oncelik": 1, "seviye": 1, "sanatci": "Guido Reni", "eser": "Aurora", "dosya": "gorseller/b/e078b6ed3d5afb7f.jpg" },
+    { "oncelik": 2, "seviye": 2, "sanatci": "Caravaggio", "eser": "The Calling of Saint Matthew", "dosya": "gorseller/b/3716dff9fa186467.jpg" },
+    { "oncelik": 3, "seviye": 3, "sanatci": "Diego Velázquez", "eser": "Las Meninas", "dosya": "gorseller/b/bcb91846d700eabf.jpg" },
+    { "oncelik": 4, "seviye": 4, "sanatci": "Peter Paul Rubens", "eser": "The Elevation of the Cross (central panel)", "dosya": "gorseller/b/5cee7e13a5278a1a.jpg", "kirp": [296, 0, 952, 944] },
+    { "oncelik": 5, "seviye": 5, "sanatci": "Rembrandt", "eser": "The Night Watch", "dosya": "gorseller/b/53073e6ee15bcefe.jpg" },
+    { "oncelik": 6, "seviye": "the city beside plaza 5", "sanatci": "Johannes Vermeer", "eser": "View of Delft", "dosya": "gorseller/b/22cb9d3edbac514b.jpg" }
+  ],
+  "cikarilan": [
+    { "sanatci": "Diego Velázquez", "eser": "The Surrender of Breda", "dosya": "gorseller/b/42ca26a18794a24a.jpg", "neden": "Emre: Las Meninas olsun" }
+  ]
+}

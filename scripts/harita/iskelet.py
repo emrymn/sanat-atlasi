@@ -4,7 +4,7 @@
 # yol altta ve üstte ortadan girip çıkar (komşu dönemlerle birleşsin).
 # İki biçim (Emre ikisini de denemek istedi): yilankavi (seviyeler yolun üstünde) ve cep (ortada ince ana yol,
 # seviyeler kısa bir kolla bağlanan yan meydanlarda, bir sağ bir sol).
-# Kullanım: python3 scripts/harita/iskelet.py ronesans 7 [yilankavi|cep]
+# Kullanım: python3 scripts/harita/iskelet.py ronesans 7 [yilankavi|cep] [bolge]
 import json
 import math
 import sys
@@ -30,10 +30,11 @@ def firca(d, noktalar, gen):
         d.ellipse([px - gen / 2, py - gen / 2, px + gen / 2, py + gen / 2], fill=YOL)
 
 
-def iskelet(donem, n, bicim='yilankavi'):
+def iskelet(donem, n, bicim='yilankavi', bolge=False):
     im = Image.new('RGB', (W, H), ZEMIN)
     d = ImageDraw.Draw(im)
-    ys = [ALT - ARALIK * i for i in range(n)]
+    # bolge (Emre, Barok'tan itibaren): resim n eşit bölgeye (ülke/akım) bölünür, her seviye kendi bölgesinin ortasında
+    ys = [1 - (i + 0.5) / n for i in range(n)] if bolge else [ALT - ARALIK * i for i in range(n)]
     if bicim == 'cep':
         ana = lambda t: 0.5 + CEP_AMP * math.sin(2 * math.pi * CEP_TUR * t)
         firca(d, [(ana(k / 6000) * W, (1 - k / 6000) * H) for k in range(6001)], 52)
@@ -55,10 +56,10 @@ def iskelet(donem, n, bicim='yilankavi'):
     ek = '' if bicim == 'yilankavi' else f'_{bicim}'  # yılankavi eski adıyla kalır
     im.save(klasor / f'{donem}_iskelet{ek}.png')
     yol = {'amp': AMP, 'tur': TUR} if bicim == 'yilankavi' else {'amp': CEP_AMP, 'tur': CEP_TUR, 'kol': CEP_KOL}
-    bilgi = {'boyut': [W, H], 'bicim': bicim, 'duraklar': duraklar, 'yol': {**yol, 'alt': ALT, 'aralik': ARALIK}}
+    bilgi = {'boyut': [W, H], 'bicim': bicim, 'duraklar': duraklar, 'yol': {**yol, **({'bolge': n} if bolge else {'alt': ALT, 'aralik': ARALIK})}}
     (klasor / f'{donem}_iskelet{ek}.json').write_text(json.dumps(bilgi))
     return duraklar
 
 
 if __name__ == '__main__':
-    print(iskelet(sys.argv[1], int(sys.argv[2]), sys.argv[3] if len(sys.argv) > 3 else 'yilankavi'))
+    print(iskelet(sys.argv[1], int(sys.argv[2]), sys.argv[3] if len(sys.argv) > 3 else 'yilankavi', 'bolge' in sys.argv[4:]))
