@@ -7038,6 +7038,27 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .harita-gecis.kilitli .harita-gecis-yazi b {
   opacity: 0.75;
 }
+/* dönem eşiğinde durma (JS: esikte/esik): harita ekte kısa bir an bekler, ekranın kenarları kararır, ek ortada parlar */
+.harita::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  background: radial-gradient(ellipse 120% 60% at 50% 50%, rgba(14, 10, 6, 0) 35%, rgba(14, 10, 6, 0.62) 100%);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.harita.esikte::after {
+  opacity: 1;
+  transition-duration: 0.35s;
+}
+.harita-gecis-cizgi .elmas {
+  transition: scale 0.4s ease;
+}
+.harita-gecis.esik .harita-gecis-cizgi .elmas {
+  scale: 1.35;
+}
 /* henüz ekrana girmemiş duraklar görünmez; girince yere konar (JS: kondu, inis) */
 .harita.izleniyor .harita-durak:not(.kondu) {
   opacity: 0;

@@ -117,6 +117,8 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     requestAnimationFrame(() => konumaKaydir());
   }
   konumIzle();
+  durOrtaY = null;
+  durAtlanan = null;
   gecisleriIzle();
   kaydirmaIzle();
   requestAnimationFrame(kaydirmaIzle);
@@ -294,6 +296,7 @@ let kaydirmaBekliyor = false;
 function kaydirmaIzle() {
   const kap = ekran.querySelector('[data-test="harita"]');
   if (!kap) return;
+  esikteDur(kap);
   const boy = window.innerHeight;
   // derinlik: ekin yazısı haritadan biraz yavaş kayar (--p: ekin ekran ortasına uzaklığı, ekran boyu cinsinden)
   if (!azHareket()) {
@@ -357,6 +360,65 @@ function bolumKarti(b) {
     kap?.classList.remove('kart-acik');
   }, 2300);
 }
+// ---------- dönem eşiğinde durma ----------
+// Kaydırırken bir dönem eki ekranın ortasından geçince harita orada kısa bir süre durur: ek yumuşakça ortaya
+// oturur, kenarlar kararır, bölüm kartı oynar; bu sürede tekerlek/dokunma/tuş kaydırması yutulur, sonra serbest.
+// Aynı ek, ekran ondan uzaklaşana dek tekrar durdurmaz; uygulamanın kendi kaydırmasında (kartSustur) durulmaz.
+const DUR_SURE = 1400;
+const DUR_OTURMA = 550; // yumuşak oturma süresi; sonrasında kalan ivme hedefe geri çekilir
+let durOrtaY = null;
+let durBas = 0;
+let durHedef = 0;
+let durAtlanan = null;
+let durZamanlayici = null;
+const durdu = () => durBas && Date.now() - durBas < DUR_SURE;
+function esikteDur(kap) {
+  const boy = window.innerHeight;
+  const orta = window.scrollY + boy / 2;
+  if (durdu()) {
+    if (Date.now() - durBas > DUR_OTURMA && Math.abs(window.scrollY - durHedef) > 1) window.scrollTo(0, durHedef);
+    return;
+  }
+  const onceki = durOrtaY;
+  durOrtaY = orta;
+  // büyük sıçramalar (kaydırma çubuğu, bağlantı) durdurmaz; yalnız sürekli kaydırma
+  if (onceki === null || onceki === orta || Math.abs(orta - onceki) > boy * 0.6 || Date.now() < kartSustur) return;
+  for (const ek of kap.querySelectorAll('.harita-gecis')) {
+    const r = ek.getBoundingClientRect();
+    const y = r.top + r.height / 2 + window.scrollY;
+    if (ek === durAtlanan) {
+      if (Math.abs(y - orta) > boy * 0.45) durAtlanan = null;
+      continue;
+    }
+    if ((onceki < y && orta >= y) || (onceki > y && orta <= y)) return dur(kap, ek, y);
+  }
+}
+function dur(kap, ek, y) {
+  durAtlanan = ek;
+  durBas = Date.now();
+  durHedef = Math.max(0, Math.round(y - window.innerHeight / 2));
+  kap.classList.add('esikte');
+  ek.classList.add('esik');
+  window.scrollTo({ top: durHedef, behavior: azHareket() ? 'auto' : 'smooth' });
+  // dokunmatik ivme (parmak kalktıktan sonra) engellenemez; oturma bitince ek yeniden ortaya çekilir
+  setTimeout(() => {
+    if (durdu() && Math.abs(window.scrollY - durHedef) > 1) window.scrollTo({ top: durHedef, behavior: azHareket() ? 'auto' : 'smooth' });
+  }, DUR_OTURMA);
+  clearTimeout(durZamanlayici);
+  durZamanlayici = setTimeout(() => {
+    durBas = 0;
+    kap.classList.remove('esikte');
+    ek.classList.remove('esik');
+    durOrtaY = window.scrollY + window.innerHeight / 2;
+  }, DUR_SURE);
+}
+const DUR_TUSLAR = new Set(['ArrowUp', 'ArrowDown', 'PageUp', 'PageDown', 'Home', 'End', ' ']);
+function durGirdisi(e) {
+  if (!durdu()) return;
+  if (e.type === 'keydown' && !DUR_TUSLAR.has(e.key)) return;
+  e.preventDefault();
+}
+
 function kaydirmaSirasi() {
   if (kaydirmaBekliyor) return;
   kaydirmaBekliyor = true;
@@ -536,6 +598,7 @@ export function olaylariBagla() {
   });
   window.addEventListener('scroll', kaydirmaSirasi, { passive: true });
   window.addEventListener('resize', kaydirmaSirasi, { passive: true });
+  for (const tur of ['wheel', 'touchmove', 'keydown']) window.addEventListener(tur, durGirdisi, { passive: false });
 }
 
 // İlerleme'nin başındaki giriş: haritanın küçük özeti
