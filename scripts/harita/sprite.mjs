@@ -24,7 +24,49 @@ const ORTAK_BAROK =
 const ORTAK_ROMANTIK =
   "Painted in the same glowing oil-painting style as the map in Image 1 (same warm palette, visible brushwork), lit by the same warm golden late-afternoon sunlight falling from the upper right, with soft blue-violet shadows on the far side. The object itself is well lit so it reads clearly. At the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
 
+// Empresyonizm haritası geç yaz öğleden sonrasının sıcak altın ışığında (Emre); Monet'nin kırık fırçası
+const ORTAK_EMPRESYONIZM =
+  "Painted in the same luminous Impressionist style as the map in Image 1 (loose, broken, flickering brushstrokes, the same warm palette), lit by the same warm golden late-afternoon sunlight falling from the upper left, with soft violet-blue shadows on the far side. The object itself is well lit so it reads clearly. At the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
+
 const ISLER = {
+  // Empresyonizm (Emre onayladı; 7 seviyelik dönemin ilk yarısı): Degas'nın balerin pabuçları, İzlenim tuvalli şövale,
+  // Büyük Dalga'lı yelpaze; karakter aynı öğrenci, 1870'lerin Parisli genci olarak.
+  empresyonizm: {
+    harita: 'cikti/empresyonizm/empresyonizm-secilen.jpg',
+    ornekNesne: 'cikti/ortacag/sprite/sembol-1.webp',
+    ornekYolcu: 'cikti/romantik/sprite/karakter.webp',
+    ortak: ORTAK_EMPRESYONIZM,
+    isler: [
+      { ad: 'sembol-1', metin: "A pair of pale pink satin ballet pointe shoes with long ribbons and a small white tulle tutu, as in Degas's paintings of dancers, resting on a little round wooden stool, standing on a small round paved stone base." },
+      { ad: 'sembol-2', metin: "A small wooden folding plein-air easel holding a little canvas painted with Monet's Impression, Sunrise (a blue-grey harbour with a bright orange sun and its reflection), a palette with dabs of paint hanging from it, standing on a small round paved stone base." },
+      { ad: 'sembol-3', metin: "An open Japanese folding fan painted with Hokusai's Great Wave (a curling blue-and-white wave), standing upright in a small black lacquered stand, on a small round paved stone base." },
+      {
+        ad: 'karakter',
+        yolcu: true,
+        metin:
+          'The same young male art student as in Image 2 (same face, age, satchel and sketchbook), now dressed as a young Parisian of the 1870s on a summer day, as in Renoir and Caillebotte: a light cream linen jacket, a white shirt with a loose blue necktie, light trousers and brown shoes, a straw boater hat. Full body, walking forward, friendly face. Same scale and feel as the traveller figure in Image 2.',
+      },
+    ],
+  },
+  // Post-Empresyonizm, Sembolizm ve Art Nouveau (Emre onayladı; 7 seviyelik dönemin ikinci yarısı): Düşünen Adam,
+  // ayçiçekleri, kanatlı sfenks, Hayat Ağacı; karakter aynı öğrenci, 1890'ların ressamı olarak. Harita açık: ortak açık üslup.
+  postempresyonizm: {
+    harita: 'cikti/postempresyonizm/postempresyonizm-secilen.jpg',
+    ornekNesne: 'cikti/ortacag/sprite/sembol-1.webp',
+    ornekYolcu: 'cikti/romantik/sprite/karakter.webp',
+    isler: [
+      { ad: 'sembol-1', metin: "A small dark bronze statue of Rodin's The Thinker: a seated man resting his chin on his hand, on a rough rock, fully modelled in bronze (smooth stylised bronze body, no anatomical detail), on a small stone plinth, standing on a small round paved stone base." },
+      { ad: 'sembol-2', metin: "A bunch of bright yellow sunflowers in a yellow earthenware vase with a blue band, as in Van Gogh's Sunflowers, painted with thick swirling brushstrokes, standing on a small round paved stone base." },
+      { ad: 'sembol-3', metin: "A small pale marble statue of a mysterious winged sphinx with a woman's face and long hair, a lion's body and folded feathered wings, lying calmly on top of a short fluted column, as in the Symbolist paintings of Moreau and Khnopff; the statue is smooth stone with no anatomical detail, standing on a small round paved stone base." },
+      { ad: 'sembol-4', metin: "A small golden Tree of Life as in Gustav Klimt's frieze: a trunk with many branches curling into spirals, decorated with small golden leaves and colourful mosaic eyes and flowers, shimmering with gold leaf, standing on a small round paved stone base." },
+      {
+        ad: 'karakter',
+        yolcu: true,
+        metin:
+          'The same young male art student as in Image 2 (same face, age, satchel and sketchbook), now dressed as a young painter of the 1890s in the south of France, as in Van Gogh and Gauguin: a loose blue workman painter\'s smock, a red neckerchief, brown corduroy trousers and sturdy boots, no hat. Full body, walking forward, friendly face. Same scale and feel as the traveller figure in Image 2.',
+      },
+    ],
+  },
   // Romantizmden Realizme (Emre onayladı): Blake'in altın pergeli, Medusa'nın Salı maketi (figürsüz), Rossetti'nin narı,
   // Opera'nın altın liri, oraklı buğday demeti; karakter aynı öğrenci, 19. yüzyıl ortası ressam kıyafetiyle.
   romantik: {
