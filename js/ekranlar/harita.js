@@ -377,12 +377,13 @@ function bolumKarti(b) {
     kap?.classList.remove('kart-acik');
   }, 2300);
 }
-// geçiş animasyonları yalnızca ilerlerken (aşağı kaydırırken) oynar; geri dönüşte sessiz kalır
+// Yolculuk alttan başlar, yeni dönemler yukarıdadır: ilerlemek = yukarı kaydırmak. Geçiş animasyonları yalnızca
+// ilerlerken oynar; aşağı (eski dönemlere) dönüşte sessiz kalır.
 let sonKaydirmaY = typeof window !== 'undefined' ? window.scrollY : 0;
 let geriGidiyor = false;
 function kaydirmaSirasi() {
   const y = window.scrollY;
-  if (y !== sonKaydirmaY) geriGidiyor = y < sonKaydirmaY;
+  if (y !== sonKaydirmaY) geriGidiyor = y > sonKaydirmaY;
   sonKaydirmaY = y;
   if (kaydirmaBekliyor) return;
   kaydirmaBekliyor = true;
