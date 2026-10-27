@@ -1198,3 +1198,7 @@ Emre v0'da dönemler arasına köprü ekledi (PR #66, v1.40.0): iki resmin kenar
 1. `tests/e2e/paket8.spec.js` hâlâ 1.39.0 bekliyordu (v0 yalnız birim testindeki sürümü değiştirmiş): güncellendi.
 2. v0 ortadaki bölüm kartını çağırmayı bırakmıştı, adı köprüde yazıyor. Daha önce "kart dursun" dendiği için soruldu; Emre: "Kart kalksın". `bolumKarti`, kart HTML'i ve CSS'i silindi; harita testi köprüyü denetleyecek biçimde yeniden yazıldı (8 köprü, adı, ileri kaydırınca `gorundu`).
 3. Kabuk dosyaları değiştiği için sürüm 1.40.1 (düzeltme: Yenilikler'e satır yok).
+
+## İş 44 · v0: köprü kenarındaki dik şerit ve akan bulutlar (2026-10-28, v1.40.2)
+
+Emre v0'da (`v0/harita-bulut-duzeltme`) köprülerin iOS Safari'de kenarında görünen mor dik şeridi düzeltti (bulanık katmanlar yanlardan taşar, köprü `isolation`/`contain: paint` ile kendi içinde boyanır, `mix-blend-mode` kaldırıldı) ve köprüye yavaşça süzülen üç bulut tutamı ile nefes alan ışık ekledi (köprü görününce oynar, hareket azaltmada durur). v0 sürümü artırmadığı için 1.40.2 yapıldı; yoksa telefon yeni css'i çekmezdi (İş 38).
