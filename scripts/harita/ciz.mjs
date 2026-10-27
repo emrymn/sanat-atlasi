@@ -79,6 +79,9 @@ const ISLER = [
   // Klasisizm (Emre: ortadaki Nano renkli hâl; gökyüzüne çıkan yol garip, kalksın): Nano düzenler (GPT melekler yüzünden
   // reddediyor); birlestir.py ile yalnız iskelet/barok2_iskelet_cep_maske_gokyol.png alanı alınır. --kaynak nano-banana-pro-uslup-cep-v2
   { ad: 'nano-banana-pro-gokyol', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'gokyol', oran: '9:16', ref: false, fiyat: 0.15 },
+  // Rokoko gece (Emre: alttaki renkli kâğıt fenerler kopuk duruyor, üstle eşitle): Nano düzenler, birlestir.py ile yalnız alt
+  // üçte bir (iskelet/aydinlanma_iskelet_cep_maske_gecealt.png). --kaynak nano-banana-pro-gece-cep
+  { ad: 'nano-banana-pro-gecealt', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'gecealt', oran: '9:16', ref: false, fiyat: 0.15 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
