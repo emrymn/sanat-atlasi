@@ -6888,13 +6888,13 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .harita-resim.ust-kat {
   pointer-events: none;
 }
-/* ---- dönem arası (İş 43): iki resmin arasında bulut denizi; resimleri örtmez. Kenarlarda iki dönemin aynalanmış,
-   bulanık kenarı buluta akar; dört köşeden iki katman bulut, ortada yapışkan (sticky) dönem adı: ara ekrandan
-   geçerken ad bir süre ortada durur, kaydırma engellenmeden yavaşlama hissi verir. ---- */
+/* ---- dönem arası (İş 43): iki resmin arasında köprü; resimleri örtmez. Üstteki resmin alt kenarı aşağı, alttakinin
+   üst kenarı yukarı aynalanır; kenarda net, ortaya doğru bulanıklaşarak birbirine karışır. Ortada ince sis tülü,
+   içinden sızan ışık ve yapışkan (sticky) dönem adı. ---- */
 .harita-gecis {
-  --gok: #e7e4dc;
-  --bulut: #fbf8f1;
-  --bulut-golge: #d9d5cb;
+  --gok: #d8d2c4;
+  --sis: 250, 244, 232;
+  --isik: 255, 224, 160;
   position: absolute;
   left: 0;
   width: 100%;
@@ -6907,103 +6907,70 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   background: var(--gok);
 }
 .harita.gece .harita-gecis {
-  --gok: #0f121a;
-  --bulut: #6a7387;
-  --bulut-golge: #343b4c;
+  --gok: #141821;
+  --sis: 118, 130, 158;
+  --isik: 255, 208, 140;
 }
+/* aynalanmış kenar: span kendi ortasında ters çevrilir, maske de onunla döner (öğe koordinatında tanımlı) */
 .harita-gecis-renk {
   position: absolute;
-  left: 0;
-  width: 100%;
-  height: 50%;
+  inset: 0;
   background-repeat: no-repeat;
   transform: scaleY(-1);
-  filter: blur(5px);
-  opacity: 0.9;
 }
-/* üstteki dönemin alt kenarı aynalanıp aşağı, alttakinin üst kenarı yukarı akar */
 .harita-gecis-renk.ust {
-  top: 0;
   background-position: 50% 100%;
-  -webkit-mask-image: linear-gradient(to top, #000, transparent 80%);
-  mask-image: linear-gradient(to top, #000, transparent 80%);
 }
 .harita-gecis-renk.alt {
-  top: 50%;
   background-position: 50% 0;
-  -webkit-mask-image: linear-gradient(to bottom, #000, transparent 80%);
-  mask-image: linear-gradient(to bottom, #000, transparent 80%);
 }
-.harita-gecis.sepya .harita-gecis-renk {
-  filter: blur(5px) grayscale(1) sepia(0.55) brightness(0.97) contrast(0.92);
+.harita-gecis-renk.yumusak {
+  filter: blur(14px) saturate(1.08);
 }
-/* bulut kümesi: tabanı düz, üstü kabarık; üst kenardakiler ters çevrilir, sağdakiler aynalanır */
-.harita-bulut {
+.harita-gecis-renk.net {
+  filter: blur(1.5px);
+}
+.harita-gecis-renk.ust.yumusak {
+  -webkit-mask-image: linear-gradient(to top, #000 12%, transparent 92%);
+  mask-image: linear-gradient(to top, #000 12%, transparent 92%);
+}
+.harita-gecis-renk.alt.yumusak {
+  -webkit-mask-image: linear-gradient(to bottom, #000 12%, transparent 92%);
+  mask-image: linear-gradient(to bottom, #000 12%, transparent 92%);
+}
+.harita-gecis-renk.ust.net {
+  -webkit-mask-image: linear-gradient(to top, #000, transparent 32%);
+  mask-image: linear-gradient(to top, #000, transparent 32%);
+}
+.harita-gecis-renk.alt.net {
+  -webkit-mask-image: linear-gradient(to bottom, #000, transparent 32%);
+  mask-image: linear-gradient(to bottom, #000, transparent 32%);
+}
+.harita-gecis.sepya .harita-gecis-renk.yumusak {
+  filter: blur(14px) grayscale(1) sepia(0.55) brightness(0.97) contrast(0.92);
+}
+.harita-gecis.sepya .harita-gecis-renk.net {
+  filter: blur(1.5px) grayscale(1) sepia(0.55) brightness(0.97) contrast(0.92);
+}
+/* ince sis tülü: köprünün ortasında yatay, yumuşak kenarlı */
+.harita-gecis-sis {
   position: absolute;
-  width: 74%;
-  height: 46%;
+  inset: 16% -22%;
   background:
-    radial-gradient(closest-side, var(--c) 64%, transparent) 0% 100% / 44% 78% no-repeat,
-    radial-gradient(closest-side, var(--c) 64%, transparent) 30% 100% / 50% 100% no-repeat,
-    radial-gradient(closest-side, var(--c) 64%, transparent) 62% 100% / 42% 70% no-repeat,
-    radial-gradient(closest-side, var(--c) 64%, transparent) 92% 100% / 36% 52% no-repeat,
-    linear-gradient(var(--c), var(--c)) 0 100% / 100% 34% no-repeat;
-  -webkit-mask-image: linear-gradient(to right, #000 70%, transparent);
-  mask-image: linear-gradient(to right, #000 70%, transparent);
-  filter: drop-shadow(0 -3px 4px rgba(0, 0, 0, 0.25));
+    radial-gradient(ellipse 38% 46% at 28% 46%, rgba(var(--sis), 0.5), rgba(var(--sis), 0) 72%),
+    radial-gradient(ellipse 44% 40% at 70% 56%, rgba(var(--sis), 0.45), rgba(var(--sis), 0) 72%),
+    linear-gradient(to bottom, rgba(var(--sis), 0), rgba(var(--sis), 0.32) 50%, rgba(var(--sis), 0));
+  filter: blur(8px);
 }
-.harita-bulut.arka {
-  --c: var(--bulut-golge);
-  height: 58%;
-  width: 82%;
-}
-.harita-bulut.on {
-  --c: var(--bulut);
-}
-.harita-bulut.alt {
-  bottom: -1px;
-}
-.harita-bulut.ust {
-  top: -1px;
-}
-.harita-bulut.sol {
-  left: -6%;
-}
-.harita-bulut.sag {
-  right: -6%;
-}
-.harita-bulut.ust.sol {
-  scale: 1 -1;
-}
-.harita-bulut.alt.sag {
-  scale: -1 1;
-}
-.harita-bulut.ust.sag {
-  scale: -1 -1;
-}
-/* bulutlar aralanınca arkadan sızan sıcak ışık */
+/* sisin içinden sızan sıcak ışık */
 .harita-gecis-yarik {
   position: absolute;
   left: 0;
   width: 100%;
-  top: 25%;
-  height: 50%;
-  background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(255, 226, 160, 0.75), rgba(255, 226, 160, 0));
-  opacity: 0;
-}
-.harita-gecis-kivilcim {
-  position: absolute;
-  inset: 0;
-}
-.harita-gecis-kivilcim i {
-  position: absolute;
-  left: var(--x);
-  top: 50%;
-  width: var(--b);
-  height: var(--b);
-  border-radius: 50%;
-  background: #ffe2a0;
-  box-shadow: 0 0 6px 1px rgba(255, 220, 150, 0.8);
+  top: 22%;
+  height: 56%;
+  background: radial-gradient(ellipse 52% 50% at 50% 50%, rgba(var(--isik), 0.7), rgba(var(--isik), 0.18) 55%, rgba(var(--isik), 0) 78%);
+  mix-blend-mode: screen;
   opacity: 0;
 }
 /* yapışkan dönem adı: ara ekranın ortasından geçerken ad ortada bekler */
@@ -7104,44 +7071,23 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   .harita-zaman-ic.degisti {
     animation: harita-zaman-degis 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
-  /* dönem arası: her şey kaydırmaya bağlı (JS her karede --p ve --k yazar), zamanlayıcı yok, beklemez.
-     İlerlerken bulutlar ortadan iki yana aralanır ve farklı hızlarda süzülür (derinlik); geri dönüşte donar. */
-  .harita-bulut {
+  /* köprü: kaydırmaya bağlı ama yumuşatılmış (JS her karede --p, --k yazar; hedefe ataletle yaklaşır). Kenar resimleri
+     yerinde durur (dikiş görünmez); sis tülü haritadan farklı hızda süzülür, ışık köprü ortaya geldikçe yavaşça yanar.
+     Geri dönüşte donar. */
+  .harita-gecis-sis {
     will-change: translate;
-  }
-  .harita-bulut.on.sol {
-    translate: calc(var(--k, 0) * -30%) calc(var(--p, 0) * 34px);
-  }
-  .harita-bulut.on.sag {
-    translate: calc(var(--k, 0) * 30%) calc(var(--p, 0) * 34px);
-  }
-  .harita-bulut.arka.sol {
-    translate: calc(var(--k, 0) * -14% + var(--p, 0) * 18%) calc(var(--p, 0) * 12px);
-  }
-  .harita-bulut.arka.sag {
-    translate: calc(var(--k, 0) * 14% + var(--p, 0) * 18%) calc(var(--p, 0) * 12px);
-  }
-  .harita-gecis-renk.ust {
-    translate: 0 calc(var(--k, 0) * -10px);
-  }
-  .harita-gecis-renk.alt {
-    translate: 0 calc(var(--k, 0) * 10px);
+    translate: calc(var(--p, 0) * -10%) calc(var(--p, 0) * 18px);
+    opacity: calc(0.6 + var(--k, 0) * 0.4);
   }
   .harita-gecis-yarik {
-    opacity: var(--k, 0);
-    scale: calc(0.6 + var(--k, 0) * 0.5) 1;
+    opacity: calc(var(--k, 0) * 0.85);
+    scale: calc(0.75 + var(--k, 0) * 0.4) calc(0.85 + var(--k, 0) * 0.25);
   }
   .harita-gecis-cizgi :is(.sol, .sag) {
     transform: scaleX(var(--k, 1));
   }
-  /* elmas kaydırma yönünde döner ve ortada büyür */
   .harita-gecis-cizgi .elmas {
-    rotate: calc(45deg + var(--p, 0) * 360deg);
-    scale: calc(0.5 + var(--k, 1) * 0.6);
-  }
-  .harita-gecis-kivilcim i {
-    transform: translateY(calc(var(--p, 0) * var(--hiz) * 90px)) scale(calc(0.4 + var(--k, 0)));
-    opacity: calc(var(--k, 0) * 0.95);
+    scale: calc(0.6 + var(--k, 1) * 0.4);
   }
   .harita-gecis-yuzyil {
     opacity: var(--k, 1);

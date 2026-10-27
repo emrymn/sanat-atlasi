@@ -191,27 +191,26 @@ function resimHtml(b, i, h, tur, sinir) {
 }
 
 // ---------- dönem araları ----------
-// İki dönem resminin arasında ARA boyunda bir bulut denizi (resimleri örtmez). Üstteki ve alttaki resmin kenarı
-// aynalanıp bulanık olarak buluta akar; dört kenardan bulut kümeleri, ortada yeni (yukarıdaki) dönemin adı.
-// Ad yapışkandır (sticky): ara ekrandan geçerken ad bir süre ortada durur, kaydırma engellenmeden yavaşlama hissi
-// verir. İlerlerken bulutlar ortadan iki yana aralanır, arkadaki ışık yanar (js: kaydirmaIzle → --p, --k).
-// bulut kümeleri: [dikey kenar, yatay kenar, katman]
-const BULUTLAR = [['ust', 'sol', 'arka'], ['ust', 'sag', 'arka'], ['alt', 'sol', 'arka'], ['alt', 'sag', 'arka'], ['ust', 'sol', 'on'], ['ust', 'sag', 'on'], ['alt', 'sol', 'on'], ['alt', 'sag', 'on']];
-// aralanan bulutların arasından yükselen altın kıvılcımlar: [yatay konum %, kaydırmaya göre hız, boy px]
-const KIVILCIMLAR = [[12, 1.6, 3], [24, -1.1, 2], [37, 2.3, 4], [49, -1.8, 2], [58, 1.2, 3], [71, -2.4, 3], [83, 1.9, 2], [92, -1.3, 4]];
+// İki dönem resminin arasında ARA boyunda bir köprü (resimleri örtmez). Üstteki resmin alt kenarı aşağı, alttakinin
+// üst kenarı yukarı aynalanıp gittikçe bulanıklaşarak ortada birbirine karışır: iki dönem kesintisiz akar. Ortada
+// ince bir sis tülü ve içinden sızan ışık; ışığın önünde yeni (yukarıdaki) dönemin adı. Ad yapışkandır (sticky).
+// Hareketler kaydırmaya bağlıdır ama yumuşatılarak izler (js: kaydirmaIzle → hedef, yumusat → --p, --k).
 function gecisHtml(alt, ustB, h, tur, sinir, liste) {
   const bas = ustB.ust + 1; // üstteki resmin alt kenarı (haritanın üstünden, resim boyu cinsinden); ara alt.ust'te biter
   const bolum = liste.filter((x) => bolgeBul(x.sira).id === ustB.id);
   const acik = bolum.filter((x) => x.acik).length;
   const sepya = alt.ust <= sinir;
   const yer = `top:${((bas / h) * 100).toFixed(3)}%;height:${((ARA / h) * 100).toFixed(3)}%`;
-  const serit = `background-size:100% ${(200 / ARA).toFixed(1)}%`;
+  const serit = `background-size:100% ${(100 / ARA).toFixed(1)}%`;
+  const ustResim = `${serit};background-image:url('${resimAdresi(ustB.id, tur)}')`;
+  const altResim = `${serit};background-image:url('${resimAdresi(alt.id, tur)}')`;
   return `<div class="harita-gecis${sepya ? ' sepya' : ''}${acik ? '' : ' kilitli'}" data-test="harita-gecis" data-gecis="${ustB.id}" style="${yer}">
-      <span class="harita-gecis-renk ust" aria-hidden="true" style="${serit};background-image:url('${resimAdresi(ustB.id, tur)}')"></span>
-      <span class="harita-gecis-renk alt" aria-hidden="true" style="${serit};background-image:url('${resimAdresi(alt.id, tur)}')"></span>
+      <span class="harita-gecis-renk ust yumusak" aria-hidden="true" style="${ustResim}"></span>
+      <span class="harita-gecis-renk alt yumusak" aria-hidden="true" style="${altResim}"></span>
+      <span class="harita-gecis-renk ust net" aria-hidden="true" style="${ustResim}"></span>
+      <span class="harita-gecis-renk alt net" aria-hidden="true" style="${altResim}"></span>
+      <span class="harita-gecis-sis" aria-hidden="true"></span>
       <span class="harita-gecis-yarik" aria-hidden="true"></span>
-      <span class="harita-gecis-kivilcim" aria-hidden="true">${KIVILCIMLAR.map(([x, hiz, b]) => `<i style="--x:${x}%;--hiz:${hiz};--b:${b}px"></i>`).join('')}</span>
-      ${BULUTLAR.map((s) => `<span class="harita-bulut ${s.join(' ')}" aria-hidden="true"></span>`).join('')}
       <p class="harita-gecis-yazi">
         <span class="harita-gecis-yuzyil">${kacis(ustB.yuzyil)}</span>
         <span class="harita-gecis-cizgi" aria-hidden="true"><i class="sol"></i><i class="elmas"></i><i class="sag"></i></span>
@@ -300,6 +299,32 @@ let ekGozcu = null;
 // cinsinden). Sağ üstteki gösterge ekranın ortasına en yakın dönemi yazar; dönem değişince kayarak değişir.
 const azHareket = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
 let kaydirmaBekliyor = false;
+// Köprü değerleri hedefe her karede bir miktar yaklaşır (ataletli izleme): ani kaydırmada bile geçiş süzülür.
+let yumusatiyor = false;
+function yumusat() {
+  const kap = ekran.querySelector('[data-test="harita"]');
+  if (!kap || !kap.isConnected) return (yumusatiyor = false);
+  let devam = false;
+  let enK = 0;
+  for (const ek of kap.querySelectorAll('.harita-gecis')) {
+    const h = ek._hedef;
+    const s = ek._su;
+    if (!h || !s) continue;
+    s.p += (h.p - s.p) * 0.16;
+    s.k += (h.k - s.k) * 0.09;
+    if (Math.abs(h.p - s.p) < 0.001 && Math.abs(h.k - s.k) < 0.001) {
+      s.p = h.p;
+      s.k = h.k;
+    } else devam = true;
+    if (s.k > enK) enK = s.k;
+    ek.style.setProperty('--p', s.p.toFixed(4));
+    ek.style.setProperty('--k', s.k.toFixed(4));
+  }
+  const perde = ekran.querySelector('[data-harita-perde]');
+  if (perde) perde.style.opacity = (enK * 0.35).toFixed(3);
+  if (devam) requestAnimationFrame(yumusat);
+  else yumusatiyor = false;
+}
 function kaydirmaIzle() {
   const kap = ekran.querySelector('[data-test="harita"]');
   if (!kap) return;
@@ -307,23 +332,22 @@ function kaydirmaIzle() {
   // zaman yarığı: animasyon kaydırmaya bağlıdır, beklemez. --p: ekin ekran ortasına uzaklığı (ekran boyu
   // cinsinden, -1…1); --k: ortaya yakınlık (0…1, yumuşatılmış). Ek ortaya geldikçe yarık açılır, çizgi uzar,
   // elmas döner, kıvılcımlar farklı hızlarda kayar, ekran kenarları kararır; uzaklaştıkça hepsi geri sarılır.
-  const perde = ekran.querySelector('[data-harita-perde]');
   if (!azHareket()) {
-    let enK = 0;
     for (const ek of kap.querySelectorAll('.harita-gecis')) {
       const r = ek.getBoundingClientRect();
       if (r.bottom < -boy || r.top > boy * 2) continue;
       const p = Math.max(-1, Math.min(1, (r.top + r.height / 2 - boy * 0.5) / boy));
-      const t = Math.max(0, 1 - Math.abs(p) / 0.6);
+      const t = Math.max(0, 1 - Math.abs(p) / 0.75);
       let k = t * t * (3 - 2 * t);
-      // geri giderken hiçbir şey oynamaz: ara olduğu gibi kalır; hiç görülmemişse açık (aralanmış) hâliyle durur
-      if (geriGidiyor) k = ek.dataset.k === undefined ? 1 : Number(ek.dataset.k);
-      ek.dataset.k = k.toFixed(3);
-      if (k > enK) enK = k;
-      ek.style.setProperty('--p', p.toFixed(3));
-      ek.style.setProperty('--k', k.toFixed(3));
+      // geri giderken hiçbir şey oynamaz: köprü olduğu gibi kalır; hiç görülmemişse açık hâliyle durur
+      if (geriGidiyor) k = ek._hedef ? ek._hedef.k : 1;
+      ek._hedef = { p, k };
+      if (!ek._su) ek._su = { p, k: geriGidiyor ? k : 0 };
     }
-    if (perde) perde.style.opacity = (enK * 0.85).toFixed(3);
+    if (!yumusatiyor) {
+      yumusatiyor = true;
+      requestAnimationFrame(yumusat);
+    }
   }
   const gosterge = ekran.querySelector('[data-harita-zaman]');
   if (!gosterge) return;
