@@ -283,7 +283,10 @@ function gecisleriIzle() {
   ekGozcu = new IntersectionObserver(
     (girdiler) => {
       if (!kap.isConnected) return ekGozcu.disconnect();
-      for (const g of girdiler) g.target.classList.toggle('gorundu', g.isIntersecting);
+      for (const g of girdiler) {
+        if (!g.isIntersecting) g.target.classList.remove('gorundu');
+        else if (!geriGidiyor) g.target.classList.add('gorundu');
+      }
     },
     { rootMargin: '-18% 0px -18% 0px', threshold: [0] },
   );
@@ -311,7 +314,10 @@ function kaydirmaIzle() {
       if (r.bottom < -boy || r.top > boy * 2) continue;
       const p = Math.max(-1, Math.min(1, (r.top + r.height / 2 - boy * 0.5) / boy));
       const t = Math.max(0, 1 - Math.abs(p) / 0.5);
-      const k = t * t * (3 - 2 * t);
+      let k = t * t * (3 - 2 * t);
+      // geri giderken yarık yeniden açılmaz, yalnızca kapanabilir
+      if (geriGidiyor) k = Math.min(k, Number(ek.dataset.k ?? 0));
+      ek.dataset.k = k.toFixed(3);
       if (k > enK) enK = k;
       ek.style.setProperty('--p', p.toFixed(3));
       ek.style.setProperty('--k', k.toFixed(3));
@@ -333,12 +339,12 @@ function kaydirmaIzle() {
   const b = BOLGELER.find((x) => x.id === en);
   if (!b || gosterge.dataset.bolge === en) return;
   const ilk = !gosterge.dataset.bolge;
-  if (!ilk) bolumKarti(b);
+  if (!ilk && !geriGidiyor) bolumKarti(b);
   gosterge.dataset.bolge = en;
   gosterge.querySelector('b').textContent = b.ad;
   gosterge.querySelector('b + span').textContent = b.yuzyil;
   gosterge.classList.add('gorunur');
-  if (ilk) return;
+  if (ilk || geriGidiyor) return;
   const ic = gosterge.querySelector('.harita-zaman-ic');
   ic.classList.remove('degisti');
   void ic.offsetWidth; // animasyonu baştan oynatmak için
@@ -371,7 +377,13 @@ function bolumKarti(b) {
     kap?.classList.remove('kart-acik');
   }, 2300);
 }
+// geçiş animasyonları yalnızca ilerlerken (aşağı kaydırırken) oynar; geri dönüşte sessiz kalır
+let sonKaydirmaY = typeof window !== 'undefined' ? window.scrollY : 0;
+let geriGidiyor = false;
 function kaydirmaSirasi() {
+  const y = window.scrollY;
+  if (y !== sonKaydirmaY) geriGidiyor = y < sonKaydirmaY;
+  sonKaydirmaY = y;
   if (kaydirmaBekliyor) return;
   kaydirmaBekliyor = true;
   requestAnimationFrame(() => {
