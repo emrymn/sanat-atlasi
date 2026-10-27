@@ -14,5 +14,11 @@
       0.73,
       0.154
     ]
+  ],
+  "resim_gece": "cikti/empresyonizm/empresyonizm-secilen-gece.jpg",
+  "gece_sembol_tonu": [
+    0.88,
+    0.7,
+    0.48
   ]
 }
