@@ -64,6 +64,9 @@ const ISLER = [
   // Altın göğe melek (maskeyle; tek istekteki üç değişikliği Nano Banana Pro baştan çizdi): yalnız altın alanlar ve sol alt köşe açık
   { ad: 'gpt-image-2-melek', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-uslup', maske: 'duzelt', sablon: 'melek', oran: '1:3', boyut: '1024x3072', ref: false,
     ekRef: ['gorseller/b/4f667b920dd4b8c9.jpg', 'gorseller/b/e3ad1487857b631e.jpg'], fiyat: 0.18 },
+  // Yol tek renk (Emre: Siena bölümündeki kırmızı tuğla taşa dönsün) + bazilikadaki bulanık oval: yalnız bu iki alan açık
+  // (iskelet/ortacag_iskelet_cep_maske_yol.png, seçilen resimden elle). Kaynak: --kaynak ortacag-secilen; sonra birlestir.py
+  { ad: 'gpt-image-2-yol', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-melek', maske: 'yol', sablon: 'yol', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.15 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -194,6 +197,7 @@ async function main() {
     serit: await readFile(path.join(BURASI, 'istemler', 'serit.txt'), 'utf8'),
     ekle: await readFile(path.join(BURASI, 'istemler', 'ekle.txt'), 'utf8'),
     melek: await readFile(path.join(BURASI, 'istemler', 'melek.txt'), 'utf8'),
+    yol: await readFile(path.join(BURASI, 'istemler', 'yol.txt'), 'utf8'),
   };
   const duzenleIstemi = (is, secilen) =>
     sablonlar[is.sablon || (is.maske === 'serit' || is.maske === 'ekle' ? is.maske : is.maske ? 'maske' : 'duzenle')]
