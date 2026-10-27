@@ -25,5 +25,22 @@
       0.366
     ]
   ],
-  "yol_denemesi": "Siena bölümündeki tuğla yolu taşa çevirme ve bazilikadaki bulanık ovali düzeltme denendi (gpt-image-2-yol, ortacag-yol-birlesik.jpg); GPT 2. meydanın kol yolunu sildi. Emre: şimdiki resim (A) kalsın."
+  "yol_denemesi": "Siena bölümündeki tuğla yolu taşa çevirme ve bazilikadaki bulanık ovali düzeltme denendi (gpt-image-2-yol, ortacag-yol-birlesik.jpg); GPT 2. meydanın kol yolunu sildi. Emre: şimdiki resim (A) kalsın.",
+  "resim_gece": "cikti/ortacag/ortacag-secilen-gece.jpg",
+  "semboller": [
+    "sprite/sembol-1.webp",
+    "sprite/sembol-2.webp",
+    "sprite/sembol-3.webp"
+  ],
+  "karakter": "sprite/karakter.webp",
+  "boyut_pt": {
+    "sembol": 56,
+    "karakter": 72
+  },
+  "karakter_kayma": [
+    0.085,
+    -0.012
+  ],
+  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)",
+  "gece_notu": "Nano Banana Pro, istemler/ortacag_gece.txt (altın gök mum ışığında; Emre). Gündüzle üst üste ölçüldü (≤2 px), meydanlar boş; gece_duzelt gerekmedi."
 }
