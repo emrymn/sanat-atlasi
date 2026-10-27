@@ -1,7 +1,9 @@
-// Yolculuk haritası (İş 24): 8 dönem resmi (her biri kendi döneminin üslubunda boyanmış), alttan (Orta Çağ)
-// yukarıya (Modern) dizilir; aralarında yeni dönemi duyuran sisli bir geçiş şeridi var. Her bölüm resimdeki yolun kenarında bir durak (o dönemin nesnesi),
-// "buradasın" durağında o dönemin yolcusu. Gündüz/gece saate göre. Konumlar, motif kutuları ve motif
-// metinleri data/harita.json'da (içerik klasöründeki betiklerle üretildi). Saf mantık burada (birim testli).
+// Yolculuk haritası (İş 24, yeni harita İş 41): 9 dönem resmi (her biri kendi döneminin üslubunda boyanmış), alttan
+// (Orta Çağ) yukarıya (Modern) aralarında şerit ya da sis olmadan bitişik dizilir (Emre: "direkt ekle, sis de ekleme").
+// Her bölüm, resimdeki yolun kenarında boş bir meydanda bir durak; her durağın kendi sembolü var (o seviyenin
+// sanatçılarından bir nesne). "Buradasın" durağında o dönemin kıyafetiyle öğrenci. Son açık durağın üstü sepya.
+// Gündüz/gece saate göre. Durak yerleri, sembol ölçüleri, motif kutuları ve motif metinleri data/harita.json'da
+// (scripts/harita/uygulama_hazirla.py üretir). Saf mantık burada (birim testli).
 
 export const BOLGELER = [
   { id: 'ortacag', ad: 'Orta Çağ', yuzyil: 'Antik çağdan XV. yüzyıla', ilk: 0, son: 3 },
@@ -10,39 +12,18 @@ export const BOLGELER = [
   { id: 'barok2', ad: 'Klasisizm ve Geç Barok', yuzyil: 'XVII–XVIII. yüzyıl', ilk: 13, son: 14 },
   { id: 'aydinlanma', ad: 'Rokoko ve Neoklasisizm', yuzyil: 'XVIII. yüzyıl', ilk: 15, son: 16 },
   { id: 'romantik', ad: 'Romantizmden Realizme', yuzyil: 'XIX. yüzyılın ilk yarısı', ilk: 17, son: 20 },
-  { id: 'ondokuz', ad: 'Empresyonizm ve sonrası', yuzyil: 'XIX. yüzyılın sonu', ilk: 21, son: 25 },
+  { id: 'empresyonizm', ad: 'Empresyonizm', yuzyil: 'XIX. yüzyılın son çeyreği', ilk: 21, son: 22 },
+  { id: 'postempresyonizm', ad: 'Post-Empresyonizm ve Sembolizm', yuzyil: 'XIX. yüzyıl sonu – XX. yüzyıl başı', ilk: 23, son: 25 },
   { id: 'modern', ad: 'Modern sanat', yuzyil: 'XX. yüzyıl', ilk: 26, son: 99 },
 ];
-// Resimler üst üste binerken sisli şeritler bu oranda kesişir (resim yüksekliğine oranla)
-export const BINME = 0.12;
-// Haritada dönemler arasına konan geçiş şeridi (resim yüksekliğine oranla); kaydırırken yeni döneme geçildiği
-// hissedilsin. BINME'den büyük olunca resimler artık üst üste binmez, aradaki boşluğu geçiş şeridi doldurur.
-export const ARA = 0.5;
-// Haritanın iki ucundaki şerit (resim yüksekliğine oranla): altta yolculuğun başladığı Orta Çağ'ın adı, üstte
-// yolun sonu; resimler sayfanın zeminine keskin kenarla değil, sisle karışarak biter.
-export const UC = 0.42;
-
-// Durak yerleşimi data/harita.json yerine burada elle verilen bölgeler: noktalar resimdeki yolun kenarında, alttan
-// üste kabaca eşit aralıkla, yolun bir sağına bir soluna (Modern'deki gibi düzenli). data/harita.json'daki noktalar
-// bu bölgelerde dip dipeydi (Rönesans'ta üç durak uzaktaki yolda üst üste, XIX. yüzyılda yedi durak kısa yolda).
-// Gündüz ve gece resimleri aynı resimden olduğu için ikisinde de aynı noktalar. olcek: o bölgenin sembol boyutu;
-// nesne: sembol resmi değiştiyse onun ölçüsü ve ayak noktası ({ w, h, ax, ay }, data/harita.json'daki gibi);
-// dosya: yeni sembolün dosya adı kökü (gorseller/ önbelleği sürümden bağımsız: aynı adla değişen resim telefonda yenilenmez).
-export const DURAK_DUZENI = {
-  ronesans: {
-    duraklar: [[0.52, 0.95], [0.3, 0.8], [0.68, 0.74], [0.28, 0.66], [0.68, 0.59], [0.44, 0.29], [0.53, 0.19]],
-    nesne: { w: 24.0, h: 52.0, ax: 0.4653, ay: 1.0 }, // kaide üstünde mermer büst (eskiden düz beyaz kaide)
-    dosya: 'ronesans_bust2',
-  },
-  romantik: {
-    nesne: { w: 32.0, h: 50.0, ax: 0.6146, ay: 0.8733 }, // sarmaşıklı direkte fener (eskiden yol tabelası)
-    dosya: 'romantik_fener',
-  },
-  ondokuz: {
-    duraklar: [[0.43, 0.875], [0.32, 0.805], [0.55, 0.735], [0.43, 0.665], [0.51, 0.595], [0.34, 0.525], [0.66, 0.455]],
-    olcek: 0.72,
-  },
-};
+// Haritanın genişliği ve bir dönem resminin yüksekliği (pt); dönem resimleri 1:3 (1024×3072)
+export const W = 390;
+export const H = 1170;
+// Son açık durağın bu kadar üstünden (resim yüksekliğine oranla) itibaren harita sepyaya döner; geçiş yumuşak
+export const SEPYA_PAY = 0.07;
+export const SEPYA_GECIS = 0.04;
+// data/harita.json'da ölçüsü olmayan sembol (fazladan bölüm açılırsa) için yedek ölçü
+const YEDEK_SEMBOL = { w: 34, h: 56, ax: 0.5, ay: 0.85 };
 
 export function bolgeBul(sira) {
   return BOLGELER.find((b) => sira >= b.ilk && sira <= b.son) || BOLGELER[BOLGELER.length - 1];
@@ -54,52 +35,47 @@ export function vakit(tarih = new Date()) {
   return s >= 7 && s < 19 ? 'gunduz' : 'gece';
 }
 
-export const resimAdresi = (bolge, tur) => `gorseller/harita/${bolge}_${tur}.webp`;
-// Yolcular ve bu bölgelerin sembolleri ekrandaki boyutlarının 3 katı çözünürlükte (_3x; İş 40): eskileri 1,25–2 kattı,
-// iPhone'un 3 kat ekranında büyütülüp bulanık görünüyordu. Rönesans büstü, Romantizm feneri ve XIX. yüzyıl sembolü
-// zaten ~3 kat. Yeni ad şart: gorseller/ önbelleği sürümden bağımsız, aynı adla değişen resim telefonda yenilenmez.
-const NESNE_3X = new Set(['ortacag', 'barok', 'barok2', 'aydinlanma', 'modern']);
-export const nesneAdresi = (bolge, tur) =>
-  `gorseller/harita/nesne_${(DURAK_DUZENI[bolge] && DURAK_DUZENI[bolge].dosya) || bolge}_${tur}${NESNE_3X.has(bolge) ? '_3x' : ''}.webp`;
-export const yolcuAdresi = (bolge, tur) => `gorseller/harita/yolcu_${bolge}_${tur}_3x.webp`;
+// Dosya adları eski haritanınkilerden farklı: gorseller/ önbelleği sürümden bağımsız, aynı adla değişen resim telefonda
+// yenilenmez (eskileri gorseller/harita_eski/ altında yedekte)
+export const resimAdresi = (bolge, tur) => `gorseller/harita/donem_${bolge}_${tur}.webp`;
+export const nesneAdresi = (bolge, no, tur) => `gorseller/harita/sembol_${bolge}_${no}_${tur}.webp`;
+export const yolcuAdresi = (bolge, tur) => `gorseller/harita/ogrenci_${bolge}_${tur}.webp`;
 
 /**
- * durumlar: bolumDurumlari().durumlar (akım sırasıyla); veri: data/harita.json; tur: 'gunduz' | 'gece'
- * ara: dönemler arası geçiş şeridi (resim yüksekliği cinsinden; 0 → resimler doğrudan sisle biner, ekran ARA verir)
- * uc: haritanın üst ve alt ucundaki şerit (aynı birimle; 0 → yok, ekran UC verir)
- * Dönen: { bolgeler: [{ ...bolge, ust (resmin haritadaki üst kenarı, resim yüksekliği cinsinden), olcek (sembol boyutu), duraklar: [{ ...durum, x, y }], motifler }],
- *          gecisler: [{ onceki, sonraki, ust, alt }] (alttaki resmin üst kenarı ile üstteki resmin alt kenarı arası),
- *          uclar: { ust: { bolge, ust, alt }, alt: { bolge, ust, alt } } (en üst resmin üstü, en alt resmin altı),
- *          yukseklik (resim yüksekliği cinsinden) }. Bölgeler alttan üste (Orta Çağ ilk); haritada Modern en üstte.
+ * durumlar: bolumDurumlari().durumlar (akım sırasıyla); veri: data/harita.json
+ * Dönen: { bolgeler: [{ ...bolge, ust (resmin haritadaki üst kenarı, resim yüksekliği cinsinden), yolcu,
+ *          duraklar: [{ ...durum, x, y, sembolNo, nesne: { w, h, ax, ay } }], motifler }], yukseklik }.
+ * Bölgeler alttan üste (Orta Çağ ilk); haritada Modern en üstte, resimler arasında boşluk yok.
  */
-export function haritaKur(durumlar, veri, tur, ara = 0, uc = 0) {
+export function haritaKur(durumlar, veri) {
   const n = BOLGELER.length;
-  const adim = 1 - BINME + ara;
-  const yukseklik = 1 + (n - 1) * adim + 2 * uc;
   const bolgeler = BOLGELER.map((b, i) => {
-    const v = (veri && veri.bolgeler && veri.bolgeler[b.id] && veri.bolgeler[b.id][tur]) || { duraklar: [], motifler: [] };
-    const duzen = DURAK_DUZENI[b.id];
-    const noktalar = (duzen && duzen.duraklar) || v.duraklar || [];
+    const v = (veri && veri.bolgeler && veri.bolgeler[b.id]) || {};
+    const noktalar = v.duraklar || [];
+    const semboller = v.semboller || [];
     const bunlar = durumlar.filter((x) => bolgeBul(x.sira).id === b.id);
     return {
       ...b,
-      ust: yukseklik - uc - 1 - i * adim,
-      nesne: (duzen && duzen.nesne) || v.nesne,
-      olcek: (duzen && duzen.olcek) || 1,
+      ust: n - 1 - i,
       yolcu: v.yolcu,
       duraklar: bunlar.map((x, j) => {
-        const k = noktalar[j] || noktalar[noktalar.length - 1] || [0.5, 0.5];
-        return { ...x, x: k[0], y: k[1] };
+        // haritada meydandan fazla bölüm olursa (yeni sanatçı görselleri) fazlası son meydanın biraz üstüne dizilir
+        const k = Math.max(0, Math.min(j, noktalar.length - 1));
+        const p = noktalar[k] || [0.5, 0.5];
+        const fazla = j - k;
+        return { ...x, x: p[0], y: Math.max(0.02, p[1] - fazla * 0.05), sembolNo: k + 1, nesne: semboller[k] || YEDEK_SEMBOL };
       }),
       motifler: v.motifler || [],
     };
   });
-  const gecisler = bolgeler.slice(1).map((sonraki, i) => ({ onceki: bolgeler[i], sonraki, ust: sonraki.ust + 1, alt: bolgeler[i].ust }));
-  const uclar = {
-    ust: { bolge: bolgeler[n - 1], ust: 0, alt: uc },
-    alt: { bolge: bolgeler[0], ust: yukseklik - uc, alt: yukseklik },
-  };
-  return { bolgeler, gecisler, uclar, yukseklik };
+  return { bolgeler, yukseklik: n };
+}
+
+// Haritanın bu yüksekliğinden (resim yüksekliği cinsinden, üstten) yukarısı sepya: son açık durağın SEPYA_PAY üstü.
+// Hiç açık durak yoksa bütün harita sepya.
+export function sepyaSiniri(harita) {
+  const acik = harita.bolgeler.flatMap((b) => b.duraklar.filter((x) => x.acik).map((x) => b.ust + x.y));
+  return acik.length ? Math.max(0, Math.min(...acik) - SEPYA_PAY) : harita.yukseklik;
 }
 
 // Kayıttaki "haritada görülen duraklar" listesini doğrular (yedekten gelen)

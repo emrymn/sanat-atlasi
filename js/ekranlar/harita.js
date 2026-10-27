@@ -1,20 +1,17 @@
-// Yolculuk haritası (İş 24): 8 dönem resmi alttan (Orta Çağ) yukarıya (Modern) dizilir; aralarındaki sisli geçiş
-// şeridine gelince sis aralanır, yeni dönemin adı belirir ve dönemin resmi solukken renklenir.
-// Her bölüm yolun kenarında, o dönemin nesnesiyle bir durak; açık durakların altında yumuşak bir ışık yanıp
-// söner, "buradasın" durağında dönemin yolcusu ve yukarıdan inen ışık. Durağa dokununca küçük pencere
+// Yolculuk haritası (İş 24, yeni harita İş 41): 9 dönem resmi alttan (Orta Çağ) yukarıya (Modern) aralarında şerit ya da
+// sis olmadan bitişik dizilir; son açık durağın üstü sepya. Dönem değişince sağ üstteki gösterge ve bölüm kartı söyler.
+// Her bölüm yolun kenarındaki meydanda kendi sembolüyle bir durak; açık durakların altında yumuşak bir ışık yanıp
+// söner, "buradasın" durağında dönemin kıyafetiyle öğrenci ve yukarıdan inen ışık. Durağa dokununca küçük pencere
 // (seviyeler, yıldızlar, sanatçılar, akım sayfası); resimdeki saklı motife dokununca eserin hikâyesi.
 import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
-import { haritaKur, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul, BOLGELER, BINME, ARA, UC } from '../harita.js';
+import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS } from '../harita.js';
 import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen } from './ortak.js';
 import { sanatciEserleri } from '../eserler.js';
 
-const W = 390;
-const H = 585;
-// Yolcu (karakter) resimdeki kalabalık figürlerden büyük çizilir; durağın soluna konur (semboller sağa doğru açılır)
-const YOLCU_OLCEK = 1.6;
-const YOLCU_ARA = 40;
+// Öğrenci durağın yanında durur: sağdaki meydanlarda sembolün solunda, soldakilerde sağında (haritanın içine doğru)
+const YOLCU_ARA = 34;
 let veriSozu = null;
 export function haritaVerisi() {
   veriSozu ||= jsonGetir('data/harita.json').catch(() => ({ bolgeler: {}, eserler: {} }));
@@ -37,7 +34,7 @@ const yildizHtml = (n) =>
   `<span class="harita-yildiz" role="img" aria-label="${n} / 3 yıldız">${[0, 1, 2].map((i) => `<i class="yildiz-sekil${i < n ? ' dolu' : ''}" style="--i:${i}"></i>`).join('')}</span>`;
 
 function durakHtml(b, x, h, tur, simdiki, yeni) {
-  const n = { ...b.nesne, w: b.nesne.w * b.olcek, h: b.nesne.h * b.olcek };
+  const n = x.nesne;
   const ustY = (b.ust + x.y) * H; // tabanın haritadaki yüksekliği (pt, harita yüksekliği h*H)
   const toplamY = h * H;
   const sol = ((x.x * W - n.ax * n.w) / W) * 100;
@@ -46,14 +43,14 @@ function durakHtml(b, x, h, tur, simdiki, yeni) {
   const etiketi = `${bolumAdi(x)}${x.acik ? `, ${x.yildiz} yıldız` : ', kilitli'}${x.id === simdiki ? ', buradasın' : ''}`;
   let parca = `<button type="button" class="harita-durak ${durum}${yeni ? ' yeni' : ''}" data-test="harita-durak" data-bolum="${x.id}" data-donem="${b.id}" data-acik="${x.acik}"
       style="left:${sol.toFixed(3)}%;top:${ustYuzde.toFixed(3)}%;width:${((n.w / W) * 100).toFixed(3)}%"
-      aria-label="${kacis(etiketi)}"><img alt="" decoding="async" src="${nesneAdresi(b.id, tur)}"></button>`;
+      aria-label="${kacis(etiketi)}"><img alt="" decoding="async" src="${nesneAdresi(b.id, x.sembolNo, tur)}"></button>`;
   const taban = `left:${((x.x * W) / W) * 100}%;top:${((ustY + 2) / toplamY) * 100}%`;
   if (x.acik) parca = `<span class="harita-isik" aria-hidden="true" style="${taban};animation-delay:${((x.no * 0.37) % 2.8).toFixed(2)}s"></span>` + parca;
   if (x.id === simdiki && b.yolcu) {
     const y = b.yolcu;
-    const yw = y.w * YOLCU_OLCEK;
-    const yh = y.h * YOLCU_OLCEK;
-    const hx = Math.max(22, x.x * W - YOLCU_ARA);
+    const yw = y.w;
+    const yh = y.h;
+    const hx = Math.min(W - 18, Math.max(18, x.x * W + (x.x > 0.5 ? -YOLCU_ARA : YOLCU_ARA)));
     const hy = ustY + 4;
     parca += `<span class="harita-sutun" aria-hidden="true" style="left:${(hx / W) * 100}%;top:${((hy - 170) / toplamY) * 100}%;height:${(174 / toplamY) * 100}%"></span>
       <span class="harita-yer" aria-hidden="true" style="left:${(hx / W) * 100}%;top:${((hy - 2) / toplamY) * 100}%"></span>
@@ -74,46 +71,6 @@ function motifHtml(b, m, i, h) {
       aria-label="Saklı motif ${i + 1}"></button>`;
 }
 
-// Dönem geçişi: iki resmin kenar renkleri bulanıkça birbirine akar (resimler yüklenince JS doldurur), ortada sis
-// ve yeni dönemin adı. Şerit resimlerin sisli kenarlarının altına da uzanır.
-function gecisHtml(g, h) {
-  const s = g.sonraki;
-  const ustY = g.ust - BINME;
-  const boy = g.alt + BINME - ustY;
-  const acik = s.duraklar.filter((x) => x.acik).length;
-  const bilgi = `${s.duraklar.length} bölüm · ${acik ? `${acik} açık` : 'henüz kilitli'}`;
-  return `<div class="harita-gecis${acik ? '' : ' kilitli'}" data-test="harita-gecis" data-gecis="${s.id}" data-onceki="${g.onceki.id}"
-      style="top:${((ustY / h) * 100).toFixed(3)}%;height:${((boy / h) * 100).toFixed(3)}%">
-      <span class="harita-gecis-renk ust" aria-hidden="true"></span><span class="harita-gecis-renk alt" aria-hidden="true"></span>
-      ${SISLER}
-      <p class="harita-gecis-yazi"><span class="harita-gecis-yuzyil">${kacis(s.yuzyil)}</span><b>${kacis(s.ad)}</b><span class="harita-gecis-bilgi">${bilgi}</span></p>
-    </div>`;
-}
-const SISLER = `<span class="harita-gecis-sisler" aria-hidden="true"><span class="harita-gecis-sis sol"></span><span class="harita-gecis-sis sag"></span></span>
-      <span class="harita-gecis-isik" aria-hidden="true"></span>`;
-
-// Haritanın iki ucu: en alt resmin altında yolculuğun başladığı dönemin adı, en üst resmin üstünde yolun sonu.
-// Şerit resmin kenar rengiyle başlar, sayfanın zeminine doğru söner (siyah bir kenarla kesilmez).
-function ucHtml(u, yer, h, liste) {
-  const b = u.bolge;
-  const ustY = yer === 'alt' ? u.ust - BINME : u.ust;
-  const boy = u.alt - u.ust + BINME;
-  const acik = liste.filter((x) => x.acik).length;
-  const yazi =
-    yer === 'alt'
-      ? `<span class="harita-gecis-yuzyil">${kacis(b.yuzyil)}</span><b>${kacis(b.ad)}</b><span class="harita-gecis-bilgi">Yolculuk buradan başlar · ${b.duraklar.length} bölüm</span>`
-      : `<span class="harita-gecis-yuzyil">${kacis(b.yuzyil)} ve sonrası</span><b>Yolun sonu</b><span class="harita-gecis-bilgi">${acik}/${liste.length} bölüm açık</span>`;
-  // alttaki şeridin üstünde en alt resmin alt kenarı ("ust" renk), üstteki şeridin altında en üst resmin üst kenarı
-  const renk = yer === 'alt' ? 'ust' : 'alt';
-  const veri = yer === 'alt' ? `data-gecis="${b.id}"` : `data-onceki="${b.id}"`;
-  return `<div class="harita-gecis harita-uc ${yer}" data-test="harita-uc" ${veri}
-      style="top:${((ustY / h) * 100).toFixed(3)}%;height:${((boy / h) * 100).toFixed(3)}%">
-      <span class="harita-gecis-renk ${renk}" aria-hidden="true"></span>
-      ${SISLER}
-      <p class="harita-gecis-yazi">${yazi}</p>
-    </div>`;
-}
-
 // konumuKoru: gündüz/gece değişince harita yeniden çizilir ama sayfa "buradasın"a zıplamaz, olduğu yerde kalır
 export async function haritaSayfasi({ konumuKoru = false } = {}) {
   const eskiY = window.scrollY;
@@ -123,7 +80,8 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
   if (!guncelMi(no)) return;
   const tur = d.haritaVakti || vakit();
   const { durumlar: liste, simdiki } = durumlar();
-  const harita = haritaKur(liste, veri, tur, ARA, UC);
+  const harita = haritaKur(liste, veri);
+  const sinir = sepyaSiniri(harita);
   const gorulen = new Set(d.ilerleme.haritaGorulen || []);
   const yeniler = new Set(liste.filter((x) => x.acik && !gorulen.has(x.id)).map((x) => x.id));
   const acikSayi = liste.filter((x) => x.acik).length;
@@ -142,15 +100,7 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     <p class="harita-zaman" data-harita-zaman data-test="harita-zaman"><span class="harita-zaman-ic"><b></b><span></span></span></p>
     <div class="harita-bolum-kart" data-harita-kart data-test="harita-kart" aria-hidden="true"><span class="harita-perde"><span class="harita-perde-kat"></span><span class="harita-perde-kat"></span><span class="harita-perde-kat"></span></span><span class="harita-bolum-kart-ic"><span class="harita-bolum-kart-cizgi"></span><span class="harita-bolum-kart-yuzyil"></span><b></b><span class="harita-bolum-kart-bilgi"></span><span class="harita-bolum-kart-cizgi"></span></span></div>
     <div class="harita ${tur}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
-      ${harita.bolgeler
-        .map(
-          (b, i) =>
-            `<img class="harita-resim${i ? ' sis-alt' : ''}${i < harita.bolgeler.length - 1 ? ' sis-ust' : ''}" data-test="harita-bolge" data-bolge="${b.id}" alt="${kacis(b.ad)}" decoding="async" ${i < 2 ? '' : 'loading="lazy"'}
-              src="${resimAdresi(b.id, tur)}" style="top:${((b.ust / h) * 100).toFixed(3)}%;height:${((1 / h) * 100).toFixed(3)}%;z-index:${i + 1}">`,
-        )
-        .join('')}
-      ${harita.gecisler.map((g) => gecisHtml(g, h)).join('')}
-      ${ucHtml(harita.uclar.alt, 'alt', h, liste)}${ucHtml(harita.uclar.ust, 'ust', h, liste)}
+      ${harita.bolgeler.map((b, i) => resimHtml(b, i, h, tur, sinir)).join('')}
       <svg class="harita-filtre" width="0" height="0" aria-hidden="true" focusable="false"><filter id="durak-kontur" color-interpolation-filters="sRGB"><feComponentTransfer in="SourceAlpha" result="m"><feFuncA type="discrete" tableValues="0 0 0 1 1 1"/></feComponentTransfer><feComposite in="SourceGraphic" in2="m" operator="in" result="g"/><feMorphology in="m" operator="dilate" radius="1.4" result="k"/><feFlood flood-color="#fff4dc"/><feComposite in2="k" operator="in" result="krem"/><feMorphology in="m" operator="dilate" radius="2.4" result="d"/><feFlood flood-color="#24170c"/><feComposite in2="d" operator="in" result="koyu"/><feMerge><feMergeNode in="koyu"/><feMergeNode in="krem"/><feMergeNode in="g"/></feMerge></filter><filter id="durak-kontur-ince" color-interpolation-filters="sRGB"><feComponentTransfer in="SourceAlpha" result="m"><feFuncA type="discrete" tableValues="0 0 0 1 1 1"/></feComponentTransfer><feComposite in="SourceGraphic" in2="m" operator="in" result="g"/><feMorphology in="m" operator="dilate" radius="1" result="d"/><feFlood flood-color="#24170c"/><feComposite in2="d" operator="in" result="koyu"/><feMerge><feMergeNode in="koyu"/><feMergeNode in="g"/></feMerge></filter></svg>
       <div class="harita-katman">${katman}</div>
     </div>
@@ -219,6 +169,22 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
   }
 
   // ---------- "Buradasın" ----------
+// Dönem resmi; son açık durağın üstündeki kısmı sepya: tamamen üstte kalan resim sepya, sınırın geçtiği resmin üstüne
+// sepya bir kopyası konur, kopya sınırda yumuşakça silinir (saklı motifler ve duraklar üstte, dokunulabilir kalır)
+function resimHtml(b, i, h, tur, sinir) {
+  const yer = `top:${((b.ust / h) * 100).toFixed(3)}%;height:${((1 / h) * 100).toFixed(3)}%`;
+  const tamSepya = b.ust + 1 <= sinir;
+  let html = `<img class="harita-resim${tamSepya ? ' sepya' : ''}" data-test="harita-bolge" data-bolge="${b.id}" alt="${kacis(b.ad)}" decoding="async" ${i < 2 ? '' : 'loading="lazy"'}
+      src="${resimAdresi(b.id, tur)}" style="${yer};z-index:${i + 1}">`;
+  if (!tamSepya && sinir > b.ust) {
+    const yerel = (sinir - b.ust) * 100;
+    const maske = `linear-gradient(to bottom, #000 ${Math.max(0, yerel - SEPYA_GECIS * 100).toFixed(2)}%, transparent ${yerel.toFixed(2)}%)`;
+    html += `<img class="harita-resim sepya ust-kat" data-test="harita-sepya" aria-hidden="true" alt="" decoding="async" src="${resimAdresi(b.id, tur)}"
+      style="${yer};z-index:${i + 1};-webkit-mask-image:${maske};mask-image:${maske}">`;
+  }
+  return html;
+}
+
 function konumaKaydir(yumusak = false) {
   // uygulamanın kendi kaydırması (açılış, "Buradasın") dönem kartlarını oynatmaz
   kartSustur = Date.now() + (yumusak ? 1500 : 400);
@@ -243,27 +209,13 @@ function konumIzle() {
   konumGozcu.observe(durak);
 }
 
-// ---------- dönem geçişleri ----------
-// Şeritler komşu resimler yüklenince onların kenar renkleriyle dolar (fazladan istek yok, tembel yükleme bozulmaz).
-// Şerit görüş alanına yeterince girince "gorundu" (animasyon), tamamen çıkınca geri alınır: her geçişte yeniden oynar.
-// Resim ilk kez görülünce "uyandi" (renklenir); açılışta zaten görünenler geçişsiz uyanır. Durak ilk kez ekrana
-// girince "kondu" + "inis" (yere konma animasyonu).
+// ---------- durakların yere konması ----------
+// Durak ilk kez ekrana girince "kondu" + "inis" (yere konma animasyonu); açılışta zaten görünenler animasyonsuz.
 let gecisGozcu = null;
 function gecisleriIzle() {
   if (gecisGozcu) gecisGozcu.disconnect();
   const kap = ekran.querySelector('[data-test="harita"]');
   if (!kap) return;
-  const resim = (id) => kap.querySelector(`.harita-resim[data-bolge="${id}"]`);
-  for (const g of kap.querySelectorAll('.harita-gecis')) {
-    for (const [sinif, id] of [['ust', g.dataset.gecis], ['alt', g.dataset.onceki]]) {
-      const img = resim(id);
-      const renk = g.querySelector(`.harita-gecis-renk.${sinif}`);
-      if (!img || !renk) continue;
-      const doldur = () => img.naturalWidth && (renk.style.backgroundImage = `url("${img.currentSrc || img.src}")`);
-      if (img.complete) doldur();
-      else img.addEventListener('load', doldur, { once: true });
-    }
-  }
   if (typeof IntersectionObserver !== 'function') return;
   kap.classList.add('izleniyor');
   let ilk = true;
@@ -281,21 +233,16 @@ function gecisleriIzle() {
             el.style.setProperty('--kon-gecikme', `${(konan++ * 0.09).toFixed(2)}s`);
             el.classList.add('inis');
           }
-        } else if (el.classList.contains('harita-resim')) {
-          if (g.intersectionRatio >= 0.2) el.classList.add('uyandi');
-        } else if (g.intersectionRatio >= 0.45) {
-          el.classList.add('gorundu');
-          resim(el.dataset.gecis)?.classList.add('uyandi');
-        } else if (!g.isIntersecting) el.classList.remove('gorundu');
+        }
       }
       if (ilk) {
         ilk = false;
         requestAnimationFrame(() => requestAnimationFrame(() => kap.classList.add('hazir')));
       }
     },
-    { threshold: [0, 0.2, 0.45] },
+    { threshold: [0] },
   );
-  for (const el of kap.querySelectorAll('.harita-gecis, .harita-resim, .harita-durak')) gecisGozcu.observe(el);
+  for (const el of kap.querySelectorAll('.harita-durak')) gecisGozcu.observe(el);
 }
 
 // ---------- kaydırma: derinlik ve zaman göstergesi ----------
@@ -307,19 +254,11 @@ function kaydirmaIzle() {
   const kap = ekran.querySelector('[data-test="harita"]');
   if (!kap) return;
   const boy = window.innerHeight;
-  if (!azHareket()) {
-    for (const g of kap.querySelectorAll('.harita-gecis')) {
-      const r = g.getBoundingClientRect();
-      if (r.bottom < -boy * 0.5 || r.top > boy * 1.5) continue;
-      const p = Math.max(-1.5, Math.min(1.5, (r.top + r.height / 2 - boy / 2) / boy));
-      g.style.setProperty('--p', p.toFixed(3));
-    }
-  }
   const gosterge = ekran.querySelector('[data-harita-zaman]');
   if (!gosterge) return;
   let en = null;
   let enUzak = Infinity;
-  for (const img of kap.querySelectorAll('.harita-resim')) {
+  for (const img of kap.querySelectorAll('.harita-resim[data-bolge]')) {
     const r = img.getBoundingClientRect();
     const uzak = Math.abs(r.top + r.height / 2 - boy * 0.5);
     if (uzak < enUzak) {
@@ -352,7 +291,8 @@ const PERDE_RENK = {
   barok2: '#4a3a1e',
   aydinlanma: '#6a4a56',
   romantik: '#2c3a3a',
-  ondokuz: '#34506a',
+  empresyonizm: '#34506a',
+  postempresyonizm: '#3a3050',
   modern: '#1e1e2a',
 };
 let kartSustur = 0;
@@ -452,7 +392,9 @@ function motifPenceresi(eser) {
   const h = d.haritaDurum;
   const m = h && h.veri.eserler && h.veri.eserler[eser];
   if (!m) return '';
-  const s = d.sanatcilar.find((x) => m.sanatci && (x.ad === m.sanatci || (x.ad_arama && m.sanatci.includes(x.ad_arama)) || m.sanatci.includes(x.ad)));
+  const s =
+    (m.sanatci_id && d.harita.get(m.sanatci_id)) ||
+    d.sanatcilar.find((x) => m.sanatci && (x.ad === m.sanatci || (x.ad_arama && m.sanatci.includes(x.ad_arama)) || m.sanatci.includes(x.ad)));
   const kunye = [m.sanatci, m.yil, m.yer, m.teknik].filter(Boolean).map(kacis).join(' · ');
   return `<div class="harita-pencere-ic motif" role="dialog" aria-label="${kacis(m.eser_tr || eser)}" data-test="harita-motif-pencere">
       <button class="harita-pencere-kapat" type="button" data-harita-kapat aria-label="Kapat">${ikon('kapat', 20, 1.7)}</button>

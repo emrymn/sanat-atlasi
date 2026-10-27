@@ -6962,25 +6962,12 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   user-select: none;
   -webkit-user-drag: none;
 }
-/* resimlerin kenarları aradaki dönem geçişi şeridine sisle karış����r */
-.harita-resim.sis-alt {
-  -webkit-mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
-  mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
+/* son açık durağın üstü sepya (İş 41): yalnız boyanmış resim, duraklar ve saklı motifler renk ve dokunma olarak kalır */
+.harita-resim.sepya {
+  filter: grayscale(1) sepia(0.55) brightness(0.97) contrast(0.92);
 }
-.harita-resim.sis-ust {
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 12%);
-  mask-image: linear-gradient(to bottom, transparent 0, #000 12%);
-}
-.harita-resim.sis-ust.sis-alt {
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 12%, #000 88%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0, #000 12%, #000 88%, transparent 100%);
-}
-/* henüz görülmemiş dönem soluk durur; görülünce renklenir (geçiş, açılışta görünenler yerleşince başlar) */
-.harita.izleniyor .harita-resim:not(.uyandi) {
-  filter: saturate(0.3) brightness(0.82) contrast(0.92);
-}
-.harita.hazir .harita-resim {
-  transition: filter 1.6s ease-out;
+.harita-resim.ust-kat {
+  pointer-events: none;
 }
 /* ---- dönem geçişi: iki resmin kenar renkleri bulanıkça birbirine akar, ortada sis ve yeni dönemin adı ---- */
 .harita-gecis {
