@@ -242,7 +242,9 @@ async function main() {
         // 1:3'ü çizemeyen model: iki yana düz kenar, sonra ortadaki 1:3 kesilir
         const png = await sharp(resim).png().toBuffer();
         ({ resim, kutu, dolgu } = await tuvaleYerlestir(png, is.oran));
-        istem = (await readFile(path.join(BURASI, 'istemler', is.istemDosya ? `${donem}_${is.istemDosya}.txt` : 'gece.txt'), 'utf8')).trim();
+        // gece işinde dönemin kendi istemi varsa o (Orta Çağ: altın gök mum ışığında kalsın, Emre), yoksa ortak gece.txt
+        const geceDosya = existsSync(path.join(BURASI, 'istemler', `${donem}_gece.txt`)) ? `${donem}_gece.txt` : 'gece.txt';
+        istem = (await readFile(path.join(BURASI, 'istemler', is.istemDosya ? `${donem}_${is.istemDosya}.txt` : geceDosya), 'utf8')).trim();
         if (n) istem += `\n\nThe other images are the original paintings, as examples of the styles:\n` + tablolar.slice(0, n).map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser}.`).join('\n');
         tur = 'image/png';
       }
