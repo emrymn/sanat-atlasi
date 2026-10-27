@@ -1,5 +1,6 @@
-// Yolculuk haritası (İş 24, yeni harita İş 41): 9 dönem resmi alttan (Orta Çağ) yukarıya (Modern) aralarında şerit ya da
-// sis olmadan bitişik dizilir; son açık durağın üstü sepya. Dönem değişince sağ üstteki gösterge ve bölüm kartı söyler.
+// Yolculuk haritası (İş 24, yeni harita İş 41): 9 dönem resmi alttan (Orta Çağ) yukarıya (Modern) dizilir, aralarında
+// iki resmin birbirine aktığı köprü ve yeni dönemin adı (v0, 1.40); son açık durağın üstü sepya. Dönem değişince sağ
+// üstteki gösterge değişir (ortadaki bölüm kartı Emre'nin isteğiyle kalktı, ad köprüde).
 // Her bölüm yolun kenarındaki meydanda kendi sembolüyle bir durak; açık durakların altında yumuşak bir ışık yanıp
 // söner, "buradasın" durağında dönemin kıyafetiyle öğrenci ve yukarıdan inen ışık. Durağa dokununca küçük pencere
 // (seviyeler, yıldızlar, sanatçılar, akım sayfası); resimdeki saklı motife dokununca eserin hikâyesi.
@@ -98,7 +99,6 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     </div>
     <button type="button" class="harita-vakit" data-harita-vakit aria-label="${tur === 'gece' ? 'Gündüze geç' : 'Geceye geç'}">${ikon(tur === 'gece' ? 'gunes' : 'ay', 20, 1.6)}</button>
     <p class="harita-zaman" data-harita-zaman data-test="harita-zaman"><span class="harita-zaman-ic"><b></b><span></span></span></p>
-    <div class="harita-bolum-kart" data-harita-kart data-test="harita-kart" aria-hidden="true"><span class="harita-bolum-kart-ic"><span class="harita-bolum-kart-cizgi"></span><span class="harita-bolum-kart-yuzyil"></span><b></b><span class="harita-bolum-kart-bilgi"></span><span class="harita-bolum-kart-cizgi"></span></span></div>
     <div class="harita-perde" data-harita-perde aria-hidden="true"></div>
     <div class="harita ${tur}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
       ${harita.bolgeler.map((b, i) => resimHtml(b, i, h, tur, sinir)).join('')}
@@ -221,8 +221,6 @@ function gecisHtml(alt, ustB, h, tur, sinir, liste) {
 }
 
 function konumaKaydir(yumusak = false) {
-  // uygulamanın kendi kaydırması (açılış, "Buradasın") dönem kartlarını oynatmaz
-  kartSustur = Date.now() + (yumusak ? 1500 : 400);
   const el = ekran.querySelector('.harita-durak.simdiki');
   if (!el) return window.scrollTo(0, document.documentElement.scrollHeight);
   const r = el.getBoundingClientRect();
@@ -373,33 +371,6 @@ function kaydirmaIzle() {
   ic.classList.remove('degisti');
   void ic.offsetWidth; // animasyonu baştan oynatmak için
   ic.classList.add('degisti');
-}
-// Dönem değişince ekranın ortasında kısa bir bölüm kartı: altın çizgi açılır, yüzyıl ve dönemin adı bulanıktan
-// netleşir, sonra yukarı doğru silinir. Hızlı kaydırınca her yeni dönemde baştan oynar. Dokunmayı engellemez.
-// (Emre: dönem değişince ekranı süpüren renkli perde kalktı; kart ve yazısı kalıyor)
-let kartSustur = 0;
-let kartZamanlayici = null;
-function bolumKarti(b) {
-  const kart = ekran.querySelector('[data-harita-kart]');
-  if (!kart || azHareket() || Date.now() < kartSustur) return;
-  const liste = (d.haritaDurum && d.haritaDurum.liste) || [];
-  const bolum = liste.filter((x) => bolgeBul(x.sira).id === b.id);
-  const acik = bolum.filter((x) => x.acik).length;
-  kart.querySelector('.harita-bolum-kart-yuzyil').textContent = b.yuzyil;
-  kart.querySelector('b').textContent = b.ad;
-  kart.querySelector('.harita-bolum-kart-bilgi').textContent = `${bolum.length} bölüm · ${acik ? `${acik} açık` : 'henüz kilitli'}`;
-  kart.classList.toggle('kilitli', !acik);
-  kart.classList.remove('oynuyor');
-  void kart.offsetWidth; // animasyonu baştan oynatmak için
-  kart.classList.add('oynuyor');
-  // kart oynarken şeritlerin kendi dönem yazısı gizlenir (aynı ad iki kez üst üste görünmesin)
-  const kap = ekran.querySelector('[data-test="harita"]');
-  kap?.classList.add('kart-acik');
-  clearTimeout(kartZamanlayici);
-  kartZamanlayici = setTimeout(() => {
-    kart.classList.remove('oynuyor');
-    kap?.classList.remove('kart-acik');
-  }, 2300);
 }
 // Yolculuk alttan başlar, yeni dönemler yukarıdadır: ilerlemek = yukarı kaydırmak. Geçiş animasyonları yalnızca
 // ilerlerken oynar; aşağı (eski dönemlere) dönüşte sessiz kalır.

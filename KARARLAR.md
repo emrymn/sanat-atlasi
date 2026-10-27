@@ -1191,3 +1191,10 @@ Emre: "geliştirici butonu ekle her şeyi açsın kapanınca en son haline geri 
 2. Kapanınca yedek olduğu gibi geri gelir: mod açıkken verilen cevaplar, bölüm sonuçları, işaretlenen konular atılır. Yalnız ayarlar (tema, kart sayısı…) güncel hâliyle kalır, çünkü onlar ilerleme değil.
 3. Yedek ayrı bir anahtarda değil ilerlemenin içinde tutulur: uygulama kapanıp açılınca, IndexedDB yansısında ve "Yedekle" metninde de korunur; bozuk yedek kaydı modu kapatır (asıl ilerlemeye dokunmaz).
 4. Test: `tests/unit/depo.test.mjs` (aç → yedek metni → kapat gidiş-dönüşü), `tests/e2e/gelistirici.spec.js` (harita: 1 açık durak → hepsi açık → yeniden açılışta mod sürer → kapatınca yine 1).
+
+## İş 43 · v0 dönem köprüleri denetlendi, bölüm kartı kalktı (2026-10-28, v1.40.1)
+
+Emre v0'da dönemler arasına köprü ekledi (PR #66, v1.40.0): iki resmin kenarı aynalanıp birbirine akar, ortada yeni dönemin adı; köprü yalnız ileri (yukarı) kaydırırken canlanır, ekran kenarları hafifçe kararır (`harita-perde`, renkli değil, koyu hale). Birleşince main'de 3 test kırıldı:
+1. `tests/e2e/paket8.spec.js` hâlâ 1.39.0 bekliyordu (v0 yalnız birim testindeki sürümü değiştirmiş): güncellendi.
+2. v0 ortadaki bölüm kartını çağırmayı bırakmıştı, adı köprüde yazıyor. Daha önce "kart dursun" dendiği için soruldu; Emre: "Kart kalksın". `bolumKarti`, kart HTML'i ve CSS'i silindi; harita testi köprüyü denetleyecek biçimde yeniden yazıldı (8 köprü, adı, ileri kaydırınca `gorundu`).
+3. Kabuk dosyaları değiştiği için sürüm 1.40.1 (düzeltme: Yenilikler'e satır yok).

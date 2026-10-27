@@ -158,25 +158,29 @@ test('bölüm: tanıtım, Kolay %75 ile geçilince Orta açılır; Orta geçilin
   await expect(page.locator('[data-test="harita-durak"][data-acik="true"]')).toHaveCount(2);
 });
 
-test('Harita: kaydırırken her dönem geçişinde bölüm kartı oynar, "Buradasın" kaydırması oynatmaz', async ({ page, context }) => {
+test('Harita: dönemler arasında köprü; ileri (yukarı) kaydırınca köprü canlanır, adı yeni dönemin', async ({ page, context }) => {
   await agiHazirla(context);
   await page.goto('./#/harita');
   await hazir(page);
   await expect(page.locator('[data-test="harita-bolge"]')).toHaveCount(9);
+  await expect(page.locator('[data-test="harita-gecis"]')).toHaveCount(8);
   // ilk kurulumda yalnız ilk durak açık: haritanın geri kalanı sepya
   await expect(page.locator('.harita-resim.sepya[data-bolge="modern"]')).toHaveCount(1);
-  const kart = page.locator('[data-test="harita-kart"]');
-  await page.waitForTimeout(600);
-  await expect(kart).not.toHaveClass(/oynuyor/);
-  // Rönesans resminin ortasına kaydır (açılışta Orta Çağ'dayız): kart Rönesans'ı duyurur
-  await page.evaluate(() => {
-    const r = document.querySelector('.harita-resim[data-bolge="ronesans"]').getBoundingClientRect();
-    window.scrollBy(0, r.top + r.height / 2 - innerHeight / 2);
+  // ortadaki bölüm kartı kalktı (Emre); dönemin adı köprüde
+  await expect(page.locator('[data-test="harita-kart"]')).toHaveCount(0);
+  const kopru = page.locator('[data-test="harita-gecis"][data-gecis="ronesans"]');
+  await expect(kopru.locator('b')).toHaveText('Rönesans');
+  await expect(kopru).toContainText('bölüm');
+  // açılışta Orta Çağ'dayız; Rönesans köprüsüne doğru yukarı kaydır: köprü ekranın ortasına girince canlanır
+  await page.evaluate(async () => {
+    const el = document.querySelector('[data-gecis="ronesans"]');
+    for (let i = 0; i < 12; i++) {
+      const r = el.getBoundingClientRect();
+      window.scrollBy(0, (r.top + r.height / 2 - innerHeight / 2) / 3);
+      await new Promise((ok) => setTimeout(ok, 60));
+    }
   });
-  await expect(kart).toHaveClass(/oynuyor/);
-  await expect(kart.locator('b')).toHaveText('Rönesans');
-  await expect(kart).toContainText('bölüm');
-  // kart dokunmayı engellemez ve kendiliğinden kapanır
-  expect(await kart.evaluate((el) => getComputedStyle(el).pointerEvents)).toBe('none');
-  await expect(kart).not.toHaveClass(/oynuyor/, { timeout: 4000 });
+  await expect(kopru).toHaveClass(/gorundu/);
+  // sağ üstteki gösterge dönemi yazar
+  await expect(page.locator('[data-test="harita-zaman"] b')).not.toBeEmpty();
 });
