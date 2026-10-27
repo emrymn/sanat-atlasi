@@ -85,6 +85,10 @@ const ISLER = [
   // Empresyonizm (Emre: G güzel ama çok yeşil, sıcak altın ışık; alttaki ikinci Monet köprüsü silinsin): Nano düzenler,
   // düzen kalır. --kaynak gpt-image-2-ref-cep-v7
   { ad: 'nano-banana-pro-renk', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'renk', oran: '9:16', ref: false, fiyat: 0.15 },
+  // Modern Çığlık (Emre: Munch kısmı aslına benzesin): GPT bandı yerleşimi kaydırdı; Nano düzenler (yer korunur), Çığlık
+  // tablosu örnek olarak gider; birlestir.py ile yalnız iskelet/modern_iskelet_cep_maske_munch.png alanı alınır.
+  // Gündüz --kaynak modern-secilen, gece --kaynak modern-secilen-gece (istem ışığı korur).
+  { ad: 'nano-banana-pro-munch', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'munch_nano', oran: '9:16', ref: true, refSiniri: 2, fiyat: 0.15 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
