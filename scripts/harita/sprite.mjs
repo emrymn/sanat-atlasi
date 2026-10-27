@@ -16,7 +16,32 @@ const KOK = path.resolve(BURASI, '../..');
 const ORTAK =
   "Painted in the same light, bright storybook style as the map in Image 1 (same palette, soft daylight from the upper left, visible brushwork), and at the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
 
+// Barok haritası koyu (karanlık-aydınlık, Emre): ortak "açık masal üslubu" yerine dönemin ışığı istenir
+const ORTAK_BAROK =
+  "Painted in the same Baroque oil-painting style as the map in Image 1: glossy oil paint, warm golden theatrical light falling from the upper left, soft deep shadows on the far side, in the manner of Caravaggio and Rembrandt. The object itself is well lit so it reads clearly. At the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
+
 const ISLER = {
+  // Barok (Emre onayladı): Bernini'nin Davut'u, Caravaggio'nun Meyve Sepeti, Velázquez'in paleti, Rubens'in şapkası,
+  // Vermeer'in süt testisi; karakter aynı öğrenci, 17. yüzyıl Flaman/Hollanda kıyafetiyle.
+  barok: {
+    harita: 'cikti/barok/barok-secilen.jpg',
+    ortak: ORTAK_BAROK,
+    ornekNesne: 'cikti/ortacag/sprite/sembol-1.webp',
+    ornekYolcu: 'cikti/ortacag/sprite/karakter.webp',
+    isler: [
+      { ad: 'sembol-1', metin: "A small white marble statue of Bernini's David: the young David twisting his body, about to throw the stone from his sling, wearing a loincloth with a flowing drape over one shoulder, standing on a small round paved stone base." },
+      { ad: 'sembol-2', metin: "Caravaggio's Basket of Fruit: a small woven wicker basket full of grapes, apples, figs and a pear, with vine leaves curling over the rim, standing on a small round paved stone base." },
+      { ad: 'sembol-3', metin: "A painter's wooden palette with dabs of oil paint and a few long brushes, as Velázquez holds in Las Meninas, leaning against a small wooden easel, standing on a small round paved stone base." },
+      { ad: 'sembol-4', metin: 'A wide-brimmed black Flemish hat with a curling ostrich feather, as Rubens wears in his portraits, resting on a small carved wooden stand, standing on a small round paved stone base.' },
+      { ad: 'sembol-5', metin: "The brown earthenware milk jug from Vermeer's The Milkmaid, pouring a thin stream of milk into a small bowl, beside a little loaf of bread, standing on a small round paved stone base." },
+      {
+        ad: 'karakter',
+        yolcu: true,
+        metin:
+          'The same young male art student as in Image 2 (same face, hair, age, satchel and sketchbook), now dressed in 17th-century Dutch clothing: a dark doublet with a wide white falling collar, breeches, boots and a broad-brimmed felt hat. Full body, walking forward, friendly face. Same scale and feel as the traveller figure in Image 2.',
+      },
+    ],
+  },
   // Orta Çağ (Emre onayladı): ikona, Siena kalkanı, Saatler Kitabı; karakter aynı öğrenci, Orta Çağ kıyafetiyle.
   // Örnek olarak Rönesans'ın yeni sembolü ve karakteri gider: bütün haritada aynı oyun taşı görünümü ve aynı yüz.
   ortacag: {
@@ -124,7 +149,7 @@ async function main() {
     try {
       const sonuc = await generateImage({
         model: gateway.image('openai/gpt-image-2'),
-        prompt: { text: `${is.metin}\n\n${ORTAK}`, images: [harita, is.yolcu ? ornekYolcu : ornekNesne] },
+        prompt: { text: `${is.metin}\n\n${tanim.ortak || ORTAK}`, images: [harita, is.yolcu ? ornekYolcu : ornekNesne] },
         size: '1024x1024',
         // GPT Image 2 saydam arka plan desteklemiyor ('Transparent background is not supported'): düz mor zemin istenir,
         // saydamYap köşelerden siler. Mor seçildi: fildişi şah, beyaz vazo gibi açık nesneler beyaz zeminle karışırdı.
