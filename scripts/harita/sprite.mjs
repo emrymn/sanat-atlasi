@@ -20,7 +20,32 @@ const ORTAK =
 const ORTAK_BAROK =
   "Painted in the same Baroque oil-painting style as the map in Image 1: glossy oil paint, warm golden theatrical light falling from the upper left, soft deep shadows on the far side, in the manner of Caravaggio and Rembrandt. The object itself is well lit so it reads clearly. At the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
 
+// Romantizm haritası tek ortak altın akşamüstü ışığında (Emre); güneş sağ üstte
+const ORTAK_ROMANTIK =
+  "Painted in the same glowing oil-painting style as the map in Image 1 (same warm palette, visible brushwork), lit by the same warm golden late-afternoon sunlight falling from the upper right, with soft blue-violet shadows on the far side. The object itself is well lit so it reads clearly. At the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
+
 const ISLER = {
+  // Romantizmden Realizme (Emre onayladı): Blake'in altın pergeli, Medusa'nın Salı maketi (figürsüz), Rossetti'nin narı,
+  // Opera'nın altın liri, oraklı buğday demeti; karakter aynı öğrenci, 19. yüzyıl ortası ressam kıyafetiyle.
+  romantik: {
+    harita: 'cikti/romantik/romantik-secilen.jpg',
+    ornekNesne: 'cikti/ortacag/sprite/sembol-1.webp',
+    ornekYolcu: 'cikti/aydinlanma/sprite/karakter.webp',
+    ortak: ORTAK_ROMANTIK,
+    isler: [
+      { ad: 'sembol-1', metin: "A large golden drawing compass (a pair of dividers), as held down from the clouds in William Blake's The Ancient of Days, standing upright and open on a small round paved stone base, with a few soft golden rays glowing around it." },
+      { ad: 'sembol-2', metin: "A small wooden model of Géricault's Raft of the Medusa: a rough raft of lashed planks and beams with a makeshift mast and a billowing, tattered sail, set on a few carved, painted waves on a small round paved stone base. No people on it." },
+      { ad: 'sembol-3', metin: "A ripe red pomegranate split open to show its glowing jewel-like seeds, as held in Rossetti's Proserpine, resting on a small dark green velvet cushion with a sprig of ivy, on a little carved Gothic Revival wooden stand, on a small round paved stone base." },
+      { ad: 'sembol-4', metin: 'A gilded, ornate golden lyre like the one raised by Apollo on the roof of the Paris Opéra (Palais Garnier), standing on a short creamy marble pedestal with gilded mouldings, on a small round paved stone base.' },
+      { ad: 'sembol-5', metin: "A tied sheaf of golden wheat with a curved iron sickle with a wooden handle leaning against it, as in Millet's paintings of peasants, standing on a small round paved stone base with a few loose ears of wheat." },
+      {
+        ad: 'karakter',
+        yolcu: true,
+        metin:
+          'The same young male art student as in Image 2 (same face, age, satchel and sketchbook), now dressed as a mid-19th-century young painter: a dark green frock coat, a patterned waistcoat, a loosely tied red cravat, grey trousers and brown boots, his hair a little tousled, no hat. Full body, walking forward, friendly face. Same scale and feel as the traveller figure in Image 2.',
+      },
+    ],
+  },
   // Rokoko ve Neoklasisizm (Emre onayladı; 2. sembol sabun köpüğü yerine Gainsborough'nun şapkası): salıncak, Mavi Oğlan'ın
   // şapkası, defne çelenkli İyon başlık; karakter aynı öğrenci, 18. yüzyıl kıyafetiyle. Harita açık renkli: ortak açık üslup.
   aydinlanma: {
