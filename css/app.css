@@ -6776,6 +6776,9 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   flex-direction: column;
   justify-content: center;
   overflow: clip;
+  /* iOS Safari: hareketli katmanlar köprünün içinde kalsın, sınırlarında renkli dik şerit bırakmasın */
+  isolation: isolate;
+  contain: paint;
   background: var(--gok);
 }
 .harita.gece .harita-gecis {
@@ -6796,10 +6799,13 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .harita-gecis-renk.alt {
   background-position: 50% 0;
 }
+/* bulanık katman yanlardan taşar: blur kenarda saydamlaşınca arkadaki zemin dik bir şerit olarak görünmesin */
 .harita-gecis-renk.yumusak {
+  inset-inline: -36px;
   filter: blur(14px) saturate(1.08);
 }
 .harita-gecis-renk.net {
+  inset-inline: -4px;
   filter: blur(1.5px);
 }
 .harita-gecis-renk.ust.yumusak {
@@ -6832,7 +6838,44 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
     radial-gradient(ellipse 38% 46% at 28% 46%, rgba(var(--sis), 0.5), rgba(var(--sis), 0) 72%),
     radial-gradient(ellipse 44% 40% at 70% 56%, rgba(var(--sis), 0.45), rgba(var(--sis), 0) 72%),
     linear-gradient(to bottom, rgba(var(--sis), 0), rgba(var(--sis), 0.32) 50%, rgba(var(--sis), 0));
-  filter: blur(8px);
+}
+/* sürüklenen bulut tutamları: köprü ekrana girince yavaşça akar, geri dönüşte durur (JS: gorundu) */
+.harita-gecis-bulut {
+  position: absolute;
+  left: -30%;
+  width: 160%;
+  backface-visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.4s ease;
+}
+.harita-gecis-bulut.a {
+  top: 24%;
+  height: 30%;
+  background:
+    radial-gradient(ellipse 18% 46% at 20% 55%, rgba(var(--sis), 0.55), rgba(var(--sis), 0) 70%),
+    radial-gradient(ellipse 14% 38% at 34% 40%, rgba(var(--sis), 0.45), rgba(var(--sis), 0) 70%),
+    radial-gradient(ellipse 20% 50% at 66% 58%, rgba(var(--sis), 0.5), rgba(var(--sis), 0) 70%),
+    radial-gradient(ellipse 12% 34% at 82% 44%, rgba(var(--sis), 0.4), rgba(var(--sis), 0) 70%);
+}
+.harita-gecis-bulut.b {
+  top: 50%;
+  height: 28%;
+  background:
+    radial-gradient(ellipse 16% 44% at 12% 50%, rgba(var(--sis), 0.45), rgba(var(--sis), 0) 70%),
+    radial-gradient(ellipse 22% 52% at 46% 46%, rgba(var(--sis), 0.5), rgba(var(--sis), 0) 70%),
+    radial-gradient(ellipse 15% 40% at 74% 56%, rgba(var(--sis), 0.42), rgba(var(--sis), 0) 70%);
+}
+/* ışığın önünden geçen ince, sıcak tül */
+.harita-gecis-bulut.c {
+  top: 38%;
+  height: 24%;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse 10% 40% at 30% 50%, rgba(var(--isik), 0.32), rgba(var(--isik), 0) 70%),
+    radial-gradient(ellipse 13% 46% at 60% 54%, rgba(var(--sis), 0.4), rgba(var(--sis), 0) 70%);
+}
+.harita-gecis.gorundu .harita-gecis-bulut {
+  opacity: 1;
 }
 /* sisin içinden sızan sıcak ışık */
 .harita-gecis-yarik {
@@ -6841,8 +6884,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   width: 100%;
   top: 22%;
   height: 56%;
-  background: radial-gradient(ellipse 52% 50% at 50% 50%, rgba(var(--isik), 0.7), rgba(var(--isik), 0.18) 55%, rgba(var(--isik), 0) 78%);
-  mix-blend-mode: screen;
+  background: radial-gradient(ellipse 52% 50% at 50% 50%, rgba(var(--isik), 0.6), rgba(var(--isik), 0.14) 55%, rgba(var(--isik), 0) 78%);
   opacity: 0;
 }
 /* dönem adı köprünün ortasında sabit durur; kaydırmayla birlikte akar, ekranı takip etmez */
@@ -6949,6 +6991,31 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
     translate: calc(var(--p, 0) * -10%) calc(var(--p, 0) * 18px);
     opacity: calc(0.6 + var(--k, 0) * 0.4);
   }
+  /* bulutlar sürekli ama çok yavaş süzülür; yalnız transform/opacity oynar, kaydırmayı yormaz */
+  .harita-gecis-bulut {
+    animation: harita-bulut-akis 22s ease-in-out infinite alternate paused;
+  }
+  .harita-gecis-bulut.b {
+    animation-name: harita-bulut-akis-ters;
+    animation-duration: 28s;
+  }
+  .harita-gecis-bulut.c {
+    animation-duration: 16s;
+    animation-delay: -6s;
+  }
+  .harita-gecis.gorundu .harita-gecis-bulut {
+    animation-play-state: running;
+  }
+  .harita-gecis-yarik::after {
+    content: '';
+    position: absolute;
+    inset: -10% 20%;
+    background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(var(--isik), 0.35), rgba(var(--isik), 0) 70%);
+    animation: harita-isik-nefes 5.5s ease-in-out infinite paused;
+  }
+  .harita-gecis.gorundu .harita-gecis-yarik::after {
+    animation-play-state: running;
+  }
   .harita-gecis-yarik {
     opacity: calc(var(--k, 0) * 0.85);
     scale: calc(0.75 + var(--k, 0) * 0.4) calc(0.85 + var(--k, 0) * 0.25);
@@ -6997,6 +7064,33 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   from {
     opacity: 0;
     translate: 0 10px;
+  }
+}
+@keyframes harita-bulut-akis {
+  from {
+    transform: translate3d(-9%, 4px, 0) scale(1);
+  }
+  to {
+    transform: translate3d(9%, -6px, 0) scale(1.08, 1.14);
+  }
+}
+@keyframes harita-bulut-akis-ters {
+  from {
+    transform: translate3d(8%, -3px, 0) scale(1.06, 1.1);
+  }
+  to {
+    transform: translate3d(-10%, 6px, 0) scale(1);
+  }
+}
+@keyframes harita-isik-nefes {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
   }
 }
 @keyframes harita-gecis-isik {

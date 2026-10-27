@@ -210,7 +210,10 @@ function gecisHtml(alt, ustB, h, tur, sinir, liste) {
       <span class="harita-gecis-renk ust net" aria-hidden="true" style="${ustResim}"></span>
       <span class="harita-gecis-renk alt net" aria-hidden="true" style="${altResim}"></span>
       <span class="harita-gecis-sis" aria-hidden="true"></span>
+      <span class="harita-gecis-bulut a" aria-hidden="true"></span>
+      <span class="harita-gecis-bulut b" aria-hidden="true"></span>
       <span class="harita-gecis-yarik" aria-hidden="true"></span>
+      <span class="harita-gecis-bulut c" aria-hidden="true"></span>
       <p class="harita-gecis-yazi">
         <span class="harita-gecis-yuzyil">${kacis(ustB.yuzyil)}</span>
         <span class="harita-gecis-cizgi" aria-hidden="true"><i class="sol"></i><i class="elmas"></i><i class="sag"></i></span>
