@@ -29,6 +29,16 @@ const ORTAK_EMPRESYONIZM =
   "Painted in the same luminous Impressionist style as the map in Image 1 (loose, broken, flickering brushstrokes, the same warm palette), lit by the same warm golden late-afternoon sunlight falling from the upper left, with soft violet-blue shadows on the far side. The object itself is well lit so it reads clearly. At the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
 
 const ISLER = {
+  // Dönem geçişi denemesi (Emre: dört geçiş fikrinin hepsi denensin): "zaman kapısı", yolun geçtiği ve alttan üste bir
+  // dönemin mimarisinden ötekine dönüşen kapı. Önce tek örnek: Rönesans → Barok.
+  gecis: {
+    harita: 'cikti/barok/barok-secilen.jpg',
+    ornekNesne: 'cikti/ronesans/sprite/sembol-1.webp',
+    ornekYolcu: 'cikti/ronesans/sprite/karakter.webp',
+    isler: [
+      { ad: 'kapi-ronesans-barok', metin: "A monumental free-standing stone gateway with one wide round arch that a road passes through, wide rather than tall (about 1.6 times as wide as high). It shows the passage from one art period to the next: the lower half of the gateway is in the calm, harmonious early Renaissance style of Brunelleschi (pale stone, grey pietra serena pilasters, clean round arch, simple proportions), and as it rises it transforms into exuberant Roman Baroque (twisting Solomonic columns, a curved broken pediment, gilded angels and scrolls, a blank oval cartouche on top). Seen from the same 3/4 bird's-eye angle as the map, painted as an oil painting in warm light. The road surface under the arch is pale stone paving. No text or letters anywhere." },
+    ],
+  },
   // Modern sanat (Emre onayladı; 2. seviye Paris kafesi): Marc'ın mavi atı, kübist keman, Man Ray'in Hediye'si,
   // Magritte'in melon şapkası ve elması, boş yaldızlı çerçeve; karakter aynı öğrenci, 1950'lerin sanat öğrencisi.
   modern: {
