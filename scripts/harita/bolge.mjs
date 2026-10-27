@@ -5,6 +5,7 @@
 // Kullanım (Mac): node bolge.mjs <dönem> <kaynak adı> <maske adı> <istem adı> <üst px> [--calistir]
 //   örn. node bolge.mjs barok2 barok2-secilen alt barok2_alt_gpt 1536 --calistir
 //   kaynak: cikti/<dönem>/<kaynak>.jpg · maske: iskelet/<dönem>_iskelet_cep_maske_<maske>.png · istem: istemler/<istem>.txt
+//   --ref <dosya> (tekrarlanabilir, depo köküne göre): tabloyu örnek olarak da gönderir (Modern: Çığlık aslına benzesin)
 // Çıktı: cikti/<dönem>/<istem>-bant.jpg (GPT'nin bandı) ve <istem>-birlesik.jpg (tam resim); üstüne yazılmaz (-v2…)
 import { readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -43,9 +44,12 @@ async function main() {
   const kutu = { left: 0, top: ust, width: W, height: BANT_Y };
   const bant = await sharp(kaynakYol).extract(kutu).png().toBuffer();
   const bantMaske = await sharp(maskeYol).extract(kutu).png().toBuffer();
+  const refler = [];
+  bayraklar.forEach((b, i) => { if (b === '--ref') refler.push(path.resolve(BURASI, '../..', bayraklar[i + 1])); });
+  const ornekler = await Promise.all(refler.map((r) => sharp(r).resize(1024, 1024, { fit: 'inside' }).png().toBuffer()));
   const sonuc = await generateImage({
     model: gateway.image('openai/gpt-image-2'),
-    prompt: { text: istem, images: [bant], mask: bantMaske },
+    prompt: { text: istem, images: [bant, ...ornekler], mask: bantMaske },
     size: '1024x1536',
     providerOptions: { openai: { quality: 'high' } },
   });
