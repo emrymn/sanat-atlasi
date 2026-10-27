@@ -48,14 +48,14 @@ const ISLER = {
       },
     ],
   },
-  // Post-Empresyonizm, Sembolizm ve Art Nouveau (Emre onayladı; 7 seviyelik dönemin ikinci yarısı): Düşünen Adam,
+  // Post-Empresyonizm, Sembolizm ve Art Nouveau (Emre onayladı; 7 seviyelik dönemin ikinci yarısı): Cézanne'ın elmaları (GPT Düşünen Adam'ı reddetti),
   // ayçiçekleri, kanatlı sfenks, Hayat Ağacı; karakter aynı öğrenci, 1890'ların ressamı olarak. Harita açık: ortak açık üslup.
   postempresyonizm: {
     harita: 'cikti/postempresyonizm/postempresyonizm-secilen.jpg',
     ornekNesne: 'cikti/ortacag/sprite/sembol-1.webp',
     ornekYolcu: 'cikti/romantik/sprite/karakter.webp',
     isler: [
-      { ad: 'sembol-1', metin: "A small dark bronze statue of Rodin's The Thinker: a seated man resting his chin on his hand, on a rough rock, fully modelled in bronze (smooth stylised bronze body, no anatomical detail), on a small stone plinth, standing on a small round paved stone base." },
+      { ad: 'sembol-1', metin: "A small still life as in Cézanne's paintings (Emre: Rodin's Thinker was refused): a woven basket of red, yellow and green apples on a little wooden table covered with a rumpled white cloth, a few apples rolling on the cloth, painted with Cézanne's blocky, constructive brushstrokes, standing on a small round paved stone base." },
       { ad: 'sembol-2', metin: "A bunch of bright yellow sunflowers in a yellow earthenware vase with a blue band, as in Van Gogh's Sunflowers, painted with thick swirling brushstrokes, standing on a small round paved stone base." },
       { ad: 'sembol-3', metin: "A small pale marble statue of a mysterious winged sphinx with a woman's face and long hair, a lion's body and folded feathered wings, lying calmly on top of a short fluted column, as in the Symbolist paintings of Moreau and Khnopff; the statue is smooth stone with no anatomical detail, standing on a small round paved stone base." },
       { ad: 'sembol-4', metin: "A small golden Tree of Life as in Gustav Klimt's frieze: a trunk with many branches curling into spirals, decorated with small golden leaves and colourful mosaic eyes and flowers, shimmering with gold leaf, standing on a small round paved stone base." },
