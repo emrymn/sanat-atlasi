@@ -81,3 +81,37 @@ test('manifest geçerli ve göreli yollar kullanır', () => {
   for (const i of m.icons) assert.ok(!i.src.startsWith('/'), 'göreli yol: ' + i.src);
   assert.ok(!m.start_url.startsWith('/'));
 });
+
+test('İş 42: geliştirici modu her şeyi açar; kapanınca açmadan önceki ilerleme geri gelir (ayarlar korunur)', async () => {
+  const { gelistiriciAc, gelistiriciKapat } = await import('../../js/depo.js');
+  const i = varsayilanIlerleme([1, 2]);
+  i.skorlar.giotto = { sanatci: cevapla(yeniSkor(), true, '2026-10-19') };
+  i.bolumler = { '1-1': { kolay: 0.8, tanitim: true } };
+  i.haritaGorulen = ['1-1'];
+  const once = JSON.parse(JSON.stringify(i));
+  const yarim = { kip: 'karisik', zaman: 1 };
+  const acik = gelistiriciAc(i, [1, 2, 3, 4, 5], ['1-1', '1-2', '2-1'], yarim);
+  assert.deepEqual(acik.islenen, [1, 2, 3, 4, 5]);
+  assert.deepEqual(acik.bolumler['1-1'], { kolay: 1, orta: 1, tanitim: true });
+  assert.deepEqual(acik.bolumler['2-1'], { kolay: 1, orta: 1 });
+  assert.deepEqual(i, once, 'asıl nesne değişmez');
+  // ikinci kez açmak yedeği ezmez
+  assert.equal(gelistiriciAc(acik, [9], ['9-1']), acik);
+  // depodan / yedekten okununca mod ve yedek korunur
+  const okunan = yedekCoz(yedekMetni(acik));
+  assert.ok(okunan.gelistirici);
+  assert.deepEqual(okunan.gelistirici.yedek.islenen, [1, 2]);
+  // mod açıkken yapılanlar atılır, tema korunur
+  okunan.skorlar.vermeer = { sanatci: cevapla(yeniSkor(), true, '2026-10-20') };
+  okunan.ayarlar.tema = 'acik';
+  const { ilerleme: geri, yarim: geriYarim } = gelistiriciKapat(okunan);
+  assert.deepEqual(geri.islenen, [1, 2]);
+  assert.deepEqual(geri.skorlar, once.skorlar);
+  assert.deepEqual(geri.bolumler, once.bolumler);
+  assert.deepEqual(geri.haritaGorulen, ['1-1']);
+  assert.equal(geri.ayarlar.tema, 'acik');
+  assert.equal(geri.gelistirici, null);
+  assert.deepEqual(geriYarim, yarim);
+  // bozuk kayıt modu kapatır
+  assert.equal(ilerlemeDogrula({ ...once, gelistirici: { yedek: { islenen: 'x' } } }).gelistirici, null);
+});

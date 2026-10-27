@@ -35,6 +35,7 @@ export function varsayilanIlerleme(islenen = []) {
     bolumler: {}, // İş 24: harita bölümlerinin en iyi oranları { 'sira-no': { kolay, orta, zor, tanitim } }
     bildirimler: [], // "Bu görsel hatalı" bildirimleri (İ5)
     sonSurum: null, // Bugün'de "Yenilikler" notunun son gösterildiği sürüm (T4)
+    gelistirici: null, // İş 42: geliştirici modu açıkken { tarih, yedek: açılmadan önceki ilerleme, yarim }
     olusturma: new Date().toISOString(),
   };
 }
@@ -91,8 +92,46 @@ export function ilerlemeDogrula(nesne) {
     bolumler: bolumlerDogrula(v.bolumler),
     bildirimler: bildirimlerDogrula(v.bildirimler),
     sonSurum: typeof v.sonSurum === 'string' && /^\d+\.\d+\.\d+$/.test(v.sonSurum) ? v.sonSurum : null,
+    gelistirici: gelistiriciDogrula(v.gelistirici),
     olusturma: v.olusturma || t.olusturma,
   };
+}
+
+// ---------- Geliştirici modu (İş 42) ----------
+// Açılınca o anki ilerleme (ve yarım oturum) ilerlemenin içine yedeklenir, bütün konular işlenmiş ve bütün harita
+// bölümlerinin Kolay'ı ile Orta'sı geçilmiş sayılır (Zor da açılır). Kapanınca yedek olduğu gibi geri gelir; mod açıkken
+// yapılan her şey (skorlar, bölüm sonuçları) atılır, yalnız ayarlar (tema vb.) korunur. Yedek ilerlemenin içinde
+// durduğu için uygulama kapanıp açılsa da, "Yedekle" ile alınıp geri yüklense de kaybolmaz.
+function gelistiriciDogrula(g) {
+  if (!g || typeof g !== 'object' || !g.yedek) return null;
+  try {
+    const yedek = ilerlemeDogrula({ ...g.yedek, gelistirici: null });
+    return { tarih: typeof g.tarih === 'string' ? g.tarih : null, yedek, yarim: g.yarim && typeof g.yarim === 'object' ? g.yarim : null };
+  } catch (e) {
+    return null;
+  }
+}
+
+// konular: bütün konu numaraları; bolumIdleri: bütün harita bölümlerinin id'leri ('sira-no')
+export function gelistiriciAc(ilerleme, konular, bolumIdleri, yarim = null) {
+  if (ilerleme.gelistirici) return ilerleme;
+  const yedek = JSON.parse(JSON.stringify({ ...ilerleme, gelistirici: null }));
+  const bolumler = { ...(ilerleme.bolumler || {}) };
+  for (const id of bolumIdleri) bolumler[id] = { ...bolumler[id], kolay: 1, orta: 1 };
+  return {
+    ...ilerleme,
+    islenen: [...new Set([...(ilerleme.islenen || []), ...konular])].sort((a, b) => a - b),
+    bolumler,
+    gelistirici: { tarih: new Date().toISOString(), yedek, yarim: yarim ? JSON.parse(JSON.stringify(yarim)) : null },
+  };
+}
+
+// Dönen: { ilerleme: geri gelen ilerleme (güncel ayarlarla), yarim: mod açılırken yarım kalan oturum ya da null }
+export function gelistiriciKapat(ilerleme) {
+  const g = ilerleme.gelistirici;
+  if (!g) return { ilerleme, yarim: null };
+  const geri = ilerlemeDogrula({ ...g.yedek, ayarlar: ilerleme.ayarlar, gelistirici: null });
+  return { ilerleme: geri, yarim: g.yarim || null };
 }
 
 // Ana sayfadaki "Son çalıştıkların" için en son pekiştirilen sanatçılar (en yeni başta)
