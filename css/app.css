@@ -6776,6 +6776,9 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   flex-direction: column;
   justify-content: center;
   overflow: clip;
+  /* iOS Safari: hareketli katmanlar köprünün içinde kalsın, sınırlarında renkli dik şerit bırakmasın */
+  isolation: isolate;
+  contain: paint;
   background: var(--gok);
 }
 .harita.gece .harita-gecis {
@@ -6835,14 +6838,13 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
     radial-gradient(ellipse 38% 46% at 28% 46%, rgba(var(--sis), 0.5), rgba(var(--sis), 0) 72%),
     radial-gradient(ellipse 44% 40% at 70% 56%, rgba(var(--sis), 0.45), rgba(var(--sis), 0) 72%),
     linear-gradient(to bottom, rgba(var(--sis), 0), rgba(var(--sis), 0.32) 50%, rgba(var(--sis), 0));
-  filter: blur(8px);
 }
 /* sürüklenen bulut tutamları: köprü ekrana girince yavaşça akar, geri dönüşte durur (JS: gorundu) */
 .harita-gecis-bulut {
   position: absolute;
   left: -30%;
   width: 160%;
-  filter: blur(10px);
+  backface-visibility: hidden;
   opacity: 0;
   transition: opacity 1.4s ease;
 }
@@ -6871,7 +6873,6 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   background:
     radial-gradient(ellipse 10% 40% at 30% 50%, rgba(var(--isik), 0.32), rgba(var(--isik), 0) 70%),
     radial-gradient(ellipse 13% 46% at 60% 54%, rgba(var(--sis), 0.4), rgba(var(--sis), 0) 70%);
-  filter: blur(7px);
 }
 .harita-gecis.gorundu .harita-gecis-bulut {
   opacity: 1;
@@ -6883,8 +6884,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   width: 100%;
   top: 22%;
   height: 56%;
-  background: radial-gradient(ellipse 52% 50% at 50% 50%, rgba(var(--isik), 0.7), rgba(var(--isik), 0.18) 55%, rgba(var(--isik), 0) 78%);
-  mix-blend-mode: screen;
+  background: radial-gradient(ellipse 52% 50% at 50% 50%, rgba(var(--isik), 0.6), rgba(var(--isik), 0.14) 55%, rgba(var(--isik), 0) 78%);
   opacity: 0;
 }
 /* dönem adı köprünün ortasında sabit durur; kaydırmayla birlikte akar, ekranı takip etmez */
@@ -6993,7 +6993,6 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   }
   /* bulutlar sürekli ama çok yavaş süzülür; yalnız transform/opacity oynar, kaydırmayı yormaz */
   .harita-gecis-bulut {
-    will-change: transform;
     animation: harita-bulut-akis 22s ease-in-out infinite alternate paused;
   }
   .harita-gecis-bulut.b {
