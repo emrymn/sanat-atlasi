@@ -22,6 +22,8 @@ export const H = 1170;
 // Son açık durağın bu kadar üstünden (resim yüksekliğine oranla) itibaren harita sepyaya döner; geçiş yumuşak
 export const SEPYA_PAY = 0.07;
 export const SEPYA_GECIS = 0.04;
+// İki dönem resminin arasındaki bulutlu ara bölümün yüksekliği (resim yüksekliğine oranla); resimleri örtmez
+export const ARA = 0.34;
 // data/harita.json'da ölçüsü olmayan sembol (fazladan bölüm açılırsa) için yedek ölçü
 const YEDEK_SEMBOL = { w: 34, h: 56, ax: 0.5, ay: 0.85 };
 
@@ -45,7 +47,7 @@ export const yolcuAdresi = (bolge, tur) => `gorseller/harita/ogrenci_${bolge}_${
  * durumlar: bolumDurumlari().durumlar (akım sırasıyla); veri: data/harita.json
  * Dönen: { bolgeler: [{ ...bolge, ust (resmin haritadaki üst kenarı, resim yüksekliği cinsinden), yolcu,
  *          duraklar: [{ ...durum, x, y, sembolNo, nesne: { w, h, ax, ay } }], motifler }], yukseklik }.
- * Bölgeler alttan üste (Orta Çağ ilk); haritada Modern en üstte, resimler arasında boşluk yok.
+ * Bölgeler alttan üste (Orta Çağ ilk); haritada Modern en üstte, resimler arasında ARA boyunda bulutlu bir ara.
  */
 export function haritaKur(durumlar, veri) {
   const n = BOLGELER.length;
@@ -56,7 +58,7 @@ export function haritaKur(durumlar, veri) {
     const bunlar = durumlar.filter((x) => bolgeBul(x.sira).id === b.id);
     return {
       ...b,
-      ust: n - 1 - i,
+      ust: (n - 1 - i) * (1 + ARA),
       yolcu: v.yolcu,
       duraklar: bunlar.map((x, j) => {
         // haritada meydandan fazla bölüm olursa (yeni sanatçı görselleri) fazlası son meydanın biraz üstüne dizilir
@@ -68,7 +70,7 @@ export function haritaKur(durumlar, veri) {
       motifler: v.motifler || [],
     };
   });
-  return { bolgeler, yukseklik: n };
+  return { bolgeler, yukseklik: n + (n - 1) * ARA };
 }
 
 // Haritanın bu yüksekliğinden (resim yüksekliği cinsinden, üstten) yukarısı sepya: son açık durağın SEPYA_PAY üstü.

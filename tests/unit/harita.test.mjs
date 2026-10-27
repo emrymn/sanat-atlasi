@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
-import { BOLGELER, bolgeBul, haritaKur, sepyaSiniri, vakit, gorulenDogrula, resimAdresi, nesneAdresi, yolcuAdresi, SEPYA_PAY } from '../../js/harita.js';
+import { BOLGELER, bolgeBul, haritaKur, sepyaSiniri, vakit, gorulenDogrula, resimAdresi, nesneAdresi, yolcuAdresi, SEPYA_PAY, ARA } from '../../js/harita.js';
 import {
   bolumleriKur,
   bolumDurumlari,
@@ -145,17 +145,19 @@ test('harita yerleşimi: Orta Çağ en altta, Modern en üstte, resimler bitişi
   const { durumlar } = bolumDurumlari(bolumler, {}, tumKonular, harita);
   const h = haritaKur(durumlar, veri);
   assert.equal(h.bolgeler.length, 9);
-  assert.equal(h.yukseklik, 9);
+  assert.ok(Math.abs(h.yukseklik - (9 + 8 * ARA)) < 1e-9);
   assert.equal(h.bolgeler[0].id, 'ortacag');
-  assert.equal(h.bolgeler[0].ust, 8);
+  assert.ok(Math.abs(h.bolgeler[0].ust - 8 * (1 + ARA)) < 1e-9);
   assert.equal(h.bolgeler[8].ust, 0);
+  // her ara tam iki resmin arasında: üstteki resmin altı + ARA = alttakinin üstü
+  for (let i = 0; i < 8; i++) assert.ok(Math.abs(h.bolgeler[i + 1].ust + 1 + ARA - h.bolgeler[i].ust) < 1e-9);
   assert.equal(h.bolgeler.reduce((t, b) => t + b.duraklar.length, 0), bolumler.length);
   for (const b of h.bolgeler) assert.deepEqual(b.duraklar.map((x) => x.sembolNo), b.duraklar.map((_, i) => i + 1));
   // ilk kurulumda yalnız ilk durak açık: sepya sınırı onun biraz üstünde; hiç açık yoksa bütün harita sepya
   const ilk = h.bolgeler[0].duraklar[0];
-  assert.ok(Math.abs(sepyaSiniri(h) - (8 + ilk.y - SEPYA_PAY)) < 1e-9);
+  assert.ok(Math.abs(sepyaSiniri(h) - (8 * (1 + ARA) + ilk.y - SEPYA_PAY)) < 1e-9);
   const kapali = haritaKur(durumlar.map((x) => ({ ...x, acik: false })), veri);
-  assert.equal(sepyaSiniri(kapali), 9);
+  assert.equal(sepyaSiniri(kapali), kapali.yukseklik);
   // meydandan fazla bölüm: son meydanın üstüne dizilir, son sembolü kullanır
   const fazla = haritaKur([...durumlar, { ...durumlar[0], id: '0-9', sira: 0 }], veri);
   const oc = fazla.bolgeler[0].duraklar;

@@ -6,7 +6,7 @@
 import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
-import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS } from '../harita.js';
+import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
 import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen } from './ortak.js';
 import { sanatciEserleri } from '../eserler.js';
 
@@ -190,31 +190,32 @@ function resimHtml(b, i, h, tur, sinir) {
   return html;
 }
 
-// ---------- dönem ekleri ----------
-// Resimler bitişik kalır (koordinatlar değişmez); her ekin üstüne ince bir bant konur. Bantta iki resmin kenarı
-// aynalanıp yarı saydam olarak karşı tarafa akar (ekte ikisi %50 karışır, uçlara doğru söner), ortası hafifçe
-// bulanır; tam ekte altın bir sınır çizgisi, üstünde yeni (yukarıdaki) dönemin adı. Ek ekrana girince çizgi
-// ortadan iki yana açılır, ad netleşir, bant boyunca bir ışık geçer (js: gecisleriIzle → "gorundu").
-const GECIS_BOY = 0.16; // bandın yüksekliği, dönem resmi yüksekliğine oranla
-// yarıktan yükselen altın kıvılcımlar: [yatay konum %, kaydırmaya göre hız, boy px]
+// ---------- dönem araları ----------
+// İki dönem resminin arasında ARA boyunda bir bulut denizi (resimleri örtmez). Üstteki ve alttaki resmin kenarı
+// aynalanıp bulanık olarak buluta akar; dört kenardan bulut kümeleri, ortada yeni (yukarıdaki) dönemin adı.
+// Ad yapışkandır (sticky): ara ekrandan geçerken ad bir süre ortada durur, kaydırma engellenmeden yavaşlama hissi
+// verir. İlerlerken bulutlar ortadan iki yana aralanır, arkadaki ışık yanar (js: kaydirmaIzle → --p, --k).
+// bulut kümeleri: [dikey kenar, yatay kenar, katman]
+const BULUTLAR = [['ust', 'sol', 'arka'], ['ust', 'sag', 'arka'], ['alt', 'sol', 'arka'], ['alt', 'sag', 'arka'], ['ust', 'sol', 'on'], ['ust', 'sag', 'on'], ['alt', 'sol', 'on'], ['alt', 'sag', 'on']];
+// aralanan bulutların arasından yükselen altın kıvılcımlar: [yatay konum %, kaydırmaya göre hız, boy px]
 const KIVILCIMLAR = [[12, 1.6, 3], [24, -1.1, 2], [37, 2.3, 4], [49, -1.8, 2], [58, 1.2, 3], [71, -2.4, 3], [83, 1.9, 2], [92, -1.3, 4]];
 function gecisHtml(alt, ustB, h, tur, sinir, liste) {
-  const ek = alt.ust; // alttaki resmin üst kenarı = üstteki resmin alt kenarı (haritanın üstünden, resim boyu cinsinden)
+  const bas = ustB.ust + 1; // üstteki resmin alt kenarı (haritanın üstünden, resim boyu cinsinden); ara alt.ust'te biter
   const bolum = liste.filter((x) => bolgeBul(x.sira).id === ustB.id);
   const acik = bolum.filter((x) => x.acik).length;
-  const sepya = ek <= sinir;
-  const yer = `top:${(((ek - GECIS_BOY / 2) / h) * 100).toFixed(3)}%;height:${((GECIS_BOY / h) * 100).toFixed(3)}%`;
-  const serit = `background-size:100% ${(200 / GECIS_BOY).toFixed(1)}%`;
+  const sepya = alt.ust <= sinir;
+  const yer = `top:${((bas / h) * 100).toFixed(3)}%;height:${((ARA / h) * 100).toFixed(3)}%`;
+  const serit = `background-size:100% ${(200 / ARA).toFixed(1)}%`;
   return `<div class="harita-gecis${sepya ? ' sepya' : ''}${acik ? '' : ' kilitli'}" data-test="harita-gecis" data-gecis="${ustB.id}" style="${yer}">
       <span class="harita-gecis-renk ust" aria-hidden="true" style="${serit};background-image:url('${resimAdresi(ustB.id, tur)}')"></span>
       <span class="harita-gecis-renk alt" aria-hidden="true" style="${serit};background-image:url('${resimAdresi(alt.id, tur)}')"></span>
-      <span class="harita-gecis-bulanik" aria-hidden="true"></span>
       <span class="harita-gecis-yarik" aria-hidden="true"></span>
-      <span class="harita-gecis-isik" aria-hidden="true"></span>
       <span class="harita-gecis-kivilcim" aria-hidden="true">${KIVILCIMLAR.map(([x, hiz, b]) => `<i style="--x:${x}%;--hiz:${hiz};--b:${b}px"></i>`).join('')}</span>
-      <span class="harita-gecis-cizgi" aria-hidden="true"><i class="sol"></i><i class="elmas"></i><i class="sag"></i></span>
+      ${BULUTLAR.map((s) => `<span class="harita-bulut ${s.join(' ')}" aria-hidden="true"></span>`).join('')}
       <p class="harita-gecis-yazi">
-        <span class="harita-gecis-ad"><span class="harita-gecis-yuzyil">${kacis(ustB.yuzyil)}</span><b>${kacis(ustB.ad)}</b></span>
+        <span class="harita-gecis-yuzyil">${kacis(ustB.yuzyil)}</span>
+        <span class="harita-gecis-cizgi" aria-hidden="true"><i class="sol"></i><i class="elmas"></i><i class="sag"></i></span>
+        <b>${kacis(ustB.ad)}</b>
         <span class="harita-gecis-bilgi">${bolum.length} bölüm · ${acik ? `${acik} açık` : 'kilitli'}</span>
       </p>
     </div>`;
@@ -313,10 +314,10 @@ function kaydirmaIzle() {
       const r = ek.getBoundingClientRect();
       if (r.bottom < -boy || r.top > boy * 2) continue;
       const p = Math.max(-1, Math.min(1, (r.top + r.height / 2 - boy * 0.5) / boy));
-      const t = Math.max(0, 1 - Math.abs(p) / 0.5);
+      const t = Math.max(0, 1 - Math.abs(p) / 0.6);
       let k = t * t * (3 - 2 * t);
-      // geri giderken yarık yeniden açılmaz, yalnızca kapanabilir
-      if (geriGidiyor) k = Math.min(k, Number(ek.dataset.k ?? 0));
+      // geri giderken hiçbir şey oynamaz: ara olduğu gibi kalır; hiç görülmemişse açık (aralanmış) hâliyle durur
+      if (geriGidiyor) k = ek.dataset.k === undefined ? 1 : Number(ek.dataset.k);
       ek.dataset.k = k.toFixed(3);
       if (k > enK) enK = k;
       ek.style.setProperty('--p', p.toFixed(3));
@@ -339,7 +340,6 @@ function kaydirmaIzle() {
   const b = BOLGELER.find((x) => x.id === en);
   if (!b || gosterge.dataset.bolge === en) return;
   const ilk = !gosterge.dataset.bolge;
-  if (!ilk && !geriGidiyor) bolumKarti(b);
   gosterge.dataset.bolge = en;
   gosterge.querySelector('b').textContent = b.ad;
   gosterge.querySelector('b + span').textContent = b.yuzyil;
