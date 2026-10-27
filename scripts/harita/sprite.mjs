@@ -21,6 +21,24 @@ const ORTAK_BAROK =
   "Painted in the same Baroque oil-painting style as the map in Image 1: glossy oil paint, warm golden theatrical light falling from the upper left, soft deep shadows on the far side, in the manner of Caravaggio and Rembrandt. The object itself is well lit so it reads clearly. At the same scale and feel as the existing game piece in Image 2. Seen from slightly above, at the same 3/4 bird's-eye angle as the map. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object itself. No cast shadow beyond the base, no text, no frame.";
 
 const ISLER = {
+  // Rokoko ve Neoklasisizm (Emre onayladı; 2. sembol sabun köpüğü yerine Gainsborough'nun şapkası): salıncak, Mavi Oğlan'ın
+  // şapkası, defne çelenkli İyon başlık; karakter aynı öğrenci, 18. yüzyıl kıyafetiyle. Harita açık renkli: ortak açık üslup.
+  aydinlanma: {
+    harita: 'cikti/aydinlanma/aydinlanma-secilen.jpg',
+    ornekNesne: 'cikti/ortacag/sprite/sembol-1.webp',
+    ornekYolcu: 'cikti/barok2/sprite/karakter.webp',
+    isler: [
+      { ad: 'sembol-1', metin: "A small Rococo garden swing, as in Fragonard's The Swing: a little wooden seat with pink silk cushions hanging by two ropes wound with pink ribbons and roses from a curved, leafy branch on a short carved post, standing on a small round paved stone base." },
+      { ad: 'sembol-2', metin: "The wide-brimmed black hat with a large curling white ostrich feather from Gainsborough's The Blue Boy, resting on a small blue silk cushion on a little carved wooden stool, standing on a small round paved stone base." },
+      { ad: 'sembol-3', metin: 'A white marble Ionic column capital with elegant volutes, as on the portico of the Panthéon in Paris, with a green laurel wreath hanging from it, standing on a short fluted column stump on a small round paved stone base.' },
+      {
+        ad: 'karakter',
+        yolcu: true,
+        metin:
+          'The same young male art student as in Image 2 (same face, age, satchel and sketchbook), now dressed in mid-18th-century clothing: a long pale blue silk frock coat with embroidered cuffs, a cream waistcoat, a white lace jabot, breeches, white stockings and buckled shoes, his hair tied back with a black ribbon, no hat. Full body, walking forward, friendly face. Same scale and feel as the traveller figure in Image 2.',
+      },
+    ],
+  },
   // Klasisizm ve Geç Barok (Emre onayladı): Güneş Kral'ın altın güneş amblemi, bulut üstünde yaldızlı putto; karakter aynı
   // öğrenci, 17. yüzyıl sonu Fransız kıyafetiyle. Harita açık renkli (alt Lorrain, üst tavan freski): ortak açık üslup.
   barok2: {
