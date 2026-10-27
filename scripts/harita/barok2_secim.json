@@ -1,0 +1,14 @@
+{
+  "aciklama": "Klasisizm ve Geç Barok seçimi (Emre): GPT Image 2 + 4 tablo (gpt-image-2-ref-cep.jpg) → Nano Banana Pro renk düzenlemesi (nano-banana-pro-uslup-cep.jpg). Emre: üst yarı canlı hâl, alt yarı ikisinin yarı yarıya karışımı (barok2-renk-B.jpg; y 0,47–0,55 arası yumuşak geçiş). Alt meydan havuza dönmüştü: gpt-image-2-havuz ile boş meydana boyanacak.",
+  "kaynak_resim": "cikti/barok2/barok2-renk-B.jpg",
+  "duraklar": [
+    [
+      0.3125,
+      0.75
+    ],
+    [
+      0.605,
+      0.369
+    ]
+  ]
+}

@@ -70,6 +70,9 @@ const ISLER = [
   // Barok (Emre: GPT'nin çizimi seçildi, 8 meydandan 5'i kalır): fazla 3 meydan ve kolları maskeyle manzaraya boyanır
   // (iskelet/barok_iskelet_cep_maske_sil.png, elle); sonra birlestir.py ile yalnız açık alanlar alınır
   { ad: 'gpt-image-2-sil', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-ref', maske: 'sil', sablon: 'sil', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.15 },
+  // Klasisizm (Emre: üst yarı canlı, alt yarı yarı yarıya, barok2-renk-B.jpg): alt meydan fıskiyeli havuza dönmüştü; maskeyle
+  // boş taş meydana boyanır (iskelet/barok2_iskelet_cep_maske_havuz.png). Kaynak: --kaynak barok2-renk-B; sonra birlestir.py
+  { ad: 'gpt-image-2-havuz', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-ref', maske: 'havuz', sablon: 'havuz', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.15 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
@@ -202,6 +205,7 @@ async function main() {
     melek: await readFile(path.join(BURASI, 'istemler', 'melek.txt'), 'utf8'),
     yol: await readFile(path.join(BURASI, 'istemler', 'yol.txt'), 'utf8'),
     sil: await readFile(path.join(BURASI, 'istemler', 'sil.txt'), 'utf8'),
+    havuz: await readFile(path.join(BURASI, 'istemler', 'havuz.txt'), 'utf8'),
   };
   const duzenleIstemi = (is, secilen) =>
     sablonlar[is.sablon || (is.maske === 'serit' || is.maske === 'ekle' ? is.maske : is.maske ? 'maske' : 'duzenle')]
