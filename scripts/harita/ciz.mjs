@@ -89,6 +89,10 @@ const ISLER = [
   // tablosu örnek olarak gider; birlestir.py ile yalnız iskelet/modern_iskelet_cep_maske_munch.png alanı alınır.
   // Gündüz --kaynak modern-secilen, gece --kaynak modern-secilen-gece (istem ışığı korur).
   { ad: 'nano-banana-pro-munch', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'munch_nano', oran: '9:16', ref: true, refSiniri: 2, fiyat: 0.15 },
+  // Dönem geçişi denemeleri (Emre: süs gibi eklenmesin, gerçek geçiş boyansın / köprü): iki dönemin kenarları arasındaki boş
+  // gri bandı Nano boyar (yer korunur); birlestir.py ile yalnız bant alınır. --kaynak ronesans-barok (cikti/gecis/)
+  { ad: 'nano-banana-pro-gecisboya', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'boya', oran: '9:16', ref: false, fiyat: 0.15 },
+  { ad: 'nano-banana-pro-geciskopru', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'kopru', oran: '9:16', ref: false, fiyat: 0.15 },
   { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
 ];
 
