@@ -1,0 +1,32 @@
+{
+  "aciklama": "Modern sanat: B (gpt-image-2-ref-cep-v2) → üstte müzenin önünden göğe giden yol elle kaldırıldı (GPT bandı kaydı, kullanılamadı). Yedek: modern-secilen-yollu.jpg. Gece: Nano; fiyorttaki ikinci ay elle silindi.",
+  "resim": "cikti/modern/modern-secilen.jpg",
+  "duraklar": [
+    [
+      0.79,
+      0.963
+    ],
+    [
+      0.83,
+      0.661
+    ],
+    [
+      0.755,
+      0.506
+    ],
+    [
+      0.8,
+      0.31
+    ],
+    [
+      0.83,
+      0.117
+    ]
+  ],
+  "resim_gece": "cikti/modern/modern-secilen-gece.jpg",
+  "gece_sembol_tonu": [
+    0.88,
+    0.7,
+    0.48
+  ]
+}

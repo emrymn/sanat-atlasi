@@ -1,0 +1,184 @@
+[
+  {
+    "ad": "gpt-image-2-ref",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.4,
+    "iskelet": "cep",
+    "sure": 74,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [
+      "Dante and the Three Kingdoms",
+      "The Arnolfini Portrait",
+      "The Hunters in the Snow",
+      "The Garden of Earthly Delights (detail: the pink Fountain of Life in the left panel)",
+      "The Creation of Adam (detail: the two reaching hands)",
+      "The School of Athens",
+      "The Wedding at Cana",
+      "The Chess Game",
+      "View of Toledo"
+    ],
+    "istemOzeti": "3e327a51aa",
+    "ek": {
+      "providerMetadata": {
+        "openai": {
+          "images": [
+            {
+              "created": 1793047433,
+              "size": "1024x3072",
+              "quality": "high",
+              "background": "opaque",
+              "outputFormat": "png",
+              "imageTokens": 8204,
+              "textTokens": 1109
+            }
+          ]
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "openai/gpt-image-2",
+            "resolvedProvider": "openai",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: openai. Total execution order: openai(system)",
+            "canonicalSlug": "openai/gpt-image-2",
+            "finalProvider": "openai",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "openai/gpt-image-2",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "openai",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793047367267,
+                    "endTime": 1793047435640,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.189737",
+          "marketCost": "0.189737",
+          "surchargeCost": "0",
+          "gatewayCost": "0.189737",
+          "inferenceCost": "0.189737",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.189737",
+          "generationId": "gen_01M5WZ73HB41552D0N4KNHKQZ1"
+        }
+      },
+      "warnings": []
+    }
+  },
+  {
+    "ad": "gpt-image-2-maske",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "duzenle": "nano-banana-pro-ref",
+    "maske": true,
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.2,
+    "iskelet": "cep",
+    "sure": 72,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [
+      "Dante and the Three Kingdoms",
+      "The Arnolfini Portrait",
+      "The Hunters in the Snow",
+      "The Garden of Earthly Delights (detail: the pink Fountain of Life in the left panel)",
+      "The Creation of Adam (detail: the two reaching hands)",
+      "The School of Athens",
+      "The Wedding at Cana",
+      "The Chess Game",
+      "View of Toledo"
+    ],
+    "istemOzeti": "e13a55098f",
+    "ek": {
+      "providerMetadata": {
+        "openai": {
+          "images": [
+            {
+              "created": 1793047505,
+              "size": "1024x3072",
+              "quality": "high",
+              "background": "opaque",
+              "outputFormat": "png",
+              "imageTokens": 8204,
+              "textTokens": 821
+            }
+          ]
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "openai/gpt-image-2",
+            "resolvedProvider": "openai",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: openai. Total execution order: openai(system)",
+            "canonicalSlug": "openai/gpt-image-2",
+            "finalProvider": "openai",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "openai/gpt-image-2",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "openai",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793047440796,
+                    "endTime": 1793047507826,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.188297",
+          "marketCost": "0.188297",
+          "surchargeCost": "0",
+          "gatewayCost": "0.188297",
+          "inferenceCost": "0.188297",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.188297",
+          "generationId": "gen_01M5WZ9BAEGW99NGJGD7DY31N0"
+        }
+      },
+      "warnings": []
+    }
+  }
+]

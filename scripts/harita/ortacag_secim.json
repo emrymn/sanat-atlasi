@@ -1,0 +1,47 @@
+{
+  "aciklama": "Orta Çağ seçimi: GPT v4 (Claude'un seçtiği eserler) → Nano Banana Pro üslup (Giotto freski / Siena altın zemin / Limbourg minyatürü) → GPT melekler (maskeyle, birleştirildi). Emre: 1. ve 3. seviye kendi bölgesinde (aralık eşit değil). 2. seviye Siena meydanı resimde var; 1 ve 3 eklenecek. Meydanlar: 1 GPT'nin eklediği (birlestir.py), 2 resimde vardı, 3 GPT'nin çiziminde kaymıştı; onun meydan kesiti %1,5 sola alınıp yola oturtuldu.",
+  "resim": "cikti/ortacag/ortacag-secilen.jpg",
+  "yeni_meydanlar": [
+    [
+      0.475,
+      0.878
+    ],
+    [
+      0.53,
+      0.305
+    ]
+  ],
+  "duraklar": [
+    [
+      0.462,
+      0.874
+    ],
+    [
+      0.685,
+      0.667
+    ],
+    [
+      0.54,
+      0.366
+    ]
+  ],
+  "yol_denemesi": "Siena bölümündeki tuğla yolu taşa çevirme ve bazilikadaki bulanık ovali düzeltme denendi (gpt-image-2-yol, ortacag-yol-birlesik.jpg); GPT 2. meydanın kol yolunu sildi. Emre: şimdiki resim (A) kalsın.",
+  "resim_gece": "cikti/ortacag/ortacag-secilen-gece.jpg",
+  "semboller": [
+    "sprite/sembol-1.webp",
+    "sprite/sembol-2.webp",
+    "sprite/sembol-3.webp"
+  ],
+  "karakter": "sprite/karakter.webp",
+  "boyut_pt": {
+    "sembol": 56,
+    "karakter": 72
+  },
+  "karakter_kayma": [
+    0.085,
+    -0.012
+  ],
+  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)",
+  "gece_notu": "Nano Banana Pro, istemler/ortacag_gece.txt (altın gök mum ışığında; Emre). Gündüzle üst üste ölçüldü (≤2 px), meydanlar boş; gece_duzelt gerekmedi.",
+  "meydan_notu": "Yanlış alarm (Claude): uygulama yalnız görseli olan sanatçıları gösterdiği için seviye sayısı haritadaki meydan sayısıyla zaten aynı. Eklenen 2 meydan geri alındı; o hâli *-fazla-meydan.jpg olarak yedekte. 4 ek sembol (sembol-antik, -romanesk, -ghiberti, -uccello) kullanılmıyor."
+}

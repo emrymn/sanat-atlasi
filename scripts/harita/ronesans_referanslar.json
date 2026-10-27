@@ -1,0 +1,155 @@
+{
+  "aciklama": "Rönesans gizli eserleri: Emre 17'den 9'a, sonra 7'ye indirdi (seviye başına 1; 'çok kalabalık', 'gözü yoruyor'). Hepsi depodaki yerel kopyalar. 9 tablo + taslak = GPT Image 2'nin 10 görsel sınırı. cikarilan: önceki listeden çıkanlar (Venüs GPT reddettiği için önceden çıkmıştı). kirp: OpenAI çıplak figürler yüzünden (Bosch, Âdem) isteği reddetti; bu iki tablodan yalnız gizli eserin parçası gider (piksel kutusu, 1280 px'lik yerel kopyada). Arnolfini çıktı (Emre: 'garip durmuş, yıkık evin dışından'); yerine Metsys'in Sarraf ve Karısı.",
+  "tablolar": [
+    {
+      "oncelik": 1,
+      "seviye": 1,
+      "sanatci": "Domenico di Michelino",
+      "eser": "Dante and the Three Kingdoms",
+      "dosya": "gorseller/b/1a2e0d27e42761b0.jpg",
+      "kaynak": "commons:Dante_et_la_Divine_Comédie-edit-crop.jpg"
+    },
+    {
+      "oncelik": 2,
+      "seviye": 2,
+      "sanatci": "Quentin Metsys",
+      "eser": "The Moneylender and His Wife",
+      "dosya": "gorseller/b/66b6e1b09c3c3978.jpg",
+      "kaynak": "commons:Massysm_Quentin_—_The_Moneylender_and_his_Wife_—_1514.jpg"
+    },
+    {
+      "oncelik": 3,
+      "seviye": 3,
+      "sanatci": "Pieter Bruegel the Elder",
+      "eser": "The Hunters in the Snow",
+      "dosya": "gorseller/b/216d1fc681535d27.jpg",
+      "kaynak": "commons:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg"
+    },
+    {
+      "oncelik": 4,
+      "seviye": 4,
+      "sanatci": "Michelangelo",
+      "eser": "The Creation of Adam (detail: the two reaching hands)",
+      "dosya": "gorseller/b/3492a085a4197805.jpg",
+      "kaynak": "commons:The_Creation_of_Adam_perspective_fix.jpg",
+      "kirp": [
+        320,
+        195,
+        760,
+        300
+      ]
+    },
+    {
+      "oncelik": 5,
+      "seviye": 5,
+      "sanatci": "Paolo Veronese",
+      "eser": "The Wedding at Cana",
+      "dosya": "gorseller/b/870f58ce77c32209.jpg",
+      "kaynak": "commons:Les_Noces_de_Cana_-_Paolo_Veronese_-_Musée_du_Louvre_Peintures_INV_142_;_MR_384.jpg"
+    },
+    {
+      "oncelik": 6,
+      "seviye": 6,
+      "sanatci": "Sofonisba Anguissola",
+      "eser": "The Chess Game",
+      "dosya": "gorseller/b/5522bc0dc8009d75.jpg",
+      "kaynak": "commons:Sofonisba_Anguissola_-_Portrait_of_the_Artist's_Sisters_Playing_Chess_-_WGA00697.jpg"
+    },
+    {
+      "oncelik": 7,
+      "seviye": 7,
+      "sanatci": "El Greco",
+      "eser": "View of Toledo",
+      "dosya": "gorseller/b/00dd533f1f362e72.jpg",
+      "kaynak": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP349564.jpg"
+    }
+  ],
+  "cikarilan": [
+    {
+      "oncelik": 2,
+      "seviye": 2,
+      "sanatci": "Jan van Eyck",
+      "eser": "The Arnolfini Portrait",
+      "dosya": "gorseller/b/84d3c15e96896efe.jpg",
+      "kaynak": "commons:Van_Eyck_-_Arnolfini_Portrait.jpg"
+    },
+    {
+      "oncelik": 4,
+      "seviye": 3,
+      "sanatci": "Hieronymus Bosch",
+      "eser": "The Garden of Earthly Delights (detail: the pink Fountain of Life in the left panel)",
+      "dosya": "gorseller/b/1434ee16ca10ad2c.jpg",
+      "kaynak": "commons:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg",
+      "kirp": [
+        15,
+        110,
+        295,
+        425
+      ]
+    },
+    {
+      "oncelik": 6,
+      "seviye": 4,
+      "sanatci": "Raphael",
+      "eser": "The School of Athens",
+      "dosya": "gorseller/b/3e754c9aae3c41f3.jpg",
+      "kaynak": "commons:The_School_of_Athens_Fresco_by_Raphael_(Ank_Kumar,_Infosys_Limited)_02.jpg"
+    },
+    {
+      "oncelik": 3,
+      "seviye": 6,
+      "sanatci": "Jacopo Pontormo",
+      "eser": "The Deposition",
+      "dosya": "gorseller/b/1769a17bdd359be0.jpg",
+      "kaynak": "commons:Jacopo_Pontormo_-_Deposition_-_WGA18113_(cropped).jpg"
+    },
+    {
+      "oncelik": 4,
+      "seviye": 5,
+      "sanatci": "Giovanni Bellini",
+      "eser": "Saint Francis in the Desert",
+      "dosya": "gorseller/b/3474edd7feaa5398.jpg",
+      "kaynak": "commons:Giovanni_Bellini_-_Saint_Francis_in_the_Desert_-_Google_Art_Project.jpg"
+    },
+    {
+      "oncelik": 5,
+      "seviye": 1,
+      "sanatci": "Paolo Uccello",
+      "eser": "The Battle of San Romano",
+      "dosya": "gorseller/b/544f207805b1f466.jpg",
+      "kaynak": "commons:Uccello_—_the_Battle_of_San_Romano.jpg"
+    },
+    {
+      "oncelik": 6,
+      "seviye": 7,
+      "sanatci": "Parmigianino",
+      "eser": "Madonna with the Long Neck",
+      "dosya": "gorseller/b/ebd73e500d20ad0b.jpg",
+      "kaynak": "commons:Parmigianino_-_Madonna_and_Child_with_Angels,_known_as_the_Madonna_with_the_Long_Neck.jpg"
+    },
+    {
+      "oncelik": 7,
+      "seviye": 5,
+      "sanatci": "Giorgione",
+      "eser": "The Tempest",
+      "dosya": "gorseller/b/22fa70122f47c863.jpg",
+      "kaynak": "commons:Giorgione_-_Das_Gewitter.jpg"
+    },
+    {
+      "oncelik": 8,
+      "seviye": 1,
+      "sanatci": "Fra Angelico",
+      "eser": "The Annunciation",
+      "dosya": "gorseller/b/8fda010e67a76e56.jpg",
+      "kaynak": "commons:Angelico_-_Annunciation_-_San_Marco_north_corridor.jpg"
+    },
+    {
+      "oncelik": 16,
+      "seviye": 4,
+      "sanatci": "Leonardo da Vinci",
+      "eser": "Mona Lisa (its background landscape)",
+      "dosya": "gorseller/b/ae10d40e1edfe39a.jpg",
+      "kaynak": "commons:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "ad": "gpt-image-2-ref",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.4,
+    "iskelet": "cep",
+    "sure": 79,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [
+      "The Chess Game",
+      "Dante and the Three Kingdoms",
+      "The Deposition",
+      "Saint Francis in the Desert",
+      "The Battle of San Romano",
+      "Madonna with the Long Neck",
+      "The Tempest",
+      "The Annunciation",
+      "The Wedding at Cana"
+    ],
+    "istemOzeti": "22fb80b4f9",
+    "ek": {
+      "providerMetadata": {
+        "openai": {
+          "images": [
+            {
+              "created": 1793046165,
+              "size": "1024x3072",
+              "quality": "high",
+              "background": "opaque",
+              "outputFormat": "png",
+              "imageTokens": 8300,
+              "textTokens": 1192
+            }
+          ]
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "openai/gpt-image-2",
+            "resolvedProvider": "openai",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: openai. Total execution order: openai(system)",
+            "canonicalSlug": "openai/gpt-image-2",
+            "finalProvider": "openai",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "openai/gpt-image-2",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "openai",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793046095953,
+                    "endTime": 1793046167377,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.19092",
+          "marketCost": "0.19092",
+          "surchargeCost": "0",
+          "gatewayCost": "0.19092",
+          "inferenceCost": "0.19092",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.19092",
+          "generationId": "gen_01M5WY09KGSYBXJQ2SNSGVPDGY"
+        }
+      },
+      "warnings": []
+    }
+  }
+]

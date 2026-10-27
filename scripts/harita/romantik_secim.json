@@ -1,0 +1,33 @@
+{
+  "aciklama": "Romantizmden Realizme: seçilen resim F (gpt-image-2-ref-cep-v6) + Londra meydanı (GPT bandı) + Opera meydanı Opera'nın önüne taşındı (GPT bandı, elle birleştirildi) + küçük Gezgin kopyası ve fazla yol kolu elle silindi. Yedekler: romantik-secilen-eski.jpg (Londra'dan önce), romantik-secilen-londra.jpg (Opera'dan önce).",
+  "resim": "cikti/romantik/romantik-secilen.jpg",
+  "duraklar": [
+    [
+      0.8076,
+      0.887
+    ],
+    [
+      0.3711,
+      0.6449
+    ],
+    [
+      0.8301,
+      0.4362
+    ],
+    [
+      0.2324,
+      0.2878
+    ],
+    [
+      0.2598,
+      0.1217
+    ]
+  ],
+  "resim_gece": "cikti/romantik/romantik-secilen-gece.jpg",
+  "gece_sembol_tonu": [
+    0.88,
+    0.7,
+    0.48
+  ],
+  "gece_sembol_tonu_notu": "Emre gece resmini onayladı; ton seçimi açıkça yapılmadı, önceki dönemler gibi sıcak (lamba) ton kondu. Serin seçenek: [0.72,0.78,0.95]."
+}

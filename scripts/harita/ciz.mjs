@@ -1,0 +1,318 @@
+// Yeni harita (İş 41): bir dönemin resmini Vercel AI Gateway üzerinden birkaç modelle çizer.
+// Model, yol iskeletini (iskelet/<dönem>_iskelet.png) kesin yerleşim rehberi olarak alır; seviye noktaları
+// iskeletten bilindiği için çizimden sonra işaretlenmez. Uygulamaya dokunmaz: çıktılar cikti/<dönem>/ altına.
+//
+// Emre'nin Mac'inde çalışır (bu oturumdan Vercel'e erişilemiyor):
+//   cd scripts/harita && npm ci
+//   export AI_GATEWAY_API_KEY=...
+//   node ciz.mjs ronesans              → yalnız plan ve tahmini maliyet (hiçbir şey harcanmaz)
+//   node ciz.mjs ronesans --calistir   → çizer
+//   node ciz.mjs ronesans --calistir --yalniz gpt-image-2-yalin   → tek iş (virgülle birkaç iş)
+//   node ciz.mjs ronesans --iskelet cep …   → 'ana yol ve cepler' iskeletiyle (varsayılan: yilankavi)
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import path from 'node:path';
+import sharp from 'sharp';
+import { gateway, generateImage, generateText } from 'ai';
+
+const BURASI = path.dirname(fileURLToPath(import.meta.url));
+const KOK = path.resolve(BURASI, '../..');
+const W = 1024;
+const H = 3072;
+const DOLGU = { r: 214, g: 210, b: 198 }; // taslağın dışına eklenen düz kenar (modelden doldurması istenir)
+
+// Deneme turu (Emre'nin seçimi): GPT Image 2 ve Nano Banana Pro hem referanssız hem referanslı;
+// ötekiler yalnız referanssız. refSiniri: modelin aldığı en çok görsel (taslak dahil); tablolar öncelik sırasıyla o kadar gider. oran: modelden istenen en-boy; 1:3 tek parçada çizilemiyorsa taslak o orana
+// düz kenarla genişletilir, çıktıdan ortadaki 1:3 kesilir. fiyat: kaba tahmin ($), yalnız planda gösterilir.
+const ISLER = [
+  { ad: 'gpt-image-2-yalin', model: 'openai/gpt-image-2', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.3 },
+  { ad: 'gpt-image-2-ref', model: 'openai/gpt-image-2', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.4 },
+  { ad: 'nano-banana-pro-yalin', model: 'google/gemini-3-pro-image', tur: 'gemini', oran: '9:16', ref: false, fiyat: 0.24 },
+  { ad: 'nano-banana-pro-ref', model: 'google/gemini-3-pro-image', tur: 'gemini', oran: '9:16', ref: true, refSiniri: 14, fiyat: 0.3 },
+  { ad: 'nano-banana-2-yalin', model: 'google/gemini-3.1-flash-image', tur: 'gemini', oran: '1:4', ref: false, fiyat: 0.1 },
+  { ad: 'flux-2-pro-yalin', model: 'bfl/flux-2-pro', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.08 },
+  { ad: 'seedream-5-pro-yalin', model: 'bytedance/seedream-5.0-pro', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.04 },
+  // ilk denemede tablosuz eserler uydurma çıktı; Seedream'in referans sınırı kesin bilinmiyor, 10'da tutuldu
+  { ad: 'seedream-5-pro-ref', model: 'bytedance/seedream-5.0-pro', tur: 'gorsel', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.05 },
+  // İki adım (Emre'nin seçimi): yerleşimi doğru çıkan bir çizimi (kaynak) GPT Image 2 düzenler; yer ve açık renkler kalır,
+  // gizli eserler tablolara benzetilir. Taslak yerine kaynak çizim gider (cikti/<dönem>/<kaynak>-<iskelet>.jpg).
+  { ad: 'gpt-image-2-duzenle', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
+  // GPT + maske (Emre'nin seçimi): kaynak çizimin yolu, kolları ve meydanları maskeyle kilitli (maske.py); GPT yalnız
+  // çevreyi boyar. Ardından kaynak yol yumuşak kenarla geri konur (-birlesik): GPT maskeye tam uymasa da seviyeler yerinde.
+  { ad: 'gpt-image-2-maske', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: true, oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
+  // Yalnız 7 meydan kilitli (Emre: yolu da GPT boyasın, yeşil şerit kalmasın)
+  { ad: 'gpt-image-2-maske-meydan', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: 'meydan', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
+  // Dar maske: yol, kol ve meydanlar yolun tam kenarına kadar kilitli; açık renkler, sade istem (Emre'nin seçimi)
+  { ad: 'gpt-image-2-maske-dar', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: 'dar', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
+  { ad: 'gpt-image-2-maske-orta', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-ref', maske: 'orta', oran: '1:3', boyut: '1024x3072', ref: true, refSiniri: 10, fiyat: 0.2 },
+  // İki geçiş (Emre'nin seçimi): önce geniş maske (yer kesin tutar), sonra yalnız yol kenarındaki şerit açık maske
+  // (sonuncu gpt-image-2-maske çıktısını düzenler; tablo gitmez). İkisi aynı komutta sırayla: --yalniz gpt-image-2-maske,gpt-image-2-serit
+  { ad: 'gpt-image-2-serit', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-maske', maske: 'serit', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.18 },
+  // Seçilen resme (F) yeni meydan ekleme: yalnız 4 küçük alan açık (Emre: seviyeler meydanlarda olsun)
+  { ad: 'gpt-image-2-meydan-ekle', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-maske', maske: 'ekle', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.15 },
+  // Gece (Emre'nin seçimi: Nano Banana Pro düzenlemesi): seçilen gündüz resmi --kaynak ile; 9:16'ya kenarla genişletilip
+  // ortadaki 1:3 geri kesilir. Yer kaymamalı: sonuç gündüzle üst üste konup meydanlar kontrol edilir.
+  { ad: 'nano-banana-pro-gece', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'ronesans-secilen', gece: true, oran: '9:16', ref: false, fiyat: 0.15 },
+  // Üslup düzenlemesi (Emre: 'dönemi yansıtmamış'): seçilen çizimi Nano Banana Pro yalnız üslubunu değiştirerek yeniden
+  // boyar (gecede olduğu gibi yer kaymaz). İstem: istemler/<dönem>_uslup.txt; üslup örneği olarak dönemin tabloları gider.
+  { ad: 'nano-banana-pro-uslup', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-maske', gece: true, istemDosya: 'uslup', oran: '9:16', ref: true, refSiniri: 14, fiyat: 0.15 },
+  // Üslup sonrası düzeltme (Emre: altın kısımlar boş, melek ekle): ekRef ile yalnız bu işe giden örnek tablolar
+  { ad: 'nano-banana-pro-duzelt', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'nano-banana-pro-uslup', gece: true, istemDosya: 'duzelt', oran: '9:16', ref: false,
+    ekRef: ['gorseller/b/4f667b920dd4b8c9.jpg', 'gorseller/b/e3ad1487857b631e.jpg'], fiyat: 0.15 },
+  // Altın göğe melek (maskeyle; tek istekteki üç değişikliği Nano Banana Pro baştan çizdi): yalnız altın alanlar ve sol alt köşe açık
+  { ad: 'gpt-image-2-melek', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'nano-banana-pro-uslup', maske: 'duzelt', sablon: 'melek', oran: '1:3', boyut: '1024x3072', ref: false,
+    ekRef: ['gorseller/b/4f667b920dd4b8c9.jpg', 'gorseller/b/e3ad1487857b631e.jpg'], fiyat: 0.18 },
+  // Yol tek renk (Emre: Siena bölümündeki kırmızı tuğla taşa dönsün) + bazilikadaki bulanık oval: yalnız bu iki alan açık
+  // (iskelet/ortacag_iskelet_cep_maske_yol.png, seçilen resimden elle). Kaynak: --kaynak ortacag-secilen; sonra birlestir.py
+  { ad: 'gpt-image-2-yol', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-melek', maske: 'yol', sablon: 'yol', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.15 },
+  // Barok (Emre: GPT'nin çizimi seçildi, 8 meydandan 5'i kalır): fazla 3 meydan ve kolları maskeyle manzaraya boyanır
+  // (iskelet/barok_iskelet_cep_maske_sil.png, elle); sonra birlestir.py ile yalnız açık alanlar alınır
+  { ad: 'gpt-image-2-sil', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-ref', maske: 'sil', sablon: 'sil', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.15 },
+  // Klasisizm (Emre: üst yarı canlı, alt yarı yarı yarıya, barok2-renk-B.jpg): alt meydan fıskiyeli havuza dönmüştü; maskeyle
+  // boş taş meydana boyanır (iskelet/barok2_iskelet_cep_maske_havuz.png). Kaynak: --kaynak barok2-renk-B; sonra birlestir.py
+  { ad: 'gpt-image-2-havuz', model: 'openai/gpt-image-2', tur: 'gorsel', duzenle: 'gpt-image-2-ref', maske: 'havuz', sablon: 'havuz', oran: '1:3', boyut: '1024x3072', ref: false, fiyat: 0.15 },
+  // Klasisizm alt kenar (Emre: en altta deniz olmasın, yol kesintisiz alt kenara insin): Nano düzenler (GPT bu resmi
+  // reddediyor), birlestir.py ile yalnız alt kısım (iskelet/barok2_iskelet_cep_maske_alt.png) alınır. --kaynak barok2-secilen
+  { ad: 'nano-banana-pro-alt', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'alt', oran: '9:16', ref: false, fiyat: 0.15 },
+  // Klasisizm (Emre: ortadaki Nano renkli hâl; gökyüzüne çıkan yol garip, kalksın): Nano düzenler (GPT melekler yüzünden
+  // reddediyor); birlestir.py ile yalnız iskelet/barok2_iskelet_cep_maske_gokyol.png alanı alınır. --kaynak nano-banana-pro-uslup-cep-v2
+  { ad: 'nano-banana-pro-gokyol', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'gokyol', oran: '9:16', ref: false, fiyat: 0.15 },
+  // Rokoko gece (Emre: alttaki renkli kâğıt fenerler kopuk duruyor, üstle eşitle): Nano düzenler, birlestir.py ile yalnız alt
+  // üçte bir (iskelet/aydinlanma_iskelet_cep_maske_gecealt.png). --kaynak nano-banana-pro-gece-cep
+  { ad: 'nano-banana-pro-gecealt', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'gecealt', oran: '9:16', ref: false, fiyat: 0.15 },
+  // Empresyonizm (Emre: G güzel ama çok yeşil, sıcak altın ışık; alttaki ikinci Monet köprüsü silinsin): Nano düzenler,
+  // düzen kalır. --kaynak gpt-image-2-ref-cep-v7
+  { ad: 'nano-banana-pro-renk', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'renk', oran: '9:16', ref: false, fiyat: 0.15 },
+  // Modern Çığlık (Emre: Munch kısmı aslına benzesin): GPT bandı yerleşimi kaydırdı; Nano düzenler (yer korunur), Çığlık
+  // tablosu örnek olarak gider; birlestir.py ile yalnız iskelet/modern_iskelet_cep_maske_munch.png alanı alınır.
+  // Gündüz --kaynak modern-secilen, gece --kaynak modern-secilen-gece (istem ışığı korur).
+  { ad: 'nano-banana-pro-munch', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'munch_nano', oran: '9:16', ref: true, refSiniri: 2, fiyat: 0.15 },
+  // Dönem geçişi denemeleri (Emre: süs gibi eklenmesin, gerçek geçiş boyansın / köprü): iki dönemin kenarları arasındaki boş
+  // gri bandı Nano boyar (yer korunur); birlestir.py ile yalnız bant alınır. --kaynak ronesans-barok (cikti/gecis/)
+  { ad: 'nano-banana-pro-gecisboya', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'boya', oran: '9:16', ref: false, fiyat: 0.15 },
+  { ad: 'nano-banana-pro-geciskopru', model: 'google/gemini-3-pro-image', tur: 'gemini', duzenle: 'gpt-image-2-ref', gece: true, istemDosya: 'kopru', oran: '9:16', ref: false, fiyat: 0.15 },
+  { ad: 'grok-imagine-2-yalin', model: 'spacexai/grok-imagine-image-2.0', tur: 'gorsel', oran: '1:2', ref: false, fiyat: 0.04 },
+];
+
+const oranSayi = (o) => {
+  const [a, b] = o.split(':').map(Number);
+  return a / b;
+};
+
+// Taslağı istenen orana getirir: daha uzun oran (1:4) → üstüne ve altına, daha geniş oran (9:16, 1:2) → iki yanına kenar.
+// Dönen kutu: taslağın genişletilmiş tuvaldeki yeri (oranla); çıktıdan aynı kutu kesilir.
+export async function tuvaleYerlestir(png, oran) {
+  const r = oranSayi(oran);
+  if (Math.abs(r - W / H) < 1e-6) return { resim: png, kutu: { x: 0, y: 0, w: 1, h: 1 }, dolgu: false };
+  const tw = r > W / H ? Math.round(H * r) : W;
+  const th = r > W / H ? H : Math.round(W / r);
+  const sol = Math.round((tw - W) / 2);
+  const ust = Math.round((th - H) / 2);
+  const resim = await sharp({ create: { width: tw, height: th, channels: 3, background: DOLGU } })
+    .composite([{ input: png, left: sol, top: ust }])
+    .png()
+    .toBuffer();
+  return { resim, kutu: { x: sol / tw, y: ust / th, w: W / tw, h: H / th }, dolgu: true };
+}
+
+export async function kes(cikti, kutu) {
+  const m = await sharp(cikti).metadata();
+  const alan = {
+    left: Math.round(kutu.x * m.width),
+    top: Math.round(kutu.y * m.height),
+    width: Math.round(kutu.w * m.width),
+    height: Math.round(kutu.h * m.height),
+  };
+  // JPG: kesilmiş 1024×3072 PNG ~7 MB tutuyordu, depoyu şişiriyordu (karşılaştırma için q90 yeter)
+  return { jpg: await sharp(cikti).extract(alan).resize(W, H, { fit: 'fill' }).jpeg({ quality: 90, mozjpeg: true }).toBuffer(), ham: m, alan };
+}
+
+// Maskeli çizimden sonra: kaynak resmin yolu, kolları ve meydanları yumuşak kenarlı maskeyle çizimin üstüne geri konur
+export async function yoluGeriKoy(cizim, kaynak, yumusakYolu) {
+  // Saydamlık elle eklenir: sharp 0.35'te joinChannel/greyscale birleşimi kanal eklemiyordu (test edildi)
+  const rgb = await sharp(kaynak).resize(W, H).removeAlpha().raw().toBuffer();
+  const a = await sharp(yumusakYolu).resize(W, H).extractChannel(0).raw().toBuffer();
+  const rgba = Buffer.alloc(W * H * 4);
+  for (let i = 0; i < W * H; i++) {
+    rgba[i * 4] = rgb[i * 3];
+    rgba[i * 4 + 1] = rgb[i * 3 + 1];
+    rgba[i * 4 + 2] = rgb[i * 3 + 2];
+    rgba[i * 4 + 3] = a[i];
+  }
+  const ust = await sharp(rgba, { raw: { width: W, height: H, channels: 4 } }).png().toBuffer();
+  return sharp(cizim).resize(W, H).composite([{ input: ust }]).jpeg({ quality: 90, mozjpeg: true }).toBuffer();
+}
+
+function istemKur(temel, is, dolgu, tablolar) {
+  let metin = temel.trim();
+  if (dolgu) {
+    metin +=
+      '\n\nThe flat grey margins around the sketch are not part of the layout: fill them with the same scenery continuing naturally. The road and the {{N}} ovals inside the sketch area must stay exactly where they are.';
+  }
+  if (is.ref) {
+    const liste = tablolar.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for ${typeof t.seviye === "number" ? "level " + t.seviye : t.seviye}).`).join('\n');
+    metin +=
+      `\n\nImage 1 is the layout sketch; its road, side paths and plazas stay exactly in place no matter how many paintings are attached. The other images are the original paintings for the hidden details; use them as references so each hidden detail is a recognisable recreation of the real composition (same figures, poses and colours), painted small inside the landscape. Never paste them as framed pictures.\n${liste}`;
+  }
+  return metin;
+}
+
+async function ciz(is, istem, gorseller, oran, maske) {
+  if (is.tur === 'gemini') {
+    const sonuc = await generateText({
+      model: gateway(is.model),
+      messages: [
+        {
+          role: 'user',
+          content: [{ type: 'text', text: istem }, ...gorseller.map((g) => ({ type: 'file', data: g.veri, mediaType: g.tur }))],
+        },
+      ],
+      providerOptions: { google: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio: oran, imageSize: '2K' } } },
+    });
+    const dosya = sonuc.files.find((f) => f.mediaType.startsWith('image/'));
+    if (!dosya) throw new Error(`görsel dönmedi; metin: ${sonuc.text.slice(0, 200)}`);
+    return { veri: Buffer.from(dosya.uint8Array), ek: { usage: sonuc.usage, providerMetadata: sonuc.providerMetadata } };
+  }
+  const sonuc = await generateImage({
+    model: gateway.image(is.model),
+    prompt: { text: istem, images: gorseller.map((g) => g.veri), ...(maske ? { mask: maske } : {}) },
+    ...(is.boyut ? { size: is.boyut } : { aspectRatio: oran }),
+    // Seedream varsayılan olarak sağ alta "AI generated" filigranı koyuyor (ilk denemede vardı)
+    providerOptions: is.model.startsWith('openai/') ? { openai: { quality: 'high' } } : is.model.startsWith('bytedance/') ? { bytedance: { watermark: false } } : undefined,
+  });
+  return { veri: Buffer.from(sonuc.image.uint8Array), ek: { providerMetadata: sonuc.providerMetadata, warnings: sonuc.warnings } };
+}
+
+async function main() {
+  const [donem, ...bayraklar] = process.argv.slice(2);
+  if (!donem) throw new Error('Kullanım: node ciz.mjs <dönem> [--iskelet yilankavi|cep] [--calistir] [--yalniz <iş adı>] [--tekrar N] [--kaynak <dosya>]');
+  const secilenKaynak = bayraklar.includes('--kaynak') ? bayraklar[bayraklar.indexOf('--kaynak') + 1].replace(/\.jpg$/, '') : null;
+  // --tekrar N: aynı işi N kez (taslağa uyan çıkana kadar denemek için; Emre'nin seçimi)
+  const tekrar = bayraklar.includes('--tekrar') ? Math.max(1, parseInt(bayraklar[bayraklar.indexOf('--tekrar') + 1], 10) || 1) : 1;
+  const bicim = bayraklar.includes('--iskelet') ? bayraklar[bayraklar.indexOf('--iskelet') + 1] : 'yilankavi';
+  const calistir = bayraklar.includes('--calistir');
+  const yalniz = bayraklar.includes('--yalniz') ? bayraklar[bayraklar.indexOf('--yalniz') + 1] : null;
+  const isler = ISLER.filter((x) => !yalniz || yalniz.split(',').includes(x.ad)).flatMap((x) => Array(tekrar).fill(x)); // virgülle birden çok iş
+  if (!isler.length) throw new Error(`iş bulunamadı: ${yalniz}`);
+
+  const taslak = await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${bicim === 'yilankavi' ? '' : '_' + bicim}.png`));
+  const yerlesim = await readFile(path.join(BURASI, 'istemler', `yerlesim_${bicim}.txt`), 'utf8');
+  // seviye sayısı iskeletten (istemlerdeki {{N}}); Rönesans 7, Orta Çağ 3…
+  const seviyeSayisi = JSON.parse(await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${bicim === 'yilankavi' ? '' : '_' + bicim}.json`), 'utf8')).duraklar.length;
+  const N = (t) => t.replaceAll('{{N}}', String(seviyeSayisi));
+  const temel = N((await readFile(path.join(BURASI, 'istemler', `${donem}_gunduz.txt`), 'utf8')).replace('{{YERLESIM}}', yerlesim.trim()));
+  // tablolar depodaki yerel kopyalardan (indirme yok); öncelik sırasıyla, 1024 px'e küçültülüp JPEG (istek boyutu)
+  const tablolar = JSON.parse(await readFile(path.join(BURASI, `${donem}_referanslar.json`), 'utf8')).tablolar.sort((a, b) => a.oncelik - b.oncelik);
+  const refler = await Promise.all(
+    tablolar.map((t) =>
+      // kirp: [x0, y0, x1, y1] yerel kopyada; tablonun yalnız gizli eserlik parçası gider (çıplak figürler OpenAI'de reddediliyordu)
+      readFile(path.join(KOK, t.dosya)).then(async (b) => {
+        let r = sharp(b);
+        if (t.kirp) r = sharp(await r.extract({ left: t.kirp[0], top: t.kirp[1], width: t.kirp[2] - t.kirp[0], height: t.kirp[3] - t.kirp[1] }).toBuffer());
+        return { veri: await r.resize(1024, 1024, { fit: 'inside' }).jpeg({ quality: 88 }).toBuffer(), tur: 'image/jpeg' };
+      }),
+    ),
+  );
+  // Düzenleme istemi: seviye listesi ana istemdeki "From bottom to top:" bölümünden alınır
+  const seviyeler = temel.split('From bottom to top:')[1].split(/\n\s*\n/)[0].trim();
+  const sablonlar = {
+    duzenle: await readFile(path.join(BURASI, 'istemler', 'duzenle.txt'), 'utf8'),
+    maske: await readFile(path.join(BURASI, 'istemler', 'maske.txt'), 'utf8'),
+    serit: await readFile(path.join(BURASI, 'istemler', 'serit.txt'), 'utf8'),
+    ekle: await readFile(path.join(BURASI, 'istemler', 'ekle.txt'), 'utf8'),
+    melek: await readFile(path.join(BURASI, 'istemler', 'melek.txt'), 'utf8'),
+    yol: await readFile(path.join(BURASI, 'istemler', 'yol.txt'), 'utf8'),
+    sil: await readFile(path.join(BURASI, 'istemler', 'sil.txt'), 'utf8'),
+    havuz: await readFile(path.join(BURASI, 'istemler', 'havuz.txt'), 'utf8'),
+  };
+  const duzenleIstemi = (is, secilen) =>
+    sablonlar[is.sablon || (is.maske === 'serit' || is.maske === 'ekle' ? is.maske : is.maske ? 'maske' : 'duzenle')]
+      .trim()
+      .replace(
+        '{{KILIT}}',
+        is.maske === 'meydan'
+          ? 'The mask locks only its {{N}} round plazas: leave them exactly as they are. Repaint everything else, including the main road and the side paths, which stay where they are in Image 1 and lead to the plazas.'
+          : 'The mask locks its road, side paths and {{N}} round plazas: leave them exactly as they are. Repaint everything else around them as one continuous landscape.',
+      ).replace('{{SEVIYELER}}', seviyeler) +
+    (secilen.length ? `\n\nImage 1 is the map to edit. The other images are the original paintings for the hidden details; use them only as references.\n` : '') +
+    secilen.map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser} (for ${typeof t.seviye === "number" ? "level " + t.seviye : t.seviye}).`).join('\n');
+  const kacTablo = (is) => (is.ref ? Math.min(tablolar.length, is.refSiniri - 1) : 0);
+
+  console.log(`${donem} (${bicim}): ${isler.length} çizim, tahmini toplam ~${isler.reduce((t, x) => t + x.fiyat, 0).toFixed(2)} $`);
+  for (const is of isler) console.log(`  ${is.ad.padEnd(26)} ${is.model.padEnd(34)} oran ${is.oran.padEnd(5)} ${is.duzenle ? `${is.duzenle} + ${kacTablo(is)} tablo` : is.ref ? `taslak + ${kacTablo(is)} tablo` : 'yalnız taslak'}  ~${is.fiyat} $`);
+  if (!calistir) {
+    // --istem: ilk işe gidecek istemi göster (harcamadan kontrol için)
+    if (bayraklar.includes('--istem')) console.log('\n' + N(isler[0].duzenle ? duzenleIstemi(isler[0], tablolar.slice(0, kacTablo(isler[0]))) : istemKur(temel, isler[0], (await tuvaleYerlestir(taslak, isler[0].oran)).dolgu, tablolar.slice(0, kacTablo(isler[0])))));
+    console.log(`\nPlan bu. Çizmek için: node ciz.mjs ${process.argv.slice(2).filter((x) => x !== '--istem').join(' ')} --calistir`);
+    return;
+  }
+  // Anahtar her pencerede export edilmesin diye scripts/harita/.env'den okunur (git'e girmez, .gitignore)
+  if (!process.env.AI_GATEWAY_API_KEY && existsSync(path.join(BURASI, '.env'))) process.loadEnvFile(path.join(BURASI, '.env'));
+  if (!process.env.AI_GATEWAY_API_KEY) throw new Error('AI_GATEWAY_API_KEY yok: scripts/harita/.env dosyasına AI_GATEWAY_API_KEY=... yazın');
+
+  const klasor = path.join(BURASI, 'cikti', donem);
+  await mkdir(path.join(klasor, 'ham'), { recursive: true });
+  const ozet = [];
+  for (const is of isler) {
+    const n = kacTablo(is);
+    let resim, kutu, dolgu, istem, tur;
+    if (is.duzenle) {
+      // kaynak: --kaynak <dosya adı> verilmişse o, yoksa kaynak çizimin en son sürümü (-v2, -v3… varsa sonuncusu)
+      let kaynak = secilenKaynak || `${is.duzenle}-${bicim}`;
+      if (!secilenKaynak) for (let v = 2; existsSync(path.join(klasor, `${is.duzenle}-${bicim}-v${v}.jpg`)); v++) kaynak = `${is.duzenle}-${bicim}-v${v}`;
+      resim = await readFile(path.join(klasor, `${kaynak}.jpg`)); // 1024×3072, kesilmiş
+      ({ kutu, dolgu } = { kutu: { x: 0, y: 0, w: 1, h: 1 }, dolgu: false });
+      istem = N(duzenleIstemi(is, tablolar.slice(0, n)));
+      tur = 'image/jpeg';
+      if (is.gece) {
+        // 1:3'ü çizemeyen model: iki yana düz kenar, sonra ortadaki 1:3 kesilir
+        const png = await sharp(resim).png().toBuffer();
+        ({ resim, kutu, dolgu } = await tuvaleYerlestir(png, is.oran));
+        // gece işinde dönemin kendi istemi varsa o (Orta Çağ: altın gök mum ışığında kalsın, Emre), yoksa ortak gece.txt
+        const geceDosya = existsSync(path.join(BURASI, 'istemler', `${donem}_gece.txt`)) ? `${donem}_gece.txt` : 'gece.txt';
+        istem = (await readFile(path.join(BURASI, 'istemler', is.istemDosya ? `${donem}_${is.istemDosya}.txt` : geceDosya), 'utf8')).trim();
+        if (n) istem += `\n\nThe other images are the original paintings, as examples of the styles:\n` + tablolar.slice(0, n).map((t, i) => `Image ${i + 2}: ${t.sanatci}, ${t.eser}.`).join('\n');
+        tur = 'image/png';
+      }
+    } else {
+      ({ resim, kutu, dolgu } = await tuvaleYerlestir(taslak, is.oran));
+      istem = N(istemKur(temel, is, dolgu, tablolar.slice(0, n)));
+      tur = 'image/png';
+    }
+    const ek = is.ekRef ? await Promise.all(is.ekRef.map(async (d) => ({ veri: await sharp(await readFile(path.join(KOK, d))).resize(1024, 1024, { fit: 'inside' }).jpeg({ quality: 88 }).toBuffer(), tur: 'image/jpeg' }))) : [];
+    const gorseller = [{ veri: resim, tur }, ...refler.slice(0, n), ...ek];
+    const iskEk = bicim === 'yilankavi' ? '' : '_' + bicim;
+    const maske = is.maske ? await readFile(path.join(BURASI, 'iskelet', `${donem}_iskelet${iskEk}_maske${typeof is.maske === 'string' ? '_' + is.maske : ''}.png`)) : null;
+    const bas = Date.now();
+    // Eski çıktının üstüne yazılmaz (Emre: yedeksiz hiçbir şey silinmesin): aynı ad varsa -v2, -v3…
+    let dosyaAdi = `${is.ad}-${bicim}`;
+    for (let v = 2; existsSync(path.join(klasor, `${dosyaAdi}.jpg`)); v++) dosyaAdi = `${is.ad}-${bicim}-v${v}`;
+    process.stdout.write(`${dosyaAdi} … `);
+    try {
+      const { veri, ek } = await ciz(is, istem, gorseller, is.oran, maske);
+      await writeFile(path.join(klasor, 'ham', `${dosyaAdi}.png`), veri);
+      const { jpg, ham, alan } = await kes(veri, kutu);
+      await writeFile(path.join(klasor, `${dosyaAdi}.jpg`), jpg);
+      if (is.maske === true) await writeFile(path.join(klasor, `${dosyaAdi}-birlesik.jpg`), await yoluGeriKoy(jpg, resim, path.join(BURASI, 'iskelet', `${donem}_iskelet${iskEk}_yumusak.png`)));
+      const beklenen = oranSayi(is.oran);
+      const gelen = ham.width / ham.height;
+      const uyari = Math.abs(gelen - beklenen) / beklenen > 0.03 ? `istenen oran ${is.oran}, gelen ${ham.width}×${ham.height}` : null;
+      ozet.push({ ...is, iskelet: bicim, sure: Math.round((Date.now() - bas) / 1000), ham: [ham.width, ham.height], kesilen: alan, uyari, tablolar: tablolar.slice(0, n).map((t) => t.eser), istemOzeti: createHash('sha1').update(istem).digest('hex').slice(0, 10), ek });
+      console.log(`tamam (${ham.width}×${ham.height}${uyari ? ', UYARI: ' + uyari : ''})`);
+    } catch (e) {
+      ozet.push({ ...is, iskelet: bicim, hata: String(e && e.message ? e.message : e).slice(0, 500) });
+      console.log(`HATA: ${e && e.message ? e.message : e}`);
+    }
+  }
+  await writeFile(path.join(klasor, `ozet_${new Date().toISOString().replace(/[:.]/g, '-')}.json`), JSON.stringify(ozet, null, 2));
+  console.log(`\nÇıktılar: ${path.relative(KOK, klasor)}/  (ham/ = modelin döndürdüğü, yalnız bu Mac'te; .jpg = 1024×3072'ye kesilmiş)`);
+}
+
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((e) => {
+    console.error(e.message || e);
+    process.exit(1);
+  });
+}

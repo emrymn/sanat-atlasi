@@ -4,7 +4,7 @@ import { agiHazirla } from './ortak.js';
 
 const hazir = (page) => page.waitForFunction(() => window.__atlas && window.__atlas.ilerleme && window.__atlas.akimlar.length);
 
-test('Harita sekmesi: 8 dönem resmi, her bölüm bir durak, buradasın yolcusu, küçük pencere', async ({ page, context }) => {
+test('Harita sekmesi: 9 dönem resmi, her bölüm bir durak, buradasın yolcusu, küçük pencere', async ({ page, context }) => {
   await agiHazirla(context);
   const resimler = [];
   page.on('response', (r) => {
@@ -19,7 +19,9 @@ test('Harita sekmesi: 8 dönem resmi, her bölüm bir durak, buradasın yolcusu,
   await expect(sekmeler.nth(2)).toHaveAttribute('data-sekme', 'gozat');
   await sekmeler.nth(1).click();
   await expect(page).toHaveURL(/#\/harita$/);
-  await expect(page.locator('[data-test="harita-bolge"]')).toHaveCount(8);
+  await expect(page.locator('[data-test="harita-bolge"]')).toHaveCount(9);
+  // ilk kurulumda yalnız ilk durak açık: haritanın geri kalanı sepya
+  await expect(page.locator('.harita-resim.sepya[data-bolge="modern"]')).toHaveCount(1);
   const bolumSayisi = await page.evaluate(() => window.__atlas.bolumler.length);
   await expect(page.locator('[data-test="harita-durak"]')).toHaveCount(bolumSayisi);
   // açık durak sayısı bölüm mantığıyla aynı; ilk kurulumda yalnız ilk bölüm
@@ -160,7 +162,9 @@ test('Harita: kaydırırken her dönem geçişinde bölüm kartı oynar, "Burada
   await agiHazirla(context);
   await page.goto('./#/harita');
   await hazir(page);
-  await expect(page.locator('[data-test="harita-bolge"]')).toHaveCount(8);
+  await expect(page.locator('[data-test="harita-bolge"]')).toHaveCount(9);
+  // ilk kurulumda yalnız ilk durak açık: haritanın geri kalanı sepya
+  await expect(page.locator('.harita-resim.sepya[data-bolge="modern"]')).toHaveCount(1);
   const kart = page.locator('[data-test="harita-kart"]');
   await page.waitForTimeout(600);
   await expect(kart).not.toHaveClass(/oynuyor/);

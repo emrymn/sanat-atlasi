@@ -1,0 +1,28 @@
+{
+  "aciklama": "Post-Empresyonizm ve Sembolizm: A (gpt-image-2-ref-cep) → üstte göğe giden yol GPT bandıyla kaldırıldı. Yedek: postempresyonizm-secilen-yollu.jpg. Öpücük altın blok hâliyle kaldı (Emre).",
+  "resim": "cikti/postempresyonizm/postempresyonizm-secilen.jpg",
+  "duraklar": [
+    [
+      0.26,
+      0.888
+    ],
+    [
+      0.77,
+      0.622
+    ],
+    [
+      0.72,
+      0.346
+    ],
+    [
+      0.29,
+      0.122
+    ]
+  ],
+  "resim_gece": "cikti/postempresyonizm/postempresyonizm-secilen-gece.jpg",
+  "gece_sembol_tonu": [
+    0.88,
+    0.7,
+    0.48
+  ]
+}

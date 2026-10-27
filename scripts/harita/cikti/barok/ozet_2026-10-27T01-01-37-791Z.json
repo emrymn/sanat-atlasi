@@ -1,0 +1,236 @@
+[
+  {
+    "ad": "gpt-image-2-ref",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.4,
+    "iskelet": "cep",
+    "sure": 65,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [
+      "Aurora",
+      "The Calling of Saint Matthew",
+      "Las Meninas",
+      "Rubens and Isabella Brant in the Honeysuckle Bower",
+      "The Night Watch",
+      "View of Delft"
+    ],
+    "istemOzeti": "452039a331",
+    "ek": {
+      "providerMetadata": {
+        "openai": {
+          "images": [
+            {
+              "created": 1793062856,
+              "size": "1024x3072",
+              "quality": "high",
+              "background": "opaque",
+              "outputFormat": "png",
+              "imageTokens": 6252,
+              "textTokens": 1358
+            }
+          ]
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "openai/gpt-image-2",
+            "resolvedProvider": "openai",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: openai. Total execution order: openai(system)",
+            "canonicalSlug": "openai/gpt-image-2",
+            "finalProvider": "openai",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "openai/gpt-image-2",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "openai",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793062796845,
+                    "endTime": 1793062857913,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.175366",
+          "marketCost": "0.175366",
+          "surchargeCost": "0",
+          "gatewayCost": "0.175366",
+          "inferenceCost": "0.175366",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.175366",
+          "generationId": "gen_01M5XDXZB52CVC6YGQQPBVYB7K"
+        }
+      },
+      "warnings": []
+    }
+  },
+  {
+    "ad": "nano-banana-pro-yalin",
+    "model": "google/gemini-3-pro-image",
+    "tur": "gemini",
+    "oran": "9:16",
+    "ref": false,
+    "fiyat": 0.24,
+    "iskelet": "cep",
+    "sure": 37,
+    "ham": [
+      1536,
+      2752
+    ],
+    "kesilen": {
+      "left": 313,
+      "top": 0,
+      "width": 910,
+      "height": 2752
+    },
+    "uyari": null,
+    "tablolar": [],
+    "istemOzeti": "3ced6c14af",
+    "ek": {
+      "usage": {
+        "inputTokens": 1752,
+        "inputTokenDetails": {
+          "noCacheTokens": 1752,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 1681,
+        "outputTokenDetails": {
+          "textTokens": 1120,
+          "reasoningTokens": 561
+        },
+        "totalTokens": 3433
+      },
+      "providerMetadata": {
+        "googleVertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "thoughtsTokenCount": 561,
+            "promptTokenCount": 1752,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 3433,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 560
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 1192
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "vertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "thoughtsTokenCount": 561,
+            "promptTokenCount": 1752,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 3433,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 560
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 1192
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "google/gemini-3-pro-image",
+            "resolvedProvider": "vertex",
+            "fallbacksAvailable": [
+              "google"
+            ],
+            "planningReasoning": "System credentials planned for: vertex, google. Total execution order: vertex(system) → google(system)",
+            "canonicalSlug": "google/gemini-3-pro-image",
+            "finalProvider": "vertex",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "google/gemini-3-pro-image",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "vertex",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793062860848,
+                    "endTime": 1793062891146,
+                    "statusCode": 200,
+                    "providerResponseId": "zPffaqbFOI278uMP8MDPuA0"
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1,
+            "affinity": {
+              "outcome": "no_pin"
+            },
+            "clientSessionId": "69cafb7c5c36fc26c40258fd20a83d7b",
+            "clientSessionIdSource": "fingerprint"
+          },
+          "cost": "0.144636",
+          "marketCost": "0.144636",
+          "surchargeCost": "0",
+          "gatewayCost": "0.144636",
+          "inferenceCost": "0.144636",
+          "inputInferenceCost": "0.003504",
+          "outputInferenceCost": "0.141132",
+          "generationId": "gen_01M5XDZXXVM88P1K519FGPT8PD"
+        }
+      }
+    }
+  }
+]

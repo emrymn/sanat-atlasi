@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
-import { BOLGELER, BINME, bolgeBul, haritaKur, vakit, gorulenDogrula, resimAdresi, nesneAdresi, yolcuAdresi } from '../../js/harita.js';
+import { BOLGELER, bolgeBul, haritaKur, sepyaSiniri, vakit, gorulenDogrula, resimAdresi, nesneAdresi, yolcuAdresi, SEPYA_PAY } from '../../js/harita.js';
 import {
   bolumleriKur,
   bolumDurumlari,
@@ -41,19 +41,22 @@ test('bölümler: her sanatçı tam bir bölümde, küçük konular birleşir, a
   assert.deepEqual(siralar, siralar.slice().sort((a, b) => a - b));
 });
 
-test('harita verisi: her bölgenin gündüz ve gece durak sayısı bölüm sayısıyla aynı, görseller var', () => {
+test('harita verisi: her bölgede bölüm sayısı kadar meydan ve sembol, görseller var, motiflerin hikâyesi var', () => {
   for (const b of BOLGELER) {
     const n = bolumler.filter((x) => bolgeBul(x.sira).id === b.id).length;
+    const v = veri.bolgeler[b.id];
+    assert.equal(v.duraklar.length, n, b.id);
+    assert.equal(v.semboller.length, n, b.id);
+    for (const [x, y] of v.duraklar) assert.ok(x > 0 && x < 1 && y > 0 && y < 1, `${b.id} ${x},${y}`);
     for (const tur of ['gunduz', 'gece']) {
-      const v = veri.bolgeler[b.id][tur];
-      assert.equal(v.duraklar.length, n, `${b.id} ${tur}`);
-      for (const [x, y] of v.duraklar) assert.ok(x > 0 && x < 1 && y > 0 && y < 1, `${b.id} ${tur} ${x},${y}`);
-      for (const yol of [resimAdresi(b.id, tur), nesneAdresi(b.id, tur), yolcuAdresi(b.id, tur)])
-        assert.ok(existsSync(new URL(`../../${yol}`, import.meta.url)), yol);
-      for (const m of v.motifler) {
-        assert.ok(veri.eserler[m.eser], m.eser);
-        assert.equal(m.kutu.length, 4);
-      }
+      const yollar = [resimAdresi(b.id, tur), yolcuAdresi(b.id, tur), ...v.semboller.map((_, i) => nesneAdresi(b.id, i + 1, tur))];
+      for (const yol of yollar) assert.ok(existsSync(new URL(`../../${yol}`, import.meta.url)), yol);
+    }
+    assert.ok(v.motifler.length > 0, b.id);
+    for (const m of v.motifler) {
+      assert.ok(veri.eserler[m.eser] && veri.eserler[m.eser].hikaye, m.eser);
+      assert.ok(harita.has(veri.eserler[m.eser].sanatci_id) || veri.eserler[m.eser].sanatci_id, m.eser);
+      assert.equal(m.kutu.length, 4);
     }
   }
 });
@@ -138,15 +141,25 @@ test('doğrulama: bozuk bölüm kayıtları atılır; depo alanları', () => {
   assert.deepEqual(gorulenDogrula('x'), []);
 });
 
-test('harita yerleşimi: Orta Çağ en altta, Modern en üstte, bölgeler sisle biner', () => {
+test('harita yerleşimi: Orta Çağ en altta, Modern en üstte, resimler bitişik, her durağın kendi sembolü', () => {
   const { durumlar } = bolumDurumlari(bolumler, {}, tumKonular, harita);
-  const h = haritaKur(durumlar, veri, 'gunduz');
-  assert.equal(h.bolgeler.length, 8);
-  assert.ok(Math.abs(h.yukseklik - (8 - 7 * BINME)) < 1e-9);
+  const h = haritaKur(durumlar, veri);
+  assert.equal(h.bolgeler.length, 9);
+  assert.equal(h.yukseklik, 9);
   assert.equal(h.bolgeler[0].id, 'ortacag');
-  assert.ok(Math.abs(h.bolgeler[0].ust - (h.yukseklik - 1)) < 1e-9);
-  assert.ok(Math.abs(h.bolgeler[7].ust) < 1e-9);
+  assert.equal(h.bolgeler[0].ust, 8);
+  assert.equal(h.bolgeler[8].ust, 0);
   assert.equal(h.bolgeler.reduce((t, b) => t + b.duraklar.length, 0), bolumler.length);
+  for (const b of h.bolgeler) assert.deepEqual(b.duraklar.map((x) => x.sembolNo), b.duraklar.map((_, i) => i + 1));
+  // ilk kurulumda yalnız ilk durak açık: sepya sınırı onun biraz üstünde; hiç açık yoksa bütün harita sepya
+  const ilk = h.bolgeler[0].duraklar[0];
+  assert.ok(Math.abs(sepyaSiniri(h) - (8 + ilk.y - SEPYA_PAY)) < 1e-9);
+  const kapali = haritaKur(durumlar.map((x) => ({ ...x, acik: false })), veri);
+  assert.equal(sepyaSiniri(kapali), 9);
+  // meydandan fazla bölüm: son meydanın üstüne dizilir, son sembolü kullanır
+  const fazla = haritaKur([...durumlar, { ...durumlar[0], id: '0-9', sira: 0 }], veri);
+  const oc = fazla.bolgeler[0].duraklar;
+  assert.equal(oc[oc.length - 1].sembolNo, oc.length - 1);
 });
 
 test('vakit: 07–19 gündüz, gerisi gece', () => {

@@ -1,0 +1,35 @@
+{
+  "aciklama": "Klasisizm ve Geç Barok seçimi (Emre, baştan): GPT Image 2 + 2 tablo (gpt-image-2-ref-cep-v2.jpg; Piazzetta ve Ricci yalnız tarifle) → Nano Banana Pro bir tık canlı renk (nano-banana-pro-uslup-cep-v2.jpg, Emre 'ortadaki') → gökyüzüne çıkan yol Nano ile kaldırıldı, yalnız iskelet/barok2_iskelet_cep_maske_gokyol.png alanı birleştirildi (barok2-secilen.jpg). Önceki seçim yedekte: barok2-secilen-eski.jpg.",
+  "resim": "cikti/barok2/barok2-secilen.jpg",
+  "duraklar": [
+    [
+      0.375,
+      0.7435
+    ],
+    [
+      0.504,
+      0.403
+    ]
+  ],
+  "semboller": [
+    "sprite/sembol-1.webp",
+    "sprite/sembol-2.webp"
+  ],
+  "karakter": "sprite/karakter.webp",
+  "boyut_pt": {
+    "sembol": 56,
+    "karakter": 72
+  },
+  "karakter_kayma": [
+    0.085,
+    -0.012
+  ],
+  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)",
+  "resim_gece": "cikti/barok2/barok2-secilen-gece.jpg",
+  "gece_notu": "Nano Banana Pro, istemler/barok2_gece.txt (Versailles gece şenliği: havai fişek, meşale, fener; Emre). Gündüzle üst üste ölçüldü, meydanlar boş, yanlarında fener.",
+  "gece_sembol_tonu": [
+    0.88,
+    0.7,
+    0.48
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "aciklama": "Romantizmden Realizme gizli eserleri (Emre onayladı). Hepsi depodaki yerel kopyalar. 4. seviyede (Paris Operası) gizli tablo yok (Emre: Mısır resmi çıkarıldı). Yedek (GPT reddederse): Constable · Saman Arabası (34f36f95092ecbb1). Üslup aşağıdan yukarı: Friedrich sisi → Turner ateşi → Prerafaelit yeşili → akademik cila → Barbizon toprağı.",
+  "tablolar": [
+    { "oncelik": 1, "seviye": 1, "sanatci": "Caspar David Friedrich", "eser": "Wanderer above the Sea of Fog", "dosya": "gorseller/b/849127cc0c76ca35.jpg" },
+    { "oncelik": 2, "seviye": 2, "sanatci": "J. M. W. Turner", "eser": "The Burning of the Houses of Lords and Commons", "dosya": "gorseller/b/58f670561fbb1f5f.jpg" },
+    { "oncelik": 3, "seviye": 3, "sanatci": "John Everett Millais", "eser": "Ophelia", "dosya": "gorseller/b/dd3b9c967e239aa0.jpg" },
+    { "oncelik": 4, "seviye": 5, "sanatci": "Jean-François Millet", "eser": "The Gleaners", "dosya": "gorseller/b/0e77dc7a212e8824.jpg" }
+  ],
+  "cikarilan": [
+    { "sanatci": "Jean-Léon Gérôme", "eser": "Bonaparte Before the Sphinx", "neden": "Emre: Mısır resmi olmasın" }
+  ]
+}

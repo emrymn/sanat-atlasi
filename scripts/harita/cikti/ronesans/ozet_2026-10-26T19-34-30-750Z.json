@@ -1,0 +1,67 @@
+[
+  {
+    "ad": "seedream-5-pro-yalin",
+    "model": "bytedance/seedream-5.0-pro",
+    "tur": "gorsel",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": false,
+    "fiyat": 0.05,
+    "sure": 119,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [],
+    "istemOzeti": "5d649c1dea",
+    "ek": {
+      "providerMetadata": {
+        "gateway": {
+          "routing": {
+            "originalModelId": "bytedance/seedream-5.0-pro",
+            "resolvedProvider": "bytedance",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: bytedance. Total execution order: bytedance(system)",
+            "canonicalSlug": "bytedance/seedream-5.0-pro",
+            "finalProvider": "bytedance",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "bytedance/seedream-5.0-pro",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "bytedance",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793043153417,
+                    "endTime": 1793043270349,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.035",
+          "marketCost": "0.035",
+          "surchargeCost": "0",
+          "gatewayCost": "0.035",
+          "inferenceCost": "0.035",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.035",
+          "generationId": "gen_01M5WV6FMJWAA7X861MB1PTHPN"
+        }
+      },
+      "warnings": []
+    }
+  }
+]

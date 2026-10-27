@@ -6800,57 +6800,6 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .harita-bolum-kart.oynuyor {
   visibility: visible;
 }
-/* Pigment perdesi: üç kat, biri ötekinin peşinden ekranı süpürür; ön kenarı fırça izi gibi pürüzlü */
-.harita-perde {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-}
-.harita-perde-kat {
-  position: absolute;
-  inset: -12% 0;
-  background:
-    repeating-linear-gradient(92deg, rgba(255, 244, 220, 0.035) 0 2px, transparent 2px 7px),
-    radial-gradient(ellipse 120% 60% at 50% 50%, color-mix(in srgb, var(--perde) 70%, #fff4dc 8%), var(--perde));
-  -webkit-mask: linear-gradient(180deg, transparent 0, #000 9%, #000 91%, transparent 100%);
-  mask: linear-gradient(180deg, transparent 0, #000 9%, #000 91%, transparent 100%);
-  translate: 0 110%;
-}
-.harita-perde-kat:nth-child(1) {
-  opacity: 0.55;
-}
-.harita-perde-kat:nth-child(2) {
-  opacity: 0.75;
-}
-.harita-perde-kat:nth-child(3) {
-  opacity: 0.92;
-}
-.harita-perde-kat::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 9%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #c9a24a 20%, #e2c27a 50%, #c9a24a 80%, transparent);
-  opacity: 0.8;
-}
-.harita-bolum-kart.geri .harita-perde-kat::after {
-  top: auto;
-  bottom: 9%;
-}
-.harita-bolum-kart.oynuyor .harita-perde-kat {
-  animation: harita-perde-ileri 2.3s cubic-bezier(0.7, 0, 0.2, 1) both;
-}
-.harita-bolum-kart.oynuyor.geri .harita-perde-kat {
-  animation-name: harita-perde-geri;
-}
-.harita-bolum-kart.oynuyor .harita-perde-kat:nth-child(2) {
-  animation-delay: 0.07s;
-}
-.harita-bolum-kart.oynuyor .harita-perde-kat:nth-child(3) {
-  animation-delay: 0.14s;
-}
 .harita-bolum-kart.oynuyor .harita-bolum-kart-cizgi {
   animation: harita-kart-cizgi 2.3s 0.2s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
@@ -6868,30 +6817,6 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 }
 .harita.kart-acik .harita-gecis-yazi {
   opacity: 0;
-}
-@keyframes harita-perde-ileri {
-  0% {
-    translate: 0 110%;
-  }
-  26%,
-  66% {
-    translate: 0 0;
-  }
-  100% {
-    translate: 0 -110%;
-  }
-}
-@keyframes harita-perde-geri {
-  0% {
-    translate: 0 -110%;
-  }
-  26%,
-  66% {
-    translate: 0 0;
-  }
-  100% {
-    translate: 0 110%;
-  }
 }
 @keyframes harita-kart-cizgi {
   0% {
@@ -6962,25 +6887,12 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   user-select: none;
   -webkit-user-drag: none;
 }
-/* resimlerin kenarları aradaki dönem geçişi şeridine sisle karış����r */
-.harita-resim.sis-alt {
-  -webkit-mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
-  mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
+/* son açık durağın üstü sepya (İş 41): yalnız boyanmış resim, duraklar ve saklı motifler renk ve dokunma olarak kalır */
+.harita-resim.sepya {
+  filter: grayscale(1) sepia(0.55) brightness(0.97) contrast(0.92);
 }
-.harita-resim.sis-ust {
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 12%);
-  mask-image: linear-gradient(to bottom, transparent 0, #000 12%);
-}
-.harita-resim.sis-ust.sis-alt {
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 12%, #000 88%, transparent 100%);
-  mask-image: linear-gradient(to bottom, transparent 0, #000 12%, #000 88%, transparent 100%);
-}
-/* henüz görülmemiş dönem soluk durur; görülünce renklenir (geçiş, açılışta görünenler yerleşince başlar) */
-.harita.izleniyor .harita-resim:not(.uyandi) {
-  filter: saturate(0.3) brightness(0.82) contrast(0.92);
-}
-.harita.hazir .harita-resim {
-  transition: filter 1.6s ease-out;
+.harita-resim.ust-kat {
+  pointer-events: none;
 }
 /* ---- dönem geçişi: iki resmin kenar renkleri bulanıkça birbirine akar, ortada sis ve yeni dönemin adı ---- */
 .harita-gecis {

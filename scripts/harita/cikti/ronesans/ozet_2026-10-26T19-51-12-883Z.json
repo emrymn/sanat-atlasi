@@ -1,0 +1,145 @@
+[
+  {
+    "ad": "seedream-5-pro-yalin",
+    "model": "bytedance/seedream-5.0-pro",
+    "tur": "gorsel",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": false,
+    "fiyat": 0.04,
+    "iskelet": "yilankavi",
+    "sure": 143,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [],
+    "istemOzeti": "701923ff79",
+    "ek": {
+      "providerMetadata": {
+        "gateway": {
+          "routing": {
+            "originalModelId": "bytedance/seedream-5.0-pro",
+            "resolvedProvider": "bytedance",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: bytedance. Total execution order: bytedance(system)",
+            "canonicalSlug": "bytedance/seedream-5.0-pro",
+            "finalProvider": "bytedance",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "bytedance/seedream-5.0-pro",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "bytedance",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793043956225,
+                    "endTime": 1793044097803,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.035",
+          "marketCost": "0.035",
+          "surchargeCost": "0",
+          "gatewayCost": "0.035",
+          "inferenceCost": "0.035",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.035",
+          "generationId": "gen_01M5WVZ02PPFQBZ8S4HT40MM4X"
+        }
+      },
+      "warnings": []
+    }
+  },
+  {
+    "ad": "seedream-5-pro-ref",
+    "model": "bytedance/seedream-5.0-pro",
+    "tur": "gorsel",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": true,
+    "refSiniri": 10,
+    "fiyat": 0.05,
+    "iskelet": "yilankavi",
+    "sure": 174,
+    "ham": [
+      1024,
+      3072
+    ],
+    "kesilen": {
+      "left": 0,
+      "top": 0,
+      "width": 1024,
+      "height": 3072
+    },
+    "uyari": null,
+    "tablolar": [
+      "The Chess Game",
+      "The Deposition",
+      "Saint Francis in the Desert",
+      "The Battle of San Romano",
+      "Madonna with the Long Neck",
+      "The Tempest",
+      "The Annunciation",
+      "The Wedding at Cana",
+      "View of Toledo"
+    ],
+    "istemOzeti": "3703fc5f7b",
+    "ek": {
+      "providerMetadata": {
+        "gateway": {
+          "routing": {
+            "originalModelId": "bytedance/seedream-5.0-pro",
+            "resolvedProvider": "bytedance",
+            "fallbacksAvailable": [],
+            "planningReasoning": "System credentials planned for: bytedance. Total execution order: bytedance(system)",
+            "canonicalSlug": "bytedance/seedream-5.0-pro",
+            "finalProvider": "bytedance",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "bytedance/seedream-5.0-pro",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "bytedance",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793044099919,
+                    "endTime": 1793044272476,
+                    "statusCode": 200
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1
+          },
+          "cost": "0.035",
+          "marketCost": "0.035",
+          "surchargeCost": "0",
+          "gatewayCost": "0.035",
+          "inferenceCost": "0.035",
+          "inputInferenceCost": "0",
+          "outputInferenceCost": "0.035",
+          "generationId": "gen_01M5WW3CRHX0N7AGGSDC572DGY"
+        }
+      },
+      "warnings": []
+    }
+  }
+]

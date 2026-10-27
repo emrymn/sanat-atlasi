@@ -1,0 +1,9 @@
+{
+  "aciklama": "Modern sanat gizli eserleri (Emre onayladı; 2. seviye Paris kafesi). Depoda yalnız Ekspresyonizm tabloları var; Picasso, Duchamp, Dalí, Magritte ve Bacon telifli, yalnız yazıyla motif olarak tarif edilir. Parlak ve renkli (Emre).",
+  "tablolar": [
+    { "oncelik": 1, "seviye": 1, "sanatci": "Edvard Munch", "eser": "The Scream", "dosya": "gorseller/b/409de8256c60fe8d.jpg" },
+    { "oncelik": 2, "seviye": 1, "sanatci": "Franz Marc", "eser": "The Large Blue Horses", "dosya": "gorseller/b/435ce571fc39b755.jpg" },
+    { "oncelik": 3, "seviye": 1, "sanatci": "Wassily Kandinsky", "eser": "Composition VII (renk için)", "dosya": "gorseller/b/f35e7e24663d3a27.jpg" }
+  ],
+  "cikarilan": []
+}

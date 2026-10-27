@@ -1,0 +1,71 @@
+{
+  "aciklama": "Emre'nin seçtiği Rönesans resmi: F (v5) + GPT'nin eklediği 1, 3, 5. meydanlar; birlestir.py ile yalnız yeni meydan alanları GPT çıktısından, gerisi F'nin aslı (GPT 6. meydanı silmişti). duraklar: her meydanın elle ölçülen merkezi (Adım 18'deki ilk yerleşim ortalanmamıştı).",
+  "resim": "cikti/ronesans/ronesans-secilen.jpg",
+  "duraklar": [
+    [
+      0.519,
+      0.926
+    ],
+    [
+      0.7686,
+      0.7335
+    ],
+    [
+      0.469,
+      0.6135
+    ],
+    [
+      0.767,
+      0.4456
+    ],
+    [
+      0.544,
+      0.304
+    ],
+    [
+      0.772,
+      0.1667
+    ],
+    [
+      0.42,
+      0.105
+    ]
+  ],
+  "semboller": [
+    "sprite/sembol-1.webp",
+    "sprite/sembol-2.webp",
+    "sprite/sembol-3.webp",
+    "sprite/sembol-4.webp",
+    "sprite/sembol-5.webp",
+    "sprite/sembol-6.webp",
+    "sprite/sembol-7.webp"
+  ],
+  "karakter": "sprite/karakter.webp",
+  "boyut_pt": {
+    "sembol": 56,
+    "karakter": 72
+  },
+  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)",
+  "yeni_meydanlar": [
+    [
+      0.48,
+      0.89
+    ],
+    [
+      0.465,
+      0.6
+    ],
+    [
+      0.54,
+      0.31
+    ]
+  ],
+  "kaynak_resim": "cikti/ronesans/gpt-image-2-maske-cep-v5.jpg",
+  "yerlesim": "Sembolün tabanı (alfa kanalında en alt %30'daki en geniş satırın ortası) meydanın merkezine oturur; karakter meydanın sağ kenarında, ayakları yerde.",
+  "karakter_kayma": [
+    0.085,
+    -0.012
+  ],
+  "resim_gece": "cikti/ronesans/ronesans-secilen-gece.jpg",
+  "meydan_notu": "Yanlış alarm (Claude): uygulama yalnız görseli olan sanatçıları gösterdiği için seviye sayısı haritadaki meydan sayısıyla zaten aynı. Eklenen 2 meydan geri alındı; o hâli *-fazla-meydan.jpg olarak yedekte. 4 ek sembol (sembol-antik, -romanesk, -ghiberti, -uccello) kullanılmıyor."
+}

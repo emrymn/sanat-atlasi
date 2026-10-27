@@ -1,0 +1,68 @@
+{
+  "aciklama": "Barok seçimi (Emre): GPT Image 2 + 6 tablo, karanlık-aydınlık istemi (gpt-image-2-ref-cep.jpg). GPT kendi yolunu ve 8 meydan çizdi; her bölgeden 1 meydan kalır (Emre onayladı), fazla 3'ü gpt-image-2-sil ile silinir. duraklar: kalan meydanların elle ölçülen merkezleri.",
+  "kaynak_resim": "cikti/barok/gpt-image-2-ref-cep.jpg",
+  "duraklar": [
+    [
+      0.715,
+      0.868
+    ],
+    [
+      0.285,
+      0.636
+    ],
+    [
+      0.679,
+      0.508
+    ],
+    [
+      0.295,
+      0.368
+    ],
+    [
+      0.355,
+      0.215
+    ]
+  ],
+  "silinen_meydanlar": [
+    [
+      0.294,
+      0.976
+    ],
+    [
+      0.715,
+      0.706
+    ],
+    [
+      0.63,
+      0.352
+    ]
+  ],
+  "resim": "cikti/barok/barok-secilen.jpg",
+  "semboller": [
+    "sprite/sembol-1.webp",
+    "sprite/sembol-2.webp",
+    "sprite/sembol-3.webp",
+    "sprite/sembol-4.webp",
+    "sprite/sembol-5.webp"
+  ],
+  "karakter": "sprite/karakter.webp",
+  "boyut_pt": {
+    "sembol": 56,
+    "karakter": 72
+  },
+  "karakter_kayma": [
+    0.085,
+    -0.012
+  ],
+  "karakter_kayma_notu": "meydan sağdaysa karakter sola (−0,085)",
+  "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)",
+  "sembol_notu": "sembol-4 şapkanın tüy uçlarındaki mor sızıntı krem tona çevrildi; önceki hâli sprite/sembol-4-onceki.webp",
+  "resim_gece": "cikti/barok/barok-secilen-gece.jpg",
+  "gece_notu": "Nano Banana Pro, istemler/barok_gece.txt (mum ve fener ışığı; Emre). Gündüzle üst üste ölçüldü, meydanlar boş, her meydanın yanında fener.",
+  "gece_sembol_tonu": [
+    0.88,
+    0.7,
+    0.48
+  ],
+  "gece_sembol_tonu_notu": "Emre: Barok'ta gece sembolleri sıcak (fener) tonda; kanal çarpanları R,G,B. Rönesans/Orta Çağ serin tonda kalıyor."
+}

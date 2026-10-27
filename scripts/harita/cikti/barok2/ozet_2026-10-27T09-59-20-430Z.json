@@ -1,0 +1,16 @@
+[
+  {
+    "ad": "gpt-image-2-havuz",
+    "model": "openai/gpt-image-2",
+    "tur": "gorsel",
+    "duzenle": "gpt-image-2-ref",
+    "maske": "havuz",
+    "sablon": "havuz",
+    "oran": "1:3",
+    "boyut": "1024x3072",
+    "ref": false,
+    "fiyat": 0.15,
+    "iskelet": "cep",
+    "hata": "Your request was rejected by the safety system. If you believe this is an error, contact us at help.openai.com and include the request ID req_caf5e0f066f341d686aefabbb16b27f9."
+  }
+]

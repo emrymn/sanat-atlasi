@@ -1,0 +1,155 @@
+[
+  {
+    "ad": "nano-banana-pro-munch",
+    "model": "google/gemini-3-pro-image",
+    "tur": "gemini",
+    "duzenle": "gpt-image-2-ref",
+    "gece": true,
+    "istemDosya": "munch_nano",
+    "oran": "9:16",
+    "ref": true,
+    "refSiniri": 2,
+    "fiyat": 0.15,
+    "iskelet": "cep",
+    "sure": 43,
+    "ham": [
+      1536,
+      2752
+    ],
+    "kesilen": {
+      "left": 313,
+      "top": 0,
+      "width": 910,
+      "height": 2752
+    },
+    "uyari": null,
+    "tablolar": [
+      "The Scream"
+    ],
+    "istemOzeti": "525cc92c39",
+    "ek": {
+      "usage": {
+        "inputTokens": 1465,
+        "inputTokenDetails": {
+          "noCacheTokens": 1465,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 1442,
+        "outputTokenDetails": {
+          "textTokens": 1120,
+          "reasoningTokens": 322
+        },
+        "totalTokens": 2907
+      },
+      "providerMetadata": {
+        "googleVertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "thoughtsTokenCount": 322,
+            "promptTokenCount": 1465,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 2907,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 345
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "vertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "thoughtsTokenCount": 322,
+            "promptTokenCount": 1465,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 2907,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              },
+              {
+                "modality": "TEXT",
+                "tokenCount": 345
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "google/gemini-3-pro-image",
+            "resolvedProvider": "vertex",
+            "fallbacksAvailable": [
+              "google"
+            ],
+            "planningReasoning": "System credentials planned for: vertex, google. Total execution order: vertex(system) → google(system)",
+            "canonicalSlug": "google/gemini-3-pro-image",
+            "finalProvider": "vertex",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "google/gemini-3-pro-image",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "vertex",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793119772947,
+                    "endTime": 1793119802685,
+                    "statusCode": 200,
+                    "providerResponseId": "HdbgatffGriK8uMP7-aLwAE"
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1,
+            "affinity": {
+              "outcome": "no_pin"
+            },
+            "clientSessionId": "4a1c2c136280da96258027ba92710190",
+            "clientSessionIdSource": "fingerprint"
+          },
+          "cost": "0.141194",
+          "marketCost": "0.141194",
+          "surchargeCost": "0",
+          "gatewayCost": "0.141194",
+          "inferenceCost": "0.141194",
+          "inputInferenceCost": "0.00293",
+          "outputInferenceCost": "0.138264",
+          "generationId": "gen_01M5Z48QWPV02TAMHB2N383JQ6"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,179 @@
+[
+  {
+    "ad": "nano-banana-pro-ref",
+    "model": "google/gemini-3-pro-image",
+    "tur": "gemini",
+    "oran": "9:16",
+    "ref": true,
+    "refSiniri": 14,
+    "fiyat": 0.3,
+    "iskelet": "cep",
+    "sure": 55,
+    "ham": [
+      1536,
+      2752
+    ],
+    "kesilen": {
+      "left": 313,
+      "top": 0,
+      "width": 910,
+      "height": 2752
+    },
+    "uyari": null,
+    "tablolar": [
+      "Aurora",
+      "The Calling of Saint Matthew",
+      "Las Meninas",
+      "Rubens and Isabella Brant in the Honeysuckle Bower",
+      "The Night Watch",
+      "View of Delft"
+    ],
+    "istemOzeti": "a29ee4e179",
+    "ek": {
+      "usage": {
+        "inputTokens": 5302,
+        "inputTokenDetails": {
+          "noCacheTokens": 1454,
+          "cacheReadTokens": 3848
+        },
+        "outputTokens": 1641,
+        "outputTokenDetails": {
+          "textTokens": 1120,
+          "reasoningTokens": 521
+        },
+        "totalTokens": 6943
+      },
+      "providerMetadata": {
+        "googleVertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "cachedContentTokenCount": 3848,
+            "thoughtsTokenCount": 521,
+            "promptTokenCount": 5302,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 6943,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1382
+              },
+              {
+                "modality": "IMAGE",
+                "tokenCount": 3920
+              }
+            ],
+            "cacheTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1003
+              },
+              {
+                "modality": "IMAGE",
+                "tokenCount": 2845
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "vertex": {
+          "promptFeedback": null,
+          "groundingMetadata": null,
+          "urlContextMetadata": null,
+          "safetyRatings": null,
+          "usageMetadata": {
+            "cachedContentTokenCount": 3848,
+            "thoughtsTokenCount": 521,
+            "promptTokenCount": 5302,
+            "candidatesTokenCount": 1120,
+            "totalTokenCount": 6943,
+            "trafficType": "ON_DEMAND",
+            "promptTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1382
+              },
+              {
+                "modality": "IMAGE",
+                "tokenCount": 3920
+              }
+            ],
+            "cacheTokensDetails": [
+              {
+                "modality": "TEXT",
+                "tokenCount": 1003
+              },
+              {
+                "modality": "IMAGE",
+                "tokenCount": 2845
+              }
+            ],
+            "candidatesTokensDetails": [
+              {
+                "modality": "IMAGE",
+                "tokenCount": 1120
+              }
+            ]
+          },
+          "finishMessage": null,
+          "serviceTier": null
+        },
+        "gateway": {
+          "routing": {
+            "originalModelId": "google/gemini-3-pro-image",
+            "resolvedProvider": "vertex",
+            "fallbacksAvailable": [
+              "google"
+            ],
+            "planningReasoning": "System credentials planned for: vertex, google. Total execution order: vertex(system) → google(system)",
+            "canonicalSlug": "google/gemini-3-pro-image",
+            "finalProvider": "vertex",
+            "modelAttemptCount": 1,
+            "modelAttempts": [
+              {
+                "canonicalSlug": "google/gemini-3-pro-image",
+                "success": true,
+                "providerAttemptCount": 1,
+                "providerAttempts": [
+                  {
+                    "provider": "vertex",
+                    "credentialType": "system",
+                    "success": true,
+                    "startTime": 1793062453820,
+                    "endTime": 1793062498981,
+                    "statusCode": 200,
+                    "providerResponseId": "NfbfasGwONGj8uMP_cSSsQs"
+                  }
+                ]
+              }
+            ],
+            "totalProviderAttemptCount": 1,
+            "affinity": {
+              "outcome": "no_pin"
+            },
+            "clientSessionId": "69cafb7c5c36fc26c40258fd20a83d7b",
+            "clientSessionIdSource": "fingerprint"
+          },
+          "cost": "0.1443296",
+          "marketCost": "0.1443296",
+          "surchargeCost": "0",
+          "gatewayCost": "0.1443296",
+          "inferenceCost": "0.1443296",
+          "inputInferenceCost": "0.0036776",
+          "outputInferenceCost": "0.140652",
+          "generationId": "gen_01M5XDKG5HDHA72WW0AWD3VX73"
+        }
+      }
+    }
+  }
+]
