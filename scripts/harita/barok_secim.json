@@ -56,5 +56,13 @@
   ],
   "karakter_kayma_notu": "meydan sağdaysa karakter sola (−0,085)",
   "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)",
-  "sembol_notu": "sembol-4 şapkanın tüy uçlarındaki mor sızıntı krem tona çevrildi; önceki hâli sprite/sembol-4-onceki.webp"
+  "sembol_notu": "sembol-4 şapkanın tüy uçlarındaki mor sızıntı krem tona çevrildi; önceki hâli sprite/sembol-4-onceki.webp",
+  "resim_gece": "cikti/barok/barok-secilen-gece.jpg",
+  "gece_notu": "Nano Banana Pro, istemler/barok_gece.txt (mum ve fener ışığı; Emre). Gündüzle üst üste ölçüldü, meydanlar boş, her meydanın yanında fener.",
+  "gece_sembol_tonu": [
+    0.88,
+    0.7,
+    0.48
+  ],
+  "gece_sembol_tonu_notu": "Emre: Barok'ta gece sembolleri sıcak (fener) tonda; kanal çarpanları R,G,B. Rönesans/Orta Çağ serin tonda kalıyor."
 }
