@@ -1,33 +1,13 @@
 {
-  "aciklama": "Empresyonizm (21-22) gizli eserleri; 7 seviyelik 'ondokuz' haritası kalabalık olduğu için ikiye bölündü (Emre). Japon bölgesinde dağ yok. Yedekler: Degas · Bale Provası (aa2c0f8e19816349), Renoir · Moulin de la Galette (2026542e5482c401).",
+  "aciklama": "Empresyonizm (21-22) gizli eserleri; 7 seviyelik 'ondokuz' haritası kalabalık olduğu için ikiye bölündü (Emre). Japon bölgesinde dağ yok. İlk iki tur 'ruhsuz' bulundu (yağmur griye çekti): güneşli yaz günü, tek nehir (Seine); Caillebotte · Yağmurlu Gün yerine Renoir · Moulin de la Galette, Hiroshige · Ani Sağanak yerine Hiroshige · Kameido Erik Bahçesi (Emre). Yedekler: Caillebotte · Paris Sokağı, Yağmurlu Gün (c62813b3859ed6ab), Hiroshige · Ani Sağanak (4016e12af98da014), Degas · Bale Provası (aa2c0f8e19816349).",
   "tablolar": [
-    {
-      "oncelik": 1,
-      "seviye": 1,
-      "sanatci": "Gustave Caillebotte",
-      "eser": "Paris Street; Rainy Day",
-      "dosya": "gorseller/b/c62813b3859ed6ab.jpg"
-    },
-    {
-      "oncelik": 2,
-      "seviye": 2,
-      "sanatci": "Claude Monet",
-      "eser": "The Water Lily Pond (Japanese bridge)",
-      "dosya": "gorseller/b/1590e091d6432e18.jpg"
-    },
-    {
-      "oncelik": 3,
-      "seviye": 3,
-      "sanatci": "Utagawa Hiroshige",
-      "eser": "Sudden Shower over Shin-Ōhashi Bridge",
-      "dosya": "gorseller/b/4016e12af98da014.jpg"
-    }
+    { "oncelik": 1, "seviye": 1, "sanatci": "Pierre-Auguste Renoir", "eser": "Bal du moulin de la Galette", "dosya": "gorseller/b/2026542e5482c401.jpg" },
+    { "oncelik": 2, "seviye": 2, "sanatci": "Claude Monet", "eser": "The Water Lily Pond (Japanese bridge)", "dosya": "gorseller/b/1590e091d6432e18.jpg" },
+    { "oncelik": 3, "seviye": 3, "sanatci": "Utagawa Hiroshige", "eser": "Plum Park in Kameido", "dosya": "gorseller/b/c25ea03800bd2050.jpg" }
   ],
   "cikarilan": [
-    {
-      "sanatci": "Katsushika Hokusai",
-      "eser": "Red Fuji",
-      "neden": "Emre: dağ olmasın"
-    }
+    { "sanatci": "Katsushika Hokusai", "eser": "Red Fuji", "neden": "Emre: dağ olmasın" },
+    { "sanatci": "Gustave Caillebotte", "eser": "Paris Street; Rainy Day", "neden": "Emre: harita ruhsuz, yağmur griye çekti" },
+    { "sanatci": "Utagawa Hiroshige", "eser": "Sudden Shower over Shin-Ōhashi Bridge", "neden": "Emre: harita ruhsuz, yağmur griye çekti" }
   ]
 }
