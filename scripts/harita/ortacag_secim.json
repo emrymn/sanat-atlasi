@@ -13,16 +13,8 @@
   ],
   "duraklar": [
     [
-      0.25,
-      0.94
-    ],
-    [
       0.462,
       0.874
-    ],
-    [
-      0.586,
-      0.7633
     ],
     [
       0.685,
@@ -51,26 +43,5 @@
   ],
   "renklenme": "sepya, alttan yukarı (son açık seviyenin %7 üstüne kadar renkli)",
   "gece_notu": "Nano Banana Pro, istemler/ortacag_gece.txt (altın gök mum ışığında; Emre). Gündüzle üst üste ölçüldü (≤2 px), meydanlar boş; gece_duzelt gerekmedi.",
-  "duraklar_eski": [
-    [
-      0.462,
-      0.874
-    ],
-    [
-      0.685,
-      0.667
-    ],
-    [
-      0.54,
-      0.366
-    ]
-  ],
-  "seviye_semboller": [
-    "sembol-antik",
-    "sembol-romanesk",
-    "sembol-1",
-    "sembol-2",
-    "sembol-3"
-  ],
-  "meydan_notu": "Emre: uygulamada 5 seviye (Antik, Romanesk, Gotik ×2, Uluslararası Gotik), haritada 3 meydan vardı; 2 meydan Rönesans'ın 4. meydanından kopyalanıp eklendi (gündüz ve gece; ücretsiz). Yedek: ortacag-secilen-eski-meydan.jpg."
+  "meydan_notu": "Yanlış alarm (Claude): uygulama yalnız görseli olan sanatçıları gösterdiği için seviye sayısı haritadaki meydan sayısıyla zaten aynı. Eklenen 2 meydan geri alındı; o hâli *-fazla-meydan.jpg olarak yedekte. 4 ek sembol (sembol-antik, -romanesk, -ghiberti, -uccello) kullanılmıyor."
 }
