@@ -89,7 +89,8 @@ test('bölüm: tanıtım, Kolay %75 ile geçilince Orta açılır; Orta geçilin
       await expect(page.locator('.tanisma-eser')).toHaveCount(an.length);
       gosterilen[sid] = an;
       await gec.click();
-      await page.waitForTimeout(150);
+      // düğme 340 ms "gidiyor" animasyonu oynar, sonra adım değişir: o sırada yeniden tıklamak boşa gider
+      await expect(page.locator('[data-test="konu-tanisma-gec"].gidiyor')).toHaveCount(0);
     }
     return gosterilen;
   };
