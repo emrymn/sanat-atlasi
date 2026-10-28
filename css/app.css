@@ -12713,6 +12713,7 @@ a.harita-seviye:active {
    (kâğıt zemini saydam); maskeyi yaldız boyar, ışık mürekkebin üstünden bir kez kayar: her temada aynı altın imza.
    Soldan sağa yazılır gibi belirir. Açık temalarda yaldız koyulaşır (açık zeminde okunsun). */
 .imza-kap {
+  position: relative;
   display: block;
   width: fit-content;
   max-width: 72%;
@@ -12725,22 +12726,47 @@ a.harita-seviye:active {
   width: calc(var(--imza-boy) * var(--oran, 4));
   max-width: 100%;
   background: linear-gradient(100deg, #a8782a 0%, #f6dc8e 22%, #c9973a 42%, #fff1c4 50%, #c9973a 58%, #e8c46e 78%, #9a6b1f 100%) 0 0 / 260% 100%;
-  /* uzun yazılış: Safari kısaltmanın içindeki var()'ı kimi sürümlerde çözemiyor */
-  -webkit-mask-image: var(--imza);
-  -webkit-mask-size: contain;
+  /* İki maske katmanı kesişir: imzanın kendisi ve kalemle yazılmış kısmı (--yaz kadar, ucu yumuşak; js/imza.js
+     kalemleYaz yürütür). Uzun yazılış: Safari kısaltmanın içindeki var()'ı kimi sürümlerde çözemiyor. */
+  -webkit-mask-image: var(--imza), linear-gradient(90deg, #000 calc(var(--yaz, 100%) - 2%), transparent calc(var(--yaz, 100%) + 0.5%));
+  -webkit-mask-size: contain, 100% 100%;
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: left center;
-  mask-image: var(--imza);
-  mask-size: contain;
+  -webkit-mask-position: left center, 0 0;
+  -webkit-mask-composite: source-in;
+  mask-image: var(--imza), linear-gradient(90deg, #000 calc(var(--yaz, 100%) - 2%), transparent calc(var(--yaz, 100%) + 0.5%));
+  mask-size: contain, 100% 100%;
   mask-repeat: no-repeat;
-  mask-position: left center;
-  animation:
-    imza-gel 1.4s ease-out both,
-    imza-isil 3.2s 1.2s ease-in-out both;
+  mask-position: left center, 0 0;
+  mask-composite: intersect;
+}
+/* yazı bitince üstünden bir kez ışık kayar */
+.imza.yazildi {
+  animation: imza-isil 3.2s ease-in-out both;
+}
+/* kalemin ucu: mürekkebi izleyen küçük parlak nokta */
+.imza-uc {
+  position: absolute;
+  z-index: 1;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fffaf0 0%, #f6dc8e 40%, rgba(246, 220, 142, 0) 72%);
+  box-shadow: 0 0 12px 4px rgba(246, 220, 142, 0.45);
+  pointer-events: none;
+  transition: opacity 0.5s ease-out;
+}
+.imza-uc.bitti {
+  opacity: 0;
 }
 :root[data-tema='sepya'] .imza,
 :root[data-tema='acik'] .imza {
   background-image: linear-gradient(100deg, #6e4a14 0%, #a8782a 22%, #8a6420 42%, #d4a64a 50%, #8a6420 58%, #a8782a 78%, #5a3c10 100%);
+}
+:root[data-tema='sepya'] .imza-uc,
+:root[data-tema='acik'] .imza-uc {
+  background: radial-gradient(circle, #fff3d0 0%, #c9973a 40%, rgba(201, 151, 58, 0) 72%);
+  box-shadow: 0 0 10px 3px rgba(154, 107, 31, 0.35);
 }
 @keyframes imza-isil {
   from {
@@ -12750,19 +12776,9 @@ a.harita-seviye:active {
     background-position: 0 0;
   }
 }
-@keyframes imza-gel {
-  from {
-    opacity: 0;
-    clip-path: inset(0 100% 0 0);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
-}
 @media (prefers-reduced-motion: reduce) {
-  .imza {
+  .imza.yazildi {
     animation: none;
-    background-position: 0 0;
   }
 }
 

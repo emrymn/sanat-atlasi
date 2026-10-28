@@ -62,6 +62,10 @@ test('imza: uygulamayla gelen hazır maske kullanılır (Wikimedia’ya gidilmez
   expect(await imza.evaluate((e) => e.style.getPropertyValue('--oran'))).toBe('3.0000');
   expect(await imza.evaluate((e) => parseFloat(getComputedStyle(e).width))).toBeGreaterThan(150);
   expect(wikimedia).toBe(0);
+  // kalemle yazılır: önce kısmen açık, kalem ucu görünür; bitince tamamı açık ve uç kalkar
+  await expect(imza).toHaveClass(/yazildi/, { timeout: 6000 });
+  expect(await imza.evaluate((e) => e.style.getPropertyValue('--yaz'))).toBe('100%');
+  await expect(page.locator('.imza-uc')).toHaveCount(0, { timeout: 2000 });
 });
 
 test('imza: tablonun üstündeki imzanın fotoğrafı (mürekkep değil) gösterilmez', async ({ page, context }) => {
@@ -101,4 +105,28 @@ test('çerçeve: Koleksiyonum’da eser döneminin çerçevesinde (Giotto → Go
   const c = page.locator('.koleksiyon-duvar .asi-cerceve').first();
   await expect(c).toHaveAttribute('data-cerceve', 'kemer');
   expect(await c.evaluate((e) => getComputedStyle(e).borderTopLeftRadius)).not.toBe('0px');
+});
+
+test('Ayarlar: "Başka bir sanatçı getir" günün sanatçısını o gün için değiştirir; ana sayfada yıllar satırı yok', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/');
+  const ad = page.locator('.sahne-isim .isim');
+  await expect(ad).toBeVisible();
+  const once = await ad.getAttribute('aria-label');
+  // imza gelince tablonun üstü kalabalıklaşıyordu: yıllar · akım satırı ana sayfadan kalktı (sanatçı sayfasında duruyor)
+  await expect(page.locator('.sahne-isim .meta')).toHaveCount(0);
+  await expect(page.locator('[data-test="gunun-degistir"]')).toHaveCount(0);
+  await page.goto('./#/ayarlar');
+  const adAyar = page.locator('[data-test="gunun-ad"]');
+  const ilk = await adAyar.textContent();
+  await page.locator('[data-test="gunun-degistir"]').click();
+  await expect(adAyar).not.toHaveText(ilk);
+  await expect(page.locator('#gunun-mesaj')).toContainText('Ana sayfada bugün');
+  expect((await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:ilerleme')).gununDegisim)).id).toBeTruthy();
+  await page.locator('#gunun-mesaj a').click();
+  await expect(page.locator('.sahne-isim .isim')).not.toHaveAttribute('aria-label', once);
+  // yeniden açılınca da kalır
+  const sonra = await page.locator('.sahne-isim .isim').getAttribute('aria-label');
+  await page.reload();
+  await expect(page.locator('.sahne-isim .isim')).toHaveAttribute('aria-label', sonra);
 });

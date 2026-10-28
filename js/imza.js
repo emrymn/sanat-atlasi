@@ -118,7 +118,7 @@ export function murekkepMaskesi(img, yukseklik = 240) {
     k.width = kw;
     k.height = kh;
     k.getContext('2d').drawImage(t, x0, y0, kw, kh, 0, 0, kw, kh);
-    return { adres: k.toDataURL('image/png'), en: kw, boy: kh };
+    return { adres: k.toDataURL('image/png'), en: kw, boy: kh, img: k };
   } catch {
     return null;
   }
@@ -147,7 +147,7 @@ export async function imzaGoster(s, kutu) {
   const yerel = `gorseller/imza/${encodeURIComponent(s.id)}.png`;
   const hazir = await yukle(yerel, false).catch(() => null);
   // tam adres: CSS değişkenindeki göreli url() stil dosyasına (css/) göre çözülürdü
-  if (hazir) m = { adres: new URL(yerel, document.baseURI).href, en: hazir.naturalWidth, boy: hazir.naturalHeight };
+  if (hazir) m = { adres: new URL(yerel, document.baseURI).href, en: hazir.naturalWidth, boy: hazir.naturalHeight, img: hazir };
   else {
     // küçük resim (CORS'lu); Wikimedia hız sınırına (429) takıldıysa birkaç saniye sonra bir kez daha
     const kucuk = commonsKucuk(dosya, 960); // büyük kaynak: maske 3 kat ekranda keskin kalsın
@@ -173,4 +173,93 @@ export async function imzaGoster(s, kutu) {
   const ad = kutu.querySelector('.isim');
   if (ad) ad.after(kap);
   else kutu.prepend(kap);
+  kalemleYaz(el, kap, kalemYolu(m.img));
+}
+
+// Kalemin yolu: maske dikey şeritlere bölünür; her şeritte mürekkep miktarı (0…1) ve mürekkebin ağırlık merkezi (y,
+// 0 üst … 1 alt). Mürekkep yoksa y bir önceki şeritten kalır (kalem havada, aynı yükseklikte ilerler).
+export function seritlerden(veri, w, h) {
+  const yol = [];
+  let oncekiY = 0.6;
+  for (let x = 0; x < w; x++) {
+    let top = 0;
+    let ty = 0;
+    for (let y = 0; y < h; y++) {
+      const a = veri[(y * w + x) * 4 + 3] / 255;
+      top += a;
+      ty += a * y;
+    }
+    const y = top > 0.05 ? ty / top / Math.max(1, h - 1) : oncekiY;
+    oncekiY = y;
+    yol.push({ y, m: Math.min(1, top / (h * 0.35)) });
+  }
+  return yol;
+}
+
+export function kalemYolu(kaynak, n = 64) {
+  try {
+    const h = 32;
+    const t = document.createElement('canvas');
+    t.width = n;
+    t.height = h;
+    const c = t.getContext('2d', { willReadFrequently: true });
+    c.drawImage(kaynak, 0, 0, n, h);
+    return seritlerden(c.getImageData(0, 0, n, h).data, n, h);
+  } catch {
+    return null;
+  }
+}
+
+// Zaman çizelgesi: mürekkebi çok olan şeritte kalem yavaşlar, boşlukta hızlanır. Dönen: her şeridin bitiş anı (0…1)
+export function yazmaZamanlari(yol) {
+  const agirlik = yol.map((s) => 0.18 + s.m);
+  const top = agirlik.reduce((a, b) => a + b, 0) || 1;
+  let birikim = 0;
+  return agirlik.map((a) => (birikim += a / top));
+}
+
+const azHareket = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// İmza kalemle yazılıyormuş gibi soldan sağa belirir (--yaz: maskenin açık kısmı); parlayan kalem ucu mürekkebi izler,
+// mürekkebin yüksekliğine göre iner çıkar. Bitince uç söner, imzanın üstünden bir kez ışık kayar (.yazildi).
+function kalemleYaz(el, kap, yol) {
+  const bitir = () => {
+    el.style.setProperty('--yaz', '100%');
+    el.classList.add('yazildi');
+  };
+  if (!yol || !yol.length || azHareket() || typeof requestAnimationFrame !== 'function') return bitir();
+  const oran = parseFloat(el.style.getPropertyValue('--oran')) || 4;
+  const sure = Math.min(2600, Math.max(1300, 900 + oran * 260)); // uzun imza daha uzun sürer
+  const zaman = yazmaZamanlari(yol);
+  const uc = document.createElement('span');
+  uc.className = 'imza-uc';
+  uc.setAttribute('aria-hidden', 'true');
+  kap.append(uc);
+  el.style.setProperty('--yaz', '0%');
+  let bas = 0;
+  let i = 0;
+  const adim = (t) => {
+    if (!el.isConnected) return;
+    if (!bas) bas = t + 350; // ad belirdikten az sonra başlar
+    const z = Math.max(0, (t - bas) / sure);
+    while (i < zaman.length - 1 && zaman[i] < z) i++;
+    const once = i ? zaman[i - 1] : 0;
+    const f = Math.min(1, Math.max(0, (z - once) / Math.max(1e-6, zaman[i] - once)));
+    const x = Math.min(1, (i + f) / yol.length);
+    // imza kutunun içinde "contain" ile durur: genişlik kutuyu doldurur, yükseklik ortalanır
+    const gen = el.offsetWidth;
+    const boy = el.offsetHeight;
+    const imzaBoy = Math.min(boy, gen / oran);
+    const ustBosluk = (boy - imzaBoy) / 2;
+    el.style.setProperty('--yaz', `${(x * 100).toFixed(2)}%`);
+    uc.style.left = `${el.offsetLeft + x * gen}px`;
+    uc.style.top = `${el.offsetTop + ustBosluk + yol[Math.min(i, yol.length - 1)].y * imzaBoy}px`;
+    if (z < 1) requestAnimationFrame(adim);
+    else {
+      uc.classList.add('bitti');
+      setTimeout(() => uc.remove(), 600);
+      bitir();
+    }
+  };
+  requestAnimationFrame(adim);
 }

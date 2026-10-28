@@ -93,6 +93,11 @@ export function ilerlemeDogrula(nesne) {
     bildirimler: bildirimlerDogrula(v.bildirimler),
     sonSurum: typeof v.sonSurum === 'string' && /^\d+\.\d+\.\d+$/.test(v.sonSurum) ? v.sonSurum : null,
     gelistirici: gelistiriciDogrula(v.gelistirici),
+    // ana sayfadaki "başka sanatçı": o gün için seçilen günün sanatçısı
+    gununDegisim:
+      v.gununDegisim && typeof v.gununDegisim.id === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v.gununDegisim.tarih || '')
+        ? { tarih: v.gununDegisim.tarih, id: v.gununDegisim.id }
+        : null,
     olusturma: v.olusturma || t.olusturma,
   };
 }

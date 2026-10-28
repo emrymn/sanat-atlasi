@@ -114,7 +114,7 @@ function sahneHtml(gs, { tekrar, tur, devam, g }) {
         <span class="egim-isik" aria-hidden="true"></span>
         <button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 18, 1.6)}Hareketi aç</button>
         <div class="bugun-ust"><span class="etiket vurgu">Günün sanatçısı</span><span class="hap" data-test="tekrar">${tekrar}</span></div>
-        <a class="sahne-isim isim-blok" href="#/gunun">${isimHtml(gs)}<p class="meta">${kunye(gs, { bag: false })}</p></a>
+        <a class="sahne-isim isim-blok" href="#/gunun">${isimHtml(gs)}</a>
         <span class="kaydir-ipucu" aria-hidden="true">${ikon('asagi', 22, 1.4)}</span>
       </div>
       <div class="sahne-paneller">
