@@ -377,11 +377,7 @@
    "ses": null,
    "portre": "151 le vite, danilo ricciarelli da volterra.jpg",
    "okunus": true,
-   "portre_en": 600,
-   "ipa": {
-    "dil": "it",
-    "yazi": "[daˈnjɛːle rittʃaˈrɛlli]"
-   }
+   "portre_en": 600
   },
   "dante-gabriel-rossetti": {
    "dil": "en",
@@ -726,7 +722,7 @@
    "portre_en": 600,
    "ipa": {
     "dil": "it",
-    "yazi": "[dʒoˈvanni batˈtista ˈtjɛːpolo, ˈtjeː-]"
+    "yazi": "[dʒoˈvanni batˈtista ˈtjɛːpolo]"
    }
   },
   "giovanni-bellini": {
@@ -882,7 +878,7 @@
    "portre_en": 600,
    "ipa": {
     "dil": "en",
-    "yazi": "/ˈfjuːzəli, fjuːˈzɛli/"
+    "yazi": "/ˈfjuːzəli/"
    }
   },
   "hieronymus-bosch": {
@@ -946,11 +942,7 @@
    "ses": null,
    "portre": "Alessandro Allori, santissima trinità, 1567-1571 circa, ritratto dei maestri, pontormo.jpg",
    "okunus": true,
-   "portre_en": 600,
-   "ipa": {
-    "dil": "it",
-    "yazi": "[ˈjaːkopo ka(r)ˈruttʃi]"
-   }
+   "portre_en": 600
   },
   "jacques-germain-soufflot": {
    "dil": "fr",
@@ -1114,7 +1106,7 @@
    "portre_en": 600,
    "ipa": {
     "dil": "en",
-    "yazi": "/ˈkʌnstəbəl, ˈkɒn/"
+    "yazi": "/ˈkʌnstəbəl/"
    }
   },
   "john-everett-millais": {
@@ -1157,7 +1149,7 @@
    "portre_en": 600,
    "ipa": {
     "dil": "ja",
-    "yazi": "[kä̀.t͡sɨ́.ɕi̥.kä̀ {{!}} hò̞.kɯ̥̈.ꜜsä́í, -kä̀ hò̞.kɯ̥̈.sä̀ì, -kä̀ {{!}} hò̞.kɯ̥̈.ꜜsä́ì, -kä̀ {{!}} ꜜhó̞.kɯ̥̈.sä̀ì, -kä́ hó̞.kɯ̥̈.sä̀ì]"
+    "yazi": "[kä̀.t͡sɨ́.ɕi̥.kä̀ hò̞.kɯ̥̈.ꜜsä́í]"
    }
   },
   "leon-battista-alberti": {
@@ -1393,7 +1385,7 @@
    "portre_en": 600,
    "ipa": {
     "dil": "it",
-    "yazi": "[ˈpaːolo veroˈneːze, -eːse]"
+    "yazi": "[ˈpaːolo veroˈneːze]"
    }
   },
   "parmigianino": {
@@ -1459,7 +1451,7 @@
    "portre_en": 600,
    "ipa": {
     "dil": "nl",
-    "yazi": "[ˈpeːtrʏs ˈkrɪstʏs, ˈxrɪs-]"
+    "yazi": "[ˈpeːtrʏs ˈkrɪstʏs]"
    }
   },
   "phidias": {
@@ -1540,11 +1532,7 @@
   "polykleitos": {
    "dil": null,
    "ses": null,
-   "portre": null,
-   "ipa": {
-    "dil": "en",
-    "yazi": "/,pOli'klaito:s/"
-   }
+   "portre": null
   },
   "praxiteles": {
    "dil": null,
@@ -1737,7 +1725,7 @@
    "portre_en": 600,
    "ipa": {
     "dil": "ja",
-    "yazi": "[ɯ̈̀.tä́.ɡä́.β̞ä́ {{!}} çì.ɾó̞.ɕì.ɡè̞, -β̞ä́ çí-, -ŋä́.β̞ä́, -ɕì.ŋè̞, -ɕí.ɡé̞, -ɕí.ŋé̞]"
+    "yazi": "[ɯ̈̀.tä́.ɡä́.β̞ä́ çì.ɾó̞.ɕì.ɡè̞]"
    }
   },
   "valentin-de-boulogne": {
