@@ -131,7 +131,7 @@ test('Ayarlar: "Başka bir sanatçı getir" günün sanatçısını o gün için
   await expect(page.locator('.sahne-isim .isim')).toHaveAttribute('aria-label', sonra);
 });
 
-test('künye: sanatçı sayfasında portre ve "Dinle"; imza onların altında; kayıt yoksa telefonun o dildeki sesi', async ({ page, context }) => {
+test('künye: sanatçı sayfasında arkada portre ve "Dinle"; imza onların altında; kayıt yoksa telefonun o dildeki sesi', async ({ page, context }) => {
   await agiHazirla(context);
   await context.route(/\/data\/kunye\.json$/, (r) =>
     r.fulfill({
@@ -152,7 +152,8 @@ test('künye: sanatçı sayfasında portre ve "Dinle"; imza onların altında; k
   });
   await page.goto('./#/sanatci/albrecht-durer');
   const ek = page.locator('.isim-blok .isim-ek');
-  await expect(ek.locator('.portre')).toBeVisible();
+  // portre adın arkasında, büyük ve silik (İş 49b)
+  await expect(page.locator('.isim-blok.portreli > .portre-arka')).toHaveAttribute('alt', /Albrecht Dürer portresi/);
   await expect(ek.locator('[data-test="dinle"]')).toBeVisible();
   // imza satırın altında
   await expect(page.locator('.isim-ek + .imza-kap')).toHaveCount(1);
