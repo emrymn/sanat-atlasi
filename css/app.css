@@ -12721,16 +12721,22 @@ a.harita-seviye:active {
   animation: imza-gel 1.4s ease-out both;
 }
 .imza.duz {
+  /* maske yapılamadı (görsel CORS'suz geldi): imza, duvara iliştirilmiş küçük bir kâğıt parçası gibi */
   width: auto;
-  background: none;
+  height: 46px;
+  padding: 4px 8px;
+  border-radius: 2px;
+  background: #f4efe6;
   -webkit-mask: none;
   mask: none;
+  box-shadow: 0 4px 10px -6px rgba(0, 0, 0, 0.6);
+  display: inline-block;
 }
 .imza.duz img {
+  display: block;
   height: 100%;
   width: auto;
   max-width: 100%;
-  mix-blend-mode: multiply;
 }
 @keyframes imza-gel {
   from {

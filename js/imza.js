@@ -109,11 +109,12 @@ export function murekkepMaskesi(img, yukseklik = 120) {
   }
 }
 
-function yukle(adres) {
+function yukle(adres, cors = true) {
   return new Promise((coz, red) => {
     const img = new Image();
-    img.crossOrigin = 'anonymous';
+    if (cors) img.crossOrigin = 'anonymous';
     img.decoding = 'async';
+    img.fetchPriority = 'high';
     img.onload = () => coz(img);
     img.onerror = red;
     img.src = adres;
@@ -125,9 +126,13 @@ export async function imzaGoster(s, kutu) {
   if (!kutu) return;
   const dosya = await sanatciImzasi(s);
   if (!dosya || !kutu.isConnected || kutu.querySelector('.imza')) return;
-  // küçük bir dosyanın 500 px'lik küçük resmi üretilemez: o zaman özgün boyut
-  const img = await yukle(commonsKucuk(dosya, 400))
-    .catch(() => yukle(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(dosya)}?width=400`))
+  // Sıra: küçük resim (CORS'lu, maske yapılabilir) → Wikimedia hız sınırına (429) takıldıysa birkaç saniye sonra
+  // bir kez daha → küçük bir dosyanın 500 px'lik küçük resmi üretilemiyorsa özgün boyut (Special:FilePath; Commons'un
+  // yönlendirmesi CORS başlığı vermediği için düz görsel olarak) → yine olmazsa hiç
+  const kucuk = commonsKucuk(dosya, 400);
+  const img = await yukle(kucuk)
+    .catch(() => new Promise((r) => setTimeout(r, 4000)).then(() => yukle(kucuk)))
+    .catch(() => yukle(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(dosya)}?width=400`, false))
     .catch(() => null);
   if (!img || !kutu.isConnected || kutu.querySelector('.imza')) return;
   const m = murekkepMaskesi(img);

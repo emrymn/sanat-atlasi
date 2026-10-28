@@ -4,6 +4,8 @@ import { agiHazirla } from './ortak.js';
 
 test('imza: doğrulanmış QID’in kaydında imza varsa sanatçı sayfasında adın altında; yoksa hiçbir şey', async ({ page, context }) => {
   await agiHazirla(context);
+  // data/imzalar.json yokmuş gibi: imza canlı Wikidata'dan
+  await context.route(/\/data\/imzalar\.json$/, (r) => r.fulfill({ status: 404, body: '' }));
   // Giotto'nun QID'i (Q7814) önbellek dosyasında; Wikidata yalnız onun için imza döndürür
   await context.route(/www\.wikidata\.org\/w\/api\.php.*wbgetentities.*ids=Q7814/, (r) =>
     r.fulfill({
@@ -23,6 +25,21 @@ test('imza: doğrulanmış QID’in kaydında imza varsa sanatçı sayfasında a
   await expect(page.locator('.isim-blok h1')).toBeVisible();
   await page.waitForTimeout(500);
   await expect(page.locator('[data-test="imza"]')).toHaveCount(0);
+});
+
+test('imza: önceden hesaplanmış data/imzalar.json varsa Wikidata’ya sorulmaz', async ({ page, context }) => {
+  await agiHazirla(context);
+  await context.route(/\/data\/imzalar\.json$/, (r) =>
+    r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, imzalar: { 'giotto-di-bondone': 'Dosyadan imza.svg', cimabue: null } }) }),
+  );
+  let soruldu = 0;
+  await context.route(/www\.wikidata\.org\/w\/api\.php.*wbgetentities.*ids=Q7814/, (r) => {
+    soruldu++;
+    return r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: '{"entities":{}}' });
+  });
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await expect(page.locator('[data-test="imza"]')).toHaveAttribute('data-dosya', 'Dosyadan imza.svg');
+  expect(soruldu).toBe(0);
 });
 
 test('harf: akım sayfasının başlığı ve haritadaki dönem adları dönemin yazı tipiyle', async ({ page, context }) => {

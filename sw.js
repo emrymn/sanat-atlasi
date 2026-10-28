@@ -94,6 +94,7 @@ const KABUK_DOSYALARI = [
   'data/eser_turleri.json',
   'data/akim_bilgi.json',
   'data/harita.json',
+  'data/imzalar.json',
   'data/biyografiler.json',
   'data/kisa_adlar.json',
   'data/akim_ozellikleri.json',
