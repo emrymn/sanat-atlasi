@@ -33,8 +33,9 @@ test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en a
   await page.goto('./#/pekistir');
   await expect(page.locator('.secim-hap button').first()).toBeVisible();
   for (const b of await dokunmaBoylari(page, '.secim-hap button')) expect(b).toBeGreaterThanOrEqual(44);
+  // İlerleme'deki sıralama hapları yalnız cevap verilmiş birden çok akım varken çıkar (İş 56); varsa ölçülür
   await page.goto('./#/ilerleme');
-  await expect(page.locator('.kucuk-hap button').first()).toBeVisible();
+  await expect(page.locator('[data-parca="alt"]')).toBeAttached();
   for (const b of await dokunmaBoylari(page, '.kucuk-hap button')) expect(b).toBeGreaterThanOrEqual(44);
 });
 
@@ -231,4 +232,21 @@ test('Konular: her grupta en çok 6 kart ve "hepsi" bağlantısı; grup sayfası
   await expect(page.locator('[data-test="konu-grup-serit"] a[aria-current="page"]')).toHaveCount(1);
   await page.locator('.ust .geri').click();
   await expect(page).toHaveURL(/#\/konular$/);
+});
+
+// İş 56: Başyapıtlar dönemlere göre; Defter'de cevap verilmemiş akımlar tek bölümde
+test('Başyapıtlar haritanın dönemlerine göre gruplanır, kartta akımın adı; Defter cevapsız akımları haplarda toplar', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/basyapitlar');
+  const basliklar = page.locator('.vitrin-ad');
+  await expect(basliklar.first()).toContainText('Orta Çağ');
+  expect(await basliklar.count()).toBeLessThanOrEqual(9);
+  await expect(page.locator('.vitrin-akim').first()).not.toBeEmpty();
+  await page.goto('./#/ilerleme');
+  const cevapsiz = page.locator('[data-test="cevapsiz-akimlar"]');
+  await expect(cevapsiz).toBeVisible();
+  // yeni kullanıcı: hiç cevap yok, akım kartı yok, her açık akım bir hap
+  await expect(page.locator('.akim-kart')).toHaveCount(0);
+  const hap = cevapsiz.locator('a').first();
+  await expect(hap).toHaveAttribute('href', /#\/pekistir\/donem\//);
 });

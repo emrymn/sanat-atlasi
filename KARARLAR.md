@@ -1338,3 +1338,10 @@ Emre: "konular kısmını düzenleyelim"; seçenekler arasından "Liste kısals�
 - Ana Konular sayfasında her grup (Eski Ahit, Yeni Ahit, Azizler, Mitoloji, Tarih ve edebiyat, Diğer) en çok işlenen 6 konuyla açılır (liste zaten eser sayısına göre çoktan aza), altında "Eski Ahit · 28 konunun hepsi →". Üstte gruplar arası şerit. Sayfa 6.569 px (~8 ekran).
 - Grubun bütün konuları kendi sayfasında: `#/konular/<tür>` (ör. `#/konular/eski_ahit`), başlıkta "Konular" etiketi ve geri, üstte seçili grubu gösteren şerit. Ayrı adres olduğu için iOS geri hareketi ve kaydırma yeri geri yüklemesi (İş 51) de çalışır.
 - Test: `tests/e2e/cilalama.spec.js` (gruplarda en çok 6 kart, "hepsi" grubun bütün konularını açar, geri listeye döner).
+
+## İş 56 · Uzun sayfalar kısaldı: Başyapıtlar ve Defter (2026-10-28, v1.48.2)
+
+Konular'dan (İş 55) sonra her ekranın boyu, her şey açıkken (geliştirici modu) ölçüldü. Harita (~16 ekran) bir yolculuk olduğu için, bir konu grubunun bütün konuları sayfası (~12 ekran) bilerek bütün liste olduğu için, Atölye'nin 29 salonu bir seçim menüsü olduğu için uzun kaldı.
+- **Başyapıtlar ~14 → ~5 ekran:** 29 akım satırı vardı, çoğunda 1–3 eser (seyrek ve uzun). Haritanın 9 dönemine göre gruplandı (`bolgeBul(akım sırası)`): başlıkta dönemin adı ve yüzyılı, şeritte dönemin akımları sırayla; her kartın altında akımın renkli noktası ve adı.
+- **Defter ~8,7 → ~6 ekran:** "Akımlara göre doğruluk" her açık akımı kart olarak diziyordu, cevap verilmemişleri de "henüz cevap yok" diye tek tek. Artık kart yalnız cevap verilmiş akımlar için; cevapsızlar altta tek bölümde haplar ("Henüz cevap vermediğin N akım"), hapa dokununca o dönemin turu.
+- Test: `tests/e2e/cilalama.spec.js`.
