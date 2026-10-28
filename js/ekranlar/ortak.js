@@ -393,7 +393,10 @@ function sekmeSurukle(nav) {
     const a = nav.querySelectorAll('a')[sekmeAt(e.clientX)];
     if (a) {
       e.preventDefault();
-      if (location.hash !== a.getAttribute('href') && !(a.getAttribute('href') === '#/' && (location.hash === '' || location.hash === '#/'))) location.hash = a.getAttribute('href');
+      if (location.hash !== a.getAttribute('href') && !(a.getAttribute('href') === '#/' && (location.hash === '' || location.hash === '#/'))) {
+        sekmeHedefi = a.getAttribute('href');
+        location.hash = a.getAttribute('href');
+      }
     }
   };
   nav.addEventListener('pointerup', bitir);
@@ -407,7 +410,16 @@ function sekmeSurukle(nav) {
     if (nav.dataset.yeniKaydi) {
       e.preventDefault();
       delete nav.dataset.yeniKaydi;
+      return;
     }
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.getAttribute('href');
+    // açık sekmenin ana ekranındayken yeniden dokunmak: en başa (iPhone gibi); başka sekme: kalınan yerde açılır
+    if (href === (location.hash || '#/')) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    } else sekmeHedefi = href;
   });
 }
 
@@ -454,6 +466,57 @@ export function guncelMi(no) {
   return no === cizimSayaci;
 }
 
+// ---------- Geri dönünce kaydırma yeri (İş 51) ----------
+// Her ekranın kaydırma yeri adresiyle saklanır; geri düğmesiyle dönülünce ekran çizildikten sonra o yere gidilir.
+// Görseller ve geç gelen bölümler sayfayı uzattıkça hedefe ulaşana dek denenir (en çok 2,5 sn); kullanıcı
+// dokunur ya da kaydırırsa bırakılır. Harita ve tur kartları kendi yerlerini kendileri seçer.
+if (typeof history !== 'undefined' && 'scrollRestoration' in history) history.scrollRestoration = 'manual';
+const kaydirmaYerleri = new Map();
+let geriHedefi = null; // { adres, y }
+const KENDI_KAYDIRMASI = /^#\/(harita|pekistir\/.+)$/;
+
+// Sekme çubuğundan başka bir sekmeye geçiş: o sekmenin ana ekranı kalınan yerde açılır (iPhone sekmeleri gibi)
+let sekmeHedefi = null;
+export function sekmedenMi(adres) {
+  const evet = sekmeHedefi === adres;
+  sekmeHedefi = null;
+  return evet;
+}
+
+export function geriDonusBildir(adres) {
+  const y = kaydirmaYerleri.get(adres);
+  geriHedefi = y > 0 && !KENDI_KAYDIRMASI.test(adres) ? { adres, y } : null;
+}
+
+if (typeof window !== 'undefined') {
+  let bekliyor = false;
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (bekliyor) return;
+      bekliyor = true;
+      requestAnimationFrame(() => {
+        bekliyor = false;
+        if (sonCizilenAdres) kaydirmaYerleri.set(sonCizilenAdres, window.scrollY);
+      });
+    },
+    { passive: true },
+  );
+  const birak = () => (geriHedefi = null);
+  for (const olay of ['pointerdown', 'wheel', 'keydown']) window.addEventListener(olay, birak, { passive: true });
+}
+
+function yerineDon(hedef) {
+  const bitis = performance.now() + 2500;
+  const adim = () => {
+    if (geriHedefi !== hedef || (location.hash || '#/') !== hedef.adres) return;
+    window.scrollTo(0, hedef.y);
+    if (Math.abs(window.scrollY - hedef.y) < 2 || performance.now() > bitis) return;
+    requestAnimationFrame(adim);
+  };
+  adim();
+}
+
 export function ciz(html, hareket) {
   const adres = location.hash || '#/';
   ekran.dataset.hareket = hareket ?? (adres !== sonCizilenAdres ? 'giris' : '');
@@ -461,7 +524,8 @@ export function ciz(html, hareket) {
   ekran.classList.remove('perde');
   ekran.innerHTML = html;
   ekran.style.paddingBottom = '';
-  window.scrollTo(0, 0);
+  if (geriHedefi && geriHedefi.adres === adres) yerineDon(geriHedefi);
+  else window.scrollTo(0, 0);
   const h = ekran.querySelector('h1');
   if (h) h.focus({ preventScroll: true });
   if (ekran.querySelector('.ad-son, .soru-baslik h2')) {

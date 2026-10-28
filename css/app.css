@@ -12968,3 +12968,54 @@ a.harita-seviye:active {
 .harita-durak {
   z-index: 3;
 }
+/* İş 51: geri dönünce kaydırma yeri JS ile geri yüklenir; tarayıcının kaydırma çapası (iPhone Safari'de zaten yok)
+   geç yüklenen görsellerle yeri kaydırmasın, her tarayıcıda aynı davransın */
+html {
+  overflow-anchor: none;
+}
+
+/* İş 51: başlık iki satıra bölününce geri düğmesi ikinci satıra iniyordu ("Art Nouveau ve Viyana Secession",
+   "Antik Yunan ve Roma"). Düğme artık başlığın ilk satırının ortasında; tek satırlı başlıklar eskisiyle aynı yerde
+   (eskiden alta yaslıydı: 52 pt'lik kutuda etiketsiz başlığın üstünde 12 pt boşluk kalırdı) */
+.ust {
+  align-items: flex-start;
+}
+.ust-yazi {
+  padding-top: 12px;
+}
+.ust > .geri,
+.ust > .ust-dugme,
+.ust > .kapat {
+  margin-top: 10px;
+}
+.ust:has(> .ust-yazi > .etiket) > .ust-yazi {
+  padding-top: 0;
+}
+.ust:has(> .ust-yazi > .etiket) > .geri,
+.ust:has(> .ust-yazi > .etiket) > .ust-dugme,
+.ust:has(> .ust-yazi > .etiket) > .kapat {
+  margin-top: 16px;
+}
+
+/* İş 51 · okunurluk: kilitli akım kartında "Konu N'de açılır" notu kartla birlikte %55'e soluyordu (gece ~3:1).
+   Kart yine soluk, not tam renkte: soluklaşma kartın kendisine değil, notun dışındaki parçalarına */
+.zaman-oge.kilitli .zaman-kart {
+  opacity: 1;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--border) 55%, transparent);
+}
+.zaman-oge.kilitli .zaman-kart > :not(.sayi) {
+  opacity: 0.55;
+}
+.zaman-oge.kilitli .kilit-notu {
+  color: var(--ink);
+}
+/* akımın kendi rengiyle yazılan küçük yazılar ("Kısaca", "Devamını oku", ipucu numaraları): koyu akım rengi gece
+   zemininde, açık akım rengi kâğıtta kayboluyordu → akım rengi temanın mürekkebiyle karışır, her temada okunur */
+.akim-hikaye-dugme,
+.akim-bolum-bas span,
+.akim-ipucu-no,
+.akim-ipucu-rakam,
+.akim-konu-dizin sup,
+.akim-komsu-ok {
+  color: color-mix(in srgb, var(--renk) 45%, var(--ink));
+}
