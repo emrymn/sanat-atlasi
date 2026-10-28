@@ -147,6 +147,7 @@ test('künye: sanatçı sayfasında arkada portre ve "Dinle"; imza onların alt�
     window.__okunan = [];
     window.speechSynthesis.speak = (u) => {
       window.__okunan.push({ metin: u.text, dil: u.lang });
+      u.onstart && u.onstart();
       setTimeout(() => u.onend && u.onend(), 10);
     };
   });

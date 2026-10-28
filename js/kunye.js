@@ -33,20 +33,27 @@ export function sesSec(sesler, dil) {
 
 const sentez = () => (typeof window !== 'undefined' && 'speechSynthesis' in window ? window.speechSynthesis : null);
 
-function sesleriAl() {
+// sesler erken istenir: iOS listeyi geç doldurur, okuma ise dokunuşun içinde hemen başlamalı
+function sesleriIsit() {
   const s = sentez();
-  if (!s) return Promise.resolve([]);
-  const v = s.getVoices();
-  if (v.length) return Promise.resolve(v);
-  // iOS sesleri geç yükler
-  return new Promise((coz) => {
-    const bitti = () => coz(s.getVoices());
-    s.addEventListener('voiceschanged', bitti, { once: true });
-    setTimeout(bitti, 800);
-  });
+  if (s && !s.getVoices().length) s.addEventListener('voiceschanged', () => s.getVoices(), { once: true });
+}
+
+// iOS 17+: ses "oynatma" türünde çalsın (sessiz moddayken de duyulsun)
+function oynatmaOturumu() {
+  try {
+    if (navigator.audioSession && navigator.audioSession.type !== 'playback') navigator.audioSession.type = 'playback';
+  } catch {
+    /* desteklenmiyor */
+  }
+}
+
+function sesGelmedi() {
+  import('./ekranlar/ortak.js').then(({ bildir }) => bildir('Ses çıkmadı: telefonun sesi açık mı, sessiz mod kapalı mı? Bir daha dene.')).catch(() => {});
 }
 
 let calan = null;
+// iOS'ta okuma dokunuşun içinde, beklemeden başlamalı: önce bekleyip (await) sonra speak() çağrılırsa ses çıkmaz
 function oku(s, k, dugme) {
   if (calan) {
     calan.durdur();
@@ -57,28 +64,39 @@ function oku(s, k, dugme) {
     if (calan && calan.dugme === dugme) calan = null;
   };
   dugme.classList.add('caliyor');
+  oynatmaOturumu();
   if (k.ses) {
     const a = new Audio(`gorseller/ses/${encodeURIComponent(s.id)}.mp3`);
     a.addEventListener('ended', bitince);
-    a.addEventListener('error', bitince);
-    a.play().catch(bitince);
+    a.addEventListener('error', () => (bitince(), sesGelmedi()));
+    a.play().catch(() => (bitince(), sesGelmedi()));
     calan = { dugme, durdur: () => (a.pause(), bitince()) };
     return;
   }
   const sz = sentez();
   if (!sz) return bitince();
-  sesleriAl().then((sesler) => {
-    const u = new SpeechSynthesisUtterance(okunacakAd(s.ad));
-    u.lang = k.dil;
-    const v = sesSec(sesler, k.dil);
-    if (v) u.voice = v;
-    u.rate = 0.85;
-    u.onend = bitince;
-    u.onerror = bitince;
-    sz.cancel();
-    sz.speak(u);
-    calan = { dugme, durdur: () => (sz.cancel(), bitince()) };
-  });
+  const u = new SpeechSynthesisUtterance(okunacakAd(s.ad));
+  u.lang = k.dil;
+  const v = sesSec(sz.getVoices(), k.dil);
+  if (v) u.voice = v;
+  u.rate = 0.85;
+  let basladi = false;
+  u.onstart = () => (basladi = true);
+  u.onend = bitince;
+  u.onerror = bitince;
+  // cancel() hemen ardından speak() iOS'ta okumayı yutabilir: yalnız gerçekten okuyorsa durdur
+  if (sz.speaking || sz.pending) sz.cancel();
+  sz.speak(u);
+  if (sz.paused) sz.resume();
+  // u calan'da tutulur: Safari başlamadan çöpe atılan sözceyi okumaz
+  calan = { dugme, u, durdur: () => (sz.cancel(), bitince()) };
+  setTimeout(() => {
+    if (!basladi && calan && calan.u === u) {
+      sz.cancel();
+      bitince();
+      sesGelmedi();
+    }
+  }, 3000);
 }
 
 const HOPARLOR =
@@ -90,6 +108,7 @@ export async function kunyeGoster(s, kutu) {
   const k = (await kunyeVeri())[s.id];
   if (!k || !kutu.isConnected || kutu.querySelector('.isim-ek')) return;
   const okunur = !!k.ses || (!!k.dil && !!sentez());
+  if (!k.ses && okunur) sesleriIsit();
   if (!k.portre && !okunur) return;
   // portre adın arkasında, sağ üstte büyük ve silik (İş 49b: Emre'nin seçimi); ad ve imza üstünde durur
   if (k.portre) {

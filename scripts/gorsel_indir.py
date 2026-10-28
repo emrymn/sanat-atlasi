@@ -16,7 +16,7 @@ from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
 HEDEF = KOK / 'gorseller'
-UA = 'SanatAtlasi/1.0 (personal study app; emreyaman1024@gmail.com)'
+UA = 'SanatAtlasi/1.0 (personal study app; emreyaman0585@gmail.com)'
 HAVUZ = 12
 BEKLE = 1.5
 

@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.46.0';
+const SURUM = '1.46.1';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -156,7 +156,10 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(istek.url);
   // Palet çıkarmak için CORS ile istenen görseller önbellekteki opak yanıtı kullanamaz: doğrudan ağa gider
   if (istek.mode === 'cors' && istek.destination === 'image' && url.origin !== self.location.origin) return;
-  if (url.origin === self.location.origin && url.pathname.includes('/gorseller/')) {
+  if (url.origin === self.location.origin && url.pathname.includes('/gorseller/ses/')) {
+    // okunuş kayıtları: Safari sesi parça parça (Range) ister, 206 yanıtı bekler
+    e.respondWith(sesYaniti(e));
+  } else if (url.origin === self.location.origin && url.pathname.includes('/gorseller/')) {
     // uygulamayla yayınlanan görsel kopyaları: sürümden bağımsız görsel önbelleği (LRU)
     e.respondWith(resim(e));
   } else if (url.origin === self.location.origin) {
@@ -283,6 +286,47 @@ async function sakla(c, url, y, boyut) {
   }
   await metaYaz(url, { boyut, erisim: Date.now(), zaman: Date.now() });
   await budama().catch(() => {});
+}
+
+// Sesler görsel önbelleğinde bütün dosya olarak durur; Range isteğine o parçayla (206) yanıt verilir.
+// Bütün dosyayı 200 ile vermek iOS'ta sesin hiç çalmamasına yol açar.
+async function sesYaniti(e) {
+  const anahtar = e.request.url.split('#')[0];
+  const c = await caches.open(RESIM);
+  let y = await c.match(anahtar);
+  if (!y) {
+    const ag = await fetch(anahtar);
+    if (!ag.ok) return ag;
+    y = ag.clone();
+    const boyut = parseInt(ag.headers.get('content-length') || '', 10) || 30000;
+    e.waitUntil(sakla(c, anahtar, ag, boyut));
+  }
+  return parcala(y, e.request.headers.get('range'));
+}
+
+async function parcala(y, aralik) {
+  const m = /^bytes=(\d*)-(\d*)$/.exec((aralik || '').trim());
+  if (!m) return y;
+  const govde = await y.blob();
+  const top = govde.size;
+  let bas, son;
+  if (m[1] === '') {
+    bas = Math.max(0, top - parseInt(m[2] || '0', 10));
+    son = top - 1;
+  } else {
+    bas = parseInt(m[1], 10);
+    son = m[2] === '' ? top - 1 : Math.min(parseInt(m[2], 10), top - 1);
+  }
+  if (bas >= top || bas > son) return new Response(null, { status: 416, headers: { 'Content-Range': `bytes */${top}` } });
+  return new Response(govde.slice(bas, son + 1), {
+    status: 206,
+    headers: {
+      'Content-Type': y.headers.get('content-type') || 'audio/mpeg',
+      'Content-Range': `bytes ${bas}-${son}/${top}`,
+      'Content-Length': String(son - bas + 1),
+      'Accept-Ranges': 'bytes',
+    },
+  });
 }
 
 async function resim(e) {
