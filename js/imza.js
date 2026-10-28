@@ -61,9 +61,9 @@ async function bul(s) {
 // İmza görselini mürekkep maskesine çevirir: koyu mürekkep opak, kâğıt zemini (beyaz ya da saydam) tamamen saydam;
 // boş kenarlar kırpılır. Maskeyi temanın rengi boyar, böylece imza her temada yalnız mürekkep olarak görünür.
 // Görsel CORS'a kapalıysa (tuval kirlenir) null: o zaman düz görsel gösterilir.
-export function murekkepMaskesi(img, yukseklik = 120) {
+export function murekkepMaskesi(img, yukseklik = 240) {
   try {
-    const olcek = Math.min(1, (yukseklik * 4) / Math.max(1, img.naturalHeight));
+    const olcek = Math.min(1, (yukseklik * 2) / Math.max(1, img.naturalHeight));
     const w = Math.max(1, Math.round(img.naturalWidth * olcek));
     const h = Math.max(1, Math.round(img.naturalHeight * olcek));
     const t = document.createElement('canvas');
@@ -79,7 +79,9 @@ export function murekkepMaskesi(img, yukseklik = 120) {
     let y1 = -1;
     for (let i = 0; i < p.length; i += 4) {
       const koyu = (1 - (0.299 * p[i] + 0.587 * p[i + 1] + 0.114 * p[i + 2]) / 255) * (p[i + 3] / 255);
-      const a = Math.max(0, Math.min(1, (koyu - 0.18) / 0.4)); // kâğıt lekesi ve gölge kaybolur, mürekkep tam opak
+      // kâğıt lekesi ve gölge kaybolur, mürekkep opak; arası yumuşak geçiş (kenar tırtıklanmaz)
+      const t = Math.max(0, Math.min(1, (koyu - 0.12) / 0.5));
+      const a = t * t * (3 - 2 * t);
       p[i] = p[i + 1] = p[i + 2] = 0;
       p[i + 3] = Math.round(a * 255);
       if (a > 0.1) {
@@ -121,31 +123,35 @@ function yukle(adres, cors = true) {
   });
 }
 
-// İmzayı isim bloğunda adın altına koyar (yoksa ya da yüklenemezse hiçbir şey görünmez)
+// İmzayı isim bloğunda adın altına koyar. Önce uygulamayla gelen hazır maske (gorseller/imza/<id>.png,
+// scripts/imza_maske.py üretir: ağa ve Wikimedia'nın hız sınırına bağlı değil); yoksa canlı görselden tuvalde maske.
+// Maske yapılamazsa hiçbir şey gösterilmez: imza her zaman yalnız altın mürekkep olarak görünür, beyaz kâğıt yok.
 export async function imzaGoster(s, kutu) {
   if (!kutu) return;
   const dosya = await sanatciImzasi(s);
   if (!dosya || !kutu.isConnected || kutu.querySelector('.imza')) return;
-  // Sıra: küçük resim (CORS'lu, maske yapılabilir) → Wikimedia hız sınırına (429) takıldıysa birkaç saniye sonra
-  // bir kez daha → küçük bir dosyanın 500 px'lik küçük resmi üretilemiyorsa özgün boyut (Special:FilePath; Commons'un
-  // yönlendirmesi CORS başlığı vermediği için düz görsel olarak) → yine olmazsa hiç
-  const kucuk = commonsKucuk(dosya, 400);
-  const img = await yukle(kucuk)
-    .catch(() => new Promise((r) => setTimeout(r, 4000)).then(() => yukle(kucuk)))
-    .catch(() => yukle(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(dosya)}?width=400`, false))
-    .catch(() => null);
-  if (!img || !kutu.isConnected || kutu.querySelector('.imza')) return;
-  const m = murekkepMaskesi(img);
+  let m = null;
+  const yerel = `gorseller/imza/${encodeURIComponent(s.id)}.png`;
+  const hazir = await yukle(yerel, false).catch(() => null);
+  // tam adres: CSS değişkenindeki göreli url() stil dosyasına (css/) göre çözülürdü
+  if (hazir) m = { adres: new URL(yerel, document.baseURI).href, en: hazir.naturalWidth, boy: hazir.naturalHeight };
+  else {
+    // küçük resim (CORS'lu); Wikimedia hız sınırına (429) takıldıysa birkaç saniye sonra bir kez daha
+    const kucuk = commonsKucuk(dosya, 960); // büyük kaynak: maske 3 kat ekranda keskin kalsın
+    const img = await yukle(kucuk)
+      .catch(() => new Promise((r) => setTimeout(r, 4000)).then(() => yukle(kucuk)))
+      .catch(() => null);
+    m = img && murekkepMaskesi(img);
+  }
+  if (!m || !kutu.isConnected || kutu.querySelector('.imza')) return;
   const el = document.createElement('span');
-  el.className = m ? 'imza' : 'imza duz';
+  el.className = 'imza';
   el.setAttribute('role', 'img');
   el.setAttribute('aria-label', `${s.ad} imzası`);
   el.dataset.test = 'imza';
   el.dataset.dosya = dosya;
-  if (m) {
-    el.style.aspectRatio = `${m.en} / ${m.boy}`;
-    el.style.setProperty('--imza', `url("${m.adres}")`);
-  } else el.append(img);
+  el.style.aspectRatio = `${m.en} / ${m.boy}`;
+  el.style.setProperty('--imza', `url("${m.adres}")`);
   const ad = kutu.querySelector('.isim');
   if (ad) ad.after(el);
   else kutu.prepend(el);

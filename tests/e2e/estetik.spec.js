@@ -1,5 +1,6 @@
 // İş 48: ressamın imzası, akımın harfi, dönemin çerçevesi
 import { test, expect } from '@playwright/test';
+import { readFileSync } from 'node:fs';
 import { agiHazirla } from './ortak.js';
 
 test('imza: doğrulanmış QID’in kaydında imza varsa sanatçı sayfasında adın altında; yoksa hiçbir şey', async ({ page, context }) => {
@@ -40,6 +41,22 @@ test('imza: önceden hesaplanmış data/imzalar.json varsa Wikidata’ya sorulma
   await page.goto('./#/sanatci/giotto-di-bondone');
   await expect(page.locator('[data-test="imza"]')).toHaveAttribute('data-dosya', 'Dosyadan imza.svg');
   expect(soruldu).toBe(0);
+});
+
+test('imza: uygulamayla gelen hazır maske kullanılır (Wikimedia’ya gidilmez), altın renginde', async ({ page, context }) => {
+  await agiHazirla(context);
+  let wikimedia = 0;
+  page.on('request', (r) => {
+    if (/Signatur/.test(decodeURIComponent(r.url()))) wikimedia++;
+  });
+  // scripts/imza_maske.py'nin ürettiği dosya yerine fikstür maske (yalnız saydamlık)
+  await context.route(/\/gorseller\/imza\/albrecht-durer\.png$/, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/imza.png', import.meta.url)) }));
+  await page.goto('./#/sanatci/albrecht-durer');
+  const imza = page.locator('[data-test="imza"]');
+  await expect(imza).toBeVisible();
+  expect(await imza.evaluate((e) => e.style.getPropertyValue('--imza'))).toContain('gorseller/imza/albrecht-durer.png');
+  expect(await imza.evaluate((e) => getComputedStyle(e).backgroundImage)).toContain('linear-gradient');
+  expect(wikimedia).toBe(0);
 });
 
 test('harf: akım sayfasının başlığı ve haritadaki dönem adları dönemin yazı tipiyle', async ({ page, context }) => {

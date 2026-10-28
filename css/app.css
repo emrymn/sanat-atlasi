@@ -12706,37 +12706,32 @@ a.harita-seviye:active {
   }
 }
 
-/* Ressamın gerçek imzası (İş 48; js/imza.js): Wikidata'daki imza görseli adın altında. Görsel mürekkep maskesine
-   çevrilir (kâğıt zemini saydam), maskeyi temanın vurgu rengi boyar: her temada yalnız mürekkep görünür. Soldan sağa
-   yazılır gibi belirir. Maske yapılamazsa (CORS) düz görsel, "multiply" ile. */
+/* Ressamın gerçek imzası (İş 48; js/imza.js): Wikidata'daki imza görseli adın altında. Görsel mürekkep maskesi
+   (kâğıt zemini saydam); maskeyi yaldız boyar, ışık mürekkebin üstünden bir kez kayar: her temada aynı altın imza.
+   Soldan sağa yazılır gibi belirir. Açık temalarda yaldız koyulaşır (açık zeminde okunsun). */
 .imza {
   display: block;
   height: 52px;
   max-width: 72%;
   margin: 4px 0 8px;
-  background: var(--vurgu-acik, var(--ink));
+  background: linear-gradient(100deg, #a8782a 0%, #f6dc8e 22%, #c9973a 42%, #fff1c4 50%, #c9973a 58%, #e8c46e 78%, #9a6b1f 100%) 0 0 / 260% 100%;
   -webkit-mask: var(--imza) left center / contain no-repeat;
   mask: var(--imza) left center / contain no-repeat;
-  opacity: 0.92;
-  animation: imza-gel 1.4s ease-out both;
+  animation:
+    imza-gel 1.4s ease-out both,
+    imza-isil 3.2s 1.2s ease-in-out both;
 }
-.imza.duz {
-  /* maske yapılamadı (görsel CORS'suz geldi): imza, duvara iliştirilmiş küçük bir kâğıt parçası gibi */
-  width: auto;
-  height: 46px;
-  padding: 4px 8px;
-  border-radius: 2px;
-  background: #f4efe6;
-  -webkit-mask: none;
-  mask: none;
-  box-shadow: 0 4px 10px -6px rgba(0, 0, 0, 0.6);
-  display: inline-block;
+:root[data-tema='sepya'] .imza,
+:root[data-tema='acik'] .imza {
+  background-image: linear-gradient(100deg, #6e4a14 0%, #a8782a 22%, #8a6420 42%, #d4a64a 50%, #8a6420 58%, #a8782a 78%, #5a3c10 100%);
 }
-.imza.duz img {
-  display: block;
-  height: 100%;
-  width: auto;
-  max-width: 100%;
+@keyframes imza-isil {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
 }
 @keyframes imza-gel {
   from {
@@ -12750,6 +12745,7 @@ a.harita-seviye:active {
 @media (prefers-reduced-motion: reduce) {
   .imza {
     animation: none;
+    background-position: 0 0;
   }
 }
 

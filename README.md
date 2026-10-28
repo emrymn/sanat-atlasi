@@ -69,6 +69,20 @@ Elle verilen görsel kararları (`data/gorsel_kararlari.json`) önbellek üretil
 
 Vekil sunucu arkasında `onbellek.mjs` için: `NODE_USE_ENV_PROXY=1 node scripts/onbellek.mjs`. Yalnızca bazı sanatçıları yenilemek için id'lerini argüman olarak ver; tümünü baştan almak için `YENIDEN=1`.
 
+### Ressamların imzaları
+
+Sanatçı sayfasında adın altındaki altın imza, Wikidata'daki imza görselinden (P109) yapılır.
+`data/imzalar.json` hangi ressamın imzası olduğunu söyler (`node scripts/imzalar.mjs` üretir), `gorseller/imza/<id>.png`
+de uygulamayla gelen hazır mürekkep maskeleridir. Maskeleri üretmek ya da yenilemek için Mac'te depo kökünde:
+
+```
+pip3 install pillow
+python3 scripts/imza_maske.py        # olmayanları indirir (istekler arası bekleme var, birkaç dakika)
+git add gorseller/imza && git commit -m "İmza maskeleri" && git push
+```
+
+Maskesi olmayan ressamın imzası, sayfası açılınca canlı Wikimedia'dan yapılmaya çalışılır; olmazsa imza görünmez.
+
 **WikiArt (yedek görsel kaynağı, anahtar ister):** az eserli sanatçılar ve 20. yüzyıl akımları için `scripts/kaynaklar/wikiart.mjs` çalışır. Anahtarlar yalnızca ortam değişkeninden okunur; dosyaya yazma:
 
 ```sh
