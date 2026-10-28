@@ -490,8 +490,13 @@ export function gununEseri(eserler) {
   return enBilinen(dikey) || enBilinen(eserler);
 }
 
+// Günün sanatçısı: her gün hesapla seçilir; ana sayfadaki "başka sanatçı" düğmesiyle o gün için değiştirilebilir
+// (ilerleme.gununDegisim = { tarih, id }; ertesi gün kendiliğinden hesaplanana döner)
 export function gununId() {
-  return gununSanatcisi(gununHavuzu(), bugun());
+  const havuz = gununHavuzu();
+  const o = d.ilerleme && d.ilerleme.gununDegisim;
+  if (o && o.tarih === bugun() && havuz.includes(o.id)) return o.id;
+  return gununSanatcisi(havuz, bugun());
 }
 
 // Sanatçıyı temsil eden eser: uygun görseli olanlar arasında Wikidata site bağlantısı en çok olan.

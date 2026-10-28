@@ -5,7 +5,9 @@ import { gorselUrl, secilenGorsel } from '../gorsel.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
-import { acikListe, bugun, kotuler, d, gununRengi, ciz, ust, TEMA_AD, TAHMINI_GORSEL_KB, ekran, kaydet, temaUygula } from './ortak.js';
+import { acikListe, bugun, kotuler, d, gununRengi, ciz, ust, TEMA_AD, TAHMINI_GORSEL_KB, ekran, kaydet, temaUygula, gununId, gununHavuzu } from './ortak.js';
+import { baskaSanatci } from '../gunun.js';
+import { bilinenAd } from '../adlar.js';
 import { yedekTarihiYaz } from './bugun.js';
 import { yarimSil } from './pekistir.js';
 import { SURUM } from '../surum.js';
@@ -85,6 +87,11 @@ export function ayarlarSayfasi() {
         <input class="anahtar" type="checkbox" role="switch" data-ayar-egim ${a.egim !== false ? 'checked' : ''} ${egimVar() ? '' : 'disabled'} aria-label="Telefonu eğince tablo oynasın"></label>
         <button class="dugme ince" type="button" data-egim-izin data-test="egim-izin" hidden>${ikon('hareket', 18, 1.6)} Hareket iznini ver</button>
         <p class="mesaj" id="egim-mesaj" aria-live="polite"></p></div>
+      <div class="ayar"><b>Günün sanatçısı</b>
+        <p>Bugün: <span data-gunun-ad data-test="gunun-ad">${kacis(gununAdi())}</span>. Başka biriyle değiştirebilirsin; gün boyunca o kalır, yarın yeni sanatçı kendiliğinden gelir.</p>
+        <button class="dugme ince" type="button" data-gunun-degistir data-test="gunun-degistir">Başka bir sanatçı getir</button>
+        <p class="mesaj" id="gunun-mesaj" aria-live="polite"></p>
+      </div>
       <div class="ayar"><b>Görselleri çevrimdışı indir</b>
         <p id="indir-bilgi">Açık sanatçıların pekiştirme görselleri (sanatçı başına en fazla ${TEST_HAVUZU}) hesaplanıyor…</p>
         <button class="dugme" type="button" data-indir>İndir</button>
@@ -191,6 +198,17 @@ export function olaylariBagla() {
       a.gunlukKart = Math.min(100, Math.max(5, a.gunlukKart + Number(kb.dataset.kart)));
       ekran.querySelector('[data-test="gunluk-kart"]').textContent = a.gunlukKart;
       kaydet();
+      return;
+    }
+    if (e.target.closest('[data-gunun-degistir]')) {
+      // o gün için günün sanatçısı (ilerleme.gununDegisim; js/ekranlar/ortak.js gununId)
+      d.ilerleme.gununDegisim = { tarih: bugun(), id: baskaSanatci(gununHavuzu(), gununId(), Math.random) };
+      kaydet();
+      d.perdeAcildi = false; // ana sayfaya dönünce sahne perdeyle açılır
+      ekran.querySelector('[data-gunun-ad]').textContent = gununAdi();
+      const m = document.getElementById('gunun-mesaj');
+      m.className = 'mesaj tamam';
+      m.innerHTML = `Ana sayfada bugün ${kacis(gununAdi())}. <a href="#/">Ana sayfaya git</a>`;
       return;
     }
     if (e.target.closest('[data-indir]')) return gorselleriIndir();
@@ -335,3 +353,9 @@ export function olaylariBagla() {
     }
   });
 }
+
+function gununAdi() {
+  const s = d.harita.get(gununId());
+  return s ? bilinenAd(s.ad, d.kisaAdlar[s.id]) : '—';
+}
+
