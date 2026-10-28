@@ -12831,9 +12831,35 @@ a.harita-seviye:active {
 .isim-ek {
   display: flex;
   align-items: center;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 8px 12px;
   margin: 8px 0 2px;
   animation: isim-ek-gel 0.6s ease-out both;
+}
+/* evrensel okunuş: IPA (İş 49e) */
+.isim-ek .ipa {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2px 8px;
+  min-width: 0;
+  color: var(--ink);
+}
+.isim-ek .ipa-etiket {
+  font: 600 10px/1 var(--sans);
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  color: var(--vurgu-acik, var(--vurgu));
+  opacity: 0.85;
+}
+.isim-ek .ipa-yazi {
+  /* IPA işaretleri (ʁ ɐ ɣ ʋ…) için geniş kapsamlı yazı tipleri önce */
+  font: 400 17px/1.3 'Noto Serif', 'Times New Roman', 'Iowan Old Style', Georgia, serif;
+  overflow-wrap: anywhere;
+}
+.isim-ek .ipa-dil {
+  font: 500 12px/1 var(--sans);
+  opacity: 0.7;
 }
 .isim-ek .dinle {
   display: inline-flex;

@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.46.3';
+const SURUM = '1.47.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -162,6 +162,9 @@ self.addEventListener('fetch', (e) => {
   } else if (url.origin === self.location.origin && url.pathname.includes('/gorseller/')) {
     // uygulamayla yayınlanan görsel kopyaları: sürümden bağımsız görsel önbelleği (LRU)
     e.respondWith(resim(e));
+  } else if (url.origin === self.location.origin && url.pathname.endsWith('/data/kunye.json')) {
+    // künye (portre, okunuş, IPA) Emre'nin Mac'inde güncellenir: sürüm beklemeden gelsin diye önce ağ, yoksa önbellek
+    e.respondWith(onceAg(istek, KABUK));
   } else if (url.origin === self.location.origin) {
     e.respondWith(kabuk(istek));
   } else if (url.hostname === 'commons.wikimedia.org' && url.pathname.includes('Special:FilePath')) {
