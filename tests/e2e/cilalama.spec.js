@@ -64,3 +64,44 @@ test('Pekiştir · Hatalarım boşken: başlık tek satır ("Pekiştir" üstte e
   await page.getByRole('link', { name: 'Karışık tur başlat' }).click();
   await expect(page.locator('[data-test="sanatci-secenekleri"] button')).toHaveCount(4);
 });
+
+// İş 51: geri dönünce ve sekmeye dönünce kaydırma yeri
+const y = (page) => page.evaluate(() => Math.round(window.scrollY));
+const gorunenAkimLinki = (page) =>
+  page.evaluate(() =>
+    [...document.querySelectorAll('a[href^="#/akim/"]')]
+      .find((a) => {
+        const t = a.getBoundingClientRect().top;
+        return t > 100 && t < innerHeight - 140;
+      })
+      .click(),
+  );
+
+test('geri düğmesiyle dönünce liste kalınan yerde açılır; ileri gidişte sayfa en baştan', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/gozat');
+  await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
+  await page.evaluate(() => window.scrollTo(0, 900));
+  await expect.poll(() => y(page)).toBe(900);
+  await gorunenAkimLinki(page);
+  await expect(page).toHaveURL(/#\/akim\//);
+  await expect.poll(() => y(page)).toBe(0);
+  await page.locator('.ust .geri, .geri').first().click();
+  await expect(page).toHaveURL(/#\/gozat$/);
+  await expect.poll(() => y(page)).toBe(900);
+});
+
+test('sekme çubuğu: başka sekmeden dönünce kalınan yer; açık sekmeye yeniden dokununca en başa', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/gozat');
+  await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
+  await page.evaluate(() => window.scrollTo(0, 1200));
+  await expect.poll(() => y(page)).toBe(1200);
+  await page.locator('#sekmeler a[data-sekme="ilerleme"]').click();
+  await expect(page).toHaveURL(/#\/ilerleme$/);
+  await page.locator('#sekmeler a[data-sekme="gozat"]').click();
+  await expect(page).toHaveURL(/#\/gozat$/);
+  await expect.poll(() => y(page)).toBe(1200);
+  await page.locator('#sekmeler a[data-sekme="gozat"]').click();
+  await expect.poll(() => y(page)).toBe(0);
+});

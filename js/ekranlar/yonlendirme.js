@@ -1,5 +1,5 @@
 // Adres (#/…) → ekran eşlemesi.
-import { d, sekmeleriCiz, hataGoster, cizimBaslat } from './ortak.js';
+import { d, sekmeleriCiz, hataGoster, cizimBaslat, geriDonusBildir, sekmedenMi } from './ortak.js';
 import { anaSayfa, gununSayfasi } from './bugun.js';
 import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuSayfasi, basyapitSayfasi } from './gozat.js';
 import { pekistirMenusu, pekistir, devamEt } from './pekistir.js';
@@ -46,8 +46,11 @@ export function yonlendir() {
   const h = location.hash || '#/';
   cizimBaslat();
   // geri düğmesi için basit yığın
-  if (d.yigin.length > 1 && d.yigin[d.yigin.length - 2] === h) d.yigin.pop();
+  const geriMi = d.yigin.length > 1 && d.yigin[d.yigin.length - 2] === h;
+  if (geriMi) d.yigin.pop();
   else if (d.yigin[d.yigin.length - 1] !== h) d.yigin.push(h);
+  // geri dönüşte ve sekme çubuğundan dönüşte ekran eski kaydırma yerine döner (İş 51); ileri gidişte en baştan
+  geriDonusBildir(sekmedenMi(h) || geriMi ? h : null);
   for (const [desen, fn, sekme] of rotalar) {
     const m = desen.exec(h);
     if (m) {
