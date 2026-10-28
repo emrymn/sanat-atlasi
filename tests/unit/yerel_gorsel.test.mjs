@@ -17,3 +17,26 @@ test('yerel kopya varsa uygulamanın kendi adresi, yoksa kaynak adresi', () => {
   yerelGorselleriAyarla(null);
   assert.match(gorselUrl(c, 800), /^https:\/\/upload\.wikimedia\.org\//);
 });
+
+test('İş 58: Cloudflare R2 — en büyük kopya yalnız listede olana; 1280\'likler R2\'de yalnız buyuk: true iken; küçük ve palet hep yerel', async () => {
+  const { uzakGorselleriAyarla, devasaUrl } = await import('../../js/gorsel.js');
+  const c = { k: 'commons', d: 'Örnek dosya.jpg' };
+  const r = 'https://pub-ornek.r2.dev';
+  yerelGorselleriAyarla({ [yerelAnahtar(c)]: 'abc123' });
+  uzakGorselleriAyarla(null);
+  assert.equal(devasaUrl(c), '');
+  uzakGorselleriAyarla({ adres: r + '/', buyuk: false, devasa: ['abc123'] });
+  assert.equal(devasaUrl(c), `${r}/d/abc123.jpg`);
+  assert.equal(gorselUrl(c, 800), 'gorseller/b/abc123.jpg');
+  uzakGorselleriAyarla({ adres: r, buyuk: true, devasa: [] });
+  assert.equal(devasaUrl(c), '');
+  assert.equal(gorselUrl(c, 800), `${r}/b/abc123.jpg`);
+  assert.equal(gorselUrl(c, 400), 'gorseller/k/abc123.jpg');
+  assert.equal(paletUrl(c), 'gorseller/k/abc123.jpg');
+  // https olmayan ya da bozuk adres yok sayılır
+  uzakGorselleriAyarla({ adres: 'http://kotu', buyuk: true, devasa: ['abc123'] });
+  assert.equal(devasaUrl(c), '');
+  assert.equal(gorselUrl(c, 800), 'gorseller/b/abc123.jpg');
+  uzakGorselleriAyarla(null);
+  yerelGorselleriAyarla(null);
+});

@@ -1,5 +1,6 @@
 // İş 50: kullanım kolaylığı ve cilalama — dokunma alanları en az 44 pt, harita durakları örtülmez, boş turdan çıkış
 import { test, expect } from '@playwright/test';
+import { readFileSync } from 'node:fs';
 import { agiHazirla } from './ortak.js';
 
 // Elemanın ortasından yukarı/aşağı yürüyerek gerçekten o elemanı yakalayan dikey boy (görünmez genişletme dahil)
@@ -269,4 +270,27 @@ test('görüntüleyici kapanınca sayfa kaldığı yerde: X ile ve geri hareketi
   await page.goBack();
   await expect(page.locator('.gor')).toHaveCount(0);
   await expect.poll(() => y(page)).toBe(once);
+});
+
+// İş 58: görüntüleyici önce 1280'lik kopyayı gösterir, en büyük kopya (Cloudflare R2) gelince yerine geçer
+test('görüntüleyici: en büyük kopya R2\'den arkada iner ve yerine geçer; yalnız açılan eser için', async ({ page, context }) => {
+  await agiHazirla(context);
+  const yerel = JSON.parse(readFileSync(new URL('../../data/yerel_gorseller.json', import.meta.url), 'utf8')).gorseller;
+  const adlar = Object.values(yerel);
+  await context.route(/\/data\/gorsel_kaynagi\.json$/, (r) =>
+    r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar }) }),
+  );
+  const istenen = [];
+  await context.route(/pub-deneme\.r2\.dev\/d\//, async (r) => {
+    istenen.push(r.request().url());
+    await new Promise((x) => setTimeout(x, 300));
+    r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)), headers: { 'access-control-allow-origin': '*' } });
+  });
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await page.locator('.eser').first().click();
+  const resim = page.locator('.gor-resim');
+  await expect(resim).toHaveAttribute('src', /pub-deneme\.r2\.dev\/d\/[0-9a-f]+\.jpg$/);
+  await expect(resim).toHaveAttribute('data-test', 'devasa');
+  // yalnız açılan eserin büyük kopyası; komşularınki değil (aynı adres önbellek atlanırsa iki kez istenebilir)
+  expect(new Set(istenen).size).toBe(1);
 });

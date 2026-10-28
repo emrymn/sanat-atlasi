@@ -58,6 +58,19 @@ export function gorselOrani(g) {
   const ad = g && yerel[yerelAnahtar(g)];
   return ad ? oranlar[ad] : undefined;
 }
+// İş 58: Cloudflare R2'deki kopyalar (data/gorsel_kaynagi.json; scripts/r2_yukle.py). adres: kovanın herkese açık
+// adresi; buyuk: 1280 px kopyaların hepsi orada (GitHub Pages'in 1 GB sınırı için depodan çıkarılabilsin);
+// devasa: en büyük (4096 px, en yüksek kalite) kopyası olanların adları. Dosya yoksa her şey eskisi gibi depodan.
+let uzak = { adres: '', buyuk: false, devasa: new Set() };
+export function uzakGorselleriAyarla(k) {
+  const adres = k && typeof k.adres === 'string' && /^https:\/\//.test(k.adres) ? k.adres.replace(/\/+$/, '') : '';
+  uzak = { adres, buyuk: !!(adres && k.buyuk === true), devasa: new Set(adres && Array.isArray(k.devasa) ? k.devasa : []) };
+}
+// En büyük kopyanın adresi (görüntüleyici); yoksa ''
+export function devasaUrl(g) {
+  const ad = g && yerel[yerelAnahtar(g)];
+  return ad && uzak.devasa.has(ad) ? `${uzak.adres}/d/${ad}.jpg` : '';
+}
 export function yerelAnahtar(g) {
   return `${g.k}:${g.d || g.i || g.u || ''}`;
 }
@@ -66,6 +79,7 @@ export function yerelUrl(g, genislik = 800) {
   const ad = a && yerel[a];
   if (!ad) return '';
   if (genislik <= 400) return `gorseller/k/${ad}.jpg`;
+  if (uzak.buyuk) return `${uzak.adres}/b/${ad}.jpg`;
   // 1280 px kopya (buyuk listesinde); eski biçimdeki 800'lük kopya yalnızca listede yoksa
   return buyukYerel.has(a) || !buyukYerel.size ? `gorseller/b/${ad}.jpg` : `gorseller/${ad}.jpg`;
 }

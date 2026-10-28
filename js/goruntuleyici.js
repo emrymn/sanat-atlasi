@@ -1,7 +1,7 @@
 // Tam ekran eser görüntüleyici: iki parmakla yakınlaştırma, kaydırma, eserler arası geçiş.
 import { kacis, notTemizle } from './yardimci.js';
 import { ikon } from './tasarim.js';
-import { gorselUrl, gorselYedek,gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle } from './gorsel.js';
+import { gorselUrl, gorselYedek, gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle, devasaUrl } from './gorsel.js';
 import { eserKonusu } from './ikonografi.js';
 import { NEDENLER } from './bildirim.js';
 
@@ -113,9 +113,28 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     if (!gorsel) mesaj.textContent = '';
     // Tek <img> yeniden kullanılır: önceki eserin "kirik"/"yuklendi" işareti sonrakine geçmesin
     resim.classList.remove('kirik', 'yuklendi');
+    delete resim.dataset.devasa;
+    delete resim.dataset.test;
     const yedek = gorselYedek(g);
     let yedekDenendi = false;
-    resim.onload = () => (yukleniyor.hidden = true);
+    // İş 58: önce 1280 px kopya hemen görünür; en büyük kopya (4096 px) arkada iner, gelince yerine geçer
+    // (oran aynı, ekrandaki boy ve yakınlaştırma değişmez). Komşular için önceden indirilmez: yalnız açılan eser.
+    const devasa = devasaUrl(g);
+    const bu = sira;
+    resim.onload = () => {
+      yukleniyor.hidden = true;
+      if (!devasa || resim.src === devasa || resim.dataset.devasa === devasa) return;
+      resim.dataset.devasa = devasa;
+      const b = new Image();
+      b.decoding = 'async';
+      b.onload = () => {
+        if (sira === bu && !kapandi) {
+          resim.src = devasa;
+          resim.dataset.test = 'devasa';
+        }
+      };
+      b.src = devasa;
+    };
     resim.onerror = () => {
       // Birincil adres (ör. özgünden büyük küçük resim) açılmazsa bir kez yedek adres
       if (!yedekDenendi && yedek && resim.src !== yedek) {
