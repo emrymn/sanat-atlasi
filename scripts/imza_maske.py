@@ -1,0 +1,145 @@
+#!/usr/bin/env python3
+"""Ressamların imzalarını (data/imzalar.json, scripts/imzalar.mjs üretir) indirip mürekkep maskesine çevirir (İş 48).
+Çıktı: gorseller/imza/<sanatçı id>.png — yalnız saydamlık: mürekkep opak, kâğıt zemini saydam, boş kenarlar kırpılmış,
+240 px boy (iPhone'un 3 kat ekranında 52 pt boy = 156 piksel: büyütülmez, piksel piksel görünmez), kenarlar yumuşak.
+Uygulama bu maskeyi altınla boyar; imza her temada aynı (Klimt'inki gibi) görünür ve Wikimedia'ya, hız sınırına (429)
+ya da internete bağlı kalmaz.
+
+Çalıştır (depo kökünde; Pillow gerekir: pip3 install pillow):
+  python3 scripts/imza_maske.py          # olmayanlar
+  python3 scripts/imza_maske.py --hepsi  # hepsini yeniden
+  python3 scripts/imza_maske.py --buyut  # indirmeden: var olan küçük maskeleri büyüt
+Hesap js/imza.js'teki murekkepMaskesi ile aynı (canlı yedek yol için)."""
+import io, json, sys, time, urllib.parse, urllib.request, urllib.error
+from pathlib import Path
+from PIL import Image, ImageFilter
+
+KOK = Path(__file__).resolve().parent.parent
+HEDEF = KOK / 'gorseller' / 'imza'
+UA = 'SanatAtlasi/1.0 (personal study app; emreyaman1024@gmail.com)'
+BOY = 240
+BEKLE = 1.5
+
+
+def indir(dosya):
+    # Wikimedia'nın standart büyük boyutu (önbellekte hazır; SVG'ler PNG olarak gelir): geniş imzalar da 240 px boya
+    # büyütülmeden iner
+    url = 'https://commons.wikimedia.org/wiki/Special:FilePath/' + urllib.parse.quote(dosya) + '?width=1920'
+    for deneme in range(5):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers={'User-Agent': UA}), timeout=60) as y:
+                return y.read()
+        except urllib.error.HTTPError as e:
+            if e.code == 429 or e.code >= 500:
+                time.sleep(int(e.headers.get('retry-after') or 0) or 5 * 2 ** deneme)
+                continue
+            raise
+    raise RuntimeError('indirilemedi: ' + dosya)
+
+
+def maske(veri):
+    im = Image.open(io.BytesIO(veri)).convert('RGBA')
+    w, h = im.size
+    p = im.tobytes()
+    a_kanal = bytearray(w * h)
+    for i in range(w * h):
+        r, g, b, a = p[4 * i], p[4 * i + 1], p[4 * i + 2], p[4 * i + 3]
+        koyu = (1 - (0.299 * r + 0.587 * g + 0.114 * b) / 255) * (a / 255)
+        t = max(0.0, min(1.0, (koyu - 0.12) / 0.5))
+        a_kanal[i] = round(t * t * (3 - 2 * t) * 255)  # yumuşak geçiş: mürekkep kenarı tırtıklanmaz
+    m = Image.frombytes('L', (w, h), bytes(a_kanal))
+    kutu = m.point(lambda v: 255 if v > 25 else 0).getbbox()
+    if not kutu:
+        return None
+    pay = max(2, round(h * 0.01))
+    kutu = (max(0, kutu[0] - pay), max(0, kutu[1] - pay), min(w, kutu[2] + pay), min(h, kutu[3] + pay))
+    m = m.crop(kutu)
+    if fotograf_mi(m):
+        return 'fotograf'
+    if m.height > BOY:
+        m = m.resize((max(1, round(m.width * BOY / m.height)), BOY), Image.LANCZOS)
+    else:
+        m = buyut(m)
+    # yalnız saydamlık taşıyan PNG (renk siyah; uygulama maskeyi altınla boyar)
+    return Image.merge('LA', (Image.new('L', m.size, 0), m))
+
+
+def fotograf_mi(a):
+    """Bazı "imza" dosyaları kâğıttaki mürekkep değil, tablonun üstündeki imzanın fotoğrafı (ör. van Eyck, Chardin, Corot):
+    maske altın bir dikdörtgen ya da leke olur. Mürekkep maskesi çoğunlukla boş ya da tam opaktır; yarıdan fazlası dolu ya da
+    %15'ten fazlası ara tondaysa fotoğraftır, kullanılmaz (js/imza.js'te aynı kural)."""
+    h = a.histogram()
+    n = sum(h) or 1
+    return sum(h[128:]) / n > 0.5 or sum(h[40:216]) / n > 0.15
+
+
+def buyut(m):
+    """Küçük özgün dosya (ör. Dürer'inki 38 px): BOY'a büyütülür, kenarlar çizim gibi pürüzsüzleşir. Büyütme bulanık
+    kenar verir; hafif bulanıklaştırıp yeniden keskinleştirmek (orta eşikte yumuşak geçiş) basamakları yok eder."""
+    if m.height >= BOY * 0.95:
+        return m
+    k = BOY / m.height
+    m = m.resize((max(1, round(m.width * k)), BOY), Image.BICUBIC)
+    m = m.filter(ImageFilter.GaussianBlur(k * 0.3))
+    def egri(v):
+        t = max(0.0, min(1.0, (v / 255 - 0.3) / 0.4))
+        return round(t * t * (3 - 2 * t) * 255)
+    return m.point([egri(v) for v in range(256)])
+
+
+def main():
+    yol_json = KOK / 'data' / 'imzalar.json'
+    veri = json.loads(yol_json.read_text())
+    imzalar = veri['imzalar']
+    atlanan = []
+    if '--buyut' in sys.argv:
+        # indirmeden: var olan maskeleri denetler (fotoğrafları çıkarır) ve küçükleri büyütüp pürüzsüzleştirir
+        for yol in sorted(HEDEF.glob('*.png')):
+            im = Image.open(yol)
+            a = im.getchannel('A')
+            if fotograf_mi(a):
+                yol.unlink()
+                atlanan.append(yol.stem)
+                continue
+            if im.height < BOY * 0.95:
+                a = buyut(a)
+                Image.merge('LA', (Image.new('L', a.size, 0), a)).save(yol, optimize=True)
+                print(yol.stem, im.size, '->', a.size)
+    else:
+        hepsi = '--hepsi' in sys.argv
+        HEDEF.mkdir(parents=True, exist_ok=True)
+        tamam = bos = 0
+        for sid, dosya in sorted(imzalar.items()):
+            if not dosya:
+                continue
+            yol = HEDEF / f'{sid}.png'
+            if yol.exists() and not hepsi:
+                tamam += 1
+                continue
+            try:
+                m = maske(indir(dosya))
+            except Exception as e:
+                print('HATA', sid, e)
+                continue
+            if m == 'fotograf':
+                atlanan.append(sid)
+                continue
+            if m is None:
+                print('mürekkep bulunamadı', sid, dosya)
+                bos += 1
+                continue
+            m.save(yol, optimize=True)
+            tamam += 1
+            print(sid, m.size)
+            time.sleep(BEKLE)
+        print(f'{tamam} imza maskesi hazır, {bos} boş')
+    if atlanan:
+        # fotoğraf çıkanlar imzasız sayılır: uygulama onlar için canlı da denemez
+        for sid in atlanan:
+            imzalar[sid] = None
+        yol_json.write_text(json.dumps(veri, ensure_ascii=False, indent=1) + '\n')
+        print('fotoğraf, mürekkep değil (imzasız sayıldı):', ', '.join(atlanan))
+
+
+if __name__ == '__main__':
+    main()

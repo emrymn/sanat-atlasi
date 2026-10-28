@@ -48,6 +48,7 @@ import { devamKarti } from './pekistir.js';
 import { SURUM } from '../surum.js';
 import { gosterilecekler, yenilikYazisi } from '../yenilikler.js';
 import { egimBaslat } from '../egim.js';
+import { imzaGoster } from '../imza.js';
 
 // ---------- sayımlar ----------
 function istatistik() {
@@ -200,6 +201,7 @@ export function anaSayfa() {
     egimBaslat(ekran.querySelector('[data-gunun-gorsel]'), d.ilerleme.ayarlar.egim !== false);
     gununKartGorseli(gs);
     sahneBiyografisi(gs);
+    imzaGoster(gs, ekran.querySelector('.sahne-isim')); // İş 48: tablonun üstünde adın altında imza
     anaGaleriDoldur(gs);
     eserKareleriDoldur();
   } else ekranRengi(null, null);
@@ -415,6 +417,7 @@ export async function gununSayfasi(id) {
     </article>`);
   const eserler = bilinirlikSirasi(await eserSozu);
   if (!guncelMi(no)) return;
+  imzaGoster(s, ekran.querySelector('.isim-blok')); // İş 48: varsa ressamın gerçek imzası
   const galeri = ekran.querySelector('[data-galeri]');
   if (!galeri) return;
   if (!eserler.length) {

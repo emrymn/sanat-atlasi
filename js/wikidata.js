@@ -24,7 +24,7 @@ export function yilAyikla(zaman) {
   return m[1] === '-' ? -y : y;
 }
 
-function gecerliIddialar(varlik, ozellik) {
+export function gecerliIddialar(varlik, ozellik) {
   const iddialar = (varlik.claims && varlik.claims[ozellik]) || [];
   return iddialar.filter((c) => c.rank !== 'deprecated' && c.mainsnak && c.mainsnak.snaktype === 'value' && c.mainsnak.datavalue);
 }

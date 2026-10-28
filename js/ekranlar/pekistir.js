@@ -85,6 +85,8 @@ import { akrabaMi } from '../celdirici.js';
 import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
 import { yonlendir } from './yonlendirme.js';
 import { sallanmaBaslat } from '../sallanma.js';
+import { desteBaslat } from '../deste.js';
+import { cerceveTipi } from '../cerceve.js';
 
 // ---------- İş 24 · harita bölümleri ----------
 const BOLUM_SV_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor', tanitim: 'Tanıtım', 'tanitim-orta': 'Orta tanıtımı' };
@@ -125,6 +127,7 @@ function turSahnesi(karisik) {
       <div class="pk-deste${deste.length ? '' : ' bos'}" aria-hidden="true">${deste
         .map((x, i) => `<span class="pk-kart" style="--i:${i}"><span class="kucuk-kare" data-kucuk="${kacis(x.s.id)}"></span></span>`)
         .join('')}</div>
+      <button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 16, 1.6)}Hareketi aç</button>
       <div class="pk-govde">
         ${etiket('Bugünkü tur', { vurgu: true })}
         <p class="pk-sayi"><b>${karisik.toplam}</b><span>kart<br>~${dk} dk</span></p>
@@ -223,7 +226,8 @@ export function pekistirMenusu() {
         : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
     }`,
   );
-  kucukKareleriDoldur();
+  kucukKareleriDoldur();  // telefonu çevirince bugünkü turun destesi yelpaze açılır (İş 47; Ayarlar'daki hareket seçimine uyar)
+  desteBaslat(ekran.querySelector('.pk-sahne'), d.ilerleme.ayarlar.egim !== false);
 }
 
 // Sıralama ve hedef değişince menü yerinde yeniden çizilir; kaydırma yeri korunur
@@ -1284,6 +1288,7 @@ function sergiyeEkle(o, dogruMu) {
     g: gorselUrl(g, 240),
     y: gorselYedek(g),
     sanatci: d.harita.get(k.id)?.ad || '',
+    akim: d.harita.get(k.id)?.akim || '',
     dogru: dogruMu,
   });
 }
@@ -1339,7 +1344,7 @@ function bolumOzeti(o) {
       const egim = e.dogru ? ((i * 37) % 5) - 2 : i % 2 ? 7 : -8;
       return `<li class="asi${e.dogru ? '' : ' egri'}" style="--i:${i};--egim:${egim * 0.5}deg;--ip:${10 + ((i * 13) % 4) * 6}px" aria-label="${kacis(e.sanatci)}: ${e.dogru ? 'tanıdın' : 'tanıyamadın'}">
         <span class="asi-ip" aria-hidden="true"></span>
-        <span class="asi-cerceve"><img decoding="async" loading="lazy" alt="" src="${kacis(e.g)}" data-yedek="${kacis(e.y)}"></span>
+        <span class="asi-cerceve" data-cerceve="${cerceveTipi(e.akim)}"><img decoding="async" loading="lazy" alt="" src="${kacis(e.g)}" data-yedek="${kacis(e.y)}"></span>
         ${e.dogru ? '' : `<span class="asi-pul" aria-hidden="true">?</span>`}
       </li>`;
     })
