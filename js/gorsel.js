@@ -60,16 +60,25 @@ export function gorselOrani(g) {
 }
 // İş 58: Cloudflare R2'deki kopyalar (data/gorsel_kaynagi.json; scripts/r2_yukle.py). adres: kovanın herkese açık
 // adresi; buyuk: 1280 px kopyaların hepsi orada (GitHub Pages'in 1 GB sınırı için depodan çıkarılabilsin);
-// devasa: en büyük (4096 px, en yüksek kalite) kopyası olanların adları. Dosya yoksa her şey eskisi gibi depodan.
-let uzak = { adres: '', buyuk: false, devasa: new Set() };
+// devasa: en büyük (4096 px, en yüksek kalite) kopyası olanların adları; muze: { ad: 'met'|'aic'|'nga'|'cma' } en büyük
+// kopyası Commons yerine aynı eserin müze görselinden gelenler. Dosya yoksa her şey eskisi gibi depodan.
+let uzak = { adres: '', buyuk: false, devasa: new Set(), muze: {} };
 export function uzakGorselleriAyarla(k) {
   const adres = k && typeof k.adres === 'string' && /^https:\/\//.test(k.adres) ? k.adres.replace(/\/+$/, '') : '';
-  uzak = { adres, buyuk: !!(adres && k.buyuk === true), devasa: new Set(adres && Array.isArray(k.devasa) ? k.devasa : []) };
+  const muze = {};
+  if (adres && k.muze && typeof k.muze === 'object') for (const [ad, m] of Object.entries(k.muze)) if (KAYNAK_ADI[m] && m !== 'wikiart') muze[ad] = m;
+  uzak = { adres, buyuk: !!(adres && k.buyuk === true), devasa: new Set(adres && Array.isArray(k.devasa) ? k.devasa : []), muze };
 }
 // En büyük kopyanın adresi (görüntüleyici); yoksa ''
 export function devasaUrl(g) {
   const ad = g && yerel[yerelAnahtar(g)];
   return ad && uzak.devasa.has(ad) ? `${uzak.adres}/d/${ad}.jpg` : '';
+}
+// En büyük kopya başka kaynaktan (müzeden) geldiyse o kaynağın adı; yoksa ''
+export function devasaKaynagi(g) {
+  const ad = g && yerel[yerelAnahtar(g)];
+  const m = ad && uzak.devasa.has(ad) && uzak.muze[ad];
+  return m && m !== g.k ? KAYNAK_ADI[m] : '';
 }
 export function yerelAnahtar(g) {
   return `${g.k}:${g.d || g.i || g.u || ''}`;

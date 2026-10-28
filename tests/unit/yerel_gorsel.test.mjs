@@ -33,6 +33,15 @@ test('İş 58: Cloudflare R2 — en büyük kopya yalnız listede olana; 1280\'l
   assert.equal(gorselUrl(c, 800), `${r}/b/abc123.jpg`);
   assert.equal(gorselUrl(c, 400), 'gorseller/k/abc123.jpg');
   assert.equal(paletUrl(c), 'gorseller/k/abc123.jpg');
+  // İş 58c: en büyük kopya müzeden geldiyse kaynağı; kaydın kendi kaynağıysa, listede yoksa ya da bilinmeyen kaynaksa ''
+  const { devasaKaynagi } = await import('../../js/gorsel.js');
+  uzakGorselleriAyarla({ adres: r, devasa: ['abc123'], muze: { abc123: 'met' } });
+  assert.equal(devasaKaynagi(c), 'The Met');
+  assert.equal(devasaKaynagi({ k: 'met', u: 'x' }), '');
+  uzakGorselleriAyarla({ adres: r, devasa: [], muze: { abc123: 'met' } });
+  assert.equal(devasaKaynagi(c), '');
+  uzakGorselleriAyarla({ adres: r, devasa: ['abc123'], muze: { abc123: 'bilinmeyen' } });
+  assert.equal(devasaKaynagi(c), '');
   // https olmayan ya da bozuk adres yok sayılır
   uzakGorselleriAyarla({ adres: 'http://kotu', buyuk: true, devasa: ['abc123'] });
   assert.equal(devasaUrl(c), '');
