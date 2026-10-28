@@ -5,6 +5,7 @@
    "dil": "it",
    "ses": null,
    "portre": "Alessandro Allori, santissima trinità, 1567-1571 circa, ritratto dei maestri, bronzino (cropped).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "albrecht-durer": {
@@ -17,160 +18,187 @@
    "dil": "it",
    "ses": null,
    "portre": "Self-Portrait, by Alessandro Magnasco, called il Lissandrino (Genoa 1667-1749).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "alexandre-cabanel": {
    "dil": "fr",
    "ses": null,
    "portre": "Self Portrait (Alexandre Cabanel).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "alfred-sisley": {
    "dil": "fr",
    "ses": null,
    "portre": "Pierre-Auguste Renoir 110.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "ambrogio-lorenzetti": {
    "dil": "it",
    "ses": null,
    "portre": "013 le vite, ambrogio lorenzetti.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "andre-charles-boulle": {
    "dil": "fr",
    "ses": null,
    "portre": "Henri van Soest.png",
+   "okunus": true,
    "portre_en": 600
   },
   "andre-le-notre": {
    "dil": "fr",
    "ses": null,
    "portre": "Andre-Le-Nostre1.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "andrea-mantegna": {
    "dil": "it",
    "ses": null,
    "portre": "Andrea Mantegna 049 detail possible self-portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "andrea-palladio": {
    "dil": "it",
    "ses": null,
    "portre": "Andrea Palladio2.jpeg",
+   "okunus": true,
    "portre_en": 600
   },
   "andrea-pozzo": {
    "dil": "it",
    "ses": null,
    "portre": "Andrea Pozzo, autoportrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "angelica-kauffman": {
    "dil": "de",
    "ses": null,
    "portre": "Angelika Kauffmann - Self Portrait - 1784.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "annibale-carracci": {
    "dil": "it",
    "ses": null,
    "portre": "Annibale Carracci - Self-portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "anthony-van-dyck": {
    "dil": "nl",
    "ses": null,
    "portre": "Sir Anthony van Dyck - Self-portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "antonio-canova": {
    "dil": "it",
    "ses": null,
    "portre": "Antonio Canova Selfportrait 1792.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "arnold-bocklin": {
    "dil": "de",
    "ses": null,
    "portre": "Arnold Böcklin (1827 - 1901), Selbstportrait (1873).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "arnolfo-di-cambio": {
    "dil": "it",
    "ses": null,
    "portre": "Arnolfo di Lapo.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "artemisia-gentileschi": {
    "dil": "it",
    "ses": null,
    "portre": "Artemisia Gentileschi Selfportrait Martyr.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "auguste-rodin": {
    "dil": "fr",
    "ses": null,
    "portre": "Auguste Rodin fotografato da Nadar nel 1891.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "bartolomeo-manfredi": {
    "dil": "it",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "benjamin-west": {
    "dil": "en",
    "ses": null,
    "portre": "Benjamin West by Gilbert Stuart 1783-84.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "benvenuto-cellini": {
    "dil": "it",
    "ses": null,
    "portre": "Cellini, Benvenuto ÖNB.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "berthe-morisot": {
    "dil": "fr",
    "ses": null,
    "portre": "Morisot berthe photo.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "bonaventura-berlinghieri": {
    "dil": "it",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "camille-corot": {
    "dil": "fr",
    "ses": null,
    "portre": "Jean-Baptiste-Camille Corot c1850.png",
+   "okunus": true,
    "portre_en": 600
   },
   "camille-pissarro": {
    "dil": "fr",
    "ses": null,
    "portre": "Pissarro-portrait-c1900.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "canaletto": {
    "dil": "it",
    "ses": null,
    "portre": "Giovanni Antonio Canal.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "caravaggio": {
    "dil": "it",
    "ses": null,
    "portre": "Bild-Ottavio Leoni, Caravaggio.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "carlo-maderno": {
    "dil": "it",
    "ses": null,
    "portre": "Maderno Carlo Ritratto.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "caspar-david-friedrich": {
@@ -183,104 +211,122 @@
    "dil": "en",
    "ses": null,
    "portre": "Charles-Barry.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "charles-garnier": {
    "dil": "fr",
    "ses": null,
    "portre": "Charles Garnier by Nadar - Leniaud 2003 p142.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "charles-le-brun": {
    "dil": "fr",
    "ses": null,
    "portre": "Le brun.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "cimabue": {
    "dil": "it",
    "ses": null,
    "portre": "Giovanni Cimabue.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "claude-lorrain": {
    "dil": "fr",
    "ses": null,
    "portre": "Claude Lorrain (1600-1682).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "claude-monet": {
    "dil": "fr",
    "ses": null,
    "portre": "Claude Monet 1899 Nadar crop.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "correggio": {
    "dil": "it",
    "ses": null,
    "portre": "Antonio Allegri da Correggio.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "daniele-da-volterra": {
    "dil": "it",
    "ses": null,
    "portre": "151 le vite, danilo ricciarelli da volterra.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "dante-gabriel-rossetti": {
    "dil": "en",
    "ses": null,
    "portre": "-Dante Gabriel Rossetti- MET DP-386-287 (cropped).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "diego-velazquez": {
    "dil": "es",
    "ses": null,
    "portre": "Diego Velázquez Autorretrato 45 x 38 cm - Colección Real Academia de Bellas Artes de San Carlos - Museo de Bellas Artes de Valencia.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "diotisalvi": {
    "dil": "it",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "dirck-van-baburen": {
    "dil": "nl",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "domenico-di-michelino": {
    "dil": "it",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "donatello": {
    "dil": "it",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "donato-bramante": {
    "dil": "it",
    "ses": null,
    "portre": "Donato Bramante.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "duccio-di-buoninsegna": {
    "dil": "it",
    "ses": null,
    "portre": "Vite de più eccellenti pittori scultori ed architetti (1767) (14781159891).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "edgar-degas": {
    "dil": "fr",
    "ses": null,
    "portre": "Edgar Degas self portrait 1855FXD.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "edouard-manet": {
    "dil": "fr",
    "ses": null,
    "portre": "Édouard Manet, en buste, de face - Nadar.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "edvard-munch": {
@@ -293,18 +339,21 @@
    "dil": "es",
    "ses": null,
    "portre": "El Greco - Portrait of a Man - WGA10554.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "elisabeth-vigee-le-brun": {
    "dil": "fr",
    "ses": null,
    "portre": "Self-portrait in a Straw Hat by Elisabeth-Louise Vigée-Lebrun.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "emil-nolde": {
    "dil": "de",
    "ses": null,
    "portre": "WP Emil Nolde.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "ernst-ludwig-kirchner": {
@@ -317,66 +366,77 @@
    "dil": "fr",
    "ses": null,
    "portre": "Autoportrait - Eugène Delacroix - Musée du Louvre Peintures RF 25.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "fernand-khnopff": {
    "dil": "fr",
    "ses": null,
    "portre": "Fernand Khnopff.jpg",
+   "okunus": true,
    "portre_en": 501
   },
   "filippo-brunelleschi": {
    "dil": "it",
    "ses": null,
    "portre": "Masaccio, cappella brancacci, san pietro in cattedra. ritratto di filippo brunelleschi.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "fra-angelico": {
    "dil": "it",
    "ses": null,
    "portre": "Fra Angelico portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "francesco-salviati": {
    "dil": "it",
    "ses": null,
    "portre": "Ritratti dei membri illustri dell'accademia del disegno, 10 francesco salviati.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "francesco-solimena": {
    "dil": "it",
    "ses": null,
    "portre": "Francesco Solimena 001.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "francis-bacon": {
    "dil": "en",
    "ses": null,
    "portre": "Bacon by Gray 257.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "francisco-de-goya": {
    "dil": "es",
    "ses": null,
    "portre": "Vicente López Portaña - el pintor Francisco de Goya.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "francisco-de-zurbaran": {
    "dil": "es",
    "ses": null,
    "portre": "Francisco de Zurbarán autoportrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "francois-boucher": {
    "dil": "fr",
    "ses": null,
    "portre": "Boucher par Gustav Lundberg 1741.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "frans-hals": {
    "dil": "nl",
    "ses": null,
    "portre": "Frans Hals (1582-83–1666) MET DP251935.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "franz-marc": {
@@ -389,104 +449,122 @@
    "dil": "it",
    "ses": null,
    "portre": "056 le vite, gentile da fabriano.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "georges-de-la-tour": {
    "dil": "fr",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "georges-seurat": {
    "dil": "fr",
    "ses": null,
    "portre": "Georges Seurat 1888 (cropped).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "gerrit-van-honthorst": {
    "dil": "nl",
    "ses": null,
    "portre": "Gerard van Honthorst.png",
+   "okunus": true,
    "portre_en": 600
   },
   "giambologna": {
    "dil": "it",
    "ses": null,
    "portre": "Studio of Hans von Aachen - Giambologna.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "gian-lorenzo-bernini": {
    "dil": "it",
    "ses": null,
    "portre": "Gian Lorenzo Bernini, self-portrait, c1623.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "giorgione": {
    "dil": "it",
    "ses": null,
    "portre": "Giorgione 059.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "giotto-di-bondone": {
    "dil": "it",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "giovanni-battista-gaulli": {
    "dil": "it",
    "ses": null,
    "portre": "Baciccio Autorretrato Corredor de Vasari. Galería de los Uffizi.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "giovanni-battista-piazzetta": {
    "dil": "it",
    "ses": null,
    "portre": "Giambattista Piazzetta, Giambattista Piazzetta.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "giovanni-battista-tiepolo": {
    "dil": "it",
    "ses": null,
    "portre": "Tiepolo, Giovanni Battista - Fresken Treppenhaus des Würzburger Residenzschlosses, Szenen zur Apotheose des Fürstbischofs, Detail Giovanni Battista Tiepolo - 1750-1753.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "giovanni-bellini": {
    "dil": "it",
    "ses": null,
    "portre": "Portræt af den venezianske maler Giovanni Bellini.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "giovanni-pisano": {
    "dil": "it",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "gislebertus": {
    "dil": "fr",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "giulio-romano": {
    "dil": "it",
    "ses": null,
    "portre": "Titian - Portrait of Giulio Romano - WGA22947.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "giuseppe-maria-crespi": {
    "dil": "it",
    "ses": null,
    "portre": "Crespi, Giuseppe Maria -- Self-Portrait - c. 1700-transparent.png",
+   "okunus": true,
    "portre_en": 600
   },
   "guercino": {
    "dil": "it",
    "ses": null,
    "portre": "Self-portrait by Guercino.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "guido-reni": {
    "dil": "it",
    "ses": null,
    "portre": "Guido Reni - Self-portrait 2.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "gustav-klimt": {
@@ -499,84 +577,98 @@
    "dil": "fr",
    "ses": null,
    "portre": "Caillebotteautoportrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "gustave-courbet": {
    "dil": "fr",
    "ses": null,
    "portre": "Gustave Courbet, photograph Atelier Nadar, c. 1860s.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "gustave-moreau": {
    "dil": "fr",
    "ses": null,
    "portre": "GustaveMoreau02.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "hannah-hoch": {
    "dil": "de",
    "ses": null,
    "portre": "Hannah Höch (1974).tif",
+   "okunus": true,
    "portre_en": 600
   },
   "hans-baldung-grien": {
    "dil": "de",
    "ses": null,
    "portre": "Kw11 0012025 20190129 001 Baldung Jugendliches Selbstbildnis.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "hans-holbein-genc": {
    "dil": "de",
    "ses": null,
    "portre": "Hans Holbein the Younger, self-portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "hendrick-ter-brugghen": {
    "dil": "nl",
    "ses": null,
    "portre": "Gerard Hoet (I) - Portrait of Hendrick ter Brugghen.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "henri-de-toulouse-lautrec": {
    "dil": "fr",
    "ses": null,
    "portre": "Photolautrec.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "henry-fuseli": {
    "dil": "en",
    "ses": null,
    "portre": "Henry fuseli por James Northcote 1778.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "hieronymus-bosch": {
    "dil": "nl",
    "ses": null,
    "portre": "Hieronymus Bosch by Cornelis Cort.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "honore-daumier": {
    "dil": "fr",
    "ses": null,
    "portre": "Honore Daumier-Nadar.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "horatio-greenough": {
    "dil": "en",
    "ses": null,
    "portre": "Horatio Greenough Rembrandt Peale.jpeg",
+   "okunus": true,
    "portre_en": 600
   },
   "hyacinthe-rigaud": {
    "dil": "fr",
    "ses": null,
    "portre": "Autoportrait au turban (Perpignan).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "j-m-w-turner": {
    "dil": "en",
    "ses": null,
    "portre": "Joseph Mallord William Turner auto-retrato.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jacob-van-ruisdael": {
@@ -588,114 +680,133 @@
    "dil": "it",
    "ses": null,
    "portre": "Alessandro Allori, santissima trinità, 1567-1571 circa, ritratto dei maestri, pontormo.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jacques-germain-soufflot": {
    "dil": "fr",
    "ses": null,
    "portre": "Jacques-Germain Soufflot (1713 -1780).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jacques-louis-david": {
    "dil": "fr",
    "ses": null,
    "portre": "David Self Portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jan-steen": {
    "dil": "nl",
    "ses": null,
    "portre": "1670 Jan Havicksz. Steen - zelfportret.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jan-van-eyck": {
    "dil": "nl",
    "ses": null,
    "portre": "Jan van Eyck - Portrait of a Man (Self Portrait?) 1433.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jean-antoine-watteau": {
    "dil": "fr",
    "ses": null,
    "portre": "(Treviso) The painter Antoine Watteau by Rosalba Carriera - Museo civico di Santa Caterina.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jean-arp": {
    "dil": "fr",
    "ses": null,
    "portre": "Hans Arp.JPG",
+   "okunus": true,
    "portre_en": 600
   },
   "jean-auguste-dominique-ingres": {
    "dil": "fr",
    "ses": null,
    "portre": "Ingres, Self-portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jean-baptiste-greuze": {
    "dil": "fr",
    "ses": null,
    "portre": "Jean-Baptiste Greuze - Self-Portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jean-baptiste-simeon-chardin": {
    "dil": "fr",
    "ses": null,
    "portre": "Chardin pastel selfportrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jean-francois-millet": {
    "dil": "fr",
    "ses": null,
    "portre": "Jean-FrancoisMillet(Nadar).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jean-honore-fragonard": {
    "dil": "fr",
    "ses": null,
    "portre": "Jean-Honoré Fragonard self-portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jean-leon-gerome": {
    "dil": "fr",
    "ses": null,
    "portre": "Jean-Leon Gerome.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "joan-miro": {
    "dil": "es",
    "ses": null,
    "portre": "Joan Miro (cropped).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "johannes-vermeer": {
    "dil": "nl",
    "ses": null,
    "portre": "Cropped version of Jan Vermeer van Delft 002.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "john-constable": {
    "dil": "en",
    "ses": null,
    "portre": "John Constable by Daniel Gardner, 1796.JPG",
+   "okunus": true,
    "portre_en": 600
   },
   "john-everett-millais": {
    "dil": "en",
    "ses": null,
    "portre": "Millais - Self-Portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jules-hardouin-mansart": {
    "dil": "fr",
    "ses": null,
    "portre": "Rigaud Mansart.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "jusepe-de-ribera": {
    "dil": "es",
    "ses": null,
    "portre": "Ribera - Self-portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "katsushika-hokusai": {
@@ -708,41 +819,48 @@
    "dil": "it",
    "ses": null,
    "portre": "CdM, presunto autoritratto di leon battista alberti,black ground.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "leonardo-da-vinci": {
    "dil": "it",
    "ses": null,
    "portre": "Francesco Melzi - Portrait of Leonardo.png",
+   "okunus": true,
    "portre_en": 600
   },
   "limbourg-kardesler": {
    "dil": "nl",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "lord-burlington": {
    "dil": "en",
    "ses": null,
    "portre": "3rdEarlOfBurlingtonPortrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "lorenzo-ghiberti": {
    "dil": "it",
    "ses": null,
    "portre": "Ghiberti.png",
+   "okunus": true,
    "portre_en": 600
   },
   "louis-le-vau": {
    "dil": "fr",
    "ses": null,
    "portre": "Louis Le Vau - Devêche 1981 p3.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "luca-giordano": {
    "dil": "it",
    "ses": null,
    "portre": "LucaGiordano1692c-Self-portrait-Naples.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "lucas-cranach-yasl": {
@@ -755,36 +873,42 @@
    "dil": "en",
    "ses": null,
    "portre": "Man Ray Salvador Dali (cropped).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "marcantonio-raimondi": {
    "dil": "it",
    "ses": null,
    "portre": "125 le vite, marcantonio bolognese.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "marcel-duchamp": {
    "dil": "fr",
    "ses": null,
    "portre": "Marcel Duchamp 01.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "mary-cassatt": {
    "dil": "en",
    "ses": null,
    "portre": "1914 Mary Cassatt.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "masaccio": {
    "dil": "it",
    "ses": null,
    "portre": "Masaccio Self Portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "mattia-preti": {
    "dil": "it",
    "ses": null,
    "portre": "Mattia Preti - Self-portrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "max-ernst": {
@@ -797,12 +921,14 @@
    "dil": "it",
    "ses": null,
    "portre": "Michelangelo Daniele da Volterra (dettaglio).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "michelozzo": {
    "dil": "it",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "myron": {
    "dil": null,
@@ -812,78 +938,91 @@
   "nicola-pisano": {
    "dil": "it",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "nicolas-poussin": {
    "dil": "fr",
    "ses": null,
    "portre": "Nicolas Poussin 078.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "odilon-redon": {
    "dil": "fr",
    "ses": null,
    "portre": "Odilon Redon vers 1880.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "orazio-gentileschi": {
    "dil": "it",
    "ses": null,
    "portre": "Orazio Gentileschi by Anthony van Dyck ca. 1635.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "pablo-picasso": {
    "dil": "es",
    "ses": null,
    "portre": "1973 Dokfilm Picasso de Lucien Clergue Condor Films.jpg",
+   "okunus": true,
    "portre_en": 278
   },
   "paolo-uccello": {
    "dil": "it",
    "ses": null,
    "portre": "Cinq maîtres de la Renaissance florentine - Uccello (Louvre).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "paolo-veronese": {
    "dil": "it",
    "ses": null,
    "portre": "Paolo Veronese - AUTORITRATTO (2) - Museo dell'Ermitage.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "parmigianino": {
    "dil": "it",
    "ses": null,
    "portre": "Parmigianino Selfportrait.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "paul-cezanne": {
    "dil": "fr",
    "ses": null,
    "portre": "Paul-Cezanne.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "paul-gauguin": {
    "dil": "fr",
    "ses": null,
    "portre": "Paul Gauguin 1891.png",
+   "okunus": true,
    "portre_en": 600
   },
   "paul-signac": {
    "dil": "fr",
    "ses": null,
    "portre": "Paul Signac 1923.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "peter-paul-rubens": {
    "dil": "nl",
    "ses": null,
    "portre": "Sir Peter Paul Rubens - Portrait of the Artist - Google Art Project.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "petrus-christus": {
    "dil": "nl",
    "ses": null,
    "portre": "Petrus christus, ritratto d'uomo con falcone.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "phidias": {
@@ -895,36 +1034,42 @@
    "dil": "it",
    "ses": null,
    "portre": "Resurrection detail.JPG",
+   "okunus": true,
    "portre_en": 600
   },
   "pierre-auguste-renoir": {
    "dil": "fr",
    "ses": null,
    "portre": "Pierre Auguste Renoir, uncropped image.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "pierre-puvis-de-chavannes": {
    "dil": "fr",
    "ses": null,
    "portre": "Pierre-Cécile Puvis de Chavannes BNF Gallica.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "pieter-bruegel-yasl": {
    "dil": "nl",
    "ses": null,
    "portre": "Pieter Bruegel the Elder - The Painter and the Buyer, ca. 1566 - Google Art Project.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "pietro-lorenzetti": {
    "dil": "it",
    "ses": null,
    "portre": "010 le vite, pietro laurati.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "pietro-perugino": {
    "dil": "it",
    "ses": null,
    "portre": "Pietro Perugino 031.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "polykleitos": {
@@ -941,12 +1086,14 @@
    "dil": "nl",
    "ses": null,
    "portre": "Johannes Wierix (attr.) - Portrait of Quinten Massijs (I) , 1572 (cropped).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "raphael": {
    "dil": "it",
    "ses": null,
    "portre": "Raffaello Sanzio.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "rembrandt-van-rijn": {
@@ -959,95 +1106,111 @@
    "dil": "fr",
    "ses": null,
    "portre": "René Magritte in 1961.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "robert-campin": {
    "dil": "nl",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "rogier-van-der-weyden": {
    "dil": "nl",
    "ses": null,
    "portre": "Rogier van der Weyden by Jan Wierix, 1572.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "rosso-fiorentino": {
    "dil": "it",
    "ses": null,
    "portre": "Houghton Typ 525 68.864 - Vasari, Le vite - Il Rosso.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "salvador-dali": {
    "dil": "es",
    "ses": null,
    "portre": "Salvador Dalí 1939.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "salvator-rosa": {
    "dil": "it",
    "ses": null,
    "portre": "Self-portrait by Salvator Rosa.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "sandro-botticelli": {
    "dil": "it",
    "ses": null,
    "portre": "Sandro Botticelli Self-portrait ca 1475.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "sebastiano-ricci": {
    "dil": "it",
    "ses": null,
    "portre": "Carriera, Rosalba - Sebastiano Ricci - Staatliche Kunsthalle, Karlsruhe.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "simone-martini": {
    "dil": "it",
    "ses": null,
    "portre": "Delle vite de' più eccellenti pittori, scultori, et architetti (1648) (14779198742).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "sofonisba-anguissola": {
    "dil": "it",
    "ses": null,
    "portre": "Sofonisba Anguissola, Selvportræt ved staffeliet, 1556, Museum Castle in Łańcut.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "theodore-gericault": {
    "dil": "fr",
    "ses": null,
    "portre": "Horace Vernet, Jean-Louis-André-Théodore Gericault, probably 1822 or 1823, 1998.84, MET.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "theodore-rousseau": {
    "dil": "fr",
    "ses": null,
    "portre": "Theodore Rousseau.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "thomas-gainsborough": {
    "dil": "en",
    "ses": null,
    "portre": "Thomas Gainsborough by Thomas Gainsborough.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "thomas-jefferson": {
    "dil": "en",
    "ses": null,
    "portre": "Official Presidential portrait of Thomas Jefferson (by Rembrandt Peale, 1800)(cropped).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "tintoretto": {
    "dil": "it",
    "ses": null,
    "portre": "Tintoretto - Self-Portrait as a Young Man, ca. 1548, CAI.103 (cropped).jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "titian": {
    "dil": "it",
    "ses": null,
    "portre": "Vecellio di Gregorio Tiziano - autoritratto.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "utagawa-hiroshige": {
@@ -1059,42 +1222,49 @@
   "valentin-de-boulogne": {
    "dil": "fr",
    "ses": null,
-   "portre": null
+   "portre": null,
+   "okunus": true
   },
   "vincent-van-gogh": {
    "dil": "nl",
    "ses": null,
    "portre": "Self-portrait - Vincent van Gogh.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "wassily-kandinsky": {
    "dil": "de",
    "ses": null,
    "portre": "Wassily kandinsky.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "william-adolphe-bouguereau": {
    "dil": "fr",
    "ses": null,
    "portre": "William-Adolphe Bouguereau photo.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "william-blake": {
    "dil": "en",
    "ses": null,
    "portre": "William Blake by Thomas Phillips.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "william-hogarth": {
    "dil": "en",
    "ses": null,
    "portre": "The Painter and His Pug by William Hogarth.jpg",
+   "okunus": true,
    "portre_en": 600
   },
   "william-holman-hunt": {
    "dil": "en",
    "ses": null,
    "portre": "William Holman Hunt - Selfportrait.jpg",
+   "okunus": true,
    "portre_en": 600
   }
  }
