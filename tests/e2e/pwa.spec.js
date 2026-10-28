@@ -52,3 +52,22 @@ test('önbellek dosyası olmadan da çalışır', async ({ page, context }) => {
   await expect(page.locator('.eser').first()).toBeVisible();
   await expect(page.locator('.eser', { hasText: 'Fixture' })).toHaveCount(0);
 });
+
+test('okunuş kaydı service worker üzerinden parça parça (Range → 206) gelir, çevrimdışı da', async ({ page, context }) => {
+  await page.goto('./');
+  await page.evaluate(async () => await navigator.serviceWorker.ready);
+  await page.reload();
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller)).toBe(true);
+  const parca = () =>
+    page.evaluate(async () => {
+      const y = await fetch('gorseller/ses/albrecht-durer.mp3', { headers: { Range: 'bytes=0-1' } });
+      return { durum: y.status, aralik: y.headers.get('content-range'), boy: (await y.arrayBuffer()).byteLength };
+    });
+  const ilk = await parca();
+  expect(ilk).toMatchObject({ durum: 206, boy: 2 });
+  expect(ilk.aralik).toMatch(/^bytes 0-1\/\d+$/);
+  await expect.poll(() => page.evaluate(async () => !!(await (await caches.open('atlas-resim-2')).match(new URL('gorseller/ses/albrecht-durer.mp3', location.href).href)))).toBe(true);
+  await context.setOffline(true);
+  expect(await parca()).toMatchObject({ durum: 206, boy: 2 });
+  await context.setOffline(false);
+});
