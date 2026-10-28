@@ -1312,3 +1312,12 @@ Emre: "galeride bir resimdeyim, soldan sağa kaydırınca geri geliyor gibi oluy
 - **Çözüm:** görüntüleyici açılınca `history.pushState` ile kendi kaydını ekler (adres aynı, yönlendirici `hashchange` dinlediği için tetiklenmez). Geri hareketi / tarayıcı geri tuşu bu kaydı geri alır → `popstate` → görüntüleyici kapanır, sayfada kalınır. X, aşağı kaydırma, Esc ya da ilk eserde sağa kaydırmayla kapanınca kayıt `history.back()` ile geri alınır (geçmişte fazladan adım kalmaz). "Konu:" bağlantısı önce kaydı geri alır, `popstate`'ten sonra konu sayfasına geçer (yoksa geri alma yeni sayfayı geri alırdı).
 - İlk eserde ortadan sağa kaydırma kapatır (önceki eser yok) — v1.47.3'ten kaldı. `body`'ye eklenen başka katman yok; sayfa içi katmanlar adres değişince zaten silinir.
 - Test: `tests/e2e/cilalama.spec.js` (geri → görüntüleyici kapanır, sayfada kalınır; X'ten sonra geri önceki sayfaya; Konu bağlantısı ve geri).
+
+## İş 53 · iPhone'a özgü dokunuşlar (2026-10-28, v1.47.5)
+
+İş 52'deki yanlış varsayımdan sonra iPhone'un kendi davranışlarıyla çakışan yerler arandı.
+- **Yazı alanına dokununca yakınlaşma:** iOS 16 pt altı alanlarda sayfayı yakınlaştırır ve geri uzaklaştırmaz. Ayarlar'daki yedek alanları 13 pt idi → bütün `textarea` 16 pt. Arama kutuları zaten 16 pt ve üstü.
+- **Uzun basınca menü:** düğmelerde ve uygulama içi (`#/…`) bağlantılarda metin seçimi ve bağlantı önizleme menüsü kapalı (`-webkit-touch-callout`, `user-select`). Okuma metinleri seçilebilir kalır.
+- **Soru görseli cevabı ele verebiliyordu:** tur ekranında görsele uzun basınca iOS "Görsel Arama" ünlü tabloyu tanıyıp ressamı söyleyebiliyor; paylaş menüsü çoğu zaman ressamın adını taşıyan Commons dosya adını gösteriyor. Tur ekranlarındaki (sekme çubuğu yok: `html.sekmesiz`) görsellerde uzun basma menüsü kapalı. Görüntüleyicide zaten kapalıydı.
+- Değişmeyenler: dokunma parlaması her yerde kapalıydı; viewport çift dokunuşla yakınlaştırmıyor. Turun ortasında iOS'un geri hareketi Atölye menüsüne döner, tur kaybolmaz ("Kaldığın yerden devam et").
+- Test: `tests/e2e/cilalama.spec.js` (yazı alanları ≥16 pt; kuralın soru görseline uyduğu seçiciden denetlenir, çünkü Chromium `-webkit-touch-callout`'u tanımaz).

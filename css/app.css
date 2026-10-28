@@ -13019,3 +13019,26 @@ html {
 .akim-komsu-ok {
   color: color-mix(in srgb, var(--renk) 45%, var(--ink));
 }
+
+/* ===== İş 53 · iPhone'a özgü dokunuşlar ===== */
+/* 16 pt altı yazı alanına dokununca iOS sayfayı yakınlaştırır, geri uzaklaştırmaz (Ayarlar'daki yedek alanı 13 pt idi) */
+textarea {
+  font-size: 16px;
+}
+/* uzun basınca düğme ve uygulama içi bağlantılarda metin seçimi / bağlantı önizleme menüsü açılmasın */
+button,
+[role='button'],
+a[href^='#'] {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* tur ekranlarında görsele uzun basınca iOS "Görsel Arama" ünlü tabloyu tanıyıp ressamı söyleyebiliyor, paylaş
+   menüsü de çoğu zaman ressamın adını taşıyan Commons dosya adını gösteriyor: soru görsellerinde menü kapalı */
+.sekmesiz #uygulama img,
+.soru-resim,
+.soru-resim img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
