@@ -12719,12 +12719,21 @@ a.harita-seviye:active {
   margin: 4px 0 8px;
 }
 .imza {
+  --imza-boy: 52px;
   display: block;
-  height: 52px;
+  height: var(--imza-boy);
+  width: calc(var(--imza-boy) * var(--oran, 4));
   max-width: 100%;
   background: linear-gradient(100deg, #a8782a 0%, #f6dc8e 22%, #c9973a 42%, #fff1c4 50%, #c9973a 58%, #e8c46e 78%, #9a6b1f 100%) 0 0 / 260% 100%;
-  -webkit-mask: var(--imza) left center / contain no-repeat;
-  mask: var(--imza) left center / contain no-repeat;
+  /* uzun yazılış: Safari kısaltmanın içindeki var()'ı kimi sürümlerde çözemiyor */
+  -webkit-mask-image: var(--imza);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  mask-image: var(--imza);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: left center;
   animation:
     imza-gel 1.4s ease-out both,
     imza-isil 3.2s 1.2s ease-in-out both;
@@ -12769,5 +12778,5 @@ a.harita-seviye:active {
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.7));
 }
 .sahne-isim .imza {
-  height: 48px;
+  --imza-boy: 48px;
 }
