@@ -17,9 +17,6 @@ export function kaynakYazisi(eser, gorsel) {
 // notu: (eser) → kısa açıklama (data/eser_notlari.json); gizliyken (cevaptan önce) gösterilmez
 // koleksiyon: { varMi(eser), degistir(eser) → yeni durum } — K4, sağ üstte işaret düğmesi (yoksa düğme çıkmaz)
 // bildir: (eser, neden, gorsel) → bildirimden sonra seçilen görsel — İ5, "⋯" menüsü (yoksa menü çıkmaz)
-// sol kenardan başlayan dokunuş "geri" sayılır (pt)
-const KENAR = 28;
-
 export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null, koleksiyon = null, bildir = null }) {
   let sira = baslangic;
   let olcek = 1;
@@ -46,6 +43,18 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       <p class="gor-mesaj" role="status" aria-live="polite"></p></div>`;
   document.body.appendChild(kok);
   document.documentElement.classList.add('gor-acik');
+
+  // İş 52: görüntüleyicinin kendi geçmiş kaydı (adres aynı kalır, yönlendirici tetiklenmez). iPhone'un sol kenardan
+  // geri hareketi ve tarayıcının geri tuşu sayfayı değil görüntüleyiciyi kapatır; X, aşağı kaydırma ya da Esc ile
+  // kapanınca kayıt geri alınır, geçmişte fazladan adım kalmaz.
+  let kayitVar = true;
+  let kapandi = false;
+  history.pushState({ ...(history.state || {}), gor: true }, '');
+  const gerideKapat = () => {
+    kayitVar = false;
+    kapat();
+  };
+  window.addEventListener('popstate', gerideKapat);
 
   const sahne = kok.querySelector('.gor-sahne');
   const resim = kok.querySelector('.gor-resim');
@@ -171,28 +180,30 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   };
   window.addEventListener('atlas-notlar', notlarGeldi);
 
-  function kapat() {
+  // sonra: kapanış bitince (geçmiş kaydı geri alındıktan sonra) yapılacak iş, ör. başka ekrana geçmek
+  function kapat({ sonra } = {}) {
+    if (kapandi) return;
+    kapandi = true;
+    window.removeEventListener('popstate', gerideKapat);
     window.removeEventListener('atlas-notlar', notlarGeldi);
     document.removeEventListener('keydown', tus);
     document.documentElement.classList.remove('gor-acik');
     kok.remove();
     if (onceOdak && onceOdak.focus) onceOdak.focus();
     if (kapaninca) kapaninca(sira);
+    if (kayitVar) {
+      kayitVar = false;
+      if (sonra) window.addEventListener('popstate', () => sonra(), { once: true });
+      history.back();
+    } else if (sonra) sonra();
   }
 
-  // Sol kenardan sağa kaydırma ya da ilk eserde sağa kaydırma: iPhone'daki "geri" gibi görüntüleyici sağa kayıp
-  // kapanır (İş 52; ana ekrana eklenen uygulamada iOS bu hareketi kendisi vermiyor)
+  // İlk eserde sağa kaydırma: önceki eser yok, görüntüleyici sağa kayıp kapanır (iPhone'daki "geri" gibi)
   function kaydirarakKapat() {
     kok.style.transition = 'transform .22s ease-out, opacity .22s ease-out';
     kok.style.transform = 'translateX(100%)';
     kok.style.opacity = '0';
-    setTimeout(kapat, 220);
-  }
-  function kenarGeriBirak(dx) {
-    kok.style.transition = 'transform .2s ease-out, opacity .2s ease-out';
-    if (dx > Math.min(110, innerWidth * 0.28)) return kaydirarakKapat();
-    kok.style.transform = '';
-    kok.style.opacity = '';
+    setTimeout(() => kapat(), 220);
   }
 
   function tus(e) {
@@ -202,10 +213,14 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   }
   document.addEventListener('keydown', tus);
 
-  kok.querySelector('.gor-kapat').addEventListener('click', kapat);
-  // "Konu:" bağlantısı: görüntüleyici kapanır, sayfa konu ekranına geçer
+  kok.querySelector('.gor-kapat').addEventListener('click', () => kapat());
+  // "Konu:" bağlantısı: görüntüleyici kapanır (geçmiş kaydı geri alınır), sonra sayfa konu ekranına geçer
   alt.addEventListener('click', (ev) => {
-    if (ev.target.closest('[data-gor-konu]')) kapat();
+    const a = ev.target.closest('[data-gor-konu]');
+    if (!a) return;
+    ev.preventDefault();
+    const hedef = a.getAttribute('href');
+    kapat({ sonra: () => (location.hash = hedef) });
   });
   kok.querySelector('.gor-kotu').addEventListener('click', kotuGorsel);
   if (isaret)
@@ -247,7 +262,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       const c = merkez();
       jest = { tur: 'kistir', mesafe: Math.hypot(a.x - b.x, a.y - b.y) || 1, olcek, px: (m.x - c.x - tx) / olcek, py: (m.y - c.y - ty) / olcek };
     } else if (n === 1) {
-      jest = { tur: 'tek', x: e.clientX, y: e.clientY, tx, ty, zaman: Date.now(), kenar: olcek <= 1 && e.clientX < KENAR };
+      jest = { tur: 'tek', x: e.clientX, y: e.clientY, tx, ty, zaman: Date.now() };
     }
   });
 
@@ -265,13 +280,6 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     } else if (jest.tur === 'tek') {
       const dx = e.clientX - jest.x;
       const dy = e.clientY - jest.y;
-      if (jest.kenar) {
-        // kenardan geri: resim değil bütün görüntüleyici parmağı izler
-        kok.style.transition = 'none';
-        kok.style.transform = `translateX(${Math.max(0, dx)}px)`;
-        kok.style.opacity = String(1 - Math.min(0.5, Math.max(0, dx) / innerWidth));
-        return;
-      }
       if (olcek > 1) {
         tx = jest.tx + dx;
         ty = jest.ty + dy;
@@ -300,9 +308,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     const dy = e.clientY - jest.y;
     const sure = Date.now() - jest.zaman;
     const kistirmadan = jest.kistirmadan;
-    const kenar = jest.kenar;
     jest = null;
-    if (kenar) return kenarGeriBirak(e.type === 'pointercancel' ? 0 : dx);
     if (olcek > 1) {
       sinirla();
       uygula(true);
