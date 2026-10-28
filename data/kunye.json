@@ -6,13 +6,21 @@
    "ses": null,
    "portre": "Alessandro Allori, santissima trinità, 1567-1571 circa, ritratto dei maestri, bronzino (cropped).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈaɲɲolo di ˈkɔːzimo]"
+   }
   },
   "albrecht-durer": {
    "dil": "de",
    "ses": "De-Albrecht Dürer.ogg",
    "portre": "Dürer Alte Pinakothek.jpg",
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "de",
+    "yazi": "[ˈalbʁɛçt ˈdyːʁɐ]"
+   }
   },
   "alessandro-magnasco": {
    "dil": "it",
@@ -26,56 +34,88 @@
    "ses": null,
    "portre": "Self Portrait (Alexandre Cabanel).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[alɛksɑ̃dʁ(ə) kabanɛl]"
+   }
   },
   "alfred-sisley": {
    "dil": "fr",
    "ses": null,
    "portre": "Pierre-Auguste Renoir 110.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[sislɛ]"
+   }
   },
   "ambrogio-lorenzetti": {
    "dil": "it",
    "ses": null,
    "portre": "013 le vite, ambrogio lorenzetti.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[amˈbrɔːdʒo lorenˈtsetti]"
+   }
   },
   "andre-charles-boulle": {
    "dil": "fr",
    "ses": null,
    "portre": "Henri van Soest.png",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ɑ̃dʁe ʃaʁl bul]"
+   }
   },
   "andre-le-notre": {
    "dil": "fr",
    "ses": null,
    "portre": "Andre-Le-Nostre1.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ɑ̃dʁe lə notʁ]"
+   }
   },
   "andrea-mantegna": {
    "dil": "it",
    "ses": null,
    "portre": "Andrea Mantegna 049 detail possible self-portrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[anˈdrɛːa manˈteɲɲa]"
+   }
   },
   "andrea-palladio": {
    "dil": "it",
    "ses": null,
    "portre": "Andrea Palladio2.jpeg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[anˈdrɛːa palˈlaːdjo]"
+   }
   },
   "andrea-pozzo": {
    "dil": "it",
    "ses": null,
    "portre": "Andrea Pozzo, autoportrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[anˈdrɛːa ˈpottso]"
+   }
   },
   "angelica-kauffman": {
    "dil": "de",
@@ -89,28 +129,44 @@
    "ses": null,
    "portre": "Annibale Carracci - Self-portrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[anˈniːbale karˈrattʃi]"
+   }
   },
   "anthony-van-dyck": {
    "dil": "nl",
    "ses": null,
    "portre": "Sir Anthony van Dyck - Self-portrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[ˈɑntoːɱ‿vɑn ˈdɛik]"
+   }
   },
   "antonio-canova": {
    "dil": "it",
    "ses": null,
    "portre": "Antonio Canova Selfportrait 1792.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[anˈtɔːnjo kaˈnɔːva]"
+   }
   },
   "arnold-bocklin": {
    "dil": "de",
    "ses": null,
    "portre": "Arnold Böcklin (1827 - 1901), Selbstportrait (1873).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "de",
+    "yazi": "[ˈaʁnɔlt ˈbœklin]"
+   }
   },
   "arnolfo-di-cambio": {
    "dil": "it",
@@ -124,14 +180,22 @@
    "ses": null,
    "portre": "Artemisia Gentileschi Selfportrait Martyr.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[arteˈmiːzja ˈlɔːmi dʒentiˈleski]"
+   }
   },
   "auguste-rodin": {
    "dil": "fr",
    "ses": null,
    "portre": "Auguste Rodin fotografato da Nadar nel 1891.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[fʁɑ̃swa oɡyst(ə) ʁəne ʁɔdɛ̃]"
+   }
   },
   "bartolomeo-manfredi": {
    "dil": "it",
@@ -151,14 +215,22 @@
    "ses": null,
    "portre": "Cellini, Benvenuto ÖNB.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[beɱveˈnuːto tʃelˈliːni]"
+   }
   },
   "berthe-morisot": {
    "dil": "fr",
    "ses": null,
    "portre": "Morisot berthe photo.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[bɛʁt mɔʁizo]"
+   }
   },
   "bonaventura-berlinghieri": {
    "dil": "it",
@@ -171,28 +243,44 @@
    "ses": null,
    "portre": "Jean-Baptiste-Camille Corot c1850.png",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒɑ̃ batist kamij kɔʁo]"
+   }
   },
   "camille-pissarro": {
    "dil": "fr",
    "ses": null,
    "portre": "Pissarro-portrait-c1900.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[kamij pisaʁo]"
+   }
   },
   "canaletto": {
    "dil": "it",
    "ses": null,
    "portre": "Giovanni Antonio Canal.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[kanaˈletto]"
+   }
   },
   "caravaggio": {
    "dil": "it",
    "ses": null,
    "portre": "Bild-Ottavio Leoni, Caravaggio.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[mikeˈlandʒelo meˈriːzi da (k)karaˈvaddʒo]"
+   }
   },
   "carlo-maderno": {
    "dil": "it",
@@ -205,7 +293,11 @@
    "dil": "de",
    "ses": "De-Caspar David Friedrich.ogg",
    "portre": "Caspar David Friedrich, Selvportræt, 1800, KKSgb5006, Statens Museum for Kunst.jpg",
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "de",
+    "yazi": "[ˌkaspaʁ ˌdaːvɪt ˈfʁiːdʁɪç]"
+   }
   },
   "charles-barry-ve-augustus-pugin": {
    "dil": "en",
@@ -219,63 +311,99 @@
    "ses": null,
    "portre": "Charles Garnier by Nadar - Leniaud 2003 p142.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʃaʁl ɡaʁnje]"
+   }
   },
   "charles-le-brun": {
    "dil": "fr",
    "ses": null,
    "portre": "Le brun.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʃaʁl lə bʁœ̃]"
+   }
   },
   "cimabue": {
    "dil": "it",
    "ses": null,
    "portre": "Giovanni Cimabue.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[tʃimaˈbuːe]"
+   }
   },
   "claude-lorrain": {
    "dil": "fr",
    "ses": null,
    "portre": "Claude Lorrain (1600-1682).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[klod lɔ.ʁɛ̃]"
+   }
   },
   "claude-monet": {
    "dil": "fr",
    "ses": null,
    "portre": "Claude Monet 1899 Nadar crop.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[klod mɔnɛ]"
+   }
   },
   "correggio": {
    "dil": "it",
    "ses": null,
    "portre": "Antonio Allegri da Correggio.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[korˈreddʒo]"
+   }
   },
   "daniele-da-volterra": {
    "dil": "it",
    "ses": null,
    "portre": "151 le vite, danilo ricciarelli da volterra.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[daˈnjɛːle rittʃaˈrɛlli]"
+   }
   },
   "dante-gabriel-rossetti": {
    "dil": "en",
    "ses": null,
    "portre": "-Dante Gabriel Rossetti- MET DP-386-287 (cropped).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "en",
+    "yazi": "/rəˈzɛti/"
+   }
   },
   "diego-velazquez": {
    "dil": "es",
    "ses": null,
    "portre": "Diego Velázquez Autorretrato 45 x 38 cm - Colección Real Academia de Bellas Artes de San Carlos - Museo de Bellas Artes de Valencia.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "es",
+    "yazi": "[ˈdjeɣo roˈðɾiɣeθ ðe ˈsilβa i βeˈlaθkeθ]"
+   }
   },
   "diotisalvi": {
    "dil": "it",
@@ -299,55 +427,88 @@
    "dil": "it",
    "ses": null,
    "portre": null,
-   "okunus": true
+   "okunus": true,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[donaˈtɛllo]"
+   }
   },
   "donato-bramante": {
    "dil": "it",
    "ses": null,
    "portre": "Donato Bramante.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[doˈnaːto braˈmante]"
+   }
   },
   "duccio-di-buoninsegna": {
    "dil": "it",
    "ses": null,
    "portre": "Vite de più eccellenti pittori scultori ed architetti (1767) (14781159891).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈduttʃo di ˌbwɔninˈseɲɲa]"
+   }
   },
   "edgar-degas": {
    "dil": "fr",
    "ses": null,
    "portre": "Edgar Degas self portrait 1855FXD.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ilɛːʁ ʒɛʁmɛ̃ ɛdɡaʁ də ɡa]"
+   }
   },
   "edouard-manet": {
    "dil": "fr",
    "ses": null,
    "portre": "Édouard Manet, en buste, de face - Nadar.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[edwaʁ manɛ]"
+   }
   },
   "edvard-munch": {
    "dil": "no",
    "ses": null,
    "portre": "Edvard Munch 1933-2.jpg",
-   "portre_en": 600
+   "okunus": true,
+   "portre_en": 600,
+   "ipa": {
+    "dil": "no",
+    "yazi": "[ˈɛ̀dvɑɖ ˈmʊŋk]"
+   }
   },
   "el-greco": {
    "dil": "es",
    "ses": null,
    "portre": "El Greco - Portrait of a Man - WGA10554.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "es",
+    "yazi": "[el ˈɣɾeko]"
+   }
   },
   "elisabeth-vigee-le-brun": {
    "dil": "fr",
    "ses": null,
    "portre": "Self-portrait in a Straw Hat by Elisabeth-Louise Vigée-Lebrun.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[elizabɛt lwiz viʒe lə bʁœ̃]"
+   }
   },
   "emil-nolde": {
    "dil": "de",
@@ -367,7 +528,11 @@
    "ses": null,
    "portre": "Autoportrait - Eugène Delacroix - Musée du Louvre Peintures RF 25.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[øʒɛn dəlakʁwa]"
+   }
   },
   "fernand-khnopff": {
    "dil": "fr",
@@ -381,14 +546,22 @@
    "ses": null,
    "portre": "Masaccio, cappella brancacci, san pietro in cattedra. ritratto di filippo brunelleschi.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[fiˈlippo brunelˈleski]"
+   }
   },
   "fra-angelico": {
    "dil": "it",
    "ses": null,
    "portre": "Fra Angelico portrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈfra anˈdʒɛːliko]"
+   }
   },
   "francesco-salviati": {
    "dil": "it",
@@ -430,14 +603,22 @@
    "ses": null,
    "portre": "Boucher par Gustav Lundberg 1741.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[fʁɑ̃swa buʃe]"
+   }
   },
   "frans-hals": {
    "dil": "nl",
    "ses": null,
    "portre": "Frans Hals (1582-83–1666) MET DP251935.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[frɑns ˈɦɑls]"
+   }
   },
   "franz-marc": {
    "dil": "de",
@@ -450,20 +631,32 @@
    "ses": null,
    "portre": "056 le vite, gentile da fabriano.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[dʒenˈtiːle da (f)fabriˈaːno]"
+   }
   },
   "georges-de-la-tour": {
    "dil": "fr",
    "ses": null,
    "portre": null,
-   "okunus": true
+   "okunus": true,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒɔʁʒ də la tuʁ]"
+   }
   },
   "georges-seurat": {
    "dil": "fr",
    "ses": null,
    "portre": "Georges Seurat 1888 (cropped).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒɔʁʒ pjɛʁ sœʁa]"
+   }
   },
   "gerrit-van-honthorst": {
    "dil": "nl",
@@ -484,20 +677,32 @@
    "ses": null,
    "portre": "Gian Lorenzo Bernini, self-portrait, c1623.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈdʒan loˈrɛntso berˈniːni]"
+   }
   },
   "giorgione": {
    "dil": "it",
    "ses": null,
    "portre": "Giorgione 059.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[dʒorˈdʒoːne]"
+   }
   },
   "giotto-di-bondone": {
    "dil": "it",
    "ses": null,
    "portre": null,
-   "okunus": true
+   "okunus": true,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈdʒɔtto di bonˈdoːne]"
+   }
   },
   "giovanni-battista-gaulli": {
    "dil": "it",
@@ -518,14 +723,22 @@
    "ses": null,
    "portre": "Tiepolo, Giovanni Battista - Fresken Treppenhaus des Würzburger Residenzschlosses, Szenen zur Apotheose des Fürstbischofs, Detail Giovanni Battista Tiepolo - 1750-1753.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[dʒoˈvanni batˈtista ˈtjɛːpolo, ˈtjeː-]"
+   }
   },
   "giovanni-bellini": {
    "dil": "it",
    "ses": null,
    "portre": "Portræt af den venezianske maler Giovanni Bellini.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[dʒoˈvanni belˈliːni]"
+   }
   },
   "giovanni-pisano": {
    "dil": "it",
@@ -544,7 +757,11 @@
    "ses": null,
    "portre": "Titian - Portrait of Giulio Romano - WGA22947.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈdʒuːljo roˈmaːno]"
+   }
   },
   "giuseppe-maria-crespi": {
    "dil": "it",
@@ -558,14 +775,22 @@
    "ses": null,
    "portre": "Self-portrait by Guercino.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ɡwerˈtʃiːno]"
+   }
   },
   "guido-reni": {
    "dil": "it",
    "ses": null,
    "portre": "Guido Reni - Self-portrait 2.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈɡwiːdo ˈrɛːni]"
+   }
   },
   "gustav-klimt": {
    "dil": "de",
@@ -578,28 +803,44 @@
    "ses": null,
    "portre": "Caillebotteautoportrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ɡystav kɑjbɔt]"
+   }
   },
   "gustave-courbet": {
    "dil": "fr",
    "ses": null,
    "portre": "Gustave Courbet, photograph Atelier Nadar, c. 1860s.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ɡystav kuʁbɛ]"
+   }
   },
   "gustave-moreau": {
    "dil": "fr",
    "ses": null,
    "portre": "GustaveMoreau02.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ɡystav mɔʁo]"
+   }
   },
   "hannah-hoch": {
    "dil": "de",
    "ses": null,
    "portre": "Hannah Höch (1974).tif",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "de",
+    "yazi": "[hœç]"
+   }
   },
   "hans-baldung-grien": {
    "dil": "de",
@@ -627,28 +868,44 @@
    "ses": null,
    "portre": "Photolautrec.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[tuluz lotʁɛk]"
+   }
   },
   "henry-fuseli": {
    "dil": "en",
    "ses": null,
    "portre": "Henry fuseli por James Northcote 1778.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "en",
+    "yazi": "/ˈfjuːzəli, fjuːˈzɛli/"
+   }
   },
   "hieronymus-bosch": {
    "dil": "nl",
    "ses": null,
    "portre": "Hieronymus Bosch by Cornelis Cort.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[ɦijeːˈroːnimʏz ˈbɔs]"
+   }
   },
   "honore-daumier": {
    "dil": "fr",
    "ses": null,
    "portre": "Honore Daumier-Nadar.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ɔnɔʁe domje]"
+   }
   },
   "horatio-greenough": {
    "dil": "en",
@@ -662,7 +919,11 @@
    "ses": null,
    "portre": "Autoportrait au turban (Perpignan).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[jasɛ̃t ʁiɡo]"
+   }
   },
   "j-m-w-turner": {
    "dil": "en",
@@ -674,153 +935,241 @@
   "jacob-van-ruisdael": {
    "dil": "nl",
    "ses": "Jacobvanruisdael.ogg",
-   "portre": null
+   "portre": null,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[ˈjaːkɔp fɑn ˈrœyzdaːl]"
+   }
   },
   "jacopo-pontormo": {
    "dil": "it",
    "ses": null,
    "portre": "Alessandro Allori, santissima trinità, 1567-1571 circa, ritratto dei maestri, pontormo.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈjaːkopo ka(r)ˈruttʃi]"
+   }
   },
   "jacques-germain-soufflot": {
    "dil": "fr",
    "ses": null,
    "portre": "Jacques-Germain Soufflot (1713 -1780).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒak ʒɛʁmɛ̃ suflo]"
+   }
   },
   "jacques-louis-david": {
    "dil": "fr",
    "ses": null,
    "portre": "David Self Portrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒaklwi david]"
+   }
   },
   "jan-steen": {
    "dil": "nl",
    "ses": null,
    "portre": "1670 Jan Havicksz. Steen - zelfportret.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[jɑn steːn]"
+   }
   },
   "jan-van-eyck": {
    "dil": "nl",
    "ses": null,
    "portre": "Jan van Eyck - Portrait of a Man (Self Portrait?) 1433.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[ˈjɑɱ vɑn ˈɛik]"
+   }
   },
   "jean-antoine-watteau": {
    "dil": "fr",
    "ses": null,
    "portre": "(Treviso) The painter Antoine Watteau by Rosalba Carriera - Museo civico di Santa Caterina.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒɑ̃ ɑ̃twan vato]"
+   }
   },
   "jean-arp": {
    "dil": "fr",
    "ses": null,
    "portre": "Hans Arp.JPG",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "de",
+    "yazi": "[aʁp]"
+   }
   },
   "jean-auguste-dominique-ingres": {
    "dil": "fr",
    "ses": null,
    "portre": "Ingres, Self-portrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒɑ̃ oɡyst dɔminik ɛ̃ɡʁ]"
+   }
   },
   "jean-baptiste-greuze": {
    "dil": "fr",
    "ses": null,
    "portre": "Jean-Baptiste Greuze - Self-Portrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒɑ̃ batist ɡʁøz]"
+   }
   },
   "jean-baptiste-simeon-chardin": {
    "dil": "fr",
    "ses": null,
    "portre": "Chardin pastel selfportrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒɑ̃ simeɔ̃ ʃaʁdɛ̃]"
+   }
   },
   "jean-francois-millet": {
    "dil": "fr",
    "ses": null,
    "portre": "Jean-FrancoisMillet(Nadar).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒɑ̃ fʁɑ̃swa milɛ]"
+   }
   },
   "jean-honore-fragonard": {
    "dil": "fr",
    "ses": null,
    "portre": "Jean-Honoré Fragonard self-portrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒɑ̃ ɔnɔʁe fʁaɡɔnaʁ]"
+   }
   },
   "jean-leon-gerome": {
    "dil": "fr",
    "ses": null,
    "portre": "Jean-Leon Gerome.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒɑ̃leɔ̃ ʒeʁom]"
+   }
   },
   "joan-miro": {
    "dil": "es",
    "ses": null,
    "portre": "Joan Miro (cropped).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "ca",
+    "yazi": "[ʒuˈam miˈɾo j fəˈra]"
+   }
   },
   "johannes-vermeer": {
    "dil": "nl",
    "ses": null,
    "portre": "Cropped version of Jan Vermeer van Delft 002.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[joːˈɦɑnəs fərˈmeːr]"
+   }
   },
   "john-constable": {
    "dil": "en",
    "ses": null,
    "portre": "John Constable by Daniel Gardner, 1796.JPG",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "en",
+    "yazi": "/ˈkʌnstəbəl, ˈkɒn/"
+   }
   },
   "john-everett-millais": {
    "dil": "en",
    "ses": null,
    "portre": "Millais - Self-Portrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "en",
+    "yazi": "/ˈmɪleɪ/"
+   }
   },
   "jules-hardouin-mansart": {
    "dil": "fr",
    "ses": null,
    "portre": "Rigaud Mansart.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒyl aʁdwɛ̃ mɑ̃saʁ]"
+   }
   },
   "jusepe-de-ribera": {
    "dil": "es",
    "ses": null,
    "portre": "Ribera - Self-portrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "ca",
+    "yazi": "[josep ðe riˈβeɾa]"
+   }
   },
   "katsushika-hokusai": {
    "dil": null,
    "ses": null,
    "portre": "Hokusai as an old man.jpg",
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "ja",
+    "yazi": "[kä̀.t͡sɨ́.ɕi̥.kä̀ {{!}} hò̞.kɯ̥̈.ꜜsä́í, -kä̀ hò̞.kɯ̥̈.sä̀ì, -kä̀ {{!}} hò̞.kɯ̥̈.ꜜsä́ì, -kä̀ {{!}} ꜜhó̞.kɯ̥̈.sä̀ì, -kä́ hó̞.kɯ̥̈.sä̀ì]"
+   }
   },
   "leon-battista-alberti": {
    "dil": "it",
    "ses": null,
    "portre": "CdM, presunto autoritratto di leon battista alberti,black ground.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[leombatˈtista alˈbɛɾti]"
+   }
   },
   "leonardo-da-vinci": {
    "dil": "it",
@@ -847,14 +1196,22 @@
    "ses": null,
    "portre": "Ghiberti.png",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[loˈrɛntso ɡiˈbɛrti]"
+   }
   },
   "louis-le-vau": {
    "dil": "fr",
    "ses": null,
    "portre": "Louis Le Vau - Devêche 1981 p3.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[lwi l(ə) vo]"
+   }
   },
   "luca-giordano": {
    "dil": "it",
@@ -867,7 +1224,11 @@
    "dil": "de",
    "ses": "De-Lucas Cranach.ogg",
    "portre": "Lucas Cranach d. Ä. 063.jpg",
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "de",
+    "yazi": "[ˈluːkas ˈkʁaːnax deːɐ̯ ˈʔɛltəʁə]"
+   }
   },
   "man-ray": {
    "dil": "en",
@@ -888,21 +1249,33 @@
    "ses": null,
    "portre": "Marcel Duchamp 01.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[maʁsɛl dyʃɑ̃]"
+   }
   },
   "mary-cassatt": {
    "dil": "en",
    "ses": null,
    "portre": "1914 Mary Cassatt.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "en",
+    "yazi": "/kəˈsæt/"
+   }
   },
   "masaccio": {
    "dil": "it",
    "ses": null,
    "portre": "Masaccio Self Portrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[maˈzattʃo]"
+   }
   },
   "mattia-preti": {
    "dil": "it",
@@ -915,25 +1288,41 @@
    "dil": "de",
    "ses": "De-Max Ernst.ogg",
    "portre": "Max Ernst 1968.jpg",
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "de",
+    "yazi": "[ɛʁnst]"
+   }
   },
   "michelangelo": {
    "dil": "it",
    "ses": null,
    "portre": "Michelangelo Daniele da Volterra (dettaglio).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[mikeˈlandʒelo di lodoˈviːko ˌbwɔnarˈrɔːti siˈmoːni]"
+   }
   },
   "michelozzo": {
    "dil": "it",
    "ses": null,
    "portre": null,
-   "okunus": true
+   "okunus": true,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[mikeˈlɔttso di bartoloˈmɛːo mikeˈlɔttsi]"
+   }
   },
   "myron": {
    "dil": null,
    "ses": null,
-   "portre": null
+   "portre": null,
+   "ipa": {
+    "dil": "el",
+    "yazi": "[mý.rɔːn]"
+   }
   },
   "nicola-pisano": {
    "dil": "it",
@@ -946,141 +1335,225 @@
    "ses": null,
    "portre": "Nicolas Poussin 078.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[nikɔla pusɛ̃]"
+   }
   },
   "odilon-redon": {
    "dil": "fr",
    "ses": null,
    "portre": "Odilon Redon vers 1880.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ɔdilɔ̃ ʁədɔ̃]"
+   }
   },
   "orazio-gentileschi": {
    "dil": "it",
    "ses": null,
    "portre": "Orazio Gentileschi by Anthony van Dyck ca. 1635.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[oˈrattsjo ˈlɔːmi dʒentiˈleski]"
+   }
   },
   "pablo-picasso": {
    "dil": "es",
    "ses": null,
    "portre": "1973 Dokfilm Picasso de Lucien Clergue Condor Films.jpg",
    "okunus": true,
-   "portre_en": 278
+   "portre_en": 278,
+   "ipa": {
+    "dil": "es",
+    "yazi": "[ˈpaβlo piˈkaso]"
+   }
   },
   "paolo-uccello": {
    "dil": "it",
    "ses": null,
    "portre": "Cinq maîtres de la Renaissance florentine - Uccello (Louvre).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈpaːolo utˈtʃɛllo]"
+   }
   },
   "paolo-veronese": {
    "dil": "it",
    "ses": null,
    "portre": "Paolo Veronese - AUTORITRATTO (2) - Museo dell'Ermitage.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈpaːolo veroˈneːze, -eːse]"
+   }
   },
   "parmigianino": {
    "dil": "it",
    "ses": null,
    "portre": "Parmigianino Selfportrait.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[parmidʒaˈniːno]"
+   }
   },
   "paul-cezanne": {
    "dil": "fr",
    "ses": null,
    "portre": "Paul-Cezanne.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[pɔl sezan]"
+   }
   },
   "paul-gauguin": {
    "dil": "fr",
    "ses": null,
    "portre": "Paul Gauguin 1891.png",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[øʒɛn ɑ̃ʁi pɔl ɡoɡɛ̃]"
+   }
   },
   "paul-signac": {
    "dil": "fr",
    "ses": null,
    "portre": "Paul Signac 1923.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[pɔl siɲak]"
+   }
   },
   "peter-paul-rubens": {
    "dil": "nl",
    "ses": null,
    "portre": "Sir Peter Paul Rubens - Portrait of the Artist - Google Art Project.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[ˈpeːtər pʌul ˈrybəns]"
+   }
   },
   "petrus-christus": {
    "dil": "nl",
    "ses": null,
    "portre": "Petrus christus, ritratto d'uomo con falcone.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[ˈpeːtrʏs ˈkrɪstʏs, ˈxrɪs-]"
+   }
   },
   "phidias": {
    "dil": null,
    "ses": null,
-   "portre": null
+   "portre": null,
+   "ipa": {
+    "dil": "en",
+    "yazi": "/ˈfɪdiəs/"
+   }
   },
   "piero-della-francesca": {
    "dil": "it",
    "ses": null,
    "portre": "Resurrection detail.JPG",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈpjɛːro della franˈtʃeska]"
+   }
   },
   "pierre-auguste-renoir": {
    "dil": "fr",
    "ses": null,
    "portre": "Pierre Auguste Renoir, uncropped image.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[pjɛʁ oɡyst ʁənwaʁ]"
+   }
   },
   "pierre-puvis-de-chavannes": {
    "dil": "fr",
    "ses": null,
    "portre": "Pierre-Cécile Puvis de Chavannes BNF Gallica.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[pjɛʁ pyvi də ʃavan]"
+   }
   },
   "pieter-bruegel-yasl": {
    "dil": "nl",
    "ses": null,
    "portre": "Pieter Bruegel the Elder - The Painter and the Buyer, ca. 1566 - Google Art Project.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[ˈpitər ˈbrøːɣəl]"
+   }
   },
   "pietro-lorenzetti": {
    "dil": "it",
    "ses": null,
    "portre": "010 le vite, pietro laurati.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈpjɛːtro lorenˈtsetti]"
+   }
   },
   "pietro-perugino": {
    "dil": "it",
    "ses": null,
    "portre": "Pietro Perugino 031.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈpjɛːtro peruˈdʒiːno]"
+   }
   },
   "polykleitos": {
    "dil": null,
    "ses": null,
-   "portre": null
+   "portre": null,
+   "ipa": {
+    "dil": "en",
+    "yazi": "/,pOli'klaito:s/"
+   }
   },
   "praxiteles": {
    "dil": null,
    "ses": null,
-   "portre": null
+   "portre": null,
+   "ipa": {
+    "dil": "en",
+    "yazi": "/prækˈsɪtᵻliːz/"
+   }
   },
   "quentin-metsys": {
    "dil": "nl",
@@ -1094,20 +1567,32 @@
    "ses": null,
    "portre": "Raffaello Sanzio.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[raffaˈɛllo ˈsantsjo da urˈbiːno]"
+   }
   },
   "rembrandt-van-rijn": {
    "dil": "nl",
    "ses": "Rembrandtvanrijn.ogg",
    "portre": "Rembrandt van Rijn - Self-Portrait - Google Art Project.jpg",
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[ˈrɛmbrɑnt ˈɦɑrmə(n)ˌsoːɱ vɑn ˈrɛin]"
+   }
   },
   "rene-magritte": {
    "dil": "fr",
    "ses": null,
    "portre": "René Magritte in 1961.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʁəne fʁɑ̃swa ɡilɛ̃ maɡʁit]"
+   }
   },
   "robert-campin": {
    "dil": "nl",
@@ -1120,7 +1605,11 @@
    "ses": null,
    "portre": "Rogier van der Weyden by Jan Wierix, 1572.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[roːˈɣiːr vɑn dər ˈʋɛidə(n)]"
+   }
   },
   "rosso-fiorentino": {
    "dil": "it",
@@ -1134,7 +1623,11 @@
    "ses": null,
    "portre": "Salvador Dalí 1939.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "es",
+    "yazi": "[salβaˈðoɾ ðaˈli]"
+   }
   },
   "salvator-rosa": {
    "dil": "it",
@@ -1148,7 +1641,11 @@
    "ses": null,
    "portre": "Sandro Botticelli Self-portrait ca 1475.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[ˈsandro bottiˈtʃɛlli]"
+   }
   },
   "sebastiano-ricci": {
    "dil": "it",
@@ -1176,21 +1673,33 @@
    "ses": null,
    "portre": "Horace Vernet, Jean-Louis-André-Théodore Gericault, probably 1822 or 1823, 1998.84, MET.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[ʒɑ̃lwi ɑ̃dʁe teɔdɔʁ ʒeʁiko]"
+   }
   },
   "theodore-rousseau": {
    "dil": "fr",
    "ses": null,
    "portre": "Theodore Rousseau.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[etjɛn pjɛʁ teɔdɔʁ ʁuso]"
+   }
   },
   "thomas-gainsborough": {
    "dil": "en",
    "ses": null,
    "portre": "Thomas Gainsborough by Thomas Gainsborough.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "en",
+    "yazi": "/ˈgeɪnzbərə/"
+   }
   },
   "thomas-jefferson": {
    "dil": "en",
@@ -1204,20 +1713,32 @@
    "ses": null,
    "portre": "Tintoretto - Self-Portrait as a Young Man, ca. 1548, CAI.103 (cropped).jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[tintoˈretto]"
+   }
   },
   "titian": {
    "dil": "it",
    "ses": null,
    "portre": "Vecellio di Gregorio Tiziano - autoritratto.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "it",
+    "yazi": "[titˈtsjaːno veˈtʃɛlljo]"
+   }
   },
   "utagawa-hiroshige": {
    "dil": null,
    "ses": null,
    "portre": "Memorial Portrait of Hiroshige, by Kunisada.jpg",
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "ja",
+    "yazi": "[ɯ̈̀.tä́.ɡä́.β̞ä́ {{!}} çì.ɾó̞.ɕì.ɡè̞, -β̞ä́ çí-, -ŋä́.β̞ä́, -ɕì.ŋè̞, -ɕí.ɡé̞, -ɕí.ŋé̞]"
+   }
   },
   "valentin-de-boulogne": {
    "dil": "fr",
@@ -1230,21 +1751,33 @@
    "ses": null,
    "portre": "Self-portrait - Vincent van Gogh.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "nl",
+    "yazi": "[ˈvɪnsɛnt ˈʋɪləɱ vɑŋ ˈɣɔx]"
+   }
   },
   "wassily-kandinsky": {
    "dil": "de",
    "ses": null,
    "portre": "Wassily kandinsky.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "ru",
+    "yazi": "[vɐˈsʲilʲɪj vɐˈsʲilʲjɪvʲɪtɕ kɐnʲˈdʲinskʲɪj]"
+   }
   },
   "william-adolphe-bouguereau": {
    "dil": "fr",
    "ses": null,
    "portre": "William-Adolphe Bouguereau photo.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "fr",
+    "yazi": "[wiljam adɔlf buɡ(ə)ʁo]"
+   }
   },
   "william-blake": {
    "dil": "en",
@@ -1258,7 +1791,11 @@
    "ses": null,
    "portre": "The Painter and His Pug by William Hogarth.jpg",
    "okunus": true,
-   "portre_en": 600
+   "portre_en": 600,
+   "ipa": {
+    "dil": "en",
+    "yazi": "/ˈhoʊgɑrθ/"
+   }
   },
   "william-holman-hunt": {
    "dil": "en",
