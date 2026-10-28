@@ -25,6 +25,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   const imlecler = new Map();
   let jest = null;
   let sonDokunma = 0;
+  let tekDokunma = 0; // İş 54: tek dokunuş arayüzü gizler/gösterir (çift dokunuşu beklemek için gecikmeli)
   const onceOdak = document.activeElement;
 
   const kok = document.createElement('div');
@@ -184,6 +185,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   function kapat({ sonra } = {}) {
     if (kapandi) return;
     kapandi = true;
+    clearTimeout(tekDokunma);
     window.removeEventListener('popstate', gerideKapat);
     window.removeEventListener('atlas-notlar', notlarGeldi);
     document.removeEventListener('keydown', tus);
@@ -328,6 +330,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     if (Math.abs(dx) < 10 && Math.abs(dy) < 10 && sure < 300) {
       const simdi = Date.now();
       if (simdi - sonDokunma < 320) {
+        clearTimeout(tekDokunma);
         if (olcek > 1) sifirla();
         else {
           const c = merkez();
@@ -338,7 +341,12 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
         }
         uygula(true);
         sonDokunma = 0;
-      } else sonDokunma = simdi;
+      } else {
+        sonDokunma = simdi;
+        // tek dokunuş: Fotoğraflar uygulamasındaki gibi oklar, düğmeler ve açıklama gizlenir/gösterilir
+        clearTimeout(tekDokunma);
+        tekDokunma = setTimeout(() => kok.classList.toggle('sade'), 320);
+      }
     }
   }
   sahne.addEventListener('pointerup', birak);

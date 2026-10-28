@@ -1322,3 +1322,12 @@ Emre: "galeride bir resimdeyim, soldan sağa kaydırınca geri geliyor gibi oluy
 - **Çift dokununca yakınlaşma (v1.47.6):** Emre: görüntüleyicide ileri okuna hızlıca iki kez dokununca ekran yakınlaşıyor. Önceki denetimde yalnız sayfanın boş yerlerine çift dokunmuştum, düğmelere değil; yanılmışım. `touch-action: manipulation` kökte (`html`) ve düğme/bağlantılarda: kaydırma ve iki parmakla yakınlaştırma serbest, çift dokunma yakınlaştırması kapalı. Görüntüleyici sahnesi (`none`, kendi 2,5× çift dokunuşu JS'te) ve zaman şeridi (`pan-x pan-y`) kendi kurallarıyla kalır.
 - Değişmeyenler: dokunma parlaması her yerde kapalıydı. Turun ortasında iOS'un geri hareketi Atölye menüsüne döner, tur kaybolmaz ("Kaldığın yerden devam et").
 - Test: `tests/e2e/cilalama.spec.js` (yazı alanları ≥16 pt; kuralın soru görseline uyduğu seçiciden denetlenir, çünkü Chromium `-webkit-touch-callout`'u tanımaz).
+
+## İş 54 · Görüntüleyici: tek dokunuşla sade görünüm, yatay ekranda tam ekran (2026-10-28, v1.48.0)
+
+Emre'nin ekran görüntüsündeki Siena freski gibi geniş eserler dikey ekranda küçük, üstte altta siyah boşluk; insan telefonu yan çevirip büyük görmek ister. Manifest `orientation: portrait` diyor ama iOS ana ekran uygulamasında bunu uygulamıyor: döndürme kilidi kapalıysa uygulama yan döner, yatay için hiç kural yoktu.
+- **Yatay ekran (alçak ve geniş, `max-height: 500px`):** açıklama kartı ekranın yarısını kaplıyor, resme ~140 pt kalıyordu → resim bütün ekranı kaplar, açıklama alttan koyuya geçişli şerit olarak resmin üstünde (en çok %48, not iki satır, "Görsel kötü" sağda).
+- **Tek dokunuş = sade görünüm** (Fotoğraflar uygulaması gibi, her yönde): oklar, X, kaydet ve açıklama solar, resim bütün ekranı kullanır; bir daha dokununca geri gelir. Çift dokunuşla (2,5×) karışmasın diye tek dokunuş 320 ms bekler, ikinci dokunuş gelirse iptal.
+- **Yatay soru ekranı değiştirilmedi:** beş soru türü ve alttan açılan cevap yaprağı yatay için yeniden düzenlenmeli, bozma riski kazançtan büyük; sınav çoğu zaman dik yapılıyor. Emre'ye soruldu.
+- Sayfalar yatayda ortada bir sütun, iki yan koyu: kullanılabilir.
+- Test: `tests/e2e/cilalama.spec.js` (tek dokunuş sade/geri, çift dokunuş yakınlaştırır ve gizlemez; yatayda sahne tam yükseklik, açıklama altta).
