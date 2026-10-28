@@ -19,7 +19,7 @@ from pathlib import Path
 from PIL import Image
 
 KOK = Path(__file__).resolve().parent.parent
-UA = 'SanatAtlasi/1.0 (personal study app; emreyaman1024@gmail.com)'
+UA = 'SanatAtlasi/1.0 (personal study app; emreyaman0585@gmail.com)'
 SES = KOK / 'gorseller' / 'ses'
 PORTRE = KOK / 'gorseller' / 'portre'
 # Portre sayfada adın arkasında 250×330 pt gösterilir (İş 49b); 2,4 kat yoğunluk için 600×792 px, kaynak 960 px küçük resim
@@ -54,7 +54,9 @@ PORTRE_DEGIL = {
     'dirck-van-baburen',  # kendi tablosu (lavta çalan)
     'limbourg-kardesler',  # minyatürden kalabalık ayrıntısı
     'phidias', 'giotto-di-bondone', 'donatello', 'nicola-pisano',  # ölümünden yüzyıllar sonra yapılmış hayalî heykel/büst
+    'jacob-van-ruisdael',  # Hamburg Kunsthalle cephesindeki XIX. yüzyıl madalyonu
 }
+# Elle kesilenler (betik bunları ezmez: yalnız küçük kare dosyaları yeniler): pablo-picasso — fotoğrafta iki kişi, yalnız Picasso alındı
 
 
 def getir(url, deneme=6):

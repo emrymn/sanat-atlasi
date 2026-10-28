@@ -16,7 +16,7 @@ from PIL import Image, ImageFilter
 
 KOK = Path(__file__).resolve().parent.parent
 HEDEF = KOK / 'gorseller' / 'imza'
-UA = 'SanatAtlasi/1.0 (personal study app; emreyaman1024@gmail.com)'
+UA = 'SanatAtlasi/1.0 (personal study app; emreyaman0585@gmail.com)'
 BOY = 240
 BEKLE = 1.5
 

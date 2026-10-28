@@ -582,8 +582,7 @@
   "jacob-van-ruisdael": {
    "dil": "nl",
    "ses": "Jacobvanruisdael.ogg",
-   "portre": "Ruisdael Jacob KunsthalleHamburg.jpg",
-   "portre_en": 600
+   "portre": null
   },
   "jacopo-pontormo": {
    "dil": "it",
@@ -837,7 +836,7 @@
    "dil": "es",
    "ses": null,
    "portre": "1973 Dokfilm Picasso de Lucien Clergue Condor Films.jpg",
-   "portre_en": 570
+   "portre_en": 278
   },
   "paolo-uccello": {
    "dil": "it",
