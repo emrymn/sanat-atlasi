@@ -86,3 +86,20 @@ test('Bugün: iOS izni hatırlıyorsa düğme çıkmaz, hareket hemen başlar', 
   await expect(page.locator('[data-ayar-egim]')).toBeChecked();
   await expect(page.locator('[data-egim-izin]')).toBeHidden();
 });
+
+test('Pekiştir: izin unutulmuşsa destenin altında “Hareketi aç”; dokununca çevirmek desteyi yelpaze açar (İş 47)', async ({ page, context }) => {
+  await agiHazirla(context);
+  await iPhoneIzni(context);
+  await page.goto('./#/pekistir');
+  const sahne = page.locator('.pk-sahne');
+  await expect(sahne.locator('.pk-kart').first()).toBeVisible();
+  const dugme = sahne.locator('[data-egim-dugme]');
+  await expect(dugme).toBeVisible();
+  await dugme.click();
+  await expect(sahne).toHaveClass(/egimli/);
+  await expect(dugme).toBeHidden();
+  await donus(page, 120, 0.4);
+  await expect.poll(() => sahne.evaluate((e) => parseFloat(e.style.getPropertyValue('--acilim')) || 0)).toBeGreaterThan(0.3);
+  // sağa dönünce deste sola yatar
+  await expect.poll(() => sahne.evaluate((e) => parseFloat(e.style.getPropertyValue('--yatma')) || 0)).toBeLessThan(-1);
+});

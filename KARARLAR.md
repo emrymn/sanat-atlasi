@@ -1214,3 +1214,10 @@ Emre: telefonu hareket ettirince çıkan animasyon (Bugün'ün tablosu, bölüm 
 2. Hareket `js/sallanma.js` ile aynen (sarkaç, uzun ipli daha ağır; izin, "Hareketi aç" düğmesi, Ayarlar'daki anahtar ve hareket azaltma aynı). Dönme noktası çivi (`.asi`'nin üstü). Çerçeveler sergi duvarındakilerin iki katından büyük olduğu için tam eğimde 9° yerine 5° (`sallanmaBaslat`'a isteğe bağlı açı): 9°'de aşmayla alt köşeler duvarın kenarından taşıyordu. Asılış animasyonu var; çok eserde son eser beklemesin diye gecikme 8. eserde sabitlenir.
 3. Test: `tests/e2e/paket8.spec.js` K4 testine jiroskop olayıyla tablonun salınması eklendi. Sürüm 1.41.0 + Yenilikler satırı.
 
+## İş 47 · Pekiştir'in destesi eğimle yelpaze açılır (2026-10-28, v1.42.0)
+
+Emre önerilerden "Bugünkü turun destesi"ni seçti ("bu kadar sallanma özelliği yeter").
+1. `js/deste.js`: Pekiştir'in başındaki üç kartlık deste telefonu sağa sola çevirince yelpaze açılır (kenar kartlar en çok 11° daha döner, 14 px açılır, deste 6 px kalkar) ve dönüş yönünün tersine 6° yatar. Eğim bırakınca jiroskop toplamı söndüğü için deste kendiliğinden toplanır; açılım ve yatma iki yay (sallanma.js'nin `sarkacAdim`'ı, sertlik 90, sürtünme 6): toplanırken bir iki kez yaylanır. Durulunca döngü durur.
+2. Kartların geliş ve "nefes" animasyonları `transform` kullandığından eğim `rotate` ve `translate` ile eklenir. Kök `.pk-sahne`; "Hareketi aç" düğmesi destenin altında (deste `aria-hidden` olduğu için düğme dışında). Ayarlar'daki hareket anahtarına ve hareket azaltmaya uyar; anahtarın açıklaması hareketin bütün yerlerini sayar.
+3. Test: `tests/unit/deste.test.mjs` (hedef), `tests/e2e/egim.spec.js` (jiroskop olayıyla deste açılır). Sürüm 1.42.0 + Yenilikler satırı.
+

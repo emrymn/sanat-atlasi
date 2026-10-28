@@ -85,6 +85,7 @@ import { akrabaMi } from '../celdirici.js';
 import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
 import { yonlendir } from './yonlendirme.js';
 import { sallanmaBaslat } from '../sallanma.js';
+import { desteBaslat } from '../deste.js';
 
 // ---------- İş 24 · harita bölümleri ----------
 const BOLUM_SV_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor', tanitim: 'Tanıtım', 'tanitim-orta': 'Orta tanıtımı' };
@@ -125,6 +126,7 @@ function turSahnesi(karisik) {
       <div class="pk-deste${deste.length ? '' : ' bos'}" aria-hidden="true">${deste
         .map((x, i) => `<span class="pk-kart" style="--i:${i}"><span class="kucuk-kare" data-kucuk="${kacis(x.s.id)}"></span></span>`)
         .join('')}</div>
+      <button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 16, 1.6)}Hareketi aç</button>
       <div class="pk-govde">
         ${etiket('Bugünkü tur', { vurgu: true })}
         <p class="pk-sayi"><b>${karisik.toplam}</b><span>kart<br>~${dk} dk</span></p>
@@ -223,7 +225,8 @@ export function pekistirMenusu() {
         : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
     }`,
   );
-  kucukKareleriDoldur();
+  kucukKareleriDoldur();  // telefonu çevirince bugünkü turun destesi yelpaze açılır (İş 47; Ayarlar'daki hareket seçimine uyar)
+  desteBaslat(ekran.querySelector('.pk-sahne'), d.ilerleme.ayarlar.egim !== false);
 }
 
 // Sıralama ve hedef değişince menü yerinde yeniden çizilir; kaydırma yeri korunur

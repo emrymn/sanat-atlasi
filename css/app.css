@@ -8191,6 +8191,29 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .pk-deste.bos {
   min-height: 80px;
 }
+/* Telefonu çevirince yelpaze açılır, deste yatar (İş 47; js/deste.js --acilim ve --yatma yazar). Kartların gelişi ve
+   nefesi transform kullandığından eğim ayrı özelliklerle (rotate, translate) eklenir: çakışmaz. */
+.pk-sahne.egimli .pk-kart {
+  rotate: calc((var(--i) - 1) * var(--acilim, 0) * 11deg + var(--yatma, 0deg));
+  translate: calc((var(--i) - 1) * var(--acilim, 0) * 14px) calc(var(--acilim, 0) * -6px);
+}
+/* iOS izni hatırlamıyorsa destenin altında "Hareketi aç" (izin yalnız buna dokununca istenir) */
+.pk-sahne.egim-izinsiz .egim-dugme {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  margin: -2px 0 10px;
+  padding: 0 14px 0 12px;
+  border: 1px solid rgba(201, 162, 74, 0.7);
+  border-radius: 999px;
+  background: rgba(var(--bg-rgb), 0.62);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  backdrop-filter: blur(14px) saturate(1.3);
+  color: var(--ink);
+  font: 600 13px/1 var(--sans);
+}
 
 .pk-govde,
 .ilr-govde {
