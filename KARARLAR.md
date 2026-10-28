@@ -1345,3 +1345,10 @@ Konular'dan (İş 55) sonra her ekranın boyu, her şey açıkken (geliştirici 
 - **Başyapıtlar ~14 → ~5 ekran:** 29 akım satırı vardı, çoğunda 1–3 eser (seyrek ve uzun). Haritanın 9 dönemine göre gruplandı (`bolgeBul(akım sırası)`): başlıkta dönemin adı ve yüzyılı, şeritte dönemin akımları sırayla; her kartın altında akımın renkli noktası ve adı.
 - **Defter ~8,7 → ~6 ekran:** "Akımlara göre doğruluk" her açık akımı kart olarak diziyordu, cevap verilmemişleri de "henüz cevap yok" diye tek tek. Artık kart yalnız cevap verilmiş akımlar için; cevapsızlar altta tek bölümde haplar ("Henüz cevap vermediğin N akım"), hapa dokununca o dönemin turu.
 - Test: `tests/e2e/cilalama.spec.js`.
+
+## İş 57 · Eseri açıp kapatınca sayfa en başa zıplıyordu (2026-10-28, v1.48.3)
+
+Etkileşimli ekranlarda "aşağıdayken bir şeye dokun, kaydırma yeri değişti mi" ölçüldü. Ayarlar, Atölye ve Defter yerinde kalıyor; üç yerde zıplama vardı:
+- **Sanatçı ve akım sayfalarında görüntüleyiciyi açıp kapatınca sayfa en başa gidiyordu.** Hiçbir kod `scrollTo` çağırmıyordu: görüntüleyicinin geçmiş kaydı (İş 52) geri alınırken (`popstate`) tarayıcı kendi kaydırma geri yüklemesiyle sayfayı en başa koyuyordu. `history.scrollRestoration` her geçmiş kaydında ayrı tutuluyor; İş 51'de yalnız açılıştaki kayıt için "manual" yapılmıştı, sonraki kayıtlar "auto" başlayabiliyor. Düzeltme: yönlendirici her adres değişiminde ve görüntüleyici kendi kaydını eklerken yeniden "manual" yapar; ayrıca görüntüleyici açılışta sayfanın kaydırma yerini not eder, kapanınca (X, aşağı kaydırma, Esc, iOS geri hareketi) o yere döner.
+- **Koleksiyonum:** görüntüleyici kapanınca duvar yeniden çiziliyor (`ciz()` en başa alır) → kaydırma yeri korunur.
+- Test: `tests/e2e/cilalama.spec.js` (X ile ve geri hareketiyle kapanınca kaydırma yeri aynı).

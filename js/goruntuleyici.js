@@ -50,10 +50,16 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   // kapanınca kayıt geri alınır, geçmişte fazladan adım kalmaz.
   let kayitVar = true;
   let kapandi = false;
+  // sayfanın kaydırma yeri: geri dönüşte tarayıcı kendi kaydırma geri yüklemesiyle sayfayı en başa atabiliyordu
+  // (scrollRestoration her geçmiş kaydında ayrı); kapanınca bu yere dönülür (İş 57)
+  const sayfaY = window.scrollY;
+  const yerineDon = () => requestAnimationFrame(() => window.scrollTo(0, sayfaY));
   history.pushState({ ...(history.state || {}), gor: true }, '');
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   const gerideKapat = () => {
     kayitVar = false;
     kapat();
+    yerineDon();
   };
   window.addEventListener('popstate', gerideKapat);
 
@@ -195,7 +201,14 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     if (kapaninca) kapaninca(sira);
     if (kayitVar) {
       kayitVar = false;
-      if (sonra) window.addEventListener('popstate', () => sonra(), { once: true });
+      window.addEventListener(
+        'popstate',
+        () => {
+          if (sonra) sonra();
+          else yerineDon();
+        },
+        { once: true },
+      );
       history.back();
     } else if (sonra) sonra();
   }

@@ -250,3 +250,23 @@ test('Başyapıtlar haritanın dönemlerine göre gruplanır, kartta akımın ad
   const hap = cevapsiz.locator('a').first();
   await expect(hap).toHaveAttribute('href', /#\/pekistir\/donem\//);
 });
+
+// İş 57: görüntüleyiciyi açıp kapatınca sayfa en başa zıplamaz (X ile de geri hareketiyle de)
+test('görüntüleyici kapanınca sayfa kaldığı yerde: X ile ve geri hareketiyle', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  const eser = page.locator('.eser').nth(3);
+  await expect(eser).toBeAttached();
+  await eser.evaluate((e) => e.scrollIntoView({ block: 'center' }));
+  const once = await y(page);
+  expect(once).toBeGreaterThan(50);
+  await eser.evaluate((e) => e.click());
+  await page.locator('.gor').getByRole('button', { name: 'Kapat' }).click();
+  await expect(page.locator('.gor')).toHaveCount(0);
+  await expect.poll(() => y(page)).toBe(once);
+  await eser.evaluate((e) => e.click());
+  await expect(page.locator('.gor')).toBeVisible();
+  await page.goBack();
+  await expect(page.locator('.gor')).toHaveCount(0);
+  await expect.poll(() => y(page)).toBe(once);
+});
