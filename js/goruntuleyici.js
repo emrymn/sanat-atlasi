@@ -17,6 +17,9 @@ export function kaynakYazisi(eser, gorsel) {
 // notu: (eser) → kısa açıklama (data/eser_notlari.json); gizliyken (cevaptan önce) gösterilmez
 // koleksiyon: { varMi(eser), degistir(eser) → yeni durum } — K4, sağ üstte işaret düğmesi (yoksa düğme çıkmaz)
 // bildir: (eser, neden, gorsel) → bildirimden sonra seçilen görsel — İ5, "⋯" menüsü (yoksa menü çıkmaz)
+// sol kenardan başlayan dokunuş "geri" sayılır (pt)
+const KENAR = 28;
+
 export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null, koleksiyon = null, bildir = null }) {
   let sira = baslangic;
   let olcek = 1;
@@ -177,6 +180,21 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     if (kapaninca) kapaninca(sira);
   }
 
+  // Sol kenardan sağa kaydırma ya da ilk eserde sağa kaydırma: iPhone'daki "geri" gibi görüntüleyici sağa kayıp
+  // kapanır (İş 52; ana ekrana eklenen uygulamada iOS bu hareketi kendisi vermiyor)
+  function kaydirarakKapat() {
+    kok.style.transition = 'transform .22s ease-out, opacity .22s ease-out';
+    kok.style.transform = 'translateX(100%)';
+    kok.style.opacity = '0';
+    setTimeout(kapat, 220);
+  }
+  function kenarGeriBirak(dx) {
+    kok.style.transition = 'transform .2s ease-out, opacity .2s ease-out';
+    if (dx > Math.min(110, innerWidth * 0.28)) return kaydirarakKapat();
+    kok.style.transform = '';
+    kok.style.opacity = '';
+  }
+
   function tus(e) {
     if (e.key === 'Escape') kapat();
     else if (e.key === 'ArrowLeft') git(-1);
@@ -229,7 +247,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       const c = merkez();
       jest = { tur: 'kistir', mesafe: Math.hypot(a.x - b.x, a.y - b.y) || 1, olcek, px: (m.x - c.x - tx) / olcek, py: (m.y - c.y - ty) / olcek };
     } else if (n === 1) {
-      jest = { tur: 'tek', x: e.clientX, y: e.clientY, tx, ty, zaman: Date.now() };
+      jest = { tur: 'tek', x: e.clientX, y: e.clientY, tx, ty, zaman: Date.now(), kenar: olcek <= 1 && e.clientX < KENAR };
     }
   });
 
@@ -247,6 +265,13 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     } else if (jest.tur === 'tek') {
       const dx = e.clientX - jest.x;
       const dy = e.clientY - jest.y;
+      if (jest.kenar) {
+        // kenardan geri: resim değil bütün görüntüleyici parmağı izler
+        kok.style.transition = 'none';
+        kok.style.transform = `translateX(${Math.max(0, dx)}px)`;
+        kok.style.opacity = String(1 - Math.min(0.5, Math.max(0, dx) / innerWidth));
+        return;
+      }
       if (olcek > 1) {
         tx = jest.tx + dx;
         ty = jest.ty + dy;
@@ -275,11 +300,15 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     const dy = e.clientY - jest.y;
     const sure = Date.now() - jest.zaman;
     const kistirmadan = jest.kistirmadan;
+    const kenar = jest.kenar;
     jest = null;
+    if (kenar) return kenarGeriBirak(e.type === 'pointercancel' ? 0 : dx);
     if (olcek > 1) {
       sinirla();
       uygula(true);
     } else if (!kistirmadan && Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy)) {
+      // ilk eserde sağa: önceki eser yok, geri (kapat)
+      if (dx > 0 && sira === 0) return kaydirarakKapat();
       git(dx < 0 ? 1 : -1);
     } else if (!kistirmadan && dy > 120 && Math.abs(dy) > Math.abs(dx)) {
       kapat();

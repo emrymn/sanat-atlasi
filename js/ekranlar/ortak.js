@@ -506,6 +506,76 @@ if (typeof window !== 'undefined') {
   for (const olay of ['pointerdown', 'wheel', 'keydown']) window.addEventListener(olay, birak, { passive: true });
 }
 
+// ---------- Sol kenardan sağa kaydırınca geri (İş 52) ----------
+// Ana ekrana eklenen uygulamada iOS bu hareketi vermiyor. Geri düğmesi olan ekranlarda sol kenardan başlayan
+// yatay kaydırma sayfayı parmakla birlikte kaydırır; yeterince çekilip bırakılınca geri düğmesine basılmış olur.
+// Kaydırılmış yatay bir şeridin içinden başlarsa hareket şeridin olur.
+const KENAR_PT = 24;
+if (typeof window !== 'undefined') {
+  let k = null;
+  const bitir = (gec) => {
+    if (!k) return;
+    const { geriDugme, kilitli } = k;
+    k = null;
+    if (!kilitli) return;
+    ekran.style.transition = 'transform .22s ease-out, opacity .22s ease-out';
+    if (gec) {
+      ekran.style.transform = 'translateX(100%)';
+      ekran.style.opacity = '0.4';
+      setTimeout(() => geriDugme.click(), 180);
+      // yeni ekran ciz() ile çizilmezse (ör. hata ekranı) sayfa kaymış kalmasın
+      setTimeout(() => {
+        if (ekran.style.transform) {
+          ekran.style.transition = ekran.style.transform = ekran.style.opacity = '';
+        }
+      }, 1500);
+    } else {
+      ekran.style.transform = '';
+      ekran.style.opacity = '';
+    }
+  };
+  window.addEventListener(
+    'touchstart',
+    (e) => {
+      k = null;
+      if (e.touches.length !== 1 || document.documentElement.classList.contains('gor-acik')) return;
+      const t = e.touches[0];
+      if (t.clientX > KENAR_PT) return;
+      const geriDugme = ekran.querySelector('.geri');
+      if (!geriDugme) return;
+      for (let x = e.target instanceof Element ? e.target : null; x && x !== ekran; x = x.parentElement) if (x.scrollLeft > 0) return;
+      k = { x: t.clientX, y: t.clientY, zaman: Date.now(), geriDugme, kilitli: false, dx: 0 };
+    },
+    { passive: true },
+  );
+  window.addEventListener(
+    'touchmove',
+    (e) => {
+      if (!k) return;
+      const t = e.touches[0];
+      const dx = t.clientX - k.x;
+      const dy = t.clientY - k.y;
+      if (!k.kilitli) {
+        if (Math.abs(dy) > 12 && Math.abs(dy) > Math.abs(dx)) return (k = null); // dikey kaydırma: dokunma
+        if (dx < 10) return;
+        k.kilitli = true;
+      }
+      e.preventDefault();
+      k.dx = Math.max(0, dx);
+      ekran.style.transition = 'none';
+      ekran.style.transform = `translateX(${k.dx}px)`;
+      ekran.style.opacity = String(1 - Math.min(0.4, k.dx / innerWidth));
+    },
+    { passive: false },
+  );
+  window.addEventListener('touchend', () => {
+    if (!k) return;
+    const hiz = k.dx / Math.max(1, Date.now() - k.zaman);
+    bitir(k.dx > Math.min(110, innerWidth * 0.28) || (k.dx > 40 && hiz > 0.5));
+  });
+  window.addEventListener('touchcancel', () => bitir(false));
+}
+
 function yerineDon(hedef) {
   const bitis = performance.now() + 2500;
   const adim = () => {
@@ -522,6 +592,10 @@ export function ciz(html, hareket) {
   ekran.dataset.hareket = hareket ?? (adres !== sonCizilenAdres ? 'giris' : '');
   sonCizilenAdres = adres;
   ekran.classList.remove('perde');
+  // kenardan geri kaydırması bittiyse yeni ekran yerinde
+  ekran.style.transition = '';
+  ekran.style.transform = '';
+  ekran.style.opacity = '';
   ekran.innerHTML = html;
   ekran.style.paddingBottom = '';
   if (geriHedefi && geriHedefi.adres === adres) yerineDon(geriHedefi);
