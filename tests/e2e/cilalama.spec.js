@@ -176,3 +176,42 @@ test('iPhone: çift dokunma yakınlaştırması kapalı (görüntüleyici oklar�
   expect(await ta('.gor .gor-kapat')).toBe('manipulation');
   expect(await ta('.gor .gor-sahne')).toBe('none');
 });
+
+// İş 54: görüntüleyicide tek dokunuş arayüzü gizler; yatay ekranda resim tam ekran
+test.describe('görüntüleyici dokunuş ve yatay ekran', () => {
+  test.use({ hasTouch: true, isMobile: true });
+
+  test('tek dokunuş arayüzü gizler/gösterir; çift dokunuş gizlemez, yakınlaştırır', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/sanatci/giotto-di-bondone');
+    await page.locator('.eser').first().click();
+    const gor = page.locator('.gor');
+    const sahne = await page.locator('.gor-sahne').boundingBox();
+    const x = sahne.x + sahne.width / 2;
+    const y = sahne.y + sahne.height / 3;
+    await page.touchscreen.tap(x, y);
+    await expect(gor).toHaveClass(/sade/);
+    await expect(page.locator('.gor-alt')).toHaveCSS('opacity', '0');
+    await page.touchscreen.tap(x, y);
+    await expect(gor).not.toHaveClass(/sade/);
+    // çift dokunuş: yakınlaşır, arayüz kalır
+    await page.touchscreen.tap(x, y);
+    await page.waitForTimeout(80);
+    await page.touchscreen.tap(x, y);
+    await page.waitForTimeout(600);
+    await expect(gor).not.toHaveClass(/sade/);
+    expect(await page.locator('.gor-resim').evaluate((e) => e.style.transform)).toContain('scale(2.5)');
+  });
+
+  test('yatay ekranda resim ekranın bütün yüksekliğini kullanır, açıklama alttan resmin üstünde', async ({ page, context }) => {
+    await page.setViewportSize({ width: 844, height: 390 });
+    await agiHazirla(context);
+    await page.goto('./#/sanatci/giotto-di-bondone');
+    await page.locator('.eser').first().click();
+    const sahne = await page.locator('.gor-sahne').boundingBox();
+    const alt = await page.locator('.gor-alt').boundingBox();
+    expect(sahne.height).toBeGreaterThanOrEqual(388);
+    expect(alt.y + alt.height).toBeLessThanOrEqual(391);
+    expect(alt.height).toBeLessThanOrEqual(390 * 0.5);
+  });
+});
