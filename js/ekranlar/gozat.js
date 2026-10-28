@@ -40,6 +40,8 @@ import {
 } from './ortak.js';
 import { donemCizelgesi, pekistirmedeMi, notBolumleri, seritUst, eserSeridi } from './bugun.js';
 import { kimlikDoldur, akimUslubu, pekistirDugmesi, bolumBasligi } from './akim.js';
+import { harfUygula, AKIM_HARFLERI } from '../harfler.js';
+import { imzaGoster } from '../imza.js';
 
 // ---------- Başyapıt yakın okumaları ----------
 let basyapitSozu = null;
@@ -356,6 +358,8 @@ export function akimSayfasi(ad) {
       <section class="akim-bolum">${bolumBasligi('Zaman çizgisi', 'Dönemi')}${donemCizelgesi(ad)}</section>
       <div data-kimlik-alt></div>
     </section>`);
+  // başlık akımın kendi harfiyle (İş 48)
+  harfUygula(ekran.querySelector('.ust h1'), AKIM_HARFLERI[ad]);
   kucukKareleriDoldur();
   // K3: kimlik bölümleri (palet, özellikler, eserler, karşılaştırma, tipik konular) arka planda dolar
   kimlikDoldur(ad).catch(() => {});
@@ -394,6 +398,7 @@ export async function sanatciSayfasi(id) {
     ${onemli}${emin}
     </article>`);
   basyapitBaglariniDoldur(s.id);
+  imzaGoster(s, ekran.querySelector('.isim-blok')); // İş 48: varsa ressamın gerçek imzası
   const eserler = await eserSozu;
   d.sonEserListesi = eserler; // testler ve hata ayıklama için
   const kutu = document.getElementById('eserler');

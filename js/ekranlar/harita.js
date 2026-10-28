@@ -10,6 +10,7 @@ import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_G
 import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
 import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen } from './ortak.js';
 import { sanatciEserleri } from '../eserler.js';
+import { harfUygula, BOLGE_HARFLERI } from '../harfler.js';
 
 // Öğrenci durağın yanında durur: sağdaki meydanlarda sembolün solunda, soldakilerde sağında (haritanın içine doğru)
 const YOLCU_ARA = 34;
@@ -117,6 +118,8 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     konumaKaydir();
     requestAnimationFrame(() => konumaKaydir());
   }
+  // köprülerdeki dönem adı o dönemin harfiyle (İş 48)
+  for (const g of ekran.querySelectorAll('[data-gecis]')) harfUygula(g.querySelector('.harita-gecis-yazi b'), BOLGE_HARFLERI[g.dataset.gecis]);
   konumIzle();
   gecisleriIzle();
   kaydirmaIzle();

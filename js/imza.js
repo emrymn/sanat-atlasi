@@ -1,0 +1,147 @@
+// Ressamın gerçek imzası (İş 48): Wikidata'daki imza görseli (P109, Commons dosyası), sanatçı sayfasında adın altında.
+// Doğruluk kuralı: imza yalnız doğrulanmış QID'in kaydından gelir (önbellek dosyasındaki ya da canlı Wikidata'nın
+// doğruladığı QID); QID yoksa ya da kayıtta imza yoksa hiçbir şey gösterilmez, tahmin yok.
+// Sıra: data/imzalar.json (scripts/imzalar.mjs ile önceden hesaplanır; dosya yoksa atlanır) → IndexedDB (30 gün
+// taze) → Wikidata wbgetentities. İmza yok bilgisi de saklanır, her açılışta yeniden sorulmaz.
+import { idbAl, idbKoy } from './idb.js';
+import { API, KULLANICI_AJANI, jsonGetiriciYap, gecerliIddialar } from './wikidata.js';
+import { hazirOnbellek, tazeMi } from './eserler.js';
+import { commonsKucuk } from './gorsel.js';
+
+// Varlığın imza dosyası: önce "tercih edilen" sıradaki, yoksa ilk geçerli iddia; yoksa null
+export function imzaDosyasi(varlik) {
+  if (!varlik) return null;
+  const iddialar = gecerliIddialar(varlik, 'P109');
+  const c = iddialar.find((x) => x.rank === 'preferred') || iddialar[0];
+  const v = c && c.mainsnak.datavalue.value;
+  return typeof v === 'string' && v.trim() ? v.trim() : null;
+}
+
+const getir = jsonGetiriciYap({ basliklar: { 'Api-User-Agent': KULLANICI_AJANI }, deneme: 2, zamanAsimi: 15000 });
+const anahtar = (id) => `imza:${id}`;
+
+let hazirSozu = null;
+function hazirImzalar() {
+  if (!hazirSozu)
+    hazirSozu = fetch('data/imzalar.json')
+      .then((y) => (y.ok ? y.json() : null))
+      .then((j) => (j && j.imzalar ? j.imzalar : null))
+      .catch(() => null);
+  return hazirSozu;
+}
+
+const bellek = new Map();
+
+// Sanatçının imza dosyası (Commons dosya adı) ya da null
+export function sanatciImzasi(s) {
+  if (!bellek.has(s.id)) bellek.set(s.id, bul(s).catch(() => null));
+  return bellek.get(s.id);
+}
+
+async function bul(s) {
+  const hazir = await hazirImzalar();
+  if (hazir && s.id in hazir) return hazir[s.id];
+  const kayit = await idbAl('eserler', anahtar(s.id));
+  if (kayit && tazeMi(kayit.zaman)) return kayit.dosya;
+  const eski = kayit ? kayit.dosya : null;
+  const onbellek = await hazirOnbellek();
+  const qid = onbellek?.sanatcilar?.[s.id]?.qid || (await idbAl('eserler', s.id))?.qid;
+  if (!qid || (typeof navigator !== 'undefined' && navigator.onLine === false)) return eski;
+  try {
+    const j = await getir(`${API}?action=wbgetentities&ids=${qid}&props=claims&format=json&origin=*`);
+    const dosya = imzaDosyasi(j?.entities?.[qid]);
+    await idbKoy('eserler', anahtar(s.id), { dosya, zaman: Date.now() });
+    return dosya;
+  } catch {
+    bellek.delete(s.id); // geçici hata: sonraki açılışta yeniden denenir
+    return eski;
+  }
+}
+
+// İmza görselini mürekkep maskesine çevirir: koyu mürekkep opak, kâğıt zemini (beyaz ya da saydam) tamamen saydam;
+// boş kenarlar kırpılır. Maskeyi temanın rengi boyar, böylece imza her temada yalnız mürekkep olarak görünür.
+// Görsel CORS'a kapalıysa (tuval kirlenir) null: o zaman düz görsel gösterilir.
+export function murekkepMaskesi(img, yukseklik = 120) {
+  try {
+    const olcek = Math.min(1, (yukseklik * 4) / Math.max(1, img.naturalHeight));
+    const w = Math.max(1, Math.round(img.naturalWidth * olcek));
+    const h = Math.max(1, Math.round(img.naturalHeight * olcek));
+    const t = document.createElement('canvas');
+    t.width = w;
+    t.height = h;
+    const c = t.getContext('2d', { willReadFrequently: true });
+    c.drawImage(img, 0, 0, w, h);
+    const v = c.getImageData(0, 0, w, h);
+    const p = v.data;
+    let x0 = w;
+    let y0 = h;
+    let x1 = -1;
+    let y1 = -1;
+    for (let i = 0; i < p.length; i += 4) {
+      const koyu = (1 - (0.299 * p[i] + 0.587 * p[i + 1] + 0.114 * p[i + 2]) / 255) * (p[i + 3] / 255);
+      const a = Math.max(0, Math.min(1, (koyu - 0.18) / 0.4)); // kâğıt lekesi ve gölge kaybolur, mürekkep tam opak
+      p[i] = p[i + 1] = p[i + 2] = 0;
+      p[i + 3] = Math.round(a * 255);
+      if (a > 0.1) {
+        const k = i / 4;
+        const x = k % w;
+        const y = (k - x) / w;
+        if (x < x0) x0 = x;
+        if (x > x1) x1 = x;
+        if (y < y0) y0 = y;
+        if (y > y1) y1 = y;
+      }
+    }
+    if (x1 < 0) return null;
+    c.putImageData(v, 0, 0);
+    const pay = 2;
+    x0 = Math.max(0, x0 - pay);
+    y0 = Math.max(0, y0 - pay);
+    const kw = Math.min(w, x1 + pay + 1) - x0;
+    const kh = Math.min(h, y1 + pay + 1) - y0;
+    const k = document.createElement('canvas');
+    k.width = kw;
+    k.height = kh;
+    k.getContext('2d').drawImage(t, x0, y0, kw, kh, 0, 0, kw, kh);
+    return { adres: k.toDataURL('image/png'), en: kw, boy: kh };
+  } catch {
+    return null;
+  }
+}
+
+function yukle(adres) {
+  return new Promise((coz, red) => {
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.decoding = 'async';
+    img.onload = () => coz(img);
+    img.onerror = red;
+    img.src = adres;
+  });
+}
+
+// İmzayı isim bloğunda adın altına koyar (yoksa ya da yüklenemezse hiçbir şey görünmez)
+export async function imzaGoster(s, kutu) {
+  if (!kutu) return;
+  const dosya = await sanatciImzasi(s);
+  if (!dosya || !kutu.isConnected || kutu.querySelector('.imza')) return;
+  // küçük bir dosyanın 500 px'lik küçük resmi üretilemez: o zaman özgün boyut
+  const img = await yukle(commonsKucuk(dosya, 400))
+    .catch(() => yukle(`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(dosya)}?width=400`))
+    .catch(() => null);
+  if (!img || !kutu.isConnected || kutu.querySelector('.imza')) return;
+  const m = murekkepMaskesi(img);
+  const el = document.createElement('span');
+  el.className = m ? 'imza' : 'imza duz';
+  el.setAttribute('role', 'img');
+  el.setAttribute('aria-label', `${s.ad} imzası`);
+  el.dataset.test = 'imza';
+  el.dataset.dosya = dosya;
+  if (m) {
+    el.style.aspectRatio = `${m.en} / ${m.boy}`;
+    el.style.setProperty('--imza', `url("${m.adres}")`);
+  } else el.append(img);
+  const ad = kutu.querySelector('.isim');
+  if (ad) ad.after(el);
+  else kutu.prepend(el);
+}

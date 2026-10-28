@@ -6,6 +6,7 @@ import { gorselUrl, gorselYedek, secilenGorsel } from '../gorsel.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { ikon } from '../tasarim.js';
 import { sallanmaBaslat } from '../sallanma.js';
+import { cerceveTipi } from '../cerceve.js';
 import { d, ekran, gununRengi, ciz, ust, notuIcin, gorselTercihi, kotuler } from './ortak.js';
 
 // Koleksiyondaki eserleri (en yeni işaretlenen başta) sanatçılarının eser listesinden bulur; bulunamayanlar atlanır
@@ -33,7 +34,7 @@ function duvarHtml(eserler) {
       return `<li class="koleksiyon-yer">
         <div class="asi" style="--i:${Math.min(i, 8)};--egim:${egim.toFixed(1)}deg;--ip:${ip}px">
           <span class="asi-ip" aria-hidden="true"></span>
-          <button class="eser koleksiyon-tablo" type="button" data-eser="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt"><span class="asi-cerceve"><img ${i > 3 ? 'loading="lazy" ' : ''}decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}"></span></button>
+          <button class="eser koleksiyon-tablo" type="button" data-eser="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt"><span class="asi-cerceve" data-cerceve="${cerceveTipi(d.harita.get(e.sid)?.akim)}"><img ${i > 3 ? 'loading="lazy" ' : ''}decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}"></span></button>
         </div>
         <p class="eser-yazi" aria-hidden="true">${kacis(eserBaslik(e))}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</p>
       </li>`;

@@ -48,6 +48,7 @@ import { devamKarti } from './pekistir.js';
 import { SURUM } from '../surum.js';
 import { gosterilecekler, yenilikYazisi } from '../yenilikler.js';
 import { egimBaslat } from '../egim.js';
+import { imzaGoster } from '../imza.js';
 
 // ---------- sayımlar ----------
 function istatistik() {
@@ -415,6 +416,7 @@ export async function gununSayfasi(id) {
     </article>`);
   const eserler = bilinirlikSirasi(await eserSozu);
   if (!guncelMi(no)) return;
+  imzaGoster(s, ekran.querySelector('.isim-blok')); // İş 48: varsa ressamın gerçek imzası
   const galeri = ekran.querySelector('[data-galeri]');
   if (!galeri) return;
   if (!eserler.length) {

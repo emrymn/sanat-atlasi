@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.43.0', metin: 'Duvarlardaki tablolar döneminin çerçevesinde: Gotik kemerli altın, Rönesans ahşap, Barok oymalı altın, Hollanda abanoz, Empresyonist beyaz… Akım sayfalarının başlığı ve haritadaki dönem adları o dönemin harfiyle. Sanatçı sayfasında, Wikidata’da varsa ressamın gerçek imzası.' },
   { surum: '1.42.0', metin: 'Pekiştir’de bugünkü turun destesi telefonu sağa sola çevirince iskambil gibi yelpaze açılır, bırakınca yaylanıp toplanır.' },
   { surum: '1.41.0', metin: 'Koleksiyonum artık bir duvar: işaretlediğin eserler çivilere iple asılı, telefonu sağa sola çevirince sallanır, bırakınca durulur (Ayarlar’daki hareket seçimine uyar).' },
   { surum: '1.40.0', metin: 'Haritada dönem ekleri: iki dönemin kenarı birbirine akar, haritalar tek parça görünür; ekte altın bir sınır çizgisi ve yeni dönemin adı. Eke gelince çizgi ortadan iki yana açılır, ad netleşir, çizgi boyunca ışık geçer.' },
