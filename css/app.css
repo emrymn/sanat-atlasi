@@ -3625,6 +3625,9 @@ main[data-hareket='giris'][data-yon='sol'] > :not(.alt-yaprak) {
 .bugun-kahraman.egimli .sahne-isim .ad-ilk {
   translate: calc(var(--yzx, 0) * 10px) calc(var(--yzy, 0) * 6px);
 }
+.bugun-kahraman.egimli .sahne-isim .imza {
+  translate: calc(var(--yzx, 0) * 14px) calc(var(--yzy, 0) * 9px);
+}
 .bugun-kahraman.egimli .sahne-isim .ad-son {
   position: relative;
   z-index: 0;
@@ -12709,11 +12712,16 @@ a.harita-seviye:active {
 /* Ressamın gerçek imzası (İş 48; js/imza.js): Wikidata'daki imza görseli adın altında. Görsel mürekkep maskesi
    (kâğıt zemini saydam); maskeyi yaldız boyar, ışık mürekkebin üstünden bir kez kayar: her temada aynı altın imza.
    Soldan sağa yazılır gibi belirir. Açık temalarda yaldız koyulaşır (açık zeminde okunsun). */
+.imza-kap {
+  display: block;
+  width: fit-content;
+  max-width: 72%;
+  margin: 4px 0 8px;
+}
 .imza {
   display: block;
   height: 52px;
-  max-width: 72%;
-  margin: 4px 0 8px;
+  max-width: 100%;
   background: linear-gradient(100deg, #a8782a 0%, #f6dc8e 22%, #c9973a 42%, #fff1c4 50%, #c9973a 58%, #e8c46e 78%, #9a6b1f 100%) 0 0 / 260% 100%;
   -webkit-mask: var(--imza) left center / contain no-repeat;
   mask: var(--imza) left center / contain no-repeat;
@@ -12755,3 +12763,11 @@ a.harita-seviye:active {
   font-synthesis: none;
 }
 
+/* Ana sayfada imza tablonun üstünde, adın altında: koyu bir gölge onu resmin açık ve hareketli yerlerinden ayırır */
+.sahne-isim .imza-kap {
+  margin: 2px 0 6px;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.7));
+}
+.sahne-isim .imza {
+  height: 48px;
+}

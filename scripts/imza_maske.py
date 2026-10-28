@@ -54,12 +54,23 @@ def maske(veri):
     pay = max(2, round(h * 0.01))
     kutu = (max(0, kutu[0] - pay), max(0, kutu[1] - pay), min(w, kutu[2] + pay), min(h, kutu[3] + pay))
     m = m.crop(kutu)
+    if fotograf_mi(m):
+        return 'fotograf'
     if m.height > BOY:
         m = m.resize((max(1, round(m.width * BOY / m.height)), BOY), Image.LANCZOS)
     else:
         m = buyut(m)
     # yalnız saydamlık taşıyan PNG (renk siyah; uygulama maskeyi altınla boyar)
     return Image.merge('LA', (Image.new('L', m.size, 0), m))
+
+
+def fotograf_mi(a):
+    """Bazı "imza" dosyaları kâğıttaki mürekkep değil, tablonun üstündeki imzanın fotoğrafı (ör. van Eyck, Chardin, Corot):
+    maske altın bir dikdörtgen ya da leke olur. Mürekkep maskesi çoğunlukla boş ya da tam opaktır; yarıdan fazlası dolu ya da
+    %15'ten fazlası ara tondaysa fotoğraftır, kullanılmaz (js/imza.js'te aynı kural)."""
+    h = a.histogram()
+    n = sum(h) or 1
+    return sum(h[128:]) / n > 0.5 or sum(h[40:216]) / n > 0.15
 
 
 def buyut(m):
@@ -77,40 +88,57 @@ def buyut(m):
 
 
 def main():
+    yol_json = KOK / 'data' / 'imzalar.json'
+    veri = json.loads(yol_json.read_text())
+    imzalar = veri['imzalar']
+    atlanan = []
     if '--buyut' in sys.argv:
-        # indirmeden: var olan küçük maskeleri büyütüp pürüzsüzleştirir
+        # indirmeden: var olan maskeleri denetler (fotoğrafları çıkarır) ve küçükleri büyütüp pürüzsüzleştirir
         for yol in sorted(HEDEF.glob('*.png')):
             im = Image.open(yol)
+            a = im.getchannel('A')
+            if fotograf_mi(a):
+                yol.unlink()
+                atlanan.append(yol.stem)
+                continue
             if im.height < BOY * 0.95:
-                a = buyut(im.getchannel('A'))
+                a = buyut(a)
                 Image.merge('LA', (Image.new('L', a.size, 0), a)).save(yol, optimize=True)
                 print(yol.stem, im.size, '->', a.size)
-        return
-    hepsi = '--hepsi' in sys.argv
-    imzalar = json.loads((KOK / 'data' / 'imzalar.json').read_text())['imzalar']
-    HEDEF.mkdir(parents=True, exist_ok=True)
-    tamam = bos = 0
-    for sid, dosya in sorted(imzalar.items()):
-        if not dosya:
-            continue
-        yol = HEDEF / f'{sid}.png'
-        if yol.exists() and not hepsi:
+    else:
+        hepsi = '--hepsi' in sys.argv
+        HEDEF.mkdir(parents=True, exist_ok=True)
+        tamam = bos = 0
+        for sid, dosya in sorted(imzalar.items()):
+            if not dosya:
+                continue
+            yol = HEDEF / f'{sid}.png'
+            if yol.exists() and not hepsi:
+                tamam += 1
+                continue
+            try:
+                m = maske(indir(dosya))
+            except Exception as e:
+                print('HATA', sid, e)
+                continue
+            if m == 'fotograf':
+                atlanan.append(sid)
+                continue
+            if m is None:
+                print('mürekkep bulunamadı', sid, dosya)
+                bos += 1
+                continue
+            m.save(yol, optimize=True)
             tamam += 1
-            continue
-        try:
-            m = maske(indir(dosya))
-        except Exception as e:
-            print('HATA', sid, e)
-            continue
-        if m is None:
-            print('mürekkep bulunamadı', sid, dosya)
-            bos += 1
-            continue
-        m.save(yol, optimize=True)
-        tamam += 1
-        print(sid, m.size)
-        time.sleep(BEKLE)
-    print(f'{tamam} imza maskesi hazır, {bos} boş')
+            print(sid, m.size)
+            time.sleep(BEKLE)
+        print(f'{tamam} imza maskesi hazır, {bos} boş')
+    if atlanan:
+        # fotoğraf çıkanlar imzasız sayılır: uygulama onlar için canlı da denemez
+        for sid in atlanan:
+            imzalar[sid] = None
+        yol_json.write_text(json.dumps(veri, ensure_ascii=False, indent=1) + '\n')
+        print('fotoğraf, mürekkep değil (imzasız sayıldı):', ', '.join(atlanan))
 
 
 if __name__ == '__main__':

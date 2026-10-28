@@ -16,6 +16,7 @@ test('imza: doğrulanmış QID’in kaydında imza varsa sanatçı sayfasında a
       body: JSON.stringify({ entities: { Q7814: { claims: { P109: [{ rank: 'normal', mainsnak: { snaktype: 'value', datavalue: { value: 'Giotto signature.svg' } } }] } } } }),
     }),
   );
+  await context.route(/Giotto_signature/, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/imza-kagit.png', import.meta.url)), headers: { 'access-control-allow-origin': '*' } }));
   await page.goto('./#/sanatci/giotto-di-bondone');
   const imza = page.locator('.isim-blok [data-test="imza"]');
   await expect(imza).toBeVisible();
@@ -38,6 +39,7 @@ test('imza: önceden hesaplanmış data/imzalar.json varsa Wikidata’ya sorulma
     soruldu++;
     return r.fulfill({ status: 200, contentType: 'application/json', headers: { 'access-control-allow-origin': '*' }, body: '{"entities":{}}' });
   });
+  await context.route(/Dosyadan_imza/, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/imza-kagit.png', import.meta.url)), headers: { 'access-control-allow-origin': '*' } }));
   await page.goto('./#/sanatci/giotto-di-bondone');
   await expect(page.locator('[data-test="imza"]')).toHaveAttribute('data-dosya', 'Dosyadan imza.svg');
   expect(soruldu).toBe(0);
@@ -57,6 +59,17 @@ test('imza: uygulamayla gelen hazır maske kullanılır (Wikimedia’ya gidilmez
   expect(await imza.evaluate((e) => e.style.getPropertyValue('--imza'))).toContain('gorseller/imza/albrecht-durer.png');
   expect(await imza.evaluate((e) => getComputedStyle(e).backgroundImage)).toContain('linear-gradient');
   expect(wikimedia).toBe(0);
+});
+
+test('imza: tablonun üstündeki imzanın fotoğrafı (mürekkep değil) gösterilmez', async ({ page, context }) => {
+  await agiHazirla(context); // imza görseli olarak renkli resim fikstürü döner
+  await context.route(/\/data\/imzalar\.json$/, (r) =>
+    r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, imzalar: { 'giotto-di-bondone': 'Tablodaki imza.jpg' } }) }),
+  );
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await expect(page.locator('.isim-blok h1')).toBeVisible();
+  await page.waitForTimeout(1500);
+  await expect(page.locator('[data-test="imza"]')).toHaveCount(0);
 });
 
 test('harf: akım sayfasının başlığı ve haritadaki dönem adları dönemin yazı tipiyle', async ({ page, context }) => {

@@ -95,6 +95,19 @@ export function murekkepMaskesi(img, yukseklik = 240) {
       }
     }
     if (x1 < 0) return null;
+    // tablonun üstündeki imzanın fotoğrafı (mürekkep değil): maske dikdörtgen ya da leke olur, gösterilmez
+    // (scripts/imza_maske.py'deki fotograf_mi ile aynı kural, kırpılmış alanda)
+    let dolu = 0;
+    let orta = 0;
+    let say = 0;
+    for (let y = y0; y <= y1; y++)
+      for (let x = x0; x <= x1; x++) {
+        const a = p[(y * w + x) * 4 + 3];
+        say++;
+        if (a >= 128) dolu++;
+        if (a >= 40 && a < 216) orta++;
+      }
+    if (dolu / say > 0.5 || orta / say > 0.15) return null;
     c.putImageData(v, 0, 0);
     const pay = 2;
     x0 = Math.max(0, x0 - pay);
@@ -152,7 +165,11 @@ export async function imzaGoster(s, kutu) {
   el.dataset.dosya = dosya;
   el.style.aspectRatio = `${m.en} / ${m.boy}`;
   el.style.setProperty('--imza', `url("${m.adres}")`);
+  // kap: maskeli öğe kendi gölgesini taşıyamaz; gölge (ana sayfada tablonun üstünde okunsun diye) kaba verilir
+  const kap = document.createElement('span');
+  kap.className = 'imza-kap';
+  kap.append(el);
   const ad = kutu.querySelector('.isim');
-  if (ad) ad.after(el);
-  else kutu.prepend(el);
+  if (ad) ad.after(kap);
+  else kutu.prepend(kap);
 }

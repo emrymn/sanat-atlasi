@@ -201,6 +201,7 @@ export function anaSayfa() {
     egimBaslat(ekran.querySelector('[data-gunun-gorsel]'), d.ilerleme.ayarlar.egim !== false);
     gununKartGorseli(gs);
     sahneBiyografisi(gs);
+    imzaGoster(gs, ekran.querySelector('.sahne-isim')); // İş 48: tablonun üstünde adın altında imza
     anaGaleriDoldur(gs);
     eserKareleriDoldur();
   } else ekranRengi(null, null);
