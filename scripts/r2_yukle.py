@@ -4,7 +4,8 @@
   gorseller_devasa/<ad>.jpg → <kova>/d/<ad>.jpg   (scripts/devasa_indir.py; en büyük, 4096 px)
   gorseller/b/<ad>.jpg      → <kova>/b/<ad>.jpg   (1280 px; kartlar ve görüntüleyicinin ilk hali)
 
-Sonra data/gorsel_kaynagi.json yazılır: uygulama görüntüleyicide en büyük kopyayı oradan alır. GitHub Pages sitesi 1 GB
+Sonra data/gorsel_kaynagi.json yazılır: uygulama görüntüleyicide en büyük kopyayı oradan alır (müzeden gelenlerin
+kaynağıyla; altyazıda yazar). GitHub Pages sitesi 1 GB
 sınırına yakın (gorseller/b 703 MB) olduğundan 1280'lik kopyalar da R2'de; bunlar yüklendikten sonra gorseller/b
 depodan çıkarılabilir (README). Kovaya CORS izni de verilir (uygulama tablonun renklerini çıkarabilsin).
 
@@ -85,11 +86,15 @@ def main():
                 print('HATA', u, e, flush=True)
             if n % 100 == 0:
                 print(f'{n}/{len(isler)} · hata {hata}', flush=True)
+    # en büyük kopyası Commons yerine müzeden gelenler (scripts/devasa_indir.py): görüntüleyici altyazıda belirtir
+    kaynaklar_yolu = KOK / 'gorseller_devasa/kaynaklar.json'
+    kaynaklar = json.loads(kaynaklar_yolu.read_text()) if kaynaklar_yolu.exists() else {}
+    muze = {ad: k for ad, k in sorted(kaynaklar.items()) if ad in tamam['d']}
     b_hepsi = len(tamam['b']) == len(list((KOK / 'gorseller/b').glob('*.jpg')))
     (KOK / 'data/gorsel_kaynagi.json').write_text(
-        json.dumps({'surum': 1, 'adres': adres, 'buyuk': b_hepsi, 'devasa': sorted(tamam['d'])}, ensure_ascii=False, separators=(',', ':')) + '\n'
+        json.dumps({'surum': 1, 'adres': adres, 'buyuk': b_hepsi, 'devasa': sorted(tamam['d']), 'muze': muze}, ensure_ascii=False, separators=(',', ':')) + '\n'
     )
-    print(f"\nBitti · en büyük {len(tamam['d'])} · 1280'lik {len(tamam['b'])} · hata {hata}")
+    print(f"\nBitti · en büyük {len(tamam['d'])} (müzeden {len(muze)}) · 1280'lik {len(tamam['b'])} · hata {hata}")
     print('data/gorsel_kaynagi.json yazıldı: git add data/gorsel_kaynagi.json && git commit && git push')
 
 

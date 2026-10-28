@@ -130,7 +130,7 @@ Mac'te (depo kökünde):
 ```
 git pull
 python3 -m pip install --user boto3
-caffeinate -i python3 scripts/devasa_indir.py      # en büyük kopyaları indirir; birkaç saat sürebilir, yarıda kalırsa yeniden çalıştır
+caffeinate -i python3 scripts/devasa_indir.py      # en büyük kopyaları indirir; birkaç saat sürebilir (--saat 3: en çok 3 saat), yarıda kalırsa yeniden çalıştır
 export R2_HESAP_ID=934af0e562e2812c13464d2d4dbbb4e4
 export R2_ERISIM_ANAHTARI='…'                     # Access Key ID
 export R2_GIZLI_ANAHTAR='…'                       # Secret Access Key (kimseyle paylaşma)
@@ -138,5 +138,7 @@ export R2_GENEL_ADRES=https://pub-9160c446ac45431192f78b88e7a8a1d8.r2.dev
 python3 scripts/r2_yukle.py                       # yükler, kovaya CORS izni verir, data/gorsel_kaynagi.json yazar
 git add data/gorsel_kaynagi.json && git commit -m "Görseller R2'de" && git push
 ```
+
+İndirme betiği engellenmemek için yavaş gider (istekler arası 4–6 sn, saatte en çok 500 istek; engel gelince 1 dakikadan 30 dakikaya kadar katlanarak bekler). `--saat 3` gibi bir süre verirsen o kadar sonra durur; aynı komut kaldığı yerden sürer. Görsel Commons'ta küçükse aynı eserin The Met, Art Institute of Chicago, National Gallery of Art ya da Cleveland Museum of Art'taki açık erişim (CC0) görseline de bakar (eserin Wikidata kaydındaki müze numarasıyla); hangisi büyükse onu alır.
 
 `gorseller_devasa/` depoya girmez (`.gitignore`). `data/gorsel_kaynagi.json` service worker'da önce ağdan gelir: gönderince telefona sürüm beklemeden iner.

@@ -278,7 +278,7 @@ test('görüntüleyici: en büyük kopya R2\'den arkada iner ve yerine geçer; y
   const yerel = JSON.parse(readFileSync(new URL('../../data/yerel_gorseller.json', import.meta.url), 'utf8')).gorseller;
   const adlar = Object.values(yerel);
   await context.route(/\/data\/gorsel_kaynagi\.json$/, (r) =>
-    r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar }) }),
+    r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar, muze: Object.fromEntries(adlar.map((a) => [a, 'met'])) }) }),
   );
   const istenen = [];
   await context.route(/pub-deneme\.r2\.dev\/d\//, async (r) => {
@@ -291,6 +291,8 @@ test('görüntüleyici: en büyük kopya R2\'den arkada iner ve yerine geçer; y
   const resim = page.locator('.gor-resim');
   await expect(resim).toHaveAttribute('src', /pub-deneme\.r2\.dev\/d\/[0-9a-f]+\.jpg$/);
   await expect(resim).toHaveAttribute('data-test', 'devasa');
+  // İş 58c: büyük kopya Commons yerine aynı eserin müze görselinden geldiyse altyazıda yazar
+  await expect(page.locator('[data-test="devasa-kaynak"]')).toHaveText('büyük kopya: The Met · CC0');
   // yalnız açılan eserin büyük kopyası; komşularınki değil (aynı adres önbellek atlanırsa iki kez istenebilir)
   expect(new Set(istenen).size).toBe(1);
 });
