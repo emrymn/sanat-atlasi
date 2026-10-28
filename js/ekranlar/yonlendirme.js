@@ -46,6 +46,8 @@ const rotalar = [
 export function yonlendir() {
   const h = location.hash || '#/';
   cizimBaslat();
+  // tarayıcının kendi kaydırma geri yüklemesi her geçmiş kaydında kapalı (yeni kayıtlar "auto" başlayabiliyor; İş 57)
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   // geri düğmesi için basit yığın
   const geriMi = d.yigin.length > 1 && d.yigin[d.yigin.length - 2] === h;
   if (geriMi) d.yigin.pop();

@@ -71,7 +71,10 @@ export async function koleksiyonSayfasi() {
       ...gorselTercihi(),
       // işaret kaldırıldıysa duvar yenilenir
       kapaninca: () => {
-        if (location.hash === '#/koleksiyon') koleksiyonSayfasi();
+        if (location.hash !== '#/koleksiyon') return;
+        // duvar yeniden çizilir; kaydırma yeri korunur (İş 57: en başa zıplıyordu)
+        const y = window.scrollY;
+        Promise.resolve(koleksiyonSayfasi()).then(() => window.scrollTo(0, y));
       },
     });
   });
