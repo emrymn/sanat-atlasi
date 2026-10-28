@@ -52,12 +52,95 @@ function sesGelmedi() {
   import('./ekranlar/ortak.js').then(({ bildir }) => bildir('Ses çıkmadı: telefonun sesi açık mı, sessiz mod kapalı mı? Bir daha dene.')).catch(() => {});
 }
 
+// Okunuş dosyası: gerçek kayıt (mp3) ya da Mac'te üretilmiş okunuş (m4a, İş 49d); yoksa null (telefon okur)
+export function sesDosyasi(s, k) {
+  if (k.ses) return `gorseller/ses/${encodeURIComponent(s.id)}.mp3`;
+  if (k.okunus) return `gorseller/ses/${encodeURIComponent(s.id)}.m4a`;
+  return null;
+}
+
+// Dosya Web Audio ile çalınır (İş 49d): indirilir, çözülür, çalınır. iPhone'da ses öğesi (Audio) service worker
+// ve parça (Range) istekleriyle sessiz kalabiliyor; Web Audio'da bu yok. Bağlam dokunuşun içinde açılır (iOS kilidi).
+let baglam = null;
+function sesBaglami() {
+  const AC = typeof window !== 'undefined' && (window.AudioContext || window.webkitAudioContext);
+  if (!AC) return null;
+  if (!baglam || baglam.state === 'closed') baglam = new AC();
+  if (baglam.state !== 'running') baglam.resume().catch(() => {});
+  // iOS: dokunuşta boş bir ses çalmak bağlamın kilidini açar
+  try {
+    const bos = baglam.createBufferSource();
+    bos.buffer = baglam.createBuffer(1, 1, 22050);
+    bos.connect(baglam.destination);
+    bos.start(0);
+  } catch {
+    /* önemsiz */
+  }
+  return baglam;
+}
+
+const cozulmus = new Map();
+function dosyayiCal(url, dugme, bitince) {
+  const ctx = sesBaglami();
+  let durdu = false;
+  let kaynak = null;
+  let yedek = null;
+  calan = {
+    dugme,
+    durdur: () => {
+      durdu = true;
+      try {
+        kaynak && kaynak.stop();
+      } catch {
+        /* zaten bitti */
+      }
+      if (yedek) yedek.pause();
+      bitince();
+    },
+  };
+  // Web Audio yoksa ya da çözülemezse ses öğesiyle dene
+  const ogeyleCal = () => {
+    if (durdu) return;
+    yedek = new Audio(url);
+    yedek.addEventListener('ended', bitince);
+    yedek.addEventListener('error', () => (bitince(), sesGelmedi()));
+    yedek.play().catch(() => (bitince(), sesGelmedi()));
+  };
+  if (!ctx) return ogeyleCal();
+  const tampon =
+    cozulmus.get(url) ||
+    fetch(url)
+      .then((y) => {
+        if (!y.ok) throw new Error(String(y.status));
+        return y.arrayBuffer();
+      })
+      .then((b) => new Promise((coz, red) => ctx.decodeAudioData(b, coz, red)));
+  cozulmus.set(url, tampon);
+  tampon
+    .then((b) => {
+      if (durdu) return;
+      if (ctx.state !== 'running') ctx.resume().catch(() => {});
+      kaynak = ctx.createBufferSource();
+      kaynak.buffer = b;
+      kaynak.connect(ctx.destination);
+      kaynak.onended = bitince;
+      kaynak.start(0);
+    })
+    .catch(() => {
+      cozulmus.delete(url);
+      ogeyleCal();
+    });
+}
+
 let calan = null;
 // iOS'ta okuma dokunuşun içinde, beklemeden başlamalı: önce bekleyip (await) sonra speak() çağrılırsa ses çıkmaz
 function oku(s, k, dugme) {
-  if (calan) {
-    calan.durdur();
-    if (calan.dugme === dugme) return (calan = null);
+  // durdur() calan'ı sıfırlar: önce hangi düğme olduğu alınır (aynı düğmeye ikinci dokunuş = durdur)
+  const onceki = calan;
+  if (onceki) {
+    onceki.durdur();
+    calan = null;
+    if (onceki.dugme === dugme) return;
   }
   const bitince = () => {
     dugme.classList.remove('caliyor');
@@ -65,14 +148,8 @@ function oku(s, k, dugme) {
   };
   dugme.classList.add('caliyor');
   oynatmaOturumu();
-  if (k.ses) {
-    const a = new Audio(`gorseller/ses/${encodeURIComponent(s.id)}.mp3`);
-    a.addEventListener('ended', bitince);
-    a.addEventListener('error', () => (bitince(), sesGelmedi()));
-    a.play().catch(() => (bitince(), sesGelmedi()));
-    calan = { dugme, durdur: () => (a.pause(), bitince()) };
-    return;
-  }
+  const dosya = sesDosyasi(s, k);
+  if (dosya) return dosyayiCal(dosya, dugme, bitince);
   const sz = sentez();
   if (!sz) return bitince();
   const u = new SpeechSynthesisUtterance(okunacakAd(s.ad));
@@ -107,8 +184,8 @@ export async function kunyeGoster(s, kutu) {
   if (!kutu) return;
   const k = (await kunyeVeri())[s.id];
   if (!k || !kutu.isConnected || kutu.querySelector('.isim-ek')) return;
-  const okunur = !!k.ses || (!!k.dil && !!sentez());
-  if (!k.ses && okunur) sesleriIsit();
+  const okunur = !!sesDosyasi(s, k) || (!!k.dil && !!sentez());
+  if (!sesDosyasi(s, k) && okunur) sesleriIsit();
   if (!k.portre && !okunur) return;
   // portre adın arkasında, sağ üstte büyük ve silik (İş 49b: Emre'nin seçimi); ad ve imza üstünde durur
   if (k.portre) {

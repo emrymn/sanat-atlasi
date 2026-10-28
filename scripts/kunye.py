@@ -12,9 +12,11 @@ ve internete bağlı kalmaz.
   python3 scripts/kunye.py                     # sorgu + eksik dosyalar
   python3 scripts/kunye.py --sorgu yanit.json  # Wikidata sorgu yanıtı elde hazırsa (sorgu servisi dakikada bir istek)
   python3 scripts/kunye.py --indirmeden        # dosya indirmeden; yalnız var olan ses/portre dosyaları yazılır
+Mac'te ayrıca gerçek kaydı olmayan her sanatçının adını Mac'in o dildeki sesiyle (say) gorseller/ses/<id>.m4a'ya yazar
+(İş 49d: iPhone'un konuşma sentezine güvenilmiyor; uygulama yalnız dosya çalar). Başka sistemde var olan m4a'lar kullanılır.
 Portre olmayan "kişi görselleri" (ör. sanatçının kendi eseri) PORTRE_DEGIL listesinde: gözle denetlenip eklenir.
 """
-import hashlib, io, json, sys, time, urllib.parse, urllib.request, urllib.error
+import hashlib, io, json, re, shutil, subprocess, sys, tempfile, time, urllib.parse, urllib.request, urllib.error
 from pathlib import Path
 from PIL import Image
 
@@ -57,6 +59,50 @@ PORTRE_DEGIL = {
     'jacob-van-ruisdael',  # Hamburg Kunsthalle cephesindeki XIX. yüzyıl madalyonu
 }
 # Elle kesilenler (betik bunları ezmez: yalnız küçük kare dosyaları yeniler): pablo-picasso — fotoğrafta iki kişi, yalnız Picasso alındı
+# Mac sesleri (say -v '?'): dil başına tercih sırası; listede yoksa o dildeki ilk düzgün ses
+MAC_SES = {
+    'de': ['Anna', 'Helena', 'Markus'], 'nl': ['Xander', 'Ellen', 'Claire'], 'fr': ['Thomas', 'Amélie', 'Audrey'],
+    'it': ['Alice', 'Luca', 'Federica'], 'es': ['Mónica', 'Jorge', 'Paulina'], 'en': ['Samantha', 'Daniel', 'Alex'],
+    'no': ['Nora'], 'nb': ['Nora'], 'sv': ['Alva'], 'da': ['Sara'], 'fi': ['Satu'], 'pl': ['Zosia'], 'cs': ['Zuzana'],
+    'pt': ['Joana', 'Luciana'], 'hu': ['Mariska'], 'ca': ['Montse'],
+}
+OYUNCAK = {'Albert', 'Bad News', 'Bahh', 'Bells', 'Boing', 'Bubbles', 'Cellos', 'Good News', 'Jester', 'Organ',
+           'Superstar', 'Trinoids', 'Whisper', 'Wobble', 'Zarvox', 'Fred', 'Junior', 'Ralph', 'Kathy'}
+
+
+def okunacak_ad(ad):
+    # js/kunye.js okunacakAd ile aynı: "Pieter Bruegel (Yaşlı)" → "Pieter Bruegel"
+    ad = re.sub(r'\s*\([^)]*\)', '', ad or '')
+    ad = re.sub(r'\s+kardeşler\b', '', ad, flags=re.I)
+    ad = re.sub(r'\s+ve\s+', ', ', ad)
+    return re.sub(r'\s+', ' ', ad).strip()
+
+
+def mac_sesleri():
+    if sys.platform != 'darwin' or not shutil.which('say') or not shutil.which('afconvert'):
+        return None
+    sesler = {}
+    for satir in subprocess.run(['say', '-v', '?'], capture_output=True, text=True).stdout.splitlines():
+        m = re.match(r'^(.+?)\s+([a-z]{2,3})[_-][A-Za-z0-9_]+\s+#', satir)
+        if m and m.group(1).strip() not in OYUNCAK:
+            sesler.setdefault(m.group(2), []).append(m.group(1).strip())
+    return sesler
+
+
+def mac_sesi(sesler, dil):
+    var = sesler.get(dil, [])
+    for ad in MAC_SES.get(dil, []):
+        for v in var:
+            if v == ad or v.startswith(ad + ' '):
+                return v
+    return var[0] if var else None
+
+
+def okunus_uret(metin, ses, yol):
+    with tempfile.TemporaryDirectory() as d:
+        aiff = Path(d) / 'ad.aiff'
+        subprocess.run(['say', '-v', ses, '-r', '150', '-o', str(aiff), metin], check=True)
+        subprocess.run(['afconvert', '-f', 'm4af', '-d', 'aac', '-c', '1', '-b', '64000', str(aiff), str(yol)], check=True)
 
 
 def getir(url, deneme=6):
@@ -161,6 +207,10 @@ def main():
             portreler.setdefault(q, set()).add(ad(b['portre']['value']))
     SES.mkdir(parents=True, exist_ok=True)
     PORTRE.mkdir(parents=True, exist_ok=True)
+    adlar = {x['id']: x['ad'] for x in json.loads((KOK / 'data' / 'sanatcilar.json').read_text())}
+    mac = mac_sesleri()
+    if mac is None:
+        print('Mac sesi yok (say/afconvert): okunuş dosyası üretilmez, var olanlar kullanılır')
     kunye = {}
     for q, sidler in sorted(qid_id.items()):
         for sid in sidler:
@@ -182,6 +232,21 @@ def main():
                         kayit['ses'] = uygun[0]
                 except Exception as e:
                     print('ses HATA', sid, e)
+            # gerçek kayıt yoksa: Mac'in o dildeki sesiyle okunuş dosyası (İş 49d)
+            if not kayit['ses'] and dil:
+                yol = SES / f'{sid}.m4a'
+                if not yol.exists() and mac is not None:
+                    ses = mac_sesi(mac, dil)
+                    if ses:
+                        try:
+                            okunus_uret(okunacak_ad(adlar.get(sid, '')), ses, yol)
+                            print('okunuş', sid, dil, ses)
+                        except Exception as e:
+                            print('okunuş HATA', sid, e)
+                    else:
+                        print('okunuş: Mac\'te bu dilde ses yok', sid, dil)
+                if yol.exists():
+                    kayit['okunus'] = True
             if portreler.get(q) and sid not in PORTRE_DEGIL:
                 dosya = sorted(portreler[q])[0]
                 yol = PORTRE / f'{sid}.jpg'
@@ -199,7 +264,7 @@ def main():
                     print('portre HATA', sid, e)
             kunye[sid] = kayit
     (KOK / 'data' / 'kunye.json').write_text(json.dumps({'surum': 1, 'kunye': dict(sorted(kunye.items()))}, ensure_ascii=False, indent=1) + '\n')
-    print(len(kunye), 'sanatçı ·', sum(1 for k in kunye.values() if k['ses']), 'ses kaydı ·', sum(1 for k in kunye.values() if k['dil']), 'dilli ·', sum(1 for k in kunye.values() if k['portre']), 'portre')
+    print(len(kunye), 'sanatçı ·', sum(1 for k in kunye.values() if k['ses']), 'ses kaydı ·', sum(1 for k in kunye.values() if k.get('okunus')), 'okunuş ·', sum(1 for k in kunye.values() if k['dil']), 'dilli ·', sum(1 for k in kunye.values() if k['portre']), 'portre')
 
 
 if __name__ == '__main__':

@@ -166,3 +166,54 @@ test('künye: sanatçı sayfasında arkada portre ve "Dinle"; imza onların alt�
   await page.waitForTimeout(500);
   await expect(page.locator('.isim-ek')).toHaveCount(0);
 });
+
+test('künye: okunuş dosyası Web Audio ile çalar (İş 49d); çözülemezse ses öğesine düşer', async ({ page, context }) => {
+  await agiHazirla(context);
+  await context.route(/\/data\/kunye\.json$/, (r) =>
+    r.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ surum: 1, kunye: { 'claude-monet': { dil: 'fr', ses: null, okunus: true, portre: null }, 'albrecht-durer': { dil: 'de', ses: 'Durer.ogg', portre: null } } }),
+    }),
+  );
+  await context.route(/\/gorseller\/ses\/claude-monet\.m4a$/, (r) => r.fulfill({ status: 200, contentType: 'audio/mp4', body: Buffer.from('m4a') }));
+  await context.addInitScript(() => {
+    window.__calan = [];
+    window.__ogeler = [];
+    window.speechSynthesis.speak = () => window.__calan.push('sentez');
+    class SahteBaglam {
+      constructor() {
+        this.state = 'running';
+        this.destination = {};
+      }
+      resume() {
+        return Promise.resolve();
+      }
+      createBuffer() {
+        return { sahte: true };
+      }
+      createBufferSource() {
+        const k = { connect() {}, stop() {}, start: () => k.buffer && k.buffer.ad && window.__calan.push(k.buffer.ad) };
+        return k;
+      }
+      decodeAudioData(b, coz, red) {
+        const metin = new TextDecoder().decode(b);
+        if (metin === 'm4a') coz({ ad: 'monet' });
+        else red(new Error('çözülemedi'));
+      }
+    }
+    window.AudioContext = SahteBaglam;
+    window.Audio = function (url) {
+      window.__ogeler.push(url);
+      return { addEventListener() {}, play: () => Promise.resolve(), pause() {} };
+    };
+  });
+  await page.goto('./#/sanatci/claude-monet');
+  await page.locator('[data-test="dinle"]').click();
+  await expect.poll(() => page.evaluate(() => window.__calan)).toEqual(['monet']);
+  // gerçek kayıt mp3; sahte bağlam çözemiyor → ses öğesi
+  await page.goto('./#/sanatci/albrecht-durer');
+  await page.locator('[data-test="dinle"]').click();
+  await expect.poll(() => page.evaluate(() => window.__ogeler)).toEqual(['gorseller/ses/albrecht-durer.mp3']);
+  expect(await page.evaluate(() => window.__calan)).toEqual(['monet']); // Dürer'de sentez yok, Web Audio'da yeni çalma yok
+});
