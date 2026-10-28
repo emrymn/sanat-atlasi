@@ -98,7 +98,8 @@ export async function kunyeGoster(s, kutu) {
     img.alt = `${s.ad} portresi`;
     img.title = 'Portre: Wikimedia Commons';
     img.decoding = 'async';
-    img.src = `gorseller/portre/${encodeURIComponent(s.id)}.jpg`;
+    // genişlik adreste: büyük portre gelince görsel önbelleğindeki eski küçük kopya kullanılmaz
+    img.src = `gorseller/portre/${encodeURIComponent(s.id)}.jpg?en=${k.portre_en || 0}`;
     img.addEventListener('load', () => img.classList.add('yuklendi'));
     img.addEventListener('error', () => img.remove());
     kutu.classList.add('portreli');

@@ -140,7 +140,7 @@ test('künye: sanatçı sayfasında arkada portre ve "Dinle"; imza onların alt�
       body: JSON.stringify({ surum: 1, kunye: { 'albrecht-durer': { dil: 'de', ses: null, portre: 'Durer.jpg' }, cimabue: { dil: null, ses: null, portre: null } } }),
     }),
   );
-  await context.route(/\/gorseller\/portre\/albrecht-durer\.jpg$/, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)) }));
+  await context.route(/\/gorseller\/portre\/albrecht-durer\.jpg(\?.*)?$/, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)) }));
   await context.route(/\/gorseller\/imza\/albrecht-durer\.png$/, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/imza.png', import.meta.url)) }));
   // konuşma sentezi: okunan metin ve dil kaydedilir
   await context.addInitScript(() => {

@@ -48,6 +48,12 @@ PORTRE_DEGIL = {
     'domenico-di-michelino',  # kendi Dante tablosu
     'valentin-de-boulogne',  # kendi tablosu
     'praxiteles',  # XIX. yüzyılda yapılmış hayalî kabartma; antik ustaların gerçek yüzü bilinmiyor
+    'diotisalvi',  # vaftizhanedeki kitabe taşı
+    'georges-de-la-tour',  # kendi tablosu
+    'bartolomeo-manfredi',  # kendi tablosu (tür sahnesi)
+    'dirck-van-baburen',  # kendi tablosu (lavta çalan)
+    'limbourg-kardesler',  # minyatürden kalabalık ayrıntısı
+    'phidias', 'giotto-di-bondone', 'donatello', 'nicola-pisano',  # ölümünden yüzyıllar sonra yapılmış hayalî heykel/büst
 }
 
 
@@ -185,6 +191,8 @@ def main():
                         time.sleep(1)
                     if yol.exists():
                         kayit['portre'] = dosya
+                        # dosya büyüyünce adres değişsin: telefonun görsel önbelleği eski küçük kopyayı vermesin
+                        kayit['portre_en'] = Image.open(yol).width
                 except Exception as e:
                     print('portre HATA', sid, e)
             kunye[sid] = kayit
