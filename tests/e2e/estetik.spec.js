@@ -130,3 +130,37 @@ test('Ayarlar: "Başka bir sanatçı getir" günün sanatçısını o gün için
   await page.reload();
   await expect(page.locator('.sahne-isim .isim')).toHaveAttribute('aria-label', sonra);
 });
+
+test('künye: sanatçı sayfasında portre ve "Dinle"; imza onların altında; kayıt yoksa telefonun o dildeki sesi', async ({ page, context }) => {
+  await agiHazirla(context);
+  await context.route(/\/data\/kunye\.json$/, (r) =>
+    r.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ surum: 1, kunye: { 'albrecht-durer': { dil: 'de', ses: null, portre: 'Durer.jpg' }, cimabue: { dil: null, ses: null, portre: null } } }),
+    }),
+  );
+  await context.route(/\/gorseller\/portre\/albrecht-durer\.jpg$/, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)) }));
+  await context.route(/\/gorseller\/imza\/albrecht-durer\.png$/, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/imza.png', import.meta.url)) }));
+  // konuşma sentezi: okunan metin ve dil kaydedilir
+  await context.addInitScript(() => {
+    window.__okunan = [];
+    window.speechSynthesis.speak = (u) => {
+      window.__okunan.push({ metin: u.text, dil: u.lang });
+      setTimeout(() => u.onend && u.onend(), 10);
+    };
+  });
+  await page.goto('./#/sanatci/albrecht-durer');
+  const ek = page.locator('.isim-blok .isim-ek');
+  await expect(ek.locator('.portre')).toBeVisible();
+  await expect(ek.locator('[data-test="dinle"]')).toBeVisible();
+  // imza satırın altında
+  await expect(page.locator('.isim-ek + .imza-kap')).toHaveCount(1);
+  await ek.locator('[data-test="dinle"]').click();
+  await expect.poll(() => page.evaluate(() => window.__okunan)).toEqual([{ metin: 'Albrecht Dürer', dil: 'de' }]);
+  // ne portresi ne dili olan: satır yok
+  await page.goto('./#/sanatci/cimabue');
+  await expect(page.locator('.isim-blok h1')).toBeVisible();
+  await page.waitForTimeout(500);
+  await expect(page.locator('.isim-ek')).toHaveCount(0);
+});

@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.45.0', metin: 'Sanatçı sayfasında adın altında “Dinle”: sanatçının adını kendi dilinde duyarsın (varsa gerçek ses kaydı, yoksa telefonun o dildeki sesi). Yanında sanatçının portresi.' },
   { surum: '1.44.0', metin: 'İmzalar kalemle yazılıyormuş gibi belirir: parlayan kalem ucu mürekkebi izler, yazı bitince üstünden ışık geçer. Küçük kaynaktan gelen 22 imza (Dürer, Tintoretto, David…) yeniden çizildi, artık piksel piksel değil. Ayarlar’da “Başka bir sanatçı getir”: günün sanatçısını o gün için değiştirir.' },
   { surum: '1.43.0', metin: 'Duvarlardaki tablolar döneminin çerçevesinde: Gotik kemerli altın, Rönesans ahşap, Barok oymalı altın, Hollanda abanoz, Empresyonist beyaz… Akım sayfalarının başlığı ve haritadaki dönem adları o dönemin harfiyle. Sanatçı sayfasında, Wikidata’da varsa ressamın gerçek imzası.' },
   { surum: '1.42.0', metin: 'Pekiştir’de bugünkü turun destesi telefonu sağa sola çevirince iskambil gibi yelpaze açılır, bırakınca yaylanıp toplanır.' },

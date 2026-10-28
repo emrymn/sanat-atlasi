@@ -170,7 +170,8 @@ export async function imzaGoster(s, kutu) {
   const kap = document.createElement('span');
   kap.className = 'imza-kap';
   kap.append(el);
-  const ad = kutu.querySelector('.isim');
+  // portre ve "Dinle" satırı varsa onun altına (İş 49)
+  const ad = kutu.querySelector('.isim-ek') || kutu.querySelector('.isim');
   if (ad) ad.after(kap);
   else kutu.prepend(kap);
   kalemleYaz(el, kap, kalemYolu(m.img));

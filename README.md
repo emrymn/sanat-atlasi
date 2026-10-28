@@ -69,6 +69,17 @@ Elle verilen görsel kararları (`data/gorsel_kararlari.json`) önbellek üretil
 
 Vekil sunucu arkasında `onbellek.mjs` için: `NODE_USE_ENV_PROXY=1 node scripts/onbellek.mjs`. Yalnızca bazı sanatçıları yenilemek için id'lerini argüman olarak ver; tümünü baştan almak için `YENIDEN=1`.
 
+### Sanatçının portresi ve adının okunuşu
+
+`data/kunye.json`, `gorseller/portre/` ve `gorseller/ses/` için Mac'te depo kökünde (Pillow gerekir):
+
+```
+python3 scripts/kunye.py
+git add data/kunye.json gorseller/portre gorseller/ses && git commit -m "Portreler ve okunuşlar" && git push
+```
+
+Wikidata'nın sorgu servisi bazen dakikada bir isteğe izin verir; betik bekleyip yeniden dener. Yarıda kalırsa yeniden çalıştır.
+
 ### Ressamların imzaları
 
 Sanatçı sayfasında adın altındaki altın imza, Wikidata'daki imza görselinden (P109) yapılır.
