@@ -12905,3 +12905,66 @@ a.harita-seviye:active {
   }
 }
 
+
+/* ===== İş 50 · Dokunma alanları en az 44 pt (görünüm değişmeden) ===== */
+/* Göz At bölüm sekmeleri: dördü de ekrana sığar ("Zaman" kenarda kesik kalıyordu); dokunma alanı görünmez kenarla 44 pt */
+.bolumler {
+  margin-top: -2px;
+  margin-bottom: 12px;
+  padding-block: 6px;
+  gap: 5px;
+}
+.bolumler a {
+  position: relative;
+  padding: 0 10px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+.bolumler a::after,
+.secim-hap button::after,
+.akim-konular a::after,
+.akim-komsular a::after,
+.akim-konu-dizin a::after,
+.akim-karsi-ad::after {
+  content: '';
+  position: absolute;
+  inset: -4px -1px;
+}
+.secim-hap button,
+.akim-konular a,
+.akim-komsular a,
+.akim-konu-dizin a,
+.akim-karsi-ad {
+  position: relative;
+}
+.bolumler a::after {
+  inset: -6px -1px;
+}
+.secim-hap button::after {
+  inset: -8px -1px;
+}
+.kucuk-hap button::after {
+  inset: -10px -1px;
+}
+.akim-konu-dizin a::after {
+  inset: -6px -4px;
+}
+.akim-karsi-ad::after {
+  inset: -10px 0;
+}
+.akim-karsi .akim-konular a::after {
+  inset: -5px -1px;
+}
+.zaman-yakin {
+  height: 44px;
+}
+/* Harita durakları: dar semboller (24–42 pt) için yanlarda görünmez 10 pt; görsel ve konum aynı */
+.harita-durak {
+  box-sizing: content-box;
+  padding-inline: 10px;
+  margin-left: -10px;
+}
+/* durak, aynı yerdeki görünmez saklı motifin (harita-motif) üstünde: dokununca durak açılır */
+.harita-durak {
+  z-index: 3;
+}
