@@ -105,3 +105,54 @@ test('sekme çubuğu: başka sekmeden dönünce kalınan yer; açık sekmeye yen
   await page.locator('#sekmeler a[data-sekme="gozat"]').click();
   await expect.poll(() => y(page)).toBe(0);
 });
+
+// İş 52: sol kenardan sağa kaydırınca geri (iPhone gibi). Dokunuş CDP ile gönderilir (yalnız Chromium).
+test.describe('kenardan geri', () => {
+  test.use({ hasTouch: true, isMobile: true });
+
+  async function kaydirici(page, browserName) {
+    test.skip(browserName !== 'chromium', 'dokunuş CDP ile gönderiliyor');
+    const cdp = await page.context().newCDPSession(page);
+    return async (x0, x1, y = 450) => {
+      await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: x0, y }] });
+      for (let i = 1; i <= 12; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x0 + ((x1 - x0) * i) / 12, y }] });
+      await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    };
+  }
+
+  test('sayfa: kenardan uzun kaydırma geri götürür; kısa kaydırma ve ortadan kaydırma götürmez', async ({ page, context, browserName }) => {
+    const kaydir = await kaydirici(page, browserName);
+    await agiHazirla(context);
+    await page.goto('./#/gozat');
+    await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
+    await page.goto('./#/sanatci/giotto-di-bondone');
+    await expect(page.locator('.isim-blok')).toBeVisible();
+    await kaydir(8, 60);
+    await page.waitForTimeout(500);
+    await expect(page).toHaveURL(/#\/sanatci\/giotto-di-bondone$/);
+    await kaydir(200, 380);
+    await page.waitForTimeout(500);
+    await expect(page).toHaveURL(/#\/sanatci\/giotto-di-bondone$/);
+    await kaydir(8, 280);
+    await expect(page).toHaveURL(/#\/gozat$/);
+    await expect.poll(() => page.evaluate(() => document.getElementById('uygulama').style.transform)).toBe('');
+  });
+
+  test('görüntüleyici: ortadan kaydırma eserler arasında gezer; kenardan ya da ilk eserde sağa kaydırma kapatır', async ({ page, context, browserName }) => {
+    const kaydir = await kaydirici(page, browserName);
+    await agiHazirla(context);
+    await page.goto('./#/sanatci/giotto-di-bondone');
+    await page.locator('.eser').first().click();
+    const gor = page.locator('.gor');
+    await expect(gor.locator('.gor-kaynak')).toContainText('1 /');
+    await kaydir(300, 80);
+    await expect(gor.locator('.gor-kaynak')).toContainText('2 /');
+    await kaydir(8, 280);
+    await expect(gor).toHaveCount(0);
+    await expect(page).toHaveURL(/#\/sanatci\/giotto-di-bondone$/);
+    await page.locator('.eser').first().click();
+    await expect(gor.locator('.gor-kaynak')).toContainText('1 /');
+    await kaydir(120, 330);
+    await expect(gor).toHaveCount(0);
+  });
+});
