@@ -1331,3 +1331,10 @@ Emre'nin ekran görüntüsündeki Siena freski gibi geniş eserler dikey ekranda
 - **Yatay soru ekranı değiştirilmedi:** beş soru türü ve alttan açılan cevap yaprağı yatay için yeniden düzenlenmeli, bozma riski kazançtan büyük; sınav çoğu zaman dik yapılıyor. Emre'ye soruldu.
 - Sayfalar yatayda ortada bir sütun, iki yan koyu: kullanılabilir.
 - Test: `tests/e2e/cilalama.spec.js` (tek dokunuş sade/geri, çift dokunuş yakınlaştırır ve gizlemez; yatayda sahne tam yükseklik, açıklama altta).
+
+## İş 55 · Konular kısaldı (2026-10-28, v1.48.1)
+
+Emre: "konular kısmını düzenleyelim"; seçenekler arasından "Liste kısalsın" (ve ne olduğunu yazmadığı "başka bir şey"). Galeri › Konular 223 kartı tek sayfada gösteriyordu: 35.044 px, telefonda ~40 ekran boyu.
+- Ana Konular sayfasında her grup (Eski Ahit, Yeni Ahit, Azizler, Mitoloji, Tarih ve edebiyat, Diğer) en çok işlenen 6 konuyla açılır (liste zaten eser sayısına göre çoktan aza), altında "Eski Ahit · 28 konunun hepsi →". Üstte gruplar arası şerit. Sayfa 6.569 px (~8 ekran).
+- Grubun bütün konuları kendi sayfasında: `#/konular/<tür>` (ör. `#/konular/eski_ahit`), başlıkta "Konular" etiketi ve geri, üstte seçili grubu gösteren şerit. Ayrı adres olduğu için iOS geri hareketi ve kaydırma yeri geri yüklemesi (İş 51) de çalışır.
+- Test: `tests/e2e/cilalama.spec.js` (gruplarda en çok 6 kart, "hepsi" grubun bütün konularını açar, geri listeye döner).

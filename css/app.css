@@ -13109,3 +13109,59 @@ a,
     padding-right: 190px;
   }
 }
+
+/* ===== İş 55 · Konular kısaldı: her grupta 6 konu + "hepsi"; gruplar arası şerit ===== */
+.konu-grup-serit {
+  display: flex;
+  gap: 6px;
+  margin: 6px calc(-1 * var(--yan)) 4px;
+  padding: 6px var(--yan);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.konu-grup-serit::-webkit-scrollbar {
+  display: none;
+}
+.konu-grup-serit a {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font: 500 14px/1 var(--sans);
+  color: var(--ink);
+  text-decoration: none;
+}
+.konu-grup-serit a small {
+  font: 600 11px/1 var(--sans);
+  color: var(--ink-3);
+}
+.konu-grup-serit a[aria-current='page'] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
+.konu-grup-serit a[aria-current='page'] small {
+  color: var(--bg);
+  opacity: 0.7;
+}
+.konu-hepsi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 48px;
+  margin: 2px 0 10px;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  font: 600 14px/1.2 var(--sans);
+  color: var(--ink);
+  text-decoration: none;
+}
+.konu-hepsi:active {
+  background: var(--surface);
+}
