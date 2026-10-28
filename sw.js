@@ -162,7 +162,10 @@ self.addEventListener('fetch', (e) => {
   } else if (url.origin === self.location.origin && url.pathname.includes('/gorseller/')) {
     // uygulamayla yayınlanan görsel kopyaları: sürümden bağımsız görsel önbelleği (LRU)
     e.respondWith(resim(e));
-  } else if (url.origin === self.location.origin && url.pathname.endsWith('/data/kunye.json')) {
+  } else if (url.hostname.endsWith('.r2.dev')) {
+    // İş 58: Cloudflare R2'deki görsel kopyaları (en büyük 4096 px ve 1280 px)
+    e.respondWith(resim(e));
+  } else if (url.origin === self.location.origin && (url.pathname.endsWith('/data/kunye.json') || url.pathname.endsWith('/data/gorsel_kaynagi.json'))) {
     // künye (portre, okunuş, IPA) Emre'nin Mac'inde güncellenir: sürüm beklemeden gelsin diye önce ağ, yoksa önbellek
     e.respondWith(onceAg(istek, KABUK));
   } else if (url.origin === self.location.origin) {
@@ -252,7 +255,7 @@ async function agdan(url) {
     const y = await fetch(url);
     return { y, saklanir: y.ok };
   }
-  if (CORS_HOSTLARI.has(new URL(url).hostname)) {
+  if (CORS_HOSTLARI.has(new URL(url).hostname) || new URL(url).hostname.endsWith('.r2.dev')) {
     try {
       const y = await fetch(url, { mode: 'cors', credentials: 'omit' });
       const gorselMi = (y.headers.get('content-type') || '').startsWith('image/');
