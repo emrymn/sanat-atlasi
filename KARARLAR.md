@@ -1250,3 +1250,11 @@ Emre, "gerçek parça" önerilerinden ilk ikisini seçti (imza gibi Wikidata'dan
 3. `scripts/kunye.py` tek Wikidata sorgusu (sorgu servisi bu ara dakikada bir istek) + dosyalar → `data/kunye.json`. Bu ortamın IP'si Wikimedia'dan sürekli 429 aldığı için yalnız 15 portre ve 1 ses indi; kalanını Emre Mac'te üretir (README). İmza, portre/Dinle satırının altına iner.
 4. Test: `tests/unit/kunye.test.mjs`, `tests/e2e/estetik.spec.js`. Sürüm 1.45.0 + Yenilikler.
 
+
+## İş 49b · Büyük portre, adın arkasında (2026-10-28, v1.46.0)
+
+Emre küçük madalyonu küçük buldu; iki taslaktan (A: büyük oval, B: adın arkasında büyük ve silik) **B**'yi seçti.
+1. Portre `.isim-blok`'un arkasında, sağ üstte 250×330 pt, sayfanın sağ kenarına kadar; sola ve aşağı doğru maske ile kâğıda erir, hafif sepya, sepya/açık temada %40, koyu temada %70 görünür. Ad, Dinle ve imza üstünde okunur; dokunmaları engellemez.
+2. `scripts/kunye.py` artık 960 px kaynaktan 3:4 dikey kesit (geniş görselde ortadan, uzun görselde yüzün olduğu üstten) alıp 600×792 px JPEG yazar; eski 240 px kare portreleri kendiliğinden büyükleriyle değiştirir. İndirme Emre'nin Mac'inde (Wikimedia bu ortama 429 veriyor).
+3. Emre'nin indirdiği 176 portre tek tek gözden geçirildi; portre olmayanlar `PORTRE_DEGIL`'e eklendi, dosyaları silindi: Diotisalvi (kitabe taşı), Georges de La Tour, Bartolomeo Manfredi, Dirck van Baburen (kendi tabloları), Limbourg kardeşler (minyatürden kalabalık ayrıntısı). Praxiteles ile tutarlı olsun diye ölümünden yüzyıllar sonra yapılmış hayalî heykel/büstler de çıkarıldı: Phidias, Giotto, Donatello, Nicola Pisano. Kalır: Alberti madalyası, Ghiberti'nin bronz başı, Masaccio ve Piero'nun freskteki kendi portreleri (çağdaş ya da kendi elinden). 167 portre.
+4. Büyük portreler gelene dek eski küçük kareler büyütülerek görünür (biraz yumuşak); Mac'te betik çalışınca bir ara sürümle (dosyalar kabukta değil, ama yeni sürüm önbelleği yeniler) telefona iner.

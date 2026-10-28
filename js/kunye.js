@@ -1,5 +1,5 @@
-// Sanatçının yüzü ve adının okunuşu (İş 49): sanatçı sayfasında adın altında küçük bir madalyon içinde portresi
-// (Wikidata P18) ve "Dinle" düğmesi. Okunuş, varsa adın gerçek ses kaydı (Wikidata P443, sanatçının kendi dilinde),
+// Sanatçının yüzü ve adının okunuşu (İş 49): sanatçı sayfasında adın arkasında büyük, silik portresi (Wikidata P18)
+// ve adın altında "Dinle" düğmesi. Okunuş, varsa adın gerçek ses kaydı (Wikidata P443, sanatçının kendi dilinde),
 // yoksa telefonun o dildeki sesi (speechSynthesis). Veriler data/kunye.json'da (scripts/kunye.py üretir); ses ve portre
 // dosyaları uygulamayla gelir (gorseller/ses, gorseller/portre). Doğruluk: yalnız doğrulanmış QID'lerin kayıtları.
 
@@ -84,39 +84,42 @@ function oku(s, k, dugme) {
 const HOPARLOR =
   '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="dalga" d="M15.5 8.5a5 5 0 0 1 0 7"/><path class="dalga uzak" d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
 
-// kutu: isim bloğu (.isim-blok). Adın hemen altına .isim-ek satırı: portre madalyonu ve "Dinle".
+// kutu: isim bloğu (.isim-blok). Portre bloğun arkasına, "Dinle" adın hemen altına (.isim-ek).
 export async function kunyeGoster(s, kutu) {
   if (!kutu) return;
   const k = (await kunyeVeri())[s.id];
   if (!k || !kutu.isConnected || kutu.querySelector('.isim-ek')) return;
   const okunur = !!k.ses || (!!k.dil && !!sentez());
   if (!k.portre && !okunur) return;
-  const ek = document.createElement('div');
-  ek.className = 'isim-ek';
+  // portre adın arkasında, sağ üstte büyük ve silik (İş 49b: Emre'nin seçimi); ad ve imza üstünde durur
   if (k.portre) {
     const img = document.createElement('img');
-    img.className = 'portre';
+    img.className = 'portre-arka';
     img.alt = `${s.ad} portresi`;
     img.title = 'Portre: Wikimedia Commons';
     img.decoding = 'async';
-    img.src = `gorseller/portre/${encodeURIComponent(s.id)}.jpg`;
+    // genişlik adreste: büyük portre gelince görsel önbelleğindeki eski küçük kopya kullanılmaz
+    img.src = `gorseller/portre/${encodeURIComponent(s.id)}.jpg?en=${k.portre_en || 0}`;
+    img.addEventListener('load', () => img.classList.add('yuklendi'));
     img.addEventListener('error', () => img.remove());
-    ek.append(img);
+    kutu.classList.add('portreli');
+    kutu.prepend(img);
   }
-  if (okunur) {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'dinle';
-    b.dataset.test = 'dinle';
-    b.setAttribute('aria-label', `${s.ad}: adı nasıl okunur, dinle`);
-    b.innerHTML = `${HOPARLOR}<span>Dinle</span>`;
-    b.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      oku(s, k, b);
-    });
-    ek.append(b);
-  }
+  if (!okunur) return;
+  const ek = document.createElement('div');
+  ek.className = 'isim-ek';
+  const b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'dinle';
+  b.dataset.test = 'dinle';
+  b.setAttribute('aria-label', `${s.ad}: adı nasıl okunur, dinle`);
+  b.innerHTML = `${HOPARLOR}<span>Dinle</span>`;
+  b.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    oku(s, k, b);
+  });
+  ek.append(b);
   const ad = kutu.querySelector('.isim');
   if (ad) ad.after(ek);
   else kutu.prepend(ek);

@@ -12797,25 +12797,43 @@ a.harita-seviye:active {
   --imza-boy: 48px;
 }
 
-/* Sanatçının yüzü ve adının okunuşu (İş 49; js/kunye.js): adın altında portre madalyonu ve "Dinle" */
+/* Sanatçının yüzü ve adının okunuşu (İş 49; js/kunye.js): adın arkasında sağ üstte büyük, silik portre (sola, yukarı
+   ve aşağı doğru karanlığa karışır; sergi afişi gibi), adın altında "Dinle" */
+.isim-blok.portreli {
+  position: relative;
+  isolation: isolate;
+}
+.portre-arka {
+  position: absolute;
+  z-index: -1;
+  top: -96px;
+  right: calc(-1 * (env(safe-area-inset-right) + var(--yan, 16px)));
+  width: 250px;
+  height: 330px;
+  object-fit: cover;
+  object-position: 50% 20%;
+  opacity: 0;
+  filter: sepia(0.25) saturate(0.85);
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to left, #000 30%, transparent 92%), linear-gradient(to bottom, transparent 0, #000 22%, #000 55%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to left, #000 30%, transparent 92%), linear-gradient(to bottom, transparent 0, #000 22%, #000 55%, transparent 100%);
+  mask-composite: intersect;
+  transition: opacity 1.2s ease-out;
+}
+.portre-arka.yuklendi {
+  opacity: 0.7;
+}
+:root[data-tema='sepya'] .portre-arka.yuklendi,
+:root[data-tema='acik'] .portre-arka.yuklendi {
+  opacity: 0.4;
+}
 .isim-ek {
   display: flex;
   align-items: center;
   gap: 12px;
   margin: 8px 0 2px;
   animation: isim-ek-gel 0.6s ease-out both;
-}
-.isim-ek .portre {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow:
-    0 0 0 1.5px #c9a24a,
-    0 0 0 4px rgba(var(--bg-rgb), 0.9),
-    0 0 0 5px rgba(201, 162, 74, 0.45),
-    0 6px 14px -6px rgba(0, 0, 0, 0.7);
-  background: var(--surface);
 }
 .isim-ek .dinle {
   display: inline-flex;

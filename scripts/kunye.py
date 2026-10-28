@@ -5,7 +5,7 @@ Kaynak Wikidata, yalnız data/eserler_onbellek.json'daki doğrulanmış QID'ler 
   P443 telaffuz kaydı (Commons ses dosyası; nitelendirici P407 kaydın dili), P18 kişinin görseli, P1412 konuştuğu diller.
 Kayıt, sanatçının kendi dilinde değilse (ör. İngilizce konuşan birinin okuduğu Fransız adı) kullanılmaz: o zaman telefon adı
 sanatçının dilindeki sesle okur (uygulama, speechSynthesis). Ses dosyası Commons'un MP3'e çevrilmiş kopyası (iPhone Ogg
-çalamıyor); portre 330 px küçük resimden yüze yakın kare kesilir. Hepsi uygulamayla yayınlanır: Wikimedia'nın hız sınırına
+çalamıyor); portre 960 px küçük resimden dikey (3:4) kesilir, 600 px genişlik. Hepsi uygulamayla yayınlanır: Wikimedia'nın hız sınırına
 ve internete bağlı kalmaz.
 
 Çalıştır (depo kökünde; Pillow gerekir: pip3 install pillow):
@@ -22,7 +22,9 @@ KOK = Path(__file__).resolve().parent.parent
 UA = 'SanatAtlasi/1.0 (personal study app; emreyaman1024@gmail.com)'
 SES = KOK / 'gorseller' / 'ses'
 PORTRE = KOK / 'gorseller' / 'portre'
-BOY = 330
+# Portre sayfada adın arkasında 250×330 pt gösterilir (İş 49b); 2,4 kat yoğunluk için 600×792 px, kaynak 960 px küçük resim
+KAYNAK = 960
+PORTRE_EN, PORTRE_BOY = 600, 792
 
 # Birden çok dili olan ya da dili kayıtlı olmayan sanatçılar: adının söylendiği dil (elle; KARARLAR İş 49).
 # Yunanca ve Japonca ses Latin harfli adı okuyamadığı için o sanatçılar telaffuzsuz kalır (None).
@@ -46,6 +48,12 @@ PORTRE_DEGIL = {
     'domenico-di-michelino',  # kendi Dante tablosu
     'valentin-de-boulogne',  # kendi tablosu
     'praxiteles',  # XIX. yüzyılda yapılmış hayalî kabartma; antik ustaların gerçek yüzü bilinmiyor
+    'diotisalvi',  # vaftizhanedeki kitabe taşı
+    'georges-de-la-tour',  # kendi tablosu
+    'bartolomeo-manfredi',  # kendi tablosu (tür sahnesi)
+    'dirck-van-baburen',  # kendi tablosu (lavta çalan)
+    'limbourg-kardesler',  # minyatürden kalabalık ayrıntısı
+    'phidias', 'giotto-di-bondone', 'donatello', 'nicola-pisano',  # ölümünden yüzyıllar sonra yapılmış hayalî heykel/büst
 }
 
 
@@ -97,19 +105,28 @@ def portre_indir(dosya, yol):
     uz = d.rsplit('.', 1)[-1].lower()
     ek = '.png' if uz in ('svg',) else ('.jpg' if uz in ('tif', 'tiff') else '')
     on = 'lossy-page1-' if uz in ('tif', 'tiff') else ''
-    url = f'https://upload.wikimedia.org/wikipedia/commons/thumb/{k}/{urllib.parse.quote(d)}/{on}{BOY}px-{urllib.parse.quote(d)}{ek}'
+    url = f'https://upload.wikimedia.org/wikipedia/commons/thumb/{k}/{urllib.parse.quote(d)}/{on}{KAYNAK}px-{urllib.parse.quote(d)}{ek}'
     try:
         veri = getir(url)
     except urllib.error.HTTPError:
-        veri = getir('https://commons.wikimedia.org/wiki/Special:FilePath/' + urllib.parse.quote(dosya) + f'?width={BOY}')
+        # özgün dosya küçükse küçük resmi üretilmez: özgün boyut
+        veri = getir('https://commons.wikimedia.org/wiki/Special:FilePath/' + urllib.parse.quote(dosya) + f'?width={KAYNAK}')
     im = Image.open(io.BytesIO(veri)).convert('RGB')
     w, h = im.size
-    # kare: yatay görselde ortadan, dikeyde yüzün olduğu üst kısımdan (portrelerde yüz çoğunlukla üst üçte birde)
-    k = min(w, h)
-    x = (w - k) // 2
-    y = 0 if h <= w else min(h - k, round(h * 0.08))
-    im = im.crop((x, y, x + k, y + k)).resize((240, 240), Image.LANCZOS)
-    im.save(yol, 'JPEG', quality=84, optimize=True)
+    # dikey kesit (3:4'e yakın): geniş görselde ortadan, uzun görselde yüzün olduğu üst kısımdan
+    oran = PORTRE_EN / PORTRE_BOY
+    if w / h > oran:
+        kw = round(h * oran)
+        x = (w - kw) // 2
+        kutu = (x, 0, x + kw, h)
+    else:
+        kh = round(w / oran)
+        y = min(h - kh, round(h * 0.05))
+        kutu = (0, y, w, y + kh)
+    im = im.crop(kutu)
+    if im.width > PORTRE_EN:
+        im = im.resize((PORTRE_EN, PORTRE_BOY), Image.LANCZOS)
+    im.save(yol, 'JPEG', quality=80, optimize=True, progressive=True)
 
 
 def ses_indir(dosya, yol):
@@ -167,11 +184,15 @@ def main():
                 dosya = sorted(portreler[q])[0]
                 yol = PORTRE / f'{sid}.jpg'
                 try:
-                    if not yol.exists() and indirme:
+                    # eski küçük kare portreler (240 px, İş 49) büyükleriyle değiştirilir
+                    eski = yol.exists() and Image.open(yol).width < PORTRE_EN * 0.9 and Image.open(yol).width == Image.open(yol).height
+                    if (not yol.exists() or eski) and indirme:
                         portre_indir(dosya, yol)
                         time.sleep(1)
                     if yol.exists():
                         kayit['portre'] = dosya
+                        # dosya büyüyünce adres değişsin: telefonun görsel önbelleği eski küçük kopyayı vermesin
+                        kayit['portre_en'] = Image.open(yol).width
                 except Exception as e:
                     print('portre HATA', sid, e)
             kunye[sid] = kayit
