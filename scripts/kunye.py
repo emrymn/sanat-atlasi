@@ -14,9 +14,11 @@ ve internete bağlı kalmaz.
   python3 scripts/kunye.py --indirmeden        # dosya indirmeden; yalnız var olan ses/portre dosyaları yazılır
 Mac'te ayrıca gerçek kaydı olmayan her sanatçının adını Mac'in o dildeki sesiyle (say) gorseller/ses/<id>.m4a'ya yazar
 (İş 49d: iPhone'un konuşma sentezine güvenilmiyor; uygulama yalnız dosya çalar). Başka sistemde var olan m4a'lar kullanılır.
+IPA (evrensel okunuş, İş 49e): sanatçının İngilizce Vikipedi maddesinin (Wikidata'daki site bağlantısı, doğrulanmış QID)
+giriş bölümündeki {{IPA|de|…}} / {{IPA-de|…}} şablonundan; sanatçının dilindeki yazım, yoksa İngilizce ({{IPAc-en}}).
 Portre olmayan "kişi görselleri" (ör. sanatçının kendi eseri) PORTRE_DEGIL listesinde: gözle denetlenip eklenir.
 """
-import hashlib, io, json, re, shutil, subprocess, sys, tempfile, time, urllib.parse, urllib.request, urllib.error
+import hashlib, html, io, json, re, shutil, subprocess, sys, tempfile, time, urllib.parse, urllib.request, urllib.error
 from pathlib import Path
 from PIL import Image
 
@@ -106,6 +108,115 @@ def okunus_uret(metin, ses, yol):
         subprocess.run(['afconvert', '-f', 'm4af', '-d', 'aac', '-c', '1', '-b', '64000', str(aiff), str(yol)], check=True)
 
 
+# --- IPA (İş 49e) ---
+# IPAc-en'in okunuş olmayan parametreleri (etiketler)
+IPAC_ETIKET = {'lang', 'local', 'pron', 'also', 'US', 'UK', 'Aus', 'NZ', 'CA', 'Can', 'IE', 'SA', 'IPA', 'audio', 'or', '-', ''}  # büyük/küçük harf duyarlı
+DIL_ESI = {'nb': 'no', 'no': 'no'}
+
+
+def _parametreler(govde):
+    # şablon gövdesini | ile böler; iç içe {{…}} ve [[…]] bölünmez
+    parca, derin, simdiki = [], 0, ''
+    i = 0
+    while i < len(govde):
+        iki = govde[i:i + 2]
+        if iki in ('{{', '[['):
+            derin += 1; simdiki += iki; i += 2; continue
+        if iki in ('}}', ']]'):
+            derin -= 1; simdiki += iki; i += 2; continue
+        if govde[i] == '|' and derin == 0:
+            parca.append(simdiki); simdiki = ''
+        else:
+            simdiki += govde[i]
+        i += 1
+    parca.append(simdiki)
+    return [p.strip() for p in parca]
+
+
+def _sablonlar(metin):
+    # en dıştaki {{…}} şablonları: (ad, [parametreler])
+    i, sonuc = 0, []
+    while True:
+        bas = metin.find('{{', i)
+        if bas < 0:
+            return sonuc
+        derin, j = 0, bas
+        while j < len(metin):
+            if metin.startswith('{{', j):
+                derin += 1; j += 2
+            elif metin.startswith('}}', j):
+                derin -= 1; j += 2
+                if derin == 0:
+                    break
+            else:
+                j += 1
+        p = _parametreler(metin[bas + 2:j - 2])
+        sonuc.append((p[0].strip(), p[1:]))
+        # iç şablonlar da aranır ({{lang|…{{IPA|…}}}} gibi)
+        sonuc.extend(_sablonlar(metin[bas + 2:j - 2]) if p[0].strip().lower() not in ('ipa', 'ipac-en') and not p[0].lower().startswith('ipa') else [])
+        i = j
+
+
+def _temizle(y):
+    y = html.unescape(re.sub(r'\[\[(?:[^|\]]*\|)?([^\]]*)\]\]', r'\1', y))
+    y = re.sub(r'<[^>]+>', '', y).strip().strip('[]/').strip()
+    return re.sub(r'\s+', ' ', y)
+
+
+def ipa_bul(wikitext, dil):
+    # giriş bölümündeki IPA yazımları → {'dil': kod, 'yazi': '[…]' ya da '/…/'} ya da None
+    giris = re.split(r'\n==[^=]', wikitext or '', maxsplit=1)[0]
+    bulunan = []
+    for ad, p in _sablonlar(giris):
+        a = ad.lower().replace('_', ' ').strip()
+        konumlu = [x for x in p if '=' not in x]
+        if a == 'ipac-en':
+            y = ''.join(x for x in konumlu if x not in IPAC_ETIKET).replace('_', ' ')
+            if y:
+                bulunan.append(('en', '/' + _temizle(y) + '/'))
+        elif a.startswith('ipa-') and len(a) <= 8 and konumlu:
+            bulunan.append((a[4:], '[' + _temizle(konumlu[0]) + ']'))
+        elif a == 'lang-rus' and len(konumlu) >= 3:
+            # {{lang-rus|Кириллица|çeviri yazı|IPA}}
+            bulunan.append(('ru', '[' + _temizle(konumlu[2]) + ']'))
+        elif a == 'ipa' and konumlu:
+            if len(konumlu) >= 2 and re.fullmatch(r'[a-z]{2,3}(-[a-z]+)?', konumlu[0]):
+                bulunan.append((konumlu[0].split('-')[0], '[' + _temizle(konumlu[1]) + ']'))
+    bulunan = [(d, y) for d, y in bulunan if len(y) > 2]
+    esit = lambda a, b: a == b or DIL_ESI.get(a, a) == DIL_ESI.get(b, b)
+    for d, y in bulunan:
+        if dil and esit(d, dil):
+            return {'dil': d, 'yazi': y}
+    for d, y in bulunan:
+        if d != 'en':
+            return {'dil': d, 'yazi': y}
+    if dil in (None, 'en'):
+        for d, y in bulunan:
+            return {'dil': d, 'yazi': y}
+    return None
+
+
+def vikipedi_girisleri(basliklar):
+    # İngilizce Vikipedi maddelerinin metni (20'şer), {başlık: wikitext}
+    sonuc = {}
+    b = sorted(set(basliklar))
+    for i in range(0, len(b), 20):
+        u = 'https://en.wikipedia.org/w/api.php?' + urllib.parse.urlencode({
+            'action': 'query', 'prop': 'revisions', 'rvprop': 'content', 'rvslots': 'main',
+            'titles': '|'.join(b[i:i + 20]), 'format': 'json', 'formatversion': 2, 'redirects': 1})
+        d = json.loads(getir(u))
+        yon = {r['from']: r['to'] for r in d['query'].get('normalized', []) + d['query'].get('redirects', [])}
+        metin = {pg['title']: pg['revisions'][0]['slots']['main']['content'] for pg in d['query']['pages'] if pg.get('revisions')}
+        for t in b[i:i + 20]:
+            h = t
+            while h in yon:
+                h = yon[h]
+            if h in metin:
+                sonuc[t] = metin[h]
+        time.sleep(1)
+    return sonuc
+
+
 def getir(url, deneme=6):
     for i in range(deneme):
         try:
@@ -121,11 +232,12 @@ def getir(url, deneme=6):
 
 def sorgula(qidler):
     vals = ' '.join('wd:' + q for q in sorted(qidler))
-    sorgu = f'''SELECT ?q ?ses ?sesDil ?portre ?dilKod WHERE {{
+    sorgu = f'''SELECT ?q ?ses ?sesDil ?portre ?dilKod ?enAd WHERE {{
  VALUES ?q {{ {vals} }}
  OPTIONAL {{ ?q p:P443 ?st . ?st ps:P443 ?ses . OPTIONAL {{ ?st pq:P407 ?sl . ?sl wdt:P218 ?sesDil }} }}
  OPTIONAL {{ ?q wdt:P18 ?portre }}
  OPTIONAL {{ ?q wdt:P1412 ?d . ?d wdt:P218 ?dilKod }}
+ OPTIONAL {{ ?enS schema:about ?q ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?enAd }}
 }}'''
     veri = urllib.parse.urlencode({'query': sorgu, 'format': 'json'}).encode()
     for i in range(5):
@@ -197,7 +309,7 @@ def main():
         yanit = json.loads(Path(sys.argv[sys.argv.index('--sorgu') + 1]).read_text())
     else:
         yanit = sorgula(qid_id.keys())
-    sesler, diller, portreler = {}, {}, {}
+    sesler, diller, portreler, enadlar = {}, {}, {}, {}
     for b in yanit['results']['bindings']:
         q = b['q']['value'].rsplit('/', 1)[1]
         if 'ses' in b:
@@ -206,6 +318,17 @@ def main():
             diller.setdefault(q, set()).add(b['dilKod']['value'])
         if 'portre' in b:
             portreler.setdefault(q, set()).add(ad(b['portre']['value']))
+        if 'enAd' in b:
+            enadlar[q] = b['enAd']['value']
+    eski_kunye = {}
+    if (KOK / 'data' / 'kunye.json').exists():
+        eski_kunye = json.loads((KOK / 'data' / 'kunye.json').read_text())['kunye']
+    girisler = {}
+    if '--indirmeden' not in sys.argv and enadlar:
+        try:
+            girisler = vikipedi_girisleri(enadlar.values())
+        except Exception as e:
+            print('Vikipedi HATA (IPA eski haliyle kalır):', e)
     SES.mkdir(parents=True, exist_ok=True)
     PORTRE.mkdir(parents=True, exist_ok=True)
     adlar = {x['id']: x['ad'] for x in json.loads((KOK / 'data' / 'sanatcilar.json').read_text())}
@@ -217,6 +340,7 @@ def main():
         for sid in sidler:
             d = diller.get(q, set())
             dil = DIL[sid] if sid in DIL else (next(iter(d)) if len(d) == 1 else None)
+            ham_dil = dil if sid in DIL else (next(iter(d)) if d else None)
             if dil in OKUNAMAZ:
                 dil = None
             kayit = {'dil': dil, 'ses': None, 'portre': None}
@@ -263,9 +387,16 @@ def main():
                         kayit['portre_en'] = Image.open(yol).width
                 except Exception as e:
                     print('portre HATA', sid, e)
+            # IPA: Vikipedi metni bu çalıştırmada geldiyse ondan, gelmediyse önceki kunye.json'dan
+            if q in enadlar and enadlar[q] in girisler:
+                ipa = ipa_bul(girisler[enadlar[q]], ham_dil)
+            else:
+                ipa = (eski_kunye.get(sid) or {}).get('ipa')
+            if ipa:
+                kayit['ipa'] = ipa
             kunye[sid] = kayit
     (KOK / 'data' / 'kunye.json').write_text(json.dumps({'surum': 1, 'kunye': dict(sorted(kunye.items()))}, ensure_ascii=False, indent=1) + '\n')
-    print(len(kunye), 'sanatçı ·', sum(1 for k in kunye.values() if k['ses']), 'ses kaydı ·', sum(1 for k in kunye.values() if k.get('okunus')), 'okunuş ·', sum(1 for k in kunye.values() if k['dil']), 'dilli ·', sum(1 for k in kunye.values() if k['portre']), 'portre')
+    print(len(kunye), 'sanatçı ·', sum(1 for k in kunye.values() if k['ses']), 'ses kaydı ·', sum(1 for k in kunye.values() if k.get('okunus')), 'okunuş ·', sum(1 for k in kunye.values() if k['dil']), 'dilli ·', sum(1 for k in kunye.values() if k['portre']), 'portre ·', sum(1 for k in kunye.values() if k.get('ipa')), 'IPA')
 
 
 if __name__ == '__main__':

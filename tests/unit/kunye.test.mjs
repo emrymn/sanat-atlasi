@@ -50,3 +50,13 @@ test('parcala: açık uçlu ve sondan aralık; taşan aralık 416', async () => 
   assert.deepEqual([...new Uint8Array(await b.arrayBuffer())], [7, 8, 9]);
   assert.equal((await parcala(ses(), 'bytes=20-')).status, 416);
 });
+
+test('ipaHtml: IPA yazımı kaçışlı; okunuş dilinden farklıysa dil adı', async () => {
+  const { ipaHtml } = await import('../../js/kunye.js');
+  assert.equal(ipaHtml(null, 'de'), '');
+  const h = ipaHtml({ dil: 'de', yazi: '[ˈalbʁɛçt <b>]' }, 'de');
+  assert.match(h, /lang="de-fonipa">\[ˈalbʁɛçt &lt;b&gt;\]</);
+  assert.doesNotMatch(h, /ipa-dil/);
+  assert.match(ipaHtml({ dil: 'ru', yazi: '[x]' }, 'de'), /<span class="ipa-dil">Rusça<\/span>/);
+  assert.doesNotMatch(ipaHtml({ dil: 'nb', yazi: '[x]' }, 'no'), /ipa-dil/);
+});

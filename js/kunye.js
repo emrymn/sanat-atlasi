@@ -176,6 +176,22 @@ function oku(s, k, dugme) {
   }, 3000);
 }
 
+// IPA'nın dili (sanatçının adının okunduğu dilden farklıysa yanında yazılır)
+const DIL_ADI = {
+  de: 'Almanca', nl: 'Felemenkçe', fr: 'Fransızca', it: 'İtalyanca', es: 'İspanyolca', en: 'İngilizce', ca: 'Katalanca',
+  no: 'Norveççe', nb: 'Norveççe', ru: 'Rusça', el: 'Yunanca', grc: 'Eski Yunanca', ja: 'Japonca', pl: 'Lehçe',
+  cs: 'Çekçe', hu: 'Macarca', pt: 'Portekizce', sv: 'İsveççe', da: 'Danca', fi: 'Fince', la: 'Latince',
+};
+
+// "Evrensel okunuş": IPA (Uluslararası Fonetik Alfabe) yazımı, Vikipedi'den (İş 49e)
+export function ipaHtml(ipa, okunusDili) {
+  if (!ipa || !ipa.yazi) return '';
+  const kac = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+  const ayni = (a, b) => a === b || ((a === 'no' || a === 'nb') && (b === 'no' || b === 'nb'));
+  const dil = ipa.dil && !ayni(ipa.dil, okunusDili) && DIL_ADI[ipa.dil] ? `<span class="ipa-dil">${DIL_ADI[ipa.dil]}</span>` : '';
+  return `<span class="ipa" data-test="ipa" title="Uluslararası Fonetik Alfabe ile okunuşu (Vikipedi)"><abbr class="ipa-etiket" title="Uluslararası Fonetik Alfabe">IPA</abbr><span class="ipa-yazi" lang="${kac(ipa.dil || 'und')}-fonipa">${kac(ipa.yazi)}</span>${dil}</span>`;
+}
+
 const HOPARLOR =
   '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="dalga" d="M15.5 8.5a5 5 0 0 1 0 7"/><path class="dalga uzak" d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
 
@@ -186,7 +202,7 @@ export async function kunyeGoster(s, kutu) {
   if (!k || !kutu.isConnected || kutu.querySelector('.isim-ek')) return;
   const okunur = !!sesDosyasi(s, k) || (!!k.dil && !!sentez());
   if (!sesDosyasi(s, k) && okunur) sesleriIsit();
-  if (!k.portre && !okunur) return;
+  if (!k.portre && !okunur && !k.ipa) return;
   // portre adın arkasında, sağ üstte büyük ve silik (İş 49b: Emre'nin seçimi); ad ve imza üstünde durur
   if (k.portre) {
     const img = document.createElement('img');
@@ -201,9 +217,20 @@ export async function kunyeGoster(s, kutu) {
     kutu.classList.add('portreli');
     kutu.prepend(img);
   }
-  if (!okunur) return;
+  if (!okunur && !k.ipa) return;
   const ek = document.createElement('div');
   ek.className = 'isim-ek';
+  if (okunur) ek.append(dinleDugmesi(s, k));
+  if (k.ipa) ek.insertAdjacentHTML('beforeend', ipaHtml(k.ipa, k.dil));
+  const ad = kutu.querySelector('.isim');
+  if (ad) ad.after(ek);
+  else kutu.prepend(ek);
+  // imza bu satırın altına gelir (önce yerleştiyse taşınır)
+  const imza = kutu.querySelector('.imza-kap');
+  if (imza) ek.after(imza);
+}
+
+function dinleDugmesi(s, k) {
   const b = document.createElement('button');
   b.type = 'button';
   b.className = 'dinle';
@@ -215,11 +242,5 @@ export async function kunyeGoster(s, kutu) {
     e.stopPropagation();
     oku(s, k, b);
   });
-  ek.append(b);
-  const ad = kutu.querySelector('.isim');
-  if (ad) ad.after(ek);
-  else kutu.prepend(ek);
-  // imza bu satırın altına gelir (önce yerleştiyse taşınır)
-  const imza = kutu.querySelector('.imza-kap');
-  if (imza) ek.after(imza);
+  return b;
 }

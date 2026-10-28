@@ -263,7 +263,7 @@ test('T4: sürüm değişince Bugün’de bir kez “Yenilikler”; Ayarlar’da
   await expect(not).toBeVisible();
   await expect(not).toContainText('1.26 ·');
   await expect(not).toContainText('Koleksiyonum');
-  expect((await ilerleme(page)).sonSurum).toBe('1.46.3');
+  expect((await ilerleme(page)).sonSurum).toBe('1.47.0');
   // aynı oturumda ana sayfaya dönünce durur; kapatılınca gider; sonraki açılışta yok
   await not.getByRole('button', { name: 'Yenilikler notunu kapat' }).click();
   await expect(not).toHaveCount(0);
@@ -271,15 +271,15 @@ test('T4: sürüm değişince Bugün’de bir kez “Yenilikler”; Ayarlar’da
   await expect(page.locator('[data-test="gunun-kart"], [data-test="pekistir"]').first()).toBeVisible();
   await expect(page.locator('[data-test="yenilik-not"]')).toHaveCount(0);
   await page.goto('./#/ayarlar');
-  await expect(page.locator('[data-test="yenilikler"] li').first()).toContainText('1.46 ·');
-  await expect(page.locator('[data-test="yenilikler"] li').nth(13)).toContainText('1.33 ·');
+  await expect(page.locator('[data-test="yenilikler"] li').first()).toContainText('1.47 ·');
+  await expect(page.locator('[data-test="yenilikler"] li').nth(14)).toContainText('1.33 ·');
 });
 
 test('T4: yepyeni kullanıcıya Yenilikler notu gösterilmez', async ({ page }) => {
   await page.goto('./');
   await hazir(page);
   await expect(page.locator('[data-test="yenilik-not"]')).toHaveCount(0);
-  expect((await ilerleme(page)).sonSurum).toBe('1.46.3');
+  expect((await ilerleme(page)).sonSurum).toBe('1.47.0');
 });
 
 test('T2: eser notları ilk ekrandan sonra yüklenir; önce açılan görüntüleyici not gelince yenilenir', async ({ page, context }) => {

@@ -137,7 +137,7 @@ test('künye: sanatçı sayfasında arkada portre ve "Dinle"; imza onların alt�
     r.fulfill({
       status: 200,
       contentType: 'application/json',
-      body: JSON.stringify({ surum: 1, kunye: { 'albrecht-durer': { dil: 'de', ses: null, portre: 'Durer.jpg' }, cimabue: { dil: null, ses: null, portre: null } } }),
+      body: JSON.stringify({ surum: 1, kunye: { 'albrecht-durer': { dil: 'de', ses: null, portre: 'Durer.jpg', ipa: { dil: 'de', yazi: '[ˈalbʁɛçt ˈdyːʁɐ]' } }, 'wassily-kandinsky': { dil: null, ses: null, portre: null, ipa: { dil: 'ru', yazi: '[vɐˈsʲilʲɪj]' } }, cimabue: { dil: null, ses: null, portre: null } } }),
     }),
   );
   await context.route(/\/gorseller\/portre\/albrecht-durer\.jpg(\?.*)?$/, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)) }));
@@ -160,6 +160,12 @@ test('künye: sanatçı sayfasında arkada portre ve "Dinle"; imza onların alt�
   await expect(page.locator('.isim-ek + .imza-kap')).toHaveCount(1);
   await ek.locator('[data-test="dinle"]').click();
   await expect.poll(() => page.evaluate(() => window.__okunan)).toEqual([{ metin: 'Albrecht Dürer', dil: 'de' }]);
+  // evrensel okunuş (IPA) Dinle'nin yanında; okunuş dili aynıysa dil adı yazılmaz
+  await expect(ek.locator('[data-test="ipa"]')).toHaveText('IPA[ˈalbʁɛçt ˈdyːʁɐ]');
+  // dili olmayan (okunamaz) sanatçıda yalnız IPA, dil adıyla
+  await page.goto('./#/sanatci/wassily-kandinsky');
+  await expect(page.locator('.isim-ek [data-test="ipa"]')).toHaveText('IPA[vɐˈsʲilʲɪj]Rusça');
+  await expect(page.locator('.isim-ek [data-test="dinle"]')).toHaveCount(0);
   // ne portresi ne dili olan: satır yok
   await page.goto('./#/sanatci/cimabue');
   await expect(page.locator('.isim-blok h1')).toBeVisible();

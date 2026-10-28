@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.47.0', metin: 'Sanatçının adının evrensel okunuşu: “Dinle”nin yanında IPA (Uluslararası Fonetik Alfabe) yazımı, Vikipedi’den, sanatçının kendi dilinde. “Dinle” artık her sanatçıda kendi dilinde hazır kayıt çalar.' },
   { surum: '1.46.0', metin: 'Sanatçı sayfasında portre artık büyük: adın arkasında, sağ üstte silik bir tablo gibi durur; ad ve imza üstünde okunur. Portre sayılmayan görseller (sanatçının kendi tablosu, kitabe, yüzyıllar sonra yapılmış hayalî heykel) çıkarıldı.' },
   { surum: '1.45.0', metin: 'Sanatçı sayfasında adın altında “Dinle”: sanatçının adını kendi dilinde duyarsın (varsa gerçek ses kaydı, yoksa telefonun o dildeki sesi). Yanında sanatçının portresi.' },
   { surum: '1.44.0', metin: 'İmzalar kalemle yazılıyormuş gibi belirir: parlayan kalem ucu mürekkebi izler, yazı bitince üstünden ışık geçer. Küçük kaynaktan gelen 22 imza (Dürer, Tintoretto, David…) yeniden çizildi, artık piksel piksel değil. Ayarlar’da “Başka bir sanatçı getir”: günün sanatçısını o gün için değiştirir.' },

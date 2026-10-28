@@ -1273,3 +1273,11 @@ Emre: düğmeye basınca ses yok. iPhone'a özgü iki neden düzeltildi (bu orta
 2. **Telefonun konuşma sentezi yerine hazır okunuş:** `scripts/kunye.py` Mac'te, gerçek kaydı olmayan her sanatçının adını Mac'in o dildeki sesiyle (`say`, ör. Almanca Anna, Hollandaca Xander, Fransızca Thomas; 150 kelime/dk) `gorseller/ses/<id>.m4a`'ya (AAC, tek kanal, 64 kbps) yazar; `kunye.json`'da `okunus: true`. Konuşma sentezi yalnız dosyası olmayan sanatçıda yedek.
 3. Gerçek bir hata da düzeldi: bir ses çalarken başka "Dinle"ye basınca `calan` sıfırlanıp hemen ardından okunuyordu (TypeError), ikinci düğme hiç çalmıyordu.
 4. Emre Mac'te betiği çalıştırdı: 170 okunuş dosyası (`.m4a`, 8–23 KB, toplam ~3 MB) + 9 gerçek kayıt. Edvard Munch eksik kaldı: Mac Norveççe sesi `nb` (Bokmål) diye listeliyor, betik `no` arıyordu; betik artık ikisini eş sayar (Munch bir sonraki Mac çalıştırmasında gelir, o zamana dek telefon okur). Sürüm 1.46.3: `kunye.json` kabukta, yeni dosyalar telefona ancak sürümle iner.
+
+## İş 49e · Evrensel okunuş: IPA (2026-10-28, v1.47.0)
+
+Emre: "Dinle"nin yanına adların evrensel okunuşu. Uluslararası Fonetik Alfabe (IPA) yazımı.
+1. **Kaynak:** sanatçının İngilizce Vikipedi maddesi (Wikidata sorgusundaki site bağlantısı, yani doğrulanmış QID'nin maddesi), giriş bölümündeki şablonlar: `{{IPA|de|…}}`, `{{IPA-de|…}}`, `{{lang-rus|…|…|IPA}}`, `{{IPAc-en|…}}` (iç içe `{{efn|…}}` içinde de aranır). Seçim: okunuş diliyle (`dil`) aynı dildeki yazım; yoksa İngilizce olmayan ilk yazım (Kandinsky: Rusça, sesi Almanca); İngilizce yalnız sanatçı İngilizce konuşuyorsa ya da dili yoksa. Bulunamazsa gösterilmez (tahmin yok). Wikidata P898 (IPA) kişilerde neredeyse hiç dolu değil, kullanılmadı.
+2. **Gösterim:** "Dinle"nin yanında küçük altın "IPA" etiketi + yazım (köşeli ayraç: dilin sesbilgisi; İngilizce /…/), `lang="de-fonipa"`. IPA'nın dili okunuş dilinden farklıysa yanında dil adı ("Rusça"). Uzun yazımlar alt satıra iner.
+3. **Üretim:** `scripts/kunye.py` (Mac'te; Wikimedia bu ortama 429 veriyor — Emre: "hata verince betik hazırla, ben çalıştırırım"). `--indirmeden` ya da Vikipedi'ye ulaşılamazsa önceki `kunye.json`'daki IPA korunur.
+4. `data/kunye.json` artık service worker'da **önce ağ** (yoksa önbellek): Emre betiği çalıştırıp gönderince portre/okunuş/IPA sürüm artırmayı beklemeden telefona gelir.
