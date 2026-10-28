@@ -163,6 +163,23 @@ def _temizle(y):
     return re.sub(r'\s+', ' ', y)
 
 
+# IPA'sı gösterilmeyenler: Vikipedi gerçek soyadını veriyor, ekrandaki ad ve okunuşla uyuşmuyor
+IPA_DEGIL = {'jacopo-pontormo', 'daniele-da-volterra'}
+
+
+def ipa_duzelt(ipa):
+    # tek değişke (", ˈtjeː-" gibi ekler atılır), şablon artığı {{!}} temizlenir; ASCII ile yazılmış bozuk yazım (X-SAMPA) atılır
+    if not ipa or not ipa.get('yazi'):
+        return None
+    y = ipa['yazi']
+    ac, ic, kapa = y[0], y[1:-1], y[-1]
+    ic = re.sub(r'\s*\{\{!\}\}\s*', ' ', ic)
+    ic = re.split(r',\s*', ic)[0].strip()
+    if not ic or re.search(r"[A-Z']", ic):
+        return None
+    return {'dil': ipa['dil'], 'yazi': ac + ic + kapa}
+
+
 def ipa_bul(wikitext, dil):
     # giriş bölümündeki IPA yazımları → {'dil': kod, 'yazi': '[…]' ya da '/…/'} ya da None
     giris = re.split(r'\n==[^=]', wikitext or '', maxsplit=1)[0]
@@ -392,6 +409,7 @@ def main():
                 ipa = ipa_bul(girisler[enadlar[q]], ham_dil)
             else:
                 ipa = (eski_kunye.get(sid) or {}).get('ipa')
+            ipa = ipa_duzelt(ipa) if sid not in IPA_DEGIL else None
             if ipa:
                 kayit['ipa'] = ipa
             kunye[sid] = kayit
