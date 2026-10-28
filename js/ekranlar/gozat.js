@@ -42,6 +42,7 @@ import { donemCizelgesi, pekistirmedeMi, notBolumleri, seritUst, eserSeridi } fr
 import { kimlikDoldur, akimUslubu, pekistirDugmesi, bolumBasligi } from './akim.js';
 import { harfUygula, AKIM_HARFLERI } from '../harfler.js';
 import { imzaGoster } from '../imza.js';
+import { kunyeGoster } from '../kunye.js';
 
 // ---------- Başyapıt yakın okumaları ----------
 let basyapitSozu = null;
@@ -399,6 +400,7 @@ export async function sanatciSayfasi(id) {
     </article>`);
   basyapitBaglariniDoldur(s.id);
   imzaGoster(s, ekran.querySelector('.isim-blok')); // İş 48: varsa ressamın gerçek imzası
+  kunyeGoster(s, ekran.querySelector('.isim-blok')); // İş 49: portresi ve adının okunuşu
   const eserler = await eserSozu;
   d.sonEserListesi = eserler; // testler ve hata ayıklama için
   const kutu = document.getElementById('eserler');

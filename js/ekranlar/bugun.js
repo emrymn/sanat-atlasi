@@ -49,6 +49,7 @@ import { SURUM } from '../surum.js';
 import { gosterilecekler, yenilikYazisi } from '../yenilikler.js';
 import { egimBaslat } from '../egim.js';
 import { imzaGoster } from '../imza.js';
+import { kunyeGoster } from '../kunye.js';
 
 // ---------- sayımlar ----------
 function istatistik() {
@@ -418,6 +419,7 @@ export async function gununSayfasi(id) {
   const eserler = bilinirlikSirasi(await eserSozu);
   if (!guncelMi(no)) return;
   imzaGoster(s, ekran.querySelector('.isim-blok')); // İş 48: varsa ressamın gerçek imzası
+  kunyeGoster(s, ekran.querySelector('.isim-blok')); // İş 49: portresi ve adının okunuşu
   const galeri = ekran.querySelector('[data-galeri]');
   if (!galeri) return;
   if (!eserler.length) {

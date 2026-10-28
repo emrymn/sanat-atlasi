@@ -1,0 +1,935 @@
+{
+ "surum": 1,
+ "kunye": {
+  "agnolo-bronzino": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "albrecht-durer": {
+   "dil": "de",
+   "ses": null,
+   "portre": null
+  },
+  "alessandro-magnasco": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "alexandre-cabanel": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "alfred-sisley": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "ambrogio-lorenzetti": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "andre-charles-boulle": {
+   "dil": "fr",
+   "ses": null,
+   "portre": "Henri van Soest.png"
+  },
+  "andre-le-notre": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "andrea-mantegna": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "andrea-palladio": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "andrea-pozzo": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "angelica-kauffman": {
+   "dil": "de",
+   "ses": null,
+   "portre": "Angelika Kauffmann - Self Portrait - 1784.jpg"
+  },
+  "annibale-carracci": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "anthony-van-dyck": {
+   "dil": "nl",
+   "ses": null,
+   "portre": "Sir Anthony van Dyck - Self-portrait.jpg"
+  },
+  "antonio-canova": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "arnold-bocklin": {
+   "dil": "de",
+   "ses": null,
+   "portre": "Arnold Böcklin (1827 - 1901), Selbstportrait (1873).jpg"
+  },
+  "arnolfo-di-cambio": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "artemisia-gentileschi": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "auguste-rodin": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "bartolomeo-manfredi": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "benjamin-west": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "benvenuto-cellini": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "berthe-morisot": {
+   "dil": "fr",
+   "ses": null,
+   "portre": "Morisot berthe photo.jpg"
+  },
+  "bonaventura-berlinghieri": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "camille-corot": {
+   "dil": "fr",
+   "ses": null,
+   "portre": "Jean-Baptiste-Camille Corot c1850.png"
+  },
+  "camille-pissarro": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "canaletto": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "caravaggio": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "carlo-maderno": {
+   "dil": "it",
+   "ses": null,
+   "portre": "Maderno Carlo Ritratto.jpg"
+  },
+  "caspar-david-friedrich": {
+   "dil": "de",
+   "ses": "De-Caspar David Friedrich.ogg",
+   "portre": "Caspar David Friedrich, Selvportræt, 1800, KKSgb5006, Statens Museum for Kunst.jpg"
+  },
+  "charles-barry-ve-augustus-pugin": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "charles-garnier": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "charles-le-brun": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "cimabue": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "claude-lorrain": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "claude-monet": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "correggio": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "daniele-da-volterra": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "dante-gabriel-rossetti": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "diego-velazquez": {
+   "dil": "es",
+   "ses": null,
+   "portre": null
+  },
+  "diotisalvi": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "dirck-van-baburen": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "domenico-di-michelino": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "donatello": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "donato-bramante": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "duccio-di-buoninsegna": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "edgar-degas": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "edouard-manet": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "edvard-munch": {
+   "dil": "no",
+   "ses": null,
+   "portre": null
+  },
+  "el-greco": {
+   "dil": "es",
+   "ses": null,
+   "portre": null
+  },
+  "elisabeth-vigee-le-brun": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "emil-nolde": {
+   "dil": "de",
+   "ses": null,
+   "portre": null
+  },
+  "ernst-ludwig-kirchner": {
+   "dil": "de",
+   "ses": null,
+   "portre": null
+  },
+  "eugene-delacroix": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "fernand-khnopff": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "filippo-brunelleschi": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "fra-angelico": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "francesco-salviati": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "francesco-solimena": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "francis-bacon": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "francisco-de-goya": {
+   "dil": "es",
+   "ses": null,
+   "portre": null
+  },
+  "francisco-de-zurbaran": {
+   "dil": "es",
+   "ses": null,
+   "portre": null
+  },
+  "francois-boucher": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "frans-hals": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "franz-marc": {
+   "dil": "de",
+   "ses": null,
+   "portre": null
+  },
+  "gentile-da-fabriano": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "georges-de-la-tour": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "georges-seurat": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "gerrit-van-honthorst": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "giambologna": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "gian-lorenzo-bernini": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "giorgione": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "giotto-di-bondone": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "giovanni-battista-gaulli": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "giovanni-battista-piazzetta": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "giovanni-battista-tiepolo": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "giovanni-bellini": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "giovanni-pisano": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "gislebertus": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "giulio-romano": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "giuseppe-maria-crespi": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "guercino": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "guido-reni": {
+   "dil": "it",
+   "ses": null,
+   "portre": "Guido Reni - Self-portrait 2.jpg"
+  },
+  "gustav-klimt": {
+   "dil": "de",
+   "ses": null,
+   "portre": null
+  },
+  "gustave-caillebotte": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "gustave-courbet": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "gustave-moreau": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "hannah-hoch": {
+   "dil": "de",
+   "ses": null,
+   "portre": null
+  },
+  "hans-baldung-grien": {
+   "dil": "de",
+   "ses": null,
+   "portre": null
+  },
+  "hans-holbein-genc": {
+   "dil": "de",
+   "ses": null,
+   "portre": null
+  },
+  "hendrick-ter-brugghen": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "henri-de-toulouse-lautrec": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "henry-fuseli": {
+   "dil": "en",
+   "ses": null,
+   "portre": "Henry fuseli por James Northcote 1778.jpg"
+  },
+  "hieronymus-bosch": {
+   "dil": "nl",
+   "ses": null,
+   "portre": "Hieronymus Bosch by Cornelis Cort.jpg"
+  },
+  "honore-daumier": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "horatio-greenough": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "hyacinthe-rigaud": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "j-m-w-turner": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "jacob-van-ruisdael": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "jacopo-pontormo": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "jacques-germain-soufflot": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "jacques-louis-david": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "jan-steen": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "jan-van-eyck": {
+   "dil": "nl",
+   "ses": null,
+   "portre": "Jan van Eyck - Portrait of a Man (Self Portrait?) 1433.jpg"
+  },
+  "jean-antoine-watteau": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "jean-arp": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "jean-auguste-dominique-ingres": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "jean-baptiste-greuze": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "jean-baptiste-simeon-chardin": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "jean-francois-millet": {
+   "dil": "fr",
+   "ses": null,
+   "portre": "Jean-FrancoisMillet(Nadar).jpg"
+  },
+  "jean-honore-fragonard": {
+   "dil": "fr",
+   "ses": null,
+   "portre": "Jean-Honoré Fragonard self-portrait.jpg"
+  },
+  "jean-leon-gerome": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "joan-miro": {
+   "dil": "es",
+   "ses": null,
+   "portre": null
+  },
+  "johannes-vermeer": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "john-constable": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "john-everett-millais": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "jules-hardouin-mansart": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "jusepe-de-ribera": {
+   "dil": "es",
+   "ses": null,
+   "portre": null
+  },
+  "katsushika-hokusai": {
+   "dil": null,
+   "ses": null,
+   "portre": null
+  },
+  "leon-battista-alberti": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "leonardo-da-vinci": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "limbourg-kardesler": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "lord-burlington": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "lorenzo-ghiberti": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "louis-le-vau": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "luca-giordano": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "lucas-cranach-yasl": {
+   "dil": "de",
+   "ses": null,
+   "portre": null
+  },
+  "man-ray": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "marcantonio-raimondi": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "marcel-duchamp": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "mary-cassatt": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "masaccio": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "mattia-preti": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "max-ernst": {
+   "dil": "de",
+   "ses": null,
+   "portre": null
+  },
+  "michelangelo": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "michelozzo": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "myron": {
+   "dil": null,
+   "ses": null,
+   "portre": null
+  },
+  "nicola-pisano": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "nicolas-poussin": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "odilon-redon": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "orazio-gentileschi": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "pablo-picasso": {
+   "dil": "es",
+   "ses": null,
+   "portre": null
+  },
+  "paolo-uccello": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "paolo-veronese": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "parmigianino": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "paul-cezanne": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "paul-gauguin": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "paul-signac": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "peter-paul-rubens": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "petrus-christus": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "phidias": {
+   "dil": null,
+   "ses": null,
+   "portre": null
+  },
+  "piero-della-francesca": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "pierre-auguste-renoir": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "pierre-puvis-de-chavannes": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "pieter-bruegel-yasl": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "pietro-lorenzetti": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "pietro-perugino": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "polykleitos": {
+   "dil": null,
+   "ses": null,
+   "portre": null
+  },
+  "praxiteles": {
+   "dil": null,
+   "ses": null,
+   "portre": null
+  },
+  "quentin-metsys": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "raphael": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "rembrandt-van-rijn": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "rene-magritte": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "robert-campin": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "rogier-van-der-weyden": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "rosso-fiorentino": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "salvador-dali": {
+   "dil": "es",
+   "ses": null,
+   "portre": null
+  },
+  "salvator-rosa": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "sandro-botticelli": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "sebastiano-ricci": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "simone-martini": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "sofonisba-anguissola": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "theodore-gericault": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "theodore-rousseau": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "thomas-gainsborough": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "thomas-jefferson": {
+   "dil": "en",
+   "ses": null,
+   "portre": "Official Presidential portrait of Thomas Jefferson (by Rembrandt Peale, 1800)(cropped).jpg"
+  },
+  "tintoretto": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "titian": {
+   "dil": "it",
+   "ses": null,
+   "portre": null
+  },
+  "utagawa-hiroshige": {
+   "dil": null,
+   "ses": null,
+   "portre": null
+  },
+  "valentin-de-boulogne": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "vincent-van-gogh": {
+   "dil": "nl",
+   "ses": null,
+   "portre": null
+  },
+  "wassily-kandinsky": {
+   "dil": "de",
+   "ses": null,
+   "portre": null
+  },
+  "william-adolphe-bouguereau": {
+   "dil": "fr",
+   "ses": null,
+   "portre": null
+  },
+  "william-blake": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "william-hogarth": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  },
+  "william-holman-hunt": {
+   "dil": "en",
+   "ses": null,
+   "portre": null
+  }
+ }
+}
