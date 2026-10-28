@@ -144,3 +144,22 @@ test('görüntüleyici: X ile kapatınca geçmişte fazladan adım kalmaz; "Konu
   await expect(page).toHaveURL(/#\/sanatci\/giotto-di-bondone$/);
   await expect(page.locator('.gor')).toHaveCount(0);
 });
+
+// İş 53: iPhone'a özgü dokunuşlar
+test('iPhone: yazı alanları 16 pt (dokununca yakınlaşmaz); tur görsellerinde uzun basma menüsü kapalı', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/ayarlar');
+  await expect(page.locator('#yedek-girdi')).toBeAttached();
+  const boylar = await page.evaluate(() => [...document.querySelectorAll('input:not([type=checkbox]):not([type=radio]):not([type=hidden]), textarea, select')].map((e) => parseFloat(getComputedStyle(e).fontSize)));
+  for (const b of boylar) expect(b).toBeGreaterThanOrEqual(16);
+  await page.goto('./#/pekistir/karisik');
+  const resim = page.locator('.soru-resim img');
+  await expect(resim).toBeAttached();
+  // Chromium -webkit-touch-callout'u tanımaz: kuralın soru görseline uyduğu seçiciden denetlenir
+  const uyuyor = await resim.evaluate((img) =>
+    [...document.styleSheets]
+      .flatMap((s) => [...s.cssRules])
+      .some((r) => r.selectorText && /sekmesiz #uygulama img/.test(r.selectorText) && img.matches(r.selectorText)),
+  );
+  expect(uyuyor).toBe(true);
+});
