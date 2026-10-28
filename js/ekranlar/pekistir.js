@@ -343,8 +343,9 @@ async function oturumKur(kip, akim) {
   };
 }
 
-function kipAdi(kip, akim) {
-  return `Pekiştir · ${kipKisa(kip, akim)}`;
+// Tur ekranlarının başlığı: kipin adı büyük, "Pekiştir" üstte küçük etiket (İş 50: "Pekiştir · Hatalarım" iki satıra taşıyordu)
+function pkUst(kip, akim, yedek = '#/pekistir', ustEtiket = 'Pekiştir') {
+  return ust(kipKisa(kip, akim), yedek, { ustEtiket });
 }
 
 function kipKisa(kip, akim) {
@@ -369,22 +370,21 @@ export function turAdresi(kip, akim) {
 const tekSorulu = (o) => o.kip !== 'karisik';
 
 export async function pekistir(kip, akim, { yeni = false, onayli = false } = {}) {
-  const baslik = kipAdi(kip, akim);
   if (kip === 'bolum') {
     const { id, sv } = bolumBilgi(akim);
     const x = bolumDurumu().durumlar.find((y) => y.id === id);
     const gerekli = sv === 'tanitim' ? null : sv === 'tanitim-orta' ? 'orta' : sv;
     if (!x || !x.acik || (gerekli && !x.seviyeAcik[gerekli]))
       return ciz(
-        `${ust(baslik, '#/harita')}<div class="bos-kutu" data-test="bolum-kapali"><p>Bu bölüm ya da seviye henüz açılmadı.</p><p><a class="dugme" href="#/harita">Haritaya dön</a></p></div>`,
+        `${pkUst(kip, akim, '#/harita')}<div class="bos-kutu" data-test="bolum-kapali"><p>Bu bölüm ya da seviye henüz açılmadı.</p><p><a class="dugme" href="#/harita">Haritaya dön</a></p></div>`,
       );
   }
   const o = d.oturum;
   if (yeni || !o || o.kip !== kip || o.akim !== akim || o.oturum.bitti) {
     // Yarım kalan oturum varken yeni oturum: önce sor (sayfa içinde)
     if (d.yarim && !onayli) return yarimSor(kip, akim);
-    if (!acikListe().length) return ciz(`${ust(baslik, '#/pekistir')}${bosAcik()}`);
-    ciz(`${ust(baslik, '#/pekistir')}<p class="ikincil">Kartlar hazırlanıyor…</p>`);
+    if (!acikListe().length) return ciz(`${pkUst(kip, akim)}${bosAcik()}`);
+    ciz(`${pkUst(kip, akim)}<p class="ikincil">Kartlar hazırlanıyor…</p>`);
     const no = cizimNo();
     const yeniOturum = await oturumKur(kip, akim);
     // hazırlanırken (çevrimdışıyken sanatçı başına 6 sn sürebilir) başka ekrana geçildiyse kart çizilmez
@@ -393,13 +393,13 @@ export async function pekistir(kip, akim, { yeni = false, onayli = false } = {})
     if (!d.oturum.oturum.toplam && !(d.oturum.kip === 'bolum' && d.oturum.tanisma)) {
       d.oturum = null;
       return ciz(
-        `${ust(baslik, '#/pekistir')}<div class="bos-kutu"><p>Bu seçim için şu an kart yok.</p><p class="kucuk ikincil">${
+        `${pkUst(kip, akim)}<div class="bos-kutu" data-test="kart-yok"><p>Bu seçim için şu an kart yok.</p><p class="kucuk ikincil">${
           kip === 'hatalar'
             ? 'Son 7 günde yanlış yaptığın sanatçı kalmadı.'
             : kip === 'konu'
               ? 'Bu konunun açık sanatçısı yok ya da görselleri bulunamadı.'
               : `Bugünkü yeni sanatçı sınırına (${GUNLUK_YENI_SINIRI}) ulaşmış olabilirsin ya da bu sanatçıların görseli bulunamadı.`
-        }</p></div>`,
+        }</p><div class="iki-dugme">${kip === 'karisik' ? '' : '<a class="dugme vurgu" href="#/pekistir/karisik">Karışık tur başlat</a>'}<a class="dugme" href="#/pekistir">Pekiştir’e dön</a></div></div>`,
       );
     }
   }
@@ -563,7 +563,7 @@ export function devamKarti() {
 }
 
 function yarimSor(kip, akim) {
-  ciz(`${ust(kipAdi(kip, akim), '#/pekistir')}
+  ciz(`${pkUst(kip, akim)}
     <div class="bos-kutu" data-test="yarim-soru">
       <p>Yarım kalan oturum silinsin mi?</p>
       <p class="kucuk ikincil">${kacis(devamOzeti(d.yarim))}</p>
@@ -1423,7 +1423,7 @@ function ozetCiz() {
   const ot = o.oturum;
   if (d.yarim && d.yarim.kimlik === o.kimlik) yarimSil();
   const toplam = ot.dogru + ot.yanlis;
-  ciz(`${ust(kipAdi(o.kip, o.akim), '#/pekistir', { ustEtiket: 'Tur bitti' })}
+  ciz(`${pkUst(o.kip, o.akim, '#/pekistir', 'Tur bitti')}
     <div class="ozet">
       ${etiket('Sonuç', { vurgu: true })}
       <b class="ad">${ot.dogru} / ${toplam}</b>
