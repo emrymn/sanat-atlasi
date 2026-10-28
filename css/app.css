@@ -13042,3 +13042,13 @@ a[href^='#'] {
   -webkit-user-select: none;
   user-select: none;
 }
+/* çift dokununca iOS sayfayı yakınlaştırıyordu (görüntüleyicide ileri/geri okuna hızlı iki dokunuş): manipulation
+   kaydırmaya ve iki parmakla yakınlaştırmaya izin verir, yalnız çift dokunma yakınlaştırmasını kapatır. touch-action
+   ata zinciri boyunca kesiştiği için kökte vermek her yeri kapsar; düğme ve bağlantılarda ayrıca (bazı iOS sürümleri
+   yalnız dokunulan öğeye bakar). Görüntüleyici sahnesi (none), zaman şeridi (pan-x pan-y) kendi kurallarıyla kalır. */
+html,
+button,
+a,
+[role='button'] {
+  touch-action: manipulation;
+}

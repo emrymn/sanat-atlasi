@@ -163,3 +163,16 @@ test('iPhone: yazı alanları 16 pt (dokununca yakınlaşmaz); tur görsellerind
   );
   expect(uyuyor).toBe(true);
 });
+
+test('iPhone: çift dokunma yakınlaştırması kapalı (görüntüleyici okları dahil); görüntüleyici sahnesi kendi hareketlerini korur', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await page.locator('.eser').first().click();
+  const sonraki = page.locator('.gor .gor-sonraki');
+  await expect(sonraki).toBeVisible();
+  const ta = (sec) => page.locator(sec).first().evaluate((e) => getComputedStyle(e).touchAction);
+  expect(await page.evaluate(() => getComputedStyle(document.documentElement).touchAction)).toBe('manipulation');
+  expect(await ta('.gor .gor-sonraki')).toBe('manipulation');
+  expect(await ta('.gor .gor-kapat')).toBe('manipulation');
+  expect(await ta('.gor .gor-sahne')).toBe('none');
+});
