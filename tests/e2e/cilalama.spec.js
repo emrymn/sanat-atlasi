@@ -215,3 +215,20 @@ test.describe('görüntüleyici dokunuş ve yatay ekran', () => {
     expect(alt.height).toBeLessThanOrEqual(390 * 0.5);
   });
 });
+
+// İş 55: Konular kısaldı — her grupta en çok 6 konu ve "hepsi"; grubun bütün konuları kendi sayfasında
+test('Konular: her grupta en çok 6 kart ve "hepsi" bağlantısı; grup sayfası bütün konuları gösterir, geri listeye döner', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/konular');
+  const izgaralar = page.locator('[data-test="konu-listesi"]');
+  await expect(izgaralar.first()).toBeVisible();
+  for (const n of await izgaralar.evaluateAll((l) => l.map((u) => u.querySelectorAll('.konu-kart').length))) expect(n).toBeLessThanOrEqual(6);
+  const hepsi = page.locator('[data-test="konu-hepsi"]').first();
+  const toplam = Number((await hepsi.innerText()).match(/(\d+) konunun hepsi/)[1]);
+  await hepsi.click();
+  await expect(page).toHaveURL(/#\/konular\/[a-z_]+$/);
+  await expect(page.locator('.konu-kart')).toHaveCount(toplam);
+  await expect(page.locator('[data-test="konu-grup-serit"] a[aria-current="page"]')).toHaveCount(1);
+  await page.locator('.ust .geri').click();
+  await expect(page).toHaveURL(/#\/konular$/);
+});

@@ -151,27 +151,63 @@ export function ikonografiVeri() {
   return ikonografiSozu;
 }
 
+// Konular (İş 55): 223 kart tek sayfada ~40 ekran boyuydu. Ana sayfada her grubun en çok işlenen 6 konusu ve
+// "hepsi" bağlantısı; grubun bütün konuları kendi sayfasında (#/konular/<tür>). Üstte gruplar arası şerit.
+const KONU_ONIZLEME = 6;
+
+function konuKartlari(l) {
+  return `<ul class="konu-izgara" data-test="konu-listesi">${l
+    .map(
+      (k, i) =>
+        `<li style="--i:${i % 8}"><a class="konu-kart" href="#/konu/${encodeURIComponent(k.id)}" data-konu-kart="${kacis(k.id)}"><span class="konu-kapak" data-konu-kapak></span><span class="konu-kart-yazi"><b>${kacis(k.ad)}</b><small>${k.eserler.length} eser</small></span></a></li>`,
+    )
+    .join('')}</ul>`;
+}
+
+function konuGrupSeridi(gruplar, etkin = null) {
+  return `<nav class="konu-grup-serit" aria-label="Konu grupları" data-test="konu-grup-serit">${gruplar
+    .map(({ t, l }) => `<a href="#/konular/${t}"${t === etkin ? ' aria-current="page"' : ''}>${kacis(TUR_AD[t])}<small>${l.length}</small></a>`)
+    .join('')}</nav>`;
+}
+
+async function konuGruplari() {
+  const liste = await ikonografiVeri();
+  return { liste, gruplar: TUR_SIRA.map((t) => ({ t, l: liste.filter((k) => k.tur === t) })).filter((g) => g.l.length) };
+}
+
 export async function konuListesi() {
   gununRengi();
   ciz(`${gozAtUst('konular')}<p class="ikincil kucuk">Yükleniyor…</p>`);
-  const liste = await ikonografiVeri();
+  const { liste, gruplar } = await konuGruplari();
   if (location.hash !== '#/konular') return;
   if (!liste.length) return ciz(`${gozAtUst('konular')}<p class="ikincil">Henüz konu yok.</p>`);
-  const gruplar = TUR_SIRA.map((t) => ({ t, l: liste.filter((k) => k.tur === t) })).filter((g) => g.l.length);
   // İş 25: yazı yerine kart: konunun adı ve en ünlü resmi; dokununca konunun sayfası (hikâye ve öbür resimler)
   ciz(`${gozAtUst('konular')}
     <p class="bolum-aciklama">Resimlerde en sık işlenen ${liste.length} hikâye.</p>
+    ${konuGrupSeridi(gruplar)}
     ${gruplar
       .map(
         ({ t, l }) => `<h2 class="konu-grup-bas"><span>${kacis(TUR_AD[t])}</span><small>${l.length}</small></h2>
-      <ul class="konu-izgara" data-test="konu-listesi">${l
-        .map(
-          (k, i) =>
-            `<li style="--i:${i % 8}"><a class="konu-kart" href="#/konu/${encodeURIComponent(k.id)}" data-konu-kart="${kacis(k.id)}"><span class="konu-kapak" data-konu-kapak></span><span class="konu-kart-yazi"><b>${kacis(k.ad)}</b><small>${k.eserler.length} eser</small></span></a></li>`,
-        )
-        .join('')}</ul>`,
+      ${konuKartlari(l.slice(0, KONU_ONIZLEME))}
+      ${l.length > KONU_ONIZLEME ? `<a class="konu-hepsi" href="#/konular/${t}" data-test="konu-hepsi">${kacis(TUR_AD[t])} · ${l.length} konunun hepsi${ikon('ileri', 18, 1.6)}</a>` : ''}`,
       )
       .join('')}`);
+  konuKapaklariniDoldur(liste);
+}
+
+// Bir grubun bütün konuları (İş 55)
+export async function konuGrubu(t) {
+  gununRengi();
+  if (!TUR_AD[t]) return hataGoster(new Error('Bu konu grubu bulunamadı.'));
+  ciz(`${ust(TUR_AD[t], '#/konular', { ustEtiket: 'Konular' })}<p class="ikincil kucuk">Yükleniyor…</p>`);
+  const adres = location.hash;
+  const { liste, gruplar } = await konuGruplari();
+  if (location.hash !== adres) return;
+  const g = gruplar.find((x) => x.t === t);
+  ciz(`${ust(TUR_AD[t], '#/konular', { ustEtiket: 'Konular' })}
+    ${konuGrupSeridi(gruplar, t)}
+    <p class="bolum-aciklama">${g ? `${g.l.length} konu, en çok işlenenden aza.` : 'Bu grupta konu yok.'}</p>
+    ${g ? konuKartlari(g.l) : ''}`);
   konuKapaklariniDoldur(liste);
 }
 

@@ -1,7 +1,7 @@
 // Adres (#/…) → ekran eşlemesi.
 import { d, sekmeleriCiz, hataGoster, cizimBaslat, geriDonusBildir, sekmedenMi } from './ortak.js';
 import { anaSayfa, gununSayfasi } from './bugun.js';
-import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuSayfasi, basyapitSayfasi } from './gozat.js';
+import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuGrubu, konuSayfasi, basyapitSayfasi } from './gozat.js';
 import { pekistirMenusu, pekistir, devamEt } from './pekistir.js';
 import { ilerlemeSayfasi } from './ilerleme.js';
 import { ayarlarSayfasi } from './ayarlar.js';
@@ -24,6 +24,7 @@ const rotalar = [
   [/^#\/karsilastir\/([^/]+)\/([^/]+)$/, karsilastirSayfasi, null],
   [/^#\/basyapitlar$/, basyapitListesi, 'gozat'],
   [/^#\/konular$/, konuListesi, 'gozat'],
+  [/^#\/konular\/([^/]+)$/, konuGrubu, 'gozat'],
   [/^#\/konu\/(.+)$/, konuSayfasi, 'gozat'],
   [/^#\/basyapit\/(.+)$/, basyapitSayfasi, 'gozat'],
   [/^#\/pekistir$/, pekistirMenusu, 'pekistir'],
