@@ -90,7 +90,8 @@ def mac_sesleri():
 
 
 def mac_sesi(sesler, dil):
-    var = sesler.get(dil, [])
+    # Norveççe: Wikidata/telefon 'no', Mac 'nb' (Bokmål) der
+    var = sesler.get(dil, []) or sesler.get({'no': 'nb', 'nb': 'no'}.get(dil, ''), [])
     for ad in MAC_SES.get(dil, []):
         for v in var:
             if v == ad or v.startswith(ad + ' '):
