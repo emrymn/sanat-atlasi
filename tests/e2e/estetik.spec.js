@@ -58,6 +58,9 @@ test('imza: uygulamayla gelen hazır maske kullanılır (Wikimedia’ya gidilmez
   await expect(imza).toBeVisible();
   expect(await imza.evaluate((e) => e.style.getPropertyValue('--imza'))).toContain('gorseller/imza/albrecht-durer.png');
   expect(await imza.evaluate((e) => getComputedStyle(e).backgroundImage)).toContain('linear-gradient');
+  // genişlik oran ile açıkça verilir (Safari en-boy oranından türetmiyordu): fikstür 720×240 → 52 × 3 = 156 px
+  expect(await imza.evaluate((e) => e.style.getPropertyValue('--oran'))).toBe('3.0000');
+  expect(await imza.evaluate((e) => parseFloat(getComputedStyle(e).width))).toBeGreaterThan(150);
   expect(wikimedia).toBe(0);
 });
 

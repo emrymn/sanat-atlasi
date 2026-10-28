@@ -163,7 +163,8 @@ export async function imzaGoster(s, kutu) {
   el.setAttribute('aria-label', `${s.ad} imzası`);
   el.dataset.test = 'imza';
   el.dataset.dosya = dosya;
-  el.style.aspectRatio = `${m.en} / ${m.boy}`;
+  // genişlik açıkça (boy × oran): Safari, en-boy oranından genişlik türetmeyip kutuyu sıfır genişlikte bırakıyordu
+  el.style.setProperty('--oran', (m.en / m.boy).toFixed(4));
   el.style.setProperty('--imza', `url("${m.adres}")`);
   // kap: maskeli öğe kendi gölgesini taşıyamaz; gölge (ana sayfada tablonun üstünde okunsun diye) kaba verilir
   const kap = document.createElement('span');
