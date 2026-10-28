@@ -155,7 +155,10 @@ function parcalar() {
     .filter((a) => a.acik)
     .map((a) => ({ a, ist: akimIstatistigi(a.ad, acik, skorlar, b), kayit: seviyeKaydi(d.ilerleme, a.ad) }));
   if (d.ilrSira === 'zayif') akimlar.sort((x, y) => (x.ist.oran ?? 2) - (y.ist.oran ?? 2));
-  const akimSatirlari = akimlar.map(({ a, ist, kayit }) => {
+  // İş 56: cevap verilmemiş akımlar kart olarak tek tek "henüz cevap yok" diye dizilmez (29 satır, ~2,5 ekran);
+  // altta tek bölümde küçük haplar: dokununca o dönemin turu
+  const cevapsizlar = akimlar.filter(({ ist }) => !ist.tp);
+  const akimSatirlari = akimlar.filter(({ ist }) => ist.tp).map(({ a, ist, kayit }) => {
     const y = ist.oran === null ? null : Math.round(100 * ist.oran);
     const sv = SEVIYELER[kayit.s];
     const alt = [ist.tp ? `${ist.dg}/${ist.tp} doğru` : 'henüz cevap yok', `${ist.n} sanatçı`, ist.vade ? `${ist.vade} tekrar` : '', ist.kalici ? `${ist.kalici} kalıcı` : '']
@@ -217,7 +220,15 @@ function parcalar() {
     <div class="bolum-baslik baslik-sira"><h2 class="etiket">Akımlara göre doğruluk</h2>${
       akimSatirlari.length > 1 ? `<div class="secim-hap kucuk-hap" role="group" aria-label="Akımları sırala">${siraDugme('kron', 'Sırayla')}${siraDugme('zayif', 'Zayıf önce')}</div>` : ''
     }</div>
-    ${akimSatirlari.length ? `<ul class="akim-kartlar">${akimSatirlari.join('')}</ul>` : '<p class="ikincil">Henüz açık akım yok.</p>'}
+    ${akimSatirlari.length ? `<ul class="akim-kartlar">${akimSatirlari.join('')}</ul>` : ''}
+    ${
+      cevapsizlar.length
+        ? `<div class="cevapsiz-akimlar" data-test="cevapsiz-akimlar"><p class="ikincil kucuk">${akimSatirlari.length ? `Henüz cevap vermediğin ${cevapsizlar.length} akım` : `${cevapsizlar.length} açık akımda henüz cevap yok`} · dokun, o dönemin turu başlasın</p><ul>${cevapsizlar
+            .map(({ a }) => `<li><a href="#/pekistir/donem/${encodeURIComponent(a.ad)}" style="--akim:${akimRenk(a.ad)}">${akimNoktasi(a.ad)}${kacis(a.ad)}</a></li>`)
+            .join('')}</ul></div>`
+        : ''
+    }
+    ${!akimSatirlari.length && !cevapsizlar.length ? '<p class="ikincil">Henüz açık akım yok.</p>' : ''}
     ${karisanlarBolumu()}
     <h2 class="etiket bolum-baslik">En zayıf sanatçılar</h2>
     ${hatalar.idler.length ? `<a class="hatalar-satir zayif-cagri" href="#/pekistir/hatalar"><span class="hatalar-sayi" aria-hidden="true">${hatalar.idler.length}</span><span class="metin"><b>Hatalarım turu</b><span>son 7 günün yanlışları tek turda</span></span>${ikon('ileri', 20, 1.4)}</a>` : ''}

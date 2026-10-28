@@ -41,6 +41,7 @@ import {
 import { donemCizelgesi, pekistirmedeMi, notBolumleri, seritUst, eserSeridi } from './bugun.js';
 import { kimlikDoldur, akimUslubu, pekistirDugmesi, bolumBasligi } from './akim.js';
 import { harfUygula, AKIM_HARFLERI } from '../harfler.js';
+import { BOLGELER, bolgeBul } from '../harita.js';
 import { imzaGoster } from '../imza.js';
 import { kunyeGoster } from '../kunye.js';
 
@@ -75,22 +76,24 @@ export async function basyapitListesi() {
   if (location.hash !== '#/basyapitlar') return;
   if (!liste.length) return ciz(`${gozAtUst('basyapitlar')}<p class="ikincil">Henüz yakın okuma yok.</p>`);
   const k = islenen();
+  // İş 56: 29 akım satırı (çoğunda 1–3 eser) yerine haritanın 9 dönemi; kartta akımın adı ve rengi. Sayfa ~14 ekrandan ~5'e.
   const gruplar = [];
-  for (const a of d.akimlar) {
-    const l = liste.filter((b) => d.harita.get(b.sanatci).akim === a.ad);
-    if (l.length) gruplar.push({ a, l });
+  for (const bolge of BOLGELER) {
+    const akimlar = d.akimlar.filter((a) => bolgeBul(a.sira).id === bolge.id);
+    const l = akimlar.flatMap((a) => liste.filter((b) => d.harita.get(b.sanatci).akim === a.ad));
+    if (l.length) gruplar.push({ bolge, a: akimlar[0], l });
   }
   ciz(`${gozAtUst('basyapitlar')}
     <p class="bolum-aciklama">${liste.length} yakın okuma: her eserde ne görüldüğü, kompozisyon, anlam ve önemi.</p>
     ${gruplar
       .map(
-        ({ a, l }, gi) => `<section class="vitrin" style="--akim:${akimRenk(a.ad)};--g:${gi}">
-      <h2 class="vitrin-bas"><span class="vitrin-ad">${kacis(a.ad)}</span><span class="vitrin-say">${l.length} eser</span></h2>
+        ({ bolge, a, l }, gi) => `<section class="vitrin" style="--akim:${akimRenk(a.ad)};--g:${gi}">
+      <h2 class="vitrin-bas"><span class="vitrin-ad">${kacis(bolge.ad)}<small class="vitrin-yuzyil">${kacis(bolge.yuzyil)}</small></span><span class="vitrin-say">${l.length} eser</span></h2>
       <ul class="vitrin-serit" data-test="basyapit-listesi">${l
         .map((b, i) => {
           const s = d.harita.get(b.sanatci);
           const kilit = k.has(s.konu) ? '' : '<span class="vitrin-kilit">henüz kursta yok</span>';
-          return `<li style="--i:${i}"><a class="vitrin-kart" href="${basyapitAdresi(b.anahtar)}"><span class="vitrin-resim" data-basyapit-kucuk="${kacis(b.anahtar)}"></span><span class="vitrin-yazi">${kilit}<b>${kacis(b.baslik)}</b><span>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}${b.tarih ? ` · ${kacis(b.tarih)}` : ''}</span></span></a></li>`;
+          return `<li style="--i:${i}"><a class="vitrin-kart" href="${basyapitAdresi(b.anahtar)}" style="--akim:${akimRenk(s.akim)}"><span class="vitrin-resim" data-basyapit-kucuk="${kacis(b.anahtar)}"></span><span class="vitrin-yazi">${kilit}<b>${kacis(b.baslik)}</b><span>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}${b.tarih ? ` · ${kacis(b.tarih)}` : ''}</span><small class="vitrin-akim">${kacis(s.akim)}</small></span></a></li>`;
         })
         .join('')}</ul></section>`,
       )
