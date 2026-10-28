@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.41.0', metin: 'Koleksiyonum artık bir duvar: işaretlediğin eserler çivilere iple asılı, telefonu sağa sola çevirince sallanır, bırakınca durulur (Ayarlar’daki hareket seçimine uyar).' },
   { surum: '1.40.0', metin: 'Haritada dönem ekleri: iki dönemin kenarı birbirine akar, haritalar tek parça görünür; ekte altın bir sınır çizgisi ve yeni dönemin adı. Eke gelince çizgi ortadan iki yana açılır, ad netleşir, çizgi boyunca ışık geçer.' },
   { surum: '1.39.0', metin: 'Ayarlar’da geliştirici modu: açınca bütün konular, sanatçılar ve harita bölümleri açılır; kapatınca ilerlemen açmadan önceki haline döner.' },
   { surum: '1.38.0', metin: 'Yolculuk haritası baştan boyandı: dokuz dönem, her biri kendi ustalarının üslubunda; Empresyonizm ile Post-Empresyonizm artık ayrı dönem. Her durağın kendi sembolü var, bulunduğun yerde o dönemin kıyafetiyle öğrenci duruyor; açmadığın yerler sepya. Saklı tablolara dokununca hikâyeleri açılır.' },

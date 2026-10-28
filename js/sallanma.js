@@ -22,6 +22,7 @@ let duvar = null;
 let asilar = [];
 let durumlar = [];
 let hedefAci = 0;
+let enCok = EN_COK_SALINIM;
 let kare = 0;
 let sonZaman = 0;
 
@@ -40,16 +41,18 @@ function adim(t) {
   else kare = requestAnimationFrame(adim);
 }
 
-// el: .sergi-duvar (içinde .asi tablolar ve [data-egim-dugme]); acik: Ayarlar'daki hareket seçimi
-export function sallanmaBaslat(el, acik) {
+// el: .sergi-duvar (içinde .asi tablolar ve [data-egim-dugme]); acik: Ayarlar'daki hareket seçimi;
+// aci: tam eğimdeki açı (büyük çerçeveler daha az salınsın diye Koleksiyonum'da daha küçük)
+export function sallanmaBaslat(el, acik, aci = EN_COK_SALINIM) {
   sallanmaDurdur();
   if (!el) return;
   duvar = el;
+  enCok = aci;
   asilar = [...el.querySelectorAll('.asi')];
   durumlar = asilar.map((a) => ({ aci: 0, hiz: 0, sertlik: ipSertligi(parseFloat(a.style.getPropertyValue('--ip')) || 16) }));
   egimBaslat(el, acik, (h) => {
     // telefon sağa dönünce ekrana göre tablolar sola salınır (yerçekimi yerinde kalır)
-    hedefAci = -h.x * EN_COK_SALINIM;
+    hedefAci = -h.x * enCok;
     if (!kare && duvar === el) kare = requestAnimationFrame(adim);
   });
 }

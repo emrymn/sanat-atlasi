@@ -1206,3 +1206,11 @@ Emre v0'da (`v0/harita-bulut-duzeltme`) köprülerin iOS Safari'de kenarında g�
 ## İş 45 · Köprülerde dönem adının yanındaki macenta çizgi (2026-10-28, v1.40.3)
 
 Emre (iPhone ekran görüntüleriyle): Klasizm ve Geç Barok, Romantizmden Realizme köprülerinde kaydırınca ince pembe dik bir çizgi. Çizgi her köprüde dönem adı bloğunun sağında, blok boyundaydı. Sebep: v0'ın ad animasyonundaki `filter: blur(calc((1 - --k) * 4px))`; --k kaydırmayla her karede değiştiği için iOS Safari bulanık katmanı sürekli yeniden çiziyor ve katman kenarında macenta şerit bırakıyordu (Chromium'da görünmüyor). Ayrıca köprü tam ortada değilken ad yarı bulanık, zor okunur kalıyordu. Bulanıklık kaldırıldı; ad saydamlık ve ölçekle belirir. Köprülerdeki öteki bulanıklıklar sabit (kaydırmayla değişmiyor), dokunulmadı.
+
+## İş 46 · Koleksiyonum duvarı eğimle sallanır (2026-10-28, v1.41.0)
+
+Emre: telefonu hareket ettirince çıkan animasyon (Bugün'ün tablosu, bölüm sonucunun sergi duvarı) daha fazla yerde olsun; önerilen yerlerden ilki seçildi.
+1. Koleksiyonum (`js/ekranlar/koleksiyon.js`) iki sütunlu ızgara yerine sergi duvarı görünümünde (`.sergi-duvar.koleksiyon-duvar`): her eser kendi çivisine iple asılı, ip boyu (12–33 px) ve hafif eğrilik (±0,8°) sıradan gelir; her açılışta aynı, el yapımı bir duvar gibi. Resimler kırpılmaz (en çok 240 px boy), etiket çerçevenin altında duvarda sabit; sallanan yalnız ip ve çerçeve (`.asi`).
+2. Hareket `js/sallanma.js` ile aynen (sarkaç, uzun ipli daha ağır; izin, "Hareketi aç" düğmesi, Ayarlar'daki anahtar ve hareket azaltma aynı). Dönme noktası çivi (`.asi`'nin üstü). Çerçeveler sergi duvarındakilerin iki katından büyük olduğu için tam eğimde 9° yerine 5° (`sallanmaBaslat`'a isteğe bağlı açı): 9°'de aşmayla alt köşeler duvarın kenarından taşıyordu. Asılış animasyonu var; çok eserde son eser beklemesin diye gecikme 8. eserde sabitlenir.
+3. Test: `tests/e2e/paket8.spec.js` K4 testine jiroskop olayıyla tablonun salınması eklendi. Sürüm 1.41.0 + Yenilikler satırı.
+
