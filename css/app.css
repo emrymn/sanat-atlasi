@@ -508,6 +508,8 @@ img.kirik {
 }
 .bugun-kahraman > img {
   display: block;
+  /* İş 64: tablo dokunulacak bir şey değil; eğimde 3B dönen resim iOS'ta üstteki bildirimin dokunuşunu almasın */
+  pointer-events: none;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2539,7 +2541,8 @@ html.sekmesiz .sekmeler {
   position: fixed;
   left: 50%;
   bottom: calc(var(--sekme-alt) + var(--sekme-h) + 12px);
-  transform: translateX(-50%);
+  /* İş 64: kendi katmanında (3B dönen öğeler iOS'ta z-index'e rağmen öne geçebiliyor); görüntüleyicinin de üstünde */
+  transform: translate3d(-50%, 0, 0);
   width: max-content;
   max-width: min(calc(100vw - 2 * var(--yan)), 560px);
   background: var(--surface);
@@ -2548,8 +2551,11 @@ html.sekmesiz .sekmeler {
   padding: 12px 16px;
   border-radius: 14px;
   font-size: 14px;
-  z-index: 50;
+  z-index: 150;
   box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.6);
+}
+#bildirim.eylemli {
+  cursor: pointer;
 }
 #bildirim button {
   margin-left: 10px;

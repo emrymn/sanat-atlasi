@@ -300,7 +300,14 @@ export function bildir(metin, { eylem = null, sure = 4000 } = {}) {
   const el = document.getElementById('bildirim');
   el.innerHTML = kacis(metin) + (eylem ? ` <button type="button">${kacis(eylem.ad)}</button>` : '');
   el.hidden = false;
-  if (eylem) el.querySelector('button').onclick = eylem.fn;
+  // İş 64: eylemli bildirimin tamamı dokunulabilir (yalnız düğme değil; iPhone'da düğmeye dokunmak zor olabiliyordu)
+  el.classList.toggle('eylemli', !!eylem);
+  el.onclick = eylem
+    ? () => {
+        el.hidden = true;
+        eylem.fn();
+      }
+    : null;
   clearTimeout(bildirimZamanlayici);
   if (sure) bildirimZamanlayici = setTimeout(() => (el.hidden = true), sure);
 }
