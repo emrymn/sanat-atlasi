@@ -306,9 +306,11 @@ html.sekmesiz .hikaye::before {
     filter 0.15s ease,
     transform 0.15s ease;
 }
+@media (hover: hover) {
 .dugme:hover {
   color: var(--ink);
   filter: brightness(1.08);
+}
 }
 /* resim renginde dolu düğme */
 .dugme.birincil,
@@ -496,8 +498,10 @@ img.kirik {
   color: inherit;
   text-decoration: none;
 }
+@media (hover: hover) {
 .gunun-kart:hover {
   color: inherit;
+}
 }
 .bugun-kahraman {
   position: relative;
@@ -792,8 +796,10 @@ img.kirik {
   color: inherit;
   text-decoration: none;
 }
+@media (hover: hover) {
 .satir:hover {
   color: inherit;
+}
 }
 .satir .metin {
   flex: 1;
@@ -990,10 +996,15 @@ img.kirik {
     transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
     box-shadow 0.35s;
 }
-.zaman-kart:hover,
 .zaman-kart:focus-visible {
   color: var(--ink);
   box-shadow: 0 0 0 1px rgba(var(--vurgu-rgb), 0.7);
+}
+@media (hover: hover) {
+.zaman-kart:hover {
+  color: var(--ink);
+  box-shadow: 0 0 0 1px rgba(var(--vurgu-rgb), 0.7);
+}
 }
 .zaman-kart:active {
   transform: scale(0.985);
@@ -1075,14 +1086,20 @@ img.kirik {
   animation: gz-cerceve 0.6s calc(var(--j, 0) * 90ms) cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
   transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
+@media (hover: hover) {
 .zaman-kart:hover .onizleme .cerceve:nth-child(1) {
   transform: translateY(-4px) rotate(-2deg);
 }
+}
+@media (hover: hover) {
 .zaman-kart:hover .onizleme .cerceve:nth-child(2) {
   transform: translateY(-6px);
 }
+}
+@media (hover: hover) {
 .zaman-kart:hover .onizleme .cerceve:nth-child(3) {
   transform: translateY(-4px) rotate(2deg);
+}
 }
 .zaman-ok {
   position: absolute;
@@ -1097,8 +1114,10 @@ img.kirik {
   color: rgba(var(--vurgu-rgb), 1);
   transition: transform 0.35s;
 }
+@media (hover: hover) {
 .zaman-kart:hover .zaman-ok {
   transform: translateX(4px);
+}
 }
 .zaman-oge.kilitli .zaman-kart {
   opacity: 0.55;
@@ -1297,8 +1316,10 @@ img.kirik {
     background-color 0.15s ease,
     border-color 0.15s ease;
 }
+@media (hover: hover) {
 .secenek:hover:not(:disabled) {
   border-color: var(--ink-3);
+}
 }
 .secenek:disabled {
   cursor: default;
@@ -2004,13 +2025,21 @@ img.kirik {
     translate 0.35s cubic-bezier(0.3, 0.8, 0.3, 1),
     background 0.3s ease;
 }
-.gecis:hover,
 .gecis:focus-visible {
   border-color: var(--vurgu-acik);
 }
-.gecis:hover .gecis-ok,
+@media (hover: hover) {
+.gecis:hover {
+  border-color: var(--vurgu-acik);
+}
+}
 .gecis:focus-visible .gecis-ok {
   translate: -4px 0;
+}
+@media (hover: hover) {
+.gecis:hover .gecis-ok {
+  translate: -4px 0;
+}
 }
 .gecis:active {
   scale: 0.99;
@@ -2054,8 +2083,10 @@ img.kirik {
   text-underline-offset: 4px;
   text-decoration-color: var(--border);
 }
+@media (hover: hover) {
 .sonuc-harita:hover {
   color: var(--ink);
+}
 }
 
 @media (min-width: 560px) {
@@ -2824,9 +2855,11 @@ html.sekmesiz .sekmeler {
     transform 0.15s ease,
     border-color 0.3s ease;
 }
+@media (hover: hover) {
 .tur:hover {
   color: var(--ink);
   border-color: rgba(var(--vurgu-rgb), 0.7);
+}
 }
 .tur:active {
   transform: scale(0.985);
@@ -2836,8 +2869,10 @@ html.sekmesiz .sekmeler {
   color: var(--vurgu-acik);
   transition: transform 0.2s ease;
 }
+@media (hover: hover) {
 .tur:hover > .ikon {
   transform: translateX(3px);
+}
 }
 .tur-halka {
   position: relative;
@@ -2922,8 +2957,10 @@ html.sekmesiz .sekmeler {
   color: inherit;
   text-decoration: none;
 }
+@media (hover: hover) {
 .sahne-isim:hover {
   color: inherit;
+}
 }
 .kaydir-ipucu {
   position: absolute;
@@ -2989,8 +3026,10 @@ html.sekmesiz .sekmeler {
   text-decoration: none;
   transition: transform 0.15s ease;
 }
+@media (hover: hover) {
 .sahne-dugme:hover {
   color: var(--ink);
+}
 }
 .sahne-dugme:active {
   transform: scale(0.97);
@@ -4138,12 +4177,12 @@ main[data-hareket='giris'] .ozet .ad {
   transform: translateX(-4px);
 }
 @media (hover: hover) {
-  .tanisma-geri:hover {
-    border-color: var(--ink-3);
-  }
-  .tanisma-geri:hover svg {
-    transform: translateX(-3px);
-  }
+    .tanisma-geri:hover {
+      border-color: var(--ink-3);
+    }
+    .tanisma-geri:hover svg {
+      transform: translateX(-3px);
+    }
 }
 .tanisma-geri:focus-visible {
   outline: 2px solid var(--vurgu-acik);
@@ -4344,12 +4383,12 @@ main[data-hareket='giris'] .ozet .ad {
     0 4px 12px -8px rgba(0, 0, 0, 0.7);
 }
 @media (hover: hover) {
-  .tanisma-gec:hover .gec-ok {
-    transform: translateX(3px);
-  }
-  .tanisma-gec:hover .gec-halka {
-    animation-duration: 3s;
-  }
+    .tanisma-gec:hover .gec-ok {
+      transform: translateX(3px);
+    }
+    .tanisma-gec:hover .gec-halka {
+      animation-duration: 3s;
+    }
 }
 .tanisma-gec:focus-visible {
   outline: 2px solid var(--vurgu-acik);
@@ -8617,9 +8656,13 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   object-position: 50% 25%;
   transition: transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-.salon:hover .salon-resim img,
 .salon:focus-visible .salon-resim img {
   transform: scale(1.08);
+}
+@media (hover: hover) {
+.salon:hover .salon-resim img {
+  transform: scale(1.08);
+}
 }
 .salon-mozaik {
   display: grid;
@@ -9046,8 +9089,10 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   transition: transform 0.35s cubic-bezier(0.3, 0.8, 0.2, 1);
   pointer-events: none;
 }
+@media (hover: hover) {
 .dugme:hover::before {
   inset: 6px;
+}
 }
 .dugme:active {
   transform: scale(0.98);
@@ -9211,8 +9256,10 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .tablo-dugme::after {
   content: none;
 }
+@media (hover: hover) {
 .tablo-dugme:hover {
   color: var(--ink);
+}
 }
 .tablo-dugme:active {
   transform: translateY(2px) scale(0.985);
@@ -9358,8 +9405,10 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   text-transform: uppercase;
   opacity: 0.75;
 }
+@media (hover: hover) {
 .tablo-dugme:hover .tablo-plaka {
   transform: translateX(2px);
+}
 }
 /* günlük hedef: tuvalin altında ince yaldız çizgi */
 .tablo-hedef {
@@ -9457,10 +9506,15 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   text-decoration: none;
   transition: background 0.2s ease;
 }
-.defter-hucre:hover,
 .defter-hucre:focus-visible {
   background: color-mix(in srgb, var(--vurgu) 14%, var(--bg));
   color: var(--ink);
+}
+@media (hover: hover) {
+.defter-hucre:hover {
+  background: color-mix(in srgb, var(--vurgu) 14%, var(--bg));
+  color: var(--ink);
+}
 }
 .defter-hucre b {
   font: 400 26px/1 var(--serif);
@@ -9862,11 +9916,17 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   height: 100%;
   object-fit: cover;
 }
-.eser-dugme:hover .ed-tuval.dolu,
 .eser-dugme:active .ed-tuval.dolu {
   animation: none;
   transform: translateX(calc(var(--x) * 1.35)) rotate(calc(var(--r) * 1.6)) translateY(-6px);
   transition-delay: 0s;
+}
+@media (hover: hover) {
+.eser-dugme:hover .ed-tuval.dolu {
+  animation: none;
+  transform: translateX(calc(var(--x) * 1.35)) rotate(calc(var(--r) * 1.6)) translateY(-6px);
+  transition-delay: 0s;
+}
 }
 
 /* gövde: resmin rengini alan buzlu cam */
@@ -9964,8 +10024,10 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   color: var(--vurgu-koyu, #111);
   transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.25, 1.3);
 }
+@media (hover: hover) {
 .eser-dugme:hover .ed-ok {
   transform: translateX(3px);
+}
 }
 .ed-hedef {
   position: absolute;
@@ -10097,8 +10159,10 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   content: none;
   animation: none;
 }
+@media (hover: hover) {
 .dugme:hover {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), color-mix(in srgb, var(--vurgu) 20%, var(--surface));
+}
 }
 .dugme:active {
   transform: scale(0.97);
@@ -10107,9 +10171,13 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .dugme .ikon {
   transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.25, 1.3);
 }
-.dugme:hover .ikon,
 .dugme:active .ikon {
   transform: translateX(3px);
+}
+@media (hover: hover) {
+.dugme:hover .ikon {
+  transform: translateX(3px);
+}
 }
 .dugme.birincil,
 .dugme.vurgu,
@@ -10221,8 +10289,10 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   color: #fff;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
 }
+@media (hover: hover) {
 .eser-dugme:hover .ed-ok {
   background: rgba(255, 255, 255, 0.12);
+}
 }
 .ed-hedef {
   left: 20px;
@@ -10466,8 +10536,10 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   color: var(--ink);
   transition: background 0.2s;
 }
+@media (hover: hover) {
 a.harita-seviye:hover {
   background: rgba(255, 255, 255, 0.04);
+}
 }
 a.harita-seviye:active {
   background: rgba(255, 255, 255, 0.07);
@@ -10533,10 +10605,12 @@ a.harita-seviye:active {
   color: var(--ink-2);
   font-size: 11.5px;
 }
+@media (hover: hover) {
 .harita-pencere-sanatcilar a:hover .harita-yuz {
   box-shadow:
     inset 0 0 0 1px var(--hp-yaldiz),
     0 10px 18px -10px rgba(0, 0, 0, 0.9);
+}
 }
 
 /* alt düğmeler: yazı bağlantısı gibi, ikiye bölünmüş */
@@ -10562,8 +10636,10 @@ a.harita-seviye:active {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--hp-yaldiz);
 }
+@media (hover: hover) {
 .harita-pencere-dugmeler .dugme:hover {
   background: rgba(255, 255, 255, 0.04);
+}
 }
 
 .harita-pencere-kapat {
@@ -10632,8 +10708,10 @@ a.harita-seviye:active {
   opacity: 0.85;
   z-index: -1;
 }
+@media (hover: hover) {
 .siradaki-dugme:hover::before {
   transform: scaleX(1.03);
+}
 }
 .siradaki-dugme:active,
 .siradaki.resimli .siradaki-dugme:active {
@@ -11309,8 +11387,10 @@ a.harita-seviye:active {
   position: relative;
   display: inline-block;
 }
+@media (hover: hover) {
 .siradaki .siradaki-dugme.firca:hover .firca-iz {
   transform: scaleX(1.04) rotate(-0.6deg);
+}
 }
 .siradaki .siradaki-dugme.firca:active {
   transform: scale(0.97);
@@ -11375,7 +11455,9 @@ a.harita-seviye:active {
     opacity 0.2s ease 0.2s,
     transform 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.4) 0.2s;
 }
-.siradaki .siradaki-dugme.isle-ince:hover .isle-halka svg { opacity: 0.45; transform: scale(0.8); }
+@media (hover: hover) {
+  .siradaki .siradaki-dugme.isle-ince:hover .isle-halka svg { opacity: 0.45; transform: scale(0.8); }
+}
 .siradaki .siradaki-dugme.isle-ince:active { transform: scale(0.97); background-color: transparent; color: var(--ink); }
 .siradaki .siradaki-dugme.isle-ince.doldu {
   background-size: 100% 100%;
@@ -11572,10 +11654,15 @@ a.harita-seviye:active {
     background-size 0.35s ease,
     color 0.2s ease;
 }
-.akim-konu-dizin a:hover,
 .akim-konu-dizin a:focus-visible {
   background-size: 100% 1px;
   color: var(--ink);
+}
+@media (hover: hover) {
+.akim-konu-dizin a:hover {
+  background-size: 100% 1px;
+  color: var(--ink);
+}
 }
 .akim-konu-dizin sup {
   margin-left: 2px;
@@ -11621,8 +11708,10 @@ a.harita-seviye:active {
   color: var(--renk);
   transition: translate 0.25s ease;
 }
+@media (hover: hover) {
 .akim-komsular.akim-komsu-liste a:hover .akim-komsu-ok {
   translate: 4px 0;
+}
 }
 .akim-ozellik.akim-ipucu li.yazili,
 .akim-ozellik.akim-ipucu li.yazili:nth-child(even) {
@@ -11956,8 +12045,10 @@ a.harita-seviye:active {
 .donem-dugme-ok span {
   transition: translate 0.3s ease;
 }
+@media (hover: hover) {
 .donem-dugme:hover .donem-dugme-ok span {
   translate: 4px 0;
+}
 }
 .donem-dugme:active {
   scale: 0.99;
