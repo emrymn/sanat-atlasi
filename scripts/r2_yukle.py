@@ -132,7 +132,9 @@ def main():
     muze = {ad: k for ad, k in sorted(kaynaklar.items()) if ad in tamam['d']}
     # Ayarlar'daki "en büyük kopyaları indir" toplam boyu gösterir
     devasa_bayt = sum(p.stat().st_size for p, u in isler if u.startswith('d/') and p.stem in tamam['d'])
-    b_hepsi = len(tamam['b']) == len(list((KOK / 'gorseller/b').glob('*.jpg')))
+    # İş 61: r2.dev bazı Türk mobil operatörlerinde engelli: 1280'likler R2'den yalnız R2_BUYUK=1 ise (ör. engelsiz
+    # özel alan adına geçince); yoksa GitHub Pages'ten (depodaki gorseller/b) gelir, mobil veride de açılır
+    b_hepsi = os.environ.get('R2_BUYUK') == '1' and len(tamam['b']) == len(list((KOK / 'gorseller/b').glob('*.jpg')))
     (KOK / 'data/gorsel_kaynagi.json').write_text(
         json.dumps({'surum': 1, 'adres': adres, 'buyuk': b_hepsi, 'devasa': sorted(tamam['d']), 'devasa_bayt': devasa_bayt, 'muze': muze}, ensure_ascii=False, separators=(',', ':')) + '\n'
     )
