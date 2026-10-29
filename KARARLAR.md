@@ -1470,3 +1470,7 @@ Emre: galeride döneme tek dokunuşla girilmiyor, uygulama kasıyor, alttaki sek
 ## İş 71 · Sekme çubuğu dokunuşları kayboluyordu (2026-10-29, v1.52.1)
 
 Sekmelerin arasına, çubuğun 6 px kenar boşluğuna ya da parmak biraz kayıp çubuğun dışında kalkınca dokunuş hiçbir bağlantıya düşmüyor, yok sayılıyordu. Artık dokunuş da sürükleme gibi `pointerup`'ta işlenir (işaretçi yakalamalı): en yakın sekme açılır, açık sekmeye dokunmak başa kaydırır; ardından gelen tıklama ikinci kez gezinmez. Uçtan uca test (düzeltmeden önce başarısız).
+
+## İş 72 · Galeride döneme tek dokunuşla girilmiyordu (2026-10-29, v1.52.2)
+
+İş 70b'den sonra da sürdü. Sebep iOS Safari'nin "üzerine gelme" davranışı: bir bağlantının `:hover` hâli görünüşü değiştiriyorsa (dönem kartında önizleme çerçeveleri kalkıyor, ok kayıyor, kenar rengi değişiyor) ilk dokunuş yalnız hover'ı uygular, bağlantı ikinci dokunuşta açılır. Bütün `:hover` kuralları (35 kural; seçici listesinde `:focus-visible` gibi ortaklar ayrı bırakılarak) `@media (hover: hover)` içine alındı: fareli cihazlarda aynı, dokunmatikte hiç devreye girmez. Birim test: CSS'te bu sorgunun dışında `:hover` kalmasın (eski CSS'te başarısız). Gerçek iPhone'da denenemedi (Chromium hover'ı böyle işlemiyor).
