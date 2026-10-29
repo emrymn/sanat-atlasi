@@ -544,8 +544,10 @@ function yerineDon(hedef) {
   adim();
 }
 
+let sonCizim = 0;
 export function ciz(html, hareket) {
   const adres = location.hash || '#/';
+  sonCizim = performance.now();
   // İş 70: yeni adreste sayfa geçişi (kayma ya da kart büyümesi); eski içeriğin kopyası içerik değişmeden alınır
   const gecis = adres !== sonCizilenAdres ? gecisHazirla(ekran) : null;
   ekran.dataset.hareket = hareket ?? (adres !== sonCizilenAdres ? (gecis ? '' : 'giris') : '');
@@ -624,6 +626,9 @@ export function olaylariBagla() {
     (e) => {
       if (e.target && e.target.tagName === 'IMG') {
         e.target.classList.remove('kirik');
+        // İş 74: çizimden hemen sonra yüklenen (önbellekteki) görsel belirme geçişi olmadan görünür: geri dönülen
+        // sayfa baştan yükleniyormuş gibi tek tek belirmesin
+        if (performance.now() - sonCizim < 150) e.target.classList.add('aninda');
         e.target.classList.add('yuklendi');
       }
     },

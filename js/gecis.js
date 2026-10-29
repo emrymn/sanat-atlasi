@@ -37,13 +37,16 @@ export function geriDugmesiBasildi() {
 }
 
 // yönlendirici her adres değişiminde çağırır
-export function gecisBildir({ geriMi, sekmeden, ilk }) {
+export function gecisBildir({ geriMi, sekmeden, ilk, gezinti = null }) {
   bekleyen = null;
-  if (ilk || sekmeden || hareketAz()) return;
-  if (geriMi) {
-    if (Date.now() - geriBasildi < 1500) bekleyen = { yon: 'geri' };
-  } else bekleyen = { yon: 'ileri' };
+  const dugmeyle = Date.now() - geriBasildi < 1500;
   geriBasildi = 0;
+  if (ilk || sekmeden || hareketAz()) return;
+  // geçmişte gezinme: yalnız uygulamanın geri okuyla dönüşte kendi geçişimiz; iPhone'un kenardan kaydırması ve
+  // tarayıcının geri/ileri tuşu kendi kaymasını yapar, sayfa hareketsiz (yeniden açılıyormuş gibi değil) çizilir
+  if (geriMi || gezinti) {
+    if (geriMi && dugmeyle) bekleyen = { yon: 'geri' };
+  } else bekleyen = { yon: 'ileri' };
 }
 
 // ciz() yeni içeriği koymadan hemen önce çağırır; dönen işlev içerik konduktan sonra çağrılır
@@ -83,8 +86,9 @@ function sayfaKaydir(ekran, yon) {
     const ileri = yon === 'ileri';
     const a = ekran.animate(
       [
-        { transform: `translateX(${ileri ? 32 : -18}%)`, opacity: 0.35 },
-        { transform: 'none', opacity: 1 },
+        // saydamlık değişmez: iPhone geri kaydırma için sayfanın görüntüsünü bu sırada alırsa karanlık çıkmasın
+        { transform: `translateX(${ileri ? 32 : -18}%)` },
+        { transform: 'none' },
       ],
       { duration: ileri ? SURE : SURE - 60, easing: EGRI },
     );

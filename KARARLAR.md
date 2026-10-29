@@ -1478,3 +1478,14 @@ Sekmelerin arasına, çubuğun 6 px kenar boşluğuna ya da parmak biraz kayıp 
 ## İş 73 · Yutulan dokunuşlar uygulama tarafından tamamlanır (2026-10-29, v1.52.3)
 
 İş 72'den (hover yalnız fareli cihazlarda) sonra da Göz At'ta Gotik kartı iki dokunuşla açılıyordu. Chromium'da tekrarlanamadı; iOS'un hangi sezgisiyle (üzerine gelme, içerik değişimi, kaydırma) tıklamayı yuttuğu kesinleşmedi. Dolaylı tahmin yerine doğrudan önlem (`js/dokunus.js`): parmakla yapılan kısa (≤700 ms) ve kıpırdamayan (≤10 px) bir dokunuş bağlantıda/düğmede/eserde biterse ve 180 ms içinde o öğeye tıklama gelmezse tıklama uygulama tarafından üretilir. Tıklama geldiyse hiçbir şey yapılmaz (çift gezinme/işlem yok). Görüntüleyici (kendi jestleri), sekme çubuğu (İş 71), giriş alanları hariç. Uçtan uca test: ilk tıklaması yutulan dokunuş dönemi açar (önlem olmadan başarısız); normal dokunuş tek gezinme; kaydıran parmak tıklama sayılmaz.
+
+## İş 74 · Kenardan kaydırarak geri: sayfa baştan yükleniyormuş gibi (2026-10-29, v1.52.4)
+
+Emre'nin ekran görüntüsü: iPhone'un kenardan geri kaydırması sırasında solda (önceki sayfanın yeri) siyah, dönülen sayfa "baştan yükleniyor" gibi; uygulamanın geri okunda normal.
+- Geçmişte gezinme her kaydın `history.state.gezi` zaman damgasıyla anlaşılır (yığın tahmini yerine): geri/ileri gezinmede yalnız uygulamanın geri okuyla kendi geçişimiz; iPhone'un kaydırması ve tarayıcı tuşu hareketsiz çizer. Kenardan kaydırarak birden çok adım geri gidilirse yığın dönülen sayfaya kadar kısalır.
+- Çizimden sonraki 150 ms içinde yüklenen (önbellekteki) görseller belirme geçişi ve oturma hareketi olmadan görünür (`img.aninda`); dönülen sayfanın resimleri tek tek yeniden belirmez. (İlk denemede bütün hareketleri kapatmıştı; cevap anındaki tablo hareketini de durdurduğu testte görüldü, yalnız bu ikisine daraltıldı.)
+- Sayfa kayması saydamlıktan başlamaz (yalnız konum): iPhone önceki sayfanın görüntüsünü bu anda alırsa karanlık çıkıyor olabilirdi. Kaydırma sırasındaki önizlemeyi iOS kendisi gösterir; tamamen denetlenemiyor, gerçek iPhone'da denenmedi.
+
+## İş 74b · Sekme çubuğuna kenarına yakın dokunuş içeriğe gidiyordu (2026-10-29, v1.52.4)
+
+İş 71'in testi ara sıra başarısızdı (6'da 4): çubuğun alt kenarına yakın dokunuş sekme yerine çubuğun altında görünen dönem kartını açıyordu. Telefon (Chromium ve iOS) dokunuşu en yakın tıklanabilir öğeye kaydırıyor; sekme bağlantısı çubuğun 6 px içinde bittiğinden çubuğun hemen dışındaki içerik daha yakın sayılıyordu. Sekme bağlantılarının dokunma alanı (`::before`) çubuğun kenar boşluğunu ve 10 px dışını kapsar; uçtaki sekmeler yanlara da. Sonra 8'de 8.

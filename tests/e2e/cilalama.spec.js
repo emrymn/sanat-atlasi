@@ -671,3 +671,49 @@ test.describe('İş 73: yutulan dokunuş', () => {
     await expect(page).toHaveURL(/#\/gozat$/);
   });
 });
+
+// İş 74: iPhone'un kenardan kaydırmasıyla (tarayıcının geri gezinmesi) dönülen sayfa yeniden açılıyormuş gibi
+// çizilmez: geçiş yok, önbellekteki görseller beklemeden görünür, kaydırma yeri korunur; geri okuyla dönüşte kendi geçişi
+test.describe('İş 74: kenardan kaydırarak geri', () => {
+  test.use({ hasTouch: true, isMobile: true });
+
+  test('tarayıcı geri gezinmesi hareketsiz ve yerinde; geri oku kendi geçişiyle', async ({ page, context }) => {
+    await agiHazirla(context);
+    await context.addInitScript(() => (window.__atlasGecis = true));
+    await page.goto('./#/gozat');
+    await page.locator('a.zaman-kart').first().waitFor();
+    await page.waitForTimeout(1500);
+    await page.evaluate(() => window.scrollTo(0, 700));
+    await page.waitForTimeout(300);
+    const y = await page.evaluate(() => window.scrollY);
+    await page.evaluate(() => (location.hash = '#/akim/Gotik'));
+    await expect(page.locator('.ust h1')).toBeVisible();
+    await page.waitForTimeout(600);
+    // iPhone'un kenardan kaydırması = tarayıcının geri gezinmesi (uygulamanın geri oku değil)
+    await page.evaluate(() => {
+      window.__animSayisi = 0;
+      const asil = Element.prototype.animate;
+      Element.prototype.animate = function (...a) {
+        if (this.id === 'uygulama') window.__animSayisi++;
+        return asil.apply(this, a);
+      };
+      history.back();
+    });
+    await expect(page).toHaveURL(/#\/gozat$/);
+    await page.locator('a.zaman-kart').first().waitFor();
+    await page.waitForTimeout(400);
+    expect(await page.evaluate(() => window.__animSayisi)).toBe(0);
+    expect(await page.locator('#uygulama').getAttribute('data-hareket')).toBe('');
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(y);
+    // önbellekteki görseller geçişsiz görünür
+    expect(await page.locator('.zaman-kart img.aninda').count()).toBeGreaterThan(0);
+    // yığın doğru: geri oku bir önceki sayfaya (kendi geçişiyle) döner
+    await page.evaluate(() => (location.hash = '#/akim/Gotik'));
+    await expect(page.locator('.ust h1')).toBeVisible();
+    await page.waitForTimeout(600);
+    await page.evaluate(() => (window.__animSayisi = 0));
+    await page.locator('[data-geri]').first().tap();
+    await expect(page).toHaveURL(/#\/gozat$/);
+    await expect.poll(() => page.evaluate(() => window.__animSayisi)).toBe(1);
+  });
+});
