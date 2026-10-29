@@ -1400,3 +1400,9 @@ Emre: "büyük kopyaları da indirilebilir yap, yerim çok var". Ayarlar'da yeni
 - Service worker: sayfa adresi `?kalici=1` ile ister; SW sorgusuz adresle ayrı **`atlas-devasa-kalici`** önbelleğine yazar (30'luk sınırlı önbellekten farklı olarak kendiliğinden silinmez), yazınca 201, zaten varsa 204, yer kalmadıysa 507 döner. Görüntüleyici önce kalıcı önbelleğe bakar: internet yokken de en büyük kopya açılır.
 - Kaldığı yerden sürer (telefondakiler sayılır, yalnız eksikler istenir); üç paralel istek; Durdur; yer kalmazsa durur ve söyler; "Telefondan sil" (onaylı). `navigator.storage.persist()` istenir, ekran açık tutulur (Wake Lock, destekleniyorsa).
 - Uçtan uca test: indir → kalıcı önbellekte 3 → ikinci basış hiçbir şey indirmez → R2 kapalıyken görüntüleyici büyük kopyayı açar → sil.
+
+## İş 61 · r2.dev mobil veride açılmıyor (2026-10-29)
+
+Emre: büyük kopyalar yalnız Wi-Fi'de iniyor; R2 adresi Safari'de mobil veriyle açılmıyor. Uygulamada Wi-Fi şartı yok: mobil operatör `*.r2.dev`'i engelliyor olmalı (Türkiye'de Kasım 2025'te `pages.dev` bütünüyle engellenmişti; operatöre göre değişen DNS engelleri). `github.io` açık.
+- Hemen: `gorsel_kaynagi.json` `buyuk: false` — 1280'likler yine GitHub Pages'ten (depoda duruyor; "gorseller/b'yi depodan çıkar" adımı iptal). Mobil veride R2 isteği başarısız olup yavaş Commons yedeğine düşüyordu. `r2_yukle.py` 1280'likleri ancak `R2_BUYUK=1` ile R2'ye yönlendirir.
+- En büyük kopyalar mobil veride açılmaz; kalıcı çözüm Emre'nin seçimine bırakıldı (engellenmeyen bir adres).
