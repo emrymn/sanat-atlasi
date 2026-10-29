@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.50.0', metin: 'En büyük kopyaları telefona indir (Ayarlar): 4096 piksele kadar en yüksek kalitedeki hallerin hepsi telefonda durur, internet olmadan da tabloyu büyütünce keskin görünür. Yarıda kalırsa kaldığı yerden sürer; istersen tek dokunuşla silinir.' },
   { surum: '1.49.0', metin: 'Eserlerin en büyük kopyaları: görüntüleyicide açtığın eser önce hızlıca görünür, ardından 4096 piksele kadar en yüksek kalitedeki hali gelip yerine geçer; yakınlaştırınca fırça izleri seçilir.' },
   { surum: '1.48.0', metin: 'Eser görüntüleyicide resme bir kez dokununca oklar, düğmeler ve açıklama kaybolur, resim bütün ekranı kaplar; bir daha dokununca geri gelir. Telefonu yan çevirince resim tam ekran, açıklama altta ince bir şerit. Kenardan kaydırınca (iPhone’un geri hareketi) görüntüleyici kapanır; listeye geri dönünce kaldığın yerde açılır.' },
   { surum: '1.47.0', metin: 'Sanatçının adının evrensel okunuşu: “Dinle”nin yanında IPA (Uluslararası Fonetik Alfabe) yazımı, Vikipedi’den, sanatçının kendi dilinde. “Dinle” artık her sanatçıda kendi dilinde hazır kayıt çalar.' },
