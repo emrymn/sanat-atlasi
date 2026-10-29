@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.50.0';
+const SURUM = '1.50.1';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -13,6 +13,9 @@ const DEVASA = 'atlas-devasa';
 const DEVASA_EN_COK = 30;
 // İş 60: Ayarlar'dan bilerek indirilen en büyük kopyalar: sınırsız, kendiliğinden silinmez (Ayarlar'dan silinir)
 const DEVASA_KALICI = 'atlas-devasa-kalici';
+// İş 62: R2 görselleri Emre'nin alan adından (r2.dev bazı mobil operatörlerde engelli); r2.dev de tanınır (testler, eski kayıtlar)
+const R2_ALAN = 'gorsel.noracloud.ai';
+const r2Mi = (u) => u.hostname === R2_ALAN || u.hostname.endsWith('.r2.dev');
 const RESIM_SINIRI = 700 * 1024 * 1024;
 const RESIM_HEDEF = 650 * 1024 * 1024;
 // CORS başlığı gönderdiği bilinen görsel sunucuları: cors kipiyle istenir, böylece durum kodu görülür
@@ -138,6 +141,7 @@ self.addEventListener('activate', (e) => {
       const adlar = await caches.keys();
       await Promise.all(adlar.filter((a) => (a.startsWith('atlas-kabuk-') && a !== KABUK) || a === 'atlas-resim').map((a) => caches.delete(a)));
       await tx('readwrite', (st) => st.clear()).catch(() => {}); // eski önbelleğin meta kayıtları
+      await kaliciTasi().catch(() => {});
       await self.clients.claim();
     })(),
   );
@@ -168,11 +172,11 @@ self.addEventListener('fetch', (e) => {
   } else if (url.origin === self.location.origin && url.pathname.includes('/gorseller/')) {
     // uygulamayla yayınlanan görsel kopyaları: sürümden bağımsız görsel önbelleği (LRU)
     e.respondWith(resim(e));
-  } else if (url.hostname.endsWith('.r2.dev') && url.pathname.startsWith('/d/') && url.searchParams.get('kalici') === '1') {
+  } else if (r2Mi(url) && url.pathname.startsWith('/d/') && url.searchParams.get('kalici') === '1') {
     e.respondWith(devasaKaliciIndir(url));
-  } else if (url.hostname.endsWith('.r2.dev') && url.pathname.startsWith('/d/')) {
+  } else if (r2Mi(url) && url.pathname.startsWith('/d/')) {
     e.respondWith(devasaResim(e));
-  } else if (url.hostname.endsWith('.r2.dev')) {
+  } else if (r2Mi(url)) {
     // İş 58: Cloudflare R2'deki görsel kopyaları (1280 px)
     e.respondWith(resim(e));
   } else if (url.origin === self.location.origin && (url.pathname.endsWith('/data/kunye.json') || url.pathname.endsWith('/data/gorsel_kaynagi.json'))) {
@@ -265,7 +269,7 @@ async function agdan(url) {
     const y = await fetch(url);
     return { y, saklanir: y.ok };
   }
-  if (CORS_HOSTLARI.has(new URL(url).hostname) || new URL(url).hostname.endsWith('.r2.dev')) {
+  if (CORS_HOSTLARI.has(new URL(url).hostname) || r2Mi(new URL(url))) {
     try {
       const y = await fetch(url, { mode: 'cors', credentials: 'omit' });
       const gorselMi = (y.headers.get('content-type') || '').startsWith('image/');
@@ -388,6 +392,22 @@ async function devasaResim(e) {
     );
   }
   return y;
+}
+
+// İş 62: telefona r2.dev adresiyle indirilmiş en büyük kopyalar aynı yolla yeni alan adına taşınır (yeniden indirilmesin)
+async function kaliciTasi() {
+  if (!(await caches.has(DEVASA_KALICI))) return;
+  const c = await caches.open(DEVASA_KALICI);
+  for (const istek of await c.keys()) {
+    const u = new URL(istek.url);
+    if (!u.hostname.endsWith('.r2.dev')) continue;
+    const yeni = `https://${R2_ALAN}${u.pathname}`;
+    if (!(await c.match(yeni))) {
+      const y = await c.match(istek);
+      if (y) await c.put(yeni, y);
+    }
+    await c.delete(istek);
+  }
 }
 
 // Ayarlar'daki indirme: adres "?kalici=1" ile gelir; kalıcı önbelleğe sorgusuz adresle yazılır, yazılınca yanıt döner

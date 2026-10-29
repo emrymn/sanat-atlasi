@@ -1406,3 +1406,10 @@ Emre: "büyük kopyaları da indirilebilir yap, yerim çok var". Ayarlar'da yeni
 Emre: büyük kopyalar yalnız Wi-Fi'de iniyor; R2 adresi Safari'de mobil veriyle açılmıyor. Uygulamada Wi-Fi şartı yok: mobil operatör `*.r2.dev`'i engelliyor olmalı (Türkiye'de Kasım 2025'te `pages.dev` bütünüyle engellenmişti; operatöre göre değişen DNS engelleri). `github.io` açık.
 - Hemen: `gorsel_kaynagi.json` `buyuk: false` — 1280'likler yine GitHub Pages'ten (depoda duruyor; "gorseller/b'yi depodan çıkar" adımı iptal). Mobil veride R2 isteği başarısız olup yavaş Commons yedeğine düşüyordu. `r2_yukle.py` 1280'likleri ancak `R2_BUYUK=1` ile R2'ye yönlendirir.
 - En büyük kopyalar mobil veride açılmaz; kalıcı çözüm Emre'nin seçimine bırakıldı (engellenmeyen bir adres).
+
+## İş 62 · R2 kendi alan adından: gorsel.noracloud.ai (2026-10-29, v1.50.1)
+
+`*.r2.dev` Emre'nin mobil operatöründe engelli olduğundan (İş 61) kova Emre'nin GoDaddy'deki `noracloud.ai` alan adına bağlandı: alan adı Cloudflare'e (ücretsiz plan, nameserver'lar GoDaddy'de değiştirildi; alan adı GoDaddy'de kayıtlı kalır), R2 → Custom Domains → `gorsel.noracloud.ai` (Active).
+- Alan adındaki mevcut site ve e-posta korunarak: Cloudflare'in taradığı 10 kayıt GoDaddy'dekiyle karşılaştırıldı, kaçırdığı iki DKIM CNAME'i (`secureserver1/2._domainkey`) elle eklendi; hepsi "DNS only" (Cloudflare vekil sunucusundan geçmesin; GoDaddy sitesinin sertifikası bozulmasın). DNSSEC kapalıydı. Geçişten sonra NS ve MX doğrulandı.
+- Uygulama: `gorsel_kaynagi.json` `adres` = `https://gorsel.noracloud.ai`; service worker bu adı R2 sayar (r2.dev de tanınmaya devam eder); telefona r2.dev adresiyle inmiş en büyük kopyalar SW etkinleşince aynı yolla yeni adrese taşınır (yeniden indirilmez). CORS kova kuralı alan adında da geçerli (denendi). `r2_yukle.py` / README: `R2_GENEL_ADRES=https://gorsel.noracloud.ai`. 1280'likler şimdilik GitHub Pages'te kalır (`buyuk: false`).
+- Uçtan uca test: yeni adresten büyük kopya; r2.dev anahtarlı kalıcı kopyalar yeni anahtara taşınır ve görüntüleyici onları açar. Gerçek veriyle: Giotto, Ognissanti Madonnası 2663×4096 `gorsel.noracloud.ai`'den.

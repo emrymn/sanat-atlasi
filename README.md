@@ -138,7 +138,7 @@ caffeinate -i python3 scripts/devasa_indir.py      # en büyük kopyaları indir
 export R2_HESAP_ID=934af0e562e2812c13464d2d4dbbb4e4
 export R2_ERISIM_ANAHTARI='…'                     # Access Key ID
 export R2_GIZLI_ANAHTAR='…'                       # Secret Access Key (kimseyle paylaşma)
-export R2_GENEL_ADRES=https://pub-9160c446ac45431192f78b88e7a8a1d8.r2.dev
+export R2_GENEL_ADRES=https://gorsel.noracloud.ai   # kendi alan adın (r2.dev mobil operatörde engelli)
 python3 scripts/r2_yukle.py                       # yükler, kovaya CORS izni verir, data/gorsel_kaynagi.json yazar
 git add data/gorsel_kaynagi.json && git commit -m "Görseller R2'de" && git push
 ```
