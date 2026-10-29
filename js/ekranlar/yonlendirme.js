@@ -1,4 +1,5 @@
 // Adres (#/…) → ekran eşlemesi.
+import { gecisBildir } from '../gecis.js';
 import { d, sekmeleriCiz, hataGoster, cizimBaslat, geriDonusBildir, sekmedenMi } from './ortak.js';
 import { anaSayfa, gununSayfasi } from './bugun.js';
 import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuGrubu, konuSayfasi, basyapitSayfasi } from './gozat.js';
@@ -50,10 +51,14 @@ export function yonlendir() {
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   // geri düğmesi için basit yığın
   const geriMi = d.yigin.length > 1 && d.yigin[d.yigin.length - 2] === h;
+  const ilk = !d.yigin.length;
   if (geriMi) d.yigin.pop();
   else if (d.yigin[d.yigin.length - 1] !== h) d.yigin.push(h);
+  const sekmeden = sekmedenMi(h);
+  // İş 70: derine inince sayfa sağdan kayarak gelir, geri düğmesiyle dönünce tersi; sekme değişiminde geçiş yok
+  gecisBildir({ geriMi, sekmeden, ilk });
   // geri dönüşte ve sekme çubuğundan dönüşte ekran eski kaydırma yerine döner (İş 51); ileri gidişte en baştan
-  geriDonusBildir(sekmedenMi(h) || geriMi ? h : null);
+  geriDonusBildir(sekmeden || geriMi ? h : null);
   for (const [desen, fn, sekme] of rotalar) {
     const m = desen.exec(h);
     if (m) {

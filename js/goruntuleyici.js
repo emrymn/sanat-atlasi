@@ -3,9 +3,66 @@ import { kacis, notTemizle } from './yardimci.js';
 import { ikon } from './tasarim.js';
 import { gorselUrl, gorselYedek, gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle, devasaUrl, devasaKaynagi } from './gorsel.js';
 import { eserKonusu } from './ikonografi.js';
+import { hareketAz } from './gecis.js';
 import { NEDENLER } from './bildirim.js';
 
 const EN_BUYUK = 6;
+
+// İş 70: açılış/kapanış geçişi (Fotoğraflar uygulaması gibi). Dokunulan küçük resim yakalanır; görüntüleyici açılınca
+// onun bir kopyası ekrandaki yerinden büyüyerek tam ekrandaki yerine gider, kapanınca geri küçülür.
+let sonDokunulan = null;
+if (typeof document !== 'undefined') {
+  document.addEventListener(
+    'pointerdown',
+    (e) => {
+      const kutu = e.target.closest && e.target.closest('a, button, [role=button], .eser, .kart, figure');
+      const img = (e.target.tagName === 'IMG' ? e.target : kutu && kutu.querySelector('img')) || null;
+      sonDokunulan = img && !img.closest('.gor') ? { img, zaman: Date.now() } : null;
+    },
+    true,
+  );
+}
+const GECIS_MS = 340;
+const GECIS_EGRI = 'cubic-bezier(0.2, 0.8, 0.2, 1)';
+
+// küçük resmin ekrandaki görünür kutusu; ekranda değilse null
+function gorunurKutu(img) {
+  if (!img || !img.isConnected) return null;
+  const r = img.getBoundingClientRect();
+  if (r.width < 8 || r.height < 8 || r.bottom < 0 || r.top > innerHeight || r.right < 0 || r.left > innerWidth) return null;
+  return r;
+}
+// en/boy oranı `oran` olan görselin `alan` içine sığdırılmış kutusu (görüntüleyicideki yeri)
+function sigdir(alan, oran) {
+  let w = alan.width;
+  let h = w / oran;
+  if (h > alan.height) {
+    h = alan.height;
+    w = h * oran;
+  }
+  return { left: alan.left + (alan.width - w) / 2, top: alan.top + (alan.height - h) / 2, width: w, height: h };
+}
+// kutudan kutuya uçan kopya; bitince söz döner (kopya yerinde kalır, çağıran kaldırır)
+function ucur(src, bas, son, { egri = GECIS_EGRI, sure = GECIS_MS, radius = [10, 0] } = {}) {
+  const k = document.createElement('img');
+  k.className = 'gor-ucan';
+  k.src = src;
+  k.alt = '';
+  Object.assign(k.style, { left: `${son.left}px`, top: `${son.top}px`, width: `${son.width}px`, height: `${son.height}px` });
+  document.body.appendChild(k);
+  const t = (r) => `translate(${r.left - son.left}px, ${r.top - son.top}px) scale(${r.width / son.width}, ${r.height / son.height})`;
+  const a = k.animate(
+    [
+      { transform: t(bas), borderRadius: `${radius[0]}px` },
+      { transform: 'none', borderRadius: `${radius[1]}px` },
+    ],
+    { duration: sure, easing: egri, fill: 'forwards' },
+  );
+  return a.finished.then(
+    () => k,
+    () => k,
+  );
+}
 
 // Görsel kaynağı ve (varsa) eserin müzesi
 export function kaynakYazisi(eser, gorsel) {
@@ -22,6 +79,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   let olcek = 1;
   let tx = 0;
   let ty = 0;
+  let cek = 0; // İş 70: aşağı çekme oranı (0–1): tablo küçülür, zemin şeffaflaşır, alttaki sayfa görünür
   const imlecler = new Map();
   let jest = null;
   let sonDokunma = 0;
@@ -44,6 +102,9 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       <p class="gor-mesaj" role="status" aria-live="polite"></p></div>`;
   document.body.appendChild(kok);
   document.documentElement.classList.add('gor-acik');
+  // İş 70: dokunulan küçük resim (yeni ve hâlâ ekranda) varsa açılış geçişi; kapanışta da ona döner
+  const kaynak = sonDokunulan && Date.now() - sonDokunulan.zaman < 1500 && !hareketAz() ? sonDokunulan.img : null;
+  sonDokunulan = null;
 
   // İş 52: görüntüleyicinin kendi geçmiş kaydı (adres aynı kalır, yönlendirici tetiklenmez). iPhone'un sol kenardan
   // geri hareketi ve tarayıcının geri tuşu sayfayı değil görüntüleyiciyi kapatır; X, aşağı kaydırma ya da Esc ile
@@ -58,7 +119,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   const gerideKapat = () => {
     kayitVar = false;
-    kapat();
+    kapat({ gecissiz: true });
     yerineDon();
   };
   window.addEventListener('popstate', gerideKapat);
@@ -84,7 +145,9 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
 
   function uygula(gecis = false) {
     resim.style.transition = gecis ? 'transform .2s ease-out' : 'none';
-    resim.style.transform = `translate(${tx}px, ${ty}px) scale(${olcek})`;
+    resim.style.transform = `translate(${tx}px, ${ty}px) scale(${olcek * (1 - cek * 0.45)})`;
+    kok.classList.toggle('cekiliyor', !gecis && cek > 0);
+    kok.style.setProperty('--cek', String(cek));
   }
 
   function sinirla() {
@@ -101,6 +164,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     olcek = 1;
     tx = 0;
     ty = 0;
+    cek = 0;
     uygula();
   }
 
@@ -220,7 +284,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   window.addEventListener('atlas-notlar', notlarGeldi);
 
   // sonra: kapanış bitince (geçmiş kaydı geri alındıktan sonra) yapılacak iş, ör. başka ekrana geçmek
-  function kapat({ sonra } = {}) {
+  function kapat({ sonra, gecissiz = false } = {}) {
     if (kapandi) return;
     kapandi = true;
     clearTimeout(tekDokunma);
@@ -228,7 +292,8 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     window.removeEventListener('atlas-notlar', notlarGeldi);
     document.removeEventListener('keydown', tus);
     document.documentElement.classList.remove('gor-acik');
-    kok.remove();
+    if (gecissiz) kok.remove();
+    else kapanisGecisi();
     if (onceOdak && onceOdak.focus) onceOdak.focus();
     if (kapaninca) kapaninca(sira);
     if (kayitVar) {
@@ -243,6 +308,25 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       );
       history.back();
     } else if (sonra) sonra();
+  }
+
+  // İş 70: açılan eser hâlâ ilk dokunulansa ve küçük resmi ekrandaysa tablo yerine küçülerek döner, zemin söner
+  function kapanisGecisi() {
+    const bas = sira === baslangic && kaynak && resim.naturalWidth && !hareketAz() ? resim.getBoundingClientRect() : null;
+    const son = bas && gorunurKutu(kaynak);
+    if (!son || kok.style.transform) {
+      kok.remove();
+      return;
+    }
+    kok.style.pointerEvents = 'none';
+    resim.style.visibility = 'hidden';
+    kok.animate([{ opacity: 1 }, { opacity: 0 }], { duration: GECIS_MS * 0.8, easing: 'ease-out', fill: 'forwards' }).finished.then(() => kok.remove(), () => kok.remove());
+    kaynak.style.visibility = 'hidden';
+    // kopya küçük resmin kutusunda; büyük hâlinin yerinden başlar (kırpma: küçük resim object-fit cover olabilir)
+    ucur(resim.currentSrc || resim.src, bas, son, { radius: [0, 10] }).then((k) => {
+      kaynak.style.visibility = '';
+      k.remove();
+    });
   }
 
   // İlk eserde sağa kaydırma: önceki eser yok, görüntüleyici sağa kayıp kapanır (iPhone'daki "geri" gibi)
@@ -331,7 +415,13 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
         tx = jest.tx + dx;
         ty = jest.ty + dy;
         sinirla();
+      } else if (dy > 0 && Math.abs(dy) > Math.abs(dx)) {
+        // aşağı çekme: tablo parmağı izler ve küçülür, zemin şeffaflaşır (Fotoğraflar uygulaması gibi)
+        cek = hareketAz() ? 0 : Math.min(1, dy / 420);
+        tx = dx * 0.7;
+        ty = dy;
       } else {
+        cek = 0;
         tx = dx;
         ty = Math.max(0, dy) * 0.6;
       }
@@ -369,6 +459,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     } else {
       tx = 0;
       ty = 0;
+      cek = 0;
       uygula(true);
     }
     // İş 59: iki parmakla büyütmenin son kalkan parmağı dokunuş değildir (arayüzü geri getirmesin, yakınlaştırmayı sıfırlamasın)
@@ -400,6 +491,35 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   sahne.addEventListener('pointercancel', birak);
 
   goster();
+  // İş 70: açılış geçişi: küçük resmin kopyası yerinden büyüyüp tablonun yerine gider; büyük hâli yüklenene dek kopya kalır
+  const acilisKutusu = kaynak && kaynak.naturalWidth ? gorunurKutu(kaynak) : null;
+  if (acilisKutusu) {
+    const son = sigdir(sahne.getBoundingClientRect(), kaynak.naturalWidth / kaynak.naturalHeight);
+    resim.style.visibility = 'hidden';
+    kaynak.style.visibility = 'hidden';
+    kok.classList.add('gor-aciliyor');
+    const ilkSira = sira;
+    ucur(kaynak.currentSrc || kaynak.src, acilisKutusu, son, { radius: [10, 0] }).then((k) => {
+      kaynak.style.visibility = '';
+      kok.classList.remove('gor-aciliyor');
+      let bitti = false;
+      const bitir = (hemen = false) => {
+        if (bitti) return;
+        bitti = true;
+        resim.style.visibility = '';
+        if (hemen) return k.remove();
+        k.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 160, fill: 'forwards' }).finished.then(() => k.remove(), () => k.remove());
+      };
+      if ((resim.complete && resim.naturalWidth) || kapandi || sira !== ilkSira) bitir(true);
+      else {
+        resim.addEventListener('load', () => bitir(sira !== ilkSira), { once: true });
+        resim.addEventListener('error', () => bitir(true), { once: true });
+        sahne.addEventListener('pointerdown', () => bitir(true), { once: true });
+        kok.addEventListener('click', () => bitir(true), { once: true });
+        setTimeout(() => bitir(true), 2500);
+      }
+    });
+  }
   kok.querySelector('.gor-kapat').focus();
   return { kapat };
 }
