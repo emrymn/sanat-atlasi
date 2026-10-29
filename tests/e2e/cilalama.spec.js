@@ -479,3 +479,17 @@ test('service worker kabuğu sürüm sorgusuyla indirir; sürüm dosyası eskiys
   await page.reload();
   await expect.poll(() => page.evaluate(async () => !!(await navigator.serviceWorker.getRegistration())?.active), { timeout: 15000 }).toBe(true);
 });
+
+// İş 66: cilalama turu
+test('İş 66: durum hapı portrenin üstünde; cevapsız ilerlemede boş grafikler yerine kısa satır; bölüm adı kesilmez', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/gunun');
+  await expect(page.locator('[data-test="kurs-durumu"]')).toBeVisible();
+  expect(await page.locator('.sanatci-ust').evaluate((e) => getComputedStyle(e).zIndex)).toBe('1');
+  await page.goto('./#/ilerleme');
+  await expect(page.locator('[data-test="yuk-ozet"]')).toHaveText('Tekrarı gelen sanatçı yok');
+  await expect(page.locator('[data-test="yuk"] svg')).toHaveCount(0);
+  await expect(page.locator('[data-test="egri"] svg')).toHaveCount(0);
+  const b = page.locator('.salon-raf-yazi b').first();
+  expect(await b.evaluate((e) => getComputedStyle(e).whiteSpace)).toBe('normal');
+});
