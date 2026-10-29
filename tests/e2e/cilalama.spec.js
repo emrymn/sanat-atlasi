@@ -383,3 +383,36 @@ test('Ayarlar: en büyük kopyalar telefona iner, kaldığı yerden sürer, inte
   await expect(bolum).toContainText('Telefonda: 0 / 3');
   expect(await page.evaluate(() => caches.has('atlas-devasa-kalici'))).toBe(false);
 });
+
+// İş 62: R2 Emre'nin alan adından (r2.dev mobil operatörde engelli); r2.dev adresiyle telefona inmiş büyük kopyalar taşınır
+test('R2 kendi alan adından: büyük kopya ayrı önbellekte; r2.dev ile inmişler yeni adrese taşınır', async ({ page, context }) => {
+  await agiHazirla(context);
+  const png = readFileSync(new URL('../fixtures/eser.png', import.meta.url));
+  let adlar = [];
+  await context.route(/\/data\/gorsel_kaynagi\.json$/, (r) =>
+    r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://gorsel.noracloud.ai', buyuk: false, devasa: adlar }) }),
+  );
+  await context.route(/gorsel\.noracloud\.ai\/d\//, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: png, headers: { 'access-control-allow-origin': '*' } }));
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
+  adlar = await page.locator('.eser img').evaluateAll((l) => l.slice(0, 2).map((i) => (i.getAttribute('src').match(/([0-9a-f]{16})\.jpg/) || [])[1]).filter(Boolean));
+  // eski sürümün r2.dev adresiyle telefona indirdiği iki kopya
+  await page.evaluate(
+    async ({ a, bayt }) => {
+      const c = await caches.open('atlas-devasa-kalici');
+      for (const ad of a) await c.put(`https://pub-eski.r2.dev/d/${ad}.jpg`, new Response(new Uint8Array(bayt), { headers: { 'content-type': 'image/png' } }));
+    },
+    { a: adlar, bayt: [...png] },
+  );
+  // yeni service worker etkinleşince taşınır
+  await page.evaluate(async () => (await navigator.serviceWorker.getRegistration()).unregister());
+  await page.reload();
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
+  await expect
+    .poll(() => page.evaluate(async () => (await (await caches.open('atlas-devasa-kalici')).keys()).map((r) => r.url).sort()))
+    .toEqual(adlar.map((a) => `https://gorsel.noracloud.ai/d/${a}.jpg`).sort());
+  // görüntüleyici yeni adresteki büyük kopyayı açar
+  await page.locator('.eser').first().click();
+  await expect(page.locator('.gor-resim')).toHaveAttribute('src', /^https:\/\/gorsel\.noracloud\.ai\/d\//);
+  await expect(page.locator('.gor-resim')).toHaveAttribute('data-test', 'devasa');
+});

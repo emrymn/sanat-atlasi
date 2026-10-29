@@ -13,7 +13,7 @@ Gerekenler: pip3 install boto3 ve Cloudflare'den (README · "Görseller Cloudfla
   export R2_HESAP_ID=...          # Cloudflare hesap kimliği (Account ID)
   export R2_ERISIM_ANAHTARI=...   # R2 API jetonu: Access Key ID
   export R2_GIZLI_ANAHTAR=...     # R2 API jetonu: Secret Access Key
-  export R2_GENEL_ADRES=https://pub-....r2.dev   # kovanın herkese açık adresi
+  export R2_GENEL_ADRES=https://gorsel.noracloud.ai   # kovaya bağlı alan adı (r2.dev bazı mobil operatörlerde engelli)
   export R2_KOVA=sanat-atlasi     # (isteğe bağlı; varsayılan sanat-atlasi)
 
 Çalıştır (depo kökünde):  python3 scripts/r2_yukle.py
