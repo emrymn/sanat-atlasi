@@ -1428,3 +1428,11 @@ Emre uygulamayı her seferinde tamamen kapatıp açıyor, yine eski sürüm; "ye
 - Kurulum her dosyayı `?v=SURUM` sorgusuyla ister (ara sunucuda ayrı kayıt, hep taze), sorgusuz adresle saklar (sayfa sorgusuz ister).
 - Denetim: önbelleğe giren `js/surum.js` bu sürümün değilse kurulum başarısız sayılır; eski sürüm sağlam kalır, sonraki açılışta yeniden denenir.
 - Testlerde `data/*.json` yolakları sorgulu adresi de yakalar. Uçtan uca test: kabuk sorguyla istenir; sürüm dosyası eskiyse kurulmaz, tazelenince kurulur.
+
+## İş 66 · Cilalama turu (2026-10-29, v1.50.5)
+
+Uygulama iPhone 13 boyutunda (koyu, Sepya, Açık) baştan sona gezildi; otomatik denetim (17 ekran): konsol hatası yok, yatay taşma yok, küçük görünen dokunma alanlarının hepsi İş 50'de görünmez kenarla büyütülmüş. Görerek bulunanlar:
+- **Günün sanatçısı:** sağ üstteki durum hapı ("Kurs dışı") arkadaki silik portrenin altında kalıyordu (portre sonraki konumlu blokta, başlık konumsuz) → başlık üstte (`.sanatci-ust` z-index 1).
+- **Pekiştir:** "Bugünkü tur", "kart · ~dk" ve tür lejantı tablonun açık bölgesinde okunmuyordu → zemin renginde ince gölge.
+- **İlerleme:** bölüm adları tek satırda kesiliyordu ("Rönesans'tan önce bilinmesi ge…") → iki satıra kadar tam. Cevap yokken "Haftalık doğru oranı" boş eksen, "Önümüzdeki 14 gün" 14 boş çubuk gösteriyordu → kısa satır ("İlk turdan sonra burada", "Tekrarı gelen sanatçı yok").
+- Bakılıp bırakılanlar: Karışık'taki "Kolay" seviyede uzak akımlardan seçenekler (seviye gereği); tamamlanan bölüm halkası koyu temada boş halkaya yakın (maske ortayı kestiği için içine işaret konamıyor).

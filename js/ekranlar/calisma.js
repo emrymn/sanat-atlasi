@@ -63,6 +63,11 @@ function oranGrafigi(gir) {
   const yazi = haftalar.some((h) => h.oran !== null)
     ? `Son hafta: ${haftalar[11].oran === null ? 'kart yok' : '%' + Math.round(haftalar[11].oran * 100)}`
     : 'Henüz veri yok';
+  // İş 66: veri yokken boş eksen yalnız yer kaplıyordu
+  if (!yol)
+    return `<figure class="grafik" data-test="egri">
+      <figcaption>${etiket('Haftalık doğru oranı')}<span class="ikincil kucuk" data-test="egri-ozet">${haftalar.some((h) => h.oran !== null) ? yazi : 'İlk turdan sonra burada'}</span></figcaption>
+    </figure>`;
   return `<figure class="grafik" data-test="egri">
       <figcaption>${etiket('Haftalık doğru oranı')}<span class="ikincil kucuk" data-test="egri-ozet">${yazi}</span></figcaption>
       <svg viewBox="0 0 ${G} ${Y + 18}" role="img" aria-label="Son 12 haftanın doğru oranı çizgisi. ${yazi}" class="grafik-svg${gir ? ' gir' : ''}">
@@ -86,6 +91,11 @@ function yukGrafigi(gir) {
   const adim = (G - 8) / 14;
   const yarin = gunluk[1] ?? 0;
   const yazi = `Bugün ${gunluk[0]} · yarın ${yarin} · 14 günde ${toplam} sanatçı`;
+  // İş 66: hiç tekrar yokken 14 boş çubuk yalnız yer kaplıyordu
+  if (!toplam)
+    return `<figure class="grafik" data-test="yuk">
+      <figcaption>${etiket('Önümüzdeki 14 gün')}<span class="ikincil kucuk" data-test="yuk-ozet">Tekrarı gelen sanatçı yok</span></figcaption>
+    </figure>`;
   return `<figure class="grafik" data-test="yuk">
       <figcaption>${etiket('Önümüzdeki 14 gün')}<span class="ikincil kucuk" data-test="yuk-ozet">${yazi}</span></figcaption>
       <svg viewBox="0 0 ${G} ${Y + 30}" role="img" aria-label="Önümüzdeki 14 günün vadeli kart sayısı. ${yazi}" class="grafik-svg${gir ? ' gir' : ''}">

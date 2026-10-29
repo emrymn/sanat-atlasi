@@ -13225,3 +13225,27 @@ a,
 .cevapsiz-akimlar a:active {
   background: var(--surface);
 }
+
+/* ===== İş 66 · Cilalama turu ===== */
+/* Günün sanatçısı / sanatçı sayfası: sağ üstteki durum hapı ("Kurs dışı") arkadaki silik portrenin altında kalıp
+   okunmuyordu (portre sonraki konumlu blokta, başlık konumsuz) */
+.sanatci-ust {
+  position: relative;
+  z-index: 1;
+}
+/* Pekiştir: "Bugünkü tur" ve kart sayısının yanındaki yazılar tablonun açık bölgesinde okunmuyordu */
+.pk-govde > .etiket,
+.pk-sayi span,
+.tur-lejant li {
+  text-shadow:
+    0 0 2px rgba(var(--bg-rgb), 0.9),
+    0 1px 14px rgba(var(--bg-rgb), 0.85);
+}
+/* İlerleme: bölüm adları tek satırda kesiliyordu ("Rönesans'tan önce bilinmesi ge…"); iki satıra kadar tam */
+.salon-raf-yazi b {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
