@@ -13295,3 +13295,25 @@ main[data-hareket='cevap']:has(.sonuc[data-dogru='false']) .soru-resim img.yukle
     animation: none;
   }
 }
+
+/* ===== İş 69 · Tablonun ışığı: görüntüleyicide tablonun kendisi çok bulanık olarak arkasından yayılır ===== */
+.gor-sahne {
+  isolation: isolate;
+}
+.gor-sahne::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--isik-resim, none) center / contain no-repeat;
+  transform: scale(1.7);
+  filter: blur(34px) saturate(1.4) brightness(0.75);
+  opacity: calc(var(--isik-op, 0) * 0.55);
+  transition: opacity 0.9s ease;
+}
+@media (prefers-reduced-transparency: reduce) {
+  .gor-sahne::before {
+    display: none;
+  }
+}

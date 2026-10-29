@@ -1444,3 +1444,7 @@ Emre (önce/sonra görüntüsüyle onaylandı): "Kurs dışı" hapı aynı bilgi
 ## İş 68 · Doğru/yanlış anında tablo da tepki verir (2026-10-29, v1.50.7)
 
 Emre önce/sonra görüntüsüyle onayladı. Pekiştir'de cevaptan sonra: doğruda tablonun çerçevesinden yaldız ışığı yayılır ve ince altın kenar kalır; yanlışta tablo hafifçe sarsılır ve bir an solar (seçenek düğmelerinin kendi parlama/sarsılması aynen). `:has(.sonuc[data-dogru])` ile yalnız CSS (iOS 15.4+); hareket azaltma açıksa yok. Başlık yazı tipi (Cormorant Garamond) önerisi gönderilmedi: Emre daha fazla seçenek görmek istedi.
+
+## İş 69 · Tablonun ışığı (2026-10-29, v1.51.0)
+
+Emre önce/sonra görüntüleriyle seçti. Görüntüleyicide tablonun arkasında, tablonun kendi 400 px kopyası (yerel, önbellekte) çok bulanık (34 px), büyütülmüş (×1,7), hafif doygun ve karartılmış olarak durur; ışık tablonun kendi renkleri ve yerleriyle yayılır. İlk deneme paletten tek renk seçip parlatıyordu: Emre "çok yapay" dedi. İki kez kısıldı (opaklık 0,55, parlaklık 0,75). Eserler arası geçişte söner, yeni tablo yüklenince yanar; "saydamlığı azalt" açıksa yok. Yenilikler'e 1.51 satırı (İş 68 ile birlikte).

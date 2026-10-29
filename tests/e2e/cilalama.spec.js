@@ -503,3 +503,15 @@ test('İş 68: doğru/yanlış anında tablonun animasyonu', async ({ page, cont
   const ad = await page.locator('.soru-resim img').evaluate((i) => getComputedStyle(i).animationName);
   expect(ad).toBe(dogru === 'true' ? 'tablo-yaldiz' : 'tablo-sars, tablo-sol');
 });
+
+// İş 69: tablonun ışığı; görüntüleyicide tablonun küçük kopyası bulanık olarak arkasında, yüklenince yanar
+test('İş 69: görüntüleyicide tablonun ışığı', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await page.locator('.eser').first().click();
+  const sahne = page.locator('.gor-sahne');
+  await expect.poll(() => sahne.evaluate((e) => e.style.getPropertyValue('--isik-op'))).toBe('1');
+  expect(await sahne.evaluate((e) => e.style.getPropertyValue('--isik-resim'))).toMatch(/^url\(".*gorseller\/k\/[0-9a-f]+\.jpg"\)$/);
+  const once = await sahne.evaluate((e) => getComputedStyle(e, '::before').filter);
+  expect(once).toContain('blur');
+});
