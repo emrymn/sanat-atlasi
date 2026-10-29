@@ -13329,7 +13329,7 @@ main[data-hareket='cevap']:has(.sonuc[data-dogru='false']) .soru-resim img.yukle
 }
 /* açılırken zemin ve düğmeler biraz daha yavaş belirir; tablo uçarken arka planın açılması görünür */
 .gor.gor-aciliyor {
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
 }
 /* sayfa kayması ve kart büyümesi (js/gecis.js): eski sayfanın / kartın kopyası */
 .gecis-kopya {
@@ -13338,29 +13338,6 @@ main[data-hareket='cevap']:has(.sonuc[data-dogru='false']) .soru-resim img.yukle
   overflow: hidden;
   max-width: none;
   min-height: 0;
-}
-.gecis-alt,
-.gecis-ust {
-  background-color: var(--bg);
-  background-image: var(--doku);
-  background-size: 3px 3px;
-}
-.gecis-alt {
-  z-index: 4;
-}
-.gecis-ust {
-  z-index: 7;
-  box-shadow: -14px 0 34px rgba(0, 0, 0, 0.45);
-}
-#uygulama.gecis-ust-sayfa {
-  z-index: 6;
-  background-color: var(--bg);
-  background-image: var(--doku);
-  background-size: 3px 3px;
-  box-shadow: -14px 0 34px rgba(0, 0, 0, 0.45);
-}
-#uygulama.gecis-alt-sayfa {
-  z-index: 3;
 }
 .gecis-kart {
   z-index: 8;
@@ -13416,8 +13393,8 @@ html.gecis-suruyor {
     inset 0 1px 0 rgba(255, 255, 255, 0.22),
     inset 0 -1px 0 rgba(255, 255, 255, 0.06),
     inset 0 0 0 0.5px rgba(var(--vurgu-rgb), 0.35);
-  -webkit-backdrop-filter: blur(22px) saturate(1.9) brightness(1.05);
-  backdrop-filter: blur(22px) saturate(1.9) brightness(1.05);
+  -webkit-backdrop-filter: blur(16px) saturate(1.6);
+  backdrop-filter: blur(16px) saturate(1.6);
 }
 :root[data-tema='sepya'] .sekmeler,
 :root[data-tema='acik'] .sekmeler {

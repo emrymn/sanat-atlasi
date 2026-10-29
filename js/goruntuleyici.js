@@ -23,6 +23,9 @@ if (typeof document !== 'undefined') {
   );
 }
 const GECIS_MS = 340;
+// açılış (küçük resim büyüyerek): daha yavaş ve yumuşak, iOS'un yay eğrisine yakın (Emre: "çok hızlı")
+const ACILIS_MS = 620;
+const ACILIS_EGRI = 'cubic-bezier(0.32, 0.72, 0, 1)';
 const GECIS_EGRI = 'cubic-bezier(0.2, 0.8, 0.2, 1)';
 
 // küçük resmin ekrandaki görünür kutusu; ekranda değilse null
@@ -499,7 +502,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     kaynak.style.visibility = 'hidden';
     kok.classList.add('gor-aciliyor');
     const ilkSira = sira;
-    ucur(kaynak.currentSrc || kaynak.src, acilisKutusu, son, { radius: [10, 0] }).then((k) => {
+    ucur(kaynak.currentSrc || kaynak.src, acilisKutusu, son, { radius: [10, 0], sure: ACILIS_MS, egri: ACILIS_EGRI }).then((k) => {
       kaynak.style.visibility = '';
       kok.classList.remove('gor-aciliyor');
       let bitti = false;
