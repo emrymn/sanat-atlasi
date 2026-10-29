@@ -323,17 +323,30 @@ def boyut(yol):
 
 
 def indir(aday, cikti):
-    """Adresi indirip 4096'ya küçültür (büyütmez); (genişlik, yükseklik) ya da None."""
+    """Adresi indirir; 4096'dan büyükse küçültür, asla büyütmez. (genişlik, yükseklik) ya da None.
+    `sips -Z` küçük görseli de büyütür (İş 58d): önce özgün boy okunur. JPEG zaten sınırdaysa baytlarına dokunulmaz
+    (yeniden sıkıştırma da kalite kaybı)."""
     veri = getir(aday['u'], 600)
     if not veri:
         return None
     ham = cikti.with_suffix('.ham')
     ham.write_bytes(veri)
-    r = subprocess.run(['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', KALITE, '-Z', str(EN_BUYUK), str(ham), '--out', str(cikti)], capture_output=True)
+    ozgun = boyut(ham)
+    if not ozgun:
+        ham.unlink(missing_ok=True)
+        return None
+    if max(ozgun) <= EN_BUYUK and veri[:2] == b'\xff\xd8':
+        ham.replace(cikti)
+        return ozgun
+    komut = ['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', KALITE]
+    if max(ozgun) > EN_BUYUK:
+        komut += ['-Z', str(EN_BUYUK)]
+    r = subprocess.run(komut + [str(ham), '--out', str(cikti)], capture_output=True)
     ham.unlink(missing_ok=True)
     b = boyut(cikti) if not r.returncode and cikti.exists() else None
-    if not b:
+    if not b or max(b) > max(ozgun):
         cikti.unlink(missing_ok=True)
+        return None
     return b
 
 
@@ -359,6 +372,28 @@ def main():
             for g in e.get('gorseller') or []:
                 gorseller[f"{g['k']}:{g.get('d') or g.get('i') or g.get('u') or ''}"] = (g, e.get('qid'))
     isler = [(a, ad) for a, ad in harita.items() if a in gorseller and gorseller[a][0]['k'] in ('commons', 'met', 'aic', 'nga', 'cma')]
+    # İş 58d: önceki sürüm (sips -Z) 4096'dan küçük özgünleri 4096'ya büyütmüştü. Bir kez: yalnız özgünü 4096 ve üstü
+    # olduğu bilinen Commons kopyaları kalır, gerisi silinip yeniden iner (müzeden gelenler dahil; karşılaştırma bozuktu).
+    isaret = BILGI / 'buyutme_duzeltildi'
+    if not isaret.exists():
+        var = [(a, ad) for a, ad in isler if (HEDEF / f'{ad}.jpg').exists()]
+        if var:
+            cb = commons_boylari(sorted({gorseller[a][0]['d'] for a, _ in var if gorseller[a][0]['k'] == 'commons'}))
+
+            def dogru(a, ad):
+                g = gorseller[a][0]
+                if g['k'] != 'commons' or ad in kaynaklar:
+                    return False
+                (_, beklenen), = commons_adresleri(g['d'], cb.get(g['d'])) if cb.get(g['d']) else [(None, None)]
+                return bool(beklenen) and beklenen >= EN_BUYUK
+
+            sil = [ad for a, ad in var if not dogru(a, ad)]
+            for ad in sil:
+                (HEDEF / f'{ad}.jpg').unlink(missing_ok=True)
+                kaynaklar.pop(ad, None)
+            kaynaklar_yolu.write_text(json.dumps(kaynaklar, ensure_ascii=False, sort_keys=True))
+            print(f'Düzeltme: büyütülmüş olabilecek {len(sil)} kopya silindi, özgün boyunda yeniden inecek', flush=True)
+        isaret.write_text('1')
     kalan = [(a, ad) for a, ad in isler if not (HEDEF / f'{ad}.jpg').exists()]
     print(f'{len(isler)} görsel · {len(isler) - len(kalan)} zaten inmiş · {len(kalan)} inecek', flush=True)
     if not kalan:
