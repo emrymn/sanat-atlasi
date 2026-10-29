@@ -31,6 +31,12 @@ function swKaydet() {
     yenilendi = true;
     bildir('Uygulamanın yeni sürümü hazır.', { eylem: { ad: 'Yenile', fn: () => location.reload() }, sure: 0 });
   });
+  // İş 63: iOS ana ekran uygulaması kapatılmayıp arka plana atılınca geri dönüşte eski sayfa sürer ve bildirim bir daha
+  // çıkmaz (yeni sürüm inmiş ama sayfa eski). Yeni sürüm indiyse arka plandan dönüşte kendiliğinden yenilenir;
+  // yarım oturum kayıtlı olduğundan (Bugün'deki devam kartı) kayıp olmaz.
+  document.addEventListener('visibilitychange', () => {
+    if (yenilendi && document.visibilityState === 'visible') location.reload();
+  });
 }
 
 // T2: eser notları (~100 KB) yalnızca görüntüleyicide gerekir; ilk ekran çizildikten sonra yüklenir.
