@@ -239,6 +239,23 @@ test.describe('görüntüleyici dokunuş ve yatay ekran', () => {
     expect(await page.locator('.gor-resim').evaluate((e) => e.style.transform)).not.toContain('scale(1)');
   });
 
+  // İş 64: iPhone'da "Yenile"ye dokunulamıyordu (Tuval'deki 3B dönen tablo dokunuşu alıyordu)
+  test('güncelleme bildiriminin her yeri dokunulabilir; Tuval tablosu dokunuş almaz', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/');
+    await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
+    await page.reload();
+    await expect(page.locator('.bugun-kahraman > img')).toHaveCSS('pointer-events', 'none');
+    await page.evaluate(() => (window.__eskiSayfa = true));
+    await page.evaluate(() => navigator.serviceWorker.dispatchEvent(new Event('controllerchange')));
+    const b = page.locator('#bildirim');
+    await expect(b).toContainText('yeni sürümü hazır');
+    const k = await b.boundingBox();
+    // düğmeye değil, yazının üstüne dokunulur
+    await Promise.all([page.waitForEvent('load'), page.touchscreen.tap(k.x + 24, k.y + k.height / 2)]);
+    expect(await page.evaluate(() => window.__eskiSayfa === undefined)).toBe(true);
+  });
+
   test('yatay ekranda resim ekranın bütün yüksekliğini kullanır, açıklama alttan resmin üstünde', async ({ page, context }) => {
     await page.setViewportSize({ width: 844, height: 390 });
     await agiHazirla(context);
