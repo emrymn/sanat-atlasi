@@ -121,6 +121,19 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     // (oran aynı, ekrandaki boy ve yakınlaştırma değişmez). Komşular için önceden indirilmez: yalnız açılan eser.
     const devasa = devasaUrl(g);
     const bu = sira;
+    // İş 69: tablonun ışığı. Tablonun kendisi (400 px kopya, önbellekte) çok bulanık ve büyütülmüş olarak arkasında:
+    // ışık tablonun kendi renkleri ve yerleriyle yayılır (gökyüzü üstte, toprak altta). Önce söner, yüklenince yanar.
+    sahne.style.setProperty('--isik-op', '0');
+    const isikUrl = gorselUrl(g, 400);
+    if (isikUrl) {
+      const isik = new Image();
+      isik.onload = () => {
+        if (sira !== bu || kapandi) return;
+        sahne.style.setProperty('--isik-resim', `url("${isik.src.replace(/"/g, '%22')}")`);
+        sahne.style.setProperty('--isik-op', '1');
+      };
+      isik.src = isikUrl;
+    }
     resim.onload = () => {
       yukleniyor.hidden = true;
       if (!devasa || resim.src === devasa || resim.dataset.devasa === devasa) return;
