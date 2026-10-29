@@ -44,19 +44,36 @@ const rotalar = [
   [/^#\/gunun\/(.+)$/, (id) => gununSayfasi(id), 'bugun'],
 ];
 
+let sonGezi = 0;
+
 export function yonlendir() {
   const h = location.hash || '#/';
   cizimBaslat();
   // tarayıcının kendi kaydırma geri yüklemesi her geçmiş kaydında kapalı (yeni kayıtlar "auto" başlayabiliyor; İş 57)
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  // İş 74: geçmişte gezinme mi (geri/ileri; uygulamanın geri oku, iPhone'un kenardan kaydırması, tarayıcı) yoksa yeni
+  // sayfa mı? Her yeni kayda zaman damgası yazılır; dönülen kaydın damgası şimdikinden küçükse geri gidilmiştir.
+  // Yığın yöntemi kenardan kaydırmada her zaman tutmuyordu (dönülen sayfa yeni açılmış gibi çiziliyordu).
+  const st = history.state || {};
+  let gezinti = null;
+  if (typeof st.gezi !== 'number') history.replaceState({ ...st, gezi: Date.now() + Math.random() }, '');
+  else gezinti = st.gezi < sonGezi ? 'geri' : st.gezi > sonGezi ? 'ileri' : null;
+  sonGezi = history.state.gezi;
   // geri düğmesi için basit yığın
-  const geriMi = d.yigin.length > 1 && d.yigin[d.yigin.length - 2] === h;
+  const geriMi = gezinti === 'geri' || (d.yigin.length > 1 && d.yigin[d.yigin.length - 2] === h);
   const ilk = !d.yigin.length;
-  if (geriMi) d.yigin.pop();
-  else if (d.yigin[d.yigin.length - 1] !== h) d.yigin.push(h);
+  if (geriMi) {
+    // dönülen sayfaya kadar yığından çıkılır (kenardan kaydırmada birden çok adım geri gidilebilir)
+    const i = d.yigin.lastIndexOf(h);
+    if (i >= 0) d.yigin.length = i + 1;
+    else {
+      d.yigin.pop();
+      d.yigin.push(h);
+    }
+  } else if (d.yigin[d.yigin.length - 1] !== h) d.yigin.push(h);
   const sekmeden = sekmedenMi(h);
   // İş 70: derine inince sayfa sağdan kayarak gelir, geri düğmesiyle dönünce tersi; sekme değişiminde geçiş yok
-  gecisBildir({ geriMi, sekmeden, ilk });
+  gecisBildir({ geriMi, sekmeden, ilk, gezinti });
   // geri dönüşte ve sekme çubuğundan dönüşte ekran eski kaydırma yerine döner (İş 51); ileri gidişte en baştan
   geriDonusBildir(sekmeden || geriMi ? h : null);
   for (const [desen, fn, sekme] of rotalar) {

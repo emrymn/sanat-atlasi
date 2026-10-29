@@ -13513,3 +13513,30 @@ html.gecis-suruyor {
     background: var(--tab-bg);
   }
 }
+
+/* İş 74: önbellekten anında gelen görsel belirme geçişi ve oturma hareketi olmadan (yalnız bunlar; cevap anı gibi
+   sonraki hareketler sürer) */
+img.aninda {
+  transition: none !important;
+}
+.cerceve img.yuklendi.aninda,
+.eserler img.yuklendi.aninda {
+  animation: none;
+}
+/* İş 74b: sekmelerin dokunma alanı çubuğun kenar boşluğunu ve çubuğun 10 px dışını da kapsar. Telefon kenara yakın
+   dokunuşta en yakın tıklanabilir öğeyi seçiyor; sekmenin kenarı içeride kaldığında çubuğun hemen altında/yanında
+   görünen sayfa içeriği (ör. Göz At'taki dönem kartı) daha yakın sayılıp sekme yerine o açılıyordu. */
+.sekmeler a::before {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--sekme-pad) - 10px);
+  bottom: calc(-1 * var(--sekme-pad) - 10px);
+  left: 0;
+  right: 0;
+}
+.sekmeler a:first-of-type::before {
+  left: calc(-1 * var(--sekme-pad) - 10px);
+}
+.sekmeler a:last-of-type::before {
+  right: calc(-1 * var(--sekme-pad) - 10px);
+}
