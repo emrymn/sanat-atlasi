@@ -416,3 +416,28 @@ test('R2 kendi alan adından: büyük kopya ayrı önbellekte; r2.dev ile inmiş
   await expect(page.locator('.gor-resim')).toHaveAttribute('src', /^https:\/\/gorsel\.noracloud\.ai\/d\//);
   await expect(page.locator('.gor-resim')).toHaveAttribute('data-test', 'devasa');
 });
+
+// İş 63: yeni sürüm indikten sonra uygulama arka plandan dönünce kendiliğinden yenilenir (iOS'ta "Yenile"ye basılmadan
+// çıkılınca eski sayfa sürüyordu ve bildirim bir daha çıkmıyordu)
+test('yeni sürüm indiyse arka plandan dönüşte sayfa kendiliğinden yenilenir', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/');
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
+  await page.reload();
+  await page.evaluate(() => (window.__eskiSayfa = true));
+  // yeni sürüm yokken arka plandan dönüş hiçbir şey yapmaz
+  await page.evaluate(() => document.dispatchEvent(new Event('visibilitychange')));
+  await page.waitForTimeout(300);
+  expect(await page.evaluate(() => window.__eskiSayfa === true)).toBe(true);
+  // yeni sürüm devraldı: bildirim çıkar; kullanıcı basmadan arka plana atıp döner
+  await page.evaluate(() => navigator.serviceWorker.dispatchEvent(new Event('controllerchange')));
+  await expect(page.locator('#bildirim')).toContainText('yeni sürümü hazır');
+  await Promise.all([
+    page.waitForEvent('load'),
+    page.evaluate(() => {
+      Object.defineProperty(document, 'visibilityState', { configurable: true, get: () => 'visible' });
+      document.dispatchEvent(new Event('visibilitychange'));
+    }),
+  ]);
+  expect(await page.evaluate(() => window.__eskiSayfa === undefined)).toBe(true);
+});
