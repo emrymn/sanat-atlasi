@@ -21,12 +21,24 @@ Yarıda kalırsa yeniden çalıştır: kovada aynı boyda olan dosyalar atlanır
 """
 import json
 import os
+import re
+import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
 SITE = 'https://emrymn.github.io'
+EN_AZ_DEVASA = 1600  # 1280'lik kopyadan en az bu kadar büyük olmalı
+
+
+def uzun_kenar(yol):
+    try:
+        r = subprocess.run(['sips', '-g', 'pixelWidth', '-g', 'pixelHeight', str(yol)], capture_output=True, text=True)
+    except OSError:
+        return None  # sips yok (macOS değil): süzülmez
+    s = [int(x) for x in re.findall(r'pixel(?:Width|Height):\s*(\d+)', r.stdout)]
+    return max(s) if len(s) == 2 else None
 
 
 def ortam(ad, varsayilan=None):
@@ -73,7 +85,12 @@ def main():
         s3.upload_file(str(yerel), kova, uzak, ExtraArgs={'ContentType': 'image/jpeg', 'CacheControl': 'public, max-age=31536000, immutable'})
         return 'yuklendi'
 
-    isler = [(p, f'd/{p.name}') for p in sorted((KOK / 'gorseller_devasa').glob('*.jpg'))]
+    # en büyük kopya 1280'likten anlamlı büyük değilse (özgün küçük) yüklenmez: telefon aynı görseli iki kez indirmesin
+    devasalar = sorted((KOK / 'gorseller_devasa').glob('*.jpg'))
+    kucuk = {p for p in devasalar if (uzun_kenar(p) or EN_AZ_DEVASA) < EN_AZ_DEVASA}
+    if kucuk:
+        print(f'{len(kucuk)} görselin özgünü küçük ({EN_AZ_DEVASA} px altı): en büyük kopyası yok sayılıyor (1280\'liği yeter)', flush=True)
+    isler = [(p, f'd/{p.name}') for p in devasalar if p not in kucuk]
     isler += [(p, f'b/{p.name}') for p in sorted((KOK / 'gorseller/b').glob('*.jpg'))]
     print(f'{len(isler)} dosya ({sum(p.stat().st_size for p, _ in isler) / 1e9:.2f} GB)', flush=True)
     tamam = {'d': set(), 'b': set()}

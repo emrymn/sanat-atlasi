@@ -1371,3 +1371,11 @@ Emre: "indirirken süre sınırı koy, üst üste deneyince engellemesin" ve "di
 - **Alınmayanlar:** Getty (P2582) — görsellerin hepsi açık değil, ve Getty'nin açık görselleri zaten Commons'ta tam boyda; Rijksmuseum — API anahtarsız ama nesne numarasından görsele birkaç adımlı Linked Art çözümlemesi gerekiyor, müzenin görselleri Commons'a zaten özgün boyda yüklenmiş. WikiArt hiç (lisans).
 - **Kaynak gösterimi:** müzeden gelen kopyalar `gorseller_devasa/kaynaklar.json` → `r2_yukle.py` → `data/gorsel_kaynagi.json` `muze` alanı; görüntüleyici altyazısında "büyük kopya: The Met · CC0". Kartlardaki yazı değişmez (oradaki görsel Commons'tan).
 - Deneme: indirme döngüsü sahte Commons/Wikidata ve PIL'le taklit edilen `sips` ile, müze kısmı gerçek adreslerle denendi (Met eşleşmesi alındı, oranı tutmayan NGA görseli alınmadı, Cleveland TIFF'i 4096'ya indi). Birim + uçtan uca test: altyazı.
+
+## İş 58d · En büyük kopyalar büyütülmüştü (2026-10-29)
+
+Emre'nin sayımı: 1726 kopyanın hepsi tam 4096 px. Oysa 893 eserin Commons özgünü 3700 px'ten küçüktü. Sebep: macOS `sips -Z` yalnız küçültmez, küçük görseli de büyütür; ben denemede PIL'in yalnız küçülten `thumbnail`'ını kullanmıştım, göremedim. Büyütülmüş görsel daha keskin değildir, yalnız dosyayı şişirir (7,1 GB'ın bir kısmı), ayrıca müze/Commons karşılaştırması (hepsi 4096 göründüğü için) bozuldu.
+- `indir()`: önce özgün boy okunur; 4096'dan büyükse küçültülür, değilse dokunulmaz — JPEG ise baytları olduğu gibi kalır (yeniden sıkıştırma da kayıp), TIFF/PNG yalnız JPEG'e çevrilir. Sonuç özgünden büyükse reddedilir.
+- Tek seferlik düzeltme (`.bilgi/buyutme_duzeltildi`): yalnız özgünü 4096 ve üstü olduğu bilinen Commons kopyaları kalır; gerisi (küçük özgünler, müzeler, müzeden gelenler) silinip yeniden iner. Aynı komut; ayrı adım yok.
+- `r2_yukle.py`: uzun kenarı 1600 px'ten küçük olan en büyük kopya yüklenmez ve listeye girmez (1280'lik kopyadan anlamlı büyük değil; telefon iki kez indirmesin).
+- Deneme: gerçek `sips` gibi büyüten sahte `sips` ile; küçük özgünler kendi boyunda kaldı, büyükler 4096'ya indi, ikinci çalıştırma hiçbir şey indirmedi.
