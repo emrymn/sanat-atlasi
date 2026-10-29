@@ -1440,3 +1440,7 @@ Uygulama iPhone 13 boyutunda (koyu, Sepya, Açık) baştan sona gezildi; otomati
 ## İş 67 · Günün sanatçısında sağ üstteki durum hapı kalktı (2026-10-29, v1.50.6)
 
 Emre (önce/sonra görüntüsüyle onaylandı): "Kurs dışı" hapı aynı bilgiyi künye satırıyla ("1755–1842 · Neoklasisizm · Kurs dışı" / "· Konu 3") tekrarlıyordu; kaldırıldı. Kaybolan tek bilgi "Henüz kursta yok" (künyede yalnız konu numarası). Çalışma kuralı: bundan sonra değişiklik yayınlanmadan önce Emre'ye önce/sonra ekran görüntüsü gösterilir, onayıyla gönderilir.
+
+## İş 68 · Doğru/yanlış anında tablo da tepki verir (2026-10-29, v1.50.7)
+
+Emre önce/sonra görüntüsüyle onayladı. Pekiştir'de cevaptan sonra: doğruda tablonun çerçevesinden yaldız ışığı yayılır ve ince altın kenar kalır; yanlışta tablo hafifçe sarsılır ve bir an solar (seçenek düğmelerinin kendi parlama/sarsılması aynen). `:has(.sonuc[data-dogru])` ile yalnız CSS (iOS 15.4+); hareket azaltma açıksa yok. Başlık yazı tipi (Cormorant Garamond) önerisi gönderilmedi: Emre daha fazla seçenek görmek istedi.
