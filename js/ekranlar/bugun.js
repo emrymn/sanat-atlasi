@@ -34,7 +34,6 @@ import {
   akimRenk,
   kotuler,
   jsonGetir,
-  islenen,
   hataGoster,
   geriDugmesi,
   gununHavuzu,
@@ -329,11 +328,6 @@ function ekVeriYukle() {
   return ekVeri;
 }
 
-function kursDurumu(s) {
-  if (s.kaynak === 'ek') return 'Kurs dışı';
-  return islenen().has(s.konu) ? `Kursta: Konu ${s.konu}` : 'Henüz kursta yok';
-}
-
 export function pekistirmedeMi(s) {
   return acikListe().some((x) => x.id === s.id);
 }
@@ -381,8 +375,7 @@ export async function gununSayfasi(id) {
   const bio = biyografiler.sanatcilar[s.id];
   const akim = akimBilgi.akimlar[s.akim];
   ciz(`<div class="hale" aria-hidden="true"></div>
-    <header class="sanatci-ust">${geriDugmesi('#/')}<h1 class="etiket vurgu" tabindex="-1">${id && id !== bugunku ? 'Sanatçı' : 'Günün sanatçısı'}</h1>
-      <span class="hap" data-test="kurs-durumu">${kacis(kursDurumu(s))}</span></header>
+    <header class="sanatci-ust">${geriDugmesi('#/')}<h1 class="etiket vurgu" tabindex="-1">${id && id !== bugunku ? 'Sanatçı' : 'Günün sanatçısı'}</h1></header>
     <article class="gunun">
       <div class="isim-blok">${isimHtml(s, { etiketAdi: 'h2', sinif: 'gunun-ad' })}<p class="meta">${kunye(s)}</p></div>
       <div class="eserler" data-galeri><p class="ikincil kucuk">Eserler yükleniyor…</p></div>
