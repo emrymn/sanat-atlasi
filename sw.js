@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.49.3';
+const SURUM = '1.50.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -11,6 +11,8 @@ const FONT = 'atlas-font';
 // kopyaları (çevrimdışı indirilenler dahil) görsel önbelleğinden itmesin. En son açılan 30 tanesi kalır.
 const DEVASA = 'atlas-devasa';
 const DEVASA_EN_COK = 30;
+// İş 60: Ayarlar'dan bilerek indirilen en büyük kopyalar: sınırsız, kendiliğinden silinmez (Ayarlar'dan silinir)
+const DEVASA_KALICI = 'atlas-devasa-kalici';
 const RESIM_SINIRI = 700 * 1024 * 1024;
 const RESIM_HEDEF = 650 * 1024 * 1024;
 // CORS başlığı gönderdiği bilinen görsel sunucuları: cors kipiyle istenir, böylece durum kodu görülür
@@ -166,6 +168,8 @@ self.addEventListener('fetch', (e) => {
   } else if (url.origin === self.location.origin && url.pathname.includes('/gorseller/')) {
     // uygulamayla yayınlanan görsel kopyaları: sürümden bağımsız görsel önbelleği (LRU)
     e.respondWith(resim(e));
+  } else if (url.hostname.endsWith('.r2.dev') && url.pathname.startsWith('/d/') && url.searchParams.get('kalici') === '1') {
+    e.respondWith(devasaKaliciIndir(url));
   } else if (url.hostname.endsWith('.r2.dev') && url.pathname.startsWith('/d/')) {
     e.respondWith(devasaResim(e));
   } else if (url.hostname.endsWith('.r2.dev')) {
@@ -366,6 +370,8 @@ async function resim(e) {
 
 async function devasaResim(e) {
   const anahtar = e.request.url;
+  const kalici = await (await caches.open(DEVASA_KALICI)).match(anahtar);
+  if (kalici) return kalici;
   const c = await caches.open(DEVASA);
   const kayitli = await c.match(anahtar);
   if (kayitli) return kayitli;
@@ -382,6 +388,24 @@ async function devasaResim(e) {
     );
   }
   return y;
+}
+
+// Ayarlar'daki indirme: adres "?kalici=1" ile gelir; kalıcı önbelleğe sorgusuz adresle yazılır, yazılınca yanıt döner
+// (sayfa sayacı ancak dosya gerçekten saklanınca ilerler). Yer kalmadıysa 507.
+async function devasaKaliciIndir(url) {
+  const anahtar = url.origin + url.pathname;
+  const c = await caches.open(DEVASA_KALICI);
+  if (await c.match(anahtar)) return new Response(null, { status: 204 });
+  const y = await sinirli(() => fetch(anahtar, { mode: 'cors', credentials: 'omit' }));
+  if (!y.ok || !(y.headers.get('content-type') || '').startsWith('image/')) return new Response(null, { status: y.status || 502 });
+  try {
+    await c.put(anahtar, y);
+  } catch (err) {
+    return new Response(null, { status: 507 });
+  }
+  // aynı görselin sınırlı önbellekteki kopyası artık gereksiz
+  await (await caches.open(DEVASA)).delete(anahtar).catch(() => {});
+  return new Response(null, { status: 201 });
 }
 
 let budamaSuruyor = false;

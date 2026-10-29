@@ -335,3 +335,51 @@ test('görüntüleyici: en büyük kopya R2\'den arkada iner ve yerine geçer; y
   await expect.poll(() => page.evaluate(async () => (await (await caches.open('atlas-devasa')).keys()).map((r) => r.url))).toEqual([istenen[0]]);
   expect(await page.evaluate(async (u) => !!(await (await caches.open('atlas-resim-2')).match(u)), istenen[0])).toBe(false);
 });
+
+// İş 60: en büyük kopyalar Ayarlar'dan telefona; kalıcı önbellekte durur, internet olmadan görüntüleyicide açılır
+test('Ayarlar: en büyük kopyalar telefona iner, kaldığı yerden sürer, internetsiz açılır, silinebilir', async ({ page, context }) => {
+  await agiHazirla(context);
+  let adlar = [];
+  await context.route(/\/data\/gorsel_kaynagi\.json$/, (r) =>
+    r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar, devasa_bayt: 3e9 }) }),
+  );
+  let r2Acik = true;
+  const istenen = [];
+  await context.route(/pub-deneme\.r2\.dev\/d\//, (r) => {
+    if (!r2Acik) return r.abort('internetdisconnected');
+    istenen.push(r.request().url());
+    return r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)), headers: { 'access-control-allow-origin': '*' } });
+  });
+  // Giotto'nun ilk üç eserinin yerel adları (ızgaradaki küçük kopyanın dosya adı)
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
+  adlar = await page.locator('.eser img').evaluateAll((l) => l.slice(0, 3).map((i) => (i.getAttribute('src').match(/([0-9a-f]{16})\.jpg/) || [])[1]).filter(Boolean));
+  expect(adlar.length).toBe(3);
+  await page.goto('./#/ayarlar');
+  await page.reload();
+  const bolum = page.locator('[data-test="devasa-indir"]');
+  await expect(bolum).toContainText('3 eserin');
+  await expect(bolum).toContainText('3,0 GB');
+  await expect(bolum).toContainText('Telefonda: 0 / 3');
+  await bolum.locator('[data-devasa-indir]').click();
+  await expect(page.locator('#devasa-mesaj')).toHaveText('Bitti: 3 görsel indirildi.');
+  await expect(bolum).toContainText('Telefonda: 3 / 3');
+  expect(await page.evaluate(async () => (await (await caches.open('atlas-devasa-kalici')).keys()).length)).toBe(3);
+  // ikinci basış hiçbir şey indirmez
+  const once = istenen.length;
+  await bolum.locator('[data-devasa-indir]').click();
+  await expect(page.locator('#devasa-mesaj')).toHaveText('Hepsi zaten telefonda.');
+  expect(istenen.length).toBe(once);
+  // internet yokken görüntüleyici en büyük kopyayı telefondan açar
+  r2Acik = false;
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await page.locator('.eser').first().click();
+  await expect(page.locator('.gor-resim')).toHaveAttribute('data-test', 'devasa');
+  await page.keyboard.press('Escape');
+  // silinir
+  await page.goto('./#/ayarlar');
+  page.once('dialog', (dl) => dl.accept());
+  await bolum.locator('[data-devasa-sil]').click();
+  await expect(bolum).toContainText('Telefonda: 0 / 3');
+  expect(await page.evaluate(() => caches.has('atlas-devasa-kalici'))).toBe(false);
+});

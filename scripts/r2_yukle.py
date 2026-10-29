@@ -130,9 +130,11 @@ def main():
     kaynaklar_yolu = KOK / 'gorseller_devasa/kaynaklar.json'
     kaynaklar = json.loads(kaynaklar_yolu.read_text()) if kaynaklar_yolu.exists() else {}
     muze = {ad: k for ad, k in sorted(kaynaklar.items()) if ad in tamam['d']}
+    # Ayarlar'daki "en büyük kopyaları indir" toplam boyu gösterir
+    devasa_bayt = sum(p.stat().st_size for p, u in isler if u.startswith('d/') and p.stem in tamam['d'])
     b_hepsi = len(tamam['b']) == len(list((KOK / 'gorseller/b').glob('*.jpg')))
     (KOK / 'data/gorsel_kaynagi.json').write_text(
-        json.dumps({'surum': 1, 'adres': adres, 'buyuk': b_hepsi, 'devasa': sorted(tamam['d']), 'muze': muze}, ensure_ascii=False, separators=(',', ':')) + '\n'
+        json.dumps({'surum': 1, 'adres': adres, 'buyuk': b_hepsi, 'devasa': sorted(tamam['d']), 'devasa_bayt': devasa_bayt, 'muze': muze}, ensure_ascii=False, separators=(',', ':')) + '\n'
     )
     print(f"\nBitti · en büyük {len(tamam['d'])} (müzeden {len(muze)}) · 1280'lik {len(tamam['b'])} · hata {hata}")
     print('data/gorsel_kaynagi.json yazıldı: git add data/gorsel_kaynagi.json && git commit && git push')

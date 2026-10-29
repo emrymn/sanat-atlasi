@@ -42,6 +42,15 @@ test('İş 58: Cloudflare R2 — en büyük kopya yalnız listede olana; 1280\'l
   assert.equal(devasaKaynagi(c), '');
   uzakGorselleriAyarla({ adres: r, devasa: ['abc123'], muze: { abc123: 'bilinmeyen' } });
   assert.equal(devasaKaynagi(c), '');
+  // İş 60: Ayarlar'daki indirme için adresler ve toplam boy
+  const { devasaAdresleri, devasaToplamBayt } = await import('../../js/gorsel.js');
+  uzakGorselleriAyarla({ adres: r, devasa: ['abc123', 'def456'], devasa_bayt: 5e9 });
+  assert.deepEqual(devasaAdresleri(), [`${r}/d/abc123.jpg`, `${r}/d/def456.jpg`]);
+  assert.equal(devasaToplamBayt(), 5e9);
+  uzakGorselleriAyarla({ adres: r, devasa: ['abc123'], devasa_bayt: 'bozuk' });
+  assert.equal(devasaToplamBayt(), 0);
+  uzakGorselleriAyarla(null);
+  assert.deepEqual(devasaAdresleri(), []);
   // https olmayan ya da bozuk adres yok sayılır
   uzakGorselleriAyarla({ adres: 'http://kotu', buyuk: true, devasa: ['abc123'] });
   assert.equal(devasaUrl(c), '');

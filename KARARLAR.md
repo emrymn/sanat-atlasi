@@ -1392,3 +1392,11 @@ Emre: "bu inerken her şeyi tekrar kontrol et". İndirme sürerken bütün zinci
 ## İş 59 · Büyütünce arayüz geri gelmesin (2026-10-29, v1.49.3)
 
 Emre: resme dokunup arayüzü gizliyor (sade), iki parmakla büyütünce açıklama yeniden beliriyor. Sebep: kıstırmanın son kalkan parmağı kıpırdamadan ve hızlı kalkınca tek dokunuş sayılıyordu (arayüzü açıp kapatır); iki büyütme üst üste gelince çift dokunuş sayılıp yakınlaştırmayı da sıfırlayabiliyordu. Artık kıstırmadan kalan parmağın kalkışı dokunuş sayılmaz. Uçtan uca test: Chromium'a CDP ile gerçek iki parmak dokunuşu (sade kip kalır, yakınlaştırma kalır); düzeltmeden önce başarısızdı.
+
+## İş 60 · En büyük kopyaları telefona indir (2026-10-29, v1.50.0)
+
+Emre: "büyük kopyaları da indirilebilir yap, yerim çok var". Ayarlar'da yeni bölüm: 1377 en büyük kopyanın hepsi (4,84 GB; R2'den HEAD ile ölçüldü, `gorsel_kaynagi.json` `devasa_bayt`; `r2_yukle.py` artık kendisi yazar).
+- Hepsi, yalnız açık sanatçılar değil: Emre'nin yeri bol ve yeni konu açıldıkça yeniden indirmek gerekmesin.
+- Service worker: sayfa adresi `?kalici=1` ile ister; SW sorgusuz adresle ayrı **`atlas-devasa-kalici`** önbelleğine yazar (30'luk sınırlı önbellekten farklı olarak kendiliğinden silinmez), yazınca 201, zaten varsa 204, yer kalmadıysa 507 döner. Görüntüleyici önce kalıcı önbelleğe bakar: internet yokken de en büyük kopya açılır.
+- Kaldığı yerden sürer (telefondakiler sayılır, yalnız eksikler istenir); üç paralel istek; Durdur; yer kalmazsa durur ve söyler; "Telefondan sil" (onaylı). `navigator.storage.persist()` istenir, ekran açık tutulur (Wake Lock, destekleniyorsa).
+- Uçtan uca test: indir → kalıcı önbellekte 3 → ikinci basış hiçbir şey indirmez → R2 kapalıyken görüntüleyici büyük kopyayı açar → sil.

@@ -62,12 +62,20 @@ export function gorselOrani(g) {
 // adresi; buyuk: 1280 px kopyaların hepsi orada (GitHub Pages'in 1 GB sınırı için depodan çıkarılabilsin);
 // devasa: en büyük (4096 px, en yüksek kalite) kopyası olanların adları; muze: { ad: 'met'|'aic'|'nga'|'cma' } en büyük
 // kopyası Commons yerine aynı eserin müze görselinden gelenler. Dosya yoksa her şey eskisi gibi depodan.
-let uzak = { adres: '', buyuk: false, devasa: new Set(), muze: {} };
+let uzak = { adres: '', buyuk: false, devasa: new Set(), muze: {}, bayt: 0 };
 export function uzakGorselleriAyarla(k) {
   const adres = k && typeof k.adres === 'string' && /^https:\/\//.test(k.adres) ? k.adres.replace(/\/+$/, '') : '';
   const muze = {};
   if (adres && k.muze && typeof k.muze === 'object') for (const [ad, m] of Object.entries(k.muze)) if (KAYNAK_ADI[m] && m !== 'wikiart') muze[ad] = m;
-  uzak = { adres, buyuk: !!(adres && k.buyuk === true), devasa: new Set(adres && Array.isArray(k.devasa) ? k.devasa : []), muze };
+  const bayt = adres && Number.isFinite(k.devasa_bayt) && k.devasa_bayt > 0 ? k.devasa_bayt : 0;
+  uzak = { adres, buyuk: !!(adres && k.buyuk === true), devasa: new Set(adres && Array.isArray(k.devasa) ? k.devasa : []), muze, bayt };
+}
+// İş 60: Ayarlar'dan hepsini telefona indirmek için en büyük kopyaların adresleri ve toplam boyu (bayt; bilinmiyorsa 0)
+export function devasaAdresleri() {
+  return [...uzak.devasa].map((ad) => `${uzak.adres}/d/${ad}.jpg`);
+}
+export function devasaToplamBayt() {
+  return uzak.bayt;
 }
 // En büyük kopyanın adresi (görüntüleyici); yoksa ''
 export function devasaUrl(g) {
