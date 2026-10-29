@@ -2,11 +2,15 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.49.1';
+const SURUM = '1.49.2';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
 const FONT = 'atlas-font';
+// İş 58e: en büyük kopyalar (R2 d/, 3–15 MB) ayrı ve küçük bir önbellekte: birkaç tablo büyütmek 1280'lik ve küçük
+// kopyaları (çevrimdışı indirilenler dahil) görsel önbelleğinden itmesin. En son açılan 30 tanesi kalır.
+const DEVASA = 'atlas-devasa';
+const DEVASA_EN_COK = 30;
 const RESIM_SINIRI = 700 * 1024 * 1024;
 const RESIM_HEDEF = 650 * 1024 * 1024;
 // CORS başlığı gönderdiği bilinen görsel sunucuları: cors kipiyle istenir, böylece durum kodu görülür
@@ -162,8 +166,10 @@ self.addEventListener('fetch', (e) => {
   } else if (url.origin === self.location.origin && url.pathname.includes('/gorseller/')) {
     // uygulamayla yayınlanan görsel kopyaları: sürümden bağımsız görsel önbelleği (LRU)
     e.respondWith(resim(e));
+  } else if (url.hostname.endsWith('.r2.dev') && url.pathname.startsWith('/d/')) {
+    e.respondWith(devasaResim(e));
   } else if (url.hostname.endsWith('.r2.dev')) {
-    // İş 58: Cloudflare R2'deki görsel kopyaları (en büyük 4096 px ve 1280 px)
+    // İş 58: Cloudflare R2'deki görsel kopyaları (1280 px)
     e.respondWith(resim(e));
   } else if (url.origin === self.location.origin && (url.pathname.endsWith('/data/kunye.json') || url.pathname.endsWith('/data/gorsel_kaynagi.json'))) {
     // künye (portre, okunuş, IPA) Emre'nin Mac'inde güncellenir: sürüm beklemeden gelsin diye önce ağ, yoksa önbellek
@@ -354,6 +360,26 @@ async function resim(e) {
       if (u > 0) boyut = u;
     }
     e.waitUntil(sakla(c, anahtar, y, boyut));
+  }
+  return y;
+}
+
+async function devasaResim(e) {
+  const anahtar = e.request.url;
+  const c = await caches.open(DEVASA);
+  const kayitli = await c.match(anahtar);
+  if (kayitli) return kayitli;
+  const { y, saklanir } = await agdanTekrarli(anahtar);
+  if (saklanir && y.type !== 'opaque') {
+    const kopya = y.clone();
+    e.waitUntil(
+      (async () => {
+        await c.put(anahtar, kopya);
+        // anahtarlar ekleme sırasıyla: en eskiler silinir
+        const hepsi = await c.keys();
+        for (const r of hepsi.slice(0, Math.max(0, hepsi.length - DEVASA_EN_COK))) await c.delete(r);
+      })().catch(() => {}),
+    );
   }
   return y;
 }

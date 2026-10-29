@@ -19,6 +19,7 @@ Gerekenler: pip3 install boto3 ve Cloudflare'den (README · "Görseller Cloudfla
 Çalıştır (depo kökünde):  python3 scripts/r2_yukle.py
 Yarıda kalırsa yeniden çalıştır: kovada aynı boyda olan dosyalar atlanır.
 """
+import hashlib
 import json
 import os
 import re
@@ -30,6 +31,7 @@ from pathlib import Path
 KOK = Path(__file__).resolve().parent.parent
 SITE = 'https://emrymn.github.io'
 EN_AZ_DEVASA = 1600  # 1280'lik kopyadan en az bu kadar büyük olmalı
+R2_UCRETSIZ_GB = 10
 
 
 def uzun_kenar(yol):
@@ -78,7 +80,10 @@ def main():
     def yukle(yerel, uzak):
         boy = yerel.stat().st_size
         try:
-            if s3.head_object(Bucket=kova, Key=uzak)['ContentLength'] == boy:
+            h = s3.head_object(Bucket=kova, Key=uzak)
+            etag = h.get('ETag', '').strip('"')
+            # aynı boy ve (tek parça yüklendiyse) aynı MD5: değişmemiş. Yeniden inen dosya aynı adla değişebilir (İş 58d)
+            if h['ContentLength'] == boy and ('-' in etag or etag == hashlib.md5(yerel.read_bytes()).hexdigest()):
                 return 'var'
         except ClientError:
             pass
@@ -92,7 +97,10 @@ def main():
         print(f'{len(kucuk)} görselin özgünü küçük ({EN_AZ_DEVASA} px altı): en büyük kopyası yok sayılıyor (1280\'liği yeter)', flush=True)
     isler = [(p, f'd/{p.name}') for p in devasalar if p not in kucuk]
     isler += [(p, f'b/{p.name}') for p in sorted((KOK / 'gorseller/b').glob('*.jpg'))]
-    print(f'{len(isler)} dosya ({sum(p.stat().st_size for p, _ in isler) / 1e9:.2f} GB)', flush=True)
+    toplam = sum(p.stat().st_size for p, _ in isler) / 1e9
+    print(f'{len(isler)} dosya ({toplam:.2f} GB)', flush=True)
+    if toplam > R2_UCRETSIZ_GB * 0.95:
+        sys.exit(f'Toplam {toplam:.2f} GB: R2 ücretsiz sınırına ({R2_UCRETSIZ_GB} GB) çok yakın ya da üstünde. Yükleme yapılmadı; Claude\'a bu satırı gönder.')
     tamam = {'d': set(), 'b': set()}
     hata = 0
     with ThreadPoolExecutor(8) as havuz:
@@ -107,6 +115,17 @@ def main():
                 print('HATA', u, e, flush=True)
             if n % 100 == 0:
                 print(f'{n}/{len(isler)} · hata {hata}', flush=True)
+    # kovada kalan eski en büyük kopyalar (artık listede olmayanlar; ör. önceki sürümün büyüttükleri) silinir: yer kaplamasın
+    if not hata:
+        try:
+            eski = [o['Key'] for sayfa in s3.get_paginator('list_objects_v2').paginate(Bucket=kova, Prefix='d/')
+                    for o in sayfa.get('Contents', []) if o['Key'][2:-4] not in tamam['d']]
+            for i in range(0, len(eski), 1000):
+                s3.delete_objects(Bucket=kova, Delete={'Objects': [{'Key': k} for k in eski[i:i + 1000]], 'Quiet': True})
+            if eski:
+                print(f'Kovadan artık kullanılmayan {len(eski)} eski en büyük kopya silindi', flush=True)
+        except ClientError as e:
+            print(f"Uyarı: eski kopyalar silinemedi ({e.response.get('Error', {}).get('Code')}); zararı yok, yalnız yer kaplar", flush=True)
     # en büyük kopyası Commons yerine müzeden gelenler (scripts/devasa_indir.py): görüntüleyici altyazıda belirtir
     kaynaklar_yolu = KOK / 'gorseller_devasa/kaynaklar.json'
     kaynaklar = json.loads(kaynaklar_yolu.read_text()) if kaynaklar_yolu.exists() else {}
