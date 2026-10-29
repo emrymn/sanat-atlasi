@@ -205,6 +205,40 @@ test.describe('görüntüleyici dokunuş ve yatay ekran', () => {
     expect(await page.locator('.gor-resim').evaluate((e) => e.style.transform)).toContain('scale(2.5)');
   });
 
+  // İş 59: iki parmakla büyütüp parmakları kaldırmak dokunuş sayılıp arayüzü geri getiriyordu
+  test('sade kipte iki parmakla büyütmek arayüzü geri getirmez, yakınlaştırma kalır', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/sanatci/giotto-di-bondone');
+    await page.locator('.eser').first().click();
+    const gor = page.locator('.gor');
+    const sahne = await page.locator('.gor-sahne').boundingBox();
+    const x = sahne.x + sahne.width / 2;
+    const y = sahne.y + sahne.height / 2;
+    await page.touchscreen.tap(x, y);
+    await expect(gor).toHaveClass(/sade/);
+    await page.waitForTimeout(400);
+    const cdp = await context.newCDPSession(page);
+    const dokun = (type, noktalar) => cdp.send('Input.dispatchTouchEvent', { type, touchPoints: noktalar.map(([px, py], id) => ({ x: px, y: py, id })) });
+    await dokun('touchStart', [[x - 30, y]]);
+    await dokun('touchStart', [[x - 30, y], [x + 30, y]]);
+    for (let i = 1; i <= 6; i++) await dokun('touchMove', [[x - 30 - i * 15, y], [x + 30 + i * 15, y]]);
+    // parmaklar art arda, hızlıca ve kıpırdamadan kalkar
+    await dokun('touchEnd', [[x - 120, y]]);
+    await dokun('touchEnd', []);
+    await page.waitForTimeout(600);
+    await expect(gor).toHaveClass(/sade/);
+    expect(await page.locator('.gor-resim').evaluate((e) => e.style.transform)).not.toContain('scale(1)');
+    // iki kez üst üste büyütmek de (çift dokunuş sayılıp) yakınlaştırmayı sıfırlamaz
+    await dokun('touchStart', [[x - 30, y]]);
+    await dokun('touchStart', [[x - 30, y], [x + 30, y]]);
+    await dokun('touchMove', [[x - 40, y], [x + 40, y]]);
+    await dokun('touchEnd', [[x - 40, y]]);
+    await dokun('touchEnd', []);
+    await page.waitForTimeout(600);
+    await expect(gor).toHaveClass(/sade/);
+    expect(await page.locator('.gor-resim').evaluate((e) => e.style.transform)).not.toContain('scale(1)');
+  });
+
   test('yatay ekranda resim ekranın bütün yüksekliğini kullanır, açıklama alttan resmin üstünde', async ({ page, context }) => {
     await page.setViewportSize({ width: 844, height: 390 });
     await agiHazirla(context);

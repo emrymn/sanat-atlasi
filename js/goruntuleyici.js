@@ -358,6 +358,8 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       ty = 0;
       uygula(true);
     }
+    // İş 59: iki parmakla büyütmenin son kalkan parmağı dokunuş değildir (arayüzü geri getirmesin, yakınlaştırmayı sıfırlamasın)
+    if (kistirmadan) return;
     // çift dokunma: 2.5x ↔ 1x
     if (Math.abs(dx) < 10 && Math.abs(dy) < 10 && sure < 300) {
       const simdi = Date.now();
