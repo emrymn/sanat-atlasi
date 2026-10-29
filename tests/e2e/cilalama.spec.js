@@ -619,3 +619,55 @@ test.describe('İş 71: sekme çubuğu dokunuşları', () => {
     expect(await page.evaluate(() => history.length)).toBe(once + 1);
   });
 });
+
+// İş 73: iPhone dokunuşu tıklamaya çevirmezse (Göz At'ta dönem kartı iki dokunuşla açılıyordu) uygulama tamamlar
+test.describe('İş 73: yutulan dokunuş', () => {
+  test.use({ hasTouch: true, isMobile: true });
+
+  test('tıklaması yutulan dokunuş yine de dönemi açar; tıklama gelirse ikinci kez gezinilmez', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/gozat');
+    const kart = page.locator('a.zaman-kart').first();
+    await kart.waitFor();
+    // Safari'nin ilk tıklamayı yutmasının taklidi
+    await page.evaluate(() => {
+      window.__yutuldu = 0;
+      window.addEventListener('click', (e) => {
+        if (!window.__yutuldu && e.target.closest('a.zaman-kart')) {
+          window.__yutuldu = 1;
+          e.preventDefault();
+          e.stopImmediatePropagation();
+        }
+      }, true);
+    });
+    const b = await kart.boundingBox();
+    await page.touchscreen.tap(b.x + b.width / 2, b.y + b.height / 2);
+    await expect(page).toHaveURL(/#\/akim\//);
+    expect(await page.evaluate(() => window.__yutuldu)).toBe(1);
+    // normal dokunuş: tek gezinme
+    await page.goto('./#/gozat');
+    await kart.waitFor();
+    const once = await page.evaluate(() => history.length);
+    const b2 = await kart.boundingBox();
+    await page.touchscreen.tap(b2.x + b2.width / 2, b2.y + b2.height / 2);
+    await expect(page).toHaveURL(/#\/akim\//);
+    await page.waitForTimeout(400);
+    expect(await page.evaluate(() => history.length)).toBe(once + 1);
+  });
+
+  test('kaydırma (kıpırdayan parmak) tıklama sayılmaz', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/gozat');
+    const kart = page.locator('a.zaman-kart').first();
+    await kart.waitFor();
+    const b = await kart.boundingBox();
+    const cdp = await context.newCDPSession(page);
+    const x = b.x + b.width / 2;
+    const y = b.y + b.height / 2;
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y }] });
+    for (let i = 1; i <= 5; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x, y: y - i * 12 }] });
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await page.waitForTimeout(500);
+    await expect(page).toHaveURL(/#\/gozat$/);
+  });
+});

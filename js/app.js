@@ -1,6 +1,7 @@
 // Sanat Atlası — uygulamanın girişi: veriyi yükler, ekranların dinleyicilerini bağlar, yönlendirmeyi başlatır.
 // Ekranlar js/ekranlar/ altında (bkz. KARARLAR.md "İş 16").
 import { akimOrtaYillari } from './celdirici.js';
+import { dokunuslariKoru } from './dokunus.js';
 import { kursKonulari } from './kurs.js';
 import { eserTurleriniAyarla, hazirOnbellek, eserAdlariniAyarla, adlariAl, kolaylikAl } from './eserler.js';
 import { yerelGorselleriAyarla, oranlariAyarla, uzakGorselleriAyarla } from './gorsel.js';
@@ -114,6 +115,8 @@ async function basla() {
   window.addEventListener('hashchange', yonlendir);
   yonlendir();
   swKaydet();
+  // İş 73: iPhone'un yuttuğu dokunuşları tamamla (tek dokunuş yetsin)
+  dokunuslariKoru();
   // Konular (görüntüleyicideki "Konu:" bağlantısı için) ilk ekrandan sonra arka planda
   setTimeout(ikonografiVeri, 1500);
   setTimeout(notlariYukle, 0);
