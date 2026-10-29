@@ -24,7 +24,7 @@ const VERI = {
 
 test('konular: Göz At → liste → konu sayfası; eserler yan yana; görüntüleyicide Konu bağlantısı', async ({ page, context }) => {
   await agiHazirla(context);
-  await context.route(/\/data\/ikonografi\.json$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(VERI) }));
+  await context.route(/\/data\/ikonografi\.json(\?.*)?$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(VERI) }));
   await page.goto('./#/gozat');
   await page.locator('[data-test="konu-giris"]').click();
   await expect(page.locator('[data-test="konu-listesi"]')).toContainText('TEST Konusu');
@@ -54,7 +54,7 @@ test('konular: Göz At → liste → konu sayfası; eserler yan yana; görüntü
 
 test('konu verisi yoksa boş mesaj', async ({ page, context }) => {
   await agiHazirla(context);
-  await context.route(/\/data\/ikonografi\.json$/, (r) => r.fulfill({ status: 404, body: '' }));
+  await context.route(/\/data\/ikonografi\.json(\?.*)?$/, (r) => r.fulfill({ status: 404, body: '' }));
   await page.goto('./#/konular');
   await expect(page.getByText('Henüz konu yok.')).toBeVisible();
 });

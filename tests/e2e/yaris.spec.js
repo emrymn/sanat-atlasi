@@ -10,7 +10,7 @@ const gecikmeli = (context, desen, ms) =>
 
 test('başyapıt okuması yüklenirken Göz At’a geçilirse okuma Göz At’ın üstüne çizilmez', async ({ page, context }) => {
   await agiHazirla(context);
-  await gecikmeli(context, /\/data\/basyapitlar\.json$/, 1500);
+  await gecikmeli(context, /\/data\/basyapitlar\.json(\?.*)?$/, 1500);
   await page.goto('./#/gozat');
   await expect(page.locator('h1')).toBeVisible();
   const anahtar = await page.evaluate(async () => {
@@ -27,7 +27,7 @@ test('başyapıt okuması yüklenirken Göz At’a geçilirse okuma Göz At’ı
 
 test('Günün sanatçısı → Başka bir sanatçı hızlıca: galeri yeni sanatçının, tek dokunuşta tek görüntüleyici', async ({ page, context }) => {
   await agiHazirla(context);
-  await gecikmeli(context, /\/data\/biyografiler\.json$/, 1200);
+  await gecikmeli(context, /\/data\/biyografiler\.json(\?.*)?$/, 1200);
   await page.goto('./#/');
   await page.waitForFunction(() => window.__atlas && window.__atlas.ilerleme);
   await page.evaluate(() => (location.hash = '#/gunun'));

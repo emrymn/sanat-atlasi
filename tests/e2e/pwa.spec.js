@@ -47,7 +47,7 @@ test('service worker kaydolur ve ilk açılıştan sonra çevrimdışı çalış
 });
 
 test('önbellek dosyası olmadan da çalışır', async ({ page, context }) => {
-  await context.route(/\/data\/eserler_onbellek\.json$/, (r) => r.fulfill({ status: 404, body: '' }));
+  await context.route(/\/data\/eserler_onbellek\.json(\?.*)?$/, (r) => r.fulfill({ status: 404, body: '' }));
   await page.goto('./#/sanatci/giotto-di-bondone');
   await expect(page.locator('.eser').first()).toBeVisible();
   await expect(page.locator('.eser', { hasText: 'Fixture' })).toHaveCount(0);

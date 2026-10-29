@@ -18,8 +18,8 @@ async function dogruSanatci(page) {
 }
 
 async function notlariVer(context) {
-  await context.route(/\/data\/tanima_notlari\.json$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(TANIMA) }));
-  await context.route(/\/data\/eser_notlari\.json$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(ESER) }));
+  await context.route(/\/data\/tanima_notlari\.json(\?.*)?$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(TANIMA) }));
+  await context.route(/\/data\/eser_notlari\.json(\?.*)?$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(ESER) }));
 }
 
 test('karşılaştırma: iki sütun, Nasıl tanırım notları, dörder eser; görüntüleyicide eser notu', async ({ page, context }) => {
@@ -89,7 +89,7 @@ test('doğru cevapta Karşılaştır bağlantısı çıkmaz', async ({ page, con
 
 test('not dosyaları yokken uygulama sorunsuz açılır', async ({ page, context }) => {
   await agiHazirla(context);
-  await context.route(/\/data\/(tanima|eser)_notlari\.json$/, (r) => r.fulfill({ status: 404, body: '' }));
+  await context.route(/\/data\/(tanima|eser)_notlari\.json(\?.*)?$/, (r) => r.fulfill({ status: 404, body: '' }));
   await page.goto('./#/sanatci/j-m-w-turner');
   await expect(page.locator('h1')).toContainText('Turner');
   await expect(page.locator('[data-test="taninma"]')).toHaveCount(0);
