@@ -1421,3 +1421,10 @@ Emre: "Güncelle" bildirimi bir kez geldi, basılmadan uygulamadan çıkıldı, 
 ## İş 64 · "Yenile"ye iPhone'da dokunulamıyor (2026-10-29, v1.50.3)
 
 Emre'nin ekran görüntüsü: Tuval'de "Uygulamanın yeni sürümü hazır · Yenile" duruyor, düğmeye dokunulamıyor. Chromium'da (iPhone 13 taklidi, dört ekranda) düğme en üstte ve çalışıyor; WebKit burada yok. En olası sebep: Tuval tablosu eğim için 3B döndürülüyor (`perspective` + eksenli `rotate`), WebKit 3B öğeleri z-index'e rağmen dokunuşta öne alabiliyor. Üç önlem: tablo resmi `pointer-events: none` (dokunulacak bir şey değil); bildirim kendi katmanında (`translate3d`) ve z-index 150 (görüntüleyicinin de üstü); eylemli bildirimin tamamı dokunulabilir (yalnız düğme değil). Ayrıca İş 63: yeni sürüm indiyse arka plandan dönüşte kendiliğinden yenilenir, dokunmak gerekmez. Uçtan uca test: bildirimin yazısına dokunmak sayfayı yeniler; tablo dokunuş almaz.
+
+## İş 65 · Güncelleme telefona yarım iniyordu (2026-10-29, v1.50.4)
+
+Emre uygulamayı her seferinde tamamen kapatıp açıyor, yine eski sürüm; "yeni sürüm hazır" bildirimi çıkıyor. Bildirim yeni service worker'ın devraldığını gösteriyor, yani sorun kurulumun içeriği: GitHub Pages dosyaları `Cache-Control: max-age=600` ile verir, Fastly ara sunucuları 10 dakikaya kadar eski kopyayı verebilir. Güncellemeyi gönderir göndermez telefon yeni `sw.js`'i alıp kuruyor, ama kabuğun öbür dosyalarını (js, data, `js/surum.js`) ara sunucudan eski haliyle önbelleğe koyuyordu: telefon "güncellendi" sanıyor, içi eski kalıyordu.
+- Kurulum her dosyayı `?v=SURUM` sorgusuyla ister (ara sunucuda ayrı kayıt, hep taze), sorgusuz adresle saklar (sayfa sorgusuz ister).
+- Denetim: önbelleğe giren `js/surum.js` bu sürümün değilse kurulum başarısız sayılır; eski sürüm sağlam kalır, sonraki açılışta yeniden denenir.
+- Testlerde `data/*.json` yolakları sorgulu adresi de yakalar. Uçtan uca test: kabuk sorguyla istenir; sürüm dosyası eskiyse kurulmaz, tazelenince kurulur.

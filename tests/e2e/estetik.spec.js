@@ -6,7 +6,7 @@ import { agiHazirla } from './ortak.js';
 test('imza: doğrulanmış QID’in kaydında imza varsa sanatçı sayfasında adın altında; yoksa hiçbir şey', async ({ page, context }) => {
   await agiHazirla(context);
   // data/imzalar.json yokmuş gibi: imza canlı Wikidata'dan
-  await context.route(/\/data\/imzalar\.json$/, (r) => r.fulfill({ status: 404, body: '' }));
+  await context.route(/\/data\/imzalar\.json(\?.*)?$/, (r) => r.fulfill({ status: 404, body: '' }));
   // Giotto'nun QID'i (Q7814) önbellek dosyasında; Wikidata yalnız onun için imza döndürür
   await context.route(/www\.wikidata\.org\/w\/api\.php.*wbgetentities.*ids=Q7814/, (r) =>
     r.fulfill({
@@ -31,7 +31,7 @@ test('imza: doğrulanmış QID’in kaydında imza varsa sanatçı sayfasında a
 
 test('imza: önceden hesaplanmış data/imzalar.json varsa Wikidata’ya sorulmaz', async ({ page, context }) => {
   await agiHazirla(context);
-  await context.route(/\/data\/imzalar\.json$/, (r) =>
+  await context.route(/\/data\/imzalar\.json(\?.*)?$/, (r) =>
     r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, imzalar: { 'giotto-di-bondone': 'Dosyadan imza.svg', cimabue: null } }) }),
   );
   let soruldu = 0;
@@ -70,7 +70,7 @@ test('imza: uygulamayla gelen hazır maske kullanılır (Wikimedia’ya gidilmez
 
 test('imza: tablonun üstündeki imzanın fotoğrafı (mürekkep değil) gösterilmez', async ({ page, context }) => {
   await agiHazirla(context); // imza görseli olarak renkli resim fikstürü döner
-  await context.route(/\/data\/imzalar\.json$/, (r) =>
+  await context.route(/\/data\/imzalar\.json(\?.*)?$/, (r) =>
     r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, imzalar: { 'giotto-di-bondone': 'Tablodaki imza.jpg' } }) }),
   );
   await page.goto('./#/sanatci/giotto-di-bondone');
@@ -133,7 +133,7 @@ test('Ayarlar: "Başka bir sanatçı getir" günün sanatçısını o gün için
 
 test('künye: sanatçı sayfasında arkada portre ve "Dinle"; imza onların altında; kayıt yoksa telefonun o dildeki sesi', async ({ page, context }) => {
   await agiHazirla(context);
-  await context.route(/\/data\/kunye\.json$/, (r) =>
+  await context.route(/\/data\/kunye\.json(\?.*)?$/, (r) =>
     r.fulfill({
       status: 200,
       contentType: 'application/json',
@@ -175,7 +175,7 @@ test('künye: sanatçı sayfasında arkada portre ve "Dinle"; imza onların alt�
 
 test('künye: okunuş dosyası Web Audio ile çalar (İş 49d); çözülemezse ses öğesine düşer', async ({ page, context }) => {
   await agiHazirla(context);
-  await context.route(/\/data\/kunye\.json$/, (r) =>
+  await context.route(/\/data\/kunye\.json(\?.*)?$/, (r) =>
     r.fulfill({
       status: 200,
       contentType: 'application/json',

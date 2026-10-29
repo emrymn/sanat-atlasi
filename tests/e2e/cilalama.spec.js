@@ -328,7 +328,7 @@ test('görüntüleyici: en büyük kopya R2\'den arkada iner ve yerine geçer; y
   await agiHazirla(context);
   const yerel = JSON.parse(readFileSync(new URL('../../data/yerel_gorseller.json', import.meta.url), 'utf8')).gorseller;
   const adlar = Object.values(yerel);
-  await context.route(/\/data\/gorsel_kaynagi\.json$/, (r) =>
+  await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) =>
     r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar, muze: Object.fromEntries(adlar.map((a) => [a, 'met'])) }) }),
   );
   const istenen = [];
@@ -357,7 +357,7 @@ test('görüntüleyici: en büyük kopya R2\'den arkada iner ve yerine geçer; y
 test('Ayarlar: en büyük kopyalar telefona iner, kaldığı yerden sürer, internetsiz açılır, silinebilir', async ({ page, context }) => {
   await agiHazirla(context);
   let adlar = [];
-  await context.route(/\/data\/gorsel_kaynagi\.json$/, (r) =>
+  await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) =>
     r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar, devasa_bayt: 3e9 }) }),
   );
   let r2Acik = true;
@@ -406,7 +406,7 @@ test('R2 kendi alan adından: büyük kopya ayrı önbellekte; r2.dev ile inmiş
   await agiHazirla(context);
   const png = readFileSync(new URL('../fixtures/eser.png', import.meta.url));
   let adlar = [];
-  await context.route(/\/data\/gorsel_kaynagi\.json$/, (r) =>
+  await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) =>
     r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://gorsel.noracloud.ai', buyuk: false, devasa: adlar }) }),
   );
   await context.route(/gorsel\.noracloud\.ai\/d\//, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: png, headers: { 'access-control-allow-origin': '*' } }));
@@ -457,4 +457,25 @@ test('yeni sürüm indiyse arka plandan dönüşte sayfa kendiliğinden yenileni
     }),
   ]);
   expect(await page.evaluate(() => window.__eskiSayfa === undefined)).toBe(true);
+});
+
+// İş 65: ara sunucu (GitHub Pages/Fastly) eski dosya verirse yeni sürüm yarım kurulmaz; dosyalar sürüm sorgusuyla istenir
+test('service worker kabuğu sürüm sorgusuyla indirir; sürüm dosyası eskiyse kurulmaz', async ({ page, context }) => {
+  await agiHazirla(context);
+  const istenen = [];
+  let eski = true;
+  await context.route(/\/js\/surum\.js(\?.*)?$/, async (r) => {
+    istenen.push(new URL(r.request().url()).search);
+    if (eski && r.request().url().includes('?v=')) return r.fulfill({ status: 200, contentType: 'text/javascript', body: "export const SURUM = '0.0.1';\n" });
+    return r.continue();
+  });
+  await page.goto('./#/');
+  await page.waitForTimeout(3000);
+  expect(istenen.some((q) => /^\?v=\d+\.\d+\.\d+$/.test(q))).toBe(true);
+  // eski sürüm dosyası geldi: kurulum başarısız, sayfayı service worker yönetmiyor
+  expect(await page.evaluate(async () => !!(await navigator.serviceWorker.getRegistration())?.active)).toBe(false);
+  // ara sunucu tazelenince bir sonraki açılışta kurulur
+  eski = false;
+  await page.reload();
+  await expect.poll(() => page.evaluate(async () => !!(await navigator.serviceWorker.getRegistration())?.active), { timeout: 15000 }).toBe(true);
 });

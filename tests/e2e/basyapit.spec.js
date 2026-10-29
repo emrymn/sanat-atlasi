@@ -27,7 +27,7 @@ const VERI = {
 
 test('başyapıt: Göz At → liste → okuma; görsel ve ayrıntılar; sanatçı sayfasında bağlantı', async ({ page, context }) => {
   await agiHazirla(context);
-  await context.route(/\/data\/basyapitlar\.json$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(VERI) }));
+  await context.route(/\/data\/basyapitlar\.json(\?.*)?$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(VERI) }));
   await page.goto('./#/gozat');
   await page.locator('[data-test="basyapit-giris"]').click();
   const liste = page.locator('[data-test="basyapit-listesi"]');
@@ -49,7 +49,7 @@ test('başyapıt: Göz At → liste → okuma; görsel ve ayrıntılar; sanatç�
 
 test('başyapıt verisi yoksa liste boş mesajı, sayfa hata vermez', async ({ page, context }) => {
   await agiHazirla(context);
-  await context.route(/\/data\/basyapitlar\.json$/, (r) => r.fulfill({ status: 404, body: '' }));
+  await context.route(/\/data\/basyapitlar\.json(\?.*)?$/, (r) => r.fulfill({ status: 404, body: '' }));
   await page.goto('./#/basyapitlar');
   await expect(page.getByText('Henüz yakın okuma yok.')).toBeVisible();
 });

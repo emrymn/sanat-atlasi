@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.50.3';
+const SURUM = '1.50.4';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -124,12 +124,28 @@ const ISTEGE_BAGLI = [
   'icons/icon-maskable-512.png',
 ];
 
+// İş 65: GitHub Pages'in ara sunucuları (Fastly) dosyaları 10 dakikaya kadar eski haliyle verebiliyor; güncelleme
+// gönderilir gönderilmez kurulan sürüm yeni sw.js ama eski js/data dosyalarıyla kalıyordu (Ayarlar'da eski sürüm, her
+// açılışta aynı). Dosyalar sürüm sorgusuyla (?v=SURUM; ara sunucuda ayrı kayıt) istenir, sorgusuz adresle saklanır.
+// Sürüm dosyası tutmazsa kurulum başarısız sayılır: eski sürüm sağlam kalır, sonraki açılışta yeniden denenir.
+const taze = (u) => new Request(`${u}${u.includes('?') ? '&' : '?'}v=${SURUM}`, { cache: 'reload' });
+async function kabugaKoy(c, u) {
+  const y = await fetch(taze(u));
+  if (!y.ok) throw new Error(`${u}: ${y.status}`);
+  await c.put(new Request(u), y);
+}
+
 self.addEventListener('install', (e) => {
   e.waitUntil(
     (async () => {
       const c = await caches.open(KABUK);
-      await c.addAll(KABUK_DOSYALARI.map((u) => new Request(u, { cache: 'reload' })));
-      await Promise.all(ISTEGE_BAGLI.map((u) => c.add(new Request(u, { cache: 'reload' })).catch(() => {})));
+      await Promise.all(KABUK_DOSYALARI.map((u) => kabugaKoy(c, u)));
+      await Promise.all(ISTEGE_BAGLI.map((u) => kabugaKoy(c, u).catch(() => {})));
+      const surum = await c.match('js/surum.js');
+      if (!surum || !(await surum.text()).includes(`'${SURUM}'`)) {
+        await caches.delete(KABUK);
+        throw new Error('Kabuk dosyaları bu sürümün değil');
+      }
       await self.skipWaiting();
     })(),
   );

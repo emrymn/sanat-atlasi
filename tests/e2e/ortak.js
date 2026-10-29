@@ -34,7 +34,7 @@ export async function agiHazirla(context, { tanisma = false } = {}) {
     }),
   );
   await context.route(/fonts\.(googleapis|gstatic)\.com/, (r) => r.fulfill({ status: 200, contentType: 'text/css', body: '' }));
-  await context.route(/\/data\/eserler_onbellek\.json$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: onbellek }));
+  await context.route(/\/data\/eserler_onbellek\.json(\?.*)?$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: onbellek }));
 }
 
 export async function ilerleme(page) {

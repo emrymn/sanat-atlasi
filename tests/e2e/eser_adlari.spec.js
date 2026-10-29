@@ -8,7 +8,7 @@ test('Türkçe eser adı galeride ve görüntüleyicide; özgün ad küçük sat
   await agiHazirla(context);
   const ilk = onbellek.sanatcilar['j-m-w-turner'].eserler[0];
   const k = ilk.qid || `j-m-w-turner|${ilk.baslik}`;
-  await context.route(/\/data\/eser_adlari_tr\.json$/, (r) =>
+  await context.route(/\/data\/eser_adlari_tr\.json(\?.*)?$/, (r) =>
     r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adlar: { [k]: 'TEST Türkçe Ad' } }) }),
   );
   await page.goto('./#/sanatci/j-m-w-turner');
