@@ -515,3 +515,78 @@ test('İş 69: görüntüleyicide tablonun ışığı', async ({ page, context }
   const once = await sahne.evaluate((e) => getComputedStyle(e, '::before').filter);
   expect(once).toContain('blur');
 });
+
+// İş 70: iPhone tarzı geçişler (testlerde kapalı; burada açılır). Geçişten sonra kopya kalmaz, sayfa doğru, taşma yok
+test.describe('İş 70: geçişler açıkken akış bozulmaz', () => {
+  test.use({ hasTouch: true, isMobile: true });
+
+  test('sayfa kayması, geri, kart büyümesi, görüntüleyici açılış/kapanış ve aşağı çekme', async ({ page, context }) => {
+    await agiHazirla(context);
+    await context.addInitScript(() => (window.__atlasGecis = true));
+    const hatalar = [];
+    page.on('pageerror', (e) => hatalar.push(e.message));
+    const temiz = async () => {
+      await expect(page.locator('.gecis-kopya, .gor-ucan')).toHaveCount(0, { timeout: 4000 });
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
+      expect(await page.evaluate(() => document.documentElement.classList.contains('gecis-suruyor'))).toBe(false);
+    };
+    await page.goto('./#/gozat');
+    await page.locator('a[href^="#/akim/"]').first().waitFor();
+    // ileri: kayarak gelir
+    await page.locator('a[href^="#/akim/"]').first().tap();
+    await expect(page.locator('.gecis-kopya')).toHaveCount(1);
+    await expect(page).toHaveURL(/#\/akim\//);
+    await temiz();
+    expect(await page.locator('#uygulama').evaluate((e) => getComputedStyle(e).transform)).toBe('none');
+    // geri düğmesi: eski sayfa sağa çekilir
+    await page.locator('[data-geri]').first().tap();
+    await expect(page).toHaveURL(/#\/gozat$/);
+    await temiz();
+    // kart büyüyerek açılır
+    await page.goto('./#/basyapitlar');
+    const kart = page.locator('.vitrin-kart').first();
+    await kart.waitFor();
+    await kart.tap();
+    await expect(page.locator('.gecis-kopya')).toHaveCount(1);
+    await expect(page.locator('[data-test="basyapit"]')).toBeVisible();
+    await temiz();
+    // görüntüleyici: küçük resimden açılır ve yerine döner
+    await page.goto('./#/sanatci/giotto-di-bondone');
+    const eser = page.locator('.eser img.yuklendi, .eser img').first();
+    await eser.waitFor();
+    await page.waitForTimeout(500);
+    await page.locator('.eser').first().tap();
+    await expect(page.locator('.gor')).toHaveCount(1);
+    await temiz();
+    await expect(page.locator('.gor-resim')).toBeVisible();
+    // aşağı çekme: zemin şeffaflaşır, bırakınca kapanır
+    const cdp = await context.newCDPSession(page);
+    const s = await page.locator('.gor-sahne').boundingBox();
+    const x = s.x + s.width / 2;
+    const y = s.y + s.height / 3;
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y }] });
+    for (let i = 1; i <= 6; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x, y: y + i * 40 }] });
+    await expect(page.locator('.gor')).toHaveClass(/cekiliyor/);
+    const zemin = await page.locator('.gor').evaluate((e) => getComputedStyle(e).backgroundColor);
+    expect(zemin).toMatch(/rgba\(.*, 0\.\d+\)/);
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await expect(page.locator('.gor')).toHaveCount(0, { timeout: 4000 });
+    await temiz();
+    await expect(page.locator('.eser').first()).toBeVisible();
+    expect(await page.locator('.eser img').first().evaluate((e) => e.style.visibility)).toBe('');
+    expect(hatalar).toEqual([]);
+  });
+
+  test('görüntüleyicinin zemini çekmeden önce tam koyu; açılırken sonraki esere geçince uçan kopya kalmaz', async ({ page, context }) => {
+    await agiHazirla(context);
+    await context.addInitScript(() => (window.__atlasGecis = true));
+    await page.goto('./#/sanatci/giotto-di-bondone');
+    await page.locator('.eser img').first().waitFor();
+    await page.waitForTimeout(500);
+    await page.locator('.eser').first().tap();
+    await page.locator('.gor-sonraki').click();
+    await expect(page.locator('.gor-ucan')).toHaveCount(0, { timeout: 1500 });
+    const zemin = await page.locator('.gor').evaluate((e) => getComputedStyle(e).backgroundColor);
+    expect(zemin).toBe('rgb(11, 10, 11)');
+  });
+});

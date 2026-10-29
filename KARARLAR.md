@@ -1448,3 +1448,15 @@ Emre önce/sonra görüntüsüyle onayladı. Pekiştir'de cevaptan sonra: doğru
 ## İş 69 · Tablonun ışığı (2026-10-29, v1.51.0)
 
 Emre önce/sonra görüntüleriyle seçti. Görüntüleyicide tablonun arkasında, tablonun kendi 400 px kopyası (yerel, önbellekte) çok bulanık (34 px), büyütülmüş (×1,7), hafif doygun ve karartılmış olarak durur; ışık tablonun kendi renkleri ve yerleriyle yayılır. İlk deneme paletten tek renk seçip parlatıyordu: Emre "çok yapay" dedi. İki kez kısıldı (opaklık 0,55, parlaklık 0,75). Eserler arası geçişte söner, yeni tablo yüklenince yanar; "saydamlığı azalt" açıksa yok. Yenilikler'e 1.51 satırı (İş 68 ile birlikte).
+
+## İş 70 · iPhone tarzı geçişler ve sekme çubuğu camı (2026-10-29, v1.52.0)
+
+Emre her birini kare kare görüntüyle seçti, toplu yayın istedi. `js/gecis.js` (yeni) ve görüntüleyici:
+- **Görüntüleyici açılış/kapanış:** dokunulan küçük resmin kopyası yerinden büyüyerek tablonun yerine uçar (340 ms); kapanınca küçülerek yerine döner. Başka esere geçildiyse ya da küçük resim ekranda değilse yalnız söner; iPhone'un kenardan geri hareketinde (iOS kendi kaymasını yapar) uçuş yok.
+- **Aşağı çekince küçülür:** tablo parmağı izler, %45'e kadar küçülür; zemin şeffaflaşır, alttaki sayfa görünür; düğmeler söner. Bırakınca eskisi gibi (120 px'ten fazlaysa kapanır, uçarak yerine döner).
+- **Sayfa kayarak gelir:** derine inişte yeni sayfa sağdan, eski sayfa (içeriğin kopyası) hafifçe sola çekilip kararır; uygulamanın geri okuyla dönüşte eski sayfa sağa çekilir, alttaki aydınlanır (yeni sayfa kaydırılmaz: içindeki sabit öğeler ve geri yüklenen kaydırma yeri bozulmasın). Sekme değişiminde ve iOS'un geri hareketinde yok.
+- **Kart büyüyerek açılır:** Başyapıtlar ve Konular kartı (yalnız gidilen adres kartın kendi adresiyse) ekranı kaplayacak kadar büyür, sayfa içinden belirir.
+- **Basınca çöker:** eser, konu/akım kartı ve satırlar basılıyken %96,5 (ayrı `scale` özelliği; öğenin kendi transform'u bozulmaz), bırakınca yaylanır.
+- **Sekme çubuğu camı:** daha şeffaf, arkasını doygun süzen (blur 22, saturate 1,9), kenarında ışık kırılması olan cam; seçili sekmenin hapı da cam. "Saydamlığı azalt" açıksa eski zemin.
+- Hareket azaltma açıksa hiçbiri yok. Otomatik testlerde de kapalı (`navigator.webdriver`; geçiş sırasında eski sayfanın kopyası öğeleri bir an iki kez gösterir); `window.__atlasGecis` ile açan iki uçtan uca test akışın bozulmadığını sınar. Bütün takım geçişler açıkken de koşturuldu: 6 başarısızlığın hepsi kopyanın 380 ms boyunca öğeleri iki kez göstermesi (kullanıcıya etkisi yok; kopya dokunulmaz, kimliksiz).
+- Yayından önce denetimde düzeltilenler: aşağı çekme zemini geçersiz renk yazımı yüzünden baştan yarı şeffaftı; açılışta yüklenmeden sonraki esere geçilince uçan kopya 2,5 sn üstte kalabiliyordu; çekme stili düğmelerin diğer saydamlık hâllerini eziyordu; sayfa kopyasında yinelenen kimlikler; kaydırırken dokunulan kartın başka gidişte büyümesi; geri dönüşte sayfanın sabit öğelerinin kayması.

@@ -13317,3 +13317,131 @@ main[data-hareket='cevap']:has(.sonuc[data-dogru='false']) .soru-resim img.yukle
     display: none;
   }
 }
+
+/* ===== İş 70 · Görüntüleyici açılış/kapanış geçişi ===== */
+.gor-ucan {
+  position: fixed;
+  z-index: 101;
+  object-fit: cover;
+  transform-origin: 0 0;
+  pointer-events: none;
+  will-change: transform;
+}
+/* açılırken zemin ve düğmeler biraz daha yavaş belirir; tablo uçarken arka planın açılması görünür */
+.gor.gor-aciliyor {
+  animation-duration: 0.3s;
+}
+/* sayfa kayması ve kart büyümesi (js/gecis.js): eski sayfanın / kartın kopyası */
+.gecis-kopya {
+  position: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  max-width: none;
+  min-height: 0;
+}
+.gecis-alt,
+.gecis-ust {
+  background-color: var(--bg);
+  background-image: var(--doku);
+  background-size: 3px 3px;
+}
+.gecis-alt {
+  z-index: 4;
+}
+.gecis-ust {
+  z-index: 7;
+  box-shadow: -14px 0 34px rgba(0, 0, 0, 0.45);
+}
+#uygulama.gecis-ust-sayfa {
+  z-index: 6;
+  background-color: var(--bg);
+  background-image: var(--doku);
+  background-size: 3px 3px;
+  box-shadow: -14px 0 34px rgba(0, 0, 0, 0.45);
+}
+#uygulama.gecis-alt-sayfa {
+  z-index: 3;
+}
+.gecis-kart {
+  z-index: 8;
+}
+/* geçiş sürerken yana taşan sayfa yatay kaydırma açmasın */
+html.gecis-suruyor {
+  overflow-x: hidden;
+}
+/* görüntüleyicide aşağı çekme: zemin şeffaflaşır (alttaki sayfa görünür), düğmeler ve yazılar söner */
+.gor {
+  background: rgba(var(--bg-rgb), calc(1 - var(--cek, 0) * 0.92));
+  transition: background-color 0.22s ease-out;
+}
+.gor.cekiliyor {
+  transition: none;
+}
+.gor.cekiliyor:not(.sade) :is(.gor-ok, .gor-kapat, .gor-isaret, .gor-alt) {
+  opacity: calc(1 - var(--cek, 0) * 3);
+}
+/* çekerken tablo sahnenin dışına taşabilsin (aşağı indikçe kesilmesin), açıklama panelinin üstünde kalsın */
+.gor.cekiliyor .gor-sahne {
+  overflow: visible;
+  z-index: 2;
+}
+.gor.cekiliyor .gor-sahne::before {
+  opacity: calc(var(--isik-op, 0) * 0.55 * (1 - var(--cek, 0)));
+}
+/* ===== İş 70 · Basınca çöker: kartlar, eserler ve satırlar parmağın altında hafifçe küçülür, bırakınca yaylanır ===== */
+/* (düğmeler, vitrin kartları ve kitaplar zaten kendi basılma hâlleriyle; ayrı `scale` özelliği öğenin kendi transform'unu bozmaz) */
+:is(.eser, .konu-kart, .akim-kart, .satir, .kart) {
+  transition: scale 0.4s cubic-bezier(0.3, 1.7, 0.5, 1);
+}
+:is(.eser, .konu-kart, .akim-kart, .satir, .kart):active {
+  scale: 0.965;
+  transition-duration: 0.12s;
+  transition-timing-function: ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.eser, .konu-kart, .akim-kart, .satir, .kart):active {
+    scale: none;
+  }
+}
+/* ===== İş 70 · Sekme çubuğu camı (iOS'un sıvı camı gibi): daha şeffaf, arkasındaki tablolar renkleriyle süzülür,
+   kenarlarında ışık kırılır; seçili sekmenin hapı da cam ===== */
+.sekmeler {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 45%),
+    rgba(var(--bg-rgb), 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow:
+    0 18px 40px -12px rgba(0, 0, 0, 0.6),
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.06),
+    inset 0 0 0 0.5px rgba(var(--vurgu-rgb), 0.35);
+  -webkit-backdrop-filter: blur(22px) saturate(1.9) brightness(1.05);
+  backdrop-filter: blur(22px) saturate(1.9) brightness(1.05);
+}
+:root[data-tema='sepya'] .sekmeler,
+:root[data-tema='acik'] .sekmeler {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1) 50%),
+    rgba(var(--bg-rgb), 0.5);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 16px 36px -14px rgba(60, 40, 20, 0.45),
+    0 2px 6px rgba(60, 40, 20, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85),
+    inset 0 0 0 0.5px rgba(var(--vurgu-rgb), 0.3);
+}
+.sekme-isaret {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.04) 60%),
+    rgba(var(--vurgu-rgb), 0.24);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 0 0 1px rgba(var(--vurgu-rgb), 0.45),
+    0 4px 14px -4px rgba(var(--vurgu-rgb), 0.55);
+}
+@media (prefers-reduced-transparency: reduce) {
+  .sekmeler {
+    background: var(--tab-bg);
+  }
+}

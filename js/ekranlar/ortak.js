@@ -1,4 +1,5 @@
 // Ekranların ortak parçaları: uygulama durumu (d), ekran öğesi, küçük yardımcılar, resim rengi, bildirim, sekme çubuğu, başlık ve çizim.
+import { gecisHazirla, geriDugmesiBasildi } from '../gecis.js';
 import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
@@ -435,8 +436,10 @@ export function git(hash) {
 }
 
 export function geri(yedek = '#/') {
-  if (d.yigin.length > 1) history.back();
-  else {
+  if (d.yigin.length > 1) {
+    geriDugmesiBasildi();
+    history.back();
+  } else {
     d.yigin = [];
     location.replace(yedek);
   }
@@ -526,13 +529,16 @@ function yerineDon(hedef) {
 
 export function ciz(html, hareket) {
   const adres = location.hash || '#/';
-  ekran.dataset.hareket = hareket ?? (adres !== sonCizilenAdres ? 'giris' : '');
+  // İş 70: yeni adreste sayfa geçişi (kayma ya da kart büyümesi); eski içeriğin kopyası içerik değişmeden alınır
+  const gecis = adres !== sonCizilenAdres ? gecisHazirla(ekran) : null;
+  ekran.dataset.hareket = hareket ?? (adres !== sonCizilenAdres ? (gecis ? '' : 'giris') : '');
   sonCizilenAdres = adres;
   ekran.classList.remove('perde');
   ekran.innerHTML = html;
   ekran.style.paddingBottom = '';
   if (geriHedefi && geriHedefi.adres === adres) yerineDon(geriHedefi);
   else window.scrollTo(0, 0);
+  if (gecis) gecis();
   const h = ekran.querySelector('h1');
   if (h) h.focus({ preventScroll: true });
   if (ekran.querySelector('.ad-son, .soru-baslik h2')) {
