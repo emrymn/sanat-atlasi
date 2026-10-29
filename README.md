@@ -123,7 +123,11 @@ Görseller Wikimedia Commons'tan, ek eser listeleri Wikidata'dan gelir. Bir eser
 
 GitHub Pages sitesi en çok 1 GB olabilir; görsel kopyaları bu sınırın çoğunu dolduruyordu. Eserlerin **en büyük kopyaları** (uzun kenar 4096 px, en yüksek kalite) ve 1280 px'lik kopyalar Cloudflare R2'de durur (ücretsiz katman: 10 GB, indirme ücreti yok). Uygulama görüntüleyicide önce 1280'lik kopyayı gösterir, en büyük kopya arkada iner ve gelince yerine geçer.
 
-Kurulum (bir kez, Cloudflare panelinde): R2'de `sanat-atlasi` kovası → Settings → **Public Development URL** açık; R2 → **Manage API tokens** → **Create Account API token** (Object Read & Write, yalnız `sanat-atlasi`).
+Kurulum (bir kez, Cloudflare panelinde): R2'de `sanat-atlasi` kovası → Settings → **Public Development URL** açık; R2 → **Manage API tokens** → **Create Account API token** (Object Read & Write, yalnız `sanat-atlasi`). Bu jeton kova ayarını değiştiremediği için CORS iznini elle ver: kova → Settings → **CORS Policy** → Add → şunu yapıştır → Save:
+
+```
+[{"AllowedOrigins":["https://emrymn.github.io","http://localhost:4173"],"AllowedMethods":["GET","HEAD"],"AllowedHeaders":["*"],"MaxAgeSeconds":86400}]
+```
 
 Mac'te (depo kökünde):
 
