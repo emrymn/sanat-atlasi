@@ -527,15 +527,16 @@ test.describe('İş 70: geçişler açıkken akış bozulmaz', () => {
     page.on('pageerror', (e) => hatalar.push(e.message));
     const temiz = async () => {
       await expect(page.locator('.gecis-kopya, .gor-ucan')).toHaveCount(0, { timeout: 4000 });
+      await expect.poll(() => page.evaluate(() => document.documentElement.classList.contains('gecis-suruyor'))).toBe(false);
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
-      expect(await page.evaluate(() => document.documentElement.classList.contains('gecis-suruyor'))).toBe(false);
     };
     await page.goto('./#/gozat');
     await page.locator('a[href^="#/akim/"]').first().waitFor();
     // ileri: kayarak gelir
     await page.locator('a[href^="#/akim/"]').first().tap();
-    await expect(page.locator('.gecis-kopya')).toHaveCount(1);
     await expect(page).toHaveURL(/#\/akim\//);
+    // İş 70b: kopyasız (uzun sayfada kopya iPhone'u kasıyordu)
+    expect(await page.locator('.gecis-kopya').count()).toBe(0);
     await temiz();
     expect(await page.locator('#uygulama').evaluate((e) => getComputedStyle(e).transform)).toBe('none');
     // geri düğmesi: eski sayfa sağa çekilir
@@ -588,5 +589,33 @@ test.describe('İş 70: geçişler açıkken akış bozulmaz', () => {
     await expect(page.locator('.gor-ucan')).toHaveCount(0, { timeout: 1500 });
     const zemin = await page.locator('.gor').evaluate((e) => getComputedStyle(e).backgroundColor);
     expect(zemin).toBe('rgb(11, 10, 11)');
+  });
+});
+
+// İş 71: sekme çubuğunda sekmelerin arasına, kenar boşluğuna ya da parmak çubuktan taşarak yapılan dokunuş da algılanır
+test.describe('İş 71: sekme çubuğu dokunuşları', () => {
+  test.use({ hasTouch: true, isMobile: true });
+
+  test('kenar boşluğuna ve sekme arasına dokunuş en yakın sekmeyi açar; açık sekmeye dokunmak başa döner', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/');
+    const nav = page.locator('#sekmeler');
+    await nav.waitFor();
+    const r = await nav.boundingBox();
+    const linkler = page.locator('#sekmeler a');
+    const kutu = async (i) => linkler.nth(i).boundingBox();
+    // Galeri (3.) sekmesinin hizasında, çubuğun üst kenar boşluğuna (bağlantının dışı)
+    const g = await kutu(2);
+    await page.touchscreen.tap(g.x + g.width / 2, r.y + 2);
+    await expect(page).toHaveURL(/#\/gozat$/);
+    // 4. ile 5. sekmenin tam arasına yakın, alt kenar boşluğuna: en yakını
+    const a4 = await kutu(3);
+    await page.touchscreen.tap(a4.x + a4.width - 3, r.y + r.height - 2);
+    await expect(linkler.nth(3)).toHaveAttribute('aria-current', 'page');
+    // tek dokunuş tek gezinme (ardından gelen tıklama ikinci kez gezinmez)
+    const once = await page.evaluate(() => history.length);
+    await page.touchscreen.tap((await kutu(0)).x + 20, r.y + r.height / 2);
+    await expect(page).toHaveURL(/#\/$/);
+    expect(await page.evaluate(() => history.length)).toBe(once + 1);
   });
 });

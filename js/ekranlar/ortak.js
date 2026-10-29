@@ -378,6 +378,12 @@ function sekmeSurukle(nav) {
   };
   nav.addEventListener('pointerdown', (e) => {
     basla = { x: e.clientX, i: Number(nav.style.getPropertyValue('--i')) || 0, kaydi: false };
+    // parmak çubuktan taşsa da kalkışı çubuk alır (dokunuş kaybolmasın)
+    try {
+      nav.setPointerCapture(e.pointerId);
+    } catch (err) {
+      /* desteklenmiyor */
+    }
   });
   nav.addEventListener('pointermove', (e) => {
     if (!basla || (Math.abs(e.clientX - basla.x) < 8 && !basla.kaydi)) return;
@@ -395,15 +401,26 @@ function sekmeSurukle(nav) {
     basla = null;
     nav.classList.remove('suruklen');
     nav.style.removeProperty('--surukle');
-    if (!kaydi) return;
+    // İş 71: dokunuş da burada işlenir (yalnız sürükleme değil). Sekmelerin arasına, çubuğun kenar boşluğuna ya da
+    // parmak biraz kayıp çubuğun dışına denk gelen dokunuşlar hiçbir bağlantıya düşmediği için yok sayılıyordu;
+    // artık en yakın sekme açılır. Ardından gelen tıklama ikinci kez gezinmez.
+    if (!kaydi) {
+      const r = nav.getBoundingClientRect();
+      if (e.clientY < r.top - 24 || e.clientY > r.bottom + 24 || e.clientX < r.left - 24 || e.clientX > r.right + 24) return;
+    }
     nav.dataset.yeniKaydi = '1';
     setTimeout(() => delete nav.dataset.yeniKaydi, 400);
     const a = nav.querySelectorAll('a')[sekmeAt(e.clientX)];
     if (a) {
       e.preventDefault();
-      if (location.hash !== a.getAttribute('href') && !(a.getAttribute('href') === '#/' && (location.hash === '' || location.hash === '#/'))) {
-        sekmeHedefi = a.getAttribute('href');
-        location.hash = a.getAttribute('href');
+      const href = a.getAttribute('href');
+      const burada = location.hash === href || (href === '#/' && (location.hash === '' || location.hash === '#/'));
+      if (!burada) {
+        sekmeHedefi = href;
+        location.hash = href;
+      } else if (!kaydi) {
+        // açık sekmenin ana ekranındayken yeniden dokunmak: en başa (iPhone gibi)
+        window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
       }
     }
   };

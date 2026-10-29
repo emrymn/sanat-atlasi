@@ -1460,3 +1460,13 @@ Emre her birini kare kare görüntüyle seçti, toplu yayın istedi. `js/gecis.j
 - **Sekme çubuğu camı:** daha şeffaf, arkasını doygun süzen (blur 22, saturate 1,9), kenarında ışık kırılması olan cam; seçili sekmenin hapı da cam. "Saydamlığı azalt" açıksa eski zemin.
 - Hareket azaltma açıksa hiçbiri yok. Otomatik testlerde de kapalı (`navigator.webdriver`; geçiş sırasında eski sayfanın kopyası öğeleri bir an iki kez gösterir); `window.__atlasGecis` ile açan iki uçtan uca test akışın bozulmadığını sınar. Bütün takım geçişler açıkken de koşturuldu: 6 başarısızlığın hepsi kopyanın 380 ms boyunca öğeleri iki kez göstermesi (kullanıcıya etkisi yok; kopya dokunulmaz, kimliksiz).
 - Yayından önce denetimde düzeltilenler: aşağı çekme zemini geçersiz renk yazımı yüzünden baştan yarı şeffaftı; açılışta yüklenmeden sonraki esere geçilince uçan kopya 2,5 sn üstte kalabiliyordu; çekme stili düğmelerin diğer saydamlık hâllerini eziyordu; sayfa kopyasında yinelenen kimlikler; kaydırırken dokunulan kartın başka gidişte büyümesi; geri dönüşte sayfanın sabit öğelerinin kayması.
+
+## İş 70b · Kasma ve iki dokunuş; açılış yavaş (2026-10-29, v1.52.1)
+
+Emre: galeride döneme tek dokunuşla girilmiyor, uygulama kasıyor, alttaki sekmeler bazen geçmiyor; büyüyerek açılış çok hızlı.
+- **Kasma:** sayfa kayması eski sayfanın kopyasını (cloneNode, bütün sayfa) kullanıyordu; Göz At gibi uzun, resimli sayfada ana iş parçacığını kilitliyordu (4× yavaşlatılmış Chromium'da gezinme başına 200–330 ms uzun görev; sonra ~0). Kopya kaldırıldı: yalnız yeni sayfa sağdan kayarak belirir. Sekme çubuğu camının bulanıklığı 22→16 px, doygunluk 1,9→1,6.
+- **Açılış:** görüntüleyicinin küçük resimden açılışı 340→620 ms, iOS yay eğrisi (`cubic-bezier(0.32, 0.72, 0, 1)`); kart büyümesi 640 ms aynı eğriyle. Kapanış 340 ms kaldı. Emre'ye gerçek hızda GIF'le gösterildi.
+
+## İş 71 · Sekme çubuğu dokunuşları kayboluyordu (2026-10-29, v1.52.1)
+
+Sekmelerin arasına, çubuğun 6 px kenar boşluğuna ya da parmak biraz kayıp çubuğun dışında kalkınca dokunuş hiçbir bağlantıya düşmüyor, yok sayılıyordu. Artık dokunuş da sürükleme gibi `pointerup`'ta işlenir (işaretçi yakalamalı): en yakın sekme açılır, açık sekmeye dokunmak başa kaydırır; ardından gelen tıklama ikinci kez gezinmez. Uçtan uca test (düzeltmeden önce başarısız).

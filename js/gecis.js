@@ -75,33 +75,21 @@ function kopyala(el) {
   return { c, r };
 }
 
+// İş 70b: kopyasız. Eski sayfanın kopyası uzun sayfalarda (Göz At) iPhone'u kasıyordu: dokunuşlar gecikiyor, ikinci
+// dokunuş gerekiyor, sekme çubuğu tepki vermiyordu. Artık yalnız yeni sayfa kayarak ve belirerek gelir (tek öğe, ucuz).
 function sayfaKaydir(ekran, yon) {
-  const { c } = kopyala(ekran);
-  c.style.height = '';
-  c.dataset.hareket = '';
-  c.classList.add(yon === 'ileri' ? 'gecis-alt' : 'gecis-ust');
-  document.body.appendChild(c);
   return () => {
-    ekran.classList.add(yon === 'ileri' ? 'gecis-ust-sayfa' : 'gecis-alt-sayfa');
     document.documentElement.classList.add('gecis-suruyor');
-    const bitir = () => {
-      c.remove();
-      ekran.classList.remove('gecis-ust-sayfa', 'gecis-alt-sayfa');
-      document.documentElement.classList.remove('gecis-suruyor');
-    };
-    const ayar = { duration: SURE, easing: EGRI, fill: 'both' };
-    let a;
-    if (yon === 'ileri') {
-      c.animate([{ transform: 'none', filter: 'brightness(1)' }, { transform: 'translateX(-28%)', filter: 'brightness(0.7)' }], ayar);
-      a = ekran.animate([{ transform: 'translateX(100%)' }, { transform: 'none' }], ayar);
-    } else {
-      // geri: eski sayfa sağa çekilir, alttaki önceki sayfa karanlıktan aydınlanır (yeni sayfa kaydırılmaz:
-      // içindeki sabit öğeler ve geri yüklenen kaydırma yeri bozulmasın)
-      a = c.animate([{ transform: 'none' }, { transform: 'translateX(100%)' }], ayar);
-      ekran.animate([{ filter: 'brightness(0.7)' }, { filter: 'brightness(1)' }], { duration: SURE, easing: EGRI });
-    }
+    const ileri = yon === 'ileri';
+    const a = ekran.animate(
+      [
+        { transform: `translateX(${ileri ? 32 : -18}%)`, opacity: 0.35 },
+        { transform: 'none', opacity: 1 },
+      ],
+      { duration: ileri ? SURE : SURE - 60, easing: EGRI },
+    );
+    const bitir = () => document.documentElement.classList.remove('gecis-suruyor');
     a.finished.then(bitir, bitir);
-    if (yon === 'ileri') a.finished.then(() => a.cancel(), () => {});
   };
 }
 
@@ -113,7 +101,8 @@ function kartBuyut(ekran, k) {
   return () => {
     const W = innerWidth;
     const H = innerHeight;
-    const ayar = { duration: SURE + 80, easing: EGRI, fill: 'both' };
+    // kart büyümesi görüntüleyicinin açılışıyla aynı hızda (yavaş, yay eğrisi)
+    const ayar = { duration: 640, easing: 'cubic-bezier(0.32, 0.72, 0, 1)', fill: 'both' };
     // kart kopyası yerinden ekranı kaplayacak kadar büyür ve söner; yeni sayfa aynı anda içinden belirir
     const olcek = `translate(${-r.left}px, ${-r.top}px) scale(${W / r.width}, ${H / r.height})`;
     c.style.transformOrigin = '0 0';
