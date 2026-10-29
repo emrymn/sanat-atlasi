@@ -7,8 +7,8 @@ iner. 4096 px üst sınır iPhone'dan: daha büyük görseli Safari açamaz ya d
 Müzelerin en büyük boyutları (İş 58c; adresler denenerek doğrulandı):
   The Met       /web-large/ yerine /original/ (özgün tarama, ör. 2697×3542)
   Cleveland     açık erişim API'sinin verdiği print (JPEG, ~3400 px) ya da yeterince büyük değilse full (TIFF, özgün)
-  NGA           IIIF !4096,4096 (sunucunun üst sınırı 4096)
-  AIC           IIIF !4096,4096 → 3000 → 1686 → 843 (müze büyük boyutu her eserde vermeyebilir)
+  NGA, AIC      IIIF: önce info.json'dan özgün boy, sonra en çok onun kadar (sunucu küçüğü büyütür), 4096 sınırıyla;
+                verilmezse 3000 → 1686 → 843
 Commons'taki özgünü küçük olan eserlerde aynı eserin müze kopyası da aranır: Wikidata'da eserin kendi kaydındaki müze
 numarası (The Met P3634, AIC P4610, NGA P4683, Cleveland envanter numarası P217 + koleksiyon) ile, yalnız müzenin
 kamu malı / CC0 dediği görseller. Tahmin yok: numara eşleşmezse ya da görselin en/boy oranı uygulamadakinden farklıysa
@@ -229,8 +229,30 @@ def met_aday(no):
     return [{'u': j['primaryImage'], 'boy': None}]
 
 
+def iiif_olcu(taban):
+    j = json_getir(f'{taban}/info.json')
+    try:
+        return int(j['width']), int(j['height'])
+    except (TypeError, KeyError, ValueError):
+        return None
+
+
+def iiif_adaylari(taban, olcu=None):
+    """IIIF görseli, asla büyütmeden: sunucular `!w,h` isteğinde küçük görseli büyütüyor (İş 58e; NGA'da 4094 → 4096
+    denendi). Özgün boy (info.json ya da müzenin verdiği) en çok 4096'ya, yedekler daha küçük; boy bilinmiyorsa `max`
+    (tanımı gereği özgünden büyük olamaz) ve 843."""
+    olcu = olcu or iiif_olcu(taban)
+    if not olcu:
+        return [{'u': f'{taban}/full/max/0/default.jpg', 'boy': None}, {'u': f'{taban}/full/843,/0/default.jpg', 'boy': None}]
+    g, y = olcu
+    uzun = max(g, y)
+    s = min(EN_BUYUK, uzun)
+    return [{'u': f'{taban}/full/!{s},{s}/0/default.jpg', 'boy': s}] + [
+        {'u': f'{taban}/full/{round(b * g / uzun)},/0/default.jpg', 'boy': b} for b in (3000, 1686, 843) if b < s]
+
+
 def aic_aday(no=None, kimlik=None):
-    boy = None
+    olcu = None
     if no is not None:
         j = json_getir(f'https://api.artic.edu/api/v1/artworks/{urllib.parse.quote(str(no))}?fields=id,image_id,is_public_domain,thumbnail')
         d = (j or {}).get('data') or {}
@@ -239,10 +261,8 @@ def aic_aday(no=None, kimlik=None):
         kimlik = d['image_id']
         t = d.get('thumbnail') or {}
         if t.get('width') and t.get('height'):
-            boy = max(t['width'], t['height'])
-    taban = f'https://www.artic.edu/iiif/2/{kimlik}/full'
-    return [{'u': f'{taban}/!{EN_BUYUK},{EN_BUYUK}/0/default.jpg', 'boy': min(EN_BUYUK, boy) if boy else EN_BUYUK}] + [
-        {'u': f'{taban}/{b},/0/default.jpg', 'boy': b} for b in (3000, 1686, 843) if not boy or b < boy]
+            olcu = (int(t['width']), int(t['height']))
+    return iiif_adaylari(f'https://www.artic.edu/iiif/2/{kimlik}', olcu)
 
 
 def cma_aday(envanter):
@@ -273,13 +293,13 @@ def nga_tablosu():
         if r.get('openaccess') == '1' and r.get('viewtype') == 'primary' and r.get('iiifurl'):
             onceki = tablo.get(r['depictstmsobjectid'])
             if not onceki or int(r.get('sequence') or 0) < onceki[2]:
-                tablo[r['depictstmsobjectid']] = (r['iiifurl'], max(int(r['width'] or 0), int(r['height'] or 0)), int(r.get('sequence') or 0))
+                olcu = (int(r['width'] or 0), int(r['height'] or 0))
+                tablo[r['depictstmsobjectid']] = (r['iiifurl'], olcu if min(olcu) > 0 else None, int(r.get('sequence') or 0))
     return tablo
 
 
-def nga_aday(iiif, boy=None):
-    return [{'u': f'{iiif}/full/!{EN_BUYUK},{EN_BUYUK}/0/default.jpg', 'boy': min(EN_BUYUK, boy) if boy else EN_BUYUK},
-            {'u': f'{iiif}/full/!2048,2048/0/default.jpg', 'boy': 2048}]
+def nga_aday(iiif, olcu=None):
+    return iiif_adaylari(iiif, olcu)
 
 
 def kendi_adaylari(g, commons_boy):
@@ -288,7 +308,8 @@ def kendi_adaylari(g, commons_boy):
     if k == 'commons':
         return [{'u': u, 'boy': b} for u, b in commons_adresleri(g['d'], commons_boy.get(g['d']))]
     if k == 'aic':
-        return aic_aday(kimlik=g['i'])
+        m = re.search(r'/artworks/(\d+)', g.get('s') or '')
+        return aic_aday(no=m.group(1)) if m else aic_aday(kimlik=g['i'])
     if k == 'nga':
         return nga_aday(g['i'])
     if k == 'met' and g.get('u'):
@@ -307,8 +328,8 @@ def muze_adaylari(numaralar, nga):
     if numaralar.get('aic'):
         adaylar += [dict(a, k='aic') for a in aic_aday(no=numaralar['aic'])]
     if numaralar.get('nga') and numaralar['nga'] in nga:
-        iiif, boy, _ = nga[numaralar['nga']]
-        adaylar += [dict(a, k='nga') for a in nga_aday(iiif, boy)]
+        iiif, olcu, _ = nga[numaralar['nga']]
+        adaylar += [dict(a, k='nga') for a in nga_aday(iiif, olcu)]
     if numaralar.get('cma'):
         adaylar += [dict(a, k='cma') for a in cma_aday(numaralar['cma'])]
     return adaylar
@@ -393,6 +414,28 @@ def main():
                 kaynaklar.pop(ad, None)
             kaynaklar_yolu.write_text(json.dumps(kaynaklar, ensure_ascii=False, sort_keys=True))
             print(f'Düzeltme: büyütülmüş olabilecek {len(sil)} kopya silindi, özgün boyunda yeniden inecek', flush=True)
+        isaret.write_text('1')
+    # İş 58e: IIIF sunucuları (NGA, AIC) 4096'dan küçük görseli 4096'ya büyütüyordu. Bir kez: özgünü 4096'dan küçük olan
+    # NGA/AIC kopyaları ve müzeden (NGA/AIC) gelen kopyalar silinip özgün boyunda yeniden iner.
+    isaret = BILGI / 'iiif_duzeltildi'
+    if not isaret.exists():
+        sil = []
+        for a, ad in isler:
+            g = gorseller[a][0]
+            if not (HEDEF / f'{ad}.jpg').exists():
+                continue
+            if kaynaklar.get(ad) in ('aic', 'nga'):
+                sil.append(ad)
+            elif g['k'] in ('aic', 'nga'):
+                olcu = iiif_olcu(f"https://www.artic.edu/iiif/2/{g['i']}" if g['k'] == 'aic' else g['i'])
+                if olcu and max(olcu) < EN_BUYUK:  # boyu öğrenilemezse dokunulmaz (iyi bir kopyayı küçüğüyle değiştirmesin)
+                    sil.append(ad)
+        for ad in sil:
+            (HEDEF / f'{ad}.jpg').unlink(missing_ok=True)
+            kaynaklar.pop(ad, None)
+        kaynaklar_yolu.write_text(json.dumps(kaynaklar, ensure_ascii=False, sort_keys=True))
+        if sil:
+            print(f'Düzeltme: NGA/AIC sunucusunun büyüttüğü olabilecek {len(sil)} kopya silindi, özgün boyunda yeniden inecek', flush=True)
         isaret.write_text('1')
     kalan = [(a, ad) for a, ad in isler if not (HEDEF / f'{ad}.jpg').exists()]
     print(f'{len(isler)} görsel · {len(isler) - len(kalan)} zaten inmiş · {len(kalan)} inecek', flush=True)

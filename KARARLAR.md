@@ -1379,3 +1379,12 @@ Emre'nin sayımı: 1726 kopyanın hepsi tam 4096 px. Oysa 893 eserin Commons öz
 - Tek seferlik düzeltme (`.bilgi/buyutme_duzeltildi`): yalnız özgünü 4096 ve üstü olduğu bilinen Commons kopyaları kalır; gerisi (küçük özgünler, müzeler, müzeden gelenler) silinip yeniden iner. Aynı komut; ayrı adım yok.
 - `r2_yukle.py`: uzun kenarı 1600 px'ten küçük olan en büyük kopya yüklenmez ve listeye girmez (1280'lik kopyadan anlamlı büyük değil; telefon iki kez indirmesin).
 - Deneme: gerçek `sips` gibi büyüten sahte `sips` ile; küçük özgünler kendi boyunda kaldı, büyükler 4096'ya indi, ikinci çalıştırma hiçbir şey indirmedi.
+
+## İş 58e · Baştan sona denetim (2026-10-29, v1.49.2)
+
+Emre: "bu inerken her şeyi tekrar kontrol et". İndirme sürerken bütün zinciri (indirme, yükleme, R2, uygulama, service worker) yeniden denetledim:
+- **IIIF sunucuları da büyütüyor:** NGA'da 4094 px'lik görsele `!4096,4096` isteği 4096 döndü. Artık IIIF'te önce özgün boy (info.json, AIC API'si ya da NGA tablosu) alınır, en çok o kadar istenir; yedek boylar özgünden küçük. Tek seferlik düzeltme (`.bilgi/iiif_duzeltildi`): özgünü 4096'dan küçük NGA/AIC kopyaları ve müzeden (NGA/AIC) gelenler silinip yeniden iner; boyu öğrenilemeyene dokunulmaz. AIC kendi kayıtları artık müze API'sinden (eser sayfası numarası) boyuyla birlikte.
+- **R2:** CORS doğru (Access-Control-Allow-Origin site adresi), Content-Type ve Content-Length geliyor, r2.dev önbelleklemiyor (aynı adla yeniden yükleme sorun değil; telefon henüz hiçbirini görmedi, `gorsel_kaynagi.json` gönderilmedi).
+- **r2_yukle.py:** aynı boyda ama içeriği değişmiş dosya (yeniden inenler) MD5 ile yakalanır (önceden yalnız boy karşılaştırılıyordu); listede olmayan eski en büyük kopyalar kovadan silinir (büyütülmüş eskiler yer kaplamasın); toplam 9,5 GB'ı geçerse yüklemez (ücretsiz katman 10 GB). Sahte S3 istemcisiyle denendi.
+- **Service worker:** en büyük kopyalar (3–15 MB) 700 MB'lık ortak görsel önbelleğine giriyordu; birkaç tablo büyütmek çevrimdışı indirilmiş 1280'lik ve küçük kopyaları itecekti. Artık ayrı `atlas-devasa` önbelleğinde, en son açılan 30 tanesi (ekleme sırasıyla eskisi silinir). Uçtan uca test: büyük kopya ayrı önbellekte, ortak önbellekte değil.
+- Denetlenip sorun bulunmayanlar: EXIF yönü (Safari ve Chrome `<img>`de uygular), özgün JPEG'ler (dokunulmadan; CMYK Safari'de açılır), Met `original`, Cleveland TIFF → JPEG (yalnız küçültme), Commons 3840 küçük resmi (Wikimedia özgünden büyük üretmez; özgün ≤ 3840 genişlikse özgün alınıyor), görüntüleyicide 4096 px (16,7 MP; iOS sınırının altında).

@@ -287,6 +287,8 @@ test('görüntüleyici: en büyük kopya R2\'den arkada iner ve yerine geçer; y
     r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)), headers: { 'access-control-allow-origin': '*' } });
   });
   await page.goto('./#/sanatci/giotto-di-bondone');
+  // service worker sayfayı devralmadan açılırsa büyük kopya onun önbelleğine uğramaz (aşağıdaki denetim için)
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
   await page.locator('.eser').first().click();
   const resim = page.locator('.gor-resim');
   await expect(resim).toHaveAttribute('src', /pub-deneme\.r2\.dev\/d\/[0-9a-f]+\.jpg$/);
@@ -295,4 +297,7 @@ test('görüntüleyici: en büyük kopya R2\'den arkada iner ve yerine geçer; y
   await expect(page.locator('[data-test="devasa-kaynak"]')).toHaveText('büyük kopya: The Met · CC0');
   // yalnız açılan eserin büyük kopyası; komşularınki değil (aynı adres önbellek atlanırsa iki kez istenebilir)
   expect(new Set(istenen).size).toBe(1);
+  // İş 58e: en büyük kopya service worker'ın ayrı önbelleğinde (1280'lik ve küçük kopyaları itmesin)
+  await expect.poll(() => page.evaluate(async () => (await (await caches.open('atlas-devasa')).keys()).map((r) => r.url))).toEqual([istenen[0]]);
+  expect(await page.evaluate(async (u) => !!(await (await caches.open('atlas-resim-2')).match(u)), istenen[0])).toBe(false);
 });
