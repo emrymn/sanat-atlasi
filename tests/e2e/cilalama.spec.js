@@ -492,3 +492,14 @@ test('İş 66: durum hapı portrenin üstünde; cevapsız ilerlemede boş grafik
   const b = page.locator('.salon-raf-yazi b').first();
   expect(await b.evaluate((e) => getComputedStyle(e).whiteSpace)).toBe('normal');
 });
+
+// İş 68: cevap verilince tablo da tepki verir (doğruda yaldız ışığı, yanlışta sarsılma)
+test('İş 68: doğru/yanlış anında tablonun animasyonu', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/pekistir/karisik');
+  await page.locator('.soru-resim img.yuklendi').waitFor();
+  await page.locator('.secenek').first().click();
+  const dogru = await page.locator('.sonuc').first().getAttribute('data-dogru');
+  const ad = await page.locator('.soru-resim img').evaluate((i) => getComputedStyle(i).animationName);
+  expect(ad).toBe(dogru === 'true' ? 'tablo-yaldiz' : 'tablo-sars, tablo-sol');
+});
