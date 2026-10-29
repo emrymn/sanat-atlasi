@@ -484,7 +484,6 @@ test('service worker kabuğu sürüm sorgusuyla indirir; sürüm dosyası eskiys
 test('İş 66: durum hapı portrenin üstünde; cevapsız ilerlemede boş grafikler yerine kısa satır; bölüm adı kesilmez', async ({ page, context }) => {
   await agiHazirla(context);
   await page.goto('./#/gunun');
-  await expect(page.locator('[data-test="kurs-durumu"]')).toBeVisible();
   expect(await page.locator('.sanatci-ust').evaluate((e) => getComputedStyle(e).zIndex)).toBe('1');
   await page.goto('./#/ilerleme');
   await expect(page.locator('[data-test="yuk-ozet"]')).toHaveText('Tekrarı gelen sanatçı yok');

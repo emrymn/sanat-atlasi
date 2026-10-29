@@ -17,7 +17,9 @@ test('Günün sanatçısı: ana sayfada kart, bölüm içeriği, aynı gün ayn�
   await kart.locator('.sahne-isim').click();
   await expect(page.getByRole('heading', { name: 'Günün sanatçısı' })).toBeVisible();
   await expect(page.locator('.gunun-ad')).toHaveText(ad);
-  await expect(page.locator('[data-test="kurs-durumu"]')).toHaveText(/Kursta: Konu \d+|Henüz kursta yok|Kurs dışı/);
+  // İş 67: sağ üstteki durum hapı kalktı; kurs bilgisi künye satırında
+  await expect(page.locator('[data-test="kurs-durumu"]')).toHaveCount(0);
+  await expect(page.locator('.gunun .meta')).toContainText(/Konu \d+|Kurs dışı/);
   await expect(page.locator('[data-test="donem"]')).not.toBeEmpty();
   await expect(page.getByText(/^Claude taslağı · /)).toBeVisible();
   await expect(page.locator('.galeri-eser').first()).toBeVisible();
@@ -41,7 +43,7 @@ test('kilitli sanatçı pekiştirmeye eklenir', async ({ page }) => {
     return d.sanatcilar.find((s) => !d.ilerleme.islenen.includes(s.konu) && s.konu > 40).id;
   });
   await page.goto(`./#/gunun/${id}`);
-  await expect(page.locator('[data-test="kurs-durumu"]')).toHaveText(/Henüz kursta yok|Kurs dışı/);
+  await expect(page.locator('.gunun .meta')).toContainText(/Konu \d+|Kurs dışı/);
   await page.getByRole('button', { name: 'Bu sanatçıyı pekiştirmeye ekle' }).click();
   await expect(page.getByText('Eklendi: bu sanatçı bugünkü tekrarlarda.')).toBeVisible();
   const i = await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:ilerleme')));

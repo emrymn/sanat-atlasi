@@ -1436,3 +1436,7 @@ Uygulama iPhone 13 boyutunda (koyu, Sepya, Açık) baştan sona gezildi; otomati
 - **Pekiştir:** "Bugünkü tur", "kart · ~dk" ve tür lejantı tablonun açık bölgesinde okunmuyordu → zemin renginde ince gölge.
 - **İlerleme:** bölüm adları tek satırda kesiliyordu ("Rönesans'tan önce bilinmesi ge…") → iki satıra kadar tam. Cevap yokken "Haftalık doğru oranı" boş eksen, "Önümüzdeki 14 gün" 14 boş çubuk gösteriyordu → kısa satır ("İlk turdan sonra burada", "Tekrarı gelen sanatçı yok").
 - Bakılıp bırakılanlar: Karışık'taki "Kolay" seviyede uzak akımlardan seçenekler (seviye gereği); tamamlanan bölüm halkası koyu temada boş halkaya yakın (maske ortayı kestiği için içine işaret konamıyor).
+
+## İş 67 · Günün sanatçısında sağ üstteki durum hapı kalktı (2026-10-29, v1.50.6)
+
+Emre (önce/sonra görüntüsüyle onaylandı): "Kurs dışı" hapı aynı bilgiyi künye satırıyla ("1755–1842 · Neoklasisizm · Kurs dışı" / "· Konu 3") tekrarlıyordu; kaldırıldı. Kaybolan tek bilgi "Henüz kursta yok" (künyede yalnız konu numarası). Çalışma kuralı: bundan sonra değişiklik yayınlanmadan önce Emre'ye önce/sonra ekran görüntüsü gösterilir, onayıyla gönderilir.
