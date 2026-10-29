@@ -53,11 +53,15 @@ def main():
         region_name='auto',
         config=Config(retries={'max_attempts': 8, 'mode': 'adaptive'}, max_pool_connections=16),
     )
-    # CORS: sitenin kendisi ve yerel deneme sunucusu okuyabilsin
-    s3.put_bucket_cors(
-        Bucket=kova,
-        CORSConfiguration={'CORSRules': [{'AllowedOrigins': [SITE, 'http://localhost:4173'], 'AllowedMethods': ['GET', 'HEAD'], 'AllowedHeaders': ['*'], 'MaxAgeSeconds': 86400}]},
-    )
+    # CORS: sitenin kendisi ve yerel deneme sunucusu okuyabilsin. "Object Read & Write" jetonu kova ayarını
+    # değiştiremez (AccessDenied): o zaman uyarılır, yükleme sürer; izin Cloudflare panelinden bir kez elle verilir (README)
+    cors = [{'AllowedOrigins': [SITE, 'http://localhost:4173'], 'AllowedMethods': ['GET', 'HEAD'], 'AllowedHeaders': ['*'], 'MaxAgeSeconds': 86400}]
+    try:
+        s3.put_bucket_cors(Bucket=kova, CORSConfiguration={'CORSRules': cors})
+    except ClientError as e:
+        print(f"Uyarı: kovaya CORS izni verilemedi ({e.response.get('Error', {}).get('Code')}). Yükleme sürüyor; izni panelden ver:", flush=True)
+        print('  Cloudflare → R2 → sanat-atlasi → Settings → CORS Policy → Add CORS policy → şunu yapıştır → Save', flush=True)
+        print('  ' + json.dumps([{'AllowedOrigins': r['AllowedOrigins'], 'AllowedMethods': r['AllowedMethods'], 'AllowedHeaders': r['AllowedHeaders'], 'MaxAgeSeconds': r['MaxAgeSeconds']} for r in cors]), flush=True)
 
     def yukle(yerel, uzak):
         boy = yerel.stat().st_size
