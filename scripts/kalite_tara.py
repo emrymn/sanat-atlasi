@@ -19,6 +19,7 @@ inceleme sayfası açılır: bulunanlar elimizdekiyle yan yana; beğenilmeyenler
   python3 scripts/kalite_tara.py              # hepsi (yarım saat kadar)
   python3 scripts/kalite_tara.py --dene 10    # yalnız ilk 10 zayıf görsel (önce böyle denemek iyi olur)
   python3 scripts/kalite_tara.py --reddet ad1,ad2   # inceleme sayfasının kopyaladığı komut
+  python3 scripts/kalite_tara.py --sayfa            # yalnız inceleme sayfasını yeniden aç (tarama yok)
 İnceleme sayfasında hepsi iyiyse:
   caffeinate -i python3 scripts/devasa_indir.py
   python3 scripts/r2_yukle.py
@@ -127,7 +128,45 @@ def imza(rgb):
     Renklilik siyah-beyaz baskıyı (kitap sayfası, gravür, eski fotoğraf) ayırır: karma yalnız açık-koyu desenine bakar."""
     gri = [[(r * 299 + g * 587 + b * 114) // 1000 for r, g, b in s] for s in rgb]
     pikseller = [p for s in rgb for p in s]
-    return {'k': karma(gri), 'r': round(sum(max(p) - min(p) for p in pikseller) / max(1, len(pikseller)), 1)}
+    return {'k': karma(gri), 'r': round(sum(max(p) - min(p) for p in pikseller) / max(1, len(pikseller)), 1),
+            'v': [c for p in pikseller for c in p]}  # 9×8 renkler (inceleme sayfasındaki karşılaştırma için)
+
+
+KAMERA = re.compile(r'(^|[_\- ])(IMG|DSC|DSCF|DSCN|PXL|P\d{7}|\d{8}_\d{6})', re.I)
+
+
+def supheler(biz, aday, dosya):
+    """Bulunan görselin elimizdekinden şüpheli farkları: [(neden, ağırlık)]. Ağırlık toplamı 2 ve üstü şüpheli sayılır.
+    Karşılaştırma 9×8 küçük hâllerde: parlaklık, renk kayması (parlaklık eşitlenince kalan fark), renklilik, desen."""
+    l = []
+    if not (biz.get('v') and aday.get('v')):
+        return l
+    gri = lambda v: [(v[i] * 299 + v[i + 1] * 587 + v[i + 2] * 114) / 1000 for i in range(0, len(v), 3)]  # noqa: E731
+    go, ga = gri(biz['v']), gri(aday['v'])
+    lo, la = sum(go) / len(go), sum(ga) / len(ga)
+    if la < lo - 22:
+        l.append(('daha karanlık', 2))
+    elif la > lo + 28:
+        l.append(('daha açık / soluk', 1))
+    olcek = lo / la if la else 1
+    sapma = sum(abs(biz['v'][i] - min(255, aday['v'][i] * olcek)) for i in range(len(biz['v']))) / len(biz['v'])
+    # kanal dengesi (renk kayması: sarımsı, morumsu): ortalama R−G ve B−G farkının değişimi
+    kanal = lambda v, a, b: sum(v[i + a] - v[i + b] for i in range(0, len(v), 3)) / (len(v) / 3)  # noqa: E731
+    kayma = abs(kanal(biz['v'], 0, 1) - kanal(aday['v'], 0, 1)) + abs(kanal(biz['v'], 2, 1) - kanal(aday['v'], 2, 1))
+    if kayma > 18:
+        l.append(('renkleri kaymış (sarımsı/morumsu)', 2))
+    elif sapma > 30:
+        l.append(('renkleri farklı', 1))
+    if biz['r'] >= 18 and aday['r'] < 0.75 * biz['r']:
+        l.append(('soluk', 1))
+    elif aday['r'] > 1.6 * max(biz['r'], 10):
+        l.append(('aşırı doygun', 1))
+    f = fark(biz['k'], aday['k'])
+    if f > 8:
+        l.append((f'kadraj/desen farkı {f}/64', 1))
+    if KAMERA.search(dosya):
+        l.append(('müzede çekilmiş fotoğraf olabilir (dosya adı)', 1))
+    return l
 
 
 def fark(a, b):
@@ -286,39 +325,76 @@ def reddet(adlar):
     print('Yeniden çalıştır: python3 scripts/kalite_tara.py (varsa sıradaki aday denenir, sonra inceleme sayfası açılır)')
 
 
+def kucuk_url(d):
+    yol = commons_yolu(d)
+    uz = d.rsplit('.', 1)[-1].lower()
+    on = 'lossy-page1-' if uz in ('tif', 'tiff') else ''
+    ek = '.jpg' if uz in ('tif', 'tiff') else ''
+    return f'https://upload.wikimedia.org/wikipedia/commons/thumb/{yol}/{on}{KUCUK}px-{yol.rsplit("/", 1)[-1]}{ek}'
+
+
+def degerlendir(sonuc):
+    """Her bulunan için şüpheler: elimizdekinin ve adayın 9×8 imzası (adayınki gerekirse yeniden indirilir)."""
+    yol_h, imzalar = sakli('kalite_imza')
+    sonuc_d = {}
+    for n, (ad, iy) in enumerate(sorted(sonuc.items()), 1):
+        u = kucuk_url(iy['dosya'])
+        if not (imzalar.get(u) or {}).get('v'):
+            veri = getir(u, ikili=True)
+            try:
+                imzalar[u] = veri_imzasi(veri) if veri else None
+            except (OSError, ValueError):
+                imzalar[u] = None
+            yol_h.write_text(json.dumps(imzalar))
+        try:
+            biz = dosya_imzasi(KOK / f'gorseller/k/{ad}.jpg')
+        except (OSError, ValueError):
+            biz = None
+        sonuc_d[ad] = supheler(biz, imzalar[u], iy['dosya']) if biz and imzalar.get(u) else [('karşılaştırılamadı', 2)]
+        if n % 50 == 0:
+            print(f'inceleme: {n}/{len(sonuc)}', flush=True)
+    return sonuc_d
+
+
 def inceleme_sayfasi(sonuc, eser):
-    """Bulunanları elimizdekiyle yan yana gösteren sayfa: beğenilmeyen işaretlenir, reddetme komutu kopyalanır."""
+    """Bulunanları elimizdekiyle yan yana gösteren sayfa. Şüpheliler (karanlık, renk kayması, soluk, müze fotoğrafı…)
+    en üstte ve işaretli gelir, nedeni yazar; gözden geçirilip iyi olanların işareti kaldırılır, komut kopyalanır."""
+    d = degerlendir(sonuc)
+    puan = {ad: sum(a for _, a in d.get(ad, [])) for ad in sonuc}
+    sira = sorted(sonuc, key=lambda ad: (-puan[ad], eser.get(ad, ('', '', ''))[2]))
+    supheli = [ad for ad in sira if puan[ad] >= 2]
     satirlar = []
-    for n, (ad, iy) in enumerate(sorted(sonuc.items(), key=lambda x: eser.get(x[0], ('', '', ''))[2]), 1):
+    for n, ad in enumerate(sira, 1):
+        iy = sonuc[ad]
         baslik = eser.get(ad, ('', '', ad))[2]
-        satirlar.append(f"""<figure><figcaption><label><input type="checkbox" value="{ad}"> {n}. {baslik.replace('<', '&lt;')}</label>
-<small>{iy['onceki']} px → {max(iy['g'], iy['y'])} px</small></figcaption>
+        if n == 1 and supheli:
+            satirlar.append(f'<h2>Şüpheli: {len(supheli)} (işaretli geldi; iyi olanların işaretini kaldır)</h2>')
+        if n == len(supheli) + 1:
+            satirlar.append(f'<h2>İyi görünenler: {len(sira) - len(supheli)} (hızlıca göz at; kötü olanı işaretle)</h2>')
+        nedenler = ', '.join(x for x, _ in d.get(ad, []))
+        satirlar.append(f"""<figure><figcaption><label><input type="checkbox" value="{ad}"{' checked' if ad in supheli else ''}> {n}. {baslik.replace('<', '&lt;')}</label>
+<small>{iy['onceki']} px → {max(iy['g'], iy['y'])} px</small>{f' <em>{nedenler}</em>' if nedenler else ''}</figcaption>
 <div><img loading="lazy" src="../gorseller/b/{ad}.jpg"><img loading="lazy" src="{onizleme_url(iy['dosya'], iy['g'])}"></div>
 <small class="d">{iy['dosya'].replace('<', '&lt;')}</small></figure>""")
     sayfa = f"""<!doctype html><meta charset="utf-8"><title>Daha büyük görseller</title>
 <style>body{{font:15px -apple-system,sans-serif;background:#1d1a17;color:#efe7da;margin:16px}}figure{{margin:0 0 28px}}
 figure div{{display:flex;gap:8px}}figure img{{width:50%;height:300px;object-fit:contain;background:#000}}small{{color:#a99}}
+em{{color:#f0a060;font-style:normal;margin-left:8px}}h2{{font-size:18px;margin:24px 0 12px}}
 .d{{display:block;font-size:12px}}#k{{position:sticky;top:0;background:#26221e;padding:10px;z-index:2}}textarea{{width:100%}}</style>
-<div id="k"><b>Solda şimdiki (1280 px), sağda bulunan.</b> Başka bir tablo, siyah-beyaz, soluk, yansımalı ya da eğri
-fotoğrafsa işaretle → <button id="b">Reddetme komutunu kopyala</button><br><textarea id="t" rows="2" readonly></textarea></div>
+<div id="k"><b>Solda şimdiki, sağda bulunan.</b> İşaretliler reddedilir. <button id="b">Reddetme komutunu kopyala</button>
+<span id="s"></span><br><textarea id="t" rows="2" readonly></textarea></div>
 {''.join(satirlar) or '<p>Bulunan yok.</p>'}
 <script>const t=document.getElementById('t');const g=()=>{{const l=[...document.querySelectorAll('input:checked')].map(x=>x.value);
-t.value=l.length?'python3 scripts/kalite_tara.py --reddet '+l.join(','):'';return t.value}};document.onchange=g;
+document.getElementById('s').textContent=l.length+' işaretli';
+t.value=l.length?'python3 scripts/kalite_tara.py --reddet '+l.join(','):'';return t.value}};document.onchange=g;g();
 document.getElementById('b').onclick=()=>{{navigator.clipboard.writeText(g())}};</script>"""
     yol = HEDEF / 'iyilestirme.html'
     yol.write_text(sayfa)
-    return yol
+    return yol, len(supheli)
 
 
-def main():
-    if subprocess.run(['which', 'sips'], capture_output=True).returncode:
-        sys.exit('sips bulunamadı (macOS gerekir).')
-    BILGI.mkdir(parents=True, exist_ok=True)
-    if '--reddet' in sys.argv:
-        return reddet([x for x in sys.argv[sys.argv.index('--reddet') + 1].split(',') if x])
-    sinir = int(sys.argv[sys.argv.index('--dene') + 1]) if '--dene' in sys.argv else None
+def eser_haritasi():
     harita = json.loads((KOK / 'data/yerel_gorseller.json').read_text())['gorseller']
-    oranlar = json.loads((KOK / 'data/gorsel_oranlari.json').read_text())['oranlar']
     eser = {}
     for v in json.loads((KOK / 'data/eserler_onbellek.json').read_text())['sanatcilar'].values():
         for e in v['eserler']:
@@ -327,6 +403,27 @@ def main():
                     a = f"commons:{g['d']}"
                     if a in harita and e.get('qid'):
                         eser[harita[a]] = (norm(g['d']), e['qid'], e.get('baslik') or '')
+    return eser
+
+
+def sayfayi_ac(sonuc, eser):
+    sayfa, supheli = inceleme_sayfasi(sonuc, eser)
+    subprocess.run(['open', str(sayfa)], capture_output=True)
+    print(f'İnceleme sayfası açıldı ({sayfa.relative_to(KOK)}): {len(sonuc)} bulunan, {supheli} şüpheli (işaretli geldi).')
+    print('İyi olanların işaretini kaldır, "Reddetme komutunu kopyala", Terminal\'e yapıştır.')
+
+
+def main():
+    if subprocess.run(['which', 'sips'], capture_output=True).returncode:
+        sys.exit('sips bulunamadı (macOS gerekir).')
+    BILGI.mkdir(parents=True, exist_ok=True)
+    if '--reddet' in sys.argv:
+        return reddet([x for x in sys.argv[sys.argv.index('--reddet') + 1].split(',') if x])
+    if '--sayfa' in sys.argv:  # yalnız inceleme sayfasını yeniden kur (tarama yok)
+        return sayfayi_ac(oku_cikti()[0], eser_haritasi())
+    sinir = int(sys.argv[sys.argv.index('--dene') + 1]) if '--dene' in sys.argv else None
+    oranlar = json.loads((KOK / 'data/gorsel_oranlari.json').read_text())['oranlar']
+    eser = eser_haritasi()
     sonuc, reddedilen = oku_cikti()
     yol_m, mevcutlar = sakli('kalite_mevcut')
     zayiflar = []
@@ -392,10 +489,8 @@ def main():
         kaydet_cikti(sonuc, reddedilen)
     kaydet_cikti(sonuc, reddedilen)
     print(f'\nBitti: {len(zayiflar)} zayıf görselin {bulunan} tanesi için daha büyük dosya bulundu (toplam {len(sonuc)}).')
-    sayfa = inceleme_sayfasi(sonuc, eser)
-    subprocess.run(['open', str(sayfa)], capture_output=True)
-    print(f'İnceleme sayfası açıldı ({sayfa.relative_to(KOK)}): beğenmediklerini işaretle, kopyalanan komutu çalıştır.')
-    print('Hepsi iyiyse sırada: caffeinate -i python3 scripts/devasa_indir.py  →  python3 scripts/r2_yukle.py  →  git add/commit/push')
+    sayfayi_ac(sonuc, eser)
+    print('Sonra: caffeinate -i python3 scripts/devasa_indir.py  →  python3 scripts/r2_yukle.py  →  git add/commit/push')
 
 
 if __name__ == '__main__':
