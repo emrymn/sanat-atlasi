@@ -554,8 +554,8 @@ export async function yarimYukle() {
   return null;
 }
 
-// İş 85: yarım kalan tur, müzik çalardaki "şimdi çalıyor" şeridi gibi: solda kalınan sorunun tablosu, ortada tur ve
-// ilerleme çizgisi, sağda yuvarlak devam düğmesi, köşede bitir (×)
+// İş 85: yarım kalan tur, müzik çalardaki "şimdi çalıyor" şeridi gibi: solda kalınan sorunun tablosu, ortada tur, sağda
+// yuvarlak devam düğmesi (çevresindeki halka ilerleme: kart görününce o yere kadar dolar), köşede bitir (×)
 export function devamKarti() {
   const y = d.yarim;
   if (!y || !kayitGecerliMi(y)) return '';
@@ -568,15 +568,34 @@ export function devamKarti() {
       <div class="devam-yazi">
         <span class="etiket vurgu">Yarım kalan tur</span>
         <b data-test="devam-ozet">${kacis(devamOzeti(y))}</b>
-        <span class="devam-cizgi" role="img" aria-label="${toplam} karttan ${Math.max(0, konum - 1)} tanesi bitti"><i style="--oran:${oran}%"></i></span>
       </div>
-      <a class="devam-oynat" href="#/pekistir/devam" data-test="devam-et" aria-label="Devam et">${ikon('ileri', 24, 2)}</a>
+      <a class="devam-oynat" href="#/pekistir/devam" data-test="devam-et" aria-label="Devam et · ${toplam} karttan ${Math.max(0, konum - 1)} tanesi bitti" style="--oran:${oran / 100}">
+        <svg class="devam-halka" viewBox="0 0 56 56" aria-hidden="true"><circle class="iz" cx="28" cy="28" r="26"/><circle class="dolu" cx="28" cy="28" r="26"/></svg>
+        <span class="devam-ok">${ikon('ileri', 22, 1.8)}</span>
+      </a>
       <button class="devam-bitir" type="button" data-yarim-bitir aria-label="Bitir">${ikon('kapat', 15, 2)}</button>
     </section>`;
 }
 
+// devam kartı ekrana girince halka dolar, ok kımıldar (bir kez; sayfa açılınca ekranın altında kalıyordu)
+function devamCanlandir() {
+  const kart = ekran.querySelector('.devam-kart');
+  if (!kart) return;
+  if (typeof IntersectionObserver !== 'function') return kart.classList.add('oynat');
+  const g = new IntersectionObserver(
+    ([x]) => {
+      if (!x.isIntersecting) return;
+      g.disconnect();
+      kart.classList.add('oynat');
+    },
+    { threshold: 0.6 },
+  );
+  g.observe(kart);
+}
+
 // devam kartındaki küçük tablo: kalınan sorunun eseri (yoksa boş zemin kalır)
 function devamResmiDoldur() {
+  devamCanlandir();
   const el = ekran.querySelector('[data-devam-eser]');
   if (!el) return;
   const [id, anahtar] = el.dataset.devamEser.split('|');

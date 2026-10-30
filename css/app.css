@@ -510,34 +510,73 @@ img.kirik {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.devam-cizgi {
-  display: block;
-  height: 4px;
-  margin-top: 4px;
-  border-radius: 2px;
-  background: rgba(var(--vurgu-rgb), 0.18);
-  overflow: hidden;
-}
-.devam-cizgi i {
-  display: block;
-  width: var(--oran, 0%);
-  height: 100%;
-  border-radius: inherit;
-  background: var(--vurgu);
-}
 .devam-oynat {
+  position: relative;
   display: grid;
   place-items: center;
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  color: var(--bg);
-  background: var(--vurgu);
-  box-shadow: 0 6px 18px -6px rgba(var(--vurgu-rgb), 0.8);
+  color: var(--vurgu);
+  background: rgba(var(--vurgu-rgb), 0.08);
   text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease;
 }
 .devam-oynat:active {
-  transform: scale(0.94);
+  transform: scale(0.93);
+  background: rgba(var(--vurgu-rgb), 0.18);
+}
+/* çevresindeki ince halka ilerlemeyi gösterir; kart görününce bulunulan yere kadar dolar */
+.devam-halka {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  fill: none;
+  stroke-width: 1.6;
+}
+.devam-halka .iz {
+  stroke: rgba(var(--vurgu-rgb), 0.28);
+}
+.devam-halka .dolu {
+  stroke: var(--vurgu);
+  stroke-linecap: round;
+  stroke-dasharray: 163.4;
+  stroke-dashoffset: calc(163.4 * (1 - var(--oran, 0)));
+  transition: stroke-dashoffset 1.1s cubic-bezier(0.3, 0.7, 0.2, 1) 0.15s;
+}
+/* kart ekrana girene dek halka boş; girince bulunulan yere kadar dolar (js: .oynat) */
+.devam-kart:not(.oynat) .devam-halka .dolu {
+  stroke-dashoffset: 163.4;
+}
+/* ok birkaç kez hafifçe ileri kımıldar (devam et), sonra durur */
+.devam-ok {
+  display: grid;
+}
+.devam-kart.oynat .devam-ok {
+  animation: devam-ok 2.4s ease-in-out 1s 3;
+}
+@keyframes devam-ok {
+  0%,
+  60%,
+  100% {
+    transform: none;
+  }
+  75% {
+    transform: translateX(4px);
+  }
+  88% {
+    transform: translateX(-1px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .devam-halka .dolu {
+    transition: none;
+  }
+  .devam-kart.oynat .devam-ok {
+    animation: none;
+  }
 }
 .devam-bitir {
   position: absolute;
