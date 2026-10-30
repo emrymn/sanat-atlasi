@@ -859,16 +859,20 @@ test.describe('İş 80: keskin görseller', () => {
     await page.goto('./#/sanatci/jan-van-eyck');
     const ilk = page.locator('#uygulama .eserler img').first();
     await expect(ilk).toHaveAttribute('src', /gorseller\/b\/[0-9a-f]+\.jpg$/, { timeout: 10000 });
-    const keskinlikler = await page.evaluate(() =>
-      [...document.querySelectorAll('#uygulama .eserler img')]
-        .filter((i) => i.naturalWidth && i.getBoundingClientRect().top < innerHeight)
-        .map((i) => {
-          const r = i.getBoundingClientRect();
-          return 1 / (Math.max(r.width / i.naturalWidth, r.height / i.naturalHeight) * devicePixelRatio);
+    // ekrandaki eserlerin en bulanığı bile keskin (yükseltmeler birer birer biter)
+    await expect
+      .poll(() =>
+        page.evaluate(() => {
+          const l = [...document.querySelectorAll('#uygulama .eserler img')]
+            .filter((i) => i.naturalWidth && i.getBoundingClientRect().top < innerHeight)
+            .map((i) => {
+              const r = i.getBoundingClientRect();
+              return 1 / (Math.max(r.width / i.naturalWidth, r.height / i.naturalHeight) * devicePixelRatio);
+            });
+          return l.length ? Math.min(...l) : 0;
         }),
-    );
-    expect(keskinlikler.length).toBeGreaterThan(0);
-    for (const k of keskinlikler) expect(k).toBeGreaterThanOrEqual(0.8);
+      )
+      .toBeGreaterThanOrEqual(0.8);
     // küçük kartlar (dönem çizelgesi) 400 px'te kalır: gereksiz indirme yok
     await page.goto('./#/gozat');
     await page.locator('a.zaman-kart').first().waitFor();
@@ -879,5 +883,22 @@ test.describe('İş 80: keskin görseller', () => {
     // Tuval'in büyük tablosu ekranı kaplıyor: en büyük kopya
     await page.goto('./#/');
     await expect(page.locator('#uygulama [data-gunun-gorsel] img')).toHaveAttribute('src', /pub-deneme\.r2\.dev\/d\/[0-9a-f]+\.jpg$/, { timeout: 10000 });
+  });
+});
+
+// İş 82: Günün sanatçısı bölümünde önce en kaliteli görselli eserler; salon fotoğrafı gibi düşük kaliteliler
+// (kalite puanı < 20 ya da soru için uygun değil) gösterilmez; Wikimedia küçük resmi gerekirse büyüğüyle değişir
+test.describe('İş 82: günün sanatçısının görselleri', () => {
+  test.use({ deviceScaleFactor: 3, hasTouch: true, isMobile: true });
+
+  test('şeritte düşük kaliteli görsel yok, yerel kopyalılar önce', async ({ page, context }) => {
+    await agiHazirla(context);
+    // Lorenzetti: en bilinen eseri bir salon fotoğrafı (kalite puanı 5)
+    await page.goto('./#/gunun/ambrogio-lorenzetti');
+    await expect(page.locator('[data-galeri] img').first()).toBeAttached({ timeout: 10000 });
+    await page.waitForTimeout(1500);
+    const srcler = await page.locator('[data-galeri] img').evaluateAll((l) => l.map((i) => i.getAttribute('src')));
+    expect(srcler.some((s) => /Sala_amb_frescos/.test(s))).toBe(false);
+    expect(srcler[0]).toMatch(/gorseller\/[kb]\//);
   });
 });

@@ -5,7 +5,7 @@ import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
 import { sanatciEserleri, eserBaslik } from '../eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani } from '../gorsel.js';
+import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl } from '../gorsel.js';
 import { gununSanatcisi } from '../gunun.js';
 import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
@@ -622,7 +622,33 @@ export function gununEseri(eserler) {
     const g = secilenGorsel(e, kotuler());
     return g && e.pekistirme !== false && (gorselOrani(g) ?? 9) <= DIKEY_ORAN;
   });
-  return enBilinen(dikey) || enBilinen(eserler);
+  // İş 82: ekranı kaplayan tablo: dikeyler arasında en yüksek kaliteli kopyası olan (en büyük kopya > yerel 1280 px >
+  // Wikimedia), aynı kalitede en bilinen
+  const enIyi = kaliteSirasi(dikey).find((e) => gorselKalitesi(e) >= 1);
+  if (enIyi) return enIyi;
+  // dikey yoksa (ya da hepsi düşük kaliteli) en kaliteli olan, sonra en bilinen
+  const yedek = kaliteSirasi(eserler).find((e) => gorselKalitesi(e) >= 1 && secilenGorsel(e, kotuler()));
+  return enBilinen(dikey) || yedek || enBilinen(eserler);
+}
+
+// İş 82: eserin görsel kalitesi: 3 en büyük kopyası (4096 px) var; 2 uygulamayla gelen 1280 px kopyası var; 1 yalnız
+// Wikimedia/müze adresi; 0 düşük kaliteli (kalite puanı 20'nin altında: salon fotoğrafı, küçük ya da bulanık görsel)
+// ya da soru için uygun değil (sergi salonu, ayrıntı); -1 görseli yok
+export function gorselKalitesi(e) {
+  const g = secilenGorsel(e, kotuler()) || (e.gorseller && e.gorseller[0]);
+  if (!g) return -1;
+  if (e.pekistirme === false || (g.p ?? 50) < 20) return 0;
+  return devasaUrl(g) ? 3 : yerelUrl(g) ? 2 : 1;
+}
+// Günün sanatçısı bölümünde eserler: önce kaliteli olanlar (kendi içinde en bilinen önce); düşük kaliteliler en az üç
+// iyi eser varken hiç gösterilmez, yoksa sona
+export function kaliteSirasi(eserler) {
+  const sirali = bilinirlikSirasi(eserler)
+    .map((e, i) => ({ e, i, k: gorselKalitesi(e) }))
+    .filter((x) => x.k >= 0)
+    .sort((a, b) => b.k - a.k || a.i - b.i);
+  const iyi = sirali.filter((x) => x.k >= 1);
+  return (iyi.length >= 3 ? iyi : sirali).map((x) => x.e);
 }
 
 // Günün sanatçısı: her gün hesapla seçilir; ana sayfadaki "başka sanatçı" düğmesiyle o gün için değiştirilebilir
