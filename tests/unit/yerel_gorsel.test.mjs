@@ -58,3 +58,15 @@ test('İş 58: Cloudflare R2 — en büyük kopya yalnız listede olana; 1280\'l
   uzakGorselleriAyarla(null);
   yerelGorselleriAyarla(null);
 });
+
+test('İş 84: daha büyük dosyasıyla yenilenen en büyük kopya sürüm ekli adreste; geçersiz sürüm yok sayılır', async () => {
+  const { uzakGorselleriAyarla, devasaUrl, devasaAdresleri, ustKopya } = await import('../../js/gorsel.js');
+  const c = { k: 'commons', d: 'Örnek dosya.jpg' };
+  const r = 'https://gorsel.ornek.ai';
+  yerelGorselleriAyarla({ [yerelAnahtar(c)]: 'abc123abc123abc1' });
+  uzakGorselleriAyarla({ adres: r, devasa: ['abc123abc123abc1', 'def456def456def4'], surumler: { abc123abc123abc1: '0a1b2c3d', def456def456def4: '../kotu' } });
+  assert.equal(devasaUrl(c), `${r}/d/abc123abc123abc1-0a1b2c3d.jpg`);
+  assert.deepEqual(devasaAdresleri(), [`${r}/d/abc123abc123abc1-0a1b2c3d.jpg`, `${r}/d/def456def456def4.jpg`]);
+  assert.equal(ustKopya('gorseller/b/abc123abc123abc1.jpg', { buyuk: true }), `${r}/d/abc123abc123abc1-0a1b2c3d.jpg`);
+  uzakGorselleriAyarla(null);
+});

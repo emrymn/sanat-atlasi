@@ -67,7 +67,7 @@ export function keskinlestir(img) {
   const ust = ustKopya(src, { buyuk: true });
   if (!ust) return;
   // en büyük kopya: ekranı büyük ölçüde kaplıyorsa her zaman; küçük yerde yalnız telefonda inmişse
-  if (/\/d\/[0-9a-f]+\.jpg$/.test(ust) && !buyuk) {
+  if (/\/d\/[0-9a-f]+(?:-[0-9a-f]+)?\.jpg$/.test(ust) && !buyuk) {
     img.dataset.keskinBekliyor = '1';
     telefonda(ust).then((var_) => {
       delete img.dataset.keskinBekliyor;
