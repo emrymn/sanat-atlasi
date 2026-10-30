@@ -463,29 +463,191 @@ img.kirik {
 }
 
 /* ---------- Yarım kalan oturum ---------- */
+/* İş 85: müzik çalardaki "şimdi çalıyor" şeridi gibi: kalınan sorunun tablosu, tur ve ilerleme, yuvarlak devam düğmesi */
 .devam-kart {
+  position: relative;
   display: grid;
-  gap: 12px;
+  grid-template-columns: 58px minmax(0, 1fr) 56px;
+  align-items: center;
+  gap: 14px;
   margin: 4px 0 18px;
-  padding: 14px 16px;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: var(--surface);
+  padding: 12px 14px 12px 12px;
+  border: 1px solid rgba(var(--vurgu-rgb), 0.28);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(var(--vurgu-rgb), 0.16), rgba(var(--vurgu-rgb), 0.03) 60%),
+    var(--surface);
+  box-shadow: 0 10px 28px -14px rgba(0, 0, 0, 0.55);
+}
+.devam-resim {
+  width: 58px;
+  height: 72px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(160deg, rgba(var(--vurgu-rgb), 0.35), rgba(var(--vurgu-rgb), 0.08));
+  box-shadow:
+    0 0 0 1px rgba(var(--vurgu-rgb), 0.35),
+    0 6px 14px -6px rgba(0, 0, 0, 0.7);
+}
+.devam-resim img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .devam-yazi {
   display: grid;
-  gap: 2px;
+  gap: 4px;
+  min-width: 0;
+  padding-right: 18px; /* köşedeki × ile çakışmasın */
 }
-.devam-yazi span {
-  color: var(--ink-2);
+.devam-yazi .etiket {
+  margin: 0;
 }
-.devam-dugmeler {
+.devam-yazi b {
+  font: 500 19px/1.25 var(--serif);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.devam-oynat {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-  gap: 10px;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: var(--vurgu);
+  background: rgba(var(--vurgu-rgb), 0.08);
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease;
 }
-.devam-dugmeler .dugme {
-  min-height: 48px;
+.devam-oynat:active {
+  transform: scale(0.93);
+  background: rgba(var(--vurgu-rgb), 0.18);
+}
+/* çevresindeki ince halka ilerlemeyi gösterir; kart görününce bulunulan yere kadar dolar */
+.devam-halka {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  fill: none;
+  stroke-width: 1.6;
+}
+.devam-halka .iz {
+  stroke: rgba(var(--vurgu-rgb), 0.28);
+}
+.devam-halka .dolu {
+  stroke: var(--vurgu);
+  stroke-linecap: round;
+  stroke-dasharray: 163.4;
+  stroke-dashoffset: calc(163.4 * (1 - var(--oran, 0)));
+  transition: stroke-dashoffset 1.1s cubic-bezier(0.3, 0.7, 0.2, 1) 0.15s;
+}
+/* kart ekrana girene dek halka boş; girince bulunulan yere kadar dolar (js: .oynat) */
+.devam-kart:not(.oynat) .devam-halka .dolu {
+  stroke-dashoffset: 163.4;
+}
+/* ok birkaç kez hafifçe ileri kımıldar (devam et), sonra durur */
+.devam-ok {
+  display: grid;
+}
+.devam-kart.oynat .devam-ok {
+  animation: devam-ok 2.4s ease-in-out 1s 3;
+}
+@keyframes devam-ok {
+  0%,
+  60%,
+  100% {
+    transform: none;
+  }
+  75% {
+    transform: translateX(4px);
+  }
+  88% {
+    transform: translateX(-1px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .devam-halka .dolu {
+    transition: none;
+  }
+  .devam-kart.oynat .devam-ok {
+    animation: none;
+  }
+}
+/* İş 85d: tur başlatan tek eylem: kartın tamamı dokunulur (devam kartının dili, küçük tablo yok) */
+.devam-kart.eylem-kart {
+  grid-template-columns: minmax(0, 1fr) 56px;
+  width: 100%;
+  padding: 12px 14px 12px 18px;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.devam-kart.eylem-kart .devam-yazi {
+  padding-right: 0;
+}
+.devam-kart.eylem-kart:active .devam-oynat {
+  transform: scale(0.93);
+  background: rgba(var(--vurgu-rgb), 0.18);
+}
+/* ikinci eylem: kartın altında sade, ince kenarlı yuvarlak düğme (kart kadar baskın değil) */
+.metin-bag {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 18px;
+}
+.metin-bag a,
+.metin-bag button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 22px;
+  border: 1px solid rgba(var(--vurgu-rgb), 0.22);
+  border-radius: 999px;
+  background: rgba(var(--vurgu-rgb), 0.05);
+  color: var(--ink-2);
+  font: 500 15px/1 var(--sans);
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.metin-bag a:active,
+.metin-bag button:active {
+  transform: scale(0.96);
+  background: rgba(var(--vurgu-rgb), 0.14);
+}
+/* açıklama satırı (kutu ve çizgi yok) */
+.sade-soru {
+  margin: 8px 0 18px;
+}
+.sade-soru p {
+  margin: 0 0 4px;
+}
+.sade-soru-baslik {
+  font: 500 21px/1.3 var(--serif);
+}
+.devam-bitir {
+  position: absolute;
+  top: 2px;
+  right: 72px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  cursor: pointer;
 }
 .gunun-kart.devam-alti .bugun-kahraman {
   margin-top: 0;

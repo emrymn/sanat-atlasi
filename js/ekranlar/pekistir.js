@@ -13,7 +13,7 @@ import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { ikon } from '../tasarim.js';
 import { bilinenAd } from '../adlar.js';
 import { idbAl, idbKoy, idbSil } from '../idb.js';
-import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from '../devam.js';
+import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti, devamKonumu } from '../devam.js';
 import { karsilastirmaAdresi } from '../karsilastir.js';
 import { akimKarsilastirmaAdresi } from '../akim.js';
 import { tanismaGerekirMi, tanismaEserleri, karisanEkle, KARISAN_ESIGI } from '../ogrenme.js';
@@ -226,7 +226,8 @@ export function pekistirMenusu() {
         : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
     }`,
   );
-  kucukKareleriDoldur();  // telefonu çevirince bugünkü turun destesi yelpaze açılır (İş 47; Ayarlar'daki hareket seçimine uyar)
+  kucukKareleriDoldur();
+  devamResmiDoldur();  // telefonu çevirince bugünkü turun destesi yelpaze açılır (İş 47; Ayarlar'daki hareket seçimine uyar)
   desteBaslat(ekran.querySelector('.pk-sahne'), d.ilerleme.ayarlar.egim !== false);
 }
 
@@ -392,15 +393,16 @@ export async function pekistir(kip, akim, { yeni = false, onayli = false } = {})
     d.oturum = yeniOturum;
     if (!d.oturum.oturum.toplam && !(d.oturum.kip === 'bolum' && d.oturum.tanisma)) {
       d.oturum = null;
-      return ciz(
-        `${pkUst(kip, akim)}<div class="bos-kutu" data-test="kart-yok"><p>Bu seçim için şu an kart yok.</p><p class="kucuk ikincil">${
+      ciz(
+        `${pkUst(kip, akim)}<div class="sade-soru" data-test="kart-yok"><p class="sade-soru-baslik">Bu seçim için şu an kart yok.</p><p class="kucuk ikincil">${
           kip === 'hatalar'
             ? 'Son 7 günde yanlış yaptığın sanatçı kalmadı.'
             : kip === 'konu'
               ? 'Bu konunun açık sanatçısı yok ya da görselleri bulunamadı.'
               : `Bugünkü yeni sanatçı sınırına (${GUNLUK_YENI_SINIRI}) ulaşmış olabilirsin ya da bu sanatçıların görseli bulunamadı.`
-        }</p><div class="iki-dugme">${kip === 'karisik' ? '' : '<a class="dugme vurgu" href="#/pekistir/karisik">Karışık tur başlat</a>'}<a class="dugme" href="#/pekistir">Pekiştir’e dön</a></div></div>`,
+        }</p></div>${kip === 'karisik' ? '' : eylemKarti({ href: '#/pekistir/karisik', baslik: 'Karışık tur başlat', ust: 'Bunun yerine' })}${metinBag('#/pekistir', 'Pekiştir’e dön')}`,
       );
+      return devamCanlandir();
     }
   }
   return kartCiz();
@@ -553,22 +555,84 @@ export async function yarimYukle() {
   return null;
 }
 
-export function devamKarti() {
+// İş 85: yarım kalan tur, müzik çalardaki "şimdi çalıyor" şeridi gibi: solda kalınan sorunun tablosu, ortada tur, sağda
+// yuvarlak devam düğmesi (çevresindeki halka ilerleme: kart görününce o yere kadar dolar), köşede bitir (×)
+export function devamKarti({ bitir = true } = {}) {
   const y = d.yarim;
   if (!y || !kayitGecerliMi(y)) return '';
-  return `<section class="devam-kart" data-test="devam-kart" aria-label="Yarım kalan oturum">
-      <div class="devam-yazi"><b>Kaldığın yerden devam et</b><span data-test="devam-ozet">${kacis(devamOzeti(y))}</span></div>
-      <div class="devam-dugmeler"><a class="dugme vurgu" href="#/pekistir/devam" data-test="devam-et">Devam et</a><button class="dugme" type="button" data-yarim-bitir>Bitir</button></div>
+  const toplam = y.kuyruk.length;
+  const konum = devamKonumu(y);
+  const oran = Math.round((100 * Math.max(0, konum - 1)) / Math.max(1, toplam));
+  const eser = y.kart && y.kart.eser ? `${y.kart.id}|${y.kart.eser}` : '';
+  return `<section class="devam-kart" data-test="devam-kart" aria-label="Yarım kalan tur">
+      <span class="devam-resim" aria-hidden="true"${eser ? ` data-devam-eser="${kacis(eser)}"` : ''}></span>
+      <div class="devam-yazi">
+        <span class="etiket vurgu">Yarım kalan tur</span>
+        <b data-test="devam-ozet">${kacis(devamOzeti(y))}</b>
+      </div>
+      <a class="devam-oynat" href="#/pekistir/devam" data-test="devam-et" aria-label="Devam et · ${toplam} karttan ${Math.max(0, konum - 1)} tanesi bitti" style="--oran:${oran / 100}">${halkaIci()}</a>
+      ${bitir ? `<button class="devam-bitir" type="button" data-yarim-bitir aria-label="Bitir">${ikon('kapat', 15, 2)}</button>` : ''}
     </section>`;
+}
+
+// yuvarlak, ince halkalı düğmenin içi (halka: oran 0–1; eylem kartlarında tam)
+const halkaIci = () =>
+  `<svg class="devam-halka" viewBox="0 0 56 56" aria-hidden="true"><circle class="iz" cx="28" cy="28" r="26"/><circle class="dolu" cx="28" cy="28" r="26"/></svg><span class="devam-ok">${ikon('ileri', 22, 1.8)}</span>`;
+
+// İş 85d: tur başlatan/sürdüren tek eylem: devam kartıyla aynı dil (kartın tamamı dokunulur, sağda halkalı düğme).
+// Eski iki büyük düğmeli kutuların yerine; ikinci eylem altta sade yazı bağlantısı (metinBag)
+function eylemKarti({ href = '', veri = '', baslik, ust = '', test = '' }) {
+  const ic = `<span class="devam-yazi">${ust ? `<span class="etiket vurgu">${kacis(ust)}</span>` : ''}<b>${kacis(baslik)}</b></span>
+      <span class="devam-oynat" aria-hidden="true" style="--oran:1">${halkaIci()}</span>`;
+  const t = test ? ` data-test="${test}"` : '';
+  return href
+    ? `<a class="devam-kart eylem-kart" href="${href}"${t}>${ic}</a>`
+    : `<button class="devam-kart eylem-kart" type="button" ${veri}${t}>${ic}</button>`;
+}
+const metinBag = (href, yazi) => `<p class="metin-bag"><a href="${href}">${kacis(yazi)}</a></p>`;
+
+// devam/eylem kartları ekrana girince halka dolar, ok kımıldar (bir kez; sayfa açılınca ekranın altında kalabiliyor)
+function devamCanlandir() {
+  const kartlar = [...ekran.querySelectorAll('.devam-kart:not(.oynat)')];
+  if (!kartlar.length) return;
+  if (typeof IntersectionObserver !== 'function') return kartlar.forEach((k) => k.classList.add('oynat'));
+  const g = new IntersectionObserver(
+    (l) => {
+      for (const x of l) {
+        if (!x.isIntersecting) continue;
+        g.unobserve(x.target);
+        x.target.classList.add('oynat');
+      }
+    },
+    { threshold: 0.6 },
+  );
+  kartlar.forEach((k) => g.observe(k));
+}
+
+// devam kartındaki küçük tablo: kalınan sorunun eseri (yoksa boş zemin kalır)
+function devamResmiDoldur() {
+  devamCanlandir();
+  const el = ekran.querySelector('[data-devam-eser]');
+  if (!el) return;
+  const [id, anahtar] = el.dataset.devamEser.split('|');
+  const s = d.harita.get(id);
+  if (!s) return;
+  sanatciEserleri(s).then((eserler) => {
+    const e = eserler.find((x) => x.anahtar === anahtar);
+    const g = e && (secilenGorsel(e, kotuler()) || e.gorseller[0]);
+    if (g && el.isConnected) el.innerHTML = `<img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}">`;
+  });
 }
 
 function yarimSor(kip, akim) {
   ciz(`${pkUst(kip, akim)}
-    <div class="bos-kutu" data-test="yarim-soru">
-      <p>Yarım kalan oturum silinsin mi?</p>
-      <p class="kucuk ikincil">${kacis(devamOzeti(d.yarim))}</p>
-      <div class="iki-dugme"><button class="dugme vurgu" type="button" data-yarim-sil data-kip="${kip}" data-akim="${kacis(akim || '')}">Sil, yeni başla</button><a class="dugme" href="#/pekistir/devam">Hayır, devam et</a></div>
-    </div>`);
+    <div class="sade-soru" data-test="yarim-soru">
+      <p class="sade-soru-baslik">Yarım kalan oturum silinsin mi?</p>
+      <p class="kucuk ikincil">Yeni tur başlarsa yarım kalan tur silinir.</p>
+    </div>
+    ${devamKarti({ bitir: false })}
+    <p class="metin-bag"><button type="button" data-yarim-sil data-kip="${kip}" data-akim="${kacis(akim || '')}">Sil, yeni başla</button></p>`);
+  devamResmiDoldur();
 }
 
 async function kartiGeriKur(bk) {
@@ -1431,9 +1495,10 @@ function ozetCiz() {
       <p class="okuma italik">${ot.yanlis ? 'Yanlış yaptıkların daha sık karşına çıkacak.' : 'Hepsi doğru, harika.'}</p>
     </div>
     ${gecenlerHtml(o.gecenler || [])}
-    <div class="menu"><button class="dugme vurgu" type="button" data-yeni-tur>Bir tur daha</button><a class="dugme" href="#/">Bugün</a></div>
+    <div class="menu">${eylemKarti({ veri: 'data-yeni-tur', baslik: 'Bir tur daha', ust: 'Devam' })}${metinBag('#/', 'Tuval’e dön')}</div>
     ${toplam && !ot.yanlis ? yaldizYapraklari() : ''}`);
   sayarakYaz(ekran.querySelector('.ozet .ad'), ot.dogru, toplam);
+  devamCanlandir();
 }
 
 // Sonuç sayısı sıfırdan sayarak gelir (hareket azaltma açıksa doğrudan yazılır)

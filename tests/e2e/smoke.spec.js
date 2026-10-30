@@ -205,7 +205,7 @@ test('Ayarlar: yedekle → geri yükle gidiş-dönüşü', async ({ page, contex
   expect(geri.ayarlar).toEqual(asil.ayarlar);
   expect(geri.sonCalisilanlar).toEqual(asil.sonCalisilanlar);
   await expect(page.locator('html')).toHaveAttribute('data-tema', 'sepya');
-  await page.goto('./#/');
+  await page.goto('./#/pekistir');
   await expect(page.locator('[data-test="devam-ozet"]')).toHaveText(/^Karışık · 2 \//);
   await page.goto('./#/ayarlar');
 
