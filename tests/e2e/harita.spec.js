@@ -187,7 +187,7 @@ test('Harita: dönemler arasında köprü; ileri (yukarı) kaydırınca köprü 
 });
 
 // İş 90/92: harita açılınca öğrenci yürümez, en son gönderildiği durakta (yoksa şimdiki durakta) durur; açık bir
-// durağa dokununca oraya patikadan yürür, varınca durağın penceresi açılır; bir sonraki açılışta orada durur.
+// durağa dokununca kısa sürede oraya patikadan yürür, varınca pencere açılır; sonraki açılışta orada durur.
 test('İş 92: öğrenci yalnız durağa dokununca patikada yürür', async ({ page, context }) => {
   await agiHazirla(context);
   await page.goto('./#/harita');
@@ -214,11 +214,11 @@ test('İş 92: öğrenci yalnız durağa dokununca patikada yürür', async ({ p
   await page.waitForTimeout(1500);
   await expect(page.locator('.harita.yuruyor')).toHaveCount(0);
   await expect(kap).toHaveAttribute('data-durak', simdiki);
-  // açık bir durağa dokununca yürür; varınca pencere açılır
+  // açık bir durağa dokununca öğrenci kısa sürede (en çok ~1,6 sn) oraya yürür, varınca pencere açılır
   await page.locator(`.harita-durak[data-bolum="${hedef}"]`).click();
   await expect(page.locator('.harita.yuruyor')).toHaveCount(1);
   await expect(page.locator('[data-harita-pencere]')).toBeHidden();
-  await expect(page.locator('.harita.yuruyor')).toHaveCount(0, { timeout: 15000 });
+  await expect(page.locator('.harita.yuruyor')).toHaveCount(0, { timeout: 2500 });
   await expect(page.locator('[data-harita-pencere]')).toBeVisible();
   await expect(kap).toHaveAttribute('data-durak', hedef);
   expect(await page.evaluate(() => window.__atlas.ilerleme.haritaYolcu)).toBe(hedef);

@@ -266,6 +266,8 @@ function yolcuYerlestir(kap, id) {
   const hd = d.haritaDurum;
   const o = hd && hd.harita.bolgeler.flatMap((b) => b.duraklar.map((x) => ({ b, x }))).find((s) => s.x.id === id);
   if (!o) return;
+  yuruyusNo++;
+  kap.closest('[data-test="harita"]')?.classList.remove('yuruyor');
   kap.dataset.durak = id;
   kap.dataset.bolge = o.b.id;
   kap.querySelector('img').src = pozAdresi(hd.yv.yolcu, o.b.id, 'dur', hd.tur);
@@ -275,115 +277,107 @@ function yolcuYerlestir(kap, id) {
   kaydet();
 }
 
-// Yürüyüş: parça parça patikada; adım başına hafif sekme ve sallanma (yürüme pozları varsa adım adım değişir, yolda
-// yukarı giderken arkadan pozu). Kamera öğrenciyi izler; parmakla kaydırılınca izlemeyi bırakır. Dönem değişirken
-// öğrenci söner, harita yeni dönemin ilk durağına kayar, orada yeni dönemin kıyafetiyle belirir.
-const HIZ = 90; // pt/sn; uzun yolda bütün yürüyüş en çok YURUYUS_EN_COK sürer
-const YURUYUS_EN_COK = 7;
+// Yürüyüş (İş 92, Emre: "durağa basınca yürüsün"; "aşırı yavaş olur"; "pencere açılınca karakter arkada kalır";
+// "yakınsa aşırı hızlı gitmesin ama videodakinden hızlı"): durağa dokununca öğrenci patikadan oraya kısa sürede
+// (yakın durakta en az YURUYUS_EN_AZ, uzakta en çok YURUYUS_EN_COK sn) yürür, varınca pencere açılır. Harita yalnız öğrenci
+// ekranın kenarına yaklaşırsa onunla kayar. Adımda sekme ve gövdenin hafif sallanması (yürüme pozları varsa adım adım
+// değişir, yolda yukarı giderken arkadan pozu). Dönem değişen ya da uzun yolda yürümez: bulunduğu yerde söner, harita
+// durağa kayar, durağın yanında belirir.
+const HIZ = 220; // pt/sn
+const YURUYUS_EN_COK = 1.6; // sn
+const YURUYUS_EN_AZ = 0.9;
+const UZUN = 1000; // pt: bundan uzun yolda yürümez, söner-belirir
 const ADIM = 10; // pt: bir adım
+let yuruyusNo = 0;
+// öğrenci ekranın üst/alt %18'ine girerse harita yumuşakça kayar (yumusak: bir karelik yaklaşma oranı)
+function izle(kap, yumusak = 0.15) {
+  const r = kap.getBoundingClientRect();
+  const H_ = window.innerHeight;
+  const orta = (r.top + r.bottom) / 2;
+  if (orta > H_ * 0.18 && orta < H_ * 0.82) return;
+  const hedef = r.bottom + window.scrollY - H_ * 0.6;
+  window.scrollTo(0, Math.max(0, window.scrollY + (hedef - window.scrollY) * yumusak));
+}
 function yuru(kap, yol, h, tur, yolcu, no, bitince) {
   if (!kap.isConnected || !guncelMi(no)) return;
+  const benim = ++yuruyusNo;
+  const gecerli = () => benim === yuruyusNo && kap.isConnected && guncelMi(no);
   const kart = kap.closest('[data-test="harita"]');
   const img = kap.querySelector('img');
-  kart && kart.classList.add('yuruyor');
-  let takip = true;
-  const birak = () => (takip = false);
-  window.addEventListener('touchstart', birak, { passive: true, once: true });
-  window.addEventListener('wheel', birak, { passive: true, once: true });
-  // pozlar önceden yüklenir (değişirken boş kare olmasın)
-  for (const p of yol.parcalar) for (const poz of Object.keys(pozlari(yolcu, p.bolge))) new Image().src = pozAdresi(yolcu, p.bolge, poz, tur);
-  const kare = (bolge, adim, yukari) => {
-    const pz = pozlari(yolcu, bolge);
+  kart.classList.add('yuruyor');
+  const bitir = (bolge) => {
+    img.style.translate = '';
+    img.style.rotate = '';
+    img.src = pozAdresi(yolcu, bolge, 'dur', tur);
+    // durakta sembole döner
+    const durak = kart.querySelector(`.harita-durak[data-bolum="${CSS.escape(kap.dataset.durak || '')}"]`);
+    if (durak) {
+      const r = durak.getBoundingClientRect();
+      const k = kap.getBoundingClientRect();
+      kap.classList.toggle('sag', r.left + r.width / 2 > k.left + k.width / 2);
+    }
+    kart.classList.remove('yuruyor');
+    if (bitince) bitince();
+  };
+  const son = yol.parcalar[yol.parcalar.length - 1];
+  const toplam = yol.parcalar.reduce((t, p) => t + cizgiUzunlugu(p.noktalar), 0);
+  // dönem değişiyorsa ya da yol uzunsa: söner, harita durağa kayar, orada belirir
+  if (yol.parcalar.length > 1 || toplam > UZUN) {
+    kap.classList.add('soner');
+    setTimeout(() => {
+      if (!gecerli()) return;
+      kap.dataset.bolge = son.bolge;
+      img.src = pozAdresi(yolcu, son.bolge, 'dur', tur);
+      yolcuKonum(kap, son.noktalar[son.noktalar.length - 1], h, pozOlcu(yolcu, son.bolge, 'dur'));
+      const r = kap.getBoundingClientRect();
+      const orta = (r.top + r.bottom) / 2;
+      if (orta < window.innerHeight * 0.18 || orta > window.innerHeight * 0.82) window.scrollTo({ top: Math.max(0, r.bottom + window.scrollY - window.innerHeight * 0.6), behavior: 'smooth' });
+      setTimeout(() => {
+        if (!gecerli()) return;
+        kap.classList.remove('soner');
+        bitir(son.bolge);
+      }, 350);
+    }, 280);
+    return;
+  }
+  for (const poz of Object.keys(pozlari(yolcu, son.bolge))) new Image().src = pozAdresi(yolcu, son.bolge, poz, tur);
+  const kare = (adim, yukari) => {
+    const pz = pozlari(yolcu, son.bolge);
     const dizi = (on) => Object.keys(pz).filter((k) => k.startsWith(on)).sort();
     const arka = dizi('arka');
     const yan = dizi('yuru');
     const l = yukari && arka.length ? arka : yan;
     return l.length ? l[adim % l.length] : 'dur';
   };
-  const hiz = Math.max(HIZ, yol.parcalar.reduce((t, p) => t + cizgiUzunlugu(p.noktalar), 0) / YURUYUS_EN_COK);
-  let pi = 0;
-  const kamera = (yumusak) => {
-    if (!takip) return;
-    const r = kap.getBoundingClientRect();
-    const hedef = r.bottom + window.scrollY - window.innerHeight * 0.6;
-    const simdi = window.scrollY;
-    window.scrollTo(0, Math.max(0, yumusak ? simdi + (hedef - simdi) * 0.12 : hedef));
-  };
-  const parca = () => {
-    const p = yol.parcalar[pi];
-    const n = p.noktalar;
-    const L = cizgiUzunlugu(n);
-    let bas = null;
-    let son = '';
-    const adimla = (t) => {
-      if (!kap.isConnected || !guncelMi(no)) return;
-      bas ??= t;
-      const m = Math.min(L, ((t - bas) / 1000) * hiz);
-      const q = cizgideNokta(n, m);
-      const yukari = q.dy < 0 && Math.abs(q.dy) > Math.abs(q.dx) * 1.6;
-      const poz = m < L ? kare(p.bolge, Math.floor(m / ADIM), yukari) : 'dur';
-      const o = pozOlcu(yolcu, p.bolge, poz);
-      yolcuKonum(kap, [q.x, q.y], h, o);
-      if (Math.abs(q.dx) > 0.5) kap.classList.toggle('sag', q.dx > 0);
-      if (poz !== son) {
-        img.src = pozAdresi(yolcu, p.bolge, poz, tur);
-        son = poz;
-      }
-      // adımda sekme (yürüme pozlarıyla daha az); tek resimle yürürken gövde de hafifçe sallanır
-      const faz = (m / ADIM) * Math.PI;
-      const sek = m < L ? Math.abs(Math.sin(faz)) * (poz === 'dur' ? 1 : 0.5) : 0;
-      img.style.translate = `0 ${(-sek * 2.4).toFixed(2)}px`;
-      img.style.rotate = `${(poz === 'dur' && m < L ? Math.sin(faz) * 2.5 : 0).toFixed(2)}deg`;
-      kamera(true);
-      if (m < L) return requestAnimationFrame(adimla);
-      if (pi + 1 < yol.parcalar.length) return gec();
-      bitir();
-    };
-    requestAnimationFrame(adimla);
-  };
-  // dönem değişimi: söner, harita yeni yere kayar, yeni kıyafetle belirir
-  const gec = () => {
-    kap.classList.add('soner');
-    setTimeout(() => {
-      if (!kap.isConnected) return;
-      pi++;
-      const p = yol.parcalar[pi];
-      kap.dataset.bolge = p.bolge;
-      img.src = pozAdresi(yolcu, p.bolge, 'dur', tur);
-      yolcuKonum(kap, p.noktalar[0], h, pozOlcu(yolcu, p.bolge, 'dur'));
-      const bas = window.scrollY;
-      const r = kap.getBoundingClientRect();
-      const hedef = Math.max(0, r.bottom + bas - window.innerHeight * 0.6);
-      const t0 = performance.now();
-      const kay = (t) => {
-        if (!kap.isConnected) return;
-        const u = Math.min(1, (t - t0) / 1400);
-        const e = u < 0.5 ? 2 * u * u : 1 - (-2 * u + 2) ** 2 / 2;
-        if (takip) window.scrollTo(0, bas + (hedef - bas) * e);
-        if (u < 1) return requestAnimationFrame(kay);
-        kap.classList.remove('soner');
-        setTimeout(() => (yol.parcalar[pi].noktalar.length > 1 ? parca() : bitir()), 450);
-      };
-      requestAnimationFrame(kay);
-    }, 450);
-  };
-  const bitir = () => {
-    img.style.translate = '';
-    img.style.rotate = '';
-    img.src = pozAdresi(yolcu, yol.parcalar[pi].bolge, 'dur', tur);
-    // durakta sembole döner
-    const durak = kart && kart.querySelector(`.harita-durak[data-bolum="${CSS.escape(kap.dataset.durak || '')}"]`);
-    if (durak) {
-      const r = durak.getBoundingClientRect();
-      const k = kap.getBoundingClientRect();
-      kap.classList.toggle('sag', r.left + r.width / 2 > k.left + k.width / 2);
+  const n = son.noktalar;
+  const sure = Math.min(YURUYUS_EN_COK, Math.max(YURUYUS_EN_AZ, toplam / HIZ)) * 1000;
+  let bas = null;
+  let onceki = '';
+  const adimla = (t) => {
+    if (!gecerli()) return;
+    bas ??= t;
+    const u = Math.min(1, (t - bas) / sure);
+    // yumuşak kalkış ve duruş
+    const e = u < 0.5 ? 2 * u * u : 1 - (-2 * u + 2) ** 2 / 2;
+    const m = toplam * e;
+    const q = cizgideNokta(n, m);
+    const yukari = q.dy < 0 && Math.abs(q.dy) > Math.abs(q.dx) * 1.6;
+    const poz = u < 1 ? kare(Math.floor(m / ADIM), yukari) : 'dur';
+    yolcuKonum(kap, [q.x, q.y], h, pozOlcu(yolcu, son.bolge, poz));
+    if (Math.abs(q.dx) > 0.5) kap.classList.toggle('sag', q.dx > 0);
+    if (poz !== onceki) {
+      img.src = pozAdresi(yolcu, son.bolge, poz, tur);
+      onceki = poz;
     }
-    kart && kart.classList.remove('yuruyor');
-    window.removeEventListener('touchstart', birak);
-    window.removeEventListener('wheel', birak);
-    if (bitince) bitince();
+    const faz = (m / ADIM) * Math.PI;
+    const sek = u < 1 ? Math.abs(Math.sin(faz)) * (poz === 'dur' ? 1 : 0.5) : 0;
+    img.style.translate = `0 ${(-sek * 2.4).toFixed(2)}px`;
+    img.style.rotate = `${(poz === 'dur' && u < 1 ? Math.sin(faz) * 2.5 : 0).toFixed(2)}deg`;
+    izle(kap);
+    if (u < 1) return requestAnimationFrame(adimla);
+    bitir(son.bolge);
   };
-  parca();
+  requestAnimationFrame(adimla);
 }
 
 function konumaKaydir(yumusak = false) {
@@ -696,13 +690,15 @@ export function olaylariBagla() {
         durak.classList.add('secili');
         pencereAc(durakPenceresi(durak.dataset.bolum));
       };
-      // İş 92: açık durağa dokununca öğrenci önce oraya patikadan yürür, varınca pencere açılır (yürürken dokunuş beklemez)
+      // İş 92: açık durağa dokununca öğrenci oraya kısa sürede patikadan yürür, varınca pencere açılır (yürürken
+      // gelen dokunuş beklemez); bulunduğu durakta ya da kilitli durakta pencere hemen açılır
       const kap = ekran.querySelector('[data-yolcu]');
       const hd = d.haritaDurum;
       if (kap && kap.closest('.yuruyor')) return;
-      const yol = kap && hd && durak.dataset.acik === 'true' && !azHareket() ? yolcuYolu(hd.harita, hd.yv.patikalar, kap.dataset.durak, durak.dataset.bolum) : null;
+      if (!kap || !hd || durak.dataset.acik !== 'true' || kap.dataset.durak === durak.dataset.bolum) return ac();
+      const yol = azHareket() ? null : yolcuYolu(hd.harita, hd.yv.patikalar, kap.dataset.durak, durak.dataset.bolum);
       if (!yol) {
-        if (kap && durak.dataset.acik === 'true' && kap.dataset.durak !== durak.dataset.bolum) yolcuYerlestir(kap, durak.dataset.bolum);
+        yolcuYerlestir(kap, durak.dataset.bolum);
         return ac();
       }
       pencereKapat();
