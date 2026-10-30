@@ -54,10 +54,10 @@ const TASLAKLAR = [
 // gezginle aynı biçimde (sırtı ya da yanı dönük, yüzü belli belirsiz, elinde sanatçı eşyası, aynı boy ve çerçeve) ama
 // başka bir kişi ve o dönemin haritasının üslubunda. Kadın ressamlar da var (Leyster, Vigée Le Brun, Morisot).
 const KARAKTERLER = {
-  // Orta Çağ: Giotto efsanesi (Cimabue onu koyunlarını bir kayaya çizerken bulur); Barok: Rembrandt'ın öğrencisi,
-  // karanlık haritada elinde fener (Emre ilk fikirleri değiştirtti: atölye çırağı, Leyster gibi kadın ressam)
+  // Orta Çağ: Giotto'nun Mısır'a Kaçış'ındaki Yusuf gibi asalı genç gezgin (Emre örneklerden seçti); Barok: Rembrandt'ın
+  // öğrencisi, karanlık haritada elinde fener (Emre ilk fikirleri değiştirtti: atölye çırağı, Leyster gibi kadın ressam)
   ortacag:
-    "a young shepherd boy of 13th-century Tuscany, like the young Giotto in the old story of Cimabue finding him drawing his sheep on a rock: a simple undyed wool tunic with a rope belt, a rough brown hooded cape, bare legs and leather sandals, a wooden shepherd's crook in one hand and a flat slate with a charcoal drawing of a sheep under his arm",
+    "a young traveller on the road in 14th-century Italy, like Joseph in Giotto's Flight into Egypt (Scrovegni Chapel) but young: a long greenish-grey tunic, a wide rust-orange cloak wrapped over one shoulder, a tall wooden walking staff in one hand and a cloth bundle tied to it over his shoulder, soft leather shoes, a short beard",
   barok:
     "a young pupil of Rembrandt in 17th-century Amsterdam: a long dark cloak over a dark doublet with a small white collar, a broad-brimmed black hat, holding up a small lit lantern that throws warm light on him, a rolled sketch under his arm",
   barok2:
