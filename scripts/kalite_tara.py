@@ -222,6 +222,12 @@ def uygun_adaylar(adaylar, oran, mevcut, reddedilen=()):
     return sorted(l, reverse=True)
 
 
+def boyutu(yol):
+    r = subprocess.run(['sips', '-g', 'pixelWidth', '-g', 'pixelHeight', str(yol)], capture_output=True, text=True)
+    s = [int(x) for x in re.findall(r'pixel(?:Width|Height):\s*(\d+)', r.stdout)]
+    return s if len(s) == 2 else None
+
+
 def mevcut_boy(ad):
     """Elimizdeki en büyük kopyanın uzun kenarı (gorseller_devasa; yoksa 1280'lik kopya)."""
     for yol in (HEDEF / f'{ad}.jpg', KOK / f'gorseller/b/{ad}.jpg'):
@@ -318,8 +324,11 @@ def reddet(adlar):
             continue
         reddedilen.setdefault(ad, set()).add(iy['dosya'])
         yol = HEDEF / f'{ad}.jpg'
-        if yol.exists():
-            yol.unlink()  # yeni dosyadan inmiş olabilir: eski kaynağından yeniden iner
+        # yalnız reddedilen dosyadan inmişse silinir (boyu onunki kadar): eski kaynağından yeniden iner. Henüz inmemişse
+        # elimizdeki eski kopyaya dokunulmaz (önceden hepsi siliniyor, boşuna yeniden iniyordu)
+        b = boyutu(yol) if yol.exists() else None
+        if b and max(b) >= 0.95 * min(4096, max(iy['g'], iy['y'])):
+            yol.unlink()
         print(f'{ad}: {iy["dosya"]} reddedildi')
     kaydet_cikti(sonuc, reddedilen)
     print('Yeniden çalıştır: python3 scripts/kalite_tara.py (varsa sıradaki aday denenir, sonra inceleme sayfası açılır)')
