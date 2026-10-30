@@ -1,6 +1,6 @@
 // Adres (#/…) → ekran eşlemesi.
 import { gecisBildir, yonAl } from '../gecis.js';
-import { d, sekmeleriCiz, hataGoster, cizimBaslat, geriDonusBildir, sekmedenMi, bellektenGeriKoy } from './ortak.js';
+import { d, sekmeleriCiz, hataGoster, cizimBaslat, geriDonusBildir, sekmedenMi, bellektenGeriKoy, sekmeKokuMu } from './ortak.js';
 import { anaSayfa, gununSayfasi } from './bugun.js';
 import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuGrubu, konuSayfasi, basyapitSayfasi } from './gozat.js';
 import { pekistirMenusu, pekistir, devamEt } from './pekistir.js';
@@ -49,7 +49,8 @@ export function yonlendir() {
   cizimBaslat();
   // tarayıcının kendi kaydırma geri yüklemesi her geçmiş kaydında kapalı (yeni kayıtlar "auto" başlayabiliyor; İş 57)
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-  // İş 75: yön gezin()'den (ileri / geri oku / kenardan kaydırma / sekme); adres çubuğu gibi dış değişimler ileri
+  // İş 75: yön gezin()'den (ileri / geri oku / kenardan kaydırma / sekme / sekmeler arası kaydırma); adres çubuğu
+  // gibi dış değişimler ileri
   const yon = yonAl() || 'ileri';
   const geriMi = yon === 'geri' || yon === 'kaydirma';
   const ilk = !d.yigin.length;
@@ -59,7 +60,9 @@ export function yonlendir() {
     if (i >= 0) d.yigin.length = i + 1;
     else d.yigin = [h];
   } else if (d.yigin[d.yigin.length - 1] !== h) d.yigin.push(h);
-  const sekmeden = sekmedenMi(h) || yon === 'sekme';
+  // İş 76: sekmelerin ana sayfalarında geri yok (kenardan kaydırma sekmeler arasında geçirir)
+  if (sekmeKokuMu(h)) d.yigin = [h];
+  const sekmeden = sekmedenMi(h) || yon === 'sekme' || yon === 'sayfa';
   gecisBildir({ yon: sekmeden ? 'sekme' : yon, ilk });
   // geri dönüşte ve sekme çubuğundan dönüşte ekran eski kaydırma yerine döner (İş 51); ileri gidişte en baştan
   geriDonusBildir(sekmeden || geriMi ? h : null);
@@ -67,8 +70,9 @@ export function yonlendir() {
     const m = desen.exec(h);
     if (m) {
       sekmeleriCiz(sekme);
-      // geri dönüş: önceki sayfa bellekten (yeniden çizilmez)
-      if (geriMi && bellektenGeriKoy(h, yon)) return;
+      // geri dönüş ve sekmeler arası geçiş: sayfa bellekten (yeniden çizilmez)
+      const tur = geriMi ? yon : sekmeden ? (yon === 'sayfa' ? 'sayfa' : 'sekme') : null;
+      if (tur && bellektenGeriKoy(h, tur)) return;
       const args = m.slice(1).map((x) => decodeURIComponent(x));
       Promise.resolve(fn(...args)).catch(hataGoster);
       return;

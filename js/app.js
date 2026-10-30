@@ -9,7 +9,7 @@ import { yerelGorselleriAyarla, oranlariAyarla, uzakGorselleriAyarla } from './g
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { ilerlemeYukle, gunlukGuncelle } from './depo.js';
 import { notlariAl } from './karsilastir.js';
-import { bildir, jsonGetir, d, bugun, kaydet, temaUygula, hataGoster, ekran, olaylariBagla as ortakOlaylari } from './ekranlar/ortak.js';
+import { bildir, jsonGetir, d, bugun, kaydet, temaUygula, hataGoster, ekran, SEKME_ADRESLERI, olaylariBagla as ortakOlaylari } from './ekranlar/ortak.js';
 import { ikonografiVeri } from './ekranlar/gozat.js';
 import { yarimYukle, olaylariBagla as pekistirOlaylari } from './ekranlar/pekistir.js';
 import { yonlendir } from './ekranlar/yonlendirme.js';
@@ -119,7 +119,8 @@ async function basla() {
   // İş 73: iPhone'un yuttuğu dokunuşları tamamla (tek dokunuş yetsin)
   dokunuslariKoru();
   // İş 75: uygulama içi gezinme geçmişe yazılmaz; kenardan geri kaydırma ve sayfa belleği
-  gecisKur({ ekran, d });
+  // İş 76: sekmelerin ana sayfaları arasında yatay kaydırma
+  gecisKur({ ekran, d, sekmeler: SEKME_ADRESLERI });
   // Konular (görüntüleyicideki "Konu:" bağlantısı için) ilk ekrandan sonra arka planda
   setTimeout(ikonografiVeri, 1500);
   setTimeout(notlariYukle, 0);
