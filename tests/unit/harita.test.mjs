@@ -245,7 +245,7 @@ test('İş 90: her dönemde durak sayısı kadar yer, aralarında patika; pozlar
       assert.ok(Math.abs(x * W - u.x) < 0.5 && Math.abs(y * H - u.y) < 0.5, `${b.id} ${i}`);
     });
     for (const poz of Object.keys(yolcuVeri.bolgeler[b.id].pozlar))
-      for (const tur of ['gunduz', 'gece']) assert.ok(existsSync(new URL(`../../${yolcuAdresi(b.id, poz, tur)}`, import.meta.url)), `${b.id} ${poz}`);
+      for (const tur of ['gunduz', 'gece']) assert.ok(existsSync(new URL(`../../${yolcuAdresi(b.id, poz, tur, yolcuVeri.bolgeler[b.id].ad)}`, import.meta.url)), `${b.id} ${poz}`);
     assert.ok(yolcuVeri.bolgeler[b.id].pozlar.dur, b.id);
   }
 });
