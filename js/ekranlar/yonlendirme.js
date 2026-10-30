@@ -58,7 +58,8 @@ export function yonlendir() {
     const i = d.yigin.lastIndexOf(h);
     if (i >= 0) d.yigin.length = i + 1;
     else d.yigin = [h];
-  } else if (d.yigin[d.yigin.length - 1] !== h) d.yigin.push(h);
+  } else if (yon === 'bolum' && d.yigin.length) d.yigin[d.yigin.length - 1] = h;
+  else if (d.yigin[d.yigin.length - 1] !== h) d.yigin.push(h);
   // İş 76: sekmelerin ana sayfalarında geri yok
   if (sekmeKokuMu(h)) d.yigin = [h];
   const sekmeden = sekmedenMi(h) || yon === 'sekme';
