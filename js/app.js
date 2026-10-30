@@ -108,8 +108,9 @@ async function basla() {
   d.ortaYillar = akimOrtaYillari(sanatcilar);
   d.ilerleme = await ilerlemeSozu;
   d.yarim = await yarimSozu;
-  // Yarım oturum varken uygulama bir oturum adresinde açıldıysa (yenileme, yeni sürüm) Bugün'deki devam kartına dön
-  if (d.yarim && /^#\/pekistir\/(karisik|hatalar|donem\/.+|konu\/.+)$/.test(location.hash)) history.replaceState(null, '', '#/');
+  // Yarım oturum varken uygulama bir oturum adresinde açıldıysa (yenileme, yeni sürüm) Atölye'deki devam kartına dön
+  // (İş 85: kart Tuval'den kaldırıldı)
+  if (d.yarim && /^#\/pekistir\/(karisik|hatalar|donem\/.+|konu\/.+)$/.test(location.hash)) history.replaceState(null, '', '#/pekistir');
   gunlukGuncelle(d.ilerleme, bugun());
   kaydet();
   temaUygula();

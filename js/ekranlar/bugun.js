@@ -43,7 +43,6 @@ import {
   guncelMi,
   eserKareleriDoldur,
 } from './ortak.js';
-import { devamKarti } from './pekistir.js';
 import { SURUM } from '../surum.js';
 import { gosterilecekler, yenilikYazisi } from '../yenilikler.js';
 import { egimBaslat } from '../egim.js';
@@ -167,7 +166,9 @@ export function anaSayfa() {
   const tur = turBilgisi('karisik');
   const tekrar = kacis(tarih);
   const son = (d.ilerleme.sonCalisilanlar || []).map((id) => d.harita.get(id)).filter(Boolean);
-  const devam = devamKarti();
+  // İş 85: yarım kalan turun "Kaldığın yerden devam et" kartı Tuval'den kaldırıldı (tablonun üstünü kapatıyordu);
+  // Atölye'de duruyor
+  const devam = '';
   // en alt satırlar sahne varsa mozaiğin içinde kalır: tablonun renkleri sayfanın sonuna kadar sürer
   const alt = `${
     son.length

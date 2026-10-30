@@ -39,7 +39,7 @@ test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en a
   for (const b of await dokunmaBoylari(page, '.bolumler a')) expect(b).toBeGreaterThanOrEqual(44);
   // "Zaman" sekmesi kenardan kesilmez
   const son = await page.locator('.bolumler a').last().boundingBox();
-  expect(son.x + son.width).toBeLessThanOrEqual(390);
+  expect(son.x + son.width).toBeLessThanOrEqual(390.5); // piksel altı (yazı tipi çizimi makineden makineye)
   await page.goto('./#/pekistir');
   await expect(page.locator('.secim-hap button').first()).toBeVisible();
   for (const b of await dokunmaBoylari(page, '.secim-hap button')) expect(b).toBeGreaterThanOrEqual(44);
@@ -232,21 +232,25 @@ test.describe('görüntüleyici dokunuş ve yatay ekran', () => {
     await expect(page.locator('.gor-alt')).toHaveCSS('opacity', '0');
     await page.touchscreen.tap(x, y);
     await expect(gor).not.toHaveClass(/sade/);
-    // çift dokunuş: yakınlaşır, arayüz kalır
-    await page.touchscreen.tap(x, y);
-    await page.waitForTimeout(80);
-    await page.touchscreen.tap(x, y);
+    // çift dokunuş: yakınlaşır, arayüz kalır. İki dokunuş CDP ile art arda gönderilir (makine yüklüyken
+    // touchscreen.tap'ler arası 320 ms'yi aşıp iki ayrı tek dokunuş sayılabiliyordu)
+    const cdp = await context.newCDPSession(page);
+    const ciftDokun = async () => {
+      for (let i = 0; i < 2; i++) {
+        await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y }] });
+        await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+      }
+    };
+    await ciftDokun();
     await page.waitForTimeout(600);
     await expect(gor).not.toHaveClass(/sade/);
     // İş 81: yakınlaştırma parmak kalkınca kutunun boyutuna işlenir (transform'da yalnız kaydırma): tam çözünürlükte çizilir
-    await expect.poll(() => page.locator('.gor-resim').evaluate((e) => e.style.transform)).toContain('scale(1)');
-    const genislik = await page.locator('.gor-resim').evaluate((e) => [e.getBoundingClientRect().width, e.closest('.gor-sahne').getBoundingClientRect().width, e.style.width]);
-    expect(genislik[0]).toBeGreaterThan(genislik[1] * 1.5);
-    expect(genislik[2]).toMatch(/px$/);
+    await expect
+      .poll(() => page.locator('.gor-resim').evaluate((e) => e.getBoundingClientRect().width / e.closest('.gor-sahne').getBoundingClientRect().width))
+      .toBeGreaterThan(1.5);
+    await expect.poll(() => page.locator('.gor-resim').evaluate((e) => [e.style.transform.includes('scale(1)'), /px$/.test(e.style.width)])).toEqual([true, true]);
     // ikinci çift dokunuş: eski boyuta döner
-    await page.touchscreen.tap(x, y);
-    await page.waitForTimeout(80);
-    await page.touchscreen.tap(x, y);
+    await ciftDokun();
     await page.waitForTimeout(600);
     expect(await page.locator('.gor-resim').evaluate((e) => [e.style.width, e.getBoundingClientRect().width <= e.closest('.gor-sahne').getBoundingClientRect().width + 1])).toEqual(['', true]);
   });

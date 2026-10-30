@@ -28,14 +28,12 @@ test('yarım oturum: 5 kart cevapla, yenile, devam et → 6. karttan sürer', as
   await expect(kart).toBeVisible();
   await expect(kart).toContainText('Kaldığın yerden devam et');
   await expect(page.locator('[data-test="devam-ozet"]')).toHaveText(`Karışık · 6 / ${toplam}`);
-  // kart, günün sanatçısı sahnesinden önce (1.30: sahnede Pekiştir düğmesi yok)
-  const sira = await page.evaluate(() => {
-    const k = document.querySelector('[data-test="devam-kart"]');
-    const p = document.querySelector('[data-test="gunun-kart"]');
-    return !p || !!(k.compareDocumentPosition(p) & Node.DOCUMENT_POSITION_FOLLOWING);
-  });
-  expect(sira).toBe(true);
-
+  // İş 85: yenileyince Atölye'deki kart (Tuval'de kart yok)
+  await expect(page).toHaveURL(/#\/pekistir$/);
+  await page.goto('./#/');
+  await expect(page.locator('[data-test="gunun-kart"]')).toBeAttached();
+  await expect(page.locator('[data-test="devam-kart"]')).toHaveCount(0);
+  await page.goto('./#/pekistir');
   await page.locator('[data-test="devam-et"]').click();
   await expect(page.locator('[data-test="sayac"]')).toHaveText(`6 / ${toplam}`);
   await expect(page.locator('[data-test="soru-resim"]')).toHaveAttribute('src', eser);
@@ -65,7 +63,7 @@ test('yarım oturum: akım sorusundan devam, Bitir ve yeni oturum sorusu', async
   await page.getByRole('button', { name: 'Sil, yeni başla' }).click();
   await expect(page.locator('[data-test="sanatci-secenekleri"] button')).toHaveCount(4);
   await page.locator('[data-test="sanatci-secenekleri"] button').first().click();
-  await page.goto('./#/');
+  await page.goto('./#/pekistir');
   await expect(page.locator('[data-test="devam-ozet"]')).toHaveText(/^Döneme göre · Gotik · 2 \//);
   await page.getByRole('button', { name: 'Bitir' }).click();
   await expect(page.locator('[data-test="devam-kart"]')).toHaveCount(0);
@@ -76,7 +74,7 @@ test('yarım oturum: akım sorusundan devam, Bitir ve yeni oturum sorusu', async
 test('yarım oturum: 7 günden eski kayıt sessizce silinir', async ({ page }) => {
   await page.goto('./#/pekistir/karisik');
   await karisikCevapla(page);
-  await page.goto('./#/');
+  await page.goto('./#/pekistir');
   await expect(page.locator('[data-test="devam-kart"]')).toBeVisible();
   await page.evaluate(async () => {
     const db = await new Promise((r) => {
@@ -93,6 +91,6 @@ test('yarım oturum: 7 günden eski kayıt sessizce silinir', async ({ page }) =
     db.close();
   });
   await page.reload();
-  await expect(page.getByRole('heading', { name: 'Sanat Atlası' })).toBeAttached();
+  await expect(page.getByRole('heading', { name: 'Pekiştir' })).toBeVisible();
   await expect(page.locator('[data-test="devam-kart"]')).toHaveCount(0);
 });
