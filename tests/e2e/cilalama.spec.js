@@ -747,3 +747,151 @@ test.describe('İş 75: kenardan kaydırma ve sayfa belleği', () => {
     await expect(page.locator('.sayfa-katman')).toHaveCount(0, { timeout: 3000 });
   });
 });
+
+// İş 76: sekmelerin ana sayfalarında geri yok; aralarında yatay kaydırmayla geçilir (komşu sayfa yanında görünür)
+test.describe('İş 76: sekmeler arası kaydırma', () => {
+  test.use({ hasTouch: true, isMobile: true });
+
+  async function surukle(page, cdp, x0, x1, { y = 420, adim = 12, birak = true } = {}) {
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: x0, y }] });
+    for (let i = 1; i <= adim; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x0 + ((x1 - x0) * i) / adim, y: y + 1 }] });
+    if (birak) {
+      await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+      await page.waitForTimeout(600);
+    }
+  }
+
+  test('sola kaydırınca sağdaki sekme, sağa kaydırınca soldaki; dönülen sayfa bellekten; kısa kaydırma ve uçlar yerinde', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/gozat');
+    const kart = page.locator('a.zaman-kart').first();
+    await kart.waitFor();
+    await page.evaluate(() => (document.querySelector('a.zaman-kart').dataset.iz = 'evet'));
+    const cdp = await context.newCDPSession(page);
+    // Galeri → sola kaydır → Atölye
+    await surukle(page, cdp, 330, 60);
+    await expect(page).toHaveURL(/#\/pekistir$/);
+    await expect(page.locator('#sekmeler a[data-sekme="pekistir"]')).toHaveAttribute('aria-current', 'page');
+    await expect(page.locator('.sayfa-katman')).toHaveCount(0);
+    // sağa kaydırmanın ortasında Galeri solda gerçek hâliyle
+    await surukle(page, cdp, 60, 220, { birak: false });
+    await expect(page.locator('.sayfa-katman a.zaman-kart[data-iz="evet"]')).toHaveCount(1);
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 330, y: 421 }] });
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await expect(page).toHaveURL(/#\/gozat$/);
+    await expect(page.locator('#uygulama a.zaman-kart[data-iz="evet"]')).toHaveCount(1);
+    await expect(page.locator('.sayfa-katman')).toHaveCount(0);
+    expect(await page.locator('#uygulama').evaluate((e) => e.style.transform)).toBe('');
+    // kısa kaydırma: yerinde kalır
+    await surukle(page, cdp, 200, 160, { adim: 4 });
+    await expect(page).toHaveURL(/#\/gozat$/);
+    await expect(page.locator('.sayfa-katman')).toHaveCount(0);
+    // Tuval'de sağa kaydırma: solda sekme yok, yerinde kalır
+    await page.locator('#sekmeler a[data-sekme="bugun"]').click();
+    await expect(page).toHaveURL(/#\/$/);
+    await page.waitForTimeout(500);
+    await surukle(page, cdp, 60, 330);
+    await expect(page).toHaveURL(/#\/$/);
+    await expect(page.locator('.sayfa-katman')).toHaveCount(0);
+  });
+
+  test('ana sayfada kenardan kaydırma geri gitmez, soldaki sekmeye geçer; alt sayfada geri çalışır', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/gozat');
+    await page.locator('a.zaman-kart').first().waitFor();
+    await page.locator('a.zaman-kart').first().click();
+    await expect(page).toHaveURL(/#\/akim\//);
+    // alt sayfadan sekme çubuğuyla Yolculuk'a
+    await page.locator('#sekmeler a[data-sekme="harita"]').click();
+    await expect(page).toHaveURL(/#\/harita$/);
+    expect(await page.evaluate(() => window.__atlas.yigin)).toEqual(['#/harita']);
+    await page.waitForTimeout(500);
+    const cdp = await context.newCDPSession(page);
+    await surukle(page, cdp, 6, 320);
+    // Galeri'ye ya da Galeri'deki alt sayfaya değil, soldaki sekmeye (Tuval)
+    await expect(page).toHaveURL(/#\/$/);
+    // alt sayfada kenardan kaydırma yine geri
+    await page.goto('./#/gozat');
+    await page.locator('a.zaman-kart').first().waitFor();
+    await page.locator('a.zaman-kart').first().click();
+    await expect(page).toHaveURL(/#\/akim\//);
+    await page.waitForTimeout(400);
+    await surukle(page, cdp, 6, 320);
+    await expect(page).toHaveURL(/#\/gozat$/);
+  });
+
+  test('açılmamış sekmeye kaydırırken önceki oturumdan saklanan önizleme görünür; sürüm değişince atılır', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/gozat');
+    await page.locator('a.zaman-kart').first().waitFor();
+    await page.locator('#sekmeler a[data-sekme="pekistir"]').click();
+    await expect(page).toHaveURL(/#\/pekistir$/);
+    await page.waitForTimeout(400);
+    // uygulama arka plana atıldı
+    await page.evaluate(() => window.dispatchEvent(new Event('pagehide')));
+    const kayit = await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:sekme-onizleme')));
+    expect(Object.keys(kayit.sayfalar)).toEqual(expect.arrayContaining(['#/gozat', '#/pekistir']));
+    // yeni oturum: bellek boş, Galeri daha açılmadı
+    await page.reload();
+    await expect(page.locator('#uygulama')).not.toBeEmpty();
+    await page.waitForTimeout(600);
+    const cdp = await context.newCDPSession(page);
+    await surukle(page, cdp, 60, 220, { birak: false });
+    await expect(page.locator('.sayfa-katman a.zaman-kart').first()).toBeAttached();
+    expect(await page.locator('.sayfa-katman a.zaman-kart').first().evaluate((e) => e.closest('[inert]') !== null)).toBe(true);
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 330, y: 421 }] });
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await expect(page).toHaveURL(/#\/gozat$/);
+    await expect(page.locator('#uygulama a.zaman-kart').first()).toBeVisible();
+    await expect(page.locator('.sayfa-katman')).toHaveCount(0);
+    // başka sürümün kaydı kullanılmaz (eski oturum kapanırken kendi kaydını yazar; sürüm, yeni sayfa açılırken
+    // uygulamadan önce değiştirilir)
+    await context.addInitScript(() => {
+      if (!sessionStorage.getItem('surumBoz')) return;
+      const k = JSON.parse(localStorage.getItem('sanat-atlasi:sekme-onizleme'));
+      k.surum = '0.0.1';
+      localStorage.setItem('sanat-atlasi:sekme-onizleme', JSON.stringify(k));
+      window.__bozuldu = Object.keys(k.sayfalar);
+    });
+    await page.goto('./#/pekistir');
+    await page.evaluate(() => sessionStorage.setItem('surumBoz', '1'));
+    await page.reload();
+    await expect(page.locator('#uygulama')).not.toBeEmpty();
+    expect(await page.evaluate(() => window.__bozuldu)).toContain('#/gozat');
+    await page.waitForTimeout(600);
+    await surukle(page, cdp, 60, 220, { birak: false });
+    // iki komşu (Galeri ve Defter) boş katman
+    await expect(page.locator('.sayfa-katman')).toHaveCount(2);
+    await expect(page.locator('.sayfa-katman a.zaman-kart')).toHaveCount(0);
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+  });
+
+  test('yatay kayan şeritte ve dikey kaydırmada sekme değişmez', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/gozat');
+    await page.locator('a.zaman-kart').first().waitFor();
+    const cdp = await context.newCDPSession(page);
+    // dikey ağırlıklı hareket
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: 200, y: 600 }] });
+    for (let i = 1; i <= 8; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 200 - i * 6, y: 600 - i * 30 }] });
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await page.waitForTimeout(500);
+    await expect(page).toHaveURL(/#\/gozat$/);
+    // yatay kayan bir şerit (varsa): üstünde kaydırma sekme değiştirmez
+    const yer = await page.evaluate(() => {
+      for (const el of document.querySelectorAll('#uygulama *')) {
+        if (el.scrollWidth > el.clientWidth + 1 && /auto|scroll/.test(getComputedStyle(el).overflowX)) {
+          el.scrollIntoView({ block: 'center' });
+          const r = el.getBoundingClientRect();
+          if (r.height > 30) return { x: r.left + r.width / 2, y: r.top + r.height / 2 };
+        }
+      }
+      return null;
+    });
+    if (yer) {
+      await page.waitForTimeout(200);
+      await surukle(page, cdp, yer.x + 100, yer.x - 150, { y: yer.y });
+      await expect(page).toHaveURL(/#\/gozat$/);
+    }
+  });
+});

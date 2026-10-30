@@ -13574,6 +13574,10 @@ img.aninda {
 .gor.kaydiriliyor {
   will-change: transform;
 }
+/* İş 76: sekmeler arası kaydırmada sayfalar yan yana (üst üste değil): gölge yok */
+#uygulama.sayfalaniyor {
+  box-shadow: none;
+}
 .gor.kaydiriliyor {
   box-shadow: -16px 0 36px rgba(0, 0, 0, 0.5);
 }

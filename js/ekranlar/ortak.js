@@ -1,5 +1,5 @@
 // Ekranların ortak parçaları: uygulama durumu (d), ekran öğesi, küçük yardımcılar, resim rengi, bildirim, sekme çubuğu, başlık ve çizim.
-import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu } from '../gecis.js';
+import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu, bellekEskit, bellegeAl, sekmeGecisi, onizlemeAl } from '../gecis.js';
 import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
@@ -62,6 +62,8 @@ export async function jsonGetir(yol) {
 
 export function kaydet() {
   ilerlemeKaydet(d.ilerleme);
+  // İş 76: bellekteki sayfalar eskidi (sayılar değişmiş olabilir); dönülünce yeniden çizilir
+  bellekEskit();
 }
 
 export function bugun() {
@@ -331,6 +333,9 @@ const SEKMELER = [
   ['pekistir', 'Atölye', '#/pekistir'],
   ['ilerleme', 'Defter', '#/ilerleme'],
 ];
+// İş 76: sekmelerin ana sayfaları (geri yok; aralarında yatay kaydırmayla geçilir)
+export const SEKME_ADRESLERI = SEKMELER.map(([, , h]) => h);
+export const sekmeKokuMu = (adres) => SEKME_ADRESLERI.includes(adres === '' || adres === '#' ? '#/' : adres);
 
 // etkin: sekme kimliği; null → sekme çubuğu yok (pekiştirme kartı).
 // Çubuk bir kez kurulur; sonra yalnızca seçili sekme ve elmas işaret güncellenir (işaret kayarak geçer).
@@ -464,15 +469,21 @@ export function geri(yedek = '#/') {
 // İş 75: geri dönüşte (geri oku ya da kenardan kaydırma) önceki sayfa yeniden çizilmez, bellekten konur: anında,
 // kaldığı yerde. Döndürür: konduysa true (bellekte yoksa yönlendirici sayfayı yeniden çizer).
 let yeniGeriDonus = false;
+// yon: 'geri' (geri oku), 'kaydirma' (kenardan kaydırma), 'sekme' (sekme çubuğu), 'sayfa' (sekmeler arası kaydırma)
 export function bellektenGeriKoy(adres, yon) {
+  const sekmeden = yon === 'sekme' || yon === 'sayfa';
+  const onizleme = yon === 'sayfa' && onizlemeAl();
   const eski = sayfayiAyir(ekran, sonCizilenAdres);
   const s = bellektenKoy(adres, ekran);
   if (!s) {
-    // bellekte yok: ayrılan sayfa yerine konur, yönlendirici yeniden çizecek
+    // bellekte yok (ya da eskimiş): ayrılan sayfa yerine konur, yönlendirici yeniden çizecek. Geri dönüşte ve
+    // önizlemesi gösterilmiş sayfada öğeler sırayla belirmez; sekmeden ilk gelişte belirir.
     if (eski) ekran.replaceChildren(...eski.dugumler);
-    yeniGeriDonus = true;
+    yeniGeriDonus = !sekmeden || onizleme;
     return false;
   }
+  // sekmeler arasında ayrılan sayfa da bellekte kalır (geri dönüşte ayrılan sayfa yığından çıkmıştır)
+  if (sekmeden) bellegeAl(eski);
   ekran.dataset.hareket = '';
   ekran.classList.remove('perde');
   sonCizilenAdres = adres;
@@ -481,6 +492,7 @@ export function bellektenGeriKoy(adres, yon) {
   kaydirmaYerleri.set(adres, s.y);
   const gecis = geriGecisi(ekran, eski, yon);
   if (gecis) gecis();
+  if (yon === 'sekme') sekmeGecisi(ekran);
   kaydirmaSonu();
   return true;
 }

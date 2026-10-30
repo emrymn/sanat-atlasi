@@ -3,13 +3,14 @@
 import { akimOrtaYillari } from './celdirici.js';
 import { dokunuslariKoru } from './dokunus.js';
 import { gecisKur } from './gecis.js';
+import { SURUM } from './surum.js';
 import { kursKonulari } from './kurs.js';
 import { eserTurleriniAyarla, hazirOnbellek, eserAdlariniAyarla, adlariAl, kolaylikAl } from './eserler.js';
 import { yerelGorselleriAyarla, oranlariAyarla, uzakGorselleriAyarla } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { ilerlemeYukle, gunlukGuncelle } from './depo.js';
 import { notlariAl } from './karsilastir.js';
-import { bildir, jsonGetir, d, bugun, kaydet, temaUygula, hataGoster, ekran, olaylariBagla as ortakOlaylari } from './ekranlar/ortak.js';
+import { bildir, jsonGetir, d, bugun, kaydet, temaUygula, hataGoster, ekran, SEKME_ADRESLERI, olaylariBagla as ortakOlaylari } from './ekranlar/ortak.js';
 import { ikonografiVeri } from './ekranlar/gozat.js';
 import { yarimYukle, olaylariBagla as pekistirOlaylari } from './ekranlar/pekistir.js';
 import { yonlendir } from './ekranlar/yonlendirme.js';
@@ -119,7 +120,8 @@ async function basla() {
   // İş 73: iPhone'un yuttuğu dokunuşları tamamla (tek dokunuş yetsin)
   dokunuslariKoru();
   // İş 75: uygulama içi gezinme geçmişe yazılmaz; kenardan geri kaydırma ve sayfa belleği
-  gecisKur({ ekran, d });
+  // İş 76: sekmelerin ana sayfaları arasında yatay kaydırma
+  gecisKur({ ekran, d, sekmeler: SEKME_ADRESLERI, surum: SURUM });
   // Konular (görüntüleyicideki "Konu:" bağlantısı için) ilk ekrandan sonra arka planda
   setTimeout(ikonografiVeri, 1500);
   setTimeout(notlariYukle, 0);
