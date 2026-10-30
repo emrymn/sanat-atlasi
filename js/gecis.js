@@ -439,6 +439,10 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
   document.addEventListener('touchend', bitir, { capture: true });
   document.addEventListener('touchcancel', bitir, { capture: true });
 
+  // İş 86d: kenardan kaydırarak geri: sayfa yandan kaymak yerine geldiği yere (açıldığı nokta) doğru küçülür, köşeleri
+  // yuvarlaklaşır; alttaki önceki sayfa aydınlanıp yerine oturur. Bırakınca küçülüp söner ya da geri büyür.
+  // Hareket azaltma açıksa eski yandan kayma.
+  const kucul = (x) => !x.gor && !hareketAz();
   function kaydirmaBaslat(x) {
     suruyor(true);
     if (x.gor) {
@@ -448,14 +452,34 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
     const onceki = d.yigin[d.yigin.length - 2];
     const s = bellek.get(onceki);
     x.onceki = onceki;
+    x.adres = simdiki();
     x.s = s;
     x.katman = s ? katman(s) : null;
     ekran.classList.add('gecis-on', 'kaydiriliyor');
+    if (kucul(x)) {
+      const k = kokenler.get(simdiki()) || { x: W() / 2, y: window.innerHeight / 2 };
+      const r = ekran.getBoundingClientRect();
+      x.koken = k;
+      ekran.classList.add('buyuyor');
+      ekran.style.transformOrigin = `${k.x - r.left}px ${k.y - r.top}px`;
+      if (x.katman) x.katman.k.style.transformOrigin = `${k.x}px ${k.y}px`;
+    }
   }
+  // kaydırma oranına göre küçülme (p: 0–1)
+  const kucukDurum = (x, p) => ({
+    transform: `translate3d(${(x.dx || 0) * 0.3}px, 0, 0) scale(${1 - 0.45 * p})`,
+    borderRadius: `${Math.round(28 * Math.min(1, p * 3))}px`,
+  });
+  const alttaki = (p) => ({ transform: `scale(${0.94 + 0.06 * p})`, filter: `brightness(${0.55 + 0.45 * p})` });
   function kaydirmaIlerlet(x) {
     const p = Math.min(1, x.dx / W());
     if (x.gor) {
       x.gor.style.transform = `translate3d(${x.dx}px, 0, 0)`;
+      return;
+    }
+    if (kucul(x)) {
+      Object.assign(ekran.style, kucukDurum(x, p));
+      if (x.katman) Object.assign(x.katman.k.style, alttaki(p));
       return;
     }
     ekran.style.transform = `translate3d(${x.dx}px, 0, 0)`;
@@ -466,19 +490,27 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
   }
   function kaydirmaBitir(x, tamam) {
     const el = x.gor || ekran;
-    const kalan = tamam ? W() - x.dx : x.dx;
-    const sure = Math.max(120, Math.min(360, kalan * 0.9));
-    const hedef = tamam ? W() : 0;
-    const a = el.animate([{ transform: `translateX(${x.dx}px)` }, { transform: `translateX(${hedef}px)` }], { duration: sure, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' });
-    if (x.katman) {
-      const p = x.dx / W();
-      x.katman.k.animate(
-        [
-          { transform: `translateX(${-30 * (1 - p)}%)`, filter: `brightness(${0.72 + 0.28 * p})` },
-          { transform: tamam ? 'none' : 'translateX(-30%)', filter: `brightness(${tamam ? 1 : 0.72})` },
-        ],
-        { duration: sure, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' },
-      );
+    const p = Math.min(1, x.dx / W());
+    let a;
+    if (kucul(x)) {
+      const ayar = { duration: tamam ? 460 : 380, easing: tamam ? 'cubic-bezier(0.3, 0.6, 0.2, 1)' : 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' };
+      const simdi = { ...kucukDurum(x, p), opacity: 1 };
+      a = ekran.animate([simdi, tamam ? { transform: `translate3d(${x.dx * 0.3}px, 0, 0) scale(0.2)`, borderRadius: '28px', opacity: 0 } : { transform: 'none', borderRadius: '0px', opacity: 1 }], ayar);
+      if (x.katman) x.katman.k.animate([alttaki(p), tamam ? { transform: 'none', filter: 'brightness(1)' } : alttaki(0)], ayar);
+    } else {
+      const kalan = tamam ? W() - x.dx : x.dx;
+      const sure = Math.max(120, Math.min(360, kalan * 0.9));
+      const hedef = tamam ? W() : 0;
+      a = el.animate([{ transform: `translateX(${x.dx}px)` }, { transform: `translateX(${hedef}px)` }], { duration: sure, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' });
+      if (x.katman) {
+        x.katman.k.animate(
+          [
+            { transform: `translateX(${-30 * (1 - p)}%)`, filter: `brightness(${0.72 + 0.28 * p})` },
+            { transform: tamam ? 'none' : 'translateX(-30%)', filter: `brightness(${tamam ? 1 : 0.72})` },
+          ],
+          { duration: sure, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' },
+        );
+      }
     }
     const son = () => {
       if (x.gor) {
@@ -497,8 +529,11 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
           x.katman.k.remove();
         }
         ekran.style.transform = '';
+        ekran.style.borderRadius = '';
+        ekran.style.transformOrigin = '';
         a.cancel();
-        ekran.classList.remove('gecis-on', 'kaydiriliyor');
+        ekran.classList.remove('gecis-on', 'kaydiriliyor', 'buyuyor');
+        if (tamam && x.koken) kokenler.delete(x.adres);
         suruyor(false);
       };
       // tamamlandı: sayfa kaydırılmış, önceki sayfa altta görünür kalır; yönlendirici önceki sayfayı (bellekten)
