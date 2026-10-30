@@ -902,3 +902,18 @@ test.describe('İş 82: günün sanatçısının görselleri', () => {
     expect(srcler[0]).toMatch(/gorseller\/[kb]\//);
   });
 });
+
+// İş 83: Tuval'in tablosu ekranı kaplar: ekranın oranına en yakın, en büyük kopyası olan tablo (David'de Marat'nın
+// Ölümü iki yanından %40 kırpılıyordu; yerine Çalışma Odasında Napolyon)
+test('İş 83: günün tablosu ekrana en iyi oturan, en büyük kopyalı tablo', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/ayarlar');
+  await page.locator('#sekmeler a').first().waitFor();
+  await page.evaluate(async () => {
+    const { bugun, kaydet } = await import('./js/ekranlar/ortak.js');
+    window.__atlas.ilerleme.gununDegisim = { tarih: bugun(), id: 'jacques-louis-david' };
+    kaydet();
+  });
+  await page.goto('./#/');
+  await expect(page.locator('[data-gunun-gorsel] > img')).toHaveAttribute('alt', /Napolyon/, { timeout: 10000 });
+});
