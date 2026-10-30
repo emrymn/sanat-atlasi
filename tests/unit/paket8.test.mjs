@@ -248,9 +248,9 @@ test('yenilikYazisi biçimi ve listenin başı şimdiki sürüm', () => {
 });
 
 // ---------- sürüm, kabuk, T2, T3 ----------
-test('sürüm: js/surum.js ile sw.js aynı, 1.54.9', () => {
-  assert.equal(SURUM, '1.54.9');
-  assert.match(oku('sw.js'), /const SURUM = '1\.54\.9';/);
+test('sürüm: js/surum.js ile sw.js aynı, 1.54.10', () => {
+  assert.equal(SURUM, '1.54.10');
+  assert.match(oku('sw.js'), /const SURUM = '1\.54\.10';/);
 });
 
 test('T2: eser notları açılışta beklenmez, ilk ekrandan sonra yüklenir', () => {

@@ -400,8 +400,9 @@ export async function pekistir(kip, akim, { yeni = false, onayli = false } = {})
             : kip === 'konu'
               ? 'Bu konunun açık sanatçısı yok ya da görselleri bulunamadı.'
               : `Bugünkü yeni sanatçı sınırına (${GUNLUK_YENI_SINIRI}) ulaşmış olabilirsin ya da bu sanatçıların görseli bulunamadı.`
-        }</p></div>${kip === 'karisik' ? '' : eylemKarti({ href: '#/pekistir/karisik', baslik: 'Karışık tur başlat', ust: 'Bunun yerine' })}${metinBag('#/pekistir', 'Pekiştir’e dön')}`,
+        }</p></div>${kip === 'karisik' ? '' : eylemKarti({ href: '#/pekistir/karisik', baslik: 'Karışık tur başlat', ust: 'Bunun yerine', resim: acikListe()[0] ? { sanatci: acikListe()[0].id } : null })}${metinBag('#/pekistir', 'Pekiştir’e dön')}`,
       );
+      kucukKareleriDoldur();
       return devamCanlandir();
     }
   }
@@ -581,13 +582,20 @@ const halkaIci = () =>
 
 // İş 85d: tur başlatan/sürdüren tek eylem: devam kartıyla aynı dil (kartın tamamı dokunulur, sağda halkalı düğme).
 // Eski iki büyük düğmeli kutuların yerine; ikinci eylem altta sade yazı bağlantısı (metinBag)
-function eylemKarti({ href = '', veri = '', baslik, ust = '', test = '' }) {
-  const ic = `<span class="devam-yazi">${ust ? `<span class="etiket vurgu">${kacis(ust)}</span>` : ''}<b>${kacis(baslik)}</b></span>
+// resim: soldaki küçük tablo (devam kartındaki gibi): { eser } ya da { sanatci } (en bilinen eseri sonradan dolar)
+function eylemKarti({ href = '', veri = '', baslik, ust = '', test = '', resim = null }) {
+  let r = '';
+  if (resim && resim.eser) {
+    const g = secilenGorsel(resim.eser, kotuler()) || resim.eser.gorseller[0];
+    if (g) r = `<img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}">`;
+  } else if (resim && resim.sanatci) r = `<span data-kucuk="${kacis(resim.sanatci)}"></span>`;
+  const ic = `${resim ? `<span class="devam-resim" aria-hidden="true">${r}</span>` : ''}<span class="devam-yazi">${ust ? `<span class="etiket vurgu">${kacis(ust)}</span>` : ''}<b>${kacis(baslik)}</b></span>
       <span class="devam-oynat" aria-hidden="true" style="--oran:1">${halkaIci()}</span>`;
   const t = test ? ` data-test="${test}"` : '';
+  const sinif = `devam-kart eylem-kart${resim ? ' resimli' : ''}`;
   return href
-    ? `<a class="devam-kart eylem-kart" href="${href}"${t}>${ic}</a>`
-    : `<button class="devam-kart eylem-kart" type="button" ${veri}${t}>${ic}</button>`;
+    ? `<a class="${sinif}" href="${href}"${t}>${ic}</a>`
+    : `<button class="${sinif}" type="button" ${veri}${t}>${ic}</button>`;
 }
 const metinBag = (href, yazi) => `<p class="metin-bag"><a href="${href}">${kacis(yazi)}</a></p>`;
 
@@ -1495,7 +1503,7 @@ function ozetCiz() {
       <p class="okuma italik">${ot.yanlis ? 'Yanlış yaptıkların daha sık karşına çıkacak.' : 'Hepsi doğru, harika.'}</p>
     </div>
     ${gecenlerHtml(o.gecenler || [])}
-    <div class="menu">${eylemKarti({ veri: 'data-yeni-tur', baslik: 'Bir tur daha', ust: 'Devam' })}${metinBag('#/', 'Tuval’e dön')}</div>
+    <div class="menu">${eylemKarti({ veri: 'data-yeni-tur', baslik: 'Bir tur daha', ust: 'Yeni tur', resim: o.kart && o.kart.eser ? { eser: o.kart.eser } : null })}${metinBag('#/', 'Tuval’e dön')}</div>
     ${toplam && !ot.yanlis ? yaldizYapraklari() : ''}`);
   sayarakYaz(ekran.querySelector('.ozet .ad'), ot.dogru, toplam);
   devamCanlandir();
