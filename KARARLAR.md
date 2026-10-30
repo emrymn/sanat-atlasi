@@ -1530,3 +1530,11 @@ Emre (1.54.1): "hâlâ çok kasıyor kaydırırken sayfalar arası; son kez dene
 - Sayfa kaydırılırken ona zemin ve gölge boyanıyordu (`gecis-on`); sayfalar yan yana olduğundan gereksizdi, kaldırıldı.
 - Konumlar kare başına bir kez güncellenir (`requestAnimationFrame`); dokunuş olayları kareden sık gelebiliyor. Kenardan geri kaydırmaya da uygulandı.
 - Chromium'da (4 kat yavaş işlemci değil, normal) sürükleme sırasında tarama işi ~235 → 130–205 ms (20 kare). Gerçek iPhone'da hâlâ kasarsa özellik kaldırılacak (Emre'nin kararı).
+
+## İş 79 · Sekmeler arası kaydırma kaldırıldı (2026-10-30, v1.54.3)
+
+İş 78'den sonra da gerçek iPhone'da kasıyordu; Emre'nin kararıyla kaldırıldı. Kalanlar:
+- Sekmelerin ana sayfalarında geri yok (İş 76): kenardan kaydırma hiçbir şey yapmaz. Kenardan başlayan yatay hareket tarayıcının kendi geri hareketine de bırakılmaz (tarayıcıda açıldığında önceki siteye ya da boş sayfaya gidebiliyordu).
+- Sekmelerin ana sayfaları bellekte kalır: sekme çubuğuyla dönünce kaldığı yerde, yeniden çizilmeden (ilerleme kaydedildiyse yeniden çizilir).
+- Kaldırılanlar: yatay sürüklemeyle sekme değiştirme, komşu sayfa katmanları, önceki oturumdan saklanan sayfa önizlemeleri (İş 76b; telefonda kalan kayıt açılışta silinir). Yenilikler'deki 1.54 satırı kalan davranışa göre düzeltildi.
+- Alt sayfalarda kenardan geri kaydırma (İş 75) aynen; İş 78'deki katman ve kare hızı iyileştirmeleri onda kalır.

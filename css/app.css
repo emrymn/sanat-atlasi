@@ -13574,10 +13574,6 @@ img.aninda {
 .gor.kaydiriliyor {
   will-change: transform;
 }
-/* İş 76: sekmeler arası kaydırmada sayfalar yan yana (üst üste değil): gölge yok */
-#uygulama.sayfalaniyor {
-  box-shadow: none;
-}
 /* İş 77: katman ekran boyunda; içi dışarıyı etkilemez (yerleşim ve boyama ondan taşmaz) */
 .sayfa-katman {
   contain: strict;
