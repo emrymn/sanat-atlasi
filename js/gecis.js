@@ -66,7 +66,9 @@ if (typeof document !== 'undefined') {
       // İş 86: yeni sayfa dokunulan öğenin yerinden büyüyerek açılır: öğenin ortası (yoksa dokunulan nokta)
       const o = e.target.closest && e.target.closest('a, button, [role="button"], .eser, label');
       const r = o && o.getBoundingClientRect();
-      dokunus = { zaman: Date.now(), x: r ? r.left + r.width / 2 : e.clientX, y: r ? r.top + r.height / 2 : e.clientY, g: r ? r.width : 0 };
+      // İş 86e: öğenin kutusu ve köşe yuvarlaklığı da: sayfa o şekilden açılır, o şekle kapanır
+      const kutu = r && r.width >= 24 && r.height >= 16 ? { x: r.left, y: r.top, w: r.width, h: r.height, yc: Math.min(28, parseFloat(getComputedStyle(o).borderTopLeftRadius) || 12) } : null;
+      dokunus = { zaman: Date.now(), x: r ? r.left + r.width / 2 : e.clientX, y: r ? r.top + r.height / 2 : e.clientY, g: r ? r.width : 0, kutu };
     },
     true,
   );
@@ -164,12 +166,15 @@ export function gecisHazirla(ekran, eski) {
     return null;
   }
   if (g.yon === 'geri') return geriGecis(ekran, eski);
-  if (kk) return kartBuyut(ekran, kk.el, kk.r, eski);
+  if (kk) {
+    kokenler.set(simdiki(), { x: kk.r.left + kk.r.width / 2, y: kk.r.top + kk.r.height / 2, kutu: { x: kk.r.left, y: kk.r.top, w: kk.r.width, h: kk.r.height, yc: 14 } });
+    return kartBuyut(ekran, kk.el, kk.r, eski);
+  }
   // İş 86: yandan kaymak yerine dokunulan yerden büyüyerek (dokunuş yoksa ekranın ortasından)
   const n = dokunus && Date.now() - dokunus.zaman < 1500 ? dokunus : { x: innerWidth / 2, y: innerHeight / 2, g: 0 };
   dokunus = null;
-  kokenler.set(simdiki(), { x: n.x, y: n.y });
-  return buyumeGecis(ekran, eski, n);
+  kokenler.set(simdiki(), { x: n.x, y: n.y, kutu: n.kutu || null });
+  return n.kutu ? sekilGecis(ekran, eski, n) : buyumeGecis(ekran, eski, n);
 }
 // geri dönüşte (bellekten) ayrılan sayfa: geri okuyla geçişli, kaydırmada geçişsiz
 export function geriGecisi(ekran, eski, yon) {
@@ -225,6 +230,45 @@ function ileriGecis(ekran, eski) {
 
 // İş 86: yeni sayfa dokunulan yerden büyüyerek gelir (iPhone'da uygulama açılır gibi); alttaki sayfa hafifçe
 // küçülüp kararır. Yalnız transform ve opaklık: ekran kartı işler, her karede boyama yok.
+// İş 86e: kutu (ekran koordinatları) → öğenin kendi koordinatlarında clip-path inset (yuvarlak köşeli). r: öğenin kutusu.
+function kirpma(k, r, yc) {
+  return `inset(${k.y - r.top}px ${r.right - (k.x + k.w)}px ${r.bottom - (k.y + k.h)}px ${k.x - r.left}px round ${yc}px)`;
+}
+const ekranKutusu = () => ({ x: 0, y: 0, w: innerWidth, h: innerHeight });
+// iki kutu arasında (t: 0–1)
+const araKutu = (a, b, t) => ({ x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t, w: a.w + (b.w - a.w) * t, h: a.h + (b.h - a.h) * t });
+
+// İş 86e: sayfa dokunulan öğenin şeklinden açılır: görünen pencere öğenin kutusundan (köşeleri onunkiler gibi) ekranın
+// kenarlarına genişler, içerik o pencerede belirir; alttaki sayfada öğe yerinde kalır (pencere tam onun üstünden çıkar).
+function sekilGecis(ekran, eski, n) {
+  return () => {
+    const { k, ic, geriAl } = katman(eski);
+    suruyor(true);
+    ekran.classList.add('gecis-on', 'buyuyor', 'sekilli');
+    const r = ekran.getBoundingClientRect();
+    k.style.transformOrigin = `${n.x}px ${n.y}px`;
+    const ayar = { duration: 950, easing: YAY_EGRI };
+    k.animate([{ transform: 'none', filter: 'brightness(1)' }, { transform: 'scale(0.96)', filter: 'brightness(0.6)' }], { ...ayar, fill: 'forwards' });
+    const a = ekran.animate(
+      [
+        { clipPath: kirpma(n.kutu, r, n.kutu.yc), opacity: 0 },
+        { opacity: 1, offset: 0.18 },
+        { clipPath: kirpma(ekranKutusu(), r, 0), opacity: 1 },
+      ],
+      ayar,
+    );
+    const bitir = () => {
+      geriAl();
+      k.remove();
+      ic.remove();
+      ekran.classList.remove('gecis-on', 'buyuyor', 'sekilli');
+      suruyor(false);
+      bellegeKoy(eski);
+    };
+    a.finished.then(bitir, bitir);
+  };
+}
+
 function buyumeGecis(ekran, eski, n) {
   return () => {
     const { k, ic, geriAl } = katman(eski);
@@ -263,6 +307,30 @@ function geriGecis(ekran, eski) {
     suruyor(true);
     // İş 86: büyüyerek açılan sayfa geldiği yere küçülerek kapanır; önceki sayfa yerine oturur
     const koken = kokenler.get(eski.adres);
+    // İş 86e: geldiği öğenin şekline daralıp onun içine söner (altında gerçek öğe görünür)
+    if (koken && koken.kutu) {
+      kokenler.delete(eski.adres);
+      k.classList.add('kuculuyor', 'sekilli');
+      const ayar = { duration: 760, easing: 'cubic-bezier(0.32, 0.5, 0.2, 1)' };
+      const kr = { top: 0, left: 0, right: innerWidth, bottom: innerHeight };
+      k.animate(
+        [
+          { clipPath: kirpma(ekranKutusu(), kr, 0), opacity: 1 },
+          { opacity: 1, offset: 0.7 },
+          { clipPath: kirpma(koken.kutu, kr, koken.kutu.yc), opacity: 0 },
+        ],
+        { ...ayar, fill: 'forwards' },
+      );
+      ekran.style.transformOrigin = `${koken.x - ekran.getBoundingClientRect().left}px ${koken.y - ekran.getBoundingClientRect().top}px`;
+      const a = ekran.animate([{ transform: 'scale(0.96)', filter: 'brightness(0.6)' }, { transform: 'none', filter: 'brightness(1)' }], ayar);
+      const bitir = () => {
+        k.remove();
+        ekran.style.transformOrigin = '';
+        suruyor(false);
+      };
+      a.finished.then(bitir, bitir);
+      return;
+    }
     if (koken) {
       kokenler.delete(eski.adres);
       k.classList.add('kuculuyor');
@@ -443,6 +511,9 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
   // yuvarlaklaşır; alttaki önceki sayfa aydınlanıp yerine oturur. Bırakınca küçülüp söner ya da geri büyür.
   // Hareket azaltma açıksa eski yandan kayma.
   const kucul = (x) => !x.gor && !hareketAz();
+  // İş 86e: açıldığı öğenin kutusu biliniyorsa sayfa ona daralır (clip-path); yoksa küçülme (scale)
+  const sekilli = (x) => kucul(x) && x.koken && x.koken.kutu;
+  const kKirp = (x, t) => kirpma(araKutu(ekranKutusu(), x.koken.kutu, t), ekran.getBoundingClientRect(), Math.round(x.koken.kutu.yc * t));
   function kaydirmaBaslat(x) {
     suruyor(true);
     if (x.gor) {
@@ -477,6 +548,13 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
       x.gor.style.transform = `translate3d(${x.dx}px, 0, 0)`;
       return;
     }
+    if (sekilli(x)) {
+      // parmak ekranın %60'ına gelince pencere öğenin şeklini almış olur
+      const t = Math.min(1, p / 0.6);
+      ekran.style.clipPath = kKirp(x, t);
+      if (x.katman) Object.assign(x.katman.k.style, alttaki(p));
+      return;
+    }
     if (kucul(x)) {
       Object.assign(ekran.style, kucukDurum(x, p));
       if (x.katman) Object.assign(x.katman.k.style, alttaki(p));
@@ -492,7 +570,12 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
     const el = x.gor || ekran;
     const p = Math.min(1, x.dx / W());
     let a;
-    if (kucul(x)) {
+    if (sekilli(x)) {
+      const t = Math.min(1, p / 0.6);
+      const ayar = { duration: tamam ? 520 : 380, easing: tamam ? 'cubic-bezier(0.32, 0.5, 0.2, 1)' : 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' };
+      a = ekran.animate([{ clipPath: kKirp(x, t), opacity: 1 }, tamam ? { clipPath: kKirp(x, 1), opacity: 0 } : { clipPath: kKirp(x, 0), opacity: 1 }], ayar);
+      if (x.katman) x.katman.k.animate([alttaki(p), tamam ? { transform: 'none', filter: 'brightness(1)' } : alttaki(0)], ayar);
+    } else if (kucul(x)) {
       const ayar = { duration: tamam ? 460 : 380, easing: tamam ? 'cubic-bezier(0.3, 0.6, 0.2, 1)' : 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' };
       const simdi = { ...kucukDurum(x, p), opacity: 1 };
       a = ekran.animate([simdi, tamam ? { transform: `translate3d(${x.dx * 0.3}px, 0, 0) scale(0.2)`, borderRadius: '28px', opacity: 0 } : { transform: 'none', borderRadius: '0px', opacity: 1 }], ayar);
@@ -531,6 +614,7 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
         ekran.style.transform = '';
         ekran.style.borderRadius = '';
         ekran.style.transformOrigin = '';
+        ekran.style.clipPath = '';
         a.cancel();
         ekran.classList.remove('gecis-on', 'kaydiriliyor', 'buyuyor');
         if (tamam && x.koken) kokenler.delete(x.adres);
