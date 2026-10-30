@@ -324,9 +324,9 @@ function yuru(kap, yol, h, tur, yolcu, no) {
         img.src = yolcuAdresi(p.bolge, poz, tur);
         son = poz;
       }
-      // tek resimle yürürken: adımda sekme ve gövdenin hafif sallanması
+      // adımda sekme (yürüme pozlarıyla daha az); tek resimle yürürken gövde de hafifçe sallanır
       const faz = (m / ADIM) * Math.PI;
-      const sek = poz === 'dur' && m < L ? Math.abs(Math.sin(faz)) : 0;
+      const sek = m < L ? Math.abs(Math.sin(faz)) * (poz === 'dur' ? 1 : 0.5) : 0;
       img.style.translate = `0 ${(-sek * 2.4).toFixed(2)}px`;
       img.style.rotate = `${(poz === 'dur' && m < L ? Math.sin(faz) * 2.5 : 0).toFixed(2)}deg`;
       kamera(true);
