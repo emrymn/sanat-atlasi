@@ -54,10 +54,12 @@ const TASLAKLAR = [
 // gezginle aynı biçimde (sırtı ya da yanı dönük, yüzü belli belirsiz, elinde sanatçı eşyası, aynı boy ve çerçeve) ama
 // başka bir kişi ve o dönemin haritasının üslubunda. Kadın ressamlar da var (Leyster, Vigée Le Brun, Morisot).
 const KARAKTERLER = {
+  // Orta Çağ: Giotto efsanesi (Cimabue onu koyunlarını bir kayaya çizerken bulur); Barok: Rembrandt'ın öğrencisi,
+  // karanlık haritada elinde fener (Emre ilk fikirleri değiştirtti: atölye çırağı, Leyster gibi kadın ressam)
   ortacag:
-    "a young apprentice of a 14th-century Italian painter's workshop: a plain belted wool tunic in muted blue-green, a short hooded cape with the hood down, hose and soft shoes, a small gilded wooden panel wrapped in cloth under his arm and a pouch of pigments at his belt",
+    "a young shepherd boy of 13th-century Tuscany, like the young Giotto in the old story of Cimabue finding him drawing his sheep on a rock: a simple undyed wool tunic with a rope belt, a rough brown hooded cape, bare legs and leather sandals, a wooden shepherd's crook in one hand and a flat slate with a charcoal drawing of a sheep under his arm",
   barok:
-    'a young woman painter of 17th-century Haarlem, like Judith Leyster: a dark brown bodice and skirt, a wide white collar and a white cap, holding a wooden palette with brushes and carrying a small stretched canvas',
+    "a young pupil of Rembrandt in 17th-century Amsterdam: a long dark cloak over a dark doublet with a small white collar, a broad-brimmed black hat, holding up a small lit lantern that throws warm light on him, a rolled sketch under his arm",
   barok2:
     'a young student of the French Royal Academy in the late 17th century: a long deep blue coat with turned-back red cuffs, breeches, stockings, buckled shoes and a tricorne hat, a large portfolio of drawings under his arm',
   aydinlanma:
