@@ -3,6 +3,7 @@
 import { akimOrtaYillari } from './celdirici.js';
 import { dokunuslariKoru } from './dokunus.js';
 import { gecisKur } from './gecis.js';
+import { SURUM } from './surum.js';
 import { kursKonulari } from './kurs.js';
 import { eserTurleriniAyarla, hazirOnbellek, eserAdlariniAyarla, adlariAl, kolaylikAl } from './eserler.js';
 import { yerelGorselleriAyarla, oranlariAyarla, uzakGorselleriAyarla } from './gorsel.js';
@@ -120,7 +121,7 @@ async function basla() {
   dokunuslariKoru();
   // İş 75: uygulama içi gezinme geçmişe yazılmaz; kenardan geri kaydırma ve sayfa belleği
   // İş 76: sekmelerin ana sayfaları arasında yatay kaydırma
-  gecisKur({ ekran, d, sekmeler: SEKME_ADRESLERI });
+  gecisKur({ ekran, d, sekmeler: SEKME_ADRESLERI, surum: SURUM });
   // Konular (görüntüleyicideki "Konu:" bağlantısı için) ilk ekrandan sonra arka planda
   setTimeout(ikonografiVeri, 1500);
   setTimeout(notlariYukle, 0);

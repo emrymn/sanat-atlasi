@@ -38,6 +38,58 @@ function bellekBul(adres) {
   return null;
 }
 
+// İş 76b: sekmelerin ana sayfalarının son hâli telefonda saklanır (uygulama arka plana atılınca). Oturumda henüz
+// açılmamış sekmeye kaydırırken boş sayfa yerine bu önizleme görünür; bırakınca sayfa güncel hâliyle çizilir.
+// Yalnız önizleme: düğmeleri çalışmaz, yerine konmaz. Sürüm değişince atılır; Tuval (günün sanatçısı) yalnız aynı gün.
+const ONIZLEME_ANAHTAR = 'sanat-atlasi:sekme-onizleme';
+const ONIZLEME_EN_BUYUK = 400000; // karakter, sayfa başına
+const gunu = () => new Date().toLocaleDateString('sv');
+let kalici = null; // { surum, sayfalar: { adres: { html, stil, tarih } } }
+function kaliciYukle(surum) {
+  try {
+    const v = JSON.parse(localStorage.getItem(ONIZLEME_ANAHTAR) || 'null');
+    kalici = v && v.surum === surum && v.sayfalar && typeof v.sayfalar === 'object' ? v : { surum, sayfalar: {} };
+  } catch {
+    kalici = { surum, sayfalar: {} };
+  }
+}
+function kaliciKaydet() {
+  if (!kalici || !ortam) return;
+  const dugumHtml = (dugumler) => dugumler.map((n) => (n.nodeType === 1 ? n.outerHTML : n.nodeType === 3 ? n.textContent : '')).join('');
+  const tarih = gunu();
+  for (const adres of ortam.sekmeler) {
+    let html = null;
+    let stil = '';
+    let y = 0;
+    if (ayni(adres, simdiki()) && ortam.ekran.firstChild) {
+      html = dugumHtml([...ortam.ekran.childNodes]);
+      stil = document.documentElement.getAttribute('style') || '';
+      y = window.scrollY;
+    } else {
+      const b = bellekBul(adres);
+      if (b) {
+        html = dugumHtml(b.dugumler);
+        stil = b.stil;
+        y = b.y;
+      }
+    }
+    if (html && html.length <= ONIZLEME_EN_BUYUK) kalici.sayfalar[adres] = { html, stil, tarih, y: Math.round(y) || 0 };
+  }
+  try {
+    localStorage.setItem(ONIZLEME_ANAHTAR, JSON.stringify(kalici));
+  } catch {
+    /* yer yok ya da kapalı: önizlemesiz sürer */
+  }
+}
+function kaliciOnizleme(adres) {
+  const o = kalici && kalici.sayfalar[adres];
+  if (!o || typeof o.html !== 'string' || (ayni(adres, '#/') && o.tarih !== gunu())) return null;
+  const t = document.createElement('template');
+  t.innerHTML = o.html;
+  // yeni oturumda sayfa en baştan çizilir; harita ise kendi durağına kaydırır (son kaldığı yer ona yakın)
+  return { adres, dugumler: [...t.content.childNodes], y: YENIDEN_CIZ.test(adres) ? Number(o.y) || 0 : 0, stil: o.stil || '' };
+}
+
 // Hareket azaltma açıksa geçiş yok. Otomatik testlerde de yok (navigator.webdriver); geçişleri sınayan testler
 // window.__atlasGecis = true ile açar.
 export const hareketAz = () =>
@@ -287,9 +339,14 @@ export function kaydirmaSonu() {
 }
 
 // ---------- Kurulum: bağlantılar ve kenardan kaydırma ----------
-export function gecisKur({ ekran, d, sekmeler = [] }) {
+export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
   ortam = { ekran, d, sekmeler };
   if (typeof document === 'undefined') return;
+  kaliciYukle(surum);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') kaliciKaydet();
+  });
+  window.addEventListener('pagehide', kaliciKaydet);
 
   // Uygulama içi bağlantılar iPhone'un geçmişine yazılmadan (location.replace) açılır. Tıklamayı önleyen kendi
   // işleyicisi olan öğeler (defaultPrevented) dokunulmaz; yeni sekmede açma ve değiştirici tuşlar tarayıcıya kalır.
@@ -435,7 +492,7 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
   function komsuKatman(j) {
     const adres = ortam.sekmeler[j];
     if (!adres) return null;
-    const b = bellekBul(adres);
+    const b = bellekBul(adres) || kaliciOnizleme(adres);
     if (b) return { ...katman(b), adres, onizleme: true };
     const k = document.createElement('div');
     k.className = 'sayfa-katman';

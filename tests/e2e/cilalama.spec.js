@@ -820,6 +820,52 @@ test.describe('İş 76: sekmeler arası kaydırma', () => {
     await expect(page).toHaveURL(/#\/gozat$/);
   });
 
+  test('açılmamış sekmeye kaydırırken önceki oturumdan saklanan önizleme görünür; sürüm değişince atılır', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/gozat');
+    await page.locator('a.zaman-kart').first().waitFor();
+    await page.locator('#sekmeler a[data-sekme="pekistir"]').click();
+    await expect(page).toHaveURL(/#\/pekistir$/);
+    await page.waitForTimeout(400);
+    // uygulama arka plana atıldı
+    await page.evaluate(() => window.dispatchEvent(new Event('pagehide')));
+    const kayit = await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:sekme-onizleme')));
+    expect(Object.keys(kayit.sayfalar)).toEqual(expect.arrayContaining(['#/gozat', '#/pekistir']));
+    // yeni oturum: bellek boş, Galeri daha açılmadı
+    await page.reload();
+    await expect(page.locator('#uygulama')).not.toBeEmpty();
+    await page.waitForTimeout(600);
+    const cdp = await context.newCDPSession(page);
+    await surukle(page, cdp, 60, 220, { birak: false });
+    await expect(page.locator('.sayfa-katman a.zaman-kart').first()).toBeAttached();
+    expect(await page.locator('.sayfa-katman a.zaman-kart').first().evaluate((e) => e.closest('[inert]') !== null)).toBe(true);
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 330, y: 421 }] });
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await expect(page).toHaveURL(/#\/gozat$/);
+    await expect(page.locator('#uygulama a.zaman-kart').first()).toBeVisible();
+    await expect(page.locator('.sayfa-katman')).toHaveCount(0);
+    // başka sürümün kaydı kullanılmaz (eski oturum kapanırken kendi kaydını yazar; sürüm, yeni sayfa açılırken
+    // uygulamadan önce değiştirilir)
+    await context.addInitScript(() => {
+      if (!sessionStorage.getItem('surumBoz')) return;
+      const k = JSON.parse(localStorage.getItem('sanat-atlasi:sekme-onizleme'));
+      k.surum = '0.0.1';
+      localStorage.setItem('sanat-atlasi:sekme-onizleme', JSON.stringify(k));
+      window.__bozuldu = Object.keys(k.sayfalar);
+    });
+    await page.goto('./#/pekistir');
+    await page.evaluate(() => sessionStorage.setItem('surumBoz', '1'));
+    await page.reload();
+    await expect(page.locator('#uygulama')).not.toBeEmpty();
+    expect(await page.evaluate(() => window.__bozuldu)).toContain('#/gozat');
+    await page.waitForTimeout(600);
+    await surukle(page, cdp, 60, 220, { birak: false });
+    // iki komşu (Galeri ve Defter) boş katman
+    await expect(page.locator('.sayfa-katman')).toHaveCount(2);
+    await expect(page.locator('.sayfa-katman a.zaman-kart')).toHaveCount(0);
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+  });
+
   test('yatay kayan şeritte ve dikey kaydırmada sekme değişmez', async ({ page, context }) => {
     await agiHazirla(context);
     await page.goto('./#/gozat');
