@@ -1521,3 +1521,12 @@ Emre: "bozuldu, geçişler kasıyor, ana sayfaya dönünce yazılar gidiyor".
   - Sekme çubuğuyla bellekten dönüşteki saydamlık geçişi (bütün sayfada opaklık animasyonu) kaldırıldı: anında, iPhone sekmeleri gibi.
   - Parmak durup bekledikten sonra kalkınca hız durmadan önceki hareketten hesaplanıyordu (kısa kaydırma bile sayfayı geçirebiliyordu): artık yalnız son 100 ms.
   - Denenip bırakılan: komşu sayfaları boştayken gizli katmanlarda önceden hazırlamak. Gizli sayfaların sürekli animasyonları boşta yükü ikiye katlıyordu (2 sn'de 361 → 720 ms); `content-visibility: hidden` ile uyutulunca uyandırmak 12 ms, sıfırdan kurmak 15–18 ms: kazanç küçük, ayrıca gizli sayfalar belge genelindeki aramalara görünüyordu.
+
+## İş 78 · Sekmeler arası kaydırma hâlâ kasıyor: son deneme (2026-10-30, v1.54.2)
+
+Emre (1.54.1): "hâlâ çok kasıyor kaydırırken sayfalar arası; son kez dene, olmazsa kaldıralım". Chromium'da sayfalama sürüklemesi dikey kaydırmayla aynı boyama yükünde; sorun iPhone'un WebKit'ine özgü görünüyor (burada ölçülemiyor). Olası sebepler ve yapılanlar:
+- Katman (yandaki sayfa) kendi birleştirme katmanında değildi: WebKit JavaScript ile değişen 2B `transform`'u her karede yeniden boyar (bütün ekran dolusu resim ve yazı). `.sayfa-katman { will-change: transform }` ve `translate3d`.
+- Sekme çubuğunun bulanık camındaki vurgu her karede kımıldıyordu (`--surukle`); artık bırakınca kayar.
+- Sayfa kaydırılırken ona zemin ve gölge boyanıyordu (`gecis-on`); sayfalar yan yana olduğundan gereksizdi, kaldırıldı.
+- Konumlar kare başına bir kez güncellenir (`requestAnimationFrame`); dokunuş olayları kareden sık gelebiliyor. Kenardan geri kaydırmaya da uygulandı.
+- Chromium'da (4 kat yavaş işlemci değil, normal) sürükleme sırasında tarama işi ~235 → 130–205 ms (20 kare). Gerçek iPhone'da hâlâ kasarsa özellik kaldırılacak (Emre'nin kararı).
