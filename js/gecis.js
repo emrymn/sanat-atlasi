@@ -34,6 +34,8 @@ let ortam = null; // { ekran, d, sekmeler } — app.js kurar
 let bekleyenYon = null; // gezin() bırakır, yönlendirici alır
 let bekleyen = null; // { yon } — yönlendirici bırakır, ciz() tüketir
 let kart = null; // { el, zaman } — dokunulan kart
+let dokunus = null; // { zaman, x, y, g } — son dokunulan öğenin ortası (İş 86)
+const kokenler = new Map(); // adres → { x, y }: sayfanın büyüyerek açıldığı yer (geri dönüşte oraya küçülür)
 const bellek = new Map(); // adres → { dugumler, y, stil, nesil }
 // İlerleme her kaydedildiğinde (cevap, ayar, işlendi…) bellekteki sayfalar eskir: yerine konmaz, yeniden çizilir
 // (sayıları güncel olsun); kaydırma sırasında altta önizleme olarak yine gösterilir.
@@ -56,6 +58,10 @@ if (typeof document !== 'undefined') {
     (e) => {
       const k = e.target.closest && e.target.closest(KART_SECICI);
       kart = k ? { el: k, zaman: Date.now(), r: k.getBoundingClientRect() } : null;
+      // İş 86: yeni sayfa dokunulan öğenin yerinden büyüyerek açılır: öğenin ortası (yoksa dokunulan nokta)
+      const o = e.target.closest && e.target.closest('a, button, [role="button"], .eser, label');
+      const r = o && o.getBoundingClientRect();
+      dokunus = { zaman: Date.now(), x: r ? r.left + r.width / 2 : e.clientX, y: r ? r.top + r.height / 2 : e.clientY, g: r ? r.width : 0 };
     },
     true,
   );
@@ -154,7 +160,11 @@ export function gecisHazirla(ekran, eski) {
   }
   if (g.yon === 'geri') return geriGecis(ekran, eski);
   if (kk) return kartBuyut(ekran, kk.el, kk.r, eski);
-  return ileriGecis(ekran, eski);
+  // İş 86: yandan kaymak yerine dokunulan yerden büyüyerek (dokunuş yoksa ekranın ortasından)
+  const n = dokunus && Date.now() - dokunus.zaman < 1500 ? dokunus : { x: innerWidth / 2, y: innerHeight / 2, g: 0 };
+  dokunus = null;
+  kokenler.set(simdiki(), { x: n.x, y: n.y });
+  return buyumeGecis(ekran, eski, n);
 }
 // geri dönüşte (bellekten) ayrılan sayfa: geri okuyla geçişli, kaydırmada geçişsiz
 export function geriGecisi(ekran, eski, yon) {
@@ -208,10 +218,60 @@ function ileriGecis(ekran, eski) {
   };
 }
 
+// İş 86: yeni sayfa dokunulan yerden büyüyerek gelir (iPhone'da uygulama açılır gibi); alttaki sayfa hafifçe
+// küçülüp kararır. Yalnız transform ve opaklık: ekran kartı işler, her karede boyama yok.
+function buyumeGecis(ekran, eski, n) {
+  return () => {
+    const { k, ic, geriAl } = katman(eski);
+    suruyor(true);
+    ekran.classList.add('gecis-on', 'buyuyor');
+    const r = ekran.getBoundingClientRect();
+    ekran.style.transformOrigin = `${n.x - r.left}px ${n.y - r.top}px`;
+    k.style.transformOrigin = `${n.x}px ${n.y}px`;
+    const bas = Math.min(0.6, Math.max(0.12, (n.g || 0) / innerWidth));
+    const ayar = { duration: 480, easing: EGRI };
+    k.animate([{ transform: 'none', filter: 'brightness(1)' }, { transform: 'scale(0.94)', filter: 'brightness(0.55)' }], { ...ayar, fill: 'forwards' });
+    const a = ekran.animate(
+      [
+        { transform: `scale(${bas})`, opacity: 0, borderRadius: '28px' },
+        { opacity: 1, offset: 0.3 },
+        { transform: 'none', opacity: 1, borderRadius: '0px' },
+      ],
+      ayar,
+    );
+    const bitir = () => {
+      geriAl();
+      k.remove();
+      ic.remove();
+      ekran.classList.remove('gecis-on', 'buyuyor');
+      ekran.style.transformOrigin = '';
+      suruyor(false);
+      bellegeKoy(eski);
+    };
+    a.finished.then(bitir, bitir);
+  };
+}
+
 function geriGecis(ekran, eski) {
   return () => {
     const { k } = katman(eski, true);
     suruyor(true);
+    // İş 86: büyüyerek açılan sayfa geldiği yere küçülerek kapanır; önceki sayfa yerine oturur
+    const koken = kokenler.get(eski.adres);
+    if (koken) {
+      kokenler.delete(eski.adres);
+      k.classList.add('kuculuyor');
+      k.style.transformOrigin = `${koken.x}px ${koken.y}px`;
+      const ayar = { duration: 400, easing: EGRI };
+      k.animate([{ transform: 'none', opacity: 1, borderRadius: '0px' }, { opacity: 1, offset: 0.55 }, { transform: 'scale(0.2)', opacity: 0, borderRadius: '28px' }], { ...ayar, fill: 'forwards' });
+      const a = ekran.animate([{ transform: 'scale(0.94)', filter: 'brightness(0.55)' }, { transform: 'none', filter: 'brightness(1)' }], ayar);
+      const bitir = () => {
+        k.remove();
+        suruyor(false);
+      };
+      a.finished.then(bitir, bitir);
+      return;
+    }
     const ayar = { duration: SURE - 40, easing: EGRI };
     k.animate([{ transform: 'none' }, { transform: 'translateX(100%)' }], { ...ayar, fill: 'forwards' });
     const a = ekran.animate([{ transform: 'translateX(-30%)', filter: 'brightness(0.72)' }, { transform: 'none', filter: 'brightness(1)' }], ayar);

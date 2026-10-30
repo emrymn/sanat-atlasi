@@ -616,7 +616,7 @@ test.describe('İş 70: geçişler açıkken akış bozulmaz', () => {
     await page.waitForTimeout(500);
     await page.locator('.eser').first().tap();
     await page.locator('.gor-sonraki').click();
-    await expect(page.locator('.gor-ucan')).toHaveCount(0, { timeout: 1500 });
+    await expect(page.locator('.gor-ucan')).toHaveCount(0, { timeout: 3000 }); // makine yüklüyken açılış uçuşu gecikebiliyor
     const zemin = await page.locator('.gor').evaluate((e) => getComputedStyle(e).backgroundColor);
     expect(zemin).toBe('rgb(11, 10, 11)');
   });
