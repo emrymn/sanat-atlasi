@@ -13,7 +13,7 @@ import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { ikon } from '../tasarim.js';
 import { bilinenAd } from '../adlar.js';
 import { idbAl, idbKoy, idbSil } from '../idb.js';
-import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti } from '../devam.js';
+import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti, devamKonumu } from '../devam.js';
 import { karsilastirmaAdresi } from '../karsilastir.js';
 import { akimKarsilastirmaAdresi } from '../akim.js';
 import { tanismaGerekirMi, tanismaEserleri, karisanEkle, KARISAN_ESIGI } from '../ogrenme.js';
@@ -226,7 +226,8 @@ export function pekistirMenusu() {
         : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
     }`,
   );
-  kucukKareleriDoldur();  // telefonu çevirince bugünkü turun destesi yelpaze açılır (İş 47; Ayarlar'daki hareket seçimine uyar)
+  kucukKareleriDoldur();
+  devamResmiDoldur();  // telefonu çevirince bugünkü turun destesi yelpaze açılır (İş 47; Ayarlar'daki hareket seçimine uyar)
   desteBaslat(ekran.querySelector('.pk-sahne'), d.ilerleme.ayarlar.egim !== false);
 }
 
@@ -553,13 +554,39 @@ export async function yarimYukle() {
   return null;
 }
 
+// İş 85: yarım kalan tur, müzik çalardaki "şimdi çalıyor" şeridi gibi: solda kalınan sorunun tablosu, ortada tur ve
+// ilerleme çizgisi, sağda yuvarlak devam düğmesi, köşede bitir (×)
 export function devamKarti() {
   const y = d.yarim;
   if (!y || !kayitGecerliMi(y)) return '';
-  return `<section class="devam-kart" data-test="devam-kart" aria-label="Yarım kalan oturum">
-      <div class="devam-yazi"><b>Kaldığın yerden devam et</b><span data-test="devam-ozet">${kacis(devamOzeti(y))}</span></div>
-      <div class="devam-dugmeler"><a class="dugme vurgu" href="#/pekistir/devam" data-test="devam-et">Devam et</a><button class="dugme" type="button" data-yarim-bitir>Bitir</button></div>
+  const toplam = y.kuyruk.length;
+  const konum = devamKonumu(y);
+  const oran = Math.round((100 * Math.max(0, konum - 1)) / Math.max(1, toplam));
+  const eser = y.kart && y.kart.eser ? `${y.kart.id}|${y.kart.eser}` : '';
+  return `<section class="devam-kart" data-test="devam-kart" aria-label="Yarım kalan tur">
+      <span class="devam-resim" aria-hidden="true"${eser ? ` data-devam-eser="${kacis(eser)}"` : ''}></span>
+      <div class="devam-yazi">
+        <span class="etiket vurgu">Yarım kalan tur</span>
+        <b data-test="devam-ozet">${kacis(devamOzeti(y))}</b>
+        <span class="devam-cizgi" role="img" aria-label="${toplam} karttan ${Math.max(0, konum - 1)} tanesi bitti"><i style="--oran:${oran}%"></i></span>
+      </div>
+      <a class="devam-oynat" href="#/pekistir/devam" data-test="devam-et" aria-label="Devam et">${ikon('ileri', 24, 2)}</a>
+      <button class="devam-bitir" type="button" data-yarim-bitir aria-label="Bitir">${ikon('kapat', 15, 2)}</button>
     </section>`;
+}
+
+// devam kartındaki küçük tablo: kalınan sorunun eseri (yoksa boş zemin kalır)
+function devamResmiDoldur() {
+  const el = ekran.querySelector('[data-devam-eser]');
+  if (!el) return;
+  const [id, anahtar] = el.dataset.devamEser.split('|');
+  const s = d.harita.get(id);
+  if (!s) return;
+  sanatciEserleri(s).then((eserler) => {
+    const e = eserler.find((x) => x.anahtar === anahtar);
+    const g = e && (secilenGorsel(e, kotuler()) || e.gorseller[0]);
+    if (g && el.isConnected) el.innerHTML = `<img decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}">`;
+  });
 }
 
 function yarimSor(kip, akim) {

@@ -26,7 +26,7 @@ test('yarım oturum: 5 kart cevapla, yenile, devam et → 6. karttan sürer', as
   await page.reload();
   const kart = page.locator('[data-test="devam-kart"]');
   await expect(kart).toBeVisible();
-  await expect(kart).toContainText('Kaldığın yerden devam et');
+  await expect(kart).toContainText('Yarım kalan tur');
   await expect(page.locator('[data-test="devam-ozet"]')).toHaveText(`Karışık · 6 / ${toplam}`);
   // İş 85: yenileyince Atölye'deki kart (Tuval'de kart yok)
   await expect(page).toHaveURL(/#\/pekistir$/);

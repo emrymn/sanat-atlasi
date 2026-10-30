@@ -463,29 +463,95 @@ img.kirik {
 }
 
 /* ---------- Yarım kalan oturum ---------- */
+/* İş 85: müzik çalardaki "şimdi çalıyor" şeridi gibi: kalınan sorunun tablosu, tur ve ilerleme, yuvarlak devam düğmesi */
 .devam-kart {
+  position: relative;
   display: grid;
-  gap: 12px;
+  grid-template-columns: 58px minmax(0, 1fr) 56px;
+  align-items: center;
+  gap: 14px;
   margin: 4px 0 18px;
-  padding: 14px 16px;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: var(--surface);
+  padding: 12px 14px 12px 12px;
+  border: 1px solid rgba(var(--vurgu-rgb), 0.28);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(var(--vurgu-rgb), 0.16), rgba(var(--vurgu-rgb), 0.03) 60%),
+    var(--surface);
+  box-shadow: 0 10px 28px -14px rgba(0, 0, 0, 0.55);
+}
+.devam-resim {
+  width: 58px;
+  height: 72px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: linear-gradient(160deg, rgba(var(--vurgu-rgb), 0.35), rgba(var(--vurgu-rgb), 0.08));
+  box-shadow:
+    0 0 0 1px rgba(var(--vurgu-rgb), 0.35),
+    0 6px 14px -6px rgba(0, 0, 0, 0.7);
+}
+.devam-resim img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .devam-yazi {
   display: grid;
-  gap: 2px;
+  gap: 4px;
+  min-width: 0;
+  padding-right: 18px; /* köşedeki × ile çakışmasın */
 }
-.devam-yazi span {
-  color: var(--ink-2);
+.devam-yazi .etiket {
+  margin: 0;
 }
-.devam-dugmeler {
+.devam-yazi b {
+  font: 500 19px/1.25 var(--serif);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.devam-cizgi {
+  display: block;
+  height: 4px;
+  margin-top: 4px;
+  border-radius: 2px;
+  background: rgba(var(--vurgu-rgb), 0.18);
+  overflow: hidden;
+}
+.devam-cizgi i {
+  display: block;
+  width: var(--oran, 0%);
+  height: 100%;
+  border-radius: inherit;
+  background: var(--vurgu);
+}
+.devam-oynat {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-  gap: 10px;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  color: var(--bg);
+  background: var(--vurgu);
+  box-shadow: 0 6px 18px -6px rgba(var(--vurgu-rgb), 0.8);
+  text-decoration: none;
 }
-.devam-dugmeler .dugme {
-  min-height: 48px;
+.devam-oynat:active {
+  transform: scale(0.94);
+}
+.devam-bitir {
+  position: absolute;
+  top: 2px;
+  right: 72px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  cursor: pointer;
 }
 .gunun-kart.devam-alti .bugun-kahraman {
   margin-top: 0;
