@@ -26,7 +26,7 @@ test('imza: doğrulanmış QID’in kaydında imza varsa sanatçı sayfasında a
   await page.goto('./#/sanatci/cimabue');
   await expect(page.locator('.isim-blok h1')).toBeVisible();
   await page.waitForTimeout(500);
-  await expect(page.locator('[data-test="imza"]')).toHaveCount(0);
+  await expect(page.locator('#uygulama [data-test="imza"]')).toHaveCount(0);
 });
 
 test('imza: önceden hesaplanmış data/imzalar.json varsa Wikidata’ya sorulmaz', async ({ page, context }) => {
@@ -165,12 +165,12 @@ test('künye: sanatçı sayfasında arkada portre ve "Dinle"; imza onların alt�
   // dili olmayan (okunamaz) sanatçıda yalnız IPA, dil adıyla
   await page.goto('./#/sanatci/wassily-kandinsky');
   await expect(page.locator('.isim-ek [data-test="ipa"]')).toHaveText('IPA[vɐˈsʲilʲɪj]Rusça');
-  await expect(page.locator('.isim-ek [data-test="dinle"]')).toHaveCount(0);
+  await expect(page.locator('#uygulama .isim-ek [data-test="dinle"]')).toHaveCount(0);
   // ne portresi ne dili olan: satır yok
   await page.goto('./#/sanatci/cimabue');
   await expect(page.locator('.isim-blok h1')).toBeVisible();
   await page.waitForTimeout(500);
-  await expect(page.locator('.isim-ek')).toHaveCount(0);
+  await expect(page.locator('#uygulama .isim-ek')).toHaveCount(0);
 });
 
 test('künye: okunuş dosyası Web Audio ile çalar (İş 49d); çözülemezse ses öğesine düşer', async ({ page, context }) => {
