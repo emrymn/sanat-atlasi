@@ -52,29 +52,31 @@ export function yolcuYeri(x) {
 }
 
 /**
- * İş 90 (Emre: "yürürken patikayı kullansın, sakın dışarıdan yürütme"): öğrencinin eski durağından yenisine yolu.
- * patikalar: data/harita_patikalar.json (resimdeki boyalı patika, durak durak). Dönüş: parçalar; her parça bir dönemin
- * içinde, noktaları haritada pt [x, y] (haritanın üstünden). Dönem değişince yeni parça başlar: öğrenci sisin içinde
- * söner, yeni dönemin ilk durağında belirir (dönemler arasında patika yok). Patikası bilinmeyen iki durak arası (meydan
- * sayısından fazla bölüm) düz kısa bir adım. En çok enCok durak yürünür (daha uzaksa yolun son enCok durağı).
- * Yürünecek yol yoksa (ilk açılış, geri gidiş, aynı durak) null.
+ * İş 90 (Emre: "yürürken patikayı kullansın, sakın dışarıdan yürütme"): öğrencinin bir duraktan ötekine yolu (ileri
+ * ya da geri). patikalar: data/harita_patikalar.json (resimdeki boyalı patika, durak durak). Dönüş: parçalar; her parça
+ * bir dönemin içinde, noktaları haritada pt [x, y] (haritanın üstünden). Dönem değişince yeni parça başlar: öğrenci
+ * sisin içinde söner, yeni dönemin durağında belirir (dönemler arasında patika yok). Patikası bilinmeyen iki durak arası
+ * (meydan sayısından fazla bölüm) düz kısa bir adım. En çok enCok durak yürünür: daha uzaksa öğrenci bulunduğu yerde
+ * söner, hedefe enCok durak kala belirip oradan yürür. Yürünecek yol yoksa (bilinmeyen durak, aynı durak) null.
  */
 export function yolcuYolu(harita, patikalar, eskiId, yeniId, enCok = 4) {
   const sira = harita.bolgeler.flatMap((b) => b.duraklar.map((x, j) => ({ b, x, j })));
   const i1 = sira.findIndex((s) => s.x.id === yeniId);
-  let i0 = sira.findIndex((s) => s.x.id === eskiId);
-  if (i0 < 0 || i1 < 0 || i1 <= i0) return null;
-  i0 = Math.max(i0, i1 - enCok);
+  const i0 = sira.findIndex((s) => s.x.id === eskiId);
+  if (i0 < 0 || i1 < 0 || i1 === i0) return null;
+  const adim = i1 > i0 ? 1 : -1;
   const haritada = (b, [x, y]) => [x * W, (b.ust + y) * H];
   const yer = (s) => {
     const p = yolcuYeri(s.x);
     return [p.x, s.b.ust * H + p.y];
   };
   const parcalar = [];
+  // çok uzaksa hedefe enCok durak kala başlar
+  const bas = Math.abs(i1 - i0) > enCok ? i1 - adim * enCok : i0;
   let parca = null;
-  for (let i = i0; i < i1; i++) {
+  for (let i = bas; i !== i1; i += adim) {
     const a = sira[i];
-    const c = sira[i + 1];
+    const c = sira[i + adim];
     if (a.b.id !== c.b.id) {
       parca = null;
       continue;
@@ -84,14 +86,23 @@ export function yolcuYolu(harita, patikalar, eskiId, yeniId, enCok = 4) {
       parcalar.push(parca);
     }
     const yollar = (patikalar && patikalar.bolgeler && patikalar.bolgeler[a.b.id] && patikalar.bolgeler[a.b.id].yollar) || [];
-    const p = yollar[a.j];
-    const fazla = a.j >= yollar.length || c.j !== a.j + 1 || !Array.isArray(p) || p.length < 2;
-    if (!fazla) parca.noktalar.push(...p.slice(1, -1).map((n) => haritada(a.b, n)));
+    const k = Math.min(a.j, c.j);
+    const p = yollar[k];
+    if (Math.abs(c.j - a.j) === 1 && Array.isArray(p) && p.length >= 2) {
+      const ara = p.slice(1, -1).map((n) => haritada(a.b, n));
+      parca.noktalar.push(...(adim > 0 ? ara : ara.reverse()));
+    }
     parca.noktalar.push(yer(c));
   }
-  // yalnız dönem değiştiyse (yeni dönemin ilk durağına): o durakta tek noktalı parça (orada belirir)
-  const son = sira[i1];
-  if (!parcalar.length || parcalar[parcalar.length - 1].bolge !== son.b.id) parcalar.push({ bolge: son.b.id, noktalar: [yer(son)] });
+  // yol öğrencinin bulunduğu yerden başlamıyorsa (ilk adım dönem değiştiriyor ya da çok uzak): orada söner (tek noktalı
+  // parça), yolun başında belirir
+  const ilk = yer(sira[i0]);
+  const ilkNokta = parcalar.length ? parcalar[0].noktalar[0] : null;
+  if (!ilkNokta || ilkNokta[0] !== ilk[0] || ilkNokta[1] !== ilk[1]) parcalar.unshift({ bolge: sira[i0].b.id, noktalar: [ilk] });
+  // son adımda dönem değiştiyse (ya da hiç yürünmediyse): yeni dönemin durağında tek noktalı parça (orada belirir)
+  const hedef = yer(sira[i1]);
+  const sonNokta = parcalar.length ? parcalar[parcalar.length - 1].noktalar.at(-1) : null;
+  if (!sonNokta || sonNokta[0] !== hedef[0] || sonNokta[1] !== hedef[1]) parcalar.push({ bolge: sira[i1].b.id, noktalar: [hedef] });
   return { parcalar };
 }
 

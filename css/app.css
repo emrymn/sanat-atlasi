@@ -7572,10 +7572,6 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .harita.gece .harita-yolcu-golge {
   background: radial-gradient(closest-side, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 0));
 }
-/* yürürken "buradasın" ışıkları gizli: öğrenci varınca belirir */
-.harita.yuruyor :is(.harita-sutun, .harita-yer, .harita-kivilcim, .harita-yolcu-ok) {
-  visibility: hidden;
-}
 .harita-yolcu-ok {
   position: absolute;
   width: 16px;
@@ -7644,13 +7640,6 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   .harita-kivilcim {
     animation: harita-kivilcim 2.4s linear infinite;
   }
-  /* dururken nefes alır gibi; yürürken JS sektirir */
-  .harita-yolcu {
-    animation: harita-yolcu-nefes 3.2s ease-in-out infinite;
-  }
-  .harita.yuruyor .harita-yolcu {
-    animation: none;
-  }
   .harita-yolcu-ok {
     animation: harita-yolcu-ok 1.2s ease-in-out infinite;
   }
@@ -7683,15 +7672,6 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   }
   50% {
     opacity: 0.95;
-  }
-}
-@keyframes harita-yolcu-nefes {
-  0%,
-  100% {
-    transform: none;
-  }
-  50% {
-    transform: scale(1.012, 1.018);
   }
 }
 @keyframes harita-yolcu-ok {

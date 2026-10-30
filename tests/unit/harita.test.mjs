@@ -49,7 +49,7 @@ test('harita verisi: her bölgede bölüm sayısı kadar meydan ve sembol, görs
     assert.equal(v.semboller.length, n, b.id);
     for (const [x, y] of v.duraklar) assert.ok(x > 0 && x < 1 && y > 0 && y < 1, `${b.id} ${x},${y}`);
     for (const tur of ['gunduz', 'gece']) {
-      const yollar = [resimAdresi(b.id, tur), yolcuAdresi(b.id, 'dur', tur), ...v.semboller.map((_, i) => nesneAdresi(b.id, i + 1, tur))];
+      const yollar = [resimAdresi(b.id, tur), yolcuAdresi(b.id, 'dur', tur, yolcuVeri.bolgeler[b.id].ad), ...v.semboller.map((_, i) => nesneAdresi(b.id, i + 1, tur))];
       for (const yol of yollar) assert.ok(existsSync(new URL(`../../${yol}`, import.meta.url)), yol);
     }
     assert.ok(v.motifler.length > 0, b.id);
@@ -250,10 +250,14 @@ test('İş 90: her dönemde durak sayısı kadar yer, aralarında patika; pozlar
   }
 });
 
-test('İş 90: yolcuYolu — aynı dönemde patikayı izler, dönem değişince yeni parça; geri ve ilk açılışta yürümez', () => {
+test('İş 90/92: yolcuYolu — dönem içinde patikayı izler (ileri ve geri), dönem değişince söner ve belirir', () => {
   const durumlar = bolumler.map((x) => ({ ...x, acik: true }));
   const h = haritaKur(durumlar, veri);
   const sira = h.bolgeler.flatMap((b) => b.duraklar.map((x) => ({ b, x })));
+  const yer = (s) => {
+    const p = yolcuYeri(s.x);
+    return [p.x, s.b.ust * H + p.y];
+  };
   const ron = sira.filter((s) => s.b.id === 'ronesans');
   // Rönesans 1 → 3: tek parça, iki patika art arda; noktalar Rönesans resminin içinde
   const y = yolcuYolu(h, patikalar, ron[0].x.id, ron[2].x.id);
@@ -263,23 +267,24 @@ test('İş 90: yolcuYolu — aynı dönemde patikayı izler, dönem değişince 
   assert.equal(n.length, pt[0].length + pt[1].length - 1);
   const b = ron[0].b;
   for (const [, yy] of n) assert.ok(yy >= b.ust * H && yy <= (b.ust + 1) * H);
-  const bas = yolcuYeri(ron[0].x);
-  assert.deepEqual(n[0], [bas.x, b.ust * H + bas.y]);
-  // patikanın bir ara noktası resimdekiyle aynı
+  assert.deepEqual(n[0], yer(ron[0]));
   assert.deepEqual(n[1], [pt[0][1][0] * W, (b.ust + pt[0][1][1]) * H]);
-  // Orta Çağ'ın son durağından Rönesans'ın ikincisine: Orta Çağ'da yürünecek yol yok, Rönesans'ta 1 → 2
-  const ort = sira.filter((s) => s.b.id === 'ortacag');
-  const g = yolcuYolu(h, patikalar, ort[ort.length - 1].x.id, ron[1].x.id);
+  // geri: aynı noktalar ters sırada
+  const g = yolcuYolu(h, patikalar, ron[2].x.id, ron[0].x.id);
   assert.equal(g.parcalar.length, 1);
-  assert.equal(g.parcalar[0].bolge, 'ronesans');
-  // yalnız dönem değişimi: yeni dönemin ilk durağında tek noktalı parça
-  const t = yolcuYolu(h, patikalar, ort[ort.length - 2].x.id, ron[0].x.id);
-  assert.deepEqual(t.parcalar.map((p) => [p.bolge, p.noktalar.length > 1]), [['ortacag', true], ['ronesans', false]]);
-  // en çok 4 durak
-  const u = yolcuYolu(h, patikalar, sira[0].x.id, sira[10].x.id);
-  assert.ok(u.parcalar[0].noktalar.length > 1);
-  assert.equal(u.parcalar.at(-1).noktalar.at(-1)[0], yolcuYeri(sira[10].x).x);
-  assert.equal(yolcuYolu(h, patikalar, ron[2].x.id, ron[0].x.id), null);
+  assert.deepEqual(g.parcalar[0].noktalar, [...n].reverse());
+  // Orta Çağ'ın son durağından Rönesans'ın ikincisine: Orta Çağ'da söner, Rönesans'ın ilk durağından yürür
+  const ort = sira.filter((s) => s.b.id === 'ortacag');
+  const t = yolcuYolu(h, patikalar, ort.at(-1).x.id, ron[1].x.id);
+  assert.deepEqual(t.parcalar.map((p) => [p.bolge, p.noktalar.length > 1]), [['ortacag', false], ['ronesans', true]]);
+  assert.deepEqual(t.parcalar[1].noktalar[0], yer(ron[0]));
+  // Orta Çağ'ın sondan ikincisinden Rönesans'ın ilkine: Orta Çağ'da yürür, Rönesans'ta belirir
+  const u = yolcuYolu(h, patikalar, ort.at(-2).x.id, ron[0].x.id);
+  assert.deepEqual(u.parcalar.map((p) => [p.bolge, p.noktalar.length > 1]), [['ortacag', true], ['ronesans', false]]);
+  // çok uzak (en çok 4 durak): bulunduğu yerde söner, hedefe 4 durak kala belirip yürür
+  const v = yolcuYolu(h, patikalar, sira[0].x.id, sira[10].x.id);
+  assert.deepEqual(v.parcalar[0].noktalar, [yer(sira[0])]);
+  assert.deepEqual(v.parcalar.at(-1).noktalar.at(-1), yer(sira[10]));
   assert.equal(yolcuYolu(h, patikalar, null, ron[0].x.id), null);
   assert.equal(yolcuYolu(h, patikalar, ron[1].x.id, ron[1].x.id), null);
 });
