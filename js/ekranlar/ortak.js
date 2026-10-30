@@ -1,4 +1,5 @@
 // Ekranların ortak parçaları: uygulama durumu (d), ekran öğesi, küçük yardımcılar, resim rengi, bildirim, sekme çubuğu, başlık ve çizim.
+import { keskinlestir } from '../keskin.js';
 import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu, bellekEskit, bellegeAl } from '../gecis.js';
 import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
@@ -668,6 +669,11 @@ export function olaylariBagla() {
         // sayfa baştan yükleniyormuş gibi tek tek belirmesin
         if (performance.now() - sonCizim < 150) e.target.classList.add('aninda');
         e.target.classList.add('yuklendi');
+        // İş 80: ekranda gerçek pikselinden büyük gösteriliyorsa bir üst kopyası. Yerleşim oturduktan sonra ve giriş
+        // animasyonları (küçükten büyüyen kartlar) bittikten sonra bir daha bakılır
+        const img = e.target;
+        requestAnimationFrame(() => keskinlestir(img));
+        setTimeout(() => keskinlestir(img), 900);
       }
     },
     true,

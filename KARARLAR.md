@@ -1538,3 +1538,12 @@ Emre (1.54.1): "hâlâ çok kasıyor kaydırırken sayfalar arası; son kez dene
 - Sekmelerin ana sayfaları bellekte kalır: sekme çubuğuyla dönünce kaldığı yerde, yeniden çizilmeden (ilerleme kaydedildiyse yeniden çizilir).
 - Kaldırılanlar: yatay sürüklemeyle sekme değiştirme, komşu sayfa katmanları, önceki oturumdan saklanan sayfa önizlemeleri (İş 76b; telefonda kalan kayıt açılışta silinir). Yenilikler'deki 1.54 satırı kalan davranışa göre düzeltildi.
 - Alt sayfalarda kenardan geri kaydırma (İş 75) aynen; İş 78'deki katman ve kare hızı iyileştirmeleri onda kalır.
+
+## İş 80 · Sayfalardaki görseller iPhone'da bulanıktı (2026-10-30, v1.54.4)
+
+Emre: "resimler kötü geldi, bir sorun var". Ölçüm (390×844, ekran yoğunluğu 3; keskinlik = görselin pikseli / ekranda kapladığı piksel, 1'in altı büyütülmüş):
+- Görüntüleyici sorunsuzdu: en büyük kopya (R2, 4096 px) iniyor, keskinlik 2,5.
+- Sayfalar bulanıktı: Tuval'in büyük tablosu 0,46 (1280 px kopya ekranı kaplayacak kadar büyütülüyordu); sanatçı sayfasındaki eserler 0,39–0,57 ve dönem sayfasındakiler 0,58–0,68 (400 px kopya); Atölye'nin tablosu 0,62.
+- Sebep: kopya seçimi istenen genişliğe göre (≤ 400 → 400 px kopya) ve ekran yoğunluğunu hesaba katmıyordu.
+- Çözüm (`js/keskin.js`): görsel yüklenince (ve 0,9 sn sonra, giriş animasyonları bitince bir daha) ekranda kapladığı yere bakılır; keskinlik 0,8'in altındaysa bir üst kopya arkada indirilir, hazır olunca yerine geçer (bu sırada küçüğü görünür; inemezse küçüğü kalır). 400 px → 1280 px; 1280 px → en büyük kopya yalnız ekranın %30'undan fazlasını kaplayan tabloda (en büyük kopyalar 3–5 MB, açılınca bellekte onlarca MB; bir sayfada çok sayıda olunca telefonu zorlar). Telefona indirilmiş en büyük kopyalar service worker'dan gelir.
+- Sonra: Tuval 1,50; sanatçı sayfası 1,2–1,8; dönem sayfası 1,9–2,0; Atölye 1,66. Küçük kartlar (dönem çizelgesi, 0,85+) 400 px'te kalır, gereksiz indirme yok. Başyapıtlar'da dikey kartta yatay tablolar 0,6–0,7'de bırakıldı (en büyük kopya her kart için ağır).
