@@ -227,9 +227,32 @@ function suruyor(acik) {
 function kirpma(k, r, yc) {
   return `inset(${k.y - r.top}px ${r.right - (k.x + k.w)}px ${r.bottom - (k.y + k.h)}px ${k.x - r.left}px round ${yc}px)`;
 }
-const ekranKutusu = () => ({ x: 0, y: 0, w: innerWidth, h: innerHeight });
-// iki kutu arasında (t: 0–1)
-const araKutu = (a, b, t) => ({ x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t, w: a.w + (b.w - a.w) * t, h: a.h + (b.h - a.h) * t });
+const ekranRect = () => ({ top: 0, left: 0, right: innerWidth, bottom: innerHeight });
+
+// İş 88 (Emre: "açılış sağ tarafta hızlı, simetrik değil"): yalnız pencere genişleyince her kenar kendi mesafesini aynı
+// sürede alıyordu: öğeden uzak kenar (çoğu kez sağ ya da alt) hızla kayıyor, açılış bir yana çekiliyordu. Artık iPhone'da
+// uygulama açılır gibi sayfa da pencereyle birlikte büyür: öğenin kutusuna sığacak kadar küçültülmüş sayfa (ortası),
+// eşit oranla tam ekrana yakınlaşır. t: 0 öğenin kutusunda, 1 tam ekran. r: canlandırılan öğenin kutusu (dönüşümsüz);
+// transform-origin ekranın sol üst köşesi olmalı (zumKoken).
+function zum(K, r, t, yc = 0) {
+  const W = innerWidth;
+  const H = innerHeight;
+  const s0 = Math.max(K.w / W, K.h / H);
+  // öğenin kutusunda görünen sayfa parçası: ekranın ortasından, öğenin en-boy oranında
+  const Rw = K.w / s0;
+  const Rh = K.h / s0;
+  const Rx = (W - Rw) / 2;
+  const Ry = (H - Rh) / 2;
+  const u = 1 - t;
+  const s = s0 + (1 - s0) * t;
+  const tx = (K.x - s0 * Rx) * u;
+  const ty = (K.y - s0 * Ry) * u;
+  return {
+    transform: `translate(${tx}px, ${ty}px) scale(${s})`,
+    clipPath: kirpma({ x: Rx * u, y: Ry * u, w: Rw + (W - Rw) * t, h: Rh + (H - Rh) * t }, r, (yc * u) / s),
+  };
+}
+const zumKoken = (r) => `${-r.left}px ${-r.top}px`;
 
 // İş 86e: sayfa dokunulan öğenin şeklinden açılır: görünen pencere öğenin kutusundan (köşeleri onunkiler gibi) ekranın
 // kenarlarına genişler, içerik o pencerede belirir; alttaki sayfada öğe yerinde kalır (pencere tam onun üstünden çıkar).
@@ -240,6 +263,7 @@ function sekilGecis(ekran, eski, n) {
     ekran.classList.add('gecis-on', 'buyuyor', 'sekilli');
     const r = ekran.getBoundingClientRect();
     k.style.transformOrigin = `${n.x}px ${n.y}px`;
+    ekran.style.transformOrigin = zumKoken(r);
     // İş 87: 950 ms yay eğrisi iPhone'da yine hızlı göründü (genişlemenin çoğu ilk çeyrekte bitiyordu): daha uzun ve
     // yumuşak başlayıp yumuşak biten eğri; pencere öğenin içinden yavaşça belirir
     const ayar = { duration: ACILIS, easing: ACILIS_EGRI };
@@ -247,9 +271,9 @@ function sekilGecis(ekran, eski, n) {
     perde.animate([karart(0), karart(0.45)], { ...ayar, fill: 'forwards' });
     const a = ekran.animate(
       [
-        { clipPath: kirpma(n.kutu, r, n.kutu.yc), opacity: 0 },
+        { ...zum(n.kutu, r, 0, n.kutu.yc), opacity: 0 },
         { opacity: 1, offset: 0.25 },
-        { clipPath: kirpma(ekranKutusu(), r, 0), opacity: 1 },
+        { ...zum(n.kutu, r, 1), opacity: 1 },
       ],
       ayar,
     );
@@ -263,6 +287,7 @@ function sekilGecis(ekran, eski, n) {
       k.remove();
       ic.remove();
       ekran.classList.remove('gecis-on', 'buyuyor', 'sekilli');
+      ekran.style.transformOrigin = '';
       suruyor(false);
       bellegeKoy(eski);
     };
@@ -337,12 +362,13 @@ function geriGecis(ekran, eski) {
       kokenler.delete(eski.adres);
       k.classList.add('kuculuyor', 'sekilli');
       const ayar = { duration: 760, easing: 'cubic-bezier(0.32, 0.5, 0.2, 1)' };
-      const kr = { top: 0, left: 0, right: innerWidth, bottom: innerHeight };
+      const kr = ekranRect();
+      k.style.transformOrigin = zumKoken(kr);
       k.animate(
         [
-          { clipPath: kirpma(ekranKutusu(), kr, 0), opacity: 1 },
+          { ...zum(koken.kutu, kr, 1), opacity: 1 },
           { opacity: 1, offset: 0.7 },
-          { clipPath: kirpma(koken.kutu, kr, koken.kutu.yc), opacity: 0 },
+          { ...zum(koken.kutu, kr, 0, koken.kutu.yc), opacity: 0 },
         ],
         { ...ayar, fill: 'forwards' },
       );
@@ -536,8 +562,8 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
   const kucul = (x) => !x.gor && !hareketAz();
   // İş 86e: açıldığı öğenin kutusu biliniyorsa sayfa ona daralır (clip-path); yoksa küçülme (scale)
   const sekilli = (x) => kucul(x) && x.koken && x.koken.kutu;
-  const kr = () => ({ top: 0, left: 0, right: W(), bottom: window.innerHeight });
-  const kKirp = (x, t) => kirpma(araKutu(ekranKutusu(), x.koken.kutu, t), kr(), Math.round(x.koken.kutu.yc * t));
+  // İş 88: t: 0 tam ekran, 1 öğenin kutusunda (sayfa pencereyle birlikte küçülür)
+  const kZum = (x, t) => zum(x.koken.kutu, ekranRect(), 1 - t, x.koken.kutu.yc);
   function kaydirmaBaslat(x) {
     suruyor(true);
     if (x.gor) {
@@ -561,7 +587,7 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
       x.koken = k;
       x.ust.k.classList.add('kuculuyor');
       if (sekilli(x)) x.ust.k.classList.add('sekilli');
-      x.ust.k.style.transformOrigin = `${k.x}px ${k.y}px`;
+      x.ust.k.style.transformOrigin = sekilli(x) ? zumKoken(ekranRect()) : `${k.x}px ${k.y}px`;
       if (x.katman) x.katman.k.style.transformOrigin = `${k.x}px ${k.y}px`;
     }
   }
@@ -584,7 +610,7 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
     if (sekilli(x)) {
       // parmak ekranın %60'ına gelince pencere öğenin şeklini almış olur
       const t = Math.min(1, p / 0.6);
-      el.style.clipPath = kKirp(x, t);
+      Object.assign(el.style, kZum(x, t));
       if (x.katman) Object.assign(x.katman.k.style, alttaki(p));
       golge(x, p);
       return;
@@ -614,7 +640,7 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
     } else if (sekilli(x)) {
       const t = Math.min(1, p / 0.6);
       const ayar = { duration: tamam ? 560 : 380, easing: tamam ? 'cubic-bezier(0.32, 0.5, 0.2, 1)' : 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' };
-      a = el.animate([{ clipPath: kKirp(x, t), opacity: 1 }, tamam ? { clipPath: kKirp(x, 1), opacity: 0 } : { clipPath: kKirp(x, 0), opacity: 1 }], ayar);
+      a = el.animate([{ ...kZum(x, t), opacity: 1 }, tamam ? { ...kZum(x, 1), opacity: 0 } : { ...kZum(x, 0), opacity: 1 }], ayar);
       if (x.katman) x.katman.k.animate([alttaki(p), tamam ? { transform: 'none' } : alttaki(0)], ayar);
       alt(ayar);
     } else if (kucul(x)) {
@@ -670,6 +696,6 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
     };
     a.finished.then(son, son);
     // İş 87: animasyon bir sebeple bitmezse (iPhone'da sekme arka plana geçti vb.) yine temizlenir
-    setTimeout(son, 1200);
+    setTimeout(son, (Number(a.effect && a.effect.getTiming().duration) || 400) + 800);
   }
 }
