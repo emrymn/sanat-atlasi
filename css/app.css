@@ -13742,6 +13742,14 @@ img.aninda {
   background-size: 3px 3px;
   box-shadow: -16px 0 36px rgba(0, 0, 0, 0.5);
 }
+/* İş 86: büyüyerek açılan sayfa: yan gölge yok, köşeler yuvarlak başlayıp düzleşir */
+#uygulama.buyuyor {
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+.sayfa-katman.ust.kuculuyor {
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.6);
+}
 #uygulama.kaydiriliyor,
 .gor.kaydiriliyor {
   will-change: transform;
