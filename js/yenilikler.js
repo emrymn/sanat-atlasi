@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.53.0', metin: 'Kenardan kaydırarak geri artık iPhone’un Ayarlar uygulamasındaki gibi: parmağını sol kenardan sürünce önceki sayfa altta gerçek hâliyle görünür, bırakınca kaldığın yerde, yeniden yüklenmeden gelir (solda siyah ekran yok). Sayfadan çıkışlar yumuşadı: yeni sayfa sağdan gelirken eskisi altta sola çekilip kararır, geri dönünce önceki sayfa bekletmeden yerinde.' },
   { surum: '1.52.0', metin: 'iPhone gibi geçişler: esere dokununca küçük resim büyüyerek tam ekrana açılır, kapatınca yerine döner; tabloyu aşağı çekince küçülür ve arkadaki sayfa görünür. Yeni sayfa sağdan kayarak gelir, geri okuyla dönünce sağa çekilir; Başyapıtlar ve Konular kartları büyüyerek açılır. Eserler ve kartlar basınca hafifçe çöker; alttaki sekme çubuğu artık arkasındaki tabloların renklerini süzen bir cam.' },
   { surum: '1.51.0', metin: 'Tablonun ışığı: eser görüntüleyicide tablo, kendi renkleriyle arkasındaki karanlığa hafifçe ışık saçar; müzede spot altında duran bir tablo gibi. Doğru cevapta tablonun çevresi yaldızla parlar, yanlışta tablo hafifçe sarsılır.' },
   { surum: '1.50.0', metin: 'En büyük kopyaları telefona indir (Ayarlar): 4096 piksele kadar en yüksek kalitedeki hallerin hepsi telefonda durur, internet olmadan da tabloyu büyütünce keskin görünür. Yarıda kalırsa kaldığı yerden sürer; istersen tek dokunuşla silinir.' },

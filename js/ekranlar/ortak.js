@@ -1,5 +1,5 @@
 // Ekranların ortak parçaları: uygulama durumu (d), ekran öğesi, küçük yardımcılar, resim rengi, bildirim, sekme çubuğu, başlık ve çizim.
-import { gecisHazirla, geriDugmesiBasildi } from '../gecis.js';
+import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu } from '../gecis.js';
 import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
@@ -417,7 +417,7 @@ function sekmeSurukle(nav) {
       const burada = location.hash === href || (href === '#/' && (location.hash === '' || location.hash === '#/'));
       if (!burada) {
         sekmeHedefi = href;
-        location.hash = href;
+        gezin(href, 'sekme');
       } else if (!kaydi) {
         // açık sekmenin ana ekranındayken yeniden dokunmak: en başa (iPhone gibi)
         window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
@@ -449,17 +449,40 @@ function sekmeSurukle(nav) {
 }
 
 export function git(hash) {
-  location.hash = hash;
+  gezin(hash);
 }
 
+// İş 75: geri, uygulamanın kendi yığınından (iPhone geçmişi kullanılmıyor)
 export function geri(yedek = '#/') {
-  if (d.yigin.length > 1) {
-    geriDugmesiBasildi();
-    history.back();
-  } else {
+  if (d.yigin.length > 1) gezin(d.yigin[d.yigin.length - 2], 'geri');
+  else {
     d.yigin = [];
-    location.replace(yedek);
+    gezin(yedek, 'geri');
   }
+}
+
+// İş 75: geri dönüşte (geri oku ya da kenardan kaydırma) önceki sayfa yeniden çizilmez, bellekten konur: anında,
+// kaldığı yerde. Döndürür: konduysa true (bellekte yoksa yönlendirici sayfayı yeniden çizer).
+let yeniGeriDonus = false;
+export function bellektenGeriKoy(adres, yon) {
+  const eski = sayfayiAyir(ekran, sonCizilenAdres);
+  const s = bellektenKoy(adres, ekran);
+  if (!s) {
+    // bellekte yok: ayrılan sayfa yerine konur, yönlendirici yeniden çizecek
+    if (eski) ekran.replaceChildren(...eski.dugumler);
+    yeniGeriDonus = true;
+    return false;
+  }
+  ekran.dataset.hareket = '';
+  ekran.classList.remove('perde');
+  sonCizilenAdres = adres;
+  geriHedefi = null;
+  window.scrollTo(0, s.y);
+  kaydirmaYerleri.set(adres, s.y);
+  const gecis = geriGecisi(ekran, eski, yon);
+  if (gecis) gecis();
+  kaydirmaSonu();
+  return true;
 }
 
 export function hataGoster(e) {
@@ -548,9 +571,13 @@ let sonCizim = 0;
 export function ciz(html, hareket) {
   const adres = location.hash || '#/';
   sonCizim = performance.now();
-  // İş 70: yeni adreste sayfa geçişi (kayma ya da kart büyümesi); eski içeriğin kopyası içerik değişmeden alınır
-  const gecis = adres !== sonCizilenAdres ? gecisHazirla(ekran) : null;
-  ekran.dataset.hareket = hareket ?? (adres !== sonCizilenAdres ? (gecis ? '' : 'giris') : '');
+  // İş 70/75: yeni adreste ayrılan sayfa (düğümleri yerinden alınır) belleğe ve geçişe; geçiş varsa öğeler sırayla
+  // belirmez (sayfa bütün olarak kayar)
+  const yeni = adres !== sonCizilenAdres;
+  const eski = yeni ? sayfayiAyir(ekran, sonCizilenAdres) : null;
+  const gecis = yeni ? gecisHazirla(ekran, eski) : null;
+  ekran.dataset.hareket = hareket ?? (yeni ? (gecis || yeniGeriDonus ? '' : 'giris') : '');
+  yeniGeriDonus = false;
   sonCizilenAdres = adres;
   ekran.classList.remove('perde');
   ekran.innerHTML = html;
@@ -558,6 +585,7 @@ export function ciz(html, hareket) {
   if (geriHedefi && geriHedefi.adres === adres) yerineDon(geriHedefi);
   else window.scrollTo(0, 0);
   if (gecis) gecis();
+  kaydirmaSonu();
   const h = ekran.querySelector('h1');
   if (h) h.focus({ preventScroll: true });
   if (ekran.querySelector('.ad-son, .soru-baslik h2')) {

@@ -23,6 +23,15 @@ async function dokunmaBoylari(page, secici) {
   }, secici);
 }
 
+// İş 75: uygulamanın kenardan geri kaydırması (parmak sol kenardan sağa)
+async function kenarKaydir(page, context) {
+  const cdp = await context.newCDPSession(page);
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: 6, y: 420 }] });
+  for (let i = 1; i <= 12; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 6 + i * 25, y: 422 }] });
+  await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+  await page.waitForTimeout(500);
+}
+
 test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en az 44 pt; dört sekme ekrana sığar', async ({ page, context }) => {
   await agiHazirla(context);
   await page.goto('./#/gozat');
@@ -108,43 +117,70 @@ test('sekme çubuğu: başka sekmeden dönünce kalınan yer; açık sekmeye yen
   await expect.poll(() => y(page)).toBe(0);
 });
 
-// İş 52: görüntüleyicinin kendi geçmiş kaydı. iPhone'un sol kenardan geri hareketi tarayıcı geçmişinde bir adım
-// geri gider (burada page.goBack); sayfa değil görüntüleyici kapanmalı.
-test('görüntüleyici: geri hareketi görüntüleyiciyi kapatır, sayfada kalınır; ikinci geri önceki sayfaya', async ({ page, context }) => {
-  await agiHazirla(context);
-  await page.goto('./#/gozat');
-  await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
-  await page.goto('./#/sanatci/giotto-di-bondone');
-  await page.locator('.eser').first().click();
-  await expect(page.locator('.gor')).toBeVisible();
-  await page.goBack();
-  await expect(page.locator('.gor')).toHaveCount(0);
-  await expect(page).toHaveURL(/#\/sanatci\/giotto-di-bondone$/);
-  await page.goBack();
-  await expect(page).toHaveURL(/#\/gozat$/);
-});
+// İş 52 → İş 75: görüntüleyici iPhone'un geçmişine kayıt eklemez; kenardan kaydırma (uygulamanın kendi hareketi)
+// görüntüleyiciyi kapatır, sayfada kalınır; ikinci kaydırma önceki sayfaya döner
+test.describe('görüntüleyici ve kenardan kaydırma', () => {
+  test.use({ hasTouch: true, isMobile: true });
 
-test('görüntüleyici: X ile kapatınca geçmişte fazladan adım kalmaz; "Konu" bağlantısı konu sayfasına geçer, geri sanatçıya döner', async ({ page, context }) => {
-  await agiHazirla(context);
-  await page.goto('./#/gozat');
-  await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
-  await page.goto('./#/sanatci/giotto-di-bondone');
-  await page.locator('.eser').first().click();
-  await page.locator('.gor').getByRole('button', { name: 'Kapat' }).click();
-  await expect(page.locator('.gor')).toHaveCount(0);
-  await page.goBack();
-  await expect(page).toHaveURL(/#\/gozat$/);
-  // Konu bağlantısı
-  await page.goto('./#/sanatci/giotto-di-bondone');
-  await page.locator('.eser').first().click();
-  const konu = page.locator('[data-test="gor-konu"]');
-  await expect(konu).toBeVisible();
-  await konu.click();
-  await expect(page.locator('.gor')).toHaveCount(0);
-  await expect(page).toHaveURL(/#\/konu\//);
-  await page.goBack();
-  await expect(page).toHaveURL(/#\/sanatci\/giotto-di-bondone$/);
-  await expect(page.locator('.gor')).toHaveCount(0);
+  test('kenardan kaydırma görüntüleyiciyi kapatır, sayfada kalınır; ikinci kaydırma önceki sayfaya', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/gozat');
+    await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
+    const once = await page.evaluate(() => history.length);
+    await page.evaluate(() => (location.hash = '#/sanatci/giotto-di-bondone'));
+    await page.locator('.eser').first().click();
+    await expect(page.locator('.gor')).toBeVisible();
+    expect(await page.evaluate(() => history.length)).toBeLessThanOrEqual(once + 1);
+    await kenarKaydir(page, context);
+    await expect(page.locator('.gor')).toHaveCount(0);
+    await expect(page).toHaveURL(/#\/sanatci\/giotto-di-bondone$/);
+    await kenarKaydir(page, context);
+    await expect(page).toHaveURL(/#\/gozat$/);
+  });
+
+  test('X ile kapatınca geçmişe kayıt kalmaz; "Konu" bağlantısı konu sayfasına geçer, geri oku sanatçıya döner', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/sanatci/giotto-di-bondone');
+    await page.locator('.eser').first().waitFor();
+    // konular (Konu bağlantısı) ilk ekrandan 1,5 sn sonra yüklenir
+    await page.waitForTimeout(2000);
+    const once = await page.evaluate(() => history.length);
+    await page.locator('.eser').first().click();
+    await page.locator('.gor').getByRole('button', { name: 'Kapat' }).click();
+    await expect(page.locator('.gor')).toHaveCount(0);
+    expect(await page.evaluate(() => history.length)).toBe(once);
+    // Konu bağlantısı
+    await page.locator('.eser').first().click();
+    const konu = page.locator('[data-test="gor-konu"]');
+    await expect(konu).toBeVisible();
+    await konu.click();
+    await expect(page.locator('.gor')).toHaveCount(0);
+    await expect(page).toHaveURL(/#\/konu\//);
+    expect(await page.evaluate(() => history.length)).toBe(once);
+    await page.locator('[data-geri]').first().click();
+    await expect(page).toHaveURL(/#\/sanatci\/giotto-di-bondone$/);
+    await expect(page.locator('.gor')).toHaveCount(0);
+  });
+
+  // İş 57: görüntüleyiciyi açıp kapatınca sayfa en başa zıplamaz (X ile de kenardan kaydırmayla da)
+  test('görüntüleyici kapanınca sayfa kaldığı yerde: X ile ve kenardan kaydırmayla', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/sanatci/giotto-di-bondone');
+    const eser = page.locator('.eser').nth(3);
+    await expect(eser).toBeAttached();
+    await eser.evaluate((e) => e.scrollIntoView({ block: 'center' }));
+    const once = await y(page);
+    expect(once).toBeGreaterThan(50);
+    await eser.evaluate((e) => e.click());
+    await page.locator('.gor').getByRole('button', { name: 'Kapat' }).click();
+    await expect(page.locator('.gor')).toHaveCount(0);
+    await expect.poll(() => y(page)).toBe(once);
+    await eser.evaluate((e) => e.click());
+    await expect(page.locator('.gor')).toBeVisible();
+    await kenarKaydir(page, context);
+    await expect(page.locator('.gor')).toHaveCount(0);
+    await expect.poll(() => y(page)).toBe(once);
+  });
 });
 
 // İş 53: iPhone'a özgü dokunuşlar
@@ -301,26 +337,6 @@ test('Başyapıtlar haritanın dönemlerine göre gruplanır, kartta akımın ad
   await expect(page.locator('.akim-kart')).toHaveCount(0);
   const hap = cevapsiz.locator('a').first();
   await expect(hap).toHaveAttribute('href', /#\/pekistir\/donem\//);
-});
-
-// İş 57: görüntüleyiciyi açıp kapatınca sayfa en başa zıplamaz (X ile de geri hareketiyle de)
-test('görüntüleyici kapanınca sayfa kaldığı yerde: X ile ve geri hareketiyle', async ({ page, context }) => {
-  await agiHazirla(context);
-  await page.goto('./#/sanatci/giotto-di-bondone');
-  const eser = page.locator('.eser').nth(3);
-  await expect(eser).toBeAttached();
-  await eser.evaluate((e) => e.scrollIntoView({ block: 'center' }));
-  const once = await y(page);
-  expect(once).toBeGreaterThan(50);
-  await eser.evaluate((e) => e.click());
-  await page.locator('.gor').getByRole('button', { name: 'Kapat' }).click();
-  await expect(page.locator('.gor')).toHaveCount(0);
-  await expect.poll(() => y(page)).toBe(once);
-  await eser.evaluate((e) => e.click());
-  await expect(page.locator('.gor')).toBeVisible();
-  await page.goBack();
-  await expect(page.locator('.gor')).toHaveCount(0);
-  await expect.poll(() => y(page)).toBe(once);
 });
 
 // İş 58: görüntüleyici önce 1280'lik kopyayı gösterir, en büyük kopya (Cloudflare R2) gelince yerine geçer
@@ -612,11 +628,11 @@ test.describe('İş 71: sekme çubuğu dokunuşları', () => {
     const a4 = await kutu(3);
     await page.touchscreen.tap(a4.x + a4.width - 3, r.y + r.height - 2);
     await expect(linkler.nth(3)).toHaveAttribute('aria-current', 'page');
-    // tek dokunuş tek gezinme (ardından gelen tıklama ikinci kez gezinmez)
+    // tek dokunuş tek gezinme (ardından gelen tıklama ikinci kez gezinmez); İş 75: sekmeler geçmişe yazılmaz
     const once = await page.evaluate(() => history.length);
     await page.touchscreen.tap((await kutu(0)).x + 20, r.y + r.height / 2);
     await expect(page).toHaveURL(/#\/$/);
-    expect(await page.evaluate(() => history.length)).toBe(once + 1);
+    expect(await page.evaluate(() => history.length)).toBe(once);
   });
 });
 
@@ -652,7 +668,7 @@ test.describe('İş 73: yutulan dokunuş', () => {
     await page.touchscreen.tap(b2.x + b2.width / 2, b2.y + b2.height / 2);
     await expect(page).toHaveURL(/#\/akim\//);
     await page.waitForTimeout(400);
-    expect(await page.evaluate(() => history.length)).toBe(once + 1);
+    expect(await page.evaluate(() => history.length)).toBe(once);
   });
 
   test('kaydırma (kıpırdayan parmak) tıklama sayılmaz', async ({ page, context }) => {
@@ -672,48 +688,62 @@ test.describe('İş 73: yutulan dokunuş', () => {
   });
 });
 
-// İş 74: iPhone'un kenardan kaydırmasıyla (tarayıcının geri gezinmesi) dönülen sayfa yeniden açılıyormuş gibi
-// çizilmez: geçiş yok, önbellekteki görseller beklemeden görünür, kaydırma yeri korunur; geri okuyla dönüşte kendi geçişi
-test.describe('İş 74: kenardan kaydırarak geri', () => {
+// İş 75: kenardan kaydırarak geri: önceki sayfa altta gerçek hâliyle görünür, bırakınca yeniden çizilmeden
+// (bellekten) kaldığı yerde gelir; geri oku da bellekten; uygulama içi gezinme iPhone'un geçmişine yazılmaz
+test.describe('İş 75: kenardan kaydırma ve sayfa belleği', () => {
   test.use({ hasTouch: true, isMobile: true });
 
-  test('tarayıcı geri gezinmesi hareketsiz ve yerinde; geri oku kendi geçişiyle', async ({ page, context }) => {
+  test('önceki sayfa altta görünür; bırakınca aynı düğümlerle ve kaydırma yerinde döner; geçmiş büyümez', async ({ page, context }) => {
     await agiHazirla(context);
     await context.addInitScript(() => (window.__atlasGecis = true));
     await page.goto('./#/gozat');
-    await page.locator('a.zaman-kart').first().waitFor();
-    await page.waitForTimeout(1500);
-    await page.evaluate(() => window.scrollTo(0, 700));
-    await page.waitForTimeout(300);
-    const y = await page.evaluate(() => window.scrollY);
-    await page.evaluate(() => (location.hash = '#/akim/Gotik'));
-    await expect(page.locator('.ust h1')).toBeVisible();
-    await page.waitForTimeout(600);
-    // iPhone'un kenardan kaydırması = tarayıcının geri gezinmesi (uygulamanın geri oku değil)
-    await page.evaluate(() => {
-      window.__animSayisi = 0;
-      const asil = Element.prototype.animate;
-      Element.prototype.animate = function (...a) {
-        if (this.id === 'uygulama') window.__animSayisi++;
-        return asil.apply(this, a);
-      };
-      history.back();
-    });
+    const kart = page.locator('a.zaman-kart').first();
+    await kart.waitFor();
+    await page.waitForTimeout(800);
+    await page.evaluate(() => window.scrollTo(0, 600));
+    await page.waitForTimeout(200);
+    const yer = await page.evaluate(() => window.scrollY);
+    // sayfanın bir düğümünü işaretle: geri dönünce aynı düğüm (yeniden çizilmedi) olmalı
+    await page.evaluate(() => (document.querySelector('a.zaman-kart').dataset.iz = 'evet'));
+    const once = await page.evaluate(() => history.length);
+    await page.locator('a.zaman-kart').nth(1).tap();
+    await expect(page).toHaveURL(/#\/akim\//);
+    await expect(page.locator('#uygulama .ust h1')).toBeVisible();
+    await page.waitForTimeout(700);
+    expect(await page.evaluate(() => history.length)).toBe(once);
+    // kaydırmanın ortasında önceki sayfa altta
+    const cdp = await context.newCDPSession(page);
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: 6, y: 400 }] });
+    for (let i = 1; i <= 6; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 6 + i * 25, y: 402 }] });
+    await expect(page.locator('.sayfa-katman a.zaman-kart[data-iz="evet"]')).toHaveCount(1);
+    // yeniden konan düğümlerde giriş animasyonları baştan oynamaz (önceki sayfa bir an boş/siyah görünüyordu)
+    const oynayan = await page.evaluate(() =>
+      document.querySelector('.sayfa-katman').getAnimations({ subtree: true }).filter((a) => a.playState === 'running' && a.effect.getTiming().iterations !== Infinity && a.effect.target.closest('.sayfa-katman-ic')).length,
+    );
+    expect(oynayan).toBe(0);
+    expect(await page.locator('#uygulama').evaluate((e) => e.style.transform)).toContain('translateX');
+    for (let i = 7; i <= 12; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 6 + i * 25, y: 402 }] });
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
     await expect(page).toHaveURL(/#\/gozat$/);
-    await page.locator('a.zaman-kart').first().waitFor();
-    await page.waitForTimeout(400);
-    expect(await page.evaluate(() => window.__animSayisi)).toBe(0);
-    expect(await page.locator('#uygulama').getAttribute('data-hareket')).toBe('');
-    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(y);
-    // önbellekteki görseller geçişsiz görünür
-    expect(await page.locator('.zaman-kart img.aninda').count()).toBeGreaterThan(0);
-    // yığın doğru: geri oku bir önceki sayfaya (kendi geçişiyle) döner
-    await page.evaluate(() => (location.hash = '#/akim/Gotik'));
-    await expect(page.locator('.ust h1')).toBeVisible();
+    await expect(page.locator('#uygulama a.zaman-kart[data-iz="evet"]')).toHaveCount(1);
+    await expect(page.locator('.sayfa-katman')).toHaveCount(0);
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(yer);
+    expect(await page.locator('#uygulama').evaluate((e) => e.style.transform)).toBe('');
+    // az kaydırıp bırakınca sayfada kalınır
+    await page.locator('a.zaman-kart').nth(1).tap();
+    await expect(page).toHaveURL(/#\/akim\//);
+    await page.waitForTimeout(700);
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: 6, y: 400 }] });
+    for (let i = 1; i <= 3; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 6 + i * 15, y: 401 }] });
+    await page.waitForTimeout(100);
+    await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
     await page.waitForTimeout(600);
-    await page.evaluate(() => (window.__animSayisi = 0));
+    await expect(page).toHaveURL(/#\/akim\//);
+    await expect(page.locator('.sayfa-katman')).toHaveCount(0);
+    // geri oku da bellekten
     await page.locator('[data-geri]').first().tap();
     await expect(page).toHaveURL(/#\/gozat$/);
-    await expect.poll(() => page.evaluate(() => window.__animSayisi)).toBe(1);
+    await expect(page.locator('#uygulama a.zaman-kart[data-iz="evet"]')).toHaveCount(1);
+    await expect(page.locator('.sayfa-katman')).toHaveCount(0, { timeout: 3000 });
   });
 });
