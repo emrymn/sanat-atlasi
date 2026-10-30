@@ -13751,10 +13751,35 @@ img.aninda {
   box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.6);
 }
 /* İş 86e: şekilden açılış/kapanış: kırpılan pencerenin gölgesi kırpılır; taşma ve yuvarlak köşe clip-path'te */
-#uygulama.buyuyor.sekilli,
-.sayfa-katman.ust.kuculuyor.sekilli {
+#uygulama.buyuyor.sekilli {
   box-shadow: none;
   overflow: visible;
+}
+.sayfa-katman.ust.kuculuyor.sekilli {
+  box-shadow: none;
+}
+/* İş 87: katmanın içi sayfanın kaldığı yere kaydırılır (scrollTop) */
+.sayfa-katman-kay {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+/* İş 87: alttaki sayfanın karartması (filtre yerine opaklık: iPhone'da her karede yeniden boyanmaz) */
+.katman-perde {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: #000;
+  opacity: 0;
+  pointer-events: none;
+}
+.katman-perde.sabit {
+  position: fixed;
+  z-index: 4;
+}
+/* İş 87: şekilden açılırken sayfa kendi katmanında: kırpma her karede yalnız maskeyi değiştirir */
+#uygulama.buyuyor {
+  will-change: transform;
 }
 #uygulama.kaydiriliyor,
 .gor.kaydiriliyor {

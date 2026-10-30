@@ -732,11 +732,11 @@ test.describe('İş 75: kenardan kaydırma ve sayfa belleği', () => {
     await expect(page.locator('.sayfa-katman a.zaman-kart[data-iz="evet"]')).toHaveCount(1);
     // yeniden konan düğümlerde giriş animasyonları baştan oynamaz (önceki sayfa bir an boş/siyah görünüyordu)
     const oynayan = await page.evaluate(() =>
-      document.querySelector('.sayfa-katman').getAnimations({ subtree: true }).filter((a) => a.playState === 'running' && a.effect.getTiming().iterations !== Infinity && a.effect.target.closest('.sayfa-katman-ic')).length,
+      document.querySelector('.sayfa-katman:not(.ust)').getAnimations({ subtree: true }).filter((a) => a.playState === 'running' && a.effect.getTiming().iterations !== Infinity && a.effect.target.closest('.sayfa-katman-ic')).length,
     );
     expect(oynayan).toBe(0);
-    // İş 86e: sayfa parmakla birlikte açıldığı öğenin şekline daralır (clip-path); kutusu bilinmiyorsa kayar (transform)
-    await expect.poll(() => page.locator('#uygulama').evaluate((e) => !!(e.style.clipPath || e.style.transform))).toBe(true);
+    // İş 86e/87: sayfa (üst katmanda) parmakla birlikte açıldığı öğenin şekline daralır (clip-path); kutusu bilinmiyorsa küçülür
+    await expect.poll(() => page.locator('.sayfa-katman.ust').evaluate((e) => !!(e.style.clipPath || e.style.transform))).toBe(true);
     for (let i = 7; i <= 12; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 6 + i * 25, y: 402 }] });
     await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
     await expect(page).toHaveURL(/#\/gozat$/);
@@ -755,6 +755,8 @@ test.describe('İş 75: kenardan kaydırma ve sayfa belleği', () => {
     await page.waitForTimeout(600);
     await expect(page).toHaveURL(/#\/akim\//);
     await expect(page.locator('.sayfa-katman')).toHaveCount(0);
+    // İş 87: vazgeçilince sayfa (kaydırma boyunca üst katmandaydı) yerine konur
+    await expect(page.locator('#uygulama .ust h1')).toBeVisible();
     // geri oku da bellekten
     await page.locator('[data-geri]').first().tap();
     await expect(page).toHaveURL(/#\/gozat$/);
