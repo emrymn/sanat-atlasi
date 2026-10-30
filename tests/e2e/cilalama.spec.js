@@ -924,3 +924,28 @@ test('İş 83: günün tablosu ekrana en iyi oturan, en büyük kopyalı tablo',
   await page.goto('./#/');
   await expect(page.locator('[data-gunun-gorsel] > img')).toHaveAttribute('alt', /Napolyon/, { timeout: 10000 });
 });
+
+// İş 89: Galeri'nin bölüm şeritleri (Akımlar / Başyapıtlar / Konular / Zaman, konu grupları) sayfa gibi büyüyerek
+// açılmaz: bölüm geçişsiz değişir, kardeş bölüm yığında yer değiştirir (geri ile bölümler arasında dolaşılmaz)
+test('İş 89: bölüm şeridi geçişsiz, yığında yer değiştirir', async ({ page, context }) => {
+  await agiHazirla(context);
+  await context.addInitScript(() => (window.__atlasGecis = true));
+  await page.goto('./#/gozat');
+  await page.locator('a.zaman-kart').first().waitFor();
+  await page.waitForTimeout(500);
+  await page.locator('.bolumler a[href="#/konular"]').click();
+  await expect(page).toHaveURL(/#\/konular$/);
+  expect(await page.locator('.sayfa-katman').count()).toBe(0);
+  expect(await page.locator('#uygulama').evaluate((e) => e.getAnimations().length)).toBe(0);
+  expect(await page.evaluate(() => window.__atlas.yigin)).toEqual(['#/konular']);
+  // seçilisiz grup şeridinden grup sayfasına: yığına eklenir (geri Konular'a), geçişsiz
+  await page.locator('.konu-grup-serit a').first().click();
+  await expect(page).toHaveURL(/#\/konular\/.+/);
+  expect(await page.locator('.sayfa-katman').count()).toBe(0);
+  expect(await page.evaluate(() => window.__atlas.yigin.length)).toBe(2);
+  // grup sayfasında öbür grup: yer değiştirir
+  const diger = page.locator('.konu-grup-serit a:not([aria-current])').first();
+  const hedef = await diger.getAttribute('href');
+  await diger.click();
+  await expect.poll(() => page.evaluate(() => window.__atlas.yigin)).toEqual(['#/konular', hedef]);
+});

@@ -78,7 +78,8 @@ if (typeof document !== 'undefined') {
 const simdiki = () => location.hash || '#/';
 const ayni = (a, b) => a === b || ((a === '#/' || a === '#' || a === '') && (b === '#/' || b === '#' || b === ''));
 
-// yon: 'ileri' (yeni sayfa), 'geri' (geri oku), 'kaydirma' (kenardan kaydırma bitti), 'sekme' (sekme çubuğu)
+// yon: 'ileri' (yeni sayfa), 'geri' (geri oku), 'kaydirma' (kenardan kaydırma bitti), 'sekme' (sekme çubuğu),
+// 'bolum' (kardeş bölüm: yığında yer değiştirir, geçişsiz), 'duz' (yeni sayfa, geçişsiz)
 export function gezin(href, yon = 'ileri') {
   if (!href || ayni(href, simdiki())) return false;
   bekleyenYon = yon;
@@ -94,7 +95,7 @@ export function yonAl() {
 // yönlendirici her adres değişiminde çağırır
 export function gecisBildir({ yon, ilk }) {
   bekleyen = null;
-  if (ilk || yon === 'sekme' || yon === 'kaydirma' || hareketAz()) return;
+  if (ilk || yon === 'sekme' || yon === 'kaydirma' || yon === 'bolum' || yon === 'duz' || hareketAz()) return;
   bekleyen = { yon: yon === 'geri' ? 'geri' : 'ileri' };
 }
 
@@ -474,7 +475,11 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
     const a = e.target.closest && e.target.closest('a[href^="#"]');
     if (!a || a.target || a.hasAttribute('download')) return;
     e.preventDefault();
-    gezin(a.getAttribute('href'), a.closest('#sekmeler') ? 'sekme' : 'ileri');
+    // İş 89 (Emre: "Konular kısmı normal geçsin, tuhaf duruyor"): bölüm şeritleri (Akımlar / Başyapıtlar / Konular /
+    // Zaman, konu grupları) sayfa açmaz, bölüm değiştirir: büyüme yok. Şeridin seçili olduğu sayfada (kardeş bölümler)
+    // yığında yer değiştirir ('bolum'); seçilisiz şeritten (Konular → bir grup) yığına eklenir ama geçişsiz ('duz').
+    const bolum = a.closest('.bolumler, .konu-grup-serit');
+    gezin(a.getAttribute('href'), a.closest('#sekmeler') ? 'sekme' : bolum ? (bolum.querySelector('[aria-current]') ? 'bolum' : 'duz') : 'ileri');
   });
 
   // Kenardan geri kaydırma: önceki sayfa altta gerçek hâliyle görünür, şimdiki sayfa parmağı izler. Görüntüleyici
@@ -559,7 +564,8 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
   // İş 87: kaydırılan sayfa kaydırma boyunca ekran boyunda sabit bir katmana alınır (#uygulama boşalır): iPhone'da
   // sayfanın kendisini (çok uzun öğe) kırpmak alttaki önceki sayfayı göstermiyordu (sayfa siyah zeminde bir şerit kalıyordu)
   // ve her karede yeniden boyanıyordu. Vazgeçilirse düğümler yerine konur, sayfa kaldığı yere kaydırılır.
-  const kucul = (x) => !x.gor && !hareketAz();
+  // İş 89: büyüyerek açılmamış sayfa (bölüm şeridinden, geçişsiz) iPhone'daki gibi yana kayarak kapanır
+  const kucul = (x) => !x.gor && !hareketAz() && kokenler.has(x.adres);
   // İş 86e: açıldığı öğenin kutusu biliniyorsa sayfa ona daralır (clip-path); yoksa küçülme (scale)
   const sekilli = (x) => kucul(x) && x.koken && x.koken.kutu;
   // İş 88: t: 0 tam ekran, 1 öğenin kutusunda (sayfa pencereyle birlikte küçülür)
