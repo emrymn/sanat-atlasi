@@ -41,7 +41,80 @@ export function vakit(tarih = new Date()) {
 // yenilenmez (eskileri gorseller/harita_eski/ altında yedekte)
 export const resimAdresi = (bolge, tur) => `gorseller/harita/donem_${bolge}_${tur}.webp`;
 export const nesneAdresi = (bolge, no, tur) => `gorseller/harita/sembol_${bolge}_${no}_${tur}.webp`;
-export const yolcuAdresi = (bolge, tur) => `gorseller/harita/ogrenci_${bolge}_${tur}.webp`;
+// İş 90: öğrencinin pozları (scripts/harita/yolcu_hazirla.py; data/harita_yolcu.json): dur, yuru1.., arka1.., eskiz
+export const yolcuAdresi = (bolge, poz, tur) => `gorseller/harita/yolcu_${bolge}_${poz}_${tur}.webp`;
+// Öğrenci durağın yanında durur: sağdaki meydanlarda sembolün solunda, soldakilerde sağında (haritanın içine doğru)
+export const YOLCU_ARA = 34;
+// Öğrencinin durduğu yer (durak: haritaKur'un durağı; dönüş haritada pt, bölgenin resminin üstünden)
+export function yolcuYeri(x) {
+  return { x: Math.min(W - 18, Math.max(18, x.x * W + (x.x > 0.5 ? -YOLCU_ARA : YOLCU_ARA))), y: x.y * H + 4 };
+}
+
+/**
+ * İş 90 (Emre: "yürürken patikayı kullansın, sakın dışarıdan yürütme"): öğrencinin eski durağından yenisine yolu.
+ * patikalar: data/harita_patikalar.json (resimdeki boyalı patika, durak durak). Dönüş: parçalar; her parça bir dönemin
+ * içinde, noktaları haritada pt [x, y] (haritanın üstünden). Dönem değişince yeni parça başlar: öğrenci sisin içinde
+ * söner, yeni dönemin ilk durağında belirir (dönemler arasında patika yok). Patikası bilinmeyen iki durak arası (meydan
+ * sayısından fazla bölüm) düz kısa bir adım. En çok enCok durak yürünür (daha uzaksa yolun son enCok durağı).
+ * Yürünecek yol yoksa (ilk açılış, geri gidiş, aynı durak) null.
+ */
+export function yolcuYolu(harita, patikalar, eskiId, yeniId, enCok = 4) {
+  const sira = harita.bolgeler.flatMap((b) => b.duraklar.map((x, j) => ({ b, x, j })));
+  const i1 = sira.findIndex((s) => s.x.id === yeniId);
+  let i0 = sira.findIndex((s) => s.x.id === eskiId);
+  if (i0 < 0 || i1 < 0 || i1 <= i0) return null;
+  i0 = Math.max(i0, i1 - enCok);
+  const haritada = (b, [x, y]) => [x * W, (b.ust + y) * H];
+  const yer = (s) => {
+    const p = yolcuYeri(s.x);
+    return [p.x, s.b.ust * H + p.y];
+  };
+  const parcalar = [];
+  let parca = null;
+  for (let i = i0; i < i1; i++) {
+    const a = sira[i];
+    const c = sira[i + 1];
+    if (a.b.id !== c.b.id) {
+      parca = null;
+      continue;
+    }
+    if (!parca) {
+      parca = { bolge: a.b.id, noktalar: [yer(a)] };
+      parcalar.push(parca);
+    }
+    const yollar = (patikalar && patikalar.bolgeler && patikalar.bolgeler[a.b.id] && patikalar.bolgeler[a.b.id].yollar) || [];
+    const p = yollar[a.j];
+    const fazla = a.j >= yollar.length || c.j !== a.j + 1 || !Array.isArray(p) || p.length < 2;
+    if (!fazla) parca.noktalar.push(...p.slice(1, -1).map((n) => haritada(a.b, n)));
+    parca.noktalar.push(yer(c));
+  }
+  // yalnız dönem değiştiyse (yeni dönemin ilk durağına): o durakta tek noktalı parça (orada belirir)
+  const son = sira[i1];
+  if (!parcalar.length || parcalar[parcalar.length - 1].bolge !== son.b.id) parcalar.push({ bolge: son.b.id, noktalar: [yer(son)] });
+  return { parcalar };
+}
+
+// Bir çizginin uzunluğu ve t (0–1) anındaki noktası ile yönü
+export function cizgiUzunlugu(n) {
+  let u = 0;
+  for (let i = 1; i < n.length; i++) u += Math.hypot(n[i][0] - n[i - 1][0], n[i][1] - n[i - 1][1]);
+  return u;
+}
+export function cizgideNokta(n, mesafe) {
+  if (n.length === 1) return { x: n[0][0], y: n[0][1], dx: 0, dy: 0 };
+  let kalan = Math.max(0, mesafe);
+  for (let i = 1; i < n.length; i++) {
+    const dx = n[i][0] - n[i - 1][0];
+    const dy = n[i][1] - n[i - 1][1];
+    const u = Math.hypot(dx, dy);
+    if (kalan <= u || i === n.length - 1) {
+      const t = u ? Math.min(1, kalan / u) : 1;
+      return { x: n[i - 1][0] + dx * t, y: n[i - 1][1] + dy * t, dx, dy };
+    }
+    kalan -= u;
+  }
+  return null;
+}
 
 /**
  * durumlar: bolumDurumlari().durumlar (akım sırasıyla); veri: data/harita.json

@@ -7,13 +7,13 @@
 import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
-import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yolcuAdresi, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
+import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
 import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen } from './ortak.js';
 import { sanatciEserleri } from '../eserler.js';
 import { harfUygula, BOLGE_HARFLERI } from '../harfler.js';
 
-// Öğrenci durağın yanında durur: sağdaki meydanlarda sembolün solunda, soldakilerde sağında (haritanın içine doğru)
-const YOLCU_ARA = 34;
+// İş 90: öğrencinin ekrandaki boyu (pt; scripts/harita/yolcu_hazirla.py YOLCU_PT)
+const YOLCU_H = 80;
 let veriSozu = null;
 export function haritaVerisi() {
   veriSozu ||= jsonGetir('data/harita.json').catch(() => ({ bolgeler: {}, eserler: {} }));
@@ -48,18 +48,14 @@ function durakHtml(b, x, h, tur, simdiki, yeni) {
       aria-label="${kacis(etiketi)}"><img alt="" decoding="async" src="${nesneAdresi(b.id, x.sembolNo, tur)}"></button>`;
   const taban = `left:${((x.x * W) / W) * 100}%;top:${((ustY + 2) / toplamY) * 100}%`;
   if (x.acik) parca = `<span class="harita-isik" aria-hidden="true" style="${taban};animation-delay:${((x.no * 0.37) % 2.8).toFixed(2)}s"></span>` + parca;
-  if (x.id === simdiki && b.yolcu) {
-    const y = b.yolcu;
-    const yw = y.w;
-    const yh = y.h;
-    const hx = Math.min(W - 18, Math.max(18, x.x * W + (x.x > 0.5 ? -YOLCU_ARA : YOLCU_ARA)));
-    const hy = ustY + 4;
+  if (x.id === simdiki) {
+    // "buradasın": yukarıdan inen ışık, yerde ışık, kıvılcımlar ve başının üstünde ok (öğrencinin kendisi yolcuHtml)
+    const { x: hx, y: py } = yolcuYeri(x);
+    const hy = b.ust * H + py;
+    const yh = YOLCU_H;
     parca += `<span class="harita-sutun" aria-hidden="true" style="left:${(hx / W) * 100}%;top:${((hy - 170) / toplamY) * 100}%;height:${(174 / toplamY) * 100}%"></span>
       <span class="harita-yer" aria-hidden="true" style="left:${(hx / W) * 100}%;top:${((hy - 2) / toplamY) * 100}%"></span>
       ${[0, 1, 2, 3, 4, 5].map((i) => `<span class="harita-kivilcim" aria-hidden="true" style="left:${((hx - 12 + ((i * 37) % 24)) / W) * 100}%;top:${((hy - 6 - ((i * 13) % 10)) / toplamY) * 100}%;animation-delay:${i * 0.4}s"></span>`).join('')}
-      <span class="harita-yolcu-hale" aria-hidden="true" style="left:${(hx / W) * 100}%;top:${((hy - yh * 0.5) / toplamY) * 100}%"></span>
-      <img class="harita-yolcu" data-test="harita-yolcu" alt="" decoding="async" src="${yolcuAdresi(b.id, tur)}"
-        style="left:${((hx - y.ax * yw) / W) * 100}%;top:${((hy - y.ay * yh) / toplamY) * 100}%;width:${(yw / W) * 100}%">
       <span class="harita-yolcu-ok" aria-hidden="true" style="left:${(hx / W) * 100}%;top:${((hy - yh - 6) / toplamY) * 100}%"></span>`;
   }
   return parca;
@@ -77,7 +73,7 @@ function motifHtml(b, m, i, h) {
 export async function haritaSayfasi({ konumuKoru = false } = {}) {
   const eskiY = window.scrollY;
   const no = cizimNo();
-  const [veri, bilgi] = await Promise.all([haritaVerisi(), d.akimBilgi ? null : jsonGetir('data/akim_bilgi.json').catch(() => null)]);
+  const [veri, bilgi, yv] = await Promise.all([haritaVerisi(), d.akimBilgi ? null : jsonGetir('data/akim_bilgi.json').catch(() => null), yolcuVerisi()]);
   if (bilgi) d.akimBilgi = bilgi;
   if (!guncelMi(no)) return;
   const tur = d.haritaVakti || vakit();
@@ -91,9 +87,19 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
   d.haritaDurum = { liste, simdiki, veri, tur };
   gununRengi();
   const h = harita.yukseklik;
-  const katman = harita.bolgeler
-    .map((b) => b.duraklar.map((x) => durakHtml(b, x, h, tur, simdiki, yeniler.has(x.id))).join('') + b.motifler.map((m, i) => motifHtml(b, m, i, h)).join(''))
-    .join('');
+  // İş 90: öğrenci en son durduğu duraktan yeni durağa patikada yürür (ilk açılışta, geri gidişte ve hareket azaltmada yürümez)
+  const eskiYer = d.ilerleme.haritaYolcu;
+  const yol = !konumuKoru && !azHareket() && simdiki && eskiYer && eskiYer !== simdiki ? yolcuYolu(harita, yv.patikalar, eskiYer, simdiki) : null;
+  if (simdiki && eskiYer !== simdiki) {
+    d.ilerleme.haritaYolcu = simdiki;
+    kaydet();
+  }
+  const yolcuDurak = simdiki ? harita.bolgeler.flatMap((b) => b.duraklar.map((x) => ({ b, x }))).find((o) => o.x.id === simdiki) : null;
+  const baslangic = yol ? { bolge: yol.parcalar[0].bolge, nokta: yol.parcalar[0].noktalar[0] } : yolcuDurak ? { bolge: yolcuDurak.b.id, nokta: yolcuNoktasi(yolcuDurak) } : null;
+  const katman =
+    harita.bolgeler
+      .map((b) => b.duraklar.map((x) => durakHtml(b, x, h, tur, simdiki, yeniler.has(x.id))).join('') + b.motifler.map((m, i) => motifHtml(b, m, i, h)).join(''))
+      .join('') + (baslangic ? yolcuHtml(baslangic, tur, h, yv.yolcu, yolcuDurak && yolcuDurak.x.x > 0.5) : '');
   ciz(`<div class="harita-ust">
       <h1>Yolculuk</h1>
       <p class="harita-ozet" data-test="harita-ozet"><b>${acikSayi}</b>/${liste.length} bölüm · <b>${yildiz}</b> ${YILDIZ.replace('yildiz-sekil', 'yildiz-sekil dolu')}<span class="ekran-disi">yıldız</span></p>
@@ -101,7 +107,7 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     <button type="button" class="harita-vakit" data-harita-vakit aria-label="${tur === 'gece' ? 'Gündüze geç' : 'Geceye geç'}">${ikon(tur === 'gece' ? 'gunes' : 'ay', 20, 1.6)}</button>
     <p class="harita-zaman" data-harita-zaman data-test="harita-zaman"><span class="harita-zaman-ic"><b></b><span></span></span></p>
     <div class="harita-perde" data-harita-perde aria-hidden="true"></div>
-    <div class="harita ${tur}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
+    <div class="harita ${tur}${yol ? ' yuruyor' : ''}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
       ${harita.bolgeler.map((b, i) => resimHtml(b, i, h, tur, sinir)).join('')}
       ${harita.bolgeler
         .slice(0, -1)
@@ -113,14 +119,22 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     ${simdiki ? `<button type="button" class="harita-konum" data-harita-konum data-test="harita-konum" hidden><span class="harita-konum-nokta" aria-hidden="true"></span>Buradasın<span class="harita-konum-ok" aria-hidden="true">${ikon('ileri', 14, 2)}</span></button>` : ''}
     <div class="harita-pencere" data-harita-pencere hidden></div>`);
   const hedef = ekran.querySelector('.harita-durak.simdiki') || ekran.querySelector('.harita-resim');
+  const kap = ekran.querySelector('[data-yolcu]');
   if (konumuKoru) window.scrollTo(0, eskiY);
-  else if (hedef) {
+  else if (yol && kap) {
+    // önce öğrencinin durduğu eski yer gösterilir, az sonra yürümeye başlar
+    const ilk = () => window.scrollTo(0, Math.max(0, kap.getBoundingClientRect().bottom + window.scrollY - window.innerHeight * 0.6));
+    ilk();
+    requestAnimationFrame(ilk);
+    setTimeout(() => yuru(kap, yol, h, tur, yv.yolcu, no), 900);
+  } else if (hedef) {
     konumaKaydir();
     requestAnimationFrame(() => konumaKaydir());
   }
   // köprülerdeki dönem adı o dönemin harfiyle (İş 48)
   for (const g of ekran.querySelectorAll('[data-gecis]')) harfUygula(g.querySelector('.harita-gecis-yazi b'), BOLGE_HARFLERI[g.dataset.gecis]);
   konumIzle();
+  if (kap && !yol) bekle(kap, no);
   gecisleriIzle();
   kaydirmaIzle();
   requestAnimationFrame(kaydirmaIzle);
@@ -226,6 +240,179 @@ function gecisHtml(alt, ustB, h, tur, sinir, liste) {
     </div>`;
 }
 
+// ---------- İş 90: öğrenci ----------
+// Keskin pozlar (data/harita_yolcu.json) ve patikalar (data/harita_patikalar.json); yoksa öğrenci yalnız durur.
+let yolcuSozu = null;
+function yolcuVerisi() {
+  yolcuSozu ||= Promise.all([jsonGetir('data/harita_yolcu.json').catch(() => null), jsonGetir('data/harita_patikalar.json').catch(() => null)]).then(
+    ([yolcu, patikalar]) => ({ yolcu, patikalar }),
+  );
+  return yolcuSozu;
+}
+function yolcuNoktasi({ b, x }) {
+  const p = yolcuYeri(x);
+  return [p.x, b.ust * H + p.y];
+}
+const pozlari = (yolcu, bolge) => (yolcu && yolcu.bolgeler && yolcu.bolgeler[bolge] && yolcu.bolgeler[bolge].pozlar) || {};
+const pozOlcu = (yolcu, bolge, poz) => pozlari(yolcu, bolge)[poz] || pozlari(yolcu, bolge).dur || { w: 33, ay: 1 };
+// öğrencinin kutusu: ayağı (px, py) noktasında, gövdesinin ortası x'te
+function yolcuKonum(kap, [px, py], h, o) {
+  kap.style.left = `${(((px - o.w / 2) / W) * 100).toFixed(3)}%`;
+  kap.style.top = `${(((py - YOLCU_H * o.ay) / (h * H)) * 100).toFixed(3)}%`;
+  kap.style.width = `${((o.w / W) * 100).toFixed(3)}%`;
+}
+// sag: sağa bakar (resimler sola bakar; durakta sembole döner)
+function yolcuHtml({ bolge, nokta }, tur, h, yolcu, sag) {
+  const o = pozOlcu(yolcu, bolge, 'dur');
+  const [px, py] = nokta;
+  const stil = `left:${(((px - o.w / 2) / W) * 100).toFixed(3)}%;top:${(((py - YOLCU_H * o.ay) / (h * H)) * 100).toFixed(3)}%;width:${((o.w / W) * 100).toFixed(3)}%`;
+  return `<div class="harita-yolcu-kap${sag ? ' sag' : ''}" data-yolcu data-bolge="${bolge}" aria-hidden="true" style="${stil}">
+      <span class="harita-yolcu-golge"></span><img class="harita-yolcu" data-test="harita-yolcu" alt="" decoding="async" src="${yolcuAdresi(bolge, 'dur', tur)}">
+    </div>`;
+}
+
+// Yürüyüş: parça parça patikada; adım başına hafif sekme ve sallanma (yürüme pozları varsa adım adım değişir, yolda
+// yukarı giderken arkadan pozu). Kamera öğrenciyi izler; parmakla kaydırılınca izlemeyi bırakır. Dönem değişirken
+// öğrenci söner, harita yeni dönemin ilk durağına kayar, orada yeni dönemin kıyafetiyle belirir.
+const HIZ = 90; // pt/sn; uzun yolda bütün yürüyüş en çok YURUYUS_EN_COK sürer
+const YURUYUS_EN_COK = 7;
+const ADIM = 10; // pt: bir adım
+function yuru(kap, yol, h, tur, yolcu, no) {
+  if (!kap.isConnected || !guncelMi(no)) return;
+  const kart = kap.closest('[data-test="harita"]');
+  const img = kap.querySelector('img');
+  let takip = true;
+  const birak = () => (takip = false);
+  window.addEventListener('touchstart', birak, { passive: true, once: true });
+  window.addEventListener('wheel', birak, { passive: true, once: true });
+  // pozlar önceden yüklenir (değişirken boş kare olmasın)
+  for (const p of yol.parcalar) for (const poz of Object.keys(pozlari(yolcu, p.bolge))) new Image().src = yolcuAdresi(p.bolge, poz, tur);
+  const kare = (bolge, adim, yukari) => {
+    const pz = pozlari(yolcu, bolge);
+    const dizi = (on) => Object.keys(pz).filter((k) => k.startsWith(on)).sort();
+    const arka = dizi('arka');
+    const yan = dizi('yuru');
+    const l = yukari && arka.length ? arka : yan;
+    return l.length ? l[adim % l.length] : 'dur';
+  };
+  const hiz = Math.max(HIZ, yol.parcalar.reduce((t, p) => t + cizgiUzunlugu(p.noktalar), 0) / YURUYUS_EN_COK);
+  let pi = 0;
+  const kamera = (yumusak) => {
+    if (!takip) return;
+    const r = kap.getBoundingClientRect();
+    const hedef = r.bottom + window.scrollY - window.innerHeight * 0.6;
+    const simdi = window.scrollY;
+    window.scrollTo(0, Math.max(0, yumusak ? simdi + (hedef - simdi) * 0.12 : hedef));
+  };
+  const parca = () => {
+    const p = yol.parcalar[pi];
+    const n = p.noktalar;
+    const L = cizgiUzunlugu(n);
+    let bas = null;
+    let son = '';
+    const adimla = (t) => {
+      if (!kap.isConnected || !guncelMi(no)) return;
+      bas ??= t;
+      const m = Math.min(L, ((t - bas) / 1000) * hiz);
+      const q = cizgideNokta(n, m);
+      const yukari = q.dy < 0 && Math.abs(q.dy) > Math.abs(q.dx) * 1.6;
+      const poz = m < L ? kare(p.bolge, Math.floor(m / ADIM), yukari) : 'dur';
+      const o = pozOlcu(yolcu, p.bolge, poz);
+      yolcuKonum(kap, [q.x, q.y], h, o);
+      if (Math.abs(q.dx) > 0.5) kap.classList.toggle('sag', q.dx > 0);
+      if (poz !== son) {
+        img.src = yolcuAdresi(p.bolge, poz, tur);
+        son = poz;
+      }
+      // tek resimle yürürken: adımda sekme ve gövdenin hafif sallanması
+      const faz = (m / ADIM) * Math.PI;
+      const sek = poz === 'dur' && m < L ? Math.abs(Math.sin(faz)) : 0;
+      img.style.translate = `0 ${(-sek * 2.4).toFixed(2)}px`;
+      img.style.rotate = `${(poz === 'dur' && m < L ? Math.sin(faz) * 2.5 : 0).toFixed(2)}deg`;
+      kamera(true);
+      if (m < L) return requestAnimationFrame(adimla);
+      if (pi + 1 < yol.parcalar.length) return gec();
+      bitir();
+    };
+    requestAnimationFrame(adimla);
+  };
+  // dönem değişimi: söner, harita yeni yere kayar, yeni kıyafetle belirir
+  const gec = () => {
+    kap.classList.add('soner');
+    setTimeout(() => {
+      if (!kap.isConnected) return;
+      pi++;
+      const p = yol.parcalar[pi];
+      kap.dataset.bolge = p.bolge;
+      img.src = yolcuAdresi(p.bolge, 'dur', tur);
+      yolcuKonum(kap, p.noktalar[0], h, pozOlcu(yolcu, p.bolge, 'dur'));
+      const bas = window.scrollY;
+      const r = kap.getBoundingClientRect();
+      const hedef = Math.max(0, r.bottom + bas - window.innerHeight * 0.6);
+      const t0 = performance.now();
+      const kay = (t) => {
+        if (!kap.isConnected) return;
+        const u = Math.min(1, (t - t0) / 1400);
+        const e = u < 0.5 ? 2 * u * u : 1 - (-2 * u + 2) ** 2 / 2;
+        if (takip) window.scrollTo(0, bas + (hedef - bas) * e);
+        if (u < 1) return requestAnimationFrame(kay);
+        kap.classList.remove('soner');
+        setTimeout(() => (yol.parcalar[pi].noktalar.length > 1 ? parca() : bitir()), 450);
+      };
+      requestAnimationFrame(kay);
+    }, 450);
+  };
+  const bitir = () => {
+    img.style.translate = '';
+    img.style.rotate = '';
+    img.src = yolcuAdresi(yol.parcalar[pi].bolge, 'dur', tur);
+    // durakta sembole döner
+    const durak = kart && kart.querySelector('.harita-durak.simdiki');
+    if (durak) {
+      const r = durak.getBoundingClientRect();
+      const k = kap.getBoundingClientRect();
+      kap.classList.toggle('sag', r.left + r.width / 2 > k.left + k.width / 2);
+    }
+    kart && kart.classList.remove('yuruyor');
+    window.removeEventListener('touchstart', birak);
+    window.removeEventListener('wheel', birak);
+    bekle(kap, no);
+  };
+  parca();
+}
+
+// Dururken: arada bir etrafına bakar (döner, sonra yine sembole); eskiz pozu varsa bir süre sonra eskiz yapar
+function bekle(kap, no) {
+  if (azHareket()) return;
+  const img = kap.querySelector('img');
+  const bolge = kap.dataset.bolge;
+  let eskiz = false;
+  const tur = (ekran.querySelector('[data-test="harita"]') || {}).dataset?.vakit || 'gunduz';
+  const dongu = () => {
+    if (!kap.isConnected || !guncelMi(no)) return;
+    yolcuVerisi().then(({ yolcu }) => {
+      if (!kap.isConnected || !guncelMi(no) || kap.closest('.yuruyor')) return;
+      if (!eskiz && pozlari(yolcu, bolge).eskiz && Math.random() < 0.5) {
+        eskiz = true;
+        img.src = yolcuAdresi(bolge, 'eskiz', tur);
+        return setTimeout(() => {
+          if (!kap.isConnected) return;
+          eskiz = false;
+          img.src = yolcuAdresi(bolge, 'dur', tur);
+          setTimeout(dongu, 5000);
+        }, 9000);
+      }
+      kap.classList.toggle('sag');
+      setTimeout(() => {
+        if (!kap.isConnected) return;
+        kap.classList.toggle('sag');
+        setTimeout(dongu, 5000 + Math.random() * 4000);
+      }, 1600);
+    });
+  };
+  setTimeout(dongu, 4000 + Math.random() * 3000);
+}
+
 function konumaKaydir(yumusak = false) {
   const el = ekran.querySelector('.harita-durak.simdiki');
   if (!el) return window.scrollTo(0, document.documentElement.scrollHeight);
@@ -242,7 +429,8 @@ function konumIzle() {
   if (!durak || !dugme || typeof IntersectionObserver !== 'function') return;
   konumGozcu = new IntersectionObserver(([g]) => {
     if (!dugme.isConnected) return konumGozcu.disconnect();
-    dugme.hidden = g.isIntersecting;
+    // yürürken öğrenci zaten ekranda (kamera izliyor): hap gösterilmez
+    dugme.hidden = g.isIntersecting || !!dugme.parentElement.querySelector('.harita.yuruyor');
     dugme.classList.toggle('asagi', g.boundingClientRect.top > 0);
   });
   konumGozcu.observe(durak);

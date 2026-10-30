@@ -7536,24 +7536,45 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 /* "buradasın": yolcu, yukarıdan inen ışık sütunu, yerde ışık, yükselen kıvılcımlar */
 /* yolcu duraklar gibi krem + koyu konturlu, altın ışıkla parlar, arkasında beyaz hale, başının üstünde altın ok:
    kalabalıkta ve yanındaki durak sembolünün önünde seçilsin */
+/* İş 90: öğrenci haritanın içinde: çıkartma gibi kontur ve beyaz hale yok (SVG süzgeci iPhone'da düşük çözünürlükte
+   boyanıp bulanıklaştırıyordu); yerine ayağının altında yumuşak gölge ve ince koyu kenar. Kutu (kap) ayağından
+   yerleşir, yürürken JS konumunu değiştirir. */
+.harita-yolcu-kap {
+  position: absolute;
+  pointer-events: none;
+  transition: opacity 0.45s ease;
+  z-index: 2;
+}
+.harita-yolcu-kap.soner {
+  opacity: 0;
+}
 .harita-yolcu {
-  position: absolute;
+  position: relative;
+  display: block;
+  width: 100%;
   height: auto;
-  pointer-events: none;
-  transform-origin: 17% 100%;
-  filter: saturate(1.3) contrast(1.08) brightness(1.06) url(#durak-kontur) drop-shadow(0 0 4px #fff2cf) drop-shadow(0 0 12px rgba(255, 206, 110, 0.95));
+  transform-origin: 50% 100%;
+  filter: drop-shadow(0 0 0.6px rgba(24, 14, 6, 0.85)) drop-shadow(0 1px 2px rgba(24, 14, 6, 0.35));
 }
-.harita-yolcu-hale {
+.harita-yolcu-kap.sag .harita-yolcu {
+  scale: -1 1;
+}
+.harita-yolcu-golge {
   position: absolute;
-  width: 26%;
-  aspect-ratio: 1;
-  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 0;
+  width: 120%;
+  height: 12px;
+  translate: -50% 45%;
   border-radius: 50%;
-  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.95), rgba(255, 248, 228, 0.6) 45%, rgba(255, 244, 220, 0));
-  pointer-events: none;
+  background: radial-gradient(closest-side, rgba(20, 12, 4, 0.55), rgba(20, 12, 4, 0.25) 55%, rgba(20, 12, 4, 0));
 }
-.harita.gece .harita-yolcu-hale {
-  background: radial-gradient(closest-side, rgba(255, 250, 236, 0.85), rgba(255, 236, 196, 0.45) 45%, rgba(255, 236, 196, 0));
+.harita.gece .harita-yolcu-golge {
+  background: radial-gradient(closest-side, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) 55%, rgba(0, 0, 0, 0));
+}
+/* yürürken "buradasın" ışıkları gizli: öğrenci varınca belirir */
+.harita.yuruyor :is(.harita-sutun, .harita-yer, .harita-kivilcim, .harita-yolcu-ok) {
+  visibility: hidden;
 }
 .harita-yolcu-ok {
   position: absolute;
@@ -7623,11 +7644,12 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   .harita-kivilcim {
     animation: harita-kivilcim 2.4s linear infinite;
   }
+  /* dururken nefes alır gibi; yürürken JS sektirir */
   .harita-yolcu {
-    animation: harita-yolcu-yuru 1.4s ease-in-out infinite;
+    animation: harita-yolcu-nefes 3.2s ease-in-out infinite;
   }
-  .harita-yolcu-hale {
-    animation: harita-yolcu-hale 2.4s ease-in-out infinite;
+  .harita.yuruyor .harita-yolcu {
+    animation: none;
   }
   .harita-yolcu-ok {
     animation: harita-yolcu-ok 1.2s ease-in-out infinite;
@@ -7663,27 +7685,13 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
     opacity: 0.95;
   }
 }
-@keyframes harita-yolcu-yuru {
+@keyframes harita-yolcu-nefes {
   0%,
   100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  25% {
-    transform: translateY(-3%) rotate(-1.5deg);
-  }
-  75% {
-    transform: translateY(-3%) rotate(1.5deg);
-  }
-}
-@keyframes harita-yolcu-hale {
-  0%,
-  100% {
-    opacity: 0.75;
-    scale: 0.92;
+    transform: none;
   }
   50% {
-    opacity: 1;
-    scale: 1.08;
+    transform: scale(1.012, 1.018);
   }
 }
 @keyframes harita-yolcu-ok {

@@ -185,3 +185,48 @@ test('Harita: dönemler arasında köprü; ileri (yukarı) kaydırınca köprü 
   // sağ üstteki gösterge dönemi yazar
   await expect(page.locator('[data-test="harita-zaman"] b')).not.toBeEmpty();
 });
+
+// İş 90: yeni bölüm açılınca öğrenci en son durduğu duraktan yenisine patikada yürür, varınca durakta kalır;
+// bir sonraki açılışta yürümez. Görseli keskin poz dosyası (yolcu_<dönem>_dur_<tur>.webp).
+test('İş 90: öğrenci eski duraktan yenisine patikada yürür', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/harita');
+  await hazir(page);
+  await page.locator('[data-yolcu]').waitFor();
+  await expect(page.locator('[data-test="harita-yolcu"]')).toHaveAttribute('src', /yolcu_ortacag_dur_(gunduz|gece)\.webp$/);
+  const { eski, simdiki } = await page.evaluate(async () => {
+    const { kaydet } = await import('./js/ekranlar/ortak.js');
+    const { durumlar } = await import('./js/ekranlar/harita.js');
+    const d = window.__atlas;
+    const l = d.haritaDurum.liste;
+    for (const x of l.slice(0, 20)) d.ilerleme.bolumler[x.id] = { kolay: 1, orta: 1, zor: 1, tanitim: true };
+    const s = durumlar().simdiki;
+    const i = l.findIndex((x) => x.id === s);
+    d.ilerleme.haritaYolcu = l[i - 1].id;
+    kaydet();
+    return { eski: l[i - 1].id, simdiki: s };
+  });
+  expect(eski).not.toBe(simdiki);
+  await page.goto('./#/');
+  await hazir(page);
+  await page.goto('./#/harita');
+  const kap = page.locator('[data-yolcu]');
+  await kap.waitFor();
+  await expect(page.locator('.harita.yuruyor')).toHaveCount(1);
+  const bas = await kap.boundingBox();
+  // yürüyüş sırasında yer değiştirir, sonra biter; buradasın ışıkları görünür
+  await expect.poll(async () => { const b = await kap.boundingBox(); return Math.hypot(b.x - bas.x, b.y + (await page.evaluate(() => scrollY)) - bas.y); }, { timeout: 8000 }).toBeGreaterThan(5);
+  await expect(page.locator('.harita.yuruyor')).toHaveCount(0, { timeout: 15000 });
+  expect(await page.evaluate(() => window.__atlas.ilerleme.haritaYolcu)).toBe(simdiki);
+  // vardığı yer: şimdiki durağın yanı
+  const durak = await page.locator('.harita-durak.simdiki').boundingBox();
+  const son = await kap.boundingBox();
+  expect(Math.abs(son.y + son.height - (durak.y + durak.height))).toBeLessThan(40);
+  expect(Math.abs(son.x + son.width / 2 - (durak.x + durak.width / 2))).toBeLessThan(60);
+  // yeniden açılınca yürümez
+  await page.goto('./#/');
+  await hazir(page);
+  await page.goto('./#/harita');
+  await kap.waitFor();
+  await expect(page.locator('.harita.yuruyor')).toHaveCount(0);
+});
