@@ -860,8 +860,8 @@ test.describe('İş 76: sekmeler arası kaydırma', () => {
     expect(await page.evaluate(() => window.__bozuldu)).toContain('#/gozat');
     await page.waitForTimeout(600);
     await surukle(page, cdp, 60, 220, { birak: false });
-    // iki komşu (Galeri ve Defter) boş katman
-    await expect(page.locator('.sayfa-katman')).toHaveCount(2);
+    // açılan yandaki komşu (Galeri) boş katman (öbür yan kurulmaz)
+    await expect(page.locator('.sayfa-katman')).toHaveCount(1);
     await expect(page.locator('.sayfa-katman a.zaman-kart')).toHaveCount(0);
     await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
   });
@@ -893,5 +893,45 @@ test.describe('İş 76: sekmeler arası kaydırma', () => {
       await surukle(page, cdp, yer.x + 100, yer.x - 150, { y: yer.y });
       await expect(page).toHaveURL(/#\/gozat$/);
     }
+  });
+});
+
+// İş 77: bellekten geri konan sayfada kaydırmaya bağlı animasyonlar (Tuval'de adın kaydırdıkça solması) sonlarına
+// atlatılmaz: Tuval'e sekmeden dönünce ad ve yazılar solmuş kalıyordu
+test.describe('İş 77: bellekten dönen Tuval', () => {
+  test.use({ hasTouch: true, isMobile: true });
+
+  test('sekmeden ve kaydırarak dönünce ad görünür', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/');
+    const ad = page.locator('#uygulama .sahne-isim');
+    await expect(ad).toBeVisible();
+    await page.waitForTimeout(800);
+    const opak = () => ad.evaluate((e) => getComputedStyle(e).opacity);
+    expect(await opak()).toBe('1');
+    await page.evaluate(() => (document.querySelector('#uygulama .sahne-isim').dataset.iz = 'evet'));
+    await page.locator('#sekmeler a[data-sekme="gozat"]').click();
+    await expect(page).toHaveURL(/#\/gozat$/);
+    await page.locator('#sekmeler a[data-sekme="bugun"]').click();
+    await expect(page).toHaveURL(/#\/$/);
+    // bellekten (aynı düğüm) ve görünür
+    await expect(page.locator('#uygulama .sahne-isim[data-iz="evet"]')).toHaveCount(1);
+    await page.waitForTimeout(300);
+    expect(await opak()).toBe('1');
+    // kaydırarak: Yolculuk'a gidip dönünce
+    const cdp = await context.newCDPSession(page);
+    const surukle = async (x0, x1) => {
+      await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: x0, y: 420 }] });
+      for (let i = 1; i <= 12; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: x0 + ((x1 - x0) * i) / 12, y: 421 }] });
+      await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+      await page.waitForTimeout(700);
+    };
+    await surukle(330, 60);
+    await expect(page).toHaveURL(/#\/harita$/);
+    await surukle(60, 330);
+    await expect(page).toHaveURL(/#\/$/);
+    await expect(ad).toBeVisible();
+    await page.waitForTimeout(300);
+    expect(await opak()).toBe('1');
   });
 });

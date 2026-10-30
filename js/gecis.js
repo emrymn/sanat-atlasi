@@ -18,6 +18,17 @@ const EGRI = 'cubic-bezier(0.32, 0.72, 0, 1)';
 const KART_SECICI = '.vitrin-kart, .konu-kart';
 const KENAR = 24; // px: kenardan kaydırmanın başlayabildiği şerit
 const BELLEK_EN_COK = 6;
+// açıkça yatay kıpırtı (dikeye yakın kıpırtılar sayfanın kendi kaydırmasına kalır)
+const yatayKipirti = (dx, dy) => Math.abs(dx) >= 6 && Math.abs(dx) > 2 * Math.abs(dy);
+// parmak kalkarkenki hız (px/ms): yalnız son 100 ms'deki hareket; parmak durup bekledikten sonra kalkarsa 0
+// (yoksa durmadan önceki hız sayılıyor, kısa kaydırma bile sayfayı geçiriyordu)
+function birakmaHizi(izler) {
+  const simdi = performance.now();
+  const son = izler.filter(([t]) => simdi - t <= 100);
+  if (son.length < 2) return 0;
+  const [a, b] = [son[0], son[son.length - 1]];
+  return b[0] > a[0] ? (b[1] - a[1]) / (b[0] - a[0]) : 0;
+}
 
 let ortam = null; // { ekran, d, sekmeler } — app.js kurar
 let bekleyenYon = null; // gezin() bırakır, yönlendirici alır
@@ -154,10 +165,13 @@ export const bellegeAl = bellegeKoy;
 // Ayrılıp yeniden belgeye konan düğümlerde tarayıcı CSS giriş animasyonlarını (kartların, resimlerin belirmesi)
 // baştan oynatır: önceki sayfa altta bir an boş (siyah) görünür, geri dönünce "baştan yükleniyor" gibi olurdu.
 // Sayfa zaten görülmüş: animasyonlar sonlarına atlatılır (sonsuz dönenler kendi hâlinde kalır).
+// İş 77: kaydırmaya bağlı animasyonlara (animation-timeline: scroll()/view(); Tuval'de adın ve yazıların kaydırdıkça
+// solması) dokunulmaz: sonlarına atlatılınca yazılar solmuş kalıyordu. Yalnız zamana bağlı giriş animasyonları.
 function animasyonlariBitir(kok) {
   if (!kok.getAnimations) return;
   for (const a of kok.getAnimations({ subtree: true })) {
     if (typeof CSSAnimation !== 'undefined' && !(a instanceof CSSAnimation)) continue;
+    if (a.timeline && typeof document !== 'undefined' && a.timeline !== document.timeline) continue;
     try {
       a.finish();
     } catch {
@@ -203,13 +217,6 @@ export function gecisHazirla(ekran, eski) {
 export function geriGecisi(ekran, eski, yon) {
   if (!eski || yon !== 'geri' || hareketAz()) return null;
   return geriGecis(ekran, eski);
-}
-
-// sekme çubuğundan bellekteki sayfaya geçiş: sayfa geldiği yönden hafifçe kayarak belirir
-export function sekmeGecisi(ekran) {
-  if (hareketAz()) return;
-  const y = ekran.dataset.yon === 'sag' ? 1 : ekran.dataset.yon === 'sol' ? -1 : 0;
-  ekran.animate([{ opacity: 0.35, transform: `translateX(${y * 28}px)` }, { opacity: 1, transform: 'none' }], { duration: 260, easing: EGRI });
 }
 
 // ayrılan / önceki sayfanın ekrandaki görüntüsü: düğümler sabit bir katmana konur, kaydırma yerinde
@@ -331,13 +338,26 @@ export function onizlemeAl() {
   onizlemeli = false;
   return o;
 }
-// kenardan kaydırma bittikten sonra önceki sayfa yerine konunca çağrılır
+// kenardan kaydırma bittikten sonra önceki sayfa yerine konunca çağrılır (her çizimin sonunda da çağrılır)
 export function kaydirmaSonu() {
   const f = kaydirmaBekleyen;
   kaydirmaBekleyen = null;
   if (f) f();
 }
 
+// sekmeler arası kaydırmada komşu sekmenin sayfası: bellekten, yoksa önceki oturumdan saklanan önizleme, o da yoksa
+// boş sayfa
+function komsuKatmanKur(adres) {
+  const b = bellekBul(adres) || (sekmeKoku(adres) ? kaliciOnizleme(adres) : null);
+  if (b) return { ...katman(b), adres, onizleme: true };
+  if (!sekmeKoku(adres)) return null;
+  // sekme daha hiç açılmadı: boş sayfa
+  const k = document.createElement('div');
+  k.className = 'sayfa-katman';
+  k.setAttribute('aria-hidden', 'true');
+  ortam.ekran.after(k);
+  return { k, geriAl: () => {}, adres, onizleme: false };
+}
 // ---------- Kurulum: bağlantılar ve kenardan kaydırma ----------
 export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
   ortam = { ekran, d, sekmeler };
@@ -388,9 +408,10 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
           k = null;
           return;
         }
-        // yatay ağırlıklı ilk kıpırtıda tarayıcı kaydırmayı üstlenmesin (sonra iptal edilemiyor)
+        // açıkça yatay ilk kıpırtıda tarayıcı kaydırmayı üstlenmesin (sonra iptal edilemiyor); dikeye yakın
+        // kıpırtıya dokunulmaz (iPhone ilk kıpırtı engellenirse o dokunuşta sayfayı hiç kaydırmıyor)
         if (dx < 8) {
-          if (Math.abs(dx) >= 4 && Math.abs(dx) > Math.abs(dy) && e.cancelable) e.preventDefault();
+          if (yatayKipirti(dx, dy) && e.cancelable) e.preventDefault();
           return;
         }
         k.basladi = true;
@@ -408,8 +429,7 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
     const x = k;
     k = null;
     if (!x || !x.basladi) return;
-    const [a, b] = [x.izler[0], x.izler[x.izler.length - 1]];
-    const hiz = a && b && b[0] > a[0] ? (b[1] - a[1]) / (b[0] - a[0]) : 0;
+    const hiz = birakmaHizi(x.izler);
     kaydirmaBitir(x, x.dx > W() * 0.33 || (hiz > 0.35 && x.dx > 20));
   };
   document.addEventListener('touchend', bitir, { capture: true });
@@ -435,9 +455,9 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
       const i = ortam.sekmeler.findIndex((a) => ayni(a, simdiki()));
       if (i < 0 || document.querySelector('.gor, .harita-pencere:not([hidden])')) return;
       const h = e.target;
-      if (!h || !h.closest || h.closest(SAYFALAMA_YOK) || yatayKayar(h)) return;
+      if (!h || !h.closest || h.closest(SAYFALAMA_YOK)) return;
       const t = e.touches[0];
-      s = { x: t.clientX, y: t.clientY, i, basladi: false, izler: [] };
+      s = { x: t.clientX, y: t.clientY, i, hedef: h, basladi: false, izler: [] };
     },
     { passive: true, capture: true },
   );
@@ -455,8 +475,20 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
           return;
         }
         if (Math.abs(dx) < 12 || Math.abs(dx) < Math.abs(dy) * 1.3) {
-          // yatay ağırlıklı ilk kıpırtıda tarayıcı kaydırmayı üstlenmesin (sonra iptal edilemiyor)
-          if (Math.abs(dx) >= 4 && Math.abs(dx) > Math.abs(dy)) e.preventDefault();
+          // açıkça yatay ilk kıpırtıda tarayıcı kaydırmayı üstlenmesin (yukarıdaki gibi)
+          if (yatayKipirti(dx, dy) && !s.kontrol) {
+            s.kontrol = true;
+            if (yatayKayar(s.hedef)) {
+              s = null;
+              return;
+            }
+          }
+          if (yatayKipirti(dx, dy)) e.preventDefault();
+          return;
+        }
+        // yatay kayan şeritte başlayan hareket şeridindir (denetim burada: her dokunuşta değil)
+        if (!s.kontrol && yatayKayar(s.hedef)) {
+          s = null;
           return;
         }
         s.basladi = true;
@@ -475,8 +507,7 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
     const x = s;
     s = null;
     if (!x || !x.basladi) return;
-    const [a, b] = [x.izler[0], x.izler[x.izler.length - 1]];
-    const hiz = a && b && b[0] > a[0] ? (b[1] - a[1]) / (b[0] - a[0]) : 0;
+    const hiz = birakmaHizi(x.izler);
     const e = etkin(x);
     const yon = e < 0 ? 1 : -1; // 1: sağdaki sekme, -1: soldaki
     const komsu = yon === 1 ? x.sag : x.sol;
@@ -492,23 +523,22 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
   function komsuKatman(j) {
     const adres = ortam.sekmeler[j];
     if (!adres) return null;
-    const b = bellekBul(adres) || kaliciOnizleme(adres);
-    if (b) return { ...katman(b), adres, onizleme: true };
-    const k = document.createElement('div');
-    k.className = 'sayfa-katman';
-    k.setAttribute('aria-hidden', 'true');
-    ekran.after(k);
-    return { k, geriAl: () => {}, adres, onizleme: false };
+    return komsuKatmanKur(adres);
   }
+  // komşu sayfa yalnız açılan yanda kurulur (iki tam sayfayı birden yerleştirmek kaydırmanın başında takılıyordu);
+  // parmak geri dönüp öbür yanı açarsa o zaman kurulur
+  const komsuHazirla = (x) => {
+    if (x.dx > 0 && x.sol === undefined) x.sol = komsuKatman(x.i - 1);
+    if (x.dx < 0 && x.sag === undefined) x.sag = komsuKatman(x.i + 1);
+  };
   function sayfalaBaslat(x) {
     suruyor(true);
-    x.sol = komsuKatman(x.i - 1);
-    x.sag = komsuKatman(x.i + 1);
     ekran.classList.add('gecis-on', 'kaydiriliyor', 'sayfalaniyor');
     const n = nav();
     if (n) n.classList.add('suruklen');
   }
   function sayfalaIlerlet(x) {
+    komsuHazirla(x);
     const e = etkin(x);
     ekran.style.transform = `translateX(${e}px)`;
     if (x.sol) x.sol.k.style.transform = `translateX(${e - W()}px)`;
@@ -527,12 +557,12 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
     const n = nav();
     if (n) n.style.setProperty('--surukle', String(tamam ? x.i + yon : x.i));
     const temizle = () => {
+      for (const a of animler) a.cancel();
       for (const l of [x.sol, x.sag]) {
         if (!l) continue;
         l.geriAl();
         l.k.remove();
       }
-      for (const a of animler) a.cancel();
       ekran.style.transform = '';
       ekran.classList.remove('gecis-on', 'kaydiriliyor', 'sayfalaniyor');
       if (n) {

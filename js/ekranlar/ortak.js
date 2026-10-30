@@ -1,5 +1,5 @@
 // Ekranların ortak parçaları: uygulama durumu (d), ekran öğesi, küçük yardımcılar, resim rengi, bildirim, sekme çubuğu, başlık ve çizim.
-import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu, bellekEskit, bellegeAl, sekmeGecisi, onizlemeAl } from '../gecis.js';
+import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu, bellekEskit, bellegeAl, onizlemeAl } from '../gecis.js';
 import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
@@ -492,7 +492,6 @@ export function bellektenGeriKoy(adres, yon) {
   kaydirmaYerleri.set(adres, s.y);
   const gecis = geriGecisi(ekran, eski, yon);
   if (gecis) gecis();
-  if (yon === 'sekme') sekmeGecisi(ekran);
   kaydirmaSonu();
   return true;
 }
