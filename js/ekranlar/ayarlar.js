@@ -203,10 +203,20 @@ async function gorselleriIndir() {
 const KALICI = 'atlas-devasa-kalici';
 const gb = (b) => (b / 1e9).toLocaleString('tr', { maximumFractionDigits: 1, minimumFractionDigits: 1 });
 
+// İş 84: telefondaki en büyük kopyalar. Listede olmayanlar (daha büyük dosyasıyla yenilenip yeni adres alanların eski
+// kopyaları ya da artık kullanılmayanlar) silinir: yer kaplamasın; yenileri "indir"le gelir
 async function telefondakiler() {
   try {
     if (!('caches' in window) || !(await caches.has(KALICI))) return new Set();
-    return new Set((await (await caches.open(KALICI)).keys()).map((r) => r.url));
+    const c = await caches.open(KALICI);
+    const istekler = await c.keys();
+    const gecerli = new Set(devasaAdresleri());
+    const var_ = new Set();
+    for (const r of istekler) {
+      if (gecerli.has(r.url)) var_.add(r.url);
+      else if (gecerli.size) await c.delete(r).catch(() => {});
+    }
+    return var_;
   } catch (e) {
     return new Set();
   }

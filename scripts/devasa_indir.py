@@ -19,6 +19,9 @@ gelince Retry-After'a uyulur, üst üste ret geldikçe bekleme katlanır (1 dk �
 Commons'ta doğrudan upload.wikimedia.org'un önbellekte hazır tuttuğu 3840 px küçük resim istenir; özgün daha küçükse
 özgün dosya.
 
+İş 84: data/gorsel_iyilestirme.json (scripts/kalite_tara.py) aynı eserin Commons'taki daha büyük dosyasını verdiyse o
+dosya iner; elimizdeki kopya ondan küçükse silinip yenisi indirilir.
+
 Çıktı: gorseller_devasa/<ad>.jpg ve gorseller_devasa/kaynaklar.json (müzeden gelenler; scripts/r2_yukle.py okur).
 Ara bilgiler gorseller_devasa/.bilgi/ altında saklanır, yeniden sorulmaz. Klasör depoya girmez.
 
@@ -382,10 +385,14 @@ def main():
     BILGI.mkdir(parents=True, exist_ok=True)
     for p in list(HEDEF.glob('*.aday')) + list(HEDEF.glob('*.ham')):
         p.unlink()  # yarıda kalmış indirmeler
+    for p in HEDEF.glob('*.eski'):  # İş 84: önceki çalıştırmada yenisi inmeden kalan eski kopya
+        p.replace(p.with_suffix('.jpg')) if not p.with_suffix('.jpg').exists() else p.unlink()
     harita = json.loads((KOK / 'data/yerel_gorseller.json').read_text())['gorseller']
     oranlar = json.loads((KOK / 'data/gorsel_oranlari.json').read_text())['oranlar']
     kaynaklar_yolu = HEDEF / 'kaynaklar.json'
     kaynaklar = json.loads(kaynaklar_yolu.read_text()) if kaynaklar_yolu.exists() else {}
+    iy_yolu = KOK / 'data/gorsel_iyilestirme.json'
+    iyilestirme = json.loads(iy_yolu.read_text()).get('gorseller', {}) if iy_yolu.exists() else {}
     # anahtar "kaynak:kimlik" → (görsel kaydı, eserin Wikidata kimliği)
     gorseller = {}
     for v in json.loads((KOK / 'data/eserler_onbellek.json').read_text())['sanatcilar'].values():
@@ -437,6 +444,18 @@ def main():
         if sil:
             print(f'Düzeltme: NGA/AIC sunucusunun büyüttüğü olabilecek {len(sil)} kopya silindi, özgün boyunda yeniden inecek', flush=True)
         isaret.write_text('1')
+    # İş 84: daha büyük dosyası bulunan eserlerde elimizdeki kopya ondan küçükse silinir, yenisi iner
+    yenilenecek = 0
+    for ad, iy in iyilestirme.items():
+        yol = HEDEF / f'{ad}.jpg'
+        beklenen = min(EN_BUYUK, max(iy['g'], iy['y']))
+        b = boyut(yol) if yol.exists() else None
+        if b and max(b) < beklenen * 0.95:
+            yol.replace(yol.with_suffix('.eski'))  # yenisi inemezse geri konur
+            yenilenecek += 1
+    if yenilenecek:
+        kaynaklar_yolu.write_text(json.dumps(kaynaklar, ensure_ascii=False, sort_keys=True))
+        print(f'Daha büyük dosyası bulunan {yenilenecek} görsel yeniden inecek (data/gorsel_iyilestirme.json)', flush=True)
     kalan = [(a, ad) for a, ad in isler if not (HEDEF / f'{ad}.jpg').exists()]
     print(f'{len(isler)} görsel · {len(isler) - len(kalan)} zaten inmiş · {len(kalan)} inecek', flush=True)
     if not kalan:
@@ -459,7 +478,11 @@ def main():
         g, qid = gorseller[a]
         cikti = HEDEF / f'{ad}.jpg'
         oran = oranlar.get(ad)
-        kendi = [dict(x, k=g['k'], kendi=True) for x in kendi_adaylari(g, commons_boy)]
+        if ad in iyilestirme:
+            iy = iyilestirme[ad]
+            kendi = [{'u': u, 'boy': b, 'k': 'commons', 'kendi': True} for u, b in commons_adresleri(iy['dosya'], [iy['g'], iy['y']])]
+        else:
+            kendi = [dict(x, k=g['k'], kendi=True) for x in kendi_adaylari(g, commons_boy)]
         kendi_boy = max([x['boy'] or 0 for x in kendi] or [0])
         muze = muze_adaylari(numaralar.get(qid) or {}, nga) if g['k'] == 'commons' and qid in kucukler else []
         # beklenen boya göre büyükten küçüğe (bilinmeyen: The Met özgünü genelde 3000 px üstü); eşitse kendi kaynağı önce
@@ -486,9 +509,13 @@ def main():
                 en_iyi, en_iyi_k = b, x['k']
             else:
                 gecici.unlink(missing_ok=True)
+        eski = cikti.with_suffix('.eski')
         if not en_iyi:
+            if eski.exists():
+                eski.replace(cikti)  # yenisi inemedi: eskisi kalır
             basarisiz += 1
             continue
+        eski.unlink(missing_ok=True)
         if en_iyi_k != g['k']:
             kaynaklar[ad] = en_iyi_k
             print(f'   {ad}: {en_iyi_k} kopyası daha büyük ({max(en_iyi)} px, Commons {kendi_boy or "?"} px)', flush=True)

@@ -4,6 +4,10 @@
   gorseller_devasa/<ad>.jpg → <kova>/d/<ad>.jpg   (scripts/devasa_indir.py; en büyük, 4096 px)
   gorseller/b/<ad>.jpg      → <kova>/b/<ad>.jpg   (1280 px; kartlar ve görüntüleyicinin ilk hali)
 
+İş 84: daha büyük dosyasıyla yenilenen görseller (data/gorsel_iyilestirme.json) kovaya sürüm ekli adla yüklenir:
+d/<ad>-<içeriğin md5'inin ilk 8 hanesi>.jpg. Eski adres "hiç değişmez" diye önbelleğe alındığı ve telefona indirildiği
+için aynı ada yazmak işe yaramazdı; yeni adı uygulama gorsel_kaynagi.json'daki "surumler"den okur.
+
 Sonra data/gorsel_kaynagi.json yazılır: uygulama görüntüleyicide en büyük kopyayı oradan alır (müzeden gelenlerin
 kaynağıyla; altyazıda yazar). GitHub Pages sitesi 1 GB
 sınırına yakın (gorseller/b 703 MB) olduğundan 1280'lik kopyalar da R2'de; bunlar yüklendikten sonra gorseller/b
@@ -95,7 +99,10 @@ def main():
     kucuk = {p for p in devasalar if (uzun_kenar(p) or EN_AZ_DEVASA) < EN_AZ_DEVASA}
     if kucuk:
         print(f'{len(kucuk)} görselin özgünü küçük ({EN_AZ_DEVASA} px altı): en büyük kopyası yok sayılıyor (1280\'liği yeter)', flush=True)
-    isler = [(p, f'd/{p.name}') for p in devasalar if p not in kucuk]
+    iy_yolu = KOK / 'data/gorsel_iyilestirme.json'
+    iyilesen = set(json.loads(iy_yolu.read_text()).get('gorseller', {})) if iy_yolu.exists() else set()
+    surumler = {p.stem: hashlib.md5(p.read_bytes()).hexdigest()[:8] for p in devasalar if p not in kucuk and p.stem in iyilesen}
+    isler = [(p, f'd/{p.stem}-{surumler[p.stem]}.jpg' if p.stem in surumler else f'd/{p.name}') for p in devasalar if p not in kucuk]
     isler += [(p, f'b/{p.name}') for p in sorted((KOK / 'gorseller/b').glob('*.jpg'))]
     toplam = sum(p.stat().st_size for p, _ in isler) / 1e9
     print(f'{len(isler)} dosya ({toplam:.2f} GB)', flush=True)
@@ -118,8 +125,9 @@ def main():
     # kovada kalan eski en büyük kopyalar (artık listede olmayanlar; ör. önceki sürümün büyüttükleri) silinir: yer kaplamasın
     if not hata:
         try:
+            simdiki = {u for _, u in isler if u.startswith('d/')}
             eski = [o['Key'] for sayfa in s3.get_paginator('list_objects_v2').paginate(Bucket=kova, Prefix='d/')
-                    for o in sayfa.get('Contents', []) if o['Key'][2:-4] not in tamam['d']]
+                    for o in sayfa.get('Contents', []) if o['Key'] not in simdiki]
             for i in range(0, len(eski), 1000):
                 s3.delete_objects(Bucket=kova, Delete={'Objects': [{'Key': k} for k in eski[i:i + 1000]], 'Quiet': True})
             if eski:
@@ -136,10 +144,12 @@ def main():
     # özel alan adına geçince); yoksa GitHub Pages'ten (depodaki gorseller/b) gelir, mobil veride de açılır
     b_hepsi = os.environ.get('R2_BUYUK') == '1' and len(tamam['b']) == len(list((KOK / 'gorseller/b').glob('*.jpg')))
     (KOK / 'data/gorsel_kaynagi.json').write_text(
-        json.dumps({'surum': 1, 'adres': adres, 'buyuk': b_hepsi, 'devasa': sorted(tamam['d']), 'devasa_bayt': devasa_bayt, 'muze': muze}, ensure_ascii=False, separators=(',', ':')) + '\n'
+        json.dumps({'surum': 1, 'adres': adres, 'buyuk': b_hepsi, 'devasa': sorted(tamam['d']), 'devasa_bayt': devasa_bayt, 'muze': muze, 'surumler': {ad: v for ad, v in sorted(surumler.items()) if ad in tamam['d']}}, ensure_ascii=False, separators=(',', ':')) + '\n'
     )
     print(f"\nBitti · en büyük {len(tamam['d'])} (müzeden {len(muze)}) · 1280'lik {len(tamam['b'])} · hata {hata}")
-    print('data/gorsel_kaynagi.json yazıldı: git add data/gorsel_kaynagi.json && git commit && git push')
+    if surumler:
+        print(f'Daha büyük dosyasıyla yenilenen {len(surumler)} görsel yeni adla yüklendi (telefon yenisini indirir)')
+    print('data/gorsel_kaynagi.json yazıldı: git add data/gorsel_kaynagi.json data/gorsel_iyilestirme.json && git commit && git push')
 
 
 if __name__ == '__main__':

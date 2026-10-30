@@ -145,4 +145,18 @@ git add data/gorsel_kaynagi.json && git commit -m "Görseller R2'de" && git push
 
 İndirme betiği engellenmemek için yavaş gider (istekler arası 4–6 sn, saatte en çok 500 istek; engel gelince 1 dakikadan 30 dakikaya kadar katlanarak bekler). `--saat 3` gibi bir süre verirsen o kadar sonra durur; aynı komut kaldığı yerden sürer. Görsel Commons'ta küçükse aynı eserin The Met, Art Institute of Chicago, National Gallery of Art ya da Cleveland Museum of Art'taki açık erişim (CC0) görseline de bakar (eserin Wikidata kaydındaki müze numarasıyla); hangisi büyükse onu alır.
 
+### Zayıf görseller için daha büyük dosya (İş 84)
+
+Bazı eserlerin elimizdeki en büyük kopyası küçük (2500 px altı ~620 görsel): Wikidata'nın verdiği dosya küçük. Aynı eserin Commons'ta daha büyük taraması varsa (eserin kendi Wikidata kaydındaki görsel ya da Commons kategorisi; oranı aynı ve küçük hâli bizimkiyle örtüşen) şu adımlarla gelir:
+
+```
+git pull
+python3 scripts/kalite_tara.py --dene 10          # önce 10 görselle dene; sonra --dene olmadan hepsi (yarım saat kadar)
+caffeinate -i python3 scripts/devasa_indir.py      # bulunanları indirir (elimizdeki küçük kopya yenisi inince değişir)
+python3 scripts/r2_yukle.py                       # yenilenenler kovaya yeni adla yüklenir
+git add data/gorsel_iyilestirme.json data/gorsel_kaynagi.json && git commit -m "Daha büyük görseller" && git push
+```
+
+Telefonda: Ayarlar → **En büyük kopyaları telefona indir** → yenilenenler yeniden iner, eskileri kendiliğinden silinir.
+
 `gorseller_devasa/` depoya girmez (`.gitignore`). `data/gorsel_kaynagi.json` service worker'da önce ağdan gelir: gönderince telefona sürüm beklemeden iner.
