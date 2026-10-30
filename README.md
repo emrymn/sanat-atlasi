@@ -152,6 +152,7 @@ Bazı eserlerin elimizdeki en büyük kopyası küçük (2500 px altı ~620 gör
 ```
 git pull
 python3 scripts/kalite_tara.py --dene 10          # önce 10 görselle dene; sonra --dene olmadan hepsi (yarım saat kadar)
+# sonunda inceleme sayfası açılır: beğenmediklerini işaretle, kopyalanan --reddet komutunu çalıştır, taramayı yeniden çalıştır
 caffeinate -i python3 scripts/devasa_indir.py      # bulunanları indirir (elimizdeki küçük kopya yenisi inince değişir)
 python3 scripts/r2_yukle.py                       # yenilenenler kovaya yeni adla yüklenir
 git add data/gorsel_iyilestirme.json data/gorsel_kaynagi.json && git commit -m "Daha büyük görseller" && git push
