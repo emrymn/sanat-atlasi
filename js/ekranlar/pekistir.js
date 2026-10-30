@@ -557,7 +557,7 @@ export async function yarimYukle() {
 
 // İş 85: yarım kalan tur, müzik çalardaki "şimdi çalıyor" şeridi gibi: solda kalınan sorunun tablosu, ortada tur, sağda
 // yuvarlak devam düğmesi (çevresindeki halka ilerleme: kart görününce o yere kadar dolar), köşede bitir (×)
-export function devamKarti() {
+export function devamKarti({ bitir = true } = {}) {
   const y = d.yarim;
   if (!y || !kayitGecerliMi(y)) return '';
   const toplam = y.kuyruk.length;
@@ -571,7 +571,7 @@ export function devamKarti() {
         <b data-test="devam-ozet">${kacis(devamOzeti(y))}</b>
       </div>
       <a class="devam-oynat" href="#/pekistir/devam" data-test="devam-et" aria-label="Devam et · ${toplam} karttan ${Math.max(0, konum - 1)} tanesi bitti" style="--oran:${oran / 100}">${halkaIci()}</a>
-      <button class="devam-bitir" type="button" data-yarim-bitir aria-label="Bitir">${ikon('kapat', 15, 2)}</button>
+      ${bitir ? `<button class="devam-bitir" type="button" data-yarim-bitir aria-label="Bitir">${ikon('kapat', 15, 2)}</button>` : ''}
     </section>`;
 }
 
@@ -630,7 +630,7 @@ function yarimSor(kip, akim) {
       <p class="sade-soru-baslik">Yarım kalan oturum silinsin mi?</p>
       <p class="kucuk ikincil">Yeni tur başlarsa yarım kalan tur silinir.</p>
     </div>
-    ${devamKarti()}
+    ${devamKarti({ bitir: false })}
     <p class="metin-bag"><button type="button" data-yarim-sil data-kip="${kip}" data-akim="${kacis(akim || '')}">Sil, yeni başla</button></p>`);
   devamResmiDoldur();
 }

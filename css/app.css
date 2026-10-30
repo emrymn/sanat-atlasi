@@ -597,24 +597,33 @@ img.kirik {
   transform: scale(0.93);
   background: rgba(var(--vurgu-rgb), 0.18);
 }
-/* ikinci eylem: kart değil, sade yazı bağlantısı */
+/* ikinci eylem: kartın altında sade, ince kenarlı yuvarlak düğme (kart kadar baskın değil) */
 .metin-bag {
-  margin: 4px 0 18px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 18px;
 }
 .metin-bag a,
 .metin-bag button {
-  display: inline-block;
-  min-height: 44px;
-  padding: 10px 14px;
-  border: 0;
-  background: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 22px;
+  border: 1px solid rgba(var(--vurgu-rgb), 0.22);
+  border-radius: 999px;
+  background: rgba(var(--vurgu-rgb), 0.05);
   color: var(--ink-2);
-  font: 500 16px/24px var(--sans);
-  text-decoration: underline;
-  text-decoration-color: rgba(var(--vurgu-rgb), 0.45);
-  text-underline-offset: 4px;
+  font: 500 15px/1 var(--sans);
+  letter-spacing: 0.01em;
+  text-decoration: none;
   cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.metin-bag a:active,
+.metin-bag button:active {
+  transform: scale(0.96);
+  background: rgba(var(--vurgu-rgb), 0.14);
 }
 /* açıklama satırı (kutu ve çizgi yok) */
 .sade-soru {
