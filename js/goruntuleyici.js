@@ -83,6 +83,12 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   let tx = 0;
   let ty = 0;
   let cek = 0; // İş 70: aşağı çekme oranı (0–1): tablo küçülür, zemin şeffaflaşır, alttaki sayfa görünür
+  // İş 81: yakınlaştırma parmak kalkınca kalıcı olur: resmin kutusu gerçekten o boyuta büyütülür (transform'daki ölçek
+  // olcek / net). Yalnız transform ile büyütülen resmi tarayıcı ekrandaki ilk boyutunda çizip büyütüyordu; iPhone büyük
+  // resmi bu küçük boyuta göre yarım çözünürlükte de açıyor: 4096 px'lik kopya inse de yakınlaştırınca ayrıntı yoktu.
+  let net = 1;
+  let taban = null; // { w, h }: ölçek 1'deki kutu
+  let netZaman = 0;
   const imlecler = new Map();
   let jest = null;
   let sonDokunma = 0;
@@ -139,19 +145,45 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
 
   function uygula(gecis = false) {
     resim.style.transition = gecis ? 'transform .2s ease-out' : 'none';
-    resim.style.transform = `translate(${tx}px, ${ty}px) scale(${olcek * (1 - cek * 0.45)})`;
+    resim.style.transform = `translate(${tx}px, ${ty}px) scale(${(olcek * (1 - cek * 0.45)) / net})`;
     kok.classList.toggle('cekiliyor', !gecis && cek > 0);
     kok.style.setProperty('--cek', String(cek));
   }
 
   function sinirla() {
     const r = sahne.getBoundingClientRect();
-    const g = resim.offsetWidth * olcek;
-    const y = resim.offsetHeight * olcek;
+    const g = (net === 1 ? resim.offsetWidth : taban.w) * olcek;
+    const y = (net === 1 ? resim.offsetHeight : taban.h) * olcek;
     const mx = Math.max(0, (g - r.width) / 2);
     const my = Math.max(0, (y - r.height) / 2);
     tx = Math.min(mx, Math.max(-mx, tx));
     ty = Math.min(my, Math.max(-my, ty));
+  }
+
+  // kutu ölçek 1'e döner (yeni eser, yakınlaştırmanın sıfırlanması)
+  function duzenSifirla() {
+    clearTimeout(netZaman);
+    if (net === 1) return;
+    net = 1;
+    taban = null;
+    for (const k of ['width', 'height', 'maxWidth', 'maxHeight', 'flex']) resim.style[k] = '';
+  }
+  // hareket ve geçiş bittikten sonra: yakınlaştırma kutunun boyutuna işlenir, transform'da yalnız kaydırma kalır
+  function netlestir() {
+    clearTimeout(netZaman);
+    netZaman = setTimeout(() => {
+      if (kapandi || jest || imlecler.size || cek) return;
+      const hedef = olcek > 1.01 ? olcek : 1;
+      if (hedef === 1) duzenSifirla();
+      else if (hedef !== net) {
+        if (net === 1) taban = { w: resim.offsetWidth, h: resim.offsetHeight };
+        if (!taban.w || !taban.h) return;
+        Object.assign(resim.style, { maxWidth: 'none', maxHeight: 'none', flex: 'none', width: `${taban.w * hedef}px`, height: `${taban.h * hedef}px` });
+        net = hedef;
+      }
+      resim.style.willChange = 'auto';
+      uygula();
+    }, 240);
   }
 
   function sifirla() {
@@ -159,6 +191,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     tx = 0;
     ty = 0;
     cek = 0;
+    duzenSifirla();
     uygula();
   }
 
@@ -371,6 +404,8 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     if (e.pointerType === 'touch' && e.clientX <= 24) return;
     sahne.setPointerCapture(e.pointerId);
     imlecler.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    clearTimeout(netZaman);
+    resim.style.willChange = 'transform';
     const n = imlecler.size;
     if (n === 2) {
       const [a, b] = [...imlecler.values()];
@@ -424,6 +459,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
         jest = { tur: 'tek', x: p.x, y: p.y, tx, ty, zaman: Date.now(), kistirmadan: true };
       } else jest = null;
       if (olcek <= 1.02) sifirla();
+      else if (!imlecler.size) netlestir();
       return;
     }
     const dx = e.clientX - jest.x;
@@ -434,6 +470,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     if (olcek > 1) {
       sinirla();
       uygula(true);
+      netlestir();
     } else if (!kistirmadan && Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy)) {
       // ilk eserde sağa: önceki eser yok, geri (kapat)
       if (dx > 0 && sira === 0) return kaydirarakKapat();
@@ -463,6 +500,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
           sinirla();
         }
         uygula(true);
+        netlestir();
         sonDokunma = 0;
       } else {
         sonDokunma = simdi;

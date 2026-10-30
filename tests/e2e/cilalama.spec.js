@@ -238,7 +238,17 @@ test.describe('görüntüleyici dokunuş ve yatay ekran', () => {
     await page.touchscreen.tap(x, y);
     await page.waitForTimeout(600);
     await expect(gor).not.toHaveClass(/sade/);
-    expect(await page.locator('.gor-resim').evaluate((e) => e.style.transform)).toContain('scale(2.5)');
+    // İş 81: yakınlaştırma parmak kalkınca kutunun boyutuna işlenir (transform'da yalnız kaydırma): tam çözünürlükte çizilir
+    await expect.poll(() => page.locator('.gor-resim').evaluate((e) => e.style.transform)).toContain('scale(1)');
+    const genislik = await page.locator('.gor-resim').evaluate((e) => [e.getBoundingClientRect().width, e.closest('.gor-sahne').getBoundingClientRect().width, e.style.width]);
+    expect(genislik[0]).toBeGreaterThan(genislik[1] * 1.5);
+    expect(genislik[2]).toMatch(/px$/);
+    // ikinci çift dokunuş: eski boyuta döner
+    await page.touchscreen.tap(x, y);
+    await page.waitForTimeout(80);
+    await page.touchscreen.tap(x, y);
+    await page.waitForTimeout(600);
+    expect(await page.locator('.gor-resim').evaluate((e) => [e.style.width, e.getBoundingClientRect().width <= e.closest('.gor-sahne').getBoundingClientRect().width + 1])).toEqual(['', true]);
   });
 
   // İş 59: iki parmakla büyütüp parmakları kaldırmak dokunuş sayılıp arayüzü geri getiriyordu
@@ -263,7 +273,7 @@ test.describe('görüntüleyici dokunuş ve yatay ekran', () => {
     await dokun('touchEnd', []);
     await page.waitForTimeout(600);
     await expect(gor).toHaveClass(/sade/);
-    expect(await page.locator('.gor-resim').evaluate((e) => e.style.transform)).not.toContain('scale(1)');
+    expect(await page.locator('.gor-resim').evaluate((e) => e.getBoundingClientRect().width > e.closest('.gor-sahne').getBoundingClientRect().width * 1.2)).toBe(true);
     // iki kez üst üste büyütmek de (çift dokunuş sayılıp) yakınlaştırmayı sıfırlamaz
     await dokun('touchStart', [[x - 30, y]]);
     await dokun('touchStart', [[x - 30, y], [x + 30, y]]);
@@ -272,7 +282,7 @@ test.describe('görüntüleyici dokunuş ve yatay ekran', () => {
     await dokun('touchEnd', []);
     await page.waitForTimeout(600);
     await expect(gor).toHaveClass(/sade/);
-    expect(await page.locator('.gor-resim').evaluate((e) => e.style.transform)).not.toContain('scale(1)');
+    expect(await page.locator('.gor-resim').evaluate((e) => e.getBoundingClientRect().width > e.closest('.gor-sahne').getBoundingClientRect().width * 1.2)).toBe(true);
   });
 
   // İş 64: iPhone'da "Yenile"ye dokunulamıyordu (Tuval'deki 3B dönen tablo dokunuşu alıyordu)
