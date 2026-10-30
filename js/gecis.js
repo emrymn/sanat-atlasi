@@ -229,12 +229,12 @@ function buyumeGecis(ekran, eski, n) {
     ekran.style.transformOrigin = `${n.x - r.left}px ${n.y - r.top}px`;
     k.style.transformOrigin = `${n.x}px ${n.y}px`;
     const bas = Math.min(0.6, Math.max(0.12, (n.g || 0) / innerWidth));
-    const ayar = { duration: 480, easing: EGRI };
+    const ayar = { duration: 780, easing: EGRI }; // İş 86b: 480 ms çok hızlıydı
     k.animate([{ transform: 'none', filter: 'brightness(1)' }, { transform: 'scale(0.94)', filter: 'brightness(0.55)' }], { ...ayar, fill: 'forwards' });
     const a = ekran.animate(
       [
         { transform: `scale(${bas})`, opacity: 0, borderRadius: '28px' },
-        { opacity: 1, offset: 0.3 },
+        { opacity: 1, offset: 0.25 },
         { transform: 'none', opacity: 1, borderRadius: '0px' },
       ],
       ayar,
@@ -262,7 +262,7 @@ function geriGecis(ekran, eski) {
       kokenler.delete(eski.adres);
       k.classList.add('kuculuyor');
       k.style.transformOrigin = `${koken.x}px ${koken.y}px`;
-      const ayar = { duration: 400, easing: EGRI };
+      const ayar = { duration: 620, easing: EGRI };
       k.animate([{ transform: 'none', opacity: 1, borderRadius: '0px' }, { opacity: 1, offset: 0.55 }, { transform: 'scale(0.2)', opacity: 0, borderRadius: '28px' }], { ...ayar, fill: 'forwards' });
       const a = ekran.animate([{ transform: 'scale(0.94)', filter: 'brightness(0.55)' }, { transform: 'none', filter: 'brightness(1)' }], ayar);
       const bitir = () => {
