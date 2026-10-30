@@ -19,7 +19,7 @@ import {
   isimHtml,
   kunye,
   paletHtml,
-  bilinirlikSirasi,
+  kaliteSirasi,
   ekran,
   notuIcin,
   gorselTercihi,
@@ -141,7 +141,8 @@ export function seritUst(s, n, baslik = 'Eserleri') {
 }
 
 async function anaGaleriDoldur(gs) {
-  const eserler = bilinirlikSirasi(await sanatciEserleri(gs));
+  // İş 82: önce en kaliteli görselleri olan eserler; salon fotoğrafı gibi düşük kaliteliler gösterilmez
+  const eserler = kaliteSirasi(await sanatciEserleri(gs));
   const galeri = ekran.querySelector('[data-ana-galeri]');
   if (!galeri) return;
   const kutu = galeri.parentElement;
@@ -409,7 +410,7 @@ export async function gununSayfasi(id) {
         <a class="dugme" href="#/gunun/${encodeURIComponent(baskaSanatci(gununHavuzu(), s.id, d.rng))}" data-test="baska">Başka bir sanatçı</a>
       </div>
     </article>`);
-  const eserler = bilinirlikSirasi(await eserSozu);
+  const eserler = kaliteSirasi(await eserSozu);
   if (!guncelMi(no)) return;
   imzaGoster(s, ekran.querySelector('.isim-blok')); // İş 48: varsa ressamın gerçek imzası
   kunyeGoster(s, ekran.querySelector('.isim-blok')); // İş 49: portresi ve adının okunuşu
