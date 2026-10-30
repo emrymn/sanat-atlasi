@@ -3,7 +3,7 @@ import { kacis, notTemizle } from './yardimci.js';
 import { ikon } from './tasarim.js';
 import { gorselUrl, gorselYedek, gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle, devasaUrl, devasaKaynagi } from './gorsel.js';
 import { eserKonusu } from './ikonografi.js';
-import { hareketAz } from './gecis.js';
+import { hareketAz, gezin } from './gecis.js';
 import { NEDENLER } from './bildirim.js';
 
 const EN_BUYUK = 6;
@@ -109,23 +109,14 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   const kaynak = sonDokunulan && Date.now() - sonDokunulan.zaman < 1500 && !hareketAz() ? sonDokunulan.img : null;
   sonDokunulan = null;
 
-  // İş 52: görüntüleyicinin kendi geçmiş kaydı (adres aynı kalır, yönlendirici tetiklenmez). iPhone'un sol kenardan
-  // geri hareketi ve tarayıcının geri tuşu sayfayı değil görüntüleyiciyi kapatır; X, aşağı kaydırma ya da Esc ile
-  // kapanınca kayıt geri alınır, geçmişte fazladan adım kalmaz.
-  let kayitVar = true;
   let kapandi = false;
-  // sayfanın kaydırma yeri: geri dönüşte tarayıcı kendi kaydırma geri yüklemesiyle sayfayı en başa atabiliyordu
-  // (scrollRestoration her geçmiş kaydında ayrı); kapanınca bu yere dönülür (İş 57)
+  // sayfanın kaydırma yeri: kapanınca bu yere dönülür (İş 57)
   const sayfaY = window.scrollY;
   const yerineDon = () => requestAnimationFrame(() => window.scrollTo(0, sayfaY));
-  history.pushState({ ...(history.state || {}), gor: true }, '');
+  // İş 75: görüntüleyici iPhone'un geçmişine kayıt eklemez (İş 52'deki kayıt iPhone'un siyah önizlemeli geri
+  // kaydırmasını açıyordu); kenardan kaydırarak kapatmayı uygulama yapar (js/gecis.js; altındaki sayfa görünür)
+  kok.kapat = (o) => kapat(o);
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-  const gerideKapat = () => {
-    kayitVar = false;
-    kapat({ gecissiz: true });
-    yerineDon();
-  };
-  window.addEventListener('popstate', gerideKapat);
 
   const sahne = kok.querySelector('.gor-sahne');
   const resim = kok.querySelector('.gor-resim');
@@ -286,12 +277,11 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   };
   window.addEventListener('atlas-notlar', notlarGeldi);
 
-  // sonra: kapanış bitince (geçmiş kaydı geri alındıktan sonra) yapılacak iş, ör. başka ekrana geçmek
+  // sonra: kapanış bitince yapılacak iş, ör. başka ekrana geçmek
   function kapat({ sonra, gecissiz = false } = {}) {
     if (kapandi) return;
     kapandi = true;
     clearTimeout(tekDokunma);
-    window.removeEventListener('popstate', gerideKapat);
     window.removeEventListener('atlas-notlar', notlarGeldi);
     document.removeEventListener('keydown', tus);
     document.documentElement.classList.remove('gor-acik');
@@ -299,18 +289,8 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     else kapanisGecisi();
     if (onceOdak && onceOdak.focus) onceOdak.focus();
     if (kapaninca) kapaninca(sira);
-    if (kayitVar) {
-      kayitVar = false;
-      window.addEventListener(
-        'popstate',
-        () => {
-          if (sonra) sonra();
-          else yerineDon();
-        },
-        { once: true },
-      );
-      history.back();
-    } else if (sonra) sonra();
+    if (sonra) sonra();
+    else yerineDon();
   }
 
   // İş 70: açılan eser hâlâ ilk dokunulansa ve küçük resmi ekrandaysa tablo yerine küçülerek döner, zemin söner
@@ -354,7 +334,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     if (!a) return;
     ev.preventDefault();
     const hedef = a.getAttribute('href');
-    kapat({ sonra: () => (location.hash = hedef) });
+    kapat({ sonra: () => gezin(hedef) });
   });
   kok.querySelector('.gor-kotu').addEventListener('click', kotuGorsel);
   if (isaret)
@@ -387,6 +367,8 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   };
 
   sahne.addEventListener('pointerdown', (e) => {
+    // ekranın sol kenarından başlayan dokunuş uygulamanın geri kaydırmasıdır (js/gecis.js)
+    if (e.pointerType === 'touch' && e.clientX <= 24) return;
     sahne.setPointerCapture(e.pointerId);
     imlecler.set(e.pointerId, { x: e.clientX, y: e.clientY });
     const n = imlecler.size;

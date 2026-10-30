@@ -1,2 +1,2 @@
 // Uygulamanın sürümü; sw.js'deki SURUM ile aynı olmalı (test denetler)
-export const SURUM = '1.52.4';
+export const SURUM = '1.53.0';

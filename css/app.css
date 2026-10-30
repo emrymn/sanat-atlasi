@@ -13540,3 +13540,40 @@ img.aninda {
 .sekmeler a:last-of-type::before {
   right: calc(-1 * var(--sekme-pad) - 10px);
 }
+
+/* ===== İş 75 · Sayfa katmanı (önceki / ayrılan sayfa) ve kenardan kaydırma ===== */
+.sayfa-katman {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: var(--bg);
+  background-image: var(--doku);
+  background-size: 3px 3px;
+}
+.sayfa-katman.ust {
+  z-index: 5;
+  box-shadow: -16px 0 36px rgba(0, 0, 0, 0.5);
+}
+.sayfa-katman-ic {
+  position: relative;
+  isolation: isolate;
+  overflow-x: clip;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#uygulama.gecis-on {
+  z-index: 4;
+  background-color: var(--bg);
+  background-image: var(--doku);
+  background-size: 3px 3px;
+  box-shadow: -16px 0 36px rgba(0, 0, 0, 0.5);
+}
+#uygulama.kaydiriliyor,
+.gor.kaydiriliyor {
+  will-change: transform;
+}
+.gor.kaydiriliyor {
+  box-shadow: -16px 0 36px rgba(0, 0, 0, 0.5);
+}
