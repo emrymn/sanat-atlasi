@@ -735,14 +735,15 @@ test.describe('İş 75: kenardan kaydırma ve sayfa belleği', () => {
       document.querySelector('.sayfa-katman').getAnimations({ subtree: true }).filter((a) => a.playState === 'running' && a.effect.getTiming().iterations !== Infinity && a.effect.target.closest('.sayfa-katman-ic')).length,
     );
     expect(oynayan).toBe(0);
-    await expect.poll(() => page.locator('#uygulama').evaluate((e) => e.style.transform)).toContain('translate');
+    // İş 86e: sayfa parmakla birlikte açıldığı öğenin şekline daralır (clip-path); kutusu bilinmiyorsa kayar (transform)
+    await expect.poll(() => page.locator('#uygulama').evaluate((e) => !!(e.style.clipPath || e.style.transform))).toBe(true);
     for (let i = 7; i <= 12; i++) await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: 6 + i * 25, y: 402 }] });
     await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
     await expect(page).toHaveURL(/#\/gozat$/);
     await expect(page.locator('#uygulama a.zaman-kart[data-iz="evet"]')).toHaveCount(1);
     await expect(page.locator('.sayfa-katman')).toHaveCount(0);
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(yer);
-    expect(await page.locator('#uygulama').evaluate((e) => e.style.transform)).toBe('');
+    expect(await page.locator('#uygulama').evaluate((e) => e.style.transform + e.style.clipPath)).toBe('');
     // az kaydırıp bırakınca sayfada kalınır
     await page.locator('a.zaman-kart').nth(1).tap();
     await expect(page).toHaveURL(/#\/akim\//);

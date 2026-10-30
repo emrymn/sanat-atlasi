@@ -13750,6 +13750,12 @@ img.aninda {
 .sayfa-katman.ust.kuculuyor {
   box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.6);
 }
+/* İş 86e: şekilden açılış/kapanış: kırpılan pencerenin gölgesi kırpılır; taşma ve yuvarlak köşe clip-path'te */
+#uygulama.buyuyor.sekilli,
+.sayfa-katman.ust.kuculuyor.sekilli {
+  box-shadow: none;
+  overflow: visible;
+}
 #uygulama.kaydiriliyor,
 .gor.kaydiriliyor {
   will-change: transform;

@@ -15,6 +15,11 @@
 
 const SURE = 420;
 const EGRI = 'cubic-bezier(0.32, 0.72, 0, 1)';
+// İş 86c: büyüyerek açılışın eğrisi: sönümlü yay (iPhone'daki gibi baştan sona görünen büyüme, sonda hafifçe yerine
+// oturur, en çok %1,5 taşar). EGRI hareketin çoğunu ilk karelerde bitirdiğinden uzun sürede bile "çok hızlı" görünüyordu.
+// linear() desteklenmiyorsa (eski Safari) yumuşak bir yavaşlama.
+const YAY = 'linear(0, 0.01, 0.036, 0.075, 0.123, 0.178, 0.236, 0.297, 0.359, 0.419, 0.478, 0.535, 0.589, 0.639, 0.685, 0.728, 0.767, 0.802, 0.834, 0.862, 0.887, 0.909, 0.928, 0.945, 0.959, 0.971, 0.981, 0.989, 0.996, 1.001, 1.006, 1.009, 1.011, 1.013, 1.013, 1.013, 1.011, 1.009, 1.006, 1.003, 1)';
+const YAY_EGRI = typeof CSS !== 'undefined' && CSS.supports && CSS.supports('animation-timing-function', 'linear(0, 1)') ? YAY : 'cubic-bezier(0.2, 0.75, 0.25, 1)';
 const KART_SECICI = '.vitrin-kart, .konu-kart';
 const KENAR = 24; // px: kenardan kaydırmanın başlayabildiği şerit
 const BELLEK_EN_COK = 6;
@@ -61,7 +66,9 @@ if (typeof document !== 'undefined') {
       // İş 86: yeni sayfa dokunulan öğenin yerinden büyüyerek açılır: öğenin ortası (yoksa dokunulan nokta)
       const o = e.target.closest && e.target.closest('a, button, [role="button"], .eser, label');
       const r = o && o.getBoundingClientRect();
-      dokunus = { zaman: Date.now(), x: r ? r.left + r.width / 2 : e.clientX, y: r ? r.top + r.height / 2 : e.clientY, g: r ? r.width : 0 };
+      // İş 86e: öğenin kutusu ve köşe yuvarlaklığı da: sayfa o şekilden açılır, o şekle kapanır
+      const kutu = r && r.width >= 24 && r.height >= 16 ? { x: r.left, y: r.top, w: r.width, h: r.height, yc: Math.min(28, parseFloat(getComputedStyle(o).borderTopLeftRadius) || 12) } : null;
+      dokunus = { zaman: Date.now(), x: r ? r.left + r.width / 2 : e.clientX, y: r ? r.top + r.height / 2 : e.clientY, g: r ? r.width : 0, kutu };
     },
     true,
   );
@@ -159,12 +166,15 @@ export function gecisHazirla(ekran, eski) {
     return null;
   }
   if (g.yon === 'geri') return geriGecis(ekran, eski);
-  if (kk) return kartBuyut(ekran, kk.el, kk.r, eski);
+  if (kk) {
+    kokenler.set(simdiki(), { x: kk.r.left + kk.r.width / 2, y: kk.r.top + kk.r.height / 2, kutu: { x: kk.r.left, y: kk.r.top, w: kk.r.width, h: kk.r.height, yc: 14 } });
+    return kartBuyut(ekran, kk.el, kk.r, eski);
+  }
   // İş 86: yandan kaymak yerine dokunulan yerden büyüyerek (dokunuş yoksa ekranın ortasından)
   const n = dokunus && Date.now() - dokunus.zaman < 1500 ? dokunus : { x: innerWidth / 2, y: innerHeight / 2, g: 0 };
   dokunus = null;
-  kokenler.set(simdiki(), { x: n.x, y: n.y });
-  return buyumeGecis(ekran, eski, n);
+  kokenler.set(simdiki(), { x: n.x, y: n.y, kutu: n.kutu || null });
+  return n.kutu ? sekilGecis(ekran, eski, n) : buyumeGecis(ekran, eski, n);
 }
 // geri dönüşte (bellekten) ayrılan sayfa: geri okuyla geçişli, kaydırmada geçişsiz
 export function geriGecisi(ekran, eski, yon) {
@@ -220,6 +230,45 @@ function ileriGecis(ekran, eski) {
 
 // İş 86: yeni sayfa dokunulan yerden büyüyerek gelir (iPhone'da uygulama açılır gibi); alttaki sayfa hafifçe
 // küçülüp kararır. Yalnız transform ve opaklık: ekran kartı işler, her karede boyama yok.
+// İş 86e: kutu (ekran koordinatları) → öğenin kendi koordinatlarında clip-path inset (yuvarlak köşeli). r: öğenin kutusu.
+function kirpma(k, r, yc) {
+  return `inset(${k.y - r.top}px ${r.right - (k.x + k.w)}px ${r.bottom - (k.y + k.h)}px ${k.x - r.left}px round ${yc}px)`;
+}
+const ekranKutusu = () => ({ x: 0, y: 0, w: innerWidth, h: innerHeight });
+// iki kutu arasında (t: 0–1)
+const araKutu = (a, b, t) => ({ x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t, w: a.w + (b.w - a.w) * t, h: a.h + (b.h - a.h) * t });
+
+// İş 86e: sayfa dokunulan öğenin şeklinden açılır: görünen pencere öğenin kutusundan (köşeleri onunkiler gibi) ekranın
+// kenarlarına genişler, içerik o pencerede belirir; alttaki sayfada öğe yerinde kalır (pencere tam onun üstünden çıkar).
+function sekilGecis(ekran, eski, n) {
+  return () => {
+    const { k, ic, geriAl } = katman(eski);
+    suruyor(true);
+    ekran.classList.add('gecis-on', 'buyuyor', 'sekilli');
+    const r = ekran.getBoundingClientRect();
+    k.style.transformOrigin = `${n.x}px ${n.y}px`;
+    const ayar = { duration: 950, easing: YAY_EGRI };
+    k.animate([{ transform: 'none', filter: 'brightness(1)' }, { transform: 'scale(0.96)', filter: 'brightness(0.6)' }], { ...ayar, fill: 'forwards' });
+    const a = ekran.animate(
+      [
+        { clipPath: kirpma(n.kutu, r, n.kutu.yc), opacity: 0 },
+        { opacity: 1, offset: 0.18 },
+        { clipPath: kirpma(ekranKutusu(), r, 0), opacity: 1 },
+      ],
+      ayar,
+    );
+    const bitir = () => {
+      geriAl();
+      k.remove();
+      ic.remove();
+      ekran.classList.remove('gecis-on', 'buyuyor', 'sekilli');
+      suruyor(false);
+      bellegeKoy(eski);
+    };
+    a.finished.then(bitir, bitir);
+  };
+}
+
 function buyumeGecis(ekran, eski, n) {
   return () => {
     const { k, ic, geriAl } = katman(eski);
@@ -229,12 +278,12 @@ function buyumeGecis(ekran, eski, n) {
     ekran.style.transformOrigin = `${n.x - r.left}px ${n.y - r.top}px`;
     k.style.transformOrigin = `${n.x}px ${n.y}px`;
     const bas = Math.min(0.6, Math.max(0.12, (n.g || 0) / innerWidth));
-    const ayar = { duration: 780, easing: EGRI }; // İş 86b: 480 ms çok hızlıydı
+    const ayar = { duration: 950, easing: YAY_EGRI }; // İş 86b/c: 480 → 780 ms yetmedi; yay eğrisiyle 950 ms
     k.animate([{ transform: 'none', filter: 'brightness(1)' }, { transform: 'scale(0.94)', filter: 'brightness(0.55)' }], { ...ayar, fill: 'forwards' });
     const a = ekran.animate(
       [
         { transform: `scale(${bas})`, opacity: 0, borderRadius: '28px' },
-        { opacity: 1, offset: 0.25 },
+        { opacity: 1, offset: 0.12 }, // küçük hâli hemen görünür: büyüme baştan izlenir
         { transform: 'none', opacity: 1, borderRadius: '0px' },
       ],
       ayar,
@@ -258,11 +307,35 @@ function geriGecis(ekran, eski) {
     suruyor(true);
     // İş 86: büyüyerek açılan sayfa geldiği yere küçülerek kapanır; önceki sayfa yerine oturur
     const koken = kokenler.get(eski.adres);
+    // İş 86e: geldiği öğenin şekline daralıp onun içine söner (altında gerçek öğe görünür)
+    if (koken && koken.kutu) {
+      kokenler.delete(eski.adres);
+      k.classList.add('kuculuyor', 'sekilli');
+      const ayar = { duration: 760, easing: 'cubic-bezier(0.32, 0.5, 0.2, 1)' };
+      const kr = { top: 0, left: 0, right: innerWidth, bottom: innerHeight };
+      k.animate(
+        [
+          { clipPath: kirpma(ekranKutusu(), kr, 0), opacity: 1 },
+          { opacity: 1, offset: 0.7 },
+          { clipPath: kirpma(koken.kutu, kr, koken.kutu.yc), opacity: 0 },
+        ],
+        { ...ayar, fill: 'forwards' },
+      );
+      ekran.style.transformOrigin = `${koken.x - ekran.getBoundingClientRect().left}px ${koken.y - ekran.getBoundingClientRect().top}px`;
+      const a = ekran.animate([{ transform: 'scale(0.96)', filter: 'brightness(0.6)' }, { transform: 'none', filter: 'brightness(1)' }], ayar);
+      const bitir = () => {
+        k.remove();
+        ekran.style.transformOrigin = '';
+        suruyor(false);
+      };
+      a.finished.then(bitir, bitir);
+      return;
+    }
     if (koken) {
       kokenler.delete(eski.adres);
       k.classList.add('kuculuyor');
       k.style.transformOrigin = `${koken.x}px ${koken.y}px`;
-      const ayar = { duration: 620, easing: EGRI };
+      const ayar = { duration: 720, easing: 'cubic-bezier(0.3, 0.6, 0.2, 1)' };
       k.animate([{ transform: 'none', opacity: 1, borderRadius: '0px' }, { opacity: 1, offset: 0.55 }, { transform: 'scale(0.2)', opacity: 0, borderRadius: '28px' }], { ...ayar, fill: 'forwards' });
       const a = ekran.animate([{ transform: 'scale(0.94)', filter: 'brightness(0.55)' }, { transform: 'none', filter: 'brightness(1)' }], ayar);
       const bitir = () => {
@@ -434,6 +507,13 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
   document.addEventListener('touchend', bitir, { capture: true });
   document.addEventListener('touchcancel', bitir, { capture: true });
 
+  // İş 86d: kenardan kaydırarak geri: sayfa yandan kaymak yerine geldiği yere (açıldığı nokta) doğru küçülür, köşeleri
+  // yuvarlaklaşır; alttaki önceki sayfa aydınlanıp yerine oturur. Bırakınca küçülüp söner ya da geri büyür.
+  // Hareket azaltma açıksa eski yandan kayma.
+  const kucul = (x) => !x.gor && !hareketAz();
+  // İş 86e: açıldığı öğenin kutusu biliniyorsa sayfa ona daralır (clip-path); yoksa küçülme (scale)
+  const sekilli = (x) => kucul(x) && x.koken && x.koken.kutu;
+  const kKirp = (x, t) => kirpma(araKutu(ekranKutusu(), x.koken.kutu, t), ekran.getBoundingClientRect(), Math.round(x.koken.kutu.yc * t));
   function kaydirmaBaslat(x) {
     suruyor(true);
     if (x.gor) {
@@ -443,14 +523,41 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
     const onceki = d.yigin[d.yigin.length - 2];
     const s = bellek.get(onceki);
     x.onceki = onceki;
+    x.adres = simdiki();
     x.s = s;
     x.katman = s ? katman(s) : null;
     ekran.classList.add('gecis-on', 'kaydiriliyor');
+    if (kucul(x)) {
+      const k = kokenler.get(simdiki()) || { x: W() / 2, y: window.innerHeight / 2 };
+      const r = ekran.getBoundingClientRect();
+      x.koken = k;
+      ekran.classList.add('buyuyor');
+      ekran.style.transformOrigin = `${k.x - r.left}px ${k.y - r.top}px`;
+      if (x.katman) x.katman.k.style.transformOrigin = `${k.x}px ${k.y}px`;
+    }
   }
+  // kaydırma oranına göre küçülme (p: 0–1)
+  const kucukDurum = (x, p) => ({
+    transform: `translate3d(${(x.dx || 0) * 0.3}px, 0, 0) scale(${1 - 0.45 * p})`,
+    borderRadius: `${Math.round(28 * Math.min(1, p * 3))}px`,
+  });
+  const alttaki = (p) => ({ transform: `scale(${0.94 + 0.06 * p})`, filter: `brightness(${0.55 + 0.45 * p})` });
   function kaydirmaIlerlet(x) {
     const p = Math.min(1, x.dx / W());
     if (x.gor) {
       x.gor.style.transform = `translate3d(${x.dx}px, 0, 0)`;
+      return;
+    }
+    if (sekilli(x)) {
+      // parmak ekranın %60'ına gelince pencere öğenin şeklini almış olur
+      const t = Math.min(1, p / 0.6);
+      ekran.style.clipPath = kKirp(x, t);
+      if (x.katman) Object.assign(x.katman.k.style, alttaki(p));
+      return;
+    }
+    if (kucul(x)) {
+      Object.assign(ekran.style, kucukDurum(x, p));
+      if (x.katman) Object.assign(x.katman.k.style, alttaki(p));
       return;
     }
     ekran.style.transform = `translate3d(${x.dx}px, 0, 0)`;
@@ -461,19 +568,32 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
   }
   function kaydirmaBitir(x, tamam) {
     const el = x.gor || ekran;
-    const kalan = tamam ? W() - x.dx : x.dx;
-    const sure = Math.max(120, Math.min(360, kalan * 0.9));
-    const hedef = tamam ? W() : 0;
-    const a = el.animate([{ transform: `translateX(${x.dx}px)` }, { transform: `translateX(${hedef}px)` }], { duration: sure, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' });
-    if (x.katman) {
-      const p = x.dx / W();
-      x.katman.k.animate(
-        [
-          { transform: `translateX(${-30 * (1 - p)}%)`, filter: `brightness(${0.72 + 0.28 * p})` },
-          { transform: tamam ? 'none' : 'translateX(-30%)', filter: `brightness(${tamam ? 1 : 0.72})` },
-        ],
-        { duration: sure, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' },
-      );
+    const p = Math.min(1, x.dx / W());
+    let a;
+    if (sekilli(x)) {
+      const t = Math.min(1, p / 0.6);
+      const ayar = { duration: tamam ? 520 : 380, easing: tamam ? 'cubic-bezier(0.32, 0.5, 0.2, 1)' : 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' };
+      a = ekran.animate([{ clipPath: kKirp(x, t), opacity: 1 }, tamam ? { clipPath: kKirp(x, 1), opacity: 0 } : { clipPath: kKirp(x, 0), opacity: 1 }], ayar);
+      if (x.katman) x.katman.k.animate([alttaki(p), tamam ? { transform: 'none', filter: 'brightness(1)' } : alttaki(0)], ayar);
+    } else if (kucul(x)) {
+      const ayar = { duration: tamam ? 460 : 380, easing: tamam ? 'cubic-bezier(0.3, 0.6, 0.2, 1)' : 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' };
+      const simdi = { ...kucukDurum(x, p), opacity: 1 };
+      a = ekran.animate([simdi, tamam ? { transform: `translate3d(${x.dx * 0.3}px, 0, 0) scale(0.2)`, borderRadius: '28px', opacity: 0 } : { transform: 'none', borderRadius: '0px', opacity: 1 }], ayar);
+      if (x.katman) x.katman.k.animate([alttaki(p), tamam ? { transform: 'none', filter: 'brightness(1)' } : alttaki(0)], ayar);
+    } else {
+      const kalan = tamam ? W() - x.dx : x.dx;
+      const sure = Math.max(120, Math.min(360, kalan * 0.9));
+      const hedef = tamam ? W() : 0;
+      a = el.animate([{ transform: `translateX(${x.dx}px)` }, { transform: `translateX(${hedef}px)` }], { duration: sure, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' });
+      if (x.katman) {
+        x.katman.k.animate(
+          [
+            { transform: `translateX(${-30 * (1 - p)}%)`, filter: `brightness(${0.72 + 0.28 * p})` },
+            { transform: tamam ? 'none' : 'translateX(-30%)', filter: `brightness(${tamam ? 1 : 0.72})` },
+          ],
+          { duration: sure, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' },
+        );
+      }
     }
     const son = () => {
       if (x.gor) {
@@ -492,8 +612,12 @@ export function gecisKur({ ekran, d, sekmeler = [] }) {
           x.katman.k.remove();
         }
         ekran.style.transform = '';
+        ekran.style.borderRadius = '';
+        ekran.style.transformOrigin = '';
+        ekran.style.clipPath = '';
         a.cancel();
-        ekran.classList.remove('gecis-on', 'kaydiriliyor');
+        ekran.classList.remove('gecis-on', 'kaydiriliyor', 'buyuyor');
+        if (tamam && x.koken) kokenler.delete(x.adres);
         suruyor(false);
       };
       // tamamlandı: sayfa kaydırılmış, önceki sayfa altta görünür kalır; yönlendirici önceki sayfayı (bellekten)
