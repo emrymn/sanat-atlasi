@@ -15,6 +15,11 @@
 
 const SURE = 420;
 const EGRI = 'cubic-bezier(0.32, 0.72, 0, 1)';
+// İş 86c: büyüyerek açılışın eğrisi: sönümlü yay (iPhone'daki gibi baştan sona görünen büyüme, sonda hafifçe yerine
+// oturur, en çok %1,5 taşar). EGRI hareketin çoğunu ilk karelerde bitirdiğinden uzun sürede bile "çok hızlı" görünüyordu.
+// linear() desteklenmiyorsa (eski Safari) yumuşak bir yavaşlama.
+const YAY = 'linear(0, 0.01, 0.036, 0.075, 0.123, 0.178, 0.236, 0.297, 0.359, 0.419, 0.478, 0.535, 0.589, 0.639, 0.685, 0.728, 0.767, 0.802, 0.834, 0.862, 0.887, 0.909, 0.928, 0.945, 0.959, 0.971, 0.981, 0.989, 0.996, 1.001, 1.006, 1.009, 1.011, 1.013, 1.013, 1.013, 1.011, 1.009, 1.006, 1.003, 1)';
+const YAY_EGRI = typeof CSS !== 'undefined' && CSS.supports && CSS.supports('animation-timing-function', 'linear(0, 1)') ? YAY : 'cubic-bezier(0.2, 0.75, 0.25, 1)';
 const KART_SECICI = '.vitrin-kart, .konu-kart';
 const KENAR = 24; // px: kenardan kaydırmanın başlayabildiği şerit
 const BELLEK_EN_COK = 6;
@@ -229,12 +234,12 @@ function buyumeGecis(ekran, eski, n) {
     ekran.style.transformOrigin = `${n.x - r.left}px ${n.y - r.top}px`;
     k.style.transformOrigin = `${n.x}px ${n.y}px`;
     const bas = Math.min(0.6, Math.max(0.12, (n.g || 0) / innerWidth));
-    const ayar = { duration: 780, easing: EGRI }; // İş 86b: 480 ms çok hızlıydı
+    const ayar = { duration: 950, easing: YAY_EGRI }; // İş 86b/c: 480 → 780 ms yetmedi; yay eğrisiyle 950 ms
     k.animate([{ transform: 'none', filter: 'brightness(1)' }, { transform: 'scale(0.94)', filter: 'brightness(0.55)' }], { ...ayar, fill: 'forwards' });
     const a = ekran.animate(
       [
         { transform: `scale(${bas})`, opacity: 0, borderRadius: '28px' },
-        { opacity: 1, offset: 0.25 },
+        { opacity: 1, offset: 0.12 }, // küçük hâli hemen görünür: büyüme baştan izlenir
         { transform: 'none', opacity: 1, borderRadius: '0px' },
       ],
       ayar,
@@ -262,7 +267,7 @@ function geriGecis(ekran, eski) {
       kokenler.delete(eski.adres);
       k.classList.add('kuculuyor');
       k.style.transformOrigin = `${koken.x}px ${koken.y}px`;
-      const ayar = { duration: 620, easing: EGRI };
+      const ayar = { duration: 720, easing: 'cubic-bezier(0.3, 0.6, 0.2, 1)' };
       k.animate([{ transform: 'none', opacity: 1, borderRadius: '0px' }, { opacity: 1, offset: 0.55 }, { transform: 'scale(0.2)', opacity: 0, borderRadius: '28px' }], { ...ayar, fill: 'forwards' });
       const a = ekran.animate([{ transform: 'scale(0.94)', filter: 'brightness(0.55)' }, { transform: 'none', filter: 'brightness(1)' }], ayar);
       const bitir = () => {
