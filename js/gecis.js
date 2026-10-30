@@ -44,63 +44,6 @@ export function bellekEskit() {
 // Kendi gözcüleri ve kaydırma dinleyicileri olan sayfalar bellekten konmaz (gözcüler sayfa ayrılınca kapanıyor)
 const YENIDEN_CIZ = /^#\/harita$/;
 const sekmeKoku = (adres) => !!ortam && ortam.sekmeler.some((a) => ayni(a, adres));
-function bellekBul(adres) {
-  for (const [a, s] of bellek) if (ayni(a, adres)) return s;
-  return null;
-}
-
-// İş 76b: sekmelerin ana sayfalarının son hâli telefonda saklanır (uygulama arka plana atılınca). Oturumda henüz
-// açılmamış sekmeye kaydırırken boş sayfa yerine bu önizleme görünür; bırakınca sayfa güncel hâliyle çizilir.
-// Yalnız önizleme: düğmeleri çalışmaz, yerine konmaz. Sürüm değişince atılır; Tuval (günün sanatçısı) yalnız aynı gün.
-const ONIZLEME_ANAHTAR = 'sanat-atlasi:sekme-onizleme';
-const ONIZLEME_EN_BUYUK = 400000; // karakter, sayfa başına
-const gunu = () => new Date().toLocaleDateString('sv');
-let kalici = null; // { surum, sayfalar: { adres: { html, stil, tarih } } }
-function kaliciYukle(surum) {
-  try {
-    const v = JSON.parse(localStorage.getItem(ONIZLEME_ANAHTAR) || 'null');
-    kalici = v && v.surum === surum && v.sayfalar && typeof v.sayfalar === 'object' ? v : { surum, sayfalar: {} };
-  } catch {
-    kalici = { surum, sayfalar: {} };
-  }
-}
-function kaliciKaydet() {
-  if (!kalici || !ortam) return;
-  const dugumHtml = (dugumler) => dugumler.map((n) => (n.nodeType === 1 ? n.outerHTML : n.nodeType === 3 ? n.textContent : '')).join('');
-  const tarih = gunu();
-  for (const adres of ortam.sekmeler) {
-    let html = null;
-    let stil = '';
-    let y = 0;
-    if (ayni(adres, simdiki()) && ortam.ekran.firstChild) {
-      html = dugumHtml([...ortam.ekran.childNodes]);
-      stil = document.documentElement.getAttribute('style') || '';
-      y = window.scrollY;
-    } else {
-      const b = bellekBul(adres);
-      if (b) {
-        html = dugumHtml(b.dugumler);
-        stil = b.stil;
-        y = b.y;
-      }
-    }
-    if (html && html.length <= ONIZLEME_EN_BUYUK) kalici.sayfalar[adres] = { html, stil, tarih, y: Math.round(y) || 0 };
-  }
-  try {
-    localStorage.setItem(ONIZLEME_ANAHTAR, JSON.stringify(kalici));
-  } catch {
-    /* yer yok ya da kapalı: önizlemesiz sürer */
-  }
-}
-function kaliciOnizleme(adres) {
-  const o = kalici && kalici.sayfalar[adres];
-  if (!o || typeof o.html !== 'string' || (ayni(adres, '#/') && o.tarih !== gunu())) return null;
-  const t = document.createElement('template');
-  t.innerHTML = o.html;
-  // yeni oturumda sayfa en baştan çizilir; harita ise kendi durağına kaydırır (son kaldığı yer ona yakın)
-  return { adres, dugumler: [...t.content.childNodes], y: YENIDEN_CIZ.test(adres) ? Number(o.y) || 0 : 0, stil: o.stil || '' };
-}
-
 // Hareket azaltma açıksa geçiş yok. Otomatik testlerde de yok (navigator.webdriver); geçişleri sınayan testler
 // window.__atlasGecis = true ile açar.
 export const hareketAz = () =>
@@ -155,7 +98,7 @@ function bellegeKoy(s) {
   s.nesil = nesil;
   bellek.delete(s.adres);
   bellek.set(s.adres, s);
-  // sekmelerin ana sayfaları (sayfalama için) ve yığındaki (geri dönülebilecek) sayfalar; ikincilerden en çok BELLEK_EN_COK
+  // sekmelerin ana sayfaları (sekme çubuğuyla dönülünce kaldığı yerde) ve yığındaki (geri dönülebilecek) sayfalar; ikincilerden en çok BELLEK_EN_COK
   const yigin = ortam ? new Set(ortam.d.yigin) : null;
   for (const a of [...bellek.keys()]) if (yigin && !yigin.has(a) && !sekmeKoku(a)) bellek.delete(a);
   const digerleri = [...bellek.keys()].filter((a) => !sekmeKoku(a));
@@ -330,14 +273,6 @@ function kartBuyut(ekran, kartEl, r, eski) {
 }
 
 let kaydirmaBekleyen = null;
-// sekmeler arası kaydırmada gelen sayfanın önizlemesi (bellekten) gösterildi mi: gösterildiyse yeniden çizilen sayfa
-// öğeleri sırayla belirmeden konur (önizlemenin yerine geçer), gösterilmediyse (boş sayfa) sırayla belirir
-let onizlemeli = false;
-export function onizlemeAl() {
-  const o = onizlemeli;
-  onizlemeli = false;
-  return o;
-}
 // kenardan kaydırma bittikten sonra önceki sayfa yerine konunca çağrılır (her çizimin sonunda da çağrılır)
 export function kaydirmaSonu() {
   const f = kaydirmaBekleyen;
@@ -345,28 +280,16 @@ export function kaydirmaSonu() {
   if (f) f();
 }
 
-// sekmeler arası kaydırmada komşu sekmenin sayfası: bellekten, yoksa önceki oturumdan saklanan önizleme, o da yoksa
-// boş sayfa
-function komsuKatmanKur(adres) {
-  const b = bellekBul(adres) || (sekmeKoku(adres) ? kaliciOnizleme(adres) : null);
-  if (b) return { ...katman(b), adres, onizleme: true };
-  if (!sekmeKoku(adres)) return null;
-  // sekme daha hiç açılmadı: boş sayfa
-  const k = document.createElement('div');
-  k.className = 'sayfa-katman';
-  k.setAttribute('aria-hidden', 'true');
-  ortam.ekran.after(k);
-  return { k, geriAl: () => {}, adres, onizleme: false };
-}
 // ---------- Kurulum: bağlantılar ve kenardan kaydırma ----------
-export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
+export function gecisKur({ ekran, d, sekmeler = [] }) {
   ortam = { ekran, d, sekmeler };
   if (typeof document === 'undefined') return;
-  kaliciYukle(surum);
-  document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'hidden') kaliciKaydet();
-  });
-  window.addEventListener('pagehide', kaliciKaydet);
+  // İş 79: sekmeler arası kaydırma kaldırıldı; onun için saklanan sayfa önizlemeleri silinir (yer kaplamasın)
+  try {
+    localStorage.removeItem('sanat-atlasi:sekme-onizleme');
+  } catch {
+    /* depolama kapalı */
+  }
 
   // Uygulama içi bağlantılar iPhone'un geçmişine yazılmadan (location.replace) açılır. Tıklamayı önleyen kendi
   // işleyicisi olan öğeler (defaultPrevented) dokunulmaz; yeni sekmede açma ve değiştirici tuşlar tarayıcıya kalır.
@@ -391,7 +314,12 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
       if (t.clientX > KENAR) return;
       const gor = document.querySelector('.gor');
       if (gor && typeof gor.kapat !== 'function') return;
-      if (!gor && d.yigin.length < 2) return;
+      // geri gidilecek sayfa yok (sekmelerin ana sayfaları): kenardan yatay hareket tarayıcının kendi geri hareketine
+      // de bırakılmaz (önceki siteye ya da boş sayfaya gidebilir), hiçbir şey olmaz
+      if (!gor && d.yigin.length < 2) {
+        k = { x: t.clientX, y: t.clientY, yok: true };
+        return;
+      }
       k = { x: t.clientX, y: t.clientY, gor, basladi: false, izler: [] };
     },
     { passive: true, capture: true },
@@ -403,6 +331,11 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
       const t = e.touches[0];
       const dx = t.clientX - k.x;
       const dy = t.clientY - k.y;
+      if (k.yok) {
+        if (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx)) k = null;
+        else if (yatayKipirti(dx, dy) && e.cancelable) e.preventDefault();
+        return;
+      }
       if (!k.basladi) {
         if (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx)) {
           k = null;
@@ -440,156 +373,6 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
   };
   document.addEventListener('touchend', bitir, { capture: true });
   document.addEventListener('touchcancel', bitir, { capture: true });
-
-  // Sekmelerin ana sayfaları arasında yatay kaydırma (sayfalama): ana sayfalarda geri yok; parmakla sola kaydırınca
-  // sağdaki sekme, sağa kaydırınca soldaki gelir. Komşu sayfa yanında gerçek hâliyle (bellekten) görünür; daha önce
-  // açılmadıysa boş sayfa gelir, bırakınca içerik belirir. Yatay kayan şeritlerde, yazı alanlarında, açık pencerede
-  // ve sekme çubuğunda başlamaz.
-  let s = null;
-  const SAYFALAMA_YOK = 'input, textarea, select, [contenteditable], #sekmeler, .gor, [data-sayfalama-yok]';
-  const yatayKayar = (el) => {
-    for (; el && el.nodeType === 1 && el !== document.body; el = el.parentElement) {
-      if (el.scrollWidth > el.clientWidth + 1 && /auto|scroll/.test(getComputedStyle(el).overflowX)) return true;
-    }
-    return false;
-  };
-  document.addEventListener(
-    'touchstart',
-    (e) => {
-      s = null;
-      if (k || e.touches.length !== 1) return;
-      const i = ortam.sekmeler.findIndex((a) => ayni(a, simdiki()));
-      if (i < 0 || document.querySelector('.gor, .harita-pencere:not([hidden])')) return;
-      const h = e.target;
-      if (!h || !h.closest || h.closest(SAYFALAMA_YOK)) return;
-      const t = e.touches[0];
-      s = { x: t.clientX, y: t.clientY, i, hedef: h, basladi: false, izler: [] };
-    },
-    { passive: true, capture: true },
-  );
-  document.addEventListener(
-    'touchmove',
-    (e) => {
-      if (!s) return;
-      const t = e.touches[0];
-      const dx = t.clientX - s.x;
-      const dy = t.clientY - s.y;
-      if (!s.basladi) {
-        // dikey kaydırma başladıysa (ya da dikey ağırlıklıysa) sayfalama yok
-        if (!e.cancelable || (Math.abs(dy) > 10 && Math.abs(dy) > Math.abs(dx))) {
-          s = null;
-          return;
-        }
-        if (Math.abs(dx) < 12 || Math.abs(dx) < Math.abs(dy) * 1.3) {
-          // açıkça yatay ilk kıpırtıda tarayıcı kaydırmayı üstlenmesin (yukarıdaki gibi)
-          if (yatayKipirti(dx, dy) && !s.kontrol) {
-            s.kontrol = true;
-            if (yatayKayar(s.hedef)) {
-              s = null;
-              return;
-            }
-          }
-          if (yatayKipirti(dx, dy)) e.preventDefault();
-          return;
-        }
-        // yatay kayan şeritte başlayan hareket şeridindir (denetim burada: her dokunuşta değil)
-        if (!s.kontrol && yatayKayar(s.hedef)) {
-          s = null;
-          return;
-        }
-        s.basladi = true;
-        s.x = t.clientX - Math.sign(dx) * 4; // eşik atlaması olmasın
-        sayfalaBaslat(s);
-      }
-      e.preventDefault();
-      s.dx = t.clientX - s.x;
-      s.izler.push([performance.now(), s.dx]);
-      if (s.izler.length > 6) s.izler.shift();
-      // İş 78: ekran kare hızında güncellenir (dokunuş olayları kareden sık gelebiliyor)
-      const x = s;
-      if (!x.kare) x.kare = requestAnimationFrame(() => {
-        x.kare = 0;
-        if (!x.bitti) sayfalaIlerlet(x);
-      });
-    },
-    { passive: false, capture: true },
-  );
-  const sayfalaBirak = () => {
-    const x = s;
-    s = null;
-    if (!x || !x.basladi) return;
-    // bekleyen kare varsa şimdi uygulanır (komşu katman kurulmuş olsun)
-    if (x.kare) cancelAnimationFrame(x.kare);
-    x.kare = 0;
-    sayfalaIlerlet(x);
-    x.bitti = true;
-    const hiz = birakmaHizi(x.izler);
-    const e = etkin(x);
-    const yon = e < 0 ? 1 : -1; // 1: sağdaki sekme, -1: soldaki
-    const komsu = yon === 1 ? x.sag : x.sol;
-    const tamam = !!komsu && (Math.abs(e) > W() * 0.3 || (Math.abs(hiz) > 0.35 && Math.sign(hiz) === -yon && Math.abs(e) > 20));
-    sayfalaBitir(x, tamam, yon);
-  };
-  document.addEventListener('touchend', sayfalaBirak, { capture: true });
-  document.addEventListener('touchcancel', sayfalaBirak, { capture: true });
-
-  // komşu yoksa (ilk ya da son sekme) lastik gibi az gelir
-  const etkin = (x) => (x.dx > 0 && !x.sol) || (x.dx < 0 && !x.sag) ? x.dx * 0.25 : x.dx;
-  function komsuKatman(j) {
-    const adres = ortam.sekmeler[j];
-    if (!adres) return null;
-    return komsuKatmanKur(adres);
-  }
-  // komşu sayfa yalnız açılan yanda kurulur (iki tam sayfayı birden yerleştirmek kaydırmanın başında takılıyordu);
-  // parmak geri dönüp öbür yanı açarsa o zaman kurulur
-  const komsuHazirla = (x) => {
-    if (x.dx > 0 && x.sol === undefined) x.sol = komsuKatman(x.i - 1);
-    if (x.dx < 0 && x.sag === undefined) x.sag = komsuKatman(x.i + 1);
-  };
-  // İş 78: kaydırırken yalnız konumlar değişir: sayfaya zemin boyanmaz (sayfalar yan yana, üst üste değil), sekme
-  // çubuğunun camındaki vurgu her karede kımıldamaz (bırakınca yeni sekmeye kayar)
-  function sayfalaBaslat(x) {
-    suruyor(true);
-    ekran.classList.add('kaydiriliyor', 'sayfalaniyor');
-  }
-  function sayfalaIlerlet(x) {
-    komsuHazirla(x);
-    const e = etkin(x);
-    ekran.style.transform = `translate3d(${e}px, 0, 0)`;
-    if (x.sol) x.sol.k.style.transform = `translate3d(${e - W()}px, 0, 0)`;
-    if (x.sag) x.sag.k.style.transform = `translate3d(${e + W()}px, 0, 0)`;
-  }
-  function sayfalaBitir(x, tamam, yon) {
-    const e = etkin(x);
-    const hedef = tamam ? -yon * W() : 0;
-    const sure = Math.max(160, Math.min(380, Math.abs(hedef - e) * 0.9));
-    const ayar = { duration: sure, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' };
-    const tx = (v) => ({ transform: `translate3d(${v}px, 0, 0)` });
-    const animler = [ekran.animate([tx(e), tx(hedef)], ayar)];
-    if (x.sol) animler.push(x.sol.k.animate([tx(e - W()), tx(hedef - W())], ayar));
-    if (x.sag) animler.push(x.sag.k.animate([tx(e + W()), tx(hedef + W())], ayar));
-    const temizle = () => {
-      for (const a of animler) a.cancel();
-      for (const l of [x.sol, x.sag]) {
-        if (!l) continue;
-        l.geriAl();
-        l.k.remove();
-      }
-      ekran.style.transform = '';
-      ekran.classList.remove('kaydiriliyor', 'sayfalaniyor');
-      suruyor(false);
-    };
-    const son = () => {
-      if (!tamam) return temizle();
-      // yeni sekme yerine konunca (bellekten ya da çizilince) temizlenir; arada eski sayfa bir an bile görünmesin
-      const komsu = yon === 1 ? x.sag : x.sol;
-      kaydirmaBekleyen = temizle;
-      onizlemeli = komsu.onizleme;
-      if (!gezin(komsu.adres, 'sayfa')) kaydirmaSonu();
-      else setTimeout(kaydirmaSonu, 4000);
-    };
-    animler[0].finished.then(son, son);
-  }
 
   function kaydirmaBaslat(x) {
     suruyor(true);

@@ -1,5 +1,5 @@
 // Ekranların ortak parçaları: uygulama durumu (d), ekran öğesi, küçük yardımcılar, resim rengi, bildirim, sekme çubuğu, başlık ve çizim.
-import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu, bellekEskit, bellegeAl, onizlemeAl } from '../gecis.js';
+import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu, bellekEskit, bellegeAl } from '../gecis.js';
 import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
@@ -333,7 +333,7 @@ const SEKMELER = [
   ['pekistir', 'Atölye', '#/pekistir'],
   ['ilerleme', 'Defter', '#/ilerleme'],
 ];
-// İş 76: sekmelerin ana sayfaları (geri yok; aralarında yatay kaydırmayla geçilir)
+// İş 76: sekmelerin ana sayfaları (geri yok)
 export const SEKME_ADRESLERI = SEKMELER.map(([, , h]) => h);
 export const sekmeKokuMu = (adres) => SEKME_ADRESLERI.includes(adres === '' || adres === '#' ? '#/' : adres);
 
@@ -469,17 +469,16 @@ export function geri(yedek = '#/') {
 // İş 75: geri dönüşte (geri oku ya da kenardan kaydırma) önceki sayfa yeniden çizilmez, bellekten konur: anında,
 // kaldığı yerde. Döndürür: konduysa true (bellekte yoksa yönlendirici sayfayı yeniden çizer).
 let yeniGeriDonus = false;
-// yon: 'geri' (geri oku), 'kaydirma' (kenardan kaydırma), 'sekme' (sekme çubuğu), 'sayfa' (sekmeler arası kaydırma)
+// yon: 'geri' (geri oku), 'kaydirma' (kenardan kaydırma), 'sekme' (sekme çubuğu)
 export function bellektenGeriKoy(adres, yon) {
-  const sekmeden = yon === 'sekme' || yon === 'sayfa';
-  const onizleme = yon === 'sayfa' && onizlemeAl();
+  const sekmeden = yon === 'sekme';
   const eski = sayfayiAyir(ekran, sonCizilenAdres);
   const s = bellektenKoy(adres, ekran);
   if (!s) {
-    // bellekte yok (ya da eskimiş): ayrılan sayfa yerine konur, yönlendirici yeniden çizecek. Geri dönüşte ve
-    // önizlemesi gösterilmiş sayfada öğeler sırayla belirmez; sekmeden ilk gelişte belirir.
+    // bellekte yok (ya da eskimiş): ayrılan sayfa yerine konur, yönlendirici yeniden çizecek. Geri dönüşte öğeler
+    // sırayla belirmez; sekmeden gelişte belirir.
     if (eski) ekran.replaceChildren(...eski.dugumler);
-    yeniGeriDonus = !sekmeden || onizleme;
+    yeniGeriDonus = !sekmeden;
     return false;
   }
   // sekmeler arasında ayrılan sayfa da bellekte kalır (geri dönüşte ayrılan sayfa yığından çıkmıştır)
