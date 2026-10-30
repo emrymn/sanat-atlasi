@@ -618,17 +618,30 @@ export function gununHavuzu() {
 // Günün eseri: en bilinen dikey eser (ekranı kırpılmadan doldurur); yoksa en bilinen eser
 const DIKEY_ORAN = 0.85;
 export function gununEseri(eserler) {
+  // İş 83: Tuval'de tablo ekranı kenardan kenara kaplar: ekranın oranına en yakın (en az kırpılan) tablo. Önce en büyük
+  // kopyası olanlar (ekranı kaplayınca keskin kalsın), yoksa 1280 px kopyalılar; aralarında en çok %30 kırpılanlar
+  // varsa en bilineni, yoksa en az kırpılanı. Örnek: David'de Marat'nın Ölümü iki yanından %40 kırpılıyordu,
+  // yerine Tuileries'deki Çalışma Odasında Napolyon (%24).
+  const adaylar = kaliteSirasi(eserler).map((e) => ({ e, q: gorselKalitesi(e), k: ekranKirpmasi(secilenGorsel(e, kotuler())) }));
+  for (const q of [3, 2]) {
+    const l = adaylar.filter((x) => x.q === q && x.k < 1);
+    if (!l.length) continue;
+    const uygun = l.find((x) => x.k <= UYGUN_KIRPMA);
+    return (uygun || l.reduce((a, b) => (b.k < a.k ? b : a))).e;
+  }
   const dikey = eserler.filter((e) => {
     const g = secilenGorsel(e, kotuler());
     return g && e.pekistirme !== false && (gorselOrani(g) ?? 9) <= DIKEY_ORAN;
   });
-  // İş 82: ekranı kaplayan tablo: dikeyler arasında en yüksek kaliteli kopyası olan (en büyük kopya > yerel 1280 px >
-  // Wikimedia), aynı kalitede en bilinen
-  const enIyi = kaliteSirasi(dikey).find((e) => gorselKalitesi(e) >= 1);
-  if (enIyi) return enIyi;
-  // dikey yoksa (ya da hepsi düşük kaliteli) en kaliteli olan, sonra en bilinen
-  const yedek = kaliteSirasi(eserler).find((e) => gorselKalitesi(e) >= 1 && secilenGorsel(e, kotuler()));
-  return enBilinen(dikey) || yedek || enBilinen(eserler);
+  return enBilinen(dikey) || enBilinen(eserler);
+}
+const UYGUN_KIRPMA = 0.3;
+// tablonun ekranı kaplarken kırpılan payı (0 hiç, 1 bilinmiyor)
+function ekranKirpmasi(g) {
+  const o = g && gorselOrani(g);
+  if (!o) return 1;
+  const ekranOrani = typeof innerWidth !== 'undefined' && innerHeight ? innerWidth / innerHeight : 0.46;
+  return o > ekranOrani ? 1 - ekranOrani / o : 1 - o / ekranOrani;
 }
 
 // İş 82: eserin görsel kalitesi: 3 en büyük kopyası (4096 px) var; 2 uygulamayla gelen 1280 px kopyası var; 1 yalnız
