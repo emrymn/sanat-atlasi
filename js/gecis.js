@@ -421,7 +421,11 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
       k.dx = Math.max(0, dx);
       k.izler.push([performance.now(), k.dx]);
       if (k.izler.length > 6) k.izler.shift();
-      kaydirmaIlerlet(k);
+      const x = k;
+      if (!x.kare) x.kare = requestAnimationFrame(() => {
+        x.kare = 0;
+        if (!x.bitti) kaydirmaIlerlet(x);
+      });
     },
     { passive: false, capture: true },
   );
@@ -429,6 +433,8 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
     const x = k;
     k = null;
     if (!x || !x.basladi) return;
+    if (x.kare) cancelAnimationFrame(x.kare);
+    x.bitti = true;
     const hiz = birakmaHizi(x.izler);
     kaydirmaBitir(x, x.dx > W() * 0.33 || (hiz > 0.35 && x.dx > 20));
   };
@@ -499,7 +505,12 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
       s.dx = t.clientX - s.x;
       s.izler.push([performance.now(), s.dx]);
       if (s.izler.length > 6) s.izler.shift();
-      sayfalaIlerlet(s);
+      // İş 78: ekran kare hızında güncellenir (dokunuş olayları kareden sık gelebiliyor)
+      const x = s;
+      if (!x.kare) x.kare = requestAnimationFrame(() => {
+        x.kare = 0;
+        if (!x.bitti) sayfalaIlerlet(x);
+      });
     },
     { passive: false, capture: true },
   );
@@ -507,6 +518,11 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
     const x = s;
     s = null;
     if (!x || !x.basladi) return;
+    // bekleyen kare varsa şimdi uygulanır (komşu katman kurulmuş olsun)
+    if (x.kare) cancelAnimationFrame(x.kare);
+    x.kare = 0;
+    sayfalaIlerlet(x);
+    x.bitti = true;
     const hiz = birakmaHizi(x.izler);
     const e = etkin(x);
     const yon = e < 0 ? 1 : -1; // 1: sağdaki sekme, -1: soldaki
@@ -517,7 +533,6 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
   document.addEventListener('touchend', sayfalaBirak, { capture: true });
   document.addEventListener('touchcancel', sayfalaBirak, { capture: true });
 
-  const nav = () => document.getElementById('sekmeler');
   // komşu yoksa (ilk ya da son sekme) lastik gibi az gelir
   const etkin = (x) => (x.dx > 0 && !x.sol) || (x.dx < 0 && !x.sag) ? x.dx * 0.25 : x.dx;
   function komsuKatman(j) {
@@ -531,31 +546,28 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
     if (x.dx > 0 && x.sol === undefined) x.sol = komsuKatman(x.i - 1);
     if (x.dx < 0 && x.sag === undefined) x.sag = komsuKatman(x.i + 1);
   };
+  // İş 78: kaydırırken yalnız konumlar değişir: sayfaya zemin boyanmaz (sayfalar yan yana, üst üste değil), sekme
+  // çubuğunun camındaki vurgu her karede kımıldamaz (bırakınca yeni sekmeye kayar)
   function sayfalaBaslat(x) {
     suruyor(true);
-    ekran.classList.add('gecis-on', 'kaydiriliyor', 'sayfalaniyor');
-    const n = nav();
-    if (n) n.classList.add('suruklen');
+    ekran.classList.add('kaydiriliyor', 'sayfalaniyor');
   }
   function sayfalaIlerlet(x) {
     komsuHazirla(x);
     const e = etkin(x);
-    ekran.style.transform = `translateX(${e}px)`;
-    if (x.sol) x.sol.k.style.transform = `translateX(${e - W()}px)`;
-    if (x.sag) x.sag.k.style.transform = `translateX(${e + W()}px)`;
-    const n = nav();
-    if (n) n.style.setProperty('--surukle', Math.max(0, Math.min(ortam.sekmeler.length - 1, x.i - e / W())).toFixed(3));
+    ekran.style.transform = `translate3d(${e}px, 0, 0)`;
+    if (x.sol) x.sol.k.style.transform = `translate3d(${e - W()}px, 0, 0)`;
+    if (x.sag) x.sag.k.style.transform = `translate3d(${e + W()}px, 0, 0)`;
   }
   function sayfalaBitir(x, tamam, yon) {
     const e = etkin(x);
     const hedef = tamam ? -yon * W() : 0;
     const sure = Math.max(160, Math.min(380, Math.abs(hedef - e) * 0.9));
     const ayar = { duration: sure, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)', fill: 'forwards' };
-    const animler = [ekran.animate([{ transform: `translateX(${e}px)` }, { transform: `translateX(${hedef}px)` }], ayar)];
-    if (x.sol) animler.push(x.sol.k.animate([{ transform: `translateX(${e - W()}px)` }, { transform: `translateX(${hedef - W()}px)` }], ayar));
-    if (x.sag) animler.push(x.sag.k.animate([{ transform: `translateX(${e + W()}px)` }, { transform: `translateX(${hedef + W()}px)` }], ayar));
-    const n = nav();
-    if (n) n.style.setProperty('--surukle', String(tamam ? x.i + yon : x.i));
+    const tx = (v) => ({ transform: `translate3d(${v}px, 0, 0)` });
+    const animler = [ekran.animate([tx(e), tx(hedef)], ayar)];
+    if (x.sol) animler.push(x.sol.k.animate([tx(e - W()), tx(hedef - W())], ayar));
+    if (x.sag) animler.push(x.sag.k.animate([tx(e + W()), tx(hedef + W())], ayar));
     const temizle = () => {
       for (const a of animler) a.cancel();
       for (const l of [x.sol, x.sag]) {
@@ -564,11 +576,7 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
         l.k.remove();
       }
       ekran.style.transform = '';
-      ekran.classList.remove('gecis-on', 'kaydiriliyor', 'sayfalaniyor');
-      if (n) {
-        n.classList.remove('suruklen');
-        n.style.removeProperty('--surukle');
-      }
+      ekran.classList.remove('kaydiriliyor', 'sayfalaniyor');
       suruyor(false);
     };
     const son = () => {
@@ -599,12 +607,12 @@ export function gecisKur({ ekran, d, sekmeler = [], surum = '' }) {
   function kaydirmaIlerlet(x) {
     const p = Math.min(1, x.dx / W());
     if (x.gor) {
-      x.gor.style.transform = `translateX(${x.dx}px)`;
+      x.gor.style.transform = `translate3d(${x.dx}px, 0, 0)`;
       return;
     }
-    ekran.style.transform = `translateX(${x.dx}px)`;
+    ekran.style.transform = `translate3d(${x.dx}px, 0, 0)`;
     if (x.katman) {
-      x.katman.k.style.transform = `translateX(${-30 * (1 - p)}%)`;
+      x.katman.k.style.transform = `translate3d(${-30 * (1 - p)}%, 0, 0)`;
       x.katman.k.style.filter = `brightness(${0.72 + 0.28 * p})`;
     }
   }
