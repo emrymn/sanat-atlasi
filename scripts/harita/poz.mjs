@@ -5,11 +5,12 @@
 //
 // 1) Taslak: node poz.mjs taslak --calistir
 //    Rönesans haritasından üç ayrı karakter fikri: gezgin-a, gezgin-b, gezgin-c (cikti/ronesans/sprite/). ~0,39 $
-// 2) Seçilenle bütün pozlar: node poz.mjs gezgin-a hepsi --calistir   (ya da tek dönem: node poz.mjs gezgin-a barok)
-//    Rönesans dışındaki dönemlerde önce aynı kişi o dönemin kıyafetiyle ve o haritanın üslubunda çizilir, sonra pozlar:
+// 2) Öbür dönemlerin kendi karakterleri (her dönemde başka bir genç sanatçı, aynı biçimde):
+//    node poz.mjs gezgin-a hepsi --yalniz taban --calistir   (~1 $; bakıp beğenilmeyen silinip yeniden çizilir)
+// 3) Bütün pozlar: node poz.mjs gezgin-a hepsi --calistir   (ya da tek dönem: node poz.mjs gezgin-a barok)
 //    <ad>-yuru-1..4 (yandan, sola yürür: 4 karelik adım), <ad>-arka-1..2 (arkadan, uzaklaşır), <ad>-eskiz (çizer).
 //    Kareler birinci adımın üstünden çizilir (aynı kişi, aynı boy). Var olanın üstüne yazılmaz.
-// 3) Sonra: sh gonder.sh "Gezgin pozları" (uygulamaya hazırlamayı Claude yapar: yolcu_hazirla.py --karakter <ad>).
+// 4) Sonra: sh gonder.sh "Gezgin pozları" (uygulamaya hazırlamayı Claude yapar: yolcu_hazirla.py --karakter <ad>).
 // Eski öğrenci için de çalışır: node poz.mjs karakter ronesans
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync, readFileSync } from 'node:fs';
@@ -26,7 +27,7 @@ const ANA = 'ronesans'; // karakter önce burada seçilir; öbür dönemler bund
 
 // Üslup: haritanın içinde boyanmış bir figür (Image N: o dönemin haritası)
 const stil = (n) =>
-  `Paint him as a small figure that truly belongs inside the painting in Image ${n}: the same loose, visible brushwork, the same muted palette, the same soft and slightly broken edges, and the same simplified way the people in that painting are painted. It must NOT look like a glossy digital illustration: no smooth airbrushed shading, no crisp clean outline, no plastic skin, no cartoon, anime or video-game look, no big eyes, no posed smile. The face is small and only suggested with a few brushstrokes. Seen from slightly above, at the same 3/4 bird's-eye angle as the painting.`;
+  `Paint the figure as a small figure that truly belongs inside the painting in Image ${n}: the same loose, visible brushwork, the same muted palette, the same soft and slightly broken edges, and the same simplified way the people in that painting are painted. It must NOT look like a glossy digital illustration: no smooth airbrushed shading, no crisp clean outline, no plastic skin, no cartoon, anime or video-game look, no big eyes, no posed smile. The face is small and only suggested with a few brushstrokes. Seen from slightly above, at the same 3/4 bird's-eye angle as the painting.`;
 const ZEMIN =
   'Full body, nothing cropped, feet visible. Centred, filling about 80% of the image height. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta on the figure. No cast shadow, no ground, no text, no frame.';
 
@@ -49,30 +50,39 @@ const TASLAKLAR = [
   },
 ];
 
-// 2) Dönem kıyafetleri (öbür dönemler: aynı kişi, aynı eşyalar)
-const KIYAFET = {
-  ortacag: 'clothing of 14th-century Italy: a simple belted wool tunic in muted red, a hooded short cape, hose and soft leather shoes',
-  barok: '17th-century Dutch clothing: a dark doublet with a wide white falling collar, breeches, boots and a broad-brimmed felt hat',
-  barok2: 'late 17th-century French clothing: a long dark blue coat with turned-back cuffs, a lace cravat, breeches, stockings, buckled shoes and a tricorne hat',
-  aydinlanma: 'mid-18th-century clothing: a long pale blue frock coat, a cream waistcoat, breeches, stockings and buckled shoes, his hair tied back with a ribbon',
-  romantik: 'mid-19th-century clothing: a dark green frock coat, a loosely tied red cravat, grey trousers and boots',
-  empresyonizm: 'the clothes of a young Parisian of the 1870s on a summer day: a light linen jacket, light trousers and a straw boater hat',
-  postempresyonizm: "the clothes of a young painter of the 1890s in the south of France: a loose blue workman painter's smock, a red neckerchief, brown corduroy trousers and boots",
-  modern: 'the clothes of an art student of the 1950s: a black turtleneck sweater, trousers rolled at the ankle and canvas shoes',
+// 2) İş 91 (Emre: "her dönemin karakteri farklı olsun"): her dönemde o dönemin kendi genç sanatçısı, Rönesans'taki
+// gezginle aynı biçimde (sırtı ya da yanı dönük, yüzü belli belirsiz, elinde sanatçı eşyası, aynı boy ve çerçeve) ama
+// başka bir kişi ve o dönemin haritasının üslubunda. Kadın ressamlar da var (Leyster, Vigée Le Brun, Morisot).
+const KARAKTERLER = {
+  ortacag:
+    "a young apprentice of a 14th-century Italian painter's workshop: a plain belted wool tunic in muted blue-green, a short hooded cape with the hood down, hose and soft shoes, a small gilded wooden panel wrapped in cloth under his arm and a pouch of pigments at his belt",
+  barok:
+    'a young woman painter of 17th-century Haarlem, like Judith Leyster: a dark brown bodice and skirt, a wide white collar and a white cap, holding a wooden palette with brushes and carrying a small stretched canvas',
+  barok2:
+    'a young student of the French Royal Academy in the late 17th century: a long deep blue coat with turned-back red cuffs, breeches, stockings, buckled shoes and a tricorne hat, a large portfolio of drawings under his arm',
+  aydinlanma:
+    'a young woman portrait painter of the 18th century, like Élisabeth Vigée Le Brun: a light dress with a pale shawl, her hair loosely up with a ribbon, carrying a folding easel and a small canvas',
+  romantik:
+    "a young wandering painter of the early 19th century, like the wanderer in Caspar David Friedrich's Wanderer above the Sea of Fog: a long dark green coat, boots, tousled hair, a walking stick and a sketching satchel",
+  empresyonizm:
+    'a young woman painting outdoors in the 1870s, like Berthe Morisot: a light summer dress, a straw hat with a ribbon, carrying a folding easel, a paint box and a small canvas',
+  postempresyonizm:
+    "a young painter in Provence in the 1880s, like Van Gogh in The Painter on the Road to Tarascon: a wide straw hat, a blue workman's smock, carrying a canvas, an easel and a paint box on his back",
+  modern: 'a young art student of the 1950s: a black turtleneck, dark trousers, canvas shoes and a scarf, a large black portfolio under the arm',
 };
 const donemTaban = (d) =>
-  `The same young man as in Image 1, with the same build, posture, accessories and the same view (from the same side, the face just as hidden or suggested), now dressed in ${KIYAFET[d]}. ${stil(2)}`;
+  `A different person from the one in Image 1, but shown, framed, sized and painted the same way (seen from behind and a little to the side, the face hidden or barely suggested, standing calmly): ${KARAKTERLER[d]}. ${stil(2)}`;
 
 // 3) Pozlar (Image 1: o dönemin karakteri ya da birinci adım; Image 2: o dönemin haritası)
-const AYNI = 'The same figure as in Image 1, exactly the same person, clothes, size, framing and painting style';
+const AYNI = 'The same figure as in Image 1, exactly the same person, clothes, belongings, size, framing and painting style';
 const POZLAR = [
-  { ek: 'yuru-1', grup: 'yuru', metin: `He is walking to the LEFT, seen from the side (profile, a little turned toward the viewer): first step of a walk cycle, his LEFT leg forward with the heel touching down and his right leg back, arms swinging naturally.` },
-  { ek: 'arka-1', grup: 'arka', metin: 'He is seen from BEHIND (back view, a little from above), walking AWAY from the viewer up a road, mid-stride with his LEFT leg forward; we see his back and the back of his head.' },
-  { ek: 'eskiz', grup: 'eskiz', metin: 'He is standing still, holding a sketchbook open in one hand and drawing in it with a pencil in the other, head bowed over his drawing, absorbed.' },
-  { ek: 'yuru-2', grup: 'yuru', ornek: 'yuru-1', metin: `${AYNI}, walking to the LEFT, at the next moment of the walk cycle (passing position): his left leg is straight under his body carrying his weight and his right leg is bent, swinging forward past it, the body slightly higher, arms close to the body.` },
-  { ek: 'yuru-3', grup: 'yuru', ornek: 'yuru-1', metin: `${AYNI}, walking to the LEFT, at the opposite step: now his RIGHT leg is forward with the heel touching down and his left leg back, arms swinging the other way.` },
-  { ek: 'yuru-4', grup: 'yuru', ornek: 'yuru-1', metin: `${AYNI}, walking to the LEFT, passing position of the other leg: his right leg is straight under his body carrying his weight and his left leg is bent, swinging forward past it, the body slightly higher.` },
-  { ek: 'arka-2', grup: 'arka', ornek: 'arka-1', metin: `${AYNI}, seen from behind walking away, but at the next step: now his RIGHT leg is forward and his left leg back.` },
+  { ek: 'yuru-1', grup: 'yuru', metin: 'The figure is walking to the LEFT, seen from the side (profile, a little turned toward the viewer): first step of a walk cycle, the LEFT leg forward with the heel touching down and the right leg back, arms swinging naturally.' },
+  { ek: 'arka-1', grup: 'arka', metin: 'The figure is seen from BEHIND (back view, a little from above), walking AWAY from the viewer up a road, mid-stride with the LEFT leg forward; we see the back and the back of the head.' },
+  { ek: 'eskiz', grup: 'eskiz', metin: 'The figure is standing still, holding a sketchbook open in one hand and drawing in it with a pencil in the other, head bowed over the drawing, absorbed.' },
+  { ek: 'yuru-2', grup: 'yuru', ornek: 'yuru-1', metin: `${AYNI}, walking to the LEFT, at the next moment of the walk cycle (passing position): the left leg is straight under the body carrying the weight and the right leg is bent, swinging forward past it, the body slightly higher, arms close to the body.` },
+  { ek: 'yuru-3', grup: 'yuru', ornek: 'yuru-1', metin: `${AYNI}, walking to the LEFT, at the opposite step: now the RIGHT leg is forward with the heel touching down and the left leg back, arms swinging the other way.` },
+  { ek: 'yuru-4', grup: 'yuru', ornek: 'yuru-1', metin: `${AYNI}, walking to the LEFT, passing position of the other leg: the right leg is straight under the body carrying the weight and the left leg is bent, swinging forward past it, the body slightly higher.` },
+  { ek: 'arka-2', grup: 'arka', ornek: 'arka-1', metin: `${AYNI}, seen from behind walking away, but at the next step: now the RIGHT leg is forward and the left leg back.` },
 ];
 
 // Saydam değilse: köşelerden başlayıp mor zemini sil, kenardaki mor sızıntıyı temizle (sprite.mjs ile aynı)
@@ -141,11 +151,11 @@ function plan(karakter, donemler, yalniz) {
   }
   for (const d of donemler) {
     const taban = sprite(d, karakter);
-    if (d !== ANA && karakter !== 'karakter') isler.push({ d, ad: karakter, metin: donemTaban(d), ornekler: [sprite(ANA, karakter), 'harita'] });
+    if (d !== ANA && karakter !== 'karakter' && (!yalniz || yalniz.includes('taban'))) isler.push({ d, ad: karakter, metin: donemTaban(d), ornekler: [sprite(ANA, karakter), 'harita'] });
     for (const p of POZLAR) {
       if (yalniz && !yalniz.includes(p.grup)) continue;
       const kaynak = p.ornek ? sprite(d, `${karakter}-${p.ornek}`) : taban;
-      isler.push({ d, ad: `${karakter}-${p.ek}`, metin: `${p.metin}\n\n${p.ornek ? '' : `Keep him exactly the same person as in Image 1. `}${stil(2)}`, ornekler: [kaynak, 'harita'] });
+      isler.push({ d, ad: `${karakter}-${p.ek}`, metin: `${p.metin}\n\n${p.ornek ? '' : `Keep exactly the same person as in Image 1: same clothes, belongings and painting style. `}${stil(2)}`, ornekler: [kaynak, 'harita'] });
     }
   }
   return isler;
