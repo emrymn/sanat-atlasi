@@ -828,3 +828,46 @@ test.describe('İş 77: bellekten dönen Tuval', () => {
     expect(await opak()).toBe('1');
   });
 });
+
+// İş 80: iPhone'un yoğun ekranında (3 kat) küçük kopyalar büyütülüp bulanıklaşıyordu: yetmeyen görsel bir üst
+// kopyayla değişir (400 → 1280 px); ekranı büyük ölçüde kaplayan tablo en büyük kopyayla
+test.describe('İş 80: keskin görseller', () => {
+  test.use({ deviceScaleFactor: 3, hasTouch: true, isMobile: true });
+
+  test('sanatçı sayfasındaki eserler 1280 px kopyaya geçer, keskin; Tuval\'in büyük tablosu en büyük kopyayı alır', async ({ page, context }) => {
+    await agiHazirla(context);
+    const yerel = JSON.parse(readFileSync(new URL('../../data/yerel_gorseller.json', import.meta.url), 'utf8')).gorseller;
+    const adlar = Object.values(yerel);
+    await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) =>
+      r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar, muze: {} }) }),
+    );
+    const istenen = [];
+    await context.route(/pub-deneme\.r2\.dev\/d\//, (r) => {
+      istenen.push(r.request().url());
+      r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)), headers: { 'access-control-allow-origin': '*' } });
+    });
+    await page.goto('./#/sanatci/jan-van-eyck');
+    const ilk = page.locator('#uygulama .eserler img').first();
+    await expect(ilk).toHaveAttribute('src', /gorseller\/b\/[0-9a-f]+\.jpg$/, { timeout: 10000 });
+    const keskinlikler = await page.evaluate(() =>
+      [...document.querySelectorAll('#uygulama .eserler img')]
+        .filter((i) => i.naturalWidth && i.getBoundingClientRect().top < innerHeight)
+        .map((i) => {
+          const r = i.getBoundingClientRect();
+          return 1 / (Math.max(r.width / i.naturalWidth, r.height / i.naturalHeight) * devicePixelRatio);
+        }),
+    );
+    expect(keskinlikler.length).toBeGreaterThan(0);
+    for (const k of keskinlikler) expect(k).toBeGreaterThanOrEqual(0.8);
+    // küçük kartlar (dönem çizelgesi) 400 px'te kalır: gereksiz indirme yok
+    await page.goto('./#/gozat');
+    await page.locator('a.zaman-kart').first().waitFor();
+    await page.waitForTimeout(1500);
+    expect(await page.locator('#uygulama .zaman-kart .onizleme img[src*="gorseller/k/"]').count()).toBeGreaterThan(0);
+    // sanatçı sayfasının eserleri için en büyük kopya istenmedi (yalnız büyük tablo)
+    expect(istenen).toEqual([]);
+    // Tuval'in büyük tablosu ekranı kaplıyor: en büyük kopya
+    await page.goto('./#/');
+    await expect(page.locator('#uygulama [data-gunun-gorsel] img')).toHaveAttribute('src', /pub-deneme\.r2\.dev\/d\/[0-9a-f]+\.jpg$/, { timeout: 10000 });
+  });
+});

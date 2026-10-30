@@ -88,6 +88,16 @@ export function devasaKaynagi(g) {
   const m = ad && uzak.devasa.has(ad) && uzak.muze[ad];
   return m && m !== g.k ? KAYNAK_ADI[m] : '';
 }
+// İş 80: yerel kopyanın bir üst kopyası (ekranda gerçek pikselinden büyük gösterildiğinde): 400 px → 1280 px;
+// 1280 px → en büyük kopya (yalnız ekranı büyük ölçüde kaplayan tabloda: devasa kopyalar 3–5 MB ve açılınca
+// bellekte onlarca MB yer tutar). Bilinmeyen ya da üstü olmayan adres için ''.
+export function ustKopya(src, { buyuk = false } = {}) {
+  const m = /(?:^|\/)([kb])\/([0-9a-f]{12,})\.jpg(?:[?#]|$)/.exec(String(src || ''));
+  if (!m) return '';
+  const [, tur, ad] = m;
+  if (tur === 'k') return uzak.buyuk ? `${uzak.adres}/b/${ad}.jpg` : `gorseller/b/${ad}.jpg`;
+  return buyuk && uzak.devasa.has(ad) ? `${uzak.adres}/d/${ad}.jpg` : '';
+}
 export function yerelAnahtar(g) {
   return `${g.k}:${g.d || g.i || g.u || ''}`;
 }
