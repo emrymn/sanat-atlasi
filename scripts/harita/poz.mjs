@@ -7,11 +7,11 @@
 // Sonra: python3 yolcu_hazirla.py (uygulamaya hazırlar) ve sh gonder.sh "Öğrenci pozları".
 // Kullanım (Mac): node poz.mjs ronesans [--calistir] [--yalniz yuru,arka,eskiz]   |   node poz.mjs hepsi --calistir
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import sharp from 'sharp';
-import { gateway, generateImage } from 'ai';
+import { createGateway, generateImage } from 'ai';
 
 const BURASI = path.dirname(fileURLToPath(import.meta.url));
 const KOK = path.resolve(BURASI, '../..');
@@ -62,6 +62,24 @@ async function saydamYap(veri) {
   return sharp(data, { raw: { width: w, height: h, channels: 4 } }).png().toBuffer();
 }
 
+// Anahtar: kabuktaki AI_GATEWAY_API_KEY, yoksa scripts/harita/.env. Kopyalarken eklenebilen boşluk, satır sonu (\r),
+// düz ya da kıvrık tırnaklar temizlenir (kütüphane geçersiz karakterli anahtarda da "No authentication provided" der).
+// Anahtarın kendisi hiçbir zaman yazdırılmaz; yalnız uzunluğu ve başı (vck_) denetlenir.
+function anahtarOku() {
+  let ham = process.env.AI_GATEWAY_API_KEY || '';
+  const env = path.join(BURASI, '.env');
+  if (!ham.trim() && existsSync(env)) {
+    const satir = readFileSync(env, 'utf8').split(/\r?\n/).find((l) => /^\s*(export\s+)?AI_GATEWAY_API_KEY\s*=/.test(l)) || '';
+    ham = satir.replace(/^\s*(export\s+)?AI_GATEWAY_API_KEY\s*=/, '');
+  }
+  const anahtar = ham.replace(/[\s'"\u2018\u2019\u201C\u201D\uFEFF]/g, '');
+  if (!anahtar) throw new Error('AI_GATEWAY_API_KEY bulunamadı: scripts/harita/.env dosyasına AI_GATEWAY_API_KEY=... yazın');
+  const garip = [...anahtar].filter((c) => c < '!' || c > '~').length;
+  console.log(`Anahtar: ${anahtar.length} karakter, "vck_" ile başlıyor: ${anahtar.startsWith('vck_') ? 'evet' : 'hayır'}${garip ? `, ${garip} geçersiz karakter (yeniden yapıştırın)` : ''}`);
+  if (garip) throw new Error('Anahtarda harf/rakam dışı karakter var; .env dosyasını silip yeniden oluşturun');
+  return anahtar;
+}
+
 const ornek = async (p) => sharp(p).flatten({ background: '#ffffff' }).resize(512, 512, { fit: 'contain', background: '#ffffff' }).png().toBuffer();
 
 async function main() {
@@ -77,8 +95,8 @@ async function main() {
     console.log(`\nPlan bu. Çizmek için: node poz.mjs ${process.argv.slice(2).join(' ')} --calistir`);
     return;
   }
-  if (!process.env.AI_GATEWAY_API_KEY && existsSync(path.join(BURASI, '.env'))) process.loadEnvFile(path.join(BURASI, '.env'));
-  if (!process.env.AI_GATEWAY_API_KEY) throw new Error('AI_GATEWAY_API_KEY yok: scripts/harita/.env dosyasına AI_GATEWAY_API_KEY=... yazın');
+  const anahtar = anahtarOku();
+  const gateway = createGateway({ apiKey: anahtar });
 
   for (const d of donemler) {
     const klasor = path.join(BURASI, 'cikti', d, 'sprite');
@@ -112,7 +130,10 @@ async function main() {
         const m = await sharp(kirpik).metadata();
         console.log(`tamam (${m.width}×${m.height}, ${sonuc.providerMetadata?.gateway?.cost ?? '?'} $)`);
       } catch (e) {
-        console.log(`HATA: ${e && e.message ? e.message : e}`);
+        // kimlik hatasında altta yatan sebep (anahtarı içermez) de yazılır
+        const neden = e && e.cause && e.cause.message ? ` (sebep: ${e.cause.message})` : '';
+        console.log(`HATA: ${e && e.message ? e.message.split('\n')[0] : e}${neden}`);
+        if (/authentication/i.test(String(e && e.message))) return;
       }
     }
   }
