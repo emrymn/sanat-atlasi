@@ -99,10 +99,10 @@ const isaretMetni = (d) =>
 const BOYALI = {
   ortacag: "a round gilded halo painted behind his head, like the punched gold-leaf halos in Giotto's frescoes, part of the same painting, partly hidden by his head",
   ronesans: 'a fine, thin golden halo ring floating flat above his head in perspective, like the halos painted by Piero della Francesca, painted with the same brush and light',
-  barok: "a small chubby putto (cherub) with little wings flying just above his shoulder, both lit by the same warm light of his lantern with deep Caravaggio shadows, painted together as one group",
+  barok: "a small winged putto (cherub) wrapped in a flowing golden silk drapery that covers its body, flying just above his shoulder, both lit by the same warm light of his lantern with deep Caravaggio shadows, painted together as one group",
   barok2: 'a classical laurel wreath worn on his head over the hat brim, as worn by poets in Poussin, painted with the same brush',
   aydinlanma: 'long pink silk ribbons tied in her hair and fluttering behind her, as in Fragonard, painted with the same soft brush',
-  romantik: "a thin crescent moon low in the sky just behind his shoulder, and pale moonlight touching the edge of his coat and hair, as in Caspar David Friedrich's moonlit paintings, painted together",
+  romantik: "a large pale crescent moon, about the size of his head and clearly visible, hanging in the air just above and behind his shoulder, and silvery moonlight touching the edge of his coat and hair, as in Caspar David Friedrich's moonlit paintings, painted together",
   empresyonizm: "a small cream parasol she holds over her shoulder, like Monet's Woman with a Parasol, with dappled sunlight spots painted on her dress",
   postempresyonizm: "a few swirling Van Gogh stars and short thick strokes of night sky painted in the air just above and around his hat, as in The Starry Night",
   modern: "a few bright blue paper cut-out shapes like Matisse's, floating and falling around him like leaves, painted with the same flat gouache",
