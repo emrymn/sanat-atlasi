@@ -273,6 +273,8 @@ test('İş 90/92: yolcuYolu — dönem içinde patikayı izler (ileri ve geri), 
   const g = yolcuYolu(h, patikalar, ron[2].x.id, ron[0].x.id);
   assert.equal(g.parcalar.length, 1);
   assert.deepEqual(g.parcalar[0].noktalar, [...n].reverse());
+  assert.equal(g.geri, true);
+  assert.equal(y.geri, false);
   // Orta Çağ'ın son durağından Rönesans'ın ikincisine: Orta Çağ'da söner, Rönesans'ın ilk durağından yürür
   const ort = sira.filter((s) => s.b.id === 'ortacag');
   const t = yolcuYolu(h, patikalar, ort.at(-1).x.id, ron[1].x.id);

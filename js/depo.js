@@ -33,6 +33,7 @@ export function varsayilanIlerleme(islenen = []) {
     koleksiyon: [], // işaretlenen eserler (K4)
     haritaGorulen: [], // yolculuk haritasında görülmüş (açık) bölümler (İş 23/24)
     haritaYolcu: null, // İş 90: öğrencinin haritada en son durduğu bölüm (yeni bölüm açılınca oradan yürür)
+    haritaYolcuYuz: null, // İş 94: 'on' ise gezgin durakta yüzü izleyene dönük durur (geri gelişten sonra)
     bolumler: {}, // İş 24: harita bölümlerinin en iyi oranları { 'sira-no': { kolay, orta, zor, tanitim } }
     bildirimler: [], // "Bu görsel hatalı" bildirimleri (İ5)
     sonSurum: null, // Bugün'de "Yenilikler" notunun son gösterildiği sürüm (T4)
@@ -91,6 +92,7 @@ export function ilerlemeDogrula(nesne) {
     koleksiyon: koleksiyonDogrula(v.koleksiyon),
     haritaGorulen: gorulenDogrula(v.haritaGorulen),
     haritaYolcu: typeof v.haritaYolcu === 'string' && v.haritaYolcu.length < 40 ? v.haritaYolcu : null,
+    haritaYolcuYuz: v.haritaYolcuYuz === 'on' ? 'on' : null,
     bolumler: bolumlerDogrula(v.bolumler),
     bildirimler: bildirimlerDogrula(v.bildirimler),
     sonSurum: typeof v.sonSurum === 'string' && /^\d+\.\d+\.\d+$/.test(v.sonSurum) ? v.sonSurum : null,

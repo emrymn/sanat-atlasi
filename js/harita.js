@@ -103,7 +103,8 @@ export function yolcuYolu(harita, patikalar, eskiId, yeniId, enCok = 4) {
   const hedef = yer(sira[i1]);
   const sonNokta = parcalar.length ? parcalar[parcalar.length - 1].noktalar.at(-1) : null;
   if (!sonNokta || sonNokta[0] !== hedef[0] || sonNokta[1] !== hedef[1]) parcalar.push({ bolge: sira[i1].b.id, noktalar: [hedef] });
-  return { parcalar };
+  // geri: önceki duraklara (haritada aşağı, izleyene doğru) gidiş; İş 94: varınca yüzü izleyene dönük durur
+  return { parcalar, geri: adim < 0 };
 }
 
 // İş 93 (Emre: "geri geri gidiş tuhaf duruyor, tersini çizip ekleyelim"): yürürken gidiş yönüne göre poz. Gezginler

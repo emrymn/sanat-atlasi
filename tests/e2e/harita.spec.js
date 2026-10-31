@@ -222,6 +222,8 @@ test('İş 92: öğrenci yalnız durağa dokununca patikada yürür', async ({ p
   await expect(page.locator('[data-harita-pencere]')).toBeVisible();
   await expect(kap).toHaveAttribute('data-durak', hedef);
   expect(await page.evaluate(() => window.__atlas.ilerleme.haritaYolcu)).toBe(hedef);
+  // İş 94: geri (önceki durağa) gelince yüzü izleyene dönük durur
+  await expect(kap.locator('img')).toHaveAttribute('src', /_on_(gunduz|gece)\.webp$/);
   const durak = await page.locator(`.harita-durak[data-bolum="${hedef}"]`).boundingBox();
   const son = await kap.boundingBox();
   expect(Math.abs(son.y + son.height - (durak.y + durak.height))).toBeLessThan(40);
@@ -237,6 +239,11 @@ test('İş 92: öğrenci yalnız durağa dokununca patikada yürür', async ({ p
   await page.goto('./#/harita');
   await kap.waitFor();
   await expect(kap).toHaveAttribute('data-durak', hedef);
+  await expect(kap.locator('img')).toHaveAttribute('src', /_on_(gunduz|gece)\.webp$/);
+  // ileri (şimdiki durağa) gidince yine sırtı dönük durur
+  await page.locator(`.harita-durak[data-bolum="${simdiki}"]`).click();
+  await expect(page.locator('.harita.yuruyor')).toHaveCount(0, { timeout: 3000 });
+  await expect(kap.locator('img')).toHaveAttribute('src', /_dur_(gunduz|gece)\.webp$/);
   await page.waitForTimeout(1200);
   await expect(page.locator('.harita.yuruyor')).toHaveCount(0);
 });
