@@ -2,7 +2,8 @@
 # Girdi: cikti/<dönem>/sprite/ altındaki saydam çizimler (poz.mjs üretir); <ad> karakterin adı (eski öğrenci: karakter,
 # İş 91'in gezgini: gezgin-a …):
 #   <ad>.webp (duruş), <ad>-yuru-1..N.webp (yana yürüme adımları, sola bakar),
-#   <ad>-arka-1..N.webp (arkadan, yolda uzaklaşırken), <ad>-eskiz.webp (durakta eskiz yaparken).
+#   <ad>-arka-1..N.webp (arkadan, yolda uzaklaşırken), <ad>-on.webp (önden, yolda aşağı inerken; İş 93),
+#   <ad>-eskiz.webp (durakta eskiz yaparken).
 # Yalnız duruş zorunlu; öbürleri varsa eklenir, yoksa uygulama duruşu sallayarak yürütür. Bir dönemde <ad> yoksa
 # o dönemde eski öğrenci (karakter) kalır.
 # İş 91: renkler haritaya biraz yaklaştırılır (Lab ortalama/sapma aktarımı, UYUM oranında): figür resmin içinde
@@ -28,7 +29,7 @@ UYUM = 0.3  # renklerin haritaya yaklaşma oranı (0: hiç, 1: haritanın renk d
 
 
 def pozAdi(ad, dosya):
-    m = re.match(rf'^{re.escape(ad)}(?:-(yuru|arka)-(\d+)|-(eskiz))?\.webp$', dosya)
+    m = re.match(rf'^{re.escape(ad)}(?:-(yuru|arka)-(\d+)|-(eskiz|on))?\.webp$', dosya)
     if not m:
         return None
     if m.group(1):

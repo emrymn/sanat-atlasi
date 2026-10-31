@@ -106,6 +106,19 @@ export function yolcuYolu(harita, patikalar, eskiId, yeniId, enCok = 4) {
   return { parcalar };
 }
 
+// İş 93 (Emre: "geri geri gidiş tuhaf duruyor, tersini çizip ekleyelim"): yürürken gidiş yönüne göre poz. Gezginler
+// sırtı dönük çizildi (dur); patikada aşağı (önceki duraklara, izleyene doğru) inerken önden pozu (on) varsa o. Yürüme
+// kareleri (yuru1.., arka1..) varsa adım adım; yoksa yöne göre tek resim. pozlar: { dur, on?, yuru1?, arka1?, ... }
+export function yolcuPozu(pozlar, dx, dy, adim) {
+  const adlar = Object.keys(pozlar || {});
+  const dizi = (on) => adlar.filter((k) => new RegExp(`^${on}\\d+$`).test(k)).sort();
+  const asagi = dy > 0 && dy > Math.abs(dx) * 0.6;
+  const yukari = dy < 0 && -dy > Math.abs(dx) * 1.6;
+  if (asagi && adlar.includes('on')) return 'on';
+  const l = yukari && dizi('arka').length ? dizi('arka') : dizi('yuru');
+  return l.length ? l[adim % l.length] : 'dur';
+}
+
 // Bir çizginin uzunluğu ve t (0–1) anındaki noktası ile yönü
 export function cizgiUzunlugu(n) {
   let u = 0;

@@ -8,7 +8,8 @@
 // 2) Öbür dönemlerin kendi karakterleri (her dönemde başka bir genç sanatçı, aynı biçimde):
 //    node poz.mjs gezgin-a hepsi --yalniz taban --calistir   (~1 $; bakıp beğenilmeyen silinip yeniden çizilir)
 // 3) Bütün pozlar: node poz.mjs gezgin-a hepsi --calistir   (ya da tek dönem: node poz.mjs gezgin-a barok)
-//    <ad>-yuru-1..4 (yandan, sola yürür: 4 karelik adım), <ad>-arka-1..2 (arkadan, uzaklaşır), <ad>-eskiz (çizer).
+//    <ad>-yuru-1..4 (yandan, sola yürür: 4 karelik adım), <ad>-arka-1..2 (arkadan, uzaklaşır), <ad>-on (önden, yaklaşır),
+//    <ad>-eskiz (çizer). Yalnız önden pozlar (İş 93): node poz.mjs gezgin-a hepsi --yalniz on --calistir
 //    Kareler birinci adımın üstünden çizilir (aynı kişi, aynı boy). Var olanın üstüne yazılmaz.
 // 4) Sonra: sh gonder.sh "Gezgin pozları" (uygulamaya hazırlamayı Claude yapar: yolcu_hazirla.py --karakter <ad>).
 // Eski öğrenci için de çalışır: node poz.mjs karakter ronesans
@@ -80,6 +81,8 @@ const AYNI = 'The same figure as in Image 1, exactly the same person, clothes, b
 const POZLAR = [
   { ek: 'yuru-1', grup: 'yuru', metin: 'The figure is walking to the LEFT, seen from the side (profile, a little turned toward the viewer): first step of a walk cycle, the LEFT leg forward with the heel touching down and the right leg back, arms swinging naturally.' },
   { ek: 'arka-1', grup: 'arka', metin: 'The figure is seen from BEHIND (back view, a little from above), walking AWAY from the viewer up a road, mid-stride with the LEFT leg forward; we see the back and the back of the head.' },
+  // İş 93: önden (izleyene doğru, patikada aşağı inerken); sırtı dönük duruşun tersi
+  { ek: 'on', grup: 'on', metin: 'The figure is now seen from the FRONT, walking TOWARD the viewer down a road, mid-stride, arms swinging naturally, the same clothes and belongings now seen from the front; the face is small, in soft shadow and only suggested with a few brushstrokes (no detailed features).' },
   { ek: 'eskiz', grup: 'eskiz', metin: 'The figure is standing still, holding a sketchbook open in one hand and drawing in it with a pencil in the other, head bowed over the drawing, absorbed.' },
   { ek: 'yuru-2', grup: 'yuru', ornek: 'yuru-1', metin: `${AYNI}, walking to the LEFT, at the next moment of the walk cycle (passing position): the left leg is straight under the body carrying the weight and the right leg is bent, swinging forward past it, the body slightly higher, arms close to the body.` },
   { ek: 'yuru-3', grup: 'yuru', ornek: 'yuru-1', metin: `${AYNI}, walking to the LEFT, at the opposite step: now the RIGHT leg is forward with the heel touching down and the left leg back, arms swinging the other way.` },

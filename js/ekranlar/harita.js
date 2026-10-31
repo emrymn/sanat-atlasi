@@ -7,7 +7,7 @@
 import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
-import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
+import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
 import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen } from './ortak.js';
 import { sanatciEserleri } from '../eserler.js';
 import { harfUygula, BOLGE_HARFLERI } from '../harfler.js';
@@ -341,14 +341,6 @@ function yuru(kap, yol, h, tur, yolcu, no, bitince) {
     return;
   }
   for (const poz of Object.keys(pozlari(yolcu, son.bolge))) new Image().src = pozAdresi(yolcu, son.bolge, poz, tur);
-  const kare = (adim, yukari) => {
-    const pz = pozlari(yolcu, son.bolge);
-    const dizi = (on) => Object.keys(pz).filter((k) => k.startsWith(on)).sort();
-    const arka = dizi('arka');
-    const yan = dizi('yuru');
-    const l = yukari && arka.length ? arka : yan;
-    return l.length ? l[adim % l.length] : 'dur';
-  };
   const n = son.noktalar;
   const sure = Math.min(YURUYUS_EN_COK, Math.max(YURUYUS_EN_AZ, toplam / HIZ)) * 1000;
   let bas = null;
@@ -361,8 +353,7 @@ function yuru(kap, yol, h, tur, yolcu, no, bitince) {
     const e = u < 0.5 ? 2 * u * u : 1 - (-2 * u + 2) ** 2 / 2;
     const m = toplam * e;
     const q = cizgideNokta(n, m);
-    const yukari = q.dy < 0 && Math.abs(q.dy) > Math.abs(q.dx) * 1.6;
-    const poz = u < 1 ? kare(Math.floor(m / ADIM), yukari) : 'dur';
+    const poz = u < 1 ? yolcuPozu(pozlari(yolcu, son.bolge), q.dx, q.dy, Math.floor(m / ADIM)) : 'dur';
     yolcuKonum(kap, [q.x, q.y], h, pozOlcu(yolcu, son.bolge, poz));
     if (Math.abs(q.dx) > 0.5) kap.classList.toggle('sag', q.dx > 0);
     if (poz !== onceki) {
