@@ -8,6 +8,8 @@
 # o dönemde eski öğrenci (karakter) kalır.
 # İş 91: renkler haritaya biraz yaklaştırılır (Lab ortalama/sapma aktarımı, UYUM oranında): figür resmin içinde
 # boyanmış gibi dursun.
+# İş 94: <ad>-gece.webp, <ad>-on-gece.webp … (poz.mjs --gece; o dönemin gece ışığıyla boyanmış) varsa gece resmi
+# odur, yoksa gündüz karartılır (tonla).
 # Çıktı: gorseller/harita/<önek>_<dönem>_<poz>_<tur>.webp (YOLCU_PT yüksekliğinde, 3 kat; önek: karakter → yolcu,
 # öbürleri kendi adı: aynı adla değişen resim telefonda yenilenmez) ve data/harita_yolcu.json.
 # Kullanım: python3 scripts/harita/yolcu_hazirla.py [--karakter gezgin-a]
@@ -55,6 +57,19 @@ def uyumla(sp, harita_lab):
     return Image.fromarray((out * 255).round().astype('uint8'), 'RGBA')
 
 
+def geceYerlestir(gece, gunduz):
+    """İş 94: boyanmış gece pozu gündüz pozunun kutusuna yerleşir (uygulama ölçüyü gündüzden alır): ayaklar aynı
+    yerde, en çok gündüzün boyu kadar; ışık kaynağı figürü genişletmişse kutuya sığacak kadar küçülür."""
+    gx, _ = ayak(gunduz)
+    nx, _ = ayak(gece)
+    fx_g, fx_n = gx * gunduz.width, nx * gece.width
+    k = min(gunduz.height / gece.height, fx_g / max(fx_n, 1), (gunduz.width - fx_g) / max(gece.width - fx_n, 1))
+    g = gece.resize((max(1, round(gece.width * k)), max(1, round(gece.height * k))), Image.LANCZOS)
+    tuval = Image.new('RGBA', gunduz.size, (0, 0, 0, 0))
+    tuval.paste(g, (round(fx_g - fx_n * k), gunduz.height - g.height), g)
+    return tuval
+
+
 def haritaRengi(d):
     from skimage.color import rgb2lab
     im = Image.open(HEDEF / f'donem_{d}_gunduz.webp').convert('RGB').resize((256, 768))
@@ -81,7 +96,10 @@ def main():
             if renk:
                 sp = uyumla(sp, renk)
             sp.save(HEDEF / f'{onek}_{d}_{poz}_gunduz.webp', quality=92, method=6)
-            tonla(sp, ton).save(HEDEF / f'{onek}_{d}_{poz}_gece.webp', quality=92, method=6)
+            # İş 94: boyanmış gece pozu (poz.mjs --gece; zaten gece paletinde, renk uyumu yok), yoksa karartılmış gündüz
+            gece = f.with_name(f'{f.stem}-gece.webp')
+            gece_sp = geceYerlestir(kucuk(Image.open(gece).convert('RGBA'), YOLCU_PT), sp) if gece.exists() else tonla(sp, ton)
+            gece_sp.save(HEDEF / f'{onek}_{d}_{poz}_gece.webp', quality=92, method=6)
             _, ay = ayak(sp)
             pozlar[poz] = {'w': round(sp.width / OLCEK, 1), 'ay': round(ay, 4)}
         veri['bolgeler'][d] = {'ad': onek, 'pozlar': pozlar}

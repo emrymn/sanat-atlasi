@@ -13,17 +13,25 @@
 //    Kareler birinci adımın üstünden çizilir (aynı kişi, aynı boy). Var olanın üstüne yazılmaz.
 // 4) Sonra: sh gonder.sh "Gezgin pozları" (uygulamaya hazırlamayı Claude yapar: yolcu_hazirla.py --karakter <ad>).
 // Eski öğrenci için de çalışır: node poz.mjs karakter ronesans
+// 5) İş 94 (Emre: "haritadaki karakterler daha belirgin olsun"; seçtiği: gezgin gece kendi ışığını taşısın): gece
+//    pozları. Bugüne kadar gece pozu gündüzün karartılmışıydı (yolcu_hazirla.py tonla); gece haritasında fenerler
+//    yanarken gezgin hiç ışık almıyordu. Var olan her poz (duruş, önden, varsa ötekiler) Nano Banana Pro ile düzenlenir:
+//    aynı kişi, o dönemin gece ışığıyla (GECE_ISIK). Çıktı <ad>-gece.webp, <ad>-on-gece.webp …
+//    node poz.mjs gezgin-a barok,postempresyonizm --gece --calistir   (deneme: 4 resim, ~0,60 $)
+//    node poz.mjs gezgin-a hepsi --gece --calistir
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import sharp from 'sharp';
-import { createGateway, generateImage } from 'ai';
+import { createGateway, generateImage, generateText } from 'ai';
 
 const BURASI = path.dirname(fileURLToPath(import.meta.url));
 const KOK = path.resolve(BURASI, '../..');
 const DONEMLER = ['ortacag', 'ronesans', 'barok', 'barok2', 'aydinlanma', 'romantik', 'empresyonizm', 'postempresyonizm', 'modern'];
 const FIYAT = 0.13; // $ / resim (kaba; gerçeği Vercel panosunda)
+const GECE_FIYAT = 0.15; // Nano Banana Pro düzenlemesi (ciz.mjs ile aynı tahmin)
+const GECE_MODEL = 'google/gemini-3-pro-image';
 const ANA = 'ronesans'; // karakter önce burada seçilir; öbür dönemler bundan
 
 // Üslup: haritanın içinde boyanmış bir figür (Image N: o dönemin haritası)
@@ -90,6 +98,31 @@ const POZLAR = [
   { ek: 'arka-2', grup: 'arka', ornek: 'arka-1', metin: `${AYNI}, seen from behind walking away, but at the next step: now the RIGHT leg is forward and the left leg back.` },
 ];
 
+// 5) Gece (İş 94): her dönemin gezgini o döneme ait bir ışık taşır; gece haritasında en parlak sıcak nokta o olur.
+// Orta Çağ ve Rönesans gecesi serin ay ışığı tonunda (uygulama_hazirla.py SERIN), ötekiler fener tonunda.
+const GECE_ISIK = {
+  ortacag:
+    'Cool silver moonlight from above rims his hood, shoulders and staff, and he now carries a small medieval horn lantern hanging from his staff, its candle glowing warm orange; that small warm light falls on his hand, his cloak and the bundle.',
+  ronesans:
+    'He now holds a small lit bronze oil lamp in one hand, its little flame glowing warm orange; that light falls on his hand, the portfolio, the satchel and the side of his tunic, while cool moonlight touches the top of his cap and shoulders.',
+  barok:
+    'The small lantern he holds up is now lit and is the only strong light: warm candle-orange light falls on his raised hand, the side of his hat brim, his white collar and the front of his cloak, and the rest of him sinks into deep night shadow, like a figure in a Rembrandt night scene.',
+  barok2:
+    'He now holds a brass candlestick with one lit candle; its warm light falls on his hand, his red cuffs, the portfolio and the side of his blue coat, the rest of him in soft night shadow.',
+  aydinlanma:
+    'She now carries a small round paper lantern on a short stick, glowing soft warm pink-gold like the paper lanterns in the night painting; its light falls on her hand, her shawl and the side of her dress.',
+  romantik:
+    "No lamp: a full moon behind him gives a thin bright silver rim of light around his hair, shoulders, coat and stick, like Caspar David Friedrich's moonlit figures; the rest of him is in cool blue night shadow.",
+  empresyonizm:
+    'A small glass oil lantern now hangs from the handle of her paint box, glowing warm yellow like the gas lamps in the night painting; its light falls on her hand, the paint box and the lower part of her light dress, which glows softly against the night.',
+  postempresyonizm:
+    'Like Van Gogh, who painted at night with candles fixed around the brim of his straw hat: four or five small lit candles now stand on the brim of his straw hat; their warm yellow light falls on the hat, his shoulders and the canvas he carries, and the rest of his blue smock is deep night blue.',
+  modern:
+    'He now holds a small metal flashlight pointed at the ground ahead; its cool white light catches his hand, his scarf and the edge of the portfolio, the rest of him in dark blue night shadow.',
+};
+const geceMetni = (d, poz) =>
+  `Image 1 shows a small painted figure on a flat magenta background. Repaint exactly the same figure at night: the same person, clothes, belongings, ${poz === 'dur' ? 'pose' : 'pose and walking direction'}, size and framing, and the same loose brushwork; only the light changes. ${GECE_ISIK[d]} The light source must be clearly visible and be the brightest, warmest point of the figure, so the figure stands out in a dark painting. Use the night palette and brushwork of the night painting in Image 2. The face stays small and only suggested. The light falls ONLY on the figure: the background stays the same flat, solid, pure magenta (#FF00FF) everywhere, with no glow, halo, light spill, cast shadow or ground on it. Full body, nothing cropped, feet visible, no text, no frame.`;
+
 // Saydam değilse: köşelerden başlayıp mor zemini sil, kenardaki mor sızıntıyı temizle (sprite.mjs ile aynı)
 async function saydamYap(veri) {
   const { data, info } = await sharp(veri).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
@@ -142,14 +175,39 @@ function anahtarOku() {
 
 const ornek = async (p) => sharp(p).flatten({ background: '#ffffff' }).resize(512, 512, { fit: 'contain', background: '#ffffff' }).png().toBuffer();
 const sprite = (d, ad) => path.join(BURASI, 'cikti', d, 'sprite', `${ad}.webp`);
-async function haritaParcasi(d) {
+async function haritaParcasi(d, gece = false) {
   const secim = JSON.parse(await readFile(path.join(BURASI, `${d}_secim.json`), 'utf8'));
-  return sharp(path.join(BURASI, secim.resim.replace(/^scripts\/harita\//, ''))).extract({ left: 0, top: 1024, width: 1024, height: 1024 }).jpeg({ quality: 88 }).toBuffer();
+  const dosya = path.join(BURASI, (gece ? secim.resim_gece : secim.resim).replace(/^scripts\/harita\//, ''));
+  // gece resimleri farklı boyda olabilir: önce 1024×3072'ye getirilir (uygulama_hazirla.py gibi), ortası kesilir
+  return sharp(await sharp(dosya).resize(1024, 3072, { fit: 'fill' }).toBuffer()).extract({ left: 0, top: 1024, width: 1024, height: 1024 }).jpeg({ quality: 88 }).toBuffer();
+}
+// Gece düzenlemesi için: saydam poz düz mor zeminde, kare (model zemini korusun, saydamYap yine silebilsin)
+const morZeminde = async (p) =>
+  sharp(p).resize(900, 900, { fit: 'contain', background: '#ff00ff' }).extend({ top: 62, bottom: 62, left: 62, right: 62, background: '#ff00ff' }).flatten({ background: '#ff00ff' }).png().toBuffer();
+
+// İş 94: o dönemde var olan gündüz pozları (gece sürümleri hariç): [{ poz, dosya }]
+function gunduzPozlari(d, karakter) {
+  const klasor = path.join(BURASI, 'cikti', d, 'sprite');
+  const desen = new RegExp(`^${karakter.replace(/[-]/g, '\\-')}(?:-(yuru-\\d+|arka-\\d+|on|eskiz))?\\.webp$`);
+  if (!existsSync(klasor)) return [];
+  return readdirSync(klasor)
+    .map((f) => desen.exec(f))
+    .filter(Boolean)
+    .map((m) => ({ poz: m[1] || 'dur', dosya: path.join(klasor, m[0]) }));
 }
 
-// yapılacak işler: { d, ad, metin, ornekler: [dosya yolu | 'harita'] }
-function plan(karakter, donemler, yalniz) {
+// yapılacak işler: { d, ad, metin, ornekler: [dosya yolu | 'harita'], gece? }
+function plan(karakter, donemler, yalniz, gece) {
   const isler = [];
+  if (gece) {
+    // İş 94: her gündüz pozunun gece sürümü (Image 1: poz mor zeminde, Image 2: o dönemin gece haritası)
+    for (const d of donemler)
+      for (const { poz, dosya } of gunduzPozlari(d, karakter)) {
+        if (yalniz && !yalniz.includes(poz.replace(/-\d+$/, ''))) continue;
+        isler.push({ d, ad: `${path.basename(dosya, '.webp')}-gece`, metin: geceMetni(d, poz), ornekler: [dosya, 'harita'], gece: true });
+      }
+    return isler;
+  }
   if (karakter === 'taslak') {
     for (const t of TASLAKLAR) isler.push({ d: ANA, ad: t.ad, metin: `${t.metin}\n\n${stil(1)}`, ornekler: ['harita'] });
     return isler;
@@ -170,12 +228,16 @@ async function main() {
   const argv = process.argv.slice(2);
   const bayraklar = argv.filter((a) => a.startsWith('--'));
   const [karakter, hedef = ANA] = argv.filter((a) => !a.startsWith('--') && !(argv[argv.indexOf(a) - 1] === '--yalniz'));
-  const donemler = hedef === 'hepsi' ? DONEMLER : DONEMLER.includes(hedef) ? [hedef] : null;
-  if (!karakter || !donemler) throw new Error('Kullanım: node poz.mjs taslak --calistir   |   node poz.mjs <karakter> <dönem|hepsi> [--calistir] [--yalniz yuru,arka,eskiz]');
+  // dönem, virgülle birkaç dönem ya da hepsi
+  const secilen = hedef === 'hepsi' ? DONEMLER : hedef.split(',');
+  const donemler = secilen.every((d) => DONEMLER.includes(d)) ? secilen : null;
+  if (!karakter || !donemler)
+    throw new Error('Kullanım: node poz.mjs taslak --calistir   |   node poz.mjs <karakter> <dönem[,dönem…]|hepsi> [--gece] [--calistir] [--yalniz yuru,arka,eskiz]');
   const yalniz = bayraklar.includes('--yalniz') ? argv[argv.indexOf('--yalniz') + 1].split(',') : null;
+  const gece = bayraklar.includes('--gece');
   if (karakter !== 'taslak' && !existsSync(sprite(ANA, karakter))) throw new Error(`Önce Rönesans'ta ${karakter}.webp gerekir (node poz.mjs taslak --calistir)`);
-  const isler = plan(karakter, donemler, yalniz).filter((i) => !existsSync(sprite(i.d, i.ad)));
-  console.log(`${isler.length} resim, tahmini ~${(isler.length * FIYAT).toFixed(2)} $ (var olanlar atlanır)`);
+  const isler = plan(karakter, donemler, yalniz, gece).filter((i) => !existsSync(sprite(i.d, i.ad)));
+  console.log(`${isler.length} resim, tahmini ~${(isler.length * (gece ? GECE_FIYAT : FIYAT)).toFixed(2)} $ (var olanlar atlanır)`);
   for (const i of isler) console.log(`  ${i.d.padEnd(17)} ${i.ad}`);
   if (!bayraklar.includes('--calistir')) {
     console.log(`\nPlan bu. Çizmek için: node poz.mjs ${argv.join(' ')} --calistir`);
@@ -190,22 +252,42 @@ async function main() {
       console.log(`${i.d} ${i.ad}: önce ${path.basename(eksik)} gerekir, atlandı`);
       continue;
     }
-    if (!haritalar.has(i.d)) haritalar.set(i.d, await haritaParcasi(i.d));
+    const hk = `${i.d}${i.gece ? '-gece' : ''}`;
+    if (!haritalar.has(hk)) haritalar.set(hk, await haritaParcasi(i.d, i.gece));
     process.stdout.write(`${i.d} ${i.ad} … `);
     try {
-      const resimler = await Promise.all(i.ornekler.map((o) => (o === 'harita' ? haritalar.get(i.d) : ornek(o))));
-      const sonuc = await generateImage({
-        model: gateway.image('openai/gpt-image-2'),
-        prompt: { text: `${i.metin}\n\n${ZEMIN}`, images: resimler },
-        size: '1024x1024',
-        providerOptions: { openai: { quality: 'high' } },
-      });
-      const png = await saydamYap(Buffer.from(sonuc.image.uint8Array));
+      let ham;
+      let maliyet;
+      if (i.gece) {
+        // İş 94: Nano Banana Pro düzenlemesi (gece haritaları gibi: var olan resmi yer kaydırmadan yeniden boyar)
+        const resimler = await Promise.all(i.ornekler.map((o) => (o === 'harita' ? haritalar.get(hk) : morZeminde(o))));
+        const sonuc = await generateText({
+          model: gateway(GECE_MODEL),
+          messages: [{ role: 'user', content: [{ type: 'text', text: i.metin }, ...resimler.map((r) => ({ type: 'file', data: r, mediaType: 'image/png' }))] }],
+          providerOptions: { google: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio: '1:1', imageSize: '1K' } } },
+        });
+        const dosya = sonuc.files.find((f) => f.mediaType.startsWith('image/'));
+        if (!dosya) throw new Error(`görsel dönmedi; metin: ${sonuc.text.slice(0, 200)}`);
+        ham = Buffer.from(dosya.uint8Array);
+        maliyet = sonuc.providerMetadata?.gateway?.cost;
+      } else {
+        const resimler = await Promise.all(i.ornekler.map((o) => (o === 'harita' ? haritalar.get(hk) : ornek(o))));
+        const sonuc = await generateImage({
+          model: gateway.image('openai/gpt-image-2'),
+          prompt: { text: `${i.metin}\n\n${ZEMIN}`, images: resimler },
+          size: '1024x1024',
+          providerOptions: { openai: { quality: 'high' } },
+        });
+        ham = Buffer.from(sonuc.image.uint8Array);
+        maliyet = sonuc.providerMetadata?.gateway?.cost;
+      }
+      // Nano Banana saydamlık döndürmez: mor zemin her durumda silinir (saydamYap yalnız tamamen opaksa siler)
+      const png = await saydamYap(i.gece ? await sharp(ham).removeAlpha().png().toBuffer() : ham);
       const kirpik = await sharp(png).trim().toBuffer();
       await mkdir(path.dirname(sprite(i.d, i.ad)), { recursive: true });
       await writeFile(sprite(i.d, i.ad), await sharp(kirpik).webp({ quality: 92, alphaQuality: 100 }).toBuffer());
       const m = await sharp(kirpik).metadata();
-      console.log(`tamam (${m.width}×${m.height}, ${sonuc.providerMetadata?.gateway?.cost ?? '?'} $)`);
+      console.log(`tamam (${m.width}×${m.height}, ${maliyet ?? '?'} $)`);
     } catch (e) {
       // kimlik hatasında altta yatan sebep (anahtarı içermez) de yazılır
       const neden = e && e.cause && e.cause.message ? ` (sebep: ${e.cause.message})` : '';
@@ -213,7 +295,7 @@ async function main() {
       if (/authentication/i.test(String(e && e.message))) return;
     }
   }
-  console.log(`\nSonra: sh gonder.sh "${karakter === 'taslak' ? 'Gezgin taslakları' : 'Gezgin pozları'}"`);
+  console.log(`\nSonra: sh gonder.sh "${karakter === 'taslak' ? 'Gezgin taslakları' : gece ? 'Gezgin gece pozları' : 'Gezgin pozları'}"`);
 }
 
 main().catch((e) => {
