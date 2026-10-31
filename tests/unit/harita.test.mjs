@@ -273,6 +273,9 @@ test('İş 90/92: yolcuYolu — dönem içinde patikayı izler (ileri ve geri), 
   const g = yolcuYolu(h, patikalar, ron[2].x.id, ron[0].x.id);
   assert.equal(g.parcalar.length, 1);
   assert.deepEqual(g.parcalar[0].noktalar, [...n].reverse());
+  // İş 96: yön (geri: önceki durağa dönüş)
+  assert.equal(y.geri, false);
+  assert.equal(g.geri, true);
   // Orta Çağ'ın son durağından Rönesans'ın ikincisine: Orta Çağ'da söner, Rönesans'ın ilk durağından yürür
   const ort = sira.filter((s) => s.b.id === 'ortacag');
   const t = yolcuYolu(h, patikalar, ort.at(-1).x.id, ron[1].x.id);
@@ -300,6 +303,10 @@ test('İş 90: çizgide nokta ve uzunluk', () => {
 
 test('İş 90: haritaYolcu yedekten doğrulanır', () => {
   assert.equal(ilerlemeDogrula({ islenen: [], haritaYolcu: 'r-1' }).haritaYolcu, 'r-1');
+  // İş 96: önden duruş
+  assert.equal(ilerlemeDogrula({ islenen: [], haritaYolcuOn: true }).haritaYolcuOn, true);
+  assert.equal(ilerlemeDogrula({ islenen: [] }).haritaYolcuOn, false);
+  assert.equal(ilerlemeDogrula({ islenen: [], haritaYolcuOn: 'evet' }).haritaYolcuOn, false);
   assert.equal(ilerlemeDogrula({ islenen: [], haritaYolcu: 5 }).haritaYolcu, null);
 });
 
@@ -314,4 +321,11 @@ test('İş 93: yürürken poz — aşağı inerken önden, yukarı çıkarken ar
   assert.equal(yolcuPozu(tam, 5, 0, 3), 'yuru2');
   assert.equal(yolcuPozu(tam, 0, -5, 2), 'arka1');
   assert.equal(yolcuPozu(tam, 0, 5, 2), 'on');
+  // İş 96: önceki durağa dönüşte yana giderken de önden; yalnız açıkça yukarı çıkarken arkadan
+  assert.equal(yolcuPozu(onlu, 5, 1, 3, true), 'on');
+  assert.equal(yolcuPozu(onlu, 5, -1, 3, true), 'on');
+  assert.equal(yolcuPozu(onlu, 0, -5, 3, true), 'dur');
+  assert.equal(yolcuPozu(tam, 5, 0, 3, true), 'on');
+  assert.equal(yolcuPozu(tam, 0, -5, 2, true), 'arka1');
+  assert.equal(yolcuPozu(tek, 5, 0, 3, true), 'dur'); // önden pozu olmayan karakter
 });
