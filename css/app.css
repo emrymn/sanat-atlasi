@@ -7556,6 +7556,31 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   transform-origin: 50% 100%;
   filter: drop-shadow(0 0 0.6px rgba(24, 14, 6, 0.85)) drop-shadow(0 1px 2px rgba(24, 14, 6, 0.35));
 }
+/* İş 95: dönemin işareti gezginin başında (resmi yapay zekâ çizdi, hareketi burada) */
+.harita-yolcu-isaret {
+  position: absolute;
+  left: 50%;
+  height: auto;
+  pointer-events: none;
+  translate: -50% -50%;
+  filter: drop-shadow(0 1px 1.5px rgba(24, 14, 6, 0.45));
+}
+.harita-yolcu-isaret[data-yer='bas'] {
+  top: 9%;
+  z-index: -1;
+}
+.harita-yolcu-isaret[data-yer='tepe'] {
+  top: 1%;
+}
+.harita-yolcu-isaret[data-yer='ust'] {
+  top: -16%;
+}
+.harita-yolcu-isaret[data-oyun='ay'] {
+  filter: drop-shadow(0 0 5px rgba(255, 244, 210, 0.95)) drop-shadow(0 0 12px rgba(255, 240, 200, 0.6));
+}
+.harita-yolcu-kap.soner .harita-yolcu-isaret {
+  opacity: 0;
+}
 .harita-yolcu-kap.sag .harita-yolcu {
   scale: -1 1;
 }
@@ -7628,6 +7653,24 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   background: radial-gradient(closest-side, rgba(255, 236, 180, 0.35), rgba(255, 236, 180, 0));
 }
 @media (prefers-reduced-motion: no-preference) {
+  .harita-yolcu-isaret[data-oyun='parla'] {
+    animation: isaret-parla 3.6s ease-in-out infinite;
+  }
+  .harita-yolcu-isaret[data-oyun='kanat'] {
+    animation: isaret-kanat 2.4s ease-in-out infinite;
+  }
+  .harita-yolcu-isaret[data-oyun='dalga'] {
+    animation: isaret-dalga 3s ease-in-out infinite;
+  }
+  .harita-yolcu-isaret:is([data-oyun='ay'], [data-oyun='suz']) {
+    animation: isaret-suz 4s ease-in-out infinite;
+  }
+  .harita-yolcu-isaret[data-oyun='don'] {
+    animation: isaret-don 14s linear infinite;
+  }
+  .harita-yolcu-isaret[data-oyun='don-yavas'] {
+    animation: isaret-don 30s linear infinite;
+  }
   .harita-isik {
     animation: harita-yanson 2.8s ease-in-out infinite;
   }
@@ -7672,6 +7715,47 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   }
   50% {
     opacity: 0.95;
+  }
+}
+@keyframes isaret-parla {
+  0%,
+  100% {
+    filter: drop-shadow(0 1px 1.5px rgba(24, 14, 6, 0.45)) brightness(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(255, 220, 140, 0.95)) brightness(1.15);
+  }
+}
+@keyframes isaret-kanat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(3deg);
+  }
+}
+@keyframes isaret-dalga {
+  0%,
+  100% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+}
+@keyframes isaret-suz {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+@keyframes isaret-don {
+  to {
+    transform: rotate(360deg);
   }
 }
 @keyframes harita-yolcu-ok {

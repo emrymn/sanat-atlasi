@@ -3,7 +3,7 @@
 # İş 91'in gezgini: gezgin-a …):
 #   <ad>.webp (duruş), <ad>-yuru-1..N.webp (yana yürüme adımları, sola bakar),
 #   <ad>-arka-1..N.webp (arkadan, yolda uzaklaşırken), <ad>-on.webp (önden, yolda aşağı inerken; İş 93),
-#   <ad>-eskiz.webp (durakta eskiz yaparken).
+#   <ad>-eskiz.webp (durakta eskiz yaparken). İş 95: isaret.webp (dönemin işareti; gezginin başında, uygulama oynatır).
 # Yalnız duruş zorunlu; öbürleri varsa eklenir, yoksa uygulama duruşu sallayarak yürütür. Bir dönemde <ad> yoksa
 # o dönemde eski öğrenci (karakter) kalır.
 # İş 91: renkler haritaya biraz yaklaştırılır (Lab ortalama/sapma aktarımı, UYUM oranında): figür resmin içinde
@@ -26,6 +26,9 @@ KOK = BURASI.parents[1]
 HEDEF = KOK / 'gorseller' / 'harita'
 YOLCU_PT = 80  # ekrandaki yükseklik (eskisi 72)
 UYUM = 0.3  # renklerin haritaya yaklaşma oranı (0: hiç, 1: haritanın renk dağılımı)
+# İş 95: dönemin işaretinin ekrandaki genişliği (pt; cikti/<dönem>/sprite/isaret.webp, poz.mjs isaret)
+ISARET_EN = {'ortacag': 22, 'ronesans': 26, 'barok': 30, 'barok2': 26, 'aydinlanma': 28, 'romantik': 18, 'empresyonizm': 22,
+             'postempresyonizm': 28, 'modern': 22}
 
 
 def pozAdi(ad, dosya):
@@ -85,6 +88,15 @@ def main():
             _, ay = ayak(sp)
             pozlar[poz] = {'w': round(sp.width / OLCEK, 1), 'ay': round(ay, 4)}
         veri['bolgeler'][d] = {'ad': onek, 'pozlar': pozlar}
+        isaret = klasor / 'isaret.webp'
+        if isaret.exists():
+            sp = Image.open(isaret).convert('RGBA')
+            sp = sp.crop(sp.getchannel('A').getbbox())
+            w = ISARET_EN[d] * OLCEK
+            sp = sp.resize((w, max(1, round(sp.height * w / sp.width))), Image.LANCZOS)
+            sp.save(HEDEF / f'isaret_{d}_gunduz.webp', quality=92, method=6)
+            tonla(sp, ton).save(HEDEF / f'isaret_{d}_gece.webp', quality=92, method=6)
+            veri['bolgeler'][d]['isaret'] = {'w': ISARET_EN[d], 'h': round(sp.height / OLCEK, 1)}
         print(d, onek, ', '.join(pozlar))
     (KOK / 'data' / 'harita_yolcu.json').write_text(json.dumps(veri, ensure_ascii=False, separators=(',', ':')) + '\n')
 

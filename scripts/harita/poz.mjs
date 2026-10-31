@@ -11,7 +11,7 @@
 //    <ad>-yuru-1..4 (yandan, sola yürür: 4 karelik adım), <ad>-arka-1..2 (arkadan, uzaklaşır), <ad>-on (önden, yaklaşır),
 //    <ad>-eskiz (çizer). Yalnız önden pozlar (İş 93): node poz.mjs gezgin-a hepsi --yalniz on --calistir
 //    Kareler birinci adımın üstünden çizilir (aynı kişi, aynı boy). Var olanın üstüne yazılmaz.
-// 4) Sonra: sh gonder.sh "Gezgin pozları" (uygulamaya hazırlamayı Claude yapar: yolcu_hazirla.py --karakter <ad>).
+// 5) Sonra: sh gonder.sh "Gezgin pozları" (uygulamaya hazırlamayı Claude yapar: yolcu_hazirla.py --karakter <ad>).
 // Eski öğrenci için de çalışır: node poz.mjs karakter ronesans
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync, readFileSync } from 'node:fs';
@@ -75,6 +75,23 @@ const KARAKTERLER = {
 };
 const donemTaban = (d) =>
   `A different person from the one in Image 1, but shown, framed, sized and painted the same way (seen from behind and a little to the side, the face hidden or barely suggested, standing calmly): ${KARAKTERLER[d]}. ${stil(2)}`;
+
+// 4) İş 95 (Emre: "API'ye çizdirsek sonra animasyonla karaktere ekleyemez miyiz"): her dönemin işareti, gezginin
+// başında duran küçük bir nesne, o dönemin haritasının üslubunda. Uygulama gezginin başına koyup kodla oynatır (parıldar,
+// süzülür, döner). node poz.mjs isaret hepsi --calistir → cikti/<dönem>/sprite/isaret.webp
+const ISARETLER = {
+  ortacag: 'a round gilded halo disc as in Giotto and Simone Martini: burnished gold leaf with a ring of small punched dots near the edge and fine incised rays, seen from the front, flat',
+  ronesans: 'a delicate thin golden halo ring seen in perspective as a narrow ellipse, as painted by Piero della Francesca and Mantegna, a fine gold line with a faint inner shine',
+  barok: 'a small chubby Baroque putto (cherub) with little wings, flying, seen from the side, as painted by Rubens and Caravaggio, warm flesh tones, a wisp of golden drapery',
+  barok2: 'a classical laurel wreath of dark green leaves bound with a thin gold ribbon, as in Poussin and the French Academy, seen slightly from above',
+  aydinlanma: 'a pink silk ribbon bow with long fluttering ends, as in Fragonard and Boucher, soft pastel pink with pearly highlights',
+  romantik: 'a thin crescent moon, pale ivory, as in Caspar David Friedrich, crisp edges, no glow',
+  empresyonizm: 'a small summer sun made of short broken dabs of yellow, orange and cream paint, as in Monet, round',
+  postempresyonizm: "a swirling star with concentric rings of thick yellow and white brushstrokes, as in Van Gogh's Starry Night",
+  modern: "a bright blue paper cut-out star with irregular hand-cut edges, as in Matisse's cut-outs, flat gouache colour",
+};
+const isaretMetni = (d) =>
+  `A small painted object that will float above a traveller on the map: ${ISARETLER[d]}. Painted in exactly the same style, brushwork and palette as the painting in Image 1, crisp clean edges so it can be cut out, no glow, no haze, no soft light around it. Centred, filling about 80% of the image. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object. No text, no frame.`;
 
 // 3) Pozlar (Image 1: o dönemin karakteri ya da birinci adım; Image 2: o dönemin haritası)
 const AYNI = 'The same figure as in Image 1, exactly the same person, clothes, belongings, size, framing and painting style';
@@ -150,6 +167,10 @@ async function haritaParcasi(d) {
 // yapılacak işler: { d, ad, metin, ornekler: [dosya yolu | 'harita'] }
 function plan(karakter, donemler, yalniz) {
   const isler = [];
+  if (karakter === 'isaret') {
+    for (const d of donemler) isler.push({ d, ad: 'isaret', metin: isaretMetni(d), ornekler: ['harita'] });
+    return isler;
+  }
   if (karakter === 'taslak') {
     for (const t of TASLAKLAR) isler.push({ d: ANA, ad: t.ad, metin: `${t.metin}\n\n${stil(1)}`, ornekler: ['harita'] });
     return isler;
@@ -171,9 +192,9 @@ async function main() {
   const bayraklar = argv.filter((a) => a.startsWith('--'));
   const [karakter, hedef = ANA] = argv.filter((a) => !a.startsWith('--') && !(argv[argv.indexOf(a) - 1] === '--yalniz'));
   const donemler = hedef === 'hepsi' ? DONEMLER : DONEMLER.includes(hedef) ? [hedef] : null;
-  if (!karakter || !donemler) throw new Error('Kullanım: node poz.mjs taslak --calistir   |   node poz.mjs <karakter> <dönem|hepsi> [--calistir] [--yalniz yuru,arka,eskiz]');
+  if (!karakter || !donemler) throw new Error('Kullanım: node poz.mjs taslak --calistir   |   node poz.mjs isaret hepsi --calistir   |   node poz.mjs <karakter> <dönem|hepsi> [--calistir] [--yalniz yuru,arka,eskiz]');
   const yalniz = bayraklar.includes('--yalniz') ? argv[argv.indexOf('--yalniz') + 1].split(',') : null;
-  if (karakter !== 'taslak' && !existsSync(sprite(ANA, karakter))) throw new Error(`Önce Rönesans'ta ${karakter}.webp gerekir (node poz.mjs taslak --calistir)`);
+  if (karakter !== 'taslak' && karakter !== 'isaret' && !existsSync(sprite(ANA, karakter))) throw new Error(`Önce Rönesans'ta ${karakter}.webp gerekir (node poz.mjs taslak --calistir)`);
   const isler = plan(karakter, donemler, yalniz).filter((i) => !existsSync(sprite(i.d, i.ad)));
   console.log(`${isler.length} resim, tahmini ~${(isler.length * FIYAT).toFixed(2)} $ (var olanlar atlanır)`);
   for (const i of isler) console.log(`  ${i.d.padEnd(17)} ${i.ad}`);
@@ -213,7 +234,7 @@ async function main() {
       if (/authentication/i.test(String(e && e.message))) return;
     }
   }
-  console.log(`\nSonra: sh gonder.sh "${karakter === 'taslak' ? 'Gezgin taslakları' : 'Gezgin pozları'}"`);
+  console.log(`\nSonra: sh gonder.sh "${karakter === 'taslak' ? 'Gezgin taslakları' : karakter === 'isaret' ? 'Gezgin işaretleri' : 'Gezgin pozları'}"`);
 }
 
 main().catch((e) => {

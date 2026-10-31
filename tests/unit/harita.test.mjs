@@ -247,6 +247,9 @@ test('İş 90: her dönemde durak sayısı kadar yer, aralarında patika; pozlar
     for (const poz of Object.keys(yolcuVeri.bolgeler[b.id].pozlar))
       for (const tur of ['gunduz', 'gece']) assert.ok(existsSync(new URL(`../../${yolcuAdresi(b.id, poz, tur, yolcuVeri.bolgeler[b.id].ad)}`, import.meta.url)), `${b.id} ${poz}`);
     assert.ok(yolcuVeri.bolgeler[b.id].pozlar.dur, b.id);
+    // İş 95: dönemin işareti varsa resmi de var
+    if (yolcuVeri.bolgeler[b.id].isaret)
+      for (const tur of ['gunduz', 'gece']) assert.ok(existsSync(new URL(`../../gorseller/harita/isaret_${b.id}_${tur}.webp`, import.meta.url)), `${b.id} işaret`);
   }
 });
 

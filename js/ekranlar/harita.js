@@ -248,10 +248,41 @@ const pozOlcu = (yolcu, bolge, poz) => pozlari(yolcu, bolge)[poz] || pozlari(yol
 // İş 94 (Emre: "geriye dönüp durduğunda yüzü bana baksın"): durakta duruş; geri gelişten sonra önden (pozu varsa)
 const durusPozu = (yolcu, bolge, yuz) => (yuz === 'on' && pozlari(yolcu, bolge).on ? 'on' : 'dur');
 // öğrencinin kutusu: ayağı (px, py) noktasında, gövdesinin ortası x'te
+// İş 95: dönemin işareti (data/harita_yolcu.json bolgeler[dönem].isaret; gezginin başında, CSS ile oynar). yer: bas
+// (başın arkasında hale), tepe (başın üstünde), ust (başının üstünde süzülür); oyun: CSS hareketi
+const ISARET = {
+  ortacag: { yer: 'bas', oyun: 'parla' },
+  ronesans: { yer: 'tepe', oyun: 'parla' },
+  barok: { yer: 'ust', oyun: 'kanat' },
+  barok2: { yer: 'tepe', oyun: 'parla' },
+  aydinlanma: { yer: 'ust', oyun: 'dalga' },
+  romantik: { yer: 'ust', oyun: 'ay' },
+  empresyonizm: { yer: 'ust', oyun: 'don-yavas' },
+  postempresyonizm: { yer: 'ust', oyun: 'don' },
+  modern: { yer: 'ust', oyun: 'suz' },
+};
+const isaretOlcu = (yolcu, bolge) => yolcu && yolcu.bolgeler && yolcu.bolgeler[bolge] && yolcu.bolgeler[bolge].isaret;
+function isaretHtml(yolcu, bolge, tur) {
+  const o = isaretOlcu(yolcu, bolge);
+  if (!o) return '';
+  const c = ISARET[bolge] || { yer: 'ust', oyun: 'suz' };
+  return `<img class="harita-yolcu-isaret" data-yer="${c.yer}" data-oyun="${c.oyun}" data-w="${o.w}" alt="" decoding="async" src="gorseller/harita/isaret_${bolge}_${tur}.webp">`;
+}
+// dönem değişince işaret de değişir (yoksa kalkar)
+function isaretGuncelle(kap, yolcu, bolge, tur) {
+  const eski = kap.querySelector('.harita-yolcu-isaret');
+  const yeni = isaretHtml(yolcu, bolge, tur);
+  if (eski && eski.src.endsWith(`isaret_${bolge}_${tur}.webp`)) return;
+  if (eski) eski.remove();
+  if (yeni) kap.insertAdjacentHTML('beforeend', yeni);
+}
 function yolcuKonum(kap, [px, py], h, o) {
   kap.style.left = `${(((px - o.w / 2) / W) * 100).toFixed(3)}%`;
   kap.style.top = `${(((py - YOLCU_H * o.ay) / (h * H)) * 100).toFixed(3)}%`;
   kap.style.width = `${((o.w / W) * 100).toFixed(3)}%`;
+  // işaretin boyu poza göre değişen kutuya oranla
+  const is = kap.querySelector('.harita-yolcu-isaret');
+  if (is) is.style.width = `${((Number(is.dataset.w) / o.w) * 100).toFixed(2)}%`;
 }
 // sag: sağa bakar (resimler sola bakar; durakta sembole döner)
 function yolcuHtml({ bolge, nokta, id }, tur, h, yolcu, sag, yuz) {
@@ -261,6 +292,7 @@ function yolcuHtml({ bolge, nokta, id }, tur, h, yolcu, sag, yuz) {
   const stil = `left:${(((px - o.w / 2) / W) * 100).toFixed(3)}%;top:${(((py - YOLCU_H * o.ay) / (h * H)) * 100).toFixed(3)}%;width:${((o.w / W) * 100).toFixed(3)}%`;
   return `<div class="harita-yolcu-kap${sag ? ' sag' : ''}" data-yolcu data-bolge="${bolge}" data-durak="${kacis(id)}" data-yuz="${yuz === 'on' ? 'on' : ''}" aria-hidden="true" style="${stil}">
       <span class="harita-yolcu-golge"></span><img class="harita-yolcu" data-test="harita-yolcu" alt="" decoding="async" src="${pozAdresi(yolcu, bolge, poz, tur)}">
+      ${isaretHtml(yolcu, bolge, tur).replace('<img ', `<img style="width:${(((isaretOlcu(yolcu, bolge) || {}).w || 0) / o.w * 100).toFixed(2)}%" `)}
     </div>`;
 }
 
@@ -273,6 +305,7 @@ function yolcuYerlestir(kap, id) {
   kap.closest('[data-test="harita"]')?.classList.remove('yuruyor');
   kap.dataset.durak = id;
   kap.dataset.bolge = o.b.id;
+  isaretGuncelle(kap, hd.yv.yolcu, o.b.id, hd.tur);
   const poz = durusPozu(hd.yv.yolcu, o.b.id, d.ilerleme.haritaYolcuYuz);
   kap.querySelector('img').src = pozAdresi(hd.yv.yolcu, o.b.id, poz, hd.tur);
   yolcuKonum(kap, yolcuNoktasi(o), hd.h, pozOlcu(hd.yv.yolcu, o.b.id, poz));
@@ -337,6 +370,7 @@ function yuru(kap, yol, h, tur, yolcu, no, bitince) {
     setTimeout(() => {
       if (!gecerli()) return;
       kap.dataset.bolge = son.bolge;
+      isaretGuncelle(kap, yolcu, son.bolge, tur);
       const sonP = durusPozu(yolcu, son.bolge, yuz);
       img.src = pozAdresi(yolcu, son.bolge, sonP, tur);
       yolcuKonum(kap, son.noktalar[son.noktalar.length - 1], h, pozOlcu(yolcu, son.bolge, sonP));
