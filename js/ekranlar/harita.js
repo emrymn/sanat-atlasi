@@ -253,11 +253,13 @@ function yolcuKonum(kap, [px, py], h, o) {
 }
 // sag: sağa bakar (resimler sola bakar; durakta sembole döner)
 function yolcuHtml({ bolge, nokta, id }, tur, h, yolcu, sag) {
-  const o = pozOlcu(yolcu, bolge, 'dur');
+  // İş 96: önceki durağa dönüp orada duruyorsa (bu oturumda) yüzü ekrana dönük kalır
+  const poz = d.haritaYolcuYuz === id && pozlari(yolcu, bolge).on ? 'on' : 'dur';
+  const o = pozOlcu(yolcu, bolge, poz);
   const [px, py] = nokta;
   const stil = `left:${(((px - o.w / 2) / W) * 100).toFixed(3)}%;top:${(((py - YOLCU_H * o.ay) / (h * H)) * 100).toFixed(3)}%;width:${((o.w / W) * 100).toFixed(3)}%`;
   return `<div class="harita-yolcu-kap${sag ? ' sag' : ''}" data-yolcu data-bolge="${bolge}" data-durak="${kacis(id)}" aria-hidden="true" style="${stil}">
-      <span class="harita-yolcu-golge"></span><img class="harita-yolcu" data-test="harita-yolcu" alt="" decoding="async" src="${pozAdresi(yolcu, bolge, 'dur', tur)}">
+      <span class="harita-yolcu-golge"></span><img class="harita-yolcu" data-test="harita-yolcu" alt="" decoding="async" src="${pozAdresi(yolcu, bolge, poz, tur)}">
     </div>`;
 }
 
@@ -271,6 +273,7 @@ function yolcuYerlestir(kap, id) {
   kap.dataset.durak = id;
   kap.dataset.bolge = o.b.id;
   kap.querySelector('img').src = pozAdresi(hd.yv.yolcu, o.b.id, 'dur', hd.tur);
+  d.haritaYolcuYuz = null;
   yolcuKonum(kap, yolcuNoktasi(o), hd.h, pozOlcu(hd.yv.yolcu, o.b.id, 'dur'));
   kap.classList.toggle('sag', o.x.x > 0.5);
   d.ilerleme.haritaYolcu = id;
@@ -308,7 +311,8 @@ function yuru(kap, yol, h, tur, yolcu, no, bitince) {
   const bitir = (bolge) => {
     img.style.translate = '';
     img.style.rotate = '';
-    img.src = pozAdresi(yolcu, bolge, 'dur', tur);
+    img.src = pozAdresi(yolcu, bolge, durus, tur);
+    d.haritaYolcuYuz = durus === 'on' ? kap.dataset.durak : null;
     // durakta sembole döner
     const durak = kart.querySelector(`.harita-durak[data-bolum="${CSS.escape(kap.dataset.durak || '')}"]`);
     if (durak) {
@@ -320,6 +324,8 @@ function yuru(kap, yol, h, tur, yolcu, no, bitince) {
     if (bitince) bitince();
   };
   const son = yol.parcalar[yol.parcalar.length - 1];
+  // İş 96 (Emre: "geri döndü ya, orada yüzü ekrana baksın, varınca ters dönmesin"): önceki durağa dönüşte vardığında da önden
+  const durus = yol.geri && pozlari(yolcu, son.bolge).on ? 'on' : 'dur';
   const toplam = yol.parcalar.reduce((t, p) => t + cizgiUzunlugu(p.noktalar), 0);
   // dönem değişiyorsa ya da yol uzunsa: söner, harita durağa kayar, orada belirir
   if (yol.parcalar.length > 1 || toplam > UZUN) {
@@ -327,8 +333,8 @@ function yuru(kap, yol, h, tur, yolcu, no, bitince) {
     setTimeout(() => {
       if (!gecerli()) return;
       kap.dataset.bolge = son.bolge;
-      img.src = pozAdresi(yolcu, son.bolge, 'dur', tur);
-      yolcuKonum(kap, son.noktalar[son.noktalar.length - 1], h, pozOlcu(yolcu, son.bolge, 'dur'));
+      img.src = pozAdresi(yolcu, son.bolge, durus, tur);
+      yolcuKonum(kap, son.noktalar[son.noktalar.length - 1], h, pozOlcu(yolcu, son.bolge, durus));
       const r = kap.getBoundingClientRect();
       const orta = (r.top + r.bottom) / 2;
       if (orta < window.innerHeight * 0.18 || orta > window.innerHeight * 0.82) window.scrollTo({ top: Math.max(0, r.bottom + window.scrollY - window.innerHeight * 0.6), behavior: 'smooth' });
@@ -353,9 +359,10 @@ function yuru(kap, yol, h, tur, yolcu, no, bitince) {
     const e = u < 0.5 ? 2 * u * u : 1 - (-2 * u + 2) ** 2 / 2;
     const m = toplam * e;
     const q = cizgideNokta(n, m);
-    const poz = u < 1 ? yolcuPozu(pozlari(yolcu, son.bolge), q.dx, q.dy, Math.floor(m / ADIM)) : 'dur';
+    const poz = u < 1 ? yolcuPozu(pozlari(yolcu, son.bolge), q.dx, q.dy, Math.floor(m / ADIM), yol.geri) : durus;
     yolcuKonum(kap, [q.x, q.y], h, pozOlcu(yolcu, son.bolge, poz));
-    if (Math.abs(q.dx) > 0.5) kap.classList.toggle('sag', q.dx > 0);
+    // İş 96: yalnız yatay hareket belirginse çevrilir (aşağı inerken patikanın küçük kıvrımlarında sağa sola titremesin)
+    if (Math.abs(q.dx) > 0.5 && Math.abs(q.dx) > Math.abs(q.dy) * 0.35) kap.classList.toggle('sag', q.dx > 0);
     if (poz !== onceki) {
       img.src = pozAdresi(yolcu, son.bolge, poz, tur);
       onceki = poz;

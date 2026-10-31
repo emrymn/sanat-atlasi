@@ -103,18 +103,22 @@ export function yolcuYolu(harita, patikalar, eskiId, yeniId, enCok = 4) {
   const hedef = yer(sira[i1]);
   const sonNokta = parcalar.length ? parcalar[parcalar.length - 1].noktalar.at(-1) : null;
   if (!sonNokta || sonNokta[0] !== hedef[0] || sonNokta[1] !== hedef[1]) parcalar.push({ bolge: sira[i1].b.id, noktalar: [hedef] });
-  return { parcalar };
+  // İş 96: geri = önceki durağa dönüş (gezgin izleyene doğru yürür; yolcuPozu önden pozu seçer)
+  return { parcalar, geri: adim < 0 };
 }
 
 // İş 93 (Emre: "geri geri gidiş tuhaf duruyor, tersini çizip ekleyelim"): yürürken gidiş yönüne göre poz. Gezginler
 // sırtı dönük çizildi (dur); patikada aşağı (önceki duraklara, izleyene doğru) inerken önden pozu (on) varsa o. Yürüme
 // kareleri (yuru1.., arka1..) varsa adım adım; yoksa yöne göre tek resim. pozlar: { dur, on?, yuru1?, arka1?, ... }
-export function yolcuPozu(pozlar, dx, dy, adim) {
+// İş 96 (Emre: "geriye döndüğünde geri geri yürüyor"): önden poz yalnız açıkça aşağı inen kısımlarda seçildiğinden
+// önceki durağa dönüşün çoğu (yana kıvrılan patika) sırtı dönüktü. geri (önceki durağa dönüş) ise yalnız açıkça yukarı
+// çıkan kısım dışında hep önden.
+export function yolcuPozu(pozlar, dx, dy, adim, geri = false) {
   const adlar = Object.keys(pozlar || {});
   const dizi = (on) => adlar.filter((k) => new RegExp(`^${on}\\d+$`).test(k)).sort();
   const asagi = dy > 0 && dy > Math.abs(dx) * 0.6;
   const yukari = dy < 0 && -dy > Math.abs(dx) * 1.6;
-  if (asagi && adlar.includes('on')) return 'on';
+  if ((asagi || (geri && !yukari)) && adlar.includes('on')) return 'on';
   const l = yukari && dizi('arka').length ? dizi('arka') : dizi('yuru');
   return l.length ? l[adim % l.length] : 'dur';
 }
