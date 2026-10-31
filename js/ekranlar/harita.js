@@ -253,8 +253,8 @@ function yolcuKonum(kap, [px, py], h, o) {
 }
 // sag: sağa bakar (resimler sola bakar; durakta sembole döner)
 function yolcuHtml({ bolge, nokta, id }, tur, h, yolcu, sag) {
-  // İş 96: önceki durağa dönüp orada duruyorsa (bu oturumda) yüzü ekrana dönük kalır
-  const poz = d.haritaYolcuYuz === id && pozlari(yolcu, bolge).on ? 'on' : 'dur';
+  // İş 96: oraya önceki durağa dönerek geldiyse yüzü ekrana dönük durur (kayıtlı; uygulama yeniden açılınca da)
+  const poz = d.ilerleme.haritaYolcuOn && d.ilerleme.haritaYolcu === id && pozlari(yolcu, bolge).on ? 'on' : 'dur';
   const o = pozOlcu(yolcu, bolge, poz);
   const [px, py] = nokta;
   const stil = `left:${(((px - o.w / 2) / W) * 100).toFixed(3)}%;top:${(((py - YOLCU_H * o.ay) / (h * H)) * 100).toFixed(3)}%;width:${((o.w / W) * 100).toFixed(3)}%`;
@@ -273,10 +273,10 @@ function yolcuYerlestir(kap, id) {
   kap.dataset.durak = id;
   kap.dataset.bolge = o.b.id;
   kap.querySelector('img').src = pozAdresi(hd.yv.yolcu, o.b.id, 'dur', hd.tur);
-  d.haritaYolcuYuz = null;
   yolcuKonum(kap, yolcuNoktasi(o), hd.h, pozOlcu(hd.yv.yolcu, o.b.id, 'dur'));
   kap.classList.toggle('sag', o.x.x > 0.5);
   d.ilerleme.haritaYolcu = id;
+  d.ilerleme.haritaYolcuOn = false;
   kaydet();
 }
 
@@ -312,7 +312,6 @@ function yuru(kap, yol, h, tur, yolcu, no, bitince) {
     img.style.translate = '';
     img.style.rotate = '';
     img.src = pozAdresi(yolcu, bolge, durus, tur);
-    d.haritaYolcuYuz = durus === 'on' ? kap.dataset.durak : null;
     // durakta sembole döner
     const durak = kart.querySelector(`.harita-durak[data-bolum="${CSS.escape(kap.dataset.durak || '')}"]`);
     if (durak) {
@@ -702,6 +701,7 @@ export function olaylariBagla() {
       pencereKapat();
       kap.dataset.durak = durak.dataset.bolum;
       d.ilerleme.haritaYolcu = durak.dataset.bolum;
+      d.ilerleme.haritaYolcuOn = yol.geri;
       kaydet();
       yuru(kap, yol, hd.h, hd.tur, hd.yv.yolcu, hd.no, ac);
       return;

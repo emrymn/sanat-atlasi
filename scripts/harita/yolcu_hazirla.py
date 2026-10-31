@@ -11,7 +11,7 @@
 # İş 94: <ad>-gece.webp, <ad>-on-gece.webp … (poz.mjs --gece; o dönemin gece ışığıyla boyanmış) varsa gece resmi
 # odur, yoksa gündüz karartılır (tonla).
 # Çıktı: gorseller/harita/<önek>_<dönem>_<poz>_<tur>.webp (YOLCU_PT yüksekliğinde, 3 kat; önek: karakter → yolcu,
-# öbürleri kendi adı ve boyu, gezgin-a-96: aynı adla değişen resim telefonda yenilenmez) ve data/harita_yolcu.json.
+# öbürleri kendi adı, boyu ve dosya sürümü, gezgin-a-96-2: aynı adla değişen resim telefonda yenilenmez) ve data/harita_yolcu.json.
 # Kullanım: python3 scripts/harita/yolcu_hazirla.py [--karakter gezgin-a]
 import json
 import re
@@ -28,6 +28,12 @@ KOK = BURASI.parents[1]
 HEDEF = KOK / 'gorseller' / 'harita'
 YOLCU_PT = 96  # ekrandaki yükseklik (İş 95, Emre: "karakteri biraz büyütelim"; eskisi 80, ondan önce 72)
 UYUM = 0.3  # renklerin haritaya yaklaşma oranı (0: hiç, 1: haritanın renk dağılımı)
+# İş 96 (Emre: "neden karakter sarı oldu"): gezginin gecesi sembollerin sıcak fener tonuyla (secim.json
+# gece_sembol_tonu, ~0.88/0.70/0.48) karartılınca sarı-turuncuya dönüyordu; gezgin kendi renklerinde, hafif serin karartılır.
+# Orta Çağ ve Rönesans'ın serin ay ışığı tonu (SERIN) kalır.
+YOLCU_GECE_TONU = (0.66, 0.66, 0.74)
+# dosya adına girer: aynı adla değişen resim telefonda yenilenmez (gorseller/ önbelleği sürümden bağımsız)
+DOSYA_SURUMU = 2
 
 
 def pozAdi(ad, dosya):
@@ -97,12 +103,11 @@ def main():
     karakter = sys.argv[sys.argv.index('--karakter') + 1] if '--karakter' in sys.argv else 'karakter'
     veri = {'surum': 2, 'h': YOLCU_PT, 'bolgeler': {}}
     for d in DONEMLER:
-        sec = json.loads((BURASI / f'{d}_secim.json').read_text())
-        ton = SERIN if d in ('ortacag', 'ronesans') else tuple(sec.get('gece_sembol_tonu', (0.88, 0.70, 0.48)))
+        ton = SERIN if d in ('ortacag', 'ronesans') else YOLCU_GECE_TONU
         klasor = BURASI / 'cikti' / d / 'sprite'
         ad = karakter if (klasor / f'{karakter}.webp').exists() else 'karakter'
-        # adda boy da var (gezgin-a-96): boy değişince yeni ad, telefon eski küçük resmi önbellekten getirmez
-        onek = 'yolcu' if ad == 'karakter' else f'{ad}-{YOLCU_PT}'
+        # adda boy ve dosya sürümü var (gezgin-a-96-2): resim değişince yeni ad, telefon eskisini önbellekten getirmez
+        onek = 'yolcu' if ad == 'karakter' else f'{ad}-{YOLCU_PT}-{DOSYA_SURUMU}'
         renk = haritaRengi(d) if ad != 'karakter' else None
         pozlar = {}
         for f in sorted(klasor.glob(f'{ad}*.webp')):

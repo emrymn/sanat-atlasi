@@ -303,6 +303,10 @@ test('İş 90: çizgide nokta ve uzunluk', () => {
 
 test('İş 90: haritaYolcu yedekten doğrulanır', () => {
   assert.equal(ilerlemeDogrula({ islenen: [], haritaYolcu: 'r-1' }).haritaYolcu, 'r-1');
+  // İş 96: önden duruş
+  assert.equal(ilerlemeDogrula({ islenen: [], haritaYolcuOn: true }).haritaYolcuOn, true);
+  assert.equal(ilerlemeDogrula({ islenen: [] }).haritaYolcuOn, false);
+  assert.equal(ilerlemeDogrula({ islenen: [], haritaYolcuOn: 'evet' }).haritaYolcuOn, false);
   assert.equal(ilerlemeDogrula({ islenen: [], haritaYolcu: 5 }).haritaYolcu, null);
 });
 
