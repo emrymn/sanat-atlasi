@@ -365,6 +365,28 @@ export function notBolumleri(s) {
     ${taninma(s) ? `<section class="bolum">${etiket('Nasıl tanırım?')}<p class="okuma" data-test="taninma">${kacis(taninma(s))}</p></section>` : ''}`;
 }
 
+// İş 97 (Emre, tasarım tuvalinde "A"): sayfanın altı Atölye'nin "Turu başlat" kartının dilinde: solda sanatçının üç
+// eseri yelpaze, italik başlık, yuvarlak düğme; vurgu o an gösterilen eserin renginden (--vurgu-rgb). Eklenince yelpaze
+// desteye toplanır, kart Atölye'ye götürür.
+const tuvalYelpaze = (id) =>
+  `<span class="te-yelpaze" aria-hidden="true">${[1, 0, 2]
+    .map((sira, i) => `<span class="te-tuval" style="--i:${i}"><span data-eser-kucuk="${kacis(id)}" data-sira="${sira}"></span></span>`)
+    .join('')}</span>`;
+function ekleKarti(s) {
+  return `<button class="tuval-ekle" type="button" data-pekistirmeye-ekle="${kacis(s.id)}" aria-label="Bu sanatçıyı pekiştirmeye ekle: ${kacis(s.ad)}">
+      ${tuvalYelpaze(s.id)}
+      <span class="te-yazi"><span class="te-baslik">Pekiştirmeye ekle</span><small>Atölye'deki tekrarlara girer</small></span>
+      <span class="te-yuvarlak" aria-hidden="true">${ikon('arti', 18, 1.8)}</span>
+    </button>`;
+}
+function eklendiKarti(s, yeni = false) {
+  return `<a class="tuval-ekle eklendi${yeni ? ' yeni' : ''}" href="#/pekistir" data-test="pekistirmede" aria-label="Pekiştirmede: ${kacis(s.ad)}. Atölye'ye git">
+      ${tuvalYelpaze(s.id)}
+      <span class="te-yazi"><span class="te-baslik">${ikon('dogru', 18, 2.2)}Pekiştirmede</span><small>Atölye'de tekrarlarında</small></span>
+      <span class="te-yuvarlak" aria-hidden="true">${ikon('ileri', 16, 1.8)}</span>
+    </a>`;
+}
+
 export async function gununSayfasi(id) {
   const bugunku = gununId();
   const s = d.harita.get(id || bugunku);
@@ -403,14 +425,11 @@ export async function gununSayfasi(id) {
         }
       </section>
       <div class="menu">
-        ${
-          pekistirmedeMi(s)
-            ? '<p class="mesaj-not">Bu sanatçı pekiştirmede.</p>'
-            : `<button class="dugme vurgu" type="button" data-pekistirmeye-ekle="${kacis(s.id)}">Bu sanatçıyı pekiştirmeye ekle</button>`
-        }
-        <a class="dugme" href="#/gunun/${encodeURIComponent(baskaSanatci(gununHavuzu(), s.id, d.rng))}" data-test="baska">Başka bir sanatçı</a>
+        ${pekistirmedeMi(s) ? eklendiKarti(s) : ekleKarti(s)}
+        <a class="tuval-baska" href="#/gunun/${encodeURIComponent(baskaSanatci(gununHavuzu(), s.id, d.rng))}" data-test="baska">${ikon('karistir', 20, 1.6)}<span>Başka bir sanatçı</span>${ikon('ileri', 14, 1.8)}</a>
       </div>
     </article>`);
+  eserKareleriDoldur(); // alttaki kartın yelpazesi
   const eserler = kaliteSirasi(await eserSozu);
   if (!guncelMi(no)) return;
   imzaGoster(s, ekran.querySelector('.isim-blok')); // İş 48: varsa ressamın gerçek imzası
@@ -471,7 +490,9 @@ export function olaylariBagla() {
     if (!sk.akim) sk.akim = { kutu: 0, sonraki: bugun(), dogru: 0, yanlis: 0, son: bugun() };
     d.oturum = null;
     kaydet();
-    b.replaceWith(Object.assign(document.createElement('p'), { className: 'mesaj-not', textContent: 'Eklendi: bu sanatçı bugünkü tekrarlarda.' }));
+    // İş 97: kart "Pekiştirmede" kartına döner, yelpaze desteye toplanır
+    b.outerHTML = eklendiKarti(d.harita.get(id), true);
+    eserKareleriDoldur();
     bildir(`${d.harita.get(id).ad} pekiştirmeye eklendi.`);
   });
 }

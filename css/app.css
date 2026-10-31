@@ -949,6 +949,146 @@ img.kirik {
   margin: 6px 0 0;
 }
 
+/* İş 97: Tuval'in altı, Atölye'nin "Turu başlat" kartının dilinde: solda sanatçının üç eseri yelpaze, italik başlık,
+   yuvarlak düğme; renk o an gösterilen eserden (--vurgu-rgb). Eklenince yelpaze desteye toplanır. */
+.tuval-ekle {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr) 44px;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 94px;
+  padding: 14px 14px 14px 10px;
+  border-radius: 18px;
+  border: 1px solid rgba(var(--vurgu-rgb), 0.55);
+  background: linear-gradient(135deg, rgba(var(--vurgu-rgb), 0.22), var(--surface) 60%);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.tuval-ekle:active {
+  transform: scale(0.98);
+}
+.tuval-ekle.eklendi {
+  border-color: var(--border);
+  background: var(--surface);
+}
+.te-yelpaze {
+  position: relative;
+  display: block;
+  height: 66px;
+}
+.te-tuval {
+  --r: calc((var(--i) - 1) * 16deg);
+  --x: calc((var(--i) - 1) * 23px);
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  width: 38px;
+  height: 50px;
+  margin-left: -19px;
+  padding: 1.5px;
+  border-radius: 4px;
+  background: #f4efe6;
+  box-shadow: 0 6px 14px -4px rgba(0, 0, 0, 0.6);
+  transform-origin: 50% 110%;
+  transform: translateX(var(--x)) rotate(var(--r));
+}
+.te-tuval:nth-child(2) {
+  z-index: 1;
+  width: 42px;
+  height: 56px;
+  margin-left: -21px;
+}
+.eklendi .te-tuval {
+  --r: calc((var(--i) - 1) * 3deg);
+  --x: calc((var(--i) - 1) * 2px);
+}
+.te-tuval > span,
+.te-tuval .cerceve {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 2.5px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.te-tuval img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  min-width: 0;
+  object-fit: cover;
+}
+.te-yazi {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+.te-baslik {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font: italic 400 clamp(19px, 5.6vw, 24px) / 1.05 var(--serif);
+  white-space: nowrap;
+}
+.te-baslik .ikon {
+  flex: none;
+  color: var(--right-ikon);
+}
+.te-yazi small {
+  font: 500 12px/1.3 var(--sans);
+  color: var(--ink-2);
+}
+.te-yuvarlak {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink-3);
+}
+.tuval-baska {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 0 4px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  color: var(--ink);
+  font: 600 15px/1.2 var(--sans);
+  text-decoration: none;
+}
+.tuval-baska span {
+  flex: 1;
+}
+.tuval-baska .ikon:first-child {
+  color: var(--ink-2);
+}
+.tuval-baska .ikon:last-child {
+  color: var(--ink-3);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .te-tuval {
+    transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.25, 1.2);
+  }
+  .eklendi.yeni .te-tuval {
+    animation: te-topla 0.5s cubic-bezier(0.2, 0.9, 0.25, 1) both;
+  }
+}
+/* eklendiği an kart yeniden çizilir: yelpazeden desteye toplanır */
+@keyframes te-topla {
+  from {
+    transform: translateX(calc((var(--i) - 1) * 23px)) rotate(calc((var(--i) - 1) * 16deg));
+  }
+}
+
 /* ---------- Listeler ---------- */
 .liste {
   list-style: none;

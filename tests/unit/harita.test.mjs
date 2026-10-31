@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
-import { BOLGELER, bolgeBul, haritaKur, sepyaSiniri, vakit, gorulenDogrula, resimAdresi, nesneAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, SEPYA_PAY, ARA, W, H } from '../../js/harita.js';
+import { BOLGELER, bolgeBul, haritaKur, sepyaSiniri, vakit, gorulenDogrula, resimAdresi, nesneAdresi, yansimaAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, SEPYA_PAY, ARA, W, H } from '../../js/harita.js';
 import {
   bolumleriKur,
   bolumDurumlari,
@@ -50,6 +50,10 @@ test('harita verisi: her bölgede bölüm sayısı kadar meydan ve sembol, görs
     for (const [x, y] of v.duraklar) assert.ok(x > 0 && x < 1 && y > 0 && y < 1, `${b.id} ${x},${y}`);
     for (const tur of ['gunduz', 'gece']) {
       const yollar = [resimAdresi(b.id, tur), yolcuAdresi(b.id, 'dur', tur, yolcuVeri.bolgeler[b.id].ad), ...v.semboller.map((_, i) => nesneAdresi(b.id, i + 1, tur))];
+      // İş 99: köprüdeki yansıma şeritleri (en alttakinin alt, en üsttekinin üst kenarı köprüye girmez)
+      const i = BOLGELER.indexOf(b);
+      if (i > 0) yollar.push(yansimaAdresi(b.id, 'alt', tur));
+      if (i < BOLGELER.length - 1) yollar.push(yansimaAdresi(b.id, 'ust', tur));
       for (const yol of yollar) assert.ok(existsSync(new URL(`../../${yol}`, import.meta.url)), yol);
     }
     assert.ok(v.motifler.length > 0, b.id);

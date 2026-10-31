@@ -7,7 +7,7 @@
 import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
-import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
+import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yansimaAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
 import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen } from './ortak.js';
 import { sanatciEserleri } from '../eserler.js';
 import { harfUygula, BOLGE_HARFLERI } from '../harfler.js';
@@ -206,9 +206,9 @@ function gecisHtml(alt, ustB, h, tur, sinir, liste) {
   const acik = bolum.filter((x) => x.acik).length;
   const sepya = alt.ust <= sinir;
   const yer = `top:${((bas / h) * 100).toFixed(3)}%;height:${((ARA / h) * 100).toFixed(3)}%`;
-  const serit = `background-size:100% ${(100 / ARA).toFixed(1)}%`;
-  const ustResim = `${serit};background-image:url('${resimAdresi(ustB.id, tur)}')`;
-  const altResim = `${serit};background-image:url('${resimAdresi(alt.id, tur)}')`;
+  // İş 99: köprünün boyunda kenar şeritleri (meydanlar silinmiş): üstteki dönemin alt kenarı, alttakinin üst kenarı
+  const ustResim = `background-size:100% 100%;background-image:url('${yansimaAdresi(ustB.id, 'alt', tur)}')`;
+  const altResim = `background-size:100% 100%;background-image:url('${yansimaAdresi(alt.id, 'ust', tur)}')`;
   return `<div class="harita-gecis${sepya ? ' sepya' : ''}${acik ? '' : ' kilitli'}" data-test="harita-gecis" data-gecis="${ustB.id}" style="${yer}">
       <span class="harita-gecis-renk ust yumusak" aria-hidden="true" style="${ustResim}"></span>
       <span class="harita-gecis-renk alt yumusak" aria-hidden="true" style="${altResim}"></span>
