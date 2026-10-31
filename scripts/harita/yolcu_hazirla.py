@@ -10,7 +10,7 @@
 # boyanmış gibi dursun.
 # Çıktı: gorseller/harita/<önek>_<dönem>_<poz>_<tur>.webp (YOLCU_PT yüksekliğinde, 3 kat; önek: karakter → yolcu,
 # öbürleri kendi adı: aynı adla değişen resim telefonda yenilenmez) ve data/harita_yolcu.json.
-# Kullanım: python3 scripts/harita/yolcu_hazirla.py [--karakter gezgin-a]
+# Kullanım: python3 scripts/harita/yolcu_hazirla.py [--karakter gezgin-a]  (birkaç ad: --karakter gezgin-i,gezgin-a)
 import json
 import re
 import sys
@@ -72,7 +72,8 @@ def main():
         sec = json.loads((BURASI / f'{d}_secim.json').read_text())
         ton = SERIN if d in ('ortacag', 'ronesans') else tuple(sec.get('gece_sembol_tonu', (0.88, 0.70, 0.48)))
         klasor = BURASI / 'cikti' / d / 'sprite'
-        ad = karakter if (klasor / f'{karakter}.webp').exists() else 'karakter'
+        # İş 96: virgülle birkaç ad verilebilir (gezgin-i,gezgin-a): dönemde ilk bulunan
+        ad = next((a for a in karakter.split(',') if (klasor / f'{a}.webp').exists()), 'karakter')
         onek = 'yolcu' if ad == 'karakter' else ad
         renk = haritaRengi(d) if ad != 'karakter' else None
         pozlar = {}

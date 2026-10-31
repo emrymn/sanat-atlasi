@@ -93,6 +93,23 @@ const ISARETLER = {
 const isaretMetni = (d) =>
   `A small painted object that will float above a traveller on the map: ${ISARETLER[d]}. Painted in exactly the same style, brushwork and palette as the painting in Image 1, crisp clean edges so it can be cut out, no glow, no haze, no soft light around it. Centred, filling about 80% of the image. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object. No text, no frame.`;
 
+// 5) İş 96 (Emre: "semboller çok ucuz oldu, fikir güzel ama uygulamada olmadı"): işaret ayrı resim değil, gezginin resminin
+// içine boyanır (aynı fırça, aynı ışık; tek tablo). gezgin-a örnek alınır, çıktı gezgin-i (sırtı dönük) ve gezgin-i-on
+// (önden). node poz.mjs isaretli ortacag,barok,romantik --calistir  (önden de: --on)
+const BOYALI = {
+  ortacag: "a round gilded halo painted behind his head, like the punched gold-leaf halos in Giotto's frescoes, part of the same painting, partly hidden by his head",
+  ronesans: 'a fine, thin golden halo ring floating flat above his head in perspective, like the halos painted by Piero della Francesca, painted with the same brush and light',
+  barok: "a small chubby putto (cherub) with little wings flying just above his shoulder, both lit by the same warm light of his lantern with deep Caravaggio shadows, painted together as one group",
+  barok2: 'a classical laurel wreath worn on his head over the hat brim, as worn by poets in Poussin, painted with the same brush',
+  aydinlanma: 'long pink silk ribbons tied in her hair and fluttering behind her, as in Fragonard, painted with the same soft brush',
+  romantik: "a thin crescent moon low in the sky just behind his shoulder, and pale moonlight touching the edge of his coat and hair, as in Caspar David Friedrich's moonlit paintings, painted together",
+  empresyonizm: "a small cream parasol she holds over her shoulder, like Monet's Woman with a Parasol, with dappled sunlight spots painted on her dress",
+  postempresyonizm: "a few swirling Van Gogh stars and short thick strokes of night sky painted in the air just above and around his hat, as in The Starry Night",
+  modern: "a few bright blue paper cut-out shapes like Matisse's, floating and falling around him like leaves, painted with the same flat gouache",
+};
+const boyaliMetni = (d, on) =>
+  `${on ? 'The figure from Image 1 is now seen from the FRONT, walking toward the viewer, the face small, in soft shadow and only suggested with a few brushstrokes.' : 'Exactly the same figure as in Image 1, the same pose seen from behind and a little to the side, the same person, clothes and belongings, the same size and framing.'} Now with ${BOYALI[d]}. Everything is painted together as ONE single painting in the style of the painting in Image 2: the same loose brushwork, the same light falling on the figure and on the added element, the same muted palette; it must NOT look like a sticker or a separate icon added on top. ${stil(2)}`;
+
 // 3) Pozlar (Image 1: o dönemin karakteri ya da birinci adım; Image 2: o dönemin haritası)
 const AYNI = 'The same figure as in Image 1, exactly the same person, clothes, belongings, size, framing and painting style';
 const POZLAR = [
@@ -167,6 +184,13 @@ async function haritaParcasi(d) {
 // yapılacak işler: { d, ad, metin, ornekler: [dosya yolu | 'harita'] }
 function plan(karakter, donemler, yalniz) {
   const isler = [];
+  if (karakter === 'isaretli') {
+    for (const d of donemler) {
+      isler.push({ d, ad: 'gezgin-i', metin: boyaliMetni(d, false), ornekler: [sprite(d, 'gezgin-a'), 'harita'] });
+      if (yalniz && yalniz.includes('on')) isler.push({ d, ad: 'gezgin-i-on', metin: boyaliMetni(d, true), ornekler: [sprite(d, 'gezgin-i'), 'harita'] });
+    }
+    return isler;
+  }
   if (karakter === 'isaret') {
     for (const d of donemler) isler.push({ d, ad: 'isaret', metin: isaretMetni(d), ornekler: ['harita'] });
     return isler;
@@ -191,10 +215,10 @@ async function main() {
   const argv = process.argv.slice(2);
   const bayraklar = argv.filter((a) => a.startsWith('--'));
   const [karakter, hedef = ANA] = argv.filter((a) => !a.startsWith('--') && !(argv[argv.indexOf(a) - 1] === '--yalniz'));
-  const donemler = hedef === 'hepsi' ? DONEMLER : DONEMLER.includes(hedef) ? [hedef] : null;
+  const donemler = hedef === 'hepsi' ? DONEMLER : hedef.split(',').every((d) => DONEMLER.includes(d)) ? hedef.split(',') : null;
   if (!karakter || !donemler) throw new Error('Kullanım: node poz.mjs taslak --calistir   |   node poz.mjs isaret hepsi --calistir   |   node poz.mjs <karakter> <dönem|hepsi> [--calistir] [--yalniz yuru,arka,eskiz]');
   const yalniz = bayraklar.includes('--yalniz') ? argv[argv.indexOf('--yalniz') + 1].split(',') : null;
-  if (karakter !== 'taslak' && karakter !== 'isaret' && !existsSync(sprite(ANA, karakter))) throw new Error(`Önce Rönesans'ta ${karakter}.webp gerekir (node poz.mjs taslak --calistir)`);
+  if (!['taslak', 'isaret', 'isaretli'].includes(karakter) && !existsSync(sprite(ANA, karakter))) throw new Error(`Önce Rönesans'ta ${karakter}.webp gerekir (node poz.mjs taslak --calistir)`);
   const isler = plan(karakter, donemler, yalniz).filter((i) => !existsSync(sprite(i.d, i.ad)));
   console.log(`${isler.length} resim, tahmini ~${(isler.length * FIYAT).toFixed(2)} $ (var olanlar atlanır)`);
   for (const i of isler) console.log(`  ${i.d.padEnd(17)} ${i.ad}`);
@@ -234,7 +258,7 @@ async function main() {
       if (/authentication/i.test(String(e && e.message))) return;
     }
   }
-  console.log(`\nSonra: sh gonder.sh "${karakter === 'taslak' ? 'Gezgin taslakları' : karakter === 'isaret' ? 'Gezgin işaretleri' : 'Gezgin pozları'}"`);
+  console.log(`\nSonra: sh gonder.sh "${karakter === 'taslak' ? 'Gezgin taslakları' : karakter === 'isaret' ? 'Gezgin işaretleri' : karakter === 'isaretli' ? 'Gezgin: işareti boyalı' : 'Gezgin pozları'}"`);
 }
 
 main().catch((e) => {
