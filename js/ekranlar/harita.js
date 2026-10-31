@@ -12,8 +12,8 @@ import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jso
 import { sanatciEserleri } from '../eserler.js';
 import { harfUygula, BOLGE_HARFLERI } from '../harfler.js';
 
-// İş 90: öğrencinin ekrandaki boyu (pt; scripts/harita/yolcu_hazirla.py YOLCU_PT)
-const YOLCU_H = 80;
+// İş 90: öğrencinin ekrandaki boyu (pt; scripts/harita/yolcu_hazirla.py YOLCU_PT). İş 95: 80 → 96
+const YOLCU_H = 96;
 let veriSozu = null;
 export function haritaVerisi() {
   veriSozu ||= jsonGetir('data/harita.json').catch(() => ({ bolgeler: {}, eserler: {} }));

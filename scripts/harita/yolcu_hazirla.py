@@ -11,7 +11,7 @@
 # İş 94: <ad>-gece.webp, <ad>-on-gece.webp … (poz.mjs --gece; o dönemin gece ışığıyla boyanmış) varsa gece resmi
 # odur, yoksa gündüz karartılır (tonla).
 # Çıktı: gorseller/harita/<önek>_<dönem>_<poz>_<tur>.webp (YOLCU_PT yüksekliğinde, 3 kat; önek: karakter → yolcu,
-# öbürleri kendi adı: aynı adla değişen resim telefonda yenilenmez) ve data/harita_yolcu.json.
+# öbürleri kendi adı ve boyu, gezgin-a-96: aynı adla değişen resim telefonda yenilenmez) ve data/harita_yolcu.json.
 # Kullanım: python3 scripts/harita/yolcu_hazirla.py [--karakter gezgin-a]
 import json
 import re
@@ -26,7 +26,7 @@ from uygulama_hazirla import DONEMLER, OLCEK, SERIN, ayak, kucuk, tonla
 BURASI = Path(__file__).resolve().parent
 KOK = BURASI.parents[1]
 HEDEF = KOK / 'gorseller' / 'harita'
-YOLCU_PT = 80  # ekrandaki yükseklik (eskisi 72)
+YOLCU_PT = 96  # ekrandaki yükseklik (İş 95, Emre: "karakteri biraz büyütelim"; eskisi 80, ondan önce 72)
 UYUM = 0.3  # renklerin haritaya yaklaşma oranı (0: hiç, 1: haritanın renk dağılımı)
 
 
@@ -101,7 +101,8 @@ def main():
         ton = SERIN if d in ('ortacag', 'ronesans') else tuple(sec.get('gece_sembol_tonu', (0.88, 0.70, 0.48)))
         klasor = BURASI / 'cikti' / d / 'sprite'
         ad = karakter if (klasor / f'{karakter}.webp').exists() else 'karakter'
-        onek = 'yolcu' if ad == 'karakter' else ad
+        # adda boy da var (gezgin-a-96): boy değişince yeni ad, telefon eski küçük resmi önbellekten getirmez
+        onek = 'yolcu' if ad == 'karakter' else f'{ad}-{YOLCU_PT}'
         renk = haritaRengi(d) if ad != 'karakter' else None
         pozlar = {}
         for f in sorted(klasor.glob(f'{ad}*.webp')):
