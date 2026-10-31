@@ -62,6 +62,7 @@ const YOLLAR = {
   karsilastir: '<rect x="3" y="4" width="7.5" height="16" rx="1.5"/><rect x="13.5" y="4" width="7.5" height="16" rx="1.5"/>',
   ara: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
   arti: '<path d="M12 5v14M5 12h14"/>',
+  karistir: '<path d="M16 3h5v5"/><path d="M4 20 21 3"/><path d="M21 16v5h-5"/><path d="m15 15 6 6"/><path d="m4 4 5 5"/>',
   eksi: '<path d="M5 12h14"/>',
   daha: '<circle cx="5.5" cy="12" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="18.5" cy="12" r="1.2"/>',
   isaret: '<path d="M6.5 4h11a1 1 0 0 1 1 1v15l-6.5-4-6.5 4V5a1 1 0 0 1 1-1z"/>',

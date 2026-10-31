@@ -45,7 +45,12 @@ test('kilitli sanatçı pekiştirmeye eklenir', async ({ page }) => {
   await page.goto(`./#/gunun/${id}`);
   await expect(page.locator('.gunun .meta')).toContainText(/Konu \d+|Kurs dışı/);
   await page.getByRole('button', { name: 'Bu sanatçıyı pekiştirmeye ekle' }).click();
-  await expect(page.getByText('Eklendi: bu sanatçı bugünkü tekrarlarda.')).toBeVisible();
+  // İş 97: kart "Pekiştirmede" kartına döner, Atölye'ye götürür
+  const eklendi = page.locator('[data-test="pekistirmede"]');
+  await expect(eklendi).toBeVisible();
+  await expect(eklendi).toContainText('Pekiştirmede');
+  await expect(eklendi).toHaveAttribute('href', '#/pekistir');
+  await expect(page.getByRole('button', { name: 'Bu sanatçıyı pekiştirmeye ekle' })).toHaveCount(0);
   const i = await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:ilerleme')));
   expect(i.ekSanatcilar).toContain(id);
   expect(i.skorlar[id].sanatci.sonraki).toBe(i.gunluk.tarih);
