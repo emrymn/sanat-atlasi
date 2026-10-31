@@ -307,7 +307,7 @@ function yolcuYerlestir(kap, id) {
   kap.dataset.bolge = o.b.id;
   isaretGuncelle(kap, hd.yv.yolcu, o.b.id, hd.tur);
   const poz = durusPozu(hd.yv.yolcu, o.b.id, d.ilerleme.haritaYolcuYuz);
-  kap.querySelector('img').src = pozAdresi(hd.yv.yolcu, o.b.id, poz, hd.tur);
+  kap.querySelector('img.harita-yolcu').src = pozAdresi(hd.yv.yolcu, o.b.id, poz, hd.tur);
   yolcuKonum(kap, yolcuNoktasi(o), hd.h, pozOlcu(hd.yv.yolcu, o.b.id, poz));
   kap.classList.toggle('sag', o.x.x > 0.5);
   d.ilerleme.haritaYolcu = id;
@@ -340,7 +340,7 @@ function yuru(kap, yol, h, tur, yolcu, no, bitince) {
   const benim = ++yuruyusNo;
   const gecerli = () => benim === yuruyusNo && kap.isConnected && guncelMi(no);
   const kart = kap.closest('[data-test="harita"]');
-  const img = kap.querySelector('img');
+  const img = kap.querySelector('img.harita-yolcu');
   kart.classList.add('yuruyor');
   const yuz = yol.geri ? 'on' : null;
   const bitir = (bolge, nokta) => {
