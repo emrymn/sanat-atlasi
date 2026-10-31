@@ -81,14 +81,14 @@ const donemTaban = (d) =>
 // süzülür, döner). node poz.mjs isaret hepsi --calistir → cikti/<dönem>/sprite/isaret.webp
 const ISARETLER = {
   ortacag: 'a round gilded halo disc as in Giotto and Simone Martini: burnished gold leaf with a ring of small punched dots near the edge and fine incised rays, seen from the front, flat',
-  ronesans: 'a delicate thin golden halo ring seen in perspective as a narrow ellipse, as painted by Piero della Francesca and Mantegna, a fine gold line with a faint inner shine',
+  ronesans: 'ONLY a halo, nothing else: a single thin golden ring seen in perspective as a flat, wide, narrow ellipse (about four times as wide as it is tall), as the halos painted by Piero della Francesca and Mantegna, a fine gold line with a faint inner shine. NO person, NO head, NO figure, NO body: just the floating ring itself',
   barok: 'a small chubby Baroque putto (cherub) with little wings, flying, seen from the side, as painted by Rubens and Caravaggio, warm flesh tones, a wisp of golden drapery',
   barok2: 'a classical laurel wreath of dark green leaves bound with a thin gold ribbon, as in Poussin and the French Academy, seen slightly from above',
   aydinlanma: 'a pink silk ribbon bow with long fluttering ends, as in Fragonard and Boucher, soft pastel pink with pearly highlights',
   romantik: 'a thin crescent moon, pale ivory, as in Caspar David Friedrich, crisp edges, no glow',
   empresyonizm: 'a small summer sun made of short broken dabs of yellow, orange and cream paint, as in Monet, round',
   postempresyonizm: "a swirling star with concentric rings of thick yellow and white brushstrokes, as in Van Gogh's Starry Night",
-  modern: "a bright blue paper cut-out star with irregular hand-cut edges, as in Matisse's cut-outs, flat gouache colour",
+  modern: "ONLY one simple flat shape: a five-pointed star cut out of a single sheet of bright ultramarine blue painted paper with slightly irregular scissor-cut edges, like the stars in Matisse's Jazz cut-outs, one flat colour with faint gouache brush texture. NO figure, NO face, NO cubist pattern, NO other colours or shapes",
 };
 const isaretMetni = (d) =>
   `A small painted object that will float above a traveller on the map: ${ISARETLER[d]}. Painted in exactly the same style, brushwork and palette as the painting in Image 1, crisp clean edges so it can be cut out, no glow, no haze, no soft light around it. Centred, filling about 80% of the image. On a flat, solid, pure magenta background (#FF00FF) with no gradient, texture or shadow; never use magenta in the object. No text, no frame.`;
