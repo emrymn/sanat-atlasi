@@ -22,12 +22,16 @@ KAY = 36  # px: merkez en çok bu kadar kayabilir (~14 pt)
 EN_AZ = 1.25  # bulunan elipsin kenar gücü, noktanın kendi elipsinin en az bu katı olmalı; yoksa dokunulmaz
 # Elle verilen merkezler (dönem → {durak sırası: (x, y)}); ölçümün yanlış şeyi bulduğu duraklar denetim görüntüsünden:
 ELLE = {
-    # 1: GPT'nin yolun üstüne açtığı genişlik yerine yolun sağındaki kol yolun sonundaki boş meydan (bazilikanın önü;
-    # Emre: "boş yer var, onun yerine yola koymuşsun"); 3: meydan yok, yolun kıvrımı (ölçüm yamaca kaydı)
-    'ortacag': {0: (0.6627, 0.8690), 2: (0.54, 0.366)},
-    'ronesans': {6: (0.42, 0.105)},  # 7: kemer kapısı, meydan yok
-    'barok2': {1: (0.504, 0.403)},  # 2: ölçüm yoldaki küçük bir lekeye kaydı
-    'romantik': {3: (0.2324, 0.2878), 4: (0.2598, 0.1217)},  # 4, 5: ölçüm binaya/eve kaydı; nokta zaten ortada
+    # 1: bir ara yolun sağındaki kol yolun sonundaki boş meydana (bazilikanın önü) taşındı; Emre önizlemede görünce
+    # "eski yerine koy": yine yoldaki genişlik. 3: meydan yok, yolun kıvrımı (ölçüm yamaca kaydı)
+    'ortacag': {0: (0.462, 0.874), 2: (0.54, 0.366)},
+    # Emre önizlemede (10 pt'lik ızgarayla ölçülerek): 1 "biraz daha sola" (kavşak meydanının ortası), 3 "sol çapraza"
+    # (cebin ortası); 7: kemer kapısı, meydan yok
+    'ronesans': {0: (0.530, 0.924), 2: (0.4771, 0.6094), 6: (0.42, 0.105)},
+    # 1: Emre "sol çapraza, biraz daha"; 2: ölçüm yoldaki küçük bir lekeye kaydı
+    'barok2': {0: (0.378, 0.7455), 1: (0.504, 0.403)},
+    # 2: Emre "biraz daha sola"; 4, 5: ölçüm binaya/eve kaydı, nokta zaten ortada
+    'romantik': {1: (0.370, 0.6491), 3: (0.2324, 0.2878), 4: (0.2598, 0.1217)},
     'empresyonizm': {1: (0.2273, 0.42)},  # 2: elips fazla uzun çıktı; yatay kayma doğru, dikey değil
 }
 ACI = np.linspace(0, 2 * np.pi, 96, endpoint=False)
