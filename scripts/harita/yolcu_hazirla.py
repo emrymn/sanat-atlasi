@@ -57,6 +57,22 @@ def uyumla(sp, harita_lab):
     return Image.fromarray((out * 255).round().astype('uint8'), 'RGBA')
 
 
+def morSizinti(sp, pay=12):
+    """İş 94: gece pozlarında ışığın (mum, fener) parıltısı mor zeminle karışıp kenarda pembe kalır; figürün dış
+    kenarına yakın (pay px) açık morumsu pikseller sıcak sarıya çevrilir. Figürün içindeki renklere dokunmaz."""
+    from PIL import ImageFilter
+    a = np.array(sp).astype(float)
+    r, g, b = a[..., 0], a[..., 1], a[..., 2]
+    bos = Image.fromarray(((a[..., 3] < 128) * 255).astype('uint8'))
+    yakin = np.array(bos.filter(ImageFilter.MaxFilter(pay * 2 + 1))) > 0
+    # parıltı açık ve pembemsi (mavi yeşilden fazla); koyu mor giysi değil, sarı alev değil
+    mor = yakin & (a[..., 3] > 0) & (r > 140) & (r > g + 25) & (b > g + 5)
+    yeni_g = np.minimum(255, g + (b - g) * 0.7)
+    a[..., 2] = np.where(mor, g * 0.6, b)
+    a[..., 1] = np.where(mor, yeni_g, g)
+    return Image.fromarray(a.clip(0, 255).astype('uint8'), 'RGBA')
+
+
 def geceYerlestir(gece, gunduz):
     """İş 94: boyanmış gece pozu gündüz pozunun kutusuna yerleşir (uygulama ölçüyü gündüzden alır): ayaklar aynı
     yerde, en çok gündüzün boyu kadar; ışık kaynağı figürü genişletmişse kutuya sığacak kadar küçülür."""
@@ -98,7 +114,7 @@ def main():
             sp.save(HEDEF / f'{onek}_{d}_{poz}_gunduz.webp', quality=92, method=6)
             # İş 94: boyanmış gece pozu (poz.mjs --gece; zaten gece paletinde, renk uyumu yok), yoksa karartılmış gündüz
             gece = f.with_name(f'{f.stem}-gece.webp')
-            gece_sp = geceYerlestir(kucuk(Image.open(gece).convert('RGBA'), YOLCU_PT), sp) if gece.exists() else tonla(sp, ton)
+            gece_sp = geceYerlestir(morSizinti(kucuk(Image.open(gece).convert('RGBA'), YOLCU_PT)), sp) if gece.exists() else tonla(sp, ton)
             gece_sp.save(HEDEF / f'{onek}_{d}_{poz}_gece.webp', quality=92, method=6)
             _, ay = ayak(sp)
             pozlar[poz] = {'w': round(sp.width / OLCEK, 1), 'ay': round(ay, 4)}

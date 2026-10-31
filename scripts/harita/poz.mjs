@@ -110,18 +110,20 @@ const GECE_ISIK = {
   barok2:
     'He now holds a brass candlestick with one lit candle; its warm light falls on his hand, his red cuffs, the portfolio and the side of his blue coat, the rest of him in soft night shadow.',
   aydinlanma:
-    'She now carries a small round paper lantern on a short stick, glowing soft warm pink-gold like the paper lanterns in the night painting; its light falls on her hand, her shawl and the side of her dress.',
+    'She now carries a small round paper lantern on a short stick, glowing soft warm gold like the paper lanterns in the night painting; its light falls on her hand, her shawl and the side of her dress.',
   romantik:
     "No lamp: a full moon behind him gives a thin bright silver rim of light around his hair, shoulders, coat and stick, like Caspar David Friedrich's moonlit figures; the rest of him is in cool blue night shadow.",
   empresyonizm:
     'A small glass oil lantern now hangs from the handle of her paint box, glowing warm yellow like the gas lamps in the night painting; its light falls on her hand, the paint box and the lower part of her light dress, which glows softly against the night.',
+  // İlk deneme (Emre: "şapkada mum hiç olmamış"): beş büyük mum taç gibi duruyordu, alevler pembe, bütün figür koyu
+  // mor-maviye dönmüştü. Şimdi az, ince, küçük alevli mumlar; önlük gündüzkü mavisinde, yalnız koyulaşır.
   postempresyonizm:
-    'Like Van Gogh, who painted at night with candles fixed around the brim of his straw hat: four or five small lit candles now stand on the brim of his straw hat; their warm yellow light falls on the hat, his shoulders and the canvas he carries, and the rest of his blue smock is deep night blue.',
+    "Like Van Gogh, who is said to have painted at night with candles fixed to the brim of his straw hat: just three small, thin, plain white candles now stand upright on the brim of his straw hat (one at the front, one at each side), each with a tiny bright yellow-white flame; the candles are small compared to the hat, it must not look like a crown or a birthday cake. Their warm yellow candlelight falls softly on the top of the hat, the back of his neck, his shoulders and the canvas he carries. The rest of him is in night shadow, but his workman's smock keeps the same light blue as in Image 1, only darker: not saturated violet or deep ultramarine. He stays clearly readable as the same painter, not a dark silhouette.",
   modern:
     'He now holds a small metal flashlight pointed at the ground ahead; its cool white light catches his hand, his scarf and the edge of the portfolio, the rest of him in dark blue night shadow.',
 };
 const geceMetni = (d, poz) =>
-  `Image 1 shows a small painted figure on a flat magenta background. Repaint exactly the same figure at night: the same person, clothes, belongings, ${poz === 'dur' ? 'pose' : 'pose and walking direction'}, size and framing, and the same loose brushwork; only the light changes. ${GECE_ISIK[d]} The light source must be clearly visible and be the brightest, warmest point of the figure, so the figure stands out in a dark painting. Use the night palette and brushwork of the night painting in Image 2. The face stays small and only suggested. The light falls ONLY on the figure: the background stays the same flat, solid, pure magenta (#FF00FF) everywhere, with no glow, halo, light spill, cast shadow or ground on it. Full body, nothing cropped, feet visible, no text, no frame.`;
+  `Image 1 shows a small painted figure on a flat magenta background. Repaint exactly the same figure at night: the same person, clothes, belongings, ${poz === 'dur' ? 'pose' : 'pose and walking direction'}, size and framing, and the same loose brushwork; only the light changes. ${GECE_ISIK[d]} The light source must be clearly visible and be the brightest, warmest point of the figure, so the figure stands out in a dark painting. Flames and lamplight are yellow-white and orange; nothing on the figure is pink or magenta. Use the night palette and brushwork of the night painting in Image 2. The face stays small and only suggested. The light falls ONLY on the figure: the background stays the same flat, solid, pure magenta (#FF00FF) everywhere, with no glow, halo, light spill, cast shadow or ground on it. Full body, nothing cropped, feet visible, no text, no frame.`;
 
 // Saydam değilse: köşelerden başlayıp mor zemini sil, kenardaki mor sızıntıyı temizle (sprite.mjs ile aynı)
 async function saydamYap(veri) {
