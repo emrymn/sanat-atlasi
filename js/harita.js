@@ -41,6 +41,9 @@ export function vakit(tarih = new Date()) {
 // yenilenmez (eskileri gorseller/harita_eski/ altında yedekte)
 export const resimAdresi = (bolge, tur) => `gorseller/harita/donem_${bolge}_${tur}.webp`;
 export const nesneAdresi = (bolge, no, tur) => `gorseller/harita/sembol_${bolge}_${no}_${tur}.webp`;
+// İş 99: geçiş köprüsündeki yansıma için kenar şeridi (scripts/harita/yansima_hazirla.py): resmin ARA boyundaki alt ya da
+// üst kenarı, yarı çözünürlükte, durak meydanları silinmiş (Emre: "seviyedeki taş aşağıda görünüyor, onu kaldır")
+export const yansimaAdresi = (bolge, kenar, tur) => `gorseller/harita/yansima_${bolge}_${kenar}_${tur}.webp`;
 // İş 90: öğrencinin pozları (scripts/harita/yolcu_hazirla.py; data/harita_yolcu.json): dur, yuru1.., arka1.., eskiz.
 // İş 91: ad, dönemin karakteri (data/harita_yolcu.json bolgeler[dönem].ad; eski öğrenci "yolcu")
 export const yolcuAdresi = (bolge, poz, tur, ad = 'yolcu') => `gorseller/harita/${ad}_${bolge}_${poz}_${tur}.webp`;

@@ -23,8 +23,9 @@ EN_AZ = 1.25  # bulunan elipsin kenar gücü, noktanın kendi elipsinin en az bu
 # Elle verilen merkezler (dönem → {durak sırası: (x, y)}); ölçümün yanlış şeyi bulduğu duraklar denetim görüntüsünden:
 ELLE = {
     # 1: bir ara yolun sağındaki kol yolun sonundaki boş meydana (bazilikanın önü) taşındı; Emre önizlemede görünce
-    # "eski yerine koy": yine yoldaki genişlik. 3: meydan yok, yolun kıvrımı (ölçüm yamaca kaydı)
-    'ortacag': {0: (0.462, 0.874), 2: (0.54, 0.366)},
+    # "eski yerine koy": yine yoldaki genişlik, sonra "sağ alt çapraza": genişliğin merkezi (ortacag_secim.json
+    # yeni_meydanlar). 3: meydan yok, yolun kıvrımı (ölçüm yamaca kaydı)
+    'ortacag': {0: (0.475, 0.878), 2: (0.54, 0.366)},
     # Emre önizlemede (10 pt'lik ızgarayla ölçülerek): 1 "biraz daha sola" (kavşak meydanının ortası), 3 "sol çapraza"
     # (cebin ortası); 7: kemer kapısı, meydan yok
     'ronesans': {0: (0.530, 0.924), 2: (0.4771, 0.6094), 6: (0.42, 0.105)},
