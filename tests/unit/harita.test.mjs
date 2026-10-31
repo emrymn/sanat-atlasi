@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
-import { BOLGELER, bolgeBul, haritaKur, sepyaSiniri, vakit, gorulenDogrula, resimAdresi, nesneAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, cizgiUzunlugu, cizgideNokta, SEPYA_PAY, ARA, W, H } from '../../js/harita.js';
+import { BOLGELER, bolgeBul, haritaKur, sepyaSiniri, vakit, gorulenDogrula, resimAdresi, nesneAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, SEPYA_PAY, ARA, W, H } from '../../js/harita.js';
 import {
   bolumleriKur,
   bolumDurumlari,
@@ -301,4 +301,17 @@ test('İş 90: çizgide nokta ve uzunluk', () => {
 test('İş 90: haritaYolcu yedekten doğrulanır', () => {
   assert.equal(ilerlemeDogrula({ islenen: [], haritaYolcu: 'r-1' }).haritaYolcu, 'r-1');
   assert.equal(ilerlemeDogrula({ islenen: [], haritaYolcu: 5 }).haritaYolcu, null);
+});
+
+test('İş 93: yürürken poz — aşağı inerken önden, yukarı çıkarken arkadan kareleri, yoksa duruş', () => {
+  const tek = { dur: {} };
+  assert.equal(yolcuPozu(tek, 0, 5, 0), 'dur');
+  const onlu = { dur: {}, on: {} };
+  assert.equal(yolcuPozu(onlu, 1, 5, 3), 'on');
+  assert.equal(yolcuPozu(onlu, 5, 1, 3), 'dur'); // yana: sırtı dönük (yönüne göre çevrilir)
+  assert.equal(yolcuPozu(onlu, 0, -5, 3), 'dur');
+  const tam = { dur: {}, on: {}, yuru1: {}, yuru2: {}, arka1: {}, arka2: {} };
+  assert.equal(yolcuPozu(tam, 5, 0, 3), 'yuru2');
+  assert.equal(yolcuPozu(tam, 0, -5, 2), 'arka1');
+  assert.equal(yolcuPozu(tam, 0, 5, 2), 'on');
 });
