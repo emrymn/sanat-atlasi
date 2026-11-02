@@ -3,6 +3,8 @@
 // kez dokunmak zorunda kalıyordu. Kısa, kıpırdamayan bir dokunuştan sonra kısa süre içinde o öğeye tıklama gelmezse
 // tıklama burada üretilir. Tıklama zaten geldiyse hiçbir şey yapılmaz (çift gezinme ya da çift işlem olmaz).
 
+import { tikleriKur } from './titresim.js';
+
 const HEDEF = 'a[href], button, [role="button"], summary, label, .eser, [data-kucuk]';
 const HARIC = 'input, select, textarea, [contenteditable], .gor, #sekmeler, [data-dokunus-yok]';
 const KIPIRTI = 10; // px
@@ -38,9 +40,6 @@ export function dokunuslariKoru() {
   document.addEventListener(
     'click',
     (e) => {
-      // titreşim için kodla tıklanan gizli anahtar (js/titresim.js) gerçek tıklama sayılmaz: sayılsaydı asıl dokunuş
-      // "yutuldu" sanılıp 180 ms sonra ikinci kez tıklanıyordu (Ayarlar'daki anahtar geri kapanıyordu)
-      if (e.target && e.target.closest && e.target.closest('[data-titresim-gizli]')) return;
       sonTiklama = { el: e.target, zaman: performance.now() };
     },
     { capture: true },
@@ -64,4 +63,5 @@ export function dokunuslariKoru() {
     },
     { capture: true, passive: true },
   );
+  tikleriKur(); // İş 106: tıklama kaydedicisinden sonra (o, etiketin tıklamasını da görsün)
 }
