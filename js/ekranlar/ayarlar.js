@@ -12,6 +12,7 @@ import { yedekTarihiYaz } from './bugun.js';
 import { yarimSil } from './pekistir.js';
 import { SURUM } from '../surum.js';
 import { egimVar, izinGerekli, egimIzni, izinVarMi } from '../egim.js';
+import { titret } from '../titresim.js';
 import { ikon } from '../tasarim.js';
 import { kacis } from '../yardimci.js';
 import { vadeSayisi, yarinVade } from '../gecmis.js';
@@ -83,6 +84,8 @@ export function ayarlarSayfasi() {
       <div class="ayar"><label class="konu"><span class="metin"><b>Simge rozeti</b><small>${rozetDestekli() ? 'Ana ekrandaki Atlas simgesinde tekrarı gelen sanatçı sayısı görünür. İzin ister; sayı uygulama kapanırken yarının sayısına ayarlanır.' : 'Bu tarayıcı simge rozetini desteklemiyor (iOS 16.4+ ana ekran uygulaması gerekir).'}</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-rozet ${a.rozet ? 'checked' : ''} ${rozetDestekli() ? '' : 'disabled'} aria-label="Simge rozeti"></label>
         <p class="mesaj" id="rozet-mesaj" aria-live="polite"></p></div>
+      <div class="ayar"><label class="konu"><span class="metin"><b>Titreşim</b><small>Cevap verince telefon hafifçe titrer: doğruda bir kez, yanlışta iki kez. iPhone’da iOS 18 ve sonrası gerekir; Ayarlar → Sesler ve Dokunuş → Sistem Dokunuşları açık olmalı.</small></span>
+        <input class="anahtar" type="checkbox" role="switch" data-ayar-titresim data-test="ayar-titresim" ${a.titresim !== false ? 'checked' : ''} aria-label="Titreşim"></label></div>
       <div class="ayar"><label class="konu"><span class="metin"><b>Telefonu eğince tablo oynasın</b><small>${egimVar() ? 'Bugün’deki günün tablosu telefonu sağa sola çevirdikçe, öne arkaya eğdikçe hafifçe döner, ışık üstünden kayar; sergi duvarında ve Koleksiyonum’da tablolar ipinden sallanır, Pekiştir’deki deste yelpaze açılır.' + (izinGerekli() ? ' iPhone hareket izni ister ve uygulama kapanınca çoğu zaman unutur: o zaman Bugün’deki ya da buradaki düğmeyle yeniden ver.' : '') : 'Bu tarayıcı hareket algılayıcısını desteklemiyor.'}</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-egim ${a.egim !== false ? 'checked' : ''} ${egimVar() ? '' : 'disabled'} aria-label="Telefonu eğince tablo oynasın"></label>
         <button class="dugme ince" type="button" data-egim-izin data-test="egim-izin" hidden>${ikon('hareket', 18, 1.6)} Hareket iznini ver</button>
@@ -434,6 +437,12 @@ export function olaylariBagla() {
       else await rozetYaz(0);
       m.className = 'mesaj tamam';
       m.textContent = e.target.checked ? 'Rozet açıldı.' : 'Rozet kapatıldı.';
+      return;
+    }
+    if (e.target.matches('[data-ayar-titresim]')) {
+      d.ilerleme.ayarlar.titresim = e.target.checked;
+      kaydet();
+      if (e.target.checked) titret('dogru'); // açınca bir kez: hissedilip hissedilmediği hemen anlaşılsın
       return;
     }
     if (e.target.matches('[data-ayar-egim]')) {

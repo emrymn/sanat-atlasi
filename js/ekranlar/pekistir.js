@@ -88,6 +88,7 @@ import { sallanmaBaslat } from '../sallanma.js';
 import { dinleEkle } from '../kunye.js';
 import { desteBaslat } from '../deste.js';
 import { cerceveTipi } from '../cerceve.js';
+import { titret } from '../titresim.js';
 
 // ---------- İş 24 · harita bölümleri ----------
 const BOLUM_SV_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor', tanitim: 'Tanıtım', 'tanitim-orta': 'Orta tanıtımı' };
@@ -1325,6 +1326,7 @@ function sanatciCevapla(o, deger) {
   k.cevapSanatci = deger;
   const dogru = deger === k.id;
   const bilmiyor = deger === BILMIYORUM;
+  titret(dogru ? 'dogru' : 'yanlis', d.ilerleme.ayarlar.titresim !== false); // İş 106
   k.karisanSayi = dogru || bilmiyor ? 0 : karisanEkle(d.ilerleme, k.id, deger, bugun());
   skor(k.id).sanatci = cevapla(skor(k.id).sanatci, dogru, bugun());
   const akim = d.harita.get(k.id).akim;
@@ -1348,6 +1350,7 @@ function akimCevapla(o, deger) {
   const s = d.harita.get(k.id);
   k.cevapAkim = deger;
   const dogru = deger === s.akim;
+  titret(dogru ? 'dogru' : 'yanlis', d.ilerleme.ayarlar.titresim !== false); // İş 106
   skor(k.id).akim = cevapla(skor(k.id).akim, dogru, bugun());
   kartiBitir(o, dogru && k.cevapSanatci === k.id);
   yarimKaydet(o);

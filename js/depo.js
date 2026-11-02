@@ -19,7 +19,7 @@ export function varsayilanIlerleme(islenen = []) {
   return {
     surum: SURUM,
     islenen: islenen.slice(),
-    ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA, tanisma: true, rozet: false, egim: true },
+    ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA, tanisma: true, rozet: false, egim: true, titresim: true },
     skorlar: {},
     gunluk: { tarih: bugunStr(), yeni: 0, kart: 0, yeniIdler: [] },
     sonEserler: {},
@@ -72,6 +72,7 @@ export function ilerlemeDogrula(nesne) {
   ayarlar.tanisma = ayarlar.tanisma !== false;
   ayarlar.rozet = ayarlar.rozet === true;
   ayarlar.egim = ayarlar.egim !== false;
+  ayarlar.titresim = ayarlar.titresim !== false; // İş 106
   return {
     ...t,
     islenen: [...new Set(v.islenen)].sort((a, b) => a - b),
