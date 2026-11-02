@@ -71,3 +71,16 @@ test('okunuş kaydı service worker üzerinden parça parça (Range → 206) gel
   expect(await parca()).toMatchObject({ durum: 206, boy: 2 });
   await context.setOffline(false);
 });
+
+// Sitedeki başka sayfalar (ör. deneme/titresim.html) service worker'ın denetimindeyken de kendileri açılır;
+// eskiden her sayfa isteğine uygulamanın kabuğu dönüyor, göreli yollar bozulup "Yükleniyor…"da kalıyordu
+test('service worker etkinken uygulama dışı sayfa (deneme/titresim.html) kendisi açılır', async ({ page }) => {
+  await page.goto('./');
+  await page.evaluate(async () => navigator.serviceWorker.ready);
+  await page.reload();
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller)).toBe(true);
+  await page.goto('./deneme/titresim.html');
+  await expect(page.getByRole('heading', { name: 'Titreşim denemesi' })).toBeVisible();
+  await page.goto('./');
+  await expect(page.getByRole('heading', { name: 'Sanat Atlası' })).toBeVisible();
+});

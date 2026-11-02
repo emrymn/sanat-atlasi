@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.56.15';
+const SURUM = '1.57.3';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -75,6 +75,7 @@ const KABUK_DOSYALARI = [
   'js/seviye.js',
   'js/surum.js',
   'js/tasarim.js',
+  'js/titresim.js',
   'js/ters.js',
   'js/turlar.js',
   'js/arama.js',
@@ -225,7 +226,13 @@ self.addEventListener('fetch', (e) => {
 async function kabuk(istek) {
   const c = await caches.open(KABUK);
   if (istek.mode === 'navigate') {
-    const k = await c.match(new URL('index.html', self.registration.scope).href);
+    // Yalnız uygulamanın kendi adresi (kök ya da index.html) kabuktan gelir; sitedeki başka sayfalar (ör.
+    // deneme/titresim.html) ağdan: yoksa onlar da uygulamaya dönüşüp göreli yolları bulamıyor, "Yükleniyor…"da kalıyordu
+    const kok = new URL(self.registration.scope).pathname;
+    const yol = new URL(istek.url).pathname;
+    const indexUrl = new URL('index.html', self.registration.scope).href;
+    if (yol !== kok && yol !== `${kok}index.html`) return fetch(istek).catch(() => c.match(indexUrl));
+    const k = await c.match(indexUrl);
     if (k) return k;
     return fetch(istek);
   }
