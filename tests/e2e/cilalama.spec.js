@@ -936,6 +936,12 @@ test('İş 83/100: günün tablosu çözünürlük, ekrana oturuş ve bilinirlik
   await sec('jacques-louis-david');
   await page.goto('./#/');
   await expect(page.locator('[data-gunun-gorsel] > img')).toHaveAttribute('alt', /Napolyon/, { timeout: 10000 });
+  // Emre: "tamamen dik resimler arasından seç": geniş pencerede (Mac) de yatay tablo gelmez, telefondakiyle aynı tablo
+  await page.setViewportSize({ width: 1000, height: 1060 });
+  await page.goto('./#/ayarlar');
+  await sec('titian');
+  await page.goto('./#/');
+  await expect(page.locator('[data-gunun-gorsel] > img')).toHaveAttribute('alt', /Göğe Yükselişi/, { timeout: 10000 });
 });
 
 // İş 89: Galeri'nin bölüm şeritleri (Akımlar / Başyapıtlar / Konular / Zaman, konu grupları) sayfa gibi büyüyerek

@@ -630,9 +630,17 @@ export function gununEseri(eserler) {
   // keskin.js onu yükler). Örnekler: Klimt'te Judith I (%6 kırpma), van Eyck'te Meryem'e Müjde (%18; Arnolfini %37),
   // Velázquez'de Nedimeler (%47) yerine Çarmıha Gerilmiş İsa (%31). Emre üçüncü kez: "popülerliği daha da azalt, resmin
   // dik ve kaliteli olması en önemli şey": kalite 2,5, oturuş 7, bilinirlik 0,2 (AGIRLIK'ın açıklaması).
-  const adaylar = kaliteSirasi(eserler)
-    .map((e) => ({ e, q: gorselKalitesi(e), k: ekranKirpmasi(secilenGorsel(e, kotuler())) }))
+  // Emre (Titian'da yatay Uyuyan Venüs, geniş pencerede az kırpılıyor sayıldı): "böyle çok yarım resim var, tamamen dik
+  // resimler arasından seçim yap": dikey tablosu olan sanatçıda yalnız dikey tablolar (en/boy ≤ 0,85) aday olur; kırpma
+  // hangi ekranda açılırsa açılsın yalnız bunların arasında karşılaştırılır.
+  const tumu = kaliteSirasi(eserler)
+    .map((e) => {
+      const g = secilenGorsel(e, kotuler());
+      return { e, q: gorselKalitesi(e), k: ekranKirpmasi(g), o: gorselOrani(g) ?? 9 };
+    })
     .filter((x) => x.q >= 1 && x.k < 1);
+  const dikler = tumu.filter((x) => x.o <= DIKEY_ORAN);
+  const adaylar = dikler.length ? dikler : tumu;
   if (adaylar.length) {
     const sinirda = adaylar.filter((x) => x.k <= KIRPMA_SINIRI);
     const l = sinirda.length ? sinirda : adaylar;
@@ -661,11 +669,13 @@ export function gununPuani({ e, q, k }, enCok) {
   return AGIRLIK.kalite * (KALITE_PUANI[q] || 0) + AGIRLIK.oturus * Math.max(0, 1 - k / KIRPMA_SINIRI) + AGIRLIK.bilinirlik * bilinirlik;
 }
 // tablonun ekranı kaplarken kırpılan payı (0 hiç, 1 bilinmiyor)
+// Seçim her zaman telefon ekranına (iPhone 13, 390×844) göre: geniş pencerede (Mac) yatay tablolar az kırpılıyor sayılıp
+// seçiliyordu; böylece günün tablosu her cihazda aynı ve dikey
+const EKRAN_ORANI = 390 / 844;
 function ekranKirpmasi(g) {
   const o = g && gorselOrani(g);
   if (!o) return 1;
-  const ekranOrani = typeof innerWidth !== 'undefined' && innerHeight ? innerWidth / innerHeight : 0.46;
-  return o > ekranOrani ? 1 - ekranOrani / o : 1 - o / ekranOrani;
+  return o > EKRAN_ORANI ? 1 - EKRAN_ORANI / o : 1 - o / EKRAN_ORANI;
 }
 
 // İş 82: eserin görsel kalitesi: 3 en büyük kopyası (4096 px) var; 2 uygulamayla gelen 1280 px kopyası var; 1 yalnız
