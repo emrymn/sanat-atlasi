@@ -911,7 +911,7 @@ test.describe('İş 82: günün sanatçısının görselleri', () => {
 });
 
 // İş 83/100: Tuval'in tablosu ekranı kaplar: çözünürlüğü, ekrana oturuşu ve bilinirliği birlikte en iyi olan tablo.
-// Leonardo'da Mona Lisa (kırpması Kayalıklar Meryemi'ne yakın, çok daha bilinen); Rembrandt'ta en bilinen Gece
+// Leonardo'da ekrana daha iyi oturan Benois Madonnası (Mona Lisa daha bilinen ama daha çok kırpılır); Rembrandt'ta en bilinen Gece
 // Devriyesi değil (%62 kırpılır); David'de ekrana iyi oturan Napolyon kalır (Marat'nın Ölümü daha bilinen ama %41)
 test('İş 83/100: günün tablosu çözünürlük, ekrana oturuş ve bilinirlikte en iyisi', async ({ page, context }) => {
   await agiHazirla(context);
@@ -925,7 +925,7 @@ test('İş 83/100: günün tablosu çözünürlük, ekrana oturuş ve bilinirlik
     }, id);
   await sec('leonardo-da-vinci');
   await page.goto('./#/');
-  await expect(page.locator('[data-gunun-gorsel] > img')).toHaveAttribute('alt', /Mona Lisa/, { timeout: 10000 });
+  await expect(page.locator('[data-gunun-gorsel] > img')).toHaveAttribute('alt', /Benois/, { timeout: 10000 });
   await page.goto('./#/ayarlar');
   await sec('rembrandt-van-rijn');
   await page.goto('./#/');
