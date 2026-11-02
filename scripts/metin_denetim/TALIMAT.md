@@ -19,6 +19,17 @@ Yalnız Türkçe metin değerlerine bak (anahtar adlarına, kimliklere, sayılar
 sonuç biçimi aşağıdakiyle aynı; `yol` örneği: `sanatcilar.simone-martini.metin`. **`mevcut` alanını dosyadan kopyala**:
 ilk turda dosyada olmayan iki alıntı yazılmıştı ("göşe", "Müdje"); bu tür bulgular doğrudan reddedilir.
 
+## 3. tur
+
+`data/biyografiler.json` → `sanatcilar` altındaki **76. kayıttan sonuna kadar** (dosyadaki sırayla; `metin` alanları).
+
+## 4.–7. tur: eser notları
+
+`data/eser_notlari.json` → `notlar` (1862 kısa not; anahtar Wikidata kimliği, ör. `Q3947103`). Dosyadaki sırayla:
+4. tur 1–466. not · 5. tur 467–932 · 6. tur 933–1398 · 7. tur 1399–1862. `yol` örneği: `notlar.Q3947103`.
+Notlar tek tek kısa; anlam bütünlüğüne ve eser–sanatçı–tarih tutarlılığına da bak (bir not başka bir esere ait
+görünüyorsa `olgu`, `"emin": false`).
+
 ## Ne bildireceksin
 
 | tur | örnek |
