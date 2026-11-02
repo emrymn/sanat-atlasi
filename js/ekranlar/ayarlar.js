@@ -85,7 +85,8 @@ export function ayarlarSayfasi() {
         <input class="anahtar" type="checkbox" role="switch" data-ayar-rozet ${a.rozet ? 'checked' : ''} ${rozetDestekli() ? '' : 'disabled'} aria-label="Simge rozeti"></label>
         <p class="mesaj" id="rozet-mesaj" aria-live="polite"></p></div>
       <div class="ayar"><label class="konu"><span class="metin"><b>Titreşim</b><small>Cevap verince telefon hafifçe titrer: doğruda bir kez, yanlışta iki kez. iPhone’da iOS 18 ve sonrası gerekir; Ayarlar → Sesler ve Dokunuş → Sistem Dokunuşları açık olmalı.</small></span>
-        <input class="anahtar" type="checkbox" role="switch" data-ayar-titresim data-test="ayar-titresim" ${a.titresim !== false ? 'checked' : ''} aria-label="Titreşim"></label></div>
+        <input class="anahtar" type="checkbox" role="switch" data-ayar-titresim data-test="ayar-titresim" ${a.titresim !== false ? 'checked' : ''} aria-label="Titreşim"></label>
+        <button class="dugme ince" type="button" data-titresim-dene data-test="titresim-dene">Titreşimi dene</button></div>
       <div class="ayar"><label class="konu"><span class="metin"><b>Telefonu eğince tablo oynasın</b><small>${egimVar() ? 'Bugün’deki günün tablosu telefonu sağa sola çevirdikçe, öne arkaya eğdikçe hafifçe döner, ışık üstünden kayar; sergi duvarında ve Koleksiyonum’da tablolar ipinden sallanır, Pekiştir’deki deste yelpaze açılır.' + (izinGerekli() ? ' iPhone hareket izni ister ve uygulama kapanınca çoğu zaman unutur: o zaman Bugün’deki ya da buradaki düğmeyle yeniden ver.' : '') : 'Bu tarayıcı hareket algılayıcısını desteklemiyor.'}</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-egim ${a.egim !== false ? 'checked' : ''} ${egimVar() ? '' : 'disabled'} aria-label="Telefonu eğince tablo oynasın"></label>
         <button class="dugme ince" type="button" data-egim-izin data-test="egim-izin" hidden>${ikon('hareket', 18, 1.6)} Hareket iznini ver</button>
@@ -320,6 +321,10 @@ async function devasaSil() {
 // Ekranın olay dinleyicileri; app.js özgün sırayla bir kez bağlar
 export function olaylariBagla() {
   ekran.addEventListener('click', async (e) => {
+    if (e.target.closest('[data-titresim-dene]')) {
+      titret('dogru'); // dokunuşun içinde, eşzamanlı (iOS yalnız böyle titretir)
+      return;
+    }
     const kb = e.target.closest('[data-kart]');
     if (kb) {
       const a = d.ilerleme.ayarlar;
@@ -440,9 +445,10 @@ export function olaylariBagla() {
       return;
     }
     if (e.target.matches('[data-ayar-titresim]')) {
+      // anahtarın değişme olayında titretilmez: iPhone'da gizli anahtara tıklamak bu anahtarı geri çeviriyordu
+      // (Emre: "titreşim tuşuna bastığımda açılmıyor"); denemek için yanındaki düğme
       d.ilerleme.ayarlar.titresim = e.target.checked;
       kaydet();
-      if (e.target.checked) titret('dogru'); // açınca bir kez: hissedilip hissedilmediği hemen anlaşılsın
       return;
     }
     if (e.target.matches('[data-ayar-egim]')) {

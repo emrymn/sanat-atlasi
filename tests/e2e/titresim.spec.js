@@ -24,6 +24,15 @@ test('İş 106: cevap verince titreşir (doğru 1, yanlış 2 darbe); Ayarlar’
   await anahtar.click({ force: true });
   await expect(anahtar).not.toBeChecked();
   expect(await page.evaluate(() => window.__atlas.ilerleme.ayarlar.titresim)).toBe(false);
+  // anahtar değişirken titretmez (iPhone'da anahtarı geri çeviriyordu); "Titreşimi dene" düğmesi titretir
+  const once = await page.evaluate(() => window.__titresim.length);
+  await anahtar.click({ force: true });
+  await expect(anahtar).toBeChecked();
+  expect(await page.evaluate(() => window.__titresim.length)).toBe(once);
+  await page.locator('[data-test="titresim-dene"]').click();
+  expect(await page.evaluate(() => window.__titresim.length)).toBe(once + 1);
+  await anahtar.click({ force: true });
+  await expect(anahtar).not.toBeChecked();
   await page.evaluate(() => (window.__titresim.length = 0));
   // yarım kalan tur: devam et, sıradaki karta geç
   await page.goto('./#/pekistir/devam');
