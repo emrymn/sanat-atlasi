@@ -12,6 +12,11 @@
   button small { display: block; font-weight: 400; color: #b0a593; }
   .elle { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border: 1px dashed #5b4f40; border-radius: 12px; margin: 10px 0; }
   .elle input { transform: scale(1.4); }
+  .kart { position: relative; display: block; min-height: 52px; margin: 10px 0; border: 1px solid #8a6d3b; border-radius: 12px; background: #2e2820; padding: 10px 14px; font-weight: 600; overflow: hidden; -webkit-user-select: none; user-select: none; }
+  .kart small { display: block; font-weight: 400; color: #b0a593; }
+  .kart .saydam { position: absolute; right: 8px; top: 50%; margin: -12px 0 0; opacity: 0.01; pointer-events: none; }
+  .kart .ortu { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0.01; }
+  .sayac { font-weight: 400; color: #d8b36a; }
   #bilgi { font-size: 14px; color: #b0a593; word-break: break-word; }
 </style>
 </head>
@@ -22,6 +27,12 @@
 
 <div class="elle"><input type="checkbox" switch id="elle"><label for="elle"><b>0 · Elle anahtar</b><br><small>Bu anahtarı parmağınla aç/kapa. Bu bile titremiyorsa telefonda Sistem Dokunuşları kapalı ya da iOS desteklemiyor.</small></label></div>
 
+<p><b>Yeni (6–8):</b> bunlarda kod tıklamıyor, parmağın doğrudan uygulamadaki cevap düğmesine benzeyen kutuya değiyor. Her birine birkaç kez bas.</p>
+<label class="kart">6 · Düğmenin içinde saydam anahtar <span class="sayac" data-sayac></span><small>anahtar ekranda ama görünmez; etikete basıyorsun</small><input class="saydam" type="checkbox" switch tabindex="-1"></label>
+<label class="kart">7 · Düğmenin içinde gizli anahtar <span class="sayac" data-sayac></span><small>anahtar display: none; etikete basıyorsun</small><input type="checkbox" switch tabindex="-1" style="display:none"></label>
+<div class="kart">8 · Düğmenin üstünü kaplayan saydam anahtar <span class="sayac" data-sayac></span><small>parmağın doğrudan anahtara değiyor</small><input class="ortu" type="checkbox" switch tabindex="-1"></div>
+
+<p><b>Eski (1–5):</b></p>
 <button data-y="1">1 · Gizli anahtar (display: none)<small>Uygulamadaki şu anki yöntem</small></button>
 <button data-y="2">2 · Görünmez ama ekranda anahtar<small>1 piksel, saydam</small></button>
 <button data-y="3">3 · Gizli anahtarın kendisine tıklama<small>etiket yerine kutuya</small></button>
@@ -49,6 +60,11 @@
     4: () => document.getElementById('elle').click(),
     5: () => alert(typeof navigator.vibrate === 'function' ? 'vibrate var: ' + navigator.vibrate(200) : 'vibrate yok'),
   };
+  document.querySelectorAll('.kart input').forEach((i) => i.addEventListener('change', () => {
+    const s = i.closest('.kart').querySelector('[data-sayac]');
+    s.textContent = '· ' + (Number(s.dataset.n || 0) + 1) + ' kez';
+    s.dataset.n = Number(s.dataset.n || 0) + 1;
+  }));
   document.addEventListener('click', (e) => {
     const b = e.target.closest('button[data-y]');
     if (b) yollar[b.dataset.y]();
