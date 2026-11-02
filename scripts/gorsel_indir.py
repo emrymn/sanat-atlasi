@@ -184,8 +184,8 @@ def main():
             yaz()
             print(f'{n}/{len(secim)} · inen {len(harita)} · başarısız {basarisiz}', flush=True)
     yaz()
-    boyut = sum(p.stat().st_size for p in HEDEF.rglob('*.jpg')) / 1e6
-    print(f'\nBitti · {len(harita)} görsel · {boyut:.0f} MB · başarısız {basarisiz} (yeniden çalıştırınca tekrar denenir)')
+    toplam_mb = sum(p.stat().st_size for p in HEDEF.rglob('*.jpg')) / 1e6
+    print(f'\nBitti · {len(harita)} görsel · {toplam_mb:.0f} MB · başarısız {basarisiz} (yeniden çalıştırınca tekrar denenir)')
 
 
 if __name__ == '__main__':
