@@ -10,6 +10,7 @@ function iosTik() {
   if (typeof document === 'undefined') return;
   const etiket = document.createElement('label');
   etiket.setAttribute('aria-hidden', 'true');
+  etiket.setAttribute('data-titresim-gizli', ''); // js/dokunus.js bu tıklamayı saymaz
   etiket.style.display = 'none';
   const kutu = document.createElement('input');
   kutu.type = 'checkbox';

@@ -47,3 +47,34 @@ test('İş 106: cevap verince titreşir (doğru 1, yanlış 2 darbe); Ayarlar’
   await expect(page.locator('[data-test="sonuc"]')).toBeVisible();
   expect(await page.evaluate(() => window.__titresim.length)).toBe(0);
 });
+
+// iPhone yolu (vibrate yok): gizli anahtara kodla tıklama, dokunuş korumasına (js/dokunus.js) "son tıklama" diye
+// yazılıp asıl düğmenin 180 ms sonra ikinci kez tıklanmasına yol açıyordu (Ayarlar'daki anahtar geri kapanıyordu)
+test.describe('dokunmatik', () => {
+  test.use({ hasTouch: true, isMobile: true });
+  test('İş 106: iPhone yolunda dokunuş tek tıklama sayılır; Titreşim anahtarı açık kalır', async ({ page, context }) => {
+    await agiHazirla(context);
+    await context.addInitScript(() => {
+      delete Navigator.prototype.vibrate;
+    });
+    await page.goto('./#/ayarlar');
+    const dene = page.locator('[data-test="titresim-dene"]');
+    await dene.waitFor();
+    await page.evaluate(() => {
+      window.__tik = 0;
+      document.querySelector('[data-test="titresim-dene"]').addEventListener('click', () => window.__tik++);
+    });
+    await dene.tap();
+    await page.waitForTimeout(500);
+    expect(await page.evaluate(() => window.__tik)).toBe(1);
+    // anahtar: kapat, aç; açık kalır
+    const anahtar = page.locator('[data-test="ayar-titresim"]');
+    const satir = page.locator('label.konu', { has: anahtar });
+    await satir.tap();
+    await page.waitForTimeout(500);
+    await expect(anahtar).not.toBeChecked();
+    await satir.tap();
+    await page.waitForTimeout(500);
+    await expect(anahtar).toBeChecked();
+  });
+});

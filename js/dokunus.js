@@ -38,6 +38,9 @@ export function dokunuslariKoru() {
   document.addEventListener(
     'click',
     (e) => {
+      // titreşim için kodla tıklanan gizli anahtar (js/titresim.js) gerçek tıklama sayılmaz: sayılsaydı asıl dokunuş
+      // "yutuldu" sanılıp 180 ms sonra ikinci kez tıklanıyordu (Ayarlar'daki anahtar geri kapanıyordu)
+      if (e.target && e.target.closest && e.target.closest('[data-titresim-gizli]')) return;
       sonTiklama = { el: e.target, zaman: performance.now() };
     },
     { capture: true },
