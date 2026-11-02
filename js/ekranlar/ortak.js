@@ -624,10 +624,12 @@ export function gununEseri(eserler) {
   // seç"): eskiden önce çözünürlük, sonra en çok %30 kırpılanlar arasında en bilineni, yoksa en az kırpılanı; dikey
   // tabloların çoğu telefonda %35–45 kırpıldığından çoğu zaman en az kırpılan, en az bilinen eser geliyordu (145
   // sanatçının 17'sinde en bilinen eser). Şimdi üç ölçüt birlikte puanlanır (gununPuani); başka seçenek varken %60'tan
-  // çok kırpılan seçilmez. Sonuç: seçilenin bilinirliği en bilinenin ortancada %46'sından %64'üne, kırpma ortancası
-  // %29'dan %33'e; hepsinin en büyük (4096 px) kopyası var (ekrana gelince keskin.js onu yükler). Örnekler: Leonardo'da
-  // Kayalıklar Meryemi yerine Mona Lisa, Vermeer'de İnci Küpeli Kız, Munch'ta Çığlık; Klimt'te Judith I (%6 kırpma)
-  // ve van Eyck'te Meryem'e Müjde (%18; Arnolfini %37) kalır.
+  // çok kırpılan seçilmez. Emre ardından: "dikey olmasına daha çok oran ver, popülerliği azalt": ekrana oturuş 1 → 2,
+  // bilinirlik 1 → 0,7. Sonuç: seçilenin bilinirliği en bilinenin ortancada %46'sından %50'sine, kırpma ortancası %29'dan
+  // %30'a (ortalama %26; 45 sanatçıda %20'nin altında); hepsinin en büyük (4096 px) kopyası var (ekrana gelince
+  // keskin.js onu yükler). Örnekler: Leonardo'da Kayalıklar Meryemi yerine Mona Lisa, Vermeer'de İnci Küpeli Kız,
+  // Gainsborough'da Mavi Çocuk; Klimt'te Judith I (%6 kırpma), van Eyck'te Meryem'e Müjde (%18; Arnolfini %37),
+  // Velázquez'de Nedimeler (%47) yerine Çarmıha Gerilmiş İsa (%31).
   const adaylar = kaliteSirasi(eserler)
     .map((e) => ({ e, q: gorselKalitesi(e), k: ekranKirpmasi(secilenGorsel(e, kotuler())) }))
     .filter((x) => x.q >= 1 && x.k < 1);
@@ -646,12 +648,13 @@ export function gununEseri(eserler) {
 }
 const KIRPMA_SINIRI = 0.6;
 const KALITE_PUANI = { 3: 1, 2: 0.55, 1: 0.2 }; // en büyük kopya / 1280 px kopya / yalnız uzak adres (gorselKalitesi)
-// Çözünürlük (ağırlığı 2: ekranı kaplayan tabloda bulanıklık en çok göze batar), ekrana oturuş (kırpılmayan 1, sınırda
-// kırpılan 0) ve bilinirlik (Wikidata'da maddesi olan dil sayısı, sanatçının en bilinenine oranla, logaritmik: 70 dil
-// ile 140 dil arasındaki fark 0 ile 10 dil arasındakinden azdır)
+// Çözünürlük (ağırlığı 2: ekranı kaplayan tabloda bulanıklık en çok göze batar), ekrana oturuş (ağırlığı 2; kırpılmayan
+// 1, sınırda kırpılan 0) ve bilinirlik (ağırlığı 0,7; Wikidata'da maddesi olan dil sayısı, sanatçının en bilinenine
+// oranla, logaritmik: 70 dil ile 140 dil arasındaki fark 0 ile 10 dil arasındakinden azdır)
+const AGIRLIK = { kalite: 2, oturus: 2, bilinirlik: 0.7 };
 export function gununPuani({ e, q, k }, enCok) {
   const bilinirlik = enCok > 0 ? Math.log1p(e.sl || 0) / Math.log1p(enCok) : 0;
-  return 2 * (KALITE_PUANI[q] || 0) + Math.max(0, 1 - k / KIRPMA_SINIRI) + bilinirlik;
+  return AGIRLIK.kalite * (KALITE_PUANI[q] || 0) + AGIRLIK.oturus * Math.max(0, 1 - k / KIRPMA_SINIRI) + AGIRLIK.bilinirlik * bilinirlik;
 }
 // tablonun ekranı kaplarken kırpılan payı (0 hiç, 1 bilinmiyor)
 function ekranKirpmasi(g) {

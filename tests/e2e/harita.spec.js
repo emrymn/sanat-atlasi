@@ -87,6 +87,16 @@ test('bölüm: tanıtım, Kolay %75 ile geçilince Orta açılır; Orta geçilin
       expect(an.length).toBeGreaterThan(0);
       expect(an.length).toBeLessThanOrEqual(5);
       await expect(page.locator('.tanisma-eser')).toHaveCount(an.length);
+      // İş 101: adın okunuşu ("Dinle") tanışmada da, adın altında
+      if (!Object.keys(gosterilen).length) {
+        const ad = await page.evaluate((id) => window.__atlas.harita.get(id).ad, sid);
+        await expect(page.locator('.tanisma-kartel [data-test="dinle"]')).toBeVisible();
+        await expect(page.locator('.tanisma-kartel [data-test="dinle"]')).toHaveAttribute('aria-label', new RegExp(ad));
+      }
+      // İş 101: düğmenin yanında IPA okunuşu (künyesinde varsa)
+      const ipa = await page.evaluate((id) => fetch('data/kunye.json').then((r) => r.json()).then((j) => j.kunye[id]?.ipa?.yazi || null), sid);
+      if (ipa) await expect(page.locator('.tanisma-kartel .isim-ek [data-test="ipa"]')).toContainText(ipa);
+      else await expect(page.locator('.tanisma-kartel [data-test="ipa"]')).toHaveCount(0);
       gosterilen[sid] = an;
       await gec.click();
       // düğme 340 ms "gidiyor" animasyonu oynar, sonra adım değişir: o sırada yeniden tıklamak boşa gider

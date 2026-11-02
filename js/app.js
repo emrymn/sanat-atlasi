@@ -4,7 +4,7 @@ import { akimOrtaYillari } from './celdirici.js';
 import { dokunuslariKoru } from './dokunus.js';
 import { gecisKur } from './gecis.js';
 import { kursKonulari } from './kurs.js';
-import { eserTurleriniAyarla, hazirOnbellek, eserAdlariniAyarla, adlariAl, kolaylikAl } from './eserler.js';
+import { eserTurleriniAyarla, hazirOnbellek, eserAdlariniAyarla, adlariAl, kolaylikAl, kopyalariAyarla } from './eserler.js';
 import { yerelGorselleriAyarla, oranlariAyarla, uzakGorselleriAyarla } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { ilerlemeYukle, gunlukGuncelle } from './depo.js';
@@ -68,7 +68,7 @@ async function basla() {
   const konularTrSozu = jsonGetir('data/konular_tr.json').catch(() => null);
   const ilerlemeSozu = ilerlemeYukle(() => jsonGetir('data/baslangic_ilerleme.json'));
   const yarimSozu = yarimYukle();
-  const [tumSanatcilar, akimlar, konular, turler, tanima, eserAd, zorluk, yerelG, oranG, uzakG] = await Promise.all([
+  const [tumSanatcilar, akimlar, konular, turler, tanima, eserAd, zorluk, yerelG, oranG, uzakG, kopyaG] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
     jsonGetir('data/konular.json'),
@@ -79,11 +79,13 @@ async function basla() {
     jsonGetir('data/yerel_gorseller.json').catch(() => null),
     jsonGetir('data/gorsel_oranlari.json').catch(() => null),
     jsonGetir('data/gorsel_kaynagi.json').catch(() => null),
+    jsonGetir('data/kopya_eserler.json').catch(() => null),
   ]);
   d.kisaAdlar = (await kisaSozu).adlar || {};
   d.konularTr = await konularTrSozu;
   d.tanimaNotlari = notlariAl(tanima);
   eserAdlariniAyarla(adlariAl(eserAd));
+  kopyalariAyarla(kopyaG); // İş 101: farklı adla iki kez kayıtlı aynı tablo
   d.kolaylik = kolaylikAl(zorluk);
   yerelGorselleriAyarla(yerelG && yerelG.gorseller, yerelG && yerelG.buyuk);
   uzakGorselleriAyarla(uzakG);
