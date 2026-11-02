@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Titreşim denemesi</title>
+<style>
+  body { font: 17px/1.5 -apple-system, system-ui, sans-serif; margin: 0; padding: 20px 16px 40px; background: #1d1a17; color: #efe7da; }
+  h1 { font-size: 22px; margin: 0 0 6px; }
+  p { margin: 6px 0 14px; color: #c9bfae; }
+  button { display: block; width: 100%; min-height: 52px; margin: 10px 0; border: 1px solid #5b4f40; border-radius: 12px; background: #26221e; color: #efe7da; font: 600 17px -apple-system, system-ui, sans-serif; text-align: left; padding: 10px 14px; }
+  button small { display: block; font-weight: 400; color: #b0a593; }
+  .elle { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border: 1px dashed #5b4f40; border-radius: 12px; margin: 10px 0; }
+  .elle input { transform: scale(1.4); }
+  #bilgi { font-size: 14px; color: #b0a593; word-break: break-word; }
+</style>
+</head>
+<body>
+<h1>Titreşim denemesi</h1>
+<p>Her düğmeye bir kez bas, telefonun titreyip titremediğine bak. Hangilerinin titrediğini Claude'a yaz (ör. "1 ve 4 titredi").</p>
+<p id="bilgi"></p>
+
+<div class="elle"><input type="checkbox" switch id="elle"><label for="elle"><b>0 · Elle anahtar</b><br><small>Bu anahtarı parmağınla aç/kapa. Bu bile titremiyorsa telefonda Sistem Dokunuşları kapalı ya da iOS desteklemiyor.</small></label></div>
+
+<button data-y="1">1 · Gizli anahtar (display: none)<small>Uygulamadaki şu anki yöntem</small></button>
+<button data-y="2">2 · Görünmez ama ekranda anahtar<small>1 piksel, saydam</small></button>
+<button data-y="3">3 · Gizli anahtarın kendisine tıklama<small>etiket yerine kutuya</small></button>
+<button data-y="4">4 · Sayfadaki elle anahtarı kodla değiştir<small>0 numaralı anahtar</small></button>
+<button data-y="5">5 · navigator.vibrate<small>iPhone'da beklenmiyor, Android için</small></button>
+
+<script>
+  document.getElementById('bilgi').textContent = 'Tarayıcı: ' + navigator.userAgent + ' · Ana ekran uygulaması: ' + (navigator.standalone ? 'evet' : 'hayır');
+  function anahtar(stil, etiketeTikla) {
+    const l = document.createElement('label');
+    l.setAttribute('aria-hidden', 'true');
+    Object.assign(l.style, stil);
+    const i = document.createElement('input');
+    i.type = 'checkbox';
+    i.setAttribute('switch', '');
+    l.appendChild(i);
+    (stil.display === 'none' ? document.head : document.body).appendChild(l);
+    (etiketeTikla ? l : i).click();
+    l.remove();
+  }
+  const yollar = {
+    1: () => anahtar({ display: 'none' }, true),
+    2: () => anahtar({ position: 'fixed', left: '0', top: '0', width: '1px', height: '1px', opacity: '0.01', overflow: 'hidden' }, true),
+    3: () => anahtar({ display: 'none' }, false),
+    4: () => document.getElementById('elle').click(),
+    5: () => alert(typeof navigator.vibrate === 'function' ? 'vibrate var: ' + navigator.vibrate(200) : 'vibrate yok'),
+  };
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-y]');
+    if (b) yollar[b.dataset.y]();
+  });
+</script>
+</body>
+</html>
