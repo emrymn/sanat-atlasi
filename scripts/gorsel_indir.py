@@ -12,7 +12,7 @@ Kaynak 1280 px istenir (Wikimedia'nın standart küçük resim boyutu: önbellek
 Çıktı: gorseller/b/<ad>.jpg (en uzun kenar 1280: iPhone ekranının gerçek piksel genişliğine yakın, yakınlaştırmada daha net),
 gorseller/k/<ad>.jpg (400, ızgara küçük resmi) ve data/yerel_gorseller.json
 Yalnızca özgür lisanslı kaynaklar: Wikimedia Commons ve müzelerin CC0 açık erişim görselleri. WikiArt (telifli olabilir) alınmaz."""
-import hashlib, json, subprocess, sys, time, urllib.parse, urllib.request, urllib.error
+import hashlib, json, re, subprocess, sys, time, urllib.parse, urllib.request, urllib.error
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
@@ -120,6 +120,27 @@ def indir(url):
     return None
 
 
+def boyut(yol):
+    r = subprocess.run(['sips', '-g', 'pixelWidth', '-g', 'pixelHeight', str(yol)], capture_output=True, text=True)
+    s = dict(re.findall(r'pixel(Width|Height):\s*(\d+)', r.stdout))
+    return (int(s['Width']), int(s['Height'])) if len(s) == 2 else None
+
+
+# `sips -Z` küçük görseli de BÜYÜTÜR (İş 58d'deki hata; Emre: "önceki yaptığımda hepsini 4096'ya çevirmişti"): özgün boy
+# önce okunur, yalnız hedeften büyükse küçültülür. Met'in web-large görselleri ~600 px: 1280'e büyütülmez, öyle kalır
+# (en büyük kopya aşamasında Met'in özgün taraması iner). Sonuç hedeften büyük ya da özgünden büyük çıkarsa atılır.
+def kucult(ham, ozgun, cikti, en, kalite):
+    komut = ['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', kalite]
+    if max(ozgun) > en:
+        komut += ['-Z', str(en)]
+    r = subprocess.run(komut + [str(ham), '--out', str(cikti)], capture_output=True)
+    b = boyut(cikti) if not r.returncode and cikti.exists() else None
+    if not b or max(b) > min(en, max(ozgun)):
+        cikti.unlink(missing_ok=True)
+        return None
+    return b
+
+
 def main():
     if subprocess.run(['which', 'sips'], capture_output=True).returncode:
         sys.exit('sips bulunamadı (macOS gerekir).')
@@ -150,10 +171,11 @@ def main():
             continue
         ham = HEDEF / f'{ad}.ham'
         ham.write_bytes(veri)
-        r1 = subprocess.run(['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', '82', '-Z', '1280', str(ham), '--out', str(enbuyuk)], capture_output=True)
-        r2 = subprocess.run(['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', '75', '-Z', '400', str(ham), '--out', str(kucuk)], capture_output=True)
+        ozgun = boyut(ham)
+        r1 = kucult(ham, ozgun, enbuyuk, 1280, '82') if ozgun else None
+        r2 = kucult(ham, ozgun, kucuk, 400, '75') if ozgun else None
         ham.unlink(missing_ok=True)
-        if r1.returncode or r2.returncode:
+        if not (r1 and r2):
             basarisiz += 1
             continue
         harita[a] = ad
