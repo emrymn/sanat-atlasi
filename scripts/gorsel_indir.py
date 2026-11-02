@@ -88,6 +88,9 @@ EN_COK_DENEME = 40  # ≈ birkaç saat; bundan sonra bile inmiyorsa görsel bu t
 
 
 def indir(url):
+    # müze adreslerinde boşluk olabiliyor (Met "SF Lorenzetti.jpg"): urllib geçersiz sayıyordu (InvalidURL) ve betik
+    # bunu engel sanıp aynı görseli saatlerce yeniden deniyordu (devasa_indir.py getir ile aynı düzeltme)
+    url = urllib.parse.quote(url, safe=":/?&=%!,~+;@$'()*")
     for deneme in range(EN_COK_DENEME):
         try:
             req = urllib.request.Request(url, headers={'User-Agent': UA, 'AIC-User-Agent': UA})
@@ -101,6 +104,8 @@ def indir(url):
                 return None  # dosya yok ya da kalıcı engel: beklemek işe yaramaz
             neden = str(e.code)
             ra = e.headers.get('Retry-After') if e.headers else None
+        except ValueError:
+            return None  # geçersiz adres (InvalidURL ValueError'dır): beklemek işe yaramaz, atlanır
         except Exception as e:
             neden, ra = type(e).__name__, None
         DURUM['ardisik_ret'] += 1
