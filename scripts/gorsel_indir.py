@@ -3,7 +3,8 @@
 Böylece Wikimedia'nın hız sınırı (429) ve müze engelleri (403) bu görselleri etkilemez.
 
 Çalıştır (depo kökünde, macOS; küçültme için hazır gelen `sips` kullanılır):
-  python3 scripts/gorsel_indir.py              # hepsi
+  python3 scripts/gorsel_indir.py              # pekiştirme havuzu (sanatçı başına 12) ve başyapıtlar
+  python3 scripts/gorsel_indir.py --hepsi      # İş 102: uygulamadaki bütün eserler (WikiArt hariç; birkaç saat)
   python3 scripts/gorsel_indir.py --kapaklar   # yalnız İlerleme kitaplığının kapakları (scripts/kapaklar.mjs, node gerekir)
 Yarıda kalırsa yeniden çalıştır: inmiş dosyalar atlanır. Wikimedia'yı yormamak için istekler arası bekleme var (~1 saat).
 
@@ -11,7 +12,7 @@ Kaynak 1280 px istenir (Wikimedia'nın standart küçük resim boyutu: önbellek
 Çıktı: gorseller/b/<ad>.jpg (en uzun kenar 1280: iPhone ekranının gerçek piksel genişliğine yakın, yakınlaştırmada daha net),
 gorseller/k/<ad>.jpg (400, ızgara küçük resmi) ve data/yerel_gorseller.json
 Yalnızca özgür lisanslı kaynaklar: Wikimedia Commons ve müzelerin CC0 açık erişim görselleri. WikiArt (telifli olabilir) alınmaz."""
-import hashlib, json, subprocess, sys, time, urllib.parse, urllib.request, urllib.error
+import hashlib, json, re, subprocess, sys, time, urllib.parse, urllib.request, urllib.error
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
@@ -38,7 +39,7 @@ def kaynak_url(g):
     return ''  # wikiart ve bilinmeyenler alınmaz
 
 
-def secilecekler():
+def secilecekler(hepsi=False):
     ob = json.loads((KOK / 'data/eserler_onbellek.json').read_text())['sanatcilar']
     secim, buyuk = {}, set()
     for sid, v in ob.items():
@@ -49,7 +50,9 @@ def secilecekler():
                 continue
             secim[anahtar(g)] = g
             n += 1
-            if n >= HAVUZ:
+            # İş 102 (Emre: "geri kalan resimlerin de en büyük kalitede indirilmesini istiyorum, onları da R2'ye koyarız"):
+            # --hepsi ile sınır yok; 1280'likler depoya girmez (.gitignore: gorseller/b), yalnız R2'den gelir
+            if n >= HAVUZ and not hepsi:
                 break
     try:
         bas = json.loads((KOK / 'data/basyapitlar.json').read_text())['eserler']
@@ -85,6 +88,9 @@ EN_COK_DENEME = 40  # ≈ birkaç saat; bundan sonra bile inmiyorsa görsel bu t
 
 
 def indir(url):
+    # müze adreslerinde boşluk olabiliyor (Met "SF Lorenzetti.jpg"): urllib geçersiz sayıyordu (InvalidURL) ve betik
+    # bunu engel sanıp aynı görseli saatlerce yeniden deniyordu (devasa_indir.py getir ile aynı düzeltme)
+    url = urllib.parse.quote(url, safe=":/?&=%!,~+;@$'()*")
     for deneme in range(EN_COK_DENEME):
         try:
             req = urllib.request.Request(url, headers={'User-Agent': UA, 'AIC-User-Agent': UA})
@@ -98,6 +104,8 @@ def indir(url):
                 return None  # dosya yok ya da kalıcı engel: beklemek işe yaramaz
             neden = str(e.code)
             ra = e.headers.get('Retry-After') if e.headers else None
+        except ValueError:
+            return None  # geçersiz adres (InvalidURL ValueError'dır): beklemek işe yaramaz, atlanır
         except Exception as e:
             neden, ra = type(e).__name__, None
         DURUM['ardisik_ret'] += 1
@@ -112,6 +120,27 @@ def indir(url):
     return None
 
 
+def boyut(yol):
+    r = subprocess.run(['sips', '-g', 'pixelWidth', '-g', 'pixelHeight', str(yol)], capture_output=True, text=True)
+    s = dict(re.findall(r'pixel(Width|Height):\s*(\d+)', r.stdout))
+    return (int(s['Width']), int(s['Height'])) if len(s) == 2 else None
+
+
+# `sips -Z` küçük görseli de BÜYÜTÜR (İş 58d'deki hata; Emre: "önceki yaptığımda hepsini 4096'ya çevirmişti"): özgün boy
+# önce okunur, yalnız hedeften büyükse küçültülür. Met'in web-large görselleri ~600 px: 1280'e büyütülmez, öyle kalır
+# (en büyük kopya aşamasında Met'in özgün taraması iner). Sonuç hedeften büyük ya da özgünden büyük çıkarsa atılır.
+def kucult(ham, ozgun, cikti, en, kalite):
+    komut = ['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', kalite]
+    if max(ozgun) > en:
+        komut += ['-Z', str(en)]
+    r = subprocess.run(komut + [str(ham), '--out', str(cikti)], capture_output=True)
+    b = boyut(cikti) if not r.returncode and cikti.exists() else None
+    if not b or max(b) > min(en, max(ozgun)):
+        cikti.unlink(missing_ok=True)
+        return None
+    return b
+
+
 def main():
     if subprocess.run(['which', 'sips'], capture_output=True).returncode:
         sys.exit('sips bulunamadı (macOS gerekir).')
@@ -123,7 +152,7 @@ def main():
     if '--kapaklar' in sys.argv:
         secim = {anahtar(g): g for g in kapaklar() if kaynak_url(g)}
     else:
-        secim, _ = secilecekler()
+        secim, _ = secilecekler(hepsi='--hepsi' in sys.argv)
 
     def yaz():
         harita_yolu.write_text(json.dumps({'surum': 1, 'gorseller': harita, 'buyuk': sorted(buyukler)}, ensure_ascii=False, separators=(',', ':')))
@@ -142,10 +171,11 @@ def main():
             continue
         ham = HEDEF / f'{ad}.ham'
         ham.write_bytes(veri)
-        r1 = subprocess.run(['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', '82', '-Z', '1280', str(ham), '--out', str(enbuyuk)], capture_output=True)
-        r2 = subprocess.run(['sips', '-s', 'format', 'jpeg', '-s', 'formatOptions', '75', '-Z', '400', str(ham), '--out', str(kucuk)], capture_output=True)
+        ozgun = boyut(ham)
+        r1 = kucult(ham, ozgun, enbuyuk, 1280, '82') if ozgun else None
+        r2 = kucult(ham, ozgun, kucuk, 400, '75') if ozgun else None
         ham.unlink(missing_ok=True)
-        if r1.returncode or r2.returncode:
+        if not (r1 and r2):
             basarisiz += 1
             continue
         harita[a] = ad
@@ -154,8 +184,8 @@ def main():
             yaz()
             print(f'{n}/{len(secim)} · inen {len(harita)} · başarısız {basarisiz}', flush=True)
     yaz()
-    boyut = sum(p.stat().st_size for p in HEDEF.rglob('*.jpg')) / 1e6
-    print(f'\nBitti · {len(harita)} görsel · {boyut:.0f} MB · başarısız {basarisiz} (yeniden çalıştırınca tekrar denenir)')
+    toplam_mb = sum(p.stat().st_size for p in HEDEF.rglob('*.jpg')) / 1e6
+    print(f'\nBitti · {len(harita)} görsel · {toplam_mb:.0f} MB · başarısız {basarisiz} (yeniden çalıştırınca tekrar denenir)')
 
 
 if __name__ == '__main__':

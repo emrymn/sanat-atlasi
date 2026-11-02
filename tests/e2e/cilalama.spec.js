@@ -906,7 +906,7 @@ test.describe('İş 82: günün sanatçısının görselleri', () => {
     await page.waitForTimeout(1500);
     const srcler = await page.locator('[data-galeri] img').evaluateAll((l) => l.map((i) => i.getAttribute('src')));
     expect(srcler.some((s) => /Sala_amb_frescos/.test(s))).toBe(false);
-    expect(srcler[0]).toMatch(/gorseller\/[kb]\//);
+    expect(srcler[0]).toMatch(/gorseller\/k\/|noracloud\.ai\/b\//);
   });
 });
 

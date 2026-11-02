@@ -17,6 +17,12 @@ export async function agiHazirla(context, { tanisma = false } = {}) {
     /commons\.wikimedia\.org\/wiki\/Special:FilePath|upload\.wikimedia\.org|images\.metmuseum\.org|www\.artic\.edu\/iiif|api\.nga\.gov\/iiif|openaccess-cdn\.clevelandart\.org|uploads\d*\.wikiart\.org/,
     (r) => r.fulfill({ status: 200, contentType: 'image/png', body: resim, headers: { 'access-control-allow-origin': '*' } }),
   );
+  // İş 102: 1280'likler ve en büyük kopyalar R2'den (gorsel.noracloud.ai/b|d/<ad>.jpg); 1280'likler depoda yok
+  // (.gitignore). Testte büyük bir fikstür görsel (1200×1500) döner: yakınlaştırma ve keskinlik denetimleri gerçek boy ister
+  const buyukResim = fx('eser_buyuk.jpg');
+  await context.route(/gorsel\.noracloud\.ai\/|\.r2\.dev\/|\/gorseller\/b\/[0-9a-f]+\.jpg/, (r) =>
+    r.fulfill({ status: 200, contentType: 'image/jpeg', body: buyukResim, headers: { 'access-control-allow-origin': '*' } }),
+  );
   await context.route(/www\.wikidata\.org\/w\/api\.php/, (r) =>
     r.fulfill({
       status: 200,
