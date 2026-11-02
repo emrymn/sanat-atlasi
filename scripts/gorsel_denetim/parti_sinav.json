@@ -1,0 +1,242 @@
+[
+ {
+  "anahtar": "sinav:01",
+  "gorsel": "scripts/gorsel_denetim/sinav/01.jpg",
+  "sanatci": "Jan van Eyck",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait of a Man with a Blue Chaperon",
+  "yil": 1435
+ },
+ {
+  "anahtar": "sinav:02",
+  "gorsel": "scripts/gorsel_denetim/sinav/02.jpg",
+  "sanatci": "Jean-François Millet",
+  "akim": "Barbizon ve Realizm",
+  "baslik": "Shepherdess Seated on a Rock",
+  "yil": 1856
+ },
+ {
+  "anahtar": "sinav:03",
+  "gorsel": "scripts/gorsel_denetim/sinav/03.jpg",
+  "sanatci": "Petrus Christus",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Madonna ve çocuk",
+  "yil": 1452
+ },
+ {
+  "anahtar": "sinav:04",
+  "gorsel": "scripts/gorsel_denetim/sinav/04.jpg",
+  "sanatci": "Frans Hals",
+  "akim": "Hollanda Altın Çağı",
+  "baslik": "Militia Company of District XI under the Command of Captain Reynier Reael",
+  "yil": 1633
+ },
+ {
+  "anahtar": "sinav:05",
+  "gorsel": "scripts/gorsel_denetim/sinav/05.jpg",
+  "sanatci": "Paul Cézanne",
+  "akim": "Post-Empresyonizm",
+  "baslik": "Lady in Blue",
+  "yil": 1904
+ },
+ {
+  "anahtar": "sinav:06",
+  "gorsel": "scripts/gorsel_denetim/sinav/06.jpg",
+  "sanatci": "Jan Steen",
+  "akim": "Hollanda Altın Çağı",
+  "baslik": "The Doctor's Visit in a Rich Interior",
+  "yil": 1661
+ },
+ {
+  "anahtar": "sinav:07",
+  "gorsel": "scripts/gorsel_denetim/sinav/07.jpg",
+  "sanatci": "Guercino",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "baslik": "Martyrdom of St Catherine",
+  "yil": 1653
+ },
+ {
+  "anahtar": "sinav:08",
+  "gorsel": "scripts/gorsel_denetim/sinav/08.jpg",
+  "sanatci": "Anthony van Dyck",
+  "akim": "Flaman Barok",
+  "baslik": "Charles I (1600-1649) with M. de St Antoine",
+  "yil": 1636
+ },
+ {
+  "anahtar": "sinav:09",
+  "gorsel": "scripts/gorsel_denetim/sinav/09.jpg",
+  "sanatci": "Hyacinthe Rigaud",
+  "akim": "Fransız Klasisizmi",
+  "baslik": "Portrait of Armand Jean Le Bouthillier de Rancé",
+  "yil": 1696
+ },
+ {
+  "anahtar": "sinav:10",
+  "gorsel": "scripts/gorsel_denetim/sinav/10.jpg",
+  "sanatci": "Jan van Eyck",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Bir Adamın Portresi",
+  "yil": 1433
+ },
+ {
+  "anahtar": "sinav:11",
+  "gorsel": "scripts/gorsel_denetim/sinav/11.jpg",
+  "sanatci": "Simone Martini",
+  "akim": "Gotik",
+  "baslik": "The Annunciation",
+  "yil": 1333
+ },
+ {
+  "anahtar": "sinav:12",
+  "gorsel": "scripts/gorsel_denetim/sinav/12.jpg",
+  "sanatci": "Hendrick ter Brugghen",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "baslik": "Pilate washing his hands",
+  "yil": 1617
+ },
+ {
+  "anahtar": "sinav:13",
+  "gorsel": "scripts/gorsel_denetim/sinav/13.jpg",
+  "sanatci": "Angelica Kauffman",
+  "akim": "Neoklasisizm",
+  "baslik": "Venus Induces Helen to Fall in Love with Paris",
+  "yil": 1790
+ },
+ {
+  "anahtar": "sinav:14",
+  "gorsel": "scripts/gorsel_denetim/sinav/14.jpg",
+  "sanatci": "Francesco Solimena",
+  "akim": "Geç İtalyan Barok",
+  "baslik": "Madonna and Child with St Maurus",
+  "yil": null
+ },
+ {
+  "anahtar": "sinav:15",
+  "gorsel": "scripts/gorsel_denetim/sinav/15.jpg",
+  "sanatci": "Correggio",
+  "akim": "Yüksek Rönesans",
+  "baslik": "Martyrdom of Four Saints",
+  "yil": 1524
+ },
+ {
+  "anahtar": "sinav:16",
+  "gorsel": "scripts/gorsel_denetim/sinav/16.jpg",
+  "sanatci": "Franz Marc",
+  "akim": "Ekspresyonizm",
+  "baslik": "The Dream",
+  "yil": 1912
+ },
+ {
+  "anahtar": "sinav:17",
+  "gorsel": "scripts/gorsel_denetim/sinav/17.jpg",
+  "sanatci": "Georges de La Tour",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "baslik": "The Newborn",
+  "yil": 1645
+ },
+ {
+  "anahtar": "sinav:18",
+  "gorsel": "scripts/gorsel_denetim/sinav/18.jpg",
+  "sanatci": "William Blake",
+  "akim": "Romantizm",
+  "baslik": "The Body of Abel Found by Adam and Eve",
+  "yil": 1826
+ },
+ {
+  "anahtar": "sinav:19",
+  "gorsel": "scripts/gorsel_denetim/sinav/19.jpg",
+  "sanatci": "Paul Cézanne",
+  "akim": "Post-Empresyonizm",
+  "baslik": "Mardi Gras",
+  "yil": 1888
+ },
+ {
+  "anahtar": "sinav:20",
+  "gorsel": "scripts/gorsel_denetim/sinav/20.jpg",
+  "sanatci": "Pietro Perugino",
+  "akim": "Erken Rönesans",
+  "baslik": "Apollo and Marsyas",
+  "yil": 1497
+ },
+ {
+  "anahtar": "sinav:21",
+  "gorsel": "scripts/gorsel_denetim/sinav/21.jpg",
+  "sanatci": "Orazio Gentileschi",
+  "akim": "İtalyan Barok ve Caravaggizm",
+  "baslik": "David and Goliath",
+  "yil": 1605
+ },
+ {
+  "anahtar": "sinav:22",
+  "gorsel": "scripts/gorsel_denetim/sinav/22.jpg",
+  "sanatci": "Domenico di Michelino",
+  "akim": "Erken Rönesans",
+  "baslik": "Madonna of Humilty",
+  "yil": null
+ },
+ {
+  "anahtar": "sinav:23",
+  "gorsel": "scripts/gorsel_denetim/sinav/23.jpg",
+  "sanatci": "Edvard Munch",
+  "akim": "Ekspresyonizm",
+  "baslik": "Jealousy",
+  "yil": 1895
+ },
+ {
+  "anahtar": "sinav:24",
+  "gorsel": "scripts/gorsel_denetim/sinav/24.jpg",
+  "sanatci": "Piero della Francesca",
+  "akim": "Erken Rönesans",
+  "baslik": "The Nativity",
+  "yil": 1480
+ },
+ {
+  "anahtar": "sinav:25",
+  "gorsel": "scripts/gorsel_denetim/sinav/25.jpg",
+  "sanatci": "Jean-François Millet",
+  "akim": "Barbizon ve Realizm",
+  "baslik": "Peasant Women with Brushwood",
+  "yil": 1852
+ },
+ {
+  "anahtar": "sinav:26",
+  "gorsel": "scripts/gorsel_denetim/sinav/26.jpg",
+  "sanatci": "Agnolo Bronzino",
+  "akim": "Maniyerizm",
+  "baslik": "Portrait of Eleanor of Toledo and her son Giovanni de' Medici",
+  "yil": 1544
+ },
+ {
+  "anahtar": "sinav:27",
+  "gorsel": "scripts/gorsel_denetim/sinav/27.jpg",
+  "sanatci": "Rosso Fiorentino",
+  "akim": "Maniyerizm",
+  "baslik": "The Dead Christ with Angels",
+  "yil": 1525
+ },
+ {
+  "anahtar": "sinav:28",
+  "gorsel": "scripts/gorsel_denetim/sinav/28.jpg",
+  "sanatci": "Hieronymus Bosch",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Yedi Affedilmez Günah",
+  "yil": 1500
+ },
+ {
+  "anahtar": "sinav:29",
+  "gorsel": "scripts/gorsel_denetim/sinav/29.jpg",
+  "sanatci": "Rosso Fiorentino",
+  "akim": "Maniyerizm",
+  "baslik": "Pietà",
+  "yil": 1536
+ },
+ {
+  "anahtar": "sinav:30",
+  "gorsel": "scripts/gorsel_denetim/sinav/30.jpg",
+  "sanatci": "Katsushika Hokusai",
+  "akim": "Ukiyo-e (Japon baskısı)",
+  "baslik": "Balıkçının Karısının Rüyası",
+  "yil": 1820
+ }
+]
