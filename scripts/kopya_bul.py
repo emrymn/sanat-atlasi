@@ -33,6 +33,15 @@ P_ESIK, D_ESIK = 12, 18  # 64 bitlik özetlerde en çok farklı bit
 AYRI = {
     ('william-hogarth', 'Marriage à-la-Mode', 'Marriage à-la-mode'),  # Moda Evlilik serisinin iki ayrı sahnesi
     ('artemisia-gentileschi', 'Danaë', 'Death of Cleopatra'),
+    # ilk tam taramada (İş 101) gözle bakılıp ayrı eser olduğu görülenler
+    ('thomas-gainsborough', 'Mrs. John Taylor', 'Portrait of a Young Woman, Called Miss Sparrow'),
+    ('jean-arp', 'Collage with Squares Arranged According to the Laws of Chance',
+     'Squares or Rectangles Arranged According to the Laws of Chance'),  # siyah ve mavi kareli iki ayrı kolaj
+}
+# aynı dizinin/kitabın ayrı parçaları (aynı düzende ama başka sahne): başlıkları bu önekle başlayan iki eser kopya sayılmaz
+AYRI_ONEK = {
+    ('simone-martini', 'Saint '),  # aynı poliptiğin aziz panelleri (altın zemin, kemer)
+    ('william-blake', 'Songs of Innocence:'),  # kitabın ayrı sayfaları (metin ve süs aynı düzende)
 }
 
 
@@ -188,6 +197,8 @@ def main():
                     continue
                 if (sid, ea['baslik'], eb['baslik']) in AYRI or (sid, eb['baslik'], ea['baslik']) in AYRI:
                     continue
+                if any(sid == o_sid and ea['baslik'].startswith(o) and eb['baslik'].startswith(o) for o_sid, o in AYRI_ONEK):
+                    continue
                 sira = lambda t: (kalite(t[1]['gorseller'][0]), t[1].get('sl', 0), bool(t[1].get('kurs')), -t[0])  # noqa: E731
                 kal, sil = (L[a], L[b]) if sira(L[a]) >= sira(L[b]) else (L[b], L[a])
                 if eser_anahtari(sil[1]) in silinen:
@@ -210,7 +221,8 @@ def main():
             for t in (kal, sil):
                 g = t[1]['gorseller'][0]
                 ad = yerel_ad.get(yerel_anahtar(g))
-                im = Image.open(KOK / 'gorseller' / 'k' / f'{ad}.jpg') if ad else indir(kucuk_adres(g))
+                atla = '--commons-yok' in sys.argv and g['k'] in ('commons', 'aic')
+                im = Image.open(KOK / 'gorseller' / 'k' / f'{ad}.jpg') if ad else None if atla else indir(kucuk_adres(g))
                 parca.append(im.convert('RGB').resize((round(im.width * 150 / im.height), 150)) if im else Image.new('RGB', (100, 150), 'gray'))
             t = Image.new('RGB', (max(parca[0].width + parca[1].width + 6, 320), 178), 'white')
             t.paste(parca[0], (0, 28))
