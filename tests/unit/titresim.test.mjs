@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { titret } from '../../js/titresim.js';
+import { titret, tik, TIK } from '../../js/titresim.js';
 import { ilerlemeDogrula, varsayilanIlerleme } from '../../js/depo.js';
 
 test('İş 106 titret: kapalıysa hiçbir şey; vibrate varsa doğruda tek, yanlışta iki darbe', () => {
@@ -14,9 +14,15 @@ test('İş 106 titret: kapalıysa hiçbir şey; vibrate varsa doğruda tek, yanl
   assert.equal(cagri[1].filter((_, i) => i % 2 === 0).length, 2); // iki darbe, arada bekleme
 });
 
-test('İş 106 titret: vibrate yoksa (iPhone) hata vermez', () => {
-  assert.doesNotThrow(() => titret('yanlis', true, {}));
-  assert.doesNotThrow(() => titret('dogru', true, null));
+test('İş 106 titret: vibrate yoksa (iPhone) hata vermez, titreşimi düğmedeki TIK verir', () => {
+  assert.equal(titret('yanlis', true, {}), 'yok');
+  assert.equal(titret('dogru', true, null), 'yok');
+});
+
+test('İş 106 TIK: düğmeyi kaplayan etiketin içinde anahtar biçimli onay kutusu; kapalıyken hiç çizilmez', () => {
+  assert.equal(tik(false), '');
+  assert.equal(tik(true), TIK);
+  assert.match(TIK, /^<label class="tik" data-tik aria-hidden="true"><input type="checkbox" switch tabindex="-1"><\/label>$/);
 });
 
 test('İş 106 ayar: varsayılan açık, kapatılırsa yedekten dönüşte kapalı kalır', () => {
