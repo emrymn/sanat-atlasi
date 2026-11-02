@@ -1,4 +1,4 @@
-# Görsel denetimi — talimat (Mistral kod ajanı için)
+# Görsel denetimi — talimat (Gemini için)
 
 Bu depo bir sanat tarihi çalışma uygulaması (Sanat Atlası). Uygulama eserlerin fotoğraflarını sorularda gösteriyor:
 "Bu eser kimin?" Bazı fotoğraflar soru için uygun değil. Senin işin **yalnız fotoğrafa bakıp** her eser için karar vermek.
@@ -9,9 +9,9 @@ Bu depo bir sanat tarihi çalışma uygulaması (Sanat Atlası). Uygulama eserle
    `anahtar`, `gorsel` (depodaki 400 px küçük resim), `sanatci`, `akim`, `baslik`, `yil`.
 2. Her eserin `gorsel` dosyasını **aç ve bak**. Başlığa ve sanatçıya göre fotoğraf eseri düzgün gösteriyor mu?
 3. Sonucu `scripts/gorsel_denetim/sonuc_NNN.json` dosyasına yaz (aynı numara). Biçim aşağıda.
-4. **Başka hiçbir dosyayı değiştirme.** Sana söylenen dalın üstünde yeni bir dal aç (`mistral/gorsel-denetim-NNN`),
-   yalnız bu sonuç dosyasını commit'le ve PR'ı **o dala** aç (söylenmediyse `main`). `claude/` ile başlayan dallara
-   doğrudan commit atma, hiçbir PR'ı birleştirme.
+4. **Yalnız `scripts/gorsel_denetim/sonuc_NNN.json` dosyalarını yaz; başka hiçbir dosyayı değiştirme ya da silme.**
+   Git ya da başka komut çalıştırma (commit/push'u Emre yapar). Bir partiyi bitirince sonraki partiye geç; zaten
+   `sonuc_NNN.json`'u olan partiyi atla.
 
 ## Kararlar
 
