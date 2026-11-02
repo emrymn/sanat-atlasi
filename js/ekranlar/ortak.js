@@ -628,8 +628,8 @@ export function gununEseri(eserler) {
   // bilinirlik 1 → 0,7. Sonuç: seçilenin bilinirliği en bilinenin ortancada %46'sından %50'sine, kırpma ortancası %29'dan
   // %30'a (ortalama %26; 45 sanatçıda %20'nin altında); hepsinin en büyük (4096 px) kopyası var (ekrana gelince
   // keskin.js onu yükler). Örnekler: Klimt'te Judith I (%6 kırpma), van Eyck'te Meryem'e Müjde (%18; Arnolfini %37),
-  // Velázquez'de Nedimeler (%47) yerine Çarmıha Gerilmiş İsa (%31). Emre üçüncü kez: "popülerliği daha da azalt, resmin
-  // dik ve kaliteli olması en önemli şey": kalite 2,5, oturuş 7, bilinirlik 0,2 (AGIRLIK'ın açıklaması).
+  // Velázquez'de Nedimeler (%47) yerine Çarmıha Gerilmiş İsa (%31). Sonra yalnız dikey tablolar ve
+  // "yüksek kalite en önemli, sonra popülerlik" (AGIRLIK'ın açıklaması).
   // Emre (Titian'da yatay Uyuyan Venüs, geniş pencerede az kırpılıyor sayıldı): "böyle çok yarım resim var, tamamen dik
   // resimler arasından seçim yap": dikey tablosu olan sanatçıda yalnız dikey tablolar (en/boy ≤ 0,85) aday olur; kırpma
   // hangi ekranda açılırsa açılsın yalnız bunların arasında karşılaştırılır.
@@ -656,14 +656,14 @@ export function gununEseri(eserler) {
 }
 const KIRPMA_SINIRI = 0.6;
 const KALITE_PUANI = { 3: 1, 2: 0.55, 1: 0.2 }; // en büyük kopya / 1280 px kopya / yalnız uzak adres (gorselKalitesi)
-// Çözünürlük (ağırlığı 2,5: ekranı kaplayan tabloda bulanıklık en çok göze batar), ekrana oturuş (ağırlığı 7; kırpılmayan
-// 1, sınırda kırpılan 0) ve bilinirlik (ağırlığı 0,2; Wikidata'da maddesi olan dil sayısı, sanatçının en bilinenine
-// oranla, logaritmik: 70 dil ile 140 dil arasındaki fark 0 ile 10 dil arasındakinden azdır). Emre: "popülerliği daha da
-// azalt, resmin dik ve kaliteli olması en önemli şey": bilinirlik yalnız oturuşu ve kalitesi denk eserler arasında seçer
-// (Leonardo'da Mona Lisa %31 yerine Benois Madonnası %25, Monet'de Şemsiyeli Kadın %43 yerine Rouen Katedrali %28);
-// "dik olmasını daha da arttır": oturuş 3 → 7 (van Eyck'te Kilisedeki Meryem %3, Holman Hunt'ta Dünyanın Işığı %6,
-// Kandinsky'de Yukarı Doğru %34). 7'den sonrası seçimi değiştirmiyor.
-const AGIRLIK = { kalite: 2.5, oturus: 7, bilinirlik: 0.2 };
+// Adaylar artık yalnız dikey tablolar (gununEseri); aralarında Emre'nin sırası: "yüksek kalite en önemli, sonra
+// popülerlik". Çözünürlük (ağırlığı 4: ekranı kaplayan tabloda bulanıklık en çok göze batar), bilinirlik (ağırlığı 2;
+// Wikidata'da maddesi olan dil sayısı, sanatçının en bilinenine oranla, logaritmik: 70 dil ile 140 dil arasındaki fark
+// 0 ile 10 dil arasındakinden azdır) ve ekrana oturuş (ağırlığı 1; kırpılmayan 1, sınırda kırpılan 0: dikeyler arasında
+// yalnız denk adayları ayırır). 144 sanatçının 143'ünde en büyük kopyalı eser; 40'ında en bilinen eser (Leonardo'da Mona
+// Lisa, Vermeer'de İnci Küpeli Kız, Munch'ta Çığlık, Gainsborough'da Mavi Çocuk, David'de Marat'nın Ölümü).
+// Önceki denemeler (KARARLAR, İş 100): 2/1/1, 2/2/0,7, 2,5/7/0,2 (oturuş ağır basınca kalite düşüyordu: 131/144).
+const AGIRLIK = { kalite: 4, oturus: 1, bilinirlik: 2 };
 export function gununPuani({ e, q, k }, enCok) {
   const bilinirlik = enCok > 0 ? Math.log1p(e.sl || 0) / Math.log1p(enCok) : 0;
   return AGIRLIK.kalite * (KALITE_PUANI[q] || 0) + AGIRLIK.oturus * Math.max(0, 1 - k / KIRPMA_SINIRI) + AGIRLIK.bilinirlik * bilinirlik;
