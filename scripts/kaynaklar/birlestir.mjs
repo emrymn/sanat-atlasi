@@ -30,11 +30,16 @@ export function fotoGibiMi(dosya) {
 
 // Görsel kalitesi: müzenin resmi taraması > Commons'ta Google Art Project / müze kaynaklı > diğer Commons.
 // Elle "kötü" işaretlenenler en sona (5) iner.
+// Elle kararların anahtarı: Commons'ta dosya adı (küçük harf), müze görsellerinde "kaynak:adres" (İş 107, Gemini denetimi)
+export function kararAnahtari(g) {
+  return g.k === 'commons' ? dosyaNormal(g.d).toLowerCase() : `${g.k}:${g.d || g.i || g.u || ''}`;
+}
+
 export function gorselPuani(g, kararlar = {}) {
   if (g.k === 'wikiart') return g.supheli ? WIKIART_SUPHELI_PUANI : WIKIART_PUANI;
+  if (kararlar[kararAnahtari(g)] === 'kotu') return 5;
   if (g.k !== 'commons') return 100;
   const dosya = dosyaNormal(g.d);
-  if (kararlar[dosya.toLowerCase()] === 'kotu') return 5;
   const d = bosluklu(dosya);
   if (fotoGibiMi(d)) return 10;
   if (GAP.test(d)) return 80;
@@ -96,7 +101,7 @@ function gorselEkle(eser, g) {
  * wd:   [{ qid, baslik, baslikEn, yil, dosyalar, sl, muze, muzeIdler }]
  * muzeler: [{ kaynak, kimlik, baslik, yil, muze, tur, populer, gorsel }]
  * commons: aynı biçim (kaynak: 'commons')
- * kararlar: { 'dosya_adi.jpg': 'kotu' }  — elle görsel kararları
+ * kararlar: { 'dosya_adi.jpg': 'kotu', 'met:https://…': 'cikar' }  — elle görsel kararları (anahtar: kararAnahtari)
  */
 export function birlestir({ kurs = [], wd = [], muzeler = [], commons = [], kararlar = {} }) {
   const eserler = [];
@@ -193,7 +198,7 @@ export function birlestir({ kurs = [], wd = [], muzeler = [], commons = [], kara
   }
   // 4) elle “çıkar” denen görseller atılır (eser değil / atfı şüpheli); görseli kalmayan eser düşer.
   //    Sonra görseller kaliteye göre sıralanır; en iyi görsel elle “kötü” ise ve başka yoksa pekiştirmede kullanılmaz.
-  for (const e of eserler) e.gorseller = e.gorseller.filter((g) => !(g.k === 'commons' && kararlar[dosyaNormal(g.d).toLowerCase()] === 'cikar'));
+  for (const e of eserler) e.gorseller = e.gorseller.filter((g) => kararlar[kararAnahtari(g)] !== 'cikar');
   const kalan = eserler.filter((e) => e.gorseller.length);
   eserler.length = 0;
   eserler.push(...kalan);

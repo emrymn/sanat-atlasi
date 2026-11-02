@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { dogrudanAtifMi, tanimCoz, sanatciEslesirMi, resimselTurMu } from '../../scripts/kaynaklar/ortak.mjs';
-import { birlestir, ayniEserMi, gorselPuani, fotoGibiMi, makulYilMi } from '../../scripts/kaynaklar/birlestir.mjs';
+import { birlestir, ayniEserMi, gorselPuani, fotoGibiMi, makulYilMi, kararAnahtari } from '../../scripts/kaynaklar/birlestir.mjs';
 import { dosyaBasligi, TARAMA } from '../../scripts/kaynaklar/commons.mjs';
 import { csvAyristir } from '../../scripts/kaynaklar/nga.mjs';
 import { gorselUrl, gorselAnahtari, secilenGorsel, kotuIsaretle, pekistirmeyeUygunMu } from '../../js/gorsel.js';
@@ -223,4 +223,14 @@ test('Wikidata öğesi bilinmeyen kurs eseri başlıkla Wikidata eserine katıl�
   assert.equal(e.qid, 'Q9');
   assert.equal(e.gorseller[0].d, 'St_Anne_C2RMF_retouched.jpg');
   assert.equal(e.pekistirme, true);
+});
+
+test('İş 107: elle kararlar müze görsellerinde de geçerli (anahtar "kaynak:adres")', () => {
+  const met = { k: 'met', u: 'https://images.metmuseum.org/x.jpg' };
+  assert.equal(kararAnahtari(met), 'met:https://images.metmuseum.org/x.jpg');
+  assert.equal(kararAnahtari({ k: 'commons', d: 'Bir Dosya.JPG' }), 'bir_dosya.jpg');
+  assert.equal(gorselPuani(met, {}), 100);
+  assert.equal(gorselPuani(met, { [kararAnahtari(met)]: 'kotu' }), 5);
+  const eserler = birlestir({ muzeler: [{ kaynak: 'met', kimlik: '1', baslik: 'A', gorsel: met }], kararlar: { [kararAnahtari(met)]: 'cikar' } });
+  assert.equal(eserler.length, 0);
 });
