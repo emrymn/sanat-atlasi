@@ -13,6 +13,12 @@ ya da push'lama; sonucu yalnız JSON olarak sohbete yaz.
 
 Yalnız Türkçe metin değerlerine bak (anahtar adlarına, kimliklere, sayılara, adreslere değil).
 
+## 2. tur
+
+`data/biyografiler.json` → `sanatcilar` altındaki **ilk 75 kayıt** (dosyadaki sırayla; `metin` alanları). Kurallar ve
+sonuç biçimi aşağıdakiyle aynı; `yol` örneği: `sanatcilar.simone-martini.metin`. **`mevcut` alanını dosyadan kopyala**:
+ilk turda dosyada olmayan iki alıntı yazılmıştı ("göşe", "Müdje"); bu tür bulgular doğrudan reddedilir.
+
 ## Ne bildireceksin
 
 | tur | örnek |
