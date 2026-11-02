@@ -1,5 +1,5 @@
 // Uçtan uca testler için ağ fikstürleri: dış servislere gerçek istek gitmez.
-import { existsSync, readFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 
 const fx = (ad) => readFileSync(new URL(`../fixtures/${ad}`, import.meta.url));
 
@@ -14,16 +14,15 @@ export async function agiHazirla(context, { tanisma = false } = {}) {
   for (const [id, k] of Object.entries(sabit.sanatcilar)) sanatcilar[id] = { ...k, eserler: [...((gercek.sanatcilar[id] || {}).eserler || []), ...k.eserler] };
   const onbellek = JSON.stringify({ ...gercek, olusturma: new Date().toISOString(), sanatcilar });
   await context.route(
-    /commons\.wikimedia\.org\/wiki\/Special:FilePath|upload\.wikimedia\.org|images\.metmuseum\.org|www\.artic\.edu\/iiif|api\.nga\.gov\/iiif|openaccess-cdn\.clevelandart\.org|uploads\d*\.wikiart\.org|\.r2\.dev/,
+    /commons\.wikimedia\.org\/wiki\/Special:FilePath|upload\.wikimedia\.org|images\.metmuseum\.org|www\.artic\.edu\/iiif|api\.nga\.gov\/iiif|openaccess-cdn\.clevelandart\.org|uploads\d*\.wikiart\.org/,
     (r) => r.fulfill({ status: 200, contentType: 'image/png', body: resim, headers: { 'access-control-allow-origin': '*' } }),
   );
-  // İş 102: 1280'likler R2'den (gorsel.noracloud.ai/b/<ad>.jpg); testte yerel kopyası varsa o, yoksa fikstür görsel (ağa çıkılmaz)
-  await context.route(/gorsel\.noracloud\.ai\//, (r) => {
-    const m = /\/[bd]\/([0-9a-f]{16})(?:-[0-9a-f]+)?\.jpg/.exec(r.request().url()); // en büyük kopya (d/) yerine de 1280'lik
-    const yerel = m && new URL(`../../gorseller/b/${m[1]}.jpg`, import.meta.url);
-    if (yerel && existsSync(yerel)) return r.fulfill({ status: 200, contentType: 'image/jpeg', body: readFileSync(yerel), headers: { 'access-control-allow-origin': '*' } });
-    return r.fulfill({ status: 200, contentType: 'image/png', body: resim, headers: { 'access-control-allow-origin': '*' } });
-  });
+  // İş 102: 1280'likler ve en büyük kopyalar R2'den (gorsel.noracloud.ai/b|d/<ad>.jpg); 1280'likler depoda yok
+  // (.gitignore). Testte büyük bir fikstür görsel (1200×1500) döner: yakınlaştırma ve keskinlik denetimleri gerçek boy ister
+  const buyukResim = fx('eser_buyuk.jpg');
+  await context.route(/gorsel\.noracloud\.ai\/|\.r2\.dev\/|\/gorseller\/b\/[0-9a-f]+\.jpg/, (r) =>
+    r.fulfill({ status: 200, contentType: 'image/jpeg', body: buyukResim, headers: { 'access-control-allow-origin': '*' } }),
+  );
   await context.route(/www\.wikidata\.org\/w\/api\.php/, (r) =>
     r.fulfill({
       status: 200,
