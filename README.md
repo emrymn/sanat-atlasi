@@ -145,6 +145,21 @@ git add data/gorsel_kaynagi.json && git commit -m "Görseller R2'de" && git push
 
 İndirme betiği engellenmemek için yavaş gider (istekler arası 4–6 sn, saatte en çok 500 istek; engel gelince 1 dakikadan 30 dakikaya kadar katlanarak bekler). `--saat 3` gibi bir süre verirsen o kadar sonra durur; aynı komut kaldığı yerden sürer. Görsel Commons'ta küçükse aynı eserin The Met, Art Institute of Chicago, National Gallery of Art ya da Cleveland Museum of Art'taki açık erişim (CC0) görseline de bakar (eserin Wikidata kaydındaki müze numarasıyla); hangisi büyükse onu alır.
 
+### Geri kalan bütün eserler de R2'ye (İş 102)
+
+Uygulamadaki 7494 eserin yalnız ~1730'unun kopyası R2'deydi; gerisi (~5300, WikiArt hariç) her açılışta Wikimedia'dan ve müzelerden geliyordu. Hepsini en büyük kalitede R2'ye almak için Mac'te (depo kökünde):
+
+```
+git pull
+caffeinate -i python3 scripts/gorsel_indir.py --hepsi   # 1280 ve 400 px kopyalar (~3 saat; yarıda kalırsa yeniden çalıştır)
+node scripts/oranlar.mjs                               # yeni görsellerin en/boy oranları (Günün eseri dikey seçer)
+caffeinate -i python3 scripts/devasa_indir.py --saat 8   # en büyük kopyalar (4096 px); yavaş gider, birkaç gece sürebilir, aynı komut kaldığı yerden sürer
+python3 scripts/r2_yukle.py --10gb-ustu                 # kovaya yükler (ücretsiz 10 GB aşılır: ~25 GB, ayda ~0,25 $)
+git add data/yerel_gorseller.json data/gorsel_oranlari.json data/gorsel_kaynagi.json gorseller/k && git commit -m "Bütün eserler R2'de" && git push
+```
+
+1280 px kopyalar artık depoya girmez (`.gitignore`: `gorseller/b/`), yalnız R2'den gelir; depoda yalnız ızgara için 400 px kopyalar kalır (GitHub Pages'in 1 GB sınırı). Sonra Claude'a söyle: kopya eser taraması (`scripts/kopya_bul.py`) bütün eserlerle yeniden yapılır.
+
 ### Zayıf görseller için daha büyük dosya (İş 84)
 
 Bazı eserlerin elimizdeki en büyük kopyası küçük (2500 px altı ~620 görsel): Wikidata'nın verdiği dosya küçük. Aynı eserin Commons'ta daha büyük taraması varsa (eserin kendi Wikidata kaydındaki görsel ya da Commons kategorisi; oranı aynı ve küçük hâli bizimkiyle örtüşen) şu adımlarla gelir:

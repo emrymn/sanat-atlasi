@@ -36,6 +36,7 @@ KOK = Path(__file__).resolve().parent.parent
 SITE = 'https://emrymn.github.io'
 EN_AZ_DEVASA = 1600  # 1280'lik kopyadan en az bu kadar büyük olmalı
 R2_UCRETSIZ_GB = 10
+R2_UST_SINIR_GB = 40  # --10gb-ustu ile bile bunun üstü yüklenmez (bir yanlışlık olmalı)
 
 
 def uzun_kenar(yol):
@@ -106,8 +107,15 @@ def main():
     isler += [(p, f'b/{p.name}') for p in sorted((KOK / 'gorseller/b').glob('*.jpg'))]
     toplam = sum(p.stat().st_size for p, _ in isler) / 1e9
     print(f'{len(isler)} dosya ({toplam:.2f} GB)', flush=True)
+    # İş 102: bütün eserlerin en büyük kopyaları ücretsiz 10 GB'ı aşar (~25 GB). Emre bilerek açar: --10gb-ustu
+    # (R2: aşan her GB ayda 0,015 $; indirme ücretsiz). Bayraksız eski koruma sürer.
     if toplam > R2_UCRETSIZ_GB * 0.95:
-        sys.exit(f'Toplam {toplam:.2f} GB: R2 ücretsiz sınırına ({R2_UCRETSIZ_GB} GB) çok yakın ya da üstünde. Yükleme yapılmadı; Claude\'a bu satırı gönder.')
+        if '--10gb-ustu' not in sys.argv:
+            sys.exit(f'Toplam {toplam:.2f} GB: R2 ücretsiz sınırına ({R2_UCRETSIZ_GB} GB) çok yakın ya da üstünde. Yükleme yapılmadı. '
+                     f'Bilerek aşmak için: python3 scripts/r2_yukle.py --10gb-ustu (aylık ~{max(0, toplam - R2_UCRETSIZ_GB) * 0.015:.2f} $)')
+        if toplam > R2_UST_SINIR_GB:
+            sys.exit(f'Toplam {toplam:.2f} GB: beklenenden çok ({R2_UST_SINIR_GB} GB üstü). Yükleme yapılmadı; Claude\'a bu satırı gönder.')
+        print(f'Uyarı: {toplam:.2f} GB, ücretsiz {R2_UCRETSIZ_GB} GB aşılıyor: aylık yaklaşık {(toplam - R2_UCRETSIZ_GB) * 0.015:.2f} $', flush=True)
     tamam = {'d': set(), 'b': set()}
     hata = 0
     with ThreadPoolExecutor(8) as havuz:
@@ -142,7 +150,9 @@ def main():
     devasa_bayt = sum(p.stat().st_size for p, u in isler if u.startswith('d/') and p.stem in tamam['d'])
     # İş 61: r2.dev bazı Türk mobil operatörlerinde engelli: 1280'likler R2'den yalnız R2_BUYUK=1 ise (ör. engelsiz
     # özel alan adına geçince); yoksa GitHub Pages'ten (depodaki gorseller/b) gelir, mobil veride de açılır
-    b_hepsi = os.environ.get('R2_BUYUK') == '1' and len(tamam['b']) == len(list((KOK / 'gorseller/b').glob('*.jpg')))
+    # İş 102: kendi alan adı (gorsel.noracloud.ai) mobil veride de açılıyor ve 1280'likler artık depoda değil
+    # (.gitignore): hepsi yüklendiyse R2'den gelir. R2_BUYUK=0 eski yola (depodaki gorseller/b) döndürür.
+    b_hepsi = os.environ.get('R2_BUYUK') != '0' and len(tamam['b']) == len(list((KOK / 'gorseller/b').glob('*.jpg')))
     (KOK / 'data/gorsel_kaynagi.json').write_text(
         json.dumps({'surum': 1, 'adres': adres, 'buyuk': b_hepsi, 'devasa': sorted(tamam['d']), 'devasa_bayt': devasa_bayt, 'muze': muze, 'surumler': {ad: v for ad, v in sorted(surumler.items()) if ad in tamam['d']}}, ensure_ascii=False, separators=(',', ':')) + '\n'
     )

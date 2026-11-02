@@ -3,7 +3,8 @@
 Böylece Wikimedia'nın hız sınırı (429) ve müze engelleri (403) bu görselleri etkilemez.
 
 Çalıştır (depo kökünde, macOS; küçültme için hazır gelen `sips` kullanılır):
-  python3 scripts/gorsel_indir.py              # hepsi
+  python3 scripts/gorsel_indir.py              # pekiştirme havuzu (sanatçı başına 12) ve başyapıtlar
+  python3 scripts/gorsel_indir.py --hepsi      # İş 102: uygulamadaki bütün eserler (WikiArt hariç; birkaç saat)
   python3 scripts/gorsel_indir.py --kapaklar   # yalnız İlerleme kitaplığının kapakları (scripts/kapaklar.mjs, node gerekir)
 Yarıda kalırsa yeniden çalıştır: inmiş dosyalar atlanır. Wikimedia'yı yormamak için istekler arası bekleme var (~1 saat).
 
@@ -38,7 +39,7 @@ def kaynak_url(g):
     return ''  # wikiart ve bilinmeyenler alınmaz
 
 
-def secilecekler():
+def secilecekler(hepsi=False):
     ob = json.loads((KOK / 'data/eserler_onbellek.json').read_text())['sanatcilar']
     secim, buyuk = {}, set()
     for sid, v in ob.items():
@@ -49,7 +50,9 @@ def secilecekler():
                 continue
             secim[anahtar(g)] = g
             n += 1
-            if n >= HAVUZ:
+            # İş 102 (Emre: "geri kalan resimlerin de en büyük kalitede indirilmesini istiyorum, onları da R2'ye koyarız"):
+            # --hepsi ile sınır yok; 1280'likler depoya girmez (.gitignore: gorseller/b), yalnız R2'den gelir
+            if n >= HAVUZ and not hepsi:
                 break
     try:
         bas = json.loads((KOK / 'data/basyapitlar.json').read_text())['eserler']
@@ -123,7 +126,7 @@ def main():
     if '--kapaklar' in sys.argv:
         secim = {anahtar(g): g for g in kapaklar() if kaynak_url(g)}
     else:
-        secim, _ = secilecekler()
+        secim, _ = secilecekler(hepsi='--hepsi' in sys.argv)
 
     def yaz():
         harita_yolu.write_text(json.dumps({'surum': 1, 'gorseller': harita, 'buyuk': sorted(buyukler)}, ensure_ascii=False, separators=(',', ':')))
