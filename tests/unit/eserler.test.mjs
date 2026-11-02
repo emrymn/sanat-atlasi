@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { eserleriBirlestir, eserSec, tazeMi, TEST_HAVUZU, onbellekEseri, pekistirmeHavuzu } from '../../js/eserler.js';
+import { eserleriBirlestir, eserSec, tazeMi, TEST_HAVUZU, onbellekEseri, pekistirmeHavuzu, kopyalariAyikla } from '../../js/eserler.js';
 import { resimUrl, dosyaNormal } from '../../js/yardimci.js';
 import { rastgeleYap } from '../../js/yardimci.js';
 import { sanatcilar } from './yardimci.mjs';
@@ -140,4 +140,33 @@ test('K4: Koleksiyonum’daki eser iki kat sık seçilir; yoksa davranış aynı
   // son gösterilenlerden kaçınma önce gelir
   const r3 = rastgeleYap(6);
   for (let i = 0; i < 30; i++) assert.notEqual(eserSec(eserler, ['b'], r3, {}, { isaretli: new Set(['b']) }).anahtar, 'b');
+});
+
+// İş 101: farklı adla iki kez kayıtlı aynı tablo (data/kopya_eserler.json)
+test('kopyalariAyikla: silinen çıkar, kurs bilgisi ve başlığı kalana geçer, eksik çifte dokunulmaz', () => {
+  const liste = () => [
+    { anahtar: 'c:a.jpg', kaynak: 'kurs', kaynaklar: ['kurs'], baslik: 'Zevk Bahçesi', kursKonu: 7, sl: 0 },
+    { anahtar: 'q:Q1', kaynak: 'wikidata', kaynaklar: ['wikidata'], baslik: 'Garden of Earthly Delights', kursKonu: null, sl: 40 },
+    { anahtar: 'q:Q2', kaynak: 'wikidata', kaynaklar: ['wikidata'], baslik: 'Başka', kursKonu: null, sl: 5 },
+  ];
+  const k = { bosch: [{ sil: 'c:a.jpg', kalan: 'q:Q1' }] };
+  const l = kopyalariAyikla('bosch', liste(), k);
+  assert.deepEqual(
+    l.map((e) => e.anahtar),
+    ['q:Q1', 'q:Q2'],
+  );
+  assert.equal(l[0].kaynak, 'kurs');
+  assert.equal(l[0].kursKonu, 7);
+  assert.equal(l[0].baslik, 'Zevk Bahçesi');
+  assert.equal(l[0].sl, 40);
+  // başka sanatçı, eksik kayıt: liste aynen döner
+  const ham = liste();
+  assert.equal(kopyalariAyikla('baska', ham, k), ham);
+  assert.equal(kopyalariAyikla('bosch', ham, { bosch: [{ sil: 'c:yok.jpg', kalan: 'q:Q1' }] }).length, 3);
+  // kalan başka bir çiftte silinmişse ikinci çift uygulanmaz (ikisi birden gitmesin)
+  const zincir = kopyalariAyikla('bosch', liste(), { bosch: [{ sil: 'q:Q2', kalan: 'q:Q1' }, { sil: 'q:Q1', kalan: 'q:Q2' }] });
+  assert.deepEqual(
+    zincir.map((e) => e.anahtar),
+    ['c:a.jpg', 'q:Q1'],
+  );
 });

@@ -85,6 +85,7 @@ import { akrabaMi } from '../celdirici.js';
 import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
 import { yonlendir } from './yonlendirme.js';
 import { sallanmaBaslat } from '../sallanma.js';
+import { dinleEkle } from '../kunye.js';
 import { desteBaslat } from '../deste.js';
 import { cerceveTipi } from '../cerceve.js';
 
@@ -837,6 +838,7 @@ function tanismaCiz(o, s, eserler, { sayac, not, dugme, etiketYazi = 'Yeni sanat
     'yeni-kart',
   );
   ekran.querySelector('.tanisma-ad').focus({ preventScroll: true });
+  dinleEkle(s, ekran.querySelector('.tanisma-kartel')); // İş 101: adın okunuşu
 }
 
 // Yeni sanatçı: sorudan önce en bilinen 3 eseri (sorulacak eser hariç)

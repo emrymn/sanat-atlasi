@@ -910,19 +910,38 @@ test.describe('İş 82: günün sanatçısının görselleri', () => {
   });
 });
 
-// İş 83: Tuval'in tablosu ekranı kaplar: ekranın oranına en yakın, en büyük kopyası olan tablo (David'de Marat'nın
-// Ölümü iki yanından %40 kırpılıyordu; yerine Çalışma Odasında Napolyon)
-test('İş 83: günün tablosu ekrana en iyi oturan, en büyük kopyalı tablo', async ({ page, context }) => {
+// İş 83/100: Tuval'in tablosu ekranı kaplar: çözünürlüğü, ekrana oturuşu ve bilinirliği birlikte en iyi olan tablo.
+// Yalnız dikey tablolar; aralarında önce kalite, sonra bilinirlik: Leonardo'da Mona Lisa, David'de Marat'nın Ölümü;
+// Rembrandt'ta en bilinen Gece Devriyesi değil (yatay)
+test('İş 83/100: günün tablosu çözünürlük, ekrana oturuş ve bilinirlikte en iyisi', async ({ page, context }) => {
   await agiHazirla(context);
   await page.goto('./#/ayarlar');
   await page.locator('#sekmeler a').first().waitFor();
-  await page.evaluate(async () => {
-    const { bugun, kaydet } = await import('./js/ekranlar/ortak.js');
-    window.__atlas.ilerleme.gununDegisim = { tarih: bugun(), id: 'jacques-louis-david' };
-    kaydet();
-  });
+  const sec = (id) =>
+    page.evaluate(async (id) => {
+      const { bugun, kaydet } = await import('./js/ekranlar/ortak.js');
+      window.__atlas.ilerleme.gununDegisim = { tarih: bugun(), id };
+      kaydet();
+    }, id);
+  await sec('leonardo-da-vinci');
   await page.goto('./#/');
-  await expect(page.locator('[data-gunun-gorsel] > img')).toHaveAttribute('alt', /Napolyon/, { timeout: 10000 });
+  await expect(page.locator('[data-gunun-gorsel] > img')).toHaveAttribute('alt', /Mona Lisa/, { timeout: 10000 });
+  await page.goto('./#/ayarlar');
+  await sec('rembrandt-van-rijn');
+  await page.goto('./#/');
+  const alt = page.locator('[data-gunun-gorsel] > img');
+  await expect(alt).toHaveAttribute('alt', /Rembrandt/, { timeout: 10000 });
+  await expect(alt).not.toHaveAttribute('alt', /Gece Devriyesi/);
+  await page.goto('./#/ayarlar');
+  await sec('jacques-louis-david');
+  await page.goto('./#/');
+  await expect(page.locator('[data-gunun-gorsel] > img')).toHaveAttribute('alt', /Marat/, { timeout: 10000 });
+  // Emre: "tamamen dik resimler arasından seç": geniş pencerede (Mac) de yatay tablo gelmez, telefondakiyle aynı tablo
+  await page.setViewportSize({ width: 1000, height: 1060 });
+  await page.goto('./#/ayarlar');
+  await sec('titian');
+  await page.goto('./#/');
+  await expect(page.locator('[data-gunun-gorsel] > img')).toHaveAttribute('alt', /Göğe Yükselişi/, { timeout: 10000 });
 });
 
 // İş 89: Galeri'nin bölüm şeritleri (Akımlar / Başyapıtlar / Konular / Zaman, konu grupları) sayfa gibi büyüyerek

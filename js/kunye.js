@@ -230,6 +230,26 @@ export async function kunyeGoster(s, kutu) {
   if (imza) ek.after(imza);
 }
 
+// İş 101 (Emre: "haritada sanatçıyla tanışma kısmında, sanatçının 5–6 resminin verildiği yere de adının okunuş ses
+// düğmesini ekleyelim"): yalnız "Dinle" (portre ve IPA yok: tanışmada ekranı eserlere bırak); adın hemen altına
+export async function dinleEkle(s, kutu) {
+  if (!kutu) return;
+  const k = (await kunyeVeri())[s.id];
+  if (!k || !kutu.isConnected || kutu.querySelector('.isim-ek')) return;
+  const ses = !!sesDosyasi(s, k);
+  const okunur = ses || !!(k.dil && sentez());
+  if (!okunur && !k.ipa) return;
+  if (okunur && !ses) sesleriIsit();
+  const ek = document.createElement('div');
+  ek.className = 'isim-ek';
+  if (okunur) ek.append(dinleDugmesi(s, k));
+  // İş 101 (Emre: "ses butonunu yanına yaz ve okunuşunu da ver"): sanatçı sayfasındaki gibi IPA okunuşu düğmenin yanında
+  if (k.ipa) ek.insertAdjacentHTML('beforeend', ipaHtml(k.ipa, k.dil));
+  const ad = kutu.querySelector('.isim');
+  if (ad) ad.after(ek);
+  else kutu.prepend(ek);
+}
+
 function dinleDugmesi(s, k) {
   const b = document.createElement('button');
   b.type = 'button';

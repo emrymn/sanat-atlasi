@@ -185,6 +185,37 @@ async function hesapla(sanatci, { canli }) {
   return { liste: eserleriBirlestir(kursResimleri(sanatci, turler), (wd && wd.eserler) || []), kalici: !!wd };
 }
 
+// İş 101 (Emre: "ismi farklı fakat kopya resimler var, onları teke indirelim, kalitelisini seç"): aynı tablonun farklı
+// adla ikinci kaydı (data/kopya_eserler.json; scripts/kopya_bul.py, algısal görsel özetiyle bulunur) listeden çıkar;
+// kalan çözünürlüğü yüksek olandır. Silinen kurs eseriyse kurs bilgisi ve başlığı kalana geçer; bilinirlik ikisinin
+// büyüğü. Kayıtlardan biri listede yoksa (veri değişti) o çifte dokunulmaz.
+let kopyalar = {};
+export function kopyalariAyarla(j) {
+  kopyalar = j && j.sanatcilar && typeof j.sanatcilar === 'object' && !Array.isArray(j.sanatcilar) ? j.sanatcilar : {};
+  bellek.clear();
+  gecici.clear();
+}
+export function kopyalariAyikla(sanatciId, liste, k = kopyalar) {
+  const ciftler = k[sanatciId];
+  if (!Array.isArray(ciftler) || !ciftler.length) return liste;
+  const anahtarla = new Map(liste.map((e) => [e.anahtar, e]));
+  const silinecek = new Set();
+  for (const c of ciftler) {
+    const sil = c && anahtarla.get(c.sil);
+    const kal = c && anahtarla.get(c.kalan);
+    if (!sil || !kal || sil === kal || silinecek.has(c.kalan)) continue;
+    silinecek.add(c.sil);
+    if (sil.kaynak === 'kurs' && kal.kaynak !== 'kurs') {
+      kal.kaynak = 'kurs';
+      kal.kaynaklar = ['kurs', ...(kal.kaynaklar || []).filter((x) => x !== 'kurs')];
+      kal.kursKonu = kal.kursKonu ?? sil.kursKonu;
+      kal.baslik = sil.baslik;
+    }
+    kal.sl = Math.max(kal.sl || 0, sil.sl || 0);
+  }
+  return silinecek.size ? liste.filter((e) => !silinecek.has(e.anahtar)) : liste;
+}
+
 // Geçici sonuç (hata ya da Wikidata'ya ulaşılamadı): bu kadar süre aynı liste verilir, sonra yeniden denenir
 export const GECICI_SURE = 60 * 1000;
 const gecici = new Map();
@@ -197,7 +228,8 @@ export function sanatciEserleri(sanatci, { canli = true } = {}) {
   if (g && Date.now() - g.zaman < GECICI_SURE) return Promise.resolve(g.liste);
   const soz = hesapla(sanatci, { canli })
     .catch(() => ({ liste: eserleriBirlestir(kursResimleri(sanatci, turler), []), kalici: false }))
-    .then(({ liste: eserler, kalici }) => {
+    .then(({ liste, kalici }) => {
+      const eserler = kopyalariAyikla(sanatci.id, liste);
       for (const e of eserler) {
         e.sid = sanatci.id;
         const ad = eserAdiBul(sanatci.id, e);

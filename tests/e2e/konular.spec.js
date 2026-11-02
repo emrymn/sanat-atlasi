@@ -3,7 +3,10 @@ import { readFileSync } from 'node:fs';
 import { agiHazirla } from './ortak.js';
 
 const ob = JSON.parse(readFileSync(new URL('../../data/eserler_onbellek.json', import.meta.url), 'utf8'));
-const t = ob.sanatcilar['j-m-w-turner'].eserler.slice(0, 2);
+// İş 101: kopyası ayıklanan eser (data/kopya_eserler.json; Turner'ın iki "Parlamento'nun Yanışı") listede yer almaz
+const kopya = JSON.parse(readFileSync(new URL('../../data/kopya_eserler.json', import.meta.url), 'utf8'));
+const silinen = new Set((kopya.sanatcilar['j-m-w-turner'] || []).map((c) => c.sil_baslik));
+const t = ob.sanatcilar['j-m-w-turner'].eserler.filter((e) => !silinen.has(e.baslik)).slice(0, 2);
 const anahtar = (e, sid) => e.qid || `${sid}|${e.baslik}`;
 const VERI = {
   surum: 1,

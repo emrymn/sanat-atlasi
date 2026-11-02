@@ -615,19 +615,38 @@ export function gununHavuzu() {
   return (dikey.length ? dikey : havuz).map((s) => s.id);
 }
 
-// Günün eseri: en bilinen dikey eser (ekranı kırpılmadan doldurur); yoksa en bilinen eser
+// Günün eseri: çözünürlüğü, ekrana oturuşu ve bilinirliği birlikte en iyi olan eser; oranı bilinmiyorsa en bilinen
+// dikey eser, o da yoksa en bilinen eser
 const DIKEY_ORAN = 0.85;
 export function gununEseri(eserler) {
-  // İş 83: Tuval'de tablo ekranı kenardan kenara kaplar: ekranın oranına en yakın (en az kırpılan) tablo. Önce en büyük
-  // kopyası olanlar (ekranı kaplayınca keskin kalsın), yoksa 1280 px kopyalılar; aralarında en çok %30 kırpılanlar
-  // varsa en bilineni, yoksa en az kırpılanı. Örnek: David'de Marat'nın Ölümü iki yanından %40 kırpılıyordu,
-  // yerine Tuileries'deki Çalışma Odasında Napolyon (%24).
-  const adaylar = kaliteSirasi(eserler).map((e) => ({ e, q: gorselKalitesi(e), k: ekranKirpmasi(secilenGorsel(e, kotuler())) }));
-  for (const q of [3, 2]) {
-    const l = adaylar.filter((x) => x.q === q && x.k < 1);
-    if (!l.length) continue;
-    const uygun = l.find((x) => x.k <= UYGUN_KIRPMA);
-    return (uygun || l.reduce((a, b) => (b.k < a.k ? b : a))).e;
+  // İş 83: Tuval'de tablo ekranı kenardan kenara kaplar (kırpılarak). İş 100 (Emre: "hem en kaliteli çözünürlükte hem
+  // en telefona uygun hem de en popüler eser olsun"; "en popüler olmasına gerek yok, bunlara göre oranla, en iyisini
+  // seç"): eskiden önce çözünürlük, sonra en çok %30 kırpılanlar arasında en bilineni, yoksa en az kırpılanı; dikey
+  // tabloların çoğu telefonda %35–45 kırpıldığından çoğu zaman en az kırpılan, en az bilinen eser geliyordu (145
+  // sanatçının 17'sinde en bilinen eser). Şimdi üç ölçüt birlikte puanlanır (gununPuani); başka seçenek varken %60'tan
+  // çok kırpılan seçilmez. Emre ardından: "dikey olmasına daha çok oran ver, popülerliği azalt": ekrana oturuş 1 → 2,
+  // bilinirlik 1 → 0,7. Sonuç: seçilenin bilinirliği en bilinenin ortancada %46'sından %50'sine, kırpma ortancası %29'dan
+  // %30'a (ortalama %26; 45 sanatçıda %20'nin altında); hepsinin en büyük (4096 px) kopyası var (ekrana gelince
+  // keskin.js onu yükler). Örnekler: Klimt'te Judith I (%6 kırpma), van Eyck'te Meryem'e Müjde (%18; Arnolfini %37),
+  // Velázquez'de Nedimeler (%47) yerine Çarmıha Gerilmiş İsa (%31). Sonra yalnız dikey tablolar ve
+  // "yüksek kalite en önemli, sonra popülerlik" (AGIRLIK'ın açıklaması).
+  // Emre (Titian'da yatay Uyuyan Venüs, geniş pencerede az kırpılıyor sayıldı): "böyle çok yarım resim var, tamamen dik
+  // resimler arasından seçim yap": dikey tablosu olan sanatçıda yalnız dikey tablolar (en/boy ≤ 0,85) aday olur; kırpma
+  // hangi ekranda açılırsa açılsın yalnız bunların arasında karşılaştırılır.
+  const tumu = kaliteSirasi(eserler)
+    .map((e) => {
+      const g = secilenGorsel(e, kotuler());
+      return { e, q: gorselKalitesi(e), k: ekranKirpmasi(g), o: gorselOrani(g) ?? 9 };
+    })
+    .filter((x) => x.q >= 1 && x.k < 1);
+  const dikler = tumu.filter((x) => x.o <= DIKEY_ORAN);
+  const adaylar = dikler.length ? dikler : tumu;
+  if (adaylar.length) {
+    const sinirda = adaylar.filter((x) => x.k <= KIRPMA_SINIRI);
+    const l = sinirda.length ? sinirda : adaylar;
+    const enCok = Math.max(...l.map((x) => x.e.sl || 0));
+    // eşit puanda kaliteSirasi'ndaki sıra (önce kaliteli, sonra en bilinen) kalır
+    return l.reduce((a, b) => (gununPuani(b, enCok) > gununPuani(a, enCok) ? b : a)).e;
   }
   const dikey = eserler.filter((e) => {
     const g = secilenGorsel(e, kotuler());
@@ -635,13 +654,28 @@ export function gununEseri(eserler) {
   });
   return enBilinen(dikey) || enBilinen(eserler);
 }
-const UYGUN_KIRPMA = 0.3;
+const KIRPMA_SINIRI = 0.6;
+const KALITE_PUANI = { 3: 1, 2: 0.55, 1: 0.2 }; // en büyük kopya / 1280 px kopya / yalnız uzak adres (gorselKalitesi)
+// Adaylar artık yalnız dikey tablolar (gununEseri); aralarında Emre'nin sırası: "yüksek kalite en önemli, sonra
+// popülerlik". Çözünürlük (ağırlığı 4: ekranı kaplayan tabloda bulanıklık en çok göze batar), bilinirlik (ağırlığı 2;
+// Wikidata'da maddesi olan dil sayısı, sanatçının en bilinenine oranla, logaritmik: 70 dil ile 140 dil arasındaki fark
+// 0 ile 10 dil arasındakinden azdır) ve ekrana oturuş (ağırlığı 1; kırpılmayan 1, sınırda kırpılan 0: dikeyler arasında
+// yalnız denk adayları ayırır). 144 sanatçının 143'ünde en büyük kopyalı eser; 40'ında en bilinen eser (Leonardo'da Mona
+// Lisa, Vermeer'de İnci Küpeli Kız, Munch'ta Çığlık, Gainsborough'da Mavi Çocuk, David'de Marat'nın Ölümü).
+// Önceki denemeler (KARARLAR, İş 100): 2/1/1, 2/2/0,7, 2,5/7/0,2 (oturuş ağır basınca kalite düşüyordu: 131/144).
+const AGIRLIK = { kalite: 4, oturus: 1, bilinirlik: 2 };
+export function gununPuani({ e, q, k }, enCok) {
+  const bilinirlik = enCok > 0 ? Math.log1p(e.sl || 0) / Math.log1p(enCok) : 0;
+  return AGIRLIK.kalite * (KALITE_PUANI[q] || 0) + AGIRLIK.oturus * Math.max(0, 1 - k / KIRPMA_SINIRI) + AGIRLIK.bilinirlik * bilinirlik;
+}
 // tablonun ekranı kaplarken kırpılan payı (0 hiç, 1 bilinmiyor)
+// Seçim her zaman telefon ekranına (iPhone 13, 390×844) göre: geniş pencerede (Mac) yatay tablolar az kırpılıyor sayılıp
+// seçiliyordu; böylece günün tablosu her cihazda aynı ve dikey
+const EKRAN_ORANI = 390 / 844;
 function ekranKirpmasi(g) {
   const o = g && gorselOrani(g);
   if (!o) return 1;
-  const ekranOrani = typeof innerWidth !== 'undefined' && innerHeight ? innerWidth / innerHeight : 0.46;
-  return o > ekranOrani ? 1 - ekranOrani / o : 1 - o / ekranOrani;
+  return o > EKRAN_ORANI ? 1 - EKRAN_ORANI / o : 1 - o / EKRAN_ORANI;
 }
 
 // İş 82: eserin görsel kalitesi: 3 en büyük kopyası (4096 px) var; 2 uygulamayla gelen 1280 px kopyası var; 1 yalnız
