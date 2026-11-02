@@ -151,7 +151,8 @@ def main():
     # İş 61: r2.dev bazı Türk mobil operatörlerinde engelli: 1280'likler R2'den yalnız R2_BUYUK=1 ise (ör. engelsiz
     # özel alan adına geçince); yoksa GitHub Pages'ten (depodaki gorseller/b) gelir, mobil veride de açılır
     # İş 102: kendi alan adı (gorsel.noracloud.ai) mobil veride de açılıyor ve 1280'likler artık depoda değil
-    # (.gitignore): hepsi yüklendiyse R2'den gelir. R2_BUYUK=0 eski yola (depodaki gorseller/b) döndürür.
+    # (.gitignore): hepsi yüklendiyse R2'den gelir. R2_BUYUK=0 depodaki gorseller/b'yi gösterir; bu yol ancak 1280'likler
+    # yeniden depoya konursa çalışır (İş 102'den beri depoda yoklar; git geçmişinde ve Mac'teki gorseller/b'de duruyorlar).
     b_hepsi = os.environ.get('R2_BUYUK') != '0' and len(tamam['b']) == len(list((KOK / 'gorseller/b').glob('*.jpg')))
     (KOK / 'data/gorsel_kaynagi.json').write_text(
         json.dumps({'surum': 1, 'adres': adres, 'buyuk': b_hepsi, 'devasa': sorted(tamam['d']), 'devasa_bayt': devasa_bayt, 'muze': muze, 'surumler': {ad: v for ad, v in sorted(surumler.items()) if ad in tamam['d']}}, ensure_ascii=False, separators=(',', ':')) + '\n'
