@@ -4,10 +4,11 @@ her eser için karar versin diye 50'şer eserlik listeler üretir. Talimat: scri
 
   python3 scripts/gorsel_denetim/parti_uret.py            # henüz denetlenmemiş bütün yerel görseller, 50'şer
   python3 scripts/gorsel_denetim/parti_uret.py --deneme   # 40 eserlik rastgele deneme partisi (parti_000.json)
+  python3 scripts/gorsel_denetim/parti_uret.py --yeni 52a65dd  # yalnız o committe yerel_gorseller'de olmayanlar (İş 107)
 
 Bir eser, kararı scripts/gorsel_denetim/sonuc_*.json'da ya da data/gorsel_kararlari.json'da varsa yeniden listelenmez.
 Görsel üzerine karar yalnız fotoğrafın kendisi hakkındadır; eser–sanatçı eşleşmesine dokunulmaz (CLAUDE.md doğruluk kuralı)."""
-import json, random, sys
+import json, random, subprocess, sys
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parents[2]
@@ -26,12 +27,28 @@ def main():
     bilinen = set()
     for p in BURASI.glob('sonuc_*.json'):
         bilinen |= {s['anahtar'] for s in json.loads(p.read_text())}
+    if '--yeni' in sys.argv:  # eskiden beri yerel olan (daha önce gözden geçirilmiş) görselleri atla
+        eski = subprocess.run(['git', 'show', sys.argv[sys.argv.index('--yeni') + 1] + ':data/yerel_gorseller.json'],
+                              cwd=KOK, capture_output=True, text=True, check=True).stdout
+        bilinen |= set(json.loads(eski)['gorseller'])
+    # kararı zaten verilmiş Commons dosyaları ve kopya diye ayıklanan eserler de listelenmez
+    kararli = set(json.loads((KOK / 'data/gorsel_kararlari.json').read_text())['kararlar'])
+    kopya_yolu = KOK / 'data/kopya_eserler.json'
+    silinen = set()
+    if kopya_yolu.exists():
+        for ciftler in json.loads(kopya_yolu.read_text())['sanatcilar'].values():
+            silinen |= {c['sil'] for c in ciftler}
     isler = []
     for sid, v in ob.items():
         for e in v.get('eserler', []):
             g = (e.get('gorseller') or [None])[0]
             a = g and yerel_anahtar(g)
             if not a or a not in yerel or a in bilinen or e.get('pekistirme') is False:
+                continue
+            if g['k'] == 'commons' and str(g.get('d', '')).replace(' ', '_').lower() in kararli:
+                continue
+            ek = 'q:' + e['qid'] if e.get('qid') and not e.get('kurs') else None
+            if ek and ek in silinen:
                 continue
             gorsel = f'gorseller/k/{yerel[a]}.jpg'
             if not (KOK / gorsel).exists():

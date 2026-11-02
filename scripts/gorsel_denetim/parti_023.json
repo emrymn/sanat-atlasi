@@ -1,0 +1,402 @@
+[
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DT216453.jpg",
+  "gorsel": "gorseller/k/51b6a3ea1bb95016.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Doge Alvise Mocenigo (1507–1577) Presented to the Redeemer",
+  "yil": 1577
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP239507.jpg",
+  "gorsel": "gorseller/k/4ee10dfdcb3db118.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "The Finding of Moses",
+  "yil": 1560
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DT5476.jpg",
+  "gorsel": "gorseller/k/e2d2e59485f8005c.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "The Miracle of the Loaves and Fishes",
+  "yil": 1545
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP-16041-001.jpg",
+  "gorsel": "gorseller/k/ed77f6c3ad33de25.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Portrait of a Man",
+  "yil": 1550
+ },
+ {
+  "anahtar": "aic:84bc6762-6a64-dde5-5dc3-ec31c75aa32b",
+  "gorsel": "gorseller/k/7b01eb4d1cb559aa.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Tarquin and Lucretia",
+  "yil": 1578
+ },
+ {
+  "anahtar": "aic:90a2969d-542a-e97f-09dd-fa1310d91acf",
+  "gorsel": "gorseller/k/c06ad4df8421ff4b.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Saint Helen Testing the True Cross",
+  "yil": 1540
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP820595.jpg",
+  "gorsel": "gorseller/k/8d2327e4e27deb86.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Study after Michelangelo's Giorno (recto and verso)",
+  "yil": 1545
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/rl/web-large/DP-13665-038.jpg",
+  "gorsel": "gorseller/k/1f13adb46796487e.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Reclining Male Figure",
+  "yil": 1560
+ },
+ {
+  "anahtar": "aic:fbdbe7cd-32fb-fa9b-3c84-3b1b65942042",
+  "gorsel": "gorseller/k/f62d51bbddfdbd7a.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Reclining Male Nude, Foreshortened",
+  "yil": 1562
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/c24d8ec9-efde-4cf8-aab2-d20a349d76e3",
+  "gorsel": "gorseller/k/23423f48a85c4976.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "A Striding Youth with His Arms Raised, Seen from Behind",
+  "yil": 1574
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/d7b70d9e-4029-4636-967e-f475d336fa93",
+  "gorsel": "gorseller/k/509b26eb303a57fc.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "A Kneeling Man Holding a Staff [recto]",
+  "yil": 1560
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/aa6b6b6a-ce77-40e6-9eef-52d88e3c2244",
+  "gorsel": "gorseller/k/f9084d5f8abfaedc.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "A Female Nude [verso]",
+  "yil": 1560
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/4e73ef67-c3c4-4b85-859c-4c60942aa175",
+  "gorsel": "gorseller/k/2ba69e51b7b6bb92.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Figures and Legs (verso)",
+  "yil": 1575
+ },
+ {
+  "anahtar": "aic:6c3d5754-839a-1faa-80fd-0b87188d640f",
+  "gorsel": "gorseller/k/7b300232948c5c0a.jpg",
+  "sanatci": "Tintoretto",
+  "akim": "Venedik Rönesansı",
+  "baslik": "The Last Judgment",
+  "yil": 1538
+ },
+ {
+  "anahtar": "commons:Disputa_con_los_doctores_(El_Veronés)_grande.jpg",
+  "gorsel": "gorseller/k/c39743f57d7c9c1c.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Christ Among the Doctors",
+  "yil": 1560
+ },
+ {
+  "anahtar": "commons:Paolo_Veronese_016.jpg",
+  "gorsel": "gorseller/k/c9bc32c09fb98bc0.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Portrait of a gentleman in a fur",
+  "yil": 1558
+ },
+ {
+  "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1928.16/1928.16_web.jpg",
+  "gorsel": "gorseller/k/b631453cab0f932e.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Portrait of Agostino Barbarigo",
+  "yil": 1571
+ },
+ {
+  "anahtar": "commons:Moisés_salvado_de_las_aguas_(El_Veronés).jpg",
+  "gorsel": "gorseller/k/6e9fb9d5d4163207.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "The Finding of Moses",
+  "yil": 1580
+ },
+ {
+  "anahtar": "commons:Paolo_Veronese_-_The_Feast_in_the_House_of_Simon_(1555-56_Turin).jpg",
+  "gorsel": "gorseller/k/2a6290828bc93555.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "The Feast in the House of Simon the Pharisee (Veronese, Turin)",
+  "yil": 1550
+ },
+ {
+  "anahtar": "commons:Veronese_Allegory_of_Wisdom_and_Strength.jpg",
+  "gorsel": "gorseller/k/ecfd1176508c43da.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Allegory of Wisdom and Strength",
+  "yil": 1565
+ },
+ {
+  "anahtar": "commons:Paolo_Veronese_(Caliari)_-_Mars,_Venus_and_Cupid_-_Google_Art_Project.jpg",
+  "gorsel": "gorseller/k/493884d5b5e7afe5.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Mars and Venus with Cupid and a Dog",
+  "yil": 1580
+ },
+ {
+  "anahtar": "commons:Veronese,_susanna_e_i_vecchioni,_genova.JPG",
+  "gorsel": "gorseller/k/b7aa00310ffdd18c.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Susannah and the Elders",
+  "yil": 1580
+ },
+ {
+  "anahtar": "commons:Cephalus_and_Procris.jpg",
+  "gorsel": "gorseller/k/d0d587f96bde5f97.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Cephalus and Procris",
+  "yil": 1584
+ },
+ {
+  "anahtar": "commons:Paolo_Caliari,_gen._Veronese,_Kunsthistorisches_Museum_Wien,_Gemäldegalerie_-_Erweckung_des_Jünglings_zu_Nain_-_GG_52_-_Kunsthistorisches_Museum.jpg",
+  "gorsel": "gorseller/k/3b71a43a8d9a5624.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Raising the Young Man of Nain",
+  "yil": 1560
+ },
+ {
+  "anahtar": "commons:Veronese_-_Predica_di_Sant'Antonio_da_Padova,_101.jpg",
+  "gorsel": "gorseller/k/3f7aa943616a3de9.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Saint Anthony Preaching to the Fish",
+  "yil": 1580
+ },
+ {
+  "anahtar": "commons:Count_Iseppo_da_Porto,_by_Paolo_Veronese.jpg",
+  "gorsel": "gorseller/k/0e65adee35cc42c3.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Portrait of Iseppo da Porto and his son Adriano",
+  "yil": 1555
+ },
+ {
+  "anahtar": "commons:Paolo_Veronese_-_Adoration_of_the_Magi_-_National_Gallery.jpg",
+  "gorsel": "gorseller/k/4bf4633110eeb8fb.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Adoration of the Magi",
+  "yil": 1573
+ },
+ {
+  "anahtar": "commons:Veronese_-_Predica_del_Battista,_1562_circa,_137.jpg",
+  "gorsel": "gorseller/k/8d0742ded7915007.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Saint John the Baptist Preaching",
+  "yil": 1562
+ },
+ {
+  "anahtar": "commons:Les_Pèlerins_d'Emmaüs_-_Paolo_Veronese_-_Musée_du_Louvre_Peintures_INV_146_;_MR_385.jpg",
+  "gorsel": "gorseller/k/d27e468981dd392f.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Supper at Emmaus",
+  "yil": 1559
+ },
+ {
+  "anahtar": "commons:Paolo_Veronese_040.jpg",
+  "gorsel": "gorseller/k/6aaecb19aeb045ea.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Portrait of a Venetian Woman, called La Belle Nani",
+  "yil": 1560
+ },
+ {
+  "anahtar": "commons:Accademia_-_The_Annunciation_-_Veronese.jpg",
+  "gorsel": "gorseller/k/9c57a2455533d68d.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "The Annunciation",
+  "yil": 1578
+ },
+ {
+  "anahtar": "commons:The_Vision_of_St_Helena_veronese2.jpg",
+  "gorsel": "gorseller/k/5b59dc4728e2c553.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "The Vision of St. Helena",
+  "yil": 1580
+ },
+ {
+  "anahtar": "commons:Paolo_Caliari,_called_Veronese_-_Judith_with_the_Head_of_Holofernes_-_Google_Art_Project.jpg",
+  "gorsel": "gorseller/k/d0a501d06266bdcf.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Judith with the Head of Holofernes",
+  "yil": 1580
+ },
+ {
+  "anahtar": "commons:Veronese_-_Annunciazione,_1185100,_Uffizi.jpg",
+  "gorsel": "gorseller/k/d630fdf3335c5799.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Annunciation",
+  "yil": 1556
+ },
+ {
+  "anahtar": "commons:Madonna_and_Child_with_Saint_Elizabeth,_the_Infant_Saint_John_the_Baptist,_and_Saint_Catherine,_by_Paolo_Veronese.png",
+  "gorsel": "gorseller/k/3df6a66abe4acba4.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Madonna ve çocuk",
+  "yil": 1550
+ },
+ {
+  "anahtar": "commons:Veronese-Triomphe_de_Venise.jpg",
+  "gorsel": "gorseller/k/5491044c91eca73a.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Triumph of Venice",
+  "yil": 1585
+ },
+ {
+  "anahtar": "commons:Temptation_of_St_Anthony_by_Paolo_Veronese.jpg",
+  "gorsel": "gorseller/k/1fbcd5a6aca8e8f3.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Temptation of St Anthony",
+  "yil": 1552
+ },
+ {
+  "anahtar": "commons:Dijon_-_Musée_des_Beaux-Arts_-_Moïse_sauvé_des_eaux,_par_Véronèse.jpg",
+  "gorsel": "gorseller/k/c73db5c4b15fbbf2.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "The Finding of Moses",
+  "yil": 1580
+ },
+ {
+  "anahtar": "commons:Paolo_Veronese_-_Portrait_of_a_Man_-_Google_Art_Project.jpg",
+  "gorsel": "gorseller/k/02a22095ca4337de.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Portrait of a Man",
+  "yil": 1555
+ },
+ {
+  "anahtar": "commons:MinervaGeometriaAritmeticaVeronese.jpg",
+  "gorsel": "gorseller/k/c62472ea52cb0827.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Minerva between Geometry and Arithmetics",
+  "yil": 1551
+ },
+ {
+  "anahtar": "commons:Paolo_Veronese_-_Lamentation_over_the_Dead_Christ_-_WGA24758.jpg",
+  "gorsel": "gorseller/k/6923a0c122040bce.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Lament over the Dead Christ",
+  "yil": 1540
+ },
+ {
+  "anahtar": "commons:Paolo_Veronese_023.jpg",
+  "gorsel": "gorseller/k/bbabce8bb2fae091.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "The Martyrdom of St George",
+  "yil": 1564
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP-17461-001.jpg",
+  "gorsel": "gorseller/k/63755f61c678343b.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Alessandro Vittoria (1525–1608)",
+  "yil": 1575
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP-14936-005.jpg",
+  "gorsel": "gorseller/k/225c55f30ee679e9.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Boy with a Greyhound",
+  "yil": 1570
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP-18296-035.jpg",
+  "gorsel": "gorseller/k/498e02ee07fba98c.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Saint Catherine of Alexandria in Prison",
+  "yil": 1580
+ },
+ {
+  "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1950.251/1950.251_web.jpg",
+  "gorsel": "gorseller/k/3571d1af0ac74d5d.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "The Annunciation",
+  "yil": 1575
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP833598.jpg",
+  "gorsel": "gorseller/k/baa2d762577cddfe.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Studies for The Allegories of Love",
+  "yil": 1570
+ },
+ {
+  "anahtar": "aic:f970faa2-966d-4aca-834c-d18501788e96",
+  "gorsel": "gorseller/k/2687a0c0f45fd5b0.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Head of a Woman",
+  "yil": 1573
+ },
+ {
+  "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1939.670.a/1939.670.a_web.jpg",
+  "gorsel": "gorseller/k/43a1a478e29aaa1b.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Various Sketches of the Madonna and Child (recto)",
+  "yil": 1575
+ },
+ {
+  "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1939.670/1939.670_web.jpg",
+  "gorsel": "gorseller/k/14ea94f86797aa1b.jpg",
+  "sanatci": "Paolo Veronese",
+  "akim": "Venedik Rönesansı",
+  "baslik": "Various Sketches of the Madonna and Child (recto); Architectural Studies (verso) [partially visible on recto]",
+  "yil": 1565
+ }
+]

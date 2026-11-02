@@ -37,6 +37,12 @@ AYRI = {
     ('thomas-gainsborough', 'Mrs. John Taylor', 'Portrait of a Young Woman, Called Miss Sparrow'),
     ('jean-arp', 'Collage with Squares Arranged According to the Laws of Chance',
      'Squares or Rectangles Arranged According to the Laws of Chance'),  # siyah ve mavi kareli iki ayrı kolaj
+    # ikinci tam taramada (İş 107, 1280'likler R2'ye çıktıktan sonra) gözle bakılıp ayrı eser olduğu görülenler
+    ('sofonisba-anguissola', 'Self-portrait', 'Self-portrait'),  # aynı adlı iki ayrı otoportre
+    ('artemisia-gentileschi', 'Repentant Mary Magdalene', 'Mary Magdalene as Melancholy'),
+    ('angelica-kauffman', 'Parting of Abelard and Heloise', 'Jupiter and Callisto'),
+    ('mary-cassatt', 'The Barefooted Child', 'Mother Berthe Holding Her Child'),
+    ('valentin-de-boulogne', 'Musicians and Soldiers', 'Musical Company'),
 }
 # aynı dizinin/kitabın ayrı parçaları (aynı düzende ama başka sahne): başlıkları bu önekle başlayan iki eser kopya sayılmaz
 AYRI_ONEK = {
