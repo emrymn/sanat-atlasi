@@ -1,0 +1,402 @@
+[
+ {
+  "anahtar": "aic:c210a649-8de9-866e-2a5f-0a506a02b19b",
+  "gorsel": "gorseller/k/4b14be9194fbecc2.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait of Magdalena of Saxony, Wife of Elector Joachim II of Brandenburg",
+  "yil": 1524
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/c13d83bf-6bcf-49d2-ab42-642ff754cae1",
+  "gorsel": "gorseller/k/7efe163ceff8ebbd.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "A Prince of Saxony",
+  "yil": 1517
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/e074060a-4e8e-4787-b20c-0e1e06b50c6e",
+  "gorsel": "gorseller/k/49c074c432ae6c7a.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "A Princess of Saxony",
+  "yil": 1517
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP222192.jpg",
+  "gorsel": "gorseller/k/6f4d10ab0fa38f63.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Saint Catherine",
+  "yil": 1490
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP842892.jpg",
+  "gorsel": "gorseller/k/fdb3e375c9b653b3.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "The Crucifixion",
+  "yil": 1502
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP841883.jpg",
+  "gorsel": "gorseller/k/118dff4b74e71627.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "The Penance of Saint John Chrisostom",
+  "yil": 1509
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP841847.jpg",
+  "gorsel": "gorseller/k/94ca764b26955aae.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Frederick the Wise of Saxony Adoring St Bartholomew",
+  "yil": 1503
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP842890.jpg",
+  "gorsel": "gorseller/k/d98e8d36523fefbb.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "The Tournament with Samson and the Lion",
+  "yil": 1509
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP102205.jpg",
+  "gorsel": "gorseller/k/ffb6a094a64e588a.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Martin Luther as an Augustinian Monk",
+  "yil": 1520
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP832139.jpg",
+  "gorsel": "gorseller/k/ab68e3d06eee358d.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "The Third Tournament",
+  "yil": 1509
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP842121.jpg",
+  "gorsel": "gorseller/k/ffb6fd3fb7537d88.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "The Penitence of St. Jerome",
+  "yil": 1509
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP841414.jpg",
+  "gorsel": "gorseller/k/279ac403d9f90096.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "The Stag-Hunt",
+  "yil": 1506
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP215655.jpg",
+  "gorsel": "gorseller/k/eded18a8e8e81e77.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Christian II, King of Denmark",
+  "yil": 1523
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP842127.jpg",
+  "gorsel": "gorseller/k/5c971bb62690af5b.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "St. Jerome in the Wilderness",
+  "yil": 1509
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP842126.jpg",
+  "gorsel": "gorseller/k/906df90f60d656a4.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Frederick the Wise in Prayer before the Virgin and Child",
+  "yil": 1490
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP842118.jpg",
+  "gorsel": "gorseller/k/dc040454106cdfec.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Saint Christopher",
+  "yil": 1506
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP842889.jpg",
+  "gorsel": "gorseller/k/c4337c1adc75101a.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "The Temptation of St. Anthony",
+  "yil": 1506
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP832138.jpg",
+  "gorsel": "gorseller/k/661bd1a26b78de21.jpg",
+  "sanatci": "Lucas Cranach (Yaşlı)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Saint George Standing with Two Angels",
+  "yil": 1506
+ },
+ {
+  "anahtar": "commons:Anne_de_Clèves_-_Hans_Holbein_le_Jeune_-_Musée_du_Louvre_Peintures_INV_1348_;_MR_756_-_version_2.jpg",
+  "gorsel": "gorseller/k/4ca126699eae2cde.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Betrothal portrait of Anne of Cleves",
+  "yil": 1539
+ },
+ {
+  "anahtar": "commons:Lais_of_Corinth,_by_Hans_Holbein_the_Younger.jpg",
+  "gorsel": "gorseller/k/0f93ae27adb32e98.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Lais of Corinth",
+  "yil": 1526
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_the_Younger_-_An_Allegory_of_the_Old_and_New_Testaments_-_Google_Art_Project.jpg",
+  "gorsel": "gorseller/k/0894353475c11971.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "An Allegory of the Old and New Testaments",
+  "yil": 1530
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP164836.jpg",
+  "gorsel": "gorseller/k/ec3966413277919c.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Hermann von Wedigh III (died 1560)",
+  "yil": 1532
+ },
+ {
+  "anahtar": "commons:Portrait_of_Bonifacius_Amerbach_by_Hans_Holbein_the_Younger_(1519).jpg",
+  "gorsel": "gorseller/k/7810fbf438bf599c.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait of Bonifacius Amerbach",
+  "yil": 1519
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_the_Younger_-_Jane_Seymour,_Queen_of_England_-_Google_Art_Project.jpg",
+  "gorsel": "gorseller/k/75bf1296cfbbbfd9.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Jane Seymour",
+  "yil": 1536
+ },
+ {
+  "anahtar": "commons:Retrato_de_la_esposa_del_artista_con_sus_dos_hijos,_por_Hans_Holbein_el_Joven.jpg",
+  "gorsel": "gorseller/k/7aeb29c81282f719.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait of the Artist's Family",
+  "yil": 1528
+ },
+ {
+  "anahtar": "commons:Cromwell,Thomas(1EEssex)01.jpg",
+  "gorsel": "gorseller/k/c2cf2b1f52a088b4.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Thomas Cromwell",
+  "yil": 1532
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_the_Younger_(attributed),_Portrait_of_Henry_VIII,_c._1537._Oil_on_panel._Palazzo_Barberini,_Galleria_Nazionale_d’Arte_Antica,_Rome.jpg",
+  "gorsel": "gorseller/k/7b7e507d97d8cbb6.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait of Henry VIII of England",
+  "yil": 1540
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_d._J._-_Der_Duisburger_Kaufmann_Dirck_Tybis_-_GG_903_-_Kunsthistorisches_Museum.jpg",
+  "gorsel": "gorseller/k/340b1b2bd132c993.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "The Duisburg merchant Dirck Tybis",
+  "yil": 1533
+ },
+ {
+  "anahtar": "commons:Remember_Me_exhibition,_Rijksmuseum_14.jpg",
+  "gorsel": "gorseller/k/7d9ddecfd5ed957c.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Double Portrait of Jakob Meyer zum Hasen and Dorothea Kannengießer",
+  "yil": 1516
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_the_Younger_-_Charles_de_Solier,_Sieur_de_Morette_-_Google_Art_Project.jpg",
+  "gorsel": "gorseller/k/30386e3db596d22e.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Charles de Solier, Sieur de Morette",
+  "yil": 1534
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_the_Younger_-_Edward_VI_as_a_Child_-_Google_Art_Project.jpg",
+  "gorsel": "gorseller/k/8c52dcdf382a3653.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Edward VI as a Child",
+  "yil": 1538
+ },
+ {
+  "anahtar": "commons:Holbein,_Hans_(II)_-_Portrait_of_a_lady,_probably_of_the_Cromwell_Family_formerly_known_as_Catherine_Howard_-_WGA11565.jpg",
+  "gorsel": "gorseller/k/4bd1a029d1164b7d.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait of a Lady, probably a Member of the Cromwell Family",
+  "yil": 1540
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP280366.jpg",
+  "gorsel": "gorseller/k/3678ebd585500b85.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Benedikt von Hertenstein (born about 1495, died 1522)",
+  "yil": 1517
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP331439.jpg",
+  "gorsel": "gorseller/k/8b99fe60ff7ee125.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait Miniature of Margaret Roper",
+  "yil": 1535
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_(der_Jüngere)_(1497-98_-_1543)_-_Hermann_Hillebrandt_de_Wedigh_-_586B_-_Gemäldegalerie.jpg",
+  "gorsel": "gorseller/k/0b7233883548b240.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Hermann Hillebrandt de Wedigh",
+  "yil": 1533
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_d._J._-_The_Passion_-_WGA11510.jpg",
+  "gorsel": "gorseller/k/98910e793d9527a1.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Altar of Passion",
+  "yil": 1523
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_d._J.,_Kunsthistorisches_Museum_Wien,_Gemäldegalerie_-_Bildnis_eines_jungen_Kaufmannes_-_GG_905_-_Kunsthistorisches_Museum.jpg",
+  "gorsel": "gorseller/k/aa46ff710583279f.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait of a Young Merchant",
+  "yil": 1541
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_the_Younger_-_Derich_Born_(1510?-49)_-_Google_Art_Project.jpg",
+  "gorsel": "gorseller/k/81f20279abb89106.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Derich Born",
+  "yil": 1533
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_the_Younger_(1497-8-1543)_-_Sir_Henry_Guildford_(1489-1532)_-_RCIN_400046_-_Royal_Collection.jpg",
+  "gorsel": "gorseller/k/170644447265ff9e.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Sir Henry Guildford (1489-1532)",
+  "yil": 1527
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_(II)_-_Thomas_Howard,_3rd_Duke_of_Norfolk.jpg",
+  "gorsel": "gorseller/k/3491cf9be0d1a307.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Thomas Howard, Third Duke of Norfolk (1473-1554)",
+  "yil": 1539
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_d._J._-_Erasmus_-_Louvre.jpg",
+  "gorsel": "gorseller/k/6d05825cd4349d8b.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait of Erasmus (1467-1536) writing",
+  "yil": 1528
+ },
+ {
+  "anahtar": "commons:F4516_Louvre_INV1344_Hans_Holbein_le_Jeune_William_Warham_rwk.jpg",
+  "gorsel": "gorseller/k/d38db32d060e4fad.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait of William Warham",
+  "yil": 1528
+ },
+ {
+  "anahtar": "commons:Sir_Henry_Wyatt,_by_Hans_Holbein_the_Younger.jpg",
+  "gorsel": "gorseller/k/f5b8682818432772.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Sir Henry Wyatt",
+  "yil": 1528
+ },
+ {
+  "anahtar": "commons:Holbein,_Hans_(II)_-_Mrs_Jane_Small,_formerly_Mrs_Pemberton_-_Google_Art_Project.jpg",
+  "gorsel": "gorseller/k/92c6809f21816413.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait Miniature of Mrs Jane Small, formerly Mrs Pemberton",
+  "yil": 1536
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_der_Jüngere_-_Anne_of_Cleves_(miniature),_1539_-_V&A_museum.jpg",
+  "gorsel": "gorseller/k/ca865db38acee2e5.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait miniature of Anne of Cleves (1515-1557)",
+  "yil": 1539
+ },
+ {
+  "anahtar": "commons:Hans_Holbein_d._J._-_Unknown_Gentleman_with_Music_Books_and_Lute_-_WGA11549.jpg",
+  "gorsel": "gorseller/k/6fcc96ef8e3f1a1c.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Portrait of a man with a lute",
+  "yil": 1526
+ },
+ {
+  "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1971.166/1971.166_web.jpg",
+  "gorsel": "gorseller/k/ee49e97581d0a597.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Terminus, the Device of Erasmus",
+  "yil": 1527
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/7c06df7a-06da-47fc-93e4-fc35ff83fc50",
+  "gorsel": "gorseller/k/45406647835ba129.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "Sir Brian Tuke",
+  "yil": 1527
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP-23133-001.jpg",
+  "gorsel": "gorseller/k/51c1ba6e9c1eef75.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "The Abbot, from \"The Dance of Death\"",
+  "yil": 1521
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP-23134-001.jpg",
+  "gorsel": "gorseller/k/6dec9619e30b68b4.jpg",
+  "sanatci": "Hans Holbein (Genç)",
+  "akim": "Kuzey Rönesansı",
+  "baslik": "The Doctor (or Physician), from \"The Dance of Death\"",
+  "yil": 1521
+ }
+]
