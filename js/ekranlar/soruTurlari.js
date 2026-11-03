@@ -10,7 +10,8 @@ import { gecmisEkle } from '../gecmis.js';
 import { ikon } from '../tasarim.js';
 import { titret, tik } from '../titresim.js';
 import { TUR_AD } from '../ikonografi.js';
-import { d, ciz, ust, etiket, ekran, HARFLER, BILMIYORUM, eserAdi, kotuler, kaydet, bugun, acikListe, cizimNo, guncelMi, kaynakSatiri } from './ortak.js';
+import { d, ciz, ust, etiket, ekran, HARFLER, BILMIYORUM, eserAdi, kotuler, kaydet, bugun, acikListe, cizimNo, guncelMi, kaynakSatiri, paletHtml, ekranRengi, renkSabitle, yaprakDugmeYazisi } from './ortak.js';
+import { bildirimSatiriHtml, bildirimTikla } from './bildirim.js';
 import { ikonografiVeri } from './gozat.js';
 import {
   kursBolumleri,
@@ -197,6 +198,15 @@ function cizKart() {
     ${cevaplandi ? yaprak(t, k) : ''}`,
     cevaplandi ? 'cevap' : 'yeni-kart',
   );
+  // Renk: sorulan eserden (ana Pekiştir gibi); palet gelince yapraktaki şerit de dolar
+  if (k.palet === undefined)
+    ekranRengi(k.eser, null, (p) => {
+      k.palet = p;
+      const kutu = ekran.querySelector('[data-yaprak-palet]');
+      if (kutu) kutu.innerHTML = paletHtml(p);
+    });
+  else renkSabitle(k.palet);
+  ipucuIsaretle();
   const y = ekran.querySelector('.alt-yaprak [data-st-sonraki]');
   if (y) y.focus({ preventScroll: true });
 }
@@ -207,30 +217,49 @@ function yaprak(t, k) {
   const sonuc = dogru ? ['Doğru', ''] : k.cevap === BILMIYORUM ? ['Bilmiyorum', tekrarNotu] : ['Yanlış', tekrarNotu];
   const eserSatiri = `${k.s.ad} (${yillarYaz(k.s)}) · ${eserAdi(k.eser)}`;
   let bilgi;
+  let not = '';
   let ek = '';
-  let bag = `<a class="dugme" href="#/sanatci/${encodeURIComponent(k.s.id)}" aria-label="Sanatçı sayfası">Sanatçı</a>`;
+  let bag = '';
   if (t.kip === 'bolum') {
     const aralik = yuzyilAraligi(k.bolum, d.sanatcilar);
     bilgi = `<p class="bilgi" data-test="st-bilgi"><b>${kacis(`${k.bolum.id} · ${k.bolum.ad}`)}</b><i>${kacis(aralik ? `${aralik} · ${eserSatiri}` : eserSatiri)}</i></p>`;
-    ek = `<div class="ipucu-kutu"><p class="ipucu">${kacis(`${k.s.ad} kursta ${k.s.konu}. konuda işleniyor (${k.s.akim}).`)}</p></div>`;
+    not = `${k.s.ad} kursta ${k.s.konu}. konuda işleniyor (${k.s.akim}).`;
   } else {
     const konu = k.konu;
     bilgi = `<p class="bilgi" data-test="st-bilgi"><b>${kacis(konu.ad)}</b><i>${kacis(`${TUR_AD[konu.tur] || ''} · ${eserSatiri}`)}</i></p>`;
-    ek = `${konu.ozet ? `<div class="ipucu-kutu"><p class="ipucu">${kacis(konu.ozet)}</p></div>` : ''}${
-      konu.hikaye.length
-        ? `<details class="st-hikaye" data-test="st-hikaye"><summary>Hikâye</summary>${konu.hikaye.map((p) => `<p>${kacis(p)}</p>`).join('')}</details>`
-        : ''
-    }`;
-    bag += `<a class="dugme" href="#/konu/${encodeURIComponent(konu.id)}" data-test="st-konu-bag">Konu sayfası</a>`;
+    not = konu.ozet || '';
+    ek = konu.hikaye.length
+      ? `<details class="st-hikaye" data-test="st-hikaye"><summary class="karsilastir-bag">${ikon('kitap', 18, 1.6)}<span>Hikâyesi</span>${ikon('asagi', 16, 1.8)}</summary><div class="st-hikaye-metin">${konu.hikaye.map((p) => `<p>${kacis(p)}</p>`).join('')}</div></details>`
+      : '';
+    bag = `<a class="karsilastir-bag" href="#/konu/${encodeURIComponent(konu.id)}" data-test="st-konu-bag">${ikon('ileri', 18, 1.6)}<span>Konu sayfası: ${kacis(konu.ad)}</span></a>`;
   }
   const son = st.oturum.konum + 1 >= st.oturum.toplam;
+  // Ana Pekiştir yaprağıyla aynı düzen (pekistir.js): sonuç, bilgi, tablonun paleti, açılır ipucu, kaynak ve "hatalı mı?",
+  // bağlantı satırları, altta iki düğme (Sanatçı · Sonraki kart)
   return `<section class="alt-yaprak" aria-live="polite">
       <p class="sonuc" data-test="sonuc" data-dogru="${dogru}">${ikon(dogru ? 'dogru' : 'yanlis', 18, 2)}<b>${sonuc[0]}</b>${sonuc[1] ? `<span class="sonuc-not">${kacis(sonuc[1])}</span>` : ''}</p>
       ${bilgi}
+      <div data-yaprak-palet>${paletHtml(k.palet)}</div>
+      ${not ? `<div class="ipucu-kutu" data-ipucu><p class="ipucu">${kacis(not)}</p></div>` : ''}
       ${ek}
-      <p class="kaynak-satir">${kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler()))}</p>
-      <div class="yaprak-dugmeler">${bag}<button class="dugme acik" type="button" data-st-sonraki data-test="st-sonraki">${son ? 'Turu bitir' : 'Sonraki kart →'}</button></div>
+      ${bildirimSatiriHtml(kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler())))}
+      ${bag}
+      <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(k.s.id)}" aria-label="Sanatçı sayfası">Sanatçı</a><button class="dugme acik" type="button" data-st-sonraki data-test="st-sonraki">${yaprakDugmeYazisi(son ? 'Turu bitir' : 'Sonraki kart')}</button></div>
     </section>`;
+}
+
+// İpucu sığmıyorsa dokununca tamamı açılır (pekistir.js ipucuIsaretle ile aynı; açıp kapatmayı oradaki dinleyici yapar)
+function ipucuIsaretle() {
+  const p = ekran.querySelector('.alt-yaprak [data-ipucu]');
+  if (!p) return;
+  const metin = p.querySelector('.ipucu');
+  const kesik = metin.scrollHeight > metin.clientHeight + 2;
+  p.classList.toggle('kesik', kesik);
+  if (kesik) {
+    p.setAttribute('role', 'button');
+    p.tabIndex = 0;
+    p.setAttribute('aria-expanded', 'false');
+  }
 }
 
 function cevapVer(deger) {
@@ -283,6 +312,7 @@ function ozet() {
 
 ekran.addEventListener('click', (e) => {
   if (!st || location.hash !== TUR[st.kip].rota) return;
+  if (st.kart && st.kart.cevap !== null && bildirimTikla(e, st.kart.eser)) return;
   const sec = e.target.closest('[data-st-secim]');
   if (sec) return cevapVer(sec.dataset.stSecim);
   if (e.target.closest('[data-st-sonraki]')) return void sonraki();
