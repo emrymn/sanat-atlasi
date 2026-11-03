@@ -1,0 +1,303 @@
+[
+ {
+  "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1998.89/1998.89_web.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/4e32989f-568d-4418-8cc2-fc2a9a2085a2",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/2c76733d-310a-44b0-940f-34630f795ceb",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/583062dd-9efd-4d4c-899a-96fc51eb6ed3",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/aa09abfa-70e7-4b2a-ab79-27710b7179fc",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/a0adf3a0-1cd1-4074-99c3-16b693d2537f",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "nga:https://api.nga.gov/iiif/c0b31a03-eeb6-40a5-b483-55ee2a5a2ebc",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1929.900/1929.900_web.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1929.901/1929.901_web.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Asumption_of_the_Virgin-Guido_Reni-MBA_Lyon_A123-IMG_0329.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Guido_Reni_061.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Guido_Reni_038.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Guido_Reni_-_Fuga_in_Egitto,_Pinacoteca_dei_Girolamini.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Assunzione_di_Maria.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:SacrestiaGirolamini4.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:David_with_the_Head_of_Goliath_(by_Guido_Reni)_-_Uffizi_Gallery,_Florence.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Putti_fighting_-_Guido_Reni_(1575-1642)_-_Galleria_Doria-Pamphili_-_Rome.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:GuidoReni_MichaelDefeatsSatan.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Guido_Reni_-_St_Joseph_with_the_Infant_Jesus_-_WGA19304.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Adam_et_Eve_Guido_Reni.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Hipómenes_y_Atalanta_(Reni).jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Risen_Christ_-_Guido_Reni.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Reni_-_Hercule_terrassant_l'hydre_de_Lerne,_INV_535_;_MR_284.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Consegna_delle_chiavi_-_Reni.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Guido_reni,_storie_di_ercole,_ercole_sulla_pira,_1617-21.JPG",
+  "karar": "kotu",
+  "neden": "cerceve",
+  "emin": true,
+  "not": "kalın yaldızlı çerçeve ve müze duvarı"
+ },
+ {
+  "anahtar": "commons:Guido_Reni_-_The_Martyrdom_of_St_Catherine_of_Alexandria_-_WGA19288.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Guido_Reni_Neapolitan_Baroque_painting_(1630–1642).jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Sibilla_Guido_Reni.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:St._Cecilia_by_Guido_Reni.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Guido_Reni_(1575-1642)_-_Arianna_(1640)_-_Bologna_Pinacoteca_Nazionale_-_26-04-2012_9-26-02.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Guido_Reni,_Crocifissione_di_San_Pietro,_1604-05_-FG.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Guido_Reni,_Flagellazione_di_Cristo,_1640_circa.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:The_Assumption_of_Virgin_Mary_-_Guido_Reni_(unframed).jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Reni_-_Salomè_con_la_testa_del_Battista,_1638-1639_ca.,_Inv_191.png",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "aic:8eccb189-92f3-353a-3337-c0778c2680d9",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1969.132/1969.132_web.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP811357.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP811356.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP822610.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP837844.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP837847.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP837839.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP837840.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP837838.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP837834.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP837835.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP837842.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP837833.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP837820.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP837836.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ }
+]
