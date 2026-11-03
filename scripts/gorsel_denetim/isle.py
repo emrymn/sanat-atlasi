@@ -28,6 +28,15 @@ DUZELTME = {
     'cma:https://openaccess-cdn.clevelandart.org/1950.251/1950.251_web.jpg': ('uygun', None),
     # 31.48 Artemisia "Judith and Maidservant" (Capodimonte): kalın yaldızlı çerçeve ve duvarla çekilmiş (Gemini "uygun")
     'commons:Artemisia_gentileschi,_giuditta_e_la_fantesca_abra_con_la_testa_recisa_di_oloferne,_1645-50,_Q377.JPG': ('kotu', 'cerceve'),
+    # 42–88. partiler (Gemini Antigravity): ince çerçeve, resim görüntünün çoğunu kaplıyor (Gemini "çerçeve")
+    'commons:Claude_lorrain,_porto_di_mare,_effetto_di_nebbia,_1646.JPG': ('uygun', None),
+    'commons:Royal_Ontario_Museum-9492.jpg': ('uygun', None),
+    'commons:Bemberg_Fondation_Toulouse_-_Portrait_de_la_comtesse_Kagenek_en_Flore_-_Elisabeth_Vigée-Lebrun_1783_75x62_HT_Inv.1128.jpg': ('uygun', None),
+    'commons:Johann_Heinrich_Füssli_-_Portrait_of_a_Lady_-_Detroit_Institute_of_Arts_55.5.B.jpg': ('uygun', None),
+    # 76.36 Monet'nin parçalanmış Kırda Öğle Yemeği: sol parça eserin bugün var olan hâli (Gemini "ayrıntı")
+    "commons:Claude_Monet_-_Le_dejeurner_sur_l'herbe_(left_panel).jpg": ('uygun', None),
+    # 44.9 Boucher: Cleveland'ın tek kaydında iki ayrı tablo üst üste (Gemini "uygun"; Poussin Dört Mevsim kolajı gibi)
+    'cma:https://openaccess-cdn.clevelandart.org/1948.181/1948.181_web.jpg': ('kotu', 'kolaj'),
 }
 
 
