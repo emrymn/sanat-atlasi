@@ -63,7 +63,13 @@ test('Harita sekmesi: 9 dönem resmi, her bölüm bir durak, buradasın yolcusu,
   await resim.click();
   await expect(page.locator('.gor')).toBeVisible();
   await page.keyboard.press('Escape');
-  await page.keyboard.press('Escape');
+  await expect(page.locator('.gor')).toHaveCount(0);
+  // İş 113 (Emre: "çarpıya tıklayınca çıkmıyor"): motif penceresinin çarpısı pencereyi kapatır (uzun hikâye ve
+  // eser yüklendikten sonra da; eskiden kutudaki data-motif işareti çarpıya dokunuşu motife dokunuş sanıyordu)
+  await motif.click();
+  await expect(page.locator('[data-test="harita-motif-resim"]')).toHaveClass(/dolu/);
+  await page.locator('[data-test="harita-motif-pencere"] [data-harita-kapat]').click();
+  await expect(pencere).toBeHidden();
 
   // gündüz / gece düğmesi
   const once = await page.locator('[data-test="harita"]').getAttribute('data-vakit');

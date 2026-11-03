@@ -672,7 +672,7 @@ async function motifKapakDoldur(el, k) {
 function pencereAc(html) {
   const kutu = ekran.querySelector('[data-harita-pencere]');
   if (!kutu || !html) return;
-  delete kutu.dataset.motif;
+  delete kutu.dataset.acikMotif;
   kutu.innerHTML = html;
   kutu.hidden = false;
   requestAnimationFrame(() => kutu.classList.add('acik'));
@@ -770,14 +770,14 @@ export function olaylariBagla() {
       pencereAc(motifPenceresi(anahtar));
       motifVerisi().then((uzun) => {
         const kutu = ekran.querySelector('[data-harita-pencere]');
-        if (!uzun[anahtar] || !kutu || kutu.hidden || kutu.dataset.motif !== anahtar) return;
+        if (!uzun[anahtar] || !kutu || kutu.hidden || kutu.dataset.acikMotif !== anahtar) return;
         const ic = kutu.querySelector('.harita-pencere-ic');
         const yeni = document.createElement('template');
         yeni.innerHTML = motifPenceresi(anahtar, uzun);
         if (ic && yeni.content.firstElementChild) ic.replaceWith(yeni.content.firstElementChild);
         motifKapakDoldur(kutu.querySelector('[data-motif-resim]'), uzun[anahtar]);
       });
-      ekran.querySelector('[data-harita-pencere]')?.setAttribute('data-motif', anahtar);
+      ekran.querySelector('[data-harita-pencere]')?.setAttribute('data-acik-motif', anahtar);
       return;
     }
     if (e.target.closest('[data-harita-konum]')) {
