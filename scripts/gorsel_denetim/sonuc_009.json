@@ -1,0 +1,305 @@
+[
+  {
+    "anahtar": "commons:Pietro_Perugino_cat55.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Lorenzo_di_Credi_by_Perugino.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Pietro_Perugino_cat32.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP-24050-001.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP-18296-029.jpg",
+    "durum": "kotu",
+    "neden": "ayrinti",
+    "emin": false,
+    "not": "başlıkta iki aziz geçiyor ama görselde yalnızca Vaftizci Yahya paneli var"
+  },
+  {
+    "anahtar": "aic:21bd8c8d-eaee-3128-3357-658c1aa5b910",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:9ca3bd55-b205-ef2f-a743-4e906fca3fb2",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:e0a65a38-f083-5408-051f-86d72878105e",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:6a125563-8405-85c1-42a7-8a6818a442d0",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP811074.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP811071.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/b472133d-967e-4606-8d03-3a9b45f20be4",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/f63ebd25-a657-4eb2-94cd-191cb2bf7756",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_-_Hare,_1502_-_Google_Art_Project.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_-_Das_Rosenkranzfest_(1506).jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_-_Praying_Hands,_1508_-_Google_Art_Project.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Portrait_de_l'artiste_tenant_un_chardon_-_Albrecht_Dürer_-_Musée_du_Louvre_Peintures_RF_2382.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:HMF_Duerer_Gruenewald_Harrich_Heller-Altar_DSC_6312.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer,_The_Virgin_Appearing_to_Saint_John,_1510-1511,_NGA_846.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": false,
+    "not": "Apocalypse serisinin kapak gravürü, üstte büyük gotik başlık yazısı var"
+  },
+  {
+    "anahtar": "commons:Dürer,_Albrecht_-_Marter_der_zehntausend_Christen_-_KHM.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_-_Paumgartner_Altar_-_WGA6943.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_-_Adoration_of_the_Trinity_(Landauer_Altar)_-_Google_Art_Project.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Dürer_-_Hieronymus_Holzschuher_(1469-1529)_mit_Deckel,_1526,_557E.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_-_Jesus_among_the_Doctors_-_Google_Art_Project.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_-_The_Large_Piece_of_Turf,_1503_-_Google_Art_Project.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_012.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Duerer,_Albrecht_-_Self-Portrait_at_Thirteen.jpeg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_dürer,_san_girolamo_nello_studio,_1521,_02.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/878db7e6-10ae-4cae-ba5d-6d6f5c413ae8",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Durer,_polittico_dei_sette_dolori,_ricostruzione.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer,_,_Kunsthistorisches_Museum_Wien,_Gemäldegalerie_-_Maria_mit_Kind_-_GG_848_-_Kunsthistorisches_Museum.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_-_Portrait_of_Maximilian_I_-_Google_Art_Project.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/6830fbb8-885a-46e8-8514-6a0bd9f80604",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_004b.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:ALBRECHT-DUERER_BEWEINUNG-CHRISTI-GLIMSCHE-BEWEINUNG_BSTGS_704.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_-_Der_Flügel_einer_Blauracke_(ca._1500).jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_-_Brustbild_einer_jungen_Venezianerin_-_GG_6440_-_Kunsthistorisches_Museum.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_081b.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_-_Jakob_Muffel_-_Google_Art_Project.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Virgin_and_Child_with_Saint_Anne_MET_DP280846.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Portrait_Diptych_of_Dürer's_Parents.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Albrecht_Dürer_028.png",
+    "durum": "uygun",
+    "neden": null,
+    "emin": false,
+    "not": "Jabach Sunağı'nın yalnızca çalgıcılar kanadını gösteriyor"
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP802950.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:d2529576-bbf0-c631-6f8c-659e825c552d",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP802948.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP802952.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP802953.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP820817.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP816928.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP816773.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  }
+]
