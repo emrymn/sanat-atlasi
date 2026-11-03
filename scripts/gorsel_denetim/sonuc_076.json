@@ -1,0 +1,314 @@
+[
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP807732.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Berthe_Morisot_Seattle_02.JPG",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": true,
+    "not": "Kalın oymalı müze çerçevesi ve duvar görüntünün büyük bölümünü kaplıyor"
+  },
+  {
+    "anahtar": "commons:Berthe_Morisot_Chasse_aux_papillons.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jeune_Femme_se_poudrant,_par_Berthe_Morisot.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Les_enfants_de_Gabriel_Thomas.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Morisot_-_L'hortensia,_1894.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Morisot_-_Le_Corsage_Noir,_1878.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:1879_Morisot_Boote_auf_der_Seine_anagoria.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Nice_Harbour_-_Berthe_Morisot_-_Paris_1863_–_1874-_Revolution_in_der_Kunst-9808_(without_frame).jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Berthe_Morisot_Winter_aka_Woman_with_a_Muff.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:In_the_Bois_de_Boulogne_(Berthe_Morisot)_-_Nationalmuseum_-_22575.tif",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DT1928.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DT1927.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:12731595-67a3-dc3c-efa8-29d75b9cd315",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:bfc9b17a-cc18-7bd3-4d78-e925bb1a8b27",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1950.89/1950.89_web.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/0c1e8841-54d8-4457-9454-72d7a6268251",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/26c52279-c2f8-409c-b7b4-467a38de2453",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/057b18ed-2c6c-44f5-a8c0-3e7aa95ab038",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/5568ca30-4751-4861-b31a-9515a6114398",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/16d3f97b-02d2-4b95-a6c6-41385098d873",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP884478.jpg",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": false,
+    "not": "Geniş boş baskı kâğıdı kenarlığı görüntünün %80'inden fazlasını kaplıyor, ortadaki kuru kazıma baskı çok küçük kalmış"
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP884480.jpg",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": false,
+    "not": "Geniş boş baskı kâğıdı kenarlığı görüntünün %80'inden fazlasını kaplıyor, ortadaki kuru kazıma baskı çok küçük kalmış"
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP884476.jpg",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": false,
+    "not": "Geniş boş baskı kâğıdı kenarlığı görüntünün %80'inden fazlasını kaplıyor, ortadaki kuru kazıma baskı çok küçük kalmış"
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP884474.jpg",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": false,
+    "not": "Geniş boş baskı kâğıdı kenarlığı görüntünün %85'ini kaplıyor, ortadaki kuru kazıma baskı çok küçük kalmış"
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP884475.jpg",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": false,
+    "not": "Geniş boş baskı kâğıdı kenarlığı görüntünün %85'ini kaplıyor, ortadaki kuru kazıma baskı çok küçük kalmış"
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP884481.jpg",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": false,
+    "not": "Geniş boş baskı kâğıdı kenarlığı görüntünün yaklaşık %75'ini kaplıyor, ortadaki kuru kazıma baskı küçük kalmış"
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP884477.jpg",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": false,
+    "not": "Geniş boş baskı kâğıdı kenarlığı görüntünün %85'ini kaplıyor, ortadaki kuru kazıma baskı çok küçük kalmış"
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP884479.jpg",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": false,
+    "not": "Geniş boş baskı kâğıdı kenarlığı görüntünün %90'ını kaplıyor, ortadaki kuru kazıma baskı çok küçük kalmış"
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/rl/web-large/DP-33579-001.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:f90c949e-ee39-53eb-2d4c-05fae0370781",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:d943c45f-0d95-6c79-113b-e7268f0bd85e",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:cf042967-7cfd-dc71-d067-331cdf3e84e3",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": false,
+    "not": "Geniş boş baskı kâğıdı kenarlığı görüntünün yaklaşık %75-80'ini kaplıyor, ortadaki kuru kazıma baskı küçük kalmış"
+  },
+  {
+    "anahtar": "aic:90754eab-01b1-a2ff-d007-be1c8508bd23",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": false,
+    "not": "Geniş boş baskı kâğıdı kenarlığı görüntünün yaklaşık %75'ini kaplıyor, ortadaki kuru kazıma baskı küçük kalmış"
+  },
+  {
+    "anahtar": "aic:ef7560c5-2d0e-a2ea-bdf2-6ea2c60e2188",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Claude_Monet_-_Le_dejeurner_sur_l'herbe_(left_panel).jpg",
+    "karar": "kotu",
+    "neden": "ayrinti",
+    "emin": false,
+    "not": "Başlık tüm eseri ('Kırda Öğle Yemeği') belirtiyor ancak görsel kesilmiş tuvalin yalnızca sol parçasını (left panel) gösteriyor"
+  },
+  {
+    "anahtar": "commons:Claude_Monet_La_Grenouillére.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Claude_Monet,_1867,_Regatta_at_Sainte-Adresse,_Metropolitan_Museum_of_Art.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Claude_Monet_-_Regattas_at_Argenteuil_-_Google_Art_Project.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Monet_-_Monets_Garten_in_Giverny.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Claude_Monet-Madame_Monet_en_costume_japonais.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Claude_Monet_-_Houses_of_Parliament,_Sunlight_Effect_(Le_Parlement,_effet_de_soleil)_-_Google_Art_Project.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Claude_Monet_-_Poplars_(Wind_effect).JPG",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:La_Gare_Saint-Lazare_-_Claude_Monet.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Claude_Monet,_Saint-Georges_majeur_au_crépuscule.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:95be2572-b53d-8e7b-abc9-10eb48d4fa5d",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Claude_Monet_-_Poppy_Field_-_Google_Art_Project.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Monet_Claude,_The_Beach_at_Pourville,_1882.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Claude_Monet_-_Springtime_-_Walters_3711.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Monet_-_canoaepte01.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  }
+]

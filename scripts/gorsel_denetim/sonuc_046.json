@@ -1,0 +1,304 @@
+[
+  {
+    "anahtar": "commons:(Venice)_Saint_Cajetan's_Vision_of_the_Holy_Family_by_Giambattista_Tiepolo_-_Gallerie_Accademia.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:San_Antonio_de_Padua_y_el_Niño_Jesús.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Estigmatización_de_san_Francisco_de_Asís.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:La_visión_de_san_Pascual_Bailón.jpg",
+    "karar": "kotu",
+    "neden": "salon",
+    "emin": false,
+    "not": "İki parça halinde günümüze ulaşan eserin müze sergileme panosu; sağ altta çerçeveli gravür ve müze etiketi yer alıyor"
+  },
+  {
+    "anahtar": "commons:Hermitagetiepolotriumpdentatus.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:633f464c-203f-f7b9-a251-7a2073f4b05d",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:bd2dd3d8-14f3-7acc-baf7-1033694d3740",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:4d2eeeeb-817c-2b00-68e8-4f4c75f7f061",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:1623c4af-9ac2-fd80-9e73-05f7d402c6bd",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:19f0e672-2924-b42b-70af-d28ff46f23cc",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1946.277/1946.277_web.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1916.780/1916.780_web.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/ec91a058-14aa-47ca-810d-9f31b3006062",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/ce14cdf4-fedc-4229-bb08-7f50d89f3871",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/4fa70f8d-9d2b-47ca-8a84-e49c942e900d",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/3e77b2e1-a36a-482f-85f8-96eaf89b679a",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/957ccf83-e597-4668-bba0-79bdbee76bdf",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/89cb8921-2af8-4aeb-a210-67abf2df5dd5",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/3b398f2e-ba99-4455-b55f-824e39f849f5",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/b43cb1f3-cf38-4a59-ac3c-b8e8db2acb9b",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/MM9487.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP854166.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP854164.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP854174.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP854170.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP854173.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/MM8278.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Chardin,_Jean-Baptiste_Siméon_-_Still_Life_with_Attributes_of_the_Arts_-_1766.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean_Siméon_Chardin_-_Le_Panier_de_fraises_des_bois_(1761).jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean_Siméon_Chardin,_The_Attentive_Nurse,_1747,_NGA_41649.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP356136.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jeune_dessinateur_taillant_son_crayon_-_Jean_Baptiste_Siméon_Chardin_-_Musée_du_Louvre_Peintures_RF_1944_4.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Chardin,_Jean-Siméon_-_Nature_morte_au_chaudron_de_cuivre_-_J_19_-_Musée_Cognacq-Jay.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean_Siméon_Chardin_-_Le_Melon_entamé_(1760).png",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean-Siméon_Chardin_-_Still_Life_with_Peaches,_a_Silver_Goblet,_Grapes,_and_Walnuts_-_86.PA.544_-_J._Paul_Getty_Museum.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Copper_cistern.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean_Siméon_Chardin_-_The_Provider_(La_Pourvoyeuse)_-_WGA04759.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean_Siméon_Chardin_-_'La_Brioche'_(Cake)_-_WGA04779.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Chardin,_brocche_e_bicchieri,_detto_anche_la_tabagia,_1737_ca..JPG",
+    "karar": "kotu",
+    "neden": "cerceve",
+    "emin": true,
+    "not": "Kalın yaldızlı müze çerçevesi görüntünün önemli bölümünü kaplıyor"
+  },
+  {
+    "anahtar": "commons:Chardin_attributs_musique_civile.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean_Siméon_Chardin_-_Water_Glass_and_Jug_-_WGA04775.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean-Siméon_Chardin_-_Jar_of_Apricots_-_Google_Art_Project.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean-Baptiste_Siméon_Chardin_015.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Lille_PdBA_chardin_gobelet_argent.JPG",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Young_Student_Drawing_(Jean_Siméon_Chardin)_-_Nationalmuseum_-_17782.tif",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean_Siméon_Chardin,_The_House_of_Cards,_probably_1737,_NGA_97.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean_Siméon_Chardin_-_Grapes_and_Pomegranates_-_WGA04780.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean-Baptiste_Siméon_Chardin_024.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:ChemistLaboratory.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:dfe5d0d9-5ef0-5ff7-dfa8-43a98d704493",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  }
+]

@@ -1,0 +1,304 @@
+[
+  {
+    "anahtar": "commons:The_Milliner_(François_Boucher)_-_Nationalmuseum_-_17775.tif",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Boucher,_François_-_Le_Repos_des_nymphes_au_retour_de_la_chasse,_dit_Le_Retour_de_chasse_de_Diane_-_J_10_-_Musée_Cognacq-Jay.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:François_Boucher_-_Amantes_em_um_parque.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:BoucherFrancois_MarsEtVenus.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Pan_e_Siringa.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Boucher,_Le_Jugement_de_Pâris.jpg",
+    "karar": "kotu",
+    "neden": "salon",
+    "emin": true,
+    "not": "Müze duvarı, yandaki bilgi etiketi ve kalın çerçeve görünüyor"
+  },
+  {
+    "anahtar": "aic:12662645-5164-4bb1-cfec-3517a4c9779c",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:08b2ede5-bf33-602a-f1eb-2e7510c1b3cd",
+    "karar": "kotu",
+    "neden": "siyah_beyaz",
+    "emin": false,
+    "not": "Yağlıboya tablonun eski siyah-beyaz fotoğrafı gibi görünüyor (grisaille olma ihtimaline karşı emin: false)"
+  },
+  {
+    "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1948.181/1948.181_web.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1948.181.1/1948.181.1_web.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1948.181.2/1948.181.2_web.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1979.55/1979.55_web.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "cma:https://openaccess-cdn.clevelandart.org/2012.95/2012.95_web.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP805464.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP805479.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP805469.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP805465.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP805466.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP805468.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP809657.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DT7681.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP809662.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP808478.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP805475.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP805485.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP805482.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/53.523.24(2).jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP224413.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP226511.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP226512.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP825543.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP825507.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Las_bañistas,_por_Jean-Honoré_Fragonard.JPG",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean-Honoré_Fragonard_-_Die_Musikstunde_-_ca1770.jpeg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jeroboam.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP-1014-001.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Fragonard_psyche.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Fragonard_coresus_sacrificing_himselt_to_save_callirhoe.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean_Honoré_Fragonard,_The_Visit_to_the_Nursery,_c._1775,_NGA_32685.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Col_renaixement_ambit_45_2_big.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:The_Fountain_of_Love,_Jean-Honoré_Fragonard,_c1785.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Fragonard_musical.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Gérard,_Marguerite_and_Fragonard,_Jean-Honoré_-_Le_chat_angora_-.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean-Honoré_Fragonard_-_The_Storm_-_WGA8053.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean_Honore_Fragonard_Le_Petit_Parc.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Fragonard_1775_adoration_des_bergers_Louvre.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean-Honoré_Fragonard_-_Jérôme_de_La_Lande_(1732-1807)_-_PDUT1194_-_Musée_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DP-1009-001.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Jean-Honoré_Fragonard_-_Cabra-cega.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Je_m'occupais_de_vous,_par_Jean-Honoré_Fragonard_et_Marguerite_Gérard.jpg",
+    "karar": "uygun",
+    "neden": null,
+    "emin": true
+  }
+]
