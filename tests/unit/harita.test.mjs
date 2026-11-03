@@ -348,5 +348,5 @@ test('saklı motifler: her motifin uzun hikâyesi var, eseri görünür sanatç�
     const e = ob[k.sid].eserler.find((x) => (x.qid || `${k.sid}|${x.baslik}`) === k.eser);
     assert.ok(e && e.gorseller.length, `${a}: eser yok`);
   }
-  assert.ok(eserli >= 38, `eseri olan motif ${eserli}`);
+  assert.equal(eserli, 40, `eseri olan motif ${eserli}`);
 });
