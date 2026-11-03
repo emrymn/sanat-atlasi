@@ -264,3 +264,42 @@ test('İş 92: öğrenci yalnız durağa dokununca patikada yürür', async ({ p
   await page.waitForTimeout(1200);
   await expect(page.locator('.harita.yuruyor')).toHaveCount(0);
 });
+
+// İş 114 (Emre: "aşağı indirince kapanacak şekilde ayarla çünkü aşağı kaydırmada haritayı kaydırıyor")
+test.describe('harita penceresi dokunuşla', () => {
+  test.use({ hasTouch: true, isMobile: true });
+
+  test('pencere aşağı çekilince kapanır, harita kaymaz; az çekilince geri gelir', async ({ page, context }) => {
+    await agiHazirla(context);
+    await page.goto('./#/harita');
+    await hazir(page);
+    const acik = page.locator('[data-test="harita-durak"][data-acik="true"]').first();
+    await acik.scrollIntoViewIfNeeded();
+    await acik.click();
+    const pencere = page.locator('[data-harita-pencere]');
+    await expect(pencere).toBeVisible();
+    await page.waitForTimeout(600); // açılış yayı bitsin
+    const ic = await page.locator('.harita-pencere-ic').boundingBox();
+    const x = ic.x + ic.width / 2;
+    const y0 = ic.y + 40;
+    const cdp = await context.newCDPSession(page);
+    const cek = async (mesafe) => {
+      await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y: y0 }] });
+      for (let i = 1; i <= 10; i++) {
+        await cdp.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x, y: y0 + (mesafe * i) / 10 }] });
+        await page.waitForTimeout(30);
+      }
+      await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    };
+    const kaydirmaOnce = await page.evaluate(() => window.scrollY);
+    // az çekiş (yavaş): pencere geri yaylanır, harita kaymaz
+    await cek(40);
+    await page.waitForTimeout(400);
+    await expect(pencere).toBeVisible();
+    expect(await page.evaluate(() => window.scrollY)).toBe(kaydirmaOnce);
+    // yeterli çekiş: kapanır, harita yine kaymaz
+    await cek(200);
+    await expect(pencere).toBeHidden();
+    expect(await page.evaluate(() => window.scrollY)).toBe(kaydirmaOnce);
+  });
+});

@@ -12,6 +12,7 @@ import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_G
 import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yansimaAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
 import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen, notuIcin, gorselTercihi } from './ortak.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
+import { surukleKapatKur } from '../surukleKapat.js';
 import { sanatciEserleri } from '../eserler.js';
 import { harfUygula, BOLGE_HARFLERI } from '../harfler.js';
 
@@ -729,6 +730,8 @@ function pencereKapat() {
 }
 
 export function olaylariBagla() {
+  // İş 114: pencere aşağı çekilince kapanır; pencerenin üstündeki kaydırma haritaya geçmez
+  surukleKapatKur(ekran, () => ekran.querySelector('[data-test="harita"]') && ekran.querySelector('[data-harita-pencere]'), pencereKapat);
   ekran.addEventListener('click', (e) => {
     if (!ekran.querySelector('[data-test="harita"]')) return;
     const durak = e.target.closest('[data-bolum]');
