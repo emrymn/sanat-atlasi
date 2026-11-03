@@ -14154,3 +14154,9 @@ button.motif-kapak:active .hp-kapak-eser img {
 .harita-pencere-ic.motif:has(.motif-kapak) > .etiket {
   margin-top: 0;
 }
+
+/* İş 114: pencere içeriği kaydırılırken ucuna gelince harita kaymasın; aşağı çekince kapanır (js/surukleKapat.js) */
+.harita-pencere-ic {
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
