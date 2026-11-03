@@ -56,7 +56,8 @@ def main():
     sayi = {'uygun': 0, 'kotu': 0, 'cikar': 0}
     for p in sorted(BURASI.glob('sonuc_[0-9][0-9][0-9].json')):
         for s in json.loads(p.read_text()):
-            karar, _ = DUZELTME.get(s['anahtar'], (s['karar'], s.get('neden')))
+            # Gemini 7. partiden sonra alanın adını "durum" yazdı; ikisi de kabul edilir
+            karar, _ = DUZELTME.get(s['anahtar'], (s.get('karar', s.get('durum')), s.get('neden')))
             if karar not in sayi:
                 raise SystemExit(f'{p.name}: bilinmeyen karar {karar!r} ({s["anahtar"]})')
             sayi[karar] += 1

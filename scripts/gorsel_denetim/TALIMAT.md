@@ -35,5 +35,6 @@ Bu depo bir sanat tarihi çalışma uygulaması (Sanat Atlası). Uygulama eserle
 ]
 ```
 
-Partideki her eser için tam bir satır; `anahtar` partideki ile birebir aynı. `not` isteğe bağlı, kısa.
+Partideki her eser için tam bir satır; `anahtar` partideki ile birebir aynı. Alan adları tam olarak `anahtar`, `karar`,
+`neden`, `emin`, `not` (ör. `karar` yerine `durum` yazma). `not` isteğe bağlı, kısa.
 Sonuçlar uygulamaya doğrudan girmez: Claude örnekleyerek kontrol eder, sonra `data/gorsel_kararlari.json`'a işler.
