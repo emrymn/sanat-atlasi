@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { slugYap, slugAdaylari, yilCoz, eslesme, resimMi, adaySirala, sayfaSec, hedefSanatcilar, Sinirlayici } from '../../scripts/kaynaklar/wikiart.mjs';
-import { wikiartEkle, wikiartCikar, wikiartiUygula, gorselPuani } from '../../scripts/kaynaklar/birlestir.mjs';
+import { wikiartEkle, wikiartCikar, wikiartiUygula, gorselPuani, elleEkle } from '../../scripts/kaynaklar/birlestir.mjs';
 import { gorselUrl, gorselKaynakYazisi, gorselSayfasi, pekistirmeyeUygunMu } from '../../js/gorsel.js';
 
 const dali = { id: 'salvador-dali', ad: 'Salvador Dalí', ad_arama: 'Salvador Dalí', dogum: 1904, olum: 1989, akim: 'Sürrealizm' };
@@ -153,4 +153,31 @@ test('uygulamada WikiArt görseli: Large/HalfHD, "Kaynak: WikiArt" ve eser sayfa
   assert.equal(gorselSayfasi(g), g.s);
   assert.equal(pekistirmeyeUygunMu({ anahtar: 'x', gorseller: [g] }), true);
   assert.equal(pekistirmeyeUygunMu({ anahtar: 'x', gorseller: [{ ...g, p: 5 }], pekistirme: false }), false);
+});
+
+// İş 112: elle seçilmiş WikiArt eserleri (data/wikiart.json `elle`)
+test('elle eklenen WikiArt eseri: yeni eser açılır, yeniden uygulamak değiştirmez, pekistirme: false korunur', () => {
+  const ob = { sanatcilar: { x: { eserler: [{ baslik: 'Nude', yil: 1912, kaynaklar: ['commons'], gorseller: [{ k: 'commons', d: 'N.jpg', p: 50 }] }] } } };
+  const wa = {
+    sanatcilar: {},
+    elle: {
+      x: [
+        { baslik: 'Bicycle Wheel', yil: 1913, sayfa: 'https://www.wikiart.org/en/x/b', gorsel: 'https://uploads.wikiart.org/b.jpg', pekistirme: false },
+        { baslik: 'Nude', yil: 1912, sayfa: 'https://www.wikiart.org/en/x/n', gorsel: 'https://uploads.wikiart.org/n.jpg' },
+      ],
+    },
+  };
+  wikiartiUygula(ob, wa);
+  const once = JSON.stringify(ob);
+  const l = ob.sanatcilar.x.eserler;
+  assert.equal(l.length, 2);
+  const b = l.find((e) => e.baslik === 'Bicycle Wheel');
+  assert.equal(b.pekistirme, false);
+  assert.equal(b.gorseller[0].p, gorselPuani({ k: 'wikiart' }));
+  // aynı eser varsa görsel ona katılır, müze/Commons görseli önde kalır
+  const n = l.find((e) => e.baslik === 'Nude');
+  assert.deepEqual(n.gorseller.map((g) => g.k), ['commons', 'wikiart']);
+  wikiartiUygula(ob, wa);
+  assert.equal(JSON.stringify(ob), once);
+  assert.deepEqual(elleEkle(l, []), l);
 });
