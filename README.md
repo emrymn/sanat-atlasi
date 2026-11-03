@@ -181,11 +181,7 @@ Telefonda: Ayarlar → **En büyük kopyaları telefona indir** → yenilenenler
 
 Kredi bitince bırakılanlar; sırası önemli değil. Her biri bitince KARARLAR.md'ye yazılır.
 
-1. **Görsel denetiminin kalan partileri.** `scripts/gorsel_denetim/` altında 35 partinin sonucu yok:
-   062, 063, 065, 066, 069, 071, 072, 074, 075, 077, 078, 080, 081, 083, 084, 086, 087, 089–106.
-   - Yapan (Gemini ya da Antigravity'de Claude Sonnet): `TALIMAT.md`'yi okuyup bu partilerin `sonuc_NNN.json` dosyalarını yazar.
-   - Emre: `git pull`, `git add scripts/gorsel_denetim/sonuc_*.json`, commit, `git push` (dal: `claude/brave-mendel-h2rm3b`).
-   - Claude: kötü/çıkar/"emin değil" denenlerin hepsine ve uygunlardan bir örnekleme bakar, katılmadıklarını `isle.py` `DUZELTME`'ye yazar, `python3 scripts/gorsel_denetim/isle.py`, testler, sorulmadan yayınlar (Emre'nin kalıcı talimatı).
+1. ~~Görsel denetiminin kalan partileri~~ — bitti (106 partinin hepsi, KARARLAR İş 107). Yeni görseller eklenirse `scripts/gorsel_denetim/parti_uret.py --yeni` ile yeni partiler çıkar, aynı yol izlenir (`TALIMAT.md`).
 2. **Mac'teki büyük indirme bittikten sonra** — ayrıntılı adımlar aşağıda, "Büyük indirmeden sonra (adım adım)" bölümünde. 1–5. adımları Emre tek başına yapabilir; 6. adım için Claude betik yazar.
 3. **Tek eserli konular (isteğe bağlı).** `data/eser_konulari.json`'da 315 konu yalnız bir eserde geçiyor (adı var, hikâye sayfası yok). İstenirse önemlileri seçilip `scripts/konu_etiket/yeni_konular_NN.json` biçiminde sayfaları yazılır, `python3 scripts/konu_etiket/uret.py` ile eklenir.
 4. **iPhone titreşimi (isteğe bağlı).** Emre: "zayıf, sonra bakarız". iPhone'da tık gücü iOS'ta sabit; doğru/yanlış ayrımı yok (bkz. KARARLAR İş 106).
