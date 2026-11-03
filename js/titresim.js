@@ -8,11 +8,12 @@
 // sonra düğmenin kendisine tıklanır; uygulamanın işleyicileri hep düğmenin tıklamasını görür. iPhone'da doğru ile yanlış
 // ayırt edilemez: tık, cevap denetlenmeden parmağın değdiği anda gelir.
 
-// Düğmenin içine konur (düğme position: relative olmalı; css/app.css .tik). Yalnız titreşim açıkken çizilir.
+// Düğmenin içine konur (düğme position: relative olmalı; css/app.css .tik). Yalnız titreşim açıkken ve
+// navigator.vibrate olmayan tarayıcıda (iPhone) çizilir: Android kendi titreşimini kullanır, cevap da gecikmeden işlenir.
 export const TIK = '<label class="tik" data-tik aria-hidden="true"><input type="checkbox" switch tabindex="-1"></label>';
 
-export function tik(acik) {
-  return acik ? TIK : '';
+export function tik(acik, ortam = typeof navigator !== 'undefined' ? navigator : null) {
+  return acik && !(ortam && typeof ortam.vibrate === 'function') ? TIK : '';
 }
 
 // Etiketin ve anahtarın kendi tıklamaları uygulamaya ulaşmaz; onların yerine sahibi olan düğmeye bir kez tıklanır.

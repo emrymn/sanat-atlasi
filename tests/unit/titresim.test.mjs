@@ -19,9 +19,11 @@ test('İş 106 titret: vibrate yoksa (iPhone) hata vermez, titreşimi düğmedek
   assert.equal(titret('dogru', true, null), 'yok');
 });
 
-test('İş 106 TIK: düğmeyi kaplayan etiketin içinde anahtar biçimli onay kutusu; kapalıyken hiç çizilmez', () => {
-  assert.equal(tik(false), '');
-  assert.equal(tik(true), TIK);
+test('İş 106 TIK: düğmeyi kaplayan etiketin içinde anahtar biçimli onay kutusu; kapalıyken ve vibrate varken çizilmez', () => {
+  assert.equal(tik(false, {}), '');
+  assert.equal(tik(true, {}), TIK); // iPhone: vibrate yok
+  assert.equal(tik(true, null), TIK);
+  assert.equal(tik(true, { vibrate: () => true }), ''); // Android
   assert.match(TIK, /^<label class="tik" data-tik aria-hidden="true"><input type="checkbox" switch tabindex="-1"><\/label>$/);
 });
 

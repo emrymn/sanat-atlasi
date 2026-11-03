@@ -12,7 +12,7 @@ import { yedekTarihiYaz } from './bugun.js';
 import { yarimSil } from './pekistir.js';
 import { SURUM } from '../surum.js';
 import { egimVar, izinGerekli, egimIzni, izinVarMi } from '../egim.js';
-import { titret, TIK } from '../titresim.js';
+import { titret, tik } from '../titresim.js';
 import { ikon } from '../tasarim.js';
 import { kacis } from '../yardimci.js';
 import { vadeSayisi, yarinVade } from '../gecmis.js';
@@ -86,7 +86,7 @@ export function ayarlarSayfasi() {
         <p class="mesaj" id="rozet-mesaj" aria-live="polite"></p></div>
       <div class="ayar"><label class="konu"><span class="metin"><b>Titreşim</b><small>Cevaba dokununca telefon hafifçe titrer. iPhone’da iOS 18 ve sonrası gerekir; Ayarlar → Sesler ve Dokunuş → Sistem Dokunuşları açık olmalı. Android’de doğruda bir, yanlışta iki kez titrer.</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-titresim data-test="ayar-titresim" ${a.titresim !== false ? 'checked' : ''} aria-label="Titreşim"></label>
-        <button class="dugme ince" type="button" data-titresim-dene data-test="titresim-dene">${TIK}Titreşimi dene</button></div>
+        <button class="dugme ince" type="button" data-titresim-dene data-test="titresim-dene">${tik(true)}Titreşimi dene</button></div>
       <div class="ayar"><label class="konu"><span class="metin"><b>Telefonu eğince tablo oynasın</b><small>${egimVar() ? 'Bugün’deki günün tablosu telefonu sağa sola çevirdikçe, öne arkaya eğdikçe hafifçe döner, ışık üstünden kayar; sergi duvarında ve Koleksiyonum’da tablolar ipinden sallanır, Pekiştir’deki deste yelpaze açılır.' + (izinGerekli() ? ' iPhone hareket izni ister ve uygulama kapanınca çoğu zaman unutur: o zaman Bugün’deki ya da buradaki düğmeyle yeniden ver.' : '') : 'Bu tarayıcı hareket algılayıcısını desteklemiyor.'}</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-egim ${a.egim !== false ? 'checked' : ''} ${egimVar() ? '' : 'disabled'} aria-label="Telefonu eğince tablo oynasın"></label>
         <button class="dugme ince" type="button" data-egim-izin data-test="egim-izin" hidden>${ikon('hareket', 18, 1.6)} Hareket iznini ver</button>
