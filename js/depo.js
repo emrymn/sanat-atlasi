@@ -21,6 +21,7 @@ export function varsayilanIlerleme(islenen = []) {
     islenen: islenen.slice(),
     ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA, tanisma: true, rozet: false, egim: true, titresim: true },
     skorlar: {},
+    skorlarKonu: {}, // İş 105: konu turu skorları { konuId: Leitner skoru }
     gunluk: { tarih: bugunStr(), yeni: 0, kart: 0, yeniIdler: [] },
     sonEserler: {},
     kotuGorseller: {},
@@ -62,7 +63,12 @@ export function ilerlemeDogrula(nesne) {
     skorlar[id] = {};
     if (s.sanatci) skorlar[id].sanatci = s.sanatci;
     if (s.akim) skorlar[id].akim = s.akim;
+    if (s.bolumKart && skorGecerli(s.bolumKart)) skorlar[id].bolumKart = s.bolumKart; // İş 105: bölüm turu
   }
+  // İş 105: konu (ikonografi) turu, konu başına; bozuk kayıt sessizce atlanır
+  const skorlarKonu = {};
+  if (v.skorlarKonu && typeof v.skorlarKonu === 'object' && !Array.isArray(v.skorlarKonu))
+    for (const [id, s] of Object.entries(v.skorlarKonu)) if (s && skorGecerli(s) && id.length < 120) skorlarKonu[id] = s;
   const t = varsayilanIlerleme();
   const ayarlar = { ...t.ayarlar, ...(v.ayarlar || {}) };
   // Sürüm 1'de varsayılan Sepya'ydı ve Koyu tema vardı: ikisi de bir kez Gece'ye geçer (Açık seçimi korunur)
@@ -78,6 +84,7 @@ export function ilerlemeDogrula(nesne) {
     islenen: [...new Set(v.islenen)].sort((a, b) => a - b),
     ayarlar,
     skorlar,
+    skorlarKonu,
     gunluk:
       v.gunluk && typeof v.gunluk === 'object'
         ? { ...t.gunluk, ...v.gunluk, yeniIdler: Array.isArray(v.gunluk.yeniIdler) ? v.gunluk.yeniIdler : [] }

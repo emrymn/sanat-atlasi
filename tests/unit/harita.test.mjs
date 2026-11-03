@@ -333,3 +333,20 @@ test('İş 93: yürürken poz — aşağı inerken önden, yukarı çıkarken ar
   assert.equal(yolcuPozu(tam, 0, -5, 2, true), 'arka1');
   assert.equal(yolcuPozu(tek, 5, 0, 3, true), 'dur'); // önden pozu olmayan karakter
 });
+
+// İş 111: saklı motiflerin uzun hikâyeleri ve eserleri (data/harita_motifler.json)
+test('saklı motifler: her motifin uzun hikâyesi var, eseri görünür sanatçının eserlerinde', () => {
+  const mv = oku('data/harita_motifler.json').motifler;
+  const ob = oku('data/eserler_onbellek.json').sanatcilar;
+  assert.deepEqual(Object.keys(mv).sort(), Object.keys(veri.eserler).sort());
+  let eserli = 0;
+  for (const [a, k] of Object.entries(mv)) {
+    assert.ok(k.hikaye.length >= 2 && k.hikaye.every((p) => typeof p === 'string' && p.length > 80), a);
+    if (!k.eser) continue;
+    eserli++;
+    assert.ok(harita.has(k.sid), `${a}: sanatçı uygulamada yok`);
+    const e = ob[k.sid].eserler.find((x) => (x.qid || `${k.sid}|${x.baslik}`) === k.eser);
+    assert.ok(e && e.gorseller.length, `${a}: eser yok`);
+  }
+  assert.equal(eserli, 40, `eseri olan motif ${eserli}`);
+});

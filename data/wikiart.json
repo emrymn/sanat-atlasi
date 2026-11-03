@@ -2674,5 +2674,26 @@
   }
  },
  "kaynak": "WikiArt (https://www.wikiart.org) · scripts/kaynaklar/wikiart.mjs",
- "olusturma": "2026-10-20T10:34:53.840Z"
+ "olusturma": "2026-10-20T10:34:53.840Z",
+ "elle": {
+  "marcel-duchamp": [
+   {
+    "baslik": "Bicycle Wheel",
+    "yil": 1913,
+    "sayfa": "https://www.wikiart.org/en/marcel-duchamp/bicycle-wheel-1913",
+    "gorsel": "https://uploads4.wikiart.org/images/marcel-duchamp/bicycle-wheel-1913.jpg",
+    "pekistirme": false,
+    "not": "hazır nesne (readymade), resim değil: soru olmaz; haritadaki saklı motif"
+   }
+  ],
+  "pablo-picasso": [
+   {
+    "baslik": "Three Musicians",
+    "yil": 1921,
+    "sayfa": "https://www.wikiart.org/en/pablo-picasso/musicians-with-masks-1921",
+    "gorsel": "https://uploads0.wikiart.org/images/pablo-picasso/musicians-with-masks-1921.jpg!HalfHD.jpg",
+    "not": "WikiArt adı \"Musicians with masks\" (MoMA sürümü); haritadaki saklı motif"
+   }
+  ]
+ }
 }

@@ -222,6 +222,12 @@ function adlariSigdir() {
 }
 
 // Resmin renkleri: genişlik renk payına göre
+// İş 108: cevap yaprağının ana düğmesi: yazı ve yuvarlak içinde ok (ya da bitişte ✓); ok kıpırdar, basınca ileri kayar
+export function yaprakDugmeYazisi(yazi) {
+  const bitis = yazi === 'Turu bitir';
+  return `<span class="yd-yazi">${yazi}</span><span class="yd-ok" aria-hidden="true">${ikon(bitis ? 'dogru' : 'ileri', 18, 2)}</span>`;
+}
+
 export function paletHtml(palet) {
   if (!palet || !palet.length) return '<div class="palet" aria-hidden="true"></div>';
   return `<div class="palet" role="img" aria-label="Resmin renkleri">${palet.map((p) => `<span style="flex-grow:${p.pay.toFixed(3)};background:${p.renk}"></span>`).join('')}</div>`;

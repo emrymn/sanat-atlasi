@@ -282,12 +282,39 @@ export function wikiartEkle(eserler, kayit) {
   return liste;
 }
 
+/**
+ * İş 112: elle seçilmiş WikiArt eserleri (data/wikiart.json `elle`: { sanatçıId: [{ baslik, yil, sayfa, gorsel, pekistirme? }] }).
+ * Otomatik seçimin dışında kalan ünlü eserler (Emre: haritadaki Duchamp ve Picasso motifleri). wikiart.mjs yeniden
+ * çalışınca `elle` korunur (dosyanın üst düzeyi). Eser sınırına takılmaz; aynı eser varsa görsel ona katılır.
+ * pekistirme: false → Göz At'ta ve haritada görünür, soru olmaz (ör. resim olmayan hazır nesne).
+ */
+export function elleEkle(eserler, elle = []) {
+  const liste = [...eserler];
+  for (const w of elle) {
+    const g = { k: 'wikiart', u: w.gorsel, s: w.sayfa, l: '' };
+    g.p = gorselPuani(g);
+    const aday = { baslik: w.baslik, yil: w.yil ?? null };
+    const i = liste.findIndex((e) => e.yil != null && aday.yil != null && ayniEserMi({ baslik: e.baslik, baslikEn: e.baslikEn, yil: e.yil }, aday));
+    if (i >= 0 && liste[i].gorseller.some((x) => x.u === g.u)) continue;
+    const yeni =
+      i >= 0
+        ? { ...liste[i], kaynaklar: [...new Set([...liste[i].kaynaklar, 'wikiart'])], gorseller: [...liste[i].gorseller, g] }
+        : { baslik: w.baslik, ...(aday.yil != null ? { yil: aday.yil } : {}), kaynaklar: ['wikiart'], gorseller: [g] };
+    gorselleriSirala(yeni);
+    if (w.pekistirme === false) yeni.pekistirme = false;
+    if (i >= 0) liste[i] = yeni;
+    else liste.push(yeni);
+  }
+  return liste;
+}
+
 // data/eserler_onbellek.json biçimi: pekistirme yalnızca false iken yazılır
 export function wikiartiUygula(onbellek, wikiart) {
   const kayitlar = (wikiart && wikiart.sanatcilar) || {};
+  const elle = (wikiart && wikiart.elle) || {};
   for (const [id, k] of Object.entries(onbellek.sanatcilar || {})) {
     const once = JSON.stringify(k.eserler);
-    const eserler = wikiartEkle(k.eserler || [], kayitlar[id]).map((e) => {
+    const eserler = elleEkle(wikiartEkle(k.eserler || [], kayitlar[id]), elle[id]).map((e) => {
       const o = { ...e };
       if (o.pekistirme !== false) delete o.pekistirme;
       return o;

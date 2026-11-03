@@ -55,7 +55,21 @@ test('Harita sekmesi: 9 dönem resmi, her bölüm bir durak, buradasın yolcusu,
   await motif.click();
   await expect(page.locator('[data-test="harita-motif-pencere"]')).toBeVisible();
   await expect(page.locator('[data-test="harita-motif-pencere"] h2')).not.toBeEmpty();
+  // İş 111: uzun hikâye (paragraflar) ve eserin kendisi; esere dokununca tam ekran görüntüleyici
+  await expect(page.locator('[data-test="harita-motif-hikaye"]')).toHaveCount(3);
+  const resim = page.locator('[data-test="harita-motif-resim"]');
+  await expect(resim).toHaveClass(/dolu/);
+  await expect(resim.locator('img')).toHaveCount(1);
+  await resim.click();
+  await expect(page.locator('.gor')).toBeVisible();
   await page.keyboard.press('Escape');
+  await expect(page.locator('.gor')).toHaveCount(0);
+  // İş 113 (Emre: "çarpıya tıklayınca çıkmıyor"): motif penceresinin çarpısı pencereyi kapatır (uzun hikâye ve
+  // eser yüklendikten sonra da; eskiden kutudaki data-motif işareti çarpıya dokunuşu motife dokunuş sanıyordu)
+  await motif.click();
+  await expect(page.locator('[data-test="harita-motif-resim"]')).toHaveClass(/dolu/);
+  await page.locator('[data-test="harita-motif-pencere"] [data-harita-kapat]').click();
+  await expect(pencere).toBeHidden();
 
   // gündüz / gece düğmesi
   const once = await page.locator('[data-test="harita"]').getAttribute('data-vakit');

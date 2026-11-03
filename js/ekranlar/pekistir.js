@@ -54,6 +54,7 @@ import {
   BILMIYORUM,
   eserAdi,
   paletHtml,
+  yaprakDugmeYazisi,
   kaynakSatiri,
   ekranRengi,
   renkSabitle,
@@ -89,6 +90,7 @@ import { dinleEkle } from '../kunye.js';
 import { desteBaslat } from '../deste.js';
 import { cerceveTipi } from '../cerceve.js';
 import { titret, tik } from '../titresim.js';
+import { soruTurlariHtml } from './soruTurlari.js';
 
 // ---------- İş 24 · harita bölümleri ----------
 const BOLUM_SV_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor', tanitim: 'Tanıtım', 'tanitim-orta': 'Orta tanıtımı' };
@@ -216,6 +218,7 @@ export function pekistirMenusu() {
         ? `${turSahnesi(karisik)}
     ${devamKarti()}
     ${hatalarSatiri()}
+    ${soruTurlariHtml()}
     <section class="bolum pk-salonlar">
       <div class="pk-bolum-bas"><span class="etiket vurgu">Döneme göre</span><h2 class="pk-baslik">Salonlar</h2></div>
       <p class="kucuk ikincil" style="margin:0">${seviyeAciklamasi()}</p>
@@ -1025,7 +1028,7 @@ function tersGoster(o) {
       if ((k.karisanSayi || 0) >= KARISAN_ESIGI) karsilastirBag = karsiSeritHtml(s, d.harita.get(cevap), k.karisanSayi);
       karsilastirBag += `<a class="karsilastir-bag" href="${karsilastirmaAdresi(s.id, cevap)}" data-test="karsilastir">${ikon('karsilastir', 18, 1.6)}<span>Karşılaştır: ${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))} ↔ ${adi(cevap)}</span></a>`;
     }
-    const sonrakiYazi = ot.konum + 1 >= ot.toplam ? 'Turu bitir' : 'Sonraki kart →';
+    const sonrakiYazi = yaprakDugmeYazisi(ot.konum + 1 >= ot.toplam ? 'Turu bitir' : 'Sonraki kart');
     const ipucu = ipucuMetni(s);
     yaprak = `<section class="alt-yaprak" aria-live="polite">
       <p class="sonuc" data-test="sonuc" data-dogru="${dogru}">${ikon(dogru ? 'dogru' : 'yanlis', 18, 2)}<b>${sonuc[0]}</b>${sonuc[1] ? `<span class="sonuc-not">${kacis(sonuc[1])}</span>` : ''}</p>
@@ -1152,7 +1155,7 @@ function kartGoster(o) {
   let yaprak = '';
   if (cevap !== null) {
     const sanatciDogru = k.cevapSanatci === k.id;
-    const sonrakiYazi = ot.konum + 1 >= ot.toplam ? 'Turu bitir' : 'Sonraki kart →';
+    const sonrakiYazi = yaprakDugmeYazisi(ot.konum + 1 >= ot.toplam ? 'Turu bitir' : 'Sonraki kart');
     const tekrarNotu = 'bu kart 3–5 kart sonra yine gelecek';
     const ipucu = ipucuMetni(s);
     let dogru;
@@ -1172,7 +1175,7 @@ function kartGoster(o) {
       if (!dogru && k.cevapSanatci && d.harita.has(k.cevapSanatci))
         karsilastirBag += `<a class="karsilastir-bag" href="${karsilastirmaAdresi(s.id, k.cevapSanatci)}" data-test="karsilastir">${ikon('karsilastir', 18, 1.6)}<span>Karşılaştır: ${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))} ↔ ${kacis(bilinenAd(d.harita.get(k.cevapSanatci).ad, d.kisaAdlar[k.cevapSanatci]))}</span></a>`;
       ileri = karisik
-        ? '<button class="dugme acik" type="button" data-ikinci>Hangi akım? →</button>'
+        ? `<button class="dugme acik" type="button" data-ikinci>${yaprakDugmeYazisi('Hangi akım?')}</button>`
         : `<button class="dugme acik" type="button" data-sonraki>${sonrakiYazi}</button>`;
     } else {
       // 2. soru (akım): akım ve komşuları
