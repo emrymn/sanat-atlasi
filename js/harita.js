@@ -189,3 +189,10 @@ export function sepyaSiniri(harita) {
 export function gorulenDogrula(g) {
   return Array.isArray(g) ? [...new Set(g.filter((x) => typeof x === 'string'))].slice(0, 300) : [];
 }
+
+// İş 116: harita "buradasın"ın dönemiyle açılır; önce o dönemin resmi (öncelikli) ve iki komşusu iner, öbürleri
+// kaydırınca (eskiden hep en alttaki iki dönem iniyordu, her biri ~550 KB)
+export function resimYukleme(i, odak) {
+  if (i === odak) return 'fetchpriority="high"';
+  return Math.abs(i - odak) <= 1 ? '' : 'loading="lazy"';
+}
