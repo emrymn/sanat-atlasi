@@ -4,6 +4,7 @@ import { d, sekmeleriCiz, hataGoster, cizimBaslat, geriDonusBildir, sekmedenMi, 
 import { anaSayfa, gununSayfasi } from './bugun.js';
 import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuGrubu, konuSayfasi, basyapitSayfasi } from './gozat.js';
 import { pekistirMenusu, pekistir, devamEt } from './pekistir.js';
+import { soruTuru } from './soruTurlari.js';
 import { ilerlemeSayfasi } from './ilerleme.js';
 import { ayarlarSayfasi } from './ayarlar.js';
 import { aramaSayfasi } from './arama.js';
@@ -35,6 +36,9 @@ const rotalar = [
   [/^#\/pekistir\/konu\/(\d+)$/, (no) => pekistir('konu', no), null],
   [/^#\/pekistir\/hatalar$/, () => pekistir('hatalar', null), null],
   [/^#\/pekistir\/devam$/, () => devamEt(), null],
+  // İş 105: bölüm turu ve konu (ikonografi) turu; haritanın #/pekistir/bolum/<id>/<seviye> adresiyle çakışmaz
+  [/^#\/pekistir\/bolum$/, () => soruTuru('bolum'), null],
+  [/^#\/pekistir\/ikonografi$/, () => soruTuru('ikonografi'), null],
   [/^#\/pekistir\/bolum\/(\d+-\d+)\/(kolay|orta|zor|tanitim|tanitim-orta)$/, (id, sv) => pekistir('bolum', `${id}/${sv}`), null],
   [/^#\/ilerleme$/, () => ilerlemeSayfasi(), 'ilerleme'],
   [/^#\/ayarlar$/, ayarlarSayfasi, 'ilerleme'],

@@ -89,6 +89,7 @@ import { dinleEkle } from '../kunye.js';
 import { desteBaslat } from '../deste.js';
 import { cerceveTipi } from '../cerceve.js';
 import { titret, tik } from '../titresim.js';
+import { soruTurlariHtml } from './soruTurlari.js';
 
 // ---------- İş 24 · harita bölümleri ----------
 const BOLUM_SV_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor', tanitim: 'Tanıtım', 'tanitim-orta': 'Orta tanıtımı' };
@@ -216,6 +217,7 @@ export function pekistirMenusu() {
         ? `${turSahnesi(karisik)}
     ${devamKarti()}
     ${hatalarSatiri()}
+    ${soruTurlariHtml()}
     <section class="bolum pk-salonlar">
       <div class="pk-bolum-bas"><span class="etiket vurgu">Döneme göre</span><h2 class="pk-baslik">Salonlar</h2></div>
       <p class="kucuk ikincil" style="margin:0">${seviyeAciklamasi()}</p>

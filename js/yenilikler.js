@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.59.0', metin: 'Atölye’de iki yeni tur: Bölüm turunda bir eser görürsün ve kursun hangi bölümünde işlendiğini bulursun (şıklar komşu bölümler; cevapta bölümün yüzyılları). Konu turunda resmin konusunu bulursun: Müjde mi, Davut ile Golyat mı, Venüs’ün Doğuşu mu? Şıklar aynı türden konular; cevapta konunun özeti, hikâyesi ve konu sayfası. Yanlışlar ertesi turlarda önce gelir.' },
   { surum: '1.58.0', metin: 'Titreşim artık iPhone’da da çalışıyor: cevaba dokununca telefon hafifçe tıklar. iPhone doğru ile yanlışı ayırt ettiremediği için tık her cevapta aynı. Ayarlar’dan kapatılabilir.' },
   { surum: '1.57.0', metin: 'Cevap verince telefon hafifçe titrer: doğruda bir kez, yanlışta iki kez. Ayarlar’dan kapatılabilir. iPhone’da iOS 18 ve sonrası gerekir; Ayarlar → Sesler ve Dokunuş → Sistem Dokunuşları açık olmalı.' },
   { surum: '1.56.0', metin: 'Yolculuk’ta her dönemin kendi gezgini var: Giotto’nun Yusuf’u gibi asalı bir yolcu, fenerli bir Rembrandt öğrencisi, Morisot gibi şövalesini taşıyan bir ressam… Hepsi o dönemin haritasının fırçasıyla boyandı. Açık bir durağa dokununca gezgin oraya haritadaki patikayı izleyerek kısa bir yürüyüşle gider, varınca durağın penceresi açılır; dönem değişince sisin içinde kaybolur, yeni dönemin gezgini olarak belirir.' },

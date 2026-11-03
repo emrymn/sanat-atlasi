@@ -13941,3 +13941,33 @@ img.aninda {
 .tik input {
   display: none;
 }
+
+/* İş 105: Pekiştir menüsündeki "Başka sorular" (bölüm turu, konu turu) ve konu turunun cevap yaprağındaki hikâye */
+.pk-ek-turlar {
+  display: grid;
+  gap: 10px;
+}
+.st-hikaye {
+  margin: 10px 0 4px;
+}
+.st-hikaye summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+.st-hikaye p {
+  margin: 8px 0;
+  line-height: 1.55;
+}
+/* İş 105: bölüm/konu turunun sorusu "Bu eser kimin?"den uzun: etiket üstte, soru alt satırda kaydırılabilir */
+.soru-baslik.st-baslik {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.soru-baslik.st-baslik h2 {
+  white-space: normal;
+  font-size: 30px;
+}
