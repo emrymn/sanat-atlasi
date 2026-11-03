@@ -9,7 +9,7 @@
 import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
-import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yansimaAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
+import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yansimaAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, resimYukleme, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
 import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen, notuIcin, gorselTercihi } from './ortak.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { surukleKapatKur } from '../surukleKapat.js';
@@ -117,6 +117,9 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
   const tumDuraklar = harita.bolgeler.flatMap((b) => b.duraklar.map((x) => ({ b, x })));
   const yolcuDurak = tumDuraklar.find((o) => o.x.id === d.ilerleme.haritaYolcu && o.x.acik) || tumDuraklar.find((o) => o.x.id === simdiki) || null;
   const baslangic = yolcuDurak ? { bolge: yolcuDurak.b.id, nokta: yolcuNoktasi(yolcuDurak), id: yolcuDurak.x.id } : null;
+  // İş 116: harita "buradasın"da açılır; önce o dönemin resmi (öncelikli) ve iki komşusu iner, öbürleri kaydırınca
+  // (eskiden hep en alttaki Orta Çağ ve Rönesans iniyordu, her biri ~550 KB)
+  const odak = Math.max(0, harita.bolgeler.findIndex((b) => b.id === (yolcuDurak ? yolcuDurak.b.id : null)));
   const katman =
     harita.bolgeler
       .map((b) => b.duraklar.map((x) => durakHtml(b, x, h, tur, simdiki, yeniler.has(x.id))).join('') + b.motifler.map((m, i) => motifHtml(b, m, i, h)).join(''))
@@ -129,7 +132,7 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
     <p class="harita-zaman" data-harita-zaman data-test="harita-zaman"><span class="harita-zaman-ic"><b></b><span></span></span></p>
     <div class="harita-perde" data-harita-perde aria-hidden="true"></div>
     <div class="harita ${tur}" data-test="harita" data-vakit="${tur}" style="aspect-ratio:${W}/${(H * h).toFixed(1)}">
-      ${harita.bolgeler.map((b, i) => resimHtml(b, i, h, tur, sinir)).join('')}
+      ${harita.bolgeler.map((b, i) => resimHtml(b, i, h, tur, sinir, odak)).join('')}
       ${harita.bolgeler
         .slice(0, -1)
         .map((b, i) => gecisHtml(b, harita.bolgeler[i + 1], h, tur, sinir, liste))
@@ -206,10 +209,10 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
   // ---------- "Buradasın" ----------
 // Dönem resmi; son açık durağın üstündeki kısmı sepya: tamamen üstte kalan resim sepya, sınırın geçtiği resmin üstüne
 // sepya bir kopyası konur, kopya sınırda yumuşakça silinir (saklı motifler ve duraklar üstte, dokunulabilir kalır)
-function resimHtml(b, i, h, tur, sinir) {
+function resimHtml(b, i, h, tur, sinir, odak = 0) {
   const yer = `top:${((b.ust / h) * 100).toFixed(3)}%;height:${((1 / h) * 100).toFixed(3)}%`;
   const tamSepya = b.ust + 1 <= sinir;
-  let html = `<img class="harita-resim${tamSepya ? ' sepya' : ''}" data-test="harita-bolge" data-bolge="${b.id}" alt="${kacis(b.ad)}" decoding="async" ${i < 2 ? '' : 'loading="lazy"'}
+  let html = `<img class="harita-resim${tamSepya ? ' sepya' : ''}" data-test="harita-bolge" data-bolge="${b.id}" alt="${kacis(b.ad)}" decoding="async" ${resimYukleme(i, odak)}
       src="${resimAdresi(b.id, tur)}" style="${yer};z-index:${i + 1}">`;
   if (!tamSepya && sinir > b.ust) {
     const yerel = (sinir - b.ust) * 100;

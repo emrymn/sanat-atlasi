@@ -2,7 +2,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
-import { BOLGELER, bolgeBul, haritaKur, sepyaSiniri, vakit, gorulenDogrula, resimAdresi, nesneAdresi, yansimaAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, SEPYA_PAY, ARA, W, H } from '../../js/harita.js';
+import { BOLGELER, bolgeBul, resimYukleme, haritaKur, sepyaSiniri, vakit, gorulenDogrula, resimAdresi, nesneAdresi, yansimaAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, SEPYA_PAY, ARA, W, H } from '../../js/harita.js';
 import {
   bolumleriKur,
   bolumDurumlari,
@@ -349,4 +349,13 @@ test('saklı motifler: her motifin uzun hikâyesi var, eseri görünür sanatç�
     assert.ok(e && e.gorseller.length, `${a}: eser yok`);
   }
   assert.equal(eserli, 40, `eseri olan motif ${eserli}`);
+});
+
+// İş 116: harita "buradasın"ın dönemiyle açılır; önce o dönemin resmi (öncelikli) ve komşuları iner
+test('dönem resimlerinin yüklenme sırası: odak öncelikli, komşular hemen, öbürleri kaydırınca', () => {
+  assert.equal(resimYukleme(5, 5), 'fetchpriority="high"');
+  assert.equal(resimYukleme(4, 5), '');
+  assert.equal(resimYukleme(6, 5), '');
+  assert.equal(resimYukleme(0, 5), 'loading="lazy"');
+  assert.equal(resimYukleme(8, 5), 'loading="lazy"');
 });
