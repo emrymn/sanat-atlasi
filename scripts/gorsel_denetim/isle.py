@@ -22,6 +22,10 @@ DUZELTME = {
     'commons:Gentile_da_Fabriano_041.jpg': ('uygun', None),
     # 2.12 Avignon'daki sinopya: çok karanlık, figür seçilmiyor (Gemini "uygun" demişti)
     'commons:Sinopia_figurant_le_Christ_Rédempteur_en_Gloire_entouré_par_des_anges.jpg': ('kotu', 'bulanik'),
+    # 22.38 Tintoretto'nun tavan resmi: oval resim, yaldızlı tavan çerçevesinin ortasında küçük kalıyor (Gemini "uygun ?")
+    'commons:Jacopo_Tintoretto_-_Glorification_of_St_Roch.jpg': ('kotu', 'cerceve'),
+    # 23.46 Veronese'nin Müjde'si (Cleveland): ince bir çerçeve, resim görüntünün çoğunu kaplıyor (Gemini "çerçeve ?")
+    'cma:https://openaccess-cdn.clevelandart.org/1950.251/1950.251_web.jpg': ('uygun', None),
 }
 
 
