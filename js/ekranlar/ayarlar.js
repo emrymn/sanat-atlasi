@@ -20,6 +20,7 @@ import { rozetDestekli, rozetYaz, rozetIzni } from '../rozet.js';
 import { bildirimMetni } from '../bildirim.js';
 import { YENILIKLER, yenilikYazisi } from '../yenilikler.js';
 import { bolumler } from './harita.js';
+import { hatalariOku, hatalariTemizle, gunlukMetni } from '../hataGunlugu.js';
 
 // ---------- Ayarlar ----------
 async function indirilecekler() {
@@ -123,6 +124,7 @@ export function ayarlarSayfasi() {
         <p class="mesaj" id="geri-mesaj" aria-live="polite"></p>
       </div>
       ${bildirimBolumu()}
+      ${hataBolumu()}
       <div class="ayar"><label class="konu"><span class="metin"><b>Geliştirici modu</b><small>Bütün konular, sanatçılar ve harita bölümleri açılır. Kapatınca açmadan önceki ilerlemen olduğu gibi geri gelir; mod açıkken çözdüklerin sayılmaz.</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-gelistirici ${d.ilerleme.gelistirici ? 'checked' : ''} aria-label="Geliştirici modu"></label>
         <p class="mesaj" id="gelistirici-mesaj" aria-live="polite"></p></div>
@@ -134,6 +136,17 @@ export function ayarlarSayfasi() {
   indirBilgisi();
   devasaBilgisi();
   egimIzinDugmesi();
+}
+
+// İş 115: yerel hata günlüğü (js/hataGunlugu.js); kopyalanıp Claude'a gönderilir
+function hataBolumu() {
+  const l = hatalariOku();
+  return `<div class="ayar" data-test="hata-gunlugu"><b>Hata günlüğü</b>
+        <p>${l.length ? `${l.length} kayıt (son: ${kacis(new Date(l[l.length - 1].z).toLocaleString('tr-TR'))}). Bir şey bozulursa kopyalayıp Claude’a gönder.` : 'Kayıtlı hata yok.'}</p>
+        ${l.length ? '<button class="dugme" type="button" data-hata-kopyala>Kopyala</button> <button class="dugme ince" type="button" data-hata-temizle>Temizle</button>' : ''}
+        <textarea id="hata-cikti" readonly hidden aria-label="Hata günlüğü"></textarea>
+        <p class="mesaj" id="hata-mesaj" aria-live="polite"></p>
+      </div>`;
 }
 
 // "Hareket iznini ver": yalnız izin isteyen tarayıcıda (iPhone), hareket açıkken ve iOS izni hatırlamıyorsa görünür
@@ -381,6 +394,29 @@ export function olaylariBagla() {
       if (!confirm('Bildirim listesi silinsin mi? (Bildirilen görseller pekiştirmeden çıkmış olarak kalır.)')) return;
       d.ilerleme.bildirimler = [];
       kaydet();
+      ayarlarSayfasi();
+      return;
+    }
+    if (e.target.closest('[data-hata-kopyala]')) {
+      const metin = gunlukMetni(hatalariOku());
+      const ta = document.getElementById('hata-cikti');
+      const m = document.getElementById('hata-mesaj');
+      ta.hidden = false;
+      ta.value = metin;
+      try {
+        await navigator.clipboard.writeText(metin);
+        m.className = 'mesaj tamam';
+        m.textContent = 'Hata günlüğü panoya kopyalandı.';
+      } catch (err) {
+        ta.focus();
+        ta.select();
+        m.className = 'mesaj';
+        m.textContent = 'Panoya otomatik kopyalanamadı; metni seçip kopyala.';
+      }
+      return;
+    }
+    if (e.target.closest('[data-hata-temizle]')) {
+      hatalariTemizle();
       ayarlarSayfasi();
       return;
     }

@@ -1,5 +1,6 @@
 // Sanat Atlası — uygulamanın girişi: veriyi yükler, ekranların dinleyicilerini bağlar, yönlendirmeyi başlatır.
 // Ekranlar js/ekranlar/ altında (bkz. KARARLAR.md "İş 16").
+import './hataGunlugu.js'; // ilk: öteki modüllerin hataları da günlüğe düşsün (İş 115)
 import { akimOrtaYillari } from './celdirici.js';
 import { dokunuslariKoru } from './dokunus.js';
 import { gecisKur } from './gecis.js';

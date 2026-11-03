@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.63.0', metin: 'Ayarlar’da yeni bir “Hata günlüğü” var: uygulamada bir şey bozulursa telefon hatayı kendi içinde not eder. Kopyala’ya basıp Claude’a gönderirsen sorunu iPhone’da görmeden bulabilir. Hiçbir yere kendiliğinden gönderilmez.' },
   { surum: '1.62.0', metin: 'Yolculuk haritasındaki pencereler artık aşağı çekince kapanıyor; pencerenin üstünde parmağını kaydırırken arkadaki harita kaymıyor. Biraz çekip bırakırsan pencere yerine geri döner.' },
   { surum: '1.61.0', metin: 'Yolculuk haritasındaki saklı motiflere dokununca artık eserin kendisi de çıkıyor: yaldız çerçevede asılı, dokununca tam ekran. Her motifin hikâyesi de uzadı: eserin nasıl yapıldığı, içinde neye bakmalı, başına neler geldi. Gece Devriyesi’nin aslında gündüz olduğunu, Belleğin Azmi’nin bir peynirden doğduğunu öğreneceksin.' },
   { surum: '1.60.0', metin: 'Konular 223’ten 371’e çıktı: 148 yeni hikâye sayfası. Aeneis, İlyada, Odysseia, Kıyamet, Ölüm Dansı, Diogenes, Napolyon, Guernica, Shakespeare, Kâbus, Satürn, Sirenler, Cadılar ve daha niceleri; her birinde özet, hikâye ve “Nasıl tanırım?”. Aynı hikâyenin farklı adları tek sayfada toplandı (Hektor ile Andromakhe, Akhilleus’un Öfkesi → İlyada gibi); bazı eserler var olan sayfalara katıldı. Konu turunda da çıkıyorlar.' },
