@@ -1,0 +1,304 @@
+[
+  {
+    "anahtar": "commons:Michelangelo,_lunetta,_Achim_-_Eliud_01.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Male_Back_With_a_Flag_-_Michelangelo.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Michelangelo,_Punishment_of_Haman_01.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Michelangelo,_Brazen_Serpent_02.jpg",
+    "durum": "kotu",
+    "neden": "egik",
+    "emin": false,
+    "not": "Tavan tonozu alttan eğik açıyla ve çevre mimari/pencereyle birlikte çekilmiş"
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP826907.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/dp/web-large/DP832948.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/10e68c92-11fe-4d04-a02f-b1eceaa4b47f",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/fcbfd97b-8910-4f30-b7cb-2b405daca127",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/cdebdf5b-cf2f-4a1d-9353-9c85026ae7f2",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Transfigurazione_(Raffaello)_September_2015-1a.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Sanzio_Raffaello_-_Visione_del_cavaliere_(circa_1504).jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raphael_Madonna_della_seggiola.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:La_Vierge_à_l'Enfant_avec_le_petit_saint_Jean_Baptiste_-_Raphaël_-_Musée_du_Louvre_Peintures_INV_602_;_MR_433.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Portrait_of_Pope_Leo_X_and_his_cousins,_cardinals_Giulio_de'_Medici_and_Luigi_de'_Rossi_(by_Raphael).jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:PalaOddiRaffaello.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raphael_-_Madonna_in_the_Meadow_-_Google_Art_Project.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raffaello_Sanzio_-_Lady_with_unicorn.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raffaello,_pala_baglioni,_deposizione.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Rafael_-_El_Parnaso_(Estancia_del_Sello,_Roma,_1511).jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raffaello_Madonna_Connestabile.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raphael_Madonna_of_the_Pinks.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raffael_(1483_-_1520)_-_The_Virgin_and_Child_-_Solly_Madonna_-_141_-_Gemäldegalerie.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raphael_Heliodorus.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Madonna_di_Foligno_(Raphael)_September_2015-1a.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/b567bff1-506c-4c08-9689-c801fc55a35e",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/314c647b-d36f-430c-8450-1ec66c05037a",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raphael_(attr.),_Portrait_of_Elisabetta_Gonzaga,_1506,_Uffizi.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:CrocefissioneRaffaello.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:PalaAnsidei.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Deliveranceofstpeter.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Rafael_-_ressureicaocristo01.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Massatbolsena.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raffael_021.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raphael-LaDonnaGravida(1505-1506).jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Raphael_Madonna_Pasadena.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/2ac0a514-b560-4a49-b533-9b4951d5bf2c",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/a6a8ceef-d4ab-4318-a6d1-9d369737156e",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "aic:f00f93d0-ed84-aaea-d93a-b3417e97dd62",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1978.37/1978.37_web.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/17e32f68-1927-4829-bade-beb1b968c184",
+    "durum": "kotu",
+    "neden": "bulanik",
+    "emin": false,
+    "not": "Koyu kahverengi kağıt üzerindeki çizim çok karanlık ve zor seçiliyor"
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/6c410918-c6a8-428e-94a4-02470f4e777b",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/f09dbdc0-7232-4325-a3e4-bf3fc8dc4027",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "nga:https://api.nga.gov/iiif/2195c23f-cbc9-4d67-82e9-fbc6be7a4335",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Correggio_037.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Le_Mariage_mystique_de_sainte_Catherine_d'Alexandrie_en_présence_de_saint_Sébastien_-_Le_Corrège_-_Musée_du_Louvre_Peintures_INV_41.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Correggio,_Madonna_di_San_Sebastiano.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Correggio_MadonnaSzentFerenccel.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Correggio_-_Compianto_su_Cristo_morto,_1524_ca.,_GN_352.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "commons:Correggio_(Antonio_Allegri)_(Italian)_-_Head_of_Christ_-_Google_Art_Project.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  },
+  {
+    "anahtar": "met:https://images.metmuseum.org/CRDImages/ep/web-large/DT2838.jpg",
+    "durum": "uygun",
+    "neden": null,
+    "emin": true
+  }
+]
