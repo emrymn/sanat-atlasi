@@ -37,6 +37,22 @@ DUZELTME = {
     "commons:Claude_Monet_-_Le_dejeurner_sur_l'herbe_(left_panel).jpg": ('uygun', None),
     # 44.9 Boucher: Cleveland'ın tek kaydında iki ayrı tablo üst üste (Gemini "uygun"; Poussin Dört Mevsim kolajı gibi)
     'cma:https://openaccess-cdn.clevelandart.org/1948.181/1948.181_web.jpg': ('kotu', 'kolaj'),
+    # Kalan 35 parti (Gemini Flash, Antigravity): görsel net/düz ya da ince çerçeve, resim görüntüyü dolduruyor
+    "commons:Sir_John_Everett_Millais_-_Peace_Concluded_-_Google_Art_Project.jpg": ('uygun', None),  # 62.30 (Gemini kotu/cerceve)
+    "commons:William_Holman_Hunt_(1827-1910)_-_The_Thames_at_Chelsea,_Evening_-_868_-_Fitzwilliam_Museum.jpg": ('uygun', None),  # 63.48 (Gemini kotu/bulanik)
+    "commons:Alfred_Bruyas_par_Cabanel.jpg": ('uygun', None),  # 66.43 (Gemini kotu/bulanik)
+    "commons:Bacchanal_at_the_Spring_Souvenir_of_Marly-le-Roi.JPG": ('uygun', None),  # 69.39 (Gemini kotu/bulanik)
+    "commons:Théodore_Rousseau_-_Landscape_by_The_River_Mosel_-_NM_7540_-_Nationalmuseum.jpg": ('uygun', None),  # 71.42 (Gemini kotu/cerceve)
+    "commons:The_Lagoon_of_Saint_Mark,_Venice.jpg": ('uygun', None),  # 84.30 (Gemini kotu/egik)
+    "aic:49386c47-95b8-f868-e849-5dd583e2026a": ('uygun', None),  # 95.16 (Gemini kotu/cerceve)
+    "commons:San_Sebastiano_curato_da_Irene_Guercino.jpg": ('uygun', None),  # 97.22 (Gemini kotu/bulanik)
+    "commons:15-07-05-Schloß-Caputh-RalfR-N3S_1530.jpg": ('uygun', None),  # 98.36 (Gemini kotu/cerceve)
+    "commons:15-07-05-Schloß-Caputh-RalfR-N3S_1524.jpg": ('uygun', None),  # 99.29 (Gemini kotu/cerceve)
+    "commons:Cristo_e_la_samaritana,_Valentin_de_Boulogne_(GNU_di_Perugia).jpg": ('uygun', None),  # 99.47 (Gemini kotu/bulanik)
+    "commons:Moses041.jpg": ('uygun', None),  # 100.30 (Gemini kotu/ayrinti)
+    "commons:David_with_the_Head_of_Goliath_by_Antonio_de_Bellis,_San_Diego_Museum_of_Art.JPG": ('uygun', None),  # 100.39 (Gemini kotu/bulanik)
+    "commons:Adultera.jpg": ('uygun', None),  # 102.35 (Gemini kotu/bulanik)
+    "commons:Dresden,_Gemäldegalerie_Alte_Meister,_Giovanni_Battista_Piazzetta,_David_mit_dem_Haupte_Goliaths.jpg": ('uygun', None),  # 105.10 (Gemini kotu/bulanik)
 }
 
 

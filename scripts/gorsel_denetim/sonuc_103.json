@@ -1,0 +1,311 @@
+[
+ {
+  "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1989.44/1989.44_web.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "aic:aeb118b0-748a-d784-ae82-e4861ef39a95",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "aic:fc1fccaa-4b80-82f9-706c-d00144afc0e4",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "aic:d825721a-ba09-ddf5-b6dc-ce56632537c2",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "aic:8576d050-79ff-6770-e6e5-8d6d366f896b",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "aic:b580414a-0066-5fd0-d35b-424c9c980ab0",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Gaulli_Portrait_of_a_cardinal.jpg",
+  "karar": "kotu",
+  "neden": "siyah_beyaz",
+  "emin": true,
+  "not": "renkli tablonun siyah-beyaz fotoğrafı"
+ },
+ {
+  "anahtar": "commons:Giovanni_Battista_Gaulli_-_St._Agnes_is_Received_into_Heaven_-_Google_Art_Project.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Portrait_of_a_Woman_MET_DP341866.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Giovanni_Battista_Gaulli_(Il_Baciccio)_-_Pope_Clement_X_(1590–1676)_-_2017.422_-_Metropolitan_Museum_of_Art.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Giovanni_Battista_Gaulli_-_Portrait_of_a_Man_-_Walters_371832.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Baciccio,_ritratto_del_cardinale_ludovico_di_vendome,_1667_ca,_Q196.JPG",
+  "karar": "kotu",
+  "neden": "cerceve",
+  "emin": true,
+  "not": "kalın altın çerçeve resmin büyük bölümünü kaplıyor"
+ },
+ {
+  "anahtar": "commons:Il_baciccio,_adorazione_dell'agnello,_1680_ca..JPG",
+  "karar": "kotu",
+  "neden": "cerceve",
+  "emin": true,
+  "not": "geniş oymalı ahşap çerçeve resmin büyük kısmını kaplıyor"
+ },
+ {
+  "anahtar": "commons:Giovanni_Battista_Gaulli_-_The_Sacrifice_of_Noah_-_NG.M.03497_-_National_Museum_of_Art,_Architecture_and_Design.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Il_baciccio,_ritratto_del_cardinale_marco_galli_01.JPG",
+  "karar": "kotu",
+  "neden": "cerceve",
+  "emin": true,
+  "not": "geniş altın çerçeve ile çekilmiş"
+ },
+ {
+  "anahtar": "commons:Giovanni_Battista_Gaulli_(1639-1709)_-_The_Rest_on_the_Flight_into_Egypt_-_NMW_A_105_-_National_Museum_Cardiff.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:'St._Joseph_and_the_Infant_Christ'_by_Baciccio,_Norton_Simon_Museum.JPG",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Giovanni_Battista_Gaulli_-_Retrato_do_Cardeal_Luigi_Alessandro_Omodei.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Gaulli_Conversion_(2006_2_1).jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Il_Baciccio_(Giovanni_Battista_Gaulli)_-_The_Triumph_of_the_Name_of_Jesus_-_2005-34_-_Princeton_University_Art_Museum.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Portrait_of_Pope_Clement_IX_Rospigliosi_(by_Giovanni_Battista_Gaulli_named_Il_Baciccio)_–_Galleria_Nazionale_d'Arte_Antica.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Baciccio_Pietà_1667_GN_Roma.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Baciccio_-_Apotheosis_of_St_Ignatius_-_WGA01110.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Giovanni_Battista_Gaulli_-_Madonna_with_Child_piercing_the_Head_of_the_Serpent_('Madonna_della_Serpe')_-_2013.0027_-_Birmingham_Museums_Trust.jpg",
+  "karar": "kotu",
+  "neden": "salon",
+  "emin": true,
+  "not": "stüdyoda şövalede çekilmiş, tutturucular ve arka plan görünüyor"
+ },
+ {
+  "anahtar": "commons:Clemente_IX.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Giovanni_Battista_Gaulli_(1639-1709)_-_The_Virgin_and_Child_Piercing_the_Head_of_the_Serpent_-_1999PL15_-_Birmingham_Museums_Trust.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Baciccio_-_Margherita_Luisa_d'Orleans_-_Museo_de'_Medici.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Giovanni_Battista_Gaulli_-_St_Agnes_in_Glory_-_KMS7978_-_Statens_Museum_for_Kunst.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Ajaccio_Baciccio_Joseph.JPG",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "aic:a66e426d-c67d-2a5e-5cdf-46a010ce6105",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "aic:30403f38-514f-4027-0e8f-4d8d8a624bac",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "aic:06fcda42-c15e-ba33-a3bc-72be4be6cf63",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Sacrestia_di_San_Domenico_Maggiore_(Napoli).jpg",
+  "karar": "kotu",
+  "neden": "salon",
+  "emin": true,
+  "not": "tavan mimarisi ve çevre tonozlar fotoğrafın çoğunu kaplıyor"
+ },
+ {
+  "anahtar": "commons:Solimena_Portrait_de_femme_(2004_1_50).jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Héliodore_chassé_du_Temple_-_Francesco_Solimena_-_Musée_du_Louvre_Peintures_INV_676_;_MR_486.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:(Narbonne)_L'adoration_des_bergers_-_Francesco_Solimena_-_Musée_des_Beaux-Arts_de_Narbonne.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Francesco_Solimena_-_Boreas_Abducting_Oreithyia,_Daughter_of_Erechteus_-_1729.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Francesco_solimena_(attr.),_zeusi_dipinge_venere_prendendo_a_modello_le_fanciulle_di_crotone.jpg",
+  "karar": "kotu",
+  "neden": "cerceve",
+  "emin": true,
+  "not": "çerçeve ve dışındaki beyaz fon görünüyor"
+ },
+ {
+  "anahtar": "aic:eba4ff21-3b90-801b-0f0a-1bd913b49049",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "aic:19110464-eec1-5e0a-7015-1972f63b9f07",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "cma:https://openaccess-cdn.clevelandart.org/1971.63/1971.63_web.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Archiduque_Carlos_de_Austria,_depois_Carlos_VI.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Autoritratto_di_Francesco_Solimena_-_Capodimonte.jpg",
+  "karar": "kotu",
+  "neden": "cerceve",
+  "emin": true,
+  "not": "kalın altın çerçeve"
+ },
+ {
+  "anahtar": "commons:David,_Francesco_Solimena_001.JPG",
+  "karar": "kotu",
+  "neden": "bulanik",
+  "emin": true,
+  "not": "sol alt kısım tamamen siyah hasarlı"
+ },
+ {
+  "anahtar": "commons:Francesco_Solimena_(1657-1747)_(school_of)_-_Study_for_a_Decorative_Scheme_with_a_Group_Representing_Charity_-_FA.37_-_Victoria_Gallery_^_Museum.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Solimena,_Francesco_-_Rebecca_at_the_Well_-_c._1700.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Francesco_Solimena_-_Allegory_of_Reign_-_WGA21618.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Solimena_Ecce_Homo.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Solimena_St._Francis_before_the_Pope.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ },
+ {
+  "anahtar": "commons:Francesco_Solimena_-_Judith_with_the_Head_of_Holofernes_-_WGA21626.jpg",
+  "karar": "uygun",
+  "neden": null,
+  "emin": true
+ }
+]

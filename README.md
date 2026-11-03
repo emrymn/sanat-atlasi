@@ -176,3 +176,68 @@ git add data/gorsel_iyilestirme.json data/gorsel_kaynagi.json && git commit -m "
 Telefonda: Ayarlar → **En büyük kopyaları telefona indir** → yenilenenler yeniden iner, eskileri kendiliğinden silinir.
 
 `gorseller_devasa/` depoya girmez (`.gitignore`). `data/gorsel_kaynagi.json` service worker'da önce ağdan gelir: gönderince telefona sürüm beklemeden iner.
+
+## Sırada bekleyen işler (2026-11-03 itibarıyla)
+
+Kredi bitince bırakılanlar; sırası önemli değil. Her biri bitince KARARLAR.md'ye yazılır.
+
+1. ~~Görsel denetiminin kalan partileri~~ — bitti (106 partinin hepsi, KARARLAR İş 107). Yeni görseller eklenirse `scripts/gorsel_denetim/parti_uret.py --yeni` ile yeni partiler çıkar, aynı yol izlenir (`TALIMAT.md`).
+2. **Mac'teki büyük indirme bittikten sonra** — ayrıntılı adımlar aşağıda, "Büyük indirmeden sonra (adım adım)" bölümünde. 1–5. adımları Emre tek başına yapabilir; 6. adım için Claude betik yazar.
+3. **Tek eserli konular (isteğe bağlı).** `data/eser_konulari.json`'da 315 konu yalnız bir eserde geçiyor (adı var, hikâye sayfası yok). İstenirse önemlileri seçilip `scripts/konu_etiket/yeni_konular_NN.json` biçiminde sayfaları yazılır, `python3 scripts/konu_etiket/uret.py` ile eklenir.
+4. **iPhone titreşimi (isteğe bağlı).** Emre: "zayıf, sonra bakarız". iPhone'da tık gücü iOS'ta sabit; doğru/yanlış ayrımı yok (bkz. KARARLAR İş 106).
+5. **Harita penceresini aşağı çekme (geri bildirim bekliyor).** Kapanma mesafesi 90 pt; iPhone'da ağır/hafif gelirse `js/surukleKapat.js` `KAPAT_MESAFE`.
+6. **Hata günlüğü.** Bir şey bozulursa Ayarlar → Hata günlüğü → Kopyala, Claude'a yapıştır.
+
+### Büyük indirmeden sonra (adım adım)
+
+Hepsi Mac'te, Terminal'de, depo klasöründe (`cd` ile sanat-atlasi klasörüne gir). Her komutun çıktısını okumak yeter; bir yerde takılırsan çıktıyı kopyalayıp Claude'a gönder.
+
+**1. İndirmenin gerçekten bittiğini doğrula.** Aynı komutu bir kez daha çalıştır:
+
+```
+caffeinate -i python3 scripts/devasa_indir.py
+```
+
+Başta `… görsel · … zaten inmiş · 0 inecek` yazıyorsa bitmiştir. `0` değilse kalanları indirir; bitince yeniden çalıştır. En sonda `bu tur başarısız N` yazar: birkaç tane kalabilir (sunucu vermiyor), sorun değil.
+
+**2. Kaç GB tuttuğuna bak** (R2'nin ücretsiz katmanı 10 GB; aşan kısım ayda GB başına ~0,015 $):
+
+```
+du -sh gorseller_devasa
+```
+
+**3. Birkaç görseli gözle kontrol et** (isteğe bağlı ama iyi olur). Klasörü aç, rastgele 10–20 dosyaya bak: tablonun tamamı mı, yamuk/çerçeveli/siyah-beyaz mı? Müzeden gelenlerin listesi `gorseller_devasa/kaynaklar.json`'da. Kötü olanın dosya adını (`abcd1234….jpg`) not al, sonra Claude'a gönder.
+
+```
+open gorseller_devasa
+```
+
+**4. R2'ye yükle.** Önce Cloudflare anahtarlarını gir (yukarıdaki R2 bölümündeki gibi; değerler Cloudflare panelinde, kimseyle paylaşma):
+
+```
+python3 -m pip install --user boto3
+export R2_HESAP_ID=934af0e562e2812c13464d2d4dbbb4e4
+export R2_ERISIM_ANAHTARI='…'
+export R2_GIZLI_ANAHTAR='…'
+export R2_GENEL_ADRES=https://gorsel.noracloud.ai
+python3 scripts/r2_yukle.py --10gb-ustu
+```
+
+Önce dosya sayısını ve toplam GB'ı, 10 GB'ı aşıyorsa aylık tahmini ücreti yazar, sonra yükler (`n/toplam · hata 0` diye ilerler). Yarıda kesilirse aynı komutu yeniden çalıştır: yüklenmiş olanları atlar. Sonunda `Bitti · en büyük … · 1280'lik … · hata 0` yazmalı. `HATA` satırları çıkarsa komutu bir kez daha çalıştır; yine çıkarsa çıktıyı Claude'a gönder.
+
+**5. Uygulamaya bildir ve gönder:**
+
+```
+git pull origin claude/brave-mendel-h2rm3b
+git add data/gorsel_kaynagi.json data/gorsel_iyilestirme.json
+git commit -m "En büyük kopyalar R2'de"
+git push origin HEAD:claude/brave-mendel-h2rm3b
+```
+
+Sonra Claude'a "gönderdim" de: testleri çalıştırıp yayınlar. Telefonda: Ayarlar → **En büyük kopyaları telefona indir** (Wi-Fi'de; birkaç GB).
+
+**6. Claude'un yapacakları** (yeni betik gerekiyor, Emre'nin kredisi yetince):
+
+- **Müze kopyasını tercih et:** şu an müze kopyası yalnız Commons'taki görsel küçükse alınıyor (`devasa_indir.py`). Müzenin kendi taraması genelde daha temiz (çerçevesiz, renkleri doğru). Met, NGA, AIC, Cleveland'da ~150, Getty, Rijksmuseum, Yale, Walters'ta ~150 eser için müze kopyası her durumda tercih edilecek; Claude betiği yazar, Emre çalıştırır, sonra yukarıdaki 4–5. adımlar.
+- **Küçük 1280'likleri yeniden üret:** bazı eserlerin 1280 px kopyası aslında daha küçük (ör. Met'in "web-large" dosyası ~620 px). Büyük kopya indiyse 1280'lik ondan küçültülerek yeniden yapılır (Mac'te `sips`), sonra 4–5. adımlar.
+- **Kopya eser taraması:** bütün eserlerin büyük kopyaları inince `scripts/kopya_bul.py` yeniden çalıştırılır (aynı tablonun iki kaydı).
