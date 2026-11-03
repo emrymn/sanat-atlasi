@@ -4,11 +4,14 @@
 // Her bölüm yolun kenarındaki meydanda kendi sembolüyle bir durak; açık durakların altında yumuşak bir ışık yanıp
 // söner, "buradasın" durağında dönemin kıyafetiyle öğrenci ve yukarıdan inen ışık. Durağa dokununca küçük pencere
 // (seviyeler, yıldızlar, sanatçılar, akım sayfası); resimdeki saklı motife dokununca eserin hikâyesi.
+// İş 111: motif penceresinde eserin kendisi (yaldız çerçevede; dokununca tam ekran) ve uzun hikâye
+// (data/harita_motifler.json, scripts/harita/motif_hikayeleri.py).
 import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
 import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yansimaAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
-import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen } from './ortak.js';
+import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen, notuIcin, gorselTercihi } from './ortak.js';
+import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { sanatciEserleri } from '../eserler.js';
 import { harfUygula, BOLGE_HARFLERI } from '../harfler.js';
 
@@ -18,6 +21,26 @@ let veriSozu = null;
 export function haritaVerisi() {
   veriSozu ||= jsonGetir('data/harita.json').catch(() => ({ bolgeler: {}, eserler: {} }));
   return veriSozu;
+}
+
+let motifSozu = null;
+export function motifVerisi() {
+  motifSozu ||= jsonGetir('data/harita_motifler.json')
+    .then((j) => (j && j.motifler) || {})
+    .catch(() => {
+      motifSozu = null; // çevrimdışı ilk açılış: sonraki dokunuşta yeniden denenir
+      return {};
+    });
+  return motifSozu;
+}
+
+// Motifin eseri uygulamadaki eser listesinden (sanatçının eserleri; anahtar QID ya da "sanatçı|başlık")
+export async function motifEseri(k) {
+  if (!k || !k.sid || !k.eser) return null;
+  const s = d.sanatcilar.find((x) => x.id === k.sid);
+  if (!s) return null;
+  const liste = await sanatciEserleri(s).catch(() => []);
+  return liste.find((e) => (e.qid || `${k.sid}|${e.baslik}`) === k.eser && e.gorseller && e.gorseller.length) || null;
 }
 
 export function bolumler() {
@@ -73,6 +96,7 @@ function motifHtml(b, m, i, h) {
 export async function haritaSayfasi({ konumuKoru = false } = {}) {
   const eskiY = window.scrollY;
   const no = cizimNo();
+  motifVerisi(); // saklı motiflerin uzun hikâyeleri arka planda (dokunulduğunda hazır olsun)
   const [veri, bilgi, yv] = await Promise.all([haritaVerisi(), d.akimBilgi ? null : jsonGetir('data/akim_bilgi.json').catch(() => null), yolcuVerisi()]);
   if (bilgi) d.akimBilgi = bilgi;
   if (!guncelMi(no)) return;
@@ -600,28 +624,55 @@ function durakPenceresi(id) {
     </div>`;
 }
 
-function motifPenceresi(eser) {
+function motifPenceresi(eser, uzun = {}) {
   const h = d.haritaDurum;
   const m = h && h.veri.eserler && h.veri.eserler[eser];
   if (!m) return '';
   const s =
     (m.sanatci_id && d.harita.get(m.sanatci_id)) ||
     d.sanatcilar.find((x) => m.sanatci && (x.ad === m.sanatci || (x.ad_arama && m.sanatci.includes(x.ad_arama)) || m.sanatci.includes(x.ad)));
+  const k = uzun[eser] || null;
   const kunye = [m.sanatci, m.yil, m.yer, m.teknik].filter(Boolean).map(kacis).join(' · ');
+  const hikaye = k && k.hikaye && k.hikaye.length ? k.hikaye : m.hikaye ? [m.hikaye] : [];
+  const haritada = (k && k.haritada) || m.haritada;
+  // eser uygulamada varsa yaldız çerçevede asılı; resim gelince doldurulur (motifKapakDoldur), dokununca tam ekran
+  const kapak =
+    k && k.eser
+      ? `<button type="button" class="hp-kapak motif-kapak" data-motif-resim="${kacis(eser)}" data-test="harita-motif-resim" aria-label="${kacis(m.eser_tr || eser)}: tam ekran aç"></button>`
+      : '';
   return `<div class="harita-pencere-ic motif" role="dialog" aria-label="${kacis(m.eser_tr || eser)}" data-test="harita-motif-pencere">
       <button class="harita-pencere-kapat" type="button" data-harita-kapat aria-label="Kapat">${ikon('kapat', 20, 1.7)}</button>
+      ${kapak}
       <span class="etiket">Saklı motif</span>
       <h2>${kacis(m.eser_tr || eser)}</h2>
       ${kunye ? `<p class="harita-pencere-eser">${kunye}</p>` : ''}
-      ${m.hikaye ? `<p class="okuma">${kacis(m.hikaye)}</p>` : ''}
-      ${m.haritada ? `<p class="harita-pencere-alt italik">${kacis(m.haritada)}</p>` : ''}
+      ${hikaye.map((p) => `<p class="okuma" data-test="harita-motif-hikaye">${kacis(p)}</p>`).join('')}
+      ${haritada ? `<p class="harita-pencere-alt italik">${kacis(haritada)}</p>` : ''}
       ${s ? `<div class="harita-pencere-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}">${kacis(s.ad)} sayfası</a></div>` : ''}
     </div>`;
+}
+
+// Motif penceresinin kapağı: eserin kendisi, durak kapağıyla aynı galeri duvarı (spot ışığı, yaldız çerçeve, künye)
+async function motifKapakDoldur(el, k) {
+  if (!el) return;
+  const e = await motifEseri(k);
+  if (!el.isConnected) return;
+  if (!e) {
+    el.remove();
+    return;
+  }
+  el.__eser = e;
+  el.innerHTML = `<span class="hp-kapak-isik" aria-hidden="true"></span>
+    <span class="hp-kapak-duvar"><span class="hp-kapak-eser">${kucukGorsel(e, 640)}</span></span>
+    <span class="hp-kapak-kunye">${kacis(e.ad || e.baslik || '')}</span>`;
+  el.classList.add('dolu');
+  kucukKareleriDoldur();
 }
 
 function pencereAc(html) {
   const kutu = ekran.querySelector('[data-harita-pencere]');
   if (!kutu || !html) return;
+  delete kutu.dataset.motif;
   kutu.innerHTML = html;
   kutu.hidden = false;
   requestAnimationFrame(() => kutu.classList.add('acik'));
@@ -706,9 +757,27 @@ export function olaylariBagla() {
       yuru(kap, yol, hd.h, hd.tur, hd.yv.yolcu, hd.no, ac);
       return;
     }
+    const motifResim = e.target.closest('[data-motif-resim]');
+    if (motifResim) {
+      const eser = motifResim.__eser;
+      if (eser) goruntuleyiciAc({ eserler: [eser], notu: notuIcin(eser.sid), ...gorselTercihi() });
+      return;
+    }
     const motif = e.target.closest('[data-motif]');
     if (motif) {
-      pencereAc(motifPenceresi(motif.dataset.motif));
+      const anahtar = motif.dataset.motif;
+      // kısa pencere hemen açılır; uzun hikâye ve eser gelince (genelde önbellekten, anında) yeniden çizilir
+      pencereAc(motifPenceresi(anahtar));
+      motifVerisi().then((uzun) => {
+        const kutu = ekran.querySelector('[data-harita-pencere]');
+        if (!uzun[anahtar] || !kutu || kutu.hidden || kutu.dataset.motif !== anahtar) return;
+        const ic = kutu.querySelector('.harita-pencere-ic');
+        const yeni = document.createElement('template');
+        yeni.innerHTML = motifPenceresi(anahtar, uzun);
+        if (ic && yeni.content.firstElementChild) ic.replaceWith(yeni.content.firstElementChild);
+        motifKapakDoldur(kutu.querySelector('[data-motif-resim]'), uzun[anahtar]);
+      });
+      ekran.querySelector('[data-harita-pencere]')?.setAttribute('data-motif', anahtar);
       return;
     }
     if (e.target.closest('[data-harita-konum]')) {
