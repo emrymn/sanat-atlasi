@@ -176,3 +176,21 @@ git add data/gorsel_iyilestirme.json data/gorsel_kaynagi.json && git commit -m "
 Telefonda: Ayarlar → **En büyük kopyaları telefona indir** → yenilenenler yeniden iner, eskileri kendiliğinden silinir.
 
 `gorseller_devasa/` depoya girmez (`.gitignore`). `data/gorsel_kaynagi.json` service worker'da önce ağdan gelir: gönderince telefona sürüm beklemeden iner.
+
+## Sırada bekleyen işler (2026-11-03 itibarıyla)
+
+Kredi bitince bırakılanlar; sırası önemli değil. Her biri bitince KARARLAR.md'ye yazılır.
+
+1. **Görsel denetiminin kalan partileri.** `scripts/gorsel_denetim/` altında 35 partinin sonucu yok:
+   062, 063, 065, 066, 069, 071, 072, 074, 075, 077, 078, 080, 081, 083, 084, 086, 087, 089–106.
+   - Yapan (Gemini ya da Antigravity'de Claude Sonnet): `TALIMAT.md`'yi okuyup bu partilerin `sonuc_NNN.json` dosyalarını yazar.
+   - Emre: `git pull`, `git add scripts/gorsel_denetim/sonuc_*.json`, commit, `git push` (dal: `claude/brave-mendel-h2rm3b`).
+   - Claude: kötü/çıkar/"emin değil" denenlerin hepsine ve uygunlardan bir örnekleme bakar, katılmadıklarını `isle.py` `DUZELTME`'ye yazar, `python3 scripts/gorsel_denetim/isle.py`, testler, sorulmadan yayınlar (Emre'nin kalıcı talimatı).
+2. **Mac'teki büyük indirme bittikten sonra** (`devasa_indir.py`):
+   - Müze kopyası olan eserlerde müze kopyasını tercih et (Met, NGA, AIC, Cleveland ~150 eser; sonra Getty, Rijksmuseum, Yale, Walters ~150). Müze kopyalarını gözle denetle.
+   - 1280 px kopyası küçük kalan eserlerin (ör. Met "web-large" ~620 px) 1280'liğini büyük kopyadan yeniden üret.
+   - R2'ye yükle: `python3 scripts/r2_yukle.py --10gb-ustu` (yukarıdaki R2 bölümüne bak).
+3. **Tek eserli konular (isteğe bağlı).** `data/eser_konulari.json`'da 315 konu yalnız bir eserde geçiyor (adı var, hikâye sayfası yok). İstenirse önemlileri seçilip `scripts/konu_etiket/yeni_konular_NN.json` biçiminde sayfaları yazılır, `python3 scripts/konu_etiket/uret.py` ile eklenir.
+4. **iPhone titreşimi (isteğe bağlı).** Emre: "zayıf, sonra bakarız". iPhone'da tık gücü iOS'ta sabit; doğru/yanlış ayrımı yok (bkz. KARARLAR İş 106).
+5. **Harita penceresini aşağı çekme (geri bildirim bekliyor).** Kapanma mesafesi 90 pt; iPhone'da ağır/hafif gelirse `js/surukleKapat.js` `KAPAT_MESAFE`.
+6. **Hata günlüğü.** Bir şey bozulursa Ayarlar → Hata günlüğü → Kopyala, Claude'a yapıştır.
