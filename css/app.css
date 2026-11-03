@@ -13922,3 +13922,22 @@ img.aninda {
 .gor.kaydiriliyor {
   box-shadow: -16px 0 36px rgba(0, 0, 0, 0.5);
 }
+
+/* İş 106: iPhone titreşimi. Düğmeyi tamamen kaplayan etiket, içinde gizli anahtar (js/titresim.js TIK):
+   parmak etikete değince iPhone anahtarın tık titreşimini verir, sonra düğmeye tıklanır. */
+.secenek,
+.bilmiyorum,
+[data-titresim-dene] {
+  position: relative;
+}
+.tik {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.tik input {
+  display: none;
+}

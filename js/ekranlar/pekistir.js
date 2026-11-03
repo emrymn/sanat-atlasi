@@ -88,7 +88,7 @@ import { sallanmaBaslat } from '../sallanma.js';
 import { dinleEkle } from '../kunye.js';
 import { desteBaslat } from '../deste.js';
 import { cerceveTipi } from '../cerceve.js';
-import { titret } from '../titresim.js';
+import { titret, tik } from '../titresim.js';
 
 // ---------- İş 24 · harita bölümleri ----------
 const BOLUM_SV_AD = { kolay: 'Kolay', orta: 'Orta', zor: 'Zor', tanitim: 'Tanıtım', 'tanitim-orta': 'Orta tanıtımı' };
@@ -714,7 +714,8 @@ function secenekDugmesi(deger, ad, i, cevap, dogruDeger, tur) {
       isaret = `<span role="img" aria-label="Senin cevabın, yanlış">${ikon('yanlis', 20, 2)}</span>`;
     } else sinif += ' soluk';
   }
-  return `<button class="${sinif}" type="button" data-${tur}="${kacis(deger)}" ${cevap !== null ? 'disabled' : ''}><span class="harf">${HARFLER[i]}</span><span class="ad">${kacis(ad)}</span>${isaret}</button>`;
+  const tiki = cevap === null ? tik(d.ilerleme.ayarlar.titresim !== false) : ''; // İş 106: iPhone'da dokununca tık
+  return `<button class="${sinif}" type="button" data-${tur}="${kacis(deger)}" ${cevap !== null ? 'disabled' : ''}>${tiki}<span class="harf">${HARFLER[i]}</span><span class="ad">${kacis(ad)}</span>${isaret}</button>`;
 }
 
 // Metin akımı ele veriyor mu? (karışık kartta 1. sorudan sonra akım gösterilmez)
@@ -1145,7 +1146,7 @@ function kartGoster(o) {
     : `<div class="${sinif}" data-test="sanatci-secenekleri">${k.secenekler
         .map((id, i) => (kalsin(id, k.id) ? secenekDugmesi(id, d.harita.get(id).ad, i, k.cevapSanatci, k.id, 'sanatci') : ''))
         .join('')}</div>`;
-  const bilmiyorum = cevap === null ? `<button class="bilmiyorum" type="button" data-bilmiyorum data-test="bilmiyorum">Bilmiyorum</button>` : '';
+  const bilmiyorum = cevap === null ? `<button class="bilmiyorum" type="button" data-bilmiyorum data-test="bilmiyorum">${tik(d.ilerleme.ayarlar.titresim !== false)}Bilmiyorum</button>` : '';
 
   // Cevaptan sonra alttan gelen yaprak
   let yaprak = '';
