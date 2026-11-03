@@ -1712,6 +1712,10 @@
      "francis-bacon"
     ],
     [
+     "salvador-dali|Christ of St. John of the Cross",
+     "salvador-dali"
+    ],
+    [
      "francis-bacon|Three Studies for a Crucifixion",
      "francis-bacon"
     ],
@@ -1746,6 +1750,10 @@
     [
      "jean-arp|Christ on the Cross II",
      "jean-arp"
+    ],
+    [
+     "salvador-dali|Corpus Hypercubus at the Metropolitan Museum of Art in New York",
+     "salvador-dali"
     ]
    ]
   },
@@ -2114,6 +2122,10 @@
      "peter-paul-rubens"
     ],
     [
+     "Q102223204",
+     "jusepe-de-ribera"
+    ],
+    [
      "nicolas-poussin|The Holy Family on the Steps",
      "nicolas-poussin"
     ],
@@ -2216,6 +2228,10 @@
     [
      "Q3910082",
      "paolo-uccello"
+    ],
+    [
+     "Q874058",
+     "rogier-van-der-weyden"
     ],
     [
      "Q2405395",
@@ -2562,6 +2578,10 @@
      "hieronymus-bosch"
     ],
     [
+     "Q2389534",
+     "hieronymus-bosch"
+    ],
+    [
      "Q3208203",
      "sandro-botticelli"
     ],
@@ -2715,6 +2735,14 @@
     ],
     [
      "Q3910951",
+     "giotto-di-bondone"
+    ],
+    [
+     "Q3649307",
+     "giotto-di-bondone"
+    ],
+    [
+     "Q3858719",
      "giotto-di-bondone"
     ],
     [
@@ -3221,6 +3249,10 @@
      "el-greco"
     ],
     [
+     "Q1091213",
+     "annibale-carracci"
+    ],
+    [
      "Q26492678",
      "guercino"
     ],
@@ -3481,6 +3513,10 @@
      "mattia-preti"
     ],
     [
+     "Q38513648",
+     "sebastiano-ricci"
+    ],
+    [
      "giovanni-battista-tiepolo|Study for \"The Martyrdom of Saint Sebastian\" (for the Augustinian monastery at Diessen, Germany)",
      "giovanni-battista-tiepolo"
     ],
@@ -3537,6 +3573,10 @@
     ],
     [
      "Q38833937",
+     "paolo-uccello"
+    ],
+    [
+     "Q104522115",
      "paolo-uccello"
     ],
     [
@@ -3783,6 +3823,22 @@
      "masaccio"
     ],
     [
+     "Q3220280",
+     "masaccio"
+    ],
+    [
+     "Q3947827",
+     "masaccio"
+    ],
+    [
+     "Q3711791",
+     "masaccio"
+    ],
+    [
+     "Q3933568",
+     "masaccio"
+    ],
+    [
      "raphael|Upraised Right Hand, with Palm Facing Outward: Study for Saint Peter",
      "raphael"
     ],
@@ -3845,6 +3901,10 @@
     [
      "Q18572416",
      "guercino"
+    ],
+    [
+     "nicolas-poussin|Saints Peter and John Healing the Lame Man",
+     "nicolas-poussin"
     ],
     [
      "Q3874247",
@@ -4253,6 +4313,10 @@
      "guido-reni"
     ],
     [
+     "Q18572425",
+     "guido-reni"
+    ],
+    [
      "Q5906548",
      "francisco-de-zurbaran"
     ],
@@ -4289,6 +4353,10 @@
      "gustave-moreau"
     ],
     [
+     "Q20178228",
+     "gustave-moreau"
+    ],
+    [
      "Q6445802",
      "gustave-moreau"
     ],
@@ -4299,6 +4367,10 @@
     [
      "Q110765516",
      "charles-le-brun"
+    ],
+    [
+     "salvador-dali|Hercules Lifts the Skin of the Sea and Stops Venus for an Instant from Waking Love",
+     "salvador-dali"
     ]
    ]
   },
@@ -5259,6 +5331,10 @@
      "daniele-da-volterra"
     ],
     [
+     "Q9034188",
+     "tintoretto"
+    ],
+    [
      "Q6020780",
      "paolo-veronese"
     ],
@@ -5367,6 +5443,10 @@
      "alexandre-cabanel"
     ],
     [
+     "Q18756802",
+     "alexandre-cabanel"
+    ],
+    [
      "Q1283024",
      "william-adolphe-bouguereau"
     ],
@@ -5424,6 +5504,10 @@
     [
      "Q125964963",
      "guido-reni"
+    ],
+    [
+     "Q28796906",
+     "mattia-preti"
     ],
     [
      "gustave-moreau|Salome with the Head of John the Baptist",
@@ -5532,6 +5616,10 @@
     [
      "Q30605361",
      "artemisia-gentileschi"
+    ],
+    [
+     "Q3088614",
+     "edouard-manet"
     ]
    ]
   },
@@ -6029,6 +6117,10 @@
      "francesco-salviati"
     ],
     [
+     "Q9396557",
+     "tintoretto"
+    ],
+    [
      "Q1984131",
      "tintoretto"
     ],
@@ -6043,6 +6135,14 @@
     [
      "Q26708418",
      "gustave-moreau"
+    ],
+    [
+     "Q116167893",
+     "odilon-redon"
+    ],
+    [
+     "salvador-dali|Roger Freeing Angelica (St. George and the Damsel)",
+     "salvador-dali"
     ]
    ]
   },
@@ -6441,6 +6541,10 @@
      "jusepe-de-ribera"
     ],
     [
+     "Q87113703",
+     "claude-lorrain"
+    ],
+    [
      "Q85606274",
      "luca-giordano"
     ],
@@ -6804,6 +6908,10 @@
      "jacopo-pontormo"
     ],
     [
+     "Q5946505",
+     "tintoretto"
+    ],
+    [
      "Q2273901",
      "diego-velazquez"
     ],
@@ -7142,12 +7250,20 @@
      "diego-velazquez"
     ],
     [
+     "Q33110183",
+     "claude-lorrain"
+    ],
+    [
      "Q17582441",
      "giovanni-battista-gaulli"
     ],
     [
      "william-hogarth|Paul Before Felix Burlesqued",
      "william-hogarth"
+    ],
+    [
+     "benjamin-west|St. Paul Shaking off the Viper",
+     "benjamin-west"
     ],
     [
      "Q115652259",
@@ -7263,6 +7379,10 @@
     [
      "benjamin-west|Rinaldo rescued from Armida",
      "benjamin-west"
+    ],
+    [
+     "Q119011200",
+     "angelica-kauffman"
     ]
    ]
   },
@@ -7355,7 +7475,19 @@
      "hans-holbein-genc"
     ],
     [
+     "Q2805058",
+     "lucas-cranach-yasl"
+    ],
+    [
+     "Q3719885",
+     "correggio"
+    ],
+    [
      "Q21081454",
+     "lucas-cranach-yasl"
+    ],
+    [
+     "Q115826047",
      "lucas-cranach-yasl"
     ],
     [
@@ -7363,8 +7495,16 @@
      "jacopo-pontormo"
     ],
     [
+     "Q18420689",
+     "annibale-carracci"
+    ],
+    [
      "guercino|Venus and Cupid in a Chariot",
      "guercino"
+    ],
+    [
+     "Q12860070",
+     "francois-boucher"
     ],
     [
      "theodore-gericault|Venus and Cupid in a Landscape, after Annibale Carracci (recto); A Warrior Holding a Shield and Sword, Seen from the Back (verso)",
@@ -7518,6 +7658,10 @@
     [
      "andrea-mantegna|Saint Christopher",
      "andrea-mantegna"
+    ],
+    [
+     "Q2565646",
+     "hieronymus-bosch"
     ],
     [
      "lucas-cranach-yasl|Saint Christopher",
@@ -7820,6 +7964,10 @@
      "cimabue"
     ],
     [
+     "Q111821745",
+     "duccio-di-buoninsegna"
+    ],
+    [
      "Q3697611",
      "fra-angelico"
     ],
@@ -7922,12 +8070,24 @@
      "fra-angelico"
     ],
     [
+     "Q2733729",
+     "hieronymus-bosch"
+    ],
+    [
      "Q24090",
      "titian"
     ],
     [
      "annibale-carracci|Christ Crowned with Thorns",
      "annibale-carracci"
+    ],
+    [
+     "Q29032809",
+     "orazio-gentileschi"
+    ],
+    [
+     "Q609576",
+     "anthony-van-dyck"
     ],
     [
      "Q61930204",
@@ -8033,6 +8193,10 @@
      "raphael"
     ],
     [
+     "Q3967209",
+     "rosso-fiorentino"
+    ],
+    [
      "Q16619520",
      "el-greco"
     ],
@@ -8074,6 +8238,10 @@
     [
      "Q116285241",
      "dirck-van-baburen"
+    ],
+    [
+     "Q21715546",
+     "valentin-de-boulogne"
     ],
     [
      "Q16534536",
@@ -8126,6 +8294,10 @@
     [
      "claude-lorrain|Coast View with Perseus and the Origin of Coral",
      "claude-lorrain"
+    ],
+    [
+     "Q26708438",
+     "luca-giordano"
     ],
     [
      "Q19857388",
@@ -8255,6 +8427,10 @@
     [
      "Q133522097",
      "guido-reni"
+    ],
+    [
+     "Q19931311",
+     "orazio-gentileschi"
     ],
     [
      "Q3948947",
@@ -8510,6 +8686,10 @@
     [
      "Q6772904",
      "william-hogarth"
+    ],
+    [
+     "Q6772905",
+     "william-hogarth"
     ]
    ]
   },
@@ -8604,6 +8784,10 @@
      "fra-angelico"
     ],
     [
+     "Q27700042",
+     "valentin-de-boulogne"
+    ],
+    [
      "Q21725315",
      "francisco-de-zurbaran"
     ]
@@ -8630,6 +8814,14 @@
     "Bazı resimlerde bir pencerede ya da köşede horoz görülür. Ayrıca arka planda sorgulanan İsa yer alabilir."
    ],
    "eserler": [
+    [
+     "Q111821732",
+     "duccio-di-buoninsegna"
+    ],
+    [
+     "Q105906522",
+     "valentin-de-boulogne"
+    ],
     [
      "caravaggio|The Denial of Saint Peter",
      "caravaggio"
@@ -8697,6 +8889,10 @@
     [
      "Q106471832",
      "dirck-van-baburen"
+    ],
+    [
+     "salvador-dali|The Metamorphosis of Narcissus",
+     "salvador-dali"
     ]
    ]
   },
@@ -8725,6 +8921,10 @@
     [
      "Q19911491",
      "simone-martini"
+    ],
+    [
+     "Q3948700",
+     "masaccio"
     ],
     [
      "Q3948701",
@@ -8810,6 +9010,10 @@
    ],
    "eserler": [
     [
+     "Q977200",
+     "masaccio"
+    ],
+    [
      "Q3998895",
      "robert-campin"
     ],
@@ -8818,8 +9022,16 @@
      "robert-campin"
     ],
     [
+     "Q64514371",
+     "domenico-di-michelino"
+    ],
+    [
      "Q2416277",
      "sandro-botticelli"
+    ],
+    [
+     "Q688870",
+     "albrecht-durer"
     ],
     [
      "Q18685962",
@@ -8828,6 +9040,10 @@
     [
      "Q6553555",
      "el-greco"
+    ],
+    [
+     "masaccio|The Holy Trinity (fresk)",
+     "masaccio"
     ]
    ]
   },
@@ -8915,6 +9131,10 @@
     [
      "Q28057385",
      "jan-van-eyck"
+    ],
+    [
+     "Q20199584",
+     "giovanni-battista-gaulli"
     ]
    ]
   },
@@ -8940,12 +9160,24 @@
    ],
    "eserler": [
     [
+     "annibale-carracci|Wilton album, folio 41: The Drunken Silenus (Tazza Farnese)",
+     "annibale-carracci"
+    ],
+    [
+     "annibale-carracci|The Drunken SiIenus: Design for the \"Tazza Farnese\"",
+     "annibale-carracci"
+    ],
+    [
      "Q3960488",
      "anthony-van-dyck"
     ],
     [
      "Q17652393",
      "jusepe-de-ribera"
+    ],
+    [
+     "Q57665995",
+     "gerrit-van-honthorst"
     ],
     [
      "jusepe-de-ribera|Drunken Silenus",
@@ -8982,11 +9214,19 @@
    ],
    "eserler": [
     [
+     "Q106849242",
+     "ambrogio-lorenzetti"
+    ],
+    [
      "Q4411306",
      "jusepe-de-ribera"
     ],
     [
      "giovanni-battista-gaulli|Detail Study for The Assumption of St. Agnes",
+     "giovanni-battista-gaulli"
+    ],
+    [
+     "Q28839420",
      "giovanni-battista-gaulli"
     ],
     [
@@ -9159,6 +9399,10 @@
     [
      "Q20184643",
      "valentin-de-boulogne"
+    ],
+    [
+     "Q570163",
+     "rembrandt-van-rijn"
     ],
     [
      "Q3697618",
@@ -9347,6 +9591,10 @@
    ],
    "eserler": [
     [
+     "guercino|Endymion Sleeping",
+     "guercino"
+    ],
+    [
      "Q137732038",
      "mattia-preti"
     ],
@@ -9388,6 +9636,14 @@
     [
      "Q19607289",
      "simone-martini"
+    ],
+    [
+     "Q2448065",
+     "albrecht-durer"
+    ],
+    [
+     "Q5494602",
+     "paolo-veronese"
     ],
     [
      "Q55429850",
@@ -9434,12 +9690,28 @@
      "piero-della-francesca"
     ],
     [
+     "Q2390197",
+     "hieronymus-bosch"
+    ],
+    [
      "Q115533898",
      "hans-baldung-grien"
     ],
     [
      "Q19911455",
      "hans-baldung-grien"
+    ],
+    [
+     "Q21614514",
+     "quentin-metsys"
+    ],
+    [
+     "Q3699558",
+     "correggio"
+    ],
+    [
+     "Q20275938",
+     "nicolas-poussin"
     ]
    ]
   },
@@ -9505,6 +9777,10 @@
    ],
    "eserler": [
     [
+     "Q3925593",
+     "michelangelo"
+    ],
+    [
      "Q27957610",
      "tintoretto"
     ],
@@ -9517,8 +9793,20 @@
      "nicolas-poussin"
     ],
     [
+     "claude-lorrain|Queen Esther Approaching the Palace of Ahasuerus",
+     "claude-lorrain"
+    ],
+    [
+     "Q2589202",
+     "rembrandt-van-rijn"
+    ],
+    [
      "Q29419146",
      "jan-steen"
+    ],
+    [
+     "Q2911543",
+     "john-everett-millais"
     ]
    ]
   },
@@ -9549,6 +9837,10 @@
      "francesco-salviati"
     ],
     [
+     "Q21614134",
+     "lucas-cranach-yasl"
+    ],
+    [
      "Q15974334",
      "francesco-salviati"
     ],
@@ -9559,6 +9851,14 @@
     [
      "Q19911778",
      "guido-reni"
+    ],
+    [
+     "Q47533251",
+     "marcantonio-raimondi"
+    ],
+    [
+     "Q17492019",
+     "pierre-puvis-de-chavannes"
     ]
    ]
   },
@@ -9637,6 +9937,10 @@
     [
      "duccio-di-buoninsegna|Christ's Entry into Jerusalem (Maestà arka yüzü)",
      "duccio-di-buoninsegna"
+    ],
+    [
+     "Q114648680",
+     "charles-le-brun"
     ]
    ]
   },
@@ -9748,12 +10052,76 @@
      "caravaggio"
     ],
     [
+     "Q2429754",
+     "caravaggio"
+    ],
+    [
+     "jusepe-de-ribera|Cupid Punishing a Satyr",
+     "jusepe-de-ribera"
+    ],
+    [
+     "Q20276003",
+     "bartolomeo-manfredi"
+    ],
+    [
+     "Q110389626",
+     "guido-reni"
+    ],
+    [
+     "Q3201862",
+     "jean-antoine-watteau"
+    ],
+    [
+     "francois-boucher|Music and Dance and Cupids in Conspiracy ",
+     "francois-boucher"
+    ],
+    [
+     "francois-boucher|Music and Dance",
+     "francois-boucher"
+    ],
+    [
+     "francois-boucher|Cupids in Conspiracy",
+     "francois-boucher"
+    ],
+    [
+     "francois-boucher|Winged Putti with Flowers",
+     "francois-boucher"
+    ],
+    [
      "benjamin-west|Cupid, Stung by a Bee, Is Cherished by his Mother",
      "benjamin-west"
     ],
     [
+     "Q122341110",
+     "angelica-kauffman"
+    ],
+    [
+     "henry-fuseli|Sleeping Woman with a Cupid (Hush)",
+     "henry-fuseli"
+    ],
+    [
+     "henry-fuseli|Sleeping Woman with a Cupid",
+     "henry-fuseli"
+    ],
+    [
      "Q20174034",
      "benjamin-west"
+    ],
+    [
+     "Q110797709",
+     "paolo-uccello"
+    ],
+    [
+     "Q64960135",
+     "marcantonio-raimondi"
+    ],
+    [
+     "Q4247460",
+     "william-adolphe-bouguereau"
+    ],
+    [
+     "Q2091987",
+     "william-adolphe-bouguereau"
     ]
    ]
   },
@@ -9779,6 +10147,10 @@
     "Diğer Kilise Babaları (Hieronymus, Ambrosius, Gregorius) ile birlikte ya da annesi Aziz Monica'nın yanında tasvir edilmesi."
    ],
    "eserler": [
+    [
+     "Q3948660",
+     "masaccio"
+    ],
     [
      "Q3907523",
      "piero-della-francesca"
@@ -9864,6 +10236,10 @@
      "honore-daumier"
     ],
     [
+     "Q19911727",
+     "honore-daumier"
+    ],
+    [
      "Q17491260",
      "honore-daumier"
     ],
@@ -9913,6 +10289,10 @@
     [
      "Q29655360",
      "peter-paul-rubens"
+    ],
+    [
+     "peter-paul-rubens|The Triumph of Henry IV",
+     "peter-paul-rubens"
     ]
    ]
   },
@@ -9941,6 +10321,14 @@
     [
      "Q18684720",
      "duccio-di-buoninsegna"
+    ],
+    [
+     "pietro-perugino|Christ and the Woman of Samaria",
+     "pietro-perugino"
+    ],
+    [
+     "Q19966562",
+     "annibale-carracci"
     ],
     [
      "Q137883068",
@@ -9974,6 +10362,10 @@
     "Mikail'in yanında, onunla birlikte savaşan, kalkanlı ya da trompet çalan sadık melekler bulunabilir."
    ],
    "eserler": [
+    [
+     "Q16941214",
+     "limbourg-kardesler"
+    ],
     [
      "Q594406",
      "pieter-bruegel-yasl"
@@ -10010,12 +10402,24 @@
    ],
    "eserler": [
     [
+     "Q3698230",
+     "masaccio"
+    ],
+    [
+     "Q99227759",
+     "masaccio"
+    ],
+    [
      "Q1886263",
      "michelangelo"
     ],
     [
      "Q685916",
      "caravaggio"
+    ],
+    [
+     "Q3224346",
+     "mattia-preti"
     ],
     [
      "Q3698229",
@@ -10049,12 +10453,20 @@
      "nicolas-poussin"
     ],
     [
+     "Q18572413",
+     "guercino"
+    ],
+    [
      "Q140756320",
      "luca-giordano"
     ],
     [
      "luca-giordano|The Abduction of the Sabine Women",
      "luca-giordano"
+    ],
+    [
+     "Q1314013",
+     "jacques-louis-david"
     ]
    ]
   },
@@ -10161,6 +10573,10 @@
     [
      "Q2835885",
      "tintoretto"
+    ],
+    [
+     "Q18602467",
+     "artemisia-gentileschi"
     ]
    ]
   },
@@ -10186,6 +10602,10 @@
     "Bizans/Ortodoks Koimesis tasvirlerinde, Meryem'in ruhunu kundaklı küçük bir çocuk olarak kucağında tutan İsa"
    ],
    "eserler": [
+    [
+     "Q3210847",
+     "petrus-christus"
+    ],
     [
      "albrecht-durer|The Death of the Virgin, from the The Life of the Virgin",
      "albrecht-durer"
@@ -10333,12 +10753,20 @@
      "simone-martini"
     ],
     [
+     "Q286096",
+     "rogier-van-der-weyden"
+    ],
+    [
      "Q7211358",
      "frans-hals"
     ],
     [
      "Q6119249",
      "francisco-de-zurbaran"
+    ],
+    [
+     "Q25395400",
+     "luca-giordano"
     ]
    ]
   },
@@ -10366,6 +10794,10 @@
     [
      "Q2715152",
      "raphael"
+    ],
+    [
+     "Q3225258",
+     "andrea-mantegna"
     ],
     [
      "Q14914880",
@@ -10434,6 +10866,10 @@
     "Gölgeli, kuytu bir orman veya pastoral doğa ortamı"
    ],
    "eserler": [
+    [
+     "Q1133114",
+     "correggio"
+    ],
     [
      "Q11729456",
      "anthony-van-dyck"
@@ -10516,6 +10952,10 @@
     [
      "Q16553687",
      "tintoretto"
+    ],
+    [
+     "Q105799623",
+     "hendrick-ter-brugghen"
     ]
    ]
   },
@@ -10682,8 +11122,28 @@
    ],
    "eserler": [
     [
+     "Q2610675",
+     "caravaggio"
+    ],
+    [
+     "Q64521029",
+     "bartolomeo-manfredi"
+    ],
+    [
+     "Q78687109",
+     "valentin-de-boulogne"
+    ],
+    [
      "Q20278620",
      "valentin-de-boulogne"
+    ],
+    [
+     "Q15934587",
+     "valentin-de-boulogne"
+    ],
+    [
+     "Q379906",
+     "georges-de-la-tour"
     ],
     [
      "Q125339790",
@@ -10692,6 +11152,10 @@
     [
      "Q107436971",
      "valentin-de-boulogne"
+    ],
+    [
+     "Q9378247",
+     "giovanni-battista-piazzetta"
     ]
    ]
   },
@@ -10901,6 +11365,10 @@
     [
      "jacques-louis-david|The Lictors Bringing Brutus the Bodies of his Sons",
      "jacques-louis-david"
+    ],
+    [
+     "Q2533791",
+     "jacques-louis-david"
     ]
    ]
   },
@@ -11000,6 +11468,10 @@
     [
      "Q15805858",
      "nicolas-poussin"
+    ],
+    [
+     "Q1140358",
+     "nicolas-poussin"
     ]
    ]
   },
@@ -11025,6 +11497,10 @@
     "Bulutlar üzerinde diz çökmüş, kollarını açarak veba ya da afetle sarsılan şehir için göklere yalvaran şefaatçi figürü"
    ],
    "eserler": [
+    [
+     "Q3947174",
+     "artemisia-gentileschi"
+    ],
     [
      "Q3947170",
      "jusepe-de-ribera"
@@ -11122,6 +11598,10 @@
    ],
    "eserler": [
     [
+     "Q64606195",
+     "paolo-veronese"
+    ],
+    [
      "Q18573368",
      "luca-giordano"
     ],
@@ -11190,6 +11670,10 @@
     [
      "Q16268861",
      "annibale-carracci"
+    ],
+    [
+     "Q25218172",
+     "artemisia-gentileschi"
     ]
    ]
   },
@@ -11215,6 +11699,10 @@
     "Bazı tasvirlerde sahneyi izleyen ya da İsa'ya yaklaşan başka Ferisiler ve kalabalık yer alır."
    ],
    "eserler": [
+    [
+     "Q1759631",
+     "masaccio"
+    ],
     [
      "Q2459887",
      "titian"
@@ -11345,6 +11833,14 @@
      "piero-della-francesca"
     ],
     [
+     "tintoretto|Saint Helen Testing the True Cross",
+     "tintoretto"
+    ],
+    [
+     "Q1832360",
+     "paolo-veronese"
+    ],
+    [
      "Q20092783",
      "giovanni-battista-tiepolo"
     ]
@@ -11371,6 +11867,10 @@
     "Sıklıkla sahneye eşlik eden kanatlı küçük figürler (putti/erotlar) ve rüzgârın soğuğunu çağrıştıran kar, dolu ya da buz ayrıntıları"
    ],
    "eserler": [
+    [
+     "Q66023885",
+     "francesco-solimena"
+    ],
     [
      "Q18748495",
      "francesco-solimena"
@@ -11435,6 +11935,10 @@
    ],
    "eserler": [
     [
+     "Q2452374",
+     "giorgione"
+    ],
+    [
      "Q19820121",
      "valentin-de-boulogne"
     ],
@@ -11465,6 +11969,10 @@
     "Arka planda Romalı askerler, sancaklar, çadır ya da fethedilmiş bir şehir manzarası"
    ],
    "eserler": [
+    [
+     "Q658825",
+     "giovanni-bellini"
+    ],
     [
      "Q3207778",
      "nicolas-poussin"
@@ -11497,12 +12005,20 @@
    ],
    "eserler": [
     [
+     "Q3948917",
+     "pietro-lorenzetti"
+    ],
+    [
      "Q2310025",
      "giulio-romano"
     ],
     [
      "Q17652120",
      "annibale-carracci"
+    ],
+    [
+     "Q3464529",
+     "francisco-de-zurbaran"
     ]
    ]
   },
@@ -11531,6 +12047,22 @@
     [
      "Q47044600",
      "rogier-van-der-weyden"
+    ],
+    [
+     "Q21725092",
+     "guido-reni"
+    ],
+    [
+     "Q743643",
+     "georges-de-la-tour"
+    ],
+    [
+     "Q116960618",
+     "giovanni-battista-gaulli"
+    ],
+    [
+     "Q9335245",
+     "georges-de-la-tour"
     ],
     [
      "Q50325570",
@@ -11597,6 +12129,10 @@
      "pietro-lorenzetti"
     ],
     [
+     "Q75846",
+     "tintoretto"
+    ],
+    [
      "Q106492209",
      "dirck-van-baburen"
     ]
@@ -11626,6 +12162,10 @@
     [
      "caravaggio|The Crucifixion of Saint Andrew",
      "caravaggio"
+    ],
+    [
+     "Q11787907",
+     "jusepe-de-ribera"
     ],
     [
      "Q29212009",
@@ -11689,6 +12229,10 @@
     [
      "Q2344368",
      "raphael"
+    ],
+    [
+     "Q27970986",
+     "luca-giordano"
     ],
     [
      "Q17491572",
@@ -11812,6 +12356,14 @@
     "Kırsal bir yol ya da açık arazi; bazen uzakta Şam kenti"
    ],
    "eserler": [
+    [
+     "Q2432043",
+     "michelangelo"
+    ],
+    [
+     "Q665337",
+     "pieter-bruegel-yasl"
+    ],
     [
      "Q2273517",
      "caravaggio"
@@ -11938,6 +12490,10 @@
    ],
    "eserler": [
     [
+     "Q3590926",
+     "jacques-louis-david"
+    ],
+    [
      "jean-auguste-dominique-ingres|Antiochus and Stratonice",
      "jean-auguste-dominique-ingres"
     ],
@@ -11971,6 +12527,26 @@
     [
      "Q534108",
      "andrea-mantegna"
+    ],
+    [
+     "Q3910087",
+     "giovanni-bellini"
+    ],
+    [
+     "Q2273890",
+     "tintoretto"
+    ],
+    [
+     "Q3937806",
+     "tintoretto"
+    ],
+    [
+     "Q3947596",
+     "tintoretto"
+    ],
+    [
+     "Q924655",
+     "tintoretto"
     ],
     [
      "Q16695525",
@@ -12316,6 +12892,10 @@
      "michelangelo"
     ],
     [
+     "Q740212",
+     "rembrandt-van-rijn"
+    ],
+    [
      "henry-fuseli|Study for the Prophet Jeremiah (recto); Studies of a Horse Seen from Below and of a Man Seated on a Chair, Probably a Self-Portrait and an Off-Print in Brown Ink of a Nude Female Abdomen and Legs (verso)",
      "henry-fuseli"
     ]
@@ -12375,6 +12955,10 @@
    ],
    "eserler": [
     [
+     "Q49212833",
+     "ambrogio-lorenzetti"
+    ],
+    [
      "Q6119366",
      "el-greco"
     ],
@@ -12405,6 +12989,10 @@
     "Gökte beliren melek ya da şehitlere taç ve palmiye dalı getiren ilahi işaretler"
    ],
    "eserler": [
+    [
+     "Q664038",
+     "albrecht-durer"
+    ],
     [
      "Q4004623",
      "jacopo-pontormo"
@@ -12476,6 +13064,38 @@
     [
      "domenico-di-michelino|Dante'yi Divine Comedy ile gösteren resim",
      "domenico-di-michelino"
+    ],
+    [
+     "henry-fuseli|Two Heads of Damned Souls from Dante's \"Inferno\" (recto and verso)",
+     "henry-fuseli"
+    ],
+    [
+     "henry-fuseli|Ugolino and His Sons Starving to Death in the Tower",
+     "henry-fuseli"
+    ],
+    [
+     "henry-fuseli|Dante Swoons before the Soaring Souls of Paolo and Francesca, Virgil at his Side",
+     "henry-fuseli"
+    ],
+    [
+     "Q3637289",
+     "william-blake"
+    ],
+    [
+     "Q7775719",
+     "william-blake"
+    ],
+    [
+     "Q11784145",
+     "dante-gabriel-rossetti"
+    ],
+    [
+     "Q632603",
+     "dante-gabriel-rossetti"
+    ],
+    [
+     "Q4660495",
+     "dante-gabriel-rossetti"
     ]
    ]
   },
@@ -12665,6 +13285,10 @@
      "diego-velazquez"
     ],
     [
+     "Q29838774",
+     "orazio-gentileschi"
+    ],
+    [
      "Q927449",
      "johannes-vermeer"
     ]
@@ -12722,6 +13346,10 @@
     "Arka planda denize açılan ya da uzaklaşan Truva gemileri"
    ],
    "eserler": [
+    [
+     "Q55831023",
+     "guercino"
+    ],
     [
      "Q23742712",
      "henry-fuseli"
@@ -12792,6 +13420,10 @@
     [
      "Q97378807",
      "guercino"
+    ],
+    [
+     "Q63536638",
+     "francois-boucher"
     ]
    ]
   },
@@ -12942,6 +13574,10 @@
     "Kentsel bir mekân, yol ya da yapılar; bazen yıkanmayı çağrıştıran bir havuz veya su kabı"
    ],
    "eserler": [
+    [
+     "Q26678230",
+     "duccio-di-buoninsegna"
+    ],
     [
      "el-greco|Christ Healing the Blind",
      "el-greco"
@@ -13099,12 +13735,20 @@
    ],
    "eserler": [
     [
+     "Q18572427",
+     "guido-reni"
+    ],
+    [
      "jacques-louis-david|Paris and Helen",
      "jacques-louis-david"
     ],
     [
      "Q2254945",
      "jacques-louis-david"
+    ],
+    [
+     "Q16038758",
+     "angelica-kauffman"
     ]
    ]
   },
@@ -13136,6 +13780,10 @@
     [
      "Q3960008",
      "michelangelo"
+    ],
+    [
+     "Q28035499",
+     "guercino"
     ]
    ]
   },
@@ -13191,8 +13839,16 @@
    ],
    "eserler": [
     [
+     "hans-holbein-genc|Saint Thomas",
+     "hans-holbein-genc"
+    ],
+    [
      "Q29644867",
      "georges-de-la-tour"
+    ],
+    [
+     "Q1113846",
+     "diego-velazquez"
     ],
     [
      "Q23948730",
