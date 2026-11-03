@@ -26,6 +26,8 @@ DUZELTME = {
     'commons:Jacopo_Tintoretto_-_Glorification_of_St_Roch.jpg': ('kotu', 'cerceve'),
     # 23.46 Veronese'nin Müjde'si (Cleveland): ince bir çerçeve, resim görüntünün çoğunu kaplıyor (Gemini "çerçeve ?")
     'cma:https://openaccess-cdn.clevelandart.org/1950.251/1950.251_web.jpg': ('uygun', None),
+    # 31.48 Artemisia "Judith and Maidservant" (Capodimonte): kalın yaldızlı çerçeve ve duvarla çekilmiş (Gemini "uygun")
+    'commons:Artemisia_gentileschi,_giuditta_e_la_fantesca_abra_con_la_testa_recisa_di_oloferne,_1645-50,_Q377.JPG': ('kotu', 'cerceve'),
 }
 
 
