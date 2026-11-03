@@ -11,6 +11,12 @@ olmayan bir konu (Türkçesi tr_adlar.tsv).
 
   python3 scripts/konu_etiket/uret.py   # data/eser_konulari.json yazılır, k: olanlar ikonografi.json'a eklenir
 
+İş 110 (Emre: "hikaye sayfalarını da yaz ve yazmadan önce aynı konular varsa ... birleştir"):
+birlestirme.json · mevcut: aynı hikâyenin zaten var olan konu sayfasına bağlanan adlar; ayni: aynı yeni konunun
+farklı adları (tek sayfada toplanır); sayfasiz: hikâyesi olmayan diziler ve temalar (tür olarak kalır).
+yeni_konular_NN.json: ≥2 eserli yeni konuların Claude'un yazdığı hikâye sayfaları ({ozgun, id, ad, tur, ozet,
+kaynak, hikaye, tanima}); ikonografi.json'a eserleriyle (yıl sırasıyla) eklenir. Yeniden çalıştırmak bir şey değiştirmez.
+
 Yalnız konu ve tür; eser–sanatçı eşleşmesine dokunulmaz."""
 import json, re, sys
 from pathlib import Path
@@ -58,8 +64,19 @@ DIGER = {
     'Thirty-six Views of Mount Fuji': 'manzara', 'Times of Day': 'alegori', 'Virtues and Vices': 'alegori',
     'Virtues': 'alegori', 'Vollard Suite': 'etut', 'Water Lilies': 'manzara', 'Witches': 'dus', 'Woman Bathing': 'nu',
 }
-# aynı konunun mevcut konu sayfasına bağlananları
-BIRLESTIR = {'Esther': 'esther-before-ahasuerus', 'Punishment of Haman': 'esther-before-ahasuerus'}
+ALANLAR = ('id', 'ad', 'ozgun', 'tur', 'ozet', 'kaynak', 'hikaye', 'tanima')
+
+
+def birlestirme():
+    """(ad → mevcut konu id, ad → aynı yeni konunun asıl adı, asıl ad → yeni konu sayfası)"""
+    b = json.loads((BURASI / 'birlestirme.json').read_text(encoding='utf-8'))
+    yeni = {}
+    for p in sorted(BURASI.glob('yeni_konular_[0-9][0-9].json')):
+        for k in json.loads(p.read_text(encoding='utf-8')):
+            if k['ozgun'] in yeni:
+                raise SystemExit(f'{p.name}: iki kez yazılmış konu {k["ozgun"]}')
+            yeni[k['ozgun']] = k
+    return b['mevcut'], b['ayni'], yeni
 
 
 def main():
@@ -71,6 +88,27 @@ def main():
     sanatcilar = {s['id'] for s in json.loads((KOK / 'data/sanatcilar.json').read_text())}
     tr = dict(l.rstrip('\n').split('\t') for l in (BURASI / 'tr_adlar.tsv').read_text(encoding='utf-8').splitlines() if l.strip())
     cevap = json.loads((BURASI / "etiketler.json").read_text(encoding="utf-8"))
+    mevcut, ayni, yeni = birlestirme()
+    for ad, kid in mevcut.items():
+        if kid not in konular:
+            raise SystemExit(f'birlestirme.json: {ad} → bilinmeyen konu {kid}')
+    for k in yeni.values():
+        if k['id'] not in konular:  # yeni konu sayfası: eserleri aşağıda eklenir
+            yk = {a: k[a] for a in ALANLAR}
+            yk['eserler'] = []
+            ik['konular'].append(yk)
+            konular[k['id']] = yk
+        elif konular[k['id']].get('ozgun') != k['ozgun']:
+            raise SystemExit(f'kimlik çakışması: {k["id"]}')
+        else:  # metin düzeltmeleri yeni_konular dosyasından gelir
+            konular[k['id']].update({a: k[a] for a in ALANLAR})
+    def ytur(kod):
+        """yeni konu sayfasına giden "y:" etiketinin türü (mevcut sayfaya bağlananlar o sayfanın türünü alır)"""
+        if not kod or not kod.startswith('y:'):
+            return None
+        ad, kat = re.fullmatch(r'y:([^|]+)\|(\w+)', kod).groups()
+        return None if ad in mevcut else KATEGORI.get(kat) or DIGER.get(ad, 'alegori')
+
     yil = {}
     eserler, eklenecek = {}, []
     for sid, v in ob.items():
@@ -79,11 +117,11 @@ def main():
         for e in v['eserler']:
             a = e.get('qid') or f"{sid}|{e['baslik']}"
             yil[a] = e.get('yil')
+            kod = cevap.get(a)
             if a in etiketli:
                 k = konular[etiketli[a]]
-                eserler[a] = {'t': IKONOGRAFI_TUR[k['tur']], 'k': k['id']}
+                eserler[a] = {'t': ytur(kod) or IKONOGRAFI_TUR[k['tur']], 'k': k['id']}
                 continue
-            kod = cevap.get(a)
             if not kod:
                 raise SystemExit(f'etiketsiz eser: {a}')
             if kod.startswith('k:'):
@@ -92,12 +130,13 @@ def main():
                 eklenecek.append((kid, a, sid))
             elif kod.startswith('y:'):
                 ad, kat = re.fullmatch(r'y:([^|]+)\|(\w+)', kod).groups()
-                if ad in BIRLESTIR:
-                    kid = BIRLESTIR[ad]
-                    eserler[a] = {'t': IKONOGRAFI_TUR[konular[kid]['tur']], 'k': kid}
+                asil = ayni.get(ad, ad)
+                kid = mevcut.get(ad) or (yeni[asil]['id'] if asil in yeni else None)
+                if kid:
+                    eserler[a] = {'t': ytur(kod) or IKONOGRAFI_TUR[konular[kid]['tur']], 'k': kid}
                     eklenecek.append((kid, a, sid))
                 else:
-                    eserler[a] = {'t': KATEGORI.get(kat) or DIGER.get(ad, 'alegori'), 'a': tr[ad], 'en': ad}
+                    eserler[a] = {'t': ytur(kod), 'a': tr[ad], 'en': ad}
             else:
                 eserler[a] = {'t': HARF[kod]}
     fazla = set(cevap) - set(eserler)
@@ -118,16 +157,19 @@ def main():
                     break
         liste.insert(yer, [a, sid])
         eklenen += 1
+    bos = [k['ozgun'] for k in yeni.values() if not konular[k['id']]['eserler']]
+    if bos:
+        raise SystemExit(f'eseri olmayan yeni konu: {bos}')
     ik_yolu.write_text(json.dumps(ik, ensure_ascii=False, indent=1))  # dosyanın kendi biçimi (girintili, satır sonu yok)
     cikti = {
         'surum': 1,
-        'kaynak': 'Claude Code (Opus 5.5), eser başlıklarından, 2026-11; konusu olanlar data/ikonografi.json',
+        'kaynak': 'Claude Code, eser başlıklarından, 2026-11; konusu olanlar data/ikonografi.json',
         'aciklama': 'Her eserin türü (t) ve konusu: k = ikonografi.json konu kimliği, a = konu sayfası henüz olmayan konunun Türkçe adı (en: İngilizce yerleşik adı). Anahtar ikonografi.json ile aynı (QID ya da "sanatçı|başlık").',
         'turler': TURLER,
         'eserler': eserler,
     }
     (KOK / 'data/eser_konulari.json').write_text(json.dumps(cikti, ensure_ascii=False, separators=(',', ':')) + '\n')
-    print(f'{len(eserler)} eser · ikonografi.json\'a eklenen {eklenen}')
+    print(f'{len(eserler)} eser · ikonografi.json\'a eklenen {eklenen} · konu sayısı {len(ik["konular"])}')
 
 
 if __name__ == '__main__':
