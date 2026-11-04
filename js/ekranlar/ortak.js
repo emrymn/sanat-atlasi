@@ -11,7 +11,7 @@ import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
 import { ikon } from '../tasarim.js';
 import { adParcala } from '../adlar.js';
-import { paletGetir, renkTemasi, yumusat, karistir, hexten } from '../renk.js';
+import { paletGetir, renkTemasi, yumusat, karistir, hexten, hsl, hsldenHex } from '../renk.js';
 import { taninmaMetni, eserNotu } from '../karsilastir.js';
 import { koleksiyondaMi, koleksiyonDegistir } from '../koleksiyon.js';
 import { eseriBildir } from '../bildirim.js';
@@ -22,20 +22,33 @@ export const BILMIYORUM = '?';
 const TEMA_RENK = { gece: '#0B0A0B', gunduz: '#D1CBC1' };
 const GUNDUZ_YUZEY = '#D9D4CB';
 export const TEMA_AD = { gece: 'Gece', gunduz: 'Gündüz' };
-const BOYA_DEGISKENLERI = ['--bg', '--bg-rgb', '--surface', '--boya-1', '--boya-2', '--boya-3'];
+const BOYA_DEGISKENLERI = ['--bg', '--bg-rgb', '--surface', '--tab-bg', '--overlay-btn', '--golge-rgb', '--boya-1', '--boya-2', '--boya-3'];
 
-// Gündüz: zemin ve suluboya lekeleri gösterilen resmin paletinden (sekme ekranlarında günün resmi)
+// Resmin en koyu tonu, gölge olarak: tablonun üstündeki yazılar beyaz bir peçeye değil resmin kendi karanlığına oturur
+function golgeTonu(palet) {
+  const koyu = palet.reduce((a, p) => (hsl(p.renk)[2] < hsl(a.renk)[2] ? p : a), palet[0]);
+  const [h, s, l] = hsl(koyu.renk);
+  return hsldenHex(h, Math.min(s, 0.32), Math.min(l, 0.12));
+}
+
+// Gündüz: zemin, yüzeyler ve suluboya lekeleri gösterilen resmin paletinden (sekme ekranlarında günün resmi)
 function zeminiBoya(palet) {
   const st = document.documentElement.style;
-  const renkler = d.ilerleme.ayarlar.tema === 'gunduz' && palet ? palet.filter((p) => p.pay >= 0.03).map((p) => yumusat(p.renk)) : [];
+  const uygun = d.ilerleme.ayarlar.tema === 'gunduz' && palet ? palet.filter((p) => p.pay >= 0.03) : [];
+  const renkler = uygun.map((p) => yumusat(p.renk));
   if (!renkler.length) {
     for (const v of BOYA_DEGISKENLERI) st.removeProperty(v);
     return TEMA_RENK[d.ilerleme.ayarlar.tema] || TEMA_RENK.gece;
   }
-  const bg = karistir(renkler[0], TEMA_RENK.gunduz, 0.1);
+  const bg = karistir(renkler[0], TEMA_RENK.gunduz, 0.18);
+  const yuzey = karistir(renkler[1] || renkler[0], GUNDUZ_YUZEY, 0.14);
+  const yuzeyRgb = hexten(yuzey).join(', ');
   st.setProperty('--bg', bg);
   st.setProperty('--bg-rgb', hexten(bg).join(', '));
-  st.setProperty('--surface', karistir(renkler[0], GUNDUZ_YUZEY, 0.07));
+  st.setProperty('--surface', yuzey);
+  st.setProperty('--tab-bg', `rgba(${yuzeyRgb}, 0.86)`);
+  st.setProperty('--overlay-btn', `rgba(${yuzeyRgb}, 0.85)`);
+  st.setProperty('--golge-rgb', hexten(golgeTonu(uygun)).join(', '));
   for (let i = 0; i < 3; i++) st.setProperty(`--boya-${i + 1}`, hexten(renkler[i % renkler.length]).join(', '));
   return bg;
 }

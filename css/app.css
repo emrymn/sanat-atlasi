@@ -41,6 +41,7 @@
   --boya-1: 176, 150, 120;
   --boya-2: 120, 130, 140;
   --boya-3: 160, 120, 100;
+  --golge-rgb: 20, 17, 14;
   --ink: #221d19;
   --ink-2: #4a433c;
   --ink-3: #574f47;
@@ -101,20 +102,19 @@ body {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(90% 55% at 0% 0%, rgba(var(--boya-1), 0.34), transparent 70%),
-    radial-gradient(80% 50% at 100% 42%, rgba(var(--boya-2), 0.24), transparent 70%),
-    radial-gradient(100% 55% at 30% 100%, rgba(var(--boya-3), 0.28), transparent 72%);
-  transition: background 1.2s ease;
+    radial-gradient(95% 60% at 0% 0%, rgba(var(--boya-1), 0.44), transparent 70%),
+    radial-gradient(85% 55% at 100% 42%, rgba(var(--boya-2), 0.32), transparent 70%),
+    radial-gradient(110% 60% at 30% 100%, rgba(var(--boya-3), 0.36), transparent 72%);
+  background-size: 115% 115%;
+  background-position: 0% 0%;
+  transition: background-color 1.2s ease;
   animation: boya-nefes 24s ease-in-out infinite alternate;
-}
-@keyframes boya-nefes {
-  from {
-    transform: scale(1) translate3d(0, 0, 0);
   }
+  @keyframes boya-nefes {
   to {
-    transform: scale(1.12) translate3d(-2%, 1.5%, 0);
+  background-position: 100% 60%;
   }
-}
+  }
 @media (prefers-reduced-motion: reduce) {
   :root[data-tema='gunduz'] body::after {
     animation: none;
@@ -3266,18 +3266,58 @@ html.sekmesiz .sekmeler {
   /* yalnızca üstte (etiketler okunsun) ve en altta (isim ve düğme okunsun) hafif koyuluk */
   background: linear-gradient(180deg, rgba(var(--bg-rgb), 0.7) 0%, rgba(var(--bg-rgb), 0) 20%, rgba(var(--bg-rgb), 0) 55%, rgba(var(--bg-rgb), 0.45) 100%);
 }
-/* Gündüz: tablo beyaza boğulmaz; üstünde Gece'nin açık mürekkebi ve koyu bir gölge, en altta zemine yumuşak geçiş */
-:root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman {
-  --ink: #f4efe6;
-  --ink-2: #ddd5ca;
-  --ink-3: #c9c0b4;
+/* Gündüz: tablonun sahnesi beyaz peçeye boğulmaz; yazılar resmin kendi en koyu tonuna (--golge-rgb) oturur,
+   sahne bitince o ton boyalı zemine yavaşça erir */
+:root[data-tema='gunduz'] .sahne:has(.bugun-kahraman) {
+  --ink: #f2ece2;
+  --ink-2: #ddd5c9;
+  --ink-3: #c8bfb2;
+  --vurgu-acik: color-mix(in srgb, rgb(var(--boya-1)) 45%, #efe4d2);
+  --border: rgba(242, 236, 226, 0.18);
   color: var(--ink);
+  background: linear-gradient(180deg, rgb(var(--golge-rgb)) calc(100% - 26svh), rgba(var(--golge-rgb), 0) 100%);
+}
+:root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman,
+:root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman::before {
+  background: rgb(var(--golge-rgb));
 }
 :root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman::after {
-  background: linear-gradient(180deg, rgba(14, 12, 10, 0.5) 0%, rgba(14, 12, 10, 0) 22%, rgba(14, 12, 10, 0) 50%, rgba(14, 12, 10, 0.55) 82%, rgba(var(--bg-rgb), 0.85) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(var(--golge-rgb), 0.55) 0%,
+    rgba(var(--golge-rgb), 0) 22%,
+    rgba(var(--golge-rgb), 0) 48%,
+    rgba(var(--golge-rgb), 0.6) 80%,
+    rgba(var(--golge-rgb), 0.92) 100%
+  );
 }
 :root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman .sahne-isim {
-  text-shadow: 0 1px 14px rgba(14, 12, 10, 0.45);
+  text-shadow: 0 1px 16px rgba(var(--golge-rgb), 0.55);
+}
+/* Gündüz: keskin palet şeritleri yerine tablonun gölgesinden boyaya yumuşak geçiş */
+:root[data-tema='gunduz'] .hikaye::before {
+  background:
+    linear-gradient(180deg, rgba(var(--golge-rgb), 0.55) 0, rgba(var(--golge-rgb), 0.18) 160px, rgba(var(--golge-rgb), 0) 420px),
+    radial-gradient(80% 45% at 15% 35%, rgba(var(--boya-1), 0.22), transparent 70%),
+    radial-gradient(70% 40% at 90% 70%, rgba(var(--boya-2), 0.18), transparent 70%);
+  border-top: 0;
+}
+:root[data-tema='gunduz'] .sahne:has(.bugun-kahraman) .sahne-paneller .duvar-etiketi::before {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--golge-rgb), 0) 0,
+    rgba(var(--golge-rgb), 0.6) 90px,
+    rgba(var(--golge-rgb), 0.6) calc(100% - 90px),
+    rgba(var(--golge-rgb), 0) 100%
+  );
+}
+:root[data-tema='gunduz'] .sahne:has(.bugun-kahraman) .duvar-etiketi {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  text-shadow: 0 1px 18px rgba(var(--golge-rgb), 0.7);
 }
 .sahne-isim {
   position: absolute;
