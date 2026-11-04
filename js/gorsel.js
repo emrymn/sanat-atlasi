@@ -80,7 +80,15 @@ export function uzakGorselleriAyarla(k) {
     if (adres && x && typeof x === 'object') for (const [ad, v] of Object.entries(x)) if (/^[0-9a-f]{4,16}$/.test(String(v))) o[ad] = v;
     return o;
   };
-  uzak = { adres, buyuk: !!(adres && k.buyuk === true), devasa: new Set(adres && Array.isArray(k.devasa) ? k.devasa : []), muze, bayt, surumler: surumOku(k && k.surumler), bSurumler: surumOku(k && k.b_surumler) };
+  uzak = {
+    adres,
+    buyuk: !!(adres && k.buyuk === true),
+    devasa: new Set(adres && Array.isArray(k.devasa) ? k.devasa : []),
+    muze,
+    bayt,
+    surumler: surumOku(k && k.surumler),
+    bSurumler: surumOku(k && k.b_surumler),
+  };
 }
 const devasaYolu = (ad) => `${uzak.adres}/d/${ad}${uzak.surumler[ad] ? `-${uzak.surumler[ad]}` : ''}.jpg`;
 const buyukYolu = (ad) => `${uzak.adres}/b/${ad}${uzak.bSurumler[ad] ? `-${uzak.bSurumler[ad]}` : ''}.jpg`;
@@ -88,13 +96,16 @@ const buyukYolu = (ad) => `${uzak.adres}/b/${ad}${uzak.bSurumler[ad] ? `-${uzak.
 // İş 121: gosterilen (yerel anahtarlar; eserler.js gosterilenGorseller) verilirse yalnız uygulamada gösterilen
 // görsellerinkiler (aynı tablonun kopya kaydı ve çıkarılan görseller inmez); toplam boy da o oranda.
 let suzulmus = null;
-let bSuzulmus = new Set();
+let bSuzulmus = new Set(); // en büyük kopyası olmayanlar
+let gSuzulmus = new Set(); // gösterilen bütün görsellerin adları
 export function devasaSuz(gosterilen) {
   bSuzulmus = new Set();
+  gSuzulmus = new Set();
   if (!gosterilen) return (suzulmus = null);
   const adlar = new Set();
   for (const a of gosterilen) {
     if (!yerel[a]) continue;
+    gSuzulmus.add(yerel[a]);
     if (uzak.devasa.has(yerel[a])) adlar.add(yerel[a]);
     else if (uzak.buyuk) bSuzulmus.add(yerel[a]);
   }
@@ -110,13 +121,37 @@ export function devasaToplamBayt() {
 // İş 130 (Emre: "7k görsel yok muydu", "ekle"): en büyük kopyası olmayan (kaynağı 1280'den büyük olmayan) gösterilen
 // görsellerin en büyük hâli 1280'liğin kendisi: onlar da telefona iner. Sırada en büyük kopyalardan sonra gelir (inmekte
 // olan parçaların sırası bozulmasın). 1280'lik başına ~330 KB (R2'deki örneklerin ortalaması).
+// İş 131 (Emre: "resimler çok geç yükleniyor sayfalarda, halbuki indirdim hepsini"): sayfalar en büyük kopyayı değil
+// 400'lük (ızgaralar, aynı sunucudan) ve 1280'lik (kartlar, görüntüleyicinin ilk hali; R2) kopyaları gösteriyor; onlar
+// telefonda değildi (iPhone'da Cache Storage bozuk olduğundan önbelleğe de giremiyorlardı). Sıra: en büyükler, en büyüğü
+// olmayanların 1280'likleri, bütün 400'lükler (sayfaları en çok hızlandıran, küçük), kalan 1280'likler.
+// __atlasYalnizDevasa: testler yalnız en büyük kopyalarla çalışır (400'lükler binlerce dosya)
 export const B_ORTALAMA_BAYT = 330 * 1024;
+export const K_ORTALAMA_BAYT = 42 * 1024; // gorseller/k: 7028 dosya 290 MB
+const kucukYolu = (ad) => {
+  const g = `gorseller/k/${ad}.jpg`;
+  try {
+    return new URL(g, globalThis.location.href).href;
+  } catch {
+    return g;
+  }
+};
 export function telefonAdresleri() {
-  return [...devasaAdresleri(), ...[...bSuzulmus].map(buyukYolu)];
+  const l = [...devasaAdresleri(), ...[...bSuzulmus].map(buyukYolu)];
+  if (globalThis.__atlasYalnizDevasa) return l;
+  l.push(...[...gSuzulmus].map(kucukYolu));
+  if (uzak.buyuk) for (const ad of gSuzulmus) if (!bSuzulmus.has(ad)) l.push(buyukYolu(ad));
+  return l;
+}
+// adresin tahmini boyu (bayt): parçaları ve ilerlemedeki GB'ı hesaplamak için
+export function tahminiBayt(u) {
+  if (/\/d\/[0-9a-f]/.test(u)) return uzak.devasa.size && uzak.bayt ? uzak.bayt / uzak.devasa.size : 3.3e6;
+  if (/\/k\/[0-9a-f]/.test(u)) return K_ORTALAMA_BAYT;
+  return B_ORTALAMA_BAYT;
 }
 export function telefonToplamBayt() {
-  const d = devasaToplamBayt();
-  return d || bSuzulmus.size ? d + bSuzulmus.size * B_ORTALAMA_BAYT : 0;
+  const l = telefonAdresleri();
+  return uzak.bayt || l.length > devasaAdresleri().length ? Math.round(l.reduce((t, u) => t + tahminiBayt(u), 0)) : 0;
 }
 // En büyük kopyanın adresi (görüntüleyici); yoksa ''
 export function devasaUrl(g) {

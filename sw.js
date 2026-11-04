@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.65.0';
+const SURUM = '1.66.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -191,6 +191,9 @@ self.addEventListener('message', (e) => {
 self.addEventListener('fetch', (e) => {
   const istek = e.request;
   if (istek.method !== 'GET') return;
+  // İş 131: Ayarlar'daki telefona indirme (cache: 'no-store') service worker'dan geçmez: görsel önbelleğine de yazılıp
+  // onu boşuna doldurmasın, budamayla yavaşlatmasın
+  if (istek.cache === 'no-store') return;
   const url = new URL(istek.url);
   // Palet çıkarmak için CORS ile istenen görseller önbellekteki opak yanıtı kullanamaz: doğrudan ağa gider
   if (istek.mode === 'cors' && istek.destination === 'image' && url.origin !== self.location.origin) return;
@@ -198,19 +201,16 @@ self.addEventListener('fetch', (e) => {
     // okunuş kayıtları: Safari sesi parça parça (Range) ister, 206 yanıtı bekler
     e.respondWith(sesYaniti(e));
   } else if (url.origin === self.location.origin && url.pathname.includes('/gorseller/')) {
-    // uygulamayla yayınlanan görsel kopyaları: sürümden bağımsız görsel önbelleği (LRU)
-    e.respondWith(resim(e));
+    // uygulamayla yayınlanan görsel kopyaları: sürümden bağımsız görsel önbelleği (LRU). İş 131: telefona indirilmişse
+    // (400'lükler) IndexedDB'den; önbellek hata verirse ağdan
+    e.respondWith(depodanYaDa(e));
   } else if (r2Mi(url) && url.pathname.startsWith('/d/')) {
     // İş 129: önbellek hata verirse görsel yine ağdan gelsin (telefonda Cache Storage bozulmuştu)
     e.respondWith(devasaResim(e).catch(() => fetch(istek)));
   } else if (r2Mi(url)) {
     // İş 58: Cloudflare R2'deki görsel kopyaları (1280 px). İş 130: telefona indirilmişse (en büyük kopyası olmayanlar)
     // IndexedDB'den
-    e.respondWith(
-      devasaDepodan(istek.url.split('?')[0])
-        .catch(() => null)
-        .then((y) => y || resim(e)),
-    );
+    e.respondWith(depodanYaDa(e));
   } else if (url.origin === self.location.origin && (url.pathname.endsWith('/data/kunye.json') || url.pathname.endsWith('/data/gorsel_kaynagi.json'))) {
     // künye (portre, okunuş, IPA) Emre'nin Mac'inde güncellenir: sürüm beklemeden gelsin diye önce ağ, yoksa önbellek
     e.respondWith(onceAg(istek, KABUK));
@@ -287,7 +287,7 @@ function tahminiBoyut(url) {
   return g <= 400 ? 60 * 1024 : 180 * 1024;
 }
 
-// Wikimedia'ya aynı anda en çok 4 istek; 429'da (cors kipinde görülebilir) bir kez bekleyip tekrar denenir
+// İş 131: kendi sunucularımız (aynı köken, R2) sınırsız; Wikimedia'ya aynı anda en çok 4 istek; 429'da (cors kipinde görülebilir) bir kez bekleyip tekrar denenir
 let aktif = 0;
 const kuyruk = [];
 async function sinirli(fn, en = 4) {
@@ -323,6 +323,8 @@ async function agdan(url) {
 }
 
 async function agdanTekrarli(url) {
+  const u = new URL(url);
+  if (u.origin === self.location.origin || r2Mi(u)) return agdan(url);
   let s = await sinirli(() => agdan(url));
   if (s.y.status === 429) {
     const ra = parseInt(s.y.headers.get('retry-after') || '', 10);
@@ -334,9 +336,14 @@ async function agdanTekrarli(url) {
 
 // Önbelleğe yazma yanıtı geciktirmez ve başarısız olursa görseli düşürmez
 async function sakla(c, url, y, boyut) {
+  if (onbellekBozuk) return;
   try {
     await c.put(url, y.clone());
   } catch (err) {
+    if (!err || err.name !== 'QuotaExceededError') {
+      onbellekBozuk = true; // yer sorunu değil: önbellek bozuk, budama işe yaramaz
+      return;
+    }
     await budama(true).catch(() => {});
     try {
       await c.put(url, y.clone());
@@ -389,6 +396,16 @@ async function parcala(y, aralik) {
   });
 }
 
+// İş 131: telefonda Cache Storage bozulabiliyor (yazma TypeError, okuma "Internal error"): bir kez yazılamayınca bu
+// çalışma boyunca görsel önbelleği atlanır (her görselde yeniden denenip budama çalışınca sayfalar çok geç yükleniyordu)
+let onbellekBozuk = false;
+async function depodanYaDa(e) {
+  const y = await devasaDepodan(e.request.url.split('?')[0]).catch(() => null);
+  if (y) return y;
+  if (onbellekBozuk) return agdan(e.request.url).then((s) => s.y);
+  return resim(e).catch(() => fetch(e.request));
+}
+
 async function resim(e) {
   const anahtar = e.request.url;
   const c = await caches.open(RESIM);
@@ -413,30 +430,44 @@ async function resim(e) {
 }
 
 // İş 129: telefona indirilen en büyük kopyalar IndexedDB'de (atlas-devasa · g; js/devasaOnbellek.js ile aynı)
-function devasaDepodan(url) {
-  return new Promise((coz) => {
+let depoSozu = null;
+function depoAc() {
+  depoSozu ||= new Promise((coz, reddet) => {
     const r = indexedDB.open('atlas-devasa', 1);
     r.onupgradeneeded = () => {
       if (!r.result.objectStoreNames.contains('g')) r.result.createObjectStore('g');
     };
-    r.onerror = () => coz(null);
-    r.onblocked = () => coz(null);
+    r.onerror = () => reddet(r.error);
+    r.onblocked = () => reddet(new Error('kilitli'));
     r.onsuccess = () => {
-      const db = r.result;
-      try {
-        const g = db.transaction('g', 'readonly').objectStore('g').get(url);
-        g.onsuccess = () => (db.close(), coz(g.result || null));
-        g.onerror = () => (db.close(), coz(null));
-      } catch {
-        db.close();
-        coz(null);
-      }
+      r.result.onversionchange = () => (r.result.close(), (depoSozu = null));
+      r.result.onclose = () => (depoSozu = null);
+      coz(r.result);
     };
-  }).then((v) => {
-    if (!v) return null;
-    const blob = v instanceof Blob ? v : v.b ? new Blob([v.b], { type: v.t || 'image/jpeg' }) : null;
-    return blob && new Response(blob, { status: 200, headers: { 'Content-Type': blob.type || 'image/jpeg', 'Content-Length': String(blob.size) } });
   });
+  depoSozu.catch(() => (depoSozu = null));
+  return depoSozu;
+}
+function devasaDepodan(url) {
+  return depoAc()
+    .then(
+      (db) =>
+        new Promise((coz) => {
+          try {
+            const g = db.transaction('g', 'readonly').objectStore('g').get(url);
+            g.onsuccess = () => coz(g.result || null);
+            g.onerror = () => coz(null);
+          } catch {
+            depoSozu = null;
+            coz(null);
+          }
+        }),
+    )
+    .then((v) => {
+      if (!v) return null;
+      const blob = v instanceof Blob ? v : v.b ? new Blob([v.b], { type: v.t || 'image/jpeg' }) : null;
+      return blob && new Response(blob, { status: 200, headers: { 'Content-Type': blob.type || 'image/jpeg', 'Content-Length': String(blob.size) } });
+    });
 }
 
 async function devasaResim(e) {
