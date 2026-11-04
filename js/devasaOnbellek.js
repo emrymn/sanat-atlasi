@@ -132,7 +132,7 @@ export async function kalicidaMi(url) {
 // telefondaki bütün en büyük kopyaların adresleri; gecerli verilirse listede olmayanlar silinir (kopya, çıkarılan, eski
 // sürüm). İş 127: listede olmayanlar telefondakilerin %20'sinden fazlaysa (liste yanlış hesaplanmış olabilir) hiçbiri
 // silinmez (sonuç: { adresler, silinen, korundu, okunamadi })
-export async function kaliciAdresler(gecerli = null) {
+export async function kaliciAdresler(gecerli = null, { sil = true } = {}) {
   await eskileriTasi();
   const adresler = new Set();
   const disarida = [];
@@ -148,8 +148,8 @@ export async function kaliciAdresler(gecerli = null) {
   }
   const toplam = adresler.size + disarida.length;
   const korundu = disarida.length > Math.max(20, toplam * 0.2);
-  if (!korundu) for (const u of disarida) await depo.sil(u).catch(() => {});
-  return { adresler, silinen: korundu ? 0 : disarida.length, korundu: korundu ? disarida.length : 0, okunamadi };
+  if (!korundu && sil) for (const u of disarida) await depo.sil(u).catch(() => {});
+  return { adresler, silinen: korundu || !sil ? 0 : disarida.length, korundu: korundu ? disarida.length : 0, okunamadi };
 }
 
 export async function kaliciSil() {
@@ -160,7 +160,11 @@ export async function kaliciSil() {
 // İş 128: inenlerin kendi defteri (localStorage; yalnız adlar). Depo okunamaz ya da eksik okunursa indirme baştan
 // başlamasın: defterdekiler birkaç örnekle doğrulanır, tutuyorsa inmiş sayılır.
 const DEFTER = 'sanat-atlasi:devasa-inen';
-const adOf = (u) => (String(u).match(/\/d\/([0-9a-f]{12,}(?:-[0-9a-f]{4,16})?)\.jpg/) || [])[1];
+// en büyük kopyalar yalnız adla (eski defterlerle aynı), 1280'likler (İş 130) "b:" önekiyle
+const adOf = (u) => {
+  const m = String(u).match(/\/([db])\/([0-9a-f]{12,}(?:-[0-9a-f]{4,16})?)\.jpg/);
+  return m ? (m[1] === 'd' ? m[2] : `b:${m[2]}`) : undefined;
+};
 export function defterOku() {
   try {
     const l = JSON.parse(globalThis.localStorage.getItem(DEFTER) || '[]');
@@ -186,8 +190,9 @@ export function defterSil() {
 export const defterAdi = adOf;
 
 // telefondakiler: depoda sayılanlar + defterde olup sayılmayanlar (örnekle doğrulanırsa). Dönen: adres kümesi
-export async function telefondaOlanlar(gecerli) {
-  const s = await kaliciAdresler(gecerli);
+// sil: false iken listede olmayanlar silinmez (liste eksik hesaplandıysa: gösterilen görseller bilinmiyor)
+export async function telefondaOlanlar(gecerli, { sil = true } = {}) {
+  const s = await kaliciAdresler(gecerli, { sil });
   const defter = defterOku();
   const sayilan = new Set([...s.adresler].map(adOf));
   const eksik = (gecerli ? [...gecerli] : []).filter((u) => defter.has(adOf(u)) && !s.adresler.has(u));

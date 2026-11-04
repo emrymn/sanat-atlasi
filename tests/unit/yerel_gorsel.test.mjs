@@ -130,8 +130,21 @@ test('İş 121: indirme listesi gösterilen görsellerle süzülür; aynı tablo
     }
   }
   assert.ok(denetlenen > 50, String(denetlenen));
+  // İş 130: en büyük kopyası olmayan gösterilen görsellerin 1280'likleri de telefona iner (en büyüklerden sonra)
+  const { telefonAdresleri, telefonToplamBayt, suzulduMu } = await import('../../js/gorsel.js');
+  const tel = telefonAdresleri();
+  const bler = tel.slice(suzulmus.length);
+  assert.deepEqual(tel.slice(0, suzulmus.length), suzulmus);
+  assert.ok(bler.length > 1000 && bler.every((u) => /\/b\/[0-9a-f]{16}(-[0-9a-f]{8})?\.jpg$/.test(u)), String(bler.length));
+  assert.equal(new Set(tel).size, tel.length);
+  const bAdlar = new Set(bler.map((u) => u.match(/\/b\/([0-9a-f]{16})/)[1]));
+  assert.ok(![...bAdlar].some((a) => adlar.has(a))); // en büyük kopyası olan 1280'liğiyle ayrıca inmez
+  assert.ok(telefonToplamBayt() > devasaToplamBayt());
+  assert.ok(suzulduMu());
   devasaSuz(null);
   assert.equal(devasaAdresleri().length, hepsi);
+  assert.equal(telefonAdresleri().length, hepsi);
+  assert.ok(!suzulduMu());
   uzakGorselleriAyarla(null);
   yerelGorselleriAyarla(null);
   kopyalariAyarla(null);

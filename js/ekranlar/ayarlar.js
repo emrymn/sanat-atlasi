@@ -1,7 +1,7 @@
 // Ayarlar: günlük kart, tema, çevrimdışı görsel indirme, yedekle ve geri yükle.
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { gosterilenGorseller } from '../eserler.js';
-import { devasaAdresleri, devasaToplamBayt, devasaSuz } from '../gorsel.js';
+import { devasaAdresleri, devasaSuz, suzulduMu, telefonAdresleri, telefonToplamBayt } from '../gorsel.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
@@ -83,7 +83,7 @@ export function ayarlarSayfasi() {
         <button class="dugme ince" type="button" data-gunun-degistir data-test="gunun-degistir">Başka bir sanatçı getir</button>
         <p class="mesaj" id="gunun-mesaj" aria-live="polite"></p>
       </div>
-      ${devasaAdresleri().length ? `<div class="ayar" data-test="devasa-indir"><b>En büyük kopyaları telefona indir</b>
+      ${telefonAdresleri().length ? `<div class="ayar" data-test="devasa-indir"><b>En büyük kopyaları telefona indir</b>
         <p id="devasa-bilgi">Hesaplanıyor…</p>
         <button class="dugme" type="button" data-devasa-indir>İndir</button>
         <button class="dugme ince" type="button" data-devasa-durdur hidden>Durdur</button>
@@ -162,7 +162,8 @@ const SAYI = 'sanat-atlasi:devasa-sayi';
 async function telefondakiler() {
   await devasaHazirla();
   try {
-    const { adresler, korundu } = await telefondaOlanlar(new Set(devasaAdresleri()));
+    // İş 130: gösterilenler hesaplanamadıysa liste 1280'likleri içermez: telefondakiler silinmesin
+    const { adresler, korundu } = await telefondaOlanlar(new Set(telefonAdresleri()), { sil: suzulduMu() });
     let once = 0;
     try {
       once = Number(localStorage.getItem(SAYI)) || 0;
@@ -181,13 +182,22 @@ async function telefondakiler() {
 async function devasaBilgisi() {
   const el = document.getElementById('devasa-bilgi');
   if (!el) return;
-  const hepsi = devasaAdresleri();
-  const var_ = await telefondakiler();
+  const var_ = await telefondakiler(); // önce: gösterilen görseller hesaplanır (liste ondan sonra doğru)
+  const hepsi = telefonAdresleri();
   const n = hepsi.filter((u) => var_.has(u)).length;
-  const toplam = devasaToplamBayt();
-  el.textContent = `${hepsi.length} eserin 4096 piksele kadar en yüksek kalitedeki hali${toplam ? ` · toplam ${gb(toplam)} GB` : ''}. Telefonda: ${n} / ${hepsi.length}. İnince görüntüleyicide internet olmadan da en büyük hali açılır. Wi-Fi’de indir. Telefonu yormamak için ${PARCA}’erlik parçalar hâlinde iner; her parçadan sonra uygulama (Ayarlar açıksa) kendini yenileyip sıradakine geçer. Kapatırsan, bir dahaki açışında kaldığı yerden kendiliğinden sürer (iPhone kapalı uygulamanın indirmesine izin vermiyor).`;
+  const toplam = telefonToplamBayt();
+  const nd = devasaAdresleri().length;
+  const ne = `${nd} eserin 4096 piksele kadar en yüksek kalitedeki hali${hepsi.length > nd ? `, daha büyüğü olmayan ${hepsi.length - nd} eserin 1280 piksellik hali` : ''}`;
+  // İş 130 (Emre: "hepsi indikten sonra indirme tuşu kalksın"): hepsi telefondaysa İndir düğmesi kalkar
+  const hepsiVar = hepsi.length > 0 && n >= hepsi.length;
+  el.textContent = hepsiVar
+    ? `Hepsi telefonda: ${hepsi.length} görsel (${ne})${toplam ? ` · ${gb(toplam)} GB` : ''}. Görüntüleyicide internet olmadan da en büyük hali açılır.`
+    : `${ne}${toplam ? ` · toplam ${gb(toplam)} GB` : ''}. Telefonda: ${n} / ${hepsi.length}. İnince görüntüleyicide internet olmadan da en büyük hali açılır. Wi-Fi’de indir. Telefonu yormamak için ${PARCA}’erlik parçalar hâlinde iner; her parçadan sonra uygulama (Ayarlar açıksa) kendini yenileyip sıradakine geçer. Kapatırsan, bir dahaki açışında kaldığı yerden kendiliğinden sürer (iPhone kapalı uygulamanın indirmesine izin vermiyor).`;
+  const suruyor = !!(d.devasaIndirme && !d.devasaIndirme.bitti);
+  const indir = ekran.querySelector('[data-devasa-indir]');
+  if (indir) indir.hidden = hepsiVar && !suruyor;
   const sil = ekran.querySelector('[data-devasa-sil]');
-  if (sil) sil.hidden = !n || !!(d.devasaIndirme && !d.devasaIndirme.bitti);
+  if (sil) sil.hidden = !n || suruyor;
   if (d.devasaIndirme) devasaGoster();
   // İş 124: parça başka sayfadayken bittiyse Ayarlar'a dönünce yenilenip sıradaki parçaya geçilir
   if (d.devasaIndirme && d.devasaIndirme.bitti && d.devasaIndirme.parcaBitti && !d.devasaIndirme.yenileniyor) {
@@ -214,7 +224,7 @@ function devasaGoster() {
   dugme('[data-devasa-sil]').hidden = suruyor;
   if (!mesaj) return;
   mesaj.className = 'mesaj' + (i.yerYok || i.inemedi || (i.bitti && i.hata) ? ' hata' : i.bitti ? ' tamam' : '');
-  const toplam = devasaToplamBayt();
+  const toplam = telefonToplamBayt();
   const kac = toplam && i.hepsi ? ` · ~${gb((toplam * i.biten) / i.hepsi + (toplam * i.onceden) / i.hepsi)} / ${gb(toplam)} GB` : '';
   if (i.yerYok) mesaj.textContent = `Telefonda yer kalmadı: ${i.biten - i.hata} görsel indirildi. Yer açıp yeniden bas, kaldığı yerden sürer.`;
   else if (i.bitti && i.durduruldu) mesaj.textContent = `Durduruldu: ${i.biten - i.hata} görsel indirildi. Yeniden basınca kaldığı yerden sürer.`;
@@ -271,7 +281,7 @@ export async function devasaSurdur() {
   } catch {
     var_ = false;
   }
-  if (var_ && devasaAdresleri().length && 'indexedDB' in window && !(d.devasaIndirme && !d.devasaIndirme.bitti)) devasaIndir({ kendiliginden: true }).catch(() => {});
+  if (var_ && telefonAdresleri().length && 'indexedDB' in window && !(d.devasaIndirme && !d.devasaIndirme.bitti)) devasaIndir({ kendiliginden: true }).catch(() => {});
 }
 
 async function devasaIndir({ kendiliginden = false } = {}) {
@@ -285,8 +295,8 @@ async function devasaIndir({ kendiliginden = false } = {}) {
     return;
   }
   surdurIsareti(true);
-  const hepsi = devasaAdresleri();
   const var_ = await telefondakiler();
+  const hepsi = telefonAdresleri();
   // İş 124: bu açılışta yalnız bir parça (PARCA görsel); bitince Ayarlar açıksa uygulama yenilenip sıradaki parça
   // kendiliğinden başlar (bellek sıfırlanır), değilse bir dahaki açılışta sürer
   const kalan = hepsi.filter((u) => !var_.has(u));

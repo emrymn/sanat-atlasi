@@ -88,17 +88,35 @@ const buyukYolu = (ad) => `${uzak.adres}/b/${ad}${uzak.bSurumler[ad] ? `-${uzak.
 // İş 121: gosterilen (yerel anahtarlar; eserler.js gosterilenGorseller) verilirse yalnız uygulamada gösterilen
 // görsellerinkiler (aynı tablonun kopya kaydı ve çıkarılan görseller inmez); toplam boy da o oranda.
 let suzulmus = null;
+let bSuzulmus = new Set();
 export function devasaSuz(gosterilen) {
+  bSuzulmus = new Set();
   if (!gosterilen) return (suzulmus = null);
   const adlar = new Set();
-  for (const a of gosterilen) if (yerel[a] && uzak.devasa.has(yerel[a])) adlar.add(yerel[a]);
+  for (const a of gosterilen) {
+    if (!yerel[a]) continue;
+    if (uzak.devasa.has(yerel[a])) adlar.add(yerel[a]);
+    else if (uzak.buyuk) bSuzulmus.add(yerel[a]);
+  }
   suzulmus = adlar;
 }
+export const suzulduMu = () => suzulmus !== null;
 export function devasaAdresleri() {
   return [...(suzulmus || uzak.devasa)].map(devasaYolu);
 }
 export function devasaToplamBayt() {
   return suzulmus && uzak.devasa.size ? Math.round((uzak.bayt * suzulmus.size) / uzak.devasa.size) : uzak.bayt;
+}
+// İş 130 (Emre: "7k görsel yok muydu", "ekle"): en büyük kopyası olmayan (kaynağı 1280'den büyük olmayan) gösterilen
+// görsellerin en büyük hâli 1280'liğin kendisi: onlar da telefona iner. Sırada en büyük kopyalardan sonra gelir (inmekte
+// olan parçaların sırası bozulmasın). 1280'lik başına ~330 KB (R2'deki örneklerin ortalaması).
+export const B_ORTALAMA_BAYT = 330 * 1024;
+export function telefonAdresleri() {
+  return [...devasaAdresleri(), ...[...bSuzulmus].map(buyukYolu)];
+}
+export function telefonToplamBayt() {
+  const d = devasaToplamBayt();
+  return d || bSuzulmus.size ? d + bSuzulmus.size * B_ORTALAMA_BAYT : 0;
 }
 // En büyük kopyanın adresi (görüntüleyici); yoksa ''
 export function devasaUrl(g) {
