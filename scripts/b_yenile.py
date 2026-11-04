@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Küçük kalmış 1280 px kopyaları en büyük kopyadan yeniden üretir (İş 112).
+"""Küçük kalmış 1280 px kopyaları en büyük kopyadan yeniden üretir (İş 118).
 
 gorseller/b/<ad>.jpg uzun kenarı 1280 olmalı; ama kaynak küçük verdiyse (The Met'in "web-large" ~600 px, Commons'ta
 küçük küçük resim) o boyda kalmıştı: R2'deki 7028 kopyanın 2648'i 1216 px'ten küçük, 1560'ının en büyük kopyası

@@ -40,6 +40,9 @@ test('İş 58: Cloudflare R2 — en büyük kopya yalnız listede olana; 1280\'l
   assert.equal(devasaKaynagi({ k: 'met', u: 'x' }), '');
   uzakGorselleriAyarla({ adres: r, devasa: [], muze: { abc123: 'met' } });
   assert.equal(devasaKaynagi(c), '');
+  // İş 119: Rijksmuseum ve Yale de en büyük kopyanın kaynağı olabilir
+  uzakGorselleriAyarla({ adres: r, devasa: ['abc123'], muze: { abc123: 'rijks' } });
+  assert.equal(devasaKaynagi(c), 'Rijksmuseum');
   uzakGorselleriAyarla({ adres: r, devasa: ['abc123'], muze: { abc123: 'bilinmeyen' } });
   assert.equal(devasaKaynagi(c), '');
   // İş 60: Ayarlar'daki indirme için adresler ve toplam boy
@@ -71,7 +74,7 @@ test('İş 84: daha büyük dosyasıyla yenilenen en büyük kopya sürüm ekli 
   uzakGorselleriAyarla(null);
 });
 
-test('İş 112: en büyük kopyadan yeniden üretilen 1280\'lik sürüm ekli adreste; zinciri bozulmaz', async () => {
+test('İş 118: en büyük kopyadan yeniden üretilen 1280\'lik sürüm ekli adreste; zinciri bozulmaz', async () => {
   const { uzakGorselleriAyarla, ustKopya } = await import('../../js/gorsel.js');
   const c = { k: 'commons', d: 'Örnek dosya.jpg' };
   const r = 'https://gorsel.ornek.ai';
@@ -86,4 +89,51 @@ test('İş 112: en büyük kopyadan yeniden üretilen 1280\'lik sürüm ekli adr
   assert.equal(ustKopya('gorseller/k/def456def456def4.jpg'), `${r}/b/def456def456def4.jpg`);
   uzakGorselleriAyarla(null);
   yerelGorselleriAyarla(null);
+});
+
+// İş 121: en büyük kopyalar yalnız uygulamada gösterilen görseller için iner (kopya kaydın ikinci dosyası ve çıkarılan
+// görseller inmez); gerçek verilerle
+test('İş 121: indirme listesi gösterilen görsellerle süzülür; aynı tablo iki kez inmez', async () => {
+  const { readFileSync } = await import('node:fs');
+  const oku = (f) => JSON.parse(readFileSync(new URL(`../../${f}`, import.meta.url)));
+  const { uzakGorselleriAyarla, devasaSuz, devasaAdresleri, devasaToplamBayt } = await import('../../js/gorsel.js');
+  const { onbellekEseri, kopyalariAyikla, kopyalariAyarla, cikarilanlariAyikla, cikarilanlariAyarla } = await import('../../js/eserler.js');
+  const yer = oku('data/yerel_gorseller.json');
+  const kaynak = oku('data/gorsel_kaynagi.json');
+  yerelGorselleriAyarla(yer.gorseller, yer.buyuk);
+  uzakGorselleriAyarla(kaynak);
+  kopyalariAyarla(oku('data/kopya_eserler.json'));
+  cikarilanlariAyarla(oku('data/cikarilan_gorseller.json'));
+  const ob = oku('data/eserler_onbellek.json').sanatcilar;
+  // js/eserler.js gosterilenGorseller ile aynı hesap (o, önbelleği fetch ile okur)
+  const gosterilen = new Set();
+  for (const [sid, v] of Object.entries(ob))
+    for (const e of kopyalariAyikla(sid, cikarilanlariAyikla(v.eserler.map(onbellekEseri)))) for (const g of e.gorseller) gosterilen.add(`${g.k}:${g.d || g.i || g.u || ''}`);
+  const hepsi = devasaAdresleri().length;
+  devasaSuz(gosterilen);
+  const suzulmus = devasaAdresleri();
+  assert.ok(suzulmus.length < hepsi && suzulmus.length > hepsi * 0.9, `${suzulmus.length} / ${hepsi}`);
+  assert.equal(new Set(suzulmus).size, suzulmus.length);
+  assert.ok(devasaToplamBayt() < kaynak.devasa_bayt);
+  // gizlenen kopya kaydın görseli listede yok (kalan kaydınki varsa o iner)
+  const adlar = new Set(suzulmus.map((u) => u.match(/\/d\/([0-9a-f]{16})/)[1]));
+  const yerelAd = (g) => yer.gorseller[`${g.k}:${g.d || g.i || g.u || ''}`];
+  let denetlenen = 0;
+  for (const [sid, ciftler] of Object.entries(oku('data/kopya_eserler.json').sanatcilar)) {
+    const es = new Map((ob[sid]?.eserler || []).map((e) => [onbellekEseri(e).anahtar, e]));
+    for (const c of ciftler) {
+      const sil = es.get(c.sil);
+      const kal = es.get(c.kalan);
+      if (!sil || !kal) continue;
+      const kalanAdlar = new Set(kal.gorseller.map(yerelAd));
+      for (const g of sil.gorseller) if (yerelAd(g) && !kalanAdlar.has(yerelAd(g))) (assert.ok(!adlar.has(yerelAd(g)), c.sil_baslik), denetlenen++);
+    }
+  }
+  assert.ok(denetlenen > 50, String(denetlenen));
+  devasaSuz(null);
+  assert.equal(devasaAdresleri().length, hepsi);
+  uzakGorselleriAyarla(null);
+  yerelGorselleriAyarla(null);
+  kopyalariAyarla(null);
+  cikarilanlariAyarla(null);
 });

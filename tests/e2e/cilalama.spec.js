@@ -383,6 +383,56 @@ test('görüntüleyici: en büyük kopya R2\'den arkada iner ve yerine geçer; y
   expect(await page.evaluate(async (u) => !!(await (await caches.open('atlas-resim-2')).match(u)), istenen[0])).toBe(false);
 });
 
+// İş 120 (Emre'nin hata günlüğü: "indirirken çöküyor"; "uygulama kapalıyken de indirsin"): indirme sürerken Ayarlar'dan
+// geri çıkılınca (sayfa kapanma katmanındayken bir görsel bitince düğme bulunamıyor, indirme duruyordu) indirme sürer ve
+// hata vermez; uygulama kapatılıp açılınca (yeniden yükleme) kaldığı yerden kendiliğinden sürer
+test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden açılınca kendiliğinden sürer', async ({ page, context }) => {
+  await agiHazirla(context);
+  await context.addInitScript(() => (window.__atlasGecis = true));
+  const hatalar = [];
+  page.on('pageerror', (e) => hatalar.push(e.message));
+  let adlar = [];
+  await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) =>
+    r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar, devasa_bayt: 3e9 }) }),
+  );
+  let bekle = 250;
+  await context.route(/pub-deneme\.r2\.dev\/d\//, async (r) => {
+    await new Promise((c) => setTimeout(c, bekle));
+    return r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)), headers: { 'access-control-allow-origin': '*' } });
+  });
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
+  adlar = await page.locator('.eser img').evaluateAll((l) => l.slice(0, 12).map((i) => (i.getAttribute('src').match(/([0-9a-f]{16})\.jpg/) || [])[1]).filter(Boolean));
+  expect(adlar.length).toBeGreaterThanOrEqual(8);
+  const n = adlar.length;
+  const telefonda = () => page.evaluate(async () => (await (await caches.open('atlas-devasa-kalici')).keys()).length);
+  // Defter → Ayarlar (ileri), indir, hemen geri: Ayarlar kapanma katmanındayken görseller biter
+  await page.goto('./#/ilerleme');
+  await page.reload();
+  await page.locator('.ust').first().waitFor();
+  await page.waitForTimeout(500);
+  await page.evaluate(() => (location.hash = '#/ayarlar'));
+  await page.locator('[data-devasa-indir]').waitFor();
+  await page.waitForTimeout(1000);
+  await page.locator('[data-devasa-indir]').click();
+  await page.waitForTimeout(150);
+  await page.locator('[data-geri]').first().click();
+  await expect(page).toHaveURL(/#\/ilerleme$/);
+  await expect.poll(telefonda, { timeout: 15000 }).toBeGreaterThanOrEqual(3);
+  expect(hatalar).toEqual([]);
+  // indirme sürerken uygulama kapanır (yeniden yükleme): açılınca kendiliğinden kaldığı yerden sürer
+  bekle = 600;
+  const once = await telefonda();
+  expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBe('1');
+  await page.reload();
+  await expect.poll(telefonda, { timeout: 30000 }).toBe(n);
+  expect(once).toBeLessThan(n);
+  await expect.poll(() => page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBeNull();
+  await page.evaluate(() => (location.hash = '#/ayarlar'));
+  await expect(page.locator('[data-test="devasa-indir"]')).toContainText(`Telefonda: ${n} / ${n}`);
+  expect(hatalar).toEqual([]);
+});
+
 // İş 60: en büyük kopyalar Ayarlar'dan telefona; kalıcı önbellekte durur, internet olmadan görüntüleyicide açılır
 test('Ayarlar: en büyük kopyalar telefona iner, kaldığı yerden sürer, internetsiz açılır, silinebilir', async ({ page, context }) => {
   await agiHazirla(context);

@@ -3,7 +3,7 @@
 
   gorseller_devasa/<ad>.jpg → <kova>/d/<ad>.jpg   (scripts/devasa_indir.py; en büyük, 4096 px)
   gorseller/b/<ad>.jpg      → <kova>/b/<ad>.jpg   (1280 px; kartlar ve görüntüleyicinin ilk hali)
-  İş 112: en büyük kopyadan yeniden üretilen 1280'likler (data/b_yenilenen.json) → <kova>/b/<ad>-<sürüm>.jpg
+  İş 118: en büyük kopyadan yeniden üretilen 1280'likler (data/b_yenilenen.json) → <kova>/b/<ad>-<sürüm>.jpg
 
 İş 84: daha büyük dosyasıyla yenilenen görseller (data/gorsel_iyilestirme.json) kovaya sürüm ekli adla yüklenir:
 d/<ad>-<içeriğin md5'inin ilk 8 hanesi>.jpg. Eski adres "hiç değişmez" diye önbelleğe alındığı ve telefona indirildiği
@@ -103,9 +103,12 @@ def main():
         print(f'{len(kucuk)} görselin özgünü küçük ({EN_AZ_DEVASA} px altı): en büyük kopyası yok sayılıyor (1280\'liği yeter)', flush=True)
     iy_yolu = KOK / 'data/gorsel_iyilestirme.json'
     iyilesen = set(json.loads(iy_yolu.read_text()).get('gorseller', {})) if iy_yolu.exists() else set()
+    # İş 119: müze taramasıyla değişen en büyük kopyalar (scripts/muze_tercih.py) da sürüm ekli adla
+    mt_yolu = KOK / 'data/muze_tercih.json'
+    iyilesen |= set(json.loads(mt_yolu.read_text()).get('adlar', {})) if mt_yolu.exists() else set()
     surumler = {p.stem: hashlib.md5(p.read_bytes()).hexdigest()[:8] for p in devasalar if p not in kucuk and p.stem in iyilesen}
     isler = [(p, f'd/{p.stem}-{surumler[p.stem]}.jpg' if p.stem in surumler else f'd/{p.name}') for p in devasalar if p not in kucuk]
-    # İş 112: en büyük kopyadan yeniden üretilen 1280'likler (scripts/b_yenile.py) de sürüm ekli adla: b/<ad>-<sürüm>.jpg
+    # İş 118: en büyük kopyadan yeniden üretilen 1280'likler (scripts/b_yenile.py) de sürüm ekli adla: b/<ad>-<sürüm>.jpg
     by_yolu = KOK / 'data/b_yenilenen.json'
     b_yenilenen = set(json.loads(by_yolu.read_text()).get('adlar', [])) if by_yolu.exists() else set()
     b_dosyalar = sorted((KOK / 'gorseller/b').glob('*.jpg'))

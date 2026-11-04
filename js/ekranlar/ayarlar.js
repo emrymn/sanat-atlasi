@@ -1,7 +1,7 @@
 // Ayarlar: günlük kart, tema, çevrimdışı görsel indirme, yedekle ve geri yükle.
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
-import { sanatciEserleri, pekistirmeHavuzu, TEST_HAVUZU } from '../eserler.js';
-import { gorselUrl, secilenGorsel, devasaAdresleri, devasaToplamBayt } from '../gorsel.js';
+import { sanatciEserleri, pekistirmeHavuzu, TEST_HAVUZU, gosterilenGorseller } from '../eserler.js';
+import { gorselUrl, secilenGorsel, devasaAdresleri, devasaToplamBayt, devasaSuz } from '../gorsel.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
@@ -222,7 +222,20 @@ const gb = (b) => (b / 1e9).toLocaleString('tr', { maximumFractionDigits: 1, min
 
 // İş 84: telefondaki en büyük kopyalar. Listede olmayanlar (daha büyük dosyasıyla yenilenip yeni adres alanların eski
 // kopyaları ya da artık kullanılmayanlar) silinir: yer kaplamasın; yenileri "indir"le gelir
+// İş 121: indirme listesi yalnız uygulamada gösterilen görsellerin en büyük kopyaları (bir kez hesaplanır); telefonda
+// listede olmayan (kopya kaydın ikinci dosyası, çıkarılan görsel, eski sürüm) kopyalar telefondakiler'de silinir
+let devasaSuzuldu = null;
+function devasaHazirla() {
+  devasaSuzuldu ||= gosterilenGorseller()
+    .then(devasaSuz)
+    .catch(() => {
+      devasaSuzuldu = null;
+    });
+  return devasaSuzuldu;
+}
+
 async function telefondakiler() {
+  await devasaHazirla();
   try {
     if (!('caches' in window) || !(await caches.has(KALICI))) return new Set();
     const c = await caches.open(KALICI);
@@ -246,7 +259,7 @@ async function devasaBilgisi() {
   const var_ = await telefondakiler();
   const n = hepsi.filter((u) => var_.has(u)).length;
   const toplam = devasaToplamBayt();
-  el.textContent = `${hepsi.length} eserin 4096 piksele kadar en yüksek kalitedeki hali${toplam ? ` · toplam ${gb(toplam)} GB` : ''}. Telefonda: ${n} / ${hepsi.length}. İnince görüntüleyicide internet olmadan da en büyük hali açılır. Wi-Fi’de indir, uygulama açık kalsın; yarıda kalırsa yeniden bas, kaldığı yerden sürer.`;
+  el.textContent = `${hepsi.length} eserin 4096 piksele kadar en yüksek kalitedeki hali${toplam ? ` · toplam ${gb(toplam)} GB` : ''}. Telefonda: ${n} / ${hepsi.length}. İnince görüntüleyicide internet olmadan da en büyük hali açılır. Wi-Fi’de indir. Uygulama açıkken arkada iner, başka sayfalarda gezebilirsin; kapatırsan, bir dahaki açışında kaldığı yerden kendiliğinden sürer (iPhone kapalı uygulamanın indirmesine izin vermiyor).`;
   const sil = ekran.querySelector('[data-devasa-sil]');
   if (sil) sil.hidden = !n || !!(d.devasaIndirme && !d.devasaIndirme.bitti);
   if (d.devasaIndirme) devasaGoster();
@@ -261,9 +274,14 @@ function devasaGoster() {
   cubuk.hidden = false;
   cubuk.max = i.toplam || 1;
   cubuk.value = i.biten;
-  ekran.querySelector('[data-devasa-indir]').disabled = suruyor;
-  ekran.querySelector('[data-devasa-durdur]').hidden = !suruyor;
-  ekran.querySelector('[data-devasa-sil]').hidden = suruyor;
+  // İş 120: indirme sürerken başka sayfaya geçilince (ya da Ayarlar kenardan kaydırılırken katmandayken) düğmeler
+  // ekranda değil: çubuğun bulunduğu sayfada aranır, yoksa atlanır (hata indirmeyi yarıda kesip "sürüyor"da bırakıyordu)
+  const kok = cubuk.closest('main, .sayfa-katman') || document;
+  const dugme = (s) => kok.querySelector(s) || { hidden: false, disabled: false };
+  dugme('[data-devasa-indir]').disabled = suruyor;
+  dugme('[data-devasa-durdur]').hidden = !suruyor;
+  dugme('[data-devasa-sil]').hidden = suruyor;
+  if (!mesaj) return;
   mesaj.className = 'mesaj' + (i.yerYok || (i.bitti && i.hata) ? ' hata' : i.bitti ? ' tamam' : '');
   const toplam = devasaToplamBayt();
   const kac = toplam && i.hepsi ? ` · ~${gb((toplam * i.biten) / i.hepsi + (toplam * i.onceden) / i.hepsi)} / ${gb(toplam)} GB` : '';
@@ -273,24 +291,56 @@ function devasaGoster() {
   else mesaj.textContent = `${i.biten} / ${i.toplam}${kac}`;
 }
 
-async function devasaIndir() {
+// İş 120 (Emre: "uygulama kapalıyken de indirsin"): iPhone ana ekran uygulamalarına kapalıyken indirme izni vermiyor
+// (Safari'de Background Fetch yok; uygulama kapanınca ya da arka planda kalınca iş durur). Yerine: başlatılan indirme
+// yarıda kalırsa (uygulama kapandı) bir sonraki açılışta kendiliğinden kaldığı yerden sürer; başka sayfalarda gezerken
+// de arkada iner. İşaret localStorage'da; indirme biter, durdurulur ya da silinirse kalkar.
+const SURDUR = 'sanat-atlasi:devasa-surdur';
+const surdurIsareti = (v) => {
+  try {
+    if (v) localStorage.setItem(SURDUR, '1');
+    else localStorage.removeItem(SURDUR);
+  } catch {
+    /* depo kapalı */
+  }
+};
+export async function devasaSurdur() {
+  await devasaHazirla();
+  let var_ = false;
+  try {
+    var_ = localStorage.getItem(SURDUR) === '1';
+  } catch {
+    var_ = false;
+  }
+  if (var_ && devasaAdresleri().length && navigator.serviceWorker?.controller && !(d.devasaIndirme && !d.devasaIndirme.bitti)) devasaIndir({ kendiliginden: true }).catch(() => {});
+}
+
+async function devasaIndir({ kendiliginden = false } = {}) {
   if (d.devasaIndirme && !d.devasaIndirme.bitti) return;
   const m = document.getElementById('devasa-mesaj');
   if (!('serviceWorker' in navigator) || !navigator.serviceWorker.controller) {
-    m.className = 'mesaj hata';
-    m.textContent = 'Çevrimdışı önbellek henüz hazır değil. Uygulamayı kapatıp yeniden açtıktan sonra tekrar dene.';
+    if (m) {
+      m.className = 'mesaj hata';
+      m.textContent = 'Çevrimdışı önbellek henüz hazır değil. Uygulamayı kapatıp yeniden açtıktan sonra tekrar dene.';
+    }
     return;
   }
+  surdurIsareti(true);
   const hepsi = devasaAdresleri();
   const var_ = await telefondakiler();
   const urller = hepsi.filter((u) => !var_.has(u));
-  const i = (d.devasaIndirme = { toplam: urller.length, hepsi: hepsi.length, onceden: hepsi.length - urller.length, biten: 0, hata: 0, bitti: false });
-  devasaGoster();
-  // iOS büyük veriyi "kalıcı" isteyince daha zor siler; ekran kararınca indirme durur: açık tutulur (destekleniyorsa)
+  const i = (d.devasaIndirme = { toplam: urller.length, hepsi: hepsi.length, onceden: hepsi.length - urller.length, biten: 0, hata: 0, bitti: false, kendiliginden });
+  try {
+    devasaGoster();
+  } catch {
+    /* ekran değişti */
+  }
+  // iOS büyük veriyi "kalıcı" isteyince daha zor siler; ekran kararınca indirme durur: açık tutulur (destekleniyorsa;
+  // kendiliğinden sürerken ekran açık tutulmaz)
   navigator.storage?.persist?.().catch(() => {});
   let kilit = null;
   try {
-    kilit = await navigator.wakeLock?.request('screen');
+    kilit = kendiliginden ? null : await navigator.wakeLock?.request('screen');
   } catch (e) {
     kilit = null;
   }
@@ -306,20 +356,34 @@ async function devasaIndir() {
         i.hata++;
       }
       i.biten++;
-      devasaGoster();
+      goster();
     }
   };
-  await Promise.all([isci(), isci(), isci()]);
-  i.durduruldu = !!i.durdur;
-  i.bitti = true;
-  kilit?.release?.().catch(() => {});
-  devasaGoster();
-  devasaBilgisi();
+  // ekranı güncellemekteki bir hata indirmeyi durdurmasın
+  const goster = () => {
+    try {
+      devasaGoster();
+    } catch (e) {
+      /* ekran değişti */
+    }
+  };
+  try {
+    // kendiliğinden sürerken iki işçi: uygulamayı kullanırken görseller yavaşlamasın
+    await Promise.all(kendiliginden ? [isci(), isci()] : [isci(), isci(), isci()]);
+  } finally {
+    i.durduruldu = !!i.durdur;
+    i.bitti = true;
+    surdurIsareti(false); // bitti, durduruldu ya da yer kalmadı (uygulama kapanınca buraya gelinmez: işaret kalır)
+    kilit?.release?.().catch(() => {});
+    goster();
+    devasaBilgisi().catch(() => {});
+  }
 }
 
 async function devasaSil() {
   if (!confirm('En büyük kopyalar telefondan silinsin mi? Görüntüleyici internet varken yine indirir.')) return;
   await caches.delete(KALICI).catch(() => {});
+  surdurIsareti(false);
   d.devasaIndirme = null;
   const m = document.getElementById('devasa-mesaj');
   const cubuk = document.getElementById('devasa-cubuk');
