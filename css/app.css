@@ -87,6 +87,34 @@
   --vurgu-rgb: 95, 87, 77;
   color-scheme: light;
 }
+/* Gündüz: müze duvarı alçısı; parlamayan kırık gri-bej zemin, yüzeyler zeminden yalnız bir ton açık */
+:root[data-tema='gunduz'] {
+  --bg: #d8d3ca;
+  --bg-rgb: 216, 211, 202;
+  --surface: #e2ddd5;
+  --border: #bfb8ac;
+  --ink: #1e1a17;
+  --ink-2: #4a433c;
+  --ink-3: #574f47;
+  --ink-soluk: #857d72;
+  --right: #2a6644;
+  --right-ikon: #2a6644;
+  --right-bg: rgba(42, 102, 68, 0.12);
+  --wrong: #9a3726;
+  --wrong-ikon: #9a3726;
+  --wrong-bg: rgba(154, 55, 38, 0.1);
+  --doku: radial-gradient(rgba(30, 26, 23, 0.05) 1px, transparent 1px);
+  --tab-bg: rgba(226, 221, 213, 0.86);
+  --overlay-btn: rgba(216, 211, 202, 0.85);
+  --durum-cubugu: #1e1a17;
+  --vurgu: #4a433c;
+  --vurgu-yazi: #f1ede6;
+  --vurgu-acik: #4a433c;
+  --vurgu-acik-yazi: #f1ede6;
+  --vurgu-koyu: #cbc5ba;
+  --vurgu-rgb: 74, 67, 60;
+  color-scheme: light;
+}
 :root {
   --serif: 'Bodoni Moda', 'Didot', 'Bodoni 72', Georgia, serif;
   --sans: Archivo, system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -3259,6 +3287,10 @@ html.sekmesiz .sekmeler {
 .sahne-yapiskan.bugun-kahraman::after {
   /* yalnızca üstte (etiketler okunsun) ve en altta (isim ve düğme okunsun) hafif koyuluk */
   background: linear-gradient(180deg, rgba(var(--bg-rgb), 0.7) 0%, rgba(var(--bg-rgb), 0) 20%, rgba(var(--bg-rgb), 0) 55%, rgba(var(--bg-rgb), 0.45) 100%);
+}
+/* Gündüz: koyu mürekkepli ad koyu tablolarda kaybolmasın diye alt kısım duvar rengine daha çok açılır */
+:root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman::after {
+  background: linear-gradient(180deg, rgba(var(--bg-rgb), 0.7) 0%, rgba(var(--bg-rgb), 0) 20%, rgba(var(--bg-rgb), 0) 48%, rgba(var(--bg-rgb), 0.82) 76%, rgba(var(--bg-rgb), 0.92) 100%);
 }
 .sahne-isim {
   position: absolute;
@@ -14019,11 +14051,13 @@ a.harita-seviye:active {
   opacity: 0;
 }
 :root[data-tema='sepya'] .imza,
-:root[data-tema='acik'] .imza {
+:root[data-tema='acik'] .imza,
+:root[data-tema='gunduz'] .imza {
   background-image: linear-gradient(100deg, #6e4a14 0%, #a8782a 22%, #8a6420 42%, #d4a64a 50%, #8a6420 58%, #a8782a 78%, #5a3c10 100%);
 }
 :root[data-tema='sepya'] .imza-uc,
-:root[data-tema='acik'] .imza-uc {
+:root[data-tema='acik'] .imza-uc,
+:root[data-tema='gunduz'] .imza-uc {
   background: radial-gradient(circle, #fff3d0 0%, #c9973a 40%, rgba(201, 151, 58, 0) 72%);
   box-shadow: 0 0 10px 3px rgba(154, 107, 31, 0.35);
 }
@@ -14084,7 +14118,8 @@ a.harita-seviye:active {
   opacity: 0.7;
 }
 :root[data-tema='sepya'] .portre-arka.yuklendi,
-:root[data-tema='acik'] .portre-arka.yuklendi {
+:root[data-tema='acik'] .portre-arka.yuklendi,
+:root[data-tema='gunduz'] .portre-arka.yuklendi {
   opacity: 0.4;
 }
 .isim-ek {
@@ -14650,7 +14685,8 @@ html.gecis-suruyor {
   backdrop-filter: blur(16px) saturate(1.6);
 }
 :root[data-tema='sepya'] .sekmeler,
-:root[data-tema='acik'] .sekmeler {
+:root[data-tema='acik'] .sekmeler,
+:root[data-tema='gunduz'] .sekmeler {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1) 50%),
     rgba(var(--bg-rgb), 0.5);
@@ -15019,11 +15055,14 @@ img.aninda {
   scale: 0.72;
   transition: scale 0.55s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
+@media (hover: hover) {
 .soru-turu-kart:hover {
   translate: 0 -4px;
   border-color: color-mix(in srgb, var(--kart-rengi) 65%, var(--border));
 }
 .soru-turu-kart:hover::before { scale: 1; }
+.soru-turu-kart:hover .soru-turu-ikon { rotate: 45deg; background: color-mix(in srgb, var(--kart-rengi) 12%, transparent); }
+}
 .soru-turu-no {
   align-self: center;
   font: 400 clamp(56px, 17vw, 100px)/0.8 var(--serif);
@@ -15043,7 +15082,6 @@ img.aninda {
   color: var(--kart-rengi);
   transition: rotate 0.35s ease, background 0.25s ease;
 }
-.soru-turu-kart:hover .soru-turu-ikon { rotate: 45deg; background: color-mix(in srgb, var(--kart-rengi) 12%, transparent); }
 .soru-turu-metin {
   display: flex;
   grid-column: 2 / -1;

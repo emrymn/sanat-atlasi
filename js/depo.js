@@ -12,7 +12,7 @@ import { bildirimlerDogrula } from './bildirim.js';
 export const ANAHTAR = 'sanat-atlasi:ilerleme';
 // 2: "Gece galerisi" teması varsayılan oldu (eski varsayılan Sepya ve kaldırılan Koyu bir kez Gece'ye geçer)
 export const SURUM = 2;
-export const TEMALAR = ['gece', 'sepya', 'acik'];
+export const TEMALAR = ['gece', 'gunduz', 'sepya', 'acik'];
 export const VARSAYILAN_TEMA = 'gece';
 
 export function varsayilanIlerleme(islenen = []) {

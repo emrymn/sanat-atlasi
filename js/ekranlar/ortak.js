@@ -19,8 +19,8 @@ import { eseriBildir } from '../bildirim.js';
 // "Bilmiyorum" cevabının değeri (Ö4): hiçbir sanatçı kimliği ya da akım adıyla çakışmaz
 export const BILMIYORUM = '?';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
-const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
-export const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
+const TEMA_RENK = { gece: '#0B0A0B', gunduz: '#D8D3CA', sepya: '#F1E8D6', acik: '#FBFAF7' };
+export const TEMA_AD = { gece: 'Gece', gunduz: 'Gündüz', sepya: 'Sepya', acik: 'Açık' };
 export const HARFLER = 'ABCD';
 
 // Cevap yaprağındaki kaynak satırı; WikiArt görselinde eser sayfasının bağlantısı da
