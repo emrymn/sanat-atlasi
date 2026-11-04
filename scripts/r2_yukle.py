@@ -171,7 +171,7 @@ def main():
         print(f'Daha büyük dosyasıyla yenilenen {len(surumler)} görsel yeni adla yüklendi (telefon yenisini indirir)')
     if b_surumler:
         print(f"En büyük kopyadan yeniden üretilen {len(b_surumler)} 1280'lik yeni adla yüklendi")
-    print('data/gorsel_kaynagi.json yazıldı: git add data/gorsel_kaynagi.json data/gorsel_iyilestirme.json data/b_yenilenen.json && git commit && git push')
+    print('data/gorsel_kaynagi.json yazıldı: git add data/gorsel_kaynagi.json data/gorsel_iyilestirme.json data/b_yenilenen.json data/muze_tercih.json && git commit && git push')
 
 
 if __name__ == '__main__':
