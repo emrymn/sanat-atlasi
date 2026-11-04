@@ -44,6 +44,7 @@ import { harfUygula, AKIM_HARFLERI } from '../harfler.js';
 import { BOLGELER, bolgeBul } from '../harita.js';
 import { imzaGoster } from '../imza.js';
 import { kunyeGoster } from '../kunye.js';
+import { hareketAz } from '../gecis.js';
 
 // ---------- Başyapıt yakın okumaları ----------
 let basyapitSozu = null;
@@ -87,17 +88,18 @@ export async function basyapitListesi() {
     <p class="bolum-aciklama">${liste.length} yakın okuma: her eserde ne görüldüğü, kompozisyon, anlam ve önemi.</p>
     ${gruplar
       .map(
-        ({ bolge, a, l }, gi) => `<section class="vitrin" style="--akim:${akimRenk(a.ad)};--g:${gi}">
-      <h2 class="vitrin-bas"><span class="vitrin-ad">${kacis(bolge.ad)}<small class="vitrin-yuzyil">${kacis(bolge.yuzyil)}</small></span><span class="vitrin-say">${l.length} eser</span></h2>
+        ({ bolge, a, l }, gi) => `<section class="vitrin" style="--akim:${akimRenk(a.ad)};--g:${gi}" data-gozcu>
+      <header class="bsy-bas"><span class="bsy-no" aria-hidden="true">${ROMA[gi] || gi + 1}</span><h2 class="vitrin-bas"><span class="vitrin-ad">${kacis(bolge.ad)}<small class="vitrin-yuzyil">${kacis(bolge.yuzyil)}</small></span><span class="vitrin-say">${l.length} eser</span></h2><span class="bsy-cizgi" aria-hidden="true"></span></header>
       <ul class="vitrin-serit" data-test="basyapit-listesi">${l
         .map((b, i) => {
           const s = d.harita.get(b.sanatci);
           const kilit = k.has(s.konu) ? '' : '<span class="vitrin-kilit">henüz kursta yok</span>';
-          return `<li style="--i:${i}"><a class="vitrin-kart" href="${basyapitAdresi(b.anahtar)}" style="--akim:${akimRenk(s.akim)}"><span class="vitrin-resim" data-basyapit-kucuk="${kacis(b.anahtar)}"></span><span class="vitrin-yazi">${kilit}<b>${kacis(b.baslik)}</b><span>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}${b.tarih ? ` · ${kacis(b.tarih)}` : ''}</span><small class="vitrin-akim">${kacis(s.akim)}</small></span></a></li>`;
+          return `<li style="--i:${i}"><a class="vitrin-kart" href="${basyapitAdresi(b.anahtar)}" style="--akim:${akimRenk(s.akim)}"><span class="bsy-cerceve">${kilit}<span class="vitrin-resim" data-basyapit-kucuk="${kacis(b.anahtar)}"></span></span><span class="vitrin-yazi"><b>${kacis(b.baslik)}</b><span>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}${b.tarih ? ` · ${kacis(b.tarih)}` : ''}</span><small class="vitrin-akim">${kacis(s.akim)}</small></span></a></li>`;
         })
         .join('')}</ul></section>`,
       )
       .join('')}`);
+  gorunceOynat();
   for (const el of ekran.querySelectorAll('[data-basyapit-kucuk]')) {
     const b = basyapitBul(liste, el.dataset.basyapitKucuk);
     sanatciEserleri(d.harita.get(b.sanatci)).then((eserler) => {
@@ -162,9 +164,29 @@ function konuKartlari(l) {
   return `<ul class="konu-izgara" data-test="konu-listesi">${l
     .map(
       (k, i) =>
-        `<li style="--i:${i % 8}"><a class="konu-kart" href="#/konu/${encodeURIComponent(k.id)}" data-konu-kart="${kacis(k.id)}"><span class="konu-kapak" data-konu-kapak></span><span class="konu-kart-yazi"><b>${kacis(k.ad)}</b><small>${k.eserler.length} eser</small></span></a></li>`,
+        `<li style="--i:${i % 3}" data-gozcu><span class="konu-deste" aria-hidden="true" data-konu-deste></span><a class="konu-kart" href="#/konu/${encodeURIComponent(k.id)}" data-konu-kart="${kacis(k.id)}"><span class="konu-kapak" data-konu-kapak></span><span class="konu-kart-yazi"><b>${kacis(k.ad)}</b><small>${k.eserler.length} eser</small></span></a></li>`,
     )
     .join('')}</ul>`;
+}
+
+const ROMA = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
+
+// Galeri sayfalarındaki giriş hareketi: [data-gozcu] öğesi ekrana girince .gorundu alır, CSS geçişleri oynar.
+// Hareket azaltılmışsa (ve otomatik testlerde) hepsi hemen görünür.
+function gorunceOynat() {
+  const l = [...ekran.querySelectorAll('[data-gozcu]:not(.gorundu)')];
+  if (hareketAz() || typeof IntersectionObserver !== 'function') return l.forEach((el) => el.classList.add('gorundu'));
+  const gozcu = new IntersectionObserver(
+    (girdiler) => {
+      for (const g of girdiler) {
+        if (!g.isIntersecting) continue;
+        g.target.classList.add('gorundu');
+        gozcu.unobserve(g.target);
+      }
+    },
+    { rootMargin: '0px 0px -6% 0px', threshold: 0.05 },
+  );
+  l.forEach((el) => gozcu.observe(el));
 }
 
 function konuGrupSeridi(gruplar, etkin = null) {
@@ -190,11 +212,12 @@ export async function konuListesi() {
     ${konuGrupSeridi(gruplar)}
     ${gruplar
       .map(
-        ({ t, l }) => `<h2 class="konu-grup-bas"><span>${kacis(TUR_AD[t])}</span><small>${l.length}</small></h2>
+        ({ t, l }) => `<section class="konu-grup" data-gozcu><h2 class="konu-grup-bas"><span>${kacis(TUR_AD[t])}</span><small>${l.length}</small></h2>
       ${konuKartlari(l.slice(0, KONU_ONIZLEME))}
-      ${l.length > KONU_ONIZLEME ? `<a class="konu-hepsi" href="#/konular/${t}" data-test="konu-hepsi">${kacis(TUR_AD[t])} · ${l.length} konunun hepsi${ikon('ileri', 18, 1.6)}</a>` : ''}`,
+      ${l.length > KONU_ONIZLEME ? `<a class="konu-hepsi" href="#/konular/${t}" data-test="konu-hepsi">${kacis(TUR_AD[t])} · ${l.length} konunun hepsi${ikon('ileri', 18, 1.6)}</a>` : ''}</section>`,
       )
       .join('')}`);
+  gorunceOynat();
   konuKapaklariniDoldur(liste);
 }
 
@@ -211,6 +234,7 @@ export async function konuGrubu(t) {
     ${konuGrupSeridi(gruplar, t)}
     <p class="bolum-aciklama">${g ? `${g.l.length} konu, en çok işlenenden aza.` : 'Bu grupta konu yok.'}</p>
     ${g ? konuKartlari(g.l) : ''}`);
+  gorunceOynat();
   konuKapaklariniDoldur(liste);
 }
 
@@ -236,7 +260,24 @@ async function konuKapaklariniDoldur(liste) {
     const g = secilenGorsel(e, kotu) || e.gorseller[0];
     const s = d.harita.get(e.sid);
     kutu.innerHTML = `<img loading="lazy" decoding="async" data-kapak="${kacis(e.qid || `${e.sid}|${e.baslik}`)}" alt="${kacis(`${s ? s.ad : ''}, ${eserBaslik(e)}`)}" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}">`;
+    const deste = kart.parentElement && kart.parentElement.querySelector('[data-konu-deste]');
+    if (deste) deste.innerHTML = desteSec(adaylar, e)
+      .map((x) => {
+        const xg = secilenGorsel(x, kotu) || x.gorseller[0];
+        return `<i><img loading="lazy" decoding="async" alt="" src="${kacis(gorselUrl(xg, 300))}" data-yedek="${kacis(gorselYedek(xg))}"></i>`;
+      })
+      .join('');
   }
+}
+
+// Kapağın arkasındaki iki resim: önce başka ressamlardan, yetmezse aynı ressamın başka eserlerinden
+function desteSec(adaylar, kapak) {
+  const kalan = adaylar.filter((x) => x !== kapak);
+  const secim = [];
+  const ressamlar = new Set([kapak.sid]);
+  for (const x of kalan) if (secim.length < 2 && !ressamlar.has(x.sid)) secim.push(x), ressamlar.add(x.sid);
+  for (const x of kalan) if (secim.length < 2 && !secim.includes(x)) secim.push(x);
+  return secim;
 }
 
 export async function konuSayfasi(kodlu) {
