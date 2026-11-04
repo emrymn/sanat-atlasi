@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.64.0';
+const SURUM = '1.64.4';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -11,8 +11,7 @@ const FONT = 'atlas-font';
 // kopyaları (çevrimdışı indirilenler dahil) görsel önbelleğinden itmesin. En son açılan 30 tanesi kalır.
 const DEVASA = 'atlas-devasa';
 const DEVASA_EN_COK = 30;
-// İş 60: Ayarlar'dan bilerek indirilen en büyük kopyalar: sınırsız, kendiliğinden silinmez (Ayarlar'dan silinir)
-const DEVASA_KALICI = 'atlas-devasa-kalici';
+// İş 60/129: Ayarlar'dan bilerek indirilen en büyük kopyalar IndexedDB'de (atlas-devasa); devasaDepodan
 // İş 62: R2 görselleri Emre'nin alan adından (r2.dev bazı mobil operatörlerde engelli); r2.dev de tanınır (testler, eski kayıtlar)
 const R2_ALAN = 'gorsel.noracloud.ai';
 const r2Mi = (u) => u.hostname === R2_ALAN || u.hostname.endsWith('.r2.dev');
@@ -55,6 +54,7 @@ const KABUK_DOSYALARI = [
   'js/gecis.js',
   'js/dokunus.js',
   'js/keskin.js',
+  'js/devasaOnbellek.js',
   'js/gorsel.js',
   'js/gunun.js',
   'js/idb.js',
@@ -170,7 +170,6 @@ self.addEventListener('activate', (e) => {
       const adlar = await caches.keys();
       await Promise.all(adlar.filter((a) => (a.startsWith('atlas-kabuk-') && a !== KABUK) || a === 'atlas-resim').map((a) => caches.delete(a)));
       await tx('readwrite', (st) => st.clear()).catch(() => {}); // eski önbelleğin meta kayıtları
-      await kaliciTasi().catch(() => {});
       await self.clients.claim();
     })(),
   );
@@ -201,10 +200,9 @@ self.addEventListener('fetch', (e) => {
   } else if (url.origin === self.location.origin && url.pathname.includes('/gorseller/')) {
     // uygulamayla yayınlanan görsel kopyaları: sürümden bağımsız görsel önbelleği (LRU)
     e.respondWith(resim(e));
-  } else if (r2Mi(url) && url.pathname.startsWith('/d/') && url.searchParams.get('kalici') === '1') {
-    e.respondWith(devasaKaliciIndir(url));
   } else if (r2Mi(url) && url.pathname.startsWith('/d/')) {
-    e.respondWith(devasaResim(e));
+    // İş 129: önbellek hata verirse görsel yine ağdan gelsin (telefonda Cache Storage bozulmuştu)
+    e.respondWith(devasaResim(e).catch(() => fetch(istek)));
   } else if (r2Mi(url)) {
     // İş 58: Cloudflare R2'deki görsel kopyaları (1280 px)
     e.respondWith(resim(e));
@@ -212,7 +210,9 @@ self.addEventListener('fetch', (e) => {
     // künye (portre, okunuş, IPA) Emre'nin Mac'inde güncellenir: sürüm beklemeden gelsin diye önce ağ, yoksa önbellek
     e.respondWith(onceAg(istek, KABUK));
   } else if (url.origin === self.location.origin) {
-    e.respondWith(kabuk(istek));
+    // İş 122: önbellek okunamazsa (telefonda depolama dolu ya da bozuk) ağdan; yoksa iPhone "WebKit encountered an
+    // internal error" gösterip uygulamayı hiç açmıyordu
+    e.respondWith(kabuk(istek).catch(() => fetch(istek)));
   } else if (url.hostname === 'commons.wikimedia.org' && url.pathname.includes('Special:FilePath')) {
     e.respondWith(resim(e));
   } else if (url.hostname === 'upload.wikimedia.org' || url.hostname === 'thumb.wikimedia.org') {
@@ -407,9 +407,36 @@ async function resim(e) {
   return y;
 }
 
+// İş 129: telefona indirilen en büyük kopyalar IndexedDB'de (atlas-devasa · g; js/devasaOnbellek.js ile aynı)
+function devasaDepodan(url) {
+  return new Promise((coz) => {
+    const r = indexedDB.open('atlas-devasa', 1);
+    r.onupgradeneeded = () => {
+      if (!r.result.objectStoreNames.contains('g')) r.result.createObjectStore('g');
+    };
+    r.onerror = () => coz(null);
+    r.onblocked = () => coz(null);
+    r.onsuccess = () => {
+      const db = r.result;
+      try {
+        const g = db.transaction('g', 'readonly').objectStore('g').get(url);
+        g.onsuccess = () => (db.close(), coz(g.result || null));
+        g.onerror = () => (db.close(), coz(null));
+      } catch {
+        db.close();
+        coz(null);
+      }
+    };
+  }).then((v) => {
+    if (!v) return null;
+    const blob = v instanceof Blob ? v : v.b ? new Blob([v.b], { type: v.t || 'image/jpeg' }) : null;
+    return blob && new Response(blob, { status: 200, headers: { 'Content-Type': blob.type || 'image/jpeg', 'Content-Length': String(blob.size) } });
+  });
+}
+
 async function devasaResim(e) {
-  const anahtar = e.request.url;
-  const kalici = await (await caches.open(DEVASA_KALICI)).match(anahtar);
+  const anahtar = e.request.url.split('?')[0];
+  const kalici = await devasaDepodan(anahtar).catch(() => null);
   if (kalici) return kalici;
   const c = await caches.open(DEVASA);
   const kayitli = await c.match(anahtar);
@@ -427,40 +454,6 @@ async function devasaResim(e) {
     );
   }
   return y;
-}
-
-// İş 62: telefona r2.dev adresiyle indirilmiş en büyük kopyalar aynı yolla yeni alan adına taşınır (yeniden indirilmesin)
-async function kaliciTasi() {
-  if (!(await caches.has(DEVASA_KALICI))) return;
-  const c = await caches.open(DEVASA_KALICI);
-  for (const istek of await c.keys()) {
-    const u = new URL(istek.url);
-    if (!u.hostname.endsWith('.r2.dev')) continue;
-    const yeni = `https://${R2_ALAN}${u.pathname}`;
-    if (!(await c.match(yeni))) {
-      const y = await c.match(istek);
-      if (y) await c.put(yeni, y);
-    }
-    await c.delete(istek);
-  }
-}
-
-// Ayarlar'daki indirme: adres "?kalici=1" ile gelir; kalıcı önbelleğe sorgusuz adresle yazılır, yazılınca yanıt döner
-// (sayfa sayacı ancak dosya gerçekten saklanınca ilerler). Yer kalmadıysa 507.
-async function devasaKaliciIndir(url) {
-  const anahtar = url.origin + url.pathname;
-  const c = await caches.open(DEVASA_KALICI);
-  if (await c.match(anahtar)) return new Response(null, { status: 204 });
-  const y = await sinirli(() => fetch(anahtar, { mode: 'cors', credentials: 'omit' }));
-  if (!y.ok || !(y.headers.get('content-type') || '').startsWith('image/')) return new Response(null, { status: y.status || 502 });
-  try {
-    await c.put(anahtar, y);
-  } catch (err) {
-    return new Response(null, { status: 507 });
-  }
-  // aynı görselin sınırlı önbellekteki kopyası artık gereksiz
-  await (await caches.open(DEVASA)).delete(anahtar).catch(() => {});
-  return new Response(null, { status: 201 });
 }
 
 let budamaSuruyor = false;

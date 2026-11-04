@@ -128,7 +128,7 @@ async function basla() {
   // Konular (görüntüleyicideki "Konu:" bağlantısı için) ilk ekrandan sonra arka planda
   setTimeout(ikonografiVeri, 1500);
   setTimeout(notlariYukle, 0);
-  rozetiBagla(), setTimeout(devasaSurdur, 4000); // İş 120: yarım kalan büyük kopya indirmesi kendiliğinden sürer
+  rozetiBagla(), setTimeout(devasaSurdur, location.hash === '#/ayarlar' ? 1500 : 4000); // İş 120: yarım kalan büyük kopya indirmesi kendiliğinden sürer
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
   // test ve hata ayıklama için
   window.__atlas = d;
