@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.64.1';
+const SURUM = '1.64.2';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -55,6 +55,7 @@ const KABUK_DOSYALARI = [
   'js/gecis.js',
   'js/dokunus.js',
   'js/keskin.js',
+  'js/devasaOnbellek.js',
   'js/gorsel.js',
   'js/gunun.js',
   'js/idb.js',
@@ -411,8 +412,11 @@ async function resim(e) {
 
 async function devasaResim(e) {
   const anahtar = e.request.url;
-  const kalici = await (await caches.open(DEVASA_KALICI)).match(anahtar);
-  if (kalici) return kalici;
+  // İş 124: telefona indirilenler parça parça önbelleklerde (atlas-devasa-kalici-<n>) ya da eski tek önbellekte
+  for (const a of (await caches.keys()).filter((x) => x === DEVASA_KALICI || x.startsWith(`${DEVASA_KALICI}-`))) {
+    const kalici = await (await caches.open(a)).match(anahtar);
+    if (kalici) return kalici;
+  }
   const c = await caches.open(DEVASA);
   const kayitli = await c.match(anahtar);
   if (kayitli) return kayitli;
