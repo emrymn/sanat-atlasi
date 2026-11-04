@@ -4,7 +4,7 @@
   python3 scripts/gorsel_denetim/isle.py           # sonuc_*.json → data/gorsel_kararlari.json + data/eserler_onbellek.json
   python3 scripts/gorsel_denetim/isle.py --ozet    # yalnız sayıları göster, dosyaya yazma
 
-İş 111: Emre'nin uygulamadan bildirdiği görseller (Ayarlar → Bildirdiğim görseller → Kopyala) emre_kararlari.json'a
+İş 117: Emre'nin uygulamadan bildirdiği görseller (Ayarlar → Bildirdiğim görseller → Kopyala) emre_kararlari.json'a
 yazılır; en son uygulanır, Gemini'nin kararını geçersiz kılar.
 
 Kararlar Gemini'nin (TALIMAT.md); Claude ilk partiyi baştan sona, sonrakileri örnekleyerek kontrol eder ve katılmadığı
@@ -97,7 +97,7 @@ def main():
             sayi[karar] += 1
             if karar != 'uygun':
                 yeni[sonuc_anahtari(s['anahtar'])] = karar
-    # İş 111: Emre'nin uygulamadan bildirdikleri (emre_kararlari.json) Gemini'nin kararlarından önce gelir
+    # İş 117: Emre'nin uygulamadan bildirdikleri (emre_kararlari.json) Gemini'nin kararlarından önce gelir
     ek_yolu = BURASI / 'emre_kararlari.json'
     if ek_yolu.exists():
         for a, k in json.loads(ek_yolu.read_text())['kararlar'].items():
@@ -140,7 +140,7 @@ def main():
         return
     kararlar.update(yeni)
     kararlar_yolu.write_text(json.dumps(kd, ensure_ascii=False, indent=1))
-    # İş 111: uygulama "cikar" kararlarını canlı Wikidata eserlerine de uygular (js/eserler.js cikarilanlariAyikla)
+    # İş 117: uygulama "cikar" kararlarını canlı Wikidata eserlerine de uygular (js/eserler.js cikarilanlariAyikla)
     cikar = sorted(a for a, k in kararlar.items() if k == 'cikar')
     (KOK / 'data/cikarilan_gorseller.json').write_text(json.dumps({'surum': 1, 'anahtarlar': cikar}, ensure_ascii=False, separators=(',', ':')) + '\n')
     ob_yolu.write_text(json.dumps(ob, ensure_ascii=False, separators=(',', ':')))  # onbellek.mjs gibi: JSON.stringify, satır sonu yok

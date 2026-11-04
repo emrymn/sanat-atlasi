@@ -16,7 +16,7 @@ import { yarimYukle, olaylariBagla as pekistirOlaylari } from './ekranlar/pekist
 import { yonlendir } from './ekranlar/yonlendirme.js';
 import { olaylariBagla as bugunOlaylari } from './ekranlar/bugun.js';
 import { olaylariBagla as ilerlemeOlaylari } from './ekranlar/ilerleme.js';
-import { olaylariBagla as ayarlarOlaylari, rozetiGuncelle } from './ekranlar/ayarlar.js';
+import { olaylariBagla as ayarlarOlaylari, rozetiGuncelle, devasaSurdur } from './ekranlar/ayarlar.js';
 import { olaylariBagla as aramaOlaylari } from './ekranlar/arama.js';
 import { olaylariBagla as zamanOlaylari } from './ekranlar/zaman.js';
 import { olaylariBagla as akimOlaylari } from './ekranlar/akim.js';
@@ -86,7 +86,7 @@ async function basla() {
   d.konularTr = await konularTrSozu;
   d.tanimaNotlari = notlariAl(tanima);
   eserAdlariniAyarla(adlariAl(eserAd));
-  kopyalariAyarla(kopyaG), cikarilanlariAyarla(cikarG); // İş 101: aynı tablonun ikinci kaydı · İş 111: çıkarılan görseller
+  kopyalariAyarla(kopyaG), cikarilanlariAyarla(cikarG); // İş 101: aynı tablonun ikinci kaydı · İş 117: çıkarılan görseller
   d.kolaylik = kolaylikAl(zorluk);
   yerelGorselleriAyarla(yerelG && yerelG.gorseller, yerelG && yerelG.buyuk);
   uzakGorselleriAyarla(uzakG);
@@ -128,7 +128,7 @@ async function basla() {
   // Konular (görüntüleyicideki "Konu:" bağlantısı için) ilk ekrandan sonra arka planda
   setTimeout(ikonografiVeri, 1500);
   setTimeout(notlariYukle, 0);
-  rozetiBagla();
+  rozetiBagla(), setTimeout(devasaSurdur, 4000); // İş 120: yarım kalan büyük kopya indirmesi kendiliğinden sürer
   if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
   // test ve hata ayıklama için
   window.__atlas = d;

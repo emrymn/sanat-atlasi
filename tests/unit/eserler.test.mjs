@@ -171,8 +171,8 @@ test('kopyalariAyikla: silinen çıkar, kurs bilgisi ve başlığı kalana geçe
   );
 });
 
-// İş 111: Emre'nin bildirdiği ve denetimin çıkardığı görseller hangi yoldan gelirse gelsin gösterilmez
-test('İş 111: çıkarılan görseller atılır, görseli kalmayan eser düşer; liste veride ve önbellekte tutarlı', async () => {
+// İş 117: Emre'nin bildirdiği ve denetimin çıkardığı görseller hangi yoldan gelirse gelsin gösterilmez
+test('İş 117: çıkarılan görseller atılır, görseli kalmayan eser düşer; liste veride ve önbellekte tutarlı', async () => {
   const { cikarilanlariAyikla } = await import('../../js/eserler.js');
   const c = new Set(['masaccio,_trinità.jpg', 'met:https://x/a.jpg']);
   const liste = [

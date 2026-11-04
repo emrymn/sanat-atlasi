@@ -11,6 +11,9 @@ export const KAYNAK_ADI = {
   cma: 'Cleveland Museum of Art',
   nga: 'National Gallery of Art',
   wikiart: 'WikiArt',
+  // İş 119: yalnız en büyük kopyanın kaynağı olarak (scripts/muze_tercih.py)
+  rijks: 'Rijksmuseum',
+  yuag: 'Yale University Art Gallery',
 };
 
 export function gorselAnahtari(g) {
@@ -64,7 +67,7 @@ export function gorselOrani(g) {
 // kopyası Commons yerine aynı eserin müze görselinden gelenler. Dosya yoksa her şey eskisi gibi depodan.
 // İş 84: surumler: { ad: sürüm } daha büyük dosyasıyla yenilenen kopyalar kovada sürüm ekli adla durur (d/<ad>-<sürüm>.jpg):
 // eski adres önbellekte "hiç değişmez" ve telefonda indirilmiş olduğundan yenisi ancak yeni adresle gelir
-// İş 112: b_surumler: { ad: sürüm } küçük kalmış 1280'lik kopyası en büyük kopyadan yeniden üretilenler (b/<ad>-<sürüm>.jpg;
+// İş 118: b_surumler: { ad: sürüm } küçük kalmış 1280'lik kopyası en büyük kopyadan yeniden üretilenler (b/<ad>-<sürüm>.jpg;
 // aynı sebeple yeni adres)
 let uzak = { adres: '', buyuk: false, devasa: new Set(), muze: {}, bayt: 0, surumler: {}, bSurumler: {} };
 export function uzakGorselleriAyarla(k) {
@@ -81,12 +84,21 @@ export function uzakGorselleriAyarla(k) {
 }
 const devasaYolu = (ad) => `${uzak.adres}/d/${ad}${uzak.surumler[ad] ? `-${uzak.surumler[ad]}` : ''}.jpg`;
 const buyukYolu = (ad) => `${uzak.adres}/b/${ad}${uzak.bSurumler[ad] ? `-${uzak.bSurumler[ad]}` : ''}.jpg`;
-// İş 60: Ayarlar'dan hepsini telefona indirmek için en büyük kopyaların adresleri ve toplam boyu (bayt; bilinmiyorsa 0)
+// İş 60: Ayarlar'dan hepsini telefona indirmek için en büyük kopyaların adresleri ve toplam boyu (bayt; bilinmiyorsa 0).
+// İş 121: gosterilen (yerel anahtarlar; eserler.js gosterilenGorseller) verilirse yalnız uygulamada gösterilen
+// görsellerinkiler (aynı tablonun kopya kaydı ve çıkarılan görseller inmez); toplam boy da o oranda.
+let suzulmus = null;
+export function devasaSuz(gosterilen) {
+  if (!gosterilen) return (suzulmus = null);
+  const adlar = new Set();
+  for (const a of gosterilen) if (yerel[a] && uzak.devasa.has(yerel[a])) adlar.add(yerel[a]);
+  suzulmus = adlar;
+}
 export function devasaAdresleri() {
-  return [...uzak.devasa].map(devasaYolu);
+  return [...(suzulmus || uzak.devasa)].map(devasaYolu);
 }
 export function devasaToplamBayt() {
-  return uzak.bayt;
+  return suzulmus && uzak.devasa.size ? Math.round((uzak.bayt * suzulmus.size) / uzak.devasa.size) : uzak.bayt;
 }
 // En büyük kopyanın adresi (görüntüleyici); yoksa ''
 export function devasaUrl(g) {

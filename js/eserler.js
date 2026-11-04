@@ -216,7 +216,7 @@ export function kopyalariAyikla(sanatciId, liste, k = kopyalar) {
   return silinecek.size ? liste.filter((e) => !silinecek.has(e.anahtar)) : liste;
 }
 
-// İş 111 (Emre: "bunlar kaldırılacak resimler, direkt gösterme"): çıkarılan görseller (data/cikarilan_gorseller.json;
+// İş 117 (Emre: "bunlar kaldırılacak resimler, direkt gösterme"): çıkarılan görseller (data/cikarilan_gorseller.json;
 // scripts/gorsel_denetim/isle.py "cikar" kararlarından) hangi yoldan gelirse gelsin (önbellek, canlı Wikidata, kurs
 // listesi) atılır; görseli kalmayan eser düşer. Önbellek 30 günü geçince canlı Wikidata eserleri eklenir: liste
 // olmasaydı kaldırılan eserler oradan geri gelirdi. Anahtar: Commons'ta küçük harfli dosya adı, müzelerde "kaynak:adres".
@@ -236,6 +236,20 @@ export function cikarilanlariAyikla(liste, c = cikarilan) {
     sonuc.push(gorseller.length === e.gorseller.length ? e : { ...e, gorseller });
   }
   return sonuc;
+}
+
+// İş 121 (Emre: "aynı şeyi iki kez indirilmiş mi kontrol eden bir mekanizma kur"): uygulamada gösterilen bütün eserlerin
+// görsellerinin yerel anahtarları (önbellekten; çıkarılan görseller ve kopya kayıtların gizlenen tarafı hariç). En büyük
+// kopyalar yalnız bunlar için indirilir: kopya kaydın görseli aynı tabloyu ikinci kez, çıkarılan görsel ise hiç
+// gösterilmeyecek bir dosyayı indiriyordu (5522'den 97). Önbellek yoksa null (süzülmez).
+export async function gosterilenGorseller() {
+  const hazir = await hazirOnbellek();
+  if (!hazir || !hazir.sanatcilar) return null;
+  const s = new Set();
+  for (const [sid, v] of Object.entries(hazir.sanatcilar))
+    for (const e of kopyalariAyikla(sid, cikarilanlariAyikla((v.eserler || []).map(onbellekEseri))))
+      for (const g of e.gorseller) s.add(`${g.k}:${g.d || g.i || g.u || ''}`);
+  return s;
 }
 
 // Geçici sonuç (hata ya da Wikidata'ya ulaşılamadı): bu kadar süre aynı liste verilir, sonra yeniden denenir

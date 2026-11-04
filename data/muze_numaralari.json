@@ -1,0 +1,1092 @@
+{
+"surum": 1,
+"aciklama": "İş 113: en büyük kopyası Commons'tan olup aynı eserin açık erişim müze kaydı da olan eserler (eserin kendi Wikidata kaydından: P3634 Met, P4610 AIC, P4683 NGA, P217+P195 Cleveland/Rijksmuseum, P8583 YUAG). scripts/muze_tercih.py okur.",
+"eserler": {
+"8afb67b6c562803a": {
+"qid": "Q105221871",
+"sid": "giovanni-battista-piazzetta",
+"baslik": "Feeding the Dog",
+"met": "335571"
+},
+"94f6d83f1b4801fc": {
+"qid": "Q105221881",
+"sid": "giovanni-battista-piazzetta",
+"baslik": "Boy with an Egg, Girl with a Hen, and a Watching Woman",
+"met": "339675"
+},
+"19c0a452c7d5752b": {
+"qid": "Q111272665",
+"sid": "hendrick-ter-brugghen",
+"baslik": "Roman Charity",
+"met": "834308"
+},
+"e4634ac8c2456900": {
+"qid": "Q1170480",
+"sid": "rembrandt-van-rijn",
+"baslik": "Manifaturacılar Loncası Sendikleri",
+"rijks": "SK-C-6"
+},
+"932927f41d377e40": {
+"qid": "Q11747757",
+"sid": "jacob-van-ruisdael",
+"baslik": "Landscape with Waterfall",
+"rijks": "SK-C-210"
+},
+"3fbc7104faecf482": {
+"qid": "Q11791844",
+"sid": "hendrick-ter-brugghen",
+"baslik": "The Incredulity of Thomas",
+"rijks": "SK-A-3908"
+},
+"e0cca21c75d63684": {
+"qid": "Q126131221",
+"sid": "bartolomeo-manfredi",
+"baslik": "Saints Peter and Paul",
+"met": "442491"
+},
+"31731859049391bf": {
+"qid": "Q1267893",
+"sid": "leonardo-da-vinci",
+"baslik": "Ginevra de' Benci Portresi",
+"nga": "50724"
+},
+"4990b0db71daa072": {
+"qid": "Q12859898",
+"sid": "jean-baptiste-simeon-chardin",
+"baslik": "The Attentive Nurse",
+"nga": "41649"
+},
+"d24523c57cef79f7": {
+"qid": "Q12859910",
+"sid": "mary-cassatt",
+"baslik": "The Cup of Tea",
+"met": "10388"
+},
+"2c28cf6b82545baf": {
+"qid": "Q12859917",
+"sid": "jean-baptiste-simeon-chardin",
+"baslik": "The House of Cards",
+"nga": "97"
+},
+"3a55edddca5b7ba3": {
+"qid": "Q12860070",
+"sid": "francois-boucher",
+"baslik": "Venus Consoling Love",
+"nga": "12200"
+},
+"7454341d2928acab": {
+"qid": "Q12898913",
+"sid": "jean-leon-gerome",
+"baslik": "Hail Caesar! We Who Are about to Die Salute You",
+"yuag": "9187"
+},
+"df63f84eecbc3446": {
+"qid": "Q15008032",
+"sid": "giovanni-bellini",
+"baslik": "The Feast of the Gods",
+"nga": "1138"
+},
+"3445e12b3173f9eb": {
+"qid": "Q15727864",
+"sid": "edgar-degas",
+"baslik": "The Dance Lesson",
+"nga": "93045"
+},
+"8f5b8887bfa13649": {
+"qid": "Q166937",
+"sid": "johannes-vermeer",
+"baslik": "Woman in Blue Reading a Letter",
+"rijks": "SK-C-251"
+},
+"7ad9f577dbcabf65": {
+"qid": "Q167605",
+"sid": "johannes-vermeer",
+"baslik": "Süt Boşaltan Kadın",
+"rijks": "SK-A-2344"
+},
+"15e7d2a81a7ac6bb": {
+"qid": "Q16933788",
+"sid": "dirck-van-baburen",
+"baslik": "Kratos Prometheus’u zincirlerken",
+"rijks": "SK-A-1606"
+},
+"43adf61266402a53": {
+"qid": "Q17008188",
+"sid": "mary-cassatt",
+"baslik": "Lilacs in a Window",
+"met": "13758"
+},
+"4cdaefe7a95d73aa": {
+"qid": "Q17276111",
+"sid": "quentin-metsys",
+"baslik": "The Virgin and Child",
+"rijks": "SK-A-247"
+},
+"8a5a8d17ee282c0f": {
+"qid": "Q17319887",
+"sid": "gerrit-van-honthorst",
+"baslik": "Portrait of Frederik Hendrik (1584 - 1647), Prince of Orange",
+"rijks": "SK-A-178"
+},
+"3bd2dd37757b8a85": {
+"qid": "Q17319890",
+"sid": "gerrit-van-honthorst",
+"baslik": "The Merry Fiddler",
+"rijks": "SK-A-180"
+},
+"7e0d779b6792edaf": {
+"qid": "Q17320342",
+"sid": "jacob-van-ruisdael",
+"baslik": "Bentheim Castle",
+"rijks": "SK-A-347"
+},
+"10c68f083262548a": {
+"qid": "Q17320344",
+"sid": "jacob-van-ruisdael",
+"baslik": "Winter Landscape",
+"rijks": "SK-A-349"
+},
+"3468eb7a78953a34": {
+"qid": "Q17320346",
+"sid": "jacob-van-ruisdael",
+"baslik": "View of Haarlem from the Northwest, with the Bleaching Fields in the Foreground",
+"rijks": "SK-A-351"
+},
+"fe7da02c9425ecff": {
+"qid": "Q17322404",
+"sid": "jan-steen",
+"baslik": "Children Teaching a Cat to Dance, Known as ‘The Dancing Lesson’",
+"rijks": "SK-A-718"
+},
+"d68d6f42d0908124": {
+"qid": "Q17323508",
+"sid": "gerrit-van-honthorst",
+"baslik": "Willem II (1626-50), Prince of Orange, and his wife Maria Stuart (1631-60)",
+"rijks": "SK-A-871"
+},
+"b9c48c4ed5ec4c96": {
+"qid": "Q17323513",
+"sid": "gerrit-van-honthorst",
+"baslik": "Frederik Hendrik (1584-1647), Prince of Orange, his wife Amalia van Solms (1602-75) and their three youngest daughters, Albertina Agnes (1634-96), Henrietta Catharina (1637-1708) and Maria (1642-88)",
+"rijks": "SK-A-874"
+},
+"a81e7c6dfaf19ccb": {
+"qid": "Q17323659",
+"sid": "francesco-solimena",
+"baslik": "The Glorification of Saint Dominic",
+"rijks": "SK-A-996"
+},
+"4d787bd756ded1c6": {
+"qid": "Q17330773",
+"sid": "hendrick-ter-brugghen",
+"baslik": "Democritus",
+"rijks": "SK-A-2783"
+},
+"9b45a0eeb1d51d0e": {
+"qid": "Q17330778",
+"sid": "hendrick-ter-brugghen",
+"baslik": "Heraclitus",
+"rijks": "SK-A-2784"
+},
+"30b175c48a0dbe44": {
+"qid": "Q17335702",
+"sid": "giorgione",
+"baslik": "Woman with a Unicorn",
+"rijks": "SK-C-1384"
+},
+"809a7f7c186e2070": {
+"qid": "Q17335819",
+"sid": "ambrogio-lorenzetti",
+"baslik": "Madonna of Humility",
+"rijks": "SK-C-1428"
+},
+"4e0160f003211b72": {
+"qid": "Q17338549",
+"sid": "hendrick-ter-brugghen",
+"baslik": "The adoration of the magi",
+"rijks": "SK-A-4188"
+},
+"b832d702f899e560": {
+"qid": "Q17341058",
+"sid": "gerrit-van-honthorst",
+"baslik": "Christ Crowned with Thorns",
+"rijks": "SK-C-479"
+},
+"14068e7ec40e8030": {
+"qid": "Q17341103",
+"sid": "odilon-redon",
+"baslik": "Ophelia with a Blue Wimple in the Water",
+"rijks": "SK-A-4840"
+},
+"b380c040a712bdba": {
+"qid": "Q17342250",
+"sid": "jan-steen",
+"baslik": "The Happy Family",
+"rijks": "SK-C-229"
+},
+"8d16e622ec4f00c0": {
+"qid": "Q17342259",
+"sid": "jan-steen",
+"baslik": "The Drunken Couple",
+"rijks": "SK-C-232"
+},
+"669a475d847c6bae": {
+"qid": "Q18173387",
+"sid": "katsushika-hokusai",
+"baslik": "Sundai, Edo",
+"cma": "1940.1000"
+},
+"e50b226e7209e785": {
+"qid": "Q18173395",
+"sid": "katsushika-hokusai",
+"baslik": "Shichiri beach in Sagami province",
+"rijks": "RP-P-1956-731"
+},
+"a58fc6a0d753aede": {
+"qid": "Q18173409",
+"sid": "katsushika-hokusai",
+"baslik": "Morning after a Snowfall at Koishikawa",
+"rijks": "AK-MAK-1588"
+},
+"3caa4bcc659f6d9a": {
+"qid": "Q18173427",
+"sid": "katsushika-hokusai",
+"baslik": "Honjo Tatekawa",
+"cma": "1916.1166"
+},
+"4f26452e9ffe783b": {
+"qid": "Q18178495",
+"sid": "camille-corot",
+"baslik": "The Harbor of La Rochelle",
+"yuag": "52867"
+},
+"185d25148776fd79": {
+"qid": "Q18579294",
+"sid": "duccio-di-buoninsegna",
+"baslik": "Maria met kind",
+"rijks": "SK-C-1420"
+},
+"47a7cc7e392b25c1": {
+"qid": "Q18719530",
+"sid": "elisabeth-vigee-le-brun",
+"baslik": "Marie-Antoinette seated, in blue coat and white dress, holding a book in her hand",
+"met": "656843"
+},
+"11ad38c251d3fac8": {
+"qid": "Q19905229",
+"sid": "quentin-metsys",
+"baslik": "The Adoration of the Magi",
+"met": "436984"
+},
+"02815a768cd9bd53": {
+"qid": "Q19911421",
+"sid": "salvator-rosa",
+"baslik": "The Dream of Aeneas",
+"met": "437507"
+},
+"edbb699bcf15791a": {
+"qid": "Q19911556",
+"sid": "salvator-rosa",
+"baslik": "Self-Portrait",
+"met": "437508"
+},
+"294db39cd7204141": {
+"qid": "Q19911646",
+"sid": "sebastiano-ricci",
+"baslik": "The Baptism of Christ",
+"met": "437457"
+},
+"10706d97ea8bd168": {
+"qid": "Q19911651",
+"sid": "daniele-da-volterra",
+"baslik": "Michelangelo Buonarroti",
+"met": "436771"
+},
+"b41434e35ab2b04e": {
+"qid": "Q19911849",
+"sid": "edgar-degas",
+"baslik": "The Collector of Prints",
+"met": "436122"
+},
+"80f39ed68aa84886": {
+"qid": "Q19911949",
+"sid": "valentin-de-boulogne",
+"baslik": "The Lute Player",
+"met": "439933"
+},
+"65f406c22c8e69bb": {
+"qid": "Q19911984",
+"sid": "giovanni-battista-gaulli",
+"baslik": "Portrait of a Woman",
+"met": "643540"
+},
+"2eb1a84d11e20782": {
+"qid": "Q19912144",
+"sid": "giovanni-battista-piazzetta",
+"baslik": "Saint Christopher Carrying the Infant Christ",
+"met": "437281"
+},
+"fe0a2377f8848f43": {
+"qid": "Q19912288",
+"sid": "alessandro-magnasco",
+"baslik": "The Tame Magpie",
+"met": "436935"
+},
+"6503af2c246e7a23": {
+"qid": "Q19912578",
+"sid": "claude-monet",
+"baslik": "The Valley of the Nervia",
+"met": "437118"
+},
+"2eeb5ab2845991ab": {
+"qid": "Q19913124",
+"sid": "francesco-solimena",
+"baslik": "Diego Pignatelli d'Aragona (1687–1750)",
+"met": "437701"
+},
+"571daf0f30fc789c": {
+"qid": "Q19913443",
+"sid": "hyacinthe-rigaud",
+"baslik": "Louis XV at the Age of Five in the Costume of the Sacre",
+"met": "437464"
+},
+"e44f0b86fa3fc617": {
+"qid": "Q19919146",
+"sid": "wassily-kandinsky",
+"baslik": "Improvisation 27 (Garden of Love II)",
+"met": "488319"
+},
+"448c95c17de286bc": {
+"qid": "Q19924621",
+"sid": "mary-cassatt",
+"baslik": "Young Mother Sewing",
+"met": "10425"
+},
+"11460f9b2645e25e": {
+"qid": "Q19924628",
+"sid": "mary-cassatt",
+"baslik": "Portrait of the Artist",
+"met": "10409"
+},
+"0914346c879c97f9": {
+"qid": "Q19925426",
+"sid": "mary-cassatt",
+"baslik": "Lady at the Tea Table",
+"met": "10391"
+},
+"a4b41c1f6a7ad728": {
+"qid": "Q20166971",
+"sid": "quentin-metsys",
+"baslik": "Portrait of a Woman",
+"met": "436986"
+},
+"8558e594cdc75a25": {
+"qid": "Q20170935",
+"sid": "mary-cassatt",
+"baslik": "Mother and Child (The Oval Mirror)",
+"met": "10401"
+},
+"504d28cd841948eb": {
+"qid": "Q20170951",
+"sid": "mary-cassatt",
+"baslik": "Lydia Crocheting in the Garden at Marly",
+"met": "10393"
+},
+"6e02e13359e5813d": {
+"qid": "Q20172992",
+"sid": "simone-martini",
+"baslik": "Saint James Major",
+"nga": "41635"
+},
+"0d19361717b4e901": {
+"qid": "Q20173002",
+"sid": "simone-martini",
+"baslik": "Saint Judas Thaddeus",
+"nga": "41636"
+},
+"73e48dac7ed992cc": {
+"qid": "Q20173011",
+"sid": "simone-martini",
+"baslik": "Saint Matthew",
+"nga": "41633"
+},
+"a1a3fffa4534a589": {
+"qid": "Q20173020",
+"sid": "simone-martini",
+"baslik": "Saint Simon",
+"nga": "41634"
+},
+"8c52dcdf382a3653": {
+"qid": "Q20176182",
+"sid": "hans-holbein-genc",
+"baslik": "Edward VI as a Child",
+"nga": "71"
+},
+"68a0e1220fe23cd5": {
+"qid": "Q20176976",
+"sid": "valentin-de-boulogne",
+"baslik": "Soldiers Playing Cards and Dice (The Cheats)",
+"nga": "107315"
+},
+"5c5482d2654d1e73": {
+"qid": "Q20177016",
+"sid": "gerrit-van-honthorst",
+"baslik": "The Concert",
+"nga": "163184"
+},
+"cf741e9c2640ab66": {
+"qid": "Q20177902",
+"sid": "jean-baptiste-simeon-chardin",
+"baslik": "The Kitchen Maid",
+"nga": "41650"
+},
+"56494a81d858d9c8": {
+"qid": "Q20178884",
+"sid": "benjamin-west",
+"baslik": "The Battle of La Hogue",
+"nga": "45885"
+},
+"8a61f9ab62a2287d": {
+"qid": "Q20180920",
+"sid": "claude-monet",
+"baslik": "Houses on the Achterzaan",
+"met": "459107"
+},
+"3548dc9815b91c4a": {
+"qid": "Q20276003",
+"sid": "bartolomeo-manfredi",
+"baslik": "Cupid Chastised",
+"aic": "59847"
+},
+"dbfd6e40150d349c": {
+"qid": "Q2091114",
+"sid": "hieronymus-bosch",
+"baslik": "Oburluk ve Şehvetin Alegorisi",
+"yuag": "43515"
+},
+"4b76e23980f3af8b": {
+"qid": "Q21001124",
+"sid": "elisabeth-vigee-le-brun",
+"baslik": "Yolande-Martine-Gabrielle de Polastron, Duchess de Polignac",
+"met": "656596"
+},
+"53073e6ee15bcefe": {
+"qid": "Q219831",
+"sid": "rembrandt-van-rijn",
+"baslik": "Gece Devriyesi",
+"rijks": "SK-C-5"
+},
+"e50b7980467f4365": {
+"qid": "Q2252345",
+"sid": "rembrandt-van-rijn",
+"baslik": "The anatomy lesson of Dr. Joan Deijman",
+"rijks": "SK-C-85"
+},
+"7c9b594e9e633e7e": {
+"qid": "Q2255224",
+"sid": "el-greco",
+"baslik": "Laocoön",
+"nga": "33253"
+},
+"b57bf1f58d9e37da": {
+"qid": "Q2311238",
+"sid": "frans-hals",
+"baslik": "Portrait of a Couple probably Isaac Massa and Beatrix van der Laen",
+"rijks": "SK-A-133"
+},
+"f3885479bf979f92": {
+"qid": "Q2629423",
+"sid": "jean-honore-fragonard",
+"baslik": "Okuyan Genç Kız",
+"nga": "46303"
+},
+"f343957f4b5b322d": {
+"qid": "Q285392",
+"sid": "robert-campin",
+"baslik": "Mérode Altarpiece",
+"met": "470304"
+},
+"cbacba3504a88a20": {
+"qid": "Q2872723",
+"sid": "rembrandt-van-rijn",
+"baslik": "Öz portreler (Self-Portraits)",
+"nga": "79"
+},
+"ae6b8ef0e997f8bf": {
+"qid": "Q2881603",
+"sid": "jacob-van-ruisdael",
+"baslik": "The Windmill at Wijk bij Duurstede",
+"rijks": "SK-C-211"
+},
+"0f1d65d634e669e7": {
+"qid": "Q29021696",
+"sid": "artemisia-gentileschi",
+"baslik": "Mary Magdalene in Ecstasy",
+"nga": "231465"
+},
+"72ed47864172b917": {
+"qid": "Q3035829",
+"sid": "francisco-de-goya",
+"baslik": "Don Manuel Osorio de Zuniga",
+"met": "436545"
+},
+"4bfc5422e4a967dd": {
+"qid": "Q3135552",
+"sid": "benjamin-west",
+"baslik": "Colonel Guy Johnson and Karonghyontye",
+"nga": "569"
+},
+"2f42845d856a641e": {
+"qid": "Q3213779",
+"sid": "pietro-perugino",
+"baslik": "Meryem ve Çocuk İsa",
+"nga": "356"
+},
+"ed4138561a240459": {
+"qid": "Q3531531",
+"sid": "fra-angelico",
+"baslik": "Müneccim Kralların Tapınması",
+"nga": "41581"
+},
+"8383d5aa73c5a490": {
+"qid": "Q3713914",
+"sid": "edgar-degas",
+"baslik": "A Woman Seated beside a Vase of Flowers",
+"met": "436121"
+},
+"22c11290edd7f4ae": {
+"qid": "Q3766873",
+"sid": "giorgione",
+"baslik": "Giovanni Borgherini and His Tutor",
+"nga": "54757"
+},
+"d0a4f61280eeeef6": {
+"qid": "Q3769182",
+"sid": "andrea-mantegna",
+"baslik": "Judith and Holofernes",
+"nga": "1181"
+},
+"35d989cacf0e691e": {
+"qid": "Q3842386",
+"sid": "correggio",
+"baslik": "Meryem ve Çocuk İsa",
+"nga": "409"
+},
+"3a04ef92c7af3ee4": {
+"qid": "Q3842478",
+"sid": "gentile-da-fabriano",
+"baslik": "Virgin and Child",
+"yuag": "327"
+},
+"5eb818a7ff99db9b": {
+"qid": "Q3873252",
+"sid": "duccio-di-buoninsegna",
+"baslik": "The Nativity with the Prophets Isaiah and Ezekiel",
+"nga": "10"
+},
+"210d21a82ac0bbed": {
+"qid": "Q3874247",
+"sid": "rembrandt-van-rijn",
+"baslik": "The Denial of Saint Peter",
+"rijks": "SK-A-3137"
+},
+"a27c14c491b1a07f": {
+"qid": "Q3874376",
+"sid": "edgar-degas",
+"baslik": "The Millinery Shop by Edgar Degas",
+"aic": "14572"
+},
+"31c5fe2dce1fcddf": {
+"qid": "Q3937621",
+"sid": "elisabeth-vigee-le-brun",
+"baslik": "Marie Antoinette and Her Children",
+"met": "656654"
+},
+"48199460a49e7665": {
+"qid": "Q3944458",
+"sid": "giorgione",
+"baslik": "Kutsal Aile",
+"nga": "41590"
+},
+"a826b8e475f81e2b": {
+"qid": "Q3948737",
+"sid": "albrecht-durer",
+"baslik": "Virgin and Child with Saint Anne",
+"met": "436244"
+},
+"eb3c8900dabe45d9": {
+"qid": "Q4028318",
+"sid": "jan-steen",
+"baslik": "A Mayor of Delft and his Daughter",
+"rijks": "SK-A-4981"
+},
+"bac0e932996f69a0": {
+"qid": "Q41433015",
+"sid": "elisabeth-vigee-le-brun",
+"baslik": "Portrait of countess Yekaterina Skavronskaya",
+"met": "653392"
+},
+"5a2a5226bd4a9253": {
+"qid": "Q4211284",
+"sid": "rembrandt-van-rijn",
+"baslik": "The Stone Bridge",
+"rijks": "SK-A-1935"
+},
+"37af8aa499b37b68": {
+"qid": "Q432253",
+"sid": "claude-monet",
+"baslik": "Garden at Sainte-Adresse",
+"met": "437133"
+},
+"cd68c8454c96cadf": {
+"qid": "Q4354644",
+"sid": "paul-gauguin",
+"baslik": "Fatata te Miti",
+"nga": "46624"
+},
+"29a29b6e5845367c": {
+"qid": "Q44843755",
+"sid": "fernand-khnopff",
+"baslik": "Portret van Augustinus Gerardus Hubertus van Rijckevorsel (1828 - ’s-Hertogenbosch - 1891)",
+"rijks": "SK-A-5042"
+},
+"e3588c3cc8b9f3be": {
+"qid": "Q44843793",
+"sid": "fernand-khnopff",
+"baslik": "Portret van jonkvrouwe Maria Francisca Louisa Dommer van Poldersveldt (Ubbergen 1848 - 1925 ’s-Hertogenbosch)",
+"rijks": "SK-A-5043"
+},
+"ee6c318d2613aaa5": {
+"qid": "Q47430923",
+"sid": "jean-francois-millet",
+"baslik": "Starry Night",
+"yuag": "52945"
+},
+"4b966d95ea995712": {
+"qid": "Q47532948",
+"sid": "marcantonio-raimondi",
+"baslik": "Parnassus",
+"nga": "53263"
+},
+"0cf3b7b17e5a5098": {
+"qid": "Q47533251",
+"sid": "marcantonio-raimondi",
+"baslik": "Charity",
+"nga": "10137"
+},
+"68bbc106dc95ceb4": {
+"qid": "Q47533764",
+"sid": "marcantonio-raimondi",
+"baslik": "Raphael's Dream",
+"nga": "649"
+},
+"ee57a66358c9ef27": {
+"qid": "Q47533921",
+"sid": "marcantonio-raimondi",
+"baslik": "Holy Cecile",
+"nga": "33858"
+},
+"e57625511b23cf39": {
+"qid": "Q47533940",
+"sid": "marcantonio-raimondi",
+"baslik": "The Holy Family with John the Baptist as Child",
+"nga": "46904"
+},
+"b9ca237372dd20dc": {
+"qid": "Q47534062",
+"sid": "marcantonio-raimondi",
+"baslik": "Massacre of the Innocents (With the Fir Tree)",
+"nga": "55423",
+"cma": "1937.563"
+},
+"75c06c7fcf62fdc9": {
+"qid": "Q47534440",
+"sid": "marcantonio-raimondi",
+"baslik": "Triumph of Marc Aurel",
+"nga": "53449"
+},
+"8858c69e1ca5f8cf": {
+"qid": "Q47534707",
+"sid": "marcantonio-raimondi",
+"baslik": "Dido",
+"nga": "638"
+},
+"ac545fe9b65a93ab": {
+"qid": "Q47535143",
+"sid": "marcantonio-raimondi",
+"baslik": "God Appearing to Noah",
+"nga": "636"
+},
+"17b0de77d0ecb29b": {
+"qid": "Q47535224",
+"sid": "marcantonio-raimondi",
+"baslik": "Hercules and Antaeus",
+"nga": "10144"
+},
+"b55afabca929d38f": {
+"qid": "Q48241196",
+"sid": "marcantonio-raimondi",
+"baslik": "Venus, Mars and Cupid",
+"nga": "646",
+"cma": "1924.333"
+},
+"49cf700298dd4422": {
+"qid": "Q48242722",
+"sid": "marcantonio-raimondi",
+"baslik": "Pietà",
+"nga": "637"
+},
+"263d2880d3af606c": {
+"qid": "Q49219517",
+"sid": "simone-martini",
+"baslik": "Saint John the Evangelist",
+"yuag": "45108"
+},
+"6256c4fd543e76d3": {
+"qid": "Q49355179",
+"sid": "benjamin-west",
+"baslik": "Agrippina Landing at Brundisium with the Ashes of Germanicus",
+"yuag": "46131"
+},
+"ea3242835603a814": {
+"qid": "Q49411896",
+"sid": "alexandre-cabanel",
+"baslik": "Portrait of Miss Fanny Clapp",
+"yuag": "10081"
+},
+"a7a01a1a0a4dcbd8": {
+"qid": "Q4987244",
+"sid": "vincent-van-gogh",
+"baslik": "Çiçek Soğanı Tarlaları",
+"nga": "61371"
+},
+"0f821289da226b65": {
+"qid": "Q546977",
+"sid": "raphael",
+"baslik": "Portrait of Baldassare Castiglione",
+"met": "892550"
+},
+"79387ccf0f9ded21": {
+"qid": "Q5779800",
+"sid": "frans-hals",
+"baslik": "Militia Company of District XI under the Command of Captain Reynier Reael",
+"rijks": "SK-C-374"
+},
+"ea4a82642a5dce8e": {
+"qid": "Q586035",
+"sid": "johannes-vermeer",
+"baslik": "The Little Street",
+"rijks": "SK-A-2860"
+},
+"cfe1521c99c3b9f1": {
+"qid": "Q5980742",
+"sid": "albrecht-durer",
+"baslik": "The Four Horsemen of the Apocalypse (Kıyametin Dört Atlısı)",
+"met": "336215",
+"nga": "57123",
+"cma": "1922.94.5"
+},
+"62c9bc102e7ea599": {
+"qid": "Q60470350",
+"sid": "giovanni-battista-gaulli",
+"baslik": "Sketch for \"The Four Prophets of Israel\" (for Il Gesù, Rome)",
+"cma": "1969.131"
+},
+"a77034b89e103112": {
+"qid": "Q60514853",
+"sid": "j-m-w-turner",
+"baslik": "Burning of Houses of Parliament October 16, 1834",
+"cma": "1942.647"
+},
+"845624ac37110e01": {
+"qid": "Q6119366",
+"sid": "el-greco",
+"baslik": "Saint Martin and the Beggar",
+"nga": "1164"
+},
+"1945be012f8246f7": {
+"qid": "Q64562425",
+"sid": "francesco-salviati",
+"baslik": "Design for an Altar",
+"nga": "65771"
+},
+"5557d1eba6893506": {
+"qid": "Q64574400",
+"sid": "honore-daumier",
+"baslik": "The Smoker",
+"nga": "6413"
+},
+"7d17b7a7752748b5": {
+"qid": "Q64574401",
+"sid": "honore-daumier",
+"baslik": "Sheet of Studies with Two Large Men on the Ground",
+"nga": "6414"
+},
+"69b75f27919ca0a4": {
+"qid": "Q64574402",
+"sid": "honore-daumier",
+"baslik": "The Prodigal Son",
+"nga": "6415"
+},
+"1cb022aaa7611a4b": {
+"qid": "Q64574403",
+"sid": "honore-daumier",
+"baslik": "The Prodigal Son",
+"nga": "6416"
+},
+"ced1ece8f92222ef": {
+"qid": "Q64574404",
+"sid": "honore-daumier",
+"baslik": "Centaur Carrying Off a Woman",
+"nga": "6417"
+},
+"72cc1bc5b868ec77": {
+"qid": "Q64574405",
+"sid": "honore-daumier",
+"baslik": "Don Quixote",
+"nga": "6418"
+},
+"496767c271879a7b": {
+"qid": "Q64574406",
+"sid": "honore-daumier",
+"baslik": "Actor Posing in Front of a Mirror",
+"nga": "6419"
+},
+"17306e60be6c4464": {
+"qid": "Q64574407",
+"sid": "honore-daumier",
+"baslik": "Lawyer",
+"nga": "6420"
+},
+"311861ce66540c3f": {
+"qid": "Q64630226",
+"sid": "salvator-rosa",
+"baslik": "Rocky Landscape with a Rustic House",
+"nga": "62535"
+},
+"8bb94bccbc8072e9": {
+"qid": "Q64960110",
+"sid": "marcantonio-raimondi",
+"baslik": "Two Fauns Carrying a Child in a Basket",
+"nga": "640",
+"cma": "1976.127"
+},
+"746b4e623c6a6a97": {
+"qid": "Q64960126",
+"sid": "marcantonio-raimondi",
+"baslik": "Serpent Speaking to a Young Man",
+"nga": "651"
+},
+"c1a07e66711995ff": {
+"qid": "Q64960129",
+"sid": "marcantonio-raimondi",
+"baslik": "The Three Doctors",
+"nga": "653"
+},
+"b2a7cf3125c1251d": {
+"qid": "Q64960130",
+"sid": "marcantonio-raimondi",
+"baslik": "Pensive Woman",
+"nga": "655"
+},
+"5b9032fa8d3a8021": {
+"qid": "Q64960135",
+"sid": "marcantonio-raimondi",
+"baslik": "Dance of Cupids",
+"nga": "639"
+},
+"30c79652e4c21652": {
+"qid": "Q64960146",
+"sid": "marcantonio-raimondi",
+"baslik": "Poetry",
+"nga": "650"
+},
+"6f229a9a5af42eba": {
+"qid": "Q64960147",
+"sid": "marcantonio-raimondi",
+"baslik": "Two Women with the Zodiac",
+"nga": "652"
+},
+"2690478b6ce19e33": {
+"qid": "Q64962807",
+"sid": "william-blake",
+"baslik": "A Negro hung alive by the Ribs to a Gallows",
+"nga": "4986"
+},
+"3963702104194d65": {
+"qid": "Q64962837",
+"sid": "william-blake",
+"baslik": "Reverend Robert Hawker, D.D.",
+"nga": "5003"
+},
+"f76109e26e992555": {
+"qid": "Q65023642",
+"sid": "marcantonio-raimondi",
+"baslik": "Man and Woman with a Ball",
+"nga": "30884"
+},
+"29c5cfbbba258d0f": {
+"qid": "Q65023645",
+"sid": "marcantonio-raimondi",
+"baslik": "Hope",
+"nga": "10135"
+},
+"4ec405a57fbb3705": {
+"qid": "Q65023646",
+"sid": "marcantonio-raimondi",
+"baslik": "Prudence",
+"nga": "10136"
+},
+"5ef3d72748e80602": {
+"qid": "Q65023650",
+"sid": "marcantonio-raimondi",
+"baslik": "Faith",
+"nga": "10138"
+},
+"4f7c8cfb00d2051a": {
+"qid": "Q65023659",
+"sid": "marcantonio-raimondi",
+"baslik": "Justice",
+"nga": "10139"
+},
+"8de15da272ca879a": {
+"qid": "Q65023660",
+"sid": "marcantonio-raimondi",
+"baslik": "Fortitude",
+"nga": "10140"
+},
+"a078e710d5dd3691": {
+"qid": "Q65023662",
+"sid": "marcantonio-raimondi",
+"baslik": "Temperance",
+"nga": "10141"
+},
+"86fc7df1f9f5663e": {
+"qid": "Q65023666",
+"sid": "marcantonio-raimondi",
+"baslik": "Joseph and Potiphar's Wife",
+"nga": "10145"
+},
+"6d438536d5874506": {
+"qid": "Q65023668",
+"sid": "marcantonio-raimondi",
+"baslik": "Madonna of the Palm Tree",
+"nga": "10146",
+"cma": "1951.427"
+},
+"23e858f08d6d306a": {
+"qid": "Q650635",
+"sid": "frans-hals",
+"baslik": "A Militiaman Holding a Berkemeyer, Known as the ‘Merry Drinker’",
+"rijks": "SK-A-135"
+},
+"52367a05c34efd43": {
+"qid": "Q65080938",
+"sid": "marcantonio-raimondi",
+"baslik": "Apollo and Hyacinthus",
+"nga": "33485"
+},
+"2b52e29084e42706": {
+"qid": "Q674846",
+"sid": "vincent-van-gogh",
+"baslik": "Gece Kahvesi",
+"yuag": "12507"
+},
+"8c01dbcc7a5453eb": {
+"qid": "Q734082",
+"sid": "claude-monet",
+"baslik": "Regatta at Sainte-Adresse",
+"met": "437136"
+},
+"85947ac2df355004": {
+"qid": "Q735061",
+"sid": "johannes-vermeer",
+"baslik": "The Love Letter",
+"rijks": "SK-A-1595"
+},
+"b72f0c98e5a9be37": {
+"qid": "Q740212",
+"sid": "rembrandt-van-rijn",
+"baslik": "Jeremiah Lamenting the Destruction of Jerusalem",
+"rijks": "SK-A-3276"
+},
+"088dcf04886f0fbf": {
+"qid": "Q7476471",
+"sid": "edgar-degas",
+"baslik": "The Dancing Class",
+"met": "436141"
+},
+"b57152776eb43dd1": {
+"qid": "Q764831",
+"sid": "jan-steen",
+"baslik": "Aziz Nicholas Yortusu",
+"rijks": "SK-A-385"
+},
+"de5459d520e6b06b": {
+"qid": "Q766782",
+"sid": "rembrandt-van-rijn",
+"baslik": "The Jewish Bride",
+"rijks": "SK-C-216"
+},
+"783bbc5e0e424c46": {
+"qid": "Q768333",
+"sid": "rembrandt-van-rijn",
+"baslik": "Titus as a Monk",
+"rijks": "SK-A-3138"
+},
+"3aa84f8869632ac6": {
+"qid": "Q7728258",
+"sid": "hendrick-ter-brugghen",
+"baslik": "The Crucifixion with the Virgin and St John",
+"met": "435817"
+},
+"067ca5382eecf349": {
+"qid": "Q78611598",
+"sid": "giovanni-battista-gaulli",
+"baslik": "Pope Clement X (1590–1676)",
+"met": "769297"
+},
+"3b12d8b6b00418eb": {
+"qid": "Q78614384",
+"sid": "giovanni-battista-piazzetta",
+"baslik": "Bust of a Man (Saint Matthias?)",
+"met": "695496"
+},
+"8b962f950808a265": {
+"qid": "Q7920648",
+"sid": "titian",
+"baslik": "Venus with a Mirror",
+"nga": "41"
+},
+"8fbd33dd92c949e0": {
+"qid": "Q79900962",
+"sid": "marcantonio-raimondi",
+"baslik": "The Pieta'",
+"cma": "1944.22"
+},
+"5d6f0f0c5ecfaa40": {
+"qid": "Q8703547",
+"sid": "jean-honore-fragonard",
+"baslik": "A Visit to the Nursery",
+"nga": "32685"
+},
+"8094c9a6e40b010b": {
+"qid": "Q931933",
+"sid": "pietro-perugino",
+"baslik": "Lorenzo di Credi Portresi",
+"nga": "1177"
+},
+"79d741d6e222757f": {
+"qid": "Q941549",
+"sid": "claude-monet",
+"baslik": "La Grenouillère",
+"met": "437135"
+},
+"ba329ebbbd5eca18": {
+"qid": "Q948894",
+"sid": "vincent-van-gogh",
+"baslik": "La Mousmé",
+"nga": "46626"
+}
+}
+}

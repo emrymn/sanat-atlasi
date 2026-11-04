@@ -238,8 +238,15 @@ Sonra Claude'a "gönderdim" de: testleri çalıştırıp yayınlar. Telefonda: A
 
 **6. Claude'un yapacakları** (yeni betik gerekiyor, Emre'nin kredisi yetince):
 
-- **Müze kopyasını tercih et:** şu an müze kopyası yalnız Commons'taki görsel küçükse alınıyor (`devasa_indir.py`). Müzenin kendi taraması genelde daha temiz (çerçevesiz, renkleri doğru). Met, NGA, AIC, Cleveland'da ~150, Getty, Rijksmuseum, Yale, Walters'ta ~150 eser için müze kopyası her durumda tercih edilecek; Claude betiği yazar, Emre çalıştırır, sonra yukarıdaki 4–5. adımlar.
-- **Küçük 1280'likleri yeniden üret (betik hazır, İş 112):** 7028 1280'liğin 2648'i aslında daha küçük (çoğu 600–1000 px), 1560'ının en büyük kopyası var. Mac'te depo kökünde:
+- **Müze kopyasını tercih et (betik hazır, İş 119):** en büyük kopyası Commons'tan olup aynı eserin açık erişim müze kaydı da bulunan 180 eser (`data/muze_numaralari.json`: NGA 76, Rijksmuseum 45, Met 44, Cleveland 10, Yale 9, AIC 2). Müzenin taraması oranı aynıysa ve yeterince büyükse Commons kopyasının yerine geçer (eskisi `gorseller_devasa/.commons/`'ta saklanır). Mac'te depo kökünde:
+  ```
+  git pull
+  caffeinate -i python3 scripts/muze_tercih.py --dene   # yalnız sayar
+  caffeinate -i python3 scripts/muze_tercih.py          # indirir (temkinli gider, ~1 saat; yarıda kalırsa yeniden çalıştır)
+  python3 scripts/r2_yukle.py --10gb-ustu               # (4. adımdaki anahtarlarla)
+  git add data/gorsel_kaynagi.json data/muze_tercih.json data/b_yenilenen.json && git commit -m "Müze taramaları" && git push
+  ```
+- **Küçük 1280'likleri yeniden üret (betik hazır, İş 118):** 7028 1280'liğin 2648'i aslında daha küçük (çoğu 600–1000 px), 1560'ının en büyük kopyası var. Mac'te depo kökünde:
   ```
   git pull
   python3 scripts/b_yenile.py --dene        # önce yalnız say
@@ -247,4 +254,4 @@ Sonra Claude'a "gönderdim" de: testleri çalıştırıp yayınlar. Telefonda: A
   python3 scripts/r2_yukle.py --10gb-ustu   # (4. adımdaki anahtarlarla) yenilenenler kovaya yeni adla yüklenir
   git add data/gorsel_kaynagi.json data/b_yenilenen.json && git commit -m "1280'likler yenilendi" && git push
   ```
-- ~~**Kopya eser taraması**~~ — yapıldı (İş 112: 1 yeni çift, Ribera'nın iki baskısı).
+- ~~**Kopya eser taraması**~~ — yapıldı (İş 118: 1 yeni çift, Ribera'nın iki baskısı).
