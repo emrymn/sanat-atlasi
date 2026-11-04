@@ -21,7 +21,7 @@ import { bildirimMetni } from '../bildirim.js';
 import { YENILIKLER, yenilikYazisi } from '../yenilikler.js';
 import { bolumler } from './harita.js';
 import { hatalariOku, hatalariTemizle, gunlukMetni, hataEkle } from '../hataGunlugu.js';
-import { telefondaOlanlar, kaliciSil, parcaAdi, PARCA, defterOku, defterYaz, defterSil, defterAdi } from '../devasaOnbellek.js';
+import { telefondaOlanlar, kaliciSil, kaliciYaz, eskileriTasi, PARCA, defterOku, defterYaz, defterSil, defterAdi, depoDurumu } from '../devasaOnbellek.js';
 
 // ---------- Ayarlar ----------
 // İş 126 (Emre: "küçük resmi indiri kaldırabiliriz, bir işe yaramıyor"): "Görselleri çevrimdışı indir" (pekiştirme
@@ -138,8 +138,8 @@ async function egimIzinDugmesi() {
   if (btn.isConnected) btn.hidden = hatirliyor;
 }
 
-// İş 60: en büyük kopyalar (4096 px) telefona. Service worker "?kalici=1" adresini kalıcı önbelleğe yazar (sınırlı
-// önbellekten farklı olarak kendiliğinden silinmez); görüntüleyici önce oraya bakar, internet yokken de büyük kopya açılır.
+// İş 60: en büyük kopyalar (4096 px) telefona; görüntüleyici önce oraya bakar, internet yokken de büyük kopya açılır.
+// İş 129: telefondaki yer IndexedDB (js/devasaOnbellek.js); iPhone'da Cache Storage bozulmuştu.
 const gb = (b) => (b / 1e9).toLocaleString('tr', { maximumFractionDigits: 1, minimumFractionDigits: 1 });
 
 // İş 84: telefondaki en büyük kopyalar. Listede olmayanlar (daha büyük dosyasıyla yenilenip yeni adres alanların eski
@@ -218,6 +218,7 @@ function devasaGoster() {
   const kac = toplam && i.hepsi ? ` · ~${gb((toplam * i.biten) / i.hepsi + (toplam * i.onceden) / i.hepsi)} / ${gb(toplam)} GB` : '';
   if (i.yerYok) mesaj.textContent = `Telefonda yer kalmadı: ${i.biten - i.hata} görsel indirildi. Yer açıp yeniden bas, kaldığı yerden sürer.`;
   else if (i.bitti && i.durduruldu) mesaj.textContent = `Durduruldu: ${i.biten - i.hata} görsel indirildi. Yeniden basınca kaldığı yerden sürer.`;
+  else if (i.bitti && i.inemedi && i.yazilamadi) mesaj.textContent = `Görseller indi ama telefona kaydedilemedi (${i.sonHata || 'bilinmeyen hata'}). Hata günlüğünü kopyalayıp gönder.`;
   else if (i.bitti && i.inemedi) mesaj.textContent = 'Görseller indirilemedi. İnternet bağlantını kontrol edip yeniden bas; kaldığı yerden sürer.';
   else if (i.bitti && i.parcaBitti)
     mesaj.textContent = `Parça ${i.parca} / ${i.parcaSayisi} bitti · telefonda ${i.onceden + i.biten - i.hata} / ${i.hepsi}. ${location.hash === '#/ayarlar' ? 'Uygulama yenileniyor, sıradaki parça kendiliğinden başlayacak…' : 'Sıradaki parça Ayarlar’a dönünce ya da uygulamayı yeniden açınca başlar.'}`;
@@ -262,6 +263,7 @@ function iziOku() {
 
 export async function devasaSurdur() {
   iziOku();
+  await eskileriTasi(); // İş 129: eski (Cache Storage) kopyalar IndexedDB'ye; okunamayanlar silinir
   await devasaHazirla();
   let var_ = false;
   try {
@@ -269,13 +271,13 @@ export async function devasaSurdur() {
   } catch {
     var_ = false;
   }
-  if (var_ && devasaAdresleri().length && 'caches' in window && !(d.devasaIndirme && !d.devasaIndirme.bitti)) devasaIndir({ kendiliginden: true }).catch(() => {});
+  if (var_ && devasaAdresleri().length && 'indexedDB' in window && !(d.devasaIndirme && !d.devasaIndirme.bitti)) devasaIndir({ kendiliginden: true }).catch(() => {});
 }
 
 async function devasaIndir({ kendiliginden = false } = {}) {
   if (d.devasaIndirme && !d.devasaIndirme.bitti) return;
   const m = document.getElementById('devasa-mesaj');
-  if (!('caches' in window)) {
+  if (!('indexedDB' in window)) {
     if (m) {
       m.className = 'mesaj hata';
       m.textContent = 'Bu tarayıcıda telefona kaydetme desteklenmiyor.';
@@ -292,8 +294,7 @@ async function devasaIndir({ kendiliginden = false } = {}) {
   const urller = kalan.slice(0, boy);
   const parcaSayisi = Math.max(1, Math.ceil(hepsi.length / boy));
   const parca = Math.min(parcaSayisi, Math.floor((hepsi.length - kalan.length) / boy) + 1);
-  const i = (d.devasaIndirme = { toplam: urller.length, hepsi: hepsi.length, onceden: hepsi.length - kalan.length, biten: 0, hata: 0, bitti: false, kendiliginden, parca, parcaSayisi, sonParca: kalan.length <= boy });
-  const onbellek = await caches.open(parcaAdi(parca));
+  const i = (d.devasaIndirme = { toplam: urller.length, hepsi: hepsi.length, onceden: hepsi.length - kalan.length, biten: 0, hata: 0, yazilamadi: 0, bitti: false, kendiliginden, parca, parcaSayisi, sonParca: kalan.length <= boy });
   try {
     devasaGoster();
   } catch {
@@ -314,7 +315,8 @@ async function devasaIndir({ kendiliginden = false } = {}) {
   // İş 123 (Emre: "yine indirirken çöktü", telefonda 87 GB boş): her görselden önce iz
   // bırakılır: uygulama çökerse bir sonraki açılışta hata günlüğüne kaçıncı görselde kaldığı yazılır.
   // İş 124 (Emre: "tek indirirken daha hızlı çöktü"): görseller artık service worker'dan geçmez (iOS uzun süre durmadan
-  // çalışan service worker'ı kapatıyor, uygulama onunla düşüyordu): sayfa kendisi indirip parçanın önbelleğine yazar.
+  // çalışan service worker'ı kapatıyor, uygulama onunla düşüyordu): sayfa kendisi indirir.
+  // İş 129: ve IndexedDB'ye yazar (Cache Storage telefonda "TypeError" / "Internal error" veriyordu)
   const isci = async () => {
     while (sira < urller.length && !i.durdur && !i.yerYok) {
       const u = urller[sira++];
@@ -322,18 +324,23 @@ async function devasaIndir({ kendiliginden = false } = {}) {
       try {
         const y = await fetch(u, { mode: 'cors', credentials: 'omit', cache: 'no-store' });
         if (!y.ok || !(y.headers.get('content-type') || '').startsWith('image/')) i.hata++;
-        else
-          await onbellek.put(u, y).then(
+        else {
+          const blob = await y.blob();
+          await kaliciYaz(u, blob).then(
             () => {
               defter.add(defterAdi(u));
               if (++yazilmamis >= 10) (defterYaz(defter), (yazilmamis = 0));
             },
-            (e) => {
+            async (e) => {
               if (e && e.name === 'QuotaExceededError') i.yerYok = true;
               else i.hata++;
-              hataEkle({ m: `Önbelleğe yazılamadı: ${(e && (e.name || e.message)) || e}`, k: u.split('/').pop(), a: location.hash });
+              i.yazilamadi++;
+              i.sonHata = (e && (e.name && e.name !== 'Error' ? `${e.name}: ${e.message}` : e.message)) || String(e);
+              // aynı hata 200 kez yazılmasın: parça başına ilk üçü (ilkinde depo durumu da)
+              if (i.yazilamadi <= 3) hataEkle({ m: `Telefona kaydedilemedi: ${i.sonHata}`, k: u.split('/').pop(), y: i.yazilamadi === 1 ? await depoDurumu() : '', a: location.hash });
             },
           );
+        }
       } catch (e) {
         i.hata++;
       }

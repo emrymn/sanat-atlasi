@@ -383,6 +383,21 @@ test('görüntüleyici: en büyük kopya R2\'den arkada iner ve yerine geçer; y
   expect(await page.evaluate(async (u) => !!(await (await caches.open('atlas-resim-2')).match(u)), istenen[0])).toBe(false);
 });
 
+// İş 129: telefondaki en büyük kopya sayısı (IndexedDB atlas-devasa · g); yenilenirken -1
+function devasaSayisi() {
+  return new Promise((coz) => {
+    const r = indexedDB.open('atlas-devasa', 1);
+    r.onupgradeneeded = () => r.result.objectStoreNames.contains('g') || r.result.createObjectStore('g');
+    r.onerror = () => coz(-1);
+    r.onsuccess = () => {
+      const db = r.result;
+      const c = db.transaction('g', 'readonly').objectStore('g').count();
+      c.onsuccess = () => (db.close(), coz(c.result));
+      c.onerror = () => (db.close(), coz(-1));
+    };
+  });
+}
+
 // İş 120 (Emre'nin hata günlüğü: "indirirken çöküyor"; "uygulama kapalıyken de indirsin"): indirme sürerken Ayarlar'dan
 // geri çıkılınca (sayfa kapanma katmanındayken bir görsel bitince düğme bulunamıyor, indirme duruyordu) indirme sürer ve
 // hata vermez; uygulama kapatılıp açılınca (yeniden yükleme) kaldığı yerden kendiliğinden sürer
@@ -405,7 +420,7 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
   adlar = await page.locator('.eser img').evaluateAll((l) => l.slice(0, 12).map((i) => (i.getAttribute('src').match(/([0-9a-f]{16})\.jpg/) || [])[1]).filter(Boolean));
   expect(adlar.length).toBeGreaterThanOrEqual(8);
   const n = adlar.length;
-  const telefonda = () => page.evaluate(() => (async () => { let n = 0; for (const a of (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici'))) n += (await (await caches.open(a)).keys()).length; return n; })()).catch(() => -1); // yenilenirken -1
+  const telefonda = () => page.evaluate(devasaSayisi).catch(() => -1); // yenilenirken -1
   // Defter → Ayarlar (ileri), indir, hemen geri: Ayarlar kapanma katmanındayken görseller biter
   await page.goto('./#/ilerleme');
   await page.reload();
@@ -472,10 +487,8 @@ test('Ayarlar: en büyük kopyalar parça parça iner, parçalar arasında yenil
   await expect(page.locator('#devasa-mesaj')).toContainText(`Parça 1 / ${Math.ceil(n / 3)}`);
   await expect(page.locator('#devasa-mesaj')).toContainText('bitti', { timeout: 15000 });
   // yenilenir, sıradaki parçalar kendiliğinden
-  await expect.poll(() => page.evaluate(() => (async () => { let n = 0; for (const a of (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici'))) n += (await (await caches.open(a)).keys()).length; return n; })()).catch(() => -1), { timeout: 60000 }).toBe(n);
+  await expect.poll(() => page.evaluate(devasaSayisi).catch(() => -1), { timeout: 60000 }).toBe(n);
   await expect(bolum).toContainText(`Telefonda: ${n} / ${n}`, { timeout: 15000 });
-  const parcalar = await page.evaluate(async () => (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici-')).length);
-  expect(parcalar).toBe(Math.ceil(n / 3));
   expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBeNull();
   // internetsiz: görüntüleyici parça önbelleğindeki en büyük kopyayı açar
   r2Acik = false;
@@ -512,7 +525,7 @@ test('Ayarlar: en büyük kopyalar telefona iner, kaldığı yerden sürer, inte
   await bolum.locator('[data-devasa-indir]').click();
   await expect(page.locator('#devasa-mesaj')).toHaveText('Bitti: 3 görsel indirildi.');
   await expect(bolum).toContainText('Telefonda: 3 / 3');
-  expect(await page.evaluate(() => (async () => { let n = 0; for (const a of (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici'))) n += (await (await caches.open(a)).keys()).length; return n; })())).toBe(3);
+  expect(await page.evaluate(devasaSayisi)).toBe(3);
   // ikinci basış hiçbir şey indirmez
   const once = istenen.length;
   await bolum.locator('[data-devasa-indir]').click();
@@ -529,37 +542,34 @@ test('Ayarlar: en büyük kopyalar telefona iner, kaldığı yerden sürer, inte
   page.once('dialog', (dl) => dl.accept());
   await bolum.locator('[data-devasa-sil]').click();
   await expect(bolum).toContainText('Telefonda: 0 / 3');
-  expect(await page.evaluate(async () => (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici')).length)).toBe(0);
+  expect(await page.evaluate(devasaSayisi)).toBe(0);
 });
 
-// İş 62: R2 Emre'nin alan adından (r2.dev mobil operatörde engelli); r2.dev adresiyle telefona inmiş büyük kopyalar taşınır
-test('R2 kendi alan adından: büyük kopya ayrı önbellekte; r2.dev ile inmişler yeni adrese taşınır', async ({ page, context }) => {
+// İş 129: iPhone'da Cache Storage bozulunca en büyük kopyalar IndexedDB'ye geçti: eski önbellekteki (okunabilen)
+// kopyalar açılışta IndexedDB'ye taşınır, eski önbellek silinir; görüntüleyici taşınan kopyayı internetsiz açar
+test('en büyük kopyalar eski önbellekten IndexedDB\'ye taşınır, görüntüleyici oradan açar', async ({ page, context }) => {
   await agiHazirla(context);
   const png = readFileSync(new URL('../fixtures/eser.png', import.meta.url));
   let adlar = [];
   await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) =>
     r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://gorsel.noracloud.ai', buyuk: false, devasa: adlar }) }),
   );
-  await context.route(/gorsel\.noracloud\.ai\/d\//, (r) => r.fulfill({ status: 200, contentType: 'image/png', body: png, headers: { 'access-control-allow-origin': '*' } }));
+  await context.route(/gorsel\.noracloud\.ai\/d\//, (r) => r.abort('internetdisconnected'));
   await page.goto('./#/sanatci/giotto-di-bondone');
   await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
   adlar = await page.locator('.eser img').evaluateAll((l) => l.slice(0, 2).map((i) => (i.getAttribute('src').match(/([0-9a-f]{16})\.jpg/) || [])[1]).filter(Boolean));
-  // eski sürümün r2.dev adresiyle telefona indirdiği iki kopya
+  // eski sürümün parça önbelleğine indirdiği iki kopya
   await page.evaluate(
     async ({ a, bayt }) => {
-      const c = await caches.open('atlas-devasa-kalici');
-      for (const ad of a) await c.put(`https://pub-eski.r2.dev/d/${ad}.jpg`, new Response(new Uint8Array(bayt), { headers: { 'content-type': 'image/png' } }));
+      const c = await caches.open('atlas-devasa-kalici-1');
+      for (const ad of a) await c.put(`https://gorsel.noracloud.ai/d/${ad}.jpg`, new Response(new Uint8Array(bayt), { headers: { 'content-type': 'image/png' } }));
     },
     { a: adlar, bayt: [...png] },
   );
-  // yeni service worker etkinleşince taşınır
-  await page.evaluate(async () => (await navigator.serviceWorker.getRegistration()).unregister());
   await page.reload();
-  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
-  await expect
-    .poll(() => page.evaluate(async () => (await (await caches.open('atlas-devasa-kalici')).keys()).map((r) => r.url).sort()))
-    .toEqual(adlar.map((a) => `https://gorsel.noracloud.ai/d/${a}.jpg`).sort());
-  // görüntüleyici yeni adresteki büyük kopyayı açar
+  await expect.poll(() => page.evaluate(devasaSayisi), { timeout: 15000 }).toBe(2);
+  await expect.poll(() => page.evaluate(async () => (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici')).length)).toBe(0);
+  // internet yok (R2 kapalı): görüntüleyici IndexedDB'deki büyük kopyayı açar
   await page.locator('.eser').first().click();
   await expect(page.locator('.gor-resim')).toHaveAttribute('src', /^https:\/\/gorsel\.noracloud\.ai\/d\//);
   await expect(page.locator('.gor-resim')).toHaveAttribute('data-test', 'devasa');
