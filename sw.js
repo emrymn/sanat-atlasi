@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.64.0';
+const SURUM = '1.64.1';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -212,7 +212,9 @@ self.addEventListener('fetch', (e) => {
     // künye (portre, okunuş, IPA) Emre'nin Mac'inde güncellenir: sürüm beklemeden gelsin diye önce ağ, yoksa önbellek
     e.respondWith(onceAg(istek, KABUK));
   } else if (url.origin === self.location.origin) {
-    e.respondWith(kabuk(istek));
+    // İş 122: önbellek okunamazsa (telefonda depolama dolu ya da bozuk) ağdan; yoksa iPhone "WebKit encountered an
+    // internal error" gösterip uygulamayı hiç açmıyordu
+    e.respondWith(kabuk(istek).catch(() => fetch(istek)));
   } else if (url.hostname === 'commons.wikimedia.org' && url.pathname.includes('Special:FilePath')) {
     e.respondWith(resim(e));
   } else if (url.hostname === 'upload.wikimedia.org' || url.hostname === 'thumb.wikimedia.org') {
