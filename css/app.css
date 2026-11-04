@@ -4960,6 +4960,412 @@ main[data-hareket='giris'] .ozet .ad {
 .konu-eserler .eser-yazi b {
   font-weight: 600;
 }
+
+/* ===== Konu sayfası · "Aynı hikâye, farklı eller" =====
+   Başta hikâyenin en ünlü tablosu kenardan kenara, yavaşça netleşip hafifçe yaklaşır (.konu-sahne.acik);
+   başlık resmin alt kenarına biner. Aşağıda bölümler ekrana girdikçe yükselir (.gorundu); eserler bir zaman
+   çizgisi üzerinde yatay şerit: çizgi soldan çizilir, duraklar sırayla kayarak gelir (.konu-yol.gorundu.dolu). */
+.konu-sayfa {
+  --kenar: calc(env(safe-area-inset-left) + var(--yan));
+  --kenar-sag: calc(env(safe-area-inset-right) + var(--yan));
+}
+.konu-sahne {
+  position: relative;
+  margin: -6px calc(-1 * var(--kenar-sag)) 0 calc(-1 * var(--kenar));
+  height: min(62vh, 520px);
+  overflow: hidden;
+  background: var(--surface);
+}
+.konu-sahne.bos {
+  height: 120px;
+  background: none;
+}
+.konu-sahne-resim {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.konu-sahne-resim img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  opacity: 0;
+  scale: 1.14;
+  filter: blur(10px) saturate(0.6);
+  transition:
+    opacity 1.1s ease,
+    scale 2.4s cubic-bezier(0.16, 0.8, 0.2, 1),
+    filter 1.6s ease;
+}
+.konu-sahne.acik .konu-sahne-resim img {
+  opacity: 1;
+  scale: 1.02;
+  filter: none;
+}
+.konu-sahne.acik .konu-sahne-resim {
+  animation: konu-nefes 22s ease-in-out 2.4s infinite alternate;
+}
+@keyframes konu-nefes {
+  to {
+    transform: scale(1.07) translate(-1.5%, -1%);
+  }
+}
+/* resmin altı zemine erir; başlık bu bölgeye biner */
+.konu-sahne::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(var(--bg-rgb), 0.55), rgba(var(--bg-rgb), 0) 22%),
+    linear-gradient(to top, var(--bg) 4%, rgba(var(--bg-rgb), 0.86) 26%, rgba(var(--bg-rgb), 0) 58%);
+  pointer-events: none;
+}
+.konu-sahne-yazi {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  right: var(--kenar-sag);
+  max-width: 70%;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--overlay-btn);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  font: 400 12px/1.3 var(--sans);
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  translate: 0 -6px;
+  transition:
+    opacity 0.6s ease 1.2s,
+    translate 0.6s ease 1.2s;
+}
+.konu-sahne-yazi:empty {
+  display: none;
+}
+.konu-sahne.acik .konu-sahne-yazi {
+  opacity: 1;
+  translate: none;
+}
+
+.konu-baslik {
+  position: relative;
+  z-index: 1;
+  margin-top: -112px;
+}
+.konu-sahne.bos + .konu-baslik {
+  margin-top: -96px;
+}
+.konu-baslik > * {
+  animation: konu-yazi-gir 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+.konu-baslik > :nth-child(2) {
+  animation-delay: 0.12s;
+}
+.konu-baslik > :nth-child(3) {
+  animation-delay: 0.24s;
+}
+@keyframes konu-yazi-gir {
+  from {
+    opacity: 0;
+    translate: 0 18px;
+  }
+}
+.konu-ust {
+  display: flex;
+  gap: 8px;
+  margin: 0 0 8px;
+  font: 600 12px/1.2 var(--sans);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--vurgu-acik);
+}
+.konu-ad {
+  margin: 0;
+  font: 400 44px/1.02 var(--serif);
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.konu-ad:focus {
+  outline: none;
+}
+.konu-kaynak {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0 0;
+  font: 400 14px/1.4 var(--sans);
+  color: var(--ink-3);
+}
+.konu-kaynak::before {
+  content: '';
+  flex: none;
+  width: 22px;
+  height: 1px;
+  background: var(--vurgu-acik);
+}
+.konu-ozet {
+  position: relative;
+  margin: 26px 0 0;
+  padding-top: 18px;
+  font: italic 400 22px/1.4 var(--serif);
+  color: var(--ink);
+  text-wrap: pretty;
+  animation: konu-yazi-gir 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.36s backwards;
+}
+.konu-ozet::before {
+  content: '\201C';
+  position: absolute;
+  top: -14px;
+  left: -4px;
+  font: 400 64px/1 var(--serif);
+  color: var(--vurgu-acik);
+  opacity: 0.7;
+}
+
+.konu-bolum {
+  margin-top: 40px;
+}
+.konu-bolum[data-gozcu] {
+  opacity: 0;
+  translate: 0 22px;
+  transition:
+    opacity 0.7s ease,
+    translate 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.konu-bolum.gorundu {
+  opacity: 1;
+  translate: none;
+}
+.konu-hikaye .okuma + .okuma {
+  margin-top: 14px;
+}
+.konu-ilk::first-letter {
+  float: left;
+  margin: 6px 10px 0 -2px;
+  font: 400 68px/0.8 var(--serif);
+  color: var(--vurgu-acik);
+}
+
+.konu-ipuclari {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.konu-ipuclari li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  font: 400 16px/1.5 var(--sans);
+  color: var(--ink);
+  opacity: 0;
+  translate: 0 12px;
+  transition:
+    opacity 0.5s ease calc(0.15s + var(--i) * 90ms),
+    translate 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) calc(0.15s + var(--i) * 90ms);
+}
+.konu-ipuclari .ikon {
+  flex: none;
+  margin-top: 2px;
+  color: var(--vurgu-acik);
+}
+.gorundu .konu-ipuclari li {
+  opacity: 1;
+  translate: none;
+}
+
+.konu-yol-not {
+  margin: -2px 0 14px;
+  font: 400 14px/1.4 var(--sans);
+  color: var(--ink-3);
+}
+.konu-serit {
+  margin: 0 calc(-1 * var(--kenar-sag)) 0 calc(-1 * var(--kenar));
+  padding: 0 var(--kenar-sag) 6px var(--kenar);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--kenar);
+  scrollbar-width: none;
+}
+.konu-serit::-webkit-scrollbar {
+  display: none;
+}
+.konu-serit > p {
+  margin: 0;
+}
+.konu-duraklar {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.konu-duraklar > li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: min(62vw, 240px);
+  scroll-snap-align: start;
+}
+/* zaman çizgisi: durağın noktasından bir sonrakine */
+.konu-duraklar > li::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  right: -20px;
+  height: 1px;
+  background: var(--border);
+  transform-origin: left;
+  scale: 0 1;
+  transition: scale 0.5s ease calc(var(--i) * 110ms);
+}
+.konu-duraklar > li:last-child::after {
+  right: 0;
+  background: linear-gradient(to right, var(--border), transparent);
+}
+.konu-yil {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 15px;
+  font: 600 12px/1 var(--sans);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.konu-yil::before {
+  content: '';
+  flex: none;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--vurgu-acik);
+  box-shadow: 0 0 0 4px var(--bg);
+}
+.konu-durak {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: zoom-in;
+  -webkit-tap-highlight-color: transparent;
+}
+.konu-durak-resim {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 10px 28px -14px rgba(0, 0, 0, 0.6);
+}
+.konu-durak-resim img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: scale 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.konu-durak:active .konu-durak-resim img {
+  scale: 1.05;
+}
+@media (hover: hover) {
+  .konu-durak:hover .konu-durak-resim img {
+    scale: 1.05;
+  }
+}
+.konu-durak:focus-visible {
+  outline: none;
+}
+.konu-durak:focus-visible .konu-durak-resim {
+  outline: 2px solid var(--vurgu-acik);
+  outline-offset: 3px;
+}
+.konu-durak-yazi {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.konu-durak-yazi b {
+  font: 600 14px/1.3 var(--sans);
+  color: var(--ink);
+}
+.konu-durak-yazi span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font: italic 400 16px/1.3 var(--serif);
+  color: var(--ink-2);
+}
+.konu-duraklar > li > .konu-durak,
+.konu-yil {
+  opacity: 0;
+  translate: 28px 0;
+  transition:
+    opacity 0.55s ease calc(0.1s + var(--i) * 110ms),
+    translate 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) calc(0.1s + var(--i) * 110ms);
+}
+.konu-yol.gorundu.dolu .konu-duraklar > li > .konu-durak,
+.konu-yol.gorundu.dolu .konu-yil {
+  opacity: 1;
+  translate: none;
+}
+.konu-yol.gorundu.dolu .konu-duraklar > li::after {
+  scale: 1 1;
+}
+.konu-dipnot {
+  margin: 36px 0 0;
+  font: 400 13px/1.5 var(--sans);
+  color: var(--ink-3);
+}
+@media (min-width: 560px) {
+  .konu-ad {
+    font-size: 54px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .konu-sahne-resim img,
+  .konu-sahne-yazi,
+  .konu-bolum[data-gozcu],
+  .konu-ipuclari li,
+  .konu-duraklar > li::after,
+  .konu-duraklar > li > .konu-durak,
+  .konu-yil {
+    transition: none;
+  }
+  .konu-sahne.acik .konu-sahne-resim,
+  .konu-baslik > *,
+  .konu-ozet {
+    animation: none;
+  }
+}
 /* ===== Konular · Hikâye desteleri =====
    Bir konu = aynı hikâyenin farklı ressamlardaki hâlleri: her kartın arkasında o konunun iki başka resmi
    yelpaze gibi açılır (.konu-deste). Grup ekrana girince (.gorundu) kartlar sırayla yükselir, sonra deste açılır;
