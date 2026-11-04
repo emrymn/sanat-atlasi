@@ -170,3 +170,26 @@ test('kopyalariAyikla: silinen çıkar, kurs bilgisi ve başlığı kalana geçe
     ['c:a.jpg', 'q:Q1'],
   );
 });
+
+// İş 111: Emre'nin bildirdiği ve denetimin çıkardığı görseller hangi yoldan gelirse gelsin gösterilmez
+test('İş 111: çıkarılan görseller atılır, görseli kalmayan eser düşer; liste veride ve önbellekte tutarlı', async () => {
+  const { cikarilanlariAyikla } = await import('../../js/eserler.js');
+  const c = new Set(['masaccio,_trinità.jpg', 'met:https://x/a.jpg']);
+  const liste = [
+    { anahtar: 'a', gorseller: [{ k: 'commons', d: 'Masaccio,_trinit%C3%A0.jpg' }, { k: 'commons', d: 'Masaccio - Trinity.jpg' }] },
+    { anahtar: 'b', gorseller: [{ k: 'met', u: 'https://x/a.jpg' }] },
+    { anahtar: 'c', gorseller: [{ k: 'commons', d: 'Başka.jpg' }] },
+  ];
+  const s = cikarilanlariAyikla(liste, c);
+  assert.deepEqual(s.map((e) => e.anahtar), ['a', 'c']);
+  assert.deepEqual(s[0].gorseller.map((g) => g.d), ['Masaccio - Trinity.jpg']);
+  assert.equal(s[1], liste[2]);
+  assert.equal(cikarilanlariAyikla(liste, new Set()), liste);
+  // veri: listedeki hiçbir görsel önbellekte yok (scripts/gorsel_denetim/isle.py ikisini birlikte yazar)
+  const { readFileSync } = await import('node:fs');
+  const oku = (f) => JSON.parse(readFileSync(new URL(`../../${f}`, import.meta.url)));
+  const cikar = new Set(oku('data/cikarilan_gorseller.json').anahtarlar);
+  const ob = oku('data/eserler_onbellek.json').sanatcilar;
+  for (const v of Object.values(ob)) assert.equal(cikarilanlariAyikla(v.eserler, cikar).length, v.eserler.length);
+  for (const a of ['cenacolo_di_fuligno_di_pietro_perugino.jpg', 'masaccio,_trinità.jpg', 'assisis_basilica_superiore.jpg']) assert.ok(cikar.has(a), a);
+});

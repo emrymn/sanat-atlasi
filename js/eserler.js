@@ -216,6 +216,28 @@ export function kopyalariAyikla(sanatciId, liste, k = kopyalar) {
   return silinecek.size ? liste.filter((e) => !silinecek.has(e.anahtar)) : liste;
 }
 
+// İş 111 (Emre: "bunlar kaldırılacak resimler, direkt gösterme"): çıkarılan görseller (data/cikarilan_gorseller.json;
+// scripts/gorsel_denetim/isle.py "cikar" kararlarından) hangi yoldan gelirse gelsin (önbellek, canlı Wikidata, kurs
+// listesi) atılır; görseli kalmayan eser düşer. Önbellek 30 günü geçince canlı Wikidata eserleri eklenir: liste
+// olmasaydı kaldırılan eserler oradan geri gelirdi. Anahtar: Commons'ta küçük harfli dosya adı, müzelerde "kaynak:adres".
+let cikarilan = new Set();
+export function cikarilanlariAyarla(j) {
+  cikarilan = new Set(j && Array.isArray(j.anahtarlar) ? j.anahtarlar.map((a) => String(a).normalize('NFC')) : []);
+  bellek.clear();
+  gecici.clear();
+}
+const cikarAnahtari = (g) => (g.k === 'commons' ? dosyaNormal(g.d).toLowerCase() : `${g.k}:${g.d || g.i || g.u || ''}`).normalize('NFC');
+export function cikarilanlariAyikla(liste, c = cikarilan) {
+  if (!c.size) return liste;
+  const sonuc = [];
+  for (const e of liste) {
+    const gorseller = (e.gorseller || []).filter((g) => !c.has(cikarAnahtari(g)));
+    if (!gorseller.length) continue;
+    sonuc.push(gorseller.length === e.gorseller.length ? e : { ...e, gorseller });
+  }
+  return sonuc;
+}
+
 // Geçici sonuç (hata ya da Wikidata'ya ulaşılamadı): bu kadar süre aynı liste verilir, sonra yeniden denenir
 export const GECICI_SURE = 60 * 1000;
 const gecici = new Map();
@@ -229,7 +251,7 @@ export function sanatciEserleri(sanatci, { canli = true } = {}) {
   const soz = hesapla(sanatci, { canli })
     .catch(() => ({ liste: eserleriBirlestir(kursResimleri(sanatci, turler), []), kalici: false }))
     .then(({ liste, kalici }) => {
-      const eserler = kopyalariAyikla(sanatci.id, liste);
+      const eserler = kopyalariAyikla(sanatci.id, cikarilanlariAyikla(liste));
       for (const e of eserler) {
         e.sid = sanatci.id;
         const ad = eserAdiBul(sanatci.id, e);

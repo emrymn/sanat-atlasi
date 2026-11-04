@@ -70,3 +70,20 @@ test('İş 84: daha büyük dosyasıyla yenilenen en büyük kopya sürüm ekli 
   assert.equal(ustKopya('gorseller/b/abc123abc123abc1.jpg', { buyuk: true }), `${r}/d/abc123abc123abc1-0a1b2c3d.jpg`);
   uzakGorselleriAyarla(null);
 });
+
+test('İş 112: en büyük kopyadan yeniden üretilen 1280\'lik sürüm ekli adreste; zinciri bozulmaz', async () => {
+  const { uzakGorselleriAyarla, ustKopya } = await import('../../js/gorsel.js');
+  const c = { k: 'commons', d: 'Örnek dosya.jpg' };
+  const r = 'https://gorsel.ornek.ai';
+  yerelGorselleriAyarla({ [yerelAnahtar(c)]: 'abc123abc123abc1' });
+  uzakGorselleriAyarla({ adres: r, buyuk: true, devasa: ['abc123abc123abc1'], b_surumler: { abc123abc123abc1: '1a2b3c4d', def456def456def4: '<kotu>' } });
+  assert.equal(gorselUrl(c, 800), `${r}/b/abc123abc123abc1-1a2b3c4d.jpg`);
+  assert.equal(gorselUrl(c, 400), 'gorseller/k/abc123abc123abc1.jpg');
+  // 400 → yeni 1280'lik → en büyük kopya
+  assert.equal(ustKopya('gorseller/k/abc123abc123abc1.jpg'), `${r}/b/abc123abc123abc1-1a2b3c4d.jpg`);
+  assert.equal(ustKopya(`${r}/b/abc123abc123abc1-1a2b3c4d.jpg`, { buyuk: true }), `${r}/d/abc123abc123abc1.jpg`);
+  // sürümü olmayan ya da geçersiz sürümlü: eski adres
+  assert.equal(ustKopya('gorseller/k/def456def456def4.jpg'), `${r}/b/def456def456def4.jpg`);
+  uzakGorselleriAyarla(null);
+  yerelGorselleriAyarla(null);
+});

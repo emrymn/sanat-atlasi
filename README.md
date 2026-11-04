@@ -239,5 +239,12 @@ Sonra Claude'a "gönderdim" de: testleri çalıştırıp yayınlar. Telefonda: A
 **6. Claude'un yapacakları** (yeni betik gerekiyor, Emre'nin kredisi yetince):
 
 - **Müze kopyasını tercih et:** şu an müze kopyası yalnız Commons'taki görsel küçükse alınıyor (`devasa_indir.py`). Müzenin kendi taraması genelde daha temiz (çerçevesiz, renkleri doğru). Met, NGA, AIC, Cleveland'da ~150, Getty, Rijksmuseum, Yale, Walters'ta ~150 eser için müze kopyası her durumda tercih edilecek; Claude betiği yazar, Emre çalıştırır, sonra yukarıdaki 4–5. adımlar.
-- **Küçük 1280'likleri yeniden üret:** bazı eserlerin 1280 px kopyası aslında daha küçük (ör. Met'in "web-large" dosyası ~620 px). Büyük kopya indiyse 1280'lik ondan küçültülerek yeniden yapılır (Mac'te `sips`), sonra 4–5. adımlar.
-- **Kopya eser taraması:** bütün eserlerin büyük kopyaları inince `scripts/kopya_bul.py` yeniden çalıştırılır (aynı tablonun iki kaydı).
+- **Küçük 1280'likleri yeniden üret (betik hazır, İş 112):** 7028 1280'liğin 2648'i aslında daha küçük (çoğu 600–1000 px), 1560'ının en büyük kopyası var. Mac'te depo kökünde:
+  ```
+  git pull
+  python3 scripts/b_yenile.py --dene        # önce yalnız say
+  python3 scripts/b_yenile.py               # en büyük kopyadan 1280'e küçültür (birkaç dakika, ağ gerekmez)
+  python3 scripts/r2_yukle.py --10gb-ustu   # (4. adımdaki anahtarlarla) yenilenenler kovaya yeni adla yüklenir
+  git add data/gorsel_kaynagi.json data/b_yenilenen.json && git commit -m "1280'likler yenilendi" && git push
+  ```
+- ~~**Kopya eser taraması**~~ — yapıldı (İş 112: 1 yeni çift, Ribera'nın iki baskısı).
