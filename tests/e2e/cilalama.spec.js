@@ -405,7 +405,7 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
   adlar = await page.locator('.eser img').evaluateAll((l) => l.slice(0, 12).map((i) => (i.getAttribute('src').match(/([0-9a-f]{16})\.jpg/) || [])[1]).filter(Boolean));
   expect(adlar.length).toBeGreaterThanOrEqual(8);
   const n = adlar.length;
-  const telefonda = () => page.evaluate(async () => (await (await caches.open('atlas-devasa-kalici')).keys()).length);
+  const telefonda = () => page.evaluate(() => (async () => { let n = 0; for (const a of (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici'))) n += (await (await caches.open(a)).keys()).length; return n; })());
   // Defter → Ayarlar (ileri), indir, hemen geri: Ayarlar kapanma katmanındayken görseller biter
   await page.goto('./#/ilerleme');
   await page.reload();
@@ -421,19 +421,67 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
   await expect.poll(telefonda, { timeout: 15000 }).toBeGreaterThanOrEqual(3);
   expect(hatalar).toEqual([]);
   // indirme sürerken uygulama kapanır (yeniden yükleme): açılınca kendiliğinden kaldığı yerden sürer
+  // İş 124: kalanlar 2'şerlik parçalarla iner; her parçadan sonra (Ayarlar açıksa) uygulama yenilenip sıradakine geçer
+  await page.addInitScript(() => (window.__atlasParca = 2));
   bekle = 600;
   const once = await telefonda();
   expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBe('1');
   await page.reload();
-  await expect.poll(telefonda, { timeout: 30000 }).toBe(n);
+  // Defter'de açıldı: yalnız bir parça (2 görsel) kendiliğinden iner, uygulama kullanıcı başka sayfadayken yenilenmez
+  // (yeniden yüklemeden hemen önce bir görsel daha bitmiş olabilir: +1 pay)
+  await expect.poll(telefonda, { timeout: 30000 }).toBeGreaterThanOrEqual(Math.min(n, once + 2));
+  await page.waitForTimeout(2500);
+  // Ayarlar dışında hepsi inmeden durur (uygulama kendini yenilemez, işaret kalır); yük altında yeniden yüklemeden hemen
+  // önce bir iki görsel daha bitebilir, kesin sayı denetlenmez
+  expect(await telefonda()).toBeLessThan(n);
+  expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBe('1');
   expect(once).toBeLessThan(n);
-  await expect.poll(() => page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBeNull();
   // İş 123: yarıda kalan indirme (uygulama kapandı) hata günlüğüne kaçıncı görselde kaldığıyla yazılır; iz silinir
   expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:hatalar'))).toContain('yarıda kaldı');
-  expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-iz'))).toBeNull();
+  // Ayarlar'a dönünce yenilenip kalan parçalar kendiliğinden iner
   await page.evaluate(() => (location.hash = '#/ayarlar'));
+  await expect.poll(telefonda, { timeout: 60000 }).toBe(n);
+  await expect.poll(() => page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur')), { timeout: 15000 }).toBeNull();
+  expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-iz'))).toBeNull();
   await expect(page.locator('[data-test="devasa-indir"]')).toContainText(`Telefonda: ${n} / ${n}`);
   expect(hatalar).toEqual([]);
+});
+
+// İş 124 (Emre: "indirmeyi parçalara böl"): Ayarlar açıkken parçalar arasında uygulama kendini yeniler, sıradaki parça
+// kendiliğinden başlar; her parça ayrı önbellekte; görüntüleyici parça önbelleğindeki kopyayı internetsiz açar
+test('Ayarlar: en büyük kopyalar parça parça iner, parçalar arasında yenilenir, hepsi iner', async ({ page, context }) => {
+  await agiHazirla(context);
+  await context.addInitScript(() => (window.__atlasParca = 3));
+  let adlar = [];
+  await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) =>
+    r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar, devasa_bayt: 3e9 }) }),
+  );
+  let r2Acik = true;
+  await context.route(/pub-deneme\.r2\.dev\/d\//, (r) =>
+    r2Acik ? r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)), headers: { 'access-control-allow-origin': '*' } }) : r.abort('internetdisconnected'),
+  );
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
+  adlar = await page.locator('.eser img').evaluateAll((l) => l.slice(0, 8).map((i) => (i.getAttribute('src').match(/([0-9a-f]{16})\.jpg/) || [])[1]).filter(Boolean));
+  const n = adlar.length;
+  expect(n).toBeGreaterThanOrEqual(6);
+  await page.goto('./#/ayarlar');
+  await page.reload();
+  const bolum = page.locator('[data-test="devasa-indir"]');
+  await bolum.locator('[data-devasa-indir]').click();
+  await expect(page.locator('#devasa-mesaj')).toContainText(`Parça 1 / ${Math.ceil(n / 3)}`);
+  await expect(page.locator('#devasa-mesaj')).toContainText('bitti', { timeout: 15000 });
+  // yenilenir, sıradaki parçalar kendiliğinden
+  await expect.poll(() => page.evaluate(() => (async () => { let n = 0; for (const a of (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici'))) n += (await (await caches.open(a)).keys()).length; return n; })()), { timeout: 60000 }).toBe(n);
+  await expect(bolum).toContainText(`Telefonda: ${n} / ${n}`, { timeout: 15000 });
+  const parcalar = await page.evaluate(async () => (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici-')).length);
+  expect(parcalar).toBe(Math.ceil(n / 3));
+  expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBeNull();
+  // internetsiz: görüntüleyici parça önbelleğindeki en büyük kopyayı açar
+  r2Acik = false;
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await page.locator('.eser').first().click();
+  await expect(page.locator('.gor-resim')).toHaveAttribute('data-test', 'devasa');
 });
 
 // İş 60: en büyük kopyalar Ayarlar'dan telefona; kalıcı önbellekte durur, internet olmadan görüntüleyicide açılır
@@ -464,7 +512,7 @@ test('Ayarlar: en büyük kopyalar telefona iner, kaldığı yerden sürer, inte
   await bolum.locator('[data-devasa-indir]').click();
   await expect(page.locator('#devasa-mesaj')).toHaveText('Bitti: 3 görsel indirildi.');
   await expect(bolum).toContainText('Telefonda: 3 / 3');
-  expect(await page.evaluate(async () => (await (await caches.open('atlas-devasa-kalici')).keys()).length)).toBe(3);
+  expect(await page.evaluate(() => (async () => { let n = 0; for (const a of (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici'))) n += (await (await caches.open(a)).keys()).length; return n; })())).toBe(3);
   // ikinci basış hiçbir şey indirmez
   const once = istenen.length;
   await bolum.locator('[data-devasa-indir]').click();
@@ -481,7 +529,7 @@ test('Ayarlar: en büyük kopyalar telefona iner, kaldığı yerden sürer, inte
   page.once('dialog', (dl) => dl.accept());
   await bolum.locator('[data-devasa-sil]').click();
   await expect(bolum).toContainText('Telefonda: 0 / 3');
-  expect(await page.evaluate(() => caches.has('atlas-devasa-kalici'))).toBe(false);
+  expect(await page.evaluate(async () => (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici')).length)).toBe(0);
 });
 
 // İş 62: R2 Emre'nin alan adından (r2.dev mobil operatörde engelli); r2.dev adresiyle telefona inmiş büyük kopyalar taşınır

@@ -3,6 +3,7 @@
 // büyük tablosu). Görsel yüklenince ekranda kapladığı yere bakılır; gerçek pikseli yetmiyorsa bir üst kopya arkada
 // indirilir ve hazır olunca yerine geçer (bu sırada küçük kopya görünür kalır; inemezse küçüğü kalır).
 import { ustKopya, ADIMLAR } from './gorsel.js';
+import { kalicidaMi } from './devasaOnbellek.js';
 
 const ESIK = 0.8; // görselin pikseli / ekran pikseli; altı bulanık sayılır
 const BUYUK_ALAN = 0.3; // ekranın bu kadarını kaplayan tablo en büyük kopyayı hak eder
@@ -29,14 +30,9 @@ function commonsUstu(src, k, nw) {
 
 // İş 82: telefona indirilmiş en büyük kopya (Ayarlar → en büyük kopyalar) varsa küçük yerde de kullanılır: indirme
 // yok, yalnız gerektiğinde (1280 px kopya yetmiyorsa)
-const KALICI = 'atlas-devasa-kalici';
+// İş 124: parça parça önbelleklerde (js/devasaOnbellek.js)
 function telefonda(url) {
-  if (typeof caches === 'undefined') return Promise.resolve(false);
-  return caches
-    .open(KALICI)
-    .then((c) => c.match(url))
-    .then(Boolean)
-    .catch(() => false);
+  return kalicidaMi(url).catch(() => false);
 }
 
 function yukselt(img, ust) {
