@@ -14807,7 +14807,135 @@ img.aninda {
 /* İş 105: Pekiştir menüsündeki "Başka sorular" (bölüm turu, konu turu) ve konu turunun cevap yaprağındaki hikâye */
 .pk-ek-turlar {
   display: grid;
-  gap: 10px;
+  gap: 0;
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 88% 18%, rgba(var(--vurgu-rgb), 0.08), transparent 34%),
+    var(--bg);
+}
+.pk-ek-turlar .pk-bolum-bas {
+  margin: 0;
+  padding: 18px 0 14px;
+}
+.pk-ek-turlar .pk-bolum-bas .etiket {
+  letter-spacing: 0.2em;
+}
+.pk-ek-turlar > .hatalar-satir {
+  position: relative;
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr) 36px;
+  align-items: center;
+  gap: 16px;
+  min-height: 148px;
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    background-color 0.3s ease,
+    padding 0.3s ease,
+    transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.pk-ek-turlar > .hatalar-satir::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(105deg, rgba(var(--vurgu-rgb), 0.12), transparent 62%);
+  opacity: 0;
+  transform: translateX(-18%);
+  transition: opacity 0.35s ease, transform 0.55s ease;
+}
+.pk-ek-turlar > .hatalar-satir:active {
+  padding-left: 8px;
+  padding-right: 8px;
+  transform: scale(0.985);
+}
+.pk-ek-turlar > .hatalar-satir:active::before,
+.pk-ek-turlar > .hatalar-satir:focus-visible::before {
+  opacity: 1;
+  transform: none;
+}
+.pk-ek-turlar > .hatalar-satir:focus-visible {
+  outline: 2px solid var(--vurgu-acik);
+  outline-offset: -2px;
+}
+.pk-ek-turlar > .hatalar-satir .hatalar-sayi {
+  align-self: center;
+  margin: 0;
+  font: 400 clamp(56px, 16vw, 84px)/0.82 var(--serif);
+  letter-spacing: -0.06em;
+  color: var(--vurgu-acik);
+  opacity: 0.95;
+}
+.pk-ek-turlar > .hatalar-satir[data-test='konu-turu'] .hatalar-sayi {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 0;
+  color: var(--vurgu-acik);
+}
+.pk-ek-turlar > .hatalar-satir[data-test='konu-turu'] .hatalar-sayi .ikon {
+  width: 27px;
+  height: 27px;
+}
+.pk-ek-turlar > .hatalar-satir .metin {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+.pk-ek-turlar > .hatalar-satir .metin b {
+  font: 400 clamp(25px, 7vw, 34px)/1 var(--serif);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.pk-ek-turlar > .hatalar-satir .metin > span {
+  max-width: 18em;
+  font: 500 16px/1.42 var(--sans);
+  color: var(--ink-2);
+}
+.pk-ek-turlar > .hatalar-satir > .ikon {
+  justify-self: end;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--ink-2);
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.3s ease;
+}
+.pk-ek-turlar > .hatalar-satir:active > .ikon {
+  transform: translateX(4px);
+  background: rgba(var(--vurgu-rgb), 0.14);
+}
+@media (min-width: 560px) {
+  .pk-ek-turlar > .hatalar-satir {
+    grid-template-columns: 96px minmax(0, 1fr) 40px;
+    min-height: 170px;
+  }
+  .pk-ek-turlar > .hatalar-satir .hatalar-sayi {
+    font-size: 96px;
+  }
+  .pk-ek-turlar > .hatalar-satir .metin b {
+    font-size: 36px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pk-ek-turlar > .hatalar-satir,
+  .pk-ek-turlar > .hatalar-satir::before,
+  .pk-ek-turlar > .hatalar-satir > .ikon {
+    transition: none;
+  }
 }
 .st-hikaye {
   margin: 10px 0 4px;
