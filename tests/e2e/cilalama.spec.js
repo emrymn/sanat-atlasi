@@ -405,7 +405,7 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
   adlar = await page.locator('.eser img').evaluateAll((l) => l.slice(0, 12).map((i) => (i.getAttribute('src').match(/([0-9a-f]{16})\.jpg/) || [])[1]).filter(Boolean));
   expect(adlar.length).toBeGreaterThanOrEqual(8);
   const n = adlar.length;
-  const telefonda = () => page.evaluate(() => (async () => { let n = 0; for (const a of (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici'))) n += (await (await caches.open(a)).keys()).length; return n; })());
+  const telefonda = () => page.evaluate(() => (async () => { let n = 0; for (const a of (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici'))) n += (await (await caches.open(a)).keys()).length; return n; })()).catch(() => -1); // yenilenirken -1
   // Defter → Ayarlar (ileri), indir, hemen geri: Ayarlar kapanma katmanındayken görseller biter
   await page.goto('./#/ilerleme');
   await page.reload();
@@ -472,7 +472,7 @@ test('Ayarlar: en büyük kopyalar parça parça iner, parçalar arasında yenil
   await expect(page.locator('#devasa-mesaj')).toContainText(`Parça 1 / ${Math.ceil(n / 3)}`);
   await expect(page.locator('#devasa-mesaj')).toContainText('bitti', { timeout: 15000 });
   // yenilenir, sıradaki parçalar kendiliğinden
-  await expect.poll(() => page.evaluate(() => (async () => { let n = 0; for (const a of (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici'))) n += (await (await caches.open(a)).keys()).length; return n; })()), { timeout: 60000 }).toBe(n);
+  await expect.poll(() => page.evaluate(() => (async () => { let n = 0; for (const a of (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici'))) n += (await (await caches.open(a)).keys()).length; return n; })()).catch(() => -1), { timeout: 60000 }).toBe(n);
   await expect(bolum).toContainText(`Telefonda: ${n} / ${n}`, { timeout: 15000 });
   const parcalar = await page.evaluate(async () => (await caches.keys()).filter((x) => x.startsWith('atlas-devasa-kalici-')).length);
   expect(parcalar).toBe(Math.ceil(n / 3));

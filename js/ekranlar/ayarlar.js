@@ -1,11 +1,11 @@
 // Ayarlar: günlük kart, tema, çevrimdışı görsel indirme, yedekle ve geri yükle.
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
-import { sanatciEserleri, pekistirmeHavuzu, TEST_HAVUZU, gosterilenGorseller } from '../eserler.js';
-import { gorselUrl, secilenGorsel, devasaAdresleri, devasaToplamBayt, devasaSuz } from '../gorsel.js';
+import { gosterilenGorseller } from '../eserler.js';
+import { devasaAdresleri, devasaToplamBayt, devasaSuz } from '../gorsel.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
-import { acikListe, bugun, kotuler, d, gununRengi, ciz, ust, TEMA_AD, TAHMINI_GORSEL_KB, ekran, kaydet, temaUygula, gununId, gununHavuzu } from './ortak.js';
+import { acikListe, bugun, d, gununRengi, ciz, ust, TEMA_AD, ekran, kaydet, temaUygula, gununId, gununHavuzu } from './ortak.js';
 import { baskaSanatci } from '../gunun.js';
 import { bilinenAd } from '../adlar.js';
 import { yedekTarihiYaz } from './bugun.js';
@@ -21,26 +21,11 @@ import { bildirimMetni } from '../bildirim.js';
 import { YENILIKLER, yenilikYazisi } from '../yenilikler.js';
 import { bolumler } from './harita.js';
 import { hatalariOku, hatalariTemizle, gunlukMetni, hataEkle } from '../hataGunlugu.js';
-import { kaliciAdresler, kaliciSil, parcaAdi, PARCA } from '../devasaOnbellek.js';
+import { telefondaOlanlar, kaliciSil, parcaAdi, PARCA, defterOku, defterYaz, defterSil, defterAdi } from '../devasaOnbellek.js';
 
 // ---------- Ayarlar ----------
-async function indirilecekler() {
-  const urller = [];
-  for (const s of acikListe()) {
-    const eserler = await sanatciEserleri(s);
-    for (const e of pekistirmeHavuzu(eserler, kotuler())) urller.push(gorselUrl(secilenGorsel(e, kotuler()), 800));
-  }
-  return [...new Set(urller)];
-}
-
-async function alanYazisi() {
-  try {
-    const t = await navigator.storage.estimate();
-    return `Kullanılan alan: ${(t.usage / 1048576).toFixed(0)} MB`;
-  } catch (e) {
-    return '';
-  }
-}
+// İş 126 (Emre: "küçük resmi indiri kaldırabiliriz, bir işe yaramıyor"): "Görselleri çevrimdışı indir" (pekiştirme
+// görsellerinin 1280'likleri) kaldırıldı; görseller açıldıkça zaten önbelleğe girer, en büyük kopyalar ayrı indirilir.
 
 // İ5: bildirilen görseller; JSON olarak kopyalanır (bir Claude oturumuna verilip gorsel_kararlari.json'a işletilir)
 function bildirimBolumu() {
@@ -98,12 +83,6 @@ export function ayarlarSayfasi() {
         <button class="dugme ince" type="button" data-gunun-degistir data-test="gunun-degistir">Başka bir sanatçı getir</button>
         <p class="mesaj" id="gunun-mesaj" aria-live="polite"></p>
       </div>
-      <div class="ayar"><b>Görselleri çevrimdışı indir</b>
-        <p id="indir-bilgi">Açık sanatçıların pekiştirme görselleri (sanatçı başına en fazla ${TEST_HAVUZU}) hesaplanıyor…</p>
-        <button class="dugme" type="button" data-indir>İndir</button>
-        <progress id="indir-cubuk" max="1" value="0" hidden></progress>
-        <p class="mesaj" id="indir-mesaj" aria-live="polite"></p>
-      </div>
       ${devasaAdresleri().length ? `<div class="ayar" data-test="devasa-indir"><b>En büyük kopyaları telefona indir</b>
         <p id="devasa-bilgi">Hesaplanıyor…</p>
         <button class="dugme" type="button" data-devasa-indir>İndir</button>
@@ -134,7 +113,6 @@ export function ayarlarSayfasi() {
       </div>
     </div>
     <p class="alt-not">Sanat Atlası ${SURUM} · Görseller: Wikimedia Commons, müze açık erişim koleksiyonları ve WikiArt · Eser listeleri: Wikidata</p>`);
-  indirBilgisi();
   devasaBilgisi();
   egimIzinDugmesi();
 }
@@ -160,62 +138,6 @@ async function egimIzinDugmesi() {
   if (btn.isConnected) btn.hidden = hatirliyor;
 }
 
-async function indirBilgisi() {
-  const urller = await indirilecekler();
-  const el = document.getElementById('indir-bilgi');
-  if (!el) return;
-  const mb = Math.round((urller.length * TAHMINI_GORSEL_KB) / 1024);
-  el.textContent = `${urller.length} görsel · tahminen ~${mb} MB. ${await alanYazisi()}`;
-  if (d.indirme) indirmeGoster();
-}
-
-function indirmeGoster() {
-  const i = d.indirme;
-  const cubuk = document.getElementById('indir-cubuk');
-  const mesaj = document.getElementById('indir-mesaj');
-  const btn = ekran.querySelector('[data-indir]');
-  if (!cubuk || !i) return;
-  cubuk.hidden = false;
-  cubuk.max = i.toplam || 1;
-  cubuk.value = i.biten;
-  btn.disabled = !i.bitti;
-  mesaj.className = 'mesaj' + (i.bitti ? ' tamam' : '');
-  mesaj.textContent = i.bitti
-    ? `Bitti: ${i.biten - i.hata} görsel indirildi${i.hata ? `, ${i.hata} indirilemedi` : ''}.`
-    : `${i.biten} / ${i.toplam} · ~${Math.round((i.biten * TAHMINI_GORSEL_KB) / 1024)} MB`;
-}
-
-async function gorselleriIndir() {
-  if (d.indirme && !d.indirme.bitti) return;
-  if (!('serviceWorker' in navigator) || !navigator.serviceWorker.controller) {
-    const m = document.getElementById('indir-mesaj');
-    m.className = 'mesaj hata';
-    m.textContent = 'Çevrimdışı önbellek henüz hazır değil. Uygulamayı kapatıp yeniden açtıktan sonra tekrar dene.';
-    return;
-  }
-  const urller = await indirilecekler();
-  d.indirme = { toplam: urller.length, biten: 0, hata: 0, bitti: false };
-  indirmeGoster();
-  let sira = 0;
-  const isci = async () => {
-    while (sira < urller.length) {
-      const u = urller[sira++];
-      try {
-        // Commons/NGA/AIC cors ile gelir: durum kodu görülür, 429 "indirildi" sayılmaz. CORS yoksa opak (doğrulanamaz)
-        const y = await fetch(u, { mode: 'cors' }).catch(() => fetch(u, { mode: 'no-cors' }));
-        if (y.type !== 'opaque' && !y.ok) d.indirme.hata++;
-      } catch (e) {
-        d.indirme.hata++;
-      }
-      d.indirme.biten++;
-      indirmeGoster();
-    }
-  };
-  await Promise.all([isci(), isci()]);
-  d.indirme.bitti = true;
-  indirmeGoster();
-}
-
 // İş 60: en büyük kopyalar (4096 px) telefona. Service worker "?kalici=1" adresini kalıcı önbelleğe yazar (sınırlı
 // önbellekten farklı olarak kendiliğinden silinmez); görüntüleyici önce oraya bakar, internet yokken de büyük kopya açılır.
 const gb = (b) => (b / 1e9).toLocaleString('tr', { maximumFractionDigits: 1, minimumFractionDigits: 1 });
@@ -234,10 +156,23 @@ function devasaHazirla() {
   return devasaSuzuldu;
 }
 
+// İş 127: telefondaki sayı bir önceki bakıştan çok azaldıysa (inenler silinmiş) hata günlüğüne yazılır: gerçek cihazda
+// "baştan indiriyor"un sebebi görülsün
+const SAYI = 'sanat-atlasi:devasa-sayi';
 async function telefondakiler() {
   await devasaHazirla();
   try {
-    return await kaliciAdresler(new Set(devasaAdresleri()));
+    const { adresler, korundu } = await telefondaOlanlar(new Set(devasaAdresleri()));
+    let once = 0;
+    try {
+      once = Number(localStorage.getItem(SAYI)) || 0;
+      localStorage.setItem(SAYI, String(adresler.size));
+    } catch {
+      once = 0;
+    }
+    if (once - adresler.size > 5) hataEkle({ m: `Telefondaki en büyük kopyalar azaldı: önce ${once}, şimdi ${adresler.size}`, k: korundu ? `listede olmayan ${korundu} korundu` : '', a: location.hash });
+    if (korundu) hataEkle({ m: `En büyük kopya temizliği yapılmadı: listede olmayan ${korundu} / ${adresler.size + korundu}`, k: '', a: location.hash });
+    return adresler;
   } catch (e) {
     return new Set();
   }
@@ -250,7 +185,7 @@ async function devasaBilgisi() {
   const var_ = await telefondakiler();
   const n = hepsi.filter((u) => var_.has(u)).length;
   const toplam = devasaToplamBayt();
-  el.textContent = `${hepsi.length} eserin 4096 piksele kadar en yüksek kalitedeki hali${toplam ? ` · toplam ${gb(toplam)} GB` : ''}. Telefonda: ${n} / ${hepsi.length}. İnince görüntüleyicide internet olmadan da en büyük hali açılır. Wi-Fi’de indir. Telefonu yormamak için ${PARCA}’erlik parçalar hâlinde, tek tek iner; her parçadan sonra uygulama (Ayarlar açıksa) kendini yenileyip sıradakine geçer. Kapatırsan, bir dahaki açışında kaldığı yerden kendiliğinden sürer (iPhone kapalı uygulamanın indirmesine izin vermiyor).`;
+  el.textContent = `${hepsi.length} eserin 4096 piksele kadar en yüksek kalitedeki hali${toplam ? ` · toplam ${gb(toplam)} GB` : ''}. Telefonda: ${n} / ${hepsi.length}. İnince görüntüleyicide internet olmadan da en büyük hali açılır. Wi-Fi’de indir. Telefonu yormamak için ${PARCA}’erlik parçalar hâlinde iner; her parçadan sonra uygulama (Ayarlar açıksa) kendini yenileyip sıradakine geçer. Kapatırsan, bir dahaki açışında kaldığı yerden kendiliğinden sürer (iPhone kapalı uygulamanın indirmesine izin vermiyor).`;
   const sil = ekran.querySelector('[data-devasa-sil]');
   if (sil) sil.hidden = !n || !!(d.devasaIndirme && !d.devasaIndirme.bitti);
   if (d.devasaIndirme) devasaGoster();
@@ -285,9 +220,10 @@ function devasaGoster() {
   else if (i.bitti && i.durduruldu) mesaj.textContent = `Durduruldu: ${i.biten - i.hata} görsel indirildi. Yeniden basınca kaldığı yerden sürer.`;
   else if (i.bitti && i.inemedi) mesaj.textContent = 'Görseller indirilemedi. İnternet bağlantını kontrol edip yeniden bas; kaldığı yerden sürer.';
   else if (i.bitti && i.parcaBitti)
-    mesaj.textContent = `Parça ${i.parca} / ${i.parcaSayisi} bitti. ${location.hash === '#/ayarlar' ? 'Telefon dinlensin diye uygulama yenileniyor, sıradaki parça kendiliğinden başlayacak…' : 'Sıradaki parça Ayarlar’a dönünce ya da uygulamayı yeniden açınca başlar.'}`;
+    mesaj.textContent = `Parça ${i.parca} / ${i.parcaSayisi} bitti · telefonda ${i.onceden + i.biten - i.hata} / ${i.hepsi}. ${location.hash === '#/ayarlar' ? 'Uygulama yenileniyor, sıradaki parça kendiliğinden başlayacak…' : 'Sıradaki parça Ayarlar’a dönünce ya da uygulamayı yeniden açınca başlar.'}`;
   else if (i.bitti) mesaj.textContent = i.toplam ? `Bitti: ${i.biten - i.hata} görsel indirildi${i.hata ? `, ${i.hata} indirilemedi (yeniden basınca tekrar denenir)` : ''}.` : 'Hepsi zaten telefonda.';
-  else mesaj.textContent = `Parça ${i.parca} / ${i.parcaSayisi} · ${i.biten} / ${i.toplam}${kac}`;
+  // İş 126: toplam telefonda olan (parça içi sayaç her parçada sıfırdan başlıyor, baştan iniyor sanılıyordu)
+  else mesaj.textContent = `Telefonda ${i.onceden + i.biten - i.hata} / ${i.hepsi} · Parça ${i.parca} / ${i.parcaSayisi}${kac}`;
 }
 
 // İş 120 (Emre: "uygulama kapalıyken de indirsin"): iPhone ana ekran uygulamalarına kapalıyken indirme izni vermiyor
@@ -373,11 +309,12 @@ async function devasaIndir({ kendiliginden = false } = {}) {
     kilit = null;
   }
   let sira = 0;
-  // İş 123 (Emre: "yine indirirken çöktü", telefonda 87 GB boş): tek tek, aralarında kısa mola. Her görselden önce iz
+  const defter = defterOku();
+  let yazilmamis = 0;
+  // İş 123 (Emre: "yine indirirken çöktü", telefonda 87 GB boş): her görselden önce iz
   // bırakılır: uygulama çökerse bir sonraki açılışta hata günlüğüne kaçıncı görselde kaldığı yazılır.
   // İş 124 (Emre: "tek indirirken daha hızlı çöktü"): görseller artık service worker'dan geçmez (iOS uzun süre durmadan
   // çalışan service worker'ı kapatıyor, uygulama onunla düşüyordu): sayfa kendisi indirip parçanın önbelleğine yazar.
-  const dinlen = (ms) => new Promise((c) => setTimeout(c, ms));
   const isci = async () => {
     while (sira < urller.length && !i.durdur && !i.yerYok) {
       const u = urller[sira++];
@@ -386,16 +323,22 @@ async function devasaIndir({ kendiliginden = false } = {}) {
         const y = await fetch(u, { mode: 'cors', credentials: 'omit', cache: 'no-store' });
         if (!y.ok || !(y.headers.get('content-type') || '').startsWith('image/')) i.hata++;
         else
-          await onbellek.put(u, y).catch((e) => {
-            if (e && e.name === 'QuotaExceededError') i.yerYok = true;
-            else i.hata++;
-          });
+          await onbellek.put(u, y).then(
+            () => {
+              defter.add(defterAdi(u));
+              if (++yazilmamis >= 10) (defterYaz(defter), (yazilmamis = 0));
+            },
+            (e) => {
+              if (e && e.name === 'QuotaExceededError') i.yerYok = true;
+              else i.hata++;
+              hataEkle({ m: `Önbelleğe yazılamadı: ${(e && (e.name || e.message)) || e}`, k: u.split('/').pop(), a: location.hash });
+            },
+          );
       } catch (e) {
         i.hata++;
       }
       i.biten++;
       goster();
-      await dinlen(250);
     }
   };
   // ekranı güncellemekteki bir hata indirmeyi durdurmasın
@@ -407,7 +350,9 @@ async function devasaIndir({ kendiliginden = false } = {}) {
     }
   };
   try {
-    await isci();
+    // İş 125 (Emre: "çok yavaş oldu, daha hızlı yapamaz mıyız"): çökme service worker'dandı (İş 124); sayfa kendisi
+    // indirirken üç görsel birden, molasız
+    await Promise.all([isci(), isci(), isci()]);
   } finally {
     i.durduruldu = !!i.durdur;
     // parça bitti, sıradaki parçalar var: işaret kalır (sürer). Parçada hiç görsel inemediyse (internet yok, sunucu
@@ -415,6 +360,7 @@ async function devasaIndir({ kendiliginden = false } = {}) {
     i.inemedi = i.biten > 0 && i.biten === i.hata;
     i.parcaBitti = !i.durdur && !i.yerYok && !i.sonParca && !i.inemedi;
     i.bitti = true;
+    defterYaz(defter);
     izBirak(null);
     if (!i.parcaBitti) surdurIsareti(false); // hepsi bitti, durduruldu ya da yer kalmadı (uygulama kapanınca işaret kalır)
     kilit?.release?.().catch(() => {});
@@ -430,12 +376,18 @@ async function devasaIndir({ kendiliginden = false } = {}) {
 // İş 124: parça bitince belleği boşaltmak için Ayarlar ekrandaysa uygulama yenilenir (açılınca sıradaki parça kendiliğinden
 // başlar); başka sayfadaysa kullanıcıyı bölmemek için sıradaki parça bir dahaki açılışa ya da Ayarlar'a dönüşe kalır
 function parcaArasi() {
-  if (location.hash === '#/ayarlar' && document.visibilityState === 'visible' && !window.__atlasYenilemeYok) setTimeout(() => location.reload(), 2500);
+  if (location.hash === '#/ayarlar' && document.visibilityState === 'visible' && !window.__atlasYenilemeYok) setTimeout(() => location.reload(), 1000);
 }
 
 async function devasaSil() {
   if (!confirm('En büyük kopyalar telefondan silinsin mi? Görüntüleyici internet varken yine indirir.')) return;
   await kaliciSil();
+  defterSil();
+  try {
+    localStorage.removeItem(SAYI);
+  } catch {
+    /* depo kapalı */
+  }
   surdurIsareti(false);
   d.devasaIndirme = null;
   const m = document.getElementById('devasa-mesaj');
@@ -474,7 +426,6 @@ export function olaylariBagla() {
       m.innerHTML = `Ana sayfada bugün ${kacis(gununAdi())}. <a href="#/">Ana sayfaya git</a>`;
       return;
     }
-    if (e.target.closest('[data-indir]')) return gorselleriIndir();
     if (e.target.closest('[data-devasa-indir]')) return devasaIndir();
     if (e.target.closest('[data-devasa-durdur]')) {
       if (d.devasaIndirme) d.devasaIndirme.durdur = true;
