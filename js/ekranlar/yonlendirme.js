@@ -4,7 +4,7 @@ import { d, sekmeleriCiz, hataGoster, cizimBaslat, geriDonusBildir, sekmedenMi, 
 import { anaSayfa, gununSayfasi } from './bugun.js';
 import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuGrubu, konuSayfasi, basyapitSayfasi } from './gozat.js';
 import { pekistirMenusu, pekistir, devamEt } from './pekistir.js';
-import { soruTuru } from './soruTurlari.js';
+import { soruTuru, soruTurlariSayfasi } from './soruTurlari.js';
 import { ilerlemeSayfasi } from './ilerleme.js';
 import { ayarlarSayfasi } from './ayarlar.js';
 import { aramaSayfasi } from './arama.js';
@@ -30,6 +30,7 @@ const rotalar = [
   [/^#\/konu\/(.+)$/, konuSayfasi, 'gozat'],
   [/^#\/basyapit\/(.+)$/, basyapitSayfasi, 'gozat'],
   [/^#\/pekistir$/, pekistirMenusu, 'pekistir'],
+  [/^#\/soru-turlari$/, soruTurlariSayfasi, 'pekistir'],
   [/^#\/pekistir\/donem$/, pekistirMenusu, 'pekistir'],
   [/^#\/pekistir\/donem\/(.+)$/, (ad) => pekistir('donem', ad), null],
   [/^#\/pekistir\/karisik$/, () => pekistir('karisik', null), null],

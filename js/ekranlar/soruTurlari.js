@@ -48,13 +48,33 @@ function konuAdaylari(konular) {
   return konular.filter((k) => konuEserleri(k, acik).length).map((k) => k.id);
 }
 
+// Başka soruların ara sayfası: ana kartlardan ayrılan, iki tura yönlendiren küçük keşif ekranı.
+export function soruTurlariSayfasi() {
+  ciz(`${ust('Başka sorular', '#/pekistir', { ustEtiket: 'Pekiştir' })}
+    <main class="soru-turleri-sayfa" data-test="soru-turleri-sayfa">
+      <p class="soru-turleri-kicker">Koleksiyonu başka bir açıdan oku</p>
+      <h1>Bir eser seç,<br><em>hikâyesini bul.</em></h1>
+      <p class="soru-turleri-lede">Aynı görselleri bu kez bölüm ve konu izleriyle hatırla.</p>
+      <div class="soru-turleri-kartlar">
+        <a class="soru-turu-kart bolum" href="${TUR.bolum.rota}" data-test="bolum-turu">
+          <span class="soru-turu-no">01</span><span class="soru-turu-ikon">${ikon('ileri', 22, 1.5)}</span>
+          <span class="soru-turu-metin"><b>Bölüm turu</b><small>Bu eser kursun hangi bölümünde?</small></span>
+        </a>
+        <a class="soru-turu-kart konu" href="${TUR.ikonografi.rota}" data-test="konu-turu">
+          <span class="soru-turu-no">02</span><span class="soru-turu-ikon">${ikon('kitap', 22, 1.5)}</span>
+          <span class="soru-turu-metin"><b>Konu turu</b><small>İncil, mitoloji, tarih… Bu resim ne anlatıyor?</small></span>
+        </a>
+      </div>
+    </main>`);
+}
+
 // Menüdeki iki satır (Pekiştir): kart sayısıyla
 export function soruTurlariHtml() {
   const adet = d.ilerleme.ayarlar.gunlukKart;
   const nb = Math.min(adet, bolumAdaylari(bolumler()).length);
   if (!nb) return '';
   const satir = (href, test, sayi, baslik, alt) =>
-    `<a class="hatalar-satir" href="${href}" data-test="${test}"><span class="hatalar-sayi" aria-hidden="true">${sayi}</span><span class="metin"><b>${baslik}</b><span>${alt}</span></span>${ikon('ileri', 20, 1.4)}</a>`;
+    `<a class="hatalar-satir" href="#/soru-turlari" data-test="${test}" data-tur-hedef="${href}"><span class="hatalar-sayi" aria-hidden="true">${sayi}</span><span class="metin"><b>${baslik}</b><span>${alt}</span></span>${ikon('ileri', 20, 1.4)}</a>`;
   return `<section class="bolum pk-ek-turlar" data-test="ek-turlar">
       <div class="pk-bolum-bas"><span class="etiket vurgu">Başka sorular</span></div>
       ${satir(TUR.bolum.rota, 'bolum-turu', nb, 'Bölüm turu', 'Bu eser kursun hangi bölümünde?')}
