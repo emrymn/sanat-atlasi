@@ -11,7 +11,7 @@ import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
 import { ikon } from '../tasarim.js';
 import { adParcala } from '../adlar.js';
-import { paletGetir, renkTemasi } from '../renk.js';
+import { paletGetir, renkTemasi, yumusat, karistir, hexten } from '../renk.js';
 import { taninmaMetni, eserNotu } from '../karsilastir.js';
 import { koleksiyondaMi, koleksiyonDegistir } from '../koleksiyon.js';
 import { eseriBildir } from '../bildirim.js';
@@ -19,8 +19,26 @@ import { eseriBildir } from '../bildirim.js';
 // "Bilmiyorum" cevabının değeri (Ö4): hiçbir sanatçı kimliği ya da akım adıyla çakışmaz
 export const BILMIYORUM = '?';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
-const TEMA_RENK = { gece: '#0B0A0B', gunduz: '#D8D3CA', sepya: '#F1E8D6', acik: '#FBFAF7' };
-export const TEMA_AD = { gece: 'Gece', gunduz: 'Gündüz', sepya: 'Sepya', acik: 'Açık' };
+const TEMA_RENK = { gece: '#0B0A0B', gunduz: '#D1CBC1' };
+const GUNDUZ_YUZEY = '#D9D4CB';
+export const TEMA_AD = { gece: 'Gece', gunduz: 'Gündüz' };
+const BOYA_DEGISKENLERI = ['--bg', '--bg-rgb', '--surface', '--boya-1', '--boya-2', '--boya-3'];
+
+// Gündüz: zemin ve suluboya lekeleri gösterilen resmin paletinden (sekme ekranlarında günün resmi)
+function zeminiBoya(palet) {
+  const st = document.documentElement.style;
+  const renkler = d.ilerleme.ayarlar.tema === 'gunduz' && palet ? palet.filter((p) => p.pay >= 0.03).map((p) => yumusat(p.renk)) : [];
+  if (!renkler.length) {
+    for (const v of BOYA_DEGISKENLERI) st.removeProperty(v);
+    return TEMA_RENK[d.ilerleme.ayarlar.tema] || TEMA_RENK.gece;
+  }
+  const bg = karistir(renkler[0], TEMA_RENK.gunduz, 0.1);
+  st.setProperty('--bg', bg);
+  st.setProperty('--bg-rgb', hexten(bg).join(', '));
+  st.setProperty('--surface', karistir(renkler[0], GUNDUZ_YUZEY, 0.07));
+  for (let i = 0; i < 3; i++) st.setProperty(`--boya-${i + 1}`, hexten(renkler[i % renkler.length]).join(', '));
+  return bg;
+}
 export const HARFLER = 'ABCD';
 
 // Cevap yaprağındaki kaynak satırı; WikiArt görselinde eser sayfasının bağlantısı da
@@ -247,7 +265,10 @@ let renkIstegi = 0;
 function renkleriYaz(palet) {
   d.palet = palet;
   const st = document.documentElement.style;
-  const t = palet ? renkTemasi(palet, TEMA_RENK[d.ilerleme.ayarlar.tema] || TEMA_RENK.gece) : null;
+  const zemin = zeminiBoya(palet);
+  const m = document.querySelector('meta[name="theme-color"]');
+  if (m) m.setAttribute('content', zemin);
+  const t = palet ? renkTemasi(palet, zemin) : null;
   for (const [k, v] of Object.entries(VURGU_DEGISKENLERI)) {
     if (t) st.setProperty(v, t[k]);
     else st.removeProperty(v);
@@ -328,6 +349,7 @@ export function temaUygula() {
   if (m) m.setAttribute('content', TEMA_RENK[t] || TEMA_RENK.gece);
   // vurgu renginin okunur hali temanın zeminine göre yeniden hesaplanır
   if (d.palet !== undefined) renkleriYaz(d.palet);
+  else zeminiBoya(null);
 }
 
 // ---------- sekme çubuğu ----------

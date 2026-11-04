@@ -12,7 +12,7 @@ import { bildirimlerDogrula } from './bildirim.js';
 export const ANAHTAR = 'sanat-atlasi:ilerleme';
 // 2: "Gece galerisi" teması varsayılan oldu (eski varsayılan Sepya ve kaldırılan Koyu bir kez Gece'ye geçer)
 export const SURUM = 2;
-export const TEMALAR = ['gece', 'gunduz', 'sepya', 'acik'];
+export const TEMALAR = ['gece', 'gunduz'];
 export const VARSAYILAN_TEMA = 'gece';
 
 export function varsayilanIlerleme(islenen = []) {
@@ -73,6 +73,8 @@ export function ilerlemeDogrula(nesne) {
   const ayarlar = { ...t.ayarlar, ...(v.ayarlar || {}) };
   // Sürüm 1'de varsayılan Sepya'ydı ve Koyu tema vardı: ikisi de bir kez Gece'ye geçer (Açık seçimi korunur)
   if (!(v.surum >= 2) && (ayarlar.tema === 'sepya' || ayarlar.tema === 'koyu')) ayarlar.tema = VARSAYILAN_TEMA;
+  // Sepya ve Açık kaldırıldı: açık tema seçmiş olan Gündüz'e geçer
+  if (ayarlar.tema === 'sepya' || ayarlar.tema === 'acik') ayarlar.tema = 'gunduz';
   if (!TEMALAR.includes(ayarlar.tema)) ayarlar.tema = VARSAYILAN_TEMA;
   ayarlar.gunlukKart = Math.min(100, Math.max(5, parseInt(ayarlar.gunlukKart, 10) || 20));
   ayarlar.tanisma = ayarlar.tanisma !== false;

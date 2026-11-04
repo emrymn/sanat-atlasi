@@ -32,68 +32,16 @@
   --vurgu-rgb: 138, 130, 122;
   color-scheme: dark;
 }
-/* Sepya ve Açık: aynı yerleşim; vurgu açık zeminde okunacak şekilde koyulaşır */
-:root[data-tema='sepya'] {
-  --bg: #f1e8d6;
-  --bg-rgb: 241, 232, 214;
-  --surface: #f8f2e6;
-  --border: #d9cbb2;
-  --ink: #352b21;
-  --ink-2: #6b5d4d;
-  --ink-3: #75664f;
-  --ink-soluk: #a49580;
-  --right: #2c6e49;
-  --right-ikon: #2c6e49;
-  --right-bg: rgba(44, 110, 73, 0.12);
-  --wrong: #a23b2a;
-  --wrong-ikon: #a23b2a;
-  --wrong-bg: rgba(162, 59, 42, 0.1);
-  --doku: radial-gradient(rgba(53, 43, 33, 0.06) 1px, transparent 1px);
-  --tab-bg: rgba(248, 242, 230, 0.84);
-  --overlay-btn: rgba(241, 232, 214, 0.8);
-  --durum-cubugu: #2b241d;
-  --vurgu: #6b5d4d;
-  --vurgu-yazi: #ffffff;
-  --vurgu-acik: #6b5d4d;
-  --vurgu-acik-yazi: #ffffff;
-  --vurgu-koyu: #e6dcc8;
-  --vurgu-rgb: 107, 93, 77;
-  color-scheme: light;
-}
-:root[data-tema='acik'] {
-  --bg: #fbfaf7;
-  --bg-rgb: 251, 250, 247;
-  --surface: #ffffff;
-  --border: #e3ddd2;
-  --ink: #24201b;
-  --ink-2: #5f574d;
-  --ink-3: #6f665a;
-  --ink-soluk: #a49b90;
-  --right: #2c6e49;
-  --right-ikon: #2c6e49;
-  --right-bg: rgba(44, 110, 73, 0.1);
-  --wrong: #a23b2a;
-  --wrong-ikon: #a23b2a;
-  --wrong-bg: rgba(162, 59, 42, 0.08);
-  --doku: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-  --tab-bg: rgba(255, 255, 255, 0.84);
-  --overlay-btn: rgba(251, 250, 247, 0.85);
-  --durum-cubugu: #24201b;
-  --vurgu: #5f574d;
-  --vurgu-yazi: #ffffff;
-  --vurgu-acik: #5f574d;
-  --vurgu-acik-yazi: #ffffff;
-  --vurgu-koyu: #efebe4;
-  --vurgu-rgb: 95, 87, 77;
-  color-scheme: light;
-}
-/* Gündüz: müze duvarı alçısı; parlamayan kırık gri-bej zemin, yüzeyler zeminden yalnız bir ton açık */
+/* Gündüz: yumuşak, parlamayan kırık beyaz. --bg, --surface ve --boya-* günün resminin paletiyle JS'ten boyanır (ortak.js) */
 :root[data-tema='gunduz'] {
-  --bg: #d8d3ca;
-  --bg-rgb: 216, 211, 202;
-  --surface: #e2ddd5;
-  --border: #bfb8ac;
-  --ink: #1e1a17;
+  --bg: #d1cbc1;
+  --bg-rgb: 209, 203, 193;
+  --surface: #d9d4cb;
+  --border: #b9b2a6;
+  --boya-1: 176, 150, 120;
+  --boya-2: 120, 130, 140;
+  --boya-3: 160, 120, 100;
+  --ink: #221d19;
   --ink-2: #4a433c;
   --ink-3: #574f47;
   --ink-soluk: #857d72;
@@ -141,6 +89,36 @@ body {
   font: 400 16px/1.5 var(--sans);
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
+}
+/* Gündüz: zemin düz kalmasın; günün resminin renkleri sabit bir katmanda suluboya gibi yayılır */
+:root[data-tema='gunduz'] body {
+  background-color: transparent;
+}
+:root[data-tema='gunduz'] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(90% 55% at 0% 0%, rgba(var(--boya-1), 0.34), transparent 70%),
+    radial-gradient(80% 50% at 100% 42%, rgba(var(--boya-2), 0.24), transparent 70%),
+    radial-gradient(100% 55% at 30% 100%, rgba(var(--boya-3), 0.28), transparent 72%);
+  transition: background 1.2s ease;
+  animation: boya-nefes 24s ease-in-out infinite alternate;
+}
+@keyframes boya-nefes {
+  from {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.12) translate3d(-2%, 1.5%, 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  :root[data-tema='gunduz'] body::after {
+    animation: none;
+  }
 }
 /* Açık temalarda iOS durum çubuğunun beyaz yazısı okunsun diye üstte koyu şerit */
 body::before {
@@ -3288,9 +3266,18 @@ html.sekmesiz .sekmeler {
   /* yalnızca üstte (etiketler okunsun) ve en altta (isim ve düğme okunsun) hafif koyuluk */
   background: linear-gradient(180deg, rgba(var(--bg-rgb), 0.7) 0%, rgba(var(--bg-rgb), 0) 20%, rgba(var(--bg-rgb), 0) 55%, rgba(var(--bg-rgb), 0.45) 100%);
 }
-/* Gündüz: koyu mürekkepli ad koyu tablolarda kaybolmasın diye alt kısım duvar rengine daha çok açılır */
+/* Gündüz: tablo beyaza boğulmaz; üstünde Gece'nin açık mürekkebi ve koyu bir gölge, en altta zemine yumuşak geçiş */
+:root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman {
+  --ink: #f4efe6;
+  --ink-2: #ddd5ca;
+  --ink-3: #c9c0b4;
+  color: var(--ink);
+}
 :root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman::after {
-  background: linear-gradient(180deg, rgba(var(--bg-rgb), 0.7) 0%, rgba(var(--bg-rgb), 0) 20%, rgba(var(--bg-rgb), 0) 48%, rgba(var(--bg-rgb), 0.82) 76%, rgba(var(--bg-rgb), 0.92) 100%);
+  background: linear-gradient(180deg, rgba(14, 12, 10, 0.5) 0%, rgba(14, 12, 10, 0) 22%, rgba(14, 12, 10, 0) 50%, rgba(14, 12, 10, 0.55) 82%, rgba(var(--bg-rgb), 0.85) 100%);
+}
+:root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman .sahne-isim {
+  text-shadow: 0 1px 14px rgba(14, 12, 10, 0.45);
 }
 .sahne-isim {
   position: absolute;
@@ -14050,13 +14037,9 @@ a.harita-seviye:active {
 .imza-uc.bitti {
   opacity: 0;
 }
-:root[data-tema='sepya'] .imza,
-:root[data-tema='acik'] .imza,
 :root[data-tema='gunduz'] .imza {
   background-image: linear-gradient(100deg, #6e4a14 0%, #a8782a 22%, #8a6420 42%, #d4a64a 50%, #8a6420 58%, #a8782a 78%, #5a3c10 100%);
 }
-:root[data-tema='sepya'] .imza-uc,
-:root[data-tema='acik'] .imza-uc,
 :root[data-tema='gunduz'] .imza-uc {
   background: radial-gradient(circle, #fff3d0 0%, #c9973a 40%, rgba(201, 151, 58, 0) 72%);
   box-shadow: 0 0 10px 3px rgba(154, 107, 31, 0.35);
@@ -14081,7 +14064,7 @@ a.harita-seviye:active {
   font-synthesis: none;
 }
 
-/* Ana sayfada imza tablonun üstünde, adın altında: koyu bir gölge onu resmin açık ve hareketli yerlerinden ayırır */
+/* Ana sayfada imza tablonun üstünde, adın alt��nda: koyu bir gölge onu resmin açık ve hareketli yerlerinden ayırır */
 .sahne-isim .imza-kap {
   margin: 2px 0 6px;
   filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 8px rgba(0, 0, 0, 0.7));
@@ -14117,8 +14100,6 @@ a.harita-seviye:active {
 .portre-arka.yuklendi {
   opacity: 0.7;
 }
-:root[data-tema='sepya'] .portre-arka.yuklendi,
-:root[data-tema='acik'] .portre-arka.yuklendi,
 :root[data-tema='gunduz'] .portre-arka.yuklendi {
   opacity: 0.4;
 }
@@ -14684,8 +14665,6 @@ html.gecis-suruyor {
   -webkit-backdrop-filter: blur(16px) saturate(1.6);
   backdrop-filter: blur(16px) saturate(1.6);
 }
-:root[data-tema='sepya'] .sekmeler,
-:root[data-tema='acik'] .sekmeler,
 :root[data-tema='gunduz'] .sekmeler {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1) 50%),
