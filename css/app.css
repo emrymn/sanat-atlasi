@@ -3959,11 +3959,14 @@ main[data-hareket='giris'][data-yon='sol'] > :not(.alt-yaprak) {
 .bugun-kahraman.egimli {
   perspective: 900px;
 }
+/* İş 132 (Emre: "ana sayfadaki resmi biraz daha az büyütebilir miyiz", "tam ekran olsun"): taşma 56'dan yanda 28, dikeyde
+   48 px'e; tablo yine ekranı kaplar ama ~%7 daha az büyük. Kayma da küçüldü (14/10 → 4/3 px): 5°'lik dönüş uzun kenarda
+   (dikey) ~18, kısa kenarda ~4 px yer ister; kayma + dönüş payı aşmasın, kenar görünmesin. */
 .bugun-kahraman.egimli > img {
-  width: calc(100% + 56px);
-  height: calc(100% + 56px);
-  margin: -28px 0 0 -28px;
-  translate: calc(var(--egx, 0) * -14px) calc(var(--egy, 0) * -10px);
+  width: calc(100% + 28px);
+  height: calc(100% + 48px);
+  margin: -24px 0 0 -14px;
+  translate: calc(var(--egx, 0) * -4px) calc(var(--egy, 0) * -3px);
   rotate: var(--egim-eksen, 0 1 0 0deg);
 }
 /* ad katman katman havada: tablodan uzaklaştıkça daha çok kayar (alt satır az, ilk ad orta, soyad en çok);
