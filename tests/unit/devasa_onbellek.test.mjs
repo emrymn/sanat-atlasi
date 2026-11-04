@@ -46,6 +46,10 @@ test('İş 127/129: depodaki kopyalar sayılır; listede olmayan az ise silinir,
   assert.equal(s.adresler.size, 10);
   assert.equal(s.korundu, 88);
   assert.equal((await kaliciAdresler()).adresler.size, 98);
+  // İş 130: sil: false iken listede olmayanlar silinmez
+  s = await kaliciAdresler(new Set(hepsi.slice(0, 90)), { sil: false });
+  assert.equal(s.silinen, 0);
+  assert.equal(d.m.size, 98);
   await kaliciSil();
   assert.equal(d.m.size, 0);
   depoAyarla(null);

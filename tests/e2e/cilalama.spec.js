@@ -458,7 +458,7 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
   await expect.poll(telefonda, { timeout: 60000 }).toBe(n);
   await expect.poll(() => page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur')), { timeout: 15000 }).toBeNull();
   expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-iz'))).toBeNull();
-  await expect(page.locator('[data-test="devasa-indir"]')).toContainText(`Telefonda: ${n} / ${n}`);
+  await expect(page.locator('[data-test="devasa-indir"]')).toContainText(`Hepsi telefonda: ${n} görsel`);
   expect(hatalar).toEqual([]);
 });
 
@@ -488,7 +488,7 @@ test('Ayarlar: en büyük kopyalar parça parça iner, parçalar arasında yenil
   await expect(page.locator('#devasa-mesaj')).toContainText('bitti', { timeout: 15000 });
   // yenilenir, sıradaki parçalar kendiliğinden
   await expect.poll(() => page.evaluate(devasaSayisi).catch(() => -1), { timeout: 60000 }).toBe(n);
-  await expect(bolum).toContainText(`Telefonda: ${n} / ${n}`, { timeout: 15000 });
+  await expect(bolum).toContainText(`Hepsi telefonda: ${n} görsel`, { timeout: 15000 });
   expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBeNull();
   // internetsiz: görüntüleyici parça önbelleğindeki en büyük kopyayı açar
   r2Acik = false;
@@ -524,12 +524,15 @@ test('Ayarlar: en büyük kopyalar telefona iner, kaldığı yerden sürer, inte
   await expect(bolum).toContainText('Telefonda: 0 / 3');
   await bolum.locator('[data-devasa-indir]').click();
   await expect(page.locator('#devasa-mesaj')).toHaveText('Bitti: 3 görsel indirildi.');
-  await expect(bolum).toContainText('Telefonda: 3 / 3');
+  // İş 130: hepsi telefonda: İndir düğmesi kalkar, yeniden indirme olmaz
+  await expect(bolum).toContainText('Hepsi telefonda: 3 görsel');
+  await expect(bolum.locator('[data-devasa-indir]')).toBeHidden();
+  await expect(bolum.locator('[data-devasa-sil]')).toBeVisible();
   expect(await page.evaluate(devasaSayisi)).toBe(3);
-  // ikinci basış hiçbir şey indirmez
   const once = istenen.length;
-  await bolum.locator('[data-devasa-indir]').click();
-  await expect(page.locator('#devasa-mesaj')).toHaveText('Hepsi zaten telefonda.');
+  await page.reload();
+  await expect(bolum).toContainText('Hepsi telefonda: 3 görsel');
+  await expect(bolum.locator('[data-devasa-indir]')).toBeHidden();
   expect(istenen.length).toBe(once);
   // internet yokken görüntüleyici en büyük kopyayı telefondan açar
   r2Acik = false;
@@ -542,6 +545,7 @@ test('Ayarlar: en büyük kopyalar telefona iner, kaldığı yerden sürer, inte
   page.once('dialog', (dl) => dl.accept());
   await bolum.locator('[data-devasa-sil]').click();
   await expect(bolum).toContainText('Telefonda: 0 / 3');
+  await expect(bolum.locator('[data-devasa-indir]')).toBeVisible();
   expect(await page.evaluate(devasaSayisi)).toBe(0);
 });
 
@@ -573,6 +577,33 @@ test('en büyük kopyalar eski önbellekten IndexedDB\'ye taşınır, görüntü
   await page.locator('.eser').first().click();
   await expect(page.locator('.gor-resim')).toHaveAttribute('src', /^https:\/\/gorsel\.noracloud\.ai\/d\//);
   await expect(page.locator('.gor-resim')).toHaveAttribute('data-test', 'devasa');
+});
+
+// İş 130: en büyük kopyası olmayan görselin 1280'liği de telefona iner; görüntüleyici internetsiz IndexedDB'den açar
+test('en büyük kopyası olmayan görselin 1280\'liği telefondan (IndexedDB) açılır', async ({ page, context }) => {
+  await agiHazirla(context);
+  const png = readFileSync(new URL('../fixtures/eser.png', import.meta.url));
+  await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: true, devasa: [] }) }));
+  await context.route(/pub-deneme\.r2\.dev\//, (r) => r.abort('internetdisconnected'));
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
+  const ad = await page.locator('.eser img').first().evaluate((i) => (i.getAttribute('src').match(/([0-9a-f]{16})\.jpg/) || [])[1]);
+  await page.evaluate(
+    ({ u, bayt }) =>
+      new Promise((coz) => {
+        const r = indexedDB.open('atlas-devasa', 1);
+        r.onupgradeneeded = () => r.result.createObjectStore('g');
+        r.onsuccess = () => {
+          const t = r.result.transaction('g', 'readwrite');
+          t.objectStore('g').put(new Blob([new Uint8Array(bayt)], { type: 'image/png' }), u);
+          t.oncomplete = () => (r.result.close(), coz());
+        };
+      }),
+    { u: `https://pub-deneme.r2.dev/b/${ad}.jpg`, bayt: [...png] },
+  );
+  await page.locator('.eser').first().click();
+  await expect(page.locator('.gor-resim')).toHaveAttribute('src', new RegExp(`/b/${ad}\\.jpg`));
+  await expect.poll(() => page.locator('.gor-resim').evaluate((i) => i.complete && i.naturalWidth > 0)).toBe(true);
 });
 
 // İş 63: yeni sürüm indikten sonra uygulama arka plandan dönünce kendiliğinden yenilenir (iOS'ta "Yenile"ye basılmadan

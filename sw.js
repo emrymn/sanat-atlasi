@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.64.4';
+const SURUM = '1.65.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -204,8 +204,13 @@ self.addEventListener('fetch', (e) => {
     // İş 129: önbellek hata verirse görsel yine ağdan gelsin (telefonda Cache Storage bozulmuştu)
     e.respondWith(devasaResim(e).catch(() => fetch(istek)));
   } else if (r2Mi(url)) {
-    // İş 58: Cloudflare R2'deki görsel kopyaları (1280 px)
-    e.respondWith(resim(e));
+    // İş 58: Cloudflare R2'deki görsel kopyaları (1280 px). İş 130: telefona indirilmişse (en büyük kopyası olmayanlar)
+    // IndexedDB'den
+    e.respondWith(
+      devasaDepodan(istek.url.split('?')[0])
+        .catch(() => null)
+        .then((y) => y || resim(e)),
+    );
   } else if (url.origin === self.location.origin && (url.pathname.endsWith('/data/kunye.json') || url.pathname.endsWith('/data/gorsel_kaynagi.json'))) {
     // künye (portre, okunuş, IPA) Emre'nin Mac'inde güncellenir: sürüm beklemeden gelsin diye önce ağ, yoksa önbellek
     e.respondWith(onceAg(istek, KABUK));
