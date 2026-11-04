@@ -133,12 +133,22 @@ test('İş 121: indirme listesi gösterilen görsellerle süzülür; aynı tablo
   // İş 130: en büyük kopyası olmayan gösterilen görsellerin 1280'likleri de telefona iner (en büyüklerden sonra)
   const { telefonAdresleri, telefonToplamBayt, suzulduMu } = await import('../../js/gorsel.js');
   const tel = telefonAdresleri();
-  const bler = tel.slice(suzulmus.length);
   assert.deepEqual(tel.slice(0, suzulmus.length), suzulmus);
-  assert.ok(bler.length > 1000 && bler.every((u) => /\/b\/[0-9a-f]{16}(-[0-9a-f]{8})?\.jpg$/.test(u)), String(bler.length));
   assert.equal(new Set(tel).size, tel.length);
-  const bAdlar = new Set(bler.map((u) => u.match(/\/b\/([0-9a-f]{16})/)[1]));
-  assert.ok(![...bAdlar].some((a) => adlar.has(a))); // en büyük kopyası olan 1280'liğiyle ayrıca inmez
+  const tur = (u) => (u.match(/\/([dbk])\/[0-9a-f]{16}/) || [])[1];
+  // sıra: en büyükler, en büyüğü olmayanların 1280'likleri, bütün 400'lükler, kalan 1280'likler
+  const sira = tel.map(tur).join('').replace(/(.)\1*/g, '$1');
+  assert.equal(sira, 'dbkb');
+  const say = (t) => tel.filter((u) => tur(u) === t).length;
+  const yalnizB = tel.slice(suzulmus.length, tel.findIndex((u) => tur(u) === 'k'));
+  assert.ok(yalnizB.length > 1000, String(yalnizB.length));
+  const bAdlar = new Set(yalnizB.map((u) => u.match(/\/b\/([0-9a-f]{16})/)[1]));
+  assert.ok(![...bAdlar].some((a) => adlar.has(a))); // en büyük kopyası olan, en büyüklerden hemen sonra inmez
+  assert.equal(say('k'), suzulmus.length + yalnizB.length); // gösterilen her görselin 400'lüğü
+  assert.equal(say('b'), say('k')); // ve 1280'liği
+  globalThis.__atlasYalnizDevasa = true;
+  assert.equal(telefonAdresleri().length, suzulmus.length + yalnizB.length);
+  delete globalThis.__atlasYalnizDevasa;
   assert.ok(telefonToplamBayt() > devasaToplamBayt());
   assert.ok(suzulduMu());
   devasaSuz(null);

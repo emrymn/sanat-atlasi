@@ -403,6 +403,7 @@ function devasaSayisi() {
 // hata vermez; uygulama kapatılıp açılınca (yeniden yükleme) kaldığı yerden kendiliğinden sürer
 test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden açılınca kendiliğinden sürer', async ({ page, context }) => {
   await agiHazirla(context);
+  await context.addInitScript(() => (window.__atlasYalnizDevasa = true)); // İş 131: 400'lük ve 1280'likler binlerce dosya
   await context.addInitScript(() => (window.__atlasGecis = true));
   const hatalar = [];
   page.on('pageerror', (e) => hatalar.push(e.message));
@@ -466,6 +467,7 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
 // kendiliğinden başlar; her parça ayrı önbellekte; görüntüleyici parça önbelleğindeki kopyayı internetsiz açar
 test('Ayarlar: en büyük kopyalar parça parça iner, parçalar arasında yenilenir, hepsi iner', async ({ page, context }) => {
   await agiHazirla(context);
+  await context.addInitScript(() => (window.__atlasYalnizDevasa = true)); // İş 131: 400'lük ve 1280'likler binlerce dosya
   await context.addInitScript(() => (window.__atlasParca = 3));
   let adlar = [];
   await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) =>
@@ -500,6 +502,7 @@ test('Ayarlar: en büyük kopyalar parça parça iner, parçalar arasında yenil
 // İş 60: en büyük kopyalar Ayarlar'dan telefona; kalıcı önbellekte durur, internet olmadan görüntüleyicide açılır
 test('Ayarlar: en büyük kopyalar telefona iner, kaldığı yerden sürer, internetsiz açılır, silinebilir', async ({ page, context }) => {
   await agiHazirla(context);
+  await context.addInitScript(() => (window.__atlasYalnizDevasa = true)); // İş 131: 400'lük ve 1280'likler binlerce dosya
   let adlar = [];
   await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) =>
     r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar, devasa_bayt: 3e9 }) }),
@@ -604,6 +607,38 @@ test('en büyük kopyası olmayan görselin 1280\'liği telefondan (IndexedDB) a
   await page.locator('.eser').first().click();
   await expect(page.locator('.gor-resim')).toHaveAttribute('src', new RegExp(`/b/${ad}\\.jpg`));
   await expect.poll(() => page.locator('.gor-resim').evaluate((i) => i.complete && i.naturalWidth > 0)).toBe(true);
+});
+
+// İş 131 (Emre: "resimler çok geç yükleniyor sayfalarda"): telefona indirilmiş 400'lükleri service worker IndexedDB'den verir
+test('telefona indirilmiş 400\'lük ızgara görseli IndexedDB\'den, sunucuya gitmeden gelir', async ({ page, context }) => {
+  await agiHazirla(context);
+  const png = readFileSync(new URL('../fixtures/eser.png', import.meta.url));
+  await page.goto('./#/sanatci/giotto-di-bondone');
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
+  const ad = await page.locator('.eser img').nth(1).evaluate((i) => (i.getAttribute('src').match(/([0-9a-f]{16})(?:-[0-9a-f]{8})?\.jpg/) || [])[1]);
+  expect(ad).toBeTruthy();
+  const u = await page.evaluate((a) => new URL(`gorseller/k/${a}.jpg`, location.href).href, ad);
+  await page.evaluate(
+    ({ u, bayt }) =>
+      new Promise((coz) => {
+        const r = indexedDB.open('atlas-devasa', 1);
+        r.onupgradeneeded = () => r.result.createObjectStore('g');
+        r.onsuccess = () => {
+          const t = r.result.transaction('g', 'readwrite');
+          t.objectStore('g').put(new Blob([new Uint8Array(bayt)], { type: 'image/png' }), u);
+          t.oncomplete = () => (r.result.close(), coz());
+        };
+      }),
+    { u, bayt: [...png] },
+  );
+  let sunucuya = 0;
+  await context.route(new RegExp(`/gorseller/k/${ad}\\.jpg`), (r) => (sunucuya++, r.abort('internetdisconnected')));
+  const sonuc = await page.evaluate(async (u) => {
+    const y = await fetch(u);
+    return { durum: y.status, boy: (await y.blob()).size };
+  }, u);
+  expect(sonuc).toEqual({ durum: 200, boy: png.length });
+  expect(sunucuya).toBe(0);
 });
 
 // İş 63: yeni sürüm indikten sonra uygulama arka plandan dönünce kendiliğinden yenilenir (iOS'ta "Yenile"ye basılmadan

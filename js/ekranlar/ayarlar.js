@@ -1,7 +1,7 @@
 // Ayarlar: günlük kart, tema, çevrimdışı görsel indirme, yedekle ve geri yükle.
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { gosterilenGorseller } from '../eserler.js';
-import { devasaAdresleri, devasaSuz, suzulduMu, telefonAdresleri, telefonToplamBayt } from '../gorsel.js';
+import { devasaAdresleri, devasaSuz, suzulduMu, telefonAdresleri, telefonToplamBayt, tahminiBayt } from '../gorsel.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
@@ -187,12 +187,12 @@ async function devasaBilgisi() {
   const n = hepsi.filter((u) => var_.has(u)).length;
   const toplam = telefonToplamBayt();
   const nd = devasaAdresleri().length;
-  const ne = `${nd} eserin 4096 piksele kadar en yüksek kalitedeki hali${hepsi.length > nd ? `, daha büyüğü olmayan ${hepsi.length - nd} eserin 1280 piksellik hali` : ''}`;
+  const ne = hepsi.length > nd ? `${nd} eserin 4096 piksele kadar en yüksek kalitedeki hali ve sayfalarda görünen 1280 ile 400 piksellik halleri (${hepsi.length} dosya)` : `${nd} eserin 4096 piksele kadar en yüksek kalitedeki hali`;
   // İş 130 (Emre: "hepsi indikten sonra indirme tuşu kalksın"): hepsi telefondaysa İndir düğmesi kalkar
   const hepsiVar = hepsi.length > 0 && n >= hepsi.length;
   el.textContent = hepsiVar
-    ? `Hepsi telefonda: ${hepsi.length} görsel (${ne})${toplam ? ` · ${gb(toplam)} GB` : ''}. Görüntüleyicide internet olmadan da en büyük hali açılır.`
-    : `${ne}${toplam ? ` · toplam ${gb(toplam)} GB` : ''}. Telefonda: ${n} / ${hepsi.length}. İnince görüntüleyicide internet olmadan da en büyük hali açılır. Wi-Fi’de indir. Telefonu yormamak için ${PARCA}’erlik parçalar hâlinde iner; her parçadan sonra uygulama (Ayarlar açıksa) kendini yenileyip sıradakine geçer. Kapatırsan, bir dahaki açışında kaldığı yerden kendiliğinden sürer (iPhone kapalı uygulamanın indirmesine izin vermiyor).`;
+    ? `Hepsi telefonda: ${hepsi.length} görsel (${ne})${toplam ? ` · ${gb(toplam)} GB` : ''}. Sayfalar ve görüntüleyici internet olmadan, telefondan açılır.`
+    : `${ne}${toplam ? ` · toplam ${gb(toplam)} GB` : ''}. Telefonda: ${n} / ${hepsi.length}. İnince sayfalar ve görüntüleyici internet olmadan, telefondan açılır. Wi-Fi’de indir. Telefonu yormamak için ~${gb(PARCA * 3.3e6)} GB’lık parçalar hâlinde iner; her parçadan sonra uygulama (Ayarlar açıksa) kendini yenileyip sıradakine geçer. Kapatırsan, bir dahaki açışında kaldığı yerden kendiliğinden sürer (iPhone kapalı uygulamanın indirmesine izin vermiyor).`;
   const suruyor = !!(d.devasaIndirme && !d.devasaIndirme.bitti);
   const indir = ekran.querySelector('[data-devasa-indir]');
   if (indir) indir.hidden = hepsiVar && !suruyor;
@@ -225,7 +225,7 @@ function devasaGoster() {
   if (!mesaj) return;
   mesaj.className = 'mesaj' + (i.yerYok || i.inemedi || (i.bitti && i.hata) ? ' hata' : i.bitti ? ' tamam' : '');
   const toplam = telefonToplamBayt();
-  const kac = toplam && i.hepsi ? ` · ~${gb((toplam * i.biten) / i.hepsi + (toplam * i.onceden) / i.hepsi)} / ${gb(toplam)} GB` : '';
+  const kac = toplam && i.hepsi ? ` · ~${gb(Math.min(toplam, i.oncedenBayt + i.bitenBayt))} / ${gb(toplam)} GB` : '';
   if (i.yerYok) mesaj.textContent = `Telefonda yer kalmadı: ${i.biten - i.hata} görsel indirildi. Yer açıp yeniden bas, kaldığı yerden sürer.`;
   else if (i.bitti && i.durduruldu) mesaj.textContent = `Durduruldu: ${i.biten - i.hata} görsel indirildi. Yeniden basınca kaldığı yerden sürer.`;
   else if (i.bitti && i.inemedi && i.yazilamadi) mesaj.textContent = `Görseller indi ama telefona kaydedilemedi (${i.sonHata || 'bilinmeyen hata'}). Hata günlüğünü kopyalayıp gönder.`;
@@ -272,7 +272,7 @@ function iziOku() {
 }
 
 export async function devasaSurdur() {
-  iziOku();
+  if (!d.devasaIndirme) iziOku(); // bu açılışta indirme başladıysa iz onundur (yarıda kalmış sayılmaz)
   await eskileriTasi(); // İş 129: eski (Cache Storage) kopyalar IndexedDB'ye; okunamayanlar silinir
   await devasaHazirla();
   let var_ = false;
@@ -299,12 +299,25 @@ async function devasaIndir({ kendiliginden = false } = {}) {
   const hepsi = telefonAdresleri();
   // İş 124: bu açılışta yalnız bir parça (PARCA görsel); bitince Ayarlar açıksa uygulama yenilenip sıradaki parça
   // kendiliğinden başlar (bellek sıfırlanır), değilse bir dahaki açılışta sürer
+  const PARCA_ADET = 1000; // İş 131: bir parçada en çok bu kadar dosya (400'lükler çok küçük)
+// İş 131: parça boyu bayt olarak (PARCA en büyük kopya kadar): 1280'likler ve 400'lükler küçük, bir parçaya çok sığar
   const kalan = hepsi.filter((u) => !var_.has(u));
-  const boy = window.__atlasParca || PARCA; // testler küçük parça kullanır
-  const urller = kalan.slice(0, boy);
-  const parcaSayisi = Math.max(1, Math.ceil(hepsi.length / boy));
-  const parca = Math.min(parcaSayisi, Math.floor((hepsi.length - kalan.length) / boy) + 1);
-  const i = (d.devasaIndirme = { toplam: urller.length, hepsi: hepsi.length, onceden: hepsi.length - kalan.length, biten: 0, hata: 0, yazilamadi: 0, bitti: false, kendiliginden, parca, parcaSayisi, sonParca: kalan.length <= boy });
+  const ort = tahminiBayt('/d/0');
+  const boy = (window.__atlasParca || PARCA) * ort; // testler küçük parça kullanır
+  const urller = [];
+  let parcaBayt = 0;
+  for (const u of kalan) {
+    if (urller.length && (parcaBayt + tahminiBayt(u) > boy + 1 || urller.length >= PARCA_ADET)) break;
+    urller.push(u);
+    parcaBayt += tahminiBayt(u);
+  }
+  const bayt = (l) => l.reduce((t, u) => t + tahminiBayt(u), 0);
+  const hepsiBayt = bayt(hepsi);
+  const kalanBayt = bayt(kalan);
+  const parca = Math.floor((hepsiBayt - kalanBayt + 1) / boy) + 1;
+  // küçük dosyalar adet sınırına takıldığından parça sayısı yaklaşık: kalanlar da hesaba katılır
+  const parcaSayisi = Math.max(parca + Math.ceil((kalanBayt - parcaBayt - 1) / boy), parca, Math.ceil((hepsiBayt - 1) / boy));
+  const i = (d.devasaIndirme = { toplam: urller.length, hepsi: hepsi.length, onceden: hepsi.length - kalan.length, oncedenBayt: hepsiBayt - kalanBayt, bitenBayt: 0, biten: 0, hata: 0, yazilamadi: 0, bitti: false, kendiliginden, parca, parcaSayisi, sonParca: urller.length >= kalan.length });
   try {
     devasaGoster();
   } catch {
@@ -355,6 +368,7 @@ async function devasaIndir({ kendiliginden = false } = {}) {
         i.hata++;
       }
       i.biten++;
+      i.bitenBayt += tahminiBayt(u);
       goster();
     }
   };
