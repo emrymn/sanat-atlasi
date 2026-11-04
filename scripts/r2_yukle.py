@@ -3,6 +3,7 @@
 
   gorseller_devasa/<ad>.jpg → <kova>/d/<ad>.jpg   (scripts/devasa_indir.py; en büyük, 4096 px)
   gorseller/b/<ad>.jpg      → <kova>/b/<ad>.jpg   (1280 px; kartlar ve görüntüleyicinin ilk hali)
+  İş 112: en büyük kopyadan yeniden üretilen 1280'likler (data/b_yenilenen.json) → <kova>/b/<ad>-<sürüm>.jpg
 
 İş 84: daha büyük dosyasıyla yenilenen görseller (data/gorsel_iyilestirme.json) kovaya sürüm ekli adla yüklenir:
 d/<ad>-<içeriğin md5'inin ilk 8 hanesi>.jpg. Eski adres "hiç değişmez" diye önbelleğe alındığı ve telefona indirildiği
@@ -104,7 +105,12 @@ def main():
     iyilesen = set(json.loads(iy_yolu.read_text()).get('gorseller', {})) if iy_yolu.exists() else set()
     surumler = {p.stem: hashlib.md5(p.read_bytes()).hexdigest()[:8] for p in devasalar if p not in kucuk and p.stem in iyilesen}
     isler = [(p, f'd/{p.stem}-{surumler[p.stem]}.jpg' if p.stem in surumler else f'd/{p.name}') for p in devasalar if p not in kucuk]
-    isler += [(p, f'b/{p.name}') for p in sorted((KOK / 'gorseller/b').glob('*.jpg'))]
+    # İş 112: en büyük kopyadan yeniden üretilen 1280'likler (scripts/b_yenile.py) de sürüm ekli adla: b/<ad>-<sürüm>.jpg
+    by_yolu = KOK / 'data/b_yenilenen.json'
+    b_yenilenen = set(json.loads(by_yolu.read_text()).get('adlar', [])) if by_yolu.exists() else set()
+    b_dosyalar = sorted((KOK / 'gorseller/b').glob('*.jpg'))
+    b_surumler = {p.stem: hashlib.md5(p.read_bytes()).hexdigest()[:8] for p in b_dosyalar if p.stem in b_yenilenen}
+    isler += [(p, f'b/{p.stem}-{b_surumler[p.stem]}.jpg' if p.stem in b_surumler else f'b/{p.name}') for p in b_dosyalar]
     toplam = sum(p.stat().st_size for p, _ in isler) / 1e9
     print(f'{len(isler)} dosya ({toplam:.2f} GB)', flush=True)
     # İş 102: bütün eserlerin en büyük kopyaları ücretsiz 10 GB'ı aşar (~25 GB). Emre bilerek açar: --10gb-ustu
@@ -155,12 +161,14 @@ def main():
     # yeniden depoya konursa çalışır (İş 102'den beri depoda yoklar; git geçmişinde ve Mac'teki gorseller/b'de duruyorlar).
     b_hepsi = os.environ.get('R2_BUYUK') != '0' and len(tamam['b']) == len(list((KOK / 'gorseller/b').glob('*.jpg')))
     (KOK / 'data/gorsel_kaynagi.json').write_text(
-        json.dumps({'surum': 1, 'adres': adres, 'buyuk': b_hepsi, 'devasa': sorted(tamam['d']), 'devasa_bayt': devasa_bayt, 'muze': muze, 'surumler': {ad: v for ad, v in sorted(surumler.items()) if ad in tamam['d']}}, ensure_ascii=False, separators=(',', ':')) + '\n'
+        json.dumps({'surum': 1, 'adres': adres, 'buyuk': b_hepsi, 'devasa': sorted(tamam['d']), 'devasa_bayt': devasa_bayt, 'muze': muze, 'surumler': {ad: v for ad, v in sorted(surumler.items()) if ad in tamam['d']}, 'b_surumler': {ad: v for ad, v in sorted(b_surumler.items()) if ad in tamam['b']}}, ensure_ascii=False, separators=(',', ':')) + '\n'
     )
     print(f"\nBitti · en büyük {len(tamam['d'])} (müzeden {len(muze)}) · 1280'lik {len(tamam['b'])} · hata {hata}")
     if surumler:
         print(f'Daha büyük dosyasıyla yenilenen {len(surumler)} görsel yeni adla yüklendi (telefon yenisini indirir)')
-    print('data/gorsel_kaynagi.json yazıldı: git add data/gorsel_kaynagi.json data/gorsel_iyilestirme.json && git commit && git push')
+    if b_surumler:
+        print(f"En büyük kopyadan yeniden üretilen {len(b_surumler)} 1280'lik yeni adla yüklendi")
+    print('data/gorsel_kaynagi.json yazıldı: git add data/gorsel_kaynagi.json data/gorsel_iyilestirme.json data/b_yenilenen.json && git commit && git push')
 
 
 if __name__ == '__main__':
