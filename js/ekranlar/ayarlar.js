@@ -20,7 +20,7 @@ import { rozetDestekli, rozetYaz, rozetIzni } from '../rozet.js';
 import { bildirimMetni } from '../bildirim.js';
 import { YENILIKLER, yenilikYazisi } from '../yenilikler.js';
 import { bolumler } from './harita.js';
-import { hatalariOku, hatalariTemizle, gunlukMetni } from '../hataGunlugu.js';
+import { hatalariOku, hatalariTemizle, gunlukMetni, hataEkle } from '../hataGunlugu.js';
 
 // ---------- Ayarlar ----------
 async function indirilecekler() {
@@ -259,7 +259,7 @@ async function devasaBilgisi() {
   const var_ = await telefondakiler();
   const n = hepsi.filter((u) => var_.has(u)).length;
   const toplam = devasaToplamBayt();
-  el.textContent = `${hepsi.length} eserin 4096 piksele kadar en yüksek kalitedeki hali${toplam ? ` · toplam ${gb(toplam)} GB` : ''}. Telefonda: ${n} / ${hepsi.length}. İnince görüntüleyicide internet olmadan da en büyük hali açılır. Wi-Fi’de indir. Uygulama açıkken arkada iner, başka sayfalarda gezebilirsin; kapatırsan, bir dahaki açışında kaldığı yerden kendiliğinden sürer (iPhone kapalı uygulamanın indirmesine izin vermiyor).`;
+  el.textContent = `${hepsi.length} eserin 4096 piksele kadar en yüksek kalitedeki hali${toplam ? ` · toplam ${gb(toplam)} GB` : ''}. Telefonda: ${n} / ${hepsi.length}. İnince görüntüleyicide internet olmadan da en büyük hali açılır. Wi-Fi’de indir; telefonu yormamak için tek tek iner. Uygulama açıkken arkada iner, başka sayfalarda gezebilirsin; kapatırsan, bir dahaki açışında kaldığı yerden kendiliğinden sürer (iPhone kapalı uygulamanın indirmesine izin vermiyor).`;
   const sil = ekran.querySelector('[data-devasa-sil]');
   if (sil) sil.hidden = !n || !!(d.devasaIndirme && !d.devasaIndirme.bitti);
   if (d.devasaIndirme) devasaGoster();
@@ -304,7 +304,29 @@ const surdurIsareti = (v) => {
     /* depo kapalı */
   }
 };
+// İş 123: indirme izi (localStorage): bir önceki açılışta indirme sürerken uygulama kapandıysa (çöktü ya da kapatıldı)
+// iz kalır; açılışta hata günlüğüne yazılır, sonra silinir
+const IZ = 'sanat-atlasi:devasa-iz';
+function izBirak(v) {
+  try {
+    if (v) localStorage.setItem(IZ, JSON.stringify(v));
+    else localStorage.removeItem(IZ);
+  } catch {
+    /* depo kapalı */
+  }
+}
+function iziOku() {
+  try {
+    const v = JSON.parse(localStorage.getItem(IZ) || 'null');
+    if (v && v.n) hataEkle({ m: `En büyük kopya indirmesi yarıda kaldı (uygulama kapandı ya da çöktü): ${v.n}. / ${v.toplam} görselde`, k: String(v.u || ''), y: String(v.z || ''), a: '#/ayarlar' });
+  } catch {
+    /* bozuk iz */
+  }
+  izBirak(null);
+}
+
 export async function devasaSurdur() {
+  iziOku();
   await devasaHazirla();
   let var_ = false;
   try {
@@ -345,9 +367,14 @@ async function devasaIndir({ kendiliginden = false } = {}) {
     kilit = null;
   }
   let sira = 0;
+  // İş 123 (Emre: "yine indirirken çöktü", telefonda 87 GB boş): iPhone uygulamayı bellek yüzünden kapatıyordu; üç büyük
+  // kopya (3–15 MB) aynı anda indirilip yazılıyordu. Artık tek tek, aralarında kısa mola, 50'de bir uzun dinlenme.
+  // Her görselden önce iz bırakılır: uygulama çökerse bir sonraki açılışta hata günlüğüne kaçıncı görselde kaldığı yazılır.
+  const dinlen = (ms) => new Promise((c) => setTimeout(c, ms));
   const isci = async () => {
     while (sira < urller.length && !i.durdur && !i.yerYok) {
       const u = urller[sira++];
+      izBirak({ n: i.onceden + i.biten + 1, toplam: i.hepsi, u: u.split('/').pop(), z: new Date().toISOString() });
       try {
         const y = await fetch(`${u}?kalici=1`, { mode: 'cors' });
         if (y.status === 507) i.yerYok = true;
@@ -357,6 +384,7 @@ async function devasaIndir({ kendiliginden = false } = {}) {
       }
       i.biten++;
       goster();
+      await dinlen(i.biten % 50 ? 250 : 2500);
     }
   };
   // ekranı güncellemekteki bir hata indirmeyi durdurmasın
@@ -368,11 +396,11 @@ async function devasaIndir({ kendiliginden = false } = {}) {
     }
   };
   try {
-    // kendiliğinden sürerken iki işçi: uygulamayı kullanırken görseller yavaşlamasın
-    await Promise.all(kendiliginden ? [isci(), isci()] : [isci(), isci(), isci()]);
+    await isci();
   } finally {
     i.durduruldu = !!i.durdur;
     i.bitti = true;
+    izBirak(null);
     surdurIsareti(false); // bitti, durduruldu ya da yer kalmadı (uygulama kapanınca buraya gelinmez: işaret kalır)
     kilit?.release?.().catch(() => {});
     goster();
