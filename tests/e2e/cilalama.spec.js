@@ -428,6 +428,9 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
   await expect.poll(telefonda, { timeout: 30000 }).toBe(n);
   expect(once).toBeLessThan(n);
   await expect.poll(() => page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBeNull();
+  // İş 123: yarıda kalan indirme (uygulama kapandı) hata günlüğüne kaçıncı görselde kaldığıyla yazılır; iz silinir
+  expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:hatalar'))).toContain('yarıda kaldı');
+  expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-iz'))).toBeNull();
   await page.evaluate(() => (location.hash = '#/ayarlar'));
   await expect(page.locator('[data-test="devasa-indir"]')).toContainText(`Telefonda: ${n} / ${n}`);
   expect(hatalar).toEqual([]);
