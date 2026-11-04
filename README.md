@@ -26,7 +26,7 @@ Derleme adımı yok; GitHub Pages depo kökünü olduğu gibi sunar. (`.nojekyll
 1. iPhone'da **Safari** ile yukarıdaki adresi aç.
 2. **Paylaş** düğmesi → **Ana Ekrana Ekle** → **Ekle**.
 3. Uygulamayı ana ekrandaki **Atlas** simgesinden aç. İlk açılışta İlerleme'de 1–6, 9, 10, 11. konular işaretli gelir.
-4. İnternetteyken bir kez açıp birkaç ekranı gezmen yeterli; uygulama kabuğu ve veriler çevrimdışı da çalışır. Görselleri de çevrimdışı istersen **Ayarlar → Görselleri çevrimdışı indir**.
+4. İnternetteyken bir kez açıp birkaç ekranı gezmen yeterli; uygulama kabuğu ve veriler çevrimdışı da çalışır. Açtığın görseller kendiliğinden saklanır; eserlerin en büyük kopyalarını çevrimdışı istersen **Ayarlar → En büyük kopyaları telefona indir**.
 
 **Yedek:** Ayarlar → **Yedekle** ilerlemeni panoya kopyalar; Notlar'a yapıştırıp sakla. Geri yüklemek için metni **Yedeği geri yükle** kutusuna yapıştır.
 
