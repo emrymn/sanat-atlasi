@@ -5018,9 +5018,61 @@ main[data-hareket='giris'] .ozet .ad {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to bottom, rgba(var(--bg-rgb), 0.55), rgba(var(--bg-rgb), 0) 22%),
-    linear-gradient(to top, var(--bg) 4%, rgba(var(--bg-rgb), 0.86) 26%, rgba(var(--bg-rgb), 0) 58%);
+    linear-gradient(to bottom, rgba(var(--bg-rgb), 0.45), rgba(var(--bg-rgb), 0) 18%),
+    linear-gradient(to top, var(--bg) 0%, rgba(var(--bg-rgb), 0.7) 14%, rgba(var(--bg-rgb), 0) 36%);
   pointer-events: none;
+}
+.konu-sahne:has(.konu-sahne-buyut:not([hidden])) {
+  cursor: zoom-in;
+}
+/* resmi tam ekranda açan küçük düğme: sahnenin sağ alt köşesinde, resim açıldıktan sonra belirir */
+.konu-sahne-buyut {
+  position: absolute;
+  z-index: 2;
+  right: var(--kenar-sag);
+  bottom: 44px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgba(var(--vurgu-rgb), 0.35);
+  border-radius: 50%;
+  background: var(--overlay-btn);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: var(--ink);
+  opacity: 0;
+  scale: 0.7;
+  transition:
+    opacity 0.5s ease 1.4s,
+    scale 0.6s cubic-bezier(0.3, 1.5, 0.5, 1) 1.4s;
+}
+.konu-sahne.acik .konu-sahne-buyut {
+  opacity: 1;
+  scale: 1;
+}
+.konu-sahne-buyut:active {
+  scale: 0.9;
+  transition-delay: 0s;
+}
+.konu-sahne-buyut:focus-visible {
+  outline: 2px solid var(--vurgu-acik);
+  outline-offset: 2px;
+}
+/* aşağı kaydırınca sahne yavaşça geride kalır (destekleyen tarayıcılarda) */
+@supports (animation-timeline: scroll()) {
+  .konu-sahne.acik .konu-sahne-resim img {
+    animation: konu-paralaks linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 520px;
+  }
+  @keyframes konu-paralaks {
+    to {
+      translate: 0 18%;
+      opacity: 0.35;
+    }
+  }
 }
 .konu-sahne-yazi {
   position: absolute;
@@ -5055,7 +5107,7 @@ main[data-hareket='giris'] .ozet .ad {
 .konu-baslik {
   position: relative;
   z-index: 1;
-  margin-top: -112px;
+  margin-top: -56px;
 }
 .konu-sahne.bos + .konu-baslik {
   margin-top: -96px;
@@ -5144,6 +5196,235 @@ main[data-hareket='giris'] .ozet .ad {
 }
 .konu-hikaye .okuma + .okuma {
   margin-top: 14px;
+}
+
+/* "Bütün resimler" düğmesi: başlığın altında, hap biçiminde */
+.konu-galeri-ac {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  margin-top: 18px;
+  padding: 0 8px 0 16px;
+  border: 1px solid rgba(var(--vurgu-rgb), 0.45);
+  border-radius: 999px;
+  background: rgba(var(--vurgu-rgb), 0.12);
+  color: var(--ink);
+  font: 600 15px/1 var(--sans);
+  transition:
+    background 0.25s ease,
+    scale 0.25s ease,
+    opacity 0.3s ease;
+}
+.konu-galeri-ac .ikon {
+  color: var(--vurgu-acik);
+}
+.konu-galeri-ac small {
+  display: grid;
+  place-items: center;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--vurgu-acik);
+  color: var(--vurgu-acik-yazi);
+  font: 700 13px/1 var(--sans);
+  font-variant-numeric: tabular-nums;
+}
+.konu-galeri-ac:disabled {
+  opacity: 0.5;
+}
+.konu-galeri-ac:not(:disabled):active {
+  scale: 0.96;
+  background: rgba(var(--vurgu-rgb), 0.22);
+}
+@media (hover: hover) {
+  .konu-galeri-ac:not(:disabled):hover {
+    background: rgba(var(--vurgu-rgb), 0.22);
+  }
+}
+.konu-galeri-ac:focus-visible {
+  outline: 2px solid var(--vurgu-acik);
+  outline-offset: 3px;
+}
+
+/* katlanmış hikâye: ilk satırlar görünür, alt kenarı zemine erir */
+.konu-metin {
+  overflow: hidden;
+}
+.konu-metin.katli {
+  max-height: 15.5em;
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  mask-image: linear-gradient(to bottom, #000 55%, transparent);
+}
+.konu-metin.acildi .okuma + .okuma {
+  animation: konu-yazi-gir 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) calc(0.08s + var(--i, 0) * 70ms) backwards;
+}
+.konu-uzat {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  margin-top: 6px;
+  padding: 0 2px;
+  border: 0;
+  background: none;
+  color: var(--vurgu-acik);
+  font: 600 15px/1 var(--sans);
+}
+.konu-uzat[hidden] {
+  display: none;
+}
+.konu-uzat .ikon {
+  transition: rotate 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.konu-uzat[aria-expanded='true'] .ikon {
+  rotate: 180deg;
+}
+.konu-uzat:focus-visible {
+  outline: 2px solid var(--vurgu-acik);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* bütün resimler duvarı: tam ekran, alttan kayarak açılır; resimler kırpılmadan iki sütunda */
+html.konu-galeri-acik {
+  overflow: hidden;
+}
+.konu-galeri {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--bg);
+  color: var(--ink);
+  opacity: 0;
+  translate: 0 6%;
+  transition:
+    opacity 0.3s ease,
+    translate 0.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.konu-galeri.acik {
+  opacity: 1;
+  translate: none;
+}
+.konu-galeri-ust {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: calc(env(safe-area-inset-top) + 14px) calc(env(safe-area-inset-right) + var(--yan)) 14px calc(env(safe-area-inset-left) + var(--yan));
+  background: rgba(var(--bg-rgb), 0.86);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+.konu-galeri-ust > div {
+  min-width: 0;
+}
+.konu-galeri-ust p {
+  margin: 0 0 4px;
+  font: 600 12px/1.2 var(--sans);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--vurgu-acik);
+}
+.konu-galeri-ust h2 {
+  margin: 0;
+  font: 400 24px/1.15 var(--serif);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.konu-galeri-kapat {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--ink);
+}
+.konu-galeri-kapat:active {
+  scale: 0.92;
+}
+.konu-galeri-duvar {
+  columns: 2;
+  column-gap: 12px;
+  margin: 0;
+  padding: 16px calc(env(safe-area-inset-right) + var(--yan)) calc(env(safe-area-inset-bottom) + 32px) calc(env(safe-area-inset-left) + var(--yan));
+  list-style: none;
+}
+.konu-galeri-duvar li {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  opacity: 0;
+  translate: 0 24px;
+  scale: 0.96;
+  transition:
+    opacity 0.5s ease calc(0.12s + var(--i) * 55ms),
+    translate 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) calc(0.12s + var(--i) * 55ms),
+    scale 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) calc(0.12s + var(--i) * 55ms);
+}
+.konu-galeri.acik .konu-galeri-duvar li {
+  opacity: 1;
+  translate: none;
+  scale: 1;
+}
+.konu-galeri-duvar button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: zoom-in;
+  -webkit-tap-highlight-color: transparent;
+}
+.konu-galeri-duvar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 80px;
+  border-radius: 6px;
+  background: var(--surface);
+  box-shadow: 0 10px 26px -14px rgba(0, 0, 0, 0.7);
+  transition: scale 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.konu-galeri-duvar button:active img {
+  scale: 0.97;
+}
+.konu-galeri-duvar button:focus-visible img {
+  outline: 2px solid var(--vurgu-acik);
+  outline-offset: 3px;
+}
+.konu-galeri-duvar span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.konu-galeri-duvar b {
+  font: 600 14px/1.3 var(--sans);
+}
+.konu-galeri-duvar small {
+  font: 400 13px/1.3 var(--sans);
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+@media (min-width: 720px) {
+  .konu-galeri-duvar {
+    columns: 3;
+  }
 }
 .konu-ilk::first-letter {
   float: left;
@@ -5357,12 +5638,18 @@ main[data-hareket='giris'] .ozet .ad {
   .konu-ipuclari li,
   .konu-duraklar > li::after,
   .konu-duraklar > li > .konu-durak,
-  .konu-yil {
+  .konu-yil,
+  .konu-sahne-buyut,
+  .konu-galeri,
+  .konu-galeri-duvar li,
+  .konu-uzat .ikon {
     transition: none;
   }
   .konu-sahne.acik .konu-sahne-resim,
+  .konu-sahne.acik .konu-sahne-resim img,
   .konu-baslik > *,
-  .konu-ozet {
+  .konu-ozet,
+  .konu-metin.acildi .okuma + .okuma {
     animation: none;
   }
 }

@@ -300,21 +300,25 @@ export async function konuSayfasi(kodlu) {
   ciz(`<div class="hale" aria-hidden="true"></div>
     <header class="sanatci-ust">${geriDugmesi('#/konular')}<a class="etiket vurgu" href="#/konular/${k.tur}">${kacis(TUR_AD[k.tur])}</a></header>
     <article class="konu-sayfa" data-test="konu">
-      <figure class="konu-sahne" data-konu-sahne><span class="konu-sahne-resim" data-konu-sahne-resim></span><figcaption class="konu-sahne-yazi" data-konu-sahne-yazi></figcaption></figure>
+      <figure class="konu-sahne" data-konu-sahne><span class="konu-sahne-resim" data-konu-sahne-resim></span><figcaption class="konu-sahne-yazi" data-konu-sahne-yazi></figcaption>
+        <button class="konu-sahne-buyut" type="button" data-konu-sahne-buyut aria-label="Resmi büyüt" hidden>${ikon('buyut', 18, 1.6)}</button></figure>
       <div class="konu-baslik">
         <p class="konu-ust"><span>${kacis(TUR_AD[k.tur])}</span><span aria-hidden="true">·</span><span>${k.eserler.length} eser</span></p>
         <h1 class="konu-ad" tabindex="-1">${kacis(k.ad)}</h1>
         ${k.kaynak ? `<p class="konu-kaynak">${kacis(k.kaynak)}</p>` : ''}
+        <button class="konu-galeri-ac" type="button" data-konu-galeri-ac data-test="konu-galeri-ac" disabled>${ikon('izgara', 18, 1.6)}<span>Bütün resimler</span><small data-konu-sayi>${k.eserler.length}</small></button>
       </div>
       ${k.ozet ? `<p class="konu-ozet">${kacis(k.ozet)}</p>` : ''}
       <section class="konu-bolum konu-hikaye" data-gozcu>${etiket('Hikâye')}
-        ${ilkParagraf ? `<p class="okuma konu-ilk">${kacis(ilkParagraf)}</p>` : ''}${k.hikaye.slice(1).map((p) => `<p class="okuma">${kacis(p)}</p>`).join('')}</section>
+        <div class="konu-metin" id="konu-metin" data-konu-metin>${ilkParagraf ? `<p class="okuma konu-ilk">${kacis(ilkParagraf)}</p>` : ''}${k.hikaye.slice(1).map((p, i) => `<p class="okuma" style="--i:${Math.min(i, 6)}">${kacis(p)}</p>`).join('')}</div>
+        <button class="konu-uzat" type="button" data-konu-uzat aria-expanded="false" aria-controls="konu-metin" hidden><span>Devamını oku</span>${ikon('asagi', 18, 1.8)}</button></section>
       ${k.tanima.length ? `<section class="konu-bolum" data-gozcu>${etiket('Resimde nasıl tanınır?', { vurgu: true })}<ul class="konu-ipuclari">${k.tanima.map((x, i) => `<li style="--i:${i}">${ikon('ara', 18, 1.6)}<span>${kacis(x)}</span></li>`).join('')}</ul></section>` : ''}
       <section class="konu-bolum konu-yol" data-gozcu>${etiket(`Aynı hikâye, ${k.eserler.length} kez`)}<p class="konu-yol-not">Zaman sırasıyla; kaydır, dokunup büyüt.</p>
         <div class="konu-serit" data-konu-eserler><p class="ikincil kucuk">Eserler yükleniyor…</p></div></section>
       <p class="konu-dipnot">Metni Claude yazdı, ikinci bir istekte denetledi. Konu, eserlerin adından çıkarıldı; arada yanlış eşleşme olabilir.</p>
     </article>`);
   gorunceOynat();
+  metniKatla();
   const [eserler, kapak] = await Promise.all([eserSozu, kapakSozu]);
   if (!guncelMi(no)) return;
   konuSahnesiniDoldur(kapak);
@@ -323,6 +327,19 @@ export async function konuSayfasi(kodlu) {
   if (!eserler.length) {
     kutu.innerHTML = '<p class="ikincil kucuk">Bu konudaki eserlerin görseli bulunamadı.</p>';
     return;
+  }
+  const gorAc = (i) => goruntuleyiciAc({ eserler, baslangic: i, notu: (e) => notuIcin(e.sid)(e), ...gorselTercihi() });
+  const galeriDugme = ekran.querySelector('[data-konu-galeri-ac]');
+  if (galeriDugme) {
+    galeriDugme.disabled = false;
+    galeriDugme.querySelector('[data-konu-sayi]').textContent = eserler.length;
+    galeriDugme.addEventListener('click', () => konuGalerisiAc(k.ad, eserler, gorAc, galeriDugme));
+  }
+  const buyut = ekran.querySelector('[data-konu-sahne-buyut]');
+  const kapakSira = Math.max(0, eserler.indexOf(kapak));
+  if (buyut && kapak) {
+    buyut.hidden = false;
+    ekran.querySelector('[data-konu-sahne]').addEventListener('click', () => gorAc(kapakSira));
   }
   const kotu = kotuler();
   kutu.innerHTML = `<ol class="konu-duraklar">${eserler
@@ -338,6 +355,78 @@ export async function konuSayfasi(kodlu) {
   kutu.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-konu-eser]');
     if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.konuEser), notu: (e) => notuIcin(e.sid)(e), ...gorselTercihi() });
+  });
+}
+
+// Hikâye uzunsa ilk satırlar görünür, gerisi solar; "Devamını oku" metni yumuşakça açar (yükseklik geçişi)
+function metniKatla() {
+  const metin = ekran.querySelector('[data-konu-metin]');
+  const dugme = ekran.querySelector('[data-konu-uzat]');
+  if (!metin || !dugme) return;
+  metin.classList.add('katli');
+  if (metin.scrollHeight <= metin.clientHeight + 24) return metin.classList.remove('katli');
+  dugme.hidden = false;
+  dugme.addEventListener('click', () => {
+    const acik = dugme.getAttribute('aria-expanded') === 'true';
+    const bas = metin.getBoundingClientRect().height;
+    metin.classList.toggle('katli', acik);
+    metin.classList.toggle('acildi', !acik);
+    const son = metin.getBoundingClientRect().height;
+    dugme.setAttribute('aria-expanded', String(!acik));
+    dugme.querySelector('span').textContent = acik ? 'Devamını oku' : 'Daha az göster';
+    if (hareketAz()) return;
+    metin.animate([{ height: `${bas}px` }, { height: `${son}px` }], { duration: 520, easing: 'cubic-bezier(0.2, 0.7, 0.2, 1)' });
+    if (acik) metin.closest('section').scrollIntoView({ block: 'start', behavior: 'smooth' });
+  });
+}
+
+// "Bütün resimler": konunun bütün eserleri kırpılmadan, iki sütunlu bir duvarda; dokununca görüntüleyici açılır
+function konuGalerisiAc(baslik, eserler, gorAc, acan) {
+  const kotu = kotuler();
+  const kok = document.createElement('div');
+  kok.className = 'konu-galeri';
+  kok.setAttribute('role', 'dialog');
+  kok.setAttribute('aria-modal', 'true');
+  kok.setAttribute('aria-label', `${baslik}: bütün resimler`);
+  kok.dataset.test = 'konu-galeri';
+  kok.innerHTML = `<header class="konu-galeri-ust"><div><p>Bütün resimler · ${eserler.length}</p><h2>${kacis(baslik)}</h2></div>
+      <button class="konu-galeri-kapat" type="button" aria-label="Kapat">${ikon('kapat', 22)}</button></header>
+    <ul class="konu-galeri-duvar">${eserler
+      .map((e, i) => {
+        const g = secilenGorsel(e, kotu) || e.gorseller[0];
+        const s = d.harita.get(e.sid);
+        return `<li style="--i:${Math.min(i, 12)}"><button type="button" data-galeri-eser="${i}" aria-label="${kacis(`${s ? s.ad : ''}, ${eserBaslik(e)}`)} — büyüt">
+          <img ${i > 5 ? 'loading="lazy" ' : ''}decoding="async" alt="" src="${kacis(gorselUrl(g, 500))}" data-yedek="${kacis(gorselYedek(g))}">
+          <span><b>${kacis(s ? bilinenAd(s.ad, d.kisaAdlar[s.id]) : '')}</b>${e.tarih ? `<small>${kacis(e.tarih)}</small>` : ''}</span></button></li>`;
+      })
+      .join('')}</ul>`;
+  document.body.appendChild(kok);
+  document.documentElement.classList.add('konu-galeri-acik');
+  requestAnimationFrame(() => kok.classList.add('acik'));
+  const kapatDugme = kok.querySelector('.konu-galeri-kapat');
+  kapatDugme.focus({ preventScroll: true });
+  let kapandi = false;
+  const kapat = () => {
+    if (kapandi) return;
+    kapandi = true;
+    removeEventListener('hashchange', kapat);
+    document.removeEventListener('keydown', tus);
+    document.documentElement.classList.remove('konu-galeri-acik');
+    kok.classList.remove('acik');
+    const sil = () => kok.remove();
+    if (hareketAz()) sil();
+    else setTimeout(sil, 380);
+    if (acan && acan.isConnected) acan.focus({ preventScroll: true });
+  };
+  const tus = (ev) => {
+    if (ev.key === 'Escape' && !document.querySelector('.gor')) kapat();
+  };
+  addEventListener('hashchange', kapat);
+  document.addEventListener('keydown', tus);
+  kapatDugme.addEventListener('click', kapat);
+  kok.addEventListener('click', (ev) => {
+    const b = ev.target.closest('[data-galeri-eser]');
+    if (b) gorAc(Number(b.dataset.galeriEser));
   });
 }
 
