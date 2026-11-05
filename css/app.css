@@ -32,36 +32,33 @@
   --vurgu-rgb: 138, 130, 122;
   color-scheme: dark;
 }
-/* Gündüz: yumuşak, parlamayan kırık beyaz. --bg, --surface ve --boya-* günün resminin paletiyle JS'ten boyanır (ortak.js) */
+/* Gündüz: müze duvarı. Sabit, sakin taş grisi zemin; renk yalnızca tablodan gelir (--vurgu*, sahne ve Tuval'in palet mozaiği) */
 :root[data-tema='gunduz'] {
-  --bg: #d1cbc1;
-  --bg-rgb: 209, 203, 193;
-  --surface: #d9d4cb;
-  --border: #b9b2a6;
-  --boya-1: 176, 150, 120;
-  --boya-2: 120, 130, 140;
-  --boya-3: 160, 120, 100;
+  --bg: #e7e5e0;
+  --bg-rgb: 231, 229, 224;
+  --surface: #f3f2ee;
+  --border: #d3cfc7;
   --golge-rgb: 20, 17, 14;
-  --ink: #221d19;
-  --ink-2: #4a433c;
-  --ink-3: #574f47;
-  --ink-soluk: #857d72;
+  --ink: #1d1b19;
+  --ink-2: #48433d;
+  --ink-3: #625c55;
+  --ink-soluk: #8a837a;
   --right: #2a6644;
   --right-ikon: #2a6644;
   --right-bg: rgba(42, 102, 68, 0.12);
   --wrong: #9a3726;
   --wrong-ikon: #9a3726;
   --wrong-bg: rgba(154, 55, 38, 0.1);
-  --doku: radial-gradient(rgba(30, 26, 23, 0.05) 1px, transparent 1px);
-  --tab-bg: rgba(226, 221, 213, 0.86);
-  --overlay-btn: rgba(216, 211, 202, 0.85);
+  --doku: radial-gradient(rgba(30, 26, 23, 0.035) 1px, transparent 1px);
+  --tab-bg: rgba(243, 242, 238, 0.82);
+  --overlay-btn: rgba(243, 242, 238, 0.85);
   --durum-cubugu: #1e1a17;
-  --vurgu: #4a433c;
-  --vurgu-yazi: #f1ede6;
-  --vurgu-acik: #4a433c;
-  --vurgu-acik-yazi: #f1ede6;
-  --vurgu-koyu: #cbc5ba;
-  --vurgu-rgb: 74, 67, 60;
+  --vurgu: #48433d;
+  --vurgu-yazi: #f3f2ee;
+  --vurgu-acik: #48433d;
+  --vurgu-acik-yazi: #f3f2ee;
+  --vurgu-koyu: #d3cfc7;
+  --vurgu-rgb: 72, 67, 61;
   color-scheme: light;
 }
 :root {
@@ -90,35 +87,6 @@ body {
   font: 400 16px/1.5 var(--sans);
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
-}
-/* Gündüz: zemin düz kalmasın; günün resminin renkleri sabit bir katmanda suluboya gibi yayılır */
-:root[data-tema='gunduz'] body {
-  background-color: transparent;
-}
-:root[data-tema='gunduz'] body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(95% 60% at 0% 0%, rgba(var(--boya-1), 0.5), transparent 70%),
-    radial-gradient(85% 55% at 100% 42%, rgba(var(--boya-2), 0.42), transparent 70%),
-    radial-gradient(110% 60% at 30% 100%, rgba(var(--boya-3), 0.46), transparent 72%);
-  background-size: 115% 115%;
-  background-position: 0% 0%;
-  transition: background-color 1.2s ease;
-  animation: boya-nefes 24s ease-in-out infinite alternate;
-  }
-  @keyframes boya-nefes {
-  to {
-  background-position: 100% 60%;
-  }
-  }
-@media (prefers-reduced-motion: reduce) {
-  :root[data-tema='gunduz'] body::after {
-    animation: none;
-  }
 }
 /* Açık temalarda iOS durum çubuğunun beyaz yazısı okunsun diye üstte koyu şerit */
 body::before {
@@ -3272,7 +3240,7 @@ html.sekmesiz .sekmeler {
   --ink: #f2ece2;
   --ink-2: #ddd5c9;
   --ink-3: #c8bfb2;
-  --vurgu-acik: color-mix(in srgb, rgb(var(--boya-1)) 45%, #efe4d2);
+  --vurgu-acik: #efe9df;
   --border: rgba(242, 236, 226, 0.18);
   color: var(--ink);
   background: linear-gradient(180deg, rgb(var(--golge-rgb)) calc(100% - 26svh), rgba(var(--golge-rgb), 0) 100%);
@@ -3293,14 +3261,6 @@ html.sekmesiz .sekmeler {
 }
 :root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman .sahne-isim {
   text-shadow: 0 1px 16px rgba(var(--golge-rgb), 0.55);
-}
-/* Gündüz: keskin palet şeritleri yerine tablonun gölgesinden boyaya yumuşak geçiş */
-:root[data-tema='gunduz'] .hikaye::before {
-  background:
-    linear-gradient(180deg, rgba(var(--golge-rgb), 0.55) 0, rgba(var(--golge-rgb), 0.18) 160px, rgba(var(--golge-rgb), 0) 420px),
-    radial-gradient(80% 45% at 15% 35%, rgba(var(--boya-1), 0.22), transparent 70%),
-    radial-gradient(70% 40% at 90% 70%, rgba(var(--boya-2), 0.18), transparent 70%);
-  border-top: 0;
 }
 :root[data-tema='gunduz'] .sahne:has(.bugun-kahraman) .sahne-paneller .duvar-etiketi::before {
   background: linear-gradient(
