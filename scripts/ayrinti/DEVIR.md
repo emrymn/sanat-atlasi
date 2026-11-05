@@ -1,7 +1,9 @@
 # Rehberli eser incelemesi — devir raporu
 
 **Tur 1 · 5 Kasım 2026 · Claude (Claude Code, pilot).** 20 başyapıt, 119 nokta. Sürüm 1.71.0, KARARLAR İş 151.
-Bir sonraki model önce `TALIMAT.md`'yi, sonra bu dosyayı, sonra `DURUM.md`'yi okur; en altta hazır istem var.
+**Tur 2 · 5 Kasım 2026 · Claude (Claude Code).** Parti 1: 20 eser, 115 nokta. Sürüm 1.71.1, KARARLAR İş 152.
+**Tur 3 · 5 Kasım 2026 · Claude (Claude Code).** Plan Parti 2: 20 eser, 115 nokta. Sürüm 1.71.2, KARARLAR İş 153.
+Bir sonraki model önce `TALIMAT.md`'yi, sonra bu dosyayı, sonra `DURUM.md`'yi okur; **güncel hazır istem en altta** (Tur 3 bölümü).
 
 ## 1. Yapılanlar
 
@@ -94,7 +96,7 @@ python3 scripts/ayrinti/denetle.py && python3 scripts/ayrinti/durum.py && npm ru
 İndirmeler `gorsel.noracloud.ai`'den (Cloudflare R2, herkese açık); 4096'lıklar 2–8 MB. Bütün tabloyu 4096'da
 incelemek gerekmez.
 
-## 6. Sonraki modele hazır istem
+## 6. Sonraki modele hazır istem (Tur 1'in; Tur 2 için en alttakini kullan)
 
 > Sanat Atlası deposunda rehberli eser incelemesine devam et (KARARLAR İş 151). Önce `scripts/ayrinti/TALIMAT.md`,
 > `scripts/ayrinti/DEVIR.md` ve `scripts/ayrinti/DURUM.md`'yi oku. `DURUM.md`'deki **Parti 1**'in 20 eseri için
@@ -108,10 +110,66 @@ incelemek gerekmez.
 
 ---
 
-## Tur 2 · 5 Kasım 2026 · Claude (Claude Code) · plan Parti 2
+# Tur 2 · Parti 1 (Claude, Claude Code)
 
-Emre "sıradaki partiyi yap" dedi, sonra açıkça **Parti 2**'yi istedi; bu yüzden plan Parti 1 (Berlinghieri → Veronese) **yapılmadı**, hâlâ açık.
-Sürüm 1.71.1, KARARLAR İş 152.
+## Yapılanlar
+
+- `DURUM.md`'deki Parti 1'in 20 eseri (Berlinghieri → Veronese) `data/eser_ayrintilari.json`'a eklendi: 115 nokta
+  (15 eserde 6, 5 eserde 5; ortalama 5,75). Toplam 40 / 107, 234 nokta.
+- Her eser: 1280'lik kopya ızgarayla seçildi, sonra 4096'lık kopyadan (%30 payla) kontak sayfası çıkarılıp kutular
+  tek tek doğrulandı. 4096'lığı **olmayan** beş eser 1280'den doğrulandı: Lorenzetti (Meryem'in Doğumu), Simone Martini
+  (Müjde), Michelino (Dante), Cranach (Âdem ile Havva), Tintoretto (Son Akşam Yemeği). Bunlarda yakınlaşma yumuşak kalır.
+- Aşama 2'de düzeltilen 4 kutu: Simone Martini'nin altın yazısı (kutu yazının üstündeydi; aşağı ve Cebrail'in ağzına
+  kaydırıldı), Duccio'da pelerini seren adam kutunun sağından taşıyordu (genişletildi), Raimondi'de Zafer'in çelengi
+  kutunun solundaydı, Cranach'ta Havva'nın ayakları alttan kesiliyordu.
+- Metinler eserin `bolumler`/`bak` alanlarındaki olgulara dayandı; `bak`'taki üç ayrıntı her eserde noktalara alındı
+  (Berlinghieri'nin "mucize" sahnesi ve Mantegna'nın merhem kabı gibi ekler kayıttaki "Ne görüyoruz?"dan).
+- Yardımcı: bu turda `r/NN.json` taslaklarını parti sırasıyla JSON'a yazan küçük bir birleştirme betiği kullanıldı
+  (scratch, depoya girmedi); `coz.py` → `izgara.py` → `kirp.py` akışı değişmedi.
+
+## Emin olunmayanlar
+
+- **Berlinghieri "Mucize sahnesi" (sağ üst):** sunak önünde diz çöken hastalar; hangi mucize olduğu adlandırılmadı,
+  metin genel tutuldu ("şifa ve cin çıkarma mucizeleri"). Yazıttaki imza satırı kısmen okunuyor.
+- **Cimabue:** görsel 1966 taşkını öncesi eski bir reprodüksiyon (kayıt da öyle diyor); "Yaylanan beden" kutusu bacaklar
+  ve ayakları alır.
+- **Gentile:** maiyette "maymunlar" kaydın metninden; kutu tazıyı gösterir, maymunlara ayrıca bakılmadı. İmza ve tarih
+  aynı satırda iki ayrı levha; kutu yalnız imzayı alır, tarih metinde.
+- **Dürer:** levhada "S·1513" okunuyor; metin yalnız "1513" ve AD monogramı diyor. Şeytan "kıvrık boynuzlu" yazıldı
+  (tek boynuz görünür).
+- **Metsys:** aynadaki yansımada kırmızı başlıklı bir figür; kimliği yazılmadı.
+- **Michelangelo "Sıva çatlakları":** gökyüzündeki ince bir çatlağı alan dar kutu; ayrıntı küçük, ama fresk yüzeyini
+  göstermek için bilerek seçildi.
+- **Tintoretto:** Yahuda (masanın bizim tarafında, haresiz) noktalanmadı: 1280'de figür seçilemedi.
+- **Veronese:** müzisyenlerin ressam portreleri olduğu ve Correggio testisinin Inakhos'a gönderme olduğu yumuşatılarak
+  yazıldı (kaydın kendi ifadesi).
+- Raimondi'de sırtı dönük tanrıçanın kimliği tartışmalı bırakıldı; Venüs, Cupid'in sarıldığı cepheden figür.
+
+## Kalan plan
+
+Parti 2–5 değişmedi (tablo §4): 67 eser. Parti 2: Salviati → Poussin (20 eser, Maniyerizm → Fransız Klasisizmi).
+Bu turda 20 eser rahat sığdı (≈ 20 ızgara + 22 kontak sayfası bakışı).
+
+## Sonraki modele hazır istem
+
+> Sanat Atlası deposunda rehberli eser incelemesine devam et (KARARLAR İş 151–152). Önce `scripts/ayrinti/TALIMAT.md`,
+> `scripts/ayrinti/DEVIR.md` (özellikle en alttaki Tur 2 raporu) ve `scripts/ayrinti/DURUM.md`'yi oku. `DURUM.md`'deki
+> **Parti 2**'nin 20 eseri için `data/eser_ayrintilari.json`'a kayıt ekle: her eserde 4–6 ayrıntı noktası,
+> `{x, y, w, h}` 0–1 oranlı, 2–3 cümlelik Türkçe açıklama; eserin `data/basyapitlar.json`'daki `bak` ayrıntılarını
+> noktalara al. İki aşamalı görsel doğrulamayı atlama: 1280 px kopyada ızgarayla seç, her kutuyu 4096 px kopyadan
+> payla kırpıp doğrula ve düzelt (`scripts/ayrinti/yardimci/` betikleri). Bitince `python3 scripts/ayrinti/denetle.py`
+> sıfır hata vermeli, `python3 scripts/ayrinti/durum.py` ile `DURUM.md`'yi yenile, `DEVIR.md`'ye "Tur 3" başlığıyla
+> kendi raporunu ekle, `KARARLAR.md`'ye kısa not yaz, `npm run test:unit` geçsin, `sw.js`, `js/surum.js` ve sürüm
+> testlerinde (`tests/unit/paket8.test.mjs`, `tests/e2e/paket8.spec.js`) yama sürümünü yükselt (1.71.x), PR aç. `tools/`
+> ve `data/sanatcilar.json` içeriğine dokunma. Kredi azalırsa bitirdiğin eserlerde dur; yarım eser bırakma; DEVIR ve
+> DURUM'u mutlaka güncelle.
+
+---
+
+# Tur 3 · Parti 2 (Claude, Claude Code)
+
+Emre "sıradaki partiyi yap" dedi, sonra açıkça **Parti 2**'yi istedi. Parti 1 aynı anda başka bir oturumda yapıldı (Tur 2,
+PR #172) ve önce birleşti; bu tur ona göre İş 153 / 1.71.2 olarak numaralandı. Toplam 60 / 107 eser, 349 nokta.
 
 ### Yapılanlar
 - 20 başyapıt, 115 nokta (Salviati, Pontormo, Anguissola, Daniele da Volterra, Parmigianino, Rosso, Giulio Romano, Carracci,
@@ -139,6 +197,19 @@ Sürüm 1.71.1, KARARLAR İş 152.
 
 ### Kalan plan (DURUM.md'nin numaralarına dikkat)
 `durum.py` partileri kalanlardan yeniden numaralar. Bu turdan sonra DURUM.md'de:
-- **Parti 1** = plan Parti 1 (Gotik → Yüksek Rönesans + Tintoretto, Veronese; 20 eser) — sıradaki iş bu.
-- **Parti 2** = plan Parti 3 (Claude Lorrain → Millais), **Parti 3** = plan Parti 4, **Parti 4** = plan Parti 5 (7 eser).
-Tablodaki (§4) notlar geçerli. Hazır istem (§6) aynen kullanılabilir; yalnız "Tur 2" yerine "Tur 3" başlığı ve 1.71.2 sürümü.
+- **Parti 1** = plan Parti 3 (Claude Lorrain → Millais, 20 eser), **Parti 2** = plan Parti 4 (Ingres → Munch, 20 eser),
+  **Parti 3** = plan Parti 5 (Kirchner → Bacon, 7 eser). Kalan 47 eser. §4 tablosundaki notlar geçerli.
+- Emre plan Parti 3'ü başka bir oturumda başlattı: o oturum da `eser_ayrintilari.json`, DEVIR, DURUM, KARARLAR ve sürüm
+  dosyalarına yazacağı için birleştirmede çakışma çıkar. Çözüm bu turdaki gibi: main'in dosyalarını al, kendi kayıtlarını
+  sona ekle, İş ve sürüm numarasını bir artır, `durum.py`'yi yeniden çalıştır.
+
+## Sonraki modele hazır istem
+
+> Sanat Atlası deposunda rehberli eser incelemesine devam et (KARARLAR İş 151–153). Önce `scripts/ayrinti/TALIMAT.md`,
+> `scripts/ayrinti/DEVIR.md` (en alttaki Tur 3 raporu) ve `scripts/ayrinti/DURUM.md`'yi oku. Önce main'i çek; `DURUM.md`'deki
+> **Parti 1**'in eserleri için `data/eser_ayrintilari.json`'a kayıt ekle: her eserde 4–6 ayrıntı noktası, `{x, y, w, h}`
+> 0–1 oranlı, 2–3 cümlelik Türkçe açıklama; `bak` ayrıntılarını noktalara al. İki aşamalı doğrulamayı atlama (1280 ızgara
+> → 4096 kırpıntı, `scripts/ayrinti/yardimci/`). Bitince `denetle.py` sıfır hata, `durum.py` ile DURUM.md, DEVIR.md'ye yeni
+> "Tur" raporu, KARARLAR'a not, `npm run test:unit` geçsin; `sw.js`, `js/surum.js` ve sürüm testlerinde
+> (`tests/unit/paket8.test.mjs`, `tests/e2e/paket8.spec.js`) yama sürümünü yükselt, PR aç. `tools/` ve `data/sanatcilar.json`
+> içeriğine dokunma. Yarım eser bırakma; DEVIR ve DURUM'u mutlaka güncelle.
