@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.67.0';
+const SURUM = '1.68.4';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -132,6 +132,7 @@ const ISTEGE_BAGLI = [
   'data/ikonografi.json',
   'data/yerel_gorseller.json',
   'data/gorsel_oranlari.json',
+  'data/gorsel_odak.json',
   'data/kopya_eserler.json',
   'data/cikarilan_gorseller.json',
   'icons/icon-maskable-512.png',
@@ -169,7 +170,8 @@ self.addEventListener('activate', (e) => {
     (async () => {
       const adlar = await caches.keys();
       await Promise.all(adlar.filter((a) => (a.startsWith('atlas-kabuk-') && a !== KABUK) || a === 'atlas-resim').map((a) => caches.delete(a)));
-      await tx('readwrite', (st) => st.clear()).catch(() => {}); // eski önbelleğin meta kayıtları
+      // İş 135: görsel önbelleğinin (atlas-resim-2) boyut/erişim kayıtları sürüm geçişinde korunur (önceden her sürümde
+      // silinip LRU sırası kayboluyordu; kayıtlar eski 'atlas-resim' içindi, o çoktan silindi)
       await self.clients.claim();
     })(),
   );
@@ -213,7 +215,8 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(depodanYaDa(e));
   } else if (url.origin === self.location.origin && (url.pathname.endsWith('/data/kunye.json') || url.pathname.endsWith('/data/gorsel_kaynagi.json'))) {
     // künye (portre, okunuş, IPA) Emre'nin Mac'inde güncellenir: sürüm beklemeden gelsin diye önce ağ, yoksa önbellek
-    e.respondWith(onceAg(istek, KABUK));
+    // İş 135: ağ yavaşsa (kopmadan sürünüyorsa) açılış beklemesin: önbellekte varsa 2,5 sn sonra o verilir, ağ arkada sürer
+    e.respondWith(onceAg(e, KABUK, 2500));
   } else if (url.origin === self.location.origin) {
     // İş 122: önbellek okunamazsa (telefonda depolama dolu ya da bozuk) ağdan; yoksa iPhone "WebKit encountered an
     // internal error" gösterip uygulamayı hiç açmıyordu
@@ -228,7 +231,7 @@ self.addEventListener('fetch', (e) => {
   } else if (MUZE_GORSELLERI.some((h) => url.hostname === h.host && url.pathname.startsWith(h.yol))) {
     e.respondWith(resim(e));
   } else if (url.hostname === 'www.wikidata.org' || url.hostname === 'query.wikidata.org') {
-    e.respondWith(onceAg(istek, WIKIDATA));
+    e.respondWith(onceAg(e, WIKIDATA, 8000));
   } else if (url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com') {
     e.respondWith(oncePaket(istek, FONT));
   }
@@ -263,14 +266,28 @@ async function oncePaket(istek, ad) {
   return y;
 }
 
-async function onceAg(istek, ad) {
+// Önce ağ; ağ hata verirse önbellek. sure verilirse ve önbellekte kopya varsa ağ o kadar beklenir, gecikirse önbellekteki
+// verilir; ağ isteği arkada sürer ve gelince önbelleği yeniler (bir sonraki açılışa)
+async function onceAg(e, ad, sure = 0) {
+  const istek = e.request;
   const c = await caches.open(ad);
-  try {
-    const y = await fetch(istek);
-    if (y.ok) {
-      c.put(istek.url, y.clone()).catch(() => {});
-      return y;
+  const ag = fetch(istek).then((y) => {
+    if (y.ok) c.put(istek.url, y.clone()).catch(() => {});
+    return y;
+  });
+  const eski = sure ? await c.match(istek.url).catch(() => undefined) : undefined;
+  if (eski) {
+    try {
+      e.waitUntil(ag.catch(() => {}));
+    } catch (err) {
+      /* olay bitmiş */
     }
+    const y = await Promise.race([ag.catch(() => null), new Promise((coz) => setTimeout(() => coz(null), sure))]);
+    return y && y.ok ? y : eski;
+  }
+  try {
+    const y = await ag;
+    if (y.ok) return y;
     return (await c.match(istek.url)) || y;
   } catch (err) {
     const k = await c.match(istek.url);
@@ -493,8 +510,14 @@ async function devasaResim(e) {
 }
 
 let budamaSuruyor = false;
+// İş 135: budama bütün kayıtları ve anahtarları okur: her görselden sonra değil, en çok BUDAMA_ARALIGI'nda bir
+// (sınır bu arada birkaç MB aşılabilir; yer dolarsa sakla() zorla budar)
+const BUDAMA_ARALIGI = 30000;
+let sonBudama = 0;
 async function budama(zorla = false) {
   if (budamaSuruyor) return;
+  if (!zorla && Date.now() - sonBudama < BUDAMA_ARALIGI) return;
+  sonBudama = Date.now();
   budamaSuruyor = true;
   try {
     const c = await caches.open(RESIM);

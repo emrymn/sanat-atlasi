@@ -15150,3 +15150,286 @@ button.motif-kapak:active .hp-kapak-eser img {
   overscroll-behavior: contain;
   touch-action: pan-y;
 }
+
+/* ===== İş 136 · Sade müze dili (Emre: "tutarlı kart düzeni, sade çerçeveler, eserden alınan rengi yalnızca
+   vurgularda kullanmak, bunları deneyelim") =====
+   Geri almak için bu bölümü silmek yeter; öncesine dokunulmadı.
+   1) Eserin rengi yalnız vurgularda: seçili sekme, dolu (birincil) düğme, ilerleme çubukları/halkaları, anahtarlar,
+      odak çizgisi, baş harf ve Galeri başlığındaki tek italik söz. Üst etiketler, bağlantılar, kart kenarları ve
+      ikincil düğmelerin yüzeyi temanın sabit, nötr tonlarında.
+   2) Sade çerçeveler: kalın yaldız kenarlar yerine ince iç çizgi ve hafif gölge; dönem çerçeveleri (sergi duvarı,
+      Koleksiyonum; çerçeve dönemin ipucu) aynen kalır.
+   3) Ortak kart düzeni: görsel → ad (Bodoni, dik) → sanatçı · yıl ya da sayı (Archivo) → küçük ek bilgi. Aynı
+      görsel köşesi, görselle yazı arası aynı boşluk, dokununca aynı hafif basılma. */
+:root,
+:root[data-tema='gece'],
+.gor {
+  --notr-kenar: rgba(244, 239, 230, 0.14);
+  --notr-yuzey: rgba(244, 239, 230, 0.05);
+  --kart-kose: 4px;
+}
+:root[data-tema='sepya'] {
+  --notr-kenar: rgba(53, 43, 33, 0.16);
+  --notr-yuzey: rgba(53, 43, 33, 0.04);
+}
+:root[data-tema='acik'] {
+  --notr-kenar: rgba(36, 32, 27, 0.13);
+  --notr-yuzey: rgba(36, 32, 27, 0.03);
+}
+
+/* --- 1 · renk yalnız vurguda --- */
+/* üst etiketler müze etiketi gibi nötr */
+.etiket.vurgu,
+.vurgu-yazi,
+.konu-ust,
+.karsi-baslik,
+.konu-galeri-ust p,
+.gecis-yazi small,
+.durak.acildi small,
+.bugun-ust .hap,
+.isim-ek .ipa-etiket,
+.sahne-dugme-yazi b {
+  color: var(--ink-2);
+}
+.bugun-ust .hap {
+  background: var(--notr-yuzey);
+  border-color: var(--notr-kenar);
+}
+/* bağlantılar mürekkep renginde; resmin rengi yalnız altındaki ince çizgide */
+a {
+  color: var(--ink);
+  text-decoration-color: rgba(var(--vurgu-rgb), 0.75);
+  text-decoration-thickness: 1px;
+}
+.tumu,
+.tumunu-goster,
+.karsilastir-bag,
+.konu-uzat,
+.gor-konu,
+.yedek-hatirlat button,
+#bildirim button {
+  color: var(--ink);
+}
+.zaman-sira {
+  -webkit-text-stroke-color: var(--notr-kenar);
+}
+.konu-karti-no,
+.pk-ek-turlar > .hatalar-satir .hatalar-sayi,
+.pk-ek-turlar > .hatalar-satir[data-test='konu-turu'] .hatalar-sayi {
+  color: var(--ink-2);
+}
+/* ikincil düğmeler ve kartlar: nötr yüzey, nötr ince kenar */
+.dugme:where(:not(.acik, .vurgu, .birincil, .siradaki-dugme, .ince, .tanis-dugme, .zaman-sanatci-dugme)) {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0)), var(--surface);
+  box-shadow: inset 0 0 0 1px var(--notr-kenar);
+}
+@media (hover: hover) {
+  .dugme:where(:not(.acik, .vurgu, .birincil, .siradaki-dugme, .ince, .tanis-dugme, .zaman-sanatci-dugme)):hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0)), var(--surface);
+  }
+}
+.dugme.ince,
+.metin-bag button,
+.konu-galeri-ac,
+.konu-sahne-buyut,
+.konu-karti,
+.devam-kart,
+.tur,
+.gecis,
+.duvar-etiketi,
+.alt-yaprak,
+.yaprak-dugmeler .dugme:first-child,
+.alt-yaprak .yaprak-dugmeler .dugme:first-child,
+.zaman-ok,
+.tuval-ekle {
+  border-color: var(--notr-kenar);
+}
+.metin-bag button,
+.konu-galeri-ac,
+.konu-karti,
+.alt-yaprak .yaprak-dugmeler .dugme:first-child {
+  background: var(--notr-yuzey);
+}
+.devam-kart {
+  background: var(--notr-yuzey);
+}
+.tur {
+  background: var(--notr-yuzey);
+  box-shadow: 0 18px 36px -24px rgba(0, 0, 0, 0.6);
+}
+.tuval-ekle {
+  background: var(--surface);
+}
+.zaman-ok {
+  color: var(--ink-2);
+}
+.zaman-kart:focus-visible {
+  box-shadow: 0 0 0 1px var(--notr-kenar);
+}
+@media (hover: hover) {
+  .zaman-kart:hover {
+    box-shadow: 0 0 0 1px var(--notr-kenar);
+  }
+}
+.gz-kare {
+  box-shadow: 0 0 0 1px var(--notr-kenar);
+}
+.sergi-duvar {
+  background: var(--surface);
+}
+/* kitaplık (Defter): kitap kapağına resim rengi süzülmez; işlenmiş ve sıradaki kitabın çizgisi vurgu olarak kalır */
+.kitap-resim {
+  background-blend-mode: normal;
+}
+.kitap {
+  box-shadow:
+    0 0 0 1px var(--notr-kenar),
+    0 14px 24px -16px rgba(0, 0, 0, 0.7);
+}
+
+/* --- 2 · sade çerçeveler --- */
+/* başyapıt vitrini: akım renkli kenar yerine ince nötr kenar, paspartu daralır, gölge yumuşar */
+.bsy-cerceve {
+  padding: 5px;
+  border-color: var(--notr-kenar);
+  border-radius: 2px;
+  box-shadow: 0 16px 26px -20px rgba(0, 0, 0, 0.7);
+}
+/* harita penceresinin kapak eserleri: 4 px / 3 px yaldız kenar yerine ince yaldız çizgi */
+.hp-kapak-eser img,
+.hp-kapak-yan img {
+  border-width: 1px;
+  outline: 0;
+  box-shadow:
+    0 0 0 3px rgba(var(--bg-rgb), 0.85),
+    0 14px 22px -14px rgba(0, 0, 0, 0.85);
+}
+/* konu destesi: arkadaki kartlar daha az dönük, gölge daha az */
+.konu-kapak {
+  border-radius: var(--kart-kose);
+  box-shadow: 0 12px 22px -16px rgba(0, 0, 0, 0.7);
+}
+.konu-deste i {
+  border-radius: var(--kart-kose);
+}
+li.gorundu .konu-deste i:nth-child(1) {
+  transform: rotate(-3deg) translate(-3%, 1%);
+}
+li.gorundu .konu-deste i:nth-child(2) {
+  transform: rotate(3deg) translate(3%, -1%);
+}
+
+/* --- 3 · ortak kart düzeni: görsel → ad → sanatçı · yıl / sayı → ek bilgi --- */
+.eser img,
+.galeri-eser img,
+.tumu {
+  border-radius: var(--kart-kose);
+}
+.akim-eser,
+.eser,
+.galeri-eser,
+.vitrin-kart,
+.konu-kart {
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.25s cubic-bezier(0.3, 1.4, 0.5, 1);
+}
+.akim-eser:active,
+.eser:active,
+.galeri-eser:active,
+.vitrin-kart:active,
+.konu-kart:active {
+  transform: scale(0.97);
+  transition-duration: 0.12s;
+}
+/* görselle yazı arası her kartta 12 px, satırlar arası 4 px */
+.eser,
+.galeri-eser {
+  gap: 12px;
+}
+.vitrin-yazi,
+.konu-kart-yazi {
+  gap: 4px;
+  padding-top: 12px;
+}
+/* ad: Bodoni, dik, iki satır */
+.eser-yazi,
+.vitrin-yazi b,
+.konu-kart-yazi b {
+  font: 400 17px/1.22 var(--serif);
+  color: var(--ink);
+  text-wrap: balance;
+}
+.eser-yazi,
+.izgara .eser-yazi {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  -webkit-line-clamp: unset;
+}
+.eser-ad {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.izgara .eser-ad {
+  -webkit-line-clamp: 3;
+}
+.konu-izgara > li:first-child .konu-kart-yazi b {
+  font-size: 22px;
+}
+/* ikinci satır: Archivo, ikincil mürekkep (sanatçı · yıl, ya da eser sayısı) */
+.eser-yazi small {
+  display: block;
+  margin-top: 4px;
+  font: 500 13px/1.35 var(--sans);
+  color: var(--ink-2);
+}
+.vitrin-yazi > span,
+.konu-kart-yazi small {
+  font: 500 13px/1.35 var(--sans);
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-2);
+}
+/* ek bilgi (akım): küçük büyük harf, soluk */
+.vitrin .vitrin-akim {
+  margin-top: 4px;
+  color: var(--ink-3);
+}
+/* akım sayfasındaki "En bilinen eserler" de aynı düzende */
+.akim-eser {
+  gap: 0;
+}
+.akim-eser .cerceve {
+  border-radius: var(--kart-kose);
+}
+.akim-eser > span:not(.cerceve) {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 12px;
+}
+.akim-eser b {
+  font: 400 17px/1.22 var(--serif);
+  text-wrap: balance;
+}
+.akim-eser small {
+  font: 500 13px/1.35 var(--sans);
+  color: var(--ink-2);
+}
+/* İş 136b (Emre: "kalsın, çıkartma"): Galeri'deki dönem kartlarının üç küçük eseri kartın ortasında */
+.zaman-kart .onizleme {
+  justify-content: center;
+}
+/* ortalanan resimler sağ alttaki oka değmesin: ok kartın sağında, dikey ortada */
+.zaman-kart .zaman-ok {
+  top: 50%;
+  bottom: auto;
+  translate: 0 -50%;
+}
+/* İş 139 (Emre: "hareket eden kartları biraz aşağı çek, resmi çok kapatıyor"): Atölye'deki yelpaze deste arka plan
+   tablosunun ortasını örtüyordu; deste 64 px aşağıda, "Bugünkü tur" sayısının sağında (yazıya değmez) */
+.pk-deste {
+  transform: translateY(64px);
+}

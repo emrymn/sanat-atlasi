@@ -5,7 +5,7 @@ import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
 import { sanatciEserleri, eserBaslik } from '../eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl } from '../gorsel.js';
+import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla } from '../gorsel.js';
 import { gununSanatcisi } from '../gunun.js';
 import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
@@ -117,10 +117,21 @@ export function notuIcin(sanatciId) {
 }
 
 // Izgara küçük görseli: 400 px; açılmazsa (ör. çevrimdışı) 800 px denenir
-export function kucukGorsel(e, genislik = 400) {
+// odak: true → kırpılan görsel yüzün çevresinden kırpılır (İş 137; odak verisi yüklenmişse)
+let odakSozu = null;
+export function odaklariYukle() {
+  odakSozu ||= jsonGetir('data/gorsel_odak.json')
+    .then(odaklariAyarla)
+    .catch(() => (odakSozu = null));
+  return odakSozu;
+}
+
+export function kucukGorsel(e, genislik = 400, { odak = false } = {}) {
   const g = secilenGorsel(e, kotuler()) || e.gorseller[0];
   if (!g) return '';
-  return `<img loading="lazy" decoding="async" alt="" src="${kacis(gorselUrl(g, genislik))}" data-yedek="${kacis(gorselYedek(g))}">`;
+  const o = odak ? gorselOdagi(g) : '';
+  const stil = o ? ` style="object-position:${o};transform-origin:${o}"` : '';
+  return `<img loading="lazy" decoding="async" alt="" src="${kacis(gorselUrl(g, genislik))}" data-yedek="${kacis(gorselYedek(g))}"${stil}>`;
 }
 
 export function akimRenk(ad) {
@@ -728,7 +739,20 @@ export function bilinirlikSirasi(eserler) {
 }
 
 // Ekranın olay dinleyicileri; app.js özgün sırayla bir kez bağlar
+// İlerleme kaydedilemiyorsa (js/depo.js) kullanıcı bir kez uyarılır: sessizce kaybolmasın
+const KAYIT_UYARISI = {
+  kilitli: ['İlerlemen bu açılışta okunamadı; üzerine yazılmasın diye kaydetme durdu. Uygulamayı yeniden aç.', 'Yenile', () => location.reload()],
+  yazilamadi: ['İlerleme telefona kaydedilemedi (yer yok ya da depo kapalı). Ayarlar’dan yedek al.', 'Ayarlar', () => (location.hash = '#/ayarlar')],
+};
+let kayitUyarildi = false;
+
 export function olaylariBagla() {
+  window.addEventListener('atlas-kayit-sorunu', (e) => {
+    const u = KAYIT_UYARISI[e.detail];
+    if (!u || kayitUyarildi) return;
+    kayitUyarildi = true;
+    bildir(u[0], { eylem: { ad: u[1], fn: u[2] }, sure: 0 });
+  });
   ekran.addEventListener('click', (e) => {
     const g = e.target.closest('[data-geri]');
     if (g) {

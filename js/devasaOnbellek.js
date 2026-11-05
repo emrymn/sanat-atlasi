@@ -2,7 +2,8 @@
 // ardından "WebKit encountered an internal error"): iPhone'da bu uygulamanın Cache Storage'ı bozuldu; en büyük kopyalar
 // artık önbelleğe (caches) değil IndexedDB'ye (atlas-devasa · g; anahtar adres, değer Blob) yazılır. Görüntüleyici
 // (sw.js) ve keskinleştirme (keskin.js) buradan okur. Eski önbellekler (atlas-devasa-kalici, -1, -2 …) okunabiliyorsa
-// tek tek buraya taşınır, okunamıyorsa silinir (içleri zaten okunamıyor; yer açılır).
+// tek tek buraya taşınır, okunamıyorsa silinir (içleri zaten okunamıyor; yer açılır). Taşırken depoya yazılamazsa
+// taşınmamışlar eski önbellekte kalır (İş 135).
 import { hataEkle } from './hataGunlugu.js';
 
 export const KALICI_ON = 'atlas-devasa-kalici';
@@ -100,20 +101,32 @@ export function eskileriTasi() {
         await caches.delete(a).catch((e2) => yaz_(`${a} silinemedi: ${mesajOf(e2)}`));
         continue;
       }
+      // Bir görsel okunamazsa yalnız o silinir (içi zaten okunamıyor). Depoya yazılamazsa (yer yok, depo hatası) taşıma
+      // durur ve taşınmamışlar eski önbellekte kalır: bir sonraki açılışta yeniden denenir (önceden önbelleğin tamamı
+      // silinirdi; taşınabilecek görseller de giderdi)
+      let okunamayan = 0;
       try {
         for (const r of istekler) {
           if (!(await depo.varMi(r.url))) {
-            const y = await c.match(r);
-            if (y && y.ok) await kaliciYaz(r.url, await y.blob());
-            tasinan++;
+            let blob = null;
+            try {
+              const y = await c.match(r);
+              if (y && y.ok) blob = await y.blob();
+            } catch (e) {
+              okunamayan++;
+            }
+            if (blob) {
+              await kaliciYaz(r.url, blob);
+              tasinan++;
+            }
           }
           await c.delete(r);
         }
         await caches.delete(a);
       } catch (e) {
-        yaz_(`${a} taşınamadı (${tasinan} taşındı): ${mesajOf(e)}`);
-        await caches.delete(a).catch(() => {});
+        yaz_(`${a} taşınamadı (${tasinan} taşındı; kalanlar eski önbellekte duruyor, sonra yeniden denenecek): ${mesajOf(e)}`);
       }
+      if (okunamayan) yaz_(`${a}: ${okunamayan} görsel okunamadı, silindi`);
     }
     if (tasinan) yaz_(`Eski önbellekten ${tasinan} en büyük kopya IndexedDB'ye taşındı`);
   })().catch((e) => yaz_(`Eski önbellekler taşınamadı: ${mesajOf(e)}`));
@@ -160,10 +173,11 @@ export async function kaliciSil() {
 // İş 128: inenlerin kendi defteri (localStorage; yalnız adlar). Depo okunamaz ya da eksik okunursa indirme baştan
 // başlamasın: defterdekiler birkaç örnekle doğrulanır, tutuyorsa inmiş sayılır.
 const DEFTER = 'sanat-atlasi:devasa-inen';
-// en büyük kopyalar yalnız adla (eski defterlerle aynı), 1280'likler (İş 130) "b:" önekiyle
+// en büyük kopyalar yalnız adla (eski defterlerle aynı), 1280'likler (İş 130) "b:", 400'lükler (İş 131) "k:" önekiyle
+// (İş 135: 400'lükler önceden tanınmıyor, deftere null yazılıyordu)
 const adOf = (u) => {
-  const m = String(u).match(/\/([db])\/([0-9a-f]{12,}(?:-[0-9a-f]{4,16})?)\.jpg/);
-  return m ? (m[1] === 'd' ? m[2] : `b:${m[2]}`) : undefined;
+  const m = String(u).match(/\/([dbk])\/([0-9a-f]{12,}(?:-[0-9a-f]{4,16})?)\.jpg/);
+  return m ? (m[1] === 'd' ? m[2] : `${m[1]}:${m[2]}`) : undefined;
 };
 export function defterOku() {
   try {

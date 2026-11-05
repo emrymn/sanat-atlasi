@@ -111,13 +111,14 @@ UYGULA=1 node scripts/kaynaklar/wikiart.mjs                                     
 | `sw.js`, `manifest.webmanifest`, `icons/` | PWA |
 | `data/*.json` | İçerik (sanatçılar, akımlar, konular, başlangıç ilerlemesi) |
 | `data/eserler_onbellek.json` | Wikidata QID'leri ve eser listeleri (derleme zamanı önbelleği; olmasa da çalışır) |
+| `data/gorsel_odak.json` | Görsellerin odak noktası (tablodaki yüzler, `scripts/odak.py`): kırpılan görsel yüzün çevresinden kırpılır |
 | `data/wikiart.json` | WikiArt'tan derleme zamanında alınan eserler (başlık, yıl, eser sayfası, görsel adresi) |
 | `scripts/` | Önbellek, ikon üretimi, yerel sunucu |
 | `tests/` | Birim (`unit/`), uçtan uca (`e2e/`), fikstürler |
 | `tools/` | Qwen inceleme betikleri (dokunulmaz) |
 | `KARARLAR.md` | Tarifte belirsiz kalan yerlerde verilen kararlar |
 
-Görseller Wikimedia Commons'tan, ek eser listeleri Wikidata'dan gelir. Bir eser yalnızca kursta geçiyorsa ya da Wikidata'da doğrulanmış sanatçıya “yaratıcı” (P170) / “mimar” (P84) olarak bağlıysa gösterilir.
+Eser listeleri yukarıdaki kaynaklardan (kurs, Wikidata, müzelerin açık verileri, Commons müze taramaları, WikiArt) derleme zamanında birleştirilir; görsellerin kopyaları GitHub Pages'te (400 px) ve Cloudflare R2'de (1280 px ve en büyük kopya) durur. Bir eser yalnızca sanatçıya o kaynağın kendi kaydında bağlıysa (kurs, Wikidata'da doğrulanmış sanatçının “yaratıcı” P170 / “mimar” P84'ü, müzenin sanatçı alanı) gösterilir.
 
 ## Görseller Cloudflare R2'de (en büyük kopyalar)
 

@@ -36,7 +36,7 @@ function duvarHtml(eserler) {
           <span class="asi-ip" aria-hidden="true"></span>
           <button class="eser koleksiyon-tablo" type="button" data-eser="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt"><span class="asi-cerceve" data-cerceve="${cerceveTipi(d.harita.get(e.sid)?.akim)}"><img ${i > 3 ? 'loading="lazy" ' : ''}decoding="async" alt="" src="${kacis(gorselUrl(g, 400))}" data-yedek="${kacis(gorselYedek(g))}"></span></button>
         </div>
-        <p class="eser-yazi" aria-hidden="true">${kacis(eserBaslik(e))}${e.tarih ? ` <small>· ${kacis(e.tarih)}</small>` : ''}</p>
+        <p class="eser-yazi" aria-hidden="true">${kacis(eserBaslik(e))}${e.tarih ? ` <small>${kacis(e.tarih)}</small>` : ''}</p>
       </li>`;
     })
     .join('');
