@@ -152,11 +152,17 @@ export function yumusat(renk) {
   return hsldenHex(h, s, l);
 }
 
+function sonuk(renk) {
+  const [h, s, l] = hsl(renk);
+  return hsldenHex(h, Math.min(s, 0.26), l);
+}
+
 // Paletten CSS değişkenleri; zemin: temanın --bg rengi
 export function renkTemasi(palet, zemin) {
   const secilen = vurguSec(palet);
   if (!secilen) return null;
-  const ana = yumusat(secilen);
+  // İş 141: Gece'de vurgu daha az doygun (koyu zeminde açılan renk parlıyordu: "sınırlı sıcak vurgu")
+  const ana = koyuMu(zemin) ? sonuk(yumusat(secilen)) : yumusat(secilen);
   const dolu = doluButon(ana);
   const acik = acikHal(ana, zemin);
   const acikYazi = kontrast(acik, KOYU_YAZI) >= kontrast(acik, BEYAZ_YAZI) ? KOYU_YAZI : BEYAZ_YAZI;

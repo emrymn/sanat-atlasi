@@ -19,7 +19,7 @@ import { eseriBildir } from '../bildirim.js';
 // "Bilmiyorum" cevabının değeri (Ö4): hiçbir sanatçı kimliği ya da akım adıyla çakışmaz
 export const BILMIYORUM = '?';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
-const TEMA_RENK = { gece: '#0B0A0B', gunduz: '#ECE8E1' };
+const TEMA_RENK = { gece: '#121110', gunduz: '#ECE8E1' };
 export const TEMA_AD = { gece: 'Gece', gunduz: 'Gündüz' };
 
 // İş 140 (v0'ın Gündüz denemesinden): Gündüz'de tablonun üstündeki yazılar beyaz bir peçeye değil resmin kendi en

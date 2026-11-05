@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { paletHesapla, vurguSec, acikHal, doluButon, renkTemasi, hsl, hsldenHex, hexten, KOYU_YAZI, BEYAZ_YAZI } from '../../js/renk.js';
 import { kontrast } from '../../js/tasarim.js';
 
-const GECE = '#0B0A0B';
+const GECE = '#121110'; // İş 141 (önce #0B0A0B)
 const SEPYA = '#F1E8D6';
 const GUNDUZ = '#ECE8E1'; // İş 140
 
