@@ -1,5 +1,6 @@
 // İş 144–150: Tuval yüz odağı, hareket ve yazı seçimi, elle odak
 import { test, expect } from '@playwright/test';
+import { readFileSync } from 'node:fs';
 import { agiHazirla, ilerleme } from './ortak.js';
 
 const kur = (context, ayarlar = {}, ek = {}) =>
@@ -40,15 +41,11 @@ test('İş 148/149: hareket ve yazı boyutu Ayarlar’dan seçilir, html’e yaz
 test('İş 144: Tuval’in tablosu yüz odağına göre kaydırılır', async ({ page, context }) => {
   await agiHazirla(context);
   await kur(context);
-  await context.route(/data\/gorsel_odak\.json/, async (r) => {
-    const y = await r.fetch();
-    const v = await y.json();
-    // bütün görsellerde odak sağ alt köşede: tablo o yöne kaymalı
-    for (const k of Object.keys(v.odak)) v.odak[k] = [95, 95];
-    const yerel = JSON.parse(await (await page.request.get('data/yerel_gorseller.json')).text()).gorseller;
-    for (const ad of Object.values(yerel)) v.odak[ad] = [95, 95];
-    await r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(v) });
-  });
+  // bütün görsellerde odak sağ alt köşede: tablo o yöne kaymalı. Veri diskten (istek yakalanıp sunucudan yeniden
+  // indirilince service worker'lı CI'da takılıyordu)
+  const yerel = JSON.parse(readFileSync(new URL('../../data/yerel_gorseller.json', import.meta.url), 'utf8')).gorseller;
+  const odak = Object.fromEntries(Object.values(yerel).map((ad) => [ad, [95, 95]]));
+  await context.route(/data\/gorsel_odak\.json/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, odak }) }));
   await page.goto('./');
   const img = page.locator('[data-gunun-gorsel] > img');
   await expect(img).toHaveAttribute('style', /object-position: -?[\d.]+px -?[\d.]+px/, { timeout: 10000 });
