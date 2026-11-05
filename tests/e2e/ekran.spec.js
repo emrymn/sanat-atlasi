@@ -89,8 +89,8 @@ test('ekran görüntüleri: Bugün, Sanatçı, Pekiştir ve çizilmemiş ekranla
   await bekle(page);
   await al(page, 'goruntuleyici');
 
-  // Sepya ve Açık: aynı yerleşim
-  for (const tema of ['sepya', 'acik']) {
+  // Gündüz: aynı yerleşim (İş 140: Sepya ve Açık'ın yerine)
+  for (const tema of ['gunduz']) {
     await page.evaluate((t) => {
       const i = JSON.parse(localStorage.getItem('sanat-atlasi:ilerleme'));
       i.ayarlar.tema = t;

@@ -11,7 +11,7 @@ import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
 import { ikon } from '../tasarim.js';
 import { adParcala } from '../adlar.js';
-import { paletGetir, renkTemasi } from '../renk.js';
+import { paletGetir, renkTemasi, hexten, hsl, hsldenHex } from '../renk.js';
 import { taninmaMetni, eserNotu } from '../karsilastir.js';
 import { koleksiyondaMi, koleksiyonDegistir } from '../koleksiyon.js';
 import { eseriBildir } from '../bildirim.js';
@@ -19,8 +19,21 @@ import { eseriBildir } from '../bildirim.js';
 // "Bilmiyorum" cevabının değeri (Ö4): hiçbir sanatçı kimliği ya da akım adıyla çakışmaz
 export const BILMIYORUM = '?';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
-const TEMA_RENK = { gece: '#0B0A0B', sepya: '#F1E8D6', acik: '#FBFAF7' };
-export const TEMA_AD = { gece: 'Gece', sepya: 'Sepya', acik: 'Açık' };
+const TEMA_RENK = { gece: '#0B0A0B', gunduz: '#ECE8E1' };
+export const TEMA_AD = { gece: 'Gece', gunduz: 'Gündüz' };
+
+// İş 140 (v0'ın Gündüz denemesinden): Gündüz'de tablonun üstündeki yazılar beyaz bir peçeye değil resmin kendi en
+// koyu tonuna oturur. Zemin ve paneller tablodan boyanmaz (Emre: sabit nötr kâğıt); yalnız bu gölge tablodan gelir.
+function golgeTonu(palet) {
+  const koyu = palet.reduce((a, p) => (hsl(p.renk)[2] < hsl(a.renk)[2] ? p : a), palet[0]);
+  const [h, s, l] = hsl(koyu.renk);
+  return hsldenHex(h, Math.min(s, 0.32), Math.min(l, 0.12));
+}
+function golgeyiYaz(palet) {
+  const st = document.documentElement.style;
+  if (d.ilerleme.ayarlar.tema === 'gunduz' && palet && palet.length) st.setProperty('--golge-rgb', hexten(golgeTonu(palet)).join(', '));
+  else st.removeProperty('--golge-rgb');
+}
 export const HARFLER = 'ABCD';
 
 // Cevap yaprağındaki kaynak satırı; WikiArt görselinde eser sayfasının bağlantısı da
@@ -258,6 +271,7 @@ let renkIstegi = 0;
 function renkleriYaz(palet) {
   d.palet = palet;
   const st = document.documentElement.style;
+  golgeyiYaz(palet);
   const t = palet ? renkTemasi(palet, TEMA_RENK[d.ilerleme.ayarlar.tema] || TEMA_RENK.gece) : null;
   for (const [k, v] of Object.entries(VURGU_DEGISKENLERI)) {
     if (t) st.setProperty(v, t[k]);

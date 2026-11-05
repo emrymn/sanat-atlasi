@@ -7,7 +7,7 @@ import { cevapla, yeniSkor } from '../../js/leitner.js';
 test('yedek → geri yükleme gidiş-dönüşü kayıpsız', () => {
   const i = varsayilanIlerleme([1, 2, 3]);
   i.skorlar.giotto = { sanatci: cevapla(yeniSkor(), true, '2026-10-19'), akim: cevapla(yeniSkor(), false, '2026-10-19') };
-  i.ayarlar.tema = 'sepya';
+  i.ayarlar.tema = 'gunduz';
   i.ayarlar.gunlukKart = 30;
   i.ekSanatcilar = ['claude-monet'];
   i.kotuGorseller = { 'q:Q1': ['c:a.jpg'] };
@@ -15,19 +15,20 @@ test('yedek → geri yükleme gidiş-dönüşü kayıpsız', () => {
   const geri = yedekCoz(yedekMetni(i));
   assert.deepEqual(geri.islenen, [1, 2, 3]);
   assert.deepEqual(geri.skorlar, i.skorlar);
-  assert.deepEqual(geri.ayarlar, { gunlukKart: 30, tema: 'sepya', tanisma: true, rozet: false, egim: true, titresim: true });
+  assert.deepEqual(geri.ayarlar, { gunlukKart: 30, tema: 'gunduz', tanisma: true, rozet: false, egim: true, titresim: true });
   assert.deepEqual(geri.ekSanatcilar, ['claude-monet']);
   assert.deepEqual(geri.kotuGorseller, { 'q:Q1': ['c:a.jpg'] });
   assert.deepEqual(geri.sonCalisilanlar, ['giotto']);
 });
 
-test('varsayılan tema Gece; sürüm 1 ilerlemesinde Sepya ve Koyu bir kez Geceye geçer, Açık korunur', () => {
+test('varsayılan tema Gece; sürüm 1 ilerlemesinde Sepya ve Koyu bir kez Geceye geçer; kaldırılan Açık ve Sepya Gündüze geçer (İş 140)', () => {
   assert.equal(varsayilanIlerleme().ayarlar.tema, 'gece');
   assert.equal(ilerlemeDogrula({ surum: 1, islenen: [], ayarlar: { tema: 'sepya' } }).ayarlar.tema, 'gece');
   assert.equal(ilerlemeDogrula({ surum: 1, islenen: [], ayarlar: { tema: 'koyu' } }).ayarlar.tema, 'gece');
-  assert.equal(ilerlemeDogrula({ surum: 1, islenen: [], ayarlar: { tema: 'acik' } }).ayarlar.tema, 'acik');
-  // geçişten sonra Sepya seçimi kalıcıdır
-  assert.equal(ilerlemeDogrula({ surum: 2, islenen: [], ayarlar: { tema: 'sepya' } }).ayarlar.tema, 'sepya');
+  assert.equal(ilerlemeDogrula({ surum: 1, islenen: [], ayarlar: { tema: 'acik' } }).ayarlar.tema, 'gunduz');
+  assert.equal(ilerlemeDogrula({ surum: 2, islenen: [], ayarlar: { tema: 'sepya' } }).ayarlar.tema, 'gunduz');
+  assert.equal(ilerlemeDogrula({ surum: 2, islenen: [], ayarlar: { tema: 'acik' } }).ayarlar.tema, 'gunduz');
+  assert.equal(ilerlemeDogrula({ surum: 2, islenen: [], ayarlar: { tema: 'gunduz' } }).ayarlar.tema, 'gunduz');
 });
 
 test('son çalışılanlar: en yeni başta, tekrarsız, sınırlı', () => {
@@ -103,13 +104,13 @@ test('İş 42: geliştirici modu her şeyi açar; kapanınca açmadan önceki il
   assert.deepEqual(okunan.gelistirici.yedek.islenen, [1, 2]);
   // mod açıkken yapılanlar atılır, tema korunur
   okunan.skorlar.vermeer = { sanatci: cevapla(yeniSkor(), true, '2026-10-20') };
-  okunan.ayarlar.tema = 'acik';
+  okunan.ayarlar.tema = 'gunduz';
   const { ilerleme: geri, yarim: geriYarim } = gelistiriciKapat(okunan);
   assert.deepEqual(geri.islenen, [1, 2]);
   assert.deepEqual(geri.skorlar, once.skorlar);
   assert.deepEqual(geri.bolumler, once.bolumler);
   assert.deepEqual(geri.haritaGorulen, ['1-1']);
-  assert.equal(geri.ayarlar.tema, 'acik');
+  assert.equal(geri.ayarlar.tema, 'gunduz');
   assert.equal(geri.gelistirici, null);
   assert.deepEqual(geriYarim, yarim);
   // bozuk kayıt modu kapatır
