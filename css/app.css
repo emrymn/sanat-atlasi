@@ -15512,3 +15512,10 @@ li.gorundu .konu-deste i:nth-child(2) {
 :root:not([data-tema='gunduz']) :is(.dugme.vurgu, .dugme.birincil, .siradaki.resimli .siradaki-dugme) {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
 }
+
+/* İş 142 (Emre: "haritanın altı boş, harita neden üstten başlıyor"; v0'ın denemesindeki çözüm): sekme çubuğu için
+   bırakılan alt boşluk haritada da kalıyor, yolculuğun başladığı en alt bölümün altında ~100 px boş şerit
+   görünüyordu. Harita sayfanın dibine iner; sekme çubuğu tablonun üstünde yüzer. */
+#uygulama:has(> .harita) {
+  padding-bottom: 0;
+}
