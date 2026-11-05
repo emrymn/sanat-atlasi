@@ -1,6 +1,7 @@
 // "Yenilikler" notu (T4): sürüm değişince Bugün'de bir kez, Ayarlar'ın altında her zaman.
 // Yeni bir sürümde listenin başına satır eklenir; yalnızca düzeltme olan sürümler listeye girmez.
 export const YENILIKLER = [
+  { surum: '1.68.0', metin: 'Daha sade bir görünüm: eserin rengi artık yalnız seçili sekmede, dolu düğmelerde ve ilerleme çizgilerinde; etiketler ve bağlantılar müze etiketi gibi sakin tonlarda. Eser, başyapıt ve konu kartları aynı düzende: önce ad, altında sanatçı ve yıl. Başyapıt çerçeveleri inceldi.' },
   { surum: '1.67.0', metin: 'Galeri’de Başyapıtlar ve Konular yeniden tasarlandı: dönemler müze salonu gibi numaralı, konular deste gibi üst üste kartlar. Konu sayfası artık hikâyenin en ünlü tablosuyla açılıyor; hikâye kısaca görünüyor, “Devamını oku” ile açılıyor; aynı hikâyenin yüzyıllar boyunca resimleri bir zaman şeridinde, “Bütün resimler” ile de hepsi bir duvarda.' },
   { surum: '1.66.0', metin: 'Sayfalardaki resimler artık telefondan geliyor: “En büyük kopyaları telefona indir” sayfalarda görünen 400 ve 1280 piksellik halleri de indiriyor (yaklaşık 2 GB daha). İnince ızgaralar, kartlar ve görüntüleyici beklemeden, internet olmadan açılır. İndirilenler kaldığı yerden sürer; baştan inmez.' },
   { surum: '1.65.0', metin: 'Ayarlar’daki “En büyük kopyaları telefona indir” artık bütün görselleri indiriyor: daha büyük hali olmayan yaklaşık 1500 eserin 1280 piksellik hali de iniyor, böylece internet olmadan da görüntüleyicide her eser açılıyor. Hepsi inince İndir düğmesi kalkıyor.' },

@@ -15219,12 +15219,12 @@ a {
   color: var(--ink-2);
 }
 /* ikincil düğmeler ve kartlar: nötr yüzey, nötr ince kenar */
-.dugme:not(.acik):not(.vurgu):not(.birincil) {
+.dugme:where(:not(.acik, .vurgu, .birincil, .siradaki-dugme, .ince, .tanis-dugme, .zaman-sanatci-dugme)) {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0)), var(--surface);
   box-shadow: inset 0 0 0 1px var(--notr-kenar);
 }
 @media (hover: hover) {
-  .dugme:not(.acik):not(.vurgu):not(.birincil):hover {
+  .dugme:where(:not(.acik, .vurgu, .birincil, .siradaki-dugme, .ince, .tanis-dugme, .zaman-sanatci-dugme)):hover {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0)), var(--surface);
   }
 }
@@ -15263,9 +15263,13 @@ a {
 .zaman-ok {
   color: var(--ink-2);
 }
-.zaman-kart:focus-visible,
-.zaman-kart:hover {
+.zaman-kart:focus-visible {
   box-shadow: 0 0 0 1px var(--notr-kenar);
+}
+@media (hover: hover) {
+  .zaman-kart:hover {
+    box-shadow: 0 0 0 1px var(--notr-kenar);
+  }
 }
 .gz-kare {
   box-shadow: 0 0 0 1px var(--notr-kenar);
