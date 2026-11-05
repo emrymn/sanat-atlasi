@@ -8,6 +8,7 @@ import { akimYuzyillari, ikon } from '../tasarim.js';
 import { adParcala, bilinenAd } from '../adlar.js';
 import { karsilastirmaAdresi, benzerSanatcilar } from '../karsilastir.js';
 import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir } from '../basyapit.js';
+import { ayrintilariAl, ayrintiBul, eserinAyrintisi } from '../ayrinti.js';
 import { konulariAl, konuBul, konuHaritasiniAyarla, kapakSec, TUR_AD, TUR_SIRA } from '../ikonografi.js';
 import { seviyeKaydi, seviyeDurumu } from '../seviye.js';
 import {
@@ -59,6 +60,18 @@ export function basyapitVeri() {
 }
 
 export const basyapitAdresi = (k) => `#/basyapit/${encodeURIComponent(k)}`;
+// İş 151: rehberli inceleme noktaları (data/eser_ayrintilari.json); yoksa boş liste. Sayfalar görüntüleyiciye
+// `ayrintilar` olarak bir bulucu verir; veri henüz gelmediyse o eserde inceleme çıkmaz (sonraki açılışta çıkar).
+let ayrintiSozu = null;
+let ayrintiListesi = [];
+export function ayrintiVeri() {
+  if (!ayrintiSozu)
+    ayrintiSozu = jsonGetir('data/eser_ayrintilari.json')
+      .catch(() => null)
+      .then((j) => (ayrintiListesi = ayrintilariAl(j)));
+  return ayrintiSozu;
+}
+export const ayrintiBulucu = (e) => eserinAyrintisi(ayrintiListesi, e);
 
 async function basyapitBaglariniDoldur(id) {
   const liste = sanatcininBasyapitlari(await basyapitVeri(), id);
@@ -119,6 +132,7 @@ export async function basyapitSayfasi(kodlu) {
   if (!b) return hataGoster(new Error('Bu eser için yakın okuma bulunamadı.'));
   const s = d.harita.get(b.sanatci);
   const eserSozu = sanatciEserleri(s).then((l) => eserEslestir(l, b));
+  const ayrintiSoz = ayrintiVeri();
   ekranRengi(eserSozu, akimRenk(s.akim));
   ciz(`<div class="hale" aria-hidden="true"></div>
     <header class="sanatci-ust">${geriDugmesi('#/basyapitlar')}<a class="etiket vurgu" href="#/akim/${encodeURIComponent(s.akim)}">${kacis(s.akim)}</a></header>
@@ -141,7 +155,16 @@ export async function basyapitSayfasi(kodlu) {
     return;
   }
   kutu.innerHTML = `<button class="basyapit-buyut" type="button" data-basyapit-buyut aria-label="${kacis(b.baslik)} — büyüt"><img decoding="async" alt="${kacis(`${s.ad}, ${b.baslik}`)}" src="${kacis(gorselUrl(g, 1200))}" data-yedek="${kacis(gorselYedek(g))}"></button>`;
-  kutu.querySelector('[data-basyapit-buyut]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ...gorselTercihi() }));
+  // İş 151: kayıt varsa görselin altında "Rehberli inceleme · N nokta" (görüntüleyici doğrudan inceleme kipinde açılır)
+  const liste = await ayrintiSoz;
+  if (!guncelMi(no)) return;
+  const kayit = ayrintiBul(liste, b.anahtar) || eserinAyrintisi(liste, e);
+  const ayrintilar = kayit ? () => kayit : null;
+  kutu.querySelector('[data-basyapit-buyut]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ayrintilar, ...gorselTercihi() }));
+  if (kayit) {
+    kutu.insertAdjacentHTML('beforeend', `<button class="basyapit-incele" type="button" data-test="basyapit-incele">${ikon('ara', 18)}Rehberli inceleme · ${kayit.noktalar.length} nokta</button>`);
+    kutu.querySelector('[data-test="basyapit-incele"]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ayrintilar, incelemeyeBasla: true, ...gorselTercihi() }));
+  }
 }
 
 // ---------- Konular ve hikâyeleri ----------
@@ -331,7 +354,8 @@ export async function konuSayfasi(kodlu) {
     kutu.innerHTML = '<p class="ikincil kucuk">Bu konudaki eserlerin görseli bulunamadı.</p>';
     return;
   }
-  const gorAc = (i) => goruntuleyiciAc({ eserler, baslangic: i, notu: (e) => notuIcin(e.sid)(e), ...gorselTercihi() });
+  ayrintiVeri();
+  const gorAc = (i) => goruntuleyiciAc({ eserler, baslangic: i, notu: (e) => notuIcin(e.sid)(e), ayrintilar: ayrintiBulucu, ...gorselTercihi() });
   const galeriDugme = ekran.querySelector('[data-konu-galeri-ac]');
   if (galeriDugme) {
     galeriDugme.disabled = false;
@@ -357,7 +381,7 @@ export async function konuSayfasi(kodlu) {
   if (yol) yol.classList.add('dolu');
   kutu.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-konu-eser]');
-    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.konuEser), notu: (e) => notuIcin(e.sid)(e), ...gorselTercihi() });
+    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.konuEser), notu: (e) => notuIcin(e.sid)(e), ayrintilar: ayrintiBulucu, ...gorselTercihi() });
   });
 }
 
@@ -616,9 +640,10 @@ export async function sanatciSayfasi(id) {
   // üstte "Tümünü göster", galerinin sonunda "Tümü (N)": bütün eserlerin ızgara görünümü
   kutu.insertAdjacentHTML('beforebegin', seritUst(s, eserler.length));
   kutu.innerHTML = `${eserSeridi(eserler, 'eser', 'data-eser')}<a class="tumu" href="#/sanatci/${encodeURIComponent(s.id)}/eserler" data-test="tumu">Tümü (${eserler.length})</a>`;
+  ayrintiVeri();
   kutu.addEventListener('click', (ev) => {
     const b = ev.target.closest('[data-eser]');
-    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.eser), notu: notuIcin(s.id), ...gorselTercihi() });
+    if (b) goruntuleyiciAc({ eserler, baslangic: Number(b.dataset.eser), notu: notuIcin(s.id), ayrintilar: ayrintiBulucu, ...gorselTercihi() });
   });
 }
 

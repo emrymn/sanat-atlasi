@@ -1,0 +1,1118 @@
+{
+ "surum": 1,
+ "aciklama": "Rehberli eser incelemesi: başyapıt görüntüleyicisinde tablonun üstündeki ayrıntı noktaları. Anahtar data/basyapitlar.json'daki anahtarla aynı (QID ya da 'sanatçıId|başlık'). gorsel: noktaların seçildiği görselin yerel adı (data/yerel_gorseller.json); görsel değişirse koordinatlar yeniden bakılmalı. Koordinatlar görselin genişlik ve yüksekliğine oranla 0–1 arası {x, y, w, h} (sol üst köşe + boy). Kurallar: scripts/ayrinti/TALIMAT.md; denetim: scripts/ayrinti/denetle.py.",
+ "eserler": [
+  {
+   "anahtar": "Q220859",
+   "sanatci": "jan-van-eyck",
+   "baslik": "Arnolfini Portresi",
+   "gorsel": "84d3c15e96896efe",
+   "noktalar": [
+    {
+     "ad": "Ayna ve imza",
+     "x": 0.4,
+     "y": 0.19,
+     "w": 0.2,
+     "h": 0.18,
+     "metin": "Dışbükey aynada çiftin sırtı ve kapıda iki konuk görünür: biri van Eyck'in kendisi olabilir. Aynanın çerçevesindeki on madalyonda İsa'nın Çilesi'nden sahneler var. Üstteki yazı \"Johannes de Eyck fuit hic 1434\": \"Jan van Eyck buradaydı.\""
+    },
+    {
+     "ad": "Tek mum",
+     "x": 0.37,
+     "y": 0.04,
+     "w": 0.28,
+     "h": 0.15,
+     "metin": "Pirinç avizede gündüz vakti tek bir mum yanıyor. Tanrı'nın her şeyi gören gözü ya da evlilik mumu olarak yorumlanır. Metalin parlaklığı yağlıboyanın ince katmanlarıyla verilmiş."
+    },
+    {
+     "ad": "Birleşen eller",
+     "x": 0.47,
+     "y": 0.37,
+     "w": 0.17,
+     "h": 0.09,
+     "metin": "Erkek kadının elini avucuna almış; sağ elini yemin eder gibi kaldırmış. Tablonun uzun süre bir nikâh belgesi gibi okunmasının nedeni bu jesttir. Kadının elindeki kırışık cilt ve damarlar bile görünür."
+    },
+    {
+     "ad": "Köpek",
+     "x": 0.36,
+     "y": 0.83,
+     "w": 0.24,
+     "h": 0.15,
+     "metin": "Küçük tüylü köpek sadakatin geleneksel simgesidir. Her tüyü tek tek, ince fırçayla çizilmiş; van Eyck'in dokuya düşkünlüğünün en açık yeri. Çiftten farklı olarak doğrudan izleyiciye bakar."
+    },
+    {
+     "ad": "Takunyalar",
+     "x": 0.0,
+     "y": 0.85,
+     "w": 0.17,
+     "h": 0.13,
+     "metin": "Sol altta çıkarılmış ahşap takunyalar duruyor. Ayakkabı çıkarmak kutsal bir yerde olmanın işareti sayılır; evlilik odasını tapınağa çevirir. Tahtanın damarı ve çamur izleri bile boyanmış."
+    },
+    {
+     "ad": "Pencere ve portakallar",
+     "x": 0.03,
+     "y": 0.44,
+     "w": 0.14,
+     "h": 0.14,
+     "metin": "Pencere pervazında ve sandığın üstünde portakallar var. Kuzeyde pahalı bir meyveydi; zenginlik ve belki cennet masumiyetini anlatır. Pencereden giren ışık odadaki her yüzeyi farklı kırar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1212937",
+   "sanatci": "hans-holbein-genc",
+   "baslik": "Elçiler",
+   "gorsel": "b9506673eab3e118",
+   "noktalar": [
+    {
+     "ad": "Anamorfik kurukafa",
+     "x": 0.24,
+     "y": 0.74,
+     "w": 0.52,
+     "h": 0.2,
+     "metin": "Zemindeki uzun lekeye tablonun sağ alt kenarından, çok eğik bakınca bir kurukafa görünür. Buna anamorfoz denir. Bütün zenginliğin ortasına yerleştirilmiş bir ölüm hatırlatıcısıdır."
+    },
+    {
+     "ad": "Lavta ve kopuk tel",
+     "x": 0.5,
+     "y": 0.54,
+     "w": 0.26,
+     "h": 0.16,
+     "metin": "Lavtanın tellerinden biri kopmuş; uyumun bozulduğunu anlatır. Yanındaki açık kitap Luther'in ilahi kitabıdır. Katolik Fransa ile Protestan Avrupa arasındaki din bölünmesine ince bir gönderme."
+    },
+    {
+     "ad": "Yer küresi ve aritmetik kitabı",
+     "x": 0.4,
+     "y": 0.53,
+     "w": 0.14,
+     "h": 0.17,
+     "metin": "Alt rafta yer küresi Avrupa'yı ve Dinteville'in şatosu Polisy'yi gösterir. Yanında bir tüccar aritmetiği kitabı ve cetvel durur. Dünyevi bilgiler alt rafa, gökle ilgili olanlar üst rafa konmuş."
+    },
+    {
+     "ad": "Üst raf: gök aletleri",
+     "x": 0.39,
+     "y": 0.15,
+     "w": 0.36,
+     "h": 0.2,
+     "metin": "Gök küresi, güneş saatleri, kuadrant ve torquetum: 1533'te bilimin en ileri aletleri. Güneş saatlerinden tarih ve saat okunmaya çalışılmıştır. Hepsi çok dikkatli, neredeyse teknik çizim gibi boyanmış."
+    },
+    {
+     "ad": "Perdenin ardındaki çarmıh",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.09,
+     "h": 0.16,
+     "metin": "Sol üst köşede, yeşil perdenin kenarından gümüş bir çarmıh görünür. Neredeyse saklanmıştır. Ölümün (kurukafa) karşısında kurtuluşun sessiz işareti olarak okunur."
+    },
+    {
+     "ad": "Hançer ve yaş",
+     "x": 0.1,
+     "y": 0.48,
+     "w": 0.19,
+     "h": 0.11,
+     "metin": "Jean de Dinteville'in hançerinin kınında \"AET SVAE 29\" yazar: 29 yaşında. Sağdaki Georges de Selve'in dirseğinin altındaki kitapta da 25 yaşı yazılıdır. Holbein kimliği böyle gizli yazılarla verir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q186953",
+   "sanatci": "raphael",
+   "baslik": "Atina Okulu",
+   "gorsel": "3e754c9aae3c41f3",
+   "noktalar": [
+    {
+     "ad": "Platon ve Aristoteles",
+     "x": 0.37,
+     "y": 0.54,
+     "w": 0.14,
+     "h": 0.26,
+     "metin": "Kaçış noktasının tam üstünde iki filozof: Platon göğü, Aristoteles yeri işaret eder. Platon'un elinde Timaios, Aristoteles'in elinde Etik vardır. Platon'un yüzü Leonardo'ya benzetilir."
+    },
+    {
+     "ad": "Düşünen Herakleitos",
+     "x": 0.29,
+     "y": 0.77,
+     "w": 0.13,
+     "h": 0.21,
+     "metin": "Mermer bloğa yaslanmış, çizmeli, tek başına yazan figür Herakleitos'tur. Sonradan, sıva ıslakken eklenmiştir. Yüzü ve kaslı duruşu Michelangelo'ya gönderme sayılır; Sistina tavanı o sırada yeni açılmıştı."
+    },
+    {
+     "ad": "Merdivende Diogenes",
+     "x": 0.48,
+     "y": 0.77,
+     "w": 0.16,
+     "h": 0.16,
+     "metin": "Basamaklara yayılmış, yarı çıplak, elinde kâseyle uzanan kinik Diogenes. Herkesin ortasında ama kimseyle ilgilenmez. Kalabalık kompozisyonda boşluk açan tek figürdür."
+    },
+    {
+     "ad": "Pergelle Eukleides",
+     "x": 0.67,
+     "y": 0.78,
+     "w": 0.23,
+     "h": 0.21,
+     "metin": "Sağ altta pergelle yere eğilen geometrici Eukleides (ya da Arşimet) öğrencilere şekil çizer. Yüzü mimar Bramante'nin portresidir. Yakasındaki yazı Raffaello'nun imzası olarak okunur: RVSM."
+    },
+    {
+     "ad": "Raffaello'nun kendisi",
+     "x": 0.86,
+     "y": 0.63,
+     "w": 0.13,
+     "h": 0.18,
+     "metin": "Sağ kenarda, siyah bereli genç izleyiciye bakar: Raffaello'nun otoportresi. Yanında ressam Sodoma durur. Sanatçı kendini filozofların arasına, ama kenara koymuştur."
+    },
+    {
+     "ad": "Yazan Pythagoras",
+     "x": 0.11,
+     "y": 0.76,
+     "w": 0.2,
+     "h": 0.22,
+     "metin": "Sol altta kitaba yazan Pythagoras; önündeki levhada müzik oranlarının şeması tutulur. Çevresindekiler yazdıklarını kopyalar. Sağdaki Eukleides grubuyla simetrik bir karşılık oluşturur."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q128910",
+   "sanatci": "leonardo-da-vinci",
+   "baslik": "Son Akşam Yemeği",
+   "gorsel": "55c9365e53a8c4c6",
+   "noktalar": [
+    {
+     "ad": "Ortadaki İsa",
+     "x": 0.42,
+     "y": 0.4,
+     "w": 0.15,
+     "h": 0.28,
+     "metin": "İsa üçgen biçiminde, sakin, kolları açık oturur. Arkasındaki pencere ışığı hale yerine geçer. Odanın bütün perspektif çizgileri tam onun başında buluşur."
+    },
+    {
+     "ad": "Yahuda, Petrus ve Yuhanna",
+     "x": 0.25,
+     "y": 0.42,
+     "w": 0.16,
+     "h": 0.27,
+     "metin": "Yahuda gölgede, geriye yaslanmış, elinde para kesesini sıkar; tuzluğu devirmiştir. Petrus eğilip Yuhanna'ya fısıldar, elinde bıçak tutar. Üç baş tek bir sarmalda toplanmış."
+    },
+    {
+     "ad": "Tomas'ın parmağı",
+     "x": 0.55,
+     "y": 0.4,
+     "w": 0.15,
+     "h": 0.27,
+     "metin": "İsa'nın hemen sağında Tomas işaret parmağını havaya kaldırmış: sonradan İsa'nın yarasına sokacağı parmak. Yanında Yakup kollarını açar, Filipus elini göğsüne koyar. Her havari ayrı bir tepki verir."
+    },
+    {
+     "ad": "Perspektif",
+     "x": 0.3,
+     "y": 0.03,
+     "w": 0.4,
+     "h": 0.37,
+     "metin": "Kasetli tavan ve duvardaki halılar derinliğe doğru küçülür. Çizgiler tek bir kaçış noktasında, İsa'nın sağ şakağında kesişir. Boyalı oda yemekhanenin gerçek duvarlarının devamı gibi tasarlanmıştır."
+    },
+    {
+     "ad": "Duvardaki kapı",
+     "x": 0.37,
+     "y": 0.75,
+     "w": 0.26,
+     "h": 0.22,
+     "metin": "Alt ortadaki boş alan 1652'de duvara açılan bir kapının izidir. İsa'nın ayakları o sırada yok olmuştur. Fresk olmayıp kuru sıvaya tempera ile yapıldığı için resim daha ilk yıllardan dökülmeye başlamıştı."
+    },
+    {
+     "ad": "Sağ uçtaki üçlü",
+     "x": 0.76,
+     "y": 0.42,
+     "w": 0.21,
+     "h": 0.29,
+     "metin": "Matta, Taddeus ve Simun sağ uçta kendi aralarında tartışır. Matta kollarını İsa'ya uzatırken başını onlara çevirmiştir. Havariler dörderli dört gruba ayrılmış; bu sonuncusudur."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1759631",
+   "sanatci": "masaccio",
+   "baslik": "Vergi Parası",
+   "gorsel": "a1a25dc07b167736",
+   "noktalar": [
+    {
+     "ad": "İsa'nın işareti",
+     "x": 0.33,
+     "y": 0.37,
+     "w": 0.22,
+     "h": 0.33,
+     "metin": "Ortada İsa göle doğru işaret eder; Petrus aynı hareketi tekrarlar. Havarilerin ağır, heykel gibi başları ve tek bir yönden gelen ışık Giotto'dan sonraki en büyük adımdır. Haleler artık perspektife uyar."
+    },
+    {
+     "ad": "Balıktaki sikke",
+     "x": 0.0,
+     "y": 0.52,
+     "w": 0.14,
+     "h": 0.22,
+     "metin": "Sol uçta Petrus kıyıya çömelmiş, balığın ağzından sikkeyi çıkarır. Hikâyenin ikinci sahnesi aynı resimde, uzakta ve küçük verilmiştir. Suyun yüzeyi birkaç fırça vuruşuyla geçilmiş."
+    },
+    {
+     "ad": "Vergi ödenir",
+     "x": 0.7,
+     "y": 0.37,
+     "w": 0.23,
+     "h": 0.37,
+     "metin": "Sağda Petrus sikkeyi vergi memuruna uzatır: üçüncü ve son sahne. Memurun kısa turuncu tuniği ve çıplak bacakları ona dünyevi bir ağırlık verir. Hikâye sol-orta-sağ değil, orta-sol-sağ sırasıyla okunur."
+    },
+    {
+     "ad": "Arkadan görülen memur",
+     "x": 0.48,
+     "y": 0.38,
+     "w": 0.13,
+     "h": 0.58,
+     "metin": "Vergi memuru grubun ortasında, sırtı bize dönük durur. Ağırlığını tek bacağa vermiş (kontrapost), izleyiciyi sahneye sokar. Cüppeli havarilerin arasında tek modern giyimli figürdür."
+    },
+    {
+     "ad": "Hava perspektifi",
+     "x": 0.05,
+     "y": 0.02,
+     "w": 0.45,
+     "h": 0.35,
+     "metin": "Dağlar uzaklaştıkça solar ve maviye çalar; ağaçlar yapraksızdır. Masaccio ışık ve havayla derinlik verir. Altın zemin yerine gerçek bir manzara ve bulutlu gökyüzü."
+    },
+    {
+     "ad": "Perspektifli bina",
+     "x": 0.62,
+     "y": 0.02,
+     "w": 0.36,
+     "h": 0.45,
+     "metin": "Sağdaki binanın çizgileri İsa'nın başına doğru kaçar: Brunelleschi'nin yeni perspektif kuralı. Bina da Floransa'nın kendi mimarisine benzer. Işık soldan, şapelin gerçek penceresinin yönünden gelir."
+    }
+   ]
+  },
+  {
+   "anahtar": "hieronymus-bosch|Garden of Earthly Delights",
+   "sanatci": "hieronymus-bosch",
+   "baslik": "Dünyevi Zevkler Bahçesi",
+   "gorsel": "1434ee16ca10ad2c",
+   "noktalar": [
+    {
+     "ad": "Havva'nın takdimi",
+     "x": 0.08,
+     "y": 0.59,
+     "w": 0.14,
+     "h": 0.26,
+     "metin": "Sol kanatta genç yüzlü Tanrı, Havva'yı elinden tutup Âdem'e sunar. Âdem doğrulmuş, şaşkın bakar. Bosch'ta Cennet bile hafif tedirgin bir yerdir: çevrede tuhaf yaratıklar dolaşır."
+    },
+    {
+     "ad": "Yaşam pınarı",
+     "x": 0.08,
+     "y": 0.32,
+     "w": 0.11,
+     "h": 0.24,
+     "metin": "Pembe, kemikli bir çeşme gölün ortasında yükselir. Tabanındaki deliğin içinde karanlıkta bir baykuş bakar. Baykuş Bosch'ta genellikle kötülüğün ya da bilgisizliğin işaretidir."
+    },
+    {
+     "ad": "Havuz ve atlı geçit",
+     "x": 0.39,
+     "y": 0.33,
+     "w": 0.22,
+     "h": 0.2,
+     "metin": "Orta panelin ortasında havuzda genç kadınlar yıkanır; çevrelerinde atlara, domuzlara ve hayali hayvanlara binmiş erkekler döner. Döngü arzunun bitmezliğini anlatır. Figürler küçücük ama her biri ayrı bir hikâyedir."
+    },
+    {
+     "ad": "Dev meyveler ve cam küre",
+     "x": 0.25,
+     "y": 0.6,
+     "w": 0.18,
+     "h": 0.27,
+     "metin": "İnsanlardan büyük böğürtlenler, cam bir kürenin içinde sarılmış bir çift, midye kabuğunun içine girmiş iki beden. Meyve tatlıdır ama çabuk çürür: geçici zevkin imgesi. Figürler meyveleri kucaklar, içine girer, birbirine yedirir."
+    },
+    {
+     "ad": "Ağaç-adam",
+     "x": 0.79,
+     "y": 0.2,
+     "w": 0.16,
+     "h": 0.3,
+     "metin": "Cehennem panelinin ortasında gövdesi kırık yumurta kabuğu, bacakları ağaç gövdesi olan bir yaratık. Başı omzunun üstünden bize bakar; Bosch'un otoportresi olduğu düşünülür. Başındaki diskte şeytanlar dans eder."
+    },
+    {
+     "ad": "Müzik işkencesi",
+     "x": 0.77,
+     "y": 0.52,
+     "w": 0.19,
+     "h": 0.25,
+     "metin": "Arp, lavta ve laterna işkence aletine dönmüş. Bir günahkâr arpın tellerine gerilmiş, başka birinin kalçasına nota yazılmış. Dünyevi müzik ve dans burada cezalandırılır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2067212",
+   "sanatci": "giotto-di-bondone",
+   "baslik": "Ağıt",
+   "gorsel": "e3ad1487857b631e",
+   "noktalar": [
+    {
+     "ad": "Meryem ve İsa",
+     "x": 0.12,
+     "y": 0.62,
+     "w": 0.28,
+     "h": 0.23,
+     "metin": "Meryem oğlunun yüzünü kendi yüzüne yaklaştırmış, gözlerinin içine bakar. Kompozisyonun bütün ağırlığı sol alt köşedeki bu noktaya iner. Giotto acıyı jestle değil, bakışla verir."
+    },
+    {
+     "ad": "Yuhanna'nın kolları",
+     "x": 0.44,
+     "y": 0.44,
+     "w": 0.28,
+     "h": 0.2,
+     "metin": "Yuhanna öne eğilmiş, kollarını geriye doğru açmıştır. Bu hareket kayaya ve gökteki meleklere doğru derinlik yaratır. Vücudu iki boyutlu ikona geleneğinden kopan bir hacim taşır."
+    },
+    {
+     "ad": "Ağlayan melekler",
+     "x": 0.08,
+     "y": 0.05,
+     "w": 0.4,
+     "h": 0.3,
+     "metin": "Gökte on melek her biri ayrı biçimde ağlar: saçını yolan, yüzünü kapatan, kollarını açan. Gövdeleri bulutta erir. Giotto'dan önce melekler böyle duygu göstermezdi."
+    },
+    {
+     "ad": "Kuru ağaç",
+     "x": 0.74,
+     "y": 0.03,
+     "w": 0.24,
+     "h": 0.32,
+     "metin": "Kayalığın tepesinde yapraksız bir ağaç. Cennet'teki bilgi ağacının ölümünü ve Diriliş'le yeniden yeşereceğini anlatır. Kayanın eğimi bakışı doğrudan Meryem'e indirir."
+    },
+    {
+     "ad": "Sırtı dönük figürler",
+     "x": 0.37,
+     "y": 0.6,
+     "w": 0.24,
+     "h": 0.36,
+     "metin": "Ön planda iki figür sırtını bize dönmüş oturur. Yüzlerini görmeyiz; onlar sahneye bizim yerimize bakar. Bu cüret Giotto'nun resmi gerçek bir mekân gibi düşündüğünü gösterir."
+    },
+    {
+     "ad": "Mecdelli Meryem",
+     "x": 0.56,
+     "y": 0.65,
+     "w": 0.25,
+     "h": 0.26,
+     "metin": "Mecdelli Meryem İsa'nın ayaklarını kucağında tutar; uzun sarı saçlarıyla tanınır. Ayaklardaki çivi yaralarına bakar. Geleneğin ayaklara mesh süren kadınıdır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q285392",
+   "sanatci": "robert-campin",
+   "baslik": "Mérode Triptiği",
+   "gorsel": "f343957f4b5b322d",
+   "noktalar": [
+    {
+     "ad": "Pencereden gelen çocuk",
+     "x": 0.3,
+     "y": 0.18,
+     "w": 0.11,
+     "h": 0.15,
+     "metin": "Yuvarlak pencereden ışık ışınlarıyla minik bir çocuk iner; omzunda haç taşır. Bu, Meryem'e doğru süzülen İsa'dır. Cam kırılmadan geçen ışık bakire doğumun simgesidir."
+    },
+    {
+     "ad": "Sönen mum ve zambak",
+     "x": 0.43,
+     "y": 0.33,
+     "w": 0.12,
+     "h": 0.26,
+     "metin": "Masadaki mum az önce sönmüş, dumanı hâlâ tüter: Tanrı'nın gelişiyle dünyevi ışık söner. Yanındaki vazoda beyaz zambak Meryem'in saflığıdır. Her nesne bir anlam taşır ama hepsi sıradan ev eşyası gibi durur."
+    },
+    {
+     "ad": "Okuyan Meryem",
+     "x": 0.5,
+     "y": 0.4,
+     "w": 0.18,
+     "h": 0.48,
+     "metin": "Meryem kırmızı elbisesiyle yere, sedirin önüne oturmuş kitap okur. Meleği henüz fark etmemiştir. Kumaşın kıvrımları keskin, kırık açılarla verilmiş: erken Flaman üslubunun imzası."
+    },
+    {
+     "ad": "Yusuf ve fare kapanı",
+     "x": 0.79,
+     "y": 0.33,
+     "w": 0.14,
+     "h": 0.3,
+     "metin": "Sağ kanatta marangoz Yusuf tezgâhında delik açar. Pencere pervazında bir fare kapanı durur. Augustinus'a göre çarmıh şeytanı yakalayan bir fare kapanıdır."
+    },
+    {
+     "ad": "Bağışçılar",
+     "x": 0.03,
+     "y": 0.35,
+     "w": 0.16,
+     "h": 0.5,
+     "metin": "Sol kanatta tabloyu ısmarlayan çift bahçede diz çökmüş, aralık kapıdan Müjde'yi izler. Adamın yüzü gerçek bir portredir. Kutsal sahne ile burjuva evi aynı anda görünür."
+    },
+    {
+     "ad": "Pencereden kent",
+     "x": 0.79,
+     "y": 0.23,
+     "w": 0.14,
+     "h": 0.17,
+     "metin": "Yusuf'un penceresinden bir Flaman kent meydanı görünür: dükkânlar, yürüyen insanlar, kilise. Tezgâhın üstündeki başka bir fare kapanı satışa konmuştur. Kutsal hikâye 1420'lerin kasabasına taşınmış."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q500985",
+   "sanatci": "pieter-bruegel-yasl",
+   "baslik": "Karda Avcılar",
+   "gorsel": "216d1fc681535d27",
+   "noktalar": [
+    {
+     "ad": "Yorgun avcılar",
+     "x": 0.01,
+     "y": 0.52,
+     "w": 0.4,
+     "h": 0.42,
+     "metin": "Üç avcı ve köpekleri omuzları düşük, başları eğik döner; sırttaki tek tilki avın ne kadar kıt olduğunu söyler. Karda derin izler bırakırlar. Bakış onlarla birlikte tepeden aşağı, vadiye iner."
+    },
+    {
+     "ad": "Buzda kayanlar",
+     "x": 0.65,
+     "y": 0.5,
+     "w": 0.3,
+     "h": 0.2,
+     "metin": "Donmuş göletlerde köylüler paten kayar, topaç çevirir, kızak çeker. Siyah küçük figürler buzun açık renginde tek tek sayılabilir. Soğuğa rağmen bir bayram havası var."
+    },
+    {
+     "ad": "Domuz yakma",
+     "x": 0.01,
+     "y": 0.5,
+     "w": 0.18,
+     "h": 0.18,
+     "metin": "Hanın önünde kadınlar ateş yakmış, kesilmiş domuzun kıllarını alazlıyor. Aralık ayının takvim işidir; tablo bir ay dizisinin parçasıdır. Alevler kar beyazında tek sıcak renk."
+    },
+    {
+     "ad": "Uçan kuş",
+     "x": 0.65,
+     "y": 0.19,
+     "w": 0.12,
+     "h": 0.13,
+     "metin": "Yeşil-gri gökte tek bir kuş kanat açmış süzülür. Küçücük bir siluet ama kompozisyonun boşluğunu tutar ve derinliği ölçer. Ağaçlardaki kargalar hareketsiz, bu kuş hareket hâlinde."
+    },
+    {
+     "ad": "Alp zirveleri",
+     "x": 0.75,
+     "y": 0.08,
+     "w": 0.24,
+     "h": 0.26,
+     "metin": "Düz Flandre'da böyle sivri dağlar yoktur. Bruegel İtalya yolculuğunda gördüğü Alpleri hayali bir manzaraya katmıştır. Zirveler buz ve kaya, aşağıdaki köy sıcak ve küçük."
+    },
+    {
+     "ad": "Eğik tabela",
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.14,
+     "h": 0.28,
+     "metin": "Hanın tabelası tek menteşede eğilmiş sallanır; üstünde geyik önünde diz çökmüş Aziz Eustachius vardır. Han adı \"Dit is inden Hert\": Geyikte. Bakımsızlık kış yoksulluğunu anlatır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2620028",
+   "sanatci": "pietro-perugino",
+   "baslik": "Anahtarların Verilişi",
+   "gorsel": "360cb5f67fabb880",
+   "noktalar": [
+    {
+     "ad": "Anahtar teslimi",
+     "x": 0.38,
+     "y": 0.52,
+     "w": 0.24,
+     "h": 0.42,
+     "metin": "İsa diz çökmüş Petrus'a altın ve gümüş iki anahtarı uzatır: göğün ve yerin bağlama-çözme yetkisi. Papalığın meşruiyetini anlatan sahne Sistina Şapeli'nin duvarındadır. İki figür tam orta eksendedir."
+    },
+    {
+     "ad": "Merkezî tapınak",
+     "x": 0.32,
+     "y": 0.0,
+     "w": 0.36,
+     "h": 0.46,
+     "metin": "Arkada sekizgen, kubbeli bir ideal tapınak yükselir. Kudüs Tapınağı'nı temsil eder ama biçimi Rönesans'ın merkezî plan hayalidir. Bramante ve Raffaello'nun Tempietto'su bu tür bir imgeden türer."
+    },
+    {
+     "ad": "Zafer takları",
+     "x": 0.0,
+     "y": 0.08,
+     "w": 0.21,
+     "h": 0.34,
+     "metin": "İki yandaki tak Roma'daki Konstantin Takı'nın kopyasıdır; yazıtlarda Papa IV. Sixtus Süleyman'la karşılaştırılır. Antik Roma, Hristiyan Roma'nın öncüsü olarak sunulur. Taklar kompozisyonu iki yandan simetrik olarak kapatır."
+    },
+    {
+     "ad": "Meydan ve arka sahneler",
+     "x": 0.47,
+     "y": 0.42,
+     "w": 0.33,
+     "h": 0.13,
+     "metin": "Zemindeki kareler perspektif ızgarasıdır; figürler uzaklaştıkça küçülür. Ortada küçük gruplar Vergi Parası'nı ve İsa'nın taşlanma girişimini canlandırır. Boş meydan İtalyan resminin en ferah mekânlarından biridir."
+    },
+    {
+     "ad": "Çağdaş portreler",
+     "x": 0.78,
+     "y": 0.52,
+     "w": 0.22,
+     "h": 0.43,
+     "metin": "Sağ uçtaki havarilerin arasına çağdaş kişiler katılmış. Siyah bereli, bize bakan adam Perugino'nun kendisi sayılır. Antik giysili kutsal figürlerle 1480'lerin Roma'sı yan yanadır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2378534",
+   "sanatci": "fra-angelico",
+   "baslik": "Meryem'e Müjde",
+   "gorsel": "8fda010e67a76e56",
+   "noktalar": [
+    {
+     "ad": "Eğilen Cebrail",
+     "x": 0.13,
+     "y": 0.27,
+     "w": 0.37,
+     "h": 0.62,
+     "metin": "Melek kollarını göğsünde kavuşturmuş, saygıyla öne eğilir. Kanatları gökkuşağı renklerinde, tüyleri tek tek boyanmış. Pembe giysisi ışığı tutar; altın yoktur, yalnız halede."
+    },
+    {
+     "ad": "Meryem",
+     "x": 0.57,
+     "y": 0.25,
+     "w": 0.35,
+     "h": 0.62,
+     "metin": "Meryem alçak bir tabureye oturmuş, aynı hareketle kollarını kavuşturur: meleğin selamını kabul eder. Yüzü sakin, bedeni hafif. San Marco'daki keşişler merdiveni çıkınca bu freskle karşılaşırdı."
+    },
+    {
+     "ad": "Kapalı bahçe",
+     "x": 0.0,
+     "y": 0.3,
+     "w": 0.23,
+     "h": 0.6,
+     "metin": "Solda çitle çevrili, çiçekli bir bahçe: hortus conclusus, Meryem'in bakireliğinin simgesi. Selvi ve ağaçlar sabah ışığında. Çiçekler tek tek, botanik dikkatiyle seçilmiş."
+    },
+    {
+     "ad": "Parmaklıklı pencere",
+     "x": 0.6,
+     "y": 0.28,
+     "w": 0.12,
+     "h": 0.14,
+     "metin": "Arka odada küçük, demir parmaklıklı bir pencere. San Marco manastırının kendi hücrelerine benzer: sahne keşişlerin evine taşınmış. Boş oda yoksulluğu ve sessizliği anlatır."
+    },
+    {
+     "ad": "Yazıt",
+     "x": 0.28,
+     "y": 0.88,
+     "w": 0.52,
+     "h": 0.1,
+     "metin": "Alt kenardaki Latince yazı keşişlere seslenir: Bakire'nin resminin önünden geçerken Ave demeyi unutma. Fresk yalnız bakılacak bir resim değil, bir dua hatırlatıcısıdır."
+    },
+    {
+     "ad": "Sütun başlıkları",
+     "x": 0.44,
+     "y": 0.25,
+     "w": 0.16,
+     "h": 0.15,
+     "metin": "Korint başlıklı ince sütunlar ve tonozlar Michelozzo'nun manastıra yaptığı gerçek revağı tekrarlar. Işık bu mimariyi hafif ve beyaz bırakır. Fra Angelico Rönesans mimarisini kutsal sahneye böyle sokar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q727875",
+   "sanatci": "titian",
+   "baslik": "Urbino Venüsü",
+   "gorsel": "44fc20a19fad9f16",
+   "noktalar": [
+    {
+     "ad": "Doğrudan bakış",
+     "x": 0.11,
+     "y": 0.26,
+     "w": 0.17,
+     "h": 0.22,
+     "metin": "Kadın gözlerini izleyiciden kaçırmaz; utangaç değil, davetkârdır. Giorgione'nin uyuyan Venüs'ünden farkı budur. Saçı çözük, kulağında inci küpe."
+    },
+    {
+     "ad": "Güller",
+     "x": 0.13,
+     "y": 0.57,
+     "w": 0.14,
+     "h": 0.13,
+     "metin": "Sağ elinde bir demet gül tutar, birkaçı yatağa dökülmüş. Gül Venüs'ün çiçeğidir. Ten ile çarşafın beyazı arasında tek doygun renk lekelerinden biri."
+    },
+    {
+     "ad": "Uyuyan köpek",
+     "x": 0.79,
+     "y": 0.58,
+     "w": 0.17,
+     "h": 0.14,
+     "metin": "Ayakucunda kıvrılmış uyuyan küçük köpek sadakatin simgesidir. Uyuması dikkat çekicidir: bekçilik etmez. Bu tablo bir evlilik için yapılmış olabilir; köpek evlilik bağlılığını hatırlatır."
+    },
+    {
+     "ad": "Sandıktaki hizmetçiler",
+     "x": 0.61,
+     "y": 0.11,
+     "w": 0.3,
+     "h": 0.47,
+     "metin": "Arkada iki hizmetçi çeyiz sandığında (cassone) elbise arar. Bu sandıklar evlilik hediyesiydi; sahne ev içinin sıradanlığını verir. Küçük kız diz çökmüş, kadın ayakta, aralarında diyagonal bir bağ."
+    },
+    {
+     "ad": "Mersin saksısı",
+     "x": 0.53,
+     "y": 0.15,
+     "w": 0.14,
+     "h": 0.16,
+     "metin": "Pencere pervazında mersin saksısı durur. Mersin Venüs'e adanmış, evliliği ve sürekli aşkı anlatan bitkidir. Pencereden akşam göğü görünür."
+    },
+    {
+     "ad": "Örten el",
+     "x": 0.44,
+     "y": 0.55,
+     "w": 0.14,
+     "h": 0.14,
+     "metin": "Sol eli antik Venus Pudica heykellerindeki gibi kasığını örter; ama parmaklar gevşek, hareket ikircikli. Tiziano klasik modeli ete dönüştürür. Ten fırça izi bırakmadan, yumuşak geçişlerle boyanmış."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q94802",
+   "sanatci": "el-greco",
+   "baslik": "Orgaz Kontu'nun Gömülmesi",
+   "gorsel": "e3a7a09cffa62fac",
+   "noktalar": [
+    {
+     "ad": "İki aziz ve kont",
+     "x": 0.21,
+     "y": 0.64,
+     "w": 0.42,
+     "h": 0.3,
+     "metin": "Aziz Stefanos ve Aziz Augustinus gökten inip kontu kendi elleriyle mezara koyar: tablonun mucizesi. Zırh, altın işlemeli cüppeler ve dantel yakalar ışıkla parlar. Kontun bedeni ağır, azizler hafif."
+    },
+    {
+     "ad": "İşaret eden çocuk",
+     "x": 0.11,
+     "y": 0.72,
+     "w": 0.18,
+     "h": 0.24,
+     "metin": "Sol altta bize bakıp mucizeyi gösteren çocuk El Greco'nun oğlu Jorge Manuel'dir. Cebindeki mendilde 1578 yazılıdır: oğlunun doğum yılı. Ressam imzasını buraya gizlemiştir."
+    },
+    {
+     "ad": "Yas tutanlar",
+     "x": 0.18,
+     "y": 0.54,
+     "w": 0.62,
+     "h": 0.14,
+     "metin": "Siyah giysili, beyaz yakalı Toledo soyluları sıra hâlinde durur: bir portre galerisi. Yüzler çağdaş kişilerdir; birinin El Greco olduğu düşünülür. Dünyevi bölgenin tek rengi siyah-beyaz."
+    },
+    {
+     "ad": "Ruhu taşıyan melek",
+     "x": 0.37,
+     "y": 0.36,
+     "w": 0.19,
+     "h": 0.21,
+     "metin": "Bir melek kontun ruhunu bebek biçiminde bulutların daraldığı yerden yukarı taşır. Yer ile gök arasındaki geçit dar bir kanal gibidir. Figürler uzar, bulutlar kumaş gibi kıvrılır."
+    },
+    {
+     "ad": "Gökteki yargı",
+     "x": 0.25,
+     "y": 0.02,
+     "w": 0.4,
+     "h": 0.4,
+     "metin": "Üstte İsa beyazlar içinde, altında Meryem ve Vaftizci Yahya aracılık eder. Petrus anahtarlarıyla soldadır. Üst yarı Bizans ikonasını andırır: alttaki gerçekçilikle bilerek çelişir."
+    },
+    {
+     "ad": "Cüppedeki taşlanma",
+     "x": 0.19,
+     "y": 0.86,
+     "w": 0.18,
+     "h": 0.13,
+     "metin": "Aziz Stefanos'un cüppesinin eteğinde kendi şehitliği, taşlanması işlenmiştir: resim içinde resim. Minicik figürler aynı özenle boyanmış. Kumaşın dokusu tablonun en virtüöz yeri."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1430990",
+   "sanatci": "agnolo-bronzino",
+   "baslik": "Bir Alegori",
+   "gorsel": "25b7eea09e688005",
+   "noktalar": [
+    {
+     "ad": "Öpücük",
+     "x": 0.27,
+     "y": 0.17,
+     "w": 0.34,
+     "h": 0.2,
+     "metin": "Venüs oğlu Cupido'yu dudaklarından öper; dilinin ucu görünür. Elinde Cupido'nun okunu ve altın elmayı tutar. Ten mermer gibi soğuk ve parlak: Maniyerizm'in cilalı yüzeyi."
+    },
+    {
+     "ad": "Zaman Baba",
+     "x": 0.65,
+     "y": 0.0,
+     "w": 0.35,
+     "h": 0.22,
+     "metin": "Sağ üstte kanatlı, sırtında kum saati olan yaşlı adam mavi örtüyü açar. Zaman sahneyi örten perdeyi kaldırıp aşkın gerçek yüzünü gösterir. Kolu tablonun üst kenarı boyunca uzanır."
+    },
+    {
+     "ad": "Aldatma",
+     "x": 0.6,
+     "y": 0.3,
+     "w": 0.39,
+     "h": 0.45,
+     "metin": "Tatlı yüzlü kız bal peteği uzatır, ama gövdesi yılan kuyruğu ve aslan pençesiyle biter. Elleri terstir: sağ elinde sol el, sol elinde sağ. Zevkin arkasındaki hileyi anlatır."
+    },
+    {
+     "ad": "Saçını yolan figür",
+     "x": 0.0,
+     "y": 0.27,
+     "w": 0.21,
+     "h": 0.26,
+     "metin": "Solda çığlık atan, saçını yolan yeşilimsi figür Kıskançlık ya da Umutsuzluk olarak okunur. Dişsiz ağzı ve şiş parmakları frengi belirtisi de olabilir. Sahnenin en karanlık köşesi."
+    },
+    {
+     "ad": "Gül atan Oyun",
+     "x": 0.7,
+     "y": 0.18,
+     "w": 0.28,
+     "h": 0.3,
+     "metin": "Gülümseyen çocuk avuç dolusu gül savurur; ayağında zil halhal, ayağına diken batmıştır ve fark etmez. Akılsız Zevk'in imgesi. Gülün dikeni aşkın acısıdır."
+    },
+    {
+     "ad": "Maskeler",
+     "x": 0.79,
+     "y": 0.75,
+     "w": 0.21,
+     "h": 0.17,
+     "metin": "Sağ altta iki tiyatro maskesi yerde durur: biri genç kadın, biri yaşlı erkek. Boş gözleri sahnedeki ikiyüzlülüğü yansıtır. Bronzino'nun saraylı alegorisi çözülmeye yazılmış bir bilmecedir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q318947",
+   "sanatci": "caravaggio",
+   "baslik": "Emmaus'ta Akşam Yemeği",
+   "gorsel": "9e546be8055846af",
+   "noktalar": [
+    {
+     "ad": "Sakalsız İsa",
+     "x": 0.37,
+     "y": 0.21,
+     "w": 0.3,
+     "h": 0.42,
+     "metin": "İsa genç, sakalsız ve dolgun yüzlüdür; bu yüzden havariler onu tanımamıştır. Ekmeği kutsadığı anda tanırlar. Kırmızı tunik ve beyaz örtü sahnenin tek parlak renkleridir."
+    },
+    {
+     "ad": "Kenardaki sepet",
+     "x": 0.55,
+     "y": 0.6,
+     "w": 0.22,
+     "h": 0.22,
+     "metin": "Meyve sepeti masanın kenarından taşmış, düşmek üzere: izleyicinin alanına girer. Üzüm, incir ve nar Çile'nin simgeleridir; birkaçı çürük. Gölgesinde balık biçimi görülür."
+    },
+    {
+     "ad": "Açılan kollar",
+     "x": 0.65,
+     "y": 0.3,
+     "w": 0.34,
+     "h": 0.36,
+     "metin": "Sağdaki havari kollarını iki yana açar; eli tuvalin yüzeyini delip bize uzanır gibi. Göğsündeki deniz kabuğu hacıları, belki Aziz Yakup'u gösterir. Kısaltım (foreshortening) Caravaggio'nun silahıdır."
+    },
+    {
+     "ad": "Yırtık dirsek",
+     "x": 0.07,
+     "y": 0.33,
+     "w": 0.32,
+     "h": 0.48,
+     "metin": "Soldaki havari sırtı bize dönük, sandalyeden fırlamak üzere; ceketinin dirseği yırtık, içinden astar görünür. Caravaggio kutsal kişileri yoksul sokak insanları olarak resmeder. Sandalye de resmin dışına taşar."
+    },
+    {
+     "ad": "Hancı ve gölge",
+     "x": 0.19,
+     "y": 0.05,
+     "w": 0.26,
+     "h": 0.38,
+     "metin": "Hancı ayakta, şapkasıyla, olup biteni anlamadan bakar. Başının gölgesi duvara düşer; İsa'nın arkasındaki koyu gölge ise ters bir hale gibi durur. Işık tek kaynaktan, sol üstten gelir."
+    },
+    {
+     "ad": "Masadaki yemek",
+     "x": 0.27,
+     "y": 0.56,
+     "w": 0.3,
+     "h": 0.23,
+     "metin": "Kızarmış kümes hayvanı, ekmek, su sürahisi ve şarap: sıradan bir han sofrası. Beyaz örtünün üstündeki halı dokusu tek tek boyanmış. Caravaggio natürmortu kutsal sahneyle eşit ağırlıkta tutar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q167605",
+   "sanatci": "johannes-vermeer",
+   "baslik": "Süt Boşaltan Kadın",
+   "gorsel": "7ad9f577dbcabf65",
+   "noktalar": [
+    {
+     "ad": "Süt",
+     "x": 0.27,
+     "y": 0.5,
+     "w": 0.19,
+     "h": 0.2,
+     "metin": "İnce bir süt akıntısı testiden kaba dökülür: resmin tek hareketi. Vermeer bu akışı birkaç ışıklı vuruşla dondurur. Bakış bütün tablodan sonra hep buraya döner."
+    },
+    {
+     "ad": "Ekmek ve ışık noktaları",
+     "x": 0.07,
+     "y": 0.6,
+     "w": 0.44,
+     "h": 0.24,
+     "metin": "Ekmeklerin kabuğunda ışık minik beyaz noktalarla verilmiş: pointillé. Camera obscura'daki ışık halkalarına benzetilir. Sepetin örgüsü ve çömleğin sırı da aynı ışığı taşır."
+    },
+    {
+     "ad": "Eğik baş",
+     "x": 0.45,
+     "y": 0.12,
+     "w": 0.26,
+     "h": 0.26,
+     "metin": "Kadın başını işine eğmiş, gözleri sütte. Beyaz başlık ve sarı korse pencere ışığını alır; alnı ve yanağı sıcak. Bir hizmetçi burada bir azize ciddiyetiyle resmedilmiş."
+    },
+    {
+     "ad": "Duvardaki çivi ve delikler",
+     "x": 0.42,
+     "y": 0.0,
+     "w": 0.18,
+     "h": 0.16,
+     "metin": "Beyaz duvarda bir çivi, gölgesi ve küçük çivi delikleri var. Vermeer sıvanın çatlaklarını bile boyar. Boş duvar figürü öne çıkarır ve ışığı ölçer."
+    },
+    {
+     "ad": "Ayak ısıtıcısı ve çiniler",
+     "x": 0.69,
+     "y": 0.8,
+     "w": 0.3,
+     "h": 0.14,
+     "metin": "Sağ altta kor dolu bir ayak ısıtıcısı ve süpürgeliğin Delft çinileri durur. Çinilerden birinde yay taşıyan Cupido görünür. Ev işine gizli bir aşk imasıdır."
+    },
+    {
+     "ad": "Sepet ve bakır kova",
+     "x": 0.11,
+     "y": 0.13,
+     "w": 0.24,
+     "h": 0.28,
+     "metin": "Duvarda asılı hasır sepet ve pirinç kova soldaki pencereden ışık alır. Metal ışığı yansıtır, hasır emer. Pencere camlarından birinin kırık olduğu bile görülür."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q212616",
+   "sanatci": "theodore-gericault",
+   "baslik": "Medusa'nın Salı",
+   "gorsel": "2310e62cc103ef4b",
+   "noktalar": [
+    {
+     "ad": "Bez sallayan adam",
+     "x": 0.61,
+     "y": 0.06,
+     "w": 0.2,
+     "h": 0.37,
+     "metin": "Piramidin tepesinde Afrikalı bir denizci ufuktaki gemiye bez sallar. Umudun en yüksek noktasıdır. Köleliğe karşı çıkan Géricault, kurtuluşu siyah bir figüre vermiştir."
+    },
+    {
+     "ad": "Ufuktaki Argus",
+     "x": 0.76,
+     "y": 0.34,
+     "w": 0.11,
+     "h": 0.11,
+     "metin": "Sağda, ufkun üstünde minicik bir nokta: kurtarıcı gemi Argus. Kazazedeler onu görür ama gemi onları henüz görmemiştir. Tablonun bütün gerilimi bu küçücük lekeye bağlıdır."
+    },
+    {
+     "ad": "Baba ve ölü oğul",
+     "x": 0.21,
+     "y": 0.5,
+     "w": 0.26,
+     "h": 0.3,
+     "metin": "Yaşlı adam ölü oğlunun bedenini kucağında tutar, gemiye bakmaz bile. Umudun tam tersi, kabullenmiş keder. Géricault bu başı morgdaki cesetleri inceleyerek boyadı."
+    },
+    {
+     "ad": "Suya kayan ceset",
+     "x": 0.6,
+     "y": 0.78,
+     "w": 0.38,
+     "h": 0.2,
+     "metin": "Sağ altta bir ceset kalaslardan suya kaymaktadır; başı görünmez. İzleyici salın kenarında, ölülerin yanında durur. Yeşilimsi ten Géricault'nun hastanelerde yaptığı çalışmalardan gelir."
+    },
+    {
+     "ad": "İşaret eden adam",
+     "x": 0.46,
+     "y": 0.25,
+     "w": 0.2,
+     "h": 0.22,
+     "metin": "Ortada bir adam öne eğilip arkadaşının omzundan ufku gösterir. Ölümden umuda geçişin menteşesidir. Bakış ondan yukarı, bez sallayana tırmanır."
+    },
+    {
+     "ad": "Dalga ve yelken",
+     "x": 0.17,
+     "y": 0.03,
+     "w": 0.3,
+     "h": 0.42,
+     "metin": "Solda şişmiş yelken ve arkasında yükselen dev dalga: ikinci piramit. Rüzgâr salı gemiden uzağa iter. Gökyüzü fırtına sonrası sarı-kahverengidir; bitüm boyası zamanla daha da kararmıştır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1245354",
+   "sanatci": "edouard-manet",
+   "baslik": "Folies-Bergère'de Bir Bar",
+   "gorsel": "678e066315d329af",
+   "noktalar": [
+    {
+     "ad": "Garson kızın yüzü",
+     "x": 0.39,
+     "y": 0.02,
+     "w": 0.2,
+     "h": 0.3,
+     "metin": "Suzon adlı garson kız bakışını hiçbir yere odaklamaz: yorgun, uzak. Kalabalığın ortasında yalnızdır. Boynundaki kadife kurdele ve madalyon Manet'nin Olympia'sını hatırlatır."
+    },
+    {
+     "ad": "Kaymış yansıma",
+     "x": 0.67,
+     "y": 0.04,
+     "w": 0.33,
+     "h": 0.5,
+     "metin": "Aynadaki yansıması olması gereken yerde değil, sağa kaymıştır; silindir şapkalı müşteri karşısında durur. Perspektif bilerek bozulmuştur. Yansımada kız eğilip müşteriye yönelir, önde ise dimdiktir."
+    },
+    {
+     "ad": "Şişeler ve imza",
+     "x": 0.0,
+     "y": 0.6,
+     "w": 0.27,
+     "h": 0.36,
+     "metin": "Sol köşede şampanya ve kırmızı üçgen etiketli Bass birası. En soldaki şişenin etiketinde Manet'nin imzası ve 1882 tarihi yazılıdır. Natürmort Chardin kadar titiz, fırça Empresyonist kadar serbest."
+    },
+    {
+     "ad": "Güller ve portakallar",
+     "x": 0.52,
+     "y": 0.63,
+     "w": 0.3,
+     "h": 0.26,
+     "metin": "Bardaktaki iki gül ve kristal kâsedeki mandalinalar tezgâhın ortasında durur. Manet'de portakal genellikle satılık aşkı ima eder. Kızın korsajındaki çiçekler bu güllerin tekrarıdır."
+    },
+    {
+     "ad": "Trapezcinin ayakları",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.12,
+     "h": 0.1,
+     "metin": "Sol üst köşede yeşil çizmeli iki ayak sarkar: havada bir trapez sanatçısı. Gösteri yalnız bu kadarıyla görünür. Manet eğlencenin merkezini kadraj dışına atar."
+    },
+    {
+     "ad": "Balkondaki kalabalık",
+     "x": 0.07,
+     "y": 0.13,
+     "w": 0.3,
+     "h": 0.24,
+     "metin": "Aynadaki balkonda Paris sosyetesi oturur; sarı eldivenli kadın dürbünle bakar. Figürler lekeler hâlinde, gaz lambalarının ışığında erir. Beyaz küreler yeni elektrik lambalarıdır."
+    }
+   ]
+  },
+  {
+   "anahtar": "william-hogarth|Gin Lane",
+   "sanatci": "william-hogarth",
+   "baslik": "Cin Sokağı",
+   "gorsel": "77f3d102fdc54aed",
+   "noktalar": [
+    {
+     "ad": "Düşen bebek",
+     "x": 0.3,
+     "y": 0.49,
+     "w": 0.42,
+     "h": 0.32,
+     "metin": "Merdivende sarhoş anne enfiye alırken bebeği kucağından aşağı düşer. Bacaklarındaki yaralar frengidir. Hogarth cini annelik içgüdüsünü bile yok eden bir zehir olarak gösterir."
+    },
+    {
+     "ad": "İskelet şarkıcı",
+     "x": 0.67,
+     "y": 0.6,
+     "w": 0.32,
+     "h": 0.34,
+     "metin": "Sağda bir deri bir kemik balad satıcısı elinde cin bardağıyla ölmüş ya da ölmek üzere. Sepetindeki kâğıtta \"Mr Gin'in düşüşü\" yazar. Yanında köpeği de aynı kemiği kemirir."
+    },
+    {
+     "ad": "Rehinci Gripe",
+     "x": 0.02,
+     "y": 0.22,
+     "w": 0.3,
+     "h": 0.32,
+     "metin": "Marangoz testeresini, kadın tencerelerini rehinciye getirir: cin için her şey satılır. Tabelada rehincinin adı S. Gripe (Cimri) yazar; dükkânı sokağın tek bakımlı binasıdır. Hogarth suçu içenlere değil ticarete yükler."
+    },
+    {
+     "ad": "Yıkılan ev ve asılan berber",
+     "x": 0.55,
+     "y": 0.08,
+     "w": 0.4,
+     "h": 0.38,
+     "metin": "Arkada bir ev çöküyor; çatı katında berber kendini asmış. Altındaki dükkânın tabelası \"Kilman Distiller\" (İnsan Öldüren Damıtıcı). Uzakta yalnız kilise kulesi ayakta kalır."
+    },
+    {
+     "ad": "Gin Royal",
+     "x": 0.09,
+     "y": 0.64,
+     "w": 0.21,
+     "h": 0.28,
+     "metin": "Bodrum meyhanesinin kapısının üstünde \"Gin Royal\" yazılı dev sürahi. Kapıdaki yazı \"Bir peniye sarhoş, iki peniye kör kütük, saman bedava\" der. Ucuz cinin reklamı yoksulluğun tam ortasında."
+    },
+    {
+     "ad": "Kalabalık",
+     "x": 0.6,
+     "y": 0.35,
+     "w": 0.38,
+     "h": 0.22,
+     "metin": "Sağdaki kalabalıkta bir bebeğe cin içirilir, bir kadın el arabasında taşınır, sakatlar kavga eder. Hogarth her köşeye ayrı bir felaket koyar. Eşi Bira Sokağı'nda aynı kalabalık mutlu ve şişmandır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q890678",
+   "sanatci": "paul-gauguin",
+   "baslik": "Nereden Geliyoruz?",
+   "gorsel": "a71b0a727cd86d8f",
+   "noktalar": [
+    {
+     "ad": "Meyve koparan figür",
+     "x": 0.49,
+     "y": 0.0,
+     "w": 0.14,
+     "h": 0.95,
+     "metin": "Ortada ayakta bir figür iki koluyla ağaçtan meyve koparır. Cennet'teki Âdem'i ve bilgiyi alma anını çağrıştırır. Gauguin'e göre resim sağdan sola okunur: bebekten yaşlıya."
+    },
+    {
+     "ad": "Mavi put",
+     "x": 0.21,
+     "y": 0.02,
+     "w": 0.13,
+     "h": 0.5,
+     "metin": "Arkada kolları kalkık mavi bir heykel: Gauguin'in uydurduğu bir Tahiti tanrıçası, Hina. Gerçek bir Polinezya putu değildir. Öteki dünyayı ve ressamın sahte-ilkel hayalini temsil eder."
+    },
+    {
+     "ad": "Yaşlı kadın",
+     "x": 0.0,
+     "y": 0.4,
+     "w": 0.13,
+     "h": 0.52,
+     "metin": "Sol uçta başını ellerine almış yaşlı kadın ölümü bekler; Peru mumyalarının duruşundan alınmıştır. Ayağının dibinde beyaz bir kuş kertenkele tutar. Gauguin bunu sözlerin boşluğunun simgesi olarak açıklar."
+    },
+    {
+     "ad": "Uyuyan bebek",
+     "x": 0.83,
+     "y": 0.74,
+     "w": 0.17,
+     "h": 0.26,
+     "metin": "Sağ altta uyuyan bebek: yaşamın başlangıcı. Üç çömelmiş kadın onu bekler. Resim buradan başlar, sola doğru yaşlanır."
+    },
+    {
+     "ad": "Başlık yazısı",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.14,
+     "h": 0.14,
+     "metin": "Sol üst köşedeki sarı alana Gauguin soruyu kendi eliyle yazmıştır: nereden geliyoruz, neyiz, nereye gidiyoruz. Sağ üstte de imzası ve tarih vardır. Yazı bir fresk köşesi gibi altın zemine konmuş."
+    },
+    {
+     "ad": "İki genç kadın",
+     "x": 0.7,
+     "y": 0.44,
+     "w": 0.17,
+     "h": 0.38,
+     "metin": "Sağda iki genç kadın yan yana oturmuş sohbet eder; yanlarında siyah bir kedi. Gauguin bunları hayatın gündelik, düşüncesiz tarafı diye anlatır. Sıcak sarı tenler mavi-yeşil zeminle çarpışır."
+    }
+   ]
+  }
+ ]
+}
