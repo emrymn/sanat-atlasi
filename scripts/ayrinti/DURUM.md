@@ -2,7 +2,7 @@
 
 Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-05). Elle düzenleme.
 
-**Toplam: 60 / 107 başyapıt bitti (349 nokta; eser başına ortalama 5.8).** Kalan: 47.
+**Toplam: 87 / 107 başyapıt bitti (502 nokta; eser başına ortalama 5.8).** Kalan: 20.
 
 ## Akım akım
 
@@ -169,97 +169,95 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-05). Elle düzenle
 |---|---|---|
 | Ophelia | John Everett Millais | — |
 
-### Akademizm ve Oryantalizm · 0 / 3
+### Akademizm ve Oryantalizm · 3 / 3
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Büyük Odalık (La Grande Odalisque) | Jean-Auguste-Dominique Ingres | — |
-| Köle Pazarı | Jean-Léon Gérôme | — |
-| Venüs'ün Doğuşu | William-Adolphe Bouguereau | — |
+| Büyük Odalık (La Grande Odalisque) | Jean-Auguste-Dominique Ingres | ✓ 6 nokta |
+| Köle Pazarı | Jean-Léon Gérôme | ✓ 6 nokta |
+| Venüs'ün Doğuşu | William-Adolphe Bouguereau | ✓ 6 nokta |
 
-### Barbizon ve Realizm · 0 / 3
-
-| Eser | Sanatçı | Durum |
-|---|---|---|
-| Üçüncü Mevki Vagon | Honoré Daumier | — |
-| Ornans'ta Cenaze | Gustave Courbet | — |
-| Başak Toplayanlar (Des glaneuses) | Jean-François Millet | — |
-
-### Empresyonizm · 1 / 6
+### Barbizon ve Realizm · 3 / 3
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Paris Sokağı, Yağmurlu Hava (Rue de Paris, temps de pluie) | Gustave Caillebotte | — |
+| Üçüncü Mevki Vagon | Honoré Daumier | ✓ 6 nokta |
+| Ornans'ta Cenaze | Gustave Courbet | ✓ 6 nokta |
+| Başak Toplayanlar (Des glaneuses) | Jean-François Millet | ✓ 6 nokta |
+
+### Empresyonizm · 6 / 6
+
+| Eser | Sanatçı | Durum |
+|---|---|---|
+| Paris Sokağı, Yağmurlu Hava (Rue de Paris, temps de pluie) | Gustave Caillebotte | ✓ 6 nokta |
 | Folies-Bergère'de Bir Bar (Un Bar aux Folies-Bergère) | Édouard Manet | ✓ 6 nokta |
-| Bale Dersi | Edgar Degas | — |
-| Mavi Koltukta Küçük Kız | Mary Cassatt | — |
-| Beşik | Berthe Morisot | — |
-| İzlenim, Gün Doğumu (Impression, soleil levant) | Claude Monet | — |
+| Bale Dersi | Edgar Degas | ✓ 6 nokta |
+| Mavi Koltukta Küçük Kız | Mary Cassatt | ✓ 6 nokta |
+| Beşik | Berthe Morisot | ✓ 5 nokta |
+| İzlenim, Gün Doğumu (Impression, soleil levant) | Claude Monet | ✓ 6 nokta |
 
-### Ukiyo-e (Japon baskısı) · 0 / 2
-
-| Eser | Sanatçı | Durum |
-|---|---|---|
-| Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak | Utagawa Hiroshige | — |
-| Fuji Dağı'nın 36 Manzarası | Katsushika Hokusai | — |
-
-### Post-Empresyonizm · 1 / 5
+### Ukiyo-e (Japon baskısı) · 2 / 2
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Kâğıt Oynayanlar (Les Joueurs de cartes) | Paul Cézanne | — |
-| Asnières'de Yıkananlar | Georges Seurat | — |
-| Yıldızlı Gece | Vincent van Gogh | — |
-| Moulin Rouge: La Goulue | Henri de Toulouse-Lautrec | — |
+| Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak | Utagawa Hiroshige | ✓ 6 nokta |
+| Fuji Dağı'nın 36 Manzarası | Katsushika Hokusai | ✓ 5 nokta |
+
+### Post-Empresyonizm · 5 / 5
+
+| Eser | Sanatçı | Durum |
+|---|---|---|
+| Kâğıt Oynayanlar (Les Joueurs de cartes) | Paul Cézanne | ✓ 5 nokta |
+| Asnières'de Yıkananlar | Georges Seurat | ✓ 6 nokta |
+| Yıldızlı Gece | Vincent van Gogh | ✓ 6 nokta |
+| Moulin Rouge: La Goulue | Henri de Toulouse-Lautrec | ✓ 6 nokta |
 | Nereden Geliyoruz? Neyiz? Nereye Gidiyoruz? | Paul Gauguin | ✓ 6 nokta |
 
-### Sembolizm · 0 / 1
+### Sembolizm · 1 / 1
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Kiklop | Odilon Redon | — |
+| Kiklop | Odilon Redon | ✓ 5 nokta |
 
-### Art Nouveau ve Viyana Secession · 0 / 1
-
-| Eser | Sanatçı | Durum |
-|---|---|---|
-| Öpücük (Der Kuss) | Gustav Klimt | — |
-
-### Ekspresyonizm · 0 / 3
+### Art Nouveau ve Viyana Secession · 1 / 1
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Çığlık (The Scream) | Edvard Munch | — |
-| Berlin Sokak Sahnesi | Ernst Ludwig Kirchner | — |
-| Kompozisyon VII | Wassily Kandinsky | — |
+| Öpücük (Der Kuss) | Gustav Klimt | ✓ 6 nokta |
 
-### Kübizm · 0 / 1
+### Ekspresyonizm · 3 / 3
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Guernica | Pablo Picasso | — |
+| Çığlık (The Scream) | Edvard Munch | ✓ 5 nokta |
+| Berlin Sokak Sahnesi | Ernst Ludwig Kirchner | ✓ 6 nokta |
+| Kompozisyon VII | Wassily Kandinsky | ✓ 5 nokta |
 
-### Dada · 0 / 1
-
-| Eser | Sanatçı | Durum |
-|---|---|---|
-| Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek | Hannah Höch | — |
-
-### Sürrealizm · 0 / 2
+### Kübizm · 1 / 1
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Belleğin Azmi (The Persistence of Memory) | Salvador Dalí | — |
-| İmgelerin İhaneti (La trahison des images) | René Magritte | — |
+| Guernica | Pablo Picasso | ✓ 6 nokta |
 
-### Savaş sonrası figürasyon · 0 / 1
+### Dada · 1 / 1
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma (Three Studies for Figures at the Base of a Crucifixion) | Francis Bacon | — |
+| Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek | Hannah Höch | ✓ 6 nokta |
+
+### Sürrealizm · 2 / 2
+
+| Eser | Sanatçı | Durum |
+|---|---|---|
+| Belleğin Azmi (The Persistence of Memory) | Salvador Dalí | ✓ 6 nokta |
+| İmgelerin İhaneti (La trahison des images) | René Magritte | ✓ 4 nokta |
+
+### Savaş sonrası figürasyon · 1 / 1
+
+| Eser | Sanatçı | Durum |
+|---|---|---|
+| Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma (Three Studies for Figures at the Base of a Crucifixion) | Francis Bacon | ✓ 5 nokta |
 
 ## Kalanlar (basyapitlar.json sırasıyla, partiler hâlinde)
 
 - **Parti 1:** Saba Melikesi'nin Gemiye Binişi (Claude Lorrain, `Q7731855`); Banyosunda Batşeba (Sebastiano Ricci, `Q19863024`); Kythera Adası'na Yolculuk (Pèlerinage à l'île de Cythère) (Jean-Antoine Watteau, `Q531329`); Sarışın Odalık (Louise O'Murphy) (François Boucher, `Q1131176`); Salıncak (L'Escarpolette) (Jean-Honoré Fragonard, `Q2629559`); Kleopatra'nın Ziyafeti (Giovanni Battista Tiepolo, `Q18167078`); Vatoz (Jean-Baptiste-Siméon Chardin, `Q3212142`); Kırık Testi (Jean-Baptiste Greuze, `Q4388208`); General Wolfe'un Ölümü (Benjamin West, `Q956541`); Gracchusların Annesi Kornelia (Angelica Kauffman, `angelica-kauffman|Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures)`); Horas Kardeşlerin Yemini (Le Serment des Horaces) (Jacques-Louis David, `Q28797801`); Marie Antoinette ve Çocukları (Élisabeth Vigée Le Brun, `Q3937621`); Günlerin Atası (William Blake, `Q2324840`); Sis Denizi Üzerinde Gezgin (Der Wanderer über dem Nebelmeer) (Caspar David Friedrich, `Q311243`); Kabus (The Nightmare) (Henry Fuseli, `Q2317837`); Saman Arabası (John Constable, `Q2366825`); Halka Yol Gösteren Özgürlük (Eugène Delacroix, `Q29530`); 3 Mayıs 1808 (El tres de mayo de 1808) (Francisco de Goya, `Q1091086`); Köle Gemisi (The Slave Ship) (J. M. W. Turner, `Q219344`); Ophelia (John Everett Millais, `Q1065493`)
-- **Parti 2:** Büyük Odalık (La Grande Odalisque) (Jean-Auguste-Dominique Ingres, `Q1978815`); Köle Pazarı (Jean-Léon Gérôme, `Q3224275`); Venüs'ün Doğuşu (William-Adolphe Bouguereau, `Q1283024`); Üçüncü Mevki Vagon (Honoré Daumier, `Q3228340`); Ornans'ta Cenaze (Gustave Courbet, `Q540488`); Başak Toplayanlar (Des glaneuses) (Jean-François Millet, `Q1368055`); Paris Sokağı, Yağmurlu Hava (Rue de Paris, temps de pluie) (Gustave Caillebotte, `Q1452762`); Bale Dersi (Edgar Degas, `Q3821820`); Mavi Koltukta Küçük Kız (Mary Cassatt, `Q3640080`); Beşik (Berthe Morisot, `Q5966403`); İzlenim, Gün Doğumu (Impression, soleil levant) (Claude Monet, `Q328523`); Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak (Utagawa Hiroshige, `Q5826309`); Fuji Dağı'nın 36 Manzarası (Katsushika Hokusai, `Q227494`); Kâğıt Oynayanlar (Les Joueurs de cartes) (Paul Cézanne, `Q17277950`); Asnières'de Yıkananlar (Georges Seurat, `Q1090837`); Yıldızlı Gece (Vincent van Gogh, `Q45585`); Moulin Rouge: La Goulue (Henri de Toulouse-Lautrec, `Q17026577`); Kiklop (Odilon Redon, `Q3793426`); Öpücük (Der Kuss) (Gustav Klimt, `Q698487`); Çığlık (The Scream) (Edvard Munch, `Q471379`)
-- **Parti 3:** Berlin Sokak Sahnesi (Ernst Ludwig Kirchner, `Q3476580`); Kompozisyon VII (Wassily Kandinsky, `Q2990634`); Guernica (Pablo Picasso, `Q175036`); Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek (Hannah Höch, `hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic`); Belleğin Azmi (The Persistence of Memory) (Salvador Dalí, `salvador-dali|The Persistence of Memory`); İmgelerin İhaneti (La trahison des images) (René Magritte, `Q1061035`); Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma (Three Studies for Figures at the Base of a Crucifixion) (Francis Bacon, `francis-bacon|Three Studies for Figures at the Base of a Crucifixion`)

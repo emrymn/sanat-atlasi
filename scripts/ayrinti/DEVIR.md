@@ -3,7 +3,8 @@
 **Tur 1 · 5 Kasım 2026 · Claude (Claude Code, pilot).** 20 başyapıt, 119 nokta. Sürüm 1.71.0, KARARLAR İş 151.
 **Tur 2 · 5 Kasım 2026 · Claude (Claude Code).** Parti 1: 20 eser, 115 nokta. Sürüm 1.71.1, KARARLAR İş 152.
 **Tur 3 · 5 Kasım 2026 · Claude (Claude Code).** Plan Parti 2: 20 eser, 115 nokta. Sürüm 1.71.2, KARARLAR İş 153.
-Bir sonraki model önce `TALIMAT.md`'yi, sonra bu dosyayı, sonra `DURUM.md`'yi okur; **güncel hazır istem en altta** (Tur 3 bölümü).
+**Tur 4 · 5 Kasım 2026 · Claude (Claude Code).** Plan Parti 4 + Parti 5: 27 eser, 153 nokta. Sürüm 1.71.3, KARARLAR İş 154.
+Bir sonraki model önce `TALIMAT.md`'yi, sonra bu dosyayı, sonra `DURUM.md`'yi okur; **güncel hazır istem en altta** (Tur 4 bölümü).
 
 ## 1. Yapılanlar
 
@@ -213,3 +214,69 @@ PR #172) ve önce birleşti; bu tur ona göre İş 153 / 1.71.2 olarak numaralan
 > "Tur" raporu, KARARLAR'a not, `npm run test:unit` geçsin; `sw.js`, `js/surum.js` ve sürüm testlerinde
 > (`tests/unit/paket8.test.mjs`, `tests/e2e/paket8.spec.js`) yama sürümünü yükselt, PR aç. `tools/` ve `data/sanatcilar.json`
 > içeriğine dokunma. Yarım eser bırakma; DEVIR ve DURUM'u mutlaka güncelle.
+
+---
+
+# Tur 4 · Plan Parti 4 ve Parti 5 (Claude, Claude Code)
+
+Emre "DEVIR.md'yi oku, 4. partiyı yap" dedi: §4 tablosundaki **plan Parti 4** (Ingres → Munch; bu tur başlarken DURUM.md'de
+"Parti 2" adıyla duruyordu). Plan Parti 3 (Claude Lorrain → Millais) main'de henüz yoktu ve atlandı. İş sürerken Emre "son resimleri de yap" dedi:
+**plan Parti 5** (Kirchner → Bacon, 7 eser) da bu turda yapıldı. Toplam 87 / 107 eser, 502 nokta.
+
+### Yapılanlar
+- 20 başyapıt, 115 nokta (Ingres, Gérôme, Bouguereau, Daumier, Courbet, Millet, Caillebotte, Degas, Cassatt, Morisot, Monet,
+  Hiroshige, Hokusai, Cézanne, Seurat, Van Gogh, Toulouse-Lautrec, Redon, Klimt, Munch). Çoğunda 6 nokta; Morisot, Hokusai,
+  Cézanne, Redon ve Munch'ta 5.
+- Kayıtların `bak` ayrıntılarının hepsi bir noktada (Ingres'in imzası, Gérôme'un köpeği ve imzası, Daumier'nin kareleme izi,
+  Courbet'nin kafatası ve köpeği, Millet'nin atlısı, Degas'nın sulama kabındaki imza, Cassatt'ın imzası, Monet'nin "72"si,
+  Hiroshige'nin kartuşları ve mühürleri, Lautrec'in M'si ve "Ch. Levy"si, Klimt'in imzası, Munch'un kurşun kalem notu vb.).
+- Doğrulama: 20 eserin hepsi en büyük kopyadan; **Cézanne'ın** "en büyük" kopyası yalnız 1683 px (yakınlaşma yumuşak kalır).
+- Kırpıntıdan sonra düzeltilenler: Ingres sırtı omuz ve kalçayı almıyordu (genişletildi), imzanın "1814"ü kutunun sağında ve
+  altındaydı; Daumier kareleme kutusu boş bir kasadaydı, ızgara en net çocuğun dizlerinde görüldü (kutu oraya alındı, "uyuyan
+  çocuk" kutusu üst bedene daraltıldı); Millet hasatçılar kutusu sağdaki kadının başına değiyordu; Caillebotte imzası alttan
+  kesiliyordu; Cassatt ayakkabısı ve imzanın "y"si alttan taşıyordu; Morisot'da çeneye dayanan el kutunun altındaydı;
+  Hiroshige köprüdeki yolcular, kartuş ve imza kartuşu kenarda kalıyordu; Lautrec matbaa yazısı kutusu siyah tarama kenarına
+  taşıyordu; Munch'ta sağ el kutunun dışındaydı. Metin: Ingres'te "el" aslında bacağın üstünde, yanında nargile ağızlığı;
+  Bouguereau'da yunusa binen Eros değil, öndeki putto (Eros arkada ayakta); Millet'de ortadaki kadının öbür eli görünmüyor.
+
+### Plan Parti 5 (7 eser, 38 nokta)
+- Kirchner 6, Kandinsky 5, Picasso 6, Höch 6, Dalí 6, Magritte 4, Bacon 5 nokta; `bak` ayrıntılarının hepsi bir noktada.
+- **WikiArt görselleri:** Picasso, Höch, Dalí, Magritte ve Bacon'ın uygulamadaki görseli R2'de değil, WikiArt'tan (telifli
+  20. yüzyıl eserleri indirilmiyor). Koordinatlar uygulamanın gösterdiği WikiArt görseline (çoğunda `!HalfHD`) göre;
+  `gorsel` alanı `wikiart:<adres>`. `denetle.py`'nin `gorsel_adlari` yerel kopya yoksa bu kaynak anahtarını döndürür; böylece
+  görsel değişirse yine hata verir. Doğrulama aynı dosyanın ekisiz büyük kopyasından yapıldı (oranlar aynı: Guernica 3369,
+  Dalí 2000, Magritte 1442, Bacon 1646 px). Höch'ün görseli yalnız 375×471: yakınlaşma bulanık kalır, nokta sayısı yine 6.
+- Düzeltilenler: Guernica'da "kırık kılıç ve çiçek" kutusu çiçeği almıyordu (yukarı uzatıldı, çiçek yumruğun hemen üstünde,
+  çok küçük), ampul-lamba kutusu lambayı alttan kesiyordu; Höch monogramı, Dalí ve Magritte imzaları alttan taşıyordu; Bacon'da
+  sarkan başın çenesi ve ot öbeğinin altı kutu dışındaydı. Metin: Kirchner'in eldiveni altındaki imzası eklendi.
+- Emin olunmayanlar: Kirchner'de sağ üstteki atın kesin sınırı (yarı soyut; kutu baş ve boyun bölgesini alır); Kandinsky'de
+  "halkalı oval"in kaydın "sağ üst"teki oval olduğu (tablonun üst ortasının sağı); Höch'te bıyıklı yüzün kimliği yazılmadı,
+  haritanın kadınların oy hakkını gösterdiği "düşünülür"; Guernica'da ampul/bomba ses oyunu "öne sürülür", boğa/at açıklaması
+  "Picasso'ya atfedilen"; Dalí'nin uyuyan yüzü "genellikle yorumlanır"; Bacon'ın Eumenidler ve Potemkin kaynakları genel bilgi.
+
+### Emin olunmayanlar (metinde yumuşatıldı ya da genel tutuldu)
+- Munch: kurşun kalem notu 4096 kopyada bile seçilmedi; "Kızıl gökyüzü" kutusu sol üst gökyüzünü alır, metin notun ekranda
+  büyük olasılıkla görünmeyeceğini söyler (kaydın kendi ifadesi).
+- Millet: atlının kâhya olduğu "genellikle yorumlanır" diye yazıldı. Seurat: giysilerin Grande Jatte'la karşıtlığı "düşünülür".
+- Van Gogh: en parlak yıldızın Venüs (sabah yıldızı) olduğu "düşünülür"; kulenin Hollanda kiliselerini andırdığı "sık söylenir".
+- Cassatt: Degas'nın arka planda çalıştığı Cassatt'ın sonraki bir mektubuna dayanır.
+- Klimt: dikdörtgen/daire = eril/dişil bir yorumdur ("yorumlanır").
+- Hiroshige: yayıncı mührünün Uoya Eikichi'ye ait olduğu genel bilgi; yağmurun "iki açı" katmanı 4096'da hafif seçiliyor.
+- Hokusai: levhanın adı (Gaifū kaisei, "Kırmızı Fuji") yalnız "Kırmızı Fuji" diye geçti; kaydın başlığı bütün diziyi anar.
+- Gérôme imzası "J.L.GEROME" okunuyor; metinde yalnız "Gérôme'un imzası" dendi. Lautrec matbaası afişte "CH LEVY" (aksansız).
+
+### Kalan plan
+Bu turdan sonra DURUM.md'de yalnız **Parti 1** = plan Parti 3 (Claude Lorrain → Millais, 20 eser) kalıyor. Kalan 20 eser. Plan Parti 3 başka bir oturumda sürüyorsa birleştirmede `eser_ayrintilari.json`,
+DEVIR, DURUM, KARARLAR, README ve sürüm dosyalarında çakışma çıkar: main'in dosyalarını al, kendi kayıtlarını sona ekle, İş ve
+sürüm numarasını bir artır, `durum.py`'yi yeniden çalıştır.
+
+## Sonraki modele hazır istem
+
+> Sanat Atlası deposunda rehberli eser incelemesine devam et (KARARLAR İş 151–154). Önce `scripts/ayrinti/TALIMAT.md`,
+> `scripts/ayrinti/DEVIR.md` (en alttaki Tur 4 raporu) ve `scripts/ayrinti/DURUM.md`'yi oku. Önce main'i çek; `DURUM.md`'deki
+> **Parti 1**'in eserleri için `data/eser_ayrintilari.json`'a kayıt ekle: her eserde 4–6 ayrıntı noktası, `{x, y, w, h}`
+> 0–1 oranlı, 2–3 cümlelik Türkçe açıklama; `bak` ayrıntılarını noktalara al. İki aşamalı doğrulamayı atlama (1280 ızgara
+> → 4096 kırpıntı, `scripts/ayrinti/yardimci/`). Bitince `denetle.py` sıfır hata, `durum.py` ile DURUM.md, DEVIR.md'ye yeni
+> "Tur" raporu, KARARLAR'a not, README'deki sayıları güncelle, `npm run test:unit` geçsin; `sw.js`, `js/surum.js` ve sürüm
+> testlerinde (`tests/unit/paket8.test.mjs`, `tests/e2e/paket8.spec.js`) yama sürümünü yükselt, PR aç. `tools/` ve
+> `data/sanatcilar.json` içeriğine dokunma. Yarım eser bırakma; DEVIR ve DURUM'u mutlaka güncelle.
