@@ -111,6 +111,7 @@ UYGULA=1 node scripts/kaynaklar/wikiart.mjs                                     
 | `sw.js`, `manifest.webmanifest`, `icons/` | PWA |
 | `data/*.json` | İçerik (sanatçılar, akımlar, konular, başlangıç ilerlemesi) |
 | `data/eserler_onbellek.json` | Wikidata QID'leri ve eser listeleri (derleme zamanı önbelleği; olmasa da çalışır) |
+| `data/gorsel_odak.json` | Görsellerin odak noktası (tablodaki yüzler, `scripts/odak.py`): kırpılan görsel yüzün çevresinden kırpılır |
 | `data/wikiart.json` | WikiArt'tan derleme zamanında alınan eserler (başlık, yıl, eser sayfası, görsel adresi) |
 | `scripts/` | Önbellek, ikon üretimi, yerel sunucu |
 | `tests/` | Birim (`unit/`), uçtan uca (`e2e/`), fikstürler |

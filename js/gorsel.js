@@ -174,6 +174,17 @@ export function ustKopya(src, { buyuk = false } = {}) {
   if (tur === 'k') return uzak.buyuk ? buyukYolu(ad) : `gorseller/b/${ad}.jpg`;
   return buyuk && uzak.devasa.has(ad) ? devasaYolu(ad) : '';
 }
+// İş 137: görselin odak noktası (scripts/odak.py: tablodaki yüzler; data/gorsel_odak.json). Kırpılan görselde
+// (object-fit: cover) yüz kutuda kalsın diye CSS object-position olarak verilir; yüz bulunmayan görselde ''.
+let odaklar = null;
+export function odaklariAyarla(veri) {
+  odaklar = veri && veri.odak && typeof veri.odak === 'object' ? veri.odak : null;
+}
+export function gorselOdagi(g) {
+  const ad = g && odaklar && yerel[yerelAnahtar(g)];
+  const o = ad && odaklar[ad];
+  return Array.isArray(o) && o.length === 2 && o.every((n) => Number.isFinite(n) && n >= 0 && n <= 100) ? `${o[0]}% ${o[1]}%` : '';
+}
 export function yerelAnahtar(g) {
   return `${g.k}:${g.d || g.i || g.u || ''}`;
 }

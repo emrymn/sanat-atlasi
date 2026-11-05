@@ -12,6 +12,7 @@ import { konulariAl, konuBul, konuHaritasiniAyarla, kapakSec, TUR_AD, TUR_SIRA }
 import { seviyeKaydi, seviyeDurumu } from '../seviye.js';
 import {
   jsonGetir,
+  odaklariYukle,
   d,
   ekran,
   etiket,
@@ -510,12 +511,14 @@ function onizlemeleriDoldur() {
       .slice(0, 8);
     const acikMi = !el.closest('.kilitli');
     sozler.push(
-      Promise.all(uyeler.map((x) => sanatciEserleri(x).catch(() => []))).then((listeler) => {
+      Promise.all([...uyeler.map((x) => sanatciEserleri(x).catch(() => [])), odaklariYukle()]).then((sonuclar) => {
+        const listeler = sonuclar.slice(0, uyeler.length);
         if (!el.isConnected) return;
         const eserler = listeler.map(enBilinen).filter(Boolean).slice(0, 3);
         el.innerHTML = eserler.map((e, i) => cerceve(e, { genislik: 400, tembel: true }).replace('class="cerceve"', `class="cerceve" style="--j:${i}"`)).join('');
         const fon = el.closest('.zaman-kart')?.querySelector('[data-zaman-fon]');
-        if (fon && eserler[0]) fon.innerHTML = kucukGorsel(eserler[0], 800);
+        // İş 137: kartı kaplayan tablo yüzün çevresinden kırpılır (önce hep ortadan: dikey tablolarda baş kesiliyordu)
+        if (fon && eserler[0]) fon.innerHTML = kucukGorsel(eserler[0], 800, { odak: true });
         if (acikMi) seritIcin.push(...eserler.slice(0, 2));
       }),
     );
