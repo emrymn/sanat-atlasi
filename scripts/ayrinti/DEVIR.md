@@ -105,3 +105,40 @@ incelemek gerekmez.
 > kendi raporunu (yapılanlar, emin olunmayanlar, kalan plan) ekle, `KARARLAR.md`'ye kısa not yaz, `npm run test:unit`
 > geçsin, `sw.js` ve `js/surum.js`'de yama sürümünü yükselt (1.71.x), PR aç. `tools/` ve `data/sanatcilar.json`
 > içeriğine dokunma. Kredi azalırsa bitirdiğin eserlerde dur; yarım eser bırakma; DEVIR ve DURUM'u mutlaka güncelle.
+
+---
+
+## Tur 2 · 5 Kasım 2026 · Claude (Claude Code) · plan Parti 2
+
+Emre "sıradaki partiyi yap" dedi, sonra açıkça **Parti 2**'yi istedi; bu yüzden plan Parti 1 (Berlinghieri → Veronese) **yapılmadı**, hâlâ açık.
+Sürüm 1.71.1, KARARLAR İş 152.
+
+### Yapılanlar
+- 20 başyapıt, 115 nokta (Salviati, Pontormo, Anguissola, Daniele da Volterra, Parmigianino, Rosso, Giulio Romano, Carracci,
+  Baburen, Artemisia, Orazio Gentileschi, Velázquez, Zurbarán, Rubens, Van Dyck, Rembrandt, Steen, Rigaud, Le Brun, Poussin).
+  Çoğunda 6 nokta; Pontormo, Volterra, Poussin 5; Zurbarán 4 (tek figürlü natürmort).
+- Kurs notlarındaki "bak" ayrıntılarının hepsi bir noktaya kondu (Velázquez'in dilekçesi, Rigaud'nun adalet eli ve kırmızı
+  topukları, Steen'in "JSteen" imzası, Baburen'in lavtadaki imzası, Rubens'in üç dilli levhası ve tutulmuş güneşi, Poussin'in
+  yazıtı ve gölgesi, Anguissola'nın tahtadaki yazıtı vb.).
+- Doğrulama: 18 eser 4096'dan; **Salviati (Aziz Thomas) ve Rosso (Musa)** yalnız 1280 kopyadan (en büyük kopyaları yok).
+- Kırpıntıdan sonra düzeltilenler: Anguissola imzası sola kaydı (yazıt kutunun solundan taşıyordu); Giulio Romano bileziği
+  kutunun kenarındaydı, ortalandı; Baburen "parayı isteyen eller" kutusu aşağı alındı (üstteki el yaşlı kadının değil, genç
+  kadının lavta sapını tutan eli; metin düzeltildi); Artemisia kabzanın sağ kolu taşıyordu, kutu genişletildi; Zurbarán "taş
+  seki" boş griydi, başın değdiği kenara kaydırıldı; Poussin diz çöken çobanın kutusu saçta kalmıştı, yüze indirildi;
+  Salviati'de kitap kutunun altından taşıyordu. Giulio Romano'da terlikler kırmızı değil, içi kırmızı siyah terlik (metin düzeltildi).
+
+### Emin olunmayanlar (metinde yumuşatıldı)
+- Velázquez: papanın "fazla gerçek" (troppo vero) dediği bir rivayettir; metinde öyle yazıldı.
+- Rosso: hangi figürün Musa olduğu (ortadaki siyah kumaşlı genç: yaygın görüş).
+- Pontormo: sağ kenardaki adamın otoportre olduğu; Rembrandt: oturan bereli adamın kimliği; babanın "farklı elleri" yorumu.
+- Artemisia: bilezikteki Artemis/Diana figürleri (bazı araştırmacılar).
+- Steen: kızın kucağındaki bebeğin aziz figürü olarak okunması (kurs notundaki gibi "benzer" dendi).
+- Carracci: kaplanın Bakkhus'un Hindistan dönüşünü çağrıştırması genel ikonografi bilgisidir, panoya özgü bir kaynak değil.
+- Rigaud: kralın yaşı "altmışını geçmiş" diye yazıldı (1638 doğumlu, portre 1701).
+- Volterra: freskin aşınmış yüzeyinde İsa'nın yüzü ve bayılan Meryem kırpıntıda bile silik; kutular figürün tamamına göre verildi.
+
+### Kalan plan (DURUM.md'nin numaralarına dikkat)
+`durum.py` partileri kalanlardan yeniden numaralar. Bu turdan sonra DURUM.md'de:
+- **Parti 1** = plan Parti 1 (Gotik → Yüksek Rönesans + Tintoretto, Veronese; 20 eser) — sıradaki iş bu.
+- **Parti 2** = plan Parti 3 (Claude Lorrain → Millais), **Parti 3** = plan Parti 4, **Parti 4** = plan Parti 5 (7 eser).
+Tablodaki (§4) notlar geçerli. Hazır istem (§6) aynen kullanılabilir; yalnız "Tur 2" yerine "Tur 3" başlığı ve 1.71.2 sürümü.

@@ -1113,6 +1113,1086 @@
      "metin": "Sağda iki genç kadın yan yana oturmuş sohbet eder; yanlarında siyah bir kedi. Gauguin bunları hayatın gündelik, düşüncesiz tarafı diye anlatır. Sıcak sarı tenler mavi-yeşil zeminle çarpışır."
     }
    ]
+  },
+  {
+   "anahtar": "Q18572249",
+   "sanatci": "francesco-salviati",
+   "baslik": "Aziz Thomas'ın Şüphesi",
+   "gorsel": "c0eda9a627ae200d",
+   "noktalar": [
+    {
+     "ad": "Thomas'ın dokunuşu",
+     "x": 0.36,
+     "y": 0.44,
+     "w": 0.26,
+     "h": 0.15,
+     "metin": "Diz çökmüş kızıl saçlı genç Thomas, iki parmağını İsa'nın böğrüne uzatıyor. Yaraya dokunmadan dirilişe inanmayacağını söylemişti; burası inancın kanıtla buluştuğu an. Thomas'ın başı geriye kıvrılmış, bakışı İsa'nın yüzünde."
+    },
+    {
+     "ad": "Yaralı avuç",
+     "x": 0.79,
+     "y": 0.27,
+     "w": 0.11,
+     "h": 0.1,
+     "metin": "İsa sol elini kaldırmış, avucundaki çivi yarasını gösteriyor. Parmaklar konuşur gibi açılmış. Yara küçük, koyu bir lekeyle verilmiş; beden ise yaralı değil, kusursuz ve yüceltilmiş."
+    },
+    {
+     "ad": "Diriliş sancağı",
+     "x": 0.74,
+     "y": 0.02,
+     "w": 0.25,
+     "h": 0.26,
+     "metin": "Kızıl haçlı beyaz sancak dirilişin ve ölüme karşı zaferin geleneksel simgesidir. Sancağın ucundan kıvrılarak havada dans eden kurdele, maniyerist süslemeciliğin tipik bir ayrıntısı. Sahnenin karanlık arka planında en açık leke."
+    },
+    {
+     "ad": "Çıplak sırt ve kitap",
+     "x": 0.07,
+     "y": 0.24,
+     "w": 0.19,
+     "h": 0.4,
+     "metin": "Solda bize sırtını dönmüş bir havari, kolunun altında bir kitap tutuyor. Kaslı çıplak sırt Michelangelo'dan gelen anatomi zevkini gösterir. Bu tür sırtı dönük figürler izleyiciyi kalabalığın içine çeker."
+    },
+    {
+     "ad": "Cangiante örtü",
+     "x": 0.0,
+     "y": 0.62,
+     "w": 0.24,
+     "h": 0.28,
+     "metin": "Aynı figürün örtüsü kıvrımlarda pembeden maviye döner. Buna cangiante (renk değiştiren) denir: gölge koyulaştırılarak değil, başka bir renge geçilerek verilir. Maniyerist ressamların sevdiği yapay, parlak bir etkidir."
+    },
+    {
+     "ad": "Fısıldaşan havariler",
+     "x": 0.22,
+     "y": 0.24,
+     "w": 0.3,
+     "h": 0.13,
+     "metin": "Arkada sıkışık bir yüz kalabalığı fısıldaşıyor, birbirine bakıyor. Başlarındaki silik haleler onların havari olduğunu gösterir. Mekân dar ve kalabalık; figürler adeta üst üste yığılmış."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q3705703",
+   "sanatci": "jacopo-pontormo",
+   "baslik": "Çarmıhtan İndiriliş",
+   "gorsel": "1769a17bdd359be0",
+   "noktalar": [
+    {
+     "ad": "Bize bakan genç",
+     "x": 0.52,
+     "y": 0.57,
+     "w": 0.17,
+     "h": 0.11,
+     "metin": "Alt ortada parmak uçlarında çömelmiş genç, İsa'nın bedenini taşırken doğrudan bize bakıyor. Kaşları kalkık, yüzü gergin. Bu bakış izleyiciyi yasın bir parçası yapar; taşıdığı ağırlığa rağmen genç neredeyse yere basmıyor."
+    },
+    {
+     "ad": "Ölü İsa",
+     "x": 0.19,
+     "y": 0.37,
+     "w": 0.3,
+     "h": 0.22,
+     "metin": "İsa'nın başı geriye düşmüş, saçları omzuna dökülüyor. Gevşek beden ve sarkan kol, Michelangelo'nun Vatikan Pietà'sını hatırlatır. Ten soluk ve neredeyse gölgesiz; bedenin ağırlığı bilerek hafifletilmiş."
+    },
+    {
+     "ad": "Bayılan Meryem",
+     "x": 0.62,
+     "y": 0.2,
+     "w": 0.18,
+     "h": 0.15,
+     "metin": "Sağ üstte mavi başörtülü Meryem kollarını açmış, bayılmak üzere. Oğlunun bedeni ona doğru taşınıyor ama ona dokunamıyor. Yüzündeki ifade çığlıktan çok bitkinliktir."
+    },
+    {
+     "ad": "Olası otoportre",
+     "x": 0.89,
+     "y": 0.27,
+     "w": 0.11,
+     "h": 0.11,
+     "metin": "Sağ kenarda kahverengi giysili, sakallı bir adam kalabalığın dışından bakıyor. Sıkça Pontormo'nun otoportresi olarak yorumlanır. Sahnedeki en gerçekçi, en az idealize edilmiş yüz odur."
+    },
+    {
+     "ad": "Tek bulut",
+     "x": 0.11,
+     "y": 0.08,
+     "w": 0.21,
+     "h": 0.11,
+     "metin": "Sol üstte tek bir bulut var. Haç, mezar ya da manzara yok: dış dünyadan kalan tek iz bu. Mekânın belirsizliği ve figürlerin havada asılı gibi duruşu Maniyerizm'in tipik özelliğidir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q23008305",
+   "sanatci": "sofonisba-anguissola",
+   "baslik": "Satranç Oynayan Kız Kardeşler",
+   "gorsel": "5522bc0dc8009d75",
+   "noktalar": [
+    {
+     "ad": "İmza ve tarih",
+     "x": 0.24,
+     "y": 0.89,
+     "w": 0.3,
+     "h": 0.08,
+     "metin": "Satranç tahtasının alt kenarındaki Latince yazıt ressamın imzasını ve 1555 tarihini taşır. Sofonisba kendini burada \"virgo\", yani evlenmemiş genç kız olarak tanıtır. Resim, onun yeteneğinin bir vitrini olarak da okunur."
+    },
+    {
+     "ad": "Europa'nın gülüşü",
+     "x": 0.38,
+     "y": 0.19,
+     "w": 0.16,
+     "h": 0.25,
+     "metin": "Ortadaki en küçük kardeş Europa, Lucia'ya bakıp muzipçe gülümsüyor. Resmin en canlı, en anlık ifadesi bu yüzdür. Dönemin resmî portrelerinde böyle bir gülüş çok nadirdir."
+    },
+    {
+     "ad": "Lucia'nın bakışı",
+     "x": 0.16,
+     "y": 0.05,
+     "w": 0.18,
+     "h": 0.27,
+     "metin": "Solda kırmızı elbiseli Lucia, oyunun ortasında başını çevirip doğrudan bize bakıyor. Sakin ve kendinden emin; oyunu kazanan o gibi görünür. Saçındaki inci ve mücevherli bant ailenin soylu konumunu gösterir."
+    },
+    {
+     "ad": "Minerva'nın jesti",
+     "x": 0.66,
+     "y": 0.17,
+     "w": 0.24,
+     "h": 0.33,
+     "metin": "Sağda profilden görünen Minerva elini kaldırmış; şaşkınlık ya da itiraz gibi okunabilir. Koyu elbisesi ve kolundaki altın işlemeler kumaşın ne kadar ince işlendiğini gösterir. Üç kız kardeş bakışlarla birbirine bağlanır."
+    },
+    {
+     "ad": "Yaşlı hizmetçi",
+     "x": 0.88,
+     "y": 0.03,
+     "w": 0.12,
+     "h": 0.3,
+     "metin": "Sağ kenarda beyaz başörtülü yaşlı bir hizmetçi oyuna eğilmiş, gülümsüyor. Genç yüzlerle yaşlı yüz yan yana: ressam farklı yaşları gözlemlemeyi severdi. Kesilmiş figür sahneye anlık bir hava katar."
+    },
+    {
+     "ad": "Desenli halı",
+     "x": 0.6,
+     "y": 0.6,
+     "w": 0.16,
+     "h": 0.14,
+     "metin": "Masayı Doğu kökenli desenli bir halı örtüyor; Anadolu halısı olduğu sıkça öne sürülür. Böyle halılar Rönesans İtalya'sında pahalı bir lüks ve statü işaretiydi. Kırmızı zemin, Lucia'nın elbisesiyle renk birliği kurar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q140161127",
+   "sanatci": "daniele-da-volterra",
+   "baslik": "Çarmıhtan İndiriliş (Volterra)",
+   "gorsel": "ae956b89ec04c8f7",
+   "noktalar": [
+    {
+     "ad": "Öne uzanan genç",
+     "x": 0.62,
+     "y": 0.12,
+     "w": 0.36,
+     "h": 0.24,
+     "metin": "Sağ üstte merdivenden tehlikeli biçimde öne eğilmiş yarı çıplak bir genç, İsa'ya uzanıyor; beli beyaz kumaşla sarılı. Gerilmiş sırt ve kol kasları Michelangelo etkisini açıkça gösterir. Daniele, Michelangelo'nun yakın dostu ve izleyicisiydi."
+    },
+    {
+     "ad": "Yeşil zırhlı taşıyıcı",
+     "x": 0.2,
+     "y": 0.26,
+     "w": 0.24,
+     "h": 0.29,
+     "metin": "Ortada yeşil zırhlı, pembe etekli bir figür İsa'nın bedenini kollarıyla kavramış. Bacakların çevresindeki beyaz örtü, ağırlığın aşağı kaydığını hissettirir. Bükülen duruş maniyerist hareket zevkini yansıtır."
+    },
+    {
+     "ad": "İsa'nın başı",
+     "x": 0.3,
+     "y": 0.19,
+     "w": 0.16,
+     "h": 0.1,
+     "metin": "İsa'nın başı öne ve yana düşmüş, yüzü gölgede. Beden yukarıdan birkaç kişi tarafından birden tutuluyor; bütün hareket bu ağırlığın çevresinde döner. Freskin bu bölümü de aşınmış, ayrıntılar silik."
+    },
+    {
+     "ad": "Bayılan Meryem",
+     "x": 0.06,
+     "y": 0.78,
+     "w": 0.32,
+     "h": 0.2,
+     "metin": "Sol altta Meryem bayılmış, yere yığılmış; beyaz başörtüsü karanlıkta seçiliyor. Yatay bedeni, yukarıda sarkan İsa'nın bedenini yankılar. Annenin acısı oğlununkine eşlik eder."
+    },
+    {
+     "ad": "Turuncu pelerinli kadın",
+     "x": 0.36,
+     "y": 0.6,
+     "w": 0.3,
+     "h": 0.18,
+     "metin": "Turuncu pelerinli bir kadın aşağıdaki Meryem'e doğru eğiliyor. Bu parlak turuncu, kahverengiye dönmüş freskin en canlı lekesidir. Yüzeydeki lekeler, freskin hasar görüp duvardan ayrılarak tuvale aktarılmasının izleri."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q867403",
+   "sanatci": "parmigianino",
+   "baslik": "Uzun Boyunlu Meryem",
+   "gorsel": "ebd73e500d20ad0b",
+   "noktalar": [
+    {
+     "ad": "Boyun ve uzun parmaklar",
+     "x": 0.32,
+     "y": 0.09,
+     "w": 0.29,
+     "h": 0.23,
+     "metin": "Meryem'in boynu kuğu gibi uzamış, küçük başı hafifçe eğik. Göğsüne dokunan parmaklar da alışılmadık biçimde ince ve uzun. Uzun boyun, Ezgiler Ezgisi'ndeki \"boynun fildişi kule gibi\" benzetmesini hatırlatır; maniyerist zarafetin simgesi olmuştur."
+    },
+    {
+     "ad": "Kayan İsa Çocuk",
+     "x": 0.48,
+     "y": 0.38,
+     "w": 0.27,
+     "h": 0.26,
+     "metin": "Kucaktaki İsa Çocuk gözleri kapalı, kolu sarkmış, dizlerden kayıp düşecek gibi. Bebek için fazla büyük ve uzun bir beden. Gevşek duruşu Pietà'yı, yani ölü İsa'yı tutan Meryem'i çağrıştırır: doğum ve ölüm aynı görüntüde."
+    },
+    {
+     "ad": "Parlak vazo",
+     "x": 0.0,
+     "y": 0.36,
+     "w": 0.13,
+     "h": 0.22,
+     "metin": "Soldaki meleğin tuttuğu parlak vazo ışığı yansıtıyor. Bazı araştırmacılar yüzeyinde silik bir haç yansıması görür; bu, çarmıha bir gönderme olarak okunur. Melekler dar bir köşeye sıkışmış."
+    },
+    {
+     "ad": "Tek sütun",
+     "x": 0.72,
+     "y": 0.17,
+     "w": 0.12,
+     "h": 0.3,
+     "metin": "Arkada tek başına yükselen bir sütun var; neyi taşıdığı belli değil. Kimi yorumculara göre Meryem'in saflığı ve sağlamlığıyla ilişkilidir. Dibindeki taban sırası, bitmemiş bir sütunlu yapıyı düşündürür."
+    },
+    {
+     "ad": "Tomarlı peygamber",
+     "x": 0.79,
+     "y": 0.72,
+     "w": 0.2,
+     "h": 0.24,
+     "metin": "Sağ altta küçücük bir adam elindeki tomarı açıyor. Ön plandaki dev figürlerle bu küçük figür arasındaki ölçek farkı mantıklı bir mesafe vermez. Genellikle bir peygamber olarak yorumlanır; İşaya mı, Hieronymus mu olduğu tartışmalıdır."
+    },
+    {
+     "ad": "Yastıktaki ayak",
+     "x": 0.21,
+     "y": 0.85,
+     "w": 0.3,
+     "h": 0.13,
+     "metin": "Meryem bir ayağını yeşil ve kırmızı yastıklara dayamış. Oturuyor ama bu duruşla neredeyse ayakta gibi görünür. Bedenin nerede oturduğu belirsizdir; mekân bilinçli olarak tutarsız bırakılmış."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1863885",
+   "sanatci": "rosso-fiorentino",
+   "baslik": "Musa, Yitro'nun Kızlarını Savunurken",
+   "gorsel": "ffe25a680966b12f",
+   "noktalar": [
+    {
+     "ad": "Siyah kumaşlı genç",
+     "x": 0.2,
+     "y": 0.22,
+     "w": 0.38,
+     "h": 0.22,
+     "metin": "Ortada yalnız siyah bir kumaş parçasıyla sarılı kaslı bir genç, rakibini yere bastırıyor. Çoğu yorumcu onu Musa olarak görür, ama hangi figürün Musa olduğu konusunda görüşler farklıdır. Beden geometrik, neredeyse kesilmiş taş gibi düzlemlerle modellenmiş."
+    },
+    {
+     "ad": "Haykıran adam",
+     "x": 0.86,
+     "y": 0.44,
+     "w": 0.14,
+     "h": 0.16,
+     "metin": "Sağ kenarda sarışın bir adam ağzı açık haykırıyor. Yüzü neredeyse bir tiyatro maskesine benzer. Rosso duyguyu abartılı ifadelerle, gerçekçilikten çok etki için kurar."
+    },
+    {
+     "ad": "Sakin koyunlar",
+     "x": 0.59,
+     "y": 0.29,
+     "w": 0.19,
+     "h": 0.18,
+     "metin": "Kavganın tam ortasında koyunlar sakin ve şaşkın bakıyor. Kuyu başındaki sürü, hikâyenin geçtiği yeri hatırlatır. Hayvanların durgunluğu, öndeki boğuşmayla keskin bir karşıtlık kurar."
+    },
+    {
+     "ad": "Yitro'nun kızı",
+     "x": 0.6,
+     "y": 0.0,
+     "w": 0.36,
+     "h": 0.21,
+     "metin": "Sağ üstte mavi elbiseli kadın şaşkınlıkla ellerini açmış. Musa'nın korumaya geldiği Yitro'nun kızlarından biridir; hikâyede kızlardan Sippora daha sonra Musa'nın karısı olur. Arkasında öbür kızlar kalabalık bir grup oluşturuyor."
+    },
+    {
+     "ad": "Pembe pelerinli saldırgan",
+     "x": 0.05,
+     "y": 0.0,
+     "w": 0.36,
+     "h": 0.21,
+     "metin": "Sol üstte pembe pelerini savrulan sakallı bir adam yumruğunu kaldırmış saldırıyor. Pelerinin savruluşu hareketin hızını verir. Mekân derinliği yok; figürler yüzeye yapışık bir kabartma gibi dizilmiş."
+    },
+    {
+     "ad": "Yığılmış bedenler",
+     "x": 0.0,
+     "y": 0.7,
+     "w": 0.4,
+     "h": 0.24,
+     "metin": "Alt kısımda yere serilmiş çıplak bedenler üst üste yığılmış. Başların ve ellerin iç içe geçtiği yerde kimin hangi bedene ait olduğu belirsizleşir. Rosso ahlaki dersten çok bedenin gerilim gücüyle ilgilenir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q19966572",
+   "sanatci": "giulio-romano",
+   "baslik": "Aşk Sahnesi",
+   "gorsel": "1cebde03db38c512",
+   "noktalar": [
+    {
+     "ad": "Kapıdaki yaşlı kadın",
+     "x": 0.84,
+     "y": 0.02,
+     "w": 0.15,
+     "h": 0.38,
+     "metin": "Sağda başörtülü yaşlı bir kadın aralık kapıyı tutup içeriyi gözetliyor. Rolü belirsizdir: meraklı bir hizmetçi, bir aracı ya da ahlaki bir uyarı olabilir. Pek çok yorumcuya göre izleyiciyi de gizlice bakan birinin yerine koyar."
+    },
+    {
+     "ad": "Sıçrayan köpek",
+     "x": 0.89,
+     "y": 0.45,
+     "w": 0.1,
+     "h": 0.36,
+     "metin": "Yaşlı kadının ayağının dibinde küçük bir köpek ona doğru sıçrıyor. Köpek çoğu resimde sadakatin simgesidir; burada ise sahneye gündelik, hareketli bir ayrıntı katar. Kadının girişini belki de ele verecek olan odur."
+    },
+    {
+     "ad": "Terlikler ve kedi",
+     "x": 0.39,
+     "y": 0.8,
+     "w": 0.16,
+     "h": 0.15,
+     "metin": "Yatağın altında çıkarılmış, içi kırmızı siyah terlikler ve gölgede saklanan bir kedi var. Bu küçük ev ayrıntıları mitolojik ya da tarihî bir sahneden çok gerçek bir yatak odası izlenimi verir. Köpek ile kedi odanın iki ucunda karşılıklı durur."
+    },
+    {
+     "ad": "Çiftin yüzleri",
+     "x": 0.2,
+     "y": 0.01,
+     "w": 0.15,
+     "h": 0.17,
+     "metin": "Çıplak erkek ve kadın birbirine sarılmış, yüz yüze bakıyor. Çiftin kimliği tartışmalıdır; mitolojik bir çift ya da yalnızca bir aşk sahnesi olabilir. Bedenler Raffaello atölyesinden gelen heykelsi, pürüzsüz bir dille modellenmiş."
+    },
+    {
+     "ad": "Bilezik",
+     "x": 0.32,
+     "y": 0.21,
+     "w": 0.09,
+     "h": 0.11,
+     "metin": "Kadının üst kolunda süslü altın bir bilezik parlıyor. Çıplak bedendeki tek takı, tenin beyazlığını öne çıkarır. Giulio, Raffaello'nun en önemli öğrencisiydi; bedenin bu cilalı işlenişi ondan gelir."
+    },
+    {
+     "ad": "Oymalı hayvan başı",
+     "x": 0.02,
+     "y": 0.27,
+     "w": 0.09,
+     "h": 0.22,
+     "metin": "Yatağın sol ucunda oymalı bir hayvan başı var. Kırmızı kadife ve ağır yeşil perdelerle birlikte zengin bir sarayı düşündürür. Antik mobilyalardan esinlenen bu süsler Giulio'nun antikiteye ilgisini yansıtır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q3998957",
+   "sanatci": "annibale-carracci",
+   "baslik": "Bakkhus ve Ariadne'nin Zaferi",
+   "gorsel": "8295423c12b95915",
+   "noktalar": [
+    {
+     "ad": "Ariadne'nin tacı",
+     "x": 0.22,
+     "y": 0.1,
+     "w": 0.12,
+     "h": 0.17,
+     "metin": "Sol üstte uçan bir putto (kanatlı çocuk figürü) Ariadne'nin başına ışıltılı bir taç uzatıyor. Efsaneye göre bu taç göğe atılıp Kuzey Tacı takımyıldızına dönüşür. Böylece taç, ölümlü Ariadne'nin tanrılaşmasını önceden haber verir."
+    },
+    {
+     "ad": "Bakkhus",
+     "x": 0.12,
+     "y": 0.25,
+     "w": 0.16,
+     "h": 0.22,
+     "metin": "Asma yapraklı taç takmış Bakkhus altın bir arabada oturuyor ve kolunu kaldırmış. Şarap tanrısının coşkulu alayı onun çevresinde akar. Bedeni antik heykellerden öğrenilmiş idealize bir anatomiyle modellenmiş."
+    },
+    {
+     "ad": "Ariadne",
+     "x": 0.28,
+     "y": 0.27,
+     "w": 0.14,
+     "h": 0.3,
+     "metin": "Mavi giysili Ariadne, keçilerin çektiği gümüşi arabada Bakkhus'un yanında ilerliyor. Theseus'un Naksos adasında terk ettiği prensesi Bakkhus bulup onunla evlenir. Tavanın genel teması, tanrıları bile yenen aşkın gücü olarak okunur."
+    },
+    {
+     "ad": "Kaplanlar ve keçiler",
+     "x": 0.3,
+     "y": 0.6,
+     "w": 0.3,
+     "h": 0.25,
+     "metin": "Arabaları kaplanlar ve beyaz keçiler çekiyor; aralarında çıplak bir çocuk koşuyor. Kaplan Bakkhus'un Doğu'dan, Hindistan'dan dönüşünü çağrıştıran geleneksel hayvanıdır. Hayvanların canlılığı alayın hızını verir."
+    },
+    {
+     "ad": "Silenos",
+     "x": 0.69,
+     "y": 0.27,
+     "w": 0.16,
+     "h": 0.24,
+     "metin": "Sağda göbekli, sakallı Silenos sarhoş hâlde eşeğin üstünde tutuluyor. Bakkhus'un yaşlı hocası ve sürekli sarhoş yoldaşıdır. Alayın komik ögesi olarak tanrının zarafetiyle karşıtlık kurar."
+    },
+    {
+     "ad": "Uzanan figür ve çatlaklar",
+     "x": 0.63,
+     "y": 0.65,
+     "w": 0.35,
+     "h": 0.32,
+     "metin": "Sağ altta uzanan bir figürün altın sarısı örtüsü ve yanında putto'lar görülüyor. Yüzeydeki belirgin çatlaklar, bunun tuval değil sıvaya boyanmış bir tavan freski olduğunu hatırlatır. Görsel, tavanın yalnızca orta panosudur."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q63341",
+   "sanatci": "dirck-van-baburen",
+   "baslik": "Pezevenk Kadın",
+   "gorsel": "a670377d15e5b599",
+   "noktalar": [
+    {
+     "ad": "Altın sikke",
+     "x": 0.34,
+     "y": 0.37,
+     "w": 0.12,
+     "h": 0.15,
+     "metin": "Adam parmaklarının arasında bir altın sikke tutuyor; lavtanın sapının hemen solunda. Pazarlığın odak noktası budur: sikke, açık avuç ve kucaklayan kol aynı hizada buluşur. Sahnenin bütün anlamı bu küçük parıltıya bağlı."
+    },
+    {
+     "ad": "Parayı isteyen eller",
+     "x": 0.45,
+     "y": 0.55,
+     "w": 0.21,
+     "h": 0.16,
+     "metin": "Yaşlı kadın bir avucunu açmış, öbür eliyle parayı gösteriyor: parayı isteyen odur. Aracılık eden \"pezevenk\" figürü bu yaşlı kadındır. Hemen üstte genç kadının lavtanın sapını tutan eli var; ellerin dili sözsüz bir pazarlık gibi okunur."
+    },
+    {
+     "ad": "Gülen kadın",
+     "x": 0.06,
+     "y": 0.2,
+     "w": 0.23,
+     "h": 0.23,
+     "metin": "Omuzları açık genç kadın başını kaldırmış, gülerek adama bakıyor. Yüzü sol üstten gelen sert ışıkla aydınlanır; Caravaggio'dan öğrenilen bu ışık Utrecht ressamlarının imzasıdır. Lavta o dönemde aşk ve şehvetle ilişkilendirilirdi."
+    },
+    {
+     "ad": "Tüylü şapkalı müşteri",
+     "x": 0.24,
+     "y": 0.02,
+     "w": 0.32,
+     "h": 0.27,
+     "metin": "Tüylü siyah şapkalı sakallı adam kolunu kadının omzuna dolamış, sırıtıyor. Kıyafeti müsrif oğul hikâyesinin meyhane sahnelerini andırır. Bu tür sahneler hem eğlendirmek hem de ahlaki bir uyarı için yapılırdı."
+    },
+    {
+     "ad": "Yaşlı kadının yüzü",
+     "x": 0.56,
+     "y": 0.08,
+     "w": 0.26,
+     "h": 0.3,
+     "metin": "Sarıklı yaşlı kadın ağzı açık, adama doğru eğilmiş, konuşuyor. Kırışık yüzü genç kadının pürüzsüz teniyle karşıtlık kurar: gençlik ve yaşlılık yan yana. Figürler bele kadar ve çok yakından gösterilmiş, izleyici masanın hemen başında gibidir."
+    },
+    {
+     "ad": "Lavtadaki imza",
+     "x": 0.26,
+     "y": 0.87,
+     "w": 0.18,
+     "h": 0.09,
+     "metin": "Lavtanın gövdesinin alt kenarına sanatçı boyayla imzasını atmış. İmza enstrümanın bir parçası gibi gizlenmiştir; aramadan görülmez. Dirck van Baburen, Roma'da çalışmış Utrecht Caravaggiocularındandır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q3769169",
+   "sanatci": "artemisia-gentileschi",
+   "baslik": "Holofernes'in Kafasını Kesen Judith",
+   "gorsel": "daddc49c8e471108",
+   "noktalar": [
+    {
+     "ad": "Haç biçimli kabza",
+     "x": 0.37,
+     "y": 0.4,
+     "w": 0.2,
+     "h": 0.16,
+     "metin": "Judith'in kılıcının kabzası bir haç biçiminde. Bütün kolların buluştuğu nokta burası: Judith'in, Abra'nın ve Holofernes'in kolları kabzanın çevresinde kesişir. Haç biçimi dinsel bir çağrışım taşıyabilir."
+    },
+    {
+     "ad": "Judith'in yüzü",
+     "x": 0.8,
+     "y": 0.15,
+     "w": 0.16,
+     "h": 0.17,
+     "metin": "Judith kaşlarını çatmış, başını geri çekmiş ama işini kararlılıkla yapıyor. Korku ya da tereddüt değil, soğukkanlı bir yoğunlaşma okunur. Kolları sıvanmış; kahraman değil, ağır bir işi yapan biri gibidir."
+    },
+    {
+     "ad": "Hizmetçi Abra",
+     "x": 0.44,
+     "y": 0.05,
+     "w": 0.2,
+     "h": 0.22,
+     "metin": "Hizmetçi Abra yukarıdan Holofernes'i yatağa bastırıyor. Önceki resimlerde genellikle kenarda bekleyen yaşlı bir kadın olarak gösterilirdi. Artemisia onu genç ve eylemin ortağı yapmış."
+    },
+    {
+     "ad": "Holofernes'in yüzü",
+     "x": 0.46,
+     "y": 0.56,
+     "w": 0.16,
+     "h": 0.14,
+     "metin": "Holofernes baş aşağı, gözleri açık, hâlâ direniyor. Judith onu saçından kavramış. Sert ışık, karanlık çadırda yüzü bir sahne ışığı gibi aydınlatır; bu Caravaggio'dan gelen bir etkidir."
+    },
+    {
+     "ad": "Oval madalyonlu bilezik",
+     "x": 0.68,
+     "y": 0.51,
+     "w": 0.1,
+     "h": 0.08,
+     "metin": "Judith'in sol bileğinde oval madalyonlu altın bir bilezik var. Bazı araştırmacılar madalyonlarda Artemis/Diana figürleri görür ve bunu ressamın adı Artemisia'ya bir gönderme sayar. Şiddetin ortasında incelikli bir ayrıntı."
+    },
+    {
+     "ad": "Kan izleri",
+     "x": 0.22,
+     "y": 0.64,
+     "w": 0.3,
+     "h": 0.17,
+     "metin": "Beyaz çarşaftan kan aşağı, yatağın kenarına doğru sızıyor; boyundan ince kan yayları fışkırıyor. Çarşafın beyazlığı kanın kırmızısını daha da sert gösterir. Artemisia bu sahneyi o dönem için alışılmadık bir açıklıkla resmetmiştir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q20176925",
+   "sanatci": "orazio-gentileschi",
+   "baslik": "Lavta Çalan",
+   "gorsel": "d0b69991aa09b052",
+   "noktalar": [
+    {
+     "ad": "Çapraz ışık çizgisi",
+     "x": 0.02,
+     "y": 0.02,
+     "w": 0.4,
+     "h": 0.24,
+     "metin": "Sol üstteki duvarda ışık ile gölgeyi ayıran keskin bir çapraz çizgi var. Işık, görünmeyen yüksek bir pencereden giriyor. Bu tek kaynaklı, yönlü ışık Caravaggio'dan gelir; Orazio onu daha yumuşak ve sakin kullanır."
+    },
+    {
+     "ad": "Burgular ve sol el",
+     "x": 0.44,
+     "y": 0.04,
+     "w": 0.18,
+     "h": 0.22,
+     "metin": "Kadın sol eliyle lavtanın burgularını çeviriyor. Yani çalmıyor, akort ediyor: sesten önceki dikkat anı. Akort etmek Rönesans'tan beri uyum ve ölçülülük düşüncesiyle ilişkilendirilir."
+    },
+    {
+     "ad": "Dinleyen yüz",
+     "x": 0.63,
+     "y": 0.14,
+     "w": 0.23,
+     "h": 0.2,
+     "metin": "Başını lavtanın gövdesine yaslamış, gözleri aşağıda, sesi dinliyor. Yüzü yalnızca profilden görünür; bize sırtı dönüktür. İzleyici, onun içe dönük anına tanık olan biri gibidir."
+    },
+    {
+     "ad": "Masadaki çalgılar",
+     "x": 0.01,
+     "y": 0.27,
+     "w": 0.43,
+     "h": 0.17,
+     "metin": "Yeşil örtülü masada bir keman, nefesli çalgılar ve notalar duruyor. Birlikte müzik yapılacağını, belki bir topluluğu ima eder. Kemanın cilalı tahtası ışığı yakalar; natürmort ustalığının küçük bir gösterisi."
+    },
+    {
+     "ad": "Açık nota kitabı",
+     "x": 0.37,
+     "y": 0.38,
+     "w": 0.23,
+     "h": 0.12,
+     "metin": "Masanın kenarında açık bir nota kitabı var; satırlar ve notalar seçilebilir. Bazı yorumcular resmi işitme duyusunun alegorisi olarak okur, ama bu kesin değildir. Kâğıdın beyazı, bluzun beyazıyla yankılanır."
+    },
+    {
+     "ad": "İpek etek, kadife tabure",
+     "x": 0.7,
+     "y": 0.74,
+     "w": 0.3,
+     "h": 0.26,
+     "metin": "Altın sarısı ipek etek kırık, parlak kıvrımlar yapıyor; altındaki kırmızı tabure örtüsü ise yumuşak ve mat. İki dokunun farklı işlenişi, Orazio'nun kumaş ustalığını gösterir. Renkler sıcak ve sınırlı bir paletten seçilmiş."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1240092",
+   "sanatci": "diego-velazquez",
+   "baslik": "Papa X. Innocentius'un Portresi",
+   "gorsel": "a49e1d7acca971b6",
+   "noktalar": [
+    {
+     "ad": "Kuşkulu bakış",
+     "x": 0.29,
+     "y": 0.12,
+     "w": 0.2,
+     "h": 0.24,
+     "metin": "Hafif çatılmış kaşlar, yana kayan bakış ve sıkılmış dudaklar idealleştirilmemiş, kuşkucu bir kişilik çizer. Yanaklardaki kızarıklık ve sağ göze düşen ışık yüzü canlı kılar. Papanın portreyi görünce \"fazla gerçek\" dediği anlatılır, ama bu bir rivayettir."
+    },
+    {
+     "ad": "İpek mozzetta",
+     "x": 0.2,
+     "y": 0.38,
+     "w": 0.4,
+     "h": 0.22,
+     "metin": "Omuzlardaki kırmızı ipek pelerin (mozzetta) hızlı, beyaz ve pembe fırça vuruşlarıyla boyanmış. Yakından bakınca ayrı lekeler, uzaklaşınca parlayan ipek görülür. Velázquez'in serbest fırçası sonradan empresyonistleri de etkiledi."
+    },
+    {
+     "ad": "Yüzüklü el",
+     "x": 0.32,
+     "y": 0.6,
+     "w": 0.14,
+     "h": 0.13,
+     "metin": "Sağ el koltuğun kolunda gevşekçe sarkıyor, parmakta bir yüzük parlıyor. Yüzük papalık otoritesinin işaretidir. Elin rahatlığı, yüzdeki gerginlikle karşıtlık kurar."
+    },
+    {
+     "ad": "Dilekçe",
+     "x": 0.79,
+     "y": 0.6,
+     "w": 0.2,
+     "h": 0.11,
+     "metin": "Sol elde katlanmış bir kâğıt var; üzerindeki silik yazıda Velázquez'in adının geçtiği kabul edilir. Sanatçı imza yerine papaya sunulan bir dilekçe yoluyla resme girmiş gibidir. Küçük, akıllıca bir imza oyunu."
+    },
+    {
+     "ad": "Dantelli cüppe",
+     "x": 0.3,
+     "y": 0.76,
+     "w": 0.4,
+     "h": 0.22,
+     "metin": "Altta dantelli beyaz cüppe birkaç hızlı fırça darbesiyle verilmiş. Kırmızılar arasındaki tek büyük açık alan budur. Kırmızının onlarca tonu ile bu beyaz, resmin bütün renk düzenini kurar."
+    },
+    {
+     "ad": "Tahtın altın süsü",
+     "x": 0.01,
+     "y": 0.07,
+     "w": 0.1,
+     "h": 0.14,
+     "metin": "Koltuğun tepesindeki altın süsler papalık tahtının parçasıdır. Arkadaki kırmızı perde, kırmızı koltuk ve kırmızı giysi birbirine karışır. Velázquez bu tek renkli ortamda ayrımı yalnızca ton ve dokuyla sağlar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q4693305",
+   "sanatci": "francisco-de-zurbaran",
+   "baslik": "Tanrı'nın Kuzusu",
+   "gorsel": "223aceeefb9b0720",
+   "noktalar": [
+    {
+     "ad": "Bağlı ayaklar",
+     "x": 0.59,
+     "y": 0.71,
+     "w": 0.2,
+     "h": 0.24,
+     "metin": "Dört ayak bileklerinden ince bir iple bağlanmış, toynaklar üst üste binmiş. Bağlı ayaklar kuzunun kurbanlık olduğunu gösterir. Resmin bütün anlamı bu küçük ipe dayanır: hayvan, İsa'nın fedakârlığının simgesine dönüşür."
+    },
+    {
+     "ad": "Teslim olmuş baş",
+     "x": 0.09,
+     "y": 0.34,
+     "w": 0.22,
+     "h": 0.4,
+     "metin": "Kuzu başını sekiye bırakmış, gözü yarı kapalı; yüzünde korku değil teslimiyet var. Yeşaya kitabındaki, boğazlanmaya götürülürken ağzını açmayan kuzu imgesiyle örtüşür. Kıvrık boynuz ve pembe burun neredeyse dokunulacak kadar gerçek."
+    },
+    {
+     "ad": "Yün bukleleri",
+     "x": 0.4,
+     "y": 0.15,
+     "w": 0.3,
+     "h": 0.28,
+     "metin": "Sırttaki yün kıvır kıvır, her bukle ışığı ayrı ayrı yakalıyor. Işık soldan, tek kaynaktan gelir ve karanlık fonda beyaz bedeni öne çıkarır. Zurbarán'ın natürmort titizliği burada bir dua nesnesine dönüşür."
+    },
+    {
+     "ad": "Taş seki",
+     "x": 0.05,
+     "y": 0.62,
+     "w": 0.3,
+     "h": 0.2,
+     "metin": "Kuzu gri, çıplak bir taş sekinin üstünde yatıyor; başı ve boynuzunun ucu sekinin kenarına değiyor. Taş bir sunağı çağrıştırır. Prado'daki bu versiyonda hale ya da yazıt yok; anlam yalnızca sade nesnelerle kurulur."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q2653851",
+   "sanatci": "peter-paul-rubens",
+   "baslik": "Çarmıhın Dikilişi",
+   "gorsel": "5cee7e13a5278a1a",
+   "noktalar": [
+    {
+     "ad": "Göğe bakan İsa",
+     "x": 0.38,
+     "y": 0.19,
+     "w": 0.12,
+     "h": 0.14,
+     "metin": "İsa acı çekse de başını kaldırmış, gözlerini göğe çevirmiş. Kimi yorumculara göre bu, edilgen bir kurbandan çok kendini adayan bir figür imgesidir. Işık bütün sahneden önce onun bedenine düşer."
+    },
+    {
+     "ad": "Üç dilli levha",
+     "x": 0.34,
+     "y": 0.08,
+     "w": 0.08,
+     "h": 0.12,
+     "metin": "Çarmıhın tepesine kıvrılan bir kâğıt gibi boyanmış bir levha çakılmış. Üzerindeki \"Yahudilerin Kralı\" ibaresi İbranice, Yunanca ve Latince yazılmıştır. İncil'deki ayrıntı burada gerçek bir nesne gibi işlenmiş."
+    },
+    {
+     "ad": "Havlayan köpek",
+     "x": 0.24,
+     "y": 0.8,
+     "w": 0.15,
+     "h": 0.18,
+     "metin": "Orta panelin sol altında bir köpek var. Dramın ortasında gündelik, neredeyse kayıtsız bir ayrıntıdır. Rubens hayvanları sahnelerine canlılık katmak için sık kullanırdı."
+    },
+    {
+     "ad": "Meryem ve Yuhanna",
+     "x": 0.06,
+     "y": 0.2,
+     "w": 0.16,
+     "h": 0.26,
+     "metin": "Sol kanatta Meryem ile Yuhanna ayakta, sakin bir kederle duruyor. Orta paneldeki kas ve hareket karmaşasının tersine dik ve dingindirler. Üç panel aralıklı konmuş olsa da sahne kanatlar boyunca devam eder."
+    },
+    {
+     "ad": "Ağlayan kadınlar",
+     "x": 0.0,
+     "y": 0.5,
+     "w": 0.22,
+     "h": 0.3,
+     "metin": "Sol kanadın altında ağlayan kadınlar ve çocuklarını kucaklayan anneler var. Bu kederli figürler izleyicinin duygusal tepkisine örnek olur. Rubens'in yumuşak, ışıklı teni burada da öne çıkar."
+    },
+    {
+     "ad": "Kızıl güneş",
+     "x": 0.76,
+     "y": 0.0,
+     "w": 0.1,
+     "h": 0.1,
+     "metin": "Sağ kanadın sol üst köşesinde kararan bulutların arasında kızıl, tutulmuş bir güneş görülür. İncil'de çarmıh sırasında çöken karanlığa gönderme yapar. Hemen altında atlı bir Romalı subay emir veriyor."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q3998985",
+   "sanatci": "anthony-van-dyck",
+   "baslik": "I. Charles'ın Üç Pozisyonda Portresi",
+   "gorsel": "9793a895eb086899",
+   "noktalar": [
+    {
+     "ad": "Tam profil",
+     "x": 0.19,
+     "y": 0.14,
+     "w": 0.14,
+     "h": 0.33,
+     "metin": "Solda siyah giysili kral tam profilden sağa bakıyor. Roma'daki Bernini kralı hiç görmeden mermer büstünü yapacaktı; yüzü yandan görmesi gerekiyordu. Burun ve çene çizgisi heykeltıraşa en çok bu açıdan bilgi verir."
+    },
+    {
+     "ad": "Cepheden yüz",
+     "x": 0.41,
+     "y": 0.17,
+     "w": 0.18,
+     "h": 0.3,
+     "metin": "Ortada kral doğrudan bize bakıyor: yüzün simetrisi ve gözlerin aralığı bu açıdan okunur. Uzun dalgalı saçlar ve sivri sakal üçünde de aynı. Büst 1637'de İngiltere'ye ulaştı, ama 1698'deki Whitehall yangınında yok oldu."
+    },
+    {
+     "ad": "Dörtte üç ve inci küpe",
+     "x": 0.69,
+     "y": 0.17,
+     "w": 0.18,
+     "h": 0.3,
+     "metin": "Sağda kral dörtte üç açıdan sola dönmüş. Kulağında, saçların arasında bir inci küpe parlıyor. Üç açının her biri aynı yüzün farklı bir bilgisini verir; tablo bir çalışma belgesi olarak yapıldı."
+    },
+    {
+     "ad": "Jartiyer yıldızı",
+     "x": 0.92,
+     "y": 0.74,
+     "w": 0.08,
+     "h": 0.22,
+     "metin": "Sağ kenarda mor pelerinin üstünde gümüş ışınlı bir yıldız var: Jartiyer Nişanı'nın göğüs işaretidir. İngiltere'nin en yüksek şövalyelik nişanı kralın konumunu hatırlatır. Tablo bu yüzden bir statü göstergesi olarak da okunur."
+    },
+    {
+     "ad": "Altın madalyon",
+     "x": 0.47,
+     "y": 0.8,
+     "w": 0.08,
+     "h": 0.09,
+     "metin": "Ortadaki figürün göğsünde kurdeleye asılı küçük altın bir madalyon görülür. Bu da Jartiyer Nişanı'na ait bir işarettir. Van Dyck bunu birkaç hızlı fırça darbesiyle belirtir."
+    },
+    {
+     "ad": "Dantel yaka",
+     "x": 0.0,
+     "y": 0.44,
+     "w": 0.27,
+     "h": 0.22,
+     "metin": "Geniş dantel yakalar hızlı, beyaz fırça vuruşlarıyla boyanmış. Yakından bakınca desen çözülür, uzaktan dantel olarak birleşir. Van Dyck'in zarif saray portresi dilinin tipik ayrıntısıdır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q512755",
+   "sanatci": "rembrandt-van-rijn",
+   "baslik": "Müsrif Oğulun Dönüşü",
+   "gorsel": "294a50e3d597e924",
+   "noktalar": [
+    {
+     "ad": "Babanın iki eli",
+     "x": 0.18,
+     "y": 0.51,
+     "w": 0.2,
+     "h": 0.12,
+     "metin": "Baba iki eliyle oğlunun sırtını tutuyor. Bazı yorumcular iki elin birbirinden farklı göründüğünü, birinin daha iri, öbürünün daha ince olduğunu öne sürer ve bunu babalık ile annelik şefkatinin birleşimi olarak okur. Bu yorum yaygındır ama kesin değildir."
+    },
+    {
+     "ad": "Kazınmış baş",
+     "x": 0.22,
+     "y": 0.46,
+     "w": 0.12,
+     "h": 0.09,
+     "metin": "Diz çökmüş oğul başını babasının göğsüne yaslamış. Başı kazınmış, giysisi yırtık; yüzü neredeyse görünmez. Yoksulluğa ve düşkünlüğe düşmüş birinin her şeyini kaybetmiş hâlidir."
+    },
+    {
+     "ad": "Babanın yüzü",
+     "x": 0.22,
+     "y": 0.3,
+     "w": 0.14,
+     "h": 0.13,
+     "metin": "Kırmızı pelerinli yaşlı baba öne eğilmiş, gözleri neredeyse kapalı. Oğlunu görmekten çok dokunarak tanıyor gibidir. Meselin özü koşulsuz bağışlamadır."
+    },
+    {
+     "ad": "Çıplak ayak tabanı",
+     "x": 0.08,
+     "y": 0.86,
+     "w": 0.23,
+     "h": 0.11,
+     "metin": "Oğlun bir ayakkabısı çıkmış, öbürü yıpranmış; çıplak ayak tabanı nasırlı. Uzun yolculuğun ve yoksulluğun en somut işaretidir. Rembrandt bu ayrıntıyı ışığın en sıcak yerine koyar."
+    },
+    {
+     "ad": "Büyük oğul",
+     "x": 0.73,
+     "y": 0.13,
+     "w": 0.17,
+     "h": 0.33,
+     "metin": "Sağda elleri kavuşmuş, aynı kırmızıyı taşıyan uzun boylu adam genellikle büyük oğul olarak yorumlanır. Işıktadır ama kucaklaşmanın dışında kalır. Bu mesafe, meseldeki kırgınlığını hatırlatır."
+    },
+    {
+     "ad": "Oturan bereli adam",
+     "x": 0.58,
+     "y": 0.33,
+     "w": 0.15,
+     "h": 0.16,
+     "metin": "Ortada siyah bereli bir adam oturmuş, sahneyi izliyor. Kimliği tartışmalıdır; bir hizmetkâr ya da tanık olabilir. Karanlıktan zor seçilen öbür yüzlerle birlikte sahnenin sessiz izleyicileridir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q764831",
+   "sanatci": "jan-steen",
+   "baslik": "Aziz Nicholas Yortusu",
+   "gorsel": "b57152776eb43dd1",
+   "noktalar": [
+    {
+     "ad": "Ağlayan oğlan",
+     "x": 0.09,
+     "y": 0.34,
+     "w": 0.25,
+     "h": 0.15,
+     "metin": "Solda şapkalı bir oğlan gözyaşlarını siliyor; hediye yerine yaramaz çocuklara bırakılan dal parçasını almış olmalı. Arkasındaki kız ona gülerek bir şey uzatıyor. Steen'in mizahı sert değil, şefkatlidir: ceza bile oyunun parçası."
+    },
+    {
+     "ad": "Bebek ve şeker kovası",
+     "x": 0.27,
+     "y": 0.53,
+     "w": 0.2,
+     "h": 0.25,
+     "metin": "Ortadaki küçük kız bir oyuncak bebeği sıkıca tutuyor, kolunda şekerlemelerle dolu bir kova var. Bebek bir aziz figürüne benzer; Katolik bir gelenekle ilişkilendirilebilir. Kalvinist yetkililer bu yortuyu hoş görmüyordu, ama halk onu evlerinde kutlamayı sürdürdü."
+    },
+    {
+     "ad": "Perdenin yanındaki yaşlı kadın",
+     "x": 0.49,
+     "y": 0.29,
+     "w": 0.14,
+     "h": 0.13,
+     "metin": "Arkada, yatak perdesinin yanındaki yaşlı kadın gülümseyerek ağlayan çocuğa el ediyor. Belki onun için saklanmış bir armağan vardır. Hikâye böylece mutlu sonla kapanacak gibidir."
+    },
+    {
+     "ad": "Bacayı gösteren oğlan",
+     "x": 0.72,
+     "y": 0.29,
+     "w": 0.23,
+     "h": 0.2,
+     "metin": "Sağda bir oğlan yukarıyı, bacayı gösteriyor; hediyeler oradan gelmiştir. Yanındaki çocuk ağzı açık şarkı söylüyor. Kalabalık oda, Steen'in gürültülü ve canlı aile sahnelerinin tipik örneği."
+    },
+    {
+     "ad": "Yortu ekmeği ve imza",
+     "x": 0.77,
+     "y": 0.73,
+     "w": 0.16,
+     "h": 0.26,
+     "metin": "Sağ altta baklava biçimli büyük bir yortu ekmeği bankın önüne dayanmış. Hemen yanında, zeminde \"JSteen\" imzası okunur. Masadaki çerezler ve kurabiyeler yortunun bolluğunu gösterir."
+    },
+    {
+     "ad": "Çörek sepeti",
+     "x": 0.07,
+     "y": 0.8,
+     "w": 0.27,
+     "h": 0.16,
+     "metin": "Sol altta sepette çörekler, ekmekler ve bir elma var; yerde fındıklar saçılmış. Yortu sofrasının armağanlarıdır. Steen gündelik nesneleri dikkatle boyar, ama onları bir hikâyenin parçası yapar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q3399440",
+   "sanatci": "hyacinthe-rigaud",
+   "baslik": "XIV. Louis'nin Portresi",
+   "gorsel": "2abb7af9be90572c",
+   "noktalar": [
+    {
+     "ad": "Yaşlı yüz",
+     "x": 0.4,
+     "y": 0.16,
+     "w": 0.17,
+     "h": 0.17,
+     "metin": "Kral bize yukarıdan bakıyor; yüz altmışını geçmiş bir adamın gerçekçi, kırışık yüzü. Uzun kıvırcık peruk dönemin saray modasıdır. Yüzdeki yaşlılık ile gövdenin ihtişamı arasındaki karşıtlık resmin en çarpıcı yanıdır."
+    },
+    {
+     "ad": "Ters tutulan asa",
+     "x": 0.15,
+     "y": 0.37,
+     "w": 0.1,
+     "h": 0.2,
+     "metin": "Sağ eli asayı ters çevirmiş, bir baston gibi tutuyor. Kimi yorumculara göre bu gelişigüzel tutuş, iktidarın zahmetsiz ve doğal olduğunu ima eder. Asa taç giyme töreninin nesnelerinden biridir."
+    },
+    {
+     "ad": "Taç ve adalet eli",
+     "x": 0.01,
+     "y": 0.57,
+     "w": 0.25,
+     "h": 0.1,
+     "metin": "Solda yastığın üstünde taç ve ucunda küçük beyaz bir el bulunan adalet asası duruyor. İkisi de taç giyme töreninin nesneleridir. Kralın gücünün Tanrı'dan geldiği düşüncesini vurgular."
+    },
+    {
+     "ad": "Kılıç",
+     "x": 0.5,
+     "y": 0.51,
+     "w": 0.09,
+     "h": 0.1,
+     "metin": "Kralın belinde altın kabzalı bir kılıç var. Kılıç da taç giyme töreninin nesnelerindendir ve kralın koruyucu, savaşçı rolünü anlatır. Kürkün beyazında altın parıltı hemen göze çarpar."
+    },
+    {
+     "ad": "Zambaklar ve kakım kürkü",
+     "x": 0.3,
+     "y": 0.52,
+     "w": 0.15,
+     "h": 0.12,
+     "metin": "Mavi kadife pelerin altın zambaklarla (fleur-de-lis) bezeli; bu, Fransız krallığının amblemidir. Pelerinin içi siyah benekli beyaz kakım kürkü (hermin), yalnızca hükümdarlara ayrılmış bir kürktü. Pelerin kralın bedeninden çok krallığın kendisini giydirir."
+    },
+    {
+     "ad": "Kırmızı topuklar",
+     "x": 0.38,
+     "y": 0.83,
+     "w": 0.2,
+     "h": 0.11,
+     "metin": "Beyaz çoraplar ve tokalı ayakkabıların kırmızı topukları resmin alt ortasında. Kırmızı topuk dönemin saray soyluluğuna özgü bir ayrıcalık işaretiydi. Bacaklar, yaşlı yüzün aksine genç bir dansçınınki gibi zarif gösterilmiş."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q27097122",
+   "sanatci": "charles-le-brun",
+   "baslik": "İskender'in Babil'e Girişi",
+   "gorsel": "db789aea131d0b6d",
+   "noktalar": [
+    {
+     "ad": "Arabadaki İskender",
+     "x": 0.56,
+     "y": 0.18,
+     "w": 0.16,
+     "h": 0.27,
+     "metin": "Altın sarısı pelerini ve tüylü miğferiyle İskender, savaş arabasında ayakta duruyor; elinde bir asa var. Le Brun'ün İskender dizisi, kendini yeni bir İskender olarak sunmak isteyen XIV. Louis'yi yüceltmek için yapıldı. Antik fatih aslında Güneş Kral'dır."
+    },
+    {
+     "ad": "Arabanın kabartması",
+     "x": 0.57,
+     "y": 0.46,
+     "w": 0.14,
+     "h": 0.12,
+     "metin": "Arabanın yan yüzünde beyaz ve altın renkli bir kabartma var: resmin içinde başka bir \"antik\" sahne. Le Brun antik lahit ve kabartmaları dikkatle incelemişti. Bu ayrıntı tarihî doğruluk iddiasını güçlendirir."
+    },
+    {
+     "ad": "Fildeki genç",
+     "x": 0.24,
+     "y": 0.24,
+     "w": 0.17,
+     "h": 0.24,
+     "metin": "Arabayı çeken filin sırtında mavi giysili bir genç oturuyor, kolunu kaldırmış. Alaya hareket ve coşku katar. Fil, Doğu'nun zenginliğini ve fethedilen dünyanın genişliğini simgeler."
+    },
+    {
+     "ad": "Asma bahçeler",
+     "x": 0.75,
+     "y": 0.1,
+     "w": 0.16,
+     "h": 0.16,
+     "metin": "Sağ üstte tepesinde ağaçlar bulunan yuvarlak, katlı bir yapı yükseliyor. Babil'in ünlü Asma Bahçeleri'ni çağrıştıran hayalî bir mimaridir. Arka plandaki sütunlar ve kemerler sahneyi bir tiyatro dekoru gibi kurar."
+    },
+    {
+     "ad": "Altın vazo",
+     "x": 0.6,
+     "y": 0.56,
+     "w": 0.22,
+     "h": 0.24,
+     "metin": "Yarı çıplak taşıyıcılar omuzlarında altın bir vazo taşıyor. Ganimet ve armağanlar, fethedilen kentin boyun eğişini gösterir. Taşıyıcıların kaslı bedenleri Akademi'nin antik model anlayışını yansıtır."
+    },
+    {
+     "ad": "Tüten buhurdan",
+     "x": 0.9,
+     "y": 0.72,
+     "w": 0.1,
+     "h": 0.25,
+     "metin": "Sağ altta ayaklı bir buhurdandan duman yükseliyor. Tütsü, bir zafer alayına ve tanrısal bir karşılamaya eşlik eder. Doğu'nun lüksünü anlatan bir başka ayrıntıdır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1140358",
+   "sanatci": "nicolas-poussin",
+   "baslik": "Arkadya'da Ben de Varım",
+   "gorsel": "22120cc801296cf0",
+   "noktalar": [
+    {
+     "ad": "Yazıt ve gölge",
+     "x": 0.4,
+     "y": 0.52,
+     "w": 0.14,
+     "h": 0.12,
+     "metin": "Mezar taşında silik \"ET IN ARCADIA EGO\" yazıtı okunur. Diz çöken çobanın parmağının hemen yanında başının ve kolunun gölgesi taşa düşer; kimi yorumcular bu gölgede ölümün imgesini görür. Kafatası yok, ölüm yalnızca bir yazı ve bir gölgeyle sezdirilir."
+    },
+    {
+     "ad": "Harfleri izleyen çoban",
+     "x": 0.33,
+     "y": 0.49,
+     "w": 0.1,
+     "h": 0.12,
+     "metin": "Sakallı çoban diz çökmüş, parmağıyla yazıyı harf harf izliyor. Yazıt dilbilgisi açısından \"Arkadya'da bile ben (ölüm) varım\" diye okunabilir. Çoban, mutlu diyarda ölümle ilk karşılaşmanın şaşkınlığı içindedir."
+    },
+    {
+     "ad": "Soran genç",
+     "x": 0.48,
+     "y": 0.34,
+     "w": 0.09,
+     "h": 0.11,
+     "metin": "Sağdaki genç çoban bir eliyle yazıyı gösteriyor, ama yüzünü kadına çevirmiş. Sanki bir açıklama bekliyor. Soru ile cevap arasındaki sessiz diyalog bakışlarla kurulur."
+    },
+    {
+     "ad": "Kadın ve omuzdaki el",
+     "x": 0.57,
+     "y": 0.21,
+     "w": 0.14,
+     "h": 0.18,
+     "metin": "Sarı-mavi giysili kadın bir elini gencin omzuna koymuş, sakin bir ifadeyle bakıyor. Kimliği tartışmalıdır; kimi yorumcular onu bir alegori olarak okur. Antik heykel gibi dik ve dingin duruşu Poussin'in klasisizminin örneğidir."
+    },
+    {
+     "ad": "Düşünceli çoban",
+     "x": 0.21,
+     "y": 0.27,
+     "w": 0.22,
+     "h": 0.15,
+     "metin": "Soldaki çoban mezara yaslanmış, başını eğmiş düşünüyor. Dört figür mezarın çevresinde dengeli, kabartma gibi bir düzende yerleşmiş. Poussin duyguyu jestlerin ölçülü diliyle anlatır."
+    }
+   ]
   }
  ]
 }
