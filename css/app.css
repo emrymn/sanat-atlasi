@@ -15418,3 +15418,14 @@ li.gorundu .konu-deste i:nth-child(2) {
   font: 500 13px/1.35 var(--sans);
   color: var(--ink-2);
 }
+/* İş 136b (Emre: sade akım kartı denemesi için "önceki hali daha iyi, ama resimleri ortalı değil, onu düzelt"):
+   Galeri'deki dönem kartlarının üç küçük eseri kartın ortasında */
+.zaman-kart .onizleme {
+  justify-content: center;
+}
+/* ortalanan resimler sağ alttaki oka değmesin: ok kartın sağında, dikey ortada */
+.zaman-kart .zaman-ok {
+  top: 50%;
+  bottom: auto;
+  translate: 0 -50%;
+}
