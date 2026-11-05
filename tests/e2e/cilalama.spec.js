@@ -412,9 +412,12 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
     r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, adres: 'https://pub-deneme.r2.dev', buyuk: false, devasa: adlar, devasa_bayt: 3e9 }) }),
   );
   let bekle = 250;
+  let tut = null; // yeniden yüklemede görseller bekletilir (bkz. aşağı)
   await context.route(/pub-deneme\.r2\.dev\/d\//, async (r) => {
     await new Promise((c) => setTimeout(c, bekle));
-    return r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)), headers: { 'access-control-allow-origin': '*' } });
+    if (tut) await tut;
+    // sayfa yenilenince bekletilen istek düşer: yanıt verilemez
+    return r.fulfill({ status: 200, contentType: 'image/png', body: readFileSync(new URL('../fixtures/eser.png', import.meta.url)), headers: { 'access-control-allow-origin': '*' } }).catch(() => {});
   });
   await page.goto('./#/sanatci/giotto-di-bondone');
   await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller), { timeout: 15000 }).toBe(true);
@@ -439,17 +442,25 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
   // indirme sürerken uygulama kapanır (yeniden yükleme): açılınca kendiliğinden kaldığı yerden sürer
   // İş 124: kalanlar 2'şerlik parçalarla iner; her parçadan sonra (Ayarlar açıksa) uygulama yenilenip sıradakine geçer
   await page.addInitScript(() => (window.__atlasParca = 2));
-  bekle = 600;
-  const once = await telefonda();
+  // Belirlenimci olsun diye (İş 143): yeniden yükleme sürerken görsel yanıtları bekletilir. Yoksa eski sayfa yenilenirken
+  // bir iki görsel daha bitirebiliyordu; aşağıdaki "+2" beklemesi yeni sayfa daha indirmeye (ve günlüğe yazmaya, açılıştan
+  // 4 sn sonra) başlamadan geçiyor, günlük denetimi erken kalıyordu. Bekletilince parça bitemez: iz ve işaret kesin kalır.
+  let birak;
+  tut = new Promise((c) => (birak = c));
   expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBe('1');
+  await expect.poll(() => page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-iz'))).not.toBeNull(); // indirme sürüyor
   await page.reload();
+  tut = null;
+  birak();
+  bekle = 600;
+  // yeni sayfanın kendi indirmesi açılıştan 4 sn sonra başlar: o ana dek sayı değişmez
+  const once = await telefonda();
+  expect(once).toBeGreaterThanOrEqual(3);
   // Defter'de açıldı: yalnız bir parça (2 görsel) kendiliğinden iner, uygulama kullanıcı başka sayfadayken yenilenmez
-  // (yeniden yüklemeden hemen önce bir görsel daha bitmiş olabilir: +1 pay)
   await expect.poll(telefonda, { timeout: 30000 }).toBeGreaterThanOrEqual(Math.min(n, once + 2));
   await page.waitForTimeout(2500);
-  // Ayarlar dışında hepsi inmeden durur (uygulama kendini yenilemez, işaret kalır); yük altında yeniden yüklemeden hemen
-  // önce bir iki görsel daha bitebilir, kesin sayı denetlenmez
-  expect(await telefonda()).toBeLessThan(n);
+  // Ayarlar dışında hepsi inmeden durur (uygulama kendini yenilemez, işaret kalır)
+  expect(await telefonda()).toBe(Math.min(n, once + 2));
   expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBe('1');
   expect(once).toBeLessThan(n);
   // İş 123: yarıda kalan indirme (uygulama kapandı) hata günlüğüne kaçıncı görselde kaldığıyla yazılır; iz silinir
