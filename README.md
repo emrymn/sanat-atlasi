@@ -186,7 +186,7 @@ Telefonda: Ayarlar → **En büyük kopyaları telefona indir** → yenilenenler
 
 Ayrıntılar KARARLAR.md'de (İş 135–151).
 
-- **Rehberli eser incelemesi (İş 151, 1.71.0, pilot):** 20 başyapıtın görüntüleyicisinde "İncele": tablonun üstünde 4–6 numaralı nokta, dokununca o bölge en büyük kopyadan yakınlaşır, altta 2–3 cümle; Önceki / Sonraki / Bitir. Başyapıt sayfasında "Rehberli inceleme" düğmesi. Kalan 87 eser için devir dosyaları `scripts/ayrinti/`.
+- **Rehberli eser incelemesi (İş 151, 1.71.0, pilot; İş 152, 1.71.1):** 40 başyapıtın görüntüleyicisinde "İncele": tablonun üstünde 4–6 numaralı nokta, dokununca o bölge en büyük kopyadan yakınlaşır, altta 2–3 cümle; Önceki / Sonraki / Bitir. Başyapıt sayfasında "Rehberli inceleme" düğmesi. Kalan 67 eser için devir dosyaları `scripts/ayrinti/`.
 
 - **Veri güvenliği (İş 135, 143):** ilerleme iki depoda (localStorage + IndexedDB) tutulur; hiçbir kopya silinmez, açılışta kayıt numarası büyük olan okunur; iki depo da yazamazsa uyarı çıkar; okunamayan ilerlemenin üzerine yazılmaz. İndirmelerde zaman aşımı ve gerçek "Durdur"; eski önbellekten taşırken yer biterse görseller korunur. Yavaş ağda açılış beklemez.
 - **Görünüm (İş 136, 146, 147):** eserin rengi yalnız vurgularda; eser, başyapıt ve konu kartları aynı düzende (görsel → ad → sanatçı · yıl); ince çerçeveler; köşeler üç ölçüde (görsel 4, kart 14, yaprak 24 px); sanatçı sayfasında bölümler ince çizgiyle ayrılır.

@@ -1765,3 +1765,7 @@ Sürüm 1.64.0 (İş 119–121).
   - **Testler:** `tests/unit/ayrinti.test.mjs` (7), `tests/e2e/ayrinti.spec.js` (3: tam akış, kayıt yokken, sanatçı sayfasından ve eser değişince kapanma). Sürüm testleri 1.71.0'a; `js/ayrinti.js` service worker kabuğunda.
   - Seçilmeyenler: Tuval'in günün tablosunda ve pekiştirme cevabında inceleme (ikinci tur); Gündüz temasında görüntüleyici zaten Gece paletinde (İş 141), panel ona göre; gerçek iPhone'da denenmedi.
 
+- İş 152 (Emre: "DEVIR.md'yi oku ve sıradaki partiyi yap"). Sürüm 1.71.1.
+  - **Rehberli inceleme, Parti 1:** `data/eser_ayrintilari.json`'a 20 başyapıt daha (Berlinghieri, Cimabue, Duccio, P. Lorenzetti, Simone Martini, Limbourg, Gentile, Michelino, Mantegna, Dürer, Christus, Metsys, Baldung, Cranach, Michelangelo, Bramante, Correggio, Raimondi, Tintoretto, Veronese): 115 nokta, toplam 40 / 107 eser, 234 nokta. Her eserde kaydın `bak` ayrıntıları noktalara alındı; metinler kaydın kendi olgularına dayanır, tartışmalı yorumlar yumuşatıldı.
+  - İki aşamalı doğrulama: 1280'de ızgarayla seçim, 4096'dan kontak sayfası; 4 kutu düzeltildi (Simone Martini'nin altın yazısı, Duccio'nun pelerini, Raimondi'nin Zafer'i, Cranach'ın ayakları). 4096'lığı olmayan 5 eser 1280'den doğrulandı. Emin olunmayanlar ve Parti 2 için hazır istem `scripts/ayrinti/DEVIR.md` "Tur 2"de.
+  - Kod değişmedi; yalnız veri, DURUM/DEVIR, README satırı ve sürüm (yama: `sw.js`, `js/surum.js`, sürüm testleri). Yenilikler notuna satır eklenmedi (yalnız veri genişlemesi).
