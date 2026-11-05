@@ -67,6 +67,8 @@ import {
   guncelMi,
   kucukKareleriDoldur,
   tabloDugme,
+  gununId,
+  gununEseri,
 } from './ortak.js';
 import { akimIstatistigi, seviyeIziHtml } from './pano.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
@@ -126,7 +128,7 @@ function turSahnesi(karisik) {
   const hedefler = [...new Set([...HEDEFLER, hedef])].sort((x, y) => x - y);
   const kapak = deste[0] ? deste[0].s : acikListe()[0];
   return `<section class="pk-sahne" aria-label="Bugünkü karışık tur">
-      <div class="pk-resim" aria-hidden="true">${kapak ? `<span data-kucuk="${kacis(kapak.id)}" data-genislik="960"></span>` : ''}</div>
+      <div class="pk-resim" aria-hidden="true" data-pk-gunun></div>
       <div class="pk-ust">${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}</div>
       <div class="pk-deste${deste.length ? '' : ' bos'}" aria-hidden="true">${deste
         .map((x, i) => `<span class="pk-kart" style="--i:${i}"><span class="kucuk-kare" data-kucuk="${kacis(x.s.id)}"></span></span>`)
@@ -232,8 +234,23 @@ export function pekistirMenusu() {
     }`,
   );
   kucukKareleriDoldur();
+  atolyeResmiDoldur();
   devamResmiDoldur();  // telefonu çevirince bugünkü turun destesi yelpaze açılır (İş 47; Ayarlar'daki hareket seçimine uyar)
   desteBaslat(ekran.querySelector('.pk-sahne'), d.ilerleme.ayarlar.egim !== false);
+}
+
+// Atölye sahnesinin arkası günün tablosu: ekranın renkleri (gununRengi) de bu tablodan çıktığı için zemin ve resim aynı paletten
+function atolyeResmiDoldur() {
+  const kutu = ekran.querySelector('[data-pk-gunun]');
+  const s = d.harita.get(gununId());
+  if (!kutu || !s) return;
+  sanatciEserleri(s)
+    .then(gununEseri)
+    .then((e) => {
+      if (!e || !kutu.isConnected) return;
+      const g = secilenGorsel(e, kotuler());
+      kutu.innerHTML = `<img decoding="async" alt="" src="${kacis(gorselUrl(g, 960))}" data-yedek="${kacis(gorselYedek(g))}">`;
+    });
 }
 
 // Sıralama ve hedef değişince menü yerinde yeniden çizilir; kaydırma yeri korunur

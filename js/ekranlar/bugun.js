@@ -290,8 +290,9 @@ function paletZemini(p) {
   const koyu = hsl(zemin)[2] < 0.5;
   const ayarla = (r) => {
     const [h, sa, l] = hsl(r);
-    // koyu temada açıklık %18–38 arası, açık temada en az %80
-    return karistir(hsldenHex(h, Math.min(sa, 0.65), koyu ? Math.max(0.18, Math.min(l, 0.38)) : Math.max(l, 0.8)), zemin, 0.85);
+    // koyu temada açıklık %18–38 arası; açık temada %58–76: resmin rengi gece modundaki kadar seçilsin, koyu yazı okunur kalsın
+    if (koyu) return karistir(hsldenHex(h, Math.min(sa, 0.65), Math.max(0.18, Math.min(l, 0.38))), zemin, 0.85);
+    return karistir(hsldenHex(h, Math.min(Math.max(sa, 0.12), 0.6), Math.max(0.58, Math.min(l, 0.76))), zemin, 0.3);
   };
   const n = p.length;
   let y = 0;
@@ -340,7 +341,7 @@ export function donemCizelgesi(akim) {
   const onceki = d.akimlar[i - 1];
   const sonraki = d.akimlar[i + 1];
   const bag = (a, metin, sinif) => (a ? `<a class="${sinif}" href="#/akim/${encodeURIComponent(a.ad)}">${metin}</a>` : `<span class="${sinif}"></span>`);
-  return `<nav class="donem" aria-label="Akım zaman çizelgesi">
+  return `<nav class="donem" aria-label="Ak��m zaman çizelgesi">
       ${bag(onceki, `← ${kacis(onceki ? onceki.ad : '')}`, 'once')}
       <a class="simdi" href="#/akim/${encodeURIComponent(akim)}">${kacis(akim)}</a>
       ${bag(sonraki, `${kacis(sonraki ? sonraki.ad : '')} →`, 'sonra')}

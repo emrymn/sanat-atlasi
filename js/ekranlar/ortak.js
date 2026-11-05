@@ -40,8 +40,8 @@ function zeminiBoya(palet) {
     return TEMA_RENK[d.ilerleme.ayarlar.tema] || TEMA_RENK.gece;
   }
   const renkler = cesitliRenkler(uygun);
-  const bg = tonla(renkler[0], 0.82, 0.38);
-  const yuzey = tonla(renkler[1] || renkler[0], 0.87, 0.34);
+  const bg = tonla(renkler[0], 0.78, 0.5);
+  const yuzey = tonla(renkler[1] || renkler[0], 0.84, 0.44);
   const yuzeyRgb = hexten(yuzey).join(', ');
   st.setProperty('--bg', bg);
   st.setProperty('--bg-rgb', hexten(bg).join(', '));
@@ -49,7 +49,7 @@ function zeminiBoya(palet) {
   st.setProperty('--tab-bg', `rgba(${yuzeyRgb}, 0.86)`);
   st.setProperty('--overlay-btn', `rgba(${yuzeyRgb}, 0.85)`);
   st.setProperty('--golge-rgb', hexten(golgeTonu(uygun)).join(', '));
-  for (let i = 0; i < 3; i++) st.setProperty(`--boya-${i + 1}`, hexten(tonla(renkler[i % renkler.length], 0.55, 0.58)).join(', '));
+  for (let i = 0; i < 3; i++) st.setProperty(`--boya-${i + 1}`, hexten(tonla(renkler[i % renkler.length], 0.52, 0.68)).join(', '));
   return bg;
 }
 
