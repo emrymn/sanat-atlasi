@@ -130,6 +130,24 @@ export function notuIcin(sanatciId) {
 }
 
 // Izgara küçük görseli: 400 px; açılmazsa (ör. çevrimdışı) 800 px denenir
+// İş 143: görsel hemen (varsayılan kırpmayla) gösterilir; odak verisi gelince kırpma yüze kayar. Veri gecikse ya da
+// hiç gelmese de görsel beklemez. Öğe ekrandan ayrılmış olsa da (sekme belleğine alınmış sayfa) doldurulur.
+export function odakliGorsel(el, e, genislik) {
+  el.innerHTML = kucukGorsel(e, genislik, { odak: true });
+  odagaKaydir(el, secilenGorsel(e, kotuler()) || e.gorseller[0]);
+}
+// el içindeki görselin kırpmasını g'nin odağına kaydırır (odak verisi gelince)
+export function odagaKaydir(el, g) {
+  odaklariYukle().then(() => {
+    const img = el.querySelector('img');
+    const o = img && gorselOdagi(g);
+    if (o) {
+      img.style.objectPosition = o;
+      img.style.transformOrigin = o;
+    }
+  });
+}
+
 // odak: true → kırpılan görsel yüzün çevresinden kırpılır (İş 137; odak verisi yüklenmişse)
 let odakSozu = null;
 export function odaklariYukle() {

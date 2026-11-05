@@ -25,6 +25,12 @@ export function eserTurleriniAyarla(t) {
   bellek.clear();
 }
 
+// Eserin yılı sanatçının yaşamıyla çelişiyor mu (ölümünden 2 yıldan sonra ya da 12 yaşından önce)
+export function yilSupheliMi(yil, s) {
+  if (!Number.isInteger(yil) || !s) return false;
+  return (Number.isInteger(s.olum) && yil > s.olum + 2) || (Number.isInteger(s.dogum) && yil < s.dogum + 12);
+}
+
 function tarihYaz(yil) {
   return yil === null || yil === undefined ? '' : yilYaz(yil);
 }
@@ -268,6 +274,9 @@ export function sanatciEserleri(sanatci, { canli = true } = {}) {
       const eserler = kopyalariAyikla(sanatci.id, cikarilanlariAyikla(liste));
       for (const e of eserler) {
         e.sid = sanatci.id;
+        // İş 143: sanatçının yaşamıyla çelişen Wikidata yılı gösterilmez (çoğu "15. yüzyıl" gibi yüzyıl hassasiyetinde
+        // girilmiş tarihin 1500 diye okunması; kalanı kopya/atölye işi olabilir). Düzeltilmez: referans/tarih_inceleme.md
+        if (yilSupheliMi(e.yil, sanatci) && e.tarih === tarihYaz(e.yil)) (e.yil = null), (e.tarih = '');
         const ad = eserAdiBul(sanatci.id, e);
         if (ad && ad !== e.baslik) e.ad = ad;
       }

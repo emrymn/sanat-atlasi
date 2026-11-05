@@ -67,7 +67,7 @@ import {
   guncelMi,
   kucukKareleriDoldur,
   tabloDugme,
-  odaklariYukle,
+  odakliGorsel,
 } from './ortak.js';
 import { akimIstatistigi, seviyeIziHtml } from './pano.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
@@ -195,7 +195,8 @@ function hepsiSalonu(acik, turYazi) {
     </a></li>`;
 }
 
-export function pekistirMenusu() {
+export function pekistirMenusu(secenek) {
+  if (!(secenek && secenek.ayniZiyaret === true)) yeniZiyaret = true; // İş 143: yeni ziyaret yeni tablo
   const durumlar = akimDurumlari(d.akimlar, d.sanatcilar, islenen()).filter((a) => a.acik);
   // her satırda o turun kart sayısı (D1): turu açınca sayaç aynı sayıyı gösterir
   const turYazi = (t) => `${t.toplam} kart${t.tekrar ? ` · ${t.tekrar} tekrar` : ''}`;
@@ -243,8 +244,15 @@ export function pekistirMenusu() {
 // sanatçılarla kronolojik başladığı için hep aynı tablo). Artık Atölye her açılışta açık sanatçılardan (işlenen
 // konular: bulunulan konu ve öncekiler) rastgele birinin en bilinen sekiz eserinden rastgele biri; bir önceki
 // açılıştaki sanatçı yeniden seçilmez. Tablo yüzün çevresinden kırpılır (İş 137).
+// İş 143: seçilen tablo Atölye ziyareti boyunca sabit (hedef ya da sıralama değişince menü yeniden çizilir; tablo
+// değişmez); bir sonraki ziyarette yenisi. Görsel odak verisini beklemez; sayfa belleğe alınmışsa da doldurulur.
 let sonKapak = null;
+let ziyaretKapagi = null; // { sid, anahtar }
+let yeniZiyaret = true;
 function kapakSanatcisi() {
+  if (!yeniZiyaret && ziyaretKapagi && d.harita.get(ziyaretKapagi.sid)) return d.harita.get(ziyaretKapagi.sid);
+  yeniZiyaret = false;
+  ziyaretKapagi = null;
   const l = acikListe();
   if (!l.length) return null;
   const adaylar = l.length > 1 ? l.filter((s) => s.id !== sonKapak) : l;
@@ -256,11 +264,14 @@ function kapakDoldur() {
   const el = ekran.querySelector('[data-pk-kapak]');
   const s = el && d.harita.get(el.dataset.pkKapak);
   if (!s) return;
-  Promise.all([sanatciEserleri(s), odaklariYukle()])
-    .then(([eserler]) => {
+  sanatciEserleri(s)
+    .then((eserler) => {
       const uygun = bilinirlikSirasi(eserler.filter((e) => secilenGorsel(e, kotuler()) && e.pekistirme !== false)).slice(0, 8);
-      const e = uygun[Math.floor(Math.random() * uygun.length)];
-      if (e && el.isConnected) el.innerHTML = kucukGorsel(e, 960, { odak: true });
+      const onceki = ziyaretKapagi && ziyaretKapagi.sid === s.id && uygun.find((e) => e.anahtar === ziyaretKapagi.anahtar);
+      const e = onceki || uygun[Math.floor(Math.random() * uygun.length)];
+      if (!e) return;
+      ziyaretKapagi = { sid: s.id, anahtar: e.anahtar };
+      odakliGorsel(el, e, 960);
     })
     .catch(() => {});
 }
@@ -268,7 +279,7 @@ function kapakDoldur() {
 // Sıralama ve hedef değişince menü yerinde yeniden çizilir; kaydırma yeri korunur
 function menuyuYenile() {
   const y = window.scrollY;
-  pekistirMenusu();
+  pekistirMenusu({ ayniZiyaret: true });
   window.scrollTo(0, y);
 }
 
