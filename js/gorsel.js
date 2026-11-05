@@ -180,6 +180,24 @@ let odaklar = null;
 export function odaklariAyarla(veri) {
   odaklar = veri && veri.odak && typeof veri.odak === 'object' ? veri.odak : null;
 }
+// Ham odak [x, y] (yüzde) ya da null
+export function gorselOdakNoktasi(g) {
+  const ad = g && odaklar && yerel[yerelAnahtar(g)];
+  const o = ad && odaklar[ad];
+  return Array.isArray(o) && o.length === 2 && o.every((n) => Number.isFinite(n) && n >= 0 && n <= 100) ? o : null;
+}
+// İş 144: kutuyu kaplayan (cover) görselde odağın kutudaki hedef noktaya (hx, hy: 0–1) gelmesi için görselin kayması
+// (px); kenarlar hep kutuyu kaplar. Dönen: { x, y, ox, oy } (ox/oy odağın kutudaki yeri, px) ya da null
+export function kaplamaKaymasi(dogal, kutu, odak, hedef = [0.5, 0.4]) {
+  if (!odak || !dogal.w || !dogal.h || !kutu.w || !kutu.h) return null;
+  const k = Math.max(kutu.w / dogal.w, kutu.h / dogal.h);
+  const w = dogal.w * k;
+  const h = dogal.h * k;
+  const sinirla = (v, en) => Math.min(0, Math.max(en, v));
+  const x = sinirla(kutu.w * hedef[0] - (odak[0] / 100) * w, kutu.w - w);
+  const y = sinirla(kutu.h * hedef[1] - (odak[1] / 100) * h, kutu.h - h);
+  return { x, y, ox: x + (odak[0] / 100) * w, oy: y + (odak[1] / 100) * h };
+}
 export function gorselOdagi(g) {
   const ad = g && odaklar && yerel[yerelAnahtar(g)];
   const o = ad && odaklar[ad];

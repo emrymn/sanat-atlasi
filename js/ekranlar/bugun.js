@@ -3,7 +3,7 @@ import { kacis } from '../yardimci.js';
 import { vadesiGeldiMi, GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { turOzeti, turAltYazisi } from '../oturum.js';
 import { sanatciEserleri, eserBaslik } from '../eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel } from '../gorsel.js';
+import { gorselUrl, gorselYedek, secilenGorsel, gorselOdakNoktasi, kaplamaKaymasi } from '../gorsel.js';
 import { baskaSanatci } from '../gunun.js';
 import { gunlukGuncelle, yedekMetni, yedekHatirlatmasi } from '../depo.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
@@ -33,6 +33,7 @@ import {
   gununEseri,
   akimRenk,
   kotuler,
+  odaklariYukle,
   jsonGetir,
   hataGoster,
   geriDugmesi,
@@ -278,6 +279,26 @@ async function gununKartGorseli(s) {
     'afterbegin',
     `<img decoding="async" alt="${kacis(`${s.ad}, ${eserBaslik(e)}`)}" src="${kacis(url)}" data-yedek="${kacis(gorselYedek(g))}">`,
   );
+  tuvalOdagi(kutu, kutu.querySelector('img'), g);
+}
+
+// İş 144 (ChatGPT'nin önerisi): Tuval'in tablosu yüz ekranın üst yarısında (adın çok üstünde) kalacak biçimde kaydırılır;
+// önce hep %50 %30'dan kırpılıyordu (yüz kesilebiliyor ya da adın altında kalabiliyordu). Yüz bulunmayan tabloda eskisi gibi.
+// Yakınlaşma ve eğim yüzün çevresinde olur (transform-origin).
+const TUVAL_HEDEF = [0.5, 0.36];
+function tuvalOdagi(kutu, img, g) {
+  if (!img) return;
+  const uygula = () => {
+    const odak = gorselOdakNoktasi(g);
+    const r = kutu.getBoundingClientRect();
+    const k = kaplamaKaymasi({ w: img.naturalWidth, h: img.naturalHeight }, { w: r.width, h: r.height }, odak, TUVAL_HEDEF);
+    if (!k) return;
+    img.style.objectPosition = `${k.x.toFixed(1)}px ${k.y.toFixed(1)}px`;
+    img.style.transformOrigin = `${k.ox.toFixed(1)}px ${k.oy.toFixed(1)}px`;
+  };
+  const hazir = img.complete && img.naturalWidth ? Promise.resolve() : new Promise((coz) => img.addEventListener('load', coz, { once: true }));
+  Promise.all([hazir, odaklariYukle()]).then(uygula);
+  window.addEventListener('resize', () => img.isConnected && uygula());
 }
 
 // Sahnenin altı tablonun devamı gibi: resmin paletinden keskin kenarlı bloklar (Mondrian'vari mozaik).
