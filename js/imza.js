@@ -219,7 +219,9 @@ export function yazmaZamanlari(yol) {
   return agirlik.map((a) => (birikim += a / top));
 }
 
-const azHareket = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+const azHareket = () =>
+  (typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches) ||
+  (typeof document !== 'undefined' && document.documentElement.dataset.hareket === 'kapali'); // İş 148
 
 // İmza kalemle yazılıyormuş gibi soldan sağa belirir (--yaz: maskenin açık kısmı); parlayan kalem ucu mürekkebi izler,
 // mürekkebin yüksekliğine göre iner çıkar. Bitince uç söner, imzanın üstünden bir kez ışık kayar (.yazildi).

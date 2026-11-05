@@ -2,14 +2,14 @@
 
 Kenney Mencher'in *Art History: Renaissance to 20th Century* kursuyla birlikte büyüyen, kişisel sanat tarihi çalışma uygulaması. iPhone'da ana ekrana eklenen bir **PWA**; sunucu, hesap ya da analiz yok — yalnızca statik dosyalar.
 
-Görünüm: **“Kadife ve resim rengi”** — kadife gibi koyu zemin, Bodoni Moda başlıklar; her ekranın vurgu rengi o an gösterilen eserin kendi renklerinden çıkarılır. Alttaki sekme çubuğu: **Bugün · Göz At · Pekiştir · İlerleme**.
+Görünüm: müze kataloğu gibi sakin bir zemin, Bodoni Moda başlıklar; tablolar tam renkleriyle, ekranın vurgu rengi (seçili sekme, dolu düğmeler, ilerleme çizgileri) o an gösterilen eserin kendi renklerinden. Alttaki sekme çubuğu: **Tuval · Yolculuk · Galeri · Atölye · Defter**.
 
-- **Bugün:** Günün sanatçısının en bilinen eseri ekranın üstünü kaplar; adı, “Resmin renkleri” şeridi, Pekiştir düğmeleri, son çalıştığın sanatçılar.
-- **Göz At:** akımlar kronolojik sırada → sanatçılar → sanatçı sayfası (eserlerin kırpılmadan yatay galerisi, notların, “Nasıl tanırım?”, dönem çizelgesi) → tam ekran görüntüleyici (iki parmakla yakınlaştır, kaydırarak eserler arasında geç; resim hiç kırpılmaz).
-- **Pekiştir · Döneme göre:** bir akım (ya da “Hepsi, dönem sırasıyla”) seç; “Bu eser kimin?”
-- **Pekiştir · Karışık:** tüm açık sanatçılar; her kartta önce “Bu eser kimin?”, sonra “Hangi akım?”. Cevaptan sonra alttan bir yaprak sonucu, kısa bilgiyi ve ipucunu gösterir.
-- **İlerleme:** işlediğin konuları “işlendi” yap → o konunun sanatçıları açılır. Akımlara göre doğruluk, en zayıf sanatçılar. Sağ üstteki dişliyle **Ayarlar**.
-- **Ayarlar:** günlük kart sayısı, tema (**Gece** varsayılan / Sepya / Açık), görselleri çevrimdışı indirme, yedekle / geri yükle.
+- **Tuval:** günün sanatçısının en bilinen eseri ekranı kaplar (yüz kesilmeyecek biçimde yerleşir); kaydırdıkça hayatı, “Nasıl tanırım?”, eserleri ve resmin renkleri.
+- **Yolculuk:** kursun bölümleri boyalı bir harita; durakların her biri bir bölüm turu, saklı motifler eserlerin hikâyeleri. Harita ekranın kenarlarına ve dibine kadar.
+- **Galeri:** Akımlar (dönem koridoru) · Başyapıtlar (yakın okumalar) · Konular (ikonografi hikâyeleri) · Zaman; arama. Sanatçı sayfası: eserler, notların, “Nasıl tanırım?”, yakın okuma, dönem çizelgesi → tam ekran görüntüleyici (yakınlaştır, kaydırarak geç).
+- **Atölye:** bugünkü karışık tur, dönem salonları, Hatalarım, Bölüm ve Konu turları; arkada açık sanatçılardan rastgele bir tablo (ziyaret boyunca aynı). Karışıkta her kartta önce “Bu eser kimin?”, sonra “Hangi akım?”; cevaptan sonra alttan bir yaprak.
+- **Defter:** işlediğin konuları “işlendi” yap → o konunun sanatçıları açılır; çalışma takvimi, akımlara göre doğruluk, en zayıf sanatçılar. Sağ üstteki dişliyle **Ayarlar**.
+- **Ayarlar:** tur uzunluğu, tema (**Gece** varsayılan / **Gündüz**), **yazı boyutu** (Standart / Büyük), **hareket** (Tam / Sade / Kapalı), titreşim, telefonu eğince tablo hareketi, görselleri telefona indirme, yedekle / geri yükle, hata günlüğü, geliştirici modu (açıkken elle odak işaretleme).
 
 Yanlış yaptığın sanatçılar aynı turda 3–5 kart sonra tekrar gelir; sonra Leitner kutularıyla (1, 3, 7, 14, 30 gün) aralıklı tekrar edilir.
 
@@ -42,6 +42,7 @@ npm run test:unit              # node:test — çeldirici, Leitner, kilit, Wikid
 npm run test:e2e               # Playwright, 390×844 (iPhone 13); dış istekler fikstürle
 node scripts/onbellek.mjs      # data/eserler_onbellek.json'u tüm kaynaklardan yeniden üretir (aşağıya bak)
 node scripts/ikonlar.mjs       # icons/ikon.svg'den PNG ikonlar
+python3 scripts/odak.py        # data/gorsel_odak.json: 400'lüklerde yüz bulur (pip install opencv-python-headless)
 ```
 
 ### Eser önbelleği ve kaynaklar
@@ -101,7 +102,7 @@ WIKIART_ACCESS_KEY=… WIKIART_SECRET_KEY=… node scripts/kaynaklar/wikiart.mjs
 UYGULA=1 node scripts/kaynaklar/wikiart.mjs                                      # ağa gitmeden data/wikiart.json'ı önbelleğe uygular
 ```
 
-**Sürüm çıkarırken:** `sw.js` içindeki `SURUM` değerini artır (yoksa telefondaki önbellek eski dosyaları vermeye devam eder). Yeni bir `js/` dosyası eklersen `sw.js`'deki listeye de ekle (birim testi bunu denetler).
+**Sürüm çıkarırken:** `sw.js` ve `js/surum.js` içindeki `SURUM` değerini birlikte artır (yoksa telefondaki önbellek eski dosyaları vermeye devam eder; birim testi ikisinin aynı olduğunu denetler). Görünür bir değişiklikse `js/yenilikler.js`'nin başına bir satır ekle. Yeni bir `js/` dosyası eklersen `sw.js`'deki listeye de ekle (birim testi bunu denetler).
 
 ### Dosyalar
 
@@ -111,7 +112,9 @@ UYGULA=1 node scripts/kaynaklar/wikiart.mjs                                     
 | `sw.js`, `manifest.webmanifest`, `icons/` | PWA |
 | `data/*.json` | İçerik (sanatçılar, akımlar, konular, başlangıç ilerlemesi) |
 | `data/eserler_onbellek.json` | Wikidata QID'leri ve eser listeleri (derleme zamanı önbelleği; olmasa da çalışır) |
-| `data/gorsel_odak.json` | Görsellerin odak noktası (tablodaki yüzler, `scripts/odak.py`): kırpılan görsel yüzün çevresinden kırpılır |
+| `data/gorsel_odak.json` | Görsellerin odak noktası (tablodaki yüzler, `scripts/odak.py`, OpenCV YuNet): kırpılan görsel yüzün çevresinden kırpılır |
+| `data/gorsel_odak_elle.json` | Elle seçilen odaklar (otomatik odağın önüne geçer); geliştirici modunda görüntüleyicide işaretlenip Ayarlar'dan kopyalanır |
+| `referans/tarih_inceleme.md` | Yılı sanatçının yaşamıyla çelişen 106 eser (uygulamada yılları gizli; elle bakılacak) |
 | `data/wikiart.json` | WikiArt'tan derleme zamanında alınan eserler (başlık, yıl, eser sayfası, görsel adresi) |
 | `scripts/` | Önbellek, ikon üretimi, yerel sunucu |
 | `tests/` | Birim (`unit/`), uçtan uca (`e2e/`), fikstürler |
@@ -178,16 +181,34 @@ Telefonda: Ayarlar → **En büyük kopyaları telefona indir** → yenilenenler
 
 `gorseller_devasa/` depoya girmez (`.gitignore`). `data/gorsel_kaynagi.json` service worker'da önce ağdan gelir: gönderince telefona sürüm beklemeden iner.
 
-## Sırada bekleyen işler (2026-11-03 itibarıyla)
+## Son değişiklikler (5 Kasım 2026, sürüm 1.68–1.70)
 
-Kredi bitince bırakılanlar; sırası önemli değil. Her biri bitince KARARLAR.md'ye yazılır.
+Ayrıntılar KARARLAR.md'de (İş 135–150).
 
-1. ~~Görsel denetiminin kalan partileri~~ — bitti (106 partinin hepsi, KARARLAR İş 107). Yeni görseller eklenirse `scripts/gorsel_denetim/parti_uret.py --yeni` ile yeni partiler çıkar, aynı yol izlenir (`TALIMAT.md`).
-2. **Mac'teki büyük indirme bittikten sonra** — ayrıntılı adımlar aşağıda, "Büyük indirmeden sonra (adım adım)" bölümünde. 1–5. adımları Emre tek başına yapabilir; 6. adım için Claude betik yazar.
-3. **Tek eserli konular (isteğe bağlı).** `data/eser_konulari.json`'da 315 konu yalnız bir eserde geçiyor (adı var, hikâye sayfası yok). İstenirse önemlileri seçilip `scripts/konu_etiket/yeni_konular_NN.json` biçiminde sayfaları yazılır, `python3 scripts/konu_etiket/uret.py` ile eklenir.
-4. **iPhone titreşimi (isteğe bağlı).** Emre: "zayıf, sonra bakarız". iPhone'da tık gücü iOS'ta sabit; doğru/yanlış ayrımı yok (bkz. KARARLAR İş 106).
-5. **Harita penceresini aşağı çekme (geri bildirim bekliyor).** Kapanma mesafesi 90 pt; iPhone'da ağır/hafif gelirse `js/surukleKapat.js` `KAPAT_MESAFE`.
-6. **Hata günlüğü.** Bir şey bozulursa Ayarlar → Hata günlüğü → Kopyala, Claude'a yapıştır.
+- **Veri güvenliği (İş 135, 143):** ilerleme iki depoda (localStorage + IndexedDB) tutulur; hiçbir kopya silinmez, açılışta kayıt numarası büyük olan okunur; iki depo da yazamazsa uyarı çıkar; okunamayan ilerlemenin üzerine yazılmaz. İndirmelerde zaman aşımı ve gerçek "Durdur"; eski önbellekten taşırken yer biterse görseller korunur. Yavaş ağda açılış beklemez.
+- **Görünüm (İş 136, 146, 147):** eserin rengi yalnız vurgularda; eser, başyapıt ve konu kartları aynı düzende (görsel → ad → sanatçı · yıl); ince çerçeveler; köşeler üç ölçüde (görsel 4, kart 14, yaprak 24 px); sanatçı sayfasında bölümler ince çizgiyle ayrılır.
+- **Temalar (İş 140, 141):** Sepya ve Açık yerine tek **Gündüz** (sabit kâğıt zemin, tablolar peçesiz; Tuval'de yazılar tablonun gölge tonunda). **Gece** kömür siyahı, kırık beyaz yazı, daha sakin vurgu.
+- **Yüz odağı (İş 137, 144, 150):** Galeri dönem kartları, Atölye arka planı, Konular kapakları ve Tuval yüzün çevresinden kırpılır; geliştirici modunda elle düzeltilebilir.
+- **Atölye (İş 138, 139):** arka plan açık sanatçılardan rastgele; deste tabloyu daha az örter.
+- **Harita (İş 142, 145):** ekranın dibine ve iki kenarına kadar.
+- **Ayarlar (İş 148, 149):** hareket ve yazı boyutu seçimi.
+- **Tarihler (İş 143):** iki başyapıt tarihi düzeltildi; sanatçının yaşamıyla çelişen Wikidata yılları gösterilmez.
+- **CI:** test makinesi `ubuntu-24.04`'e sabit (26.04'te Playwright 1.56.1 tarayıcı kuramıyor). **Yayın:** PR'ı Emre birleştirmeli; Claude uygulamasının birleştirmesi GitHub Pages yayınını başlatmıyor.
+
+## Sırada bekleyen işler (5 Kasım 2026 itibarıyla)
+
+Sırası önemli değil. Her biri bitince KARARLAR.md'ye yazılır.
+
+1. **Tarih incelemesi:** `referans/tarih_inceleme.md`'deki 106 eser. Çoğu Wikidata'daki "15. yüzyıl" gibi tarihin 1500 diye okunması; bir kısmı kopya/atölye işi olabilir. Doğru tarihler bulunursa veriye işlenir; kronoloji oyunu bundan sonra düşünülebilir.
+2. **Elle odaklar:** geliştirici modunda yanlış kırpılan tabloları işaretle, Ayarlar → Elle odaklar → Kopyala, Claude'a gönder (`data/gorsel_odak_elle.json`).
+3. **Zamanlamaya bağlı iki indirme testi** (`tests/e2e/cilalama.spec.js` 404 ve 468): GitHub'da ara sıra düşüyor; davranış doğru, test anı yakalayamıyor. Ayrı iş olarak önerildi.
+4. **İncelemelerden kalan öneriler (seçim Emre'nin):** bölüm ve konu turlarında kaldığı yerden devam; "Günlük hedef" adının netleşmesi (aslında tur uzunluğu); quiz'de adım göstergesi; Defter'de "Geri al" ve sıradaki konu önce; arama filtreleri ve "Tüm sonuçlar"; harita liste görünümü; Konular kompakt görünüm; Ayarlar'ı gruplamak; Atölye'de "Eseri incele" ve devam kartını öne almak; çevrimdışı paket seçimi; **rehberli eser incelemesi** (tablo üstünde ayrıntı noktaları; ayrıntı koordinatları henüz yok).
+5. **Tek eserli konular (isteğe bağlı).** `data/eser_konulari.json`'da 315 konu yalnız bir eserde geçiyor. İstenirse sayfaları `scripts/konu_etiket/yeni_konular_NN.json` biçiminde yazılır, `python3 scripts/konu_etiket/uret.py` ile eklenir.
+6. **iPhone titreşimi (isteğe bağlı).** Emre: "zayıf, sonra bakarız" (KARARLAR İş 106).
+7. **Harita penceresini aşağı çekme (geri bildirim bekliyor).** Kapanma mesafesi 90 pt (`js/surukleKapat.js` `KAPAT_MESAFE`).
+8. **Hata günlüğü.** Bir şey bozulursa Ayarlar → Hata günlüğü → Kopyala, Claude'a yapıştır.
+
+Bitenler: görsel denetimi (106 parti, İş 107); büyük indirme ve R2'ye yükleme; müze taramalarını tercih etme (180 eser bakıldı, 147'si değişti); küçük 1280'liklerin yenilenmesi (3232 görsel); kopya eser taraması (İş 118).
 
 ### Büyük indirmeden sonra (adım adım)
 
@@ -237,9 +258,9 @@ git push origin HEAD:claude/brave-mendel-h2rm3b
 
 Sonra Claude'a "gönderdim" de: testleri çalıştırıp yayınlar. Telefonda: Ayarlar → **En büyük kopyaları telefona indir** (Wi-Fi'de; birkaç GB).
 
-**6. Claude'un yapacakları** (yeni betik gerekiyor, Emre'nin kredisi yetince):
+**6. Sonraki adımlar** — ikisi de yapıldı (müze taramaları ve 1280'likler; yukarıdaki "Bitenler"). Komutlar yeniden çalıştırmak gerekirse diye duruyor:
 
-- **Müze kopyasını tercih et (betik hazır, İş 119):** en büyük kopyası Commons'tan olup aynı eserin açık erişim müze kaydı da bulunan 180 eser (`data/muze_numaralari.json`: NGA 76, Rijksmuseum 45, Met 44, Cleveland 10, Yale 9, AIC 2). Müzenin taraması oranı aynıysa ve yeterince büyükse Commons kopyasının yerine geçer (eskisi `gorseller_devasa/.commons/`'ta saklanır). Mac'te depo kökünde:
+- ~~**Müze kopyasını tercih et**~~ (İş 119, yapıldı): en büyük kopyası Commons'tan olup aynı eserin açık erişim müze kaydı da bulunan 180 eser (`data/muze_numaralari.json`: NGA 76, Rijksmuseum 45, Met 44, Cleveland 10, Yale 9, AIC 2). Müzenin taraması oranı aynıysa ve yeterince büyükse Commons kopyasının yerine geçer (eskisi `gorseller_devasa/.commons/`'ta saklanır). Mac'te depo kökünde:
   ```
   git pull
   caffeinate -i python3 scripts/muze_tercih.py --dene   # yalnız sayar
@@ -247,7 +268,7 @@ Sonra Claude'a "gönderdim" de: testleri çalıştırıp yayınlar. Telefonda: A
   python3 scripts/r2_yukle.py --10gb-ustu               # (4. adımdaki anahtarlarla)
   git add data/gorsel_kaynagi.json data/muze_tercih.json data/b_yenilenen.json && git commit -m "Müze taramaları" && git push
   ```
-- **Küçük 1280'likleri yeniden üret (betik hazır, İş 118):** 7028 1280'liğin 2648'i aslında daha küçük (çoğu 600–1000 px), 1560'ının en büyük kopyası var. Mac'te depo kökünde:
+- ~~**Küçük 1280'likleri yeniden üret**~~ (İş 118, yapıldı): 7028 1280'liğin 2648'i aslında daha küçük (çoğu 600–1000 px), 1560'ının en büyük kopyası var. Mac'te depo kökünde:
   ```
   git pull
   python3 scripts/b_yenile.py --dene        # önce yalnız say

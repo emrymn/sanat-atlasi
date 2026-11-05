@@ -83,7 +83,9 @@ const izinVeren = () =>
     ? null
     : [window.DeviceMotionEvent, window.DeviceOrientationEvent].find((t) => t && typeof t.requestPermission === 'function') || null;
 export const izinGerekli = () => egimVar() && !!izinVeren();
-const azHareket = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+const azHareket = () =>
+  (typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches) ||
+  (typeof document !== 'undefined' && document.documentElement.dataset.hareket === 'kapali'); // İş 148
 
 let izinDurumu = null; // null: sorulmadı, true / false
 // Dokunuşsuz soru: iOS daha önceki izni hatırlıyorsa evet; hatırlamıyorsa (dokunuş gerektiği için) hayır, kutu açılmaz.

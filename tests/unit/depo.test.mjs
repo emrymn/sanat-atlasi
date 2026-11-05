@@ -15,7 +15,7 @@ test('yedek → geri yükleme gidiş-dönüşü kayıpsız', () => {
   const geri = yedekCoz(yedekMetni(i));
   assert.deepEqual(geri.islenen, [1, 2, 3]);
   assert.deepEqual(geri.skorlar, i.skorlar);
-  assert.deepEqual(geri.ayarlar, { gunlukKart: 30, tema: 'gunduz', tanisma: true, rozet: false, egim: true, titresim: true });
+  assert.deepEqual(geri.ayarlar, { gunlukKart: 30, tema: 'gunduz', tanisma: true, rozet: false, egim: true, titresim: true, hareket: 'tam', yazi: 'standart' });
   assert.deepEqual(geri.ekSanatcilar, ['claude-monet']);
   assert.deepEqual(geri.kotuGorseller, { 'q:Q1': ['c:a.jpg'] });
   assert.deepEqual(geri.sonCalisilanlar, ['giotto']);

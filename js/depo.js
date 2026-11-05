@@ -16,12 +16,18 @@ export const SURUM = 2;
 // İş 140: Sepya ve Açık tek bir Gündüz temasında birleşti (v0'ın denemesinden; zemin sabit nötr kâğıt)
 export const TEMALAR = ['gece', 'gunduz'];
 export const VARSAYILAN_TEMA = 'gece';
+// İş 148: hareket seçimi (Tam: hepsi; Sade: sürekli dönen süs hareketleri durur; Kapalı: hiç hareket yok)
+export const HAREKETLER = ['tam', 'sade', 'kapali'];
+export const HAREKET_AD = { tam: 'Tam', sade: 'Sade', kapali: 'Kapalı' };
+// İş 149: yazı boyutu
+export const YAZILAR = ['standart', 'buyuk'];
+export const YAZI_AD = { standart: 'Standart', buyuk: 'Büyük' };
 
 export function varsayilanIlerleme(islenen = []) {
   return {
     surum: SURUM,
     islenen: islenen.slice(),
-    ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA, tanisma: true, rozet: false, egim: true, titresim: true },
+    ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA, tanisma: true, rozet: false, egim: true, titresim: true, hareket: 'tam', yazi: 'standart' },
     skorlar: {},
     skorlarKonu: {}, // İş 105: konu turu skorları { konuId: Leitner skoru }
     gunluk: { tarih: bugunStr(), yeni: 0, kart: 0, yeniIdler: [] },
@@ -94,6 +100,8 @@ export function ilerlemeDogrula(nesne) {
   ayarlar.rozet = ayarlar.rozet === true;
   ayarlar.egim = ayarlar.egim !== false;
   ayarlar.titresim = ayarlar.titresim !== false; // İş 106
+  ayarlar.hareket = HAREKETLER.includes(ayarlar.hareket) ? ayarlar.hareket : 'tam'; // İş 148
+  ayarlar.yazi = YAZILAR.includes(ayarlar.yazi) ? ayarlar.yazi : 'standart'; // İş 149
   return {
     ...t,
     islenen: [...new Set(v.islenen)].sort((a, b) => a - b),

@@ -5,7 +5,7 @@ import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
 import { sanatciEserleri, eserBaslik } from '../eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla } from '../gorsel.js';
+import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla, elleOdaklariAyarla } from '../gorsel.js';
 import { gununSanatcisi } from '../gunun.js';
 import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
@@ -151,9 +151,10 @@ export function odagaKaydir(el, g) {
 // odak: true → kırpılan görsel yüzün çevresinden kırpılır (İş 137; odak verisi yüklenmişse)
 let odakSozu = null;
 export function odaklariYukle() {
-  odakSozu ||= jsonGetir('data/gorsel_odak.json')
-    .then(odaklariAyarla)
-    .catch(() => (odakSozu = null));
+  odakSozu ||= Promise.all([
+    jsonGetir('data/gorsel_odak.json').then(odaklariAyarla),
+    jsonGetir('data/gorsel_odak_elle.json').then(elleOdaklariAyarla, () => {}), // İş 150; yoksa boş
+  ]).catch(() => (odakSozu = null));
   return odakSozu;
 }
 
@@ -367,6 +368,9 @@ export function bildir(metin, { eylem = null, sure = 4000 } = {}) {
 export function temaUygula() {
   const t = d.ilerleme.ayarlar.tema;
   document.documentElement.setAttribute('data-tema', t);
+  document.documentElement.setAttribute('data-hareket', d.ilerleme.ayarlar.hareket || 'tam');
+  document.documentElement.setAttribute('data-yazi', d.ilerleme.ayarlar.yazi || 'standart');
+  document.documentElement.toggleAttribute('data-gelistirici', !!d.ilerleme.gelistirici); // İş 150: elle odak düğmesi
   const m = document.querySelector('meta[name="theme-color"]');
   if (m) m.setAttribute('content', TEMA_RENK[t] || TEMA_RENK.gece);
   // vurgu renginin okunur hali temanın zeminine göre yeniden hesaplanır

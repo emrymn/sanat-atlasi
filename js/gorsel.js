@@ -180,10 +180,61 @@ let odaklar = null;
 export function odaklariAyarla(veri) {
   odaklar = veri && veri.odak && typeof veri.odak === 'object' ? veri.odak : null;
 }
+// İş 150 (Astra: "elle odak düzeltmesi"): elle seçilen odak otomatik yüz odağından önce gelir. Kaynak:
+// data/gorsel_odak_elle.json (depoya girenler) ve bu cihazda geliştirici modunda işaretlenenler (localStorage).
+export const ELLE_ANAHTAR = 'sanat-atlasi:odak-elle';
+let elleDosya = {};
+const gecerliOdak = (o) => Array.isArray(o) && o.length === 2 && o.every((n) => Number.isFinite(n) && n >= 0 && n <= 100);
+export function elleOdaklariAyarla(veri) {
+  elleDosya = veri && veri.odak && typeof veri.odak === 'object' ? veri.odak : {};
+}
+export function cihazdakiElleOdaklar() {
+  try {
+    const v = JSON.parse(globalThis.localStorage.getItem(ELLE_ANAHTAR) || '{}');
+    return v && typeof v === 'object' && !Array.isArray(v) ? v : {};
+  } catch {
+    return {};
+  }
+}
+export const gorselAdi = (g) => (g && yerel[yerelAnahtar(g)]) || '';
+// odak: [x, y] yüzde; null → elle odak silinir (otomatiğe dönülür)
+export function elleOdakKoy(g, odak) {
+  const ad = gorselAdi(g);
+  if (!ad) return false;
+  const l = cihazdakiElleOdaklar();
+  if (odak) l[ad] = odak.map((n) => Math.round(Math.min(100, Math.max(0, n))));
+  else delete l[ad];
+  try {
+    globalThis.localStorage.setItem(ELLE_ANAHTAR, JSON.stringify(l));
+  } catch {
+    return false;
+  }
+  return true;
+}
+// Ham odak [x, y] (yüzde) ya da null
+export function gorselOdakNoktasi(g) {
+  const ad = gorselAdi(g);
+  if (!ad) return null;
+  const elle = cihazdakiElleOdaklar()[ad] || elleDosya[ad];
+  if (gecerliOdak(elle)) return elle;
+  const o = odaklar && odaklar[ad];
+  return gecerliOdak(o) ? o : null;
+}
+// İş 144: kutuyu kaplayan (cover) görselde odağın kutudaki hedef noktaya (hx, hy: 0–1) gelmesi için görselin kayması
+// (px); kenarlar hep kutuyu kaplar. Dönen: { x, y, ox, oy } (ox/oy odağın kutudaki yeri, px) ya da null
+export function kaplamaKaymasi(dogal, kutu, odak, hedef = [0.5, 0.4]) {
+  if (!odak || !dogal.w || !dogal.h || !kutu.w || !kutu.h) return null;
+  const k = Math.max(kutu.w / dogal.w, kutu.h / dogal.h);
+  const w = dogal.w * k;
+  const h = dogal.h * k;
+  const sinirla = (v, en) => Math.min(0, Math.max(en, v));
+  const x = sinirla(kutu.w * hedef[0] - (odak[0] / 100) * w, kutu.w - w);
+  const y = sinirla(kutu.h * hedef[1] - (odak[1] / 100) * h, kutu.h - h);
+  return { x, y, ox: x + (odak[0] / 100) * w, oy: y + (odak[1] / 100) * h };
+}
 export function gorselOdagi(g) {
-  const ad = g && odaklar && yerel[yerelAnahtar(g)];
-  const o = ad && odaklar[ad];
-  return Array.isArray(o) && o.length === 2 && o.every((n) => Number.isFinite(n) && n >= 0 && n <= 100) ? `${o[0]}% ${o[1]}%` : '';
+  const o = gorselOdakNoktasi(g);
+  return o ? `${o[0]}% ${o[1]}%` : '';
 }
 export function yerelAnahtar(g) {
   return `${g.k}:${g.d || g.i || g.u || ''}`;

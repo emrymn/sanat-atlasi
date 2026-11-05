@@ -55,7 +55,8 @@ const sekmeKoku = (adres) => !!ortam && ortam.sekmeler.some((a) => ayni(a, adres
 // window.__atlasGecis = true ile açar.
 export const hareketAz = () =>
   (typeof navigator !== 'undefined' && navigator.webdriver && !(typeof window !== 'undefined' && window.__atlasGecis)) ||
-  (typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  (typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches) ||
+  (typeof document !== 'undefined' && document.documentElement.dataset.hareket === 'kapali'); // İş 148
 
 if (typeof document !== 'undefined') {
   document.addEventListener(
