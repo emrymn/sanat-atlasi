@@ -67,6 +67,7 @@ import {
   guncelMi,
   kucukKareleriDoldur,
   tabloDugme,
+  odaklariYukle,
 } from './ortak.js';
 import { akimIstatistigi, seviyeIziHtml } from './pano.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
@@ -124,9 +125,9 @@ function turSahnesi(karisik) {
   ];
   const hedef = d.ilerleme.ayarlar.gunlukKart;
   const hedefler = [...new Set([...HEDEFLER, hedef])].sort((x, y) => x - y);
-  const kapak = deste[0] ? deste[0].s : acikListe()[0];
+  const kapak = kapakSanatcisi();
   return `<section class="pk-sahne" aria-label="Bugünkü karışık tur">
-      <div class="pk-resim" aria-hidden="true">${kapak ? `<span data-kucuk="${kacis(kapak.id)}" data-genislik="960"></span>` : ''}</div>
+      <div class="pk-resim" aria-hidden="true">${kapak ? `<span data-pk-kapak="${kacis(kapak.id)}"></span>` : ''}</div>
       <div class="pk-ust">${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}</div>
       <div class="pk-deste${deste.length ? '' : ' bos'}" aria-hidden="true">${deste
         .map((x, i) => `<span class="pk-kart" style="--i:${i}"><span class="kucuk-kare" data-kucuk="${kacis(x.s.id)}"></span></span>`)
@@ -146,7 +147,7 @@ function turSahnesi(karisik) {
           baslik: 'Turu başlat',
           alt: turAltYazisi(karisik),
           sayi: karisik.toplam,
-          sanatciId: kapak && kapak.id,
+          sanatciId: deste[0] ? deste[0].s.id : kapak && kapak.id, // düğmenin eserleri bugünkü turun
           sinif: 'pk-eser-dugme',
         })}
       </div>
@@ -232,8 +233,36 @@ export function pekistirMenusu() {
     }`,
   );
   kucukKareleriDoldur();
+  kapakDoldur();
   devamResmiDoldur();  // telefonu çevirince bugünkü turun destesi yelpaze açılır (İş 47; Ayarlar'daki hareket seçimine uyar)
   desteBaslat(ekran.querySelector('.pk-sahne'), d.ilerleme.ayarlar.egim !== false);
+}
+
+// İş 138 (Emre: "atölyedeki arka plan resmi niye değişmiyor, haritada ilerledikçe o konu ve öncekiler arasında
+// rastgele değişsin"): arka plan önceden bugünkü turun ilk kartının sanatçısının en bilinen eseriydi (tur yeni
+// sanatçılarla kronolojik başladığı için hep aynı tablo). Artık Atölye her açılışta açık sanatçılardan (işlenen
+// konular: bulunulan konu ve öncekiler) rastgele birinin en bilinen sekiz eserinden rastgele biri; bir önceki
+// açılıştaki sanatçı yeniden seçilmez. Tablo yüzün çevresinden kırpılır (İş 137).
+let sonKapak = null;
+function kapakSanatcisi() {
+  const l = acikListe();
+  if (!l.length) return null;
+  const adaylar = l.length > 1 ? l.filter((s) => s.id !== sonKapak) : l;
+  const s = adaylar[Math.floor(Math.random() * adaylar.length)];
+  sonKapak = s.id;
+  return s;
+}
+function kapakDoldur() {
+  const el = ekran.querySelector('[data-pk-kapak]');
+  const s = el && d.harita.get(el.dataset.pkKapak);
+  if (!s) return;
+  Promise.all([sanatciEserleri(s), odaklariYukle()])
+    .then(([eserler]) => {
+      const uygun = bilinirlikSirasi(eserler.filter((e) => secilenGorsel(e, kotuler()) && e.pekistirme !== false)).slice(0, 8);
+      const e = uygun[Math.floor(Math.random() * uygun.length)];
+      if (e && el.isConnected) el.innerHTML = kucukGorsel(e, 960, { odak: true });
+    })
+    .catch(() => {});
 }
 
 // Sıralama ve hedef değişince menü yerinde yeniden çizilir; kaydırma yeri korunur
