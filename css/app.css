@@ -15519,3 +15519,92 @@ li.gorundu .konu-deste i:nth-child(2) {
 #uygulama:has(> .harita) {
   padding-bottom: 0;
 }
+
+/* ===== İş 146 · Köşe dili (ChatGPT: "aynı köşe yuvarlaklıkları"): 16 farklı yuvarlaklık üç ölçüye indi.
+   Görseller 4 px, kartlar/düğmeler/paneller 14 px, alttan açılan yapraklar 24 px; haplar tam yuvarlak.
+   Bilerek dokunulmayanlar: ince ilerleme çubukları (1–3 px), palet şeridi, çerçeve ve pirinç plaka taklidi
+   yapan öğeler (bsy-cerceve, asi-cerceve, tablo-dugme, hanko, harita-yuz) ve küçük nokta işaretleri. ===== */
+:root {
+  --kose-gorsel: 4px;
+  --kose-kart: 14px;
+  --kose-yaprak: 24px;
+}
+:is(.cerceve, .kucuk-kare, .galeri-eser img, .eser img, .tumu, .konu-kapak, .konu-deste i, .soru-resim img, .kars-eser img,
+  .tanisma-eser, .karsi-kucukler > span, .konu-galeri-duvar img, .konu-durak-resim, .tanis-kareler .kucuk-kare,
+  .zaman-sanatci .kucuk-kare, .tur-deste .kucuk-kare, .pk-kart .kucuk-kare, .duvar-kare, .kilitli-kare, .devam-resim,
+  .gz-kare, .akim-eser .cerceve) {
+  border-radius: var(--kose-gorsel);
+}
+:is(.dugme, .iki-dugme .dugme, .karisik-dugme, .devam-kart, .tuval-ekle, .zaman-kart, .tur, .tur-sahne, .tur-deste.bos,
+  .salon, .siradaki.resimli, .siradaki.resimli .siradaki-dugme, .akim-kart, .ed-govde, .harita-pencere-ic,
+  .harita-pencere-dugmeler .dugme, .harita-zaman, .harita-seviye, .basyapit-buyut, .konu-karti, .zaman-araclar,
+  .sergi-duvar, [data-teknik='rokoko'] .donem-sahne, .alt-yaprak .yaprak-dugmeler .dugme) {
+  border-radius: var(--kose-kart);
+}
+:is(.alt-yaprak, .gor-alt) {
+  border-radius: var(--kose-yaprak) var(--kose-yaprak) 0 0;
+}
+
+/* ===== İş 147 · Sanatçı sayfası (ChatGPT: "tabloların çevresinde daha fazla boşluk, kutu yerine ince ayırıcı çizgiler"):
+   eserlerden sonraki bölümler (Notlarımdan, Nasıl tanırım?, Yakın okuma, Dönemi) arasında daha çok boşluk ve ince bir çizgi;
+   önceden 24 px boşlukla birbirine yapışık okunuyordu. Notlarımdan italik kalır (öğrencinin kendi notu), "Nasıl tanırım?"
+   zaten düz yazı. ===== */
+article > .eserler + .bolum,
+article > .bolum + .bolum,
+article > .bolum + div:has(> .bolum, > a, > section),
+article > div + .bolum {
+  margin-top: 16px;
+  padding-top: 26px;
+  border-top: 1px solid var(--notr-kenar);
+}
+article > .eserler + .bolum {
+  border-top: 0;
+}
+
+/* ===== İş 148 · Hareket seçimi (ChatGPT: "Tam / Sade / Kapalı"). Ayarlar'da; <html data-hareket>.
+   Sade: sürekli dönen süs hareketleri (nefes, ışık gezmesi, yaldız akışı, kayan şeritler, sallanan kartlar) bir kez oynar
+   ve durur; sayfa geçişleri, açılışlar ve cevap anının hareketi kalır. Ses çalarken dalga sürer (bilgi veriyor).
+   Kapalı: hiçbir şey hareket etmez (geçişler, eğim, imza yazımı da; js'de hareketAz/azHareket). ===== */
+:root[data-hareket='sade'] *,
+:root[data-hareket='sade'] *::before,
+:root[data-hareket='sade'] *::after {
+  animation-iteration-count: 1 !important;
+}
+:root[data-hareket='sade'] .isim-ek .dinle.caliyor .dalga {
+  animation-iteration-count: infinite !important;
+}
+:root[data-hareket='kapali'] *,
+:root[data-hareket='kapali'] *::before,
+:root[data-hareket='kapali'] *::after {
+  animation-duration: 0.001ms !important;
+  animation-delay: 0s !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  transition-delay: 0s !important;
+  scroll-behavior: auto !important;
+}
+
+/* ===== İş 149 · Yazı boyutu (ChatGPT: "Standart / Büyük"). Ayarlar'da; <html data-yazi>. Büyük: okuma metinleri,
+   açıklamalar, kart altyazıları ve küçük etiketler bir boy (~%10–15) büyür. Başlıklar, sayılar ve sanatçı adları
+   (zaten büyük) ile düğme yazıları aynı kalır; 390 px'te taşma olmasın. ===== */
+:root[data-yazi='buyuk'] body {
+  font-size: 17px;
+}
+:root[data-yazi='buyuk'] .okuma {
+  font-size: 21px;
+}
+:root[data-yazi='buyuk'] :is(.kucuk, .ikincil, .ayar p, .ayar small, .metin > span, .metin small, .salon-alt, .sayi) {
+  font-size: 15px;
+}
+:root[data-yazi='buyuk'] :is(.eser-yazi small, .vitrin-yazi > span, .konu-kart-yazi small, .akim-eser small) {
+  font-size: 14.5px;
+}
+:root[data-yazi='buyuk'] :is(.eser-yazi, .vitrin-yazi b, .konu-kart-yazi b, .akim-eser b) {
+  font-size: 18.5px;
+}
+:root[data-yazi='buyuk'] .etiket {
+  font-size: 12px;
+}
+:root[data-yazi='buyuk'] :is(.soru-secenekleri button, [data-test='sanatci-secenekleri'] button, [data-test='akim-secenekleri'] button) {
+  font-size: 1.08em;
+}

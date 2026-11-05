@@ -481,7 +481,9 @@ let ekGozcu = null;
 // ---------- kaydırma: derinlik ve zaman göstergesi ----------
 // Geçiş şeritlerinde sis ve yazı haritadan farklı hızda kayar (--p: şeridin ekran ortasına uzaklığı, ekran boyu
 // cinsinden). Sağ üstteki gösterge ekranın ortasına en yakın dönemi yazar; dönem değişince kayarak değişir.
-const azHareket = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+const azHareket = () =>
+  (typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches) ||
+  (typeof document !== 'undefined' && document.documentElement.dataset.hareket === 'kapali'); // İş 148
 let kaydirmaBekliyor = false;
 // Köprü değerleri hedefe her karede bir miktar yaklaşır (ataletli izleme): ani kaydırmada bile geçiş süzülür.
 let yumusatiyor = false;

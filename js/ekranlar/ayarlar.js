@@ -2,7 +2,8 @@
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { gosterilenGorseller } from '../eserler.js';
 import { devasaAdresleri, devasaSuz, suzulduMu, telefonAdresleri, telefonToplamBayt, tahminiBayt } from '../gorsel.js';
-import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat, kayitKilidiniAc } from '../depo.js';
+import { cihazdakiElleOdaklar } from '../gorsel.js';
+import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat, kayitKilidiniAc, HAREKETLER, HAREKET_AD, YAZILAR, YAZI_AD } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
 import { acikListe, bugun, d, gununRengi, ciz, ust, TEMA_AD, ekran, kaydet, temaUygula, gununId, gununHavuzu } from './ortak.js';
@@ -66,6 +67,18 @@ export function ayarlarSayfasi() {
           ${TEMALAR.map((t) => `<label><input type="radio" name="tema" value="${t}" ${a.tema === t ? 'checked' : ''}><span>${TEMA_AD[t]}</span></label>`).join('')}
         </div>
       </div>
+      <div class="ayar"><b id="yazi-etiket">Yazı boyutu</b>
+        <div class="parcali" role="radiogroup" aria-labelledby="yazi-etiket" data-test="ayar-yazi">
+          ${YAZILAR.map((t) => `<label><input type="radio" name="yazi" value="${t}" ${a.yazi === t ? 'checked' : ''}><span>${YAZI_AD[t]}</span></label>`).join('')}
+        </div>
+        <p>Büyük: okuma metinleri, açıklamalar ve küçük yazılar bir boy büyür.</p>
+      </div>
+      <div class="ayar"><b id="hareket-etiket">Hareket</b>
+        <div class="parcali" role="radiogroup" aria-labelledby="hareket-etiket" data-test="ayar-hareket">
+          ${HAREKETLER.map((t) => `<label><input type="radio" name="hareket" value="${t}" ${a.hareket === t ? 'checked' : ''}><span>${HAREKET_AD[t]}</span></label>`).join('')}
+        </div>
+        <p>Sade: sayfa geçişleri ve cevap anı kalır; sürekli dönen, nefes alan, parlayan süs hareketleri durur. Kapalı: hiçbir şey hareket etmez.</p>
+      </div>
       <div class="ayar"><label class="konu"><span class="metin"><b>Yeni sanatçıyla önce tanış</b><small>Bir sanatçı ilk kez sorulmadan önce en bilinen 3 eseri ve “Nasıl tanırım?” notu gösterilir.</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-tanisma ${a.tanisma !== false ? 'checked' : ''} aria-label="Yeni sanatçıyla önce tanış"></label></div>
       <div class="ayar"><label class="konu"><span class="metin"><b>Simge rozeti</b><small>${rozetDestekli() ? 'Ana ekrandaki Atlas simgesinde tekrarı gelen sanatçı sayısı görünür. İzin ister; sayı uygulama kapanırken yarının sayısına ayarlanır.' : 'Bu tarayıcı simge rozetini desteklemiyor (iOS 16.4+ ana ekran uygulaması gerekir).'}</small></span>
@@ -108,6 +121,7 @@ export function ayarlarSayfasi() {
       <div class="ayar"><label class="konu"><span class="metin"><b>Geliştirici modu</b><small>Bütün konular, sanatçılar ve harita bölümleri açılır. Kapatınca açmadan önceki ilerlemen olduğu gibi geri gelir; mod açıkken çözdüklerin sayılmaz.</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-gelistirici ${d.ilerleme.gelistirici ? 'checked' : ''} aria-label="Geliştirici modu"></label>
         <p class="mesaj" id="gelistirici-mesaj" aria-live="polite"></p></div>
+      ${elleOdakBolumu()}
       <div class="ayar"><b>Yenilikler</b>
         <ul class="yenilik-liste" data-test="yenilikler">${YENILIKLER.map((x) => `<li>${kacis(yenilikYazisi(x))}</li>`).join('')}</ul>
       </div>
@@ -471,6 +485,15 @@ export function olaylariBagla() {
       m.innerHTML = `Ana sayfada bugün ${kacis(gununAdi())}. <a href="#/">Ana sayfaya git</a>`;
       return;
     }
+    if (e.target.closest('[data-elle-odak-kopyala]')) {
+      const m = document.getElementById('elle-odak-mesaj');
+      const metin = ekran.querySelector('[data-elle-odak-metin]').value;
+      navigator.clipboard?.writeText(metin).then(
+        () => ((m.className = 'mesaj tamam'), (m.textContent = 'Kopyalandı.')),
+        () => ((m.className = 'mesaj'), (m.textContent = 'Kopyalanamadı: metni seçip kopyala.')),
+      );
+      return;
+    }
     if (e.target.closest('[data-devasa-indir]')) return devasaIndir();
     if (e.target.closest('[data-devasa-durdur]')) {
       if (d.devasaIndirme) {
@@ -645,12 +668,30 @@ export function olaylariBagla() {
       kaydet();
       return;
     }
+    if ((e.target.name === 'hareket' && HAREKETLER.includes(e.target.value)) || (e.target.name === 'yazi' && YAZILAR.includes(e.target.value))) {
+      d.ilerleme.ayarlar[e.target.name] = e.target.value;
+      kaydet();
+      temaUygula();
+    }
     if (e.target.name === 'tema' && TEMALAR.includes(e.target.value)) {
       d.ilerleme.ayarlar.tema = e.target.value;
       kaydet();
       temaUygula();
     }
   });
+}
+
+// İş 150: geliştirici modunda görüntüleyicide işaretlenen odaklar; kopyalanıp Claude'a gönderilir, depoya
+// data/gorsel_odak_elle.json olarak girer (bütün cihazlarda geçerli olur)
+function elleOdakBolumu() {
+  const l = cihazdakiElleOdaklar();
+  const n = Object.keys(l).length;
+  if (!n && !d.ilerleme.gelistirici) return '';
+  return `<div class="ayar" data-test="elle-odak"><b>Elle odaklar</b>
+    <p>${n ? `Bu cihazda ${n} tablonun odağı elle işaretlendi.` : 'Henüz yok.'} Geliştirici modunda bir eseri büyütüp “Odağı işaretle”ye dokun, sonra tablonun önemli noktasına. Kırpılan görseller (Galeri, Atölye, Tuval, Konular) o noktanın çevresinden kırpılır. Kalıcı olması için listeyi kopyalayıp Claude’a gönder.</p>
+    ${n ? `<textarea readonly aria-label="Elle odaklar" data-elle-odak-metin>${kacis(JSON.stringify({ surum: 1, odak: l }))}</textarea>
+    <button class="dugme ince" type="button" data-elle-odak-kopyala>Kopyala</button>` : ''}
+    <p class="mesaj" id="elle-odak-mesaj" aria-live="polite"></p></div>`;
 }
 
 function gununAdi() {
