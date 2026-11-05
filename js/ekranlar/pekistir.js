@@ -260,7 +260,7 @@ function hatalarSatiri() {
 }
 
 function bosAcik() {
-  return `<div class="bos-kutu"><p>Henüz açık sanatçı yok.</p><p class="kucuk ikincil"><a href="#/ilerleme">İlerleme</a> ekranında işlediğin konuları işaretle.</p></div>`;
+  return `<div class="bos-kutu"><p>Henüz açık sanatçı yok.</p><p class="kucuk ikincil"><a href="#/ilerleme">Defter</a>’de işlediğin konuları işaretle.</p></div>`;
 }
 
 // Bir sanatçının en az bir eseri var mı? (kurs eseri varsa beklemeden evet)
@@ -405,7 +405,7 @@ export async function pekistir(kip, akim, { yeni = false, onayli = false } = {})
             : kip === 'konu'
               ? 'Bu konunun açık sanatçısı yok ya da görselleri bulunamadı.'
               : `Bugünkü yeni sanatçı sınırına (${GUNLUK_YENI_SINIRI}) ulaşmış olabilirsin ya da bu sanatçıların görseli bulunamadı.`
-        }</p></div>${kip === 'karisik' ? '' : eylemKarti({ href: '#/pekistir/karisik', baslik: 'Karışık tur başlat', ust: 'Bunun yerine', resim: acikListe()[0] ? { sanatci: acikListe()[0].id } : null })}${metinBag('#/pekistir', 'Pekiştir’e dön')}`,
+        }</p></div>${kip === 'karisik' ? '' : eylemKarti({ href: '#/pekistir/karisik', baslik: 'Karışık tur başlat', ust: 'Bunun yerine', resim: acikListe()[0] ? { sanatci: acikListe()[0].id } : null })}${metinBag('#/pekistir', 'Atölye’ye dön')}`,
       );
       kucukKareleriDoldur();
       return devamCanlandir();

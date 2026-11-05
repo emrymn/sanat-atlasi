@@ -728,7 +728,20 @@ export function bilinirlikSirasi(eserler) {
 }
 
 // Ekranın olay dinleyicileri; app.js özgün sırayla bir kez bağlar
+// İlerleme kaydedilemiyorsa (js/depo.js) kullanıcı bir kez uyarılır: sessizce kaybolmasın
+const KAYIT_UYARISI = {
+  kilitli: ['İlerlemen bu açılışta okunamadı; üzerine yazılmasın diye kaydetme durdu. Uygulamayı yeniden aç.', 'Yenile', () => location.reload()],
+  yazilamadi: ['İlerleme telefona kaydedilemedi (yer yok ya da depo kapalı). Ayarlar’dan yedek al.', 'Ayarlar', () => (location.hash = '#/ayarlar')],
+};
+let kayitUyarildi = false;
+
 export function olaylariBagla() {
+  window.addEventListener('atlas-kayit-sorunu', (e) => {
+    const u = KAYIT_UYARISI[e.detail];
+    if (!u || kayitUyarildi) return;
+    kayitUyarildi = true;
+    bildir(u[0], { eylem: { ad: u[1], fn: u[2] }, sure: 0 });
+  });
   ekran.addEventListener('click', (e) => {
     const g = e.target.closest('[data-geri]');
     if (g) {

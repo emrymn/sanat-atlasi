@@ -216,8 +216,10 @@ export function paletUrl(g) {
   return commonsKucuk(g.d, PALET_GENISLIGI);
 }
 
+// Bağlantı olarak verildiği için yalnız http(s) adresler (İş 135: verideki bozuk ya da "javascript:" adres bağlantı olmasın)
 export function gorselSayfasi(g) {
-  return g.k === 'commons' ? dosyaSayfasi(g.d) : g.s || '';
+  const u = g.k === 'commons' ? dosyaSayfasi(g.d) : g.s || '';
+  return /^https?:\/\//i.test(u) ? u : '';
 }
 
 export function gorselKaynakYazisi(g) {

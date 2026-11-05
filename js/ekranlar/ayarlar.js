@@ -2,7 +2,7 @@
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { gosterilenGorseller } from '../eserler.js';
 import { devasaAdresleri, devasaSuz, suzulduMu, telefonAdresleri, telefonToplamBayt, tahminiBayt } from '../gorsel.js';
-import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat } from '../depo.js';
+import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat, kayitKilidiniAc } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
 import { acikListe, bugun, d, gununRengi, ciz, ust, TEMA_AD, ekran, kaydet, temaUygula, gununId, gununHavuzu } from './ortak.js';
@@ -74,7 +74,7 @@ export function ayarlarSayfasi() {
       <div class="ayar"><label class="konu"><span class="metin"><b>Titreşim</b><small>Cevaba dokununca telefon hafifçe titrer. iPhone’da iOS 18 ve sonrası gerekir; Ayarlar → Sesler ve Dokunuş → Sistem Dokunuşları açık olmalı. Android’de doğruda bir, yanlışta iki kez titrer.</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-titresim data-test="ayar-titresim" ${a.titresim !== false ? 'checked' : ''} aria-label="Titreşim"></label>
         <button class="dugme ince" type="button" data-titresim-dene data-test="titresim-dene">${tik(true)}Titreşimi dene</button></div>
-      <div class="ayar"><label class="konu"><span class="metin"><b>Telefonu eğince tablo oynasın</b><small>${egimVar() ? 'Bugün’deki günün tablosu telefonu sağa sola çevirdikçe, öne arkaya eğdikçe hafifçe döner, ışık üstünden kayar; sergi duvarında ve Koleksiyonum’da tablolar ipinden sallanır, Pekiştir’deki deste yelpaze açılır.' + (izinGerekli() ? ' iPhone hareket izni ister ve uygulama kapanınca çoğu zaman unutur: o zaman Bugün’deki ya da buradaki düğmeyle yeniden ver.' : '') : 'Bu tarayıcı hareket algılayıcısını desteklemiyor.'}</small></span>
+      <div class="ayar"><label class="konu"><span class="metin"><b>Telefonu eğince tablo oynasın</b><small>${egimVar() ? 'Tuval’deki günün tablosu telefonu sağa sola çevirdikçe, öne arkaya eğdikçe hafifçe döner, ışık üstünden kayar; sergi duvarında ve Koleksiyonum’da tablolar ipinden sallanır, Atölye’deki deste yelpaze açılır.' + (izinGerekli() ? ' iPhone hareket izni ister ve uygulama kapanınca çoğu zaman unutur: o zaman Tuval’deki ya da buradaki düğmeyle yeniden ver.' : '') : 'Bu tarayıcı hareket algılayıcısını desteklemiyor.'}</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-egim ${a.egim !== false ? 'checked' : ''} ${egimVar() ? '' : 'disabled'} aria-label="Telefonu eğince tablo oynasın"></label>
         <button class="dugme ince" type="button" data-egim-izin data-test="egim-izin" hidden>${ikon('hareket', 18, 1.6)} Hareket iznini ver</button>
         <p class="mesaj" id="egim-mesaj" aria-live="polite"></p></div>
@@ -284,6 +284,10 @@ export async function devasaSurdur() {
   if (var_ && telefonAdresleri().length && 'indexedDB' in window && !(d.devasaIndirme && !d.devasaIndirme.bitti)) devasaIndir({ kendiliginden: true }).catch(() => {});
 }
 
+// İş 135: tek görselin inme süresi sınırı (en büyük kopyalar 3–5 MB, ötekiler küçük)
+const INDIRME_SURESI_BUYUK = 90000;
+const INDIRME_SURESI = 30000;
+
 async function devasaIndir({ kendiliginden = false } = {}) {
   if (d.devasaIndirme && !d.devasaIndirme.bitti) return;
   const m = document.getElementById('devasa-mesaj');
@@ -317,7 +321,7 @@ async function devasaIndir({ kendiliginden = false } = {}) {
   const parca = Math.floor((hepsiBayt - kalanBayt + 1) / boy) + 1;
   // küçük dosyalar adet sınırına takıldığından parça sayısı yaklaşık: kalanlar da hesaba katılır
   const parcaSayisi = Math.max(parca + Math.ceil((kalanBayt - parcaBayt - 1) / boy), parca, Math.ceil((hepsiBayt - 1) / boy));
-  const i = (d.devasaIndirme = { toplam: urller.length, hepsi: hepsi.length, onceden: hepsi.length - kalan.length, oncedenBayt: hepsiBayt - kalanBayt, bitenBayt: 0, biten: 0, hata: 0, yazilamadi: 0, bitti: false, kendiliginden, parca, parcaSayisi, sonParca: urller.length >= kalan.length });
+  const i = (d.devasaIndirme = { toplam: urller.length, hepsi: hepsi.length, onceden: hepsi.length - kalan.length, oncedenBayt: hepsiBayt - kalanBayt, bitenBayt: 0, biten: 0, hata: 0, yazilamadi: 0, iptaller: new Set(), bitti: false, kendiliginden, parca, parcaSayisi, sonParca: urller.length >= kalan.length });
   try {
     devasaGoster();
   } catch {
@@ -344,8 +348,13 @@ async function devasaIndir({ kendiliginden = false } = {}) {
     while (sira < urller.length && !i.durdur && !i.yerYok) {
       const u = urller[sira++];
       izBirak({ n: i.onceden + i.biten + 1, toplam: i.hepsi, u: u.split('/').pop(), z: new Date().toISOString() });
+      // İş 135: yanıt vermeyen istek parçayı bekletmesin (zaman aşımı); "Durdur" sürmekte olan istekleri de keser
+      const iptal = new AbortController();
+      i.iptaller.add(iptal);
+      const sure = setTimeout(() => iptal.abort(), /\/d\//.test(u) ? INDIRME_SURESI_BUYUK : INDIRME_SURESI);
+      let kesildi = false;
       try {
-        const y = await fetch(u, { mode: 'cors', credentials: 'omit', cache: 'no-store' });
+        const y = await fetch(u, { mode: 'cors', credentials: 'omit', cache: 'no-store', signal: iptal.signal });
         if (!y.ok || !(y.headers.get('content-type') || '').startsWith('image/')) i.hata++;
         else {
           const blob = await y.blob();
@@ -365,8 +374,13 @@ async function devasaIndir({ kendiliginden = false } = {}) {
           );
         }
       } catch (e) {
-        i.hata++;
+        if (i.durdur) kesildi = true; // durdurulunca kesilen istek hata da inen de sayılmaz
+        else i.hata++;
+      } finally {
+        clearTimeout(sure);
+        i.iptaller.delete(iptal);
       }
+      if (kesildi) break;
       i.biten++;
       i.bitenBayt += tahminiBayt(u);
       goster();
@@ -459,7 +473,10 @@ export function olaylariBagla() {
     }
     if (e.target.closest('[data-devasa-indir]')) return devasaIndir();
     if (e.target.closest('[data-devasa-durdur]')) {
-      if (d.devasaIndirme) d.devasaIndirme.durdur = true;
+      if (d.devasaIndirme) {
+        d.devasaIndirme.durdur = true;
+        for (const a of d.devasaIndirme.iptaller || []) a.abort();
+      }
       return;
     }
     if (e.target.closest('[data-devasa-sil]')) return devasaSil();
@@ -467,7 +484,7 @@ export function olaylariBagla() {
       const m = document.getElementById('egim-mesaj');
       const tamam = await egimIzni();
       m.className = `mesaj ${tamam ? 'tamam' : 'hata'}`;
-      m.textContent = tamam ? 'İzin verildi: Bugün’de telefonu çevir.' : 'Hareket izni verilmedi. Uygulamayı kapatıp açınca yeniden sorulur.';
+      m.textContent = tamam ? 'İzin verildi: Tuval’de telefonu çevir.' : 'Hareket izni verilmedi. Uygulamayı kapatıp açınca yeniden sorulur.';
       egimIzinDugmesi();
       return;
     }
@@ -546,6 +563,7 @@ export function olaylariBagla() {
         if (!confirm('Mevcut ilerlemenin yerine bu yedek yüklensin mi?')) return;
         d.ilerleme = yeni;
         d.oturum = null;
+        kayitKilidiniAc(); // açılışta ilerleme okunamadıysa da yedek kaydedilir (bilerek yüklendi)
         const yarim = yedekYarimOturum(girdi);
         if (kayitGecerliMi(yarim)) {
           d.yarim = yarim;
@@ -597,7 +615,7 @@ export function olaylariBagla() {
       d.ilerleme.ayarlar.egim = e.target.checked;
       kaydet();
       m.className = 'mesaj tamam';
-      m.textContent = e.target.checked ? 'Açıldı: Bugün’de telefonu çevir.' : 'Kapatıldı.';
+      m.textContent = e.target.checked ? 'Açıldı: Tuval’de telefonu çevir.' : 'Kapatıldı.';
       egimIzinDugmesi();
       return;
     }

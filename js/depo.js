@@ -1,5 +1,6 @@
 // İlerleme nesnesi: localStorage'da tutulur, IndexedDB'ye yansıtılır (yedek).
-import { idbAl, idbKoy } from './idb.js';
+import { idbAlKesin, idbKoy } from './idb.js';
+import { hataEkle } from './hataGunlugu.js';
 import { bugunStr } from './leitner.js';
 import { karisanlarDogrula } from './ogrenme.js';
 import { seviyelerDogrula } from './seviye.js';
@@ -50,6 +51,17 @@ function skorGecerli(s) {
   );
 }
 
+// İş 135: geçerli skorun alanları düzeltilir (elle düzenlenmiş ya da bozuk yedek tekrar sırasını bozmasın): sayaçlar
+// negatif olmayan tam sayı, tarihler "YYYY-MM-DD" ya da null. Bozuk tarihte kart vadesi gelmiş sayılır (bugün gelir).
+const TARIH = /^\d{4}-\d{2}-\d{2}$/;
+function skorTemizle(s) {
+  const sayac = (x) => Math.max(0, Math.floor(x));
+  const t = { ...s, dogru: sayac(s.dogru), yanlis: sayac(s.yanlis) };
+  t.son = typeof s.son === 'string' && TARIH.test(s.son) ? s.son : s.son ? bugunStr() : null;
+  t.sonraki = typeof s.sonraki === 'string' && TARIH.test(s.sonraki) ? s.sonraki : t.son ? bugunStr() : null;
+  return t;
+}
+
 // Yedekten gelen ya da depodan okunan nesneyi doğrular ve eksikleri tamamlar.
 // Geçersizse Error fırlatır.
 export function ilerlemeDogrula(nesne) {
@@ -61,14 +73,14 @@ export function ilerlemeDogrula(nesne) {
   for (const [id, s] of Object.entries(v.skorlar || {})) {
     if (!s || typeof s !== 'object' || !skorGecerli(s.sanatci) || !skorGecerli(s.akim)) throw new Error(`“${id}” için skor geçersiz.`);
     skorlar[id] = {};
-    if (s.sanatci) skorlar[id].sanatci = s.sanatci;
-    if (s.akim) skorlar[id].akim = s.akim;
-    if (s.bolumKart && skorGecerli(s.bolumKart)) skorlar[id].bolumKart = s.bolumKart; // İş 105: bölüm turu
+    if (s.sanatci) skorlar[id].sanatci = skorTemizle(s.sanatci);
+    if (s.akim) skorlar[id].akim = skorTemizle(s.akim);
+    if (s.bolumKart && skorGecerli(s.bolumKart)) skorlar[id].bolumKart = skorTemizle(s.bolumKart); // İş 105: bölüm turu
   }
   // İş 105: konu (ikonografi) turu, konu başına; bozuk kayıt sessizce atlanır
   const skorlarKonu = {};
   if (v.skorlarKonu && typeof v.skorlarKonu === 'object' && !Array.isArray(v.skorlarKonu))
-    for (const [id, s] of Object.entries(v.skorlarKonu)) if (s && skorGecerli(s) && id.length < 120) skorlarKonu[id] = s;
+    for (const [id, s] of Object.entries(v.skorlarKonu)) if (s && skorGecerli(s) && id.length < 120) skorlarKonu[id] = skorTemizle(s);
   const t = varsayilanIlerleme();
   const ayarlar = { ...t.ayarlar, ...(v.ayarlar || {}) };
   // Sürüm 1'de varsayılan Sepya'ydı ve Koyu tema vardı: ikisi de bir kez Gece'ye geçer (Açık seçimi korunur)
@@ -198,18 +210,59 @@ export function gunlukGuncelle(ilerleme, bugun = bugunStr()) {
   return ilerleme.gunluk;
 }
 
-export async function ilerlemeYukle(baslangicGetir) {
+// İlerleme okunamadığında (kayıt var olabilir ama depo hata verdi) bu açılışta kayıt kilitlenir: yerine konan boş
+// (başlangıç) ilerleme gerçek kaydın üzerine yazılmasın. Kilit yedek geri yüklenince açılır; uygulama yeniden açılınca
+// yeniden okunur. Bozuk (ayrıştırılamayan, doğrulanamayan) kayıt ise IndexedDB'de "bozuk" anahtarıyla saklanır.
+let kayitKilidi = false;
+export const kayitKilitliMi = () => kayitKilidi;
+export function kayitKilidiniAc() {
+  kayitKilidi = false;
+}
+// ekranlar/ortak.js dinler ve kullanıcıya bir kez söyler: 'kilitli' | 'yazilamadi'
+function kayitSorunu(tur) {
   try {
-    const ham = localStorage.getItem(ANAHTAR);
-    if (ham) return ilerlemeDogrula(JSON.parse(ham));
+    globalThis.dispatchEvent(new CustomEvent('atlas-kayit-sorunu', { detail: tur }));
+  } catch {
+    /* olay yok (test ortamı) */
+  }
+}
+function bozukSakla(ham) {
+  idbKoy('ilerleme', 'bozuk', { zaman: new Date().toISOString(), ham });
+}
+const mesajOf = (e) => (e && (e.name && e.name !== 'Error' ? `${e.name}: ${e.message}` : e.message)) || String(e);
+
+export async function ilerlemeYukle(baslangicGetir) {
+  let okunamadi = null;
+  let ham = null;
+  try {
+    ham = localStorage.getItem(ANAHTAR);
   } catch (e) {
-    /* bozuk ya da erişilemez; IndexedDB yedeğine bak */
+    okunamadi = `localStorage: ${mesajOf(e)}`;
+  }
+  if (ham) {
+    try {
+      return ilerlemeDogrula(JSON.parse(ham));
+    } catch (e) {
+      bozukSakla(ham); // bozuk: IndexedDB yedeğine bakılır
+      hataEkle({ m: `Kayıtlı ilerleme bozuk (${mesajOf(e)}); IndexedDB yedeğine bakıldı, bozuk kayıt saklandı`, k: 'depo' });
+    }
   }
   try {
-    const idb = await idbAl('ilerleme', 'ana');
-    if (idb) return ilerlemeDogrula(idb);
+    const idb = await idbAlKesin('ilerleme', 'ana');
+    if (idb) {
+      try {
+        return ilerlemeDogrula(idb);
+      } catch (e) {
+        bozukSakla(idb);
+        hataEkle({ m: `IndexedDB'deki ilerleme bozuk (${mesajOf(e)}); bozuk kayıt saklandı`, k: 'depo' });
+      }
+    }
   } catch (e) {
-    /* yok */
+    if (typeof indexedDB !== 'undefined') okunamadi = `${okunamadi ? okunamadi + ' · ' : ''}IndexedDB: ${mesajOf(e)}`;
+  }
+  if (okunamadi) {
+    kayitKilidi = true;
+    hataEkle({ m: `İlerleme okunamadı (${okunamadi}); bu açılışta kaydetme durduruldu`, k: 'depo' });
   }
   let islenen = [];
   try {
@@ -221,14 +274,28 @@ export async function ilerlemeYukle(baslangicGetir) {
 }
 
 let idbZamanlayici = null;
+let lsUyarildi = false;
 export function ilerlemeKaydet(ilerleme) {
+  if (kayitKilidi) return kayitSorunu('kilitli');
+  let lsTamam = true;
   try {
     localStorage.setItem(ANAHTAR, JSON.stringify(ilerleme));
   } catch (e) {
-    /* kota/özel mod: IndexedDB yine denenir */
+    // kota/özel mod: IndexedDB yine denenir. Eski kopya silinir: kalırsa bir sonraki açılışta IndexedDB'deki yeni
+    // kayıt yerine o (bayat) okunurdu
+    lsTamam = false;
+    try {
+      localStorage.removeItem(ANAHTAR);
+    } catch {
+      /* depo kapalı */
+    }
+    if (!lsUyarildi) (lsUyarildi = true), hataEkle({ m: `İlerleme localStorage'a yazılamadı: ${mesajOf(e)}`, k: 'depo' });
   }
   clearTimeout(idbZamanlayici);
-  idbZamanlayici = setTimeout(() => idbKoy('ilerleme', 'ana', JSON.parse(JSON.stringify(ilerleme))), 300);
+  idbZamanlayici = setTimeout(async () => {
+    const tamam = await idbKoy('ilerleme', 'ana', JSON.parse(JSON.stringify(ilerleme)));
+    if (!tamam && !lsTamam) kayitSorunu('yazilamadi');
+  }, 300);
 }
 
 // ---------- Yedek hatırlatması (İ3) ----------

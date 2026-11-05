@@ -137,7 +137,7 @@ function bos() {
   ciz(
     `${ust(TUR[kip].baslik, '#/pekistir', { ustEtiket: 'Pekiştir' })}<div class="sade-soru" data-test="kart-yok"><p class="sade-soru-baslik">Bu tur için şu an kart yok.</p><p class="kucuk ikincil">${
       kip === 'bolum' ? 'Açık sanatçıların görselleri bulunamadı.' : 'Açık sanatçıların eserlerinde konusu bilinen bir resim yok; yeni konular işlendikçe gelir.'
-    }</p><p><a class="dugme" href="#/pekistir">Pekiştir’e dön</a></p></div>`,
+    }</p><p><a class="dugme" href="#/pekistir">Atölye’ye dön</a></p></div>`,
   );
 }
 
@@ -305,7 +305,7 @@ function ozet() {
       <p class="sade-soru-baslik">Tur bitti</p>
       <p data-test="st-sonuc"><b>${dogru} / ${toplam}</b> doğru</p>
       <p class="kucuk ikincil">Yanlış bildiklerin bir sonraki turda önce gelecek.</p>
-      <p><button class="dugme acik" type="button" data-st-yeni data-test="st-yeni">Yeni tur</button> <a class="dugme" href="#/pekistir">Pekiştir’e dön</a></p>
+      <p><button class="dugme acik" type="button" data-st-yeni data-test="st-yeni">Yeni tur</button> <a class="dugme" href="#/pekistir">Atölye’ye dön</a></p>
     </section>`,
   );
 }

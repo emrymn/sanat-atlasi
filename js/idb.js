@@ -39,8 +39,17 @@ export function idbAl(depo, anahtar) {
   return islem(depo, 'readonly', (s) => s.get(anahtar)).catch(() => undefined);
 }
 
+// Okuma hatasını yutmaz: "kayıt yok" (undefined) ile "okunamadı" (hata) ayrılsın diye (ilerleme yüklenirken)
+export function idbAlKesin(depo, anahtar) {
+  return islem(depo, 'readonly', (s) => s.get(anahtar));
+}
+
+// Yazıldıysa true, yazılamadıysa false (hata fırlatmaz)
 export function idbKoy(depo, anahtar, deger) {
-  return islem(depo, 'readwrite', (s) => s.put(deger, anahtar)).catch(() => undefined);
+  return islem(depo, 'readwrite', (s) => s.put(deger, anahtar)).then(
+    () => true,
+    () => false,
+  );
 }
 
 export function idbSil(depo, anahtar) {

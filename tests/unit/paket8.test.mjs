@@ -248,8 +248,8 @@ test('yenilikYazisi biçimi ve listenin başı şimdiki sürüm', () => {
 });
 
 // ---------- sürüm, kabuk, T2, T3 ----------
-test('sürüm: js/surum.js ile sw.js aynı, 1.67.0', () => {
-  assert.equal(SURUM, '1.67.0');
+test('sürüm: js/surum.js ile sw.js aynı, 1.67.1', () => {
+  assert.equal(SURUM, '1.67.1');
   assert.match(oku('sw.js'), /const SURUM = '1\.67\.0';/);
 });
 
