@@ -2981,7 +2981,8 @@ html.sekmesiz .sekmeler {
 .gor-alt a {
   color: var(--ink);
 }
-.gor-kotu {
+.gor-kotu,
+.gor-incele {
   align-self: flex-start;
   margin-top: 6px;
   min-height: 44px;
@@ -15607,4 +15608,162 @@ article > .eserler + .bolum {
 }
 :root[data-yazi='buyuk'] :is(.soru-secenekleri button, [data-test='sanatci-secenekleri'] button, [data-test='akim-secenekleri'] button) {
   font-size: 1.08em;
+}
+
+/* ===== İş 151 · Rehberli eser incelemesi (data/eser_ayrintilari.json, js/ayrinti.js). Görüntüleyicide tablonun
+   üstünde numaralı noktalar; dokununca o bölgeye yakınlaşılır, altta açıklama. Sade müze dili (İş 136): nötr yüzeyler,
+   tablonun rengi yalnız seçili noktada ve "Sonraki" düğmesinde. ===== */
+.gor-noktalar {
+  position: absolute;
+  transform-origin: center center;
+  pointer-events: none;
+  --ters: 1;
+}
+.gor-noktalar[hidden] {
+  display: none;
+}
+.gor-nokta {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(var(--ters));
+  transform-origin: center center;
+  pointer-events: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gor-nokta i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: rgba(20, 18, 16, 0.62);
+  color: #f4efe6;
+  font: 600 14px/30px var(--sans);
+  font-style: normal;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+.gor-nokta.aktif i {
+  background: var(--vurgu);
+  border-color: var(--vurgu-yazi);
+  color: var(--vurgu-yazi);
+  transform: scale(1.12);
+}
+.gor.inceleme .gor-alt {
+  gap: 6px;
+}
+.gor-inceleme {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.gor-inceleme[hidden] {
+  display: none;
+}
+.gor-inc-ust {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font: italic 400 19px/1.25 var(--serif);
+}
+.gor-inc-no {
+  font: 500 12px/1.2 var(--sans);
+  letter-spacing: 0.06em;
+  color: var(--ink-2);
+  flex: none;
+}
+.gor-inc-ad:empty + .gor-inc-metin {
+  color: var(--ink-2);
+}
+.gor-inc-metin {
+  margin: 0;
+  font: 400 16px/1.45 var(--serif);
+  color: var(--ink);
+  min-height: 4.3em;
+}
+.gor-inc-dugmeler {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+.gor-inc-dugmeler button {
+  min-height: 46px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  font: 600 15px var(--sans);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.gor-inc-dugmeler .gor-inc-geri {
+  flex: 1 1 0;
+}
+.gor-inc-dugmeler .gor-inc-ileri {
+  flex: 1.4 1 0;
+  background: var(--vurgu);
+  border-color: transparent;
+  color: var(--vurgu-yazi);
+}
+.gor-inc-dugmeler .gor-inc-ileri .ikon,
+.gor-inc-dugmeler .gor-inc-geri .ikon {
+  width: 20px;
+  height: 20px;
+}
+.gor-inc-dugmeler .gor-inc-bitir {
+  flex: 0 0 auto;
+}
+.gor-inc-dugmeler button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.gor.cekiliyor .gor-noktalar {
+  opacity: 0;
+}
+/* yatay: inceleme paneli de alttaki şeritte */
+@media (orientation: landscape) and (max-height: 500px) {
+  .gor.inceleme .gor-alt .gor-inceleme {
+    padding-right: 0;
+  }
+  .gor-inc-metin {
+    min-height: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+/* Başyapıt sayfasında görselin altındaki giriş */
+.basyapit-incele {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin: 6px 0 2px;
+  padding: 0 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  font: 600 14px var(--sans);
+  cursor: pointer;
+}
+.basyapit-incele .ikon {
+  width: 18px;
+  height: 18px;
 }

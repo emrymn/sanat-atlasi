@@ -49,7 +49,7 @@ test('görüntüleyici: iPhone ekranında düğmeler dokunma hedefi ≥ 44 px ve
   await page.locator('.eser').first().click();
   const gor = page.locator('.gor');
   await expect(gor).toBeVisible();
-  for (const secici of ['.gor-kapat', '.gor-isaret', '.gor-daha', '.gor-kotu']) {
+  for (const secici of ['.gor-kapat', '.gor-isaret', '.gor-daha', '.gor-kotu', '.gor-incele']) {
     const kutu = await gor.locator(secici).boundingBox();
     expect(kutu, secici).not.toBeNull();
     expect(kutu.height, secici).toBeGreaterThanOrEqual(44);
