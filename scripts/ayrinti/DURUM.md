@@ -2,7 +2,7 @@
 
 Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-05). Elle düzenleme.
 
-**Toplam: 40 / 107 başyapıt bitti (234 nokta; eser başına ortalama 5.8).** Kalan: 67.
+**Toplam: 60 / 107 başyapıt bitti (349 nokta; eser başına ortalama 5.8).** Kalan: 47.
 
 ## Akım akım
 
@@ -68,59 +68,59 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-05). Elle düzenle
 | Son Akşam Yemeği | Tintoretto | ✓ 6 nokta |
 | Kana'da Düğün | Paolo Veronese | ✓ 6 nokta |
 
-### Maniyerizm · 2 / 9
+### Maniyerizm · 9 / 9
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Aziz Thomas'ın Şüphesi | Francesco Salviati | — |
-| Çarmıhtan İndiriliş | Jacopo Pontormo | — |
-| Satranç Oynayan Sanatçının Kız Kardeşlerinin Portresi | Sofonisba Anguissola | — |
-| Çarmıhtan İndiriliş | Daniele da Volterra | — |
+| Aziz Thomas'ın Şüphesi | Francesco Salviati | ✓ 6 nokta |
+| Çarmıhtan İndiriliş | Jacopo Pontormo | ✓ 5 nokta |
+| Satranç Oynayan Sanatçının Kız Kardeşlerinin Portresi | Sofonisba Anguissola | ✓ 6 nokta |
+| Çarmıhtan İndiriliş | Daniele da Volterra | ✓ 5 nokta |
 | Bir Alegori (Venüs, Aşk Tanrısı, Zaman ve Akılsızlık) | Agnolo Bronzino | ✓ 6 nokta |
-| Uzun Boyunlu Meryem | Parmigianino | — |
+| Uzun Boyunlu Meryem | Parmigianino | ✓ 6 nokta |
 | Orgaz Kontu'nun Gömülmesi (El entierro del conde de Orgaz) | El Greco | ✓ 6 nokta |
-| Musa, Yitro'nun Kızlarını Savunurken | Rosso Fiorentino | — |
-| Aşk Sahnesi | Giulio Romano | — |
+| Musa, Yitro'nun Kızlarını Savunurken | Rosso Fiorentino | ✓ 6 nokta |
+| Aşk Sahnesi | Giulio Romano | ✓ 6 nokta |
 
-### İtalyan Barok ve Caravaggizm · 1 / 5
+### İtalyan Barok ve Caravaggizm · 5 / 5
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Farnese Tavanı – Tanrıların Aşkları: Bakkhus ve Ariadne'nin Zaferi | Annibale Carracci | — |
+| Farnese Tavanı – Tanrıların Aşkları: Bakkhus ve Ariadne'nin Zaferi | Annibale Carracci | ✓ 6 nokta |
 | Emmaus'ta Akşam Yemeği | Caravaggio | ✓ 6 nokta |
-| Pezevenk Kadın | Dirck van Baburen | — |
-| Holofernes'in Kafasını Kesen Judith | Artemisia Gentileschi | — |
-| Lavta Çalan | Orazio Gentileschi | — |
+| Pezevenk Kadın | Dirck van Baburen | ✓ 6 nokta |
+| Holofernes'in Kafasını Kesen Judith | Artemisia Gentileschi | ✓ 6 nokta |
+| Lavta Çalan | Orazio Gentileschi | ✓ 6 nokta |
 
-### İspanyol Barok · 0 / 2
-
-| Eser | Sanatçı | Durum |
-|---|---|---|
-| Papa X. Innocentius'un Portresi | Diego Velázquez | — |
-| Tanrı'nın Kuzusu (Agnus Dei) | Francisco de Zurbarán | — |
-
-### Flaman Barok · 0 / 2
+### İspanyol Barok · 2 / 2
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Çarmıhın Dikilişi | Peter Paul Rubens | — |
-| I. Charles'ın Üç Pozisyonda Portresi | Anthony van Dyck | — |
+| Papa X. Innocentius'un Portresi | Diego Velázquez | ✓ 6 nokta |
+| Tanrı'nın Kuzusu (Agnus Dei) | Francisco de Zurbarán | ✓ 4 nokta |
 
-### Hollanda Altın Çağı · 1 / 3
+### Flaman Barok · 2 / 2
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Müsrif Oğulun Dönüşü | Rembrandt van Rijn | — |
+| Çarmıhın Dikilişi | Peter Paul Rubens | ✓ 6 nokta |
+| I. Charles'ın Üç Pozisyonda Portresi | Anthony van Dyck | ✓ 6 nokta |
+
+### Hollanda Altın Çağı · 3 / 3
+
+| Eser | Sanatçı | Durum |
+|---|---|---|
+| Müsrif Oğulun Dönüşü | Rembrandt van Rijn | ✓ 6 nokta |
 | Süt Boşaltan Kadın | Johannes Vermeer | ✓ 6 nokta |
-| Aziz Nicholas Yortusu | Jan Steen | — |
+| Aziz Nicholas Yortusu | Jan Steen | ✓ 6 nokta |
 
-### Fransız Klasisizmi · 0 / 4
+### Fransız Klasisizmi · 3 / 4
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| XIV. Louis'nin Portresi | Hyacinthe Rigaud | — |
-| İskender'in Babil'e Girişi | Charles Le Brun | — |
-| Arkadya'da Ben de Varım (Et in Arcadia ego) | Nicolas Poussin | — |
+| XIV. Louis'nin Portresi | Hyacinthe Rigaud | ✓ 6 nokta |
+| İskender'in Babil'e Girişi | Charles Le Brun | ✓ 6 nokta |
+| Arkadya'da Ben de Varım (Et in Arcadia ego) | Nicolas Poussin | ✓ 5 nokta |
 | Saba Melikesi'nin Gemiye Binişi | Claude Lorrain | — |
 
 ### Geç İtalyan Barok · 0 / 1
@@ -260,7 +260,6 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-05). Elle düzenle
 
 ## Kalanlar (basyapitlar.json sırasıyla, partiler hâlinde)
 
-- **Parti 1:** Aziz Thomas'ın Şüphesi (Francesco Salviati, `Q18572249`); Çarmıhtan İndiriliş (Jacopo Pontormo, `Q3705703`); Satranç Oynayan Sanatçının Kız Kardeşlerinin Portresi (Sofonisba Anguissola, `Q23008305`); Çarmıhtan İndiriliş (Daniele da Volterra, `Q140161127`); Uzun Boyunlu Meryem (Parmigianino, `Q867403`); Musa, Yitro'nun Kızlarını Savunurken (Rosso Fiorentino, `Q1863885`); Aşk Sahnesi (Giulio Romano, `Q19966572`); Farnese Tavanı – Tanrıların Aşkları: Bakkhus ve Ariadne'nin Zaferi (Annibale Carracci, `Q3998957`); Pezevenk Kadın (Dirck van Baburen, `Q63341`); Holofernes'in Kafasını Kesen Judith (Artemisia Gentileschi, `Q3769169`); Lavta Çalan (Orazio Gentileschi, `Q20176925`); Papa X. Innocentius'un Portresi (Diego Velázquez, `Q1240092`); Tanrı'nın Kuzusu (Agnus Dei) (Francisco de Zurbarán, `Q4693305`); Çarmıhın Dikilişi (Peter Paul Rubens, `Q2653851`); I. Charles'ın Üç Pozisyonda Portresi (Anthony van Dyck, `Q3998985`); Müsrif Oğulun Dönüşü (Rembrandt van Rijn, `Q512755`); Aziz Nicholas Yortusu (Jan Steen, `Q764831`); XIV. Louis'nin Portresi (Hyacinthe Rigaud, `Q3399440`); İskender'in Babil'e Girişi (Charles Le Brun, `Q27097122`); Arkadya'da Ben de Varım (Et in Arcadia ego) (Nicolas Poussin, `Q1140358`)
-- **Parti 2:** Saba Melikesi'nin Gemiye Binişi (Claude Lorrain, `Q7731855`); Banyosunda Batşeba (Sebastiano Ricci, `Q19863024`); Kythera Adası'na Yolculuk (Pèlerinage à l'île de Cythère) (Jean-Antoine Watteau, `Q531329`); Sarışın Odalık (Louise O'Murphy) (François Boucher, `Q1131176`); Salıncak (L'Escarpolette) (Jean-Honoré Fragonard, `Q2629559`); Kleopatra'nın Ziyafeti (Giovanni Battista Tiepolo, `Q18167078`); Vatoz (Jean-Baptiste-Siméon Chardin, `Q3212142`); Kırık Testi (Jean-Baptiste Greuze, `Q4388208`); General Wolfe'un Ölümü (Benjamin West, `Q956541`); Gracchusların Annesi Kornelia (Angelica Kauffman, `angelica-kauffman|Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures)`); Horas Kardeşlerin Yemini (Le Serment des Horaces) (Jacques-Louis David, `Q28797801`); Marie Antoinette ve Çocukları (Élisabeth Vigée Le Brun, `Q3937621`); Günlerin Atası (William Blake, `Q2324840`); Sis Denizi Üzerinde Gezgin (Der Wanderer über dem Nebelmeer) (Caspar David Friedrich, `Q311243`); Kabus (The Nightmare) (Henry Fuseli, `Q2317837`); Saman Arabası (John Constable, `Q2366825`); Halka Yol Gösteren Özgürlük (Eugène Delacroix, `Q29530`); 3 Mayıs 1808 (El tres de mayo de 1808) (Francisco de Goya, `Q1091086`); Köle Gemisi (The Slave Ship) (J. M. W. Turner, `Q219344`); Ophelia (John Everett Millais, `Q1065493`)
-- **Parti 3:** Büyük Odalık (La Grande Odalisque) (Jean-Auguste-Dominique Ingres, `Q1978815`); Köle Pazarı (Jean-Léon Gérôme, `Q3224275`); Venüs'ün Doğuşu (William-Adolphe Bouguereau, `Q1283024`); Üçüncü Mevki Vagon (Honoré Daumier, `Q3228340`); Ornans'ta Cenaze (Gustave Courbet, `Q540488`); Başak Toplayanlar (Des glaneuses) (Jean-François Millet, `Q1368055`); Paris Sokağı, Yağmurlu Hava (Rue de Paris, temps de pluie) (Gustave Caillebotte, `Q1452762`); Bale Dersi (Edgar Degas, `Q3821820`); Mavi Koltukta Küçük Kız (Mary Cassatt, `Q3640080`); Beşik (Berthe Morisot, `Q5966403`); İzlenim, Gün Doğumu (Impression, soleil levant) (Claude Monet, `Q328523`); Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak (Utagawa Hiroshige, `Q5826309`); Fuji Dağı'nın 36 Manzarası (Katsushika Hokusai, `Q227494`); Kâğıt Oynayanlar (Les Joueurs de cartes) (Paul Cézanne, `Q17277950`); Asnières'de Yıkananlar (Georges Seurat, `Q1090837`); Yıldızlı Gece (Vincent van Gogh, `Q45585`); Moulin Rouge: La Goulue (Henri de Toulouse-Lautrec, `Q17026577`); Kiklop (Odilon Redon, `Q3793426`); Öpücük (Der Kuss) (Gustav Klimt, `Q698487`); Çığlık (The Scream) (Edvard Munch, `Q471379`)
-- **Parti 4:** Berlin Sokak Sahnesi (Ernst Ludwig Kirchner, `Q3476580`); Kompozisyon VII (Wassily Kandinsky, `Q2990634`); Guernica (Pablo Picasso, `Q175036`); Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek (Hannah Höch, `hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic`); Belleğin Azmi (The Persistence of Memory) (Salvador Dalí, `salvador-dali|The Persistence of Memory`); İmgelerin İhaneti (La trahison des images) (René Magritte, `Q1061035`); Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma (Three Studies for Figures at the Base of a Crucifixion) (Francis Bacon, `francis-bacon|Three Studies for Figures at the Base of a Crucifixion`)
+- **Parti 1:** Saba Melikesi'nin Gemiye Binişi (Claude Lorrain, `Q7731855`); Banyosunda Batşeba (Sebastiano Ricci, `Q19863024`); Kythera Adası'na Yolculuk (Pèlerinage à l'île de Cythère) (Jean-Antoine Watteau, `Q531329`); Sarışın Odalık (Louise O'Murphy) (François Boucher, `Q1131176`); Salıncak (L'Escarpolette) (Jean-Honoré Fragonard, `Q2629559`); Kleopatra'nın Ziyafeti (Giovanni Battista Tiepolo, `Q18167078`); Vatoz (Jean-Baptiste-Siméon Chardin, `Q3212142`); Kırık Testi (Jean-Baptiste Greuze, `Q4388208`); General Wolfe'un Ölümü (Benjamin West, `Q956541`); Gracchusların Annesi Kornelia (Angelica Kauffman, `angelica-kauffman|Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures)`); Horas Kardeşlerin Yemini (Le Serment des Horaces) (Jacques-Louis David, `Q28797801`); Marie Antoinette ve Çocukları (Élisabeth Vigée Le Brun, `Q3937621`); Günlerin Atası (William Blake, `Q2324840`); Sis Denizi Üzerinde Gezgin (Der Wanderer über dem Nebelmeer) (Caspar David Friedrich, `Q311243`); Kabus (The Nightmare) (Henry Fuseli, `Q2317837`); Saman Arabası (John Constable, `Q2366825`); Halka Yol Gösteren Özgürlük (Eugène Delacroix, `Q29530`); 3 Mayıs 1808 (El tres de mayo de 1808) (Francisco de Goya, `Q1091086`); Köle Gemisi (The Slave Ship) (J. M. W. Turner, `Q219344`); Ophelia (John Everett Millais, `Q1065493`)
+- **Parti 2:** Büyük Odalık (La Grande Odalisque) (Jean-Auguste-Dominique Ingres, `Q1978815`); Köle Pazarı (Jean-Léon Gérôme, `Q3224275`); Venüs'ün Doğuşu (William-Adolphe Bouguereau, `Q1283024`); Üçüncü Mevki Vagon (Honoré Daumier, `Q3228340`); Ornans'ta Cenaze (Gustave Courbet, `Q540488`); Başak Toplayanlar (Des glaneuses) (Jean-François Millet, `Q1368055`); Paris Sokağı, Yağmurlu Hava (Rue de Paris, temps de pluie) (Gustave Caillebotte, `Q1452762`); Bale Dersi (Edgar Degas, `Q3821820`); Mavi Koltukta Küçük Kız (Mary Cassatt, `Q3640080`); Beşik (Berthe Morisot, `Q5966403`); İzlenim, Gün Doğumu (Impression, soleil levant) (Claude Monet, `Q328523`); Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak (Utagawa Hiroshige, `Q5826309`); Fuji Dağı'nın 36 Manzarası (Katsushika Hokusai, `Q227494`); Kâğıt Oynayanlar (Les Joueurs de cartes) (Paul Cézanne, `Q17277950`); Asnières'de Yıkananlar (Georges Seurat, `Q1090837`); Yıldızlı Gece (Vincent van Gogh, `Q45585`); Moulin Rouge: La Goulue (Henri de Toulouse-Lautrec, `Q17026577`); Kiklop (Odilon Redon, `Q3793426`); Öpücük (Der Kuss) (Gustav Klimt, `Q698487`); Çığlık (The Scream) (Edvard Munch, `Q471379`)
+- **Parti 3:** Berlin Sokak Sahnesi (Ernst Ludwig Kirchner, `Q3476580`); Kompozisyon VII (Wassily Kandinsky, `Q2990634`); Guernica (Pablo Picasso, `Q175036`); Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek (Hannah Höch, `hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic`); Belleğin Azmi (The Persistence of Memory) (Salvador Dalí, `salvador-dali|The Persistence of Memory`); İmgelerin İhaneti (La trahison des images) (René Magritte, `Q1061035`); Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma (Three Studies for Figures at the Base of a Crucifixion) (Francis Bacon, `francis-bacon|Three Studies for Figures at the Base of a Crucifixion`)

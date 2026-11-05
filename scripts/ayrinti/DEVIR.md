@@ -2,7 +2,8 @@
 
 **Tur 1 · 5 Kasım 2026 · Claude (Claude Code, pilot).** 20 başyapıt, 119 nokta. Sürüm 1.71.0, KARARLAR İş 151.
 **Tur 2 · 5 Kasım 2026 · Claude (Claude Code).** Parti 1: 20 eser, 115 nokta. Sürüm 1.71.1, KARARLAR İş 152.
-Bir sonraki model önce `TALIMAT.md`'yi, sonra bu dosyayı, sonra `DURUM.md`'yi okur; **güncel hazır istem en altta** (Tur 2 bölümü).
+**Tur 3 · 5 Kasım 2026 · Claude (Claude Code).** Plan Parti 2: 20 eser, 115 nokta. Sürüm 1.71.2, KARARLAR İş 153.
+Bir sonraki model önce `TALIMAT.md`'yi, sonra bu dosyayı, sonra `DURUM.md`'yi okur; **güncel hazır istem en altta** (Tur 3 bölümü).
 
 ## 1. Yapılanlar
 
@@ -162,3 +163,53 @@ Bu turda 20 eser rahat sığdı (≈ 20 ızgara + 22 kontak sayfası bakışı).
 > testlerinde (`tests/unit/paket8.test.mjs`, `tests/e2e/paket8.spec.js`) yama sürümünü yükselt (1.71.x), PR aç. `tools/`
 > ve `data/sanatcilar.json` içeriğine dokunma. Kredi azalırsa bitirdiğin eserlerde dur; yarım eser bırakma; DEVIR ve
 > DURUM'u mutlaka güncelle.
+
+---
+
+# Tur 3 · Parti 2 (Claude, Claude Code)
+
+Emre "sıradaki partiyi yap" dedi, sonra açıkça **Parti 2**'yi istedi. Parti 1 aynı anda başka bir oturumda yapıldı (Tur 2,
+PR #172) ve önce birleşti; bu tur ona göre İş 153 / 1.71.2 olarak numaralandı. Toplam 60 / 107 eser, 349 nokta.
+
+### Yapılanlar
+- 20 başyapıt, 115 nokta (Salviati, Pontormo, Anguissola, Daniele da Volterra, Parmigianino, Rosso, Giulio Romano, Carracci,
+  Baburen, Artemisia, Orazio Gentileschi, Velázquez, Zurbarán, Rubens, Van Dyck, Rembrandt, Steen, Rigaud, Le Brun, Poussin).
+  Çoğunda 6 nokta; Pontormo, Volterra, Poussin 5; Zurbarán 4 (tek figürlü natürmort).
+- Kurs notlarındaki "bak" ayrıntılarının hepsi bir noktaya kondu (Velázquez'in dilekçesi, Rigaud'nun adalet eli ve kırmızı
+  topukları, Steen'in "JSteen" imzası, Baburen'in lavtadaki imzası, Rubens'in üç dilli levhası ve tutulmuş güneşi, Poussin'in
+  yazıtı ve gölgesi, Anguissola'nın tahtadaki yazıtı vb.).
+- Doğrulama: 18 eser 4096'dan; **Salviati (Aziz Thomas) ve Rosso (Musa)** yalnız 1280 kopyadan (en büyük kopyaları yok).
+- Kırpıntıdan sonra düzeltilenler: Anguissola imzası sola kaydı (yazıt kutunun solundan taşıyordu); Giulio Romano bileziği
+  kutunun kenarındaydı, ortalandı; Baburen "parayı isteyen eller" kutusu aşağı alındı (üstteki el yaşlı kadının değil, genç
+  kadının lavta sapını tutan eli; metin düzeltildi); Artemisia kabzanın sağ kolu taşıyordu, kutu genişletildi; Zurbarán "taş
+  seki" boş griydi, başın değdiği kenara kaydırıldı; Poussin diz çöken çobanın kutusu saçta kalmıştı, yüze indirildi;
+  Salviati'de kitap kutunun altından taşıyordu. Giulio Romano'da terlikler kırmızı değil, içi kırmızı siyah terlik (metin düzeltildi).
+
+### Emin olunmayanlar (metinde yumuşatıldı)
+- Velázquez: papanın "fazla gerçek" (troppo vero) dediği bir rivayettir; metinde öyle yazıldı.
+- Rosso: hangi figürün Musa olduğu (ortadaki siyah kumaşlı genç: yaygın görüş).
+- Pontormo: sağ kenardaki adamın otoportre olduğu; Rembrandt: oturan bereli adamın kimliği; babanın "farklı elleri" yorumu.
+- Artemisia: bilezikteki Artemis/Diana figürleri (bazı araştırmacılar).
+- Steen: kızın kucağındaki bebeğin aziz figürü olarak okunması (kurs notundaki gibi "benzer" dendi).
+- Carracci: kaplanın Bakkhus'un Hindistan dönüşünü çağrıştırması genel ikonografi bilgisidir, panoya özgü bir kaynak değil.
+- Rigaud: kralın yaşı "altmışını geçmiş" diye yazıldı (1638 doğumlu, portre 1701).
+- Volterra: freskin aşınmış yüzeyinde İsa'nın yüzü ve bayılan Meryem kırpıntıda bile silik; kutular figürün tamamına göre verildi.
+
+### Kalan plan (DURUM.md'nin numaralarına dikkat)
+`durum.py` partileri kalanlardan yeniden numaralar. Bu turdan sonra DURUM.md'de:
+- **Parti 1** = plan Parti 3 (Claude Lorrain → Millais, 20 eser), **Parti 2** = plan Parti 4 (Ingres → Munch, 20 eser),
+  **Parti 3** = plan Parti 5 (Kirchner → Bacon, 7 eser). Kalan 47 eser. §4 tablosundaki notlar geçerli.
+- Emre plan Parti 3'ü başka bir oturumda başlattı: o oturum da `eser_ayrintilari.json`, DEVIR, DURUM, KARARLAR ve sürüm
+  dosyalarına yazacağı için birleştirmede çakışma çıkar. Çözüm bu turdaki gibi: main'in dosyalarını al, kendi kayıtlarını
+  sona ekle, İş ve sürüm numarasını bir artır, `durum.py`'yi yeniden çalıştır.
+
+## Sonraki modele hazır istem
+
+> Sanat Atlası deposunda rehberli eser incelemesine devam et (KARARLAR İş 151–153). Önce `scripts/ayrinti/TALIMAT.md`,
+> `scripts/ayrinti/DEVIR.md` (en alttaki Tur 3 raporu) ve `scripts/ayrinti/DURUM.md`'yi oku. Önce main'i çek; `DURUM.md`'deki
+> **Parti 1**'in eserleri için `data/eser_ayrintilari.json`'a kayıt ekle: her eserde 4–6 ayrıntı noktası, `{x, y, w, h}`
+> 0–1 oranlı, 2–3 cümlelik Türkçe açıklama; `bak` ayrıntılarını noktalara al. İki aşamalı doğrulamayı atlama (1280 ızgara
+> → 4096 kırpıntı, `scripts/ayrinti/yardimci/`). Bitince `denetle.py` sıfır hata, `durum.py` ile DURUM.md, DEVIR.md'ye yeni
+> "Tur" raporu, KARARLAR'a not, `npm run test:unit` geçsin; `sw.js`, `js/surum.js` ve sürüm testlerinde
+> (`tests/unit/paket8.test.mjs`, `tests/e2e/paket8.spec.js`) yama sürümünü yükselt, PR aç. `tools/` ve `data/sanatcilar.json`
+> içeriğine dokunma. Yarım eser bırakma; DEVIR ve DURUM'u mutlaka güncelle.
