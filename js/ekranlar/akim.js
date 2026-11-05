@@ -133,7 +133,7 @@ function eserIzgarasi(eserler, veri) {
   return `<div class="akim-eserler">${eserler
     .map(
       ({ e, s }, i) =>
-        `<button type="button" class="akim-eser" ${veri}="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt">${cerceve(e, { genislik: 400, tembel: true })}<span><b>${kacis(eserBaslik(e))}</b>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}</span></button>`,
+        `<button type="button" class="akim-eser" ${veri}="${i}" aria-label="${kacis(eserBaslik(e))} — büyüt">${cerceve(e, { genislik: 400, tembel: true })}<span><b>${kacis(eserBaslik(e))}</b><small>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}${e.tarih ? ` · ${kacis(e.tarih)}` : ''}</small></span></button>`,
     )
     .join('')}</div>`;
 }
