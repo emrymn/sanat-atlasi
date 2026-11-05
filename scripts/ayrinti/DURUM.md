@@ -2,7 +2,7 @@
 
 Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-05). Elle düzenleme.
 
-**Toplam: 60 / 107 başyapıt bitti (349 nokta; eser başına ortalama 5.8).** Kalan: 47.
+**Toplam: 80 / 107 başyapıt bitti (466 nokta; eser başına ortalama 5.8).** Kalan: 27.
 
 ## Akım akım
 
@@ -114,60 +114,60 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-05). Elle düzenle
 | Süt Boşaltan Kadın | Johannes Vermeer | ✓ 6 nokta |
 | Aziz Nicholas Yortusu | Jan Steen | ✓ 6 nokta |
 
-### Fransız Klasisizmi · 3 / 4
+### Fransız Klasisizmi · 4 / 4
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | XIV. Louis'nin Portresi | Hyacinthe Rigaud | ✓ 6 nokta |
 | İskender'in Babil'e Girişi | Charles Le Brun | ✓ 6 nokta |
 | Arkadya'da Ben de Varım (Et in Arcadia ego) | Nicolas Poussin | ✓ 5 nokta |
-| Saba Melikesi'nin Gemiye Binişi | Claude Lorrain | — |
+| Saba Melikesi'nin Gemiye Binişi | Claude Lorrain | ✓ 6 nokta |
 
-### Geç İtalyan Barok · 0 / 1
-
-| Eser | Sanatçı | Durum |
-|---|---|---|
-| Banyosunda Batşeba | Sebastiano Ricci | — |
-
-### Rokoko · 1 / 7
+### Geç İtalyan Barok · 1 / 1
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Kythera Adası'na Yolculuk (Pèlerinage à l'île de Cythère) | Jean-Antoine Watteau | — |
-| Sarışın Odalık (Louise O'Murphy) | François Boucher | — |
-| Salıncak (L'Escarpolette) | Jean-Honoré Fragonard | — |
-| Kleopatra'nın Ziyafeti | Giovanni Battista Tiepolo | — |
-| Vatoz | Jean-Baptiste-Siméon Chardin | — |
-| Kırık Testi | Jean-Baptiste Greuze | — |
+| Banyosunda Batşeba | Sebastiano Ricci | ✓ 6 nokta |
+
+### Rokoko · 7 / 7
+
+| Eser | Sanatçı | Durum |
+|---|---|---|
+| Kythera Adası'na Yolculuk (Pèlerinage à l'île de Cythère) | Jean-Antoine Watteau | ✓ 6 nokta |
+| Sarışın Odalık (Louise O'Murphy) | François Boucher | ✓ 5 nokta |
+| Salıncak (L'Escarpolette) | Jean-Honoré Fragonard | ✓ 6 nokta |
+| Kleopatra'nın Ziyafeti | Giovanni Battista Tiepolo | ✓ 6 nokta |
+| Vatoz | Jean-Baptiste-Siméon Chardin | ✓ 6 nokta |
+| Kırık Testi | Jean-Baptiste Greuze | ✓ 6 nokta |
 | Cin Sokağı | William Hogarth | ✓ 6 nokta |
 
-### Neoklasisizm · 0 / 4
+### Neoklasisizm · 4 / 4
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| General Wolfe'un Ölümü | Benjamin West | — |
-| Gracchusların Annesi Kornelia | Angelica Kauffman | — |
-| Horas Kardeşlerin Yemini (Le Serment des Horaces) | Jacques-Louis David | — |
-| Marie Antoinette ve Çocukları | Élisabeth Vigée Le Brun | — |
+| General Wolfe'un Ölümü | Benjamin West | ✓ 6 nokta |
+| Gracchusların Annesi Kornelia | Angelica Kauffman | ✓ 6 nokta |
+| Horas Kardeşlerin Yemini (Le Serment des Horaces) | Jacques-Louis David | ✓ 6 nokta |
+| Marie Antoinette ve Çocukları | Élisabeth Vigée Le Brun | ✓ 6 nokta |
 
-### Romantizm · 1 / 8
+### Romantizm · 8 / 8
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Günlerin Atası | William Blake | — |
-| Sis Denizi Üzerinde Gezgin (Der Wanderer über dem Nebelmeer) | Caspar David Friedrich | — |
-| Kabus (The Nightmare) | Henry Fuseli | — |
-| Saman Arabası | John Constable | — |
-| Halka Yol Gösteren Özgürlük | Eugène Delacroix | — |
-| 3 Mayıs 1808 (El tres de mayo de 1808) | Francisco de Goya | — |
+| Günlerin Atası | William Blake | ✓ 6 nokta |
+| Sis Denizi Üzerinde Gezgin (Der Wanderer über dem Nebelmeer) | Caspar David Friedrich | ✓ 6 nokta |
+| Kabus (The Nightmare) | Henry Fuseli | ✓ 5 nokta |
+| Saman Arabası | John Constable | ✓ 6 nokta |
+| Halka Yol Gösteren Özgürlük | Eugène Delacroix | ✓ 6 nokta |
+| 3 Mayıs 1808 (El tres de mayo de 1808) | Francisco de Goya | ✓ 6 nokta |
 | Medusa'nın Salı (Le Radeau de la Méduse) | Théodore Géricault | ✓ 6 nokta |
-| Köle Gemisi (The Slave Ship) | J. M. W. Turner | — |
+| Köle Gemisi (The Slave Ship) | J. M. W. Turner | ✓ 5 nokta |
 
-### Prerafaelitler · 0 / 1
+### Prerafaelitler · 1 / 1
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
-| Ophelia | John Everett Millais | — |
+| Ophelia | John Everett Millais | ✓ 6 nokta |
 
 ### Akademizm ve Oryantalizm · 0 / 3
 
@@ -260,6 +260,5 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-05). Elle düzenle
 
 ## Kalanlar (basyapitlar.json sırasıyla, partiler hâlinde)
 
-- **Parti 1:** Saba Melikesi'nin Gemiye Binişi (Claude Lorrain, `Q7731855`); Banyosunda Batşeba (Sebastiano Ricci, `Q19863024`); Kythera Adası'na Yolculuk (Pèlerinage à l'île de Cythère) (Jean-Antoine Watteau, `Q531329`); Sarışın Odalık (Louise O'Murphy) (François Boucher, `Q1131176`); Salıncak (L'Escarpolette) (Jean-Honoré Fragonard, `Q2629559`); Kleopatra'nın Ziyafeti (Giovanni Battista Tiepolo, `Q18167078`); Vatoz (Jean-Baptiste-Siméon Chardin, `Q3212142`); Kırık Testi (Jean-Baptiste Greuze, `Q4388208`); General Wolfe'un Ölümü (Benjamin West, `Q956541`); Gracchusların Annesi Kornelia (Angelica Kauffman, `angelica-kauffman|Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures)`); Horas Kardeşlerin Yemini (Le Serment des Horaces) (Jacques-Louis David, `Q28797801`); Marie Antoinette ve Çocukları (Élisabeth Vigée Le Brun, `Q3937621`); Günlerin Atası (William Blake, `Q2324840`); Sis Denizi Üzerinde Gezgin (Der Wanderer über dem Nebelmeer) (Caspar David Friedrich, `Q311243`); Kabus (The Nightmare) (Henry Fuseli, `Q2317837`); Saman Arabası (John Constable, `Q2366825`); Halka Yol Gösteren Özgürlük (Eugène Delacroix, `Q29530`); 3 Mayıs 1808 (El tres de mayo de 1808) (Francisco de Goya, `Q1091086`); Köle Gemisi (The Slave Ship) (J. M. W. Turner, `Q219344`); Ophelia (John Everett Millais, `Q1065493`)
-- **Parti 2:** Büyük Odalık (La Grande Odalisque) (Jean-Auguste-Dominique Ingres, `Q1978815`); Köle Pazarı (Jean-Léon Gérôme, `Q3224275`); Venüs'ün Doğuşu (William-Adolphe Bouguereau, `Q1283024`); Üçüncü Mevki Vagon (Honoré Daumier, `Q3228340`); Ornans'ta Cenaze (Gustave Courbet, `Q540488`); Başak Toplayanlar (Des glaneuses) (Jean-François Millet, `Q1368055`); Paris Sokağı, Yağmurlu Hava (Rue de Paris, temps de pluie) (Gustave Caillebotte, `Q1452762`); Bale Dersi (Edgar Degas, `Q3821820`); Mavi Koltukta Küçük Kız (Mary Cassatt, `Q3640080`); Beşik (Berthe Morisot, `Q5966403`); İzlenim, Gün Doğumu (Impression, soleil levant) (Claude Monet, `Q328523`); Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak (Utagawa Hiroshige, `Q5826309`); Fuji Dağı'nın 36 Manzarası (Katsushika Hokusai, `Q227494`); Kâğıt Oynayanlar (Les Joueurs de cartes) (Paul Cézanne, `Q17277950`); Asnières'de Yıkananlar (Georges Seurat, `Q1090837`); Yıldızlı Gece (Vincent van Gogh, `Q45585`); Moulin Rouge: La Goulue (Henri de Toulouse-Lautrec, `Q17026577`); Kiklop (Odilon Redon, `Q3793426`); Öpücük (Der Kuss) (Gustav Klimt, `Q698487`); Çığlık (The Scream) (Edvard Munch, `Q471379`)
-- **Parti 3:** Berlin Sokak Sahnesi (Ernst Ludwig Kirchner, `Q3476580`); Kompozisyon VII (Wassily Kandinsky, `Q2990634`); Guernica (Pablo Picasso, `Q175036`); Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek (Hannah Höch, `hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic`); Belleğin Azmi (The Persistence of Memory) (Salvador Dalí, `salvador-dali|The Persistence of Memory`); İmgelerin İhaneti (La trahison des images) (René Magritte, `Q1061035`); Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma (Three Studies for Figures at the Base of a Crucifixion) (Francis Bacon, `francis-bacon|Three Studies for Figures at the Base of a Crucifixion`)
+- **Parti 1:** Büyük Odalık (La Grande Odalisque) (Jean-Auguste-Dominique Ingres, `Q1978815`); Köle Pazarı (Jean-Léon Gérôme, `Q3224275`); Venüs'ün Doğuşu (William-Adolphe Bouguereau, `Q1283024`); Üçüncü Mevki Vagon (Honoré Daumier, `Q3228340`); Ornans'ta Cenaze (Gustave Courbet, `Q540488`); Başak Toplayanlar (Des glaneuses) (Jean-François Millet, `Q1368055`); Paris Sokağı, Yağmurlu Hava (Rue de Paris, temps de pluie) (Gustave Caillebotte, `Q1452762`); Bale Dersi (Edgar Degas, `Q3821820`); Mavi Koltukta Küçük Kız (Mary Cassatt, `Q3640080`); Beşik (Berthe Morisot, `Q5966403`); İzlenim, Gün Doğumu (Impression, soleil levant) (Claude Monet, `Q328523`); Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak (Utagawa Hiroshige, `Q5826309`); Fuji Dağı'nın 36 Manzarası (Katsushika Hokusai, `Q227494`); Kâğıt Oynayanlar (Les Joueurs de cartes) (Paul Cézanne, `Q17277950`); Asnières'de Yıkananlar (Georges Seurat, `Q1090837`); Yıldızlı Gece (Vincent van Gogh, `Q45585`); Moulin Rouge: La Goulue (Henri de Toulouse-Lautrec, `Q17026577`); Kiklop (Odilon Redon, `Q3793426`); Öpücük (Der Kuss) (Gustav Klimt, `Q698487`); Çığlık (The Scream) (Edvard Munch, `Q471379`)
+- **Parti 2:** Berlin Sokak Sahnesi (Ernst Ludwig Kirchner, `Q3476580`); Kompozisyon VII (Wassily Kandinsky, `Q2990634`); Guernica (Pablo Picasso, `Q175036`); Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek (Hannah Höch, `hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic`); Belleğin Azmi (The Persistence of Memory) (Salvador Dalí, `salvador-dali|The Persistence of Memory`); İmgelerin İhaneti (La trahison des images) (René Magritte, `Q1061035`); Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma (Three Studies for Figures at the Base of a Crucifixion) (Francis Bacon, `francis-bacon|Three Studies for Figures at the Base of a Crucifixion`)
