@@ -15293,21 +15293,20 @@ li.gorundu .konu-deste i:nth-child(2) {
 .tumu {
   border-radius: var(--kart-kose);
 }
-.akim-eser,
-.eser,
-.galeri-eser,
-.vitrin-kart,
-.konu-kart {
+/* İş 143: basınca küçülme tek kural: İş 70'teki `scale: 0.965` (.eser, .konu-kart …) öteki eser kartlarına da; önceden
+   burada ayrıca transform: scale(.97) vardı, ikisi birlikte ~%6,4 küçültüyordu. Başyapıt vitrini kendi efektinde. */
+:is(.akim-eser, .galeri-eser) {
   -webkit-tap-highlight-color: transparent;
-  transition: transform 0.25s cubic-bezier(0.3, 1.4, 0.5, 1);
+  transition: scale 0.4s cubic-bezier(0.3, 1.7, 0.5, 1);
 }
-.akim-eser:active,
-.eser:active,
-.galeri-eser:active,
-.vitrin-kart:active,
-.konu-kart:active {
-  transform: scale(0.97);
+:is(.akim-eser, .galeri-eser):active {
+  scale: 0.965;
   transition-duration: 0.12s;
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.akim-eser, .galeri-eser):active {
+    scale: none;
+  }
 }
 /* görselle yazı arası her kartta 12 px, satırlar arası 4 px */
 .eser,

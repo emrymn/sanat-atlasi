@@ -3,7 +3,7 @@
 // sayaçları düzelir; eski önbellekten taşırken depo dolarsa taşınmamış görseller silinmez; 400'lükler deftere doğru yazılır.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { ilerlemeYukle, ilerlemeKaydet, ilerlemeDogrula, kayitKilitliMi, kayitKilidiniAc, varsayilanIlerleme, ANAHTAR } from '../../js/depo.js';
+import { ilerlemeYukle, ilerlemeKaydet, ilerlemeDogrula, kayitKilitliMi, kayitKilidiniAc, varsayilanIlerleme, enYeniKayit, ANAHTAR } from '../../js/depo.js';
 import { bugunStr } from '../../js/leitner.js';
 
 const bekle = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -88,15 +88,45 @@ test('bozuk (ayrıştırılamayan) kayıt kilitlemez: başlangıç ilerlemesiyle
   temizle();
 });
 
-test('localStorage yazamazsa eski (bayat) kopya silinir; IndexedDB de yazamazsa kullanıcıya söylenir', async () => {
+test('İş 143: localStorage yazamazsa eski kopya silinmez; IndexedDB de yazamazsa kullanıcıya söylenir', async () => {
   const ls = sahteLocalStorage({ yazmaHatasi: true });
-  ls.m.set(ANAHTAR, JSON.stringify(varsayilanIlerleme([1])));
+  const eski = JSON.stringify(varsayilanIlerleme([1]));
+  ls.m.set(ANAHTAR, eski);
   bozukIndexedDB();
   const olaylar = olaylariTopla();
   ilerlemeKaydet(varsayilanIlerleme([1, 2, 3]));
-  assert.equal(ls.m.has(ANAHTAR), false); // bir sonraki açılışta bayat kopya okunmaz
+  assert.equal(ls.m.get(ANAHTAR), eski); // son geçerli kayıt korunur
+  assert.deepEqual(ls.silinen, []);
   await bekle(400);
   assert.deepEqual(olaylar, ['yazilamadi']);
+  temizle();
+});
+
+test('İş 143: her kayıt artan numara alır; açılışta iki depodan numarası büyük olan okunur', async () => {
+  const ls = sahteLocalStorage();
+  const a = varsayilanIlerleme([1]);
+  ilerlemeKaydet(a);
+  const n1 = a.kayitNo;
+  ilerlemeKaydet(a);
+  assert.equal(a.kayitNo, n1 + 1);
+  ls.m.set(ANAHTAR, JSON.stringify({ ...varsayilanIlerleme([1]), kayitNo: 5 }));
+  // localStorage yeni: o okunur
+  let y = await ilerlemeYukle(async () => ({ islenen: [] }), { idbOku: async () => ({ ...varsayilanIlerleme([1, 2, 3]), kayitNo: 2 }) });
+  assert.deepEqual(y.islenen, [1]);
+  // localStorage eski (yazamamıştı), IndexedDB yeni: yeni okunur
+  y = await ilerlemeYukle(async () => ({ islenen: [] }), { idbOku: async () => ({ ...varsayilanIlerleme([1, 2, 3]), kayitNo: 9 }) });
+  assert.deepEqual(y.islenen, [1, 2, 3]);
+  // bir sonraki kayıt ikisinden de büyük numara alır (geri yüklenen eski yedek de)
+  const yedek = { ...varsayilanIlerleme([7]), kayitNo: 1 };
+  ilerlemeKaydet(yedek);
+  assert.ok(yedek.kayitNo > 9);
+  // eski kayıtlarda numara yok: localStorage önce (eski davranış)
+  assert.equal(enYeniKayit({ islenen: [1] }, { islenen: [2] }).islenen[0], 1);
+  assert.equal(enYeniKayit(null, { islenen: [2] }).islenen[0], 2);
+  // yedekte numara korunur, bozuksa 0
+  assert.equal(ilerlemeDogrula({ islenen: [], kayitNo: 4 }).kayitNo, 4);
+  assert.equal(ilerlemeDogrula({ islenen: [], kayitNo: -2 }).kayitNo, 0);
+  await bekle(350);
   temizle();
 });
 
@@ -203,4 +233,16 @@ test('indirme defteri 400’lükleri de tanır (önceden null yazılıyordu)', a
   assert.equal(defterAdi(`https://gorsel.noracloud.ai/b/${ad}.jpg`), `b:${ad}`);
   assert.equal(defterAdi(`https://gorsel.noracloud.ai/d/${ad}.jpg`), ad);
   assert.equal(new Set([`k:${ad}`, `b:${ad}`, ad]).size, 3);
+});
+
+test('İş 143: sanatçının yaşamıyla çelişen yıl şüpheli sayılır (gösterilmez)', async () => {
+  const { yilSupheliMi } = await import('../../js/eserler.js');
+  const s = { dogum: 1395, olum: 1455 };
+  assert.equal(yilSupheliMi(1500, s), true); // "15. yüzyıl" → 1500
+  assert.equal(yilSupheliMi(1440, s), false);
+  assert.equal(yilSupheliMi(1457, s), false); // ölümden hemen sonra bitirilen
+  assert.equal(yilSupheliMi(1400, s), true); // 5 yaşında
+  assert.equal(yilSupheliMi(null, s), false);
+  assert.equal(yilSupheliMi(1440, { dogum: null, olum: 1416 }), true);
+  assert.equal(yilSupheliMi(1600, {}), false); // yaşam bilinmiyor: dokunulmaz
 });

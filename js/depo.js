@@ -126,6 +126,8 @@ export function ilerlemeDogrula(nesne) {
         ? { tarih: v.gununDegisim.tarih, id: v.gununDegisim.id }
         : null,
     olusturma: v.olusturma || t.olusturma,
+    // İş 143: her kayıtta artan numara; açılışta localStorage ile IndexedDB'den büyüğü okunur
+    kayitNo: Number.isInteger(v.kayitNo) && v.kayitNo >= 0 ? v.kayitNo : 0,
   };
 }
 
@@ -234,8 +236,19 @@ function bozukSakla(ham) {
 }
 const mesajOf = (e) => (e && (e.name && e.name !== 'Error' ? `${e.name}: ${e.message}` : e.message)) || String(e);
 
-export async function ilerlemeYukle(baslangicGetir) {
+// İş 143 (Astra'nın incelemesi, doğrulandı): iki depodaki kayıttan numarası (kayitNo) büyük olan; eşitse
+// localStorage'daki (eski kayıtlarda numara yok: ikisi 0, eskisi gibi localStorage önce)
+export function enYeniKayit(ls, idb) {
+  if (!ls) return idb || null;
+  if (!idb) return ls;
+  return (idb.kayitNo || 0) > (ls.kayitNo || 0) ? idb : ls;
+}
+
+let sonKayitNo = 0;
+export async function ilerlemeYukle(baslangicGetir, { idbOku = () => idbAlKesin('ilerleme', 'ana') } = {}) {
   let okunamadi = null;
+  let lsKayit = null;
+  let idbKayit = null;
   let ham = null;
   try {
     ham = localStorage.getItem(ANAHTAR);
@@ -244,17 +257,17 @@ export async function ilerlemeYukle(baslangicGetir) {
   }
   if (ham) {
     try {
-      return ilerlemeDogrula(JSON.parse(ham));
+      lsKayit = ilerlemeDogrula(JSON.parse(ham));
     } catch (e) {
-      bozukSakla(ham); // bozuk: IndexedDB yedeğine bakılır
+      bozukSakla(ham);
       hataEkle({ m: `Kayıtlı ilerleme bozuk (${mesajOf(e)}); IndexedDB yedeğine bakıldı, bozuk kayıt saklandı`, k: 'depo' });
     }
   }
   try {
-    const idb = await idbAlKesin('ilerleme', 'ana');
+    const idb = await idbOku();
     if (idb) {
       try {
-        return ilerlemeDogrula(idb);
+        idbKayit = ilerlemeDogrula(idb);
       } catch (e) {
         bozukSakla(idb);
         hataEkle({ m: `IndexedDB'deki ilerleme bozuk (${mesajOf(e)}); bozuk kayıt saklandı`, k: 'depo' });
@@ -262,6 +275,12 @@ export async function ilerlemeYukle(baslangicGetir) {
     }
   } catch (e) {
     if (typeof indexedDB !== 'undefined') okunamadi = `${okunamadi ? okunamadi + ' · ' : ''}IndexedDB: ${mesajOf(e)}`;
+  }
+  const secilen = enYeniKayit(lsKayit, idbKayit);
+  if (secilen) {
+    sonKayitNo = Math.max(lsKayit ? lsKayit.kayitNo : 0, idbKayit ? idbKayit.kayitNo : 0);
+    if (lsKayit && secilen !== lsKayit) hataEkle({ m: `localStorage'daki ilerleme eskiydi (${lsKayit.kayitNo} < ${idbKayit.kayitNo}); IndexedDB'deki okundu`, k: 'depo' });
+    return secilen;
   }
   if (okunamadi) {
     kayitKilidi = true;
@@ -276,29 +295,42 @@ export async function ilerlemeYukle(baslangicGetir) {
   return varsayilanIlerleme(islenen);
 }
 
+// İş 143: hiçbir kopya silinmez. Her kayıt bir öncekinden büyük numara alır (yedek geri yüklense de); yazamayan depo
+// eski kopyasını korur, açılışta numarası büyük olan okunur. IndexedDB'ye yazım 300 ms toplanır; sayfa gizlenirken
+// bekleyen yazım hemen yapılır.
 let idbZamanlayici = null;
+let idbBekleyen = null;
 let lsUyarildi = false;
+function idbYaz() {
+  clearTimeout(idbZamanlayici);
+  idbZamanlayici = null;
+  const b = idbBekleyen;
+  idbBekleyen = null;
+  if (!b) return Promise.resolve();
+  return idbKoy('ilerleme', 'ana', JSON.parse(JSON.stringify(b.ilerleme))).then((tamam) => {
+    if (!tamam && !b.lsTamam) kayitSorunu('yazilamadi');
+  });
+}
+export const ilerlemeyiHemenYaz = idbYaz;
+if (typeof window !== 'undefined') {
+  window.addEventListener('pagehide', () => idbYaz());
+  document.addEventListener('visibilitychange', () => document.visibilityState === 'hidden' && idbYaz());
+}
 export function ilerlemeKaydet(ilerleme) {
   if (kayitKilidi) return kayitSorunu('kilitli');
+  sonKayitNo = Math.max(sonKayitNo, ilerleme.kayitNo || 0) + 1;
+  ilerleme.kayitNo = sonKayitNo;
   let lsTamam = true;
   try {
     localStorage.setItem(ANAHTAR, JSON.stringify(ilerleme));
   } catch (e) {
-    // kota/özel mod: IndexedDB yine denenir. Eski kopya silinir: kalırsa bir sonraki açılışta IndexedDB'deki yeni
-    // kayıt yerine o (bayat) okunurdu
+    // kota/özel mod: IndexedDB yine denenir; localStorage'daki eski kopya yerinde kalır (numarası küçük)
     lsTamam = false;
-    try {
-      localStorage.removeItem(ANAHTAR);
-    } catch {
-      /* depo kapalı */
-    }
     if (!lsUyarildi) (lsUyarildi = true), hataEkle({ m: `İlerleme localStorage'a yazılamadı: ${mesajOf(e)}`, k: 'depo' });
   }
+  idbBekleyen = { ilerleme, lsTamam };
   clearTimeout(idbZamanlayici);
-  idbZamanlayici = setTimeout(async () => {
-    const tamam = await idbKoy('ilerleme', 'ana', JSON.parse(JSON.stringify(ilerleme)));
-    if (!tamam && !lsTamam) kayitSorunu('yazilamadi');
-  }, 300);
+  idbZamanlayici = setTimeout(idbYaz, 300);
 }
 
 // ---------- Yedek hatırlatması (İ3) ----------
