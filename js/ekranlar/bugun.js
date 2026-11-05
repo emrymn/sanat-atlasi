@@ -286,7 +286,7 @@ const MOZAIK_SATIRLARI = [22, 30, 26, 22]; // yüzde yükseklik
 function paletZemini(p) {
   const kutu = ekran.querySelector('[data-tablo-devami]');
   if (!kutu || !p || !p.length) return;
-  const zemin = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim() || '#0b0a0b';
+  const zemin = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim() || '#121110';
   const koyu = hsl(zemin)[2] < 0.5;
   const ayarla = (r) => {
     const [h, sa, l] = hsl(r);

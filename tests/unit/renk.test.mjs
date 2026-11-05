@@ -3,8 +3,9 @@ import assert from 'node:assert/strict';
 import { paletHesapla, vurguSec, acikHal, doluButon, renkTemasi, hsl, hsldenHex, hexten, KOYU_YAZI, BEYAZ_YAZI } from '../../js/renk.js';
 import { kontrast } from '../../js/tasarim.js';
 
-const GECE = '#0B0A0B';
+const GECE = '#121110'; // İş 141 (önce #0B0A0B)
 const SEPYA = '#F1E8D6';
+const GUNDUZ = '#ECE8E1'; // İş 140
 
 // n piksel tek renk
 function piksel(renk, n) {
@@ -41,6 +42,7 @@ test('açık hal: koyu zeminde ve açık zeminde en az 4.5:1', () => {
   for (const renk of ['#1a2b6d', '#b8452f', '#3f5b45', '#7a2230', '#c9a227', '#333333']) {
     assert.ok(kontrast(acikHal(renk, GECE), GECE) >= 4.5, `${renk} gece`);
     assert.ok(kontrast(acikHal(renk, SEPYA), SEPYA) >= 4.5, `${renk} sepya`);
+    assert.ok(kontrast(acikHal(renk, GUNDUZ), GUNDUZ) >= 4.5, `${renk} gündüz`);
     // koyu zeminde gerçekten açılır
     assert.ok(hsl(acikHal(renk, GECE))[2] >= hsl(renk)[2] - 1e-9);
   }

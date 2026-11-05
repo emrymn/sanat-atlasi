@@ -5,14 +5,15 @@
 :root,
 :root[data-tema='gece'],
 .gor {
-  --bg: #0b0a0b;
-  --bg-rgb: 11, 10, 11;
-  --surface: #171517;
-  --border: #2a272a;
-  --ink: #f4efe6;
-  --ink-2: #aba39a;
-  --ink-3: #827a72;
-  --ink-soluk: #625b55;
+  /* İş 141: kömür siyahı zemin (önce #0b0a0b, morumsu saf siyah), kırık beyaz yazı (önce #f4efe6) */
+  --bg: #121110;
+  --bg-rgb: 18, 17, 16;
+  --surface: #1c1a18;
+  --border: #2e2b28;
+  --ink: #ebe5da;
+  --ink-2: #aca498;
+  --ink-3: #8a8379;
+  --ink-soluk: #645e57;
   --right: #6fb487;
   --right-ikon: #8fd0a2;
   --right-bg: rgba(111, 180, 135, 0.14);
@@ -20,71 +21,46 @@
   --wrong-ikon: #f09a86;
   --wrong-bg: rgba(214, 104, 84, 0.14);
   --doku: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  --tab-bg: rgba(20, 18, 17, 0.78);
-  --overlay-btn: rgba(11, 10, 11, 0.6);
+  --tab-bg: rgba(24, 22, 20, 0.8);
+  --overlay-btn: rgba(18, 17, 16, 0.6);
   --durum-cubugu: transparent;
   /* resim rengi gelene kadar nötr vurgu */
   --vurgu: #8a827a;
-  --vurgu-yazi: #0b0a0b;
-  --vurgu-acik: #d8d0c6;
-  --vurgu-acik-yazi: #0b0a0b;
+  --vurgu-yazi: #121110;
+  --vurgu-acik: #cfc7bc;
+  --vurgu-acik-yazi: #121110;
   --vurgu-koyu: #2a2725;
   --vurgu-rgb: 138, 130, 122;
   color-scheme: dark;
 }
-/* Sepya ve Açık: aynı yerleşim; vurgu açık zeminde okunacak şekilde koyulaşır */
-:root[data-tema='sepya'] {
-  --bg: #f1e8d6;
-  --bg-rgb: 241, 232, 214;
-  --surface: #f8f2e6;
-  --border: #d9cbb2;
-  --ink: #352b21;
-  --ink-2: #6b5d4d;
-  --ink-3: #75664f;
-  --ink-soluk: #a49580;
-  --right: #2c6e49;
-  --right-ikon: #2c6e49;
-  --right-bg: rgba(44, 110, 73, 0.12);
-  --wrong: #a23b2a;
-  --wrong-ikon: #a23b2a;
-  --wrong-bg: rgba(162, 59, 42, 0.1);
-  --doku: radial-gradient(rgba(53, 43, 33, 0.06) 1px, transparent 1px);
-  --tab-bg: rgba(248, 242, 230, 0.84);
-  --overlay-btn: rgba(241, 232, 214, 0.8);
-  --durum-cubugu: #2b241d;
-  --vurgu: #6b5d4d;
-  --vurgu-yazi: #ffffff;
-  --vurgu-acik: #6b5d4d;
-  --vurgu-acik-yazi: #ffffff;
-  --vurgu-koyu: #e6dcc8;
-  --vurgu-rgb: 107, 93, 77;
-  color-scheme: light;
-}
-:root[data-tema='acik'] {
-  --bg: #fbfaf7;
-  --bg-rgb: 251, 250, 247;
-  --surface: #ffffff;
-  --border: #e3ddd2;
-  --ink: #24201b;
-  --ink-2: #5f574d;
-  --ink-3: #6f665a;
-  --ink-soluk: #a49b90;
-  --right: #2c6e49;
-  --right-ikon: #2c6e49;
-  --right-bg: rgba(44, 110, 73, 0.1);
-  --wrong: #a23b2a;
-  --wrong-ikon: #a23b2a;
-  --wrong-bg: rgba(162, 59, 42, 0.08);
-  --doku: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-  --tab-bg: rgba(255, 255, 255, 0.84);
-  --overlay-btn: rgba(251, 250, 247, 0.85);
-  --durum-cubugu: #24201b;
-  --vurgu: #5f574d;
-  --vurgu-yazi: #ffffff;
-  --vurgu-acik: #5f574d;
-  --vurgu-acik-yazi: #ffffff;
-  --vurgu-koyu: #efebe4;
-  --vurgu-rgb: 95, 87, 77;
+/* Gündüz (İş 140; Sepya ve Açık'ın yerine, v0'ın denemesinden): sabit, nötr sıcak kâğıt; renk yalnız tablodan ve
+   vurgulardan gelir. Tablolar peçesiz, canlı; üstlerindeki yazılar tablonun kendi gölge tonuna (--golge-rgb) oturur. */
+:root[data-tema='gunduz'] {
+  --bg: #ece8e1;
+  --bg-rgb: 236, 232, 225;
+  --surface: #f7f5f1;
+  --border: #d6d0c6;
+  --golge-rgb: 20, 17, 14;
+  --ink: #1f1b17;
+  --ink-2: #4c463f;
+  --ink-3: #5f5850;
+  --ink-soluk: #8e867c;
+  --right: #2a6644;
+  --right-ikon: #2a6644;
+  --right-bg: rgba(42, 102, 68, 0.12);
+  --wrong: #9a3726;
+  --wrong-ikon: #9a3726;
+  --wrong-bg: rgba(154, 55, 38, 0.1);
+  --doku: radial-gradient(rgba(31, 27, 23, 0.035) 1px, transparent 1px);
+  --tab-bg: rgba(247, 245, 241, 0.84);
+  --overlay-btn: rgba(247, 245, 241, 0.85);
+  --durum-cubugu: #1f1b17;
+  --vurgu: #4c463f;
+  --vurgu-yazi: #f7f5f1;
+  --vurgu-acik: #4c463f;
+  --vurgu-acik-yazi: #f7f5f1;
+  --vurgu-koyu: #d6d0c6;
+  --vurgu-rgb: 76, 70, 63;
   color-scheme: light;
 }
 :root {
@@ -14018,12 +13994,10 @@ a.harita-seviye:active {
 .imza-uc.bitti {
   opacity: 0;
 }
-:root[data-tema='sepya'] .imza,
-:root[data-tema='acik'] .imza {
+:root[data-tema='gunduz'] .imza {
   background-image: linear-gradient(100deg, #6e4a14 0%, #a8782a 22%, #8a6420 42%, #d4a64a 50%, #8a6420 58%, #a8782a 78%, #5a3c10 100%);
 }
-:root[data-tema='sepya'] .imza-uc,
-:root[data-tema='acik'] .imza-uc {
+:root[data-tema='gunduz'] .imza-uc {
   background: radial-gradient(circle, #fff3d0 0%, #c9973a 40%, rgba(201, 151, 58, 0) 72%);
   box-shadow: 0 0 10px 3px rgba(154, 107, 31, 0.35);
 }
@@ -14083,8 +14057,7 @@ a.harita-seviye:active {
 .portre-arka.yuklendi {
   opacity: 0.7;
 }
-:root[data-tema='sepya'] .portre-arka.yuklendi,
-:root[data-tema='acik'] .portre-arka.yuklendi {
+:root[data-tema='gunduz'] .portre-arka.yuklendi {
   opacity: 0.4;
 }
 .isim-ek {
@@ -14649,8 +14622,7 @@ html.gecis-suruyor {
   -webkit-backdrop-filter: blur(16px) saturate(1.6);
   backdrop-filter: blur(16px) saturate(1.6);
 }
-:root[data-tema='sepya'] .sekmeler,
-:root[data-tema='acik'] .sekmeler {
+:root[data-tema='gunduz'] .sekmeler {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1) 50%),
     rgba(var(--bg-rgb), 0.5);
@@ -15168,13 +15140,9 @@ button.motif-kapak:active .hp-kapak-eser img {
   --notr-yuzey: rgba(244, 239, 230, 0.05);
   --kart-kose: 4px;
 }
-:root[data-tema='sepya'] {
-  --notr-kenar: rgba(53, 43, 33, 0.16);
-  --notr-yuzey: rgba(53, 43, 33, 0.04);
-}
-:root[data-tema='acik'] {
-  --notr-kenar: rgba(36, 32, 27, 0.13);
-  --notr-yuzey: rgba(36, 32, 27, 0.03);
+:root[data-tema='gunduz'] {
+  --notr-kenar: rgba(31, 27, 23, 0.14);
+  --notr-yuzey: rgba(31, 27, 23, 0.035);
 }
 
 /* --- 1 · renk yalnız vurguda --- */
@@ -15432,4 +15400,122 @@ li.gorundu .konu-deste i:nth-child(2) {
    tablosunun ortasını örtüyordu; deste 64 px aşağıda, "Bugünkü tur" sayısının sağında (yazıya değmez) */
 .pk-deste {
   transform: translateY(64px);
+}
+
+
+/* ===== İş 140 · Gündüz teması (Emre: "temaları değiştirelim, v0 ile çok uğraştım ama beğenmedim, onun üzerinden
+   gidelim"; seçimi: Gece + Gündüz, zemin sabit nötr kâğıt). v0'ın denemesinden alınanlar: Tuval'de yazıların tablonun
+   gölge tonuna oturması, Atölye ve Defter'de tablonun peçesiz kalıp içeriğin panellere oturması. Alınmayan: zeminin,
+   panellerin ve sekme çubuğunun her gün tablodan boyanması (paneller ve zemin hep aynı kâğıt). ===== */
+/* Gündüz: tablonun sahnesi beyaz peçeye boğulmaz; yazılar resmin kendi en koyu tonuna (--golge-rgb) oturur,
+   sahne bitince o ton kâğıda yavaşça erir */
+:root[data-tema='gunduz'] .sahne:has(.bugun-kahraman) {
+  --ink: #f2ece2;
+  --ink-2: #ddd5c9;
+  --ink-3: #c8bfb2;
+  --vurgu-acik: #efe9df;
+  --border: rgba(242, 236, 226, 0.18);
+  color: var(--ink);
+  background: linear-gradient(180deg, rgb(var(--golge-rgb)) calc(100% - 26svh), rgba(var(--golge-rgb), 0) 100%);
+}
+:root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman,
+:root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman::before {
+  background: rgb(var(--golge-rgb));
+}
+:root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman::after {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--golge-rgb), 0.55) 0%,
+    rgba(var(--golge-rgb), 0) 22%,
+    rgba(var(--golge-rgb), 0) 48%,
+    rgba(var(--golge-rgb), 0.6) 80%,
+    rgba(var(--golge-rgb), 0.92) 100%
+  );
+}
+:root[data-tema='gunduz'] .sahne-yapiskan.bugun-kahraman .sahne-isim {
+  text-shadow: 0 1px 16px rgba(var(--golge-rgb), 0.55);
+}
+:root[data-tema='gunduz'] .sahne:has(.bugun-kahraman) .sahne-paneller .duvar-etiketi::before {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--golge-rgb), 0) 0,
+    rgba(var(--golge-rgb), 0.6) 90px,
+    rgba(var(--golge-rgb), 0.6) calc(100% - 90px),
+    rgba(var(--golge-rgb), 0) 100%
+  );
+}
+:root[data-tema='gunduz'] .sahne:has(.bugun-kahraman) .duvar-etiketi {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  text-shadow: 0 1px 18px rgba(var(--golge-rgb), 0.7);
+}
+/* Atölye ve Defter: tablo yıkanmaz; üstte başlık için ince, altta kâğıda eriyen geçiş */
+:root[data-tema='gunduz'] :is(.pk-sahne, .ilr-sahne)::before {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--bg-rgb), 0.8) 0%,
+    rgba(var(--bg-rgb), 0) 20%,
+    rgba(var(--bg-rgb), 0) 62%,
+    rgba(var(--bg-rgb), 0.55) 86%,
+    var(--bg) 100%
+  );
+}
+:root[data-tema='gunduz'] .pk-ust .ust h1 {
+  text-shadow: 0 1px 14px rgba(var(--bg-rgb), 0.9);
+}
+:root[data-tema='gunduz'] :is(.pk-govde, .ilr-govde) {
+  padding: 16px 18px 18px;
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow:
+    inset 0 0 0 1px var(--notr-kenar),
+    0 18px 36px -20px rgba(var(--golge-rgb), 0.55);
+}
+/* Defter ve Atölye'nin alt bölümleri kâğıt panellerde */
+:root[data-tema='gunduz'] :is(.calisma-takvim, .calisma-egri, .koleksiyon-bag, .pk-ek-turlar, .pk-salonlar, .cevapsiz-akimlar) {
+  padding: 16px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--notr-kenar);
+}
+:root[data-tema='gunduz'] .hatalar-satir {
+  border-top-color: var(--notr-kenar);
+  border-bottom-color: transparent;
+}
+
+/* ===== İş 141 · Gece (ChatGPT'nin önerisi: "kömür siyahı, kırık beyaz yazı, sınırlı sıcak vurgu; Gece'de fazla
+   parlak vurgudan kaçın"; Emre: "gece temasına da deneyelim"). Renkler en üstte; burada yalnız parıltılar: resmin
+   renginde yayılan büyük haleler kısıldı (çizgi ve halkaların kendisi aynı). ===== */
+:root:not([data-tema='gunduz']) .ilr-cizgi i {
+  box-shadow: none;
+}
+:root:not([data-tema='gunduz']) .kitap.sira {
+  box-shadow:
+    0 0 0 2px rgba(var(--vurgu-rgb), 0.85),
+    0 10px 20px -10px rgba(0, 0, 0, 0.7);
+}
+:root:not([data-tema='gunduz']) .skor-dolu::after {
+  box-shadow: 0 0 8px 2px rgba(var(--vurgu-rgb), 0.4);
+}
+:root:not([data-tema='gunduz']) .yol-isik {
+  box-shadow: 0 0 8px 3px rgba(var(--vurgu-rgb), 0.45);
+}
+:root:not([data-tema='gunduz']) .sekme-isaret {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 0 0 1px rgba(var(--vurgu-rgb), 0.4);
+}
+:root:not([data-tema='gunduz']) :is(.dugme.vurgu, .dugme.birincil, .siradaki.resimli .siradaki-dugme) {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+
+/* İş 142 (Emre: "haritanın altı boş, harita neden üstten başlıyor"; v0'ın denemesindeki çözüm): sekme çubuğu için
+   bırakılan alt boşluk haritada da kalıyor, yolculuğun başladığı en alt bölümün altında ~100 px boş şerit
+   görünüyordu. Harita sayfanın dibine iner; sekme çubuğu tablonun üstünde yüzer. */
+#uygulama:has(> .harita) {
+  padding-bottom: 0;
 }

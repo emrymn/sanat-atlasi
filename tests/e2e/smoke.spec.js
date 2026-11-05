@@ -166,10 +166,10 @@ test('Ayarlar: yedekle → geri yükle gidiş-dönüşü', async ({ page, contex
   await page.locator('[data-test="akim-secenekleri"] button').first().click();
   await page.goto('./#/ayarlar');
   await page.getByRole('button', { name: 'Artır' }).click();
-  // varsayılan tema Gece; Sepya seçilir
+  // varsayılan tema Gece; Gündüz seçilir
   await expect(page.locator('html')).toHaveAttribute('data-tema', 'gece');
-  await page.getByRole('radio', { name: 'Sepya' }).check();
-  await expect(page.locator('html')).toHaveAttribute('data-tema', 'sepya');
+  await page.getByRole('radio', { name: 'Gündüz' }).check();
+  await expect(page.locator('html')).toHaveAttribute('data-tema', 'gunduz');
   const asil = await ilerleme(page);
   await page.getByRole('button', { name: 'Yedekle', exact: true }).click();
   await expect(page.locator('#yedek-mesaj')).not.toBeEmpty();
@@ -204,7 +204,7 @@ test('Ayarlar: yedekle → geri yükle gidiş-dönüşü', async ({ page, contex
   expect(geri.islenen).toEqual(asil.islenen);
   expect(geri.ayarlar).toEqual(asil.ayarlar);
   expect(geri.sonCalisilanlar).toEqual(asil.sonCalisilanlar);
-  await expect(page.locator('html')).toHaveAttribute('data-tema', 'sepya');
+  await expect(page.locator('html')).toHaveAttribute('data-tema', 'gunduz');
   await page.goto('./#/pekistir');
   await expect(page.locator('[data-test="devam-ozet"]')).toHaveText(/^Karışık · 2 \//);
   await page.goto('./#/ayarlar');
