@@ -1,7 +1,7 @@
 // Tam ekran eser görüntüleyici: iki parmakla yakınlaştırma, kaydırma, eserler arası geçiş.
 import { kacis, notTemizle } from './yardimci.js';
 import { ikon } from './tasarim.js';
-import { gorselUrl, gorselYedek, gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle, devasaUrl, devasaKaynagi, elleOdakKoy, gununResmiSecimi, gununResmiKoy } from './gorsel.js';
+import { gorselUrl, gorselYedek, gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle, devasaUrl, devasaKaynagi, elleOdakKoy, gununResmiSecimi, gununResmiKoy, gorselOdakNoktasi } from './gorsel.js';
 import { eserKonusu } from './ikonografi.js';
 import { hareketAz, gezin } from './gecis.js';
 import { NEDENLER } from './bildirim.js';
@@ -103,13 +103,15 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   kok.setAttribute('role', 'dialog');
   kok.setAttribute('aria-modal', 'true');
   kok.setAttribute('aria-label', 'Eser görüntüleyici');
+  // İş 150: odak düğmesi geliştirici modunda her eserde; İş 159: günün resmi seçilen eserde her zaman (Tuval kırpması)
+  const gelistirici = document.documentElement.hasAttribute('data-gelistirici');
   kok.innerHTML = `
     <div class="gor-sahne"><img class="gor-resim" alt="" draggable="false"><div class="gor-noktalar" data-test="gor-noktalar" hidden></div><p class="gor-yukleniyor">Yükleniyor…</p></div>
     <button class="gor-kapat" type="button" aria-label="Kapat">${ikon('kapat', 22)}</button>
     ${koleksiyon ? `<button class="gor-isaret" type="button" aria-pressed="false" aria-label="Koleksiyonuma ekle" hidden>${ikon('isaret', 22)}</button>` : ''}
     ${eserler.length > 1 ? `<button class="gor-ok gor-onceki" type="button" aria-label="Önceki eser">${ikon('geri', 24)}</button><button class="gor-ok gor-sonraki" type="button" aria-label="Sonraki eser">${ikon('ileri', 24)}</button>` : ''}
     <div class="gor-alt"><div class="gor-yazi" ${gizli ? 'hidden' : ''}></div>
-      <div class="gor-eylemler"><button class="gor-kotu" type="button">Görsel kötü</button>${!gizli ? '<button class="gor-kotu gor-gunun" type="button" aria-pressed="false" data-test="gor-gunun" hidden>Günün resmi</button>' : ''}${ayrintilar && !gizli ? '<button class="gor-incele" type="button" data-test="gor-incele" hidden>İncele</button>' : ''}${document.documentElement.hasAttribute('data-gelistirici') && !gizli ? '<button class="gor-kotu" type="button" data-gor-odak data-test="gor-odak">Odağı işaretle</button>' : ''}${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
+      <div class="gor-eylemler"><button class="gor-kotu" type="button">Görsel kötü</button>${!gizli ? '<button class="gor-gunun" type="button" aria-pressed="false" data-test="gor-gunun" hidden>Günün resmi</button>' : ''}${ayrintilar && !gizli ? '<button class="gor-incele" type="button" data-test="gor-incele" hidden>İncele</button>' : ''}${!gizli ? `<button class="gor-odak" type="button" data-gor-odak data-test="gor-odak"${gelistirici ? '' : ' hidden'}>Odağı işaretle</button>` : ''}${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
       ${bildir ? `<div class="gor-bildir-menu" data-test="gor-bildir-menu" hidden>${NEDENLER.map((n) => `<button type="button" data-gor-neden="${n}">${n}</button>`).join('')}</div>` : ''}
       ${ayrintilar && !gizli ? `<div class="gor-inceleme" data-test="gor-inceleme" hidden>
         <p class="gor-inc-ust"><span class="gor-inc-no" data-test="gor-inc-no"></span><b class="gor-inc-ad" data-test="gor-inc-ad"></b></p>
@@ -158,6 +160,44 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     const secili = !gununDugme.hidden && gununResmiSecimi(e.sid) === e.anahtar;
     gununDugme.setAttribute('aria-pressed', String(secili));
     gununDugme.textContent = secili ? 'Günün resmi ✓' : 'Günün resmi';
+    const odak = kok.querySelector('[data-gor-odak]');
+    if (odak) odak.hidden = !(gelistirici || secili);
+    if (odakModu && (odakEser !== e || odak.hidden)) odakBitir();
+  }
+
+  // İş 159: odak kipi. İşaretlenen her noktada kayıt yapılır ve kip açık kalır (yeniden dokunup düzeltilebilir);
+  // tablonun üstünde Tuval'in göstereceği alan çerçevelenir (Tuval: ekranı kaplar, odak yatayda ortada, dikeyde %36)
+  let odakModu = false;
+  let odakEser = null;
+  const cerceve = document.createElement('div');
+  cerceve.className = 'gor-tuval-cerceve';
+  cerceve.setAttribute('aria-hidden', 'true');
+  cerceve.dataset.test = 'gor-tuval-cerceve';
+  cerceve.hidden = true;
+  sahne.appendChild(cerceve);
+  function cerceveGoster() {
+    const g = secilenGorsel(eserler[sira], kotuler);
+    const r = resim.getBoundingClientRect();
+    const s = sahne.getBoundingClientRect();
+    if (!odakModu || !g || !resim.naturalWidth || !r.width) return void (cerceve.hidden = true);
+    const ekranOrani = window.innerWidth / window.innerHeight;
+    const o = resim.naturalWidth / resim.naturalHeight;
+    const fw = o > ekranOrani ? ekranOrani / o : 1;
+    const fh = o > ekranOrani ? 1 : o / ekranOrani;
+    const p = gorselOdakNoktasi(g) || [50, 50];
+    const sinirla = (v, en) => Math.min(en, Math.max(0, v));
+    const sol = sinirla(p[0] / 100 - fw * 0.5, 1 - fw);
+    const ust = sinirla(p[1] / 100 - fh * 0.36, 1 - fh);
+    Object.assign(cerceve.style, { left: `${r.left - s.left + sol * r.width}px`, top: `${r.top - s.top + ust * r.height}px`, width: `${fw * r.width}px`, height: `${fh * r.height}px` });
+    cerceve.hidden = false;
+  }
+  window.addEventListener('resize', () => odakModu && kok.isConnected && cerceveGoster());
+  function odakBitir() {
+    odakModu = false;
+    odakEser = null;
+    cerceve.hidden = true;
+    const b = kok.querySelector('[data-gor-odak]');
+    if (b) b.textContent = 'Odağı işaretle';
   }
   function isaretiGuncelle() {
     gununGuncelle();
@@ -175,6 +215,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     kok.classList.toggle('cekiliyor', !gecis && cek > 0);
     kok.style.setProperty('--cek', String(cek));
     noktalariHizala();
+    if (odakModu) (gecis ? setTimeout(cerceveGoster, sure + 30) : cerceveGoster());
   }
   // İş 151: nokta katmanı resmin kutusunu ve dönüşümünü aynen alır; noktaların kendisi ters ölçekle sabit boyda kalır
   function noktalariHizala() {
@@ -514,13 +555,19 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       else mesaj.textContent = "Sanatçının günün resmi bu oldu. Kalıcı olması için Ayarlar → Günün resimleri'nden kopyalayıp Claude'a gönder.";
     });
   // İş 150: geliştirici modunda tablonun önemli noktası elle işaretlenir (otomatik yüz odağının önüne geçer)
-  let odakModu = false;
   const odakDugme = kok.querySelector('[data-gor-odak]');
   if (odakDugme) {
     odakDugme.addEventListener('click', () => {
-      odakModu = !odakModu;
-      odakDugme.textContent = odakModu ? 'Vazgeç' : 'Odağı işaretle';
-      mesaj.textContent = odakModu ? 'Tablonun en önemli noktasına dokun (yüz, ana figür).' : '';
+      if (odakModu) {
+        odakBitir();
+        mesaj.textContent = '';
+        return;
+      }
+      odakModu = true;
+      odakEser = eserler[sira];
+      odakDugme.textContent = 'Bitti';
+      mesaj.textContent = 'Ekranın ortasına gelecek noktaya dokun (yüz, ana figür). Çerçeve Tuval’de görünen alan.';
+      cerceveGoster();
     });
     sahne.addEventListener(
       'click',
@@ -533,9 +580,8 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
         const nokta = [((ev.clientX - r.left) / r.width) * 100, ((ev.clientY - r.top) / r.height) * 100];
         const g = secilenGorsel(eserler[sira], kotuler);
         const tamam = elleOdakKoy(g, nokta);
-        odakModu = false;
-        odakDugme.textContent = 'Odağı işaretle';
-        mesaj.textContent = tamam ? `Odak kaydedildi (%${Math.round(nokta[0])}, %${Math.round(nokta[1])}). Ayarlar → Elle odaklar'dan kopyala.` : 'Bu görselin yerel kopyası yok; odak kaydedilemedi.';
+        cerceveGoster();
+        mesaj.textContent = tamam ? `Odak kaydedildi (%${Math.round(nokta[0])}, %${Math.round(nokta[1])}). Çerçeve Tuval’de görünen alan; beğenmezsen yeniden dokun, bitince “Bitti”. Kalıcı olması için Ayarlar → Elle odaklar’dan kopyala.` : 'Bu görselin yerel kopyası yok; odak kaydedilemedi.';
       },
       true,
     );
@@ -656,6 +702,8 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     }
     // İş 59: iki parmakla büyütmenin son kalkan parmağı dokunuş değildir (arayüzü geri getirmesin, yakınlaştırmayı sıfırlamasın)
     if (kistirmadan) return;
+    // İş 159: odak kipinde dokunuş odağı işaretler; arayüzü gizlemez, yakınlaştırmaz
+    if (odakModu) return;
     // çift dokunma: 2.5x ↔ 1x
     if (Math.abs(dx) < 10 && Math.abs(dy) < 10 && sure < 300) {
       const simdi = Date.now();

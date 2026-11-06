@@ -60,6 +60,6 @@ test('data/gunun_resimleri.json geçerli biçimde', () => {
   const sanatcilar = new Set(JSON.parse(readFileSync(new URL('../../data/sanatcilar.json', import.meta.url), 'utf8')).map((s) => s.id));
   for (const [id, a] of Object.entries(j.secim)) {
     assert.ok(sanatcilar.has(id), `bilinmeyen sanatçı: ${id}`);
-    assert.match(a, /^[qc]:./);
+    assert.match(a, /^[a-z]+:./); // q:QID, c:Commons dosyası ya da müze kaynağı (met:, nga:, aic:)
   }
 });

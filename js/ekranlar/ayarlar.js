@@ -2,11 +2,13 @@
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { gosterilenGorseller } from '../eserler.js';
 import { devasaAdresleri, devasaSuz, suzulduMu, telefonAdresleri, telefonToplamBayt, tahminiBayt } from '../gorsel.js';
-import { cihazdakiElleOdaklar, cihazdakiGununResimleri, gununResmiKoy } from '../gorsel.js';
+import { cihazdakiElleOdaklar, cihazdakiGununResimleri, gununResmiKoy, tumGununResimleri, seciliGununResmi } from '../gorsel.js';
+import { sanatciEserleri } from '../eserler.js';
+import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat, kayitKilidiniAc, HAREKETLER, HAREKET_AD, YAZILAR, YAZI_AD } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
-import { acikListe, bugun, d, gununRengi, ciz, ust, TEMA_AD, ekran, kaydet, temaUygula, gununId, gununHavuzu } from './ortak.js';
+import { acikListe, bugun, d, gununRengi, ciz, ust, TEMA_AD, ekran, kaydet, temaUygula, gununId, gununHavuzu, gununResimleriYukle, kotuler } from './ortak.js';
 import { baskaSanatci } from '../gunun.js';
 import { bilinenAd } from '../adlar.js';
 import { yedekTarihiYaz } from './bugun.js';
@@ -495,10 +497,11 @@ export function olaylariBagla() {
       );
       return;
     }
+    if (e.target.closest('[data-gunun-resmi-ac]')) return gununResimleriniAc();
     if (e.target.closest('[data-gunun-resmi-temizle]')) {
       if (!confirm('Bu cihazda seçtiğin günün resimleri silinsin mi? (Claude’a gönderip depoya girenler kalır.)')) return;
       for (const id of Object.keys(cihazdakiGununResimleri())) gununResmiKoy(id, null);
-      ekran.querySelector('[data-test="gunun-resimleri"]')?.remove();
+      ekran.querySelector('[data-test="gunun-resimleri"]').outerHTML = gununResmiBolumu();
       return;
     }
     if (e.target.closest('[data-elle-odak-kopyala]')) {
@@ -715,16 +718,36 @@ function elleOdakBolumu() {
 function gununResmiBolumu() {
   const l = cihazdakiGununResimleri();
   const idler = Object.keys(l);
-  if (!idler.length) return '';
   const ad = (id) => {
     const s = d.harita.get(id);
     return s ? bilinenAd(s.ad, d.kisaAdlar[id]) : id;
   };
+  // İş 159: "Sırayla ortala": seçilen bütün günün resimleri (depodaki ve bu cihazdaki) görüntüleyicide dönem sırasıyla
   return `<div class="ayar" data-test="gunun-resimleri"><b>Günün resimleri</b>
-    <p>Bu cihazda ${idler.length} sanatçının günün resmini seçtin: ${idler.map((id) => kacis(ad(id))).join(', ')}. Tuval'de bu sanatçılar seçtiğin tabloyla gelir. Bütün cihazlarda kalıcı olması için listeyi kopyalayıp Claude’a gönder.</p>
+    <p>Bir eseri büyütüp “Günün resmi”ne dokununca o sanatçı Tuval’e bu tabloyla gelir. “Sırayla ortala” seçtiğin bütün günün resimlerini sırayla açar: “Odağı işaretle”ye dokun, sonra ekranın ortasına gelecek noktaya; çerçeve Tuval’de görünen alanı gösterir. Kaydırarak sonrakine geç.</p>
+    <button class="dugme" type="button" data-gunun-resmi-ac data-test="gunun-resmi-ac">Sırayla ortala</button>
+    ${idler.length ? `<p>Bu cihazda ${idler.length} sanatçının günün resmini seçtin${idler.length <= 12 ? `: ${idler.map((id) => kacis(ad(id))).join(', ')}` : ''}. Bütün cihazlarda kalıcı olması için listeyi kopyalayıp Claude’a gönder.</p>
     <textarea readonly aria-label="Günün resimleri" data-gunun-resmi-metin>${kacis(JSON.stringify({ surum: 1, secim: l }))}</textarea>
-    <div class="iki-dugme"><button class="dugme ince" type="button" data-gunun-resmi-kopyala>Kopyala</button><button class="dugme ince" type="button" data-gunun-resmi-temizle>Bu cihazdakileri sil</button></div>
+    <div class="iki-dugme"><button class="dugme ince" type="button" data-gunun-resmi-kopyala>Kopyala</button><button class="dugme ince" type="button" data-gunun-resmi-temizle>Bu cihazdakileri sil</button></div>` : ''}
     <p class="mesaj" id="gunun-resmi-mesaj" aria-live="polite"></p></div>`;
+}
+
+async function gununResimleriniAc() {
+  const m = document.getElementById('gunun-resmi-mesaj');
+  m.className = 'mesaj';
+  m.textContent = 'Hazırlanıyor…';
+  await gununResimleriYukle();
+  const sec = tumGununResimleri();
+  const sanatcilar = d.sanatcilar.filter((s) => sec[s.id]);
+  const listeler = await Promise.all(sanatcilar.map((s) => sanatciEserleri(s).catch(() => [])));
+  const eserler = listeler.map(seciliGununResmi).filter(Boolean);
+  if (!eserler.length) {
+    m.textContent = 'Henüz günün resmi seçmedin.';
+    return;
+  }
+  m.textContent = '';
+  const adi = new Map(sanatcilar.map((s) => [s.id, bilinenAd(s.ad, d.kisaAdlar[s.id])]));
+  goruntuleyiciAc({ eserler, kotuler: kotuler(), notu: (e) => `${adi.get(e.sid) || ''} · günün resmi ${eserler.indexOf(e) + 1} / ${eserler.length}` });
 }
 
 function gununAdi() {

@@ -1092,6 +1092,8 @@ test.describe('İş 82: günün sanatçısının görselleri', () => {
 // Rembrandt'ta en bilinen Gece Devriyesi değil (yatay)
 test('İş 83/100: günün tablosu çözünürlük, ekrana oturuş ve bilinirlikte en iyisi', async ({ page, context }) => {
   await agiHazirla(context);
+  // otomatik seçim sınanır: depodaki elle seçilen günün resimleri (İş 159) devre dışı
+  await context.route(/data\/gunun_resimleri\.json/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: '{"surum":1,"secim":{}}' }));
   await page.goto('./#/ayarlar');
   await page.locator('#sekmeler a').first().waitFor();
   const sec = (id) =>
