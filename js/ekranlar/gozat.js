@@ -503,7 +503,6 @@ export function gozAt() {
         <span class="etiket vurgu">Sanat tarihi koridoru</span>
         <p class="gz-perde-baslik">${durumlar.length} akım, <em>yedi yüzyıl</em></p>
         <p class="gz-perde-alt">${acikSayi} salon açık · soluk olanlar ilgili konu işlenince açılır</p>
-        ${galeriIsikSecici()}
       </div>
     </section>
     <ol class="zaman">${durumlar
@@ -520,54 +519,7 @@ export function gozAt() {
         }</li>`;
       })
       .join('')}</ol>`);
-  galeriIsikBagla();
   onizlemeleriDoldur();
-}
-
-// İş 156 (Emre: "sayfa çok karanlık, göz yoruyor" geri bildirimi): Galeri koridorunun karartmasını telefonda
-// karşılaştırmak için GEÇİCİ deneme seçici. Mevcut / Aydınlık (bütün karartma azalır) / Sol parlak (tablo sola
-// da yayılır, yazı gölgeyle okunur) / İkisi. Seçim yalnız bu cihazda (localStorage); karar verilince seçici ve
-// kaybeden varyantlar kaldırılacak, kazanan varsayılan olacak.
-const GALERI_ISIK = [
-  ['mevcut', 'Mevcut'],
-  ['aydinlik', 'Aydınlık'],
-  ['sol', 'Sol parlak'],
-  ['ikisi', 'İkisi'],
-];
-const GALERI_ISIK_ANAHTAR = 'sanat-atlasi:galeri-isik';
-function galeriIsik() {
-  try {
-    const v = localStorage.getItem(GALERI_ISIK_ANAHTAR);
-    return GALERI_ISIK.some(([k]) => k === v) ? v : 'mevcut';
-  } catch {
-    return 'mevcut';
-  }
-}
-function galeriIsikUygula(v) {
-  if (v === 'mevcut') document.documentElement.removeAttribute('data-galeri-isik');
-  else document.documentElement.setAttribute('data-galeri-isik', v);
-}
-galeriIsikUygula(galeriIsik());
-function galeriIsikSecici() {
-  const v = galeriIsik();
-  return `<div class="gz-deneme" role="radiogroup" aria-label="Galeri ışığı denemesi" data-test="galeri-isik"><span>Deneme</span>${GALERI_ISIK.map(
-    ([k, ad]) => `<button type="button" role="radio" aria-checked="${k === v}" data-galeri-isik="${k}">${ad}</button>`,
-  ).join('')}</div>`;
-}
-function galeriIsikBagla() {
-  const kutu = ekran.querySelector('[data-test="galeri-isik"]');
-  kutu?.addEventListener('click', (e) => {
-    const b = e.target.closest('[data-galeri-isik]');
-    if (!b) return;
-    const v = b.dataset.galeriIsik;
-    try {
-      localStorage.setItem(GALERI_ISIK_ANAHTAR, v);
-    } catch {
-      /* gizli pencere: yalnız bu açılışta */
-    }
-    galeriIsikUygula(v);
-    for (const x of kutu.querySelectorAll('[data-galeri-isik]')) x.setAttribute('aria-checked', String(x === b));
-  });
 }
 
 // Her akıma 3 çerçeveli küçük eser (açık sanatçılar önce); ilk eser kartın arka planı olur,

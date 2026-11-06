@@ -1185,7 +1185,6 @@ img.kirik {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.85) brightness(0.8);
 }
 .gz-perde-yazi {
   position: relative;
@@ -1310,13 +1309,14 @@ img.kirik {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, var(--bg) 0%, color-mix(in srgb, var(--bg) 82%, transparent) 45%, color-mix(in srgb, var(--bg) 35%, transparent) 100%),
-    linear-gradient(0deg, var(--bg), transparent 55%);
+    linear-gradient(90deg, color-mix(in srgb, var(--bg) 78%, transparent) 0%, color-mix(in srgb, var(--bg) 52%, transparent) 45%, color-mix(in srgb, var(--bg) 14%, transparent) 100%),
+    linear-gradient(0deg, color-mix(in srgb, var(--bg) 80%, transparent), transparent 45%);
 }
 .zaman-fon img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(1.12) saturate(1.05); /* İş 156: Galeri daha aydınlık */
   animation: gz-fon 18s ease-in-out infinite alternate;
   animation-delay: calc(var(--i) * -2.3s);
 }
@@ -15768,72 +15768,3 @@ article > .eserler + .bolum {
   height: 18px;
 }
 
-/* İş 156 · GEÇİCİ Galeri ışığı denemesi (js/ekranlar/gozat.js galeriIsikSecici). Karar verilince seçici ve
-   kaybeden varyantlar silinir, kazanan .zaman-fon::after / .gz-kare img kurallarına işlenir. */
-.gz-deneme {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px;
-  margin-top: 8px;
-  font-size: 12px;
-}
-.gz-deneme span {
-  color: var(--ink-2);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-right: 2px;
-}
-.gz-deneme button {
-  min-height: 32px;
-  padding: 0 11px;
-  border: 0;
-  border-radius: 999px;
-  font: inherit;
-  color: var(--ink);
-  background: transparent;
-  box-shadow: 0 0 0 1px var(--border);
-}
-.gz-deneme button[aria-checked='true'] {
-  box-shadow: 0 0 0 1px rgba(var(--vurgu-rgb), 0.8);
-  background: rgba(var(--vurgu-rgb), 0.16);
-}
-/* A · Aydınlık: karartma her yerde azalır, tablo daha açık; sol hâlâ en koyu (yazı orada) */
-:root[data-galeri-isik='aydinlik'] .zaman-fon::after {
-  background:
-    linear-gradient(90deg, color-mix(in srgb, var(--bg) 78%, transparent) 0%, color-mix(in srgb, var(--bg) 52%, transparent) 45%, color-mix(in srgb, var(--bg) 14%, transparent) 100%),
-    linear-gradient(0deg, color-mix(in srgb, var(--bg) 80%, transparent), transparent 45%);
-}
-:root[data-galeri-isik='aydinlik'] .zaman-fon img {
-  filter: brightness(1.12) saturate(1.05);
-}
-:root[data-galeri-isik='aydinlik'] .gz-kare img {
-  filter: none;
-}
-/* B · Sol parlak: soldan sağa düz bir perde yerine kart boyunca eşit bir perde; tablo sola da yayılır.
-   Yazının okunurluğu karartmayla değil yazı gölgesiyle */
-:root[data-galeri-isik='sol'] .zaman-fon::after {
-  background:
-    linear-gradient(90deg, color-mix(in srgb, var(--bg) 66%, transparent) 0%, color-mix(in srgb, var(--bg) 58%, transparent) 55%, color-mix(in srgb, var(--bg) 40%, transparent) 100%),
-    linear-gradient(0deg, color-mix(in srgb, var(--bg) 92%, transparent), transparent 50%);
-}
-/* C · İkisi: eşit ve hafif perde, açık tablo */
-:root[data-galeri-isik='ikisi'] .zaman-fon::after {
-  background:
-    linear-gradient(90deg, color-mix(in srgb, var(--bg) 52%, transparent) 0%, color-mix(in srgb, var(--bg) 40%, transparent) 55%, color-mix(in srgb, var(--bg) 22%, transparent) 100%),
-    linear-gradient(0deg, color-mix(in srgb, var(--bg) 80%, transparent), transparent 45%);
-}
-:root[data-galeri-isik='ikisi'] .zaman-fon img {
-  filter: brightness(1.1) saturate(1.05);
-}
-:root[data-galeri-isik='ikisi'] .gz-kare img {
-  filter: none;
-}
-:root:is([data-galeri-isik='sol'], [data-galeri-isik='ikisi']) .zaman-kart :is(b, .etiket, .sayi) {
-  text-shadow:
-    0 1px 2px color-mix(in srgb, var(--bg) 90%, transparent),
-    0 0 14px color-mix(in srgb, var(--bg) 75%, transparent);
-}
-:root:is([data-galeri-isik='sol'], [data-galeri-isik='ikisi']) .zaman-kart .sayi {
-  color: var(--ink);
-}
