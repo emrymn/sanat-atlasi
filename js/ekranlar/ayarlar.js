@@ -2,7 +2,7 @@
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { gosterilenGorseller } from '../eserler.js';
 import { devasaAdresleri, devasaSuz, suzulduMu, telefonAdresleri, telefonToplamBayt, tahminiBayt } from '../gorsel.js';
-import { cihazdakiElleOdaklar } from '../gorsel.js';
+import { cihazdakiElleOdaklar, cihazdakiGununResimleri, gununResmiKoy } from '../gorsel.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat, kayitKilidiniAc, HAREKETLER, HAREKET_AD, YAZILAR, YAZI_AD } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
@@ -121,6 +121,7 @@ export function ayarlarSayfasi() {
       <div class="ayar"><label class="konu"><span class="metin"><b>Geliştirici modu</b><small>Bütün konular, sanatçılar ve harita bölümleri açılır. Kapatınca açmadan önceki ilerlemen olduğu gibi geri gelir; mod açıkken çözdüklerin sayılmaz.</small></span>
         <input class="anahtar" type="checkbox" role="switch" data-ayar-gelistirici ${d.ilerleme.gelistirici ? 'checked' : ''} aria-label="Geliştirici modu"></label>
         <p class="mesaj" id="gelistirici-mesaj" aria-live="polite"></p></div>
+      ${gununResmiBolumu()}
       ${elleOdakBolumu()}
       <div class="ayar"><b>Yenilikler</b>
         <ul class="yenilik-liste" data-test="yenilikler">${YENILIKLER.map((x) => `<li>${kacis(yenilikYazisi(x))}</li>`).join('')}</ul>
@@ -485,6 +486,21 @@ export function olaylariBagla() {
       m.innerHTML = `Ana sayfada bugün ${kacis(gununAdi())}. <a href="#/">Ana sayfaya git</a>`;
       return;
     }
+    if (e.target.closest('[data-gunun-resmi-kopyala]')) {
+      const m = document.getElementById('gunun-resmi-mesaj');
+      const metin = ekran.querySelector('[data-gunun-resmi-metin]').value;
+      navigator.clipboard?.writeText(metin).then(
+        () => ((m.className = 'mesaj tamam'), (m.textContent = 'Kopyalandı.')),
+        () => ((m.className = 'mesaj'), (m.textContent = 'Kopyalanamadı: metni seçip kopyala.')),
+      );
+      return;
+    }
+    if (e.target.closest('[data-gunun-resmi-temizle]')) {
+      if (!confirm('Bu cihazda seçtiğin günün resimleri silinsin mi? (Claude’a gönderip depoya girenler kalır.)')) return;
+      for (const id of Object.keys(cihazdakiGununResimleri())) gununResmiKoy(id, null);
+      ekran.querySelector('[data-test="gunun-resimleri"]')?.remove();
+      return;
+    }
     if (e.target.closest('[data-elle-odak-kopyala]')) {
       const m = document.getElementById('elle-odak-mesaj');
       const metin = ekran.querySelector('[data-elle-odak-metin]').value;
@@ -692,6 +708,23 @@ function elleOdakBolumu() {
     ${n ? `<textarea readonly aria-label="Elle odaklar" data-elle-odak-metin>${kacis(JSON.stringify({ surum: 1, odak: l }))}</textarea>
     <button class="dugme ince" type="button" data-elle-odak-kopyala>Kopyala</button>` : ''}
     <p class="mesaj" id="elle-odak-mesaj" aria-live="polite"></p></div>`;
+}
+
+// İş 157: görüntüleyicideki "Günün resmi" ile bu cihazda seçilenler; kopyalanıp Claude'a gönderilir, depoya
+// data/gunun_resimleri.json olarak girer (bütün cihazlarda geçerli olur)
+function gununResmiBolumu() {
+  const l = cihazdakiGununResimleri();
+  const idler = Object.keys(l);
+  if (!idler.length) return '';
+  const ad = (id) => {
+    const s = d.harita.get(id);
+    return s ? bilinenAd(s.ad, d.kisaAdlar[id]) : id;
+  };
+  return `<div class="ayar" data-test="gunun-resimleri"><b>Günün resimleri</b>
+    <p>Bu cihazda ${idler.length} sanatçının günün resmini seçtin: ${idler.map((id) => kacis(ad(id))).join(', ')}. Tuval'de bu sanatçılar seçtiğin tabloyla gelir. Bütün cihazlarda kalıcı olması için listeyi kopyalayıp Claude’a gönder.</p>
+    <textarea readonly aria-label="Günün resimleri" data-gunun-resmi-metin>${kacis(JSON.stringify({ surum: 1, secim: l }))}</textarea>
+    <div class="iki-dugme"><button class="dugme ince" type="button" data-gunun-resmi-kopyala>Kopyala</button><button class="dugme ince" type="button" data-gunun-resmi-temizle>Bu cihazdakileri sil</button></div>
+    <p class="mesaj" id="gunun-resmi-mesaj" aria-live="polite"></p></div>`;
 }
 
 function gununAdi() {

@@ -15768,3 +15768,17 @@ article > .eserler + .bolum {
   height: 18px;
 }
 
+
+/* İş 157: görüntüleyicinin eylem satırına "Günün resmi" eklendi; etiketler tek satırda kalır, sığmazsa (İncele'li
+   başyapıtlarda) satır alta kayar */
+.gor-eylemler {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 8px;
+}
+.gor-eylemler > button {
+  white-space: nowrap;
+}
+.gor-eylemler > .gor-daha {
+  margin-left: auto;
+}

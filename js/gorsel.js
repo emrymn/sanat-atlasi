@@ -308,3 +308,54 @@ export function pekistirmeyeUygunMu(eser, kotuler = {}) {
   const g = secilenGorsel(eser, kotuler);
   return !!g && eser.pekistirme !== false && !(g.p !== undefined && g.p <= 5);
 }
+
+// İş 157 (Emre: "bazı sanatçıların günün resmi güzel ama bazılarınınki daha iyi olabilir; ben tek tek seçeceğim, sen
+// onları o sanatçının günün resmi yap"): sanatçı başına elle seçilen günün resmi. Otomatik seçimin (ortak.js
+// gununEseri) önüne geçer. Kaynak: data/gunun_resimleri.json (depoya girenler, bütün cihazlar) ve bu cihazda
+// görüntüleyicideki "Günün resmi" düğmesiyle seçilenler (localStorage; dosyadakinin önüne geçer).
+// Biçim: { surum: 1, secim: { <sanatçı id>: <eser anahtarı ("q:QID" ya da "c:…", js/eserler.js)> } }
+export const GUNUN_RESMI_ANAHTAR = 'sanat-atlasi:gunun-resmi';
+let dosya = {};
+
+const gecerli = (v) => v && typeof v === 'object' && !Array.isArray(v);
+const temiz = (v) => (gecerli(v) ? Object.fromEntries(Object.entries(v).filter(([k, a]) => typeof k === 'string' && typeof a === 'string' && a)) : {});
+
+export function gununResimleriniAyarla(veri) {
+  dosya = temiz(veri && veri.secim);
+}
+
+export function cihazdakiGununResimleri() {
+  try {
+    return temiz(JSON.parse(globalThis.localStorage.getItem(GUNUN_RESMI_ANAHTAR) || '{}'));
+  } catch {
+    return {};
+  }
+}
+
+// Sanatçının seçilmiş eser anahtarı ya da null (cihazdaki seçim dosyadakinin önüne geçer)
+export function gununResmiSecimi(sid) {
+  if (!sid) return null;
+  return cihazdakiGununResimleri()[sid] || dosya[sid] || null;
+}
+
+// anahtar: eser anahtarı; null → bu cihazdaki seçim silinir. Başarılıysa true.
+export function gununResmiKoy(sid, anahtar) {
+  if (!sid) return false;
+  const l = cihazdakiGununResimleri();
+  if (anahtar) l[sid] = anahtar;
+  else delete l[sid];
+  try {
+    globalThis.localStorage.setItem(GUNUN_RESMI_ANAHTAR, JSON.stringify(l));
+  } catch {
+    return false;
+  }
+  return true;
+}
+
+// Eser listesinde seçilen eser (görseli olan) ya da null
+export function seciliGununResmi(eserler) {
+  const l = eserler || [];
+  const sid = l.find((e) => e && e.sid)?.sid;
+  const a = gununResmiSecimi(sid);
+  return (a && l.find((e) => e.anahtar === a && e.gorseller && e.gorseller.length)) || null;
+}

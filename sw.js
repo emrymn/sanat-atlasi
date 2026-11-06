@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.71.5';
+const SURUM = '1.72.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -135,6 +135,7 @@ const ISTEGE_BAGLI = [
   'data/gorsel_oranlari.json',
   'data/gorsel_odak.json',
   'data/gorsel_odak_elle.json',
+  'data/gunun_resimleri.json',
   'data/kopya_eserler.json',
   'data/cikarilan_gorseller.json',
   'data/eser_ayrintilari.json',

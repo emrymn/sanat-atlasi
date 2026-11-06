@@ -79,3 +79,43 @@ test('İş 150: geliştirici modu kapalıyken odak düğmesi yok', async ({ page
   await expect(page.locator('.gor-resim')).toBeVisible();
   await expect(page.locator('[data-gor-odak]')).toHaveCount(0);
 });
+
+// İş 157: görüntüleyicide "Günün resmi" → Tuval'de o sanatçının tablosu o olur; Ayarlar'da kopyalanacak liste
+test('İş 157: görüntüleyicide seçilen eser sanatçının günün resmi olur, Ayarlar’da listelenir', async ({ page, context }) => {
+  await agiHazirla(context);
+  await kur(context);
+  await page.goto('./#/ayarlar');
+  await page.locator('#sekmeler a').first().waitFor();
+  await page.evaluate(async () => {
+    const { bugun, kaydet } = await import('./js/ekranlar/ortak.js');
+    window.__atlas.ilerleme.gununDegisim = { tarih: bugun(), id: 'leonardo-da-vinci' };
+    kaydet();
+  });
+  await page.goto('./');
+  const tuval = page.locator('[data-gunun-gorsel] > img');
+  await expect(tuval).toHaveAttribute('alt', /Mona Lisa/, { timeout: 10000 });
+  await page.goto('./#/sanatci/leonardo-da-vinci');
+  // Mona Lisa olmayan bir eser seç
+  const eser = page.locator('.eser').filter({ hasNot: page.locator('img[alt*="Mona Lisa"]') }).first();
+  const baslik = (await eser.locator('img').getAttribute('alt')).split(',').pop().trim();
+  await eser.click();
+  const dugme = page.locator('[data-test="gor-gunun"]');
+  await expect(dugme).toBeVisible();
+  await expect(dugme).toHaveAttribute('aria-pressed', 'false');
+  await dugme.click();
+  await expect(dugme).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('.gor-mesaj')).toContainText('günün resmi bu oldu');
+  const kayit = await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:gunun-resmi')));
+  expect(Object.keys(kayit)).toEqual(['leonardo-da-vinci']);
+  await page.goto('./');
+  await expect(tuval).toHaveAttribute('alt', new RegExp(baslik.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').slice(0, 20)), { timeout: 10000 });
+  await page.goto('./#/ayarlar');
+  await expect(page.locator('[data-test="gunun-resimleri"] textarea')).toHaveValue(/"secim":\{"leonardo-da-vinci":"[qc]:/);
+  // kaldırınca otomatiğe döner
+  await page.goto('./#/sanatci/leonardo-da-vinci');
+  await eser.click();
+  await page.locator('[data-test="gor-gunun"]').click();
+  await expect(page.locator('[data-test="gor-gunun"]')).toHaveAttribute('aria-pressed', 'false');
+  await page.goto('./');
+  await expect(tuval).toHaveAttribute('alt', /Mona Lisa/, { timeout: 10000 });
+});
