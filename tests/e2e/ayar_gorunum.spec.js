@@ -126,3 +126,41 @@ test('İş 157: görüntüleyicide seçilen eser sanatçının günün resmi olu
   await page.goto('./');
   await expect(tuval).toHaveAttribute('alt', /Mona Lisa/, { timeout: 10000 });
 });
+
+// İş 159: Ayarlar → "Sırayla ortala": günün resimleri görüntüleyicide sırayla; odak kipinde Tuval çerçevesi, kip açık kalır
+test('İş 159: günün resimleri sırayla açılır, odak işaretlenince Tuval çerçevesi görünür', async ({ page, context }) => {
+  await agiHazirla(context);
+  await kur(context);
+  await context.route(/data\/gunun_resimleri\.json/, (r) =>
+    r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, secim: { 'giotto-di-bondone': 'q:Q3698217', 'jan-van-eyck': 'c:van_eyck_-_arnolfini_portrait.jpg' } }) }),
+  );
+  await page.goto('./#/ayarlar');
+  await page.locator('[data-test="gunun-resmi-ac"]').click();
+  await expect(page.locator('.gor-resim')).toBeVisible();
+  await expect(page.locator('.gor-yazi')).toContainText('günün resmi 1 / 2');
+  const dugme = page.locator('[data-gor-odak]');
+  await expect(dugme).toBeVisible();
+  await expect(page.locator('[data-test="gor-gunun"]')).toHaveAttribute('aria-pressed', 'true');
+  const cerceve = page.locator('[data-test="gor-tuval-cerceve"]');
+  await expect(cerceve).toBeHidden();
+  await dugme.click();
+  await expect(dugme).toHaveText('Bitti');
+  await expect(cerceve).toBeVisible();
+  const r = await page.locator('.gor-resim').boundingBox();
+  await page.mouse.click(r.x + r.width * 0.3, r.y + r.height * 0.5);
+  await expect(page.locator('.gor-mesaj')).toContainText('Odak kaydedildi');
+  await expect(cerceve).toBeVisible();
+  await expect(dugme).toHaveText('Bitti'); // kip açık: yeniden dokunup düzeltilebilir
+  const c = await cerceve.boundingBox();
+  // çerçeve resmin içinde ve odak (x %30) çerçevenin yatay ortasında ya da kenar sınırında
+  expect(c.x).toBeGreaterThanOrEqual(r.x - 1);
+  expect(c.x + c.width).toBeLessThanOrEqual(r.x + r.width + 1);
+  const kayit = await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:odak-elle') || '{}'));
+  expect(Object.keys(kayit)).toHaveLength(1);
+  await dugme.click();
+  await expect(dugme).toHaveText('Odağı işaretle');
+  await expect(cerceve).toBeHidden();
+  // sonraki eser
+  await page.locator('.gor-sonraki').click();
+  await expect(page.locator('.gor-yazi')).toContainText('günün resmi 2 / 2');
+});

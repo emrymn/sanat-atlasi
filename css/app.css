@@ -15782,3 +15782,16 @@ article > .eserler + .bolum {
 .gor-eylemler > .gor-daha {
   margin-left: auto;
 }
+/* İş 159: odak kipinde Tuval'in göstereceği alan (görüntüleyicide tablonun üstünde) */
+.gor-tuval-cerceve {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  border: 2px solid rgba(var(--vurgu-rgb), 0.95);
+  border-radius: 2px;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  transition: left 0.2s, top 0.2s;
+}
+.gor-tuval-cerceve[hidden] {
+  display: none;
+}

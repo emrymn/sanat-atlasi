@@ -359,3 +359,6 @@ export function seciliGununResmi(eserler) {
   const a = gununResmiSecimi(sid);
   return (a && l.find((e) => e.anahtar === a && e.gorseller && e.gorseller.length)) || null;
 }
+
+// İş 159: depodaki ve bu cihazdaki seçimler birlikte (cihazdaki önde)
+export const tumGununResimleri = () => ({ ...dosya, ...cihazdakiGununResimleri() });
