@@ -68,6 +68,10 @@ test('data/eser_ayrintilari.json: anahtarlar başyapıtlarda, 4–6 nokta, hepsi
   assert.ok(l.length >= 20);
   const basyapitlar = new Map(JSON.parse(readFileSync(new URL('data/basyapitlar.json', KOK), 'utf8')).eserler.map((b) => [b.anahtar, b]));
   const yerel = new Set(Object.values(JSON.parse(readFileSync(new URL('data/yerel_gorseller.json', KOK), 'utf8')).gorseller));
+  const wikiart = new Set();
+  for (const s of Object.values(JSON.parse(readFileSync(new URL('data/eserler_onbellek.json', KOK), 'utf8')).sanatcilar)) {
+    for (const x of s.eserler || []) for (const g of x.gorseller || []) if (g.k === 'wikiart' && g.u) wikiart.add(`wikiart:${g.u}`);
+  }
   const gorulen = new Set();
   for (const e of l) {
     assert.ok(basyapitlar.has(e.anahtar), `${e.anahtar} başyapıtlarda yok`);
@@ -77,7 +81,8 @@ test('data/eser_ayrintilari.json: anahtarlar başyapıtlarda, 4–6 nokta, hepsi
     const ham_ = ham.eserler.find((x) => x.anahtar === e.anahtar);
     assert.equal(e.noktalar.length, ham_.noktalar.length, `${e.anahtar}: geçersiz nokta var`);
     assert.ok(e.noktalar.length >= EN_AZ_NOKTA && e.noktalar.length <= EN_COK_NOKTA, `${e.anahtar}: ${e.noktalar.length} nokta`);
-    assert.ok(yerel.has(e.gorsel), `${e.anahtar}: gorsel ${e.gorsel} yerel listede yok`);
+    // İş 154: R2'de kopyası olmayan (WikiArt'tan gelen telifli) görsellerde ad, kaynak anahtarıdır (wikiart:<adres>)
+    assert.ok(yerel.has(e.gorsel) || wikiart.has(e.gorsel), `${e.anahtar}: gorsel ${e.gorsel} yerel listede yok`);
   }
 });
 

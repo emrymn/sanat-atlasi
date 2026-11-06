@@ -114,7 +114,7 @@ UYGULA=1 node scripts/kaynaklar/wikiart.mjs                                     
 | `data/eserler_onbellek.json` | Wikidata QID'leri ve eser listeleri (derleme zamanı önbelleği; olmasa da çalışır) |
 | `data/gorsel_odak.json` | Görsellerin odak noktası (tablodaki yüzler, `scripts/odak.py`, OpenCV YuNet): kırpılan görsel yüzün çevresinden kırpılır |
 | `data/gorsel_odak_elle.json` | Elle seçilen odaklar (otomatik odağın önüne geçer); geliştirici modunda görüntüleyicide işaretlenip Ayarlar'dan kopyalanır |
-| `data/eser_ayrintilari.json`, `scripts/ayrinti/` | Rehberli eser incelemesi: başyapıt görüntüleyicisindeki ayrıntı noktaları (20/107); devam için TALIMAT, DEVIR, DURUM, denetleyici (İş 151) |
+| `data/eser_ayrintilari.json`, `scripts/ayrinti/` | Rehberli eser incelemesi: başyapıt görüntüleyicisindeki ayrıntı noktaları (107/107); devam için TALIMAT, DEVIR, DURUM, denetleyici (İş 151) |
 | `referans/tarih_inceleme.md` | Yılı sanatçının yaşamıyla çelişen 106 eser (uygulamada yılları gizli; elle bakılacak) |
 | `data/wikiart.json` | WikiArt'tan derleme zamanında alınan eserler (başlık, yıl, eser sayfası, görsel adresi) |
 | `scripts/` | Önbellek, ikon üretimi, yerel sunucu |
@@ -186,7 +186,7 @@ Telefonda: Ayarlar → **En büyük kopyaları telefona indir** → yenilenenler
 
 Ayrıntılar KARARLAR.md'de (İş 135–151).
 
-- **Rehberli eser incelemesi (İş 151, 1.71.0, pilot; İş 152–154, 1.71.3):** 80 başyapıtın görüntüleyicisinde "İncele": tablonun üstünde 4–6 numaralı nokta, dokununca o bölge en büyük kopyadan yakınlaşır, altta 2–3 cümle; Önceki / Sonraki / Bitir. Başyapıt sayfasında "Rehberli inceleme" düğmesi. Kalan 27 eser için devir dosyaları `scripts/ayrinti/`.
+- **Rehberli eser incelemesi (İş 151, 1.71.0, pilot; İş 152–155, 1.71.4):** 107 başyapıtın görüntüleyicisinde "İncele": tablonun üstünde 4–6 numaralı nokta, dokununca o bölge en büyük kopyadan yakınlaşır, altta 2–3 cümle; Önceki / Sonraki / Bitir. Başyapıt sayfasında "Rehberli inceleme" düğmesi. Bütün başyapıtlar bitti; kurallar ve denetleyici `scripts/ayrinti/`.
 
 - **Veri güvenliği (İş 135, 143):** ilerleme iki depoda (localStorage + IndexedDB) tutulur; hiçbir kopya silinmez, açılışta kayıt numarası büyük olan okunur; iki depo da yazamazsa uyarı çıkar; okunamayan ilerlemenin üzerine yazılmaz. İndirmelerde zaman aşımı ve gerçek "Durdur"; eski önbellekten taşırken yer biterse görseller korunur. Yavaş ağda açılış beklemez.
 - **Görünüm (İş 136, 146, 147):** eserin rengi yalnız vurgularda; eser, başyapıt ve konu kartları aynı düzende (görsel → ad → sanatçı · yıl); ince çerçeveler; köşeler üç ölçüde (görsel 4, kart 14, yaprak 24 px); sanatçı sayfasında bölümler ince çizgiyle ayrılır.

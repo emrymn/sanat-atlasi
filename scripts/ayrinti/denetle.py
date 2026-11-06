@@ -61,7 +61,8 @@ def gorsel_adlari():
         if not g:
             continue
         anahtar = f"{g.get('k')}:{g.get('d') or g.get('i') or g.get('u') or ''}"
-        sonuc[b['anahtar']] = yerel.get(anahtar, '')
+        # R2'de yerel kopyası olmayan (WikiArt'tan gelen telifli 20. yüzyıl) görsellerde ad, kaynak anahtarının kendisidir
+        sonuc[b['anahtar']] = yerel.get(anahtar) or anahtar
     return sonuc
 
 
