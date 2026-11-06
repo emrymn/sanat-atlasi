@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.73.0';
+const SURUM = '1.73.1';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -147,10 +147,14 @@ const ISTEGE_BAGLI = [
 // açılışta aynı). Dosyalar sürüm sorgusuyla (?v=SURUM; ara sunucuda ayrı kayıt) istenir, sorgusuz adresle saklanır.
 // Sürüm dosyası tutmazsa kurulum başarısız sayılır: eski sürüm sağlam kalır, sonraki açılışta yeniden denenir.
 const taze = (u) => new Request(`${u}${u.includes('?') ? '&' : '?'}v=${SURUM}`, { cache: 'reload' });
+// İş 162: Cloudflare Pages index.html'i köke yönlendirir (308); fetch yönlendirmeyi izler ama yanıt "redirected"
+// işaretli kalır. Böyle bir yanıt sayfa açılışında verilirse Safari açmıyor ("Response served by service worker has
+// redirections"). Yönlendirilmiş yanıt temiz bir kopya olarak saklanır.
+const yonlendirmesiz = async (y) => (y.redirected ? new Response(await y.blob(), { status: y.status, statusText: y.statusText, headers: y.headers }) : y);
 async function kabugaKoy(c, u) {
   const y = await fetch(taze(u));
   if (!y.ok) throw new Error(`${u}: ${y.status}`);
-  await c.put(new Request(u), y);
+  await c.put(new Request(u), await yonlendirmesiz(y));
 }
 
 self.addEventListener('install', (e) => {
@@ -250,8 +254,9 @@ async function kabuk(istek) {
     const yol = new URL(istek.url).pathname;
     const indexUrl = new URL('index.html', self.registration.scope).href;
     if (yol !== kok && yol !== `${kok}index.html`) return fetch(istek).catch(() => c.match(indexUrl));
-    const k = await c.match(indexUrl);
-    if (k) return k;
+    // İş 162: önce kökün kopyası (yönlendirmesiz), sonra index.html; önbellekteki eski bir kopya yönlendirilmişse temizlenir
+    const k = (await c.match(self.registration.scope)) || (await c.match(indexUrl));
+    if (k) return yonlendirmesiz(k);
     return fetch(istek);
   }
   const k = await c.match(istek, { ignoreSearch: true });
