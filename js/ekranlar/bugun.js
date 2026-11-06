@@ -30,7 +30,7 @@ import {
   kucukGorsel,
   kaydet,
   git,
-  gununEseri,
+  sanatcininGununEseri,
   akimRenk,
   kotuler,
   odaklariYukle,
@@ -264,7 +264,7 @@ function yenilikHtml() {
 // ---------- Günün sanatçısı ----------
 // Günün eseri: ekranın üstünü kenardan kenara kaplar; renkleri ekranın vurgusu olur
 async function gununKartGorseli(s) {
-  const eSozu = sanatciEserleri(s).then(gununEseri);
+  const eSozu = sanatcininGununEseri(s);
   ekranRengi(eSozu, akimRenk(s.akim), (p) => {
     const k = ekran.querySelector('[data-palet]');
     if (k) k.innerHTML = paletHtml(p);

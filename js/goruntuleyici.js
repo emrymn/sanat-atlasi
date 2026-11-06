@@ -1,7 +1,7 @@
 // Tam ekran eser görüntüleyici: iki parmakla yakınlaştırma, kaydırma, eserler arası geçiş.
 import { kacis, notTemizle } from './yardimci.js';
 import { ikon } from './tasarim.js';
-import { gorselUrl, gorselYedek, gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle, devasaUrl, devasaKaynagi, elleOdakKoy } from './gorsel.js';
+import { gorselUrl, gorselYedek, gorselSayfasi, gorselKaynakYazisi, secilenGorsel, kotuIsaretle, devasaUrl, devasaKaynagi, elleOdakKoy, gununResmiSecimi, gununResmiKoy } from './gorsel.js';
 import { eserKonusu } from './ikonografi.js';
 import { hareketAz, gezin } from './gecis.js';
 import { NEDENLER } from './bildirim.js';
@@ -109,7 +109,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     ${koleksiyon ? `<button class="gor-isaret" type="button" aria-pressed="false" aria-label="Koleksiyonuma ekle" hidden>${ikon('isaret', 22)}</button>` : ''}
     ${eserler.length > 1 ? `<button class="gor-ok gor-onceki" type="button" aria-label="Önceki eser">${ikon('geri', 24)}</button><button class="gor-ok gor-sonraki" type="button" aria-label="Sonraki eser">${ikon('ileri', 24)}</button>` : ''}
     <div class="gor-alt"><div class="gor-yazi" ${gizli ? 'hidden' : ''}></div>
-      <div class="gor-eylemler"><button class="gor-kotu" type="button">Görsel kötü</button>${ayrintilar && !gizli ? '<button class="gor-incele" type="button" data-test="gor-incele" hidden>İncele</button>' : ''}${document.documentElement.hasAttribute('data-gelistirici') && !gizli ? '<button class="gor-kotu" type="button" data-gor-odak data-test="gor-odak">Odağı işaretle</button>' : ''}${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
+      <div class="gor-eylemler"><button class="gor-kotu" type="button">Görsel kötü</button>${!gizli ? '<button class="gor-kotu gor-gunun" type="button" aria-pressed="false" data-test="gor-gunun" hidden>Günün resmi</button>' : ''}${ayrintilar && !gizli ? '<button class="gor-incele" type="button" data-test="gor-incele" hidden>İncele</button>' : ''}${document.documentElement.hasAttribute('data-gelistirici') && !gizli ? '<button class="gor-kotu" type="button" data-gor-odak data-test="gor-odak">Odağı işaretle</button>' : ''}${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
       ${bildir ? `<div class="gor-bildir-menu" data-test="gor-bildir-menu" hidden>${NEDENLER.map((n) => `<button type="button" data-gor-neden="${n}">${n}</button>`).join('')}</div>` : ''}
       ${ayrintilar && !gizli ? `<div class="gor-inceleme" data-test="gor-inceleme" hidden>
         <p class="gor-inc-ust"><span class="gor-inc-no" data-test="gor-inc-no"></span><b class="gor-inc-ad" data-test="gor-inc-ad"></b></p>
@@ -149,7 +149,18 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   let ilkInceleme = !!incelemeyeBasla;
 
   // K4: işaret düğmesi o anki eserin koleksiyondaki durumunu gösterir; sanatçısı bilinmeyen eserde gizli
+  // İş 157: "Günün resmi" düğmesi: bu eser sanatçısının günün resmi mi (bu cihazda ya da depodaki seçimle)
+  const gununDugme = kok.querySelector('[data-test="gor-gunun"]');
+  function gununGuncelle() {
+    if (!gununDugme) return;
+    const e = eserler[sira];
+    gununDugme.hidden = !(e && e.sid && e.anahtar);
+    const secili = !gununDugme.hidden && gununResmiSecimi(e.sid) === e.anahtar;
+    gununDugme.setAttribute('aria-pressed', String(secili));
+    gununDugme.textContent = secili ? 'Günün resmi ✓' : 'Günün resmi';
+  }
   function isaretiGuncelle() {
+    gununGuncelle();
     if (!isaret) return;
     const e = eserler[sira];
     isaret.hidden = !e.sid;
@@ -492,6 +503,16 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     kapat({ sonra: () => gezin(hedef) });
   });
   kok.querySelector('.gor-kotu').addEventListener('click', kotuGorsel);
+  if (gununDugme)
+    gununDugme.addEventListener('click', () => {
+      const e = eserler[sira];
+      const secili = gununResmiSecimi(e.sid) === e.anahtar;
+      const tamam = gununResmiKoy(e.sid, secili ? null : e.anahtar);
+      gununGuncelle();
+      if (!tamam) mesaj.textContent = 'Seçim kaydedilemedi.';
+      else if (secili) mesaj.textContent = gununResmiSecimi(e.sid) === e.anahtar ? 'Bu cihazdaki seçim kaldırıldı; depodaki seçim geçerli.' : 'Günün resmi seçimi kaldırıldı; otomatik seçime dönüldü.';
+      else mesaj.textContent = "Sanatçının günün resmi bu oldu. Kalıcı olması için Ayarlar → Günün resimleri'nden kopyalayıp Claude'a gönder.";
+    });
   // İş 150: geliştirici modunda tablonun önemli noktası elle işaretlenir (otomatik yüz odağının önüne geçer)
   let odakModu = false;
   const odakDugme = kok.querySelector('[data-gor-odak]');

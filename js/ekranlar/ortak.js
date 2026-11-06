@@ -5,7 +5,7 @@ import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
 import { sanatciEserleri, eserBaslik } from '../eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla, elleOdaklariAyarla } from '../gorsel.js';
+import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla, elleOdaklariAyarla, gununResimleriniAyarla, seciliGununResmi } from '../gorsel.js';
 import { gununSanatcisi } from '../gunun.js';
 import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
@@ -331,7 +331,7 @@ export function renkSabitle(palet) {
 export function gununRengi() {
   const s = d.harita.get(gununId());
   if (!s) return ekranRengi(null, null);
-  return ekranRengi(sanatciEserleri(s).then(gununEseri), akimRenk(s.akim));
+  return ekranRengi(sanatcininGununEseri(s), akimRenk(s.akim));
 }
 
 // [data-kucuk="<sanatçı id>"] kutularına en bilinen eserin küçük görseli
@@ -667,10 +667,20 @@ export function gununHavuzu() {
   return (dikey.length ? dikey : havuz).map((s) => s.id);
 }
 
+// İş 157: elle seçilen günün resimleri (data/gunun_resimleri.json) bir kez yüklenir; günün eseri onu bekler
+let gununResmiSozu = null;
+export function gununResimleriYukle() {
+  return (gununResmiSozu ||= jsonGetir('data/gunun_resimleri.json').then(gununResimleriniAyarla, () => {}));
+}
+export const sanatcininGununEseri = (s) => Promise.all([sanatciEserleri(s), gununResimleriYukle()]).then(([l]) => gununEseri(l));
+
 // Günün eseri: çözünürlüğü, ekrana oturuşu ve bilinirliği birlikte en iyi olan eser; oranı bilinmiyorsa en bilinen
 // dikey eser, o da yoksa en bilinen eser
 const DIKEY_ORAN = 0.85;
 export function gununEseri(eserler) {
+  // İş 157: Emre'nin elle seçtiği günün resmi (data/gunun_resimleri.json ya da bu cihazda seçilen) her şeyin önünde
+  const secili = seciliGununResmi(eserler);
+  if (secili) return secili;
   // İş 83: Tuval'de tablo ekranı kenardan kenara kaplar (kırpılarak). İş 100 (Emre: "hem en kaliteli çözünürlükte hem
   // en telefona uygun hem de en popüler eser olsun"; "en popüler olmasına gerek yok, bunlara göre oranla, en iyisini
   // seç"): eskiden önce çözünürlük, sonra en çok %30 kırpılanlar arasında en bilineni, yoksa en az kırpılanı; dikey
