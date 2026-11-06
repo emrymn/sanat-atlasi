@@ -3,8 +3,9 @@
 **Tur 1 · 5 Kasım 2026 · Claude (Claude Code, pilot).** 20 başyapıt, 119 nokta. Sürüm 1.71.0, KARARLAR İş 151.
 **Tur 2 · 5 Kasım 2026 · Claude (Claude Code).** Parti 1: 20 eser, 115 nokta. Sürüm 1.71.1, KARARLAR İş 152.
 **Tur 3 · 5 Kasım 2026 · Claude (Claude Code).** Plan Parti 2: 20 eser, 115 nokta. Sürüm 1.71.2, KARARLAR İş 153.
-**Tur 4 · 5 Kasım 2026 · Claude (Claude Code).** Plan Parti 4 + Parti 5: 27 eser, 153 nokta. Sürüm 1.71.3, KARARLAR İş 154.
-Bir sonraki model önce `TALIMAT.md`'yi, sonra bu dosyayı, sonra `DURUM.md`'yi okur; **güncel hazır istem en altta** (Tur 4 bölümü).
+**Tur 4 · 5 Kasım 2026 · Claude (Claude Code).** Plan Parti 3 (Claude Lorrain → Millais): 20 eser, 117 nokta. Sürüm 1.71.3, KARARLAR İş 154.
+**Tur 5 · 5 Kasım 2026 · Claude (Claude Code).** Plan Parti 4 + Parti 5 (Ingres → Bacon): 27 eser, 153 nokta. Sürüm 1.71.4, KARARLAR İş 155. **107 / 107 bitti.**
+Bir sonraki model önce `TALIMAT.md`'yi, sonra bu dosyayı, sonra `DURUM.md`'yi okur; **güncel hazır istem en altta** (Tur 5 bölümü).
 
 ## 1. Yapılanlar
 
@@ -217,11 +218,75 @@ PR #172) ve önce birleşti; bu tur ona göre İş 153 / 1.71.2 olarak numaralan
 
 ---
 
-# Tur 4 · Plan Parti 4 ve Parti 5 (Claude, Claude Code)
+# Tur 4 · Plan Parti 3 (Claude, Claude Code)
 
-Emre "DEVIR.md'yi oku, 4. partiyı yap" dedi: §4 tablosundaki **plan Parti 4** (Ingres → Munch; bu tur başlarken DURUM.md'de
-"Parti 2" adıyla duruyordu). Plan Parti 3 (Claude Lorrain → Millais) main'de henüz yoktu ve atlandı. İş sürerken Emre "son resimleri de yap" dedi:
-**plan Parti 5** (Kirchner → Bacon, 7 eser) da bu turda yapıldı. Toplam 87 / 107 eser, 502 nokta.
+**Numaralama notu:** Bu tur, Tur 3 (plan Parti 2, İş 153) ile aynı anda başka bir oturumda yapıldı; o önce main'e
+birleşti. Bu iş main'in üstüne yeniden kuruldu: kayıtlar `eser_ayrintilari.json`'un sonuna eklendi, İş 154 / 1.71.3
+olarak numaralandı, `durum.py` yeniden çalıştırıldı. Anahtarlar çakışmıyor.
+
+## Yapılanlar
+
+- 20 eser: Claude Lorrain, S. Ricci, Watteau, Boucher, Fragonard, Tiepolo, Chardin, Greuze, B. West, A. Kauffman,
+  David, Vigée Le Brun, Blake, Friedrich, Fuseli, Constable, Delacroix, Goya, Turner, Millais. 117 nokta (17 eserde 6,
+  3 eserde 5). Toplam 80 / 107 eser, 466 nokta.
+- Her eserde `bak`'taki üç ayrıntı noktalara alındı (Ophelia'nın "en sağdaki mor çiçekleri" hariç, aşağıda); metinler
+  kaydın `bolumler` olgularına dayanır.
+- 4096'lığı **olmayan** iki eser 1280'den doğrulandı: Boucher (Sarışın Odalık; 1280'lik kopya da yalnız 1100 px) ve
+  Kauffman (Kornelia). Ricci (2024 px) ve Turner (2152 px) için "d" kopyası var ama küçük; yakınlaşma biraz yumuşak kalır.
+- Aşama 2'de düzeltilenler (4): **Goya "Avuçtaki iz"** ilk seçimde bize göre sağdaki ele konmuştu; 4096'da iki eli yan
+  yana kırpınca iz adamın **sağ** avucunda (bize göre solda, x≈0,22) çıktı, kutu oraya taşındı. **Tiepolo "Marcus
+  Antonius"** kutusunun ortası yanındaki sakallı adamdaydı; miğferli figüre kaydırıldı. **Greuze aslan başı** üstten,
+  **Vigée Le Brun tacı** üstten ve soldan kesiliyordu.
+- Yardımcı: Tur 2'deki gibi `r/NN.json` taslaklarını birleştiren ve tek kutuyu düzelten iki küçük scratch betiği
+  (depoya girmedi).
+
+## Emin olunmayanlar
+
+- **West "Koşan haberci":** haberci en solda çok küçük; kutu yeşil giyimli askerin işaret eden eliyle birlikte haberciyi
+  alıyor, nokta elin üstüne düşüyor. Haberin Quebec zaferi olduğu genel bilgi (kayıtta yok).
+- **Kauffman "Açılan el":** Kornelia'nın "Benim mücevherlerim bunlar" sözü öykünün bilinen hâli (Valerius Maximus);
+  kayıtta söz geçmiyor, metne eklendi.
+- **Ricci:** sağdaki genç "Davut'un habercisi olabilir" diye yumuşatıldı (kaydın ifadesi). Çeşme "hayvan başı" diye
+  bırakıldı (ejder ya da yunus olabilir).
+- **Watteau:** "Kalkmaya yardım" ve "Geriye son bakış" çiftleri Rodin'in okumasına göre adlandırıldı; tablo
+  yönünün (varış mı ayrılış mı) tartışmalı olduğu metinde.
+- **Chardin "Masadan taşan bıçak":** "sonraki natürmortlarında da kullanır" genel bilgi, kayıtta yok.
+- **Delacroix:** silindir şapkalının burjuvaziyi temsil ettiği yaygın okuma; Delacroix'nın kendisi olduğu tartışmalı
+  bırakıldı. İmza "Eug. Delacroix 1830" 4096'da okunuyor.
+- **Millais:** `bak`'taki "en sağdaki mor çiçekler" ayrı nokta yapılmadı (7. nokta olurdu); yaban gülleri metninden de
+  çıkarıldı, çünkü kutunun içinde değiller. Kafatası iddiasına (tartışmalı) yer verilmedi.
+- **Blake:** görsel kâğıt kenarlı sayfa fotoğrafı; koordinatlar kâğıdı içeriyor.
+- **Goya:** kurbanlar arasındaki keşiş kutusu yanındaki adamın başını da alıyor; keşiş aşağıda, elleri kavuşmuş.
+
+## Kalan plan
+
+27 eser. `DURUM.md` artık "Parti 1" = plan Parti 4 (Ingres → Munch, 20 eser), "Parti 2" = plan Parti 5
+(Kirchner → Bacon, 7 eser) diyor. Plan Parti 5'teki 5 eserin (Guernica, Höch, Dalí, Magritte, Bacon) uygulamada yerel
+görseli yok (`coz.py` "yerel kopya yok" der); görsel çözülmeden ayrıntı noktası eklenemez (telif nedeniyle büyük
+olasılıkla bilerek görselsiz). §4 tablosundaki notlar geçerli.
+
+## Sonraki modele hazır istem
+
+> Sanat Atlası deposunda rehberli eser incelemesine devam et (KARARLAR İş 151–154). Önce `scripts/ayrinti/TALIMAT.md`,
+> `scripts/ayrinti/DEVIR.md` (özellikle en alttaki Tur 4 raporu) ve `scripts/ayrinti/DURUM.md`'yi oku.
+> Önce main'i çek; `DURUM.md`'deki **Parti 1**'in (Ingres → Munch) 20 eseri için `data/eser_ayrintilari.json`'a kayıt ekle: her
+> eserde 4–6 ayrıntı noktası, `{x, y, w, h}` 0–1 oranlı, 2–3 cümlelik Türkçe açıklama; eserin
+> `data/basyapitlar.json`'daki `bak` ayrıntılarını noktalara al. İki aşamalı görsel doğrulamayı atlama: 1280 px kopyada
+> ızgarayla seç, her kutuyu 4096 px kopyadan payla kırpıp doğrula ve düzelt (`scripts/ayrinti/yardimci/` betikleri).
+> Bitince `python3 scripts/ayrinti/denetle.py` sıfır hata vermeli, `python3 scripts/ayrinti/durum.py` ile `DURUM.md`'yi
+> yenile, `DEVIR.md`'ye "Tur 5" başlığıyla kendi raporunu ekle, `KARARLAR.md`'ye kısa not yaz, `npm run test:unit`
+> geçsin, `sw.js`, `js/surum.js` ve sürüm testlerinde (`tests/unit/paket8.test.mjs` — iki yerde, regex dahil —,
+> `tests/e2e/paket8.spec.js`) yama sürümünü yükselt (1.71.x), PR aç. `tools/` ve `data/sanatcilar.json` içeriğine
+> dokunma. Kredi azalırsa bitirdiğin eserlerde dur; yarım eser bırakma; DEVIR ve DURUM'u mutlaka güncelle.
+
+---
+
+# Tur 5 · Plan Parti 4 ve Parti 5 (Claude, Claude Code)
+
+Emre "DEVIR.md'yi oku, 4. partiyı yap" dedi: §4 tablosundaki **plan Parti 4** (Ingres → Munch). İş sürerken "son resimleri
+de yap" dedi: **plan Parti 5** (Kirchner → Bacon, 7 eser) da bu turda yapıldı. Plan Parti 3 aynı anda başka bir oturumda
+yapıldı (Tur 4, İş 154, PR #174) ve önce birleşti; bu tur onun üstüne birleştirildi (İş 155, 1.71.4). Toplam **107 / 107** eser,
+619 nokta: bütün başyapıtlar bitti.
 
 ### Yapılanlar
 - 20 başyapıt, 115 nokta (Ingres, Gérôme, Bouguereau, Daumier, Courbet, Millet, Caillebotte, Degas, Cassatt, Morisot, Monet,
@@ -266,17 +331,14 @@ Emre "DEVIR.md'yi oku, 4. partiyı yap" dedi: §4 tablosundaki **plan Parti 4** 
 - Gérôme imzası "J.L.GEROME" okunuyor; metinde yalnız "Gérôme'un imzası" dendi. Lautrec matbaası afişte "CH LEVY" (aksansız).
 
 ### Kalan plan
-Bu turdan sonra DURUM.md'de yalnız **Parti 1** = plan Parti 3 (Claude Lorrain → Millais, 20 eser) kalıyor. Kalan 20 eser. Plan Parti 3 başka bir oturumda sürüyorsa birleştirmede `eser_ayrintilari.json`,
-DEVIR, DURUM, KARARLAR, README ve sürüm dosyalarında çakışma çıkar: main'in dosyalarını al, kendi kayıtlarını sona ekle, İş ve
-sürüm numarasını bir artır, `durum.py`'yi yeniden çalıştır.
+Başyapıtların hepsinde rehberli inceleme var. Yeni başyapıt eklenirse (`data/basyapitlar.json`) `durum.py` onu "kalan"
+olarak gösterir; aynı kurallarla (TALIMAT.md, iki aşamalı doğrulama) kayıt eklenir. Görseli değişen eseri `denetle.py` yakalar:
+koordinatlara yeni görselde yeniden bakılır.
 
 ## Sonraki modele hazır istem
 
-> Sanat Atlası deposunda rehberli eser incelemesine devam et (KARARLAR İş 151–154). Önce `scripts/ayrinti/TALIMAT.md`,
-> `scripts/ayrinti/DEVIR.md` (en alttaki Tur 4 raporu) ve `scripts/ayrinti/DURUM.md`'yi oku. Önce main'i çek; `DURUM.md`'deki
-> **Parti 1**'in eserleri için `data/eser_ayrintilari.json`'a kayıt ekle: her eserde 4–6 ayrıntı noktası, `{x, y, w, h}`
-> 0–1 oranlı, 2–3 cümlelik Türkçe açıklama; `bak` ayrıntılarını noktalara al. İki aşamalı doğrulamayı atlama (1280 ızgara
-> → 4096 kırpıntı, `scripts/ayrinti/yardimci/`). Bitince `denetle.py` sıfır hata, `durum.py` ile DURUM.md, DEVIR.md'ye yeni
-> "Tur" raporu, KARARLAR'a not, README'deki sayıları güncelle, `npm run test:unit` geçsin; `sw.js`, `js/surum.js` ve sürüm
-> testlerinde (`tests/unit/paket8.test.mjs`, `tests/e2e/paket8.spec.js`) yama sürümünü yükselt, PR aç. `tools/` ve
-> `data/sanatcilar.json` içeriğine dokunma. Yarım eser bırakma; DEVIR ve DURUM'u mutlaka güncelle.
+> Sanat Atlası'nda rehberli eser incelemesi 107 başyapıtın hepsinde bitti (KARARLAR İş 151–155). Yeni başyapıt eklendiyse ya da
+> `python3 scripts/ayrinti/denetle.py` "gorsel değişmiş" hatası veriyorsa: `scripts/ayrinti/TALIMAT.md` ve bu dosyanın Tur 5
+> raporunu oku, `scripts/ayrinti/DURUM.md`'deki kalanlar ya da hatalı kayıtlar için iki aşamalı doğrulamayla (1280 ızgara → en büyük
+> kopya kırpıntısı) noktaları yaz/düzelt; `denetle.py` sıfır hata, `durum.py`, DEVIR'e tur notu, KARARLAR, README sayıları,
+> `npm run test:unit`, yama sürümü (`sw.js`, `js/surum.js`, sürüm testleri), PR. `tools/` ve `data/sanatcilar.json`'a dokunma.
