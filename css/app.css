@@ -2982,6 +2982,8 @@ html.sekmesiz .sekmeler {
   color: var(--ink);
 }
 .gor-kotu,
+.gor-gunun,
+.gor-odak,
 .gor-incele {
   align-self: flex-start;
   margin-top: 6px;
