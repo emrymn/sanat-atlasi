@@ -71,18 +71,25 @@ test('İş 150: geliştirici modunda görüntüleyicide odak işaretlenir, Ayarl
   await expect(page.locator('[data-test="elle-odak"] textarea')).toHaveValue(/"odak":\{"[0-9a-f]+":\[2\d,[12]\d\]\}/);
 });
 
-test('İş 150: geliştirici modu kapalıyken odak düğmesi yok', async ({ page, context }) => {
+test('İş 150/159: geliştirici modu kapalıyken odak düğmesi yalnız günün resminde', async ({ page, context }) => {
   await agiHazirla(context);
   await kur(context);
   await page.goto('./#/sanatci/giotto-di-bondone');
   await page.locator('.eser').first().click();
   await expect(page.locator('.gor-resim')).toBeVisible();
-  await expect(page.locator('[data-gor-odak]')).toHaveCount(0);
+  await expect(page.locator('[data-gor-odak]')).toBeHidden();
+  // İş 159: eser günün resmi seçilince odak düğmesi geliştirici modu olmadan da çıkar (Tuval kırpması için)
+  await page.locator('[data-test="gor-gunun"]').click();
+  await expect(page.locator('[data-gor-odak]')).toBeVisible();
+  await page.locator('[data-test="gor-gunun"]').click();
+  await expect(page.locator('[data-gor-odak]')).toBeHidden();
 });
 
 // İş 157: görüntüleyicide "Günün resmi" → Tuval'de o sanatçının tablosu o olur; Ayarlar'da kopyalanacak liste
 test('İş 157: görüntüleyicide seçilen eser sanatçının günün resmi olur, Ayarlar’da listelenir', async ({ page, context }) => {
   await agiHazirla(context);
+  // otomatik seçim sınanır: depodaki elle seçilen günün resimleri (İş 159) devre dışı
+  await context.route(/data\/gunun_resimleri\.json/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: '{"surum":1,"secim":{}}' }));
   await kur(context);
   await page.goto('./#/ayarlar');
   await page.locator('#sekmeler a').first().waitFor();

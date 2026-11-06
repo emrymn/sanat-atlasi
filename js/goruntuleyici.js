@@ -103,13 +103,15 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   kok.setAttribute('role', 'dialog');
   kok.setAttribute('aria-modal', 'true');
   kok.setAttribute('aria-label', 'Eser görüntüleyici');
+  // İş 150: odak düğmesi geliştirici modunda her eserde; İş 159: günün resmi seçilen eserde her zaman (Tuval kırpması)
+  const gelistirici = document.documentElement.hasAttribute('data-gelistirici');
   kok.innerHTML = `
     <div class="gor-sahne"><img class="gor-resim" alt="" draggable="false"><div class="gor-noktalar" data-test="gor-noktalar" hidden></div><p class="gor-yukleniyor">Yükleniyor…</p></div>
     <button class="gor-kapat" type="button" aria-label="Kapat">${ikon('kapat', 22)}</button>
     ${koleksiyon ? `<button class="gor-isaret" type="button" aria-pressed="false" aria-label="Koleksiyonuma ekle" hidden>${ikon('isaret', 22)}</button>` : ''}
     ${eserler.length > 1 ? `<button class="gor-ok gor-onceki" type="button" aria-label="Önceki eser">${ikon('geri', 24)}</button><button class="gor-ok gor-sonraki" type="button" aria-label="Sonraki eser">${ikon('ileri', 24)}</button>` : ''}
     <div class="gor-alt"><div class="gor-yazi" ${gizli ? 'hidden' : ''}></div>
-      <div class="gor-eylemler"><button class="gor-kotu" type="button">Görsel kötü</button>${!gizli ? '<button class="gor-kotu gor-gunun" type="button" aria-pressed="false" data-test="gor-gunun" hidden>Günün resmi</button>' : ''}${ayrintilar && !gizli ? '<button class="gor-incele" type="button" data-test="gor-incele" hidden>İncele</button>' : ''}${document.documentElement.hasAttribute('data-gelistirici') && !gizli ? '<button class="gor-kotu" type="button" data-gor-odak data-test="gor-odak">Odağı işaretle</button>' : ''}${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
+      <div class="gor-eylemler"><button class="gor-kotu" type="button">Görsel kötü</button>${!gizli ? '<button class="gor-kotu gor-gunun" type="button" aria-pressed="false" data-test="gor-gunun" hidden>Günün resmi</button>' : ''}${ayrintilar && !gizli ? '<button class="gor-incele" type="button" data-test="gor-incele" hidden>İncele</button>' : ''}${!gizli ? `<button class="gor-kotu" type="button" data-gor-odak data-test="gor-odak"${gelistirici ? '' : ' hidden'}>Odağı işaretle</button>` : ''}${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
       ${bildir ? `<div class="gor-bildir-menu" data-test="gor-bildir-menu" hidden>${NEDENLER.map((n) => `<button type="button" data-gor-neden="${n}">${n}</button>`).join('')}</div>` : ''}
       ${ayrintilar && !gizli ? `<div class="gor-inceleme" data-test="gor-inceleme" hidden>
         <p class="gor-inc-ust"><span class="gor-inc-no" data-test="gor-inc-no"></span><b class="gor-inc-ad" data-test="gor-inc-ad"></b></p>
@@ -158,6 +160,8 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     const secili = !gununDugme.hidden && gununResmiSecimi(e.sid) === e.anahtar;
     gununDugme.setAttribute('aria-pressed', String(secili));
     gununDugme.textContent = secili ? 'Günün resmi ✓' : 'Günün resmi';
+    const odak = kok.querySelector('[data-gor-odak]');
+    if (odak) odak.hidden = !(gelistirici || secili);
   }
   function isaretiGuncelle() {
     gununGuncelle();
@@ -535,7 +539,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
         const tamam = elleOdakKoy(g, nokta);
         odakModu = false;
         odakDugme.textContent = 'Odağı işaretle';
-        mesaj.textContent = tamam ? `Odak kaydedildi (%${Math.round(nokta[0])}, %${Math.round(nokta[1])}). Ayarlar → Elle odaklar'dan kopyala.` : 'Bu görselin yerel kopyası yok; odak kaydedilemedi.';
+        mesaj.textContent = tamam ? `Odak kaydedildi (%${Math.round(nokta[0])}, %${Math.round(nokta[1])}). Tuval'de bu nokta ekranın ortasına gelir. Kalıcı olması için Ayarlar → Elle odaklar'dan kopyala.` : 'Bu görselin yerel kopyası yok; odak kaydedilemedi.';
       },
       true,
     );
