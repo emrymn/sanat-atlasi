@@ -290,9 +290,8 @@ function paletZemini(p) {
   const koyu = hsl(zemin)[2] < 0.5;
   const ayarla = (r) => {
     const [h, sa, l] = hsl(r);
-    // koyu temada açıklık %18–38 arası; açık temada %58–76: resmin rengi gece modundaki kadar seçilsin, koyu yazı okunur kalsın
     if (koyu) return karistir(hsldenHex(h, Math.min(sa, 0.65), Math.max(0.18, Math.min(l, 0.38))), zemin, 0.85);
-    return karistir(hsldenHex(h, Math.min(Math.max(sa, 0.12), 0.6), Math.max(0.58, Math.min(l, 0.76))), zemin, 0.3);
+    return karistir(r, zemin, 0.18);
   };
   const n = p.length;
   let y = 0;

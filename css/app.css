@@ -14670,16 +14670,22 @@ html.gecis-suruyor {
   backdrop-filter: blur(16px) saturate(1.6);
 }
 :root[data-tema='gunduz'] .sekmeler {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0.04) 55%),
-    linear-gradient(100deg, rgba(var(--boya-1), 0.5), rgba(var(--boya-2), 0.4) 55%, rgba(var(--boya-3), 0.48)),
-    rgba(var(--bg-rgb), 0.62);
-  border-color: rgba(255, 255, 255, 0.55);
-  box-shadow:
-    0 16px 36px -14px rgba(60, 40, 20, 0.45),
-    0 2px 6px rgba(60, 40, 20, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.85),
-    inset 0 0 0 0.5px rgba(var(--vurgu-rgb), 0.3);
+  background: var(--tab-bg);
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--ink) 14%, transparent);
+  box-shadow: 0 8px 24px -12px rgba(var(--golge-rgb), 0.25);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+:root[data-tema='gunduz'] .sekmeler .sekme-isaret {
+  background: var(--vurgu-acik);
+  box-shadow: none;
+}
+:root[data-tema='gunduz'] .sekmeler a {
+  color: var(--ink-2);
+}
+:root[data-tema='gunduz'] .sekmeler a[aria-current='page'] {
+  color: var(--vurgu-acik-yazi);
 }
 .sekme-isaret {
   background:
@@ -15299,119 +15305,61 @@ button.motif-kapak:active .hp-kapak-eser img {
   touch-action: pan-y;
 }
 
-/* ---- Gündüz: boyalı paneller. Sahne resmi yıkanmaz, canlı kalır; içerik günün paletiyle (--boya-*) boyanmış,
-   net kenarlı panellere oturur. Bulanık perde yerine renk ve kenar ayırır. ---- */
-:root[data-tema='gunduz'] {
-  --panel-1: color-mix(in srgb, rgb(var(--boya-1)) 34%, var(--surface));
-  --panel-2: color-mix(in srgb, rgb(var(--boya-2)) 30%, var(--surface));
-  --panel-3: color-mix(in srgb, rgb(var(--boya-3)) 32%, var(--surface));
-  --panel-kenar: color-mix(in srgb, var(--ink) 18%, transparent);
-  --etiket-renk: color-mix(in srgb, rgb(var(--boya-3)) 45%, var(--ink));
-}
+/* Açık temanın yüzey hiyerarşisi: tablo, açık okuma paneli ve ince sınırlar. */
 :root[data-tema='gunduz'] :is(.pk-sahne, .ilr-sahne)::before {
-  background: linear-gradient(
-    180deg,
-    rgba(var(--bg-rgb), 0.78) 0%,
-    rgba(var(--bg-rgb), 0) 20%,
-    rgba(var(--bg-rgb), 0) 60%,
-    rgba(var(--boya-1), 0.4) 100%
-  );
-}
-:root[data-tema='gunduz'] .pk-ust .ust h1 {
-  text-shadow: 0 1px 14px rgba(var(--bg-rgb), 0.9);
+  background: linear-gradient(180deg, rgba(var(--bg-rgb), 0.94), transparent 30%, transparent 65%, var(--bg));
 }
 :root[data-tema='gunduz'] :is(.pk-govde, .ilr-govde) {
-  padding: 16px 18px 18px;
-  border-radius: 20px;
-  background: var(--panel-1);
-  box-shadow:
-    inset 0 0 0 1px var(--panel-kenar),
-    0 18px 36px -20px rgba(var(--golge-rgb), 0.55);
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 8px 24px -16px rgba(var(--golge-rgb), 0.2);
 }
-:root[data-tema='gunduz'] :is(
-    .calisma-takvim,
-    .calisma-egri,
-    .koleksiyon-bag,
-    .siradaki.resimli,
-    .pk-ek-turlar,
-    .pk-salonlar,
-    .cevapsiz-akimlar,
-    .hedef-sec.pk-hedef
-  ) {
+:root[data-tema='gunduz'] :is(.calisma-takvim, .calisma-egri, .koleksiyon-bag, .siradaki.resimli, .pk-ek-turlar, .cevapsiz-akimlar, .hedef-sec.pk-hedef) {
   padding: 16px;
-  border: 0;
-  border-radius: 20px;
-  box-shadow:
-    inset 0 0 0 1px var(--panel-kenar),
-    0 14px 30px -22px rgba(var(--golge-rgb), 0.5);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: none;
 }
-:root[data-tema='gunduz'] :is(.calisma-takvim, .siradaki.resimli, .hedef-sec.pk-hedef) {
-  background: var(--panel-1);
-}
-:root[data-tema='gunduz'] :is(.calisma-egri, .pk-ek-turlar, .cevapsiz-akimlar) {
-  background: var(--panel-2);
-}
-:root[data-tema='gunduz'] :is(.koleksiyon-bag, .pk-salonlar) {
-  background: var(--panel-3);
+:root[data-tema='gunduz'] .pk-salonlar {
+  background: transparent;
+  box-shadow: none;
 }
 :root[data-tema='gunduz'] .hedef-sec.pk-hedef {
   margin-top: 16px;
-  padding-block: 10px;
+  padding-block: 12px;
 }
 :root[data-tema='gunduz'] .siradaki-onizleme::before {
-  background: linear-gradient(90deg, var(--panel-1) 35%, transparent 100%);
-}
-:root[data-tema='gunduz'] .hatalar-satir {
-  border-top-color: var(--panel-kenar);
-  border-bottom-color: transparent;
-}
-/* Tuval'in alt bölümü: tablonun renkleriyle boyanmış yüzeyler */
-:root[data-tema='gunduz'] :is(.sekmeler .sekme-isaret) {
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05) 60%),
-    rgba(var(--vurgu-rgb), 0.32);
+  background: linear-gradient(90deg, var(--surface) 35%, transparent);
 }
 :root[data-tema='gunduz'] .hikaye .palet {
-  --palet-h: 18px;
-  border-radius: 6px;
-  box-shadow: 0 8px 20px -10px rgba(var(--golge-rgb), 0.6);
-}
-:root[data-tema='gunduz'] .hikaye > .bolum:has([data-palet]) {
-  padding: 14px 16px 16px;
-  border-radius: 18px;
-  background: var(--panel-2);
-  box-shadow: inset 0 0 0 1px var(--panel-kenar);
+  --palet-h: 12px;
+  border-radius: 4px;
+  box-shadow: none;
 }
 :root[data-tema='gunduz'] .hikaye > .dugme.ince {
-  background: var(--panel-3);
-  border-color: transparent;
-  box-shadow:
-    inset 0 0 0 1px var(--panel-kenar),
-    0 12px 26px -18px rgba(var(--golge-rgb), 0.6);
+  background: var(--surface);
+  color: var(--ink);
+  border-color: var(--border);
+  box-shadow: none;
 }
 :root[data-tema='gunduz'] .defter {
-  background: var(--panel-kenar);
-  border-color: transparent;
-  box-shadow: 0 16px 32px -20px rgba(var(--golge-rgb), 0.6);
+  background: var(--border);
+  border-color: var(--border);
+  box-shadow: none;
 }
-:root[data-tema='gunduz'] .defter-hucre:nth-child(1) {
-  background: var(--panel-1);
+:root[data-tema='gunduz'] .defter-hucre {
+  background: var(--surface);
+  color: var(--ink);
 }
-:root[data-tema='gunduz'] .defter-hucre:nth-child(2) {
-  background: var(--panel-2);
+:root[data-tema='gunduz'] :is(.tk.bos, .tk.gelecek) {
+  background: var(--bg);
+  border-color: var(--border);
 }
-:root[data-tema='gunduz'] .defter-hucre:nth-child(3) {
-  background: var(--panel-3);
-}
-:root[data-tema='gunduz'] .hikaye .etiket {
-  color: var(--etiket-renk);
-}
-:root[data-tema='gunduz'] .tk.bos,
-:root[data-tema='gunduz'] .tk.gelecek {
-  background: rgba(var(--boya-2), 0.22);
-  border-color: transparent;
-}
-:root[data-tema='gunduz'] :is(.calisma-takvim, .calisma-egri, .pk-ek-turlar, .pk-salonlar, .pk-govde, .ilr-govde) .etiket,
-:root[data-tema='gunduz'] .bolum-baslik.etiket {
-  color: var(--etiket-renk);
+:root[data-tema='gunduz'] :is(.hikaye, .calisma-takvim, .calisma-egri, .pk-ek-turlar, .pk-salonlar, .pk-govde, .ilr-govde) .etiket {
+  color: var(--ink-2);
 }

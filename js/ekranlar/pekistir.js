@@ -67,8 +67,6 @@ import {
   guncelMi,
   kucukKareleriDoldur,
   tabloDugme,
-  gununId,
-  gununEseri,
 } from './ortak.js';
 import { akimIstatistigi, seviyeIziHtml } from './pano.js';
 import { turBilgisi, anaSayfa } from './bugun.js';
@@ -128,7 +126,7 @@ function turSahnesi(karisik) {
   const hedefler = [...new Set([...HEDEFLER, hedef])].sort((x, y) => x - y);
   const kapak = deste[0] ? deste[0].s : acikListe()[0];
   return `<section class="pk-sahne" aria-label="Bugünkü karışık tur">
-      <div class="pk-resim" aria-hidden="true" data-pk-gunun></div>
+      <div class="pk-resim" aria-hidden="true" data-pk-sanatci="${kapak ? kacis(kapak.id) : ''}"></div>
       <div class="pk-ust">${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}</div>
       <div class="pk-deste${deste.length ? '' : ' bos'}" aria-hidden="true">${deste
         .map((x, i) => `<span class="pk-kart" style="--i:${i}"><span class="kucuk-kare" data-kucuk="${kacis(x.s.id)}"></span></span>`)
@@ -239,18 +237,23 @@ export function pekistirMenusu() {
   desteBaslat(ekran.querySelector('.pk-sahne'), d.ilerleme.ayarlar.egim !== false);
 }
 
-// Atölye sahnesinin arkası günün tablosu: ekranın renkleri (gununRengi) de bu tablodan çıktığı için zemin ve resim aynı paletten
+// Eski seçimdeki gibi tekrar destesinin ilk sanatçısının dönemi esas alınır; takvime bağlı değildir.
 function atolyeResmiDoldur() {
-  const kutu = ekran.querySelector('[data-pk-gunun]');
-  const s = d.harita.get(gununId());
-  if (!kutu || !s) return;
-  sanatciEserleri(s)
-    .then(gununEseri)
-    .then((e) => {
-      if (!e || !kutu.isConnected) return;
-      const g = secilenGorsel(e, kotuler());
-      kutu.innerHTML = `<img decoding="async" alt="" src="${kacis(gorselUrl(g, 960))}" data-yedek="${kacis(gorselYedek(g))}">`;
-    });
+  const kutu = ekran.querySelector('[data-pk-sanatci]');
+  const kapak = d.harita.get(kutu?.dataset.pkSanatci);
+  if (!kutu || !kapak) return;
+  const adaylar = acikListe().filter((s) => s.akim === kapak.akim && s.id !== kapak.id);
+  const s = adaylar[0] || kapak;
+  const eserSozu = sanatciEserleri(s).then((eserler) => {
+    const sirali = bilinirlikSirasi(eserler).filter((e) => secilenGorsel(e, kotuler()));
+    return sirali[1] || sirali[0];
+  });
+  ekranRengi(eserSozu, akimRenk(s.akim));
+  eserSozu.then((e) => {
+    if (!e || !kutu.isConnected) return;
+    const g = secilenGorsel(e, kotuler());
+    kutu.innerHTML = `<img decoding="async" alt="" src="${kacis(gorselUrl(g, 960))}" data-yedek="${kacis(gorselYedek(g))}">`;
+  }).catch(() => {});
 }
 
 // Sıralama ve hedef değişince menü yerinde yeniden çizilir; kaydırma yeri korunur

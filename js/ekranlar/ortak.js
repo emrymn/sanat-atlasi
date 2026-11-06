@@ -19,8 +19,8 @@ import { eseriBildir } from '../bildirim.js';
 // "Bilmiyorum" cevabının değeri (Ö4): hiçbir sanatçı kimliği ya da akım adıyla çakışmaz
 export const BILMIYORUM = '?';
 // tema zeminleri: theme-color ve vurgu renginin kontrast hesabı için
-const TEMA_RENK = { gece: '#0B0A0B', gunduz: '#D1CBC1' };
-const GUNDUZ_YUZEY = '#D9D4CB';
+const TEMA_RENK = { gece: '#0B0A0B', gunduz: '#E7E5E0' };
+const GUNDUZ_YUZEY = '#F3F2EE';
 export const TEMA_AD = { gece: 'Gece', gunduz: 'Gündüz' };
 const BOYA_DEGISKENLERI = ['--bg', '--bg-rgb', '--surface', '--tab-bg', '--overlay-btn', '--golge-rgb', '--boya-1', '--boya-2', '--boya-3'];
 
@@ -31,48 +31,23 @@ function golgeTonu(palet) {
   return hsldenHex(h, Math.min(s, 0.32), Math.min(l, 0.12));
 }
 
-// Gündüz: zemin, yüzeyler ve suluboya lekeleri gösterilen resmin paletinden (sekme ekranlarında günün resmi)
+// Açık yüzeylerde pigmentin tonu ve doygunluğu değiştirilmez; yalnızca nötr zeminle seyreltilir.
 function zeminiBoya(palet) {
   const st = document.documentElement.style;
+  for (const v of BOYA_DEGISKENLERI) st.removeProperty(v);
   const uygun = d.ilerleme.ayarlar.tema === 'gunduz' && palet ? palet.filter((p) => p.pay >= 0.03) : [];
-  if (!uygun.length) {
-    for (const v of BOYA_DEGISKENLERI) st.removeProperty(v);
-    return TEMA_RENK[d.ilerleme.ayarlar.tema] || TEMA_RENK.gece;
-  }
-  const renkler = cesitliRenkler(uygun);
-  const bg = tonla(renkler[0], 0.78, 0.5);
-  const yuzey = tonla(renkler[1] || renkler[0], 0.84, 0.44);
-  const yuzeyRgb = hexten(yuzey).join(', ');
+  if (!uygun.length) return TEMA_RENK[d.ilerleme.ayarlar.tema] || TEMA_RENK.gece;
+  const ana = uygun.reduce((a, b) => b.pay > a.pay ? b : a).renk;
+  const bg = karistir(ana, TEMA_RENK.gunduz, 0.06);
+  const yuzey = karistir(ana, GUNDUZ_YUZEY, 0.025);
+  const menu = karistir(ana, GUNDUZ_YUZEY, 0.18);
   st.setProperty('--bg', bg);
   st.setProperty('--bg-rgb', hexten(bg).join(', '));
   st.setProperty('--surface', yuzey);
-  st.setProperty('--tab-bg', `rgba(${yuzeyRgb}, 0.86)`);
-  st.setProperty('--overlay-btn', `rgba(${yuzeyRgb}, 0.85)`);
+  st.setProperty('--tab-bg', menu);
+  st.setProperty('--overlay-btn', yuzey);
   st.setProperty('--golge-rgb', hexten(golgeTonu(uygun)).join(', '));
-  for (let i = 0; i < 3; i++) st.setProperty(`--boya-${i + 1}`, hexten(tonla(renkler[i % renkler.length], 0.52, 0.68)).join(', '));
   return bg;
-}
-
-// Rengin tonunu koruyup açıklığını sabitler; griye yakın renkler biraz canlanır ama tonundan sapmaz
-function tonla(renk, l, sEn) {
-  const [h, s] = hsl(renk);
-  return hsldenHex(h, Math.min(Math.max(s * 1.25, 0.1), sEn), l);
-}
-
-// Paletten tonca birbirinden ayrışan en fazla 3 renk (pay sırasıyla); zemin, panel ve lekeler aynı renge boğulmasın
-function cesitliRenkler(palet) {
-  const sirali = [...palet].sort((a, b) => b.pay - a.pay).map((p) => p.renk);
-  const secilen = [sirali[0]];
-  const tonFarki = (a, b) => {
-    const f = Math.abs(hsl(a)[0] - hsl(b)[0]) % 360;
-    return Math.min(f, 360 - f);
-  };
-  for (const r of sirali.slice(1)) {
-    if (secilen.length >= 3) break;
-    if (secilen.every((x) => tonFarki(x, r) > 28 || Math.abs(hsl(x)[1] - hsl(r)[1]) > 0.18)) secilen.push(r);
-  }
-  for (const r of sirali) if (secilen.length < 3 && !secilen.includes(r)) secilen.push(r);
-  return secilen;
 }
 export const HARFLER = 'ABCD';
 
