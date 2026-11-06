@@ -50,7 +50,10 @@ test('Görsel kötü: sıradaki görsele geçer ve tercih saklanır', async ({ p
   await page.locator('.eser').nth(i).click();
   const gor = page.locator('.gor');
   const ilk = await gor.locator('.gor-resim').getAttribute('src');
-  await gor.getByRole('button', { name: 'Görsel kötü' }).click();
+  // İş 161: ayrı "Görsel kötü" düğmesi kalktı; ⋯ menüsünden
+  await expect(gor.getByRole('button', { name: 'Görsel kötü' })).toHaveCount(0);
+  await gor.locator('.gor-daha').click();
+  await gor.locator('[data-gor-neden="Kötü görsel"]').click();
   await expect(gor.locator('.gor-mesaj')).toContainText('Başka bir görsele');
   await expect(gor.locator('.gor-resim')).not.toHaveAttribute('src', ilk);
   const ilerleme = await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:ilerleme')));

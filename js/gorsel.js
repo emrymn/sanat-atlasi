@@ -211,6 +211,13 @@ export function elleOdakKoy(g, odak) {
   }
   return true;
 }
+// İş 161: görselin elle odağı nereden: 'cihaz' (bu cihazda işaretlendi), 'depo' (data/gorsel_odak_elle.json) ya da null
+export function elleOdakKaynagi(g) {
+  const ad = gorselAdi(g);
+  if (!ad) return null;
+  if (gecerliOdak(cihazdakiElleOdaklar()[ad])) return 'cihaz';
+  return gecerliOdak(elleDosya[ad]) ? 'depo' : null;
+}
 // Ham odak [x, y] (yüzde) ya da null
 export function gorselOdakNoktasi(g) {
   const ad = gorselAdi(g);

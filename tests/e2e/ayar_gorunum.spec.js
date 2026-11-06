@@ -62,7 +62,7 @@ test('İş 150: geliştirici modunda görüntüleyicide odak işaretlenir, Ayarl
   await expect(page.locator('.gor-mesaj')).toContainText('dokun');
   const r = await page.locator('.gor-resim').boundingBox();
   await page.mouse.click(r.x + r.width * 0.25, r.y + r.height * 0.2);
-  await expect(page.locator('.gor-mesaj')).toContainText('Odak kaydedildi');
+  await expect(page.locator('.gor-mesaj')).toContainText('Kaydedildi');
   const kayit = await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:odak-elle') || '{}'));
   const [o] = Object.values(kayit);
   expect(Math.abs(o[0] - 25)).toBeLessThan(4);
@@ -127,8 +127,9 @@ test('İş 157: görüntüleyicide seçilen eser sanatçının günün resmi olu
   await expect(tuval).toHaveAttribute('alt', /Mona Lisa/, { timeout: 10000 });
 });
 
-// İş 159: Ayarlar → "Sırayla ortala": günün resimleri görüntüleyicide sırayla; odak kipinde Tuval çerçevesi, kip açık kalır
-test('İş 159: günün resimleri sırayla açılır, odak işaretlenince Tuval çerçevesi görünür', async ({ page, context }) => {
+// İş 159/161: Ayarlar → "Sırayla ortala": günün resimleri sırayla; odak kipi kendiliğinden açık, Tuval çerçevesi görünür;
+// durum satırı elle / otomatik ve kaç tanesinin ortalandığını söyler; "Otomatiğe dön" elle odağı kaldırır
+test('İş 159/161: günün resimleri sırayla açılır, ortalananlar ve sayaç görünür', async ({ page, context }) => {
   await agiHazirla(context);
   await kur(context);
   await context.route(/data\/gunun_resimleri\.json/, (r) =>
@@ -139,28 +140,43 @@ test('İş 159: günün resimleri sırayla açılır, odak işaretlenince Tuval 
   await expect(page.locator('.gor-resim')).toBeVisible();
   await expect(page.locator('.gor-yazi')).toContainText('günün resmi 1 / 2');
   const dugme = page.locator('[data-gor-odak]');
-  await expect(dugme).toBeVisible();
-  await expect(page.locator('[data-test="gor-gunun"]')).toHaveAttribute('aria-pressed', 'true');
+  const durum = page.locator('[data-test="gor-odak-durum"]');
   const cerceve = page.locator('[data-test="gor-tuval-cerceve"]');
-  await expect(cerceve).toBeHidden();
-  await dugme.click();
+  const sil = page.locator('[data-test="gor-odak-sil"]');
+  // odak kipi kendiliğinden açık
   await expect(dugme).toHaveText('Bitti');
   await expect(cerceve).toBeVisible();
+  await expect(durum).toContainText('Otomatik');
+  await expect(durum).toContainText('ortalanan 0 / 2');
+  await expect(sil).toBeHidden();
   const r = await page.locator('.gor-resim').boundingBox();
   await page.mouse.click(r.x + r.width * 0.3, r.y + r.height * 0.5);
-  await expect(page.locator('.gor-mesaj')).toContainText('Odak kaydedildi');
+  await expect(page.locator('.gor-mesaj')).toContainText('Kaydedildi');
+  await expect(durum).toContainText('Elle ortalandı ✓');
+  await expect(durum).toContainText('ortalanan 1 / 2');
   await expect(cerceve).toBeVisible();
   await expect(dugme).toHaveText('Bitti'); // kip açık: yeniden dokunup düzeltilebilir
   const c = await cerceve.boundingBox();
-  // çerçeve resmin içinde ve odak (x %30) çerçevenin yatay ortasında ya da kenar sınırında
   expect(c.x).toBeGreaterThanOrEqual(r.x - 1);
   expect(c.x + c.width).toBeLessThanOrEqual(r.x + r.width + 1);
-  const kayit = await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:odak-elle') || '{}'));
-  expect(Object.keys(kayit)).toHaveLength(1);
+  expect(Object.keys(await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:odak-elle') || '{}')))).toHaveLength(1);
+  // geri al
+  await expect(sil).toBeVisible();
+  await sil.click();
+  await expect(durum).toContainText('Otomatik');
+  await expect(durum).toContainText('ortalanan 0 / 2');
+  expect(Object.keys(await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:odak-elle') || '{}')))).toHaveLength(0);
+  // yeniden işaretle, sonraki esere geç: orada da kip kendiliğinden açık, sayaç korunur
+  await page.mouse.click(r.x + r.width * 0.5, r.y + r.height * 0.4);
+  await expect(durum).toContainText('ortalanan 1 / 2');
+  await page.locator('.gor-sonraki').click();
+  await expect(page.locator('.gor-yazi')).toContainText('günün resmi 2 / 2');
+  await expect(dugme).toHaveText('Bitti');
+  await expect(durum).toContainText('Otomatik');
+  await expect(durum).toContainText('ortalanan 1 / 2');
+  // Bitti: kip kapanır, çerçeve gider, durum kalır
   await dugme.click();
   await expect(dugme).toHaveText('Odağı işaretle');
   await expect(cerceve).toBeHidden();
-  // sonraki eser
-  await page.locator('.gor-sonraki').click();
-  await expect(page.locator('.gor-yazi')).toContainText('günün resmi 2 / 2');
+  await expect(durum).toBeVisible();
 });

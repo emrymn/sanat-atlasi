@@ -15797,3 +15797,15 @@ article > .eserler + .bolum {
 .gor-tuval-cerceve[hidden] {
   display: none;
 }
+/* İş 161: odak durumu (elle / otomatik, Sırayla ortala'da sayaç) */
+.gor-odak-durum {
+  margin: 0;
+  font: 600 13px var(--sans);
+  color: var(--ink-2);
+}
+.gor-odak-durum.elle {
+  color: rgb(var(--vurgu-rgb));
+}
+.gor-odak-durum[hidden] {
+  display: none;
+}

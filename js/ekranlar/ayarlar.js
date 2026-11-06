@@ -747,7 +747,7 @@ async function gununResimleriniAc() {
   }
   m.textContent = '';
   const adi = new Map(sanatcilar.map((s) => [s.id, bilinenAd(s.ad, d.kisaAdlar[s.id])]));
-  goruntuleyiciAc({ eserler, kotuler: kotuler(), notu: (e) => `${adi.get(e.sid) || ''} · günün resmi ${eserler.indexOf(e) + 1} / ${eserler.length}` });
+  goruntuleyiciAc({ eserler, kotuler: kotuler(), ortalama: true, notu: (e) => `${adi.get(e.sid) || ''} · günün resmi ${eserler.indexOf(e) + 1} / ${eserler.length}` });
 }
 
 function gununAdi() {
