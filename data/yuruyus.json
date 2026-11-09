@@ -4620,6 +4620,134 @@
     }
    ]
   },
+  "benjamin-west": {
+   "eser": "Colonel Guy Johnson and Karonghyontye",
+   "yil": 1776,
+   "qid": "Q3135552",
+   "gorsel": "4bfc5422e4a967dd",
+   "noktalar": [
+    {
+     "ad": "Albay Guy Johnson",
+     "x": 0.35,
+     "y": 0.1,
+     "w": 0.6,
+     "h": 0.88,
+     "metin": "Kırmızı üniformalı adam İngiliz albay Guy Johnson; Kuzey Amerika'da yerli halklarla ilişkilerden sorumluydu. Üniformasının üstüne yerli işi bir battaniye ve mokasenler giymiş."
+    },
+    {
+     "ad": "Karonghyontye",
+     "x": 0.1,
+     "y": 0.0,
+     "w": 0.35,
+     "h": 0.55,
+     "metin": "Arkasında tüylü başlıklı Mohawk lideri Karonghyontye (David Hill) duruyor. Resim 1776'da, Amerikan Bağımsızlık Savaşı'nın başında Londra'da yapıldı."
+    },
+    {
+     "ad": "Barış çubuğu",
+     "x": 0.05,
+     "y": 0.25,
+     "w": 0.15,
+     "h": 0.4,
+     "metin": "Karonghyontye'nin elinde bir barış çubuğu var. İngilizler savaşta Mohawk'ların desteğini istiyordu; resim bu ittifakın bir gösterisi."
+    },
+    {
+     "ad": "Uzaktaki kamp",
+     "x": 0.0,
+     "y": 0.55,
+     "w": 0.2,
+     "h": 0.15,
+     "metin": "Sol arkada küçük bir yerli kampı ve çadırlar görünüyor. Amerika doğumlu West, Londra'da kralın ressamı oldu; Amerikan sahnelerini Avrupa'ya taşıdı."
+    }
+   ]
+  },
+  "jacques-louis-david": {
+   "eser": "İmparator Napolyon Tuileries'deki Çalışma Odasında",
+   "yil": 1812,
+   "qid": "Q1313605",
+   "gorsel": "950ba3e9e82c612c",
+   "noktalar": [
+    {
+     "ad": "Napolyon",
+     "x": 0.33,
+     "y": 0.1,
+     "w": 0.4,
+     "h": 0.8,
+     "metin": "İmparator Napolyon çalışma odasında ayakta, eli yeleğinin içinde. Bu duruş onun en tanınmış imgelerinden biri oldu. Resmi İskoç bir hayranı ısmarladı, Napolyon kendisi poz vermedi."
+    },
+    {
+     "ad": "Saat",
+     "x": 0.67,
+     "y": 0.0,
+     "w": 0.18,
+     "h": 0.18,
+     "metin": "Arkadaki saat 4'ü 13 geçeyi gösteriyor, mum dibine kadar yanmış: Napolyon sabaha kadar çalışmış. Gece boyunca Fransa'nın kanunlarını yazan bir lider imajı."
+    },
+    {
+     "ad": "Medeni Kanun",
+     "x": 0.65,
+     "y": 0.48,
+     "w": 0.2,
+     "h": 0.12,
+     "metin": "Masadaki kâğıtlarda \"CODE\" yazısı seçiliyor: Napolyon Kanunu (Code civil). Napolyon kendini sadece bir asker değil, bir kanun koyucu olarak göstermek istiyordu."
+    },
+    {
+     "ad": "Kılıç ve sandalye",
+     "x": 0.8,
+     "y": 0.4,
+     "w": 0.2,
+     "h": 0.4,
+     "metin": "Sandalyenin üstünde kılıcı duruyor: savaşı geride bırakmış, ama hazır. Sandalyedeki N harfi ve arılar imparatorluğun simgeleri."
+    },
+    {
+     "ad": "İmza",
+     "x": 0.0,
+     "y": 0.85,
+     "w": 0.3,
+     "h": 0.15,
+     "metin": "Sol altta David'in imzası ve 1812 tarihi var. David, Devrim'in ressamı olarak başlamış, Napolyon'un saray ressamı olmuştu."
+    }
+   ]
+  },
+  "angelica-kauffman": {
+   "eser": "Telemachus and the Nymphs of Calypso",
+   "yil": 1782,
+   "qid": "Q19912157",
+   "gorsel": "8659602912bbe1fb",
+   "noktalar": [
+    {
+     "ad": "Mentor",
+     "x": 0.3,
+     "y": 0.2,
+     "w": 0.15,
+     "h": 0.6,
+     "metin": "Kahverengi pelerinli ak sakallı yaşlı adam Mentor; aslında kılık değiştirmiş tanrıça Athena, genç Telemakhos'u koruyor. Hikâye Fénelon'un \"Telemakhos'un Serüvenleri\" romanından."
+    },
+    {
+     "ad": "Kalypso'nun perileri",
+     "x": 0.45,
+     "y": 0.15,
+     "w": 0.5,
+     "h": 0.6,
+     "metin": "Sağda periler bir çiçek zincirini Telemakhos'un etrafına dolayıp onu oyalamaya çalışıyor. Odysseus'un oğlu babasını ararken Kalypso'nun adasına düşmüştü."
+    },
+    {
+     "ad": "Çiçek zinciri",
+     "x": 0.6,
+     "y": 0.3,
+     "w": 0.3,
+     "h": 0.25,
+     "metin": "Periler arasında gerilmiş çiçek zinciri hem süs hem tuzak: zevklerin insanı görevinden alıkoyması."
+    },
+    {
+     "ad": "Beyaz giysili kadın",
+     "x": 0.1,
+     "y": 0.15,
+     "w": 0.22,
+     "h": 0.65,
+     "metin": "Solda beyaz giysili kadın Mentor'u kolundan çekiyor. Angelica Kauffman Kraliyet Akademisi'nin kurucu iki kadın üyesinden biriydi; tarih resmi yapan nadir kadın ressamlardandı."
+    }
+   ]
+  },
   "elisabeth-vigee-le-brun": {
    "eser": "Marie Antoinette and Her Children",
    "yil": 1787,
@@ -4673,6 +4801,46 @@
      "w": 0.3,
      "h": 0.12,
      "metin": "Kraliçenin kırmızı kadife eteğinin kürklü kenarı ve ışığı yakalayan kıvrımları. Kadifenin derin kırmızısı ve ipeklerin parıltısı, Vigée Le Brun'ün kumaş dokusundaki ustalığını gösterir."
+    }
+   ]
+  },
+  "william-blake": {
+   "eser": "The Great Red Dragon paintings",
+   "yil": 1805,
+   "qid": "Q538936",
+   "gorsel": "864e0d9cfe33eed0",
+   "noktalar": [
+    {
+     "ad": "Büyük Kızıl Ejderha",
+     "x": 0.1,
+     "y": 0.0,
+     "w": 0.85,
+     "h": 0.6,
+     "metin": "Kanatlarını açmış, yedi başlı, boynuzlu dev figür Vahiy Kitabı'ndaki Büyük Kızıl Ejderha: Şeytan. Blake onu kaslı bir insan bedeniyle gösteriyor."
+    },
+    {
+     "ad": "Yedi baş",
+     "x": 0.25,
+     "y": 0.0,
+     "w": 0.55,
+     "h": 0.25,
+     "metin": "Başlarında taçlar olan yedi baş ve on boynuz: Vahiy'in tarif ettiği gibi. Blake hem şair hem ressamdı ve kendi görümlerini resmederdi."
+    },
+    {
+     "ad": "Denizden çıkan canavar",
+     "x": 0.3,
+     "y": 0.6,
+     "w": 0.5,
+     "h": 0.3,
+     "metin": "Altta mavi tenli, çok başlı bir canavar denizden çıkıyor. Ejderha ona gücünü veriyor: dünyaya kötülüğün gelişi."
+    },
+    {
+     "ad": "Kılıç ve asa",
+     "x": 0.0,
+     "y": 0.25,
+     "w": 1.0,
+     "h": 0.3,
+     "metin": "Canavarın kollarında bir kılıç ve bir asa var: dünyevi iktidarın ve savaşın simgeleri. Bu suluboya 1805 civarında yapıldı; \"Kırmızı Ejderha\" romanıyla da ünlendi."
     }
    ]
   },
