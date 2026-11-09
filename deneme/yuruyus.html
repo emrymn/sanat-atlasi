@@ -34,13 +34,13 @@
     background:rgba(18,17,16,.5); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); border:1px solid rgba(237,228,211,.2); font-size:15px; }
   .uclu a i { font-style:normal; color:var(--altin); }
   .ipucu { display:flex; justify-content:center; margin-top:14px; color:var(--ikincil); font-size:12px; letter-spacing:.12em; text-transform:uppercase; gap:6px; align-items:center; }
-  .ipucu b { display:inline-block; animation:zipla 1.8s ease-in-out infinite; font-weight:400; }
+  .ipucu b { display:inline-block; animation:zipla 2.2s ease-in-out infinite; font-weight:300; font-size:22px; line-height:1; color:rgba(237,228,211,.7); }
   @keyframes zipla { 50% { transform:translateY(4px); } }
-  .kart { background:rgba(18,17,16,.72); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); border:1px solid var(--cizgi);
-    border-radius:22px; padding:16px 18px 18px; opacity:0; transform:translateY(14px); transition:opacity .45s, transform .45s; }
+  .kart { background:rgba(18,17,16,.34); -webkit-backdrop-filter:blur(8px) saturate(1.1); backdrop-filter:blur(8px) saturate(1.1); border:1px solid rgba(237,228,211,.14);
+    border-radius:22px; padding:16px 18px 18px; opacity:0; transform:translateY(18px); transition:opacity 1s ease, transform 1.2s cubic-bezier(.22,.61,.36,1);
+    text-shadow:0 1px 3px rgba(0,0,0,.55), 0 0 18px rgba(0,0,0,.35); }
   section.gorunur .kart { opacity:1; transform:none; }
-  .kart .no { font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--altin); }
-  .kart h2 { font:400 25px/1.15 var(--serif); margin:6px 0 8px; }
+  .kart h2 { font:400 25px/1.15 var(--serif); margin:0 0 8px; }
   .kart p { font:400 17px/1.5 var(--serif); color:#e3dacb; }
   .kart a.bag { display:inline-flex; align-items:center; min-height:44px; margin-top:6px; color:var(--altin); text-decoration:none; font:500 15px var(--sans); }
   .sekme { position:fixed; left:14px; right:14px; bottom:calc(env(safe-area-inset-bottom) + 10px); z-index:6; height:62px; border-radius:31px;
@@ -63,9 +63,9 @@
     <div class="ad">Bruegel</div>
     <div class="eser">Karda Avcılar · 1565</div>
     <div class="uclu"><a href="#"><i>◉</i>İncele</a><a href="#"><i>☉</i>Bruegel</a></div>
-    <div class="ipucu">Resmin içinde gez <b>↓</b></div>
+    <div class="ipucu" aria-label="Aşağı kaydır"><b>⌄</b></div>
   </section>
-  <section data-adim="butun"><div class="kart"><div class="no">Eser</div><h2>Karda Avcılar</h2><p>Pieter Bruegel (Yaşlı), 1565 · Kunsthistorisches Museum, Viyana. Bir yılın aylarını anlatan altı resimlik dizinin kış tablosu.</p></div></section>
+  <section data-adim="butun"><div class="kart"><h2>Karda Avcılar</h2><p>Pieter Bruegel (Yaşlı), 1565 · Kunsthistorisches Museum, Viyana. Bir yılın aylarını anlatan altı resimlik dizinin kış tablosu.</p></div></section>
 </main>
 <nav class="sekme"><span class="acik">Bugün</span><span>Yolculuk</span><span>Galeri</span><span>Başyapıt</span><span>Çalış<i class="sayi">8</i></span></nav>
 <script>
@@ -74,14 +74,14 @@ const akis = document.getElementById('akis');
 VERI.noktalar.forEach((n, i) => {
   const s = document.createElement('section');
   s.dataset.adim = 'nokta';
-  s.innerHTML = `<div class="kart"><div class="no">Ayrıntı ${i + 1} / ${VERI.noktalar.length}</div><h2></h2><p></p></div>`;
+  s.innerHTML = `<div class="kart"><h2></h2><p></p></div>`;
   s.querySelector('h2').textContent = n.ad;
   s.querySelector('p').textContent = n.metin;
   akis.appendChild(s);
 });
 const son = document.createElement('section');
 son.dataset.adim = 'son';
-son.innerHTML = `<div class="kart"><div class="no">Nasıl tanırım?</div><h2>Bruegel'i başka tablolarda</h2><p></p><a class="bag" href="#">Bruegel'in bütün eserleri →</a></div>`;
+son.innerHTML = `<div class="kart"><h2>Nasıl tanırım?</h2><p></p><a class="bag" href="#">Bruegel'in bütün eserleri →</a></div>`;
 son.querySelector('p').textContent = VERI.taninma;
 akis.appendChild(son);
 
@@ -117,11 +117,11 @@ function durumlar() {
   ];
 }
 let D = durumlar();
-addEventListener('resize', () => { D = durumlar(); ciz(); });
-
 const yumusak = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
-function ciz() {
-  const p = Math.max(0, Math.min(D.length - 1, scrollY / H));
+// Kamera kaydırmayı birebir izlemez: her karede hedefe yolun küçük bir parçası kadar yaklaşır (yavaş, yumuşak süzülme)
+let kamera = 0;
+const IZ = 0.035;   // küçüldükçe daha yavaş
+function ciz(p) {
   const i = Math.min(D.length - 2, Math.floor(p));
   const f = yumusak(p - i);
   const a = D[i], b = D[i + 1];
@@ -131,13 +131,25 @@ function ciz() {
   const tx = Math.min(0, Math.max(W - IW * s, W / 2 - cx * s));
   const ty = Math.min(0, Math.max(H - IH * s, vy - cy * s));
   img.style.transform = `translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${s.toFixed(5)})`;
-  const sira = Math.round(p);
-  bolumler.forEach((b, k) => b.classList.toggle('gorunur', k === sira));
-  [...noktalar.children].forEach((n, k) => n.classList.toggle('acik', k === sira));
-  noktalar.style.opacity = p < 0.5 ? 0 : 1;
 }
-addEventListener('scroll', () => requestAnimationFrame(ciz), { passive: true });
-ciz();
+let sonSira = -1;
+function kare() {
+  const hedef = Math.max(0, Math.min(D.length - 1, scrollY / H));
+  const fark = hedef - kamera;
+  kamera = Math.abs(fark) < 0.0005 ? hedef : kamera + fark * IZ;
+  ciz(kamera);
+  // yazı kartı kamera o adıma varırken belirir
+  const sira = Math.round(kamera);
+  if (sira !== sonSira && Math.abs(kamera - sira) < 0.18) {
+    sonSira = sira;
+    bolumler.forEach((b, k) => b.classList.toggle('gorunur', k === sira));
+    [...noktalar.children].forEach((n, k) => n.classList.toggle('acik', k === sira));
+  }
+  noktalar.style.opacity = kamera < 0.5 ? 0 : 1;
+  requestAnimationFrame(kare);
+}
+addEventListener('resize', () => { D = durumlar(); });
+requestAnimationFrame(kare);
 </script>
 </body>
 </html>
