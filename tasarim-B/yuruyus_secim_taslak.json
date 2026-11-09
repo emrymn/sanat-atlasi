@@ -57,7 +57,8 @@
    "oran": 0.56,
    "indir": true,
    "eserEn": null,
-   "muze": "National Gallery of Art, Washington"
+   "muze": "National Gallery of Art, Washington",
+   "commons": "Duccio di Buoninsegna - The Nativity with the Prophets Isaiah and Ezekiel - Google Art Project.jpg"
   },
   {
    "id": "simone-martini",
@@ -76,7 +77,8 @@
    "oran": 1.17,
    "indir": true,
    "eserEn": "Annunciation with Saints Maxima and Ansanus",
-   "muze": "Slayta göre Uffizi; Geç Gotik/Erken Rönesans"
+   "muze": "Slayta göre Uffizi; Geç Gotik/Erken Rönesans",
+   "commons": "Simone Martini — Annunciation with St. Margaret and St. Ansanus.jpg"
   },
   {
    "id": "pietro-lorenzetti",
@@ -95,7 +97,8 @@
    "oran": 0.98,
    "indir": true,
    "eserEn": "Nativity of the Virgin",
-   "muze": "Siena Katedrali'nden; Museo dell'Opera del Duomo, Siena"
+   "muze": "Siena Katedrali'nden; Museo dell'Opera del Duomo, Siena",
+   "commons": "Siena Museo dell'Opera del Duomo Nativity of the Virgin by Pietro Lorenzetti.jpg"
   },
   {
    "id": "ambrogio-lorenzetti",
@@ -136,7 +139,8 @@
    "oran": 0.61,
    "indir": true,
    "eserEn": "The Crucifixion of Christ",
-   "muze": "Gemäldegalerie Berlin"
+   "muze": "Gemäldegalerie Berlin",
+   "commons": "Berlin Crucifixion by Giotto (Gemäldegalerie, Berlin) 9528.jpg"
   },
   {
    "id": "limbourg-kardesler",
@@ -202,7 +206,8 @@
    "oran": 1.27,
    "indir": true,
    "eserEn": null,
-   "muze": "Florence Cathedral"
+   "muze": "Florence Cathedral",
+   "commons": "Michelino DanteAndHisPoem.jpg"
   },
   {
    "id": "masaccio",
@@ -2065,7 +2070,8 @@
    "oran": 0.45,
    "indir": true,
    "eserEn": null,
-   "muze": "Tate Britain"
+   "muze": "Tate Britain",
+   "commons": "Dante Gabriel Rossetti - Proserpine - Google Art Project (JQFW5c2ZLfpmbw).jpg"
   },
   {
    "id": "john-everett-millais",
@@ -2201,7 +2207,8 @@
    "oran": 0.81,
    "indir": true,
    "eserEn": null,
-   "muze": "The Metropolitan Museum of Art, New York"
+   "muze": "The Metropolitan Museum of Art, New York",
+   "commons": "The Connoisseur MET DP211510.jpg"
   },
   {
    "id": "gustave-courbet",
@@ -2493,22 +2500,20 @@
    "ad": "Paul Cézanne",
    "akim": "Post-Empresyonizm",
    "tur": "yeni",
-   "puan": "orta",
-   "not": "Mardi Gras iki figürlü",
+   "puan": "uygun",
+   "not": "Mardi Gras iki figürlü; Met sürümü dört oyunculu ve Commons'ta 5789×4608",
    "eser": "The Card Players",
-   "yil": 1893,
+   "yil": 1890,
    "qid": "Q17277950",
-   "gorsel": "0cc75df9a7033aab",
+   "gorsel": "b585fab2a191d204",
    "eski": "Mardi Gras",
    "eskiGorsel": "05e193af060a08d8",
-   "boyut": [
-    1683,
-    1385
-   ],
+   "boyut": null,
    "oran": 1.22,
    "indir": true,
    "eserEn": null,
-   "muze": "Courtauld Institute of Art"
+   "muze": "The Metropolitan Museum of Art, New York",
+   "commons": "Cezanne The Card Players Metmuseum.jpg"
   },
   {
    "id": "georges-seurat",
@@ -2625,7 +2630,8 @@
    "oran": 0.84,
    "indir": true,
    "eserEn": null,
-   "muze": "Musée d'Orsay"
+   "muze": "Musée d'Orsay",
+   "commons": "Gustave Moreau - The Apparition - Google Art Project.jpg"
   },
   {
    "id": "odilon-redon",
