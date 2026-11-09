@@ -6277,6 +6277,196 @@
     }
    ]
   },
+  "georges-seurat": {
+   "eser": "The Circus",
+   "yil": 1891,
+   "qid": "Q2275610",
+   "gorsel": "6bcf504dffe8e1db",
+   "kirp": [
+    0.02,
+    0.0,
+    0.96,
+    1.0
+   ],
+   "noktalar": [
+    {
+     "ad": "Binici",
+     "x": 0.38,
+     "y": 0.2,
+     "w": 0.3,
+     "h": 0.25,
+     "metin": "Sarı giysili binici dörtnala koşan beyaz atın üstünde ayakta dans ediyor. Seurat'nın son resmi (1891); öldüğünde henüz tamamlanmamıştı."
+    },
+    {
+     "ad": "Beyaz at",
+     "x": 0.15,
+     "y": 0.4,
+     "w": 0.4,
+     "h": 0.25,
+     "metin": "At, kuyruğu ve yelesi uçuşan, kıvrık çizgilerle çizilmiş. Seurat çizgilerin yönünün duygu uyandırdığını düşünürdü: yukarı kıvrılan çizgiler neşe."
+    },
+    {
+     "ad": "Palyaço",
+     "x": 0.2,
+     "y": 0.65,
+     "w": 0.45,
+     "h": 0.35,
+     "metin": "Önde sırtı dönük, kıvrık saçlı palyaço bir perdeyi aralıyor; sanki gösteriyi bize o açıyor."
+    },
+    {
+     "ad": "Seyirciler",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.45,
+     "h": 0.45,
+     "metin": "Arkada sıralarda seyirciler oturuyor; ön sıralar zengin, arka sıralar daha sıradan giyimli. Seurat toplumsal sınıfları oturma düzeniyle göstermiş."
+    },
+    {
+     "ad": "Noktalar",
+     "x": 0.6,
+     "y": 0.5,
+     "w": 0.35,
+     "h": 0.4,
+     "metin": "Yakından bakınca resim, yan yana konmuş saf renk noktalarından oluşuyor: noktacılık (puantilizm). Renkler göz tarafından karıştırılsın diye."
+    }
+   ]
+  },
+  "paul-signac": {
+   "eser": "Women by the Well",
+   "yil": 1892,
+   "qid": "Q17491488",
+   "gorsel": "db3af19f083dd257",
+   "noktalar": [
+    {
+     "ad": "Kuyudaki kadınlar",
+     "x": 0.15,
+     "y": 0.25,
+     "w": 0.45,
+     "h": 0.55,
+     "metin": "Provenceli iki kadın bir kuyudan su çekiyor. Signac, Seurat'nın noktacı tekniğini en uzun süre sürdüren ressamdı."
+    },
+    {
+     "ad": "Saf renkler",
+     "x": 0.0,
+     "y": 0.1,
+     "w": 0.55,
+     "h": 0.4,
+     "metin": "Mavi deniz, sarı kıyı, mor etek: renkler gerçekçi değil, birbirini en parlak gösterecek şekilde seçilmiş."
+    },
+    {
+     "ad": "Deniz feneri",
+     "x": 0.1,
+     "y": 0.22,
+     "w": 0.15,
+     "h": 0.15,
+     "metin": "Arkada denizde bir deniz feneri ve yelkenliler. Signac Saint-Tropez'e yerleşmiş, orayı sanatçılar için keşfeden kişi olmuştu."
+    },
+    {
+     "ad": "Yokuştaki figür",
+     "x": 0.75,
+     "y": 0.08,
+     "w": 0.2,
+     "h": 0.25,
+     "metin": "Sağ üstte kıvrılan yolda küçük bir kadın figürü yürüyor. Yolun kıvrımı, resmin dekoratif, Art Nouveau'yu andıran çizgilerinden."
+    }
+   ]
+  },
+  "vincent-van-gogh": {
+   "eser": "Gece Kahvesi",
+   "yil": 1888,
+   "qid": "Q674846",
+   "gorsel": "2b52e29084e42706",
+   "noktalar": [
+    {
+     "ad": "Lambalar",
+     "x": 0.15,
+     "y": 0.0,
+     "w": 0.75,
+     "h": 0.3,
+     "metin": "Tavandaki gaz lambalarının etrafında sarı ışık halkaları dönüyor. Van Gogh bir mektubunda bu resimde \"insanın kendini mahvedebileceği, deliye dönebileceği, suç işleyebileceği bir yeri\" anlatmak istediğini yazdı."
+    },
+    {
+     "ad": "Bilardo masası",
+     "x": 0.35,
+     "y": 0.4,
+     "w": 0.35,
+     "h": 0.35,
+     "metin": "Ortada yeşil bilardo masası uzun bir gölge düşürüyor. Kırmızı duvarla yeşil tavan ve masa, çatışan tamamlayıcı renkler: rahatsız edici bir gerilim."
+    },
+    {
+     "ad": "Garson",
+     "x": 0.6,
+     "y": 0.35,
+     "w": 0.12,
+     "h": 0.15,
+     "metin": "Masanın arkasında beyazlar içindeki kahve sahibi ya da garson bize bakıyor. Arles'daki gece kahvesi; Van Gogh orada üç gece boyunca uyumadan çalıştı."
+    },
+    {
+     "ad": "Uyuyanlar",
+     "x": 0.8,
+     "y": 0.4,
+     "w": 0.2,
+     "h": 0.2,
+     "metin": "Sağdaki masalarda gece kalmış müşteriler başlarını masaya koymuş uyukluyor. Gece yarısını geçmiş, mekân yalnızlarla dolu."
+    },
+    {
+     "ad": "Saat",
+     "x": 0.3,
+     "y": 0.03,
+     "w": 0.12,
+     "h": 0.12,
+     "metin": "Arka duvardaki saat gece yarısını çoktan geçmiş. Resim 1888'de yapıldı; şimdi Yale Üniversitesi Sanat Galerisi'nde."
+    }
+   ]
+  },
+  "henri-de-toulouse-lautrec": {
+   "eser": "At the Moulin Rouge",
+   "yil": 1892,
+   "qid": "Q3607521",
+   "gorsel": "bc6ecd2416e26696",
+   "noktalar": [
+    {
+     "ad": "Yeşil yüzlü kadın",
+     "x": 0.78,
+     "y": 0.3,
+     "w": 0.22,
+     "h": 0.35,
+     "metin": "Sağda resmin kenarından kesilmiş, yüzü alttan gelen ışıkla yeşile boyanmış bir kadın. Moulin Rouge'un yapay ışıklarında gece hayatının hayaletimsi yüzü."
+    },
+    {
+     "ad": "Masadaki grup",
+     "x": 0.15,
+     "y": 0.15,
+     "w": 0.6,
+     "h": 0.45,
+     "metin": "Masa etrafında içen bir grup: Lautrec'in arkadaşları ve gece hayatının tanınmış simaları. Kızıl saçlı kadın arkadan görünüyor."
+    },
+    {
+     "ad": "Lautrec ve kuzeni",
+     "x": 0.4,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 0.25,
+     "metin": "Arka planda biri çok uzun, biri çok kısa iki adam yürüyor: kısa olan Lautrec'in kendisi, yanındaki kuzeni Gabriel Tapié de Céleyran."
+    },
+    {
+     "ad": "La Goulue",
+     "x": 0.65,
+     "y": 0.05,
+     "w": 0.2,
+     "h": 0.25,
+     "metin": "Arkada saçını düzelten kızıl topuzlu kadın, Moulin Rouge'un ünlü kankan dansçısı La Goulue."
+    },
+    {
+     "ad": "Çapraz tırabzan",
+     "x": 0.0,
+     "y": 0.4,
+     "w": 0.4,
+     "h": 0.6,
+     "metin": "Sol alttaki tırabzan resmi çapraz kesiyor; Japon baskılarından öğrenilmiş, beklenmedik bir kesim. Resim Chicago Sanat Enstitüsü'nde."
+    }
+   ]
+  },
   "paul-gauguin": {
    "eser": "Nereden geliyoruz? Neyiz? Nereye gidiyoruz?",
    "yil": 1897,
