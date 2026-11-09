@@ -3821,6 +3821,174 @@
      "metin": "Sağ altta bir kartal ve yerde yığılmış kitaplar, kâğıtlar. Rosa hem ressam hem de alaycı bir şairdi; bu resim Roma'da onu başını derde sokan bir eleştiriydi."
     }
    ]
+  },
+  "mattia-preti": {
+   "eser": "Feast of Herod",
+   "yil": 1658,
+   "qid": "Q28796906",
+   "gorsel": "dce3217e4c00a2e1",
+   "noktalar": [
+    {
+     "ad": "Tepside baş",
+     "x": 0.0,
+     "y": 0.55,
+     "w": 0.38,
+     "h": 0.25,
+     "metin": "Solda Salome tepside Vaftizci Yahya'nın kesik başını sofraya getiriyor. Hikâye Metsys'teki ile aynı, ama Preti onu karanlık bir Barok şölenine çevirmiş."
+    },
+    {
+     "ad": "Herodias",
+     "x": 0.42,
+     "y": 0.38,
+     "w": 0.25,
+     "h": 0.4,
+     "metin": "Ortada inci gerdanlıklı Herodias gözlerini indirmiş, eli göğsünde. Yahya'nın ölümünü isteyen oydu, ama yüzünde bir zafer değil, soğuk bir sükûnet var."
+    },
+    {
+     "ad": "Herodes",
+     "x": 0.68,
+     "y": 0.38,
+     "w": 0.32,
+     "h": 0.55,
+     "metin": "Sağda türbanlı, kürklü Herodes elini açmış, başa bakıyor. Preti Doğulu kıyafetleriyle sahneyi 17. yüzyıl Napoli'sinin hayal ettiği bir Orta Doğu sarayına taşıyor."
+    },
+    {
+     "ad": "Sofra",
+     "x": 0.15,
+     "y": 0.72,
+     "w": 0.75,
+     "h": 0.25,
+     "metin": "Bembeyaz masa örtüsü ve boş tabaklar karanlıkta parlıyor. Şölen bitmek üzere; sofraya getirilen son \"yemek\" korkunç."
+    },
+    {
+     "ad": "Arkadaki seyirciler",
+     "x": 0.15,
+     "y": 0.3,
+     "w": 0.35,
+     "h": 0.25,
+     "metin": "Arkada askerler ve uşaklar başlarını uzatmış izliyor. Preti, Caravaggio'nun ışığını Malta'da ve Napoli'de büyük ölçekli sahnelere taşıyan ressamdı."
+    }
+   ]
+  },
+  "luca-giordano": {
+   "eser": "The Fall of the Rebel Angels",
+   "yil": 1660,
+   "qid": "Q3947694",
+   "gorsel": "0e4eba22d3739d63",
+   "noktalar": [
+    {
+     "ad": "Başmelek Mikail",
+     "x": 0.15,
+     "y": 0.0,
+     "w": 0.75,
+     "h": 0.5,
+     "metin": "Kanatlarını açmış başmelek Mikail kılıcını kaldırmış; mavi zırhı ve uçuşan pelerini ışıkta parlıyor. Vahiy Kitabı'na göre göklerdeki savaşta isyancı melekleri yendi."
+    },
+    {
+     "ad": "Ayağın altındaki Lucifer",
+     "x": 0.25,
+     "y": 0.45,
+     "w": 0.5,
+     "h": 0.25,
+     "metin": "Mikail'in ayağının altında yarasa kanatlı Lucifer baş aşağı düşüyor. Mikail ona neredeyse dokunmadan basıyor: zafer zahmetsiz."
+    },
+    {
+     "ad": "Düşen asi melekler",
+     "x": 0.0,
+     "y": 0.55,
+     "w": 1.0,
+     "h": 0.45,
+     "metin": "Altta kıvranan, düşen bedenler karanlığa yuvarlanıyor. Giordano çok hızlı çalıştığı için \"Luca fa presto\" (Luca çabuk yapar) diye anılırdı."
+    },
+    {
+     "ad": "Melek çocuklar",
+     "x": 0.0,
+     "y": 0.05,
+     "w": 0.25,
+     "h": 0.2,
+     "metin": "Sol üstte ışığın içinde küçük melekler savaşı izliyor. Yukarısı altın ışık, aşağısı karanlık: iyi ile kötünün dikey ayrımı."
+    }
+   ]
+  },
+  "giovanni-battista-gaulli": {
+   "eser": "The Sacrifice of Noah",
+   "yil": 1684,
+   "qid": "Q55424125",
+   "gorsel": "fcedd7646bb7cd30",
+   "noktalar": [
+    {
+     "ad": "Nuh",
+     "x": 0.15,
+     "y": 0.35,
+     "w": 0.35,
+     "h": 0.55,
+     "metin": "Pembe pelerinli yaşlı Nuh kollarını göğe açmış. Tufandan sonra gemiden çıkınca ilk iş Tanrı'ya bir kurban sundu."
+    },
+    {
+     "ad": "Kurban ateşi",
+     "x": 0.45,
+     "y": 0.4,
+     "w": 0.25,
+     "h": 0.15,
+     "metin": "Ortada sunakta bir ateş yanıyor, dumanı göğe yükseliyor. Tanrı kurbanın kokusundan hoşnut kaldı ve bir daha dünyayı suyla yok etmeyeceğine söz verdi."
+    },
+    {
+     "ad": "Gökkuşağı",
+     "x": 0.05,
+     "y": 0.08,
+     "w": 0.35,
+     "h": 0.15,
+     "metin": "Sol üstte ağacın yanında belli belirsiz bir gökkuşağı seçiliyor: Tanrı'nın bu sözünün işareti. Resmin en küçük ama en anlamlı ayrıntısı."
+    },
+    {
+     "ad": "Kurbanı hazırlayanlar",
+     "x": 0.6,
+     "y": 0.35,
+     "w": 0.4,
+     "h": 0.6,
+     "metin": "Sağda kızıl tenli, kaslı adamlar kurbanlık hayvanı hazırlıyor. Gaulli (Baciccio) Roma'da Bernini'nin çevresinde yetişti; en ünlü işi Il Gesù kilisesinin tavanıdır."
+    }
+   ]
+  },
+  "andrea-pozzo": {
+   "eser": "Apotheosis of Saint Ignatius",
+   "yil": 1694,
+   "qid": "Q112401018",
+   "gorsel": "d36079ae725729fb",
+   "noktalar": [
+    {
+     "ad": "Göğe açılan tavan",
+     "x": 0.2,
+     "y": 0.0,
+     "w": 0.6,
+     "h": 0.25,
+     "metin": "Roma'daki Sant'Ignazio kilisesinin tavanı: düz bir tonoz, ama boya ile gökyüzüne açılmış gibi görünüyor. Ortadaki ışıkta Tanrı ve İsa var."
+    },
+    {
+     "ad": "Boyanmış mimari",
+     "x": 0.0,
+     "y": 0.1,
+     "w": 1.0,
+     "h": 0.75,
+     "metin": "Sütunlar, kemerler ve pencereler aslında yok; hepsi düz yüzeye boyanmış perspektif. Pozzo kilisenin zeminine sarı bir taş koydu: oradan bakınca yanılsama kusursuz."
+    },
+    {
+     "ad": "Aziz Ignatius",
+     "x": 0.35,
+     "y": 0.35,
+     "w": 0.3,
+     "h": 0.25,
+     "metin": "Ortada bulutların üstünde Cizvit tarikatının kurucusu Aziz Ignatius ışıkla göğe alınıyor. İsa'dan gelen ışık ondan dünyanın dört bir yanına yansıyor."
+    },
+    {
+     "ad": "Dört kıta",
+     "x": 0.0,
+     "y": 0.6,
+     "w": 1.0,
+     "h": 0.25,
+     "metin": "Kenarlarda Avrupa, Asya, Afrika ve Amerika'yı temsil eden kadın figürleri var. Cizvitlerin misyonerlik işi dünyanın dört bir köşesine yayılmıştı. Kilisede yapılamayan kubbenin yerine de Pozzo düz bir tuvale kubbe boyadı."
+    }
+   ]
   }
  }
 }
