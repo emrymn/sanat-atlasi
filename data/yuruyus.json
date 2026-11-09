@@ -3392,6 +3392,198 @@
     }
    ]
   },
+  "frans-hals": {
+   "eser": "Young Man and Woman in an Inn",
+   "yil": 1623,
+   "qid": "Q17355822",
+   "gorsel": "864aff516d7abc7b",
+   "noktalar": [
+    {
+     "ad": "Kaldırılan kadeh",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.22,
+     "h": 0.2,
+     "metin": "Sol üstte genç adam kadehini havaya kaldırmış, şerefe içiyor. Kadeh resmin kenarına neredeyse çarpıyor: Hals anı, hareketin tam ortasında yakalamayı severdi."
+    },
+    {
+     "ad": "Gülen yüz",
+     "x": 0.15,
+     "y": 0.15,
+     "w": 0.55,
+     "h": 0.32,
+     "metin": "Geniş şapkalı, tüylü genç kahkahayla bize bakıyor. Hals'in hızlı, kırık fırça darbeleri yüzü canlı ve sıcak gösteriyor; o dönem için çok cüretkâr bir teknik."
+    },
+    {
+     "ad": "Kadın",
+     "x": 0.5,
+     "y": 0.38,
+     "w": 0.35,
+     "h": 0.28,
+     "metin": "Arkasındaki kadın elini omzuna atmış, gülümsüyor. Bir meyhanede eğlenen çift, hem neşeli bir sahne hem de savurganlığa karşı bir uyarı."
+    },
+    {
+     "ad": "Köpek",
+     "x": 0.6,
+     "y": 0.82,
+     "w": 0.38,
+     "h": 0.18,
+     "metin": "Sağ altta köpek başını kaldırmış, sahibine bakıyor. Hollanda resminde köpek sadakatin, ama bazen de hayvani iştahın simgesiydi."
+    },
+    {
+     "ad": "Fırça darbeleri",
+     "x": 0.1,
+     "y": 0.5,
+     "w": 0.5,
+     "h": 0.45,
+     "metin": "Gri ceketin düğmeleri ve kıvrımları birkaç hızlı darbeyle yapılmış. Yakından bakınca dağınık lekeler, uzaktan bakınca kumaş: Hals, Empresyonistlerin hayran olduğu bir usta."
+    }
+   ]
+  },
+  "johannes-vermeer": {
+   "eser": "Açık Pencere Önünde Mektup Okuyan Kız",
+   "yil": 1658,
+   "qid": "Q700251",
+   "gorsel": "36fba19ef8d66dac",
+   "noktalar": [
+    {
+     "ad": "Mektup okuyan kız",
+     "x": 0.45,
+     "y": 0.45,
+     "w": 0.25,
+     "h": 0.4,
+     "metin": "Kız açık pencerenin önünde ayakta durmuş, mektubunu okuyor. Yüzü profilden, düşünceli; mektubun kimden geldiğini bilmiyoruz."
+    },
+    {
+     "ad": "Camdaki yansıma",
+     "x": 0.18,
+     "y": 0.35,
+     "w": 0.2,
+     "h": 0.3,
+     "metin": "Açık pencerenin camında kızın yüzü belli belirsiz yansıyor. Vermeer bize iki yüz birden gösteriyor: biri gerçek, biri ışığın içinde."
+    },
+    {
+     "ad": "Duvardaki Aşk",
+     "x": 0.45,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 0.45,
+     "metin": "Arkadaki duvarda bir resim içinde Aşk tanrısı Cupido duruyor. Bu resim yüzyıllar önce üstü boyanarak gizlenmişti; 2017–21 restorasyonunda ortaya çıktı ve mektubun bir aşk mektubu olduğunu ima ediyor."
+    },
+    {
+     "ad": "Perde",
+     "x": 0.7,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 1.0,
+     "metin": "Sağda yeşil bir perde resmin bir kısmını örtüyor, sanki biz onu aralamışız. Hollanda'da değerli resimleri tozdan korumak için önlerine böyle perdeler asılırdı."
+    },
+    {
+     "ad": "Meyve tabağı",
+     "x": 0.0,
+     "y": 0.75,
+     "w": 0.55,
+     "h": 0.25,
+     "metin": "Önde halı örtülü masada devrilmiş bir tabaktan elmalar ve şeftaliler dökülüyor. Şeftali bazen aşkın, bazen geçiciliğin simgesi; Vermeer'in ışık noktalarıyla parlıyor."
+    }
+   ]
+  },
+  "jan-steen": {
+   "eser": "Choice between richness and youth",
+   "yil": 1663,
+   "qid": "Q9379088",
+   "gorsel": "fdc9f5d7729bdb16",
+   "noktalar": [
+    {
+     "ad": "Yaşlı zengin",
+     "x": 0.12,
+     "y": 0.38,
+     "w": 0.32,
+     "h": 0.38,
+     "metin": "Solda yaşlı adam açık sandığındaki paraları gösteriyor, kıza para teklif ediyor. Seçim başlığı bu: zenginlik mi gençlik mi?"
+    },
+    {
+     "ad": "Para sandığı",
+     "x": 0.0,
+     "y": 0.5,
+     "w": 0.2,
+     "h": 0.2,
+     "metin": "Sandık altın paralarla dolu. Steen'in hikâyeleri hep böyle: açık, eğlenceli ve küçük bir ahlak dersiyle."
+    },
+    {
+     "ad": "Kararsız kız",
+     "x": 0.35,
+     "y": 0.48,
+     "w": 0.28,
+     "h": 0.48,
+     "metin": "Ortadaki kız iki adamın arasında oturuyor; bir eli yaşlıya, bedeni gence dönük. Kararını vermiş gibi."
+    },
+    {
+     "ad": "Genç sevgili",
+     "x": 0.58,
+     "y": 0.45,
+     "w": 0.27,
+     "h": 0.5,
+     "metin": "Sağdaki genç adam kızın yanına sokulmuş, kolunu omzuna atmış. Parası yok ama gençliği var."
+    },
+    {
+     "ad": "Duvardaki resim",
+     "x": 0.6,
+     "y": 0.33,
+     "w": 0.2,
+     "h": 0.13,
+     "metin": "Arka duvarda asılı bir resim var. Hollanda tür resimlerinde duvardaki resimler sahneye yorum katardı; Steen bu küçük işaretleri severdi."
+    }
+   ]
+  },
+  "jacob-van-ruisdael": {
+   "eser": "Two Watermills and an Open Sluice near Singraven",
+   "yil": 1650,
+   "qid": "Q5813781",
+   "gorsel": "8b584e7da3fbc5dd",
+   "noktalar": [
+    {
+     "ad": "Su değirmenleri",
+     "x": 0.38,
+     "y": 0.4,
+     "w": 0.38,
+     "h": 0.35,
+     "metin": "Ortada iki su değirmeni yan yana; çatıları yosunlu, tahtaları eski. Ruisdael bu değirmenleri Hollanda-Almanya sınırındaki Singraven'de görmüştü."
+    },
+    {
+     "ad": "Açık savak",
+     "x": 0.25,
+     "y": 0.7,
+     "w": 0.38,
+     "h": 0.22,
+     "metin": "Değirmen çarkının altındaki savaktan su köpürerek akıyor. Beyaz köpük, koyu tonlu resmin en parlak yeri; Ruisdael akan suyu boyamakta ustaydı."
+    },
+    {
+     "ad": "Ağaçlar",
+     "x": 0.0,
+     "y": 0.1,
+     "w": 0.38,
+     "h": 0.7,
+     "metin": "Solda koca yapraklı ağaçlar, kırık dallar. Ruisdael doğayı hem güzel hem geçici gösterir: büyüyen ve yıkılan ağaçlar bir arada."
+    },
+    {
+     "ad": "Bulutlu gök",
+     "x": 0.3,
+     "y": 0.0,
+     "w": 0.7,
+     "h": 0.4,
+     "metin": "Gökyüzü büyük, hareketli bulutlarla dolu. Hollanda manzara resminde gök, resmin yarısından fazlasını kaplayabilir; ruh hâlini bulutlar belirler."
+    },
+    {
+     "ad": "Devrik gövde",
+     "x": 0.78,
+     "y": 0.76,
+     "w": 0.2,
+     "h": 0.18,
+     "metin": "Sağ altta suya devrilmiş beyaz bir huş gövdesi. Değirmenlerin dönen çarkı ve çürüyen ağaç: zamanın akışı."
+    }
+   ]
+  },
   "hyacinthe-rigaud": {
    "eser": "Portrait of Louis XIV",
    "yil": 1701,
