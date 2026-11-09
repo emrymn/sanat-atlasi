@@ -14,7 +14,12 @@
    "qid": "Q141671268",
    "gorsel": "668e5783f3cb4e36",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2730,
+    4096
+   ],
+   "oran": 0.67
   },
   {
    "id": "cimabue",
@@ -28,7 +33,12 @@
    "qid": "Q1608116",
    "gorsel": "2cc309fe229d38d0",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2716,
+    4096
+   ],
+   "oran": 0.66
   },
   {
    "id": "duccio-di-buoninsegna",
@@ -42,7 +52,15 @@
    "qid": null,
    "gorsel": "0b55d8270d39493e",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1229,
+    2200
+   ],
+   "oran": 0.56,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Maestà, Siena"
   },
   {
    "id": "simone-martini",
@@ -56,7 +74,12 @@
    "qid": "Q979440",
    "gorsel": "af51df81fcaa607b",
    "eski": "Saint Andrew",
-   "eskiGorsel": "4f38a1cf7f691833"
+   "eskiGorsel": "4f38a1cf7f691833",
+   "boyut": null,
+   "oran": 1.17,
+   "indir": true,
+   "eserEn": "Annunciation with Saints Maxima and Ansanus",
+   "muze": "Slayta göre Uffizi; Geç Gotik/Erken Rönesans"
   },
   {
    "id": "pietro-lorenzetti",
@@ -70,7 +93,12 @@
    "qid": "Q3873247",
    "gorsel": "c61d3d5f20cb4b0c",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": null,
+   "oran": 0.98,
+   "indir": true,
+   "eserEn": "Nativity of the Virgin",
+   "muze": "Siena Katedrali'nden; Museo dell'Opera del Duomo, Siena"
   },
   {
    "id": "ambrogio-lorenzetti",
@@ -84,7 +112,12 @@
    "qid": "Q67204103",
    "gorsel": "db4bf6fdc94b4a63",
    "eski": "A Group of Poor Clares",
-   "eskiGorsel": "b3fa823b791b8cbe"
+   "eskiGorsel": "b3fa823b791b8cbe",
+   "boyut": [
+    3840,
+    2077
+   ],
+   "oran": 1.85
   },
   {
    "id": "giotto-di-bondone",
@@ -98,7 +131,15 @@
    "qid": "Q3698217",
    "gorsel": "77df17448eb30f26",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1536,
+    2500
+   ],
+   "oran": 0.61,
+   "indir": true,
+   "eserEn": "The Crucifixion of Christ",
+   "muze": "Gemäldegalerie Berlin"
   },
   {
    "id": "limbourg-kardesler",
@@ -112,7 +153,15 @@
    "qid": "Q211062",
    "gorsel": "66b1d9b4a6aaac49",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1677,
+    2179
+   ],
+   "oran": 0.77,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Condé Museum"
   },
   {
    "id": "gentile-da-fabriano",
@@ -126,7 +175,15 @@
    "qid": "Q3698187",
    "gorsel": "d05974a4d34d8437",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1352,
+    2183
+   ],
+   "oran": 0.62,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Pinacoteca di Brera"
   },
   {
    "id": "domenico-di-michelino",
@@ -140,7 +197,15 @@
    "qid": "Q9201581",
    "gorsel": "1a2e0d27e42761b0",
    "eski": "The Trinity",
-   "eskiGorsel": "1328c3c2f9a62de6"
+   "eskiGorsel": "1328c3c2f9a62de6",
+   "boyut": [
+    2314,
+    1832
+   ],
+   "oran": 1.27,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Florence Cathedral"
   },
   {
    "id": "masaccio",
@@ -154,7 +219,12 @@
    "qid": null,
    "gorsel": "81d42a6367d9c07c",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2539,
+    4096
+   ],
+   "oran": 0.62
   },
   {
    "id": "andrea-mantegna",
@@ -168,7 +238,12 @@
    "qid": "Q3463920",
    "gorsel": "4f9c53be410d8bfb",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2830,
+    3713
+   ],
+   "oran": 0.76
   },
   {
    "id": "piero-della-francesca",
@@ -182,7 +257,12 @@
    "qid": "Q3842514",
    "gorsel": "e3b389e8a6e637c9",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2875,
+    4096
+   ],
+   "oran": 0.7
   },
   {
    "id": "fra-angelico",
@@ -196,7 +276,12 @@
    "qid": null,
    "gorsel": "7f2a2bc76bba119a",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3094,
+    4000
+   ],
+   "oran": 0.77
   },
   {
    "id": "paolo-uccello",
@@ -210,7 +295,12 @@
    "qid": "Q16599926",
    "gorsel": "3efa5d25daeeeb18",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2574,
+    4096
+   ],
+   "oran": 0.63
   },
   {
    "id": "sandro-botticelli",
@@ -224,7 +314,12 @@
    "qid": "Q549847",
    "gorsel": "eff4aef1a0e1f2c2",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3840,
+    2551
+   ],
+   "oran": 1.51
   },
   {
    "id": "pietro-perugino",
@@ -238,7 +333,12 @@
    "qid": "Q2620028",
    "gorsel": "360cb5f67fabb880",
    "eski": "Mecdelli Meryem",
-   "eskiGorsel": "794d25fde04ebfb7"
+   "eskiGorsel": "794d25fde04ebfb7",
+   "boyut": [
+    3187,
+    1923
+   ],
+   "oran": 1.66
   },
   {
    "id": "albrecht-durer",
@@ -252,7 +352,12 @@
    "qid": "Q2388965",
    "gorsel": "c180f7a018fb389a",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3244,
+    4096
+   ],
+   "oran": 0.79
   },
   {
    "id": "robert-campin",
@@ -266,7 +371,15 @@
    "qid": "Q18508784",
    "gorsel": "631617ec64c6ef4d",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1335,
+    2952
+   ],
+   "oran": 0.45,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Museo del Prado"
   },
   {
    "id": "jan-van-eyck",
@@ -280,7 +393,12 @@
    "qid": "Q220859",
    "gorsel": "84d3c15e96896efe",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2994,
+    4096
+   ],
+   "oran": 0.73
   },
   {
    "id": "petrus-christus",
@@ -294,7 +412,12 @@
    "qid": "Q2408910",
    "gorsel": "168f6f945917eef7",
    "eski": "Portrait of a Female Donor",
-   "eskiGorsel": "c83dfba70d094148"
+   "eskiGorsel": "c83dfba70d094148",
+   "boyut": [
+    3469,
+    4000
+   ],
+   "oran": 0.87
   },
   {
    "id": "quentin-metsys",
@@ -308,7 +431,12 @@
    "qid": "Q21614511",
    "gorsel": "e8e8ece646150362",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1985,
+    4096
+   ],
+   "oran": 0.49
   },
   {
    "id": "rogier-van-der-weyden",
@@ -322,7 +450,15 @@
    "qid": "Q18430656",
    "gorsel": "4029183304fae9de",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1740,
+    2920
+   ],
+   "oran": 0.6,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Royal Monastery of San Lorenzo de El Escorial"
   },
   {
    "id": "hans-baldung-grien",
@@ -336,7 +472,15 @@
    "qid": "Q4462828",
    "gorsel": "6d8bef671044ddfd",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    747,
+    1920
+   ],
+   "oran": 0.39,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Museo del Prado"
   },
   {
    "id": "lucas-cranach-yasl",
@@ -350,7 +494,12 @@
    "qid": "Q20828882",
    "gorsel": "8504132f54cfa496",
    "eski": "Salome with the head of Saint John the Baptist",
-   "eskiGorsel": "7da6212a010c4b65"
+   "eskiGorsel": "7da6212a010c4b65",
+   "boyut": [
+    3840,
+    2486
+   ],
+   "oran": 1.54
   },
   {
    "id": "hans-holbein-genc",
@@ -364,7 +513,12 @@
    "qid": "Q1212937",
    "gorsel": "b9506673eab3e118",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3840,
+    3784
+   ],
+   "oran": 1.02
   },
   {
    "id": "hieronymus-bosch",
@@ -378,7 +532,12 @@
    "qid": "Q2203011",
    "gorsel": "4abaf9d5d863afb8",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1371,
+    4096
+   ],
+   "oran": 0.33
   },
   {
    "id": "pieter-bruegel-yasl",
@@ -392,7 +551,15 @@
    "qid": "Q644856",
    "gorsel": "ef15f4458bf7138e",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2126,
+    1517
+   ],
+   "oran": 1.4,
+   "indir": true,
+   "eserEn": "The Triumph of Death",
+   "muze": "Museo del Prado"
   },
   {
    "id": "leonardo-da-vinci",
@@ -406,7 +573,12 @@
    "qid": "Q474338",
    "gorsel": "497be7aa475be51c",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3046,
+    4096
+   ],
+   "oran": 0.74
   },
   {
    "id": "michelangelo",
@@ -420,7 +592,12 @@
    "qid": "Q3482971",
    "gorsel": "abda37cf30af9d5b",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2659,
+    3991
+   ],
+   "oran": 0.67
   },
   {
    "id": "raphael",
@@ -434,7 +611,12 @@
    "qid": "Q186953",
    "gorsel": "3e754c9aae3c41f3",
    "eski": "Bindo Altoviti Portresi",
-   "eskiGorsel": "3974652eb0d52045"
+   "eskiGorsel": "3974652eb0d52045",
+   "boyut": [
+    3840,
+    2560
+   ],
+   "oran": 1.5
   },
   {
    "id": "donato-bramante",
@@ -448,7 +630,12 @@
    "qid": "Q3697588",
    "gorsel": "4b1c880548f2048a",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1990,
+    3019
+   ],
+   "oran": 0.66
   },
   {
    "id": "correggio",
@@ -462,7 +649,12 @@
    "qid": "Q700834",
    "gorsel": "cf1f989968ae2fc8",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1767,
+    4096
+   ],
+   "oran": 0.43
   },
   {
    "id": "marcantonio-raimondi",
@@ -476,7 +668,12 @@
    "qid": "Q18579333",
    "gorsel": "9fe74bd524f1be98",
    "eski": "Charity",
-   "eskiGorsel": "0cf3b7b17e5a5098"
+   "eskiGorsel": "0cf3b7b17e5a5098",
+   "boyut": [
+    3758,
+    2545
+   ],
+   "oran": 1.48
   },
   {
    "id": "titian",
@@ -490,7 +687,12 @@
    "qid": "Q1206860",
    "gorsel": "1e0d4386895b479c",
    "eski": "The Tribute Money",
-   "eskiGorsel": "2da63426552548f9"
+   "eskiGorsel": "2da63426552548f9",
+   "boyut": [
+    3840,
+    3475
+   ],
+   "oran": 1.1
   },
   {
    "id": "giovanni-bellini",
@@ -504,7 +706,12 @@
    "qid": "Q15008032",
    "gorsel": "df63f84eecbc3446",
    "eski": "Portrait of Doge Leonardo Loredan",
-   "eskiGorsel": "4903031b83bd0a3c"
+   "eskiGorsel": "4903031b83bd0a3c",
+   "boyut": [
+    4096,
+    3752
+   ],
+   "oran": 1.08
   },
   {
    "id": "giorgione",
@@ -518,7 +725,12 @@
    "qid": "Q2537695",
    "gorsel": "eb8c139d8dece1e7",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1679,
+    3815
+   ],
+   "oran": 0.44
   },
   {
    "id": "tintoretto",
@@ -532,7 +744,12 @@
    "qid": "Q1984131",
    "gorsel": "ff3cda4a0775290c",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1812,
+    3000
+   ],
+   "oran": 0.6
   },
   {
    "id": "paolo-veronese",
@@ -546,7 +763,12 @@
    "qid": "Q185255",
    "gorsel": "870f58ce77c32209",
    "eski": "Lucretia",
-   "eskiGorsel": "477075de7b57e91a"
+   "eskiGorsel": "477075de7b57e91a",
+   "boyut": [
+    3840,
+    2571
+   ],
+   "oran": 1.49
   },
   {
    "id": "jacopo-pontormo",
@@ -560,7 +782,12 @@
    "qid": "Q3705703",
    "gorsel": "1769a17bdd359be0",
    "eski": "Portrait of a Halberdier, Francesco Guardi?",
-   "eskiGorsel": "0f12c85541ec7789"
+   "eskiGorsel": "0f12c85541ec7789",
+   "boyut": [
+    2554,
+    4096
+   ],
+   "oran": 0.61
   },
   {
    "id": "francesco-salviati",
@@ -574,7 +801,12 @@
    "qid": "Q64562427",
    "gorsel": "141d1af135c6a4c2",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2826,
+    4096
+   ],
+   "oran": 0.69
   },
   {
    "id": "sofonisba-anguissola",
@@ -588,7 +820,12 @@
    "qid": "Q23008305",
    "gorsel": "5522bc0dc8009d75",
    "eski": "Portrait of Elisabeth of Valois",
-   "eskiGorsel": "e8d2074f7c53f429"
+   "eskiGorsel": "e8d2074f7c53f429",
+   "boyut": [
+    3214,
+    2436
+   ],
+   "oran": 1.32
   },
   {
    "id": "daniele-da-volterra",
@@ -602,7 +839,12 @@
    "qid": "Q28466203",
    "gorsel": "94834daa4d27c8c4",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": null,
+   "oran": 0.99,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Uffizi Gallery"
   },
   {
    "id": "parmigianino",
@@ -616,7 +858,15 @@
    "qid": "Q867403",
    "gorsel": "ebd73e500d20ad0b",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1490,
+    2336
+   ],
+   "oran": 0.64,
+   "indir": true,
+   "eserEn": "Madonna with the Long Neck",
+   "muze": "Uffizi Gallery"
   },
   {
    "id": "agnolo-bronzino",
@@ -630,7 +880,12 @@
    "qid": "Q18572239",
    "gorsel": "11eee36df13c3e46",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2711,
+    4096
+   ],
+   "oran": 0.66
   },
   {
    "id": "el-greco",
@@ -644,7 +899,12 @@
    "qid": "Q94802",
    "gorsel": "e3a7a09cffa62fac",
    "eski": "El Soplón",
-   "eskiGorsel": "a131af73a31e88a3"
+   "eskiGorsel": "a131af73a31e88a3",
+   "boyut": [
+    2504,
+    3117
+   ],
+   "oran": 0.82
   },
   {
    "id": "rosso-fiorentino",
@@ -658,7 +918,12 @@
    "qid": "Q11798846",
    "gorsel": "9da91c5e8ae45215",
    "eski": "Angel Playing the Lute",
-   "eskiGorsel": "d3e1c26c72db4bad"
+   "eskiGorsel": "d3e1c26c72db4bad",
+   "boyut": null,
+   "oran": 0.77,
+   "indir": true,
+   "eserEn": null,
+   "muze": "San Lorenzo, Sansepolcro"
   },
   {
    "id": "giulio-romano",
@@ -672,7 +937,12 @@
    "qid": "Q3399388",
    "gorsel": "e34931b7303c6f49",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3239,
+    4096
+   ],
+   "oran": 0.79
   },
   {
    "id": "annibale-carracci",
@@ -686,7 +956,12 @@
    "qid": "Q4810381",
    "gorsel": "1650a9f0bb587ac0",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2206,
+    3000
+   ],
+   "oran": 0.74
   },
   {
    "id": "guido-reni",
@@ -700,7 +975,15 @@
    "qid": "Q777124",
    "gorsel": "e078b6ed3d5afb7f",
    "eski": "Ariadne",
-   "eskiGorsel": "fc66067b8925fef7"
+   "eskiGorsel": "fc66067b8925fef7",
+   "boyut": [
+    2498,
+    995
+   ],
+   "oran": 2.52,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Palazzo Pallavicini-Rospigliosi"
   },
   {
    "id": "guercino",
@@ -714,7 +997,15 @@
    "qid": "Q27968048",
    "gorsel": "788501f9cc9d9759",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1353,
+    1920
+   ],
+   "oran": 0.71,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Hermitage Museum"
   },
   {
    "id": "caravaggio",
@@ -728,7 +1019,12 @@
    "qid": "Q2273517",
    "gorsel": "0ea5b347b05f24d4",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3117,
+    4096
+   ],
+   "oran": 0.76
   },
   {
    "id": "georges-de-la-tour",
@@ -742,7 +1038,12 @@
    "qid": "Q1193312",
    "gorsel": "e885a59f4bcb8352",
    "eski": "The Blind Hurdy-Gurdy Player",
-   "eskiGorsel": "185aff06b325e238"
+   "eskiGorsel": "185aff06b325e238",
+   "boyut": [
+    3840,
+    2787
+   ],
+   "oran": 1.38
   },
   {
    "id": "bartolomeo-manfredi",
@@ -756,7 +1057,15 @@
    "qid": "Q59524167",
    "gorsel": "5e3f1519c2cd3995",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1376,
+    1920
+   ],
+   "oran": 0.72,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Museo del Prado"
   },
   {
    "id": "hendrick-ter-brugghen",
@@ -770,7 +1079,12 @@
    "qid": "Q7728258",
    "gorsel": "3aa84f8869632ac6",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2486,
+    3722
+   ],
+   "oran": 0.67
   },
   {
    "id": "gerrit-van-honthorst",
@@ -784,7 +1098,12 @@
    "qid": "Q20185587",
    "gorsel": "4050570cfca96c5a",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2819,
+    4055
+   ],
+   "oran": 0.7
   },
   {
    "id": "dirck-van-baburen",
@@ -798,7 +1117,12 @@
    "qid": "Q16933788",
    "gorsel": "15e7d2a81a7ac6bb",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3703,
+    4096
+   ],
+   "oran": 0.91
   },
   {
    "id": "valentin-de-boulogne",
@@ -812,7 +1136,12 @@
    "qid": "Q130251755",
    "gorsel": "d33c15f5c154f369",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2980,
+    4096
+   ],
+   "oran": 0.73
   },
   {
    "id": "jusepe-de-ribera",
@@ -826,7 +1155,12 @@
    "qid": "Q4791095",
    "gorsel": "c9537882e46158dd",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3249,
+    4096
+   ],
+   "oran": 0.79
   },
   {
    "id": "artemisia-gentileschi",
@@ -840,7 +1174,12 @@
    "qid": "Q3630745",
    "gorsel": "480b51291a66cde6",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3032,
+    4096
+   ],
+   "oran": 0.74
   },
   {
    "id": "orazio-gentileschi",
@@ -854,7 +1193,12 @@
    "qid": "Q20176925",
    "gorsel": "d0b69991aa09b052",
    "eski": "Diana the Huntress",
-   "eskiGorsel": "637d0abb5cdd493e"
+   "eskiGorsel": "637d0abb5cdd493e",
+   "boyut": [
+    3573,
+    4096
+   ],
+   "oran": 0.87
   },
   {
    "id": "diego-velazquez",
@@ -868,7 +1212,12 @@
    "qid": "Q208758",
    "gorsel": "bcb91846d700eabf",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3558,
+    4096
+   ],
+   "oran": 0.87
   },
   {
    "id": "francisco-de-zurbaran",
@@ -882,7 +1231,12 @@
    "qid": "Q2361683",
    "gorsel": "885b52ef4cb0df9a",
    "eski": "Saint Elizabeth of Portugal",
-   "eskiGorsel": "89d57625b5c5a5a8"
+   "eskiGorsel": "89d57625b5c5a5a8",
+   "boyut": null,
+   "oran": 1.17,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Museo de Bellas Artes de Sevilla"
   },
   {
    "id": "peter-paul-rubens",
@@ -896,7 +1250,12 @@
    "qid": "Q203259",
    "gorsel": "ad9b916603c6b8d6",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2920,
+    3750
+   ],
+   "oran": 0.78
   },
   {
    "id": "anthony-van-dyck",
@@ -910,7 +1269,12 @@
    "qid": "Q16038543",
    "gorsel": "6b9b46e8061a93ad",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3350,
+    4096
+   ],
+   "oran": 0.82
   },
   {
    "id": "rembrandt-van-rijn",
@@ -924,7 +1288,12 @@
    "qid": "Q512755",
    "gorsel": "294a50e3d597e924",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3139,
+    4096
+   ],
+   "oran": 0.77
   },
   {
    "id": "frans-hals",
@@ -938,7 +1307,12 @@
    "qid": "Q17355822",
    "gorsel": "864aff516d7abc7b",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2817,
+    3722
+   ],
+   "oran": 0.76
   },
   {
    "id": "johannes-vermeer",
@@ -952,7 +1326,12 @@
    "qid": "Q700251",
    "gorsel": "36fba19ef8d66dac",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3173,
+    4096
+   ],
+   "oran": 0.78
   },
   {
    "id": "jan-steen",
@@ -966,7 +1345,12 @@
    "qid": "Q9379088",
    "gorsel": "fdc9f5d7729bdb16",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3103,
+    4000
+   ],
+   "oran": 0.78
   },
   {
    "id": "jacob-van-ruisdael",
@@ -980,7 +1364,12 @@
    "qid": "Q5813781",
    "gorsel": "8b584e7da3fbc5dd",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3840,
+    3010
+   ],
+   "oran": 1.28
   },
   {
    "id": "charles-le-brun",
@@ -994,7 +1383,12 @@
    "qid": "Q18683145",
    "gorsel": "82ec9599e140ddd2",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2940,
+    4096
+   ],
+   "oran": 0.72
   },
   {
    "id": "hyacinthe-rigaud",
@@ -1008,7 +1402,12 @@
    "qid": "Q3399440",
    "gorsel": "2abb7af9be90572c",
    "eski": "Young Negro with a Bow",
-   "eskiGorsel": "209d85861b5df1eb"
+   "eskiGorsel": "209d85861b5df1eb",
+   "boyut": [
+    2883,
+    4018
+   ],
+   "oran": 0.72
   },
   {
    "id": "nicolas-poussin",
@@ -1022,7 +1421,12 @@
    "qid": null,
    "gorsel": "932510f80435911a",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3153,
+    4000
+   ],
+   "oran": 0.79
   },
   {
    "id": "claude-lorrain",
@@ -1036,7 +1440,12 @@
    "qid": "Q6057319",
    "gorsel": "ae76f3f2a6e6a0cf",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2022,
+    3051
+   ],
+   "oran": 0.66
   },
   {
    "id": "salvator-rosa",
@@ -1050,7 +1459,12 @@
    "qid": "Q20087469",
    "gorsel": "a3b02d252a4b0aea",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2693,
+    4096
+   ],
+   "oran": 0.66
   },
   {
    "id": "mattia-preti",
@@ -1064,7 +1478,15 @@
    "qid": "Q48917755",
    "gorsel": "32a473211e6e9886",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1566,
+    2126
+   ],
+   "oran": 0.74,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Uffizi Gallery"
   },
   {
    "id": "luca-giordano",
@@ -1078,7 +1500,12 @@
    "qid": "Q3947694",
    "gorsel": "0e4eba22d3739d63",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2746,
+    4096
+   ],
+   "oran": 0.67
   },
   {
    "id": "giovanni-battista-gaulli",
@@ -1092,7 +1519,12 @@
    "qid": "Q55424125",
    "gorsel": "fcedd7646bb7cd30",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2196,
+    4000
+   ],
+   "oran": 0.55
   },
   {
    "id": "andrea-pozzo",
@@ -1106,7 +1538,12 @@
    "qid": "Q112401018",
    "gorsel": "d36079ae725729fb",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2167,
+    4096
+   ],
+   "oran": 0.53
   },
   {
    "id": "francesco-solimena",
@@ -1120,7 +1557,12 @@
    "qid": "Q17323659",
    "gorsel": "a81e7c6dfaf19ccb",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2024,
+    4096
+   ],
+   "oran": 0.5
   },
   {
    "id": "giuseppe-maria-crespi",
@@ -1134,7 +1576,12 @@
    "qid": "Q18685524",
    "gorsel": "7c524b57e58b0654",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3015,
+    4096
+   ],
+   "oran": 0.74
   },
   {
    "id": "sebastiano-ricci",
@@ -1148,7 +1595,12 @@
    "qid": "Q60474705",
    "gorsel": "48c72446e43b5eac",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3369,
+    4096
+   ],
+   "oran": 0.82
   },
   {
    "id": "giovanni-battista-piazzetta",
@@ -1162,7 +1614,12 @@
    "qid": "Q50326498",
    "gorsel": "2acf9fc32c573971",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": null,
+   "oran": 0.76,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Staatliche Kunstsammlungen Dresden"
   },
   {
    "id": "alessandro-magnasco",
@@ -1176,7 +1633,15 @@
    "qid": "Q27755383",
    "gorsel": "a93e740cef4dea3c",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2157,
+    2952
+   ],
+   "oran": 0.73,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Museo del Prado"
   },
   {
    "id": "jean-antoine-watteau",
@@ -1190,7 +1655,12 @@
    "qid": "Q531329",
    "gorsel": "bf5742ab3ec171f0",
    "eski": "Mezzetin",
-   "eskiGorsel": "93a6627008e39749"
+   "eskiGorsel": "93a6627008e39749",
+   "boyut": [
+    3840,
+    2518
+   ],
+   "oran": 1.53
   },
   {
    "id": "francois-boucher",
@@ -1204,7 +1674,12 @@
    "qid": "Q3548343",
    "gorsel": "49b5a8e48e231c80",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": null,
+   "oran": 0.75,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Wallace Collection"
   },
   {
    "id": "jean-honore-fragonard",
@@ -1218,7 +1693,12 @@
    "qid": "Q19911811",
    "gorsel": "c33aa90366894cff",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3164,
+    3915
+   ],
+   "oran": 0.81
   },
   {
    "id": "giovanni-battista-tiepolo",
@@ -1232,7 +1712,12 @@
    "qid": "Q18167078",
    "gorsel": "dcff0d8adc24cc19",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3840,
+    2683
+   ],
+   "oran": 1.43
   },
   {
    "id": "jean-baptiste-simeon-chardin",
@@ -1246,7 +1731,12 @@
    "qid": "Q12859898",
    "gorsel": "4990b0db71daa072",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3270,
+    4096
+   ],
+   "oran": 0.8
   },
   {
    "id": "jean-baptiste-greuze",
@@ -1260,7 +1750,12 @@
    "qid": null,
    "gorsel": "070539076f5bda64",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3103,
+    4096
+   ],
+   "oran": 0.76
   },
   {
    "id": "william-hogarth",
@@ -1274,7 +1769,12 @@
    "qid": "Q20183486",
    "gorsel": "62e6e13cc1603c13",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3483,
+    4041
+   ],
+   "oran": 0.86
   },
   {
    "id": "canaletto",
@@ -1288,7 +1788,12 @@
    "qid": "Q19660442",
    "gorsel": "eb3609f1c9d0d6bb",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3840,
+    2427
+   ],
+   "oran": 1.58
   },
   {
    "id": "thomas-gainsborough",
@@ -1302,7 +1807,12 @@
    "qid": "Q1619527",
    "gorsel": "2bd19cbc47c851e2",
    "eski": "Giovanna Baccelli",
-   "eskiGorsel": "4d5eb17a1c6dbaad"
+   "eskiGorsel": "4d5eb17a1c6dbaad",
+   "boyut": [
+    3840,
+    2250
+   ],
+   "oran": 1.71
   },
   {
    "id": "benjamin-west",
@@ -1316,7 +1826,12 @@
    "qid": "Q3135552",
    "gorsel": "4bfc5422e4a967dd",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2783,
+    4096
+   ],
+   "oran": 0.68
   },
   {
    "id": "jacques-louis-david",
@@ -1330,7 +1845,12 @@
    "qid": "Q1313605",
    "gorsel": "950ba3e9e82c612c",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2498,
+    4096
+   ],
+   "oran": 0.61
   },
   {
    "id": "angelica-kauffman",
@@ -1344,7 +1864,12 @@
    "qid": null,
    "gorsel": "cba7efe328d094ed",
    "eski": "Self-portrait of Angelica Kauffman",
-   "eskiGorsel": "fb35aeee8deb0f51"
+   "eskiGorsel": "fb35aeee8deb0f51",
+   "boyut": null,
+   "oran": 1.27,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Virginia Museum of Fine Arts, Richmond (slayt altyazısı)"
   },
   {
    "id": "elisabeth-vigee-le-brun",
@@ -1358,7 +1883,12 @@
    "qid": "Q3937621",
    "gorsel": "31c5fe2dce1fcddf",
    "eski": "Self-Portrait with Her Daughter, Julie",
-   "eskiGorsel": "61437c934ddf1326"
+   "eskiGorsel": "61437c934ddf1326",
+   "boyut": [
+    3199,
+    4096
+   ],
+   "oran": 0.78
   },
   {
    "id": "william-blake",
@@ -1372,7 +1902,12 @@
    "qid": "Q538936",
    "gorsel": "864e0d9cfe33eed0",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2682,
+    3000
+   ],
+   "oran": 0.89
   },
   {
    "id": "henry-fuseli",
@@ -1386,7 +1921,12 @@
    "qid": "Q23742712",
    "gorsel": "72ead7a07926c53d",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3092,
+    4096
+   ],
+   "oran": 0.76
   },
   {
    "id": "caspar-david-friedrich",
@@ -1400,7 +1940,12 @@
    "qid": "Q311243",
    "gorsel": "849127cc0c76ca35",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3193,
+    4096
+   ],
+   "oran": 0.79
   },
   {
    "id": "john-constable",
@@ -1414,7 +1959,12 @@
    "qid": "Q3664409",
    "gorsel": "a62f7e5895ffe0a5",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2462,
+    3000
+   ],
+   "oran": 0.82
   },
   {
    "id": "eugene-delacroix",
@@ -1428,7 +1978,12 @@
    "qid": "Q2354251",
    "gorsel": "e997fbcec2932cf8",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3626,
+    2713
+   ],
+   "oran": 1.34
   },
   {
    "id": "francisco-de-goya",
@@ -1442,7 +1997,15 @@
    "qid": "Q15728649",
    "gorsel": "d055f14e9793c559",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2068,
+    2952
+   ],
+   "oran": 0.7,
+   "indir": true,
+   "eserEn": "Witches' Flight",
+   "muze": "Museo del Prado"
   },
   {
    "id": "j-m-w-turner",
@@ -1456,7 +2019,15 @@
    "qid": "Q219344",
    "gorsel": "5e4a3d91a7445f63",
    "eski": "Işık ve Renk (Goethe'nin Teorisi) - Tufandan Sonraki Sabah - Musa'nın Yaratılış Kitabını Yazması",
-   "eskiGorsel": "189519ed89a548cf"
+   "eskiGorsel": "189519ed89a548cf",
+   "boyut": [
+    2152,
+    1616
+   ],
+   "oran": 1.33,
+   "indir": true,
+   "eserEn": "The Slave Ship",
+   "muze": "Museum of Fine Arts Boston"
   },
   {
    "id": "theodore-gericault",
@@ -1470,7 +2041,12 @@
    "qid": "Q212616",
    "gorsel": "2310e62cc103ef4b",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3840,
+    2609
+   ],
+   "oran": 1.47
   },
   {
    "id": "dante-gabriel-rossetti",
@@ -1484,7 +2060,15 @@
    "qid": "Q977777",
    "gorsel": "38b5f445f713b1a2",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1041,
+    2300
+   ],
+   "oran": 0.45,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Tate Britain"
   },
   {
    "id": "john-everett-millais",
@@ -1498,7 +2082,15 @@
    "qid": "Q4281369",
    "gorsel": "a0904037462b2efe",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2260,
+    2771
+   ],
+   "oran": 0.82,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Tate"
   },
   {
    "id": "william-holman-hunt",
@@ -1512,7 +2104,12 @@
    "qid": "Q98113753",
    "gorsel": "8093fb8c862f6508",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3216,
+    4096
+   ],
+   "oran": 0.79
   },
   {
    "id": "jean-auguste-dominique-ingres",
@@ -1526,7 +2123,12 @@
    "qid": "Q33255228",
    "gorsel": "3f7db2264c5ec610",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3139,
+    4096
+   ],
+   "oran": 0.77
   },
   {
    "id": "jean-leon-gerome",
@@ -1540,7 +2142,12 @@
    "qid": "Q20891420",
    "gorsel": "42a1ecf26463f0d2",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3212,
+    4096
+   ],
+   "oran": 0.78
   },
   {
    "id": "william-adolphe-bouguereau",
@@ -1554,7 +2161,12 @@
    "qid": "Q2665048",
    "gorsel": "fc48981aa80fd5fa",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2803,
+    3515
+   ],
+   "oran": 0.8
   },
   {
    "id": "alexandre-cabanel",
@@ -1568,7 +2180,12 @@
    "qid": "Q1212861",
    "gorsel": "02e8b0494cae100a",
    "eski": "Echo",
-   "eskiGorsel": "874836052a3fb0fc"
+   "eskiGorsel": "874836052a3fb0fc",
+   "boyut": [
+    3840,
+    2181
+   ],
+   "oran": 1.76
   },
   {
    "id": "honore-daumier",
@@ -1582,7 +2199,12 @@
    "qid": null,
    "gorsel": "618b12f07913aeb4",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": null,
+   "oran": 0.81,
+   "indir": true,
+   "eserEn": null,
+   "muze": "The Metropolitan Museum of Art, New York"
   },
   {
    "id": "gustave-courbet",
@@ -1596,7 +2218,12 @@
    "qid": "Q540488",
    "gorsel": "e4527ac8da257ed7",
    "eski": "Madame Auguste Cuoq (Mathilde Desportes, 1827–1910)",
-   "eskiGorsel": "6a06c11e56abe00c"
+   "eskiGorsel": "6a06c11e56abe00c",
+   "boyut": [
+    3840,
+    1765
+   ],
+   "oran": 2.19
   },
   {
    "id": "camille-corot",
@@ -1610,7 +2237,12 @@
    "qid": "Q20184292",
    "gorsel": "add2a220428c86b6",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2716,
+    3722
+   ],
+   "oran": 0.73
   },
   {
    "id": "jean-francois-millet",
@@ -1624,7 +2256,12 @@
    "qid": "Q1368055",
    "gorsel": "0e77dc7a212e8824",
    "eski": "The Keeper of the Flock",
-   "eskiGorsel": "9bc65eb9c6027059"
+   "eskiGorsel": "9bc65eb9c6027059",
+   "boyut": [
+    3840,
+    2874
+   ],
+   "oran": 1.34
   },
   {
    "id": "theodore-rousseau",
@@ -1638,7 +2275,12 @@
    "qid": "Q15711219",
    "gorsel": "d43896a88c1c03f8",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3840,
+    2560
+   ],
+   "oran": 1.5
   },
   {
    "id": "gustave-caillebotte",
@@ -1652,7 +2294,12 @@
    "qid": "Q1452762",
    "gorsel": "7ee48fe2f97d0a9c",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    4096,
+    3181
+   ],
+   "oran": 1.29
   },
   {
    "id": "edouard-manet",
@@ -1666,7 +2313,12 @@
    "qid": "Q1245354",
    "gorsel": "678e066315d329af",
    "eski": "Woman Reading",
-   "eskiGorsel": "06f1bebb8080e091"
+   "eskiGorsel": "06f1bebb8080e091",
+   "boyut": [
+    3419,
+    2553
+   ],
+   "oran": 1.34
   },
   {
    "id": "edgar-degas",
@@ -1680,7 +2332,12 @@
    "qid": "Q18758802",
    "gorsel": "ec8fa8c8c29d8f14",
    "eski": "Fin d'arabesque",
-   "eskiGorsel": "5a1efc02dd3fee97"
+   "eskiGorsel": "5a1efc02dd3fee97",
+   "boyut": [
+    3710,
+    4000
+   ],
+   "oran": 0.93
   },
   {
    "id": "mary-cassatt",
@@ -1694,7 +2351,12 @@
    "qid": "Q14915747",
    "gorsel": "da16a42ecfe06896",
    "eski": "After the Bullfight",
-   "eskiGorsel": "ab0b992be0d90872"
+   "eskiGorsel": "ab0b992be0d90872",
+   "boyut": [
+    3295,
+    4096
+   ],
+   "oran": 0.81
   },
   {
    "id": "berthe-morisot",
@@ -1708,7 +2370,12 @@
    "qid": "Q19973935",
    "gorsel": "0786be47755cf5e4",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3328,
+    4096
+   ],
+   "oran": 0.81
   },
   {
    "id": "claude-monet",
@@ -1722,7 +2389,12 @@
    "qid": "Q49985736",
    "gorsel": "87ac93601dd4b51b",
    "eski": "Gezinti",
-   "eskiGorsel": "6b2c56827b7af573"
+   "eskiGorsel": "6b2c56827b7af573",
+   "boyut": [
+    3606,
+    2637
+   ],
+   "oran": 1.37
   },
   {
    "id": "pierre-auguste-renoir",
@@ -1736,7 +2408,12 @@
    "qid": "Q1114571",
    "gorsel": "ef69fa55d32b8c53",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2604,
+    4096
+   ],
+   "oran": 0.64
   },
   {
    "id": "camille-pissarro",
@@ -1750,7 +2427,12 @@
    "qid": "Q4949655",
    "gorsel": "c588e1df5d9253e6",
    "eski": "Felix Pissarro Wearing a Red Beret",
-   "eskiGorsel": "e56482cc618a142b"
+   "eskiGorsel": "e56482cc618a142b",
+   "boyut": [
+    3840,
+    3034
+   ],
+   "oran": 1.27
   },
   {
    "id": "alfred-sisley",
@@ -1764,7 +2446,12 @@
    "qid": null,
    "gorsel": "f08b0bdcd00dc972",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    4096,
+    3046
+   ],
+   "oran": 1.35
   },
   {
    "id": "utagawa-hiroshige",
@@ -1778,7 +2465,12 @@
    "qid": "Q5826309",
    "gorsel": "4016e12af98da014",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2703,
+    4096
+   ],
+   "oran": 0.66
   },
   {
    "id": "katsushika-hokusai",
@@ -1792,7 +2484,12 @@
    "qid": "Q252485",
    "gorsel": "7de1ea60cd498981",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    4096,
+    2807
+   ],
+   "oran": 1.46
   },
   {
    "id": "paul-cezanne",
@@ -1806,7 +2503,15 @@
    "qid": "Q17277950",
    "gorsel": "0cc75df9a7033aab",
    "eski": "Mardi Gras",
-   "eskiGorsel": "05e193af060a08d8"
+   "eskiGorsel": "05e193af060a08d8",
+   "boyut": [
+    1683,
+    1385
+   ],
+   "oran": 1.22,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Courtauld Institute of Art"
   },
   {
    "id": "georges-seurat",
@@ -1820,7 +2525,12 @@
    "qid": "Q2275610",
    "gorsel": "6bcf504dffe8e1db",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3305,
+    4096
+   ],
+   "oran": 0.81
   },
   {
    "id": "paul-signac",
@@ -1834,7 +2544,12 @@
    "qid": "Q17491488",
    "gorsel": "db3af19f083dd257",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2798,
+    4096
+   ],
+   "oran": 0.68
   },
   {
    "id": "vincent-van-gogh",
@@ -1848,7 +2563,12 @@
    "qid": "Q674846",
    "gorsel": "2b52e29084e42706",
    "eski": "Corridor in the Asylum",
-   "eskiGorsel": "f2af513f455d1489"
+   "eskiGorsel": "f2af513f455d1489",
+   "boyut": [
+    4096,
+    3233
+   ],
+   "oran": 1.27
   },
   {
    "id": "henri-de-toulouse-lautrec",
@@ -1862,7 +2582,12 @@
    "qid": "Q3607521",
    "gorsel": "bc6ecd2416e26696",
    "eski": "Jane Avril Leaving the Moulin Rouge",
-   "eskiGorsel": "e47a894368e50728"
+   "eskiGorsel": "e47a894368e50728",
+   "boyut": [
+    4096,
+    3580
+   ],
+   "oran": 1.15
   },
   {
    "id": "paul-gauguin",
@@ -1876,7 +2601,12 @@
    "qid": "Q890678",
    "gorsel": "a71b0a727cd86d8f",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3840,
+    1413
+   ],
+   "oran": 2.72
   },
   {
    "id": "gustave-moreau",
@@ -1890,7 +2620,15 @@
    "qid": "Q70781244",
    "gorsel": "f1c9d98c0c261d50",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2011,
+    2400
+   ],
+   "oran": 0.84,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Musée d'Orsay"
   },
   {
    "id": "odilon-redon",
@@ -1904,7 +2642,12 @@
    "qid": "Q3793426",
    "gorsel": "8906e5e8686fc219",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2846,
+    3579
+   ],
+   "oran": 0.8
   },
   {
    "id": "pierre-puvis-de-chavannes",
@@ -1918,7 +2661,12 @@
    "qid": "Q20262400",
    "gorsel": "90b532e3be2fa2f5",
    "eski": "Mary Magdalene in the Desert",
-   "eskiGorsel": "3c14bc73ccac8644"
+   "eskiGorsel": "3c14bc73ccac8644",
+   "boyut": [
+    3000,
+    1308
+   ],
+   "oran": 2.3
   },
   {
    "id": "arnold-bocklin",
@@ -1932,7 +2680,12 @@
    "qid": "Q50117729",
    "gorsel": "dc0619994cf3b2e1",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    2806,
+    3822
+   ],
+   "oran": 0.73
   },
   {
    "id": "fernand-khnopff",
@@ -1946,7 +2699,12 @@
    "qid": "Q30880783",
    "gorsel": "1362cdcd1bc1d6e9",
    "eski": "Portrait of Marguerite Khnopff",
-   "eskiGorsel": "1ff8962aac474fff"
+   "eskiGorsel": "1ff8962aac474fff",
+   "boyut": [
+    3840,
+    1250
+   ],
+   "oran": 3.08
   },
   {
    "id": "gustav-klimt",
@@ -1960,7 +2718,12 @@
    "qid": "Q698487",
    "gorsel": "68ee7ed8ec1cc473",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3840,
+    3853
+   ],
+   "oran": 1
   },
   {
    "id": "edvard-munch",
@@ -1974,7 +2737,12 @@
    "qid": "Q471379",
    "gorsel": "409de8256c60fe8d",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3223,
+    4000
+   ],
+   "oran": 0.81
   },
   {
    "id": "ernst-ludwig-kirchner",
@@ -1988,7 +2756,15 @@
    "qid": "Q3476580",
    "gorsel": "c2095855fc4f509b",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    1948,
+    2638
+   ],
+   "oran": 0.74,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Neue Galerie"
   },
   {
    "id": "emil-nolde",
@@ -2003,7 +2779,12 @@
    "gorsel": null,
    "eski": "Self-portrait",
    "eskiGorsel": null,
-   "uzak": "https://uploads7.wikiart.org/images/emil-nolde/mask-still-life-iii-1911.jpg!HalfHD.jpg"
+   "uzak": "https://uploads7.wikiart.org/images/emil-nolde/mask-still-life-iii-1911.jpg!HalfHD.jpg",
+   "boyut": null,
+   "oran": null,
+   "indir": true,
+   "eserEn": null,
+   "muze": null
   },
   {
    "id": "wassily-kandinsky",
@@ -2017,7 +2798,12 @@
    "qid": "Q2990634",
    "gorsel": "f35e7e24663d3a27",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3840,
+    2551
+   ],
+   "oran": 1.51
   },
   {
    "id": "franz-marc",
@@ -2031,7 +2817,12 @@
    "qid": "Q2432407",
    "gorsel": "156e64ca42db8f19",
    "eski": null,
-   "eskiGorsel": null
+   "eskiGorsel": null,
+   "boyut": [
+    3840,
+    2819
+   ],
+   "oran": 1.37
   },
   {
    "id": "pablo-picasso",
@@ -2046,7 +2837,12 @@
    "gorsel": null,
    "eski": null,
    "eskiGorsel": null,
-   "uzak": "https://uploads1.wikiart.org/00139/images/pablo-picasso/guernica-by-pablo-picasso.jpg!HalfHD.jpg"
+   "uzak": "https://uploads1.wikiart.org/00139/images/pablo-picasso/guernica-by-pablo-picasso.jpg!HalfHD.jpg",
+   "boyut": null,
+   "oran": null,
+   "indir": true,
+   "eserEn": null,
+   "muze": "Museo Nacional Centro de Arte Reina Sofía"
   },
   {
    "id": "marcel-duchamp",
@@ -2061,7 +2857,12 @@
    "gorsel": null,
    "eski": null,
    "eskiGorsel": null,
-   "uzak": "https://uploads6.wikiart.org/00475/images/marcel-duchamp/nude-descending-a-staircase-no-2-marcel-duchamp-1912.jpg!HalfHD.jpg"
+   "uzak": "https://uploads6.wikiart.org/00475/images/marcel-duchamp/nude-descending-a-staircase-no-2-marcel-duchamp-1912.jpg!HalfHD.jpg",
+   "boyut": null,
+   "oran": null,
+   "indir": true,
+   "eserEn": null,
+   "muze": null
   },
   {
    "id": "hannah-hoch",
@@ -2076,7 +2877,12 @@
    "gorsel": null,
    "eski": null,
    "eskiGorsel": null,
-   "uzak": "https://uploads5.wikiart.org/images/hannah-hoch/cut-with-the-kitchen-knife-through-the-beer-belly-of-the-weimar-republic-1919.jpg"
+   "uzak": "https://uploads5.wikiart.org/images/hannah-hoch/cut-with-the-kitchen-knife-through-the-beer-belly-of-the-weimar-republic-1919.jpg",
+   "boyut": null,
+   "oran": null,
+   "indir": true,
+   "eserEn": null,
+   "muze": null
   },
   {
    "id": "jean-arp",
@@ -2119,7 +2925,12 @@
    "gorsel": null,
    "eski": null,
    "eskiGorsel": null,
-   "uzak": "https://uploads2.wikiart.org/00475/images/salvador-dali/w1siziisijm4njq3mcjdlfsiccisimnvbnzlcnqilcitcxvhbgl0esa5mcatcmvzaxplidiwmdb4mjawmfx1mdazzsjdxq.jpg!HalfHD.jpg"
+   "uzak": "https://uploads2.wikiart.org/00475/images/salvador-dali/w1siziisijm4njq3mcjdlfsiccisimnvbnzlcnqilcitcxvhbgl0esa5mcatcmvzaxplidiwmdb4mjawmfx1mdazzsjdxq.jpg!HalfHD.jpg",
+   "boyut": null,
+   "oran": null,
+   "indir": true,
+   "eserEn": null,
+   "muze": null
   },
   {
    "id": "max-ernst",
@@ -2134,7 +2945,12 @@
    "gorsel": null,
    "eski": null,
    "eskiGorsel": null,
-   "uzak": "https://uploads7.wikiart.org/images/max-ernst/the-elephant-celebes-1921.jpg!HalfHD.jpg"
+   "uzak": "https://uploads7.wikiart.org/images/max-ernst/the-elephant-celebes-1921.jpg!HalfHD.jpg",
+   "boyut": null,
+   "oran": null,
+   "indir": true,
+   "eserEn": null,
+   "muze": null
   },
   {
    "id": "rene-magritte",
@@ -2149,7 +2965,12 @@
    "gorsel": null,
    "eski": null,
    "eskiGorsel": null,
-   "uzak": "https://uploads2.wikiart.org/images/rene-magritte/gonconda-1953(1).jpg!HalfHD.jpg"
+   "uzak": "https://uploads2.wikiart.org/images/rene-magritte/gonconda-1953(1).jpg!HalfHD.jpg",
+   "boyut": null,
+   "oran": null,
+   "indir": true,
+   "eserEn": null,
+   "muze": null
   },
   {
    "id": "joan-miro",
@@ -2164,7 +2985,12 @@
    "gorsel": null,
    "eski": null,
    "eskiGorsel": null,
-   "uzak": "https://uploads4.wikiart.org/images/joan-miro/the-farm-1922.jpg!HalfHD.jpg"
+   "uzak": "https://uploads4.wikiart.org/images/joan-miro/the-farm-1922.jpg!HalfHD.jpg",
+   "boyut": null,
+   "oran": null,
+   "indir": true,
+   "eserEn": null,
+   "muze": null
   },
   {
    "id": "francis-bacon",
