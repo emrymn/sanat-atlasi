@@ -34,6 +34,7 @@
   .indir { margin-top:8px; padding:10px 12px; border-radius:10px; background:rgba(216,179,106,.1); font-size:13px; line-height:1.55; color:var(--ikincil); }
   .indir b { color:var(--altin); font-weight:600; }
   .indir a { color:var(--yazi); }
+  a.yur { display:inline-flex; align-items:center; min-height:40px; margin-top:8px; padding:0 14px; border-radius:20px; background:var(--altin); color:#121110; font-weight:600; font-size:14px; text-decoration:none; }
   .eski { display:flex; align-items:center; gap:8px; margin-top:8px; font-size:13px; color:var(--ikincil); }
   .eski img { width:36px; height:36px; border-radius:6px; opacity:.7; }
 </style>
@@ -47,12 +48,12 @@
 const ara = (r) => encodeURIComponent(`${r.ad.replace(/ \(.*\)/, '')} ${r.eserEn || r.eser}`);
 const ETIKET = { tut: 'Senin seçimin', yeni: 'Yeni öneri', oneri: 'Öneri (seçim yoktu)', cikar: 'Günün ressamı olmasın' };
 const kucuk = (h, uzak) => (h ? `../gorseller/k/${h}.jpg` : uzak || '');
-let veri = [], suz = 'hepsi';
+let veri = [], suz = 'hepsi', hazir = {};
 function ciz() {
   const liste = document.getElementById('liste');
   let akim = '', html = '';
   for (const r of veri) {
-    if (suz === 'indir' ? !r.indir : suz !== 'hepsi' && r.tur !== suz) continue;
+    if (suz === 'hazir' ? !hazir[r.id] : suz !== 'hepsi' && r.tur !== suz) continue;
     if (r.akim !== akim) { akim = r.akim; html += `<h2>${akim}</h2>`; }
     const src = kucuk(r.gorsel, r.uzak);
     html += `<div class="sat">${src ? `<img loading="lazy" src="${src}" alt="">` : '<div class="bos">—</div>'}
@@ -60,20 +61,22 @@ function ciz() {
       <div class="eser">${r.eser ? r.eser + (r.yil ? ` · ${r.yil}` : '') : 'Günün ressamı listesinden çıkar'}</div>
       <div class="rozetler">${r.puan ? `<span class="r ${r.puan}">${r.puan === 'uygun' ? 'Uygun' : 'Orta'}</span>` : ''}<span class="r ${r.tur}">${ETIKET[r.tur]}</span></div>
       ${r.not ? `<div class="not">${r.tur === 'yeni' ? 'Neden: ' : ''}${r.not}</div>` : ''}
+      ${hazir[r.id] ? `<a class="yur" href="yuruyus.html?s=${r.id}">Yürüyüşü aç · ${hazir[r.id].noktalar.length} ayrıntı →</a>` : ''}
       ${r.indir ? `<div class="indir"><b>İndir · dosya adı: ${r.id}.jpg</b><br>${r.boyut ? `Elimizdeki: ${r.boyut.join('×')} px` : 'Elimizde büyük kopyası yok'}${r.muze ? ` · ${r.muze}` : ''}<br><a href="https://commons.wikimedia.org/w/index.php?search=${ara(r)}&title=Special:MediaSearch&type=image" target="_blank">Commons'ta ara</a> · <a href="https://www.google.com/search?tbm=isch&tbs=isz:l&q=${ara(r)}" target="_blank">Google'da ara (büyük)</a></div>` : ''}
       ${r.eski ? `<div class="eski">${r.eskiGorsel ? `<img loading="lazy" src="${kucuk(r.eskiGorsel)}" alt="">` : ''}Şimdiki: ${r.eski}</div>` : ''}
       </div></div>`;
   }
   liste.innerHTML = html;
 }
-fetch('../tasarim-B/yuruyus_secim_taslak.json').then((x) => x.json()).then((d) => {
+Promise.all([fetch('../tasarim-B/yuruyus_secim_taslak.json').then((x) => x.json()), fetch('../data/yuruyus.json').then((x) => x.json()).catch(() => ({ eserler: {} }))]).then(([d, y]) => {
+  hazir = y.eserler;
   veri = d.sanatcilar;
   const say = (t) => veri.filter((r) => r.tur === t).length;
   document.getElementById('ozet').textContent =
     `${veri.length} sanatçı: ${say('tut')} senin seçimin kalıyor, ${say('yeni')} yeni öneri, ${say('oneri')} seçimi olmayana öneri, ${say('cikar')} çıkıyor. ` +
-    `${veri.filter((r) => r.puan === 'uygun').length} uygun, ${veri.filter((r) => r.puan === 'orta').length} orta.`;
+    `${veri.filter((r) => r.puan === 'uygun').length} uygun, ${veri.filter((r) => r.puan === 'orta').length} orta. Yürüyüşü hazır: ${Object.keys(hazir).length}.`;
   const sz = document.getElementById('suzgec');
-  sz.innerHTML = [['hepsi', 'Hepsi'], ['indir', `İndirilecekler (${veri.filter((r) => r.indir).length})`], ['yeni', 'Yeni öneriler'], ['oneri', 'Seçimi olmayanlar'], ['tut', 'Senin seçimlerin'], ['cikar', 'Çıkanlar']]
+  sz.innerHTML = [['hepsi', 'Hepsi'], ['hazir', `Yürüyüşü hazır (${Object.keys(hazir).length})`], ['yeni', 'Yeni öneriler'], ['oneri', 'Seçimi olmayanlar'], ['tut', 'Senin seçimlerin'], ['cikar', 'Çıkanlar']]
     .map(([k, a]) => `<button type="button" data-k="${k}" aria-pressed="${k === suz}">${a}</button>`).join('');
   sz.addEventListener('click', (ev) => {
     const b = ev.target.closest('button'); if (!b) return;

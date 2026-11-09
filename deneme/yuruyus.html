@@ -14,7 +14,7 @@
   html { background:var(--bg); scroll-snap-type:y mandatory; }
   body { background:var(--bg); color:var(--yazi); font-family:var(--sans); -webkit-font-smoothing:antialiased; }
   .sahne { position:fixed; inset:0; overflow:hidden; background:#0b0a09; }
-  .sahne img { position:absolute; left:0; top:0; width:3840px; height:2733px; max-width:none; transform-origin:0 0; }
+  .sahne img { position:absolute; left:0; top:0; max-width:none; transform-origin:0 0; }
   .karart { position:fixed; inset:0; pointer-events:none; transition:opacity .4s;
     background:linear-gradient(to bottom, rgba(18,17,16,.45) 0, transparent 16%, transparent 52%, rgba(18,17,16,.82) 78%, rgba(18,17,16,.96) 100%); }
   .ust { position:fixed; top:0; left:0; right:0; z-index:5; display:flex; justify-content:space-between; align-items:center;
@@ -63,115 +63,104 @@
 </style>
 </head>
 <body>
-<div class="sahne"><img id="resim" src="https://gorsel.noracloud.ai/b/216d1fc681535d27.jpg" alt="Pieter Bruegel, Karda Avcılar" decoding="async"></div>
+<div class="sahne"><img id="resim" alt="" decoding="async"></div>
 <div class="karart" id="karart"></div>
 <div class="bulanik" id="bulanik"></div>
-<div class="ust"><span>9 Kasım</span><span class="ben">Ben</span></div>
+<div class="ust"><span id="tarih"></span><span class="ben">Ben</span></div>
 <div class="noktalar" id="noktalar"></div>
-<main id="akis">
-  <section data-adim="kapak">
-    <div class="ad">Bruegel</div>
-    <div class="eser">Karda Avcılar · 1565</div>
-    <div class="uclu"><a href="#"><i>◉</i>İncele</a><a href="#"><i>☉</i>Bruegel</a></div>
-    <div class="ipucu" aria-label="Aşağı kaydır"><b>⌄</b></div>
-  </section>
-  <section data-adim="butun"><div class="kart"><h2>Karda Avcılar</h2><p>Pieter Bruegel (Yaşlı), 1565 · Kunsthistorisches Museum, Viyana. Bir yılın aylarını anlatan altı resimlik dizinin kış tablosu.</p></div></section>
-</main>
+<main id="akis"></main>
 <nav class="sekme"><span class="acik">Bugün</span><span>Yolculuk</span><span>Galeri</span><span>Başyapıt</span><span>Çalış<i class="sayi">8</i></span></nav>
 <script>
-const VERI = {"noktalar": [{"ad": "Yorgun avcılar", "x": 0.01, "y": 0.52, "w": 0.4, "h": 0.42, "metin": "Üç avcı ve köpekleri omuzları düşük, başları eğik döner; sırttaki tek tilki avın ne kadar kıt olduğunu söyler. Karda derin izler bırakırlar. Bakış onlarla birlikte tepeden aşağı, vadiye iner."}, {"ad": "Buzda kayanlar", "x": 0.65, "y": 0.5, "w": 0.3, "h": 0.2, "metin": "Donmuş göletlerde köylüler paten kayar, topaç çevirir, kızak çeker. Siyah küçük figürler buzun açık renginde tek tek sayılabilir. Soğuğa rağmen bir bayram havası var."}, {"ad": "Domuz yakma", "x": 0.01, "y": 0.5, "w": 0.18, "h": 0.18, "metin": "Hanın önünde kadınlar ateş yakmış, kesilmiş domuzun kıllarını alazlıyor. Aralık ayının takvim işidir; tablo bir ay dizisinin parçasıdır. Alevler kar beyazında tek sıcak renk."}, {"ad": "Uçan kuş", "x": 0.65, "y": 0.19, "w": 0.12, "h": 0.13, "metin": "Yeşil-gri gökte tek bir kuş kanat açmış süzülür. Küçücük bir siluet ama kompozisyonun boşluğunu tutar ve derinliği ölçer. Ağaçlardaki kargalar hareketsiz, bu kuş hareket hâlinde."}, {"ad": "Alp zirveleri", "x": 0.75, "y": 0.08, "w": 0.24, "h": 0.26, "metin": "Düz Flandre'da böyle sivri dağlar yoktur. Bruegel İtalya yolculuğunda gördüğü Alpleri hayali bir manzaraya katmıştır. Zirveler buz ve kaya, aşağıdaki köy sıcak ve küçük."}, {"ad": "Eğik tabela", "x": 0.0, "y": 0.16, "w": 0.14, "h": 0.28, "metin": "Hanın tabelası tek menteşede eğilmiş sallanır; üstünde geyik önünde diz çökmüş Aziz Eustachius vardır. Han adı \"Dit is inden Hert\": Geyikte. Bakımsızlık kış yoksulluğunu anlatır."}], "taninma": "Yüksekten, kuş bakışı görülen geniş manzaralar; kalın giysili, tıknaz, yüzleri pek seçilmeyen çok sayıda köylü figürü; toprak tonları ve kış sahnelerinde beyaz-yeşilimsi gökyüzü tipiktir. Bosch'tan canavarlar ve fantastik yaratıklar yerine gerçekçi köylülerle, oğlu Genç Pieter Brueghel'in kopyalarından ise daha incelikli işçilik ve daha dengeli kompozisyonla ayrılır.", "hayat": "Pieter Bruegel ya da Brueghel (1525 - 9 Eylül 1569), peyzaj çalışmaları ve köy betimlemeleriyle tanınan Hollandalı Rönesans ressamı, Hollanda ve Flaman Rönesans resminin en önemli sanatçısıdır. Aynı zamanda baskı tasarımcısıdır; manzaraları ve köylü sahnelerini konu alan tür resimleriyle ünlüdür. Büyük resimlerde her iki konunun da odak noktası haline getirilmesinde öncüydü. Hollanda Altın Çağı resmi üzerinde biçimlendirici etkisi vardı ve konu seçimlerinde de yenilikçiydi; dini konular, resmin doğal konusu olmaktan çıktığında büyüyen ilk nesil sanatçılardan biri oldu. Bunun yerine manzara resimleri aracılığıyla görsel dünyayı \"haritalandırmaya\" ve köylü yaşamın günlük sahnelerini tasvir etmeye odaklandı. İlginç bir şekilde, Bruegel Flaman sanatının diğer dayanağı olan portreleri yapmadı. Eğitiminden ve İtalya seyahatlerinden sonra 1555'te Anvers 'e yerleşmek için geri döndü ve burada esasen günün önde gelen yayıncısı için baskılar yapan üretken bir tasarımcı olarak çalıştı. Ancak on yılın sonlarına doğru ana ortamının resmini yapmaya başladı ve tüm ünlü resimleri erken ölümünden on yıldan biraz daha uzun bir süre önce, muhtemelen kırklı yaşlarının başlarında ve gücünün zirvesinde yaptı.", "kaynak": "Türkçe Vikipedi"};
-const akis = document.getElementById('akis');
-VERI.noktalar.forEach((n, i) => {
-  const s = document.createElement('section');
-  s.dataset.adim = 'nokta';
-  s.innerHTML = `<div class="kart"><h2></h2><p></p></div>`;
-  s.querySelector('h2').textContent = n.ad;
-  s.querySelector('p').textContent = n.metin;
-  akis.appendChild(s);
-});
-const son = document.createElement('section');
-son.dataset.adim = 'son';
-son.innerHTML = `<div class="kart"><h2>Nasıl tanırım?</h2><p></p><a class="bag" href="#">Bruegel'in bütün eserleri →</a></div>`;
-son.querySelector('p').textContent = VERI.taninma;
-akis.appendChild(son);
-// en altta hayatı: resim bulanıklaşıp kararır, yazı üstünde akar (siyah boşluk yok, aynı resmin içinde)
-const hayat = document.createElement('section');
-hayat.className = 'hayat';
-hayat.innerHTML = '<h2>Hayatı</h2>' + VERI.hayat.split(/\n+/).map(() => '<p></p>').join('') + `<small>Kaynak: ${VERI.kaynak}</small>`;
-VERI.hayat.split(/\n+/).forEach((t, k) => { hayat.querySelectorAll('p')[k].textContent = t; });
-akis.appendChild(hayat);
+// Deneme (Tasarım B): data/yuruyus.json'daki her eser için resmin içinde yürüyüş. Adres: yuruyus.html?s=<sanatçı kimliği>
+const kacis = (t) => String(t ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+const al = (u) => fetch(u).then((x) => (x.ok ? x.json() : null)).catch(() => null);
+(async () => {
+  const [Y, S, K, G, O, E, T, B] = await Promise.all(['../data/yuruyus.json', '../data/sanatcilar.json', '../data/kisa_adlar.json', '../data/gorsel_kaynagi.json',
+    '../data/gorsel_odak.json', '../data/gorsel_odak_elle.json', '../data/tanima_notlari.json', '../data/biyografiler.json'].map(al));
+  const id = new URLSearchParams(location.search).get('s') || 'pieter-bruegel-yasl';
+  const kayit = Y.eserler[id];
+  if (!kayit) { document.getElementById('akis').innerHTML = '<section><div class="kart gorunur" style="opacity:1;transform:none"><h2>Henüz hazır değil</h2><p>Bu sanatçının yürüyüşü yazılmadı.</p></div></section>'; return; }
+  const s = S.find((x) => x.id === id) || { ad: id };
+  const kisa = (K.adlar[id] && K.adlar[id].buyuk) || s.ad.replace(/\s*\(.*\)/, '').split(' ').pop();
+  const taninma = s.taninma || (T.notlar || {})[id] || '';
+  const bio = (B.sanatcilar || {})[id];
+  const adres = G.adres, h = kayit.gorsel;
+  const sur = (G.surumler || {})[h], bsur = (G.b_surumler || {})[h];
+  const kucukUrl = kayit.buyuk ? `${adres}/${kayit.buyuk.replace(/\.jpg$/, '-1280.jpg')}` : `${adres}/b/${h}${bsur ? '-' + bsur : ''}.jpg`;
+  const buyukUrl = kayit.buyuk ? `${adres}/${kayit.buyuk}` : `${adres}/d/${h}${sur ? '-' + sur : ''}.jpg`;
+  const odak = (E && E.odak[h]) || (O && O.odak[h]) || [50, 40];
+  document.getElementById('tarih').textContent = new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' });
+  document.title = `${kisa} · yürüyüş`;
 
-const IW = 3840, IH = 2733;
-const img = document.getElementById('resim');
-// büyük kopya arkadan gelir; gelince keskinleşir (aynı css boyutu)
-const buyuk = new Image();
-buyuk.decoding = 'async';
-buyuk.src = 'https://gorsel.noracloud.ai/d/216d1fc681535d27.jpg';
-buyuk.onload = () => { img.src = buyuk.src; };
+  const akis = document.getElementById('akis');
+  const eserYazi = [kayit.eser, kayit.yil].filter(Boolean).join(' · ');
+  akis.insertAdjacentHTML('beforeend', `<section data-adim="kapak"><div class="ad">${kacis(kisa)}</div><div class="eser">${kacis(eserYazi)}</div>
+    <div class="uclu"><a href="#"><i>◉</i>İncele</a><a href="#"><i>☉</i>${kacis(kisa)}</a></div><div class="ipucu" aria-label="Aşağı kaydır"><b>⌄</b></div></section>`);
+  akis.insertAdjacentHTML('beforeend', `<section><div class="kart"><h2>${kacis(kayit.eser)}</h2><p>${kacis([s.ad, kayit.yil, s.akim].filter(Boolean).join(' · '))}</p></div></section>`);
+  for (const n of kayit.noktalar) akis.insertAdjacentHTML('beforeend', `<section><div class="kart"><h2>${kacis(n.ad)}</h2><p>${kacis(n.metin)}</p></div></section>`);
+  if (taninma) akis.insertAdjacentHTML('beforeend', `<section><div class="kart"><h2>Nasıl tanırım?</h2><p>${kacis(taninma)}</p><a class="bag" href="#">Bütün eserleri →</a></div></section>`);
+  if (bio && bio.metin) akis.insertAdjacentHTML('beforeend', `<section class="hayat"><h2>Hayatı</h2>${bio.metin.split(/\n+/).map((t) => `<p>${kacis(t)}</p>`).join('')}<small>Kaynak: ${kacis((bio.kaynak || {}).ad || '')}</small></section>`);
 
-const bolumler = [...akis.children].filter((b) => !b.classList.contains('hayat'));
-const bulanik = document.getElementById('bulanik');
-const ust = document.querySelector('.ust');
-const noktalar = document.getElementById('noktalar');
-noktalar.innerHTML = bolumler.map(() => '<i></i>').join('');
+  const img = document.getElementById('resim');
+  img.alt = `${s.ad}, ${kayit.eser}`;
+  img.src = kucukUrl;
+  await img.decode().catch(() => {});
+  // mantıksal koordinat: uzun kenarı 4000 birim; hangi kopya yüklü olursa olsun css boyutu aynı
+  const oran = img.naturalWidth / img.naturalHeight;
+  const IW = oran >= 1 ? 4000 : 4000 * oran, IH = oran >= 1 ? 4000 / oran : 4000;
+  img.style.width = IW + 'px'; img.style.height = IH + 'px';
+  const buyuk = new Image(); buyuk.decoding = 'async'; buyuk.src = buyukUrl; buyuk.onload = () => { img.src = buyuk.src; };
+  const [kx, ky, kw, kh] = kayit.kirp || [0, 0, 1, 1];
 
-let W, H;
-// Kamera her adımda ekranı kaplar (siyah boşluk yok): ölçek en az "kaplama" ölçeği, kayma resmin içinde kalır.
-// Adım: resmin (cx, cy) noktası ekranda (W/2, vy)'ye gelir, ölçek s.
-function durumlar() {
-  W = innerWidth; H = innerHeight;
-  const ust = 64, alt = H * 0.44;            // ayrıntı kartın üstündeki alanda dursun
-  const alanY = ust + (H - alt - ust) / 2, alanH = H - alt - ust;
-  const kapla = Math.max(W / IW, H / IH);
-  const adim = (cx, cy, s, vy = H / 2) => ({ cx: cx * IW, cy: cy * IH, s: Math.max(kapla, s), vy });
-  const ns = VERI.noktalar.map((n) =>
-    // ayrıntıda en az 1,4 kat: kamera ayrıntıyı kartın üstündeki alana taşıyabilsin (kaplama ölçeğinde dikey oynayamaz)
-    adim(n.x + n.w / 2, n.y + n.h / 2, Math.max(kapla * 1.4, Math.min((W * 0.94) / (n.w * IW), (alanH * 0.94) / (n.h * IH), 1.1)), alanY));
-  return [
-    adim(0.33, 0.62, kapla),                 // açılış: avcılar
-    adim(0.62, 0.5, kapla),                  // eserin künyesi: kamera resmin ortasına kayar
-    ...ns,
-    adim(0.85, 0.45, kapla),                 // Nasıl tanırım: sağ uçtaki vadi
-  ];
-}
-let D = durumlar();
-const yumusak = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
-// Kamera kaydırmayı birebir izlemez: her karede hedefe yolun küçük bir parçası kadar yaklaşır (yavaş, yumuşak süzülme)
-let kamera = 0;
-const IZ = 0.035;   // küçüldükçe daha yavaş
-function ciz(p) {
-  const i = Math.min(D.length - 2, Math.floor(p));
-  const f = yumusak(p - i);
-  const a = D[i], b = D[i + 1];
-  const s = Math.exp(Math.log(a.s) + (Math.log(b.s) - Math.log(a.s)) * f);
-  const cx = a.cx + (b.cx - a.cx) * f, cy = a.cy + (b.cy - a.cy) * f, vy = a.vy + (b.vy - a.vy) * f;
-  // resim ekranın dışına taşmaz: kenar hiçbir zaman içeri girmez
-  const tx = Math.min(0, Math.max(W - IW * s, W / 2 - cx * s));
-  const ty = Math.min(0, Math.max(H - IH * s, vy - cy * s));
-  img.style.transform = `translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${s.toFixed(5)})`;
-}
-let sonSira = -1;
-function kare() {
-  const hedef = Math.max(0, Math.min(D.length - 1, scrollY / H));
-  const fark = hedef - kamera;
-  kamera = Math.abs(fark) < 0.0005 ? hedef : kamera + fark * IZ;
-  ciz(kamera);
-  // yazı kartı kamera o adıma varırken belirir
-  const sira = Math.round(kamera);
-  if (sira !== sonSira && Math.abs(kamera - sira) < 0.18) {
-    sonSira = sira;
-    bolumler.forEach((b, k) => b.classList.toggle('gorunur', k === sira));
-    [...noktalar.children].forEach((n, k) => n.classList.toggle('acik', k === sira));
+  const bolumler = [...akis.children].filter((b) => !b.classList.contains('hayat'));
+  const sonAdim = bolumler.length - 1;
+  const bulanik = document.getElementById('bulanik'), ust = document.querySelector('.ust'), noktalar = document.getElementById('noktalar');
+  noktalar.innerHTML = bolumler.map(() => '<i></i>').join('');
+  let W, H, D;
+  // Kamera her adımda ekranı kaplar (siyah boşluk yok): ölçek en az "kaplama", kayma resmin (kırpılmış) içinde kalır
+  function durumlar() {
+    W = innerWidth; H = innerHeight;
+    const ustP = 64, alt = H * 0.44, alanY = ustP + (H - alt - ustP) / 2, alanH = H - alt - ustP;
+    const kapla = Math.max(W / (kw * IW), H / (kh * IH));
+    const adim = (cx, cy, sc, vy = H / 2) => ({ cx: cx * IW, cy: cy * IH, s: Math.max(kapla, sc), vy });
+    const ns = kayit.noktalar.map((n) => adim(n.x + n.w / 2, n.y + n.h / 2, Math.max(kapla * 1.4, Math.min((W * 0.94) / (n.w * IW), (alanH * 0.94) / (n.h * IH), 1.1)), alanY));
+    const ilk = adim(odak[0] / 100, odak[1] / 100, kapla);
+    const d = [ilk, adim(0.5, 0.5, kapla), ...ns];
+    while (d.length < bolumler.length) d.push(adim(1 - odak[0] / 100, 0.5, kapla));
+    return d;
   }
-  // son adımdan sonrası (Hayatı): kamera son adımda kalır, perde iner
-  const asma = Math.max(0, Math.min(1, (scrollY - (D.length - 1) * H) / (H * 0.6)));
-  bulanik.style.opacity = asma.toFixed(3);
-  ust.style.setProperty('--perde', asma.toFixed(3));
-  noktalar.style.opacity = kamera < 0.5 || asma > 0.3 ? 0 : 1;
+  D = durumlar();
+  const yumusak = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+  let kamera = 0, sonSira = -1;
+  const IZ = 0.035;
+  function ciz(p) {
+    const i = Math.min(D.length - 2, Math.floor(p)), f = yumusak(p - i), a = D[i], b = D[i + 1];
+    const sc = Math.exp(Math.log(a.s) + (Math.log(b.s) - Math.log(a.s)) * f);
+    const cx = a.cx + (b.cx - a.cx) * f, cy = a.cy + (b.cy - a.cy) * f, vy = a.vy + (b.vy - a.vy) * f;
+    const tx = Math.min(-kx * IW * sc, Math.max(W - (kx + kw) * IW * sc, W / 2 - cx * sc));
+    const ty = Math.min(-ky * IH * sc, Math.max(H - (ky + kh) * IH * sc, vy - cy * sc));
+    img.style.transform = `translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${sc.toFixed(5)})`;
+  }
+  function kare() {
+    const hedef = Math.max(0, Math.min(sonAdim, scrollY / H));
+    const fark = hedef - kamera;
+    kamera = Math.abs(fark) < 0.0005 ? hedef : kamera + fark * IZ;
+    ciz(kamera);
+    const sira = Math.round(kamera);
+    if (sira !== sonSira && Math.abs(kamera - sira) < 0.18) {
+      sonSira = sira;
+      bolumler.forEach((b, k) => b.classList.toggle('gorunur', k === sira));
+      [...noktalar.children].forEach((n, k) => n.classList.toggle('acik', k === sira));
+    }
+    const asma = Math.max(0, Math.min(1, (scrollY - sonAdim * H) / (H * 0.6)));
+    bulanik.style.opacity = asma.toFixed(3);
+    ust.style.setProperty('--perde', asma.toFixed(3));
+    noktalar.style.opacity = kamera < 0.5 || asma > 0.3 ? 0 : 1;
+    requestAnimationFrame(kare);
+  }
+  addEventListener('resize', () => { D = durumlar(); });
   requestAnimationFrame(kare);
-}
-addEventListener('resize', () => { D = durumlar(); });
-requestAnimationFrame(kare);
+})();
 </script>
 </body>
 </html>
