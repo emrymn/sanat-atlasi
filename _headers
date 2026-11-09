@@ -1,0 +1,4 @@
+# İş 167: Cloudflare Pages HTML'deki <link rel="preconnect"> etiketlerinden kendiliğinden Link başlığı ve 103 Early Hints
+# üretiyor; iPhone'da service worker ile birlikte sorun çıkarmasın diye kapalı.
+/*
+  ! Link

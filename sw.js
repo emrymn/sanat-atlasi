@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.73.4';
+const SURUM = '1.73.5';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -151,11 +151,23 @@ const taze = (u) => new Request(`${u}${u.includes('?') ? '&' : '?'}v=${SURUM}`, 
 // İş 162: Cloudflare Pages index.html'i köke yönlendirir (308); fetch yönlendirmeyi izler ama yanıt "redirected"
 // işaretli kalır. Böyle bir yanıt sayfa açılışında verilirse Safari açmıyor ("Response served by service worker has
 // redirections"). Yönlendirilmiş yanıt temiz bir kopya olarak saklanır.
-const yonlendirmesiz = async (y) => (y.redirected ? new Response(await y.blob(), { status: y.status, statusText: y.statusText, headers: y.headers }) : y);
+const yonlendirmesiz = async (y) => (y.redirected ? temiz(y) : y);
+// İş 167: Cloudflare Pages yanıtları Brotli (content-encoding: br) ve Link/Early Hints başlıklarıyla gelir. Önbelleğe
+// başlıklarıyla yazılan yanıtın gövdesi açılmış hâldedir; iPhone (WebKit) böyle bir kopyayı sayfaya verirken takılıyordu
+// (açılışta siyah ekran, "server stopped responding"; GitHub Pages gzip'liydi, sorun yoktu). Önbelleğe ve sayfaya giden
+// aynı kökenli yanıtlar yalnız içerik türü ve doğrulama başlıklarıyla, yönlendirmesiz yeni bir yanıt olarak verilir.
+const SAKLANAN_BASLIKLAR = ['content-type', 'etag', 'last-modified'];
+async function temiz(y) {
+  if (y.type === 'opaque' || y.type === 'opaqueredirect') return y;
+  const h = new Headers();
+  for (const b of SAKLANAN_BASLIKLAR) if (y.headers.has(b)) h.set(b, y.headers.get(b));
+  return new Response(await y.blob(), { status: y.status, statusText: y.statusText, headers: h });
+}
+const temizMi = (y) => !y.redirected && !y.headers.has('content-encoding') && !y.headers.has('content-length') && !y.headers.has('link');
 async function kabugaKoy(c, u) {
   const y = await fetch(taze(u));
   if (!y.ok) throw new Error(`${u}: ${y.status}`);
-  await c.put(new Request(u), await yonlendirmesiz(y));
+  await c.put(new Request(u), await temiz(y));
 }
 
 self.addEventListener('install', (e) => {
@@ -262,13 +274,13 @@ async function kabuk(istek) {
     if (yol !== kok && yol !== `${kok}index.html`) return fetch(istek).catch(() => c.match(indexUrl));
     // İş 162: önce kökün kopyası (yönlendirmesiz), sonra index.html; önbellekteki eski bir kopya yönlendirilmişse temizlenir
     const k = (await c.match(self.registration.scope)) || (await c.match(indexUrl));
-    if (k) return yonlendirmesiz(k);
+    if (k) return temiz(k);
     return fetch(istek);
   }
   const k = await c.match(istek, { ignoreSearch: true });
-  if (k) return k;
+  if (k) return temizMi(k) ? k : temiz(k);
   const y = await fetch(istek);
-  if (y.ok && new URL(istek.url).pathname.match(/\.(js|css|json|png|webmanifest)$/)) c.put(istek, y.clone()).catch(() => {});
+  if (y.ok && new URL(istek.url).pathname.match(/\.(js|css|json|png|webmanifest)$/)) temiz(y.clone()).then((t) => c.put(istek, t)).catch(() => {});
   return y;
 }
 
@@ -287,7 +299,7 @@ async function onceAg(e, ad, sure = 0) {
   const istek = e.request;
   const c = await caches.open(ad);
   const ag = fetch(istek).then((y) => {
-    if (y.ok) c.put(istek.url, y.clone()).catch(() => {});
+    if (y.ok) temiz(y.clone()).then((t) => c.put(istek.url, t)).catch(() => {});
     return y;
   });
   const eski = sure ? await c.match(istek.url).catch(() => undefined) : undefined;
@@ -298,7 +310,7 @@ async function onceAg(e, ad, sure = 0) {
       /* olay bitmiş */
     }
     const y = await Promise.race([ag.catch(() => null), new Promise((coz) => setTimeout(() => coz(null), sure))]);
-    return y && y.ok ? y : eski;
+    return y && y.ok ? y : temizMi(eski) ? eski : temiz(eski);
   }
   try {
     const y = await ag;
@@ -306,7 +318,7 @@ async function onceAg(e, ad, sure = 0) {
     return (await c.match(istek.url)) || y;
   } catch (err) {
     const k = await c.match(istek.url);
-    if (k) return k;
+    if (k) return temizMi(k) ? k : temiz(k);
     throw err;
   }
 }
