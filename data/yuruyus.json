@@ -1020,6 +1020,62 @@
     }
    ]
   },
+  "jan-van-eyck": {
+   "eser": "Arnolfini Portrait",
+   "yil": 1434,
+   "qid": "Q220859",
+   "gorsel": "84d3c15e96896efe",
+   "noktalar": [
+    {
+     "ad": "Ayna ve imza",
+     "x": 0.4,
+     "y": 0.19,
+     "w": 0.2,
+     "h": 0.18,
+     "metin": "Dışbükey aynada çiftin sırtı ve kapıda iki konuk görünür: biri van Eyck'in kendisi olabilir. Aynanın çerçevesindeki on madalyonda İsa'nın Çilesi'nden sahneler var. Üstteki yazı \"Johannes de Eyck fuit hic 1434\": \"Jan van Eyck buradaydı.\""
+    },
+    {
+     "ad": "Tek mum",
+     "x": 0.37,
+     "y": 0.04,
+     "w": 0.28,
+     "h": 0.15,
+     "metin": "Pirinç avizede gündüz vakti tek bir mum yanıyor. Tanrı'nın her şeyi gören gözü ya da evlilik mumu olarak yorumlanır. Metalin parlaklığı yağlıboyanın ince katmanlarıyla verilmiş."
+    },
+    {
+     "ad": "Birleşen eller",
+     "x": 0.47,
+     "y": 0.37,
+     "w": 0.17,
+     "h": 0.09,
+     "metin": "Erkek kadının elini avucuna almış; sağ elini yemin eder gibi kaldırmış. Tablonun uzun süre bir nikâh belgesi gibi okunmasının nedeni bu jesttir. Kadının elindeki kırışık cilt ve damarlar bile görünür."
+    },
+    {
+     "ad": "Köpek",
+     "x": 0.36,
+     "y": 0.83,
+     "w": 0.24,
+     "h": 0.15,
+     "metin": "Küçük tüylü köpek sadakatin geleneksel simgesidir. Her tüyü tek tek, ince fırçayla çizilmiş; van Eyck'in dokuya düşkünlüğünün en açık yeri. Çiftten farklı olarak doğrudan izleyiciye bakar."
+    },
+    {
+     "ad": "Takunyalar",
+     "x": 0.0,
+     "y": 0.85,
+     "w": 0.17,
+     "h": 0.13,
+     "metin": "Sol altta çıkarılmış ahşap takunyalar duruyor. Ayakkabı çıkarmak kutsal bir yerde olmanın işareti sayılır; evlilik odasını tapınağa çevirir. Tahtanın damarı ve çamur izleri bile boyanmış."
+    },
+    {
+     "ad": "Pencere ve portakallar",
+     "x": 0.03,
+     "y": 0.44,
+     "w": 0.14,
+     "h": 0.14,
+     "metin": "Pencere pervazında ve sandığın üstünde portakallar var. Kuzeyde pahalı bir meyveydi; zenginlik ve belki cennet masumiyetini anlatır. Pencereden giren ışık odadaki her yüzeyi farklı kırar."
+    }
+   ]
+  },
   "petrus-christus": {
    "eser": "A Goldsmith in His Shop",
    "yil": 1449,
@@ -1288,6 +1344,62 @@
     }
    ]
   },
+  "hans-holbein-genc": {
+   "eser": "Elçiler",
+   "yil": 1533,
+   "qid": "Q1212937",
+   "gorsel": "b9506673eab3e118",
+   "noktalar": [
+    {
+     "ad": "Anamorfik kurukafa",
+     "x": 0.24,
+     "y": 0.74,
+     "w": 0.52,
+     "h": 0.2,
+     "metin": "Zemindeki uzun lekeye tablonun sağ alt kenarından, çok eğik bakınca bir kurukafa görünür. Buna anamorfoz denir. Bütün zenginliğin ortasına yerleştirilmiş bir ölüm hatırlatıcısıdır."
+    },
+    {
+     "ad": "Lavta ve kopuk tel",
+     "x": 0.5,
+     "y": 0.54,
+     "w": 0.26,
+     "h": 0.16,
+     "metin": "Lavtanın tellerinden biri kopmuş; uyumun bozulduğunu anlatır. Yanındaki açık kitap Luther'in ilahi kitabıdır. Katolik Fransa ile Protestan Avrupa arasındaki din bölünmesine ince bir gönderme."
+    },
+    {
+     "ad": "Yer küresi ve aritmetik kitabı",
+     "x": 0.4,
+     "y": 0.53,
+     "w": 0.14,
+     "h": 0.17,
+     "metin": "Alt rafta yer küresi Avrupa'yı ve Dinteville'in şatosu Polisy'yi gösterir. Yanında bir tüccar aritmetiği kitabı ve cetvel durur. Dünyevi bilgiler alt rafa, gökle ilgili olanlar üst rafa konmuş."
+    },
+    {
+     "ad": "Üst raf: gök aletleri",
+     "x": 0.39,
+     "y": 0.15,
+     "w": 0.36,
+     "h": 0.2,
+     "metin": "Gök küresi, güneş saatleri, kuadrant ve torquetum: 1533'te bilimin en ileri aletleri. Güneş saatlerinden tarih ve saat okunmaya çalışılmıştır. Hepsi çok dikkatli, neredeyse teknik çizim gibi boyanmış."
+    },
+    {
+     "ad": "Perdenin ardındaki çarmıh",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.09,
+     "h": 0.16,
+     "metin": "Sol üst köşede, yeşil perdenin kenarından gümüş bir çarmıh görünür. Neredeyse saklanmıştır. Ölümün (kurukafa) karşısında kurtuluşun sessiz işareti olarak okunur."
+    },
+    {
+     "ad": "Hançer ve yaş",
+     "x": 0.1,
+     "y": 0.48,
+     "w": 0.19,
+     "h": 0.11,
+     "metin": "Jean de Dinteville'in hançerinin kınında \"AET SVAE 29\" yazar: 29 yaşında. Sağdaki Georges de Selve'in dirseğinin altındaki kitapta da 25 yaşı yazılıdır. Holbein kimliği böyle gizli yazılarla verir."
+    }
+   ]
+  },
   "hieronymus-bosch": {
    "eser": "Death and the Miser",
    "yil": 1480,
@@ -1485,6 +1597,230 @@
      "w": 0.37,
      "h": 0.08,
      "metin": "Altta Latince adı yazılı levhayı küçük bir çocuk taşıyor. Tavan 1508–12 arasında, Papa II. Julius için, Michelangelo'nun neredeyse tek başına boyadığı bir iş."
+    }
+   ]
+  },
+  "raphael": {
+   "eser": "The School of Athens (Atina Okulu)",
+   "yil": 1512,
+   "qid": "Q186953",
+   "gorsel": "3e754c9aae3c41f3",
+   "noktalar": [
+    {
+     "ad": "Platon ve Aristoteles",
+     "x": 0.37,
+     "y": 0.54,
+     "w": 0.14,
+     "h": 0.26,
+     "metin": "Kaçış noktasının tam üstünde iki filozof: Platon göğü, Aristoteles yeri işaret eder. Platon'un elinde Timaios, Aristoteles'in elinde Etik vardır. Platon'un yüzü Leonardo'ya benzetilir."
+    },
+    {
+     "ad": "Düşünen Herakleitos",
+     "x": 0.29,
+     "y": 0.77,
+     "w": 0.13,
+     "h": 0.21,
+     "metin": "Mermer bloğa yaslanmış, çizmeli, tek başına yazan figür Herakleitos'tur. Sonradan, sıva ıslakken eklenmiştir. Yüzü ve kaslı duruşu Michelangelo'ya gönderme sayılır; Sistina tavanı o sırada yeni açılmıştı."
+    },
+    {
+     "ad": "Merdivende Diogenes",
+     "x": 0.48,
+     "y": 0.77,
+     "w": 0.16,
+     "h": 0.16,
+     "metin": "Basamaklara yayılmış, yarı çıplak, elinde kâseyle uzanan kinik Diogenes. Herkesin ortasında ama kimseyle ilgilenmez. Kalabalık kompozisyonda boşluk açan tek figürdür."
+    },
+    {
+     "ad": "Pergelle Eukleides",
+     "x": 0.67,
+     "y": 0.78,
+     "w": 0.23,
+     "h": 0.21,
+     "metin": "Sağ altta pergelle yere eğilen geometrici Eukleides (ya da Arşimet) öğrencilere şekil çizer. Yüzü mimar Bramante'nin portresidir. Yakasındaki yazı Raffaello'nun imzası olarak okunur: RVSM."
+    },
+    {
+     "ad": "Raffaello'nun kendisi",
+     "x": 0.86,
+     "y": 0.63,
+     "w": 0.13,
+     "h": 0.18,
+     "metin": "Sağ kenarda, siyah bereli genç izleyiciye bakar: Raffaello'nun otoportresi. Yanında ressam Sodoma durur. Sanatçı kendini filozofların arasına, ama kenara koymuştur."
+    },
+    {
+     "ad": "Yazan Pythagoras",
+     "x": 0.11,
+     "y": 0.76,
+     "w": 0.2,
+     "h": 0.22,
+     "metin": "Sol altta kitaba yazan Pythagoras; önündeki levhada müzik oranlarının şeması tutulur. Çevresindekiler yazdıklarını kopyalar. Sağdaki Eukleides grubuyla simetrik bir karşılık oluşturur."
+    }
+   ]
+  },
+  "donato-bramante": {
+   "eser": "Christ at the Column",
+   "yil": 1487,
+   "qid": "Q3697588",
+   "gorsel": "4b1c880548f2048a",
+   "noktalar": [
+    {
+     "ad": "Boyundaki ip",
+     "x": 0.39,
+     "y": 0.29,
+     "w": 0.43,
+     "h": 0.13,
+     "metin": "Boyna dolanmış kalın ip göğsün üstünde düğümlenmiş; burguları neredeyse dokunulabilir gerçeklikte. İp ve dikenli taç İsa'nın çilesini ve aşağılanmasını hatırlatır. Sahne Kırbaçlanma'dan koparılıp tek figüre indirgenmiştir."
+    },
+    {
+     "ad": "Dikenli taç ve bakış",
+     "x": 0.32,
+     "y": 0.02,
+     "w": 0.27,
+     "h": 0.27,
+     "metin": "Dikenli taçlı baş hafifçe kalkmış, ağız aralık, bakış yukarıda. Yüzün yarısı gölgede kalır. Yüz ifadesinde Leonardo etkisi olup olmadığı tartışılır; ikisi aynı yıllarda Milano'daydı."
+    },
+    {
+     "ad": "Pencere ve kap",
+     "x": 0.0,
+     "y": 0.02,
+     "w": 0.27,
+     "h": 0.35,
+     "metin": "Sol üstteki pencerede su kıyısı, yapılar ve mavileşerek uzaklaşan sivri dağlar var: hava perspektifi. Pervazdaki altın kap çoğunlukla Efkaristiya (Komünyon ayini) kâsesi olarak yorumlanır. Geniş dış dünya acının yaşandığı iç mekânın karşısına konmuş."
+    },
+    {
+     "ad": "Pilaster",
+     "x": 0.6,
+     "y": 0.0,
+     "w": 0.18,
+     "h": 0.2,
+     "metin": "Başın arkasında altın renkli klasik bitki süslemeli bir pilaster (duvardan hafifçe çıkıntı yapan yassı sütun) var. Bramante'yi daha çok mimar olarak tanırız: Tempietto ve Aziz Petrus tasarımı. Klasik süsleme onun mimari ilgisini gösterir."
+    },
+    {
+     "ad": "Bağlı kol",
+     "x": 0.82,
+     "y": 0.52,
+     "w": 0.16,
+     "h": 0.1,
+     "metin": "Sağ kolun üstüne bir ip dolanmış; eller arkada, görünmeyen bir sütuna bağlıdır. Sütun hiç gösterilmez, yalnızca bu iple sezdirilir. İzleyici figüre neredeyse dokunacak kadar yakındır."
+    },
+    {
+     "ad": "Heykelsi göğüs",
+     "x": 0.28,
+     "y": 0.47,
+     "w": 0.4,
+     "h": 0.17,
+     "metin": "Soldan gelen ışık göğüs ve karın kaslarını keskin, heykelsi biçimde modelliyor. Gövde resmin neredeyse tamamını kaplar ve kenarlardan kesilir; bir kabartma gibi öne çıkar. Yüzeydeki ince çatlaklar boyanın yaşını ele verir."
+    }
+   ]
+  },
+  "correggio": {
+   "eser": "Jupiter and Io",
+   "yil": 1530,
+   "qid": "Q700834",
+   "gorsel": "cf1f989968ae2fc8",
+   "noktalar": [
+    {
+     "ad": "Buluttaki yüz",
+     "x": 0.48,
+     "y": 0.25,
+     "w": 0.2,
+     "h": 0.14,
+     "metin": "Io'nun dudaklarının hemen üstünde, bulutun içinde belli belirsiz bir yüz seçilir: Jüpiter onu öpüyor. Tanrı görünmez değil, maddesiz ama dokunan bir varlıktır. Io'nun kendinden geçmiş yüzü ilahi aşkı hem tensel hem ruhani gösterir."
+    },
+    {
+     "ad": "Belini saran el",
+     "x": 0.3,
+     "y": 0.44,
+     "w": 0.3,
+     "h": 0.13,
+     "metin": "Io'nun beli ile kalçası arasında bulut dumanlı bir el gibi tene dokunuyor. Correggio, Leonardo'dan gelen sfumato (yumuşak, dumanlı geçiş) ile bulutu ve teni birbirine karıştırır. Sınır nerede bitiyor, seçmek zordur."
+    },
+    {
+     "ad": "Kara bulut",
+     "x": 0.6,
+     "y": 0.04,
+     "w": 0.36,
+     "h": 0.18,
+     "metin": "Üstte koyulaşan bulut Jüpiter'in kılığıdır. Ovidius'un Dönüşümler'ine göre tanrı, karısı Juno'dan gizlenmek için kara bir buluta bürünerek Io'ya yaklaşır."
+    },
+    {
+     "ad": "Buluta tutunan el",
+     "x": 0.85,
+     "y": 0.4,
+     "w": 0.13,
+     "h": 0.08,
+     "metin": "Io'nun sağ eli bulutu kavramaya çalışır gibi açılmış. Gövdesi sol alttaki ayaktan yukarıdaki yüze uzanan bir kavis çizer. Bu yükselen hareket bakışı buluşma noktasına taşır."
+    },
+    {
+     "ad": "Örtü ve kürk",
+     "x": 0.62,
+     "y": 0.5,
+     "w": 0.3,
+     "h": 0.1,
+     "metin": "Io beyaz bir örtü ve kürkle kaplı bir kayaya yaslanmış. Kürkün sert dokusu, ipeksi örtü ve parlak ten yan yana konarak tenin sıcaklığı öne çıkarılır. Duyusallık Rokoko'yu önceden haber verir."
+    },
+    {
+     "ad": "Toprak testi",
+     "x": 0.79,
+     "y": 0.67,
+     "w": 0.21,
+     "h": 0.14,
+     "metin": "Sağ altta ışık parıltılarıyla büyük bir toprak testi duruyor. Genellikle Io'nun babası, ırmak tanrısı Inakhos'a gönderme olarak okunur. Eser Federico II Gonzaga için yapılan \"Jüpiter'in Aşkları\" dizisinin parçasıdır."
+    }
+   ]
+  },
+  "marcantonio-raimondi": {
+   "eser": "The Judgment of Paris (baskı)",
+   "yil": 1510,
+   "qid": "Q18579333",
+   "gorsel": "9fe74bd524f1be98",
+   "noktalar": [
+    {
+     "ad": "Nehir tanrıları üçlüsü",
+     "x": 0.6,
+     "y": 0.58,
+     "w": 0.38,
+     "h": 0.28,
+     "metin": "Sağ altta iki nehir tanrısı ve bir su perisi uzanmış; peri başını eline dayayıp bize bakıyor. Manet bu üçlünün duruşunu \"Çimende Kahvaltı\"da (1863) neredeyse aynen kullandı. Baskı böylece modern resmin doğuşunda da iz bıraktı."
+    },
+    {
+     "ad": "Paris ve elma",
+     "x": 0.16,
+     "y": 0.37,
+     "w": 0.17,
+     "h": 0.3,
+     "metin": "Frigya başlıklı çoban Paris oturmuş, altın elmayı Venüs'e uzatıyor; arkasında asalı ve kanatlı başlıklı Merkür duruyor. Paris güç ve bilgelik yerine aşkı, Helena'yı seçer. Bu seçim Truva Savaşı'na yol açar."
+    },
+    {
+     "ad": "Venüs ve Cupid",
+     "x": 0.33,
+     "y": 0.38,
+     "w": 0.14,
+     "h": 0.42,
+     "metin": "Ortadaki tanrıçalardan Venüs'ün bacaklarına Cupid sarılmış. Yanındaki iki çıplak tanrıça Juno ile Minerva'dır; sırtı dönük olanın hangisi olduğu tartışmalıdır. Bedenler antik heykel gibi yuvarlak ve parlak görünür."
+    },
+    {
+     "ad": "Zafer'in çelengi",
+     "x": 0.38,
+     "y": 0.25,
+     "w": 0.23,
+     "h": 0.12,
+     "metin": "Gökte kanatlı Zafer, Venüs'e bir çelenk getiriyor. Çelenk kararın sonucunu önceden ilan eder. Göksel figürler çapraz bir hatla Venüs'ün başına iner."
+    },
+    {
+     "ad": "Burç çemberi",
+     "x": 0.39,
+     "y": 0.03,
+     "w": 0.21,
+     "h": 0.22,
+     "metin": "Üst ortada burç çemberinin içinde Güneş tanrısı arabasını sürüyor; çemberde küçük burç figürleri var. Sağda tahtındaki Jüpiter ile birlikte olayın evrensel olduğunu vurgular. Renk olmadan hacmi yalnız çizgilerin sıklığı kurar."
+    },
+    {
+     "ad": "Yazıt levhası",
+     "x": 0.01,
+     "y": 0.91,
+     "w": 0.12,
+     "h": 0.08,
+     "metin": "Sol alt köşedeki küçük levhada Latince bir yazıt var. Tasarımın Raffaello'ya ait olduğu bilinir; Raimondi onu gravüre çevirmiştir. Bu ortaklık baskıyı büyük ustaların buluşlarını Avrupa'ya yayan bir araca dönüştürdü."
     }
    ]
   }
