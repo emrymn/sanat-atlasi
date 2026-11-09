@@ -6523,6 +6523,55 @@
     }
    ]
   },
+  "gustave-moreau": {
+   "eser": "The Apparition",
+   "yil": 1876,
+   "qid": "Q70781244",
+   "gorsel": "f1c9d98c0c261d50",
+   "buyuk": "y/gustave-moreau.jpg",
+   "noktalar": [
+    {
+     "ad": "Havada asılı baş",
+     "x": 0.45,
+     "y": 0.33,
+     "w": 0.4,
+     "h": 0.3,
+     "metin": "Vaftizci Yahya'nın kanlı başı ışık saçan bir halenin içinde havada beliriyor. Bu bir hayal: yalnız Salome görüyor."
+    },
+    {
+     "ad": "Salome",
+     "x": 0.15,
+     "y": 0.45,
+     "w": 0.35,
+     "h": 0.55,
+     "metin": "Mücevherlerle süslü, neredeyse çıplak Salome dansın ortasında donmuş, kolunu başa doğru uzatmış. Moreau onu Sembolizm'in femme fatale'i, ölümcül kadın simgesi yaptı."
+    },
+    {
+     "ad": "Herodes ve Herodias",
+     "x": 0.0,
+     "y": 0.38,
+     "w": 0.3,
+     "h": 0.25,
+     "metin": "Solda karanlıkta oturan Herodes ve Herodias hiçbir şey görmüyor. Sahne bir hikâye değil, bir iç görü."
+    },
+    {
+     "ad": "Cellat",
+     "x": 0.75,
+     "y": 0.5,
+     "w": 0.25,
+     "h": 0.4,
+     "metin": "Sağda kılıcına dayanmış cellat duruyor; işini çoktan yapmış."
+    },
+    {
+     "ad": "Süslemeler",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 1.0,
+     "h": 0.35,
+     "metin": "Arkadaki saray duvarları ince çizgilerle, mücevher gibi işlenmiş desenlerle kaplı. Moreau bu süslemeleri boyanın üstüne kalemle çizdi; resim 1876 Salonu'nda büyük ilgi gördü."
+    }
+   ]
+  },
   "odilon-redon": {
    "eser": "The Cyclops",
    "yil": 1914,
@@ -6568,6 +6617,134 @@
      "w": 0.15,
      "h": 0.03,
      "metin": "Sağ alt köşede \"ODILON REDON\" imzası seçiliyor. Redon uzun yıllar yalnız siyah-beyaz çalışmış, renge ancak 1890'lardan sonra yönelmişti."
+    }
+   ]
+  },
+  "pierre-puvis-de-chavannes": {
+   "eser": "The Sacred Grove, Beloved of the Arts and the Muses",
+   "yil": 1886,
+   "qid": "Q20262400",
+   "gorsel": "90b532e3be2fa2f5",
+   "noktalar": [
+    {
+     "ad": "Esinperileri",
+     "x": 0.45,
+     "y": 0.3,
+     "w": 0.4,
+     "h": 0.45,
+     "metin": "Ortada antik giysili kadınlar çayırda oturuyor, sohbet ediyor: sanatların koruyucusu Musalar."
+    },
+    {
+     "ad": "Uçan figürler",
+     "x": 0.18,
+     "y": 0.05,
+     "w": 0.25,
+     "h": 0.2,
+     "metin": "Gökte iki figür uçarak geliyor. Resim Lyon Güzel Sanatlar Müzesi'nin merdiven duvarı için yapılmış büyük duvar resminin küçük bir kopyası."
+    },
+    {
+     "ad": "Antik tapınak",
+     "x": 0.55,
+     "y": 0.1,
+     "w": 0.15,
+     "h": 0.3,
+     "metin": "Arkada sütunlu küçük bir tapınak var. Puvis antik dünyayı tarih olarak değil, zamansız bir sükûnet olarak boyadı."
+    },
+    {
+     "ad": "Göl",
+     "x": 0.0,
+     "y": 0.3,
+     "w": 0.8,
+     "h": 0.15,
+     "metin": "Arkada düz, sakin bir göl. Soluk, mat renkler fresk gibi bir etki yaratıyor; Puvis, Gauguin'den Picasso'ya pek çok genç ressamı etkiledi."
+    },
+    {
+     "ad": "Çocuk ve genç",
+     "x": 0.85,
+     "y": 0.55,
+     "w": 0.15,
+     "h": 0.4,
+     "metin": "Sağda çıplak bir genç kollarını kaldırmış, ağaçtan dal kopartıyor; yanında diz çökmüş bir çocuk. Sahne bir altın çağ hayali."
+    }
+   ]
+  },
+  "arnold-bocklin": {
+   "eser": "The Honeymoon",
+   "yil": 1878,
+   "qid": "Q50117729",
+   "gorsel": "dc0619994cf3b2e1",
+   "noktalar": [
+    {
+     "ad": "Kırmızı giysili kadın",
+     "x": 0.2,
+     "y": 0.15,
+     "w": 0.2,
+     "h": 0.35,
+     "metin": "Kayalık bir yamaçta, ağaçların arasında kırmızı giysili bir kadın duruyor, eliyle bir gövdeye tutunuyor. Böcklin'in figürleri her zaman doğanın içinde, onun bir parçası gibidir."
+    },
+    {
+     "ad": "Ağaçlar",
+     "x": 0.35,
+     "y": 0.0,
+     "w": 0.4,
+     "h": 0.6,
+     "metin": "İnce, uzun ağaç gövdeleri gökyüzüne yükseliyor. Böcklin İtalya'da yaşadı; manzaraları Akdeniz ışığıyla ama rüya gibi bir sessizlikle doludur."
+    },
+    {
+     "ad": "Uzak manzara",
+     "x": 0.45,
+     "y": 0.4,
+     "w": 0.4,
+     "h": 0.25,
+     "metin": "Arkada vadide bir nehir ve uzakta bir köy görünüyor. Yakındaki karanlık kayalar ile uzaktaki aydınlık arasında bir geçiş."
+    },
+    {
+     "ad": "Kayalık",
+     "x": 0.0,
+     "y": 0.6,
+     "w": 1.0,
+     "h": 0.4,
+     "metin": "Altta iri kayalar ve gölgeler. İsviçreli Böcklin'in en ünlü eseri \"Ölüler Adası\"dır; bu resimde de aynı esrarlı sessizlik var."
+    }
+   ]
+  },
+  "fernand-khnopff": {
+   "eser": "The Sphinx, or, The Caresses",
+   "yil": 1896,
+   "qid": "Q30880783",
+   "gorsel": "1362cdcd1bc1d6e9",
+   "noktalar": [
+    {
+     "ad": "Sfenks",
+     "x": 0.25,
+     "y": 0.1,
+     "w": 0.75,
+     "h": 0.6,
+     "metin": "Kadın başlı, leopar bedenli sfenks genç bir adamın yanağına yüzünü dayamış. Khnopff'un \"Okşamalar\" (1896) adlı bu resmi Sembolizm'in en esrarlı imgelerinden."
+    },
+    {
+     "ad": "Genç adam",
+     "x": 0.1,
+     "y": 0.05,
+     "w": 0.25,
+     "h": 0.9,
+     "metin": "Genç adamın elinde kanatlı bir asa var; yüzü kadınınkine şaşırtıcı biçimde benziyor. İkisinin modeli de Khnopff'un kız kardeşi Marguerite olabilir."
+    },
+    {
+     "ad": "Leopar postu",
+     "x": 0.4,
+     "y": 0.35,
+     "w": 0.6,
+     "h": 0.35,
+     "metin": "Leopar bedeninin benekleri dikkatle boyanmış. Sfenks bilgelik ve tehlike, insan ve hayvan arasında bir varlık."
+    },
+    {
+     "ad": "Uzak manzara",
+     "x": 0.6,
+     "y": 0.0,
+     "w": 0.4,
+     "h": 0.35,
+     "metin": "Arkada solgun, ıssız bir manzara. Belçikalı Khnopff rüya, sessizlik ve yalnızlık temalarını işleyen Sembolist ressamların önde gelenlerindendi."
     }
    ]
   },
@@ -6776,6 +6953,94 @@
      "w": 0.2,
      "h": 0.32,
      "metin": "Sağ kenarda kırmızı, yeşil ve siyah çizgilerden oluşan ikinci bir sarmal kümesi var. Kandinsky renkleri ve biçimleri müzikteki sesler gibi düşünür; tablo için otuzdan fazla hazırlık çalışması yapmıştı."
+    }
+   ]
+  },
+  "franz-marc": {
+   "eser": "The fate of the animals",
+   "yil": 1913,
+   "qid": "Q2432407",
+   "gorsel": "156e64ca42db8f19",
+   "noktalar": [
+    {
+     "ad": "Mavi geyik",
+     "x": 0.4,
+     "y": 0.38,
+     "w": 0.3,
+     "h": 0.4,
+     "metin": "Ortada mavi renkli bir geyik başını geriye atmış, kırmızı ışınların arasında düşüyor. Marc hayvanları masumiyetin simgesi olarak görürdü."
+    },
+    {
+     "ad": "Kırmızı ışınlar",
+     "x": 0.2,
+     "y": 0.0,
+     "w": 0.8,
+     "h": 0.4,
+     "metin": "Kırmızı, keskin çizgiler ormanı yıkıyor gibi çapraz geçiyor. Resim 1913'te, Birinci Dünya Savaşı'ndan hemen önce yapıldı: kıyametin bir öngörüsü gibi."
+    },
+    {
+     "ad": "Kırmızı hayvanlar",
+     "x": 0.1,
+     "y": 0.6,
+     "w": 0.35,
+     "h": 0.35,
+     "metin": "Sol altta kırmızı tilkiler ya da domuzlar kaçışıyor. Hayvanların kaderi, adı gibi, yıkıma doğru."
+    },
+    {
+     "ad": "Yanmış sağ kısım",
+     "x": 0.7,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 1.0,
+     "metin": "Resmin sağ üçte biri koyu ve donuk: 1916'da bir depo yangınında hasar gördü. Marc o yıl savaşta öldü; dostu Paul Klee bu kısmı yeniden boyadı."
+    }
+   ]
+  },
+  "pablo-picasso": {
+   "eser": "The Saltimbanques",
+   "yil": 1905,
+   "qid": null,
+   "gorsel": "59f6aaafa6cd99ea",
+   "noktalar": [
+    {
+     "ad": "Cambazlar",
+     "x": 0.05,
+     "y": 0.3,
+     "w": 0.9,
+     "h": 0.5,
+     "metin": "Bu bir resim değil, Picasso'nun 1905 tarihli bir gravürü: gezgin cambazlar, akrobatlar ve aileleri. Picasso'nun \"Gül Dönemi\"nin konusu bu yoksul gösterici ailesiydi."
+    },
+    {
+     "ad": "Top üstündeki kız",
+     "x": 0.6,
+     "y": 0.4,
+     "w": 0.25,
+     "h": 0.4,
+     "metin": "Sağda büyük bir topun üstünde dengede duran ince bir kız. Aynı figür ünlü \"Toptaki Akrobat\" resminde de var."
+    },
+    {
+     "ad": "Ayaktaki palyaço",
+     "x": 0.45,
+     "y": 0.3,
+     "w": 0.15,
+     "h": 0.4,
+     "metin": "Ortada eli belinde duran ince uzun bir cambaz. Picasso bu yıllarda cambazları yalnız, düşünceli, toplumun kenarındaki figürler olarak çizdi."
+    },
+    {
+     "ad": "Yerdeki figürler",
+     "x": 0.05,
+     "y": 0.7,
+     "w": 0.5,
+     "h": 0.25,
+     "metin": "Altta yere oturmuş kadın ve çocuklar. Tek çizgiyle, hızlı ve yalın: genç Picasso'nun çizim ustalığı."
+    },
+    {
+     "ad": "İmza",
+     "x": 0.85,
+     "y": 0.88,
+     "w": 0.15,
+     "h": 0.1,
+     "metin": "Sağ altta \"Picasso 1905\" imzası. Birkaç yıl sonra Picasso Kübizm'i başlatacaktı."
     }
    ]
   }
