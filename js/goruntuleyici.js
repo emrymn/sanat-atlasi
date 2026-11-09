@@ -6,6 +6,7 @@ import { eserKonusu } from './ikonografi.js';
 import { hareketAz, gezin } from './gecis.js';
 import { NEDENLER } from './bildirim.js';
 import { noktaOdagi, noktaYeri, yakinlasmaSiniri } from './ayrinti.js';
+import { hikayeHtml, karakterKaydi } from './hikaye.js';
 
 const EN_BUYUK = 6;
 
@@ -80,7 +81,7 @@ export function kaynakYazisi(eser, gorsel) {
 // bildir: (eser, neden, gorsel) → bildirimden sonra seçilen görsel — İ5, "⋯" menüsü (yoksa menü çıkmaz)
 // ayrintilar: (eser) → rehberli inceleme kaydı ya da null (İş 151, js/ayrinti.js); kayıt varsa "İncele" düğmesi çıkar
 // incelemeyeBasla: açılan eserin kaydı varsa görüntüleyici doğrudan inceleme kipinde açılır
-export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null, koleksiyon = null, bildir = null, ayrintilar = null, incelemeyeBasla = false, ortalama = false }) {
+export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null, koleksiyon = null, bildir = null, ayrintilar = null, incelemeyeBasla = false, ortalama = false, hikayeler = null, hikayeHazir = null }) {
   let sira = baslangic;
   let olcek = 1;
   let tx = 0;
@@ -111,15 +112,16 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     ${koleksiyon ? `<button class="gor-isaret" type="button" aria-pressed="false" aria-label="Koleksiyonuma ekle" hidden>${ikon('isaret', 22)}</button>` : ''}
     ${eserler.length > 1 ? `<button class="gor-ok gor-onceki" type="button" aria-label="Önceki eser">${ikon('geri', 24)}</button><button class="gor-ok gor-sonraki" type="button" aria-label="Sonraki eser">${ikon('ileri', 24)}</button>` : ''}
     <div class="gor-alt"><div class="gor-yazi" ${gizli ? 'hidden' : ''}></div>
-      <div class="gor-eylemler">${!bildir && !ortalama ? '<button class="gor-kotu" type="button">Görsel kötü</button>' : ''}${!gizli ? '<button class="gor-gunun" type="button" aria-pressed="false" data-test="gor-gunun" hidden>Günün resmi</button>' : ''}${ayrintilar && !gizli ? '<button class="gor-incele" type="button" data-test="gor-incele" hidden>İncele</button>' : ''}${!gizli ? `<button class="gor-odak" type="button" data-gor-odak data-test="gor-odak"${gelistirici ? '' : ' hidden'}>Odağı işaretle</button><button class="gor-odak" type="button" data-gor-odak-sil data-test="gor-odak-sil" hidden>Otomatiğe dön</button>` : ''}${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
+      <div class="gor-eylemler">${!bildir && !ortalama ? '<button class="gor-kotu" type="button">Görsel kötü</button>' : ''}${!gizli ? '<button class="gor-gunun" type="button" aria-pressed="false" data-test="gor-gunun" hidden>Günün resmi</button>' : ''}${ayrintilar && !gizli ? '<button class="gor-incele" type="button" data-test="gor-incele" hidden>İncele</button>' : ''}${hikayeler && !gizli ? '<button class="gor-hikaye-dugme" type="button" data-test="gor-hikaye" hidden>Hikâyesi</button>' : ''}${!gizli ? `<button class="gor-odak" type="button" data-gor-odak data-test="gor-odak"${gelistirici ? '' : ' hidden'}>Odağı işaretle</button><button class="gor-odak" type="button" data-gor-odak-sil data-test="gor-odak-sil" hidden>Otomatiğe dön</button>` : ''}${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
       ${bildir ? `<div class="gor-bildir-menu" data-test="gor-bildir-menu" hidden>${NEDENLER.map((n) => `<button type="button" data-gor-neden="${n}">${n}</button>`).join('')}</div>` : ''}
-      ${ayrintilar && !gizli ? `<div class="gor-inceleme" data-test="gor-inceleme" hidden>
+      ${(ayrintilar || hikayeler) && !gizli ? `<div class="gor-inceleme" data-test="gor-inceleme" hidden>
         <p class="gor-inc-ust"><span class="gor-inc-no" data-test="gor-inc-no"></span><b class="gor-inc-ad" data-test="gor-inc-ad"></b></p>
         <p class="gor-inc-metin" data-test="gor-inc-metin"></p>
         <div class="gor-inc-dugmeler"><button class="gor-inc-geri" type="button" data-test="gor-inc-onceki">${ikon('geri', 20)}<span>Önceki</span></button><button class="gor-inc-ileri" type="button" data-test="gor-inc-sonraki"><span>Sonraki</span>${ikon('ileri', 20)}</button><button class="gor-inc-bitir" type="button" data-test="gor-inc-bitir">Bitir</button></div>
       </div>` : ''}
       ${!gizli ? '<p class="gor-odak-durum" data-test="gor-odak-durum" hidden></p>' : ''}
-      <p class="gor-mesaj" role="status" aria-live="polite"></p></div>`;
+      <p class="gor-mesaj" role="status" aria-live="polite"></p></div>
+    ${hikayeler && !gizli ? '<div class="gor-hikaye" data-test="gor-hikaye-panel" role="dialog" aria-label="Hikâyesi" hidden></div>' : ''}`;
   document.body.appendChild(kok);
   document.documentElement.classList.add('gor-acik');
   // İş 70: dokunulan küçük resim (yeni ve hâlâ ekranda) varsa açılış geçişi; kapanışta da ona döner
@@ -149,6 +151,29 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   const incPanel = kok.querySelector('.gor-inceleme');
   let inceleme = null; // { kayit, sira } — açıkken
   let kayitSimdiki = null; // gösterilen eserin kaydı (varsa)
+  let hikayeSimdiki = null; // İş 169: gösterilen eserin hikâyesi (varsa)
+  const hikayeDugme = kok.querySelector('[data-test="gor-hikaye"]');
+  const hikayePanel = kok.querySelector('[data-test="gor-hikaye-panel"]');
+  function hikayeGuncelle() {
+    hikayeSimdiki = hikayeler && !gizli ? hikayeler(eserler[sira]) || null : null;
+    if (hikayeDugme) hikayeDugme.hidden = !hikayeSimdiki;
+  }
+  // veri görüntüleyici açıldıktan sonra gelirse düğme o an çıkar
+  if (hikayeHazir && hikayeDugme) hikayeHazir.then(() => !kapandi && hikayeGuncelle()).catch(() => {});
+  function hikayeKapat() {
+    if (hikayePanel) hikayePanel.hidden = true;
+  }
+  function hikayeAc() {
+    if (!hikayePanel || !hikayeSimdiki) return;
+    if (inceleme) incelemeBitir();
+    const kar = karakterKaydi(hikayeSimdiki);
+    hikayePanel.innerHTML = `<div class="gor-hikaye-ust"><p class="etiket">Hikâyesi</p><button class="gor-hikaye-kapat" type="button" aria-label="Hikâyeyi kapat" data-test="gor-hikaye-kapat">${ikon('kapat', 20)}</button></div>
+      <h2 class="gor-hikaye-baslik">${kacis(hikayeSimdiki.baslik)}</h2>${hikayeSimdiki.sanatci ? `<p class="gor-hikaye-sanatci">${kacis(hikayeSimdiki.sanatci)}</p>` : ''}
+      ${kar ? `<button class="gor-hikaye-gor" type="button" data-test="gor-hikaye-karakterler">Karakterleri resimde gör · ${kar.noktalar.length}</button>` : ''}
+      ${hikayeHtml(hikayeSimdiki, kacis)}`;
+    hikayePanel.hidden = false;
+    hikayePanel.scrollTop = 0;
+  }
   let ilkInceleme = !!incelemeyeBasla;
 
   // K4: işaret düğmesi o anki eserin koleksiyondaki durumunu gösterir; sanatçısı bilinmeyen eserde gizli
@@ -378,6 +403,9 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     isaretiGuncelle();
     if (inceleme) incelemeBitir(false);
     kayitSimdiki = ayrintilar && !gizli ? ayrintilar(e) || null : null;
+    // İş 169: eserin hikâyesi (varsa "Hikâyesi" düğmesi)
+    hikayeGuncelle();
+    hikayeKapat();
     if (inceleDugme) {
       inceleDugme.hidden = !kayitSimdiki;
       if (kayitSimdiki) inceleDugme.textContent = `İncele · ${kayitSimdiki.noktalar.length} nokta`;
@@ -425,10 +453,10 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   }
 
   // ---------- İş 151: rehberli inceleme ----------
-  function incelemeBaslat() {
-    if (!kayitSimdiki || !incPanel) return;
-    inceleme = { kayit: kayitSimdiki, sira: -1 };
-    noktalar.innerHTML = kayitSimdiki.noktalar
+  function incelemeBaslat(kayit = kayitSimdiki) {
+    if (!kayit || !incPanel) return;
+    inceleme = { kayit, sira: -1 };
+    noktalar.innerHTML = kayit.noktalar
       .map((n, i) => {
         const y = noktaYeri(n);
         return `<button class="gor-nokta" type="button" style="left:${y.x.toFixed(2)}%;top:${y.y.toFixed(2)}%" data-nokta="${i}" aria-label="${i + 1}. ${kacis(n.ad)}"><i>${i + 1}</i></button>`;
@@ -447,7 +475,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
   function incelemeYaz() {
     const { kayit, sira: i } = inceleme;
     const n = kayit.noktalar[i];
-    incPanel.querySelector('.gor-inc-no').textContent = n ? `${i + 1} / ${kayit.noktalar.length}` : `${kayit.noktalar.length} ayrıntı`;
+    incPanel.querySelector('.gor-inc-no').textContent = n ? `${i + 1} / ${kayit.noktalar.length}` : `${kayit.noktalar.length} ${kayit.birim || 'ayrıntı'}`;
     incPanel.querySelector('.gor-inc-ad').textContent = n ? n.ad : '';
     incPanel.querySelector('.gor-inc-metin').textContent = n ? n.metin : 'Tablonun üstündeki numaralı noktalara dokun ya da Sonraki ile başla.';
     incPanel.querySelector('.gor-inc-geri').disabled = i <= 0;
@@ -501,8 +529,19 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
       netlestir(440);
     }
   }
+  if (hikayeDugme) {
+    hikayeDugme.addEventListener('click', () => (hikayePanel.hidden ? hikayeAc() : hikayeKapat()));
+    hikayePanel.addEventListener('click', (ev) => {
+      if (ev.target.closest('[data-test="gor-hikaye-kapat"]')) return hikayeKapat();
+      if (ev.target.closest('[data-test="gor-hikaye-karakterler"]')) {
+        hikayeKapat();
+        incelemeBaslat(karakterKaydi(hikayeSimdiki));
+        noktayaGit(0);
+      }
+    });
+  }
   if (incPanel) {
-    inceleDugme.addEventListener('click', () => (inceleme ? incelemeBitir() : incelemeBaslat()));
+    if (inceleDugme) inceleDugme.addEventListener('click', () => (inceleme ? incelemeBitir() : incelemeBaslat()));
     incPanel.querySelector('.gor-inc-geri').addEventListener('click', () => noktayaGit(inceleme.sira - 1));
     incPanel.querySelector('.gor-inc-ileri').addEventListener('click', () => noktayaGit(inceleme.sira + 1));
     incPanel.querySelector('.gor-inc-bitir').addEventListener('click', () => incelemeBitir());

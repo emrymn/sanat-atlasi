@@ -9,6 +9,7 @@ import { adParcala, bilinenAd } from '../adlar.js';
 import { karsilastirmaAdresi, benzerSanatcilar } from '../karsilastir.js';
 import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir } from '../basyapit.js';
 import { ayrintilariAl, ayrintiBul, eserinAyrintisi } from '../ayrinti.js';
+import { hikayeHtml } from '../hikaye.js';
 import { konulariAl, konuBul, konuHaritasiniAyarla, kapakSec, TUR_AD, TUR_SIRA } from '../ikonografi.js';
 import { seviyeKaydi, seviyeDurumu } from '../seviye.js';
 import {
@@ -40,6 +41,8 @@ import {
   bilinirlikSirasi,
   cizimNo,
   guncelMi,
+  hikayeVeri,
+  hikayeBulucu,
 } from './ortak.js';
 import { donemCizelgesi, pekistirmedeMi, notBolumleri, seritUst, eserSeridi } from './bugun.js';
 import { kimlikDoldur, akimUslubu, pekistirDugmesi, bolumBasligi } from './akim.js';
@@ -161,6 +164,11 @@ export async function basyapitSayfasi(kodlu) {
   const kayit = ayrintiBul(liste, b.anahtar) || eserinAyrintisi(liste, e);
   const ayrintilar = kayit ? () => kayit : null;
   kutu.querySelector('[data-basyapit-buyut]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ayrintilar, ...gorselTercihi() }));
+  // İş 169: eserin hikâyesi varsa görselin altında sayfada da
+  hikayeVeri().then(() => {
+    const h = guncelMi(no) && hikayeBulucu(e);
+    if (h && !ekran.querySelector('.basyapit-hikaye')) kutu.insertAdjacentHTML('afterend', `<section class="bolum basyapit-hikaye" data-test="basyapit-hikaye">${etiket('Hikâyesi', { vurgu: true })}<div class="okuma">${hikayeHtml(h, kacis)}</div></section>`);
+  });
   if (kayit) {
     kutu.insertAdjacentHTML('beforeend', `<button class="basyapit-incele" type="button" data-test="basyapit-incele">${ikon('ara', 18)}Rehberli inceleme · ${kayit.noktalar.length} nokta</button>`);
     kutu.querySelector('[data-test="basyapit-incele"]').addEventListener('click', () => goruntuleyiciAc({ eserler: [e], notu: notuIcin(s.id), ayrintilar, incelemeyeBasla: true, ...gorselTercihi() }));

@@ -7,6 +7,7 @@ import { bugunStr } from '../leitner.js';
 import { sanatciEserleri, eserBaslik } from '../eserler.js';
 import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla, elleOdaklariAyarla, gununResimleriniAyarla, seciliGununResmi } from '../gorsel.js';
 import { gununSanatcisi } from '../gunun.js';
+import { hikayeleriAl, eserinHikayesi } from '../hikaye.js';
 import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
 import { ikon } from '../tasarim.js';
@@ -100,8 +101,24 @@ export function kotuler() {
   return (d.ilerleme.kotuGorseller ||= {});
 }
 
+// İş 169: resimlerin hikâyesi (data/eser_hikayeleri.json); ilk görüntüleyici açılışında yüklenmeye başlar, gelmediyse o
+// açılışta "Hikâyesi" çıkmaz. Hata olursa sonraki açılışta yeniden denenir.
+let hikayeSozu = null;
+let hikayeListesi = [];
+export function hikayeVeri() {
+  if (!hikayeSozu)
+    hikayeSozu = jsonGetir('data/eser_hikayeleri.json').then(
+      (j) => (hikayeListesi = hikayeleriAl(j)),
+      () => ((hikayeSozu = null), []),
+    );
+  return hikayeSozu;
+}
+export const hikayeBulucu = (e) => eserinHikayesi(hikayeListesi, e);
+
 export function gorselTercihi(sonra = null) {
   return {
+    hikayeler: hikayeBulucu,
+    hikayeHazir: hikayeVeri(),
     kotuler: kotuler(),
     // K4: işaret düğmesi; İ5: "⋯" bildirim menüsü
     koleksiyon: {

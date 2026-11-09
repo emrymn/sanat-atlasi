@@ -129,3 +129,26 @@ test('yakinlasmaSiniri: büyük kopyada 6, 1280 px kopyada az, küçük görseld
   assert.equal(yakinlasmaSiniri(0, 390, 3), 6); // kaynak bilinmiyor
   assert.equal(yakinlasmaSiniri(1280, 390, 1), 4.92); // dpr 1 (masaüstü)
 });
+
+// İş 169: resimlerin hikâyesi
+test('hikaye: veri dosyası geçerli, karakter kutuları resmin içinde, anahtarlar tekil', async () => {
+  const { hikayeleriAl, karakterKaydi, hikayeHtml, eserinHikayesi } = await import('../../js/hikaye.js');
+  const j = JSON.parse(readFileSync(new URL('../../data/eser_hikayeleri.json', import.meta.url), 'utf8'));
+  const l = hikayeleriAl(j);
+  assert.equal(l.length, j.eserler.length, 'bozuk kayıt yok');
+  assert.equal(new Set(l.map((k) => k.anahtar)).size, l.length);
+  for (const k of l) {
+    const ham = j.eserler.find((e) => e.anahtar === k.anahtar);
+    assert.equal(k.kim.filter((c) => c.kutu).length, (ham.kim || []).filter((c) => c.kutu).length, `${k.baslik}: geçersiz kutu`);
+    assert.ok(k.olay.length >= 1);
+  }
+  const ornek = l[0];
+  assert.ok(karakterKaydi(ornek).noktalar.length >= 1);
+  assert.match(hikayeHtml(ornek, (x) => x), /Ne oluyor\?/);
+  assert.equal(eserinHikayesi(l, { qid: ornek.anahtar }), ornek);
+  assert.equal(eserinHikayesi(l, { qid: 'Q0' }), null);
+  // bozuk kayıt atlanır, bozuk kutu düşer
+  const b = hikayeleriAl({ eserler: [{ anahtar: 'x', baslik: 'y', olay: [] }, { anahtar: 'a', baslik: 'b', olay: ['c'], kim: [{ ad: 'd', metin: 'e', kutu: [0.9, 0.9, 0.5, 0.5] }] }] });
+  assert.equal(b.length, 1);
+  assert.equal(b[0].kim[0].kutu, undefined);
+});
