@@ -1,6 +1,7 @@
 // Sanat Atlası — uygulamanın girişi: veriyi yükler, ekranların dinleyicilerini bağlar, yönlendirmeyi başlatır.
 // Ekranlar js/ekranlar/ altında (bkz. KARARLAR.md "İş 16").
 import './hataGunlugu.js'; // ilk: öteki modüllerin hataları da günlüğe düşsün (İş 115)
+import { swKur } from './guncelleme.js';
 import { akimOrtaYillari } from './celdirici.js';
 import { dokunuslariKoru } from './dokunus.js';
 import { gecisKur } from './gecis.js';
@@ -21,25 +22,6 @@ import { olaylariBagla as aramaOlaylari } from './ekranlar/arama.js';
 import { olaylariBagla as zamanOlaylari } from './ekranlar/zaman.js';
 import { olaylariBagla as akimOlaylari } from './ekranlar/akim.js';
 import { olaylariBagla as haritaOlaylari } from './ekranlar/harita.js';
-
-// ---------- service worker ----------
-function swKaydet() {
-  if (!('serviceWorker' in navigator)) return;
-  const ilkKontrol = !!navigator.serviceWorker.controller;
-  const kayit = navigator.serviceWorker.register('sw.js').catch((e) => console.warn('SW kaydedilemedi', e));
-  let yenilendi = false;
-  navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (!ilkKontrol || yenilendi) return;
-    yenilendi = true;
-    bildir('Uygulamanın yeni sürümü hazır.', { eylem: { ad: 'Yenile', fn: () => location.reload() }, sure: 0 });
-  });
-  // İş 63: iOS ana ekran uygulaması kapatılmayıp arka plana atılınca geri dönüşte eski sayfa sürer ve bildirim bir daha
-  // çıkmaz (yeni sürüm inmiş ama sayfa eski). Yeni sürüm indiyse arka plandan dönüşte kendiliğinden yenilenir;
-  // yarım oturum kayıtlı olduğundan kayıp olmaz. İş 164: iOS güncellemeyi günlerce denetlemeyebiliyor; öne gelişte sorulur.
-  document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'visible') yenilendi ? location.reload() : kayit.then((r) => r && r.update()).catch(() => {});
-  });
-}
 
 // T2: eser notları (~100 KB) yalnızca görüntüleyicide gerekir; ilk ekran çizildikten sonra yüklenir.
 // Görüntüleyici notlardan önce açıldıysa 'atlas-notlar' olayıyla yazısını yeniler.
@@ -119,7 +101,7 @@ async function basla() {
   temaUygula();
   window.addEventListener('hashchange', yonlendir);
   yonlendir();
-  swKaydet();
+  swKur(bildir);
   // İş 73: iPhone'un yuttuğu dokunuşları tamamla (tek dokunuş yetsin)
   dokunuslariKoru();
   // İş 75: uygulama içi gezinme geçmişe yazılmaz; kenardan geri kaydırma ve sayfa belleği

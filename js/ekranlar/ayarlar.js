@@ -24,6 +24,7 @@ import { bildirimMetni } from '../bildirim.js';
 import { YENILIKLER, yenilikYazisi } from '../yenilikler.js';
 import { bolumler } from './harita.js';
 import { hatalariOku, hatalariTemizle, gunlukMetni, hataEkle } from '../hataGunlugu.js';
+import { sitedekiSurum, guncellemeyiDene } from '../guncelleme.js';
 import { telefondaOlanlar, kaliciSil, kaliciYaz, eskileriTasi, PARCA, defterOku, defterYaz, defterSil, defterAdi, depoDurumu } from '../devasaOnbellek.js';
 
 // ---------- Ayarlar ----------
@@ -125,6 +126,11 @@ export function ayarlarSayfasi() {
         <p class="mesaj" id="gelistirici-mesaj" aria-live="polite"></p></div>
       ${gununResmiBolumu()}
       ${elleOdakBolumu()}
+      <div class="ayar" data-test="surum-denetle"><b>Sürüm</b>
+        <p>Bu cihazda ${SURUM}. Yeni sürüm kendiliğinden gelmezse buradan denetle.</p>
+        <button class="dugme ince" type="button" data-surum-denetle>Yeni sürüm var mı?</button>
+        <p class="mesaj" id="surum-mesaj" aria-live="polite"></p>
+      </div>
       <div class="ayar"><b>Yenilikler</b>
         <ul class="yenilik-liste" data-test="yenilikler">${YENILIKLER.map((x) => `<li>${kacis(yenilikYazisi(x))}</li>`).join('')}</ul>
       </div>
@@ -589,6 +595,7 @@ export function olaylariBagla() {
       ayarlarSayfasi();
       return;
     }
+    if (e.target.closest('[data-surum-denetle]')) return surumDenetle();
     if (e.target.closest('[data-yedekle]')) {
       yedekTarihiYaz();
       const metin = yedekMetni(d.ilerleme, d.yarim);
@@ -759,6 +766,38 @@ async function gununResimleriniAc() {
   m.textContent = '';
   const adi = new Map(sanatcilar.map((s) => [s.id, bilinenAd(s.ad, d.kisaAdlar[s.id])]));
   goruntuleyiciAc({ eserler, kotuler: kotuler(), ortalama: true, notu: (e) => `${adi.get(e.sid) || ''} · günün resmi ${eserler.indexOf(e) + 1} / ${eserler.length}` });
+}
+
+// İş 166: sitedeki sürümle karşılaştırır; yeniyse kurar ve sayfayı yeniler
+async function surumDenetle() {
+  const m = document.getElementById('surum-mesaj');
+  m.className = 'mesaj';
+  m.textContent = 'Bakılıyor…';
+  let site;
+  try {
+    site = await sitedekiSurum();
+  } catch {
+    m.textContent = 'Siteye ulaşılamadı; internet bağlantını denetle.';
+    return;
+  }
+  if (!site || site === SURUM) {
+    m.className = 'mesaj tamam';
+    m.textContent = `Güncel: ${SURUM}.`;
+    return;
+  }
+  m.textContent = `Sitede ${site} var, indiriliyor…`;
+  const sonuc = await guncellemeyiDene().catch((e) => {
+    hataEkle({ m: `Güncelleme denetimi: ${(e && e.message) || e}`, k: `${SURUM} → ${site}` });
+    return 'kurulamadi';
+  });
+  if (sonuc === 'kuruldu') {
+    m.className = 'mesaj tamam';
+    m.textContent = `${site} kuruldu, uygulama yenileniyor…`;
+    setTimeout(() => location.reload(), 800);
+    return;
+  }
+  if (sonuc === 'bulunamadi') hataEkle({ m: 'Sitede yeni sürüm var ama tarayıcı bulamadı', k: `${SURUM} → ${site}` });
+  m.textContent = 'Yeni sürüm kurulamadı. Ayarlar → Hata günlüğü → Kopyala ile Claude’a gönder.';
 }
 
 function gununAdi() {

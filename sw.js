@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.73.3';
+const SURUM = '1.73.4';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -35,6 +35,7 @@ const KABUK_DOSYALARI = [
   'css/app.css',
   'js/adlar.js',
   'js/app.js',
+  'js/guncelleme.js',
   'js/ekranlar/ayarlar.js',
   'js/ekranlar/bugun.js',
   'js/ekranlar/gozat.js',
@@ -161,11 +162,16 @@ self.addEventListener('install', (e) => {
   e.waitUntil(
     (async () => {
       const c = await caches.open(KABUK);
-      await Promise.all(KABUK_DOSYALARI.map((u) => kabugaKoy(c, u)));
+      // İş 166: kabuk dosyası inmezse nedeni sayfaya bildirilir (Ayarlar → Hata günlüğü)
+      await Promise.all(KABUK_DOSYALARI.map((u) => kabugaKoy(c, u))).catch(async (h) => {
+        for (const k of await self.clients.matchAll({ includeUncontrolled: true })) k.postMessage({ tip: 'sw-hata', m: String((h && h.message) || h), surum: SURUM });
+        throw h;
+      });
       await Promise.all(ISTEGE_BAGLI.map((u) => kabugaKoy(c, u).catch(() => {})));
       const surum = await c.match('js/surum.js');
       if (!surum || !(await surum.text()).includes(`'${SURUM}'`)) {
         await caches.delete(KABUK);
+        for (const k of await self.clients.matchAll({ includeUncontrolled: true })) k.postMessage({ tip: 'sw-hata', m: 'Kabuk dosyaları bu sürümün değil (önbellekte eski surum.js)', surum: SURUM });
         throw new Error('Kabuk dosyaları bu sürümün değil');
       }
       await self.skipWaiting();
