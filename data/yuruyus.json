@@ -2543,6 +2543,454 @@
      "metin": "Uzun parmaklı eller zarifçe gevşek duruyor. Bu ince, hareketsiz eller dönemin saray portrelerinde soyluluğun işaretiydi."
     }
    ]
+  },
+  "annibale-carracci": {
+   "eser": "Assumption of the Virgin",
+   "yil": 1587,
+   "qid": "Q4810381",
+   "gorsel": "1650a9f0bb587ac0",
+   "noktalar": [
+    {
+     "ad": "Göğe yükselen Meryem",
+     "x": 0.42,
+     "y": 0.02,
+     "w": 0.55,
+     "h": 0.33,
+     "metin": "Meryem kollarını açmış, meleklerle birlikte bulutlara yükseliyor; mavi pelerini rüzgârda şişmiş. Katolik inancına göre Meryem ölümünden sonra bedeniyle birlikte göğe alındı."
+    },
+    {
+     "ad": "Boş mezar",
+     "x": 0.28,
+     "y": 0.55,
+     "w": 0.6,
+     "h": 0.2,
+     "metin": "Ortada kapağı açık taş bir lahit: Meryem'in bedeni orada değil. Havariler mezarın çevresinde toplanmış, kimi içine, kimi göğe bakıyor."
+    },
+    {
+     "ad": "Kollarını açan havari",
+     "x": 0.0,
+     "y": 0.6,
+     "w": 0.35,
+     "h": 0.35,
+     "metin": "Soldaki havari şaşkınlıkla kollarını açmış. Carracci kardeşler, Maniyerizm'in yapaylığına karşı doğal hareketler ve gerçek duygular arayan Bologna akademisinin kurucularıydı."
+    },
+    {
+     "ad": "Kitaplı havari",
+     "x": 0.45,
+     "y": 0.68,
+     "w": 0.5,
+     "h": 0.3,
+     "metin": "Önde yere oturmuş yaşlı havari başını kaldırmış, yukarı bakıyor. Yerdeki açık kitap ve figürlerin ağırlığı sahneyi toprağa bağlıyor, Meryem ise ışığa yükseliyor."
+    },
+    {
+     "ad": "Sütunlar",
+     "x": 0.0,
+     "y": 0.04,
+     "w": 0.3,
+     "h": 0.45,
+     "metin": "Sol üstte klasik sütunlar ve arkada açık bir manzara. Carracci, Raphael'in ve Venedik resminin renklerini birleştirdi; Barok'un yolunu açan ressamlardandır."
+    }
+   ]
+  },
+  "guido-reni": {
+   "eser": "The Rape of Helen",
+   "yil": 1631,
+   "qid": "Q18572427",
+   "gorsel": "452e7796cb72ca64",
+   "noktalar": [
+    {
+     "ad": "Helen",
+     "x": 0.38,
+     "y": 0.22,
+     "w": 0.24,
+     "h": 0.7,
+     "metin": "Ortada beyaz-sarı giysili Helen, Sparta kralı Menelaos'un karısı. Paris onu Truva'ya kaçırıyor; ama Reni'nin Helen'i ne korkuyor ne direniyor, bir saray alayında yürür gibi sakin."
+    },
+    {
+     "ad": "Paris",
+     "x": 0.55,
+     "y": 0.15,
+     "w": 0.2,
+     "h": 0.68,
+     "metin": "Kırmızı pelerinli, tüylü miğferli Paris Helen'i elinden tutmuş, gemilere yönlendiriyor. Bu kaçırma Truva Savaşı'nın başlangıcı oldu."
+    },
+    {
+     "ad": "Uçan Aşk",
+     "x": 0.68,
+     "y": 0.0,
+     "w": 0.24,
+     "h": 0.18,
+     "metin": "Gökte küçük bir Aşk tanrısı elinde meşaleyle uçuyor. Bu kaçırmanın arkasında Venüs'ün Paris'e verdiği söz var: dünyanın en güzel kadını."
+    },
+    {
+     "ad": "Okçu Aşk",
+     "x": 0.82,
+     "y": 0.62,
+     "w": 0.16,
+     "h": 0.33,
+     "metin": "Sağ altta okunu atmış bir başka Aşk bize bakıyor. Reni olayı bir trajedi değil, tanrıların istediği zarif bir alay gibi gösteriyor."
+    },
+    {
+     "ad": "Kedi ve köpek",
+     "x": 0.25,
+     "y": 0.85,
+     "w": 0.3,
+     "h": 0.15,
+     "metin": "Ayakların dibinde küçük bir köpek havlıyor, bir kedi kaçıyor. Sakin yürüyüşün altındaki bu küçük kavga, gelecek büyük çatışmanın şakalı bir yankısı olabilir."
+    },
+    {
+     "ad": "Uzaktaki gemiler",
+     "x": 0.84,
+     "y": 0.38,
+     "w": 0.16,
+     "h": 0.22,
+     "metin": "Sağ arkada denizde gemiler bekliyor. Helen'i Truva'ya götürecek filo; hikâyenin sonu ufukta."
+    }
+   ]
+  },
+  "guercino": {
+   "eser": "Samson Captured by the Philistines",
+   "yil": 1619,
+   "qid": "Q19911545",
+   "gorsel": "c834f2f7a27fc418",
+   "noktalar": [
+    {
+     "ad": "Delila",
+     "x": 0.0,
+     "y": 0.38,
+     "w": 0.38,
+     "h": 0.57,
+     "metin": "Solda Delila Samson'u Filistlilere teslim ediyor. Eski Ahit'e göre Samson'un gücü saçlarındaydı; Delila uyurken saçlarını kestirdi."
+    },
+    {
+     "ad": "Samson",
+     "x": 0.35,
+     "y": 0.3,
+     "w": 0.42,
+     "h": 0.65,
+     "metin": "Ortada sırtı bize dönük, çıplak ve kaslı Samson askerlerle boğuşuyor. Bedenin ışıkla parlayan kasları ve çapraz duruşu, sahnenin bütün gücünü taşıyor."
+    },
+    {
+     "ad": "Askerler",
+     "x": 0.12,
+     "y": 0.0,
+     "w": 0.65,
+     "h": 0.35,
+     "metin": "Üstte miğferli Filistli askerler Samson'un üstüne çullanıyor; yüzler, eller, zırhlar birbirine karışmış. Guercino'nun genç dönemindeki koyu, dramatik ışık Caravaggio'dan gelir."
+    },
+    {
+     "ad": "Bağıran adam",
+     "x": 0.6,
+     "y": 0.0,
+     "w": 0.25,
+     "h": 0.25,
+     "metin": "Sağ üstte ağzı açık bir adam bağırıyor, elini kaldırmış. Sahnenin gürültüsünü bu yüz taşıyor."
+    },
+    {
+     "ad": "Ayak",
+     "x": 0.62,
+     "y": 0.58,
+     "w": 0.24,
+     "h": 0.3,
+     "metin": "Sağ altta Samson'un ayağı bize doğru uzanıyor. Figürün resmin çerçevesinden taşıyormuş gibi durması Barok'un sevdiği bir hile."
+    }
+   ]
+  },
+  "caravaggio": {
+   "eser": "The Conversion of Saint Paul",
+   "yil": 1600,
+   "qid": "Q2273517",
+   "gorsel": "0ea5b347b05f24d4",
+   "noktalar": [
+    {
+     "ad": "At",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.85,
+     "h": 0.65,
+     "metin": "Resmin büyük kısmını bir at kaplıyor: alacalı gövdesi yukarıdan gelen ışıkla parlıyor. Kutsal bir anı anlatan resimde ortada bir hayvanın durması dönemin rahiplerini rahatsız etmişti."
+    },
+    {
+     "ad": "Yere düşen Saul",
+     "x": 0.3,
+     "y": 0.62,
+     "w": 0.7,
+     "h": 0.38,
+     "metin": "Altta sırtüstü düşmüş genç asker Saul kollarını göğe açmış. Elçilerin İşleri'ne göre Şam yolunda gökten bir ışık indi, Saul yere düştü ve İsa'nın sesini duydu; sonra Pavlus adını aldı."
+    },
+    {
+     "ad": "Seyis",
+     "x": 0.78,
+     "y": 0.0,
+     "w": 0.22,
+     "h": 0.6,
+     "metin": "Sağda yaşlı seyis atı tutuyor, olanlardan habersiz. Mucizeyi yalnız Saul yaşıyor; ışık sadece onu görüyor."
+    },
+    {
+     "ad": "Kalkık toynak",
+     "x": 0.58,
+     "y": 0.45,
+     "w": 0.18,
+     "h": 0.18,
+     "metin": "Atın ön bacağı havada, Saul'un üstünde duruyor ama ona basmıyor. Caravaggio sahneyi bir ahırda geçen sıradan bir an gibi kurmuş."
+    },
+    {
+     "ad": "Kılıç ve zırh",
+     "x": 0.0,
+     "y": 0.8,
+     "w": 0.45,
+     "h": 0.2,
+     "metin": "Yerde Saul'un kılıcı ve kırmızı pelerini. Hristiyanları kovuşturan asker silahını bırakmış: dönüşümün anı. Resim Roma'da Santa Maria del Popolo kilisesindeki Cerasi Şapeli için 1601'de yapıldı."
+    }
+   ]
+  },
+  "georges-de-la-tour": {
+   "eser": "The Cheat with the Ace of Diamonds",
+   "yil": 1635,
+   "qid": "Q1193312",
+   "gorsel": "e885a59f4bcb8352",
+   "noktalar": [
+    {
+     "ad": "Saklanan karo ası",
+     "x": 0.0,
+     "y": 0.55,
+     "w": 0.15,
+     "h": 0.25,
+     "metin": "Soldaki adam elini sırtına götürmüş, kemerinin arkasından bir karo ası çekiyor; seyirci bunu görüyor, masadakiler görmüyor. Hile bizim gözümüzün önünde."
+    },
+    {
+     "ad": "Hilekâr",
+     "x": 0.0,
+     "y": 0.2,
+     "w": 0.27,
+     "h": 0.65,
+     "metin": "Hilekâr gölgede, yüzünün yarısı karanlıkta, bize göz ucuyla bakıyor: sanki bizi suç ortağı yapıyor."
+    },
+    {
+     "ad": "Fahişe",
+     "x": 0.36,
+     "y": 0.15,
+     "w": 0.3,
+     "h": 0.6,
+     "metin": "Ortadaki kadın gözlerini yana kaydırmış, hizmetçiye işaret veriyor. Bembeyaz yüzü ve inci gerdanlığıyla oyunun tam ortasında; La Tour'un yüzleri neredeyse geometrik, oval biçimlerdir."
+    },
+    {
+     "ad": "Şarap getiren hizmetçi",
+     "x": 0.24,
+     "y": 0.07,
+     "w": 0.22,
+     "h": 0.48,
+     "metin": "Türbanlı hizmetçi bir kadeh şarap getiriyor. Kumar, şarap ve şehvet: 17. yüzyılda gençleri uyaran üç günah bir arada."
+    },
+    {
+     "ad": "Saf genç",
+     "x": 0.65,
+     "y": 0.12,
+     "w": 0.35,
+     "h": 0.88,
+     "metin": "Sağda tüylü şapkalı, süslü giysili zengin genç kartlarına bakıyor, hiçbir şeyin farkında değil. Önündeki altın paralar birazdan el değiştirecek. Bu hikâye Caravaggio'nun Kâğıt Oyuncuları'ndan gelir."
+    }
+   ]
+  },
+  "bartolomeo-manfredi": {
+   "eser": "Denial of Peter",
+   "yil": 1615,
+   "qid": "Q131144215",
+   "gorsel": "84ccbd6d864998c8",
+   "noktalar": [
+    {
+     "ad": "Parmağıyla gösteren hizmetçi",
+     "x": 0.03,
+     "y": 0.22,
+     "w": 0.3,
+     "h": 0.6,
+     "metin": "Soldaki kadın, yüksek rahibin hizmetçisi, elini Petrus'un omzuna koymuş: \"Sen de onunla beraberdin.\" İncil'e göre İsa tutuklandığı gece Petrus onu üç kez inkâr etti."
+    },
+    {
+     "ad": "Petrus",
+     "x": 0.2,
+     "y": 0.05,
+     "w": 0.15,
+     "h": 0.3,
+     "metin": "Kadının arkasındaki ak sakallı yaşlı adam Petrus; geri çekiliyor, inkâr etmek üzere. Horoz ötmeden önce üç kez inkâr edeceğini İsa ona söylemişti."
+    },
+    {
+     "ad": "Miğferli askerler",
+     "x": 0.4,
+     "y": 0.05,
+     "w": 0.25,
+     "h": 0.38,
+     "metin": "Ortada miğferli askerler başlarını çevirmiş, kadının sözüne kulak kabartıyor. Karanlıkta yalnız yüzler ve parlayan miğferler aydınlık."
+    },
+    {
+     "ad": "Zarlar",
+     "x": 0.5,
+     "y": 0.6,
+     "w": 0.25,
+     "h": 0.2,
+     "metin": "Masada zarlar duruyor: askerler bir ateşin başında zar atıyordu. Manfredi, Caravaggio'nun meyhane ve kumar sahnelerini İncil hikâyelerine taşıyan ressamlardandı; bu tarza \"Manfredi yöntemi\" denirdi."
+    },
+    {
+     "ad": "Zırhlı asker",
+     "x": 0.65,
+     "y": 0.15,
+     "w": 0.3,
+     "h": 0.6,
+     "metin": "Sağda parlak zırhlı asker eğilmiş zarlara bakıyor, olanla ilgilenmiyor. Aynı anda biri ihanet ediyor, öbürü oyun oynuyor."
+    }
+   ]
+  },
+  "hendrick-ter-brugghen": {
+   "eser": "The Crucifixion with the Virgin and St John",
+   "yil": 1625,
+   "qid": "Q7728258",
+   "gorsel": "3aa84f8869632ac6",
+   "noktalar": [
+    {
+     "ad": "Çarmıhtaki İsa",
+     "x": 0.1,
+     "y": 0.05,
+     "w": 0.85,
+     "h": 0.6,
+     "metin": "İsa'nın bedeni solgun ve yeşilimsi, kolları ince bir haça gerilmiş. Ter Brugghen bu sertliği, Caravaggio'dan çok daha eski Alman ve Flaman resimlerinden almış gibi."
+    },
+    {
+     "ad": "Gece göğü",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 1.0,
+     "h": 0.2,
+     "metin": "Arkada koyu, yıldızlı bir gece göğü var; haçın tepesinde buruşuk bir kâğıt levha. Sahne neredeyse boş: üç figür ve sonsuz karanlık."
+    },
+    {
+     "ad": "Meryem",
+     "x": 0.05,
+     "y": 0.25,
+     "w": 0.3,
+     "h": 0.7,
+     "metin": "Meryem elleri kavuşmuş, başı eğik, sessizce dua ediyor. Ter Brugghen Utrecht'te Caravaggio'nun etkisini taşıyan ressamların öncülerindendi."
+    },
+    {
+     "ad": "Yuhanna",
+     "x": 0.6,
+     "y": 0.25,
+     "w": 0.32,
+     "h": 0.7,
+     "metin": "Kırmızı pelerinli Yuhanna başını kaldırmış, ağzı açık, İsa'ya bakıyor. Meryem içine kapanıyor, Yuhanna göğe haykırıyor."
+    },
+    {
+     "ad": "Kafatası",
+     "x": 0.38,
+     "y": 0.83,
+     "w": 0.25,
+     "h": 0.15,
+     "metin": "Haçın dibinde kemikler ve bir kafatası: Golgota, \"kafatası yeri\". Gelenek Âdem'in burada gömülü olduğunu söyler."
+    }
+   ]
+  },
+  "gerrit-van-honthorst": {
+   "eser": "Musical Group on a Balcony",
+   "yil": 1622,
+   "qid": "Q20185587",
+   "gorsel": "4050570cfca96c5a",
+   "noktalar": [
+    {
+     "ad": "Aşağıdan bakış",
+     "x": 0.4,
+     "y": 0.05,
+     "w": 0.45,
+     "h": 0.45,
+     "metin": "Resim bir tavan için yapıldı: aşağıdan gökyüzüne, bir balkonun korkuluğundan sarkan insanlara bakıyoruz. Bu yanılsamacı tavan resmi İtalya'dan öğrenilmiş bir gösteri."
+    },
+    {
+     "ad": "Lavtacı",
+     "x": 0.15,
+     "y": 0.55,
+     "w": 0.45,
+     "h": 0.42,
+     "metin": "Kırmızı giysili genç lavt çalıyor, yanındakiler şarkı söylüyor. Honthorst Roma'da gece sahnelerine düşkünlüğü yüzünden \"Gherardo delle Notti\" (Gecelerin Gerard'ı) diye anılırdı."
+    },
+    {
+     "ad": "Şarkı söyleyen kadın",
+     "x": 0.55,
+     "y": 0.55,
+     "w": 0.35,
+     "h": 0.42,
+     "metin": "Sarı giysili kadın elindeki notaya bakarak şarkı söylüyor. Müzik, aşk ve neşe: Utrecht'te çok sevilen bir konu."
+    },
+    {
+     "ad": "Papağan",
+     "x": 0.84,
+     "y": 0.28,
+     "w": 0.16,
+     "h": 0.14,
+     "metin": "Sağda korkuluğa tünemiş renkli bir papağan aşağı, bize bakıyor. Uzak ülkelerden gelen pahalı bir kuş: Hollanda ticaretinin ve lüksün işareti."
+    },
+    {
+     "ad": "Köpek",
+     "x": 0.0,
+     "y": 0.85,
+     "w": 0.14,
+     "h": 0.15,
+     "metin": "Sol altta bir köpek başını korkuluğun arasından uzatmış. Herkes bizi izliyor: resim 1622 tarihli ve Getty Müzesi'nde."
+    }
+   ]
+  },
+  "orazio-gentileschi": {
+   "eser": "The Lute Player",
+   "yil": 1612,
+   "qid": "Q20176925",
+   "gorsel": "d0b69991aa09b052",
+   "noktalar": [
+    {
+     "ad": "Çapraz ışık çizgisi",
+     "x": 0.02,
+     "y": 0.02,
+     "w": 0.4,
+     "h": 0.24,
+     "metin": "Sol üstteki duvarda ışık ile gölgeyi ayıran keskin bir çapraz çizgi var. Işık, görünmeyen yüksek bir pencereden giriyor. Bu tek kaynaklı, yönlü ışık Caravaggio'dan gelir; Orazio onu daha yumuşak ve sakin kullanır."
+    },
+    {
+     "ad": "Burgular ve sol el",
+     "x": 0.44,
+     "y": 0.04,
+     "w": 0.18,
+     "h": 0.22,
+     "metin": "Kadın sol eliyle lavtanın burgularını çeviriyor. Yani çalmıyor, akort ediyor: sesten önceki dikkat anı. Akort etmek Rönesans'tan beri uyum ve ölçülülük düşüncesiyle ilişkilendirilir."
+    },
+    {
+     "ad": "Dinleyen yüz",
+     "x": 0.63,
+     "y": 0.14,
+     "w": 0.23,
+     "h": 0.2,
+     "metin": "Başını lavtanın gövdesine yaslamış, gözleri aşağıda, sesi dinliyor. Yüzü yalnızca profilden görünür; bize sırtı dönüktür. İzleyici, onun içe dönük anına tanık olan biri gibidir."
+    },
+    {
+     "ad": "Masadaki çalgılar",
+     "x": 0.01,
+     "y": 0.27,
+     "w": 0.43,
+     "h": 0.17,
+     "metin": "Yeşil örtülü masada bir keman, nefesli çalgılar ve notalar duruyor. Birlikte müzik yapılacağını, belki bir topluluğu ima eder. Kemanın cilalı tahtası ışığı yakalar; natürmort ustalığının küçük bir gösterisi."
+    },
+    {
+     "ad": "Açık nota kitabı",
+     "x": 0.37,
+     "y": 0.38,
+     "w": 0.23,
+     "h": 0.12,
+     "metin": "Masanın kenarında açık bir nota kitabı var; satırlar ve notalar seçilebilir. Bazı yorumcular resmi işitme duyusunun alegorisi olarak okur, ama bu kesin değildir. Kâğıdın beyazı, bluzun beyazıyla yankılanır."
+    },
+    {
+     "ad": "İpek etek, kadife tabure",
+     "x": 0.7,
+     "y": 0.74,
+     "w": 0.3,
+     "h": 0.26,
+     "metin": "Altın sarısı ipek etek kırık, parlak kıvrımlar yapıyor; altındaki kırmızı tabure örtüsü ise yumuşak ve mat. İki dokunun farklı işlenişi, Orazio'nun kumaş ustalığını gösterir. Renkler sıcak ve sınırlı bir paletten seçilmiş."
+    }
+   ]
   }
  }
 }
