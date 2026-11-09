@@ -1,9 +1,9 @@
 name: Testler
 
+# Yalnız PR'larda çalışır (main'e birleştirince aynı testi ikinci kez koşmasın; GitHub'da gereksiz iş azalsın)
 on:
-  push:
-    branches: [main]
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read

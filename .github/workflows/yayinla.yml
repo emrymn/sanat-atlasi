@@ -1,0 +1,40 @@
+name: Yayınla
+
+# main'e her birleştirmede site Cloudflare Pages'e (sanat-atlasi.pages.dev) yüklenir.
+# Depo ayarlarında CLOUDFLARE_API_TOKEN sırrı (Cloudflare Pages: Edit izni) yoksa adım atlanır.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: yayinla
+  cancel-in-progress: true
+
+jobs:
+  yayinla:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: 934af0e562e2812c13464d2d4dbbb4e4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Yalnız sitenin dosyalarını ayır
+        run: |
+          rsync -a ./ _site/ \
+            --exclude='.git*' --exclude='_site' --exclude='node_modules' \
+            --exclude='tests' --exclude='scripts' --exclude='tools' \
+            --exclude='referans' --exclude='tasarim-A' \
+            --exclude='*.md' --exclude='package*.json' \
+            --exclude='playwright.config.js' --exclude='vercel.json'
+          du -sh _site; find _site -type f | wc -l
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Cloudflare Pages'e yükle
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: npx --yes wrangler@4.157.0 pages deploy _site --project-name sanat-atlasi --branch main --commit-dirty=true
