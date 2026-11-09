@@ -47,6 +47,7 @@
   .kart a.bag { display:inline-flex; align-items:center; min-height:44px; margin-top:6px; color:var(--altin); text-decoration:none; font:500 15px var(--sans); }
   .bulanik { position:fixed; inset:0; z-index:2; pointer-events:none; opacity:0; background:rgba(18,17,16,.55);
     -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px); }
+  section.kart-ustte { justify-content:flex-start; padding-top:calc(env(safe-area-inset-top) + 64px); }
   section.hayat { height:auto; min-height:100svh; justify-content:flex-start; scroll-snap-stop:normal;
     padding:calc(env(safe-area-inset-top) + 84px) 22px calc(env(safe-area-inset-bottom) + 120px); text-shadow:0 1px 3px rgba(0,0,0,.5); }
   .hayat h2 { font:400 30px/1.1 var(--serif); margin-bottom:14px; }
@@ -118,12 +119,51 @@ const al = (u) => fetch(u).then((x) => (x.ok ? x.json() : null)).catch(() => nul
   noktalar.innerHTML = bolumler.map(() => '<i></i>').join('');
   let W, H, D;
   // Kamera her adımda ekranı kaplar (siyah boşluk yok): ölçek en az "kaplama", kayma resmin (kırpılmış) içinde kalır
+  // Ayrıntı adımında kart ayrıntıyı kapatmasın: kartın gerçek boyu ölçülür; ayrıntı resmin alt yarısındaysa kart ekranın
+  // üstüne geçer. Ölçek, ayrıntıyı kartın dışında kalan alana sığdıracak ve resmin kenarı ekrana girmeden oraya
+  // taşıyabilecek kadar seçilir (kenar sınırı yüzünden kamera alttaki bir ayrıntıyı yukarı kaldıramıyordu).
+  const UST_BOSLUK = 64, ALT_BOSLUK = 112, ARA = 14;
+  function noktaAdimi(n, bolum, kapla) {
+    const kart = bolum.querySelector('.kart');
+    const kartH = kart ? kart.offsetHeight : H * 0.4;
+    const cx = (n.x + n.w / 2) * IW, cy = (n.y + n.h / 2) * IH;
+    const sol = kx * IW, sag = (kx + kw) * IW, ust = ky * IH, alt = (ky + kh) * IH;
+    const dene = (kartUstte) => {
+      const aTop = kartUstte ? UST_BOSLUK + kartH + ARA : UST_BOSLUK;
+      const aBot = kartUstte ? H - ALT_BOSLUK : H - ALT_BOSLUK - kartH - ARA;
+      const vy = (aTop + aBot) / 2, alanH = Math.max(80, aBot - aTop);
+      const sigdir = Math.min((W * 0.94) / (n.w * IW), (alanH * 0.92) / (n.h * IH));
+      // istenen ölçek: ayrıntıyı alana sığdıran (en çok 1,1); kenar sınırı yüzünden ayrıntı alanın dışında kalıyorsa
+      // ancak gerektiği kadar büyütülür (ayrıntının ortada olması gerekmez, alanın içinde olması yeter)
+      let sc = Math.max(kapla, Math.min(sigdir, 1.1));
+      const ust0 = n.y * IH, alt0 = (n.y + n.h) * IH;
+      // ayrıntının kartın dışında görünen payı (0–1); resmin kenarı ekrana girmeyeceği için alt kenardaki bir ayrıntı
+      // her zaman tam gösterilemez: o zaman en çok görünen yerleşim seçilir
+      const gorunen = (x) => {
+        const ty = Math.min(-ust * x, Math.max(H - alt * x, vy - cy * x));
+        const y1 = ty + ust0 * x, y2 = ty + alt0 * x;
+        return Math.max(0, Math.min(y2, aBot) - Math.max(y1, aTop)) / Math.max(1, y2 - y1);
+      };
+      let enIyi = sc, enIyiG = gorunen(sc);
+      for (let k = 0, x = sc; k < 25 && enIyiG < 0.97; k++) {
+        x *= 1.08;
+        const g = gorunen(x);
+        if (g > enIyiG + 0.02) { enIyi = x; enIyiG = g; }
+      }
+      return { kartUstte, vy, sc: enIyi, gor: enIyiG };
+    };
+    const altta = dene(false), ustte = dene(true);
+    // ayrıntıyı tam gösteren ve daha az yakınlaşan yerleşim seçilir; ikisi de taşıyorsa daha az taşan
+    // ayrıntının daha çok göründüğü yerleşim; ikisi yakınsa daha az yakınlaşan
+    const sec = Math.abs(altta.gor - ustte.gor) < 0.05 ? (altta.sc <= ustte.sc ? altta : ustte) : altta.gor > ustte.gor ? altta : ustte;
+    bolum.classList.toggle('kart-ustte', sec.kartUstte);
+    return { cx, cy, s: sec.sc, vy: sec.vy };
+  }
   function durumlar() {
     W = innerWidth; H = innerHeight;
-    const ustP = 64, alt = H * 0.44, alanY = ustP + (H - alt - ustP) / 2, alanH = H - alt - ustP;
     const kapla = Math.max(W / (kw * IW), H / (kh * IH));
     const adim = (cx, cy, sc, vy = H / 2) => ({ cx: cx * IW, cy: cy * IH, s: Math.max(kapla, sc), vy });
-    const ns = kayit.noktalar.map((n) => adim(n.x + n.w / 2, n.y + n.h / 2, Math.max(kapla * 1.4, Math.min((W * 0.94) / (n.w * IW), (alanH * 0.94) / (n.h * IH), 1.1)), alanY));
+    const ns = kayit.noktalar.map((n, k) => noktaAdimi(n, bolumler[k + 2], kapla));
     const ilk = adim(odak[0] / 100, odak[1] / 100, kapla);
     const d = [ilk, adim(0.5, 0.5, kapla), ...ns];
     while (d.length < bolumler.length) d.push(adim(1 - odak[0] / 100, 0.5, kapla));
@@ -159,6 +199,8 @@ const al = (u) => fetch(u).then((x) => (x.ok ? x.json() : null)).catch(() => nul
     requestAnimationFrame(kare);
   }
   addEventListener('resize', () => { D = durumlar(); });
+  // yazı tipleri gelince kartların boyu değişir: yeniden ölç
+  document.fonts && document.fonts.ready.then(() => { D = durumlar(); });
   requestAnimationFrame(kare);
 })();
 </script>
