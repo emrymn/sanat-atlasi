@@ -5,7 +5,7 @@ import { gorselUrl, gorselYedek, gorselSayfasi, gorselKaynakYazisi, secilenGorse
 import { eserKonusu } from './ikonografi.js';
 import { hareketAz, gezin } from './gecis.js';
 import { NEDENLER } from './bildirim.js';
-import { noktaOdagi, noktaYeri } from './ayrinti.js';
+import { noktaOdagi, noktaYeri, yakinlasmaSiniri } from './ayrinti.js';
 
 const EN_BUYUK = 6;
 
@@ -462,7 +462,14 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     clearTimeout(netZaman);
     const r = sahne.getBoundingClientRect();
     const tb = net === 1 ? { w: resim.offsetWidth, h: resim.offsetHeight } : taban;
-    const o = noktaOdagi(n, tb, { w: r.width, h: r.height }, { enCok: EN_BUYUK });
+    // İş 165: düşük çözünürlüklü görselde yakınlaşma, görüntü bozulmayacak kadarla sınırlı. En büyük kopyası (4096 px)
+    // olan eserde o kopya henüz ekranda değilse (yakınlaşınca iner) onun boyu esas alınır; ekrandaysa gerçek boyu.
+    const g = secilenGorsel(eserler[sira], kotuler);
+    const devasa = devasaUrl(g);
+    const dogal = Math.max(resim.naturalWidth, resim.naturalHeight);
+    const kaynak = devasa && resim.src !== devasa ? Math.max(dogal, 4096) : dogal;
+    const enCok = yakinlasmaSiniri(kaynak, Math.max(tb.w, tb.h), window.devicePixelRatio, { enCok: EN_BUYUK });
+    const o = noktaOdagi(n, tb, { w: r.width, h: r.height }, { enCok });
     if (o) {
       olcek = o.olcek;
       tx = o.tx;

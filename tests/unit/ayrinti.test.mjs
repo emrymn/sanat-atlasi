@@ -117,3 +117,15 @@ print(json.dumps(h, ensure_ascii=False))
   assert.ok(h.some((x) => x.includes('karakter olmalı')));
   assert.ok(!h.some((x) => x.startsWith('[Q1]') && x.includes('nokta 1:')), h.join('\n'));
 });
+
+// İş 165: yakınlaşma sınırı görselin çözünürlüğüne göre
+test('yakinlasmaSiniri: büyük kopyada 6, 1280 px kopyada az, küçük görselde en az', async () => {
+  const { yakinlasmaSiniri } = await import('../../js/ayrinti.js');
+  // iPhone 13: tablo ekranda ~390 CSS px uzun kenar, dpr 3
+  assert.equal(yakinlasmaSiniri(4096, 390, 3), 5.25);
+  assert.equal(yakinlasmaSiniri(1280, 390, 3), 1.64);
+  assert.equal(yakinlasmaSiniri(471, 390, 3), 1.15); // Höch: 375×471
+  assert.equal(yakinlasmaSiniri(8000, 300, 2), 6); // üst sınır
+  assert.equal(yakinlasmaSiniri(0, 390, 3), 6); // kaynak bilinmiyor
+  assert.equal(yakinlasmaSiniri(1280, 390, 1), 4.92); // dpr 1 (masaüstü)
+});
