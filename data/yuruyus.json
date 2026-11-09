@@ -3151,6 +3151,302 @@
      "metin": "Altın sarısı ipek etek kırık, parlak kıvrımlar yapıyor; altındaki kırmızı tabure örtüsü ise yumuşak ve mat. İki dokunun farklı işlenişi, Orazio'nun kumaş ustalığını gösterir. Renkler sıcak ve sınırlı bir paletten seçilmiş."
     }
    ]
+  },
+  "diego-velazquez": {
+   "eser": "Las Meninas (The Maids of Honor)",
+   "yil": 1656,
+   "qid": "Q208758",
+   "gorsel": "bcb91846d700eabf",
+   "noktalar": [
+    {
+     "ad": "İnfanta Margarita",
+     "x": 0.38,
+     "y": 0.6,
+     "w": 0.17,
+     "h": 0.28,
+     "metin": "Ortada beş yaşındaki İspanya prensesi Margarita, ışığın tam içinde. Resmin adı \"Nedimeler\" ama merkezinde o var; nedimeler onun çevresinde."
+    },
+    {
+     "ad": "Velázquez",
+     "x": 0.15,
+     "y": 0.48,
+     "w": 0.15,
+     "h": 0.22,
+     "metin": "Solda elinde fırça ve paletle ressamın kendisi, bize bakıyor. Göğsündeki kırmızı haç, Santiago tarikatı nişanı; ölümünden sonra eklendiği söylenir."
+    },
+    {
+     "ad": "Dev tuval",
+     "x": 0.0,
+     "y": 0.13,
+     "w": 0.17,
+     "h": 0.82,
+     "metin": "Sol kenarda arkası dönük kocaman bir tuval. Velázquez ne boyuyor? Göremeyiz; resmin büyük bilmecesi bu."
+    },
+    {
+     "ad": "Aynadaki kral ve kraliçe",
+     "x": 0.38,
+     "y": 0.5,
+     "w": 0.08,
+     "h": 0.1,
+     "metin": "Arka duvardaki aynada Kral IV. Felipe ile Kraliçe Mariana'nın belirsiz yüzleri. Yani onlar bizim durduğumuz yerde: herkes onlara, yani bize bakıyor."
+    },
+    {
+     "ad": "Kapıdaki adam",
+     "x": 0.53,
+     "y": 0.5,
+     "w": 0.09,
+     "h": 0.17,
+     "metin": "Arkada aydınlık kapıda merdivende duran adam, saray görevlisi José Nieto. Işığı ve derinliği taşıyan küçük bir figür: göz önce oraya kaçıyor."
+    },
+    {
+     "ad": "Cüce ve köpek",
+     "x": 0.73,
+     "y": 0.6,
+     "w": 0.27,
+     "h": 0.4,
+     "metin": "Sağda saray cücesi Maribárbola ve ayağıyla uyuyan köpeği dürten küçük Nicolasito. Sarayın gündelik hayatı, tören portresinin ciddiyetini bozuyor."
+    }
+   ]
+  },
+  "francisco-de-zurbaran": {
+   "eser": "The Defense of Cadiz Against the English",
+   "yil": 1634,
+   "qid": "Q5801323",
+   "gorsel": "b3807b3653b11d37",
+   "noktalar": [
+    {
+     "ad": "Koltuktaki general",
+     "x": 0.05,
+     "y": 0.38,
+     "w": 0.27,
+     "h": 0.57,
+     "metin": "Solda koltukta oturan beyaz sakallı adam Cádiz valisi Fernando Girón; gut hastasıydı, savunmayı oturduğu yerden yönetti. Elindeki asayla emir veriyor."
+    },
+    {
+     "ad": "Körfezdeki filo",
+     "x": 0.1,
+     "y": 0.1,
+     "w": 0.65,
+     "h": 0.32,
+     "metin": "Arkada körfezde İngiliz gemileri ve kıyıya çıkan askerler. 1625'te İngiliz-Hollanda donanması Cádiz'e saldırdı ve geri püskürtüldü."
+    },
+    {
+     "ad": "Zırhlı subaylar",
+     "x": 0.4,
+     "y": 0.38,
+     "w": 0.27,
+     "h": 0.57,
+     "metin": "Ortada zırhlı, kuşaklı subaylar emirleri bekliyor. Zurbarán dini resimleriyle tanınır; bu nadir tarih resmi Madrid'deki Buen Retiro sarayının Krallık Salonu için yapıldı."
+    },
+    {
+     "ad": "Şapkalı soylular",
+     "x": 0.73,
+     "y": 0.35,
+     "w": 0.27,
+     "h": 0.6,
+     "metin": "Sağda geniş şapkalı, kabarık pantolonlu soylular. Giysilerin desenleri ve kumaşlar tek tek boyanmış; zafer bir defile gibi."
+    },
+    {
+     "ad": "Kale kulesi",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.12,
+     "h": 0.6,
+     "metin": "Sol kenarda kalenin taş kulesi sahneyi çerçeveliyor. Ön plandaki dingin grup ile arkadaki savaş arasında büyük bir mesafe var."
+    }
+   ]
+  },
+  "peter-paul-rubens": {
+   "eser": "The Fall of the Damned",
+   "yil": 1621,
+   "qid": "Q203259",
+   "gorsel": "ad9b916603c6b8d6",
+   "noktalar": [
+    {
+     "ad": "Göksel ışık",
+     "x": 0.15,
+     "y": 0.0,
+     "w": 0.4,
+     "h": 0.25,
+     "metin": "Sol üstte bir ışık patlaması ve kılıçlı başmelek Mikail: lanetlileri yukarıdan aşağı itiyor. Kıyamet günü, Tanrı'nın yargısı."
+    },
+    {
+     "ad": "Düşen bedenler",
+     "x": 0.2,
+     "y": 0.2,
+     "w": 0.7,
+     "h": 0.55,
+     "metin": "Resmin tamamı birbirine dolanmış, aşağı yuvarlanan çıplak bedenlerden bir şelale. Rubens hareketi ve beden ağırlığını Barok'ta en coşkulu biçimde boyayan ressamdı."
+    },
+    {
+     "ad": "Cehennemin ağzı",
+     "x": 0.0,
+     "y": 0.75,
+     "w": 1.0,
+     "h": 0.25,
+     "metin": "Altta iblisler ve hayvan yüzlü yaratıklar düşenleri karanlığa çekiyor. Isıyı ve dumanı kızıl-kahverengi tonlar taşıyor."
+    },
+    {
+     "ad": "Kıvranan yüzler",
+     "x": 0.4,
+     "y": 0.4,
+     "w": 0.4,
+     "h": 0.3,
+     "metin": "Yakından bakınca her yüzde ayrı bir korku, utanç ya da çaresizlik var. Rubens bu dev kompozisyonu 1620 civarında, büyük atölyesiyle birlikte yaptı; şimdi Münih'te."
+    }
+   ]
+  },
+  "anthony-van-dyck": {
+   "eser": "The Vision of the Blessed Hermann Joseph",
+   "yil": 1629,
+   "qid": "Q16038543",
+   "gorsel": "6b9b46e8061a93ad",
+   "noktalar": [
+    {
+     "ad": "Meryem",
+     "x": 0.08,
+     "y": 0.1,
+     "w": 0.38,
+     "h": 0.85,
+     "metin": "Pembe ve mavi giysili Meryem eğilmiş, Premonstratensian rahibine elini uzatıyor. Van Dyck, Rubens'in en parlak öğrencisiydi; kumaşların ipeksi ışığı onun imzası."
+    },
+    {
+     "ad": "Rahip Hermann Joseph",
+     "x": 0.5,
+     "y": 0.35,
+     "w": 0.48,
+     "h": 0.62,
+     "metin": "Beyaz cüppeli genç rahip diz çökmüş. 12. yüzyılda Köln'de yaşamış Hermann Joseph'in Meryem'le gizemli bir evlilik yaptığına inanılırdı."
+    },
+    {
+     "ad": "Yüzük",
+     "x": 0.38,
+     "y": 0.48,
+     "w": 0.25,
+     "h": 0.12,
+     "metin": "İki el ortada buluşuyor: Meryem rahibe bir yüzük takıyor. Manevi nişan; rahibin hayatını Meryem'e adamasının işareti."
+    },
+    {
+     "ad": "Melek",
+     "x": 0.45,
+     "y": 0.08,
+     "w": 0.4,
+     "h": 0.4,
+     "metin": "Sağ üstte sarı kanatlı bir melek, rahibin elini Meryem'e doğru yönlendiriyor. Resim Anvers'teki bir dini kardeşlik için yapıldı."
+    }
+   ]
+  },
+  "rembrandt-van-rijn": {
+   "eser": "The Return of the Prodigal Son",
+   "yil": 1668,
+   "qid": "Q512755",
+   "gorsel": "294a50e3d597e924",
+   "noktalar": [
+    {
+     "ad": "Babanın iki eli",
+     "x": 0.18,
+     "y": 0.51,
+     "w": 0.2,
+     "h": 0.12,
+     "metin": "Baba iki eliyle oğlunun sırtını tutuyor. Bazı yorumcular iki elin birbirinden farklı göründüğünü, birinin daha iri, öbürünün daha ince olduğunu öne sürer ve bunu babalık ile annelik şefkatinin birleşimi olarak okur. Bu yorum yaygındır ama kesin değildir."
+    },
+    {
+     "ad": "Kazınmış baş",
+     "x": 0.22,
+     "y": 0.46,
+     "w": 0.12,
+     "h": 0.09,
+     "metin": "Diz çökmüş oğul başını babasının göğsüne yaslamış. Başı kazınmış, giysisi yırtık; yüzü neredeyse görünmez. Yoksulluğa ve düşkünlüğe düşmüş birinin her şeyini kaybetmiş hâlidir."
+    },
+    {
+     "ad": "Babanın yüzü",
+     "x": 0.22,
+     "y": 0.3,
+     "w": 0.14,
+     "h": 0.13,
+     "metin": "Kırmızı pelerinli yaşlı baba öne eğilmiş, gözleri neredeyse kapalı. Oğlunu görmekten çok dokunarak tanıyor gibidir. Meselin özü koşulsuz bağışlamadır."
+    },
+    {
+     "ad": "Çıplak ayak tabanı",
+     "x": 0.08,
+     "y": 0.86,
+     "w": 0.23,
+     "h": 0.11,
+     "metin": "Oğlun bir ayakkabısı çıkmış, öbürü yıpranmış; çıplak ayak tabanı nasırlı. Uzun yolculuğun ve yoksulluğun en somut işaretidir. Rembrandt bu ayrıntıyı ışığın en sıcak yerine koyar."
+    },
+    {
+     "ad": "Büyük oğul",
+     "x": 0.73,
+     "y": 0.13,
+     "w": 0.17,
+     "h": 0.33,
+     "metin": "Sağda elleri kavuşmuş, aynı kırmızıyı taşıyan uzun boylu adam genellikle büyük oğul olarak yorumlanır. Işıktadır ama kucaklaşmanın dışında kalır. Bu mesafe, meseldeki kırgınlığını hatırlatır."
+    },
+    {
+     "ad": "Oturan bereli adam",
+     "x": 0.58,
+     "y": 0.33,
+     "w": 0.15,
+     "h": 0.16,
+     "metin": "Ortada siyah bereli bir adam oturmuş, sahneyi izliyor. Kimliği tartışmalıdır; bir hizmetkâr ya da tanık olabilir. Karanlıktan zor seçilen öbür yüzlerle birlikte sahnenin sessiz izleyicileridir."
+    }
+   ]
+  },
+  "hyacinthe-rigaud": {
+   "eser": "Portrait of Louis XIV",
+   "yil": 1701,
+   "qid": "Q3399440",
+   "gorsel": "2abb7af9be90572c",
+   "noktalar": [
+    {
+     "ad": "Yaşlı yüz",
+     "x": 0.4,
+     "y": 0.16,
+     "w": 0.17,
+     "h": 0.17,
+     "metin": "Kral bize yukarıdan bakıyor; yüz altmışını geçmiş bir adamın gerçekçi, kırışık yüzü. Uzun kıvırcık peruk dönemin saray modasıdır. Yüzdeki yaşlılık ile gövdenin ihtişamı arasındaki karşıtlık resmin en çarpıcı yanıdır."
+    },
+    {
+     "ad": "Ters tutulan asa",
+     "x": 0.15,
+     "y": 0.37,
+     "w": 0.1,
+     "h": 0.2,
+     "metin": "Sağ eli asayı ters çevirmiş, bir baston gibi tutuyor. Kimi yorumculara göre bu gelişigüzel tutuş, iktidarın zahmetsiz ve doğal olduğunu ima eder. Asa taç giyme töreninin nesnelerinden biridir."
+    },
+    {
+     "ad": "Taç ve adalet eli",
+     "x": 0.01,
+     "y": 0.57,
+     "w": 0.25,
+     "h": 0.1,
+     "metin": "Solda yastığın üstünde taç ve ucunda küçük beyaz bir el bulunan adalet asası duruyor. İkisi de taç giyme töreninin nesneleridir. Kralın gücünün Tanrı'dan geldiği düşüncesini vurgular."
+    },
+    {
+     "ad": "Kılıç",
+     "x": 0.5,
+     "y": 0.51,
+     "w": 0.09,
+     "h": 0.1,
+     "metin": "Kralın belinde altın kabzalı bir kılıç var. Kılıç da taç giyme töreninin nesnelerindendir ve kralın koruyucu, savaşçı rolünü anlatır. Kürkün beyazında altın parıltı hemen göze çarpar."
+    },
+    {
+     "ad": "Zambaklar ve kakım kürkü",
+     "x": 0.3,
+     "y": 0.52,
+     "w": 0.15,
+     "h": 0.12,
+     "metin": "Mavi kadife pelerin altın zambaklarla (fleur-de-lis) bezeli; bu, Fransız krallığının amblemidir. Pelerinin içi siyah benekli beyaz kakım kürkü (hermin), yalnızca hükümdarlara ayrılmış bir kürktü. Pelerin kralın bedeninden çok krallığın kendisini giydirir."
+    },
+    {
+     "ad": "Kırmızı topuklar",
+     "x": 0.38,
+     "y": 0.83,
+     "w": 0.2,
+     "h": 0.11,
+     "metin": "Beyaz çoraplar ve tokalı ayakkabıların kırmızı topukları resmin alt ortasında. Kırmızı topuk dönemin saray soyluluğuna özgü bir ayrıcalık işaretiydi. Bacaklar, yaşlı yüzün aksine genç bir dansçınınki gibi zarif gösterilmiş."
+    }
+   ]
   }
  }
 }
