@@ -1823,6 +1823,222 @@
      "metin": "Sol alt köşedeki küçük levhada Latince bir yazıt var. Tasarımın Raffaello'ya ait olduğu bilinir; Raimondi onu gravüre çevirmiştir. Bu ortaklık baskıyı büyük ustaların buluşlarını Avrupa'ya yayan bir araca dönüştürdü."
     }
    ]
+  },
+  "titian": {
+   "eser": "Bacchus ve Ariadne",
+   "yil": 1520,
+   "qid": "Q1206860",
+   "gorsel": "1e0d4386895b479c",
+   "noktalar": [
+    {
+     "ad": "Arabadan atlayan Bakkhus",
+     "x": 0.33,
+     "y": 0.23,
+     "w": 0.3,
+     "h": 0.48,
+     "metin": "Şarap tanrısı Bakkhus asma yapraklı taçla arabasından havaya fırlamış, pembe pelerini dalgalanıyor. Ariadne'yi görür görmez ona âşık oldu: resim bu ilk bakışın anını donduruyor."
+    },
+    {
+     "ad": "Ariadne",
+     "x": 0.0,
+     "y": 0.44,
+     "w": 0.2,
+     "h": 0.44,
+     "metin": "Ariadne, Theseus tarafından Naksos adasında terk edilmişti; arkasında denizde uzaklaşan geminin küçük yelkeni görünüyor. Hem kaçıyor hem dönüp bakıyor: korku ile merak aynı bedende."
+    },
+    {
+     "ad": "Yıldızlar",
+     "x": 0.07,
+     "y": 0.01,
+     "w": 0.15,
+     "h": 0.07,
+     "metin": "Sol üstteki sekiz yıldız Kuzey Tacı takımyıldızı (Corona Borealis). Mite göre Bakkhus Ariadne'nin tacını göğe fırlatıp yıldızlara çevirdi: hikâyenin sonu resmin köşesinde."
+    },
+    {
+     "ad": "Çitalar",
+     "x": 0.19,
+     "y": 0.6,
+     "w": 0.18,
+     "h": 0.24,
+     "metin": "Bakkhus'un arabasını kaplan yerine iki çita çekiyor. Titian bunları Ferrara Dükü Alfonso d'Este'nin hayvan bahçesinde görmüş olabilir; resim onun çalışma odası için yapıldı."
+    },
+    {
+     "ad": "Yılanlı adam",
+     "x": 0.66,
+     "y": 0.43,
+     "w": 0.2,
+     "h": 0.53,
+     "metin": "Bedenine yılanlar sarılmış kaslı adam, antik çağın ünlü Laokoon heykelinden esinlenmiş; heykel 1506'da Roma'da bulunmuştu. Bakkhus'un coşkulu alayının bir üyesi."
+    },
+    {
+     "ad": "Satir çocuk",
+     "x": 0.42,
+     "y": 0.62,
+     "w": 0.15,
+     "h": 0.33,
+     "metin": "Önde keçi bacaklı küçük bir satir yerde bir buzağı başını sürüklüyor, bize bakıyor. Yanında havlayan küçük köpek. Alayın gürültüsü ve hayvanlığı bu ayrıntılarla geliyor."
+    },
+    {
+     "ad": "İmza vazosu",
+     "x": 0.08,
+     "y": 0.85,
+     "w": 0.12,
+     "h": 0.1,
+     "metin": "Sol altta yere düşmüş bir altın vazo var; üstünde \"TICIANUS F(ecit)\" yazıyor: \"Titian yaptı\". Ressam imzasını resmin içindeki bir nesneye saklamış."
+    }
+   ]
+  },
+  "giovanni-bellini": {
+   "eser": "The Feast of the Gods",
+   "yil": 1514,
+   "qid": "Q15008032",
+   "gorsel": "df63f84eecbc3446",
+   "noktalar": [
+    {
+     "ad": "Uyuyan peri ve Priapos",
+     "x": 0.77,
+     "y": 0.57,
+     "w": 0.22,
+     "h": 0.33,
+     "metin": "Sağda ağaca yaslanmış uyuyan peri Lotis, üstüne eğilen adam Priapos. Ovidius'a göre Priapos ona sinsice yaklaşırken bir eşek anırdı, Lotis uyandı ve herkes güldü; resim o anın hemen öncesi."
+    },
+    {
+     "ad": "Anıran eşek",
+     "x": 0.13,
+     "y": 0.53,
+     "w": 0.16,
+     "h": 0.24,
+     "metin": "Soldaki eşek Silenos'un eşeği; birazdan anırıp Priapos'un planını bozacak. Eşeğin yanında eğilmiş yaşlı adam Silenos."
+    },
+    {
+     "ad": "Miğferli Merkür",
+     "x": 0.3,
+     "y": 0.62,
+     "w": 0.17,
+     "h": 0.27,
+     "metin": "Ortada metal miğferli genç Merkür yere uzanmış. Tanrılar hiç de tanrı gibi değil: bir köy pikniğindeki sıradan insanlar gibi yiyip içiyor, yere yayılmış."
+    },
+    {
+     "ad": "Çin porselenleri",
+     "x": 0.34,
+     "y": 0.55,
+     "w": 0.32,
+     "h": 0.2,
+     "metin": "Satirlerin başlarında ve elinde taşıdığı mavi-beyaz kâseler Çin'den gelen Ming porseleni. 1514'te Avrupa'da çok az bulunan, çok pahalı nesnelerdi: Venedik'in doğuyla ticaretinin izi."
+    },
+    {
+     "ad": "Titian'ın manzarası",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.58,
+     "h": 0.45,
+     "metin": "Arkadaki koyu kayalık dağ Bellini'nin değil. Bellini 1516'da ölünce resmi öğrencisi Titian, Ferrara Dükü'nün odasındaki kendi resimlerine uysun diye yeniden boyadı. Tek tuvalde iki usta."
+    },
+    {
+     "ad": "Ağaçtaki kuş",
+     "x": 0.79,
+     "y": 0.15,
+     "w": 0.08,
+     "h": 0.08,
+     "metin": "Sağ üstte bir dalda uzun kuyruklu bir kuş tünemiş. Bütün o kalabalığın üstünde sakin bir izleyici; Bellini doğanın küçük ayrıntılarını hep severdi."
+    }
+   ]
+  },
+  "giorgione": {
+   "eser": "Yudit",
+   "yil": 1504,
+   "qid": "Q2537695",
+   "gorsel": "eb8c139d8dece1e7",
+   "noktalar": [
+    {
+     "ad": "Sakin yüz",
+     "x": 0.43,
+     "y": 0.14,
+     "w": 0.24,
+     "h": 0.13,
+     "metin": "Judith başını eğmiş, gözleri yere bakıyor; yüzünde ne öfke ne korku var. Giorgione kanlı bir hikâyeyi neredeyse bir rüya sessizliğiyle anlatıyor."
+    },
+    {
+     "ad": "Kılıç",
+     "x": 0.16,
+     "y": 0.37,
+     "w": 0.17,
+     "h": 0.43,
+     "metin": "Sağ elinde neredeyse kendi boyu kadar uzun bir kılıca dayanıyor. Eski Ahit'teki Judit Kitabı'na göre Bethulia şehrini kuşatan Asur komutanı Holofernes'in başını bu kılıçla kesti."
+    },
+    {
+     "ad": "Holofernes'in başı",
+     "x": 0.46,
+     "y": 0.86,
+     "w": 0.28,
+     "h": 0.1,
+     "metin": "Çıplak ayağının altında Holofernes'in kesik başı duruyor; Judith ona basmış ama bakmıyor. Erdemin kibri ezmesi: Venedik için bu, şehri tehdit edenlere karşı zaferin de imgesiydi."
+    },
+    {
+     "ad": "Açık bacak",
+     "x": 0.47,
+     "y": 0.55,
+     "w": 0.25,
+     "h": 0.33,
+     "metin": "Elbisenin yırtmacından uzanan çıplak bacak, sakin yüzle tuhaf bir karşıtlık kuruyor. Judith Holofernes'i güzelliğiyle kandırmıştı; resim bu ikiliği saklamıyor."
+    },
+    {
+     "ad": "Manzara",
+     "x": 0.0,
+     "y": 0.3,
+     "w": 0.32,
+     "h": 0.3,
+     "metin": "Sol arkada uzakta mavimsi dağlar ve bir şehir. Giorgione Venedik resminde manzarayı, figürlerin ruh hâlini taşıyan bir atmosfer olarak kullanan ilk ressamlardandı."
+    }
+   ]
+  },
+  "tintoretto": {
+   "eser": "Saint George and the Dragon",
+   "yil": 1555,
+   "qid": "Q1984131",
+   "gorsel": "ff3cda4a0775290c",
+   "noktalar": [
+    {
+     "ad": "Kaçan prenses",
+     "x": 0.4,
+     "y": 0.6,
+     "w": 0.6,
+     "h": 0.4,
+     "metin": "Önde pembe pelerinli prenses kollarını açmış, bize doğru kaçıyor; resmin en büyük figürü kahraman değil o. Tintoretto izleyiciyi hikâyenin ortasına, kaçan kızın önüne koyuyor."
+    },
+    {
+     "ad": "Aziz Georgios",
+     "x": 0.28,
+     "y": 0.36,
+     "w": 0.42,
+     "h": 0.2,
+     "metin": "Arkada beyaz atlı Georgios mızrağını ejderhaya saplıyor. Asıl savaş sahnenin ortasında değil, uzakta ve çapraz bir çizgide: Tintoretto'nun dramatik, eğik kompozisyonları böyledir."
+    },
+    {
+     "ad": "Ejderha",
+     "x": 0.08,
+     "y": 0.42,
+     "w": 0.24,
+     "h": 0.21,
+     "metin": "Soldaki ejderha kıyıda, denizden çıkmış gibi; dikenli kanatları kıvrılmış. Efsaneye göre şehrin suyunu tutan canavardı."
+    },
+    {
+     "ad": "Yerde yatan ceset",
+     "x": 0.33,
+     "y": 0.53,
+     "w": 0.38,
+     "h": 0.14,
+     "metin": "Ortada çarmıhtaki gibi kolları açık yatan çıplak bir ceset var: ejderhanın daha önceki kurbanı. Duruşu bilerek İsa'yı hatırlatıyor."
+    },
+    {
+     "ad": "Gökteki ışık",
+     "x": 0.2,
+     "y": 0.0,
+     "w": 0.6,
+     "h": 0.2,
+     "metin": "Gökte bulutların arasında parlak bir ışık ve içinde ilahi bir figür beliriyor; ışınları savaşın üstüne iniyor. Georgios'un zaferinin Tanrı'dan geldiğinin işareti."
+    }
+   ]
   }
  }
 }
