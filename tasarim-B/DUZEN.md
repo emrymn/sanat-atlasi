@@ -2,7 +2,7 @@
 
 Bu dosya v0 (ya da başka bir uygulayıcı) için yeni bilgi mimarisinin taslağıdır. Görsel üslup (renkler, yazı tipleri, Tuval'in kenardan kenara resmi, Yolculuk haritası) **değişmiyor**. Değişen şey: neyin nerede, hangi sırayla ve ne kadar büyük göründüğü.
 
-Güncel kararlar: Bugün için `ana-c.html` (C1), sekmeler için 3. bölüm. `taslak.html` (ve `taslak.jpg`) ilk taslaktır; Bugün ekranı ve 4 sekme orada eskidir, diğer ekranların yerleşimi geçerli. Bütün çizimler 390×844 tel kafestir: örnek sanatçı, sayılar ve rozetler temsilî.
+Güncel kararlar: Bugün için `ana-c.html`'deki C1, sekmeler için 3. bölüm. `taslak.html` (ve `taslak.jpg`) ilk taslaktır; Bugün ekranı ve 4 sekme orada eskidir, diğer ekranların yerleşimi geçerli. Bütün çizimler 390×844 tel kafestir: örnek sanatçı, sayılar ve rozetler temsilî.
 
 ## 1. Sorun
 
@@ -48,7 +48,7 @@ Alt çubuk **5 sekme** (Emre: "illaki 4 olacak diye bir şey yok"; iPhone geniş
 
 ### 4.1 Bugün (`#/`) — en önemli ekran, en sade ekran
 
-Emre'nin kararı: resim öne çıksın, altında açıklama yazısı olmasın, "devam et / tur" düğmesi olmasın. Çizim: `ana-c.html` / `ana-c.jpg` (C1 önerilen, C2 seçenek).
+Emre'nin kararı: resim öne çıksın, altında açıklama yazısı olmasın, "devam et / tur" düğmesi olmasın. Çizim: `ana-c.html` / `ana-c.jpg`, **soldaki C1** (Emre seçti; sağdaki C2 uygulanmayacak).
 
 ```
 ┌──────────────────────────────┐
@@ -70,7 +70,6 @@ Emre'nin kararı: resim öne çıksın, altında açıklama yazısı olmasın, "
   - **İncele** → rehberli inceleme (`eser_ayrintilari.json`). Yoksa görünmez.
   - **<Sanatçının kısa adı>** → `#/gunun` (hayatı, nasıl tanırım, eserleri; bugünkü sayfa).
   - Üçü de yoksa (yalnız sanatçı düğmesi kalır) tek düğme sola yaslanır.
-- **C2 seçeneği:** aynı üç düğme yalnız ikon (52 px yuvarlak). Emre C1 ile C2 arasında seçecek; C1 önerilen.
 - **Resme dokununca** (düğmelerin dışında) resim tam ekran görüntüleyicide açılır (yakınlaştırma).
 - **Aşağı kaydırma yok:** Bugün tek ekran. Biyografi, eser şeridi, özet sayılar ve "sıradaki konu" buradan kalkar:
   - biyografi ve eserler → `#/gunun` (sanatçı düğmesi),
