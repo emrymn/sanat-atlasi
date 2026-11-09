@@ -26,7 +26,7 @@ import { olaylariBagla as haritaOlaylari } from './ekranlar/harita.js';
 function swKaydet() {
   if (!('serviceWorker' in navigator)) return;
   const ilkKontrol = !!navigator.serviceWorker.controller;
-  navigator.serviceWorker.register('sw.js').catch((e) => console.warn('SW kaydedilemedi', e));
+  const kayit = navigator.serviceWorker.register('sw.js').catch((e) => console.warn('SW kaydedilemedi', e));
   let yenilendi = false;
   navigator.serviceWorker.addEventListener('controllerchange', () => {
     if (!ilkKontrol || yenilendi) return;
@@ -35,9 +35,9 @@ function swKaydet() {
   });
   // İş 63: iOS ana ekran uygulaması kapatılmayıp arka plana atılınca geri dönüşte eski sayfa sürer ve bildirim bir daha
   // çıkmaz (yeni sürüm inmiş ama sayfa eski). Yeni sürüm indiyse arka plandan dönüşte kendiliğinden yenilenir;
-  // yarım oturum kayıtlı olduğundan (Bugün'deki devam kartı) kayıp olmaz.
+  // yarım oturum kayıtlı olduğundan kayıp olmaz. İş 164: iOS güncellemeyi günlerce denetlemeyebiliyor; öne gelişte sorulur.
   document.addEventListener('visibilitychange', () => {
-    if (yenilendi && document.visibilityState === 'visible') location.reload();
+    if (document.visibilityState === 'visible') yenilendi ? location.reload() : kayit.then((r) => r && r.update()).catch(() => {});
   });
 }
 
