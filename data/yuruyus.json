@@ -413,6 +413,62 @@
     }
    ]
   },
+  "gentile-da-fabriano": {
+   "eser": "Müneccim Kralların Hayranlığı (Fabriano)",
+   "yil": 1423,
+   "qid": "Q1055117",
+   "gorsel": "5f89fc48ceabb25d",
+   "noktalar": [
+    {
+     "ad": "Ayağı öpen kral",
+     "x": 0.26,
+     "y": 0.6,
+     "w": 0.14,
+     "h": 0.12,
+     "metin": "En yaşlı kral tacını yere bırakmış, diz çöküp bebeğin ayağını öpüyor. Taçların çıkarılması dünyevi gücün ilahi otoritenin önünde eğilmesidir. Üç kral insan hayatının üç evresini de simgeler."
+    },
+    {
+     "ad": "Genç kral ve uşak",
+     "x": 0.48,
+     "y": 0.52,
+     "w": 0.14,
+     "h": 0.27,
+     "metin": "En genç kral ayakta sırasını bekliyor; giysisindeki altın desenler pastiglia (kabartma alçı üstüne altın varak) ile yüzeyden gerçekten kabarır. Ayağının dibinde eğilmiş bir uşak mahmuzunu çıkarıyor. Lüks, sipariş veren bankacı Palla Strozzi'nin servetini yansıtır."
+    },
+    {
+     "ad": "Kralların yolculuğu",
+     "x": 0.37,
+     "y": 0.3,
+     "w": 0.26,
+     "h": 0.13,
+     "metin": "Üstteki lünetlerde (kemer altındaki yarım daire alan) kralların atlı yolculuğu sürüyor. Hikâye bu uzak yolculuktan ön plandaki buluşmaya zikzaklarla iner. Tek panoda zaman içinde ilerleyen bir anlatıdır."
+    },
+    {
+     "ad": "Av hayvanları",
+     "x": 0.64,
+     "y": 0.71,
+     "w": 0.18,
+     "h": 0.1,
+     "metin": "Sağ altta beyaz bir tazı yatıyor; maiyette atlar, şahinler ve maymunlar da var. Egzotik hayvanlar Doğu'yu çağrıştırır ve saray zevkini gösterir. Uluslararası Gotik'in süslü bolluğunun tipik bir parçası."
+    },
+    {
+     "ad": "Gece ışığında Doğuş",
+     "x": 0.14,
+     "y": 0.86,
+     "w": 0.21,
+     "h": 0.08,
+     "metin": "Alttaki predellanın (sunak tablosunun alt şeridi) ilk sahnesinde karanlık gecede ışık bebek İsa'dan yayılıyor. Dönemin erken gece sahnelerinden biri. Ortada Mısır'a Kaçış, sağda Tapınağa Takdim izler."
+    },
+    {
+     "ad": "İmza ve tarih",
+     "x": 0.24,
+     "y": 0.81,
+     "w": 0.16,
+     "h": 0.035,
+     "metin": "Çerçevenin alt kenarında \"OPVS GENTILIS DE FABRIANO\" imzası okunur; aynı satırın sağında \"MCCCCXXIII MENSIS MAII\", yani Mayıs 1423 yazar. Aynı yıllarda Masaccio Floransa'da sade, hacimli figürlerini geliştiriyordu."
+    }
+   ]
+  },
   "domenico-di-michelino": {
    "eser": "Dante Alighieri with Florence and the Realms of the Divine Comedy (Hell, Purgatory, Paradise)",
    "yil": 1465,
@@ -820,62 +876,6 @@
     }
    ]
   },
-  "gentile-da-fabriano": {
-   "eser": "Müneccim Kralların Hayranlığı (Fabriano)",
-   "yil": 1423,
-   "qid": "Q1055117",
-   "gorsel": "5f89fc48ceabb25d",
-   "noktalar": [
-    {
-     "ad": "Ayağı öpen kral",
-     "x": 0.26,
-     "y": 0.6,
-     "w": 0.14,
-     "h": 0.12,
-     "metin": "En yaşlı kral tacını yere bırakmış, diz çöküp bebeğin ayağını öpüyor. Taçların çıkarılması dünyevi gücün ilahi otoritenin önünde eğilmesidir. Üç kral insan hayatının üç evresini de simgeler."
-    },
-    {
-     "ad": "Genç kral ve uşak",
-     "x": 0.48,
-     "y": 0.52,
-     "w": 0.14,
-     "h": 0.27,
-     "metin": "En genç kral ayakta sırasını bekliyor; giysisindeki altın desenler pastiglia (kabartma alçı üstüne altın varak) ile yüzeyden gerçekten kabarır. Ayağının dibinde eğilmiş bir uşak mahmuzunu çıkarıyor. Lüks, sipariş veren bankacı Palla Strozzi'nin servetini yansıtır."
-    },
-    {
-     "ad": "Kralların yolculuğu",
-     "x": 0.37,
-     "y": 0.3,
-     "w": 0.26,
-     "h": 0.13,
-     "metin": "Üstteki lünetlerde (kemer altındaki yarım daire alan) kralların atlı yolculuğu sürüyor. Hikâye bu uzak yolculuktan ön plandaki buluşmaya zikzaklarla iner. Tek panoda zaman içinde ilerleyen bir anlatıdır."
-    },
-    {
-     "ad": "Av hayvanları",
-     "x": 0.64,
-     "y": 0.71,
-     "w": 0.18,
-     "h": 0.1,
-     "metin": "Sağ altta beyaz bir tazı yatıyor; maiyette atlar, şahinler ve maymunlar da var. Egzotik hayvanlar Doğu'yu çağrıştırır ve saray zevkini gösterir. Uluslararası Gotik'in süslü bolluğunun tipik bir parçası."
-    },
-    {
-     "ad": "Gece ışığında Doğuş",
-     "x": 0.14,
-     "y": 0.86,
-     "w": 0.21,
-     "h": 0.08,
-     "metin": "Alttaki predellanın (sunak tablosunun alt şeridi) ilk sahnesinde karanlık gecede ışık bebek İsa'dan yayılıyor. Dönemin erken gece sahnelerinden biri. Ortada Mısır'a Kaçış, sağda Tapınağa Takdim izler."
-    },
-    {
-     "ad": "İmza ve tarih",
-     "x": 0.24,
-     "y": 0.81,
-     "w": 0.16,
-     "h": 0.035,
-     "metin": "Çerçevenin alt kenarında \"OPVS GENTILIS DE FABRIANO\" imzası okunur; aynı satırın sağında \"MCCCCXXIII MENSIS MAII\", yani Mayıs 1423 yazar. Aynı yıllarda Masaccio Floransa'da sade, hacimli figürlerini geliştiriyordu."
-    }
-   ]
-  },
   "pietro-perugino": {
    "eser": "İsa'nın Anahtarları Petrus'a Vermesi (Perugino)",
    "yil": 1480,
@@ -921,6 +921,418 @@
      "w": 0.22,
      "h": 0.43,
      "metin": "Sağ uçtaki havarilerin arasına çağdaş kişiler katılmış. Siyah bereli, bize bakan adam Perugino'nun kendisi sayılır. Antik giysili kutsal figürlerle 1480'lerin Roma'sı yan yanadır."
+    }
+   ]
+  },
+  "albrecht-durer": {
+   "eser": "Self-Portrait",
+   "yil": 1498,
+   "qid": "Q2388965",
+   "gorsel": "c180f7a018fb389a",
+   "noktalar": [
+    {
+     "ad": "Yüz ve bukleler",
+     "x": 0.4,
+     "y": 0.13,
+     "w": 0.25,
+     "h": 0.28,
+     "metin": "Dürer kendini yirmi altı yaşında, uzun bukleli ve bakımlı sakallı, bize yandan bakarken çizmiş. Bir zanaatkârdan çok bir soylu gibi: ressamın toplumdaki yerini yükseltme iddiası."
+    },
+    {
+     "ad": "Püsküllü şapka",
+     "x": 0.22,
+     "y": 0.06,
+     "w": 0.38,
+     "h": 0.24,
+     "metin": "Siyah-beyaz çizgili şapka ve uzun püskül dönemin en şık modası. Dürer İtalya'da ressamların saygı gördüğünü görmüştü; Nürnberg'de de kendini öyle sunuyor."
+    },
+    {
+     "ad": "Pencereden Alpler",
+     "x": 0.8,
+     "y": 0.03,
+     "w": 0.19,
+     "h": 0.47,
+     "metin": "Sağdaki pencereden karlı dağlar, bir göl ve tepeler görünüyor. Dürer Venedik'e giderken Alpleri geçmiş ve yol boyunca suluboya manzaralar yapmıştı; bu, o yolculuğun hatırası."
+    },
+    {
+     "ad": "Yazıt ve monogram",
+     "x": 0.77,
+     "y": 0.6,
+     "w": 0.2,
+     "h": 0.11,
+     "metin": "Pencerenin altında Almanca yazı: \"1498. Bunu kendi suretime göre boyadım; yirmi altı yaşındaydım. Albrecht Dürer.\" Altında ünlü AD monogramı: Dürer bu harfleri bir marka gibi kullanan ilk sanatçılardandı."
+    },
+    {
+     "ad": "Eldivenli eller",
+     "x": 0.72,
+     "y": 0.82,
+     "w": 0.22,
+     "h": 0.15,
+     "metin": "Eller ince deri eldivenlerin içinde, kenarda birbirine kavuşmuş. Ressamın eli, iş gören bir el gibi değil, bir beyefendinin eli gibi gösterilmiş."
+    }
+   ]
+  },
+  "robert-campin": {
+   "eser": "Donor Henri de Werl, protected by St. John the Baptist",
+   "yil": 1438,
+   "qid": "Q18508784",
+   "gorsel": "631617ec64c6ef4d",
+   "noktalar": [
+    {
+     "ad": "Yahya ve kuzu",
+     "x": 0.08,
+     "y": 0.38,
+     "w": 0.5,
+     "h": 0.53,
+     "metin": "Kırmızı pelerinli, altında deve kılı giysili Vaftizci Yahya elindeki kitabın üstünde bir kuzuyu gösteriyor. Kuzu, Yahya'nın İsa için söylediği \"İşte Tanrı'nın Kuzusu\" sözünden gelir ve onun işaretidir."
+    },
+    {
+     "ad": "Bükey ayna",
+     "x": 0.45,
+     "y": 0.33,
+     "w": 0.2,
+     "h": 0.15,
+     "metin": "Arkadaki yuvarlak bükey aynada odanın içi ve iki küçük figür yansıyor. Dört yıl önce van Eyck'in Arnolfini Portresi'ndeki aynayı akla getirir: Flaman ressamları ışığın ve yansımanın ustasıydı."
+    },
+    {
+     "ad": "Heinrich von Werl",
+     "x": 0.68,
+     "y": 0.5,
+     "w": 0.3,
+     "h": 0.45,
+     "metin": "Sağda diz çökmüş kahverengi cüppeli adam, eseri ısmarlayan Fransisken rahip Heinrich von Werl; Köln'de ilahiyat öğretiyordu. Bakışı, kaybolmuş orta panele, Meryem'e dönüktü."
+    },
+    {
+     "ad": "Pencereler",
+     "x": 0.06,
+     "y": 0.19,
+     "w": 0.2,
+     "h": 0.45,
+     "metin": "Soldaki pencerelerin üst camlarında renkli armalar, açık kanatların arasından yeşil bir manzara. Kutsal kişiler bir Flaman evinin içinde, gündelik bir odada duruyor."
+    },
+    {
+     "ad": "Latince yazıt",
+     "x": 0.0,
+     "y": 0.94,
+     "w": 1.0,
+     "h": 0.06,
+     "metin": "Alttaki Latince yazıt resmin 1438'de Heinrich von Werl için yapıldığını söylüyor. Ressam ise imzasız; eser Robert Campin'e ya da atölyesine atfedilir."
+    }
+   ]
+  },
+  "petrus-christus": {
+   "eser": "A Goldsmith in His Shop",
+   "yil": 1449,
+   "qid": "Q2408910",
+   "gorsel": "168f6f945917eef7",
+   "kirp": [
+    0.03,
+    0.025,
+    0.94,
+    0.96
+   ],
+   "noktalar": [
+    {
+     "ad": "Kuyumcu ve terazi",
+     "x": 0.37,
+     "y": 0.36,
+     "w": 0.43,
+     "h": 0.4,
+     "metin": "Kırmızı giysili kuyumcu küçük bir terazide yüzük tartıyor. Bu, Antwerp ve Brugge kuyumcularının koruyucusu Aziz Eligius olabilir; resim kuyumcular loncası için yapıldığı düşünülür."
+    },
+    {
+     "ad": "Nişanlı çift",
+     "x": 0.04,
+     "y": 0.12,
+     "w": 0.48,
+     "h": 0.65,
+     "metin": "Soldaki şık giyimli çift bir nişan ya da evlilik yüzüğü alıyor. Kadının sırmalı brokar elbisesi ve erkeğin kürklü giysisi, Burgonya sarayının modasıyla varlıklarını gösteriyor."
+    },
+    {
+     "ad": "Dükkân rafları",
+     "x": 0.67,
+     "y": 0.04,
+     "w": 0.27,
+     "h": 0.5,
+     "metin": "Raflarda kristal ve gümüş kaplar, mercan dalı, inci dizisi, kutular. Bunlar dükkânın malları ama birçoğunun bir anlamı da var: mercan kötülüğe karşı tılsım sayılırdı."
+    },
+    {
+     "ad": "Bükey ayna",
+     "x": 0.81,
+     "y": 0.58,
+     "w": 0.13,
+     "h": 0.24,
+     "metin": "Tezgâhtaki yuvarlak aynada sokaktaki evler ve iki adam görünüyor; biri elinde bir şahin tutuyor. Resim dükkânın dışındaki dünyayı da içine alıyor; van Eyck'in aynalarının izinden."
+    },
+    {
+     "ad": "Kemer ve imza",
+     "x": 0.15,
+     "y": 0.74,
+     "w": 0.5,
+     "h": 0.2,
+     "metin": "Tezgâhta kırmızı bir evlilik kemeri kıvrılmış duruyor. Altta Latince imza: \"Usta Petrus Christus beni 1449'da yaptı.\" Flaman resminde tarihli ve imzalı ilk tür sahnelerinden biri."
+    }
+   ]
+  },
+  "quentin-metsys": {
+   "eser": "Salome is given the head of John the Baptist",
+   "yil": 1511,
+   "qid": "Q21614511",
+   "gorsel": "e8e8ece646150362",
+   "kirp": [
+    0.0,
+    0.06,
+    0.96,
+    0.93
+   ],
+   "noktalar": [
+    {
+     "ad": "Herodes",
+     "x": 0.05,
+     "y": 0.33,
+     "w": 0.38,
+     "h": 0.27,
+     "metin": "Kürk yakalı, süslü şapkalı Herodes sofranın başında oturuyor; eli havada, yüzünde rahatsız bir ifade. İncil'e göre karısı Herodias'ın kızına verdiği sözü bozamadığı için Yahya'yı öldürttü."
+    },
+    {
+     "ad": "Yahya'nın başı",
+     "x": 0.41,
+     "y": 0.5,
+     "w": 0.2,
+     "h": 0.12,
+     "metin": "Salome tepside Vaftizci Yahya'nın başını getirmiş; Herodias elindeki bıçakla başın alnına dokunuyor. Efsaneye göre Herodias Yahya'nın dilini ya da alnını delmişti."
+    },
+    {
+     "ad": "Salome",
+     "x": 0.67,
+     "y": 0.43,
+     "w": 0.32,
+     "h": 0.52,
+     "metin": "Sağda çiçek taçlı, desenli ipek elbiseli genç kız Salome. Dansı karşılığında Yahya'nın başını istemişti; Metsys onu bir saray güzeli gibi süslü ve duygusuz gösteriyor."
+    },
+    {
+     "ad": "Balkondaki müzisyenler",
+     "x": 0.52,
+     "y": 0.19,
+     "w": 0.45,
+     "h": 0.18,
+     "metin": "Yukarıdaki yeşil örtülü balkonda kırmızılı çalgıcılar trompet çalıyor; şölen hâlâ sürüyor. Aşağıdaki korkunç sahneyle balkonun neşesi yan yana."
+    },
+    {
+     "ad": "Hizmetçi ve köpek",
+     "x": 0.15,
+     "y": 0.62,
+     "w": 0.42,
+     "h": 0.32,
+     "metin": "Önde kırmızı giysili bir uşak tasmalı bir köpeği tutuyor, şarap soğutucusunun yanında. Gündelik ayrıntılar kutsal sahneyi zengin bir Anvers evinin akşam yemeğine çeviriyor."
+    }
+   ]
+  },
+  "rogier-van-der-weyden": {
+   "eser": "Crucifixion of Scheut",
+   "yil": 1454,
+   "qid": "Q18430656",
+   "gorsel": "4029183304fae9de",
+   "noktalar": [
+    {
+     "ad": "Çarmıhtaki İsa",
+     "x": 0.12,
+     "y": 0.08,
+     "w": 0.8,
+     "h": 0.38,
+     "metin": "İsa'nın kolları neredeyse resmin bütün genişliğini kaplıyor; başında dikenli taç, böğründen kan sızıyor. Beyaz peştamal rüzgârda değil, kendi ağırlığıyla kıvrılıyor. Resim yaklaşık 3,3 metre yüksekliğinde."
+    },
+    {
+     "ad": "Kırmızı perde",
+     "x": 0.1,
+     "y": 0.12,
+     "w": 0.8,
+     "h": 0.75,
+     "metin": "Arkada manzara ya da gökyüzü yok, düz bir kırmızı kumaş asılı; kıvrım izleri bile görünüyor. Sahne bir sunak gibi tecrit edilmiş: izleyici yalnız üç figürle ve acıyla baş başa."
+    },
+    {
+     "ad": "Meryem",
+     "x": 0.07,
+     "y": 0.44,
+     "w": 0.36,
+     "h": 0.5,
+     "metin": "Beyazlar içindeki Meryem yüzünü örtüsüne gömmüş, iki büklüm ağlıyor. Rogier'nin en güçlü yanı bu: duyguyu yüzden çok bedenin duruşuyla ve kumaşın kırıklarıyla anlatmak."
+    },
+    {
+     "ad": "Yuhanna",
+     "x": 0.6,
+     "y": 0.42,
+     "w": 0.37,
+     "h": 0.55,
+     "metin": "Yuhanna başını kaldırmış İsa'ya bakıyor, bir eli göğsünde, öbürü havada. Meryem içine kapanıyor, Yuhanna yukarı açılıyor: iki ayrı yas biçimi karşılıklı duruyor."
+    },
+    {
+     "ad": "Golgota kayası",
+     "x": 0.35,
+     "y": 0.86,
+     "w": 0.4,
+     "h": 0.13,
+     "metin": "Haç kayalık küçük bir tepeye dikilmiş; figürler bir sahne gibi bu dar zeminde duruyor. Resim Rogier'nin son eserlerinden, Brüksel yakınındaki Scheut manastırı için yapıldı; sonra İspanya kralı Felipe II'nin El Escorial'ine gitti."
+    }
+   ]
+  },
+  "hans-baldung-grien": {
+   "eser": "The Seven Ages of Woman",
+   "yil": 1544,
+   "qid": "Q104715170",
+   "gorsel": "70ca7e3c3df64a49",
+   "noktalar": [
+    {
+     "ad": "Çocuk",
+     "x": 0.02,
+     "y": 0.72,
+     "w": 0.38,
+     "h": 0.27,
+     "metin": "Altta yere oturmuş bebek, yedi yaşın ilki. Boynunda mercan dizisi var: o dönemde mercanın çocukları kötülükten koruduğuna inanılırdı."
+    },
+    {
+     "ad": "Genç kız",
+     "x": 0.0,
+     "y": 0.39,
+     "w": 0.2,
+     "h": 0.55,
+     "metin": "Soldaki ince yapılı genç kız başını yana çevirmiş; bedeni henüz bir çocuğunki gibi. Yaşlar soldan sağa dizilir, bakış da onlarla birlikte ilerler."
+    },
+    {
+     "ad": "Genç kadınlar",
+     "x": 0.22,
+     "y": 0.29,
+     "w": 0.42,
+     "h": 0.6,
+     "metin": "Ortadaki iki kızıl ve sarı saçlı kadın gençliğin doruğu; boyunlarında inci ve gerdanlık, ellerinde ince tüller. Baldung kadın güzelliğini hem över hem de bir vanitas uyarısı olarak gösterir."
+    },
+    {
+     "ad": "Yaşlanan kadınlar",
+     "x": 0.61,
+     "y": 0.25,
+     "w": 0.38,
+     "h": 0.62,
+     "metin": "Sağa doğru bedenler ağırlaşıyor, giysiler koyulaşıyor; en arkada başörtülü yaşlı kadın neredeyse kaybolmuş. Aynı kadının hayatı yedi basamakta: güzellik geçicidir."
+    },
+    {
+     "ad": "Papağan",
+     "x": 0.47,
+     "y": 0.87,
+     "w": 0.2,
+     "h": 0.13,
+     "metin": "Yerde kırmızı kuyruklu gri bir papağan yürüyor. Papağan dönemin resimlerinde bazen Meryem'in, bazen de boş gevezelik ve şehvetin simgesidir; burada yaşın akışına bakan bir tanık."
+    },
+    {
+     "ad": "Asma",
+     "x": 0.0,
+     "y": 0.1,
+     "w": 0.45,
+     "h": 0.3,
+     "metin": "Sol üstte bir ağaca dolanmış asma yaprakları ve üzüm salkımları. Bereket ve olgunluk işareti; ama üzüm de mevsimi geçince çürür."
+    }
+   ]
+  },
+  "lucas-cranach-yasl": {
+   "eser": "The fountain of youth",
+   "yil": 1546,
+   "qid": "Q20828882",
+   "gorsel": "8504132f54cfa496",
+   "noktalar": [
+    {
+     "ad": "Arabayla gelen yaşlılar",
+     "x": 0.0,
+     "y": 0.36,
+     "w": 0.3,
+     "h": 0.55,
+     "metin": "Solda yaşlı kadınlar at arabalarıyla, el arabalarıyla, sırtta taşınarak havuza getiriliyor. Resim 1546'da yapıldı; Cranach o sırada yetmiş dört yaşındaydı."
+    },
+    {
+     "ad": "Gençlik havuzu",
+     "x": 0.22,
+     "y": 0.5,
+     "w": 0.58,
+     "h": 0.42,
+     "metin": "Havuza buruşuk, kambur kadınlar soldan giriyor; suyun içinde ilerledikçe gençleşip sağdan pürüzsüz bedenlerle çıkıyorlar. Bütün hikâye tek bir yüzme yolculuğuna sığdırılmış."
+    },
+    {
+     "ad": "Venüs çeşmesi",
+     "x": 0.47,
+     "y": 0.39,
+     "w": 0.07,
+     "h": 0.28,
+     "metin": "Ortadaki süslü çeşmenin tepesinde Venüs ve Cupido'nun küçük heykelleri var. Gençleşmeyi sağlayan güç aşk tanrıçası; resim biraz da dönemin aşk ve şehvet anlayışıyla dalga geçiyor."
+    },
+    {
+     "ad": "Giyinme çadırı",
+     "x": 0.84,
+     "y": 0.48,
+     "w": 0.16,
+     "h": 0.29,
+     "metin": "Sağda kırmızı çadır: havuzdan çıkan kadınlar burada şık elbiselerini giyiyor, bir şövalye birini çadıra buyur ediyor. Yalnız kadınlar gençleşiyor; erkekler bu yolla değil, gençleşmiş kadınlarla gençleşirmiş."
+    },
+    {
+     "ad": "Şölen ve dans",
+     "x": 0.55,
+     "y": 0.32,
+     "w": 0.42,
+     "h": 0.24,
+     "metin": "Arkada çimenlerde bir şölen kurulmuş, çiftler müzikle dans ediyor. Gençlik geri gelince ilk iş eğlence: resmin sonu bir kutlama."
+    },
+    {
+     "ad": "Kayalık manzara",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.6,
+     "h": 0.28,
+     "metin": "Sol arkada sert, çıplak kayalar, sağda yeşil ve yumuşak bir manzara. Manzara da hikâye gibi soldan sağa yaşlılıktan gençliğe geçiyor."
+    }
+   ]
+  },
+  "hieronymus-bosch": {
+   "eser": "Death and the Miser",
+   "yil": 1480,
+   "qid": "Q2203011",
+   "gorsel": "4abaf9d5d863afb8",
+   "noktalar": [
+    {
+     "ad": "Ölüm kapıda",
+     "x": 0.06,
+     "y": 0.29,
+     "w": 0.25,
+     "h": 0.28,
+     "metin": "Kefene sarınmış iskelet kapıyı aralamış, elindeki okla yataktaki adama nişan alıyor. Bosch ölümü ani gelen bir misafir gibi gösteriyor: hazırlık için vakit az."
+    },
+    {
+     "ad": "Melek ve haç",
+     "x": 0.03,
+     "y": 0.15,
+     "w": 0.85,
+     "h": 0.3,
+     "metin": "Yataktaki adamın yanında bir melek eliyle sol üstteki küçük pencereyi gösteriyor; oradan haçtaki İsa'dan bir ışık iniyor. Adamın son anda Tanrı'ya mı yoksa altına mı döneceği soruluyor."
+    },
+    {
+     "ad": "Keseyi uzatan iblis",
+     "x": 0.37,
+     "y": 0.33,
+     "w": 0.25,
+     "h": 0.17,
+     "metin": "Yatağın perdesinin arkasından küçük bir iblis adama para kesesi uzatıyor; adamın eli keseye gidiyor. Ölüm döşeğinde bile para hırsı bırakmıyor."
+    },
+    {
+     "ad": "Sandıktaki altınlar",
+     "x": 0.18,
+     "y": 0.48,
+     "w": 0.75,
+     "h": 0.25,
+     "metin": "Önde aynı adam, daha sağlıklı hâliyle sandığına altın atıyor; bir elinde tespih, öbürü paraya uzanıyor. Sandığın içinde ve altında iblisler fare gibi kaynaşıyor. Resim aynı adamın iki anını yan yana koyuyor."
+    },
+    {
+     "ad": "Bırakılan zırh",
+     "x": 0.7,
+     "y": 0.75,
+     "w": 0.3,
+     "h": 0.2,
+     "metin": "En önde yere atılmış zırh, miğfer ve kılıç: adamın dünyadaki rütbesi ve gücü. Ölüm gelince bunların hiçbiri işe yaramıyor. Bu dar uzun pano bir sunağın kanadıydı."
     }
    ]
   },
@@ -977,6 +1389,102 @@
      "w": 0.14,
      "h": 0.28,
      "metin": "Hanın tabelası tek menteşede eğilmiş sallanır; üstünde geyik önünde diz çökmüş Aziz Eustachius vardır. Han adı \"Dit is inden Hert\": Geyikte. Bakımsızlık kış yoksulluğunu anlatır."
+    }
+   ]
+  },
+  "leonardo-da-vinci": {
+   "eser": "Cecilia Gallerani Portresi",
+   "yil": 1490,
+   "qid": "Q474338",
+   "gorsel": "497be7aa475be51c",
+   "noktalar": [
+    {
+     "ad": "Yana dönen bakış",
+     "x": 0.38,
+     "y": 0.12,
+     "w": 0.3,
+     "h": 0.28,
+     "metin": "Cecilia Gallerani başını sağa çevirmiş, sanki odaya biri girmiş de ona bakıyor. Dönemin portreleri genelde yandan, kıpırtısız profillerdi; Leonardo bir anlık hareketi yakaladı."
+    },
+    {
+     "ad": "Kakım",
+     "x": 0.45,
+     "y": 0.52,
+     "w": 0.24,
+     "h": 0.38,
+     "metin": "Kucağındaki beyaz hayvan bir kakım (as). Yunanca adı \"galê\", Cecilia'nın soyadına (Gallerani) bir kelime oyunu; ayrıca sevgilisi Milano Dükü Ludovico Sforza'nın lakabı \"Beyaz Kakım\"dı."
+    },
+    {
+     "ad": "El",
+     "x": 0.2,
+     "y": 0.64,
+     "w": 0.38,
+     "h": 0.14,
+     "metin": "Uzun parmaklı el kakımı okşuyor; eklemleri, tırnakları, tendonları tek tek çizilmiş. Leonardo kadavralar üstünde anatomi çalışıyordu; bu el o bilginin ürünü."
+    },
+    {
+     "ad": "Kara boncuk dizisi",
+     "x": 0.36,
+     "y": 0.39,
+     "w": 0.23,
+     "h": 0.2,
+     "metin": "Boynunda iki kez sarılmış koyu boncuk dizisi, alnında ince bir bant. Sade süs, genç yüzün aydınlığını öne çıkarıyor."
+    },
+    {
+     "ad": "Sonradan eklenenler",
+     "x": 0.03,
+     "y": 0.01,
+     "w": 0.33,
+     "h": 0.07,
+     "metin": "Sol üstteki yazı (\"La Bele Feroniere / Leonard d'Awinci\") Leonardo'nun değil, sonradan eklendi; koyu arka plan da sonradan boyanmış olabilir. Resim Krakow'daki Czartoryski Müzesi'nde."
+    }
+   ]
+  },
+  "michelangelo": {
+   "eser": "Delphic Sibyl ve Libyan Sibyl",
+   "yil": 1508,
+   "qid": "Q3482971",
+   "gorsel": "abda37cf30af9d5b",
+   "noktalar": [
+    {
+     "ad": "Delfi Sibili",
+     "x": 0.28,
+     "y": 0.29,
+     "w": 0.45,
+     "h": 0.46,
+     "metin": "Delfi'deki Apollon kâhini Sibil gözleri iri açık, sesi duymuş gibi başını çeviriyor. Michelangelo Sistina tavanında İsa'nın gelişini önceden bildiği düşünülen beş sibili Eski Ahit peygamberlerinin yanına koydu."
+    },
+    {
+     "ad": "Tomar",
+     "x": 0.28,
+     "y": 0.4,
+     "w": 0.12,
+     "h": 0.15,
+     "metin": "Sol elinde açılmış bir tomar tutuyor; kehaneti okumak üzereyken başını kaldırmış. Arkasında çıplak bir çocuk bir kitap okuyor."
+    },
+    {
+     "ad": "Renkler",
+     "x": 0.28,
+     "y": 0.43,
+     "w": 0.47,
+     "h": 0.32,
+     "metin": "Turuncu, yeşil ve mavinin parlaklığı 1980–94 temizliğinde ortaya çıktı; yüzyılların mum isi temizlenince tavanın ne kadar renkli olduğu herkesi şaşırttı."
+    },
+    {
+     "ad": "Taş çocuklar",
+     "x": 0.03,
+     "y": 0.26,
+     "w": 0.21,
+     "h": 0.19,
+     "metin": "İki yandaki çıplak çocuk çiftleri taş heykel gibi boyanmış; tahtı ve korniş taşıyor gibiler. Gerçekte bütün bu mimari, düz bir tavana boyanmış bir yanılsama."
+    },
+    {
+     "ad": "DELPHICA",
+     "x": 0.32,
+     "y": 0.79,
+     "w": 0.37,
+     "h": 0.08,
+     "metin": "Altta Latince adı yazılı levhayı küçük bir çocuk taşıyor. Tavan 1508–12 arasında, Papa II. Julius için, Michelangelo'nun neredeyse tek başına boyadığı bir iş."
     }
    ]
   }
