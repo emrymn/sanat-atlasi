@@ -4164,6 +4164,46 @@
     }
    ]
   },
+  "alessandro-magnasco": {
+   "eser": "Christ attended by Angels",
+   "yil": 1705,
+   "qid": "Q27755383",
+   "gorsel": "a93e740cef4dea3c",
+   "noktalar": [
+    {
+     "ad": "Karanlık orman",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 1.0,
+     "h": 0.55,
+     "metin": "Resmin büyük kısmını titrek, hızlı fırça darbeleriyle boyanmış koca ağaçlar kaplıyor. Magnasco'da doğa insanlardan büyüktür; yapraklar neredeyse kıvılcım gibi parlıyor."
+    },
+    {
+     "ad": "İsa ve melekler",
+     "x": 0.25,
+     "y": 0.65,
+     "w": 0.35,
+     "h": 0.15,
+     "metin": "Altta ışık lekelerinin arasında küçük figürler: çölde kırk gün oruç tutup şeytanın sınamasına direnen İsa'ya melekler hizmet ediyor."
+    },
+    {
+     "ad": "Hareketli figürler",
+     "x": 0.55,
+     "y": 0.65,
+     "w": 0.45,
+     "h": 0.25,
+     "metin": "Sağda uzun, kıvrık bedenli figürler adeta alevler gibi hareket ediyor. Magnasco'nun keşişleri ve gezginleri hep böyle sinirli, titrek çizgilerle boyanır."
+    },
+    {
+     "ad": "Su kıyısı",
+     "x": 0.0,
+     "y": 0.82,
+     "w": 0.45,
+     "h": 0.18,
+     "metin": "Sol altta bir dere ya da gölet ışığı yansıtıyor. Cenovalı Magnasco 18. yüzyılın en kişisel, en tuhaf ressamlarındandı; yıllarca unutuldu, 20. yüzyılda yeniden keşfedildi."
+    }
+   ]
+  },
   "jean-antoine-watteau": {
    "eser": "Pilgrimage to the Island of Cythera",
    "yil": 1717,
@@ -4220,6 +4260,94 @@
     }
    ]
   },
+  "francois-boucher": {
+   "eser": "The Triumph of Venus",
+   "yil": 1740,
+   "qid": "Q3227830",
+   "gorsel": "fe71f8cc234c79d5",
+   "noktalar": [
+    {
+     "ad": "Venüs",
+     "x": 0.47,
+     "y": 0.48,
+     "w": 0.2,
+     "h": 0.3,
+     "metin": "Ortada kayanın üstünde oturan Venüs, denizden doğmuş aşk tanrıçası. Boucher'nin pembe-beyaz tenli tanrıçaları Rokoko'nun simgesi oldu."
+    },
+    {
+     "ad": "Uçan kurdele",
+     "x": 0.36,
+     "y": 0.1,
+     "w": 0.42,
+     "h": 0.35,
+     "metin": "Gökte melek çocuklar pembe bir kumaşı rüzgârda dalgalandırıyor. Bu kurdele bütün kompozisyonu yukarıdan bağlayan bir kıvrım çiziyor."
+    },
+    {
+     "ad": "Su perileri",
+     "x": 0.15,
+     "y": 0.62,
+     "w": 0.4,
+     "h": 0.3,
+     "metin": "Önde uzanmış periler ve deniz tanrıları dalgalarla oynuyor. Konu mitolojik ama asıl amaç bir zevk ve güzellik gösterisi."
+    },
+    {
+     "ad": "Deniz kabukları ve inciler",
+     "x": 0.46,
+     "y": 0.68,
+     "w": 0.2,
+     "h": 0.15,
+     "metin": "Venüs'ün çevresinde inci dizileri ve deniz kabukları. Resim 1740'ta İsveçli bir koleksiyoncu için yapıldı, şimdi Stockholm'deki Ulusal Müze'de."
+    },
+    {
+     "ad": "Triton",
+     "x": 0.15,
+     "y": 0.55,
+     "w": 0.12,
+     "h": 0.2,
+     "metin": "Solda bir deniz tanrısı (Triton) deniz kabuğundan boru öttürüyor, alayı duyuruyor."
+    }
+   ]
+  },
+  "jean-honore-fragonard": {
+   "eser": "The Love Letter",
+   "yil": 1770,
+   "qid": "Q19911811",
+   "gorsel": "c33aa90366894cff",
+   "noktalar": [
+    {
+     "ad": "Yandan bakış",
+     "x": 0.38,
+     "y": 0.1,
+     "w": 0.3,
+     "h": 0.25,
+     "metin": "Genç kadın elinde bir mektup ve çiçeklerle başını çevirmiş, bize bakıyor; sanki yakalanmış. Fragonard'ın hızlı, parlak fırçası anı canlı tutuyor."
+    },
+    {
+     "ad": "Mektup ve çiçekler",
+     "x": 0.28,
+     "y": 0.25,
+     "w": 0.2,
+     "h": 0.15,
+     "metin": "Elindeki zarfın üstünde bir ad yazılı ve araya bir demet çiçek sıkıştırılmış: bir aşk mektubu. Gizli bir ilişkinin habercisi."
+    },
+    {
+     "ad": "Köpek",
+     "x": 0.68,
+     "y": 0.55,
+     "w": 0.2,
+     "h": 0.15,
+     "metin": "Sandalyede küçük beyaz bir köpek uyuyor. Rokoko resimlerinde köpek sadakatin işaretidir; aşk mektubuyla birlikte ironik bir dokunuş."
+    },
+    {
+     "ad": "Altın ışık",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.4,
+     "h": 0.45,
+     "metin": "Arkadaki perde ve pencere sıcak sarı bir ışıkla parlıyor. Fragonard Rokoko'nun son büyük ustası; Fransız Devrimi'yle bu dünyanın modası geçti."
+    }
+   ]
+  },
   "giovanni-battista-tiepolo": {
    "eser": "The Banquet of Cleopatra",
    "yil": 1743,
@@ -4273,6 +4401,222 @@
      "w": 0.3,
      "h": 0.22,
      "metin": "Üstteki balkonda sahneyi izleyen küçük figürler ve gökyüzünde uçan kuşlar. Yivli sütunlar ve damalı zeminle birlikte sahneyi bir tiyatro dekoru gibi kurar."
+    }
+   ]
+  },
+  "jean-baptiste-simeon-chardin": {
+   "eser": "The Attentive Nurse",
+   "yil": 1747,
+   "qid": "Q12859898",
+   "gorsel": "4990b0db71daa072",
+   "noktalar": [
+    {
+     "ad": "Yumurta soyan hizmetçi",
+     "x": 0.55,
+     "y": 0.25,
+     "w": 0.42,
+     "h": 0.6,
+     "metin": "Bakıcı kadın elindeki yumurtayı soyuyor, hasta birine yemek hazırlıyor. Chardin aristokratların süslü dünyası yerine sıradan insanların sessiz işlerini boyadı."
+    },
+    {
+     "ad": "Hazır sofra",
+     "x": 0.0,
+     "y": 0.45,
+     "w": 0.55,
+     "h": 0.35,
+     "metin": "Beyaz örtülü küçük masada ekmek, bir tabak, şarap şişesi ve bardak duruyor. Basit nesneler, ama Chardin'in elinde neredeyse kutsal bir sükûnet taşıyorlar."
+    },
+    {
+     "ad": "Sürahi",
+     "x": 0.08,
+     "y": 0.42,
+     "w": 0.15,
+     "h": 0.13,
+     "metin": "Masadaki beyaz sürahinin üstündeki ışık birkaç fırça darbesiyle yapılmış. Chardin natürmortlarıyla da ünlüydü; Diderot onu \"büyük büyücü\" diye övdü."
+    },
+    {
+     "ad": "Yerdeki tencere",
+     "x": 0.48,
+     "y": 0.82,
+     "w": 0.22,
+     "h": 0.15,
+     "metin": "Yerde bakır bir tencere. Resim 1747 tarihli ve Washington'daki Ulusal Galeri'de; Fransız kralı XV. Louis bir kopyasını almıştı."
+    }
+   ]
+  },
+  "jean-baptiste-greuze": {
+   "eser": "Ange Laurent de La Live de Jully",
+   "yil": 1759,
+   "qid": null,
+   "gorsel": "070539076f5bda64",
+   "noktalar": [
+    {
+     "ad": "Koleksiyoncu",
+     "x": 0.35,
+     "y": 0.18,
+     "w": 0.35,
+     "h": 0.25,
+     "metin": "Ange Laurent de La Live de Jully, zengin bir Paris koleksiyoncusu ve Greuze'ün ilk büyük hamisi. Kibar, rahat bir gülümsemeyle bize dönmüş."
+    },
+    {
+     "ad": "Arp",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.4,
+     "h": 0.85,
+     "metin": "Arp çalarken boyanmış: müzik zevkli bir amatörün işareti. Arpın kavisli altın gövdesi resmin sol kenarını kaplıyor."
+    },
+    {
+     "ad": "İpek giysi",
+     "x": 0.3,
+     "y": 0.35,
+     "w": 0.55,
+     "h": 0.6,
+     "metin": "Beyaz ipek sabahlığın kıvrımları parlak ışıklarla boyanmış. Greuze kumaşın dokusunu neredeyse elle tutulur kılıyor."
+    },
+    {
+     "ad": "Yeni moda mobilya",
+     "x": 0.75,
+     "y": 0.6,
+     "w": 0.25,
+     "h": 0.35,
+     "metin": "Sağdaki masa ve büstler, köşeli \"à la grecque\" denen yeni neoklasik üslupta. La Live de Jully bu modanın Paris'teki ilk taraftarlarındandı."
+    }
+   ]
+  },
+  "william-hogarth": {
+   "eser": "Before",
+   "yil": 1731,
+   "qid": "Q20183486",
+   "gorsel": "62e6e13cc1603c13",
+   "noktalar": [
+    {
+     "ad": "Kaçan kadın",
+     "x": 0.48,
+     "y": 0.18,
+     "w": 0.35,
+     "h": 0.6,
+     "metin": "Genç kadın yataktan kalkıp masaya doğru kaçıyor, aynayı devirmek üzere. Bu, Hogarth'ın \"Önce\" adlı resmi; eşi \"Sonra\" ile birlikte bir ahlak hikâyesi anlatır."
+    },
+    {
+     "ad": "Israrcı genç",
+     "x": 0.08,
+     "y": 0.3,
+     "w": 0.45,
+     "h": 0.6,
+     "metin": "Kırmızı pantolonlu genç adam kadını bileğinden tutmuş, bırakmıyor. Hogarth İngiliz toplumunun ikiyüzlülüğünü mizahla gösteren ilk ressamlardandı."
+    },
+    {
+     "ad": "Düşen ayna",
+     "x": 0.75,
+     "y": 0.48,
+     "w": 0.2,
+     "h": 0.2,
+     "metin": "Masadaki ayna devriliyor: birazdan olacakların küçük bir uyarısı. Hogarth resimlerini hep böyle işaretlerle doldururdu."
+    },
+    {
+     "ad": "Köpek",
+     "x": 0.75,
+     "y": 0.8,
+     "w": 0.25,
+     "h": 0.15,
+     "metin": "Sağ altta küçük köpek sahiplerine havlıyor. Ev hayvanları Hogarth'ın sahnelerinde olaylara tepki veren küçük tanıklardır."
+    }
+   ]
+  },
+  "canaletto": {
+   "eser": "London: Interior of the Rotunda at Ranelagh",
+   "yil": 1754,
+   "qid": "Q19660442",
+   "gorsel": "eb3609f1c9d0d6bb",
+   "noktalar": [
+    {
+     "ad": "Rotunda",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 1.0,
+     "h": 0.5,
+     "metin": "Londra'daki Ranelagh Bahçeleri'nin dev yuvarlak salonu (Rotunda); 1742'de açıldı, bir eğlence ve konser merkeziydi. Canaletto onu yüksekten, geniş bir açıyla gösteriyor."
+    },
+    {
+     "ad": "Ortadaki ocak",
+     "x": 0.42,
+     "y": 0.15,
+     "w": 0.2,
+     "h": 0.55,
+     "metin": "Salonun ortasında kat kat yükselen süslü yapı aslında büyük bir ocak ve yemek tezgâhıydı. Kış aylarında salonu ısıtırdı."
+    },
+    {
+     "ad": "Locular",
+     "x": 0.0,
+     "y": 0.4,
+     "w": 0.4,
+     "h": 0.35,
+     "metin": "Duvar boyunca iki kat locular var; ziyaretçiler burada çay içip kalabalığı seyrederdi. Ranelagh'ta asıl eğlence görmek ve görünmekti."
+    },
+    {
+     "ad": "Gezinen kalabalık",
+     "x": 0.15,
+     "y": 0.7,
+     "w": 0.85,
+     "h": 0.25,
+     "metin": "Zeminde şık giyinmiş küçük figürler yürüyor, sohbet ediyor. Canaletto Venedik manzaralarıyla ünlüydü; İngiltere'de geçirdiği yıllarda Londra'yı da aynı titizlikle boyadı."
+    },
+    {
+     "ad": "Orkestra",
+     "x": 0.72,
+     "y": 0.45,
+     "w": 0.2,
+     "h": 0.2,
+     "metin": "Sağda orkestra için yükseltilmiş bir sahne. Çocuk yaşta Mozart da 1764'te Ranelagh'ta konser verdi."
+    }
+   ]
+  },
+  "thomas-gainsborough": {
+   "eser": "Mr and Mrs Andrews",
+   "yil": 1748,
+   "qid": "Q1619527",
+   "gorsel": "2bd19cbc47c851e2",
+   "noktalar": [
+    {
+     "ad": "Robert Andrews",
+     "x": 0.05,
+     "y": 0.05,
+     "w": 0.18,
+     "h": 0.85,
+     "metin": "Tüfeği koltuğunun altında, köpeği yanında, kendinden emin duruyor: bu toprakların yeni sahibi. Gainsborough bu resmi henüz yirmili yaşlarındayken yaptı."
+    },
+    {
+     "ad": "Frances Andrews",
+     "x": 0.2,
+     "y": 0.25,
+     "w": 0.25,
+     "h": 0.65,
+     "metin": "Mavi ipek elbiseli eşi Frances bir bankta oturuyor. Kucağındaki alan boş kalmış: oraya belki bir av kuşu ya da bir çocuk eklenecekti."
+    },
+    {
+     "ad": "Kendi toprakları",
+     "x": 0.5,
+     "y": 0.4,
+     "w": 0.5,
+     "h": 0.6,
+     "metin": "Sağda biçilmiş buğday demetleri, tarlalar, uzakta bir kilise. Resmin yarısı manzara: çift kendini değil, mülkünü gösteriyor."
+    },
+    {
+     "ad": "Av köpeği",
+     "x": 0.0,
+     "y": 0.65,
+     "w": 0.1,
+     "h": 0.15,
+     "metin": "Bacaklarının dibinde bir av köpeği sahibine bakıyor. Avcılık o dönem İngiltere'de toprak sahiplerinin ayrıcalığıydı."
+    },
+    {
+     "ad": "Meşe",
+     "x": 0.15,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 0.5,
+     "metin": "Arkalarındaki büyük meşe, köklü ve sağlam bir soyun ve İngiliz kırsalının simgesi."
     }
    ]
   },
