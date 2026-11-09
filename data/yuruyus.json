@@ -4275,6 +4275,766 @@
      "metin": "Üstteki balkonda sahneyi izleyen küçük figürler ve gökyüzünde uçan kuşlar. Yivli sütunlar ve damalı zeminle birlikte sahneyi bir tiyatro dekoru gibi kurar."
     }
    ]
+  },
+  "elisabeth-vigee-le-brun": {
+   "eser": "Marie Antoinette and Her Children",
+   "yil": 1787,
+   "qid": "Q3937621",
+   "gorsel": "31c5fe2dce1fcddf",
+   "noktalar": [
+    {
+     "ad": "Boş beşik",
+     "x": 0.58,
+     "y": 0.52,
+     "w": 0.2,
+     "h": 0.16,
+     "metin": "Sağdaki beşik boş. Haziran 1787'de bebekken ölen Prenses Sophie'yi anar: beşiğin başlangıçta bebeği taşıması planlanmış, ölümden sonra resim boş beşikle tamamlanmıştır."
+    },
+    {
+     "ad": "Örtüyü kaldıran veliaht",
+     "x": 0.76,
+     "y": 0.49,
+     "w": 0.15,
+     "h": 0.38,
+     "metin": "Veliaht Louis-Joseph koyu yeşil örtüyü kaldırıp parmağıyla boş beşiği gösteriyor. Onun da iki yıl sonra öleceğini bilmek sahneyi geriye dönük olarak daha da hüzünlü kılar."
+    },
+    {
+     "ad": "Gölgedeki taç",
+     "x": 0.9,
+     "y": 0.06,
+     "w": 0.1,
+     "h": 0.11,
+     "metin": "Sağ üst köşede mücevher dolabının tepesinde gölgede kalan kraliyet tacı. Mücevherlerin dolapta kapalı durması ve kraliçenin üzerinde gösterişli takılar olmaması, onu savurgan değil erdemli bir anne olarak sunar."
+    },
+    {
+     "ad": "Kraliçe",
+     "x": 0.32,
+     "y": 0.21,
+     "w": 0.22,
+     "h": 0.2,
+     "metin": "Tüylü başlıklı Marie Antoinette, tepesinde kendi başının bulunduğu bir piramidin zirvesinde oturuyor. Bu şema Raffaello'nun Kutsal Aile resimlerinden alınmadır. Kucağında en küçük oğlu Louis-Charles var."
+    },
+    {
+     "ad": "Marie-Thérèse",
+     "x": 0.24,
+     "y": 0.42,
+     "w": 0.12,
+     "h": 0.16,
+     "metin": "Kızı Marie-Thérèse annesinin koluna sevgiyle yaslanıyor. Rousseau'nun yaydığı 'doğal annelik' idealine uygun, sıcak bir aile görüntüsü kurulur. Tablo 1787 Salonu'nda sergilendi."
+    },
+    {
+     "ad": "Kürklü kadife etek",
+     "x": 0.25,
+     "y": 0.76,
+     "w": 0.3,
+     "h": 0.12,
+     "metin": "Kraliçenin kırmızı kadife eteğinin kürklü kenarı ve ışığı yakalayan kıvrımları. Kadifenin derin kırmızısı ve ipeklerin parıltısı, Vigée Le Brun'ün kumaş dokusundaki ustalığını gösterir."
+    }
+   ]
+  },
+  "caspar-david-friedrich": {
+   "eser": "Bulutların Üzerinde Yolculuk",
+   "yil": 1818,
+   "qid": "Q311243",
+   "gorsel": "849127cc0c76ca35",
+   "noktalar": [
+    {
+     "ad": "Rüzgârdaki saçlar",
+     "x": 0.44,
+     "y": 0.32,
+     "w": 0.11,
+     "h": 0.08,
+     "metin": "Figürün rüzgârla dağılan açık renkli saçları, durgun sahnedeki az sayıdaki hareket izinden biridir. Arkadan görülen figür (Rückenfigur) Friedrich'in sık kullandığı bir araçtır: yüzünü göremediğimiz için onun yerine geçeriz."
+    },
+    {
+     "ad": "Zirkelstein kayası",
+     "x": 0.71,
+     "y": 0.32,
+     "w": 0.11,
+     "h": 0.09,
+     "metin": "Sağ arkada sisten yükselen kule biçimli kaya, genellikle Saksonya'daki Zirkelstein'a benzetilir. Manzara gerçek değildir: Friedrich'in Elbe Kumtaşı Dağları'nda çizdiği eskizlerden atölyede birleştirilmiştir."
+    },
+    {
+     "ad": "Dalga gibi sis",
+     "x": 0.0,
+     "y": 0.68,
+     "w": 0.24,
+     "h": 0.16,
+     "metin": "Sol alttaki sis, kayalara çarpan deniz dalgaları gibi boyanmış. Başlıktaki \"sis denizi\" buradan gelir. Arada sağlam bir orta zemin yoktur; bakış kayalıktan doğrudan sonsuzluğa atlar."
+    },
+    {
+     "ad": "Baston",
+     "x": 0.54,
+     "y": 0.48,
+     "w": 0.1,
+     "h": 0.25,
+     "metin": "Gezginin sağ elindeki baston kayaya dayanıyor. Koyu yeşil uzun ceketi bazı araştırmacılarca Napolyon karşıtı yurtsever çevrelerle ilişkilendirilir. Figürün gerçek bir kişi olup olmadığı tartışmalıdır."
+    },
+    {
+     "ad": "Uzaktaki dağ",
+     "x": 0.19,
+     "y": 0.27,
+     "w": 0.24,
+     "h": 0.12,
+     "metin": "Soldaki uzak dağ hava perspektifiyle (uzaklaştıkça renklerin solması ve netliğin azalması) neredeyse gökyüzüne karışır. Romantiklerin \"yüce\" (sublime: hem büyüleyen hem ürküten büyüklük) kavramı bu ölçüsüz uzaklıkta canlanır."
+    },
+    {
+     "ad": "Ağaçlı tepeler",
+     "x": 0.64,
+     "y": 0.48,
+     "w": 0.24,
+     "h": 0.12,
+     "metin": "Sağda sisin içinden ağaçlı kayalık tepeler yükseliyor. Yamaçların çaprazları figürün başına doğru akar; göz önce adama, sonra onun baktığı yere gider."
+    }
+   ]
+  },
+  "theodore-gericault": {
+   "eser": "The Raft of the Medusa",
+   "yil": 1819,
+   "qid": "Q212616",
+   "gorsel": "2310e62cc103ef4b",
+   "noktalar": [
+    {
+     "ad": "Bez sallayan adam",
+     "x": 0.61,
+     "y": 0.06,
+     "w": 0.2,
+     "h": 0.37,
+     "metin": "Piramidin tepesinde Afrikalı bir denizci ufuktaki gemiye bez sallar. Umudun en yüksek noktasıdır. Köleliğe karşı çıkan Géricault, kurtuluşu siyah bir figüre vermiştir."
+    },
+    {
+     "ad": "Ufuktaki Argus",
+     "x": 0.76,
+     "y": 0.34,
+     "w": 0.11,
+     "h": 0.11,
+     "metin": "Sağda, ufkun üstünde minicik bir nokta: kurtarıcı gemi Argus. Kazazedeler onu görür ama gemi onları henüz görmemiştir. Tablonun bütün gerilimi bu küçücük lekeye bağlıdır."
+    },
+    {
+     "ad": "Baba ve ölü oğul",
+     "x": 0.21,
+     "y": 0.5,
+     "w": 0.26,
+     "h": 0.3,
+     "metin": "Yaşlı adam ölü oğlunun bedenini kucağında tutar, gemiye bakmaz bile. Umudun tam tersi, kabullenmiş keder. Géricault bu başı morgdaki cesetleri inceleyerek boyadı."
+    },
+    {
+     "ad": "Suya kayan ceset",
+     "x": 0.6,
+     "y": 0.78,
+     "w": 0.38,
+     "h": 0.2,
+     "metin": "Sağ altta bir ceset kalaslardan suya kaymaktadır; başı görünmez. İzleyici salın kenarında, ölülerin yanında durur. Yeşilimsi ten Géricault'nun hastanelerde yaptığı çalışmalardan gelir."
+    },
+    {
+     "ad": "İşaret eden adam",
+     "x": 0.46,
+     "y": 0.25,
+     "w": 0.2,
+     "h": 0.22,
+     "metin": "Ortada bir adam öne eğilip arkadaşının omzundan ufku gösterir. Ölümden umuda geçişin menteşesidir. Bakış ondan yukarı, bez sallayana tırmanır."
+    },
+    {
+     "ad": "Dalga ve yelken",
+     "x": 0.17,
+     "y": 0.03,
+     "w": 0.3,
+     "h": 0.42,
+     "metin": "Solda şişmiş yelken ve arkasında yükselen dev dalga: ikinci piramit. Rüzgâr salı gemiden uzağa iter. Gökyüzü fırtına sonrası sarı-kahverengidir; bitüm boyası zamanla daha da kararmıştır."
+    }
+   ]
+  },
+  "gustave-courbet": {
+   "eser": "Ornans'ta Cenaze",
+   "yil": 1840,
+   "qid": "Q540488",
+   "gorsel": "e4527ac8da257ed7",
+   "noktalar": [
+    {
+     "ad": "Mezarın kenarındaki kafatası",
+     "x": 0.53,
+     "y": 0.86,
+     "w": 0.1,
+     "h": 0.14,
+     "metin": "Açık mezarın kenarında, toprağın üstünde bir kafatası duruyor. Ölümü hatırlatan bu ayrıntı, dinsel bir teselli yerine çıplak bir gerçek olarak sunulur."
+    },
+    {
+     "ad": "Av köpeği",
+     "x": 0.69,
+     "y": 0.75,
+     "w": 0.14,
+     "h": 0.25,
+     "metin": "Sağ altta beyaz-kahverengi bir av köpeği törene aldırmadan başka yöne bakıyor. Bu gündelik ayrıntı, kilise töreninin resmiyetini kırar."
+    },
+    {
+     "ad": "Kırmızı cüppeli görevliler",
+     "x": 0.32,
+     "y": 0.28,
+     "w": 0.11,
+     "h": 0.17,
+     "metin": "Kırmızı cüppeli iki kilise görevlisinin yüzleri kızarmış ve sıradandır. Courbet onları idealleştirmeden, tanıdığı köylüler olarak resmeder; dönemin eleştirmenleri bu yüzleri kaba bulmuştu."
+    },
+    {
+     "ad": "Haç",
+     "x": 0.22,
+     "y": 0.02,
+     "w": 0.07,
+     "h": 0.25,
+     "metin": "Haç, kalabalığın üstünde gökyüzüne karşı yükselir ve uzaktaki yarların çizgisini keser. Yatay figür şeridinin üstündeki en belirgin dikey öğedir."
+    },
+    {
+     "ad": "Diz çökmüş mezarcı",
+     "x": 0.39,
+     "y": 0.46,
+     "w": 0.11,
+     "h": 0.38,
+     "metin": "Ortada beyaz gömlekli mezarcı bir dizinin üstüne çökmüş bekliyor. Courbet, tarih resimlerine özgü dev bir tuvale sıradan Ornans halkını koyar; bu seçim Realizmin bildirgesi gibi okunmuştur."
+    },
+    {
+     "ad": "Ağlayan kadınlar",
+     "x": 0.7,
+     "y": 0.24,
+     "w": 0.28,
+     "h": 0.25,
+     "metin": "Sağda beyaz başlıklı kadınlar mendillerine gömülmüş. Aralarında ressamın kız kardeşlerinin bulunduğu kabul edilir. Yas, kahramanca değil, köyün gündelik diliyle anlatılır."
+    }
+   ]
+  },
+  "jean-francois-millet": {
+   "eser": "The Gleaners",
+   "yil": 1857,
+   "qid": "Q1368055",
+   "gorsel": "0e77dc7a212e8824",
+   "noktalar": [
+    {
+     "ad": "Toprağa uzanan el",
+     "x": 0.15,
+     "y": 0.62,
+     "w": 0.1,
+     "h": 0.11,
+     "metin": "Soldaki kadının eli toprağa değiyor, parmakları yerde kalan başağı arıyor. Başak toplamak hasattan sonra yoksullara tanınan bir hakti; kazancı ise çok küçüktü."
+    },
+    {
+     "ad": "Ortadaki kadının eli",
+     "x": 0.34,
+     "y": 0.57,
+     "w": 0.1,
+     "h": 0.23,
+     "metin": "Ortadaki kadın pembe kolluklu koluyla yere dayanmış, eli toprağa değiyor. Eğik bedenler ufkun altında, toprağa bastırılmış gibi durur."
+    },
+    {
+     "ad": "Başak demeti",
+     "x": 0.63,
+     "y": 0.53,
+     "w": 0.12,
+     "h": 0.3,
+     "metin": "Sağdaki kadın yarı doğrulmuş, elinde küçük bir başak demeti tutuyor. Bu ince demet, arka plandaki dev yığınların yanında bir günlük emeğin karşılığını gösterir."
+    },
+    {
+     "ad": "Saman yığınları ve araba",
+     "x": 0.13,
+     "y": 0.19,
+     "w": 0.3,
+     "h": 0.18,
+     "metin": "Arka planda dev saman yığınları ve yüklü bir araba duruyor. Toprak sahibine giden bolluk, ön plandaki kıt başaklarla karşıtlık kurar."
+    },
+    {
+     "ad": "Hasatçılar",
+     "x": 0.42,
+     "y": 0.26,
+     "w": 0.3,
+     "h": 0.06,
+     "metin": "Uzakta kalabalık bir hasatçı grubu çalışıyor. Altın ışık arka plandadır; ön plandaki üç kadın ise gölgeli, ağır ve anıtsaldır."
+    },
+    {
+     "ad": "Atlı figür",
+     "x": 0.83,
+     "y": 0.27,
+     "w": 0.1,
+     "h": 0.08,
+     "metin": "Sağ uzakta, binaların önünde neredeyse görünmeyecek kadar küçük bir atlı var. Genellikle tarlayı denetleyen kâhya olarak yorumlanır; sahneye bir denetim duygusu katar."
+    }
+   ]
+  },
+  "gustave-caillebotte": {
+   "eser": "Paris Street; Rainy Day",
+   "yil": 1877,
+   "qid": "Q1452762",
+   "gorsel": "7ee48fe2f97d0a9c",
+   "noktalar": [
+    {
+     "ad": "Şemsiyeli çift",
+     "x": 0.55,
+     "y": 0.33,
+     "w": 0.27,
+     "h": 0.22,
+     "metin": "Ön planda silindir şapkalı, papyonlu bir adam ile şapkalı bir kadın aynı şemsiyenin altında yürüyor. Yüzleri yanımızdan geçen yayalar kadar yakın, ama ikisi de başka bir yöne bakıyor."
+    },
+    {
+     "ad": "Fener direği",
+     "x": 0.45,
+     "y": 0.0,
+     "w": 0.11,
+     "h": 0.12,
+     "metin": "Sahnenin ortasında yeşil bir sokak lambası yükseliyor. Direği tuvali neredeyse iki yarıya böler: solda geniş, boş kavşak, sağda yakın plan figürler."
+    },
+    {
+     "ad": "Kesik adam ve şemsiyeler",
+     "x": 0.72,
+     "y": 0.18,
+     "w": 0.28,
+     "h": 0.3,
+     "metin": "Sağ kenarda bir adam çerçeveyle kesilmiş, şemsiyesi çiftin şemsiyesine neredeyse değiyor. Fotoğraf karesini andıran bu kesim, şehirde birbirine dokunmadan geçen yabancıları anlatır."
+    },
+    {
+     "ad": "Islak kaldırım taşları",
+     "x": 0.05,
+     "y": 0.72,
+     "w": 0.3,
+     "h": 0.18,
+     "metin": "Ön planın solunda ıslak parke taşları gökyüzünün ışığını yansıtıyor. Taşlar tek tek ve keskin çizilmiş; Caillebotte empresyonistlerle sergilese de yüzeyi pürüzsüz ve gerçekçidir."
+    },
+    {
+     "ad": "Yeni apartmanlar",
+     "x": 0.12,
+     "y": 0.05,
+     "w": 0.34,
+     "h": 0.33,
+     "metin": "Arkada köşeyi bir gemi pruvası gibi dönen krem renkli bir apartman görülür. Haussmann döneminde yapılan, tek tip cepheli yeni Paris'in simgesidir."
+    },
+    {
+     "ad": "İmza ve tarih",
+     "x": 0.04,
+     "y": 0.94,
+     "w": 0.13,
+     "h": 0.05,
+     "metin": "Sol alt köşede \"G. Caillebotte 1877\" imzası okunur. Tablo aynı yıl üçüncü empresyonist sergide gösterildi."
+    }
+   ]
+  },
+  "edouard-manet": {
+   "eser": "A Bar at the Folies-Bergère",
+   "yil": 1882,
+   "qid": "Q1245354",
+   "gorsel": "678e066315d329af",
+   "noktalar": [
+    {
+     "ad": "Garson kızın yüzü",
+     "x": 0.39,
+     "y": 0.02,
+     "w": 0.2,
+     "h": 0.3,
+     "metin": "Suzon adlı garson kız bakışını hiçbir yere odaklamaz: yorgun, uzak. Kalabalığın ortasında yalnızdır. Boynundaki kadife kurdele ve madalyon Manet'nin Olympia'sını hatırlatır."
+    },
+    {
+     "ad": "Kaymış yansıma",
+     "x": 0.67,
+     "y": 0.04,
+     "w": 0.33,
+     "h": 0.5,
+     "metin": "Aynadaki yansıması olması gereken yerde değil, sağa kaymıştır; silindir şapkalı müşteri karşısında durur. Perspektif bilerek bozulmuştur. Yansımada kız eğilip müşteriye yönelir, önde ise dimdiktir."
+    },
+    {
+     "ad": "Şişeler ve imza",
+     "x": 0.0,
+     "y": 0.6,
+     "w": 0.27,
+     "h": 0.36,
+     "metin": "Sol köşede şampanya ve kırmızı üçgen etiketli Bass birası. En soldaki şişenin etiketinde Manet'nin imzası ve 1882 tarihi yazılıdır. Natürmort Chardin kadar titiz, fırça Empresyonist kadar serbest."
+    },
+    {
+     "ad": "Güller ve portakallar",
+     "x": 0.52,
+     "y": 0.63,
+     "w": 0.3,
+     "h": 0.26,
+     "metin": "Bardaktaki iki gül ve kristal kâsedeki mandalinalar tezgâhın ortasında durur. Manet'de portakal genellikle satılık aşkı ima eder. Kızın korsajındaki çiçekler bu güllerin tekrarıdır."
+    },
+    {
+     "ad": "Trapezcinin ayakları",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.12,
+     "h": 0.1,
+     "metin": "Sol üst köşede yeşil çizmeli iki ayak sarkar: havada bir trapez sanatçısı. Gösteri yalnız bu kadarıyla görünür. Manet eğlencenin merkezini kadraj dışına atar."
+    },
+    {
+     "ad": "Balkondaki kalabalık",
+     "x": 0.07,
+     "y": 0.13,
+     "w": 0.3,
+     "h": 0.24,
+     "metin": "Aynadaki balkonda Paris sosyetesi oturur; sarı eldivenli kadın dürbünle bakar. Figürler lekeler hâlinde, gaz lambalarının ışığında erir. Beyaz küreler yeni elektrik lambalarıdır."
+    }
+   ]
+  },
+  "utagawa-hiroshige": {
+   "eser": "Sudden Shower over Shin-Ōhashi Bridge and Atake",
+   "yil": 1857,
+   "qid": "Q5826309",
+   "gorsel": "4016e12af98da014",
+   "noktalar": [
+    {
+     "ad": "Kesişen yağmur çizgileri",
+     "x": 0.2,
+     "y": 0.12,
+     "w": 0.25,
+     "h": 0.18,
+     "metin": "Yağmur tek bir yöne akmıyor; iki farklı açıda kesişen ince çizgi katmanlarıyla verilmiş. Çizgiler ahşap kalıba tek tek oyulmuştur ve sağanağın yoğunluğu bu katmanlardan doğar."
+    },
+    {
+     "ad": "Salcı",
+     "x": 0.09,
+     "y": 0.48,
+     "w": 0.42,
+     "h": 0.08,
+     "metin": "Nehrin ortasında tek başına bir salcı, uzun sırığıyla kütük salını itiyor. Köprüdeki telaşlı kalabalığın karşısında kompozisyonun en yalnız figürüdür."
+    },
+    {
+     "ad": "Şemsiyeli ikili",
+     "x": 0.2,
+     "y": 0.64,
+     "w": 0.13,
+     "h": 0.11,
+     "metin": "Köprünün solunda iki kişi tek bir şemsiyenin altına sığınmış. Öne eğilen bedenleri, sağanağın birden bastırdığını anlatır."
+    },
+    {
+     "ad": "Köprüdeki yolcular",
+     "x": 0.36,
+     "y": 0.53,
+     "w": 0.44,
+     "h": 0.17,
+     "metin": "Hasır şapkalı bir adam başını eğerek yürüyor; sağdakiler hasır örtülerin altında adımlarını hızlandırıyor. Van Gogh bu baskıyı 1887'de yağlıboyayla kopyalamıştır."
+    },
+    {
+     "ad": "Kartuşlar ve mühürler",
+     "x": 0.72,
+     "y": 0.0,
+     "w": 0.24,
+     "h": 0.24,
+     "metin": "Kırmızı kartuşta dizinin adı (Edo'nun Yüz Ünlü Manzarası), sarı olanda levhanın başlığı yazıyor. En üst köşedeki küçük yuvarlak mühürler tarih ve sansür damgalarıdır."
+    },
+    {
+     "ad": "İmza kartuşu",
+     "x": 0.0,
+     "y": 0.79,
+     "w": 0.18,
+     "h": 0.15,
+     "metin": "Sol alttaki kırmızı kartuşta sanatçının imzası okunur: \"Hiroshige ga\" (Hiroshige çizdi). Yanındaki küçük mühür, diziyi yayımlayan Uoya Eikichi'ye aittir."
+    }
+   ]
+  },
+  "paul-gauguin": {
+   "eser": "Nereden geliyoruz? Neyiz? Nereye gidiyoruz?",
+   "yil": 1897,
+   "qid": "Q890678",
+   "gorsel": "a71b0a727cd86d8f",
+   "noktalar": [
+    {
+     "ad": "Meyve koparan figür",
+     "x": 0.49,
+     "y": 0.0,
+     "w": 0.14,
+     "h": 0.95,
+     "metin": "Ortada ayakta bir figür iki koluyla ağaçtan meyve koparır. Cennet'teki Âdem'i ve bilgiyi alma anını çağrıştırır. Gauguin'e göre resim sağdan sola okunur: bebekten yaşlıya."
+    },
+    {
+     "ad": "Mavi put",
+     "x": 0.21,
+     "y": 0.02,
+     "w": 0.13,
+     "h": 0.5,
+     "metin": "Arkada kolları kalkık mavi bir heykel: Gauguin'in uydurduğu bir Tahiti tanrıçası, Hina. Gerçek bir Polinezya putu değildir. Öteki dünyayı ve ressamın sahte-ilkel hayalini temsil eder."
+    },
+    {
+     "ad": "Yaşlı kadın",
+     "x": 0.0,
+     "y": 0.4,
+     "w": 0.13,
+     "h": 0.52,
+     "metin": "Sol uçta başını ellerine almış yaşlı kadın ölümü bekler; Peru mumyalarının duruşundan alınmıştır. Ayağının dibinde beyaz bir kuş kertenkele tutar. Gauguin bunu sözlerin boşluğunun simgesi olarak açıklar."
+    },
+    {
+     "ad": "Uyuyan bebek",
+     "x": 0.83,
+     "y": 0.74,
+     "w": 0.17,
+     "h": 0.26,
+     "metin": "Sağ altta uyuyan bebek: yaşamın başlangıcı. Üç çömelmiş kadın onu bekler. Resim buradan başlar, sola doğru yaşlanır."
+    },
+    {
+     "ad": "Başlık yazısı",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.14,
+     "h": 0.14,
+     "metin": "Sol üst köşedeki sarı alana Gauguin soruyu kendi eliyle yazmıştır: nereden geliyoruz, neyiz, nereye gidiyoruz. Sağ üstte de imzası ve tarih vardır. Yazı bir fresk köşesi gibi altın zemine konmuş."
+    },
+    {
+     "ad": "İki genç kadın",
+     "x": 0.7,
+     "y": 0.44,
+     "w": 0.17,
+     "h": 0.38,
+     "metin": "Sağda iki genç kadın yan yana oturmuş sohbet eder; yanlarında siyah bir kedi. Gauguin bunları hayatın gündelik, düşüncesiz tarafı diye anlatır. Sıcak sarı tenler mavi-yeşil zeminle çarpışır."
+    }
+   ]
+  },
+  "odilon-redon": {
+   "eser": "The Cyclops",
+   "yil": 1914,
+   "qid": "Q3793426",
+   "gorsel": "8906e5e8686fc219",
+   "noktalar": [
+    {
+     "ad": "Tek göz",
+     "x": 0.27,
+     "y": 0.18,
+     "w": 0.15,
+     "h": 0.12,
+     "metin": "Kafanın neredeyse tamamını tek, iri bir göz kaplıyor. Siyah göz bebeği ve çevresindeki açık halka bakışa hem ürkek hem büyülenmiş bir ifade verir."
+    },
+    {
+     "ad": "Uyuyan Galateia",
+     "x": 0.46,
+     "y": 0.53,
+     "w": 0.36,
+     "h": 0.26,
+     "metin": "Sağ alttaki çiçekli yamaçta çıplak bir kadın yan yatmış uyuyor: deniz perisi Galateia. Ovidius'un anlattığı öyküde Kiklop Polyphemos ona umutsuzca âşıktır."
+    },
+    {
+     "ad": "Kayaya dayanan omuz",
+     "x": 0.42,
+     "y": 0.29,
+     "w": 0.3,
+     "h": 0.1,
+     "metin": "Dev, omzunu ve kolunu kayalığa dayamış, utangaç bir çocuk gibi kenardan bakıyor. Mitteki yırtıcı canavar Redon'da çekingen bir hayranlık figürüne dönüşür."
+    },
+    {
+     "ad": "Mor dağ sırtı",
+     "x": 0.08,
+     "y": 0.42,
+     "w": 0.3,
+     "h": 0.18,
+     "metin": "Mor dağ sırtı dikey, titrek fırça darbeleriyle boyanmış. Kaya neredeyse bir çiçek tarlasına dönüşür; manzara gerçek bir yerden çok bir rüyayı andırır."
+    },
+    {
+     "ad": "İmza",
+     "x": 0.84,
+     "y": 0.96,
+     "w": 0.15,
+     "h": 0.03,
+     "metin": "Sağ alt köşede \"ODILON REDON\" imzası seçiliyor. Redon uzun yıllar yalnız siyah-beyaz çalışmış, renge ancak 1890'lardan sonra yönelmişti."
+    }
+   ]
+  },
+  "gustav-klimt": {
+   "eser": "Öpücük",
+   "yil": 1907,
+   "qid": "Q698487",
+   "gorsel": "68ee7ed8ec1cc473",
+   "noktalar": [
+    {
+     "ad": "Öpücük",
+     "x": 0.43,
+     "y": 0.02,
+     "w": 0.25,
+     "h": 0.2,
+     "metin": "Adam başını eğip kadının yanağını öpüyor; yüzü neredeyse görünmüyor, yalnız saçlarındaki sarmaşık çelengi seçiliyor. Kadının gözleri kapalı, saçları çiçeklerle süslü."
+    },
+    {
+     "ad": "Dikdörtgenler ve daireler",
+     "x": 0.36,
+     "y": 0.4,
+     "w": 0.26,
+     "h": 0.2,
+     "metin": "Adamın giysisi siyah-gri dikdörtgenlerle, kadınınki renkli çiçek daireleriyle süslü. Köşeli ve yuvarlak biçimlerin eril ve dişil olanı simgelediği yorumlanır."
+    },
+    {
+     "ad": "Uçurumdaki ayaklar",
+     "x": 0.66,
+     "y": 0.64,
+     "w": 0.16,
+     "h": 0.24,
+     "metin": "Kadının çıplak ayakları çayırın kıyısında kıvrılmış, sanki bir uçurumun eşiğinde. Bileklerinden aşağı altın sarmaşıklar sarkıyor."
+    },
+    {
+     "ad": "Çiçekli çayır",
+     "x": 0.1,
+     "y": 0.78,
+     "w": 0.3,
+     "h": 0.2,
+     "metin": "Çift, mor, mavi ve sarı çiçeklerle dolu bir çayırda diz çökmüş. Çiçekler düz, desen gibi işlenmiş; derinlik yerine süsleme öne çıkar."
+    },
+    {
+     "ad": "Altın tozu fon",
+     "x": 0.05,
+     "y": 0.3,
+     "w": 0.18,
+     "h": 0.2,
+     "metin": "Fon, altın tozu serpintisiyle kaplı düz bir boşluktur. Tabloda gerçek altın varak kullanılmıştır; Klimt'in Bizans mozaiklerinden etkilendiği \"Altın Dönemi\"nin örneğidir."
+    },
+    {
+     "ad": "İmza",
+     "x": 0.91,
+     "y": 0.88,
+     "w": 0.08,
+     "h": 0.05,
+     "metin": "Sağ altta \"GUSTAV KLIMT\" imzası iki satır hâlinde, kare bir blok gibi yerleştirilmiş. İmza da tablonun süslemesinin bir parçasıdır."
+    }
+   ]
+  },
+  "edvard-munch": {
+   "eser": "Çığlık (tablo)",
+   "yil": 1893,
+   "qid": "Q471379",
+   "gorsel": "409de8256c60fe8d",
+   "noktalar": [
+    {
+     "ad": "Çığlık atan yüz",
+     "x": 0.39,
+     "y": 0.49,
+     "w": 0.21,
+     "h": 0.2,
+     "metin": "Figür iki elini başına bastırmış; kafatasını andıran yüzünde gözler ve ağız iri boşluklar gibi açılmış. Munch'un notlarına göre çığlık doğadan gelir; figür onu duymamak için kulaklarını kapatır."
+    },
+    {
+     "ad": "İki siluet",
+     "x": 0.0,
+     "y": 0.33,
+     "w": 0.13,
+     "h": 0.21,
+     "metin": "Solda yolda iki siluet uzaklaşıyor. Munch'un notlarında yanında yürüyen iki arkadaşıdır; onların sakinliği ön plandaki figürün yalnızlığını belirginleştirir."
+    },
+    {
+     "ad": "İki tekne",
+     "x": 0.29,
+     "y": 0.33,
+     "w": 0.13,
+     "h": 0.05,
+     "metin": "Fiyortta iki küçük tekne seçiliyor. Uzaktaki bu sakin ayrıntılar kıvrılan su ve gökle karşıtlık kurar."
+    },
+    {
+     "ad": "Kızıl gökyüzü",
+     "x": 0.05,
+     "y": 0.02,
+     "w": 0.45,
+     "h": 0.2,
+     "metin": "Gökyüzü kızıl ve turuncu dalgalarla kıvranıyor. Sol üstte kırmızının içinde kurşun kalemle yazılmış, ekranda büyük olasılıkla seçilemeyen soluk bir not vardır: \"Ancak deli bir adam tarafından yapılmış olabilir\". Müze 2021'de yazının Munch'un kendi el yazısı olduğunu açıkladı."
+    },
+    {
+     "ad": "İmza ve tarih",
+     "x": 0.03,
+     "y": 0.95,
+     "w": 0.15,
+     "h": 0.04,
+     "metin": "Sol alt köşede \"E. Munch 1893\" imzası okunur. Eser karton üzerine tempera ve boya kalemiyle yapılmıştır; bazı yerlerde boyanmamış karton görünür."
+    }
+   ]
+  },
+  "ernst-ludwig-kirchner": {
+   "eser": "Berlin Street Scene",
+   "yil": 1913,
+   "qid": "Q3476580",
+   "gorsel": "c2095855fc4f509b",
+   "noktalar": [
+    {
+     "ad": "Sigara ve yan bakış",
+     "x": 0.7,
+     "y": 0.28,
+     "w": 0.2,
+     "h": 0.15,
+     "metin": "Sağdaki adamın ağzında sarı bir sigara var; gözleri kadınlara yan yan bakıyor. Kirchner'in Berlin sokak sahnelerindeki kadınlar genellikle sokakta müşteri arayan kadınlar olarak yorumlanır; bu bakış sahnenin gerilimini taşır."
+    },
+    {
+     "ad": "Maske gibi yüzler",
+     "x": 0.25,
+     "y": 0.17,
+     "w": 0.4,
+     "h": 0.15,
+     "metin": "Ortadaki iki kadının yüzleri maskeye benziyor: çekik gözler, sivri burunlar, kırmızı dudaklar. Neredeyse tıpatıp aynıdırlar; kişiler değil, büyük kentin tipleri gibi görünürler."
+    },
+    {
+     "ad": "Tüylü şapka",
+     "x": 0.48,
+     "y": 0.02,
+     "w": 0.16,
+     "h": 0.15,
+     "metin": "Sağdaki kadının şapkasında kırmızı-siyah tüyler kabarıyor. Gösterişli şapka ve kürk yakalar, kalabalığın içinde kadınları hemen fark ettiren işaretlerdir."
+    },
+    {
+     "ad": "Yeşil tekerlek",
+     "x": 0.14,
+     "y": 0.45,
+     "w": 0.12,
+     "h": 0.24,
+     "metin": "Sol kenarda yeşil bir tekerlek seçiliyor; arkada bir araba ya da tramvay geçiyor. Birkaç hızlı, yarı soyut fırça darbesi kentin trafiğini ve hareketini hissettirir."
+    },
+    {
+     "ad": "Kahverengi at",
+     "x": 0.78,
+     "y": 0.05,
+     "w": 0.2,
+     "h": 0.17,
+     "metin": "Sağ üstte kalabalığın arkasında kahverengi bir at beliriyor. Keskin, sivri fırça vuruşları atı da figürler gibi gergin ve hareketli gösterir."
+    },
+    {
+     "ad": "Beyaz eldiven",
+     "x": 0.84,
+     "y": 0.81,
+     "w": 0.1,
+     "h": 0.14,
+     "metin": "Sağdaki adamın elinden beyaz bir eldiven aşağı sarkıyor; koyu mavi paltonun yanında parlayan bu leke adamın şık giyimli, varlıklı biri olduğunu ima eder. Hemen altında Kirchner'in imzası seçilir."
+    }
+   ]
+  },
+  "wassily-kandinsky": {
+   "eser": "Composition VII",
+   "yil": 1913,
+   "qid": "Q2990634",
+   "gorsel": "f35e7e24663d3a27",
+   "noktalar": [
+    {
+     "ad": "Göz biçimli düğüm",
+     "x": 0.28,
+     "y": 0.32,
+     "w": 0.22,
+     "h": 0.28,
+     "metin": "Sol ortada koyu mavi ve siyah biçimlerle çevrili oval bir düğüm var; içinde göze benzeyen bir çekirdek seçiliyor ve siyah çizgiler onu kesiyor. Tablonun ana girdabı burada döner."
+    },
+    {
+     "ad": "Kürekli kayık",
+     "x": 0.27,
+     "y": 0.21,
+     "w": 0.1,
+     "h": 0.1,
+     "metin": "Düğümün hemen üstünde, küreklere benzeyen çizgileriyle siyah, kayık biçimli küçük bir form duruyor. Kandinsky'nin Tufan temasıyla ilişkilendirilen motiflerindendir; tablonun kıyamet ve diriliş konularını soyutladığı düşünülür."
+    },
+    {
+     "ad": "Halkalı oval",
+     "x": 0.59,
+     "y": 0.0,
+     "w": 0.09,
+     "h": 0.13,
+     "metin": "Üstte mavi ve kırmızı halkalarla çevrili beyaz bir oval duruyor. Soldaki girdaba karşı ikinci bir odak kurar; ikisi arasında çapraz bir gerilim doğar."
+    },
+    {
+     "ad": "Açık çapraz alan",
+     "x": 0.55,
+     "y": 0.4,
+     "w": 0.18,
+     "h": 0.25,
+     "metin": "Sağda geniş, açık renkli çapraz bir alan tuvali yarıyor. Sıkışık sol yarıdan sonra göze bir soluk alma yeri açar."
+    },
+    {
+     "ad": "Sağdaki sarmal",
+     "x": 0.78,
+     "y": 0.33,
+     "w": 0.2,
+     "h": 0.32,
+     "metin": "Sağ kenarda kırmızı, yeşil ve siyah çizgilerden oluşan ikinci bir sarmal kümesi var. Kandinsky renkleri ve biçimleri müzikteki sesler gibi düşünür; tablo için otuzdan fazla hazırlık çalışması yapmıştı."
+    }
+   ]
   }
  }
 }
