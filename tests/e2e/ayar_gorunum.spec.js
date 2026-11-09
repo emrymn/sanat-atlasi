@@ -180,3 +180,22 @@ test('İş 159/161: günün resimleri sırayla açılır, ortalananlar ve sayaç
   await expect(cerceve).toBeHidden();
   await expect(durum).toBeVisible();
 });
+
+// İş 163: Elle odaklar → "Bu cihazdakileri sil" cihazdaki listeyi siler
+test('İş 163: Ayarlar’da bu cihazdaki elle odaklar silinir', async ({ page, context }) => {
+  await agiHazirla(context);
+  await kur(context);
+  await context.addInitScript(() => {
+    if (!sessionStorage.getItem('kuruldu')) {
+      localStorage.setItem('sanat-atlasi:odak-elle', JSON.stringify({ abc123: [40, 30] }));
+      sessionStorage.setItem('kuruldu', '1');
+    }
+  });
+  await page.goto('./#/ayarlar');
+  const bolum = page.locator('[data-test="elle-odak"]');
+  await expect(bolum).toContainText('1 tablonun');
+  page.once('dialog', (d) => d.accept());
+  await page.locator('[data-test="elle-odak-temizle"]').click();
+  await expect(page.locator('[data-test="elle-odak"]')).toHaveCount(0);
+  expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:odak-elle'))).toBeNull();
+});

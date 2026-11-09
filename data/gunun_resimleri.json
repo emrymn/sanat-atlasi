@@ -22,12 +22,12 @@
   "hieronymus-bosch": "nga:https://api.nga.gov/iiif/03ee67ee-dd0e-443f-84ef-ede5f62ce0cd",
   "quentin-metsys": "q:Q21614511",
   "albrecht-durer": "q:Q2388965",
-  "lucas-cranach-yasl": "q:Q3605055",
+  "lucas-cranach-yasl": "q:Q30005234",
   "hans-baldung-grien": "q:Q4462828",
   "pieter-bruegel-yasl": "q:Q644856",
   "donato-bramante": "q:Q3697588",
   "leonardo-da-vinci": "q:Q474338",
-  "michelangelo": "q:Q2327759",
+  "michelangelo": "c:michelangelo_-_delphic_sibyl.jpg",
   "marcantonio-raimondi": "q:Q47533251",
   "raphael": "q:Q2528106",
   "correggio": "c:antonio_allegri,_called_correggio_-_jupiter_and_io_-_google_art_project.jpg",
@@ -129,6 +129,8 @@
   "gustave-moreau": "q:Q70781244",
   "arnold-bocklin": "q:Q50117729",
   "fernand-khnopff": "q:Q15880874",
-  "gustav-klimt": "q:Q698487"
+  "gustav-klimt": "q:Q698487",
+  "emil-nolde": "wikiart:https://uploads1.wikiart.org/images/emil-nolde/self-portrait-1912.jpg!HalfHD.jpg",
+  "franz-marc": "q:Q2432407"
  }
 }

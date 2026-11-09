@@ -2,7 +2,7 @@
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { gosterilenGorseller } from '../eserler.js';
 import { devasaAdresleri, devasaSuz, suzulduMu, telefonAdresleri, telefonToplamBayt, tahminiBayt } from '../gorsel.js';
-import { cihazdakiElleOdaklar, cihazdakiGununResimleri, gununResmiKoy, tumGununResimleri, seciliGununResmi } from '../gorsel.js';
+import { cihazdakiElleOdaklar, ELLE_ANAHTAR, cihazdakiGununResimleri, gununResmiKoy, tumGununResimleri, seciliGununResmi } from '../gorsel.js';
 import { sanatciEserleri } from '../eserler.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat, kayitKilidiniAc, HAREKETLER, HAREKET_AD, YAZILAR, YAZI_AD } from '../depo.js';
@@ -504,6 +504,17 @@ export function olaylariBagla() {
       ekran.querySelector('[data-test="gunun-resimleri"]').outerHTML = gununResmiBolumu();
       return;
     }
+    // İş 163: sitedeki data/gorsel_odak_elle.json geçerli olsun diye bu cihazdaki elle odaklar silinir
+    if (e.target.closest('[data-elle-odak-temizle]')) {
+      if (!confirm('Bu cihazda işaretlediğin elle odaklar silinsin mi? (Claude’a gönderip siteye girenler geçerli kalır.)')) return;
+      try {
+        localStorage.removeItem(ELLE_ANAHTAR);
+      } catch {
+        /* depo okunamıyorsa yapılacak bir şey yok */
+      }
+      ekran.querySelector('[data-test="elle-odak"]').outerHTML = elleOdakBolumu();
+      return;
+    }
     if (e.target.closest('[data-elle-odak-kopyala]')) {
       const m = document.getElementById('elle-odak-mesaj');
       const metin = ekran.querySelector('[data-elle-odak-metin]').value;
@@ -707,9 +718,9 @@ function elleOdakBolumu() {
   const n = Object.keys(l).length;
   if (!n && !d.ilerleme.gelistirici) return '';
   return `<div class="ayar" data-test="elle-odak"><b>Elle odaklar</b>
-    <p>${n ? `Bu cihazda ${n} tablonun odağı elle işaretlendi.` : 'Henüz yok.'} Geliştirici modunda bir eseri büyütüp “Odağı işaretle”ye dokun, sonra tablonun önemli noktasına. Kırpılan görseller (Galeri, Atölye, Tuval, Konular) o noktanın çevresinden kırpılır. Kalıcı olması için listeyi kopyalayıp Claude’a gönder.</p>
+    <p>${n ? `Bu cihazda ${n} tablonun odağı elle işaretlendi.` : 'Henüz yok.'} Günün resimlerinde (ya da geliştirici modunda) bir eseri büyütüp “Odağı işaretle”ye dokun, sonra tablonun önemli noktasına. Kırpılan görseller (Galeri, Atölye, Tuval, Konular) o noktanın çevresinden kırpılır. Kalıcı olması için listeyi kopyalayıp Claude’a gönder; sitede kalıcı olunca bu cihazdakileri silebilirsin (sitedekiler geçerli kalır).</p>
     ${n ? `<textarea readonly aria-label="Elle odaklar" data-elle-odak-metin>${kacis(JSON.stringify({ surum: 1, odak: l }))}</textarea>
-    <button class="dugme ince" type="button" data-elle-odak-kopyala>Kopyala</button>` : ''}
+    <div class="iki-dugme"><button class="dugme ince" type="button" data-elle-odak-kopyala>Kopyala</button><button class="dugme ince" type="button" data-elle-odak-temizle data-test="elle-odak-temizle">Bu cihazdakileri sil</button></div>` : ''}
     <p class="mesaj" id="elle-odak-mesaj" aria-live="polite"></p></div>`;
 }
 
