@@ -786,7 +786,7 @@ async function surumDenetle() {
     return;
   }
   m.textContent = `Sitede ${site} var, indiriliyor…`;
-  const sonuc = await guncellemeyiDene().catch((e) => {
+  const sonuc = await guncellemeyiDene(site).catch((e) => {
     hataEkle({ m: `Güncelleme denetimi: ${(e && e.message) || e}`, k: `${SURUM} → ${site}` });
     return 'kurulamadi';
   });

@@ -48,13 +48,17 @@ export async function sitedekiSurum() {
 }
 
 // Yeni sürümü indirip kurar. Sonuç: 'kuruldu' | 'bulunamadi' | 'kurulamadi' | 'desteklenmiyor'
-export async function guncellemeyiDene(bekleme = 60000) {
+// surum: sitedeki sürüm. İş 168: öne gelişteki otomatik denetim yeni sürümü düğmeden önce kurmuş olabilir; o sürümün
+// önbelleği varsa kurulmuş sayılır (önce "tarayıcı bulamadı" diye yanlış hata yazılıyordu).
+const kurulmusMu = async (surum) => !!surum && (await caches.keys()).includes(`atlas-kabuk-${surum}`);
+export async function guncellemeyiDene(surum = null, bekleme = 60000) {
   if (!('serviceWorker' in navigator)) return 'desteklenmiyor';
   const r = (await kayitSozu) || (await navigator.serviceWorker.getRegistration());
   if (!r) return 'desteklenmiyor';
+  if (await kurulmusMu(surum)) return 'kuruldu';
   await r.update();
   const w = r.installing || r.waiting;
-  if (!w) return 'bulunamadi';
+  if (!w) return (await kurulmusMu(surum)) ? 'kuruldu' : 'bulunamadi';
   return new Promise((coz) => {
     const bak = () => {
       if (w.state === 'activated' || w.state === 'installed') coz('kuruldu');
