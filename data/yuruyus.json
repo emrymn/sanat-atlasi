@@ -4844,6 +4844,38 @@
     }
    ]
   },
+  "henry-fuseli": {
+   "eser": "Dido",
+   "yil": 1781,
+   "qid": "Q23742712",
+   "gorsel": "72ead7a07926c53d",
+   "noktalar": [
+    {
+     "ad": "Ölen Dido",
+     "x": 0.0,
+     "y": 0.28,
+     "w": 0.85,
+     "h": 0.25,
+     "metin": "Kartaca kraliçesi Dido yatağına uzanmış, kolları iki yana düşmüş, başı geriye atılmış. Vergilius'un Aeneas'ına göre sevgilisi Aeneas onu terk edince kendini kılıçla öldürdü."
+    },
+    {
+     "ad": "Kız kardeşi Anna",
+     "x": 0.3,
+     "y": 0.5,
+     "w": 0.6,
+     "h": 0.32,
+     "metin": "Altta kız kardeşi Anna onun bedenine kapanmış ağlıyor. Fuseli'nin figürleri hep böyle aşırı gerilmiş, tiyatral pozlardadır. İsviçre doğumlu Fuseli Londra'da bu karanlık, rüya gibi sahneleriyle tanındı; en ünlü eseri Kâbus'tur."
+    },
+    {
+     "ad": "İnen İris",
+     "x": 0.05,
+     "y": 0.0,
+     "w": 0.6,
+     "h": 0.22,
+     "metin": "Yukarıda bulutların arasından gökkuşağı tanrıçası İris iniyor. Juno onu Dido'nun ruhunu bedeninden kurtarması için yolladı: bir tutam saçını kesince ruh özgür kalacak."
+    }
+   ]
+  },
   "caspar-david-friedrich": {
    "eser": "Bulutların Üzerinde Yolculuk",
    "yil": 1818,
@@ -4897,6 +4929,134 @@
      "w": 0.24,
      "h": 0.12,
      "metin": "Sağda sisin içinden ağaçlı kayalık tepeler yükseliyor. Yamaçların çaprazları figürün başına doğru akar; göz önce adama, sonra onun baktığı yere gider."
+    }
+   ]
+  },
+  "john-constable": {
+   "eser": "Cenotaph to the Memory of Sir Joshua Reynolds",
+   "yil": 1836,
+   "qid": "Q3664409",
+   "gorsel": "a62f7e5895ffe0a5",
+   "noktalar": [
+    {
+     "ad": "Anıt",
+     "x": 0.42,
+     "y": 0.6,
+     "w": 0.18,
+     "h": 0.25,
+     "metin": "Ağaçlı yolun sonunda taş bir anıt: ressam Sir Joshua Reynolds'un anısına dikildi. Bu, Constable'ın Kraliyet Akademisi'ndeki son sergisinde (1836) gösterdiği resimdi."
+    },
+    {
+     "ad": "Geyik",
+     "x": 0.3,
+     "y": 0.78,
+     "w": 0.15,
+     "h": 0.12,
+     "metin": "Önde bir geyik anıtın önünde duruyor. Sessiz, ıssız bir yer: bir anma ve yas resmi."
+    },
+    {
+     "ad": "Ağaçlar",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 1.0,
+     "h": 0.6,
+     "metin": "İki yanda iri ağaçlar bir koridor oluşturuyor; dallar kalın, hızlı fırça darbeleriyle boyanmış. Constable İngiliz kırsalını doğrudan gözleme dayanarak boyayan büyük manzara ressamıydı."
+    },
+    {
+     "ad": "Büstler",
+     "x": 0.0,
+     "y": 0.6,
+     "w": 0.15,
+     "h": 0.2,
+     "metin": "Kenarlarda karanlıkta taş kaideler seçiliyor; Constable'ın tarifine göre üstlerinde Michelangelo ve Raphael'in büstleri duruyor. Reynolds'u ve onun hayran olduğu büyük ustaları birlikte anıyor."
+    }
+   ]
+  },
+  "eugene-delacroix": {
+   "eser": "The Barque of Dante",
+   "yil": 1822,
+   "qid": "Q2354251",
+   "gorsel": "e997fbcec2932cf8",
+   "noktalar": [
+    {
+     "ad": "Dante",
+     "x": 0.25,
+     "y": 0.18,
+     "w": 0.25,
+     "h": 0.55,
+     "metin": "Kırmızı başlıklı Dante korkuyla elini kaldırmış. Cehennem'in sekizinci kantosunda, şehri Dis'e giden ölü nehrini geçiyorlar."
+    },
+    {
+     "ad": "Vergilius",
+     "x": 0.45,
+     "y": 0.22,
+     "w": 0.2,
+     "h": 0.5,
+     "metin": "Yanında defne taçlı, kahverengi pelerinli Roma şairi Vergilius onu sakin bir eliyle destekliyor. Cehennemde Dante'nin rehberi."
+    },
+    {
+     "ad": "Kayıkçı",
+     "x": 0.65,
+     "y": 0.3,
+     "w": 0.25,
+     "h": 0.25,
+     "metin": "Sağda sırtı bize dönük kayıkçı Phlegyas kürek çekiyor; mavi pelerini rüzgârda. Kaslı sırtı Michelangelo'dan izler taşır."
+    },
+    {
+     "ad": "Lanetliler",
+     "x": 0.05,
+     "y": 0.55,
+     "w": 0.95,
+     "h": 0.45,
+     "metin": "Suyun içinde lanetli ruhlar kayığa tutunmaya çalışıyor, birbirlerini ısırıyor. Bedenlerdeki su damlaları saf renk lekeleriyle yapılmış: Delacroix bunu Rubens'ten öğrendi."
+    },
+    {
+     "ad": "Yanan şehir",
+     "x": 0.0,
+     "y": 0.15,
+     "w": 0.2,
+     "h": 0.2,
+     "metin": "Sol arkada alevler içinde şehir Dis yanıyor. Delacroix bu resmi 1822'de, yirmi dört yaşında Salon'a gönderdi; Romantizm'in ilk büyük eserlerinden oldu."
+    }
+   ]
+  },
+  "francisco-de-goya": {
+   "eser": "Cadıların Uçuşu",
+   "yil": 1797,
+   "qid": "Q15728649",
+   "gorsel": "d055f14e9793c559",
+   "noktalar": [
+    {
+     "ad": "Uçan cadılar",
+     "x": 0.15,
+     "y": 0.08,
+     "w": 0.75,
+     "h": 0.5,
+     "metin": "Sivri külahlı üç cadı çıplak bir adamı havaya kaldırmış, sanki emiyor ya da yiyor. Goya bu resmi 1797–98'de, batıl inançlarla alay eden bir dizi için yaptı."
+    },
+    {
+     "ad": "Külahlar",
+     "x": 0.35,
+     "y": 0.05,
+     "w": 0.25,
+     "h": 0.25,
+     "metin": "Cadıların başlarındaki sivri külahlar Engizisyon'un mahkûmlara giydirdiği coroza'lara benziyor. Goya batıl inancı da Engizisyon'u da eleştiriyor."
+    },
+    {
+     "ad": "Örtünen adam",
+     "x": 0.4,
+     "y": 0.65,
+     "w": 0.25,
+     "h": 0.3,
+     "metin": "Altta bir adam başına beyaz bir örtü çekmiş, görmemek için yürüyüp gidiyor. Kötülükle yüzleşmek yerine gözünü kapatanların simgesi."
+    },
+    {
+     "ad": "Yerdeki adam",
+     "x": 0.0,
+     "y": 0.73,
+     "w": 0.3,
+     "h": 0.15,
+     "metin": "Solda yere kapanmış bir adam kulaklarını tıkıyor. Sağ altta karanlıkta bir eşek seçiliyor: Goya için cehaletin hayvanı."
     }
    ]
   },
