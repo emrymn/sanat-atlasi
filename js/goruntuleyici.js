@@ -81,7 +81,8 @@ export function kaynakYazisi(eser, gorsel) {
 // bildir: (eser, neden, gorsel) → bildirimden sonra seçilen görsel — İ5, "⋯" menüsü (yoksa menü çıkmaz)
 // ayrintilar: (eser) → rehberli inceleme kaydı ya da null (İş 151, js/ayrinti.js); kayıt varsa "İncele" düğmesi çıkar
 // incelemeyeBasla: açılan eserin kaydı varsa görüntüleyici doğrudan inceleme kipinde açılır
-export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null, koleksiyon = null, bildir = null, ayrintilar = null, incelemeyeBasla = false, ortalama = false, hikayeler = null, hikayeHazir = null }) {
+// hikayeyeBasla: açılan eserin hikâyesi varsa görüntüleyici hikâye paneli açık başlar (Bugün'ün Hikâyesi düğmesi)
+export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null, koleksiyon = null, bildir = null, ayrintilar = null, incelemeyeBasla = false, hikayeyeBasla = false, ortalama = false, hikayeler = null, hikayeHazir = null }) {
   let sira = baslangic;
   let olcek = 1;
   let tx = 0;
@@ -175,6 +176,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     hikayePanel.scrollTop = 0;
   }
   let ilkInceleme = !!incelemeyeBasla;
+  let ilkHikaye = !!hikayeyeBasla;
 
   // K4: işaret düğmesi o anki eserin koleksiyondaki durumunu gösterir; sanatçısı bilinmeyen eserde gizli
   // İş 157: "Günün resmi" düğmesi: bu eser sanatçısının günün resmi mi (bu cihazda ya da depodaki seçimle)
@@ -406,6 +408,10 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     // İş 169: eserin hikâyesi (varsa "Hikâyesi" düğmesi)
     hikayeGuncelle();
     hikayeKapat();
+    if (ilkHikaye) {
+      ilkHikaye = false;
+      hikayeAc();
+    }
     if (inceleDugme) {
       inceleDugme.hidden = !kayitSimdiki;
       if (kayitSimdiki) inceleDugme.textContent = `İncele · ${kayitSimdiki.noktalar.length} nokta`;
