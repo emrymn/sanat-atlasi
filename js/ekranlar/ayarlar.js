@@ -2,7 +2,7 @@
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { gosterilenGorseller } from '../eserler.js';
 import { devasaAdresleri, devasaSuz, suzulduMu, telefonAdresleri, telefonToplamBayt, tahminiBayt } from '../gorsel.js';
-import { cihazdakiElleOdaklar, cihazdakiGununResimleri, gununResmiKoy, tumGununResimleri, seciliGununResmi } from '../gorsel.js';
+import { cihazdakiElleOdaklar, ELLE_ANAHTAR, cihazdakiGununResimleri, gununResmiKoy, tumGununResimleri, seciliGununResmi } from '../gorsel.js';
 import { sanatciEserleri } from '../eserler.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat, kayitKilidiniAc, HAREKETLER, HAREKET_AD, YAZILAR, YAZI_AD } from '../depo.js';
@@ -24,6 +24,7 @@ import { bildirimMetni } from '../bildirim.js';
 import { YENILIKLER, yenilikYazisi } from '../yenilikler.js';
 import { bolumler } from './harita.js';
 import { hatalariOku, hatalariTemizle, gunlukMetni, hataEkle } from '../hataGunlugu.js';
+import { sitedekiSurum, guncellemeyiDene } from '../guncelleme.js';
 import { telefondaOlanlar, kaliciSil, kaliciYaz, eskileriTasi, PARCA, defterOku, defterYaz, defterSil, defterAdi, depoDurumu } from '../devasaOnbellek.js';
 
 // ---------- Ayarlar ----------
@@ -125,6 +126,11 @@ export function ayarlarSayfasi() {
         <p class="mesaj" id="gelistirici-mesaj" aria-live="polite"></p></div>
       ${gununResmiBolumu()}
       ${elleOdakBolumu()}
+      <div class="ayar" data-test="surum-denetle"><b>Sürüm</b>
+        <p>Bu cihazda ${SURUM}. Yeni sürüm kendiliğinden gelmezse buradan denetle.</p>
+        <button class="dugme ince" type="button" data-surum-denetle>Yeni sürüm var mı?</button>
+        <p class="mesaj" id="surum-mesaj" aria-live="polite"></p>
+      </div>
       <div class="ayar"><b>Yenilikler</b>
         <ul class="yenilik-liste" data-test="yenilikler">${YENILIKLER.map((x) => `<li>${kacis(yenilikYazisi(x))}</li>`).join('')}</ul>
       </div>
@@ -504,6 +510,17 @@ export function olaylariBagla() {
       ekran.querySelector('[data-test="gunun-resimleri"]').outerHTML = gununResmiBolumu();
       return;
     }
+    // İş 163: sitedeki data/gorsel_odak_elle.json geçerli olsun diye bu cihazdaki elle odaklar silinir
+    if (e.target.closest('[data-elle-odak-temizle]')) {
+      if (!confirm('Bu cihazda işaretlediğin elle odaklar silinsin mi? (Claude’a gönderip siteye girenler geçerli kalır.)')) return;
+      try {
+        localStorage.removeItem(ELLE_ANAHTAR);
+      } catch {
+        /* depo okunamıyorsa yapılacak bir şey yok */
+      }
+      ekran.querySelector('[data-test="elle-odak"]').outerHTML = elleOdakBolumu();
+      return;
+    }
     if (e.target.closest('[data-elle-odak-kopyala]')) {
       const m = document.getElementById('elle-odak-mesaj');
       const metin = ekran.querySelector('[data-elle-odak-metin]').value;
@@ -578,6 +595,7 @@ export function olaylariBagla() {
       ayarlarSayfasi();
       return;
     }
+    if (e.target.closest('[data-surum-denetle]')) return surumDenetle();
     if (e.target.closest('[data-yedekle]')) {
       yedekTarihiYaz();
       const metin = yedekMetni(d.ilerleme, d.yarim);
@@ -707,9 +725,9 @@ function elleOdakBolumu() {
   const n = Object.keys(l).length;
   if (!n && !d.ilerleme.gelistirici) return '';
   return `<div class="ayar" data-test="elle-odak"><b>Elle odaklar</b>
-    <p>${n ? `Bu cihazda ${n} tablonun odağı elle işaretlendi.` : 'Henüz yok.'} Geliştirici modunda bir eseri büyütüp “Odağı işaretle”ye dokun, sonra tablonun önemli noktasına. Kırpılan görseller (Galeri, Atölye, Tuval, Konular) o noktanın çevresinden kırpılır. Kalıcı olması için listeyi kopyalayıp Claude’a gönder.</p>
+    <p>${n ? `Bu cihazda ${n} tablonun odağı elle işaretlendi.` : 'Henüz yok.'} Günün resimlerinde (ya da geliştirici modunda) bir eseri büyütüp “Odağı işaretle”ye dokun, sonra tablonun önemli noktasına. Kırpılan görseller (Galeri, Atölye, Tuval, Konular) o noktanın çevresinden kırpılır. Kalıcı olması için listeyi kopyalayıp Claude’a gönder; sitede kalıcı olunca bu cihazdakileri silebilirsin (sitedekiler geçerli kalır).</p>
     ${n ? `<textarea readonly aria-label="Elle odaklar" data-elle-odak-metin>${kacis(JSON.stringify({ surum: 1, odak: l }))}</textarea>
-    <button class="dugme ince" type="button" data-elle-odak-kopyala>Kopyala</button>` : ''}
+    <div class="iki-dugme"><button class="dugme ince" type="button" data-elle-odak-kopyala>Kopyala</button><button class="dugme ince" type="button" data-elle-odak-temizle data-test="elle-odak-temizle">Bu cihazdakileri sil</button></div>` : ''}
     <p class="mesaj" id="elle-odak-mesaj" aria-live="polite"></p></div>`;
 }
 
@@ -747,7 +765,39 @@ async function gununResimleriniAc() {
   }
   m.textContent = '';
   const adi = new Map(sanatcilar.map((s) => [s.id, bilinenAd(s.ad, d.kisaAdlar[s.id])]));
-  goruntuleyiciAc({ eserler, kotuler: kotuler(), notu: (e) => `${adi.get(e.sid) || ''} · günün resmi ${eserler.indexOf(e) + 1} / ${eserler.length}` });
+  goruntuleyiciAc({ eserler, kotuler: kotuler(), ortalama: true, notu: (e) => `${adi.get(e.sid) || ''} · günün resmi ${eserler.indexOf(e) + 1} / ${eserler.length}` });
+}
+
+// İş 166: sitedeki sürümle karşılaştırır; yeniyse kurar ve sayfayı yeniler
+async function surumDenetle() {
+  const m = document.getElementById('surum-mesaj');
+  m.className = 'mesaj';
+  m.textContent = 'Bakılıyor…';
+  let site;
+  try {
+    site = await sitedekiSurum();
+  } catch {
+    m.textContent = 'Siteye ulaşılamadı; internet bağlantını denetle.';
+    return;
+  }
+  if (!site || site === SURUM) {
+    m.className = 'mesaj tamam';
+    m.textContent = `Güncel: ${SURUM}.`;
+    return;
+  }
+  m.textContent = `Sitede ${site} var, indiriliyor…`;
+  const sonuc = await guncellemeyiDene(site).catch((e) => {
+    hataEkle({ m: `Güncelleme denetimi: ${(e && e.message) || e}`, k: `${SURUM} → ${site}` });
+    return 'kurulamadi';
+  });
+  if (sonuc === 'kuruldu') {
+    m.className = 'mesaj tamam';
+    m.textContent = `${site} kuruldu, uygulama yenileniyor…`;
+    setTimeout(() => location.reload(), 800);
+    return;
+  }
+  if (sonuc === 'bulunamadi') hataEkle({ m: 'Sitede yeni sürüm var ama tarayıcı bulamadı', k: `${SURUM} → ${site}` });
+  m.textContent = 'Yeni sürüm kurulamadı. Ayarlar → Hata günlüğü → Kopyala ile Claude’a gönder.';
 }
 
 function gununAdi() {

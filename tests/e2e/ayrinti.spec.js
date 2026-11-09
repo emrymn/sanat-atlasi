@@ -120,7 +120,8 @@ test('kayıt yoksa: başyapıt sayfasında giriş yok, görüntüleyicide İncel
   await page.locator('[data-basyapit-buyut]').click();
   await expect(page.locator('.gor')).toBeVisible();
   await expect(page.locator('[data-test="gor-incele"]')).toHaveCount(0);
-  await expect(page.locator('[data-test="gor-inceleme"]')).toHaveCount(0);
+  // İş 169: panel hikâyenin karakterleri için gizli olarak sayfada durabilir; görünmez
+  await expect(page.locator('[data-test="gor-inceleme"]')).toBeHidden();
 });
 
 test('sanatçı sayfasındaki eser ızgarasından açılan görüntüleyicide de İncele var; başka esere geçince kapanır', async ({ page, context }) => {

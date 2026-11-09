@@ -1,0 +1,416 @@
+{
+ "surum": 1,
+ "aciklama": "İş 169: Resimlerin hikâyesi. Bkz. js/hikaye.js ve scripts/hikaye/TALIMAT.md.",
+ "eserler": [
+  {
+   "anahtar": "Q2627056",
+   "sanatci": "Caravaggio",
+   "baslik": "Golyat'ın Başıyla Davut",
+   "olay": [
+    "Kitab-ı Mukaddes'teki hikâye (1. Samuel 17): Filistliler ile İsrailoğulları karşı karşıya. Filistlilerin dev savaşçısı Golyat her gün İsrail ordusuna meydan okuyor; kimse karşısına çıkmaya cesaret edemiyor. Genç bir çoban olan Davut yalnızca sapanı ve bir taşla öne çıkıyor. Taş Golyat'ın alnına saplanıyor, dev yere yığılıyor; Davut onun başını Golyat'ın kendi kılıcıyla kesiyor.",
+    "Resim zaferin hemen sonrasını gösteriyor: Davut kesik başı bize doğru uzatıyor. Ama yüzünde sevinç yok; düşünceli, hatta üzgün."
+   ],
+   "kim": [
+    {
+     "ad": "Davut",
+     "metin": "Genç çoban, ileride İsrail'in kralı olacak. Yüzündeki hüzün resmin asıl sorusu: zafer mi, acıma mı?",
+     "kutu": [
+      0.33,
+      0.16,
+      0.25,
+      0.22
+     ]
+    },
+    {
+     "ad": "Golyat'ın başı",
+     "metin": "Ağzı açık, gözlerinden biri hâlâ yarı canlı; alnında taşın açtığı yara. Bu yüz, Caravaggio'nun kendi yüzü olarak kabul edilir.",
+     "kutu": [
+      0.7,
+      0.6,
+      0.28,
+      0.3
+     ]
+    },
+    {
+     "ad": "Kılıç",
+     "metin": "Golyat'ın kendi kılıcı. Bıçağın üstündeki silik harfler genellikle Latince \"Humilitas occidit superbiam\" (Alçakgönüllülük kibri öldürür) diye okunur.",
+     "kutu": [
+      0.03,
+      0.78,
+      0.37,
+      0.22
+     ]
+    }
+   ],
+   "ressam": [
+    "1606'da Caravaggio Roma'da bir kavgada Ranuccio Tomassoni'yi öldürdü, ölüm cezası aldı ve kaçtı. Yıllarca Napoli, Malta ve Sicilya arasında saklanarak yaşadı.",
+    "Resim, Papa'nın yeğeni Kardinal Scipione Borghese'ye gönderildi; affı sağlayabilecek kişilerden biri oydu. Bu yüzden resim çoğunlukla bir af dilekçesi olarak yorumlanır: Caravaggio kendini cezasını almış suçlu, yani kesik baş olarak gösteriyor. 1610'da affı beklerken Roma'ya dönüş yolunda öldü."
+   ],
+   "gozden": [
+    "Resmin tarihi tartışmalıdır: çoğu araştırmacı 1609–1610'a, bazıları daha erkene tarihler.",
+    "Davut'un modeli için bazı araştırmacılar Caravaggio'nun genç yardımcısı \"Cecco\"yu önerir; bu bir tahmindir.",
+    "Arka plan tamamen karanlık; ışık yalnızca Davut'un gövdesine ve kesik başa düşer. Caravaggio'nun ünlü ışık-gölge (chiaroscuro) kullanımı."
+   ]
+  },
+  {
+   "anahtar": "Q208758",
+   "sanatci": "Diego Velázquez",
+   "baslik": "Nedimeler (Las Meninas)",
+   "olay": [
+    "Madrid'deki kraliyet sarayı, 1656. Saray ressamı Velázquez'in atölyesindeyiz. Ortada beş yaşındaki prenses Margarita Teresa; çevresinde nedimeleri, saray cüceleri, bir hizmetkâr ve bir köpek var. Velázquez solda, kocaman bir tuvalin başında fırçasıyla duruyor.",
+    "Peki herkes neye bakıyor? Arka duvardaki küçük ayna cevabı veriyor: Kral IV. Felipe ile Kraliçe Mariana. Yani kral ve kraliçe tam bizim durduğumuz yerde duruyor. Resme bakan herkes bir an kralın yerine geçiyor. Velázquez'in tuvalinde ne olduğunu ise hiç göremiyoruz; en yaygın tahmin, kral ile kraliçenin portresini yaptığıdır."
+   ],
+   "kim": [
+    {
+     "ad": "Velázquez",
+     "metin": "Ressamın kendisi, elinde palet ve fırça. Göğsündeki kırmızı haç Santiago Tarikatı'nın nişanı; bu unvanı resimden üç yıl sonra, 1659'da aldı.",
+     "kutu": [
+      0.15,
+      0.49,
+      0.15,
+      0.2
+     ]
+    },
+    {
+     "ad": "Infanta Margarita",
+     "metin": "Kralın kızı, beş yaşında. Resmin ışığı onun üstünde toplanıyor.",
+     "kutu": [
+      0.39,
+      0.63,
+      0.15,
+      0.17
+     ]
+    },
+    {
+     "ad": "María Agustina Sarmiento",
+     "metin": "Nedime. Diz çökmüş, prensese kırmızı bir testide su uzatıyor.",
+     "kutu": [
+      0.27,
+      0.62,
+      0.12,
+      0.16
+     ]
+    },
+    {
+     "ad": "Isabel de Velasco",
+     "metin": "Öteki nedime; prensese doğru eğilmiş, reverans yapıyor.",
+     "kutu": [
+      0.55,
+      0.55,
+      0.14,
+      0.16
+     ]
+    },
+    {
+     "ad": "Aynadaki kral ve kraliçe",
+     "metin": "IV. Felipe ile Mariana. Resmin hiçbir yerinde doğrudan görünmüyorlar; yalnızca bu bulanık yansımada varlar.",
+     "kutu": [
+      0.385,
+      0.515,
+      0.075,
+      0.095
+     ]
+    },
+    {
+     "ad": "Kapıdaki adam",
+     "metin": "José Nieto Velázquez, kraliçenin mabeyincisi (ressamla akraba olup olmadığı bilinmiyor). Merdivende durmuş, içeri bakıyor; gelmek mi gitmek mi üzere, belli değil.",
+     "kutu": [
+      0.53,
+      0.52,
+      0.08,
+      0.14
+     ]
+    },
+    {
+     "ad": "Mari Bárbola",
+     "metin": "Saray cücesi. İspanyol sarayında cüceler eğlendirici ve yoldaş olarak yaşardı; Velázquez onları onurlu ve bireysel portrelerle resmetmiştir.",
+     "kutu": [
+      0.8,
+      0.6,
+      0.12,
+      0.16
+     ]
+    },
+    {
+     "ad": "Nicolasito Pertusato",
+     "metin": "Öteki saray cücesi, ayağını köpeğe dayamış; sahnenin tek \"oyunbaz\" hareketi.",
+     "kutu": [
+      0.9,
+      0.67,
+      0.1,
+      0.15
+     ]
+    },
+    {
+     "ad": "Köpek",
+     "metin": "Uyuklayan iri bir mastif. Bu kalabalık ve törensel sahnede hiç umursamayan tek varlık.",
+     "kutu": [
+      0.6,
+      0.83,
+      0.32,
+      0.15
+     ]
+    },
+    {
+     "ad": "Rahibe ve muhafız",
+     "metin": "Gölgede, prensesin refakatçisi Marcela de Ulloa ile adı bilinmeyen bir muhafız.",
+     "kutu": [
+      0.67,
+      0.51,
+      0.14,
+      0.13
+     ]
+    }
+   ],
+   "ressam": [
+    "Velázquez kendini kraliyet ailesinin resmine yerleştirmiş. 17. yüzyıl İspanya'sında ressamlık bir el zanaatı sayılıyordu; Velázquez ise resmin soylu bir sanat olduğunu kanıtlamak ve soyluluk unvanı almak istiyordu. Resimde kralın ailesiyle aynı odada, eşit bir mesafede duruyor.",
+    "Göğsündeki Santiago haçı resim bittikten sonra, 1659'da eklendi. Rivayete göre Velázquez'in ölümünden sonra kral eklettirdi; kimin eklediği kesin değil."
+   ],
+   "gozden": [
+    "Arka duvardaki iki büyük resim, Rubens ve çevresinin mitoloji sahnelerinin kopyaları olarak tanımlanır; ikisi de tanrılarla ölümlüler arasındaki bir sanat yarışmasını anlatır. Resmin içinde sanatın değeri üstüne bir gönderme daha var.",
+    "Picasso 1957'de bu resmi 58 ayrı resimde yeniden yorumladı.",
+    "Resmin ilk adı \"Nedimeler\" değildi; eski saray envanterlerinde \"IV. Felipe'nin ailesi\" gibi adlarla geçer, bugünkü adı 19. yüzyılda yerleşti."
+   ]
+  },
+  {
+   "anahtar": "Q212616",
+   "sanatci": "Théodore Géricault",
+   "baslik": "Medusa'nın Salı",
+   "olay": [
+    "Temmuz 1816. Fransız savaş gemisi Méduse, Senegal'e giderken Moritanya açıklarında sığlığa oturuyor. Kaptan, yıllardır denize çıkmamış, siyasi kayırmayla atanmış biriydi. Filikalar herkese yetmeyince yaklaşık 150 kişi derme çatma bir sala bindiriliyor. Filikalar salı önce çekiyor, sonra ipleri kesip bırakıyor.",
+    "Salda geçen 13 gün korkunç: isyan, kavga, açlık ve yamyamlık. Sonunda Argus adlı bir gemi onları buluyor; yalnızca 15 kişi canlı kurtarılıyor. Resim tam o anı gösteriyor: hayatta kalanlar ufukta küçücük bir gemi görmüş ve ona işaret ediyor. Rivayete göre gemi o an onları görmeden uzaklaşmış, saatler sonra geri dönmüştü; resim umutla umutsuzluk arasındaki bu anı yakalıyor."
+   ],
+   "kim": [
+    {
+     "ad": "Bez sallayan adam",
+     "metin": "Sahnenin tepe noktası: bir fıçının üstüne çıkmış, gemiye bez sallıyor. Modeli Joseph adlı siyahi bir modeldi; kurtuluş umudunu siyahi bir figüre taşıtması, köleliğe karşı bir duruş olarak da yorumlanır.",
+     "kutu": [
+      0.61,
+      0.06,
+      0.2,
+      0.37
+     ]
+    },
+    {
+     "ad": "Ufuktaki Argus",
+     "metin": "Kurtarıcı gemi, ufukta neredeyse görünmeyecek kadar küçük. Resmin bütün umudu bu nokta.",
+     "kutu": [
+      0.76,
+      0.34,
+      0.11,
+      0.11
+     ]
+    },
+    {
+     "ad": "Baba ve ölü oğul",
+     "metin": "Solda yaşlı bir adam, kucağındaki ölü genci tutuyor, gemiye bakmıyor bile. Umudun karşısındaki yas.",
+     "kutu": [
+      0.21,
+      0.5,
+      0.26,
+      0.3
+     ]
+    },
+    {
+     "ad": "Direğin yanındakiler",
+     "metin": "Gemiyi gösterenler. Olayı kitaplaştıran iki kurtulan, cerrah Savigny ile mühendis Corréard'ın bu grubun içinde resmedildiği söylenir.",
+     "kutu": [
+      0.46,
+      0.25,
+      0.2,
+      0.22
+     ]
+    },
+    {
+     "ad": "Suya kayan ölüler",
+     "metin": "Ön plandaki cesetler, salın kenarından denize kayıyor. İzleyici bu ölülerin arasından sahneye giriyor.",
+     "kutu": [
+      0.6,
+      0.78,
+      0.38,
+      0.2
+     ]
+    }
+   ],
+   "ressam": [
+    "Olay bir skandala dönüştü: yeniden tahta çıkan Bourbon hükümeti suçu örtbas etmeye çalıştı, kurtulanlar 1817'de olanları kitap olarak yayımladı. Géricault henüz 27 yaşındaydı ve bu güncel, siyasi felaketi dev boyutlu (yaklaşık 5 × 7 metre) bir tarih tablosuna dönüştürdü.",
+    "Resim için takıntılı bir araştırma yaptı: kurtulanlarla konuştu, salın bir maketini yaptırdı, hastane morglarından ceset parçalarını atölyesine getirip inceledi. Genç ressam Delacroix'nın ön plandaki figürlerden birine poz verdiği anlatılır. Géricault bu resimden beş yıl sonra, 1824'te 32 yaşında öldü."
+   ],
+   "gozden": [
+    "Figürler, gerçekte açlıktan bitkin düşmüş insanlara göre fazlasıyla kaslı ve güçlü; Géricault onları Michelangelo'nun figürleri gibi kahramanca resmetmiş.",
+    "Kompozisyon iki üçgen üstüne kurulu: biri soldaki yelkenle, öteki sağdaki bez sallayan adamla zirveye çıkar. Göz, ölülerden umuda doğru yukarı tırmanır.",
+    "Kullandığı koyu bitümlü boya yüzünden resim zamanla karardı; bazı ayrıntılar bugün eskisinden zor seçiliyor."
+   ]
+  },
+  {
+   "anahtar": "Q3769169",
+   "sanatci": "Artemisia Gentileschi",
+   "baslik": "Holofernes'in Başını Kesen Judith",
+   "olay": [
+    "Hikâye Kitab-ı Mukaddes'in bazı versiyonlarında yer alan Judith Kitabı'ndan. Asur komutanı Holofernes'in ordusu Yahudilerin Betulya kentini kuşatmış, kent susuzluktan teslim olmak üzere. Dul ve güzel bir kadın olan Judith, hizmetçisi Abra ile düşman kampına gidiyor ve Holofernes'in güvenini kazanıyor.",
+    "Bir ziyafetten sonra sarhoş olan Holofernes çadırında uyuyakalıyor. Judith onun kendi kılıcıyla başını kesiyor, başı bir torbaya koyup kente dönüyor. Komutanını kaybeden Asur ordusu dağılıyor. Resim, kesme anının kendisini gösteriyor."
+   ],
+   "kim": [
+    {
+     "ad": "Judith",
+     "metin": "Kollarını sıvamış, yüzünde ne korku ne öfke var; işini kararlılıkla yapan biri. Kahramanın edilgen bir güzellik değil, fiziksel güç olarak resmedilmesi o dönem için alışılmadıktır.",
+     "kutu": [
+      0.8,
+      0.15,
+      0.16,
+      0.17
+     ]
+    },
+    {
+     "ad": "Hizmetçi Abra",
+     "metin": "Öteki ressamların çoğunda kenarda durup torbayı tutar. Artemisia'da ise Holofernes'i bastırarak işe bizzat katılıyor; iki kadın birlikte çalışıyor.",
+     "kutu": [
+      0.44,
+      0.05,
+      0.2,
+      0.22
+     ]
+    },
+    {
+     "ad": "Holofernes",
+     "metin": "Uyanmış, direniyor ama artık çok geç. Başı bize doğru ters dönmüş.",
+     "kutu": [
+      0.46,
+      0.56,
+      0.16,
+      0.14
+     ]
+    },
+    {
+     "ad": "Kılıç",
+     "metin": "Holofernes'in kendi kılıcı. Kabzası bir haç gibi duruyor; sahneye dinî bir anlam katıyor.",
+     "kutu": [
+      0.37,
+      0.4,
+      0.2,
+      0.16
+     ]
+    },
+    {
+     "ad": "Bilezik",
+     "metin": "Judith'in kolundaki madalyonlu bilezik. Madalyonlardaki figürlerin, ressamın adaşı olan av tanrıçası Artemis'i gösterdiği düşünülür.",
+     "kutu": [
+      0.68,
+      0.51,
+      0.1,
+      0.08
+     ]
+    }
+   ],
+   "ressam": [
+    "Artemisia Gentileschi, 1611'de 17–18 yaşındayken babasının çalışma arkadaşı ve resim hocası Agostino Tassi tarafından tecavüze uğradı. Ardından Roma'da açılan davada, ifadesinin doğruluğunu \"kanıtlamak\" için parmakları iple sıkılarak işkence gördü. Tassi suçlu bulundu ama cezası neredeyse hiç uygulanmadı.",
+    "Artemisia bu konuyu birkaç kez resmetti; bu Uffizi versiyonu yaklaşık 1620'den. Resimlerdeki şiddet çoğu zaman yaşadıklarıyla birlikte okunur. Ama Judith o dönemin çok sevilen bir konusuydu; resmi yalnızca bir intikam olarak görmek, Artemisia'nın ressam olarak başarısını gölgede bırakabilir. Floransa Resim Akademisi'ne kabul edilen ilk kadın oydu."
+   ],
+   "gozden": [
+    "Caravaggio'nun aynı konudaki resmini (yaklaşık 1599) bildiği düşünülür. Caravaggio'nun Judith'i çekingendir; Artemisia'nınki ise işine gömülmüş.",
+    "Kan, yatağın üstüne kavisler hâlinde fışkırıyor. Bazı araştırmacılar bunu, Artemisia'nın tanıdığı Galileo'nun cisimlerin yörüngesi üzerine çalışmalarıyla ilişkilendirir; bu bir yorum.",
+    "Resim Medici ailesi için yapıldı; şiddeti yüzünden uzun süre Uffizi'nin karanlık bir köşesinde tutulduğu anlatılır."
+   ]
+  },
+  {
+   "anahtar": "Q1212937",
+   "sanatci": "Hans Holbein (Genç)",
+   "baslik": "Elçiler",
+   "olay": [
+    "Londra, 1533. İki genç Fransız, Kral VIII. Henry'nin sarayında. Soldaki Jean de Dinteville, Fransa kralının İngiltere elçisi; sağdaki dostu Georges de Selve, bir piskopos ve zaman zaman diplomat.",
+    "1533 gergin bir yıl: Henry, Roma'nın izni olmadan Katherine'den boşanıp Anne Boleyn'le evlendi; İngiltere Katolik Kilisesi'nden kopmak üzere. Avrupa'da Protestanlarla Katolikler arasındaki ayrılık büyüyor. Resim, iki adamın bilgisini ve dünyasını gösterirken o dünyanın çatlaklarını da gizlice işliyor."
+   ],
+   "kim": [
+    {
+     "ad": "Jean de Dinteville",
+     "metin": "Fransız elçisi, 29 yaşında (hançerinin kınında yazıyor). Şapkasında küçük bir kurukafa rozeti var.",
+     "kutu": [
+      0.16,
+      0.08,
+      0.16,
+      0.16
+     ]
+    },
+    {
+     "ad": "Georges de Selve",
+     "metin": "Lavaur piskoposu, 25 yaşında (dirseğini dayadığı kitabın kenarında yazıyor). Kilisenin birliğini savunan bir din adamıydı.",
+     "kutu": [
+      0.79,
+      0.1,
+      0.14,
+      0.15
+     ]
+    },
+    {
+     "ad": "Üst raf: göğün aletleri",
+     "metin": "Gök küresi, güneş saatleri ve gökbilim aletleri. Göklerin, yani bilginin ve düzenin dünyası.",
+     "kutu": [
+      0.39,
+      0.15,
+      0.36,
+      0.2
+     ]
+    },
+    {
+     "ad": "Lavta ve kopuk tel",
+     "metin": "Alt raftaki lavtanın bir teli kopuk. Uyumun bozulduğunu, Avrupa'daki dinî bölünmeyi simgelediği düşünülür.",
+     "kutu": [
+      0.5,
+      0.54,
+      0.26,
+      0.16
+     ]
+    },
+    {
+     "ad": "İlahi kitabı",
+     "metin": "Açık sayfalarda Martin Luther'in Almancaya çevirdiği ilahiler var. Katolik bir piskoposun yanında Protestan bir kitap: birlik çağrısı mı, bölünmenin işareti mi?",
+     "kutu": [
+      0.54,
+      0.62,
+      0.16,
+      0.08
+     ]
+    },
+    {
+     "ad": "Anamorfik kurukafa",
+     "metin": "Yerdeki tuhaf, uzamış leke aslında bir kurukafa. Önden bakınca seçilmez; resmin sağ yanından, çok eğik bir açıyla bakınca düzgün görünür. Bütün bu bilgi, zenginlik ve gücün ölüm karşısında geçici olduğunu hatırlatır (memento mori).",
+     "kutu": [
+      0.24,
+      0.74,
+      0.52,
+      0.2
+     ]
+    },
+    {
+     "ad": "Perdenin ardındaki çarmıh",
+     "metin": "Sol üst köşede, perdenin arkasından yarı görünen küçük bir çarmıh. Ölümün karşısındaki kurtuluş umudu, ama gizlenmiş.",
+     "kutu": [
+      0.0,
+      0.0,
+      0.09,
+      0.16
+     ]
+    },
+    {
+     "ad": "Hançer",
+     "metin": "Dinteville'in hançeri; kınında yaşı yazıyor: 29.",
+     "kutu": [
+      0.1,
+      0.48,
+      0.19,
+      0.11
+     ]
+    }
+   ],
+   "ressam": [
+    "Holbein, İsviçre'nin Basel kentinde çalışan Alman bir ressamdı; Reform'un Basel'de yol açtığı karışıklıkta iş bulamayınca İngiltere'ye geldi ve sonra VIII. Henry'nin saray ressamı oldu.",
+    "Resmi sol alt köşede, yerdeki mozaiğe \"Ioannes Holbein pingebat 1533\" diye imzaladı. Kurukafanın ressamın adına bir oyun olduğu da öne sürülür: Almancada \"hohl Bein\" \"oyuk kemik\" demektir. Bu bir yorum, kanıt değil."
+   ],
+   "gozden": [
+    "Yerdeki desenli mozaik, Londra'daki Westminster Abbey'deki kutsal alan döşemesine benzer.",
+    "Bazı araştırmacılar, üst raftaki aletlerin gösterdiği tarihin 11 Nisan 1533, o yılın Kutsal Cuması olduğunu öne sürer; bu tartışmalı bir okuma.",
+    "Resim, 1890'dan beri Londra'daki National Gallery'de."
+   ]
+  }
+ ]
+}

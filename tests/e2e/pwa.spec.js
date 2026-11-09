@@ -84,3 +84,10 @@ test('service worker etkinken uygulama dışı sayfa (deneme/titresim.html) kend
   await page.goto('./');
   await expect(page.getByRole('heading', { name: 'Sanat Atlası' })).toBeVisible();
 });
+
+// İş 166: Ayarlar → Sürüm → "Yeni sürüm var mı?" sitedeki sürümle karşılaştırır
+test('İş 166: Ayarlar’da sürüm denetimi güncel olduğunu söyler', async ({ page }) => {
+  await page.goto('./#/ayarlar');
+  await page.locator('[data-surum-denetle]').click();
+  await expect(page.locator('#surum-mesaj')).toContainText('Güncel');
+});

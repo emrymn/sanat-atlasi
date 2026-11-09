@@ -77,3 +77,13 @@ export function noktaOdagi(nokta, taban, sahne, { pay = 0.78, enAz = 1.15, enCok
 export function noktaYeri(n) {
   return { x: Math.round((n.x + n.w / 2) * 10000) / 100, y: Math.round((n.y + n.h / 2) * 10000) / 100 };
 }
+
+// İş 165 (Emre: "yüksek kalite olmayanlarda yakınlaştırmayı azalt ki görüntü çok bozulmasın"): noktaya yakınlaşmanın
+// üst sınırı görselin gerçek çözünürlüğünden. kaynak: görselin elde olan en büyük kopyasının uzun kenarı (px); taban:
+// tablonun ölçek 1'deki uzun kenarı (CSS px); dpr: ekranın piksel oranı. Bir görsel pikseli en çok `pay` ekran pikseline
+// yayılır (biraz büyütme göze batmaz); sınır [enAz, enCok] arasında. Kaynak bilinmiyorsa enCok.
+export function yakinlasmaSiniri(kaynak, taban, dpr = 1, { pay = 1.5, enAz = 1.15, enCok = 6 } = {}) {
+  if (!(kaynak > 0) || !(taban > 0)) return enCok;
+  const olcek = (kaynak * pay) / (taban * Math.max(1, dpr || 1));
+  return Math.round(Math.min(enCok, Math.max(enAz, olcek)) * 100) / 100;
+}
