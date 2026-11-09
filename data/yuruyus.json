@@ -5060,6 +5060,54 @@
     }
    ]
   },
+  "j-m-w-turner": {
+   "eser": "The Fighting Temeraire",
+   "yil": 1839,
+   "qid": "Q257580",
+   "gorsel": "f8bcd45668591a51",
+   "noktalar": [
+    {
+     "ad": "Hayalet gibi gemi",
+     "x": 0.12,
+     "y": 0.15,
+     "w": 0.25,
+     "h": 0.6,
+     "metin": "Solda solgun, neredeyse hayalet gibi yelkenli: Trafalgar Savaşı'nda (1805) savaşmış HMS Temeraire. 1838'de sökülmek üzere son yolculuğuna çekiliyor."
+    },
+    {
+     "ad": "Römorkör",
+     "x": 0.25,
+     "y": 0.4,
+     "w": 0.15,
+     "h": 0.35,
+     "metin": "Önünde siyah, dumanlı küçük bir buharlı römorkör onu çekiyor. Yelkenin çağı bitiyor, buharın çağı başlıyor: Turner bunu bir veda olarak boyamış."
+    },
+    {
+     "ad": "Batan güneş",
+     "x": 0.6,
+     "y": 0.4,
+     "w": 0.35,
+     "h": 0.35,
+     "metin": "Sağda güneş batarken gökyüzü kızıl ve altın renklere boyanıyor. Günün sonu, eski bir dönemin de sonu."
+    },
+    {
+     "ad": "Su yüzeyi",
+     "x": 0.0,
+     "y": 0.75,
+     "w": 1.0,
+     "h": 0.25,
+     "metin": "Sudaki yansımalar kalın, akışkan boya katmanlarıyla yapılmış. Turner bu resmi hayatı boyunca satmadı ve \"sevgilim\" diye anardı; 2005'te İngiltere'nin en sevilen resmi seçildi."
+    },
+    {
+     "ad": "Uzaktaki şamandıra",
+     "x": 0.78,
+     "y": 0.75,
+     "w": 0.1,
+     "h": 0.15,
+     "metin": "Sağ altta karanlık küçük bir nesne, bir şamandıra ya da kayık. Turner kompozisyonun dengesini bu küçük koyu lekeyle kurmuş."
+    }
+   ]
+  },
   "theodore-gericault": {
    "eser": "The Raft of the Medusa",
    "yil": 1819,
@@ -5113,6 +5161,157 @@
      "w": 0.3,
      "h": 0.42,
      "metin": "Solda şişmiş yelken ve arkasında yükselen dev dalga: ikinci piramit. Rüzgâr salı gemiden uzağa iter. Gökyüzü fırtına sonrası sarı-kahverengidir; bitüm boyası zamanla daha da kararmıştır."
+    }
+   ]
+  },
+  "dante-gabriel-rossetti": {
+   "eser": "Proserpine",
+   "yil": 1874,
+   "qid": "Q977777",
+   "gorsel": "38b5f445f713b1a2",
+   "buyuk": "y/dante-gabriel-rossetti.jpg",
+   "noktalar": [
+    {
+     "ad": "Proserpina",
+     "x": 0.1,
+     "y": 0.05,
+     "w": 0.6,
+     "h": 0.35,
+     "metin": "Kızıl saçlı kadın Proserpina, yeraltı tanrısı Pluto'nun kaçırdığı kız. Modeli Jane Morris; Rossetti ona âşıktı ama o arkadaşı William Morris'in karısıydı."
+    },
+    {
+     "ad": "Nar",
+     "x": 0.25,
+     "y": 0.25,
+     "w": 0.25,
+     "h": 0.15,
+     "metin": "Elindeki ısırılmış nar meyvesi hikâyenin anahtarı: yeraltında nar taneleri yediği için yılın bir kısmını orada geçirmeye mahkûm oldu."
+    },
+    {
+     "ad": "Sarmaşık",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 0.35,
+     "metin": "Arkada duvara tırmanan sarmaşık, sadakatin ve bağlılığın simgesi; tutsaklığın da."
+    },
+    {
+     "ad": "Buhurdan",
+     "x": 0.0,
+     "y": 0.75,
+     "w": 0.2,
+     "h": 0.15,
+     "metin": "Sol altta tüten küçük buhurdan, tanrıça olarak taşıdığı kutsallığın işareti."
+    },
+    {
+     "ad": "Sone",
+     "x": 0.65,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 0.1,
+     "metin": "Sağ üstteki kâğıtta Rossetti'nin kendi yazdığı İtalyanca bir sone var. Rossetti hem şair hem ressamdı; bu resmi en az sekiz kez yeniden yaptı."
+    }
+   ]
+  },
+  "john-everett-millais": {
+   "eser": "Mariana",
+   "yil": 1851,
+   "qid": "Q4281369",
+   "gorsel": "a0904037462b2efe",
+   "noktalar": [
+    {
+     "ad": "Gerinen Mariana",
+     "x": 0.48,
+     "y": 0.08,
+     "w": 0.35,
+     "h": 0.85,
+     "metin": "Mavi kadife elbiseli Mariana, uzun saatler nakış işledikten sonra belini tutup geriniyor. Shakespeare'in ve Tennyson'ın Mariana'sı: nişanlısının dönmesini yıllardır bekleyen kadın."
+    },
+    {
+     "ad": "Vitray",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.35,
+     "h": 0.35,
+     "metin": "Pencerede renkli camlarda Müjde sahnesi: Meryem'in mutluluğu ile Mariana'nın yalnızlığı arasında bir karşıtlık. Camlar Oxford'daki Merton College'den kopyalandı."
+    },
+    {
+     "ad": "Nakış ve yapraklar",
+     "x": 0.0,
+     "y": 0.4,
+     "w": 0.4,
+     "h": 0.25,
+     "metin": "Masada yarım kalmış bir nakış ve pencereden içeri düşmüş sonbahar yaprakları. Zaman geçiyor, mevsimler dönüyor ama kimse gelmiyor."
+    },
+    {
+     "ad": "Fare",
+     "x": 0.66,
+     "y": 0.8,
+     "w": 0.32,
+     "h": 0.18,
+     "metin": "Sağ altta yerde küçük bir fare koşuyor. Tennyson'ın şiirinde fare, terk edilmiş evdeki çürümenin bir işaretidir."
+    },
+    {
+     "ad": "Sunak",
+     "x": 0.75,
+     "y": 0.35,
+     "w": 0.25,
+     "h": 0.25,
+     "metin": "Arkada mumlarla küçük bir ev sunağı. Prerafaelitler her ayrıntıyı doğadan ve gerçek nesnelerden, büyük bir titizlikle boyamayı ilke edindiler."
+    }
+   ]
+  },
+  "william-holman-hunt": {
+   "eser": "The Lady of Shalott",
+   "yil": 1890,
+   "qid": "Q98113753",
+   "gorsel": "8093fb8c862f6508",
+   "kirp": [
+    0.02,
+    0.01,
+    0.96,
+    0.98
+   ],
+   "noktalar": [
+    {
+     "ad": "Shalott Leydisi",
+     "x": 0.2,
+     "y": 0.2,
+     "w": 0.4,
+     "h": 0.8,
+     "metin": "Kadın nakış çerçevesinin içinde, ipliklere dolanmış. Tennyson'ın şiirine göre dünyaya yalnız bir aynadan bakabilirdi; dışarı bakarsa lanetlenecekti."
+    },
+    {
+     "ad": "Ayna",
+     "x": 0.55,
+     "y": 0.25,
+     "w": 0.25,
+     "h": 0.3,
+     "metin": "Arkadaki yuvarlak aynada Camelot'nun yolları ve şövalye Lancelot görünüyor. O Lancelot'ya doğrudan baktığı an ayna çatlar ve lanet başlar."
+    },
+    {
+     "ad": "Çözülen iplikler",
+     "x": 0.25,
+     "y": 0.6,
+     "w": 0.7,
+     "h": 0.3,
+     "metin": "Dokuduğu goblenin iplikleri havada uçuşuyor, ayaklarına dolanıyor: lanet gerçekleşti. Hunt bu resim üzerinde yaklaşık yirmi yıl çalıştı (1886–1905)."
+    },
+    {
+     "ad": "Duvar kabartmaları",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 1.0,
+     "h": 0.2,
+     "metin": "Arkadaki duvarda Herkül'ün ve Meryem'in kabartmaları var: erdemle günah arasındaki seçimi hatırlatan sahneler."
+    },
+    {
+     "ad": "Gümüş ibrik",
+     "x": 0.82,
+     "y": 0.55,
+     "w": 0.15,
+     "h": 0.2,
+     "metin": "Sağdaki gümüş kaplar ve renkli yumaklar ayrıntıların ne kadar titiz işlendiğini gösteriyor. Prerafaelitlerin kurucularından Hunt, kardeşliğin ilkelerine en uzun sadık kalandı."
     }
    ]
   },
