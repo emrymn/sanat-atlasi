@@ -19,6 +19,8 @@
     background:linear-gradient(to bottom, rgba(18,17,16,.45) 0, transparent 16%, transparent 52%, rgba(18,17,16,.82) 78%, rgba(18,17,16,.96) 100%); }
   .ust { position:fixed; top:0; left:0; right:0; z-index:5; display:flex; justify-content:space-between; align-items:center;
     padding:calc(env(safe-area-inset-top) + 14px) 20px 0; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--yazi); }
+  .ust::before { content:''; position:absolute; inset:0 0 -40px; z-index:-1; opacity:var(--perde,0); pointer-events:none;
+    background:linear-gradient(to bottom, rgba(18,17,16,.9) 55%, rgba(18,17,16,0)); }
   .ben { width:44px; height:44px; border-radius:50%; display:grid; place-items:center; background:rgba(18,17,16,.5);
     -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); border:1px solid var(--cizgi); font-size:12px; letter-spacing:.06em; }
   .noktalar { position:fixed; right:10px; top:50%; transform:translateY(-50%); z-index:5; display:flex; flex-direction:column; gap:8px; transition:opacity .3s; }
@@ -43,6 +45,13 @@
   .kart h2 { font:400 25px/1.15 var(--serif); margin:0 0 8px; }
   .kart p { font:400 17px/1.5 var(--serif); color:#e3dacb; }
   .kart a.bag { display:inline-flex; align-items:center; min-height:44px; margin-top:6px; color:var(--altin); text-decoration:none; font:500 15px var(--sans); }
+  .bulanik { position:fixed; inset:0; z-index:2; pointer-events:none; opacity:0; background:rgba(18,17,16,.55);
+    -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px); }
+  section.hayat { height:auto; min-height:100svh; justify-content:flex-start; scroll-snap-stop:normal;
+    padding:calc(env(safe-area-inset-top) + 84px) 22px calc(env(safe-area-inset-bottom) + 120px); text-shadow:0 1px 3px rgba(0,0,0,.5); }
+  .hayat h2 { font:400 30px/1.1 var(--serif); margin-bottom:14px; }
+  .hayat p { font:400 18px/1.6 var(--serif); color:#e8dfd0; margin-bottom:14px; }
+  .hayat small { color:var(--ikincil); font-size:13px; }
   .sekme { position:fixed; left:14px; right:14px; bottom:calc(env(safe-area-inset-bottom) + 10px); z-index:6; height:62px; border-radius:31px;
     background:rgba(29,27,25,.9); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); border:1px solid var(--cizgi);
     display:grid; grid-template-columns:repeat(5,1fr); align-items:center; text-align:center; font-size:11px; color:var(--ikincil); }
@@ -56,6 +65,7 @@
 <body>
 <div class="sahne"><img id="resim" src="https://gorsel.noracloud.ai/b/216d1fc681535d27.jpg" alt="Pieter Bruegel, Karda Avcılar" decoding="async"></div>
 <div class="karart" id="karart"></div>
+<div class="bulanik" id="bulanik"></div>
 <div class="ust"><span>9 Kasım</span><span class="ben">Ben</span></div>
 <div class="noktalar" id="noktalar"></div>
 <main id="akis">
@@ -69,7 +79,7 @@
 </main>
 <nav class="sekme"><span class="acik">Bugün</span><span>Yolculuk</span><span>Galeri</span><span>Başyapıt</span><span>Çalış<i class="sayi">8</i></span></nav>
 <script>
-const VERI = {"noktalar": [{"ad": "Yorgun avcılar", "x": 0.01, "y": 0.52, "w": 0.4, "h": 0.42, "metin": "Üç avcı ve köpekleri omuzları düşük, başları eğik döner; sırttaki tek tilki avın ne kadar kıt olduğunu söyler. Karda derin izler bırakırlar. Bakış onlarla birlikte tepeden aşağı, vadiye iner."}, {"ad": "Buzda kayanlar", "x": 0.65, "y": 0.5, "w": 0.3, "h": 0.2, "metin": "Donmuş göletlerde köylüler paten kayar, topaç çevirir, kızak çeker. Siyah küçük figürler buzun açık renginde tek tek sayılabilir. Soğuğa rağmen bir bayram havası var."}, {"ad": "Domuz yakma", "x": 0.01, "y": 0.5, "w": 0.18, "h": 0.18, "metin": "Hanın önünde kadınlar ateş yakmış, kesilmiş domuzun kıllarını alazlıyor. Aralık ayının takvim işidir; tablo bir ay dizisinin parçasıdır. Alevler kar beyazında tek sıcak renk."}, {"ad": "Uçan kuş", "x": 0.65, "y": 0.19, "w": 0.12, "h": 0.13, "metin": "Yeşil-gri gökte tek bir kuş kanat açmış süzülür. Küçücük bir siluet ama kompozisyonun boşluğunu tutar ve derinliği ölçer. Ağaçlardaki kargalar hareketsiz, bu kuş hareket hâlinde."}, {"ad": "Alp zirveleri", "x": 0.75, "y": 0.08, "w": 0.24, "h": 0.26, "metin": "Düz Flandre'da böyle sivri dağlar yoktur. Bruegel İtalya yolculuğunda gördüğü Alpleri hayali bir manzaraya katmıştır. Zirveler buz ve kaya, aşağıdaki köy sıcak ve küçük."}, {"ad": "Eğik tabela", "x": 0.0, "y": 0.16, "w": 0.14, "h": 0.28, "metin": "Hanın tabelası tek menteşede eğilmiş sallanır; üstünde geyik önünde diz çökmüş Aziz Eustachius vardır. Han adı \"Dit is inden Hert\": Geyikte. Bakımsızlık kış yoksulluğunu anlatır."}], "taninma": "Yüksekten, kuş bakışı görülen geniş manzaralar; kalın giysili, tıknaz, yüzleri pek seçilmeyen çok sayıda köylü figürü; toprak tonları ve kış sahnelerinde beyaz-yeşilimsi gökyüzü tipiktir. Bosch'tan canavarlar ve fantastik yaratıklar yerine gerçekçi köylülerle, oğlu Genç Pieter Brueghel'in kopyalarından ise daha incelikli işçilik ve daha dengeli kompozisyonla ayrılır."};
+const VERI = {"noktalar": [{"ad": "Yorgun avcılar", "x": 0.01, "y": 0.52, "w": 0.4, "h": 0.42, "metin": "Üç avcı ve köpekleri omuzları düşük, başları eğik döner; sırttaki tek tilki avın ne kadar kıt olduğunu söyler. Karda derin izler bırakırlar. Bakış onlarla birlikte tepeden aşağı, vadiye iner."}, {"ad": "Buzda kayanlar", "x": 0.65, "y": 0.5, "w": 0.3, "h": 0.2, "metin": "Donmuş göletlerde köylüler paten kayar, topaç çevirir, kızak çeker. Siyah küçük figürler buzun açık renginde tek tek sayılabilir. Soğuğa rağmen bir bayram havası var."}, {"ad": "Domuz yakma", "x": 0.01, "y": 0.5, "w": 0.18, "h": 0.18, "metin": "Hanın önünde kadınlar ateş yakmış, kesilmiş domuzun kıllarını alazlıyor. Aralık ayının takvim işidir; tablo bir ay dizisinin parçasıdır. Alevler kar beyazında tek sıcak renk."}, {"ad": "Uçan kuş", "x": 0.65, "y": 0.19, "w": 0.12, "h": 0.13, "metin": "Yeşil-gri gökte tek bir kuş kanat açmış süzülür. Küçücük bir siluet ama kompozisyonun boşluğunu tutar ve derinliği ölçer. Ağaçlardaki kargalar hareketsiz, bu kuş hareket hâlinde."}, {"ad": "Alp zirveleri", "x": 0.75, "y": 0.08, "w": 0.24, "h": 0.26, "metin": "Düz Flandre'da böyle sivri dağlar yoktur. Bruegel İtalya yolculuğunda gördüğü Alpleri hayali bir manzaraya katmıştır. Zirveler buz ve kaya, aşağıdaki köy sıcak ve küçük."}, {"ad": "Eğik tabela", "x": 0.0, "y": 0.16, "w": 0.14, "h": 0.28, "metin": "Hanın tabelası tek menteşede eğilmiş sallanır; üstünde geyik önünde diz çökmüş Aziz Eustachius vardır. Han adı \"Dit is inden Hert\": Geyikte. Bakımsızlık kış yoksulluğunu anlatır."}], "taninma": "Yüksekten, kuş bakışı görülen geniş manzaralar; kalın giysili, tıknaz, yüzleri pek seçilmeyen çok sayıda köylü figürü; toprak tonları ve kış sahnelerinde beyaz-yeşilimsi gökyüzü tipiktir. Bosch'tan canavarlar ve fantastik yaratıklar yerine gerçekçi köylülerle, oğlu Genç Pieter Brueghel'in kopyalarından ise daha incelikli işçilik ve daha dengeli kompozisyonla ayrılır.", "hayat": "Pieter Bruegel ya da Brueghel (1525 - 9 Eylül 1569), peyzaj çalışmaları ve köy betimlemeleriyle tanınan Hollandalı Rönesans ressamı, Hollanda ve Flaman Rönesans resminin en önemli sanatçısıdır. Aynı zamanda baskı tasarımcısıdır; manzaraları ve köylü sahnelerini konu alan tür resimleriyle ünlüdür. Büyük resimlerde her iki konunun da odak noktası haline getirilmesinde öncüydü. Hollanda Altın Çağı resmi üzerinde biçimlendirici etkisi vardı ve konu seçimlerinde de yenilikçiydi; dini konular, resmin doğal konusu olmaktan çıktığında büyüyen ilk nesil sanatçılardan biri oldu. Bunun yerine manzara resimleri aracılığıyla görsel dünyayı \"haritalandırmaya\" ve köylü yaşamın günlük sahnelerini tasvir etmeye odaklandı. İlginç bir şekilde, Bruegel Flaman sanatının diğer dayanağı olan portreleri yapmadı. Eğitiminden ve İtalya seyahatlerinden sonra 1555'te Anvers 'e yerleşmek için geri döndü ve burada esasen günün önde gelen yayıncısı için baskılar yapan üretken bir tasarımcı olarak çalıştı. Ancak on yılın sonlarına doğru ana ortamının resmini yapmaya başladı ve tüm ünlü resimleri erken ölümünden on yıldan biraz daha uzun bir süre önce, muhtemelen kırklı yaşlarının başlarında ve gücünün zirvesinde yaptı.", "kaynak": "Türkçe Vikipedi"};
 const akis = document.getElementById('akis');
 VERI.noktalar.forEach((n, i) => {
   const s = document.createElement('section');
@@ -84,6 +94,12 @@ son.dataset.adim = 'son';
 son.innerHTML = `<div class="kart"><h2>Nasıl tanırım?</h2><p></p><a class="bag" href="#">Bruegel'in bütün eserleri →</a></div>`;
 son.querySelector('p').textContent = VERI.taninma;
 akis.appendChild(son);
+// en altta hayatı: resim bulanıklaşıp kararır, yazı üstünde akar (siyah boşluk yok, aynı resmin içinde)
+const hayat = document.createElement('section');
+hayat.className = 'hayat';
+hayat.innerHTML = '<h2>Hayatı</h2>' + VERI.hayat.split(/\n+/).map(() => '<p></p>').join('') + `<small>Kaynak: ${VERI.kaynak}</small>`;
+VERI.hayat.split(/\n+/).forEach((t, k) => { hayat.querySelectorAll('p')[k].textContent = t; });
+akis.appendChild(hayat);
 
 const IW = 3840, IH = 2733;
 const img = document.getElementById('resim');
@@ -93,7 +109,9 @@ buyuk.decoding = 'async';
 buyuk.src = 'https://gorsel.noracloud.ai/d/216d1fc681535d27.jpg';
 buyuk.onload = () => { img.src = buyuk.src; };
 
-const bolumler = [...akis.children];
+const bolumler = [...akis.children].filter((b) => !b.classList.contains('hayat'));
+const bulanik = document.getElementById('bulanik');
+const ust = document.querySelector('.ust');
 const noktalar = document.getElementById('noktalar');
 noktalar.innerHTML = bolumler.map(() => '<i></i>').join('');
 
@@ -145,7 +163,11 @@ function kare() {
     bolumler.forEach((b, k) => b.classList.toggle('gorunur', k === sira));
     [...noktalar.children].forEach((n, k) => n.classList.toggle('acik', k === sira));
   }
-  noktalar.style.opacity = kamera < 0.5 ? 0 : 1;
+  // son adımdan sonrası (Hayatı): kamera son adımda kalır, perde iner
+  const asma = Math.max(0, Math.min(1, (scrollY - (D.length - 1) * H) / (H * 0.6)));
+  bulanik.style.opacity = asma.toFixed(3);
+  ust.style.setProperty('--perde', asma.toFixed(3));
+  noktalar.style.opacity = kamera < 0.5 || asma > 0.3 ? 0 : 1;
   requestAnimationFrame(kare);
 }
 addEventListener('resize', () => { D = durumlar(); });
