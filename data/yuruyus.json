@@ -6036,6 +6036,94 @@
     }
    ]
   },
+  "camille-pissarro": {
+   "eser": "Boulevard Montmartre, Mardi Gras",
+   "yil": 1897,
+   "qid": "Q4949655",
+   "gorsel": "c588e1df5d9253e6",
+   "noktalar": [
+    {
+     "ad": "Bulvar",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 1.0,
+     "h": 0.5,
+     "metin": "Montmartre Bulvarı yukarıdan, bir otel odasının penceresinden görülüyor. Pissarro 1897'de aynı pencereden günün ve mevsimin farklı saatlerinde on dört resim yaptı."
+    },
+    {
+     "ad": "Karnaval kalabalığı",
+     "x": 0.2,
+     "y": 0.45,
+     "w": 0.8,
+     "h": 0.5,
+     "metin": "Sokak baştan sona insanla dolu: Mardi Gras (Etli Cuma) karnavalı. Kalabalık tek tek figürlerden değil, renk lekelerinden oluşuyor."
+    },
+    {
+     "ad": "Konfetiler",
+     "x": 0.0,
+     "y": 0.4,
+     "w": 0.4,
+     "h": 0.3,
+     "metin": "Ağaçların ve kalabalığın üstünde renkli noktalar uçuşuyor: konfetiler ve serpantinler. Pissarro gürültüyü renkle anlatıyor."
+    },
+    {
+     "ad": "Alay",
+     "x": 0.15,
+     "y": 0.75,
+     "w": 0.3,
+     "h": 0.25,
+     "metin": "Sol altta kalabalığın arasından geçen bir karnaval alayı seçiliyor. Empresyonistlerin en yaşlısı Pissarro, ilk sergiden son sergiye kadar hepsine katılan tek ressamdı."
+    }
+   ]
+  },
+  "alfred-sisley": {
+   "eser": "Flood at Port-Marly",
+   "yil": 1872,
+   "qid": null,
+   "gorsel": "f08b0bdcd00dc972",
+   "noktalar": [
+    {
+     "ad": "Su basmış han",
+     "x": 0.0,
+     "y": 0.1,
+     "w": 0.4,
+     "h": 0.7,
+     "metin": "Port-Marly'deki \"Saint-Nicolas\" hanının alt katı sel sularıyla dolmuş; tabelası hâlâ okunuyor. Seine nehri 1876 baharında taştı."
+    },
+    {
+     "ad": "Kayık",
+     "x": 0.27,
+     "y": 0.72,
+     "w": 0.25,
+     "h": 0.15,
+     "metin": "Kapının önünde kayıkla dolaşan adamlar. Sokak artık bir kanal: gündelik hayat yeni koşullara uymuş."
+    },
+    {
+     "ad": "Yansımalar",
+     "x": 0.2,
+     "y": 0.75,
+     "w": 0.8,
+     "h": 0.25,
+     "metin": "Sakin suda evin ve gökyüzünün yansımaları titrek lekelerle boyanmış. Sisley'nin derdi felaket değil, ışığın sudaki oyunu."
+    },
+    {
+     "ad": "Bulutlu gök",
+     "x": 0.4,
+     "y": 0.0,
+     "w": 0.6,
+     "h": 0.5,
+     "metin": "Gökyüzü resmin yarısını kaplıyor; soğuk, hareketli bir bahar göğü. İngiliz ailenin çocuğu Sisley, Empresyonizm'in en tutarlı manzara ressamıydı."
+    },
+    {
+     "ad": "Telgraf direkleri",
+     "x": 0.75,
+     "y": 0.3,
+     "w": 0.12,
+     "h": 0.4,
+     "metin": "Sağda sudan yükselen direkler ve ağaçlar: kıyının nerede bittiğini gösteren tek işaretler."
+    }
+   ]
+  },
   "utagawa-hiroshige": {
    "eser": "Sudden Shower over Shin-Ōhashi Bridge and Atake",
    "yil": 1857,
@@ -6089,6 +6177,103 @@
      "w": 0.18,
      "h": 0.15,
      "metin": "Sol alttaki kırmızı kartuşta sanatçının imzası okunur: \"Hiroshige ga\" (Hiroshige çizdi). Yanındaki küçük mühür, diziyi yayımlayan Uoya Eikichi'ye aittir."
+    }
+   ]
+  },
+  "katsushika-hokusai": {
+   "eser": "Kanagawa Oki Nami Ura",
+   "yil": 1830,
+   "qid": "Q252485",
+   "gorsel": "7de1ea60cd498981",
+   "noktalar": [
+    {
+     "ad": "Büyük dalga",
+     "x": 0.1,
+     "y": 0.1,
+     "w": 0.55,
+     "h": 0.65,
+     "metin": "Dalganın tepesi pençe gibi kıvrılmış, köpükleri parmak uçları gibi dağılıyor. Bu baskı Hokusai'nin \"Fuji Dağı'nın Otuz Altı Manzarası\" dizisinden, 1830–32."
+    },
+    {
+     "ad": "Fuji Dağı",
+     "x": 0.55,
+     "y": 0.58,
+     "w": 0.14,
+     "h": 0.18,
+     "metin": "Dalganın altında küçücük kalmış Fuji Dağı. Dizinin konusu Fuji; ama burada dağ, dalganın bir köpüğü kadar küçük."
+    },
+    {
+     "ad": "Kayıklar ve kürekçiler",
+     "x": 0.0,
+     "y": 0.35,
+     "w": 0.6,
+     "h": 0.4,
+     "metin": "Uzun kayıklarda kürekçiler başlarını eğmiş, dalgaya karşı tutunuyor. Doğanın gücü karşısında insanın küçüklüğü."
+    },
+    {
+     "ad": "Prusya mavisi",
+     "x": 0.6,
+     "y": 0.4,
+     "w": 0.4,
+     "h": 0.4,
+     "metin": "Baskıdaki koyu mavi, Avrupa'dan gelen yeni bir boya: Prusya mavisi. Bu baskı ve benzerleri 19. yüzyılda Avrupa'ya ulaştı, Monet ve van Gogh'u derinden etkiledi."
+    },
+    {
+     "ad": "Başlık",
+     "x": 0.0,
+     "y": 0.05,
+     "w": 0.12,
+     "h": 0.22,
+     "metin": "Sol üstteki kartuşta baskının adı ve Hokusai'nin imzası yazılı. Bir tahta kalıp baskısı olduğundan binlerce kopyası basıldı."
+    }
+   ]
+  },
+  "paul-cezanne": {
+   "eser": "The Card Players",
+   "yil": 1890,
+   "qid": "Q17277950",
+   "gorsel": "b585fab2a191d204",
+   "buyuk": "y/paul-cezanne.jpg",
+   "noktalar": [
+    {
+     "ad": "Oyuncular",
+     "x": 0.15,
+     "y": 0.15,
+     "w": 0.75,
+     "h": 0.55,
+     "metin": "Dört Provenceli köylü masa başında kâğıt oynuyor; kimse konuşmuyor, herkes kartına bakıyor. Cézanne 1890'larda bu konuyu beş farklı resimde işledi."
+    },
+    {
+     "ad": "Ayakta izleyen",
+     "x": 0.2,
+     "y": 0.0,
+     "w": 0.15,
+     "h": 0.25,
+     "metin": "Arkada ayakta duran adam oyunu izliyor, kollarını kavuşturmuş. Figürler hareketsiz, neredeyse birer heykel gibi."
+    },
+    {
+     "ad": "Pipolar",
+     "x": 0.5,
+     "y": 0.05,
+     "w": 0.12,
+     "h": 0.1,
+     "metin": "Duvarda bir askıda pipolar asılı. Basit bir köy kahvesi ya da çiftlik evi."
+    },
+    {
+     "ad": "Masa",
+     "x": 0.35,
+     "y": 0.5,
+     "w": 0.4,
+     "h": 0.35,
+     "metin": "Masanın kenarları tam hizalı değil, perspektif bilerek bozulmuş. Cézanne nesneleri bir hacim olarak yeniden kurmak istedi; Kübizm bu yoldan doğdu."
+    },
+    {
+     "ad": "Perde",
+     "x": 0.85,
+     "y": 0.0,
+     "w": 0.15,
+     "h": 0.6,
+     "metin": "Sağdaki sarı perde sahneyi çerçeveliyor. Bu sürüm Met'te; Cézanne'ın kart oyuncuları dizisinin en kalabalık, beş figürlü hâli."
     }
    ]
   },
