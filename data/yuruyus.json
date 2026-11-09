@@ -3584,6 +3584,60 @@
     }
    ]
   },
+  "charles-le-brun": {
+   "eser": "The King governs by himself, 1661",
+   "yil": 1681,
+   "qid": "Q18683145",
+   "gorsel": "82ec9599e140ddd2",
+   "kirp": [
+    0.08,
+    0.03,
+    0.84,
+    0.95
+   ],
+   "noktalar": [
+    {
+     "ad": "Genç XIV. Louis",
+     "x": 0.3,
+     "y": 0.0,
+     "w": 0.35,
+     "h": 0.3,
+     "metin": "En üstte genç kral, tanrıların arasında oturuyor; dümeni kendisi tutuyor. Başlık: \"Kral kendi kendini yönetir, 1661\". O yıl Louis başbakanı Mazarin ölünce kendisi hükümdarlığı üstlendi."
+    },
+    {
+     "ad": "Tanrılar ve erdemler",
+     "x": 0.05,
+     "y": 0.3,
+     "w": 0.9,
+     "h": 0.25,
+     "metin": "Bulutların arasında tanrılar ve kanatlı figürler kralı çevreliyor. Gerçek tarih mitolojiyle anlatılıyor; mesaj açık: Fransa'yı tanrısal bir kral yönetiyor."
+    },
+    {
+     "ad": "Uçan Merkür",
+     "x": 0.35,
+     "y": 0.52,
+     "w": 0.2,
+     "h": 0.15,
+     "metin": "Ortada boşlukta uçan figür, haberci tanrı Merkür: kralın kararını dünyaya duyuruyor."
+    },
+    {
+     "ad": "Fransa ve komşular",
+     "x": 0.08,
+     "y": 0.68,
+     "w": 0.55,
+     "h": 0.3,
+     "metin": "Altta taçlı figürler ve armalar: Fransa ile çevresindeki güçler. Bu bölüm Versay Sarayı'ndaki Aynalı Salon'un tavanından; Le Brun salonun bütün resim programını yönetti."
+    },
+    {
+     "ad": "Tavanın biçimi",
+     "x": 0.85,
+     "y": 0.0,
+     "w": 0.15,
+     "h": 0.4,
+     "metin": "Resmin kenarları düz değil: tavanın kemerli bir bölmesine göre kesilmiş. Aşağıdan, yukarı başını kaldırarak bakılması için tasarlandı."
+    }
+   ]
+  },
   "hyacinthe-rigaud": {
    "eser": "Portrait of Louis XIV",
    "yil": 1701,
@@ -3637,6 +3691,134 @@
      "w": 0.2,
      "h": 0.11,
      "metin": "Beyaz çoraplar ve tokalı ayakkabıların kırmızı topukları resmin alt ortasında. Kırmızı topuk dönemin saray soyluluğuna özgü bir ayrıcalık işaretiydi. Bacaklar, yaşlı yüzün aksine genç bir dansçınınki gibi zarif gösterilmiş."
+    }
+   ]
+  },
+  "nicolas-poussin": {
+   "eser": "The Agony in the Garden",
+   "yil": 1626,
+   "qid": null,
+   "gorsel": "932510f80435911a",
+   "noktalar": [
+    {
+     "ad": "Melek ve kadeh",
+     "x": 0.2,
+     "y": 0.2,
+     "w": 0.45,
+     "h": 0.25,
+     "metin": "Bulutların arasından bir melek iniyor ve küçük meleklerle birlikte İsa'ya bir kadeh uzatıyor. İsa tutuklanmadan önceki gece Getsemani bahçesinde \"Bu kâseyi benden uzaklaştır\" diye dua etmişti."
+    },
+    {
+     "ad": "Dua eden İsa",
+     "x": 0.45,
+     "y": 0.33,
+     "w": 0.25,
+     "h": 0.18,
+     "metin": "İsa kayalara yaslanıp diz çökmüş, yukarı bakıyor. Neredeyse tamamen gölgede: yalnızlığın ve korkunun gecesi."
+    },
+    {
+     "ad": "Uyuyan havariler",
+     "x": 0.15,
+     "y": 0.6,
+     "w": 0.85,
+     "h": 0.33,
+     "metin": "Altta yere uzanmış havariler uyuyor. İsa onlardan uyanık kalmalarını istemişti; ama üçü de uyuya kaldı."
+    },
+    {
+     "ad": "Karanlık",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 0.6,
+     "metin": "Resmin çoğu karanlık bir kızıl kahverengi; Poussin'in resimlerinde sık görülen bu koyulaşma zamanla boyanın değişmesinden de olabilir. Gece sahnesi düşünceli ve sessiz."
+    }
+   ]
+  },
+  "claude-lorrain": {
+   "eser": "Landscape with the Finding of Moses",
+   "yil": 1639,
+   "qid": "Q6057319",
+   "gorsel": "ae76f3f2a6e6a0cf",
+   "noktalar": [
+    {
+     "ad": "Bulunan bebek",
+     "x": 0.38,
+     "y": 0.78,
+     "w": 0.3,
+     "h": 0.15,
+     "metin": "Önde nehir kıyısında kadınlar, sepetteki bebek Musa'yı bulmuş. Firavun'un kızı onu Nil'de buldu ve evlat edindi."
+    },
+    {
+     "ad": "Firavun'un kızı",
+     "x": 0.5,
+     "y": 0.73,
+     "w": 0.18,
+     "h": 0.12,
+     "metin": "Sağda hizmetçileriyle firavunun kızı duruyor. Claude için hikâye küçük bir bahanedir; asıl konu manzara ve ışık."
+    },
+    {
+     "ad": "Altın ışık",
+     "x": 0.25,
+     "y": 0.4,
+     "w": 0.6,
+     "h": 0.25,
+     "metin": "Ortada uzakta bir köprü, kule ve dağlar sabah ya da akşam ışığında. Claude Lorrain'in yumuşak altın ışığı 18. yüzyıl İngiliz bahçelerine ve Turner'a ilham verdi."
+    },
+    {
+     "ad": "Ağaçların çerçevesi",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.45,
+     "h": 0.6,
+     "metin": "Solda koyu ağaçlar sahneyi bir sahne perdesi gibi çerçeveliyor, göz ortadaki ışığa doğru kayıyor. Claude'un kalıplaşmış ama çok etkili kompozisyon düzeni."
+    },
+    {
+     "ad": "Uyuyan çoban",
+     "x": 0.55,
+     "y": 0.9,
+     "w": 0.25,
+     "h": 0.1,
+     "metin": "En altta yere uzanmış bir figür. Claude'un manzaralarında bu küçük, rahat figürler doğanın huzurunu vurgular."
+    }
+   ]
+  },
+  "salvator-rosa": {
+   "eser": "Allegory of Fortune",
+   "yil": 1658,
+   "qid": "Q20087469",
+   "gorsel": "a3b02d252a4b0aea",
+   "noktalar": [
+    {
+     "ad": "Fortuna",
+     "x": 0.2,
+     "y": 0.05,
+     "w": 0.6,
+     "h": 0.32,
+     "metin": "Üstte uzun saçlı tanrıça Fortuna, şans; elindeki bereket boynuzundan hazineleri aşağı döküyor. Ama nimetleri kime verdiğine bakmıyor."
+    },
+    {
+     "ad": "Hayvanlar",
+     "x": 0.0,
+     "y": 0.35,
+     "w": 1.0,
+     "h": 0.45,
+     "metin": "Altta eşekler, öküzler, koyunlar ve domuzlar nimetleri çiğniyor, yiyor. Rosa'nın mesajı açık: şans değerli şeyleri layık olmayanlara dağıtıyor."
+    },
+    {
+     "ad": "Taç ve asa",
+     "x": 0.55,
+     "y": 0.6,
+     "w": 0.25,
+     "h": 0.2,
+     "metin": "Hayvanların ayakları altında bir taç ve süs eşyaları ezilmiş. Soyluluk ve iktidar işaretleri hayvanlara kalmış."
+    },
+    {
+     "ad": "Kartal",
+     "x": 0.7,
+     "y": 0.75,
+     "w": 0.25,
+     "h": 0.15,
+     "metin": "Sağ altta bir kartal ve yerde yığılmış kitaplar, kâğıtlar. Rosa hem ressam hem de alaycı bir şairdi; bu resim Roma'da onu başını derde sokan bir eleştiriydi."
     }
    ]
   }
