@@ -2936,6 +2936,166 @@
     }
    ]
   },
+  "dirck-van-baburen": {
+   "eser": "Kratos Prometheus’u zincirlerken",
+   "yil": 1623,
+   "qid": "Q16933788",
+   "gorsel": "15e7d2a81a7ac6bb",
+   "noktalar": [
+    {
+     "ad": "Prometheus",
+     "x": 0.12,
+     "y": 0.45,
+     "w": 0.75,
+     "h": 0.5,
+     "metin": "Baş aşağı yere yatırılmış Prometheus'un bileğine zincir geçiriliyor. Mite göre tanrılardan ateşi çalıp insanlara verdi; Zeus da onu bir kayaya zincirletti, her gün bir kartal ciğerini yiyecekti."
+    },
+    {
+     "ad": "Vulcanus",
+     "x": 0.02,
+     "y": 0.08,
+     "w": 0.42,
+     "h": 0.75,
+     "metin": "Soldaki yaşlı, kaslı adam demirci tanrısı Vulcanus; zinciri çiviliyor. Arkasında ocağının kızıllığı görünüyor."
+    },
+    {
+     "ad": "Gülen Merkür",
+     "x": 0.6,
+     "y": 0.0,
+     "w": 0.4,
+     "h": 0.4,
+     "metin": "Kanatlı şapkalı, yılanlı asalı Merkür tepeden bakıp gülümsüyor. Zeus'un emrinin yerine getirildiğine tanıklık ediyor; acıya karşı bu gülüş sahneyi daha da sertleştiriyor."
+    },
+    {
+     "ad": "Karanlıktaki kuş",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 0.12,
+     "metin": "Sol üstte karanlıkta bir kuş seçiliyor: Prometheus'u bekleyen kartal olmalı, cezanın asıl uygulayıcısı. Baburen Roma'da Caravaggio'yu görmüş Utrecht'li ressamlardandı; resim 1623 tarihli."
+    }
+   ]
+  },
+  "valentin-de-boulogne": {
+   "eser": "Apparation of Christ before Mary Magdalene",
+   "yil": 1622,
+   "qid": "Q130251755",
+   "gorsel": "d33c15f5c154f369",
+   "noktalar": [
+    {
+     "ad": "İsa",
+     "x": 0.4,
+     "y": 0.08,
+     "w": 0.45,
+     "h": 0.9,
+     "metin": "Dirilen İsa ışığın içinde, omzunda bir pelerin ve elinde bir asa ya da kürek. Yüzü sakin; karanlığın içinden aydınlanan beden Caravaggio'nun ışığını hatırlatıyor."
+    },
+    {
+     "ad": "Mecdelli Meryem",
+     "x": 0.0,
+     "y": 0.42,
+     "w": 0.3,
+     "h": 0.4,
+     "metin": "Solda uzun saçlı Meryem gölgede diz çökmüş, ona bakıyor. Yuhanna İncili'ne göre dirilen İsa'yı ilk gören oydu."
+    },
+    {
+     "ad": "Uzanan eller",
+     "x": 0.25,
+     "y": 0.65,
+     "w": 0.45,
+     "h": 0.32,
+     "metin": "Meryem'in elleri İsa'ya doğru uzanıyor, İsa'nın eli ise onu durduruyor. Sahne \"Bana dokunma\" sözünün etrafında kurulmuş: eller arasındaki boşluk."
+    },
+    {
+     "ad": "Karanlık zemin",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 0.4,
+     "metin": "Arkada hiçbir şey yok, yalnız koyu bir gölge. Valentin Roma'da yaşayan Fransız bir Caravaggistti; sahneyi süssüz, sessiz bir karşılaşmaya indirmiş."
+    }
+   ]
+  },
+  "jusepe-de-ribera": {
+   "eser": "Aristotle",
+   "yil": 1637,
+   "qid": "Q4791095",
+   "gorsel": "c9537882e46158dd",
+   "noktalar": [
+    {
+     "ad": "Filozofun yüzü",
+     "x": 0.45,
+     "y": 0.22,
+     "w": 0.25,
+     "h": 0.25,
+     "metin": "Aşağı bakan, kırışık yüzlü adam Aristoteles olarak adlandırılmış. Ribera antik filozofları sokaktaki yoksul Napolili adamlar gibi boyadı: bilgelik zenginlikte değil."
+    },
+    {
+     "ad": "Yırtık giysi",
+     "x": 0.6,
+     "y": 0.3,
+     "w": 0.4,
+     "h": 0.5,
+     "metin": "Kahverengi ceketin dirseği yırtık, kumaş aşınmış. Ribera'nın dokuları neredeyse elle tutulur; boyayı kalın sürmüş."
+    },
+    {
+     "ad": "Kitap",
+     "x": 0.07,
+     "y": 0.57,
+     "w": 0.3,
+     "h": 0.33,
+     "metin": "Elinde kalın, eski bir kitap tutuyor. Yanında diyagramlar çizilmiş kâğıtlar: düşünür bir şey hesaplıyor ya da anlatıyor."
+    },
+    {
+     "ad": "Kâğıtlar",
+     "x": 0.15,
+     "y": 0.78,
+     "w": 0.5,
+     "h": 0.2,
+     "metin": "Masadaki beyaz kâğıtta çizimler ve yazılar var; eli kâğıdın üstünde. İspanya doğumlu Ribera, Napoli'de Caravaggio'nun sert ışığını en iyi sürdüren ressamdı."
+    }
+   ]
+  },
+  "artemisia-gentileschi": {
+   "eser": "Self-Portrait as the Allegory of Painting (La Pittura)",
+   "yil": 1630,
+   "qid": "Q3630745",
+   "gorsel": "480b51291a66cde6",
+   "noktalar": [
+    {
+     "ad": "Fırçalı el",
+     "x": 0.05,
+     "y": 0.08,
+     "w": 0.3,
+     "h": 0.15,
+     "metin": "Kadın yukarı uzanmış, elindeki fırçayla görmediğimiz bir tuvale dokunuyor. Artemisia kendini, resim sanatının alegorisi \"La Pittura\" olarak boyamış: resmin kendisi bir kadın."
+    },
+    {
+     "ad": "Yüz ve saç",
+     "x": 0.4,
+     "y": 0.15,
+     "w": 0.35,
+     "h": 0.25,
+     "metin": "Saçları dağınık, bakışı işine dalmış. Ripa'nın simge kitabına göre Resim'in saçları dağınık olmalıydı: yaratıcı düşüncenin coşkusu."
+    },
+    {
+     "ad": "Altın zincir",
+     "x": 0.5,
+     "y": 0.35,
+     "w": 0.25,
+     "h": 0.25,
+     "metin": "Boynunda uzun bir altın zincir var. Ripa'nın simge kitabına göre Resim'in alegorisi, ucunda küçük bir maske sallanan böyle bir zincir taşır: taklidin, yani resmin doğayı taklit etmesinin simgesi."
+    },
+    {
+     "ad": "Palet",
+     "x": 0.0,
+     "y": 0.75,
+     "w": 0.6,
+     "h": 0.22,
+     "metin": "Altta elinde palet ve fırçalar duruyor. Kendi bedenini yandan görmek için iki ayna kullanmış olmalı; 17. yüzyılda bir kadın ressamın en cesur otoportrelerinden."
+    }
+   ]
+  },
   "orazio-gentileschi": {
    "eser": "The Lute Player",
    "yil": 1612,
