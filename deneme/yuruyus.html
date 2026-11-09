@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#121110" />
+<title>Resmin içinde yürüyüş · deneme</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Archivo:wght@400;500;600&display=swap" />
+<style>
+  /* Deneme (Tasarım B, Bugün'ün aşağısı): kaydırdıkça kamera resmin içinde gezer. Uygulamadan bağımsız tek sayfa. */
+  :root { --bg:#121110; --yazi:#ede4d3; --ikincil:#a9a094; --altin:#d8b36a; --cizgi:rgba(237,228,211,.16);
+    --serif:'Bodoni Moda',Georgia,serif; --sans:'Archivo',system-ui,sans-serif; }
+  * { box-sizing:border-box; margin:0; }
+  html { background:var(--bg); scroll-snap-type:y mandatory; }
+  body { background:var(--bg); color:var(--yazi); font-family:var(--sans); -webkit-font-smoothing:antialiased; }
+  .sahne { position:fixed; inset:0; overflow:hidden; background:#0b0a09; }
+  .sahne img { position:absolute; left:0; top:0; width:3840px; height:2733px; max-width:none; transform-origin:0 0; }
+  .karart { position:fixed; inset:0; pointer-events:none; transition:opacity .4s;
+    background:linear-gradient(to bottom, rgba(18,17,16,.45) 0, transparent 16%, transparent 52%, rgba(18,17,16,.82) 78%, rgba(18,17,16,.96) 100%); }
+  .ust { position:fixed; top:0; left:0; right:0; z-index:5; display:flex; justify-content:space-between; align-items:center;
+    padding:calc(env(safe-area-inset-top) + 14px) 20px 0; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--yazi); }
+  .ben { width:44px; height:44px; border-radius:50%; display:grid; place-items:center; background:rgba(18,17,16,.5);
+    -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); border:1px solid var(--cizgi); font-size:12px; letter-spacing:.06em; }
+  .noktalar { position:fixed; right:10px; top:50%; transform:translateY(-50%); z-index:5; display:flex; flex-direction:column; gap:8px; transition:opacity .3s; }
+  .noktalar i { width:6px; height:6px; border-radius:3px; background:rgba(237,228,211,.35); transition:height .3s, background .3s; }
+  .noktalar i.acik { height:18px; background:var(--altin); }
+  main { position:relative; z-index:3; }
+  section { height:100svh; scroll-snap-align:start; scroll-snap-stop:always; display:flex; flex-direction:column; justify-content:flex-end;
+    padding:0 20px calc(env(safe-area-inset-bottom) + 104px); }
+  .ad { font:400 46px/1 var(--serif); letter-spacing:-.01em; text-shadow:0 2px 24px rgba(0,0,0,.5); }
+  .eser { font:italic 400 17px var(--serif); color:#d9d0c2; margin:8px 0 16px; }
+  .uclu { display:flex; gap:8px; }
+  .uclu a { flex:1; display:flex; align-items:center; justify-content:center; gap:7px; height:48px; border-radius:24px; color:var(--yazi); text-decoration:none;
+    background:rgba(18,17,16,.5); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); border:1px solid rgba(237,228,211,.2); font-size:15px; }
+  .uclu a i { font-style:normal; color:var(--altin); }
+  .ipucu { display:flex; justify-content:center; margin-top:14px; color:var(--ikincil); font-size:12px; letter-spacing:.12em; text-transform:uppercase; gap:6px; align-items:center; }
+  .ipucu b { display:inline-block; animation:zipla 1.8s ease-in-out infinite; font-weight:400; }
+  @keyframes zipla { 50% { transform:translateY(4px); } }
+  .kart { background:rgba(18,17,16,.72); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); border:1px solid var(--cizgi);
+    border-radius:22px; padding:16px 18px 18px; opacity:0; transform:translateY(14px); transition:opacity .45s, transform .45s; }
+  section.gorunur .kart { opacity:1; transform:none; }
+  .kart .no { font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--altin); }
+  .kart h2 { font:400 25px/1.15 var(--serif); margin:6px 0 8px; }
+  .kart p { font:400 17px/1.5 var(--serif); color:#e3dacb; }
+  .kart a.bag { display:inline-flex; align-items:center; min-height:44px; margin-top:6px; color:var(--altin); text-decoration:none; font:500 15px var(--sans); }
+  .sekme { position:fixed; left:14px; right:14px; bottom:calc(env(safe-area-inset-bottom) + 10px); z-index:6; height:62px; border-radius:31px;
+    background:rgba(29,27,25,.9); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); border:1px solid var(--cizgi);
+    display:grid; grid-template-columns:repeat(5,1fr); align-items:center; text-align:center; font-size:11px; color:var(--ikincil); }
+  .sekme span { display:flex; flex-direction:column; align-items:center; gap:4px; position:relative; }
+  .sekme span::before { content:''; width:19px; height:19px; border:1.5px solid currentColor; border-radius:6px; opacity:.8; }
+  .sekme .acik { color:var(--yazi); font-weight:600; }
+  .sekme .sayi { position:absolute; top:-6px; left:calc(50% + 5px); min-width:17px; height:17px; border-radius:9px; background:var(--altin); color:#121110;
+    font-size:10px; font-weight:700; display:grid; place-items:center; padding:0 4px; }
+</style>
+</head>
+<body>
+<div class="sahne"><img id="resim" src="https://gorsel.noracloud.ai/b/216d1fc681535d27.jpg" alt="Pieter Bruegel, Karda Avcılar" decoding="async"></div>
+<div class="karart" id="karart"></div>
+<div class="ust"><span>9 Kasım</span><span class="ben">Ben</span></div>
+<div class="noktalar" id="noktalar"></div>
+<main id="akis">
+  <section data-adim="kapak">
+    <div class="ad">Bruegel</div>
+    <div class="eser">Karda Avcılar · 1565</div>
+    <div class="uclu"><a href="#"><i>◉</i>İncele</a><a href="#"><i>☉</i>Bruegel</a></div>
+    <div class="ipucu">Resmin içinde gez <b>↓</b></div>
+  </section>
+  <section data-adim="butun"><div class="kart"><div class="no">Resmin tamamı</div><h2>Karda Avcılar</h2><p>Pieter Bruegel (Yaşlı), 1565 · Kunsthistorisches Museum, Viyana. Bir yılın aylarını anlatan altı resimlik dizinin kış tablosu.</p></div></section>
+</main>
+<nav class="sekme"><span class="acik">Bugün</span><span>Yolculuk</span><span>Galeri</span><span>Başyapıt</span><span>Çalış<i class="sayi">8</i></span></nav>
+<script>
+const VERI = {"noktalar": [{"ad": "Yorgun avcılar", "x": 0.01, "y": 0.52, "w": 0.4, "h": 0.42, "metin": "Üç avcı ve köpekleri omuzları düşük, başları eğik döner; sırttaki tek tilki avın ne kadar kıt olduğunu söyler. Karda derin izler bırakırlar. Bakış onlarla birlikte tepeden aşağı, vadiye iner."}, {"ad": "Buzda kayanlar", "x": 0.65, "y": 0.5, "w": 0.3, "h": 0.2, "metin": "Donmuş göletlerde köylüler paten kayar, topaç çevirir, kızak çeker. Siyah küçük figürler buzun açık renginde tek tek sayılabilir. Soğuğa rağmen bir bayram havası var."}, {"ad": "Domuz yakma", "x": 0.01, "y": 0.5, "w": 0.18, "h": 0.18, "metin": "Hanın önünde kadınlar ateş yakmış, kesilmiş domuzun kıllarını alazlıyor. Aralık ayının takvim işidir; tablo bir ay dizisinin parçasıdır. Alevler kar beyazında tek sıcak renk."}, {"ad": "Uçan kuş", "x": 0.65, "y": 0.19, "w": 0.12, "h": 0.13, "metin": "Yeşil-gri gökte tek bir kuş kanat açmış süzülür. Küçücük bir siluet ama kompozisyonun boşluğunu tutar ve derinliği ölçer. Ağaçlardaki kargalar hareketsiz, bu kuş hareket hâlinde."}, {"ad": "Alp zirveleri", "x": 0.75, "y": 0.08, "w": 0.24, "h": 0.26, "metin": "Düz Flandre'da böyle sivri dağlar yoktur. Bruegel İtalya yolculuğunda gördüğü Alpleri hayali bir manzaraya katmıştır. Zirveler buz ve kaya, aşağıdaki köy sıcak ve küçük."}, {"ad": "Eğik tabela", "x": 0.0, "y": 0.16, "w": 0.14, "h": 0.28, "metin": "Hanın tabelası tek menteşede eğilmiş sallanır; üstünde geyik önünde diz çökmüş Aziz Eustachius vardır. Han adı \"Dit is inden Hert\": Geyikte. Bakımsızlık kış yoksulluğunu anlatır."}], "taninma": "Yüksekten, kuş bakışı görülen geniş manzaralar; kalın giysili, tıknaz, yüzleri pek seçilmeyen çok sayıda köylü figürü; toprak tonları ve kış sahnelerinde beyaz-yeşilimsi gökyüzü tipiktir. Bosch'tan canavarlar ve fantastik yaratıklar yerine gerçekçi köylülerle, oğlu Genç Pieter Brueghel'in kopyalarından ise daha incelikli işçilik ve daha dengeli kompozisyonla ayrılır."};
+const akis = document.getElementById('akis');
+VERI.noktalar.forEach((n, i) => {
+  const s = document.createElement('section');
+  s.dataset.adim = 'nokta';
+  s.innerHTML = `<div class="kart"><div class="no">Ayrıntı ${i + 1} / ${VERI.noktalar.length}</div><h2></h2><p></p></div>`;
+  s.querySelector('h2').textContent = n.ad;
+  s.querySelector('p').textContent = n.metin;
+  akis.appendChild(s);
+});
+const son = document.createElement('section');
+son.dataset.adim = 'son';
+son.innerHTML = `<div class="kart"><div class="no">Nasıl tanırım?</div><h2>Bruegel'i başka tablolarda</h2><p></p><a class="bag" href="#">Bruegel'in bütün eserleri →</a></div>`;
+son.querySelector('p').textContent = VERI.taninma;
+akis.appendChild(son);
+
+const IW = 3840, IH = 2733;
+const img = document.getElementById('resim');
+// büyük kopya arkadan gelir; gelince keskinleşir (aynı css boyutu)
+const buyuk = new Image();
+buyuk.decoding = 'async';
+buyuk.src = 'https://gorsel.noracloud.ai/d/216d1fc681535d27.jpg';
+buyuk.onload = () => { img.src = buyuk.src; };
+
+const bolumler = [...akis.children];
+const noktalar = document.getElementById('noktalar');
+noktalar.innerHTML = bolumler.map(() => '<i></i>').join('');
+
+let W, H;
+// kamera durumu: resmin (cx, cy) noktası ekranda (vx, vy)'ye gelir, ölçek s
+function durumlar() {
+  W = innerWidth; H = innerHeight;
+  const ust = 64, alt = H * 0.44;            // ayrıntıların sığacağı alan: kartın üstü
+  const alanY = ust + (H - alt - ust) / 2, alanH = H - alt - ust;
+  const kapakS = Math.max(W / IW, H / IH);
+  const kapak = { cx: 0.33 * IW, cy: 0.62 * IH, vx: W / 2, vy: H / 2, s: kapakS, kapak: true };
+  const butunS = Math.min(W / IW, (H - alt - ust) / IH) * 0.98;
+  const butun = { cx: IW / 2, cy: IH / 2, vx: W / 2, vy: alanY, s: butunS };
+  const ns = VERI.noktalar.map((n) => {
+    const s = Math.min((W * 0.94) / (n.w * IW), (alanH * 0.94) / (n.h * IH), 1.1);
+    return { cx: (n.x + n.w / 2) * IW, cy: (n.y + n.h / 2) * IH, vx: W / 2, vy: alanY, s };
+  });
+  return [kapak, butun, ...ns, { ...butun }];
+}
+let D = durumlar();
+addEventListener('resize', () => { D = durumlar(); ciz(); });
+
+const yumusak = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+const karart = document.getElementById('karart');
+function ciz() {
+  const p = Math.max(0, Math.min(D.length - 1, scrollY / H));
+  const i = Math.min(D.length - 2, Math.floor(p));
+  const f = yumusak(p - i);
+  const a = D[i], b = D[i + 1];
+  const s = Math.exp(Math.log(a.s) + (Math.log(b.s) - Math.log(a.s)) * f);
+  const cx = a.cx + (b.cx - a.cx) * f, cy = a.cy + (b.cy - a.cy) * f;
+  const vx = a.vx + (b.vx - a.vx) * f, vy = a.vy + (b.vy - a.vy) * f;
+  let tx = vx - cx * s, ty = vy - cy * s;
+  // kapakta resim ekranı boşluksuz kaplar
+  if (i === 0 && f === 0) { tx = Math.min(0, Math.max(W - IW * s, tx)); ty = Math.min(0, Math.max(H - IH * s, ty)); }
+  img.style.transform = `translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${s.toFixed(5)})`;
+  const sira = Math.round(p);
+  bolumler.forEach((b, k) => b.classList.toggle('gorunur', k === sira));
+  [...noktalar.children].forEach((n, k) => n.classList.toggle('acik', k === sira));
+  noktalar.style.opacity = p < 0.5 ? 0 : 1;
+}
+addEventListener('scroll', () => requestAnimationFrame(ciz), { passive: true });
+ciz();
+</script>
+</body>
+</html>
