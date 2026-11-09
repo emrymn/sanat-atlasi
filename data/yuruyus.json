@@ -5483,6 +5483,47 @@
     }
    ]
   },
+  "honore-daumier": {
+   "eser": "The Connoisseur",
+   "yil": 1855,
+   "qid": null,
+   "gorsel": "618b12f07913aeb4",
+   "buyuk": "y/honore-daumier.jpg",
+   "noktalar": [
+    {
+     "ad": "Koleksiyoncu",
+     "x": 0.4,
+     "y": 0.35,
+     "w": 0.5,
+     "h": 0.6,
+     "metin": "Bir adam koltuğuna yayılmış, gözlerini yarı kapamış, eserlerini seyrediyor. Daumier'nin ironik bakışı: sanatın keyfini süren burjuva bir meraklı."
+    },
+    {
+     "ad": "Venüs heykelciği",
+     "x": 0.15,
+     "y": 0.2,
+     "w": 0.15,
+     "h": 0.35,
+     "metin": "Masada Milo Venüsü'nün küçük bir kopyası duruyor; 1820'de bulunan bu heykel Paris'te çok modaydı."
+    },
+    {
+     "ad": "Duvardaki resimler",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.9,
+     "h": 0.4,
+     "metin": "Duvar tablolarla, raflar büstlerle dolu. Bu, renkli bir resim değil, kalem, mürekkep ve suluboyayla yapılmış bir çizim."
+    },
+    {
+     "ad": "İmza",
+     "x": 0.0,
+     "y": 0.88,
+     "w": 0.3,
+     "h": 0.1,
+     "metin": "Sol altta Daumier'nin imzası. Daumier gazetelerdeki taşbaskı karikatürleriyle ünlüydü; kralı karikatürize ettiği için hapis bile yattı."
+    }
+   ]
+  },
   "gustave-courbet": {
    "eser": "Ornans'ta Cenaze",
    "yil": 1840,
@@ -5539,6 +5580,46 @@
     }
    ]
   },
+  "camille-corot": {
+   "eser": "Diana and Actaeon (Diana Surprised in Her Bath)",
+   "yil": 1836,
+   "qid": "Q20184292",
+   "gorsel": "add2a220428c86b6",
+   "noktalar": [
+    {
+     "ad": "Diana ve periler",
+     "x": 0.0,
+     "y": 0.65,
+     "w": 0.45,
+     "h": 0.3,
+     "metin": "Altta su kıyısında av tanrıçası Diana ve perileri yıkanıyor. Ovidius'a göre avcı Aktaion onları gizlice görünce Diana onu geyiğe çevirdi."
+    },
+    {
+     "ad": "Aktaion",
+     "x": 0.73,
+     "y": 0.55,
+     "w": 0.15,
+     "h": 0.15,
+     "metin": "Sağ arkada ağaçların arasında koşan küçük figür Aktaion; perilerden biri onu fark edip gösteriyor."
+    },
+    {
+     "ad": "Kaya ve orman",
+     "x": 0.25,
+     "y": 0.0,
+     "w": 0.75,
+     "h": 0.55,
+     "metin": "Resmin çoğunu yüksek bir kaya ve sık ağaçlar kaplıyor. Hikâye küçük, doğa büyük: Corot'nun manzaraları mitolojiyi bir bahaneye dönüştürür."
+    },
+    {
+     "ad": "Su",
+     "x": 0.35,
+     "y": 0.78,
+     "w": 0.3,
+     "h": 0.2,
+     "metin": "Göletin içinde bir peri sudan çıkmaya çalışıyor. Corot, Barbizon ressamlarıyla birlikte açık havada çalışmayı yaygınlaştırdı; Empresyonistler onu çok sevdi."
+    }
+   ]
+  },
   "jean-francois-millet": {
    "eser": "The Gleaners",
    "yil": 1857,
@@ -5592,6 +5673,46 @@
      "w": 0.1,
      "h": 0.08,
      "metin": "Sağ uzakta, binaların önünde neredeyse görünmeyecek kadar küçük bir atlı var. Genellikle tarlayı denetleyen kâhya olarak yorumlanır; sahneye bir denetim duygusu katar."
+    }
+   ]
+  },
+  "theodore-rousseau": {
+   "eser": "Le Printemps",
+   "yil": 1852,
+   "qid": "Q15711219",
+   "gorsel": "d43896a88c1c03f8",
+   "noktalar": [
+    {
+     "ad": "Geniş gök",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 1.0,
+     "h": 0.55,
+     "metin": "Resmin yarısından fazlası bulutlu bir bahar göğü. Rousseau, Fontainebleau ormanının kıyısındaki Barbizon köyünde çalışan ressamların önderiydi."
+    },
+    {
+     "ad": "Ağaç kümesi",
+     "x": 0.15,
+     "y": 0.5,
+     "w": 0.45,
+     "h": 0.25,
+     "metin": "Ortada tek sıra ağaçlar ufuk çizgisini bölüyor. Rousseau ağaçları dikkatle, tek tek inceleyerek boyardı; doğayı kahraman gibi gösteren ilk ressamlardandı."
+    },
+    {
+     "ad": "Gölet",
+     "x": 0.3,
+     "y": 0.75,
+     "w": 0.5,
+     "h": 0.15,
+     "metin": "Ön planda bir gölet gökyüzünü yansıtıyor. Manzara düz ve sakin: herhangi bir hikâye ya da tanrı yok, yalnız doğanın kendisi."
+    },
+    {
+     "ad": "İnekler",
+     "x": 0.5,
+     "y": 0.68,
+     "w": 0.12,
+     "h": 0.08,
+     "metin": "Ufka yakın küçük inekler otluyor. Barbizon ressamları Fransız kırsalının sıradan güzelliğini resmin asıl konusu yaptı."
     }
    ]
   },
@@ -5704,6 +5825,54 @@
      "w": 0.3,
      "h": 0.24,
      "metin": "Aynadaki balkonda Paris sosyetesi oturur; sarı eldivenli kadın dürbünle bakar. Figürler lekeler hâlinde, gaz lambalarının ışığında erir. Beyaz küreler yeni elektrik lambalarıdır."
+    }
+   ]
+  },
+  "edgar-degas": {
+   "eser": "Bale Sınıfı (Degas, Metropolitan Sanat Müzesi)",
+   "yil": 1874,
+   "qid": "Q18758802",
+   "gorsel": "ec8fa8c8c29d8f14",
+   "noktalar": [
+    {
+     "ad": "Kuyruğunu düzelten balerin",
+     "x": 0.2,
+     "y": 0.3,
+     "w": 0.4,
+     "h": 0.7,
+     "metin": "Önde notalarının yanındaki balerin dönmüş, arkasını düzeltiyor. Degas balerinleri sahnede değil, provada, yorgun ve gündelik hâlleriyle boyadı."
+    },
+    {
+     "ad": "Bale ustası",
+     "x": 0.75,
+     "y": 0.3,
+     "w": 0.25,
+     "h": 0.4,
+     "metin": "Sağda bastonuna dayanmış yaşlı adam, ünlü bale ustası Jules Perrot. Degas onu bir fotoğraftan çalıştı."
+    },
+    {
+     "ad": "Prova eden kızlar",
+     "x": 0.45,
+     "y": 0.15,
+     "w": 0.55,
+     "h": 0.3,
+     "metin": "Arkada kızlar sırayla figür yapıyor, kimi bekliyor, kimi esniyor. Degas sahneyi sanki bir fotoğraf karesi gibi rastgele kesmiş."
+    },
+    {
+     "ad": "Piyanodaki balerin",
+     "x": 0.0,
+     "y": 0.25,
+     "w": 0.15,
+     "h": 0.3,
+     "metin": "Solda piyanonun üstüne oturmuş bir balerin sırtını kaşıyor, sıkılmış. Arka planda annelerin beklediği seçiliyor; Paris Operası'nın küçük balerinleri genellikle yoksul ailelerden gelirdi."
+    },
+    {
+     "ad": "Ayna ve pencere",
+     "x": 0.4,
+     "y": 0.08,
+     "w": 0.2,
+     "h": 0.2,
+     "metin": "Arka duvardaki büyük ayna odayı daha da kalabalık gösteriyor. Resim New York'taki Metropolitan Müzesi'nde."
     }
    ]
   },
