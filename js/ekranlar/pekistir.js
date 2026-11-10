@@ -128,7 +128,7 @@ function turSahnesi(karisik) {
   const kapak = kapakSanatcisi();
   return `<section class="pk-sahne" aria-label="Bugünkü karışık tur">
       <div class="pk-resim" aria-hidden="true">${kapak ? `<span data-pk-kapak="${kacis(kapak.id)}"></span>` : ''}</div>
-      <div class="pk-ust">${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}</div>
+      <div class="pk-ust">${ust('Çalış', '#/', { geriYok: true })}</div>
       <div class="pk-deste${deste.length ? '' : ' bos'}" aria-hidden="true">${deste
         .map((x, i) => `<span class="pk-kart" style="--i:${i}"><span class="kucuk-kare" data-kucuk="${kacis(x.s.id)}"></span></span>`)
         .join('')}</div>
@@ -230,7 +230,7 @@ export function pekistirMenusu(secenek) {
         ${sirali.map((a, i) => donemSatiri(a, turYazi, istler.get(a.ad), i + 1, acik)).join('')}
       </ul>
     </section>`
-        : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
+        : `${ust('Çalış', '#/', { geriYok: true })}${devamKarti()}${bosAcik()}`
     }`,
   );
   kucukKareleriDoldur();

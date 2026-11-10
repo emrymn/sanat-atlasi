@@ -269,9 +269,7 @@ export function ilerlemeSayfasi() {
   gununRengi();
   ciz(`<section class="ilr-sahne">
       ${eserDuvari()}
-      <div class="pk-ust">${ust('İlerleme', '#/', {
-        geriYok: true,
-        ustEtiket: 'Kurs',
+      <div class="pk-ust">${ust('Ben', '#/', {
         sag: `<a class="ust-dugme" href="#/ayarlar" aria-label="Ayarlar">${ikon('ayarlar', 22, 1.4)}</a>`,
       })}</div>
       ${p.pano}

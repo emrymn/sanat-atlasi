@@ -174,3 +174,26 @@ test('yürüyüş: yatay kaydırma yok', async ({ page }) => {
   const tasma = await page.evaluate(() => document.scrollingElement.scrollWidth - innerWidth);
   expect(tasma).toBeLessThanOrEqual(0);
 });
+
+// İş 171 (Tasarım B): 4 sekme, Çalış rozeti, Ben düğmesi
+test('sekme çubuğu: Bugün · Yolculuk · Galeri · Çalış; Çalış’ta bekleyen kart sayısı; Ben Bugün’ün sağ üstünden açılır', async ({ page }) => {
+  await page.goto('./');
+  const sekmeler = page.locator('#sekmeler a');
+  await expect(sekmeler).toHaveCount(4);
+  expect((await sekmeler.allTextContents()).map((t) => t.replace(/\d+/g, '').trim())).toEqual(['Bugün', 'Yolculuk', 'Galeri', 'Çalış']);
+  for (const a of await sekmeler.all()) expect((await a.boundingBox()).height).toBeGreaterThanOrEqual(44);
+  // rozet: bugünkü turun kart sayısı
+  const rozet = page.locator('[data-test="sekme-rozet"]');
+  await expect(rozet).toBeVisible();
+  const bekleyen = Number(await rozet.textContent());
+  expect(bekleyen).toBeGreaterThan(0);
+  await page.locator('#sekmeler a[data-sekme="pekistir"]').click();
+  await expect(page.locator('[data-test="tur-sayi"]').first()).toHaveText(String(bekleyen));
+  // Ben: sekme değil, Bugün'deki düğme; geri okuyla Bugün'e döner
+  await page.locator('#sekmeler a[data-sekme="bugun"]').click();
+  await page.locator('.bugun-ben').click();
+  await expect(page.getByRole('heading', { name: 'Ben' })).toBeVisible();
+  await expect(page.locator('#sekmeler a[data-sekme="bugun"]')).toHaveAttribute('aria-current', 'page');
+  await page.locator('.ust .geri').click();
+  await expect(page.locator('[data-test="gunun-kart"]')).toBeVisible();
+});

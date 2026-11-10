@@ -493,7 +493,7 @@ export function gozAtUst(etkin) {
   const i = GOZAT_BOLUMLERI.findIndex(([id]) => id === etkin);
   const j = sonGozAtBolumu;
   sonGozAtBolumu = i;
-  return `${ust('Göz At', '#/', { geriYok: true, ustEtiket: 'Galeri' })}
+  return `${ust('Galeri', '#/', { geriYok: true })}
     <a class="arama-hapi" href="#/ara" data-test="arama-hapi">${ikon('ara', 18, 1.6)}<span>Sanatçı, eser, konu ara</span></a>
     <nav class="bolumler" aria-label="Göz At bölümleri" style="--i:${i};--j:${j}">${GOZAT_BOLUMLERI.map(
       ([id, ad, hash, test]) => `<a href="${hash}"${test ? ` data-test="${test}"` : ''}${id === etkin ? ' aria-current="page"' : ''}>${ad}</a>`,

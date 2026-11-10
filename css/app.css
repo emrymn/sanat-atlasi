@@ -71,7 +71,7 @@
   --pirinc: #c9a45c;
   --pirinc-rgb: 201, 164, 92;
   --pirinc-yazi: #121110;
-  --yan: 22px; /* kenar boşluğu */
+  --yan: 24px; /* kenar boşluğu (İş 171: 4'ün katı) */
   --sekme-h: 62px;
   --sekme-alt: max(12px, env(safe-area-inset-bottom));
   --ust-bosluk: calc(env(safe-area-inset-top) + 12px);
@@ -170,7 +170,7 @@ p {
 }
 /* okuma metni: Bodoni 19 px */
 .okuma {
-  font: 400 19px/1.45 var(--serif);
+  font: 400 19px/1.45 var(--okuma);
   color: var(--ink);
   hyphens: auto;
   -webkit-hyphens: auto;
@@ -308,7 +308,7 @@ html.sekmesiz .hikaye::before {
 /* Dolu düğmelerin yazısı nazik bir serif (başlıklarla aynı aile, italik), kalın sans değil; parlama gölgesi yok */
 .dugme.vurgu,
 .dugme.acik {
-  font: italic 400 19px/1.2 var(--serif);
+  font: italic 400 19px/1.2 var(--okuma);
   letter-spacing: 0.01em;
 }
 .dugme.vurgu b,
@@ -486,7 +486,7 @@ img.kirik {
   margin: 0;
 }
 .devam-yazi b {
-  font: 500 19px/1.25 var(--serif);
+  font: 500 19px/1.25 var(--okuma);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -624,7 +624,7 @@ img.kirik {
   margin: 0 0 4px;
 }
 .sade-soru-baslik {
-  font: 500 21px/1.3 var(--serif);
+  font: 500 21px/1.3 var(--okuma);
 }
 .devam-bitir {
   position: absolute;
@@ -889,7 +889,7 @@ img.kirik {
   -webkit-line-clamp: 3;
 }
 .eser-yazi {
-  font: italic 400 15px/1.3 var(--serif);
+  font: italic 400 15px/1.3 var(--okuma);
   color: var(--ink);
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -2129,7 +2129,7 @@ img.kirik {
 }
 .skor-sayi b {
   color: var(--ink);
-  font: 400 18px/1 var(--serif);
+  font: 400 18px/1 var(--okuma);
 }
 .skor-not {
   margin: 22px 0 0;
@@ -2592,7 +2592,7 @@ summary::-webkit-details-marker {
   justify-content: space-between;
   gap: 12px;
   padding: 10px 0;
-  font: 400 19px/1.25 var(--serif);
+  font: 400 19px/1.25 var(--okuma);
 }
 .konu-bolum summary small {
   font: 400 12px var(--sans);
@@ -2754,7 +2754,7 @@ progress {
 /* Ekranın altında havada duran yuvarlak çubuk; seçili sekmenin arkasında resim renginde bir hap kayar (--i: sekme sırası). */
 .sekmeler {
   --sekme-pad: 6px;
-  --sekme-n: 5; /* İş 24b: Bugün · Harita · Göz At · Pekiştir · İlerleme */
+  --sekme-n: 4; /* İş 171: Bugün · Yolculuk · Galeri · Çalış */
   position: fixed;
   left: calc(env(safe-area-inset-left) + 14px);
   right: calc(env(safe-area-inset-right) + 14px);
@@ -2972,7 +2972,7 @@ html.sekmesiz .sekmeler {
 }
 .gor-baslik {
   margin: 0;
-  font: italic 400 21px/1.25 var(--serif);
+  font: italic 400 21px/1.25 var(--okuma);
 }
 .gor-baslik .ikincil {
   font-style: normal;
@@ -3012,7 +3012,7 @@ html.sekmesiz .sekmeler {
 /* Görüntüleyicide eser notu */
 .gor-not {
   margin: 2px 0 2px;
-  font: 400 15px/1.45 var(--serif);
+  font: 400 15px/1.45 var(--okuma);
   color: var(--ink);
 }
 
@@ -3068,7 +3068,7 @@ html.sekmesiz .sekmeler {
   min-height: 44px;
 }
 .kars-ad .ad-ilk {
-  font: italic 400 15px/1.2 var(--serif);
+  font: italic 400 15px/1.2 var(--okuma);
   color: var(--ink-2);
 }
 .kars-ad b {
@@ -3091,7 +3091,7 @@ html.sekmesiz .sekmeler {
 }
 .kars-not {
   margin: 0;
-  font: 400 15px/1.45 var(--serif);
+  font: 400 15px/1.45 var(--okuma);
   color: var(--ink);
   hyphens: auto;
   -webkit-hyphens: auto;
@@ -3279,7 +3279,7 @@ html.sekmesiz .sekmeler {
     0 0 24px -6px rgba(var(--vurgu-rgb), 0.55),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
   color: var(--ink);
-  font: italic 400 21px/1 var(--serif);
+  font: italic 400 21px/1 var(--okuma);
   text-decoration: none;
   transition: transform 0.15s ease;
 }
@@ -3439,7 +3439,7 @@ html.sekmesiz .sekmeler {
 }
 .bolum-aciklama {
   margin: 0 0 8px;
-  font: italic 400 16px/1.4 var(--serif);
+  font: italic 400 16px/1.4 var(--okuma);
   color: var(--ink-2);
 }
 
@@ -3607,7 +3607,7 @@ html.sekmesiz .sekmeler {
     translate 0.7s calc(min(var(--i), 3) * 110ms + 0.65s) var(--egri);
 }
 .vitrin-yazi b {
-  font: 400 19px/1.2 var(--serif);
+  font: 400 19px/1.2 var(--okuma);
   text-wrap: balance;
 }
 .vitrin-yazi > span {
@@ -3703,7 +3703,7 @@ html.sekmesiz .sekmeler {
   align-items: baseline;
   flex-wrap: wrap;
   gap: 4px 10px;
-  font: italic 400 21px/1.2 var(--serif);
+  font: italic 400 21px/1.2 var(--okuma);
   letter-spacing: 0;
   text-transform: none;
 }
@@ -3726,7 +3726,7 @@ html.sekmesiz .sekmeler {
   font-size: 22px;
 }
 .alt-yaprak .bilgi i {
-  font: italic 400 15px/1.3 var(--serif);
+  font: italic 400 15px/1.3 var(--okuma);
   color: var(--ink-2);
 }
 .alt-yaprak .palet {
@@ -4287,7 +4287,7 @@ main[data-hareket='giris'] .ozet .ad {
 }
 .tanisma-baslik-yazi {
   min-width: 0;
-  font: italic 400 16px/1.3 var(--serif);
+  font: italic 400 16px/1.3 var(--okuma);
   color: var(--ink);
   white-space: nowrap;
   overflow: hidden;
@@ -4517,7 +4517,7 @@ main[data-hareket='giris'] .ozet .ad {
   opacity: 0.6;
 }
 .gec-ana {
-  font: italic 400 21px/1.15 var(--serif);
+  font: italic 400 21px/1.15 var(--okuma);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -5479,7 +5479,7 @@ html.konu-galeri-acik {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font: italic 400 16px/1.3 var(--serif);
+  font: italic 400 16px/1.3 var(--okuma);
   color: var(--ink-2);
 }
 .konu-duraklar > li > .konu-durak,
@@ -5705,7 +5705,7 @@ li.gorundu .konu-deste i:nth-child(2) {
   padding: 12px 2px 0;
 }
 .konu-kart-yazi b {
-  font: 400 18px/1.2 var(--serif);
+  font: 400 18px/1.2 var(--okuma);
   text-wrap: balance;
 }
 .konu-izgara > li:first-child .konu-kart-yazi b {
@@ -5896,7 +5896,7 @@ li.gorundu .konu-deste i:nth-child(2) {
   min-width: 0;
 }
 .siradaki-yazi b {
-  font: 400 21px/1.2 var(--serif);
+  font: 400 21px/1.2 var(--okuma);
 }
 .siradaki-yazi small {
   font-size: 13px;
@@ -5931,7 +5931,7 @@ li.gorundu .konu-deste i:nth-child(2) {
 }
 .siradaki-bitti {
   margin: 6px 0 18px;
-  font: italic 400 18px/1.3 var(--serif);
+  font: italic 400 18px/1.3 var(--okuma);
   color: var(--ink-2);
 }
 .konu .ozgun-konu {
@@ -6023,7 +6023,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   border: 0;
   background: none;
   color: var(--ink-2);
-  font: italic 400 17px/1 var(--serif);
+  font: italic 400 17px/1 var(--okuma);
   text-decoration: underline;
   text-decoration-color: rgba(var(--vurgu-rgb), 0.55);
   text-underline-offset: 5px;
@@ -6066,7 +6066,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   color: var(--ink);
 }
 .destek b {
-  font: italic 400 17px/1 var(--serif);
+  font: italic 400 17px/1 var(--okuma);
 }
 .destek.tam {
   background: rgba(var(--vurgu-rgb), 0.9);
@@ -6081,7 +6081,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   gap: 2px;
 }
 .salon-raf-yazi b {
-  font: 400 18px/1.2 var(--serif);
+  font: 400 18px/1.2 var(--okuma);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -6186,7 +6186,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   position: absolute;
   top: 8px;
   left: 10px;
-  font: 400 21px/1 var(--serif);
+  font: 400 21px/1 var(--okuma);
   font-variant-numeric: lining-nums;
   opacity: 0.9;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
@@ -6209,7 +6209,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   -webkit-box-orient: vertical;
   overflow: hidden;
   padding: 0 10px;
-  font: 400 13px/1.25 var(--serif);
+  font: 400 13px/1.25 var(--okuma);
   text-wrap: balance;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
 }
@@ -6387,7 +6387,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   min-width: 0;
 }
 .konu-karti-yazi b {
-  font: 400 19px/1.25 var(--serif);
+  font: 400 19px/1.25 var(--okuma);
   text-wrap: balance;
 }
 .konu-karti-yazi .ozgun-konu {
@@ -6502,7 +6502,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 }
 .ters-sor {
   margin-top: 8px;
-  font: italic 400 18px/1 var(--serif);
+  font: italic 400 18px/1 var(--okuma);
   color: var(--ink-2);
 }
 .ters-sor.sag {
@@ -6595,7 +6595,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   bottom: 3px;
   min-width: 18px;
   padding: 1px 3px;
-  font: italic 600 13px/1.1 var(--serif);
+  font: italic 600 13px/1.1 var(--okuma);
   color: #6b5d4d;
   border: 1px dashed #b59b74;
   text-align: center;
@@ -6811,7 +6811,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   text-align: left;
 }
 .kp-arka b {
-  font: italic 500 12.5px/1.1 var(--serif);
+  font: italic 500 12.5px/1.1 var(--okuma);
   overflow-wrap: anywhere;
   overflow: hidden;
   display: -webkit-box;
@@ -6931,7 +6931,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   min-width: 0;
 }
 .tanis-yazi b {
-  font: 400 16px/1.2 var(--serif);
+  font: 400 16px/1.2 var(--okuma);
 }
 .tanis-yazi span {
   font-size: 12.5px;
@@ -6994,14 +6994,14 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   min-width: 0;
 }
 .hatalar-satir .metin b {
-  font: 400 19px/1.2 var(--serif);
+  font: 400 19px/1.2 var(--okuma);
 }
 .hatalar-satir .metin > span {
   font-size: 13.5px;
   color: var(--ink-2);
 }
 .hatalar-ikili {
-  font: italic 400 14px/1.35 var(--serif);
+  font: italic 400 14px/1.35 var(--okuma);
   color: var(--ink);
 }
 
@@ -7038,7 +7038,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   font-weight: 650;
 }
 .seviye-hap small {
-  font: italic 400 12px/1 var(--serif);
+  font: italic 400 12px/1 var(--okuma);
   opacity: 0.8;
 }
 .seviye-hap.kilitli {
@@ -7129,7 +7129,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   cursor: pointer;
 }
 .arama-eser .metin i {
-  font: italic 400 13px/1.3 var(--serif);
+  font: italic 400 13px/1.3 var(--okuma);
   color: var(--ink-2);
 }
 .arama-fazla,
@@ -7318,7 +7318,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   left: 6px;
   display: inline-block;
   margin-top: 1px;
-  font: 400 13.5px/1 var(--serif);
+  font: 400 13.5px/1 var(--okuma);
   white-space: nowrap;
 }
 .zaman-cubuk.canli {
@@ -7393,7 +7393,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   min-width: 0;
 }
 .zaman-sanatci-yazi b {
-  font: 400 17px/1.2 var(--serif);
+  font: 400 17px/1.2 var(--okuma);
 }
 .zaman-sanatci-yazi span,
 .zaman-sanatci-yazi small {
@@ -7462,7 +7462,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   gap: 6px;
   padding: 7px 0;
   border-bottom: 1px solid var(--border);
-  font: 400 17px/1.4 var(--serif);
+  font: 400 17px/1.4 var(--okuma);
 }
 .akim-ozellik li::before {
   content: counter(oz);
@@ -7528,7 +7528,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 }
 .akim-eser b {
   display: block;
-  font: italic 400 15px/1.25 var(--serif);
+  font: italic 400 15px/1.25 var(--okuma);
 }
 .akim-karsi {
   display: grid;
@@ -7544,7 +7544,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   display: flex;
   align-items: baseline;
   gap: 6px;
-  font: 400 21px/1.15 var(--serif);
+  font: 400 21px/1.15 var(--okuma);
   color: var(--ink);
   text-decoration: none;
 }
@@ -7589,7 +7589,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 }
 .seri {
   margin: 0;
-  font: italic 400 16px/1.2 var(--serif);
+  font: italic 400 16px/1.2 var(--okuma);
   color: var(--ink-2);
 }
 .seri b {
@@ -7885,7 +7885,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 }
 .yenilik-not b {
   display: block;
-  font: 400 18px/1.2 var(--serif);
+  font: 400 18px/1.2 var(--okuma);
 }
 .yenilik-kapat {
   width: 44px;
@@ -7984,7 +7984,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   gap: 1px;
 }
 .harita-zaman b {
-  font: 400 16px/1.15 var(--serif);
+  font: 400 16px/1.15 var(--okuma);
   color: var(--ink);
 }
 .harita-zaman-ic > span {
@@ -8648,7 +8648,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .harita-pencere-akim,
 .harita-pencere-ic .okuma {
   margin: 2px 0;
-  font: 400 15px/1.45 var(--serif);
+  font: 400 15px/1.45 var(--okuma);
   color: #3d3024;
 }
 .harita-seviyeler {
@@ -8690,7 +8690,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 }
 .harita-pencere-eser {
   margin: 0;
-  font: italic 400 13.5px/1.35 var(--serif);
+  font: italic 400 13.5px/1.35 var(--okuma);
   color: #5b4630;
 }
 .harita-pencere-durum {
@@ -8774,7 +8774,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   gap: 2px;
 }
 .harita-bag .metin b {
-  font: 400 21px/1.1 var(--serif);
+  font: 400 21px/1.1 var(--okuma);
 }
 .harita-bag .metin > span {
   font-size: 13px;
@@ -9153,7 +9153,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   min-width: 0;
 }
 .akim-kart-ust b {
-  font: 400 19px/1.15 var(--serif);
+  font: 400 19px/1.15 var(--okuma);
   min-width: 0;
   flex: 0 1 auto;
 }
@@ -9803,7 +9803,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
   }
 }
 .salon-halka b {
-  font: 400 17px/1 var(--serif);
+  font: 400 17px/1 var(--okuma);
   font-variant-numeric: lining-nums;
 }
 
@@ -11546,7 +11546,7 @@ main[data-hareket='cevap'] .secenekler.daralmis .secenek {
 .harita-pencere-akim,
 .harita-pencere-ic .okuma {
   margin-top: 10px;
-  font: 400 15px/1.55 var(--serif);
+  font: 400 15px/1.55 var(--okuma);
   color: var(--ink-2);
   text-wrap: pretty;
 }
@@ -11585,7 +11585,7 @@ a.harita-seviye:active {
   background: rgba(255, 255, 255, 0.07);
 }
 .harita-seviye b {
-  font: 400 18px/1.15 var(--serif);
+  font: 400 18px/1.15 var(--okuma);
 }
 .harita-seviye span {
   color: var(--ink-3);
@@ -11711,7 +11711,7 @@ a.harita-seviye:active {
   background: none;
   box-shadow: none;
   color: var(--vurgu-yazi, #fff);
-  font: italic 400 18px/1 var(--serif);
+  font: italic 400 18px/1 var(--okuma);
   letter-spacing: 0.01em;
   white-space: nowrap;
   justify-self: start;
@@ -12027,7 +12027,7 @@ a.harita-seviye:active {
   border-radius: 1px;
   background: rgba(244, 238, 226, 0.94);
   color: #2b2420;
-  font: italic 400 12px/1.2 var(--serif);
+  font: italic 400 12px/1.2 var(--okuma);
   letter-spacing: 0.01em;
   text-transform: none;
   box-shadow:
@@ -12647,12 +12647,12 @@ a.harita-seviye:active {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font: 400 18px/1.4 var(--serif);
+  font: 400 18px/1.4 var(--okuma);
   color: var(--ink);
   text-wrap: pretty;
 }
 .akim-ipucu-no {
-  font: italic 400 15px/1 var(--serif);
+  font: italic 400 15px/1 var(--okuma);
   color: var(--renk);
   letter-spacing: 0.04em;
 }
@@ -12712,7 +12712,7 @@ a.harita-seviye:active {
 }
 .akim-konu-ayrac {
   color: var(--renk);
-  font: 400 18px/1 var(--serif);
+  font: 400 18px/1 var(--okuma);
   opacity: 0.6;
 }
 
@@ -12731,7 +12731,7 @@ a.harita-seviye:active {
   border: 0;
   border-bottom: 1px solid var(--border);
   border-radius: 0;
-  font: 400 19px/1.3 var(--serif);
+  font: 400 19px/1.3 var(--okuma);
 }
 .akim-komsular.akim-komsu-liste a i {
   font-style: italic;
@@ -13028,7 +13028,7 @@ a.harita-seviye:active {
   display: flex;
   align-items: center;
   gap: 8px;
-  font: italic 14px/1.4 var(--serif);
+  font: italic 14px/1.4 var(--okuma);
   color: var(--d-vurgu);
 }
 .donem-dugme-teknik::before {
@@ -13059,14 +13059,14 @@ a.harita-seviye:active {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font: 15px/1.5 var(--serif);
+  font: 15px/1.5 var(--okuma);
   text-wrap: pretty;
 }
 .donem-dugme-eser:empty {
   display: none;
 }
 .donem-dugme-eser {
-  font: italic 13px/1.4 var(--serif);
+  font: italic 13px/1.4 var(--okuma);
   opacity: 0.7;
 }
 .donem-dugme-ok {
@@ -15224,7 +15224,7 @@ li.gorundu .konu-deste i:nth-child(2) {
 .eser-yazi,
 .vitrin-yazi b,
 .konu-kart-yazi b {
-  font: 400 17px/1.22 var(--serif);
+  font: 400 17px/1.22 var(--okuma);
   color: var(--ink);
   text-wrap: balance;
 }
@@ -15280,7 +15280,7 @@ li.gorundu .konu-deste i:nth-child(2) {
   padding-top: 12px;
 }
 .akim-eser b {
-  font: 400 17px/1.22 var(--serif);
+  font: 400 17px/1.22 var(--okuma);
   text-wrap: balance;
 }
 .akim-eser small {
@@ -15575,7 +15575,7 @@ article > .eserler + .bolum {
   display: flex;
   align-items: baseline;
   gap: 10px;
-  font: italic 400 19px/1.25 var(--serif);
+  font: italic 400 19px/1.25 var(--okuma);
 }
 .gor-inc-no {
   font: 500 12px/1.2 var(--sans);
@@ -15588,7 +15588,7 @@ article > .eserler + .bolum {
 }
 .gor-inc-metin {
   margin: 0;
-  font: 400 16px/1.45 var(--serif);
+  font: 400 16px/1.45 var(--okuma);
   color: var(--ink);
   min-height: 4.3em;
 }
@@ -15776,7 +15776,7 @@ article > .eserler + .bolum {
 }
 .hikaye-bolum p,
 .hikaye-bolum li {
-  font: 400 16px/1.55 var(--serif);
+  font: 400 16px/1.55 var(--okuma);
 }
 .hikaye-bolum p {
   margin: 0 0 10px;
@@ -15913,7 +15913,7 @@ html:has(.bugun-tek) body {
 }
 .bugun-eser {
   margin: -12px 0 0;
-  font: italic 400 17px/1.35 var(--serif);
+  font: italic 400 17px/1.35 var(--okuma);
   color: var(--ink-2);
   text-wrap: pretty;
   text-shadow: 0 1px 12px rgba(var(--bg-rgb), 0.6);
@@ -16339,4 +16339,53 @@ html.yuruyus-icinde .sekmeler {
   backdrop-filter: blur(14px) saturate(1.3);
   color: var(--yur-yazi);
   font: 600 13px/1 var(--sans);
+}
+
+/* ===== İş 171 · sekme çubuğu: 4 sekme, etkin olan pirinç; Çalış'ta bugün bekleyen kart sayısı ===== */
+.sekmeler a {
+  font: 500 11px/1.2 var(--sans);
+  letter-spacing: 0.02em;
+  gap: 3px;
+}
+.sekmeler a[aria-current='page'] {
+  font-weight: 600;
+}
+.sekmeler a[aria-current='page'] .ikon {
+  color: var(--pirinc);
+}
+.sekme-isaret {
+  background: rgba(var(--pirinc-rgb), 0.12);
+  box-shadow: inset 0 0 0 1px rgba(var(--pirinc-rgb), 0.38);
+}
+.sekme-rozet {
+  position: absolute;
+  top: 3px;
+  left: calc(50% + 6px);
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  border-radius: 9px;
+  background: var(--pirinc);
+  color: var(--pirinc-yazi);
+  font: 600 11px/18px var(--sans);
+  text-align: center;
+  animation: rozet-gel 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes rozet-gel {
+  from {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+}
+:root[data-tema='gunduz'] {
+  --pirinc: #8a651c;
+  --pirinc-rgb: 138, 101, 28;
+  --pirinc-yazi: #f7f5f1;
+}
+:root[data-tema='gunduz'] .bugun-yuruyus,
+:root[data-tema='gunduz'] .gor {
+  --pirinc: #c9a45c;
+  --pirinc-rgb: 201, 164, 92;
+  --pirinc-yazi: #121110;
 }

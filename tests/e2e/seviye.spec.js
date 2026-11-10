@@ -16,7 +16,7 @@ async function simdikiKart(page) {
 // Yarım kalan turu Pekiştir menüsündeki devam kartından bitir
 async function yarimiBitir(page) {
   await page.goto('./#/pekistir');
-  await expect(page.getByRole('heading', { name: 'Pekiştir' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Çalış' })).toBeVisible();
   const bitir = page.locator('[data-yarim-bitir]');
   if (await bitir.count()) await bitir.click();
   await expect(page.locator('[data-test="devam-kart"]')).toHaveCount(0);

@@ -91,6 +91,6 @@ test('yarım oturum: 7 günden eski kayıt sessizce silinir', async ({ page }) =
     db.close();
   });
   await page.reload();
-  await expect(page.getByRole('heading', { name: 'Pekiştir' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Çalış' })).toBeVisible();
   await expect(page.locator('[data-test="devam-kart"]')).toHaveCount(0);
 });

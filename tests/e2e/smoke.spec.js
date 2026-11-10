@@ -11,7 +11,7 @@ test('ana sayfa → Göz At → sanatçı → eser tam ekran', async ({ page }) 
   // Tasarım B 4.1: Bugün sade; sanatçı düğmesi var, sayılar Ben'de (İlerleme)
   await expect(page.locator('.bugun-dugmeler a.bugun-dugme')).toBeVisible();
   await page.locator('#sekmeler a[data-sekme="gozat"]').click();
-  await expect(page.getByRole('heading', { name: 'Göz At' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Galeri' })).toBeVisible();
   // kilitli akım gri ve "Konu N'de açılır" yazar
   await expect(page.getByText(/Konu \d+'(de|da|te|ta) açılır/).first()).toBeVisible();
   await page.getByRole('link', { name: /yüzyıl Gotik/ }).click();
@@ -120,7 +120,7 @@ test('İlerleme: konu işaretlenince yeni sanatçı açılır', async ({ page })
     return { no: s.konu, ad: s.ad, akim: s.akim };
   });
   await page.goto('./#/ilerleme');
-  await expect(page.getByRole('heading', { name: 'İlerleme' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Ben' })).toBeVisible();
   const anahtar = page.getByRole('switch', { name: `Konu ${no} işlendi` });
   // konuya dokununca konu kartı açılır; anahtar kartın içinde
   if (!(await anahtar.isVisible())) await page.locator(`[data-kurs-konu="${no}"]`).click();
@@ -142,7 +142,7 @@ test('yalnızca resim: heykeltıraş ve mimarlar ile resimsiz akımlar görünme
   // Eserler özgün adlarıyla aranır: Türkçe adlar dosyası bu testte yok sayılır
   await context.route(/\/data\/eser_adlari_tr\.json(\?.*)?$/, (r) => r.fulfill({ status: 404, body: '' }));
   await page.goto('./#/gozat');
-  await expect(page.getByRole('heading', { name: 'Göz At' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Galeri' })).toBeVisible();
   await expect(page.getByText('Antik Yunan ve Roma')).toHaveCount(0);
   await expect(page.getByText('Romanesk', { exact: true })).toHaveCount(0);
   await page.getByRole('link').filter({ hasText: 'Erken Rönesans' }).click();

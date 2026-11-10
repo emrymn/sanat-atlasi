@@ -1852,3 +1852,12 @@ Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişikli
 - **Okuma yazısı Newsreader** eklendi (`--okuma`), şimdilik yalnız yürüyüşte; diğer ekranlara 5. grupta yayılacak. Pirinç vurgu `--pirinc`.
 - **Hareket ayarı:** Kapalı'da ve sistemin "hareketi azalt"ında kamera adıma anında geçer, açılıştaki uzaklaşma olmaz; Sade'de ok zıplamaz.
 - Testler: `tests/unit/yuruyus.test.mjs` (havuz, 145 eserin bütün ayrıntılarında kartın ayrıntıyı kapatmaması), `tests/e2e/gunun.spec.js` (adımlar, siyah boşluk yok, sekme çubuğu, son). "Bugün tek ekran, kaydırma yok" testi yeni düzene uyarlandı.
+
+### Grup 5–6 · Tasarım dili ve sekmeler
+
+- **4 sekme:** Bugün · Yolculuk · Galeri · Çalış (`js/ekranlar/ortak.js` → `SEKMELER`). Adresler aynı. Ben (`#/ilerleme`) sekme değil: Bugün'ün sağ üstündeki düğmeden açılır, geri okuyla Bugün'e döner; Ben ve Ayarlar'da Bugün sekmesi seçili görünür. Koleksiyon Galeri sekmesine bağlandı.
+- **Çalış rozeti:** bugünkü turda bekleyen kart sayısı (Bugün'ün sonundaki ve Çalış'taki sayıyla aynı hesap, `turBilgisi('karisik')`); 0 olunca kalkar.
+- **Başlıklar:** Göz At → Galeri, Pekiştir → Çalış, İlerleme → Ben (sekme adıyla aynı; üstteki küçük etiketler kalktı).
+- **Okuma yazısı:** 21 px ve altındaki bütün Bodoni metinler (66 kural) Newsreader'a geçti; Bodoni yalnız başlıklarda ve büyük sayılarda. Kenar boşluğu 22 → 24 px.
+- **Pirinç** (`--pirinc`; Gündüz'de koyusu): etkin sekme ve rozet. Düğmeler ve ilerleme çizgileri, o ekranlar yeniden çizildikçe (soru, harita, Çalış, Galeri) pirince geçecek; tablodan gelen renk arka plan ışığında kalıyor. 325 yerde kullanılan `--vurgu` tek seferde değiştirilmedi (kırılma riski).
+- Testler: sekme sayısı 5 → 4 (`harita.spec`), "başka sekmeden dönünce" testi Defter yerine Çalış sekmesini kullanır, başlık adları; `cilalama.spec` İş 71 testi çubuğun yerini açılış animasyonu bittikten sonra ölçer (yarı yarıya kırılıyordu: ölçüm animasyonun ortasına denk geliyordu).

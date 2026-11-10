@@ -397,12 +397,12 @@ export function temaUygula() {
 
 // ---------- sekme çubuğu ----------
 // İş 24: Göz At haritaya katıldı; büyük Harita sekmesi ikinci sırada
+// İş 171 (Tasarım B): 4 sekme, adı ne yaptığını söyler. Ben (#/ilerleme) sekme değil; Bugün'ün sağ üstündeki düğme.
 const SEKMELER = [
-  ['bugun', 'Tuval', '#/'],
+  ['bugun', 'Bugün', '#/'],
   ['harita', 'Yolculuk', '#/harita'],
   ['gozat', 'Galeri', '#/gozat'],
-  ['pekistir', 'Atölye', '#/pekistir'],
-  ['ilerleme', 'Defter', '#/ilerleme'],
+  ['pekistir', 'Çalış', '#/pekistir'],
 ];
 // İş 76: sekmelerin ana sayfaları (geri yok)
 export const SEKME_ADRESLERI = SEKMELER.map(([, , h]) => h);
@@ -424,6 +424,7 @@ export function sekmeleriCiz(etkin) {
       SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}">${ikon('sekme-' + id, 22, 1.5)}<span>${ad}</span></a>`).join('');
     sekmeSurukle(nav);
   }
+  if (rozetHesabi) sekmeRozeti(rozetHesabi());
   const i = SEKMELER.findIndex(([id]) => id === etkin);
   // sekme değişince yeni ekran geldiği yönden kayar (sağdaki sekme sağdan)
   const onceki = Number(nav.style.getPropertyValue('--i'));
@@ -433,6 +434,27 @@ export function sekmeleriCiz(etkin) {
     if (a.dataset.sekme === etkin) a.setAttribute('aria-current', 'page');
     else a.removeAttribute('aria-current');
   }
+}
+
+// Çalış sekmesindeki sayı rozeti: bugün bekleyen kart sayısı (günün işi ana ekranda olmadığı için her ekranda görünür);
+// tur bitince kalkar. Hesap js/ekranlar/bugun.js'deki turBilgisi (döngüsel içe aktarma olmasın diye buraya verilir).
+let rozetHesabi = null;
+export function sekmeRozetiBagla(fn) {
+  rozetHesabi = fn;
+}
+export function sekmeRozeti(n) {
+  const a = document.querySelector('#sekmeler a[data-sekme="pekistir"]');
+  if (!a) return;
+  let r = a.querySelector('.sekme-rozet');
+  if (!(n > 0)) return r && r.remove();
+  if (!r) {
+    r = document.createElement('b');
+    r.className = 'sekme-rozet';
+    r.dataset.test = 'sekme-rozet';
+    a.append(r);
+  }
+  r.textContent = String(n);
+  r.setAttribute('aria-label', `${n} kart bekliyor`);
 }
 
 // Apple tarzı sekme çubuğu: parmak çubukta gezinirken vurgu parmağı izler, bırakınca o sekmeye geçer

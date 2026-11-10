@@ -44,6 +44,7 @@ import {
   eserKareleriDoldur,
   hikayeVeri,
   hikayeBulucu,
+  sekmeRozetiBagla,
 } from './ortak.js';
 import { ayrintiVeri, ayrintiBulucu } from './gozat.js';
 import { SURUM } from '../surum.js';
@@ -428,6 +429,7 @@ export async function gununSayfasi(id) {
 
 // Ekranın olay dinleyicileri; app.js özgün sırayla bir kez bağlar
 export function olaylariBagla() {
+  sekmeRozetiBagla(() => (d.ilerleme ? turBilgisi('karisik').toplam : 0));
   // Tek dokunuşla yedek: panoya kopyalar ya da paylaşım sayfasını açar (Notlar, Mesajlar); dosya indirmez
   ekran.addEventListener('click', async (e) => {
     const b = e.target.closest('[data-hizli-yedek]');
