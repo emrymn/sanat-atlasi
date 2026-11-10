@@ -4,12 +4,19 @@ Merhaba. Bu dosya seni işe hazırlamak için yazıldı; önce baştan sona oku,
 
 ## Kısaca
 
-Sanat Atlası, Emre'nin iPhone'unda ana ekran uygulaması olarak kullandığı, Türkçe bir sanat tarihi çalışma uygulaması (PWA). Çok özelliği var ama tasarım yüzünden çoğu gizli kalıyor. Yeni düzen (Tasarım B) bunu çözüyor: önem sırasına göre görünürlük, 5 sekme, sade bir açılış ekranı ve açılış resminin içinde "yürüyüş".
+Sanat Atlası, Emre'nin iPhone'unda ana ekran uygulaması olarak kullandığı, Türkçe bir sanat tarihi çalışma uygulaması (PWA). Çok özelliği var ama tasarım yüzünden çoğu gizli kalıyor.
+
+**Emre'nin isteği: tasarımda her şeyi değiştirebilirsin.** Yalnız iki şart var:
+
+1. **Ana ekranda günün sanatçısının resmi olsun.**
+2. **Uygulama premium hissettirsin:** özenli, sakin, pahalı bir müze uygulaması gibi. Tipografi, boşluk, hareket, geçişler, dokunuş hissi, ayrıntılar.
+
+Aşağıdaki Tasarım B (`DUZEN.md`) ve yürüyüş prototipi bir başlangıç noktası, zorunlu değil. Daha iyisini önerebilir, tamamen farklı bir düzen kurabilirsin. Ama bunlar Emre'nin şimdiye kadar beğendiği şeyler; bir şeyi atacaksan neden daha iyi olduğunu söyle.
 
 İşin iki aşaması var:
 
-1. **Önce tasarım önerileri** (kod yazmadan): Düzeni ve çizimleri incele, geliştirme önerilerini yaz, Emre onaylasın.
-2. **Sonra uygulama**: Onaylanan düzeni koda geçir, test et, PR aç.
+1. **Önce tasarım önerisi** (kod yazmadan): Bütün uygulamayı incele, yeni tasarımı öner, Emre onaylasın.
+2. **Sonra uygulama**: Onaylananı koda geçir, test et, PR aç.
 
 ## Başlangıç noktası
 
@@ -27,29 +34,39 @@ Sanat Atlası, Emre'nin iPhone'unda ana ekran uygulaması olarak kullandığı, 
 3. `deneme/yuruyus.html` — yürüyüş prototipi.
 4. `KARARLAR.md`'nin sonu (İş 150 sonrası) — son kararların bağlamı. Dosya çok büyük (420 KB); tamamını okuma, ihtiyacın olan kısmı ara.
 
-## Emre'nin kararları (değiştirme, önerebilirsin)
+## Emre'nin şimdiye kadar beğendikleri (başlangıç noktası; değiştirebilirsin)
 
-- **Bugün:** Resim öne çıksın, altında açıklama yazısı olmasın, "devam et / tur" düğmesi olmasın. İlk ekranda yalnız ad, eser ve yıl, üç tek kelimelik düğme (C1: ikon + kelime, yalnız ikon değil).
-- **Aşağı kaydırınca: resmin içinde yürüyüş.** Kamera aynı resmin içinde ayrıntıdan ayrıntıya kayar ve yakınlaşır; yazılar resmin üstünde yarı saydam kartlarda. **Siyah boşluk olmasın, sayfa kopuk değil tek bir bütün olsun.** Geçişler yavaş ve yumuşak. Kartlarda "Eser", "Ayrıntı 1/6" gibi etiket yok; yalnız başlık ve metin. Açılıştaki ipucu yazı değil, küçük bir ok. Kart ayrıntıyı kapatmasın (gerekirse üste geçer). Sıra: açılış → eserin künyesi → ayrıntılar → Nasıl tanırım? → Hayatı (resim bulanıklaşıp kararır, biyografi üstünde akar).
-- **Sekmeler 5:** Bugün, Yolculuk, Galeri, Başyapıt, Çalış. Çalış'ta bekleyen kart sayısı rozeti. İstatistik, koleksiyon, ayarlar sağ üstteki "Ben" düğmesinde.
-- **Günün ressamı:** Yalnız `data/yuruyus.json`'da kaydı olan 145 sanatçı günün ressamı olabilir; 10 sanatçı (Arp, Man Ray, Bacon, Dalí, Magritte, Ernst, Miró, Duchamp, Höch, Nolde) olmaz ama uygulamada kalır. Günün eseri, o sanatçının yürüyüş eseri olsun (`data/gunun_resimleri.json`'daki Emre'nin elle seçimleri bununla çakışırsa yürüyüş eseri kazanır; Emre'nin elle ortaladığı odaklar `data/gorsel_odak_elle.json` açılış karesinde kullanılmaya devam eder).
-- Renkler, yazı tipleri, temalar, harita, soru ekranları ve öğrenme mantığı **değişmiyor**.
+- **Açılış:** Günün resmi ekranı kenardan kenara kaplıyor, resim öne çıkıyor, üstünde yazı kalabalığı yok. Altta yalnız ad, eser ve yıl, tek kelimelik düğmeler (`ana-c.html`, C1).
+- **Aşağı kaydırınca resmin içinde yürüyüş** (`deneme/yuruyus.html`): kamera aynı resmin içinde ayrıntıdan ayrıntıya kayar ve yakınlaşır, yazılar resmin üstünde yarı saydam kartlarda. Emre özellikle şunları istedi: siyah boşluk olmasın, sayfa kopuk değil tek bir bütün olsun; geçişler yavaş ve yumuşak; kartlarda "Ayrıntı 1/6" gibi etiketler yok; ipucu yazı değil küçük bir ok; kart ayrıntıyı kapatmasın. En sonda "Hayatı" (resim bulanıklaşır, biyografi üstünde akar).
+- **Sekmeler:** 5 sekme düşünüldü (Bugün, Yolculuk, Galeri, Başyapıt, Çalış) ve sağ üstte "Ben". Emre "illaki 4 olacak diye bir şey yok" dedi; sayı ve adlar senin önerin.
+- **Günün ressamı:** `data/yuruyus.json`'da kaydı olan 145 sanatçıdan biri; günün eseri o sanatçının yürüyüş eseri. 10 sanatçı (Arp, Man Ray, Bacon, Dalí, Magritte, Ernst, Miró, Duchamp, Höch, Nolde) günün ressamı olmaz ama uygulamada kalır. Emre'nin elle ortaladığı odaklar (`data/gorsel_odak_elle.json`) açılış karesinde kullanılır.
+- Yolculuk haritası çizimleri Emre'nin çok sevdiği bir şey; atma.
 
-## Aşama 1 · Tasarım önerileri (önce bunu yap, kod yazma)
+## Dokunulmayacaklar (içerik ve öğrenme)
 
-Emre senden ayrıca tasarım önerisi istiyor: "sonuçta çok gelişmiş bir model". Düzeni bir tasarımcı gözüyle eleştir ve geliştir. Özellikle:
+- Veri dosyalarının içeriği: yürüyüş noktaları ve metinleri, hikâyeler, rehberli inceleme, biyografiler, `data/sanatcilar.json`. Yeni veri dosyası ekleyebilirsin.
+- Öğrenme mantığı: Leitner tekrarları, çeldiriciler, kilitler, soru türleri (soruların **görünümünü** değiştirebilirsin).
+- Kullanıcının cihazdaki verisi: ilerleme, ayarlar, yedek biçimi (`js/depo.js`). Yeni sürüm eski yedeği açabilmeli.
 
-- **Önem sırası ve görünürlük:** `DUZEN.md`'deki 4 katman doğru mu? Gizli kalacak değerli bir özellik var mı (rehberli inceleme, hikâyeler, karşılaştır, sesli telaffuz, koleksiyon, konu turu, zaman çizelgesi)?
-- **Bugün + yürüyüş:** Açılıştan yürüyüşe geçiş, yürüyüşün sonu, "Hayatı"dan sonra ne olmalı (ör. sanatçının diğer eserleri, bugünkü tur önerisi)? Yürüyüş sırasında alt sekme çubuğu ve üst çubuk ne yapmalı?
-- **Galeri / Başyapıt / Çalış / Yolculuk:** Her sekmenin ilk ekranı ne göstermeli, sekmeler arasında tekrar var mı?
-- **iPhone hissi:** Dokunma alanları, başparmak bölgesi, kaydırma davranışı, güvenli alanlar, karanlık/aydınlık tema.
-- Bir öneri bir kararı değiştiriyorsa açıkça "Emre'nin kararını değiştirir" diye işaretle.
+## Aşama 1 · Tasarım önerisi (önce bunu yap, kod yazma)
 
-Çıktı: `tasarim-B/ONERILER.md` — her öneri için kısa başlık, neden, nasıl görüneceği (gerekirse küçük bir ASCII çizim ya da `tasarim-B/` altında bir HTML çizim), uygulama maliyeti (küçük / orta / büyük). **En fazla 10 öneri**, önem sırasıyla; Emre hızlı karar versin diye her birinin sonuna "Onay? evet / hayır" bırak. Bu dosyayı commit'le, push'la ve Emre'ye özetle; **onay gelmeden Aşama 2'ye geçme**.
+Emre senden bir tasarımcı gibi düşünmeni istiyor: "sonuçta çok gelişmiş bir model". Bütün uygulamayı gez (yerelde `node scripts/sunucu.mjs 4517` → `http://localhost:4517/sanat-atlasi/`, 390×844), her ekranın görüntüsünü al, sonra:
+
+- **Bütünlüklü bir tasarım dili öner:** tipografi ölçeği, boşluk sistemi, renk ve ışık, hareket ve geçiş ilkeleri, ikonlar, dokunuş geri bildirimi. "Premium" ne demek, bu uygulamada nasıl görünecek?
+- **Bilgi mimarisi:** Hangi özellik nerede, ne kadar görünür? Gizli kalan değerli özellikler (rehberli inceleme, hikâyeler, karşılaştır, sesli telaffuz, koleksiyon, konu turu, zaman çizelgesi, harita) nasıl ortaya çıkar? Sekme sayısı ve adları.
+- **Ana ekran ve yürüyüş:** Açılış, yürüyüş, yürüyüşün sonu, günün işi (bugünkü tur) nerede?
+- **Ekran ekran:** Her ana ekranın ilk görünen alanı ne göstermeli?
+- **iPhone hissi:** başparmak bölgesi, kaydırma, güvenli alanlar, karanlık/aydınlık tema.
+
+Çıktı:
+- `tasarim-B/ONERILER.md`: önerinin özeti, tasarım dili, ekran ekran değişiklikler, önem sırasıyla; her maddenin uygulama maliyeti (küçük / orta / büyük) ve sonunda "Onay? evet / hayır".
+- Görsel çizimler (`tasarim-B/oneri-*.html`, 390×844 iPhone çerçevesinde, gerçek resimlerle: `gorseller/k/<kimlik>.jpg`) ve bunların ekran görüntüleri (`tasarim-B/oneri-*.jpg`), Emre telefondan baksın diye.
+
+Commit'le, push'la, Emre'ye kısaca özetle; **onay gelmeden Aşama 2'ye geçme**.
 
 ## Aşama 2 · Uygulama
 
-`DUZEN.md` 7. bölümdeki iş sırasıyla, onaylanan önerilerle birlikte. Önerilen sıra:
+Onaylanan tasarıma göre. Tasarım B'ye yakın kalırsa önerilen sıra:
 
 1. **Bugün yürüyüşü:** `deneme/yuruyus.html`'deki davranışı `js/ekranlar/bugun.js` içine taşı (ayrı bir modül olabilir: `js/yuruyus.js`). Veri `data/yuruyus.json`; görseller `js/gorsel.js`'deki mevcut adres mantığıyla (R2: `b/` 1280'lik, `d/` en büyük; `buyuk` alanı varsa `y/<id>.jpg` ve `y/<id>-1280.jpg`). `sw.js`'de yeni dosyaları kabuğa / isteğe bağlı listeye ekle.
 2. **Günün ressamı** seçimini 145 sanatçıyla sınırla (`js/gunun.js` ve ilgili yerler).
@@ -58,7 +75,7 @@ Emre senden ayrıca tasarım önerisi istiyor: "sonuçta çok gelişmiş bir mod
 
 Her adım ayrı commit; mümkünse her büyük adımda Emre'ye Vercel önizlemesinden denetebileceği bir ara durum sun (aşağıya bak).
 
-## Teknik kurallar (kesin)
+## Teknik kurallar (kesin; uygulamanın çalışması ve yayın bunlara bağlı)
 
 - **Framework yok:** düz HTML + CSS + ES modülleri, derleme adımı yok. React, Next.js, Tailwind, npm paketi ekleme.
 - `data-test="…"` özniteliklerini silme ya da adını değiştirme; öğe taşınırsa özniteliğiyle taşı. Testler (`tests/e2e`, 32 dosya) bunlara bağlı. Bir test gerçekten eski düzeni sınıyorsa testi yeni düzene **uyarla, silme ya da atlama**; ne değiştirdiğini commit mesajında yaz.
