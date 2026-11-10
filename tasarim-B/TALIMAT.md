@@ -6,10 +6,11 @@ Merhaba. Bu dosya seni işe hazırlamak için yazıldı; önce baştan sona oku,
 
 Sanat Atlası, Emre'nin iPhone'unda ana ekran uygulaması olarak kullandığı, Türkçe bir sanat tarihi çalışma uygulaması (PWA). Çok özelliği var ama tasarım yüzünden çoğu gizli kalıyor.
 
-**Emre'nin isteği: tasarımda her şeyi değiştirebilirsin.** Yalnız iki şart var:
+**Emre'nin isteği: tasarımda her şeyi değiştirebilirsin.** Yalnız üç şart var:
 
 1. **Ana ekranda günün sanatçısının resmi olsun.**
 2. **Uygulama premium hissettirsin:** özenli, sakin, pahalı bir müze uygulaması gibi. Tipografi, boşluk, hareket, geçişler, dokunuş hissi, ayrıntılar.
+3. **Animasyonlar bol olsun:** ekran geçişleri, açılışlar, kartların gelişi, dokunuşa verilen tepkiler, sayıların ve ilerlemenin canlanması. Akıcı ve zarif olsun, ucuz ya da yorucu değil; iPhone'da takılmadan çalışsın (transform ve opacity, `requestAnimationFrame`). Ayarlar'daki "Hareket" seçeneğine (Tam / Sade / Kapalı) ve sistemin hareketi azalt ayarına uysun.
 
 Aşağıdaki Tasarım B (`DUZEN.md`) ve yürüyüş prototipi bir başlangıç noktası, zorunlu değil. Daha iyisini önerebilir, tamamen farklı bir düzen kurabilirsin. Ama bunlar Emre'nin şimdiye kadar beğendiği şeyler; bir şeyi atacaksan neden daha iyi olduğunu söyle.
 
@@ -40,7 +41,7 @@ Aşağıdaki Tasarım B (`DUZEN.md`) ve yürüyüş prototipi bir başlangıç n
 - **Aşağı kaydırınca resmin içinde yürüyüş** (`deneme/yuruyus.html`): kamera aynı resmin içinde ayrıntıdan ayrıntıya kayar ve yakınlaşır, yazılar resmin üstünde yarı saydam kartlarda. Emre özellikle şunları istedi: siyah boşluk olmasın, sayfa kopuk değil tek bir bütün olsun; geçişler yavaş ve yumuşak; kartlarda "Ayrıntı 1/6" gibi etiketler yok; ipucu yazı değil küçük bir ok; kart ayrıntıyı kapatmasın. En sonda "Hayatı" (resim bulanıklaşır, biyografi üstünde akar).
 - **Sekmeler:** 5 sekme düşünüldü (Bugün, Yolculuk, Galeri, Başyapıt, Çalış) ve sağ üstte "Ben". Emre "illaki 4 olacak diye bir şey yok" dedi; sayı ve adlar senin önerin.
 - **Günün ressamı:** `data/yuruyus.json`'da kaydı olan 145 sanatçıdan biri; günün eseri o sanatçının yürüyüş eseri. 10 sanatçı (Arp, Man Ray, Bacon, Dalí, Magritte, Ernst, Miró, Duchamp, Höch, Nolde) günün ressamı olmaz ama uygulamada kalır. Emre'nin elle ortaladığı odaklar (`data/gorsel_odak_elle.json`) açılış karesinde kullanılır.
-- Yolculuk haritası çizimleri Emre'nin çok sevdiği bir şey; atma.
+- **Yolculuk haritası kalacak.** Haritanın kendisi (çizimler, patika, gezginler) Emre'nin çok sevdiği bir şey. Ama haritanın içindeki **seviye tasarımlarını** (durakların görünümü, bölüm/seviye pencereleri, tanıtım, Kolay/Orta seviyeleri, ilerleme gösterimi, bölüm geçişleri) değiştirebilirsin; bunlar için de öneri bekleniyor.
 
 ## Dokunulmayacaklar (içerik ve öğrenme)
 
@@ -54,6 +55,8 @@ Emre senden bir tasarımcı gibi düşünmeni istiyor: "sonuçta çok gelişmiş
 
 - **Bütünlüklü bir tasarım dili öner:** tipografi ölçeği, boşluk sistemi, renk ve ışık, hareket ve geçiş ilkeleri, ikonlar, dokunuş geri bildirimi. "Premium" ne demek, bu uygulamada nasıl görünecek?
 - **Bilgi mimarisi:** Hangi özellik nerede, ne kadar görünür? Gizli kalan değerli özellikler (rehberli inceleme, hikâyeler, karşılaştır, sesli telaffuz, koleksiyon, konu turu, zaman çizelgesi, harita) nasıl ortaya çıkar? Sekme sayısı ve adları.
+- **Hareket ve animasyon:** Hangi anlarda ne tür animasyon (geçişler, açılış, cevap anı, seviye atlama, rozet kazanma, harita yürüyüşü)? Birkaç örneği çizimlerde göster.
+- **Harita seviyeleri:** Haritadaki bölüm ve seviye deneyimini nasıl daha oyunsu ve ödüllendirici yaparsın?
 - **Ana ekran ve yürüyüş:** Açılış, yürüyüş, yürüyüşün sonu, günün işi (bugünkü tur) nerede?
 - **Ekran ekran:** Her ana ekranın ilk görünen alanı ne göstermeli?
 - **iPhone hissi:** başparmak bölgesi, kaydırma, güvenli alanlar, karanlık/aydınlık tema.
