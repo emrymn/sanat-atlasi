@@ -1861,3 +1861,10 @@ Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişikli
 - **Okuma yazısı:** 21 px ve altındaki bütün Bodoni metinler (66 kural) Newsreader'a geçti; Bodoni yalnız başlıklarda ve büyük sayılarda. Kenar boşluğu 22 → 24 px.
 - **Pirinç** (`--pirinc`; Gündüz'de koyusu): etkin sekme ve rozet. Düğmeler ve ilerleme çizgileri, o ekranlar yeniden çizildikçe (soru, harita, Çalış, Galeri) pirince geçecek; tablodan gelen renk arka plan ışığında kalıyor. 325 yerde kullanılan `--vurgu` tek seferde değiştirilmedi (kırılma riski).
 - Testler: sekme sayısı 5 → 4 (`harita.spec`), "başka sekmeden dönünce" testi Defter yerine Çalış sekmesini kullanır, başlık adları; `cilalama.spec` İş 71 testi çubuğun yerini açılış animasyonu bittikten sonra ölçer (yarı yarıya kırılıyordu: ölçüm animasyonun ortasına denk geliyordu).
+
+### Grup 7 · Soru ve cevap
+
+- Öğrenme mantığına ve soru türlerine dokunulmadı; işaretleme ve `data-test`'ler aynı. Eklenenler: arkada eserin bulanık ışığı (`.soru-isik`, 400'lük kopya), parça parça ilerleme çizgisi (tur 24 karttan uzunsa eski tek çizgi), cevap yaprağında **Leitner satırı** (`kutuSatiri`: altı nokta, "N. kutu · X gün sonra tekrar"; yanlışta "Baştan · bu turda yine gelecek").
+- Son nokta yalnız kutu bu cevapla gerçekten ilerlediyse canlanır (vadesi gelmemiş kartta doğru cevap kutuyu ilerletmez; o zaman yazı gerçek tarihi söyler).
+- Şıklar 72 px, harf etiketleri (A/B/C/D) gizlendi; ana düğme pirinç ve 58 px.
+- Test: `tests/e2e/tasarim_b.spec.js`.

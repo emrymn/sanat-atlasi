@@ -1,7 +1,7 @@
 // Pekiştir: menü, oturum kurma (dönem, karışık, konu turu Ö6, hatalarım Ö5), kart çizimi ve cevaplar, yarım kalan oturum, tur özeti ve dönem seviyeleri.
 import { kacis, yillarYaz } from '../yardimci.js';
 import { akimDurumlari } from '../kilit.js';
-import { cevapla, GUNLUK_YENI_SINIRI } from '../leitner.js';
+import { cevapla, GUNLUK_YENI_SINIRI, ARALIKLAR, gunEkle } from '../leitner.js';
 import { sanatciSecenekleri, akimSecenekleri } from '../celdirici.js';
 import { kartlariSec, Oturum, kategori, turAltYazisi } from '../oturum.js';
 import { sanatciEserleri, eserSec, pekistirmeHavuzu, eserBaslik } from '../eserler.js';
@@ -745,6 +745,26 @@ export async function devamEt() {
 }
 
 // A–D harfli seçenek; cevaptan sonra doğru yeşil ✓, seçilen yanlış kırmızı ×, kalanlar soluk
+// İş 171: turun ilerlemesi kart kart (parça parça çizgi): bitenler pirinç, şimdiki açık renk. Uzun turda (24'ten çok
+// kart) parçalar seçilemeyecek kadar incelir; o zaman eski tek çizgi.
+function turCubugu(ot, yuzde, oncekiYuzde) {
+  if (ot.toplam > 24) return `<div class="ince-cubuk" aria-hidden="true"><i style="width:${yuzde}%;--onceki:${oncekiYuzde}%"></i></div>`;
+  const parca = (i) => `<span class="${i < ot.konum ? 'tamam' : i === ot.konum ? 'simdi' : ''}"></span>`;
+  return `<div class="ince-cubuk parcali" aria-hidden="true">${Array.from({ length: ot.toplam }, (_, i) => parca(i)).join('')}</div>`;
+}
+
+// İş 171: cevaptan sonra Leitner kutusu altı nokta: kazanılan kutu dolar; yanında bir sonraki tekrarın ne zaman olduğu
+function kutuSatiri(sk) {
+  if (!sk) return '';
+  const kutu = Math.max(0, Math.min(ARALIKLAR.length - 1, sk.kutu || 0));
+  // kutu bu cevapla ilerlediyse (vadesi gelmemiş kartta doğru cevap ilerletmez) son nokta "pıt" diye dolar
+  const ilerledi = kutu > 0 && sk.sonraki === gunEkle(bugun(), ARALIKLAR[kutu]);
+  const noktalar = ARALIKLAR.map((_, i) => `<i class="${i < kutu ? 'dolu' : ''}${ilerledi && i === kutu - 1 ? ' yeni' : ''}"></i>`).join('');
+  const gun = sk.sonraki ? Math.round((Date.parse(sk.sonraki) - Date.parse(bugun())) / 864e5) : 0;
+  const yazi = kutu > 0 ? `${kutu}. kutu · ${gun > 0 ? `${gun} gün sonra tekrar` : 'bugün tekrar'}` : 'Baştan · bu turda yine gelecek';
+  return `<div class="kutu-satir" data-test="kutu-satir"><span class="kutu-noktalar" role="img" aria-label="Tekrar kutusu: ${ARALIKLAR.length} kutudan ${kutu}.">${noktalar}</span><span>${yazi}</span></div>`;
+}
+
 function secenekDugmesi(deger, ad, i, cevap, dogruDeger, tur) {
   let sinif = 'secenek';
   let isaret = '';
@@ -1241,6 +1261,7 @@ function kartGoster(o) {
     yaprak = `<section class="alt-yaprak" aria-live="polite">
       <p class="sonuc" data-test="sonuc" data-dogru="${ikinci || !karisik ? tumDogru : dogru}">${ikon(dogru ? 'dogru' : 'yanlis', 18, 2)}<b>${sonuc[0]}</b>${sonuc[1] ? `<span class="sonuc-not">${kacis(sonuc[1])}</span>` : ''}</p>
       <p class="bilgi"><b>${kacis(bilgi[0])}</b><i>${kacis(bilgi[1])}</i></p>
+      ${kutuSatiri(skor(k.id)[ikinci ? 'akim' : 'sanatci'])}
       ${seviyeSatiri(k)}
       <div data-yaprak-palet>${paletHtml(k.palet)}</div>
       ${not ? `<div class="ipucu-kutu" data-ipucu><p class="ipucu">${kacis(not)}</p></div>` : ''}
@@ -1263,9 +1284,10 @@ function kartGoster(o) {
       <span class="etiket">${kacis(kipKisa(o.kip, o.akim))}</span>
       <span data-test="sayac">${sira} / ${ot.toplam}</span>
     </header>
-    <div class="ince-cubuk" aria-hidden="true"><i style="width:${yuzde}%;--onceki:${oncekiYuzde}%"></i></div>
+    ${turCubugu(ot, yuzde, oncekiYuzde)}
     ${seviyeHaplari(o)}
     <div class="soru-sahne">
+      <span class="soru-isik" aria-hidden="true" style="background-image:url('${kacis(gorselUrl(g, 400))}')"></span>
       <span class="hale-nefes" aria-hidden="true"></span>
       <button class="soru-resim" type="button" data-buyut aria-label="Görseli büyüt">
         <img decoding="async" alt="Sorulan eser" src="${kacis(gorselUrl(g, 800))}" data-test="soru-resim">
