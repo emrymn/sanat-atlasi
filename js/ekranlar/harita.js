@@ -59,6 +59,35 @@ const YILDIZ = '<i class="yildiz-sekil" aria-hidden="true"></i>';
 const yildizHtml = (n) =>
   `<span class="harita-yildiz" role="img" aria-label="${n} / 3 yıldız">${[0, 1, 2].map((i) => `<i class="yildiz-sekil${i < n ? ' dolu' : ''}" style="--i:${i}"></i>`).join('')}</span>`;
 
+// İş 171 (Tasarım B): durağın sembolü aynen kalır; çevresine madalyon kurulur: ilerleme halkası (yıldız / 3), altında
+// üç yıldız, sıradaki durakta nabız, kilitli durakta küçük kilit. Aynı madalyon durak penceresinde ve seviye sonunda.
+const yildizlar = (n, sinif = 'durak-yildizlar') =>
+  `<span class="${sinif}">${[0, 1, 2].map((i) => `<i class="yildiz-sekil${i < n ? ' dolu' : ''}" style="--i:${i}"></i>`).join('')}</span>`;
+export function madalyonHtml(x, nabiz = false) {
+  const oran = x.acik ? Math.round((x.yildiz / 3) * 100) : 0;
+  return `<span class="durak-halka${x.acik && x.yildiz >= 3 ? ' tamam' : ''}" aria-hidden="true"><svg viewBox="0 0 64 64"><circle class="iz" cx="32" cy="32" r="29"/><circle class="dolu" cx="32" cy="32" r="29" pathLength="100" style="--oran:${oran}"/></svg>${
+    nabiz ? '<i class="durak-nabiz"></i>' : ''
+  }${x.acik ? yildizlar(x.yildiz) : `<span class="durak-kilit">${ikon('kilit', 12, 1.8)}</span>`}</span>`;
+}
+// Sıradaki iş: açık olup geçilmemiş ilk seviye
+export function siradakiSeviye(x) {
+  return x.acik ? BOLUM_SEVIYELER.find((sv) => x.seviyeAcik[sv] && (x.kayit[sv] ?? 0) < BOLUM_GECME) || null : null;
+}
+function siradakiIs(x) {
+  const sv = siradakiSeviye(x);
+  return sv ? `${SEVIYE_AD[sv]} · ${BOLUM_SORU[sv]} soru seni bekliyor` : 'Üç yıldız tamam';
+}
+// Durağın sembolü harita ekranının dışında da (seviye sonu): { src, x } ya da null
+export async function durakSembolu(id) {
+  const veri = await haritaVerisi();
+  const harita = haritaKur(durumlar().durumlar, veri);
+  for (const b of harita.bolgeler) {
+    const x = b.duraklar.find((y) => y.id === id);
+    if (x) return { src: nesneAdresi(b.id, x.sembolNo, d.haritaVakti || vakit()), x };
+  }
+  return null;
+}
+
 function durakHtml(b, x, h, tur, simdiki, yeni) {
   const n = x.nesne;
   const ustY = (b.ust + x.y) * H; // tabanın haritadaki yüksekliği (pt, harita yüksekliği h*H)
@@ -69,7 +98,9 @@ function durakHtml(b, x, h, tur, simdiki, yeni) {
   const etiketi = `${bolumAdi(x)}${x.acik ? `, ${x.yildiz} yıldız` : ', kilitli'}${x.id === simdiki ? ', buradasın' : ''}`;
   let parca = `<button type="button" class="harita-durak ${durum}${yeni ? ' yeni' : ''}" data-test="harita-durak" data-bolum="${x.id}" data-donem="${b.id}" data-acik="${x.acik}"
       style="left:${sol.toFixed(3)}%;top:${ustYuzde.toFixed(3)}%;width:${((n.w / W) * 100).toFixed(3)}%"
-      aria-label="${kacis(etiketi)}"><img alt="" decoding="async" src="${nesneAdresi(b.id, x.sembolNo, tur)}"></button>`;
+      aria-label="${kacis(etiketi)}"><img alt="" decoding="async" src="${nesneAdresi(b.id, x.sembolNo, tur)}">${madalyonHtml(x, x.id === simdiki)}${
+        x.id === simdiki ? `<span class="durak-etiket${x.x > 0.6 ? ' sag' : x.x < 0.4 ? ' sol' : ''}${toplamY - ustY < 190 ? ' ustte' : ''}" aria-hidden="true"><b>${kacis(bolumAdi(x))}</b><small>${kacis(siradakiIs(x))}</small></span>` : ''
+      }</button>`;
   const taban = `left:${((x.x * W) / W) * 100}%;top:${((ustY + 2) / toplamY) * 100}%`;
   if (x.acik) parca = `<span class="harita-isik" aria-hidden="true" style="${taban};animation-delay:${((x.no * 0.37) % 2.8).toFixed(2)}s"></span>` + parca;
   if (x.id === simdiki) {
@@ -590,6 +621,15 @@ function durakPenceresi(id) {
   if (!x) return '';
   const bolge = bolgeBul(x.sira);
   const sanatcilar = x.sanatcilar.map((s) => d.harita.get(s)).filter(Boolean);
+  const siradaki = siradakiSeviye(x);
+  // pencerede de durağın kendi sembolü (haritadakiyle aynı çizim)
+  const sb = h.harita && h.harita.bolgeler.find((b) => b.duraklar.some((y) => y.id === id));
+  const sd = sb && sb.duraklar.find((y) => y.id === id);
+  const sembolSrc = sd ? nesneAdresi(sb.id, sd.sembolNo, h.tur) : '';
+  const isaret = (durum) => `<i class="hs-isaret ${durum}" aria-hidden="true">${durum === 'gecti' ? ikon('dogru', 18, 2.2) : durum === 'kapali' ? ikon('kilit', 16, 1.7) : ''}</i>`;
+  const tanis = x.acik
+    ? `<a class="harita-seviye tanis" href="#/pekistir/bolum/${x.id}/tanitim" data-test="harita-tanitim">${isaret('tanis')}<b>Tanış</b><span>${sanatcilar.length} sanatçı · eserleriyle</span>${ikon('ileri', 18, 1.5)}</a>`
+    : '';
   const satirlar = BOLUM_SEVIYELER.map((sv) => {
     const acik = x.seviyeAcik[sv];
     const en = x.kayit[sv];
@@ -598,22 +638,24 @@ function durakPenceresi(id) {
     const ad = `${SEVIYE_AD[sv]}${sv === 'zor' ? ' · isteğe bağlı' : ''}`;
     const cizgi = `<span class="harita-seviye-cizgi" aria-hidden="true" style="--gec:${Math.round(BOLUM_GECME * 100)}%"><i style="--o:${Math.round((en ?? 0) * 100)}%"></i></span>`;
     return acik
-      ? `<a class="harita-seviye${gecti ? ' gecti' : ''}" href="#/pekistir/bolum/${x.id}/${sv}" data-test="harita-seviye" data-seviye="${sv}">
-          <b>${ad}</b><span>${bilgi}${gecti ? ' · geçti' : ''}</span>${gecti ? YILDIZ.replace('yildiz-sekil', 'yildiz-sekil dolu') : ikon('ileri', 18, 1.5)}${cizgi}</a>`
-      : `<span class="harita-seviye kapali" data-test="harita-seviye" data-seviye="${sv}"><b>${ad}</b><span>${sv === 'orta' ? 'Kolay’ı geçince' : 'Orta’yı geçince'}</span>${ikon('kilit', 16, 1.7)}</span>`;
+      ? `<a class="harita-seviye${gecti ? ' gecti' : ''}${sv === siradaki ? ' siradaki' : ''}" href="#/pekistir/bolum/${x.id}/${sv}" data-test="harita-seviye" data-seviye="${sv}">
+          ${isaret(gecti ? 'gecti' : sv === siradaki ? 'siradaki' : 'acik')}<b>${ad}</b><span>${bilgi}${gecti ? ' · geçti' : ''}</span>${gecti ? YILDIZ.replace('yildiz-sekil', 'yildiz-sekil dolu') : ikon('ileri', 18, 1.5)}${cizgi}</a>`
+      : `<span class="harita-seviye kapali" data-test="harita-seviye" data-seviye="${sv}">${isaret('kapali')}<b>${ad}</b><span>${sv === 'orta' ? 'Kolay’ı geçince' : 'Orta’yı geçince'}</span>${ikon('kilit', 16, 1.7)}</span>`;
   }).join('');
   const govde = x.acik
     ? `${yildizHtml(x.yildiz)}
       ${x.no === 1 && akimOzeti(x.akim) ? `<p class="harita-pencere-akim">${kacis(akimOzeti(x.akim))}</p>` : ''}
-      <div class="harita-seviyeler">${satirlar}</div>
-      <p class="harita-pencere-alt">Geçmek için %${Math.round(BOLUM_GECME * 100)} doğru</p>`
+      <div class="harita-seviyeler merdiven">${tanis}${satirlar}</div>
+      <p class="harita-pencere-alt">Geçmek için %${Math.round(BOLUM_GECME * 100)} doğru · her seviye bir yıldız</p>
+      ${siradaki ? `<a class="hp-basla" href="#/pekistir/bolum/${x.id}/${siradaki}" data-test="harita-basla">${SEVIYE_AD[siradaki]}’${siradaki === 'orta' ? 'ya' : 'a'} başla${ikon('ileri', 20, 1.9)}</a>` : ''}`
     : `<p class="harita-pencere-durum" data-test="harita-kilit">${kacis(kilitMetni(x, bolumler()))}</p>`;
   return `<div class="harita-pencere-ic${x.acik ? '' : ' kilitli'}" role="dialog" aria-label="${kacis(bolumAdi(x))}">
       ${sanatcilar.length ? `<span class="hp-kapak" aria-hidden="true" data-kapak="${kacis(sanatcilar.map((s) => s.id).join(','))}"></span>` : ''}
       <button class="harita-pencere-kapat" type="button" data-harita-kapat aria-label="Kapat">${ikon('kapat', 20, 1.7)}</button>
-      <header class="hp-baslik">
-        <span class="etiket">${kacis(bolge.ad)}</span>
-        <h2>${kacis(bolumAdi(x))}</h2>
+      <header class="hp-baslik hp-madalyonlu">
+        <span class="hp-madalyon">${sembolSrc ? `<img alt="" decoding="async" src="${sembolSrc}">` : ''}${madalyonHtml(x)}</span>
+        <span class="hp-baslik-yazi"><span class="etiket">${kacis(bolge.ad)}</span>
+        <h2>${kacis(bolumAdi(x))}</h2></span>
       </header>
       ${govde}
       <div class="harita-pencere-sanatcilar">${sanatcilar
@@ -623,8 +665,6 @@ function durakPenceresi(id) {
         })
         .join('')}</div>
       <div class="harita-pencere-dugmeler"><a class="dugme" href="#/akim/${encodeURIComponent(x.akim)}" data-test="harita-akim">Akım sayfası</a>${
-        x.acik ? `<a class="dugme" href="#/pekistir/bolum/${x.id}/tanitim" data-test="harita-tanitim">Tanıtım</a>` : ''
-      }${
         x.acik && x.seviyeAcik.orta ? `<a class="dugme" href="#/pekistir/bolum/${x.id}/tanitim-orta" data-test="harita-tanitim-orta">Orta tanıtımı</a>` : ''
       }</div>
     </div>`;

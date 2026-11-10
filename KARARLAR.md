@@ -1868,3 +1868,12 @@ Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişikli
 - Son nokta yalnız kutu bu cevapla gerçekten ilerlediyse canlanır (vadesi gelmemiş kartta doğru cevap kutuyu ilerletmez; o zaman yazı gerçek tarihi söyler).
 - Şıklar 72 px, harf etiketleri (A/B/C/D) gizlendi; ana düğme pirinç ve 58 px.
 - Test: `tests/e2e/tasarim_b.spec.js`.
+
+### Grup 8–10 · Harita, durak penceresi, seviye sonu
+
+- **Semboller aynen** (Emre'nin şartı): durakların çizimleri ve dosyaları değişmedi. Madalyon sembolün çevresine, arkasına kuruldu (`madalyonHtml`, `.durak-halka`): pirinç ilerleme halkası (kazanılan yıldız / 3), altında üç yıldız, sıradaki durakta nabız, kilitli durakta kesik halka ve küçük kilit.
+- **Sıradaki durağın etiketi:** bölümün adı ve sıradaki iş ("Kolay · 8 soru seni bekliyor"; üç yıldızsa "Üç yıldız tamam"). Durak haritanın en altındaysa etiket sembolün üstüne geçer (sekme çubuğunun altında kalıyordu); kenara yakın duraklarda içe yaslanır.
+- **Durak penceresi:** başlıkta aynı sembol madalyonda; seviyeler merdiven: Tanış → Kolay → Orta → Zor (geçilen pirinç tikli, sıradaki vurgulu, kilitli olan neden kilitli olduğunu söyler). "Tanıtım" düğmesi merdivenin ilk basamağı oldu (`data-test="harita-tanitim"` onunla taşındı). Altta tek büyük düğme: sıradaki seviyeye başla (`data-test="harita-basla"`).
+- **Seviye sonu:** sergi duvarı, yüzde ve salon yolu aynen duruyor; araya durağın sembolü madalyonda eklendi: halka eski yıldızdan yenisine çizilir, sembol "basılır", yeni yıldız sırayla gelir. Roma rakamlı mühür önerisi sembolle değiştirildi.
+- **Gezginin kendiliğinden yürümesi eklenmedi:** İş 90/92'de Emre "sürekli yürümesin, bir seviyeye bastığında yürüsün" demişti; bu davranış korunuyor. Haritaya dönünce ilerleyen şey durağın halkası ve yıldızı.
+- Testler: `tasarim_b.spec.js` (madalyon, etiket, merdiven), `harita.spec.js`'e seviye sonu madalyonu.

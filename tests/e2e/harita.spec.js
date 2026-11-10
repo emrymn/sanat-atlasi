@@ -139,6 +139,10 @@ test('bölüm: tanıtım, Kolay %75 ile geçilince Orta açılır; Orta geçilin
   const kolayEserleri = await tanit();
   await cevapla(8, kolayEserleri);
   await expect(page.locator('[data-test="bolum-ozet"]')).toHaveAttribute('data-gecti', 'true');
+  // İş 171: seviye sonunda durağın kendi sembolü madalyonda, kazanılan yıldız kadar dolu
+  await expect(page.locator('[data-test="seviye-tamam"]')).toHaveAttribute('data-yildiz', /[123]/);
+  await expect(page.locator('[data-test="seviye-tamam"] .st-madalyon img[src*="sembol_"]')).toHaveCount(1);
+  await expect(page.locator('[data-test="seviye-tamam"] .st-yildizlar .yildiz-sekil.dolu').first()).toBeVisible();
   // İş 39: telefonu sağa çevirince sergi duvarındaki asılı tablolar ipinden sola salınır (jiroskop olayı elle;
   // dikey eksen etrafındaki dönüş standartta gamma'da, iOS'ta beta'da gelir: ikisine de yazılır)
   await expect(page.locator('.sergi-duvar .asi').first()).toBeVisible();

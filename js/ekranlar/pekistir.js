@@ -84,7 +84,7 @@ import {
   bolumEserleri,
 } from '../bolum.js';
 import { akrabaMi } from '../celdirici.js';
-import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
+import { bolumler as tumBolumler, durumlar as bolumDurumu, durakSembolu } from './harita.js';
 import { yonlendir } from './yonlendirme.js';
 import { sallanmaBaslat } from '../sallanma.js';
 import { dinleEkle } from '../kunye.js';
@@ -1504,6 +1504,7 @@ function bolumOzeti(o) {
           : ''
       }
       <div class="sonuc-alt" style="--gecikme:${0.5 + eserler.length * 0.12}s">
+        ${seviyeTamamHtml(r, sv, etiket)}
         <section class="skor" aria-label="Sonuç" style="--oran:${yuzde}%;--hedef:${hedefYuzde}%">
           <p class="skor-ust"><b>Senin gözün</b> · ${kacis(etiket)} · ${BOLUM_SV_AD[sv] || ''}</p>
           <p class="skor-yuzde"><i class="ad">%${yuzde}</i><span class="skor-durum">${r.gecti ? 'Geçti' : 'Az kaldı'}</span></p>
@@ -1528,9 +1529,42 @@ function bolumOzeti(o) {
     </div>
     ${r.yeniGecti ? yaldizYapraklari() : ''}`);
   yuzdeSayarakYaz(ekran.querySelector('.bolum-sonuc .ad'), yuzde);
+  seviyeTamamCanlandir(id, r);
   for (const el of ekran.querySelectorAll('[data-gecis]')) el.addEventListener('click', gecisiAk);
   // telefonu eğince asılı tablolar ipinden sallanır (İş 39; Ayarlar'daki hareket seçimine uyar)
   sallanmaBaslat(ekran.querySelector('[data-sergi-duvar]'), d.ilerleme.ayarlar.egim !== false);
+}
+
+// İş 171 (Tasarım B): seviye sonu. Durağın haritadaki sembolü madalyonda; halka kazanılan yıldıza kadar çizilir,
+// yeni yıldız(lar) sırayla gelir. Geçilemediyse halka olduğu yerde kalır, başlık "az kaldı".
+function seviyeTamamHtml(r, sv, etiket) {
+  const yildizlar = [0, 1, 2]
+    .map((i) => `<i class="yildiz-sekil${i < r.yildizSonra ? ' dolu' : ''}${i >= r.yildizOnce && i < r.yildizSonra ? ' yeni' : ''}" style="--i:${i}"></i>`)
+    .join('');
+  return `<section class="seviye-tamam${r.gecti ? ' gecti' : ''}" data-test="seviye-tamam" data-yildiz="${r.yildizSonra}" aria-label="${BOLUM_SV_AD[sv] || ''} seviye: ${r.gecti ? 'tamam' : 'az kaldı'}, ${r.yildizSonra} / 3 yıldız">
+      <span class="st-isik" aria-hidden="true"></span>
+      <span class="st-madalyon" aria-hidden="true" data-st-madalyon><svg viewBox="0 0 64 64"><circle class="iz" cx="32" cy="32" r="29"/><circle class="dolu" cx="32" cy="32" r="29" pathLength="100" style="--oran:${Math.round((r.yildizOnce / 3) * 100)}"/></svg></span>
+      <p class="etiket st-etiket">${kacis(BOLUM_SV_AD[sv] || '')} ${r.gecti ? 'seviye tamam' : '· az kaldı'}</p>
+      <h2 class="st-baslik">${kacis(etiket)}</h2>
+      <span class="st-yildizlar" aria-hidden="true">${yildizlar}</span>
+    </section>`;
+}
+function seviyeTamamCanlandir(id, r) {
+  const kutu = ekran.querySelector('[data-st-madalyon]');
+  if (!kutu) return;
+  const dolu = kutu.querySelector('.dolu');
+  // halka bir sonraki karede yeni oranına çizilir (CSS geçişi)
+  requestAnimationFrame(() => requestAnimationFrame(() => dolu.style.setProperty('--oran', String(Math.round((r.yildizSonra / 3) * 100)))));
+  durakSembolu(id)
+    .then((s) => {
+      if (!s || !kutu.isConnected) return;
+      const img = document.createElement('img');
+      img.alt = '';
+      img.decoding = 'async';
+      img.src = s.src;
+      kutu.append(img);
+    })
+    .catch(() => {});
 }
 
 function gecisiAk(e) {

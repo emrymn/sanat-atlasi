@@ -39,3 +39,38 @@ test('soru: parça parça ilerleme, şıklar başparmak bölgesinde ve en az 56 
   await expect(page.locator('[data-test="kutu-satir"]')).toContainText('Baştan');
   expect(await page.evaluate(() => document.scrollingElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
 });
+
+test('harita: sembol aynen kalır, çevresinde madalyon; sıradaki durakta nabız ve etiket, kilitlide kilit; pencerede seviye merdiveni', async ({ page }) => {
+  await page.goto('./#/harita');
+  const duraklar = page.locator('[data-test="harita-durak"]');
+  await expect(duraklar.first()).toBeVisible();
+  const n = await duraklar.count();
+  // her durakta sembolün kendisi (aynı çizim dosyası) ve çevresinde halka
+  await expect(page.locator('[data-test="harita-durak"] > img[src*="sembol_"]')).toHaveCount(n);
+  await expect(page.locator('[data-test="harita-durak"] .durak-halka')).toHaveCount(n);
+  const simdiki = page.locator('.harita-durak.simdiki');
+  await expect(simdiki.locator('.durak-nabiz')).toHaveCount(1);
+  await expect(simdiki.locator('.durak-yildizlar .yildiz-sekil')).toHaveCount(3);
+  await expect(simdiki.locator('.durak-etiket')).toContainText('Kolay · 8 soru seni bekliyor');
+  await expect(page.locator('.harita-durak.kilit .durak-kilit').first()).toBeAttached();
+  // etiket ekranın içinde ve sekme çubuğunun üstünde
+  const e = await simdiki.locator('.durak-etiket').boundingBox();
+  const cubuk = await page.locator('#sekmeler').boundingBox();
+  expect(e.x).toBeGreaterThanOrEqual(0);
+  expect(e.x + e.width).toBeLessThanOrEqual(390);
+  expect(e.y + e.height).toBeLessThanOrEqual(cubuk.y);
+  // pencere: başlıkta aynı sembol; Tanış → Kolay → Orta → Zor; altta sıradaki seviyeye götüren büyük düğme
+  await simdiki.click({ force: true });
+  const pencere = page.locator('.harita-pencere-ic');
+  await expect(pencere).toBeVisible();
+  await expect(pencere.locator('.hp-madalyon img[src*="sembol_"]')).toHaveCount(1);
+  const satirlar = pencere.locator('.harita-seviyeler.merdiven .harita-seviye');
+  await expect(satirlar).toHaveCount(4);
+  await expect(satirlar.nth(0)).toHaveAttribute('data-test', 'harita-tanitim');
+  await expect(satirlar.nth(1)).toHaveClass(/siradaki/);
+  await expect(satirlar.nth(2)).toHaveClass(/kapali/);
+  const basla = pencere.locator('[data-test="harita-basla"]');
+  await expect(basla).toContainText('Kolay’a başla');
+  expect((await basla.boundingBox()).height).toBeGreaterThanOrEqual(56);
+  await expect(basla).toHaveAttribute('href', /#\/pekistir\/bolum\/\d+-\d+\/kolay$/);
+});
