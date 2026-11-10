@@ -218,6 +218,21 @@ export function elleOdakKaynagi(g) {
   if (gecerliOdak(cihazdakiElleOdaklar()[ad])) return 'cihaz';
   return gecerliOdak(elleDosya[ad]) ? 'depo' : null;
 }
+// İş 171: yerel adı bilinen görselin odağı ve R2 kopyaları (Bugün yürüyüşü görseli data/yuruyus.json'daki adla bulur)
+export const adlaOdak = (ad) => odakAdla(ad);
+// buyuk: kayıttaki ayrı kopya yolu (y/<id>.jpg) varsa küçüğü -1280 ekli, büyüğü kendisi; yoksa b/ ve (varsa) d/
+export function yuruyusAdresleri(ad, buyuk) {
+  if (!uzak.adres) return { kucuk: `gorseller/k/${ad}.jpg`, buyuk: '' };
+  if (buyuk) return { kucuk: `${uzak.adres}/${buyuk.replace(/\.jpg$/, '-1280.jpg')}`, buyuk: `${uzak.adres}/${buyuk}` };
+  return { kucuk: uzak.buyuk ? buyukYolu(ad) : `gorseller/k/${ad}.jpg`, buyuk: uzak.devasa.has(ad) ? devasaYolu(ad) : '' };
+}
+function odakAdla(ad) {
+  if (!ad) return null;
+  const elle = cihazdakiElleOdaklar()[ad] || elleDosya[ad];
+  if (gecerliOdak(elle)) return elle;
+  const o = odaklar && odaklar[ad];
+  return gecerliOdak(o) ? o : null;
+}
 // Ham odak [x, y] (yüzde) ya da null
 export function gorselOdakNoktasi(g) {
   const ad = gorselAdi(g);

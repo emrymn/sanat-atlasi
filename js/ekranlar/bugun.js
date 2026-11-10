@@ -3,7 +3,9 @@ import { kacis } from '../yardimci.js';
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { turOzeti, turAltYazisi } from '../oturum.js';
 import { sanatciEserleri, eserBaslik } from '../eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, gorselOdakNoktasi, kaplamaKaymasi } from '../gorsel.js';
+import { gorselUrl, gorselYedek, secilenGorsel, gorselOdakNoktasi, kaplamaKaymasi, adlaOdak, yuruyusAdresleri } from '../gorsel.js';
+import { yuruyusAdimlari, yuruyusBaslat } from '../yuruyus.js';
+import { hareketAz } from '../gecis.js';
 import { baskaSanatci } from '../gunun.js';
 import { gunlukGuncelle, yedekMetni, yedekHatirlatmasi } from '../depo.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
@@ -48,7 +50,7 @@ import { SURUM } from '../surum.js';
 import { gosterilecekler, yenilikYazisi } from '../yenilikler.js';
 import { egimBaslat } from '../egim.js';
 import { imzaGoster } from '../imza.js';
-import { kunyeGoster } from '../kunye.js';
+import { kunyeGoster, dinleEkle } from '../kunye.js';
 
 // Turda kaç kart gelecek (D1): oturumKur'un seçeceği kartların sayısı ve türleri; her yerde bu sayı gösterilir.
 // Eser listesi henüz bilinmeyen (önbellekte ve kursta eseri olmayan) sanatçılar sayılır; görselsiz çıkarlarsa tur biraz kısalır.
@@ -81,27 +83,69 @@ function turKarti(tur, g) {
     </a>`;
 }
 
-// Bugün (Tasarım B · 4.1, C1): tek ekran. Tablo kenardan kenara; üstte tarih ve Ben, altta sanatçının adı, eserin adı
-// ve yılı, sonra tek kelimelik üç düğme. Hikâyesi / İncele, eserin kaydı yoksa gizli kalır. Aşağı kaydırma yok.
-function sahneHtml(gs, tekrar) {
-  const notlar = `${yenilikHtml()}${yedekHatirlatHtml()}`;
-  return `<section class="sahne bugun-tek" data-test="gunun-kart">
-      <div class="bugun-kahraman sahne-yapiskan" data-gunun-gorsel>
-        <span class="egim-isik" aria-hidden="true"></span>
-        <button class="bugun-buyut" type="button" data-bugun-buyut aria-label="Resmi tam ekran aç" disabled></button>
-        <div class="bugun-ust"><span class="etiket bugun-tarih" data-test="tekrar">${tekrar}</span><a class="bugun-ben" href="#/ilerleme" aria-label="Ben: ilerleme ve ayarlar">Ben</a></div>
-        <div class="bugun-notlar"><button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 18, 1.6)}Hareketi aç</button>${notlar}</div>
+// Bugün (Tasarım B · 4.1, C1): tablo kenardan kenara; üstte tarih ve Ben, altta sanatçının adı, eserin adı ve yılı,
+// sonra tek kelimelik üç düğme. Hikâyesi / İncele, eserin kaydı yoksa gizli kalır.
+// İş 171: sanatçının yürüyüşü varsa (kayit) sayfa aşağı kayar: resmin içinde yürüyüş, sonra Hayatı ve günün işi.
+// Yürüyüşü olmayan sanatçıda (dosya yoksa) eskisi gibi tek ekran, kaydırma yok.
+const ustHtml = (tekrar) =>
+  `<div class="bugun-ust"><span class="etiket bugun-tarih" data-test="tekrar">${tekrar}</span><a class="bugun-ben" href="#/ilerleme" aria-label="Ben: ilerleme ve ayarlar">Ben</a></div>`;
+function kapakHtml(gs, kayit) {
+  const eser = kayit ? [kayit.eser, kayit.yil].filter(Boolean).join(' · ') : '';
+  return `<button class="bugun-buyut" type="button" data-bugun-buyut aria-label="Resmi tam ekran aç" disabled></button>
+        <div class="bugun-notlar"><button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 18, 1.6)}Hareketi aç</button>${yenilikHtml()}${yedekHatirlatHtml()}</div>
         <div class="bugun-alt">
           <a class="sahne-isim isim-blok" href="#/gunun">${isimHtml(gs)}</a>
-          <p class="bugun-eser" data-bugun-eser hidden></p>
+          <p class="bugun-eser" data-bugun-eser${eser ? '' : ' hidden'}>${kacis(eser)}</p>
           <div class="bugun-dugmeler">
             <button class="bugun-dugme" type="button" data-bugun-hikaye hidden>${ikon('kitap', 16, 1.6)}<span>Hikâyesi</span></button>
             <button class="bugun-dugme" type="button" data-bugun-incele hidden>${ikon('ara', 16, 1.6)}<span>İncele</span></button>
             <a class="bugun-dugme" href="#/gunun">${ikon('gunes', 16, 1.6)}<span>${kacis(bilinenAd(gs.ad, d.kisaAdlar[gs.id]))}</span></a>
           </div>
-        </div>
+        </div>`;
+}
+function sahneHtml(gs, tekrar, kayit) {
+  if (!kayit)
+    return `<section class="sahne bugun-tek" data-test="gunun-kart">
+      <div class="bugun-kahraman sahne-yapiskan" data-gunun-gorsel>
+        <span class="egim-isik" aria-hidden="true"></span>
+        ${ustHtml(tekrar)}
+        ${kapakHtml(gs, null)}
       </div>
     </section>`;
+  const kunyeYazi = [gs.ad, kayit.yil, gs.akim].filter(Boolean).join(' · ');
+  return `<section class="sahne bugun-tek bugun-yuruyus" data-test="gunun-kart">
+      <div class="bugun-kahraman sahne-yapiskan yur-sahne" data-gunun-gorsel><span class="egim-isik" aria-hidden="true"></span></div>
+      <div class="yur-bulanik" aria-hidden="true"></div>
+      ${ustHtml(tekrar)}
+      <div class="yur-noktalar" aria-hidden="true"></div>
+      <div class="yur-akis" data-yur-akis>
+        <section class="yur-adim yur-kapak" data-test="yur-adim">${kapakHtml(gs, kayit)}<span class="yur-ok" aria-hidden="true">${ikon('asagi', 22, 1.5)}</span></section>
+        ${yuruyusAdimlari({ kayit, kunye: kunyeYazi, taninma: taninma(gs) })}
+        <section class="yur-hayat" data-test="yur-hayat">
+          <div data-yur-bio></div>
+          ${yuruyusSonu(gs)}
+        </section>
+      </div>
+    </section>`;
+}
+
+// Yürüyüşün sonu = günün işi: sayfa boşlukta bitmez; bugünkü tur, sanatçının sayfası, eserleri ve adının okunuşu
+function yuruyusSonu(gs) {
+  const tur = turBilgisi('karisik');
+  const dk = Math.max(1, Math.round((tur.toplam * 20) / 60));
+  const turKart = tur.toplam
+    ? `<a class="yur-tur" href="#/pekistir/karisik" data-test="yur-tur"><b class="yur-tur-sayi" data-test="tur-sayi">${tur.toplam}</b><span class="yur-tur-yazi"><span class="yur-tur-baslik">Bugünkü tur</span><small data-test="tur-alt">${tur.toplam} kart · yaklaşık ${dk} dk</small></span>${ikon('ileri', 22, 1.7)}</a>`
+    : `<a class="yur-tur bitti" href="#/pekistir" data-test="yur-tur"><span class="yur-tur-yazi"><span class="yur-tur-baslik">Bugünkü kartlar bitti</span><small>Başka turlar Çalış'ta</small></span>${ikon('ileri', 22, 1.7)}</a>`;
+  return `<div class="yur-son" data-test="yur-son">
+      <p class="etiket yur-son-kunye">${kunye(gs, { bag: false, konuYok: true })}</p>
+      <h2>Resmi gezdin.</h2>
+      ${turKart}
+      <nav class="yur-baglar" aria-label="Sanatçı">
+        <a href="#/gunun">${kacis(bilinenAd(gs.ad, d.kisaAdlar[gs.id]))}: sanatçı sayfası${ikon('ileri', 16, 1.7)}</a>
+        <a href="#/sanatci/${encodeURIComponent(gs.id)}/eserler">Bütün eserleri${ikon('ileri', 16, 1.7)}</a>
+      </nav>
+      <div class="yur-dinle" data-yur-dinle></div>
+    </div>`;
 }
 
 export function seritUst(s, n, baslik = 'Eserleri') {
@@ -113,11 +157,13 @@ export function anaSayfa() {
   const g = gunlukGuncelle(d.ilerleme, bugun());
   const gs = d.harita.get(gununId());
   const tekrar = kacis(new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' }));
+  const kayit = gs && d.yuruyus && d.yuruyus[gs.id] && d.yuruyus[gs.id].noktalar ? d.yuruyus[gs.id] : null;
+  const perde = !d.perdeAcildi;
   ciz(`
     <h1 class="ekran-disi" tabindex="-1">Sanat Atlası</h1>
     ${
       gs
-        ? sahneHtml(gs, tekrar)
+        ? sahneHtml(gs, tekrar, kayit)
         : `<header class="ust"><div class="ust-yazi">${etiket('Bugün', { vurgu: true })}<span class="hap" data-test="tekrar">${tekrar}</span></div></header>${turKarti(turBilgisi('karisik'), g)}${yenilikHtml()}${yedekHatirlatHtml()}`
     }`);
   // uygulama açılışında bir kez: tablo perde açılır gibi belirir, isim satır satır gelir
@@ -126,7 +172,8 @@ export function anaSayfa() {
   if (gs) {
     // telefonu eğince tablo döner, ışık üstünden kayar (İş 32); izin Ayarlar'dan verilir
     egimBaslat(ekran.querySelector('[data-gunun-gorsel]'), d.ilerleme.ayarlar.egim !== false);
-    gununKartGorseli(gs);
+    if (kayit) yuruyusKur(gs, kayit, perde);
+    else gununKartGorseli(gs);
     imzaGoster(gs, ekran.querySelector('.sahne-isim')); // İş 48: tablonun üstünde adın altında imza
   } else ekranRengi(null, null);
 }
@@ -179,12 +226,40 @@ async function gununKartGorseli(s) {
   bugunDugmeleri(s, e, kutu);
 }
 
+// İş 171: yürüyüşlü Bugün. Resim data/yuruyus.json'daki görselden (R2'deki 1280'lik; varsa en büyük kopya arkadan
+// gelir); düğmeler ve tam ekran, eser listesi gelince bağlanır; Hayatı metni gelince sona eklenir.
+async function yuruyusKur(s, kayit, perde) {
+  const kok = ekran.querySelector('.bugun-yuruyus');
+  const kutu = kok.querySelector('[data-gunun-gorsel]');
+  const eSozu = sanatcininGununEseri(s);
+  ekranRengi(eSozu, akimRenk(s.akim));
+  const img = document.createElement('img');
+  img.decoding = 'async';
+  img.alt = `${s.ad}, ${kayit.eser}`;
+  img.dataset.keskinBekliyor = '1'; // kopyayı yürüyüş kendi seçer (js/keskin.js karışmasın)
+  kutu.prepend(img);
+  await odaklariYukle().catch(() => {});
+  if (!kok.isConnected) return;
+  const adres = yuruyusAdresleri(kayit.gorsel, kayit.buyuk);
+  yuruyusBaslat({ kok, img, kayit, odak: adlaOdak(kayit.gorsel) || [50, 40], kucukUrl: adres.kucuk, buyukUrl: adres.buyuk, hareketsiz: hareketAz(), acilis: perde });
+  eSozu.then((e) => e && kok.isConnected && bugunDugmeleri(s, e, kok, false));
+  dinleEkle(s, kok.querySelector('[data-yur-dinle]'));
+  const { biyografiler } = await ekVeriYukle();
+  const bio = biyografiler.sanatcilar[s.id];
+  const yer = kok.querySelector('[data-yur-bio]');
+  if (!bio || !bio.metin || !yer || !kok.isConnected) return;
+  yer.innerHTML = `<h2>Hayatı</h2>${bio.metin
+    .split(/\n+/)
+    .map((p) => `<p data-test="biyografi">${kacis(p)}</p>`)
+    .join('')}<small>Kaynak: ${kacis((bio.kaynak || {}).ad || '')}</small>`;
+}
+
 // Eserin adı ve yılı; resme dokununca tam ekran görüntüleyici. Hikâyesi ve İncele, veri gelince ve eserin kaydı varsa
 // görünür; dokununca görüntüleyici doğrudan hikâyeyle ya da rehberli incelemeyle açılır.
-function bugunDugmeleri(s, e, kutu) {
+function bugunDugmeleri(s, e, kutu, eserYaz = true) {
   const yazi = kutu.querySelector('[data-bugun-eser]');
   const eserYazisi = [eserBaslik(e), e.tarih].filter(Boolean).join(' · ');
-  if (yazi && eserYazisi) {
+  if (eserYaz && yazi && eserYazisi) {
     yazi.textContent = eserYazisi;
     yazi.hidden = false;
   }

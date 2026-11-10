@@ -1835,3 +1835,19 @@ Sürüm 1.64.0 (İş 119–121).
   - Hesap kapalıyken yerelde biriken İş 161–169 commit'leri GitHub'a gönderildi ve main'e birleştirildi.
   - **Yayın otomatik:** `.github/workflows/yayinla.yml` main'e her birleştirmede yalnız sitenin dosyalarını (testler, scripts, tools, referans, tasarim-A, .md'ler hariç; ~7.800 dosya, ~330 MB) Cloudflare Pages'e (`sanat-atlasi.pages.dev`) `wrangler pages deploy` ile yükler. Depo sırrı `CLOUDFLARE_API_TOKEN` yoksa yükleme adımı atlanır. Mac'ten elle yükleme gerekmez.
   - **GitHub'da daha az otomatik iş:** Vercel kalıyor (Emre kullanacak) ama `vercel.json` ile sessiz (`github.silent`): PR'lara ve commit'lere yorum yazmıyor, her güncellemede e-posta gelmesin. Önizleme ve yayın eskisi gibi. Testler artık yalnız PR'da çalışır (main'e birleştirince ikinci kez çalışmıyordu). Değişiklikler daha az PR'da toplanacak.
+
+## İş 171 (Tasarım B, Fable)
+
+Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişiklik: haritadaki durak ve seviye sembolleri aynen kalır, madalyon (halka, yıldız, nabız, kilit) onların çevresine kurulur. Sürüm 1.76.0.
+
+### Grup 1–4 · Bugün yürüyüşü
+
+- **Yürüyüş uygulamada** (`js/yuruyus.js`, `js/ekranlar/bugun.js`): `deneme/yuruyus.html`'deki kamera mantığı aynen taşındı (uzun kenar 4000 birim, kart altta ve üstte denenir, ayrıntının en çok göründüğü yerleşim seçilir, resim hep ekranı kaplar). Sahne ekrana sabit, sayfa pencereyle kayar ve adıma oturur (`scroll-snap`). Yürüyüşü olmayan sanatçıda (ya da `data/yuruyus.json` yoksa) eski tek ekran kalır.
+- **Günün eseri = yürüyüş eseri.** Elle seçilen günün resmi (Ayarlar → Günün resimleri) yürüyüşü olan sanatçıda kullanılmaz: noktalar tek bir resme göre çizildi. Açılış karesi yine elle odakla (`gorsel_odak_elle.json`) ortalanır.
+- **Günün ressamı 145 sanatçıdan** (`js/gunun.js` → `yuruyusHavuzu`). Dikey resim şartı kalktı: kamera yatay resmi de ekrana kaplıyor. Havuz değiştiği için bugünün ressamı bir kereliğine değişir.
+- **Eğim (telefonu çevirince):** yürüyüşte resmin kendisi dönmez (kamerayla çakışıyordu); ışık ve adın kayması durur.
+- **Sekme çubuğu** yürürken aşağı kayıp gizlenir; yukarı kaydırınca, kapakta ve sonda geri gelir. Kartların altında çubuğun yeri boş bırakıldı ki geri gelince kartı örtmesin.
+- **Yürüyüşün sonu:** Hayatı'ndan sonra "Resmi gezdin.", pirinç "Bugünkü tur" kartı, sanatçı sayfası, bütün eserleri, adını dinle. Başlıkta sanatçının adına ek getirmedim (Monet'yi, Goya'yı gibi ekler yabancı adlarda yanlış çıkabiliyor).
+- **Okuma yazısı Newsreader** eklendi (`--okuma`), şimdilik yalnız yürüyüşte; diğer ekranlara 5. grupta yayılacak. Pirinç vurgu `--pirinc`.
+- **Hareket ayarı:** Kapalı'da ve sistemin "hareketi azalt"ında kamera adıma anında geçer, açılıştaki uzaklaşma olmaz; Sade'de ok zıplamaz.
+- Testler: `tests/unit/yuruyus.test.mjs` (havuz, 145 eserin bütün ayrıntılarında kartın ayrıntıyı kapatmaması), `tests/e2e/gunun.spec.js` (adımlar, siyah boşluk yok, sekme çubuğu, son). "Bugün tek ekran, kaydırma yok" testi yeni düzene uyarlandı.

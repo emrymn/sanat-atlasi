@@ -66,6 +66,11 @@
 :root {
   --serif: 'Bodoni Moda', 'Didot', 'Bodoni 72', Georgia, serif;
   --sans: Archivo, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* İş 171: okuma metni (Bodoni küçük boyda yoruyor) ve tek sabit vurgu: pirinç */
+  --okuma: Newsreader, 'Iowan Old Style', Georgia, serif;
+  --pirinc: #c9a45c;
+  --pirinc-rgb: 201, 164, 92;
+  --pirinc-yazi: #121110;
   --yan: 22px; /* kenar boşluğu */
   --sekme-h: 62px;
   --sekme-alt: max(12px, env(safe-area-inset-bottom));
@@ -15979,4 +15984,316 @@ main.perde .bugun-dugmeler {
 }
 :root[data-tema='gunduz'] .bugun-tek :is(.bugun-dugme, .bugun-ben) {
   background: rgba(var(--golge-rgb), 0.45);
+}
+
+/* ===== İş 171 · Tasarım B (Fable) · Bugün'de resmin içinde yürüyüş (js/yuruyus.js). Sahne ekrana sabit; sayfa adım
+   adım kayar (her adım bir ekran), kamera resmin içinde gezer. Kartlar resmin üstünde yarı saydam. ===== */
+html:has(.bugun-yuruyus) {
+  overflow: visible;
+  overflow-x: clip;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: none;
+}
+html:has(.bugun-yuruyus) body {
+  overflow: visible;
+}
+#uygulama:has(.bugun-yuruyus) {
+  height: auto;
+  overflow: visible;
+  overflow-x: clip;
+}
+.bugun-yuruyus .yur-sahne.sahne-yapiskan.bugun-kahraman {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  height: auto;
+  margin: 0;
+  background: #0b0a09;
+}
+/* resmi kamera taşır (transform); eğim ve açılış animasyonu burada resme dokunmaz */
+.bugun-yuruyus .yur-sahne > img,
+.bugun-yuruyus .yur-sahne.egimli > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: none;
+  margin: 0;
+  object-fit: fill;
+  transform-origin: 0 0;
+  translate: none;
+  rotate: none;
+  animation: none;
+  will-change: transform;
+}
+.bugun-yuruyus .yur-sahne.sahne-yapiskan.bugun-kahraman::after {
+  background: linear-gradient(
+    180deg,
+    rgba(18, 17, 16, 0.5) 0%,
+    rgba(18, 17, 16, 0) 16%,
+    rgba(18, 17, 16, 0) 50%,
+    rgba(18, 17, 16, 0.8) 78%,
+    rgba(18, 17, 16, 0.96) 100%
+  );
+}
+.yur-bulanik {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0;
+  background: rgba(18, 17, 16, 0.6);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+.bugun-yuruyus > .bugun-ust {
+  position: fixed;
+  z-index: 5;
+}
+.bugun-yuruyus > .bugun-ust::before {
+  content: '';
+  position: absolute;
+  inset: calc(-1 * env(safe-area-inset-top) - 10px) -40px -40px;
+  z-index: -1;
+  opacity: var(--perde, 0);
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(18, 17, 16, 0.92) 55%, rgba(18, 17, 16, 0));
+}
+/* yürüyüş her temada koyu (resmin üstünde): yazılar açık */
+.bugun-yuruyus {
+  --yur-yazi: #ebe5da;
+  --yur-ikincil: #cfc7bc;
+  color: var(--yur-yazi);
+}
+.yur-noktalar {
+  position: fixed;
+  right: calc(env(safe-area-inset-right) + 10px);
+  top: 50%;
+  z-index: 5;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.yur-noktalar i {
+  width: 3px;
+  height: 8px;
+  border-radius: 2px;
+  background: rgba(235, 229, 218, 0.45);
+  transition:
+    height 0.4s ease,
+    background 0.4s ease;
+}
+.yur-noktalar i.acik {
+  height: 26px;
+  background: var(--pirinc);
+}
+.yur-akis {
+  position: relative;
+  z-index: 3;
+  margin: calc(-1 * var(--ust-bosluk)) calc(-1 * (env(safe-area-inset-right) + var(--yan))) 0 calc(-1 * (env(safe-area-inset-left) + var(--yan)));
+}
+.yur-adim {
+  --yur-ust: calc(env(safe-area-inset-top) + 68px);
+  position: relative;
+  height: 100vh;
+  height: 100svh;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 calc(env(safe-area-inset-right) + 16px) calc(var(--sekme-alt) + var(--sekme-h) + 26px) calc(env(safe-area-inset-left) + 16px);
+}
+.yur-adim.kart-ustte {
+  justify-content: flex-start;
+  padding-top: var(--yur-ust);
+}
+.yur-kapak .bugun-alt {
+  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 38px);
+}
+.yur-ok {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 6px);
+  display: flex;
+  justify-content: center;
+  color: var(--yur-yazi);
+  opacity: 0.7;
+  pointer-events: none;
+  animation: yur-ok 2.4s ease-in-out 2s infinite;
+}
+@keyframes yur-ok {
+  50% {
+    transform: translateY(5px);
+    opacity: 1;
+  }
+}
+.yur-kart {
+  margin-right: 22px;
+  padding: 18px 20px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(235, 229, 218, 0.14);
+  background: rgba(24, 22, 20, 0.5);
+  -webkit-backdrop-filter: blur(14px) saturate(1.1);
+  backdrop-filter: blur(14px) saturate(1.1);
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 1s ease,
+    transform 1.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.yur-adim.gorunur .yur-kart {
+  opacity: 1;
+  transform: none;
+}
+.yur-kart h2 {
+  margin: 0 0 8px;
+  font: 400 26px/1.12 var(--serif);
+  color: var(--yur-yazi);
+}
+.yur-kart p {
+  margin: 0;
+  font: 400 18px/1.5 var(--okuma);
+  color: var(--yur-yazi);
+}
+.yur-hayat {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+  padding: calc(env(safe-area-inset-top) + 84px) calc(env(safe-area-inset-right) + 24px) calc(var(--sekme-alt) + var(--sekme-h) + 40px)
+    calc(env(safe-area-inset-left) + 24px);
+}
+.yur-hayat [data-yur-bio] h2 {
+  margin: 0 0 14px;
+  font: 400 34px/1.1 var(--serif);
+}
+.yur-hayat [data-yur-bio] p {
+  margin: 0 0 14px;
+  font: 400 19px/1.55 var(--okuma);
+}
+.yur-hayat [data-yur-bio] small {
+  display: block;
+  margin-bottom: 40px;
+  font: 400 13px/1.4 var(--sans);
+  color: var(--yur-ikincil);
+}
+.yur-son {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.yur-son-kunye {
+  margin: 0;
+  color: var(--pirinc);
+}
+.yur-son h2 {
+  margin: 0 0 6px;
+  font: 400 40px/1.05 var(--serif);
+}
+.yur-tur {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 92px;
+  padding: 14px 18px;
+  border-radius: 20px;
+  background: var(--pirinc);
+  color: var(--pirinc-yazi);
+  text-decoration: none;
+  transition: transform 0.12s ease;
+}
+.yur-tur:active {
+  transform: scale(0.97);
+}
+.yur-tur-sayi {
+  flex: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2.5px solid currentColor;
+  display: grid;
+  place-items: center;
+  font: 400 28px/1 var(--serif);
+}
+.yur-tur-yazi {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.yur-tur-baslik {
+  font: 400 25px/1.1 var(--serif);
+}
+.yur-tur small {
+  font: 500 14px/1.3 var(--sans);
+}
+.yur-tur.bitti {
+  background: rgba(235, 229, 218, 0.12);
+  border: 1px solid rgba(235, 229, 218, 0.24);
+  color: var(--yur-yazi);
+}
+.yur-baglar {
+  display: flex;
+  flex-direction: column;
+}
+.yur-baglar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 60px;
+  border-top: 1px solid rgba(235, 229, 218, 0.18);
+  color: var(--yur-yazi);
+  font: 400 17px/1.3 var(--sans);
+  text-decoration: none;
+}
+.yur-baglar a:last-child {
+  border-bottom: 1px solid rgba(235, 229, 218, 0.18);
+}
+.yur-baglar .ikon {
+  flex: none;
+  color: var(--yur-ikincil);
+}
+.yur-dinle .isim-ek {
+  margin: 0;
+}
+/* yürürken sekme çubuğu aşağı kayıp kaybolur; yukarı kaydırınca, kapakta ve sonda geri gelir */
+.sekmeler {
+  transition:
+    transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1),
+    opacity 0.4s ease;
+}
+html.yuruyus-icinde .sekmeler {
+  transform: translateY(calc(100% + var(--sekme-alt) + 10px));
+  opacity: 0;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .yur-ok {
+    animation: none;
+  }
+  .yur-kart,
+  .sekmeler {
+    transition-duration: 0.15s;
+  }
+}
+:root[data-hareket='kapali'] .yur-ok,
+:root[data-hareket='sade'] .yur-ok {
+  animation: none;
+}
+:root[data-hareket='kapali'] :is(.yur-kart, .sekmeler) {
+  transition-duration: 0.15s;
+}
+/* sahne ekrana sabit: üstündeki bir öğe kayarak girerse (transform) sabit sahne onunla kayar; bu ekran giriş
+   animasyonu almaz (açılışı kamera yapar) */
+#uygulama > .bugun-yuruyus {
+  animation: none !important;
 }

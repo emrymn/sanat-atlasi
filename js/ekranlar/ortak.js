@@ -5,8 +5,8 @@ import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
 import { sanatciEserleri, eserBaslik } from '../eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla, elleOdaklariAyarla, gununResimleriniAyarla, seciliGununResmi } from '../gorsel.js';
-import { gununSanatcisi } from '../gunun.js';
+import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla, elleOdaklariAyarla, gununResimleriniAyarla, seciliGununResmi, gorselAdi } from '../gorsel.js';
+import { gununSanatcisi, yuruyusHavuzu } from '../gunun.js';
 import { hikayeleriAl, eserinHikayesi } from '../hikaye.js';
 import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
@@ -59,6 +59,7 @@ export const d = {
   rng: rastgeleYap(Date.now() & 0xffffffff),
   indirme: null,
   onbellekIdleri: null,
+  yuruyus: null, // İş 171: data/yuruyus.json → { sanatçı kimliği: kayıt }
   kolaylik: {},
   akimRenk: {},
   kisaAdlar: {},
@@ -680,6 +681,9 @@ export function ciz(html, hareket) {
 // Ana sayfa tabloyu ekran boyu gösterdiği için dikey eseri olan sanatçılar seçilir (data/gorsel_oranlari.json yoksa hepsi).
 export function gununHavuzu() {
   const havuz = d.sanatcilar.filter((s) => !d.onbellekIdleri || d.onbellekIdleri.has(s.id));
+  // İş 171: yürüyüşü olanlar (145 sanatçı); kamera her resmi ekrana kapladığı için dikey şartı aranmaz
+  const yuruyenler = yuruyusHavuzu(havuz.map((s) => s.id), d.yuruyus);
+  if (d.yuruyus && yuruyenler.length < havuz.length) return yuruyenler;
   const dikey = d.dikeyler ? havuz.filter((s) => d.dikeyler.has(s.id)) : [];
   return (dikey.length ? dikey : havuz).map((s) => s.id);
 }
@@ -689,7 +693,13 @@ let gununResmiSozu = null;
 export function gununResimleriYukle() {
   return (gununResmiSozu ||= jsonGetir('data/gunun_resimleri.json').then(gununResimleriniAyarla, () => {}));
 }
-export const sanatcininGununEseri = (s) => Promise.all([sanatciEserleri(s), gununResimleriYukle()]).then(([l]) => gununEseri(l));
+// İş 171: yürüyüşü olan sanatçının günün eseri yürüyüş eseridir (görselinin yerel adıyla bulunur); bulunamazsa eskisi gibi
+export const sanatcininGununEseri = (s) =>
+  Promise.all([sanatciEserleri(s), gununResimleriYukle()]).then(([l]) => {
+    const k = d.yuruyus && d.yuruyus[s.id];
+    const y = k && l.find((e) => (e.gorseller || []).some((g) => gorselAdi(g) === k.gorsel));
+    return y || gununEseri(l);
+  });
 
 // Günün eseri: çözünürlüğü, ekrana oturuşu ve bilinirliği birlikte en iyi olan eser; oranı bilinmiyorsa en bilinen
 // dikey eser, o da yoksa en bilinen eser

@@ -40,3 +40,11 @@ export function baskaSanatci(havuz, haric, rng = Math.random) {
   const adaylar = havuz.filter((id) => id !== haric);
   return adaylar.length ? adaylar[Math.floor(rng() * adaylar.length)] : haric;
 }
+
+// İş 171 (Tasarım B): günün ressamı, resminin içinde yürüyüşü yazılmış olanlardan (data/yuruyus.json) seçilir.
+// yuruyus: { sanatçı kimliği: kayıt } ya da null (dosya yoksa havuz olduğu gibi kalır); kesişim boşsa da havuz kalır.
+export function yuruyusHavuzu(havuz, yuruyus) {
+  if (!yuruyus) return havuz;
+  const olan = havuz.filter((id) => yuruyus[id] && Array.isArray(yuruyus[id].noktalar) && yuruyus[id].noktalar.length);
+  return olan.length ? olan : havuz;
+}
