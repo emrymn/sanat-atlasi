@@ -25,15 +25,15 @@ test('zaman çizgisi desteği rapora yazılır; Bugün ve ana ekranlarda yatay t
   }
 });
 
-test('Bugün sahnesi: sayfa kaydırılabilir ve sekme çubuğu (Pekiştir) kaydırırken ekranda kalır', async ({ page }) => {
-  // 1.30: tablonun önünde düğme yok; Pekiştir'e alttaki sekme çubuğundan gidilir
+test('Bugün sahnesi: tek ekran, sayfa kaymaz ve sekme çubuğu (Pekiştir) ekranda kalır', async ({ page }) => {
+  // DUZEN 4.1: Bugün tek ekran; Pekiştir'e alttaki sekme çubuğundan gidilir
   await page.goto('./');
   await expect(page.locator('[data-test="gunun-kart"]')).toBeVisible();
   const dugme = page.locator('#sekmeler a[data-sekme="pekistir"]');
   await expect(dugme).toBeVisible();
   await page.evaluate(() => window.scrollTo(0, 600));
   await page.waitForTimeout(300);
-  expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(100);
+  expect(await page.evaluate(() => window.scrollY)).toBe(0);
   await expect(dugme).toBeInViewport();
   // desteklenen tarayıcıda zaman çizgisi gerçekten bağlanmış mı: yalnızca bilgi (destek yoksa test başarısız olmaz)
   const baglanti = await page.evaluate(() => {

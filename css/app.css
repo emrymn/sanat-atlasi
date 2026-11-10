@@ -3230,9 +3230,6 @@ html.sekmesiz .sekmeler {
   object-position: 50% 30%;
 }
 
-.sahne-panel[hidden] {
-  display: none;
-}
 .sahne.devam-alti .sahne-yapiskan {
   margin-top: 0;
 }
@@ -3253,43 +3250,6 @@ html.sekmesiz .sekmeler {
 .sahne-isim:hover {
   color: inherit;
 }
-}
-.kaydir-ipucu {
-  position: absolute;
-  z-index: 2;
-  left: 50%;
-  margin-left: -11px;
-  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 62px);
-  color: var(--ink-2);
-  line-height: 0;
-}
-.sahne-paneller {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 30svh;
-  padding: 20svh 0 30svh;
-}
-.sahne-panel {
-  display: flex;
-  justify-content: center;
-}
-.duvar-etiketi {
-  max-width: 440px;
-  padding: 22px 22px 24px;
-  border-radius: 4px;
-  background: rgba(var(--bg-rgb), 0.72);
-  border: 1px solid rgba(var(--vurgu-rgb), 0.3);
-  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.7);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.duvar-etiketi .okuma {
-  margin: 0;
 }
 /* Pekiştir: sahne boyunca sekme çubuğunun hemen üstünde duran cam hap */
 .sahne-dugme {
@@ -3827,74 +3787,6 @@ main[data-hareket='giris'] > :nth-child(n + 6) {
   }
 }
 
-/* Bugün sahnesi: kaydırdıkça tabloya yaklaşılır (büyür, kararır); isim ve ipucu silinir */
-@supports (animation-timeline: scroll()) {
-  .sahne-yapiskan > img {
-    animation:
-      yakinlas 14s cubic-bezier(0.2, 0.6, 0.3, 1) both,
-      yaklas linear both;
-    animation-timeline: auto, scroll(root);
-    animation-range:
-      normal,
-      0 200svh;
-  }
-  .sahne-isim {
-    animation: isim-sil linear both;
-    animation-timeline: scroll(root);
-    animation-range: 0 45svh;
-  }
-  .kaydir-ipucu {
-    animation:
-      ipucu-zipla 2.4s ease-in-out infinite,
-      isim-sil linear both;
-    animation-timeline: auto, scroll(root);
-    animation-range:
-      normal,
-      0 12svh;
-  }
-  /* duvar etiketi alttan belirir, yukarıda silinir; metin tam gösterildiğinden boyu ne olursa olsun
-     okunurken solmasın: giriş üst kenarın, çıkış alt kenarın ilk/son birkaç yüz pikseline bağlı */
-  .duvar-etiketi {
-    animation: etiket-gir linear both;
-    animation-timeline: view();
-    animation-range: cover 0px cover 300px;
-  }
-  .sahne-panel {
-    animation: etiket-cik linear both;
-    animation-timeline: view();
-    animation-range: cover calc(100% - 220px) cover 100%;
-  }
-}
-@keyframes yaklas {
-  to {
-    scale: 1.3;
-    filter: brightness(0.52) saturate(0.95);
-  }
-}
-@keyframes isim-sil {
-  to {
-    translate: 0 -48px;
-    opacity: 0;
-  }
-}
-@keyframes ipucu-zipla {
-  50% {
-    transform: translateY(6px);
-  }
-}
-@keyframes etiket-gir {
-  from {
-    opacity: 0;
-    transform: translateY(60px) scale(0.96);
-    filter: blur(6px);
-  }
-}
-@keyframes etiket-cik {
-  to {
-    opacity: 0;
-    transform: translateY(-40px) scale(0.98);
-  }
-}
 
 /* Pekiştir: yeni kart → tablo çerçeveden belirir, seçenekler sırayla gelir */
 main[data-hareket='yeni-kart'] .soru-resim {
@@ -15897,4 +15789,194 @@ article > .eserler + .bolum {
 }
 .basyapit-hikaye .hikaye-bolum h3 {
   margin-top: 14px;
+}
+
+/* ===== Tasarım B · 4.1 · Bugün tek ekran (C1): tablo kenardan kenara; altta ad, eser ve yıl, tek kelimelik üç düğme.
+   Açıklama yazısı, tur düğmesi ve aşağı kaydırma yok. Renkler ve yazı tipleri aynı. ===== */
+html:has(.bugun-tek),
+html:has(.bugun-tek) body {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+/* sekme çubuğu için bırakılan alt boşluk burada sayfayı ekrandan taşırır; düğmeler zaten çubuğun üstünde */
+#uygulama:has(.bugun-tek) {
+  min-height: 0;
+  height: 100vh;
+  height: 100svh;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* C1: yalnız kısa ad, eser ve yıl; tam ad ve imza sanatçı sayfasında kalır */
+.bugun-tek .bugun-alt :is(.ad-tam, .imza-kap) {
+  display: none;
+}
+.bugun-tek .sahne-yapiskan.bugun-kahraman {
+  position: relative;
+  height: 100vh;
+  height: 100svh;
+  margin-bottom: 0;
+}
+.bugun-tek .sahne-yapiskan.bugun-kahraman::after {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--bg-rgb), 0.6) 0%,
+    rgba(var(--bg-rgb), 0) 18%,
+    rgba(var(--bg-rgb), 0) 50%,
+    rgba(var(--bg-rgb), 0.55) 74%,
+    rgba(var(--bg-rgb), 0.9) 100%
+  );
+}
+/* resmin tamamı tam ekran görüntüleyiciyi açar; üst ve alt şerit bunun üstünde durur */
+.bugun-buyut {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+.bugun-buyut:disabled {
+  cursor: default;
+}
+.bugun-buyut:focus-visible {
+  outline: 2px solid rgba(var(--vurgu-rgb), 0.8);
+  outline-offset: -6px;
+}
+.bugun-tek .bugun-ust {
+  top: calc(env(safe-area-inset-top) + 10px);
+}
+.bugun-tarih {
+  color: var(--ink-2);
+  text-shadow:
+    0 1px 2px rgba(var(--bg-rgb), 0.9),
+    0 0 12px rgba(var(--bg-rgb), 0.7);
+}
+.bugun-ben {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(var(--vurgu-rgb), 0.28);
+  background: rgba(var(--bg-rgb), 0.5);
+  color: var(--ink);
+  font: 600 11px/1 var(--sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.bugun-notlar {
+  position: absolute;
+  z-index: 2;
+  top: calc(env(safe-area-inset-top) + 66px);
+  left: calc(env(safe-area-inset-left) + var(--yan));
+  right: calc(env(safe-area-inset-right) + var(--yan));
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.bugun-notlar > * {
+  margin: 0;
+}
+.bugun-tek .bugun-kahraman.egim-izinsiz .egim-dugme {
+  position: static;
+  align-self: flex-end;
+}
+.bugun-alt {
+  position: absolute;
+  z-index: 2;
+  left: calc(env(safe-area-inset-left) + var(--yan));
+  right: calc(env(safe-area-inset-right) + var(--yan));
+  bottom: calc(var(--sekme-alt) + var(--sekme-h) + 16px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  pointer-events: none;
+}
+.bugun-alt > * {
+  pointer-events: auto;
+}
+.bugun-alt .sahne-isim {
+  position: static;
+  align-self: flex-start;
+  max-width: 100%;
+}
+.bugun-eser {
+  margin: -12px 0 0;
+  font: italic 400 17px/1.35 var(--serif);
+  color: var(--ink-2);
+  text-wrap: pretty;
+  text-shadow: 0 1px 12px rgba(var(--bg-rgb), 0.6);
+}
+.bugun-dugmeler {
+  display: flex;
+  gap: 8px;
+}
+/* düğme yazısı kadar genişler; gizli olan yer tutmaz, kalanlar sola yaslanır.
+   Dar ekranda yalnız uzun olabilen sanatçı adı kısalır. */
+.bugun-dugme {
+  flex: none;
+  min-width: 0;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 12px;
+  border: 1px solid rgba(var(--vurgu-rgb), 0.28);
+  border-radius: 999px;
+  background: rgba(var(--bg-rgb), 0.45);
+  color: var(--ink);
+  font: 500 15px/1 var(--sans);
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+a.bugun-dugme {
+  flex: 0 1 auto;
+}
+.bugun-dugme[hidden] {
+  display: none;
+}
+.bugun-dugme span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bugun-dugme .ikon {
+  flex: none;
+  color: var(--vurgu);
+}
+@media (hover: hover) {
+  .bugun-dugme:hover,
+  .bugun-ben:hover {
+    color: var(--ink);
+    border-color: rgba(var(--vurgu-rgb), 0.55);
+  }
+}
+.bugun-dugme:active {
+  transform: scale(0.97);
+}
+main.perde .bugun-eser,
+main.perde .bugun-dugmeler {
+  animation: sahne-gir 0.6s 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+:root[data-tema='gunduz'] .bugun-tek .sahne-yapiskan.bugun-kahraman::after {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--golge-rgb), 0.55) 0%,
+    rgba(var(--golge-rgb), 0) 20%,
+    rgba(var(--golge-rgb), 0) 48%,
+    rgba(var(--golge-rgb), 0.6) 74%,
+    rgba(var(--golge-rgb), 0.92) 100%
+  );
+}
+:root[data-tema='gunduz'] .bugun-tek :is(.bugun-dugme, .bugun-ben) {
+  background: rgba(var(--golge-rgb), 0.45);
 }

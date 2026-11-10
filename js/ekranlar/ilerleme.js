@@ -206,7 +206,7 @@ function parcalar() {
       <p class="ilr-buyuk"><b>${islenmis(k)}</b><span>/ ${kurs().length}<small>konu işlendi</small></span></p>
       <span class="ilr-cizgi" role="img" aria-label="%${yuzde} tamamlandı"><i style="--y:${yuzde}%"></i></span>
       <dl class="ilr-sayilar">
-        <div><dt>Sanatçı</dt><dd>${acik.length}<small>/${d.sanatcilar.length}</small></dd></div>
+        <div><dt>Sanatçı</dt><dd><span data-test="acik-sayi">${acik.length}</span><small>/${d.sanatcilar.length}</small></dd></div>
         <div><dt>Kalıcı</dt><dd>${dagilim.kalici}<small>${acik.length ? ` %${Math.round((100 * dagilim.kalici) / acik.length)}` : ''}</small></dd></div>
         <div><dt>Tekrar</dt><dd>${vade}</dd></div>
       </dl>

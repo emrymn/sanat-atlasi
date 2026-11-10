@@ -9,10 +9,6 @@ test('Günün sanatçısı: ana sayfada kart, bölüm içeriği, aynı gün ayn�
   await page.goto('./');
   const kart = page.locator('[data-test="gunun-kart"]');
   await expect(kart).toBeVisible();
-  // ana sayfada en üstte (1.30: altında günün defteri)
-  const ilkY = await kart.boundingBox();
-  const defterY = await page.locator('.defter').boundingBox();
-  expect(ilkY.y).toBeLessThan(defterY.y);
   const ad = (await kart.locator('b.isim').textContent()).trim();
   await kart.locator('.sahne-isim').click();
   await expect(page.getByRole('heading', { name: 'Günün sanatçısı' })).toBeVisible();
@@ -73,28 +69,46 @@ test('biyografi ve dönem bilgisi çevrimdışı açılır', async ({ page, cont
   await context.setOffline(false);
 });
 
-test('Bugün: duvar etiketleri tam açık gelir, Notlarımdan yok; mozaik sayfanın sonuna kadar', async ({ page }) => {
+test('Bugün (Tasarım B · 4.1): tek ekran; ad, eser ve yıl, tek kelimelik düğmeler; açıklama, tur ve kaydırma yok', async ({ page }) => {
   await page.goto('./');
-  const etiketler = page.locator('.sahne-paneller .duvar-etiketi');
-  await expect(etiketler.first()).toBeVisible();
-  await expect(page.locator('.sahne-paneller')).not.toContainText('Notlarımdan');
-  // metin kesilmez: her etiketin metni kendi kutusuna tam sığar, dokunulacak "Devamını oku" yok
-  for (const el of await etiketler.all()) {
-    const p = el.locator('.okuma');
-    expect(await p.evaluate((x) => x.scrollHeight - x.clientHeight)).toBeLessThanOrEqual(1);
-    await expect(el).not.toHaveAttribute('role', 'button');
+  const kart = page.locator('[data-test="gunun-kart"]');
+  await expect(kart.locator('[data-gunun-gorsel] > img')).toBeVisible();
+  // eserin adı ve yılı adın altında
+  await expect(kart.locator('[data-bugun-eser]')).toBeVisible();
+  await expect(kart.locator('[data-bugun-eser]')).not.toBeEmpty();
+  // açıklama yazısı ve tur düğmesi yok
+  await expect(page.locator('.duvar-etiketi, .sahne-paneller, [data-test="tur-sayi"], .kaydir-ipucu')).toHaveCount(0);
+  // sayfa kaymaz: içerik ekrandan uzun değil
+  const tasma = await page.evaluate(() => {
+    window.scrollTo(0, 500);
+    return { y: window.scrollY, h: document.scrollingElement.scrollHeight - innerHeight };
+  });
+  expect(tasma.y).toBe(0);
+  // düğmeler tek kelime (sanatçının bilinen adı); görünenler en az 44 px
+  const ad = (await kart.locator('.bugun-dugmeler a.bugun-dugme').textContent()).trim();
+  expect(ad.length).toBeGreaterThan(0);
+  const gorunen = kart.locator('.bugun-dugme:visible');
+  for (const b of await gorunen.all()) {
+    const k = await b.boundingBox();
+    expect(k.height).toBeGreaterThanOrEqual(44);
   }
-  // mozaik zemini ekranın altına kadar iner (sayfa geç gelen içerikle yerleşene kadar beklenir: hemen ölçülünce
-  // yavaş makinede yerleşmemiş düzen yakalanıyordu)
-  await expect
-    .poll(() =>
-      page.evaluate(() => {
-        const h = document.querySelector('.hikaye');
-        const alt = h.getBoundingClientRect().bottom - parseFloat(getComputedStyle(h, '::before').bottom);
-        return Math.abs(document.getElementById('uygulama').getBoundingClientRect().bottom - alt);
-      }),
-    )
-    .toBeLessThan(2);
+  // Hikâyesi / İncele yalnız eserin kaydı varsa görünür
+  const kayit = await page.evaluate(async () => {
+    await new Promise((r) => setTimeout(r, 1500));
+    return {
+      hikaye: !document.querySelector('[data-bugun-hikaye]').hidden,
+      incele: !document.querySelector('[data-bugun-incele]').hidden,
+    };
+  });
+  if (kayit.hikaye) {
+    await kart.locator('[data-bugun-hikaye]').click();
+    await expect(page.locator('[data-test="gor-hikaye-panel"]')).toBeVisible();
+    await page.locator('[data-test="gor-hikaye-kapat"]').click();
+    await page.locator('.gor').getByRole('button', { name: 'Kapat' }).click();
+  }
+  // sanatçının adı Günün sanatçısı sayfasına götürür
+  await kart.locator('.bugun-dugmeler a.bugun-dugme').click();
+  await expect(page.getByRole('heading', { name: 'Günün sanatçısı' })).toBeVisible();
 });
 
 test('V2: elle yazılmış biyografi (Guido Reni) kaynak notuyla görünür', async ({ page }) => {
