@@ -75,7 +75,7 @@ async function basla() {
   uzakGorselleriAyarla(uzakG);
   oranlariAyarla(oranG && oranG.oranlar);
   d.dikeyler = oranG && Array.isArray(oranG.dikeyler) ? new Set(oranG.dikeyler) : null;
-  d.yuruyus = yuruyusG && yuruyusG.eserler && typeof yuruyusG.eserler === 'object' ? yuruyusG.eserler : null; // İş 171
+  d.yuruyus = !window.__atlasYuruyusYok && yuruyusG && yuruyusG.eserler && typeof yuruyusG.eserler === 'object' ? yuruyusG.eserler : null; // İş 171
   eserTurleriniAyarla(turler);
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
   const hazir = await hazirSozu;

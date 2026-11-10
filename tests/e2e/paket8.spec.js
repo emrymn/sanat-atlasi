@@ -272,7 +272,7 @@ test('T4: sürüm değişince Bugün’de bir kez “Yenilikler”; Ayarlar’da
   await expect(page.locator('[data-test="yenilik-not"]')).toHaveCount(0);
   await page.goto('./#/ayarlar');
   await expect(page.locator('[data-test="yenilikler"] li').first()).toContainText('1.76 ·');
-  await expect(page.locator('[data-test="yenilikler"] li').nth(43)).toContainText('1.33 ·');
+  await expect(page.locator('[data-test="yenilikler"] li').nth(44)).toContainText('1.33 ·');
 });
 
 test('T4: yepyeni kullanıcıya Yenilikler notu gösterilmez', async ({ page }) => {

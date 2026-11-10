@@ -16297,3 +16297,46 @@ html.yuruyus-icinde .sekmeler {
 #uygulama > .bugun-yuruyus {
   animation: none !important;
 }
+
+/* yürüyüşte eğim: resim dönmez (kamera taşır); ışık, adın katmanlı kayması ve "Hareketi aç" düğmesi eskisi gibi.
+   Sınıfları ve değişkenleri js/egim.js yürüyüşün köküne de yazar (ad ve düğme sahnenin dışında, kapakta). */
+.bugun-yuruyus.egimli .sahne-isim :is(.meta, .ad-ilk, .ad-son),
+.bugun-yuruyus.egimli .sahne-isim .ad-son::before {
+  will-change: translate;
+}
+.bugun-yuruyus.egimli .sahne-isim .ad-ilk {
+  translate: calc(var(--yzx, 0) * 5px) calc(var(--yzy, 0) * 3px);
+}
+.bugun-yuruyus.egimli .sahne-isim .ad-son {
+  position: relative;
+  z-index: 0;
+  translate: calc(var(--yzx, 0) * 9px) calc(var(--yzy, 0) * 5.5px);
+}
+.bugun-yuruyus.egimli .sahne-isim .ad-son::before {
+  content: attr(data-ad);
+  content: attr(data-ad) / '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  padding: inherit;
+  color: rgba(0, 0, 0, 0.5);
+  filter: blur(5px);
+  mix-blend-mode: soft-light;
+  translate: calc(var(--yzx, 0) * -5px) calc(3px + var(--yzy, 0) * -3.5px);
+  pointer-events: none;
+}
+.bugun-yuruyus.egim-izinsiz .egim-dugme {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 0 14px 0 12px;
+  border: 1px solid rgba(var(--pirinc-rgb), 0.7);
+  border-radius: 999px;
+  background: rgba(18, 17, 16, 0.62);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3);
+  backdrop-filter: blur(14px) saturate(1.3);
+  color: var(--yur-yazi);
+  font: 600 13px/1 var(--sans);
+}

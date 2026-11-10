@@ -40,6 +40,7 @@ test('İş 148/149: hareket ve yazı boyutu Ayarlar’dan seçilir, html’e yaz
 
 test('İş 144: Tuval’in tablosu yüz odağına göre kaydırılır', async ({ page, context }) => {
   await agiHazirla(context);
+  await context.addInitScript(() => (window.__atlasYuruyusYok = true)); // İş 171: yürüyüşsüz (eski tek ekran) yol sınanır
   await kur(context);
   // bütün görsellerde odak sağ alt köşede: tablo o yöne kaymalı. Veri diskten (istek yakalanıp sunucudan yeniden
   // indirilince service worker'lı CI'da takılıyordu)
@@ -88,6 +89,8 @@ test('İş 150/159: geliştirici modu kapalıyken odak düğmesi yalnız günün
 // İş 157: görüntüleyicide "Günün resmi" → Tuval'de o sanatçının tablosu o olur; Ayarlar'da kopyalanacak liste
 test('İş 157: görüntüleyicide seçilen eser sanatçının günün resmi olur, Ayarlar’da listelenir', async ({ page, context }) => {
   await agiHazirla(context);
+  // İş 171: yürüyüşü olan sanatçıda günün eseri yürüyüş eseridir; elle seçim yürüyüşsüz yolda sınanır
+  await context.addInitScript(() => (window.__atlasYuruyusYok = true));
   // otomatik seçim sınanır: depodaki elle seçilen günün resimleri (İş 159) devre dışı
   await context.route(/data\/gunun_resimleri\.json/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: '{"surum":1,"secim":{}}' }));
   await kur(context);

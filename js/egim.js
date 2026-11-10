@@ -154,6 +154,12 @@ function yon(e) {
   if (!kare) kare = requestAnimationFrame(ciz);
 }
 
+// İş 171: Bugün yürüyüşünde tablonun kutusu ekrana sabit bir sahne; ad ve "Hareketi aç" düğmesi onun dışında
+// (kapak adımında). Sınıflar ve değişkenler sahnenin yanında yürüyüşün köküne de yazılır.
+const dis = (el) => (el && el.closest ? el.closest('.bugun-yuruyus') : null);
+const kutular = (el) => [el, dis(el)].filter(Boolean);
+const sinif = (el, ekle, ...adlar) => kutular(el).forEach((k) => adlar.forEach((a) => k.classList.toggle(a, ekle)));
+
 const yaklas = (a, b, k) => ({ x: a.x + (b.x - a.x) * k, y: a.y + (b.y - a.y) * k });
 
 // Ekrana yumuşakça uygulanır; kök sayfadan çıkınca dinleme kendiliğinden biter
@@ -162,11 +168,13 @@ function ciz() {
   if (!kok || !kok.isConnected) return egimDurdur();
   anlik = yaklas(anlik, hedef, TABLO_IZ);
   yazi = yaklas(yazi, hedef, YAZI_IZ);
-  kok.style.setProperty('--egx', anlik.x.toFixed(3));
-  kok.style.setProperty('--egy', anlik.y.toFixed(3));
-  kok.style.setProperty('--egim-eksen', eksenYaz(anlik.x, anlik.y));
-  kok.style.setProperty('--yzx', yazi.x.toFixed(3));
-  kok.style.setProperty('--yzy', yazi.y.toFixed(3));
+  for (const k of kutular(kok)) {
+    k.style.setProperty('--egx', anlik.x.toFixed(3));
+    k.style.setProperty('--egy', anlik.y.toFixed(3));
+    k.style.setProperty('--egim-eksen', eksenYaz(anlik.x, anlik.y));
+    k.style.setProperty('--yzx', yazi.x.toFixed(3));
+    k.style.setProperty('--yzy', yazi.y.toFixed(3));
+  }
   const uzak = (a) => Math.abs(hedef.x - a.x) > 0.002 || Math.abs(hedef.y - a.y) > 0.002;
   if (uzak(anlik) || uzak(yazi)) kare = requestAnimationFrame(ciz);
 }
@@ -180,23 +188,23 @@ export function egimBaslat(el, acik, degisince = null) {
   dinleyici = degisince;
   const dinle = () => {
     if (kok !== el) return;
-    el.classList.remove('egim-izinsiz');
+    sinif(el, false, 'egim-izinsiz');
     window.addEventListener('devicemotion', hareket);
     window.addEventListener('deviceorientation', yon);
-    el.classList.add('egimli');
+    sinif(el, true, 'egimli');
   };
   if (!izinGerekli() || izinDurumu) return dinle();
-  const dugme = el.querySelector('[data-egim-dugme]');
+  const dugme = (dis(el) || el).querySelector('[data-egim-dugme]');
   if (dugme) {
     dugme.onclick = async () => {
       if (await egimIzni()) dinle();
-      else el.classList.remove('egim-izinsiz'); // reddedildi: bu açılışta bir daha sorulmaz
+      else sinif(el, false, 'egim-izinsiz'); // reddedildi: bu açılışta bir daha sorulmaz
     };
   }
   izinVarMi().then((hatirliyor) => {
     if (kok !== el) return;
     if (hatirliyor) dinle();
-    else if (dugme) el.classList.add('egim-izinsiz');
+    else if (dugme) sinif(el, true, 'egim-izinsiz');
   });
 }
 
@@ -205,7 +213,7 @@ export function egimDurdur() {
   window.removeEventListener('deviceorientation', yon);
   if (kare) cancelAnimationFrame(kare);
   kare = 0;
-  if (kok) kok.classList.remove('egimli', 'egim-izinsiz');
+  if (kok) sinif(kok, false, 'egimli', 'egim-izinsiz');
   kok = null;
   dinleyici = null;
   hedef = { x: 0, y: 0 };
