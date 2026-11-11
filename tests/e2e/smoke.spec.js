@@ -9,7 +9,7 @@ test('ana sayfa → Göz At → sanatçı → eser tam ekran', async ({ page }) 
   await page.goto('./');
   await expect(page.getByRole('heading', { name: 'Sanat Atlası' })).toBeVisible();
   // Tasarım B 4.1: Bugün sade; sanatçı düğmesi var, sayılar Ben'de (İlerleme)
-  await expect(page.locator('.bugun-dugmeler a.bugun-dugme')).toBeVisible();
+  await expect(page.locator('[data-bugun-biyografi]')).toBeVisible();
   await page.locator('#sekmeler a[data-sekme="gozat"]').click();
   await expect(page.getByRole('heading', { name: 'Galeri' })).toBeVisible();
   // kilitli akım gri ve "Konu N'de açılır" yazar

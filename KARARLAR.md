@@ -1910,3 +1910,11 @@ Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişikli
 - **Galeri ana ekranı** `oneri-07-galeri` çizimine göre: haplı üst menü kalktı; arama, Başyapıtlar rafı ("107 eser" bağlantısı Başyapıtlar sayfasına), Akımlar şeridi (küçük resimli kartlar, kilitliler soluk ve "Konu N'de açılır"; "5 / 29 açık" aşağıdaki tam listeye kaydırır), dört kısayol: Konular, Zaman, Karşılaştır, Koleksiyon. Altında eski akım koridoru aynen. Haplar Başyapıtlar, Konular ve Zaman sayfalarında duruyor. `data-test`'ler (`basyapit-giris`, `konu-giris`, `zaman-giris`) yeni bağlantılara taşındı.
 - **Sekme çubuğu** çizimdeki ikonlarla (çerçeve, patika, galeri duvarı, kart destesi); kayan hap görünmez, etkin sekmenin ikonu pirinç, yazısı açık ve kalın.
 - Testler: `cilalama.spec` dokunma alanı testi Galeri'de dört kısayolu, hapları Başyapıtlar sayfasında ölçer; İş 89 testi (bölüm şeridi geçişsiz) Başyapıtlar sayfasından başlar.
+
+
+## 11 Kasım 2026 — Ana sayfa ve galeri gezinmesi
+
+- Ana sayfanın sağ üstünde Ayarlar metinli, en az 44 px dokunma alanına sahip doğrudan bağlantı; Ben bağlantısı ilerleme için korunur.
+- İsim altındaki yinelenen sanatçı bağlantısı Biyografi düğmesine dönüştü. Aynı sayfanın Hayatı bölümüne kaydırır; sondaki En üste dön kapağa döner. Klavye odağı hedefe taşınır, hareket azaltma tercihinde kaydırma anlıktır. Yürüyüş verisi olmayan durumda da biyografi bölümü gösterilir.
+- Galeride ayrıntılı, kilit ve ilerleme bilgilerini taşıyan akımlar listesi korunur. Üstte yinelenen akımlar şeridi ve küçük kısayolların yerine Konular, Zaman, Karşılaştır ve Koleksiyon açıklamalı kartları gelir.
+- Önbellek sürümü 1.76.1: birleştirilip yayımlandığında mevcut PWA kurulumları güncel dosyaları alabilsin. Bu çalışma yalnız ayrı dalda, main ile birleştirilmeden hazırlanır.

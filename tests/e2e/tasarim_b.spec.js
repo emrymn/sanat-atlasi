@@ -77,6 +77,11 @@ test('harita: sembol aynen kalır, çevresinde madalyon; sıradaki durakta nabı
 
 test('Galeri: Başyapıtlar rafı rozetli, Karşılaştır ve Koleksiyon kısayolları; Çalış: Başka turlar ızgarası', async ({ page }) => {
   await page.goto('./#/gozat');
+  await expect(page.locator('.gz-akim-serit')).toHaveCount(0);
+  await expect(page.locator('.kesif-kartlari a small')).toHaveCount(4);
+  for (const card of await page.locator('.kesif-kartlari a').all()) {
+    expect(await card.evaluate((el) => el.scrollWidth <= el.clientWidth)).toBe(true);
+  }
   const raf = page.locator('[data-test="gz-raf"]');
   await expect(raf).toBeVisible();
   const kartlar = raf.locator('[data-test="gz-raf-kart"]');

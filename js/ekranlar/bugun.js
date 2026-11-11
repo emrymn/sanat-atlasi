@@ -88,9 +88,9 @@ function turKarti(tur, g) {
 // Bugün (Tasarım B · 4.1, C1): tablo kenardan kenara; üstte tarih ve Ben, altta sanatçının adı, eserin adı ve yılı,
 // sonra tek kelimelik üç düğme. Hikâyesi / İncele, eserin kaydı yoksa gizli kalır.
 // İş 171: sanatçının yürüyüşü varsa (kayit) sayfa aşağı kayar: resmin içinde yürüyüş, sonra Hayatı ve günün işi.
-// Yürüyüşü olmayan sanatçıda (dosya yoksa) eskisi gibi tek ekran, kaydırma yok.
+// Yürüyüş verisi yoksa kapağın altında doğrudan biyografi gösterilir.
 const ustHtml = (tekrar) =>
-  `<div class="bugun-ust"><span class="etiket bugun-tarih" data-test="tekrar">${tekrar}</span><a class="bugun-ben" href="#/ilerleme" aria-label="Ben: ilerleme ve ayarlar">Ben</a></div>`;
+  `<div class="bugun-ust"><span class="etiket bugun-tarih" data-test="tekrar">${tekrar}</span><nav class="bugun-araclar" aria-label="Kişisel menü"><a class="bugun-ayarlar" href="#/ayarlar">${ikon('ayarlar', 18, 1.6)}<span>Ayarlar</span></a><a class="bugun-ben" href="#/ilerleme" aria-label="Ben: ilerleme">Ben</a></nav></div>`;
 function kapakHtml(gs, kayit) {
   const eser = kayit ? [yuruyusEserAdi(gs.id, kayit), kayit.yil].filter(Boolean).join(' · ') : '';
   return `<button class="bugun-buyut" type="button" data-bugun-buyut aria-label="Resmi tam ekran aç" disabled></button>
@@ -101,18 +101,19 @@ function kapakHtml(gs, kayit) {
           <div class="bugun-dugmeler">
             <button class="bugun-dugme" type="button" data-bugun-hikaye hidden>${ikon('kitap', 16, 1.6)}<span>Hikâyesi</span></button>
             <button class="bugun-dugme" type="button" data-bugun-incele hidden>${ikon('ara', 16, 1.6)}<span>İncele</span></button>
-            <a class="bugun-dugme" href="#/gunun">${ikon('gunes', 16, 1.6)}<span>${kacis(bilinenAd(gs.ad, d.kisaAdlar[gs.id]))}</span></a>
+            <button class="bugun-dugme" type="button" data-bugun-biyografi>${ikon('asagi', 16, 1.6)}<span>Biyografi</span></button>
           </div>
         </div>`;
 }
 function sahneHtml(gs, tekrar, kayit) {
   if (!kayit)
-    return `<section class="sahne bugun-tek" data-test="gunun-kart">
+    return `<section class="sahne bugun-tek bugun-biyografili" data-test="gunun-kart">
       <div class="bugun-kahraman sahne-yapiskan" data-gunun-gorsel>
         <span class="egim-isik" aria-hidden="true"></span>
         ${ustHtml(tekrar)}
         ${kapakHtml(gs, null)}
       </div>
+      <section class="yur-hayat" data-test="yur-hayat"><div data-yur-bio tabindex="-1"></div>${yuruyusSonu(gs)}</section>
     </section>`;
   const kunyeYazi = [gs.ad, kayit.yil, gs.akim].filter(Boolean).join(' · ');
   return `<section class="sahne bugun-tek bugun-yuruyus" data-test="gunun-kart">
@@ -124,7 +125,7 @@ function sahneHtml(gs, tekrar, kayit) {
         <section class="yur-adim yur-kapak" data-test="yur-adim">${kapakHtml(gs, kayit)}<span class="yur-ok" aria-hidden="true">${ikon('asagi', 22, 1.5)}</span></section>
         ${yuruyusAdimlari({ kayit, kunye: kunyeYazi, taninma: taninma(gs), baslik: yuruyusEserAdi(gs.id, kayit) })}
         <section class="yur-hayat" data-test="yur-hayat">
-          <div data-yur-bio></div>
+          <div data-yur-bio tabindex="-1"></div>
           ${yuruyusSonu(gs)}
         </section>
       </div>
@@ -147,6 +148,7 @@ function yuruyusSonu(gs) {
         <a href="#/sanatci/${encodeURIComponent(gs.id)}/eserler">Bütün eserleri${ikon('ileri', 16, 1.7)}</a>
       </nav>
       <div class="yur-dinle" data-yur-dinle></div>
+      <button class="bugun-basa" type="button" data-bugun-basa>${ikon('asagi', 18, 1.6)}En üste dön</button>
     </div>`;
 }
 
@@ -175,7 +177,20 @@ export function anaSayfa() {
     // telefonu eğince tablo döner, ışık üstünden kayar (İş 32); izin Ayarlar'dan verilir
     egimBaslat(ekran.querySelector('[data-gunun-gorsel]'), d.ilerleme.ayarlar.egim !== false);
     if (kayit) yuruyusKur(gs, kayit, perde);
-    else gununKartGorseli(gs);
+    else {
+      gununKartGorseli(gs);
+      biyografiDoldur(gs, ekran.querySelector('.bugun-biyografili'));
+    }
+    const kapak = ekran.querySelector('.sahne-isim');
+    const bio = ekran.querySelector('[data-yur-bio]');
+    ekran.querySelector('[data-bugun-biyografi]').onclick = () => {
+      bio.focus({ preventScroll: true });
+      bio.closest('.yur-hayat').scrollIntoView({ behavior: hareketAz() ? 'instant' : 'smooth', block: 'start' });
+    };
+    ekran.querySelector('[data-bugun-basa]').onclick = () => {
+      kapak.focus({ preventScroll: true });
+      window.scrollTo({ top: 0, behavior: hareketAz() ? 'instant' : 'smooth' });
+    };
     imzaGoster(gs, ekran.querySelector('.sahne-isim')); // İş 48: tablonun üstünde adın altında imza
   } else ekranRengi(null, null);
 }
@@ -249,10 +264,18 @@ async function yuruyusKur(s, kayit, perde) {
   yuruyusBaslat({ kok, img, kayit, yakin: ek.yakin, odak: adlaOdak(kayit.gorsel) || [50, 40], kucukUrl: adres.kucuk, buyukUrl: adres.buyuk, hareketsiz: hareketAz(), acilis: perde });
   eSozu.then((e) => e && kok.isConnected && bugunDugmeleri(s, e, kok, false));
   dinleEkle(s, kok.querySelector('[data-yur-dinle]'));
+  await biyografiDoldur(s, kok);
+}
+
+async function biyografiDoldur(s, kok) {
   const { biyografiler } = await ekVeriYukle();
   const bio = biyografiler.sanatcilar[s.id];
   const yer = kok.querySelector('[data-yur-bio]');
-  if (!bio || !bio.metin || !yer || !kok.isConnected) return;
+  if (!yer || !kok.isConnected) return;
+  if (!bio?.metin) {
+    yer.innerHTML = '<h2>Hayatı</h2><p>Bu sanatçı için biyografi henüz yok.</p>';
+    return;
+  }
   yer.innerHTML = `<h2>Hayatı</h2>${bio.metin
     .split(/\n+/)
     .map((p) => `<p data-test="biyografi">${kacis(p)}</p>`)

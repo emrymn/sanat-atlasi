@@ -87,9 +87,9 @@ test('Bugün (Tasarım B): açılış tek ekran; ad, eser ve yıl, tek kelimelik
   });
   expect(durum.id).toBeTruthy();
   expect(durum.adim).toBeGreaterThanOrEqual(durum.nokta + 2);
-  // düğmeler tek kelime (sanatçının bilinen adı); görünenler en az 44 px
-  const ad = (await kart.locator('.bugun-dugmeler a.bugun-dugme').textContent()).trim();
-  expect(ad.length).toBeGreaterThan(0);
+  // Biyografi düğmesi ve diğer görünenler en az 44 px
+  const ad = (await kart.locator('[data-bugun-biyografi]').textContent()).trim();
+  expect(ad).toBe('Biyografi');
   const gorunen = kart.locator('.bugun-dugme:visible');
   for (const b of await gorunen.all()) {
     const k = await b.boundingBox();
@@ -109,8 +109,20 @@ test('Bugün (Tasarım B): açılış tek ekran; ad, eser ve yıl, tek kelimelik
     await page.locator('[data-test="gor-hikaye-kapat"]').click();
     await page.locator('.gor').getByRole('button', { name: 'Kapat' }).click();
   }
+  // Biyografi aynı sayfada Hayatı bölümüne gider; başa dönüş kapağı geri getirir.
+  const adres = page.url();
+  await kart.locator('[data-bugun-biyografi]').click();
+  await expect(kart.locator('[data-yur-bio] h2')).toBeInViewport();
+  expect(page.url()).toBe(adres);
+  await page.evaluate(() => window.scrollTo(0, document.scrollingElement.scrollHeight));
+  await kart.locator('[data-bugun-basa]').click();
+  await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
+  await expect(kart.locator('.sahne-isim')).toBeFocused();
+  await page.locator('.bugun-ayarlar').click();
+  await expect(page.getByRole('heading', { name: 'Ayarlar', exact: true })).toBeVisible();
+  await page.goto('./');
   // sanatçının adı Günün sanatçısı sayfasına götürür
-  await kart.locator('.bugun-dugmeler a.bugun-dugme').click();
+  await kart.locator('.sahne-isim').click();
   await expect(page.getByRole('heading', { name: 'Günün sanatçısı' })).toBeVisible();
 });
 
