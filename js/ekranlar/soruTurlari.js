@@ -12,7 +12,7 @@ import { titret, tik } from '../titresim.js';
 import { TUR_AD } from '../ikonografi.js';
 import { d, ciz, ust, etiket, ekran, HARFLER, BILMIYORUM, eserAdi, kotuler, kaydet, bugun, acikListe, cizimNo, guncelMi, kaynakSatiri, paletHtml, ekranRengi, renkSabitle, yaprakDugmeYazisi } from './ortak.js';
 import { bildirimSatiriHtml, bildirimTikla } from './bildirim.js';
-import { ikonografiVeri } from './gozat.js';
+import { ikonografiVeri, karsilastirSecimi } from './gozat.js';
 import {
   kursBolumleri,
   sanatciBolumu,
@@ -56,6 +56,8 @@ export function soruTurlariHtml(hatalar = '') {
   if (!nb) return hatalar;
   const satir = (href, test, sayi, baslik, alt) =>
     `<a class="hatalar-satir" href="${href}" data-test="${test}"><span class="hatalar-sayi" aria-hidden="true">${sayi}</span><span class="metin"><b>${baslik}</b><span>${alt}</span></span>${ikon('ileri', 20, 1.4)}</a>`;
+  // 1.76.3: Karşılaştır Galeri'den buraya taşındı (en çok karıştırılan ikili, yoksa açık ilk iki akım)
+  const kars = karsilastirSecimi();
   return `<section class="bolum pk-ek-turlar" data-test="ek-turlar">
       <div class="pk-bolum-bas"><h2 class="pk-baslik">Başka turlar</h2></div>
       <div class="tur-izgara">
@@ -63,6 +65,7 @@ export function soruTurlariHtml(hatalar = '') {
       <button class="hatalar-satir" type="button" data-salonlara data-test="donem-turu"><span class="hatalar-sayi" aria-hidden="true">${ikon('sekme-harita', 18, 1.6)}</span><span class="metin"><b>Döneme göre</b><span>Salon salon çalış</span></span></button>
       ${satir(TUR.bolum.rota, 'bolum-turu', nb, 'Bölüm turu', 'Hangi bölümde?')}
       ${satir(TUR.ikonografi.rota, 'konu-turu', ikon('kitap', 18, 1.6), 'Konu turu', 'İncil, mitoloji, tarih')}
+      ${kars ? satir(kars.href, 'gz-karsilastir', ikon('karsilastir', 18, 1.6), 'Karşılaştır', kars.alt) : ''}
       </div>
     </section>`;
 }

@@ -75,22 +75,13 @@ test('harita: sembol aynen kalır, çevresinde madalyon; sıradaki durakta nabı
   await expect(basla).toHaveAttribute('href', /#\/pekistir\/bolum\/\d+-\d+\/kolay$/);
 });
 
-test('Galeri: Başyapıtlar rafı rozetli, Karşılaştır ve Koleksiyon kısayolları; Çalış: Başka turlar ızgarası', async ({ page }) => {
+// 1.76.3: Başyapıtlar rafı Galeri'den kalktı (Başyapıtlar hapında); Koleksiyon aramanın yanındaki kalp, Karşılaştır Çalış'ta
+test('Galeri: Başyapıtlar hapı ve Koleksiyon kalbi; Çalış: Başka turlar ızgarası ve Karşılaştır', async ({ page }) => {
   await page.goto('./#/gozat');
-  const raf = page.locator('[data-test="gz-raf"]');
-  await expect(raf).toBeVisible();
-  const kartlar = raf.locator('[data-test="gz-raf-kart"]');
-  await expect(kartlar.first()).toBeVisible();
-  expect(await kartlar.count()).toBeGreaterThan(3);
-  // hikâyesi ya da incelemesi olanlar önde ve rozetli
-  await expect(kartlar.first().locator('[data-test="eser-rozetler"] .eser-rozet').first()).toBeVisible();
-  await expect(raf.locator('[data-gz-raf-sayi]')).toHaveText(/\d+ eser/);
-  for (const t of ['gz-karsilastir', 'gz-koleksiyon']) {
-    const k = await page.locator(`[data-test="${t}"]`).boundingBox();
-    expect(k.height).toBeGreaterThanOrEqual(44);
-  }
-  await kartlar.first().click();
-  await expect(page).toHaveURL(/#\/basyapit\//);
+  await expect(page.locator('[data-test="gz-raf"]')).toHaveCount(0);
+  expect((await page.locator('[data-test="gz-koleksiyon"]').boundingBox()).height).toBeGreaterThanOrEqual(44);
+  await page.locator('[data-test="basyapit-giris"]').click();
+  await expect(page).toHaveURL(/#\/basyapitlar$/);
   expect(await page.evaluate(() => document.scrollingElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
   // Çalış
   await page.goto('./#/pekistir');
@@ -98,6 +89,7 @@ test('Galeri: Başyapıtlar rafı rozetli, Karşılaştır ve Koleksiyon kısayo
   await expect(izgara.locator('[data-test="donem-turu"]')).toBeVisible();
   await expect(izgara.locator('[data-test="bolum-turu"]')).toBeVisible();
   await expect(izgara.locator('[data-test="konu-turu"]')).toBeVisible();
+  await expect(izgara.locator('[data-test="gz-karsilastir"]')).toBeVisible();
   await izgara.locator('[data-test="donem-turu"]').click();
   await expect(page.locator('.pk-salonlar')).toBeInViewport();
 });

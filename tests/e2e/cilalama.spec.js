@@ -34,14 +34,9 @@ async function kenarKaydir(page, context) {
 
 test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en az 44 pt; dört sekme ekrana sığar', async ({ page, context }) => {
   await agiHazirla(context);
-  // İş 171/172: Galeri'nin ana ekranında haplı menü yerine müze planının dört odası; haplar alt sayfalarda (Başyapıtlar, Konular, Zaman)
+  // 1.76.3: Müze planı kalktı; haplar Galeri'nin ana ekranında ve alt sayfalarında (Başyapıtlar, Konular, Zaman)
   await page.goto('./#/gozat');
-  await expect(page.locator('.gz-plan-harita a')).toHaveCount(4);
-  for (const a of await page.locator('.gz-plan-harita a').all()) {
-    const k = await a.boundingBox();
-    expect(k.height).toBeGreaterThanOrEqual(44);
-    expect(k.x + k.width).toBeLessThanOrEqual(390.5);
-  }
+  await expect(page.locator('.bolumler a')).toHaveCount(4);
   await page.goto('./#/basyapitlar');
   await expect(page.locator('.bolumler a')).toHaveCount(4);
   // giriş animasyonu (küçükten büyüme) bitmeden ölçülünce 42 px çıkıyordu

@@ -79,6 +79,7 @@ const YOLLAR = {
     '<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M22 12.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/><path d="M22 17.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>',
   ilerleme: '<path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>',
   // sekme çubuğu (İş 171, Tasarım B çizimi): çerçeve, patika, galeri duvarı, kart destesi
+  kemer: '<path d="M5 21V11a7 7 0 0 1 14 0v10"/><path d="M3 21h18"/><path d="M9.5 21v-9.5a2.5 2.5 0 0 1 5 0V21"/>',
   'zaman-cizgi': '<path d="M3 12h18M7 8v8M12 6v12M17 8v8"/>',
   kalp: '<path d="M12 20s-7-4.3-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5c0 5.2-7 9.500-7 9.500z"/>',
   'sekme-bugun': '<rect x="4" y="3.5" width="16" height="17" rx="1.5"/><rect x="7.5" y="7" width="9" height="10"/>',
