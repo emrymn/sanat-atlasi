@@ -18359,7 +18359,7 @@ html.hizli-acik .hizli-yaprak > h2 {
 }
 .gz-ust .ust {
   align-items: center;
-  gap: 14px;
+  gap: 10px;
   margin-bottom: 14px;
 }
 .gz-ust .ust-yazi {
@@ -18490,11 +18490,7 @@ html.hizli-acik .hizli-yaprak > h2 {
   animation: none !important;
 }
 
-/* 1.76.3 · Akımlar sayfası (#/akimlar): çarkın altında bütün akımların dizini */
-.oda-git {
-  display: flex;
-  color: var(--ink-2);
-}
+/* 1.76.3 · Galeri ana ekranı: çarkın altında bütün akımların dizini */
 .akim-dizin {
   margin-top: 28px;
 }
@@ -18545,4 +18541,70 @@ a.akim-dizin-satir:active {
 }
 .akim-dizin-satir.kilitli b {
   color: var(--ink-3);
+}
+
+/* 1.76.3 · aramanın yanında küçük kalp: beğenilen eserler (Koleksiyon) */
+.gz-ust .arama-hapi {
+  gap: 8px;
+  padding: 0 14px;
+  font-size: 15px;
+}
+.arama-kalp {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  color: var(--ink-2);
+  text-decoration: none;
+  transition: transform 0.12s ease;
+}
+.arama-kalp.dolu {
+  color: var(--wrong-ikon);
+}
+.arama-kalp.dolu .ikon {
+  fill: currentColor;
+}
+.arama-kalp:active {
+  transform: scale(0.94);
+}
+
+/* 1.76.3 · çark resme yaklaştı (Emre: "çarkı kaydırırken resim yarım görülüyor"): kemer küçüldü, kartın altındaki
+   küçük resimler ve dolu düğme kalktı (kartın tamamı salona götürür), çark hemen adın altında. Kemer ve çark
+   iPhone 13'te aynı ekrana sığar. */
+.cark {
+  margin-top: 6px;
+}
+.cark-serit {
+  --cark-w: 172px;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+.cark-yazi {
+  margin-top: 10px;
+  gap: 3px;
+}
+.cark .cark-oge .cark-yazi b {
+  font-size: 28px;
+}
+.cark .cark-oge .onizleme {
+  display: none;
+}
+.cark-gir {
+  margin-top: 2px;
+  min-height: 0;
+  padding: 0;
+  gap: 4px;
+  border-radius: 0;
+  background: none;
+  color: var(--ink);
+  font: 600 13px/1.4 var(--sans);
+}
+.cark-teker {
+  margin-top: 0;
 }

@@ -59,33 +59,53 @@ test('Hızlı ayarlar: dil dört sekmede de var; perdeye dokununca kapanır; sek
   await expect(dil).toBeHidden();
 });
 
-test('Galeri: ana ekranda akımlar yalnız çarkta; müze planının odaları bölümlere götürür', async ({ page }) => {
+// 1.76.3: Başyapıtlar rafı ve Müze planı kalktı; Galeri'nin ana ekranı haplar + çark + akım dizini
+test('Galeri: ana ekranda raf ve müze planı yok; haplar bölümlere, kalp Koleksiyon\'a götürür; Karşılaştır Çalış\'ta', async ({ page }) => {
   await page.goto('./#/gozat');
   await expect(page.locator('[data-test="gz-akimlar"]')).toHaveCount(1);
-  await expect(page.locator('.gz-akim-serit, .gz-kisayol, ol.zaman')).toHaveCount(0);
-  const plan = page.locator('[data-test="gz-plan"]');
-  await expect(plan).toBeVisible();
-  for (const t of ['zaman-giris', 'konu-giris', 'gz-karsilastir', 'gz-koleksiyon', 'plan-akimlar']) {
-    const k = await plan.locator(`[data-test="${t}"]`).boundingBox();
-    expect(k.height).toBeGreaterThanOrEqual(44);
-    expect(k.x + k.width).toBeLessThanOrEqual(390.5);
-  }
-  // canlı içerik: yüzyıl cetvelinde açık yüzyıllar, sahne sayısı, tondo ve karşılaştırma çerçeveleri
-  expect(await plan.locator('.oda-cetvel span.acik').count()).toBeGreaterThan(0);
-  await expect(plan.locator('[data-plan-konu-yazi]')).toHaveText(/^\d+ sahne/);
-  await expect(plan.locator('[data-plan-konu] img')).toBeAttached();
-  await expect(plan.locator('[data-plan-kars] img')).toHaveCount(2);
+  await expect(page.locator('[data-test="gz-raf"], [data-test="gz-plan"], .gz-akim-serit, .gz-kisayol, ol.zaman')).toHaveCount(0);
+  await expect(page.locator('.bolumler a[aria-current="page"]')).toHaveAttribute('data-test', 'akimlar-giris');
+  const kalp = page.locator('[data-test="gz-koleksiyon"]');
+  const k = await kalp.boundingBox();
+  expect(k.height).toBeGreaterThanOrEqual(44);
+  expect(k.width).toBeGreaterThanOrEqual(44);
+  expect(k.x + k.width).toBeLessThanOrEqual(390.5);
+  // kalp aramayla aynı satırda, onun sağında
+  const ara = await page.locator('[data-test="arama-hapi"]').boundingBox();
+  expect(k.x).toBeGreaterThanOrEqual(ara.x + ara.width);
+  expect(Math.abs(k.y + k.height / 2 - (ara.y + ara.height / 2))).toBeLessThan(4);
   expect(await page.evaluate(() => document.scrollingElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
-  // 1.76.3: Akımlar koridoru Akımlar sayfasına götürür (eskiden çarka indirirdi)
-  await plan.locator('[data-test="plan-akimlar"]').click();
-  await expect(page).toHaveURL(/#\/akimlar$/);
-  await expect(page.locator('[data-test="gz-akimlar"]')).toHaveCount(1);
+  await kalp.click();
+  await expect(page).toHaveURL(/#\/koleksiyon$/);
   await page.goto('./#/gozat');
-  await plan.locator('[data-test="konu-giris"]').click();
+  await page.locator('.bolumler [data-test="konu-giris"]').click();
   await expect(page).toHaveURL(/#\/konular$/);
-  await page.goto('./#/gozat');
-  await page.locator('[data-test="gz-plan"] [data-test="zaman-giris"]').click();
+  await page.locator('.bolumler [data-test="zaman-giris"]').click();
   await expect(page).toHaveURL(/#\/zaman$/);
+  await page.locator('.bolumler [data-test="akimlar-giris"]').click();
+  await expect(page).toHaveURL(/#\/gozat$/);
+  // Karşılaştır artık Çalış'ta, "Başka turlar" ızgarasında
+  await page.goto('./#/pekistir');
+  const kars = page.locator('[data-test="ek-turlar"] [data-test="gz-karsilastir"]');
+  await expect(kars).toBeVisible();
+  expect((await kars.boundingBox()).height).toBeGreaterThanOrEqual(44);
+  await kars.click();
+  await expect(page).toHaveURL(/#\/(akim-)?karsilastir\//);
+});
+
+test('Çark resme yakın: ortadaki kemer ile çark aynı ekrana sığar (390×844)', async ({ page }) => {
+  await page.goto('./#/gozat');
+  const cark = page.locator('[data-cark]');
+  await expect(cark.locator('.cark-oge img').first()).toBeVisible();
+  await cark.evaluate((el) => Promise.all(el.getAnimations({ subtree: true }).filter((a) => a.effect.getTiming().iterations !== Infinity).map((x) => x.finished)));
+  const olcu = await page.evaluate(() => {
+    const k = document.querySelector('.cark-oge .cark-kemer').getBoundingClientRect();
+    const t = document.querySelector('[data-cark-teker]').getBoundingClientRect();
+    return { kemerUst: k.top, aralik: t.top - k.bottom, tekerAlt: t.bottom, sekme: document.querySelector('#sekmeler').getBoundingClientRect().top };
+  });
+  expect(olcu.kemerUst).toBeGreaterThanOrEqual(0);
+  expect(olcu.tekerAlt).toBeLessThanOrEqual(olcu.sekme);
+  expect(olcu.aralik).toBeLessThan(140);
 });
 
 test('Akımlar çarkı: bütün akımlar tek şeritte; çark çevrilince sıradaki akım ortaya gelir, açık salona girilir', async ({ page }) => {
@@ -135,13 +155,13 @@ test('Akımlar çarkı: bütün akımlar tek şeritte; çark çevrilince sırada
 });
 
 // ---------- 1.76.3 · Galeri alt sayfalarının üstü (Açılan hap) ve Akımlar sayfası ----------
-test('Akımlar sayfası: hap Galeri ana ekranına değil #/akimlar\'a götürür; çark ve bütün akımların dizini orada', async ({ page }) => {
+test('Akımlar hapı Galeri\'nin ana ekranına götürür; çark ve bütün akımların dizini orada', async ({ page }) => {
   await page.goto('./#/basyapitlar');
   const haplar = page.locator('.bolumler a');
   await expect(haplar).toHaveCount(4);
   await expect(page.locator('.bolumler a[aria-current="page"]')).toHaveAttribute('data-test', 'basyapit-giris');
   await page.locator('.bolumler [data-test="akimlar-giris"]').click();
-  await expect(page).toHaveURL(/#\/akimlar$/);
+  await expect(page).toHaveURL(/#\/gozat$/);
   await expect(page.locator('.bolumler a[aria-current="page"]')).toHaveAttribute('data-test', 'akimlar-giris');
   await expect(page.locator('#sekmeler a[data-sekme="gozat"]')).toHaveAttribute('aria-current', 'page');
   // çark burada da çalışır
@@ -163,9 +183,9 @@ test('Akımlar sayfası: hap Galeri ana ekranına değil #/akimlar\'a götürür
   await expect(page.locator('.ust h1')).toHaveText(ad);
 });
 
-test('Açılan hap: etkin bölüm geniş ve adı görünür, ötekiler 48 pt ikon; arama başlığın yanında; ana ekranda hap yok', async ({ page }) => {
+test('Açılan hap: etkin bölüm geniş ve adı görünür, ötekiler 48 pt ikon; arama başlığın yanında', async ({ page }) => {
   for (const [adres, test] of [
-    ['./#/akimlar', 'akimlar-giris'],
+    ['./#/gozat', 'akimlar-giris'],
     ['./#/basyapitlar', 'basyapit-giris'],
     ['./#/konular', 'konu-giris'],
     ['./#/zaman', 'zaman-giris'],
@@ -173,7 +193,9 @@ test('Açılan hap: etkin bölüm geniş ve adı görünür, ötekiler 48 pt iko
     await page.goto(adres);
     const etkin = page.locator('.bolumler a[aria-current="page"]');
     await expect(etkin).toHaveAttribute('data-test', test);
-    await etkin.evaluate((el) => Promise.all(el.getAnimations({ subtree: true }).map((x) => x.finished)));
+    // sayfa "Yükleniyor…" → içerik diye yeniden çizilebilir; geçiş bitene dek yokla
+    await expect.poll(() => page.locator('.bolumler a:not([aria-current])').evaluateAll((l) => Math.max(...l.map((e) => Math.round(e.getBoundingClientRect().width))))).toBe(48);
+    await expect.poll(() => page.locator('.bolumler').evaluate((el) => el.getAnimations({ subtree: true }).filter((a) => a.playState === 'running').length)).toBe(0);
     const kutular = await page.locator('.bolumler a').evaluateAll((l) => l.map((e) => ({ w: e.getBoundingClientRect().width, h: e.getBoundingClientRect().height, sag: e.getBoundingClientRect().right, etkin: e.hasAttribute('aria-current') })));
     for (const k of kutular) {
       expect(k.h).toBeGreaterThanOrEqual(44);
@@ -196,8 +218,4 @@ test('Açılan hap: etkin bölüm geniş ve adı görünür, ötekiler 48 pt iko
   await expect(yeni).toHaveAttribute('data-test', 'konu-giris');
   await expect.poll(async () => (await yeni.boundingBox()).width).toBeGreaterThan(150);
   await expect.poll(async () => Math.round((await page.locator('.bolumler [data-test="zaman-giris"]').boundingBox()).width)).toBe(48);
-  await page.goto('./#/gozat');
-  await expect(page.locator('.bolumler')).toHaveCount(0);
-  await expect(page.locator('[data-test="arama-hapi"]')).toBeVisible();
-  await expect(page.locator('[data-test="gz-akimlar"]')).toHaveCount(1);
 });
