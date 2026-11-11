@@ -81,6 +81,7 @@ const YOLLAR = {
   'sekme-bugun': '<rect x="4" y="3.5" width="16" height="17" rx="1.5"/><rect x="7.5" y="7" width="9" height="10"/>',
   'sekme-harita': '<path d="M6 20c0-4 12-4 12-8s-12-4-12-8"/><circle cx="6" cy="20" r="1.4"/><circle cx="6" cy="4" r="1.4"/>',
   'sekme-gozat': '<rect x="3.5" y="4" width="7.5" height="9"/><rect x="13.5" y="4" width="7" height="5.5"/><rect x="13.5" y="12" width="7" height="8"/><rect x="3.5" y="15.5" width="7.5" height="4.5"/>',
+  'sekme-ayarlar': '<path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/>',
   'sekme-pekistir': '<rect x="7" y="4" width="12" height="16" rx="1.5"/><path d="M7 7.5 4 8.3l2.6 10.7"/>',
   'sekme-ilerleme': '<rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M8.5 2.5v3M12 2.5v3M15.5 2.5v3"/><path d="M8 16c1.4-3.2 2.8-3.2 3.8 0s2.6 1.2 4.2-3"/>',
   // yolculuk haritası: katlanmış harita ve üstünde yol

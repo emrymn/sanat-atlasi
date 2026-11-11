@@ -55,7 +55,7 @@ export function rozetiGuncelle(kapaniyor = false) {
 export function ayarlarSayfasi() {
   const a = d.ilerleme.ayarlar;
   gununRengi();
-  ciz(`${ust('Ayarlar', '#/ilerleme')}
+  ciz(`${ust('Ayarlar', '#/', { geriYok: true })}
     <div>
       <div class="ayar"><b id="kart-etiket">Günlük kart sayısı</b>
         <div class="adimlayici" role="group" aria-labelledby="kart-etiket">

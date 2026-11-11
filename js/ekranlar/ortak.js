@@ -404,6 +404,7 @@ const SEKMELER = [
   ['harita', 'Yolculuk', '#/harita'],
   ['gozat', 'Galeri', '#/gozat'],
   ['pekistir', 'Çalış', '#/pekistir'],
+  ['ayarlar', 'Ayarlar', '#/ayarlar'], // her ekrandan başparmakla ulaşılsın (1.76.1)
 ];
 // İş 76: sekmelerin ana sayfaları (geri yok)
 export const SEKME_ADRESLERI = SEKMELER.map(([, , h]) => h);

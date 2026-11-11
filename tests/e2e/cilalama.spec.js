@@ -32,12 +32,13 @@ async function kenarKaydir(page, context) {
   await page.waitForTimeout(500);
 }
 
-test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en az 44 pt; dört sekme ekrana sığar', async ({ page, context }) => {
+test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en az 44 pt; beş sekme ekrana sığar', async ({ page, context }) => {
   await agiHazirla(context);
   // İş 171: Galeri'nin ana ekranında haplı menü yerine dört kısayol; haplar alt sayfalarda (Başyapıtlar, Konular, Zaman)
   await page.goto('./#/gozat');
-  await expect(page.locator('.gz-kisayol a')).toHaveCount(4);
-  for (const a of await page.locator('.gz-kisayol a').all()) {
+  // 1.76.1: kısayollar Keşfet vitrininde
+  await expect(page.locator('.gz-vitrin-kart')).toHaveCount(4);
+  for (const a of await page.locator('.gz-vitrin-kart').all()) {
     const k = await a.boundingBox();
     expect(k.height).toBeGreaterThanOrEqual(44);
     expect(k.x + k.width).toBeLessThanOrEqual(390.5);
@@ -442,8 +443,9 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
   await page.waitForTimeout(1000);
   await page.locator('[data-devasa-indir]').click();
   await page.waitForTimeout(150);
-  await page.locator('[data-geri]').first().click();
-  await expect(page).toHaveURL(/#\/ilerleme$/);
+  // 1.76.1: Ayarlar sekmenin kökü (geri düğmesi yok); başka sekmeye geçilince indirme sürer
+  await page.locator('#sekmeler a[data-sekme="bugun"]').click();
+  await expect(page).toHaveURL(/#\/$/);
   await expect.poll(telefonda, { timeout: 15000 }).toBeGreaterThanOrEqual(3);
   expect(hatalar).toEqual([]);
   // indirme sürerken uygulama kapanır (yeniden yükleme): açılınca kendiliğinden kaldığı yerden sürer

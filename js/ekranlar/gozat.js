@@ -14,6 +14,8 @@ import { enCokKarisanlar } from '../ogrenme.js';
 import { akimKarsilastirmaAdresi } from '../akim.js';
 import { konulariAl, konuBul, konuHaritasiniAyarla, kapakSec, TUR_AD, TUR_SIRA } from '../ikonografi.js';
 import { seviyeKaydi, seviyeDurumu } from '../seviye.js';
+import { BAS as ZAMAN_BAS, SON as ZAMAN_SON, akimBantlari } from '../zaman.js';
+import { koleksiyonEserleri } from './koleksiyon.js';
 import {
   jsonGetir,
   odakliGorsel,
@@ -537,13 +539,12 @@ export function gozAt() {
       <ul class="gz-raf-serit" data-gz-raf-serit></ul>
     </section>
     <section class="gz-kesfet" aria-labelledby="gz-kesfet-baslik">
-      <h2 id="gz-kesfet-baslik">Keşfet</h2>
-      <p>Bir ayrıntıdan yola çık, sanatın farklı yönlerini tanı.</p>
-      <nav class="gz-kisayol kesif-kartlari" aria-label="Kısayollar">
-        <a href="#/konular" data-test="konu-giris">${ikon('isaret', 24, 1.6)}<span><b>Konular</b><small>Resimlerdeki sembolleri ve hikâyeleri keşfet.</small></span></a>
-        <a href="#/zaman" data-test="zaman-giris">${ikon('zaman-cizgi', 24, 1.6)}<span><b>Zaman</b><small>Sanatçıları yaşadıkları dönemlerle birlikte tanı.</small></span></a>
+      <div class="gz-raf-bas"><h2 id="gz-kesfet-baslik">Keşfet</h2></div>
+      <nav class="gz-vitrin" aria-label="Galerinin bölümleri">
+        <a class="gz-vitrin-kart" href="#/konular" data-test="konu-giris"><span class="gz-vitrin-resim uclu" data-vitrin="konular" aria-hidden="true"></span><span class="gz-vitrin-yazi"><b>Konular</b><small data-vitrin-alt="konular">Resimlerdeki hikâyeler</small></span></a>
+        <a class="gz-vitrin-kart" href="#/zaman" data-test="zaman-giris"><span class="gz-vitrin-resim gz-mini-zaman" aria-hidden="true">${miniZaman(durumlar)}</span><span class="gz-vitrin-yazi"><b>Zaman</b><small>Yedi yüzyıl · ${acikSayi} akım açık</small></span></a>
         ${karsilastirKarosu()}
-        <a href="#/koleksiyon" data-test="gz-koleksiyon">${ikon('kalp', 24, 1.6)}<span><b>Koleksiyon</b><small>Sevdiğin eserleri biriktir, kendi sergine dön.</small></span></a>
+        <a class="gz-vitrin-kart" href="#/koleksiyon" data-test="gz-koleksiyon"><span class="gz-vitrin-resim uclu" data-vitrin="koleksiyon" aria-hidden="true">${ikon('kalp', 26, 1.4)}</span><span class="gz-vitrin-yazi"><b>Koleksiyon</b><small>${d.ilerleme.koleksiyon.length ? `${d.ilerleme.koleksiyon.length} eser` : 'Henüz boş: eserlerde ♡ ile ekle'}</small></span></a>
       </nav>
     </section>
     <section class="gz-perde" aria-label="Galeri girişi">
@@ -570,24 +571,83 @@ export function gozAt() {
       .join('')}</ol>`);
   onizlemeleriDoldur();
   rafDoldur();
+  vitrinDoldur();
 }
 
-// İş 171: Karşılaştır kısayolu. En çok karıştırılan iki sanatçı varsa onlar; yoksa açık ilk iki akım.
-function karsilastirKarosu() {
+// 1.76.1: Galeri'nin Keşfet kartları (Konular, Zaman, Karşılaştır, Koleksiyon) bölümün içinden bir parça gösterir:
+// konu kapakları, akım bantlarından küçük bir zaman çizgisi, karşılaştırılacak iki sanatçının eseri, koleksiyondakiler.
+function miniZaman(durumlar) {
+  const acik = new Set(durumlar.filter((a) => a.acik).map((a) => a.ad));
+  const bantlar = akimBantlari(d.akimlar, d.sanatcilar, 1, { harf: 0 });
+  const satir = Math.max(1, ...bantlar.map((b) => b.serit + 1));
+  const ara = ZAMAN_SON - ZAMAN_BAS;
+  return bantlar
+    .map(
+      (b) =>
+        `<i class="${acik.has(b.ad) ? 'acik' : ''}" style="left:${(4 + ((b.bas - ZAMAN_BAS) / ara) * 92).toFixed(2)}%;width:${Math.max(1.5, ((b.son - b.bas) / ara) * 92).toFixed(2)}%;top:${(10 + (b.serit / satir) * 80).toFixed(2)}%;height:${(80 / satir - 3).toFixed(2)}%;animation-delay:${(((b.bas - ZAMAN_BAS) / ara) * 500).toFixed(0)}ms;--renk:${akimRenk(b.ad)}"></i>`,
+    )
+    .join('');
+}
+
+// Karşılaştır: en çok karıştırılan iki sanatçı varsa onlar; yoksa açık ilk iki akımın birer sanatçısı.
+function karsilastirCifti() {
   const [ilk] = enCokKarisanlar(d.ilerleme.karisanlar || {}, { adet: 1, esik: 1, varMi: (id) => d.harita.has(id) });
-  const ad = (id) => kacis(bilinenAd(d.harita.get(id).ad, d.kisaAdlar[id]));
-  let href = '';
-  let alt = '';
+  const ad = (s) => bilinenAd(s.ad, d.kisaAdlar[s.id]);
   if (ilk) {
-    href = karsilastirmaAdresi(ilk.a, ilk.b);
-    alt = `${ad(ilk.a)} ↔ ${ad(ilk.b)}`;
-  } else {
-    const acik = akimDurumlari(d.akimlar, d.sanatcilar, islenen()).filter((a) => a.acik);
-    if (acik.length < 2) return '';
-    href = akimKarsilastirmaAdresi(acik[0].ad, acik[1].ad);
-    alt = `${kacis(acik[0].ad)} ↔ ${kacis(acik[1].ad)}`;
+    const a = d.harita.get(ilk.a);
+    const b = d.harita.get(ilk.b);
+    return { href: karsilastirmaAdresi(ilk.a, ilk.b), alt: `${ad(a)} ↔ ${ad(b)}`, sanatcilar: [a, b] };
   }
-  return `<a href="${href}" data-test="gz-karsilastir" aria-label="Karşılaştır: ${alt}">${ikon('karsilastir', 24, 1.6)}<span><b>Karşılaştır</b><small>İki üslubu yan yana incele, farkları gör.</small></span></a>`;
+  const k = islenen();
+  const acik = akimDurumlari(d.akimlar, d.sanatcilar, k).filter((a) => a.acik);
+  if (acik.length < 2) return null;
+  const temsilci = (akim) => d.sanatcilar.filter((s) => s.akim === akim && k.has(s.konu)).sort((x, y) => (y.kurs_eserleri?.length || 0) - (x.kurs_eserleri?.length || 0))[0];
+  return { href: akimKarsilastirmaAdresi(acik[0].ad, acik[1].ad), alt: `${acik[0].ad} ↔ ${acik[1].ad}`, sanatcilar: [temsilci(acik[0].ad), temsilci(acik[1].ad)].filter(Boolean) };
+}
+function karsilastirKarosu() {
+  const c = karsilastirCifti();
+  if (!c) return '';
+  return `<a class="gz-vitrin-kart" href="${c.href}" data-test="gz-karsilastir" aria-label="Karşılaştır: ${kacis(c.alt)}"><span class="gz-vitrin-resim ciftli" data-vitrin="karsilastir" aria-hidden="true"><span></span><em>↔</em><span></span></span><span class="gz-vitrin-yazi"><b>Karşılaştır</b><small>${kacis(c.alt)}</small></span></a>`;
+}
+
+async function vitrinDoldur() {
+  const no = cizimNo();
+  const yer = (ad) => ekran.querySelector(`[data-vitrin="${ad}"]`);
+  const doldur = (ad, eserler) => {
+    const kutu = yer(ad);
+    const l = eserler.filter(Boolean);
+    if (!kutu || !guncelMi(no) || !l.length) return;
+    const parca = l.map((e, i) => `<span style="--j:${i}">${kucukGorsel(e, 400, { odak: true })}</span>`);
+    if (ad === 'karsilastir') kutu.innerHTML = `${parca[0] || '<span></span>'}<em>↔</em>${parca[1] || '<span></span>'}`;
+    else kutu.innerHTML = parca.join('');
+    kutu.classList.add('dolu');
+  };
+  // Karşılaştır
+  const c = karsilastirCifti();
+  if (c)
+    Promise.all(c.sanatcilar.map((s) => sanatciEserleri(s).then(enBilinen).catch(() => null))).then((l) => doldur('karsilastir', l));
+  // Koleksiyon: en son işaretlenen üç eser
+  if (d.ilerleme.koleksiyon.length) koleksiyonEserleri().then((l) => doldur('koleksiyon', l.slice(0, 3))).catch(() => {});
+  // Konular: en çok işlenen üç konunun kapağı
+  const liste = await ikonografiVeri();
+  if (!guncelMi(no) || !liste || !liste.length) return;
+  const alt = ekran.querySelector('[data-vitrin-alt="konular"]');
+  if (alt) alt.textContent = `${liste.length} hikâye ve sembol`;
+  const kotu = kotuler();
+  const secilen = liste.slice(0, 3);
+  const kapaklar = await Promise.all(
+    secilen.map(async (k) => {
+      const adaylar = await Promise.all(
+        k.eserler.slice(0, 6).map(([a, sid]) =>
+          sanatciEserleri(d.harita.get(sid))
+            .then((l) => eserEslestir(l, { anahtar: a, sanatci: sid }))
+            .catch(() => null),
+        ),
+      );
+      return kapakSec(adaylar.filter((e) => e && (secilenGorsel(e, kotu) || e.gorseller[0])));
+    }),
+  );
+  doldur('konular', kapaklar);
 }
 
 // İş 171: Galeri'nin en üstünde Başyapıtlar rafı: hikâyesi ya da rehberli incelemesi olanlar önce, açık sanatçılar önce

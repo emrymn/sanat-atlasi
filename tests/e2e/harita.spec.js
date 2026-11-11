@@ -14,7 +14,7 @@ test('Harita sekmesi: 9 dönem resmi, her bölüm bir durak, buradasın yolcusu,
   await hazir(page);
   // büyük Harita sekmesi ikinci sırada
   const sekmeler = page.locator('#sekmeler a');
-  await expect(sekmeler).toHaveCount(4); // İş 171: Bugün · Yolculuk · Galeri · Çalış
+  await expect(sekmeler).toHaveCount(5); // İş 171: Bugün · Yolculuk · Galeri · Çalış; 1.76.1: Ayarlar
   await expect(sekmeler.nth(1)).toHaveAttribute('data-sekme', 'harita');
   await expect(sekmeler.nth(2)).toHaveAttribute('data-sekme', 'gozat');
   await sekmeler.nth(1).click();

@@ -118,8 +118,10 @@ test('Bugün (Tasarım B): açılış tek ekran; ad, eser ve yıl, tek kelimelik
   await kart.locator('[data-bugun-basa]').click();
   await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
   await expect(kart.locator('.sahne-isim')).toBeFocused();
-  await page.locator('.bugun-ayarlar').click();
+  // 1.76.1: Ayarlar sekme çubuğunda; sekmenin kökü, geri düğmesi yok
+  await page.locator('#sekmeler a[data-sekme="ayarlar"]').click();
   await expect(page.getByRole('heading', { name: 'Ayarlar', exact: true })).toBeVisible();
+  await expect(page.locator('#sekmeler a[data-sekme="ayarlar"]')).toHaveAttribute('aria-current', 'page');
   await page.goto('./');
   // sanatçının adı Günün sanatçısı sayfasına götürür
   await kart.locator('.sahne-isim').click();
@@ -191,8 +193,8 @@ test('yürüyüş: yatay kaydırma yok', async ({ page }) => {
 test('sekme çubuğu: Bugün · Yolculuk · Galeri · Çalış; Çalış’ta bekleyen kart sayısı; Ben Bugün’ün sağ üstünden açılır', async ({ page }) => {
   await page.goto('./');
   const sekmeler = page.locator('#sekmeler a');
-  await expect(sekmeler).toHaveCount(4);
-  expect((await sekmeler.allTextContents()).map((t) => t.replace(/\d+/g, '').trim())).toEqual(['Bugün', 'Yolculuk', 'Galeri', 'Çalış']);
+  await expect(sekmeler).toHaveCount(5);
+  expect((await sekmeler.allTextContents()).map((t) => t.replace(/\d+/g, '').trim())).toEqual(['Bugün', 'Yolculuk', 'Galeri', 'Çalış', 'Ayarlar']);
   for (const a of await sekmeler.all()) expect((await a.boundingBox()).height).toBeGreaterThanOrEqual(44);
   // rozet: bugünkü turun kart sayısı
   const rozet = page.locator('[data-test="sekme-rozet"]');
@@ -208,4 +210,29 @@ test('sekme çubuğu: Bugün · Yolculuk · Galeri · Çalış; Çalış’ta be
   await expect(page.locator('#sekmeler a[data-sekme="bugun"]')).toHaveAttribute('aria-current', 'page');
   await page.locator('.ust .geri').click();
   await expect(page.locator('[data-test="gunun-kart"]')).toBeVisible();
+});
+
+// 1.76.1: Biyografi ve En üste dön kaydırarak değil perdeyle geçer: ekran kararır, sayfa bir anda yerine geçer,
+// kamera ara adımlardan geçmez, perde açılıp kalkar
+test('Bugün: Biyografi ve En üste dön perdeyle geçer; yürüyüş adımları akmaz', async ({ page, context }) => {
+  await context.addInitScript(() => (window.__atlasGecis = true));
+  await page.goto('./');
+  const kok = page.locator('.bugun-yuruyus');
+  await expect(kok).toHaveClass(/yur-hazir/);
+  await page.locator('[data-bugun-biyografi]').click();
+  const perde = page.locator('.bugun-gecis');
+  await expect(perde).toBeAttached();
+  // perde kapanmadan sayfa yerinde durur
+  expect(await page.evaluate(() => scrollY)).toBe(0);
+  await expect(perde).toHaveClass(/aciliyor/, { timeout: 3000 });
+  // perde açılırken sayfa Hayatı bölümünde ve kamera son adımda (ara adımlar gösterilmedi)
+  expect(await page.evaluate(() => scrollY)).toBeGreaterThan(1000);
+  const adim = Number(await kok.getAttribute('data-adim'));
+  expect(adim).toBeGreaterThanOrEqual(Number(await kok.locator('.yur-adim').count()) - 2);
+  await expect(perde).toHaveCount(0, { timeout: 3000 });
+  await expect(page.locator('[data-yur-bio] h2')).toBeInViewport();
+  await page.locator('[data-bugun-basa]').click();
+  await expect(perde).toHaveCount(0, { timeout: 4000 });
+  expect(await page.evaluate(() => scrollY)).toBe(0);
+  await expect(page.locator('.sahne-isim')).toBeFocused();
 });

@@ -61,6 +61,18 @@ export function noktaAdimi(n, { W, H, IW, IH, kirp, kartH, ust, alt, kapla }) {
 
 let etkin = null; // aynı anda tek yürüyüş (Bugün); sayfa bellekten geri konunca kaydırma olayıyla yeniden başlar
 
+// Biyografi ve "En üste dön" düğmeleri sayfayı perde arkasında bir anda kaydırır; kamera ara adımlardan geçmeden
+// (hızlı montaj gibi) yeni yerine oturur.
+export function yuruyusAtla() {
+  const y = etkin;
+  if (!y || !y.D) return;
+  const H = y.H || window.innerHeight;
+  y.kamera = Math.max(0, Math.min(y.D.length - 1, window.scrollY / H));
+  y.sonSira = -1;
+  y.sonY = window.scrollY;
+  if (!y.kare) y.kare = requestAnimationFrame(y.adim);
+}
+
 // kok: .bugun-yuruyus; img: sahnedeki resim; odak: [x, y] yüzde (açılış karesi); hareketsiz: kamera anında yerine geçer
 export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, hareketsiz = false, acilis = false, yakin = 1 }) {
   const akis = kok.querySelector('[data-yur-akis]');
@@ -158,6 +170,7 @@ export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, harek
     if (etkin !== y) return window.removeEventListener('resize', olc);
     if (kok.isConnected && y.IW) durumlar();
   };
+  y.adim = kare;
   window.addEventListener('scroll', kaydi, { passive: true });
   window.addEventListener('resize', olc);
 

@@ -4,7 +4,7 @@ import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { turOzeti, turAltYazisi } from '../oturum.js';
 import { sanatciEserleri, eserBaslik } from '../eserler.js';
 import { gorselUrl, gorselYedek, secilenGorsel, gorselOdakNoktasi, kaplamaKaymasi, adlaOdak, yuruyusAdresleri, yuruyusEki } from '../gorsel.js';
-import { yuruyusAdimlari, yuruyusBaslat } from '../yuruyus.js';
+import { yuruyusAdimlari, yuruyusBaslat, yuruyusAtla } from '../yuruyus.js';
 import { hareketAz } from '../gecis.js';
 import { baskaSanatci } from '../gunun.js';
 import { gunlukGuncelle, yedekMetni, yedekHatirlatmasi } from '../depo.js';
@@ -90,7 +90,7 @@ function turKarti(tur, g) {
 // İş 171: sanatçının yürüyüşü varsa (kayit) sayfa aşağı kayar: resmin içinde yürüyüş, sonra Hayatı ve günün işi.
 // Yürüyüş verisi yoksa kapağın altında doğrudan biyografi gösterilir.
 const ustHtml = (tekrar) =>
-  `<div class="bugun-ust"><span class="etiket bugun-tarih" data-test="tekrar">${tekrar}</span><nav class="bugun-araclar" aria-label="Kişisel menü"><a class="bugun-ayarlar" href="#/ayarlar">${ikon('ayarlar', 18, 1.6)}<span>Ayarlar</span></a><a class="bugun-ben" href="#/ilerleme" aria-label="Ben: ilerleme">Ben</a></nav></div>`;
+  `<div class="bugun-ust"><span class="etiket bugun-tarih" data-test="tekrar">${tekrar}</span><a class="bugun-ben" href="#/ilerleme" aria-label="Ben: ilerleme">Ben</a></div>`;
 function kapakHtml(gs, kayit) {
   const eser = kayit ? [yuruyusEserAdi(gs.id, kayit), kayit.yil].filter(Boolean).join(' · ') : '';
   return `<button class="bugun-buyut" type="button" data-bugun-buyut aria-label="Resmi tam ekran aç" disabled></button>
@@ -183,14 +183,9 @@ export function anaSayfa() {
     }
     const kapak = ekran.querySelector('.sahne-isim');
     const bio = ekran.querySelector('[data-yur-bio]');
-    ekran.querySelector('[data-bugun-biyografi]').onclick = () => {
-      bio.focus({ preventScroll: true });
-      bio.closest('.yur-hayat').scrollIntoView({ behavior: hareketAz() ? 'instant' : 'smooth', block: 'start' });
-    };
-    ekran.querySelector('[data-bugun-basa]').onclick = () => {
-      kapak.focus({ preventScroll: true });
-      window.scrollTo({ top: 0, behavior: hareketAz() ? 'instant' : 'smooth' });
-    };
+    ekran.querySelector('[data-bugun-biyografi]').onclick = () =>
+      perdeyleGit(() => bio.closest('.yur-hayat').scrollIntoView({ behavior: 'instant', block: 'start' }), bio);
+    ekran.querySelector('[data-bugun-basa]').onclick = () => perdeyleGit(() => window.scrollTo({ top: 0, behavior: 'instant' }), kapak);
     imzaGoster(gs, ekran.querySelector('.sahne-isim')); // İş 48: tablonun üstünde adın altında imza
   } else ekranRengi(null, null);
 }
@@ -265,6 +260,37 @@ async function yuruyusKur(s, kayit, perde) {
   eSozu.then((e) => e && kok.isConnected && bugunDugmeleri(s, e, kok, false));
   dinleEkle(s, kok.querySelector('[data-yur-dinle]'));
   await biyografiDoldur(s, kok);
+}
+
+// Biyografiye inerken ve başa dönerken sayfa kaydırılarak gidilmez (yürüyüşün bütün adımları bir saniyede
+// akıyordu): ekran yavaşça kararır, sayfa perde arkasında yerine geçer, sonra yavaşça açılır.
+const PERDE_KAPAN = 480;
+const PERDE_ACIL = 900;
+function perdeyleGit(git, odak) {
+  const bitir = () => {
+    git();
+    yuruyusAtla();
+    odak.focus({ preventScroll: true });
+  };
+  if (hareketAz() || document.querySelector('.bugun-gecis')) return bitir();
+  const p = document.createElement('div');
+  p.className = 'bugun-gecis';
+  p.setAttribute('aria-hidden', 'true');
+  p.style.setProperty('--kapan', `${PERDE_KAPAN}ms`);
+  p.style.setProperty('--acil', `${PERDE_ACIL}ms`);
+  document.body.append(p);
+  requestAnimationFrame(() => requestAnimationFrame(() => p.classList.add('kapali')));
+  setTimeout(() => {
+    bitir();
+    // yeni yer bir kare çizilsin, sonra perde açılsın
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        p.classList.remove('kapali');
+        p.classList.add('aciliyor');
+        setTimeout(() => p.remove(), PERDE_ACIL + 60);
+      }),
+    );
+  }, PERDE_KAPAN + 40);
 }
 
 async function biyografiDoldur(s, kok) {
