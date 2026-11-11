@@ -16432,13 +16432,6 @@ html.yuruyus-icinde .sekmeler {
 .sekmeler a[aria-current='page'] {
   font-weight: 600;
 }
-.sekmeler a[aria-current='page'] .ikon {
-  color: var(--pirinc);
-}
-.sekme-isaret {
-  background: rgba(var(--pirinc-rgb), 0.12);
-  box-shadow: inset 0 0 0 1px rgba(var(--pirinc-rgb), 0.38);
-}
 .sekme-rozet {
   position: absolute;
   top: 3px;
@@ -17548,20 +17541,7 @@ main[data-hareket='cevap'] .alt-yaprak .sonuc .ikon path {
 .gz-kisayol.dortlu b {
   font: 500 12px/1.2 var(--sans);
 }
-/* sekme çubuğu: kayan hap yok; etkin sekmenin ikonu pirinç, yazısı açık ve kalın */
-.sekme-isaret {
-  opacity: 0;
-}
-.sekmeler {
-  border-color: rgba(235, 229, 218, 0.12);
-}
-.sekmeler a {
-  color: var(--ink-2);
-  gap: 5px;
-}
-.sekmeler a[aria-current='page'] {
-  color: var(--ink);
-}
+/* 1.76.2: sekme çubuğu yine cam (liquid glass): etkin sekmenin arkasında kayan cam hap (İş 24'teki gibi) */
 .gz-akim::after {
   content: '';
   position: absolute;
