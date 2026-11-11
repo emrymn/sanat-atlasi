@@ -127,3 +127,35 @@ test('Yolculuk: kurs rozeti; panelde sıradaki konu "İşlendi yap" ile işlenir
   await page.locator('[data-test="kurs-hepsi"]').click();
   await expect(page.getByRole('heading', { name: 'Ben' })).toBeVisible();
 });
+
+test('Galeri: akım filtreleri, kilitler ve sayfaya geri dönüşte seçim korunur', async ({ page }) => {
+  await page.goto('./#/gozat');
+  const kartlar = page.locator('.galeri-akim-izgara > li');
+  await expect(kartlar.first()).toBeVisible();
+  const toplam = await kartlar.count();
+  const acik = await page.locator('.galeri-akim-izgara > li:not(.kilitli)').count();
+  expect(acik).toBeGreaterThan(0);
+  expect(toplam).toBeGreaterThan(acik);
+  await page.getByRole('button', { name: /^Açık \d/ }).click();
+  await expect(page.locator('.galeri-akim-izgara > li:visible')).toHaveCount(acik);
+  await expect(page.locator('[data-galeri-filtre="acik"]')).toHaveAttribute('aria-pressed', 'true');
+  await kartlar.locator('a').first().click();
+  await expect(page).toHaveURL(/#\/akim\//);
+  await page.locator('[data-geri]').first().click();
+  await expect(page.locator('[data-galeri-filtre="acik"]')).toHaveAttribute('aria-pressed', 'true');
+  await page.locator('[data-galeri-filtre="kilitli"]').click();
+  await expect(page.locator('.galeri-akim-izgara > li:visible')).toHaveCount(toplam - acik);
+  await expect(page.locator('.galeri-akim-izgara > li:visible a')).toHaveCount(0);
+  await page.locator('[data-galeri-filtre="hepsi"]').click();
+  await expect(page.locator('.galeri-akim-izgara > li:visible')).toHaveCount(toplam);
+  for (const width of [320, 390, 768]) {
+    await page.setViewportSize({ width, height: 844 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    for (const card of await page.locator('.galeri-akim-izgara .zaman-kart').all()) {
+      expect(await card.evaluate((el) => el.scrollWidth <= el.clientWidth)).toBe(true);
+    }
+  }
+  await page.locator('[data-galeri-basa]').click();
+  await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
+  await expect(page.getByRole('heading', { name: 'Galeri', exact: true })).toBeFocused();
+});

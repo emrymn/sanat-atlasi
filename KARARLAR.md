@@ -1918,3 +1918,12 @@ Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişikli
 - İsim altındaki yinelenen sanatçı bağlantısı Biyografi düğmesine dönüştü. Aynı sayfanın Hayatı bölümüne kaydırır; sondaki En üste dön kapağa döner. Klavye odağı hedefe taşınır, hareket azaltma tercihinde kaydırma anlıktır. Yürüyüş verisi olmayan durumda da biyografi bölümü gösterilir.
 - Galeride ayrıntılı, kilit ve ilerleme bilgilerini taşıyan akımlar listesi korunur. Üstte yinelenen akımlar şeridi ve küçük kısayolların yerine Konular, Zaman, Karşılaştır ve Koleksiyon açıklamalı kartları gelir.
 - Önbellek sürümü 1.76.1: birleştirilip yayımlandığında mevcut PWA kurulumları güncel dosyaları alabilsin. Bu çalışma yalnız ayrı dalda, main ile birleştirilmeden hazırlanır.
+
+
+### Galeri tasarımının uygulanması
+
+- Galeri ana sayfası `galeri-sayfasi` kapsamındaki stillerle yenilendi; uygulamanın alt menüsü, temaları ve diğer ekranları değiştirilmedi. Mevcut eser görselleri kullanıldı.
+- Konular, Zaman, Karşılaştır ve Koleksiyon bağlantıları sayfanın üstünde kompakt kartlar. Başyapıtların isimleri görselin altında; hikâye/inceleme rozetleri korunur.
+- Tekrarlayan giriş şeridi kaldırıldı. 29 akım iki sütunlu kartlarla, geniş ekranda üç sütunla gösterilir. Açılma koşulları ve açık sanatçı sayıları korunur; kilitli akımlara bağlantı verilmez.
+- Tümü / Açık / Kilitli filtreleri sayfanın kendi DOM durumunda tutulur; alt sayfadan geri dönünce seçili filtre korunur. Sonuç sayısı erişilebilir canlı alanda güncellenir. Boş grupta açıklama gösterilir; sayfa sonunda başa dönüş vardır.
+- Her akım için tek gerçek eser kapağı yüklenir; önceki üç küçük eser + arka plan + hareketli şerit tekrarı kaldırılmıştır.

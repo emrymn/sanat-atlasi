@@ -17571,3 +17571,120 @@ html:has(.bugun-biyografili) body {
   color: var(--ink-2);
   font: 400 14px/1.45 var(--sans);
 }
+
+/* Galeri · eser, keşif ve akım alanları. Bu düzen yalnız Galeri ana sayfasına aittir. */
+.galeri-sayfasi .ust { margin-bottom: 18px; }
+.galeri-sayfasi .arama-hapi {
+  min-height: 50px;
+  margin-bottom: 28px;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  font-size: 14px;
+}
+.galeri-bolum-bas { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.galeri-bolum-bas h2 { margin: 0; font: 400 27px/1.15 var(--serif); }
+.galeri-bolum-bas > span { flex: none; color: var(--ink-2); font: 400 11px/1.4 var(--sans); }
+.galeri-sayfasi .gz-kesfet { margin: 0 0 30px; }
+.galeri-sayfasi .gz-kesfet h2 { font-size: 24px; }
+.galeri-sayfasi .kesif-kartlari { gap: 10px; margin-top: 16px; }
+.galeri-sayfasi .gz-kisayol.kesif-kartlari a {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  min-height: 84px;
+  padding: 14px 12px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(var(--pirinc-rgb), 0.055), transparent), var(--surface);
+}
+.galeri-sayfasi .kesif-kartlari .ikon { width: 20px; height: 20px; }
+.galeri-sayfasi .kesif-kartlari b { font: 400 20px/1.2 var(--serif); }
+.galeri-sayfasi .gz-kisayol.kesif-kartlari small { margin-top: 5px; font: 400 11px/1.4 var(--sans); }
+.galeri-sayfasi .gz-raf { margin-top: 0; margin-bottom: 32px; }
+.galeri-sayfasi .gz-raf-bas { align-items: center; }
+.galeri-sayfasi .gz-raf-bas h2 { font-size: 27px; }
+.galeri-sayfasi .gz-raf-bas a { gap: 4px; font-size: 12px; }
+.galeri-raf-not { margin: 0 0 16px; padding: 0 var(--yan); color: var(--ink-2); font: 400 13px/1.5 var(--sans); }
+.galeri-sayfasi .gz-raf-serit { min-height: 264px; gap: 14px; padding-top: 0; }
+.galeri-sayfasi .gz-raf-kart {
+  width: 212px;
+  height: auto;
+  border-radius: 0;
+  overflow: visible;
+  background: none;
+  color: var(--ink);
+}
+.galeri-sayfasi .gz-raf-kart::after { display: none; }
+.galeri-eser-resim { position: relative; display: block; height: 182px; border-radius: 14px; overflow: hidden; background: var(--surface); }
+.galeri-sayfasi .gz-raf-kart img { position: static; display: block; height: 100%; }
+.galeri-sayfasi .gz-raf-yazi { position: static; padding: 12px 2px 0; gap: 5px; }
+.galeri-sayfasi .gz-raf-yazi b { font: 400 20px/1.2 var(--serif); -webkit-line-clamp: 2; }
+.galeri-sayfasi .gz-raf-yazi small { font: 400 12px/1.4 var(--sans); color: var(--ink-2); }
+.galeri-akimlar { border-top: 1px solid var(--border); padding-top: 26px; }
+.galeri-filtre { display: flex; gap: 4px; margin-top: 18px; padding: 4px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); }
+.galeri-filtre button {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 4px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: none;
+  color: var(--ink-2);
+  font: 500 13px/1.3 var(--sans);
+  cursor: pointer;
+}
+.galeri-filtre button span { margin-left: 4px; font-size: 11px; }
+.galeri-filtre button[aria-pressed='true'] { background: var(--bg); color: var(--pirinc); border-color: var(--border); box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12); }
+.galeri-sira-not { margin: 14px 0 18px; color: var(--ink-2); font: 400 12px/1.5 var(--sans); }
+.galeri-sayfasi .galeri-akim-izgara { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 12px; padding: 0; }
+.galeri-sayfasi .galeri-akim-izgara::before { display: none; }
+.galeri-sayfasi .zaman-oge { min-width: 0; animation: none; }
+.galeri-sayfasi .zaman-oge[hidden] { display: none; }
+.galeri-sayfasi .zaman-kart {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  box-sizing: border-box;
+  padding: 0;
+  gap: 0;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: none;
+  background: var(--surface);
+  overflow: hidden;
+}
+.galeri-sayfasi .galeri-akim-resim { display: block; flex: none; margin: 0; height: 104px; width: 100%; overflow: hidden; background: var(--border); }
+.galeri-akim-resim img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.galeri-akim-yazi { display: flex; flex: 1; flex-direction: column; gap: 7px; padding: 13px 12px 15px; }
+.galeri-sayfasi .zaman-kart .etiket { font: 400 10px/1.4 var(--sans); color: var(--pirinc); letter-spacing: 0.03em; text-transform: none; }
+.galeri-sayfasi .zaman-kart b { max-width: none; font: 400 19px/1.15 var(--serif); text-wrap: pretty; overflow-wrap: anywhere; }
+.galeri-sayfasi .zaman-kart .sayi { display: flex; align-items: center; gap: 4px; margin-top: auto; padding-top: 2px; font: 400 11px/1.5 var(--sans); color: var(--ink-2); }
+.galeri-sayfasi .zaman-kart .sayi .ikon { flex: none; }
+.galeri-akim-ok { position: absolute; right: 8px; top: 77px; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: rgba(18,17,16,.8); color: #ebe5da; }
+.galeri-sayfasi .zaman-oge.kilitli .zaman-kart > * { opacity: 1; }
+.galeri-sayfasi .zaman-oge.kilitli .galeri-akim-resim { opacity: .65; }
+.galeri-sayfasi .zaman-oge.kilitli .etiket { color: var(--ink-2); }
+.galeri-sayfasi .zaman-kart:focus-visible { outline: 2px solid var(--pirinc); outline-offset: 3px; }
+.galeri-bos { color: var(--ink-2); font: 400 15px/1.5 var(--sans); padding: 20px 0; }
+.galeri-son { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--border); color: var(--ink-2); font: 400 12px/1.4 var(--sans); }
+.galeri-son button { display: flex; align-items: center; gap: 6px; min-height: 44px; border: 0; padding: 0; background: none; color: var(--pirinc); font: 500 12px/1.4 var(--sans); cursor: pointer; }
+.galeri-son button .ikon { transform: rotate(180deg); }
+@media (min-width: 600px) {
+  .galeri-sayfasi .galeri-akim-izgara { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 359px) {
+  .galeri-sayfasi .kesif-kartlari b { font-size: 18px; }
+  .galeri-sayfasi .gz-kisayol.kesif-kartlari a { padding: 12px 8px; gap: 7px; }
+  .galeri-bolum-bas > span { font-size: 10px; }
+  .galeri-sayfasi .zaman-kart b { font-size: 17px; }
+  .galeri-akim-yazi { padding: 12px 9px; }
+}
+
+@media (max-width: 599px) {
+  .galeri-akim-izgara:not(:has(> li[hidden])) > li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .galeri-akim-izgara:not(:has(> li[hidden])) > li:last-child:nth-child(odd) .zaman-kart { display: grid; grid-template-columns: 104px 1fr; }
+  .galeri-akim-izgara:not(:has(> li[hidden])) > li:last-child:nth-child(odd) .galeri-akim-resim { height: 100%; min-height: 112px; }
+}
