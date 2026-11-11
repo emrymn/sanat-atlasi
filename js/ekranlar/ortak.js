@@ -16,6 +16,7 @@ import { paletGetir, renkTemasi, hexten, hsl, hsldenHex } from '../renk.js';
 import { taninmaMetni, eserNotu } from '../karsilastir.js';
 import { koleksiyondaMi, koleksiyonDegistir } from '../koleksiyon.js';
 import { eseriBildir } from '../bildirim.js';
+import { hizliAyarKur } from './hizliAyar.js';
 
 // "Bilmiyorum" cevabının değeri (Ö4): hiçbir sanatçı kimliği ya da akım adıyla çakışmaz
 export const BILMIYORUM = '?';
@@ -424,6 +425,7 @@ export function sekmeleriCiz(etkin) {
       '<span class="sekme-isaret" aria-hidden="true"></span>' +
       SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}">${ikon('sekme-' + id, 22, 1.5)}<span>${ad}</span></a>`).join('');
     sekmeSurukle(nav);
+    hizliAyarKur(nav); // İş 172: çubuğun üst kenarındaki dişli dil ve hızlı ayarlar yaprağı
   }
   if (rozetHesabi) sekmeRozeti(rozetHesabi());
   const i = SEKMELER.findIndex(([id]) => id === etkin);
