@@ -1924,3 +1924,7 @@ PR 189'daki denemeler örnek alınmadı; main'den yeni dal. Ayarlar, Galeri böl
 - **Hareket ayarı:** süs hareketleri (plandaki gezen ışık, "Buradasın" nabzı, Başa dön oku) "Sade" ve "Kapalı"da durur; giriş ve yaprak geçişleri "Kapalı"da anlıktır.
 - **Kalanlar:** eski listenin CSS'i (`.zaman`, `.gz-perde`, `.gz-akim`, `.gz-kisayol`) dosyada duruyor, kullanılmıyor; ayrı bir temizlikte silinebilir. Süzülüş ve çark gerçek iPhone'da denenmedi (yalnız Chromium).
 - **Testler:** yeni `tests/e2e/is172.spec.js` (hızlı ayarlar, plan, çark); `gunun.spec` (Hayatı, Başa dön, süzülüşte sayfanın akmaması), `smoke.spec`, `cilalama.spec` (dokunma alanları planın odalarında; Galeri kısaldığı için kaydırma yerleri 800 px). `harita.spec:85` ve `paket8.spec:25` (asılı tabloların sallanması) bu ortamda bu değişiklikten önce de kırmızıydı.
+
+### 1.76.2 · Sekme çubuğu yine cam (liquid glass)
+
+- Emre'nin isteğiyle Tasarım B'nin "kayan hap görünmez, etkin ikon pirinç" kuralı geri alındı: etkin sekmenin arkasındaki cam hap (İş 24'teki parlak kenarlı, kayarak geçen) yine görünür, etkin ikon ve yazı açık renk. Sekme adları ve ikonları (Bugün, Yolculuk, Galeri, Çalış) ve hızlı ayarlar dili aynen kaldı.
