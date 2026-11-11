@@ -87,9 +87,9 @@ test('Bugün (Tasarım B): açılış tek ekran; ad, eser ve yıl, tek kelimelik
   });
   expect(durum.id).toBeTruthy();
   expect(durum.adim).toBeGreaterThanOrEqual(durum.nokta + 2);
-  // Biyografi düğmesi ve diğer görünenler en az 44 px
-  const ad = (await kart.locator('[data-bugun-biyografi]').textContent()).trim();
-  expect(ad).toBe('Biyografi');
+  // İş 172: sanatçı bağlantısı düğmesi yok (isim zaten oraya götürür); yerinde Hayatı düğmesi. Görünenler en az 44 px
+  await expect(kart.locator('.bugun-dugmeler a.bugun-dugme')).toHaveCount(0);
+  await expect(kart.locator('[data-test="bugun-hayati"]')).toHaveText('Hayatı');
   const gorunen = kart.locator('.bugun-dugme:visible');
   for (const b of await gorunen.all()) {
     const k = await b.boundingBox();
@@ -109,21 +109,49 @@ test('Bugün (Tasarım B): açılış tek ekran; ad, eser ve yıl, tek kelimelik
     await page.locator('[data-test="gor-hikaye-kapat"]').click();
     await page.locator('.gor').getByRole('button', { name: 'Kapat' }).click();
   }
-  // Biyografi aynı sayfada Hayatı bölümüne gider; başa dönüş kapağı geri getirir.
-  const adres = page.url();
-  await kart.locator('[data-bugun-biyografi]').click();
-  await expect(kart.locator('[data-yur-bio] h2')).toBeInViewport();
-  expect(page.url()).toBe(adres);
-  await page.evaluate(() => window.scrollTo(0, document.scrollingElement.scrollHeight));
-  await kart.locator('[data-bugun-basa]').click();
-  await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);
-  await expect(kart.locator('.sahne-isim')).toBeFocused();
-  await page.locator('.bugun-ayarlar').click();
-  await expect(page.getByRole('heading', { name: 'Ayarlar', exact: true })).toBeVisible();
-  await page.goto('./');
   // sanatçının adı Günün sanatçısı sayfasına götürür
   await kart.locator('.sahne-isim').click();
   await expect(page.getByRole('heading', { name: 'Günün sanatçısı' })).toBeVisible();
+});
+
+test('İş 172: Bugün ekranında Hayatı düğmesi biyografiye, sondaki düğme en başa götürür', async ({ page }) => {
+  await page.goto('./');
+  const kart = page.locator('[data-test="gunun-kart"]');
+  await expect(kart).toHaveClass(/yur-hazir/);
+  await kart.locator('[data-test="bugun-hayati"]').click();
+  const hayat = page.locator('[data-test="yur-hayat"]');
+  await expect.poll(() => hayat.evaluate((el) => Math.round(el.getBoundingClientRect().top))).toBe(0);
+  await expect(hayat.locator('h2').first()).toBeInViewport();
+  const basa = page.locator('[data-test="yur-basa"]');
+  await basa.scrollIntoViewIfNeeded();
+  expect((await basa.boundingBox()).height).toBeGreaterThanOrEqual(44);
+  await basa.click();
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+  await expect(kart.locator('.sahne-isim')).toBeInViewport();
+});
+
+test('İş 172: süzülüş sayfayı adım adım akıtmaz; yazılar solar, sayfa tek seferde yerine konur', async ({ page }) => {
+  await page.addInitScript(() => (window.__atlasGecis = true));
+  await page.goto('./');
+  const kart = page.locator('[data-test="gunun-kart"]');
+  await expect(kart).toHaveClass(/yur-hazir/);
+  await kart.locator('[data-test="bugun-hayati"]').click();
+  // geçişin başında sayfa yerinde durur (aradaki adımlar ekrandan geçmez), akış solmaya başlar
+  await expect(page.locator('[data-yur-akis]')).toHaveAttribute('data-suzul', 'cik');
+  const ara = await page.evaluate(() => ({ y: window.scrollY, snap: document.documentElement.classList.contains('yur-suzulus') }));
+  expect(ara.y).toBe(0);
+  expect(ara.snap).toBe(true);
+  const hayat = page.locator('[data-test="yur-hayat"]');
+  await expect.poll(() => hayat.evaluate((el) => Math.round(el.getBoundingClientRect().top))).toBe(0);
+  // bitince iz kalmaz: buğu tam, adıma oturma geri gelir
+  await expect(page.locator('[data-yur-akis]')).not.toHaveAttribute('data-suzul', /.+/, { timeout: 6000 });
+  const son = await page.evaluate(() => ({ snap: document.documentElement.classList.contains('yur-suzulus'), bugu: Number(document.querySelector('.yur-bulanik').style.opacity) }));
+  expect(son.snap).toBe(false);
+  expect(son.bugu).toBe(1);
+  await page.locator('[data-test="yur-basa"]').click();
+  await expect.poll(() => page.evaluate(() => window.scrollY), { timeout: 6000 }).toBe(0);
+  await expect(page.locator('[data-yur-akis]')).not.toHaveAttribute('data-suzul', /.+/, { timeout: 6000 });
+  expect(await page.evaluate(() => Number(document.querySelector('.yur-bulanik').style.opacity))).toBe(0);
 });
 
 test('V2: elle yazılmış biyografi (Guido Reni) kaynak notuyla görünür', async ({ page }) => {

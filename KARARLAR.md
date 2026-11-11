@@ -1911,19 +1911,36 @@ Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişikli
 - **Sekme çubuğu** çizimdeki ikonlarla (çerçeve, patika, galeri duvarı, kart destesi); kayan hap görünmez, etkin sekmenin ikonu pirinç, yazısı açık ve kalın.
 - Testler: `cilalama.spec` dokunma alanı testi Galeri'de dört kısayolu, hapları Başyapıtlar sayfasında ölçer; İş 89 testi (bölüm şeridi geçişsiz) Başyapıtlar sayfasından başlar.
 
+### İş 172 · Bugün'de gezinme, Hızlı ayarlar, Galeri: Müze planı ve Akımlar çarkı (sürüm 1.76.1)
 
-## 11 Kasım 2026 — Ana sayfa ve galeri gezinmesi
+PR 189'daki denemeler örnek alınmadı; main'den yeni dal. Ayarlar, Galeri bölümleri ve akım listesi için çizimler tasarım tuvalinde gösterildi, Emre seçti (Ayarlar "B"; Galeri ve akım listesinin ilk turu beğenilmedi, ikinci turdan "Müze planı" ve "Çark").
 
-- Ana sayfanın sağ üstünde Ayarlar metinli, en az 44 px dokunma alanına sahip doğrudan bağlantı; Ben bağlantısı ilerleme için korunur.
-- İsim altındaki yinelenen sanatçı bağlantısı Biyografi düğmesine dönüştü. Aynı sayfanın Hayatı bölümüne kaydırır; sondaki En üste dön kapağa döner. Klavye odağı hedefe taşınır, hareket azaltma tercihinde kaydırma anlıktır. Yürüyüş verisi olmayan durumda da biyografi bölümü gösterilir.
-- Galeride ayrıntılı, kilit ve ilerleme bilgilerini taşıyan akımlar listesi korunur. Üstte yinelenen akımlar şeridi ve küçük kısayolların yerine Konular, Zaman, Karşılaştır ve Koleksiyon açıklamalı kartları gelir.
-- Önbellek sürümü 1.76.1: birleştirilip yayımlandığında mevcut PWA kurulumları güncel dosyaları alabilsin. Bu çalışma yalnız ayrı dalda, main ile birleştirilmeden hazırlanır.
+- **Bugün · Hayatı düğmesi ve Başa dön:** ismin altındaki sanatçı bağlantısı kalktı (isim zaten aynı sayfayı açıyor); yerinde `data-test="bugun-hayati"`. Yürüyüşün sonunda `data-test="yur-basa"`. Yürüyüşü olmayan resimde Hayatı sanatçı sayfasında olduğu için düğme oraya bağlantıdır.
+- **Süzülüş (geçişin kendisi):** düz kaydırma aradaki adımları montaj gibi akıtıyordu, kararan perde de beğenilmedi. Çözüm: sayfa kaydırılmaz. Yazılar yerinde solar, kamera aradaki ayrıntılara uğramadan doğrudan son duruşa süzülür (ortada hafif nefes), buğu yavaşça toplanır ya da dağılır; yazılar görünmezken sayfa tek seferde hedefe konur, yeni yazılar süzülerek gelir. Toplam 2,8 sn (`SUZUL_MS`). Parmak ya da tekerlek araya girerse geçiş hemen yerine oturur. Hareket "Kapalı" ise (ve sistemde hareket azaltma açıksa) doğrudan oraya konur; "Sade"de geçiş kalır (sayfa geçişi sayılır). Kod: `js/yuruyus.js › suzul`.
+- **Hızlı ayarlar (seçenek B):** sekme çubuğunun üst kenarında küçük dişli dil (`data-test="hizli-ayar-dil"`, görünen 58×28, dokunma alanı 44 pt). Dokununca ya da yukarı çekince çubuğun arkasından yaprak yükselir: Tema, Hareket, Günlük kart, "Bütün ayarlar". Dil sekme değildir, çubuğun dışında ayrı bir düğmedir (çubuğun sürükleme dinleyicileri dokunuşu sekmeye çevirmesin). Aşağı çekince, perdeye dokununca, Esc ile ve sayfa değişince kapanır. Ayarlar ekranında dil görünmez. Ben sayfasındaki dişli ve Bugün'deki Ben düğmesi yerinde kaldı. Dile yer açmak için Bugün'ün alt yazıları ve aşağı oku 24 px, bildirim 22 px yukarı alındı. Kod: `js/ekranlar/hizliAyar.js`.
+- **Galeri · tekrar kalktı:** üstteki Akımlar şeridi, dört kısayol karosu, kayan resim şeridi ve uzun dikey akım listesi kalktı. `data-test="gz-akimlar"` artık çark bölümünde; `konu-giris`, `zaman-giris`, `gz-karsilastir`, `gz-koleksiyon` planın odalarında.
+- **Müze planı:** bölümler bir kat planında oda: Zaman koridoru (yüzyıl cetveli; açık yüzyıllar pirinç), Konular kanadı (sahne sayısı ve en çok açık eseri olan konunun kapağı tondo olarak), Karşılaştırma odası (en çok karıştırılan ikili, yoksa açık ilk iki akım; iki çerçeve), Senin odan (Koleksiyon, eser sayısı), Akımlar koridoru (çarka indirir). Duvarlar ızgaranın pirinç zemini, kapılar duvarda açıklık ve çeyrek yay. Başyapıtlar rafı planın üstünde olduğu gibi durur.
+- **Akımlar çarkı:** bütün akımlar yatay kayan tek şeritte kemerli kartlar (ortadaki büyük, komşuları soluk); altta parmakla çevrilen çark şeridi izler ve sürer, çarktaki ada dokununca o akım ortaya gelir. Kartların sınıfı `zaman-kart` olarak kaldı (sayfa geçişi testleri ve odak kodu bunu kullanıyor). Galeri'ye dönünce çark son bakılan akımda durur. Galeri yaklaşık 9 ekrandan 2 ekrana indi.
+- **Hareket ayarı:** süs hareketleri (plandaki gezen ışık, "Buradasın" nabzı, Başa dön oku) "Sade" ve "Kapalı"da durur; giriş ve yaprak geçişleri "Kapalı"da anlıktır.
+- **Kalanlar:** eski listenin CSS'i (`.zaman`, `.gz-perde`, `.gz-akim`, `.gz-kisayol`) dosyada duruyor, kullanılmıyor; ayrı bir temizlikte silinebilir. Süzülüş ve çark gerçek iPhone'da denenmedi (yalnız Chromium).
+- **Testler:** yeni `tests/e2e/is172.spec.js` (hızlı ayarlar, plan, çark); `gunun.spec` (Hayatı, Başa dön, süzülüşte sayfanın akmaması), `smoke.spec`, `cilalama.spec` (dokunma alanları planın odalarında; Galeri kısaldığı için kaydırma yerleri 800 px). `harita.spec:85` ve `paket8.spec:25` (asılı tabloların sallanması) bu ortamda bu değişiklikten önce de kırmızıydı.
 
+### 1.76.2 · Sekme çubuğu yine cam (liquid glass)
 
-### Galeri tasarımının uygulanması
+- Emre'nin isteğiyle Tasarım B'nin "kayan hap görünmez, etkin ikon pirinç" kuralı geri alındı: etkin sekmenin arkasındaki cam hap (İş 24'teki parlak kenarlı, kayarak geçen) yine görünür, etkin ikon ve yazı açık renk. Sekme adları ve ikonları (Bugün, Yolculuk, Galeri, Çalış) ve hızlı ayarlar dili aynen kaldı.
 
-- Galeri ana sayfası `galeri-sayfasi` kapsamındaki stillerle yenilendi; uygulamanın alt menüsü, temaları ve diğer ekranları değiştirilmedi. Mevcut eser görselleri kullanıldı.
-- Konular, Zaman, Karşılaştır ve Koleksiyon bağlantıları sayfanın üstünde kompakt kartlar. Başyapıtların isimleri görselin altında; hikâye/inceleme rozetleri korunur.
-- Tekrarlayan giriş şeridi kaldırıldı. 29 akım iki sütunlu kartlarla, geniş ekranda üç sütunla gösterilir. Açılma koşulları ve açık sanatçı sayıları korunur; kilitli akımlara bağlantı verilmez.
-- Tümü / Açık / Kilitli filtreleri sayfanın kendi DOM durumunda tutulur; alt sayfadan geri dönünce seçili filtre korunur. Sonuç sayısı erişilebilir canlı alanda güncellenir. Boş grupta açıklama gösterilir; sayfa sonunda başa dönüş vardır.
-- Her akım için tek gerçek eser kapağı yüklenir; önceki üç küçük eser + arka plan + hareketli şerit tekrarı kaldırılmıştır.
+### 1.76.3 · Galeri: açılan hap üst bölümü, ana ekran = çark, kalp, Karşılaştır Çalış'ta
+
+Üç çizim tasarım tuvalinde gösterildi (A · Cam ray, B · Kitabe, C · Açılan hap). Emre "C"yi seçti; önizlemeyi telefonda görünce ikinci turda ana ekranı da değiştirtti: "Başyapıtlar ve Müze planı kısmını değiştirip yeni şekli Galeri yapalım, çarkı resme yaklaştıralım, beğenilenler aramanın yanında küçük kalp, Karşılaştır Çalış'a".
+
+- **Hata:** "Akımlar" hapı Müze planına gidiyordu, akımların kendi sayfası yoktu. Artık Galeri'nin ana ekranı (`#/gozat`) akımların sayfası: üst bölüm + çark + bütün akımların zaman sırasıyla dizini (`data-test="akim-dizin"`, satırlar `akim-dizin-satir`; kilitliler "Konu N'de açılır"). İlk turda açılan ayrı `#/akimlar` adresi birleştirilmeden kalktı.
+- **Kalkanlar (Emre'nin isteği):** Galeri ana ekranındaki Başyapıtlar rafı (`gz-raf`, `gz-raf-kart`) ve Müze planı (`gz-plan`, `plan-akimlar`). Başyapıtlar, Konular ve Zaman haplarda (`basyapit-giris`, `konu-giris`, `zaman-giris` korundu).
+- **Üst bölüm (Galeri ve alt sayfaları):** "Galeri" başlığı 32 px, arama aynı satırda (kısa yazı "Sanatçı, eser ara"; erişilebilir adı tam), yanında kalp. Altında dört ikon hapı (48 pt): etkin olan genişler, adını ve kısa alt yazısını gösterir; ötekiler yalnız ikon (adları ekran okuyucuya açık). Sınıf `.bolumler` ve bağlantılar korundu (İş 89 geçişsiz bölüm değişimi aynen çalışır); `akimlar-giris` yeni `data-test`.
+- **Kalp:** `data-test="gz-koleksiyon"` artık aramanın yanındaki yuvarlak düğme (Koleksiyon'a götürür); koleksiyonda eser varsa dolu.
+- **Karşılaştır:** `data-test="gz-karsilastir"` Çalış › Başka turlar ızgarasında bir karo (en çok karıştırılan ikili, yoksa açık ilk iki akım; `karsilastirSecimi` aynen).
+- **Çark resme yakın:** kemer 204 → 172 px, kartın altındaki üç küçük resim ve dolu "Salona gir" düğmesi kalktı (yerinde küçük yazı; kartın tamamı salona götürür), çark adın hemen altında. 390×844'te kemer ve çark aynı ekranda (test denetler).
+- **Animasyon:** sayfa her bölümde yeniden çizildiği için CSS geçişi yerine anahtar kare: yeni hap açılır, önceki kapanır (aynı eğri, toplam genişlik sabit), yazı hafif gecikmeyle gelir. Aynı bölüm ikinci kez çizilirse ("Yükleniyor…" → içerik) geçiş eksi gecikmeyle kaldığı yerden sürer, bitmişse haplar hareketsiz. Hareket "Kapalı"da ve sistemde hareket azaltma açıkken animasyon yok.
+- **Dokunulmayanlar:** alt sekme çubuğu (cam hap), veri dosyaları.
+- **Kalanlar:** rafın ve planın CSS'i (`.gz-raf`, `.gz-plan`, `.oda-*`) dosyada duruyor, kullanılmıyor; ayrı bir temizlikte silinebilir. Gerçek iPhone'da yalnız Emre'nin önizlemesiyle görüldü; testler Chromium'da.
+- **CI notu:** ilk itişte `cilalama.spec` İş 75 (kenardan geri kaydırma, kaydırma yeri) GitHub'da kırıldı; yerelde 26 denemede 3 kez, main'de 16'da 0. Kök nedeni bulunamadı (geri dönüşte sayfa 890 yerine 589'da kalıyordu, sayfa boyu aynıydı); Müze planı kalkınca yeni ana ekranda 30 denemede görülmedi.
+- **Testler:** `is172.spec` (ana ekran: raf/plan yok, kalp, haplar, Çalış'ta Karşılaştır; çark resme yakın; akım dizini; açılan hap), `tasarim_b.spec` ve `cilalama.spec` uyarlandı, `paket8` (sürüm).
