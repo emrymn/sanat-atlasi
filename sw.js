@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.74.0';
+const SURUM = '1.76.0';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -105,6 +105,7 @@ const KABUK_DOSYALARI = [
   'js/ekranlar/bildirim.js',
   'js/wikidata.js',
   'js/yardimci.js',
+  'js/yuruyus.js',
   'icons/icon-192.png',
   'icons/icon-512.png',
   'icons/apple-touch-icon.png',
@@ -142,6 +143,8 @@ const ISTEGE_BAGLI = [
   'data/cikarilan_gorseller.json',
   'data/eser_ayrintilari.json',
   'data/eser_hikayeleri.json',
+  'data/yuruyus.json',
+  'data/yuruyus_odak.json',
   'icons/icon-maskable-512.png',
 ];
 

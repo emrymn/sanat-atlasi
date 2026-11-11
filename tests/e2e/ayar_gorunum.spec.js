@@ -40,6 +40,7 @@ test('İş 148/149: hareket ve yazı boyutu Ayarlar’dan seçilir, html’e yaz
 
 test('İş 144: Tuval’in tablosu yüz odağına göre kaydırılır', async ({ page, context }) => {
   await agiHazirla(context);
+  await context.addInitScript(() => (window.__atlasYuruyusYok = true)); // İş 171: yürüyüşsüz (eski tek ekran) yol sınanır
   await kur(context);
   // bütün görsellerde odak sağ alt köşede: tablo o yöne kaymalı. Veri diskten (istek yakalanıp sunucudan yeniden
   // indirilince service worker'lı CI'da takılıyordu)
@@ -71,74 +72,60 @@ test('İş 150: geliştirici modunda görüntüleyicide odak işaretlenir, Ayarl
   await expect(page.locator('[data-test="elle-odak"] textarea')).toHaveValue(/"odak":\{"[0-9a-f]+":\[2\d,[12]\d\]\}/);
 });
 
-test('İş 150/159: geliştirici modu kapalıyken odak düğmesi yalnız günün resminde', async ({ page, context }) => {
+test('İş 150/171: geliştirici modu kapalıyken görüntüleyicide odak düğmesi yok; "Günün resmi" düğmesi kalktı', async ({ page, context }) => {
   await agiHazirla(context);
   await kur(context);
   await page.goto('./#/sanatci/giotto-di-bondone');
   await page.locator('.eser').first().click();
   await expect(page.locator('.gor-resim')).toBeVisible();
   await expect(page.locator('[data-gor-odak]')).toBeHidden();
-  // İş 159: eser günün resmi seçilince odak düğmesi geliştirici modu olmadan da çıkar (Tuval kırpması için)
-  await page.locator('[data-test="gor-gunun"]').click();
-  await expect(page.locator('[data-gor-odak]')).toBeVisible();
-  await page.locator('[data-test="gor-gunun"]').click();
-  await expect(page.locator('[data-gor-odak]')).toBeHidden();
+  // İş 171: ana ekranın resmini yürüyüş eseri belirler; elle seçim düğmesi yok
+  await expect(page.locator('[data-test="gor-gunun"]')).toHaveCount(0);
 });
 
-// İş 157: görüntüleyicide "Günün resmi" → Tuval'de o sanatçının tablosu o olur; Ayarlar'da kopyalanacak liste
-test('İş 157: görüntüleyicide seçilen eser sanatçının günün resmi olur, Ayarlar’da listelenir', async ({ page, context }) => {
+// İş 171: ana ekranın resmi yürüyüş eseri (data/yuruyus.json); cihazdaki eski "Günün resmi" seçimi onu değiştirmez;
+// Ayarlar'daki bölümde seçim listesi yok, "Sırayla ortala" var
+test('İş 171: ana ekranın resmi yürüyüş eseridir, eski elle seçim etkilemez; adı Türkçe', async ({ page, context }) => {
   await agiHazirla(context);
-  // otomatik seçim sınanır: depodaki elle seçilen günün resimleri (İş 159) devre dışı
-  await context.route(/data\/gunun_resimleri\.json/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: '{"surum":1,"secim":{}}' }));
   await kur(context);
   await page.goto('./#/ayarlar');
   await page.locator('#sekmeler a').first().waitFor();
-  await page.evaluate(async () => {
-    const { bugun, kaydet } = await import('./js/ekranlar/ortak.js');
-    window.__atlas.ilerleme.gununDegisim = { tarih: bugun(), id: 'leonardo-da-vinci' };
+  const beklenen = await page.evaluate(async () => {
+    const { bugun, kaydet, yuruyusEserAdi } = await import('./js/ekranlar/ortak.js');
+    const d = window.__atlas;
+    d.ilerleme.gununDegisim = { tarih: bugun(), id: 'leonardo-da-vinci' };
     kaydet();
+    // eski sürümden kalan cihaz seçimi: başka bir eser
+    localStorage.setItem('sanat-atlasi:gunun-resmi', JSON.stringify({ 'leonardo-da-vinci': 'q:Q12418' }));
+    return { ad: yuruyusEserAdi('leonardo-da-vinci'), ozgun: d.yuruyus['leonardo-da-vinci'].eser };
   });
+  expect(beklenen.ad.length).toBeGreaterThan(0);
   await page.goto('./');
   const tuval = page.locator('[data-gunun-gorsel] > img');
-  await expect(tuval).toHaveAttribute('alt', /Mona Lisa/, { timeout: 10000 });
-  await page.goto('./#/sanatci/leonardo-da-vinci');
-  // Mona Lisa olmayan bir eser seç
-  const eser = page.locator('.eser').filter({ hasNot: page.locator('img[alt*="Mona Lisa"]') }).first();
-  const baslik = (await eser.locator('img').getAttribute('alt')).split(',').pop().trim();
-  await eser.click();
-  const dugme = page.locator('[data-test="gor-gunun"]');
-  await expect(dugme).toBeVisible();
-  await expect(dugme).toHaveAttribute('aria-pressed', 'false');
-  await dugme.click();
-  await expect(dugme).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.locator('.gor-mesaj')).toContainText('günün resmi bu oldu');
-  const kayit = await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:gunun-resmi')));
-  expect(Object.keys(kayit)).toEqual(['leonardo-da-vinci']);
-  await page.goto('./');
-  await expect(tuval).toHaveAttribute('alt', new RegExp(baslik.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').slice(0, 20)), { timeout: 10000 });
+  await expect(tuval).toHaveAttribute('alt', `Leonardo da Vinci, ${beklenen.ad}`, { timeout: 10000 });
+  await expect(page.locator('[data-bugun-eser]')).toContainText(beklenen.ad);
+  await expect(page.locator('[data-test="yur-adim"]').nth(1).locator('h2')).toHaveText(beklenen.ad);
   await page.goto('./#/ayarlar');
-  await expect(page.locator('[data-test="gunun-resimleri"] textarea')).toHaveValue(/"secim":\{"leonardo-da-vinci":"[qc]:/);
-  // kaldırınca otomatiğe döner
-  await page.goto('./#/sanatci/leonardo-da-vinci');
-  await eser.click();
-  await page.locator('[data-test="gor-gunun"]').click();
-  await expect(page.locator('[data-test="gor-gunun"]')).toHaveAttribute('aria-pressed', 'false');
-  await page.goto('./');
-  await expect(tuval).toHaveAttribute('alt', /Mona Lisa/, { timeout: 10000 });
+  const bolum = page.locator('[data-test="gunun-resimleri"]');
+  await expect(bolum).toContainText('Ana ekranın resimleri');
+  await expect(bolum.locator('textarea')).toHaveCount(0);
+  await expect(bolum.locator('[data-test="gunun-resmi-ac"]')).toBeVisible();
 });
 
 // İş 159/161: Ayarlar → "Sırayla ortala": günün resimleri sırayla; odak kipi kendiliğinden açık, Tuval çerçevesi görünür;
 // durum satırı elle / otomatik ve kaç tanesinin ortalandığını söyler; "Otomatiğe dön" elle odağı kaldırır
-test('İş 159/161: günün resimleri sırayla açılır, ortalananlar ve sayaç görünür', async ({ page, context }) => {
+test('İş 159/161/171: yürüyüş eserleri sırayla açılır, ortalananlar ve sayaç görünür', async ({ page, context }) => {
   await agiHazirla(context);
   await kur(context);
-  await context.route(/data\/gunun_resimleri\.json/, (r) =>
-    r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ surum: 1, secim: { 'giotto-di-bondone': 'q:Q3698217', 'jan-van-eyck': 'c:van_eyck_-_arnolfini_portrait.jpg' } }) }),
-  );
+  // İş 171: "Sırayla ortala" yürüyüş eserlerini açar; iki eserlik bir yürüyüş dosyası ve boş elle odak (diskten)
+  const tum = JSON.parse(readFileSync(new URL('../../data/yuruyus.json', import.meta.url), 'utf8'));
+  const ikisi = { ...tum, eserler: { 'giotto-di-bondone': tum.eserler['giotto-di-bondone'], 'jan-van-eyck': tum.eserler['jan-van-eyck'] } };
+  await context.route(/data\/yuruyus\.json/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(ikisi) }));
+  await context.route(/data\/gorsel_odak_elle\.json/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: '{"surum":1,"odak":{}}' }));
   await page.goto('./#/ayarlar');
   await page.locator('[data-test="gunun-resmi-ac"]').click();
   await expect(page.locator('.gor-resim')).toBeVisible();
-  await expect(page.locator('.gor-yazi')).toContainText('günün resmi 1 / 2');
+  await expect(page.locator('.gor-yazi')).toContainText('ana ekran resmi 1 / 2');
   const dugme = page.locator('[data-gor-odak]');
   const durum = page.locator('[data-test="gor-odak-durum"]');
   const cerceve = page.locator('[data-test="gor-tuval-cerceve"]');
@@ -170,7 +157,7 @@ test('İş 159/161: günün resimleri sırayla açılır, ortalananlar ve sayaç
   await page.mouse.click(r.x + r.width * 0.5, r.y + r.height * 0.4);
   await expect(durum).toContainText('ortalanan 1 / 2');
   await page.locator('.gor-sonraki').click();
-  await expect(page.locator('.gor-yazi')).toContainText('günün resmi 2 / 2');
+  await expect(page.locator('.gor-yazi')).toContainText('ana ekran resmi 2 / 2');
   await expect(dugme).toHaveText('Bitti');
   await expect(durum).toContainText('Otomatik');
   await expect(durum).toContainText('ortalanan 1 / 2');

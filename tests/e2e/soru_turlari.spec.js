@@ -19,7 +19,8 @@ test('İş 105: Bölüm turu menüden açılır, 4 bölüm şıkkı; cevap böl�
   await page.goto('./#/pekistir');
   await page.locator('[data-test="bolum-turu"]').click();
   await expect(page).toHaveURL(/#\/pekistir\/bolum$/);
-  await expect(page.locator('h2')).toHaveText('Bu eser hangi bölümde?', { timeout: 15000 });
+  // İş 171: geçiş sürerken ayrılan Çalış sayfasının başlıkları da belgede olabilir; soru adıyla aranır
+  await expect(page.getByRole('heading', { name: 'Bu eser hangi bölümde?' })).toBeVisible({ timeout: 15000 });
   await expect(page.locator('[data-test="st-secenekler"] [data-st-secim]')).toHaveCount(4);
   await expect(page.locator('[data-test="st-secenekler"]')).toContainText('Bölüm');
   // doğru şık: kartın sanatçısının bölümü

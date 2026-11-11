@@ -10,6 +10,8 @@ import { karsilastirmaAdresi, benzerSanatcilar } from '../karsilastir.js';
 import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir } from '../basyapit.js';
 import { ayrintilariAl, ayrintiBul, eserinAyrintisi } from '../ayrinti.js';
 import { hikayeHtml } from '../hikaye.js';
+import { enCokKarisanlar } from '../ogrenme.js';
+import { akimKarsilastirmaAdresi } from '../akim.js';
 import { konulariAl, konuBul, konuHaritasiniAyarla, kapakSec, TUR_AD, TUR_SIRA } from '../ikonografi.js';
 import { seviyeKaydi, seviyeDurumu } from '../seviye.js';
 import {
@@ -63,6 +65,26 @@ export function basyapitVeri() {
 }
 
 export const basyapitAdresi = (k) => `#/basyapit/${encodeURIComponent(k)}`;
+
+// İş 171 (Tasarım B · rozetler): hikâyesi olan esere kitap, rehberli incelemesi olana büyüteç rozeti. Küçük resimlerde
+// yalnız ikon (uzun = false), büyük kartlarda adıyla. Veri gelmediyse boş; rozetleriEkle veri gelince ekler.
+export function eserRozetleri(e, uzun = false) {
+  const h = e && hikayeBulucu(e);
+  const a = e && ayrintiBulucu(e);
+  if (!h && !a) return '';
+  const n = a && Array.isArray(a.noktalar) ? a.noktalar.length : 0;
+  return `<span class="eser-rozetler${uzun ? ' uzun' : ''}" data-test="eser-rozetler">${
+    h ? `<span class="eser-rozet" role="img" aria-label="Hikâyesi var">${ikon('kitap', 14, 1.8)}${uzun ? '<span aria-hidden="true">Hikâye</span>' : ''}</span>` : ''
+  }${a ? `<span class="eser-rozet" role="img" aria-label="Rehberli incelemesi var">${ikon('ara', 14, 1.8)}${uzun ? `<span aria-hidden="true">${n ? `${n} ayrıntı` : 'İncele'}</span>` : ''}</span>` : ''}</span>`;
+}
+// kutular: eser başına bir öğe (sırayla); rozet öğenin içine eklenir
+export async function rozetleriEkle(kutular, eserler) {
+  await Promise.all([hikayeVeri(), ayrintiVeri()]);
+  [...kutular].forEach((el, i) => {
+    const html = eserler[i] && el.isConnected && !el.querySelector('.eser-rozetler') ? eserRozetleri(eserler[i]) : '';
+    if (html) el.insertAdjacentHTML('beforeend', html);
+  });
+}
 // İş 151: rehberli inceleme noktaları (data/eser_ayrintilari.json); yoksa boş liste. Sayfalar görüntüleyiciye
 // `ayrintilar` olarak bir bulucu verir; veri henüz gelmediyse o eserde inceleme çıkmaz (sonraki açılışta çıkar).
 let ayrintiSozu = null;
@@ -123,6 +145,7 @@ export async function basyapitListesi() {
     sanatciEserleri(d.harita.get(b.sanatci)).then((eserler) => {
       const e = eserEslestir(eserler, b);
       if (e && el.isConnected) el.innerHTML = kucukGorsel(e, 500);
+      if (e) rozetleriEkle([el.closest('.bsy-cerceve') || el], [e]);
     });
   }
 }
@@ -490,10 +513,14 @@ const GOZAT_BOLUMLERI = [
 ];
 let sonGozAtBolumu = 0;
 export function gozAtUst(etkin) {
+  // İş 171: Galeri'nin ana ekranında haplı menü yok (çizimdeki gibi: raflar ve dört kısayol); alt sayfalarda durur
+  if (etkin === 'akimlar')
+    return `${ust('Galeri', '#/', { geriYok: true })}
+    <a class="arama-hapi" href="#/ara" data-test="arama-hapi">${ikon('ara', 18, 1.6)}<span>Sanatçı, eser, konu ara</span></a>`;
   const i = GOZAT_BOLUMLERI.findIndex(([id]) => id === etkin);
   const j = sonGozAtBolumu;
   sonGozAtBolumu = i;
-  return `${ust('Göz At', '#/', { geriYok: true, ustEtiket: 'Galeri' })}
+  return `${ust('Galeri', '#/', { geriYok: true })}
     <a class="arama-hapi" href="#/ara" data-test="arama-hapi">${ikon('ara', 18, 1.6)}<span>Sanatçı, eser, konu ara</span></a>
     <nav class="bolumler" aria-label="Göz At bölümleri" style="--i:${i};--j:${j}">${GOZAT_BOLUMLERI.map(
       ([id, ad, hash, test]) => `<a href="${hash}"${test ? ` data-test="${test}"` : ''}${id === etkin ? ' aria-current="page"' : ''}>${ad}</a>`,
@@ -505,6 +532,25 @@ export function gozAt() {
   gununRengi();
   const acikSayi = durumlar.filter((a) => a.acik).length;
   ciz(`${gozAtUst('akimlar')}
+    <section class="gz-raf" data-gz-raf data-test="gz-raf" aria-label="Başyapıtlar">
+      <div class="gz-raf-bas"><h2>Başyapıtlar</h2><a href="#/basyapitlar" data-test="basyapit-giris" data-gz-raf-sayi>Hepsi</a></div>
+      <ul class="gz-raf-serit" data-gz-raf-serit></ul>
+    </section>
+    <section class="gz-akimlar" aria-label="Akımlar" data-test="gz-akimlar">
+      <div class="gz-raf-bas"><h2>Akımlar</h2><button type="button" data-akimlara>${acikSayi} / ${durumlar.length} açık</button></div>
+      <ul class="gz-akim-serit">${durumlar
+        .map((a) => {
+          const ic = `<span class="gz-akim-resim" data-gz-akim="${kacis(a.ad)}"></span><b>${kacis(a.ad)}</b>${a.acik ? '' : `<small>Konu ${bulunmaEki(a.acilacagiKonu)} açılır</small>`}`;
+          return `<li>${a.acik ? `<a class="gz-akim" href="#/akim/${encodeURIComponent(a.ad)}">${ic}</a>` : `<span class="gz-akim kilitli">${ic}</span>`}</li>`;
+        })
+        .join('')}</ul>
+    </section>
+    <nav class="gz-kisayol dortlu" aria-label="Kısayollar">
+      <a href="#/konular" data-test="konu-giris">${ikon('isaret', 20, 1.6)}<span><b>Konular</b></span></a>
+      <a href="#/zaman" data-test="zaman-giris">${ikon('zaman-cizgi', 20, 1.6)}<span><b>Zaman</b></span></a>
+      ${karsilastirKarosu()}
+      <a href="#/koleksiyon" data-test="gz-koleksiyon">${ikon('kalp', 20, 1.6)}<span><b>Koleksiyon</b></span></a>
+    </nav>
     <section class="gz-perde" aria-label="Galeri girişi">
       <div class="gz-serit" aria-hidden="true"><div class="gz-serit-ic" data-gz-serit></div></div>
       <div class="gz-perde-yazi">
@@ -528,6 +574,59 @@ export function gozAt() {
       })
       .join('')}</ol>`);
   onizlemeleriDoldur();
+  rafDoldur();
+}
+
+// İş 171: Karşılaştır kısayolu. En çok karıştırılan iki sanatçı varsa onlar; yoksa açık ilk iki akım.
+function karsilastirKarosu() {
+  const [ilk] = enCokKarisanlar(d.ilerleme.karisanlar || {}, { adet: 1, esik: 1, varMi: (id) => d.harita.has(id) });
+  const ad = (id) => kacis(bilinenAd(d.harita.get(id).ad, d.kisaAdlar[id]));
+  let href = '';
+  let alt = '';
+  if (ilk) {
+    href = karsilastirmaAdresi(ilk.a, ilk.b);
+    alt = `${ad(ilk.a)} ↔ ${ad(ilk.b)}`;
+  } else {
+    const acik = akimDurumlari(d.akimlar, d.sanatcilar, islenen()).filter((a) => a.acik);
+    if (acik.length < 2) return '';
+    href = akimKarsilastirmaAdresi(acik[0].ad, acik[1].ad);
+    alt = `${kacis(acik[0].ad)} ↔ ${kacis(acik[1].ad)}`;
+  }
+  return `<a href="${href}" data-test="gz-karsilastir" aria-label="Karşılaştır: ${alt}">${ikon('karsilastir', 20, 1.6)}<span><b>Karşılaştır</b></span></a>`;
+}
+
+// İş 171: Galeri'nin en üstünde Başyapıtlar rafı: hikâyesi ya da rehberli incelemesi olanlar önce, açık sanatçılar önce
+const RAF_ADET = 10;
+async function rafDoldur() {
+  const no = cizimNo();
+  const [liste] = await Promise.all([basyapitVeri(), hikayeVeri(), ayrintiVeri()]);
+  const kutu = ekran.querySelector('[data-gz-raf]');
+  if (!guncelMi(no) || !kutu) return;
+  // rafın yeri baştan ayrılır (sonradan açılınca sayfa aşağı kayıyordu); başyapıt yoksa raf kalkar
+  if (!liste || !liste.length) return void (kutu.hidden = true);
+  const k = islenen();
+  const cozulen = await Promise.all(
+    liste.map((b) =>
+      sanatciEserleri(d.harita.get(b.sanatci))
+        .then((l) => ({ b, e: eserEslestir(l, b) }))
+        .catch(() => ({ b, e: null })),
+    ),
+  );
+  if (!kutu.isConnected) return;
+  const puan = ({ b, e }) => (hikayeBulucu(e) ? 4 : 0) + (ayrintiBulucu(e) ? 2 : 0) + (k.has(d.harita.get(b.sanatci).konu) ? 1 : 0);
+  const secilen = cozulen
+    .filter((x) => x.e)
+    .map((x, i) => ({ ...x, p: puan(x), i }))
+    .sort((x, y) => y.p - x.p || x.i - y.i)
+    .slice(0, RAF_ADET);
+  if (!secilen.length) return void (kutu.hidden = true);
+  kutu.querySelector('[data-gz-raf-sayi]').textContent = `${liste.length} eser`;
+  kutu.querySelector('[data-gz-raf-serit]').innerHTML = secilen
+    .map(({ b, e }, i) => {
+      const s = d.harita.get(b.sanatci);
+      return `<li style="--i:${i}"><a class="gz-raf-kart" href="${basyapitAdresi(b.anahtar)}" data-test="gz-raf-kart">${kucukGorsel(e, 500, { odak: true })}${eserRozetleri(e, true)}<span class="gz-raf-yazi"><b>${kacis(b.baslik)}</b><small>${kacis(bilinenAd(s.ad, d.kisaAdlar[s.id]))}${b.tarih ? ` · ${kacis(b.tarih)}` : ''}</small></span></a></li>`;
+    })
+    .join('');
 }
 
 // Her akıma 3 çerçeveli küçük eser (açık sanatçılar önce); ilk eser kartın arka planı olur,
@@ -552,6 +651,9 @@ function onizlemeleriDoldur() {
         const fon = el.closest('.zaman-kart')?.querySelector('[data-zaman-fon]');
         // İş 137: kartı kaplayan tablo yüzün çevresinden kırpılır (önce hep ortadan: dikey tablolarda baş kesiliyordu)
         if (fon && eserler[0]) odakliGorsel(fon, eserler[0], 800);
+        // İş 171: üstteki Akımlar şeridindeki küçük kart da aynı eseri gösterir
+        const serit = ekran.querySelector(`[data-gz-akim="${CSS.escape(el.dataset.onizleme)}"]`);
+        if (serit && eserler[0]) serit.innerHTML = kucukGorsel(eserler[0], 400, { odak: true });
         if (acikMi) seritIcin.push(...eserler.slice(0, 2));
       }),
     );

@@ -2,7 +2,7 @@
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { gosterilenGorseller } from '../eserler.js';
 import { devasaAdresleri, devasaSuz, suzulduMu, telefonAdresleri, telefonToplamBayt, tahminiBayt } from '../gorsel.js';
-import { cihazdakiElleOdaklar, ELLE_ANAHTAR, cihazdakiGununResimleri, gununResmiKoy, tumGununResimleri, seciliGununResmi } from '../gorsel.js';
+import { cihazdakiElleOdaklar, ELLE_ANAHTAR, cihazdakiGununResimleri, gununResmiKoy, gorselAdi } from '../gorsel.js';
 import { sanatciEserleri } from '../eserler.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat, kayitKilidiniAc, HAREKETLER, HAREKET_AD, YAZILAR, YAZI_AD } from '../depo.js';
@@ -734,19 +734,12 @@ function elleOdakBolumu() {
 // İş 157: görüntüleyicideki "Günün resmi" ile bu cihazda seçilenler; kopyalanıp Claude'a gönderilir, depoya
 // data/gunun_resimleri.json olarak girer (bütün cihazlarda geçerli olur)
 function gununResmiBolumu() {
-  const l = cihazdakiGununResimleri();
-  const idler = Object.keys(l);
-  const ad = (id) => {
-    const s = d.harita.get(id);
-    return s ? bilinenAd(s.ad, d.kisaAdlar[id]) : id;
-  };
-  // İş 159: "Sırayla ortala": seçilen bütün günün resimleri (depodaki ve bu cihazdaki) görüntüleyicide dönem sırasıyla
-  return `<div class="ayar" data-test="gunun-resimleri"><b>Günün resimleri</b>
-    <p>Bir eseri büyütüp “Günün resmi”ne dokununca o sanatçı Tuval’e bu tabloyla gelir. “Sırayla ortala” seçtiğin bütün günün resimlerini sırayla açar: “Odağı işaretle”ye dokun, sonra ekranın ortasına gelecek noktaya; çerçeve Tuval’de görünen alanı gösterir. Kaydırarak sonrakine geç.</p>
+  // İş 171: ana ekranın resmi yürüyüş eseridir (data/yuruyus.json); elle seçim kalktı. "Sırayla ortala" yürüyüş
+  // eserlerini dönem sırasıyla açar: elle ortalanan odak (bu cihazda ya da depoda) açılış karesinde kullanılır.
+  const n = d.yuruyus ? d.sanatcilar.filter((s) => d.yuruyus[s.id]).length : 0;
+  return `<div class="ayar" data-test="gunun-resimleri"><b>Ana ekranın resimleri</b>
+    <p>Ana ekranda günün ressamının yürüyüş eseri görünür${n ? ` (${n} eser)` : ''}. “Sırayla ortala” bu eserleri sırayla açar: “Odağı işaretle”ye dokun, sonra ekranın ortasına gelecek noktaya; çerçeve ana ekranın açılışında görünen alanı gösterir. Ortaladıkların aşağıdaki “Elle ortalanan tablolar” listesine girer.</p>
     <button class="dugme" type="button" data-gunun-resmi-ac data-test="gunun-resmi-ac">Sırayla ortala</button>
-    ${idler.length ? `<p>Bu cihazda ${idler.length} sanatçının günün resmini seçtin${idler.length <= 12 ? `: ${idler.map((id) => kacis(ad(id))).join(', ')}` : ''}. Bütün cihazlarda kalıcı olması için listeyi kopyalayıp Claude’a gönder.</p>
-    <textarea readonly aria-label="Günün resimleri" data-gunun-resmi-metin>${kacis(JSON.stringify({ surum: 1, secim: l }))}</textarea>
-    <div class="iki-dugme"><button class="dugme ince" type="button" data-gunun-resmi-kopyala>Kopyala</button><button class="dugme ince" type="button" data-gunun-resmi-temizle>Bu cihazdakileri sil</button></div>` : ''}
     <p class="mesaj" id="gunun-resmi-mesaj" aria-live="polite"></p></div>`;
 }
 
@@ -754,18 +747,23 @@ async function gununResimleriniAc() {
   const m = document.getElementById('gunun-resmi-mesaj');
   m.className = 'mesaj';
   m.textContent = 'Hazırlanıyor…';
-  await gununResimleriYukle();
-  const sec = tumGununResimleri();
-  const sanatcilar = d.sanatcilar.filter((s) => sec[s.id]);
+  const sanatcilar = d.yuruyus ? d.sanatcilar.filter((s) => d.yuruyus[s.id]) : [];
   const listeler = await Promise.all(sanatcilar.map((s) => sanatciEserleri(s).catch(() => [])));
-  const eserler = listeler.map(seciliGununResmi).filter(Boolean);
+  // yürüyüş eseri, görseli yürüyüşteki görselle sınırlı (odak o görselin adına kaydedilir)
+  const eserler = sanatcilar
+    .map((s, i) => {
+      const ad = d.yuruyus[s.id].gorsel;
+      const e = listeler[i].find((x) => (x.gorseller || []).some((g) => gorselAdi(g) === ad));
+      return e ? { ...e, gorseller: e.gorseller.filter((g) => gorselAdi(g) === ad) } : null;
+    })
+    .filter(Boolean);
   if (!eserler.length) {
-    m.textContent = 'Henüz günün resmi seçmedin.';
+    m.textContent = 'Yürüyüş eserleri bulunamadı.';
     return;
   }
   m.textContent = '';
   const adi = new Map(sanatcilar.map((s) => [s.id, bilinenAd(s.ad, d.kisaAdlar[s.id])]));
-  goruntuleyiciAc({ eserler, kotuler: kotuler(), ortalama: true, notu: (e) => `${adi.get(e.sid) || ''} · günün resmi ${eserler.indexOf(e) + 1} / ${eserler.length}` });
+  goruntuleyiciAc({ eserler, kotuler: {}, ortalama: true, notu: (e) => `${adi.get(e.sid) || ''} · ana ekran resmi ${eserler.indexOf(e) + 1} / ${eserler.length}` });
 }
 
 // İş 166: sitedeki sürümle karşılaştırır; yeniyse kurar ve sayfayı yeniler

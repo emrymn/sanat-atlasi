@@ -50,7 +50,7 @@ async function basla() {
   const konularTrSozu = jsonGetir('data/konular_tr.json').catch(() => null);
   const ilerlemeSozu = ilerlemeYukle(() => jsonGetir('data/baslangic_ilerleme.json'));
   const yarimSozu = yarimYukle();
-  const [tumSanatcilar, akimlar, konular, turler, tanima, eserAd, zorluk, yerelG, oranG, uzakG, kopyaG, cikarG] = await Promise.all([
+  const [tumSanatcilar, akimlar, konular, turler, tanima, eserAd, zorluk, yerelG, oranG, uzakG, kopyaG, cikarG, yuruyusG] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
     jsonGetir('data/konular.json'),
@@ -63,6 +63,7 @@ async function basla() {
     jsonGetir('data/gorsel_kaynagi.json').catch(() => null),
     jsonGetir('data/kopya_eserler.json').catch(() => null),
     jsonGetir('data/cikarilan_gorseller.json').catch(() => null),
+    jsonGetir('data/yuruyus.json').catch(() => null),
   ]);
   d.kisaAdlar = (await kisaSozu).adlar || {};
   d.konularTr = await konularTrSozu;
@@ -74,6 +75,7 @@ async function basla() {
   uzakGorselleriAyarla(uzakG);
   oranlariAyarla(oranG && oranG.oranlar);
   d.dikeyler = oranG && Array.isArray(oranG.dikeyler) ? new Set(oranG.dikeyler) : null;
+  d.yuruyus = !window.__atlasYuruyusYok && yuruyusG && yuruyusG.eserler && typeof yuruyusG.eserler === 'object' ? yuruyusG.eserler : null; // İş 171
   eserTurleriniAyarla(turler);
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
   const hazir = await hazirSozu;

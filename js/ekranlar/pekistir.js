@@ -1,7 +1,7 @@
 // Pekiştir: menü, oturum kurma (dönem, karışık, konu turu Ö6, hatalarım Ö5), kart çizimi ve cevaplar, yarım kalan oturum, tur özeti ve dönem seviyeleri.
 import { kacis, yillarYaz } from '../yardimci.js';
 import { akimDurumlari } from '../kilit.js';
-import { cevapla, GUNLUK_YENI_SINIRI } from '../leitner.js';
+import { cevapla, GUNLUK_YENI_SINIRI, ARALIKLAR, gunEkle } from '../leitner.js';
 import { sanatciSecenekleri, akimSecenekleri } from '../celdirici.js';
 import { kartlariSec, Oturum, kategori, turAltYazisi } from '../oturum.js';
 import { sanatciEserleri, eserSec, pekistirmeHavuzu, eserBaslik } from '../eserler.js';
@@ -84,7 +84,8 @@ import {
   bolumEserleri,
 } from '../bolum.js';
 import { akrabaMi } from '../celdirici.js';
-import { bolumler as tumBolumler, durumlar as bolumDurumu } from './harita.js';
+import { bolumler as tumBolumler, durumlar as bolumDurumu, durakSembolu } from './harita.js';
+import { bolgeBul } from '../harita.js';
 import { yonlendir } from './yonlendirme.js';
 import { sallanmaBaslat } from '../sallanma.js';
 import { dinleEkle } from '../kunye.js';
@@ -128,14 +129,14 @@ function turSahnesi(karisik) {
   const kapak = kapakSanatcisi();
   return `<section class="pk-sahne" aria-label="Bugünkü karışık tur">
       <div class="pk-resim" aria-hidden="true">${kapak ? `<span data-pk-kapak="${kacis(kapak.id)}"></span>` : ''}</div>
-      <div class="pk-ust">${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}</div>
+      <div class="pk-ust">${ust('Çalış', '#/', { geriYok: true })}</div>
       <div class="pk-deste${deste.length ? '' : ' bos'}" aria-hidden="true">${deste
         .map((x, i) => `<span class="pk-kart" style="--i:${i}"><span class="kucuk-kare" data-kucuk="${kacis(x.s.id)}"></span></span>`)
         .join('')}</div>
       <button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 16, 1.6)}Hareketi aç</button>
       <div class="pk-govde">
         ${etiket('Bugünkü tur', { vurgu: true })}
-        <p class="pk-sayi"><b>${karisik.toplam}</b><span>kart<br>~${dk} dk</span></p>
+        <p class="pk-sayi"><b data-say>${karisik.toplam}</b><span>kart<br>~${dk} dk</span></p>
         <span class="tur-karisim" role="img" aria-label="${parca.map(([, n, ad]) => `${n} ${ad}`).join(', ')}">${parca
           .filter(([, n]) => n)
           .map(([cls, n]) => `<i class="k-${cls}" style="flex-grow:${n}"></i>`)
@@ -219,8 +220,7 @@ export function pekistirMenusu(secenek) {
       durumlar.length
         ? `${turSahnesi(karisik)}
     ${devamKarti()}
-    ${hatalarSatiri()}
-    ${soruTurlariHtml()}
+    ${soruTurlariHtml(hatalarSatiri())}
     <section class="bolum pk-salonlar">
       <div class="pk-bolum-bas"><span class="etiket vurgu">Döneme göre</span><h2 class="pk-baslik">Salonlar</h2></div>
       <p class="kucuk ikincil" style="margin:0">${seviyeAciklamasi()}</p>
@@ -230,7 +230,7 @@ export function pekistirMenusu(secenek) {
         ${sirali.map((a, i) => donemSatiri(a, turYazi, istler.get(a.ad), i + 1, acik)).join('')}
       </ul>
     </section>`
-        : `${ust('Pekiştir', '#/', { geriYok: true, ustEtiket: 'Tekrar' })}${devamKarti()}${bosAcik()}`
+        : `${ust('Çalış', '#/', { geriYok: true })}${devamKarti()}${bosAcik()}`
     }`,
   );
   kucukKareleriDoldur();
@@ -300,7 +300,7 @@ function hatalarSatiri() {
 }
 
 function bosAcik() {
-  return `<div class="bos-kutu"><p>Henüz açık sanatçı yok.</p><p class="kucuk ikincil"><a href="#/ilerleme">Defter</a>’de işlediğin konuları işaretle.</p></div>`;
+  return `<div class="bos-kutu"><p>Henüz açık sanatçı yok.</p><p class="kucuk ikincil"><a href="#/ilerleme">Ben</a> sayfasında işlediğin konuları işaretle.</p></div>`;
 }
 
 // Bir sanatçının en az bir eseri var mı? (kurs eseri varsa beklemeden evet)
@@ -745,6 +745,26 @@ export async function devamEt() {
 }
 
 // A–D harfli seçenek; cevaptan sonra doğru yeşil ✓, seçilen yanlış kırmızı ×, kalanlar soluk
+// İş 171: turun ilerlemesi kart kart (parça parça çizgi): bitenler pirinç, şimdiki açık renk. Uzun turda (24'ten çok
+// kart) parçalar seçilemeyecek kadar incelir; o zaman eski tek çizgi.
+function turCubugu(ot, yuzde, oncekiYuzde) {
+  if (ot.toplam > 24) return `<div class="ince-cubuk" aria-hidden="true"><i style="width:${yuzde}%;--onceki:${oncekiYuzde}%"></i></div>`;
+  const parca = (i) => `<span class="${i < ot.konum ? 'tamam' : i === ot.konum ? 'simdi' : ''}"></span>`;
+  return `<div class="ince-cubuk parcali" aria-hidden="true">${Array.from({ length: ot.toplam }, (_, i) => parca(i)).join('')}</div>`;
+}
+
+// İş 171: cevaptan sonra Leitner kutusu altı nokta: kazanılan kutu dolar; yanında bir sonraki tekrarın ne zaman olduğu
+function kutuSatiri(sk) {
+  if (!sk) return '';
+  const kutu = Math.max(0, Math.min(ARALIKLAR.length - 1, sk.kutu || 0));
+  // kutu bu cevapla ilerlediyse (vadesi gelmemiş kartta doğru cevap ilerletmez) son nokta "pıt" diye dolar
+  const ilerledi = kutu > 0 && sk.sonraki === gunEkle(bugun(), ARALIKLAR[kutu]);
+  const noktalar = ARALIKLAR.map((_, i) => `<i class="${i < kutu ? 'dolu' : ''}${ilerledi && i === kutu - 1 ? ' yeni' : ''}"></i>`).join('');
+  const gun = sk.sonraki ? Math.round((Date.parse(sk.sonraki) - Date.parse(bugun())) / 864e5) : 0;
+  const yazi = kutu > 0 ? `${kutu}. kutu · ${gun > 0 ? `${gun} gün sonra tekrar` : 'bugün tekrar'}` : 'Baştan · bu turda yine gelecek';
+  return `<div class="kutu-satir" data-test="kutu-satir"><span class="kutu-noktalar" role="img" aria-label="Tekrar kutusu: ${ARALIKLAR.length} kutudan ${kutu}.">${noktalar}</span><span>${yazi}</span></div>`;
+}
+
 function secenekDugmesi(deger, ad, i, cevap, dogruDeger, tur) {
   let sinif = 'secenek';
   let isaret = '';
@@ -1241,6 +1261,7 @@ function kartGoster(o) {
     yaprak = `<section class="alt-yaprak" aria-live="polite">
       <p class="sonuc" data-test="sonuc" data-dogru="${ikinci || !karisik ? tumDogru : dogru}">${ikon(dogru ? 'dogru' : 'yanlis', 18, 2)}<b>${sonuc[0]}</b>${sonuc[1] ? `<span class="sonuc-not">${kacis(sonuc[1])}</span>` : ''}</p>
       <p class="bilgi"><b>${kacis(bilgi[0])}</b><i>${kacis(bilgi[1])}</i></p>
+      ${kutuSatiri(skor(k.id)[ikinci ? 'akim' : 'sanatci'])}
       ${seviyeSatiri(k)}
       <div data-yaprak-palet>${paletHtml(k.palet)}</div>
       ${not ? `<div class="ipucu-kutu" data-ipucu><p class="ipucu">${kacis(not)}</p></div>` : ''}
@@ -1263,9 +1284,10 @@ function kartGoster(o) {
       <span class="etiket">${kacis(kipKisa(o.kip, o.akim))}</span>
       <span data-test="sayac">${sira} / ${ot.toplam}</span>
     </header>
-    <div class="ince-cubuk" aria-hidden="true"><i style="width:${yuzde}%;--onceki:${oncekiYuzde}%"></i></div>
+    ${turCubugu(ot, yuzde, oncekiYuzde)}
     ${seviyeHaplari(o)}
     <div class="soru-sahne">
+      <span class="soru-isik" aria-hidden="true" style="background-image:url('${kacis(gorselUrl(g, 400))}')"></span>
       <span class="hale-nefes" aria-hidden="true"></span>
       <button class="soru-resim" type="button" data-buyut aria-label="Görseli büyüt">
         <img decoding="async" alt="Sorulan eser" src="${kacis(gorselUrl(g, 800))}" data-test="soru-resim">
@@ -1482,6 +1504,7 @@ function bolumOzeti(o) {
           : ''
       }
       <div class="sonuc-alt" style="--gecikme:${0.5 + eserler.length * 0.12}s">
+        ${seviyeTamamHtml(r, sv, etiket, tamamlananDonem(id, r))}
         <section class="skor" aria-label="Sonuç" style="--oran:${yuzde}%;--hedef:${hedefYuzde}%">
           <p class="skor-ust"><b>Senin gözün</b> · ${kacis(etiket)} · ${BOLUM_SV_AD[sv] || ''}</p>
           <p class="skor-yuzde"><i class="ad">%${yuzde}</i><span class="skor-durum">${r.gecti ? 'Geçti' : 'Az kaldı'}</span></p>
@@ -1506,9 +1529,52 @@ function bolumOzeti(o) {
     </div>
     ${r.yeniGecti ? yaldizYapraklari() : ''}`);
   yuzdeSayarakYaz(ekran.querySelector('.bolum-sonuc .ad'), yuzde);
+  seviyeTamamCanlandir(id, r);
   for (const el of ekran.querySelectorAll('[data-gecis]')) el.addEventListener('click', gecisiAk);
   // telefonu eğince asılı tablolar ipinden sallanır (İş 39; Ayarlar'daki hareket seçimine uyar)
   sallanmaBaslat(ekran.querySelector('[data-sergi-duvar]'), d.ilerleme.ayarlar.egim !== false);
+}
+
+// İş 171 (Tasarım B): seviye sonu. Durağın haritadaki sembolü madalyonda; halka kazanılan yıldıza kadar çizilir,
+// yeni yıldız(lar) sırayla gelir. Geçilemediyse halka olduğu yerde kalır, başlık "az kaldı".
+// Dönem kutlaması: bu yıldızla dönemin bütün durakları üç yıldız olduysa dönemin adı
+function tamamlananDonem(id, r) {
+  if (!r.yeniGecti || r.yildizSonra < 3) return '';
+  const liste = bolumDurumu().durumlar;
+  const x = liste.find((y) => y.id === id);
+  if (!x) return '';
+  const bolge = bolgeBul(x.sira);
+  return liste.filter((y) => bolgeBul(y.sira).id === bolge.id).every((y) => y.acik && y.yildiz >= 3) ? bolge.ad : '';
+}
+function seviyeTamamHtml(r, sv, etiket, donem = '') {
+  const yildizlar = [0, 1, 2]
+    .map((i) => `<i class="yildiz-sekil${i < r.yildizSonra ? ' dolu' : ''}${i >= r.yildizOnce && i < r.yildizSonra ? ' yeni' : ''}" style="--i:${i}"></i>`)
+    .join('');
+  return `<section class="seviye-tamam${r.gecti ? ' gecti' : ''}" data-test="seviye-tamam" data-yildiz="${r.yildizSonra}" aria-label="${BOLUM_SV_AD[sv] || ''} seviye: ${r.gecti ? 'tamam' : 'az kaldı'}, ${r.yildizSonra} / 3 yıldız">
+      <span class="st-isik" aria-hidden="true"></span>
+      <span class="st-madalyon" aria-hidden="true" data-st-madalyon><svg viewBox="0 0 64 64"><circle class="iz" cx="32" cy="32" r="29"/><circle class="dolu" cx="32" cy="32" r="29" pathLength="100" style="--oran:${Math.round((r.yildizOnce / 3) * 100)}"/></svg></span>
+      <p class="etiket st-etiket">${kacis(BOLUM_SV_AD[sv] || '')} ${r.gecti ? 'seviye tamam' : '· az kaldı'}</p>
+      <h2 class="st-baslik">${kacis(etiket)}</h2>
+      <span class="st-yildizlar" aria-hidden="true">${yildizlar}</span>
+      ${donem ? `<p class="st-donem" data-test="donem-tamam">${ikon('dogru', 18, 2.2)}<span><b>${kacis(donem)} tamamlandı</b> · bütün duraklar üç yıldız</span></p>` : ''}
+    </section>`;
+}
+function seviyeTamamCanlandir(id, r) {
+  const kutu = ekran.querySelector('[data-st-madalyon]');
+  if (!kutu) return;
+  const dolu = kutu.querySelector('.dolu');
+  // halka bir sonraki karede yeni oranına çizilir (CSS geçişi)
+  requestAnimationFrame(() => requestAnimationFrame(() => dolu.style.setProperty('--oran', String(Math.round((r.yildizSonra / 3) * 100)))));
+  durakSembolu(id)
+    .then((s) => {
+      if (!s || !kutu.isConnected) return;
+      const img = document.createElement('img');
+      img.alt = '';
+      img.decoding = 'async';
+      img.src = s.src;
+      kutu.append(img);
+    })
+    .catch(() => {});
 }
 
 function gecisiAk(e) {
@@ -1653,6 +1719,12 @@ function seviyeRozeti(akim) {
 
 // Ekranın olay dinleyicileri; app.js özgün sırayla bir kez bağlar
 export function olaylariBagla() {
+  // İş 171: "Döneme göre" karosu sayfanın altındaki salonlara kaydırır
+  ekran.addEventListener('click', (e) => {
+    if (!e.target.closest('[data-salonlara], [data-akimlara]')) return;
+    const hedef = ekran.querySelector(e.target.closest('[data-akimlara]') ? '.gz-perde' : '.pk-salonlar');
+    if (hedef) hedef.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  });
   ekran.addEventListener('click', (e) => {
     const p = e.target.closest('[data-ipucu].kesik');
     if (p) ipucuCevir(p);

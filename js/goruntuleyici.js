@@ -81,7 +81,8 @@ export function kaynakYazisi(eser, gorsel) {
 // bildir: (eser, neden, gorsel) → bildirimden sonra seçilen görsel — İ5, "⋯" menüsü (yoksa menü çıkmaz)
 // ayrintilar: (eser) → rehberli inceleme kaydı ya da null (İş 151, js/ayrinti.js); kayıt varsa "İncele" düğmesi çıkar
 // incelemeyeBasla: açılan eserin kaydı varsa görüntüleyici doğrudan inceleme kipinde açılır
-export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null, koleksiyon = null, bildir = null, ayrintilar = null, incelemeyeBasla = false, ortalama = false, hikayeler = null, hikayeHazir = null }) {
+// hikayeyeBasla: açılan eserin hikâyesi varsa görüntüleyici hikâye paneli açık başlar (Bugün'ün Hikâyesi düğmesi)
+export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapaninca = null, kotuler = {}, degisti = null, notu = null, koleksiyon = null, bildir = null, ayrintilar = null, incelemeyeBasla = false, hikayeyeBasla = false, ortalama = false, hikayeler = null, hikayeHazir = null }) {
   let sira = baslangic;
   let olcek = 1;
   let tx = 0;
@@ -112,7 +113,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     ${koleksiyon ? `<button class="gor-isaret" type="button" aria-pressed="false" aria-label="Koleksiyonuma ekle" hidden>${ikon('isaret', 22)}</button>` : ''}
     ${eserler.length > 1 ? `<button class="gor-ok gor-onceki" type="button" aria-label="Önceki eser">${ikon('geri', 24)}</button><button class="gor-ok gor-sonraki" type="button" aria-label="Sonraki eser">${ikon('ileri', 24)}</button>` : ''}
     <div class="gor-alt"><div class="gor-yazi" ${gizli ? 'hidden' : ''}></div>
-      <div class="gor-eylemler">${!bildir && !ortalama ? '<button class="gor-kotu" type="button">Görsel kötü</button>' : ''}${!gizli ? '<button class="gor-gunun" type="button" aria-pressed="false" data-test="gor-gunun" hidden>Günün resmi</button>' : ''}${ayrintilar && !gizli ? '<button class="gor-incele" type="button" data-test="gor-incele" hidden>İncele</button>' : ''}${hikayeler && !gizli ? '<button class="gor-hikaye-dugme" type="button" data-test="gor-hikaye" hidden>Hikâyesi</button>' : ''}${!gizli ? `<button class="gor-odak" type="button" data-gor-odak data-test="gor-odak"${gelistirici ? '' : ' hidden'}>Odağı işaretle</button><button class="gor-odak" type="button" data-gor-odak-sil data-test="gor-odak-sil" hidden>Otomatiğe dön</button>` : ''}${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
+      <div class="gor-eylemler">${!bildir && !ortalama ? '<button class="gor-kotu" type="button">Görsel kötü</button>' : ''}${ayrintilar && !gizli ? '<button class="gor-incele" type="button" data-test="gor-incele" hidden>İncele</button>' : ''}${hikayeler && !gizli ? '<button class="gor-hikaye-dugme" type="button" data-test="gor-hikaye" hidden>Hikâyesi</button>' : ''}${!gizli ? `<button class="gor-odak" type="button" data-gor-odak data-test="gor-odak"${gelistirici ? '' : ' hidden'}>Odağı işaretle</button><button class="gor-odak" type="button" data-gor-odak-sil data-test="gor-odak-sil" hidden>Otomatiğe dön</button>` : ''}${bildir ? `<button class="gor-daha" type="button" aria-expanded="false" aria-label="Bu görsel hatalı mı?">${ikon('daha', 22)}</button>` : ''}</div>
       ${bildir ? `<div class="gor-bildir-menu" data-test="gor-bildir-menu" hidden>${NEDENLER.map((n) => `<button type="button" data-gor-neden="${n}">${n}</button>`).join('')}</div>` : ''}
       ${(ayrintilar || hikayeler) && !gizli ? `<div class="gor-inceleme" data-test="gor-inceleme" hidden>
         <p class="gor-inc-ust"><span class="gor-inc-no" data-test="gor-inc-no"></span><b class="gor-inc-ad" data-test="gor-inc-ad"></b></p>
@@ -175,19 +176,18 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     hikayePanel.scrollTop = 0;
   }
   let ilkInceleme = !!incelemeyeBasla;
+  let ilkHikaye = !!hikayeyeBasla;
 
   // K4: işaret düğmesi o anki eserin koleksiyondaki durumunu gösterir; sanatçısı bilinmeyen eserde gizli
   // İş 157: "Günün resmi" düğmesi: bu eser sanatçısının günün resmi mi (bu cihazda ya da depodaki seçimle)
   const gununDugme = kok.querySelector('[data-test="gor-gunun"]');
+  // İş 171: "Günün resmi" düğmesi kalktı (ana ekranın resmini yürüyüş eseri belirler). Odak düğmesi geliştirici
+  // modunda ve Ayarlar'daki "Sırayla ortala"da (ortalama) görünür.
   function gununGuncelle() {
-    if (!gununDugme) return;
     const e = eserler[sira];
-    gununDugme.hidden = !(e && e.sid && e.anahtar);
-    const secili = !gununDugme.hidden && gununResmiSecimi(e.sid) === e.anahtar;
-    gununDugme.setAttribute('aria-pressed', String(secili));
-    gununDugme.textContent = secili ? 'Günün resmi ✓' : 'Günün resmi';
     const odak = kok.querySelector('[data-gor-odak]');
-    if (odak) odak.hidden = !(gelistirici || secili);
+    if (!odak) return;
+    odak.hidden = !(gelistirici || ortalama);
     if (odakModu && (odakEser !== e || odak.hidden)) odakBitir();
     // İş 161: "Sırayla ortala"da her yeni eserde odak kipi kendiliğinden açılır (Bitti ile kapatılan eserde yeniden açılmaz)
     if (ortalama && odak && !odak.hidden && !odakModu && kendiliginden !== e) {
@@ -406,6 +406,10 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     // İş 169: eserin hikâyesi (varsa "Hikâyesi" düğmesi)
     hikayeGuncelle();
     hikayeKapat();
+    if (ilkHikaye) {
+      ilkHikaye = false;
+      hikayeAc();
+    }
     if (inceleDugme) {
       inceleDugme.hidden = !kayitSimdiki;
       if (kayitSimdiki) inceleDugme.textContent = `İncele · ${kayitSimdiki.noktalar.length} nokta`;

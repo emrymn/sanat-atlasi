@@ -8,9 +8,10 @@ test.beforeEach(async ({ context }) => {
 test('ana sayfa → Göz At → sanatçı → eser tam ekran', async ({ page }) => {
   await page.goto('./');
   await expect(page.getByRole('heading', { name: 'Sanat Atlası' })).toBeVisible();
-  await expect(page.getByText('açık sanatçı')).toBeVisible();
+  // Tasarım B 4.1: Bugün sade; sanatçı düğmesi var, sayılar Ben'de (İlerleme)
+  await expect(page.locator('.bugun-dugmeler a.bugun-dugme')).toBeVisible();
   await page.locator('#sekmeler a[data-sekme="gozat"]').click();
-  await expect(page.getByRole('heading', { name: 'Göz At' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Galeri' })).toBeVisible();
   // kilitli akım gri ve "Konu N'de açılır" yazar
   await expect(page.getByText(/Konu \d+'(de|da|te|ta) açılır/).first()).toBeVisible();
   await page.getByRole('link', { name: /yüzyıl Gotik/ }).click();
@@ -109,7 +110,8 @@ test('Pekiştir · Döneme göre: bir akım seç ve cevapla', async ({ page }) =
 });
 
 test('İlerleme: konu işaretlenince yeni sanatçı açılır', async ({ page }) => {
-  await page.goto('./');
+  // açık sanatçı sayısı Tasarım B'den beri İlerleme'de (Bugün sade)
+  await page.goto('./#/ilerleme');
   const once = Number(await page.locator('[data-test="acik-sayi"]').textContent());
   // henüz işlenmemiş ve (resmi olan) sanatçısı bulunan ilk konu
   const { no, ad, akim } = await page.evaluate(() => {
@@ -118,7 +120,7 @@ test('İlerleme: konu işaretlenince yeni sanatçı açılır', async ({ page })
     return { no: s.konu, ad: s.ad, akim: s.akim };
   });
   await page.goto('./#/ilerleme');
-  await expect(page.getByRole('heading', { name: 'İlerleme' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Ben' })).toBeVisible();
   const anahtar = page.getByRole('switch', { name: `Konu ${no} işlendi` });
   // konuya dokununca konu kartı açılır; anahtar kartın içinde
   if (!(await anahtar.isVisible())) await page.locator(`[data-kurs-konu="${no}"]`).click();
@@ -127,7 +129,7 @@ test('İlerleme: konu işaretlenince yeni sanatçı açılır', async ({ page })
   // Ö6: yeni sanatçılar bildirim yerine alttan "Tanış" kartında
   await expect(page.locator('[data-test="tanis-karti"]')).toContainText('yeni sanatçı açıldı');
   await expect(anahtar).toBeChecked();
-  await page.goto('./');
+  await page.goto('./#/ilerleme');
   const sonra = Number(await page.locator('[data-test="acik-sayi"]').textContent());
   expect(sonra).toBeGreaterThan(once);
   // Göz At'ta yeni sanatçı görünür
@@ -140,10 +142,10 @@ test('yalnızca resim: heykeltıraş ve mimarlar ile resimsiz akımlar görünme
   // Eserler özgün adlarıyla aranır: Türkçe adlar dosyası bu testte yok sayılır
   await context.route(/\/data\/eser_adlari_tr\.json(\?.*)?$/, (r) => r.fulfill({ status: 404, body: '' }));
   await page.goto('./#/gozat');
-  await expect(page.getByRole('heading', { name: 'Göz At' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Galeri' })).toBeVisible();
   await expect(page.getByText('Antik Yunan ve Roma')).toHaveCount(0);
   await expect(page.getByText('Romanesk', { exact: true })).toHaveCount(0);
-  await page.getByRole('link').filter({ hasText: 'Erken Rönesans' }).click();
+  await page.getByRole('link').filter({ hasText: 'Erken Rönesans' }).first().click(); // İş 171: akım hem şeritte hem listede
   // akım sayfasındaki eser şeridi de sanatçı adını yazar ve geç yüklenir: yalnız sanatçı satırına bak
   await expect(page.getByRole('link', { name: /^Masaccio/ })).toBeVisible();
   // dönemin hikâyesi (akim_bilgi metni) bu adları anlatı içinde geçirebilir; sanatçı ve eser olarak hiçbir yerde yoklar
@@ -229,9 +231,8 @@ test('yatay kaydırma yok (390 px)', async ({ page }) => {
 
 test('resim rengi: Bugün paleti çıkarılır, vurgu renkleri yazılır ve IndexedDB önbelleğine girer', async ({ page }) => {
   await page.goto('./');
-  await expect(page.locator('[data-palet] .palet span').first()).toBeAttached();
-  const vurgu = await page.evaluate(() => document.documentElement.style.getPropertyValue('--vurgu-acik'));
-  expect(vurgu).toMatch(/^#[0-9a-f]{6}$/);
+  // Tasarım B: palet şeridi Bugün'den kalktı; renkler yine çıkarılır ve vurguya yazılır
+  await expect.poll(() => page.evaluate(() => document.documentElement.style.getPropertyValue('--vurgu-acik'))).toMatch(/^#[0-9a-f]{6}$/);
   const kayit = await page.evaluate(
     () =>
       new Promise((coz) => {

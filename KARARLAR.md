@@ -1835,3 +1835,78 @@ Sürüm 1.64.0 (İş 119–121).
   - Hesap kapalıyken yerelde biriken İş 161–169 commit'leri GitHub'a gönderildi ve main'e birleştirildi.
   - **Yayın otomatik:** `.github/workflows/yayinla.yml` main'e her birleştirmede yalnız sitenin dosyalarını (testler, scripts, tools, referans, tasarim-A, .md'ler hariç; ~7.800 dosya, ~330 MB) Cloudflare Pages'e (`sanat-atlasi.pages.dev`) `wrangler pages deploy` ile yükler. Depo sırrı `CLOUDFLARE_API_TOKEN` yoksa yükleme adımı atlanır. Mac'ten elle yükleme gerekmez.
   - **GitHub'da daha az otomatik iş:** Vercel kalıyor (Emre kullanacak) ama `vercel.json` ile sessiz (`github.silent`): PR'lara ve commit'lere yorum yazmıyor, her güncellemede e-posta gelmesin. Önizleme ve yayın eskisi gibi. Testler artık yalnız PR'da çalışır (main'e birleştirince ikinci kez çalışmıyordu). Değişiklikler daha az PR'da toplanacak.
+
+## İş 171 (Tasarım B, Fable)
+
+Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişiklik: haritadaki durak ve seviye sembolleri aynen kalır, madalyon (halka, yıldız, nabız, kilit) onların çevresine kurulur. Sürüm 1.76.0.
+
+### Grup 1–4 · Bugün yürüyüşü
+
+- **Yürüyüş uygulamada** (`js/yuruyus.js`, `js/ekranlar/bugun.js`): `deneme/yuruyus.html`'deki kamera mantığı aynen taşındı (uzun kenar 4000 birim, kart altta ve üstte denenir, ayrıntının en çok göründüğü yerleşim seçilir, resim hep ekranı kaplar). Sahne ekrana sabit, sayfa pencereyle kayar ve adıma oturur (`scroll-snap`). Yürüyüşü olmayan sanatçıda (ya da `data/yuruyus.json` yoksa) eski tek ekran kalır.
+- **Günün eseri = yürüyüş eseri.** Elle seçilen günün resmi (Ayarlar → Günün resimleri) yürüyüşü olan sanatçıda kullanılmaz: noktalar tek bir resme göre çizildi. Açılış karesi yine elle odakla (`gorsel_odak_elle.json`) ortalanır.
+- **Günün ressamı 145 sanatçıdan** (`js/gunun.js` → `yuruyusHavuzu`). Dikey resim şartı kalktı: kamera yatay resmi de ekrana kaplıyor. Havuz değiştiği için bugünün ressamı bir kereliğine değişir.
+- **Eğim (telefonu çevirince):** yürüyüşte resmin kendisi dönmez (kamerayla çakışıyordu); üstünden geçen ışık, adın katmanlı kayması ve "Hareketi aç" düğmesi eskisi gibi (`js/egim.js` sınıfları ve değişkenleri yürüyüşün köküne de yazar).
+- **"Günün resmi" seçimi** (görüntüleyicideki düğme, Ayarlar → Günün resimleri) yürüyüşü olan sanatçıda Bugün'ü etkilemez. `data/gunun_resimleri.json`'daki 130 seçimin 64'ü yürüyüş eserinden farklı; talimat gereği yürüyüş eseri kazanır. Düğmenin kalıp kalmayacağı Emre'ye soruldu. Eski yol (yürüyüşsüz tek ekran, otomatik ve elle seçim) testlerde `window.__atlasYuruyusYok` ile sınanıyor.
+- **Sekme çubuğu** yürürken aşağı kayıp gizlenir; yukarı kaydırınca, kapakta ve sonda geri gelir. Kartların altında çubuğun yeri boş bırakıldı ki geri gelince kartı örtmesin.
+- **Yürüyüşün sonu:** Hayatı'ndan sonra "Resmi gezdin.", pirinç "Bugünkü tur" kartı, sanatçı sayfası, bütün eserleri, adını dinle. Başlıkta sanatçının adına ek getirmedim (Monet'yi, Goya'yı gibi ekler yabancı adlarda yanlış çıkabiliyor).
+- **Okuma yazısı Newsreader** eklendi (`--okuma`), şimdilik yalnız yürüyüşte; diğer ekranlara 5. grupta yayılacak. Pirinç vurgu `--pirinc`.
+- **Hareket ayarı:** Kapalı'da ve sistemin "hareketi azalt"ında kamera adıma anında geçer, açılıştaki uzaklaşma olmaz; Sade'de ok zıplamaz.
+- Testler: `tests/unit/yuruyus.test.mjs` (havuz, 145 eserin bütün ayrıntılarında kartın ayrıntıyı kapatmaması), `tests/e2e/gunun.spec.js` (adımlar, siyah boşluk yok, sekme çubuğu, son). "Bugün tek ekran, kaydırma yok" testi yeni düzene uyarlandı.
+
+### Grup 5–6 · Tasarım dili ve sekmeler
+
+- **4 sekme:** Bugün · Yolculuk · Galeri · Çalış (`js/ekranlar/ortak.js` → `SEKMELER`). Adresler aynı. Ben (`#/ilerleme`) sekme değil: Bugün'ün sağ üstündeki düğmeden açılır, geri okuyla Bugün'e döner; Ben ve Ayarlar'da Bugün sekmesi seçili görünür. Koleksiyon Galeri sekmesine bağlandı.
+- **Çalış rozeti:** bugünkü turda bekleyen kart sayısı (Bugün'ün sonundaki ve Çalış'taki sayıyla aynı hesap, `turBilgisi('karisik')`); 0 olunca kalkar.
+- **Başlıklar:** Göz At → Galeri, Pekiştir → Çalış, İlerleme → Ben (sekme adıyla aynı; üstteki küçük etiketler kalktı).
+- **Okuma yazısı:** 21 px ve altındaki bütün Bodoni metinler (66 kural) Newsreader'a geçti; Bodoni yalnız başlıklarda ve büyük sayılarda. Kenar boşluğu 22 → 24 px.
+- **Pirinç** (`--pirinc`; Gündüz'de koyusu): etkin sekme ve rozet. Düğmeler ve ilerleme çizgileri, o ekranlar yeniden çizildikçe (soru, harita, Çalış, Galeri) pirince geçecek; tablodan gelen renk arka plan ışığında kalıyor. 325 yerde kullanılan `--vurgu` tek seferde değiştirilmedi (kırılma riski).
+- Testler: sekme sayısı 5 → 4 (`harita.spec`), "başka sekmeden dönünce" testi Defter yerine Çalış sekmesini kullanır, başlık adları; `cilalama.spec` İş 71 testi çubuğun yerini açılış animasyonu bittikten sonra ölçer (yarı yarıya kırılıyordu: ölçüm animasyonun ortasına denk geliyordu).
+
+### Grup 7 · Soru ve cevap
+
+- Öğrenme mantığına ve soru türlerine dokunulmadı; işaretleme ve `data-test`'ler aynı. Eklenenler: arkada eserin bulanık ışığı (`.soru-isik`, 400'lük kopya), parça parça ilerleme çizgisi (tur 24 karttan uzunsa eski tek çizgi), cevap yaprağında **Leitner satırı** (`kutuSatiri`: altı nokta, "N. kutu · X gün sonra tekrar"; yanlışta "Baştan · bu turda yine gelecek").
+- Son nokta yalnız kutu bu cevapla gerçekten ilerlediyse canlanır (vadesi gelmemiş kartta doğru cevap kutuyu ilerletmez; o zaman yazı gerçek tarihi söyler).
+- Şıklar 72 px, harf etiketleri (A/B/C/D) gizlendi; ana düğme pirinç ve 58 px.
+- Test: `tests/e2e/tasarim_b.spec.js`.
+
+### Grup 8–10 · Harita, durak penceresi, seviye sonu
+
+- **Semboller aynen** (Emre'nin şartı): durakların çizimleri ve dosyaları değişmedi. Madalyon sembolün çevresine, arkasına kuruldu (`madalyonHtml`, `.durak-halka`): pirinç ilerleme halkası (kazanılan yıldız / 3), altında üç yıldız, sıradaki durakta nabız, kilitli durakta kesik halka ve küçük kilit.
+- **Sıradaki durağın etiketi:** bölümün adı ve sıradaki iş ("Kolay · 8 soru seni bekliyor"; üç yıldızsa "Üç yıldız tamam"). Durak haritanın en altındaysa etiket sembolün üstüne geçer (sekme çubuğunun altında kalıyordu); kenara yakın duraklarda içe yaslanır.
+- **Durak penceresi:** başlıkta aynı sembol madalyonda; seviyeler merdiven: Tanış → Kolay → Orta → Zor (geçilen pirinç tikli, sıradaki vurgulu, kilitli olan neden kilitli olduğunu söyler). "Tanıtım" düğmesi merdivenin ilk basamağı oldu (`data-test="harita-tanitim"` onunla taşındı). Altta tek büyük düğme: sıradaki seviyeye başla (`data-test="harita-basla"`).
+- **Seviye sonu:** sergi duvarı, yüzde ve salon yolu aynen duruyor; araya durağın sembolü madalyonda eklendi: halka eski yıldızdan yenisine çizilir, sembol "basılır", yeni yıldız sırayla gelir. Roma rakamlı mühür önerisi sembolle değiştirildi.
+- **Gezginin kendiliğinden yürümesi eklenmedi:** İş 90/92'de Emre "sürekli yürümesin, bir seviyeye bastığında yürüsün" demişti; bu davranış korunuyor. Haritaya dönünce ilerleyen şey durağın halkası ve yıldızı.
+- Testler: `tasarim_b.spec.js` (madalyon, etiket, merdiven), `harita.spec.js`'e seviye sonu madalyonu.
+
+### Grup 11, 12, 14 · Çalış, Galeri, rozetler
+
+- **Çalış:** bugünkü tur kartı aynen (Emre'nin İş 97'de seçtiği tablo düğmesi korunuyor); altındaki satırlar "Başka turlar" 2×2 ızgarası oldu: Hatalarım (varsa, tam genişlik), Döneme göre (sayfadaki salonlara kaydırır), Bölüm turu, Konu turu. `data-test`'ler aynı.
+- **Galeri:** en üstte Başyapıtlar rafı (10 kart; hikâyesi olan, sonra rehberli incelemesi olan, sonra açık sanatçılar önce), altında iki kısayol: Karşılaştır (en çok karıştırılan ikili; yoksa açık ilk iki akım) ve Koleksiyon. Öneride dört haplı üst menünün kalkması vardı; hapları bıraktım: Başyapıtlar, Konular ve Zaman'a tek dokunuşla götürüyorlar ve testler onlara bağlı. Rafın yeri baştan ayrılır (sonradan açılınca sayfa kayıyordu).
+- **Rozetler** (`eserRozetleri`, `rozetleriEkle`): hikâyesi olan esere kitap, rehberli incelemesi olana büyüteç. Galeri rafında adıyla ("Hikâye", "6 ayrıntı"), başyapıt listesinde ve sanatçı sayfasındaki eser şeridinde yalnız ikon. Görüntüleyicide düğmeler zaten adlıydı.
+- Testler: `tasarim_b.spec.js`'e Galeri/Çalış testi; `cilalama.spec` İş 73 testi ilk akım kartını ekrana kaydırır (artık rafın altında); `soru_turlari.spec` soruyu başlık adıyla arar.
+
+### Grup 13, 15, 16, 17 · Kurs rozeti, hareket, Ben, dönem kutlaması
+
+- **Kurs rozeti** (Yolculuk, sol üstte sabit): "9 / 57 konu · Sıradaki: Konu 12", halkayla. Dokununca alttan panel: sıradaki konunun adı, kaç sanatçı açılacağı ve "İşlendi yap"; işlenince harita olduğu yerde yeniden çizilir ve panel yeni sıradakiyle açık kalır. Bütün konuların listesi (kitaplık) Ben sayfasında kaldı ("Bütün konular" bağlantısı): kitaplığı panele taşımak Ben'deki testli düzeni ikiye bölecekti.
+- **Hareket:** büyük sayılar ekran ilk açılınca sayarak gelir (`[data-say]`: Çalış'taki kart sayısı, Ben'deki sanatçı sayısı; Sade ve Kapalı'da doğrudan yazılır). Düğme, satır ve arama kutusu basınca 0,97'ye küçülür. Uygulamanın mevcut geçişleri (dokunulan resmin büyüyerek açılması, sekmeler arası kayma, alttan pencereler) İş 52–86'da zaten vardı; değiştirilmedi.
+- **Ben:** Koleksiyonum satırının altına Ayarlar satırı eklendi (dişli ikonu sağ üstte duruyor). Sanatçı, başyapıt ve ayarlar sayfaları 5. gruptaki yazı değişikliğiyle yeni dile geçti; düzenleri aynı.
+- **Dönem kutlaması:** bir durağın üçüncü yıldızıyla dönemin bütün durakları üç yıldız olduysa seviye sonunda "… tamamlandı" şeridi çıkar. Haritada büyük mühür ve kamera kayışı yapılmadı (haritanın sepya/renkli açılma düzeni zaten dönemi gösteriyor; ikisi üst üste binecekti).
+- Testler: `tasarim_b.spec.js`'e kurs rozeti testi.
+
+### İnceleme sonrası (Emre: eser adları, "Günün resmi" düğmesi, ana ekran denetimi)
+
+- **Eser adları Türkçe:** Bugün'de ve yürüyüşte eser adı `data/eser_adlari_tr.json`'dan (QID ya da "sanatçı|başlık" anahtarı; `yuruyusEserAdi`). 145 eserin 132'sinde Türkçe ad bulundu; kalan 13'ünde kayıttaki ad olduğu gibi (çoğu zaten Türkçe).
+- **"Günün resmi" düğmesi kalktı** (görüntüleyici). Ayarlar'daki bölüm "Ana ekranın resimleri" oldu: seçim listesi yok; "Sırayla ortala" yürüyüş eserlerini dönem sırasıyla açar (odak, yürüyüşte kullanılan görselin adına kaydedilir). Elle odaklar (depo ve cihaz) açılış karesinde kullanılmaya devam ediyor. `data/gunun_resimleri.json` ve eski seçim kodu yürüyüşsüz yedek yol için duruyor.
+- **Açılış karesi** artık odağı yatayda ortaya, dikeyde ekranın %36'sına koyar (eski Tuval ve "Sırayla ortala" çerçevesiyle aynı; önce ekranın ortasındaydı, yüzler adın arkasına yaklaşıyordu).
+- **Büyük kopya karartması düzeltildi:** en büyük kopya devreye girerken resim bir an siyaha düşüyordu (denetimde bazı kareler siyah çıktı). Büyük kopya önce arkada çözülüyor, sonra tek karede yerine geçiyor.
+- **Ana ekran denetimi:** 145 açılış karesi 390×844, 375×667 ve 430×932'de çekilip tek tek bakıldı. Düzeltmeler yeni `data/yuruyus_odak.json` dosyasında (anahtar: yerel görsel adı): `odak` (13 eser), `yakin` (açılışta biraz yakınlaşma; ana konu resmin alt yarısındaysa adın arkasında kalmasın, 7 eser), `kirp` (çerçeve, duvar, kâğıt kenarı; 14 eser). Toplam 25 eser. `data/yuruyus.json`'a ve Emre'nin elle odaklarına dokunulmadı; elle odak her zaman önceliklidir (test denetler).
+- **Düzeltilmeyenler (Emre'nin elle odakları):** Velázquez (Nedimeler: figürler adın arkasında), Caravaggio (Pavlus yerde, adın arkasında), van Honthorst (müzisyenlerin yüzleri altta), Tintoretto, Mantegna. Bunlar yatay ya da konusu altta olan resimler; istenirse `yakin` ile yakınlaştırılabilir ama elle seçime dokunmamak için bırakıldı.
+- **Kırpılamayanlar:** kemerli ya da oval eserler (Parmigianino, El Greco, Salviati, Giotto'nun üçgen tepesi) köşelerdeki boşluk resmin biçiminden; Seurat'nın mavi kenarı ressamın kendi boyadığı çerçeve; Picasso'nun kâğıdı eserin kendisi.
+- Temas sayfası: `tasarim-B/ana-ekran-denetim.html` (üç boy, düzeltilenler pirinç çerçeveli).
+- Testler: `ayar_gorunum.spec` (düğme yok, ana ekran yürüyüş eserini ve Türkçe adını gösterir, "Sırayla ortala" yürüyüş eserlerini açar), `safari.spec` (düğme listesinden çıktı), `yuruyus.test.mjs` (denetim dosyasının geçerliliği ve odak önceliği).
+
+### Galeri ve sekme çubuğu çizimdeki gibi (Emre: "bu kısımları yapmamışsın")
+
+- **Galeri ana ekranı** `oneri-07-galeri` çizimine göre: haplı üst menü kalktı; arama, Başyapıtlar rafı ("107 eser" bağlantısı Başyapıtlar sayfasına), Akımlar şeridi (küçük resimli kartlar, kilitliler soluk ve "Konu N'de açılır"; "5 / 29 açık" aşağıdaki tam listeye kaydırır), dört kısayol: Konular, Zaman, Karşılaştır, Koleksiyon. Altında eski akım koridoru aynen. Haplar Başyapıtlar, Konular ve Zaman sayfalarında duruyor. `data-test`'ler (`basyapit-giris`, `konu-giris`, `zaman-giris`) yeni bağlantılara taşındı.
+- **Sekme çubuğu** çizimdeki ikonlarla (çerçeve, patika, galeri duvarı, kart destesi); kayan hap görünmez, etkin sekmenin ikonu pirinç, yazısı açık ve kalın.
+- Testler: `cilalama.spec` dokunma alanı testi Galeri'de dört kısayolu, hapları Başyapıtlar sayfasında ölçer; İş 89 testi (bölüm şeridi geçişsiz) Başyapıtlar sayfasından başlar.

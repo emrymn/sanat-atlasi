@@ -15,7 +15,7 @@ import { hatalarBilgisi } from './pekistir.js';
 import { gorselUrl, gorselYedek } from '../gorsel.js';
 
 // İş 28: kitaplıkta yalnız kapağı (resmi) olan kurs konuları; heykel, mimari ve eseri olmayan dersler gösterilmez
-const kurs = () => d.kursKonulari || d.konular;
+export const kurs = () => d.kursKonulari || d.konular;
 const islenmis = (k) => kurs().filter((x) => k.has(x.no)).length;
 
 // ---------- İlerleme ----------
@@ -34,7 +34,7 @@ function karisanlarBolumu() {
 }
 
 // Kurs konusunun kısa Türkçe başlığı (D6, data/konular_tr.json); yoksa özgün başlık
-function konuBasligi(konu) {
+export function konuBasligi(konu) {
   return (d.konularTr && d.konularTr.konular && d.konularTr.konular[String(konu.no)]) || konu.baslik;
 }
 function bolumAdi(bl) {
@@ -206,7 +206,7 @@ function parcalar() {
       <p class="ilr-buyuk"><b>${islenmis(k)}</b><span>/ ${kurs().length}<small>konu işlendi</small></span></p>
       <span class="ilr-cizgi" role="img" aria-label="%${yuzde} tamamlandı"><i style="--y:${yuzde}%"></i></span>
       <dl class="ilr-sayilar">
-        <div><dt>Sanatçı</dt><dd>${acik.length}<small>/${d.sanatcilar.length}</small></dd></div>
+        <div><dt>Sanatçı</dt><dd><span data-test="acik-sayi" data-say>${acik.length}</span><small>/${d.sanatcilar.length}</small></dd></div>
         <div><dt>Kalıcı</dt><dd>${dagilim.kalici}<small>${acik.length ? ` %${Math.round((100 * dagilim.kalici) / acik.length)}` : ''}</small></dd></div>
         <div><dt>Tekrar</dt><dd>${vade}</dd></div>
       </dl>
@@ -269,9 +269,7 @@ export function ilerlemeSayfasi() {
   gununRengi();
   ciz(`<section class="ilr-sahne">
       ${eserDuvari()}
-      <div class="pk-ust">${ust('İlerleme', '#/', {
-        geriYok: true,
-        ustEtiket: 'Kurs',
+      <div class="pk-ust">${ust('Ben', '#/', {
         sag: `<a class="ust-dugme" href="#/ayarlar" aria-label="Ayarlar">${ikon('ayarlar', 22, 1.4)}</a>`,
       })}</div>
       ${p.pano}
@@ -336,7 +334,7 @@ function tanisKartiAc(no, yeni) {
 }
 
 // Konuları işlendi / işlenmedi yapar; yeni açılan sanatçıları bildirir
-function konuIsaretle(nolar, islendi, { kartla = false } = {}) {
+export function konuIsaretle(nolar, islendi, { kartla = false } = {}) {
   const once = d.ilerleme.islenen.slice();
   const s = new Set(once);
   for (const no of [].concat(nolar)) islendi ? s.add(no) : s.delete(no);

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=390, viewport-fit=cover">
+<title>Tasarım B önerisi · Yolculuk haritası</title>
+<!-- Tasarım B, Aşama 1 çizimi (Fable). Uygulama kodu değil; 390×844 iPhone ekranı. Sıradaki / önceki çizim için ekrandaki bağlantılara dokun. -->
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#ebe5da}a:hover{color:#ffffff}
+@keyframes nabiz{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.9);opacity:0}}
+@keyframes in{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
+@keyframes yuru{from{transform:translate(-78px,246px)}to{transform:none}}
+.nabiz{animation:nabiz 2.2s ease-out infinite}
+.in{animation:in .8s cubic-bezier(.2,.7,.2,1) .3s both}
+.gezgin{animation:yuru 2.6s cubic-bezier(.45,0,.15,1) .4s both}
+@media (prefers-reduced-motion: reduce){.nabiz,.in,.gezgin{animation:none}}
+</style>
+<style>html{background:#000}body{display:flex;justify-content:center}</style>
+</head>
+<body>
+<div style="position: relative; width: 390px; height: 844px; overflow: hidden; background: #121110; color: #ebe5da; font-family: Archivo, system-ui, sans-serif">
+<img src="../gorseller/harita/donem_ortacag_gece.webp" alt="Orta Çağ haritası" style="position: absolute; left: 0; top: -326px; width: 390px; height: 1170px; max-width: none">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,17,16,0.6) 0%, rgba(18,17,16,0) 22%, rgba(18,17,16,0) 78%, rgba(18,17,16,0.6) 100%)"></div>
+
+<div class="in" style="position: absolute; top: 58px; left: 16px; right: 16px; display: flex; align-items: center; gap: 10px">
+<a href="oneri-05-durak.html" style="flex: 1; height: 52px; border-radius: 26px; padding: 0 8px 0 8px; display: flex; align-items: center; gap: 12px; background: rgba(24,22,20,0.78); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); border: 1px solid rgba(235,229,218,0.14); text-decoration: none">
+<svg role="img" aria-label="57 konudan 9'u işlendi" width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="15" stroke="rgba(235,229,218,0.2)" stroke-width="3"></circle><circle cx="18" cy="18" r="15" stroke="#C9A45C" stroke-width="3" stroke-linecap="round" stroke-dasharray="14.900 94.300" transform="rotate(-90 18 18)"></circle></svg>
+<span style="flex: 1; display: flex; flex-direction: column; gap: 1px">
+<span style="font-size: 15px; font-weight: 600">9 / 57 konu</span>
+<span style="font-size: 13px; color: #cfc7bc">Sıradaki: Konu 12</span>
+</span>
+<span style="height: 36px; padding: 0 14px; border-radius: 18px; background: #C9A45C; color: #121110; font-size: 13px; font-weight: 600; display: flex; align-items: center">İşlendi yap</span>
+</a>
+</div>
+
+<div style="position: absolute; top: 122px; left: 24px; display: flex; flex-direction: column; gap: 2px">
+<div style="font-family: 'Bodoni Moda', Didot, serif; font-size: 26px; line-height: 1.1; text-shadow: 0 1px 12px rgba(18,17,16,0.9)">Orta Çağ</div>
+<div style="font-size: 11px; font-weight: 600; letter-spacing: 0.16em; color: #C9A45C; text-shadow: 0 1px 8px rgba(18,17,16,0.9)">ANTİK ÇAĞDAN XV. YÜZYILA</div>
+</div>
+
+<a href="oneri-05-durak.html" aria-label="Gotik 3. bölüm, kilitli" style="position: absolute; left: 179px; top: 196px; width: 64px; height: 64px; border-radius: 32px; background: rgba(24,22,20,0.82); border: 1.5px solid rgba(235,229,218,0.3); display: flex; align-items: center; justify-content: center; text-decoration: none">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#aca498" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5.500" y="10.500" width="13" height="9.500" rx="1.5"></rect><path d="M8.500 10.500V8a3.500 3.500 0 017 0v2.500"></path></svg>
+</a>
+
+<span class="nabiz" aria-hidden="true" style="position: absolute; left: 235px; top: 422px; width: 64px; height: 64px; border-radius: 32px; border: 2px solid #C9A45C; box-sizing: border-box"></span>
+<a href="oneri-05-durak.html" aria-label="Gotik 2. bölüm, sıradaki durak, 3 yıldızdan 1'i" style="position: absolute; left: 235px; top: 422px; width: 64px; height: 64px; border-radius: 32px; background: #1c1a18; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.5)">
+<svg aria-hidden="true" width="64" height="64" viewBox="0 0 64 64" fill="none" style="position: absolute; inset: 0"><circle cx="32" cy="32" r="29" stroke="rgba(235,229,218,0.22)" stroke-width="3"></circle><circle cx="32" cy="32" r="29" stroke="#C9A45C" stroke-width="3" stroke-linecap="round" stroke-dasharray="60.700 182.200" transform="rotate(-90 32 32)"></circle></svg>
+<span style="font-family: 'Bodoni Moda', Didot, serif; font-size: 26px; color: #ebe5da">2</span>
+</a>
+<div aria-hidden="true" style="position: absolute; left: 235px; top: 492px; width: 64px; display: flex; justify-content: center; gap: 3px">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A45C"><path d="M12 2.500l2.900 6.200 6.600.800-4.900 4.600 1.300 6.600L12 17.400l-5.900 3.300 1.300-6.600L2.500 9.500l6.600-.800z"></path></svg>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(18,17,16,0.55)" stroke="#ebe5da" stroke-width="1.4"><path d="M12 2.500l2.900 6.200 6.600.800-4.900 4.600 1.300 6.600L12 17.400l-5.900 3.300 1.300-6.600L2.500 9.500l6.600-.800z"></path></svg>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(18,17,16,0.55)" stroke="#ebe5da" stroke-width="1.4"><path d="M12 2.500l2.900 6.200 6.600.800-4.900 4.600 1.300 6.600L12 17.400l-5.900 3.300 1.300-6.600L2.500 9.500l6.600-.800z"></path></svg>
+</div>
+<img class="gezgin" src="../gorseller/harita/gezgin-a-96-2_ortacag_dur_gece.webp" alt="Gezgin" style="position: absolute; left: 196px; top: 404px; width: 38px; height: 90px">
+
+<div style="position: absolute; left: 136px; top: 520px; padding: 8px 14px 9px; border-radius: 14px; background: rgba(24,22,20,0.86); border: 1px solid rgba(235,229,218,0.14); display: flex; flex-direction: column; gap: 1px">
+<span style="font-family: 'Bodoni Moda', Didot, serif; font-size: 19px">Gotik · 2. bölüm</span>
+<span style="font-size: 13px; color: #cfc7bc">Kolay · 8 soru seni bekliyor</span>
+</div>
+
+<a href="oneri-06-seviye-tamam.html" aria-label="Gotik 1. bölüm, tamamlandı, 3 yıldız" style="position: absolute; left: 153px; top: 668px; width: 64px; height: 64px; border-radius: 32px; background: #C9A45C; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.5)">
+<svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#121110" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.500l4.500 4.500L19 7.500"></path></svg>
+</a>
+<div aria-hidden="true" style="position: absolute; left: 153px; top: 738px; width: 64px; display: flex; justify-content: center; gap: 3px">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A45C" stroke="#121110" stroke-width="0.8"><path d="M12 2.500l2.900 6.200 6.600.800-4.900 4.600 1.300 6.600L12 17.400l-5.900 3.300 1.300-6.600L2.500 9.500l6.600-.800z"></path></svg>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A45C" stroke="#121110" stroke-width="0.8"><path d="M12 2.500l2.900 6.200 6.600.800-4.900 4.600 1.300 6.600L12 17.400l-5.900 3.300 1.300-6.600L2.500 9.500l6.600-.800z"></path></svg>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="#C9A45C" stroke="#121110" stroke-width="0.8"><path d="M12 2.500l2.900 6.200 6.600.800-4.900 4.600 1.300 6.600L12 17.400l-5.900 3.300 1.300-6.600L2.500 9.500l6.600-.800z"></path></svg>
+</div>
+
+<nav aria-label="Sekmeler" style="position: absolute; left: 16px; right: 16px; bottom: 22px; height: 64px; border-radius: 32px; background: rgba(24,22,20,0.78); -webkit-backdrop-filter: blur(18px); backdrop-filter: blur(18px); border: 1px solid rgba(235,229,218,0.12); display: flex; align-items: center; justify-content: space-around; padding: 0 8px">
+<a href="oneri-01-bugun.html" style="width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; text-decoration: none; color: #aca498; font-size: 11px; font-weight: 500; letter-spacing: 0.03em">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#aca498" stroke-width="1.6" stroke-linejoin="round"><rect x="4" y="3.500" width="16" height="17" rx="1.5"></rect><rect x="7.5" y="7" width="9" height="10"></rect></svg>
+Bugün</a>
+<a href="oneri-04-yolculuk.html" aria-current="page" style="width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; text-decoration: none; color: #ebe5da; font-size: 11px; font-weight: 600; letter-spacing: 0.03em">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A45C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 19h6.500a3.500 3.500 0 000-7h-3a3.500 3.500 0 010-7H17"></path><circle cx="5.500" cy="19" r="1.400"></circle><circle cx="18.500" cy="5" r="1.400"></circle></svg>
+Yolculuk</a>
+<a href="oneri-07-galeri.html" style="width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; text-decoration: none; color: #aca498; font-size: 11px; font-weight: 500; letter-spacing: 0.03em">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#aca498" stroke-width="1.6" stroke-linejoin="round"><rect x="3.500" y="4" width="7.5" height="9"></rect><rect x="13.5" y="4" width="7" height="5.5"></rect><rect x="13.5" y="12" width="7" height="8"></rect><rect x="3.500" y="15.5" width="7.5" height="4.5"></rect></svg>
+Galeri</a>
+<a href="oneri-10-calis.html" style="position: relative; width: 76px; height: 52px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; text-decoration: none; color: #aca498; font-size: 11px; font-weight: 500; letter-spacing: 0.03em">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#aca498" stroke-width="1.6" stroke-linejoin="round"><rect x="7" y="4" width="12" height="16" rx="1.5"></rect><path d="M7 7.5L4 8.3l2.600 10.700"></path></svg>
+Çalış
+<span style="position: absolute; top: 2px; right: 12px; min-width: 18px; height: 18px; border-radius: 9px; background: #C9A45C; color: #121110; font-size: 11px; font-weight: 600; display: flex; align-items: center; justify-content: center">8</span>
+</a>
+</nav>
+</div>
+</body>
+</html>

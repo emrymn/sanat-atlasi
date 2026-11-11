@@ -41,7 +41,7 @@ async function al(page, ad, tam = false) {
 test('ekran görüntüleri: Bugün, Sanatçı, Pekiştir ve çizilmemiş ekranlar', async ({ page }) => {
   await page.goto('./');
   await expect(page.locator('[data-test="gunun-kart"]')).toBeVisible();
-  await expect(page.locator('[data-palet] .palet span').first()).toBeAttached({ timeout: 20_000 });
+  await expect(page.locator('[data-gunun-gorsel] > img')).toBeVisible({ timeout: 20_000 });
   await bekle(page);
   await al(page, 'bugun');
   await al(page, 'bugun-tam', true);

@@ -34,8 +34,18 @@ async function kenarKaydir(page, context) {
 
 test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en az 44 pt; dört sekme ekrana sığar', async ({ page, context }) => {
   await agiHazirla(context);
+  // İş 171: Galeri'nin ana ekranında haplı menü yerine dört kısayol; haplar alt sayfalarda (Başyapıtlar, Konular, Zaman)
   await page.goto('./#/gozat');
+  await expect(page.locator('.gz-kisayol a')).toHaveCount(4);
+  for (const a of await page.locator('.gz-kisayol a').all()) {
+    const k = await a.boundingBox();
+    expect(k.height).toBeGreaterThanOrEqual(44);
+    expect(k.x + k.width).toBeLessThanOrEqual(390.5);
+  }
+  await page.goto('./#/basyapitlar');
   await expect(page.locator('.bolumler a')).toHaveCount(4);
+  // giriş animasyonu (küçükten büyüme) bitmeden ölçülünce 42 px çıkıyordu
+  await expect.poll(async () => Math.min(...(await dokunmaBoylari(page, '.bolumler a')))).toBeGreaterThanOrEqual(44);
   for (const b of await dokunmaBoylari(page, '.bolumler a')) expect(b).toBeGreaterThanOrEqual(44);
   // "Zaman" sekmesi kenardan kesilmez
   const son = await page.locator('.bolumler a').last().boundingBox();
@@ -108,8 +118,8 @@ test('sekme çubuğu: başka sekmeden dönünce kalınan yer; açık sekmeye yen
   await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
   await page.evaluate(() => window.scrollTo(0, 1200));
   await expect.poll(() => y(page)).toBe(1200);
-  await page.locator('#sekmeler a[data-sekme="ilerleme"]').click();
-  await expect(page).toHaveURL(/#\/ilerleme$/);
+  await page.locator('#sekmeler a[data-sekme="pekistir"]').click();
+  await expect(page).toHaveURL(/#\/pekistir$/);
   await page.locator('#sekmeler a[data-sekme="gozat"]').click();
   await expect(page).toHaveURL(/#\/gozat$/);
   await expect.poll(() => y(page)).toBe(1200);
@@ -808,6 +818,8 @@ test.describe('İş 71: sekme çubuğu dokunuşları', () => {
     await page.goto('./#/');
     const nav = page.locator('#sekmeler');
     await nav.waitFor();
+    // İş 171: çubuğun yeri açılış animasyonu (aşağıdan gelir) bittikten sonra ölçülür
+    await nav.evaluate((el) => Promise.all(el.getAnimations().map((x) => x.finished)));
     const r = await nav.boundingBox();
     const linkler = page.locator('#sekmeler a');
     const kutu = async (i) => linkler.nth(i).boundingBox();
@@ -815,7 +827,7 @@ test.describe('İş 71: sekme çubuğu dokunuşları', () => {
     const g = await kutu(2);
     await page.touchscreen.tap(g.x + g.width / 2, r.y + 2);
     await expect(page).toHaveURL(/#\/gozat$/);
-    // 4. ile 5. sekmenin tam arasına yakın, alt kenar boşluğuna: en yakını
+    // 4. sekmenin sağ ucuna yakın, alt kenar boşluğuna: en yakını
     const a4 = await kutu(3);
     await page.touchscreen.tap(a4.x + a4.width - 3, r.y + r.height - 2);
     await expect(linkler.nth(3)).toHaveAttribute('aria-current', 'page');
@@ -836,6 +848,7 @@ test.describe('İş 73: yutulan dokunuş', () => {
     await page.goto('./#/gozat');
     const kart = page.locator('a.zaman-kart').first();
     await kart.waitFor();
+    await kart.scrollIntoViewIfNeeded(); // İş 171: akımlar Başyapıtlar rafının altında, ilk ekranın dışında başlar
     // Safari'nin ilk tıklamayı yutmasının taklidi
     await page.evaluate(() => {
       window.__yutuldu = 0;
@@ -854,6 +867,7 @@ test.describe('İş 73: yutulan dokunuş', () => {
     // normal dokunuş: tek gezinme
     await page.goto('./#/gozat');
     await kart.waitFor();
+    await kart.scrollIntoViewIfNeeded();
     const once = await page.evaluate(() => history.length);
     const b2 = await kart.boundingBox();
     await page.touchscreen.tap(b2.x + b2.width / 2, b2.y + b2.height / 2);
@@ -1092,6 +1106,7 @@ test.describe('İş 82: günün sanatçısının görselleri', () => {
 // Rembrandt'ta en bilinen Gece Devriyesi değil (yatay)
 test('İş 83/100: günün tablosu çözünürlük, ekrana oturuş ve bilinirlikte en iyisi', async ({ page, context }) => {
   await agiHazirla(context);
+  await context.addInitScript(() => (window.__atlasYuruyusYok = true)); // İş 171: otomatik seçim yürüyüşsüz yolda sınanır
   // otomatik seçim sınanır: depodaki elle seçilen günün resimleri (İş 159) devre dışı
   await context.route(/data\/gunun_resimleri\.json/, (r) => r.fulfill({ status: 200, contentType: 'application/json', body: '{"surum":1,"secim":{}}' }));
   await page.goto('./#/ayarlar');
@@ -1128,8 +1143,9 @@ test('İş 83/100: günün tablosu çözünürlük, ekrana oturuş ve bilinirlik
 test('İş 89: bölüm şeridi geçişsiz, yığında yer değiştirir', async ({ page, context }) => {
   await agiHazirla(context);
   await context.addInitScript(() => (window.__atlasGecis = true));
-  await page.goto('./#/gozat');
-  await page.locator('a.zaman-kart').first().waitFor();
+  // İş 171: bölüm şeridi (haplar) Galeri'nin alt sayfalarında
+  await page.goto('./#/basyapitlar');
+  await page.locator('[data-test="basyapit-listesi"]').first().waitFor();
   await page.waitForTimeout(500);
   await page.locator('.bolumler a[href="#/konular"]').click();
   await expect(page).toHaveURL(/#\/konular$/);

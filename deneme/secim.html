@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#121110" />
+<title>Yürüyüş resimleri · taslak</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Archivo:wght@400;500;600&display=swap" />
+<style>
+  /* Tasarım B: Bugün'deki "resmin içinde yürüyüş" için sanatçı başına resim taslağı (tasarim-B/yuruyus_secim_taslak.json) */
+  :root { --bg:#121110; --yuzey:#1d1b19; --yazi:#ede4d3; --ikincil:#a9a094; --altin:#d8b36a; --yesil:#7fb08f; --kirmizi:#d08a7a; --cizgi:rgba(237,228,211,.12);
+    --serif:'Bodoni Moda',Georgia,serif; --sans:'Archivo',system-ui,sans-serif; }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--yazi); font-family:var(--sans); padding:calc(env(safe-area-inset-top) + 20px) 16px 60px; -webkit-font-smoothing:antialiased; }
+  h1 { font:400 32px/1.1 var(--serif); }
+  .ozet { color:var(--ikincil); font-size:15px; line-height:1.5; margin:8px 0 14px; }
+  .suzgec { display:flex; gap:6px; overflow-x:auto; padding-bottom:4px; position:sticky; top:0; background:var(--bg); padding-top:8px; z-index:2; }
+  .suzgec button { flex:none; min-height:40px; padding:0 14px; border-radius:20px; border:1px solid var(--cizgi); background:none; color:var(--yazi); font:500 14px var(--sans); }
+  .suzgec button[aria-pressed="true"] { background:var(--yazi); color:#121110; }
+  h2 { font:400 21px var(--serif); margin:26px 0 8px; color:var(--altin); }
+  .sat { display:grid; grid-template-columns:88px 1fr; gap:12px; padding:12px 0; border-top:1px solid var(--cizgi); }
+  .sat img { width:88px; height:88px; object-fit:cover; border-radius:10px; background:var(--yuzey); }
+  .bos { width:88px; height:88px; border-radius:10px; background:var(--yuzey); display:grid; place-items:center; color:var(--ikincil); font-size:24px; }
+  .ad { font-size:13px; color:var(--ikincil); letter-spacing:.04em; }
+  .eser { font:400 18px/1.25 var(--serif); margin:3px 0 6px; }
+  .rozetler { display:flex; flex-wrap:wrap; gap:5px; }
+  .r { font-size:12px; font-weight:600; padding:3px 9px; border-radius:11px; }
+  .uygun { background:rgba(127,176,143,.18); color:var(--yesil); }
+  .orta { background:rgba(216,179,106,.16); color:var(--altin); }
+  .tut { background:rgba(237,228,211,.08); color:var(--ikincil); }
+  .yeni, .oneri { background:rgba(216,179,106,.9); color:#121110; }
+  .cikar { background:rgba(208,138,122,.18); color:var(--kirmizi); }
+  .not { font-size:13px; color:var(--ikincil); margin-top:6px; line-height:1.4; }
+  .indir { margin-top:8px; padding:10px 12px; border-radius:10px; background:rgba(216,179,106,.1); font-size:13px; line-height:1.55; color:var(--ikincil); }
+  .indir b { color:var(--altin); font-weight:600; }
+  .indir a { color:var(--yazi); }
+  a.yur { display:inline-flex; align-items:center; min-height:40px; margin-top:8px; padding:0 14px; border-radius:20px; background:var(--altin); color:#121110; font-weight:600; font-size:14px; text-decoration:none; }
+  .eski { display:flex; align-items:center; gap:8px; margin-top:8px; font-size:13px; color:var(--ikincil); }
+  .eski img { width:36px; height:36px; border-radius:6px; opacity:.7; }
+</style>
+</head>
+<body>
+<h1>Yürüyüş resimleri</h1>
+<p class="ozet" id="ozet">Yükleniyor…</p>
+<div class="suzgec" id="suzgec"></div>
+<main id="liste"></main>
+<script>
+const ara = (r) => encodeURIComponent(`${r.ad.replace(/ \(.*\)/, '')} ${r.eserEn || r.eser}`);
+const ETIKET = { tut: 'Senin seçimin', yeni: 'Yeni öneri', oneri: 'Öneri (seçim yoktu)', cikar: 'Günün ressamı olmasın' };
+const kucuk = (h, uzak) => (h ? `../gorseller/k/${h}.jpg` : uzak || '');
+let veri = [], suz = 'hepsi', hazir = {};
+function ciz() {
+  const liste = document.getElementById('liste');
+  let akim = '', html = '';
+  for (const r of veri) {
+    if (suz === 'hazir' ? !hazir[r.id] : suz !== 'hepsi' && r.tur !== suz) continue;
+    if (r.akim !== akim) { akim = r.akim; html += `<h2>${akim}</h2>`; }
+    const src = kucuk(r.gorsel, r.uzak);
+    html += `<div class="sat">${src ? `<img loading="lazy" src="${src}" alt="">` : '<div class="bos">—</div>'}
+      <div><div class="ad">${r.ad}</div>
+      <div class="eser">${r.eser ? r.eser + (r.yil ? ` · ${r.yil}` : '') : 'Günün ressamı listesinden çıkar'}</div>
+      <div class="rozetler">${r.puan ? `<span class="r ${r.puan}">${r.puan === 'uygun' ? 'Uygun' : 'Orta'}</span>` : ''}<span class="r ${r.tur}">${ETIKET[r.tur]}</span></div>
+      ${r.not ? `<div class="not">${r.tur === 'yeni' ? 'Neden: ' : ''}${r.not}</div>` : ''}
+      ${hazir[r.id] ? `<a class="yur" href="yuruyus.html?s=${r.id}">Yürüyüşü aç · ${hazir[r.id].noktalar.length} ayrıntı →</a>` : ''}
+      ${r.indir ? `<div class="indir"><b>İndir · dosya adı: ${r.id}.jpg</b><br>${r.boyut ? `Elimizdeki: ${r.boyut.join('×')} px` : 'Elimizde büyük kopyası yok'}${r.muze ? ` · ${r.muze}` : ''}<br><a href="https://commons.wikimedia.org/w/index.php?search=${ara(r)}&title=Special:MediaSearch&type=image" target="_blank">Commons'ta ara</a> · <a href="https://www.google.com/search?tbm=isch&tbs=isz:l&q=${ara(r)}" target="_blank">Google'da ara (büyük)</a></div>` : ''}
+      ${r.eski ? `<div class="eski">${r.eskiGorsel ? `<img loading="lazy" src="${kucuk(r.eskiGorsel)}" alt="">` : ''}Şimdiki: ${r.eski}</div>` : ''}
+      </div></div>`;
+  }
+  liste.innerHTML = html;
+}
+Promise.all([fetch('../tasarim-B/yuruyus_secim_taslak.json').then((x) => x.json()), fetch('../data/yuruyus.json').then((x) => x.json()).catch(() => ({ eserler: {} }))]).then(([d, y]) => {
+  hazir = y.eserler;
+  veri = d.sanatcilar;
+  const say = (t) => veri.filter((r) => r.tur === t).length;
+  document.getElementById('ozet').textContent =
+    `${veri.length} sanatçı: ${say('tut')} senin seçimin kalıyor, ${say('yeni')} yeni öneri, ${say('oneri')} seçimi olmayana öneri, ${say('cikar')} çıkıyor. ` +
+    `${veri.filter((r) => r.puan === 'uygun').length} uygun, ${veri.filter((r) => r.puan === 'orta').length} orta. Yürüyüşü hazır: ${Object.keys(hazir).length}.`;
+  const sz = document.getElementById('suzgec');
+  sz.innerHTML = [['hepsi', 'Hepsi'], ['hazir', `Yürüyüşü hazır (${Object.keys(hazir).length})`], ['yeni', 'Yeni öneriler'], ['oneri', 'Seçimi olmayanlar'], ['tut', 'Senin seçimlerin'], ['cikar', 'Çıkanlar']]
+    .map(([k, a]) => `<button type="button" data-k="${k}" aria-pressed="${k === suz}">${a}</button>`).join('');
+  sz.addEventListener('click', (ev) => {
+    const b = ev.target.closest('button'); if (!b) return;
+    suz = b.dataset.k; sz.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', x === b)); ciz();
+  });
+  ciz();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#121110" />
+<title>Resmin içinde yürüyüş · deneme</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Archivo:wght@400;500;600&display=swap" />
+<style>
+  /* Deneme (Tasarım B, Bugün'ün aşağısı): kaydırdıkça kamera resmin içinde gezer. Uygulamadan bağımsız tek sayfa. */
+  :root { --bg:#121110; --yazi:#ede4d3; --ikincil:#a9a094; --altin:#d8b36a; --cizgi:rgba(237,228,211,.16);
+    --serif:'Bodoni Moda',Georgia,serif; --sans:'Archivo',system-ui,sans-serif; }
+  * { box-sizing:border-box; margin:0; }
+  html { background:var(--bg); scroll-snap-type:y mandatory; }
+  body { background:var(--bg); color:var(--yazi); font-family:var(--sans); -webkit-font-smoothing:antialiased; }
+  .sahne { position:fixed; inset:0; overflow:hidden; background:#0b0a09; }
+  .sahne img { position:absolute; left:0; top:0; max-width:none; transform-origin:0 0; }
+  .karart { position:fixed; inset:0; pointer-events:none; transition:opacity .4s;
+    background:linear-gradient(to bottom, rgba(18,17,16,.45) 0, transparent 16%, transparent 52%, rgba(18,17,16,.82) 78%, rgba(18,17,16,.96) 100%); }
+  .ust { position:fixed; top:0; left:0; right:0; z-index:5; display:flex; justify-content:space-between; align-items:center;
+    padding:calc(env(safe-area-inset-top) + 14px) 20px 0; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--yazi); }
+  .ust::before { content:''; position:absolute; inset:0 0 -40px; z-index:-1; opacity:var(--perde,0); pointer-events:none;
+    background:linear-gradient(to bottom, rgba(18,17,16,.9) 55%, rgba(18,17,16,0)); }
+  .ben { width:44px; height:44px; border-radius:50%; display:grid; place-items:center; background:rgba(18,17,16,.5);
+    -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); border:1px solid var(--cizgi); font-size:12px; letter-spacing:.06em; }
+  .noktalar { position:fixed; right:10px; top:50%; transform:translateY(-50%); z-index:5; display:flex; flex-direction:column; gap:8px; transition:opacity .3s; }
+  .noktalar i { width:6px; height:6px; border-radius:3px; background:rgba(237,228,211,.35); transition:height .3s, background .3s; }
+  .noktalar i.acik { height:18px; background:var(--altin); }
+  main { position:relative; z-index:3; }
+  section { height:100svh; scroll-snap-align:start; scroll-snap-stop:always; display:flex; flex-direction:column; justify-content:flex-end;
+    padding:0 20px calc(env(safe-area-inset-bottom) + 104px); }
+  .ad { font:400 46px/1 var(--serif); letter-spacing:-.01em; text-shadow:0 2px 24px rgba(0,0,0,.5); }
+  .eser { font:italic 400 17px var(--serif); color:#d9d0c2; margin:8px 0 16px; }
+  .uclu { display:flex; gap:8px; }
+  .uclu a { flex:1; display:flex; align-items:center; justify-content:center; gap:7px; height:48px; border-radius:24px; color:var(--yazi); text-decoration:none;
+    background:rgba(18,17,16,.5); -webkit-backdrop-filter:blur(10px); backdrop-filter:blur(10px); border:1px solid rgba(237,228,211,.2); font-size:15px; }
+  .uclu a i { font-style:normal; color:var(--altin); }
+  .ipucu { display:flex; justify-content:center; margin-top:14px; color:var(--ikincil); font-size:12px; letter-spacing:.12em; text-transform:uppercase; gap:6px; align-items:center; }
+  .ipucu b { display:inline-block; animation:zipla 2.2s ease-in-out infinite; font-weight:300; font-size:22px; line-height:1; color:rgba(237,228,211,.7); }
+  @keyframes zipla { 50% { transform:translateY(4px); } }
+  .kart { background:rgba(18,17,16,.34); -webkit-backdrop-filter:blur(8px) saturate(1.1); backdrop-filter:blur(8px) saturate(1.1); border:1px solid rgba(237,228,211,.14);
+    border-radius:22px; padding:16px 18px 18px; opacity:0; transform:translateY(18px); transition:opacity 1s ease, transform 1.2s cubic-bezier(.22,.61,.36,1);
+    text-shadow:0 1px 3px rgba(0,0,0,.55), 0 0 18px rgba(0,0,0,.35); }
+  section.gorunur .kart { opacity:1; transform:none; }
+  .kart h2 { font:400 25px/1.15 var(--serif); margin:0 0 8px; }
+  .kart p { font:400 17px/1.5 var(--serif); color:#e3dacb; }
+  .kart a.bag { display:inline-flex; align-items:center; min-height:44px; margin-top:6px; color:var(--altin); text-decoration:none; font:500 15px var(--sans); }
+  .bulanik { position:fixed; inset:0; z-index:2; pointer-events:none; opacity:0; background:rgba(18,17,16,.55);
+    -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px); }
+  section.kart-ustte { justify-content:flex-start; padding-top:calc(env(safe-area-inset-top) + 64px); }
+  section.hayat { height:auto; min-height:100svh; justify-content:flex-start; scroll-snap-stop:normal;
+    padding:calc(env(safe-area-inset-top) + 84px) 22px calc(env(safe-area-inset-bottom) + 120px); text-shadow:0 1px 3px rgba(0,0,0,.5); }
+  .hayat h2 { font:400 30px/1.1 var(--serif); margin-bottom:14px; }
+  .hayat p { font:400 18px/1.6 var(--serif); color:#e8dfd0; margin-bottom:14px; }
+  .hayat small { color:var(--ikincil); font-size:13px; }
+  .sekme { position:fixed; left:14px; right:14px; bottom:calc(env(safe-area-inset-bottom) + 10px); z-index:6; height:62px; border-radius:31px;
+    background:rgba(29,27,25,.9); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px); border:1px solid var(--cizgi);
+    display:grid; grid-template-columns:repeat(5,1fr); align-items:center; text-align:center; font-size:11px; color:var(--ikincil); }
+  .sekme span { display:flex; flex-direction:column; align-items:center; gap:4px; position:relative; }
+  .sekme span::before { content:''; width:19px; height:19px; border:1.5px solid currentColor; border-radius:6px; opacity:.8; }
+  .sekme .acik { color:var(--yazi); font-weight:600; }
+  .sekme .sayi { position:absolute; top:-6px; left:calc(50% + 5px); min-width:17px; height:17px; border-radius:9px; background:var(--altin); color:#121110;
+    font-size:10px; font-weight:700; display:grid; place-items:center; padding:0 4px; }
+</style>
+</head>
+<body>
+<div class="sahne"><img id="resim" alt="" decoding="async"></div>
+<div class="karart" id="karart"></div>
+<div class="bulanik" id="bulanik"></div>
+<div class="ust"><span id="tarih"></span><span class="ben">Ben</span></div>
+<div class="noktalar" id="noktalar"></div>
+<main id="akis"></main>
+<nav class="sekme"><span class="acik">Bugün</span><span>Yolculuk</span><span>Galeri</span><span>Başyapıt</span><span>Çalış<i class="sayi">8</i></span></nav>
+<script>
+// Deneme (Tasarım B): data/yuruyus.json'daki her eser için resmin içinde yürüyüş. Adres: yuruyus.html?s=<sanatçı kimliği>
+const kacis = (t) => String(t ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+const al = (u) => fetch(u).then((x) => (x.ok ? x.json() : null)).catch(() => null);
+(async () => {
+  const [Y, S, K, G, O, E, T, B] = await Promise.all(['../data/yuruyus.json', '../data/sanatcilar.json', '../data/kisa_adlar.json', '../data/gorsel_kaynagi.json',
+    '../data/gorsel_odak.json', '../data/gorsel_odak_elle.json', '../data/tanima_notlari.json', '../data/biyografiler.json'].map(al));
+  const id = new URLSearchParams(location.search).get('s') || 'pieter-bruegel-yasl';
+  const kayit = Y.eserler[id];
+  if (!kayit) { document.getElementById('akis').innerHTML = '<section><div class="kart gorunur" style="opacity:1;transform:none"><h2>Henüz hazır değil</h2><p>Bu sanatçının yürüyüşü yazılmadı.</p></div></section>'; return; }
+  const s = S.find((x) => x.id === id) || { ad: id };
+  const kisa = (K.adlar[id] && K.adlar[id].buyuk) || s.ad.replace(/\s*\(.*\)/, '').split(' ').pop();
+  const taninma = s.taninma || (T.notlar || {})[id] || '';
+  const bio = (B.sanatcilar || {})[id];
+  const adres = G.adres, h = kayit.gorsel;
+  const sur = (G.surumler || {})[h], bsur = (G.b_surumler || {})[h];
+  const kucukUrl = kayit.buyuk ? `${adres}/${kayit.buyuk.replace(/\.jpg$/, '-1280.jpg')}` : `${adres}/b/${h}${bsur ? '-' + bsur : ''}.jpg`;
+  const buyukUrl = kayit.buyuk ? `${adres}/${kayit.buyuk}` : `${adres}/d/${h}${sur ? '-' + sur : ''}.jpg`;
+  const odak = (E && E.odak[h]) || (O && O.odak[h]) || [50, 40];
+  document.getElementById('tarih').textContent = new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' });
+  document.title = `${kisa} · yürüyüş`;
+
+  const akis = document.getElementById('akis');
+  const eserYazi = [kayit.eser, kayit.yil].filter(Boolean).join(' · ');
+  akis.insertAdjacentHTML('beforeend', `<section data-adim="kapak"><div class="ad">${kacis(kisa)}</div><div class="eser">${kacis(eserYazi)}</div>
+    <div class="uclu"><a href="#"><i>◉</i>İncele</a><a href="#"><i>☉</i>${kacis(kisa)}</a></div><div class="ipucu" aria-label="Aşağı kaydır"><b>⌄</b></div></section>`);
+  akis.insertAdjacentHTML('beforeend', `<section><div class="kart"><h2>${kacis(kayit.eser)}</h2><p>${kacis([s.ad, kayit.yil, s.akim].filter(Boolean).join(' · '))}</p></div></section>`);
+  for (const n of kayit.noktalar) akis.insertAdjacentHTML('beforeend', `<section><div class="kart"><h2>${kacis(n.ad)}</h2><p>${kacis(n.metin)}</p></div></section>`);
+  if (taninma) akis.insertAdjacentHTML('beforeend', `<section><div class="kart"><h2>Nasıl tanırım?</h2><p>${kacis(taninma)}</p><a class="bag" href="#">Bütün eserleri →</a></div></section>`);
+  if (bio && bio.metin) akis.insertAdjacentHTML('beforeend', `<section class="hayat"><h2>Hayatı</h2>${bio.metin.split(/\n+/).map((t) => `<p>${kacis(t)}</p>`).join('')}<small>Kaynak: ${kacis((bio.kaynak || {}).ad || '')}</small></section>`);
+
+  const img = document.getElementById('resim');
+  img.alt = `${s.ad}, ${kayit.eser}`;
+  img.src = kucukUrl;
+  await img.decode().catch(() => {});
+  // mantıksal koordinat: uzun kenarı 4000 birim; hangi kopya yüklü olursa olsun css boyutu aynı
+  const oran = img.naturalWidth / img.naturalHeight;
+  const IW = oran >= 1 ? 4000 : 4000 * oran, IH = oran >= 1 ? 4000 / oran : 4000;
+  img.style.width = IW + 'px'; img.style.height = IH + 'px';
+  const buyuk = new Image(); buyuk.decoding = 'async'; buyuk.src = buyukUrl; buyuk.onload = () => { img.src = buyuk.src; };
+  const [kx, ky, kw, kh] = kayit.kirp || [0, 0, 1, 1];
+
+  const bolumler = [...akis.children].filter((b) => !b.classList.contains('hayat'));
+  const sonAdim = bolumler.length - 1;
+  const bulanik = document.getElementById('bulanik'), ust = document.querySelector('.ust'), noktalar = document.getElementById('noktalar');
+  noktalar.innerHTML = bolumler.map(() => '<i></i>').join('');
+  let W, H, D;
+  // Kamera her adımda ekranı kaplar (siyah boşluk yok): ölçek en az "kaplama", kayma resmin (kırpılmış) içinde kalır
+  // Ayrıntı adımında kart ayrıntıyı kapatmasın: kartın gerçek boyu ölçülür; ayrıntı resmin alt yarısındaysa kart ekranın
+  // üstüne geçer. Ölçek, ayrıntıyı kartın dışında kalan alana sığdıracak ve resmin kenarı ekrana girmeden oraya
+  // taşıyabilecek kadar seçilir (kenar sınırı yüzünden kamera alttaki bir ayrıntıyı yukarı kaldıramıyordu).
+  const UST_BOSLUK = 64, ALT_BOSLUK = 112, ARA = 14;
+  function noktaAdimi(n, bolum, kapla) {
+    const kart = bolum.querySelector('.kart');
+    const kartH = kart ? kart.offsetHeight : H * 0.4;
+    const cx = (n.x + n.w / 2) * IW, cy = (n.y + n.h / 2) * IH;
+    const sol = kx * IW, sag = (kx + kw) * IW, ust = ky * IH, alt = (ky + kh) * IH;
+    const dene = (kartUstte) => {
+      const aTop = kartUstte ? UST_BOSLUK + kartH + ARA : UST_BOSLUK;
+      const aBot = kartUstte ? H - ALT_BOSLUK : H - ALT_BOSLUK - kartH - ARA;
+      const vy = (aTop + aBot) / 2, alanH = Math.max(80, aBot - aTop);
+      const sigdir = Math.min((W * 0.94) / (n.w * IW), (alanH * 0.92) / (n.h * IH));
+      // istenen ölçek: ayrıntıyı alana sığdıran (en çok 1,1); kenar sınırı yüzünden ayrıntı alanın dışında kalıyorsa
+      // ancak gerektiği kadar büyütülür (ayrıntının ortada olması gerekmez, alanın içinde olması yeter)
+      let sc = Math.max(kapla, Math.min(sigdir, 1.1));
+      const ust0 = n.y * IH, alt0 = (n.y + n.h) * IH;
+      // ayrıntının kartın dışında görünen payı (0–1); resmin kenarı ekrana girmeyeceği için alt kenardaki bir ayrıntı
+      // her zaman tam gösterilemez: o zaman en çok görünen yerleşim seçilir
+      const gorunen = (x) => {
+        const ty = Math.min(-ust * x, Math.max(H - alt * x, vy - cy * x));
+        const y1 = ty + ust0 * x, y2 = ty + alt0 * x;
+        return Math.max(0, Math.min(y2, aBot) - Math.max(y1, aTop)) / Math.max(1, y2 - y1);
+      };
+      let enIyi = sc, enIyiG = gorunen(sc);
+      for (let k = 0, x = sc; k < 25 && enIyiG < 0.97; k++) {
+        x *= 1.08;
+        const g = gorunen(x);
+        if (g > enIyiG + 0.02) { enIyi = x; enIyiG = g; }
+      }
+      return { kartUstte, vy, sc: enIyi, gor: enIyiG };
+    };
+    const altta = dene(false), ustte = dene(true);
+    // ayrıntıyı tam gösteren ve daha az yakınlaşan yerleşim seçilir; ikisi de taşıyorsa daha az taşan
+    // ayrıntının daha çok göründüğü yerleşim; ikisi yakınsa daha az yakınlaşan
+    const sec = Math.abs(altta.gor - ustte.gor) < 0.05 ? (altta.sc <= ustte.sc ? altta : ustte) : altta.gor > ustte.gor ? altta : ustte;
+    bolum.classList.toggle('kart-ustte', sec.kartUstte);
+    return { cx, cy, s: sec.sc, vy: sec.vy };
+  }
+  function durumlar() {
+    W = innerWidth; H = innerHeight;
+    const kapla = Math.max(W / (kw * IW), H / (kh * IH));
+    const adim = (cx, cy, sc, vy = H / 2) => ({ cx: cx * IW, cy: cy * IH, s: Math.max(kapla, sc), vy });
+    const ns = kayit.noktalar.map((n, k) => noktaAdimi(n, bolumler[k + 2], kapla));
+    const ilk = adim(odak[0] / 100, odak[1] / 100, kapla);
+    const d = [ilk, adim(0.5, 0.5, kapla), ...ns];
+    while (d.length < bolumler.length) d.push(adim(1 - odak[0] / 100, 0.5, kapla));
+    return d;
+  }
+  D = durumlar();
+  const yumusak = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+  let kamera = 0, sonSira = -1;
+  const IZ = 0.035;
+  function ciz(p) {
+    const i = Math.min(D.length - 2, Math.floor(p)), f = yumusak(p - i), a = D[i], b = D[i + 1];
+    const sc = Math.exp(Math.log(a.s) + (Math.log(b.s) - Math.log(a.s)) * f);
+    const cx = a.cx + (b.cx - a.cx) * f, cy = a.cy + (b.cy - a.cy) * f, vy = a.vy + (b.vy - a.vy) * f;
+    const tx = Math.min(-kx * IW * sc, Math.max(W - (kx + kw) * IW * sc, W / 2 - cx * sc));
+    const ty = Math.min(-ky * IH * sc, Math.max(H - (ky + kh) * IH * sc, vy - cy * sc));
+    img.style.transform = `translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${sc.toFixed(5)})`;
+  }
+  function kare() {
+    const hedef = Math.max(0, Math.min(sonAdim, scrollY / H));
+    const fark = hedef - kamera;
+    kamera = Math.abs(fark) < 0.0005 ? hedef : kamera + fark * IZ;
+    ciz(kamera);
+    const sira = Math.round(kamera);
+    if (sira !== sonSira && Math.abs(kamera - sira) < 0.18) {
+      sonSira = sira;
+      bolumler.forEach((b, k) => b.classList.toggle('gorunur', k === sira));
+      [...noktalar.children].forEach((n, k) => n.classList.toggle('acik', k === sira));
+    }
+    const asma = Math.max(0, Math.min(1, (scrollY - sonAdim * H) / (H * 0.6)));
+    bulanik.style.opacity = asma.toFixed(3);
+    ust.style.setProperty('--perde', asma.toFixed(3));
+    noktalar.style.opacity = kamera < 0.5 || asma > 0.3 ? 0 : 1;
+    requestAnimationFrame(kare);
+  }
+  addEventListener('resize', () => { D = durumlar(); });
+  // yazı tipleri gelince kartların boyu değişir: yeniden ölç
+  document.fonts && document.fonts.ready.then(() => { D = durumlar(); });
+  requestAnimationFrame(kare);
+})();
+</script>
+</body>
+</html>

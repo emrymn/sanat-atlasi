@@ -25,16 +25,18 @@ test('zaman çizgisi desteği rapora yazılır; Bugün ve ana ekranlarda yatay t
   }
 });
 
-test('Bugün sahnesi: sayfa kaydırılabilir ve sekme çubuğu (Pekiştir) kaydırırken ekranda kalır', async ({ page }) => {
-  // 1.30: tablonun önünde düğme yok; Pekiştir'e alttaki sekme çubuğundan gidilir
+test('Bugün sahnesi: açılış tek ekran, sekme çubuğu (Pekiştir) ekranda; aşağı kayınca yürüyüş adımına oturur', async ({ page }) => {
+  // İş 171: Bugün'ün açılışı tek ekran; aşağıda resmin içinde yürüyüş (sayfa adım adım kayar, sahne yerinde kalır)
   await page.goto('./');
   await expect(page.locator('[data-test="gunun-kart"]')).toBeVisible();
   const dugme = page.locator('#sekmeler a[data-sekme="pekistir"]');
   await expect(dugme).toBeVisible();
-  await page.evaluate(() => window.scrollTo(0, 600));
-  await page.waitForTimeout(300);
-  expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(100);
   await expect(dugme).toBeInViewport();
+  await expect(page.locator('.bugun-yuruyus')).toHaveClass(/yur-hazir/);
+  await page.evaluate(() => window.scrollTo(0, innerHeight));
+  await expect(page.locator('.bugun-yuruyus')).toHaveAttribute('data-adim', '1');
+  const sahne = await page.locator('[data-gunun-gorsel]').boundingBox();
+  expect(Math.round(sahne.y)).toBe(0);
   // desteklenen tarayıcıda zaman çizgisi gerçekten bağlanmış mı: yalnızca bilgi (destek yoksa test başarısız olmaz)
   const baglanti = await page.evaluate(() => {
     const el = document.querySelector('.sahne-yapiskan, .sahne');
@@ -49,7 +51,7 @@ test('görüntüleyici: iPhone ekranında düğmeler dokunma hedefi ≥ 44 px ve
   await page.locator('.eser').first().click();
   const gor = page.locator('.gor');
   await expect(gor).toBeVisible();
-  for (const secici of ['.gor-kapat', '.gor-isaret', '.gor-daha', '.gor-gunun', '.gor-incele']) {
+  for (const secici of ['.gor-kapat', '.gor-isaret', '.gor-daha', '.gor-incele']) {
     const kutu = await gor.locator(secici).boundingBox();
     expect(kutu, secici).not.toBeNull();
     expect(kutu.height, secici).toBeGreaterThanOrEqual(44);

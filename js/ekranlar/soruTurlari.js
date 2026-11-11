@@ -49,16 +49,21 @@ function konuAdaylari(konular) {
 }
 
 // Menüdeki iki satır (Pekiştir): kart sayısıyla
-export function soruTurlariHtml() {
+// İş 171 (Tasarım B): "Başka turlar" 2×2 ızgara. hatalar: Hatalarım karosu (varsa; js/ekranlar/pekistir.js verir)
+export function soruTurlariHtml(hatalar = '') {
   const adet = d.ilerleme.ayarlar.gunlukKart;
   const nb = Math.min(adet, bolumAdaylari(bolumler()).length);
-  if (!nb) return '';
+  if (!nb) return hatalar;
   const satir = (href, test, sayi, baslik, alt) =>
     `<a class="hatalar-satir" href="${href}" data-test="${test}"><span class="hatalar-sayi" aria-hidden="true">${sayi}</span><span class="metin"><b>${baslik}</b><span>${alt}</span></span>${ikon('ileri', 20, 1.4)}</a>`;
   return `<section class="bolum pk-ek-turlar" data-test="ek-turlar">
-      <div class="pk-bolum-bas"><span class="etiket vurgu">Başka sorular</span></div>
-      ${satir(TUR.bolum.rota, 'bolum-turu', nb, 'Bölüm turu', 'Bu eser kursun hangi bölümünde?')}
-      ${satir(TUR.ikonografi.rota, 'konu-turu', ikon('kitap', 18, 1.6), 'Konu turu', 'Bu eserin konusu ne? (İncil, mitoloji, tarih)')}
+      <div class="pk-bolum-bas"><h2 class="pk-baslik">Başka turlar</h2></div>
+      <div class="tur-izgara">
+      ${hatalar}
+      <button class="hatalar-satir" type="button" data-salonlara data-test="donem-turu"><span class="hatalar-sayi" aria-hidden="true">${ikon('sekme-harita', 18, 1.6)}</span><span class="metin"><b>Döneme göre</b><span>Salon salon çalış</span></span></button>
+      ${satir(TUR.bolum.rota, 'bolum-turu', nb, 'Bölüm turu', 'Hangi bölümde?')}
+      ${satir(TUR.ikonografi.rota, 'konu-turu', ikon('kitap', 18, 1.6), 'Konu turu', 'İncil, mitoloji, tarih')}
+      </div>
     </section>`;
 }
 

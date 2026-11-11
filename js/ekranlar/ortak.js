@@ -1,12 +1,12 @@
 // Ekranların ortak parçaları: uygulama durumu (d), ekran öğesi, küçük yardımcılar, resim rengi, bildirim, sekme çubuğu, başlık ve çizim.
 import { keskinlestir } from '../keskin.js';
-import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu, bellekEskit, bellegeAl } from '../gecis.js';
+import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu, bellekEskit, bellegeAl, hareketAz } from '../gecis.js';
 import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
-import { sanatciEserleri, eserBaslik } from '../eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla, elleOdaklariAyarla, gununResimleriniAyarla, seciliGununResmi } from '../gorsel.js';
-import { gununSanatcisi } from '../gunun.js';
+import { sanatciEserleri, eserBaslik, eserAdiBul } from '../eserler.js';
+import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla, elleOdaklariAyarla, gununResimleriniAyarla, seciliGununResmi, gorselAdi, yuruyusOdaklariAyarla } from '../gorsel.js';
+import { gununSanatcisi, yuruyusHavuzu } from '../gunun.js';
 import { hikayeleriAl, eserinHikayesi } from '../hikaye.js';
 import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
@@ -59,6 +59,7 @@ export const d = {
   rng: rastgeleYap(Date.now() & 0xffffffff),
   indirme: null,
   onbellekIdleri: null,
+  yuruyus: null, // İş 171: data/yuruyus.json → { sanatçı kimliği: kayıt }
   kolaylik: {},
   akimRenk: {},
   kisaAdlar: {},
@@ -171,6 +172,7 @@ export function odaklariYukle() {
   odakSozu ||= Promise.all([
     jsonGetir('data/gorsel_odak.json').then(odaklariAyarla),
     jsonGetir('data/gorsel_odak_elle.json').then(elleOdaklariAyarla, () => {}), // İş 150; yoksa boş
+    jsonGetir('data/yuruyus_odak.json').then(yuruyusOdaklariAyarla, () => {}), // İş 171; yoksa boş
   ]).catch(() => (odakSozu = null));
   return odakSozu;
 }
@@ -396,12 +398,12 @@ export function temaUygula() {
 
 // ---------- sekme çubuğu ----------
 // İş 24: Göz At haritaya katıldı; büyük Harita sekmesi ikinci sırada
+// İş 171 (Tasarım B): 4 sekme, adı ne yaptığını söyler. Ben (#/ilerleme) sekme değil; Bugün'ün sağ üstündeki düğme.
 const SEKMELER = [
-  ['bugun', 'Tuval', '#/'],
+  ['bugun', 'Bugün', '#/'],
   ['harita', 'Yolculuk', '#/harita'],
   ['gozat', 'Galeri', '#/gozat'],
-  ['pekistir', 'Atölye', '#/pekistir'],
-  ['ilerleme', 'Defter', '#/ilerleme'],
+  ['pekistir', 'Çalış', '#/pekistir'],
 ];
 // İş 76: sekmelerin ana sayfaları (geri yok)
 export const SEKME_ADRESLERI = SEKMELER.map(([, , h]) => h);
@@ -423,6 +425,7 @@ export function sekmeleriCiz(etkin) {
       SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}">${ikon('sekme-' + id, 22, 1.5)}<span>${ad}</span></a>`).join('');
     sekmeSurukle(nav);
   }
+  if (rozetHesabi) sekmeRozeti(rozetHesabi());
   const i = SEKMELER.findIndex(([id]) => id === etkin);
   // sekme değişince yeni ekran geldiği yönden kayar (sağdaki sekme sağdan)
   const onceki = Number(nav.style.getPropertyValue('--i'));
@@ -432,6 +435,27 @@ export function sekmeleriCiz(etkin) {
     if (a.dataset.sekme === etkin) a.setAttribute('aria-current', 'page');
     else a.removeAttribute('aria-current');
   }
+}
+
+// Çalış sekmesindeki sayı rozeti: bugün bekleyen kart sayısı (günün işi ana ekranda olmadığı için her ekranda görünür);
+// tur bitince kalkar. Hesap js/ekranlar/bugun.js'deki turBilgisi (döngüsel içe aktarma olmasın diye buraya verilir).
+let rozetHesabi = null;
+export function sekmeRozetiBagla(fn) {
+  rozetHesabi = fn;
+}
+export function sekmeRozeti(n) {
+  const a = document.querySelector('#sekmeler a[data-sekme="pekistir"]');
+  if (!a) return;
+  let r = a.querySelector('.sekme-rozet');
+  if (!(n > 0)) return r && r.remove();
+  if (!r) {
+    r = document.createElement('b');
+    r.className = 'sekme-rozet';
+    r.dataset.test = 'sekme-rozet';
+    a.append(r);
+  }
+  r.textContent = String(n);
+  r.setAttribute('aria-label', `${n} kart bekliyor`);
 }
 
 // Apple tarzı sekme çubuğu: parmak çubukta gezinirken vurgu parmağı izler, bırakınca o sekmeye geçer
@@ -666,11 +690,31 @@ export function ciz(html, hareket) {
   else window.scrollTo(0, 0);
   if (gecis) gecis();
   kaydirmaSonu();
+  if (yeni) sayilariCanlandir(ekran);
   const h = ekran.querySelector('h1');
   if (h) h.focus({ preventScroll: true });
   if (ekran.querySelector('.ad-son, .soru-baslik h2')) {
     adlariSigdir();
     if (document.fonts) document.fonts.ready.then(adlariSigdir);
+  }
+}
+
+// İş 171 (Tasarım B · hareket): büyük sayılar ekran ilk açılınca sıfırdan sayarak gelir ([data-say]; 0,8 sn).
+// Hareket "Tam" değilse (Sade, Kapalı, sistemin hareketi azalt ayarı) sayı doğrudan yazılır.
+export function sayilariCanlandir(kok) {
+  const sade = hareketAz() || document.documentElement.dataset.hareket === 'sade';
+  for (const el of kok.querySelectorAll('[data-say]')) {
+    const hedef = Number(el.textContent);
+    if (sade || !Number.isFinite(hedef) || hedef < 2) continue;
+    const bas = performance.now();
+    const kare = (simdi) => {
+      if (!el.isConnected) return;
+      const t = Math.min(1, (simdi - bas) / 800);
+      el.textContent = String(Math.round(hedef * (1 - Math.pow(1 - t, 3))));
+      if (t < 1) requestAnimationFrame(kare);
+    };
+    el.textContent = '0';
+    requestAnimationFrame(kare);
   }
 }
 
@@ -680,6 +724,9 @@ export function ciz(html, hareket) {
 // Ana sayfa tabloyu ekran boyu gösterdiği için dikey eseri olan sanatçılar seçilir (data/gorsel_oranlari.json yoksa hepsi).
 export function gununHavuzu() {
   const havuz = d.sanatcilar.filter((s) => !d.onbellekIdleri || d.onbellekIdleri.has(s.id));
+  // İş 171: yürüyüşü olanlar (145 sanatçı); kamera her resmi ekrana kapladığı için dikey şartı aranmaz
+  const yuruyenler = yuruyusHavuzu(havuz.map((s) => s.id), d.yuruyus);
+  if (d.yuruyus && yuruyenler.length < havuz.length) return yuruyenler;
   const dikey = d.dikeyler ? havuz.filter((s) => d.dikeyler.has(s.id)) : [];
   return (dikey.length ? dikey : havuz).map((s) => s.id);
 }
@@ -689,7 +736,20 @@ let gununResmiSozu = null;
 export function gununResimleriYukle() {
   return (gununResmiSozu ||= jsonGetir('data/gunun_resimleri.json').then(gununResimleriniAyarla, () => {}));
 }
-export const sanatcininGununEseri = (s) => Promise.all([sanatciEserleri(s), gununResimleriYukle()]).then(([l]) => gununEseri(l));
+// İş 171: yürüyüş eserinin ekranda görünen adı: data/eser_adlari_tr.json'da Türkçesi varsa o (QID ya da
+// "sanatçı|başlık" anahtarıyla), yoksa kayıttaki ad olduğu gibi
+export function yuruyusEserAdi(sid, kayit = d.yuruyus && d.yuruyus[sid]) {
+  if (!kayit) return '';
+  return notTemizleAd(eserAdiBul(sid, { qid: kayit.qid, baslik: kayit.eser }) || kayit.eser);
+}
+const notTemizleAd = (t) => String(t || '').trim();
+// İş 171: yürüyüşü olan sanatçının günün eseri yürüyüş eseridir (görselinin yerel adıyla bulunur); bulunamazsa eskisi gibi
+export const sanatcininGununEseri = (s) =>
+  Promise.all([sanatciEserleri(s), gununResimleriYukle()]).then(([l]) => {
+    const k = d.yuruyus && d.yuruyus[s.id];
+    const y = k && l.find((e) => (e.gorseller || []).some((g) => gorselAdi(g) === k.gorsel));
+    return y || gununEseri(l);
+  });
 
 // Günün eseri: çözünürlüğü, ekrana oturuşu ve bilinirliği birlikte en iyi olan eser; oranı bilinmiyorsa en bilinen
 // dikey eser, o da yoksa en bilinen eser
