@@ -587,7 +587,7 @@ function karsilastirKarosu() {
     href = akimKarsilastirmaAdresi(acik[0].ad, acik[1].ad);
     alt = `${kacis(acik[0].ad)} ↔ ${kacis(acik[1].ad)}`;
   }
-  return `<a href="${href}" data-test="gz-karsilastir" aria-label="Karşılaştır: ${alt}">${ikon('karsilastir', 20, 1.6)}<span><b>Karşılaştır</b><small>İki üslubu yan yana incele, farkları gör.</small></span></a>`;
+  return `<a href="${href}" data-test="gz-karsilastir" aria-label="Karşılaştır: ${alt}">${ikon('karsilastir', 24, 1.6)}<span><b>Karşılaştır</b><small>İki üslubu yan yana incele, farkları gör.</small></span></a>`;
 }
 
 // İş 171: Galeri'nin en üstünde Başyapıtlar rafı: hikâyesi ya da rehberli incelemesi olanlar önce, açık sanatçılar önce

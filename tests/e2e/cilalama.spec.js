@@ -905,9 +905,11 @@ test.describe('İş 75: kenardan kaydırma ve sayfa belleği', () => {
     const kart = page.locator('a.zaman-kart').first();
     await kart.waitFor();
     await page.waitForTimeout(800);
-    await page.evaluate(() => window.scrollTo(0, 600));
+    // ilk kartlar ekranın üst yarısına gelsin (dokunulacak ikinci kart görünür kalsın; Galeri'nin başı uzayınca 600 yetmiyordu)
+    await page.evaluate(() => window.scrollTo(0, document.querySelector('a.zaman-kart').getBoundingClientRect().top + window.scrollY - 150));
     await page.waitForTimeout(200);
     const yer = await page.evaluate(() => window.scrollY);
+    expect(yer).toBeGreaterThan(300);
     // sayfanın bir düğümünü işaretle: geri dönünce aynı düğüm (yeniden çizilmedi) olmalı
     await page.evaluate(() => (document.querySelector('a.zaman-kart').dataset.iz = 'evet'));
     const once = await page.evaluate(() => history.length);

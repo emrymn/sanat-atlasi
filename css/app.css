@@ -17382,92 +17382,7 @@ main[data-hareket='cevap'] .alt-yaprak .sonuc .ikon path {
     0 0 14px rgba(18, 17, 16, 0.65);
 }
 
-/* ===== İş 171 · Galeri çizimdeki gibi: Akımlar şeridi ve dört kısayol; sekme çubuğu çizimdeki gibi ===== */
-.gz-akimlar {
-  margin: 14px calc(-1 * var(--yan)) 0;
-}
-.gz-raf-bas button {
-  min-height: 44px;
-  padding: 0;
-  border: 0;
-  background: none;
-  color: var(--pirinc);
-  font: 500 14px/1 var(--sans);
-  cursor: pointer;
-}
-.gz-akim-serit {
-  display: flex;
-  gap: 10px;
-  margin: 0;
-  padding: 4px var(--yan) 8px;
-  list-style: none;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-}
-.gz-akim-serit::-webkit-scrollbar {
-  display: none;
-}
-.gz-akim-serit li {
-  flex: none;
-}
-.gz-akim {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 112px;
-  height: 72px;
-  box-sizing: border-box;
-  padding: 8px 10px;
-  border-radius: 12px;
-  overflow: hidden;
-  background: var(--surface);
-  color: #ebe5da;
-  text-decoration: none;
-  isolation: isolate;
-}
-.gz-akim-resim {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-}
-.gz-akim-resim img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.5);
-}
-.gz-akim b {
-  font: 400 17px/1.05 var(--serif);
-  text-shadow: 0 1px 6px rgba(18, 17, 16, 0.8);
-}
-.gz-akim small {
-  font: 400 11px/1.2 var(--sans);
-  color: #cfc7bc;
-}
-.gz-akim.kilitli {
-  opacity: 0.55;
-}
-.gz-akim.kilitli .gz-akim-resim img {
-  filter: grayscale(1) brightness(0.4);
-}
-.gz-kisayol.dortlu {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
-}
-.gz-kisayol.dortlu a {
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  min-height: 64px;
-  padding: 6px 2px;
-  border-radius: 14px;
-  text-align: center;
-}
-.gz-kisayol.dortlu b {
-  font: 500 12px/1.2 var(--sans);
-}
+/* ===== İş 171 · Galeri ve sekme çubuğu çizimdeki gibi (Akımlar şeridi 1.76.1'de kalktı; yerine Keşfet kartları) ===== */
 /* sekme çubuğu: kayan hap yok; etkin sekmenin ikonu pirinç, yazısı açık ve kalın */
 .sekme-isaret {
   opacity: 0;
@@ -17481,13 +17396,6 @@ main[data-hareket='cevap'] .alt-yaprak .sonuc .ikon path {
 }
 .sekmeler a[aria-current='page'] {
   color: var(--ink);
-}
-.gz-akim::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(180deg, rgba(18, 17, 16, 0.25), rgba(18, 17, 16, 0.72));
 }
 /* cevap yaprağı ekranın dörtte üçünü geçmesin (karıştırma şeridi olan cevapta taşıyordu): Leitner satırı sıkı */
 .kutu-satir {
@@ -17571,3 +17479,5 @@ html:has(.bugun-biyografili) body {
   color: var(--ink-2);
   font: 400 14px/1.45 var(--sans);
 }
+/* Keşfet kartlarında simgeler aynı kutuda: başlıklar aynı hizada başlasın */
+.kesif-kartlari .ikon { width: 24px; height: 24px; }
