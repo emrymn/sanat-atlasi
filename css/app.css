@@ -16265,6 +16265,88 @@ html:has(.bugun-yuruyus) body {
 .yur-dinle .isim-ek {
   margin: 0;
 }
+/* İş 172 · Süzülüş: kapaktan Hayatı'na, sondan başa. Sayfa kaymaz; yazılar yerinde solar, kamera ve buğu yavaşça
+   yer değiştirir (js/yuruyus.js), yeni yazılar süzülerek gelir. Geçiş sürerken adıma oturma kapalı. */
+html.yur-suzulus {
+  scroll-snap-type: none !important;
+}
+.yur-akis[data-suzul] {
+  pointer-events: none;
+  will-change: opacity, transform;
+}
+.yur-akis[data-suzul='cik'] {
+  opacity: 0;
+  transform: translateY(var(--suzul-cik, -26px));
+  transition:
+    opacity 0.74s cubic-bezier(0.4, 0, 0.6, 1),
+    transform 0.82s cubic-bezier(0.4, 0, 0.6, 1);
+}
+.yur-akis[data-suzul='hazir'] {
+  opacity: 0;
+  transform: translateY(var(--suzul-gir, 40px));
+}
+.yur-akis[data-suzul='gir'] {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 1.5s cubic-bezier(0.3, 0, 0.3, 1) 0.2s,
+    transform 1.9s cubic-bezier(0.16, 0.7, 0.2, 1);
+}
+/* sonda: en başa dönen düğme (ince halka içinde ok; dokununca halka dolar) */
+.yur-basa {
+  align-self: center;
+  margin-top: 26px;
+  min-height: 96px;
+  padding: 0 20px;
+  border: 0;
+  background: none;
+  color: var(--yur-ikincil);
+  font: 600 11px/1 var(--sans);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.yur-basa-halka {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 164, 92, 0.6);
+  color: var(--pirinc);
+  display: grid;
+  place-items: center;
+  transition:
+    background 0.5s ease,
+    color 0.5s ease,
+    transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.yur-basa-halka .ikon {
+  animation: yur-basa 3.2s ease-in-out infinite;
+}
+@keyframes yur-basa {
+  50% {
+    transform: translateY(-4px);
+  }
+}
+.yur-basa:active .yur-basa-halka {
+  background: var(--pirinc);
+  color: var(--pirinc-yazi);
+  transform: scale(0.94);
+}
+@media (prefers-reduced-motion: reduce) {
+  .yur-basa-halka .ikon {
+    animation: none;
+  }
+}
+:root[data-hareket='kapali'] .yur-basa-halka .ikon,
+:root[data-hareket='sade'] .yur-basa-halka .ikon {
+  animation: none;
+}
 /* yürürken sekme çubuğu aşağı kayıp kaybolur; yukarı kaydırınca, kapakta ve sonda geri gelir */
 .sekmeler {
   transition:

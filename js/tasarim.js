@@ -54,6 +54,8 @@ const YOLLAR = {
   geri: '<path d="m15 18-6-6 6-6"/>',
   ileri: '<path d="m9 18 6-6-6-6"/>',
   asagi: '<path d="m6 9 6 6 6-6"/>',
+  in: '<path d="M12 4v15"/><path d="m6 13 6 6 6-6"/>',
+  cik: '<path d="M12 20V5"/><path d="m6 11 6-6 6 6"/>',
   kapat: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
   dogru: '<path d="M20 6 9 17l-5-5"/>',
   yanlis: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
