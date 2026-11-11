@@ -8,11 +8,12 @@ const yumusak = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 
 const IZ = 0.035; // kameranın hedefe her karede yaklaşma payı (yavaş ve yumuşak)
 const ACILIS_MS = 2600;
 const ARA = 14;
+export const ACILIS_Y = 0.36;
 
 // Kapaktan sonraki adımlar: eserin künyesi, ayrıntılar, "Nasıl tanırım?"
-export function yuruyusAdimlari({ kayit, kunye, taninma }) {
+export function yuruyusAdimlari({ kayit, kunye, taninma, baslik = kayit.eser }) {
   const kart = (baslik, metin) => `<section class="yur-adim" data-test="yur-adim"><div class="yur-kart"><h2>${kacis(baslik)}</h2><p>${kacis(metin)}</p></div></section>`;
-  return [kart(kayit.eser, kunye), ...kayit.noktalar.map((n) => kart(n.ad, n.metin)), taninma ? kart('Nasıl tanırım?', taninma) : ''].join('');
+  return [kart(baslik, kunye), ...kayit.noktalar.map((n) => kart(n.ad, n.metin)), taninma ? kart('Nasıl tanırım?', taninma) : ''].join('');
 }
 
 // Bir ayrıntı adımının kamerası: kartın gerçek boyu ölçülür; kart altta ve üstte denenir, ayrıntının daha çok
@@ -61,7 +62,7 @@ export function noktaAdimi(n, { W, H, IW, IH, kirp, kartH, ust, alt, kapla }) {
 let etkin = null; // aynı anda tek yürüyüş (Bugün); sayfa bellekten geri konunca kaydırma olayıyla yeniden başlar
 
 // kok: .bugun-yuruyus; img: sahnedeki resim; odak: [x, y] yüzde (açılış karesi); hareketsiz: kamera anında yerine geçer
-export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, hareketsiz = false, acilis = false }) {
+export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, hareketsiz = false, acilis = false, yakin = 1 }) {
   const akis = kok.querySelector('[data-yur-akis]');
   const bolumler = [...akis.querySelectorAll('.yur-adim')];
   const sonAdim = bolumler.length - 1;
@@ -84,7 +85,10 @@ export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, harek
     const st = getComputedStyle(bolumler[1] || bolumler[0]);
     const ust = parseFloat(st.getPropertyValue('--yur-ust')) || 64;
     const alt = parseFloat(st.paddingBottom) || 112;
-    const D = [adim(odak[0] / 100, odak[1] / 100), adim(kx + kw / 2, ky + kh / 2)];
+    // açılış karesi: odak yatayda ortada, dikeyde ekranın %36'sında (adın çok üstünde; "Sırayla ortala" çerçevesiyle aynı)
+    const ilk = adim(odak[0] / 100, odak[1] / 100, H * ACILIS_Y);
+    ilk.s = kapla * yakin; // ana konu alttaysa açılışta biraz yakınlaşılır (adın arkasında kalmasın)
+    const D = [ilk, adim(kx + kw / 2, ky + kh / 2)];
     kayit.noktalar.forEach((n, k) => {
       const b = bolumler[k + 2];
       const kart = b && b.querySelector('.yur-kart');
@@ -172,9 +176,14 @@ export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, harek
     if (buyukUrl) {
       const buyuk = new Image();
       buyuk.decoding = 'async';
-      buyuk.onload = () => {
-        if (etkin === y && img.isConnected) img.src = buyuk.src;
+      // büyük kopya önce arkada çözülür, sonra tek karede yerine geçer (çözülmeden değiştirilince resim bir an
+      // kararıyordu: tarayıcı eski kopyayı bırakıp yenisini çözene kadar boş çiziyor)
+      const gecir = () => {
+        if (etkin !== y || !img.isConnected) return;
+        img.decoding = 'sync';
+        img.src = buyuk.src;
       };
+      buyuk.onload = () => (buyuk.decode ? buyuk.decode().then(gecir, gecir) : gecir());
       buyuk.src = buyukUrl;
     }
     // yazı tipleri gelince kartların boyu değişir: yeniden ölç

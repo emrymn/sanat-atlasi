@@ -17372,3 +17372,10 @@ main[data-hareket='cevap'] .alt-yaprak .sonuc .ikon path {
 :root[data-hareket='kapali'] .st-donem {
   animation: none;
 }
+/* İş 171 · ana ekran denetimi: eser adı açık renkli resimlerin (çizim, gökyüzü) üstünde de okunsun */
+.bugun-yuruyus .bugun-eser {
+  color: #e6dfd2;
+  text-shadow:
+    0 1px 3px rgba(18, 17, 16, 0.85),
+    0 0 14px rgba(18, 17, 16, 0.65);
+}

@@ -3,7 +3,7 @@ import { kacis } from '../yardimci.js';
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { turOzeti, turAltYazisi } from '../oturum.js';
 import { sanatciEserleri, eserBaslik } from '../eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, gorselOdakNoktasi, kaplamaKaymasi, adlaOdak, yuruyusAdresleri } from '../gorsel.js';
+import { gorselUrl, gorselYedek, secilenGorsel, gorselOdakNoktasi, kaplamaKaymasi, adlaOdak, yuruyusAdresleri, yuruyusEki } from '../gorsel.js';
 import { yuruyusAdimlari, yuruyusBaslat } from '../yuruyus.js';
 import { hareketAz } from '../gecis.js';
 import { baskaSanatci } from '../gunun.js';
@@ -45,6 +45,7 @@ import {
   hikayeVeri,
   hikayeBulucu,
   sekmeRozetiBagla,
+  yuruyusEserAdi,
 } from './ortak.js';
 import { ayrintiVeri, ayrintiBulucu, rozetleriEkle } from './gozat.js';
 import { SURUM } from '../surum.js';
@@ -91,7 +92,7 @@ function turKarti(tur, g) {
 const ustHtml = (tekrar) =>
   `<div class="bugun-ust"><span class="etiket bugun-tarih" data-test="tekrar">${tekrar}</span><a class="bugun-ben" href="#/ilerleme" aria-label="Ben: ilerleme ve ayarlar">Ben</a></div>`;
 function kapakHtml(gs, kayit) {
-  const eser = kayit ? [kayit.eser, kayit.yil].filter(Boolean).join(' · ') : '';
+  const eser = kayit ? [yuruyusEserAdi(gs.id, kayit), kayit.yil].filter(Boolean).join(' · ') : '';
   return `<button class="bugun-buyut" type="button" data-bugun-buyut aria-label="Resmi tam ekran aç" disabled></button>
         <div class="bugun-notlar"><button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 18, 1.6)}Hareketi aç</button>${yenilikHtml()}${yedekHatirlatHtml()}</div>
         <div class="bugun-alt">
@@ -121,7 +122,7 @@ function sahneHtml(gs, tekrar, kayit) {
       <div class="yur-noktalar" aria-hidden="true"></div>
       <div class="yur-akis" data-yur-akis>
         <section class="yur-adim yur-kapak" data-test="yur-adim">${kapakHtml(gs, kayit)}<span class="yur-ok" aria-hidden="true">${ikon('asagi', 22, 1.5)}</span></section>
-        ${yuruyusAdimlari({ kayit, kunye: kunyeYazi, taninma: taninma(gs) })}
+        ${yuruyusAdimlari({ kayit, kunye: kunyeYazi, taninma: taninma(gs), baslik: yuruyusEserAdi(gs.id, kayit) })}
         <section class="yur-hayat" data-test="yur-hayat">
           <div data-yur-bio></div>
           ${yuruyusSonu(gs)}
@@ -236,13 +237,16 @@ async function yuruyusKur(s, kayit, perde) {
   ekranRengi(eSozu, akimRenk(s.akim));
   const img = document.createElement('img');
   img.decoding = 'async';
-  img.alt = `${s.ad}, ${kayit.eser}`;
+  img.alt = `${s.ad}, ${yuruyusEserAdi(s.id, kayit)}`;
   img.dataset.keskinBekliyor = '1'; // kopyayı yürüyüş kendi seçer (js/keskin.js karışmasın)
   kutu.prepend(img);
   await odaklariYukle().catch(() => {});
   if (!kok.isConnected) return;
   const adres = yuruyusAdresleri(kayit.gorsel, kayit.buyuk);
-  yuruyusBaslat({ kok, img, kayit, odak: adlaOdak(kayit.gorsel) || [50, 40], kucukUrl: adres.kucuk, buyukUrl: adres.buyuk, hareketsiz: hareketAz(), acilis: perde });
+  // denetimde eklenen kırpma ve açılış yakınlığı (data/yuruyus_odak.json); kayıttaki kirp varsa o geçerli
+  const ek = yuruyusEki(kayit.gorsel);
+  if (ek.kirp && !kayit.kirp) kayit = { ...kayit, kirp: ek.kirp };
+  yuruyusBaslat({ kok, img, kayit, yakin: ek.yakin, odak: adlaOdak(kayit.gorsel) || [50, 40], kucukUrl: adres.kucuk, buyukUrl: adres.buyuk, hareketsiz: hareketAz(), acilis: perde });
   eSozu.then((e) => e && kok.isConnected && bugunDugmeleri(s, e, kok, false));
   dinleEkle(s, kok.querySelector('[data-yur-dinle]'));
   const { biyografiler } = await ekVeriYukle();

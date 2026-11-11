@@ -226,10 +226,30 @@ export function yuruyusAdresleri(ad, buyuk) {
   if (buyuk) return { kucuk: `${uzak.adres}/${buyuk.replace(/\.jpg$/, '-1280.jpg')}`, buyuk: `${uzak.adres}/${buyuk}` };
   return { kucuk: uzak.buyuk ? buyukYolu(ad) : `gorseller/k/${ad}.jpg`, buyuk: uzak.devasa.has(ad) ? devasaYolu(ad) : '' };
 }
+// İş 171: ana ekran denetiminde düzeltilen açılış odakları (data/yuruyus_odak.json). Emre'nin elle seçtikleri
+// (cihazdaki ve data/gorsel_odak_elle.json) önceliklidir; bu dosya yalnız onların olmadığı eserde, otomatik yüz
+// odağının önüne geçer.
+let yuruyusOdak = {};
+let yuruyusYakin = {};
+let yuruyusKirp = {};
+const nesne = (x) => (x && typeof x === 'object' && !Array.isArray(x) ? x : {});
+export function yuruyusOdaklariAyarla(veri) {
+  yuruyusOdak = nesne(veri && veri.odak);
+  yuruyusYakin = nesne(veri && veri.yakin);
+  yuruyusKirp = nesne(veri && veri.kirp);
+}
+// Açılış karesinin ek ayarları: yakin (ekranı kaplayan ölçeğin katı, 1–2,2) ve kirp ([x, y, w, h]; yoksa null)
+export function yuruyusEki(ad) {
+  const y = Number(yuruyusYakin[ad]);
+  const k = yuruyusKirp[ad];
+  const gecerliKirp = Array.isArray(k) && k.length === 4 && k.every((n) => Number.isFinite(n) && n >= 0 && n <= 1) && k[2] > 0.3 && k[3] > 0.3;
+  return { yakin: Number.isFinite(y) ? Math.min(2.2, Math.max(1, y)) : 1, kirp: gecerliKirp ? k : null };
+}
 function odakAdla(ad) {
   if (!ad) return null;
   const elle = cihazdakiElleOdaklar()[ad] || elleDosya[ad];
   if (gecerliOdak(elle)) return elle;
+  if (gecerliOdak(yuruyusOdak[ad])) return yuruyusOdak[ad];
   const o = odaklar && odaklar[ad];
   return gecerliOdak(o) ? o : null;
 }

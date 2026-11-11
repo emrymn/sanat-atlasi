@@ -1892,3 +1892,15 @@ Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişikli
 - **Ben:** Koleksiyonum satırının altına Ayarlar satırı eklendi (dişli ikonu sağ üstte duruyor). Sanatçı, başyapıt ve ayarlar sayfaları 5. gruptaki yazı değişikliğiyle yeni dile geçti; düzenleri aynı.
 - **Dönem kutlaması:** bir durağın üçüncü yıldızıyla dönemin bütün durakları üç yıldız olduysa seviye sonunda "… tamamlandı" şeridi çıkar. Haritada büyük mühür ve kamera kayışı yapılmadı (haritanın sepya/renkli açılma düzeni zaten dönemi gösteriyor; ikisi üst üste binecekti).
 - Testler: `tasarim_b.spec.js`'e kurs rozeti testi.
+
+### İnceleme sonrası (Emre: eser adları, "Günün resmi" düğmesi, ana ekran denetimi)
+
+- **Eser adları Türkçe:** Bugün'de ve yürüyüşte eser adı `data/eser_adlari_tr.json`'dan (QID ya da "sanatçı|başlık" anahtarı; `yuruyusEserAdi`). 145 eserin 132'sinde Türkçe ad bulundu; kalan 13'ünde kayıttaki ad olduğu gibi (çoğu zaten Türkçe).
+- **"Günün resmi" düğmesi kalktı** (görüntüleyici). Ayarlar'daki bölüm "Ana ekranın resimleri" oldu: seçim listesi yok; "Sırayla ortala" yürüyüş eserlerini dönem sırasıyla açar (odak, yürüyüşte kullanılan görselin adına kaydedilir). Elle odaklar (depo ve cihaz) açılış karesinde kullanılmaya devam ediyor. `data/gunun_resimleri.json` ve eski seçim kodu yürüyüşsüz yedek yol için duruyor.
+- **Açılış karesi** artık odağı yatayda ortaya, dikeyde ekranın %36'sına koyar (eski Tuval ve "Sırayla ortala" çerçevesiyle aynı; önce ekranın ortasındaydı, yüzler adın arkasına yaklaşıyordu).
+- **Büyük kopya karartması düzeltildi:** en büyük kopya devreye girerken resim bir an siyaha düşüyordu (denetimde bazı kareler siyah çıktı). Büyük kopya önce arkada çözülüyor, sonra tek karede yerine geçiyor.
+- **Ana ekran denetimi:** 145 açılış karesi 390×844, 375×667 ve 430×932'de çekilip tek tek bakıldı. Düzeltmeler yeni `data/yuruyus_odak.json` dosyasında (anahtar: yerel görsel adı): `odak` (13 eser), `yakin` (açılışta biraz yakınlaşma; ana konu resmin alt yarısındaysa adın arkasında kalmasın, 7 eser), `kirp` (çerçeve, duvar, kâğıt kenarı; 14 eser). Toplam 25 eser. `data/yuruyus.json`'a ve Emre'nin elle odaklarına dokunulmadı; elle odak her zaman önceliklidir (test denetler).
+- **Düzeltilmeyenler (Emre'nin elle odakları):** Velázquez (Nedimeler: figürler adın arkasında), Caravaggio (Pavlus yerde, adın arkasında), van Honthorst (müzisyenlerin yüzleri altta), Tintoretto, Mantegna. Bunlar yatay ya da konusu altta olan resimler; istenirse `yakin` ile yakınlaştırılabilir ama elle seçime dokunmamak için bırakıldı.
+- **Kırpılamayanlar:** kemerli ya da oval eserler (Parmigianino, El Greco, Salviati, Giotto'nun üçgen tepesi) köşelerdeki boşluk resmin biçiminden; Seurat'nın mavi kenarı ressamın kendi boyadığı çerçeve; Picasso'nun kâğıdı eserin kendisi.
+- Temas sayfası: `tasarim-B/ana-ekran-denetim.html` (üç boy, düzeltilenler pirinç çerçeveli).
+- Testler: `ayar_gorunum.spec` (düğme yok, ana ekran yürüyüş eserini ve Türkçe adını gösterir, "Sırayla ortala" yürüyüş eserlerini açar), `safari.spec` (düğme listesinden çıktı), `yuruyus.test.mjs` (denetim dosyasının geçerliliği ve odak önceliği).

@@ -57,3 +57,41 @@ test('noktaAdimi: 145 eserin her ayrıntısında kart ayrıntıyı kapatmaz, res
   }
   assert.ok(enAz > 0.45);
 });
+
+// İş 171 · ana ekran denetimi: data/yuruyus_odak.json
+import { yuruyusOdaklariAyarla, yuruyusEki, adlaOdak, elleOdaklariAyarla, odaklariAyarla } from '../../js/gorsel.js';
+
+test('yuruyus_odak.json: anahtarlar yürüyüş görselleri; Emre’nin elle odaklarının üstüne yazmaz; değerler geçerli', () => {
+  const ek = JSON.parse(readFileSync(new URL('../../data/yuruyus_odak.json', import.meta.url), 'utf8'));
+  const elle = JSON.parse(readFileSync(new URL('../../data/gorsel_odak_elle.json', import.meta.url), 'utf8')).odak;
+  const gorseller = new Set(Object.values(veri).map((k) => k.gorsel));
+  for (const alan of ['odak', 'yakin', 'kirp']) for (const ad of Object.keys(ek[alan])) assert.ok(gorseller.has(ad), `${alan}: ${ad}`);
+  for (const [ad, o] of Object.entries(ek.odak)) {
+    assert.ok(!(ad in elle), `elle odak varken yürüyüş odağı: ${ad}`);
+    assert.ok(o.length === 2 && o.every((n) => n >= 0 && n <= 100));
+  }
+  for (const y of Object.values(ek.yakin)) assert.ok(y > 1 && y <= 2.2);
+  // kirp: yürüyüşte kendi kirp'i olan esere ikinci kez verilmez; noktalar kırpılan alanın içinde kalır
+  for (const [ad, [x, y, w, h]] of Object.entries(ek.kirp)) {
+    const k = Object.values(veri).find((v) => v.gorsel === ad);
+    assert.ok(!k.kirp, ad);
+    assert.ok(x >= 0 && y >= 0 && x + w <= 1.0001 && y + h <= 1.0001 && w > 0.5 && h > 0.5);
+    for (const n of k.noktalar) assert.ok(Math.max(x - n.x, y - n.y, n.x + n.w - (x + w), n.y + n.h - (y + h)) < 0.06, `${ad} · ${n.ad}`);
+  }
+});
+
+test('adlaOdak önceliği: elle > yürüyüş denetimi > otomatik; yuruyusEki sınırları', () => {
+  odaklariAyarla({ odak: { a: [10, 10], b: [20, 20], c: [30, 30] } });
+  elleOdaklariAyarla({ odak: { a: [1, 2] } });
+  yuruyusOdaklariAyarla({ odak: { a: [50, 50], b: [60, 60] }, yakin: { b: 9, c: 1.4 }, kirp: { b: [0.1, 0.1, 0.8, 0.8], c: [0, 0, 0.2, 1] } });
+  assert.deepEqual(adlaOdak('a'), [1, 2]);
+  assert.deepEqual(adlaOdak('b'), [60, 60]);
+  assert.deepEqual(adlaOdak('c'), [30, 30]);
+  assert.equal(adlaOdak('yok'), null);
+  assert.deepEqual(yuruyusEki('b'), { yakin: 2.2, kirp: [0.1, 0.1, 0.8, 0.8] });
+  assert.deepEqual(yuruyusEki('c'), { yakin: 1.4, kirp: null }); // çok dar kırpma geçersiz
+  assert.deepEqual(yuruyusEki('yok'), { yakin: 1, kirp: null });
+  yuruyusOdaklariAyarla(null);
+  elleOdaklariAyarla(null);
+  odaklariAyarla(null);
+});

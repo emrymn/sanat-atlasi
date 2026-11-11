@@ -4,8 +4,8 @@ import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSon
 import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
-import { sanatciEserleri, eserBaslik } from '../eserler.js';
-import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla, elleOdaklariAyarla, gununResimleriniAyarla, seciliGununResmi, gorselAdi } from '../gorsel.js';
+import { sanatciEserleri, eserBaslik, eserAdiBul } from '../eserler.js';
+import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla, elleOdaklariAyarla, gununResimleriniAyarla, seciliGununResmi, gorselAdi, yuruyusOdaklariAyarla } from '../gorsel.js';
 import { gununSanatcisi, yuruyusHavuzu } from '../gunun.js';
 import { hikayeleriAl, eserinHikayesi } from '../hikaye.js';
 import { ilerlemeKaydet } from '../depo.js';
@@ -172,6 +172,7 @@ export function odaklariYukle() {
   odakSozu ||= Promise.all([
     jsonGetir('data/gorsel_odak.json').then(odaklariAyarla),
     jsonGetir('data/gorsel_odak_elle.json').then(elleOdaklariAyarla, () => {}), // İş 150; yoksa boş
+    jsonGetir('data/yuruyus_odak.json').then(yuruyusOdaklariAyarla, () => {}), // İş 171; yoksa boş
   ]).catch(() => (odakSozu = null));
   return odakSozu;
 }
@@ -735,6 +736,13 @@ let gununResmiSozu = null;
 export function gununResimleriYukle() {
   return (gununResmiSozu ||= jsonGetir('data/gunun_resimleri.json').then(gununResimleriniAyarla, () => {}));
 }
+// İş 171: yürüyüş eserinin ekranda görünen adı: data/eser_adlari_tr.json'da Türkçesi varsa o (QID ya da
+// "sanatçı|başlık" anahtarıyla), yoksa kayıttaki ad olduğu gibi
+export function yuruyusEserAdi(sid, kayit = d.yuruyus && d.yuruyus[sid]) {
+  if (!kayit) return '';
+  return notTemizleAd(eserAdiBul(sid, { qid: kayit.qid, baslik: kayit.eser }) || kayit.eser);
+}
+const notTemizleAd = (t) => String(t || '').trim();
 // İş 171: yürüyüşü olan sanatçının günün eseri yürüyüş eseridir (görselinin yerel adıyla bulunur); bulunamazsa eskisi gibi
 export const sanatcininGununEseri = (s) =>
   Promise.all([sanatciEserleri(s), gununResimleriYukle()]).then(([l]) => {

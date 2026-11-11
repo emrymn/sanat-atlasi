@@ -1,0 +1,181 @@
+{
+ "surum": 1,
+ "aciklama": "İş 171: ana ekran (Bugün) açılış karesi denetiminde yapılan düzeltmeler. Anahtarlar yerel görsel adı. odak: [x, y] yüzde; Emre'nin elle seçtikleri (data/gorsel_odak_elle.json ve cihazdakiler) önceliklidir, bu dosya yalnız onların olmadığı eserde otomatik yüz odağının önüne geçer. yakin: açılış karesinde ekranı kaplayan ölçeğin katı (ana konu resmin alt yarısındaysa adın arkasında kalmasın diye biraz yakınlaşılır). kirp: [x, y, w, h] resmin dışında kalan çerçeve, duvar, kâğıt kenarı gibi alanı keser (data/yuruyus.json'daki kirp ile aynı anlam; orada kirp varsa o geçerli).",
+ "sanatcilar": {
+  "668e5783f3cb4e36": "bonaventura-berlinghieri",
+  "af51df81fcaa607b": "simone-martini",
+  "77df17448eb30f26": "giotto-di-bondone",
+  "a1e25f5e264f3123": "limbourg-kardesler",
+  "5f89fc48ceabb25d": "gentile-da-fabriano",
+  "7f2a2bc76bba119a": "fra-angelico",
+  "3e754c9aae3c41f3": "raphael",
+  "9fe74bd524f1be98": "marcantonio-raimondi",
+  "df63f84eecbc3446": "giovanni-bellini",
+  "870f58ce77c32209": "paolo-veronese",
+  "5522bc0dc8009d75": "sofonisba-anguissola",
+  "94b93371cb7cf511": "daniele-da-volterra",
+  "864aff516d7abc7b": "frans-hals",
+  "fdc9f5d7729bdb16": "jan-steen",
+  "fe71f8cc234c79d5": "francois-boucher",
+  "dcff0d8adc24cc19": "giovanni-battista-tiepolo",
+  "864e0d9cfe33eed0": "william-blake",
+  "f8bcd45668591a51": "j-m-w-turner",
+  "02e8b0494cae100a": "alexandre-cabanel",
+  "618b12f07913aeb4": "honore-daumier",
+  "87ac93601dd4b51b": "claude-monet",
+  "f08b0bdcd00dc972": "alfred-sisley",
+  "4016e12af98da014": "utagawa-hiroshige",
+  "7de1ea60cd498981": "katsushika-hokusai",
+  "db3af19f083dd257": "paul-signac"
+ },
+ "odak": {
+  "af51df81fcaa607b": [
+   52,
+   62
+  ],
+  "3e754c9aae3c41f3": [
+   50,
+   60
+  ],
+  "df63f84eecbc3446": [
+   52,
+   72
+  ],
+  "870f58ce77c32209": [
+   50,
+   62
+  ],
+  "5522bc0dc8009d75": [
+   36,
+   30
+  ],
+  "94b93371cb7cf511": [
+   70,
+   40
+  ],
+  "02e8b0494cae100a": [
+   72,
+   60
+  ],
+  "fe71f8cc234c79d5": [
+   62,
+   56
+  ],
+  "f8bcd45668591a51": [
+   30,
+   48
+  ],
+  "618b12f07913aeb4": [
+   62,
+   55
+  ],
+  "dcff0d8adc24cc19": [
+   60,
+   48
+  ],
+  "f08b0bdcd00dc972": [
+   28,
+   50
+  ],
+  "87ac93601dd4b51b": [
+   50,
+   58
+  ]
+ },
+ "yakin": {
+  "3e754c9aae3c41f3": 1.5,
+  "df63f84eecbc3446": 1.6,
+  "870f58ce77c32209": 1.5,
+  "02e8b0494cae100a": 1.35,
+  "fe71f8cc234c79d5": 1.3,
+  "dcff0d8adc24cc19": 1.3,
+  "f08b0bdcd00dc972": 1.25,
+  "87ac93601dd4b51b": 1.3
+ },
+ "kirp": {
+  "a1e25f5e264f3123": [
+   0.14,
+   0.03,
+   0.77,
+   0.94
+  ],
+  "668e5783f3cb4e36": [
+   0.095,
+   0.01,
+   0.88,
+   0.962
+  ],
+  "7f2a2bc76bba119a": [
+   0.016,
+   0.012,
+   0.969,
+   0.975
+  ],
+  "9fe74bd524f1be98": [
+   0.012,
+   0.018,
+   0.977,
+   0.965
+  ],
+  "fdc9f5d7729bdb16": [
+   0.025,
+   0.029,
+   0.952,
+   0.942
+  ],
+  "864aff516d7abc7b": [
+   0.009,
+   0.007,
+   0.977,
+   0.986
+  ],
+  "7de1ea60cd498981": [
+   0.013,
+   0.017,
+   0.973,
+   0.967
+  ],
+  "db3af19f083dd257": [
+   0.024,
+   0.013,
+   0.955,
+   0.979
+  ],
+  "864e0d9cfe33eed0": [
+   0.012,
+   0.012,
+   0.976,
+   0.976
+  ],
+  "5f89fc48ceabb25d": [
+   0.03,
+   0.053,
+   0.94,
+   0.918
+  ],
+  "4016e12af98da014": [
+   0.01,
+   0.004,
+   0.973,
+   0.97
+  ],
+  "77df17448eb30f26": [
+   0.025,
+   0.014,
+   0.935,
+   0.957
+  ],
+  "618b12f07913aeb4": [
+   0.02,
+   0.008,
+   0.955,
+   0.98
+  ],
+  "af51df81fcaa607b": [
+   0.03,
+   0.045,
+   0.84,
+   0.91
+  ]
+ }
+}

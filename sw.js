@@ -144,6 +144,7 @@ const ISTEGE_BAGLI = [
   'data/eser_ayrintilari.json',
   'data/eser_hikayeleri.json',
   'data/yuruyus.json',
+  'data/yuruyus_odak.json',
   'icons/icon-maskable-512.png',
 ];
 
