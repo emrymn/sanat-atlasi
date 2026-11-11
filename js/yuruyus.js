@@ -8,6 +8,8 @@ const yumusak = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 
 const IZ = 0.035; // kameranın hedefe her karede yaklaşma payı (yavaş ve yumuşak)
 const ACILIS_MS = 2600;
 const ARA = 14;
+export const SUZUL_MS = 2800; // süzülüşün bütünü
+const SUZUL_CIK_MS = 820; // eski yazılar bu sürede solar; sayfa o an hedefe konur
 export const ACILIS_Y = 0.36;
 
 // Kapaktan sonraki adımlar: eserin künyesi, ayrıntılar, "Nasıl tanırım?"
@@ -61,18 +63,6 @@ export function noktaAdimi(n, { W, H, IW, IH, kirp, kartH, ust, alt, kapla }) {
 
 let etkin = null; // aynı anda tek yürüyüş (Bugün); sayfa bellekten geri konunca kaydırma olayıyla yeniden başlar
 
-// Biyografi ve "En üste dön" düğmeleri sayfayı perde arkasında bir anda kaydırır; kamera ara adımlardan geçmeden
-// (hızlı montaj gibi) yeni yerine oturur.
-export function yuruyusAtla() {
-  const y = etkin;
-  if (!y || !y.D) return;
-  const H = y.H || window.innerHeight;
-  y.kamera = Math.max(0, Math.min(y.D.length - 1, window.scrollY / H));
-  y.sonSira = -1;
-  y.sonY = window.scrollY;
-  if (!y.kare) y.kare = requestAnimationFrame(y.adim);
-}
-
 // kok: .bugun-yuruyus; img: sahnedeki resim; odak: [x, y] yüzde (açılış karesi); hareketsiz: kamera anında yerine geçer
 export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, hareketsiz = false, acilis = false, yakin = 1 }) {
   const akis = kok.querySelector('[data-yur-akis]');
@@ -85,7 +75,7 @@ export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, harek
   const kirp = Array.isArray(kayit.kirp) && kayit.kirp.length === 4 ? kayit.kirp : [0, 0, 1, 1];
   const [kx, ky, kw, kh] = kirp;
   const kok0 = document.documentElement;
-  const y = { kok, D: null, kamera: 0, sonSira: -1, kare: 0, yukari: false, sonY: 0, basladi: 0, IW: 0, IH: 0, W: 0, H: 0 };
+  const y = { kok, gecis: null, suzul: null, D: null, kamera: 0, sonSira: -1, kare: 0, yukari: false, sonY: 0, basladi: 0, IW: 0, IH: 0, W: 0, H: 0 };
   etkin = y;
 
   function durumlar() {
@@ -114,20 +104,102 @@ export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, harek
     while (D.length < bolumler.length) D.push(adim(1 - odak[0] / 100, 0.5));
     y.D = D;
   }
-  function ciz(p, buyut) {
+  // p (kesirli adım) için kamera duruşu: { cx, cy, s, vy }
+  function durus(p) {
     const D = y.D;
     const i = Math.max(0, Math.min(D.length - 2, Math.floor(p)));
     const f = yumusak(Math.max(0, Math.min(1, p - i)));
-    const a = D[i];
-    const b = D[i + 1] || a;
-    const sc = Math.exp(Math.log(a.s) + (Math.log(b.s) - Math.log(a.s)) * f) * buyut;
-    const cx = a.cx + (b.cx - a.cx) * f;
-    const cy = a.cy + (b.cy - a.cy) * f;
-    const vy = a.vy + (b.vy - a.vy) * f;
+    return karistir(D[i], D[i + 1] || D[i], f);
+  }
+  function karistir(a, b, f) {
+    return {
+      s: Math.exp(Math.log(a.s) + (Math.log(b.s) - Math.log(a.s)) * f),
+      cx: a.cx + (b.cx - a.cx) * f,
+      cy: a.cy + (b.cy - a.cy) * f,
+      vy: a.vy + (b.vy - a.vy) * f,
+    };
+  }
+  function boya({ cx, cy, s, vy }, buyut) {
+    const sc = s * buyut;
     const tx = Math.min(-kx * y.IW * sc, Math.max(y.W - (kx + kw) * y.IW * sc, y.W / 2 - cx * sc));
     const ty = Math.min(-ky * y.IH * sc, Math.max(y.H - (ky + kh) * y.IH * sc, vy - cy * sc));
     img.style.transform = `translate3d(${tx.toFixed(1)}px, ${ty.toFixed(1)}px, 0) scale(${sc.toFixed(5)})`;
   }
+  const ciz = (p, buyut) => boya(durus(p), buyut);
+  function adimiIsaretle(sira) {
+    y.sonSira = sira;
+    bolumler.forEach((b, k) => b.classList.toggle('gorunur', k === sira));
+    [...noktalar.children].forEach((n, k) => n.classList.toggle('acik', k === sira));
+    kok.dataset.adim = String(sira);
+  }
+  const perdeYaz = (asma) => {
+    bulanik.style.opacity = asma.toFixed(3);
+    ustCubuk.style.setProperty('--perde', asma.toFixed(3));
+  };
+
+  // ---------- Süzülüş (İş 172): kapaktan Hayatı'na ve sondan en başa tek, yavaş geçiş ----------
+  // Düz kaydırma aradaki bütün adımları hızlı montaj gibi akıtıyordu. Burada sayfa kaydırılmaz: yazılar yerinde
+  // solar, kamera aradaki ayrıntılara uğramadan doğrudan son duruşa süzülür (ortada hafifçe nefes alır), buğu yavaşça
+  // toplanır ya da dağılır; yazılar görünmezken sayfa hedefe konur ve yeni yazılar yerine süzülerek belirir.
+  function suzul(hedef) {
+    if (y.gecis) return;
+    const asagi = hedef === 'hayat';
+    const hayat = akis.querySelector('.yur-hayat');
+    const hedefY = asagi ? Math.round(hayat.getBoundingClientRect().top + window.scrollY) : 0;
+    const odakla = () => {
+      const el = asagi ? hayat.querySelector('h2') : kok.querySelector('.sahne-isim');
+      if (!el) return;
+      if (asagi) el.tabIndex = -1;
+      el.focus({ preventScroll: true });
+    };
+    if (hareketsiz || !y.D) {
+      window.scrollTo(0, hedefY);
+      return odakla();
+    }
+    const g = (y.gecis = {
+      t0: performance.now(),
+      a: durus(y.kamera),
+      b: y.D[asagi ? sonAdim : 0],
+      bulA: parseFloat(bulanik.style.opacity) || 0,
+      bulB: asagi ? 1 : 0,
+      son: asagi ? sonAdim : 0,
+      kondu: false,
+    });
+    kok0.classList.add('yur-suzulus');
+    akis.style.setProperty('--suzul-cik', asagi ? '-26px' : '26px');
+    akis.style.setProperty('--suzul-gir', asagi ? '40px' : '-28px');
+    akis.dataset.suzul = 'cik';
+    g.kon = () => {
+      if (g.kondu) return;
+      g.kondu = true;
+      window.scrollTo(0, hedefY);
+      y.sonY = hedefY;
+      adimiIsaretle(g.son);
+      akis.dataset.suzul = 'hazir';
+      void akis.offsetHeight; // başlangıç duruşu işlensin: "gir" oradan süzülür
+      akis.dataset.suzul = 'gir';
+    };
+    g.bitir = () => {
+      if (y.gecis !== g) return;
+      clearTimeout(g.z1);
+      window.removeEventListener('wheel', g.bitir);
+      window.removeEventListener('touchstart', g.bitir);
+      g.kon();
+      y.gecis = null;
+      y.kamera = g.son;
+      y.yukari = false;
+      perdeYaz(g.bulB);
+      delete akis.dataset.suzul;
+      kok0.classList.remove('yur-suzulus');
+      odakla();
+    };
+    g.z1 = setTimeout(g.kon, SUZUL_CIK_MS);
+    // parmak ya da tekerlek araya girerse geçiş beklemeden yerine oturur (kaydırmayla kavga etmez)
+    window.addEventListener('wheel', g.bitir, { passive: true, once: true });
+    window.addEventListener('touchstart', g.bitir, { passive: true, once: true });
+    if (!y.kare) y.kare = requestAnimationFrame(kare);
+  }
+  y.suzul = suzul;
   function birak() {
     y.kare = 0;
     kok0.classList.remove('yuruyus-icinde');
@@ -135,6 +207,18 @@ export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, harek
   function kare(simdi) {
     if (etkin !== y || !kok.isConnected) return birak();
     const H = y.H || window.innerHeight;
+    if (y.gecis) {
+      const g = y.gecis;
+      const t = Math.min(1, (simdi - g.t0) / SUZUL_MS);
+      const e = yumusak(t);
+      boya(karistir(g.a, g.b, e), 1 + 0.045 * Math.sin(Math.PI * e));
+      perdeYaz(g.bulA + (g.bulB - g.bulA) * e);
+      noktalar.style.opacity = 0;
+      kok0.classList.remove('yuruyus-icinde');
+      if (t >= 1) g.bitir();
+      y.kare = requestAnimationFrame(kare);
+      return;
+    }
     const hedef = Math.max(0, Math.min(sonAdim, window.scrollY / H));
     const fark = hedef - y.kamera;
     y.kamera = hareketsiz || Math.abs(fark) < 0.0005 ? hedef : y.kamera + fark * IZ;
@@ -142,15 +226,9 @@ export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, harek
     const t = acilis && !hareketsiz ? Math.min(1, (simdi - y.basladi) / ACILIS_MS) : 1;
     ciz(y.kamera, 1 + 0.08 * (1 - yumusak(t)));
     const sira = Math.round(y.kamera);
-    if (sira !== y.sonSira && Math.abs(y.kamera - sira) < 0.18) {
-      y.sonSira = sira;
-      bolumler.forEach((b, k) => b.classList.toggle('gorunur', k === sira));
-      [...noktalar.children].forEach((n, k) => n.classList.toggle('acik', k === sira));
-      kok.dataset.adim = String(sira);
-    }
+    if (sira !== y.sonSira && Math.abs(y.kamera - sira) < 0.18) adimiIsaretle(sira);
     const asma = Math.max(0, Math.min(1, (window.scrollY - sonAdim * H) / (H * 0.6)));
-    bulanik.style.opacity = asma.toFixed(3);
-    ustCubuk.style.setProperty('--perde', asma.toFixed(3));
+    perdeYaz(asma);
     noktalar.style.opacity = y.kamera < 0.5 || asma > 0.3 ? 0 : 1;
     // yürürken sekme çubuğu gizlenir (resim bütün ekranı kaplasın); yukarı kaydırınca, kapakta ve sonda geri gelir
     kok0.classList.toggle('yuruyus-icinde', hedef > 0.5 && asma < 0.5 && !y.yukari);
@@ -170,7 +248,6 @@ export function yuruyusBaslat({ kok, img, kayit, odak, kucukUrl, buyukUrl, harek
     if (etkin !== y) return window.removeEventListener('resize', olc);
     if (kok.isConnected && y.IW) durumlar();
   };
-  y.adim = kare;
   window.addEventListener('scroll', kaydi, { passive: true });
   window.addEventListener('resize', olc);
 

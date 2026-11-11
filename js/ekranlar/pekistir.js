@@ -1722,7 +1722,7 @@ export function olaylariBagla() {
   // İş 171: "Döneme göre" karosu sayfanın altındaki salonlara kaydırır
   ekran.addEventListener('click', (e) => {
     if (!e.target.closest('[data-salonlara], [data-akimlara]')) return;
-    const hedef = ekran.querySelector(e.target.closest('[data-akimlara]') ? '.gz-perde' : '.pk-salonlar');
+    const hedef = ekran.querySelector(e.target.closest('[data-akimlara]') ? '[data-cark]' : '.pk-salonlar');
     if (hedef) hedef.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
   });
   ekran.addEventListener('click', (e) => {

@@ -10,9 +10,6 @@ import { cerceveTipi } from '../cerceve.js';
 import { d, ekran, gununRengi, ciz, ust, notuIcin, gorselTercihi, kotuler } from './ortak.js';
 
 // Koleksiyondaki eserleri (en yeni işaretlenen başta) sanatçılarının eser listesinden bulur; bulunamayanlar atlanır
-export async function koleksiyonEserleri() {
-  return eserleriBul();
-}
 async function eserleriBul() {
   const sidler = [...new Set(d.ilerleme.koleksiyon.map((x) => x.s))];
   const liste = {};

@@ -77,15 +77,6 @@ test('harita: sembol aynen kalır, çevresinde madalyon; sıradaki durakta nabı
 
 test('Galeri: Başyapıtlar rafı rozetli, Karşılaştır ve Koleksiyon kısayolları; Çalış: Başka turlar ızgarası', async ({ page }) => {
   await page.goto('./#/gozat');
-  await expect(page.locator('.gz-akim-serit')).toHaveCount(0);
-  // 1.76.1: Keşfet vitrini: dört kart, her biri bölümünden canlı bir parça (konu kapakları, mini zaman çizgisi)
-  const vitrin = page.locator('.gz-vitrin-kart');
-  await expect(vitrin).toHaveCount(4);
-  for (const card of await vitrin.all()) expect(await card.evaluate((el) => el.scrollWidth <= el.clientWidth)).toBe(true);
-  await expect(page.locator('[data-vitrin="konular"].dolu img').first()).toBeVisible();
-  await expect(page.locator('[data-vitrin-alt="konular"]')).toContainText('hikâye');
-  expect(await page.locator('.gz-mini-zaman i').count()).toBeGreaterThan(10);
-  await expect(page.locator('.gz-mini-zaman i.acik').first()).toBeAttached();
   const raf = page.locator('[data-test="gz-raf"]');
   await expect(raf).toBeVisible();
   const kartlar = raf.locator('[data-test="gz-raf-kart"]');

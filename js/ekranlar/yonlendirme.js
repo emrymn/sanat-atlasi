@@ -41,7 +41,7 @@ const rotalar = [
   [/^#\/pekistir\/ikonografi$/, () => soruTuru('ikonografi'), null],
   [/^#\/pekistir\/bolum\/(\d+-\d+)\/(kolay|orta|zor|tanitim|tanitim-orta)$/, (id, sv) => pekistir('bolum', `${id}/${sv}`), null],
   [/^#\/ilerleme$/, () => ilerlemeSayfasi(), 'bugun'],
-  [/^#\/ayarlar$/, ayarlarSayfasi, 'ayarlar'],
+  [/^#\/ayarlar$/, ayarlarSayfasi, 'bugun'],
   [/^#\/koleksiyon$/, koleksiyonSayfasi, 'gozat'],
   [/^#\/harita$/, () => haritaSayfasi(), 'harita'],
   [/^#\/gunun$/, () => gununSayfasi(null), 'bugun'],

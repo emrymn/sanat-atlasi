@@ -32,13 +32,12 @@ async function kenarKaydir(page, context) {
   await page.waitForTimeout(500);
 }
 
-test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en az 44 pt; beş sekme ekrana sığar', async ({ page, context }) => {
+test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en az 44 pt; dört sekme ekrana sığar', async ({ page, context }) => {
   await agiHazirla(context);
-  // İş 171: Galeri'nin ana ekranında haplı menü yerine dört kısayol; haplar alt sayfalarda (Başyapıtlar, Konular, Zaman)
+  // İş 171/172: Galeri'nin ana ekranında haplı menü yerine müze planının dört odası; haplar alt sayfalarda (Başyapıtlar, Konular, Zaman)
   await page.goto('./#/gozat');
-  // 1.76.1: kısayollar Keşfet vitrininde
-  await expect(page.locator('.gz-vitrin-kart')).toHaveCount(4);
-  for (const a of await page.locator('.gz-vitrin-kart').all()) {
+  await expect(page.locator('.gz-plan-harita a')).toHaveCount(4);
+  for (const a of await page.locator('.gz-plan-harita a').all()) {
     const k = await a.boundingBox();
     expect(k.height).toBeGreaterThanOrEqual(44);
     expect(k.x + k.width).toBeLessThanOrEqual(390.5);
@@ -103,27 +102,28 @@ test('geri düğmesiyle dönünce liste kalınan yerde açılır; ileri gidişte
   await agiHazirla(context);
   await page.goto('./#/gozat');
   await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
-  await page.evaluate(() => window.scrollTo(0, 900));
-  await expect.poll(() => y(page)).toBe(900);
+  await page.evaluate(() => window.scrollTo(0, 800));
+  await expect.poll(() => y(page)).toBe(800);
   await gorunenAkimLinki(page);
   await expect(page).toHaveURL(/#\/akim\//);
   await expect.poll(() => y(page)).toBe(0);
   await page.locator('.ust .geri, .geri').first().click();
   await expect(page).toHaveURL(/#\/gozat$/);
-  await expect.poll(() => y(page)).toBe(900);
+  await expect.poll(() => y(page)).toBe(800);
 });
 
 test('sekme çubuğu: başka sekmeden dönünce kalınan yer; açık sekmeye yeniden dokununca en başa', async ({ page, context }) => {
   await agiHazirla(context);
   await page.goto('./#/gozat');
   await expect(page.locator('a[href^="#/akim/"]').first()).toBeVisible();
-  await page.evaluate(() => window.scrollTo(0, 1200));
-  await expect.poll(() => y(page)).toBe(1200);
+  // İş 172: Galeri kısaldı (uzun akım listesi çarka indi); kaydırma yeri sayfanın boyuna göre
+  await page.evaluate(() => window.scrollTo(0, 800));
+  await expect.poll(() => y(page)).toBe(800);
   await page.locator('#sekmeler a[data-sekme="pekistir"]').click();
   await expect(page).toHaveURL(/#\/pekistir$/);
   await page.locator('#sekmeler a[data-sekme="gozat"]').click();
   await expect(page).toHaveURL(/#\/gozat$/);
-  await expect.poll(() => y(page)).toBe(1200);
+  await expect.poll(() => y(page)).toBe(800);
   await page.locator('#sekmeler a[data-sekme="gozat"]').click();
   await expect.poll(() => y(page)).toBe(0);
 });
@@ -443,9 +443,8 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
   await page.waitForTimeout(1000);
   await page.locator('[data-devasa-indir]').click();
   await page.waitForTimeout(150);
-  // 1.76.1: Ayarlar sekmenin kökü (geri düğmesi yok); başka sekmeye geçilince indirme sürer
-  await page.locator('#sekmeler a[data-sekme="bugun"]').click();
-  await expect(page).toHaveURL(/#\/$/);
+  await page.locator('[data-geri]').first().click();
+  await expect(page).toHaveURL(/#\/ilerleme$/);
   await expect.poll(telefonda, { timeout: 15000 }).toBeGreaterThanOrEqual(3);
   expect(hatalar).toEqual([]);
   // indirme sürerken uygulama kapanır (yeniden yükleme): açılınca kendiliğinden kaldığı yerden sürer
@@ -907,11 +906,10 @@ test.describe('İş 75: kenardan kaydırma ve sayfa belleği', () => {
     const kart = page.locator('a.zaman-kart').first();
     await kart.waitFor();
     await page.waitForTimeout(800);
-    // ilk kartlar ekranın üst yarısına gelsin (dokunulacak ikinci kart görünür kalsın; Galeri'nin başı uzayınca 600 yetmiyordu)
-    await page.evaluate(() => window.scrollTo(0, document.querySelector('a.zaman-kart').getBoundingClientRect().top + window.scrollY - 150));
+    await page.evaluate(() => window.scrollTo(0, 99999)); // İş 172: Galeri kısaldı; çarkın kartları sayfanın sonunda
+    await page.locator('a.zaman-kart').nth(1).scrollIntoViewIfNeeded(); // dokunuş sayfayı ayrıca kaydırmasın
     await page.waitForTimeout(200);
     const yer = await page.evaluate(() => window.scrollY);
-    expect(yer).toBeGreaterThan(300);
     // sayfanın bir düğümünü işaretle: geri dönünce aynı düğüm (yeniden çizilmedi) olmalı
     await page.evaluate(() => (document.querySelector('a.zaman-kart').dataset.iz = 'evet'));
     const once = await page.evaluate(() => history.length);
