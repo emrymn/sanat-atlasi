@@ -101,7 +101,13 @@ function kapakHtml(gs, kayit) {
           <div class="bugun-dugmeler">
             <button class="bugun-dugme" type="button" data-bugun-hikaye hidden>${ikon('kitap', 16, 1.6)}<span>Hikâyesi</span></button>
             <button class="bugun-dugme" type="button" data-bugun-incele hidden>${ikon('ara', 16, 1.6)}<span>İncele</span></button>
-            <a class="bugun-dugme" href="#/gunun">${ikon('gunes', 16, 1.6)}<span>${kacis(bilinenAd(gs.ad, d.kisaAdlar[gs.id]))}</span></a>
+            ${
+              // İş 172: sanatçı bağlantısı kalktı (isme dokununca aynı sayfa açılıyor); yerinde sayfanın sonundaki Hayatı'na
+              // süzülen düğme. Yürüyüşü olmayan resimde Hayatı sanatçı sayfasındadır.
+              kayit
+                ? `<button class="bugun-dugme" type="button" data-yur-hayata data-test="bugun-hayati">${ikon('in', 16, 1.6)}<span>Hayatı</span></button>`
+                : `<a class="bugun-dugme" href="#/gunun" data-test="bugun-hayati">${ikon('kitap', 16, 1.6)}<span>Hayatı</span></a>`
+            }
           </div>
         </div>`;
 }
@@ -147,6 +153,7 @@ function yuruyusSonu(gs) {
         <a href="#/sanatci/${encodeURIComponent(gs.id)}/eserler">Bütün eserleri${ikon('ileri', 16, 1.7)}</a>
       </nav>
       <div class="yur-dinle" data-yur-dinle></div>
+      <button class="yur-basa" type="button" data-yur-basa data-test="yur-basa"><span class="yur-basa-halka" aria-hidden="true">${ikon('cik', 20, 1.5)}</span><span>Başa dön</span></button>
     </div>`;
 }
 
@@ -246,7 +253,12 @@ async function yuruyusKur(s, kayit, perde) {
   // denetimde eklenen kırpma ve açılış yakınlığı (data/yuruyus_odak.json); kayıttaki kirp varsa o geçerli
   const ek = yuruyusEki(kayit.gorsel);
   if (ek.kirp && !kayit.kirp) kayit = { ...kayit, kirp: ek.kirp };
-  yuruyusBaslat({ kok, img, kayit, yakin: ek.yakin, odak: adlaOdak(kayit.gorsel) || [50, 40], kucukUrl: adres.kucuk, buyukUrl: adres.buyuk, hareketsiz: hareketAz(), acilis: perde });
+  const yur = yuruyusBaslat({ kok, img, kayit, yakin: ek.yakin, odak: adlaOdak(kayit.gorsel) || [50, 40], kucukUrl: adres.kucuk, buyukUrl: adres.buyuk, hareketsiz: hareketAz(), acilis: perde });
+  // İş 172: Hayatı'na ve başa süzülüş (js/yuruyus.js); Hareket kapalıysa doğrudan oraya konur
+  kok.addEventListener('click', (ev) => {
+    if (ev.target.closest('[data-yur-hayata]')) yur.suzul('hayat');
+    else if (ev.target.closest('[data-yur-basa]')) yur.suzul('bas');
+  });
   eSozu.then((e) => e && kok.isConnected && bugunDugmeleri(s, e, kok, false));
   dinleEkle(s, kok.querySelector('[data-yur-dinle]'));
   const { biyografiler } = await ekVeriYukle();

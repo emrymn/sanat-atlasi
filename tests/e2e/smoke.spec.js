@@ -8,8 +8,8 @@ test.beforeEach(async ({ context }) => {
 test('ana sayfa → Göz At → sanatçı → eser tam ekran', async ({ page }) => {
   await page.goto('./');
   await expect(page.getByRole('heading', { name: 'Sanat Atlası' })).toBeVisible();
-  // Tasarım B 4.1: Bugün sade; sanatçı düğmesi var, sayılar Ben'de (İlerleme)
-  await expect(page.locator('.bugun-dugmeler a.bugun-dugme')).toBeVisible();
+  // Tasarım B 4.1: Bugün sade; sayılar Ben'de (İlerleme). İş 172: sanatçı düğmesinin yerinde Hayatı düğmesi
+  await expect(page.locator('[data-test="bugun-hayati"]')).toBeVisible();
   await page.locator('#sekmeler a[data-sekme="gozat"]').click();
   await expect(page.getByRole('heading', { name: 'Galeri' })).toBeVisible();
   // kilitli akım gri ve "Konu N'de açılır" yazar
