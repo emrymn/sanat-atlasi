@@ -10,6 +10,7 @@ import { kacis } from '../yardimci.js';
 import { ikon } from '../tasarim.js';
 import { bolumleriKur, bolumDurumlari, bolumAdi, kilitMetni, BOLUM_SORU, BOLUM_GECME, BOLUM_SEVIYELER } from '../bolum.js';
 import { haritaKur, sepyaSiniri, vakit, resimAdresi, nesneAdresi, yansimaAdresi, yolcuAdresi, yolcuYeri, yolcuYolu, yolcuPozu, cizgiUzunlugu, cizgideNokta, gorulenDogrula, resimYukleme, bolgeBul, BOLGELER, W, H, SEPYA_GECIS, ARA } from '../harita.js';
+import { kurs, konuBasligi, konuIsaretle } from './ilerleme.js';
 import { d, ekran, ciz, ust, islenen, kaydet, gununRengi, cizimNo, guncelMi, jsonGetir, kucukKareleriDoldur, kucukGorsel, enBilinen, notuIcin, gorselTercihi } from './ortak.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { surukleKapatKur } from '../surukleKapat.js';
@@ -159,6 +160,7 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
       <h1>Yolculuk</h1>
       <p class="harita-ozet" data-test="harita-ozet"><b>${acikSayi}</b>/${liste.length} bölüm · <b>${yildiz}</b> ${YILDIZ.replace('yildiz-sekil', 'yildiz-sekil dolu')}<span class="ekran-disi">yıldız</span></p>
     </div>
+    ${kursRozetiHtml()}
     <button type="button" class="harita-vakit" data-harita-vakit aria-label="${tur === 'gece' ? 'Gündüze geç' : 'Geceye geç'}">${ikon(tur === 'gece' ? 'gunes' : 'ay', 20, 1.6)}</button>
     <p class="harita-zaman" data-harita-zaman data-test="harita-zaman"><span class="harita-zaman-ic"><b></b><span></span></span></p>
     <div class="harita-perde" data-harita-perde aria-hidden="true"></div>
@@ -607,6 +609,43 @@ function kaydirmaSirasi() {
   });
 }
 
+// ---------- kurs rozeti ve paneli (İş 171, Tasarım B · 4.4) ----------
+// Haritanın üstünde: kaç konu işlendi ve sıradaki konu. Dokununca alttan panel: sıradaki konu ve "İşlendi yap"
+// (Bugün sade olduğu için kursu izlemenin yeri burası); bütün konuların listesi Ben sayfasında.
+function kursDurumu() {
+  const k = islenen();
+  const liste = kurs();
+  return { liste, sayi: liste.filter((x) => k.has(x.no)).length, siradaki: liste.find((x) => !k.has(x.no)) || null };
+}
+function kursRozetiHtml() {
+  const { liste, sayi, siradaki } = kursDurumu();
+  if (!liste.length) return '';
+  const oran = Math.round((100 * sayi) / liste.length);
+  return `<button type="button" class="kurs-rozet" data-kurs-rozet data-test="kurs-rozet" aria-label="Kurs: ${sayi} / ${liste.length} konu işlendi${siradaki ? `, sıradaki konu ${siradaki.no}` : ''}. Aç">
+      <svg aria-hidden="true" viewBox="0 0 36 36"><circle class="iz" cx="18" cy="18" r="15"/><circle class="dolu" cx="18" cy="18" r="15" pathLength="100" style="--oran:${oran}"/></svg>
+      <span class="kurs-rozet-yazi"><b>${sayi} / ${liste.length} konu</b><small>${siradaki ? `Sıradaki: Konu ${siradaki.no}` : 'Bütün konular işlendi'}</small></span>
+      ${siradaki ? '<i class="kurs-rozet-nokta" aria-hidden="true"></i>' : ''}
+    </button>`;
+}
+function kursPenceresi() {
+  const { liste, sayi, siradaki } = kursDurumu();
+  const acilacak = siradaki ? d.sanatcilar.filter((s) => s.konu === siradaki.no).length : 0;
+  return `<div class="harita-pencere-ic kurs-pencere" role="dialog" aria-label="Kursun neresindesin" data-test="kurs-pencere">
+      <button class="harita-pencere-kapat" type="button" data-harita-kapat aria-label="Kapat">${ikon('kapat', 20, 1.7)}</button>
+      <header class="hp-baslik"><span class="etiket">Kursun neresindesin</span>
+        <h2><b class="kurs-sayi">${sayi}</b> / ${liste.length} konu işlendi</h2></header>
+      ${
+        siradaki
+          ? `<div class="kurs-siradaki" data-test="kurs-siradaki"><span class="etiket">Sıradaki · Konu ${siradaki.no}</span>
+        <b>${kacis(konuBasligi(siradaki))}</b>
+        <small>${acilacak ? `${acilacak} sanatçı açılacak` : 'yeni sanatçı açılmaz'}</small></div>
+      <button class="hp-basla" type="button" data-harita-konu-isle="${siradaki.no}" data-test="kurs-isle">${ikon('dogru', 20, 2.2)}İşlendi yap</button>`
+          : '<p class="harita-pencere-durum">Bütün konular işlendi.</p>'
+      }
+      <div class="harita-pencere-dugmeler"><a class="dugme" href="#/ilerleme" data-test="kurs-hepsi">Bütün konular</a></div>
+    </div>`;
+}
+
 // ---------- küçük pencereler ----------
 function akimOzeti(ad) {
   const m = (d.akimBilgi && d.akimBilgi.akimlar && d.akimBilgi.akimlar[ad]) || null;
@@ -840,6 +879,16 @@ export function olaylariBagla() {
       if (typeof document.startViewTransition === 'function' && !azHareket()) document.startViewTransition(cevir);
       else cevir();
       return;
+    }
+    if (e.target.closest('[data-kurs-rozet]')) {
+      e.stopPropagation();
+      return pencereAc(kursPenceresi());
+    }
+    const isle = e.target.closest('[data-harita-konu-isle]');
+    if (isle) {
+      // konu işlenir, harita yeni açılan duraklarla yeniden çizilir (olduğu yerde), panel yeni sıradakiyle yeniden açılır
+      konuIsaretle(Number(isle.dataset.haritaKonuIsle), true);
+      return void haritaSayfasi({ konumuKoru: true }).then(() => ekran.querySelector('[data-harita-pencere]') && pencereAc(kursPenceresi()));
     }
     if (e.target.closest('[data-harita-kapat]')) {
       pencereKapat();

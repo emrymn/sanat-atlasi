@@ -1884,3 +1884,11 @@ Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişikli
 - **Galeri:** en üstte Başyapıtlar rafı (10 kart; hikâyesi olan, sonra rehberli incelemesi olan, sonra açık sanatçılar önce), altında iki kısayol: Karşılaştır (en çok karıştırılan ikili; yoksa açık ilk iki akım) ve Koleksiyon. Öneride dört haplı üst menünün kalkması vardı; hapları bıraktım: Başyapıtlar, Konular ve Zaman'a tek dokunuşla götürüyorlar ve testler onlara bağlı. Rafın yeri baştan ayrılır (sonradan açılınca sayfa kayıyordu).
 - **Rozetler** (`eserRozetleri`, `rozetleriEkle`): hikâyesi olan esere kitap, rehberli incelemesi olana büyüteç. Galeri rafında adıyla ("Hikâye", "6 ayrıntı"), başyapıt listesinde ve sanatçı sayfasındaki eser şeridinde yalnız ikon. Görüntüleyicide düğmeler zaten adlıydı.
 - Testler: `tasarim_b.spec.js`'e Galeri/Çalış testi; `cilalama.spec` İş 73 testi ilk akım kartını ekrana kaydırır (artık rafın altında); `soru_turlari.spec` soruyu başlık adıyla arar.
+
+### Grup 13, 15, 16, 17 · Kurs rozeti, hareket, Ben, dönem kutlaması
+
+- **Kurs rozeti** (Yolculuk, sol üstte sabit): "9 / 57 konu · Sıradaki: Konu 12", halkayla. Dokununca alttan panel: sıradaki konunun adı, kaç sanatçı açılacağı ve "İşlendi yap"; işlenince harita olduğu yerde yeniden çizilir ve panel yeni sıradakiyle açık kalır. Bütün konuların listesi (kitaplık) Ben sayfasında kaldı ("Bütün konular" bağlantısı): kitaplığı panele taşımak Ben'deki testli düzeni ikiye bölecekti.
+- **Hareket:** büyük sayılar ekran ilk açılınca sayarak gelir (`[data-say]`: Çalış'taki kart sayısı, Ben'deki sanatçı sayısı; Sade ve Kapalı'da doğrudan yazılır). Düğme, satır ve arama kutusu basınca 0,97'ye küçülür. Uygulamanın mevcut geçişleri (dokunulan resmin büyüyerek açılması, sekmeler arası kayma, alttan pencereler) İş 52–86'da zaten vardı; değiştirilmedi.
+- **Ben:** Koleksiyonum satırının altına Ayarlar satırı eklendi (dişli ikonu sağ üstte duruyor). Sanatçı, başyapıt ve ayarlar sayfaları 5. gruptaki yazı değişikliğiyle yeni dile geçti; düzenleri aynı.
+- **Dönem kutlaması:** bir durağın üçüncü yıldızıyla dönemin bütün durakları üç yıldız olduysa seviye sonunda "… tamamlandı" şeridi çıkar. Haritada büyük mühür ve kamera kayışı yapılmadı (haritanın sepya/renkli açılma düzeni zaten dönemi gösteriyor; ikisi üst üste binecekti).
+- Testler: `tasarim_b.spec.js`'e kurs rozeti testi.

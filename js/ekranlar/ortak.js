@@ -1,6 +1,6 @@
 // Ekranların ortak parçaları: uygulama durumu (d), ekran öğesi, küçük yardımcılar, resim rengi, bildirim, sekme çubuğu, başlık ve çizim.
 import { keskinlestir } from '../keskin.js';
-import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu, bellekEskit, bellegeAl } from '../gecis.js';
+import { gecisHazirla, sayfayiAyir, bellektenKoy, geriGecisi, gezin, kaydirmaSonu, bellekEskit, bellegeAl, hareketAz } from '../gecis.js';
 import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
@@ -689,11 +689,31 @@ export function ciz(html, hareket) {
   else window.scrollTo(0, 0);
   if (gecis) gecis();
   kaydirmaSonu();
+  if (yeni) sayilariCanlandir(ekran);
   const h = ekran.querySelector('h1');
   if (h) h.focus({ preventScroll: true });
   if (ekran.querySelector('.ad-son, .soru-baslik h2')) {
     adlariSigdir();
     if (document.fonts) document.fonts.ready.then(adlariSigdir);
+  }
+}
+
+// İş 171 (Tasarım B · hareket): büyük sayılar ekran ilk açılınca sıfırdan sayarak gelir ([data-say]; 0,8 sn).
+// Hareket "Tam" değilse (Sade, Kapalı, sistemin hareketi azalt ayarı) sayı doğrudan yazılır.
+export function sayilariCanlandir(kok) {
+  const sade = hareketAz() || document.documentElement.dataset.hareket === 'sade';
+  for (const el of kok.querySelectorAll('[data-say]')) {
+    const hedef = Number(el.textContent);
+    if (sade || !Number.isFinite(hedef) || hedef < 2) continue;
+    const bas = performance.now();
+    const kare = (simdi) => {
+      if (!el.isConnected) return;
+      const t = Math.min(1, (simdi - bas) / 800);
+      el.textContent = String(Math.round(hedef * (1 - Math.pow(1 - t, 3))));
+      if (t < 1) requestAnimationFrame(kare);
+    };
+    el.textContent = '0';
+    requestAnimationFrame(kare);
   }
 }
 

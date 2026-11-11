@@ -17219,3 +17219,156 @@ main[data-hareket='cevap'] .alt-yaprak .sonuc .ikon path {
 .gz-raf-bas a:empty {
   visibility: hidden;
 }
+
+/* ===== İş 171 · Yolculuk: kurs rozeti (ekrana sabit, sol üstte) ve kurs paneli ===== */
+.kurs-rozet {
+  position: fixed;
+  z-index: 30;
+  top: calc(env(safe-area-inset-top, 0px) + 10px);
+  left: max(12px, calc((100vw - 620px) / 2 + 12px), calc(env(safe-area-inset-left, 0px) + 12px));
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 52px;
+  padding: 0 16px 0 8px;
+  border: 1px solid rgba(235, 229, 218, 0.14);
+  border-radius: 26px;
+  background: rgba(24, 22, 20, 0.8);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  backdrop-filter: blur(16px) saturate(1.2);
+  color: #ebe5da;
+  text-align: left;
+  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: transform 0.12s ease;
+  animation: kurs-rozet-gel 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) 0.3s both;
+}
+@keyframes kurs-rozet-gel {
+  from {
+    opacity: 0;
+    translate: 0 -10px;
+  }
+}
+.kurs-rozet:active {
+  transform: scale(0.97);
+}
+.kurs-rozet svg {
+  width: 36px;
+  height: 36px;
+  transform: rotate(-90deg);
+}
+.kurs-rozet circle {
+  fill: none;
+  stroke-width: 3;
+}
+.kurs-rozet .iz {
+  stroke: rgba(235, 229, 218, 0.2);
+}
+.kurs-rozet .dolu {
+  stroke: #c9a45c;
+  stroke-linecap: round;
+  stroke-dasharray: var(--oran, 0) 100;
+}
+.kurs-rozet-yazi {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.kurs-rozet-yazi b {
+  font: 600 15px/1.15 var(--sans);
+}
+.kurs-rozet-yazi small {
+  font: 400 13px/1.2 var(--sans);
+  color: #cfc7bc;
+}
+.kurs-rozet-nokta {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c9a45c;
+}
+.kurs-pencere .kurs-sayi {
+  font-weight: 400;
+  color: var(--pirinc);
+}
+.kurs-siradaki {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 10px;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.kurs-siradaki b {
+  font: 400 24px/1.15 var(--serif);
+}
+.kurs-siradaki small {
+  font: 400 14px/1.3 var(--sans);
+  color: var(--ink-2);
+}
+.kurs-pencere .hp-basla {
+  position: static;
+  width: 100%;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+@media (prefers-reduced-motion: reduce) {
+  .kurs-rozet {
+    animation: none;
+  }
+}
+:root[data-hareket='kapali'] .kurs-rozet {
+  animation: none;
+}
+.kurs-pencere .hp-basla {
+  box-sizing: border-box;
+}
+/* İş 171 · dönem tamamlandı: seviye sonunda pirinç şerit */
+.st-donem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 14px 0 0;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: rgba(var(--pirinc-rgb), 0.12);
+  box-shadow: inset 0 0 0 1px rgba(var(--pirinc-rgb), 0.45);
+  font: 400 15px/1.35 var(--sans);
+  text-align: left;
+  animation: yuksel-st 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) 2.2s both;
+}
+.st-donem .ikon {
+  flex: none;
+  color: var(--pirinc);
+}
+@keyframes yuksel-st {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+/* İş 171 · dokunuş tepkisi: düğmeler basınca hafifçe küçülür */
+.dugme,
+.satir,
+.arama-hapi,
+.bolumler a {
+  transition:
+    transform 0.12s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+.dugme:active,
+.satir:active,
+.arama-hapi:active {
+  transform: scale(0.97);
+}
+@media (prefers-reduced-motion: reduce) {
+  .st-donem {
+    animation: none;
+  }
+}
+:root[data-hareket='kapali'] .st-donem {
+  animation: none;
+}

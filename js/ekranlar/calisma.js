@@ -123,5 +123,6 @@ export function egriHtml(gir) {
 
 export function koleksiyonBagi() {
   const n = d.ilerleme.koleksiyon.length;
-  return `<a class="satir koleksiyon-bag" href="#/koleksiyon" data-test="koleksiyon-bag"><span class="metin"><b>Koleksiyonum</b><span>${n ? `${n} eser işaretli` : 'Sevdiğin eserleri işaretle'}</span></span>${ikon('isaret', 20, 1.4)}</a>`;
+  return `<a class="satir koleksiyon-bag" href="#/koleksiyon" data-test="koleksiyon-bag"><span class="metin"><b>Koleksiyonum</b><span>${n ? `${n} eser işaretli` : 'Sevdiğin eserleri işaretle'}</span></span>${ikon('isaret', 20, 1.4)}</a>
+    <a class="satir koleksiyon-bag" href="#/ayarlar" data-test="ayarlar-bag"><span class="metin"><b>Ayarlar</b><span>Tema, hareket, günlük kart, yedek</span></span>${ikon('ayarlar', 20, 1.4)}</a>`;
 }

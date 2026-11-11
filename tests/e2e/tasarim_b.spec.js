@@ -101,3 +101,24 @@ test('Galeri: Başyapıtlar rafı rozetli, Karşılaştır ve Koleksiyon kısayo
   await izgara.locator('[data-test="donem-turu"]').click();
   await expect(page.locator('.pk-salonlar')).toBeInViewport();
 });
+
+test('Yolculuk: kurs rozeti; panelde sıradaki konu "İşlendi yap" ile işlenir ve sayı artar', async ({ page }) => {
+  await page.goto('./#/harita');
+  const rozet = page.locator('[data-test="kurs-rozet"]');
+  await expect(rozet).toBeVisible();
+  const [once, toplam] = (await rozet.locator('b').textContent()).match(/\d+/g).map(Number);
+  expect(toplam).toBeGreaterThan(once);
+  expect((await rozet.boundingBox()).height).toBeGreaterThanOrEqual(44);
+  await rozet.click();
+  const panel = page.locator('[data-test="kurs-pencere"]');
+  await expect(panel).toBeVisible();
+  await expect(panel.locator('[data-test="kurs-siradaki"]')).toContainText('Sıradaki · Konu');
+  const acikOnce = await page.evaluate(() => window.__atlas.ilerleme.islenen.length);
+  await panel.locator('[data-test="kurs-isle"]').click();
+  await expect.poll(() => page.evaluate(() => window.__atlas.ilerleme.islenen.length)).toBe(acikOnce + 1);
+  await expect(page.locator('[data-test="kurs-rozet"] b')).toHaveText(`${once + 1} / ${toplam} konu`);
+  await expect(page.locator('[data-test="kurs-pencere"]')).toBeVisible();
+  // bütün konular Ben sayfasında
+  await page.locator('[data-test="kurs-hepsi"]').click();
+  await expect(page.getByRole('heading', { name: 'Ben' })).toBeVisible();
+});

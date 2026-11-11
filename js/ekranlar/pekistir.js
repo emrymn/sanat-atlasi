@@ -85,6 +85,7 @@ import {
 } from '../bolum.js';
 import { akrabaMi } from '../celdirici.js';
 import { bolumler as tumBolumler, durumlar as bolumDurumu, durakSembolu } from './harita.js';
+import { bolgeBul } from '../harita.js';
 import { yonlendir } from './yonlendirme.js';
 import { sallanmaBaslat } from '../sallanma.js';
 import { dinleEkle } from '../kunye.js';
@@ -135,7 +136,7 @@ function turSahnesi(karisik) {
       <button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 16, 1.6)}Hareketi aç</button>
       <div class="pk-govde">
         ${etiket('Bugünkü tur', { vurgu: true })}
-        <p class="pk-sayi"><b>${karisik.toplam}</b><span>kart<br>~${dk} dk</span></p>
+        <p class="pk-sayi"><b data-say>${karisik.toplam}</b><span>kart<br>~${dk} dk</span></p>
         <span class="tur-karisim" role="img" aria-label="${parca.map(([, n, ad]) => `${n} ${ad}`).join(', ')}">${parca
           .filter(([, n]) => n)
           .map(([cls, n]) => `<i class="k-${cls}" style="flex-grow:${n}"></i>`)
@@ -1503,7 +1504,7 @@ function bolumOzeti(o) {
           : ''
       }
       <div class="sonuc-alt" style="--gecikme:${0.5 + eserler.length * 0.12}s">
-        ${seviyeTamamHtml(r, sv, etiket)}
+        ${seviyeTamamHtml(r, sv, etiket, tamamlananDonem(id, r))}
         <section class="skor" aria-label="Sonuç" style="--oran:${yuzde}%;--hedef:${hedefYuzde}%">
           <p class="skor-ust"><b>Senin gözün</b> · ${kacis(etiket)} · ${BOLUM_SV_AD[sv] || ''}</p>
           <p class="skor-yuzde"><i class="ad">%${yuzde}</i><span class="skor-durum">${r.gecti ? 'Geçti' : 'Az kaldı'}</span></p>
@@ -1536,7 +1537,16 @@ function bolumOzeti(o) {
 
 // İş 171 (Tasarım B): seviye sonu. Durağın haritadaki sembolü madalyonda; halka kazanılan yıldıza kadar çizilir,
 // yeni yıldız(lar) sırayla gelir. Geçilemediyse halka olduğu yerde kalır, başlık "az kaldı".
-function seviyeTamamHtml(r, sv, etiket) {
+// Dönem kutlaması: bu yıldızla dönemin bütün durakları üç yıldız olduysa dönemin adı
+function tamamlananDonem(id, r) {
+  if (!r.yeniGecti || r.yildizSonra < 3) return '';
+  const liste = bolumDurumu().durumlar;
+  const x = liste.find((y) => y.id === id);
+  if (!x) return '';
+  const bolge = bolgeBul(x.sira);
+  return liste.filter((y) => bolgeBul(y.sira).id === bolge.id).every((y) => y.acik && y.yildiz >= 3) ? bolge.ad : '';
+}
+function seviyeTamamHtml(r, sv, etiket, donem = '') {
   const yildizlar = [0, 1, 2]
     .map((i) => `<i class="yildiz-sekil${i < r.yildizSonra ? ' dolu' : ''}${i >= r.yildizOnce && i < r.yildizSonra ? ' yeni' : ''}" style="--i:${i}"></i>`)
     .join('');
@@ -1546,6 +1556,7 @@ function seviyeTamamHtml(r, sv, etiket) {
       <p class="etiket st-etiket">${kacis(BOLUM_SV_AD[sv] || '')} ${r.gecti ? 'seviye tamam' : '· az kaldı'}</p>
       <h2 class="st-baslik">${kacis(etiket)}</h2>
       <span class="st-yildizlar" aria-hidden="true">${yildizlar}</span>
+      ${donem ? `<p class="st-donem" data-test="donem-tamam">${ikon('dogru', 18, 2.2)}<span><b>${kacis(donem)} tamamlandı</b> · bütün duraklar üç yıldız</span></p>` : ''}
     </section>`;
 }
 function seviyeTamamCanlandir(id, r) {
