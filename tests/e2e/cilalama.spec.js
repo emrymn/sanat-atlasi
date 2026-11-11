@@ -36,7 +36,8 @@ test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en a
   await agiHazirla(context);
   // İş 171/172: Galeri'nin ana ekranında haplı menü yerine müze planının dört odası; haplar alt sayfalarda (Başyapıtlar, Konular, Zaman)
   await page.goto('./#/gozat');
-  await expect(page.locator('.gz-plan-harita a')).toHaveCount(4);
+  // 1.76.3: Akımlar koridoru da artık bir bağlantı (#/akimlar): beş oda
+  await expect(page.locator('.gz-plan-harita a')).toHaveCount(5);
   for (const a of await page.locator('.gz-plan-harita a').all()) {
     const k = await a.boundingBox();
     expect(k.height).toBeGreaterThanOrEqual(44);

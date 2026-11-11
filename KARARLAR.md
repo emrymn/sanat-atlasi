@@ -1928,3 +1928,15 @@ PR 189'daki denemeler örnek alınmadı; main'den yeni dal. Ayarlar, Galeri böl
 ### 1.76.2 · Sekme çubuğu yine cam (liquid glass)
 
 - Emre'nin isteğiyle Tasarım B'nin "kayan hap görünmez, etkin ikon pirinç" kuralı geri alındı: etkin sekmenin arkasındaki cam hap (İş 24'teki parlak kenarlı, kayarak geçen) yine görünür, etkin ikon ve yazı açık renk. Sekme adları ve ikonları (Bugün, Yolculuk, Galeri, Çalış) ve hızlı ayarlar dili aynen kaldı.
+
+### 1.76.3 · Galeri alt sayfalarının üstü (Açılan hap) ve Akımlar sayfası
+
+Üç çizim tasarım tuvalinde gösterildi (A · Cam ray, B · Kitabe, C · Açılan hap; ana sayfa için çark kalkar / şeride küçülür / kalır). Emre "C" ve "çark kalsın" dedi.
+
+- **Hata:** "Akımlar" hapı `#/gozat`'a (Müze planı) gidiyordu. Artık `#/akimlar`: çark ve altında bütün akımların zaman sırasıyla dizini (`data-test="akim-dizin"`, satırlar `akim-dizin-satir`; kilitliler "Konu N'de açılır"). Müze planındaki "Akımlar koridoru" odası da oraya bağlantı (`plan-akimlar` korundu; eskiden çarka kaydıran düğmeydi, "Buradasın" işareti yerine ok).
+- **Çark iki yerde:** Galeri'nin ana ekranında aynen duruyor, Akımlar sayfasında da var (aynı `carkHtml` / `carkKur`; `gz-akimlar` her sayfada bir tane). Son bakılan akım ikisinde ortak hatırlanır.
+- **Üst bölüm (Başyapıtlar, Konular, Zaman, Akımlar):** "Galeri" başlığı 32 px, arama aynı satırda (kısa yazı "Sanatçı, eser ara"; erişilebilir adı tam). Altında dört ikon hapı (48 pt): etkin olan genişler, adını ve kısa alt yazısını gösterir; ötekiler yalnız ikon (adları ekran okuyucuya açık). Sınıf `.bolumler` ve bağlantılar korundu (İş 89 geçişsiz bölüm değişimi aynen çalışır); `akimlar-giris` yeni `data-test`.
+- **Animasyon:** sayfa her bölümde yeniden çizildiği için CSS geçişi yerine anahtar kare: yeni hap açılır, önceki kapanır (aynı eğri, toplam genişlik sabit), yazı hafif gecikmeyle gelir. Aynı bölüm ikinci kez çizilirse ("Yükleniyor…" → içerik) geçiş eksi gecikmeyle kaldığı yerden sürer, bitmişse haplar hareketsiz. Hareket "Kapalı"da ve sistemde hareket azaltma açıkken animasyon yok.
+- **Dokunulmayanlar:** alt sekme çubuğu (cam hap), Galeri ana ekranının üstü, veri dosyaları.
+- **Kalanlar:** `.oda-burada` CSS'i kullanılmıyor (temizlikte silinebilir). Gerçek iPhone'da denenmedi (yalnız Chromium).
+- **Testler:** `is172.spec` (plan odası Akımlar sayfasına götürür; iki yeni test: Akımlar sayfası ve açılan hap), `cilalama.spec` (planda beş bağlantı), `paket8` (sürüm).

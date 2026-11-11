@@ -506,25 +506,39 @@ function konuSahnesiniDoldur(e) {
 // ---------- Göz At: akımlar zaman sırasıyla ----------
 // Göz At'ın dört bölümü; sayfa değişince elmas işaret önceki bölümden kayarak gelir
 const GOZAT_BOLUMLERI = [
-  ['akimlar', 'Akımlar', '#/gozat', ''],
-  ['basyapitlar', 'Başyapıtlar', '#/basyapitlar', 'basyapit-giris'],
-  ['konular', 'Konular', '#/konular', 'konu-giris'],
-  ['zaman', 'Zaman', '#/zaman', 'zaman-giris'],
+  ['akimlar', 'Akımlar', '#/akimlar', 'akimlar-giris', 'kemer', 'salon salon'],
+  ['basyapitlar', 'Başyapıtlar', '#/basyapitlar', 'basyapit-giris', 'sekme-bugun', 'akılda kalanlar'],
+  ['konular', 'Konular', '#/konular', 'konu-giris', 'kitap', 'hikâyeler, temalar'],
+  ['zaman', 'Zaman', '#/zaman', 'zaman-giris', 'zaman-cizgi', 'kim kiminle çağdaş'],
 ];
-let sonGozAtBolumu = 0;
+const HAP_GECIS_MS = 520; // CSS'teki hap-ac / hap-kapan süresinden biraz uzun
+let hapGecis = { i: -1, j: -1, t: 0 };
+let sonGozAtBolumu = -1; // -1: Galeri'nin ana ekranından (ya da dışarıdan) gelindi; hap kayarak değil, belirerek açılır
+// 1.76.3 (Emre tuvalde "C · Açılan hap"ı seçti): alt sayfalarda başlık ile arama aynı satırda; altında dört ikon hapı.
+// Etkin hap genişleyip adını ve alt yazısını gösterir; bölüm değişince eski hap kapanır, yenisi açılır (CSS: hap-ac / hap-kapan).
+// etkin = 'galeri': ana ekran (hap yok; raf, plan ve çark var).
 export function gozAtUst(etkin) {
-  // İş 171: Galeri'nin ana ekranında haplı menü yok (çizimdeki gibi: raflar ve dört kısayol); alt sayfalarda durur
-  if (etkin === 'akimlar')
+  const arama = `<a class="arama-hapi" href="#/ara" data-test="arama-hapi" aria-label="Sanatçı, eser, konu ara">${ikon('ara', 18, 1.6)}<span>${etkin === 'galeri' ? 'Sanatçı, eser, konu ara' : 'Sanatçı, eser ara'}</span></a>`;
+  if (etkin === 'galeri') {
+    sonGozAtBolumu = -1;
     return `${ust('Galeri', '#/', { geriYok: true })}
-    <a class="arama-hapi" href="#/ara" data-test="arama-hapi">${ikon('ara', 18, 1.6)}<span>Sanatçı, eser, konu ara</span></a>`;
+    ${arama}`;
+  }
   const i = GOZAT_BOLUMLERI.findIndex(([id]) => id === etkin);
-  const j = sonGozAtBolumu;
+  // Aynı bölüm yeniden çizilirse ("Yükleniyor…" → içerik) süren geçiş kaldığı yerden devam eder (eksi gecikme);
+  // bitmişse haplar hareketsiz çizilir.
+  const simdi = performance.now();
+  if (sonGozAtBolumu !== i) hapGecis = { i, j: sonGozAtBolumu, t: simdi };
   sonGozAtBolumu = i;
-  return `${ust('Galeri', '#/', { geriYok: true })}
-    <a class="arama-hapi" href="#/ara" data-test="arama-hapi">${ikon('ara', 18, 1.6)}<span>Sanatçı, eser, konu ara</span></a>
-    <nav class="bolumler" aria-label="Göz At bölümleri" style="--i:${i};--j:${j}">${GOZAT_BOLUMLERI.map(
-      ([id, ad, hash, test]) => `<a href="${hash}"${test ? ` data-test="${test}"` : ''}${id === etkin ? ' aria-current="page"' : ''}>${ad}</a>`,
-    ).join('')}</nav>`;
+  const gecen = Math.round(simdi - hapGecis.t);
+  const suruyor = hapGecis.i === i && gecen < HAP_GECIS_MS;
+  const j = suruyor ? hapGecis.j : i;
+  const sinif = !suruyor ? ' sabit' : j < 0 ? ' ilk' : '';
+  return `<div class="gz-ust" data-test="gz-ust">${ust('Galeri', '#/', { geriYok: true, sag: arama })}
+    <nav class="bolumler${sinif}" aria-label="Galeri bölümleri" data-test="gz-bolumler"${suruyor && gecen > 0 ? ` style="--gec:-${gecen}ms"` : ''}>${GOZAT_BOLUMLERI.map(
+      ([id, ad, hash, test, ik, alt], n) =>
+        `<a href="${hash}" data-test="${test}"${id === etkin ? ' aria-current="page"' : ''}${n === j && j !== i ? ' class="kapanan"' : ''}>${ikon(ik, 20, 1.6)}<span class="bolum-yazi"><b>${ad}</b><small>${alt}</small></span></a>`,
+    ).join('')}</nav></div>`;
 }
 
 // İş 172 (Emre tuvalde seçti): Galeri = Başyapıtlar rafı + Müze planı + Akımlar çarkı. Üstteki Akımlar şeridi kalktı
@@ -578,10 +592,10 @@ function planHtml(durumlar, acikSayi) {
         <a class="oda oda-kole" href="#/koleksiyon" data-test="gz-koleksiyon" style="--i:3">
           <b>Senin odan</b><small>${kol ? `Koleksiyon · ${kol} eser` : 'Koleksiyon · beğendiklerin'}</small>
         </a>
-        <button class="oda oda-akim" type="button" data-akimlara data-test="plan-akimlar" style="--i:4">
-          <span class="oda-yazi"><b>Akımlar koridoru</b><small>${durumlar.length} salon · ${acikSayi} açık · çark aşağıda</small></span>
-          <span class="oda-burada" aria-hidden="true"><i></i>Buradasın</span>
-        </button>
+        <a class="oda oda-akim" href="#/akimlar" data-test="plan-akimlar" style="--i:4">
+          <span class="oda-yazi"><b>Akımlar koridoru</b><small>${durumlar.length} salon · ${acikSayi} açık · bütün akımlar</small></span>
+          <span class="oda-git" aria-hidden="true">${ikon('ileri', 18, 1.8)}</span>
+        </a>
       </nav>
     </section>`;
 }
@@ -618,7 +632,7 @@ export function gozAt() {
   const durumlar = akimDurumlari(d.akimlar, d.sanatcilar, islenen());
   gununRengi();
   const acikSayi = durumlar.filter((a) => a.acik).length;
-  ciz(`${gozAtUst('akimlar')}
+  ciz(`${gozAtUst('galeri')}
     <section class="gz-raf" data-gz-raf data-test="gz-raf" aria-label="Başyapıtlar">
       <div class="gz-raf-bas"><h2>Başyapıtlar</h2><a href="#/basyapitlar" data-test="basyapit-giris" data-gz-raf-sayi>Hepsi</a></div>
       <ul class="gz-raf-serit" data-gz-raf-serit></ul>
@@ -628,6 +642,36 @@ export function gozAt() {
   onizlemeleriDoldur();
   rafDoldur();
   planDoldur();
+  carkKur();
+  gorunceOynat();
+}
+
+// 1.76.3: Akımların kendi sayfası (#/akimlar): çark ve altında bütün akımların zaman sırasıyla dizini.
+// "Akımlar" hapı ve Müze planındaki "Akımlar koridoru" odası buraya gelir; çark Galeri'nin ana ekranında da durur.
+export function akimlarSayfasi() {
+  const durumlar = akimDurumlari(d.akimlar, d.sanatcilar, islenen());
+  gununRengi();
+  const acikSayi = durumlar.filter((a) => a.acik).length;
+  ciz(`${gozAtUst('akimlar')}
+    ${carkHtml(durumlar, acikSayi)}
+    <section class="akim-dizin" data-test="akim-dizin" aria-label="Bütün akımlar">
+      <div class="gz-plan-bas"><span class="etiket vurgu">Bütün akımlar</span><small>zaman sırasıyla</small></div>
+      <ol>${durumlar
+        .map((a, i) => {
+          const yy = akimYuzyillari(
+            d.sanatcilar.filter((x) => x.akim === a.ad),
+            { roma: true },
+          );
+          const ic = `<span class="akim-dizin-no" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>
+            <span class="akim-dizin-yazi"><b>${kacis(a.ad)}</b><small>${kacis(yy)} · ${a.acik ? `${a.acikSayisi} / ${a.toplam} sanatçı açık` : `Konu ${bulunmaEki(a.acilacagiKonu)} açılır`}</small></span>
+            ${ikon(a.acik ? 'ileri' : 'kilit', 16, 1.8)}`;
+          return `<li style="--i:${i};--akim:${akimRenk(a.ad)}">${
+            a.acik ? `<a class="akim-dizin-satir" href="#/akim/${encodeURIComponent(a.ad)}" data-test="akim-dizin-satir">${ic}</a>` : `<div class="akim-dizin-satir kilitli" aria-disabled="true" data-test="akim-dizin-satir">${ic}</div>`
+          }</li>`;
+        })
+        .join('')}</ol>
+    </section>`);
+  onizlemeleriDoldur();
   carkKur();
   gorunceOynat();
 }

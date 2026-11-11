@@ -2,7 +2,7 @@
 import { gecisBildir, yonAl } from '../gecis.js';
 import { d, sekmeleriCiz, hataGoster, cizimBaslat, geriDonusBildir, sekmedenMi, bellektenGeriKoy, sekmeKokuMu } from './ortak.js';
 import { anaSayfa, gununSayfasi } from './bugun.js';
-import { gozAt, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuGrubu, konuSayfasi, basyapitSayfasi } from './gozat.js';
+import { gozAt, akimlarSayfasi, akimSayfasi, tumEserler, sanatciSayfasi, karsilastirSayfasi, basyapitListesi, konuListesi, konuGrubu, konuSayfasi, basyapitSayfasi } from './gozat.js';
 import { pekistirMenusu, pekistir, devamEt } from './pekistir.js';
 import { soruTuru } from './soruTurlari.js';
 import { ilerlemeSayfasi } from './ilerleme.js';
@@ -17,6 +17,7 @@ import { akimKarsilastirSayfasi } from './akim.js';
 const rotalar = [
   [/^#?\/?$/, anaSayfa, 'bugun'],
   [/^#\/gozat$/, gozAt, 'gozat'],
+  [/^#\/akimlar$/, akimlarSayfasi, 'gozat'],
   [/^#\/ara$/, aramaSayfasi, 'gozat'],
   [/^#\/zaman$/, zamanSayfasi, 'gozat'],
   [/^#\/akim-karsilastir\/([^/]+)\/([^/]+)$/, akimKarsilastirSayfasi, null],

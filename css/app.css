@@ -3395,48 +3395,7 @@ html.sekmesiz .sekmeler {
   color: var(--ink-3);
 }
 
-/* ---------- Göz At bölümleri: Akımlar · Başyapıtlar · Konular ---------- */
-/* Bölüm sekmeleri: yatay kayan küçük etiketler, seçili olan dolu */
-.bolumler {
-  display: flex;
-  gap: 6px;
-  margin: 4px calc(-1 * var(--yan)) 18px;
-  padding: 0 var(--yan);
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.bolumler::-webkit-scrollbar {
-  display: none;
-}
-.bolumler a {
-  display: flex;
-  align-items: center;
-  flex: none;
-  min-height: 36px;
-  padding: 0 14px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  font: 600 11.5px/1 var(--sans);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink-2);
-  text-decoration: none;
-  transition:
-    background 0.25s ease,
-    color 0.25s ease,
-    border-color 0.25s ease;
-}
-.bolumler a[aria-current='page'] {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: var(--bg);
-  animation: sekme-dol 0.35s cubic-bezier(0.3, 1.3, 0.5, 1);
-}
-@keyframes sekme-dol {
-  from {
-    transform: scale(0.9);
-  }
-}
+/* Göz At bölüm hapları: dosyanın sonunda (1.76.3 · Açılan hap) */
 .bolum-aciklama {
   margin: 0 0 8px;
   font: italic 400 16px/1.4 var(--okuma);
@@ -14042,19 +14001,6 @@ a.harita-seviye:active {
 
 /* ===== İş 50 · Dokunma alanları en az 44 pt (görünüm değişmeden) ===== */
 /* Göz At bölüm sekmeleri: dördü de ekrana sığar ("Zaman" kenarda kesik kalıyordu); dokunma alanı görünmez kenarla 44 pt */
-.bolumler {
-  margin-top: -2px;
-  margin-bottom: 12px;
-  padding-block: 6px;
-  gap: 5px;
-}
-.bolumler a {
-  position: relative;
-  padding: 0 10px;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-}
-.bolumler a::after,
 .secim-hap button::after,
 .akim-konular a::after,
 .akim-komsular a::after,
@@ -14070,9 +14016,6 @@ a.harita-seviye:active {
 .akim-konu-dizin a,
 .akim-karsi-ad {
   position: relative;
-}
-.bolumler a::after {
-  inset: -6px -1px;
 }
 .secim-hap button::after {
   inset: -8px -1px;
@@ -18405,4 +18348,201 @@ html.hizli-acik .hizli-yaprak > h2 {
 :root[data-hareket='kapali'] :is(.oda-isik, .oda-burada i::after, .oda-tondo img, .oda-ikili img),
 :root[data-hareket='sade'] :is(.oda-isik, .oda-burada i::after) {
   animation: none;
+}
+
+/* ===== 1.76.3 · Galeri alt sayfaları: üst bölüm "C · Açılan hap" (Emre tuvalde seçti) =====
+   Başlık ile arama aynı satırda; altında dört ikon hapı. Etkin hap genişler, adını ve alt yazısını gösterir.
+   Sayfa her bölümde yeniden çizildiği için geçiş animasyonla: yeni hap açılır (hap-ac), eskisi kapanır (hap-kapan);
+   ikisi aynı eğriyle aktığından toplam genişlik sabit kalır. */
+.gz-ust {
+  margin-bottom: 18px;
+}
+.gz-ust .ust {
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.gz-ust .ust-yazi {
+  flex: none;
+  padding-top: 0;
+}
+.gz-ust .ust h1 {
+  font-size: 32px;
+}
+.gz-ust .arama-hapi {
+  flex: 1;
+  min-width: 0;
+  min-height: 48px;
+  margin: 0;
+  border-color: var(--border);
+  background: var(--surface);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+.gz-ust .arama-hapi span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bolumler {
+  --hap: 48px;
+  --ara: 8px;
+  --hap-acik: calc(100% - 3 * (var(--hap) + var(--ara)));
+  --hap-egri: cubic-bezier(0.2, 0.8, 0.2, 1);
+  display: flex;
+  gap: var(--ara);
+}
+.bolumler a {
+  position: relative;
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  width: var(--hap);
+  height: var(--hap);
+  padding: 0 13px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-2);
+  text-decoration: none;
+}
+.bolumler a .ikon {
+  flex: none;
+}
+.bolumler a:active {
+  transform: scale(0.96);
+}
+.bolum-yazi {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  white-space: nowrap;
+  opacity: 0;
+}
+.bolum-yazi b {
+  font: 600 14px/1.1 var(--sans);
+  color: var(--ink);
+}
+.bolum-yazi small {
+  overflow: hidden;
+  font: 400 11px/1.2 var(--sans);
+  color: var(--ink-2);
+  text-overflow: ellipsis;
+}
+.bolumler a[aria-current='page'] {
+  width: var(--hap-acik);
+  border-color: rgba(var(--pirinc-rgb), 0.55);
+  background: rgba(var(--pirinc-rgb), 0.14);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  color: var(--ink);
+  animation: hap-ac 0.48s var(--gec, 0ms) var(--hap-egri) both;
+}
+.bolumler a[aria-current='page'] .bolum-yazi {
+  opacity: 1;
+  animation: hap-yazi-gel 0.36s calc(0.14s + var(--gec, 0ms)) ease both;
+}
+.bolumler.ilk a[aria-current='page'],
+.bolumler.sabit a,
+.bolumler.sabit .bolum-yazi {
+  animation: none;
+}
+.bolumler a.kapanan {
+  animation: hap-kapan 0.48s var(--gec, 0ms) var(--hap-egri) both;
+}
+.bolumler a.kapanan .bolum-yazi {
+  animation: hap-yazi-git 0.18s var(--gec, 0ms) ease both;
+}
+@keyframes hap-ac {
+  from {
+    width: var(--hap);
+    border-color: var(--border);
+    background: var(--surface);
+  }
+}
+@keyframes hap-kapan {
+  from {
+    width: var(--hap-acik);
+    border-color: rgba(var(--pirinc-rgb), 0.55);
+    background: rgba(var(--pirinc-rgb), 0.14);
+  }
+}
+@keyframes hap-yazi-gel {
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+}
+@keyframes hap-yazi-git {
+  from {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bolumler a,
+  .bolumler a .bolum-yazi {
+    animation: none !important;
+  }
+}
+:root[data-hareket='kapali'] .bolumler :is(a, .bolum-yazi) {
+  animation: none !important;
+}
+
+/* 1.76.3 · Akımlar sayfası (#/akimlar): çarkın altında bütün akımların dizini */
+.oda-git {
+  display: flex;
+  color: var(--ink-2);
+}
+.akim-dizin {
+  margin-top: 28px;
+}
+.akim-dizin ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--border);
+}
+.akim-dizin-satir {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 60px;
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+a.akim-dizin-satir:active {
+  background: var(--surface);
+}
+.akim-dizin-no {
+  flex: none;
+  width: 22px;
+  font: 500 13px/1 var(--sans);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-3);
+}
+.akim-dizin-yazi {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.akim-dizin-yazi b {
+  font: 500 19px/1.2 var(--serif);
+}
+.akim-dizin-yazi small {
+  font: 400 13px/1.3 var(--sans);
+  color: var(--ink-2);
+}
+.akim-dizin-satir .ikon {
+  flex: none;
+  color: var(--ink-3);
+}
+.akim-dizin-satir.kilitli b {
+  color: var(--ink-3);
 }

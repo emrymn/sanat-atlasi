@@ -59,7 +59,7 @@ test('Hızlı ayarlar: dil dört sekmede de var; perdeye dokununca kapanır; sek
   await expect(dil).toBeHidden();
 });
 
-test('Galeri: Akımlar yalnız bir yerde (çark); müze planının odaları bölümlere götürür', async ({ page }) => {
+test('Galeri: ana ekranda akımlar yalnız çarkta; müze planının odaları bölümlere götürür', async ({ page }) => {
   await page.goto('./#/gozat');
   await expect(page.locator('[data-test="gz-akimlar"]')).toHaveCount(1);
   await expect(page.locator('.gz-akim-serit, .gz-kisayol, ol.zaman')).toHaveCount(0);
@@ -76,10 +76,11 @@ test('Galeri: Akımlar yalnız bir yerde (çark); müze planının odaları böl
   await expect(plan.locator('[data-plan-konu] img')).toBeAttached();
   await expect(plan.locator('[data-plan-kars] img')).toHaveCount(2);
   expect(await page.evaluate(() => document.scrollingElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
-  // Akımlar koridoru çarka indirir
+  // 1.76.3: Akımlar koridoru Akımlar sayfasına götürür (eskiden çarka indirirdi)
   await plan.locator('[data-test="plan-akimlar"]').click();
-  await expect(page.locator('[data-cark-teker]')).toBeInViewport();
-  await page.evaluate(() => window.scrollTo(0, 0));
+  await expect(page).toHaveURL(/#\/akimlar$/);
+  await expect(page.locator('[data-test="gz-akimlar"]')).toHaveCount(1);
+  await page.goto('./#/gozat');
   await plan.locator('[data-test="konu-giris"]').click();
   await expect(page).toHaveURL(/#\/konular$/);
   await page.goto('./#/gozat');
@@ -131,4 +132,72 @@ test('Akımlar çarkı: bütün akımlar tek şeritte; çark çevrilince sırada
   await expect(no).toHaveText('01');
   await cark.locator('a.zaman-kart').first().click();
   await expect(page).toHaveURL(/#\/akim\//);
+});
+
+// ---------- 1.76.3 · Galeri alt sayfalarının üstü (Açılan hap) ve Akımlar sayfası ----------
+test('Akımlar sayfası: hap Galeri ana ekranına değil #/akimlar\'a götürür; çark ve bütün akımların dizini orada', async ({ page }) => {
+  await page.goto('./#/basyapitlar');
+  const haplar = page.locator('.bolumler a');
+  await expect(haplar).toHaveCount(4);
+  await expect(page.locator('.bolumler a[aria-current="page"]')).toHaveAttribute('data-test', 'basyapit-giris');
+  await page.locator('.bolumler [data-test="akimlar-giris"]').click();
+  await expect(page).toHaveURL(/#\/akimlar$/);
+  await expect(page.locator('.bolumler a[aria-current="page"]')).toHaveAttribute('data-test', 'akimlar-giris');
+  await expect(page.locator('#sekmeler a[data-sekme="gozat"]')).toHaveAttribute('aria-current', 'page');
+  // çark burada da çalışır
+  const cark = page.locator('[data-cark]');
+  await expect(cark.locator('.cark-oge').first()).toBeVisible();
+  await expect(cark.locator('[data-cark-no]')).toHaveText('01');
+  // dizin: her akım bir satır; açıklar bağlantı, kilitliler "Konu N'de açılır"
+  const akimSayisi = await page.evaluate(() => window.__atlas.akimlar.length);
+  const satirlar = page.locator('[data-test="akim-dizin-satir"]');
+  await expect(satirlar).toHaveCount(akimSayisi);
+  expect(await page.locator('a[data-test="akim-dizin-satir"]').count()).toBeGreaterThan(0);
+  await expect(page.locator('div[data-test="akim-dizin-satir"]').first()).toContainText(/Konu \d+.* açılır/);
+  for (const k of await page.locator('a[data-test="akim-dizin-satir"]').evaluateAll((l) => l.map((e) => e.getBoundingClientRect().height))) expect(k).toBeGreaterThanOrEqual(44);
+  expect(await page.evaluate(() => document.scrollingElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
+  const ilk = page.locator('a[data-test="akim-dizin-satir"]').first();
+  const ad = await ilk.locator('b').textContent();
+  await ilk.click();
+  await expect(page).toHaveURL(/#\/akim\//);
+  await expect(page.locator('.ust h1')).toHaveText(ad);
+});
+
+test('Açılan hap: etkin bölüm geniş ve adı görünür, ötekiler 48 pt ikon; arama başlığın yanında; ana ekranda hap yok', async ({ page }) => {
+  for (const [adres, test] of [
+    ['./#/akimlar', 'akimlar-giris'],
+    ['./#/basyapitlar', 'basyapit-giris'],
+    ['./#/konular', 'konu-giris'],
+    ['./#/zaman', 'zaman-giris'],
+  ]) {
+    await page.goto(adres);
+    const etkin = page.locator('.bolumler a[aria-current="page"]');
+    await expect(etkin).toHaveAttribute('data-test', test);
+    await etkin.evaluate((el) => Promise.all(el.getAnimations({ subtree: true }).map((x) => x.finished)));
+    const kutular = await page.locator('.bolumler a').evaluateAll((l) => l.map((e) => ({ w: e.getBoundingClientRect().width, h: e.getBoundingClientRect().height, sag: e.getBoundingClientRect().right, etkin: e.hasAttribute('aria-current') })));
+    for (const k of kutular) {
+      expect(k.h).toBeGreaterThanOrEqual(44);
+      expect(k.sag).toBeLessThanOrEqual(390.5);
+      if (k.etkin) expect(k.w).toBeGreaterThan(150);
+      else expect(Math.round(k.w)).toBe(48);
+    }
+    await expect(etkin.locator('.bolum-yazi')).toHaveCSS('opacity', '1');
+    // arama başlıkla aynı satırda
+    const h1 = await page.locator('.gz-ust .ust h1').boundingBox();
+    const ara = await page.locator('.gz-ust [data-test="arama-hapi"]').boundingBox();
+    expect(ara.x).toBeGreaterThan(h1.x + h1.width);
+    expect(Math.abs(ara.y + ara.height / 2 - (h1.y + h1.height / 2))).toBeLessThan(12);
+    expect(ara.height).toBeGreaterThanOrEqual(44);
+  }
+  // bölüm değişince eski hap kapanır, yenisi açılır
+  await page.locator('.bolumler [data-test="konu-giris"]').click();
+  await expect(page).toHaveURL(/#\/konular$/);
+  const yeni = page.locator('.bolumler a[aria-current="page"]');
+  await expect(yeni).toHaveAttribute('data-test', 'konu-giris');
+  await expect.poll(async () => (await yeni.boundingBox()).width).toBeGreaterThan(150);
+  await expect.poll(async () => Math.round((await page.locator('.bolumler [data-test="zaman-giris"]').boundingBox()).width)).toBe(48);
+  await page.goto('./#/gozat');
+  await expect(page.locator('.bolumler')).toHaveCount(0);
+  await expect(page.locator('[data-test="arama-hapi"]')).toBeVisible();
+  await expect(page.locator('[data-test="gz-akimlar"]')).toHaveCount(1);
 });
