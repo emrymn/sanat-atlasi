@@ -17487,3 +17487,12 @@ main[data-hareket='cevap'] .alt-yaprak .sonuc .ikon path {
   z-index: -1;
   background: linear-gradient(180deg, rgba(18, 17, 16, 0.25), rgba(18, 17, 16, 0.72));
 }
+/* cevap yaprağı ekranın dörtte üçünü geçmesin (karıştırma şeridi olan cevapta taşıyordu): Leitner satırı sıkı */
+.kutu-satir {
+  min-height: 36px;
+  margin: 4px 0 0;
+  border-bottom: 0;
+}
+.yaprak-dugmeler .dugme {
+  min-height: 56px;
+}
