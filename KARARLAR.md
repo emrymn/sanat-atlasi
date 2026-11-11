@@ -1877,3 +1877,10 @@ Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişikli
 - **Seviye sonu:** sergi duvarı, yüzde ve salon yolu aynen duruyor; araya durağın sembolü madalyonda eklendi: halka eski yıldızdan yenisine çizilir, sembol "basılır", yeni yıldız sırayla gelir. Roma rakamlı mühür önerisi sembolle değiştirildi.
 - **Gezginin kendiliğinden yürümesi eklenmedi:** İş 90/92'de Emre "sürekli yürümesin, bir seviyeye bastığında yürüsün" demişti; bu davranış korunuyor. Haritaya dönünce ilerleyen şey durağın halkası ve yıldızı.
 - Testler: `tasarim_b.spec.js` (madalyon, etiket, merdiven), `harita.spec.js`'e seviye sonu madalyonu.
+
+### Grup 11, 12, 14 · Çalış, Galeri, rozetler
+
+- **Çalış:** bugünkü tur kartı aynen (Emre'nin İş 97'de seçtiği tablo düğmesi korunuyor); altındaki satırlar "Başka turlar" 2×2 ızgarası oldu: Hatalarım (varsa, tam genişlik), Döneme göre (sayfadaki salonlara kaydırır), Bölüm turu, Konu turu. `data-test`'ler aynı.
+- **Galeri:** en üstte Başyapıtlar rafı (10 kart; hikâyesi olan, sonra rehberli incelemesi olan, sonra açık sanatçılar önce), altında iki kısayol: Karşılaştır (en çok karıştırılan ikili; yoksa açık ilk iki akım) ve Koleksiyon. Öneride dört haplı üst menünün kalkması vardı; hapları bıraktım: Başyapıtlar, Konular ve Zaman'a tek dokunuşla götürüyorlar ve testler onlara bağlı. Rafın yeri baştan ayrılır (sonradan açılınca sayfa kayıyordu).
+- **Rozetler** (`eserRozetleri`, `rozetleriEkle`): hikâyesi olan esere kitap, rehberli incelemesi olana büyüteç. Galeri rafında adıyla ("Hikâye", "6 ayrıntı"), başyapıt listesinde ve sanatçı sayfasındaki eser şeridinde yalnız ikon. Görüntüleyicide düğmeler zaten adlıydı.
+- Testler: `tasarim_b.spec.js`'e Galeri/Çalış testi; `cilalama.spec` İş 73 testi ilk akım kartını ekrana kaydırır (artık rafın altında); `soru_turlari.spec` soruyu başlık adıyla arar.

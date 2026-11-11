@@ -16978,3 +16978,244 @@ main[data-hareket='cevap'] .alt-yaprak .sonuc .ikon path {
 :root[data-hareket='kapali'] .st-madalyon .dolu {
   transition: none;
 }
+
+/* ===== İş 171 · Çalış: "Başka turlar" 2×2 ızgara ===== */
+.tur-izgara {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.tur-izgara .hatalar-satir {
+  margin: 0;
+  min-height: 76px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--ink);
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+.tur-izgara .hatalar-satir:active {
+  transform: scale(0.97);
+}
+.tur-izgara .hatalar-satir[data-test='hatalar-satir'] {
+  grid-column: 1 / -1;
+}
+.tur-izgara .hatalar-satir > .ikon {
+  display: none;
+}
+.tur-izgara .hatalar-satir .metin b {
+  font: 500 16px/1.2 var(--sans);
+}
+.tur-izgara .hatalar-satir .metin span {
+  font-size: 13px;
+}
+.tur-izgara .hatalar-sayi {
+  color: var(--pirinc);
+}
+
+/* ===== İş 171 · Galeri: Başyapıtlar rafı, kısayollar, hikâye ve inceleme rozetleri ===== */
+.gz-raf {
+  margin: 18px calc(-1 * var(--yan)) 0;
+}
+.gz-raf-bas {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 var(--yan);
+}
+.gz-raf-bas h2 {
+  margin: 0;
+  font: 400 26px/1.1 var(--serif);
+}
+.gz-raf-bas a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--pirinc);
+  font: 500 14px/1 var(--sans);
+  text-decoration: none;
+}
+.gz-raf-serit {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 4px var(--yan) 8px;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.gz-raf-serit::-webkit-scrollbar {
+  display: none;
+}
+.gz-raf-serit li {
+  flex: none;
+  scroll-snap-align: start;
+  animation: gz-raf-gel 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) calc(var(--i) * 70ms) both;
+}
+@keyframes gz-raf-gel {
+  from {
+    opacity: 0;
+    transform: translateX(36px);
+  }
+}
+.gz-raf-kart {
+  position: relative;
+  display: block;
+  width: 208px;
+  height: 268px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--surface);
+  color: #ebe5da;
+  text-decoration: none;
+  transition: transform 0.12s ease;
+}
+.gz-raf-kart:active {
+  transform: scale(0.97);
+}
+.gz-raf-kart img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gz-raf-kart::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(18, 17, 16, 0) 45%, rgba(18, 17, 16, 0.9) 100%);
+}
+.gz-raf-yazi {
+  position: absolute;
+  z-index: 1;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.gz-raf-yazi b {
+  font: 400 22px/1.1 var(--serif);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.gz-raf-yazi small {
+  font: 400 13px/1.3 var(--sans);
+  color: #cfc7bc;
+}
+.eser-rozetler {
+  position: absolute;
+  z-index: 2;
+  left: 6px;
+  bottom: 6px;
+  display: flex;
+  gap: 4px;
+  pointer-events: none;
+}
+.eser-rozetler.uzun {
+  left: 12px;
+  top: 12px;
+  bottom: auto;
+  gap: 6px;
+}
+.eser-rozet {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(18, 17, 16, 0.74);
+  color: #ebe5da;
+  font: 500 12px/1 var(--sans);
+}
+.eser-rozet .ikon {
+  color: #c9a45c;
+}
+.eser-rozetler.uzun .eser-rozet {
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 14px;
+}
+.galeri-eser,
+.bsy-cerceve {
+  position: relative;
+}
+.gz-kisayol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.gz-kisayol a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 64px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.12s ease;
+}
+.gz-kisayol a:only-child {
+  grid-column: 1 / -1;
+}
+.gz-kisayol a:active {
+  transform: scale(0.97);
+}
+.gz-kisayol .ikon {
+  flex: none;
+  color: var(--pirinc);
+}
+.gz-kisayol span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.gz-kisayol b {
+  font: 500 16px/1.2 var(--sans);
+}
+.gz-kisayol small {
+  font: 400 13px/1.3 var(--sans);
+  color: var(--ink-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gz-raf-serit li {
+    animation: none;
+  }
+}
+:root[data-hareket='kapali'] .gz-raf-serit li {
+  animation: none;
+}
+.tur-izgara .hatalar-sayi {
+  flex: none;
+  min-width: 26px;
+  font-size: 24px;
+}
+.gz-raf-serit {
+  min-height: 280px;
+  box-sizing: border-box;
+}
+.gz-raf-bas a:empty {
+  visibility: hidden;
+}

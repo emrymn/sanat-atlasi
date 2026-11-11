@@ -46,7 +46,7 @@ import {
   hikayeBulucu,
   sekmeRozetiBagla,
 } from './ortak.js';
-import { ayrintiVeri, ayrintiBulucu } from './gozat.js';
+import { ayrintiVeri, ayrintiBulucu, rozetleriEkle } from './gozat.js';
 import { SURUM } from '../surum.js';
 import { gosterilecekler, yenilikYazisi } from '../yenilikler.js';
 import { egimBaslat } from '../egim.js';
@@ -420,6 +420,7 @@ export async function gununSayfasi(id) {
   }
   galeri.insertAdjacentHTML('beforebegin', seritUst(s, eserler.length));
   galeri.innerHTML = eserSeridi(eserler, 'galeri-eser', 'data-galeri-eser');
+  rozetleriEkle(galeri.querySelectorAll('[data-galeri-eser]'), eserler); // İş 171: hikâye ve inceleme rozetleri
   // onclick: aynı galeriye ikinci dinleyici eklenmez (iki görüntüleyici üst üste açılıyordu)
   galeri.onclick = (ev) => {
     const b = ev.target.closest('[data-galeri-eser]');

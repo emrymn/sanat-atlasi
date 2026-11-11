@@ -219,8 +219,7 @@ export function pekistirMenusu(secenek) {
       durumlar.length
         ? `${turSahnesi(karisik)}
     ${devamKarti()}
-    ${hatalarSatiri()}
-    ${soruTurlariHtml()}
+    ${soruTurlariHtml(hatalarSatiri())}
     <section class="bolum pk-salonlar">
       <div class="pk-bolum-bas"><span class="etiket vurgu">Döneme göre</span><h2 class="pk-baslik">Salonlar</h2></div>
       <p class="kucuk ikincil" style="margin:0">${seviyeAciklamasi()}</p>
@@ -300,7 +299,7 @@ function hatalarSatiri() {
 }
 
 function bosAcik() {
-  return `<div class="bos-kutu"><p>Henüz açık sanatçı yok.</p><p class="kucuk ikincil"><a href="#/ilerleme">Defter</a>’de işlediğin konuları işaretle.</p></div>`;
+  return `<div class="bos-kutu"><p>Henüz açık sanatçı yok.</p><p class="kucuk ikincil"><a href="#/ilerleme">Ben</a> sayfasında işlediğin konuları işaretle.</p></div>`;
 }
 
 // Bir sanatçının en az bir eseri var mı? (kurs eseri varsa beklemeden evet)
@@ -1709,6 +1708,12 @@ function seviyeRozeti(akim) {
 
 // Ekranın olay dinleyicileri; app.js özgün sırayla bir kez bağlar
 export function olaylariBagla() {
+  // İş 171: "Döneme göre" karosu sayfanın altındaki salonlara kaydırır
+  ekran.addEventListener('click', (e) => {
+    if (!e.target.closest('[data-salonlara]')) return;
+    const hedef = ekran.querySelector('.pk-salonlar');
+    if (hedef) hedef.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  });
   ekran.addEventListener('click', (e) => {
     const p = e.target.closest('[data-ipucu].kesik');
     if (p) ipucuCevir(p);

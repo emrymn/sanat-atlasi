@@ -74,3 +74,30 @@ test('harita: sembol aynen kalır, çevresinde madalyon; sıradaki durakta nabı
   expect((await basla.boundingBox()).height).toBeGreaterThanOrEqual(56);
   await expect(basla).toHaveAttribute('href', /#\/pekistir\/bolum\/\d+-\d+\/kolay$/);
 });
+
+test('Galeri: Başyapıtlar rafı rozetli, Karşılaştır ve Koleksiyon kısayolları; Çalış: Başka turlar ızgarası', async ({ page }) => {
+  await page.goto('./#/gozat');
+  const raf = page.locator('[data-test="gz-raf"]');
+  await expect(raf).toBeVisible();
+  const kartlar = raf.locator('[data-test="gz-raf-kart"]');
+  await expect(kartlar.first()).toBeVisible();
+  expect(await kartlar.count()).toBeGreaterThan(3);
+  // hikâyesi ya da incelemesi olanlar önde ve rozetli
+  await expect(kartlar.first().locator('[data-test="eser-rozetler"] .eser-rozet').first()).toBeVisible();
+  await expect(raf.locator('[data-gz-raf-sayi]')).toHaveText(/\d+ eser/);
+  for (const t of ['gz-karsilastir', 'gz-koleksiyon']) {
+    const k = await page.locator(`[data-test="${t}"]`).boundingBox();
+    expect(k.height).toBeGreaterThanOrEqual(44);
+  }
+  await kartlar.first().click();
+  await expect(page).toHaveURL(/#\/basyapit\//);
+  expect(await page.evaluate(() => document.scrollingElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
+  // Çalış
+  await page.goto('./#/pekistir');
+  const izgara = page.locator('[data-test="ek-turlar"] .tur-izgara');
+  await expect(izgara.locator('[data-test="donem-turu"]')).toBeVisible();
+  await expect(izgara.locator('[data-test="bolum-turu"]')).toBeVisible();
+  await expect(izgara.locator('[data-test="konu-turu"]')).toBeVisible();
+  await izgara.locator('[data-test="donem-turu"]').click();
+  await expect(page.locator('.pk-salonlar')).toBeInViewport();
+});

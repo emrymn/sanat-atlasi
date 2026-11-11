@@ -838,6 +838,7 @@ test.describe('İş 73: yutulan dokunuş', () => {
     await page.goto('./#/gozat');
     const kart = page.locator('a.zaman-kart').first();
     await kart.waitFor();
+    await kart.scrollIntoViewIfNeeded(); // İş 171: akımlar Başyapıtlar rafının altında, ilk ekranın dışında başlar
     // Safari'nin ilk tıklamayı yutmasının taklidi
     await page.evaluate(() => {
       window.__yutuldu = 0;
@@ -856,6 +857,7 @@ test.describe('İş 73: yutulan dokunuş', () => {
     // normal dokunuş: tek gezinme
     await page.goto('./#/gozat');
     await kart.waitFor();
+    await kart.scrollIntoViewIfNeeded();
     const once = await page.evaluate(() => history.length);
     const b2 = await kart.boundingBox();
     await page.touchscreen.tap(b2.x + b2.width / 2, b2.y + b2.height / 2);
