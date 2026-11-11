@@ -21,5 +21,8 @@ jobs:
       - run: npm ci
       # birim testleri tarayıcıya ihtiyaç duymaz: Playwright kurulamasa da sonuç versin
       - run: npm run test:unit
-      - run: npx playwright install --with-deps chromium
+      # Ubuntu aynası bazen çözülemiyor (2026-11): eksik kalan yalnız yazı tipi paketleri; sistem kitaplıkları
+      # makinede hazır. Bağımlılık kurulamazsa tarayıcı tek başına kurulur, testler yine çalışır.
+      - run: npx playwright install chromium
+      - run: timeout 300 npx playwright install-deps chromium || echo "::warning::Playwright bağımlılıkları kurulamadı (apt aynası); hazır kitaplıklarla devam"
       - run: npm run test:e2e
