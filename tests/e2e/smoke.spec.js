@@ -145,7 +145,7 @@ test('yalnızca resim: heykeltıraş ve mimarlar ile resimsiz akımlar görünme
   await expect(page.getByRole('heading', { name: 'Galeri' })).toBeVisible();
   await expect(page.getByText('Antik Yunan ve Roma')).toHaveCount(0);
   await expect(page.getByText('Romanesk', { exact: true })).toHaveCount(0);
-  await page.getByRole('link').filter({ hasText: 'Erken Rönesans' }).click();
+  await page.getByRole('link').filter({ hasText: 'Erken Rönesans' }).first().click(); // İş 171: akım hem şeritte hem listede
   // akım sayfasındaki eser şeridi de sanatçı adını yazar ve geç yüklenir: yalnız sanatçı satırına bak
   await expect(page.getByRole('link', { name: /^Masaccio/ })).toBeVisible();
   // dönemin hikâyesi (akim_bilgi metni) bu adları anlatı içinde geçirebilir; sanatçı ve eser olarak hiçbir yerde yoklar

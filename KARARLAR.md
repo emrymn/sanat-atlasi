@@ -1904,3 +1904,9 @@ Emre `tasarim-B/ONERILER.md`'deki 17 maddenin hepsini onayladı; tek değişikli
 - **Kırpılamayanlar:** kemerli ya da oval eserler (Parmigianino, El Greco, Salviati, Giotto'nun üçgen tepesi) köşelerdeki boşluk resmin biçiminden; Seurat'nın mavi kenarı ressamın kendi boyadığı çerçeve; Picasso'nun kâğıdı eserin kendisi.
 - Temas sayfası: `tasarim-B/ana-ekran-denetim.html` (üç boy, düzeltilenler pirinç çerçeveli).
 - Testler: `ayar_gorunum.spec` (düğme yok, ana ekran yürüyüş eserini ve Türkçe adını gösterir, "Sırayla ortala" yürüyüş eserlerini açar), `safari.spec` (düğme listesinden çıktı), `yuruyus.test.mjs` (denetim dosyasının geçerliliği ve odak önceliği).
+
+### Galeri ve sekme çubuğu çizimdeki gibi (Emre: "bu kısımları yapmamışsın")
+
+- **Galeri ana ekranı** `oneri-07-galeri` çizimine göre: haplı üst menü kalktı; arama, Başyapıtlar rafı ("107 eser" bağlantısı Başyapıtlar sayfasına), Akımlar şeridi (küçük resimli kartlar, kilitliler soluk ve "Konu N'de açılır"; "5 / 29 açık" aşağıdaki tam listeye kaydırır), dört kısayol: Konular, Zaman, Karşılaştır, Koleksiyon. Altında eski akım koridoru aynen. Haplar Başyapıtlar, Konular ve Zaman sayfalarında duruyor. `data-test`'ler (`basyapit-giris`, `konu-giris`, `zaman-giris`) yeni bağlantılara taşındı.
+- **Sekme çubuğu** çizimdeki ikonlarla (çerçeve, patika, galeri duvarı, kart destesi); kayan hap görünmez, etkin sekmenin ikonu pirinç, yazısı açık ve kalın.
+- Testler: `cilalama.spec` dokunma alanı testi Galeri'de dört kısayolu, hapları Başyapıtlar sayfasında ölçer; İş 89 testi (bölüm şeridi geçişsiz) Başyapıtlar sayfasından başlar.

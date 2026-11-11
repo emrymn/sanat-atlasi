@@ -75,11 +75,13 @@ const YOLLAR = {
   pekistir:
     '<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M22 12.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/><path d="M22 17.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/>',
   ilerleme: '<path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>',
-  // sekme çubuğu: atölye nesneleri — şövale, pusula, çerçeve, palet, eskiz defteri
-  'sekme-bugun': '<rect x="5" y="3" width="14" height="10" rx="1"/><path d="M12 1.5V3"/><path d="M12 13v8"/><path d="m8.5 21 2-8"/><path d="m15.5 21-2-8"/><path d="m8 10 2.5-3 2 2 1.5-1.5L16 10"/>',
-  'sekme-harita': '<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/><path d="M12 3v1.5M12 19.5V21M3 12h1.5M19.5 12H21"/>',
-  'sekme-gozat': '<rect x="3" y="3.5" width="18" height="17" rx="1"/><rect x="6.5" y="7" width="11" height="10"/><path d="m6.5 15 3-3 2.5 2.5 2-2 3.5 3.5"/>',
-  'sekme-pekistir': '<path d="M12 3a9 9 0 1 0 0 18c1 0 1.6-.7 1.6-1.6 0-.4-.2-.8-.4-1.1-.3-.3-.5-.7-.5-1.1 0-.9.7-1.6 1.6-1.6H16a5 5 0 0 0 5-5C21 6.3 17 3 12 3z"/><circle cx="7.5" cy="11.5" r="1"/><circle cx="9.5" cy="7.5" r="1"/><circle cx="14.5" cy="7.5" r="1"/>',
+  // sekme çubuğu (İş 171, Tasarım B çizimi): çerçeve, patika, galeri duvarı, kart destesi
+  'zaman-cizgi': '<path d="M3 12h18M7 8v8M12 6v12M17 8v8"/>',
+  kalp: '<path d="M12 20s-7-4.3-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5c0 5.2-7 9.500-7 9.500z"/>',
+  'sekme-bugun': '<rect x="4" y="3.5" width="16" height="17" rx="1.5"/><rect x="7.5" y="7" width="9" height="10"/>',
+  'sekme-harita': '<path d="M6 20c0-4 12-4 12-8s-12-4-12-8"/><circle cx="6" cy="20" r="1.4"/><circle cx="6" cy="4" r="1.4"/>',
+  'sekme-gozat': '<rect x="3.5" y="4" width="7.5" height="9"/><rect x="13.5" y="4" width="7" height="5.5"/><rect x="13.5" y="12" width="7" height="8"/><rect x="3.5" y="15.5" width="7.5" height="4.5"/>',
+  'sekme-pekistir': '<rect x="7" y="4" width="12" height="16" rx="1.5"/><path d="M7 7.5 4 8.3l2.6 10.7"/>',
   'sekme-ilerleme': '<rect x="5" y="4" width="14" height="17" rx="1.5"/><path d="M8.5 2.5v3M12 2.5v3M15.5 2.5v3"/><path d="M8 16c1.4-3.2 2.8-3.2 3.8 0s2.6 1.2 4.2-3"/>',
   // yolculuk haritası: katlanmış harita ve üstünde yol
   harita: '<path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5"/><path d="M15 6.5V20"/>',

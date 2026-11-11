@@ -34,8 +34,18 @@ async function kenarKaydir(page, context) {
 
 test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en az 44 pt; dört sekme ekrana sığar', async ({ page, context }) => {
   await agiHazirla(context);
+  // İş 171: Galeri'nin ana ekranında haplı menü yerine dört kısayol; haplar alt sayfalarda (Başyapıtlar, Konular, Zaman)
   await page.goto('./#/gozat');
+  await expect(page.locator('.gz-kisayol a')).toHaveCount(4);
+  for (const a of await page.locator('.gz-kisayol a').all()) {
+    const k = await a.boundingBox();
+    expect(k.height).toBeGreaterThanOrEqual(44);
+    expect(k.x + k.width).toBeLessThanOrEqual(390.5);
+  }
+  await page.goto('./#/basyapitlar');
   await expect(page.locator('.bolumler a')).toHaveCount(4);
+  // giriş animasyonu (küçükten büyüme) bitmeden ölçülünce 42 px çıkıyordu
+  await expect.poll(async () => Math.min(...(await dokunmaBoylari(page, '.bolumler a')))).toBeGreaterThanOrEqual(44);
   for (const b of await dokunmaBoylari(page, '.bolumler a')) expect(b).toBeGreaterThanOrEqual(44);
   // "Zaman" sekmesi kenardan kesilmez
   const son = await page.locator('.bolumler a').last().boundingBox();
@@ -1133,8 +1143,9 @@ test('İş 83/100: günün tablosu çözünürlük, ekrana oturuş ve bilinirlik
 test('İş 89: bölüm şeridi geçişsiz, yığında yer değiştirir', async ({ page, context }) => {
   await agiHazirla(context);
   await context.addInitScript(() => (window.__atlasGecis = true));
-  await page.goto('./#/gozat');
-  await page.locator('a.zaman-kart').first().waitFor();
+  // İş 171: bölüm şeridi (haplar) Galeri'nin alt sayfalarında
+  await page.goto('./#/basyapitlar');
+  await page.locator('[data-test="basyapit-listesi"]').first().waitFor();
   await page.waitForTimeout(500);
   await page.locator('.bolumler a[href="#/konular"]').click();
   await expect(page).toHaveURL(/#\/konular$/);

@@ -513,6 +513,10 @@ const GOZAT_BOLUMLERI = [
 ];
 let sonGozAtBolumu = 0;
 export function gozAtUst(etkin) {
+  // İş 171: Galeri'nin ana ekranında haplı menü yok (çizimdeki gibi: raflar ve dört kısayol); alt sayfalarda durur
+  if (etkin === 'akimlar')
+    return `${ust('Galeri', '#/', { geriYok: true })}
+    <a class="arama-hapi" href="#/ara" data-test="arama-hapi">${ikon('ara', 18, 1.6)}<span>Sanatçı, eser, konu ara</span></a>`;
   const i = GOZAT_BOLUMLERI.findIndex(([id]) => id === etkin);
   const j = sonGozAtBolumu;
   sonGozAtBolumu = i;
@@ -529,12 +533,23 @@ export function gozAt() {
   const acikSayi = durumlar.filter((a) => a.acik).length;
   ciz(`${gozAtUst('akimlar')}
     <section class="gz-raf" data-gz-raf data-test="gz-raf" aria-label="Başyapıtlar">
-      <div class="gz-raf-bas"><h2>Başyapıtlar</h2><a href="#/basyapitlar" data-gz-raf-sayi></a></div>
+      <div class="gz-raf-bas"><h2>Başyapıtlar</h2><a href="#/basyapitlar" data-test="basyapit-giris" data-gz-raf-sayi>Hepsi</a></div>
       <ul class="gz-raf-serit" data-gz-raf-serit></ul>
     </section>
-    <nav class="gz-kisayol" aria-label="Kısayollar">
+    <section class="gz-akimlar" aria-label="Akımlar" data-test="gz-akimlar">
+      <div class="gz-raf-bas"><h2>Akımlar</h2><button type="button" data-akimlara>${acikSayi} / ${durumlar.length} açık</button></div>
+      <ul class="gz-akim-serit">${durumlar
+        .map((a) => {
+          const ic = `<span class="gz-akim-resim" data-gz-akim="${kacis(a.ad)}"></span><b>${kacis(a.ad)}</b>${a.acik ? '' : `<small>Konu ${bulunmaEki(a.acilacagiKonu)} açılır</small>`}`;
+          return `<li>${a.acik ? `<a class="gz-akim" href="#/akim/${encodeURIComponent(a.ad)}">${ic}</a>` : `<span class="gz-akim kilitli">${ic}</span>`}</li>`;
+        })
+        .join('')}</ul>
+    </section>
+    <nav class="gz-kisayol dortlu" aria-label="Kısayollar">
+      <a href="#/konular" data-test="konu-giris">${ikon('isaret', 20, 1.6)}<span><b>Konular</b></span></a>
+      <a href="#/zaman" data-test="zaman-giris">${ikon('zaman-cizgi', 20, 1.6)}<span><b>Zaman</b></span></a>
       ${karsilastirKarosu()}
-      <a href="#/koleksiyon" data-test="gz-koleksiyon">${ikon('isaret', 20, 1.6)}<span><b>Koleksiyon</b><small>${(d.ilerleme.koleksiyon || []).length} eser</small></span></a>
+      <a href="#/koleksiyon" data-test="gz-koleksiyon">${ikon('kalp', 20, 1.6)}<span><b>Koleksiyon</b></span></a>
     </nav>
     <section class="gz-perde" aria-label="Galeri girişi">
       <div class="gz-serit" aria-hidden="true"><div class="gz-serit-ic" data-gz-serit></div></div>
@@ -577,7 +592,7 @@ function karsilastirKarosu() {
     href = akimKarsilastirmaAdresi(acik[0].ad, acik[1].ad);
     alt = `${kacis(acik[0].ad)} ↔ ${kacis(acik[1].ad)}`;
   }
-  return `<a href="${href}" data-test="gz-karsilastir">${ikon('karsilastir', 20, 1.6)}<span><b>Karşılaştır</b><small>${alt}</small></span></a>`;
+  return `<a href="${href}" data-test="gz-karsilastir" aria-label="Karşılaştır: ${alt}">${ikon('karsilastir', 20, 1.6)}<span><b>Karşılaştır</b></span></a>`;
 }
 
 // İş 171: Galeri'nin en üstünde Başyapıtlar rafı: hikâyesi ya da rehberli incelemesi olanlar önce, açık sanatçılar önce
@@ -636,6 +651,9 @@ function onizlemeleriDoldur() {
         const fon = el.closest('.zaman-kart')?.querySelector('[data-zaman-fon]');
         // İş 137: kartı kaplayan tablo yüzün çevresinden kırpılır (önce hep ortadan: dikey tablolarda baş kesiliyordu)
         if (fon && eserler[0]) odakliGorsel(fon, eserler[0], 800);
+        // İş 171: üstteki Akımlar şeridindeki küçük kart da aynı eseri gösterir
+        const serit = ekran.querySelector(`[data-gz-akim="${CSS.escape(el.dataset.onizleme)}"]`);
+        if (serit && eserler[0]) serit.innerHTML = kucukGorsel(eserler[0], 400, { odak: true });
         if (acikMi) seritIcin.push(...eserler.slice(0, 2));
       }),
     );
