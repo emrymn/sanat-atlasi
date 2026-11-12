@@ -717,7 +717,7 @@ function carkHtml(durumlar, acikSayi) {
             <span class="onizleme" data-onizleme="${kacis(a.ad)}"></span>
             ${a.acik ? `<span class="cark-gir" aria-hidden="true">Salona gir${ikon('ileri', 16, 1.8)}</span>` : ''}
           </span>`;
-          return `<li class="cark-oge${a.acik ? '' : ' kilitli'}" style="--i:${i};--akim:${akimRenk(a.ad)}">${
+          return `<li class="cark-oge${a.acik ? '' : ' kilitli'}" style="--i:${i};--akim:${akimRenk(a.ad)}" data-donem="${bolgeBul(d.akimSira[a.ad] ?? i).id}">${
             a.acik ? `<a class="zaman-kart" href="#/akim/${encodeURIComponent(a.ad)}">${ic}</a>` : `<div class="zaman-kart" aria-disabled="true">${ic}</div>`
           }</li>`;
         })
@@ -828,6 +828,14 @@ function carkKur() {
       sonNo = sira;
       carkSon = sira;
       no.textContent = String(sira + 1).padStart(2, '0');
+      // 1.77.0: arka plandaki desen seçili akımın döneminin sembolleri (Emre: "her dönemin kendine uygun sembolleriyle")
+      const donem = ogeler[sira] && ogeler[sira].dataset.donem;
+      if (donem && kok.dataset.donem !== donem) {
+        kok.dataset.donem = donem;
+        kok.classList.remove('desen-gel');
+        void kok.offsetWidth;
+        kok.classList.add('desen-gel');
+      }
     }
   };
   const git = (i, yumusak = true) => {

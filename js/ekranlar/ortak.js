@@ -12,11 +12,12 @@ import { ilerlemeKaydet } from '../depo.js';
 import { kaynakYazisi } from '../goruntuleyici.js';
 import { ikon } from '../tasarim.js';
 import { adParcala } from '../adlar.js';
-import { paletGetir, renkTemasi, hexten, hsl, hsldenHex } from '../renk.js';
+import { paletGetir, tonlariGetir, renkTemasi, hexten, hsl, hsldenHex } from '../renk.js';
 import { taninmaMetni, eserNotu } from '../karsilastir.js';
 import { koleksiyondaMi, koleksiyonDegistir } from '../koleksiyon.js';
 import { eseriBildir } from '../bildirim.js';
 import { hizliAyarKur } from './hizliAyar.js';
+import { gunduzPaleti, paletDegiskenleri, PALET_DEGISKENLERI, HAZIR_PALETLER, YEDEK_PALET, VARSAYILAN_GUNDUZ_RENGI } from '../gunduzRenk.js';
 
 // "Bilmiyorum" cevabının değeri (Ö4): hiçbir sanatçı kimliği ya da akım adıyla çakışmaz
 export const BILMIYORUM = '?';
@@ -311,7 +312,7 @@ function renkleriYaz(palet) {
   d.palet = palet;
   const st = document.documentElement.style;
   golgeyiYaz(palet);
-  const t = palet ? renkTemasi(palet, TEMA_RENK[d.ilerleme.ayarlar.tema] || TEMA_RENK.gece) : null;
+  const t = palet ? renkTemasi(palet, temaZemini()) : null;
   for (const [k, v] of Object.entries(VURGU_DEGISKENLERI)) {
     if (t) st.setProperty(v, t[k]);
     else st.removeProperty(v);
@@ -349,6 +350,7 @@ export function renkSabitle(palet) {
 
 // Sekme ekranları (Göz At, İlerleme, Ayarlar, Pekiştir menüsü) Günün sanatçısının rengini taşır
 export function gununRengi() {
+  gunduzRenginiUygula();
   const s = d.harita.get(gununId());
   if (!s) return ekranRengi(null, null);
   return ekranRengi(sanatcininGununEseri(s), akimRenk(s.akim));
@@ -391,10 +393,94 @@ export function temaUygula() {
   document.documentElement.setAttribute('data-hareket', d.ilerleme.ayarlar.hareket || 'tam');
   document.documentElement.setAttribute('data-yazi', d.ilerleme.ayarlar.yazi || 'standart');
   document.documentElement.toggleAttribute('data-gelistirici', !!d.ilerleme.gelistirici); // İş 150: elle odak düğmesi
+  gunduzRenginiUygula(false);
+  temaRenginiYaz();
+}
+
+// tarayıcının üst çubuğu ve vurgu renginin okunur hali temanın (renkli Gündüz'de paletin) zeminine göre
+function temaRenginiYaz() {
   const m = document.querySelector('meta[name="theme-color"]');
-  if (m) m.setAttribute('content', TEMA_RENK[t] || TEMA_RENK.gece);
-  // vurgu renginin okunur hali temanın zeminine göre yeniden hesaplanır
+  if (m) m.setAttribute('content', temaZemini());
   if (d.palet !== undefined) renkleriYaz(d.palet);
+}
+
+// ---------- 1.77.0 · renkli Gündüz: zemin, kartlar, mürekkep, sekme çubuğu ve çark bir paletten (js/gunduzRenk.js) ----------
+// Otomatikte palet günün tablosundan üretilir ve günün sanatçısıyla birlikte saklanır: sonraki açılışlarda beklemeden
+// gelir. Günün sanatçısı değişince (ertesi gün ya da "başka sanatçı") önce eldeki renkle açılır, tablonun paleti
+// gelince yumuşakça geçer.
+const GUNDUZ_ANAHTAR = 'sanat-atlasi:gunduz-renk';
+const GUNDUZ_SURUM = 3;
+let gunduzZemin = null;
+let gunduzIstegi = 0;
+function temaZemini() {
+  const t = d.ilerleme && d.ilerleme.ayarlar.tema;
+  return (t === 'gunduz' && gunduzZemin) || TEMA_RENK[t] || TEMA_RENK.gece;
+}
+function gunduzOnbellegi() {
+  try {
+    const o = JSON.parse(localStorage.getItem(GUNDUZ_ANAHTAR));
+    return o && o.surum === GUNDUZ_SURUM && o.palet && typeof o.palet.bg === 'string' ? o : null;
+  } catch {
+    return null;
+  }
+}
+function gunduzYaz(p, secim) {
+  const kok = document.documentElement;
+  if (!p) {
+    for (const k of PALET_DEGISKENLERI) kok.style.removeProperty(k);
+    kok.removeAttribute('data-gunduz');
+    gunduzZemin = null;
+    return;
+  }
+  for (const [k, v] of Object.entries(paletDegiskenleri(p))) kok.style.setProperty(k, v);
+  kok.setAttribute('data-gunduz', secim);
+  gunduzZemin = p.bg;
+}
+// renkYaz: palet değişince tarayıcı çubuğunu ve vurguyu da yeniden yaz (temaUygula zaten yazar)
+export function gunduzRenginiUygula(renkYaz = true) {
+  if (!d.ilerleme) return;
+  const a = d.ilerleme.ayarlar;
+  const secim = a.gunduzRenk || VARSAYILAN_GUNDUZ_RENGI;
+  const onceki = gunduzZemin;
+  const bitir = () => renkYaz && gunduzZemin !== onceki && temaRenginiYaz();
+  if (a.tema !== 'gunduz' || secim !== 'otomatik') {
+    gunduzIstegi++;
+    gunduzYaz(a.tema === 'gunduz' ? gunduzPaleti(secim) : null, secim);
+    return bitir();
+  }
+  const id = d.harita.size ? gununId() : null;
+  const o = gunduzOnbellegi();
+  gunduzYaz((o && o.palet) || HAZIR_PALETLER[YEDEK_PALET], secim);
+  bitir();
+  if (o && o.id === id) return;
+  const s = id && d.harita.get(id);
+  if (!s) return;
+  const sira = ++gunduzIstegi;
+  Promise.resolve(sanatcininGununEseri(s))
+    .then((e) => {
+      const g = e && (secilenGorsel(e, kotuler()) || e.gorseller[0]);
+      return tonlariGetir(paletUrl(g)).catch(() => null);
+    })
+    .then((resim) => {
+      // görsel açılmadıysa (çevrimdışı, CORS) saklanmaz: sonraki açılışta yeniden denenir
+      if (!resim || sira !== gunduzIstegi) return;
+      const p = gunduzPaleti('otomatik', resim);
+      try {
+        localStorage.setItem(GUNDUZ_ANAHTAR, JSON.stringify({ surum: GUNDUZ_SURUM, id, tarih: bugun(), palet: p }));
+      } catch {}
+      const b = d.ilerleme.ayarlar;
+      if (b.tema !== 'gunduz' || (b.gunduzRenk || VARSAYILAN_GUNDUZ_RENGI) !== 'otomatik') return;
+      const once = gunduzZemin;
+      gunduzYaz(p, 'otomatik');
+      if (gunduzZemin !== once) temaRenginiYaz();
+    })
+    .catch(() => {});
+}
+// Ayarlar'daki örnek daireler için: otomatikte bugünkü palet (henüz yoksa yedek)
+export function gunduzOrnekPaleti(secim) {
+  if (secim !== 'otomatik') return gunduzPaleti(secim);
+  const o = gunduzOnbellegi();
+  return (o && o.palet) || HAZIR_PALETLER[YEDEK_PALET];
 }
 
 // ---------- sekme çubuğu ----------

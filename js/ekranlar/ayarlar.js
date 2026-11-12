@@ -8,7 +8,8 @@ import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { yedekMetni, yedekCoz, yedekYarimOturum, TEMALAR, gelistiriciAc, gelistiriciKapat, kayitKilidiniAc, HAREKETLER, HAREKET_AD, YAZILAR, YAZI_AD } from '../depo.js';
 import { idbKoy } from '../idb.js';
 import { kayitGecerliMi } from '../devam.js';
-import { acikListe, bugun, d, gununRengi, ciz, ust, TEMA_AD, ekran, kaydet, temaUygula, gununId, gununHavuzu, gununResimleriYukle, kotuler } from './ortak.js';
+import { acikListe, bugun, d, gununRengi, ciz, ust, TEMA_AD, ekran, kaydet, temaUygula, gununId, gununHavuzu, gununResimleriYukle, kotuler, gunduzOrnekPaleti } from './ortak.js';
+import { GUNDUZ_RENKLERI, GUNDUZ_RENK_AD, VARSAYILAN_GUNDUZ_RENGI } from '../gunduzRenk.js';
 import { baskaSanatci } from '../gunun.js';
 import { bilinenAd } from '../adlar.js';
 import { yedekTarihiYaz } from './bugun.js';
@@ -52,6 +53,22 @@ export function rozetiGuncelle(kapaniyor = false) {
   return rozetYaz(n);
 }
 
+// 1.77.0 · Gündüz rengi: günün resminden (otomatik) ya da hazır pigment paletleri; seçmek temayı Gündüz yapar
+function renkOrnegi(secim) {
+  const p = gunduzOrnekPaleti(secim);
+  if (!p) return '<i class="renk-ornek notr" aria-hidden="true"></i>';
+  return `<i class="renk-ornek" aria-hidden="true" style="background:linear-gradient(135deg, ${p.band} 0 50%, ${p.altin} 50% 100%);box-shadow:0 0 0 2px ${p.surface}, 0 0 0 3px ${p.border}"></i>`;
+}
+function gunduzRengiBolumu(a) {
+  const secili = a.gunduzRenk || VARSAYILAN_GUNDUZ_RENGI;
+  return `<div class="ayar"><b id="gunduz-renk-etiket">Gündüz rengi</b>
+        <div class="parcali gunduz-renkleri" role="radiogroup" aria-labelledby="gunduz-renk-etiket" data-test="ayar-gunduz-renk">
+          ${GUNDUZ_RENKLERI.map((r) => `<label><input type="radio" name="gunduzRenk" value="${r}" ${secili === r ? 'checked' : ''}><span>${renkOrnegi(r)}${GUNDUZ_RENK_AD[r]}</span></label>`).join('')}
+        </div>
+        <p>Gündüz temasında zemin, kartlar, sekme çubuğu ve çarkın rengi. Günün resmi: renkler her gün o günün tablosundan seçilir. Nötr kâğıt: eski sade Gündüz.</p>
+      </div>`;
+}
+
 export function ayarlarSayfasi() {
   const a = d.ilerleme.ayarlar;
   gununRengi();
@@ -70,6 +87,7 @@ export function ayarlarSayfasi() {
           ${TEMALAR.map((t) => `<label><input type="radio" name="tema" value="${t}" ${a.tema === t ? 'checked' : ''}><span>${TEMA_AD[t]}</span></label>`).join('')}
         </div>
       </div>
+      ${gunduzRengiBolumu(a)}
       <div class="ayar"><b id="yazi-etiket">Yazı boyutu</b>
         <div class="parcali" role="radiogroup" aria-labelledby="yazi-etiket" data-test="ayar-yazi">
           ${YAZILAR.map((t) => `<label><input type="radio" name="yazi" value="${t}" ${a.yazi === t ? 'checked' : ''}><span>${YAZI_AD[t]}</span></label>`).join('')}
@@ -712,6 +730,15 @@ export function olaylariBagla() {
     }
     if (e.target.name === 'tema' && TEMALAR.includes(e.target.value)) {
       d.ilerleme.ayarlar.tema = e.target.value;
+      kaydet();
+      temaUygula();
+    }
+    // Gündüz rengi seçmek temayı da Gündüz yapar (Gece'deyken renk seçilince boşa gitmesin)
+    if (e.target.name === 'gunduzRenk' && GUNDUZ_RENKLERI.includes(e.target.value)) {
+      d.ilerleme.ayarlar.gunduzRenk = e.target.value;
+      d.ilerleme.ayarlar.tema = 'gunduz';
+      const g = ekran.querySelector('input[name="tema"][value="gunduz"]');
+      if (g) g.checked = true;
       kaydet();
       temaUygula();
     }

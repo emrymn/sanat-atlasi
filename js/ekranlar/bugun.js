@@ -26,6 +26,7 @@ import {
   gununId,
   ciz,
   ekranRengi,
+  gunduzRenginiUygula,
   enBilinen,
   kaydet,
   git,
@@ -163,6 +164,7 @@ export function seritUst(s, n, baslik = 'Eserleri') {
 
 export function anaSayfa() {
   d.yigin = ['#/'];
+  gunduzRenginiUygula(); // 1.77.0: otomatik Gündüz paleti günün tablosundan (sanatçı değiştiyse yeniden)
   const g = gunlukGuncelle(d.ilerleme, bugun());
   const gs = d.harita.get(gununId());
   const tekrar = kacis(new Date().toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' }));
