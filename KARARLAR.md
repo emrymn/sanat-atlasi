@@ -1980,3 +1980,19 @@ Emre: "gündüz teması çok beyaz ve parlak … bu bir resim tarihi uygulaması
 - **Önceki karar değişti:** İş 140'ta zemin ve panellerin tablodan boyanması bilerek alınmamıştı (Emre o zaman sabit nötr kâğıt istedi). Emre bu kez açıkça istedi; eski hali "Nötr kâğıt" olarak duruyor.
 - **Hazır paletler** tasarım tuvalinden; kontrast testinde düşenler koyulaştırıldı (Lapis ve Safran'da pirinç, Bakır yeşilinde bant).
 - **Galeri'nin arkası** (Emre: "galerinin arkasındaki beyazlığa da bir fikir üret"): tuvalde üç fikir gösterildi (salon duvarı, tablonun bulanık ışığı, damask duvar kumaşı). Emre C'yi seçti: "c güzel oldu her dönemin kendine uygun sembolleriyle arka planı yap". Çarkın bölümü (`.cark`) ince bir duvar kumaşı gibi döşenir: haritanın 9 döneminin (js/harita.js `BOLGELER`) her birinin kendi sembolleri (Orta Çağ: Gotik dörtyaprak ve haç; Rönesans: daire içinde kare ve Floransa zambağı; Barok: akantus kıvrımı ve inci; Klasisizm ve Geç Barok: defne çelengi; Rokoko ve Neoklasisizm: deniz kabuğu; Romantizmden Realizme: hilal, yıldız, dalga; Empresyonizm: fırça vuruşları ve ışık noktaları; Post-Empresyonizm ve Sembolizm: sarmal ve göz; Modern: daire, üçgen, kare). Desenler 96×96 SVG karolar, CSS maskesi olarak; renk paletin bandından (Nötr ve Gece'de mürekkep), Gündüz'de %13, Gece'de %7 opaklık. Çark dönüp dönem değişince `data-donem` güncellenir, desen 0,6 sn'de belirir. Karolar tasarım tuvalinde küçük bir üreticiyle hesaplandı (hilal ve sarmal geometrisi), çıktısı css/app.css'te sabit. Gece'de de var (soluk); Emre istemezse yalnız Gündüz'e alınır.
+
+### 1.77.1 · Haritada "Tanış" çalışıyor; kilit dik
+
+Emre: "haritadaki tanış kısmı çalışmıyor, bir de kilit sembolü ters duruyor".
+- **Tanış:** durak penceresindeki Tanış (`#/pekistir/bolum/<id>/tanitim`) sorusuz bir tur açıyor, kuyruğu boş. `kartCiz` önce "tur bitti mi?" diye baktığı için tanışma hiç gösterilmeden özete, özet de tanıtımda haritaya geri dönüyordu. Tanışma denetimi bitti denetiminin önüne alındı; tanışma bitince tanıtım işaretlenir ve harita açılır. Kolay/Orta'dan önceki ilk tanışma zaten soru kuyruğu dolu olduğu için çalışıyordu.
+- **Kilit:** madalyonun ilerleme halkasını tepeden başlatmak için `.durak-halka svg` -90° döndürülüyordu; seçici içteki kilit ikonunu da yakalıyordu, kilit yan yatıyordu (ve 22 px'e geriliyordu). Seçici `.durak-halka > svg` oldu.
+- Yeni `tests/e2e/harita_tanis.spec.js` (iki test, düzeltmeden önce ikisi de düşüyordu). Yalnız düzeltme olduğu için Yenilikler'e satır eklenmedi.
+- **Temsil dışı eser:** Emre, Gotik çarkının kemerindeki Bonaventura Berlinghieri'nin Aziz Francesco panosu (Pescia, 1235; Q3947103) için: "bu resmi kullanma hiçbir yerde". Yeni `js/temsil.js` (`TEMSIL_DISI`, `temsilOlabilir`). Bu liste temsil eden her seçicide uygulanır:
+  - `enBilinen`: çarkın kemeri ve önizlemeleri, haritadaki durak resmi, Zaman, sayfa rengi;
+  - `gununEseri`: günün resmi;
+  - `enBilinenEserler`: akım sayfası;
+  - `kapakSec`: konu kapakları;
+  - Galeri'nin başyapıt yükleyicisi: Başyapıtlar, öne çıkanlar ve vitrin.
+
+  `basyapitlariAl` veri doğrulaması olduğu için ona dokunulmadı. Eser, Berlinghieri'nin eser listesinde ve pekiştirmede kalır; o da kaldırılsın derse listeye bir satır yeter. Gotik'in kemerine şimdi Berlinghieri'nin Uffizi diptiği geliyor. Testler: `tests/unit/temsil.test.mjs` ve `tests/e2e/temsil.spec.js` (e2e düzeltmeden önce düşüyordu).
+- **Gotik'in kemer resmi elle:** Diptik de beğenilmedi (Emre: "gotik resmi bi daha değiştir"). `js/temsil.js` `AKIM_KAPAK` ile akımın çarktaki kemer resmi QID ile seçilebiliyor. Gotik'e Duccio'nun Rucellai Madonnası (Q948745, Uffizi, 1285) kondu: dönemin en bilinen panosu, üçgen alınlığı kemere oturuyor. Seçilen eser önizleme çerçevelerinde de başa geçiyor. Simone Martini'nin Annunciation'ı zaten haritadaki durakta kullanıldığı için seçilmedi. Öteki akımlar eskisi gibi: en eski açık sanatçının en bilinen eseri.

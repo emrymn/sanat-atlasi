@@ -1,5 +1,6 @@
 // Resimlerdeki konular ve hikâyeleri (data/ikonografi.json). Bkz. KARARLAR.md "İş 9".
 // Konu: { id, ad, ozgun, tur, ozet, kaynak, hikaye: [paragraf], tanima: [işaret], eserler: [[anahtar, sanatçıId], …] }
+import { temsilOlabilir } from './temsil.js';
 
 export const TUR_AD = {
   eski_ahit: 'Eski Ahit',
@@ -50,7 +51,7 @@ export function eserKonusu(e, h = harita) {
 export function kapakSec(eserler) {
   let en = null;
   for (const e of eserler) {
-    if (!e) continue;
+    if (!e || !temsilOlabilir(e)) continue;
     if (!en || (e.sl || 0) > (en.sl || 0) || ((e.sl || 0) === (en.sl || 0) && e.kurs && !en.kurs)) en = e;
   }
   return en;

@@ -7,6 +7,7 @@ import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { akimYuzyillari, ikon, yuzyil, roma } from '../tasarim.js';
 import { adParcala, bilinenAd } from '../adlar.js';
 import { karsilastirmaAdresi, benzerSanatcilar } from '../karsilastir.js';
+import { temsilOlabilir, AKIM_KAPAK } from '../temsil.js';
 import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir, oneCikanlar } from '../basyapit.js';
 import { ayrintilariAl, ayrintiBul, eserinAyrintisi } from '../ayrinti.js';
 import { hikayeHtml } from '../hikaye.js';
@@ -60,7 +61,7 @@ export function basyapitVeri() {
   if (!basyapitSozu)
     basyapitSozu = jsonGetir('data/basyapitlar.json')
       .catch(() => null)
-      .then((j) => basyapitlariAl(j, (id) => d.harita.has(id)));
+      .then((j) => basyapitlariAl(j, (id) => d.harita.has(id)).filter(temsilOlabilir)); // 1.77.1: temsil dışı eserler Başyapıtlar'da yok
   return basyapitSozu;
 }
 
@@ -918,13 +919,20 @@ function onizlemeleriDoldur() {
   const k = islenen();
   for (const el of ekran.querySelectorAll('[data-onizleme]')) {
     // Eseri olmayan (ör. mimar/heykeltıraş) sanatçılar atlanır; ilk 3 eserli sanatçı gösterilir
-    const uyeler = d.sanatcilar
-      .filter((x) => x.akim === el.dataset.onizleme)
+    const hepsi = d.sanatcilar.filter((x) => x.akim === el.dataset.onizleme);
+    const uyeler = [...hepsi]
       .sort((a, b) => Number(k.has(b.konu)) - Number(k.has(a.konu)) || (a.dogum ?? 0) - (b.dogum ?? 0))
       .slice(0, 8);
+    // 1.77.1: kemer resmi elle seçildiyse (AKIM_KAPAK) o eser başa geçer; sanatçısı ilk 8'de değilse de yüklenir
+    const kapakQid = AKIM_KAPAK[el.dataset.onizleme];
+    const kapakSozu = kapakQid
+      ? Promise.all(hepsi.map((x) => sanatciEserleri(x).catch(() => []))).then((l) => l.flat().find((e) => e.qid === kapakQid) || null)
+      : Promise.resolve(null);
     // İş 143: sayfa belleğe alınmış olsa da (yükleme sürerken başka sekmeye geçildi) doldurulur; dönünce boş kalmasın
-    Promise.all(uyeler.map((x) => sanatciEserleri(x).catch(() => []))).then((listeler) => {
-      const eserler = listeler.map(enBilinen).filter(Boolean).slice(0, 3);
+    Promise.all([Promise.all(uyeler.map((x) => sanatciEserleri(x).catch(() => []))), kapakSozu]).then(([listeler, kapak]) => {
+      let eserler = listeler.map(enBilinen).filter(Boolean);
+      if (kapak) eserler = [kapak, ...eserler.filter((e) => e.sid !== kapak.sid)];
+      eserler = eserler.slice(0, 3);
       el.innerHTML = eserler.map((e, i) => cerceve(e, { genislik: 400, tembel: true }).replace('class="cerceve"', `class="cerceve" style="--j:${i}"`)).join('');
       const fon = el.closest('.zaman-kart')?.querySelector('[data-zaman-fon]');
       // İş 137: kartı kaplayan tablo yüzün çevresinden kırpılır (önce hep ortadan: dikey tablolarda baş kesiliyordu)

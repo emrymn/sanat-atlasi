@@ -1,5 +1,6 @@
 // Akım kimlik kartı ve akım karşılaştırması (K3). Saf fonksiyonlar (birim testli). Bkz. KARARLAR.md "İş 19".
 import { hexten, hexe } from './renk.js';
+import { temsilOlabilir } from './temsil.js';
 
 // Akımın ortalama paleti: eserlerin paletleri birleştirilir, birbirine yakın renkler tek renkte toplanır.
 // paletler: [[{ renk: '#rrggbb', pay }], …] (her eser kendi içinde pay toplamı ~1); dönen: en ağır `adet` renk
@@ -38,7 +39,7 @@ export function tipikKonular(konular, uyeIdler, adet = 4) {
 export function enBilinenEserler(listeler, adet = 4) {
   const ilk = [];
   for (const { s, eserler } of listeler) {
-    const e = (eserler || []).filter((x) => x.gorseller && x.gorseller.length).sort((a, b) => (b.sl || 0) - (a.sl || 0))[0];
+    const e = (eserler || []).filter((x) => x.gorseller && x.gorseller.length && temsilOlabilir(x)).sort((a, b) => (b.sl || 0) - (a.sl || 0))[0];
     if (e) ilk.push({ s, e });
   }
   return ilk.sort((a, b) => (b.e.sl || 0) - (a.e.sl || 0)).slice(0, adet);
