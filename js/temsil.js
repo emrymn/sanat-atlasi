@@ -11,3 +11,10 @@ export function temsilOlabilir(e) {
   const a = String(e.anahtar || '').replace(/^q:/, '');
   return !TEMSIL_DISI.has(e.qid) && !TEMSIL_DISI.has(a);
 }
+
+// Akımın çarktaki kemer resmi elle seçildiyse (QID). Yoksa en eski açık sanatçıların en bilinen eseri.
+// Emre (1.77.1): Gotik'te önce Berlinghieri'nin Aziz Francesco panosu, sonra diptiği geliyordu; "gotik resmi bi daha
+// değiştir": Duccio'nun Rucellai Madonnası (Uffizi, 1285), dönemin en bilinen panosu, üçgen alınlığı kemere oturuyor.
+export const AKIM_KAPAK = {
+  Gotik: 'Q948745',
+};
