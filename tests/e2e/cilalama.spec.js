@@ -39,6 +39,8 @@ test('dokunma alanları: Göz At sekmeleri, Pekiştir ve İlerleme hapları en a
   await expect(page.locator('.bolumler a')).toHaveCount(4);
   await page.goto('./#/basyapitlar');
   await expect(page.locator('.bolumler a')).toHaveCount(4);
+  // 1.76.4: sayfa "Yükleniyor…" → içerik diye yeniden çizilir; içerik gelince ölç
+  await expect(page.locator('[data-test="by-donemler"]')).toBeVisible();
   // giriş animasyonu (küçükten büyüme) bitmeden ölçülünce 42 px çıkıyordu
   await expect.poll(async () => Math.min(...(await dokunmaBoylari(page, '.bolumler a')))).toBeGreaterThanOrEqual(44);
   for (const b of await dokunmaBoylari(page, '.bolumler a')) expect(b).toBeGreaterThanOrEqual(44);
@@ -325,21 +327,35 @@ test.describe('görüntüleyici dokunuş ve yatay ekran', () => {
   });
 });
 
-// İş 55: Konular kısaldı — her grupta en çok 6 konu ve "hepsi"; grubun bütün konuları kendi sayfasında
-test('Konular: her grupta en çok 6 kart ve "hepsi" bağlantısı; grup sayfası bütün konuları gösterir, geri listeye döner', async ({ page, context }) => {
+// İş 55 → 1.76.4: Konular sekmeli ızgara — "hepsi" bağlantısı ve ayrı grup sayfası kalktı; her grubun bütün konuları
+// kendi sekmesinde, sekme değişince adres #/konular/<tür> olur ve üst bölüm (haplar) yerinde kalır
+test('Konular: her grup bir sekme; sekme o grubun bütün konularını gösterir, ilki büyük; grup adresi doğrudan da açılır', async ({ page, context }) => {
   await agiHazirla(context);
   await page.goto('./#/konular');
-  const izgaralar = page.locator('[data-test="konu-listesi"]');
-  await expect(izgaralar.first()).toBeVisible();
-  for (const n of await izgaralar.evaluateAll((l) => l.map((u) => u.querySelectorAll('.konu-kart').length))) expect(n).toBeLessThanOrEqual(6);
-  const hepsi = page.locator('[data-test="konu-hepsi"]').first();
-  const toplam = Number((await hepsi.innerText()).match(/(\d+) konunun hepsi/)[1]);
-  await hepsi.click();
+  const sekmeler = page.locator('[data-test="konu-grup-serit"] a');
+  await expect(sekmeler.first()).toBeVisible();
+  expect(await sekmeler.count()).toBeGreaterThan(1);
+  await expect(page.locator('[data-test="konu-grup-serit"] a[aria-current="page"]')).toHaveCount(1);
+  await expect(page.locator('[data-test="konu-hepsi"]')).toHaveCount(0);
+  await expect(page.locator('[data-test="konu-listesi"]')).toHaveCount(1);
+  // sekmedeki sayı = o grubun kart sayısı; ilk kart (en çok işlenen) iki sütun genişliğinde
+  const ikinci = sekmeler.nth(1);
+  const toplam = Number(await ikinci.locator('small').innerText());
+  await ikinci.click();
   await expect(page).toHaveURL(/#\/konular\/[a-z_]+$/);
   await expect(page.locator('.konu-kart')).toHaveCount(toplam);
   await expect(page.locator('[data-test="konu-grup-serit"] a[aria-current="page"]')).toHaveCount(1);
-  await page.locator('.ust .geri').click();
+  await expect(page.locator('[data-test="gz-bolumler"] a[aria-current="page"]')).toHaveAttribute('data-test', 'konu-giris');
+  const kutular = await page.locator('[data-test="konu-listesi"] > li').evaluateAll((l) => l.slice(0, 2).map((e) => e.getBoundingClientRect().width));
+  expect(kutular[0]).toBeGreaterThan(kutular[1] * 1.8);
+  // kartlar çoktan aza sıralı
+  const sayilar = await page.locator('[data-test="kn-resimler"]').evaluateAll((l) => l.map((e) => Number(e.textContent)));
+  expect(sayilar).toEqual([...sayilar].sort((x, y) => y - x));
+  // Konular hapı son bakılan grubu açar
+  await page.locator('[data-test="gz-bolumler"] [data-test="basyapit-giris"]').click();
+  await page.locator('[data-test="gz-bolumler"] [data-test="konu-giris"]').click();
   await expect(page).toHaveURL(/#\/konular$/);
+  await expect(page.locator('.konu-kart')).toHaveCount(toplam);
 });
 
 // İş 56: Başyapıtlar dönemlere göre; Defter'de cevap verilmemiş akımlar tek bölümde
@@ -1149,14 +1165,15 @@ test('İş 89: bölüm şeridi geçişsiz, yığında yer değiştirir', async (
   expect(await page.locator('.sayfa-katman').count()).toBe(0);
   expect(await page.locator('#uygulama').evaluate((e) => e.getAnimations().length)).toBe(0);
   expect(await page.evaluate(() => window.__atlas.yigin)).toEqual(['#/konular']);
-  // seçilisiz grup şeridinden grup sayfasına: yığına eklenir (geri Konular'a), geçişsiz
-  await page.locator('.konu-grup-serit a').first().click();
-  await expect(page).toHaveURL(/#\/konular\/.+/);
-  expect(await page.locator('.sayfa-katman').count()).toBe(0);
-  expect(await page.evaluate(() => window.__atlas.yigin.length)).toBe(2);
-  // grup sayfasında öbür grup: yer değiştirir
+  // 1.76.4: konu grupları da kardeş bölüm (sekme): yığında yer değiştirir, geçişsiz
   const diger = page.locator('.konu-grup-serit a:not([aria-current])').first();
   const hedef = await diger.getAttribute('href');
   await diger.click();
-  await expect.poll(() => page.evaluate(() => window.__atlas.yigin)).toEqual(['#/konular', hedef]);
+  await expect(page).toHaveURL(/#\/konular\/.+/);
+  expect(await page.locator('.sayfa-katman').count()).toBe(0);
+  await expect.poll(() => page.evaluate(() => window.__atlas.yigin)).toEqual([hedef]);
+  const ucuncu = page.locator('.konu-grup-serit a:not([aria-current])').last();
+  const hedef2 = await ucuncu.getAttribute('href');
+  await ucuncu.click();
+  await expect.poll(() => page.evaluate(() => window.__atlas.yigin)).toEqual([hedef2]);
 });

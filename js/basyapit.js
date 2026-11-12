@@ -41,3 +41,21 @@ export function sanatcininBasyapitlari(liste, sanatciId) {
 export function eserEslestir(eserler, kayit) {
   return eserler.find((e) => (e.qid && e.qid === kayit.anahtar) || `${kayit.sanatci}|${e.baslik}` === kayit.anahtar) || null;
 }
+
+// Başyapıtlar sayfasının sahnesi (1.76.4): öne çıkan en çok `adet` eser. Hikâyesi olanlar (hikayeli: anahtar kümesi) başta;
+// kalan yerler açık sanatçıların eserlerinden (hiç yoksa hepsinden), listeye yayılarak ve her gün (gun) başka bir
+// yerden başlayarak dolar. Aynı eser iki kez gelmez.
+export function oneCikanlar(l, hikayeli, acikMi = () => true, gun = Math.floor(Date.now() / 864e5), adet = 4) {
+  const n = Math.min(adet, l.length);
+  const one = l.filter((b) => hikayeli.has(b.anahtar)).slice(0, n);
+  const acik = l.filter((b) => !one.includes(b) && acikMi(b));
+  const kalan = acik.length ? acik : l.filter((b) => !one.includes(b));
+  const adim = Math.max(1, Math.floor(kalan.length / adet));
+  for (let i = 0; one.length < n && i < kalan.length; i++) {
+    const b = kalan[(gun + i * adim) % kalan.length];
+    if (!one.includes(b)) one.push(b);
+  }
+  for (const b of kalan) if (one.length < n && !one.includes(b)) one.push(b);
+  for (const b of l) if (one.length < n && !one.includes(b)) one.push(b);
+  return one;
+}
