@@ -82,6 +82,7 @@ const KABUK_DOSYALARI = [
   'js/seviye.js',
   'js/surum.js',
   'js/tasarim.js',
+  'js/temsil.js',
   'js/titresim.js',
   'js/surukleKapat.js',
   'js/hataGunlugu.js',

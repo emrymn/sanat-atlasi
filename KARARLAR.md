@@ -1987,3 +1987,11 @@ Emre: "haritadaki tanış kısmı çalışmıyor, bir de kilit sembolü ters dur
 - **Tanış:** durak penceresindeki Tanış (`#/pekistir/bolum/<id>/tanitim`) sorusuz bir tur açıyor, kuyruğu boş. `kartCiz` önce "tur bitti mi?" diye baktığı için tanışma hiç gösterilmeden özete, özet de tanıtımda haritaya geri dönüyordu. Tanışma denetimi bitti denetiminin önüne alındı; tanışma bitince tanıtım işaretlenir ve harita açılır. Kolay/Orta'dan önceki ilk tanışma zaten soru kuyruğu dolu olduğu için çalışıyordu.
 - **Kilit:** madalyonun ilerleme halkasını tepeden başlatmak için `.durak-halka svg` -90° döndürülüyordu; seçici içteki kilit ikonunu da yakalıyordu, kilit yan yatıyordu (ve 22 px'e geriliyordu). Seçici `.durak-halka > svg` oldu.
 - Yeni `tests/e2e/harita_tanis.spec.js` (iki test, düzeltmeden önce ikisi de düşüyordu). Yalnız düzeltme olduğu için Yenilikler'e satır eklenmedi.
+- **Temsil dışı eser:** Emre, Gotik çarkının kemerindeki Bonaventura Berlinghieri'nin Aziz Francesco panosu (Pescia, 1235; Q3947103) için: "bu resmi kullanma hiçbir yerde". Yeni `js/temsil.js` (`TEMSIL_DISI`, `temsilOlabilir`). Bu liste temsil eden her seçicide uygulanır:
+  - `enBilinen`: çarkın kemeri ve önizlemeleri, haritadaki durak resmi, Zaman, sayfa rengi;
+  - `gununEseri`: günün resmi;
+  - `enBilinenEserler`: akım sayfası;
+  - `kapakSec`: konu kapakları;
+  - Galeri'nin başyapıt yükleyicisi: Başyapıtlar, öne çıkanlar ve vitrin.
+
+  `basyapitlariAl` veri doğrulaması olduğu için ona dokunulmadı. Eser, Berlinghieri'nin eser listesinde ve pekiştirmede kalır; o da kaldırılsın derse listeye bir satır yeter. Gotik'in kemerine şimdi Berlinghieri'nin Uffizi diptiği geliyor. Testler: `tests/unit/temsil.test.mjs` ve `tests/e2e/temsil.spec.js` (e2e düzeltmeden önce düşüyordu).

@@ -7,6 +7,7 @@ import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { akimYuzyillari, ikon, yuzyil, roma } from '../tasarim.js';
 import { adParcala, bilinenAd } from '../adlar.js';
 import { karsilastirmaAdresi, benzerSanatcilar } from '../karsilastir.js';
+import { temsilOlabilir } from '../temsil.js';
 import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir, oneCikanlar } from '../basyapit.js';
 import { ayrintilariAl, ayrintiBul, eserinAyrintisi } from '../ayrinti.js';
 import { hikayeHtml } from '../hikaye.js';
@@ -60,7 +61,7 @@ export function basyapitVeri() {
   if (!basyapitSozu)
     basyapitSozu = jsonGetir('data/basyapitlar.json')
       .catch(() => null)
-      .then((j) => basyapitlariAl(j, (id) => d.harita.has(id)));
+      .then((j) => basyapitlariAl(j, (id) => d.harita.has(id)).filter(temsilOlabilir)); // 1.77.1: temsil dışı eserler Başyapıtlar'da yok
   return basyapitSozu;
 }
 

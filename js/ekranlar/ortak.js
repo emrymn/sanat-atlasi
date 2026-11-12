@@ -5,6 +5,7 @@ import { kacis, yillarYaz, rastgeleYap } from '../yardimci.js';
 import { acikSanatcilar, islenenKume } from '../kilit.js';
 import { bugunStr } from '../leitner.js';
 import { sanatciEserleri, eserBaslik, eserAdiBul } from '../eserler.js';
+import { temsilOlabilir } from '../temsil.js';
 import { gorselUrl, gorselYedek, secilenGorsel, paletUrl, gorselSayfasi, gorselOrani, devasaUrl, yerelUrl, gorselOdagi, odaklariAyarla, elleOdaklariAyarla, gununResimleriniAyarla, seciliGununResmi, gorselAdi, yuruyusOdaklariAyarla } from '../gorsel.js';
 import { gununSanatcisi, yuruyusHavuzu } from '../gunun.js';
 import { hikayeleriAl, eserinHikayesi } from '../hikaye.js';
@@ -846,6 +847,9 @@ export function gununEseri(eserler) {
   // İş 157: Emre'nin elle seçtiği günün resmi (data/gunun_resimleri.json ya da bu cihazda seçilen) her şeyin önünde
   const secili = seciliGununResmi(eserler);
   if (secili) return secili;
+  // 1.77.1: temsil dışı eser günün resmi olmaz (sanatçının başka eseri yoksa yine o)
+  const temsil = eserler.filter(temsilOlabilir);
+  if (temsil.length) eserler = temsil;
   // İş 83: Tuval'de tablo ekranı kenardan kenara kaplar (kırpılarak). İş 100 (Emre: "hem en kaliteli çözünürlükte hem
   // en telefona uygun hem de en popüler eser olsun"; "en popüler olmasına gerek yok, bunlara göre oranla, en iyisini
   // seç"): eskiden önce çözünürlük, sonra en çok %30 kırpılanlar arasında en bilineni, yoksa en az kırpılanı; dikey
@@ -937,7 +941,7 @@ export function gununId() {
 // Sanatçıyı temsil eden eser: uygun görseli olanlar arasında Wikidata site bağlantısı en çok olan.
 // Hiçbiri uygun değilse (ör. yalnızca sergi salonu fotoğrafları) null — temsilî görsel gösterilmez.
 export function enBilinen(eserler) {
-  const uygun = eserler.filter((e) => secilenGorsel(e, kotuler()) && e.pekistirme !== false);
+  const uygun = eserler.filter((e) => temsilOlabilir(e) && secilenGorsel(e, kotuler()) && e.pekistirme !== false);
   if (!uygun.length) return null;
   return uygun.reduce((en, e) => ((e.sl || 0) > (en.sl || 0) ? e : en), uygun[0]);
 }
