@@ -82,16 +82,17 @@ test('K2: Zaman yıl kadranı; cetvel yılı değiştirir, o yıl hayatta olanla
   await expect(yil).toHaveText('1514');
   await expect(cetvel).toHaveAttribute('aria-valuenow', '1514');
   // kilitliler bağlantı değil; açık sanatçı sanatçı sayfasına götürür
-  await cetvel.evaluate((el) => (el.scrollLeft = (1600 - 1250) * 4));
-  await expect(yil).toHaveText('1600');
+  await cetvel.evaluate((el) => (el.scrollLeft = (1505 - 1250) * 4));
+  await expect(yil).toHaveText('1505');
   expect(await page.locator('.zm-satir.kilitli').count()).toBeGreaterThan(0);
   const acik = page.locator('a.zm-satir').first();
   const href = await acik.getAttribute('href');
   await acik.click();
   await expect(page).toHaveURL(new RegExp(href.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '$'));
   // geri dönünce yıl hatırlanır; sayfa yatay kaymaz
-  await page.goBack();
-  await expect(yil).toHaveText('1600');
+  await page.locator('[data-geri]').first().click();
+  await expect(page).toHaveURL(/#\/zaman$/);
+  await expect(yil).toHaveText('1505');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
 });
 
