@@ -9,6 +9,7 @@ import { koleksiyonDogrula } from './koleksiyon.js';
 import { gorulenDogrula } from './harita.js';
 import { bolumlerDogrula } from './bolum.js';
 import { bildirimlerDogrula } from './bildirim.js';
+import { GUNDUZ_RENKLERI, VARSAYILAN_GUNDUZ_RENGI } from './gunduzRenk.js';
 
 export const ANAHTAR = 'sanat-atlasi:ilerleme';
 // 2: "Gece galerisi" teması varsayılan oldu (eski varsayılan Sepya ve kaldırılan Koyu bir kez Gece'ye geçer)
@@ -27,7 +28,7 @@ export function varsayilanIlerleme(islenen = []) {
   return {
     surum: SURUM,
     islenen: islenen.slice(),
-    ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA, tanisma: true, rozet: false, egim: true, titresim: true, hareket: 'tam', yazi: 'standart' },
+    ayarlar: { gunlukKart: 20, tema: VARSAYILAN_TEMA, tanisma: true, rozet: false, egim: true, titresim: true, hareket: 'tam', yazi: 'standart', gunduzRenk: VARSAYILAN_GUNDUZ_RENGI },
     skorlar: {},
     skorlarKonu: {}, // İş 105: konu turu skorları { konuId: Leitner skoru }
     gunluk: { tarih: bugunStr(), yeni: 0, kart: 0, yeniIdler: [] },
@@ -102,6 +103,7 @@ export function ilerlemeDogrula(nesne) {
   ayarlar.titresim = ayarlar.titresim !== false; // İş 106
   ayarlar.hareket = HAREKETLER.includes(ayarlar.hareket) ? ayarlar.hareket : 'tam'; // İş 148
   ayarlar.yazi = YAZILAR.includes(ayarlar.yazi) ? ayarlar.yazi : 'standart'; // İş 149
+  ayarlar.gunduzRenk = GUNDUZ_RENKLERI.includes(ayarlar.gunduzRenk) ? ayarlar.gunduzRenk : VARSAYILAN_GUNDUZ_RENGI; // 1.77.0
   return {
     ...t,
     islenen: [...new Set(v.islenen)].sort((a, b) => a - b),

@@ -179,7 +179,8 @@ export function renkTemasi(palet, zemin) {
 // ---------- tarayıcı: görselden palet (IndexedDB önbellekli) ----------
 const bellek = new Map();
 
-function resimdenPalet(url) {
+// görseli küçültüp (uzun kenarı n px) piksellerini hesapla'ya verir
+function resimdenOku(url, n, hesapla) {
   return new Promise((coz, reddet) => {
     const img = new Image();
     img.crossOrigin = 'anonymous';
@@ -188,7 +189,6 @@ function resimdenPalet(url) {
     img.onload = () => {
       clearTimeout(zaman);
       try {
-        const n = 64;
         const oran = img.naturalWidth / img.naturalHeight || 1;
         const w = oran >= 1 ? n : Math.max(8, Math.round(n * oran));
         const h = oran >= 1 ? Math.max(8, Math.round(n / oran)) : n;
@@ -198,7 +198,7 @@ function resimdenPalet(url) {
         const x = c.getContext('2d', { willReadFrequently: true });
         x.drawImage(img, 0, 0, w, h);
         // CORS izni yoksa getImageData SecurityError fırlatır
-        coz(paletHesapla(x.getImageData(0, 0, w, h).data));
+        coz(hesapla(x.getImageData(0, 0, w, h).data));
       } catch (e) {
         reddet(e);
       }
@@ -218,12 +218,111 @@ export function paletGetir(url) {
   const s = (async () => {
     const kayit = await idbAl('palet', url);
     if (kayit && kayit.surum === PALET_SURUMU && Array.isArray(kayit.palet) && kayit.palet.length) return kayit.palet;
-    const palet = await resimdenPalet(url);
+    const palet = await resimdenOku(url, 64, paletHesapla);
     if (!palet.length) throw new Error('boş palet');
     idbKoy('palet', url, { palet, surum: PALET_SURUMU, zaman: Date.now() });
     return palet;
   })();
   bellek.set(url, s);
   s.catch(() => bellek.delete(url));
+  return s;
+}
+
+// ---------- 1.77.0 · renkli Gündüz için tablonun renk aileleri ----------
+// Median-cut paleti (yukarıda) tabloyu 6 kutuya bölüp ortalar: çok renkli tablolarda bile çoğu zaman kahverengiler
+// çıkar. Eski, verniklenmiş tablolarda renkler gözün sandığından da soluktur (Pontormo'nun "mavi" cüppesi
+// rgb(136,143,151)). Gündüz paleti için pikseller altı renk ailesine ayrılır: kırmızı, turuncu (ten, toprak), okr
+// (altın, sarı), yeşil, mavi, mor. Önce tablonun genel renk kayması (sarı vernik) yarı yarıya dengelenir (gri dünya):
+// göz de soluk maviyi sarı tablonun içinde mavi görür. Ağırlık renkliliğin karesi (en − en az kanal; en az 0,04):
+// geniş ama soluk alanlar değil, tablonun canlı yerleri sayılır. Her aile için payı ve ortalama tonu döner.
+// acik: açık alanların (gök, zemin) dengelenmemiş ortalaması; renkOrani: renkli piksellerin payı (gravürde ~0).
+export const RENK_AILELERI = [
+  ['kirmizi', 345, 15],
+  ['turuncu', 15, 45],
+  ['okr', 45, 70],
+  ['yesil', 70, 170],
+  ['mavi', 170, 260],
+  ['mor', 260, 345],
+];
+const DENGE = 0.5;
+function aileBul(h) {
+  for (const [ad, a, b] of RENK_AILELERI) if (a < b ? h >= a && h < b : h >= a || h < b) return ad;
+  return 'kirmizi';
+}
+export function tonlariHesapla(veri) {
+  const ort = [0, 0, 0];
+  let say = 0;
+  for (let i = 0; i + 3 < veri.length; i += 4) {
+    if (veri[i + 3] < 128) continue;
+    ort[0] += veri[i];
+    ort[1] += veri[i + 1];
+    ort[2] += veri[i + 2];
+    say++;
+  }
+  const gri = (ort[0] + ort[1] + ort[2]) / 3;
+  const kazanc = ort.map((m) => (m > 0 ? (gri / m) ** DENGE : 1));
+  const aile = Object.fromEntries(RENK_AILELERI.map(([ad]) => [ad, { w: 0, x: 0, y: 0, s: 0, l: 0 }]));
+  const acik = [0, 0, 0];
+  let acikSay = 0;
+  let renkli = 0;
+  for (let i = 0; i + 3 < veri.length; i += 4) {
+    if (veri[i + 3] < 128) continue;
+    const r = Math.min(1, (veri[i] / 255) * kazanc[0]);
+    const g = Math.min(1, (veri[i + 1] / 255) * kazanc[1]);
+    const b = Math.min(1, (veri[i + 2] / 255) * kazanc[2]);
+    const en = Math.max(r, g, b);
+    const az = Math.min(r, g, b);
+    const l = (en + az) / 2;
+    if ((veri[i] + veri[i + 1] + veri[i + 2]) / 765 >= 0.62) {
+      acik[0] += veri[i];
+      acik[1] += veri[i + 1];
+      acik[2] += veri[i + 2];
+      acikSay++;
+    }
+    const f = en - az;
+    if (f < 0.04 || l < 0.1 || l > 0.92) continue;
+    renkli++;
+    const s = f / (1 - Math.abs(2 * l - 1));
+    let h = en === r ? ((g - b) / f) % 6 : en === g ? (b - r) / f + 2 : (r - g) / f + 4;
+    h = (h * 60 + 360) % 360;
+    const w = f * f * (1 - Math.abs(l - 0.5));
+    const k = aile[aileBul(h)];
+    const a = (h * Math.PI) / 180;
+    k.w += w;
+    k.x += Math.cos(a) * w;
+    k.y += Math.sin(a) * w;
+    k.s += s * w;
+    k.l += l * w;
+  }
+  const toplamW = Object.values(aile).reduce((t, k) => t + k.w, 0);
+  const aileler = RENK_AILELERI.map(([ad]) => {
+    const k = aile[ad];
+    if (!k.w) return { ad, pay: 0, renk: null };
+    const h = ((Math.atan2(k.y, k.x) * 180) / Math.PI + 360) % 360;
+    return { ad, pay: k.w / toplamW, renk: hsldenHex(h, Math.min(1, Math.max(0.3, k.s / k.w)), k.l / k.w) };
+  });
+  return {
+    aileler,
+    acik: acikSay ? hexe(acik.map((v) => v / acikSay)) : null,
+    renkOrani: say ? renkli / say : 0,
+  };
+}
+
+// görselin tonları (paletGetir gibi IndexedDB önbellekli; ayrı anahtar)
+const TON_SURUMU = 4;
+const tonBellek = new Map();
+export function tonlariGetir(url) {
+  if (!url) return Promise.reject(new Error('görsel yok'));
+  if (tonBellek.has(url)) return tonBellek.get(url);
+  const s = (async () => {
+    const anahtar = 'ton:' + url;
+    const kayit = await idbAl('palet', anahtar);
+    if (kayit && kayit.surum === TON_SURUMU && kayit.tonlar) return kayit.tonlar;
+    const tonlar = await resimdenOku(url, 96, tonlariHesapla);
+    idbKoy('palet', anahtar, { tonlar, surum: TON_SURUMU, zaman: Date.now() });
+    return tonlar;
+  })();
+  tonBellek.set(url, s);
+  s.catch(() => tonBellek.delete(url));
   return s;
 }
