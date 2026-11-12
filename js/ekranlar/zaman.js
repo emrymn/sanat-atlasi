@@ -1,177 +1,218 @@
-// Zaman (K2): yatay kayan yaşam çizgisi şeridi. Üstte akım bantları (keskin akım renkleri), altta her sanatçı
-// doğumundan ölümüne akım renginde ince çubuk. İki parmakla (ya da +/− ile) yakınlaştırılır; çubuğa dokununca
-// sanatçının küçük kartı. Kilitli sanatçılar soluk.
+// Zaman (1.76.5 · yıl kadranı): üstte yapışkan okuyucu (büyük yıl, yüzyıl evresi, kaç sanatçı hayatta) ve yatay
+// kayan cetvel (her on yılın sanatçı yoğunluğu, en kalabalık akımın renginde; ortada pirinç ibre). Altında o yıl
+// hayatta olanlar akımlarına göre: küçük resim, ad, o yılki yaşı ve hayatının neresinde olduğu. Kilitliler soluk.
 import { kacis, yillarYaz, bulunmaEki } from '../yardimci.js';
 import { sanatciEserleri } from '../eserler.js';
 import { ikon } from '../tasarim.js';
 import { bilinenAd } from '../adlar.js';
-import { BAS, SON, yilX, sanatciSeritleri, akimBantlari, centikler, pxSinirla } from '../zaman.js';
+import { hareketAz } from '../gecis.js';
+import { BAS, SON, ADIM, yilSinirla, yasayanlar, akimlaraAyir, hayatPayi, yas, yogunluk, yuzyilEvresi } from '../zaman.js';
 import { d, ekran, gununRengi, ciz, islenen, akimRenk, kucukGorsel, enBilinen } from './ortak.js';
 import { gozAtUst } from './gozat.js';
 
-const SERIT_H = 30; // sanatçı şeridi yüksekliği
-const BANT_H = 22; // akım bandı yüksekliği
+const PX = 4; // cetvelde bir yıl
+const CUBUK_EN_YUKSEK = 30;
 const adi = (s) => bilinenAd(s.ad, d.kisaAdlar[s.id]);
 
-function seritHtml(px) {
-  const k = islenen();
-  const bantlar = akimBantlari(d.akimlar, d.sanatcilar, px);
-  const cubuklar = sanatciSeritleri(d.sanatcilar, px, { adFn: adi });
-  const bantH = (Math.max(0, ...bantlar.map((b) => b.serit)) + 1) * BANT_H;
-  const cubukH = (Math.max(0, ...cubuklar.map((c) => c.serit)) + 1) * SERIT_H;
-  const genislik = yilX(SON, px) + 24;
-  return `<div class="zaman-tuval" style="width:${genislik}px;--bant-h:${bantH}px;height:${bantH + cubukH + 40}px" data-test="zaman-tuval">
-      <div class="zaman-eksen">${centikler(px)
-        .map((c) => `<span class="centik${c.buyuk ? ' buyuk' : ''}" style="left:${yilX(c.yil, px)}px">${c.buyuk || px >= 3 ? c.yil : ''}</span>`)
+// Küçük resimler sayfalar arasında da saklanır: kadran çevrildikçe aynı sanatçı yeniden yüklenmez
+const kareler = new Map();
+function kareSozu(s) {
+  if (!kareler.has(s.id))
+    kareler.set(
+      s.id,
+      sanatciEserleri(s)
+        .then((l) => {
+          const e = enBilinen(l || []);
+          return e ? kucukGorsel(e, 200) : '';
+        })
+        .catch(() => ''),
+    );
+  return kareler.get(s.id);
+}
+
+function cetvelHtml(acikMi) {
+  const cubuklar = yogunluk(d.sanatcilar, acikMi);
+  const enCok = Math.max(1, ...cubuklar.map((c) => c.n));
+  const centikler = [];
+  for (let y = BAS; y <= SON; y += ADIM) {
+    const tur = y % 100 === 0 ? ' buyuk' : y % 50 === 0 ? ' orta' : '';
+    centikler.push(`<span class="zm-centik${tur}" style="left:${(y - BAS) * PX}px">${y % 100 === 0 ? `<small>${y}</small>` : ''}</span>`);
+  }
+  return `<div class="zm-olcek" style="width:${(SON - BAS) * PX}px">
+      <div class="zm-cubuklar">${cubuklar
+        .filter((c) => c.n)
+        .map(
+          (c) =>
+            `<i class="${c.acik ? '' : 'kilitli'}" style="left:${(c.yil - BAS) * PX + 1}px;width:${ADIM * PX - 2}px;height:${3 + Math.round((c.n / enCok) * (CUBUK_EN_YUKSEK - 3))}px;--renk:${akimRenk(c.akim)}"></i>`,
+        )
         .join('')}</div>
-      ${bantlar
-        .map(
-          (b) =>
-            `<a class="zaman-bant" href="#/akim/${encodeURIComponent(b.ad)}" style="left:${b.x}px;width:${b.w}px;top:${26 + b.serit * BANT_H}px;--renk:${b.renk || akimRenk(b.ad)}"><span>${kacis(b.ad)}</span></a>`,
-        )
-        .join('')}
-      ${cubuklar
-        .map(
-          (c, i) =>
-            `<button type="button" class="zaman-cubuk${k.has(c.s.konu) ? '' : ' kilitli'}" data-zaman-sanatci="${kacis(c.s.id)}" style="left:${c.x}px;width:${c.w}px;top:${34 + bantH + c.serit * SERIT_H}px;--renk:${akimRenk(c.s.akim)};--i:${i}" aria-label="${kacis(`${c.s.ad}, ${yillarYaz(c.s)}`)}"><i></i><span>${kacis(adi(c.s))}</span></button>`,
-        )
-        .join('')}
+      <div class="zm-centikler">${centikler.join('')}</div>
     </div>`;
 }
 
 export function zamanSayfasi() {
   gununRengi();
-  if (!d.zamanPx) d.zamanPx = 2.4;
-  ciz(`${gozAtUst('zaman')}
-    <div class="zaman-pano">
-      <p class="zaman-yil" aria-live="polite"><b data-zaman-yil>—</b><span><span data-zaman-canli>0</span> sanatçı aynı anda yaşıyor</span></p>
-      <div class="zaman-araclar" role="group" aria-label="Yakınlaştırma"><button type="button" class="zaman-yakin" data-zaman-yakin="-1" aria-label="Uzaklaştır">${ikon('eksi', 16, 1.8)}</button><button type="button" class="zaman-yakin" data-zaman-yakin="1" aria-label="Yakınlaştır">${ikon('arti', 16, 1.8)}</button></div>
-    </div>
-    <div class="zaman-pencere">
-      <div class="zaman-kaydir" data-zaman-kaydir>${seritHtml(d.zamanPx)}</div>
-      <span class="zaman-imlec" aria-hidden="true"></span>
-    </div>
-    <p class="zaman-ipucu">Kaydır: ortadaki çizgi yılı okur, o yılda yaşayanlar parlar. Çizgiye dokun, sanatçıyı aç.</p>
-    <div data-zaman-kart></div>`);
-  const k = ekran.querySelector('[data-zaman-kaydir]');
-  // ilk açılışta açık sanatçıların ortasına kaydır
-  if (d.zamanKaydirma != null) k.scrollLeft = d.zamanKaydirma;
-  else {
-    const acik = d.sanatcilar.filter((s) => islenen().has(s.konu) && s.dogum != null);
-    const orta = acik.length ? acik.reduce((t, s) => t + s.dogum, 0) / acik.length : 1500;
-    k.scrollLeft = yilX(orta, d.zamanPx) - k.clientWidth / 2;
+  const k = islenen();
+  const acikMi = (s) => k.has(s.konu);
+  if (d.zamanYil == null) {
+    // ilk açılışta açık sanatçıların olgunluk çağının ortası
+    const acik = d.sanatcilar.filter((s) => acikMi(s) && s.dogum != null);
+    d.zamanYil = yilSinirla(acik.length ? acik.reduce((t, s) => t + s.dogum + 35, 0) / acik.length : 1500);
   }
+  ciz(`${gozAtUst('zaman')}
+    <section class="zm" data-test="zaman" aria-label="Zaman">
+      <div class="zm-panel">
+        <div class="zm-okur">
+          <button type="button" class="zm-adim" data-zaman-adim="-${ADIM}" aria-label="${ADIM} yıl geri">${ikon('geri', 22, 1.6)}</button>
+          <p class="zm-yil">
+            <span class="etiket vurgu" data-zaman-evre></span>
+            <b data-zaman-yil data-test="zaman-yil"></b>
+            <small><span data-zaman-canli>0</span> sanatçı hayatta</small>
+          </p>
+          <button type="button" class="zm-adim" data-zaman-adim="${ADIM}" aria-label="${ADIM} yıl ileri">${ikon('ileri', 22, 1.6)}</button>
+        </div>
+        <div class="zm-cetvel" data-zaman-kaydir data-test="zaman-tuval" tabindex="0" role="slider" aria-label="Yıl" aria-valuemin="${BAS}" aria-valuemax="${SON}">
+          <div class="zm-cetvel-ic" data-zaman-ic>${cetvelHtml(acikMi)}</div>
+        </div>
+        <span class="zm-ibre" aria-hidden="true"></span>
+      </div>
+      <p class="zm-ipucu">Cetveli kaydır ya da dokun: o yıl hayatta olanlar aşağıda.</p>
+      <div class="zm-liste" data-zaman-liste data-test="zaman-liste"></div>
+    </section>`);
+  const kaydir = ekran.querySelector('[data-zaman-kaydir]');
+  listeAnahtari = '';
+  payAyarla(kaydir);
+  kaydir.scrollLeft = (d.zamanYil - BAS) * PX;
+  guncelle(d.zamanYil);
   let kare = 0;
-  k.addEventListener(
+  kaydir.addEventListener(
     'scroll',
     () => {
-      d.zamanKaydirma = k.scrollLeft;
-      if (!kare) kare = requestAnimationFrame(() => ((kare = 0), imleciGuncelle(k)));
+      if (kare) return;
+      kare = requestAnimationFrame(() => {
+        kare = 0;
+        const yil = yilSinirla(BAS + kaydir.scrollLeft / PX);
+        if (yil !== d.zamanYil) guncelle(yil);
+      });
     },
     { passive: true },
   );
-  imleciGuncelle(k);
-  yakinlastirmaBagla(k);
 }
 
-// Ortadaki imleç: o yılı yazar ve o yılda yaşayan sanatçıların çizgilerini parlatır
-const TUVAL_PAY = 12;
-function imleciGuncelle(k) {
-  const x = k.scrollLeft + k.clientWidth / 2 - TUVAL_PAY;
-  const yil = Math.round(BAS + x / d.zamanPx);
-  let n = 0;
-  for (const c of k.querySelectorAll('.zaman-cubuk')) {
-    const sol = c.offsetLeft;
-    const canli = x >= sol && x <= sol + c.offsetWidth;
-    c.classList.toggle('canli', canli);
-    if (canli) n++;
+// Cetvelin iki yanına yarım ekran boşluk: BAS ve SON da ibrenin altına gelebilsin
+function payAyarla(kaydir) {
+  const ic = kaydir.querySelector('[data-zaman-ic]');
+  if (ic) ic.style.paddingInline = `${Math.round(kaydir.clientWidth / 2)}px`;
+}
+
+function yilaGit(yil, { yumusak = true } = {}) {
+  const kaydir = ekran.querySelector('[data-zaman-kaydir]');
+  if (!kaydir) return;
+  const hedef = yilSinirla(yil);
+  kaydir.scrollTo({ left: (hedef - BAS) * PX, behavior: yumusak && !hareketAz() ? 'smooth' : 'auto' });
+  // kaydırma olayı gelmese de (aynı yer, ya da anlık) okuyucu güncellensin
+  if (!yumusak || hareketAz()) guncelle(hedef);
+}
+
+const yasYazi = (x, yil) => {
+  const n = yas(x.s, yil);
+  if (n == null) return 'yaşı bilinmiyor';
+  if (n === 0) return 'doğduğu yıl';
+  if (x.s.olum === yil) return `${n} yaşında öldü`;
+  return `${n} yaşında`;
+};
+
+let listeAnahtari = '';
+function guncelle(yil) {
+  d.zamanYil = yil;
+  const liste = yasayanlar(d.sanatcilar, yil);
+  const k = islenen();
+  const $ = (s) => ekran.querySelector(s);
+  const yilEl = $('[data-zaman-yil]');
+  if (!yilEl) return;
+  yilEl.textContent = yil;
+  $('[data-zaman-evre]').textContent = yuzyilEvresi(yil);
+  $('[data-zaman-canli]').textContent = liste.length;
+  const kaydir = $('[data-zaman-kaydir]');
+  kaydir.setAttribute('aria-valuenow', yil);
+  kaydir.setAttribute('aria-valuetext', `${yil}, ${liste.length} sanatçı hayatta`);
+  const anahtar = liste.map((x) => x.s.id).join('|');
+  const kutu = $('[data-zaman-liste]');
+  if (anahtar === listeAnahtari) {
+    // aynı kişiler: yalnız yaşlar ve hayat çizgileri ilerler
+    for (const satir of kutu.querySelectorAll('[data-zaman-satir]')) {
+      const x = liste.find((y) => y.s.id === satir.dataset.zamanSatir);
+      if (!x) continue;
+      satir.querySelector('[data-zaman-yas]').textContent = yasYazi(x, yil);
+      satir.style.setProperty('--pay', hayatPayi(x, yil).toFixed(3));
+    }
+    return;
   }
-  const y = ekran.querySelector('[data-zaman-yil]');
-  const s = ekran.querySelector('[data-zaman-canli]');
-  if (y) y.textContent = Math.min(SON, Math.max(BAS, yil));
-  if (s) s.textContent = n;
-}
-
-// Yakınlaştırma: merkezdeki (ya da parmakların ortasındaki) yıl yerinde kalır
-function yakinlastir(k, yeniPx, merkezX = k.clientWidth / 2) {
-  const eski = d.zamanPx;
-  const px = pxSinirla(yeniPx);
-  if (Math.abs(px - eski) < 0.01) return;
-  const yil = BAS + (k.scrollLeft + merkezX) / eski;
-  d.zamanPx = px;
-  k.innerHTML = seritHtml(px);
-  k.querySelector('.zaman-tuval').classList.add('durgun');
-  k.scrollLeft = (yil - BAS) * px - merkezX;
-  d.zamanKaydirma = k.scrollLeft;
-  imleciGuncelle(k);
-}
-
-function yakinlastirmaBagla(k) {
-  let bas = null;
-  const uzaklik = (t) => Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
-  k.addEventListener(
-    'touchstart',
-    (e) => {
-      if (e.touches.length === 2)
-        bas = { u: uzaklik(e.touches), px: d.zamanPx, x: (e.touches[0].clientX + e.touches[1].clientX) / 2 - k.getBoundingClientRect().left };
-    },
-    { passive: true },
-  );
-  k.addEventListener(
-    'touchmove',
-    (e) => {
-      if (!bas || e.touches.length !== 2) return;
-      e.preventDefault();
-      yakinlastir(k, bas.px * (uzaklik(e.touches) / bas.u), bas.x);
-    },
-    { passive: false },
-  );
-  k.addEventListener('touchend', () => (bas = null));
-  // iOS Safari sayfa yakınlaştırmasını şeritte durdur
-  k.addEventListener('gesturestart', (e) => e.preventDefault());
-}
-
-function kartGoster(s) {
-  const kutu = ekran.querySelector('[data-zaman-kart]');
-  if (!kutu) return;
-  const acik = islenen().has(s.konu);
-  for (const b of ekran.querySelectorAll('.zaman-cubuk.secili')) b.classList.remove('secili');
-  const b = ekran.querySelector(`[data-zaman-sanatci="${CSS.escape(s.id)}"]`);
-  if (b) b.classList.add('secili');
-  kutu.innerHTML = `<aside class="zaman-sanatci" data-test="zaman-kart" style="--renk:${akimRenk(s.akim)}">
-      <span class="kucuk-kare" data-zaman-kare></span>
-      <div class="zaman-sanatci-yazi"><b>${kacis(s.ad)}</b><span>${kacis(yillarYaz(s))} · ${kacis(s.akim)}</span>${
-        acik ? '' : `<small>${ikon('kilit', 12)} Konu ${bulunmaEki(s.konu)} açılır</small>`
-      }</div>
-      ${acik ? `<a class="dugme zaman-sanatci-dugme" href="#/sanatci/${encodeURIComponent(s.id)}">Sayfası</a>` : ''}
-      <button class="zaman-sanatci-kapat" type="button" data-zaman-kapat aria-label="Kapat">${ikon('kapat', 18, 1.7)}</button>
-    </aside>`;
-  if (acik)
-    sanatciEserleri(s).then((l) => {
-      const kare = kutu.querySelector('[data-zaman-kare]');
-      const e = enBilinen(l || []);
-      if (kare && e) kare.innerHTML = kucukGorsel(e, 400);
+  listeAnahtari = anahtar;
+  if (!liste.length) {
+    kutu.innerHTML = `<p class="zm-bos">Bu yıl için kayıtlı sanatçı yok. Cetveli biraz kaydır.</p>`;
+    return;
+  }
+  kutu.innerHTML = akimlaraAyir(liste, d.akimlar)
+    .map(
+      (g) => `<section class="zm-grup" style="--akim:${akimRenk(g.ad)}" data-test="zaman-grup">
+        <h3 class="zm-akim"><span class="zm-nokta" aria-hidden="true"></span><span>${kacis(g.ad)}</span><small>${g.l.length}</small></h3>
+        <ul>${g.l.map((x) => satirHtml(x, yil, k.has(x.s.konu))).join('')}</ul>
+      </section>`,
+    )
+    .join('');
+  for (const el of kutu.querySelectorAll('[data-zaman-kare]')) {
+    const s = d.harita.get(el.dataset.zamanKare);
+    if (!s || el.childElementCount) continue;
+    kareSozu(s).then((html) => {
+      if (html && el.isConnected && !el.childElementCount) el.innerHTML = html;
     });
+  }
+}
+
+function satirHtml(x, yil, acik) {
+  const s = x.s;
+  const alt = acik ? kacis(yillarYaz(s)) : `${ikon('kilit', 12, 1.8)}Konu ${bulunmaEki(s.konu)} açılır`;
+  const ic = `<span class="zm-kare"${acik ? ` data-zaman-kare="${kacis(s.id)}"` : ''} aria-hidden="true"></span>
+      <span class="zm-satir-yazi">
+        <b>${kacis(adi(s))}</b>
+        <small><span data-zaman-yas>${yasYazi(x, yil)}</span><span aria-hidden="true"> · </span>${alt}</small>
+        <span class="zm-hayat" aria-hidden="true"><i></i></span>
+      </span>
+      ${acik ? ikon('ileri', 18, 1.6) : ''}`;
+  const ortak = `data-zaman-satir="${kacis(s.id)}" style="--pay:${hayatPayi(x, yil).toFixed(3)}"`;
+  return `<li>${
+    acik
+      ? `<a class="zm-satir" href="#/sanatci/${encodeURIComponent(s.id)}" ${ortak} data-zaman-sanatci="${kacis(s.id)}">${ic}</a>`
+      : `<div class="zm-satir kilitli" ${ortak} aria-disabled="true">${ic}</div>`
+  }</li>`;
 }
 
 // Ekranın olay dinleyicileri; app.js bir kez bağlar
 export function olaylariBagla() {
   ekran.addEventListener('click', (e) => {
-    const c = e.target.closest('[data-zaman-sanatci]');
-    if (c) {
-      const s = d.harita.get(c.dataset.zamanSanatci);
-      if (s) kartGoster(s);
-      return;
+    const adim = e.target.closest('[data-zaman-adim]');
+    if (adim) return yilaGit(d.zamanYil + Number(adim.dataset.zamanAdim));
+    const kaydir = e.target.closest('[data-zaman-kaydir]');
+    if (kaydir) {
+      // cetvelde dokunulan yıl ibrenin altına gelir
+      const kutu = kaydir.getBoundingClientRect();
+      yilaGit(d.zamanYil + (e.clientX - (kutu.left + kutu.width / 2)) / PX);
     }
-    if (e.target.closest('[data-zaman-kapat]')) {
-      ekran.querySelector('[data-zaman-kart]').innerHTML = '';
-      for (const b of ekran.querySelectorAll('.zaman-cubuk.secili')) b.classList.remove('secili');
-      return;
-    }
-    const y = e.target.closest('[data-zaman-yakin]');
-    if (y) {
-      const k = ekran.querySelector('[data-zaman-kaydir]');
-      yakinlastir(k, d.zamanPx * (y.dataset.zamanYakin === '1' ? 1.5 : 1 / 1.5));
-    }
+  });
+  ekran.addEventListener('keydown', (e) => {
+    if (!e.target.matches?.('[data-zaman-kaydir]')) return;
+    const fark = { ArrowLeft: -1, ArrowRight: 1, ArrowDown: -1, ArrowUp: 1, PageDown: -ADIM, PageUp: ADIM }[e.key];
+    if (e.key === 'Home') yilaGit(BAS, { yumusak: false });
+    else if (e.key === 'End') yilaGit(SON, { yumusak: false });
+    else if (fark) yilaGit(d.zamanYil + fark, { yumusak: false });
+    else return;
+    e.preventDefault();
+  });
+  addEventListener('resize', () => {
+    const kaydir = ekran.querySelector('[data-zaman-kaydir]');
+    if (!kaydir) return;
+    payAyarla(kaydir);
+    kaydir.scrollLeft = (d.zamanYil - BAS) * PX;
   });
 }

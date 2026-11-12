@@ -1,10 +1,9 @@
-// Zaman şeridi (K2): sanatçıların yaşam çizgileri ve akım bantları için yerleşim. Saf fonksiyonlar (birim testli).
-// Bkz. KARARLAR.md "İş 19".
+// Zaman (K2 · yıl kadranı): bir yıl seçilir, o yıl hayatta olan sanatçılar akımlarına göre listelenir.
+// Saf fonksiyonlar (birim testli). Bkz. KARARLAR.md "İş 19" ve "1.76.5".
 
 export const BAS = 1250;
 export const SON = 2000;
-export const PX_EN_AZ = 1.2;
-export const PX_EN_COK = 14;
+export const ADIM = 10; // cetveldeki yoğunluk çubukları ve ‹ › düğmeleri
 
 // Sanatçının yaşam aralığı [başlangıç, bitiş]; yıl bilinmiyorsa diğerinden tahmin, ikisi de yoksa null
 export function yasamAraligi(s) {
@@ -14,61 +13,59 @@ export function yasamAraligi(s) {
   return [bas, son];
 }
 
-// Yıl → piksel (şeridin solu BAS)
-export const yilX = (yil, px) => Math.round((Math.max(BAS, Math.min(SON, yil)) - BAS) * px);
+export const yilSinirla = (yil) => Math.max(BAS, Math.min(SON, Math.round(yil)));
 
-// Öğeleri üst üste binmeyecek şeritlere dağıtır (açgözlü). oge: { bas, son, etiketPx }
-// Her öğe [x, max(x + w, x + etiketPx) + bosluk] alanını kaplar.
-export function seritle(ogeler, px, { bosluk = 10 } = {}) {
-  const sonlar = [];
-  return ogeler
-    .slice()
-    .sort((a, b) => a.bas - b.bas || a.son - b.son)
-    .map((o) => {
-      const x = yilX(o.bas, px);
-      const w = Math.max(3, yilX(o.son, px) - x);
-      const bitis = Math.max(x + w, x + (o.etiketPx || 0)) + bosluk;
-      let serit = sonlar.findIndex((s) => s <= x);
-      if (serit < 0) serit = sonlar.push(0) - 1;
-      sonlar[serit] = bitis;
-      return { ...o, x, w, serit };
-    });
-}
+// Yıl → piksel (cetvelin solu BAS)
+export const yilX = (yil, px) => Math.round((yilSinirla(yil) - BAS) * px);
 
-// Sanatçı çubukları: harf genişliği yaklaşık (serif 13 px ≈ 6.6 px/harf)
-export function sanatciSeritleri(sanatcilar, px, { harf = 6.6, adFn = (s) => s.ad } = {}) {
-  const ogeler = [];
+// O yıl hayatta olanlar (doğum ≤ yıl ≤ ölüm), doğum sırasıyla
+export function yasayanlar(sanatcilar, yil) {
+  const l = [];
   for (const s of sanatcilar) {
     const a = yasamAraligi(s);
-    if (a) ogeler.push({ s, bas: a[0], son: a[1], etiketPx: Math.ceil(adFn(s).length * harf) });
+    if (a && a[0] <= yil && yil <= a[1]) l.push({ s, bas: a[0], son: a[1] });
   }
-  return seritle(ogeler, px);
+  return l.sort((x, y) => x.bas - y.bas || x.son - y.son);
 }
 
-// Akım bantları: üyelerin çalışma hayatı (doğum + 20 … ölüm)
-export function akimBantlari(akimlar, sanatcilar, px, { harf = 7 } = {}) {
-  const ogeler = [];
-  for (const a of akimlar) {
-    const uyeler = sanatcilar
-      .filter((s) => s.akim === a.ad)
-      .map(yasamAraligi)
-      .filter(Boolean);
-    if (!uyeler.length) continue;
-    const bas = Math.min(...uyeler.map((x) => Math.min(x[0] + 20, x[1])));
-    const son = Math.max(...uyeler.map((x) => x[1]));
-    ogeler.push({ ad: a.ad, renk: a.renk, bas, son, etiketPx: Math.min(Math.ceil(a.ad.length * harf), 60) });
+// Yaşadıklarını akımlara ayırır; akımlar kronolojik (akimlar.json sırası)
+export function akimlaraAyir(liste, akimlar) {
+  const sira = new Map(akimlar.map((a, i) => [a.ad, a.sira ?? i]));
+  const gruplar = new Map();
+  for (const x of liste) {
+    if (!gruplar.has(x.s.akim)) gruplar.set(x.s.akim, []);
+    gruplar.get(x.s.akim).push(x);
   }
-  return seritle(ogeler, px, { bosluk: 4 });
+  return [...gruplar]
+    .map(([ad, l]) => ({ ad, l }))
+    .sort((a, b) => (sira.get(a.ad) ?? 999) - (sira.get(b.ad) ?? 999));
 }
 
-// Eksen çentikleri: yakınlaştıkça sıklaşır
-export function centikler(px) {
-  const adim = px >= 6 ? 10 : px >= 3 ? 25 : 50;
+// Hayatının yüzde kaçında (0–1); yaş tahmini ancak doğum biliniyorsa gösterilir
+export const hayatPayi = (x, yil) => (x.son > x.bas ? Math.max(0, Math.min(1, (yil - x.bas) / (x.son - x.bas))) : 1);
+export const yas = (s, yil) => (s.dogum != null ? yil - s.dogum : null);
+
+// Cetvelin yoğunluk çubukları: her ADIM yılın ortasında kaç sanatçı hayatta, en kalabalık akım hangisi
+export function yogunluk(sanatcilar, acikMi = () => true) {
   const l = [];
-  for (let y = BAS; y <= SON; y += adim) l.push({ yil: y, buyuk: y % 100 === 0 });
+  for (let y = BAS; y < SON; y += ADIM) {
+    const orta = y + ADIM / 2;
+    const canli = yasayanlar(sanatcilar, orta);
+    const say = new Map();
+    for (const x of canli) say.set(x.s.akim, (say.get(x.s.akim) || 0) + 1);
+    let akim = null;
+    for (const [ad, n] of say) if (!akim || n > say.get(akim)) akim = ad;
+    l.push({ yil: y, n: canli.length, acik: canli.some((x) => acikMi(x.s)), akim });
+  }
   return l;
 }
 
-export function pxSinirla(px) {
-  return Math.max(PX_EN_AZ, Math.min(PX_EN_COK, px));
+// "XVI. yüzyıl başı / ortası / sonu"
+const ROMA = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
+export function yuzyilEvresi(yil) {
+  const y = Math.floor((yil - 1) / 100) + 1;
+  const r = 'X'.repeat(Math.floor(y / 10)) + ROMA[y % 10];
+  const icinde = (yil - 1) % 100;
+  const evre = icinde < 33 ? 'başı' : icinde < 66 ? 'ortası' : 'sonu';
+  return `${r}. yüzyıl ${evre}`;
 }

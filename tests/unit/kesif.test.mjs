@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { normallestir, dizinKur, ara, puan } from '../../js/arama.js';
-import { yasamAraligi, seritle, sanatciSeritleri, akimBantlari, yilX, centikler, pxSinirla, BAS, PX_EN_COK } from '../../js/zaman.js';
+import { yasamAraligi, yilX, yasayanlar, akimlaraAyir, hayatPayi, yogunluk, yuzyilEvresi, BAS, SON, ADIM } from '../../js/zaman.js';
 import { paletBirlestir, tipikKonular, enBilinenEserler, karsilastirmaKomsulari, akimKarsilastirmaAdresi } from '../../js/akim.js';
 
 test('K1 normalleştirme: Türkçe harfler ve aksanlar', () => {
@@ -56,51 +56,31 @@ test('K1 puan: tam > kelime başı > içinde', () => {
   assert.ok(puan('rembrandt', ['brandt']) > 0, 'üç harften uzun parça içinde de bulunur');
 });
 
-test('K2 yaşam aralığı ve şeritler: üst üste binmez', () => {
+test('K2 yaşam aralığı, o yıl yaşayanlar, akım grupları, yoğunluk', () => {
   assert.deepEqual(yasamAraligi({ dogum: 1571, olum: 1610 }), [1571, 1610]);
   assert.deepEqual(yasamAraligi({ dogum: null, olum: 1416 }), [1356, 1416]);
-  assert.equal(yasamAraligi({ dogum: -480, olum: -430 }), null, 'antik çağ şeritte yok');
+  assert.equal(yasamAraligi({ dogum: -480, olum: -430 }), null, 'antik çağ kadranda yok');
   assert.equal(yasamAraligi({ dogum: null, olum: null }), null);
-  assert.equal(yilX(BAS, 3), 0);
-  assert.equal(yilX(1100, 3), 0, 'baştan önce kırpılır');
-  const l = seritle(
-    [
-      { bas: 1500, son: 1550, etiketPx: 0 },
-      { bas: 1520, son: 1560, etiketPx: 0 },
-      { bas: 1560, son: 1600, etiketPx: 0 },
-    ],
-    2,
-    { bosluk: 0 },
-  );
-  assert.deepEqual(
-    l.map((x) => x.serit),
-    [0, 1, 0],
-  );
-  // etiket uzunsa yan yana sığmaz
-  const e = seritle(
-    [
-      { bas: 1500, son: 1510, etiketPx: 200 },
-      { bas: 1520, son: 1530, etiketPx: 0 },
-    ],
-    2,
-  );
-  assert.deepEqual(
-    e.map((x) => x.serit),
-    [0, 1],
-  );
-  const c = sanatciSeritleri(
-    [
-      { id: 'a', ad: 'A', dogum: 1600, olum: 1650 },
-      { id: 'b', ad: 'B', dogum: -400, olum: -300 },
-    ],
-    3,
-  );
-  assert.equal(c.length, 1);
-  const b = akimBantlari([{ ad: 'X', renk: '#000' }, { ad: 'Boş' }], [{ akim: 'X', dogum: 1600, olum: 1650 }], 3);
-  assert.equal(b.length, 1);
-  assert.equal(b[0].bas, 1620, 'çalışma hayatı doğum + 20');
-  assert.ok(centikler(8).length > centikler(2).length, 'yakınlaştıkça sık çentik');
-  assert.equal(pxSinirla(99), PX_EN_COK);
+  assert.equal(yilX(BAS, 4), 0);
+  assert.equal(yilX(1100, 4), 0, 'baştan önce kırpılır');
+  const ss = [
+    { id: 'b', akim: 'Y', dogum: 1520, olum: 1560 },
+    { id: 'a', akim: 'X', dogum: 1500, olum: 1550 },
+    { id: 'c', akim: 'X', dogum: 1560, olum: 1600 },
+  ];
+  assert.deepEqual(yasayanlar(ss, 1530).map((x) => x.s.id), ['a', 'b'], 'doğum sırasıyla');
+  assert.deepEqual(yasayanlar(ss, 1560).map((x) => x.s.id), ['b', 'c'], 'öldüğü ve doğduğu yıl dahil');
+  const g = akimlaraAyir(yasayanlar(ss, 1530), [{ ad: 'Y', sira: 1 }, { ad: 'X', sira: 2 }]);
+  assert.deepEqual(g.map((x) => x.ad), ['Y', 'X'], 'akımlar kronolojik');
+  assert.equal(hayatPayi({ bas: 1500, son: 1550 }, 1525), 0.5);
+  const y = yogunluk(ss, (s) => s.id !== 'c');
+  assert.equal(y.length, (SON - BAS) / ADIM);
+  const k = y.find((x) => x.yil === 1570);
+  assert.equal(k.n, 1);
+  assert.equal(k.acik, false, 'yalnız kilitli sanatçı varsa soluk');
+  assert.equal(yuzyilEvresi(1505), 'XVI. yüzyıl başı');
+  assert.equal(yuzyilEvresi(1550), 'XVI. yüzyıl ortası');
+  assert.equal(yuzyilEvresi(1600), 'XVI. yüzyıl sonu');
 });
 
 test('K3 palet birleştirme: yakın renkler toplanır, paylar 1 eder', () => {
