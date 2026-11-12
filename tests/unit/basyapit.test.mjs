@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
-import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir } from '../../js/basyapit.js';
+import { basyapitlariAl, basyapitBul, sanatcininBasyapitlari, eserEslestir, oneCikanlar } from '../../js/basyapit.js';
 
 const kayit = (k, sid, ek = {}) => ({ anahtar: k, sanatci: sid, baslik: 'Ad', bolumler: [{ baslik: 'B', metin: 'M' }], ...ek });
 
@@ -32,4 +32,23 @@ test('data/basyapitlar.json (varsa): biçim ve sanatçılar', () => {
   const idler = new Set(JSON.parse(readFileSync(new URL('../../data/sanatcilar.json', import.meta.url), 'utf8')).map((s) => s.id));
   const l = basyapitlariAl(ham, (id) => idler.has(id));
   assert.equal(l.length, ham.eserler.length, 'geçersiz kayıt var');
+});
+
+// 1.76.4: Başyapıtlar sahnesinin öne çıkanları
+test('öne çıkanlar: hikâyesi olanlar başta, tekrar yok, açık sanatçılar önce, gün değişince seçim değişir', () => {
+  const l = Array.from({ length: 12 }, (_, i) => kayit(`Q${i}`, i < 6 ? 'acik' : 'kilitli'));
+  const acikMi = (b) => b.sanatci === 'acik';
+  const one = oneCikanlar(l, new Set(['Q9', 'Q3']), acikMi, 0);
+  assert.equal(one.length, 4);
+  assert.deepEqual(one.slice(0, 2).map((b) => b.anahtar), ['Q3', 'Q9']); // listedeki sırayla, kilitli olsa da
+  assert.equal(new Set(one).size, 4);
+  assert.ok(one.slice(2).every(acikMi));
+  // başka gün, başka eserler
+  assert.notDeepEqual(oneCikanlar(l, new Set(), acikMi, 0).map((b) => b.anahtar), oneCikanlar(l, new Set(), acikMi, 1).map((b) => b.anahtar));
+  // az eser: hepsi, bir kez
+  assert.deepEqual(oneCikanlar(l.slice(0, 2), new Set(), acikMi, 5).map((b) => b.anahtar).sort(), ['Q0', 'Q1']);
+  assert.deepEqual(oneCikanlar([], new Set()), []);
+  // açık sanatçı yoksa kilitlilerden dolar; hikâyeliler dörtten çoksa ilk dördü
+  assert.equal(oneCikanlar(l.slice(6), new Set(), acikMi, 3).length, 4);
+  assert.equal(oneCikanlar(l, new Set(l.map((b) => b.anahtar)), acikMi, 3).length, 4);
 });
