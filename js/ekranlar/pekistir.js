@@ -524,7 +524,8 @@ function kartHazirla(o, konum) {
 async function kartCiz() {
   const o = d.oturum;
   if (!o) return anaSayfa();
-  if (o.oturum.bitti) return ozetCiz();
+  // Tanışma, bitti denetiminden önce: haritadaki "Tanış" (bölüm/…/tanitim) sorusuz bir tur, kuyruğu boş; önce
+  // bitti'ye bakılınca tanışma hiç gösterilmeden özete, oradan haritaya dönülüyordu
   if (o.tanisma && o.tanisma.konum < o.tanisma.sira.length) return konuTanismaGoster(o);
   if (o.kip === 'bolum' && o.tanisma && !o.tanitimIsaret) {
     o.tanitimIsaret = true;
@@ -532,6 +533,7 @@ async function kartCiz() {
     tanitimGoruldu(d.ilerleme, id, TANITIM_SEVIYE[sv]);
     kaydet();
   }
+  if (o.oturum.bitti) return ozetCiz();
   const konum = o.oturum.konum;
   const no = cizimNo();
   if ((!o.kart || o.kart.konum !== konum) && o.bekleyenKart) {
