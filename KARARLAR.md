@@ -1956,3 +1956,7 @@ Her sayfa için üç çizim tasarım tuvalinde gösterildi (mevcut ekran görün
 - **Temizlik:** eski sayfaların stilleri (`.vitrin*`, `.bsy-*`, `.konu-izgara`, `.konu-deste`, `.konu-kapak`, `.konu-grup*`, `.konu-hepsi`; 85 kural, ~540 satır) css/app.css'ten silindi. `vitrin-kart`, `vitrin-ad`, `vitrin-akim`, `konu-kart` sınıfları kanca olarak kaldı (kart büyüyerek açılma geçişi ve testler kullanıyor).
 - **Kalanlar:** bir dönemin sayfası uzun olabiliyor (Rönesans 33 eser ≈ 9 ekran); gerçek iPhone'da denenmedi (yalnız Chromium, 390×844).
 - **Testler:** yeni `tests/e2e/galeri_sayfalari.spec.js`; `cilalama.spec` İş 55 (sekmeler) ve İş 89 (konu grupları kardeş bölüm) uyarlandı; `basyapit.test.mjs` (öne çıkanlar), `paket8` (sürüm).
+
+### 1.76.5 · Bugün'ün üstündeki beyaz hale kalktı (Gündüz)
+
+Emre: "ana sayfada gündüz temasında sayfanın en üstündeki beyaz haleyi kaldır". Hale, tarih etiketinin ("12 KASIM") ve üst etiketlerin gölgesiydi: gölge zeminin renginden (`--bg-rgb`) yapılıyordu. Gece'de bu koyu bir gölge ve göze batmıyor; Gündüz'de açık kâğıt rengi olduğu için tablonun üstünde beyaz bir parıltıya dönüşüyordu. Gündüz'de Bugün sahnesinde gölge artık tablonun kendi koyu tonundan (`--golge-rgb`), sahnedeki ad ve düğmelerin gölgesiyle aynı. Üst bölümdeki hap da aynı tona geçti. Gece'ye dokunulmadı. Renkli Gündüz paletleri (Lapis, Pompei, Bakır yeşili, Safran) şimdilik yalnızca tasarım tuvalinde; Emre birini seçince uygulamaya geçecek.

@@ -15387,6 +15387,19 @@ main.perde .bugun-dugmeler {
 :root[data-tema='gunduz'] .bugun-tek :is(.bugun-dugme, .bugun-ben) {
   background: rgba(var(--golge-rgb), 0.45);
 }
+/* 1.76.5 (Emre: "ana sayfada gündüz temasında sayfanın en üstündeki beyaz haleyi kaldır"): tarih ve üst etiketlerin
+   gölgesi zeminin rengindendi (--bg-rgb); Gündüz'de bu açık kâğıt rengi olduğu için resmin üstünde beyaz bir parıltı
+   oluşuyordu. Sahnede gölge, Gündüz'de de tablonun kendi koyu tonu. */
+:root[data-tema='gunduz'] .sahne:has(.bugun-kahraman) :is(.bugun-tarih, .bugun-ust .etiket) {
+  text-shadow:
+    0 1px 2px rgba(var(--golge-rgb), 0.7),
+    0 0 12px rgba(var(--golge-rgb), 0.45);
+}
+:root[data-tema='gunduz'] .sahne:has(.bugun-kahraman) .bugun-ust .hap {
+  background: rgba(var(--golge-rgb), 0.45);
+  border-color: rgba(242, 236, 226, 0.18);
+  color: var(--ink);
+}
 
 /* ===== İş 171 · Tasarım B (Fable) · Bugün'de resmin içinde yürüyüş (js/yuruyus.js). Sahne ekrana sabit; sayfa adım
    adım kayar (her adım bir ekran), kamera resmin içinde gezer. Kartlar resmin üstünde yarı saydam. ===== */
