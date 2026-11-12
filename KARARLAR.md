@@ -1957,9 +1957,17 @@ Her sayfa için üç çizim tasarım tuvalinde gösterildi (mevcut ekran görün
 - **Kalanlar:** bir dönemin sayfası uzun olabiliyor (Rönesans 33 eser ≈ 9 ekran); gerçek iPhone'da denenmedi (yalnız Chromium, 390×844).
 - **Testler:** yeni `tests/e2e/galeri_sayfalari.spec.js`; `cilalama.spec` İş 55 (sekmeler) ve İş 89 (konu grupları kardeş bölüm) uyarlandı; `basyapit.test.mjs` (öne çıkanlar), `paket8` (sürüm).
 
-### 1.76.5 · Bugün'ün üstündeki beyaz hale kalktı (Gündüz)
+### 1.76.5 · Galeri: Zaman "Yıl kadranı"
 
-Emre: "ana sayfada gündüz temasında sayfanın en üstündeki beyaz haleyi kaldır". Hale, tarih etiketinin ("12 KASIM") ve üst etiketlerin gölgesiydi: gölge zeminin renginden (`--bg-rgb`) yapılıyordu. Gece'de bu koyu bir gölge ve göze batmıyor; Gündüz'de açık kâğıt rengi olduğu için tablonun üstünde beyaz bir parıltıya dönüşüyordu. Gündüz'de Bugün sahnesinde gölge artık tablonun kendi koyu tonundan (`--golge-rgb`), sahnedeki ad ve düğmelerin gölgesiyle aynı. Üst bölümdeki hap da aynı tona geçti. Gece'ye dokunulmadı. Renkli Gündüz paletleri (Lapis, Pompei, Bakır yeşili, Safran) şimdilik yalnızca tasarım tuvalinde; Emre birini seçince uygulamaya geçecek.
+Emre: "zaman kısmının içi çok karışık ve işlevsiz; uygulamanın geri kalanıyla uyumlu hale getir". 1.76.4'te beğenilen ama sıkışık bulunan "C · Yıl kadranı" fikri ferah biçimde uygulandı.
+
+- **Kalkanlar:** üst üste binen akım bantları ve sanatçı şeritleri (`zaman-bant`, `zaman-cubuk`), iki parmakla/± ile yakınlaştırma, alttan çıkan sanatçı kartı (`zaman-kart`), `seritle`/`sanatciSeritleri`/`akimBantlari`/`centikler`/`pxSinirla` ve stilleri (~290 satır).
+- **Yeni:** üstte yapışkan okuyucu: yüzyıl evresi ("XVI. yüzyıl başı"), büyük serif yıl, "N sanatçı hayatta", iki yanda ‹ › (on yıl). Altında yatay kayan cetvel (yılda 4 px, 1250–2000): her on yılın yoğunluk çubuğu en kalabalık akımın renginde (yalnız kilitli sanatçı varsa soluk), çentikler ve yüzyıl rakamları, ortada çarkınki gibi pirinç elmas ibre. Cetvele dokunulan yıl ibreye gelir; klavyede `role="slider"` (oklar 1 yıl, Page 10 yıl, Home/End).
+- **Liste:** o yıl hayatta olanlar akımlarına göre (akım sırasıyla, renk noktası ve sayı), satırda küçük resim, ad, o yılki yaşı ve yılları, hayatının neresinde olduğunu gösteren ince çizgi. Açık sanatçı sanatçı sayfasına götürür; kilitli soluk, "Konu N'de açılır". Kişiler değişmeden yıl ilerlerse yalnız yaş ve çizgiler güncellenir (liste yeniden çizilmez). Seçilen yıl oturum boyunca hatırlanır (`d.zamanYil`).
+- **Testler:** `kesif.spec` K2 ve `kesif.test.mjs` K2 yeniden yazıldı; `paket8` (sürüm).
+### 1.77.0 · Bugün'ün üstündeki beyaz hale kalktı (Gündüz)
+
+Emre: "ana sayfada gündüz temasında sayfanın en üstündeki beyaz haleyi kaldır". Hale, tarih etiketinin ("12 KASIM") ve üst etiketlerin gölgesiydi: gölge zeminin renginden (`--bg-rgb`) yapılıyordu. Gece'de bu koyu bir gölge ve göze batmıyor; Gündüz'de açık kâğıt rengi olduğu için tablonun üstünde beyaz bir parıltıya dönüşüyordu. Gündüz'de Bugün sahnesinde gölge artık tablonun kendi koyu tonundan (`--golge-rgb`), sahnedeki ad ve düğmelerin gölgesiyle aynı. Üst bölümdeki hap da aynı tona geçti. Gece'ye dokunulmadı.
 
 ### 1.77.0 · Renkli Gündüz: renkler günün tablosundan
 
