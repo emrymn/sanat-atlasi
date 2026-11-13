@@ -2021,3 +2021,26 @@ Emre: "haritada bir tane sembolü kaldırmışsın, onu geri ekle; içine ulusla
 - Durağın kimliği birleşmeden önceki `3-1` (`BIRLESEN_DURAKLAR`): o duraktaki yıldızlar ve tanışma kaydı geri gelir. Adı "Gotik · 3. bölüm"; haritadaki yeri ve sembolü `harita.json`'daki Orta Çağ'ın üçüncü yeri (veri değişmedi).
 - Testler: `tests/unit/birlesme.test.mjs`'e durak testi; `paket8` (sürüm).
 
+### 1.78.2 · Çalış · Ders düzeni için altyapı (arayüz yok)
+
+Emre: "fable için işin angarya kısmını yapabileceğin bir bölüm var mı çalışma kısmı için" → "başla". Ders düzeninin arayüzünü ve yeni metinlerini Fable yapacak (tasarım: https://claude.ai/artifact/VFJEDsgn6e7278NmuBgsYF). Bu sürüm yalnız onun üstüne kuracağı veriyi ve mantığı hazırlar; uygulamada görünür bir değişiklik yok, bu yüzden Yenilikler'e satır eklenmedi.
+
+- **Kaynak haritası** `data/ders_kaynaklari.json`. Üreten: `scripts/ders/kaynaklar.mjs`; elle düzenlenmez, veri değişince yeniden çalıştırılır. Yeni içerik yazmaz; her akım için dört adımın hangi mevcut veriden besleneceğini gösterir:
+  - **Gör:** yürüyüşü yazılmış eserler (`yuruyus.json`); önce kurs sanatçıları, sonra rehberli incelemesi olanlar.
+  - **Öğren:** "Nasıl tanınır?" maddeleri ve her madde için en çok 4 **kanıt adayı**. Aday, maddenin anahtar sözcüklerinin (ilk beş harf; en az 2 ve %40) bir eser metninde (yürüyüş noktası, rehberli inceleme noktası, başyapıt yazısı) birlikte geçtiği cümledir. Adaylar ekranda "bu özellik bu eserde" diye gösterilmeden önce doğrulanmalı. Eşik %40'a çıkınca bariz yanlışlar elendi (ör. "keskin çapraz çizgiler" cümlesi "keskin çizgi, pürüzsüz yüzey" maddesine aday sayılıyordu).
+  - **Ayırt et:** görünür komşu akımlar. Her çift için şunlar çıkarılır: iki akımın "Nasıl tanınır?" madde sayısı (fark tablosu, uygulamadaki akım karşılaştırma sayfası gibi, yeni metin yazmadan bunlarla yan yana kurulabilir), `akim_bilgi.json`'da öteki akımın adının geçtiği cümleler ve iki tarafın en bilinen 3 eseri.
+  - **Sına · "Neden?":** her sanatçı için `taninma`, tanıma notu ve `kurs_notu` var mı, hangisi kullanılır.
+- **Eksik raporu** `referans/ders_eksikler.md` (aynı betik): 28 ders.
+  - Gör verisi olmayanlar: Dada, Sürrealizm, Savaş sonrası figürasyon.
+  - Kanıt adayı bulunamayan madde: 43 / 115.
+  - Karşılaştırma cümlesi olmayan komşu çifti: 27 / 74.
+  - "Neden?" kaynağı olmayan sanatçı yok.
+- **Ders mantığı** `js/ders.js` (arayüzsüz, birim testli):
+  - Kayıt: `ilerleme.dersler[akım] = { gor, ogren, ayirt, sina }`, her adım `{ i: 0–1, t: bitiş günü }`.
+  - Adımlar yalnız artar. Sına %75'te (haritadaki geçme sınırı), ötekiler tamamında biter.
+  - Adımlar sırayla önerilir ama kilitlenmez: ders öğretmek içindir, sınav kapısı değil.
+  - `bugununDersi`: Yolculuk'taki "Buradasın" durağının akımı (dersi bitmediyse), değilse dönem sırasıyla ilk bitmemiş açık akım.
+  - `derslerDogrula` `ilerlemeDogrula`'ya bağlı: kayıt yedekle gider gelir, eski yedekler boş dersle yüklenir, birleşen akımın kaydı hedefe katılır.
+  - `js/ders.js` kayıt doğrulamasından açılışta yüklendiği için service worker kabuğuna eklendi (sürüm 1.78.2).
+- Testler: `tests/unit/ders.test.mjs` (kayıt, bugünün dersi, doğrulama ve yedek, kaynak haritasının uygulama verisiyle tutarlılığı).
+
