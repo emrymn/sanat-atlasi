@@ -301,9 +301,13 @@ function bugunDugmeleri(s, e, kutu, eserYaz = true) {
 // önce hep %50 %30'dan kırpılıyordu (yüz kesilebiliyor ya da adın altında kalabiliyordu). Yüz bulunmayan tabloda eskisi gibi.
 // Yakınlaşma ve eğim yüzün çevresinde olur (transform-origin).
 const TUVAL_HEDEF = [0.5, 0.36];
+// 1.78.0: kaydırma her yüklemede yeniden hesaplanır. js/keskin.js tabloyu yüklendikten sonra büyük kopyayla değiştirir;
+// odak verisi tam o geçişte gelirse görselin boyu henüz 0'dı ve kaydırma hiç uygulanmıyordu (CI'da İş 144 testi düştü).
 function tuvalOdagi(kutu, img, g) {
   if (!img) return;
+  let odakHazir = false;
   const uygula = () => {
+    if (!odakHazir || !img.isConnected || !img.naturalWidth) return; // boy belli değilse sıradaki load'da
     const odak = gorselOdakNoktasi(g);
     const r = kutu.getBoundingClientRect();
     const k = kaplamaKaymasi({ w: img.naturalWidth, h: img.naturalHeight }, { w: r.width, h: r.height }, odak, TUVAL_HEDEF);
@@ -311,9 +315,12 @@ function tuvalOdagi(kutu, img, g) {
     img.style.objectPosition = `${k.x.toFixed(1)}px ${k.y.toFixed(1)}px`;
     img.style.transformOrigin = `${k.ox.toFixed(1)}px ${k.oy.toFixed(1)}px`;
   };
-  const hazir = img.complete && img.naturalWidth ? Promise.resolve() : new Promise((coz) => img.addEventListener('load', coz, { once: true }));
-  Promise.all([hazir, odaklariYukle()]).then(uygula);
-  window.addEventListener('resize', () => img.isConnected && uygula());
+  img.addEventListener('load', uygula);
+  odaklariYukle().then(() => {
+    odakHazir = true;
+    uygula();
+  });
+  window.addEventListener('resize', uygula);
 }
 
 let ekVeri = null;
