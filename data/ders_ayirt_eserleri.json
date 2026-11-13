@@ -1,0 +1,398 @@
+{
+ "surum": 1,
+ "aciklama": "Çalış · Ders düzeni: Ayırt et adımında her akımı temsil edecek eserler, öncelik sırasıyla (elle seçildi; scripts/ders/kaynaklar.mjs okur ve ayirt[].eserler'e yazar). Öneri, eserde doğrulanmış özellik sayısı ve bilinirlikten hesaplandı; her seçim görseline bakılarak kontrol edildi. Gravür, karakalem hazırlık çizimi ve akımı temsil etmeyen dönem eserleri (Picasso'nun Mavi Dönem gravürü, Dada öncesi resimler) elle değiştirildi. Bir çiftte iki akımın birinci eserleri yan yana gösterilir; ötekiler yedek.",
+ "akimlar": {
+  "Gotik": [
+   {
+    "sanatci": "cimabue",
+    "baslik": "The Madonna and Child in Majesty Surrounded by Angels",
+    "qid": "Q1608116"
+   },
+   {
+    "sanatci": "simone-martini",
+    "baslik": "Annunciation (triptik)",
+    "qid": "Q979440"
+   },
+   {
+    "sanatci": "limbourg-kardesler",
+    "baslik": "February",
+    "qid": "Q5856992"
+   }
+  ],
+  "Erken Rönesans": [
+   {
+    "sanatci": "masaccio",
+    "baslik": "The Tribute Money",
+    "qid": "Q1759631"
+   },
+   {
+    "sanatci": "pietro-perugino",
+    "baslik": "İsa'nın Anahtarları Petrus'a Vermesi (Perugino)",
+    "qid": "Q2620028"
+   },
+   {
+    "sanatci": "fra-angelico",
+    "baslik": "Meryem'e Müjde (Fra Angelico, San Marco)",
+    "qid": "Q2378534"
+   }
+  ],
+  "Kuzey Rönesansı": [
+   {
+    "sanatci": "jan-van-eyck",
+    "baslik": "Arnolfini Portrait",
+    "qid": "Q220859"
+   },
+   {
+    "sanatci": "robert-campin",
+    "baslik": "Mérode Altarpiece",
+    "qid": "Q285392"
+   },
+   {
+    "sanatci": "hans-holbein-genc",
+    "baslik": "Elçiler",
+    "qid": "Q1212937"
+   }
+  ],
+  "Yüksek Rönesans": [
+   {
+    "sanatci": "raphael",
+    "baslik": "Madonna of the Goldfinch",
+    "qid": "Q2344505"
+   },
+   {
+    "sanatci": "leonardo-da-vinci",
+    "baslik": "Mona Lisa",
+    "qid": "Q12418"
+   },
+   {
+    "sanatci": "michelangelo",
+    "baslik": "The Creation of Adam",
+    "qid": "Q500242"
+   }
+  ],
+  "Venedik Rönesansı": [
+   {
+    "sanatci": "titian",
+    "baslik": "Venus of Urbino",
+    "qid": "Q727875"
+   },
+   {
+    "sanatci": "paolo-veronese",
+    "baslik": "Kana'da Düğün",
+    "qid": "Q185255"
+   },
+   {
+    "sanatci": "giovanni-bellini",
+    "baslik": "The Feast of the Gods",
+    "qid": "Q15008032"
+   }
+  ],
+  "Maniyerizm": [
+   {
+    "sanatci": "jacopo-pontormo",
+    "baslik": "Deposition",
+    "qid": "Q3705703"
+   },
+   {
+    "sanatci": "agnolo-bronzino",
+    "baslik": "Deposition of Christ",
+    "qid": "Q1131476"
+   },
+   {
+    "sanatci": "rosso-fiorentino",
+    "baslik": "Çarmıhtan İndiriliş",
+    "qid": "Q3705718"
+   }
+  ],
+  "İtalyan Barok ve Caravaggizm": [
+   {
+    "sanatci": "caravaggio",
+    "baslik": "Supper at Emmaus",
+    "qid": "Q318947"
+   },
+   {
+    "sanatci": "artemisia-gentileschi",
+    "baslik": "Judith Beheading Holofernes",
+    "qid": "Q3769169"
+   }
+  ],
+  "İspanyol Barok": [
+   {
+    "sanatci": "francisco-de-zurbaran",
+    "baslik": "Agnus Dei",
+    "qid": "Q4693305"
+   },
+   {
+    "sanatci": "diego-velazquez",
+    "baslik": "Las Meninas (The Maids of Honor)",
+    "qid": "Q208758"
+   }
+  ],
+  "Flaman Barok": [
+   {
+    "sanatci": "peter-paul-rubens",
+    "baslik": "The Rape of the Daughters of Leucippus",
+    "qid": "Q644936"
+   },
+   {
+    "sanatci": "anthony-van-dyck",
+    "baslik": "Lord John Stuart and His Brother, Lord Bernard Stuart",
+    "qid": "Q3937593"
+   }
+  ],
+  "Hollanda Altın Çağı": [
+   {
+    "sanatci": "johannes-vermeer",
+    "baslik": "Açık Pencere Önünde Mektup Okuyan Kız",
+    "qid": "Q700251"
+   },
+   {
+    "sanatci": "rembrandt-van-rijn",
+    "baslik": "Gece Devriyesi",
+    "qid": "Q219831"
+   },
+   {
+    "sanatci": "jan-steen",
+    "baslik": "Aziz Nicholas Yortusu",
+    "qid": "Q764831"
+   }
+  ],
+  "Fransız Klasisizmi": [
+   {
+    "sanatci": "nicolas-poussin",
+    "baslik": "Et in Arcadia Ego",
+    "qid": "Q1140358"
+   },
+   {
+    "sanatci": "claude-lorrain",
+    "baslik": "Landscape with the Finding of Moses",
+    "qid": "Q6057319"
+   }
+  ],
+  "Geç İtalyan Barok": [
+   {
+    "sanatci": "andrea-pozzo",
+    "baslik": "Apotheosis of Saint Ignatius",
+    "qid": "Q112401018"
+   },
+   {
+    "sanatci": "luca-giordano",
+    "baslik": "The Marriage of the Virgin",
+    "qid": "Q3967207"
+   }
+  ],
+  "Rokoko": [
+   {
+    "sanatci": "jean-honore-fragonard",
+    "baslik": "The Swing",
+    "qid": "Q2629559"
+   },
+   {
+    "sanatci": "jean-antoine-watteau",
+    "baslik": "Pilgrimage to the Island of Cythera",
+    "qid": "Q531329"
+   },
+   {
+    "sanatci": "francois-boucher",
+    "baslik": "Venus Consoling Love",
+    "qid": "Q12860070"
+   }
+  ],
+  "Neoklasisizm": [
+   {
+    "sanatci": "jacques-louis-david",
+    "baslik": "The Oath of the Horatii",
+    "qid": "Q28797801"
+   },
+   {
+    "sanatci": "angelica-kauffman",
+    "baslik": "Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures)"
+   }
+  ],
+  "Romantizm": [
+   {
+    "sanatci": "caspar-david-friedrich",
+    "baslik": "Bulutların Üzerinde Yolculuk",
+    "qid": "Q311243"
+   },
+   {
+    "sanatci": "theodore-gericault",
+    "baslik": "The Raft of the Medusa",
+    "qid": "Q212616"
+   },
+   {
+    "sanatci": "eugene-delacroix",
+    "baslik": "Halka Yol Gösteren Özgürlük",
+    "qid": "Q29530"
+   }
+  ],
+  "Prerafaelitler": [
+   {
+    "sanatci": "john-everett-millais",
+    "baslik": "Mariana",
+    "qid": "Q4281369"
+   },
+   {
+    "sanatci": "william-holman-hunt",
+    "baslik": "The Hireling Shepherd",
+    "qid": "Q7739744"
+   }
+  ],
+  "Akademizm ve Oryantalizm": [
+   {
+    "sanatci": "jean-auguste-dominique-ingres",
+    "baslik": "La Grande Odalisque (Large Odalisque)",
+    "qid": "Q1978815"
+   },
+   {
+    "sanatci": "alexandre-cabanel",
+    "baslik": "Venüs'ün Doğuşu (Cabanel)",
+    "qid": "Q1212861"
+   },
+   {
+    "sanatci": "jean-leon-gerome",
+    "baslik": "The Slave Market",
+    "qid": "Q3224275"
+   }
+  ],
+  "Barbizon ve Realizm": [
+   {
+    "sanatci": "jean-francois-millet",
+    "baslik": "The Gleaners",
+    "qid": "Q1368055"
+   },
+   {
+    "sanatci": "gustave-courbet",
+    "baslik": "Ornans'ta Cenaze",
+    "qid": "Q540488"
+   },
+   {
+    "sanatci": "honore-daumier",
+    "baslik": "The Third-Class Carriage",
+    "qid": "Q3228340"
+   }
+  ],
+  "Empresyonizm": [
+   {
+    "sanatci": "claude-monet",
+    "baslik": "Impression, Sunrise (Impression, Soleil Levant)",
+    "qid": "Q328523"
+   },
+   {
+    "sanatci": "camille-pissarro",
+    "baslik": "Boulevard Montmartre, Mardi Gras",
+    "qid": "Q4949655"
+   },
+   {
+    "sanatci": "pierre-auguste-renoir",
+    "baslik": "The Umbrellas",
+    "qid": "Q1114571"
+   }
+  ],
+  "Ukiyo-e (Japon baskısı)": [
+   {
+    "sanatci": "katsushika-hokusai",
+    "baslik": "36 Fuji Dağı Manzarası (Hokusai)",
+    "qid": "Q227494"
+   },
+   {
+    "sanatci": "utagawa-hiroshige",
+    "baslik": "Sudden Shower over Shin-Ōhashi Bridge and Atake",
+    "qid": "Q5826309"
+   }
+  ],
+  "Post-Empresyonizm": [
+   {
+    "sanatci": "vincent-van-gogh",
+    "baslik": "Yıldızlı Gece",
+    "qid": "Q45585"
+   },
+   {
+    "sanatci": "paul-cezanne",
+    "baslik": "The Card Players",
+    "qid": "Q17277950"
+   },
+   {
+    "sanatci": "paul-gauguin",
+    "baslik": "Nereden geliyoruz? Neyiz? Nereye gidiyoruz?",
+    "qid": "Q890678"
+   }
+  ],
+  "Sembolizm": [
+   {
+    "sanatci": "gustave-moreau",
+    "baslik": "The Apparition",
+    "qid": "Q3818663"
+   },
+   {
+    "sanatci": "odilon-redon",
+    "baslik": "The Cyclops",
+    "qid": "Q3793426"
+   }
+  ],
+  "Art Nouveau ve Viyana Secession": [
+   {
+    "sanatci": "gustav-klimt",
+    "baslik": "Öpücük",
+    "qid": "Q698487"
+   }
+  ],
+  "Ekspresyonizm": [
+   {
+    "sanatci": "edvard-munch",
+    "baslik": "Çığlık (tablo)",
+    "qid": "Q471379"
+   },
+   {
+    "sanatci": "ernst-ludwig-kirchner",
+    "baslik": "Berlin Street Scene",
+    "qid": "Q3476580"
+   }
+  ],
+  "Kübizm": [
+   {
+    "sanatci": "pablo-picasso",
+    "baslik": "Portrait of Ambroise Vollard"
+   },
+   {
+    "sanatci": "pablo-picasso",
+    "baslik": "Three Musicians"
+   }
+  ],
+  "Dada": [
+   {
+    "sanatci": "hannah-hoch",
+    "baslik": "Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic"
+   },
+   {
+    "sanatci": "marcel-duchamp",
+    "baslik": "L.H.O.O.Q, Mona Lisa with moustache"
+   },
+   {
+    "sanatci": "jean-arp",
+    "baslik": "According to the Laws of Chance"
+   }
+  ],
+  "Sürrealizm": [
+   {
+    "sanatci": "salvador-dali",
+    "baslik": "The Persistence of Memory"
+   },
+   {
+    "sanatci": "rene-magritte",
+    "baslik": "İmgelerin İhaneti",
+    "qid": "Q1061035"
+   }
+  ],
+  "Savaş sonrası figürasyon": [
+   {
+    "sanatci": "francis-bacon",
+    "baslik": "Study after Velazquez's portrait of Pope Innocent X"
+   },
+   {
+    "sanatci": "francis-bacon",
+    "baslik": "Three Studies for Figures at the Base of a Crucifixion"
+   }
+  ]
+ }
+}

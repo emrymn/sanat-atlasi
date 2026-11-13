@@ -1,0 +1,1647 @@
+{
+ "surum": 1,
+ "aciklama": "Çalış · Ders düzeni: Öğren adımının kanıt adaylarının elle doğrulaması (scripts/ders/kaynaklar.mjs okur). Anahtar '<akım>|<madde no>|<aday id>'. d: dogru (cümle bu özelliği bu eserde ya da sanatçıda/akımda açıkça söylüyor), yanlis (sözcükler tutuyor ama anlam başka ya da tersi), belirsiz (kısmen; ekranda kanıt olarak kullanılmaz). Doğrulama cümleye göre yapıldı: kaynak metinler (yürüyüş, rehberli inceleme, başyapıt yazısı, eser notu, tanıma notu, dönem metni) zaten denetlenmiş içeriktir; görsel ayrıca açılmadı. n: kısa gerekçe.",
+ "kararlar": {
+  "Akademizm ve Oryantalizm|1|1f9004d971": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|1|3d222e8f83": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|1|53bab53409": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|1|594b6feeea": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|1|ba91b84028": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|1|be214e08fd": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|1|e05125ac34": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|1|e245e0dc7f": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|1|f8c576678e": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|2|02dba8f0b3": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|2|115be79d41": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|2|12c0080aa0": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|2|24229f5df1": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|2|535240c6e9": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|2|730bf3cda0": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|2|b874dcbdf4": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|2|ebd3316f79": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|3|09f9dc97dc": {
+   "d": "yanlis",
+   "n": "mitolojik sahneler; Doğu değil"
+  },
+  "Akademizm ve Oryantalizm|3|0e3760b159": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|3|3babe47c37": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|3|54e6920ed9": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Akademizm ve Oryantalizm|3|5c9427dd26": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|3|be214e08fd": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|3|f16b5a1700": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|4|39e3d071e4": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Akademizm ve Oryantalizm|4|4ab925ceb9": {
+   "d": "belirsiz",
+   "n": "fotoğrafın etkisi; özellik değil"
+  },
+  "Akademizm ve Oryantalizm|4|8da3388f05": {
+   "d": "dogru"
+  },
+  "Akademizm ve Oryantalizm|4|ffff8c2cc8": {
+   "d": "dogru"
+  },
+  "Art Nouveau ve Viyana Secession|1|baab6a22aa": {
+   "d": "dogru"
+  },
+  "Art Nouveau ve Viyana Secession|2|467250fc0d": {
+   "d": "dogru"
+  },
+  "Art Nouveau ve Viyana Secession|2|cd98936294": {
+   "d": "dogru"
+  },
+  "Art Nouveau ve Viyana Secession|2|d5733448f4": {
+   "d": "dogru"
+  },
+  "Art Nouveau ve Viyana Secession|2|d86a585798": {
+   "d": "dogru"
+  },
+  "Art Nouveau ve Viyana Secession|2|dfb488d087": {
+   "d": "dogru"
+  },
+  "Art Nouveau ve Viyana Secession|4|467250fc0d": {
+   "d": "belirsiz",
+   "n": "kadın figürleri; uzun saç denmiyor"
+  },
+  "Art Nouveau ve Viyana Secession|4|e23b459727": {
+   "d": "belirsiz",
+   "n": "kadın figürü; uzun saç denmiyor"
+  },
+  "Barbizon ve Realizm|1|17bc644172": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|1|19e2ca18a3": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|1|9376ba70d6": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|1|b53d3c16a6": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|2|02edd1d514": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|2|07b7331ab1": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|2|109aa0bfe8": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|2|7a8fc54663": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|2|97c05b12da": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|2|9ebd972bde": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|2|c123189001": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|2|ec1a1182b3": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|2|eea8bf6f4e": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|3|0fb094f862": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|3|4dc8ab44a1": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|3|97c05b12da": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|3|982ac087b2": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|3|fd59008522": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|4|4a9aab8094": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Barbizon ve Realizm|4|92f9eb73ec": {
+   "d": "dogru"
+  },
+  "Barbizon ve Realizm|4|b53d3c16a6": {
+   "d": "dogru"
+  },
+  "Dada|1|36b8fa1f63": {
+   "d": "dogru"
+  },
+  "Dada|1|6a7d16444e": {
+   "d": "dogru"
+  },
+  "Dada|1|b018ee8f8c": {
+   "d": "dogru"
+  },
+  "Dada|1|d552c95e37": {
+   "d": "dogru"
+  },
+  "Dada|2|88ecfc024d": {
+   "d": "dogru"
+  },
+  "Dada|3|36b8fa1f63": {
+   "d": "dogru"
+  },
+  "Dada|4|36b8fa1f63": {
+   "d": "belirsiz",
+   "n": "kışkırtma var; savaş karşıtlığı denmiyor"
+  },
+  "Ekspresyonizm|1|0c131d698f": {
+   "d": "dogru"
+  },
+  "Ekspresyonizm|1|184e82d021": {
+   "d": "dogru"
+  },
+  "Ekspresyonizm|1|1d13c78f8e": {
+   "d": "dogru"
+  },
+  "Ekspresyonizm|1|25db3976ec": {
+   "d": "dogru"
+  },
+  "Ekspresyonizm|2|0c131d698f": {
+   "d": "dogru"
+  },
+  "Ekspresyonizm|2|1d13c78f8e": {
+   "d": "dogru"
+  },
+  "Ekspresyonizm|2|2a913383bf": {
+   "d": "dogru"
+  },
+  "Ekspresyonizm|2|4c4bfcbccb": {
+   "d": "dogru"
+  },
+  "Ekspresyonizm|2|f1e6471c9f": {
+   "d": "dogru"
+  },
+  "Ekspresyonizm|3|4c4bfcbccb": {
+   "d": "dogru"
+  },
+  "Empresyonizm|1|154f34b0e8": {
+   "d": "dogru"
+  },
+  "Empresyonizm|1|30cd13b573": {
+   "d": "dogru"
+  },
+  "Empresyonizm|1|46d3cfcfb7": {
+   "d": "dogru"
+  },
+  "Empresyonizm|1|47e870c079": {
+   "d": "dogru"
+  },
+  "Empresyonizm|1|62f4e60004": {
+   "d": "dogru"
+  },
+  "Empresyonizm|1|6ca304e3c4": {
+   "d": "dogru"
+  },
+  "Empresyonizm|1|e5398d1641": {
+   "d": "dogru"
+  },
+  "Empresyonizm|2|0bd4f79a02": {
+   "d": "dogru"
+  },
+  "Empresyonizm|2|164fcbbf04": {
+   "d": "dogru"
+  },
+  "Empresyonizm|2|e351f66c84": {
+   "d": "dogru"
+  },
+  "Empresyonizm|4|0740287863": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi; Monet'nin siyahsız paleti"
+  },
+  "Empresyonizm|4|6ca304e3c4": {
+   "d": "dogru"
+  },
+  "Empresyonizm|4|e9449cf685": {
+   "d": "yanlis",
+   "n": "siyah ayakkabı: tersini gösteriyor"
+  },
+  "Erken Rönesans|1|01e0fde9dd": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|1|04c6f44823": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|1|1d4e5ef087": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|1|69fd069f13": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|1|a35ed142d2": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|1|c6d7c3d014": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|1|e1d883a418": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|2|3f7e444a8b": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|2|76069af76b": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|3|186716d3cf": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|3|8260f862ba": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|3|89b9c99c3e": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Erken Rönesans|3|ce47573d20": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|4|0ec93f523f": {
+   "d": "belirsiz",
+   "n": "portre; dini sahne değil"
+  },
+  "Erken Rönesans|4|44ac72a098": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Erken Rönesans|4|64d3146f6c": {
+   "d": "dogru"
+  },
+  "Erken Rönesans|4|d26b88920c": {
+   "d": "belirsiz",
+   "n": "saray portreleri; dini sahne değil"
+  },
+  "Erken Rönesans|4|f57067ee12": {
+   "d": "dogru"
+  },
+  "Flaman Barok|1|16d9b1be72": {
+   "d": "dogru"
+  },
+  "Flaman Barok|1|4ac443732b": {
+   "d": "dogru"
+  },
+  "Flaman Barok|1|610237e017": {
+   "d": "belirsiz",
+   "n": "van Dyck; Rubens etkisi"
+  },
+  "Flaman Barok|1|6c7cc626b7": {
+   "d": "dogru"
+  },
+  "Flaman Barok|1|86d4ca696e": {
+   "d": "dogru"
+  },
+  "Flaman Barok|1|9b92a41878": {
+   "d": "dogru"
+  },
+  "Flaman Barok|1|c284cf192c": {
+   "d": "dogru"
+  },
+  "Flaman Barok|1|d71d663e6c": {
+   "d": "dogru"
+  },
+  "Flaman Barok|1|f11cbdf56e": {
+   "d": "dogru"
+  },
+  "Flaman Barok|2|16d9b1be72": {
+   "d": "dogru"
+  },
+  "Flaman Barok|2|84b2c7a815": {
+   "d": "belirsiz",
+   "n": "sıcak renk; diyagonal denmiyor"
+  },
+  "Flaman Barok|2|c284cf192c": {
+   "d": "dogru"
+  },
+  "Flaman Barok|2|d71d663e6c": {
+   "d": "dogru"
+  },
+  "Flaman Barok|2|f11cbdf56e": {
+   "d": "dogru"
+  },
+  "Flaman Barok|3|6f1adb347a": {
+   "d": "dogru"
+  },
+  "Flaman Barok|3|989103f40d": {
+   "d": "dogru"
+  },
+  "Flaman Barok|3|c23ba37119": {
+   "d": "dogru"
+  },
+  "Flaman Barok|4|20d7432cf1": {
+   "d": "dogru"
+  },
+  "Flaman Barok|4|6c933cfd5f": {
+   "d": "belirsiz",
+   "n": "büyük resim; konu denmiyor"
+  },
+  "Flaman Barok|4|8e24fe69a0": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|1|04c98bbb04": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|1|075dc2412e": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|1|33ce8e86b5": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Fransız Klasisizmi|1|67483689bd": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|1|740565140a": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|1|7e862fcdac": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|1|8c10896b56": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|1|b3c18870a2": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|1|eaa9f4347c": {
+   "d": "belirsiz",
+   "n": "kompozisyon düzeni denmiyor"
+  },
+  "Fransız Klasisizmi|3|0677825d9b": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|3|075dc2412e": {
+   "d": "belirsiz",
+   "n": "parlak ama kontrollü renk; serin denmiyor"
+  },
+  "Fransız Klasisizmi|3|15dfec02ca": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|3|283b1ad90b": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|3|67483689bd": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|3|9b52d2cd3c": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|3|d9a885c3c1": {
+   "d": "yanlis",
+   "n": "toprak tonları"
+  },
+  "Fransız Klasisizmi|4|0677825d9b": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|4|6c10f65ab4": {
+   "d": "dogru"
+  },
+  "Fransız Klasisizmi|4|be6e90a5ee": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|1|0cb1452089": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|1|2ac6a5dbde": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|1|6b99e92a8a": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|1|754429b7d7": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|1|8773dff85c": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|2|1735296437": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|2|4f6bf9fe2f": {
+   "d": "belirsiz",
+   "n": "canlı renkler; uçan figür denmiyor"
+  },
+  "Geç İtalyan Barok|2|5bf865d541": {
+   "d": "yanlis",
+   "n": "loş görünüm"
+  },
+  "Geç İtalyan Barok|2|6b99e92a8a": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|2|7057287b94": {
+   "d": "yanlis",
+   "n": "koyu fon, sert ışık"
+  },
+  "Geç İtalyan Barok|2|978032ac68": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|2|98310129bc": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|2|9fc94e231d": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|2|b0db7ece6c": {
+   "d": "belirsiz",
+   "n": "uçan figür var; renkler sert ışık-gölge"
+  },
+  "Geç İtalyan Barok|3|97572a1148": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|4|10aafca1de": {
+   "d": "dogru"
+  },
+  "Geç İtalyan Barok|4|65d469f26e": {
+   "d": "belirsiz",
+   "n": "tavan freskinin taslağı"
+  },
+  "Gotik|1|06c7632873": {
+   "d": "dogru"
+  },
+  "Gotik|1|1a58cea70a": {
+   "d": "dogru"
+  },
+  "Gotik|1|1ac9101de5": {
+   "d": "dogru"
+  },
+  "Gotik|1|57a777afc9": {
+   "d": "dogru"
+  },
+  "Gotik|1|6013c34ec3": {
+   "d": "dogru"
+  },
+  "Gotik|1|66b21317bf": {
+   "d": "dogru"
+  },
+  "Gotik|1|79c30a8200": {
+   "d": "dogru"
+  },
+  "Gotik|1|8764cc762d": {
+   "d": "dogru"
+  },
+  "Gotik|1|a26d5888e9": {
+   "d": "dogru"
+  },
+  "Gotik|2|00922cae6a": {
+   "d": "dogru"
+  },
+  "Gotik|2|0aca76387a": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Gotik|2|26a88d3d38": {
+   "d": "dogru"
+  },
+  "Gotik|2|36bf085a61": {
+   "d": "dogru"
+  },
+  "Gotik|2|36e98320b0": {
+   "d": "dogru"
+  },
+  "Gotik|2|473f4b5a26": {
+   "d": "belirsiz",
+   "n": "cümle hacim duygusunu vurguluyor"
+  },
+  "Gotik|2|5b6e5b9991": {
+   "d": "dogru"
+  },
+  "Gotik|2|6d5d09b2c7": {
+   "d": "belirsiz",
+   "n": "cümle hacim arayışını da vurguluyor"
+  },
+  "Gotik|2|fef19b31c3": {
+   "d": "dogru"
+  },
+  "Gotik|3|00922cae6a": {
+   "d": "belirsiz",
+   "n": "brokarlı kumaş; altın çizgi denmiyor"
+  },
+  "Gotik|3|2126d5b180": {
+   "d": "yanlis"
+  },
+  "Gotik|3|2942b9741f": {
+   "d": "belirsiz",
+   "n": "kıvrımlar çizgiyle; altın denmiyor"
+  },
+  "Gotik|3|36bf085a61": {
+   "d": "dogru"
+  },
+  "Gotik|3|3d3b9340bf": {
+   "d": "dogru"
+  },
+  "Gotik|3|48def87575": {
+   "d": "yanlis"
+  },
+  "Gotik|3|6d5d09b2c7": {
+   "d": "yanlis"
+  },
+  "Gotik|3|894c213fdc": {
+   "d": "yanlis"
+  },
+  "Gotik|3|abbdb0a349": {
+   "d": "yanlis",
+   "n": "çizgisel işçilik, kumaş kıvrımı değil"
+  },
+  "Gotik|4|1fede0ab21": {
+   "d": "dogru"
+  },
+  "Gotik|4|5b72ab6553": {
+   "d": "dogru"
+  },
+  "Gotik|4|6ae5e45e36": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Gotik|4|74666c6198": {
+   "d": "dogru"
+  },
+  "Gotik|4|7577bef168": {
+   "d": "dogru"
+  },
+  "Gotik|4|766c042cb9": {
+   "d": "dogru"
+  },
+  "Gotik|4|79c30a8200": {
+   "d": "dogru"
+  },
+  "Gotik|4|a03c41012b": {
+   "d": "dogru"
+  },
+  "Gotik|4|c9a253892d": {
+   "d": "dogru"
+  },
+  "Gotik|5|1279bb9c27": {
+   "d": "belirsiz",
+   "n": "zarif modelleme; süslü giysi denmiyor"
+  },
+  "Gotik|5|197eb226d6": {
+   "d": "dogru"
+  },
+  "Gotik|5|2126d5b180": {
+   "d": "yanlis"
+  },
+  "Gotik|5|2942b9741f": {
+   "d": "yanlis",
+   "n": "saray üslubu değil"
+  },
+  "Gotik|5|3d3b9340bf": {
+   "d": "belirsiz",
+   "n": "Duccio; saray üslubu değil"
+  },
+  "Gotik|5|649c4a3361": {
+   "d": "dogru"
+  },
+  "Gotik|5|7b27d6d126": {
+   "d": "dogru"
+  },
+  "Gotik|5|d4cdf5adf3": {
+   "d": "dogru"
+  },
+  "Gotik|5|d81081da8c": {
+   "d": "yanlis"
+  },
+  "Gotik|6|7b27d6d126": {
+   "d": "dogru"
+  },
+  "Gotik|6|7d3c41f03a": {
+   "d": "dogru"
+  },
+  "Gotik|6|9b5a0815b3": {
+   "d": "belirsiz"
+  },
+  "Gotik|6|b28e7c48e2": {
+   "d": "belirsiz",
+   "n": "köylü işi ve saray manzarası; saray hayatı değil"
+  },
+  "Gotik|7|001b6000ac": {
+   "d": "dogru"
+  },
+  "Gotik|7|cf54d566c9": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|1|2a3df6ffce": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|1|4cc66f9b16": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|1|554a830626": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|1|79305681d3": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|1|bccc889236": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|1|cdde135741": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|1|eea855b85e": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|2|2dbba67dac": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|2|5a6460c3d4": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|2|8bb94c7143": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|2|b7817219fa": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Hollanda Altın Çağı|2|bccc889236": {
+   "d": "belirsiz",
+   "n": "yumuşak ışık; pencere denmiyor"
+  },
+  "Hollanda Altın Çağı|2|bef5f9c662": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|2|db2ef7e589": {
+   "d": "belirsiz",
+   "n": "Steen; pencere ışığı var ama sakin değil"
+  },
+  "Hollanda Altın Çağı|2|ddd254d207": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|2|fed2b4082f": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|3|2fcd85e808": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|3|55061a4b2b": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|3|6f5cd7aec7": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|3|7a887dca53": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|3|7f49cd37bc": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Hollanda Altın Çağı|3|9a6a04ba20": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|3|bae7688e2c": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Hollanda Altın Çağı|3|d65814d5c6": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|3|f9b52f4fdb": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|4|06491df435": {
+   "d": "yanlis"
+  },
+  "Hollanda Altın Çağı|4|181d50f4db": {
+   "d": "dogru"
+  },
+  "Hollanda Altın Çağı|4|cdde135741": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|1|0a007d2249": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|1|954c49ec51": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|1|be950231e5": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|2|0354bd1028": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Kuzey Rönesansı|2|53149c720d": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|2|7df7de65de": {
+   "d": "belirsiz",
+   "n": "gündelik nesneler; simge denmiyor"
+  },
+  "Kuzey Rönesansı|2|89171184b8": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|2|a44b5fd11a": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|2|b416efdc91": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|2|f57a7e488d": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|3|0a007d2249": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|3|4e1af76653": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|3|5ce484ccd5": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|3|af815339c6": {
+   "d": "yanlis",
+   "n": "arkada manzara yok"
+  },
+  "Kuzey Rönesansı|3|bad36b84e0": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|3|ce02af6673": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|3|eeb7b1156e": {
+   "d": "dogru"
+  },
+  "Kuzey Rönesansı|3|fa14216f20": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Kuzey Rönesansı|4|65a9d3e03f": {
+   "d": "yanlis",
+   "n": "idealize çıplak beden hakkında"
+  },
+  "Kübizm|1|1b26fc3d4e": {
+   "d": "dogru"
+  },
+  "Kübizm|1|4716113c3e": {
+   "d": "dogru"
+  },
+  "Kübizm|1|d33010503c": {
+   "d": "dogru"
+  },
+  "Kübizm|2|1b26fc3d4e": {
+   "d": "dogru"
+  },
+  "Kübizm|2|60c4cb85dd": {
+   "d": "dogru"
+  },
+  "Kübizm|3|85c62aa4ab": {
+   "d": "belirsiz",
+   "n": "gazete harfleri var; natürmort, gitar denmiyor"
+  },
+  "Kübizm|4|85c62aa4ab": {
+   "d": "dogru"
+  },
+  "Maniyerizm|2|0f43509c52": {
+   "d": "dogru"
+  },
+  "Maniyerizm|2|37928add2e": {
+   "d": "dogru"
+  },
+  "Maniyerizm|2|6fd22d1a26": {
+   "d": "dogru"
+  },
+  "Maniyerizm|2|97cbf3ac3e": {
+   "d": "dogru"
+  },
+  "Maniyerizm|3|24e387c061": {
+   "d": "dogru"
+  },
+  "Maniyerizm|3|58cd2ef16e": {
+   "d": "dogru"
+  },
+  "Maniyerizm|3|6289e52f8d": {
+   "d": "dogru"
+  },
+  "Maniyerizm|3|6fd22d1a26": {
+   "d": "dogru"
+  },
+  "Maniyerizm|3|7e3b6ae707": {
+   "d": "dogru"
+  },
+  "Maniyerizm|3|927b73f8b0": {
+   "d": "dogru"
+  },
+  "Maniyerizm|3|dd49670576": {
+   "d": "yanlis",
+   "n": "anıtsal düzen; kıvrılma ya da sıkışıklık denmiyor"
+  },
+  "Maniyerizm|3|e404f2bc03": {
+   "d": "dogru"
+  },
+  "Maniyerizm|3|fe71b0ffcd": {
+   "d": "dogru"
+  },
+  "Maniyerizm|4|09fcf208b0": {
+   "d": "dogru"
+  },
+  "Maniyerizm|4|37928add2e": {
+   "d": "belirsiz",
+   "n": "renkler; hava denmiyor"
+  },
+  "Maniyerizm|4|8f0392d1d4": {
+   "d": "dogru"
+  },
+  "Maniyerizm|4|97cbf3ac3e": {
+   "d": "dogru"
+  },
+  "Maniyerizm|4|c271a52648": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Maniyerizm|4|c44d9a3cf3": {
+   "d": "dogru"
+  },
+  "Maniyerizm|4|f0b8f809d2": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Maniyerizm|4|f773428cae": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Neoklasisizm|1|47fbe85445": {
+   "d": "dogru"
+  },
+  "Neoklasisizm|1|92235e9cdc": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Neoklasisizm|2|47fbe85445": {
+   "d": "dogru"
+  },
+  "Neoklasisizm|2|616f7df806": {
+   "d": "dogru"
+  },
+  "Neoklasisizm|2|d1b1b5a66a": {
+   "d": "dogru"
+  },
+  "Neoklasisizm|2|eae640a533": {
+   "d": "dogru"
+  },
+  "Neoklasisizm|3|47fbe85445": {
+   "d": "dogru"
+  },
+  "Neoklasisizm|3|4dcff5e9c2": {
+   "d": "dogru"
+  },
+  "Neoklasisizm|3|c651dac6e0": {
+   "d": "belirsiz",
+   "n": "düzenli heykelsi gruplar; friz denmiyor"
+  },
+  "Neoklasisizm|4|3485469e13": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Neoklasisizm|4|47fbe85445": {
+   "d": "dogru"
+  },
+  "Neoklasisizm|4|5fd8ca5471": {
+   "d": "dogru"
+  },
+  "Neoklasisizm|4|c651dac6e0": {
+   "d": "belirsiz",
+   "n": "heykelsi gruplar; ışık merkezde"
+  },
+  "Post-Empresyonizm|1|3693ddc58f": {
+   "d": "dogru"
+  },
+  "Post-Empresyonizm|1|5bf5345b02": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Post-Empresyonizm|1|8063cf3cb8": {
+   "d": "dogru"
+  },
+  "Post-Empresyonizm|1|9721c7f733": {
+   "d": "dogru"
+  },
+  "Post-Empresyonizm|1|aec236eb43": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Post-Empresyonizm|1|c7212d3703": {
+   "d": "dogru"
+  },
+  "Post-Empresyonizm|1|d57d13b759": {
+   "d": "dogru"
+  },
+  "Post-Empresyonizm|1|f17d1a04a6": {
+   "d": "belirsiz",
+   "n": "noktacılık henüz sistemli değil"
+  },
+  "Post-Empresyonizm|1|fca9ac2694": {
+   "d": "dogru"
+  },
+  "Post-Empresyonizm|2|392eee927c": {
+   "d": "belirsiz",
+   "n": "düz renk; abartı denmiyor"
+  },
+  "Post-Empresyonizm|2|52861d328a": {
+   "d": "dogru"
+  },
+  "Post-Empresyonizm|2|7ec97be8dc": {
+   "d": "dogru"
+  },
+  "Post-Empresyonizm|2|8235a24e8d": {
+   "d": "dogru"
+  },
+  "Post-Empresyonizm|2|9d786b9ae8": {
+   "d": "dogru"
+  },
+  "Post-Empresyonizm|2|aec236eb43": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Post-Empresyonizm|2|d7e79e6cfb": {
+   "d": "dogru"
+  },
+  "Post-Empresyonizm|4|7a3923b66c": {
+   "d": "yanlis"
+  },
+  "Prerafaelitler|1|0f95fafb3a": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|1|2f9bbaa4e2": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|1|7405798201": {
+   "d": "belirsiz",
+   "n": "renkli örtüler; parlak denmiyor"
+  },
+  "Prerafaelitler|1|806f1edc50": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|1|8aff3ecb21": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|1|90616c1ffe": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|1|9253ce68a0": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|1|e4397354a2": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|2|5c3978600f": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|2|5cd2f3e6b3": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|2|6f5ff0ce47": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|2|8026ba73af": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|2|90616c1ffe": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|3|013b541553": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|3|67822defc7": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|4|0f95fafb3a": {
+   "d": "dogru"
+  },
+  "Prerafaelitler|4|6a546c9402": {
+   "d": "yanlis",
+   "n": "gece kutlaması; düz ışık değil"
+  },
+  "Prerafaelitler|4|90616c1ffe": {
+   "d": "dogru"
+  },
+  "Rokoko|1|00b80dc6a4": {
+   "d": "dogru"
+  },
+  "Rokoko|1|2105d71d78": {
+   "d": "dogru"
+  },
+  "Rokoko|1|4597e7501d": {
+   "d": "dogru"
+  },
+  "Rokoko|1|57114fb4a7": {
+   "d": "belirsiz",
+   "n": "Greuze; neoklasik çizgi"
+  },
+  "Rokoko|1|70f1e78430": {
+   "d": "dogru"
+  },
+  "Rokoko|1|9192a0970c": {
+   "d": "dogru"
+  },
+  "Rokoko|1|9cfd6bfdfa": {
+   "d": "dogru"
+  },
+  "Rokoko|1|d85c1ca5c4": {
+   "d": "dogru"
+  },
+  "Rokoko|1|da2076e23e": {
+   "d": "dogru"
+  },
+  "Rokoko|2|129f5a4ad7": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Rokoko|2|446b47326a": {
+   "d": "dogru"
+  },
+  "Rokoko|2|4597e7501d": {
+   "d": "dogru"
+  },
+  "Rokoko|2|546d15e68f": {
+   "d": "dogru"
+  },
+  "Rokoko|2|5df9c3c0bc": {
+   "d": "yanlis",
+   "n": "ahlak dersi, Greuze"
+  },
+  "Rokoko|2|912a590e51": {
+   "d": "dogru"
+  },
+  "Rokoko|2|b4d7350706": {
+   "d": "belirsiz",
+   "n": "hafif, dekoratif; aşk ve bahçe denmiyor"
+  },
+  "Rokoko|2|ed3be5dc54": {
+   "d": "dogru"
+  },
+  "Rokoko|2|ee0074bae6": {
+   "d": "dogru"
+  },
+  "Rokoko|4|9192a0970c": {
+   "d": "dogru"
+  },
+  "Romantizm|1|57a56e19a2": {
+   "d": "dogru"
+  },
+  "Romantizm|1|6ffec26569": {
+   "d": "dogru"
+  },
+  "Romantizm|1|75265254b9": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Romantizm|1|7aefdc9168": {
+   "d": "dogru"
+  },
+  "Romantizm|1|8ae8d154a9": {
+   "d": "dogru"
+  },
+  "Romantizm|1|aad84d6c69": {
+   "d": "dogru"
+  },
+  "Romantizm|2|5c3172b269": {
+   "d": "dogru"
+  },
+  "Romantizm|2|7aefdc9168": {
+   "d": "dogru"
+  },
+  "Romantizm|2|8ae8d154a9": {
+   "d": "dogru"
+  },
+  "Romantizm|2|b21f76ad88": {
+   "d": "dogru"
+  },
+  "Romantizm|2|b90d3eb519": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Romantizm|2|cdbe4ed067": {
+   "d": "yanlis",
+   "n": "durgun sahne"
+  },
+  "Romantizm|2|d8169c7fb8": {
+   "d": "yanlis"
+  },
+  "Romantizm|2|df7d7a5b5b": {
+   "d": "dogru"
+  },
+  "Romantizm|2|ed92d872b0": {
+   "d": "yanlis",
+   "n": "durgun sahne"
+  },
+  "Romantizm|3|0fd271eee6": {
+   "d": "dogru"
+  },
+  "Romantizm|3|42b9ee63df": {
+   "d": "dogru"
+  },
+  "Romantizm|3|434f035c7c": {
+   "d": "dogru"
+  },
+  "Romantizm|3|4e1b0edeb8": {
+   "d": "belirsiz",
+   "n": "doğanın gücü; insanın küçüklüğü denmiyor"
+  },
+  "Romantizm|3|70bc0fd337": {
+   "d": "dogru"
+  },
+  "Romantizm|3|8899dd4941": {
+   "d": "belirsiz",
+   "n": "doğa değil antik kalıntı"
+  },
+  "Romantizm|4|1754b9011c": {
+   "d": "dogru"
+  },
+  "Romantizm|4|7aefdc9168": {
+   "d": "dogru"
+  },
+  "Romantizm|4|9c30095ccb": {
+   "d": "dogru"
+  },
+  "Romantizm|4|a42fa0bf3f": {
+   "d": "dogru"
+  },
+  "Savaş sonrası figürasyon|2|0bde7063e5": {
+   "d": "dogru"
+  },
+  "Savaş sonrası figürasyon|2|1b496ff26b": {
+   "d": "dogru"
+  },
+  "Savaş sonrası figürasyon|3|c3ad63c81a": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi; şiddetli boya"
+  },
+  "Savaş sonrası figürasyon|4|1b496ff26b": {
+   "d": "belirsiz",
+   "n": "figür var; soyuta karşı denmiyor"
+  },
+  "Savaş sonrası figürasyon|4|3b94990a32": {
+   "d": "dogru"
+  },
+  "Sembolizm|1|856712abf7": {
+   "d": "dogru"
+  },
+  "Sembolizm|2|19a29c27bf": {
+   "d": "dogru"
+  },
+  "Sembolizm|2|a747011947": {
+   "d": "dogru"
+  },
+  "Sembolizm|2|c9cda051fe": {
+   "d": "dogru"
+  },
+  "Sembolizm|3|3f9fdbd556": {
+   "d": "dogru"
+  },
+  "Sembolizm|3|877aac1274": {
+   "d": "yanlis"
+  },
+  "Sembolizm|3|9ed5895518": {
+   "d": "belirsiz",
+   "n": "ışıklı kadın figürü; ölümcül kadın değil"
+  },
+  "Sembolizm|3|a29c0e9df6": {
+   "d": "dogru"
+  },
+  "Sembolizm|3|a9b4aa0a65": {
+   "d": "yanlis"
+  },
+  "Sembolizm|3|b751bd1e64": {
+   "d": "yanlis"
+  },
+  "Sembolizm|3|cff291c1fc": {
+   "d": "belirsiz",
+   "n": "kanatlı figür var; ölümcül kadın değil"
+  },
+  "Sembolizm|3|f952091bf6": {
+   "d": "dogru"
+  },
+  "Sembolizm|4|0f335eb1cf": {
+   "d": "dogru"
+  },
+  "Sembolizm|4|12ea100c54": {
+   "d": "dogru"
+  },
+  "Sembolizm|4|5f9babfef8": {
+   "d": "dogru"
+  },
+  "Sembolizm|4|65f8bb4124": {
+   "d": "dogru"
+  },
+  "Sembolizm|4|c5a1be6c62": {
+   "d": "dogru"
+  },
+  "Sembolizm|4|ca8de4f9ff": {
+   "d": "dogru"
+  },
+  "Sembolizm|4|d690f611e7": {
+   "d": "dogru"
+  },
+  "Sembolizm|4|ed45def3ba": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Sürrealizm|1|116b3e38e0": {
+   "d": "dogru"
+  },
+  "Sürrealizm|1|541898f45b": {
+   "d": "dogru"
+  },
+  "Sürrealizm|1|64f3ec1298": {
+   "d": "dogru"
+  },
+  "Sürrealizm|1|a65ea67e76": {
+   "d": "dogru"
+  },
+  "Sürrealizm|1|a815e89d91": {
+   "d": "dogru"
+  },
+  "Sürrealizm|2|0d855288fc": {
+   "d": "belirsiz",
+   "n": "Magritte; teknik denmiyor"
+  },
+  "Sürrealizm|2|98288ab09c": {
+   "d": "dogru"
+  },
+  "Sürrealizm|3|095e02200d": {
+   "d": "dogru"
+  },
+  "Sürrealizm|3|64f3ec1298": {
+   "d": "dogru"
+  },
+  "Sürrealizm|3|7fd839d246": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Sürrealizm|3|98288ab09c": {
+   "d": "dogru"
+  },
+  "Sürrealizm|3|a65ea67e76": {
+   "d": "dogru"
+  },
+  "Sürrealizm|4|8f2ac3814e": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|1|13416c7943": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|1|3dbf629f78": {
+   "d": "belirsiz",
+   "n": "renk geçişi; düz renk değil"
+  },
+  "Ukiyo-e (Japon baskısı)|1|6070f0f194": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|1|872a82388c": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|1|ba66f21b34": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|1|cfcede66aa": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|1|d576fac7d9": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|1|d894b3f5f4": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|1|dd41e6c3c3": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|3|104753098a": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|3|755b11db96": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|3|8aab5712da": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|3|d576fac7d9": {
+   "d": "dogru"
+  },
+  "Ukiyo-e (Japon baskısı)|4|ae0cb8404e": {
+   "d": "yanlis",
+   "n": "Batılı perspektifin etkisi: tersini söylüyor"
+  },
+  "Venedik Rönesansı|1|475403de3c": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|1|70b2b08992": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|2|45a01592f0": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|2|52e3fbd6c9": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|2|6a468b7a2b": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|2|72c05ab0fc": {
+   "d": "belirsiz",
+   "n": "portre; manzara yok"
+  },
+  "Venedik Rönesansı|2|be969c1ce1": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|2|dccbe07033": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|2|e182264e47": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|2|e617b5f4a5": {
+   "d": "belirsiz",
+   "n": "yumuşak ışık; manzara denmiyor"
+  },
+  "Venedik Rönesansı|2|eb4752ef92": {
+   "d": "belirsiz",
+   "n": "ışık ve atmosfer; manzara denmiyor"
+  },
+  "Venedik Rönesansı|3|69e307e714": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Venedik Rönesansı|3|70b2b08992": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|3|7243552bee": {
+   "d": "yanlis",
+   "n": "tersini söylüyor: fırça izi bırakmadan"
+  },
+  "Venedik Rönesansı|3|df74dd2869": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|4|141f4ae0e4": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|4|45a01592f0": {
+   "d": "yanlis"
+  },
+  "Venedik Rönesansı|4|6422e07e49": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|4|76f668058a": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Venedik Rönesansı|4|a57486ca72": {
+   "d": "belirsiz",
+   "n": "dinî yemek sahnesi"
+  },
+  "Venedik Rönesansı|4|ae338daffc": {
+   "d": "belirsiz",
+   "n": "karşılaştırma cümlesi"
+  },
+  "Venedik Rönesansı|4|afb002494b": {
+   "d": "belirsiz",
+   "n": "dinî yemek sahnesi"
+  },
+  "Venedik Rönesansı|4|dcd16c1e0f": {
+   "d": "dogru"
+  },
+  "Venedik Rönesansı|4|e182264e47": {
+   "d": "yanlis"
+  },
+  "Yüksek Rönesans|1|538508f505": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|1|b1ae1402f8": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|1|c5011f8a22": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|1|c61b351153": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|1|e042fb1d26": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|1|fa9ac57da5": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|2|220d1ee11d": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|2|295e6867a7": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|2|538508f505": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|2|618f509455": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|2|902cc11512": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|2|a33a1a9cb0": {
+   "d": "belirsiz",
+   "n": "yumuşak gölge var ama sfumato denmiyor; Michelangelo"
+  },
+  "Yüksek Rönesans|2|c5011f8a22": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|2|cf62fc9587": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|3|7550dbf20b": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|3|816cd27529": {
+   "d": "belirsiz",
+   "n": "ağırbaşlılık var; ideal güzellik denmiyor"
+  },
+  "Yüksek Rönesans|3|93729f7df5": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|3|b11b02159b": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|3|c61b351153": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|3|e042fb1d26": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|4|25a476bfe9": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|4|2cec20af73": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|4|a33a1a9cb0": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|4|a7f348b575": {
+   "d": "dogru"
+  },
+  "Yüksek Rönesans|4|c8921184f6": {
+   "d": "dogru"
+  },
+  "İspanyol Barok|1|4badc17f9b": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "İspanyol Barok|1|54b1c17a78": {
+   "d": "dogru"
+  },
+  "İspanyol Barok|1|631c83954e": {
+   "d": "dogru"
+  },
+  "İspanyol Barok|1|718bb736c5": {
+   "d": "dogru"
+  },
+  "İspanyol Barok|1|87df82785e": {
+   "d": "dogru"
+  },
+  "İspanyol Barok|1|b4b84d7fef": {
+   "d": "dogru"
+  },
+  "İspanyol Barok|1|dec786186f": {
+   "d": "dogru"
+  },
+  "İspanyol Barok|1|ed96c4d0cd": {
+   "d": "dogru"
+  },
+  "İspanyol Barok|2|54b1c17a78": {
+   "d": "dogru"
+  },
+  "İspanyol Barok|3|4fc5745315": {
+   "d": "yanlis",
+   "n": "gümüşi ton denmiyor"
+  },
+  "İspanyol Barok|3|6431b30f77": {
+   "d": "belirsiz",
+   "n": "saray portresi; gümüşi ton denmiyor"
+  },
+  "İspanyol Barok|3|df70ca68fe": {
+   "d": "yanlis"
+  },
+  "İspanyol Barok|3|fb71cc91ee": {
+   "d": "yanlis",
+   "n": "kırmızı-mor tonlar"
+  },
+  "İspanyol Barok|4|79d65e8104": {
+   "d": "dogru"
+  },
+  "İspanyol Barok|4|a066519433": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|1|17e37ee1f7": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|1|b1608d71e8": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|1|c646dad3b5": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|2|a0ac57fdce": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|3|21126c6b2b": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|3|4cba087824": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|3|cbe9c1b904": {
+   "d": "belirsiz",
+   "n": "dramatik sahne; hareket denmiyor"
+  },
+  "İtalyan Barok ve Caravaggizm|3|e038cfde34": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|3|e2692f9a4b": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|4|10baacb2f5": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|4|2885ca900a": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|4|77212380d9": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  },
+  "İtalyan Barok ve Caravaggizm|4|9fb52a2921": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|4|aa479adf6d": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|4|c38e9649e6": {
+   "d": "yanlis",
+   "n": "Carracci, karşı örnek"
+  },
+  "İtalyan Barok ve Caravaggizm|4|dae544b3c8": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|4|e12abe6d51": {
+   "d": "dogru"
+  },
+  "İtalyan Barok ve Caravaggizm|4|f74af43fa3": {
+   "d": "yanlis",
+   "n": "karşılaştırma cümlesi"
+  }
+ }
+}

@@ -73,7 +73,14 @@ test('Galeri: ana ekranda raf ve müze planı yok; haplar bölümlere, kalp Kole
   // kalp aramayla aynı satırda, onun sağında
   const ara = await page.locator('[data-test="arama-hapi"]').boundingBox();
   expect(k.x).toBeGreaterThanOrEqual(ara.x + ara.width);
-  expect(Math.abs(k.y + k.height / 2 - (ara.y + ara.height / 2))).toBeLessThan(4);
+  // üst bölüm açılırken öğeler sırayla kayarak gelir; hizalama hareket bitince denetlenir (yük altında ölçüm hareketin
+  // ortasına denk gelip 4 px'i aşabiliyordu)
+  await expect
+    .poll(async () => {
+      const [a, b] = await Promise.all([kalp.boundingBox(), page.locator('[data-test="arama-hapi"]').boundingBox()]);
+      return Math.abs(a.y + a.height / 2 - (b.y + b.height / 2));
+    })
+    .toBeLessThan(4);
   expect(await page.evaluate(() => document.scrollingElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
   await kalp.click();
   await expect(page).toHaveURL(/#\/koleksiyon$/);

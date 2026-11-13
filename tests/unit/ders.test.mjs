@@ -69,6 +69,7 @@ test('kaynak haritası: akımlar, sanatçılar ve maddeler uygulamanın verisiyl
   assert.ok(!adlar.has('Uluslararası Gotik'));
   assert.ok(adlar.has('Gotik'));
   const yuruyus = oku('yuruyus.json').eserler;
+  const onbellek = oku('eserler_onbellek.json');
   for (const d of k.dersler) {
     const uyeler = new Set(d.sanatcilar);
     for (const id of d.sanatcilar) assert.equal(sanatcilar.get(id).akim, d.akim, id);
@@ -80,8 +81,27 @@ test('kaynak haritası: akımlar, sanatçılar ve maddeler uygulamanın verisiyl
     }
     for (const c of d.ayirt) {
       assert.ok(adlar.has(c.komsu), `${d.akim} ↔ ${c.komsu}`);
-      for (const e of c.eser_adaylari.kendi) assert.ok(uyeler.has(e.sanatci));
+      assert.ok(c.eserler.kendi.length && c.eserler.komsu.length, `${d.akim} ↔ ${c.komsu}: eser seçilmemiş`);
+      for (const e of c.eserler.kendi) {
+        assert.ok(uyeler.has(e.sanatci), `${d.akim}: ${e.sanatci}`);
+        const eser = (onbellek.sanatcilar[e.sanatci].eserler || []).find((x) => x.baslik === e.baslik && (!e.qid || x.qid === e.qid));
+        assert.ok(eser && eser.gorseller && eser.gorseller.length && eser.pekistirme !== false, `${d.akim}: ${e.baslik} eser listesinde yok ya da görseli yok`);
+      }
     }
     assert.deepEqual(d.sina.map((x) => x.id), d.sanatcilar);
   }
+});
+
+test('doğrulama: her kanıt adayına karar verilmiş; her karar hâlâ var olan bir adaya ait', () => {
+  const k = oku('ders_kaynaklari.json');
+  const kararlar = oku('ders_dogrulama.json').kararlar;
+  const adaylar = new Set();
+  for (const d of k.dersler)
+    for (const m of d.ogren)
+      for (const a of [...m.kanit_adaylari, ...m.genel_adaylar]) {
+        adaylar.add(`${d.akim}|${m.no + 1}|${a.id}`);
+        assert.notEqual(a.durum, 'bakilmadi', `${d.akim} ${m.no + 1}. madde: ${a.cumle} (scripts/ders/kaynaklar.mjs yeni aday buldu; data/ders_dogrulama.json'a karar yazılmalı)`);
+      }
+  for (const anahtar of Object.keys(kararlar)) assert.ok(adaylar.has(anahtar), `sahipsiz karar: ${anahtar}`);
+  for (const v of Object.values(kararlar)) assert.ok(['dogru', 'yanlis', 'belirsiz'].includes(v.d));
 });

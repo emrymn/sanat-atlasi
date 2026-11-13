@@ -2043,4 +2043,29 @@ Emre: "fable için işin angarya kısmını yapabileceğin bir bölüm var mı �
   - `derslerDogrula` `ilerlemeDogrula`'ya bağlı: kayıt yedekle gider gelir, eski yedekler boş dersle yüklenir, birleşen akımın kaydı hedefe katılır.
   - `js/ders.js` kayıt doğrulamasından açılışta yüklendiği için service worker kabuğuna eklendi (sürüm 1.78.2).
 - Testler: `tests/unit/ders.test.mjs` (kayıt, bugünün dersi, doğrulama ve yedek, kaynak haritasının uygulama verisiyle tutarlılığı).
+- **Kaynaklar genişletildi** (Emre: "hepsini yap ama tasarım kısmına dokunma onu fable yapsın"):
+  - Öğren'in kanıt adaylarına eser notları (`eser_notlari.json`, yalnız sanatçının doğrulanmış eser listesindeki eserler) eklendi.
+  - Esere bağlı olmayan "genel" adaylar ayrı tutuluyor: `taninma`, tanıma notu, `kurs_notu`, dönem metni. Bunlar kanıt değil, açıklama adayı.
+  - Kanıt adayı olmayan madde 43'ten 26'ya indi.
+- **Doğrulama** (`data/ders_dogrulama.json`): 513 adayın hepsi (308 esere bağlı, 205 genel) tek tek okundu.
+  - Karar madde başına verilir: aynı cümle iki maddeye aday olabiliyor ve maddeye göre karar değişiyor.
+  - Sonuç: 395 doğru, 66 belirsiz, 52 yanlış.
+  - Yanlışların çoğu karşılaştırma cümleleri (özelliği öteki sanatçıya veren "…'den şununla ayrılır" cümleleri) ve özelliğin tersini söyleyen cümleler (ör. "ten fırça izi bırakmadan boyanmış" → "görünür fırça izi" maddesi; "siyah ayakkabılar" → "siyah yok denecek kadar az" maddesi).
+  - Doğrulama cümleye göre yapıldı; görseller ayrıca açılmadı (kaynak metinler zaten denetlenmiş içerik).
+  - Doğrulanmış eser kanıtı olmayan madde: 35 / 115. Bunlar Fable'ın ya da Emre'nin yazacağı gerçek eksikler.
+  - Kaynak haritasındaki her adayın `durum` alanı var (`dogrulandi` / `belirsiz` / `yanlis`). Ekranda yalnız `dogrulandi` olanlar kanıt olarak gösterilir.
+  - Test: her adayın kararı olmalı ve her karar var olan bir adaya ait olmalı. Veri değişip yeni aday çıkarsa test düşer, karar istenir.
+- **Ayırt et eserleri** (`data/ders_ayirt_eserleri.json`): her akımdan 1–3 temsilci eser, öncelik sırasıyla (69 eser, 28 akım).
+  - Öneri, eserde doğrulanmış özellik sayısından (×3), yürüyüşünden (+2) ve bilinirlikten (`sl`) hesaplandı. Hepsi görsellerinden oluşturulan tabakalarda gözle kontrol edildi.
+  - Elle değiştirilenler:
+    - Yüksek Rönesans: önerilen gravür ve karakalem hazırlık çizimi yerine Rafael'in Saka Kuşlu Meryem'i, Mona Lisa ve Âdem'in Yaratılışı.
+    - İspanyol Barok: Velázquez'in erken ve karanlık "Öğle Yemeği" yerine Las Meninas.
+    - Neoklasisizm: Napolyon portresi yerine Horatii'lerin Yemini ve Kauffman'ın Kornelia'sı.
+    - Kübizm: önerilen eser Picasso'nun Mavi Dönem gravürüydü; yerine Vollard Portresi ve Üç Müzisyen.
+    - Dada: Dada öncesi resimler yerine Höch'ün mutfak bıçağı kolajı, L.H.O.O.Q. ve Arp'ın rastlantı kolajı.
+    - Sürrealizm ve Savaş sonrası figürasyon: yerel kopyası yoktu; WikiArt görsellerine bakılarak seçildi (Belleğin Azmi, İmgelerin İhaneti; Bacon'un Papa çalışması ve Çarmıha Geriliş triptiği).
+  - Bir çiftte iki akımın birinci eserleri yan yana; ötekiler yedek. Otomatik "en bilinen eser" önerisi kaldırıldı.
+- **Bugün'ün tablosu:** yüz odağı verisi ağ hatasıyla yüklenemezse (`odaklariYukle` null döner) 3 sn arayla en çok 3 kez daha denenir. Önceden o açılışta hiç kaydırılmıyordu. Galeri ve Atölye'deki öteki kullanımlar değişmedi.
+- **Kullanılmayan CSS silindi:** İş 172'nin Müze planı (`.gz-plan`, `.gz-plan-harita`, `.oda*`) ve İş 171'in Başyapıtlar rafı (`.gz-raf*`), animasyonlarıyla birlikte; 380 satır. Hâlâ kullanılan `.gz-plan-bas` kaldı. Gruplu seçicilerden yalnız kullanılmayan parçalar çıktı (iki seçici yeniden yazıldı). Galeri, Çalış, Bugün ve Yolculuk tam sayfa görüntüleri eski ve yeni CSS ile piksel piksel aynı. Yöntemin farkı yakaladığı bilerek değiştirilmiş bir CSS'le denetlendi.
+- **Test:** `is172` (Galeri: kalp aramayla aynı satırda) tam koşuda bir kez düştü: 4,31 px > 4. Üst bölüm açılırken öğeler sırayla kayarak geliyor ve yük altında ölçüm hareketin ortasına denk geliyordu. Tek başına eski ve yeni CSS ile 8/8 geçiyor. Artık hizalama `expect.poll` ile, hareket bitince denetleniyor.
 
