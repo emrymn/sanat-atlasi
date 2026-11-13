@@ -42,7 +42,7 @@ Durum sütunu: **düzeltildi** / **kısmen** / **bilerek bırakıldı** / **kara
 | 16 | `idb.js` bağlantı olaylarını dinlemiyor. | `js/idb.js` | Y7 | **düzeltildi:** `onversionchange` kapatır, `onclose` sonraki işlemde yeniden açtırır |
 | 17 | `index.html`'de `Document.prototype.querySelector` yaması (gömülü önizleme için). | `index.html` | S8 | **bilerek bırakıldı** |
 
-Testler: `tests/unit/duzeltmeler.test.mjs`, `tests/e2e/denetim_dogrulama.spec.js`.
+Testler: `tests/unit/duzeltmeler.test.mjs`, `tests/e2e/denetim_dogrulama.spec.js`. Tam takım: birim 360/360, uçtan uca (Chromium, iPhone 13) 195/195.
 
 ## 2. Raporda yanlış ya da abartılı bulunan iddialar
 
