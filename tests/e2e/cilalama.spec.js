@@ -996,7 +996,8 @@ test.describe('İş 76: ana sayfalarda geri yok', () => {
     // alt sayfadan sekme çubuğuyla Yolculuk'a
     await page.locator('#sekmeler a[data-sekme="harita"]').click();
     await expect(page).toHaveURL(/#\/harita$/);
-    expect(await page.evaluate(() => window.__atlas.yigin)).toEqual(['#/harita']);
+    // sekme location.replace ile değişir; yığın hashchange'te kurulur (URL'den bir an sonra): yerleşmesi beklenir
+    await expect.poll(() => page.evaluate(() => window.__atlas.yigin)).toEqual(['#/harita']);
     await page.waitForTimeout(500);
     const cdp = await context.newCDPSession(page);
     await surukle(page, cdp, 6, 320);
@@ -1164,7 +1165,7 @@ test('İş 89: bölüm şeridi geçişsiz, yığında yer değiştirir', async (
   await expect(page).toHaveURL(/#\/konular$/);
   expect(await page.locator('.sayfa-katman').count()).toBe(0);
   expect(await page.locator('#uygulama').evaluate((e) => e.getAnimations().length)).toBe(0);
-  expect(await page.evaluate(() => window.__atlas.yigin)).toEqual(['#/konular']);
+  await expect.poll(() => page.evaluate(() => window.__atlas.yigin)).toEqual(['#/konular']);
   // 1.76.4: konu grupları da kardeş bölüm (sekme): yığında yer değiştirir, geçişsiz
   const diger = page.locator('.konu-grup-serit a:not([aria-current])').first();
   const hedef = await diger.getAttribute('href');

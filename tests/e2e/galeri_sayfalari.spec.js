@@ -103,7 +103,7 @@ test('Konular: sekmeler ve kartlar 44 pt; karttaki sayı konunun bütün resimle
   await kaydir(300, 120);
   await expect.poll(() => page.evaluate(() => location.hash)).toBe(ikinci);
   await expect(page.locator('[data-test="konu-grup-serit"] a[aria-current="page"]')).toHaveAttribute('href', ikinci);
-  expect(await page.evaluate(() => window.__atlas.yigin)).toEqual([ikinci]);
+  await expect.poll(() => page.evaluate(() => window.__atlas.yigin)).toEqual([ikinci]);
   await kaydir(120, 300);
   await expect(page.locator('[data-test="konu-grup-serit"] a').first()).toHaveAttribute('aria-current', 'page');
   await page.locator('.konu-kart').first().click();
