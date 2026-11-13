@@ -474,8 +474,10 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
   expect(await telefonda()).toBeLessThan(n);
   expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBe('1');
   expect(once).toBeLessThan(n);
-  // İş 123: yarıda kalan indirme (uygulama kapandı) hata günlüğüne kaçıncı görselde kaldığıyla yazılır; iz silinir
-  expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:hatalar'))).toContain('yarıda kaldı');
+  // İş 123: yarıda kalan indirme (uygulama kapandı) hata günlüğüne kaçıncı görselde kaldığıyla yazılır; iz silinir.
+  // Kayıt devasaSurdur'da, açılıştan 4 sn sonra düşer (js/app.js); yeniden yüklemeden önce başlayan istekler service
+  // worker'da arkadan bitince yukarıdaki sayaç ondan önce tutabilir: kayıt beklenir
+  await expect.poll(() => page.evaluate(() => localStorage.getItem('sanat-atlasi:hatalar')), { timeout: 15000 }).toContain('yarıda kaldı');
   // Ayarlar'a dönünce yenilenip kalan parçalar kendiliğinden iner
   await page.evaluate(() => (location.hash = '#/ayarlar'));
   await expect.poll(telefonda, { timeout: 60000 }).toBe(n);
