@@ -68,6 +68,8 @@ Elle verilen görsel kararları (`data/gorsel_kararlari.json`) önbellek üretil
 
 Vekil sunucu arkasında `onbellek.mjs` için: `NODE_USE_ENV_PROXY=1 node scripts/onbellek.mjs`. Yalnızca bazı sanatçıları yenilemek için id'lerini argüman olarak ver; tümünü baştan almak için `YENIDEN=1`.
 
+Yalnız bazı kaynakların ham yanıtlarını yenilemek için `TAZE=wd` (ya da `TAZE=wd,met`; kaynaklar: `wd`, `met`, `aic`, `cma`, `commons`): ötekiler `scripts/.ham/`'daki kopyadan gelir. Wikidata sorgusu değiştiğinde (İş 174) `TAZE=wd node scripts/onbellek.mjs` yeterli; müzelere yeniden gidilmez. Bir kaynak atlanırsa (403, eksik NGA CSV'si) betik sonunda eski dosyayı geri yazar ve uyarır; eserler sessizce kaybolmaz (bilerek eksik yazmak için `EKSIK_KABUL=1`).
+
 ### Sanatçının portresi ve adının okunuşu
 
 `data/kunye.json`, `gorseller/portre/` ve `gorseller/ses/` için Mac'te depo kökünde (Pillow gerekir):

@@ -149,3 +149,14 @@ test('Wikidata sorguları: yüzyıl hassasiyetli tarih ve eski koleksiyon (Führ
   assert.match(g, /FILTER NOT EXISTS \{ \?kolSt pq:P582/);
   assert.match(g, /wd:Q475667/);
 });
+
+test('TAZE: 1 hepsini, kaynak listesi yalnız o kaynakların ham yanıtlarını yeniler', async () => {
+  const { tazeMi } = await import('../../scripts/kaynaklar/ortak.mjs');
+  assert.equal(tazeMi('wd-genis:Q1', undefined), false);
+  assert.equal(tazeMi('aic-eser:1', '1'), true);
+  assert.equal(tazeMi('wd-genis:Q1', 'wd'), true);
+  assert.equal(tazeMi('wd-sanatci:Q1,Q2', 'wd'), true);
+  assert.equal(tazeMi('aic-eser:1', 'wd'), false);
+  assert.equal(tazeMi('met-nesne:3', 'wd, met'), true);
+  assert.equal(tazeMi('commons-kat:x', 'cma'), false);
+});
