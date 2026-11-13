@@ -1064,6 +1064,9 @@ test.describe('İş 80: keskin görseller', () => {
 
   test('sanatçı sayfasındaki eserler 1280 px kopyaya geçer, keskin; Tuval\'in büyük tablosu en büyük kopyayı alır', async ({ page, context }) => {
     await agiHazirla(context);
+    // Günün sanatçısı tarihe bağlı; bazı günlerin eseri yalnız data/daha_buyuk.json'daki (/y/) kopyayla gelir.
+    // Testin son adımı günün eserinin en büyük (/d/) kopyaya geçtiğini sınar: tarih sabitlenir.
+    await page.clock.setFixedTime(new Date('2026-11-13T12:00:00+03:00'));
     const yerel = JSON.parse(readFileSync(new URL('../../data/yerel_gorseller.json', import.meta.url), 'utf8')).gorseller;
     const adlar = Object.values(yerel);
     await context.route(/\/data\/gorsel_kaynagi\.json(\?.*)?$/, (r) =>
