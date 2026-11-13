@@ -1,7 +1,8 @@
 // İş 174: data/eserler_onbellek.json'daki Wikidata kökenli YIL ve MÜZE alanlarını, müzelere hiç gitmeden yeni
 // kurallarla tazeler. Eser eklemez, silmez, görsellere dokunmaz.
 //   - Yıl: yalnız en iyi sıradaki (BestRank) ve on yıl ya da daha ince hassasiyetteki P571 ("1490'lar" 1490 kalır; "15. yüzyıl" 1500 sayılmaz);
-//     tarih kabaysa "en erken tarih" niteleyicisi (P1319) on yıl ya da daha inceyse o.
+//     tarih kabaysa "en erken tarih" (P1319) ya da başlangıç (P580) niteleyicisi; o da yoksa değer yuvarlak değilse
+//     (1529; yüzyıl hassasiyetiyle yanlış girilmiş) değerin kendisi. 1500, 1650, 1700 gibi yer tutucular alınmaz.
 //   - Müze: bitiş tarihi olmayan P195 koleksiyonları; Führermuseum ve Münih Toplama Noktası hariç.
 // Kurallar:
 //   - Yeni yıl varsa yazılır. Yoksa ve eser yalnız Wikidata'dan geliyorsa (müze kaynağı yok) eski yıl silinir
@@ -26,8 +27,9 @@ export function sorgu(qid) {
   return `SELECT ?item (GROUP_CONCAT(DISTINCT ?yilS; separator="¦¦") AS ?yillar) (GROUP_CONCAT(DISTINCT ?kolL; separator="¦¦") AS ?muzeler) WHERE {
   ?item wdt:P170 wd:${qid} .
   OPTIONAL { ?item p:P571 ?st . ?st a wikibase:BestRank ; psv:P571 ?d . ?d wikibase:timeValue ?inc0 ; wikibase:timePrecision ?p .
-    OPTIONAL { ?st pqv:P1319 ?ed . ?ed wikibase:timeValue ?en ; wikibase:timePrecision ?ep . FILTER(?ep >= 8) }
-    BIND(STR(YEAR(IF(?p >= 8, ?inc0, ?en))) AS ?yilS) }
+    OPTIONAL { ?st pqv:P1319|pqv:P580 ?ed . ?ed wikibase:timeValue ?en ; wikibase:timePrecision ?ep . FILTER(?ep >= 8) }
+    BIND(YEAR(?inc0) AS ?y0)
+    BIND(STR(YEAR(IF(?p >= 8, ?inc0, IF(BOUND(?en), ?en, IF(?y0 - 50 * FLOOR(?y0 / 50) != 0, ?inc0, ?yok))))) AS ?yilS) }
   OPTIONAL { ?item p:P195 ?ks . ?ks ps:P195 ?kol ; wikibase:rank ?kr . FILTER(?kr != wikibase:DeprecatedRank)
     FILTER NOT EXISTS { ?ks pq:P582 ?bitis } FILTER(?kol NOT IN (wd:Q475667, wd:Q1053735))
     ?kol rdfs:label ?kolL . FILTER(LANG(?kolL) = "en") }

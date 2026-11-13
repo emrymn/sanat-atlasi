@@ -141,7 +141,8 @@ test('ters soru: sorulan sanatçıya da atfedilen eser yanlış seçenek olamaz'
 test('Wikidata sorguları: yüzyıl hassasiyetli tarih ve eski koleksiyon (Führermuseum) alınmaz', () => {
   for (const q of [eserSorgusu('Q5592'), genisEserSorgusu('Q5592')]) {
     assert.match(q, /wikibase:timePrecision \?incP/);
-    assert.match(q, /IF\(\?incP >= 8, \?inc0, \?incEn\)/);
+    assert.match(q, /IF\(\?incP >= 8, \?inc0, IF\(BOUND\(\?incEn\)/);
+    assert.match(q, /50 \* FLOOR/);
     assert.match(q, /pqv:P1319/);
     assert.match(q, /wikibase:BestRank/);
     assert.doesNotMatch(q, /wdt:P571/);
