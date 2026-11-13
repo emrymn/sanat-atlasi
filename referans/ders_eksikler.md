@@ -11,7 +11,7 @@
 
 | Akım | Sanatçı | Gör (yürüyüş) | Öğren (doğrulanmış eser kanıtı olan / madde) | Ayırt et (cümlesi olan / komşu) | Sına ("Neden?" kaynağı olmayan) |
 |---|---|---|---|---|---|
-| Gotik | 9 | 9 eser | 6 / 7 | 1 / 1 | – |
+| Gotik | 9 | 9 eser | 5 / 7 | 1 / 1 | – |
 | Erken Rönesans | 8 | 8 eser | 4 / 4 | 2 / 3 | – |
 | Kuzey Rönesansı | 11 | 11 eser | 3 / 4 | 2 / 3 | – |
 | Yüksek Rönesans | 6 | 6 eser | 4 / 4 | 3 / 3 | – |
@@ -37,10 +37,10 @@
 | Ekspresyonizm | 5 | 4 eser | 2 / 4 | 2 / 3 | – |
 | Kübizm | 1 | 1 eser | 1 / 4 | 1 / 2 | – |
 | Dada | 4 | **yok** | 1 / 4 | 2 / 2 | – |
-| Sürrealizm | 4 | **yok** | 3 / 4 | 2 / 2 | – |
+| Sürrealizm | 4 | **yok** | 4 / 4 | 2 / 2 | – |
 | Savaş sonrası figürasyon | 1 | **yok** | 2 / 4 | 0 / 2 | – |
 
-Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası figürasyon. Doğrulanmış eser kanıtı olmayan "Nasıl tanınır?" maddesi: 35 / 115. Adayların doğrulaması: dogrulandi 395, belirsiz 66, yanlis 52. Karşılaştırma cümlesi olmayan komşu çifti: 27 / 74. "Neden?" kaynağı olmayan sanatçı: 0.
+Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası figürasyon. Doğrulanmış eser kanıtı olmayan "Nasıl tanınır?" maddesi: 35 / 115. Adayların doğrulaması: dogrulandi 406, yanlis 62, belirsiz 45. Karşılaştırma cümlesi olmayan komşu çifti: 27 / 74. "Neden?" kaynağı olmayan sanatçı: 0.
 
 ## Ayrıntı
 
@@ -48,11 +48,11 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 
 - Gör: Annunciation (triptik) (simone-martini, 1333; 6 nokta, rehberli inceleme de var) · The Nativity with the Prophets Isaiah and Ezekiel (duccio-di-buoninsegna, 1308; 6 nokta) · The Fall of the Rebel Angels (limbourg-kardesler, 1411; 5 nokta)
 - Öğren 1. "Altın zemin ve ahşap pano üzerine tempera": Assisi'li Aziz Franciscus ve Yaşamından Sahneler (basyapitlar.json, Ne görüyoruz?) · Painted crucifix (eser_notlari.json, eser notu) · The Madonna and Child in Majesty Surrounded by Angels (yuruyus.json, Taht) · Santa Croce Çarmıhı (basyapitlar.json, özet) · İsa'nın Kudüs'e Girişi (basyapitlar.json, özet) · Saint Margaret or Agatha (eser_notlari.json, eser notu) · genel açıklama 3
-- Öğren 2. "Uzun, ince, biraz düz figürler; Bizans etkisi": The Madonna and Child in Majesty Surrounded by Angels (yuruyus.json, Meryem'in yüzü) · Assisi'li Aziz Franciscus (eser_ayrintilari.json, Yüz) · Diptych: Crucifixion (eser_notlari.json, eser notu) · Crucifix (eser_notlari.json, eser notu) · genel açıklama 2
+- Öğren 2. "Uzun, ince, biraz düz figürler; Bizans etkisi": The Madonna and Child in Majesty Surrounded by Angels (yuruyus.json, Meryem'in yüzü) · Assisi'li Aziz Franciscus (eser_ayrintilari.json, Yüz) · Diptych: Crucifixion (eser_notlari.json, eser notu) · Crucifix (eser_notlari.json, eser notu) · The Virgin and Child with Two Angels (eser_notlari.json, eser notu) · Madonna ve çocuk (eser_notlari.json, eser notu) · genel açıklama 2
 - Öğren 3. "Altın çizgilerle işlenmiş kumaş kıvrımları": **doğrulanmış eser kanıtı yok** · genel açıklama 2
 - Öğren 4. "Meryem ve Çocuk, boyalı haç, sunak resmi": Meryem'in Doğumu (basyapitlar.json, özet) · Aziz Maxima ve Aziz Ansanus ile Müjde (Triptik) (basyapitlar.json, özet) · Coronation of the Virgin with Saints (Valle Romita Polyptych) (eser_notlari.json, eser notu) · St. Francis freski (Alt Kilise) (eser_notlari.json, eser notu) · Maestà di Santa Maria dei Servi (eser_notlari.json, eser notu) · The Virgin and Child with Two Angels (eser_notlari.json, eser notu) · genel açıklama 2
-- Öğren 5. "Zarif, kıvrımlı çizgiler ve süslü giysiler (Uluslararası Gotik)": April (eser_notlari.json, eser notu) · Şubat (basyapitlar.json, Neden önemli?) · genel açıklama 2
-- Öğren 6. "Saray hayatı, at, av ve ayrıntılı doğa (Uluslararası Gotik)": Şubat (basyapitlar.json, Neden önemli?) · genel açıklama 1
+- Öğren 5. "Zarif, kıvrımlı çizgiler ve süslü giysiler (Uluslararası Gotik)": April (eser_notlari.json, eser notu) · genel açıklama 2
+- Öğren 6. "Saray hayatı, at, av ve ayrıntılı doğa (Uluslararası Gotik)": **doğrulanmış eser kanıtı yok** · genel açıklama 1
 - Öğren 7. "Minyatür inceliğinde el yazmaları (Uluslararası Gotik)": Şubat (basyapitlar.json, Ne görüyoruz?) · genel açıklama 1
 - Ayırt et ↔ Erken Rönesans: The Madonna and Child in Majesty Surrounded by Angels ↔ The Tribute Money; 2 karşılaştırma cümlesi; özellik maddeleri 7 / 4
 
@@ -62,7 +62,7 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 - Öğren 1. "Tek kaçış noktalı doğrusal perspektif": The Hunt in the Forest (eser_notlari.json, eser notu) · Vergi Parası (basyapitlar.json, Kompozisyon, ışık ve renk) · İsa'nın Anahtarları Petrus'a Vermesi (basyapitlar.json, Kompozisyon, ışık ve renk) · The Tribute Money (eser_notlari.json, eser notu) · Meryem'e Müjde (basyapitlar.json, Kompozisyon, ışık ve renk) · The Holy Trinity (fresk) (yuruyus.json, Tonozlu tavan) · genel açıklama 1
 - Öğren 2. "Antik mimari ve heykelden alınmış hacimli figürler": Vergi Parası (basyapitlar.json, Kompozisyon, ışık ve renk) · Virgin and Child Enthroned with Four Angels (yuruyus.json, Klasik mimari)
 - Öğren 3. "Net çizgiler, berrak ve eşit ışık": İsa'nın Anahtarları Petrus'a Vermesi (basyapitlar.json, Kompozisyon, ışık ve renk) · Meryem'e Müjde (basyapitlar.json, Kompozisyon, ışık ve renk) · genel açıklama 1
-- Öğren 4. "Dini sahnelerde gerçekçi mekân ve portre": İsa'nın Çarmıha Gerilişi (eser_notlari.json, eser notu) · St. Peter Healing the Sick with His Shadow (eser_notlari.json, eser notu)
+- Öğren 4. "Dini sahnelerde gerçekçi mekân ve portre": St. Peter Healing the Sick with His Shadow (eser_notlari.json, eser notu)
 - Ayırt et ↔ Gotik: The Tribute Money ↔ The Madonna and Child in Majesty Surrounded by Angels; 2 karşılaştırma cümlesi; özellik maddeleri 4 / 7
 - Ayırt et ↔ Yüksek Rönesans: The Tribute Money ↔ Madonna of the Goldfinch; 2 karşılaştırma cümlesi; özellik maddeleri 4 / 4
 - Ayırt et ↔ Venedik Rönesansı: The Tribute Money ↔ Venus of Urbino; 0 karşılaştırma cümlesi; özellik maddeleri 4 / 4
@@ -71,7 +71,7 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 
 - Gör: Arnolfini Portrait (jan-van-eyck, 1434; 6 nokta, rehberli inceleme de var) · Elçiler (hans-holbein-genc, 1533; 6 nokta, rehberli inceleme de var) · The fountain of youth (lucas-cranach-yasl, 1546; 6 nokta)
 - Öğren 1. "Yağlı boyada inanılmaz ayrıntı (kumaş, metal, cam)": Elçiler (The Ambassadors) (basyapitlar.json, Kompozisyon, ışık ve renk) · genel açıklama 2
-- Öğren 2. "Gizli simgelerle dolu gündelik nesneler": Mérode Altarpiece (eser_notlari.json, eser notu) · Mérode Triptiği (basyapitlar.json, Anlam ve semboller) · Elçiler (eser_notlari.json, eser notu) · genel açıklama 2
+- Öğren 2. "Gizli simgelerle dolu gündelik nesneler": Mérode Altarpiece (eser_notlari.json, eser notu) · Mérode Triptiği (basyapitlar.json, Anlam ve semboller) · The Annunciation (eser_notlari.json, eser notu) · Elçiler (eser_notlari.json, eser notu) · genel açıklama 2
 - Öğren 3. "Pencereden görünen manzara, iç mekân ışığı": Death of the Virgin (eser_notlari.json, eser notu) · Self-Portrait (eser_notlari.json, eser notu) · Donor Henri de Werl, protected by St. John the Baptist (yuruyus.json, Pencereler) · Mérode Triptiği (eser_ayrintilari.json, Pencereden kent) · Madonna ve çocuk (eser_notlari.json, eser notu) · genel açıklama 1
 - Öğren 4. "Ciddi, gerçekçi, idealleştirilmemiş yüzler": **doğrulanmış eser kanıtı yok**
 - Ayırt et ↔ Gotik: Arnolfini Portrait ↔ The Madonna and Child in Majesty Surrounded by Angels; 1 karşılaştırma cümlesi; özellik maddeleri 4 / 7
@@ -93,7 +93,7 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 
 - Gör: Bacchus ve Ariadne (titian, 1520; 7 nokta) · Saint George and the Dragon (tintoretto, 1555; 5 nokta) · Kana'da Düğün (paolo-veronese, 1562; 6 nokta, rehberli inceleme de var)
 - Öğren 1. "Çizgiden çok renk (colore): sıcak, doygun tonlar": Urbino Venüsü (Venus of Urbino) (basyapitlar.json, Kompozisyon, ışık ve renk) · genel açıklama 1
-- Öğren 2. "Yumuşak ışık ve atmosferli manzara": Çobanların Tapınması (eser_notlari.json, eser notu) · Saint Francis in the Desert (eser_notlari.json, eser notu) · Yudit (yuruyus.json, Manzara) · genel açıklama 3
+- Öğren 2. "Yumuşak ışık ve atmosferli manzara": Çobanların Tapınması (eser_notlari.json, eser notu) · Madonna del Prato (Bellini) (eser_notlari.json, eser notu) · Saint Francis in the Desert (eser_notlari.json, eser notu) · Yudit (yuruyus.json, Manzara) · genel açıklama 3
 - Öğren 3. "Görünür fırça izi, tuval üzerine yağlı boya": **doğrulanmış eser kanıtı yok** · genel açıklama 2
 - Öğren 4. "Çıplak figür, mitoloji ve şölen sahneleri": The Feast of the Gods (eser_notlari.json, eser notu) · Naked Young Woman in Front of the Mirror (eser_notlari.json, eser notu) · The Feast of the Gods (eser_notlari.json, eser notu)
 - Ayırt et ↔ Yüksek Rönesans: Venus of Urbino ↔ Madonna of the Goldfinch; 1 karşılaştırma cümlesi; özellik maddeleri 4 / 4
@@ -115,7 +115,7 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 - Gör: The Lute Player (orazio-gentileschi, 1612; 6 nokta, rehberli inceleme de var) · Assumption of the Virgin (annibale-carracci, 1587; 5 nokta) · The Conversion of Saint Paul (caravaggio, 1600; 5 nokta)
 - Öğren 1. "Tenebrizm: zifiri karanlıkta sert spot ışığı": Holofernes'in Kafasını Kesen Judith (basyapitlar.json, Kompozisyon, ışık ve renk) · Emmaus'ta Akşam Yemeği (basyapitlar.json, Kompozisyon, ışık ve renk) · genel açıklama 1
 - Öğren 2. "Sokaktan alınmış gerçekçi, kirli ayaklı modeller": **doğrulanmış eser kanıtı yok** · genel açıklama 1
-- Öğren 3. "En dramatik an; izleyiciye taşan hareket": Massacre of the Innocents (eser_notlari.json, eser notu) · Women Gladiators (eser_notlari.json, eser notu) · genel açıklama 2
+- Öğren 3. "En dramatik an; izleyiciye taşan hareket": Massacre of the Innocents (eser_notlari.json, eser notu) · Judith and Holofernes (eser_notlari.json, eser notu) · Women Gladiators (eser_notlari.json, eser notu) · genel açıklama 2
 - Öğren 4. "Çapraz kompozisyon, yakın plan figürler": David and Goliath (eser_notlari.json, eser notu) · Arrest of Christ (eser_notlari.json, eser notu) · Saints Peter and Paul (eser_notlari.json, eser notu) · Kratos Prometheus’u zincirlerken (eser_notlari.json, eser notu) · Concert (eser_notlari.json, eser notu) · Pezevenk Kadın (basyapitlar.json, özet)
 - Ayırt et ↔ İspanyol Barok: Supper at Emmaus ↔ Agnus Dei; 0 karşılaştırma cümlesi; özellik maddeleri 4 / 4
 - Ayırt et ↔ Flaman Barok: Supper at Emmaus ↔ The Rape of the Daughters of Leucippus; 0 karşılaştırma cümlesi; özellik maddeleri 4 / 4
@@ -136,7 +136,7 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 ### Flaman Barok
 
 - Gör: The Fall of the Damned (peter-paul-rubens, 1621; 4 nokta) · The Vision of the Blessed Hermann Joseph (anthony-van-dyck, 1629; 4 nokta)
-- Öğren 1. "Etli, canlı, hareketli bedenler (Rubens)": The Rape of the Daughters of Leucippus (eser_notlari.json, eser notu) · The Fall of the Damned (yuruyus.json, Düşen bedenler) · The Three Graces (eser_notlari.json, eser notu) · Romulus and Remus (eser_notlari.json, eser notu) · Çarmıhın Dikilişi (basyapitlar.json, Neden önemli?) · genel açıklama 3
+- Öğren 1. "Etli, canlı, hareketli bedenler (Rubens)": The Rape of the Daughters of Leucippus (eser_notlari.json, eser notu) · The Fall of the Damned (yuruyus.json, Düşen bedenler) · The Three Graces (eser_notlari.json, eser notu) · Romulus and Remus (eser_notlari.json, eser notu) · Çarmıhın Dikilişi (basyapitlar.json, Neden önemli?) · Drunken Silenus (eser_notlari.json, eser notu) · genel açıklama 3
 - Öğren 2. "Sıcak renkler, kıvrılan diyagonal kompozisyon": Romulus and Remus (eser_notlari.json, eser notu) · The Rape of the Daughters of Leucippus (eser_notlari.json, eser notu) · genel açıklama 2
 - Öğren 3. "Zengin portreler, ipek ve dantel (van Dyck)": Lord John Stuart and His Brother, Lord Bernard Stuart (eser_notlari.json, eser notu) · Portrait of Lady Theresa Shirley (eser_notlari.json, eser notu) · genel açıklama 1
 - Öğren 4. "Av, mitoloji ve büyük sunak resimleri": **doğrulanmış eser kanıtı yok** · genel açıklama 2
@@ -147,7 +147,7 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 
 - Gör: The Return of the Prodigal Son (rembrandt-van-rijn, 1668; 6 nokta, rehberli inceleme de var) · Açık Pencere Önünde Mektup Okuyan Kız (johannes-vermeer, 1658; 5 nokta) · Young Man and Woman in an Inn (frans-hals, 1623; 5 nokta)
 - Öğren 1. "Gündelik hayat (janr), iç mekân, natürmort": Merrymakers at Shrovetide (eser_notlari.json, eser notu) · A Mayor of Delft and his Daughter (eser_notlari.json, eser notu) · Aziz Nicholas Yortusu (basyapitlar.json, Neden önemli?) · Woman with a Water Jug (eser_notlari.json, eser notu) · genel açıklama 3
-- Öğren 2. "Pencereden süzülen sakin ışık (Vermeer)": The Astronomer (eser_notlari.json, eser notu) · Süt Boşaltan Kadın (eser_ayrintilari.json, Sepet ve bakır kova) · Açık Pencere Önünde Mektup Okuyan Kız (eser_notlari.json, eser notu) · The Geographer (eser_notlari.json, eser notu) · genel açıklama 2
+- Öğren 2. "Pencereden süzülen sakin ışık (Vermeer)": The Astronomer (eser_notlari.json, eser notu) · Süt Boşaltan Kadın (eser_ayrintilari.json, Sepet ve bakır kova) · Açık Pencere Önünde Mektup Okuyan Kız (eser_notlari.json, eser notu) · Woman with a Water Jug (eser_notlari.json, eser notu) · The Geographer (eser_notlari.json, eser notu) · genel açıklama 2
 - Öğren 3. "Grup portreleri ve derin ışık-gölge (Rembrandt)": Gece Devriyesi (eser_notlari.json, eser notu) · Militia Company of District XI under the Command of Captain Reynier Reael (eser_notlari.json, eser notu) · Regentesses of the Old Men's Alms House (eser_notlari.json, eser notu) · The Banquet of the Officers of the St George Militia Company in 1616 (eser_notlari.json, eser notu) · Susanna and the Elders (eser_notlari.json, eser notu) · Dr. Nicolaes Tulp'un Anatomi Dersi (eser_notlari.json, eser notu) · genel açıklama 1
 - Öğren 4. "Küçük boy, burjuva alıcı için resim": **doğrulanmış eser kanıtı yok** · genel açıklama 2
 - Ayırt et ↔ Flaman Barok: Açık Pencere Önünde Mektup Okuyan Kız ↔ The Rape of the Daughters of Leucippus; 1 karşılaştırma cümlesi; özellik maddeleri 4 / 4
@@ -157,7 +157,7 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 ### Fransız Klasisizmi
 
 - Gör: Portrait of Louis XIV (hyacinthe-rigaud, 1701; 6 nokta, rehberli inceleme de var) · The King governs by himself, 1661 (charles-le-brun, 1681; 5 nokta) · The Agony in the Garden (nicolas-poussin, 1626; 4 nokta)
-- Öğren 1. "Düzenli, yatay, sahne gibi kompozisyon": The Adoration of the Golden Calf (eser_notlari.json, eser notu) · Landscape with Polyphemus (eser_notlari.json, eser notu) · Arkadya'da Ben de Varım (Et in Arcadia ego) (basyapitlar.json, Kompozisyon, ışık ve renk) · Landscape with the Finding of Moses (yuruyus.json, Ağaçların çerçevesi) · The Adoration of the Shepherds (eser_notlari.json, eser notu) · genel açıklama 2
+- Öğren 1. "Düzenli, yatay, sahne gibi kompozisyon": Bacchanal Before a Statue of Pan (eser_notlari.json, eser notu) · The Adoration of the Golden Calf (eser_notlari.json, eser notu) · Landscape with Polyphemus (eser_notlari.json, eser notu) · Arkadya'da Ben de Varım (Et in Arcadia ego) (basyapitlar.json, Kompozisyon, ışık ve renk) · Landscape with the Finding of Moses (yuruyus.json, Ağaçların çerçevesi) · The Adoration of the Shepherds (eser_notlari.json, eser notu) · genel açıklama 2
 - Öğren 2. "Antik ve İncil konuları, ders veren anlatı": **doğrulanmış eser kanıtı yok**
 - Öğren 3. "Serin renkler, net çizgi, idealize manzara": Saba Melikesi'nin Gemiye Binişi (eser_ayrintilari.json, Sandık yükleyen hamallar) · The Abduction of Europa (eser_notlari.json, eser notu) · Landscape with the Burial of Saint Serapia (eser_notlari.json, eser notu) · genel açıklama 2
 - Öğren 4. "Duygudan çok akıl ve ölçü": Arkadya'da Ben de Varım (eser_ayrintilari.json, Düşünceli çoban) · genel açıklama 2
@@ -180,8 +180,8 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 ### Rokoko
 
 - Gör: Pilgrimage to the Island of Cythera (jean-antoine-watteau, 1717; 6 nokta, rehberli inceleme de var) · The Triumph of Venus (francois-boucher, 1740; 5 nokta) · Before (william-hogarth, 1731; 4 nokta)
-- Öğren 1. "Pastel tonlar: pembe, açık mavi, krem": Juno in the Clouds (eser_notlari.json, eser notu) · The Birth of Venus (eser_notlari.json, eser notu) · The Triumph of Venus (eser_notlari.json, eser notu) · Venus Consoling Love (eser_notlari.json, eser notu) · Salıncak (L'Escarpolette) (basyapitlar.json, Kompozisyon, ışık ve renk) · genel açıklama 3
-- Öğren 2. "Hafif, oyunbaz aşk ve bahçe sahneleri (fête galante)": The Progress of Love (slaytta: The Meeting, from Love of the Shepherds) (eser_notlari.json, eser notu) · The Stolen Kiss (eser_notlari.json, eser notu) · Blind Man's Bluff (eser_notlari.json, eser notu) · The See-Saw (eser_notlari.json, eser notu) · genel açıklama 2
+- Öğren 1. "Pastel tonlar: pembe, açık mavi, krem": Juno in the Clouds (eser_notlari.json, eser notu) · The Birth of Venus (eser_notlari.json, eser notu) · The Triumph of Venus (eser_notlari.json, eser notu) · Venus Consoling Love (eser_notlari.json, eser notu) · Cupid Crowned by Psyche (eser_notlari.json, eser notu) · Salıncak (L'Escarpolette) (basyapitlar.json, Kompozisyon, ışık ve renk) · genel açıklama 3
+- Öğren 2. "Hafif, oyunbaz aşk ve bahçe sahneleri (fête galante)": Jupiter and Callisto (eser_notlari.json, eser notu) · The Progress of Love (slaytta: The Meeting, from Love of the Shepherds) (eser_notlari.json, eser notu) · The Stolen Kiss (eser_notlari.json, eser notu) · Blind Man's Bluff (eser_notlari.json, eser notu) · The See-Saw (eser_notlari.json, eser notu) · genel açıklama 2
 - Öğren 3. "Kıvrımlı, asimetrik süsleme": **doğrulanmış eser kanıtı yok**
 - Öğren 4. "Aristokrat zarafeti, tüy gibi fırça": Venus Consoling Love (eser_notlari.json, eser notu)
 - Ayırt et ↔ Fransız Klasisizmi: The Swing ↔ Et in Arcadia Ego; 2 karşılaştırma cümlesi; özellik maddeleri 4 / 4
@@ -204,7 +204,7 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 - Gör: Bulutların Üzerinde Yolculuk (caspar-david-friedrich, 1818; 6 nokta, rehberli inceleme de var) · The Raft of the Medusa (theodore-gericault, 1819; 6 nokta, rehberli inceleme de var) · The Fighting Temeraire (j-m-w-turner, 1839; 5 nokta)
 - Öğren 1. "Duygu, tutku ve fırtına; dramatik doğa": Snow Storm: Hannibal and his Army Crossing the Alps (eser_notlari.json, eser notu) · Salisbury Cathedral from the Meadows (eser_notlari.json, eser notu) · Hadleigh Castle, The Mouth of the Thames--Morning after a Stormy Night (eser_notlari.json, eser notu) · genel açıklama 2
 - Öğren 2. "Serbest, hareketli fırça ve güçlü renk": Weymouth Bay: Bowleaze Cove and Jordon Hill (eser_notlari.json, eser notu) · Hadleigh Castle, The Mouth of the Thames--Morning after a Stormy Night (eser_notlari.json, eser notu) · Portrait of Paganini (eser_notlari.json, eser notu) · genel açıklama 2
-- Öğren 3. "Yüce (sublime): insan doğa karşısında küçük": Mountain Landscape with Rainbow (eser_notlari.json, eser notu) · Deniz Kenarında Keşiş (eser_notlari.json, eser notu) · Sis Denizi Üzerinde Gezgin (Der Wanderer über dem Nebelmeer) (basyapitlar.json, Anlam ve semboller) · Burning of the Houses of Parliament (eser_notlari.json, eser notu)
+- Öğren 3. "Yüce (sublime): insan doğa karşısında küçük": Mountain Landscape with Rainbow (eser_notlari.json, eser notu) · Deniz Kenarında Keşiş (eser_notlari.json, eser notu) · Sis Denizi Üzerinde Gezgin (Der Wanderer über dem Nebelmeer) (basyapitlar.json, Anlam ve semboller) · Burning of the Houses of Parliament (eser_notlari.json, eser notu) · Köle Gemisi (The Slave Ship) (basyapitlar.json, Anlam ve semboller)
 - Öğren 4. "Egzotik, tarihî ve güncel trajik konular": Medusa'nın Salı (Le Radeau de la Méduse) (basyapitlar.json, özet) · Halka Yol Gösteren Özgürlük (basyapitlar.json, Neden önemli?) · genel açıklama 2
 - Ayırt et ↔ Neoklasisizm: Bulutların Üzerinde Yolculuk ↔ The Oath of the Horatii; 2 karşılaştırma cümlesi; özellik maddeleri 4 / 4
 - Ayırt et ↔ Prerafaelitler: Bulutların Üzerinde Yolculuk ↔ Mariana; 1 karşılaştırma cümlesi; özellik maddeleri 4 / 4
@@ -255,7 +255,7 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 ### Ukiyo-e (Japon baskısı)
 
 - Gör: Sudden Shower over Shin-Ōhashi Bridge and Atake (utagawa-hiroshige, 1857; 6 nokta, rehberli inceleme de var) · Kanagawa Oki Nami Ura (katsushika-hokusai, 1830; 5 nokta)
-- Öğren 1. "Ahşap baskı; düz renk alanları ve net kontur": Sundai, Edo (eser_notlari.json, eser notu) · Fuji Dağı'nın 36 Manzarası (basyapitlar.json, Kompozisyon, ışık ve renk) · Okitsu (eser_notlari.json, eser notu) · Numazu (eser_notlari.json, eser notu) · Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak (basyapitlar.json, özet) · genel açıklama 3
+- Öğren 1. "Ahşap baskı; düz renk alanları ve net kontur": Sundai, Edo (eser_notlari.json, eser notu) · Fuji Dağı'nın 36 Manzarası (basyapitlar.json, Kompozisyon, ışık ve renk) · Okitsu (eser_notlari.json, eser notu) · Kırmızı Fuji (eser_ayrintilari.json, Bokashi geçişi) · Numazu (eser_notlari.json, eser notu) · Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak (basyapitlar.json, özet) · genel açıklama 3
 - Öğren 2. "Asimetrik, yukarıdan ya da kesik kadraj": **doğrulanmış eser kanıtı yok**
 - Öğren 3. "Dalga, Fuji, oyuncular, kurtizanlar": Kanagawa Oki Nami Ura (yuruyus.json, Fuji Dağı) · 36 Fuji Dağı Manzarası (Hokusai) (eser_notlari.json, eser notu) · genel açıklama 2
 - Öğren 4. "Gölge ve perspektif yerine desen": **doğrulanmış eser kanıtı yok**
@@ -266,7 +266,7 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 
 - Gör: Nereden geliyoruz? Neyiz? Nereye gidiyoruz? (paul-gauguin, 1897; 6 nokta, rehberli inceleme de var) · The Card Players (paul-cezanne, 1890; 5 nokta, rehberli inceleme de var) · Gece Kahvesi (vincent-van-gogh, 1888; 5 nokta)
 - Öğren 1. "Kalın, yönlü fırça ya da noktalar (puantilizm)": Kâğıt Oynayanlar (eser_ayrintilari.json, Pipo ve yüz) · Kâğıt Oynayanlar (Les Joueurs de cartes) (basyapitlar.json, Kompozisyon, ışık ve renk) · Yıldızlı Gece (eser_ayrintilari.json, Büyük girdap) · Kırmızı Üzüm Bağı (eser_notlari.json, eser notu) · The Eiffel Tower (eser_notlari.json, eser notu) · genel açıklama 1
-- Öğren 2. "Duygu ya da yapı için abartılmış renk": Lady in Blue (eser_notlari.json, eser notu) · Kâğıt Oynayanlar (Les Joueurs de cartes) (basyapitlar.json, Neden önemli?) · Yıldızlı Gece (basyapitlar.json, Neden önemli?) · genel açıklama 2
+- Öğren 2. "Duygu ya da yapı için abartılmış renk": Lady in Blue (eser_notlari.json, eser notu) · Kâğıt Oynayanlar (Les Joueurs de cartes) (basyapitlar.json, Neden önemli?) · Arles'daki Yatak Odası (eser_notlari.json, eser notu) · Yıldızlı Gece (basyapitlar.json, Neden önemli?) · genel açıklama 2
 - Öğren 3. "Geometrik sadeleştirme (Cézanne)": **doğrulanmış eser kanıtı yok**
 - Öğren 4. "Kişisel üslup: her sanatçı ayrı yol": **doğrulanmış eser kanıtı yok**
 - Ayırt et ↔ Empresyonizm: Yıldızlı Gece ↔ Impression, Sunrise (Impression, Soleil Levant); 4 karşılaştırma cümlesi; özellik maddeleri 4 / 4
@@ -329,7 +329,7 @@ Toplam: 28 ders. Gör verisi olmayan akım: Dada, Sürrealizm, Savaş sonrası f
 
 - Gör: **yürüyüş yok**
 - Öğren 1. "Rüya mantığı; imkânsız bir araya gelişler": Belleğin Azmi (eser_ayrintilari.json, Daldaki saat) · The Persistence of Memory (eser_notlari.json, eser notu) · Belleğin Azmi (The Persistence of Memory) (basyapitlar.json, özet) · genel açıklama 2
-- Öğren 2. "Fotoğraf gibi gerçekçi teknik, akıl dışı sahne": **doğrulanmış eser kanıtı yok** · genel açıklama 1
+- Öğren 2. "Fotoğraf gibi gerçekçi teknik, akıl dışı sahne": İmgelerin İhaneti (La trahison des images) (basyapitlar.json, Neden önemli?) · genel açıklama 1
 - Öğren 3. "Eriyen saatler, boş ufuklar, uzun gölgeler": Young Virgin Auto-Sodomized by the Horns of Her Own Chastity (eser_notlari.json, eser notu) · Belleğin Azmi (The Persistence of Memory) (basyapitlar.json, özet) · genel açıklama 2
 - Öğren 4. "Bilinçaltı, arzu ve korku": The Spectre of Sex-Appeal (eser_notlari.json, eser notu)
 - Ayırt et ↔ Dada: The Persistence of Memory ↔ Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic; 2 karşılaştırma cümlesi; özellik maddeleri 4 / 4

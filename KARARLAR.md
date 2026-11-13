@@ -2068,4 +2068,15 @@ Emre: "fable için işin angarya kısmını yapabileceğin bir bölüm var mı �
 - **Bugün'ün tablosu:** yüz odağı verisi ağ hatasıyla yüklenemezse (`odaklariYukle` null döner) 3 sn arayla en çok 3 kez daha denenir. Önceden o açılışta hiç kaydırılmıyordu. Galeri ve Atölye'deki öteki kullanımlar değişmedi.
 - **Kullanılmayan CSS silindi:** İş 172'nin Müze planı (`.gz-plan`, `.gz-plan-harita`, `.oda*`) ve İş 171'in Başyapıtlar rafı (`.gz-raf*`), animasyonlarıyla birlikte; 380 satır. Hâlâ kullanılan `.gz-plan-bas` kaldı. Gruplu seçicilerden yalnız kullanılmayan parçalar çıktı (iki seçici yeniden yazıldı). Galeri, Çalış, Bugün ve Yolculuk tam sayfa görüntüleri eski ve yeni CSS ile piksel piksel aynı. Yöntemin farkı yakaladığı bilerek değiştirilmiş bir CSS'le denetlendi.
 - **Test:** `is172` (Galeri: kalp aramayla aynı satırda) tam koşuda bir kez düştü: 4,31 px > 4. Üst bölüm açılırken öğeler sırayla kayarak geliyor ve yük altında ölçüm hareketin ortasına denk geliyordu. Tek başına eski ve yeni CSS ile 8/8 geçiyor. Artık hizalama `expect.poll` ile, hareket bitince denetleniyor.
+- **Görsel doğrulama** (Emre: "hepsini yap"):
+  - Esere bağlı ve "doğru" ya da "belirsiz" olan 278 kanıt adayının eser görselleri, maddeleriyle numaralı tabakalarda tek tek incelendi.
+  - Sonuç: 14 belirsiz doğru oldu (ör. Bellini'nin Madonna del Prato'sunun arkasındaki atmosferli manzara, Campin'in Müjde'sindeki zambak, mum ve kitap). 10 belirsiz yanlış oldu (ör. Loredan portresinde ve Bellini'nin koyu fonlu Meryem'inde manzara yok; Tintoretto'nun Son Akşam Yemeği şölen değil). Doğru sayılan 3 aday belirsize çekildi: Limbourg'un Şubat'ı iki maddede (köylüler var, saray hayatı ve süslü giysi yok) ve Masaccio'nun Çarmıha Geriliş'i (altın zemin var, gerçekçi mekân yok).
+  - Toplam: 406 doğru, 62 yanlış, 45 belirsiz.
+  - Bakılanlar `g: true`, gerekçesi `n`'de ("görselde …"). Görseli olmayan tek eser: Dalí, The Spectre of Sex-Appeal. Esere bağlı olmayan "genel" adaylara görsel bakılmadı.
+- **Testlerde zamanlama yarışları:** `expect(await …)` ve sabit beklemeli (`waitForTimeout`) denetimler tarandı.
+  - Durumu DOM'la aynı işleyicide yazan yerler güvenli (rozet, harita yolcusu, indirme işareti kodda doğrulandı). "Kaç kez oldu" türü olumsuz denetimlerdeki beklemeler kasıtlı; dokunulmadı.
+  - Takım 4 çekirdekte 6 ve 8 işçiyle yük altında koşturuldu, yarışlar böyle ortaya çıkarıldı.
+  - Düzeltilenler (cilalama): service worker sürüm testinde sabit 3 sn bekleme yerine önce sürüm isteği, sonra kurulumun bitmesi bekleniyor; yeniden kurulum beklemesi 15 → 30 sn. Görüntüleyicide çift dokunuşla dönüş, Bugün'deki ismin opaklığı ve Galeri önizlemeleri sabit bekleme yerine `expect.poll` ile denetleniyor.
+  - `ekran.spec`'in süre sınırı 60 → 120 sn: tam sayfa görüntüleri yük altında 60 sn'yi aşıyordu.
+  - Düzeltmelerden sonra takım 6 işçiyle 189/189 geçti.
 

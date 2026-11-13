@@ -278,8 +278,8 @@
        "yer": "eser notu",
        "cumle": "Simetrik düzen ve altın fon Bizans etkisini taşırken, kıvrımlı giysiler ve melek yüzlerindeki yumuşaklık hacim arayışını gösterir.",
        "id": "6d5d09b2c7",
-       "durum": "belirsiz",
-       "not": "cümle hacim arayışını da vurguluyor"
+       "durum": "dogrulandi",
+       "not": "görselde Bizans kalıbı figürler"
       },
       {
        "puan": 0.4,
@@ -290,8 +290,8 @@
        "yer": "eser notu",
        "cumle": "Altın zemin ve koyu manto Bizans geleneğini sürdürürken, ince gölgelendirmeli yüzler hacim duygusu verir.",
        "id": "473f4b5a26",
-       "durum": "belirsiz",
-       "not": "cümle hacim duygusunu vurguluyor"
+       "durum": "dogrulandi",
+       "not": "görselde Bizans kalıbı figürler, altın zemin"
       }
      ],
      "genel_adaylar": [
@@ -357,8 +357,8 @@
        "yer": "Kompozisyon, ışık ve renk",
        "cumle": "Cüppe kıvrımları gölgeyle değil, çizgiyle belirtilir.",
        "id": "2942b9741f",
-       "durum": "belirsiz",
-       "not": "kıvrımlar çizgiyle; altın denmiyor"
+       "durum": "yanlis",
+       "not": "görselde kıvrımlar koyu çizgi, altın değil"
       },
       {
        "puan": 0.4,
@@ -588,7 +588,8 @@
        "yer": "Neden önemli?",
        "cumle": "Uluslararası Gotik üslubun (zarif çizgi, ince ayrıntı ve saray zevki) doruk örneklerindendir.",
        "id": "7b27d6d126",
-       "durum": "dogrulandi"
+       "durum": "belirsiz",
+       "not": "görselde köylüler; süslü giysi yok"
       },
       {
        "puan": 0.4,
@@ -676,7 +677,7 @@
        "cumle": "Orak biçenler ve ot biçenler Paris'teki Sainte-Chapelle ve Cité Sarayı'nın önünde görülür; ayrıntılı mimari arka plan dikkat çeker.",
        "id": "b28e7c48e2",
        "durum": "belirsiz",
-       "not": "köylü işi ve saray manzarası; saray hayatı değil"
+       "not": "ayrıntılı doğa ve saray görünümü var; saray hayatı yok"
       },
       {
        "puan": 0.5,
@@ -687,7 +688,8 @@
        "yer": "Neden önemli?",
        "cumle": "Uluslararası Gotik üslubun (zarif çizgi, ince ayrıntı ve saray zevki) doruk örneklerindendir.",
        "id": "7b27d6d126",
-       "durum": "dogrulandi"
+       "durum": "belirsiz",
+       "not": "ayrıntılı doğa var; saray hayatı, at, av yok"
       }
      ],
      "genel_adaylar": [
@@ -1170,7 +1172,8 @@
        "yer": "eser notu",
        "cumle": "Masaccio'nun Pisa Polipitiği'nin tepe panelinde yer alan Çarmıha Geriliş sahnesi; Meryem, Aziz Yuhanna ve Mecdelli Meryem'in acısını sert, dramatik bir gerçekçilikle verir.",
        "id": "f57067ee12",
-       "durum": "dogrulandi"
+       "durum": "belirsiz",
+       "not": "görselde altın zemin; gerçekçi mekân yok"
       },
       {
        "puan": 0.4,
@@ -1651,8 +1654,8 @@
        "yer": "eser notu",
        "cumle": "Campin atölyesine bağlanan Müjde sahnesinde Meryem'in iç mekânı gündelik nesnelerle doludur.",
        "id": "7df7de65de",
-       "durum": "belirsiz",
-       "not": "gündelik nesneler; simge denmiyor"
+       "durum": "dogrulandi",
+       "not": "görselde masada zambaklı vazo, mum, kitap"
       },
       {
        "puan": 0.4,
@@ -2259,8 +2262,8 @@
        "yer": "Kompozisyon, ışık ve renk",
        "cumle": "Bedenler yumuşak gölgelerle modellenmiş ve heykel gibi hacimli duruyor.",
        "id": "a33a1a9cb0",
-       "durum": "belirsiz",
-       "not": "yumuşak gölge var ama sfumato denmiyor; Michelangelo"
+       "durum": "yanlis",
+       "not": "görselde net konturlu, heykelsi bedenler; sfumato değil"
       },
       {
        "puan": 0.5,
@@ -2790,8 +2793,8 @@
        "yer": "eser notu",
        "cumle": "Bellini'nin renk, ışık ve atmosfer ustalığının olgun dönem örneğidir.",
        "id": "eb4752ef92",
-       "durum": "belirsiz",
-       "not": "ışık ve atmosfer; manzara denmiyor"
+       "durum": "dogrulandi",
+       "not": "görselde arkada atmosferli kır manzarası"
       },
       {
        "puan": 0.5,
@@ -2802,8 +2805,8 @@
        "yer": "eser notu",
        "cumle": "Kumaş dokusu ve yumuşak ışık kullanımıyla Venedik portre geleneğinin doruk noktalarından biridir.",
        "id": "72c05ab0fc",
-       "durum": "belirsiz",
-       "not": "portre; manzara yok"
+       "durum": "yanlis",
+       "not": "görselde düz mavi fon; manzara yok"
       },
       {
        "puan": 0.5,
@@ -2825,8 +2828,8 @@
        "yer": "eser notu",
        "cumle": "Bellini yumuşak ışık geçişleri ve sakin, ağırbaşlı yüz ifadeleriyle Bizans ikonalarını anımsatan, ama daha insani bir Meryem yaratır.",
        "id": "e617b5f4a5",
-       "durum": "belirsiz",
-       "not": "yumuşak ışık; manzara denmiyor"
+       "durum": "yanlis",
+       "not": "görselde koyu fon; manzara yok"
       },
       {
        "puan": 0.5,
@@ -2989,8 +2992,8 @@
        "yer": "Tabak taşıyan kadın",
        "cumle": "Sahnenin kenarları yemek getiren, toplayan figürlerle dolu.",
        "id": "a57486ca72",
-       "durum": "belirsiz",
-       "not": "dinî yemek sahnesi"
+       "durum": "yanlis",
+       "not": "dinî yemek sahnesi; çıplak figür, mitoloji ya da şölen yok"
       },
       {
        "puan": 0.4,
@@ -3001,8 +3004,8 @@
        "yer": "eser notu",
        "cumle": "Son Akşam Yemeği çapraz perspektifle, doğaüstü ışık huzmeleri ve gündelik figürlerle sahnelenir.",
        "id": "afb002494b",
-       "durum": "belirsiz",
-       "not": "dinî yemek sahnesi"
+       "durum": "yanlis",
+       "not": "dinî yemek sahnesi; çıplak figür, mitoloji ya da şölen yok"
       }
      ],
      "genel_adaylar": [
@@ -4035,8 +4038,8 @@
        "yer": "eser notu",
        "cumle": "Valentin, Caravaggio'nun aynı konudaki dramatik sahnesini izleyen sert ışık ve yakın çerçeveyle işler.",
        "id": "cbe9c1b904",
-       "durum": "belirsiz",
-       "not": "dramatik sahne; hareket denmiyor"
+       "durum": "dogrulandi",
+       "not": "görselde kesme anı, yakın plan"
       },
       {
        "puan": 0.5,
@@ -4919,8 +4922,8 @@
        "yer": "eser notu",
        "cumle": "Çıplak bedenin sıcak tonları ve kırmızı pelerinin canlı rengi, genç van Dyck üzerindeki Rubens etkisini gösterir.",
        "id": "610237e017",
-       "durum": "belirsiz",
-       "not": "van Dyck; Rubens etkisi"
+       "durum": "dogrulandi",
+       "not": "görselde etli, hareketli bedenler (Rubens etkisi)"
       }
      ],
      "genel_adaylar": [
@@ -5384,8 +5387,8 @@
        "yer": "Kompozisyon, ışık ve renk",
        "cumle": "Işık soldaki kurşun çerçeveli pencereden giriyor ve en çok ortadaki kızın beyaz önlüğüne, altın renkli eteğine düşüyor; böylece göz önce ona gidiyor.",
        "id": "db2ef7e589",
-       "durum": "belirsiz",
-       "not": "Steen; pencere ışığı var ama sakin değil"
+       "durum": "yanlis",
+       "not": "görselde pencere ışığı var ama kalabalık, hareketli sahne; sakin değil"
       },
       {
        "puan": 0.5,
@@ -5418,8 +5421,8 @@
        "yer": "eser notu",
        "cumle": "Yumuşak ışık, mavi örtü ve sakin gündelik jest Vermeer'in iç mekân resimlerinin tipik özelliklerini gösterir.",
        "id": "bccc889236",
-       "durum": "belirsiz",
-       "not": "yumuşak ışık; pencere denmiyor"
+       "durum": "dogrulandi",
+       "not": "görselde soldaki pencereden süzülen ışık"
       },
       {
        "puan": 0.5,
@@ -5856,8 +5859,8 @@
        "yer": "eser notu",
        "cumle": "Pan heykeli önünde dans eden figürlerle şenlik sahnesi sunar; Poussin'in Roma'da Titian etkisiyle geliştirdiği mitolojik kompozisyonların başyapıtlarındandır.",
        "id": "eaa9f4347c",
-       "durum": "belirsiz",
-       "not": "kompozisyon düzeni denmiyor"
+       "durum": "dogrulandi",
+       "not": "görselde friz gibi yatay dizilmiş figürler"
       },
       {
        "puan": 0.5,
@@ -6487,8 +6490,8 @@
        "yer": "eser notu",
        "cumle": "Öndeki kadın ve erkek figürlerin canlı renkli giysileri, geniş manzara ve hareketli bulutlarla uyum içindedir.",
        "id": "4f6bf9fe2f",
-       "durum": "belirsiz",
-       "not": "canlı renkler; uçan figür denmiyor"
+       "durum": "yanlis",
+       "not": "görselde doygun renkler; uçan figür yok"
       },
       {
        "puan": 0.4,
@@ -7000,8 +7003,8 @@
        "yer": "eser notu",
        "cumle": "Greuze mitolojik konuyu açık, pastel tonlarla ve akıcı, zarif bir neoklasik çizgiyle işler.",
        "id": "57114fb4a7",
-       "durum": "belirsiz",
-       "not": "Greuze; neoklasik çizgi"
+       "durum": "dogrulandi",
+       "not": "görselde açık, soluk pastel tonlar"
       },
       {
        "puan": 0.5,
@@ -7064,8 +7067,8 @@
        "yer": "eser notu",
        "cumle": "Sahne, mitolojiyi baştan çıkarıcı, hafif ve dekoratif bir Rokoko diliyle sunar.",
        "id": "b4d7350706",
-       "durum": "belirsiz",
-       "not": "hafif, dekoratif; aşk ve bahçe denmiyor"
+       "durum": "dogrulandi",
+       "not": "görselde açık havada oyunbaz aşk sahnesi"
       },
       {
        "puan": 0.5,
@@ -8135,8 +8138,8 @@
        "yer": "eser notu",
        "cumle": "Antik sanatın büyüklüğü karşısında insanın küçüklüğünü anlatır.",
        "id": "8899dd4941",
-       "durum": "belirsiz",
-       "not": "doğa değil antik kalıntı"
+       "durum": "yanlis",
+       "not": "görselde dev antik kalıntı, doğa değil"
       },
       {
        "puan": 0.5,
@@ -8180,8 +8183,8 @@
        "yer": "Anlam ve semboller",
        "cumle": "Kimi yorumculara göre doğa burada insan vahşeti karşısında öfkeli bir yargıç gibidir ve yaklaşan tayfun gemiyi de cezalandıracakmış gibi durur.",
        "id": "4e1b0edeb8",
-       "durum": "belirsiz",
-       "not": "doğanın gücü; insanın küçüklüğü denmiyor"
+       "durum": "dogrulandi",
+       "not": "görselde fırtına içinde küçücük kalan gemi ve insanlar"
       }
      ],
      "genel_adaylar": []
@@ -10499,8 +10502,8 @@
        "yer": "Bokashi geçişi",
        "cumle": "Bu, kalıptaki mürekkebin elle silinerek inceltildiği bokashi (renk geçişi) tekniğidir; her baskıda biraz farklı çıkar.",
        "id": "3dbf629f78",
-       "durum": "belirsiz",
-       "not": "renk geçişi; düz renk değil"
+       "durum": "dogrulandi",
+       "not": "görselde düz renk alanları ve net kontur (gökte renk geçişi de var)"
       },
       {
        "puan": 0.4,
@@ -10968,8 +10971,8 @@
        "yer": "eser notu",
        "cumle": "Van Gogh'un Arles'teki 'Sarı Ev'indeki yatak odasını gösteren tablosu; düz renk alanları ve çarpık perspektifle sade bir huzur duygusu aktarır.",
        "id": "392eee927c",
-       "durum": "belirsiz",
-       "not": "düz renk; abartı denmiyor"
+       "durum": "dogrulandi",
+       "not": "görselde düz, doygun ve abartılı renkler"
       },
       {
        "puan": 0.5,
@@ -11416,8 +11419,8 @@
        "yer": "eser notu",
        "cumle": "Dev bir çiçeğin ortasında duran taçlı, ışıklı bir kadın figürü haç tutuyor; altta kayalık bir manzarada küçük figürler yer alıyor.",
        "id": "9ed5895518",
-       "durum": "belirsiz",
-       "not": "ışıklı kadın figürü; ölümcül kadın değil"
+       "durum": "yanlis",
+       "not": "görselde ölümcül kadın, melek ya da sfenks yok"
       },
       {
        "puan": 0.4,
@@ -12941,8 +12944,8 @@
        "yer": "Neden önemli?",
        "cumle": "Sürrealizm (bilinçaltını ve akıl dışını sanata taşıyan, 1920'lerde doğan akım) içinde Magritte, rüya sahneleri yerine gündelik nesneler ve düşünsel paradokslarla öne çıktı.",
        "id": "0d855288fc",
-       "durum": "belirsiz",
-       "not": "Magritte; teknik denmiyor"
+       "durum": "dogrulandi",
+       "not": "görselde fotoğraf gibi gerçekçi pipo ve onu inkâr eden yazı"
       }
      ],
      "genel_adaylar": [
