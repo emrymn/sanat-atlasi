@@ -180,6 +180,26 @@ git add data/gorsel_iyilestirme.json data/gorsel_kaynagi.json && git commit -m "
 
 Telefonda: Ayarlar → **En büyük kopyaları telefona indir** → yenilenenler yeniden iner, eskileri kendiliğinden silinir.
 
+### Zayıf görseller: AIC, SMK ve Commons'un eser bağlantısı (İş 173)
+
+Araştırma: `reports/Zayıf görseller için yüksek çözünürlük.md`. `scripts/daha_buyuk.py` üç adımı sırayla yapar:
+
+- **AIC:** Art Institute of Chicago görselleri yeniden iner. Eski kod dikey eserlerde 843 px'te kalıyordu; artık uzun kenar 3000 px'e kadar çıkar.
+- **SMK:** Kopenhag'daki eserler için müzenin kamu malı görseli alınır.
+- **Commons:** `kalite_tara.py` çalışır. Bu tarama artık Commons'ta eserin kaydına bağlı (P6243) dosyalara da bakıyor.
+
+```
+git pull
+python3 scripts/daha_buyuk.py --dene             # önce say: hangi görsel kaç px'e çıkar (indirmez)
+caffeinate -i python3 scripts/daha_buyuk.py      # AIC + SMK indirir, sonra kalite_tara başlar (sonunda inceleme sayfası)
+# inceleme sayfasında beğenmediklerini işaretle, kopyalanan --reddet komutunu çalıştır
+caffeinate -i python3 scripts/devasa_indir.py    # Commons'ta bulunanları indirir
+python3 scripts/r2_yukle.py --10gb-ustu
+git add data/daha_buyuk.json data/gorsel_kaynagi.json data/gorsel_iyilestirme.json data/b_yenilenen.json && git commit -m "Daha büyük görseller (İş 173)" && git push
+```
+
+Yalnız bir adım için: `--yalniz aic`, `--yalniz smk,commons`. Yarıda kalırsa aynı komutla sürer. Eski kopyalar `gorseller_devasa/.onceki/` altında saklanır.
+
 `gorseller_devasa/` depoya girmez (`.gitignore`). `data/gorsel_kaynagi.json` service worker'da önce ağdan gelir: gönderince telefona sürüm beklemeden iner.
 
 ## Son değişiklikler (5 Kasım 2026, sürüm 1.68–1.71)

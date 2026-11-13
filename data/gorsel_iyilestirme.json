@@ -1,17 +1,47 @@
 {
 "surum": 1,
 "gorseller": {
-"03fad7f3ba7d2fce": {
-"dosya": "Composition_X.jpg",
-"g": 2000,
-"y": 1303,
-"onceki": 1135
+"00e990afa037057c": {
+"dosya": "Petrus_Christus_-_Madonna_met_kind_in_een_nis_-_3316_(OK)_-_Museum_Boijmans_Van_Beuningen.jpg",
+"g": 2880,
+"y": 5158,
+"onceki": 1772
 },
-"0429db36fbf08d4c": {
-"dosya": "2016-10-24_10-30_Burgund_301_Dijon,_Musée_des_Beaux-Arts_de_Dijon_-_Le_Maître_de_Flémalle,_La_Natitivé_et_L'Adoration_des_Bergers,_Detail_(22781583858).jpg",
-"g": 3481,
-"y": 4190,
-"onceki": 2560
+"015e7894eed6f68a": {
+"dosya": "Auguste_Renoir_-_La_Femme_à_l'éventail_(Musée_de_l'Ermitage).jpg",
+"g": 7503,
+"y": 10000,
+"onceki": 2994
+},
+"03c4a2b0af7bd169": {
+"dosya": "Christus_-_Death_of_the_Virgin,_1460-65,_1951001.png",
+"g": 2980,
+"y": 3738,
+"onceki": 970
+},
+"041d3bd3a3fd0982": {
+"dosya": "Poussin_-_Tancred_and_Erminia,_1631,_ГЭ-1189.jpg",
+"g": 2000,
+"y": 1337,
+"onceki": 1210
+},
+"04906d4e12617731": {
+"dosya": "Hamburg_Kunsthalle_Dante_Gabriel_Rosetti_Helen_of_Troy.jpg",
+"g": 3536,
+"y": 4216,
+"onceki": 642
+},
+"04f33f8006009f0c": {
+"dosya": "Gustave_Moreau_-_Jacob_et_l'ange.jpg",
+"g": 3369,
+"y": 5860,
+"onceki": 2400
+},
+"0927c4bea5c5f723": {
+"dosya": "Tintoretto,_ultima_cena,_1594,_05.jpg",
+"g": 2512,
+"y": 1670,
+"onceki": 1337
 },
 "0d96a42d7b097bfa": {
 "dosya": "Gerrit_van_Honthorst_(1592_-_1656)_-_Die_Befreiung_Petri_-_431_-_Gemäldegalerie.jpg",
@@ -19,11 +49,35 @@
 "y": 1900,
 "onceki": 800
 },
+"0dfb253489baf314": {
+"dosya": "Hendrick_ter_Brugghen_-_Musicerend_gezelschap_bij_kaarslicht_(ca._1626).jpg",
+"g": 6000,
+"y": 5074,
+"onceki": 1000
+},
 "0e4eba22d3739d63": {
 "dosya": "Luca_Giordano_-_The_Fall_of_the_Rebel_Angels_-_Google_Art_Project.jpg",
 "g": 4665,
 "y": 6957,
 "onceki": 1600
+},
+"11668c54cd913b45": {
+"dosya": "Isaacsz-van-ruisdael_haarlem-duenen.jpg",
+"g": 4229,
+"y": 3457,
+"onceki": 2219
+},
+"14f09c95e3903f87": {
+"dosya": "Niobe_JacquesLouisDavid_1772_Dallas_Museum_of_Art.jpg",
+"g": 6872,
+"y": 5311,
+"onceki": 2000
+},
+"151f568040c0f865": {
+"dosya": "Gentile_da_Fabriano_079.jpg",
+"g": 2024,
+"y": 1678,
+"onceki": 1083
 },
 "156e64ca42db8f19": {
 "dosya": "Marc_-_Tierschicksale_(Die_Bäume_zeigten_ihre_Ringe,_die_Tiere_ihre_Adern),_1913,_Inv._1739.jpg",
@@ -43,11 +97,41 @@
 "y": 4834,
 "onceki": 1392
 },
+"1a5ac9213c796440": {
+"dosya": "José_de_Ribera_-_Martyrdom_of_Saint_Bartholomew_-_Google_Art_Project.jpg",
+"g": 5093,
+"y": 6851,
+"onceki": 600
+},
+"1a749c4bbb913180": {
+"dosya": "Giulio_Romano_-_The_Madonna_and_Child_with_Saint_John_the_Baptist_-_Google_Art_Project.jpg",
+"g": 5246,
+"y": 7671,
+"onceki": 1799
+},
+"1af21a0db885e40e": {
+"dosya": "Signac_-_Setting_Sun._Sardine_Fishing._Adagio._Opus_221_from_the_series_The_Sea,_The_Boats,_Concarneau,_1891,_585.1998.jpg",
+"g": 2000,
+"y": 1596,
+"onceki": 745
+},
 "1b61c8c7a52f1651": {
 "dosya": "Pontormo,_Jacopo_da_-_The_Virgin_and_Child_with_St_Joseph_and_John_the_Baptist.jpg",
 "g": 6800,
 "y": 8768,
 "onceki": 1476
+},
+"1be13cf329f3403b": {
+"dosya": "Pontorno,_affreschi_dal_tabernacolo_di_boldrone,_01.jpg",
+"g": 4176,
+"y": 2874,
+"onceki": 2125
+},
+"1d439e43f76b6264": {
+"dosya": "Gustave_caillebotte_le_pont_de_leurope_esquisse.jpg",
+"g": 3200,
+"y": 2517,
+"onceki": 600
 },
 "1e6c67c5b0e132b1": {
 "dosya": "Marc-blue-black_fox.jpg",
@@ -55,11 +139,41 @@
 "y": 3898,
 "onceki": 2560
 },
+"1f189e15518231ae": {
+"dosya": "Hyacinthe_Rigaud,_Portrait_de_Philippe_de_Courcillon,_marquis_de_Dangeau_(1638-1720),_1702,_château_de_Versailles,_inv._MV_3652.jpg",
+"g": 7262,
+"y": 9161,
+"onceki": 1200
+},
+"1f4f70d96bd6945d": {
+"dosya": "Giotto_di_Bondone_021.jpg",
+"g": 2024,
+"y": 1879,
+"onceki": 1000
+},
+"2066eff1e2e8ed97": {
+"dosya": "Marc_-_Bildnis_des_Vaters_des_Künstlers,_1902,_G_10672.jpg",
+"g": 1399,
+"y": 2000,
+"onceki": 1380
+},
 "20c2711ceb012f0c": {
 "dosya": "Leonardo_da_Vinci_-_Virgin_and_Child_with_Ss_Anne_and_John_the_Baptist.jpg",
 "g": 4487,
 "y": 6000,
 "onceki": 2688
+},
+"23847079ab077320": {
+"dosya": "Diego_Velázquez_056.jpg",
+"g": 1713,
+"y": 3051,
+"onceki": 1920
+},
+"23d6c874806b45c3": {
+"dosya": "Sir_John_Everett_Millais_001.jpg",
+"g": 2024,
+"y": 2975,
+"onceki": 800
 },
 "240bcac8b1ffb49e": {
 "dosya": "Monet_-_Impression,_Sunrise.jpg",
@@ -73,11 +187,95 @@
 "y": 2297,
 "onceki": 698
 },
+"24a98d8478e39760": {
+"dosya": "20160501101017!El_Greco_03.jpg",
+"g": 3712,
+"y": 4425,
+"onceki": 1070
+},
+"24cefb614ec1d89f": {
+"dosya": "Raffaello,_La_messa_di_Bolsena,_circa_1512._Stanza_di_Eliodoro,_Musei_Vaticani_-FG.jpg",
+"g": 6134,
+"y": 4089,
+"onceki": 1050
+},
+"26e005d6db16414d": {
+"dosya": "Sandro_Botticelli_-_Giuliano_de'_Medici_-_Gemäldegalerie_(Berlin).jpg",
+"g": 5059,
+"y": 7595,
+"onceki": 2740
+},
+"27299beb26356b71": {
+"dosya": "Signac_-_La_Corne_d’Or._Matin,_lot.12.jpg",
+"g": 2880,
+"y": 2254,
+"onceki": 2000
+},
+"279c6c108e1496b3": {
+"dosya": "Frans_Hals_073.jpg",
+"g": 4621,
+"y": 6000,
+"onceki": 1147
+},
+"28ec55a06ad5f8e6": {
+"dosya": "Marc_die-kleinen-blauen-pferde.jpg",
+"g": 2367,
+"y": 1452,
+"onceki": 800
+},
+"2a8141f70dfb3268": {
+"dosya": "Raphael_Madonna_and_Child_with_Book.jpg",
+"g": 1600,
+"y": 2208,
+"onceki": 1207
+},
+"2b55699c113bf6f7": {
+"dosya": "Lyon_1er_-_Musée_des_Beaux-Arts_-_Salle_229_-_Partie_de_bateau_(Gustave_Caillebotte)_(cropped).jpg",
+"g": 4146,
+"y": 3081,
+"onceki": 976
+},
+"2bd43671420085df": {
+"dosya": "Honthorst_solon_and_croesus.jpg",
+"g": 2140,
+"y": 1670,
+"onceki": 1206
+},
+"2bdce0aefe3c8433": {
+"dosya": "Simone_Martini_005.jpg",
+"g": 2536,
+"y": 2472,
+"onceki": 709
+},
+"2c7c83c86c4ad917": {
+"dosya": "Frans_Hals_017.jpg",
+"g": 2048,
+"y": 1373,
+"onceki": 1127
+},
+"2c8eea94ac5af381": {
+"dosya": "Odilon_Redon_-_Fantasmagorie_02.jpg",
+"g": 3556,
+"y": 2816,
+"onceki": 741
+},
 "2e1764d668e244f0": {
 "dosya": "Artemisia_Gentileschi_Judith_Maidservant_DIA.jpg",
 "g": 2079,
 "y": 2700,
 "onceki": 2000
+},
+"2f292dabee45c315": {
+"dosya": "Peter_Paul_Rubens_–_Consequences_of_War_(1638).png",
+"g": 4590,
+"y": 2764,
+"onceki": 1350
+},
+"30b175c48a0dbe44": {
+"dosya": "Vrouw_met_eenhoorn,_SK-A-3970.jpg",
+"g": 3634,
+"y": 2632,
+"onceki": 2838
 },
 "320f7a384d86e545": {
 "dosya": "Joachim_Patinier,_Tentation_de_saint_Antoine,_musée_du_Prado,_Madrid,_inv._P_1615.jpg",
@@ -97,11 +295,53 @@
 "y": 4836,
 "onceki": 2288
 },
+"3517e7f301663049": {
+"dosya": "SaintPraxedisJohannesVermeerPainting.jpg",
+"g": 2580,
+"y": 3206,
+"onceki": 1500
+},
+"353cf0f6b7c98103": {
+"dosya": "Jean-Baptiste_Greuze_-_Widow_and_her_priest.jpg",
+"g": 3671,
+"y": 2912,
+"onceki": 1255
+},
+"35478b576ea2f342": {
+"dosya": "Edgar_Degas_-_Blue_Dancers_(1898_Pushkin_Museum).jpg",
+"g": 6256,
+"y": 6151,
+"onceki": 2000
+},
+"3698a2ef83d20927": {
+"dosya": "Peter_Paul_Rubens_-_Perseus_and_Andromeda_(Hermitage_Museum).jpg",
+"g": 3772,
+"y": 2691,
+"onceki": 1020
+},
+"3a034ec2d11158f7": {
+"dosya": "José_de_Ribera_003.jpg",
+"g": 2024,
+"y": 1614,
+"onceki": 1035
+},
 "3a4ecaf33993ebf7": {
 "dosya": "Caspar_David_Friedrich_-_Kreidefelsen_auf_Rügen_(1818).jpg",
 "g": 4237,
 "y": 5465,
 "onceki": 1200
+},
+"3d37d654e565dcf8": {
+"dosya": "Charles_Le_Brun_-_Portrait_of_the_Sculptor_Nicolas_Le_Brun.jpg",
+"g": 2520,
+"y": 3180,
+"onceki": 660
+},
+"41a05552f9f1b7c6": {
+"dosya": "Pierre-Auguste_Renoir_-_Torse,_effet_de_soleil.jpg",
+"g": 2059,
+"y": 2629,
+"onceki": 850
 },
 "44e5ad4b480cfd33": {
 "dosya": "Parmigianino,_galeazzo_sanvitale_01.jpg",
@@ -121,11 +361,59 @@
 "y": 3876,
 "onceki": 2774
 },
+"4886b391ac1a107d": {
+"dosya": "Albrecht_Dürer_-_Johannes_Kleberger_-_Google_Art_Project.jpg",
+"g": 4069,
+"y": 4116,
+"onceki": 2249
+},
 "4ef5f20e9807fc66": {
 "dosya": "The_Battle_of_Trafalgar,_21_October_1805_RMG_BHC0565.tiff",
 "g": 7200,
 "y": 5093,
 "onceki": 1800
+},
+"4fa13e0223e4c9a7": {
+"dosya": "Marc_indersdorf.jpg",
+"g": 2404,
+"y": 3104,
+"onceki": 750
+},
+"50cdc786ca12db0f": {
+"dosya": "Marc_der-tote-spatz.jpg",
+"g": 2390,
+"y": 1804,
+"onceki": 500
+},
+"517be9c20d45608d": {
+"dosya": "Gustave_Caillebotte_-_Un_balcon,_Boulevard_Haussmann.jpg",
+"g": 2224,
+"y": 3200,
+"onceki": 2484
+},
+"5207145d2dc8dcad": {
+"dosya": "Noli_me_tangere_-_Capella_dei_Scrovegni_-_Padua_2016.jpg",
+"g": 2876,
+"y": 2668,
+"onceki": 1000
+},
+"52cf4ae995c9ce7b": {
+"dosya": "Tintoretto-Fuga_in_Egitto-Scuola_Grande_di_San_Rocco.jpg",
+"g": 2605,
+"y": 1979,
+"onceki": 700
+},
+"5453722f4ead023b": {
+"dosya": "Giotto_di_Bondone_-_No._21_Scenes_from_the_Life_of_Christ_-_5._Massacre_of_the_Innocents_-_.jpg",
+"g": 2024,
+"y": 2047,
+"onceki": 1004
+},
+"54e13e53a3d03b87": {
+"dosya": "Resurrection_of_Christ_by_Giovanni_Bellini_(Berlin).jpg",
+"g": 4212,
+"y": 4898,
+"onceki": 1754
 },
 "58972d61422e9353": {
 "dosya": "Klimt_-_Danae_-_1907-08.jpeg",
@@ -139,11 +427,65 @@
 "y": 3954,
 "onceki": 1500
 },
+"5ac7bfd13c1dd5b2": {
+"dosya": "Berlin,_Alte_Nationalgalerie,_Arnold_Böcklin,_Angela_Böcklin.jpg",
+"g": 2801,
+"y": 3601,
+"onceki": 2094
+},
+"5b20891ddfdc7895": {
+"dosya": "L'_Hallali_du_cerf,_1867,_D.882.2.1.jpg",
+"g": 4774,
+"y": 3400,
+"onceki": 1129
+},
+"5b282b9fd223b99f": {
+"dosya": "Sandro_Botticelli,_Ritorno_di_Giuditta_dal_campo_nemico_-_Rückkehr_der_Judith_nach_Bethulia_-_The_Return_of_Judith_to_BethuliaFXD.jpg",
+"g": 3627,
+"y": 4928,
+"onceki": 2745
+},
+"5db2dd5c7f73874a": {
+"dosya": "Johannes_Vermeer_-_The_Girl_with_the_Wine_Glass.jpg",
+"g": 2406,
+"y": 2799,
+"onceki": 1137
+},
+"5e0f61e57d745c06": {
+"dosya": "Gustave_Caillebotte_-_Sailing_Boats_at_Argenteuil_-_Google_Art_Project.jpg",
+"g": 3906,
+"y": 4764,
+"onceki": 850
+},
+"5e9498a84f3aa645": {
+"dosya": "Jean_Siméon_Chardin_-_The_Young_Schoolmistress_-_WGA04750FXD.jpg",
+"g": 4568,
+"y": 4226,
+"onceki": 649
+},
 "5ed6fba3de3329c5": {
 "dosya": "Homère_déifié,_dit_aussi_L'apothéose_d'Homère_-_Jean-Auguste_Dominique_Ingres_-_Musée_du_Louvre_Peintures_INV_5417_;_C_196.jpg",
 "g": 10028,
 "y": 7465,
 "onceki": 1870
+},
+"601eaec5c7ca1e32": {
+"dosya": "Woodes_Rogers_and_his_Family_RMG_BHC2973.tiff",
+"g": 3800,
+"y": 2777,
+"onceki": 2500
+},
+"611d1d65b1365906": {
+"dosya": "Masaccio,_madonna_del_solletico,_1426_ca._03.jpg",
+"g": 2232,
+"y": 3060,
+"onceki": 450
+},
+"61d1788e06d896ce": {
+"dosya": "La_toilette,_by_François_Boucher.jpg",
+"g": 5864,
+"y": 4812,
+"onceki": 2000
 },
 "62bd5da543d347e9": {
 "dosya": "Georges_de_La_Tour_003.jpg",
@@ -151,23 +493,83 @@
 "y": 2601,
 "onceki": 1021
 },
+"633e71e3b9ed17db": {
+"dosya": "Gauguin_-_Café_at_Arles_(Night_Café_at_Arles)_1888.jpg",
+"g": 11796,
+"y": 9267,
+"onceki": 1280
+},
+"645569ed714330ef": {
+"dosya": "The_“Gattamelata”,_portrait_of_man_in_armour_with_a_squire_(by_Giorgione)_-_Uffizi_(2).jpg",
+"g": 1993,
+"y": 2500,
+"onceki": 800
+},
 "65dd69556c466847": {
 "dosya": "Hyancinthe_Rigaud_-_Portrait_Cardinal_de_Bouillon_03.jpg",
 "g": 3831,
 "y": 5001,
 "onceki": 2560
 },
-"6904b84ac3b3a898": {
-"dosya": "José_de_Ribera_012.jpg",
-"g": 3051,
-"y": 1157,
-"onceki": 1920
+"66c2e2e8a1da8bc5": {
+"dosya": "1457_van_der_Weyden_Medici-Madonna_anagoria.JPG",
+"g": 3168,
+"y": 4752,
+"onceki": 2932
+},
+"6731cd14c2e29c01": {
+"dosya": "Francesco_Solimena_-_Boreas_Abducting_Oreithyia,_Daughter_of_Erechteus.jpg",
+"g": 1895,
+"y": 2515,
+"onceki": 1024
+},
+"673b3dd754426e34": {
+"dosya": "Jean-Baptiste_Siméon_Chardin_009.jpg",
+"g": 2024,
+"y": 2571,
+"onceki": 1200
+},
+"68abb9b24f2347cf": {
+"dosya": "Isleworthml.JPG",
+"g": 4193,
+"y": 5480,
+"onceki": 1600
+},
+"6903a0a1edd7d021": {
+"dosya": "Edgar_Degas_-_Monsieur_et_Madame_Edouard_Manet.jpg",
+"g": 4570,
+"y": 4187,
+"onceki": 1739
+},
+"69ab90049aad79dd": {
+"dosya": "Turner_selfportrait.jpg",
+"g": 3601,
+"y": 4622,
+"onceki": 1536
+},
+"6aa1f5a57dc945b8": {
+"dosya": "Vigée_Le_Brun,_Élisabeth_-_Marie-Antoinette_en_gaulle,_1783.JPG",
+"g": 2500,
+"y": 3188,
+"onceki": 1252
+},
+"6b0234af0cbaf82a": {
+"dosya": "Summer_(Landschaft_mit_Liebespaar)_-_Caspar_David_Friedrich.jpg",
+"g": 7064,
+"y": 4816,
+"onceki": 1453
 },
 "6ca5400f6b272dba": {
 "dosya": "Master_of_Flémalle_-_Portrait_of_a_Fat_Man_-_Google_Art_Project_(331318).jpg",
 "g": 4001,
 "y": 6561,
 "onceki": 878
+},
+"6d8bef671044ddfd": {
+"dosya": "Las_Edades_y_la_Muerte_(Grien).jpg",
+"g": 1149,
+"y": 2952,
+"onceki": 1920
 },
 "6e2d956678df8b09": {
 "dosya": "Le_Calvaire_avec_saint_Dominique_en_prière_-_Fra_Angelico_-_Musée_du_Louvre_Peintures_RF_265.jpg",
@@ -181,6 +583,36 @@
 "y": 3322,
 "onceki": 1867
 },
+"6fcc96ef8e3f1a1c": {
+"dosya": "Portrait_of_a_man_with_a_lute_(1526-1527)_-_Hans_Holbein_d._J.(Gemäldegalerie,_Berlin).jpg",
+"g": 2024,
+"y": 2058,
+"onceki": 978
+},
+"708cc0acc96a497b": {
+"dosya": "Edward_Vernon_by_Thomas_Gainsborough.jpg",
+"g": 2400,
+"y": 2966,
+"onceki": 800
+},
+"71b8021bab295981": {
+"dosya": "Le_Défi_des_Piérides_-_Rosso_Fiorentino_-_Musée_du_Louvre_Peintures_INV_595_;_MR_69.jpg",
+"g": 10664,
+"y": 5021,
+"onceki": 1030
+},
+"72456c00b718aca9": {
+"dosya": "Kandinsky_-_Circles_in_a_Circle,_1923,_1950-134-104.jpg",
+"g": 3961,
+"y": 4096,
+"onceki": 1074
+},
+"72c02d3d01a95fff": {
+"dosya": "1863_Böcklin_Der_Künstler_und_seine_Frau_anagoria.JPG",
+"g": 3168,
+"y": 4003,
+"onceki": 2087
+},
 "72caf075ee733fb9": {
 "dosya": "Hans_Holbein_der_Jüngere_-_Der_Kaufmann_Georg_Gisze_-_Google_Art_Project.jpg",
 "g": 26292,
@@ -192,6 +624,24 @@
 "g": 2212,
 "y": 2685,
 "onceki": 680
+},
+"7507c8080cb79669": {
+"dosya": "Rembrandt_Abraham's_Sacrifice_(Hermitage).jpg",
+"g": 2471,
+"y": 3633,
+"onceki": 1824
+},
+"755bdeb0a3241b50": {
+"dosya": "The_White_Horse_by_John_Constable_-_Google_Art_Project.jpg",
+"g": 6789,
+"y": 4688,
+"onceki": 800
+},
+"75cc2d64572e9624": {
+"dosya": "Raphael_-_The_Expulsion_of_Heliodorus_from_the_Temple.jpg",
+"g": 3995,
+"y": 3004,
+"onceki": 1035
 },
 "761740270e9eb4a9": {
 "dosya": "Ingres,_venere_anadyomène.JPG",
@@ -205,11 +655,65 @@
 "y": 1338,
 "onceki": 1263
 },
+"77db82e745a3b704": {
+"dosya": "Pontormo_-_Portrait_of_Maria_Salviati_de'_Medici_with_Giulia_de'_Medici_-_Google_Art_Project.jpg",
+"g": 3739,
+"y": 4605,
+"onceki": 1800
+},
+"78b86bcea9727d99": {
+"dosya": "111_Dante_Gabriel_Rossetti,_Jeanne_d'Arc_embrassant_l'épée_de_la_Délivrance,_1863.jpg",
+"g": 3410,
+"y": 3900,
+"onceki": 1400
+},
+"79b40457ef452d68": {
+"dosya": "Correggio_051.jpg",
+"g": 3167,
+"y": 4226,
+"onceki": 998
+},
+"7d9f1dced1066f4f": {
+"dosya": "Parmigianino_-_The_Madonna_and_Child_-_Google_Art_Project.jpg",
+"g": 1697,
+"y": 2239,
+"onceki": 801
+},
+"7da6212a010c4b65": {
+"dosya": "Lisboa-Museu_Nacional_de_Arte_Antiga-Salomé-20140917.jpg",
+"g": 2650,
+"y": 3300,
+"onceki": 2323
+},
+"7e7caf0e6b41420f": {
+"dosya": "Tavern_Scene_with_Two_Men_and_a_Girl_-_Diego_Rodríguez_de_Silva_y_Velázquez_-_Google_Arts_Project.jpg",
+"g": 5260,
+"y": 4418,
+"onceki": 1200
+},
 "8177d7f9d92f2926": {
 "dosya": "J.M.W._Turner_–_Snow_Storm_-_Steam-Boat_off_a_Harbour's_Mouth.jpg",
 "g": 7247,
 "y": 5448,
 "onceki": 2510
+},
+"818169d745231e1c": {
+"dosya": "Albrecht_Dürer_-_Marter_der_zehntausend_Christen_(Yorck_Project).jpg",
+"g": 2024,
+"y": 2336,
+"onceki": 1328
+},
+"837a5b364b3aabea": {
+"dosya": "Durer-self-portrait-at-the-age-of-thirteen.jpg",
+"g": 1453,
+"y": 2076,
+"onceki": 1191
+},
+"84044ea1496b55af": {
+"dosya": "Johann_Heinrich_Füssli_008.jpg",
+"g": 2024,
+"y": 2507,
+"onceki": 1200
 },
 "849127cc0c76ca35": {
 "dosya": "Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog.jpeg",
@@ -217,11 +721,23 @@
 "y": 6742,
 "onceki": 2500
 },
+"84a9fc5ddcdc5f24": {
+"dosya": "Gustave_Courbet_-_Nude_Woman_with_a_Dog_-_Google_Art_Project.jpg",
+"g": 4930,
+"y": 3924,
+"onceki": 1234
+},
 "8537fdfdf653424b": {
 "dosya": "Paolo_Veronese_(Paolo_Caliari_1528-1588)_-_Cena_in_casa_di_Simone_(1570)_Olio_su_tela_-_dimensioni_cm_275_x_710_-_Pinacoteca_di_Brera_Milano.jpg",
 "g": 5700,
 "y": 2179,
 "onceki": 1500
+},
+"8558e594cdc75a25": {
+"dosya": "Mother_and_Child_(The_Oval_Mirror)_MET_DT2025.jpg",
+"g": 3025,
+"y": 3718,
+"onceki": 2000
 },
 "89c96d70deac4ea1": {
 "dosya": "Sisley_-_Unter_der_Brücke_von_Hampton_Court.jpeg",
@@ -229,17 +745,29 @@
 "y": 2604,
 "onceki": 2560
 },
+"8ac1e31a4dfa831c": {
+"dosya": "Saint_Jerome_Writing-Caravaggio_(c._1607).jpg",
+"g": 9864,
+"y": 6744,
+"onceki": 2362
+},
 "8b201c27768c6cd1": {
 "dosya": "Eugène_Delacroix_-_Les_Femmes_d'Alger_dans_leur_appartement,_1834.jpg",
 "g": 2560,
 "y": 2006,
 "onceki": 1400
 },
-"8ed47ebbd00e7a3e": {
-"dosya": "Saint_Luke_Drawing_the_Virgin_MFA_Boston.jpg",
-"g": 1941,
-"y": 2401,
-"onceki": 1843
+"8f54b0c4bf0ddb45": {
+"dosya": "Greenwich_Hospital_from_the_North_Bank_of_the_Thames_RMG_BHC1827.tiff",
+"g": 7200,
+"y": 4431,
+"onceki": 1191
+},
+"90575b36219a5427": {
+"dosya": "Giotto._The_Stefaneschi_Triptych_(recto)_c.1330_220x245cm._Pinacoteca,_Vatican..jpg",
+"g": 5391,
+"y": 4724,
+"onceki": 850
 },
 "928358a8752a1496": {
 "dosya": "NantesMACourbet.jpg",
@@ -247,11 +775,41 @@
 "y": 2697,
 "onceki": 2000
 },
+"9591eb62270977ec": {
+"dosya": "Nicolas_Poussin_-_The_Empire_of_Flora_(1631)_-_Google_Art_Project.jpg",
+"g": 3929,
+"y": 2815,
+"onceki": 2024
+},
+"99c60b1dd83bc460": {
+"dosya": "William-Hogarth-The-March-of-the-Guards-to-Finchley-1750-©-The-Foundling-Museum.jpg",
+"g": 2000,
+"y": 1505,
+"onceki": 853
+},
+"9f971d17fa706ed1": {
+"dosya": "Édouard_MANET_-_La_Nymphe_surprise_-_Google_Art_ProjectFXD.jpg",
+"g": 2473,
+"y": 3199,
+"onceki": 1120
+},
+"a0301a22f1de2cf0": {
+"dosya": "Gustave_Moreau_001.jpg",
+"g": 1576,
+"y": 2192,
+"onceki": 591
+},
 "a49e1d7acca971b6": {
 "dosya": "Diego_Velázquez,_Portrait_du_pape_Innocent_X,_1650,_huile_sur_toile,_140_×_120_cm,_Rome,_Galleria_Doria_Pamphilj_(inv._237).jpg",
 "g": 5613,
 "y": 6731,
 "onceki": 2000
+},
+"a4a1b8b3465c8e23": {
+"dosya": "Anthonis-van-Dyck_Susanna-und-die-beiden-Alten-595_934146_BSTGS.jpg",
+"g": 2223,
+"y": 3000,
+"onceki": 1200
 },
 "a66f06dabc46c064": {
 "dosya": "Flight_into_Egypt_-_Capella_dei_Scrovegni_-_Padua_2016.jpg",
@@ -259,11 +817,29 @@
 "y": 2408,
 "onceki": 980
 },
+"a74e2911c8c815d6": {
+"dosya": "Lucas_Cranach_I,_1472-1553._Венера_и_Амур,_укравший_соты._ок.1530._Рим,_галерея_Боргезе_(32638134237).jpg",
+"g": 2488,
+"y": 6200,
+"onceki": 2362
+},
+"a893c51d466ba23f": {
+"dosya": "Edgar_Degas_-_Dancer_with_a_Bouquet_Bowing.jpg",
+"g": 3445,
+"y": 3245,
+"onceki": 514
+},
 "ac3f5322f5d5aa99": {
 "dosya": "William_Blake_-_Nebuchadnezzar_(Minneapolis).jpg",
 "g": 6794,
 "y": 4905,
 "onceki": 1536
+},
+"ad66146a53412706": {
+"dosya": "2019-11-16,_Wassily_Kandinskys,_Roter_Fleck_II,_IMG_7548_edit_Christoph_Braun-2.JPG",
+"g": 6136,
+"y": 4647,
+"onceki": 2000
 },
 "ad7c3739a56a242d": {
 "dosya": "William_Holman_Hunt_-_Two_Gentlemen_of_Verona_-_1887P953_-_Birmingham_Museum_and_Art_Gallery.jpg",
@@ -289,11 +865,17 @@
 "y": 3300,
 "onceki": 1291
 },
-"b44d77bbd21beeab": {
-"dosya": "1485_Bosch_Ecce_Homo_anagoria.JPG",
-"g": 3168,
-"y": 3687,
-"onceki": 2713
+"b169b08e39186718": {
+"dosya": "La_famille_Léonard_Rigaud.JPG",
+"g": 4422,
+"y": 3456,
+"onceki": 2483
+},
+"b36ac2c4ce280f33": {
+"dosya": "Anthony_van_Dyck_-_Heilige_Matheus_-_RH.LBI.2016.006.1_-_Rubenshuis.jpg",
+"g": 5799,
+"y": 7081,
+"onceki": 1443
 },
 "b53fb673df0b8b73": {
 "dosya": "Vénus,_Satyre_et_Cupidon_-_Le_Corrège_-_Musée_du_Louvre_Peintures_INV_42_;_MR_163_-_photo_2.jpg",
@@ -301,17 +883,59 @@
 "y": 8799,
 "onceki": 1826
 },
+"b605f291171dfc55": {
+"dosya": "Hendrick_ter_Brugghen_-_Jacob_verwijt_Laban_zijn_bedrog_met_Lea_(1627).jpg",
+"g": 6000,
+"y": 5077,
+"onceki": 900
+},
 "b6984b37e4e861ab": {
 "dosya": "Dante_gabriel_rossetti,_l'amata_(la_sposa),_1865-66FXD.jpg",
 "g": 1797,
 "y": 2051,
 "onceki": 1008
 },
+"b8d00cc4c773c2b9": {
+"dosya": "Marc_-_Das_Äffchen_1290138.jpg",
+"g": 4113,
+"y": 2894,
+"onceki": 2000
+},
+"ba8297dc94a8730c": {
+"dosya": "Boston_Watteau_01.jpg",
+"g": 3672,
+"y": 2977,
+"onceki": 1024
+},
+"bb8bfb41d9301c2d": {
+"dosya": "Portrait_of_a_Gentleman_-_Francesco_Salviati.jpg",
+"g": 3924,
+"y": 5112,
+"onceki": 1529
+},
 "bd42b74b652ff001": {
 "dosya": "L'Odalisque_-_François_Boucher_-_Musée_du_Louvre_Peintures_RF_2140.jpg",
 "g": 9583,
 "y": 7925,
 "onceki": 1030
+},
+"be2ce868fdd0565e": {
+"dosya": "Portret_van_Feyntje_van_Steenkiste_(1603,04-1640),_SK-C-557.jpg",
+"g": 5390,
+"y": 6936,
+"onceki": 1100
+},
+"befbf6e2815b70e5": {
+"dosya": "Annunciation-Caravaggio.jpg",
+"g": 7880,
+"y": 10994,
+"onceki": 1587
+},
+"bf1865da9d2982a4": {
+"dosya": "Vincent_van_Gogh_-_The_Prison_Courtyard_(1890).jpg",
+"g": 9048,
+"y": 11409,
+"onceki": 2000
 },
 "bf8c45dbcf1d614d": {
 "dosya": "La_grande_odalisque_-_Jean-Auguste_Dominique_Ingres_-_Musée_du_Louvre_Peintures_RF_1158.jpg",
@@ -324,6 +948,12 @@
 "g": 6493,
 "y": 4226,
 "onceki": 1920
+},
+"c106073805b13746": {
+"dosya": "Ambrosius_Volmar_Keller-Musée_de_l'Oeuvre_Notre-Dame.jpg",
+"g": 2040,
+"y": 2784,
+"onceki": 959
 },
 "c28fe7ae7afccac7": {
 "dosya": "L'inondation_a_Port-Marly.JPG",
@@ -343,17 +973,119 @@
 "y": 2328,
 "onceki": 1460
 },
+"c553a8a6066cf837": {
+"dosya": "Bouguereau-Zenobia-1850.jpg",
+"g": 1630,
+"y": 2133,
+"onceki": 1000
+},
+"c5fa1a047cf1693c": {
+"dosya": "Hendrick_ter_Brugghen_-_The_calling_of_Saint_Matthew_-_Google_Art_Project.jpg",
+"g": 3884,
+"y": 2909,
+"onceki": 1417
+},
+"cad968a7a381b9f6": {
+"dosya": "Correggio_039.jpg",
+"g": 2024,
+"y": 2631,
+"onceki": 973
+},
+"cb6223a3b6f4bd06": {
+"dosya": "Franz_Marc_-_Der_Traum_(1912).jpg",
+"g": 3000,
+"y": 2175,
+"onceki": 1649
+},
+"cdd5503b5b4b4401": {
+"dosya": "Rosso_Fiorentino_(Giovanni_Battista_di_Jacopo)_-_The_Dead_Christ_with_Angels_-_Google_Art_Project.jpg",
+"g": 4432,
+"y": 5701,
+"onceki": 1141
+},
 "cf156bafcba500f5": {
 "dosya": "Sofonisba_Anguissola_(um_1532-35_-_1625)_-_Bianca_Ponzoni_Anguissola_-_1705_-_Gemäldegalerie.jpg",
 "g": 3037,
 "y": 4000,
 "onceki": 600
 },
+"cf5cda130bf71829": {
+"dosya": "Parmigianino_011.jpg",
+"g": 2246,
+"y": 2885,
+"onceki": 2293
+},
+"d38caeea2fdc48df": {
+"dosya": "Edgar_Degas_-_Dancer_posing_for_a_Photographer_(1875).jpg",
+"g": 8442,
+"y": 10942,
+"onceki": 1668
+},
+"d44fbbe664518786": {
+"dosya": "William_Hogarth_-_Southwark_Fair_-_Google_Art_Project.jpg",
+"g": 3618,
+"y": 2854,
+"onceki": 1600
+},
+"d583ac2131472206": {
+"dosya": "Böcklin_-_Vita_somnium_breve_(Das_Leben_ein_kurzer_Traum),_1888,_112.jpg",
+"g": 4248,
+"y": 6704,
+"onceki": 2965
+},
+"d84ae7739ef164e1": {
+"dosya": "Bosch_-_Previously_attributed_-_Two_Figures_Wearing_Mitres_(fragment),_circa_1480,_1177_(OK).jpg",
+"g": 2880,
+"y": 3672,
+"onceki": 618
+},
+"d8d4061227b17919": {
+"dosya": "Bacchanal_of_the_Andrians_by_Titian_in_the_Prado_Museum.jpg",
+"g": 5222,
+"y": 4724,
+"onceki": 2611
+},
 "d8edea10dc6c0c75": {
 "dosya": "GERARD-VAN-HONTHORST-1592_FROEHLICHE-GESELLSCHAFT-1312_947177_BSTGS.jpg",
 "g": 3000,
 "y": 2028,
 "onceki": 985
+},
+"daa5d33cdec6d559": {
+"dosya": "María_Teresa_de_Borbón_y_Vallabriga,_Condesa_de_chinchon_(Goya).jpg",
+"g": 2015,
+"y": 3051,
+"onceki": 1920
+},
+"db4277baa7d7fc6d": {
+"dosya": "Wassily_Kandinsky_-_Gentle_accent.jpg",
+"g": 4096,
+"y": 4080,
+"onceki": 980
+},
+"db52c7bdeb574bd0": {
+"dosya": "Gebirge_or_Steiniger_Weg_by_Franz_Marc.JPG",
+"g": 2176,
+"y": 2688,
+"onceki": 475
+},
+"debecbfc1bb7d939": {
+"dosya": "Gentile_da_Fabriano_040.jpg",
+"g": 1576,
+"y": 2725,
+"onceki": 1700
+},
+"df7a8b5d16d5327a": {
+"dosya": "Diego_Rodríguez_de_Silva_y_Velázquez_-_Don_Baltasar_Carlos_with_a_Dwarf_-_Google_Art_ProjectFXD.jpg",
+"g": 3830,
+"y": 5035,
+"onceki": 1040
+},
+"e0694234ff2368ba": {
+"dosya": "Gentile_da_Fabriano_-_Nativity_-_WGA08543.jpg",
+"g": 4668,
+"y": 1896,
+"onceki": 2048
 },
 "e0a116f1c7686851": {
 "dosya": "Giovanni_Battista_Tiepolo_-_Scipio_Africanus_Freeing_Massiva_-_Google_Art_Project.jpg",
@@ -385,6 +1117,30 @@
 "y": 2490,
 "onceki": 1911
 },
+"e4c578fdd244f057": {
+"dosya": "Judas_being_paid_-_Capella_dei_Scrovegni_-_Padua_2016.jpg",
+"g": 1845,
+"y": 2025,
+"onceki": 1000
+},
+"e8196a687f06e8c2": {
+"dosya": "William_Adolphe_Bouguereau_-_A_Dream_of_Spring.jpg",
+"g": 4598,
+"y": 6636,
+"onceki": 2174
+},
+"e97cf2011fcacb11": {
+"dosya": "Sebastiano_Ricci_-_A_Glory_of_the_Virgin_with_the_Archangel_Gabriel_and_Saints_Eusebius,_Roch,_and_Sebastian.jpg",
+"g": 2920,
+"y": 5240,
+"onceki": 2100
+},
+"ea87bd15356e163c": {
+"dosya": "Dresden,_Gemäldegalerie_Alte_Meister,_Annibale_Carracci,_der_hl._Rochus_verteilt_Almosen.jpg",
+"g": 4027,
+"y": 2873,
+"onceki": 1224
+},
 "eb3c8900dabe45d9": {
 "dosya": "Adolf_en_Catharina_Croeser,_bekend_als_‘De_burgemeester_van_Delft_en_zijn_dochter’_Portret_van_Adolf_en_Catharina_Croeser_aan_de_Oude_Delft,_bekend_als_‘De_burgemeester_van_Delft_en_zijn_dochter',_SK-A-4981.jpg",
 "g": 4716,
@@ -397,11 +1153,47 @@
 "y": 2304,
 "onceki": 957
 },
+"ee412c5d6edd4f20": {
+"dosya": "Angelika_Kauffmann,_Selbstbildnis_am_Scheideweg_zwischen_Musik_und_Malerei_(1794).jpg",
+"g": 2792,
+"y": 1898,
+"onceki": 1000
+},
 "eee75c4e26c2f3ed": {
 "dosya": "Marc,_Franz_-_Blue_Horse_I_-_Google_Art_Project.jpg",
 "g": 3881,
 "y": 5180,
 "onceki": 2678
+},
+"f019ad6a6fcddbec": {
+"dosya": "Virgin_and_Child_Enthroned_with_Worshipping_Angels_and_Prophets_(SM_1779).png",
+"g": 3310,
+"y": 6618,
+"onceki": 1000
+},
+"f0d177a8b86f577b": {
+"dosya": "The_Magdalen_Reading_-_Rogier_van_der_Weyden.jpg",
+"g": 5131,
+"y": 6000,
+"onceki": 819
+},
+"f141234259dd1b67": {
+"dosya": "Louis_d'Orléans_montrant_sa_maîtresse_-_Eugène_Delacroix_-_MBA_Lyon_2014.JPG",
+"g": 2885,
+"y": 3935,
+"onceki": 2628
+},
+"f1c9d98c0c261d50": {
+"dosya": "Gustave_Moreau_-_l'Apparition.jpg",
+"g": 4060,
+"y": 4845,
+"onceki": 2400
+},
+"f20c6e397347ed5c": {
+"dosya": "William_Hogarth_-_O_the_Roast_Beef_of_Old_England_('The_Gate_of_Calais')_-_Google_Art_Project.jpg",
+"g": 2901,
+"y": 2421,
+"onceki": 2024
 },
 "f21dd43390937989": {
 "dosya": "Jacques-Louis_David_-_Mars_désarmé_par_VénusFXD.jpg",
@@ -427,6 +1219,42 @@
 "y": 2568,
 "onceki": 600
 },
+"f53e0f488230668e": {
+"dosya": "Jean_Auguste_Dominique_Ingres,_1780-1867._Купальщица._1807._51_х_42.5_см._Байон,_музей_Бонна_(46856788244).jpg",
+"g": 3275,
+"y": 4000,
+"onceki": 887
+},
+"f546475bf621cae2": {
+"dosya": "Mary_Cassatt—Young_Women_Picking_Fruit—1891.jpg",
+"g": 2579,
+"y": 3662,
+"onceki": 1680
+},
+"f95358f521854082": {
+"dosya": "Jean-Honoré_Fragonard_-_Jean-Claude_Richard,_Abbot_of_Saint-Non,_Dressed_'a_l'Espagnole'_-_Google_Art_Project.jpg",
+"g": 3592,
+"y": 4487,
+"onceki": 843
+},
+"fa6c3ad8db0e49dc": {
+"dosya": "939b-meister_von_flemalle_robert_campin_werks-gnadenstuhl-1428.png",
+"g": 1447,
+"y": 3496,
+"onceki": 2500
+},
+"fc5965076100a4e1": {
+"dosya": "Paolo_Ucello_-_Adoration_of_the_Christ_Child_with_Saint_Jerome,_Saint_Mary_Magdalene_and_Saint_Eustace,_Magdalena_and_Eustace,_c1436_-_Staatliche_Kunsthalle_Karlsruhe_404.tif",
+"g": 2715,
+"y": 6329,
+"onceki": 715
+},
+"fd2be0680956abb9": {
+"dosya": "'Sancho_and_Don_Quixote'_by_Honoré_Daumier.jpg",
+"g": 2000,
+"y": 2454,
+"onceki": 813
+},
 "fd3b31e7704b88f7": {
 "dosya": "Pietà_(Perugino)_Restaured_and_Color_fixed.jpg",
 "g": 3432,
@@ -435,44 +1263,122 @@
 }
 },
 "reddedilen": {
+"0089359e97843db2": [
+"Saint-Pétersbourg_-_Musée_de_l'Ermitage_-_10.jpg"
+],
+"014bf62d28e3a191": [
+"Jean-François_Millet_-_Le_vanneur_(1846-47).jpg"
+],
+"01c04c5f8cde07c3": [
+"William_Hogarth_061.jpg"
+],
+"024466a44f651563": [
+"Tizian_-_Clarissa_Strozzi.jpg"
+],
 "03c1c24ccf88447a": [
 "Woman_with_parrot-Eugene_Delacroix-MBA_Lyon_B566-IMG_0475.jpg"
+],
+"03fad7f3ba7d2fce": [
+"Composition_X.jpg"
+],
+"0429db36fbf08d4c": [
+"2016-10-24_10-30_Burgund_301_Dijon,_Musée_des_Beaux-Arts_de_Dijon_-_Le_Maître_de_Flémalle,_La_Natitivé_et_L'Adoration_des_Bergers,_Detail_(22781583858).jpg"
 ],
 "05e193af060a08d8": [
 "Cezanne_mardi-gras.jpg"
 ],
+"07050e218e8d28fe": [
+"Claude_Lorrain_010.jpg"
+],
+"0788e8639d18d52d": [
+"Hamburg,_Kunsthalle,_Caspar_David_Friedrich,_das_brennende_Neubrandenburg.jpg"
+],
 "07b7fbc12351de82": [
 "Johann_Heinrich_Füssli_011.jpg"
+],
+"081ba89db7cc0459": [
+"Anthony_van_Dyck_-_Five_Eldest_Children_of_Charles_I_-_Google_Art_ProjectFXD.jpg"
 ],
 "0894a817c86243cd": [
 "Gainsborough,_Thomas_-_A_Woman_in_Blue.jpg"
 ],
 "08d708215451ddc6": [
+"Nicholas_Kratzer_by_Hans_Holbein_the_Younger.jpg",
 "Nicholas_Kratzer_by_Hans_Holbein_the_YoungerFXD.jpg"
+],
+"08ee01db97c0b3ad": [
+"José_de_Ribera_016.jpg"
+],
+"091e8908cbc317cc": [
+"Portrait_of_a_young_Man_(Giorgione_-_Gemäldegalerie,_Berlin)_9463.jpg"
 ],
 "0927c4bea5c5f723": [
 "Tintoretto,_Jacopo_-_Ultima_cena_-_San_Giorgio_Maggiore.jpg"
 ],
+"0c3e20d289ff79b1": [
+"Paul_Gauguin_124.jpg"
+],
 "0cc75df9a7033aab": [
-"Les_joueurs_de_cartes_de_P._Cézanne_(Fondation_Vuitton,_Paris)_(33568651718).jpg"
+"Les_joueurs_de_cartes_de_P._Cézanne_(Fondation_Vuitton,_Paris)_(33568651718).jpg",
+"Paul_Cézanne,_1892-95,_Les_joueurs_de_carte_(The_Card_Players),_60_x_73_cm,_oil_on_canvas,_Courtauld_Institute_of_Art,_London.jpg"
+],
+"0cf000d2fb8c4516": [
+"Giorgione_060.jpg"
 ],
 "0ee5d41af50b57be": [
-"\"La_Grèce_sur_les_ruines_de_Missolonghi\"_d'E._Delacroix_(musée_du_Louvre,_Paris)_(51562758776).jpg"
+"\"La_Grèce_sur_les_ruines_de_Missolonghi\"_d'E._Delacroix_(musée_du_Louvre,_Paris)_(51562758776).jpg",
+"Eugène_Delacroix_-_La_Grèce_sur_les_ruines_de_Missolonghi_(1826).jpg"
 ],
 "104820b0d04017bc": [
 "Hendrick_ter_Brugghen_-_King_David_playing_the_harp_among_angels_-_M.Ob.529_MNW_-_National_Museum_in_Warsaw.jpg"
 ],
+"10d2dff6a5c7182c": [
+"Baciccio,_ritratto_di_papa_clemente_IX_rospigliosi_(ariccia,_pal_chigi)_02.JPG"
+],
+"11d1f4881b6297d7": [
+"Bellini_-_L'Ivresse_de_Noé,_1515_vers,_896.1.13.jpg"
+],
+"1558890f2c7e48a0": [
+"Dresden,_Gemäldegalerie_Alte_Meister,_Giulio_Romano,_die_Madonna_mit_der_Waschschüssel.jpg"
+],
 "164c98f50dbfe539": [
 "Hamburg_Kunsthalle_Gérôme_Phryne_revealed_before_the_Areopagus_1861.jpg"
+],
+"170004951f727734": [
+"Rogier_van_der_Weyden_-_Portrait_of_a_Woman_with_a_Winged_Bonnet_-_Google_Art_Project.jpg"
+],
+"170644447265ff9e": [
+"Sir_Henry_Guildford,_by_Hans_Holbein_the_Younger.jpg"
 ],
 "172ef3422a6054cf": [
 "Canaletto,_Reception_French_Ambassador_Eremitage_St._Petersburg_02.JPG"
 ],
+"17a30614b3453a29": [
+"Gustave_Caillebotte_Jeune_homme_au_piano_(1876).jpg"
+],
+"17d593c0c6661fe7": [
+"Monet_-_Mer_agitée_à_Etretat.jpg"
+],
+"1803c9edf8243b8a": [
+"Hércules_Piero.jpg"
+],
+"1844d5842be9a4ec": [
+"Pietro_Perugino_cat57.jpg"
+],
+"196d8af539acc33b": [
+"Bouguereau,_Les_Nymphes,_1878_(5589772027).jpg"
+],
 "1a6e8647c842dfe5": [
 "Spitzenklöpplerin_des_Johannes_Vermeer_im_Louvre.jpg"
 ],
+"1b2ae167ac1fe68d": [
+"Sir_Endymion_Porter_and_van_Dyck_by_Anthony_van_Dyck.jpg"
+],
 "1ca77b2fa82af9c9": [
 "Paul_Gauguin_138.jpg"
+],
+"1cf5264b5e9148a3": [
+"Jacopo_Pontormo_054.jpg"
 ],
 "1d31b322de8d5164": [
 "Giambattista_Tiepolo,_,_Kunsthistorisches_Museum_Wien,_Gemäldegalerie_-_Tod_des_Konsuls_L._J._Brutus_im_Zweikampf_mit_Aruns_-_GG_6798_-_Kunsthistorisches_Museum.jpg"
@@ -480,11 +1386,32 @@
 "1d4fe32ca690a05b": [
 "L'annonciation.JPG"
 ],
+"1d639fb069961884": [
+"Correggio_002.jpg"
+],
+"1dedad8ca3b49681": [
+"PeinturesMuséeFabre073-David.jpg"
+],
+"1ff3413eff139179": [
+"Titian_-_Christ_crowned_with_Thorns_-_Louvre.jpg"
+],
+"203b212410c6f26c": [
+"Frans_Hals_086_big.jpg"
+],
+"212a12c3062addff": [
+"Kandinsky_Reitendes_Paar_PA290999.jpg"
+],
+"21491743c31054fb": [
+"Marc_das-arme-land-tirol.jpg"
+],
 "232b103c8249d19c": [
 "Lucrezia_Panciatichi_by_Angelo_Bronzino.jpg"
 ],
 "23c3a12d9fbedd48": [
 "Simone_martini,_s._ludovico_di_tolosa_incorona_il_fratello,_1317,_Q34,_01.JPG"
+],
+"23d562a053bfd7b9": [
+"William_Hogarth_self-portrait_1745_Tate_Britain.jpg"
 ],
 "23d6c874806b45c3": [
 "John_Everett_Millais_-_Autumn_Leaves.jpeg"
@@ -492,20 +1419,80 @@
 "2486c0b09f16b05e": [
 "Jael_and_Sisera_by_Artemisia_Gentileschi.jpg"
 ],
+"25462ca5e0a7101f": [
+"Manet,_Edouard_-_Portrait_of_Emile_Zola.jpg"
+],
+"25d0b6c045525dc9": [
+"The_orchestra_and_its_instruments_(1917)_(14782472875).jpg"
+],
+"26ddd6c31b743170": [
+"Velázquez_-_Pablo_de_Valladolid_(Museo_del_Prado,_1636-37).jpg"
+],
+"275203b8d20468b9": [
+"La_Natividad,_de_El_Greco_(Santuario_de_la_Virgen_de_la_Caridad_de_Illescas).jpg"
+],
+"27a547e277eca3a0": [
+"Jean-Baptiste_Siméon_Chardin_008.jpg"
+],
 "28d25d5d8977cd3e": [
+"Arnold_Boecklin_Spiel_der_Wellen_1883.jpg",
 "Dans_le_jeu_des_Vagues_Arnold_Böcklin.jpg"
+],
+"298135b224a03f18": [
+"Joseph_Mallord_William_Turner_010.jpg"
+],
+"2a86f1196ef2b1f0": [
+"Kunsthistorisches_Museum_Wien,_Diego_Velázquez,_Infantin_Maria_Teresa.JPG"
 ],
 "2b55699c113bf6f7": [
 "Boating_Party_by_Gustave_Caillebotte_pictured_on_August_7,_2025_at_the_Art_Institute_of_Chicago.jpg"
 ],
+"2d440e42d31e9dc1": [
+"1785_Kauffmann_Bacchantin_anagoria.JPG"
+],
+"2d48263500d28555": [
+"PeinturesMuséeFabre127_Zurbaran_Gabriel.jpg"
+],
+"2d83b04a521654b5": [
+"Kunsthistorisches_Museum_Wien,_Tizian,_Violante.JPG"
+],
+"2fcbb921e490cf7f": [
+"Three_Musicians_by_Diego_Velázquez_(Gemäldegalerie,_Berlin)_9438.jpg"
+],
+"3020fa79ceb12d9f": [
+"Pieter_Bruegel_de_Oude_-_Twee_geketend_apen.jpg"
+],
+"30a58b816172f401": [
+"The_adoration_of_the_magi_in_the_snow,_1563_v2.jpg"
+],
 "31704af50501fe02": [
-"Berlín._Elisabeth_von_der_Pfalz._01.jpg"
+"Berlín._Elisabeth_von_der_Pfalz._01.jpg",
+"Rigaud_Liselotte_v_d_Pfalz@Herzog_Anton_Ulrich_Museum.JPG"
+],
+"318cdcbff5a0f4d9": [
+"PeinturesMuséeFabre101_Cabanel_Chiaruccia.jpg"
+],
+"340a6d4b7f3660dd": [
+"Frans_Hals_036.jpg"
+],
+"347c83f39f17b087": [
+"La_Chasse_de_Diane-Arnold_Boecklin-IMG_8252.JPG"
 ],
 "3537f56b074cf1ab": [
 "L'Indifférent_-_Antoine_Watteau_-_Musée_du_Louvre_Peintures_MI_1122.jpg"
 ],
+"3557af7030e2ec2d": [
+"John_Constable_-_The_Valley_Farm,_c._1835.jpg"
+],
+"36d5ae16807e415a": [
+"PeinturesMuséeFabre165_Greuze_prière.jpg"
+],
 "37c74619d7c5c387": [
+"Pity_MET_DP108219.jpg",
 "Pity_ca._1795_William_Blake.jpg"
+],
+"37faf4ce66977048": [
+"Antonio_Allegri_da_Correggio,_his_life,_his_friends,_and_his_time_(1896)_(14745287946).jpg"
 ],
 "3a034ec2d11158f7": [
 "Apollo_flaying_Marsyas_by_Ribera_(Bruxelles)_(cropped).jpg"
@@ -513,32 +1500,123 @@
 "3b2fdbdae3ac3305": [
 "François_Boucher_012.jpg"
 ],
+"3c14bc73ccac8644": [
+"Pierre_puvis_de_chavannes,_santa_maria_maddalena_nel_deserto,_1869.jpg"
+],
+"3ce2ef9ae051bac4": [
+"William_Hogarth_014.jpg"
+],
+"3d1e1ef57a0de3ec": [
+"Correggio,_annunciazione,_1524-25_ca.jpg"
+],
 "3d30830b048ae49c": [
 "Guerchin_Strasbourg.jpg"
+],
+"3d984e2d5326ebac": [
+"Lisbon,_Museum_Nacional_de_Arte_Antiga,_Mattia_Preti,_St._Paul_the_Hermit_.JPG"
 ],
 "3ecae316d8f7573d": [
 "Rideau,_Cruchon_et_Compotier,_par_Paul_Cézanne,_Yorck_Project.jpg"
 ],
+"3fab8ea64443e49a": [
+"Rienzi_vowing_to_obtain_Justice_for_his_Brother's_Death_by_William_Holman_Hunt,_NG_01.jpg"
+],
+"403293996b3bc8ad": [
+"Rubens_Vía_Láctea.jpg"
+],
+"406d5e8beb42bb62": [
+"Giorgione,_tre_età_dell'uomo,_1530_ca._02.jpg"
+],
 "40e6775636516c0a": [
 "Georges_de_La_Tour_007.jpg"
+],
+"414cb7767dfb7268": [
+"Marc_Reh_im_Walde_II_PA291073.jpg"
 ],
 "43ad6f0fef2080d1": [
 "Dante's_Dream_(DGR)_(36977926471).jpg"
 ],
 "43fd0478052eecd3": [
+"A_wanderer_in_London_(1906)_(14743553276).jpg",
 "Antonio_Allegri_da_Correggio,_his_life,_his_friends,_and_his_time_(1896)_(14788327103).jpg"
+],
+"462ec69431d2deea": [
+"Dresden,_Gemäldegalerie_Alte_Meister,_El_Greco,_die_Heilung_des_Blinden.jpg"
+],
+"465789f7ea438f79": [
+"Louis_david,_il_dolore_e_i_rimpianti_di_andromaca_sul_corpo_del_marito_ettore,_1783,_01.jpg"
+],
+"486d7cfec662cc12": [
+"Hamburg,_Kunsthalle,_Arnold_Böcklin,_Selbstbildnis.jpg"
+],
+"4885443dfe40431b": [
+"Gentile_da_Fabriano_043.jpg"
+],
+"4933d40cb70cefe3": [
+"Russia_2612_-_Madonna_and_Child_(4114346093).jpg"
 ],
 "4af98b38798aa35f": [
 "Paolo_Uccello_050.jpg"
 ],
+"4bd1a029d1164b7d": [
+"Holbein,_Hans_(II)_-_Portrait_of_a_lady,_probably_of_the_Cromwell_Family_formerly_known_as_Catherine_Howard.jpg"
+],
+"4c940b68f6efbee0": [
+"Hamburg,_Kunsthalle,_Arnold_Böcklin,_Bildnis_Augusto_Fratelli.jpg"
+],
+"4d1610ad397c3c56": [
+"Paul_Gauguin_-_Christ_and_the_Garden_of_Olives.jpg"
+],
 "4e6f75a97df4f9f8": [
 "Castelfranco_Veneto_Madonna_di_Giorgione2_FoNo.jpg"
+],
+"4f22e8bdc473de42": [
+"Accademia_-_Madonna_col_Bambino_tra_san_Giovanni_Battista_e_una_santa_Cat.881.jpg"
+],
+"4f6a3e6becdfb727": [
+"Raffaello,_la_gravida,_1506-07_ca._02.jpg"
 ],
 "4fe393c5b9497b1f": [
 "Petit_Palais_Greuze_enfance_IMG_8875.jpg"
 ],
+"50c373569764ac12": [
+"The_Mocking_of_Christ,_by_Anthony_Van_Dyck,_Flemish,_1628-1630,_oil_on_canvas_-_Princeton_University_Art_Museum_-_DSC06509.jpg"
+],
+"517103ff2b5e0190": [
+"Mariana_of_Austria_(Velázquez,_c._1652).jpg"
+],
+"5263b5b4ef7b7103": [
+"Raffael_026.jpg"
+],
 "5367732b123957ec": [
 "Johann_Heinrich_Füssli_018.jpg"
+],
+"5627b24efb52fad3": [
+"Jean-François_Millet_(II)_006.jpg"
+],
+"5688c966a06df875": [
+"Marc_Kühe_Rot_Grün_Gelb_PA291051.jpg"
+],
+"572e99ec319f809c": [
+"William-Adolphe_Bouguereau_-_Les_murmures_de_l'Amour_(1889).jpg"
+],
+"598919ed324f1e40": [
+"Pierre-Cécile_Puvis_de_Chavannes_007FXD.jpg"
+],
+"5a5324bf0cc933d1": [
+"Poussin_-_La_Fuite_en_Égypte,_1657,_2014.5.1.jpg"
+],
+"5a848a9894d9b630": [
+"Dresden,_Gemäldegalerie_Alte_Meister,_Parmigianino,_Madonna_mit_Kind,_hl._Stepanus_und_Johannes_d.T.jpg"
+],
+"5bfc404a3e0cfdb3": [
+"Jmw_turner,_la_decima_piaga_d'egitto,_ante_1802,_01_(frameless).jpg"
+],
+"5e8f7ba2a76c8302": [
+"Raphael_-_The_Madonna_of_the_PinksFXD.jpg"
+],
+"5ef642684438f1d9": [
+"Quinten_Metsys-Vierge_a_lEnfant_IMG_1401.JPG"
 ],
 "5fbab71c6a8dacb0": [
 "Guido_reni,_santa_maria_maddalena_penitente,_01.jpg"
@@ -555,14 +1633,51 @@
 "637d0abb5cdd493e": [
 "Diane_chasseresse_par_Orazio_Gentileschi_(Musée_de_Nantes)_(cropped).JPG"
 ],
+"6439af269cf9a195": [
+"L'Inspiration_du_poète_-_Nicolas_Poussin_-_Musée_du_Louvre_-_Peintures_RF_1774.jpg"
+],
+"66e9c451298599bd": [
+"Diego_Velázquez_054.jpg"
+],
 "6763b6d1cc09a08c": [
 "John_Constable_-_The_Cornfield.jpg"
+],
+"67c5090b4b4e30c0": [
+"Johann_Heinrich_Füssli_-_The_Nightmare_55.5.A-d1-2019-04-15.jpg"
+],
+"6904b84ac3b3a898": [
+"José_de_Ribera_012.jpg"
+],
+"6a70b4d094c96ae3": [
+"Les_Tricheurs,_par_Valentin_de_Boulogne,_Yorck.jpg"
+],
+"6ba4cbd8e11d9c2d": [
+"Pierre-Auguste_Renoir,_1880,_Portrait_of_Mademoiselle_Irène_Cahen_d'Anvers,_Sammlung_E.G._BührleFXD.jpg"
+],
+"6c984c67ab9326bc": [
+"William_Hogarth_-_The_Enraged_Musician_-_1967.117_-_Cleveland_Museum_of_Art.tif"
 ],
 "6d8bef671044ddfd": [
 "Baldung,_Hans_-Die_drei_Lebensalter_und_der_Tod_-_c._1540.jpg"
 ],
+"6dd45920897981a1": [
+"The_Taking_of_Christ-Caravaggio_(c.1602).jpg"
+],
+"6f86f194b2024377": [
+"The_Sleeping_Spinner_(Gustave_Courbet_-_Musée_Fabre)-WUS-08723_(cropped).jpg"
+],
 "70ce6b29568396f5": [
+"Dante_Gabriel_Rossetti_Veronica_Veronese.jpg",
 "Rosetti-Veronica_Veronese.JPG"
+],
+"72159f8fb05fae66": [
+"Gentileschi_-_Die_heilige_Katharina_-_1615.jpeg"
+],
+"731779a36545b6e1": [
+"Andrea_Mantegna_-_The_Virgin_and_Child_-_Google_Art_Project.jpg"
+],
+"732acefd4a1d506b": [
+"Sofonisba_Anguissola_-_Portrait_of_a_man_with_his_daughter_-_M.Ob.1079_MNW_-_National_Museum_in_Warsaw.jpg"
 ],
 "774cc56791174d41": [
 "El_Expolio_del_Greco_Catedral_de_Toledo.jpg"
@@ -570,59 +1685,261 @@
 "77c6115f34a884c9": [
 "Saarbrücken,_Moderne_Galerie,_Franz_Marc,_blaues_Pferdchen_(Kinderbild).jpg"
 ],
+"77df17448eb30f26": [
+"1315_di_Bondone_Die_Kreuzigung_Christi_Gemäldegalerie_Kat.Nr._1074A_anagoria.jpg"
+],
 "77efdb6e28ef2f68": [
-"1823_Friedrich_Das_Eismeer_anagoria.JPG"
+"1823_Friedrich_Das_Eismeer_anagoria.JPG",
+"Caspar_David_Friedrich_–_Das_Eismeer.jpg"
+],
+"7810fbf438bf599c": [
+"Portrait_of_Boniface_Amerbach,_by_Hans_Holbein_the_Younger.jpg"
+],
+"78b037338ebb7f84": [
+"Chardin_(1905)_(14800165963).jpg"
+],
+"78b53fb65f308613": [
+"Petit_Palais_Greuze_enfance_IMG_8726.jpg"
+],
+"7c5f7a4f7d95246c": [
+"Jean-Baptiste-Camille_Corot_-_The_Church_in_Marissel.jpg"
+],
+"7c83eb9f23c9d4db": [
+"Andrea_mantegna,_ritratto_del_prelato_carlo_de'_medici,_1460_ca._02.jpg"
+],
+"7e238bd1ebd7c908": [
+"Francisco_de_Goya_y_Lucientes_-_Duelo_a_garrotazos.jpg"
 ],
 "7e359200da34f087": [
+"François_Boucher_-_Ruhendes_Mädchen_-_1752.JPG",
 "Resting_Girl_by_François_Boucher_(1753)_-_Alte_Pinakothek_-_Munich_-_Germany_2017_(crop).jpg"
 ],
 "7ee2f0e0ac9bb933": [
 "Retrato_de_Jorge_Manuel_Theotocópuli_(El_Greco).jpg"
 ],
+"81a0ab82a57bc804": [
+"Piero_della_Francesca_018.jpg"
+],
+"81dd64d7261f1960": [
+"Seurat_-_Der_Strand_Le_Bas_Butin_bei_Honfleur_-_1886.jpeg"
+],
+"82628910bf6f62aa": [
+"79B_Rogier_van_der_Weyden,_c._1435_(53419921261).jpg"
+],
+"82d71c84eb0099c3": [
+"Le_Baptême_du_Christ.jpg"
+],
 "83d844ba7e3f59b0": [
+"15_El_Aguador_de_Sevilla_(Wellington_Museum,_Apsley_House,_Londres,_1623).jpg",
 "El_aguador_de_Sevilla,_por_Diego_Velázquez.jpg"
 ],
+"83f5947021a8b3bb": [
+"Paolo_uccello,_madonna_col_bambino_che_si_protende,_1435-40_ca._01.jpg"
+],
+"84580f9096aa29e3": [
+"Edvard_Munch_-_Christmas_in_Brothel_-_MM.M.00148_-_Munch_Museum.jpg"
+],
+"858d26ea6e7fcae5": [
+"Paul_Gauguin_-_Te_arii_vahine_(1896)_-_Pushkin_Museum.jpg"
+],
 "870665d308612355": [
+"Cabanel-L'ange_déchu.JPG",
 "The_Fallen_Angel_-_Alexandre_Cabanel.jpg"
 ],
+"871227cb0752f6c7": [
+"Boulogne,_Valentin_de_-_Rafaello_Menicucci_-_Google_Art_Project.jpg"
+],
+"87bde03743123571": [
+"Sandro_Botticelli_-_The_Lamentation_over_the_Dead_Christ_-_Google_Art_Project.jpg"
+],
+"885b52ef4cb0df9a": [
+"San_Hugo_en_el_refectorio_de_los_cartujos.jpg"
+],
 "89767d2cff0d2464": [
+"François_Boucher_-_Hercules_and_Omphale_-_Google_Art_Project.jpg",
 "François_Boucher_-_Hercules_and_Omphale_-_Google_Art_ProjectFXD.jpg"
 ],
+"8a770b2038d022fc": [
+"Piero_della_Francesca_021.jpg"
+],
+"8a8ebd3a958bcb08": [
+"Edvard_Munch_-_Woman._Sphinx_-_MM.M.00057_-_Munch_Museum.jpg"
+],
+"8c1a892435ea0594": [
+"35944-StPetersburg-Hermitage.jpg"
+],
+"8c4289c63fb43566": [
+"'Wine_is_a_Mocker'_by_Jan_Steen,_c._1668-70,_oil_on_canvas,_Norton_Simon_Museum.JPG"
+],
+"8ed47ebbd00e7a3e": [
+"Saint_Luke_Drawing_the_Virgin_MFA_Boston.jpg"
+],
+"8f63cee508ea603a": [
+"Gypsy_with_a_Mandolin_by_Jean-Baptiste-Camille_Corot,_1874,_oil_on_canvas_-_Museu_de_Arte_de_São_Paulo_-_DSC07308.jpg"
+],
+"91338f0c569152c1": [
+"Van_Gogh_-_Bildnis_Pére_Tanguy.jpeg"
+],
+"9170829cf536090b": [
+"31-_Honthorst_van_Gerrit,_Gherardo_delle_notti,_Susanna_e_i_vecchioni_-FG31.jpg"
+],
+"9253ab57fe3dfcf3": [
+"Pieter_Bruegel_d._Ä._001.jpg"
+],
+"949a618e19c55c47": [
+"John_Constable_-_Das_springende_Pferd.jpg"
+],
+"949fea1ca26e5fe1": [
+"Frans_Hals_026.jpg"
+],
+"96db1f6c8005e62f": [
+"Anthonis_van_Dyck_Galleria_Palatina-Firenze028-2.jpg"
+],
 "98214c987e4b8948": [
-"Franz_Marc._Yellow_Cow_(Gelbe_Kuh),_1911_(48784088867).jpg"
+"Franz_Marc._Yellow_Cow_(Gelbe_Kuh),_1911_(48784088867).jpg",
+"Marc_die-gelbe-kuh.jpg"
+],
+"999aaff5fb1b1cd7": [
+"Jacques‑Louis_David,_Portrait_of_Madame_Marie-Louise_Trudaine,_1791–1792,_Paris,_Musée_du_Louvre,_inv._RF_670.jpg"
+],
+"9b326096f49f2de6": [
+"Van_Gogh_-_Selbstbildnis_40.jpeg"
 ],
 "9b87c9fc451e9d2c": [
-"Dante_Gabriel_Rossetti_004.jpg"
+"Dante_Gabriel_Rossetti_004.jpg",
+"The_Rossettis-_Dante_Gabriel_and_Christina;_(1900)_(14793828483).jpg"
+],
+"9cc6e2cc16d4d460": [
+"Titian_-_Penitent_Magdalene_(Galleria_Palatina).jpg"
 ],
 "9d80a27190beb960": [
 "Jacopo_Pontormo_014.jpg"
 ],
 "9ece9bdb10cb534c": [
+"Monet,_Claude_-_Woman_in_the_Garden._Sainte-Adresse.jpg",
 "Monet-Lady_in_the_Garden.jpg"
 ],
+"9fa5bbf0ad446188": [
+"Lumière_du_monde_F_Boucher_1750_1504639.jpg"
+],
+"a06784fa78191bf5": [
+"Jonge_vrouw_in_een_schilderijlijst.jpg"
+],
+"a0ee77083587ff67": [
+"1716_Watteau_Die_französische_Komödie_Gemäldegalerie_Berlin_anagoria.jpg"
+],
+"a2230f6d7525a600": [
+"Portrait_of_a_Man,_by_Giorgione_(Giorgio_da_Castelfranco),_Venice,_1506,_oil_on_panel_-_San_Diego_Museum_of_Art_-_DSC06683.JPG"
+],
+"a24b5c496cb8b581": [
+"Kandinsky_-_Improvisation_Klamm_PA291186.jpg"
+],
+"a45b129c33c25dce": [
+"Paul_Lemoyne_Ingres.jpg"
+],
 "a58aa92bfb6838ab": [
+"Diego_Velázquez_015.jpg",
 "P01170a01nf2006Vela.jpg"
 ],
 "a7acde54e789d403": [
 "Jacopo_Pontormo_032.jpg"
 ],
+"a7c1101631325f03": [
+"Hamburg,_Kunsthalle_(temporär),_Caspar_David_Friedrich,_Huttens_Grab.jpg"
+],
 "a8c077ea4ba8a522": [
 "Duccio_di_Buoninsegna_068.jpg"
+],
+"a8c9531076b2f75f": [
+"Paul_Cézanne_-_Portrait_d'Ambroise_Vollard_-_Musée_des_Beaux-Arts_de_la_ville_de_Paris_-_2.jpg"
 ],
 "aa0ed377c8124e17": [
 "Guercino_Res_Lazzaro.jpg"
 ],
+"aaba66ea3bfc1d14": [
+"National_Museum_in_Poznan_-_battle_of_Asola.JPG"
+],
+"ac872379a2de60d5": [
+"Lucas_Cranach_d.Ä._-_Madonna_mit_dem_Jesuskind_und_dem_heiligen_Johannes_(Galleria_degli_Uffizi).jpg"
+],
+"acf8243a1d748af5": [
+"Pierre-Auguste_Renoir_154.jpg"
+],
+"ad6b37e52267718e": [
+"Saint_Thomas_à_la_pique_-_Georges_de_La_Tour_-_Musée_du_Louvre_Peintures_RF_1988_15.jpg"
+],
+"adca98f04d315944": [
+"Portrait_of_Baudelaire_(Gustave_Courbet_-_Musée_Fabre)-WUS-08709_(cropped).jpg"
+],
+"ae0cbd4ad112f089": [
+"Isaacsz-vav-ruisdael_haarlem.jpg"
+],
 "af51df81fcaa607b": [
-"Anunciación_Martini_02.JPG"
+"Anunciación_Martini_02.JPG",
+"Simone_martini_e_lippo_memmi,_annunciazione_coi_ss._ansano_e_massima,_1333,_01.jpg"
+],
+"afb55cb78473fb22": [
+"William_Hogarth,_The_South_Sea_Scheme,_1721,_NGA_30435.jpg"
+],
+"b034687d9c54b13a": [
+"Théodore_géricault,_due_cavalli_della_posta_alla_porta_di_una_stalla,_1822-23.jpg"
+],
+"b06cf930e2570712": [
+"Petrus_Christus_-_Portrait_of_a_Man,_c1465_-_LACMA_M.44.2.3.tiff"
+],
+"b110155fed5668ea": [
+"\"La_Dormition_de_la_Vierge\"_du_Greco_(musée_du_Louvre,_Paris)_(51563139065).jpg"
+],
+"b2edca98cc6dcd1e": [
+"Francisco_de_Zurbarán_005.jpg"
+],
+"b44d77bbd21beeab": [
+"1485_Bosch_Ecce_Homo_anagoria.JPG"
 ],
 "b49b55c407db413a": [
 "Paolo_Uccello_Fresco_John_Hawkwood_Dom_Florenz-01.jpg"
 ],
+"b66084b62f04ecfe": [
+"Piero_della_Francesca_017.jpg"
+],
 "b6aff5aca215d89d": [
 "Joseph_Mallord_William_Turner_042.jpg"
 ],
+"b7330d7b2e4f42f0": [
+"L'Arrivée_et_l'Interrogatoire_des_galériens_dans_la_prison_de_Gênes-IMG_7066.JPG"
+],
+"b7aa00310ffdd18c": [
+"Susanna_e_i_vecchioni_di_Paolo_Caliari_detto_Paolo_Veronese_(1).JPG"
+],
+"b94017bec6ded50d": [
+"Giovanni_Battista_Tiepolo_-_Apollo_und_Daphne.jpg"
+],
+"ba2d537064188569": [
+"Toulouse-Lautrec_-_Au_lit_Le_baiser,_lot-5946122.jpg"
+],
+"ba89ec23614a3a4e": [
+"Gemäldegalerie_Alte_Meister_(Dresden)_Galeriewerk_Lücke_024.jpg"
+],
+"bb2b9d6b90810b78": [
+"1474_Botticelli_Der_Heilige_Sebastian_Gemäldegalerie_Berlin_anagoria.jpg"
+],
+"bd876692ad202b26": [
+"Women_Bathing_by_Paul_Cézanne,_1900_-_Ny_Carlsberg_Glyptotek_-_Copenhagen_-_DSC09461.JPG"
+],
+"c0a832fc5aa8ef92": [
+"Manet_-_Luncheon_in_the_Studio_1868.jpg"
+],
 "c0eda9a627ae200d": [
 "L'Incrédulité_de_saint_Thomas_-_Francesco_Salviati_-_Musée_du_Louvre_Peintures_INV_593_;_MR_472.jpg"
+],
+"c1d12fe7c06e4087": [
+"Correggio_044.jpg"
+],
+"c2fbf1c766ddc3eb": [
+"The_Ladies'_home_journal_(1948)_(14764337264).jpg"
+],
+"c3288415ec3b258b": [
+"Kandinsky_-_Improvisation_6_(Afrikanisches)_PA291111.jpg"
 ],
 "c354aa1c1ba77038": [
 "Hunt-light-of-the-world.jpeg"
@@ -633,32 +1950,127 @@
 "c48cfddf60bd33d6": [
 "Johann_Heinrich_Füssli_050.jpg"
 ],
+"c4bfb2bfdca10cec": [
+"Marie_Louise_Elisabeth_Vigée-Lebrun_001.jpg"
+],
+"c57631e2181157cb": [
+"1889_van_Gogh_Grünes_Weizenfeld_Nationalgalerie_Prag_anagoria.jpg"
+],
+"c6e0cdcf0cf4a965": [
+"Vase_with_Viscaria_(stolen)_-_My_Dream.jpg"
+],
+"c74a85de9b3ab36e": [
+"John_Constable_-_Salisbury_Cathedral_and_Leadenhall_from_the_River_Avon_(1820).jpg"
+],
+"c77ca59a15c52703": [
+"Antwerpen_Museum_Mayer_van_den_Bergh_Pieter_Bruegel_I_Twelve_proverbs_1558_2532.jpg"
+],
+"c95ab33278de36d8": [
+"Angelika_Kauffmann_-_Ludwig_I._von_Bayern.JPG"
+],
 "c9d8116b8be8b84e": [
 "David,_Manfredi_(Louvre_RF_1990-29)_02.jpg"
+],
+"ca572cb3aa33068f": [
+"Guido_Reni_043.jpg"
 ],
 "cac7a50d51ade77a": [
 "Ambrogio_lorenzetti,_Maestà_di_Massa_Marittima,_1335_ca.,_03.jpg"
 ],
+"cb026330e3328908": [
+"Andrea_Mantegna,_Ecce_Homo_(sans_cadre),_vers_1590,_Paris,_musée_Jacquemart_Andre,_inv._MJAP-P_1840.jpg"
+],
 "cb6223a3b6f4bd06": [
 "Le_Rêve_de_Franz_Marc_(Musée_de_l'Orangerie,_Paris)_(46882761665).jpg"
 ],
+"cbcf89e93370a0af": [
+"San_Diego,_2016_-_435_(cropped).jpg"
+],
+"cd8f6f45225be0e6": [
+"Marc-Reh_im_Klostergarten_PA291054.jpg"
+],
+"cdd3c786de7d814f": [
+"Édouard_Manet_-_Argenteuil.jpg"
+],
+"ce159a2f9c9c1524": [
+"Cezanne_-_Mont_Sainte-Victoire,_Courtauld.jpg"
+],
+"ce4fe1d7ceb226df": [
+"Cezanne_eine-moderne-olympia.jpg"
+],
+"cefaad89960b3a1a": [
+"43_Jusepe_de_Ribera,_Saint_Pierre_et_saint_Paul,_1616-17.jpg"
+],
+"cfa10fa7cc8d1132": [
+"Alte_Nationalgalerie,_Arnold_Böcklin,_Campagna-Landschaft.JPG"
+],
+"d1197616f35984cc": [
+"The_Blue_Bower_by_Dante_Gabriel_Rossetti,_1865,_Barber_Institute_of_Fine_Arts_01.jpg"
+],
+"d1b0b09dd13a0a2e": [
+"Valentin_de_Boulogne,_Judgment_of_Solomon_02.jpg"
+],
+"d255128f21d2353d": [
+"María_Magdalena_como_la_Melancolía,_Catedral_de_Sevilla.jpg"
+],
 "d3669a6c05d5d598": [
-"Madonna_di_Senigallia_2020.jpg"
+"Madonna_di_Senigallia_2020.jpg",
+"Piero_della_Francesca,_Madonna_di_Senigallia_01.jpg"
+],
+"d36f6314ab67848e": [
+"Joseph_Mallord_William_Turner_076.jpg"
 ],
 "d3fd43290489f03b": [
-"Gentile_da_fabriano,_madonna_dell'umiltà_di_pisa,_ante_1422,_01.jpg"
+"Gentile_da_fabriano,_madonna_dell'umiltà_di_pisa,_ante_1422,_01.jpg",
+"Madonna_dell'Umiltà_(Gentile_da_Fabriano)_01.JPG"
 ],
 "d435359e251b53d1": [
-"Lucas_Cranach_der_Ältere_-_Ruhe_auf_der_Flucht_nach_Ägypten_(1504).jpg"
+"Lucas_Cranach_der_Ältere_-_Ruhe_auf_der_Flucht_nach_Ägypten_(1504).jpg",
+"Lucas_Cranach_the_Elder_The_Rest_on_The_Flight_into_Egypt_1504_Gemäldegalerie_Berlin_9311.jpg"
+],
+"d506118afa83e4d8": [
+"Hogarths-Servants_313r.jpg"
+],
+"d5badd14bb6e1f5d": [
+"Water_Willow_by_Dante_Gabriel_Rossetti,_1871,_oil_on_canvas_-_Kelmscott_Manor_-_Oxfordshire,_England_-_DSC00055.jpg"
+],
+"d5dd237dcea24b74": [
+"Lille_PdBA_greuze_psychee_couronnant_amour.jpg"
 ],
 "d6c7a8e19d0f1a56": [
 "Greuze_(1907)_(14581281330).jpg"
 ],
+"d7bbe15379fe234c": [
+"Parmigianino_005.jpg"
+],
+"d815c609595b8069": [
+"Joseph_Mallord_William_Turner_047.jpg"
+],
 "d8eea685412c434b": [
-"The_Dream_of_the_Fisherman's_Wife,_British_Museum,_version_1.png"
+"The_Dream_of_the_Fisherman's_Wife,_British_Museum,_version_1.png",
+"The_Dream_of_the_Fisherman's_Wife,_British_Museum,_version_1_(cropped).jpg"
+],
+"d93fb5b69b778062": [
+"Pommes_et_oranges_-_Paul_Cézanne.jpg"
+],
+"d95b0678761eb949": [
+"Marc,_Franz_-_The_Tiger_-_Google_Art_Project.jpg"
+],
+"d99e1647b4dbf40b": [
+"EmbriaguezNoe.jpg"
 ],
 "dc2b9ab79864df8e": [
+"Raffael_044.jpg",
 "Raffaello_Sanzio_-_La_Donna_Velata.jpg"
+],
+"dff72ea31d9ca5a5": [
+"Isabella_d'Este_Titien.jpg"
+],
+"e0b5dc9969f23377": [
+"Camille_Pissarro_-_Le_grand_noyer,_matin_d'automne,_Éragny_(Pushkin_Museum).jpg"
+],
+"e1274e55920a79c4": [
+"Angelo_Bronzino_034.jpg"
 ],
 "e303bcbd366dc79b": [
 "Pietro_Perugino_011.jpg"
@@ -666,14 +2078,49 @@
 "e4b18c237039149e": [
 "Gentile_da_Fabriano_077.jpg"
 ],
+"e4c7ae628483ffab": [
+"Pieter_Bruegel_the_Elder_-_Wedding_Dance_in_the_Open_Air_-_WGA03505.jpg"
+],
 "e51941337d93e76a": [
-"Museo_di_Capodimonte._(6795).jpg"
+"Museo_di_Capodimonte._(6795).jpg",
+"Museo_di_Capodimonte._(6795)_1.jpg"
+],
+"e59f1cc681176efa": [
+"Cupid_and_Psyche_by_Benjamin_West,_1808.JPG"
+],
+"e6267502e7d8cfb6": [
+"François_Boucher_027.jpg"
 ],
 "e6a8a745c8d83351": [
 "Death_of_Sophonisbe-Mattia_Preti-MBA_Lyon_A60-IMG_0357.jpg"
 ],
+"e71aeaf473e3a541": [
+"The_Miraculous_Draught_of_Fishes_Sebastiano_Ricci.JPG"
+],
+"e7992d591bc68b74": [
+"Raphael_Portrait_of_a_Lady_with_a_Unicorn.jpg"
+],
+"eac1ae3489c17f88": [
+"Jan_van_Eyck_(±1390-1441)_Portret_van_Jan_de_Leeuw_(1436)_MSK_Gent_3-02-2020_15-43-46.JPG"
+],
+"ecbc52e438d77a13": [
+"Joseph_Mallord_William_Turner_001.jpg"
+],
+"ee4995e7cf6cf225": [
+"Master_of_Flémalle_(Workshop_of_Robert_Campin)_-_The_Flémalle_Panels_-_Google_Art_Project.jpg"
+],
+"ee6a77484eb448b6": [
+"Goya,_Francisco_-_Das_Blindekuhspiel_-_1791.jpg"
+],
 "ef15f4458bf7138e": [
-"Thetriumphofdeath.jpg"
+"Thetriumphofdeath.jpg",
+"Thetriumphofdeath_3051x2161.jpg"
+],
+"ef4e777b22540336": [
+"Astarte_Syriaca_Rossetti.jpg"
+],
+"efb801a9d0a4f2e4": [
+"Berlin,_Alte_Nationalgalerie,_Honoré_Daumier,_Don_Quichotte_und_Sancho_Pansa.JPG"
 ],
 "f235a2a9d480fe6f": [
 "La_Nef_des_fous_-_Jérôme_Bosch_-_Musée_du_Louvre_Peintures_RF_2218.jpg"
@@ -684,14 +2131,50 @@
 "f265ceabf1766bca": [
 "Anthonis_van_Dyck_004.jpg"
 ],
+"f54669cdf9365873": [
+"Dante_Gabriel_Rossetti_002.jpg"
+],
+"f5f8c68afa4d191b": [
+"Jean-Baptiste_Greuze_-_Filial_piety_(1763).jpg"
+],
+"f63fd041affe1d2e": [
+"Gustav_Klimt_-_Water_Serpents_II.jpg"
+],
+"f7e20ef813b50003": [
+"Rogier_van_der_Weyden_-_Saint_Jerome_in_the_Desert_-_46.359_-_Detroit_Institute_of_Arts.jpg"
+],
+"f92a52559f9d0d9c": [
+"Charlotte_gainsborough.jpg"
+],
+"f9f8b0ff53f39f49": [
+"Hesiode_et_la_Muse-Gustave_Moreau-IMG_8244.JPG"
+],
 "fa6c3ad8db0e49dc": [
 "Master_of_Flémalle_(Workshop_of_Robert_Campin)_-_The_Flémalle_Panels_-_Google_Art_Project_(qwGT0MdyMEWNCQ).jpg"
+],
+"fcaea46aac94cfc0": [
+"Portrait_de_l'abbé_de_Saint-Non._Figure_de_fantaisie_-_Jean-Honoré_Fragonard_-_Musée_du_Louvre_Peintures_MI_1061.jpg"
+],
+"fcede206499201b3": [
+"Female_Martyr_with_Angels_(Saint_Catherine_of_Alexandria?)_(SM_1496).png"
 ],
 "fd224ab0bf09a84a": [
 "Sandro_Botticelli_031.jpg"
 ],
+"fe059e4d5cb84278": [
+"1892_Caillebotte_Trocknende_Wäsche_am_Ufer_der_Seine_anagoria.jpg"
+],
+"fe1cb8ccda72e912": [
+"Madonna_and_child_with_an_Angel_-_Correggio.jpg"
+],
+"fef5b98be665f9ca": [
+"Dresden,_Gemäldegalerie_Alte_Meister,_Jusepe_de_Ribera,_heilige_Agnes.jpg"
+],
 "ff1c9f5cbd09a3e6": [
 "Alfred_Sisley_001.jpg"
+],
+"ffbe3cc3fca7c4c8": [
+"Berlin,_Alte_Nationalgalerie,_Arnold_Böcklin,_der_Bildhauer_Josef_von_Kopf.JPG"
 ],
 "ffe25a680966b12f": [
 "Rosso_Fiorentino_005.jpg"
