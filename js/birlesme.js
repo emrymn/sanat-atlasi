@@ -10,9 +10,14 @@ export const BIRLESEN_AKIMLAR = { 'Uluslararası Gotik': 'Gotik' };
 
 export const akimAdi = (ad) => BIRLESEN_AKIMLAR[ad] || ad;
 
-// Sanatçılar: akımı birleşenler yeni nesne olarak döner (gelen dizi ve nesneler değişmez)
+// Haritada birleşen akımın kendi durağı kalır (1.78.1, Emre: "haritada bir sembolü kaldırmışsın, geri ekle; içine
+// uluslararası gotik ve normal gotikten sanatçıları koy, ortalama kaç sanatçı varsa o kadar"). Durağın kimliği
+// birleşmeden önceki kimliği: o duraktaki ilerleme (yıldızlar, tanışma) korunur. Bkz. js/bolum.js bolumleriKur.
+export const BIRLESEN_DURAKLAR = { 'Uluslararası Gotik': '3-1' };
+
+// Sanatçılar: akımı birleşenler yeni nesne olarak döner (gelen dizi ve nesneler değişmez); `birlesen` eski akımın adı
 export function sanatcilariBirlestir(sanatcilar) {
-  return sanatcilar.map((s) => (Object.hasOwn(BIRLESEN_AKIMLAR, s.akim) ? { ...s, akim: BIRLESEN_AKIMLAR[s.akim] } : s));
+  return sanatcilar.map((s) => (Object.hasOwn(BIRLESEN_AKIMLAR, s.akim) ? { ...s, akim: BIRLESEN_AKIMLAR[s.akim], birlesen: s.akim } : s));
 }
 
 // Akımlar: birleşen akım listeden çıkar; komşu adları hedefe döner, akımın kendisi ve tekrarlar atılır

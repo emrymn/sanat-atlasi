@@ -2011,3 +2011,13 @@ Emre: "uluslararası gotikle normal gotiği uygulamada birleştir, 2 sanatçı �
 - **Testler:** yeni `tests/unit/birlesme.test.mjs` (5 test); `paket8` (sürüm).
 - **Ek düzeltme (Bugün'ün tablosu):** PR'da GitHub CI'da `ayar_gorunum` İş 144 iki kez düştü; main'de aynı gün geçti, bu bilgisayarda (CI'nın Chromium sürümüyle de) geçiyordu. CI günlüğüne göre tablo önce 1280'likle yükleniyor, sonra `js/keskin.js` onu en büyük kopyayla değiştiriyor. `tuvalOdagi` kaydırmayı yalnız ilk yüklemeden sonra ve bir kez hesaplıyordu; odak verisi bu geçişte gelirse görselin boyu 0 okunuyor, kaydırma hiç uygulanmıyordu. Bu PR yükleme sırasını biraz kaydırdığı için CI bu pencereye düşüyor olmalı (kesin olarak yeniden üretilemedi). Artık kaydırma her `load`'da ve odak verisi gelince yeniden hesaplanıyor; boy belli değilse bir sonraki yüklemeyi bekliyor.
 
+### 1.78.1 · Haritada Uluslararası Gotik durağı geri geldi
+
+Emre: "haritada bir tane sembolü kaldırmışsın, onu geri ekle; içine uluslararası gotik ve normal gotikten sanatçıları koy, hepsini değil de diğer seviyelerde ortalama kaç sanatçı varsa o kadar koy".
+
+- 1.78.0'da Limbourg kardeşler ve Gentile Gotik'in son konu kümesine katılmıştı; Orta Çağ'ın üçüncü durağı (el yazması sembolü, `3-1`) haritadan kalkmıştı.
+- `bolumleriKur` (js/bolum.js): akımı birleşmiş sanatçılar (`birlesen`, js/birlesme.js) hedef akımın konu kümelerine girmez; kendi durakları hedef akımın duraklarının sonuna eklenir. Durak, haritadaki bütün durakların ortalama sanatçı sayısına (4,3 → 4; ortanca da 4) hedef akımın zamanca en yakın, yani en geç doğan sanatçılarıyla tamamlanır: Simone Martini (Avignon'daki üslubu Uluslararası Gotik'e zemin hazırladı; basyapitlar.json) ve Ambrogio Lorenzetti. Durak: Limbourg kardeşler, Simone Martini, Ambrogio Lorenzetti, Gentile da Fabriano (konu 6 ve 10).
+- Tamamlayan iki sanatçı Gotik'in 2. durağında da kalır. Oradan alınsalardı o durak 2 sanatçıya düşerdi (en az 3); ayrıca `2-1`, `2-2` durakları birleşmeden önceki hâliyle aynı kalır, kayıtlı ilerlemeleri bozulmaz.
+- Durağın kimliği birleşmeden önceki `3-1` (`BIRLESEN_DURAKLAR`): o duraktaki yıldızlar ve tanışma kaydı geri gelir. Adı "Gotik · 3. bölüm"; haritadaki yeri ve sembolü `harita.json`'daki Orta Çağ'ın üçüncü yeri (veri değişmedi).
+- Testler: `tests/unit/birlesme.test.mjs`'e durak testi; `paket8` (sürüm).
+

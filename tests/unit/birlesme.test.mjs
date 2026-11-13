@@ -70,3 +70,26 @@ test('geçmişteki akım sayıları Gotik altında toplanır', () => {
   const g = gecmisDogrula({ '2026-11-01': { kart: 5, dogru: 3, akimlar: { [IG]: 2, Gotik: 3 } } });
   assert.deepEqual(g['2026-11-01'].akimlar, { Gotik: 5 });
 });
+
+test('harita: birleşen akımın durağı geri gelir, ortalama sayıda sanatçıyla ve eski kimliğiyle (1.78.1)', async () => {
+  const { bolumleriKur } = await import('../../js/bolum.js');
+  const akimlar = [{ ad: 'Gotik', sira: 2 }, { ad: 'B', sira: 4 }];
+  const s = (id, akim, konu, dogum, birlesen) => ({ id, akim, konu, dogum, ...(birlesen ? { birlesen } : {}) });
+  const sanatcilar = [
+    s('g1', 'Gotik', 3, 1200), s('g2', 'Gotik', 3, 1240), s('g3', 'Gotik', 3, 1266),
+    s('g4', 'Gotik', 5, 1255), s('g5', 'Gotik', 6, 1280), s('g6', 'Gotik', 6, 1284), s('g7', 'Gotik', 6, 1290),
+    s('ig1', 'Gotik', 10, 1385, IG), s('ig2', 'Gotik', 10, 1370, IG),
+    s('b1', 'B', 1, 1400), s('b2', 'B', 1, 1401), s('b3', 'B', 1, 1402), s('b4', 'B', 1, 1403), s('b5', 'B', 1, 1404),
+  ];
+  const l = bolumleriKur(akimlar, sanatcilar);
+  // ortalama: (3 + 4 + 5) / 3 = 4
+  assert.deepEqual(l.map((b) => b.id), ['2-1', '2-2', '3-1', '4-1']);
+  const ig = l.find((b) => b.id === '3-1');
+  assert.equal(ig.akim, 'Gotik');
+  assert.deepEqual(ig.sanatcilar, ['g6', 'g7', 'ig2', 'ig1']); // en geç doğan iki Gotik sanatçısı, doğum sırasıyla
+  assert.deepEqual(ig.konular, [6, 10]);
+  assert.deepEqual([ig.no, ig.adet], [3, 3]);
+  // Gotik'in kendi durakları birleşmeden önceki gibi; tamamlayan sanatçılar orada da kalır
+  assert.deepEqual(l.find((b) => b.id === '2-2').sanatcilar, ['g4', 'g5', 'g6', 'g7']);
+  assert.equal(l.find((b) => b.id === '2-1').adet, 3);
+});

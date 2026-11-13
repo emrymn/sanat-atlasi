@@ -6,6 +6,7 @@
 // Saf mantık burada (birim testli); ekranlar js/ekranlar/harita.js ve js/ekranlar/pekistir.js.
 import { islenenKume } from './kilit.js';
 import { tanismaEserleri } from './ogrenme.js';
+import { BIRLESEN_DURAKLAR } from './birlesme.js';
 
 export const BOLUM_SEVIYELER = ['kolay', 'orta', 'zor'];
 export const BOLUM_SORU = { kolay: 8, orta: 10, zor: 10 };
@@ -14,13 +15,19 @@ export const AKIM_GECME = 0.6;
 export const KUME_EN_AZ = 3;
 export const SEVIYE_NO = { kolay: 0, orta: 1, zor: 2 };
 
-// akimlar: [{ad, sira}], sanatcilar: [{id, akim, konu, dogum}]
+// akimlar: [{ad, sira}], sanatcilar: [{id, akim, konu, dogum, birlesen?}]
+// 1.78.1: akımı başka bir akıma katılmış sanatçılar (`birlesen`, js/birlesme.js) hedef akımın konu kümelerine girmez;
+// kendi durakları hedef akımın duraklarının sonuna eklenir. O durak, haritadaki bütün durakların ortalama sanatçı
+// sayısına (yuvarlanır) hedef akımın zamanca en yakın (en geç doğan) sanatçılarıyla tamamlanır; bu sanatçılar kendi
+// duraklarında da kalır. Durağın kimliği BIRLESEN_DURAKLAR'dan (birleşmeden önceki kimlik).
 export function bolumleriKur(akimlar, sanatcilar) {
-  const sonuc = [];
+  const dogumSirasi = (x, y) => (x.dogum ?? 0) - (y.dogum ?? 0);
+  const akimKumeleri = [];
   for (const a of akimlar.slice().sort((x, y) => x.sira - y.sira)) {
+    const uyeler = sanatcilar.filter((s) => s.akim === a.ad);
     const konular = new Map();
-    for (const s of sanatcilar) {
-      if (s.akim !== a.ad) continue;
+    for (const s of uyeler) {
+      if (s.birlesen) continue;
       if (!konular.has(s.konu)) konular.set(s.konu, []);
       konular.get(s.konu).push(s);
     }
@@ -28,7 +35,7 @@ export function bolumleriKur(akimlar, sanatcilar) {
     let kume = { konular: [], sanatcilar: [] };
     for (const k of [...konular.keys()].sort((x, y) => x - y)) {
       kume.konular.push(k);
-      kume.sanatcilar.push(...konular.get(k).sort((x, y) => (x.dogum ?? 0) - (y.dogum ?? 0)).map((s) => s.id));
+      kume.sanatcilar.push(...konular.get(k).sort(dogumSirasi).map((s) => s.id));
       if (kume.sanatcilar.length >= KUME_EN_AZ) {
         kumeler.push(kume);
         kume = { konular: [], sanatcilar: [] };
@@ -41,7 +48,26 @@ export function bolumleriKur(akimlar, sanatcilar) {
         son.sanatcilar.push(...kume.sanatcilar);
       } else kumeler.push(kume);
     }
-    kumeler.forEach((k, i) => sonuc.push({ id: `${a.sira}-${i + 1}`, akim: a.ad, sira: a.sira, no: i + 1, adet: kumeler.length, ...k }));
+    const birlesenler = new Map();
+    for (const s of uyeler) if (s.birlesen) (birlesenler.get(s.birlesen) || birlesenler.set(s.birlesen, []).get(s.birlesen)).push(s);
+    akimKumeleri.push({ a, uyeler, kumeler, birlesenler });
+  }
+  const boylar = akimKumeleri.flatMap((x) => x.kumeler.map((k) => k.sanatcilar.length));
+  const ortalama = boylar.length ? Math.round(boylar.reduce((t, n) => t + n, 0) / boylar.length) : KUME_EN_AZ;
+  const sonuc = [];
+  for (const { a, uyeler, kumeler, birlesenler } of akimKumeleri) {
+    const ekler = [];
+    for (const [kaynak, l] of birlesenler) {
+      const kendi = uyeler.filter((s) => !s.birlesen).sort((x, y) => (y.dogum ?? 0) - (x.dogum ?? 0));
+      const tum = [...l, ...kendi.slice(0, Math.max(0, ortalama - l.length))].sort(dogumSirasi);
+      ekler.push({ kaynak, konular: [...new Set(tum.map((s) => s.konu))].sort((x, y) => x - y), sanatcilar: tum.map((s) => s.id) });
+    }
+    const adet = kumeler.length + ekler.length;
+    kumeler.forEach((k, i) => sonuc.push({ id: `${a.sira}-${i + 1}`, akim: a.ad, sira: a.sira, no: i + 1, adet, ...k }));
+    ekler.forEach(({ kaynak, ...k }, i) => {
+      const no = kumeler.length + i + 1;
+      sonuc.push({ id: BIRLESEN_DURAKLAR[kaynak] || `${a.sira}-${no}`, akim: a.ad, sira: a.sira, no, adet, ...k });
+    });
   }
   return sonuc;
 }

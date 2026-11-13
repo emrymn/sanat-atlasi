@@ -474,8 +474,10 @@ test('Ayarlar: en büyük kopyalar geri çıkınca da iner; uygulama yeniden aç
   expect(await telefonda()).toBeLessThan(n);
   expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:devasa-surdur'))).toBe('1');
   expect(once).toBeLessThan(n);
-  // İş 123: yarıda kalan indirme (uygulama kapandı) hata günlüğüne kaçıncı görselde kaldığıyla yazılır; iz silinir
-  expect(await page.evaluate(() => localStorage.getItem('sanat-atlasi:hatalar'))).toContain('yarıda kaldı');
+  // İş 123: yarıda kalan indirme (uygulama kapandı) hata günlüğüne kaçıncı görselde kaldığıyla yazılır; iz silinir.
+  // Kayıt devasaSurdur'da, açılıştan 4 sn sonra düşer (js/app.js); yeniden yüklemeden önce başlayan istekler service
+  // worker'da arkadan bitince yukarıdaki sayaç ondan önce tutabilir: kayıt beklenir
+  await expect.poll(() => page.evaluate(() => localStorage.getItem('sanat-atlasi:hatalar')), { timeout: 15000 }).toContain('yarıda kaldı');
   // Ayarlar'a dönünce yenilenip kalan parçalar kendiliğinden iner
   await page.evaluate(() => (location.hash = '#/ayarlar'));
   await expect.poll(telefonda, { timeout: 60000 }).toBe(n);
@@ -996,7 +998,8 @@ test.describe('İş 76: ana sayfalarda geri yok', () => {
     // alt sayfadan sekme çubuğuyla Yolculuk'a
     await page.locator('#sekmeler a[data-sekme="harita"]').click();
     await expect(page).toHaveURL(/#\/harita$/);
-    expect(await page.evaluate(() => window.__atlas.yigin)).toEqual(['#/harita']);
+    // sekme location.replace ile değişir; yığın hashchange'te kurulur (URL'den bir an sonra): yerleşmesi beklenir
+    await expect.poll(() => page.evaluate(() => window.__atlas.yigin)).toEqual(['#/harita']);
     await page.waitForTimeout(500);
     const cdp = await context.newCDPSession(page);
     await surukle(page, cdp, 6, 320);
@@ -1164,7 +1167,7 @@ test('İş 89: bölüm şeridi geçişsiz, yığında yer değiştirir', async (
   await expect(page).toHaveURL(/#\/konular$/);
   expect(await page.locator('.sayfa-katman').count()).toBe(0);
   expect(await page.locator('#uygulama').evaluate((e) => e.getAnimations().length)).toBe(0);
-  expect(await page.evaluate(() => window.__atlas.yigin)).toEqual(['#/konular']);
+  await expect.poll(() => page.evaluate(() => window.__atlas.yigin)).toEqual(['#/konular']);
   // 1.76.4: konu grupları da kardeş bölüm (sekme): yığında yer değiştirir, geçişsiz
   const diger = page.locator('.konu-grup-serit a:not([aria-current])').first();
   const hedef = await diger.getAttribute('href');
