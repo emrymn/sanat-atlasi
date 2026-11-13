@@ -21,5 +21,7 @@ jobs:
       - run: npm ci
       # birim testleri tarayıcıya ihtiyaç duymaz: Playwright kurulamasa da sonuç versin
       - run: npm run test:unit
+      # görsel betiklerinin (scripts/*.py) ağsız birim testleri (İş 173)
+      - run: python3 -m unittest discover -s tests/py -v
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e

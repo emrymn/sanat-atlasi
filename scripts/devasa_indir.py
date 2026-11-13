@@ -7,8 +7,9 @@ iner. 4096 px üst sınır iPhone'dan: daha büyük görseli Safari açamaz ya d
 Müzelerin en büyük boyutları (İş 58c; adresler denenerek doğrulandı):
   The Met       /web-large/ yerine /original/ (özgün tarama, ör. 2697×3542)
   Cleveland     açık erişim API'sinin verdiği print (JPEG, ~3400 px) ya da yeterince büyük değilse full (TIFF, özgün)
-  NGA, AIC      IIIF: önce info.json'dan özgün boy, sonra en çok onun kadar (sunucu küçüğü büyütür), 4096 sınırıyla;
+  NGA           IIIF: önce info.json'dan özgün boy, sonra en çok onun kadar (sunucu küçüğü büyütür), 4096 sınırıyla;
                 verilmezse 3000 → 1686 → 843
+  AIC           IIIF, yalnız izinli genişlikler: 3000, → 1686, → 843, (İş 173; uzun kenar en çok 3000)
 Commons'taki özgünü küçük olan eserlerde aynı eserin müze kopyası da aranır: Wikidata'da eserin kendi kaydındaki müze
 numarası (The Met P3634, AIC P4610, NGA P4683, Cleveland envanter numarası P217 + koleksiyon) ile, yalnız müzenin
 kamu malı / CC0 dediği görseller. Tahmin yok: numara eşleşmezse ya da görselin en/boy oranı uygulamadakinden farklıysa
@@ -254,6 +255,19 @@ def iiif_adaylari(taban, olcu=None):
         {'u': f'{taban}/full/{round(b * g / uzun)},/0/default.jpg', 'boy': b} for b in (3000, 1686, 843) if b < s]
 
 
+AIC_GENISLIKLER = (3000, 1686, 843)
+
+
+def aic_iiif_adaylari(taban, olcu=None):
+    """AIC'nin IIIF sunucusu yalnız `3000,` `1686,` `843,` isteklerini geçirir (İş 173; 2026-11-13'te denendi): `full/max`,
+    `!s,s` ve başka genişlikler 403 "Request blocked by IIIF allowlist policy". Eski kod dikey eserde genişliği orana
+    göre hesaplıyordu (ör. 2440,) ve 403 alıp 843'e düşüyordu. `3000,` uzun kenarı en çok 3000 olan görseli verir ve
+    özgünden büyütmez (5257×6464 → 2440×3000; 1646×2250 → 1646×2250); özgünden geniş `1686,` 843'e yönlenir."""
+    uzun = max(olcu) if olcu else None
+    return [{'u': f'{taban}/full/{b},/0/default.jpg', 'boy': min(b, uzun) if uzun else (None if b == 3000 else b)}
+            for b in AIC_GENISLIKLER]
+
+
 def aic_aday(no=None, kimlik=None):
     olcu = None
     if no is not None:
@@ -265,7 +279,7 @@ def aic_aday(no=None, kimlik=None):
         t = d.get('thumbnail') or {}
         if t.get('width') and t.get('height'):
             olcu = (int(t['width']), int(t['height']))
-    return iiif_adaylari(f'https://www.artic.edu/iiif/2/{kimlik}', olcu)
+    return aic_iiif_adaylari(f'https://www.artic.edu/iiif/2/{kimlik}', olcu)
 
 
 def cma_aday(envanter):

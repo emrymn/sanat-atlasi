@@ -106,6 +106,9 @@ def main():
     # İş 119: müze taramasıyla değişen en büyük kopyalar (scripts/muze_tercih.py) da sürüm ekli adla
     mt_yolu = KOK / 'data/muze_tercih.json'
     iyilesen |= set(json.loads(mt_yolu.read_text()).get('adlar', {})) if mt_yolu.exists() else set()
+    # İş 173: daha büyük kopyasıyla değişenler (scripts/daha_buyuk.py: AIC'nin izinli boyları, SMK) da sürüm ekli adla
+    db_yolu = KOK / 'data/daha_buyuk.json'
+    iyilesen |= set(json.loads(db_yolu.read_text()).get('adlar', {})) if db_yolu.exists() else set()
     surumler = {p.stem: hashlib.md5(p.read_bytes()).hexdigest()[:8] for p in devasalar if p not in kucuk and p.stem in iyilesen}
     isler = [(p, f'd/{p.stem}-{surumler[p.stem]}.jpg' if p.stem in surumler else f'd/{p.name}') for p in devasalar if p not in kucuk]
     # İş 118: en büyük kopyadan yeniden üretilen 1280'likler (scripts/b_yenile.py) de sürüm ekli adla: b/<ad>-<sürüm>.jpg
@@ -171,7 +174,7 @@ def main():
         print(f'Daha büyük dosyasıyla yenilenen {len(surumler)} görsel yeni adla yüklendi (telefon yenisini indirir)')
     if b_surumler:
         print(f"En büyük kopyadan yeniden üretilen {len(b_surumler)} 1280'lik yeni adla yüklendi")
-    print('data/gorsel_kaynagi.json yazıldı: git add data/gorsel_kaynagi.json data/gorsel_iyilestirme.json data/b_yenilenen.json data/muze_tercih.json && git commit && git push')
+    print('data/gorsel_kaynagi.json yazıldı: git add data/gorsel_kaynagi.json data/gorsel_iyilestirme.json data/b_yenilenen.json data/muze_tercih.json data/daha_buyuk.json && git commit && git push')
 
 
 if __name__ == '__main__':
