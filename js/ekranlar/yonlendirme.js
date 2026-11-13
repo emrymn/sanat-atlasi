@@ -78,7 +78,14 @@ export function yonlendir() {
       // geri dönüş ve sekmeler arası geçiş: sayfa bellekten (yeniden çizilmez)
       const tur = geriMi ? yon : sekmeden ? 'sekme' : null;
       if (tur && bellektenGeriKoy(h, tur)) return;
-      const args = m.slice(1).map((x) => akimAdi(decodeURIComponent(x))); // 1.78.0: birleşen akımın eski adresleri hedefe
+      // İş 174: bozuk yüzde kodlaması (#/sanatci/%ZZ) yakalanmamış URIError atıyordu; artık hata ekranı
+      let args;
+      try {
+        args = m.slice(1).map((x) => akimAdi(decodeURIComponent(x))); // 1.78.0: birleşen akımın eski adresleri hedefe
+      } catch (e) {
+        hataGoster(new Error('Bu adres bozuk; açılamadı.'));
+        return;
+      }
       Promise.resolve(fn(...args)).catch(hataGoster);
       return;
     }

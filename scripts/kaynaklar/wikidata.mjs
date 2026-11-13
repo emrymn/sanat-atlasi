@@ -15,7 +15,9 @@ export function genisEserSorgusu(qid) {
   ${resimSuzgeci('?item')}
   ?item wdt:P18 ?img .
   ?item wikibase:sitelinks ?sl .
-  OPTIONAL { ?item wdt:P571 ?inc . }
+  # İş 174: yalnız yıl ya da daha ince hassasiyetteki (precision >= 9) tarih; "15. yüzyıl" 1500 diye okunmasın
+  OPTIONAL { ?item p:P571 ?incSt . ?incSt a wikibase:BestRank ; psv:P571 ?incD . ?incD wikibase:timeValue ?inc ; wikibase:timePrecision ?incP .
+    FILTER(?incP >= 9) }
   OPTIONAL { ?item rdfs:label ?ltr . FILTER(LANG(?ltr) = "tr") }
   OPTIONAL { ?item rdfs:label ?len . FILTER(LANG(?len) = "en") }
   OPTIONAL { ?item rdfs:label ?lmul . FILTER(LANG(?lmul) = "mul") }
@@ -23,7 +25,10 @@ export function genisEserSorgusu(qid) {
   OPTIONAL { ?item wdt:P4610 ?aic . }
   OPTIONAL { ?item wdt:P11110 ?cma . }
   OPTIONAL { ?item wdt:P4683 ?nga . }
-  OPTIONAL { ?item wdt:P195 ?kol . ?kol rdfs:label ?kolL . FILTER(LANG(?kolL) = "en") }
+  # İş 174: bitiş tarihli (eski) koleksiyonlar ve savaş dönemi el koyma yerleri (Führermuseum, Münih Toplama Noktası) alınmaz
+  OPTIONAL { ?item p:P195 ?kolSt . ?kolSt ps:P195 ?kol ; wikibase:rank ?kolR . FILTER(?kolR != wikibase:DeprecatedRank)
+    FILTER NOT EXISTS { ?kolSt pq:P582 ?kolBitis } FILTER(?kol NOT IN (wd:Q475667, wd:Q1053735))
+    ?kol rdfs:label ?kolL . FILTER(LANG(?kolL) = "en") }
 } GROUP BY ?item ORDER BY DESC(?sitelinks) LIMIT 40`;
 }
 

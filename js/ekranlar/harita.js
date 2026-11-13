@@ -158,7 +158,7 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
       .map((b) => b.duraklar.map((x) => durakHtml(b, x, h, tur, simdiki, yeniler.has(x.id))).join('') + b.motifler.map((m, i) => motifHtml(b, m, i, h)).join(''))
       .join('') + (baslangic ? yolcuHtml(baslangic, tur, h, yv.yolcu, yolcuDurak.x.x > 0.5) : '');
   ciz(`<div class="harita-ust">
-      <h1>Yolculuk</h1>
+      <h1 tabindex="-1">Yolculuk</h1>
       <p class="harita-ozet" data-test="harita-ozet"><b>${acikSayi}</b>/${liste.length} bölüm · <b>${yildiz}</b> ${YILDIZ.replace('yildiz-sekil', 'yildiz-sekil dolu')}<span class="ekran-disi">yıldız</span></p>
     </div>
     ${kursRozetiHtml()}

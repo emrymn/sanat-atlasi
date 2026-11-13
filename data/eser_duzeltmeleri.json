@@ -1,0 +1,97 @@
+{
+  "surum": 1,
+  "aciklama": "Eser listesine uygulama tarafında uygulanan elle düzeltmeler (Qwen denetimi doğrulaması, referans/qwen_denetim_dogrulama.md). Önbellek yeniden üretilse de geçerli kalır. cikar: eser o sanatçının listesinden çıkar (sanatçıya ait olmadığı belli). gorsel_cikar: yalnız o kayıttan çıkan görseller (başka esere ya da esersiz fotoğrafa ait); görseli kalmayan kayıt düşer. muze: Wikidata'nın tarihsel koleksiyon değeri (Führermuseum vb.) yerine bugünkü kurum; bilinmiyorsa boş. tarih: müze kataloğundaki tarih (Wikidata'daki yüzyıl hassasiyeti ya da yazım hatası yerine).",
+  "cikar": {
+    "cimabue": [
+      {
+        "qid": "Q119086004",
+        "neden": "Courtauld 'Virgin and Child': Cimabue'ye öykünen 19. yüzyıl sahtesi (Wikidata yılı da 1870; Art UK 'forgery of Cimabue')."
+      }
+    ],
+    "leonardo-da-vinci": [
+      {
+        "qid": "Q3492887",
+        "neden": "Uffizi 'Medusa': Leonardo'nun kayıp kalkanı değil, anonim Flaman ressam, y. 1600 (Uffizi)."
+      }
+    ],
+    "ambrogio-lorenzetti": [
+      {
+        "qid": "Q17335819",
+        "neden": "'Madonna of Humility' 1353 tarihli; Ambrogio 1348'de öldü. Rijksmuseum (SK-A-4002) Bartolomeo Bulgarini'ye veriyor."
+      }
+    ],
+    "giulio-romano": [
+      {
+        "qid": "Q98207179",
+        "neden": "Philip Galle'nin Giulio Romano'dan sonra yaptığı gravür (1557; Giulio 1546'da öldü); Giulio'nun kendi eseri değil."
+      }
+    ]
+  },
+  "gorsel_cikar": {
+    "robert-campin": {
+      "Q3998895": [
+        "Madonna-and-child-1823.jpg",
+        "CampinVeronica.jpg"
+      ]
+    },
+    "william-hogarth": {
+      "Q20183486": [
+        "William_Hogarth_-_After_-_Google_Art_Project.jpg",
+        "After_MET_DP836050.jpg",
+        "Hogarth,_After.jpg"
+      ]
+    },
+    "joan-miro": {
+      "Q674682": [
+        "1_visitor_scaning_QRPedia_codes_at_Fundació_Joan_Miró_(8).JPG"
+      ],
+      "Q2633337": [
+        "QRpedia_codes_at_Fundació_Joan_Miró_19.JPG"
+      ],
+      "Q2982846": [
+        "QRpedia_codes_at_Fundació_Joan_Miró_22.JPG"
+      ]
+    }
+  },
+  "muze": {
+    "Q28060787": "Bonnefanten Museum",
+    "Q974414": "Toledo Museum of Art",
+    "Q111644846": "Art collection of the Federal Republic of Germany",
+    "Q111640065": "Art collection of the Federal Republic of Germany",
+    "Q111637316": "Art collection of the Federal Republic of Germany",
+    "Q111637325": "Art collection of the Federal Republic of Germany",
+    "Q111644840": "Art collection of the Federal Republic of Germany",
+    "Q3739205": "Goudstikker mirasçıları (özel koleksiyon)",
+    "Q111645208": "",
+    "Q111645952": "",
+    "Q111648212": "",
+    "Q71828472": "Musée Hyacinthe-Rigaud, Perpignan (Louvre, MNR)"
+  },
+  "tarih": {
+    "Q286096": {
+      "yil": 1435,
+      "tarih": "y. 1435–1440",
+      "kaynak": "MFA Boston 93.153"
+    },
+    "Q11092366": {
+      "yil": 1739,
+      "tarih": "1739",
+      "kaynak": "Louvre RF 926 (Wikidata'da '173' yazım hatası)"
+    },
+    "Q1387483": {
+      "yil": 1490,
+      "tarih": "y. 1490–1505",
+      "kaynak": "Akademie der bildenden Künste Wien"
+    },
+    "Q993743": {
+      "yil": 1512,
+      "tarih": "y. 1512",
+      "kaynak": "Biblioteca Reale, Torino"
+    },
+    "Q20177902": {
+      "yil": 1738,
+      "tarih": "1738",
+      "kaynak": "NGA açık veri, nesne 41650"
+    }
+  }
+}

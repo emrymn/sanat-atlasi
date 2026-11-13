@@ -69,10 +69,11 @@ function ucur(src, bas, son, { egri = GECIS_EGRI, sure = GECIS_MS, radius = [10,
   );
 }
 
-// Görsel kaynağı ve (varsa) eserin müzesi
+// Görsel kaynağı ve (varsa) eserin müzesi; iki sanatçıya atfedilen eserde öteki sanatçı (İş 174)
 export function kaynakYazisi(eser, gorsel) {
   const g = gorsel || (eser.gorseller || [])[0];
-  return [eser.muze, g ? gorselKaynakYazisi(g) : ''].filter(Boolean).join(' · ');
+  const ortak = (eser.ortakAdlar || []).length ? `Ayrıca atfedilir: ${eser.ortakAdlar.join(', ')}` : '';
+  return [ortak, eser.muze, g ? gorselKaynakYazisi(g) : ''].filter(Boolean).join(' · ');
 }
 
 // kotuler: { eserAnahtarı: [görsel anahtarları] } — "Görsel kötü" ile güncellenir, degisti() çağrılır
@@ -125,6 +126,9 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     ${hikayeler && !gizli ? '<div class="gor-hikaye" data-test="gor-hikaye-panel" role="dialog" aria-label="Hikâyesi" hidden></div>' : ''}`;
   document.body.appendChild(kok);
   document.documentElement.classList.add('gor-acik');
+  // İş 174: arka plan etkisiz (inert): Tab ve VoiceOver görüntüleyiciden dışarı kaçmaz; kapanınca geri alınır
+  const etkisizler = [...document.body.children].filter((x) => x !== kok && !x.inert && x.tagName !== 'SCRIPT');
+  for (const x of etkisizler) x.inert = true;
   // İş 70: dokunulan küçük resim (yeni ve hâlâ ekranda) varsa açılış geçişi; kapanışta da ona döner
   const kaynak = sonDokunulan && Date.now() - sonDokunulan.zaman < 1500 && !hareketAz() ? sonDokunulan.img : null;
   sonDokunulan = null;
@@ -582,6 +586,7 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     window.removeEventListener('atlas-notlar', notlarGeldi);
     document.removeEventListener('keydown', tus);
     document.documentElement.classList.remove('gor-acik');
+    for (const x of etkisizler) x.inert = false;
     if (gecissiz) kok.remove();
     else kapanisGecisi();
     if (onceOdak && onceOdak.focus) onceOdak.focus();
@@ -617,8 +622,20 @@ export function goruntuleyiciAc({ eserler, baslangic = 0, gizli = false, kapanin
     setTimeout(() => kapat(), 220);
   }
 
+  // İş 174: Tab görüntüleyicinin görünür düğmeleri arasında döner (inert desteklemeyen tarayıcılar için de)
+  function odakDongusu(e) {
+    const l = [...kok.querySelectorAll('button, a[href], input, [tabindex]:not([tabindex="-1"])')].filter((x) => !x.disabled && !x.closest('[hidden]') && x.getClientRects().length);
+    if (!l.length) return;
+    const i = l.indexOf(document.activeElement);
+    if (e.shiftKey ? i <= 0 : i === l.length - 1 || i < 0) {
+      e.preventDefault();
+      l[e.shiftKey ? l.length - 1 : 0].focus();
+    }
+  }
+
   function tus(e) {
-    if (e.key === 'Escape') kapat();
+    if (e.key === 'Tab') odakDongusu(e);
+    else if (e.key === 'Escape') kapat();
     else if (e.key === 'ArrowLeft') git(-1);
     else if (e.key === 'ArrowRight') git(1);
   }

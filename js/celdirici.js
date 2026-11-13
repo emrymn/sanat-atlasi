@@ -60,13 +60,14 @@ export function soyadi(s) {
   return t[t.length - 1] || '';
 }
 export const akrabaMi = (a, b) => !!a && !!b && a.id !== b.id && soyadi(a) !== '' && soyadi(a) === soyadi(b);
-export function sanatciCeldiricileri(hedef, { sanatcilar, akimlar, acikIdler = new Set(), rng = Math.random, adet = 3, ortaYillar = null, seviye = 'zor' }) {
+// haric: şık olamayacak sanatçılar (İş 174: sorulan eser onlara da atfediliyor; seçerse cevap aslında yanlış değil)
+export function sanatciCeldiricileri(hedef, { sanatcilar, akimlar, acikIdler = new Set(), rng = Math.random, adet = 3, ortaYillar = null, seviye = 'zor', haric = [] }) {
   const oy = ortaYillar || akimOrtaYillari(sanatcilar);
   const hedefAralik = yasamAraligi(hedef, oy);
   const akim = akimlar.find((a) => a.ad === hedef.akim);
   const komsular = new Set((akim && akim.komsular) || []);
   const secilen = [];
-  const kullanilan = new Set([hedef.id]);
+  const kullanilan = new Set([hedef.id, ...haric]);
   const kullanilanAd = new Set([hedef.ad]);
 
   const acikOnce = (liste) => {

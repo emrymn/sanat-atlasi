@@ -1,6 +1,6 @@
 // Wikidata erişimi: QID çözümleme ve eser listesi.
 // Hem tarayıcıda (uygulama) hem Node'da (scripts/onbellek.mjs) çalışır.
-// Doğruluk kuralı: bir eser yalnızca doğrulanmış QID için P170/P84 ile bağlıysa alınır.
+// Doğruluk kuralı: bir eser yalnızca doğrulanmış QID için P170 (yaratıcı) ile bağlıysa alınır (P84 bırakıldı, KARARLAR 40).
 
 export const API = 'https://www.wikidata.org/w/api.php';
 export const SPARQL = 'https://query.wikidata.org/sparql';
@@ -171,7 +171,9 @@ export function eserSorgusu(qid) {
   ${resimSuzgeci('?item')}
   ?item wdt:P18 ?img .
   ?item wikibase:sitelinks ?sl .
-  OPTIONAL { ?item wdt:P571 ?inc . }
+  # İş 174: yalnız yıl ya da daha ince hassasiyetteki (precision >= 9) tarih; "15. yüzyıl" 1500 diye okunmasın
+  OPTIONAL { ?item p:P571 ?incSt . ?incSt a wikibase:BestRank ; psv:P571 ?incD . ?incD wikibase:timeValue ?inc ; wikibase:timePrecision ?incP .
+    FILTER(?incP >= 9) }
   OPTIONAL { ?item rdfs:label ?ltr . FILTER(LANG(?ltr) = "tr") }
   OPTIONAL { ?item rdfs:label ?len . FILTER(LANG(?len) = "en") }
   OPTIONAL { ?item rdfs:label ?lmul . FILTER(LANG(?lmul) = "mul") }

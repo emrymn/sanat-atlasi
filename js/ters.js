@@ -25,7 +25,8 @@ export function tersSecenekleri({ dogru, celdiriciler, rng = Math.random, kotule
   for (const c of celdiriciler) {
     if (secilen.length === 3) break;
     if (!c || goruldu.has(c.id)) continue;
-    const havuz = pekistirmeHavuzu(c.eserler || [], kotuler);
+    // İş 174: sorulan sanatçıya da atfedilen eser "yanlış" seçenek olamaz
+    const havuz = pekistirmeHavuzu(c.eserler || [], kotuler).filter((e) => !(e.ortak || []).includes(dogru.id));
     if (!havuz.length) continue;
     goruldu.add(c.id);
     const ayniKonu = konu ? havuz.filter((e) => (konusu(e) || {}).id === konu.id) : [];

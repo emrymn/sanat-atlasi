@@ -15,7 +15,17 @@ function ac() {
       const db = istek.result;
       for (const d of DEPOLAR) if (!db.objectStoreNames.contains(d)) db.createObjectStore(d);
     };
-    istek.onsuccess = () => coz(istek.result);
+    istek.onsuccess = () => {
+      const db = istek.result;
+      // İş 174: başka bir sekme/yeni sürüm veritabanını yükseltmek isterse bağlantı kapanır (yoksa yükseltme
+      // kilitlenir); tarayıcı bağlantıyı kendisi kapatırsa (iOS'ta depolama baskısı) bir sonraki işlem yeniden açar
+      db.onversionchange = () => {
+        db.close();
+        dbSozu = null;
+      };
+      db.onclose = () => (dbSozu = null);
+      coz(db);
+    };
     istek.onerror = () => reddet(istek.error);
   });
   dbSozu.catch(() => (dbSozu = null));

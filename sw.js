@@ -2,7 +2,7 @@
 // - Uygulama kabuğu ve data/*.json: önce önbellek (sürümlü; SURUM değişince yenilenir)
 // - Wikimedia, müze ve WikiArt görselleri: bayatken-yeniden-doğrula, ~700 MB üst sınır, en eski kullanılan silinir (LRU)
 // - Wikidata API/SPARQL: önce ağ, olmazsa önbellek
-const SURUM = '1.78.3';
+const SURUM = '1.78.4';
 const KABUK = `atlas-kabuk-${SURUM}`;
 const RESIM = 'atlas-resim-2'; // eski 'atlas-resim' hata yanıtları içerebilir; activate'te silinir
 const WIKIDATA = 'atlas-wikidata';
@@ -146,6 +146,7 @@ const ISTEGE_BAGLI = [
   'data/gunun_resimleri.json',
   'data/kopya_eserler.json',
   'data/cikarilan_gorseller.json',
+  'data/eser_duzeltmeleri.json',
   'data/eser_ayrintilari.json',
   'data/eser_hikayeleri.json',
   'data/yuruyus.json',
@@ -356,23 +357,38 @@ async function sinirli(fn, en = 4) {
   }
 }
 
+// İş 174: yanıt başlıkları bu süre içinde gelmezse istek iptal edilir (hata = görsel yok; sayfa yedeğe düşer).
+// Asılı kalan bir istek Wikimedia'ya ayrılan 4 yuvadan birini süresiz tutuyordu. Süre yalnız başlıklara kadar:
+// gövde (büyük kopyalar) inerken iptal edilmez, yuva da başlıklar gelince boşalır.
+const BASLIK_SURESI = 30000;
+async function zamanli(url, secenek = {}) {
+  const ac = typeof AbortController === 'function' ? new AbortController() : null;
+  const t = ac ? setTimeout(() => ac.abort(), BASLIK_SURESI) : 0;
+  try {
+    return await fetch(url, ac ? { ...secenek, signal: ac.signal } : secenek);
+  } finally {
+    clearTimeout(t);
+  }
+}
+
 // { y, saklanir }: yalnızca gerçekten görsel olduğu bilinen (ya da doğrulanamayan opak) yanıtlar saklanır
 async function agdan(url) {
   // uygulamayla yayınlanan görsel kopyaları (gorseller/): aynı köken, durum kodu görünür
   if (new URL(url).origin === self.location.origin) {
-    const y = await fetch(url);
+    const y = await zamanli(url);
     return { y, saklanir: y.ok };
   }
   if (CORS_HOSTLARI.has(new URL(url).hostname) || r2Mi(new URL(url))) {
     try {
-      const y = await fetch(url, { mode: 'cors', credentials: 'omit' });
+      const y = await zamanli(url, { mode: 'cors', credentials: 'omit' });
       const gorselMi = (y.headers.get('content-type') || '').startsWith('image/');
       return { y, saklanir: y.ok && gorselMi };
     } catch (err) {
+      if (err && err.name === 'AbortError') throw err; // zaman aşımı: no-cors ile 30 sn daha bekleme
       /* CORS yoksa no-cors'a düş */
     }
   }
-  const y = await fetch(url, { mode: 'no-cors', credentials: 'omit' });
+  const y = await zamanli(url, { mode: 'no-cors', credentials: 'omit' });
   return { y, saklanir: y.type === 'opaque' }; // hata gövdesi çıkarsa sayfa bildirir, kayıt silinir
 }
 
@@ -457,7 +473,8 @@ async function depodanYaDa(e) {
   const y = await devasaDepodan(e.request.url.split('?')[0]).catch(() => null);
   if (y) return y;
   if (onbellekBozuk) return agdan(e.request.url).then((s) => s.y);
-  return resim(e).catch(() => fetch(e.request));
+  // zaman aşımında aynı isteği yeniden (süresiz) beklemek yerine hata: sayfa yedek görsele düşer (İş 174)
+  return resim(e).catch((err) => (err && err.name === 'AbortError' ? Response.error() : fetch(e.request)));
 }
 
 async function resim(e) {

@@ -29,7 +29,14 @@ const TURLER = {
 };
 
 const sunucu = createServer(async (istek, yanit) => {
-  const yol = decodeURIComponent(new URL(istek.url, 'http://x').pathname);
+  // İş 174: bozuk yüzde kodlaması (/%ZZ) yakalanmamış hatayla sunucuyu düşürüyordu
+  let yol;
+  try {
+    yol = decodeURIComponent(new URL(istek.url, 'http://x').pathname);
+  } catch {
+    yanit.writeHead(400, { 'content-type': 'text/plain; charset=utf-8' });
+    return yanit.end('Geçersiz adres');
+  }
   // Önizlemede (--sw-yok) yönlendirme yok: uygulama kökte de açılır (yollar göreli). v0'ın vekil sunucusu
   // adresi kendi düzenliyor; /sanat-atlasi/ yönlendirmesi orada sonsuz döngüye giriyordu (ERR_TOO_MANY_REDIRECTS).
   if (!SW_YOK && !yol.startsWith(ONEK)) {
