@@ -26,7 +26,7 @@ test.beforeEach(async ({ context }) => {
   });
 });
 
-test.setTimeout(GERCEK ? 240_000 : 60_000);
+test.setTimeout(GERCEK ? 240_000 : 120_000); // tam sayfa görüntüleri yük altında 60 sn'yi aşabiliyordu
 
 async function bekle(page) {
   await page.waitForLoadState('networkidle', { timeout: GERCEK ? 20_000 : 5_000 }).catch(() => {});

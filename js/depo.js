@@ -5,6 +5,7 @@ import { bugunStr } from './leitner.js';
 import { karisanlarDogrula } from './ogrenme.js';
 import { seviyelerDogrula } from './seviye.js';
 import { seviyeleriBirlestir } from './birlesme.js';
+import { derslerDogrula } from './ders.js';
 import { gecmisDogrula } from './gecmis.js';
 import { koleksiyonDogrula } from './koleksiyon.js';
 import { gorulenDogrula } from './harita.js';
@@ -128,6 +129,7 @@ export function ilerlemeDogrula(nesne) {
     haritaYolcu: typeof v.haritaYolcu === 'string' && v.haritaYolcu.length < 40 ? v.haritaYolcu : null,
     haritaYolcuOn: v.haritaYolcuOn === true,
     bolumler: bolumlerDogrula(v.bolumler),
+    dersler: derslerDogrula(v.dersler), // 1.79.0 hazırlığı: Çalış · Ders düzeni (js/ders.js)
     bildirimler: bildirimlerDogrula(v.bildirimler),
     sonSurum: typeof v.sonSurum === 'string' && /^\d+\.\d+\.\d+$/.test(v.sonSurum) ? v.sonSurum : null,
     gelistirici: gelistiriciDogrula(v.gelistirici),

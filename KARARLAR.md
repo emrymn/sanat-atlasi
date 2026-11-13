@@ -2021,7 +2021,6 @@ Emre: "haritada bir tane sembolü kaldırmışsın, onu geri ekle; içine ulusla
 - Durağın kimliği birleşmeden önceki `3-1` (`BIRLESEN_DURAKLAR`): o duraktaki yıldızlar ve tanışma kaydı geri gelir. Adı "Gotik · 3. bölüm"; haritadaki yeri ve sembolü `harita.json`'daki Orta Çağ'ın üçüncü yeri (veri değişmedi).
 - Testler: `tests/unit/birlesme.test.mjs`'e durak testi; `paket8` (sürüm).
 
-
 ### İş 173 · Zayıf görseller için daha büyük kopyalar (sürüm 1.78.2)
 
 Emre: "uygulamada kaliteli olmayan resimlerin daha kaliteli olanları var mı araştır", ardından "bunları indirmek için bir betik oluştur". Araştırma raporu `reports/Zayıf görseller için yüksek çözünürlük.md`, notlar ve 2.918 zayıf eserin listesi `research_notes/` altında.
@@ -2052,3 +2051,62 @@ Emre: "uygulamada kaliteli olmayan resimlerin daha kaliteli olanları var mı ar
   - Met: özgünler zaten küçük.
 - **Bırakılan bulgu:** Wikimedia 2026'da standart dışı küçük resim genişliklerini kısıtlıyor. Uygulamanın ana yolu standart (`ADIMLAR`), ama yedek adres `gorselYedek` → `resimUrl(g.d, 800)` standart dışı. Ayrı iş olarak düzeltilebilir.
 - **Testler:** `tests/py/test_daha_buyuk.py` (20 test, ağsız), CI'da `python3 -m unittest discover -s tests/py`. Sürüm 1.78.2 (yalnız altyazıya SMK adı eklendi; düzeltme sürümü olduğu için Yenilikler'e girmedi).
+
+### 1.78.3 · Çalış · Ders düzeni için altyapı (arayüz yok)
+
+Emre: "fable için işin angarya kısmını yapabileceğin bir bölüm var mı çalışma kısmı için" → "başla". Ders düzeninin arayüzünü ve yeni metinlerini Fable yapacak (tasarım: https://claude.ai/artifact/VFJEDsgn6e7278NmuBgsYF). Bu sürüm yalnız onun üstüne kuracağı veriyi ve mantığı hazırlar; uygulamada görünür bir değişiklik yok, bu yüzden Yenilikler'e satır eklenmedi.
+
+- **Kaynak haritası** `data/ders_kaynaklari.json`. Üreten: `scripts/ders/kaynaklar.mjs`; elle düzenlenmez, veri değişince yeniden çalıştırılır. Yeni içerik yazmaz; her akım için dört adımın hangi mevcut veriden besleneceğini gösterir:
+  - **Gör:** yürüyüşü yazılmış eserler (`yuruyus.json`); önce kurs sanatçıları, sonra rehberli incelemesi olanlar.
+  - **Öğren:** "Nasıl tanınır?" maddeleri ve her madde için en çok 4 **kanıt adayı**. Aday, maddenin anahtar sözcüklerinin (ilk beş harf; en az 2 ve %40) bir eser metninde (yürüyüş noktası, rehberli inceleme noktası, başyapıt yazısı) birlikte geçtiği cümledir. Adaylar ekranda "bu özellik bu eserde" diye gösterilmeden önce doğrulanmalı. Eşik %40'a çıkınca bariz yanlışlar elendi (ör. "keskin çapraz çizgiler" cümlesi "keskin çizgi, pürüzsüz yüzey" maddesine aday sayılıyordu).
+  - **Ayırt et:** görünür komşu akımlar. Her çift için şunlar çıkarılır: iki akımın "Nasıl tanınır?" madde sayısı (fark tablosu, uygulamadaki akım karşılaştırma sayfası gibi, yeni metin yazmadan bunlarla yan yana kurulabilir), `akim_bilgi.json`'da öteki akımın adının geçtiği cümleler ve iki tarafın en bilinen 3 eseri.
+  - **Sına · "Neden?":** her sanatçı için `taninma`, tanıma notu ve `kurs_notu` var mı, hangisi kullanılır.
+- **Eksik raporu** `referans/ders_eksikler.md` (aynı betik): 28 ders.
+  - Gör verisi olmayanlar: Dada, Sürrealizm, Savaş sonrası figürasyon.
+  - Kanıt adayı bulunamayan madde: 43 / 115.
+  - Karşılaştırma cümlesi olmayan komşu çifti: 27 / 74.
+  - "Neden?" kaynağı olmayan sanatçı yok.
+- **Ders mantığı** `js/ders.js` (arayüzsüz, birim testli):
+  - Kayıt: `ilerleme.dersler[akım] = { gor, ogren, ayirt, sina }`, her adım `{ i: 0–1, t: bitiş günü }`.
+  - Adımlar yalnız artar. Sına %75'te (haritadaki geçme sınırı), ötekiler tamamında biter.
+  - Adımlar sırayla önerilir ama kilitlenmez: ders öğretmek içindir, sınav kapısı değil.
+  - `bugununDersi`: Yolculuk'taki "Buradasın" durağının akımı (dersi bitmediyse), değilse dönem sırasıyla ilk bitmemiş açık akım.
+  - `derslerDogrula` `ilerlemeDogrula`'ya bağlı: kayıt yedekle gider gelir, eski yedekler boş dersle yüklenir, birleşen akımın kaydı hedefe katılır.
+  - `js/ders.js` kayıt doğrulamasından açılışta yüklendiği için service worker kabuğuna eklendi (sürüm 1.78.3).
+- Testler: `tests/unit/ders.test.mjs` (kayıt, bugünün dersi, doğrulama ve yedek, kaynak haritasının uygulama verisiyle tutarlılığı).
+- **Kaynaklar genişletildi** (Emre: "hepsini yap ama tasarım kısmına dokunma onu fable yapsın"):
+  - Öğren'in kanıt adaylarına eser notları (`eser_notlari.json`, yalnız sanatçının doğrulanmış eser listesindeki eserler) eklendi.
+  - Esere bağlı olmayan "genel" adaylar ayrı tutuluyor: `taninma`, tanıma notu, `kurs_notu`, dönem metni. Bunlar kanıt değil, açıklama adayı.
+  - Kanıt adayı olmayan madde 43'ten 26'ya indi.
+- **Doğrulama** (`data/ders_dogrulama.json`): 513 adayın hepsi (308 esere bağlı, 205 genel) tek tek okundu.
+  - Karar madde başına verilir: aynı cümle iki maddeye aday olabiliyor ve maddeye göre karar değişiyor.
+  - Sonuç: 395 doğru, 66 belirsiz, 52 yanlış.
+  - Yanlışların çoğu karşılaştırma cümleleri (özelliği öteki sanatçıya veren "…'den şununla ayrılır" cümleleri) ve özelliğin tersini söyleyen cümleler (ör. "ten fırça izi bırakmadan boyanmış" → "görünür fırça izi" maddesi; "siyah ayakkabılar" → "siyah yok denecek kadar az" maddesi).
+  - Doğrulama cümleye göre yapıldı; görseller ayrıca açılmadı (kaynak metinler zaten denetlenmiş içerik).
+  - Doğrulanmış eser kanıtı olmayan madde: 35 / 115. Bunlar Fable'ın ya da Emre'nin yazacağı gerçek eksikler.
+  - Kaynak haritasındaki her adayın `durum` alanı var (`dogrulandi` / `belirsiz` / `yanlis`). Ekranda yalnız `dogrulandi` olanlar kanıt olarak gösterilir.
+  - Test: her adayın kararı olmalı ve her karar var olan bir adaya ait olmalı. Veri değişip yeni aday çıkarsa test düşer, karar istenir.
+- **Ayırt et eserleri** (`data/ders_ayirt_eserleri.json`): her akımdan 1–3 temsilci eser, öncelik sırasıyla (69 eser, 28 akım).
+  - Öneri, eserde doğrulanmış özellik sayısından (×3), yürüyüşünden (+2) ve bilinirlikten (`sl`) hesaplandı. Hepsi görsellerinden oluşturulan tabakalarda gözle kontrol edildi.
+  - Elle değiştirilenler:
+    - Yüksek Rönesans: önerilen gravür ve karakalem hazırlık çizimi yerine Rafael'in Saka Kuşlu Meryem'i, Mona Lisa ve Âdem'in Yaratılışı.
+    - İspanyol Barok: Velázquez'in erken ve karanlık "Öğle Yemeği" yerine Las Meninas.
+    - Neoklasisizm: Napolyon portresi yerine Horatii'lerin Yemini ve Kauffman'ın Kornelia'sı.
+    - Kübizm: önerilen eser Picasso'nun Mavi Dönem gravürüydü; yerine Vollard Portresi ve Üç Müzisyen.
+    - Dada: Dada öncesi resimler yerine Höch'ün mutfak bıçağı kolajı, L.H.O.O.Q. ve Arp'ın rastlantı kolajı.
+    - Sürrealizm ve Savaş sonrası figürasyon: yerel kopyası yoktu; WikiArt görsellerine bakılarak seçildi (Belleğin Azmi, İmgelerin İhaneti; Bacon'un Papa çalışması ve Çarmıha Geriliş triptiği).
+  - Bir çiftte iki akımın birinci eserleri yan yana; ötekiler yedek. Otomatik "en bilinen eser" önerisi kaldırıldı.
+- **Bugün'ün tablosu:** yüz odağı verisi ağ hatasıyla yüklenemezse (`odaklariYukle` null döner) 3 sn arayla en çok 3 kez daha denenir. Önceden o açılışta hiç kaydırılmıyordu. Galeri ve Atölye'deki öteki kullanımlar değişmedi.
+- **Kullanılmayan CSS silindi:** İş 172'nin Müze planı (`.gz-plan`, `.gz-plan-harita`, `.oda*`) ve İş 171'in Başyapıtlar rafı (`.gz-raf*`), animasyonlarıyla birlikte; 380 satır. Hâlâ kullanılan `.gz-plan-bas` kaldı. Gruplu seçicilerden yalnız kullanılmayan parçalar çıktı (iki seçici yeniden yazıldı). Galeri, Çalış, Bugün ve Yolculuk tam sayfa görüntüleri eski ve yeni CSS ile piksel piksel aynı. Yöntemin farkı yakaladığı bilerek değiştirilmiş bir CSS'le denetlendi.
+- **Test:** `is172` (Galeri: kalp aramayla aynı satırda) tam koşuda bir kez düştü: 4,31 px > 4. Üst bölüm açılırken öğeler sırayla kayarak geliyor ve yük altında ölçüm hareketin ortasına denk geliyordu. Tek başına eski ve yeni CSS ile 8/8 geçiyor. Artık hizalama `expect.poll` ile, hareket bitince denetleniyor.
+- **Görsel doğrulama** (Emre: "hepsini yap"):
+  - Esere bağlı ve "doğru" ya da "belirsiz" olan 278 kanıt adayının eser görselleri, maddeleriyle numaralı tabakalarda tek tek incelendi.
+  - Sonuç: 14 belirsiz doğru oldu (ör. Bellini'nin Madonna del Prato'sunun arkasındaki atmosferli manzara, Campin'in Müjde'sindeki zambak, mum ve kitap). 10 belirsiz yanlış oldu (ör. Loredan portresinde ve Bellini'nin koyu fonlu Meryem'inde manzara yok; Tintoretto'nun Son Akşam Yemeği şölen değil). Doğru sayılan 3 aday belirsize çekildi: Limbourg'un Şubat'ı iki maddede (köylüler var, saray hayatı ve süslü giysi yok) ve Masaccio'nun Çarmıha Geriliş'i (altın zemin var, gerçekçi mekân yok).
+  - Toplam: 406 doğru, 62 yanlış, 45 belirsiz.
+  - Bakılanlar `g: true`, gerekçesi `n`'de ("görselde …"). Görseli olmayan tek eser: Dalí, The Spectre of Sex-Appeal. Esere bağlı olmayan "genel" adaylara görsel bakılmadı.
+- **Testlerde zamanlama yarışları:** `expect(await …)` ve sabit beklemeli (`waitForTimeout`) denetimler tarandı.
+  - Durumu DOM'la aynı işleyicide yazan yerler güvenli (rozet, harita yolcusu, indirme işareti kodda doğrulandı). "Kaç kez oldu" türü olumsuz denetimlerdeki beklemeler kasıtlı; dokunulmadı.
+  - Takım 4 çekirdekte 6 ve 8 işçiyle yük altında koşturuldu, yarışlar böyle ortaya çıkarıldı.
+  - Düzeltilenler (cilalama): service worker sürüm testinde sabit 3 sn bekleme yerine önce sürüm isteği, sonra kurulumun bitmesi bekleniyor; yeniden kurulum beklemesi 15 → 30 sn. Görüntüleyicide çift dokunuşla dönüş, Bugün'deki ismin opaklığı ve Galeri önizlemeleri sabit bekleme yerine `expect.poll` ile denetleniyor.
+  - `ekran.spec`'in süre sınırı 60 → 120 sn: tam sayfa görüntüleri yük altında 60 sn'yi aşıyordu.
+  - Düzeltmelerden sonra takım 6 işçiyle 189/189 geçti.

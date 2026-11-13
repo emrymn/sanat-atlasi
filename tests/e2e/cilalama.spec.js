@@ -259,8 +259,10 @@ test.describe('görüntüleyici dokunuş ve yatay ekran', () => {
     await expect.poll(() => page.locator('.gor-resim').evaluate((e) => [e.style.transform.includes('scale(1)'), /px$/.test(e.style.width)])).toEqual([true, true]);
     // ikinci çift dokunuş: eski boyuta döner
     await ciftDokun();
-    await page.waitForTimeout(600);
-    expect(await page.locator('.gor-resim').evaluate((e) => [e.style.width, e.getBoundingClientRect().width <= e.closest('.gor-sahne').getBoundingClientRect().width + 1])).toEqual(['', true]);
+    // dönüş animasyonlu: sabit bekleme yerine yerleşmesi beklenir (yük altında 600 ms yetmeyebilir)
+    await expect
+      .poll(() => page.locator('.gor-resim').evaluate((e) => [e.style.width, e.getBoundingClientRect().width <= e.closest('.gor-sahne').getBoundingClientRect().width + 1]))
+      .toEqual(['', true]);
   });
 
   // İş 59: iki parmakla büyütüp parmakları kaldırmak dokunuş sayılıp arayüzü geri getiriyordu
@@ -701,14 +703,18 @@ test('service worker kabuğu sürüm sorgusuyla indirir; sürüm dosyası eskiys
     return r.continue();
   });
   await page.goto('./#/');
-  await page.waitForTimeout(3000);
-  expect(istenen.some((q) => /^\?v=\d+\.\d+\.\d+$/.test(q))).toBe(true);
+  // sabit 3 sn bekleme yerine: kurulum sürüm dosyasını istedi mi (yük altında 3 sn yetmiyordu), sonra kurulum bitti mi
+  await expect.poll(() => istenen.some((q) => /^\?v=\d+\.\d+\.\d+$/.test(q)), { timeout: 20000 }).toBe(true);
+  await expect
+    .poll(() => page.evaluate(async () => { const r = await navigator.serviceWorker.getRegistration(); return !r || !r.installing; }), { timeout: 20000 })
+    .toBe(true);
   // eski sürüm dosyası geldi: kurulum başarısız, sayfayı service worker yönetmiyor
   expect(await page.evaluate(async () => !!(await navigator.serviceWorker.getRegistration())?.active)).toBe(false);
   // ara sunucu tazelenince bir sonraki açılışta kurulur
   eski = false;
   await page.reload();
-  await expect.poll(() => page.evaluate(async () => !!(await navigator.serviceWorker.getRegistration())?.active), { timeout: 15000 }).toBe(true);
+  // kabuk yüzlerce dosya: yük altında kurulum 15 sn'yi aşabiliyordu
+  await expect.poll(() => page.evaluate(async () => !!(await navigator.serviceWorker.getRegistration())?.active), { timeout: 30000 }).toBe(true);
 });
 
 // İş 66: cilalama turu
@@ -1029,9 +1035,9 @@ test.describe('İş 77: bellekten dönen Tuval', () => {
     await page.goto('./#/');
     const ad = page.locator('#uygulama .sahne-isim');
     await expect(ad).toBeVisible();
-    await page.waitForTimeout(800);
     const opak = () => ad.evaluate((e) => getComputedStyle(e).opacity);
-    expect(await opak()).toBe('1');
+    // görünme animasyonu bitince tam opak (sabit bekleme yerine; yük altında 800 ms yetmeyebilir)
+    await expect.poll(opak).toBe('1');
     await page.evaluate(() => (document.querySelector('#uygulama .sahne-isim').dataset.iz = 'evet'));
     await page.locator('#sekmeler a[data-sekme="gozat"]').click();
     await expect(page).toHaveURL(/#\/gozat$/);
@@ -1039,8 +1045,7 @@ test.describe('İş 77: bellekten dönen Tuval', () => {
     await expect(page).toHaveURL(/#\/$/);
     // bellekten (aynı düğüm) ve görünür
     await expect(page.locator('#uygulama .sahne-isim[data-iz="evet"]')).toHaveCount(1);
-    await page.waitForTimeout(300);
-    expect(await opak()).toBe('1');
+    await expect.poll(opak).toBe('1');
     // Yolculuk'a gidip dönünce
     await page.locator('#sekmeler a[data-sekme="harita"]').click();
     await expect(page).toHaveURL(/#\/harita$/);
@@ -1048,8 +1053,7 @@ test.describe('İş 77: bellekten dönen Tuval', () => {
     await page.locator('#sekmeler a[data-sekme="bugun"]').click();
     await expect(page).toHaveURL(/#\/$/);
     await expect(ad).toBeVisible();
-    await page.waitForTimeout(300);
-    expect(await opak()).toBe('1');
+    await expect.poll(opak).toBe('1');
   });
 });
 
@@ -1090,8 +1094,8 @@ test.describe('İş 80: keskin görseller', () => {
     // küçük kartlar (dönem çizelgesi) 400 px'te kalır: gereksiz indirme yok
     await page.goto('./#/gozat');
     await page.locator('a.zaman-kart').first().waitFor();
-    await page.waitForTimeout(1500);
-    expect(await page.locator('#uygulama .zaman-kart .onizleme img[src*="gorseller/k/"]').count()).toBeGreaterThan(0);
+    // önizlemeler ilk çizimden sonra dolar: sabit 1,5 sn yerine dolması beklenir
+    await expect.poll(() => page.locator('#uygulama .zaman-kart .onizleme img[src*="gorseller/k/"]').count()).toBeGreaterThan(0);
     // sanatçı sayfasının eserleri için en büyük kopya istenmedi (yalnız büyük tablo)
     expect(istenen).toEqual([]);
     // Tuval'in büyük tablosu ekranı kaplıyor: en büyük kopya

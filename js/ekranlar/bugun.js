@@ -316,10 +316,15 @@ function tuvalOdagi(kutu, img, g) {
     img.style.transformOrigin = `${k.ox.toFixed(1)}px ${k.oy.toFixed(1)}px`;
   };
   img.addEventListener('load', uygula);
-  odaklariYukle().then(() => {
-    odakHazir = true;
-    uygula();
-  });
+  // Odak verisi yüklenemezse (ağ hatası) odaklariYukle null döner ve bir sonraki çağrıda yeniden dener: 3 sn arayla en çok
+  // 3 kez daha denenir (önceden tablo o açılışta hiç kaydırılmıyordu)
+  const yukle = (deneme = 0) =>
+    odaklariYukle().then((r) => {
+      if (r === null && deneme < 3) return void setTimeout(() => img.isConnected && yukle(deneme + 1), 3000);
+      odakHazir = true;
+      uygula();
+    });
+  yukle();
   window.addEventListener('resize', uygula);
 }
 
