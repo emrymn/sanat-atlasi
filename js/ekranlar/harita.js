@@ -16,6 +16,7 @@ import { goruntuleyiciAc } from '../goruntuleyici.js';
 import { surukleKapatKur } from '../surukleKapat.js';
 import { sanatciEserleri } from '../eserler.js';
 import { harfUygula, BOLGE_HARFLERI } from '../harfler.js';
+import { akimBilgisiBirlestir } from '../birlesme.js';
 
 // İş 90: öğrencinin ekrandaki boyu (pt; scripts/harita/yolcu_hazirla.py YOLCU_PT). İş 95: 80 → 96
 const YOLCU_H = 96;
@@ -131,7 +132,7 @@ export async function haritaSayfasi({ konumuKoru = false } = {}) {
   const no = cizimNo();
   motifVerisi(); // saklı motiflerin uzun hikâyeleri arka planda (dokunulduğunda hazır olsun)
   const [veri, bilgi, yv] = await Promise.all([haritaVerisi(), d.akimBilgi ? null : jsonGetir('data/akim_bilgi.json').catch(() => null), yolcuVerisi()]);
-  if (bilgi) d.akimBilgi = bilgi;
+  if (bilgi) d.akimBilgi = akimBilgisiBirlestir(bilgi);
   if (!guncelMi(no)) return;
   const tur = d.haritaVakti || vakit();
   const { durumlar: liste, simdiki } = durumlar();

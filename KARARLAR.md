@@ -1996,3 +1996,17 @@ Emre: "haritadaki tanış kısmı çalışmıyor, bir de kilit sembolü ters dur
 
   `basyapitlariAl` veri doğrulaması olduğu için ona dokunulmadı. Eser, Berlinghieri'nin eser listesinde ve pekiştirmede kalır; o da kaldırılsın derse listeye bir satır yeter. Gotik'in kemerine şimdi Berlinghieri'nin Uffizi diptiği geliyor. Testler: `tests/unit/temsil.test.mjs` ve `tests/e2e/temsil.spec.js` (e2e düzeltmeden önce düşüyordu).
 - **Gotik'in kemer resmi elle:** Diptik de beğenilmedi (Emre: "gotik resmi bi daha değiştir"). `js/temsil.js` `AKIM_KAPAK` ile akımın çarktaki kemer resmi QID ile seçilebiliyor. Gotik'e Duccio'nun Rucellai Madonnası (Q948745, Uffizi, 1285) kondu: dönemin en bilinen panosu, üçgen alınlığı kemere oturuyor. Seçilen eser önizleme çerçevelerinde de başa geçiyor. Simone Martini'nin Annunciation'ı zaten haritadaki durakta kullanıldığı için seçilmedi. Öteki akımlar eskisi gibi: en eski açık sanatçının en bilinen eseri.
+
+### 1.78.0 · Uluslararası Gotik, Gotik'e katıldı
+
+Emre: "uluslararası gotikle normal gotiği uygulamada birleştir, 2 sanatçı çok az ayrı bir sekme için".
+
+- **Veri değişmedi.** CLAUDE.md içerik alanlarına dokunmayı yasaklıyor (`akim` bir içerik alanı). Birleştirme yükleme anında bellekte yapılıyor: `js/birlesme.js` (`BIRLESEN_AKIMLAR = { 'Uluslararası Gotik': 'Gotik' }`). Geri almak ya da başka bir akımı birleştirmek için bu tek satır değişir.
+- **Sanatçılar:** Limbourg kardeşler ve Gentile da Fabriano Gotik'te (Gotik 10 → 12 sanatçı). `app.js` sanatçıları ve akımları `sanatcilariBirlestir` ve `akimlariBirlestir` ile alır.
+- **Akımlar:** Uluslararası Gotik listeden çıktı. Komşu listelerinde adı Gotik oldu (Kuzey Rönesansı: Gotik, Erken Rönesans, Flaman Barok); Gotik'in kendi komşuları Erken Rönesans ve Romanesk. `sira` değerleri değişmedi, haritanın dönem aralıkları (`BOLGELER`) aynı.
+- **Metinler:** `akim_bilgi.json`'daki Uluslararası Gotik metni Gotik metninin sonuna eklenir, dönem "12. yüzyıl – y. 1425" olur. Bu dosya üç yerde yükleniyordu (akım sayfası, Bugün, harita); üçü de `akimBilgisiBirlestir`'den geçer. "Nasıl tanınır?" maddelerinden üçü (kıvrımlı çizgiler ve süslü giysiler, saray hayatı ve doğa, minyatür el yazmaları) "(Uluslararası Gotik)" ekiyle Gotik'in sonuna eklenir. "Altın ve parlak renkler" maddesi alınmadı, çünkü Gotik'teki altın zeminle çakışıyor. Hikâye ve notlardaki "Uluslararası Gotik" geçişleri üslubun adı olarak kaldı.
+- **İlerleme:** Uluslararası Gotik'in seviye kaydı Gotik'inkine katılır: yüksek seviye kalır, eşitse son cevaplar birleşir. Bu `ilerlemeDogrula`'da yapılır, yani açılışta ve yedekten geri yüklemede; açılışta kaydedildiği için bir kez kalıcı olur. Çalışma geçmişindeki günlük akım sayıları Gotik altında toplanır. Sanatçıların Leitner kutuları (`sanatci`, `akim`) sanatçıya bağlı olduğu için olduğu gibi kaldı. Limbourg ve Gentile için "Hangi akım?" sorusunun doğru cevabı artık Gotik.
+- **Eski adresler:** `#/akim/Uluslararası Gotik` ve `#/pekistir/donem/Uluslararası Gotik` yönlendiricide Gotik'e çevrilir.
+- **Bırakılanlar:** `js/cerceve.js`, `js/harfler.js` ve akım sayfasındaki `USLUPLAR`'da Uluslararası Gotik satırları duruyor. Artık kullanılmıyorlar, zararsızlar; birleştirme geri alınırsa hazır kalsınlar diye silinmedi. `tests/unit/celdirici.test.mjs`'deki akım sorusu testi ham `akimlar.json`'la çeldirici mantığını sınıyor, değiştirilmedi.
+- **Testler:** yeni `tests/unit/birlesme.test.mjs` (5 test); `paket8` (sürüm).
+

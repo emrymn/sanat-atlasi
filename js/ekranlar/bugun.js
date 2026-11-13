@@ -1,4 +1,5 @@
 // Bugün: sayımlar, ana sayfa (sahne), yedek hatırlatması ve Günün sanatçısı sayfası.
+import { akimBilgisiBirlestir } from '../birlesme.js';
 import { kacis } from '../yardimci.js';
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { turOzeti, turAltYazisi } from '../oturum.js';
@@ -320,7 +321,7 @@ function ekVeriYukle() {
   if (!ekVeri) {
     ekVeri = Promise.all([
       jsonGetir('data/biyografiler.json').catch(() => ({ sanatcilar: {} })),
-      jsonGetir('data/akim_bilgi.json').catch(() => ({ akimlar: {} })),
+      jsonGetir('data/akim_bilgi.json').then(akimBilgisiBirlestir).catch(() => ({ akimlar: {} })),
     ]).then(([biyografiler, akimBilgi]) => ({ biyografiler, akimBilgi }));
   }
   return ekVeri;
