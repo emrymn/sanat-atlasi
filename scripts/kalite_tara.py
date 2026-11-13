@@ -6,8 +6,12 @@ kursun verdiği dosya küçük. Aynı eserin Commons'ta çoğu zaman daha büyü
 yüklemeleri). Bu betik yalnız keşfeder, indirmez: sonucu data/gorsel_iyilestirme.json'a yazar; scripts/devasa_indir.py
 oradaki dosyaları indirir, scripts/r2_yukle.py yeni adla (sürüm ekiyle) yükler, telefon yenisini indirir.
 
+İş 173: aranan eşik uzun kenar < 3000 px (ZAYIF). Adaylara Commons'un yapılandırılmış verisi de eklendi: "digital
+representation of" (P6243) = eserin QID'si olan dosyalar (müze yüklemeleri çoğu zaman P18'e bağlı değil).
+
 Doğruluk (CLAUDE.md "Accuracy rule"): eser ve sanatçı değişmez, yalnız aynı eserin başka bir fotoğrafı seçilir. Adaylar
-yalnız eserin kendi Wikidata kaydından gelir (P18 görseli ve P373 Commons kategorisi). Bir aday ancak şu üçü tutarsa
+yalnız eserin kendi Wikidata kaydından (P18 görseli ve P373 Commons kategorisi) ya da Commons'ta o kayda bağlı
+dosyalardan (P6243) gelir. Bir aday ancak şu üçü tutarsa
 alınır: (1) en/boy oranı uygulamadaki görselinkinden en çok %5 farklı (ayrıntı, çerçeveli fotoğraf, salon görünüşü
 elenir), (2) uzun kenarı elimizdekinden en az %25 ve en az 2000 px, (3) küçük hâli bizim görselimizle görsel olarak
 örtüşüyor (fark karması, 64 bitte en çok 12 bit farklı: başka bir kopya ya da başka bir eser elenir) ve renkli
@@ -287,6 +291,20 @@ def kategori(ad, bellek, kaydet):
     return bellek[ad]
 
 
+def temsil_dosyalari(qid, bellek, kaydet):
+    """İş 173: Commons'ta "digital representation of" (P6243) = eserin QID'si olan dosyalar (yapılandırılmış veri).
+    Müze yüklemelerinin çoğu bunu taşır ama eserin Wikidata kaydına (P18) bağlanmamıştır. {dosya: [g, y, küçük_url]}"""
+    if qid not in bellek:
+        j = api({'action': 'query', 'generator': 'search', 'gsrnamespace': 6, 'gsrlimit': 20,
+                 'gsrsearch': f'haswbstatement:P6243={qid}', 'prop': 'imageinfo', 'iiprop': 'size|url', 'iiurlwidth': KUCUK})
+        if not j:
+            return {}  # istek başarısız: saklanmaz, sonraki çalıştırmada yeniden sorulur
+        bellek[qid] = {norm(p['title'].split(':', 1)[-1]): [ii.get('width'), ii.get('height'), ii.get('thumburl')]
+                       for p in (j.get('query') or {}).get('pages', {}).values() for ii in (p.get('imageinfo') or [])[:1]}
+        kaydet()
+    return bellek[qid]
+
+
 def commons_yolu(d):
     d = norm(d)
     h = hashlib.md5(d.encode()).hexdigest()
@@ -453,6 +471,7 @@ def main():
     dosya_bilgileri(gerekli, dosyalar, lambda: yol_d.write_text(json.dumps(dosyalar)))
     yol_k, kategoriler = sakli('kalite_kategori')
     yol_h, imzalar = sakli('kalite_imza')
+    yol_t, temsiller = sakli('kalite_p6243')
 
     bulunan = 0
     for n, ad in enumerate(zayiflar, 1):
@@ -465,6 +484,9 @@ def main():
         for x in [d] + [norm(p) for p in (w.get('p18') or [])]:
             if dosyalar.get(x):
                 adaylar.setdefault(x, dosyalar[x])
+        # İş 173: eseri temsil ettiği Commons'ta yazılı dosyalar (P6243). Eski taramada bulunamayanlar için asıl kaynak
+        for x, bilgi in temsil_dosyalari(qid, temsiller, lambda: yol_t.write_text(json.dumps(temsiller))).items():
+            adaylar.setdefault(x, bilgi)
         secilen = None
         liste = uygun_adaylar(adaylar, oranlar.get(ad), mevcut, reddedilen.get(ad, ()))
         if liste:

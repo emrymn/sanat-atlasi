@@ -2021,3 +2021,34 @@ Emre: "haritada bir tane sembolü kaldırmışsın, onu geri ekle; içine ulusla
 - Durağın kimliği birleşmeden önceki `3-1` (`BIRLESEN_DURAKLAR`): o duraktaki yıldızlar ve tanışma kaydı geri gelir. Adı "Gotik · 3. bölüm"; haritadaki yeri ve sembolü `harita.json`'daki Orta Çağ'ın üçüncü yeri (veri değişmedi).
 - Testler: `tests/unit/birlesme.test.mjs`'e durak testi; `paket8` (sürüm).
 
+
+### İş 173 · Zayıf görseller için daha büyük kopyalar (sürüm 1.78.2)
+
+Emre: "uygulamada kaliteli olmayan resimlerin daha kaliteli olanları var mı araştır", ardından "bunları indirmek için bir betik oluştur". Araştırma raporu `reports/Zayıf görseller için yüksek çözünürlük.md`, notlar ve 2.918 zayıf eserin listesi `research_notes/` altında.
+
+- **AIC'deki 843 px tavanı bir kod hatasıydı.** AIC'nin IIIF sunucusu yalnız `843,` `1686,` `3000,` isteklerini geçiriyor. `full/max`, `!s,s` ve başka genişlikler 403 alıyor. `devasa_indir.py` dikey eserlerde genişliği orana göre hesaplıyordu (ör. `2440,`), 403 alıp 843'e düşüyordu. 2026-11-13'te denendi:
+  - `3000,` dikey eserde de geçiyor ve uzun kenarı 3000'e sığdırıyor (5257×6464 → 2440×3000).
+  - Özgünden büyütmüyor (1646×2250 → 1646×2250).
+  - Özgünden geniş `1686,` isteği 843'e yönleniyor.
+
+  Yeni `aic_iiif_adaylari` yalnız bu üç isteği yapar; NGA'nın IIIF yolu değişmedi. Referer taklidi denenmedi ve önerilmez (erişim denetimini aşmak olur).
+- **SMK (Statens Museum for Kunst):**
+  - Eser eşleşmesi yalnız Wikidata'daki envanter numarasıyla (P217, niteleyicisi P195 = Q671384; adı doğrulandı) yapılır. Birden çok SMK numarası varsa alınmaz.
+  - Görsel SMK açık API'sinin `image_native` alanından gelir. Müze kamu malı demeli (`public_domain`, PD Mark 1.0) ve sanatçı 1955'ten önce ölmüş olmalı.
+  - Zayıf listedeki 7 eserin hepsinde SMK görseli 1600 px (IIIF taraması yok; bizimki 537–768 px).
+  - Küçük hâli `kalite_tara`'nın fark karması ve renk denetiminden geçmeli.
+  - Uygulama altyazısında "SMK – Statens Museum for Kunst" (`js/gorsel.js` `KAYNAK_ADI`).
+- **Commons'un eser bağlantısı (P6243, "digital representation of"):** `kalite_tara.py` artık `haswbstatement:P6243=<eser QID>` aramasıyla eserin kaydına bağlı Commons dosyalarını da aday alır. Kabul kuralları aynı (oran %5, ≥ 2000 px ve ≥ 1,25 kat, fark karması ≤ 12, renkli, inceleme sayfası). Sonuçlar `gorseller_devasa/.bilgi/kalite_p6243.json`'da saklanır. Başarısız istek saklanmaz. Commons API bu ortamın IP'sine "too many requests" verdiği için arama burada canlı denenemedi; sözdizimi belgelere dayanıyor, Mac'te ilk çalıştırmada görülecek.
+- **`scripts/daha_buyuk.py`:** AIC → SMK → `kalite_tara` sırası.
+  - Yeni kopya elimizdekinin ≥ 1,25 katı ve ≥ 1600 px olmalı; `r2_yukle` 1600 altını yüklemez. En/boy oranı en çok %3 farklı olmalı.
+  - Eski en büyük kopya `gorseller_devasa/.onceki/`'de saklanır. 1280'lik 1280 px'ten küçükse yeni kopyadan yeniden üretilir.
+  - Ad `data/daha_buyuk.json`'a yazılır; `r2_yukle.py` bunları sürüm ekli adla yükler.
+  - `--dene` yalnız sayar, `--yalniz` adım seçer.
+  - Linux'ta sips yerine Pillow ile uçtan uca denendi: iki AIC eseri 1152 → 2250 ve 1037 → 3000 px; iki SMK eseri 768 → 1600 px oldu, benzerlik denetiminden geçti.
+- **Bilerek yapılmayanlar:**
+  - WikiArt özgünleri: telifli eserler, kopyalamak politika kararı, Emre'nin kararı bekleniyor.
+  - Google Arts & Culture: yalnız elle, kamu malı eserlerde.
+  - Louvre, NG London, Orsay, Uffizi, Prado: toplu indirmeye açık, lisansı doğrulanmış kaynak bulunamadı.
+  - Met: özgünler zaten küçük.
+- **Bırakılan bulgu:** Wikimedia 2026'da standart dışı küçük resim genişliklerini kısıtlıyor. Uygulamanın ana yolu standart (`ADIMLAR`), ama yedek adres `gorselYedek` → `resimUrl(g.d, 800)` standart dışı. Ayrı iş olarak düzeltilebilir.
+- **Testler:** `tests/py/test_daha_buyuk.py` (20 test, ağsız), CI'da `python3 -m unittest discover -s tests/py`. Sürüm 1.78.2 (yalnız altyazıya SMK adı eklendi; düzeltme sürümü olduğu için Yenilikler'e girmedi).

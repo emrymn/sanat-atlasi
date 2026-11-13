@@ -14,6 +14,8 @@ export const KAYNAK_ADI = {
   // İş 119: yalnız en büyük kopyanın kaynağı olarak (scripts/muze_tercih.py)
   rijks: 'Rijksmuseum',
   yuag: 'Yale University Art Gallery',
+  // İş 173: scripts/daha_buyuk.py
+  smk: 'SMK – Statens Museum for Kunst',
 };
 
 export function gorselAnahtari(g) {
