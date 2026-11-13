@@ -4,6 +4,7 @@ import { hataEkle } from './hataGunlugu.js';
 import { bugunStr } from './leitner.js';
 import { karisanlarDogrula } from './ogrenme.js';
 import { seviyelerDogrula } from './seviye.js';
+import { seviyeleriBirlestir } from './birlesme.js';
 import { gecmisDogrula } from './gecmis.js';
 import { koleksiyonDogrula } from './koleksiyon.js';
 import { gorulenDogrula } from './harita.js';
@@ -119,7 +120,7 @@ export function ilerlemeDogrula(nesne) {
     ekSanatcilar: Array.isArray(v.ekSanatcilar) ? [...new Set(v.ekSanatcilar.filter((x) => typeof x === 'string'))] : [],
     sonCalisilanlar: Array.isArray(v.sonCalisilanlar) ? [...new Set(v.sonCalisilanlar.filter((x) => typeof x === 'string'))].slice(0, SON_CALISILAN) : [],
     karisanlar: karisanlarDogrula(v.karisanlar),
-    seviyeler: seviyelerDogrula(v.seviyeler),
+    seviyeler: seviyeleriBirlestir(seviyelerDogrula(v.seviyeler)), // 1.78.0: birleşen akımlar (js/birlesme.js)
     sonYedek: typeof v.sonYedek === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v.sonYedek) ? v.sonYedek : null,
     gecmis: gecmisDogrula(v.gecmis),
     koleksiyon: koleksiyonDogrula(v.koleksiyon),

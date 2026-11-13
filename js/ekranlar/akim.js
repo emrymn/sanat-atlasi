@@ -24,12 +24,13 @@ import {
   hataGoster,
 } from './ortak.js';
 import { ikonografiVeri } from './gozat.js';
+import { akimBilgisiBirlestir, ozellikleriBirlestir } from '../birlesme.js';
 
 let ozellikSozu = null;
 function ozellikler() {
   if (!ozellikSozu)
     ozellikSozu = jsonGetir('data/akim_ozellikleri.json').then(
-      (j) => (j && j.akimlar) || {},
+      (j) => ozellikleriBirlestir((j && j.akimlar) || {}),
       () => ({}),
     );
   return ozellikSozu;
@@ -172,7 +173,7 @@ function akimBilgisi() {
   if (d.akimBilgi) return Promise.resolve(d.akimBilgi);
   if (!bilgiSozu)
     bilgiSozu = jsonGetir('data/akim_bilgi.json').then(
-      (j) => (d.akimBilgi = j || { akimlar: {} }),
+      (j) => (d.akimBilgi = akimBilgisiBirlestir(j || { akimlar: {} })),
       () => {
         bilgiSozu = null;
         return { akimlar: {} };

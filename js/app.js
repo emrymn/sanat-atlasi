@@ -22,6 +22,7 @@ import { olaylariBagla as aramaOlaylari } from './ekranlar/arama.js';
 import { olaylariBagla as zamanOlaylari } from './ekranlar/zaman.js';
 import { olaylariBagla as akimOlaylari } from './ekranlar/akim.js';
 import { olaylariBagla as haritaOlaylari } from './ekranlar/harita.js';
+import { sanatcilariBirlestir, akimlariBirlestir } from './birlesme.js';
 
 // T2: eser notları (~100 KB) yalnızca görüntüleyicide gerekir; ilk ekran çizildikten sonra yüklenir.
 // Görüntüleyici notlardan önce açıldıysa 'atlas-notlar' olayıyla yazısını yeniler.
@@ -50,7 +51,7 @@ async function basla() {
   const konularTrSozu = jsonGetir('data/konular_tr.json').catch(() => null);
   const ilerlemeSozu = ilerlemeYukle(() => jsonGetir('data/baslangic_ilerleme.json'));
   const yarimSozu = yarimYukle();
-  const [tumSanatcilar, akimlar, konular, turler, tanima, eserAd, zorluk, yerelG, oranG, uzakG, kopyaG, cikarG, yuruyusG] = await Promise.all([
+  const [hamSanatcilar, hamAkimlar, konular, turler, tanima, eserAd, zorluk, yerelG, oranG, uzakG, kopyaG, cikarG, yuruyusG] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
     jsonGetir('data/konular.json'),
@@ -80,9 +81,12 @@ async function basla() {
   // Yalnızca resmi olan sanatçılar ve onların akımları (veri silinmez, uygulamada süzülür)
   const hazir = await hazirSozu;
   d.onbellekIdleri = hazir && hazir.sanatcilar ? new Set(Object.keys(hazir.sanatcilar)) : null;
+  // 1.78.0: Uluslararası Gotik Gotik'e katıldı (js/birlesme.js); veri dosyaları değişmez
+  const tumSanatcilar = sanatcilariBirlestir(hamSanatcilar);
   const sanatcilar = gorunurSanatcilar(tumSanatcilar, turler, hazir);
   d.tumSanatcilar = tumSanatcilar;
   d.sanatcilar = sanatcilar;
+  const akimlar = akimlariBirlestir(hamAkimlar);
   d.akimlar = gorunurAkimlar(
     akimlar.slice().sort((a, b) => a.sira - b.sira),
     sanatcilar,

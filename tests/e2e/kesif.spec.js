@@ -109,7 +109,11 @@ test('K3: akım sayfasında kimlik kartı; karşılaştırma sayfası; akım sor
   const kimlik = page.locator('[data-test="akim-kimlik"]');
   await expect(kimlik).toBeVisible();
   await expect(kimlik.locator('.akim-ozellik li')).toHaveCount(
-    await page.evaluate(async (a) => (await (await fetch('data/akim_ozellikleri.json')).json()).akimlar[a].length, akim),
+    // 1.78.0: birleşen akımların maddeleri hedefe eklenir (js/birlesme.js)
+    await page.evaluate(async (a) => {
+      const { ozellikleriBirlestir } = await import('./js/birlesme.js');
+      return ozellikleriBirlestir((await (await fetch('data/akim_ozellikleri.json')).json()).akimlar)[a].length;
+    }, akim),
   );
   await expect(kimlik.locator('.akim-eser').first()).toBeVisible();
   await expect(kimlik.locator('.akim-palet')).toBeVisible();

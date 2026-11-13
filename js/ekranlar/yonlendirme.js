@@ -1,4 +1,5 @@
 // Adres (#/…) → ekran eşlemesi.
+import { akimAdi } from '../birlesme.js';
 import { gecisBildir, yonAl } from '../gecis.js';
 import { d, sekmeleriCiz, hataGoster, cizimBaslat, geriDonusBildir, sekmedenMi, bellektenGeriKoy, sekmeKokuMu } from './ortak.js';
 import { anaSayfa, gununSayfasi } from './bugun.js';
@@ -77,7 +78,7 @@ export function yonlendir() {
       // geri dönüş ve sekmeler arası geçiş: sayfa bellekten (yeniden çizilmez)
       const tur = geriMi ? yon : sekmeden ? 'sekme' : null;
       if (tur && bellektenGeriKoy(h, tur)) return;
-      const args = m.slice(1).map((x) => decodeURIComponent(x));
+      const args = m.slice(1).map((x) => akimAdi(decodeURIComponent(x))); // 1.78.0: birleşen akımın eski adresleri hedefe
       Promise.resolve(fn(...args)).catch(hataGoster);
       return;
     }

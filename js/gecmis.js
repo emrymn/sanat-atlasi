@@ -1,6 +1,7 @@
 // Çalışma geçmişi (İ1, İ4): günlük kart kaydı, takvim, seri, haftalık doğru oranı ve gelecek yük.
 // Kayıt: ilerleme.gecmis["2026-10-22"] = { kart, dogru, akimlar: { Barok: 3 } }
 // (ilerleme.gunluk zaten bugünün sayaçlarını tuttuğu için geçmiş ayrı bir alanda: gecmis)
+import { akimAdi } from './birlesme.js';
 import { gunEkle, vadesiGeldiMi } from './leitner.js';
 
 const TARIH = /^\d{4}-\d{2}-\d{2}$/;
@@ -13,7 +14,7 @@ export function gecmisDogrula(g) {
   for (const [tarih, k] of Object.entries(g)) {
     if (!TARIH.test(tarih) || !k || typeof k !== 'object' || !SAYI(k.kart) || !SAYI(k.dogru)) continue;
     const akimlar = {};
-    for (const [ad, n] of Object.entries(k.akimlar && typeof k.akimlar === 'object' ? k.akimlar : {})) if (SAYI(n) && n > 0) akimlar[ad] = n;
+    for (const [ad, n] of Object.entries(k.akimlar && typeof k.akimlar === 'object' ? k.akimlar : {})) if (SAYI(n) && n > 0) akimlar[akimAdi(ad)] = (akimlar[akimAdi(ad)] || 0) + n; // 1.78.0: birleşen akımlar toplanır
     sonuc[tarih] = { kart: k.kart, dogru: Math.min(k.dogru, k.kart), akimlar };
   }
   return sonuc;
