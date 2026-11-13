@@ -183,3 +183,11 @@ test('wd_tazele: yıl ve müze yalnız kurallara göre değişir; eser eklenmez,
   assert.match(sorgu('Q5592'), /pqv:P1319/);
   assert.throws(() => sorgu('Q1 }'));
 });
+
+test('wd_tazele: müze adı gibi koleksiyon önce; yalnız "collection" adayı varken eski müze korunur', async () => {
+  const { tazele } = await import('../../scripts/wd_tazele.mjs');
+  const wd = (muzeler) => ({ yillar: [], muzeler });
+  assert.equal(tazele({ muze: 'Hermitage Museum', kaynaklar: ['wikidata'] }, wd(['Andrew W. Mellon collection', 'National Gallery of Art'])).eser.muze, 'National Gallery of Art');
+  assert.equal(tazele({ muze: "Musée d'Orsay", kaynaklar: ['wikidata'] }, wd(['Musées Nationaux Récupération'])).eser.muze, "Musée d'Orsay");
+  assert.equal(tazele({ muze: 'Führermuseum', kaynaklar: ['wikidata'] }, wd(['Collection Goudstikker heirs'])).eser.muze, 'Collection Goudstikker heirs');
+});

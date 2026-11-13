@@ -16,12 +16,14 @@ const HEDEF = new URL('data/eserler_onbellek.json', KOK);
 const SPARQL = 'https://query.wikidata.org/sparql';
 const AJAN = 'SanatAtlasi/1.0 (personal study app; https://github.com/emrymn/sanat-atlasi)';
 const TARIHSEL = /Führermuseum|Munich Central Collecting Point|Sonderauftrag Linz/i;
+const KOLEKSIYON = /collection|Récupération|heirs|Sammlung|Kunstbesitz|Kunstsammlung des Bundes/i;
 const MUZE_KAYNAKLARI = ['met', 'aic', 'cma', 'nga'];
+const AYIRAC = '¦¦'; // müze adlarında "|" geçebiliyor (Kunst Museum Winterthur | Reinhart am Stadtgarten)
 const bekle = (ms) => new Promise((r) => setTimeout(r, ms));
 
 export function sorgu(qid) {
   if (!/^Q\d+$/.test(qid)) throw new Error('geçersiz QID');
-  return `SELECT ?item (GROUP_CONCAT(DISTINCT ?yilS; separator="|") AS ?yillar) (GROUP_CONCAT(DISTINCT ?kolL; separator="|") AS ?muzeler) WHERE {
+  return `SELECT ?item (GROUP_CONCAT(DISTINCT ?yilS; separator="¦¦") AS ?yillar) (GROUP_CONCAT(DISTINCT ?kolL; separator="¦¦") AS ?muzeler) WHERE {
   ?item wdt:P170 wd:${qid} .
   OPTIONAL { ?item p:P571 ?st . ?st a wikibase:BestRank ; psv:P571 ?d . ?d wikibase:timeValue ?inc0 ; wikibase:timePrecision ?p .
     OPTIONAL { ?st pqv:P1319 ?ed . ?ed wikibase:timeValue ?en ; wikibase:timePrecision ?ep . FILTER(?ep >= 8) }
@@ -59,8 +61,12 @@ export function tazele(e, wd) {
   }
   if (!e.kurs) {
     const eski = e.muze || '';
-    if (wd.muzeler.length && !wd.muzeler.includes(eski)) {
-      sonuc.muze = wd.muzeler.slice().sort()[0];
+    // müze adı gibi olanlar önce; yalnız "… collection" türü adaylar varken müze adı gibi eski değer korunur
+    // (Alba Meryemi: "Andrew W. Mellon collection" değil; Signac: Orsay, "Musées Nationaux Récupération" değil)
+    const muzeGibi = wd.muzeler.filter((m) => !KOLEKSIYON.test(m)).sort();
+    const aday = muzeGibi[0] || (TARIHSEL.test(eski) || !eski || KOLEKSIYON.test(eski) ? wd.muzeler.slice().sort()[0] : null);
+    if (aday && !wd.muzeler.includes(eski)) {
+      sonuc.muze = aday;
       degisim.push('muze');
     } else if (!wd.muzeler.length && TARIHSEL.test(eski)) {
       delete sonuc.muze;
@@ -89,8 +95,8 @@ async function calis() {
     for (const b of j.results.bindings) {
       const q = b.item.value.split('/').pop();
       harita.set(q, {
-        yillar: (b.yillar ? b.yillar.value : '').split('|').filter(Boolean).map(Number).filter(Number.isFinite),
-        muzeler: (b.muzeler ? b.muzeler.value : '').split('|').filter(Boolean),
+        yillar: (b.yillar ? b.yillar.value : '').split(AYIRAC).filter(Boolean).map(Number).filter(Number.isFinite),
+        muzeler: (b.muzeler ? b.muzeler.value : '').split(AYIRAC).filter(Boolean),
       });
     }
     let n = 0;
