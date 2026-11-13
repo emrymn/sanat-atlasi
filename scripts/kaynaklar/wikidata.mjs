@@ -15,9 +15,11 @@ export function genisEserSorgusu(qid) {
   ${resimSuzgeci('?item')}
   ?item wdt:P18 ?img .
   ?item wikibase:sitelinks ?sl .
-  # İş 174: yalnız yıl ya da daha ince hassasiyetteki (precision >= 9) tarih; "15. yüzyıl" 1500 diye okunmasın
-  OPTIONAL { ?item p:P571 ?incSt . ?incSt a wikibase:BestRank ; psv:P571 ?incD . ?incD wikibase:timeValue ?inc ; wikibase:timePrecision ?incP .
-    FILTER(?incP >= 9) }
+  # İş 174: on yıl ya da daha ince hassasiyetteki (precision >= 8) tarih; yüzyıl ve binyıl alınmaz; "15. yüzyıl" 1500 diye okunmasın
+  # kaba tarihte (yüzyıl) "en erken tarih" niteleyicisi (P1319) on yıl ya da daha inceyse o alınır
+  OPTIONAL { ?item p:P571 ?incSt . ?incSt a wikibase:BestRank ; psv:P571 ?incD . ?incD wikibase:timeValue ?inc0 ; wikibase:timePrecision ?incP .
+    OPTIONAL { ?incSt pqv:P1319 ?incE . ?incE wikibase:timeValue ?incEn ; wikibase:timePrecision ?incEP . FILTER(?incEP >= 8) }
+    BIND(IF(?incP >= 8, ?inc0, ?incEn) AS ?inc) }
   OPTIONAL { ?item rdfs:label ?ltr . FILTER(LANG(?ltr) = "tr") }
   OPTIONAL { ?item rdfs:label ?len . FILTER(LANG(?len) = "en") }
   OPTIONAL { ?item rdfs:label ?lmul . FILTER(LANG(?lmul) = "mul") }

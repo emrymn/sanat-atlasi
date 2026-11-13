@@ -141,7 +141,8 @@ test('ters soru: sorulan sanatçıya da atfedilen eser yanlış seçenek olamaz'
 test('Wikidata sorguları: yüzyıl hassasiyetli tarih ve eski koleksiyon (Führermuseum) alınmaz', () => {
   for (const q of [eserSorgusu('Q5592'), genisEserSorgusu('Q5592')]) {
     assert.match(q, /wikibase:timePrecision \?incP/);
-    assert.match(q, /FILTER\(\?incP >= 9\)/);
+    assert.match(q, /IF\(\?incP >= 8, \?inc0, \?incEn\)/);
+    assert.match(q, /pqv:P1319/);
     assert.match(q, /wikibase:BestRank/);
     assert.doesNotMatch(q, /wdt:P571/);
   }
@@ -159,4 +160,26 @@ test('TAZE: 1 hepsini, kaynak listesi yalnız o kaynakların ham yanıtlarını 
   assert.equal(tazeMi('aic-eser:1', 'wd'), false);
   assert.equal(tazeMi('met-nesne:3', 'wd, met'), true);
   assert.equal(tazeMi('commons-kat:x', 'cma'), false);
+});
+
+test('wd_tazele: yıl ve müze yalnız kurallara göre değişir; eser eklenmez, silinmez', async () => {
+  const { tazele, sorgu } = await import('../../scripts/wd_tazele.mjs');
+  const wd = (yillar, muzeler = []) => ({ yillar, muzeler });
+  // yeni yıl yazılır
+  assert.equal(tazele({ yil: 1500, kaynaklar: ['wikidata'] }, wd([1503])).eser.yil, 1503);
+  // ince tarih yoksa: yalnız Wikidata'dan gelen yıl silinir, müze kaynağı varsa kalır
+  assert.equal('yil' in tazele({ yil: 1500, kaynaklar: ['wikidata'] }, wd([])).eser, false);
+  assert.equal(tazele({ yil: 1500, kaynaklar: ['wikidata', 'met'] }, wd([])).eser.yil, 1500);
+  // müze: eski değer bugünkülerden biriyse dokunulmaz; değilse bugünkü; tarihsel yer ve bugünkü yoksa silinir
+  assert.equal(tazele({ muze: 'Louvre', kaynaklar: ['wikidata'] }, wd([], ['Louvre', 'X'])).degisim.length, 0);
+  assert.equal(tazele({ muze: 'Führermuseum', kaynaklar: ['wikidata'] }, wd([], ['Toledo Museum of Art'])).eser.muze, 'Toledo Museum of Art');
+  assert.equal('muze' in tazele({ muze: 'Führermuseum', kaynaklar: ['wikidata'] }, wd([])).eser, false);
+  assert.equal(tazele({ muze: 'Eski Müze', kaynaklar: ['wikidata'] }, wd([])).eser.muze, 'Eski Müze');
+  // kurs eserinin yeri (slayt) değişmez
+  assert.equal(tazele({ kurs: true, muze: 'Slayttaki yer', kaynaklar: ['kurs', 'wikidata'] }, wd([], ['Başka'])).eser.muze, 'Slayttaki yer');
+  // görsel ve öteki alanlar aynen kalır
+  const e = { baslik: 'A', qid: 'Q1', gorseller: [{ k: 'commons', d: 'a.jpg' }], kaynaklar: ['wikidata'], yil: 1500 };
+  assert.deepEqual(tazele(e, wd([1490])).eser.gorseller, e.gorseller);
+  assert.match(sorgu('Q5592'), /pqv:P1319/);
+  assert.throws(() => sorgu('Q1 }'));
 });
