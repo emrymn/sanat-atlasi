@@ -12,12 +12,21 @@ export const getir = jsonGetiriciYap({
   zamanAsimi: 60000,
 });
 
-// Ham yanıtları diske yazar; aynı istek yeniden çalıştırmada ağa gitmez.
-// TAZE=1 ile önbellek atlanır.
+// TAZE=1: bütün ham yanıtlar yenilenir. TAZE=wd (ya da TAZE=wd,met): yalnız o kaynakların yanıtları; ötekiler diskteki
+// kopyadan (İş 174: Wikidata sorgusu değişince müzelere yeniden gitmeden, ör. AIC 403 verirken). Kaynak adı anahtarın
+// ilk parçası: wd, met, aic, cma, commons.
+export function tazeMi(anahtar, taze = process.env.TAZE) {
+  if (!taze) return false;
+  if (taze === '1') return true;
+  const kaynak = String(anahtar).split(/[-:]/)[0];
+  return taze.split(',').map((x) => x.trim()).includes(kaynak);
+}
+
+// Ham yanıtları diske yazar; aynı istek yeniden çalıştırmada ağa gitmez (TAZE ile yenilenir, yukarıda).
 export async function onbellekli(anahtar, fn) {
   const ad = createHash('sha1').update(anahtar).digest('hex').slice(0, 16);
   const yol = new URL(`yanit/${ad}.json`, HAM);
-  if (process.env.TAZE !== '1') {
+  if (!tazeMi(anahtar)) {
     try {
       return JSON.parse(await readFile(yol, 'utf8'));
     } catch {

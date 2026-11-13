@@ -482,13 +482,14 @@ function kartHazirla(o, konum) {
         acikIdler,
         rng: d.rng,
         ortaYillar: d.ortaYillar,
+        haric: eser.ortak || [], // İş 174: eser öteki sanatçıya da atfediliyorsa o şık olmaz
         // İş 30: bölümün Kolay ve Orta'sında 1 şaşırtmalı + 2 uzak şık
         seviye: katman ? 'karma' : SEVIYELER[sv].anahtar,
       }).map((x) => x.id);
     let secenekler = secici();
     // Ö5: karıştırılan ikilinin eşi şıklarda
     const es = o.esler && o.esler[s.id];
-    if (es && d.harita.has(es) && !akrabaMi(s, d.harita.get(es))) secenekler = esiEkle(secenekler, s.id, es, d.rng);
+    if (es && d.harita.has(es) && !akrabaMi(s, d.harita.get(es)) && !(eser.ortak || []).includes(es)) secenekler = esiEkle(secenekler, s.id, es, d.rng);
     const kart = {
       konum,
       id: s.id,

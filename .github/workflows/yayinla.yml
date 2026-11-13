@@ -29,6 +29,7 @@ jobs:
             --exclude='.git*' --exclude='_site' --exclude='node_modules' \
             --exclude='tests' --exclude='scripts' --exclude='tools' \
             --exclude='referans' --exclude='tasarim-A' --exclude='tasarim-B' \
+            --exclude='research_notes' --exclude='reports' \
             --exclude='*.md' --exclude='package*.json' \
             --exclude='playwright.config.js' --exclude='vercel.json'
           du -sh _site; find _site -type f | wc -l

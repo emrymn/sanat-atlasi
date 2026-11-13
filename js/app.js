@@ -6,7 +6,7 @@ import { akimOrtaYillari } from './celdirici.js';
 import { dokunuslariKoru } from './dokunus.js';
 import { gecisKur } from './gecis.js';
 import { kursKonulari } from './kurs.js';
-import { eserTurleriniAyarla, hazirOnbellek, eserAdlariniAyarla, adlariAl, kolaylikAl, kopyalariAyarla, cikarilanlariAyarla } from './eserler.js';
+import { eserTurleriniAyarla, hazirOnbellek, eserAdlariniAyarla, adlariAl, kolaylikAl, kopyalariAyarla, cikarilanlariAyarla, duzeltmeleriAyarla, ortakAtiflariAyarla } from './eserler.js';
 import { yerelGorselleriAyarla, oranlariAyarla, uzakGorselleriAyarla } from './gorsel.js';
 import { gorunurSanatcilar, gorunurAkimlar } from './resim.js';
 import { ilerlemeYukle, gunlukGuncelle } from './depo.js';
@@ -51,7 +51,7 @@ async function basla() {
   const konularTrSozu = jsonGetir('data/konular_tr.json').catch(() => null);
   const ilerlemeSozu = ilerlemeYukle(() => jsonGetir('data/baslangic_ilerleme.json'));
   const yarimSozu = yarimYukle();
-  const [hamSanatcilar, hamAkimlar, konular, turler, tanima, eserAd, zorluk, yerelG, oranG, uzakG, kopyaG, cikarG, yuruyusG] = await Promise.all([
+  const [hamSanatcilar, hamAkimlar, konular, turler, tanima, eserAd, zorluk, yerelG, oranG, uzakG, kopyaG, cikarG, yuruyusG, duzeltmeG] = await Promise.all([
     jsonGetir('data/sanatcilar.json'),
     jsonGetir('data/akimlar.json'),
     jsonGetir('data/konular.json'),
@@ -65,12 +65,13 @@ async function basla() {
     jsonGetir('data/kopya_eserler.json').catch(() => null),
     jsonGetir('data/cikarilan_gorseller.json').catch(() => null),
     jsonGetir('data/yuruyus.json').catch(() => null),
+    jsonGetir('data/eser_duzeltmeleri.json').catch(() => null),
   ]);
   d.kisaAdlar = (await kisaSozu).adlar || {};
   d.konularTr = await konularTrSozu;
   d.tanimaNotlari = notlariAl(tanima);
   eserAdlariniAyarla(adlariAl(eserAd));
-  kopyalariAyarla(kopyaG), cikarilanlariAyarla(cikarG); // İş 101: aynı tablonun ikinci kaydı · İş 117: çıkarılan görseller
+  kopyalariAyarla(kopyaG), cikarilanlariAyarla(cikarG), duzeltmeleriAyarla(duzeltmeG); // İş 101: aynı tablonun ikinci kaydı · İş 117: çıkarılan görseller · İş 174: elle eser düzeltmeleri
   d.kolaylik = kolaylikAl(zorluk);
   yerelGorselleriAyarla(yerelG && yerelG.gorseller, yerelG && yerelG.buyuk);
   uzakGorselleriAyarla(uzakG);
@@ -85,6 +86,7 @@ async function basla() {
   const tumSanatcilar = sanatcilariBirlestir(hamSanatcilar);
   const sanatcilar = gorunurSanatcilar(tumSanatcilar, turler, hazir);
   d.tumSanatcilar = tumSanatcilar;
+  ortakAtiflariAyarla(hazir, new Map(tumSanatcilar.map((s) => [s.id, s.ad]))); // İş 174: iki sanatçıda birden olan eserler
   d.sanatcilar = sanatcilar;
   const akimlar = akimlariBirlestir(hamAkimlar);
   d.akimlar = gorunurAkimlar(

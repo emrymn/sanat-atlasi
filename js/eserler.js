@@ -244,6 +244,74 @@ export function cikarilanlariAyikla(liste, c = cikarilan) {
   return sonuc;
 }
 
+// İş 174 (Qwen denetimi doğrulaması): elle eser düzeltmeleri (data/eser_duzeltmeleri.json). Önbellek yeniden
+// üretilse de, canlı Wikidata listesi gelse de uygulanır: sanatçıya ait olmadığı belli eserler çıkar (cikar),
+// başka esere ait görseller yalnız o kayıttan çıkar (gorsel_cikar), tarihsel koleksiyon (Führermuseum) yerine
+// bugünkü kurum yazılır (muze), müze kataloğundaki tarih yazılır (tarih). Eşleşme QID ile.
+let duzeltmeler = { cikar: {}, gorselCikar: {}, muze: {}, tarih: {} };
+const nesneMi = (x) => !!x && typeof x === 'object' && !Array.isArray(x);
+export function duzeltmeleriAyarla(j) {
+  const cikar = {};
+  const gorselCikar = {};
+  if (j && nesneMi(j.cikar))
+    for (const [sid, l] of Object.entries(j.cikar)) if (Array.isArray(l)) cikar[sid] = new Set(l.map((x) => x && x.qid).filter(Boolean));
+  if (j && nesneMi(j.gorsel_cikar))
+    for (const [sid, kayitlar] of Object.entries(j.gorsel_cikar))
+      if (nesneMi(kayitlar))
+        gorselCikar[sid] = Object.fromEntries(
+          Object.entries(kayitlar)
+            .filter(([, l]) => Array.isArray(l))
+            .map(([q, l]) => [q, new Set(l.map((a) => dosyaNormal(a).toLowerCase().normalize('NFC')))]),
+        );
+  duzeltmeler = { cikar, gorselCikar, muze: j && nesneMi(j.muze) ? j.muze : {}, tarih: j && nesneMi(j.tarih) ? j.tarih : {} };
+  bellek.clear();
+  gecici.clear();
+}
+export function duzeltmeleriUygula(sanatciId, liste, dz = duzeltmeler) {
+  const cikar = dz.cikar[sanatciId];
+  const gc = dz.gorselCikar[sanatciId];
+  const sonuc = [];
+  for (const e of liste) {
+    if (e.qid && cikar && cikar.has(e.qid)) continue;
+    let yeni = e;
+    const atilan = e.qid && gc && gc[e.qid];
+    if (atilan) {
+      const gorseller = (e.gorseller || []).filter((g) => !(g.k === 'commons' && atilan.has(cikarAnahtari(g))));
+      if (!gorseller.length) continue;
+      if (gorseller.length !== e.gorseller.length) yeni = { ...e, gorseller };
+    }
+    if (e.qid && Object.prototype.hasOwnProperty.call(dz.muze, e.qid)) yeni = { ...yeni, muze: String(dz.muze[e.qid] || '') };
+    const t = e.qid && dz.tarih && dz.tarih[e.qid];
+    if (t && Number.isInteger(t.yil)) yeni = { ...yeni, yil: t.yil, tarih: String(t.tarih || t.yil) };
+    sonuc.push(yeni);
+  }
+  return sonuc;
+}
+
+// İş 174: aynı eser (QID) birden çok sanatçının listesinde (ortak ya da tartışmalı atıf: Uyuyan Venüs Giorgione +
+// Tiziano gibi). Bu eser sorulduğunda öteki sanatçı şık olmaz; ters soruda öteki sanatçının yanlış eseri olarak çıkmaz.
+let ortaklar = new Map(); // qid → [sanatçı id]
+let ortakAdlari = new Map(); // sanatçı id → ad (künyede "Ayrıca atfedilir")
+export function ortakAtiflariAyarla(hazir, adlar = new Map()) {
+  ortakAdlari = adlar;
+  const m = new Map();
+  if (hazir && nesneMi(hazir.sanatcilar))
+    for (const [sid, v] of Object.entries(hazir.sanatcilar))
+      for (const e of (v && v.eserler) || [])
+        if (e && e.qid && !(duzeltmeler.cikar[sid] && duzeltmeler.cikar[sid].has(e.qid))) {
+          const l = m.get(e.qid) || [];
+          if (!l.includes(sid)) l.push(sid);
+          m.set(e.qid, l);
+        }
+  ortaklar = new Map([...m].filter(([, l]) => l.length > 1));
+  bellek.clear();
+  gecici.clear();
+}
+export function ortakSanatcilar(eser, sanatciId) {
+  const l = eser && eser.qid ? ortaklar.get(eser.qid) : null;
+  return l ? l.filter((x) => x !== sanatciId) : [];
+}
+
 // İş 121 (Emre: "aynı şeyi iki kez indirilmiş mi kontrol eden bir mekanizma kur"): uygulamada gösterilen bütün eserlerin
 // görsellerinin yerel anahtarları (önbellekten; çıkarılan görseller ve kopya kayıtların gizlenen tarafı hariç). En büyük
 // kopyalar yalnız bunlar için indirilir: kopya kaydın görseli aynı tabloyu ikinci kez, çıkarılan görsel ise hiç
@@ -253,7 +321,7 @@ export async function gosterilenGorseller() {
   if (!hazir || !hazir.sanatcilar) return null;
   const s = new Set();
   for (const [sid, v] of Object.entries(hazir.sanatcilar))
-    for (const e of kopyalariAyikla(sid, cikarilanlariAyikla((v.eserler || []).map(onbellekEseri))))
+    for (const e of kopyalariAyikla(sid, duzeltmeleriUygula(sid, cikarilanlariAyikla((v.eserler || []).map(onbellekEseri)))))
       for (const g of e.gorseller) s.add(`${g.k}:${g.d || g.i || g.u || ''}`);
   return s;
 }
@@ -271,9 +339,11 @@ export function sanatciEserleri(sanatci, { canli = true } = {}) {
   const soz = hesapla(sanatci, { canli })
     .catch(() => ({ liste: eserleriBirlestir(kursResimleri(sanatci, turler), []), kalici: false }))
     .then(({ liste, kalici }) => {
-      const eserler = kopyalariAyikla(sanatci.id, cikarilanlariAyikla(liste));
+      const eserler = kopyalariAyikla(sanatci.id, duzeltmeleriUygula(sanatci.id, cikarilanlariAyikla(liste)));
       for (const e of eserler) {
         e.sid = sanatci.id;
+        const ortak = ortakSanatcilar(e, sanatci.id);
+        if (ortak.length) (e.ortak = ortak), (e.ortakAdlar = ortak.map((x) => ortakAdlari.get(x) || x));
         // İş 143: sanatçının yaşamıyla çelişen Wikidata yılı gösterilmez (çoğu "15. yüzyıl" gibi yüzyıl hassasiyetinde
         // girilmiş tarihin 1500 diye okunması; kalanı kopya/atölye işi olabilir). Düzeltilmez: referans/tarih_inceleme.md
         if (yilSupheliMi(e.yil, sanatci) && e.tarih === tarihYaz(e.yil)) (e.yil = null), (e.tarih = '');

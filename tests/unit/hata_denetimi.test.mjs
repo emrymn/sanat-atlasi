@@ -44,7 +44,7 @@ function swKur({ fetchYanit, putHata = false }) {
     caches: { open: async () => cache, keys: async () => [], delete: async () => true, match: async () => undefined },
     indexedDB: { open: () => { throw new Error('idb yok'); } }, // meta işlemleri sessizce başarısız olur
     fetch: async (url, opt) => fetchYanit(url, opt),
-    URL, Request, Response, Promise, Date, Math, parseInt, Number, Set, Map, console, setTimeout,
+    URL, Request, Response, Promise, Date, Math, parseInt, Number, Set, Map, console, setTimeout, clearTimeout, AbortController,
   };
   vm.createContext(ctx);
   vm.runInContext(readFileSync(new URL('../../sw.js', import.meta.url), 'utf8') + '\n;this.__resim = resim;', ctx);

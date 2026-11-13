@@ -3,7 +3,7 @@ import { akimBilgisiBirlestir } from '../birlesme.js';
 import { kacis } from '../yardimci.js';
 import { GUNLUK_YENI_SINIRI } from '../leitner.js';
 import { turOzeti, turAltYazisi } from '../oturum.js';
-import { sanatciEserleri, eserBaslik } from '../eserler.js';
+import { sanatciEserleri, eserBaslik, yilSupheliMi } from '../eserler.js';
 import { gorselUrl, gorselYedek, secilenGorsel, gorselOdakNoktasi, kaplamaKaymasi, adlaOdak, yuruyusAdresleri, yuruyusEki } from '../gorsel.js';
 import { yuruyusAdimlari, yuruyusBaslat } from '../yuruyus.js';
 import { hareketAz } from '../gecis.js';
@@ -93,8 +93,10 @@ function turKarti(tur, g) {
 // Yürüyüşü olmayan sanatçıda (dosya yoksa) eskisi gibi tek ekran, kaydırma yok.
 const ustHtml = (tekrar) =>
   `<div class="bugun-ust"><span class="etiket bugun-tarih" data-test="tekrar">${tekrar}</span><a class="bugun-ben" href="#/ilerleme" aria-label="Ben: ilerleme ve ayarlar">Ben</a></div>`;
+// İş 174: yürüyüş eserinin yılı da sanatçının yaşamıyla çelişiyorsa gösterilmez (İş 143'teki eser listesi kuralı)
+const yuruyusYili = (gs, kayit) => (kayit && !yilSupheliMi(kayit.yil, gs) ? kayit.yil : null);
 function kapakHtml(gs, kayit) {
-  const eser = kayit ? [yuruyusEserAdi(gs.id, kayit), kayit.yil].filter(Boolean).join(' · ') : '';
+  const eser = kayit ? [yuruyusEserAdi(gs.id, kayit), yuruyusYili(gs, kayit)].filter(Boolean).join(' · ') : '';
   return `<button class="bugun-buyut" type="button" data-bugun-buyut aria-label="Resmi tam ekran aç" disabled></button>
         <div class="bugun-notlar"><button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 18, 1.6)}Hareketi aç</button>${yenilikHtml()}${yedekHatirlatHtml()}</div>
         <div class="bugun-alt">
@@ -122,7 +124,7 @@ function sahneHtml(gs, tekrar, kayit) {
         ${kapakHtml(gs, null)}
       </div>
     </section>`;
-  const kunyeYazi = [gs.ad, kayit.yil, gs.akim].filter(Boolean).join(' · ');
+  const kunyeYazi = [gs.ad, yuruyusYili(gs, kayit), gs.akim].filter(Boolean).join(' · ');
   return `<section class="sahne bugun-tek bugun-yuruyus" data-test="gunun-kart">
       <div class="bugun-kahraman sahne-yapiskan yur-sahne" data-gunun-gorsel><span class="egim-isik" aria-hidden="true"></span></div>
       <div class="yur-bulanik" aria-hidden="true"></div>

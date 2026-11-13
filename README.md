@@ -13,13 +13,11 @@ Görünüm: müze kataloğu gibi sakin bir zemin, Bodoni Moda başlıklar; tablo
 
 Yanlış yaptığın sanatçılar aynı turda 3–5 kart sonra tekrar gelir; sonra Leitner kutularıyla (1, 3, 7, 14, 30 gün) aralıklı tekrar edilir.
 
-## GitHub Pages'te yayına alma
+## Yayın (Cloudflare Pages)
 
-1. GitHub'da depo → **Settings → Pages**.
-2. **Source:** *Deploy from a branch* → **Branch:** `main`, klasör **`/ (root)`** → **Save**.
-3. 1–2 dakika sonra adres çıkar: `https://<kullanıcı-adın>.github.io/sanat-atlasi/`
+Site **Cloudflare Pages**'te yayınlanır: `main`'e birleştirilen her PR'dan sonra `.github/workflows/yayinla.yml` yalnız sitenin dosyalarını ayırır (testler, betikler, notlar dışarıda) ve `wrangler pages deploy` ile yükler. Adres: `https://sanat-atlasi.pages.dev/`. Derleme adımı yok; dosyalar depodaki hâliyle sunulur. Depoda `CLOUDFLARE_API_TOKEN` sırrı tanımlı olmalı (GitHub → Settings → Secrets and variables → Actions).
 
-Derleme adımı yok; GitHub Pages depo kökünü olduğu gibi sunar. (`.nojekyll` dosyası Jekyll işlemesini kapatır.)
+Daha önce GitHub Pages kullanılıyordu (`.nojekyll` o zamandan kalma); yollar göreli olduğu için uygulama GitHub Pages'te de çalışır.
 
 ## iPhone'da ana ekrana ekleme
 
@@ -69,6 +67,10 @@ done
 Elle verilen görsel kararları (`data/gorsel_kararlari.json`) önbellek üretilirken uygulanır.
 
 Vekil sunucu arkasında `onbellek.mjs` için: `NODE_USE_ENV_PROXY=1 node scripts/onbellek.mjs`. Yalnızca bazı sanatçıları yenilemek için id'lerini argüman olarak ver; tümünü baştan almak için `YENIDEN=1`.
+
+Yalnız bazı kaynakların ham yanıtlarını yenilemek için `TAZE=wd` (ya da `TAZE=wd,met`; kaynaklar: `wd`, `met`, `aic`, `cma`, `commons`): ötekiler `scripts/.ham/`'daki kopyadan gelir. Wikidata sorgusu değiştiğinde (İş 174) `TAZE=wd node scripts/onbellek.mjs` yeterli; müzelere yeniden gidilmez. Bir kaynak atlanırsa (403, eksik NGA CSV'si) betik sonunda eski dosyayı geri yazar ve uyarır; eserler sessizce kaybolmaz (bilerek eksik yazmak için `EKSIK_KABUL=1`).
+
+Müzelere hiç gitmeden yalnız Wikidata'dan gelen yıl ve müze alanlarını tazelemek için `node scripts/wd_tazele.mjs` (eser eklemez, silmez; `KURU=1` yalnız sayar, değişiklik listesi `scripts/.ham/wd_tazele_rapor.txt`).
 
 ### Sanatçının portresi ve adının okunuşu
 
@@ -122,7 +124,7 @@ UYGULA=1 node scripts/kaynaklar/wikiart.mjs                                     
 | `tools/` | Qwen inceleme betikleri (dokunulmaz) |
 | `KARARLAR.md` | Tarifte belirsiz kalan yerlerde verilen kararlar |
 
-Eser listeleri yukarıdaki kaynaklardan (kurs, Wikidata, müzelerin açık verileri, Commons müze taramaları, WikiArt) derleme zamanında birleştirilir; görsellerin kopyaları GitHub Pages'te (400 px) ve Cloudflare R2'de (1280 px ve en büyük kopya) durur. Bir eser yalnızca sanatçıya o kaynağın kendi kaydında bağlıysa (kurs, Wikidata'da doğrulanmış sanatçının “yaratıcı” P170 / “mimar” P84'ü, müzenin sanatçı alanı) gösterilir.
+Eser listeleri yukarıdaki kaynaklardan (kurs, Wikidata, müzelerin açık verileri, Commons müze taramaları, WikiArt) derleme zamanında birleştirilir; görsellerin kopyaları sitede (400 px) ve Cloudflare R2'de (1280 px ve en büyük kopya) durur. Bir eser yalnızca sanatçıya o kaynağın kendi kaydında bağlıysa (kurs, Wikidata'da doğrulanmış sanatçının “yaratıcı” P170'i, müzenin sanatçı alanı) gösterilir. P84 (“mimar”) artık kullanılmıyor (KARARLAR 40). Bunlara rağmen yanlış çıkan atıflar, görseller, müzeler ve tarihler `data/eser_duzeltmeleri.json`'da elle düzeltilir (İş 174).
 
 ## Görseller Cloudflare R2'de (en büyük kopyalar)
 
@@ -216,7 +218,7 @@ Ayrıntılar KARARLAR.md'de (İş 135–151).
 - **Harita (İş 142, 145):** ekranın dibine ve iki kenarına kadar.
 - **Ayarlar (İş 148, 149):** hareket ve yazı boyutu seçimi.
 - **Tarihler (İş 143):** iki başyapıt tarihi düzeltildi; sanatçının yaşamıyla çelişen Wikidata yılları gösterilmez.
-- **CI:** test makinesi `ubuntu-24.04`'e sabit (26.04'te Playwright 1.56.1 tarayıcı kuramıyor). **Yayın:** PR'ı Emre birleştirmeli; Claude uygulamasının birleştirmesi GitHub Pages yayınını başlatmıyor.
+- **CI:** test makinesi `ubuntu-24.04`'e sabit (26.04'te Playwright 1.56.1 tarayıcı kuramıyor). **Yayın:** PR'ı Emre birleştirmeli; Claude uygulamasının birleştirmesi Cloudflare yayınını başlatmıyor.
 
 ## Sırada bekleyen işler (5 Kasım 2026 itibarıyla)
 
