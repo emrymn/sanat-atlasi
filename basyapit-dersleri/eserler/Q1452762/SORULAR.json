@@ -1,0 +1,556 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1452762",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin AIC güncel başlığı ve kabul yılı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Paris Street; Rainy Day (1991'de kabul)"
+    },
+    {
+     "harf": "B",
+     "metin": "Rue de Paris; Temps de pluie"
+    },
+    {
+     "harf": "C",
+     "metin": "Umbrellas in the Place de l'Europe on a Rainy Day"
+    },
+    {
+     "harf": "D",
+     "metin": "Paris, A Rainy Day"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2/K3: güncel başlık Paris Street; Rainy Day; AIC 1991'de kabul etti (1877 sergi başlığının çevirisi).",
+   "yanlis_gerekceleri": {
+    "B": "Rue de Paris; Temps de pluie 1877 sergi katalog başlığıdır; güncel başlık değil (C002).",
+    "C": "Umbrellas in the Place de l'Europe on a Rainy Day AIC'nin ilk girişteki yanlış başlığıydı; 1991'de düzeltildi (C045).",
+    "D": "Paris, A Rainy Day 1976–77 retrospektifinin tarihsel başlık varyantıdır; ayrı eser ya da güncel başlık değil (C045)."
+   },
+   "kanit": [
+    "C001",
+    "C045"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin sanatçısı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gustave Caillebotte (1848–1894)"
+    },
+    {
+     "harf": "B",
+     "metin": "Claude Monet"
+    },
+    {
+     "harf": "C",
+     "metin": "Pierre-Auguste Renoir"
+    },
+    {
+     "harf": "D",
+     "metin": "Édouard Manet"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: artist_display Gustave Caillebotte (French, 1848–1894).",
+   "yanlis_gerekceleri": {
+    "B": "Monet Empresyonist çevreden ama bu eserin sanatçısı değil; katalog Caillebotte'u verir (C003).",
+    "C": "Renoir Caillebotte'un çağdaşı ve vasiyet tenfizcısı; bu eserin sanatçısı değil (C003).",
+    "D": "Manet modern kent temasının çağdaşı; bu eserin sanatçısı değil (C003)."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil kayda göre eserin tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1874"
+    },
+    {
+     "harf": "B",
+     "metin": "1876"
+    },
+    {
+     "harf": "C",
+     "metin": "1877"
+    },
+    {
+     "harf": "D",
+     "metin": "1886"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "K1/K2/K3: Made 1877; date_start/end=1877.",
+   "yanlis_gerekceleri": {
+    "A": "1874 ilk Empresyonist sergi yılıdır; bu eserin tarihi değil (C004).",
+    "B": "1876 Caillebotte'un zemin kazıyan işçiler ve Pont de l'Europe yılı; bu eser 1877 (C004).",
+    "D": "1886 son Empresyonist sergi yılıdır; bu eserin tarihi değil (C004)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin teknik/desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval üzerine yağlı boya"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt üzerine suluboya"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K2/K3: medium_display Oil on canvas.",
+   "yanlis_gerekceleri": {
+    "A": "Fresk duvar tekniğidir; eser tuval üzerine yağlı boya (C005).",
+    "C": "Pano/tempera değil; birincil kayıt Oil on canvas der (C005).",
+    "D": "Suluboya/kâğıt değil; destek tuval, bağlayıcı yağ (C005)."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Tuvalin (çerçevesiz) boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "212,2 × 276,2 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "241,3 × 306,1 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "54 × 65 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "162,5 × 73,5 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2/K3: 212.2 × 276.2 cm (83 1/2 × 108 3/4 in.).",
+   "yanlis_gerekceleri": {
+    "B": "241,3 × 306,1 cm çerçeveli boyuttur; tuvalin kendi boyutu değil (C006).",
+    "C": "54 × 65 cm yağlı hazırlık eskizinin boyutudur; final tuval değil (C032).",
+    "D": "162,5 × 73,5 cm başka bir esere (Correggio) ait ölçüdür; bu eserle ilgisi yok (C006)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Envanter numarası ve kredit satırı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1964.336; Charles H. and Mary F. S. Worcester Collection"
+    },
+    {
+     "harf": "B",
+     "metin": "1964.336; Google Art Project"
+    },
+    {
+     "harf": "C",
+     "metin": "20684; Worcester Collection"
+    },
+    {
+     "harf": "D",
+     "metin": "1877.1; Durand-Ruel Collection"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: main_reference_number 1964.336; credit_line Charles H. and Mary F. S. Worcester Collection.",
+   "yanlis_gerekceleri": {
+    "B": "Google Art Project görsel kaynağıdır; kredit satırı Worcester Collection'dır (C008).",
+    "C": "20684 AIC nesne/API id'sidir; envanter numarası 1964.336 (C008).",
+    "D": "1877.1 / Durand-Ruel bu eserin envanteri/krediti değil; kayıt 1964.336 Worcester (C008)."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Betimlenen kavşağın bugünkü adı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Place de l'Europe"
+    },
+    {
+     "harf": "B",
+     "metin": "Place de Clichy"
+    },
+    {
+     "harf": "C",
+     "metin": "Place de Dublin"
+    },
+    {
+     "harf": "D",
+     "metin": "Place de la Concorde"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "K3 fn: kavşak Caillebotte yaşarken adsızdı; Ocak 1987'de 'place de Dublin' adı verildi.",
+   "yanlis_gerekceleri": {
+    "A": "Place de l'Europe yakındaki bir meydandır; betimlenen kavşak değil (C012).",
+    "B": "Place de Clichy yakındaki bir meydandır; bu kavşak değil (C012).",
+    "D": "Place de la Concorde farklı bir meydandır; katalog Place de Dublin der (C012)."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Yağmur tuvalde nasıl gösterilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağmur damlaları açıkça çizilmiştir"
+    },
+    {
+     "harf": "B",
+     "metin": "Şemsiyeler ve ıslak parke yansımalarıyla ima edilir"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız gökyüzündeki koyu bulutlarla"
+    },
+    {
+     "harf": "D",
+     "metin": "Islak saçlar ve ıslak giysilerle"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: damla çizmek yerine yeni açılır-kapanır şemsiyeler + ıslak parke yansımalarıyla ima edilir.",
+   "yanlis_gerekceleri": {
+    "A": "AIC açıkça damla çizilmediğini; yağmurun şemsiye/yansımalarla ima edildiğini söyler (C015).",
+    "C": "Koyu bulut tek başına yağmur göstergesi değildir; kaynak şemsiye + ıslak parke der (C015).",
+    "D": "Islak saç/giysi betimi kaynakta yoktur; ima şemsiye ve yansımalarladır (C015)."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Eser ilk kez nerede gösterildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Salon 1875"
+    },
+    {
+     "harf": "B",
+     "metin": "1. Empresyonist Sergi, 1874"
+    },
+    {
+     "harf": "C",
+     "metin": "3. Empresyonist Sergi, Nisan 1877, kat.1"
+    },
+    {
+     "harf": "D",
+     "metin": "Durand-Ruel retrospektifi, 1894"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "K2/K3: Nisan 1877, 3e exposition de peinture, 6 rue le Peletier, kat.1.",
+   "yanlis_gerekceleri": {
+    "A": "Salon 1875'te Caillebotte'un zemin kazıyan işçileri reddedildi; bu eserin ilk sergisi değil (C040).",
+    "B": "1874 ilk Empresyonist sergidir; bu eser ilk kez 1877'de gösterildi (C040).",
+    "D": "1894 Durand-Ruel ilk YENİDEN gösterimdir; ilk sergi 1877 (C040)."
+   },
+   "kanit": [
+    "C040",
+    "C002"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "AIC'nin 2015 araştırması, hazırlık çizimi için hangi optik aracın kullanımını olası (likely) buldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fotoğraftan kopyalama (kesin)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tent camera obscura"
+    },
+    {
+     "harf": "C",
+     "metin": "Camera lucida (likely)"
+    },
+    {
+     "harf": "D",
+     "metin": "Projektör"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "K3: foto-kopyalama unlikely, tent camera obscura poor candidate; camera lucida likely; belgesel kanıt henüz yok.",
+   "yanlis_gerekceleri": {
+    "A": "2015 raporu fotoğraftan kopyalamayı unlikely buldu; kesin değil (C033).",
+    "B": "Tent camera obscura poor candidate olarak elendi (yüksek bakış noktası gerektirir) (C033).",
+    "D": "Projektör kaynakta önerilmez; rapor camera lucida'yı likely bulur (C033)."
+   },
+   "kanit": [
+    "C033"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser AIC'de Gallery 201'de sergilenmektedir (On View).",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2: Status On View, Gallery 201).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Yağmur, tuvalde damlalar hâlinde açıkça resmedilmiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış (K1): damla çizilmez; şemsiyeler + ıslak parke yansımalarıyla ima edilir.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Kavşak, Caillebotte yaşarken Place de Dublin adını taşıyordu.",
+   "dogru": false,
+   "aciklama": "Yanlış (K3): kavşak yaşarken adsızdı; ad Ocak 1987'de verildi.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "AIC 2015 raporu, hazırlık çiziminin fotoğraftan kopyalandığını kesin olarak doğruladı.",
+   "dogru": false,
+   "aciklama": "Yanlış (K3): foto-kopyalama unlikely; camera lucida likely; belgesel kanıt yok.",
+   "kanit": [
+    "C033"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "2013–14 konservasyonu, sararmış verniği kaldırarak daha mavi bir görünüm ve yağmur sonrası güneş parlaklığını ortaya çıkardı.",
+   "dogru": true,
+   "aciklama": "Doğru (K3: cleaning; bluer appearance; hint of sun after the rain).",
+   "kanit": [
+    "C037"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Wildenstein satış yılı ihtilafını (1960 NGA ↔ 1964 AIC) kaynak eleştirisiyle değerlendirin; NGA kataloğuna erişilmediğini not edin.",
+   "beklenen_ogeler": [
+    "1960 NGA 2015",
+    "1964 AIC",
+    "Joseph Baillio e-postası",
+    "NGA metne erişilmedi",
+    "A esas + ihtilaf beyanı"
+   ],
+   "kanit": [
+    "C052",
+    "C038"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Foto-kopyalama ↔ camera lucida tartışmasını ve Garcia (Mart 2015) deneyini analiz edin; likely / no documentary evidence niteleyicilerini koruyun.",
+   "beklenen_ogeler": [
+    "Galassi 1976 foto tezi",
+    "unlikely (kâğıt/lens)",
+    "tent poor candidate",
+    "camera lucida likely",
+    "Garcia deneyi",
+    "belgesel kanıt yok"
+   ],
+   "kanit": [
+    "C053",
+    "C033"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "A3-6 mükerrer kaydını (Paris, A Rainy Day, 1876–77) başlık tarihi kanıtıyla tekilleştirme önerisi olarak tartışın.",
+   "beklenen_ogeler": [
+    "1976–77 retrospektif varyantı",
+    "ayrı eser değil",
+    "1877 A",
+    "1876–77 kurs hatalı",
+    "data değiştirilmez"
+   ],
+   "kanit": [
+    "C045",
+    "C055"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Kentin soğuk/yalnız temsilini Haussmann dönüşümü ve burjuvazi bağlamında yorumlayın; Augé/Baudelaire çerçevelerinin ödünç olduğunu belirtin.",
+   "beklenen_ogeler": [
+    "Haussmann ~137 km",
+    "burjuva yalnızlığı",
+    "şemsiyeler özel alan",
+    "restorasyon önerisi",
+    "Augé/Baudelaire ödünç yorum"
+   ],
+   "kanit": [
+    "C022",
+    "C023",
+    "C025",
+    "C046"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Görsel incelenmeden yazılan betimlerin sınırını ve GZ TASLAK durumunu değerlendirin; insan editör görsel teyidinin gerekliliğini açıklayın.",
+   "beklenen_ogeler": [
+    "metadata only",
+    "GZ TASLAK",
+    "kırmızı tekerlek red+blue",
+    "piksel teyit yok",
+    "insan editör zorunlu"
+   ],
+   "kanit": [
+    "C050",
+    "C036",
+    "C058"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Ön plandaki şemsiyeli çifti bulun; izleyiciye doğru yürürken çerçeve dışına baktıklarını fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (K1): iki merkez figür izleyiciye yürür, çerçeve dışı bir şeye bakar.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Yeşil lamba direğini bulun; tuvali ikiye bölüşünü izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (K3/K4): green lamppost; tuvali ikiye böler.",
+   "kanit": [
+    "C027",
+    "C029"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağ kenarda çerçeveyle kesilmiş adamı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (K1/K3): dramatik kırpma; sağ kenar figürü kesik.",
+   "kanit": [
+    "C031"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Islak kaldırım taşlarındaki yansımaları ve araba tekerleğinin ince tellerini inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (K1/K3): ıslak parke yansımaları; teller kırmızı+mavi kuru fırça.",
+   "kanit": [
+    "C015",
+    "C036"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Sol alt köşedeki imza ve tarihi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (K1/K3): G. Caillebotte. 1877, gri-kahverengi.",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Paris Street; Rainy Day; Gustave Caillebotte (1848–1894); 1877; yağlı boya tuval; 212,2×276,2 cm; AIC 1964.336, Gallery 201, Worcester Collection; imza sol alt G. Caillebotte. 1877.",
+   "kanit": [
+    "C001",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Yer + bağlam?",
+   "arka": "Turin/Moscou kavşağı, bugünkü Place de Dublin (ad Ocak 1987); 8. arrondissement, Gare Saint-Lazare çevresi; Haussmann dönüşümü (~137 km bulvar).",
+   "kanit": [
+    "C012",
+    "C013",
+    "C022"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Üslup + optik?",
+   "arka": "Empresyonist konu + Realist keskin detay; iki kaçış noktalı perspektif; geniş açı; camera lucida likely (AIC 2015, belgesel kanıt yok).",
+   "kanit": [
+    "C017",
+    "C026",
+    "C028",
+    "C033"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenans + edinme?",
+   "arka": "sanatçı→Martial+Marie Minoret (1894)→Georges Minoret (1900)→Chardeau (1950)→Chrysler (1954)→Wildenstein (1964)→AIC (1964). Wildenstein yılı 1960↔1964 ihtilaflı (D).",
+   "kanit": [
+    "C038"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Konservasyon + alımlama?",
+   "arka": "2013–14 temizlik (lavender şemsiyeler, hint of sun after the rain); Returns sergisi 2014–2015; 1964 edinmesi yeniden keşfin katalizörü; tam takdir 1970'ler Varnedoe.",
+   "kanit": [
+    "C037",
+    "C041",
+    "C043"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,555 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1065493",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Ophelia bugün nerede sergileniyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tate Britain, Londra"
+    },
+    {
+     "harf": "B",
+     "metin": "National Gallery, Londra"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "Uffizi, Floransa"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tate birincil kaydı ve canlı meta: Tate Britain, envanter N01506 (C006/C004).",
+   "yanlis_gerekceleri": {
+    "B": "National Gallery tarihsel mülkiyettir (Tate başlangıçta NG'nin parçasıydı); güncel konum Tate Britain (C023/C045).",
+    "C": "Louvre farklı bir kurumdur; eser Tate koleksiyonundadır (C004).",
+    "D": "Uffizi farklı bir kurumdur; eser Tate Britain'dadır (C006)."
+   },
+   "kanit": [
+    "C006",
+    "C004"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser ulusa nasıl kazandırıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sir Henry Tate tarafından 1894'te armağan (Henry Tate Gift)"
+    },
+    {
+     "harf": "B",
+     "metin": "1851'de Royal Academy satın aldı"
+    },
+    {
+     "harf": "C",
+     "metin": "National Gallery 1862'de satın aldı"
+    },
+    {
+     "harf": "D",
+     "metin": "Millais doğrudan Tate'e bağışladı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tate Acquisition: \"Presented by Sir Henry Tate 1894\"; Henry Tate Gift (C005).",
+   "yanlis_gerekceleri": {
+    "B": "RA 1852'de sergiledi ama satın almadı; ilk alıcı dealer Henry Farrer'dı (C022/C024).",
+    "C": "1862'de Graves'e satıldı (748); NG mülkiyeti tarihsel katmandır, edinim Henry Tate Gift 1894 (C022/C023).",
+    "D": "Millais 1851'de Farrer'a sattı; Tate'e doğrudan bağış yoktur (C022)."
+   },
+   "kanit": [
+    "C005",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Resmin konusu hangi edebi kaynaktan gelir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Shakespeare, Hamlet IV.vii"
+    },
+    {
+     "harf": "B",
+     "metin": "Ovidius, Metamorphoses"
+    },
+    {
+     "harf": "C",
+     "metin": "Milton, Paradise Lost"
+    },
+    {
+     "harf": "D",
+     "metin": "Tennyson, The Lady of Shalott"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tate: Hamlet Act IV Scene vii; Gertrude'un Laertes'e anlatımı (C007/C008).",
+   "yanlis_gerekceleri": {
+    "B": "Metamorphoses mitolojik bir kaynaktır; Ophelia Hamlet'tendir (C007).",
+    "C": "Paradise Lost bu eserin kaynağı değildir; konu Hamlet'tir (C007).",
+    "D": "The Lady of Shalott başka bir konudur; Ophelia Shakespeare'dendir (C007)."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Manzara neden figürden önce boyandı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "PRB manzarayı figür kadar önemli gördü"
+    },
+    {
+     "harf": "B",
+     "metin": "Figürün modeli henüz bulunamamıştı"
+    },
+    {
+     "harf": "C",
+     "metin": "Tuval önce kurutulmalıydı"
+    },
+    {
+     "harf": "D",
+     "metin": "Hava koşulları figüre izin vermedi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tate: \"the landscape was of equal importance to the figure, and so ... it was painted first\" (C010).",
+   "yanlis_gerekceleri": {
+    "B": "Model (Siddal) bulundu; öncelik PRB ilkesindendir, model yokluğu değil (C010/C012).",
+    "C": "Tuval kurutma gerekçesi kaynakta yoktur; öncelik ilkeseldir (C010).",
+    "D": "Hava koşulları zorluk çıkardı ama önceliğin nedeni PRB ilkesidir (C010/C009)."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Ophelia'nın modeli kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Elizabeth Siddal"
+    },
+    {
+     "harf": "B",
+     "metin": "Jane Morris"
+    },
+    {
+     "harf": "C",
+     "metin": "Effie Gray"
+    },
+    {
+     "harf": "D",
+     "metin": "Alexa Wilding"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tate: model Elizabeth Siddall (Siddal); sonradan Rossetti'nin eşi (C012).",
+   "yanlis_gerekceleri": {
+    "B": "Jane Morris bu eserin modeli değildir; Tate Elizabeth Siddal'ı kaydeder (C012).",
+    "C": "Effie Gray bu eserin modeli değildir; model Siddal'dır (C012).",
+    "D": "Alexa Wilding bu eserin modeli değildir; Tate Siddal'ı kaydeder (C012)."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Millais tuvali kimden satın aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Charles Roberson"
+    },
+    {
+     "harf": "B",
+     "metin": "Henry Farrer"
+    },
+    {
+     "harf": "C",
+     "metin": "James Bourlet & Sons"
+    },
+    {
+     "harf": "D",
+     "metin": "Thomas Combe"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tate: 7 Haziran 1851, Charles Roberson, 15 şilin, \"double canvas\" (C016).",
+   "yanlis_gerekceleri": {
+    "B": "Henry Farrer eseri satın alan dealer'dır; tuval sağlayıcısı Roberson'dır (C016/C022).",
+    "C": "James Bourlet & Sons paketleme/çerçeve firmasıdır (arka etiket); tuval Roberson'dan (C016/C019).",
+    "D": "Thomas Combe mektup yazılan kişidir; tuval sağlayıcısı değildir (C016/C014)."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Astar katmanlarının sırası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kurşun beyaz zemin üzerine çinko beyaz"
+    },
+    {
+     "harf": "B",
+     "metin": "Çinko beyaz üzerine kurşun beyaz"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız alçı zemin"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnız kurşun beyaz"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tate UV kesiti: \"a layer of lead white underneath a layer of zinc white\" (C017).",
+   "yanlis_gerekceleri": {
+    "B": "Sıra terstir; kurşun beyaz altta, çinko beyaz üsttedir (C017).",
+    "C": "Alçı zemin kaynakta yoktur; kurşun + çinko beyaz kullanılmıştır (C017).",
+    "D": "Yalnız kurşun beyaz eksiktir; üstte çinko beyaz kat vardır (C017)."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Millais yeşilleri nasıl elde etti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Chrome yellow + Prussian blue karışımı"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız chromium oxide"
+    },
+    {
+     "harf": "C",
+     "metin": "Ultramarine ash + vermilion"
+    },
+    {
+     "harf": "D",
+     "metin": "Naples yellow + madder lake"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tate: \"Millais's greens were mixed greens of chrome yellow and Prussian blue\" (C018).",
+   "yanlis_gerekceleri": {
+    "B": "Chromium oxide palette'te vardır ama yeşiller chrome yellow + Prussian blue karışımıdır (C018).",
+    "C": "Ultramarine ash + vermilion yeşil vermez; yeşiller chrome yellow + Prussian blue'dur (C018).",
+    "D": "Naples yellow + madder lake yeşil karışımı değildir; kaynak chrome yellow + Prussian blue der (C018)."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "1967'de esere ne yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Relining (arka tuval kaldırılıp kaydedildi)"
+    },
+    {
+     "harf": "B",
+     "metin": "İlk sergileme"
+    },
+    {
+     "harf": "C",
+     "metin": "Henry Tate Gift"
+    },
+    {
+     "harf": "D",
+     "metin": "Tuvalin yeniden kullanımı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tate: \"The back canvas layer ... was removed when the painting was lined in 1967\" (C019).",
+   "yanlis_gerekceleri": {
+    "B": "İlk sergileme 1852 Royal Academy'dir (C024).",
+    "C": "Henry Tate Gift 1894'tedir (C005).",
+    "D": "X-ray tuvalin yeniden KULLANILMADIĞINI gösterir; 1967'de relining yapılmıştır (C019)."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Söğüt (weeping willow) neyi simgeler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Terk edilmiş aşk"
+    },
+    {
+     "harf": "B",
+     "metin": "Ölüm"
+    },
+    {
+     "harf": "C",
+     "metin": "Masumiyet"
+    },
+    {
+     "harf": "D",
+     "metin": "Sadakat"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Tate: \"The weeping willow tree leaning over Ophelia is a symbol of forsaken love\" (C020).",
+   "yanlis_gerekceleri": {
+    "B": "Ölümü gelincik (poppy) simgeler (C020).",
+    "C": "Masumiyeti papatya (daisy) simgeler (C020).",
+    "D": "Sadakati menekşe (violet) simgeler (C020)."
+   },
+   "kanit": [
+    "C020"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser tuval üzerine yağlı boyadır.",
+   "dogru": true,
+   "aciklama": "Doğru: Tate Medium \"Oil paint on canvas\" (C002).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Manzara, figürden sonra boyanmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: PRB ilkesi gereği manzara ÖNCE boyandı (C010).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Sahne oyunda sahnelenir.",
+   "dogru": false,
+   "aciklama": "Yanlış: sahne sahnelenmez; Gertrude'un Laertes'e anlatımıdır (C008).",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Model Elizabeth Siddal, 1860'ta Rossetti ile evlendi.",
+   "dogru": true,
+   "aciklama": "Doğru (C012).",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eser 1894'te Sir Henry Tate tarafından ulusa sunuldu.",
+   "dogru": true,
+   "aciklama": "Doğru: Henry Tate Gift 1894 (C005).",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Birincil erişim katmanlarını (canlı meta ↔ Wayback gövde) ve WD boyut/tarih hatalarını kaynak eleştirisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "S4 JS kabuğu",
+    "S6 Wayback künye",
+    "WD P2048/P2049 ters",
+    "WD P571=1851",
+    "birincil esas"
+   ],
+   "kanit": [
+    "C037",
+    "C038",
+    "C006"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Küvet anlatısındaki dört ihtilafı (yaş, ısıtma, hastalık, tazminat) kaynak kaynak karşılaştırın.",
+   "beklenen_ogeler": [
+    "Tate 19 ↔ enwiki 22",
+    "lamba ↔ mum",
+    "cold ↔ bronşit ↔ zatürre",
+    "50 sterlin belirsiz",
+    "so the tale goes"
+   ],
+   "kanit": [
+    "C039",
+    "C041",
+    "C043",
+    "C042"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Provenance zincirini yazın ve arka yüz etiketleriyle eşleştirin.",
+   "beklenen_ogeler": [
+    "Farrer 300 gine",
+    "Graves 748",
+    "Henry Tate 1892",
+    "Henry Tate Gift 1894",
+    "Roberson damga",
+    "NG mülkiyet"
+   ],
+   "kanit": [
+    "C022",
+    "C019",
+    "C023"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "\"İntihar mı kaza mı\" ve kadın-ölüm imgesini tarihsel ↔ modern çerçevede tartışın.",
+   "beklenen_ogeler": [
+    "WD suicide refsiz",
+    "caption allows herself to fall",
+    "Viktorya evlilik eleştirisi",
+    "anakronizm riski",
+    "yorum"
+   ],
+   "kanit": [
+    "C052",
+    "C048"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kafatası ve kemerli üst iddialarını kanıt yetersizliği açısından değerlendirin; görsel teyit önerin.",
+   "beklenen_ogeler": [
+    "itwiki teschio ADO ref",
+    "data tartışmalıdır",
+    "birincil sessiz",
+    "baldacchino atıfsız",
+    "görsel incelenemedi"
+   ],
+   "kanit": [
+    "C051",
+    "C034",
+    "C049"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Ophelia'nın çevresindeki söğüt, gelincik ve papatyayı bulun; simgesel anlamlarını eşleştirin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: söğüt terk edilmiş aşk, gelincik ölüm, papatya masumiyet.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Farklı mevsimlerde açan çiçeklerin yan yana gelişini fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: beş aylık açık hava çalışması.",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Üstten sarkan söğüt dalının Ophelia'yı nasıl çerçevelediğini inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: söğüt Ophelia'nın üzerine eğilir.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Boya yüzeyinin düzgünlüğünü ve yaşlanma çatlaklarını arayın (raking light betimi).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: raking light'ta düzgün yüzey + çatlaklar.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Elbisedeki gümüş işlemeyi inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: gümüş işlemeli antik elbise (4 sterlin).",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Ophelia; Sir John Everett Millais, Bt (1829–1896); 1851–2; tuval üzerine yağlı boya; 76,2×111,8 cm; Tate Britain N01506; Henry Tate Gift 1894.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + kaynak?",
+   "arka": "Hamlet IV.vii; Ophelia babası Polonius'un Hamlet tarafından öldürülmesiyle aklını yitirir, dereye düşer, boğulur; sahne sahnelenmez, Gertrude anlatır.",
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Üretim + model?",
+   "arka": "İki aşama: manzara Hogsmill/Ewell (önce, ~5 ay), figür Gower Street; model Elizabeth Siddal, küvette ~4 ay, lambalar söndü, ağır üşüttü.",
+   "kanit": [
+    "C009",
+    "C010",
+    "C011",
+    "C012",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Teknik?",
+   "arka": "Roberson double canvas (7 Haz 1851, 15 şilin); kurşun beyaz + çinko beyaz astar; saf pigmentler; yeşiller chrome yellow + Prussian blue; 1967 relining.",
+   "kanit": [
+    "C016",
+    "C017",
+    "C018",
+    "C019"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Provenance?",
+   "arka": "Farrer (10 Ara 1851, 300 gine) → Windus → Graves (1862, 748) → Gambart (1864) → Fuller Maitland (1872/1892) → Henry Tate (Eylül 1892) → Henry Tate Gift 1894.",
+   "kanit": [
+    "C022",
+    "C005"
+   ]
+  }
+ ]
+}

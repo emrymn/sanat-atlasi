@@ -1,0 +1,837 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1065493",
+ "sanatci_id": "john-everett-millais",
+ "baslik": "Ophelia",
+ "ozgun_baslik": "Ophelia",
+ "kunye": {
+  "sanatci": "Sir John Everett Millais, Bt",
+  "sanatci_yasam": "1829–1896",
+  "tarih": "1851–2",
+  "tarih_belirsizlik": "Tate birincil 1851–2; WD P571=1851 (DBpedia); enwiki short desc \"1852 painting\" (D2/C038)",
+  "teknik": "Tuval üzerine yağlı boya (Oil paint on canvas)",
+  "boyut_cm": {
+   "yukseklik": 76.2,
+   "genislik": 111.8
+  },
+  "muze": "Tate Britain, Londra (Tate koleksiyonu)",
+  "envanter": "N01506",
+  "edinim": "Presented by Sir Henry Tate 1894 (Henry Tate Gift)",
+  "konum": "Tate Britain — Walk Through British Art (canlı meta 2026: on display)",
+  "telif_durumu": "Kamu malı (PD-old-100-expired; Millais ö.1896); Commons PD-Art; attribution gerekmez"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Arts & Culture / Tate Images N01506)",
+  "lisans": "Public domain (PD-old-100-expired; PD-Art; CC-PD-Mark)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (S7); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "7087 × 4820 px (~23,5 MB)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C049); GZ TASLAK; kompozisyon kaynakların betimlediği (S5/S6 + data S10); DateTimeOriginal \"circa 1851\" korundu"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 419
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1326
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2859
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-erişim-ve-veri-ihtilafları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-bir-zincir"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-üretim-süreci-ve-model-küvet-hastalık-tazminat"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçim-ve-ikonografi-doğa-ölüm-belirsizlik"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-biçim-ve-ikonografi-doğa-ölüm-belirsizlik"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-ve-konservasyon-katmanlar-ışık-arşiv"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Tate birincil kaydıyla künyeyi (1851–2, tuval, N01506, Tate Britain, Henry Tate Gift 1894) doğrular.",
+  "WD boyut yönü/tarih ve data müze ihtilaflarını yönetir; birincili esas alır, tek değer dayatmaz.",
+  "İki aşamalı üretimi, PRB manzara önceliğini ve model/küvet hikâyesini açıklar.",
+  "Astar, pigment ve konservasyon görüntüleme yöntemlerini (raking/IR/UV/X-ray) ilişkilendirir.",
+  "Çiçek sembolizmini olasılık kipli okur; provenance ve alımlama zincirini değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Pre-Rafaelit Kardeşliği (PRB)",
+   "tanim": "Doğaya sadakat, parlak renk, ciddi edebi/modern konular; manzara figür kadar önemli görülür.",
+   "kanit": [
+    "C010",
+    "C015"
+   ]
+  },
+  {
+   "ad": "Double canvas",
+   "tanim": "Roberson'ın iki tuvali tek kasnakta satması; ikinci tuval arka yüzü korur.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Islak beyaz zemin (wet white ground)",
+   "tanim": "Her gün o günkü alanı beyazla işaretleyip bölüm bölüm bitirme olasılığı; saf renk, tek kat.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "İkonografi (çiçek dili)",
+   "tanim": "Oyundaki bitki adları + simgesel anlamlar (söğüt/gelincik/papatya/menekşe); olasılık kipli.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "ad": "Relining",
+   "tanim": "Tuvalin ikinci bir tuvalle desteklenmesi; 1967'de arka tuval kaldırılıp kaydedildi.",
+   "kanit": [
+    "C019"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser: Ophelia, Sir John Everett Millais, Bt (1829–1896), 1851–2.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Malzeme: tuval üzerine yağlı boya (Oil paint on canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Boyut: destek 762 × 1118 mm (76,2 × 111,8 cm); çerçeve 1105 × 1458 × 145 mm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Koleksiyon Tate; envanter N01506.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Sir Henry Tate tarafından 1894'te ulusa sunuldu (Henry Tate Gift).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Tate Britain'da (Londra) sergileniyor (canlı meta 2026; 2022 \"Walk Through British Art: 1840\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Konu: Hamlet IV.vii — Ophelia, babası Polonius'u sevdiği Hamlet'in öldürmesi üzerine aklını yitirip dereye düşer ve boğulur.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Sahne oyunda sahnelenmez; Gertrude'un Laertes'e anlatımıyla bilinir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "İki aşamalı üretim: manzara açık havada Hogsmill Nehri kıyısında (Ewell, Surrey; Temmuz 1851 başlangıç); figür Londra'daki Gower Street atölyesinde.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "PRB ilkesi gereği manzara ÖNCE boyandı (figür kadar önemli görüldü).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Manzara ~5 ayda, doğrudan doğadan boyandı (enwiki: günde 11 saate kadar, haftada 6 gün — B ayrıntı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Model: Elizabeth Siddal (Tate yazımı \"Siddall\"); Deverell şapka dükkânında keşfetti; 1860'ta Rossetti ile evlendi. Yazım varyantı (1853 sonrası \"Siddal\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Siddal, altındaki lambalarla ısıtılan su dolu küvette ~4 ay poz verdi; lambalar söndü, ağır üşüttü; babası hukuki tehditle doktor masraflarını ödetmeyi kabul ettirdi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Elbise: ikinci elden 4 sterline gümüş işlemeli antik elbise; Millais'nin Mart 1852 Thomas Combe mektubu (J.G. Millais I, p.162).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "PRB tekniği: doğrudan doğadan, olağanüstü ayrıntı; ölü/kırık yapraklar da işlendi; botanik profesörü öğrencilerini tablodaki çiçeklere götürdü; fotoğraf (1839) döneminin ötesinde ayrıntı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Tuval: 7 Haziran 1851'de Charles Roberson'dan 15 şiline iki parça (\"double canvas\"); ikinci tuval arka yüzü koruyor.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Astar: kurşun beyaz zemin üzerine çinko beyaz kat (UV kesiti doğrular); günlük \"ıslak beyaz zemin\" üzerine bölüm bölüm bitirme OLASILIĞI (\"It is possible\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Pigmentler: lead white, zinc white, ultramarine ash, vermilion, chromium oxide, zinc yellow, chrome yellow, cobalt blue, Prussian blue, burnt sienna, Naples yellow, madder lake, ivory black, bone black; yeşiller = chrome yellow + Prussian blue.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Konservasyon: raking light'ta az değişiklik + düzgün yüzey + yaşlanma çatlakları; IR'de söğüt kayması; X-ray'de tuval yeniden kullanımı yok (çivi/zımba/rötuş); 1967 relining (arka tuval kaldırılıp kaydedildi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Çiçek sembolizmi: söğüt=terk edilmiş aşk; ısırgan=acı; papatya=masumiyet; gelincik=ölüm; menekşe=sadakat/iffet/genç ölümü; pansy=boşuna aşk/düşünce; gül=\"rose of May\"; unutma beni; mor loosestrife=\"long purples\" (Shakespeare mor orkideyi kastetmişti); crowflower=nankörlük/çocukluk; pheasant's eye+fritillary=keder; meadowsweet \"may signify the futility\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Farklı mevsimlerde açan çiçekler yan yana görünür (5 aylık çalışma nedeniyle).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Provenance: 10 Ara 1851 Henry Farrer 300 gine → B.G. Windus → 1862 Graves 748 → Gambart 1864 → W. Fuller Maitland 1872/1892 → Sir Henry Tate Eylül 1892 → 1894 Henry Tate Gift; Bowerswell mektubu 21 Eyl 1892.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Eser tarihsel olarak National Gallery mülkiyetindeydi; Tate Gallery başlangıçta NG'nin parçasıydı (Millbank ayrı bina) → WD NG1506/Q180788 bununla açıklanır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Sergileme tarihi: 1852 RA+Birmingham; 1853 RSA; 1855 Paris Exposition Universelle; 1864 Manchester; 1872/1873 Paris/South Kensington; 1886 Grosvenor; 1892 Guildhall; 1897 Edinburgh; 1898 RA Winter/Memorial; 1947 Birmingham; 1967 RA→Walker Liverpool; 1972 Paris; 1979–80 Münih; 1984 Tate; 1987 NG ödünç; 1996 Norwich; 1997–98 Washington NGA+Tokyo+Kobe; 2004–5 Berlin/Madrid; 2007–8 Millais (Tate→Amsterdam→Kitakyushu→Bunkamura); 2012–13 Victorian Avant-Garde (Tate→Washington→Moskova→Tokyo).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Çağdaş/modern eleştiri: Morning Chronicle (1852) olumlu (\"startling in its originality\"); The Times (1 May 1852) olumsuz (\"weedy ditch\"); John McEwan (tarih bilinmiyor) fotoğrafı \"out-records\"/ressamın son direnişi (kızılgerdan); Jan Marsh (Literary Review, Haz 1998) en popüler eser + Avustralyalı ziyaretçi gözyaşı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Ruskin tekniği \"exquisite\" buldu ama Surrey manzarasını sorguladı (\"Why the mischief ... wirefenced garden-rolled-nursery-maid's paradise?\"). William James (ed.) 1947 p.176 atıf zinciri (erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Dalí, Minotaure 8 (15 Haz 1936, ss.46–9) Pre-Rafaelitleri \"flagrant surrealism\" diye övdü (dergi atıf zinciri, erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Etki (refsiz giriş): Waterhouse, Peter Blake, Ed Ruscha, Friedrich Heyser.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "Hazırlık eskizleri (1852): Head of Ophelia (with Wreath) — whereabouts unknown; Study for head of Siddal (Birmingham); Study for Ophelia (Plymouth); Slight Sketch (Pierpont Morgan 1973.15 verso).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "WD P180 (depicts) 25 kalem (Ophelia, drowning, willow, nettle, daisy, poppy, rose, pansy, Viola, Lythrum, Siddal, suicide Q10737 refsiz vb.); bir kısmı Tate ref'li (B), bir kısmı yalnız Twitter/refsiz (C).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S8"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C031",
+   "ifade": "Görsel kamu malı: PD-old-100-expired (ölümden 100+ yıl); attribution gerekmez.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Su sıçanı (water vole) erken aşamada boyandı, sonradan ÜZERİ BOYANDI; çerçevenin gizlediği üst köşede kaba eskiz (Telegraph 2007 atıf zinciri).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "itwiki: sahnede kızılgerdan (pettirosso), su sıçanı (ratto d'acqua) ve \"bir kafatası\" (teschio) (ADO web atıf zinciri; birincil sessiz).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "itwiki: lüks imparator baldacchino'sunun üst kısmı için düşünüldü; yatay format + üst köşeler \"smussati\" (pahlanmış). Satır içi atıf YOK; Tate dikdörtgen destek veriyor → doğrulanmadı (E2).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C035",
+   "ifade": "Değerleme: \"en az £30 milyon\" (2007 Telegraph); 300 gine ≈ 2020 ~£40.000 (enflasyon hesaplayıcı, zayıf).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "Natsume Sōseki 1906'da romanında tabloyu övdü; Japonya'da popüler; Tokyo 1998/2008 (sergi tarihleri S5/C024 ile A; Sōseki kitap atıf zinciri Peterson/Williams, erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "D1 BOYUT YÖNÜ: WD P2048=111.8 (height)/P2049=76.2 (width) TERS ↔ Tate 762×1118 mm (Y×G); enwiki 76.2×111.8; itwiki 76,2/111,8. Birincil esas Y76,2×G111,8.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S6",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D2 TARİH: WD P571=1851 (precision 9, DBpedia) ↔ Tate 1851–2; enwiki infobox 1851–1852 ama short desc \"1852 painting\"; itwiki 1851-1852. Birincil 1851–2.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S5",
+    "S6",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D3 MODEL YAŞI: Tate \"aged nineteen\" (19) ↔ enwiki \"then 22 years old\". Çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D4 SU SIÇANI: itwiki sahnede VAR (ADO) ↔ enwiki üzeri boyandı, çerçeve altı eskiz (Telegraph) ↔ birincil S5/S6 sessiz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S2",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D5 KÜVET ISITMA: itwiki \"candele\" (mum) ↔ Tate S5 \"oil lamps\"/S6 \"lamps underneath\"/enwiki \"oil lamps\". Birincil lamba.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D6 TAZMİNAT: itwiki 50 sterlin ÖDENDİ ↔ enwiki baba £50 TALEP, oğluna göre daha düşük kabul ↔ S6 tutar yok \"doctor's bills\" ↔ S5 \"fifty medical bills ... settled\". Kesin değil.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S2",
+    "S6",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D7 HASTALIK: S6/enwiki \"severe cold\" ↔ itwiki \"feroce bronchite\" ↔ S5 (Jan Marsh 1998) \"pneumonia ... so the tale goes\". Marsh kuşkulu aktarıyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S2",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D8 MANZARA NOKTASI: S5/S6 \"Ewell, Surrey\" ↔ enwiki \"near Tolworth\" + Webb \"Six Acre Meadow, Church Road, Old Malden\" (1997). Aynı nehir boyunca farklı noktalar; S5 \"is thought to have painted\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "D9 MÜZE: data \"National Gallery\" ↔ Tate (bugün Tate Britain); WD P195 iki değerli (Tate+NG); S5 tarihsel NG mülkiyetini açıklıyor (C023). Güncel Tate Britain.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S4",
+    "S5",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "D10 PANSY SAHNESİ: itwiki \"Atto IV, scena IV\" ↔ S5 \"Act IV, Scene V\" ('that's for thoughts'). itwiki iç hatası; birincil IV.v.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "D11 TEŞHİR: S5 bayat not \"touring ... not on display until October 2019\" ↔ S4 canlı meta (2026) \"on display at Tate Britain\" ↔ S6 (2022) \"In Tate Britain\". Canlı meta esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S4",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "D12 TATE ETİKET DİLİ: S6 caption (Mar 2022) \"wedding dress\"/\"accidentally kills her father\"/\"she allows herself to fall\" ↔ S5/S6 summary \"ancient dress ... silver embroidery\"; oyun: Hamlet Polonius'u bilinçli bıçaklar. Caption yorumlayıcı; evlilik eleştirisi iddiası.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız Commons metadata+lisans+çözünürlük (7087×4820); GZ TASLAK; kompozisyon \"kaynakların betimlediği\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Kitap/dergi/refs metinlerine ERİŞİLMEDİ (J.G. Millais 1899; Parris 1984/1994; Webb 1997; Peterson/Williams 2012; Murray 2013; Hawksley 2006; James 1947; Radenburg 2008; Hudson 1856; Minotaure 1936; Telegraph 2007); yalnız bibliyografyada anıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S6",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "E1 YAPRAKLARDA KAFATASI: itwiki \"e persino un teschio\" (ADO ref); data \"öne sürülür, tartışmalıdır\"; birincil S5/S6 sessiz → doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S10",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "E3 İNTİHAR MI KAZA MI: WD P180 suicide (Q10737 refsiz); S6 caption \"she allows herself to fall\"; S2 \"loses her sanity and drowns\" → yorum, kesinleştirilmedi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S6",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C053",
+   "ifade": "\"Other Ophelias\" (Tate): Arthur Hughes Ophelia (Manchester; RA 1852 aynı yıl; dereye düşmeden ÖNCE); Waterhouse üç Ophelia (ikincisi 1894; dalda, gelincik/papatya); Reg Butler (1955), Hayter (1936), Maclise \"The Play Scene in Hamlet\" (1842).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "Rossetti \"Beata Beatrix\" (c.1864–70, Tate) S6 \"You might like\" listesinde; model Siddal Rossetti'nin eşi (C012) → aynı model çevresi (yorum).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Alımlama (basın atıf zincirli): Olivier 1948 Hamlet; Nick Cave \"Where the Wild Roses Grow\" videosu (Kylie Minogue pozu); Melancholia 2011 prologu (Kirsten Dunst); Taylor Swift 2025 \"The Life of a Showgirl\" kapağı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q1065493",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1065493.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia EN",
+   "belge": "Ophelia (Millais) wikitext (pageid 1375780)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Ophelia%20(Millais)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia IT",
+   "belge": "Ophelia (Millais) wikitext (pageid 3582983)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Ophelia%20(Millais)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 → ~60 sn backoff → 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Tate",
+   "belge": "Katalog sayfası (CANLI; JS kabuğu, yalnız meta)",
+   "url": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; katalog gövdesi yok",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Tate",
+   "belge": "The Story of Ophelia (CANLI, tam metin)",
+   "url": "https://www.tate.org.uk/art/artworks/millais-ophelia-n01506/story-ophelia",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Tate (Wayback)",
+   "belge": "Katalog arşivi — künye + summary (Terry Riggs Feb 1998) + caption (Mar 2022)",
+   "url": "https://web.archive.org/web/20220512143540/https://www.tate.org.uk/art/artworks/millais-ophelia-n01506",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ARŞİV 2022-05-12 14:35:40",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (GAP dosyası; url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/wiki/File:John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (QID, en/tr)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q1065493&props=labels&languages=en%7Ctr",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S9",
+   "kurum": "Tate (Wayback)",
+   "belge": "Ophelia learning resource dizin arşivi (canlı URL ölü)",
+   "url": "https://web.archive.org/web/20170824043836/http://www.tate.org.uk/learn/online-resources/ophelia",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ARŞİV 2017-08-24 (dizin)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "yerel",
+   "belge": "data/*.json (salt-okunur tarama; DEĞİŞTİRİLMEDİ)",
+   "url": "yerel: data/basyapitlar.json, data/harita.json, data/eserler_onbellek.json, data/eser_ayrintilari.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "salt-okunur",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Ophelia",
+   "sanatci": "Arthur Hughes",
+   "kurum": "Manchester City Art Gallery",
+   "gerekce": "Aynı konu; RA 1852 aynı yıl; Hughes Ophelia'yı dereye düşmeden önce gösterir.",
+   "kanit": [
+    "C053"
+   ]
+  },
+  {
+   "eser": "Ophelia (1894)",
+   "sanatci": "John William Waterhouse",
+   "gerekce": "Üç Ophelia'dan ikincisi; sonraki nesil; dalda oturur, saçına gelincik/papatya takar.",
+   "kanit": [
+    "C053"
+   ]
+  },
+  {
+   "eser": "Beata Beatrix",
+   "sanatci": "Dante Gabriel Rossetti",
+   "kurum": "Tate",
+   "gerekce": "Tate \"benzer eserler\" listesinde (c.1864–70); model Siddal Rossetti'nin eşi → aynı model çevresi, ölüm/aşkınlık teması (yorum).",
+   "kanit": [
+    "C054",
+    "C012"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tate birincil S5 (canlı story, 200) + S6 (Wayback 2022-05-12 künye/summary/caption) + S4 (canlı meta) yeniden açıldı; künye/konu/üretim/model/teknik/pigment/konservasyon/sembolizm/provenance/sergi tarihi doğrulandı. S1 WD yeniden parse edildi: P2048=111.8/P2049=76.2 TERS (D1), P571=1851 (D2), P195 Tate+NG (D9), P180 25 kalem (suicide refsiz). S2/S3 wikitext yeniden okundu: enwiki 22 yaş (D3), water vole painted-out (D4), Ruskin/Dalí atıf zinciri, £30m tahmini, refsiz etki listesi, film/video/kapak; itwiki teschio/candele/baldacchino/bronşit/50 sterlin/Sōseki. 12 ihtilaf D olarak açık. Görsel S7 metadata only → İNCELENEMEDİ (C049); GZ TASLAK. Kitap/dergi metinleri erişilmedi (C050).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih (D2/C038): data \"1851\" ↔ Tate birincil \"1851–2\"; WD P571=1851 (DBpedia) miras alınmış.",
+  "Müze (D9/C045): data \"National Gallery\" ↔ Tate (bugün Tate Britain); WD P195 iki değerli; S5 tarihsel NG mülkiyetini açıklıyor (C023). Ders gövdesi zaten düzeltiyor → alan-gövde tutarsızlığı.",
+  "Boyut (D1/C037): WD P2048/P2049 yükseklik-genişlik TERS; birincil Tate 762×1118 mm esas.",
+  "Kemerli üst (E2/C034): data bolumler[0] \"üstü kemerli\" ↔ S6 dikdörtgen destek; itwiki atıfsız \"smussati\"; birincille doğrulanmadı.",
+  "Kafatası (E1/C051): data bolumler[2] \"öne sürülür, tartışmalıdır\" — veri zaten kuşkulu işaretlemiş; birincil sessiz.",
+  "Görsel (C049): İNCELENEMEDİ; GZ TASLAK; insan editör görsel teyidi zorunlu. Görsel eşlemesi (dd3b9c967e239aa0) doğru.",
+  "Model yaşı (D3/C039), su sıçanı (D4/C040), küvet ısıtma (D5/C041), tazminat (D6/C042), hastalık (D7/C043), manzara noktası (D8/C044): kaynaklar arası; ders tek değer dayatmaz."
+ ]
+}

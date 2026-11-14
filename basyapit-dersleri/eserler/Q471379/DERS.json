@@ -1,0 +1,1052 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q471379",
+ "sanatci_id": "edvard-munch",
+ "baslik": "Çığlık (The Scream)",
+ "ozgun_baslik": "Skrik (The Scream)",
+ "kunye": {
+  "sanatci": "Edvard Munch",
+  "sanatci_yasam": "1863–1944",
+  "tarih": "1893",
+  "tarih_belirsizlik": "NM \"Creation date: 1893\" (A); 1910 MM versiyonu \"no earlier than 1910\" + WD \"probably\" (E1); grup 1893–1910'u kapsar (E12)",
+  "teknik": "Karton üzerine tempera ve fettstift (yağlı kalem) — \"Tempera og fettstift på papplate\" (NM birincil); wiki/Britannica \"oil/pastel/casein\" varyantları ihtilaflı (D2)",
+  "boyut_cm": {
+   "yukseklik": 91,
+   "genislik": 73.5
+  },
+  "muze": "Nasjonalmuseet for kunst, arkitektur og design (National Museum), Oslo",
+  "envanter": "NG.M.00939",
+  "edinim": "Gift from Olaf Schou 1910 (Schou 1910'da satın alıp hemen bağışladı)",
+  "konum": "Room 060 — The Collection Exhibition - Edvard Munch",
+  "telif_durumu": "Kamu malı (Munch ö.1944; Commons PD, AttributionRequired false); görsel yeniden yayımlanmadı, URL+lisans referans"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg",
+  "kaynak": "Wikimedia Commons (credit: National Museum of Art, Architecture and Design); grup P18 = 1893 NM versiyonu",
+  "lisans": "Public domain (pd; AttributionRequired: false)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (S10); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "3223×4000 px (~11,4 MB)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C070); GZ TASLAK; kompozisyon S6 (A) + S4/S5/S12 (B) metninden; dosya adı tekniği müze kaydıyla uyuşmaz (D2); Q18891156 preferred P18 farklı dosya"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 462
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1401
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2725
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kayıt-ve-ihtilaflar"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-kuşku-işaretleri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-erken-eleştiriler"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#5-teknik-malzeme-analizi-ve-ihtilaflar"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-tartışması-çığlığı-kim-atıyor"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-malzeme-analizi-ve-ihtilaflar"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Q471379'un resim grubu olduğunu ve ders nesnesinin 1893 National Museum versiyonu (NG.M.00939) olduğunu ayırt eder; diğer üç versiyonla karıştırmaz.",
+  "Müze birincil kaydıyla künyeyi (tempera+fettstift/karton, 91×73.5, Schou 1910 bağışı) doğrular; wiki/Britannica teknik varyantlarını (D2) yönetir.",
+  "\"Deli\" yazısının atıf tarihçesini (1904 izleyici teorisi → 2008 \"someone else\" → 2020 IR+grafoloji Munch) ve 1895 Blomqvist/Scharffenberg bağlamını açıklar.",
+  "Şiir (MM T 2367) ile ikonografi tartışmasını (figür mü doğa mı çığlık atıyor, D3) analiz eder; birincil belge ile ikincil yorumu ayırır.",
+  "Versiyonlar, hırsızlıklar (1994/2004), 2012 satışı ve sembolizm→ekspresyonizm geçişini kaynaklı değerlendirir; belirsizlikleri (E1/E2) korur."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Fettstift (grease crayon / yağlı kalem)",
+   "tanim": "Yağ/mum bağlayıcılı kalem; müze kaydındaki \"Tempera og fettstift på papplate\" tekniğinin bileşeni.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "Tempera",
+   "tanim": "Yumurta ya da su bazlı bağlayıcılı pigment; bu eserde karton (papplate) destek üzerine uygulanmıştır.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "Livsfrisen (Frieze of Life / Hayatın Frizleri)",
+   "tanim": "Munch'un aşk, kaygı ve ölüm temalarını işleyen döngüsü; Çığlık bu serinin parçasıdır.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Prosadikt (prose poem)",
+   "tanim": "Düzyazı biçiminde şiir; Munch'un 1892 tarihli MM T 2367 notu tablonun temasını önceler.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "IR + grafoloji",
+   "tanim": "Kızılötesi fotoğraf (karbonu boyadan ayırır) + el yazısı incelemesi; 2020 NM & MM çalışması yazının Munch'a ait olduğunu doğruladı.",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Q471379 bir RESİM GRUBUDUR (WD P31 \"group of paintings\"); dört ana versiyon: iki boyalı (1893 NM, 1910 MM), iki pastel (1893 MM, 1895 özel); ayrıca 1895 siyah-beyaz litografi. S6: \"The Scream exists in two painted versions... two further versions exist in pastels... Munch also produced a lithographic version in black and white in 1895.\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S6",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Ders nesnesi 1893 boyalı versiyon (Q18891156): Nasjonalmuseet Oslo, NG.M.00939, 91×73.5 cm, \"Creation date: 1893\", Object type Painting, Room 060 \"The Collection Exhibition - Edvard Munch\". data görseli (grup P18) bu versiyondur.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "1893 pastel Munch Museum'da (Oslo); imzasız/tarihsiz, 1893'e tarihlenir (Woll M 332); \"ön çalışma olabilir\" (S4 \"may have been a preliminary study\" — kuşku korunur, E2); WD envanter MM.M.00122b, 74×56 (yardımcı; MM birincil kataloguna erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S6",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "1895 pastel imzalı ve 1895 tarihli (Woll M 327); çerçevenin alt kısmındaki küçük panelde prose poem'in bir varyantı yazılı; özel koleksiyonda (S4/S12).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S4",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "1910 boyalı versiyon Munch Museum'da; müze \"no earlier than 1910 (Woll M 896)\" der — kuşku ifadesi korunur (E1); WD P1480 \"probably\"; envanter MM.M.00514, 83.5×66 (WD/itwiki; MM kataloguna erişilmedi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Sanatçı Edvard Munch (1863–1944; yaşam tarihleri WD/Commons).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Teknik/malzeme (1893 NM): \"Tempera og fettstift på papplate\" — karton (papplate) üzerine tempera + fettstift (grease/wax crayon, yağlı kalem); Material: Papplate. WD Q18891156 tempera+mum kalem+karton. Wiki/Britannica varyantları D2.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "İmza \"E. Munch 1893\" sol altta (\"nede venstre\"); çift imza, biri diğerinin üstünde; arka yüzde kaba eskiz versiyonu (\"rudimentary sketch version on the back\"). S7 arka yüzdeki kısmi kompozisyonun reddedilip yüzeyin çevrildiğini anlatır (\"canvas\" der; destek S6'ya göre karton, D2).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Sol üstte kurşun kalemle \"Kan kun være malet af en gal Mand!\" (\"Can only be painted by a madman!\"); NM & MM 2020 çalışması (IR kamera + grafoloji) yazının Munch'un kendi elinden olduğunu doğruladı; Guleng: \"There is no doubt that the inscription is Munch's.\" Kalem çizgileri boyanın fiziksel olarak üstünde (resim bittikten sonra).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Yazı ilk kez 1904 Kopenhag sergisinde anıldı; Danimarkalı eleştirmen bir izleyicinin yazdığını sandı; 2008'e dek çoğu araştırmacı \"probably added by someone else\" (Woll 2008, 316).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "E3 Yazının zamanı TEORİSİ: Guleng \"The theory is that Munch wrote this after hearing Scharffenberg's judgment on his mental health, sometime in or after 1895\"; Munch \"was probably present himself that evening\". Kuşku korunur; kesinleşmiş olgu değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C012",
+   "ifade": "Prose poem: MM T 2367, \"Datert 1892. Notat.\", Skrik metinli çizim; orijinal Norveççe \"og jeg følte det gik et stor{e}t uennelig\\t/ skri{g}k gjennom naturen\"; S6 İngilizce çevirisi editoryal işaretlerle ({I went}, ‹in›, gre{a}t infinit\\e/ scre{a}m). Çığlık doğadan geçer, figür kaygıyla titrer.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Günlük girişi \"Nice 22 January 1892\" başlıklı (S4; DailyArt Magazine ref zinciri); itwiki yürüyüşü 1889 yazına tarihler (D4).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Manzara: Ekeberg tepesinden Kristianiafjord (Oslofjord); solda arka planda iki adam (şiirde \"iki arkadaş\") yürüyor.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "İlk sergi: Galerie Unter den Linden, Berlin, 1893 (yapıldığı yıl), o sırada \"Verzweiflung (Despair)\" adıyla; 1894 Przybyszewski (ed.) ilk Munch kitabında \"Die Verzweiflung\" olarak erken \"Love Series\" içinde; alıntı \"... the final tableau from a terrible battle between the brain and sex, from which the latter has emerged victorious\". Başlık ihtilafı D1.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Öncül: Syk stemning ved solnedgang. Fortvilelse (Sick Mood at Sunset. Despair), 1892 (Woll M 264); renk/format/kompozisyon örtüşür; ana figür şapkalı-paltolu belirli bir erkekten kategorize edilmesi güç şematik bir yüze dönüşür; figür izleyiciye cepheye çevrilir → \"confrontational and immediately communicative\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Frieze of Life (Hayatın Frizleri / Livsfrisen) döngüsü bağlamı; 1893'te aynı yıl seride sergilendi (S4); itwiki \"Fregio della vita\"; NM sergi listesinde \"Edvard Munch. The Frieze of Life\" (Japonya 1993, Londra 1992–93).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Evrensel kaygı/yabancılaşma ikonu; Lubow (Smithsonian 2006): \"an icon of modern art, a Mona Lisa for our time\"; S6 \"often interpreted as a universal expression of anxiety and alienation\"; S12 \"icon of the anxiety of modern life\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Sembolizmden 20. yy ekspresyonizmine dönüm noktası: \"a pivotal work in the evolution from symbolism to the expressionist art of the 20th century\"; form-içerik birliği. Akım etiketi ihtilafı E8.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "1895 litografi (siyah-beyaz); Related object: \"The Scream\", Edvard Munch, A. Liebmann Buch u. Steindruckerei; \"Platen utført 1895; trykket 1895\". Baskı sayısı D7.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "1895 pastel: Sotheby's New York, 2 Mayıs 2012, ~120 milyon dolar (NYT Vogel $119.922.600; WSJ Crow $119.922.500 — kaynak içi ihtilaf D15); alıcı Leon Black; satıcı Petter Olsen; Hugo Simon mirasçıları itiraz etti (1937 dolaylarında Nazi dönemi baskı altında satış). S12 \"close to $120 million\". Açık artırma yeri D9.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "1994 hırsızlığı: 12 Şubat 1994 (Lillehammer Kış Olimpiyatları açılış günü), National Gallery Oslo; not \"Thanks for the poor security\"; tablo Olimpiyat için ikinci kata taşınmıştı; Mart 1994 $1M fidye reddi; İngiliz SO10 + Getty destekli sting; 7 Mayıs 1994 hasarsız kurtarma; Ocak 1996 dört mahkûmiyet (Pål Enger dahil), istinafta tahliye (İngiliz ajanlar sahte kimlikle Norveç'e girmiş). S6 (A): \"In 1994 it was stolen but returned to the museum the same year\". itwiki detayları E11.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "2004 hırsızlığı: 22 Ağustos 2004, Munch Museum; 1910 versiyon + Madonna; silahlı maskeli kişiler; 31 Ağustos 2006 kurtarma; sol alt köşede nem hasarı; konservasyon; 23 Mayıs 2008 \"Scream and Madonna – Revisited\" sergisi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "1893 versiyon malzeme analizi (2010): kadmiyum sarısı, vermilyon, ultramarin, viridian (Singer, Aslaksby, Topalova-Casadiego, Tveit, Studies in Conservation 55:1–19; ColourLex — metne erişilmedi, atıf zinciri).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "E5 Kızıl gökyüzü hipotezleri: Krakatoa 1883 (Olson et al.; itwiki \"priva di una concreta base\" diye reddeder), nacreous bulutlar (Fikke 2017; Prata/Robock/Hamblyn 2018), mezbaha + tımarhane yakınlığı (Slate). Tümü hipotez; bibliyografik tutarsızlık E5.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C026",
+   "ifade": "E6 Figür modeli Peru mumyası hipotezi: Rosenblum 1978 \"suggested\" (1889 Paris Exposition Universelle; Gauguin bağlantısı); Mannucci 2004 Floransa La Specola; S12 \"It is conjectured... Inca mummy\"; itwiki Musée de l'Homme/Trocadéro; çürütme Ziemendorff 2015 (Munch Floransa'ya tablodan sonra gitti).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C027",
+   "ifade": "Kız kardeş Laura Munch, Gaustad Psikiyatri Hastanesi'ne yatırılmıştı; baba ve büyükbaba \"melancholy\"; Munch ailede kalıtsal hastalık fikrinden endişeliydi. (S4 \"Laura Catherine\" + Ekeberg eteğindeki tımarhane der — Indian Express ref; adlandırma varyantı not.)",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "E7 \"Panik atak\" yorumu: S4 \"Some scholars believe... Munch was describing a panic attack\" (Britannica+Brummell+artmejo+FarOut ref); erişilen S12 kopyasında \"panic\" geçmiyor → atıf doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C029",
+   "ifade": "Popüler kültür: emoji 😱 (S6 A \"It even has its own emoji\"); Warhol 1983–84 serigrafileri; 2013 Norveç pulları (Munch 150); Home Alone afişi; Doctor Who Silents.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S6",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Ghostface maskesi tablodan İLHAM ALMADI (S4; Fangoria 2000; Brigitte Sleiertin, Fun World, 1991; Max Fleischer çizgi filmleri); itwiki tersini söyler (D8).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "1908'de akıl hastalığı ve sanat üzerine bir kitabın kapağında çoğaltıldı; \"immediate sensation, reproduced widely in art magazines\" (S12).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "2008: Idemitsu Petroleum Norge, konservasyon/araştırma/sunum için 4M NOK vakıf bağışı (Ødegaard, Foreword, The Scream, Munch Museum 2008 — kaynakçada anıldı, metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "1895 pastel MoMA'da Eki 2012–Nis 2013; 1893 pastel Van Gogh Museum'da 2015 sergilendi (NYT Vogel + MoMA + Guardian ref zinciri).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "data \"iki boyalı, iki pastel ve birçok taşbaskı sürümü\" S6/S4 ile uyumlu (baskı sayısı D7).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Yazı çalışması: NM & MM 2020 (S6); NYT 21 Şubat 2021 duyurusu (S4 Siegal); S7 sayfası 2022 açılışı öncesi yayımlanmış. data \"2021\" = duyuru yılı (E4).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Provenans 1901: NG komite 18.10.1901 satın alma önerisi; Munthe→Munch mektup 14.10.1901 (MM K 720): \"'The Scream' or the other one you call 'Anxiety'\"; 29.10.1901: NG veya Olaf Schou'ya ilk satış hakkı + yurtdışına götürmeme sözü; Munch satmak istemiyordu ya da fiyat çok yüksekti; söze rağmen 1901–1910 Berlin/Leipzig/Kopenhag/Prag sergileri.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Edinme: Olaf Schou 1910'da satın alıp hemen bağışladı (\"Gift from Olaf Schou 1910\"); Norveçli uzmanlar Norveç mülkiyetini güvenceye almak istedi; NG'de ödünç dönemleri dışında sürekli sergide; 1960–70'lerde sık ödünç, sonra kısıtlandı; son ödünç Japonya 1993.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "İkon statüsü 1970'lerden bugüne büyüdü; 20. yy ilk yarısı akademik literatürde seyrek çoğaltıldı; Munch ve NG eseri gelişimin merkezinde gördü; 1910'a dek çoğu solo sergide yer aldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "İlk Norveç sergisi: Blomqvist, Kristiania, Ekim 1895; Grosch eleştirisi (\"consider Munch a serious man with a normal brain\"); Student Society tartışma gecesi; Obstfelder destekledi; tıp öğrencisi Johan Scharffenberg, Self-Portrait with Cigarette'ye dayanarak Munch'un akıl sağlığını sorguladı; Munch muhtemelen oradaydı; 1930'larda notları öz-savunma dolu; Self-Portrait with Cigarette 1895 sergisi sonrası NG tarafından satın alındı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Literatür dönüm noktaları: Reinhold Heller 1973 ilk kapsamlı akademik çalışma; Munch Museum 2008 tema temelli versiyon analizi; Tøjner & Gundersen 2013 \"Skrik. Historien om et bilde\". Katalog metni: Vibeke Waallann Hansen; ilk yayım \"Edvard Munch in the National Museum\" (Oslo, 2022).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "1893 versiyon Berlin ile Åsgårdstrand (Norveç) arasında yapıldı (S4 Artchive ref); aynı yıl Frieze of Life serisinde sergilendi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "NM ilgili çizim: \"Skisse til Skrik\", \"Antagelig 1893\" (müzenin kendi \"probably\"si korunur); recto ilişkisi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "S12 biçimsel betim: dalgalı çizgiler şok dalgaları gibi merkez figüre baskı yapar; figür sallanan bir forma, yüzü açık ovalardan oluşur; düz patika ile karşıtlık; iki arkadaş uzaklaşır, \"unscathed\" → travma dış dünyadan değil kendi zihninden.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "itwiki biçimsel analiz: tamamlayıcı renkler (kırmızı-yeşil, mavi-turuncu); sıcak tonlar üstte; açık renkler yüz çevresinde; arka plan eğrisel ↔ korkuluk diyagonalleri; figürün kıvrımı arka planla yankılanır; iki figür dikey; korkuluk figürü peyzajdan ayırır. (Refs arteweb/geometriefluide — metne erişilmedi.)",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "S6 figür bilmecesi: \"Is the figure we see a woman or a man? Is it wearing a black coat, or a dress? Is it a skull or a face we are looking at? Why doesn't the figure have hair?\" → \"visual enigma\"; teknik + detay eksikliği hızlı/spontane izlenimi; oysa uzun süre eskiz çalışılmış; canlı, gerçekçi olmayan renkler; form-içerik birliği.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "D1/D12 İlk sergi adı/\"orijinal ad\": S6 (A) Berlin 1893 \"Verzweiflung (Despair)\" + Przybyszewski 1894 \"Die Verzweiflung\" ↔ S4 \"Der Schrei der Natur\" ↔ S12 \"first version untitled, second Geschrei\" ↔ WD P1476 Skrik/Der Schrei der Natur/L'urlo ↔ S10 ObjectName \"Der Schrei der Natur\" ↔ data/biyografiler hem \"ilk adı ile Umutsuzluk\" hem \"Orijinal adı Doğanın Çığlığı\" (kendi içinde çelişkili). Müze kaydı esas; başlık tarihçesi ihtilaflı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S4",
+    "S12",
+    "S1",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "D2 Teknik/malzeme: S6 (A) \"Tempera og fettstift på papplate\" ↔ S4 infobox \"Oil, tempera, pastel, and crayon on cardboard\" ↔ S5 \"olio, tempera, pastello su cartone\" ↔ S12 \"tempera and casein on cardboard\" ↔ S10 dosya adı \"oil, tempera and pastel\" ↔ S7 \"canvas\" ifadesi. \"Oil\"/\"pastel\"/\"casein\" müze kaydında YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S4",
+    "S5",
+    "S12",
+    "S10",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "D3 İkonografi (çığlığı kim atıyor?): S5 \"Il soggetto urlante è la figura in primo piano... per emettere il grido (e non per proteggersene) si comprime la testa con le mani\" (figür çığlık ATAR) ↔ S4/S6/S9 çığlık doğadan geçer, figür kaygıyla titrer (data: kulaklarını kapatır) ↔ S12 \"the trauma came from his own mind rather than the world outside\". data/eser_notlari \"çığlık atan figür\" ↔ data/harita_motifler \"Çığlığı atan figür değil, doğanın kendisidir\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S4",
+    "S6",
+    "S9",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "D4 Yürüyüşün tarihi: S4 günlük \"Nice 22 January 1892\" + S9 \"Datert 1892\" ↔ S5 \"l'episodio risalirebbe all'estate del 1889\" (Heller 1993 ref); iki figür = Christian Krohg + Frits Thaulow (S5).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S9",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "D5 1910 versiyon boyutu: S5 metin \"83×66 cm\" ↔ S5 görsel altı \"83.5×66 cm\" ↔ S2 83.5×66. MM birincil kaydına erişilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "D6 1895 pastel desteği: S5 metin \"pastello su tavola\" ↔ S5 görsel altı \"pastello su cartone\" ↔ S2 pastel + cardboard (P518 support).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "D7 Litografi baskı sayısı: S4 \"Only approximately four dozen prints\" (galeri altı \"About 45 prints\") ↔ S12 \"some 30 prints\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C053",
+   "ifade": "D8 Ghostface: S4 \"not inspired by the Munch painting\" (Fangoria 2000) ↔ S5 \"All'Urlo si ispirano sia l'emoji... che la maschera di Scream\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C054",
+   "ifade": "D9 Açık artırma yeri: S5 \"casa d'asta londinese Sotheby's\" ↔ S4 \"Sotheby's in New York\" (NYT ref).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C055",
+   "ifade": "D10 Yazının yeri/atıf tarihçesi: S12 \"on a copy of the picture, Munch wrote\" ↔ S6/S7 (A) NM orijinalinin kendisinde, sol üst; 2008 \"probably someone else\" → 2020 IR+grafoloji Munch'u doğruladı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S12",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C056",
+   "ifade": "D11 1910 versiyon desteği: S12 \"in 1910 he painted another canvas\" ↔ S2 cardboard ↔ S5 \"tempera su pannello\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S12",
+    "S2",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C057",
+   "ifade": "D13 \"Köprü\" mü \"patika\" mı: data/eser_notlari \"Köprüde çığlık atan figür\" ↔ S5 \"un sentiero in salita sulla collina di Ekberg... spesso confuso con un ponte\" (korkuluklu patika, köprüyle karıştırılır) ↔ S6 path/fence. (S5 \"Ekberg\" ↔ S6 \"Ekeberg\" yazımı.)",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C058",
+   "ifade": "D14 1893 pastelin malzemesi (WD içi): Q18891155 description \"pastel drawing\" ↔ P186 Q69158 (wax crayon); S4/S6 \"pastel\" der. Olduğu gibi kaydedildi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C059",
+   "ifade": "D15 (Denetim B'de yeni bulundu) Açık artırma fiyatı enwiki içi: Versions \"$119,922,600\" (NYT) ↔ Record sale \"US$119,922,500, including the buyer's premium\" (WSJ). Kesin tutar quiz konusu yapılmaz; \"yaklaşık 120 milyon\" (S12) kullanılır.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C060",
+   "ifade": "E1 1910 tarihi: S6 \"no earlier than 1910 (Woll M 896)\"; S2 P1480 \"probably\"; S4 Ydstie 2008 alıntısı \"presumes that 1910 is a more probable date of origin\" (metne erişilmedi). Kesinleştirme YOK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S2",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "E2 1893 pastel: S4 \"may have been a preliminary study\"; S6 \"lacks a signature and year, but has also been dated to 1893 (Woll M 332)\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C062",
+   "ifade": "E4 Çalışma/duyuru tarihi: S6 \"(National Museum and Munch Museum 2020)\"; S7 \"when the new National Museum opens in 2022\"; S4 NYT 21.02.2021. data \"2021\" = duyuru yılı; çalışma 2020.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C063",
+   "ifade": "E5 Kızıl gökyüzü bibliyografik tutarsızlık: S4 Olson et al. APS News 13(5) \"May 2005\" (URL 200405) ↔ S6 Literature \"Olson, Donald W., et al. 'When the sky ran red...' Sky and Telescope, februar, 2004. 29–30\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C064",
+   "ifade": "E8 Akım etiketi: S2 P135 Expressionism ↔ S4 infobox \"Proto-Expressionism\" ↔ S6 sembolizm→ekspresyonizm geçişi ↔ S12 \"precursor to Expressionism\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S6",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C065",
+   "ifade": "E9 itwiki Engramma atfı iç tutarsızlık: metin içi \"n. 43, settembre 2005\" ↔ bibliyografya \"n. 180, marzo/aprile 2021, pp. 298-306\" (Eva Di Stefano); metne erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C066",
+   "ifade": "E10 data görsel iddialar: \"bazı yerlerde boyanmamış karton görünür\", \"iki tekne\", imza okunaklılığı — görsel İNCELENMEDİ; S6 metninde açık ifade yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C067",
+   "ifade": "E11 1994 hırsızlık itwiki detayları: \"rubando l'opera in soli cinquanta secondi\", \"ritrovata integra tre mesi dopo in un albergo di Åsgårdstrand\" (Lonely Planet 2014 s.50 ref) — S4 sting anlatısıyla farklı; otel bilgisi doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C068",
+   "ifade": "E12 WD grup sadeleştirmeleri: P571=1893 (grup 1893–1910'u kapsar); P195 yalnız National Museum (parçalar MM/özel); P9121 deprecated; grup düzeyinde P217/P186/P6216 yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C069",
+   "ifade": "E13 S9 fiziksel tanım: \"På tegnepapir. Mål [mnglr.]\" (ölçü eksik) — olduğu gibi korundu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C070",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız metadata + lisans + çözünürlük (S10, PD, 3223×4000); GZ TASLAK; kompozisyon S6 (A) + S4/S5/S12 (B) metninden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C071",
+   "ifade": "Erişilemeyenler: Britannica canlı 403 → Wayback 2026-11-03 (S12); MM tablo katalog URL'leri refs'te bulunamadı (tahmin edilmedi); Sotheby's lot kaydı URL'siz; kitap/makale metinleri erişilmedi (Singer 2010, Ydstie 2008, Heller 1973, Woll 2008, Tøjner 2013, Aslaksby 2015, Ford 2021, Przybyszewski 1894, Fikke 2017, Prata 2018, Dolnick 2005, Hart 2004, Di Stefano, ColourLex vb.) — yalnız erişilen kayıtların bibliyografyasında görüldü.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11",
+    "S12",
+    "S4",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C072",
+   "ifade": "Felsefi/estetik yorum: itwiki fin-de-siècle karamsarlığı, Freud'un bilinçdışı araştırmaları ve Kierkegaard'ın yalnızlık/kaygı felsefesiyle bağ kurar (atıfsız); Di Stefano \"Pathosformel moderna\" okuması (Engramma atfı tutarsız, E9). Bu bağlar doğrulanmış tarihsel etki iddiası DEĞİL, yorum olarak sunulur.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C073",
+   "ifade": "WD grup düzeyi P180 (man, Oslofjord, sky, screaming) + P135 Expressionism refsiz yardımcı veri; müze metniyle kısmen uyumlu, ikonografi \"screaming\" D3'e tabi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q471379 (grup)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q471379.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities (4 versiyon + koleksiyon/malzeme QID'leri)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q41406%7CQ1132918%7CQ3330707%7CQ18573970%7CQ80113%7CQ8441%7CQ667456%7CQ527%7CQ1932016%7CQ3305213%7CQ18891155%7CQ18891156%7CQ18891157%7CQ18891158&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wbgetentities)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels-2 (malzeme/özellik etiketleri)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q69158%7CQ18668582%7CQ175166%7CQ189085%7CQ296955%7CQ844926%7CQ768717%7CQ56644435%7CQ109608695%7CQ71535331%7CQ123741638%7CQ861259%7CP9121%7CP13772%7CP4342%7CP1417&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wbgetentities)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia EN",
+   "belge": "The Scream (wikitext; satır içi akademik atıf zincirleri)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Scream&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikipedia IT",
+   "belge": "L'urlo (wikitext)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=L%27urlo&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Nasjonalmuseet",
+   "belge": "Birincil nesne kaydı NG.M.00939 + katalog metni (Vibeke Waallann Hansen; ilk yayım Edvard Munch in the National Museum, Oslo 2022) + Work details + Exhibitions + Literature",
+   "url": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı tam metin",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Nasjonalmuseet",
+   "belge": "Makale: \"Could only have been painted by a madman!\" (Alv Hågård Gustavsen; Guleng/Ford röportajı)",
+   "url": "https://www.nasjonalmuseet.no/en/stories/explore-the-collection/munch-malet-av-gal-mann-engelsk/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı tam metin",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Nasjonalmuseet",
+   "belge": "Eski .ips kaydı (S5 external link) → S6'ya yönleniyor",
+   "url": "https://www.nasjonalmuseet.no/en/collections_and_research/our_collections/edvard_munch_in_the_national_museum/The+Scream,+1893.b7C_wljU1a.ips",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 → S6 redirect (özdeş)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Munchmuseet (eMunch arşivi)",
+   "belge": "MM T 2367 — \"Datert 1892. Notat.\" Skrik-tekstli çizim, orijinal Norveççe metin",
+   "url": "https://emunch.no/HYBRIDNo-MM_T2367.xhtml",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı tam metin",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: grup P18 dosyası (lisans/credit/çözünürlük)",
+   "url": "https://commons.wikimedia.org/wiki/File:Edvard_Munch,_1893,_The_Scream,_oil,_tempera_and_pastel_on_cardboard,_91_x_73_cm,_National_Gallery_of_Norway.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (imageinfo); İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "Britannica",
+   "belge": "The Scream (canlı deneme)",
+   "url": "https://www.britannica.com/topic/The-Scream-by-Munch",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (canlı bot-engelli; Wayback S12 kullanıldı)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Britannica (Wayback)",
+   "belge": "The Scream (Iain Zaczek; \"Last updated Nov. 1, 2026\") — arşiv kopyası",
+   "url": "http://web.archive.org/web/20261103082540/https://www.britannica.com/topic/The-Scream-by-Munch",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2026-11-03T08:25:40Z)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Internet Archive",
+   "belge": "Wayback availability sorgusu (S11 için)",
+   "url": "https://archive.org/wayback/available?url=https://www.britannica.com/topic/The-Scream-by-Munch",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wayback/available)",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Syk stemning ved solnedgang. Fortvilelse (Sick Mood at Sunset. Despair)",
+   "sanatci": "Edvard Munch",
+   "gerekce": "Doğrudan öncül (1892, Woll M 264); renk/format/kompozisyon örtüşür, ana figür dönüşür ve cepheye çevrilir.",
+   "mufredat_ici": false,
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "eser": "Madonna",
+   "sanatci": "Edvard Munch",
+   "gerekce": "2004'te 1910 Çığlık versiyonuyla birlikte çalındı, 2006'da birlikte kurtarıldı; aynı konservasyon süreci.",
+   "mufredat_ici": false,
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "eser": "Self-Portrait with Cigarette",
+   "sanatci": "Edvard Munch",
+   "gerekce": "Scharffenberg'in 1895'te Munch'un akıl sağlığını sorgularken dayanak yaptığı tablo; NG 1895 sergisi sonrası satın aldı.",
+   "mufredat_ici": false,
+   "kanit": [
+    "C039"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Nasjonalmuseet birincil (S6 nesne kaydı + S7 \"madman\" makalesi, canlı 200 tam metin; S8 özdeş redirect) + eMunch MM T 2367 (S9, canlı 200) yeniden açıldı; künye/teknik/imza/yazı/provenance/sergi/öncül doğrulandı. Britannica canlı 403 → Wayback 2026-11-03 (S12) yeniden okundu. en/it wikitext (S4/S5) yeniden okundu; Wikidata grup+4 versiyon (S1/S2) ve Commons imageinfo (S10) doğrulandı. 15 ihtilaf D (C046–C059; D15 fiyat enwiki içi YENİ bulundu), 16 belirsizlik E açık; hedge'ler (no earlier than / probably / may have been / conjectured) korundu. Görsel S10 metadata only → İNCELENEMEDİ (C070); GZ TASLAK. MM tablo katalog URL'leri refs'te yok (tahmin edilmedi); kitap/makale metinleri erişilmedi (C071).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Q471379 data/basyapitlar.json'da tek eser gibi işlenmiş (1893, National Museum); oysa QID RESİM GRUBU. Görsel ve müze 1893 NM versiyonuna (Q18891156) ait; ders versiyonu açıkça belirtir (C001/C002/C068).",
+  "data/biyografiler: \"ilk adı ile Umutsuzluk\" ↔ aynı metin \"Orijinal adı Doğanın Çığlığı\" (kendi içinde çelişki, D12); müze ilk sergi adı \"Verzweiflung\" (C015/C046).",
+  "data/harita_motifler + eser_ayrintilari: \"2021'de doğrulanmıştır\" → çalışma 2020 (S6), duyuru 2021 (NYT); E4 nüansı (C035/C062).",
+  "data/eser_notlari: \"Köprüde çığlık atan figür\" → D3 (figür mü doğa mı) + D13 (köprü mü patika mı); itwiki patika der, köprüyle karıştırılır (C048/C057).",
+  "data/eser_ayrintilari + basyapitlar: \"bazı yerlerde boyanmamış karton görünür\", \"iki tekne\" → görsel İNCELENMEDİ, S6'da açık ifade yok; E10 (C066).",
+  "data/eserler_onbellek: görsel lisans alanı \"l\":\"\" boş → Commons PD teyitli (S10); doldurma önerisi ana oturuma.",
+  "Teknik: data \"karton üzerine tempera ve boya kalemi\" müze \"Tempera og fettstift på papplate\" ile uyumlu (C007); wiki/Britannica \"oil/pastel/casein\" varyantları D2 (C047).",
+  "Açık artırma: data \"119,9 milyon dolar\" uyumlu; kesin tutar enwiki içi ihtilaflı $119.922.600 (NYT) ↔ $119.922.500 (WSJ), D15 (C059); yer itwiki \"Londra\" ↔ enwiki \"New York\", D9 (C054).",
+  "data/yerel_gorseller: commons:Edvard_Munch,_1893,... → 409de8256c60fe8d; grup P18 ile aynı dosya (S10). Q18891156 preferred P18 FARKLI dosya (\"Edvard Munch - The Scream.jpg\").",
+  "data/kunye: Q471379 için eser düzeyi kayıt yok (yalnız sanatçı edvard-munch); uyumsuzluk yok. Hiçbir data/ dosyasına yazılmadı."
+ ]
+}

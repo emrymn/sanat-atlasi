@@ -1,0 +1,566 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q328523",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün kalıcı olarak nerede sergilenmektedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Musée Marmottan Monet, Paris"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée d'Orsay, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "National Gallery of Art, Washington"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil müze kaydı ve EN Collections: eser Marmottan'da, inv. 4014 (S5/S6).",
+   "yanlis_gerekceleri": {
+    "B": "Orsay yalnızca 2024'te geçici loan alanıdır (26 Mart–14 Temmuz 2024); kalıcı yer değil.",
+    "C": "Louvre eserin sahibi değildir; tablo Marmottan koleksiyonundadır.",
+    "D": "Washington NGA 2024–25 loan alanıdır; kalıcı yer değil."
+   },
+   "kanit": [
+    "C006",
+    "C031"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin Marmottan envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "4014"
+    },
+    {
+     "harf": "B",
+     "metin": "98"
+    },
+    {
+     "harf": "C",
+     "metin": "55"
+    },
+    {
+     "harf": "D",
+     "metin": "146"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 birincil kayıt: inv. 4014.",
+   "yanlis_gerekceleri": {
+    "B": "98, 1874 sergi katalog numarasıdır; envanter değil.",
+    "C": "55, 1878 Hoschedé satış numarasıdır.",
+    "D": "146, 1879 dördüncü İzlenimci sergi numarasıdır."
+   },
+   "kanit": [
+    "C006",
+    "C012",
+    "C021",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tekniği ve desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlı boya"
+    },
+    {
+     "harf": "B",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt üzerine pastel"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 \"toile (peinture à l'huile)\"; S7 \"Oil on canvas\".",
+   "yanlis_gerekceleri": {
+    "B": "Destek tuvaldir, pano değil; bağlayıcı yağdır, tempera değil.",
+    "C": "Fresk duvar tekniğidir; eser tuval üzerine yağlıboyadır.",
+    "D": "Eser pastel değil yağlıboyadır; Monet'nin 7 pasteli 1874 katalogda ayrı eserlerdir."
+   },
+   "kanit": [
+    "C003",
+    "C012"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Birincil müze kaydına göre çerçevesiz boyut nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "50 × 65 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "48 × 63 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "75 × 91 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "62 × 66 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5/S7 birincil: H. 50 cm ; l. 65 cm (sans cadre).",
+   "yanlis_gerekceleri": {
+    "B": "48 × 63, referanssız ikincil kaynakların (WD/wiki/Commons) verdiği değerdir; birincil ölçü değil.",
+    "C": "75 × 91, çerçeveli ölçüdür (avec cadre); çerçevesiz boyut değil.",
+    "D": "62 × 66, 1937 sahip mektubundaki tarihsel değerdir; güncel birincil ölçü değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eser ilk kez nerede ve ne zaman gösterildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "15 Nisan 1874, Nadar'ın eski atölyesi, 35 bd des Capucines, Paris"
+    },
+    {
+     "harf": "B",
+     "metin": "1874 resmî Salon, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "1879, dördüncü İzlenimci sergi, Avenue de l'Opéra"
+    },
+    {
+     "harf": "D",
+     "metin": "1883, Durand-Ruel galerisi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5/S7: 15 Nisan 1874, Nadar'ın eski atölyesi, 35 boulevard des Capucines.",
+   "yanlis_gerekceleri": {
+    "B": "Eser resmî Salon'da değil, Salon dışı bağımsız sergide gösterildi.",
+    "C": "1879 ikinci gösterimdir (no 146); ilk gösterim değil.",
+    "D": "1883 Durand-Ruel kişisel sergisidir (no 40); ilk gösterim değil."
+   },
+   "kanit": [
+    "C011",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "1874 sergi kataloğunda eserin numarası kaçtır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "98"
+    },
+    {
+     "harf": "B",
+     "metin": "55"
+    },
+    {
+     "harf": "C",
+     "metin": "146"
+    },
+    {
+     "harf": "D",
+     "metin": "40"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7 s.16: \"Number 98 was a painting by Claude Monet titled Impression, Soleil Levant\".",
+   "yanlis_gerekceleri": {
+    "B": "55, 1878 Hoschedé satış numarasıdır.",
+    "C": "146, 1879 dördüncü sergi numarasıdır.",
+    "D": "40, 1883 Durand-Ruel sergi numarasıdır."
+   },
+   "kanit": [
+    "C012",
+    "C021",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Ressamları alaycı biçimde \"Impressionnistes\" diye adlandıran eleştirmen ve yayın hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louis Leroy, Le Charivari (25 Nisan 1874)"
+    },
+    {
+     "harf": "B",
+     "metin": "Jules Castagnary, Le Siècle"
+    },
+    {
+     "harf": "C",
+     "metin": "Théodore Duret"
+    },
+    {
+     "harf": "D",
+     "metin": "Adolphe Tabarant, Bulletin de la Vie Artistique"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5/S7: Louis Leroy, Le Charivari, 25 Nisan 1874, « L'exposition des impressionnistes ».",
+   "yanlis_gerekceleri": {
+    "B": "Castagnary terimi olumlu anlamda benimsedi; alaycı adı koyan o değil.",
+    "C": "Duret, Monet'yi savunan bir eleştirmendi; \"Impressionnistes\" adını ilk koyan değil.",
+    "D": "Tabarant 1924'te Leroy metnini yeniden yayımladı; adı ilk koyan değil."
+   },
+   "kanit": [
+    "C016",
+    "C018"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "1878 Hoschedé satışında eseri kim, kaç franka aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Georges de Bellio, 210 frank"
+    },
+    {
+     "harf": "B",
+     "metin": "Ernest Hoschedé, 800 frank"
+    },
+    {
+     "harf": "C",
+     "metin": "Paul Durand-Ruel, 405 frank"
+    },
+    {
+     "harf": "D",
+     "metin": "Eugène Donop de Monchy, 125.000 frank"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7 s.22–24: Georges de Bellio, katalog no 55, 210 frank.",
+   "yanlis_gerekceleri": {
+    "B": "Hoschedé satıcıydı, alıcı değil; 800 franklık bir alış fiyatı kaynaklarda yoktur (belirsiz).",
+    "C": "405 frank, La Maison Bleue'nun 1874 satış fiyatıdır; Impression'ın değil.",
+    "D": "125.000 frank, 1931 sigorta değeridir; 1878 satış fiyatı değil."
+   },
+   "kanit": [
+    "C021",
+    "C071"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Eser müzeye nasıl girdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1940'ta Donop de Monchy çiftinin elle bağışı (don manuel)"
+    },
+    {
+     "harf": "B",
+     "metin": "1938'de Victorine'in vasiyetiyle doğrudan devir"
+    },
+    {
+     "harf": "C",
+     "metin": "1966'da Michel Monet'nin külli vasiyeti"
+    },
+    {
+     "harf": "D",
+     "metin": "Devletin satın alması"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 \"23/05/1940 acquis\"; S7: 23 Mayıs 1940 don manuel, 25 Mayıs kabul.",
+   "yanlis_gerekceleri": {
+    "B": "1938 vasiyet kararıdır; mülkiyet devri 1940 bağışıyla gerçekleşti.",
+    "C": "1966 Michel Monet vasiyeti Giverny'den kalan diğer eserleri getirdi; Impression müzeye 1940'ta girmişti.",
+    "D": "Eser satın alınmadı; Donop de Monchy çiftince bağışlandı."
+   },
+   "kanit": [
+    "C026",
+    "C024"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Olson ve küratörlerin analizine göre tablo neyi gösterir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gün doğumunu (gün batımı değil)"
+    },
+    {
+     "harf": "B",
+     "metin": "Gün batımını"
+    },
+    {
+     "harf": "C",
+     "metin": "Ay ışığını"
+    },
+    {
+     "harf": "D",
+     "metin": "Öğle güneşini"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7 s.10/15: topografik/astronomik analiz gün doğumunu gösterir; \"not a sunset\".",
+   "yanlis_gerekceleri": {
+    "B": "1878 \"Soleil Couchant\" başlığı yanıltıcıydı; analiz gün batımını dışlar.",
+    "C": "Ay ışığı değil; güneş diski ve gün doğumu azimuthu söz konusudur.",
+    "D": "Güneş ~2–3° yükseklikte, gün doğumundan ~20–30 dk sonradır; öğle değil."
+   },
+   "kanit": [
+    "C033",
+    "C032"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser, İzlenimcilik akımına adını vermiştir.",
+   "dogru": true,
+   "aciklama": "Doğru: müze \"inspiring the name of the movement\" der (S6); Leroy/Castagnary süreci (S5/S7).",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "İmza yanındaki \"72\" tarihi, tuval boyanırken Monet tarafından konmuştur.",
+   "dogru": false,
+   "aciklama": "Yanlış: S5 \"postèrieurement daté : 72\" — tarih sonradan eklenmiştir.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser müzeye 1940'ta Donop de Monchy çiftinin bağışıyla girmiştir.",
+   "dogru": true,
+   "aciklama": "Doğru: S5 \"23/05/1940 acquis\"; S7 don manuel (23 Mayıs 1940).",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "1878 satışında tablo \"Soleil Couchant\" (gün batımı) başlığıyla satıldı.",
+   "dogru": true,
+   "aciklama": "Doğru: S7 s.22, no 55 \"L'Impression. Soleil Couchant\", 210 frank.",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Tablo, 1874 sergisinde eleştirmenlerin çoğu tarafından öne çıkarıldı.",
+   "dogru": false,
+   "aciklama": "Yanlış: S7 s.16–17 — çoğu eleştirmen tabloyu kısa geçti; yalnız Villiers de l'Isle-Adam fark etti, Leroy alay etti.",
+   "kanit": [
+    "C073"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Üç boyut değerini (50×65 / 48×63 / 62×66) kaynak hiyerarşisi ve ölçüm bağlamıyla değerlendirin.",
+   "beklenen_ogeler": [
+    "birincil 50×65",
+    "ikincil refsiz 48×63",
+    "1937 mektubu 62×66",
+    "çerçeveli 75×91",
+    "birincil esas"
+   ],
+   "kanit": [
+    "C004",
+    "C041"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Müzeye giriş kronolojisini (vasiyet 1938 / emanet 1939 / bağış 1940 / teşhir 1946) ve WD'nin 1938 sapmasını açıklayın.",
+   "beklenen_ogeler": [
+    "20 Ocak 1938 vasiyet",
+    "1 Eylül 1939 Chambord emanet",
+    "23 Mayıs 1940 don manuel",
+    "1946 ilk teşhir",
+    "WD 1938 = vasiyet kararı"
+   ],
+   "kanit": [
+    "C024",
+    "C025",
+    "C026",
+    "C027",
+    "C042"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Olson'ın dört bileşenli tarihleme yöntemini yeniden kurun; \"tentative\" ile \"definitive\" arasındaki farkı tartışın.",
+   "beklenen_ogeler": [
+    "topografya",
+    "astronomi/azimut",
+    "gelgit high water stand",
+    "meteoroloji",
+    "6 aday → 13 Kasım 1872 07:35",
+    "tentative vs definitive (TXState)"
+   ],
+   "kanit": [
+    "C032",
+    "C051"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "\"Ayakta kürek çeken figür\" (data) ayrıntısını görsel doğrulama sınırıyla değerlendirin; hangi kanıtla teyit edilebilir?",
+   "beklenen_ogeler": [
+    "WD P180 fisher refsiz",
+    "\"ayakta\" metinlerde yok",
+    "görsel incelenmedi",
+    "hotspot doğrulaması gerekli",
+    "GZ TASLAK"
+   ],
+   "kanit": [
+    "C055",
+    "C064"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Leroy (alaycı) ↔ Castagnary (olumlu) alımlamasını ve adın kalıcılaşmasını tartışın.",
+   "beklenen_ogeler": [
+    "Leroy Charivari 25 Nisan 1874",
+    "Castagnary Siècle 29 Nisan 1874",
+    "duyum/izlenim",
+    "Tabarant 1924 kanonlaştırma",
+    "manifesto statüsü sonradan inşa"
+   ],
+   "kanit": [
+    "C016",
+    "C017",
+    "C018",
+    "C019",
+    "C073"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Ön plandaki küçük kayıkları, turuncu güneşi ve sudaki yansımaları bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S5/S7): barques de passeurs + soleil vif orangé + reflets, tuval bitirilirken eklendi.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Merkezdeki Écluse des Transatlantiques açıklığını ve sağ/sol rıhtım hatlarını izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Quai au Bois solda, Quai Courbe sağda, percée centrale → Bassin de l'Eure.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Soldaki dumanı tüten bacayı ve sağdaki vinç/direk siluetlerini sis içinde ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: cheminées, grues, mâtures buğu içinde; soldaki baca buhar makinesi binasına ait.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Güneşin gökyüzüyle yakın parlaklıkta olduğunu düşünün; siyah-beyaz bir kopyada ne olur?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Livingstone/D'Alto): fotometrede eşit luminans; B&W kopyada güneş neredeyse kaybolur.",
+   "kanit": [
+    "C035"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Sol alttaki \"Claude Monet\" imzasını ve yanındaki \"72\"yi bulun; tarihin sonradan eklendiğini not edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S5): imza sol altta; \"72\" postèrieurement daté (sonradan).",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Impression, soleil levant; Claude Monet (1840–1926); 1872; tuval üzerine yağlıboya; 50×65 cm (çerçevesiz); Musée Marmottan Monet, Paris, inv. 4014.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Akıma ad nasıl verildi?",
+   "arka": "1874 katalog için \"Impression\" (Le Havre manzarası sayılamayacağı için); Leroy, Le Charivari 25 Nisan 1874 alaycı \"Impressionnistes\"; Castagnary, Le Siècle 29 Nisan 1874 olumlu benimsedi.",
+   "kanit": [
+    "C014",
+    "C016",
+    "C018"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Provenance (ilk halkalar)?",
+   "arka": "Hoschedé 1874 (Durand-Ruel aracılığı) → 6 Haziran 1878 Drouot no 55 \"Soleil Couchant\" 210 frank → Georges de Bellio → 1894 Victorine + Eugène Donop de Monchy.",
+   "kanit": [
+    "C020",
+    "C021",
+    "C023"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Müzeye giriş?",
+   "arka": "20 Ocak 1938 vasiyet; 1 Eylül 1939 iki sandık Chambord'a emanet; 23 Mayıs 1940 don manuel; 29 Kasım 1945 dönüş; 1946 ilk teşhir.",
+   "kanit": [
+    "C024",
+    "C025",
+    "C026",
+    "C027"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Konu + tarihleme?",
+   "arka": "Le Havre avant-port, otel penceresinden GD, sabah erken; Olson dört bileşen (topografya/astronomi/gelgit/meteoroloji); küratörler için en olası 13 Kasım 1872 07:35; gün doğumu (batımı değil).",
+   "kanit": [
+    "C007",
+    "C032",
+    "C033"
+   ]
+  }
+ ]
+}

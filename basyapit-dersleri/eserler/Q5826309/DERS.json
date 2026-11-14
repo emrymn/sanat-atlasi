@@ -1,0 +1,1266 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q5826309",
+ "sanatci_id": "utagawa-hiroshige",
+ "baslik": "Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak",
+ "ozgun_baslik": "Sudden Shower over Shin-Ōhashi Bridge and Atake (Ōhashi atake no yūdachi)",
+ "kunye": {
+  "sanatci": "Utagawa Hiroshige (Andō Hiroshige)",
+  "sanatci_yasam": "1797–1858",
+  "tarih": "1857, dokuzuncu ay (Ansei 4); LoC \"[1857]\"",
+  "tarih_belirsizlik": "Bunka Isan Online aynı Fuji nüshası için \"Ansei 3 (1856)\" der (D002); jawiki gövde↔infobox tutarsız; LoC köşeli parantez.",
+  "teknik": "Ahşap baskı (nishiki-e); kâğıt üzerine mürekkep ve renk",
+  "muze": "Çok nüshalı; gösterilen nüsha Library of Congress, Prints & Photographs (jpd.02950). Diğer: Brooklyn, Met (2 nüsha), BM, Freer, Tokyo Fuji. data \"British Museum\" der (D005).",
+  "envanter": "jpd.02950 (LC-DIG-jpd-02950); diğer: 30.1478.58, JP2522, JP643, 1948,0508,0.5, F1994.29",
+  "edinim": "LoC: Donald D. Walker koleksiyonu; Brooklyn: Anna Ferris bağışı; Met: Mansfield/Rogers 1936 + Pulitzer 1918; BM: Henry Bergen 1948; Freer: Winslow/Castle 1994",
+  "konum": "LoC Washington D.C. (orijinal erişim kısıtlı, dijital); Van Gogh kopyası Amsterdam'da sergide",
+  "telif_durumu": "Hiroshige ö. 1858 → kamu malı; Commons PD-Japan; LoC \"No known restrictions on publication\"; Met PD; Freer 2015 \"Copyright with museum\" (E008)"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Hiroshige%2C_Sudden_shower_over_Shin-%C5%8Chashi_bridge_and_Atake%2C_1857.jpg",
+  "kaynak": "Wikimedia Commons — LoC jpd.02950 taramasının trialsanderrors restorasyonu",
+  "lisans": "Public domain (PD-Japan)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + data hash eşlemesi (4016e12af98da014); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "5357×8117 px (16.116.757 bayt); oran 0.66",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre; GZ TASLAK; kompozisyon kaynak betimlerinden (S5/S14/S17 A + S2/S3 B); nüsha/baskı sürümü görselden doğrulanmadı; restore edilmiş tarama."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 422
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1411
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2679
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik-çok-nüshalı-bir-baskı",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-çok-nüshalı-baskının-epistemolojisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-numara-ihtilafları"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#2-tarih-ve-numara-ihtilafları"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-derinlik-diyagonal-kuşbakışı-zaman"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-derinlik-atake-adı-ve-yūdachi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-derinlik-kalıp-renk-ekonomi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-kopya-bir-alımlama-belgesidir"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Çok nüshalı ahşap baskı kavramını açıklar; künyeyi nüsha bazında birincil kayıtlarla doğrular.",
+  "Seri numarası (D001) ve tarih (D002) ihtilaflarını yönetir; tek değer dayatmaz.",
+  "Yağmur çizgileri ve atenashi bokashi tekniğini analiz eder; baskı sürümü farklarını betimler.",
+  "Van Gogh kopyasını japonisme ve alımlama belgesi olarak değerlendirir; provenance zincirini okur.",
+  "Gösterilen nüsha (LoC) ↔ data (British Museum) uyuşmazlığını (D005) beyan eder; görsel teyit sınırını bilir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Nishiki-e",
+   "tanim": "Çok renkli ahşap baskı (\"brokar resim\"); kâğıt üzerine mürekkep ve renk.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "Yūdachi",
+   "tanim": "Yazın aniden bastıran akşam sağanağı; Brooklyn \"gök gürültüsü tanrısının akşam inişi\" der.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "Atenashi bokashi",
+   "tanim": "Kalıpta sınırı çizilmemiş alana baskıcının eliyle uyguladığı renk geçişi; bulutlar nüshaya göre değişir.",
+   "kanit": [
+    "C017",
+    "C078"
+   ]
+  },
+  {
+   "ad": "Ōban",
+   "tanim": "Büyük boy dikey baskı yaprağı; boyut nüshaya göre değişir, tek değer verilemez.",
+   "kanit": [
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "ad": "Japonisme",
+   "tanim": "Japon sanatının (özellikle ukiyo-e baskılarının) 1853 sonrası Avrupa sanatını etkilemesi; Van Gogh kopyası, Whistler.",
+   "kanit": [
+    "C033",
+    "C038"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Utagawa Hiroshige (Andō Hiroshige, 1797–1858).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S10",
+    "S12",
+    "S14",
+    "S15",
+    "S17",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Japonca başlık: Ōhashi atake no yūdachi, okunuş Ōhashi atake no yūdachi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S14",
+    "S17",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "İngilizce başlık: \"Sudden Shower over Shin-Ōhashi Bridge and Atake\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S12",
+    "S14",
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarih: 1857, dokuzuncu ay (Ansei 4); Brooklyn/Freer/Fuji/Met/BM 1857; LoC \"[1857]\" (köşeli parantez = sonradan verilmiş). D002 ile birlikte okunmalı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S10",
+    "S12",
+    "S14",
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Teknik: ahşap baskı (nishiki-e); kâğıt üzerine mürekkep ve renk; LoC \"1 print : woodcut, color\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S5",
+    "S12",
+    "S14",
+    "S17",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Format: ōban, dikey.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14",
+    "S17",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Boyut nüshaya göre değişir: Brooklyn sheet 36.1×23.1 / image 33.7×22.2; Met 34×24.1; BM 37.4×25.3; Freer 34.9×24.1; Fuji/Bunka 35.7×24.7; LoC 36.3×24.1 cm. Tek kesin boyut verilemez.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S10",
+    "S12",
+    "S14",
+    "S15",
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Seri: One Hundred Famous Views of Edo (Meisho Edo hyakkei).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S12",
+    "S14",
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Seri 119 levha; 1856–1859 üretildi; Hiroshige 1858 ölümü sonrası Hiroshige II tamamladı (atıf zinciri: enwiki→Brooklyn research/Honolulu; birincilde 119 doğrulanmadı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Yayıncı: Uo-Ei (Shitaya Uoei); yayıncı mührü imzanın yanında. Okunuş varyantları E005.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "İmza: \"Hiroshige-ga\" (Hiroshige-ga), sol altta kırmızı dikdörtgen kartuş.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Sağ üstte aratame sansür mührü + \"Snake 9\" (mi-kyū) tarih mührü; BM \"seal(censor's)\" + \"seal(date.Snake 9)\". Biçim S3 (B): aratame yuvarlak, tarih oval; \"annähernd dem 9. Monat 1857\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Başlık kartuşu tanzaku (şiir kâğıdı) biçiminde; seri kartuşu kırmızı zemin üzerine siyah; başlık kartuşu zemini baskı sürümüne göre değişir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Konu: Sumida üzerindeki ahşap Shin-Ōhashi köprüsünde ani sağanak altında geçenler; kütük salı ve salcı; karşı kıyıda Atake.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S14",
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Yūdachi: yazın aniden bastıran akşam sağanağı; Brooklyn \"an evening descent of the thunder god\" olarak açıklar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Yağmur iki farklı açıda ince koyu çizgi katmanlarıyla (siyah+gri overlay) verilmiştir; kesişen çizgiler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Tokyo Fuji: gökyüzünde baskıcı (baskıcı) eliyle \"atenashi bokashi\" (atenashi bokashi) ile simsiyah yağmur bulutları.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Figür sayıları: Bicknell \"iki kadın + dört ya da beş adam\"; Schlombs \"iki kadın + beş adam\" (atıf zinciri; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Salcı kütük salını sırıkla iter; Brooklyn \"downstream past Atake\"; Bicknell \"Fukagawa kereste depolarına doğru\" (B).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Karşı kıyıdaki Atake yağmurda yalnız silüet olarak seçilir (Fuji).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Köprü: Sumida üzerindeki üçüncü ahşap köprü, Ocak 1694 açıldı; Nihonbashi–Fukagawa bağlantısı (Marks/Uspenski); bugünkü Shin-Ōhashi ~100 m mansabı TAHMİN (Asahi; E007).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Sol kenardaki üç açık üçgen = kayıkhaneler; shogun'a ait, yakın zamanda yeniden inşa edilmiş (Marks; Trede/Bichler).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Seri, 1855 Ansei Edo depremi ve yangınları (~10.000 ölü) sonrası yeniden inşayı belgeleme bağlamında üretildi (Trede/Bichler; Honolulu atıflı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "İlk nadir sürüm: karşı kıyıda iki tekne + parlak beyaz kayıkhaneler; sonraki sürümlerde tekneler yok (gri kalıp yeniden oyulurken unutulmuş olabilir); kazık oyuk hatası düzeltilmiş; ağaçlar belirgin, evler silik; başlık kartuşu sonraki baskılarda 2 yerine 3 renk; köprü soluna + sağ kazık altlarına koyu mavi bokashi + yürüyüş yoluna gölge (Forrer/Marks/Trede). Brief \"3→2\" hatası kaynaktan 2→3 düzeltildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "1842 sansür yasası gereği renk sayısı en çok 8 ile sınırlıydı (Trede/Bichler).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Kiraz ağacı kalıba yapıştırılmış mürekkep çiziminden kontur kalıbı oyulur; yağmur için ince köprülerin (Stege) oyulması özel zorluk; kontur kalıbı renk kalıplarının şablonu (Trede/Bichler).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Van Gogh kopyası: \"Bridge in the Rain (after Hiroshige)\", Paris Ekim–Kasım 1887; tuval yağlıboya 73.3×53.8 cm (çerçeveli 86×66×7.2); F0372/JH1297/s0114V1962; Van Gogh Museum (Vincent van Gogh Foundation); sergide; \"Van Gogh & Japan\" (24 Mart–24 Haziran 2018) dahil çok sayıda sergi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Kopyada renkler özgünden yoğun; belirgin fırça izleri; oran için standart tuval + diğer baskılardan kopyalanmış Japon karakterleriyle kenar bordürü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Van Gogh bu baskının bir nüshasına sahipti; Japon baskılarını büyük ölçüde koleksiyon yaptı (Trede/Bichler; VGG blog atıflı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Van Gogh bu baskıyı Kameido Plum Park (Kameido Umeyashiki) ile birlikte kopyaladı; Brooklyn Plum Park \"print 30 from the series\" der.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15",
+    "S5",
+    "S2",
+    "S4",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Van Gogh görüntüyle ilk kez 1886'da Hayashi Tadamasa'nın Paris Illustré kapağında karşılaştı (atıf zinciri: enwiki→Milone 2022 s.295; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Kopya provenance: Theo dairesi (Paris 1887) → Theo ölümü (25 Ocak 1891) Jo van Gogh-Bonger + Vincent Willem → Jo ölümü (2 Eylül 1925) → 10 Temmuz 1962 Vakıf → 21 Temmuz 1962 devlet anlaşması → 2 Haziran 1973 Stedelijk ödünç → Rijksmuseum Vincent van Gogh → 1 Temmuz 1994 Van Gogh Museum.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Japonisme: Hiroshige köprü kompozisyonları Whistler (Nocturnes, Old Battersea Bridge), şemsiyeli kalabalık Buhot (Le Petit Enterrement), yüksek ufuk/mavi wash Lepère (La Convalescente) etkiledi (Weisberg 1975; Trede/Bichler).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Kurumsal değerlendirme: Brooklyn \"The undisputed masterpiece of the series\"; Bunka \"serinin en yüksek başyapıtı\" (atfedilmiş).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Seri içinde en çok satanlardan: Fukagawa Susaki Jūmantsubo ve Ōji tilki ateşleri ile birlikte (Asahi 2022-04-30).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Laura Cumming (The Observer) \"en iyi 10 gökyüzü\" listesine aldı (enwiki aktarımı; Guardian 2012 çekilmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C037",
+   "ifade": "Geoffrey Poole, Goldberg Ensemble için \"Crossing Ohashi Bridge\" adlı eseri bu baskıdan adlandırdı (enwiki; NMC ölü, arşiv çekilmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C038",
+   "ifade": "Popüler baskılar yüksek tirajlı, düşük birim maliyetli; 1853 sonrası açılımla Avrupa'da yaygınlaştı (Trede Mischkalkulation; enwiki \"tens of thousands\" — Telegraph çekilmedi, sayı atıfsız).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Brooklyn nüshası: 30.1478.58, Gift of Anna Ferris; \"No. 58\"; sergide değil; \"No known copyright restrictions\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Met nüshası 1: JP2522, object 55433, Howard Mansfield Collection, Rogers Fund 1936; 34×24.1 cm; PD.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Met nüshası 2: JP643, object 36461, Joseph Pulitzer Bequest 1918; 34×24.1 cm; PD; primaryImage DP121525 (enwiki \"Original printing\" bu nüsha).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "BM nüshası: 1948,0508,0.5, Henry Bergen 1948; \"1 of 2\"; \"No 52\"; 37.4×25.3 cm; sergide değil; sergi: 2007–2008 Ikon Gallery Birmingham \"The Moon Reflected\", 2008 Grundy Blackpool, 2008–2009 + 2014 BM Japon galerileri.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "Freer nüshası: F1994.29, Winslow/Castle mirası; 1970 study collection → 1994 kalıcı; 34.9×24.1 cm; 2015 \"Copyright with museum\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "Tokyo Fuji nüshası: 35.7×24.7 cm, Ansei 4 (1857); 2016 UKIYOE JAPONISM + 2018 OEDO NAGASAKI sergileri; canlı kayıt daha uzun liste verir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "LoC nüshası (gösterilen): jpd.02950, LC-DIG-jpd-02950; \"1 print : woodcut, color ; 36.3 x 24.1 cm\"; \"[1857]\"; \"No known restrictions on publication\"; Nichibunken 2005-06 katalog; Donald D. Walker koleksiyonu; FP 2 - JPD no. 1300 p. 33.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16",
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "Gösterilen görsel LoC nüshası: data hash 4016e12af98da014 → Commons LoC dosyası; Credit \"LoC jpd.02950\"; oran 0.66 ≈ 5357/8117. LoC WD P195'te YOK (D005).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S21",
+    "S18",
+    "S19",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C047",
+   "ifade": "Diğer koleksiyonlar (dewiki weblinks): Museen Freiburg, MKG Hamburg (\"blatt-58\"), MAK Wien — URL bulundu, çekilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "D001 seri no: 52 (BM/LoC-Commons/jawiki) ↔ 58 (Brooklyn) ↔ 53 (WD P179 niteleyicisi P1545, atıfsız); enwiki \"52 or 58\"; MKG slug \"blatt-58\". Farklı numaralandırma gelenekleri; tek numara kesin verilemez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S18",
+    "S19",
+    "S4",
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "D002 tarih: 1857/Ansei 4 (Brooklyn/Met/Freer/BM/Fuji; LoC \"[1857]\") ↔ Bunka \"Ansei 3 (1856)\" (aynı Fuji nüshası); jawiki gövde Bunka, infobox Brooklyn → iç tutarsız.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S10",
+    "S12",
+    "S14",
+    "S17",
+    "S15",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "D003 şemsiye grubu: data \"ikili\" ↔ Fuji \"şemsiye paylaşan üçlü erkek grubu\" (üç adam) ↔ dewiki \"drei Männer teilen sich einen Schirm\"; Brooklyn toplam 6 figür. Görsel incelenmedi; görsel doğrulama gerekli (E002 dahil).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S21",
+    "S14",
+    "S3",
+    "S5",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "D004 ilk sürüm: Forrer/Marks/Trede iki tekne + beyaz kayıkhane; Brooklyn erken sürüm nüshasına sahip; Bunka \"…bu ilk baskı olmalıdır (shohan de arō)\" gönderge belirsiz + olasılık; akademik zincirle gerilim.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S5",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "D005 gösterilen kurum: data + denetim-asama3 \"British Museum\" ↔ hash LoC dosyası; WD P195 LoC yok. \"British Museum nüshası\" görselle uyuşmaz; ders \"gösterilen LoC\" der.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S21",
+    "S18",
+    "S19",
+    "S1",
+    "S16",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C053",
+   "ifade": "D006 Met kimliği: WD P195 ref P3634=36461 (JP643 Pulitzer 1918) ↔ enwiki ref 55433 (JP2522 Mansfield 1936); iki farklı nüsha, tek \"Met nüshası\" sunulmamalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C054",
+   "ifade": "E001 boyut: 33.7×22.2 (image) – 37.4×25.3 cm; sheet/image ayrımı; enwiki \"Approx 37 x 25 (prints vary)\"; Marks ōban \"ca. 33,8 × 22,1\"; LoC \"[1857]\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S17",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "E003 başlık kartuşu rengi: data \"sarı\" ↔ dewiki \"Braun-Grün-Beige\" + sürüme göre değişir; görsel doğrulama yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S21",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "E004 Atakemaru türü: \"government ship\" (enwiki) / gozabune eğlence teknesi 1682 söküldü (Marks/jawiki gozabune) / atakebune savaş kürekli (Uspenski); Brooklyn \"huge bakufu ship 1630's–1682\". Tür çözümsüz; ad sökülme sonrası da kullanıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "E005 yayıncı okunuşu: \"Uoya Eikichi\" (data) / \"Shitaya Uo Ei\" (Brooklyn) / \"Uo-Ei\" (BM) / \"Sakanaya Eikichi\" (dewiki) — aynı Uo-Ei mührü; okunuş varyantı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S21",
+    "S5",
+    "S10",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C058",
+   "ifade": "E006 mühür biçimi: data \"yuvarlak mühürler\" ↔ S3 aratame yuvarlak + tarih OVAL; tarih \"annähernd dem 9. Monat 1857\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S21",
+    "S3",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C059",
+   "ifade": "E007 köprü konumu: bugünkü Shin-Ōhashi ~100 m mansabı \"tahmin ediliyor\" (tahmin; Asahi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C060",
+   "ifade": "E008 hak statüleri: Freer 2015 \"Copyright with museum\" ↔ Brooklyn \"No known copyright restrictions\" ↔ LoC \"No known restrictions\" ↔ Met PD ↔ Commons PD-Japan; kurum bazında farklı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S12",
+    "S5",
+    "S17",
+    "S6",
+    "S7",
+    "S18"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "E009 Bunka \"shohan de arō\" olasılık ifadesi (D004 bağlantılı) — aynen korundu, kesinleştirilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C062",
+   "ifade": "E010 zayıf WD atıfları: P571 tek ref DBpedia; P195 Brooklyn ref eswiki; P1545=\"53\" atıfsız (P179 niteleyicisi). Birincil kayıtlar ikame edildi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C063",
+   "ifade": "E011 \"White rain\": enwiki Hiroshige'ye atfeder (theartwolf çekilmedi) — doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C064",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük + hash; GZ TASLAK; kompozisyon kaynak betimlerinden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S18",
+    "S19"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C065",
+   "ifade": "Kitap metinlerine erişilmedi (Bicknell/Forrer/Weisberg/Milone/Trede/Marks/Schlombs/Uspenski); yalnız atıf zinciri künye; sayfa numaraları zincir notuyla.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C066",
+   "ifade": "Brooklyn katalog betimi: köprüde yağmurdan kaçan altı figür (şapka, hasır örtü, şemsiye altında) + nehirde tek salcı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C067",
+   "ifade": "Brooklyn: Atake adını 1630'lardan 1682 sökülmesine dek shogun kayıkhaneleri önünde bağlı \"huge bakufu ship\"ten (Atakemaru) alır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C068",
+   "ifade": "Brooklyn koleksiyonunda baskının \"earlier version\"ı var: karşı kıyıda iki ek kütük salı gösterir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C069",
+   "ifade": "Brooklyn baskıyı Tōkaidō serisindeki Shōno ile karşılaştırır: ikisi de ani yağmurdan kaçışı betimler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C070",
+   "ifade": "Fuji biyografi: 13 yaş anne-baba kaybı + aile başkanlığı; 15 yaş Utagawa Toyohiro atölyesi; 1831 Tōto meisho; 1832 Tōkaidō gojūsan-tsugi; Eisen ile Kiso kaidō rokujūkyū-tsugi; son yıllar Meisho Edo hyakkei.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C071",
+   "ifade": "LoC: baskı \"Gajō icchō\" albümünde p. 33 illüstre; orijinal erişim kısıtlı (\"material extremely fragile\"), dijital görüntü istenir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C072",
+   "ifade": "dewiki (Trede/Bichler): kompozisyon üç bölümlü (gök/nehir/köprü), diyagonal; kuşbakışı gelenek; merkezî perspektif yok, bakış gezinir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C073",
+   "ifade": "Trede/Bichler: siyah gradasyon yeni toplanmış fırtına bulutu izlenimi; üç adam şemsiye paylaşımı sağanağa yakalanmışlık → zaman öğesi; \"proto-filmisch\" (atfedilmiş yorum).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C074",
+   "ifade": "VGM kaydı Hiroshige baskısını (\"Sudden Evening Shower on the Great Bridge near Atake\", 1857) \"Related works\" listeler; Van Gogh kendi nüshasıyla ilişkisi bu kayıtta açıkça belirtilmez.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C075",
+   "ifade": "dewiki betimi (bu cümle atıfsız): baskı alanı dört kenarda ince siyah çizgi, köşeler içe yuvarlatılmış → çerçeveli izlenim. Görsel teyit yok.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C076",
+   "ifade": "Geç yeniden baskılar renk/gradasyon sadeleşir; kartuş kahverengi-yeşil-bej akoru daha az renge indirilir; kalite düşüşü Mischkalkulation (kaliteli ilk + ucuz yüksek tiraj) (Trede/Bichler).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C077",
+   "ifade": "Fuji: şemsiye paylaşan üçlü erkek grubu (aigasa (şemsiye paylaşma)) + iki kıyıya acele eden kasabalılar; köprü kuşbakışı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C078",
+   "ifade": "Bulutlar/bokashi nüshadan nüshaya belirgin değişir; her baskıda farklı (Bicknell; Trede/Bichler \"auf jedem Abzug etwas anders\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C079",
+   "ifade": "Yorum: sağanak ukiyo-e \"yüzen dünya\" geçicilik temasıyla ve \"evcilleştirilmiş yücelik\" (sublime) merceğiyle okunabilir; sahne dehşet değil gündelik telaş. Kant/Burke ödünç; sanatçı etkisi iddia edilmez.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S3",
+    "S14"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C080",
+   "ifade": "Yorum: köprüdeki telaş ↔ salcı dinginliği doğa karşısında insan durumunun iki ucu; kalabalık/yalnızlık karşıtlığı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C081",
+   "ifade": "Yorum: yağmurun çizgisel soyutlaması \"görünmeyeni görünür kılma\"; empresyonist bulanıklığa karşıt netlik.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C082",
+   "ifade": "Yorum: çok nüshalılık kusur değil ukiyo-e üretim/dolaşım modeli; Benjamin yeniden üretilebilirlik merceğiyle \"aura\"sız ama dolaşımıyla anlamlı nesne. Ödünç mercek; sanatçı etkisi iddia edilmez.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S3",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C083",
+   "ifade": "Yorum: Van Gogh karakter bordürü \"çerçeveleme eylemi\"; kopya Japon kimliğini yeniden üretir. Kopya özgünün birebir kaydı değil; alımlamanın yaratıcı boyutu karşılaştırmada hesaba katılmalı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S9",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q5826309",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q5826309.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia EN",
+   "belge": "Sudden Shower over Shin-Ōhashi Bridge and Atake (wikitext)",
+   "url": "https://en.wikipedia.org/wiki/Sudden_Shower_over_Shin-%C5%8Chashi_Bridge_and_Atake",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext API)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia DE",
+   "belge": "Abendschauer über der großen Brücke in Atake (wikitext)",
+   "url": "https://de.wikipedia.org/wiki/Abendschauer_%C3%BCber_der_gro%C3%9Fen_Br%C3%BCcke_in_Atake",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext API)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia JA",
+   "belge": "Ōhashi atake no yūdachi (wikitext)",
+   "url": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E3%81%AF%E3%81%97%E3%81%82%E3%81%9F%E3%81%91%E3%81%AE%E5%A4%95%E7%AB%8B",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext API)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Brooklyn Museum",
+   "belge": "nesne 121666 \"No. 58\" (Wayback 2016-06-12)",
+   "url": "http://web.archive.org/web/20160612061636/https://www.brooklynmuseum.org/opencollection/objects/121666/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 429 (Vercel); arşiv 200 (2016-06-12)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "API object 55433 (JP2522)",
+   "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/55433",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "API object 36461 (JP643)",
+   "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/36461",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "web sayfası 55433",
+   "url": "https://www.metmuseum.org/collection/the-collection-online/search/55433",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 (Vercel); API ile yetinildi",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Van Gogh Museum",
+   "belge": "s0114V1962 \"Bridge in the Rain (after Hiroshige)\"",
+   "url": "https://www.vangoghmuseum.nl/en/collection/s0114V1962",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "British Museum",
+   "belge": "nesne 783347 / 1948,0508,0.5 (Wayback 2016-03-03)",
+   "url": "http://web.archive.org/web/20160303202716/http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=783347&partId=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (Cloudflare); arşiv 200 (2016-03-03)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "British Museum",
+   "belge": "yeni format nesne sayfası",
+   "url": "https://www.britishmuseum.org/collection/object/A_1948-0508-0-5",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (Cloudflare); içerik alınamadı",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Freer Gallery of Art",
+   "belge": "F1994.29 (Wayback 2015-09-23)",
+   "url": "http://web.archive.org/web/20150923175418/http://www.asia.si.edu/collections/singleObject.cfm?ObjectNumber=F1994.29",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (Smithsonian); arşiv 200 (2015-09-23)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Tokyo Fuji Art Museum",
+   "belge": "work_id=1173 eski /en/ (Wayback 2018-11-06)",
+   "url": "http://web.archive.org/web/20181106054322/http://www.fujibi.or.jp/en/our-collection/profile-of-works.html?work_id=1173",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 404; arşiv 200 (2018-11-06)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Tokyo Fuji Art Museum",
+   "belge": "work_id=1173 yeni URL (canlı)",
+   "url": "https://www.fujibi.or.jp/collection/artwork/01173/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı (work_id=1173 yönlendirmesi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Bunka Isan Online (Kültür Bakanlığı, JP)",
+   "belge": "kayıt 238236 Fuji nüshası (Wayback 2026-05-17)",
+   "url": "http://web.archive.org/web/20260517141239/https://online.bunka.go.jp/heritages/detail/238236",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 502; arşiv 200 (2026-05-17)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "Library of Congress",
+   "belge": "resource jpd.02950 (Wayback 2025-04-05)",
+   "url": "http://web.archive.org/web/20250405061246/https://www.loc.gov/pictures/resource/jpd.02950/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (2025-04-05)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "Library of Congress",
+   "belge": "item 2009631889 tam katalog (Wayback 2025-03-02)",
+   "url": "http://web.archive.org/web/20250302155609/https://www.loc.gov/pictures/item/2009631889/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (2025-03-02)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S18",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (3 dosya: P18×2 + montaj)",
+   "url": "https://commons.wikimedia.org/wiki/File:Hiroshige,_Sudden_shower_over_Shin-%C5%8Chashi_bridge_and_Atake,_1857.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (imageinfo API); metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S19",
+   "kurum": "Wikimedia Commons",
+   "belge": "LoC dosyası açıklama wikitext",
+   "url": "https://commons.wikimedia.org/wiki/File:Hiroshige,_Sudden_shower_over_Shin-%C5%8Chashi_bridge_and_Atake,_1857.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (parse API)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S20",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiket çözümü (QID + P)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q632682|Q160236|Q1233913|Q1075126|Q6373|Q200798|Q165190&props=labels&languages=en|tr&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S21",
+   "kurum": "data/ (yerel, salt-okunur)",
+   "belge": "eserler_onbellek/yerel_gorseller/gorsel_oranlari/eser_ayrintilari/yuruyus/basyapitlar/eser_adlari_tr",
+   "url": "data/ (proje içi yerel dosyalar; URL yok)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel okuma; DEĞİŞTİRİLMEDİ",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Bridge in the Rain (after Hiroshige)",
+   "sanatci": "Vincent van Gogh",
+   "kurum": "Van Gogh Museum, Amsterdam",
+   "envanter": "s0114V1962 (F0372/JH1297)",
+   "mufredat_ici": false,
+   "gerekce": "Özgün baskının yağlıboya kopyası; alımlama belgesi, renk/bordür farkları.",
+   "kanit": [
+    "C027",
+    "C028"
+   ]
+  },
+  {
+   "eser": "Shōno (Tōkaidō Gojūsan-tsugi)",
+   "sanatci": "Utagawa Hiroshige",
+   "kurum": "çeşitli (Brooklyn karşılaştırması)",
+   "mufredat_ici": false,
+   "gerekce": "Aynı \"ani yağmurdan kaçış\" teması; Brooklyn katalog karşılaştırması.",
+   "kanit": [
+    "C069"
+   ]
+  },
+  {
+   "eser": "Fugaku Sanjūrokkei (Fuji Dağı'nın 36 Manzarası)",
+   "sanatci": "Katsushika Hokusai",
+   "kurum": "çeşitli",
+   "mufredat_ici": true,
+   "gerekce": "Müfredat içi Japon baskısı karşıtlığı (91↔92); ukiyo-e manzara geleneği."
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Met API 55433+36461 (canlı 200), VGM s0114V1962 (canlı 200, tam provenance), Tokyo Fuji yeni URL (canlı 200) yeniden açıldı; Brooklyn/BM/Freer/Fuji-eski/Bunka/LoC Wayback cache'lerinden doğrulandı. Künye/seri/imza/mühür/nüsha/Van Gogh ✓. Brief C024 kartuş yönü (3→2) kaynaktan 2→3 düzeltildi; Brooklyn katalog betimi (6 figür, Atakemaru, erken sürüm, Shōno) A olarak eklendi. D001–D006 açık; görsel metadata only → İNCELENMEDİ (C064), GZ TASLAK. Kitap metinleri erişilmedi (C065).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "D005 kurum: data/eserler_onbellek.json muze=\"British Museum\"; gösterilen hash 4016e12af98da014 LoC dosyasına eşli (yerel_gorseller.json). WD P195'te LoC yok. Ders \"gösterilen nüsha LoC\" der; data düzeltmesi insan onayına.",
+  "D003 figür: data/eser_ayrintilari.json + yuruyus.json \"Şemsiyeli ikili\" ↔ Fuji/dewiki \"üç adam\"; Brooklyn toplam altı figür der. Görsel teyit gerekli.",
+  "E003 kartuş rengi: data \"sarı\" ↔ dewiki \"Braun-Grün-Beige\" + sürüme göre değişir.",
+  "E006 mühür biçimi: data \"yuvarlak mühürler\" ↔ S3 tarih mührü OVAL.",
+  "E005 yayıncı okunuşu: data \"Uoya Eikichi\" ↔ \"Shitaya Uo Ei\"/\"Uo-Ei\"/\"Sakanaya Eikichi\" (aynı Uo-Ei mührü).",
+  "D001/D002: seri no 52/58/53 ve tarih 1857/1856 ihtilafları data'da tek değer (1857); ders ihtilafı beyan eder.",
+  "denetim-asama3/yerel-bulgular.csv (tarihsel) dosya adı \"Utagawa_Hiroshige_-_Evening_Shower…\" yazar; güncel eşleme LoC dosyası → uyuşmazlık.",
+  "eser_adlari_tr.json başlığı çeviri; WD tr etiketi yok, birincilde birebir karşılığı yok (künye notu).",
+  "WD P2048/P2049/P217 YOK; boyut/envanter birincilden. P186 \"print\" + P31 \"woodblock print\" deprecated; geçerli \"woodcut print\". P1545=\"53\" P179 niteleyicisi (atıfsız).",
+  "VGM \"Related works\" (C074) Hiroshige baskısını listeler; Van Gogh kendi nüshası olduğu bu kayıtta doğrulanmaz → insan inceleme.",
+  "Brief C024 \"kartuş 3→2\" hatası kaynaktan (enwiki/Forrer \"three rather than two colours in later prints\") 2→3 düzeltildi."
+ ]
+}

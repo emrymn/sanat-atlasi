@@ -1,0 +1,1082 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q328523",
+ "sanatci_id": "claude-monet",
+ "baslik": "İzlenim, Gün Doğumu",
+ "ozgun_baslik": "Impression, soleil levant (Impression, Sunrise)",
+ "kunye": {
+  "sanatci": "Claude Monet",
+  "sanatci_yasam": "1840–1926",
+  "tarih": "1872",
+  "tarih_belirsizlik": "Müze 1872; itwiki \"probabilmente nel 1872\"; Wildenstein 1873 baharı önerdi (C034, tartışma); Olson en olası 13 Kasım 1872 (C032, tentative)",
+  "teknik": "Tuval üzerine yağlı boya",
+  "boyut_cm": {
+   "yukseklik": 50,
+   "genislik": 65
+  },
+  "muze": "Musée Marmottan Monet, Paris",
+  "envanter": "4014",
+  "edinim": "23/05/1940 don manuel (Eugène + Victorine Donop de Monchy); ilk teşhir 1946",
+  "konum": "Paris, 2 rue Louis-Boilly",
+  "telif_durumu": "Kamu malı (Monet ö. 1926); Commons PD-old-auto-1996"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Claude_Monet%2C_Impression%2C_soleil_levant.jpg",
+  "kaynak": "Wikimedia Commons (Credit: wartburg.edu); WD P18 ayrı dosya: Monet - Impression, Sunrise.jpg (Credit: art database)",
+  "lisans": "Public domain (PD-old-auto-1996, deathyear 1926)",
+  "dogrulama": {
+   "yontem": "metadata (iki Commons dosyası); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "uygulama 1600×1245; WD P18 5773×4478",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C064); GZ TASLAK; kompozisyon S5/S7 metninden \"kaynakların betimlediği\"; hotspot/\"ayakta kürekçi\" doğrulanamadı (C055)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 424
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1347
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2658
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_BASLANGIC.md#bağlam",
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-bir-nesnenin-yolculuğu"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-kariyer-etki-ve-alımlama"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-ve-algı"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-ve-politik-okuma"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-tarihleme-metodolojisi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Birincil Marmottan kaydıyla künyeyi (1872, yağlıboya tuval, 50×65, inv. 4014, 1940 bağışı) doğrular.",
+  "Eserin İzlenimcilik'e ad verme sürecini (1874 sergi, Leroy, Castagnary) ve alımlama tarihini açıklar.",
+  "Provenance zincirini (Hoschedé → de Bellio → Donop de Monchy → 1940 bağışı) ve savaş tahliyesini izler.",
+  "Olson'ın dört bileşenli tarihleme yöntemini ve \"tentative/most probable\" belirsizlik sınırını değerlendirir.",
+  "Boyut/giriş yılı/ziyaretçi gibi kaynak ihtilaflarını (D) ve görsel doğrulama sınırını (E) yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "İzlenim (impression)",
+   "tanim": "Ayrıntılı betimleme yerine anlık etki/atmosfer; yüzyıl ortası resim jargonundan gelen terim.",
+   "kanit": [
+    "C015",
+    "C014"
+   ]
+  },
+  {
+   "ad": "İzlenimcilik (Impressionism)",
+   "tanim": "Adını bu eserden alan akım; Leroy'nun alaycı başlığı ve Castagnary'nin olumlu benimsemesiyle kalıcılaştı.",
+   "kanit": [
+    "C016",
+    "C019"
+   ]
+  },
+  {
+   "ad": "Avant-port / rıhtım topografyası",
+   "tanim": "Le Havre dış limanı; Quai au Bois, Quai Courbe, Écluse des Transatlantiques, Bassin de l'Eure.",
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "ad": "Luminans",
+   "tanim": "Parlaklık; güneşin gökyüzüyle eşit luminansı ve siyah-beyaz kopyada kayboluşu (Livingstone).",
+   "kanit": [
+    "C035"
+   ]
+  },
+  {
+   "ad": "Don manuel",
+   "tanim": "Elle bağış; 23 Mayıs 1940'ta Académie des Beaux-Arts adına Marmottan'a yapılan bağış.",
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Özgün ad \"Impression, soleil levant\" (EN \"Impression, Sunrise\"); sanatçı Claude Monet (1840–1926).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Eser 1872 tarihlidir (müze kaydı; WD P571 precision 9, P1480 yok); itwiki \"realizzato probabilmente nel 1872\" (E001 aynen).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tuval üzerine yağlı boya (\"toile (peinture à l'huile)\"; \"Oil on canvas\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut 50 × 65 cm (çerçevesiz); çerçeveli 75 × 91 × 10 cm (→ C041 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Sol altta imza \"Claude Monet\"; \"72\" tarihi SONRADAN eklendi (\"postèrieurement daté : 72\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Envanter no 4014; Musée Marmottan Monet, Paris.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Konu: Le Havre avant-port'unun otel odası penceresinden güneydoğu yönünde, sabah erken (\"au petit matin\") görünümü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Kompozisyon (kaynak betimi): solda Quai au Bois, sağda çalışma halindeki Quai Courbe; merkezde Écluse des Transatlantiques → Bassin de l'Eure; vinç/baca/direk buğu içinde; soldaki baca kurutma havuzu drenaj buhar makinesi binasına ait.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Öndeki kayıklar, turuncu güneş ve yansımalar tablo bitirilirken eklendi; birkaç saatte boyandı (\"Peinte en quelques heures\"; \"probably at one go\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Monet Kasım 1872 civarında Le Havre'de kaldı (\"vers novembre 1872\"); Hôtel de l'Amirauté \"en olası\" yer, odanın yerini gösteren kaynak yok (\"would appear to be the most probable spot\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "İlk gösterim: 15 Nisan 1874, Paris, Nadar'ın eski atölyesi, 35 boulevard des Capucines; Société anonyme coopérative des artistes peintres, sculpteurs, graveurs et lithographes.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "1874 kataloğu: 165 eser, 30 sanatçı; Monet'nin tablosu no 98; Monet 5 tablo (95–98 + 103) + 7 pastel \"croquis\" (99–102).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Sergiyi ~3.500 ziyaretçi + bir düzine gazeteci gördü; giriş 1 frank (→ C045 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Monet katalog için başlık istendiğinde \"Impression\" dedi; eser \"Le Havre manzarası\" sayılamayacağı için.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "\"Impression\" terimi yüzyıl ortasından beri resim jargonunda; atmosfer/izlenim vurgusunu ayrıntılı betimlemeye yeğleyen manzaracı eğilim (Barbizon/Daubigny/Manet; Wilson 1983, House 2007).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Louis Leroy, Le Charivari, 25 Nisan 1874, « L'exposition des impressionnistes »; alaycı \"Impressionnistes\" adı buradan.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Leroy alıntısı (No. 98 önünde): \"Wallpaper in its embryonic state is more finished than that seascape!\" (S7 çevirisi; Rewald 1973 s.323 / Stuckey 1985).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Jules Castagnary, Le Siècle, 29 Nisan 1874: terimi olumlu benimsedi (\"not landscape but impression\"; \"the sensation produced by a landscape\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S5",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Eser İzlenimcilik akımına adını verdi; müzenin simgesi (\"inspiring the name of the movement\"; \"le symbole\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Ernest Hoschedé eseri 1874'te (sergi sonrası, Durand-Ruel aracılığıyla; Monet defterinde) edindi (→ C043 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "6 Haziran 1878, Hôtel Drouot, Hoschedé satışı: no 55, \"L'Impression. Soleil Couchant\" başlığıyla 210 franka Georges de Bellio'ya; \"barely a quarter of what he paid for it four years earlier\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "1879 4. İzlenimci sergide no 146 \"Effet de Brouillard, Impression\"; 1883 Durand-Ruel kişisel sergisinde no 40; 1889'da no 16, ilk kez 1872 tarihli.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "De Bellio 1894'te ölünce kızı Victorine ve damadı Eugène Donop de Monchy'ye kaldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "20 Ocak 1938: Victorine'in ilk vasiyeti (Marmottan külli vasiyetçi); 1938 bağış kararı (→ C042 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "1 Eylül 1939: iki sandık (11 tablo, Impression dahil) \"savaş riski\" için müzeye emanet; Chambord'a gönderildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "23 Mayıs 1940 tarihli mektupla don manuel (Académie des Beaux-Arts adına, Marmottan için); 24 Mayıs imza, 25 Mayıs kabul; S5 \"23/05/1940 acquis\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "29 Kasım 1945'te Chambord'dan döndü; müze duvarında ilk kez 1946'da sergilendi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "1985'te çalındı (Forbes: Kasım 1985; 9 tablo; Philippe Jamin + Youssef Khimoun, Shuinichi Fujikuma adına) (→ C047 D).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S13",
+    "S3",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Korsika'da Aralık 1990'da bulundu; 1990'da müzeye döndü; Nisan 1991'de yeniden sergilendi (→ C048 D).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14b",
+    "S3",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Kurtarma sonrası temizlikte, Monet'nin ölümünden sonra eklenmiş vernik kaldırıldı; gri/pembe/sarı özgün tonlar geri geldi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14b"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "2024 loan'ları: Orsay 26 Mart–14 Temmuz 2024; National Gallery of Art Washington 8 Eylül 2024–19 Ocak 2025.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16",
+    "S15",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Olson yöntemi (topografya + astronomi + gelgit + meteoroloji): küratörler için \"en olası tarih\" 13 Kasım 1872, 07:35 yerel ortalama saat; \"tentative conclusion\"/\"most probable date\"; 6 aday tarih (→ C051 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Gün doğumu mu gün batımı mı: 1878 \"Soleil Couchant\"; Durand-Ruel \"Marine with Sunset\"; Rewald/Tucker tartıştı; Olson/Lefebvre gün batımı DEĞİL, gün doğumu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Wildenstein catalogue raisonné, Le Havre dizisini 1873 baharına yeniden tarihledi; \"72\"nin hata olabileceğini öne sürdü (\"might be a mistake\") (aktarılan iddia).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Güneşin luminansı gökyüzüyle ~aynı (fotometre); B&W kopyada güneş \"kaybolur\" (Livingstone; D'Alto Britannica 2007).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Mikrosakkadlar/algalama değişimleri: Alexander vd. 2021, Scientific Reports 11:3612, DOI 10.1038/s41598-021-82222-3 (metadata doğrulandı; tam metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Politik yorum: 1870–71 yenilgisi sonrası Fransa'nın yeniden doğuşu; Tucker \"ode to the power and beauty of a revitalized France\" (Tomlinson 1995; Smith 1994) — atıflı yorum.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C038",
+   "ifade": "1872 Le Havre dizisi: Brettell \"altı tuval\" (\"dawn, day, dusk, and dark… some from the water itself and others from a hotel room\") (Brettell 2000 s.126) (→ C059 E).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Monet'nin sonraki \"impression\" başlıklı eserleri: 1879, 1883, 1884 (Bordighera), 1887 (Marine), 1904 (Fumées dans le brouillard) (House 2007 s.139).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "1874 sergisi Salon dışı ilk bağımsız sergi; grup \"Painters, Sculptors, Engravers etc. Inc.\"; Monet/Degas/Pissarro/Renoir/Sisley öncü (Smith 1994; Tomlinson 1995).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "BOYUT İHTİLAFI (D001): birincil 50 × 65 ↔ WD/wiki/Commons 48 × 63 (refsiz); 1937 sahip mektubu \"62 x 66\". Birincil esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S1",
+    "S3",
+    "S4",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "MÜZeye GİRİŞ İHTİLAFI (D002): WD 1938 ↔ müze 23/05/1940; vasiyet 1938 / emanet 1939 / bağış 1940 / teşhir 1946 ayrı aşamalar.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "HOSCHEDÉ EDİNİM İHTİLAFI (D003): WD P127 1876 ↔ S7 1874 (sergi sonrası; Monet defteri). Birincil 1874.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "İCRA YERİ İHTİLAFI (D004): itwiki \"rigorosamente en plein air\" ↔ birincil \"otel odası penceresinden\"; Brettell karışık.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S7",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "ZİYARETÇİ İHTİLAFI (D005): S7 3.500 ↔ S3 \"about 4,000\" (Tomlinson). Birincil 3.500.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "ESER SAYISI İHTİLAFI (D006): S7 katalog 165/30 sanatçı ↔ S3 \"over two hundred\". Katalog vs asılan eser olabilir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "HIRSIZLIK YILI İHTİLAFI (D007): Kasım 1985 (Forbes/WD/enwiki) ↔ NYT \"1987\" (iç hata). 1985 üç kaynaklı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S13",
+    "S3",
+    "S1",
+    "S14b"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "KURTARMA YILI İHTİLAFI (D008): Aralık 1990 (NYT/WD/enwiki) ↔ Forbes \"1991\". Aralık 1990 daha güçlü.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S14b",
+    "S3",
+    "S1",
+    "S13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "NYT SERGİ YILI İHTİLAFI (D009): NYT \"1875\" ↔ diğerleri 1874. NYT iç hatası; 1874 esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S14b",
+    "S5",
+    "S7",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "COMMONS İÇ TUTARSIZLIĞI (D010): Year/DateTimeOriginal 1872 ↔ kategori \"1873 paintings by Claude Monet\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "TXSTATE ↔ PRESS-KIT İHTİLAFI: S12 \"definitive date\"/\"19 possible dates\"/\"precise hotel room\" ↔ S7 \"tentative\"/\"most probable\"/6 aday/\"no source\". Birincil press-kit esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "Porto-Vecchio (E006): WD P276 Q241567 1985–1990-12 REFSIZ; NYT yalnız \"a quiet villa in Corsica\"; Forbes \"Corsica\". WD'ye özgü, belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S14b",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "Hırsızlığın tam günü/ayı (E007): erişilen kaynaklarda gün yok; Forbes \"November 1985\", NYT \"1987\" (çelişkili). Belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13",
+    "S14b"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "Hoschedé'nin 1874 alış fiyatı (E008): açık rakam YOK; yalnız \"barely a quarter of what he paid for it four years earlier\". Rakam üretilmedi. Belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "\"Ayakta kürek çeken figür\" (E009, data): WD P180 \"fisher\" refsiz figürü destekler; \"ayakta\" erişilen metinlerde yok; görsel incelenmedi → doğrulama gerekli. Belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "Luminans algısal yorumu (E010): itwiki refsiz; S3 Britannica/Livingstone; S10 tam metin yok; data \"titreşiyormuş gibi\" algısal yorum. Belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "\"Monet's hometown\" (E011): S3 Le Havre için \"hometown\" der; birincil tekrarlamaz (B düzeyi, doğrulanmadı). Belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C058",
+   "ifade": "Guillemot röportaj yılı (E012): S7 \"1897\" ↔ S12 \"1898\"; S3 tarih vermez. Belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C059",
+   "ifade": "Dizi sayısı (E013): Brettell \"six painted canvases\" ↔ Lefebvre \"a series of three seascapes\" (pencereden); farklı gruplama olabilir. Belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C060",
+   "ifade": "itwiki sonraki eserler (E014): \"Soleil couchant sur la Seine à Lavacourt\" (1880), \"Pont de Waterloo\" (1903) — REFSIZ. Belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "WD P180 ikonografi listesi (E015): tüm claim'ler refsiz; A betimlemeyle örtüşenler C007–C009; yorum terimleri (contre-jour vb.) belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C062",
+   "ifade": "Fail sayısı/ayrıntıları (E016): NYT \"five gunmen\"/\"No arrests\" (Nisan 1991) ↔ Forbes (2008) Jamin+Khimoun+Fujikuma. Ayrıntılar farklı. Belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14b",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C063",
+   "ifade": "Başlık tarihi (E017 → A, S7 s.28/34): uzun süre \"Soleil Couchant\"/\"Effet de Brouillard\"/\"Moon Effect\"; müze arşivinde \"Impression, Soleil Levant\" başlıklı ilk belge 1965 katalog suplementi; 1949 envanteri \"Impression (Soleil Couchant)\" no 17.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); iki Commons dosyası PD; GZ TASLAK; data hotspot koordinatları doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S9",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C065",
+   "ifade": "refs metinleri erişilmedi (Brettell, Smith, Tomlinson, Wilson, House, Gordon & Forge, Stuckey, Rewald, D'Alto, Dorfles, Cricco, Hazan, Lemaire); kaynakçada anıldı, B atıf zinciri.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C066",
+   "ifade": "\"İzlenim\" başlığı betimlenen nesneden çok öznenin algı anını öne çıkarır; eser modern resmin eşiklerinden biri sayılır (yorum).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C067",
+   "ifade": "Eşit luminans güneşi \"renk olarak var, parlaklık olarak yok\" kılar; resmin algısal geriliminin kaynağı olarak yorumlanabilir (yorum).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C068",
+   "ifade": "Monet 1870–71 Fransa-Prusya savaşı sırasında Londra'dayken Turner'i keşfetti; 2014 sergi turu Delacroix/Courbet/Boudin/Jongkind ve Turner ile açılır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C069",
+   "ifade": "1872'de Monet'nin mali durumu düzelmişti: Latouche'a 5, Millot'ya 2, Manet'ye 1, kardeşi Léon'a 1 tuval sattı; Durand-Ruel çok sayıda eser alıp Londra'da sergiliyordu (S7 s.10).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C070",
+   "ifade": "Georges de Bellio Monet'nin \"en güvenilir ve neredeyse tek desteği\"ydi; 1876–1881 arası doğrudan 64 eser aldı; 12 Kasım 1891 mektup taslağında \"önemli tuvalleriniz koleksiyonumdan asla çıkmayacak\" (L'Impression dahil).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C071",
+   "ifade": "Donop de Monchy değerleme/hukuk: 1920 sigorta 15.000 fr; 1931 Rosenberg no 56, 125.000 fr; 1937 mektup \"62 x 66\", 130.000; 1942 ~165 eser (5.4M fr) bağış isteği, devlet 29 Mart 1945 reddetti; 25 Eylül 1947 Wateau mülkiyet görüşü; 30 Kasım 1950 el yazısı teyit; 1957 Fransa dışı loan yasağı; 11 Ocak 1958 ölüm; 1959 Mulhouse 50M fr sigorta.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C072",
+   "ifade": "Gordon & Forge renk/sınır analizi: gökyüzü-su ayırt edilemez, sınırlar belirsiz, boya \"mekânın kendisi\" olur; mavi-gri/turuncu vurgular \"son dakika vahiyleri\"; otel odası dizisi gri astar üzerine (Gordon & Forge 1983).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C073",
+   "ifade": "1874 eleştirmenleri: yalnız Villiers de l'Isle-Adam Impression'ı fark etti; Montifaud \"bir okul çocuğunun eli\" diye küçümsedi; Chesneau \"Sunrise on the Thames\" sandı; Burty olumlu ama Monet'e geç değindi (S7 s.16–17).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q328523 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q328523.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:47:53Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (42 QID)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q328523",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 → 60 sn backoff → 200, 18:49:57Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia EN",
+   "belge": "Impression, Sunrise (wikitext)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Impression%2C%20Sunrise&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:50:30Z",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia IT",
+   "belge": "Impressione, levar del sole (wikitext)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Impressione%2C%20levar%20del%20sole&prop=wikitext&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:51:37Z",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Musée Marmottan Monet",
+   "belge": "Birincil katalog kaydı notice/4014 (FR)",
+   "url": "https://www.marmottan.fr/notice/4014/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:51:38Z (canlı)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Musée Marmottan Monet",
+   "belge": "EN Collections \"Claude Monet\" (canlı)",
+   "url": "https://www.marmottan.fr/en/collections/claude-monet/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:52:29Z (canlı)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Musée Marmottan Monet",
+   "belge": "Press kit \"Monet's Impression Sunrise: The Biography of a Painting\" (45 s., 2014)",
+   "url": "https://web.archive.org/web/20170516183329/http://www.marmottan.fr/upload/files/PRESS-KIT-MARMOTTAN-MONET-IMPRESSION%20SUNRISE.pdf",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:52:33Z (application/pdf, 4.396.141 bayt); arşiv 2017-05-16",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo File:Monet - Impression, Sunrise.jpg (WD P18)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Monet%20-%20Impression,%20Sunrise.jpg&prop=imageinfo&iiprop=url|size|extmetadata",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:53:33Z (metadata)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dosya sayfası wikitext (Monet - Impression, Sunrise.jpg)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=parse&page=File:Monet%20-%20Impression,%20Sunrise.jpg&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:54:42Z",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S10",
+   "kurum": "Crossref",
+   "belge": "DOI 10.1038/s41598-021-82222-3 metadata (Scientific Reports 2021)",
+   "url": "https://api.crossref.org/works/10.1038/s41598-021-82222-3",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:54:08Z (metadata; tam metne erişilmedi)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo File:Claude Monet, Impression, soleil levant.jpg (uygulama görseli)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Claude%20Monet,%20Impression,%20soleil%20levant.jpg&prop=imageinfo&iiprop=url|size|extmetadata",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:55:36Z (metadata)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S12",
+   "kurum": "Texas State University",
+   "belge": "\"Monet's 'Impressionism' birth dated by Texas State's 'Celestial Sleuth'\", Jayme Blaschke, 2 Eylül 2014",
+   "url": "https://web.archive.org/web/20161203105811/http://www.txstate.edu/news/news_releases/news_archive/2014/September-2014/Olson090214.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:55:00Z; arşiv 2016-12-03",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Forbes",
+   "belge": "\"The World's Greatest Art Heists\", 12 Şubat 2008",
+   "url": "https://www.forbes.com/2008/02/12/art-theft-museums-biz-cx_af_0212artheists.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:57:37Z (canlı)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "NYT",
+   "belge": "\"Travel Advisory; Stolen Paintings Back in Paris\", 28 Nisan 1991 (canlı)",
+   "url": "https://www.nytimes.com/1991/04/28/travel/travel-advisory-stolen-paintings-back-in-paris.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403, 18:57:37Z (bot engeli) → ERİŞİLEMEDİ (S14b)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S14b",
+   "kurum": "NYT (Wayback)",
+   "belge": "Aynı makale, arşiv kopyası (28 Nisan 1991)",
+   "url": "http://web.archive.org/web/20150402134230/http://www.nytimes.com/1991/04/28/travel/travel-advisory-stolen-paintings-back-in-paris.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:58:28Z; arşiv 2015-04-02 (iç hatalar: 1987/1875)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Musée Marmottan Monet (Wayback)",
+   "belge": "EN collections, 2024-09-26 kopyası (NGA loan duyurusu)",
+   "url": "http://web.archive.org/web/20240926224152/https://www.marmottan.fr/en/collections/claude-monet/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:58:06Z; arşiv 2024-09-26",
+   "tur": "birincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "Musée Marmottan Monet (Wayback)",
+   "belge": "EN collections, 2024-05-18 kopyası (Orsay+NGA loan duyurusu)",
+   "url": "http://web.archive.org/web/20240518061851/http://www.marmottan.fr/en/collections/claude-monet/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 18:58:58Z; arşiv 2024-05-18",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Port du Havre, Effet de Nuit",
+   "sanatci": "Claude Monet",
+   "gerekce": "Aynı pencere/dizi bağlamında gece karşıtı; seri yönteminin erken örneği.",
+   "kanit": [
+    "C034",
+    "C038"
+   ],
+   "mufredat_ici": false
+  },
+  {
+   "eser": "Rouen Katedrali dizisi",
+   "sanatci": "Claude Monet",
+   "gerekce": "Aynı motif/farklı ışık seri yönteminin olgun hâli; müfredat içi Monet.",
+   "kanit": [
+    "C038",
+    "C039"
+   ],
+   "mufredat_ici": true
+  },
+  {
+   "eser": "Atmosferik deniz manzarası (gün doğumu)",
+   "sanatci": "J. M. W. Turner",
+   "gerekce": "Monet'nin 1870–71 Londra keşfi; erken atmosferik üslubun öncülü.",
+   "kanit": [
+    "C068"
+   ],
+   "mufredat_ici": false
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Marmottan birincil notice/4014 (S5) + EN Collections (S6) canlı yeniden açıldı; press-kit (S7, Wayback 2017-05-16) tam metin yeniden okundu: künye/konu/provenance/sergi/Olson doğrulandı. 2024 loan (S15/S16) teyit. NYT 1991 (S14b) iç hataları (1987/1875) ve Forbes (S13) 1985/1991 çelişkisi D olarak açık. TXState (S12) \"definitive/precise room/19 dates\" ↔ press-kit \"tentative/no source/6 dates\" ihtilafı Denetim B'de tespit edilip C051 D eklendi. Commons metadata (S8/S9/S11) brief'e karşı yeniden doğrulandı (5773×4478 / 1600×1245, PD). Görsel İNCELENEMEDİ (C064); GZ TASLAK. refs metinleri erişilmedi (C065).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data'da düzeltilmesi GEREKEN olgu hatası yok (brief §7); aşağıdakiler nüans/notlardır.",
+  "İmza: data \"Claude Monet 72\" ✓ ama S5 \"tarih sonradan eklendi\" (postèrieurement daté) nüansı (C005).",
+  "\"Ayakta kürek çeken figür\": data hotspot; WD P180 \"fisher\" refsiz; \"ayakta\" metinlerde yok; görsel doğrulaması gerekli (C055/C064).",
+  "\"Solda fabrika bacaları\": S7 s.10 soldaki bacanın kurutma havuzu drenaj buhar makinesi binasına ait olduğunu söyler (tam \"fabrika\" değil) — nüans (C008).",
+  "Boyut: data'da boyut (cm) alanı YOK → C041 (50×65↔48×63) data ile doğrudan çelişmez; ders birincil 50×65 esas alır.",
+  "Başlık varyantı: WD tr etiketi \"İzlenim: Gün Doğumu\" ↔ data \"İzlenim, Gün Doğumu\" (noktalama varyantı).",
+  "Görsel: uygulama 1600×1245 wartburg (hash 240bcac8b1ffb49e) ↔ WD P18 5773×4478 art database (ikisi PD); data/eserler_onbellek.json ikinci dosya lisans alanı boş (\"l\":\"\").",
+  "Envanter: Marmottan/4014 data/kunye.json ve data/muze_numaralari.json'da YOK (envanter no data'ya hiç girmemiş) — yalnız not.",
+  "E017 (başlık tarihi) S7 s.28/34 doğrudan destekli olduğundan C063 A yapıldı; belirsizlik değil, belgeli olgu."
+ ]
+}

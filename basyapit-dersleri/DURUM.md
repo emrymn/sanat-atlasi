@@ -1,6 +1,6 @@
 # DURUM — 107 Başyapıt İlerleme Takibi
 
-**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 4 üretimi — 20 eser, PARTI_4_URETIM_RAPORU) · Pilot: Q167605 (Süt Boşaltan Kadın)
+**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 5 üretimi — 20 eser, PARTI_5_URETIM_RAPORU) · Pilot: Q167605 (Süt Boşaltan Kadın)
 
 Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt envanteri hazır → Taslak hazır → Doğrulama bekliyor → İnsan incelemesi bekliyor → Yayına aday`. Hiçbir eser otomatik olarak "Yayına aday" yapılmaz; insan editoryal onayı gerekir.
 
@@ -85,30 +85,30 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 | 75 | M10 | Q1091086 | 3 Mayıs 1808 (El tres de mayo de 1808) | francisco-de-goya | İnsan incelemesi bekliyor ✅ |
 | 76 | M10 | Q212616 | Medusa'nın Salı (Le Radeau de la Méduse) | theodore-gericault | İnsan incelemesi bekliyor ✅ |
 | 77 | M10 | Q219344 | Köle Gemisi (The Slave Ship) | j-m-w-turner | İnsan incelemesi bekliyor ✅ |
-| 78 | M11 | Q1065493 | Ophelia | john-everett-millais | Araştırılmadı |
+| 78 | M11 | Q1065493 | Ophelia | john-everett-millais | İnsan incelemesi bekliyor ✅ |
 | 79 | M10 | Q1978815 | Büyük Odalık (La Grande Odalisque) | jean-auguste-dominique-ingres | İnsan incelemesi bekliyor ✅ |
-| 80 | M11 | Q3224275 | Köle Pazarı | jean-leon-gerome | Araştırılmadı |
-| 81 | M11 | Q1283024 | Venüs'ün Doğuşu | william-adolphe-bouguereau | Araştırılmadı |
+| 80 | M11 | Q3224275 | Köle Pazarı | jean-leon-gerome | İnsan incelemesi bekliyor ✅ |
+| 81 | M11 | Q1283024 | Venüs'ün Doğuşu | william-adolphe-bouguereau | İnsan incelemesi bekliyor ✅ |
 | 82 | M11 | Q3228340 | Üçüncü Mevki Vagon | honore-daumier | İnsan incelemesi bekliyor ✅ |
 | 83 | M11 | Q540488 | Ornans'ta Cenaze | gustave-courbet | İnsan incelemesi bekliyor ✅ |
 | 84 | M11 | Q1368055 | Başak Toplayanlar (Des glaneuses) | jean-francois-millet | İnsan incelemesi bekliyor ✅ |
-| 85 | M11 | Q1452762 | Paris Sokağı, Yağmurlu Hava (Rue de Paris, temps de pluie) | gustave-caillebotte | Araştırılmadı |
-| 86 | M11 | Q1245354 | Folies-Bergère'de Bir Bar (Un Bar aux Folies-Bergère) | edouard-manet | Araştırılmadı |
-| 87 | M11 | Q3821820 | Bale Dersi | edgar-degas | Araştırılmadı |
-| 88 | M11 | Q3640080 | Mavi Koltukta Küçük Kız | mary-cassatt | Araştırılmadı |
-| 89 | M11 | Q5966403 | Beşik | berthe-morisot | Araştırılmadı |
-| 90 | M11 | Q328523 | İzlenim, Gün Doğumu (Impression, soleil levant) | claude-monet | Araştırılmadı |
-| 91 | M12 | Q5826309 | Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak | utagawa-hiroshige | Araştırılmadı |
-| 92 | M12 | Q227494 | Fuji Dağı'nın 36 Manzarası | katsushika-hokusai | Araştırılmadı |
-| 93 | M12 | Q17277950 | Kâğıt Oynayanlar (Les Joueurs de cartes) | paul-cezanne | Araştırılmadı |
-| 94 | M12 | Q1090837 | Asnières'de Yıkananlar | georges-seurat | Araştırılmadı |
-| 95 | M12 | Q45585 | Yıldızlı Gece | vincent-van-gogh | Araştırılmadı |
-| 96 | M12 | Q17026577 | Moulin Rouge: La Goulue | henri-de-toulouse-lautrec | Araştırılmadı |
-| 97 | M12 | Q890678 | Nereden Geliyoruz? Neyiz? Nereye Gidiyoruz? | paul-gauguin | Araştırılmadı |
-| 98 | M12 | Q3793426 | Kiklop | odilon-redon | Araştırılmadı |
-| 99 | M12 | Q698487 | Öpücük (Der Kuss) | gustav-klimt | Araştırılmadı |
-| 100 | M12 | Q471379 | Çığlık (The Scream) | edvard-munch | Araştırılmadı |
-| 101 | M13 | Q3476580 | Berlin Sokak Sahnesi | ernst-ludwig-kirchner | Araştırılmadı |
+| 85 | M11 | Q1452762 | Paris Sokağı, Yağmurlu Hava (Rue de Paris, temps de pluie) | gustave-caillebotte | İnsan incelemesi bekliyor ✅ |
+| 86 | M11 | Q1245354 | Folies-Bergère'de Bir Bar (Un Bar aux Folies-Bergère) | edouard-manet | İnsan incelemesi bekliyor ✅ |
+| 87 | M11 | Q3821820 | Bale Dersi | edgar-degas | İnsan incelemesi bekliyor ✅ |
+| 88 | M11 | Q3640080 | Mavi Koltukta Küçük Kız | mary-cassatt | İnsan incelemesi bekliyor ✅ |
+| 89 | M11 | Q5966403 | Beşik | berthe-morisot | İnsan incelemesi bekliyor ✅ |
+| 90 | M11 | Q328523 | İzlenim, Gün Doğumu (Impression, soleil levant) | claude-monet | İnsan incelemesi bekliyor ✅ |
+| 91 | M12 | Q5826309 | Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak | utagawa-hiroshige | İnsan incelemesi bekliyor ✅ |
+| 92 | M12 | Q227494 | Fuji Dağı'nın 36 Manzarası | katsushika-hokusai | İnsan incelemesi bekliyor ✅ |
+| 93 | M12 | Q17277950 | Kâğıt Oynayanlar (Les Joueurs de cartes) | paul-cezanne | İnsan incelemesi bekliyor ✅ |
+| 94 | M12 | Q1090837 | Asnières'de Yıkananlar | georges-seurat | İnsan incelemesi bekliyor ✅ |
+| 95 | M12 | Q45585 | Yıldızlı Gece | vincent-van-gogh | İnsan incelemesi bekliyor ✅ |
+| 96 | M12 | Q17026577 | Moulin Rouge: La Goulue | henri-de-toulouse-lautrec | İnsan incelemesi bekliyor ✅ |
+| 97 | M12 | Q890678 | Nereden Geliyoruz? Neyiz? Nereye Gidiyoruz? | paul-gauguin | İnsan incelemesi bekliyor ✅ |
+| 98 | M12 | Q3793426 | Kiklop | odilon-redon | İnsan incelemesi bekliyor ✅ |
+| 99 | M12 | Q698487 | Öpücük (Der Kuss) | gustav-klimt | İnsan incelemesi bekliyor ✅ |
+| 100 | M12 | Q471379 | Çığlık (The Scream) | edvard-munch | İnsan incelemesi bekliyor ✅ |
+| 101 | M13 | Q3476580 | Berlin Sokak Sahnesi | ernst-ludwig-kirchner | İnsan incelemesi bekliyor ✅ |
 | 102 | M13 | Q2990634 | Kompozisyon VII | wassily-kandinsky | Araştırılmadı |
 | 103 | M13 | Q175036 | Guernica | pablo-picasso | Araştırılmadı |
 | 104 | M13 | hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic | Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek | hannah-hoch | Araştırılmadı |
@@ -120,8 +120,8 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 
 | Durum | Adet |
 |---|---|
-| İnsan incelemesi bekliyor | 81 (Parti 1: 20 + Parti 2: 20 + Parti 3: 20 + Parti 4: 20 + pilot Q167605) |
-| Araştırılmadı | 26 |
+| İnsan incelemesi bekliyor | 101 (Parti 1: 20 + Parti 2: 20 + Parti 3: 20 + Parti 4: 20 + Parti 5: 20 + pilot Q167605) |
+| Araştırılmadı | 6 (Kandinsky #102 + M13 telif-korumalı 5: #103-107) |
 | Toplam | 107 |
 
 ## Parti Günlüğü
@@ -388,6 +388,59 @@ Claude bağımsız denetim raporu (P0 kritik + P1 yüksek + sistematik) **ham ka
 - #20 Q3228340 (Daumier, Üçüncü Mevki, Met New York): 43 (A17/B3/C10/D4/E9) · 440/1378/2741 · 0/0. Met API A (29.100.129). Ottawa/San Francisco versiyonları ayrı. D: tarih 1864↔ca.1862-64. GZ TASLAK.
 
 **PARTİ 4 ÖZET (20/20):** Tümü "İnsan incelemesi bekliyor"; **dogrula 0 hata**, **14 uyarı** (tamamı heuristic kısaltma-bölünmesi yanlış-pozitifi: Hogarth 5, Millet 9). CJK 0. Toplam iddia **1214 (A435/B344/C110/D152/E173)**; her eserde quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (CS/DY/GZ/TK yalnız A/B); **kelime hedeflerinin TAMAMI aralıkta** (Hogarth İleri ana oturumda gerçek içerikle genişletildi, dolgu yok). `dogrula.py --test` **25/25**. Birincil katalog erişimi: Louvre (Chardin/Greuze/Ingres/Delacroix/Géricault), SMB Berlin (Ricci), NGA/MET/RA/OBO (Hogarth), NGC (West), VMFA (Kauffman), Versailles (Vigée-Le Brun), BM (Blake), DIA (Fuseli), Kunsthalle (Friedrich), NG (Constable), Prado (Goya), MFA (Turner), Orsay (Courbet/Millet), Met (Daumier) AÇILDI → güçlü A (çoğu canlı 403/404 → Wayback arşiv tarihli). **Vision bütçesi tüketildiğinden 20 eserin tümünde görsel İNCELENEMEDİ (E)**; GZ 5/5 TASLAK. Erotik/şiddet konuları (Ingres, Fuseli, Goya, Géricault, Turner, Hogarth) akademik ve açık ayrıntısız. Kritik kimlik bulguları: David Q28797801 = Toledo replikası (Louvre orijinali Q476458); Ricci Berlin um 1725; Hogarth slayt görseli Davenport kopyası. Hata listesi (üretimde yakalanıp düzeltildi): Friedrich CS10 dogru şıkkı, Hogarth/Kauffman CJK, İleri kelime genişletmesi. Kalıcı sınır: insan editör görsel + birincil teyidi ZORUNLU; hiçbir eser "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1-3 değişmedi; yalnız `content-review` commit/push.
+
+### Parti 5 (20 eser) — M11 kalanı + M12 + M13 Kirchner
+
+**Kapsam:** MUFREDAT sırasında sıradaki 20 eser (M11 Realizm/İzlenimcilik kalanı 9 + M12 Post-İzlenimcilik/Sembolizm/Japonisme 10 + M13 Kirchner 1). Ayrıntılı rapor: `PARTI_5_URETIM_RAPORU.md`. 20 araştırma brief'i + 20 ders agent'larla; tümü ana oturumda bağımsız doğrulandı. Hiroshige/Hokusai KANIT özgün kanji ana oturumda romanize edildi (CJK 0). M13 #103-107 (Picasso/Höch/Dalí/Magritte/Bacon) telif politikası kararına kadar ERTELENDİ.
+
+| Sıra | Anahtar | Eser | Sanatçı | Durum |
+|---|---|---|---|---|
+| 1 | Q1065493 | Ophelia | John Everett Millais | İnsan incelemesi bekliyor ✅ |
+| 2 | Q3224275 | Köle Pazarı | Jean-Léon Gérôme | İnsan incelemesi bekliyor ✅ |
+| 3 | Q1283024 | Venüs'ün Doğuşu | William-Adolphe Bouguereau | İnsan incelemesi bekliyor ✅ |
+| 4 | Q1452762 | Paris Sokağı, Yağmurlu Hava | Gustave Caillebotte | İnsan incelemesi bekliyor ✅ |
+| 5 | Q1245354 | Folies-Bergère'de Bir Bar | Édouard Manet | İnsan incelemesi bekliyor ✅ |
+| 6 | Q3821820 | Bale Dersi | Edgar Degas | İnsan incelemesi bekliyor ✅ |
+| 7 | Q3640080 | Mavi Koltukta Küçük Kız | Mary Cassatt | İnsan incelemesi bekliyor ✅ |
+| 8 | Q5966403 | Beşik | Berthe Morisot | İnsan incelemesi bekliyor ✅ |
+| 9 | Q328523 | İzlenim, Gün Doğumu | Claude Monet | İnsan incelemesi bekliyor ✅ |
+| 10 | Q5826309 | Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak | Utagawa Hiroshige | İnsan incelemesi bekliyor ✅ |
+| 11 | Q227494 | Fuji Dağı'nın 36 Manzarası (Red Fuji) | Katsushika Hokusai | İnsan incelemesi bekliyor ✅ |
+| 12 | Q17277950 | Kâğıt Oynayanlar (Courtauld versiyonu) | Paul Cézanne | İnsan incelemesi bekliyor ✅ |
+| 13 | Q1090837 | Asnières'de Yıkananlar | Georges Seurat | İnsan incelemesi bekliyor ✅ |
+| 14 | Q45585 | Yıldızlı Gece | Vincent van Gogh | İnsan incelemesi bekliyor ✅ |
+| 15 | Q17026577 | Moulin Rouge: La Goulue | Henri de Toulouse-Lautrec | İnsan incelemesi bekliyor ✅ |
+| 16 | Q890678 | Nereden Geliyoruz? Neyiz? Nereye Gidiyoruz? | Paul Gauguin | İnsan incelemesi bekliyor ✅ |
+| 17 | Q3793426 | Kiklop | Odilon Redon | İnsan incelemesi bekliyor ✅ |
+| 18 | Q698487 | Öpücük | Gustav Klimt | İnsan incelemesi bekliyor ✅ |
+| 19 | Q471379 | Çığlık (1893 NM versiyonu) | Edvard Munch | İnsan incelemesi bekliyor ✅ |
+| 20 | Q3476580 | Berlin Sokak Sahnesi | Ernst Ludwig Kirchner | İnsan incelemesi bekliyor ✅ |
+
+**Parti 5 ilerleme:** 20/20 tamamlandı — **PARTİ 5 BİTTİ.** (Kalan 6: Kandinsky #102 [Parti 6] + M13 telif-korumalı 5 [#103-107, politika kararı bekliyor].)
+
+**Üretim günlüğü (iddia A/B/C/D/E · kelime B/O/İ · dogrula hata/uyarı):**
+- 14 Kasım 2026 — #1 Q1065493 (Millais, Ophelia, Tate Britain): 55 (A28/B6/C5/D12/E4) · 419/1326/2859 · 0/0. Tate canlı story + Wayback 2022-05-12 A (N01506, 762×1118, 1851-52). D: WD boyut TERS, model yaşı 19↔22, data müze NG↔Tate. GZ TASLAK.
+- #2 Q3224275 (Gérôme, Köle Pazarı, Clark): 47 (A32/B4/C1/D5/E5) · 433/1303/2606 · 0/0. Clark Wayback + Lees 2012 katalog PDF A (1955.53, 1866 muhtemelen, 84.6×63.3). Hermitage/Walters 1884 ayrı; Nochlin↔Ackerman. GZ TASLAK.
+- #3 Q1283024 (Bouguereau, Venüs, Orsay): 46 (A16/B11/C2/D7/E10) · 411/1348/2836 · 0/0. Orsay Wayback 2018+2026 A (RF 253, 300×215, 1879, Salon N°376). D1 boyut 300×215↔218; WD P973 Cabanel'e bağlı; data "melekler/periler" hatalı. Erotik nü akademik. GZ TASLAK.
+- #4 Q1452762 (Caillebotte, Paris Sokağı, ARTIC): 58 (A34/B11/C2/D6/E5) · 415/1436/2688 · 0/0. ARTIC + API + Groom&Keegan 2015 katalog A (1964.336, 1877). Wildenstein 1960↔1964; camera lucida "likely"; A3-6 başlık varyantı. GZ TASLAK.
+- #5 Q1245354 (Manet, Folies-Bergère, Courtauld): 60 (A18/B18/C2/D8/E14) · 406/1321/2615 · 0/0. Courtauld + Wayback + Getty A (P.1934.SC.234, 96×130, 1882). Ayna "bilerek bozuk"↔optik tutarlı; Bass sağ/sol; mandalina/portakal; WD P18 CC BY 2.0. GZ TASLAK.
+- #6 Q3821820 (Degas, Bale Dersi, Orsay): 53 (A23/B10/C4/D8/E8) · 406/1335/2794 · 0/0. Orsay Wayback + Joconde A (RF 1976, Salle 32). Orsay içi tarih 1871-74↔1873-76; Faure komisyonu Met versiyonuna ait (Q18758802 ayrı). GZ TASLAK.
+- #7 Q3640080 (Cassatt, Mavi Koltuk, NGA): 52 (A13/B21/C2/D10/E6) · 471/1314/2679 · 0/0. NGA Wayback 2026-11-03 + AAA Vollard A (1983.1.18, 89.5×129.8, 1878). Salon reddi↔1878 Dünya Fuarı; zemin peanut-brown↔gri; köpek kahverengi↔siyah Baptiste. GZ TASLAK.
+- #8 Q5966403 (Morisot, Beşik, Orsay): 65 (A23/B19/C3/D6/E14) · 451/1307/2780 · 0/0. Orsay Wayback + Joconde A (RF 2849, 56×46.5, 1872, Salle 32). Model Edma+Blanche; 1874 Nadar n°104 ilk kadın. genişlik 46↔46.5; Paris↔Maurecourt. GZ TASLAK.
+- #9 Q328523 (Monet, İzlenim, Marmottan): 73 (A37/B10/C2/D11/E13) · 424/1347/2658 · 0/0. Marmottan canlı + press-kit Wayback A (4014, 50×65, 1872). boyut 50×65↔48×63; giriş 1938↔1940; Hoschedé 1876↔1874; 1985 hırsızlık. GZ TASLAK.
+- #10 Q5826309 (Hiroshige, Shin-Ōhashi, çok nüsha): 83 (A38/B18/C6/D6/E15) · 422/1411/2679 · 0/0. Met API + VGM + Tokyo Fuji canlı A; gösterilen nüsha LoC jpd.02950 (data "British Museum" uyuşmazlığı D005). seri no 52/58/53; tarih 1857↔1856; şemsiye ikili↔üçlü. Van Gogh kopyası A (F0372). KANIT kanji romanize edildi. GZ TASLAK.
+- #11 Q227494 (Hokusai, Fuji 36 Manzara — Red Fuji): 66 (A30/B20/C4/D6/E6) · 490/1543/2762 · 0/0. Met API + Tokyo Fuji + BM Wayback + Korenberg 2019 A. Gösterilen baskı Büyük Dalga DEĞİL Red Fuji (seri no.33); ~1930 reprodüksiyon, kurum teyit edilemedi. KANIT kanji romanize edildi. GZ TASLAK.
+- #12 Q17277950 (Cézanne, Kâğıt Oynayanlar, Courtauld): 48 (A12/B17/C2/D11/E6) · 413/1378/2641 · 0/0. Courtauld + Catalogue Raisonné FWN 686/684 + Joconde A. SERİ maddesi; Courtauld Q17277953 (60×73) ↔ Orsay Q1165042 ayrı; WD seri kimlik karışık (D01). yuruyus "beş figürlü" hatalı (Met 4, Barnes 5). GZ TASLAK.
+- #13 Q1090837 (Seurat, Asnières, NG): 51 (A15/B14/C5/D5/E12) · 441/1460/2695 · 0/0. NG canlı 200 + Art UK Wayback A (NG3908, Room 44, 201×300). boyut 201×300↔301.5; bacalar söndük↔duman; rötuş sarı+mavi↔mavi+turuncu. Noktacılık tarzında DEĞİL (NG A). GZ TASLAK.
+- #14 Q45585 (Van Gogh, Yıldızlı Gece, MoMA): 56 (A17/B18/C3/D9/E9) · 465/1330/2781 · 0/0. MoMA Wayback 2026-11-07 + mektup 782 Wayback A (472.1941, 73.7×92.1, Haziran 1889). itwiki 1907 kronoloji hatası; "bellekten yaptı"↔enwiki "inaccurate". Ad karışıklığı Q47430923/Q1464531. GZ TASLAK.
+- #15 Q17026577 (Toulouse-Lautrec, Moulin Rouge, Met): 75 (A24/B18/C12/D7/E14) · 422/1419/3134 · 0/0. Met API + Wayback + IMA canlı A (32.88.12, 190×116.5, litografi 4 renk 3 levha). Gösterilen nüsha Met; WD P18 Bertarelli Milano. boyut nüsha farkı; ad üç↔iki kez; Valentin Jacques↔Étienne. frwiki kaynaksız (E). GZ TASLAK.
+- #16 Q890678 (Gauguin, Nereden Geliyoruz, MFA): 81 (A37/B23/C3/D9/E9) · 438/1535/3189 · 0/0. MFA Wayback 2025-07-19 TAM A (36.270, 139.1×374.6, Tompkins Fund, Gallery 255). tarih 1897↔1897-98; merkez figür androjen↔Eve↔Âdem; Sentetizm↔Post-Impresyonizm. data "Âdem"/"uydurma put" kaynaksız. GZ TASLAK.
+- #17 Q3793426 (Redon, Kiklop, Kröller-Müller): 40 (A15/B4/C10/D6/E5) · 436/1312/2633 · 0/0. KMM canlı + Wayback + CN + GA&C A (KM 103.098, c.1914, 65.8×52.7, cardboard on panel). tarih c.1914↔1898-1900; itwiki "Olio su tela"↔cardboard. provenance yok. GZ TASLAK.
+- #18 Q698487 (Klimt, Öpücük, Belvedere): 53 (A33/B2/C1/D7/E10) · 410/1599/3188 · 0/0. Belvedere Wayback 2026-10-04 + 2019-09-20 A (Inv 912, 180×180, c.1907-1909). D001 tarih; D003 Ravenna/Bizans birincilde YOK (müze Japon maki-e öncü); WVZ 178/168↔189/179; yanak öpücüğü. Erotik akademik. GZ TASLAK.
+- #19 Q471379 (Munch, Çığlık, 1893 NM versiyonu): 73 (A25/B16/C2/D14/E16) · 462/1401/2725 · 0/13 (heuristic). Nasjonalmuseet + eMunch canlı A (NG.M.00939, 91×73.5). RESİM GRUBU (4 versiyon); ders 1893 NM Q18891156. teknik tempera/fettstift↔oil/pastel; ilk ad Verzweiflung↔Schrei der Natur. GZ TASLAK.
+- #20 Q3476580 (Kirchner, Berlin Sokak Sahnesi, Neue Galerie NY): 76 (A22/B32/C3/D12/E7) · 438/1335/2729 · 0/0. NG canlı + Christie's Wayback 2026-02-22 ($38.096.000, 121.6×91.1) + MoMA Wayback + iade dosyası A. boyut 121×95↔121.6×91.1; tarih 1913↔1913-14; dizi 11↔7. PD (ö.1938). GZ TASLAK.
+
+**PARTİ 5 ÖZET (20/20):** Tümü "İnsan incelemesi bekliyor"; **dogrula 0 hata**, **13 uyarı** (tamamı Munch heuristic kısaltma-bölünmesi yanlış-pozitifi). CJK 0 (Hiroshige/Hokusai KANIT özgün kanji ana oturumda romanize edildi). Toplam iddia **1211 (A492/B292/C74/D165/E188)**; her eserde quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (CS/DY/GZ/TK yalnız A/B); **kelime hedeflerinin TAMAMI aralıkta** (dolgu yok). `dogrula.py --test` **25/25**. Birincil katalog erişimi: Tate (Millais), Clark (Gérôme), Orsay (Bouguereau/Degas/Morisot), ARTIC (Caillebotte), Courtauld (Manet/Cézanne), NGA (Cassatt), Marmottan (Monet), Met API (Hiroshige/Hokusai/Toulouse-Lautrec), NG (Seurat), MoMA (Van Gogh), MFA (Gauguin), Kröller-Müller (Redon), Belvedere (Klimt), Nasjonalmuseet (Munch), Neue Galerie (Kirchner) AÇILDI → güçlü A (çoğu canlı 403/404 → Wayback arşiv tarihli). **Vision bütçesi tüketildiğinden 20 eserin tümünde görsel İNCELENEMEDİ (E)**; GZ 5/5 TASLAK. Erotik/şiddet/hassas konular (Bouguereau, Klimt, Gauguin, Gérôme, Munch) akademik ve açık ayrıntısız. Kritik kimlik bulguları: Hokusai gösterilen baskı Red Fuji (~1930 reprodüksiyon); Cézanne seri maddesi Courtauld versiyonu; Munch resim grubu 1893 NM versiyonu; Hiroshige gösterilen nüsha LoC. Kalıcı sınır: insan editör görsel + birincil teyidi ZORUNLU; hiçbir eser "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1-4 değişmedi; yalnız `content-review` commit/push. **M13 #103-107 telif politikası kararına kadar ertelendi.**
 
 ### Veri Notları (mevcut veri DEĞİŞTİRİLMEDİ — onaya sunulur)
 

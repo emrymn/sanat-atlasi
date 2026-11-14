@@ -1,0 +1,1193 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3476580",
+ "sanatci_id": "kirchner",
+ "baslik": "Berlin Sokak Sahnesi",
+ "ozgun_baslik": "Berliner Straßenszene (Berlin Street Scene)",
+ "kunye": {
+  "sanatci": "Ernst Ludwig Kirchner",
+  "sanatci_yasam": "1880–1938",
+  "tarih": "1913",
+  "tarih_belirsizlik": "WD/data 1913 (precision=year); NG canlı \"1913-14\", Christie's \"1913-1914\"; NG 2014 arşiv \"(1913-24)\" muhtemel dizgi (D2/E11).",
+  "teknik": "Yağlıboya, tuval (oil on canvas); çift taraflı: recto Berliner Straßenszene, verso Bäume",
+  "boyut_cm": {
+   "yukseklik": 121.6,
+   "genislik": 91.1
+  },
+  "muze": "Neue Galerie New York",
+  "envanter": "Bulunamadı (WD P217 yok; NG sergi sayfasında envanter no yok)",
+  "edinim": "2006; Hess mirasçılarına iade (Temmuz 2006) → Christie's 8 Kasım 2006 (Lot 37, USD 38.096.000) → Neue Galerie (Ronald Lauder). Önceki: Brücke-Museum Berlin 1980–2006.",
+  "konum": "1048 Fifth Avenue, New York, NY 10028",
+  "telif_durumu": "Kamu malı (Kirchner ö.1938; 70 yıl pma dolmuş). Commons PD-Art (PD-old-auto-expired, deathyear=1938)."
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Kirchner_Berlin_Street_Scene_1913.jpg",
+  "kaynak": "Wikimedia Commons (MoMA 2008 katalog taraması; Deborah Wye, Kirchner and the Berlin Street, ISBN 9780870707414)",
+  "lisans": "Public domain (PD-Art; PD-old-auto-expired; deathyear=1938)",
+  "dogrulama": {
+   "yontem": "metadata only (imageinfo + dosya sayfası); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "1948×2638 px (2.635.738 bayt)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C068); GZ TASLAK; kompozisyon NG/Christie's/MoMA/wiki metinlerinden; data görsel ayrıntıları doğrulanmadı (C072)."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 438
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1335
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2729
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-çok-birincilli-bir-kayıt"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-bir-hipotez-ve-zorunluluk-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-öncülük-ve-dizi-bilinci"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-biçim-ve-üslup-kuvvet-çizgileri-ve-anlık-görüntü"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-ve-etik-okuma-kokot-kimliği-ve-sosyal-eleştiri"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-çift-taraflı-tuval-imza-ve-boyut"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Neue Galerie/Christie's/MoMA birincil kayıtlarıyla künyeyi (ad, sanatçı, tarih, teknik, çift taraflı, boyut, koleksiyon) doğrular.",
+  "Strassenbilder dizisini ve Berlin bağlamını (Die Brücke 1905, 1911 taşınma, 1913 dağılma) açıklar.",
+  "Provenance + iade + satış zincirini (Hess→Hagemann→Holzinger→Brücke→2006 iade→Neue Galerie) yönetir.",
+  "Sosyal eleştiri, bakış yönü, boyut ve tarih ihtilaflarını D olarak beyan eder; belirsizlikleri korur.",
+  "Görsel incelenmeden betim sınırını, GZ TASLAK durumunu ve data uyuşmazlıklarını kavrar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Die Brücke",
+   "tanim": "1905 Dresden'de kurulan dışavurumcu grup; Kirchner kurucu üye; 1911 Berlin; 1913 dağıldı.",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "ad": "Strassenbilder",
+   "tanim": "Kirchner'in Berlin sokak sahneleri dizisi (11 tablo; çoğunlukla 1913–1915).",
+   "kanit": [
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "ad": "Kokot (coquette)",
+   "tanim": "Modaya düşkün, bağımsız sokak kadını/fahişe; Kirchner'in \"yeni kadın tipi\".",
+   "kanit": [
+    "C007",
+    "C021"
+   ]
+  },
+  {
+   "ad": "Dışavurumculuk (Expressionism)",
+   "tanim": "İç deneyimi çarpıtılmış biçim/renkle ifade; NG \"a landmark of Expressionism\".",
+   "kanit": [
+    "C004",
+    "C019"
+   ]
+  },
+  {
+   "ad": "Restitüsyon (iade)",
+   "tanim": "Nazi dönemi kayıp mülkiyetin mirasçılara iadesi; Washington 1998 / Joint Declaration 1999.",
+   "kanit": [
+    "C039",
+    "C045"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser: Berliner Straßenszene / Berlin Street Scene / Berlin Sokak Sahnesi; tablo.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S10",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Ernst Ludwig Kirchner (1880–1938).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih: WD P571=1913 (precision=year), data/infobox 1913; NG canlı \"1913-14\", Christie's \"1913-1914\" (→C056).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S10",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Dışavurumculuk dönüm noktası: NG \"a landmark of Expressionism\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Strassenbilder dizisi: 11 tablo (Christie's essay; Moeller); Kirchner diziyi kimliğinin kanıtı saydı (1919 Nationalgalerie talebi; Osthaus 1917; Schiefler print cycle).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Dizi 1913–1915 (MoMA/FR/Moeller); Kirchner günlüğü \"11-14\" (→C067).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12",
+    "S18",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Konu: iki kokot (fahişe) ve müşteriler, işlek Berlin caddesi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Kadın modeller: Erna ve Gerda Schilling kardeşler (NG \"recognizably modeled after the sisters\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Erkek model \"probably\" Otto Mueller; Kirchner otoportre \"possible\" (E2 çekincesi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Yağlıboya, tuval (oil on canvas / Öl auf Leinwand).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Çift taraflı: recto Berliner Straßenszene, verso \"Bäume\" (Ağaçlar).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S20"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "İmza: iki kez \"E.L. Kirchner\" (sağ alt + sol alt); versoda \"EL Kirchner\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Christie's boyut: \"47 7/8 x 35 7/8 in. (121.6 x 91.1 cm.)\" (→C057).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "2006'dan beri Neue Galerie New York; envanter no bulunamadı (P217 yok).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S1",
+    "S20"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "NG canlı credit: \"Neue Galerie New York and Private Collection\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Die Brücke: Kirchner kurucu üye, Dresden 1905; grup 1911'de Berlin'e taşındı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Grup 1913'te dağıldı (Christie's Ocak 1913; Pechstein Mayıs 1912 ihraç; FR).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Kirchner Berlin'e sonbahar 1911'de taşındı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Fütürizm (hız/dinamizm) + Kübizm (açılı form) etkisi (Welt canlı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Fütürizm'i Der Sturm sergisiyle tanıdı (12 Nisan–21 Mayıs 1912) (Roters 1987).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Sosyal eleştiri DEĞİL; yeni bağımsız kadın tipi (Welt) (→C058).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "itwiki: burjuva toplum eleştirisi + primitivizm/Afrika maskeleri (Bora vd. 2006) (→C058).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Yüzler maske gibi; Christie's \"African mask-like painted faces… Expressionist face of Berlin\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Gordon: iki erkek figür aynı kişi, iki hareket evresi (stroboskopik etki) (Gordon 1968).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Arka plan: at arabası + tramvay 15; güzergâh Hallesches Tor–Potsdamerplatz–Anhalter Bahnhof (→C059).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Kesilmiş ön plan figürleri → snapshot etkisi; kuvvet çizgileri (Kraftlinien) (Christie's; Piper 1979).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Roters: Munch paralelliği (Abend auf der Karl Johans gate); \"Aufgeregtheit und nervöser Vitalität\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Kirchner günlüğü: \"Sie (die Straßenszenen) entstanden in den Jahren 11-14… einsamsten Zeiten\" (Welt).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "1918: Ludwig Schames üzerinden Alfred Hess'e (Erfurt) satıldı (dewiki; atıf kapsamı belirsiz).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Alfred Hess ö.1931; Thekla Hess miras (Tekla 1884–1968, Hans 1908–1975).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Ekim 1933 Basel; 1934 Kunsthaus Zürich; katalog 2500 CHF (E4 çekincesi) (Hüneke).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "4 Eylül 1936 sevkiyatıyla Kölnischer Kunstverein'e döndü (Hüneke).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "1936 sonu \"unter ungeklärten Umständen, vermutlich über… Walter Klug\" Hagemann'a (D5/E5).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Christie's provenance dizesi: \"Sold under duress due to persecution by the Nazi authorities.\" (kayıt ifadesi; →C070).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "1948: Hagemann mirasçıları Ernst Holzinger'e (Städel) hediye; Dauerleihgabe.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S13",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "1980: Berlin şehri Holzinger ailesinden satın aldı; Brücke-Museum (fiyat 1,9M DM →C073).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Eylül 2004: Anita Halpin (torun) iade talebi (D7) (Spiegel/dewiki).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S15",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Ağustos 2006: Senatör Flierl iade kararı; Senat bülteni 17.08.2006.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Temmuz 2006: Hess mirasçılarına iade (Christie's \"Restituted… July 2006\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "8 Kasım 2006, Christie's NY, Auction 1722 \"Impressionist and Modern Art Evening Sale\", Lot 37.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Tahmin USD 18–24M; gerçekleşen USD 38.096.000.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Alıcı: Ronald Lauder, Neue Galerie için (FR) (D8 Sabarsky →C061).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S18",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "Euro karşılığı ~30 M€ (en/de) vs \"knapp 25 M€\" (FR) (→C062).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "İade tartışması: Halpin dolandırıcılık soruşturması; Kisseler/Flierl soruşturma; Genel Savcılık itirazı (Spiegel).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "Hukuki temel: Washington 1998 (en) vs Joint Declaration 1999 + Handreichung (S13) (→C063).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "Gutachten: Hans Hess ~4.000 eser/gayrimenkul/Ullstein maaşı; fabrikalar 1933'e dek borçsuz, 1937 aryanize; RM 3.000 belgesiz; piyasa 6.000–15.000 RM; Thekla kontrol düzenlemeleriyle zorlandı (E7).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C047",
+   "ifade": "Nazi dönemi Kirchner \"geächtet\"/degenerate; 1938'de 58 yaşında intihar (FR/S13).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S18",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C048",
+   "ifade": "MoMA \"Kirchner and the Berlin Street\", 3 Ağustos–10 Kasım 2008; Deborah Wye; 7 sokak + 60 kâğıt; katalog 138 s.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12",
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C049",
+   "ifade": "MoMA kendi eseri \"Street, Berlin\" 1913, 120.6×91.1 cm, Purchase — AYRI eser.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C050",
+   "ifade": "1987 \"Ich und die Stadt\", Martin-Gropius-Bau, kat.105, S.62–63 (WD P608 + Roters).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C051",
+   "ifade": "NG sergisi 26 Temmuz–17 Eylül 2007; Standing Girl, Caryatid (1909-10) + Dix/Grosz/Schad.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C052",
+   "ifade": "Kamu malı (ö.1938; 70 yıl pma); Commons PD-Art (PD-old-auto-expired, deathyear=1938).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S20",
+    "S19",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "Dizi kökeni Judgment of Paris (1913); Fünf Frauen vitrin kompozisyonu; bu tablo geleneksel olarak \"ikinci eser\" (Fünf Frauen'dan sonra), kesin değil (Christie's).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "Brücke-Museum Förderkreis hâlâ iade talep ediyor (\"Skandal\") (FR).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "WD P180: Berlin (Q64) betimlenir (atıfsız WD).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "Tarih ihtilafı (D2): 1913 ↔ 1913-14 (NG) ↔ 1913-1914 (Christie's) ↔ \"(1913-24)\" (NG 2014, muhtemel dizgi).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S6",
+    "S7",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C057",
+   "ifade": "Boyut ihtilafı (D1): 121×95 (WD/wiki/Commons) ↔ 121.6×91.1 (Christie's); MoMA 120.6×91.1 ayrı eser.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S4",
+    "S5",
+    "S20",
+    "S10",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C058",
+   "ifade": "Sosyal eleştiri yorum ihtilafı (D4): Welt/en/de \"eleştiri değil, yeni kadın\" ↔ itwiki \"burjuva eleştirisi\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S14",
+    "S3",
+    "S5",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C059",
+   "ifade": "Tramvay tipi ihtilafı (D11): atlı tramvay (en/Gordon) ↔ dewiki \"o dönemde yoktu\" ↔ Christie's \"number 15 tram\"; hat 15 ortak.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C060",
+   "ifade": "Hagemann satış tarihi ihtilafı (D5): 1936 ↔ 1937 (Christie's) ↔ \"1936 sonu/1937 başı\" (S13).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S17",
+    "S3",
+    "S10",
+    "S5",
+    "S13",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C061",
+   "ifade": "Alıcı ihtilafı (D8): Lauder (de/FR) ↔ \"Lauder and Sabarsky\" (en); Sabarsky birincilde doğrulanmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S18",
+    "S4",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C062",
+   "ifade": "Euro karşılığı ihtilafı (D12): ~30 M€ ↔ knapp 25 M€ (FR); USD 38.096.000 kesin.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S18",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C063",
+   "ifade": "Hukuki temel ihtilafı (D9): Washington 1998 (en) ↔ Joint Declaration 1999 + Handreichung (S13).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C064",
+   "ifade": "Halpin talep tarihi ihtilafı (D7): 2004 (de/Spiegel) ↔ 2006 (en).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C065",
+   "ifade": "Savaş sonrası mülkiyet ihtilafı (D6): \"Alman devleti\" (Times) ↔ 1948 Holzinger özel, 1980 şehir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S17",
+    "S10",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C066",
+   "ifade": "Bakış yönü ihtilafı (D10): dewiki \"dışarı bakıyor\" ↔ en \"izleyiciye/fahişelere\" ↔ data \"yan gözle\"; görsel teyit gerekli.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S3",
+    "S19"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C067",
+   "ifade": "Dizi aralığı/sayısı ihtilafı (D3): 1913–1915 ↔ günlük \"11-14\"; 11 (Christie's) ↔ 7 (MoMA sergilenen).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S12",
+    "S18",
+    "S14",
+    "S10",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C068",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası); Commons PD 1948×2638, MoMA 2008 katalog taraması; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S19",
+    "S20"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C069",
+   "ifade": "Refs kitap metinleri erişilmedi (Moeller/Gordon/Roters/Piper/Bora/Wye/Schnabel-Tatzkow/Hüneke/Lloyd/Grisebach/Simmons); Gordon basım yeri Prestel ↔ Cambridge (E16).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S3",
+    "S4",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C070",
+   "ifade": "Provenance belirsizlikleri: \"circa 1933-1937\"; \"Sold under duress\" tartışmalı (Schultz karşı, S13 destekler); Hüneke \"Zuordnung teilweise nicht eindeutig\"; \"vermutlich über Walter Klug\"; RM 3.000 belgesiz (E3-E7).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10",
+    "S17",
+    "S13",
+    "S5",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C071",
+   "ifade": "Kokot kimliği (E8): \"doubt… whether these paintings actually represent prostitutes… one can't be certain\"; \"Later in life Kirchner clearly identified\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C072",
+   "ifade": "data görsel ayrıntıları (sarı sigara, beyaz eldiven, kahverengi at, yeşil tekerlek, imza konumu, renk) İNCELENMEDİ; sigara Commons kategorisiyle dolaylı (E9).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S20",
+    "S19"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C073",
+   "ifade": "Küçük belirsizlikler: 1980 fiyat 1,9M DM atıfsız (E10); NG \"(1913-24)\" dizgi (E11); \"Gerad\"↔\"Gerda\" (E12); Hess Paris↔Britain (E13); WD P571 DBpedia import zayıf (E15).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S3",
+    "S13",
+    "S17",
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C074",
+   "ifade": "Yabancılaşma okuması (yorum): figürler kalabalık içinde ama etkileşimsiz (\"no interaction… isolated and alone\"); modern kentli yalnızlığının metaforu.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C075",
+   "ifade": "Maske-yüzler (yorum): kimliğin metada dönüşmesi / bireyin metropolde anonimleşmesi olarak yorumlanabilir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S10",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C076",
+   "ifade": "Aura/mülkiyet okuması (yorum): iade + satış, eserin \"aura\"sını ve mülkiyetin kültürel anlamını sorgulatır (Benjamin ödünç; etki iddiası değil).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S10",
+    "S13",
+    "S18"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q3476580",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3476580.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities (26 QID etiket)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q3476580",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia EN",
+   "belge": "Berlin Street Scene (wikitext)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Berlin%20Street%20Scene",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia IT",
+   "belge": "Scena di strada berlinese (wikitext)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Scena%20di%20strada%20berlinese",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikipedia DE",
+   "belge": "Berliner Straßenszene (wikitext)",
+   "url": "https://de.wikipedia.org/w/api.php?action=parse&page=Berliner%20Stra%C3%9Fenszene",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Neue Galerie New York",
+   "belge": "Sergi sayfası (canlı)",
+   "url": "https://www.neuegalerie.org/exhibitions/kirchner-berlin-street-scene",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Neue Galerie New York",
+   "belge": "Sergi sayfası, Wayback 2014-07-11",
+   "url": "https://web.archive.org/web/20140711203708/http://neuegalerie.org/exhibitions/ernst-ludwig-kirchner-berlin-street-scene",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2014-07-11)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Christie's",
+   "belge": "Lot kısa URL (WD ref)",
+   "url": "https://www.christies.com/lot/lot-4807488",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "000 (curl 28, timeout); erişilemedi",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Christie's",
+   "belge": "Lot uzun URL (enwiki ref)",
+   "url": "https://www.christies.com/lot/lot-ernst-ludwig-kirchner-1880-1938-berliner-strassenszene-4807488/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "000 (curl 28, timeout); erişilemedi",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Christie's",
+   "belge": "Lot 37, Wayback 2026-02-22",
+   "url": "https://web.archive.org/web/20260222154437/https://www.christies.com/lot/lot-ernst-ludwig-kirchner-1880-1938-berliner-strassenszene-4807488/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2026-02-22)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "MoMA",
+   "belge": "Sergi sayfası (canlı)",
+   "url": "https://www.moma.org/calendar/exhibitions/32",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (bot engeli); erişilemedi",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "MoMA",
+   "belge": "Sergi sayfası, Wayback 2025-09-15",
+   "url": "https://web.archive.org/web/20250915101615/http://www.moma.org/calendar/exhibitions/32",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2025-09-15)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Schnabel/Tatzkow",
+   "belge": "Kirchner restitution bülten + Gutachten, Wayback 2014-01-09",
+   "url": "https://web.archive.org/web/20140109200543/http://www.nazi-looted-art.com/kirchner-restitution/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2014-01-09)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Die Welt",
+   "belge": "Das Gemälde: Kirchners Berliner Straßenszene (04.05.2007)",
+   "url": "https://www.welt.de/regionales/berlin/article852126/Das-Gemaelde-Kirchners-Berliner-Strassenszene.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (redirect)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Der Spiegel",
+   "belge": "Kunstrestitution: Im Abgrund der Berliner ausgeflippt (30.05.2007)",
+   "url": "http://www.spiegel.de/kultur/gesellschaft/kunstrestitution-im-abgrund-der-berliner-strassen-a-485722.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (redirect)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "ArtDaily",
+   "belge": "Hess Heirs Commend Berlin For Returning Kirchner Painting",
+   "url": "https://artdaily.cc/news/17075/Hess-Heirs-Commend-Berlin-For-Returning-Kirchner-Painting",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "World Jewish Congress",
+   "belge": "German controversy over return of painting to Jewish heirs (The Times alıntısı)",
+   "url": "https://www.worldjewishcongress.org/en/news/german-controversy-over-return-of-painting-to-jewish-heirs",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S18",
+   "kurum": "Frankfurter Rundschau",
+   "belge": "Berliner Straßenszenen in New York (dpa, 30.01.2019)",
+   "url": "https://www.fr.de/kultur/berliner-strassenszenen-york-11611622.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S19",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Kirchner%20Berlin%20Street%20Scene%201913.jpg&prop=imageinfo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S20",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dosya sayfası wikitext (lisans şablonu)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=revisions&titles=File:Kirchner%20Berlin%20Street%20Scene%201913.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S21",
+   "kurum": "Neue Galerie New York",
+   "belge": "Collection German/Fine Arts landing, Wayback 2014-06-25 (Kirchner nesne verisi YOK)",
+   "url": "https://web.archive.org/web/20140625084953/http://neuegalerie.org/collection/German/Fine%20Arts",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200; çıkmaz sokak",
+   "tur": "birincil"
+  },
+  {
+   "id": "S22",
+   "kurum": "Wayback",
+   "belge": "fr-online.de eski URL snapshot sorgusu",
+   "url": "https://archive.org/wayback/available?url=fr-online.de/kultur/2937234.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; snapshot 2016-12-20 mevcut, çekilmedi",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Street, Berlin (Straße, Berlin)",
+   "sanatci": "Ernst Ludwig Kirchner",
+   "kurum": "The Museum of Modern Art, New York",
+   "gerekce": "Aynı Strassenbilder dizisinin AYRI tablosu (1913, 120.6×91.1); boyut/kimlik karışıklığına karşı dikkatli ayrım.",
+   "kanit": [
+    "C049",
+    "C005"
+   ]
+  },
+  {
+   "eser": "Fünf Frauen auf der Strasse",
+   "sanatci": "Ernst Ludwig Kirchner",
+   "kurum": "Museum Ludwig, Köln",
+   "gerekce": "Dizinin ilk eseri sayılır (1913); vitrin sergisi kompozisyonu; bu tablo geleneksel olarak \"ikinci eser\" (kesin değil).",
+   "kanit": [
+    "C053",
+    "C005"
+   ]
+  },
+  {
+   "eser": "Abend auf der Karl Johans gate (Evening on Karl Johan Street)",
+   "sanatci": "Edvard Munch",
+   "kurum": "Bergen Art Museum",
+   "gerekce": "Psikolojik kent resminin öncülü; Roters paralelliği (1892).",
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "NG canlı (S6) + Wayback 2014 (S7), Christie's Wayback 2026-02-22 (S10), MoMA Wayback 2025-09-15 (S12), Schnabel/Tatzkow Wayback 2014 (S13) yeniden açıldı; künye/konu/modeller/provenance/iade/satış/sergi doğrulandı. Welt (S14) ve FR (S18) canlı metinlerinden sosyal eleştiri/günlük/Lauder/Förderkreis teyit edildi. 12 ihtilaf D (C056–C067) açık; boyut/tarih/sosyal eleştiri/bakış yönü çözülmedi. Görsel S19/S20 metadata only, vision kotası ana oturumda → İNCELENEMEDİ (C068); GZ TASLAK. Refs kitap metinleri erişilmedi (C069). Brief fig.2 Museum Folkwang→Museum Ludwig düzeltmesi not edildi.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Müze: data \"Neue Galerie\" ✓ (S1 P195 preferred Q59468 + S6). Brücke-Museum 1980–2006 GEÇMİŞ sahiplik; ayrı versiyon değil.",
+  "Tarih: data \"1913\" ↔ NG \"1913-14\" / Christie's \"1913-1914\" (D2, C056); NG 2014 \"(1913-24)\" muhtemel dizgi (E11, C073).",
+  "Boyut: WD/wiki/Commons 121×95 ↔ Christie's 121.6×91.1 (D1, C057). DERS boyut_cm Christie's birincil ölçümü esas alındı; ihtilaf açık. MoMA 120.6×91.1 AYRI eser (C049).",
+  "\"Yozlaşmış sanat\" B destekli (C047) ama bu esere özgü müsadere kaydı yok; tablo Nazi döneminde özel mülkiyette (Hess→Hagemann→Holzinger).",
+  "Bakış yönü: data \"sağdaki kadınlara yan gözle\" ↔ dewiki \"sağdaki resimden dışarı\" ↔ en farklı (D10, C066); görsel teyit gerekli.",
+  "Görsel ayrıntıları: data \"sarı sigara, beyaz eldiven, kahverengi at, yeşil tekerlek, imza konumu, renk\" İNCELENMEDİ (E9, C072); sigara Commons kategorisiyle dolaylı.",
+  "Envanter no bulunamadı (WD P217 yok; NG sergi sayfasında yok; NG nesne sayfası bulunamadı, S21 çıkmaz sokak).",
+  "Brief düzeltmesi (Denetim B): brief §0 fig.2 \"Fünf Frauen\" için \"Museum Folkwang\" der; Christie's fig.2 + FR \"Museum Ludwig, Köln\" verir → karşılaştırmada Museum Ludwig esas alındı (C053).",
+  "Görsel İNCELENEMEDİ (C068); GZ TASLAK; insan editör görsel teyidi ZORUNLU."
+ ]
+}

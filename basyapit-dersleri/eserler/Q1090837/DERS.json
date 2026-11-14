@@ -1,0 +1,808 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1090837",
+ "sanatci_id": "georges-seurat",
+ "baslik": "Asnières'de Yıkananlar",
+ "ozgun_baslik": "Une baignade à Asnières (Bathers at Asnières)",
+ "kunye": {
+  "sanatci": "Georges Seurat",
+  "sanatci_yasam": "1859–1891",
+  "tarih": "1884",
+  "tarih_belirsizlik": "NG \"Date made 1884\" (A); ilk fikir 1882 olabilir (E6, belirsiz)",
+  "teknik": "Tuval üzerine yağlıboya (oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 201,
+   "genislik": 300
+  },
+  "muze": "National Gallery, Londra",
+  "envanter": "NG3908",
+  "edinim": "Bought, Courtauld Fund, 1924",
+  "konum": "Room 44 (Main Collection)",
+  "telif_durumu": "Kamu malı (Seurat ö.1891; PD-old-100-expired); Commons PD-Art"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Baigneurs_a_Asnieres.jpg",
+  "kaynak": "Wikimedia Commons (credit: National Gallery, London)",
+  "lisans": "Public domain (PD-Art / PD-old-100-expired)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (S5); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "6367×4226 px (~11,6 MB)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C050); GZ TASLAK; kompozisyon NG (A) + wiki (B) metninden; ObjectName anomalisi (C048)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 441
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1460
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2695
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kayıt-ve-ihtilaflar"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-kuşku-işaretleri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-erken-eleştiriler"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-hazırlık-süreci-ve-x-ışını-bulguları"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-ve-toplumsal-okuma-tartışması"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-balayé-renk-kuramı-rötuşlar"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "National Gallery birincil kaydıyla künyeyi (1884, oil on canvas, 201×300, NG3908, Room 44, Courtauld Fund 1924) doğrular.",
+  "Tablonun neden noktacılık olmadığını, kısmi rötuşu ve balayé tekniğini açıklar.",
+  "Salon reddi → Salon des Indépendants sürecini ve 1884/1886 alımlamasını analiz eder.",
+  "İşçi sınıfı dinlenmesi ↔ burjuva boş zaman karşıtlığını ve Grande Jatte ile mekânsal/toplumsal ayrımı değerlendirir.",
+  "Boyut, eskiz sayısı, baca dumanı, nokta rengi ve mekân ihtilaflarını yönetir; belirsizlikleri korur."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Noktacılık (pointillism)",
+   "tanim": "Tamamlayıcı renklerin küçük noktalar hâlinde yan yana konması; Seurat sonraki eserlerinde geliştirdi, bu tablo o tarzda değil.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "Balayé",
+   "tanim": "Düz fırçayla mat renklerin çapraz vuruşlarla uygulanması; vuruşlar ufka doğru küçülür.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Croquetons",
+   "tanim": "Seurat'nın küçük yağlı hazırlık panolarına verdiği ad (\"eskizcikler\").",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "ad": "Conté crayon",
+   "tanim": "Yumuşak, derecelenebilir siyah desen kalemi; beş ana figür için dokuz desen.",
+   "kanit": [
+    "C027",
+    "C006"
+   ]
+  },
+  {
+   "ad": "Salon des Indépendants",
+   "tanim": "1884 Salon reddi sonrası kurulan alternatif sergi; katalog no 261.",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Künye: Bathers at Asnières, Georges Seurat (1859–1891), 1884, oil on canvas, 201×300 cm, signed (alt solda \"Seurat\"), NG3908, Room 44, Main Collection, 19th-century French Frame, \"Bought, Courtauld Fund, 1924\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Seurat'nın ilk büyük kompozisyonu; 25 yaşına basmadan yapıldı; 1884 baharındaki resmî Salon'a sunuldu, REDDEDİLDİ; ardından yeni kurulan Salon des Artistes Indépendants'ta sergilendi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Konu: Seine kıyısında (Asnières ve Courbevoie, Paris'in kuzeybatısındaki sanayi banliyösü) dinlenen erkekler ve oğlanlar; profilden, heykel gibi hareketsiz, her biri kendi düşüncesine dalmış; parlak ama puslu güneş, \"eerie stillness\". Figürler friz gibi profilden, kesintisiz dış çizgilerle pürüzsüz bedenler; mekânda patika, bakımsız evler/villalar, tekne tersaneleri, atölyeler, alt sınıf kafe/restoranları vardı; tablo kesiti bakımlı park gibi sunar, at yıkanması gibi beklenen etkinlikleri göstermez (eskizlerde atlar var).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Arka plan: demiryolu köprüsü paralel karayolu köprüsünü kısmen gizler; Clichy gaz fabrikası ve fabrika bacaları; \"where some of the men may work\" (kuşku korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "\"Une baignade\" = 'a bathing place'; orta sınıf eğlencesi değil ÇALIŞMA yeri (atların/köpeklerin yıkandığı, su içtiği; teknelerin sürüklenip indirildiği); kumlu oluk bu pratikten oluştu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Stüdyoda, titizlikle planlanarak yapıldı (açık havada değil); \"some 13 oil sketches and 10 drawings survive\"; NG koleksiyonunda iki yağlı eskiz.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Tablo noktacılık tarzında DEĞİL; Seurat sonradan bazı bölümleri bu teknikle yeniden boyadı: \"the orange hat was reworked later with spots of yellow and blue\"; su için geniş fırça vuruşları (Monet/Renoir öncülü; köprü Renoir The Skiff).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Giysiler (melon şapka, bot, kolsuz atlet) işçi/alt orta sınıf ima eder; kimse emek/spor faaliyeti içinde değil; \"even the two in the water do not appear to be swimming\"; burjuva çift (şemsiye, silindir şapka) üç renkli bayraklı kayıkla karşıya geçiriliyor; kürekçi tek çalışan; \"does not convey an obvious political statement\"; anıtsal ölçek geleneğe meydan okuma.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "École des Beaux-Arts akademik eğitimi; ellerini ağzına götüren oğlan \"evokes the Greek water god Triton blowing his conch shell\"; Piero della Francesca (özellikle Arezzo freskleri), soluk \"alabaster\" ten tonları; Louvre'de resim incelemesi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Puvis de Chavannes benzerliği: ölçek (duvar resmi gibi), yarı çıplak figürler klasik kabartma gibi yatay düzlemlerde, geometrik kompozisyon; Doux pays (Musée Bonnat, Bayonne), 1882 Salonu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Grande Jatte karşıtlığı: ikinci anıtsal tablo (NG \"of 1885\", Art Institute of Chicago) aynı nehir kesitini KARŞI kıyıdan gösterir; sağdaki ağaç öbeği adanın ucudur; \"separated both spatially and socially\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Provenance: 1891 ölümünden sonra ailesinde; Félix Fénéon (1861–1944) \"probably in 1900\" edindi, 1924'te Galerie Bernheim-Jeune'den emekliliği sırasına dek tuttu; 1924'te Courtauld Fund mütevelli heyeti Independent Gallery, London'dan (Percy Moore Turner, 1877–1950) satın aldı; 1961'de Tate Gallery'den devredildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Audio description: \"seven seemingly male figures, some dressed, some in swim wear\"; beşi kıyıda, ikisi suda; \"2 metres high by 3 metres wide\"; imza alt solda \"Seurat\"; merkez figür profilden, omuzları düşük, açık kırmızı şort, Roma burnu; kırmızı-turuncu şapkanın gölgesi mavi noktalar; köpek; üç yelkenli + iki kürekli tekne; burjuva çift ölçek olarak küçük.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Sergi geçmişi (NG notu: \"exhibition histories are listed from 2009 onwards\"): Courtauld Impressionists: From Manet to Cézanne, NG, 17 September 2018 – 20 January 2019.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Provenance metninin kaynağı: Martin Davies + Cecil Gould, NG Catalogues: French School…, London 1970; Isobel Muir eklemeleri.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "balayé tekniği: düz fırçayla mat renklerin çapraz (criss-cross) vuruşlarla uygulanması; ufka doğru küçülür; ön planda alt katman üstüne balayé ağı, suda ince yatay vuruşlar, tenlerde pürüzsüz işleme.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Mekân: figürler Asnières komününde DEĞİL, batıdaki komşu Courbevoie'da; sol yamaç \"Côte des Ajoux\" (rue des Ajoux ucu); sağda Grande Jatte adasının doğu ucu (Seurat görsel olarak uzatmış); arka planda Asnières demiryolu köprüsü + Clichy sanayi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "1884 Salon des Indépendants: Salon reddinden sonra Groupe des Artistes Indépendants kurucu üyesi; ilk sergi 15 Mayıs–1 Temmuz 1884, place du Carrousel (Louvre yanı); katalog no 261; 402 sanatçı; \"beer hall\" bölümünde asıldı; aynı yıl Société des Artistes Indépendants'ın ilk sergisinde de asıldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "1886: Durand-Ruel tabloyu ~300 tuvalle New York'a, National Academy of Design'daki \"Works in Oil and Pastel by the Impressionists of Paris\" sergisine götürdü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "1884 eleştirileri: Paul Alexis \"This is a false Puvis de Chavannes. What funny male and female {{sic}} bathers! …\" (Cri du Peuple, 17 Mayıs 1884; {{sic}} korundu); Edmond Bazire \"Edmond Jacques\" mahlasıyla L'Intransigeant'ta olumlu; Claretie ve Roger Marx \"Impressionist\" diye niteledi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "The Sun (11 Nisan 1886, New York sergisi) olumsuz: \"monstrous picture … conceived in a coarse, vulgar, and commonplace mind … bad from every point of view\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Signac: \"great flat strokes, brushed one over the other … palette composed, like Delacroix's, of pure and earthy colours … ochres and browns … deadened … less brilliant than … impressionists … But the understanding of the laws of contrast, the methodical separation of elements … gave this canvas its perfect harmony.\"",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Piero della Francesca bağı: Resurrection'daki uyuyan muhafız ↔ oturan adam (kambur sırt, bükük bacaklar); Flandrin'ın Young Male Nude Seated beside the Sea'sı; Charles Blanc'ın École şapeline Arezzo fresk kopyalarını yerleştirmesi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Blanc'ın Grammaire des arts du dessin'i (1867; Seurat École'e başladığı yıl okudu); Poussin'ın The Finding of Moses'ı (1638) ile kompozisyon paralellikleri; \"raised to the dignity of a history painting\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Renk kuramı kaynakları: David Sutter, Chevreul, Ogden Rood (Modern Chromatics, Fr. çeviri 1881'de okundu); eşzamanlı kontrast etkileri oturan adamın gövde/bacaklarında ve merkez figürün sırt/kolunda görünür.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "X-ışını: öndeki uzanan adamın bacakları sonradan daha yatay konuma alındı; arkadaki hasır şapkalı uzanan figür X-ışınında HİÇ yok (geç ekleme); sandal, üç renkli bayraklı vapur ve noktacılık lekeleri de X-ışınında yok; \"A contentious theory suggests\" bunların Grande Jatte bağı için eklendiği.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Hazırlık: de Hauke catalogue raisonné 14 yağlı eskiz sayar; son eskiz 1883, Art Institute of Chicago; \"croquetons\"; beş ana figür için dokuz conté crayon desen; ilk küçük yağlı çalışma \"It seems possible … as early as 1882\"; eskizler \"most if not all … almost certainly painted outdoors\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Puvis Doux Pays etkisi: anıtsal ölçek, yaşam boyu figürler, mavi-yeşil bölünmüş renk alanları; Homer: \"pale and somewhat chalky tonality … recalls the earlier decorations of [Puvis]\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Provenance (wiki sürümü): aile → 1900 Fénéon satın aldı → 1924 İngiliz ulusal koleksiyonları (itwiki: Courtauld Fund katkısıyla) → Tate → 1961 NG; onlarca yıl sonra kritik saygınlık. NOT: NG \"probably in 1900\" der; NG sürümü (C012) esas.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "WD: P135 Neo-Impressionism, P136 genre art, P180 bathing + Asnières-sur-Seine, P31 painting — tümü refsiz; akım/konu NG metniyle uyumlu, P180 mekân adı D5.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C031",
+   "ifade": "WD boyut: P2048=201 cm, P2049=301.5 cm (refsiz); P571=1884 (ref DBpedia, zayıf). 301.5 NG ile çelişir (D1); 1884 NG ile teyitli.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C032",
+   "ifade": "TR ad \"Asnières'de Yıkananlar\" (WD tr label, trwiki sitelink); data/basyapitlar ile birebir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "enwiki atıfsız: tuval, Grande Jatte'ın boyalı kenarlığı hariç bölümüyle aynı boyutta; 1882'de rue Chabrol'da küçük stüdyo kiralandı (stüdyo cümlesi Leighton p.14 atıflı, tuval-boyutu eşitlemesi atıfsız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "enwiki görsel alt yazısı: \"Pointillistic retouches applied around 1887\" (atıfsız); data \"1887 dolaylarında\". NG rötuşu doğrular ama TARİH VERMEZ (E8).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "D1 Genişlik: NG (A) \"201 × 300 cm\"; Art UK \"H 201 x W 300 cm\" ↔ enwiki infobox 301 cm; itwiki \"301,5\"; WD P2049=301.5 (refsiz). Birincil NG esas; yükseklik 201 her kaynakta aynı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S9",
+    "S2",
+    "S3",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "D2 Hazırlık çalışması sayısı: NG \"some 13 oil sketches and 10 drawings survive\"; NG ilgili-eser kartı \"one of 13 or 14 oil sketches\" (NG'nin kendi kuşkusu) ↔ de Hauke 14 yağlı eskiz + 9 conté desen. \"some\"/\"13 or 14\" kuşkuları AYNEN korunur.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "D3 Fabrika bacaları dumanı: itwiki \"bacalar söndük, duman trenden\" ↔ NG audio \"bir bacadan büyük gri duman bulutu\" + köprüde ayrı tren buharı; enwiki \"for all that the chimneys belch\"; data \"dumanı tüten fabrika bacaları\". itwiki NG birincil betimiyle çelişir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S6",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D4 Şapka rötuş noktalarının rengi: NG \"spots of yellow and blue\" ↔ itwiki \"puntini blu e arancioni contrastanti\" ↔ data \"turuncu ve mavi noktalar\". NG sarı+mavi; itwiki/data mavi+turuncu. Şapkanın kendisi turuncu/kırmızımsı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D5 Sahnenin komünü: WD P180/itwiki Asnières-sur-Seine ↔ enwiki \"not in the commune of Asnières, but in Courbevoie\" (Leighton & Thompson atıflı) ↔ NG \"at Asnières and Courbevoie\". Başlık Asnières'i korur; NG iki komünü birlikte anar.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S2",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "E1 Fénéon edinim tarihi: NG \"probably in 1900\" / \"about the time\" ↔ enwiki/itwiki \"1900\" diye kesinleştirir. Kuşku korunur.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "E3 Geç eklemeler / Grande Jatte bağı: NG couple \"who may have been added later as a link\"; enwiki \"A contentious theory suggests\"; X-ışınında sandal/vapur/noktalar yok. Teori tartışmalı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "E4 Ellerini ağzına götüren oğlan: itwiki \"come se si volesse scaldare (oppure, forse … amplificare un grido)\"; NG \"as if calling to someone\" / Triton; audio \"Could he be a factory worker on his break?\". Anlam belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "E5 Toplumsal okuma: itwiki \"potrebbe simboleggiare l'alienazione … anche se … più verosimilmente\" klasik yıkananlar teması; NG \"does not convey an obvious political statement\"; data \"bu yorum tartışmalıdır\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C044",
+   "ifade": "E6 İlk fikir/çalışma tarihi: enwiki \"It seems possible … as early as 1882\"; itwiki \"È possibile … già a partire dal 1882\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "E7 Son eskiz boyutu: enwiki \"just 25 cm long and 16 cm high\" ↔ itwiki \"15.8x25.1 cm\" (AIC); enwiki eskizler \"most if not all … almost certainly painted outdoors\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "E8 Rötuş tarihi \"1887\": enwiki caption \"around 1887\" ATIFSIZ; NG tarih vermez; data \"1887 dolaylarında\". Tarih iddiası kanıtsız.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "E9 Venturi sayfa numarası: itwiki ref adı \"p. 292\" ama şablon \"p=285\" (La via dell'impressionismo, 1994) — iç tutarsızlık.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "E11 Commons/WD başlık anomalisi: ObjectName \"Seated Nude: Study for 'Une Baignade'\" (eskiz başlığı ana tablo dosyasına bağlı); WD P1476 ikinci başlık; WD P608 → Q64259351 (Félix Fénéon, kişi) + P3831=photograph — anomali modelleme.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "E12 Grande Jatte tarihi (çevresel): NG In-depth \"of 1885\" ↔ NG ilgili-eser kartları \"of 1884–6\" — NG içi tutarsızlık; bu eserinin tarihi değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız metadata + lisans (S5, PD-old-100-expired, 6367×4226); GZ TASLAK; kompozisyon NG (A) + wiki (B) metninden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "Kitap/makale metinlerine ERİŞİLMEDİ (Leighton & Thompson 1997, Kirby & Roy 2003, Rewald, Signac 1921, Boime 1965, Cooper c.1946, de Hauke 1961, Venturi 1994 vb.); yalnız erişilen kayıtların bibliyografyasında görüldü; atıf zinciri olarak aktarıldı (uydurma bibliyografya yok).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q1090837",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1090837.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia EN",
+   "belge": "Bathers at Asnières (wikitext)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Bathers%20at%20Asni%C3%A8res&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia IT",
+   "belge": "Bagnanti ad Asnières (wikitext)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Bagnanti%20ad%20Asni%C3%A8res&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketleri (21 QID)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q34013%7CQ180788",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wbgetentities)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo File:Baigneurs a Asnieres.jpg",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File%3ABaigneurs%20a%20Asnieres.jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (imageinfo); İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "National Gallery (Londra)",
+   "belge": "Birincil katalog: Overview/In-depth/Audio/Details/Provenance/Exhibition/Bibliography",
+   "url": "https://www.nationalgallery.org.uk/paintings/georges-seurat-bathers-at-asnieres",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 canlı tam metin",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "National Gallery (data)",
+   "belge": "WD P195 ref URL (S6'ya redirect)",
+   "url": "https://data.ng.ac.uk/0CP9-0001-0000-0000.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 → S6 redirect (özdeş)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Art UK",
+   "belge": "eser kaydı (canlı)",
+   "url": "https://artuk.org/discover/artworks/bathers-at-asnieres-114362",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 Cloudflare (canlı engelli)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Art UK (Wayback)",
+   "belge": "S8 snapshot; NG Overview + Measurements/Accession",
+   "url": "https://web.archive.org/web/20240729125611/https://artuk.org/discover/artworks/bathers-at-asnieres-114362",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2024-07-29)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Internet Archive",
+   "belge": "wayback/available (S8 için)",
+   "url": "https://archive.org/wayback/available?url=artuk.org/discover/artworks/bathers-at-asnieres-114362",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wayback/available)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S11",
+   "kurum": "National Gallery (eski)",
+   "belge": "enwiki ref \"30 highlight paintings\", url-status=dead",
+   "url": "http://www.nationalgallery.org.uk/collection/glance.htm",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ÇEKİLMEDİ (ölü; S6 güncel kanıt)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Smarthistory/Khan Academy",
+   "belge": "enwiki external link",
+   "url": "http://smarthistory.khanacademy.org/seurats-bathers-at-asnieres.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "bulundu, ÇEKİLMEDİ",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "enwiki external link: tam metin sergi kataloğu",
+   "url": "http://libmma.contentdm.oclc.org/cdm/compoundobject/collection/p15324coll10/id/73155",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "bulundu, ÇEKİLMEDİ",
+   "tur": "ikincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "A Sunday on La Grande Jatte",
+   "sanatci": "Georges Seurat",
+   "kurum": "Art Institute of Chicago",
+   "gerekce": "Aynı nehir kesiti karşı kıyıdan; orta sınıf eğlencesi ↔ işçi dinlenmesi karşıtlığı.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "eser": "Doux pays",
+   "sanatci": "Puvis de Chavannes",
+   "kurum": "Musée Bonnat, Bayonne",
+   "gerekce": "Anıtsal ölçek, kabartma benzeri figür düzlemleri, geometrik kompozisyon öncülü (1882 Salon).",
+   "kanit": [
+    "C010",
+    "C028"
+   ]
+  },
+  {
+   "eser": "The Skiff",
+   "sanatci": "Pierre-Auguste Renoir",
+   "gerekce": "Aynı demiryolu köprüsü; suyun geniş fırça vuruşlu işlenmesinin Empresyonist öncülü.",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "NG birincil (S6, canlı 200 tam metin; S7 özdeş redirect) + Art UK Wayback 2024-07-29 (S9; canlı S8 403) yeniden açıldı; künye/konu/teknik/provenance/sergi doğrulandı. en/it wikitext (S2/S3) yeniden okundu; balayé/mekân/Indépendants/eleştiriler/X-ışını/hazırlık doğrulandı. Beş ihtilaf D (C035–C039), on iki belirsizlik E (C040–C051) açık; hedge'ler korundu. Görsel S5 metadata only → İNCELENEMEDİ (C050); GZ TASLAK. Kitap/makale metinleri erişilmedi (C051).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Özet \"yüzen\": data/basyapitlar \"dinlenen ve yüzen işçi sınıfından erkekleri\" ↔ NG \"do not appear to be swimming\" (C008) → nüans notu.",
+  "Bacalar: data \"dumanı tüten fabrika bacaları\" NG audio ile uyumlu; itwiki \"bacalar söndük\" çelişkisi (C037/D3).",
+  "Rötuş: data \"1887 dolaylarında turuncu ve mavi noktalar\" ↔ NG \"yellow and blue\" (C038/D4); \"1887\" atıfsız (C046/E8).",
+  "Konu \"nu\": data/eser_konulari {\"t\":\"nu\"} ↔ NG \"some dressed, some in swim wear\"; yarı çıplak/mayolu, tam nü değil → sınıflama notu.",
+  "Önbellek lisans boş: data/eserler_onbellek \"l\":\"\" → S5 PD-old-100 teyitli; doldurma önerisi ana oturuma.",
+  "ders_kaynaklari kanit_adaylari[4] durum=\"belirsiz\" puan=0.5 → NG (C007) + balayé (C016) ile destekli; seviye yükseltme ana oturumun kararı.",
+  "TR adlar: \"Final Study for …\" / \"Study for …\" ayrı kayıtlı; ana eserle karıştırılmamalı (C048/E11).",
+  "Boyut: WD 301.5 (C035/D1); data'da boyut alanı yok; NG 300 esas.",
+  "Hiçbir data/ dosyasına yazılmadı."
+ ]
+}

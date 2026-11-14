@@ -1,0 +1,546 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3640080",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Mavi Koltukta Küçük Kız'ın sanatçısı ve tarihi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Mary Cassatt, 1878"
+    },
+    {
+     "harf": "B",
+     "metin": "Berthe Morisot, 1879"
+    },
+    {
+     "harf": "C",
+     "metin": "Edgar Degas, 1878"
+    },
+    {
+     "harf": "D",
+     "metin": "Mary Cassatt, 1886"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA birincil katalog: Mary Cassatt, 1878 (S5).",
+   "yanlis_gerekceleri": {
+    "B": "Berthe Morisot başka bir Empresyonisttir; bu eserin sanatçısı Cassatt, tarihi 1878'dir.",
+    "C": "Degas bu esere arka planda katkı vermiştir ama sanatçısı Cassatt'tır.",
+    "D": "1886 Cassatt'ın Empresyonist çevrede aktif olduğu sonraki bir yıldır; eserin tarihi 1878'dir."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser hangi kurumdadır ve envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "National Gallery of Art, Washington — 1983.1.18"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée d'Orsay, Paris — RF 1983"
+    },
+    {
+     "harf": "C",
+     "metin": "Metropolitan Museum, New York — 1983.1"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre, Paris — INV 1983"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA katalog: Washington, 1983.1.18 (S5).",
+   "yanlis_gerekceleri": {
+    "B": "Musée d'Orsay Paris'tedir ve Degas'nın L'Absinthe'ini barındırır; bu eser NGA'dadır.",
+    "C": "Metropolitan New York'tadır; bu eser 1983.1.18 envanteriyle NGA'dadır.",
+    "D": "Louvre Paris'tedir; eser NGA Washington'dadır."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tekniği ve overall boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval — 89,5 × 129,8 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "Pastel, kâğıt — 89,5 × 129,8 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya, pano — 129,8 × 89,5 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya, tuval — 130 × 89,5 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA: oil on canvas, overall 89.5 × 129.8 cm (S5).",
+   "yanlis_gerekceleri": {
+    "B": "Teknik pastel değil yağlıboya; destek kâğıt değil tuvaldir.",
+    "C": "Destek pano değil tuvaldir; boyut yükseklik×genişlik olarak 89,5×129,8'dir.",
+    "D": "Teknik suluboya değildir; 130 cm itwiki yuvarlamasıdır, birincil 129,8 der."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Tablonun modeli kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Edgar Degas'nın arkadaşlarının kızı"
+    },
+    {
+     "harf": "B",
+     "metin": "Cassatt'ın kendi kızı"
+    },
+    {
+     "harf": "C",
+     "metin": "Degas'nın kızı"
+    },
+    {
+     "harf": "D",
+     "metin": "Profesyonel bir çocuk model"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA: \"the daughter of friends of painter Edgar Degas\" (S5).",
+   "yanlis_gerekceleri": {
+    "B": "Model Cassatt'ın kızı değil, Degas'nın arkadaşlarının kızıdır.",
+    "C": "Model Degas'nın kızı değil, arkadaşlarının kızıdır.",
+    "D": "Kaynaklar profesyonel model değil Degas'nın arkadaşlarının kızı olduğunu belirtir; ad verilmez."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eseri sanatçıdan kim satın aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ambroise Vollard (Paris)"
+    },
+    {
+     "harf": "B",
+     "metin": "Hector Brame (Paris)"
+    },
+    {
+     "harf": "C",
+     "metin": "Paul Mellon"
+    },
+    {
+     "harf": "D",
+     "metin": "Paul Durand-Ruel"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA provenance: \"Purchased from the artist by (Ambroise Vollard, Paris)\" (S5).",
+   "yanlis_gerekceleri": {
+    "B": "Hector Brame eseri Vollard'dan sonra edindi; sanatçıdan ilk alan Vollard'dır.",
+    "C": "Mellon çifti eseri 1963'te satın aldı; sanatçıdan ilk alan Vollard'dır.",
+    "D": "Durand-Ruel Empresyonistlerin galericisidir ama bu eserin sanatçıdan ilk alıcısı Vollard'dır."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Mellon çifti eseri ne zaman satın aldı ve NGA'ya ne zaman hediye etti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kasım 1963 satın alma — 1983 hediye"
+    },
+    {
+     "harf": "B",
+     "metin": "1903 satın alma — 1966 hediye"
+    },
+    {
+     "harf": "C",
+     "metin": "1928 satın alma — 1970 hediye"
+    },
+    {
+     "harf": "D",
+     "metin": "1912 satın alma — 1983 hediye"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA provenance: \"sold November 1963 to Mr. and Mrs. Paul Mellon … gift 1983 to NGA\" (S5).",
+   "yanlis_gerekceleri": {
+    "B": "1903 Vollard mektubunun yaklaşık tarihidir; Mellon satın alması 1963'tür.",
+    "C": "1928/1970 sergi yıllarıdır; Mellon satın alması 1963, hediye 1983'tür.",
+    "D": "1912 bir sergi yılıdır; Mellon satın alması Kasım 1963'tür."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Cassatt çocukları nasıl resmetmesiyle tanınır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ruh hâli ve kişiliği olan bireyler olarak"
+    },
+    {
+     "harf": "B",
+     "metin": "Küçük yetişkinler gibi uslu minyatürler olarak"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca mitolojik figürler olarak"
+    },
+    {
+     "harf": "D",
+     "metin": "Daima gülümseyen, idealize bebekler olarak"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA: \"Rather than showing them as miniature adults, she painted them as individuals with moods and personalities\" (S5).",
+   "yanlis_gerekceleri": {
+    "B": "NGA tam tersini söyler: çocukları küçük yetişkinler olarak değil birey olarak resmetti.",
+    "C": "Cassatt mitolojik figürlerden çok gündelik çocukları resmetti.",
+    "D": "İdealize, daima gülümseyen bebekler yerine ruh hâli olan (ör. sıkılmış) çocukları resmetti."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Kızın giysisi (ekose kuşak, dantelli elbise, gümüş tokalı ayakkabılar) neye işaret eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Orta ya da üst sınıf bir aileye"
+    },
+    {
+     "harf": "B",
+     "metin": "Köylü bir aileye"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir işçi sınıfı aileye"
+    },
+    {
+     "harf": "D",
+     "metin": "Rahibe kıyafetine"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA Look Closer: \"She is the child of a middle- or upper-class family\" (S5).",
+   "yanlis_gerekceleri": {
+    "B": "Giysi köylü değil, orta/üst sınıf göstergesidir.",
+    "C": "İşçi sınıfı değil, orta/üst sınıf işaretidir.",
+    "D": "Bu bir rahibe kıyafeti değil, dönemin moda çocuk giysisidir."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Cassatt'ın Empresyonistler içindeki konumu için en doğru ifade hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Grupla resmî olarak ilişkili (officially associated) tek Amerikalı"
+    },
+    {
+     "harf": "B",
+     "metin": "Grubun kurucusu ve lideri"
+    },
+    {
+     "harf": "C",
+     "metin": "Grupla hiç sergi açmayan bir Amerikalı"
+    },
+    {
+     "harf": "D",
+     "metin": "Grubun tek kadın üyesi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S11 (Weinberg/Met atıfı): \"The only American officially associated with the Impressionists\" (S11).",
+   "yanlis_gerekceleri": {
+    "B": "Cassatt kurucu/lider değil, Degas'nın davetiyle katılan bir üyeydi.",
+    "C": "Cassatt grubun sonraki sergilerinin yarısında yer aldı; hiç sergi açmayan biri değildi.",
+    "D": "Grupta Berthe Morisot gibi başka kadınlar da vardı; Cassatt tek kadın değildi."
+   },
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Degas'nın Cassatt üzerindeki etkisi bu tabloda hangi biçimsel özelliklerde görülür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Asimetrik kompozisyon, desen kullanımı, Japon baskısı tarzı kadraj"
+    },
+    {
+     "harf": "B",
+     "metin": "Simetrik, merkezi kompozisyon ve pürüzsüz yüzey"
+    },
+    {
+     "harf": "C",
+     "metin": "Klasik mitolojik alegori"
+    },
+    {
+     "harf": "D",
+     "metin": "Tamamen soyut renk alanları"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2/S9: asimetrik kompozisyon, desen, Japon baskıları tarzı kadraj (Degas'nın tanıştırdığı).",
+   "yanlis_gerekceleri": {
+    "B": "Kompozisyon simetrik değil asimetrik; yüzey pürüzsüz değil serbest fırçalıdır.",
+    "C": "Eser mitolojik alegori değil, gündelik bir çocuk portresidir.",
+    "D": "Eser soyut renk alanları değil, figüratif bir iç mekân sahnesidir."
+   },
+   "kanit": [
+    "C016"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser yağlıboya tuvaldir, 89,5 × 129,8 cm, NGA Washington'dadır (1983.1.18).",
+   "dogru": true,
+   "aciklama": "Doğru — NGA birincil katalog (S5).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Model Cassatt'ın kendi kızıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış — model Degas'nın arkadaşlarının kızıdır (S5).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Cassatt çocukları \"küçük yetişkinler\" gibi uslu minyatürler olarak resmetti.",
+   "dogru": false,
+   "aciklama": "Yanlış — NGA tam tersini belirtir: ruh hâli ve kişiliği olan bireyler (S5).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Cassatt'ın 1877 Salon'a sunduğu iki eser reddedildi; aynı yıl Degas onu Empresyonistler'e davet etti.",
+   "dogru": true,
+   "aciklama": "Doğru — Mathews 1994 üzerinden (S2).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eser 2026-11-03 arşiv görüntüsü itibarıyla NGA'da sergidedir (on view).",
+   "dogru": false,
+   "aciklama": "Yanlış — katalog \"Not on view\" gösterir (S5).",
+   "kanit": [
+    "C025"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Degas müdahalesinin yeri ve kesinliği ihtilafını (NGA arka köşe \"probably\" ↔ Bullard zemin+ışık \"probably\" ↔ ARTnews kızılötesi açılı zemin) kaynak eleştirisiyle analiz edin.",
+   "beklenen_ogeler": [
+    "NGA köşe probably",
+    "Bullard zemin+ışık probably",
+    "ARTnews IR açılı zemin",
+    "uyumlu ama kesinlik farklı"
+   ],
+   "kanit": [
+    "C007",
+    "C017",
+    "C009",
+    "C037"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Reddedilme yeri ihtilafını (itwiki Salon, atıfsız ↔ S2/S7 Dünya Fuarı Amerikan bölümü) ve Barter'ın Cluysenaar karşı-kanıtını değerlendirin.",
+   "beklenen_ogeler": [
+    "itwiki atıfsız Salon",
+    "Dünya Fuarı Amerikan bölümü",
+    "1877 Salon redleri başka eserler",
+    "Cluysenaar benzer poz kabul"
+   ],
+   "kanit": [
+    "C027",
+    "C030",
+    "C015",
+    "C020"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "\"Radikal çocukluk\" okumalarını (Pollock, Chu, Greer, Barter, Bullard) karşılaştırın; hangisi olgu hangisi yorum?",
+   "beklenen_ogeler": [
+    "Pollock radikal",
+    "Chu radically new",
+    "Greer ikon",
+    "Barter bakım güdüsü",
+    "Bullard contented boredom"
+   ],
+   "kanit": [
+    "C018",
+    "C019",
+    "C020",
+    "C017",
+    "C044"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Zemin rengi, pencere sayısı, köpek rengi ve kuşak renkleri data-kaynak uyuşmazlıklarını listeleyin; neden görsel inceleme gerekli?",
+   "beklenen_ogeler": [
+    "peanut-brown↔gri",
+    "dört↔iki pencere",
+    "kahverengi↔siyah tüy",
+    "kuşak renkleri",
+    "görsel incelenmedi"
+   ],
+   "kanit": [
+    "C032",
+    "C033",
+    "C034",
+    "C038",
+    "C039"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Provenance zincirini ve Vollard mektubunun rolünü yazın; doğum yılı ve satın alma tarihi belirsizliklerini not edin.",
+   "beklenen_ogeler": [
+    "Vollard→Brame→Mellon→NGA",
+    "ca.1903 mektup",
+    "1866↔1867 doğum",
+    "around 1903 yalnız S2"
+   ],
+   "kanit": [
+    "C010",
+    "C028",
+    "C036",
+    "C041"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kızın yayılmış pozunu bulun: bir eli başının arkasında, bacakları açık, bakışı aşağı-sola.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NGA Visual Description: slumps back, legs spread, hand behind head.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Ekose kuşağı, kuşakla uyumlu çorapları ve gümüş tokalı siyah ayakkabıları bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NGA: matching tartan sash, bow, socks; black shoes with silver buckles.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Karşı koltukta kıvrılmış uyuyan köpeği bulun (gözler kapalı, kulaklar dik).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NGA Visual Description: dog curled in the chair opposite, eyes closed, ears pricked.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Canlı mavi döşemeli koltukları ve arka plandaki ek koltuk ile kolsuz loveseat'i bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NGA: matching celestial-blue armchairs; another armchair and armless loveseat at the back.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Sol alt köşedeki \"Mary Cassatt\" imzasını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NGA: signed in the lower left, \"Mary Cassatt\".",
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Little Girl in a Blue Armchair; Mary Cassatt; 1878; yağlıboya tuval; 89,5×129,8 cm; NGA Washington 1983.1.18; Collection of Mr. and Mrs. Paul Mellon; Breeskin 1970 no.56.",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Model + Cassatt'ın çocuk yaklaşımı?",
+   "arka": "Model Degas'nın arkadaşlarının kızı; Cassatt çocukları küçük yetişkinler değil, ruh hâli ve kişiliği olan bireyler olarak resmetti.",
+   "kanit": [
+    "C002",
+    "C003"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Provenance?",
+   "arka": "Sanatçıdan Vollard (Paris) → Hector Brame → Kasım 1963 Mellon → 1983 NGA hediye; şasi \"M. Vollard / 6 Rue Lafitte\".",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Degas etkisi (biçimsel)?",
+   "arka": "Asimetrik kompozisyon, desen, Japon baskısı tarzı kadraj; L'Absinthe diyagonalleriyle paralel; arka planda Degas müdahalesi.",
+   "kanit": [
+    "C016",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Vollard mektubu (ca. 1903)?",
+   "arka": "Cassatt → Vollard, Fransızca; Degas'dan ve mavi koltukta küçük kız tablosundan söz eder; Degas arka plana \"even worked on it\"; Dünya Fuarı Amerikan bölümü reddi.",
+   "kanit": [
+    "C028",
+    "C008"
+   ]
+  }
+ ]
+}

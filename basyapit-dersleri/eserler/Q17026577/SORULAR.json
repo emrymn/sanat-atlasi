@@ -1,0 +1,591 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q17026577",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu derste gösterilen nüsha (envanter 32.88.12, Harris Brisbane Dick Fund 1932) hangi koleksiyona aittir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Metropolitan Museum of Art, New York (Drawings and Prints)"
+    },
+    {
+     "harf": "B",
+     "metin": "Indianapolis Museum of Art at Newfields"
+    },
+    {
+     "harf": "C",
+     "metin": "Civica Raccolta di Stampe Bertarelli, Milano"
+    },
+    {
+     "harf": "D",
+     "metin": "Musée Toulouse-Lautrec, Albi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met birincil kaydı (API + katalog) 32.88.12 envanterini, \"Harris Brisbane Dick Fund, 1932\" credit line'ını ve Drawings and Prints departmanını verir; WD P195/P217/P276 de Met'i referanslı gösterir.",
+   "yanlis_gerekceleri": {
+    "B": "IMA'nın kendi birincil kaydı ayrı bir nüshayı belgeler: 36.4, \"Gift of the Gamboliers\", 67 × 46-3/4 in; gösterilen nüsha Met'indir.",
+    "C": "Bertarelli, Commons'taki Yorck dosyasının (WD P18) institution alanıdır; Met nüshasının kayıt künyesi değildir.",
+    "D": "Albi nüshası yalnız kaynaksız Fransızca Vikipedi maddesinde anılır (E); gösterilen nüshanın envanteri Met kaydıyla doğrulanır."
+   },
+   "kanit": [
+    "C008",
+    "C009",
+    "C038"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Met birincil kaydı eserin tekniğini nasıl tanımlar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Lithograph printed in four colors; three sheets of wove paper"
+    },
+    {
+     "harf": "B",
+     "metin": "Yağlıboya, tuval"
+    },
+    {
+     "harf": "C",
+     "metin": "Tek renk (siyah) litografi, tek tabaka kağıt"
+    },
+    {
+     "harf": "D",
+     "metin": "Ahşap baskı (woodcut), iki tabaka kağıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met medium alanı birebir bu ifadeyi verir; IMA kendi nüshasını \"ink on paper, color lithograph\" olarak kaydeder.",
+   "yanlis_gerekceleri": {
+    "B": "Eser bir baskıdır (Print; Prints, Posters); Met kaydı tuval/yağlıboya değil litografi ve wove kağıt belirtir.",
+    "C": "Kayıt dört renk ve üç tabaka der; tek renk/tek tabaka ifadeleri medium alanıyla çelişir.",
+    "D": "Met kaydı litografi der; woodcut ve iki tabaka ifadesi kayıtta yer almaz."
+   },
+   "kanit": [
+    "C005",
+    "C016"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Met nüshasını basan matbaa hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Affiches Américaines, Charles Lévy (Paris)"
+    },
+    {
+     "harf": "B",
+     "metin": "Imprimerie Chaix (Paris)"
+    },
+    {
+     "harf": "C",
+     "metin": "Maurice Le Garrec"
+    },
+    {
+     "harf": "D",
+     "metin": "Charles Zidler"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met API'de Printer rolü \"Affiches Américaines, Charles Lévy\", katalog sayfasında \"(Paris)\" ekıyla verilir.",
+   "yanlis_gerekceleri": {
+    "B": "Chaix, satıcı sayfasına göre 1898 \"Les Maîtres de l'Affiche\" küçültme serisinin matbaasıdır (C düzeyi); 1891 afişinin Met kaydındaki matbaası değildir.",
+    "C": "Maurice Le Garrec, Met provenance kaydındaki satıcıdır (\"Vendor: Maurice Le Garrec (French)\"); matbaa değildir.",
+    "D": "Charles Zidler, NGA'ya göre mekânın ortak sahibidir; matbaa değildir."
+   },
+   "kanit": [
+    "C006",
+    "C010",
+    "C027"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Gösterilen Met nüshasının yaprak boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "190 × 116,5 cm (74 13/16 × 45 7/8 in)"
+    },
+    {
+     "harf": "B",
+     "metin": "67 × 46-3/4 in"
+    },
+    {
+     "harf": "C",
+     "metin": "191 × 117 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "116,5 × 190 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met dimensions alanı \"sheet: 74 13/16 x 45 7/8 in. (190 x 116.5 cm)\" der; measurements Height 190 / Width 116.5.",
+   "yanlis_gerekceleri": {
+    "B": "Bu, IMA nüshasının (36.4) boyutudur; çok nüshalı eserde boyut nüshaya göre değişir.",
+    "C": "191 × 117 cm WD'de referanssızdır ve Commons dosya sayfasında Bertarelli nüshasına aittir; Met nüshasının ölçüsü değildir (tartışma).",
+    "D": "Met kaydında yükseklik 190, genişlik 116,5 cm'dir; bu seçenek ölçüleri ters çevirir."
+   },
+   "kanit": [
+    "C007",
+    "C038"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Afiş neyi ve kimi reklam eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Moulin Rouge dans salonunu; La Goulue ve Valentin le Désossé'yi"
+    },
+    {
+     "harf": "B",
+     "metin": "Chat Noir kabaresini; Steinlen'in kara kedisini"
+    },
+    {
+     "harf": "C",
+     "metin": "Moulin Rouge'u; anonim chérettes tipindeki kadınları"
+    },
+    {
+     "harf": "D",
+     "metin": "Moulin Rouge'un bahçesindeki fil ve eşek gezintilerini"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met küratoryal metni kalabalık dans salonunu ve yıldızları (\"boneless\" Valentin, \"the glutton\" La Goulue) konu eder; IMA etiketi aynı iki şovmeni adlandırır.",
+   "yanlis_gerekceleri": {
+    "B": "Chat Noir ve Steinlen'in \"Tournée du Chat Noir\" afişi NGA metninde ayrı bir örnek olarak anılır; bu afişin konusu değildir.",
+    "C": "Anonim chérettes tipi Chéret'nin 1889 \"Bal du Moulin Rouge\" afişine aittir; Lautrec gerçek şovmenleri konu eder.",
+    "D": "Fil ve eşek gezintileri mekân ayrıntısı olarak satıcı/kaynaksız kaynaklarda geçer; afişin reklam konusu dans salonu ve yıldızlarıdır."
+   },
+   "kanit": [
+    "C017",
+    "C033",
+    "C036"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "La Goulue kimin sahne adıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louise Weber"
+    },
+    {
+     "harf": "B",
+     "metin": "Jane Avril"
+    },
+    {
+     "harf": "C",
+     "metin": "La Môme Fromage"
+    },
+    {
+     "harf": "D",
+     "metin": "May Milton"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "İngilizce Vikipedi (Larousse, Dictionnaire de la Danse 1999 atfı) La Goulue'nun Louise Weber'in sahne adı olduğunu yazar; NGA da \"Born Louise Weber\" der.",
+   "yanlis_gerekceleri": {
+    "B": "Jane Avril, NGA'nın \"At the Moulin Rouge\" tablosu betiminde anılan başka bir eğlencecidir.",
+    "C": "La Môme Fromage, İngilizce maddeye göre La Goulue'nun en yakın arkadaşı olan başka bir cancan dansçısıdır.",
+    "D": "May Milton, NGA'nın \"At the Moulin Rouge\" betiminde \"bazılarının düşündüğü\" figürdür; La Goulue ile aynı kişi değildir."
+   },
+   "kanit": [
+    "C018",
+    "C073",
+    "C074"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Valentin le Désossé (\"Kemiksiz Valentin\") lakabı neye gönderme yapar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Eklem esnekliğiyle \"kemiksiz\" gibi kıvrak dans etmesine"
+    },
+    {
+     "harf": "B",
+     "metin": "Bir kemik hastalığından kaynaklanan fiziksel duruma"
+    },
+    {
+     "harf": "C",
+     "metin": "Gündüz şarap tüccarı olarak çalışmasına"
+    },
+    {
+     "harf": "D",
+     "metin": "Sceaux'lu bir noterle akrabalığına"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met kaydı onu \"boneless\" acrobat olarak anar; İngilizce Vikipedi (Sorrell 1953 atfı) lakabı eklemlerinin esnekliğiyle açıklar.",
+   "yanlis_gerekceleri": {
+    "B": "Kaynaklar lakabı hastalıkla değil esneklikle açıklar; kemik hastalığı anlatısı Lautrec biyografisine aittir ve kaynaksız maddede geçer.",
+    "C": "Şarap tüccarlığı gündüz işidir (\"it is thought that\" ile hedge'li); lakabın nedeni değildir.",
+    "D": "Noter akrabalığı \"may have been the son of a notary\" biçiminde belirsiz bir biyografi ayrıntısıdır; lakapla ilgisi yoktur."
+   },
+   "kanit": [
+    "C017",
+    "C021",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Kaynakların betimlediği tasarımda seyirciler nasıl temsil edilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Siluet olarak (ayrıntısız düz biçimler)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ayrıntılı yüz portreleriyle"
+    },
+    {
+     "harf": "C",
+     "metin": "Hiç seyirci yok; yalnız iki dansçı"
+    },
+    {
+     "harf": "D",
+     "metin": "Gerçekçi renklerle boydan figürler olarak"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA kalabalığın siluet olarak verildiğini, İngilizce Vikipedi seyircinin siluete indirgendiğini yazar; bu, Japon sanatının düz tasarımları ve Chat Noir gölge tiyatrosuyla ilişkilendirilir.",
+   "yanlis_gerekceleri": {
+    "B": "Kaynaklar tam tersini söyler: seyirci ayrıntısızlaştırılmıştır, odak yıldızlardadır.",
+    "C": "NGA \"a sizable audience\" yani kalabalık bir seyirci kitlesi olduğunu belirtir.",
+    "D": "Betim düz renk alanları ve siluet üzerine kuruludur; gerçekçi boydan figür anlatımı kaynaklarda yoktur."
+   },
+   "kanit": [
+    "C034",
+    "C017"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Bu afiş Lautrec'in kariyerinde hangi yere sahiptir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İlk afişidir; afişçilik kariyerini başlatmış ve onu bir gecede ünlü yapmıştır"
+    },
+    {
+     "harf": "B",
+     "metin": "Son afişidir; 1898'de Chaix için yapılmıştır"
+    },
+    {
+     "harf": "C",
+     "metin": "Chéret'nin 1889 afişinin birebir kopyasıdır"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnızca özel bir koleksiyon için basılmış, kamuya asılmamıştır"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "IMA \"for his first poster\", Met \"launched his postermaking career\" ve \"made him famous overnight\" der; NGA Aralık 1891'de yaklaşık üç bin nüshanın duvarlara asıldığını yazar.",
+   "yanlis_gerekceleri": {
+    "B": "1898 Chaix küçültmesi (PL.122) ayrı bir nesnedir; afiş 1891 tarihlidir ve Lautrec'in ilk afişidir.",
+    "C": "NGA, Lautrec'in afişini Chéret'nin 1889 afişinden \"far more daring\" olarak ayırır; kopya değildir.",
+    "D": "Nüshaların çoğu reklam olarak duvarlara yapıştırılmış ve yok olmuştur; kamusal dolaşım eserin doğasında vardır."
+   },
+   "kanit": [
+    "C030",
+    "C032",
+    "C004",
+    "C031",
+    "C036"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "IMA nüshasının (36.4) edinim zinciri nasıldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1932'de Mary Quinn Sullivan tarafından Gamboliers için satın alındı; 1936'da John Herron Art Institute'a verildi"
+    },
+    {
+     "harf": "B",
+     "metin": "1932'de Harris Brisbane Dick Fund ile satın alındı"
+    },
+    {
+     "harf": "C",
+     "metin": "Maurice Le Garrec'ten 1932'de satın alındı"
+    },
+    {
+     "harf": "D",
+     "metin": "1999'da Denver Art Museum'dan devralındı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "IMA birincil kaydı: credit line \"Gift of the Gamboliers\"; provenance 1932 Sullivan satın alması ve 1936'da John Herron Art Institute'a (bugünkü IMA at Newfields) bağış.",
+   "yanlis_gerekceleri": {
+    "B": "Harris Brisbane Dick Fund, 1932 Met nüshasının (32.88.12) credit line'ıdır.",
+    "C": "Maurice Le Garrec, Met nüshasının provenance kaydındaki satıcıdır; IMA zincirinde geçmez.",
+    "D": "Denver Art Museum 1999, Met nüshasının sergi geçmişidir; bir edinim değildir."
+   },
+   "kanit": [
+    "C038",
+    "C008",
+    "C010",
+    "C011"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Met birincil kaydı eseri dört renkte basılmış, üç tabaka wove kağıttan oluşan bir litografi olarak tanımlar.",
+   "dogru": true,
+   "aciklama": "Doğru: medium alanı \"Lithograph printed in four colors; three sheets of wove paper\".",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Met nüshası ile IMA nüshasının boyutları aynıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Met yaprak 190 × 116,5 cm; IMA 67 × 46-3/4 in. Çok nüshalı eserde boyut nüshaya göre değişir (D1).",
+   "kanit": [
+    "C007",
+    "C038"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Bu afiş Lautrec'in ilk afişidir ve afişçilik kariyerini başlatmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru: IMA \"For his first poster…\"; Met \"launched his postermaking career\".",
+   "kanit": [
+    "C030"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "IMA'ya göre Lautrec, poster tasarımında ilk kez gerçek eğlencecileri reklamın konusu yapmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru: IMA \"for the first time in poster design, Toulouse-Lautrec featured the actual entertainers in the advertisement\".",
+   "kanit": [
+    "C033"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Met kaydı nüshanın şu anda galeride sergilendiğini belirtir.",
+   "dogru": false,
+   "aciklama": "Yanlış: kayıt \"Not on view\" der; GalleryNumber alanı boştur.",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Çok nüshalı bir eserde boyut ve görsel alanlarını nüshaya bağlamak için bir kataloglama protokolü önerin; İngilizce Vikipedi infobox'ının Met görseli + IMA boyutu birleşimini örnek alın.",
+   "beklenen_ogeler": [
+    "Met 190 × 116,5 cm (A)",
+    "IMA 67 × 46-3/4 in (A)",
+    "WD 191 × 117 referanssız",
+    "Bertarelli institution alanı",
+    "work-level ↔ copy-level ayrımı"
+   ],
+   "kanit": [
+    "C046",
+    "C007",
+    "C038",
+    "C040",
+    "C052"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Sipariş hikâyesindeki kanıt düzeylerini karşılaştırın: Met \"was commissioned\", NGA \"may have… or may have\", frwiki yarışma anlatısı, Yaneff doğrudan teklif. Hangi ifade esas alınmalı, neden?",
+   "beklenen_ogeler": [
+    "Met A ayrıntısız",
+    "NGA B belirsizlik beyanı",
+    "frwiki E kaynaksız",
+    "Yaneff C ticari",
+    "kesinleştirme yapılmaz"
+   ],
+   "kanit": [
+    "C028",
+    "C029",
+    "C048",
+    "C053"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "WD P18 görselinin Bertarelli nüshası olması ve yerel veride lisans/kurum alanının boş olması: görsel–nüsha eşleştirme ve lisans düzeltme önerisi yazın (görsel inceleme yapılmadığını belirterek).",
+   "beklenen_ogeler": [
+    "Yorck PD-Art-YorckProject lisansı",
+    "credit: Yorck Project 2002 / DIRECTMEDIA / ISBN 3936122202",
+    "institution: Bertarelli, Milano",
+    "Met birincil görsel CC0/PD + Open Access",
+    "oran eşleşmesi yalnız metadata çıkarımı",
+    "görsel teyit gerekli"
+   ],
+   "kanit": [
+    "C052",
+    "C040",
+    "C063",
+    "C065",
+    "C015"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "La Goulue ve Valentin biyografisindeki ihtilafları (1866↔1870, 1895↔1894, Jacques↔Étienne) kaynak hiyerarşisiyle değerlendirin; \"62 yaşında öldü\" iç tutarlılık çıkarımının sınırını açıklayın.",
+   "beklenen_ogeler": [
+    "Larousse 1999 atfı (B)",
+    "NGA (B) 1870",
+    "frwiki (E) kendi içinde çelişkili",
+    "iç tutarlılık ≠ nüfus kaydı",
+    "D korunur, kesin cevap üretilmez"
+   ],
+   "kanit": [
+    "C050",
+    "C051",
+    "C049",
+    "C066",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Afişin \"geçici reklam → sanat nesnesi\" dönüşümünü IMA etiketinin zaman çizelgesiyle olgusal olarak kurun; ardından Benjamin/Kant/Berger/Panofsky'den biriyle yorumlayın. Olgusal çekirdek ile yorumu ayırın; etkilenme iddiası kurmayın.",
+   "beklenen_ogeler": [
+    "günler/haftalar/aylar/bir yıl (A)",
+    "ilk afiş (A)",
+    "gerçek şovmenler (A)",
+    "yorum C olarak işaretli",
+    "anakronizm: etkilenme iddiası yok"
+   ],
+   "kanit": [
+    "C032",
+    "C030",
+    "C033",
+    "C068",
+    "C069",
+    "C070",
+    "C071"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynakların betimlediği kompozisyonda merkezdeki dansçıyı ve havaya kalkan bacağı bulun; eteklerin chahut finalinde kaldırıldığı anlatısıyla karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (görsel incelenmedi): Met \"whose cancan skirts were lifted at the finale of the chahut\"; IMA \"dancing the can-can\". Bölge koordinatları insan editör tarafından görselle teyit edilmeli.",
+   "kanit": [
+    "C017",
+    "C023"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Ön plandaki erkek figürün profilini, silindir şapkasını ve koyu takımını arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Sorrell 1953 atfıyla \"usually wearing a black suit and a top hat\"; şapkanın rengi kaynakta belirtilmez (yerel verideki \"gri\" doğrulanmadı).",
+   "kanit": [
+    "C022",
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Arka plandaki seyirci siluetlerini ve düz renk alanlarını inceleyin; yıldız figürleriyle karşıtlığını not edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: NGA \"a sizable audience, rendered by Lautrec in silhouette form\"; Japon sanatının düz tasarımları + Chat Noir gölge tiyatrosu (arkadan ışıklı çinko kesitler).",
+   "kanit": [
+    "C034"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Kabare adının afiş yüzeyinde kaç kez yinelendiğini sayın ve kaynak betimleriyle karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NGA ve İngilizce Vikipedi \"üç kez\", kaynaksız Fransızca madde \"iki kez\" der (tartışma); sayım görsel teyit bekler. Yerel verideki \"büyük kırmızı M / ortak baş harf\" iddiası da doğrulanmadı.",
+   "kanit": [
+    "C035"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Dansçının beyaz iç eteğinde kağıdın boş bırakıldığı alanları arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: İngilizce Vikipedi (IMA kitabı atfı) \"The stark white of her petticoats, depicted with just a few lines on the white paper\"; Yaneff \"leaving the paper blank\" (C düzeyi).",
+   "kanit": [
+    "C037"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Gösterilen nüshanın künyesi?",
+   "arka": "Moulin Rouge: La Goulue; Henri de Toulouse-Lautrec (French, Albi 1864–1901 Saint-André-du-Bois); 1891; dört renk litografi, üç tabaka wove kağıt; yaprak 190 × 116,5 cm; Metropolitan Museum of Art, Drawings and Prints, 32.88.12; Harris Brisbane Dick Fund, 1932; \"Not on view\"; kamu malı (Met Open Access).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C005",
+    "C007",
+    "C008",
+    "C009",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Matbaa ve Met provenance?",
+   "arka": "Printer: Affiches Américaines, Charles Lévy (Paris). Provenance: \"Vendor: Maurice Le Garrec (French)\" — kayıtta satıcı dışında bir zincir halkası yok.",
+   "kanit": [
+    "C006",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Afişin poster tarihindeki yeniliği ne?",
+   "arka": "Lautrec'in ilk afişi; poster tasarımında ilk kez gerçek şovmenler (La Goulue + \"No-Bones\" Valentin); seyirci siluet; bir gecede ün; günler içinde koleksiyon nesnesi, bir yıl içinde 1890'lar Paris'inin simgesi.",
+   "kanit": [
+    "C030",
+    "C033",
+    "C034",
+    "C032",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Met ve IMA nüshaları nasıl ayrılır?",
+   "arka": "Met: 32.88.12, 190 × 116,5 cm, Harris Brisbane Dick Fund 1932, satıcı Maurice Le Garrec. IMA: 36.4, 67 × 46-3/4 in, \"Gift of the Gamboliers\"; 1932 Mary Quinn Sullivan satın alması → 1936 John Herron Art Institute'a bağış.",
+   "kanit": [
+    "C007",
+    "C008",
+    "C038"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Nüsha sayısı ve önceki Moulin Rouge afişi?",
+   "arka": "Yaklaşık 3.000 nüsha (\"probably printed in about 3,000 copies\"; çoğu duvarda yok oldu). Önceki afiş: Jules Chéret, Bal du Moulin Rouge (1889); Chéret \"father of the modern poster\", anonim kadın tipi \"chérettes\".",
+   "kanit": [
+    "C031",
+    "C004",
+    "C036"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1081 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q227494",
+ "sanatci_id": "katsushika-hokusai",
+ "baslik": "Fuji Dağı'nın 36 Manzarası",
+ "ozgun_baslik": "Fugaku Sanjūrokkei (Thirty-six Views of Mount Fuji); gösterilen levha: Gaifū kaisei (Fine Wind, Clear Morning / South Wind, Clear Sky / Red Fuji)",
+ "kunye": {
+  "sanatci": "Katsushika Hokusai",
+  "sanatci_yasam": "1760–1849 (Tokyo/Edo)",
+  "tarih": "c. 1830–1832 (Met \"ca. 1830–32\"; Fujibi \"c. 1830-32 (Tenpo 1-3)\"); BM levha \"1831 (probably late 1831)\"",
+  "tarih_belirsizlik": "D001: itwiki 1826–1833; WD 1830 (yıl)/1830s (1831–1834); IMA \"about 1800-1849\" (tartışma)",
+  "teknik": "Ahşap baskı (woodblock); kâğıt üzerine mürekkep ve renk; oban yoko-e",
+  "muze": "Çok nüshalı: Met (JP9), British Museum (1906,1220,0.525), IMA (60.12), Tokyo Fuji Art Museum (03769), MOA Museum of Art; gösterilen görselin kurumu TEYİT EDİLEMEDİ (~1930 reprodüksiyon beyanı)",
+  "envanter": "Met JP9 · BM 1906,1220,0.525 (B97) · IMA 60.12 · Tokyo Fuji 03769; gösterilen Commons dosyasının envanteri yok",
+  "edinim": "Met: Rogers Fund 1914 (William S. ve John T. Spaulding, Boston); BM: Arthur Morrison'dan satın alma; IMA: Harry C. Nail Jr.'dan 1960 (Carl H. Lieber Fund); Honolulu: James Michener bağışı (tam set)",
+  "konum": "Met: Asian Art, \"Not on view\" (arşiv); BM: \"Not on display\"; IMA: \"Not Currently On View\" (2011 arşiv)",
+  "telif_durumu": "Kamu malı (Hokusai ö. 1849); Commons PD-Art (AttributionRequired false); Met isPublicDomain true (Open Access, DP141062 CC0); Fujibi CC0/PDM"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Red_Fuji_southern_wind_clear_morning.jpg",
+  "kaynak": "Wikimedia Commons — File:Red Fuji southern wind clear morning.jpg; credit: visipix stok linki (müze adı yok); \"This edition: circa 1930\" beyanı",
+  "lisans": "Public domain (PD-Art / PD-old-100-expired; ABD 1931 öncesi yayın); AttributionRequired: false",
+  "dogrulama": {
+   "yontem": "metadata + lisans (imageinfo/filepage); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "4400×2937 (2.839.776 bayt; sha1 ad10c5bf96a9956f862770118c1eaaf1ab14c71a)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre; GZ TASLAK; gösterilen nüsha ~1930 reprodüksiyonu (beyan, doğrulanmadı) ve kurum belirsiz; kompozisyon BM/Met/Fujibi (A) + enwiki/IMA (B) metinlerinden; alternatif MET DP141062 (CC0) + GAP (PD) envanterde; IMA VAGA kısıtı (2011) not edildi, IMA görseli kullanılmadı"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 490
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1543
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2762
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kaynağın-iç-yapısı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-hipotez-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#5-alımlama-japonisme-ve-kaynak-eleştirisi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#6-biçimsel-soyutlama-ve-meteorolojik-kesinlik"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#3-nüsha-bilimi-korenberg-vd-2019-heritage-science"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ORTA.md#9-akademik-tartışmalar-özet",
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Seri kimliğini ve gösterilen levhayı (Gaifū kaisei / Red Fuji, no. 33) doğru tanımlar; Büyük Dalga karışıklığını önler.",
+  "Çok nüshalı baskı kavramını ve kurum kataloglarını (Met/BM/IMA/Fujibi/MOA/Honolulu) karşılaştırır; boyut/tarih/provenance farklarını yönetir.",
+  "Ahşap baskı tekniğini (keyblock, hanshita-e, pigmentler, kademeli renk geçişi, mokume-zuri) ve Pink→Red nüsha dizisini açıklar.",
+  "Japonisme alımlamasını kaynak hiyerarşisiyle değerlendirir (Cassatt A; Goncourt B; Monet hedge B; Van Gogh/Rivière E).",
+  "Görselin ~1930 reprodüksiyon beyanını ve kurum belirsizliğini beyan eder; görsel inceleme sınırıyla (GZ TASLAK) çalışır."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "ukiyo-e",
+   "tanim": "\"Yüzen dünya resimleri\"; Edo dönemi Japon baskı geleneği; bu seri manzarayı bağımsız/önemli tür olarak yerleştirdi.",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "ad": "aizuri-e → nishiki-e",
+   "tanim": "Mavi tonlu baskı → çok renkli baskı; serinin ilk baskıları mavi tonluydu, başarıdan sonra çok renkliye geçildi (Calza aktarımı).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "oban yoko-e",
+   "tanim": "Yatay büyük boy baskı formatı; BM bu levhayı \"oban yoko-e\" olarak kaydeder.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "bero-ai (Prusya mavisi)",
+   "tanim": "\"Berlin indigo\"; demir ferrosiyanür sentetik pigment; Japonya'ya Hollandalı tüccarlarla yeni girdi, seride yoğun kullanıldı.",
+   "kanit": [
+    "C006",
+    "C050"
+   ]
+  },
+  {
+   "ad": "hanshita-e / keyblock",
+   "tanim": "Kalıba yüzükoyun yapıştırılıp oyulan son çizim; anahtar kalıp; özgün çizim süreçte yok olur.",
+   "kanit": [
+    "C033"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Seri, Fuji'yi farklı konum/mevsim/hava koşullarında gösteren 36 manzara baskısından oluşur; başarı üzerine 10 levha eklenerek 46'ya ulaşmıştır (Met: Eijudo expanded to forty-six prints; WD P527=46; Korenberg: ten additional designs).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12",
+    "S4",
+    "S5",
+    "S1",
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı Katsushika Hokusai, Japanese, Tokyo (Edo) 1760–1849 Tokyo (Edo); Edo dönemi (1615–1868).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S22",
+    "S12",
+    "S14",
+    "S17",
+    "S15",
+    "S20"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Seri ca. 1830–32'de üretildi (Met \"ca. 1830–32\"; Fujibi \"c. 1830-32 (Tenpo 1-3)\"); Hokusai yetmişli yaşlarında, kariyerinin zirvesinde (IMA: \"in his seventies when he made this print\"; Korenberg; Fujibi; enwiki→Calza).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12",
+    "S15",
+    "S17",
+    "S18",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Yayıncı Nishimuraya Yohachi (Eijudō), Edo (historic).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14",
+    "S12",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Teknik: ahşap baskı (woodblock); kâğıt üzerine mürekkep ve renk; format oban yoko-e (BM); Fujibi \"Color woodblock print on paper\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S22",
+    "S12",
+    "S14",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Seride Prusya mavisi (\"Berlin indigo\", bero-ai) yoğun kullanıldı; pigment Japonya'ya Hollandalı tüccarlar aracılığıyla yeni girmişti; BM Smith 1988: Japon baskı tarihinde ilk yoğun kullanım.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12",
+    "S14",
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "İlk baskılar çoğunlukla mavi tonlu (aizuri-e); yayıncı başarıdan emin olunca çok renkli nishiki-e'ye geçildi (Calza 2003 s.470 ref; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Yayıncı seriyi 100'den fazla baskıya genişletmeyi planladı, 46'da durdu (Calza s.230 ref; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Gösterilen levha: Gaifū kaisei; Met \"South Wind, Clear Sky (Gaifū kaisei), also known as Red Fuji\"; BM \"Gaifu kaisei (Clear Day with a Southern Breeze)\"; Fujibi \"Fine Breezy Day\"; halk arasında Akafuji (\"Red Fuji\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S22",
+    "S12",
+    "S14",
+    "S15",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "İmza: \"Hokusai aratame Iitsu hitsu\" — BM: \"Brushed by Hokusai, changing his name to Iitsu\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12",
+    "S22",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Konu/kompozisyon betimi (kaynak metinlerinden; görsel inceleme YOK): güney rüzgârı + açık gökte yaz sonu/sonbahar başı sabahı doğan güneşin yamaçları kızılaştırması (BM: \"or so it is said and so the title implies\"); zirvede kar kalıntıları, etekte gölgeli orman, yalnız ağaç sınır üstü güneş alır (bu nüshada tuğla kırmızısı); koni sağda, solda ince bulutlarla dengeli; koni üstte abartılı uzar; bulutlar zirvede hale oluşturur; göğün üç mavisi dağın üç renginin ayna tersi; \"mackerel sky\"/iwashigumo (Fujibi cirrocumulus, BM Clark 2017 \"high altocumulus\" der); bulutlar kuzeye sürüklenir, sonbaharı ima eder (Fujibi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14",
+    "S15",
+    "S6",
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Görünümün yapıldığı yer adı yoktur (enwiki: \"no specific location name unlike his other works\"); konum belirsizdir (→ C039 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S15",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "En erken nüshalar soluk pembemsi-kahve + geniş yeşil etek (\"Pink Fuji\"), nadir; geç nüshalar koyu kırmızı-kahve (benigara / Bengal red) + daha koyu gök → \"Red Fuji\" adı modern dönemde yerleşti (BM Clark 2017); geç nüshalarda özel baskı etkileri basitleştirildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14",
+    "S18",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Korenberg vd. 2019: Red Fuji'de Pink Fuji'ye göre daha fazla kalıp aşınması; Pink Fuji daha önce basılmıştır ve \"possibly a first edition\"dır (hedge korunur); her iki nüsha da erken; çıkış noktası Keyes'in \"Pink Fuji en erken nüshalar arasında, palet Hokusai'nin özgün seçimi\" hipotezidir (o güne dek bilimsel araştırılmamıştı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "İncelenen nüshalar: Red Fuji = BM 1906,1220,0.525 (38.2×26.1 cm; Fig. 1a, CC BY-NC-SA 4.0); Pink Fuji = Musée National des Arts Asiatiques Guimet, Paris (telif nedeniyle fotoğrafı gösterilemez); Fig. 1b'deki Smith College Museum of Art nüshası (1968:245, 26.0×38.7 cm, Barker bağışı) yalnız örnek gösterim içindir. (Brief düzeltmesi: incelenen Pink Fuji Smith değil Guimet'dir.)",
+   "seviye": "B",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Met nüshası: JP9, Rogers Fund 1914, 24.4×35.6 cm (9 5/8×14 in); provenance \"[William S. and John T. Spaulding, Boston, until 1914; sold to MMA]\"; isPublicDomain true, primaryImage DP141062; objectURL 36490; Asian Art/Prints; \"Not on view\" (arşiv); sergiler Nagoya 1995, Met 2005–06/2015/2017; API makine alanları objectBeginDate 1820/objectEndDate 1842 (görünen \"ca. 1830–32\"den geniş; veri modeli ürünü).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S22",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "BM nüshası: 1906,1220,0.525 (diğer BM no B97; literatürde Binyon 1916 [Hokusai] no. 97), \"Purchased from: Arthur Morrison\", 26.10×38.20 cm (mount 40.60×56), Tenpo Era, \"Not on display\"; sergiler 2001 \"100 Views of Mount Fuji\", 2007, 2011–12 Asahi Shimbun \"The Great Wave\", 2014–15 Paris Grand Palais \"Hokusai\", 2017 BM \"Hokusai: Beyond the Great Wave\" + Osaka, 2022 Suntory, 2023–24 Bowers, 2024 York \"National Treasures: Monet in York\", 2026 Tokyo Metropolitan \"Japanese Treasures\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "IMA nüshası: 60.12, Carl H. Lieber Fund, 10 1/8×15 in; provenance Harry C. Nail, Jr. (Atherton, CA) → IMA 1960 satın alma; tarih \"about 1800-1849\"; \"Not Currently On View\"; görsel reproduksiyonu VAGA yazılı iznine bağlı (2011 arşiv beyanı; bu derste IMA görseli kullanılmadı). Snapshot ESKİ; güncel kayıt doğrulanamadı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Tokyo Fuji Art Museum nüshası: 03769, \"Thirty-six Views of Mount Fuji: Fine Breezy Day\", c. 1830-32 (Tenpo 1-3), 24.1×37.2 cm, color woodblock print on paper; GAP yüksek çözünürlük (asset rAHsqw1x3YgtzQ); CC0/PDM beyanı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "MOA Museum of Art (Atami) erken nüshası: pembemsi yamaçlar, çok soluk mavi gök, bulutlar arası gradasyon (BM Clark 2001); yeşil blokta zirve altında dikey beyaz \"kusur\" her nüshada bulunur, MOA nüshasında üzeri boyanmış görünür.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Büyük Dalga (The Great Wave off Kanagawa, Kanagawa oki nami-ura, Q252485) serinin en ünlü levhasıdır (Honolulu: \"one of the most influential and recognizable designs ever made\"; enwiki \"most celebrated\" atıfsız); WD sıra no. 21; gösterilen görsel Büyük Dalga DEĞİL, Red Fuji'dir (WD P18 + data + Commons aynı dosya).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S20",
+    "S1",
+    "S4",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Büyük Dalga'daki dalga tsunami değil, \"probabilmente… un'onda oceanica di grandi dimensioni\" (itwiki; hedge aynen korunur).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C023",
+   "ifade": "Seri, manzarayı bağımsız ve önemli bir baskı türü olarak yerleştirdi (BM Smith 1988: \"established landscape as a major new print genre\"); İzlenimci/İzlenimcilik-sonrası ressamları etkiledi (IMA: \"inspired the Impressionist and Post-Impressionist painters\"; enwiki→Day 1988); enwiki: ukiyo-e şehir hayatından klasik literatüre her konuyu betimleyebilir, Hokusai'ye ününü manzaralar kazandırdı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14",
+    "S17",
+    "S6",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Goncourt (1896): \"rather crude colors\" olmasına rağmen \"the album which inspires the landscapes of the impressionists of the present moment\" (enwiki→Calza s.470; ikincil aktarım).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Henri Rivière, \"Thirty-six views of the Tour Eiffel\" (1902, renk litografileri) dizisini Hokusai'den esinlenerek yayımladı — enwiki cümlesi satır içi ATIFSIZ.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C026",
+   "ifade": "Tam setler nadir: \"fewer than 10 complete sets\"; önemli parçalar Met, MFA Boston, BM, BnF (enwiki→NYT Fabrikant 2024-03-18; metne erişilmedi, archive-url ref'te).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Honolulu Academy of Arts: James Michener bağışı 500+ Hokusai baskısı, tam set dahil; \"Few institutions own the whole set\"; sergi \"Hokusai's Summit\" 23 Eylül 2009–6 Ocak 2010, Henry Luce Gallery; set on yıl aradan sonra ilk kez gösterildi, sergi diğer sanatçıların Fuji betimleriyle genişletildi; baskılar kırılgan/ışığa duyarlı, nadiren sergilenir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S20"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Red Fuji Japonya'da Büyük Dalga'dan daha çok takdir edilir; Büyük Dalga yurt dışında daha ünlüdür (enwiki/itwiki→Day 1988 IMA Handbook; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Kurosawa'nın Dreams (1990) filmindeki \"Mount Fuji in Red\" bölümü Red Fuji'den esinlendi (enwiki, Day 1988 paragraf atfı içinde; doğrulanmadı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Mart 2019'da bir Red Fuji baskısı NY müzayedesinde 507.000 $'a satıldı (enwiki→NHK World 2019-03-20; archive-url ref'te; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "2002 Sotheby's tam set 1,47 milyon $; 19 Mart 2024 Christie's Singh koleksiyonu 3,559 milyon $ (enwiki→NYT 2024 + Christie's lot + Kyodo; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Fuji'nin kutsallığı/ölümsüzlük çağrışımı: Taketori monogatari'de zirveye bırakılan yaşam iksiri; Smith: \"the source of the secret of immortality… at the heart of Hokusai's own obsession\" (enwiki/itwiki→Smith 1988; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Her renk için ayrı kalıp; sanatçının son çizimi (hanshita-e) kiraz kalıba yüzükoyun yapıştırılıp oyulur (keyblock), özgün çizim süreçte yok olur; dut lifli kâğıt pedle ovularak basılır. Wiki cümleleri atıfsızdır ama iddia Korenberg yöntem bölümünce doğrudan desteklenir → B'ye yükseltildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S18",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Gösterilen görsel: ~1930'da yeniden kesilmiş kalıptan basılmış reprodüksiyon beyanı (\"This edition: circa 1930\"; \"Woodblock made ca. 1930 exactly the same way…\"); kurum atfı yok (visipix); \"only experts can distinguish the many versions - mainly by differences of the frame around the script\"; itwiki: \"stampe facsimili moderne realizzate con la stessa tecnica\". Commons yükleyici beyanı; bağımsız doğrulanamadı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S9",
+    "S8",
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "Red Fuji seri no. 33: WD P1545=\"33\"; Commons \"no. 33\"; BM literature \"Meihin soroimono ukiyo-e vol. 8: Hokusai I\" (Gyosei 1991, Nagata Seiji) no. 33. BM literatüründe ayrıca \"Ukiyo-e taikei vol. 13\" (Shueisha 1975, Kobayashi Tadashi) no. 2 vardır (→ C040).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S9",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "D001 tarih ihtilafı: Met/Fujibi \"ca. 1830–32\" ≈ enwiki (Calza ref) ↔ itwiki seri \"tra il 1826 e il 1833\" (Nagata ref) ↔ WD P571=1830 (yıl)/P577=1830s (on yıl; P580 1831/P582 1834, jawiki ref) ↔ BM levha \"1831 (probably late 1831 (Keyes and Morse 2015))\" ↔ IMA \"about 1800-1849\". Çözüm yok; aralık beyan edilir, hedge'ler korunur.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S12",
+    "S15",
+    "S5",
+    "S1",
+    "S14",
+    "S17",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "D003 gösterilen nüshanın kurumu TEYİT EDİLEMEDİ: Commons credit visipix (müze yok); WD levha P195 (IMA 60.12, Tokyo Fuji, MOA, BM) dosyayla bağ kurmaz; Met JP9 WD P195'te listeli değil (WD eksikliği); hiçbir kayıt gösterilen dosyayı bir müze nüshasına bağlamıyor; data muze:\"\" tutarlı. Görsel orijinal Edo baskısı gibi sunulmamalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S9",
+    "S2",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D004 boyutlar nüshaya göre değişir: Met 24.4×35.6 ↔ BM 26.1×38.2 ↔ IMA 10 1/8×15 in (≈25.7×38.1) ↔ Fujibi 24.1×37.2 ↔ WD 25.72×38 (koleksiyon niteliği yok, jawiki ref) ↔ Commons dosya 26.2×38.7. Oban nominal ~25×37; tek bir \"doğru\" boyut yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S22",
+    "S14",
+    "S17",
+    "S15",
+    "S2",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D005 bakış yönü/konum: BM Clark 2017 \"We are looking at the eastern side of the mountain\" ↔ Fujibi \"it is thought that this portrays the northern side… near Lake Kawaguchi\" (\"There are various theories\") ↔ enwiki \"the location from where the view was taken is a mystery\". Hepsi belirsizlik ifadeli; kesinleştirme yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S14",
+    "S15",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D006 numaralandırma: WD P1545 + Commons + Meihin soroimono (Nagata) Red Fuji 33 / Büyük Dalga 21 ↔ Ukiyo-e taikei (Kobayashi) no. 2 ↔ enwiki/itwiki tablo satır sırası Red Fuji 2 / Büyük Dalga 1. Katalog gelenekleri farklıdır; tablo sırası \"seri numarası\" olarak sunulmamalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S9",
+    "S14",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D007 Smith 1988 ISBN: enwiki \"0-8076-1195-6\" ↔ itwiki \"978-0-8076-1195-1\" (son hane farklı; ISBN-13 dönüşümüyle uyuşmuyor). Yayıncı kaydından doğrulanmadı; bibliyografya kullanılırsa E notu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük; kompozisyon kaynak betimlerinden; GZ TASLAK; nüsha kimliği görselden doğrulanmaz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "Kitap metinleri erişilmedi (Calza 2003, Smith 1988, Day 1988, Keyes 2007, Nagata 1990/1999, Clark 2001/2017, Keyes & Morse 2015, Bouquillard 2007, Marks 2021, Thompson 2019, Balcou 2019, Milone 2022); yalnız erişilen kayıtların bibliyografyasında/ref'lerinde anıldı; BM küratör alıntıları S14 üzerinden erişildi; DOI/ISBN/sayfa uydurulmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C044",
+   "ifade": "Mary Cassatt → Berthe Morisot mektubu (1890), IMA kaydında aktarılır: \"[After lunch] we could go see the Japanese prints at the Beaux-Arts. Seriously, you must not miss that. You who want to make color prints, you couldn't dream of anything more beautiful.\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "IMA 2005 koleksiyon metni (Highlights): tek motif üzerinde atmosferik etkilerin incelenmesi fikri Claude Monet'nin saman yığınları, nilüferler ve Londra köprüleri dizilerine ilham vermiş OLABİLİR (\"may have inspired\"; hedge korunur). Data'daki Monet iddiasının kısmi dayanağı; brief \"atıfsız\" sanıyordu, Denetim B'de bulundu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "Van Gogh: erişilen hiçbir kaynakta Van Gogh'a özgü atıf YOK; data \"Neden önemli?\" Van Gogh iddiası kanıtsız.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "Fujibi biyografisi: 19 yaşında Katsukawa Shunshō öğrencisi (Shunrō); hocanın ölümünden sonra Katsukawa'dan ayrıldı, Tawaraya Sōri; 30+ sanatçı adı (Taito, Hokusai, Gakyōjin, Iitsu, Manji Rōjin); 40'ların ortasından itibaren popüler kitap illüstrasyonları (Takizawa Bakin); 1814 Hokusai Manga; 70'lerde renk baskı dizileri (bu seri dahil); geç yıllarda fırça resimleri.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C048",
+   "ifade": "IMA kaydında Hokusai sözü: \"From the age of six I had a penchant for copying the form of things, and from about fifty, my pictures were frequently published, but until the age of seventy, nothing that I drew was worthy of notice.\"; IMA: \"Hokusai was in his seventies when he made this print.\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C049",
+   "ifade": "Korenberg ekonomi/üretim: yayıncı sanatçı/oymacı/baskıcıyı görevlendirir; ilk edisyon tipik olarak ilk ~200 nüsha (sanatçı renklandırıcı seçer, uygulamayı yönlendirir); kâr için tahminen ≥2000 nüsha satışı; Hiroshige Tōkaidō tahmini 12.000–15.000, Kunisada 3000–4000; kalıplar kullanımla aşınır; nüsha sayısı kaydedilmez; erken nüshalar belirgin biçimde daha değerli.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C050",
+   "ifade": "Korenberg pigmentleri (XRF+MSI+FORS, tahribatsız): gök Prusya mavisi (demir ferrosiyanür); kontur/imza/kartuş/ağaçlar indigo (+az Prusya mavisi; IRRFC parlak kırmızı, FORS ~660 nm); yeşil = Prusya mavisi + doğal orpiment (heterojen parçacıklar; sentetik arsenik sülfür 1850–60'lara dek kullanılmadı); dağ demir oksitli toprak pigment (FORS 570 nm hematit; Mn yok → umber değil); Pink Fuji'de toprak pigmente orpiment ekli (pahalı, parlak); orpiment ışıkla solan tek renklandırıcı, bu nüshalarda solma yok → soluk palet kasıtlı (Keyes hipotezi desteklenir); ışık duyarlılığı nedeniyle solma ihtimali baştan dışlanamaz (makale notu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C051",
+   "ifade": "Korenberg baskı etkileri/aşınma: mokume-zuri (tahta damarı) bilinçli; Keyes \"göz\"leri Pink'te ayrı, geç nüshada birleşik; kartuş iç çerçevesinde \"jū\" karakteri sağında kırık Red'de var Pink'te yok; kar deseni Pink'te keskin, Red'de ağaçlar birleşmiş; bulut/ağaç desenleri + yeşil taban kusuru iki nüshada aynı → aynı kalıp seti; Pink'te tonal kontrast yüksek, gökte benekleme, yeşil-kahve geçişi içbükey yay; Red'de düz çizgi; David Bull: içbükey harmanlama daha zor, seri üretime uygun değil; Hokusai-yayıncı yazışmaları kalite takıntısını belgeler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C052",
+   "ifade": "BM Clark 2001: bunjin ressam Noro Kaiseki (1747–1828), 1799 ya da 1801 Edo yolculuğunda benzer kızıl Fuji olayına tanık oldu — ama ikinci ayda, ilkbahar ortasında (Kano Hiroyuki 1994 ref, BM içinden).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "BM Clark 2001: Nagata 1990 dört varyantı birlikte gösterir (vol. 2, nos 24-7); geç baskıda siyah çizgili başlık/imza + yamaçlarda silinmiş Berlin mavisi şerit, \"no red at all\"; MOA erken nüshasında yeşil blok kusuru boyanmış.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "BM Clark 2017: baskıcı gök kalıbını bilinçli eşitsiz mürekkepledı (parlak gök, hareketli bulutlar); zirve koyu mavi siluet (dağ öne çıkar); ışık yayı sağda daha alçak (yaz güneşi doğunun kuzeyinden doğar, eğik açı); geç nüshalarda gradasyon düz diyagonale indi (hızlı/kolay); Clark'ın \"surely instructed by the artist and the publisher\" ifadesi küratör çıkarımıdır (belgeli talimat değil).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Met anlatısı: Red Fuji'nin sakin berraklığı ↔ Sanka hakuu (Storm Below Fuji) fırtına şiddeti (\"expressive range and power\"); Sanka hakuu'nun aynı kalıptan yağmurda ağaç sırası gösteren alternatif durumu var; Met sayfası ilgili eserler olarak serinin diğer levhalarını listeler (ör. Ryōgoku Köprüsü'nden Gün Batımı, ca. 1830–32).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "Hiroshige'nin daha geç \"Thirty-six Views of Mount Fuji\" dizisi ve Hokusai'nin \"One Hundred Views of Mount Fuji\" kitap dizisi (1834–1835) aynı dağın diğer okumaları (enwiki→Smith ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Calza (wiki aktarımı): Red Fuji \"one of the simplest and at the same time one of the most outstanding of all Japanese prints\" (s.471); seri \"indisputable colour-print masterpiece\" (s.470). Metne erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "\"perhaps the most widely recognized pieces of Japanese art in the world\" (enwiki) / \"forse le opere d'arte giapponese più conosciute al mondo\" (itwiki) — hedge korunur; kaynak ukiyoe-gallery (zayıf, ticari).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C059",
+   "ifade": "Gösterilen Commons dosyası lisans/metadata: Public domain (PD-Art / PD-old-100-expired; ABD: 1931 öncesi yayın); AttributionRequired false; 4400×2937, 2.839.776 bayt, sha1 ad10c5bf96a9956f862770118c1eaaf1ab14c71a; yükleme 2005-09-07; featured picture (en/tr/ja/es).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "Alternatif dosyalar: MET DP141062 3865×2665 CC0 (Met Open Access bağışı; \"circa 1830–32\"; S22 primaryImage ile teyitli → Met JP9 taraması); GAP dosyası 5803×3918 PD (Google Cultural Institute asset iwHKYC1Qfk9NCg; \"about 1800-1849\"; WD Q3565037 P18). İkisi de kullanılmıyor, envanter için.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S22",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C061",
+   "ifade": "enwiki levha: geç nüshalarda güçlü/düz mavi + ufuk bulutlarını açık maviyle üstbasan yeni kalıp; yeşil blok yeniden kesildi (orman/yamaç buluşma noktası alçaldı) — Keyes 2007 (JSTOR 42598013) + Korenberg ref'li; Keyes metnine erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "Alternatif renk şemalı nüsha: bulutlar üstte zar zor görünür; gök düz soluk mavi + üstte ince gri şerit; ufuk boyunca gradasyonlu Prusya mavisi şerit yamaca uzanır (Calza aktarımı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "Honolulu: Hokusai 70+ yıllık kariyerde tahminen 30.000'e varan eser üretti; manzara baskısının erken yenilikçilerinden; Büyük Dalga \"one of the most influential and recognizable designs ever made\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S20"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "Yorum: soyut biçim (üç renk bandı + koni) ↔ meteorolojik kesinlik gerilimi eserin modernitesidir; izleyici manzara değil doğa olayının şemasını görür; yücelik (Burke/Kant ödünç) okuması anakronizm riskiyle açıkça yorum olarak sunulur.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S14",
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C065",
+   "ifade": "Yorum: çok nüshalı baskıda \"orijinal\" kavramı sorunludur; ~1930 reprodüksiyonu Benjamin'in \"aura\" kavramıyla okunabilir (teknik yeniden üretim; tasarımın aktarım zinciri); ders görseli belge olarak değil tasarım aktarımı olarak sunar.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S18",
+    "S9",
+    "S14"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C066",
+   "ifade": "Yorum: Fuji'nin ölümsüzlük çağrışımı + Hokusai'nin yetmişli yaşındaki kimlik değişimi (Iitsu) birlikte okunduğunda seri, yaşlanma karşısında kalıcılık arayışı olarak yorumlanabilir; tek levhaya özel mesaj yüklemek yorum meselesidir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4",
+    "S10",
+    "S17"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q227494 EntityData (seri)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q227494.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "Q3565037 EntityData (levha)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3565037.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiket sorguları (cache: Q227494-qid-labels.json, -2.json; tam parametreler cache'te)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia EN",
+   "belge": "Thirty-six Views of Mount Fuji (wikitext)",
+   "url": "https://en.wikipedia.org/wiki/Thirty-six_Views_of_Mount_Fuji",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (action=parse wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikipedia IT",
+   "belge": "Trentasei vedute del Monte Fuji (wikitext)",
+   "url": "https://it.wikipedia.org/wiki/Trentasei_vedute_del_Monte_Fuji",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (action=parse wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikipedia EN",
+   "belge": "Fine Wind, Clear Morning (wikitext)",
+   "url": "https://en.wikipedia.org/wiki/Fine_Wind,_Clear_Morning",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (action=parse wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikipedia IT",
+   "belge": "Vento leggero, mattino sereno (wikitext)",
+   "url": "https://it.wikipedia.org/wiki/Vento_leggero,_mattino_sereno",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (action=parse wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: gösterilen dosya (Red Fuji southern wind clear morning.jpg)",
+   "url": "https://commons.wikimedia.org/wiki/File:Red_Fuji_southern_wind_clear_morning.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (imageinfo metadata); görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "gösterilen dosya sayfası wikitext (~1930 reprodüksiyon beyanı)",
+   "url": "https://commons.wikimedia.org/wiki/File:Red_Fuji_southern_wind_clear_morning.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (action=parse wikitext)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: alternatif dosyalar (MET DP141062 + GAP)",
+   "url": "https://commons.wikimedia.org/wiki/File:%E3%80%8C%E5%AF%8C%E5%B6%BD%E4%B8%89%E5%8D%81%E5%85%AD%E6%99%AF_%E5%87%B1%E9%A2%A8%E5%BF%AB%E6%99%B4%E3%80%8D-South_Wind,_Clear_Sky_(Gaif%C5%AB_kaisei),_also_known_as_Red_Fuji,_from_the_series_Thirty-six_Views_of_Mount_Fuji_(Fugaku_sanj%C5%ABrokkei)_MET_DP141062.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (imageinfo metadata); görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "canlı web (eski format URL 60000585)",
+   "url": "http://www.metmuseum.org/collections/search-the-collections/60000585",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 (rate limit) — ERİŞİLEMEDİ; çözüm S12+S22",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "Wayback snapshot nesne 36490 (eski 60000585 yönlendirmesi)",
+   "url": "http://web.archive.org/web/20250124203732/https://www.metmuseum.org/art/collection/search/60000585",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (snapshot 2025-01-24)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "British Museum",
+   "belge": "canlı nesne sayfası A_1906-1220-0-525",
+   "url": "https://www.britishmuseum.org/collection/object/A_1906-1220-0-525",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (bot koruması) — ERİŞİLEMEDİ; çözüm S14",
+   "tur": "birincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "British Museum",
+   "belge": "Wayback snapshot 1906,1220,0.525 (tam metin + küratör yorumları)",
+   "url": "http://web.archive.org/web/20261101164731/https://www.britishmuseum.org/collection/object/A_1906-1220-0-525",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (snapshot 2026-11-01)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Tokyo Fuji Art Museum",
+   "belge": "canlı koleksiyon kaydı 03769 (Fine Breezy Day)",
+   "url": "https://www.fujibi.or.jp/en/collection/artwork/03769/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 CANLI",
+   "tur": "birincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "Indianapolis Museum of Art",
+   "belge": "canlı eski nesne URL'si → discovernewfields.org ana sayfası (nesne sayfası kayıp)",
+   "url": "http://www.imamuseum.org/art/collections/artwork/fine-wind-clear-morning-gaif%C5%AB-kaisei-katsushika-hokusai",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (ana sayfa yönlendirmesi) — nesne sayfası ERİŞİLEMEDİ; çözüm S17",
+   "tur": "birincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "Indianapolis Museum of Art",
+   "belge": "Wayback snapshot 60.12 (künye + provenance + Cassatt/Hokusai alıntıları + Monet hedge)",
+   "url": "http://web.archive.org/web/20111109143102/http://www.imamuseum.org/art/collections/artwork/fine-wind-clear-morning-gaif%C5%AB-kaisei-katsushika-hokusai",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (snapshot 2011-11-09; ESKİ, güncel kayıt doğrulanamadı)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S18",
+   "kurum": "Heritage Science (Springer/Nature)",
+   "belge": "Korenberg, Pereira-Pardo, McElhinney, Dyer 2019, 7:9 (açık erişim, hakemli)",
+   "url": "https://doi.org/10.1186/s40494-019-0250-5",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (nature.com tam metin)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S19",
+   "kurum": "Honolulu Museum of Art",
+   "belge": "canlı sergi sayfası (WD P973)",
+   "url": "http://honolulumuseum.org/art/exhibitions/324-hokusai_s_summit_thirty-six_views_of_mount_fuji/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404 — ERİŞİLEMEDİ; çözüm S20",
+   "tur": "birincil"
+  },
+  {
+   "id": "S20",
+   "kurum": "Honolulu Museum of Art",
+   "belge": "Wayback snapshot: Hokusai's Summit sergisi (23 Eylül 2009–6 Ocak 2010)",
+   "url": "http://web.archive.org/web/20190901125536/https://honolulumuseum.org/art/exhibitions/324-hokusai_s_summit_thirty-six_views_of_mount_fuji/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (snapshot 2019-09-01)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S21",
+   "kurum": "Internet Archive",
+   "belge": "wayback/available sorguları (Met×2, BM, IMA×2, Honolulu)",
+   "url": "https://archive.org/wayback/available?url=metmuseum.org/art/collection/search/60000585",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (IMA ilk deneme timeout, tekrarında bulundu)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S22",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "canlı açık API nesne 36490 (objectID S12 kanonik linkinden)",
+   "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/36490",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 CANLI (metadataDate 2026-08-28)",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Büyük Dalga (The Great Wave off Kanagawa)",
+   "sanatci": "Katsushika Hokusai",
+   "kurum": "Çok nüshalı (seri levhası; WD Q252485)",
+   "mufredat_ici": false,
+   "gerekce": "Serinin en ünlü levhası (WD no. 21); hareketli dalga ↔ durgun koni karşıtlığı; gösterilen görselin Büyük Dalga olmadığı vurgulanır.",
+   "kanit": [
+    "C021",
+    "C035"
+   ]
+  },
+  {
+   "eser": "Sanka hakuu (Thunderstorm Beneath the Summit)",
+   "sanatci": "Katsushika Hokusai",
+   "kurum": "Met (anlatıda karşıtlık; envanter bu oturumda erişilmedi)",
+   "mufredat_ici": false,
+   "gerekce": "Met anlatısı Red Fuji ile yan yana koyar: sakin berraklık ↔ fırtına şiddeti; aynı kalıptan alternatif durum.",
+   "kanit": [
+    "C055"
+   ]
+  },
+  {
+   "eser": "Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak",
+   "sanatci": "Utagawa Hiroshige",
+   "mufredat_ici": true,
+   "gerekce": "Müfredat içi bağ (#91↔#92): ukiyo-e manzara geleneği ve meteorolojik an; Hiroshige'nin geç Fuji dizisiyle aynı dağın farklı okumaları.",
+   "kanit": [
+    "C023",
+    "C056"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Met canlı API 36490 (200) + Wayback 2025-01-24, BM Wayback 2026-11-01, Fujibi canlı 200, IMA Wayback 2011-11-09, Honolulu Wayback 2019-09-01, Korenberg 2019 açık erişim (200) yeniden açıldı; künye/seri/imza/nüsha/provenance/pigment doğrulandı. Brief düzeltmeleri: C015 incelenen Pink Fuji = Guimet (Smith College yalnız Fig. 1b örnek); C033 E/C→B (Korenberg yöntem bölümü); C045 Monet \"may have inspired\" IMA arşivinde bulundu (hedge B); C003 yaş A (IMA/Korenberg/Fujibi). D001–D007 açık; görsel metadata only → İNCELENMEDİ (C042), GZ TASLAK. Kitap metinleri erişilmedi (C043).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data muze:\"\" — D003 gereği gösterilen görselin kurumu belirsiz; boş alan olgusal olarak doğru; doldurulacaksa \"reprodüksiyon, kurum belirsiz\" notu gerekir (C037). data/ DEĞİŞTİRİLMEDİ.",
+  "data tarih \"1830\" ↔ Met/Fujibi ca. 1830–32; itwiki 1826–1833 / WD 1831–1834 farkları (D001/C036); circa korunmalı.",
+  "data \"Neden önemli?\" Monet: IMA 2005 \"may have inspired\" (hedge B, C045 — brief \"atıfsız\" sanıyordu, Denetim B'de bulundu); Van Gogh: erişilen kaynaklarda atıf YOK (E, C046); Rivière: enwiki atıfsız (E, C025). Data üçünü olgu olarak sunuyor; insan onayı gerekir.",
+  "data \"Ne görüyoruz?\" ~1930 reprodüksiyon beyanını içermiyor (C034/D003); ders beyan eder. Data betimi görsel incelemeyle doğrulanmadı (C042).",
+  "data ozgun \"36 Fuji Dağı Manzarası (Hokusai)\" Türkçe WD etiketi; özgün başlık Fugaku Sanjūrokkei (WD P1476 kanji biçimi KANIT §0'da; Met/BM Fugaku sanjūrokkei). Ders romaji kullanır; kanji KANIT'ta §15 koruması.",
+  "WD eksikleri: levha P195'te Met JP9 yok; P6216 yok; seri düzeyi P195/P217/P186/P276/P2048/P2049 yok; levha P2048/P2049 (25.72×38) koleksiyon niteliksiz. Data'ya yansıtılmamalı.",
+  "Brief düzeltmeleri (Denetim B): C015 incelenen Pink Fuji = Guimet (Smith College yalnız Fig. 1b); C033 E/C→B (Korenberg yöntem); C045 Monet hedge'li B (IMA); C003 yaş A (IMA/Korenberg/Fujibi). Smith 1988 ISBN uyuşmazlığı D007/C041.",
+  "IMA snapshot 2011-11-09 ESKİ; güncel nesne sayfası kayıp (ana sayfaya yönlendi); VAGA reproduksiyon kısıtı not edildi, IMA görseli kullanılmadı.",
+  "kunye.boyut_cm BİLİNÇLİ olarak yok: D004 nüshaya göre boyut farkı; tek boyut dayatmak kanıtı gizler. Nüsha boyutları envanter/edinim alanlarında ve derslerde.",
+  "Hedge envanteri E001–E012 aynen korundu (ca./c./circa; probably; possibly; it is thought; probabilmente; perhaps/forse; or so it is said; about; only experts; no red at all). Görsel İNCELENMEDİ → GZ TASLAK; insan editör görsel teyidi ZORUNLU."
+ ]
+}

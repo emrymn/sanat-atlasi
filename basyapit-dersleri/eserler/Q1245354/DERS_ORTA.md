@@ -1,0 +1,51 @@
+# Folies-Bergère'de Bir Bar · Orta Düzey Ders
+
+## 1. Kimlik
+
+Eserin özgün başlığı Fransızca "Un bar aux Folies Bergère", İngilizce "A Bar at the Folies-Bergère" olarak geçer; Türkçede "Folies-Bergère'de Bir Bar" diye anılır. Édouard Manet'nin son büyük tablosudur ve 1882'de, ölümünden bir yıl önce tamamlanmıştır [C001]. İlk sergileme 1882 Paris Salonu'dur [C002]. Teknik yağlıboya tuvaldir [C060]; tuval 96 × 130 cm, çerçeve 137,3 × 171,6 × 17 cm'dir [C014]. İmza, sol alttaki şarap şişesi etiketinde "Manet / 1882" biçimindedir [C013]. Envanter numarası P.1934.SC.234'tür; eser Samuel Courtauld'un 1934 bağışıyla The Courtauld'a (Samuel Courtauld Trust) girmiştir [C015]. Tarih konusunda birincil kayıtlar 1882 derken itwiki ve visual-arts-cork "1881-1882" aralığını kullanır; bu bir tartışmadır ve 1881 tarihli hazırlık etüdü aralığı açıklayabilir, ancak kesinleştirilmemiştir [C036] (tartışma) [C027]. Edinme yılında da bir ihtilaf vardır: birincil katalog 1934'ü destekler, buna karşılık Fondation Louis Vuitton'un 2019 sergi fotoğrafı açıklaması "Don de Courtauld, 1932" der [C038] (tartışma). Eser Somerset House, Strand, Londra'dadır; ancak Courtauld sayfası sergilendiği salon için hem "LVMH Great Room, Level 3" hem "Blavatnik Fine Rooms, Room 5" etiketini verdiğinden güncel salon belirsizdir [C044] (belirsiz).
+
+## 2. Tarihsel Bağlam
+
+Folies-Bergère, Paris'in ilk music hall'uydu; 1869'da açılmış ve kısa sürede kentin en popüler eğlence mekânlarından biri olmuştu [C005]. Bir dergi atmosferini "unmixed joy" (katışıksız neşe) diye tanımlıyordu [C005]. Ne var ki mekân, fuhuşa erişim sağlamasıyla da ünlenmişti; Guy de Maupassant garsonları "vendors of drink and of love" (içki ve aşk satıcıları) olarak betimledi [C006]. Manet mekânı arkadaşlarıyla sık ziyaret ediyor, yerinde eskizler yapıyordu; yine de nihai tablo tamamen atölyede, kurulan bir bar önünde Suzon adlı gerçek bir garsonun poz vermesiyle üretildi [C003] [C004]. Tablo, bu anlamda bir "tranche de vie" (hayattan bir kesit) olarak okunur: tarih ya da mitoloji değil, çağdaş bir mekânın sıradan bir anı. itwiki'nin Adorno üzerinden aktardığı Baudelaire çağrısı — "modern hayatın epik yanını koparıp almak" — bu tercihi çerçeveler; günlük kıyafetlerin, kravatların ve parlak ayakkabıların şiirselliği savunulur [C054]. 1882 Salonu'nda sergilendiğinde ziyaretçiler ve eleştirmenler kompozisyonu huzursuz buldu [C007]; itwiki'nin Abate e Rocchi üzerinden aktardığına göre karşılama "ılımlı/soğuk"tu (accoglienza piuttosto tiepida) ve Manet, eleştirmen Wolff'a, ölümünden sonra kendisini kutsayacak yazıyı sağken okumak istediğini söylemişti [C053].
+
+## 3. Sanatçının Kariyerindeki Yeri
+
+Manet varlıklı bir aileden geliyordu; deniz subayı olmak istedi, giriş sınavını kaybedince sanata yöneldi ve on sekiz yaşında dönemin en önemli akademik ressamı Thomas Couture'un atölyesine girdi [C034]. Paris sanat kurumlarıyla ilişkisi karmaşıktı: kışkırtıcı ve yıkıcı bir iş peşinde koştu, kendisinden biraz daha genç olan ve İzlenimciler olarak anılacak grubun asi yaklaşımını teşvik etti; ama onların bağımsız sergilerinde yan yana sergilemeyi reddetti ve resmî sanat dünyasıyla bağlarını koruyup Salon'a göndermeyi sürdürdü [C010]. İki tablo bu gerilimi simgeler: Le Déjeuner sur l'herbe (1863), eskizimsi fırça işçiliği ve çıplak kadın ile giyimli erkekleri yan yana getirmesi yüzünden 1863 Salonu'nda reddedildi; Olympia (1863) ise 1865 Salonu'nda kabul edildi ama sert konturları, küstah kurtizanı ve Titian'ın Urbino Venüsü'nü (1538, Uffizi) açıkça parodilemesiyle skandal yarattı [C035]. Folies-Bergère'de Bir Bar, bu kariyerin sonunda, Manet çok hastayken ve neredeyse sakatken yapıldı; 1883'te öldüğünde hâlâ atölyesindeydi [C009].
+
+## 4. Biçimsel Analiz (Kaynak Betimi)
+
+Görsel bu oturumda incelenmediğinden biçimsel betimleme kaynak metinlerine dayanır [C049] (belirsiz). Kaynakların betimlediği kompozisyonda garson, tezgâhın arkasında durgun bir merkez olarak durur; arkasındaki büyük altın çerçeveli ayna, balkondaki kalabalığı ve gösterileri izleyicinin kendi alanına taşır [C007] [C012]. Ön plandaki şişeler, meyve ve çiçekler bir natürmort gibi özenle yerleştirilmiştir [C011]. Courtauld, aynadaki yansımanın sağa kaydırıldığını ve soldaki şişelerin de hizasız olduğunu, bunu "normal perspektifi yok sayma" olarak sunduğunu belirtir [C007]. itwiki'nin Giordano'ya atfen aktardığına göre garson, "laik ve çağdaş bir ihtişam" (maestà laica e contemporanea) oluşturur; merkezi ve piramidal bir kütle olarak izleyicinin bakışını yüzüne yönlendirir, elleri mermerle "tanışık" durur [C059]. Jeffrey Meyers'in aktardığı bir hazırlık notu, etüdde garsonun sağda yer aldığını, nihai tuvalde merkeze alındığını ama yansımanın sağda bırakıldığını söyler [C026]. Aynanın "bilerek bozuk" mu yoksa optik olarak tutarlı mı olduğu tartışmalıdır; Getty'deki Malcolm Park rekonstrüksiyonu sahnenin ofset bir bakış açısıyla tek noktalı perspektife uygun olduğunu gösterir [C037] (tartışma) [C016].
+
+## 5. İkonografi
+
+Ön plandaki portakallar, Larry L. Ligo'ya göre fuhuş iması taşır; T. J. Clark garsonu "hem bir satıcı hem de bir meta — bir içkiyle birlikte satın alınabilecek bir şey" olarak temsil edildiğini söyler [C018]. Courtauld'un kendi yorumu da garsonun ön plandaki "cazip dizi"de bir kalem daha gibi göründüğü yönündedir [C056] (yorum). Kırmızı üçgen logolu Bass birası İngiliz markasıdır; enwiki'nin Bendiner üzerinden aktardığına göre bu belirgin İngiliz varlığı, Fransa-Prusya Savaşı sonrası anti-Alman duygunun belgesi olarak okunmuştur [C019]. itwiki ise aynı detayı "belirgin bir realizm notu" olarak yorumlar; iki okuma arasında bir tartışma vardır [C039] (tartışma). Kalabalıkta, beyaz giysili ve eldivenli ellere yaslı yüzüyle Méry Laurent tanınır; itwiki bunu 1881 tarihli bir pasteldeki aynı poza bağlar (Rizzoli üzerinden) [C020]. Dürbünle bakan kadın ise Courtauld'un röntgen bulgusuna göre kompozisyona sonradan eklenmiştir [C008]. Meyve ve aksesuar ayrıntılarında veri uyuşmazlıkları vardır: kaynaklar "portakal/oranges" derken data bir yerde "mandalina" der [C042] (tartışma); boyun aksesuarı için itwiki "nastro e cammeo" (cameo) derken data "madalyonlu kurdele" der [C043] (tartışma) [C030] (belirsiz).
+
+## 6. Teknik ve Malzeme
+
+Eser yağlıboya tuvaldir [C060]; boyut ve çerçeve ölçüleri birincil katalogda ayrı ayrı verilmiştir [C014]. Courtauld'un "In the Making" bölümü, kompozisyonun hızlı ve spontane değil, dikkatli hazırlık çalışmalarının ürünü olduğunu vurgular [C003]. enwiki'de 1881 tarihli bir hazırlık etüdü dosyası ("Étude por Le bar aux Folies-Bergère") yer alır [C027]. Röntgen, Manet'nin garsonu başlangıçta kollarını belinde kavuşturmuş olarak resmettiğini gösterir: sağ el, sol kolu bileğin üstünden kavrar; bu jest eldivensizliği vurgular ve aynı zamanda bir korunma jestidir [C008]. itwiki'nin Cricco-Di Teodoro üzerinden aktardığına göre tablo, Manet'nin siyah kullanımı, günlük temaları, kalibre kompozisyonu, düz ve homojen renkleri ile natürmort sevgisini birleştiren bir "sanatsal ve ruhsal vasiyet"tir; renkler velatura (saydam katman) olmadan yatırılır ve teknik neredeyse İzlenimcidir [C058].
+
+## 8. Karşılaştırmalı Analiz
+
+Manet'nin Olympia'sı (1863), Titian'ın Urbino Venüsü'nü parodilemesiyle bakış ve nesneleşme temalarını açmıştı; Folies-Bergère'de Bir Bar bu sorgulamayı modern bir eğlence mekânına taşır [C035]. Ayna geleneği açısından Arnolfini Portresi (1434), Velázquez'in Las Meninas'ı ve Degas'nın L'Assenzio'su kaynaklarda paralel olarak anılır; ancak bu paralellikler satır içi atıfsızdır ve VAC yalnızca "probably" (muhtemelen) der, dolayısıyla Manet'nin bu eserlerden etkilendiği kesin değildir [C055] (belirsiz). Çağdaş alımlamada Jeff Wall'ın "Picture for Women" (1979) adlı fotoğrafı tablonun iç yapısını ve ayna motifini ödünç alır (Tate Modern duvar metni); John Brack'ın "The Bar" (1954) adlı Melbourne bar sahnesi ise ironik bir göndermedir [C022].
+
+## 10. Küratöryel Anlatı — Birleştirici Okuma
+
+Courtauld, eseri "modern hayatın ikonik tablolarından biri" ve karmaşık, içine çeken bir kompozisyon olarak sunar; garsonun enigmatik ifadesi ve aynadaki kaymış yansıma, mekânın baş döndürücü atmosferini vurgular [C007] [C056] (yorum). Küratöryel anlatı, tabloyu hem bir portre formatı hem de isimsiz bir modern hayat sahnesi olarak konumlandırır; tür sınıflaması tartışmalıdır [C040] (tartışma). Sergileme salonu etiketi kaynakta çelişkilidir ve kesin verilmemelidir [C044] (belirsiz). Telif açısından eser kamu malıdır (Manet ö. 1883; 100+ yıl pma) [C051]. Görsel kullanımında üç Commons dosyası farklı hak rejimindedir: IMG1 (FLV 2019 fotoğrafı) CC BY 2.0 ve atıf zorunludur, IMG2 ve IMG3 ise PD'dir; IMG2 en yüksek çözünürlüklü PD alternatiftir (Google Art Camera) [C052]. Görseller bu oturumda incelenmediğinden kompozisyon doğrulaması insan editöre kalır [C049] (belirsiz).
+
+## 11. Öğrenme Etkinlikleri
+
+- Çoktan seçmeli ve doğru/yanlış sorularıyla künye, model, röntgen ve imza bilgilerini pekiştirin (SORULAR.json).
+- Görsel gözlem sorularını kaynak betimi üzerinden yanıtlayın; görsel incelenmediği için bunlar TASLAK'tır [C049] (belirsiz).
+- Açık uçlu sorularda ayna bilmecesini iki okumayla (Courtauld ↔ Park) tartışın [C037] (tartışma).
+- data/ uyuşmazlıklarını (Bass sağ/sol, mandalina/portakal, madalyon/cameo) kaynaklarla karşılaştırıp düzeltme önerisi yazın [C041] (tartışma) [C042] (tartışma) [C043] (tartışma).
+
+## 12. Kaynakça (Bu Derste Kullanılanlar)
+
+- S4 Courtauld Gallery, canlı eser sayfası (301→200, 14 Kas 2026) — birincil.
+- S5 Courtauld eski katalog, Wayback 2021-04-15 ("In the Making"/röntgen) — birincil (arşiv).
+- S6 Courtauld Art & Architecture, Wayback 2022-02-14 (canlı 404) — birincil (arşiv).
+- S7 J. Paul Getty Museum, "One Scholar's Perspective" (Malcolm Park), canlı 200 — ikincil (kurumsal).
+- S8 Art UK, Wayback 2025-09-14 (canlı 403) — yardımcı (aggregator).
+- S2/S3 İngilizce/İtalyanca Vikipedi wikitext (200) — ikincil; S9 visual-arts-cork (düşük otorite).
+- S1 Wikidata EntityData; S10 Commons imageinfo (metadata, İNCELENMEDİ); S11 FLV (ERİŞİLMEDİ).
+- Kitap/makale metinlerine erişilmedi; yalnız atıf zinciri (Lanier, Bendiner, Meyers, Collins, de Duve, Park tezi, Rambert, Campany, Rizzoli, Cricco-Di Teodoro, Abate-Rocchi, Adorno, Giordano) [C050] (belirsiz).

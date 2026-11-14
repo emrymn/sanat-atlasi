@@ -1,0 +1,858 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q45585",
+ "sanatci_id": "vincent-van-gogh",
+ "baslik": "Yıldızlı Gece",
+ "ozgun_baslik": "The Starry Night (De sterrennacht / Notte stellata)",
+ "kunye": {
+  "sanatci": "Vincent van Gogh",
+  "sanatci_yasam": "1853–1890",
+  "tarih": "Haziran 1889 (Saint Rémy)",
+  "tarih_belirsizlik": "MoMA \"June 1889 / made in mid-June\"; mektup 782 ~18 June 1889; WD P571 precision=9 (yalnız yıl); itwiki 19 Haziran/23 Mayıs önerisi tartışmalı (D)",
+  "teknik": "Tuval üzerine yağlıboya (Oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 73.7,
+   "genislik": 92.1
+  },
+  "muze": "Museum of Modern Art, New York",
+  "envanter": "472.1941",
+  "edinim": "Lillie P. Bliss Bequest (by exchange), 1941; Paul Rosenberg Gallery'den takas",
+  "konum": "MoMA, Floor 5, 501, The Alfred H. Barr, Jr. Galleries (2026-11-07 snapshot; değişebilir)",
+  "telif_durumu": "Kamu malı (PD); Commons PD-Art / PD-old-100-expired; MoMA kendi fotoğraf/instalasyon görselleri için Art Resource / Scala Archives izni ister"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Arts & Culture / Google Art Project; MoMA 472.1941)",
+  "lisans": "Public domain (PD-Art / PD-old-100-expired)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (Commons imageinfo/filepage); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "44567 × 35291 px (~664 MiB gigapixel GAP taraması)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C040); GZ TASLAK; kompozisyon S5 (A) + S2/S3 (B) metninden; MoMA instalasyon fotoğrafları için ayrı lisans (Art Resource/Scala)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 465
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1330
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2781
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-ağırlığı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarihleme-tartışması-ve-mektup-kronolojisi",
+   "DERS_ILERI.md#4-provenance-moma-zinciri-vgm-basitleştirmesi-wd-anomali"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-kariyer-abstraction-tartışması-ve-stil-arayışı"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#5-bellekten-yanlışının-anatomisi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#6-gökyüzü-okumaları-astronomi-ve-sınırları",
+   "DERS_ILERI.md#7-servi-biçim-mi-sembol-mü",
+   "DERS_ILERI.md#8-dini-ve-sembolist-yorumlar-schapiro-loevgren-soth"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#9-teknik-ihtilaf-ve-pigmentler"
+  ],
+  "7": [
+   "DERS_ILERI.md#10-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#11-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#2-tarihleme-tartışması-ve-mektup-kronolojisi",
+   "DERS_ILERI.md#4-provenance-moma-zinciri-vgm-basitleştirmesi-wd-anomali",
+   "DERS_ILERI.md#6-gökyüzü-okumaları-astronomi-ve-sınırları",
+   "DERS_ILERI.md#7-servi-biçim-mi-sembol-mü",
+   "DERS_ILERI.md#8-dini-ve-sembolist-yorumlar-schapiro-loevgren-soth",
+   "DERS_ILERI.md#9-teknik-ihtilaf-ve-pigmentler"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#12-küratöryel-anlatı-ve-alımlama"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#13-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#14-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "MoMA birincil kaydıyla künyeyi (Haziran 1889, tuval üzerine yağlıboya, 73,7×92,1 cm, 472.1941, Bliss Bequest) doğrular.",
+  "Gözlem + eskiz + hayal ayrımını kurar ve \"bellekten boyandı\" yanlışını kaynaklarla düzeltir.",
+  "Mektup 782/777 ve MoMA provenance zincirini birincil belgelerle izler; VGM/WD hatalarını ayırt eder.",
+  "Astronomik ve sembolik yorumları (Venüs, ay, servi, girdaplar, dini okumalar) kanıt düzeyleriyle sınıflar.",
+  "itwiki/VGM/WD ihtilaflarını (kronoloji, oleografia, spessore minimo, P127) kaynak eleştirisiyle yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "İmpasto",
+   "tanim": "Boyanın kalın sürülmesi; fırça/palette knife izleri görünür kalır (MoMA terimi).",
+   "kanit": [
+    "C039",
+    "C010"
+   ]
+  },
+  {
+   "ad": "Post-Empresyonizm",
+   "tanim": "Empresyonizmin ışık/renk doğalcılığına tepki; terimi 1910'da Roger Fry adlandırdı.",
+   "kanit": [
+    "C039",
+    "C038"
+   ]
+  },
+  {
+   "ad": "Noktürn",
+   "tanim": "Gece sahnesi resmi; Yıldızlı Gece, Van Gogh'un Arles'te başlattığı noktürn dizisinin parçası.",
+   "kanit": [
+    "C034"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Eserin sahiplik geçmişi; MoMA Provenance Research Project zinciri.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "Sabah yıldızı (Venüs)",
+   "tanim": "Şafakta görünen Venüs gezegeni; tablodaki en parlak \"yıldız\", servinin sağında.",
+   "kanit": [
+    "C015",
+    "C010"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser \"The Starry Night\" (nl: De sterrennacht; it: Notte stellata), Vincent van Gogh (Dutch, 1853–1890).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Saint Rémy, June 1889; MoMA \"(made in mid-June)\"; mektup 782 \"~18 June 1889\" (on or about Tuesday). WD P571 yalnız yıl (→C052).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tuval üzerine yağlıboya (Oil on canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "73,7 × 92,1 cm (29 × 36 1/4 in). İnç yuvarlama farkları: S2 29.01×36.26, S1 36.25 (E11; cm aynı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "MoMA envanter no 472.1941.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "\"Acquired through the Lillie P. Bliss Bequest (by exchange)\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "MoMA New York; Painting and Sculpture; \"On view — MoMA, Floor 5, 501, The Alfred H. Barr, Jr. Galleries\" (501: French Landscapes and Interiors). Salon 2026-11-07 snapshot'ına bağlı (E3).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Saint-Paul-de-Mausole asylum, Saint-Rémy (güney Fransa); sanatçı 1889–90'da on iki ay kaldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Pencere manzarasından esinlendi; \"both an exercise in observation and a clear departure from it\"; gündüz birkaç oturumda boyadı; köy pencereden görünmüyordu; servi gerçekte olduğundan çok daha yakın; göksel biçimler değiştirildi, ışıma eklendi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Gökyüzü resim düzleminin ~3/4'ü; girdaplı desenler; hilal ay en sağda, Venüs merkezin solunda; beyaz-sarı eşmerkezli haleler; altta kilise kuleli sessiz köy, mavi-siyah dağlar; solda alev gibi servi üst kenara dek; sayısız kısa fırça vuruşu + kalın sürülmüş boya yüzeyi hareketlendirir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Mektup 782 (Theo'ya, ~18 June 1889): \"At last I have a landscape with olive trees, and also a new study of a starry sky.\"; \"It's not a return to the romantic or to religious ideas, no.\"; özgün el yazması Van Gogh Museum, inv. b643 V/1962.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Provenance (MoMA Provenance Research Project): Vincent (June–Sept 1889)→Theo (Sept 1889–Jan 1891)→Jo van Gogh-Bonger (Jan 1891–Dec 1900, \"in trust for her son, Vincent Willem\")→Julien Leclercq (Dec 1900–Feb 1901)→Claude-Emile Schuffenecker (Feb 1901–before July 1905, \"acquired by exchange\")→Jo (By July 1905–March 1906)→[Oldenzeel Gallery, Rotterdam]→Georgette P. van Stolk (1906–1938)→Paul Rosenberg (1938–1941, \"through Jacob-Baart de la Faille\")→MoMA (1941, \"by exchange from Paul Rosenberg Gallery\"). \"Provenance research is a work in progress\" (E2); [Oldenzeel] köşeli parantez = belirsiz aracı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "8 Mayıs 1889'da kendi isteğiyle yattı (Aralık 1888 krizi sonrası); eski manastır; varlıklı hastalara hizmet, yarıdan az dolu; ikinci kat yatak odası + zemin kat atölye.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Doğu bakan yatak odası penceresinin manzarası; \"it would be inaccurate to state that the picture was painted from memory\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Venüs (\"sabah yıldızı\") 1889 ilkbaharında Provence'ta şafakta görünür, parlaklığa yakın; en parlak \"yıldız\" servinin sağında; mektup 777 (~31 May–6 June): \"nothing but the morning star, which looked very big\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Ay stilize; Whitney: astronomik kayıtlar waning gibbous gösterir; Boime: önce gibbous niyeti, hilale dönüş, hâle kalıntısı (hipotez).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C017",
+   "ifade": "Köy hayalî; Saint-Rémy tepesinden F1541v eskizine dayanır (Naifeh-Smith); kule Hollanda/Nuenen tipi (Pickvance; MoMA \"resembles those common in his native Holland\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "MoMA: gökyüzündeki dönen formlar, \"nebulae\" olarak bilinen toz-gaz bulutlarının yayımlanmış astronomik gözlemleriyle eşleşir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Pigmentler: gökyüzü ultramarine + cobalt blue; yıldız/ay indian yellow + zinc yellow (RIT+MoMA multispectral; Zhao/Berns/Taplin/Coddington 2008 p.681007-8; metne erişilmedi, S2/S3 aktarımı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Van Gogh tabloyu \"failure\" saydı (Bernard'a mektup, late Nov 1889): \"reaching for stars that are too big—another failure\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "28 Eylül 1889'da Theo'ya 9–10 tabloyla birlikte gönderildi (önce geri tutmuştu; postage tasarrufu için 3 tabloyu göndermedi, aralarında Yıldızlı Gece).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Servi sembolizmi açık tartışma; MoMA hedged (\"could be seen as a bridge\"); mektuplar biçimsel ilgi: \"funereal cypresses\" (Bernard, April 1888), \"The cypresses are always occupying my thoughts\" (~bir hafta sonra).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C023",
+   "ifade": "Dini yorumlar: Schapiro \"visionary… religious mood\", Revelation 12; Loevgren 11 yıldız/Yusuf rüyası (Genesis), Whitman karşılaştırması; Soth \"traditional religious subject in disguise\", Delacroix Prussian blue+citron yellow Christ teorisi ↔ Van Gogh reddi (→C011).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C024",
+   "ifade": "Naifeh-Smith: temporal lobe epilepsy hipotezi; Temmuz 1889 ikinci kriz (tablodan ~bir ay sonra); Loevgren: tablo kriz anında boyanmadı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "Katalog: F612 (de la Faille) / JH1731 (Hulsker). S9 not 8 birincil teyit: \"Starry night (F 612 / JH 1731).\" (brief B idi; S9 notuyla A'ya yükseltildi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S2",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "VGM: tablonun evi MoMA; \"It was the first Van Gogh to enter a New York museum collection\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Eser kamu malı (PD); Commons PD-Art / PD-old-100-expired; WD P6216=Q19652.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Takas edilen eserler: Cézanne \"Victor Chocquet\" portresi + Cézanne şişe natürmortu + Toulouse-Lautrec \"May Belfort\" (podcast ep.102, Lowry atfı; MoMA kaydında eser adı yok →E9; doğrulanmadı).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "Yıldız sayısı: enwiki alt \"10 stars\" ↔ Loevgren \"eleven stars\"; görsel sayım yapılmadı (E6).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C030",
+   "ifade": "\"rarely loans it out\": S2 MoMA ref'ine atfeder; çekilen S5 metninde ifade yok (E4).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "Astronomi yorumları: Boime girdap=sarmal galaksi/komet (Flammarion popüler yayınları; VG mektuplarda Flammarion'ı anmaz); Whitney: Lord Rosse M51 çizimi (Flammarion reproduksiyonu); Whitney girdaplar=mistral de olabilir; Boime Aries tanımlar, Whitney bu kesinliği paylaşmaz (E8); Boime ufuk üstü açık maviler=sabahın ilk ışığı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C032",
+   "ifade": "Servi okuması: toprak (yaşam) ↔ gök (ölüm/cennet) köprüsü; mezarlık/yas ağacı; Loevgren \"tree of death\"; Jirat-Wasiutynski \"rustic and natural obelisks\"; Schapiro \"vague symbol of a human striving\"; Boime \"Sonsuz'a arayışın sembolik karşılığı\" — tümü yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "MoMA küratoryal okuması: \"modern painting's new embrace of mood, expression, symbol, and sentiment\"; canlı mavi-sarılar \"gestural verve and immediacy\"; renk/boya hem dış dünyayı betimler hem kendi statüsünü ilan eder; gece \"much more alive and richly colored than the day\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "Noktürn dizisi: Café Terrace at Night (Arles, early Sept 1888) + Starry Night Over the Rhône (Sept 1888); Yıldızlı Gece pencere dizisinin tek noktürünü; \"tremendous need for… religion—so I go outside at night to paint the stars\"; \"we take death to go to a star\" (S5'te de alıntılı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Dizi yöntemi: pencere manzarasının saat/hava varyasyonları; yatak odasında resim yasak, mürekkep/kömür eskiz serbest; yeni varyasyonlar önceki versiyonlara dayanır; birleştirici öge Alpilles'in sağdan giren diyagonalı; F717 Wheat Field with Cypresses servi ölçek abartısı; F719 Green Wheat Field with Cypress (Prag) ilk en plein air; mektup 776/779/780.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Theo 22 Oct 1889: \"the search for style takes away the real sentiment of things\"; Vincent early Nov: \"more manly and more deliberate drawing\"; \"arrangement\" Soth'ta kompozisyon, diğer mektuplarda renk düzeni (Whistler paraleli) — yorum tartışması.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Gauguin/Bernard \"abstraction\" (de tête) ↔ doğadan boyama; Gauguin Arles'te 23 Oct–25 Dec 1888; \"led astray into abstraction… a brick wall\"; VG doğadan boyamayı sürdürdü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "MoMA sanatçı denemesi: büyük ölçüde kendi kendini yetiştirdi; kariyer yalnız on yıl; 2.000+ yağlıboya/suluboya/çizim/eskiz; talep ölümünden sonra; Theo'ya mektuplar; 1886 Paris (Empresyonist/Neo-Empresyonist/Seurat); palet aydınlandı; 1888 Fransız kırsalına dönüş; erken Hollandalı köylüler karanlık tonlar; kulak kesme 1888.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "MoMA terimleri: Impasto=boyanın kalın sürülmesi, fırça/palette knife izleri görünür (\"An Italian word for 'mixture'\"); Post-Impressionism=1910 Roger Fry, Empresyonizmin ışık/renk doğalcılığına tepki; eser Impasto + Post-Impressionism etiketli.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük; kompozisyon kaynak betimlerinden; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "\"no fewer than twenty-one times\" varyasyon sayısı: S2'de {{citation needed|date=July 2015}}; 15/21'de servi, 6'sında abartı (Hulsker 1986 yakınında atıflı; E5).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "refs metinlerine erişilmedi: Boime 1984 (PDF ölü; Wayback 20181123150057), Zhao 2008 (SPIE subscription), kitaplar (Naifeh-Smith, Pickvance, Whitney, Loevgren, Soth, Hulsker, de la Faille, Jirat-Wasiutynski, Walther-Metzger, Cricco-Di Teodoro, Bertelli), astroarte.it, francescomorante.it (urlmorto), podcast ep.102, ColourLex; Soth sayfa belirsiz (E13). Kimlikler wikitext'ten AYNEN.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "Tarihleme ihtilafı (D1): S3 \"19 giugno 1889\" + \"19 giugno o il 23 maggio\" (astroarte.it, erişilmedi) ↔ S5 \"June 1889/mid-June\" + S9 \"~18 June\" + S2 \"around 18 June\". S3 iç tutarsızlık: \"30 maggio (lettera n.593)\" ↔ alıntı \"2 giugno 1889\"; eski 593/594/595 ↔ yeni 777/779/782; \"593 esere açıkça atıf\" iddiası desteklenmez (777 yalnız sabah yıldızı).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S9",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "itwiki provenance kronoloji hatası (D2): \"nel 1907 proprietà di Schuffenecker\" + \"venderlo alla galleria Oldenzeel nel 1906\" (1907→1906 imkânsız) ↔ S5 \"Feb 1901–before July 1905\"/\"By July 1905–March 1906\"; S2 \"In 1901 Leclercq sold it\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "Teknik terimi hatası (D3): S3 infobox \"oleografia su tela\" (oleografi=baskı) ↔ S5 \"Oil on canvas\", S1 oil paint+canvas, S2 \"Oil on canvas\". Birincil terimi çözer; itwiki etiketi hatalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "Boya kalınlığı ihtilafı (D4): S3 (Cricco-Di Teodoro 2012) \"consistenza molto fluida… spessore minimo\" ↔ S5 \"thickly applied paint\" + Impasto etiketi; S2 \"thick paint\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "Serviler pencereden görünür müydü (D5): Pickvance p.103 \"not visible facing east\" ↔ Boime p.88 + Jirat-Wasiutynski p.667 \"were visible\" ↔ Naifeh-Smith p.759 \"telescoped\". Çözülmemiş akademik tartışma.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "Köyün kimliği (D6): Hollanda hatırası (Pickvance p.103; Schapiro p.34) ↔ Saint-Rémy eskizi F1541v (Naifeh-Smith p.760; Boime p.89). S3 hedged \"forse Saint-Rémy, forse Nuenen, forse reminiscenza\". Her durumda pencereden görünmez (S5/S2 ortak).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "VGM provenance basitleştirmesi (D7): S10 \"Jo sold… to Georgette van Stolk… Then in 1941 MoMA acquired it from her\" ↔ S5 Jo→Leclercq→Schuffenecker→Jo→[Oldenzeel]→van Stolk→Rosenberg→MoMA. S10 aracıları atlar; birincil S5 esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "F1540 çizimi (AYRI ESER) (D8): S2 \"reed pen copy… Kunsthalle Bremen… disputed Baldin Collection\" ↔ S3 \"penna e inchiostro, 47×62.5 cm, museo Shchusev, Mosca\". Konum/medyum farklı; Baldin–Shchusev ilişkisi açıklanmıyor; tabloyla karıştırılmamalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "WD P127 anomali (D9): S1 Schuffenecker (Q286456) P580=1901 (prec9), P582=1900 (prec8) — bitiş başlangıçtan önce ↔ S5 \"Feb 1901–before July 1905\". WD veri hatası adayı; WD değiştirilmedi; WD zinciri [Oldenzeel] düğümünü atlar.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "WD tarih hassasiyeti (E1): P571 precision=9 (yalnız yıl 1889); P1480 yok. Ay bilgisi S5/S9'dan; WD tek başına \"Haziran\" demez.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "Ay evresi uzlaşmazlığı (E7): Whitney \"waning gibbous\" ↔ S3 \"19 giugno la Luna era ai tre quarti… risalire al 23 maggio… primo quarto\"; Boime hâle hipotezi. Uzlaşma yok; görsel doğrulama yapılmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "itwiki \"Vincent si uccise… sparandosi con una rivoltellata\" kesin ifadesi çekilen kaynaklarda doğrulanmadı (E10); eser künyesi dışı; derslerde KULLANILMADI.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "itwiki \"A destra vigoreggia la ricca vegetazione degli ulivi\" betimi S5/S2'de desteklenmiyor (E12); görsel doğrulama yapılmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "Estetik/felsefi okuma (yorum): göğün ezici immensitesi karşısında bireyin kırılganlığı — S3 Bertelli alıntısı (\"fragilità e inconsistenza dell'individuo… sublime e soverchiante immensità del cosmo\") + Kant/Benjamin ödünç kavramları; VG'un bu düşünürlerden etkilendiği İDDİA EDİLMEZ (§7).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q45585 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q45585.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; künye refs S5'e zincirli (P248=Q73268604, P2014=79802)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Starry Night (wikitext)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Starry%20Night&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext; satır içi akademik atıflar)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Notte stellata (wikitext)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Notte%20stellata&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext; ders kitabı atıfları)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "MoMA",
+   "belge": "Birincil katalog (CANLI)",
+   "url": "https://www.moma.org/collection/works/79802",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 Cloudflare \"Just a moment...\" (ERİŞİLEMEDİ)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "MoMA (Wayback)",
+   "belge": "Birincil katalog, snapshot 20261107090055 (2026-11-07)",
+   "url": "https://web.archive.org/web/20261107090055id_/https://www.moma.org/collection/works/79802",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200; tam metin (künye+küratoryal+Provenance Research Project+Licensing)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Van%20Gogh%20-%20Starry%20Night%20-%20Google%20Art%20Project.jpg&prop=imageinfo&iiprop=url|size|extmetadata",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata (İNCELENEMEDİ)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dosya sayfası wikitext",
+   "url": "https://commons.wikimedia.org/w/api.php?action=parse&page=File:Van%20Gogh%20-%20Starry%20Night%20-%20Google%20Art%20Project.jpg&prop=wikitext&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; PD-Art/PD-old-100-expired; F=612 JH=1731; ID 472.1941",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S8",
+   "kurum": "Van Gogh Museum/HUC",
+   "belge": "Mektup 782 (CANLI)",
+   "url": "https://vangoghletters.org/vg/letters/let782/letter.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama JS kabuğu (16 karakter metin; ERİŞİLEMEDİ)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Van Gogh Museum/HUC (Wayback)",
+   "belge": "Mektup 782, snapshot 20231014105657 (2023-10-14) — S2 archive-url",
+   "url": "https://web.archive.org/web/20231014105657id_/https://vangoghletters.org/vg/letters/let782/letter.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200; bilimsel edisyon tam metin (çeviri+notlar+metadata)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Van Gogh Museum",
+   "belge": "Where is 'The Starry Night'? hikâye sayfası",
+   "url": "https://www.vangoghmuseum.nl/en/art-and-stories/stories/all-stories/where-is-the-starry-night",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (17 QID)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q5582|Q296955|Q12321255|Q188740|Q3305213|Q191163|Q19652",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S12",
+   "kurum": "Internet Archive",
+   "belge": "Wayback availability (MoMA)",
+   "url": "https://archive.org/wayback/available?url=moma.org/collection/works/79802",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Rhône Üzerinde Yıldızlı Gece (Q1464531)",
+   "sanatci": "Vincent van Gogh",
+   "mufredat_ici": false,
+   "gerekce": "1888 Arles noktürünü; gözleme daha yakın gerçek mekân sahnesi ↔ Yıldızlı Gece'nin hayalî köyü; aynı TR adını taşıyan farklı eser (QID ayrımı).",
+   "kanit": [
+    "C034",
+    "C001"
+   ]
+  },
+  {
+   "eser": "Wheat Field with Cypresses (F717)",
+   "sanatci": "Vincent van Gogh",
+   "mufredat_ici": false,
+   "gerekce": "Saint-Rémy pencere dizisinin parçası; servi ölçek abartısının en belirgin diğer örneği; Alpilles diyagonali ortak.",
+   "kanit": [
+    "C035"
+   ]
+  },
+  {
+   "eser": "Yıldızlı Gece (Starry Night, Q47430923)",
+   "sanatci": "Jean-François Millet",
+   "kurum": "Yale University Art Gallery",
+   "envanter": "52945",
+   "mufredat_ici": false,
+   "gerekce": "Aynı Türkçe adı taşıyan farklı eser; ad/envanter karışıklığını önlemek için QID ayrımı örneği; müfredat içindeki Millet (Başak Toplayanlar) dersine bağlanır.",
+   "kanit": [
+    "C001"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "MoMA birincil (S5, Wayback 2026-11-07) + mektup 782 bilimsel edisyon (S9, Wayback 2023-10-14) yeniden açıldı; künye/küratoryal/provenance/F612-JH1731 doğrulandı. en/it wikitext (S2/S3) + VGM (S10) + WD (S1) yeniden okundu; dokuz ihtilaf D (C043–C051) açık. Görsel S6/S7 metadata only, vision kotası ana oturumda → İNCELENEMEDİ (C040); GZ TASLAK. refs metinleri erişilmedi (C042).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "basyapitlar[94] ozgun:\"Yıldızlı Gece\" TR doldurulmuş; özgün ad \"The Starry Night\"/\"De sterrennacht\" olmalı (S5/S1). tarih:\"1889\"/muze doğru.",
+  "basyapitlar \"Ne görüyoruz?\": \"bellekten\" ↔ S2 \"inaccurate…from memory\" (C014); derslerde gözlem+eskiz+hayal olarak düzeltildi.",
+  "muze_numaralari.json: Q45585/472.1941 kaydı YOK; dosyadaki \"Starry Night\" Q47430923 (Millet, YUAG 52945) — karıştırılmamalı.",
+  "eser_adlari_tr: Q45585 \"Yıldızlı Gece (The Starry Night)\"; aynı TR ad Q47430923/Q18209775; Q1464531 \"Rhône Üzerinde Yıldızlı Gece\" farklı eser (1888). QID ayrımı şart.",
+  "eser_ayrintilari[95] gorsel eşlemesi WD P18/S6 ile tutarlı; nokta metinleri S5/S2 uyumlu; Venüs hedge uygun.",
+  "harita/harita_motifler S5/S2/S9/S10 uyumlu; eser_ozgun:\"Yıldızlı Gece\" aynı not (1).",
+  "eser_notlari Q45585 \"doğuş öncesi gökyüzü\" → muhtemelen \"gün doğuşu öncesi\" (before sunrise); ifade hatası adayı.",
+  "WD P127 Schuffenecker P582=1900<P580=1901 anomali (D9/C051); WD değiştirilmedi; [Oldenzeel] düğümü WD zincirinde yok.",
+  "itwiki kesin intihar ifadesi (E10/C054) doğrulanmadı; derslerde kullanılmadı.",
+  "Görsel İNCELENEMEDİ (C040); GZ TASLAK; insan editör görsel teyidi zorunlu."
+ ]
+}

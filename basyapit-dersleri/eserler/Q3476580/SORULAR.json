@@ -1,0 +1,556 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3476580",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin güncel koleksiyonu hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Neue Galerie New York"
+    },
+    {
+     "harf": "B",
+     "metin": "Brücke-Museum Berlin"
+    },
+    {
+     "harf": "C",
+     "metin": "Museum of Modern Art"
+    },
+    {
+     "harf": "D",
+     "metin": "Museum Folkwang"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S1: 2006'dan beri Neue Galerie New York (WD P195 preferred).",
+   "yanlis_gerekceleri": {
+    "B": "Brücke-Museum 1980–2006 arası geçmiş sahipliktir; ayrı versiyon değil.",
+    "C": "MoMA'nın kendi ayrı \"Street, Berlin\" eseri vardır; bu tablo MoMA'da değil.",
+    "D": "Museum Folkwang dizinin başka bir tablosuna sahiptir; bu eserin koleksiyonu değil."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin sanatçısı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ernst Ludwig Kirchner"
+    },
+    {
+     "harf": "B",
+     "metin": "Otto Dix"
+    },
+    {
+     "harf": "C",
+     "metin": "George Grosz"
+    },
+    {
+     "harf": "D",
+     "metin": "Max Pechstein"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S10: Ernst Ludwig Kirchner (1880–1938).",
+   "yanlis_gerekceleri": {
+    "B": "Otto Dix NG 2007 sergisinde birlikte anılan başka bir sanatçıdır; bu eserin sanatçısı değil.",
+    "C": "George Grosz aynı sergide anılır; bu tablonun sanatçısı değil.",
+    "D": "Max Pechstein Die Brücke üyesidir (1912'de ihraç); bu eserin sanatçısı değil."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin teknik ve desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera, ahşap pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya, kâğıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S10: \"Oil on canvas\" / Öl auf Leinwand.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir; bu eser tuval üzerinedir.",
+    "C": "Tempera/pano farklı bir destek ve bağlayıcıdır; kaynaklar yağlıboya tuval der.",
+    "D": "Suluboya/kâğıt dizinin kâğıt işlerine aittir; bu tablo yağlıboya tuvaldir."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Christie's Lot 37 kaydı boyutu hangi ölçüyle verir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "121.6 × 91.1 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "121 × 95 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "120.6 × 91.1 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "162.5 × 73.5 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10: \"47 7/8 x 35 7/8 in. (121.6 x 91.1 cm.)\".",
+   "yanlis_gerekceleri": {
+    "B": "121×95 cm WD/wiki/Commons değeridir; Christie's farklı ölçer (D1 ihtilafı).",
+    "C": "120.6×91.1 cm MoMA'nın AYRI \"Street, Berlin\" eseridir; bu tablo değil.",
+    "D": "162.5×73.5 cm başka bir esere (Correggio) ait ölçüdür; alakasız."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eserin arka yüzünde (verso) hangi kompozisyon vardır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bäume (Ağaçlar)"
+    },
+    {
+     "harf": "B",
+     "metin": "Potsdamer Platz"
+    },
+    {
+     "harf": "C",
+     "metin": "Fünf Frauen auf der Strasse"
+    },
+    {
+     "harf": "D",
+     "metin": "Otoportre"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10: \"Berliner Strassenszene (recto); Bäume (verso)\".",
+   "yanlis_gerekceleri": {
+    "B": "Potsdamer Platz dizinin ayrı bir tablosudur; verso değil.",
+    "C": "Fünf Frauen auf der Strasse dizinin ilk eseri sayılır; bu tablonun versosu değil.",
+    "D": "Otoportre versoda değil; verso \"Bäume\"dür."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Kadın figürler kimlerden modellenmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Erna ve Gerda Schilling kardeşler"
+    },
+    {
+     "harf": "B",
+     "metin": "Tekla Hess"
+    },
+    {
+     "harf": "C",
+     "metin": "Anita Halpin"
+    },
+    {
+     "harf": "D",
+     "metin": "Elisabeth Holzinger"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6: \"recognizably modeled after the sisters\" (Erna ve Gerda Schilling).",
+   "yanlis_gerekceleri": {
+    "B": "Tekla Hess eserin sahibi/mirasçısıdır; model değil.",
+    "C": "Anita Halpin iade talebindeki torundur; model değil.",
+    "D": "Elisabeth Holzinger sonraki sahiplik zincirindedir; model değil."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "2006 Christie's satışında gerçekleşen fiyat nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "USD 38.096.000"
+    },
+    {
+     "harf": "B",
+     "metin": "USD 18.000.000"
+    },
+    {
+     "harf": "C",
+     "metin": "USD 24.000.000"
+    },
+    {
+     "harf": "D",
+     "metin": "USD 25.000.000"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10 JSON: price_realised USD 38,096,000.",
+   "yanlis_gerekceleri": {
+    "B": "USD 18M tahmin aralığının alt sınırıdır; gerçekleşen değil.",
+    "C": "USD 24M tahmin aralığının üst sınırıdır; gerçekleşen değil.",
+    "D": "USD 25M gerçekleşen fiyat değildir; kaynak 38.096.000 der."
+   },
+   "kanit": [
+    "C041"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Eser Hess mirasçılarına hangi tarihte iade edildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Temmuz 2006"
+    },
+    {
+     "harf": "B",
+     "metin": "1980"
+    },
+    {
+     "harf": "C",
+     "metin": "1998"
+    },
+    {
+     "harf": "D",
+     "metin": "2008"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10: \"Restituted to the heirs of Alfred Hess, July 2006.\"",
+   "yanlis_gerekceleri": {
+    "B": "1980 Berlin şehrinin Holzinger ailesinden alımıdır; iade değil.",
+    "C": "1998 Washington Konferansı yılıdır; bu eserin iadesi değil.",
+    "D": "2008 MoMA sergisi yılıdır; iade 2006'dadır."
+   },
+   "kanit": [
+    "C039"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "MoMA'nın 2008'deki diziyi bir araya getiren sergisi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kirchner and the Berlin Street (3 Ağustos–10 Kasım 2008)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ich und die Stadt (1987)"
+    },
+    {
+     "harf": "C",
+     "metin": "Die Brücke (1905)"
+    },
+    {
+     "harf": "D",
+     "metin": "Berlin Street Scene (2007)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S12: \"Kirchner and the Berlin Street\", Aug 3–Nov 10, 2008; küratör Deborah Wye.",
+   "yanlis_gerekceleri": {
+    "B": "Ich und die Stadt 1987 Martin-Gropius-Bau sergisidir; MoMA 2008 değil.",
+    "C": "Die Brücke 1905'te kurulan gruptur; bir sergi adı değil.",
+    "D": "Berlin Street Scene 2007 Neue Galerie sergisidir; MoMA 2008 değil."
+   },
+   "kanit": [
+    "C048"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Die Brücke grubu nerede ve hangi yıl kuruldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dresden, 1905"
+    },
+    {
+     "harf": "B",
+     "metin": "Berlin, 1911"
+    },
+    {
+     "harf": "C",
+     "metin": "Münih, 1909"
+    },
+    {
+     "harf": "D",
+     "metin": "Viyana, 1900"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6: \"a founding member of… Die Brücke… in Dresden in 1905\".",
+   "yanlis_gerekceleri": {
+    "B": "Berlin 1911 grubun taşındığı yer/yıldır; kuruluş değil.",
+    "C": "Münih 1909 farklı bir bağlamdır; Die Brücke Dresden 1905'tir.",
+    "D": "Viyana 1900 Die Brücke'nin kuruluşu değildir."
+   },
+   "kanit": [
+    "C016"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser 2006'dan beri Neue Galerie New York'tadır.",
+   "dogru": true,
+   "aciklama": "Doğru (S6/S1; WD P195 preferred). Brücke-Museum 1980–2006 geçmiş sahipliktir.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser tek taraflıdır; arka yüzünde başka bir kompozisyon yoktur.",
+   "dogru": false,
+   "aciklama": "Yanlış (S10): çift taraflıdır; verso \"Bäume\" (Ağaçlar).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Christie's Lot 37 kaydı eseri \"1913-1914\" olarak tarihler.",
+   "dogru": true,
+   "aciklama": "Doğru (S10): \"Painted in 1913-1914\". WD/data 1913, NG \"1913-14\" der (D2).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "MoMA'nın \"Street, Berlin\" (1913, 120.6×91.1 cm) eseri bu tabloyla aynıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış (S12): MoMA'nın kendi eseri AYRI bir tablodur; karıştırılmamalı.",
+   "kanit": [
+    "C049"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Kirchner, Die Brücke grubunun kurucu üyesidir (Dresden 1905).",
+   "dogru": true,
+   "aciklama": "Doğru (S6): \"a founding member of… Die Brücke… in Dresden in 1905\".",
+   "kanit": [
+    "C016"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Boyut ihtilafını (121×95 ↔ 121.6×91.1) ve MoMA ayrı eser karışıklığını kaynak eleştirisiyle analiz edin.",
+   "beklenen_ogeler": [
+    "WD/wiki/Commons 121×95",
+    "Christie's 121.6×91.1",
+    "MoMA 120.6×91.1 ayrı eser",
+    "ölçüm/kadraj farkı",
+    "çözülmedi"
+   ],
+   "kanit": [
+    "C057",
+    "C013",
+    "C049"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Provenance zincirini (Hess→Hagemann→Holzinger→Brücke→iade→NG) ve \"Sold under duress\" tartışmasını yazın.",
+   "beklenen_ogeler": [
+    "1918 Schames→Alfred Hess",
+    "1936/37 Hagemann (vermutlich)",
+    "1948 Holzinger hediye",
+    "1980 Berlin/Brücke",
+    "Temmuz 2006 iade",
+    "Schultz karşı / S13 destekler",
+    "RM 3.000 belgesiz"
+   ],
+   "kanit": [
+    "C029",
+    "C033",
+    "C034",
+    "C035",
+    "C036",
+    "C039",
+    "C070"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Sosyal eleştiri yorum ihtilafını (Welt ↔ itwiki ↔ Christie's) üç okuma olarak tartışın.",
+   "beklenen_ogeler": [
+    "Welt: eleştiri değil, yeni bağımsız kadın",
+    "itwiki: burjuva toplum eleştirisi",
+    "Christie's: yargısız sunum + meta sembolü",
+    "yorum ≠ olgu"
+   ],
+   "kanit": [
+    "C058",
+    "C021",
+    "C022",
+    "C074"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "İadenin hukuki temelini (Washington 1998 ↔ Joint Declaration 1999) ve Gutachten bulgularını değerlendirin.",
+   "beklenen_ogeler": [
+    "Washington Declaration 1998",
+    "Joint Declaration Aralık 1999 + Handreichung",
+    "RM 3.000 belgesiz",
+    "piyasa 6.000–15.000 RM",
+    "Thekla kontrol düzenlemeleri"
+   ],
+   "kanit": [
+    "C063",
+    "C045",
+    "C046"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Görsel incelenmeden kompozisyon betiminin sınırlarını ve data uyuşmazlıklarını (bakış yönü, renk) tartışın.",
+   "beklenen_ogeler": [
+    "görsel İNCELENEMEDİ",
+    "GZ TASLAK",
+    "bakış yönü D10",
+    "data renk/sigara doğrulanmadı",
+    "insan editör teyidi"
+   ],
+   "kanit": [
+    "C068",
+    "C066",
+    "C072"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "İki merkezi kadın figürü (kokot) ve onları çevreleyen kalabalığı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NG/Christie's): iki renkli kokot, anonim melon şapkalı erkek kalabalığı.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Arka plandaki 15 numaralı tramvayı ve at arabasını arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: tramvay 15 (Hallesches Tor–Potsdamerplatz–Anhalter Bahnhof); atlı nitelemesi tartışmalı.",
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Kesilmiş ön plan erkek figürlerini (snapshot etkisi) fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Christie's): alt kenarda kesilmiş figürler; aceleyle alınmış snapshot izlenimi.",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Kadınların maske gibi yüzlerini ve tüylü şapkalarını inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: \"African mask-like painted faces\"; MoMA \"elaborate plumed hats\".",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "İmzaları arayın: sağ alt ve sol alt \"E.L. Kirchner\"; versoda \"EL Kirchner\".",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Christie's): imza üç kez; görsel teyit insan editöre.",
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Berliner Straßenszene / Berlin Sokak Sahnesi; Ernst Ludwig Kirchner (1880–1938); 1913 (NG 1913-14, Christie's 1913-1914); yağlıboya tuval; Neue Galerie New York 2006–.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C010",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Çift taraflı + imza?",
+   "arka": "Recto sokak sahnesi, verso \"Bäume\"; ön yüzde iki kez \"E.L. Kirchner\" (sağ/sol alt), versoda \"EL Kirchner\".",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Konu + modeller?",
+   "arka": "İki kokot + müşteriler, işlek Berlin caddesi; kadınlar Erna/Gerda Schilling; erkek \"probably\" Otto Mueller (Kirchner otoportre \"possible\").",
+   "kanit": [
+    "C007",
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "İade + satış?",
+   "arka": "Temmuz 2006 Hess mirasçılarına iade; 8 Kasım 2006 Christie's NY Auction 1722 Lot 37; USD 38.096.000; alıcı Ronald Lauder (Neue Galerie).",
+   "kanit": [
+    "C039",
+    "C040",
+    "C041",
+    "C042"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "MoMA sergisi?",
+   "arka": "\"Kirchner and the Berlin Street\", 3 Ağustos–10 Kasım 2008; Deborah Wye; 7 sokak + 60 kâğıt; MoMA'nın \"Street, Berlin\" (120.6×91.1) AYRI eser.",
+   "kanit": [
+    "C048",
+    "C049"
+   ]
+  }
+ ]
+}

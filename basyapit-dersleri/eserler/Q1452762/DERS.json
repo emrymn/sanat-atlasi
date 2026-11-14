@@ -1,0 +1,880 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1452762",
+ "sanatci_id": "gustave-caillebotte",
+ "baslik": "Paris Sokağı, Yağmurlu Hava",
+ "ozgun_baslik": "Paris Street; Rainy Day (Rue de Paris, temps de pluie)",
+ "kunye": {
+  "sanatci": "Gustave Caillebotte",
+  "sanatci_yasam": "1848–1894",
+  "tarih": "1877",
+  "tarih_belirsizlik": "Kesin yıl (WD precision 9); data kurs kaydı 1876–77 hatalı (D, C055)",
+  "teknik": "Tuval üzerine yağlı boya (Oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 212.2,
+   "genislik": 276.2
+  },
+  "muze": "Art Institute of Chicago",
+  "envanter": "1964.336",
+  "edinim": "1964, Wildenstein and Company'den satın alma (Charles H. and Mary F. S. Worcester Collection); Wildenstein satış yılı 1960↔1964 ihtilaflı (D, C052)",
+  "konum": "Gallery 201, On View; Painting and Sculpture of Europe",
+  "telif_durumu": "Kamu malı (Caillebotte ö.1894); AIC CC0; Commons 2 dosya PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Gustave_Caillebotte_-_Paris_Street;_Rainy_Day_-_Google_Art_Project.jpg",
+  "iiif_url": "https://api.artic.edu/api/v1/artworks/20684/manifest.json",
+  "kaynak": "Wikimedia Commons (Google Art Project) + AIC (image_id f8fd76e9-c396-5678-36ed-6a348c904d27)",
+  "lisans": "Public domain (Commons) / CC0 (AIC)",
+  "dogrulama": {
+   "yontem": "metadata (2 dosya); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "GAP 5982×4531; AIC 1964.336 2898×2250",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C050); GZ TASLAK; kompozisyon K1/K3 (A) + K4/K5 (B/C) metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 415
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1436
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2688
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-başlık-tarihi-ve-tekilleştirme"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-provenans-ve-vasiyet"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#2-tarih-provenans-ve-vasiyet"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-perspektif-ve-geniş-açı"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-sınıf-ve-kent-yalnızlığı"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-konservasyon"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "AIC birincil kaydı + akademik katalogla künyeyi (1877, yağlı boya tuval, 212,2×276,2, 1964.336, Gallery 201) doğrular.",
+  "Başlık tarihini (1877 katalog → 1991 güncel) ve \"Paris, A Rainy Day\" varyantının ayrı eser olmadığını açıklar.",
+  "Realist teknik + Empresyonist konu sentezini, geniş açı/iki kaçış noktalı perspektifi ve camera lucida hipotezini analiz eder.",
+  "Haussmann bağlamını, sınıf temsilini ve kent yalnızlığı yorumlarını kaynaklı ve yorum-etiketli sunar.",
+  "Provenans/sergi/konservasyon zincirini ve D1/D2 ihtilaflarını belirsizlikleri koruyarak yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Flâneur",
+   "tanim": "Modern kentte amaçsızca gezinen, mesafeli gözlemci; adamın tavrı için 'perhaps that of a veteran flaneur' denir.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "ad": "Repoussoir",
+   "tanim": "Ön plana konup derinliği vurgulayan figür/nesne; burada ön plandaki çift.",
+   "kanit": [
+    "C029"
+   ]
+  },
+  {
+   "ad": "Camera lucida",
+   "tanim": "Prizmalı optik çizim aracı; sanal görüntüyü kâğıda bindirir; AIC 2015 \"likely\" (belgesel kanıt yok).",
+   "kanit": [
+    "C033"
+   ]
+  },
+  {
+   "ad": "Haussmannisation",
+   "tanim": "III. Napolyon/Haussmann'ın Paris'i bulvarlarla yeniden düzenlemesi; ~137 km bulvar, yerinden edilme.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "ad": "İki kaçış noktalı perspektif",
+   "tanim": "Lineer perspektif; iki vanishing point; IR ile tespit edilen iğne delikleri; ~1:7 büyütme.",
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Güncel başlık 'Paris Street; Rainy Day'; AIC 1991'de kabul etti (1877 sergi başlığının çevirisi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "1877 katalog başlığı 'Rue de Paris; Temps de pluie'.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Gustave Caillebotte (French, 1848–1894).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "1877 tarihli (WD P571 precision 9 = yıl; esere özgü circa YOK).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Tuval üzerine yağlı boya (Oil on canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "212.2 × 276.2 cm (83 1/2 × 108 3/4 in.); çerçeveli 241.3 × 306.1 × 10.2 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "İmza/tarih sol altta: 'G. Caillebotte. 1877' (gri-kahverengi boya).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Env. 1964.336; Charles H. and Mary F. S. Worcester Collection.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "AIC, Gallery 201, On View; Painting and Sculpture of Europe.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "AIC'nin en büyük, en iddialı eseri; 1964'ten beri ziyaretçi favorisi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "CC0 / kamu malı (is_public_domain=true; WD P6216=Q19652; Commons PD).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K6",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Konu: yağmurlu Paris kavşağı; bugün Place de Dublin — kavşak Caillebotte yaşarken adsızdı, gayriresmî 'carrefour de la rue de Moscou', resmî ad Ocak 1987.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Bakış açısı rue de Turin'den rue de Saint-Pétersbourg yönüne; Turin/Moscou kavşağı; 8. arrondissement; Gare Saint-Lazare çevresi; aile evi 77 rue de Miromesnil 'only a few blocks away'.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Kavşak inşaatı 1870'lerde yeni bitmişti; binalar dar, dilim (pie-shaped) alanlara sıkışmış; rue de Turin uzantısı düz değil, sağa kırılıyor.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Yağmur damla olarak resmedilmez; yeni açılır-kapanır şemsiyeler + ıslak parke yansımalarıyla ima edilir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Kompozisyon: 'frozen moment, as if we are witnessing the sudden click of a camera's shutter'; ritmik zigzag figür düzeni, şemsiyelerle birlik; hareket bilimselden çok Empresyonist.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Empresyonist konu (modern kent yaşamı) + Realist teknik; Monet/Renoir'in bulanık izlenimlerinden farklı keskin detay.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Ön plandaki çift çerçeve dışındaki bir şeye bakıyor; izleyiciye doğru yürüyor.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Adam: silindir şapka, açık palto (düğme/düğme deliği yok), 'perhaps that of a veteran flaneur'; kadın: yün iki parça, kürk manşet/toque, yarım voal, eldiven (sonradan eklenmiş), küpe (temizlik sonrası elmas benzeri); elleri görünen erkekler eldivensiz.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Figür sayısı ihtilafı: K4 '24 individuals' ↔ K3 'The other figures, at least twenty-four in number' (ön plan çifti hariç ima).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C021",
+   "ifade": "Arka planda azınlık işçiler: hizmetçi, iki araba sürücüsü, merdivenli boyacı (K3: merdivenli işçi + önlüklü kadın + sokak satıcıları); karikatür/popüler baskı tipleme dili.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Haussmann dönüşümü: III. Napolyon + Haussmann; ~137 km bulvar; işçi sınıfının yerinden edilmesi (Île de la Cité nüfusunun %75'i).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Kent temsili sert/soğuk, insan etkileşimine mesafeli; burjuva yalnızlığı; şemsiyeler özel alan.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C024",
+   "ifade": "Çift 'impassivity, sense of propriety, and entitlement' yayar (Mary Morton).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "Kimi yorumcular: hava efektleri Paris'in isyandan burjuvaziye 'restorasyonunu' simgeler ('some scholars have proposed').",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C026",
+   "ifade": "İki kaçış noktalı lineer perspektif; kaçış noktalarından biri lamba direğinin sağındaki iki kadının arasında; IR ile tespit edilen iğne delikleri (K4: biri ön plan kadının saçında); ~1:7 büyütme.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Yeşil lamba direği; kavşak 1878'e dek tanımsızdı, 1878'de iki trafik adası + beş kollu şamdan tarzı lambalar eklendi; resimdeki direk o sırada değiştirildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Geniş açı etkisi: 'obvious analogies to wide-angle photography'; perspektif 'willfully studied and photographic'.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Ön plan çifti repoussoir; kireçtaşı cephelerde gri-mavi vuruşlar derinliği artırır; yeşil lamba direği tuvali ikiye böler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Kompozisyon Piero della Francesca 'Flagellation of Christ' (1459–1460) ile karşılaştırılır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Dramatik kırpma (sağ kenar figürü çerçeveyle kesik); 'The dramatic cropping of the scene may have been inspired by the newly popularized medium of photography' (belirsizlik korunur).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Hazırlık: 23 günümüze ulaşan etüt (grafit + yağlı boya); AIC'de 'Study for Paris Street; Rainy Day' (cat. 1); yağlı etüt 54×65 cm; Marmottan eskizi (deneme alanı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Camera lucida: fotoğraftan kopyalama 'unlikely' (kâğıt kalın, lens bozulması yok, standart olmayan lens gerekirdi); tent camera obscura 'poor candidate'; 'likely also on an optical device… the camera lucida'; Garcia Mart 2015 deneyi; 'no documentary evidence has yet been found' (belirsizlik korunur).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Teknik: ön astarlı, standart olmayan boy tuval (el dokuması); ilk çiviler 3–5 cm aralık; boyut değişmiş olabilir; yuvarlak/yassı ferrule fırçalar, 1.5 cm'ye varan vuruşlar; palette knife kazıma; underdrawing + kömür + radyo-şeffaf haleler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Palet: lead white, zinc white, cobalt blue, ultramarine, cerulean, emerald green, viridian, cadmium yellow, Naples yellow, demir oksit kırmızı/sarı topraklar, vermilion, madder lake, 'possibly a second red lake'.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Araba tekerleği ince telleri: kalın boyalı parke üzerine kırmızı VE mavi kuru fırça; bulanık görünür.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Konservasyon: 1964 öncesi undocumented lining/restretching; 2013–14 temizlik + revarnish (Larapol A-81) + inpainting; şimdiki vernik sentetik reçine; doğal reçine vernik 'unclear, but unlikely… original'; discolored varnish 'lavender-hued umbrellas'ı maskeliyordu; temizlik 'hint of sun after the rain' parlaklığını ortaya çıkardı; blanching/microfissures; çerçeve 2000 (plain scotia).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Provenans: sanatçı (ö.1894) → Martial Caillebotte + Marie Minoret (1894) → Georges Minoret, Château de Montglat, Provins (1900) → Albert & Geneviève Chardeau (1950) → Walter P. Chrysler Jr. (1954) → Wildenstein and Company (1964) → AIC (1964; komite 25 Kas 1964, mütevelli 21 Aralık 1964).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Vasiyet bağlamı: René'nin ölümü (1876) sonrası vasiyet; Renoir tenfizci; Ocak 1895 anlaşması; devlet 26 Şubat 1896'da 67 eserin 38'ini kabul etti; 'Paris Street' devlet payına GİRMEDİ, Martial'da kaldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Sergi geçmişi: Nis 1877 kat.1 → 4–16 Haz 1894 Durand-Ruel kat.47 (ilk yeniden gösterim) → 1951 Beaux-Arts kat.13 → 1956 Portland kat.78 (+müze turu) → 1960 Dayton kat.56 → 1969 Minneapolis kat.7 → 1976 Houston kat.25 → 1986 NGA kat.38 → 1994–95 Grand Palais/AIC 'Urban Impressionist' kat.35 → 2008 Kimbell kat.18 → 2010 Essen kat.11 → 2012–13 Orsay kat.35/Met kat.93/AIC → 2015 NGA/Kimbell 'The Painter's Eye' kat.4 → 2019 Berlin → 2024–25 Orsay kat.78/Getty kat.39/AIC 'Painting His World'.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2",
+    "K3",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "'Returns' sergisi: 19 Mayıs 2014 – 14 Haziran 2015, Gallery 201 (konservasyon sonrası dönüş).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "1877 eleştirisi: 'la masterpiece de l'exposition' (B); Sébillot '[This painting] gives an idea of what photography will become' (A); yağmur yokluğu/soluk tonlar/perspektif manipülasyonu eleştirildi (B); Zola 'anti-artistic' / 'gerçekliğin salt fotoğrafı'; 1877 basın listesi (Rivière, 'Anonymous [possibly Émile Zola]' vb.) (A); 'boş zamanlarında resim yapan' burjuva algısı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K2",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "1964 edinmesi 20. yy yeniden keşfin 'most significant catalyst'i; tam takdir 1970'lerden itibaren Varnedoe vd.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "Varnedoe: stil Neo-Empresyonistleri (1880'ler) önceler; ölçek/perspektif/kompozisyon akademik sanata benzer.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C045",
+   "ifade": "Başlık tarihi: 1956 Chrysler 'Rue de Paris, temps de Pluie: Le Carrefour formé par les rues de Turin, Petrograd, et Chapeyron [sic]'; 1976–77 retrospektif 'Rue de Paris; temps de pluie (Paris, A Rainy Day—Intersection of the rue de Turin and the rue de Moscou)'; AIC ilk yanlış 'Umbrellas in the Place de l'Europe on a Rainy Day' → 1991 düzeltme. 'Paris, A Rainy Day' ayrı eser değil tarihsel başlık varyantı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "itwiki yorumları: 'freddo pomeriggio invernale', haute bourgeoisie, kentsel yalnızlık, Augé 'non-luoghi', Baudelaire 'spleen' (blog refs).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C047",
+   "ifade": "itwiki 'lampioni elettrici' (elektrikli sokak lambaları) — K3'te doğrulanmadı (1878 adaları 'five-branched candelabrum-style street lamp'; elektrik ifadesi yok).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5",
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "K3: 'painted when the artist was 28'; 'a turning point in his career'; katalog sonucu 'his greatest work' (doğum Ağustos 1848 → 1877'de 28/29; kaynak ifadesi AYNEN korunur, hesaplanmaz).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C049",
+   "ifade": "WD P136=cityscape (ref'siz) ve P180 konu unsurları (rain, man+top hat+umbrella, woman, rue de Turin/Clapeyron/Moscou) A kaynaklarıyla uyumlu; WD tek başına A kanıt sayılmaz (yardımcı).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C050",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); 2 Commons dosyası PD + AIC CC0; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "Kitap metinlerine erişilmedi (Distel 1995, Varnedoe 1987, Marrinan 2016, Morton/Shackelford 2015 NGA, Callen 2004, Broude 2002, Facos 2011, Boime 2008, Ribeiro 2012 vb.); B iddiaları K4/K5 satır içi atıf zinciriyle; 'kaynakçada anıldı, metne erişilmedi'.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4",
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "D1 Wildenstein'a satış yılı: 1960 (NGA 2015 'The Painter's Eye', Morton/Shackelford p.243–244; K4 fn) ↔ 1964 (AIC K2/K3, Joseph Baillio e-postası). A kaynakları 1964 der; NGA kataloğuna erişilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C053",
+   "ifade": "D2 Hazırlık yöntemi: 'Most scholars believe that Caillebotte traced his preparatory sketches from photos' (K4, 2015 öncesi; Galassi 1976) ↔ AIC 2015 'unlikely… likely camera lucida' (K3).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C054",
+   "ifade": "D5 Adamın boyun bağı: cravat (K4 Ribeiro 2012 'a black knotted cravat') ↔ papyon (K5 'l'immancabile papillon'; data 'papyonlu'); K3'te cravat/bow tie/papillon YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K5",
+    "K12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C055",
+   "ifade": "D6 data içi tarih: kurs kaydı 'Paris, A Rainy Day' 1876–77 ↔ A kaynakları 1877 (mükerrer kurs kaydının tarihi A ile uyuşmaz).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K12",
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C056",
+   "ifade": "D4 Kavşağın sokak listesi: K4 4 sokak (Turin/Moscou/Clapeyron/Saint-Pétersbourg) ↔ K5 3 sokak ↔ WD fr başlık 2 sokak; K3 'intersection made by the rue de Turin and the rue de Moscou' + bakış Saint-Pétersbourg'a. Kapsam farkı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K5",
+    "K3",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C057",
+   "ifade": "E7 Vernik tarihi: K4 'a layer of varnish applied in the early 1900s' (Groom/Keegan Introduction'a atfen) ↔ K3 'unclear, but unlikely… original' + 1964 öncesi undocumented; 'early 1900s' erişilen K3 metninde yok (Introduction ayrı bölüm).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4",
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C058",
+   "ifade": "E10 data 'arabanın kırmızı tekerleği' ↔ K3 'dry-brushed red and blue' (kırmızı+mavi); tek renk 'kırmızı' kısmi destek; görsel incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K12",
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Art Institute of Chicago",
+   "belge": "Nesne sayfası (WD P276 ref URL'sinden yönlendi)",
+   "url": "https://www.artic.edu/artworks/20684/paris-street-rainy-day",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 18:50:11Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Art Institute of Chicago",
+   "belge": "API kaydı (provenance_text, exhibition_history, publication_history)",
+   "url": "https://api.artic.edu/api/v1/artworks/20684",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 18:50:11Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "AIC (Groom & Keegan 2015)",
+   "belge": "Akademik katalog \"Cat. 2 Paris Street; Rainy Day, 1877\" tam metin (curatorial entry + Technical Report + Conservation + Provenance)",
+   "url": "http://web.archive.org/web/20190620145334id_/https://publications.artic.edu/caillebotte/api/epub/paintingsanddrawings/574/content.xhtml?revision=1555965473",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (Cloudflare); Wayback 200 (arşiv 2019-06-20)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Paris Street; Rainy Day (good article; sfn akademik atıf zinciri)",
+   "url": "https://en.wikipedia.org/wiki/Paris_Street;_Rainy_Day",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext, API)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Strada di Parigi in un giorno di pioggia",
+   "url": "https://it.wikipedia.org/wiki/Strada_di_Parigi_in_un_giorno_di_pioggia",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext, API)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q1452762 (P195/P217/P276 refs ARTIC)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1452762.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 18:47:43Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K7",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (GAP 5982×4531; AIC 1964.336 2898×2250)",
+   "url": "https://commons.wikimedia.org/wiki/File:Gustave_Caillebotte_-_Paris_Street;_Rainy_Day_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K8",
+   "kurum": "Art Institute of Chicago",
+   "belge": "Sergi sayfası \"Caillebotte's Paris Street; Rainy Day Returns\"",
+   "url": "https://www.artic.edu/exhibitions/3183/caillebotte-s-paris-street-rainy-day-returns",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 · 18:53:15Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "K9",
+   "kurum": "AIC / Wayback",
+   "belge": "OPF manifesti (katalog içerik haritası; section-574 href)",
+   "url": "http://web.archive.org/web/20190620145519/https://publications.artic.edu/caillebotte/api/epub/paintingsanddrawings/package.opf",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (arşiv 2019-06-20)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K10",
+   "kurum": "Smarthistory / Khan Academy",
+   "belge": "Eski Smarthistory essay → KA JS kabuğu; Wayback video",
+   "url": "http://web.archive.org/web/20160309034718id_/https://www.khanacademy.org/humanities/becoming-modern/avant-garde-france/impressionism/v/gustave-caillebotte-paris-street-rainy-day-1877",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 200 içeriksiz; Wayback 200 (arşiv 2016-03-09, video); essay erişilemedi",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K11",
+   "kurum": "Chicagoist (2014)",
+   "belge": "Caillebotte Uncovered... (K4 ref; url-status=dead)",
+   "url": "http://chicagoist.com/2014/06/22/caillebotte_uncovered_art_institute.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ÇEKİLMEDİ (ölü); konservasyon K3'te A düzeyinde",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K12",
+   "kurum": "yerel",
+   "belge": "data/basyapitlar.json eserler[84]; data/eserler_onbellek.json; data/kopya_eserler.json (A3-6)",
+   "url": "data/basyapitlar.json; data/eserler_onbellek.json (salt-okunur)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "salt-okunur; DEĞİŞTİRİLMEDİ",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "İzlenim, Gün Doğumu",
+   "sanatci": "Claude Monet",
+   "kurum": "Musée Marmottan Monet, Paris",
+   "mufredat_ici": true,
+   "gerekce": "Empresyonist konu ama Realist teknik karşıtlığı: Caillebotte'un keskin detayı Monet/Renoir'in bulanık izlenimine karşı.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "eser": "Folies-Bergère'de Bir Bar",
+   "sanatci": "Édouard Manet",
+   "kurum": "Courtauld Gallery, Londra",
+   "mufredat_ici": true,
+   "gerekce": "Modern kent ve burjuva bakışı teması; müfredat içi bağ (85↔86).",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "eser": "Flagellation of Christ",
+   "sanatci": "Piero della Francesca",
+   "kurum": "Galleria Nazionale delle Marche, Urbino",
+   "gerekce": "Kompozisyon/perspektif kurgusu benzerliği (1459–1460); akademik sanata yakınlık.",
+   "kanit": [
+    "C030"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "AIC nesne sayfası (K1) + API (K2) + Groom & Keegan 2015 akademik katalog (K3, Wayback 2019-06-20) yeniden açıldı; künye/provenans/sergi/yayın/teknik/konservasyon/başlık-yer fn doğrulandı. en/it wikitext (K4/K5) yeniden okundu; D1 (1960↔1964), D2 (foto↔lucida), D5 (cravat↔papyon), D6 (1876–77↔1877), D4 (sokak listesi), figür sayısı (C020) D olarak açık. Görsel K7 metadata only; vision kotası ana oturumda → İNCELENMEDİ (C050); GZ TASLAK. Kitap metinleri erişilmedi (C051); NGA 2015 (D1 1960 tarafı) yalnız K4 fn.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Ana kayıt uyumlu: data/basyapitlar.json eserler[84] Q1452762 (1877, AIC) K1/K2 ile tam uyum.",
+  "A3-6 mükerrer: 'Paris, A Rainy Day' (kurs, 1876–77) ayrı eser değil tarihsel başlık varyantı (C045); kurs tarihi 1877 ile uyuşmaz (C055). Tekilleştirme önerisi ana oturuma; data DEĞİŞTİRİLMEDİ.",
+  "Kırmızı tekerlek: data 'kırmızı' ↔ K3 'red and blue' (C058, E); görsel teyit yok.",
+  "Perspektif 'abartılmıştır' (data) ↔ K3 'willfully studied and photographic' (C028); 'abartılmış' yorum ifadesi.",
+  "Place de Dublin adı 1987 (C012) data'da yok; 'bugünkü' nitelemesi doğru.",
+  "Görsel İNCELENMEDİ (C050); GZ TASLAK; insan editör görsel teyidi zorunlu.",
+  "WD P18 (AIC 2898×2250) ≠ enwiki infobox (GAP 5982×4531); ikisi PD, çelişki değil; P136/P180 ref'siz (C049)."
+ ]
+}

@@ -1,0 +1,902 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1245354",
+ "sanatci_id": "edouard-manet",
+ "baslik": "Folies-Bergère'de Bir Bar",
+ "ozgun_baslik": "A Bar at the Folies-Bergère (Un bar aux Folies Bergère)",
+ "kunye": {
+  "sanatci": "Édouard Manet",
+  "sanatci_yasam": "1832–1883",
+  "tarih": "1882",
+  "tarih_belirsizlik": "Birincil Courtauld/A&A/Art UK 1882 (WD P571 precision=yıl); itwiki/VAC \"1881-1882\" (D, C036); 1881 etüdü aralığı açıklayabilir, kesinleştirilmedi.",
+  "teknik": "Yağlıboya, tuval (oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 96,
+   "genislik": 130
+  },
+  "muze": "The Courtauld, London (Samuel Courtauld Trust) — Courtauld Gallery",
+  "envanter": "P.1934.SC.234",
+  "edinim": "Samuel Courtauld'un bağışı, 1934 (FLV 2019 caption \"1932\" der → D, C038)",
+  "konum": "Somerset House, Strand, London WC2R 0RN; sergilendiği salon etiketi çelişkili (LVMH Great Room L3 ↔ Blavatnik Room 5) → belirsiz (C044)",
+  "telif_durumu": "Kamu malı (Manet ö. 1883; WD P6216=Q19652, 100+ yıl pma); Commons IMG2/IMG3 PD; IMG1 fotoğrafı CC BY 2.0 (atıf zorunlu)."
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Edouard_Manet,_A_Bar_at_the_Folies-Berg%C3%A8re.jpg",
+  "kaynak": "Wikimedia Commons (credit: images.artistsspace.org/ln8ji75r)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata (Commons imageinfo, 3 dosya); BU OTURUMDA İNCELENMEDİ",
+   "cozunurluk": "IMG3 3419×2553 (PD); IMG2 12580×9236 (PD, Google Art Camera); IMG1 4330×3221 (CC BY 2.0, FLV 2019)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C049); GZ TASLAK; kompozisyon S4/S5/S6 (A) + S2/S3 (B) metninden; IMG1 CC BY 2.0 atıf zorunlu (data lisans alanı boş); IMG2 yüksek çözünürlüklü PD alternatif; Art UK görseli ayrı hak rejimi (non-commercial), kullanılmadı."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 406
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1321
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2615
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-hipotez-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#6-biçim-ve-üslup-sanatsal-vasiyet"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-portakal-bass-meyve-ve-aksesuar"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#4-röntgen-ve-hazırlık-değişen-kompozisyon"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Courtauld birincil kaydıyla künyeyi (1882, yağlıboya tuval 96×130, P.1934.SC.234, 1934 bağışı, imza) doğrular.",
+  "Ayna bilmecesini iki okumayla (Courtauld ↔ Park/Getty) yönetir; \"bilerek bozuk perspektifi\" tek doğru sunmaz.",
+  "Röntgen ve hazırlık etüdünün kompozisyon kararlarını nasıl değiştirdiğini analiz eder.",
+  "İkonografik yorumları (portakal/Bass/meta) olgulardan ayırır; data uyuşmazlıklarını raporlar.",
+  "Tarih/edinme/tür ihtilaflarını ve görsel sınırını (GZ TASLAK) beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Music hall",
+   "tanim": "Müzikli eğlence salonu; Folies-Bergère Paris'in ilki (1869).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "Salon",
+   "tanim": "Fransız Güzel Sanatlar Akademisi'nin resmî yıllık sergisi; tablo 1882'de sergilendi.",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "ad": "Ofset bakış açısı",
+   "tanim": "Park'ın rekonstrüksiyonunda bakışın barın sağına kayması; ayna \"hatalarını\" optik olarak açıklar.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Röntgen (X-ray) analizi",
+   "tanim": "Tuval altındaki başlangıç kompozisyonunu gösterir; kollar/dürbünlü kadın değişikliği.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "ad": "Meta / nesneleşme",
+   "tanim": "Garsonun hem satıcı hem satılabilir nesne olarak okunması (Clark; Courtauld yorumu).",
+   "kanit": [
+    "C018",
+    "C056"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Manet'nin son büyük tablosu; ölümünden bir yıl önce tamamlandı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "1882 Paris Salonu'nda sergilendi (Salon = French Academy of Fine Arts'ın resmî yıllık sergisi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S6",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Mekânda hazırlık eskizleri yapıldı; nihai eser tamamen atölyede; atölyeye bar kuruldu, Suzon poz verdi; kompozisyon dikkatli hazırlık çalışmalarının ürünü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Model, Folies-Bergère'de çalışan gerçek bir garson olan Suzon'dur.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Folies-Bergère Paris'in ilk music hall'uydu; 1869'da açıldı; atmosferi 'unmixed joy' olarak tanımlandı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Mekân fuhuşla ünlenmişti; Maupassant garsonları 'vendors of drink and of love' diye tanımladı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Courtauld kaydı: aynadaki yansıma sağa kaydırılmış, soldaki şişeler de hizasız; Courtauld bunu 'normal perspektifi yok sayma' olarak sunar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Röntgen: garson başlangıçta kollarını belinde kavuşturmuştu (sağ el, sol kolu bilek üstünden kavrar); eldivensizlik + korunma jesti; dürbünle bakan kadın sonradan eklendi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Manet çok hastaydı ('very ill and almost invalid'); tablo 1883'te ölümünde hâlâ atölyesindeydi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Manet İzlenimcileri teşvik etti ama onların bağımsız sergilerine katılmayı reddetti; Salon'a göndermeyi sürdürdü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Ön planda şarap, şampanya, nane likörü ve kırmızı üçgen logolu İngiliz Bass birası.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Sol üstte yeşil çizmeli trapez sanatçısının ayakları.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "İmza + tarih: sol alttaki şarap şişesi etiketinde 'Manet / 1882'.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Tuval 96 × 130 cm; çerçeve 137,3 × 171,6 × 17 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S8",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Envanter P.1934.SC.234; Samuel Courtauld'un 1934 bağışı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S8",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Malcolm Park rekonstrüksiyonu (2000): sahne tek noktalı perspektife uygun; bakış açısı barın sağına ofsetli; adam ressamın görüş alanının dışında solda ve garsondan uzağa bakıyor; garson hafif çapraz; tezgâhın yansıyan kenarı 'visual decoy'.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Park'ın doktora tezi: 'Ambiguity, and the Engagement of Spatial Illusion Within the Surface of Manet's Paintings', University of New South Wales, 2001 (metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Portakallar → fuhuş iması (Larry L. Ligo); T. J. Clark: garson 'as both a salesperson and a commodity—something to be purchased along with a drink'.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Bass'in İngiliz markası oluşu, Fransa-Prusya Savaşı sonrası anti-Alman duygunun belgesi olarak yorumlandı (Bendiner).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Kalabalıkta Méry Laurent tanınır (beyaz giysili, eldivenli ellere yaslı yüz; 1881 pastelile aynı poz).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "1934 balesi 'Bar aux Folies-Bergère': koreografi Ninette de Valois, müzik Chabrier; tablodan yaratıldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Jeff Wall 'Picture for Women' (1979) bu tabloya gönderme (Tate Modern duvar metni); John Brack 'The Bar' (1954) ironik gönderme.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Foucault 8 Nisan 1970'te Albright-Knox'ta bu tablo üzerine konuşma verdi; Manet kitabı projesi terk edildi; 1970/1 ders serisi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Thierry de Duve, 'How Manet's A Bar at the Folies-Bergere is Constructed', Critical Inquiry 25/1 (Güz 1998): 136–168; nonsite.org #6 (2012).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Bradford R. Collins (ed.), '12 Views of Manet's Bar', Princeton University Press, 1996.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Jeffrey Meyers'in ayna/Merleau-Ponty passage'ı: 'Seen in the mirror, she seems engaged with a customer; in full face, she's self-protectively withdrawn and remote.'; etüdde garson sağda, nihai tuvalde merkezde ama yansıma sağda.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "1881 tarihli hazırlık etüdü dosyası ('Étude por Le bar aux Folies-Bergère') enwiki'de; kompozisyonun dikkatli hazırlığa dayandığı Courtauld tarafından doğrulanır (C003).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Tablo önce besteci Emmanuel Chabrier'ye aitti; piyanosunun üzerinde asılıydı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C029",
+   "ifade": "Suzon'un tam adı 'Suzon Tonnerre', Groix adalı balıkçıların kızı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C030",
+   "ifade": "Boyunda 'collarino con nastro e cammeo' (nastro + cameo'lu choker), sağ önkolda altın bilezik.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "Tür sınıflaması belirsiz/zayıf kaynaklı: WD P136 'portrait' referanssız; VAC 'Genre painting' düşük otorite.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C032",
+   "ifade": "Akım 'İzlenimcilik' atfı zayıf: WD P135 blog referanslı; VAC tekrarlar; birincil kayıt akım etiketi vermez.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C033",
+   "ifade": "En erken eleştiriler Manet'yi perspektif bilmemekle suçladı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C034",
+   "ifade": "Manet varlıklı bir aileden geldi; deniz subayı olmak istedi; giriş sınavını kaybedince sanata yöneldi; 18 yaşında Thomas Couture'un atölyesine girdi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Le Déjeuner sur l'herbe (1863) 1863 Salonu'nda reddedildi; Olympia (1863) 1865 Salonu'nda skandal yarattı (Titian'ın Urbino Venüsü'nün [1538, Uffizi] açık parodisi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Tarih ihtilafı: 1882 (S4/S5/S6/S8, WD P571 precision=yıl, S2) ↔ '1881-1882' (S3, S9, S1 P186 ref başlığı, S10 IMG3 DateTimeOriginal). 1881 etüdü aralığı açıklayabilir; kesinleştirme yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S8",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "Ayna bilmecesi: Courtauld (S4/S5) 'Ignoring normal perspective' / 'shifted too far to the right' ↔ Getty/Park (S7) ofset bakış açısıyla optik tutarlılık; itwiki (S3, Odifreddi üzerinden, erişilmedi) aynanın derinlemesine eğik olduğunu yazar.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "Edinme yılı ihtilafı: 1934 bağış (S6, S8, WD P580=1934, P.1934.SC.234) ↔ 'Don de Courtauld, 1932' (S10 IMG1 = FLV 2019 caption; S11 erişilmedi). Birincil katalog 1934'ü destekler.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S6",
+    "S8",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "Bass yorumu ihtilafı: anti-Alman duygu (S2→Bendiner) ↔ 'nota di spiccato realismo' (S3).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "Tür ihtilafı: portrait (S1 P136, ref'siz) ↔ genre painting (S9) ↔ 'portre formatı ama konusu isimsiz' (S4).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "Bass şişelerinin konumu (data içi): data/eser_ayrintilari.json 'Sol köşede' ↔ data/basyapitlar.json 'Tezgâhın sağ ucunda'. Kaynaklar SOL der (S4 'The bottles on the left'; S6 imza 'bottom left').",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "Meyve (data içi + kaynak): data/eser_ayrintilari.json 'mandalinalar' ↔ data/basyapitlar.json 'portakallar' ↔ kaynaklar 'oranges' (S2), 'arance' (S3), S6 keyword 'oranges'.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "Boyun aksesuarı (data ↔ S3): data 'madalyonlu bir kurdele' ↔ S3 'nastro e cammeo' (cameo). Madalyon/cameo farkı kesinleştirilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "Sergilendiği salon çelişkisi: S4 aynı sayfada hem 'LVMH Great Room, Level 3' hem foto caption 'Blavatnik Fine Rooms, Room 5'; güncel sergileme yeri belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "Elektrik lambaları (data): 'Beyaz küreler yeni elektrik lambalarıdır' birincil kaynakla doğrulanmadı; S3 'lampadari' (avize), S9 (düşük otorite) 'new-fangled electric lights', Tate metni 'light bulbs' motifini anar; birincilde tanımlama yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "Sarı eldiven (data): 'sarı eldivenli kadın dürbünle bakar'; S3 'mani guantate' (renk yok); S5 dürbünlü kadını doğrular ama renk vermez. 'Sarı' doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "data hotspot 'Olympia'sını hatırlatır' yorumu erişilen kaynaklarda yok; S5 Olympia'yı ayrı (kariyer) bağlamında anar.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "Kadehteki çiçek türü: data 'bardaktaki iki gül' der; S3 'un calice con delicati fiori' (tür yok). 'Gül' doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "Görseller bu oturumda İNCELENMEDİ (yalnız metadata/lisans/çözünürlük); kompozisyon/hotspot doğrulaması görsel üzerinden YAPILMADI; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Kitap/makale metinlerine erişilmedi (Lanier, Bendiner, Meyers, Collins, de Duve, Park tezi, Rambert, Campany, Rizzoli, Cricco-Di Teodoro, Abate-Rocchi, Adorno, Giordano, Odifreddi, Tinterow); yalnız atıf zinciri; FLV (S11) erişilmedi; Art UK canlı 403, A&A canlı 404 → Wayback.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S7",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "Kamu malı (PD): Manet ö. 1883 (100+ yıl pma); WD P6216=Q19652 (P1001=Q60332278, P459=Q29940705); Commons IMG2/IMG3 PD.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C052",
+   "ifade": "Görsel metadata/lisans: IMG1 (WD P18) FLV 2019 fotoğrafı CC BY 2.0 (atıf zorunlu) 4330×3221, caption 'Don de Courtauld, 1932'; IMG2 PD 12580×9236 (Google Art Camera, WD P4701=NQE8B0Mjo2nq2g); IMG3 PD 3419×2553 (uygulamanın kullandığı; credit images.artistsspace.org/ln8ji75r; DateTimeOriginal '1881-1882').",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "itwiki'nin Abate e Rocchi üzerinden aktardığı: 1882 Salonu'nda 'accoglienza piuttosto tiepida'; Manet'nin eleştirmen Wolff'a yanıtı (ölünce kutsayacak yazıyı sağken okuma isteği).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "itwiki'nin Adorno üzerinden aktardığı Baudelaire çağrısı: 'modern hayatın epik yanını koparıp almak'; günlük kıyafetlerin (kravat, parlak ayakkabı) şiirselliği.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Ayna geleneği paralellikleri (Arnolfini 1434, Las Meninas, Degas L'Assenzio) enwiki/itwiki'de satır içi atıfsız; VAC 'Probably modelled on Las Meninas (1656)' ('probably' korunur); etki kesin değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "Courtauld'un yorumu: garson, ön plandaki 'cazip dizi'de (içki/ürün) 'bir kalem daha' gibi görünür; tüketim nesnesi olarak okunur.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C057",
+   "ifade": "Felsefi sentez yorumu: ayna üzerinden bakış/nesneleşme/öznenin geri çekilmesi okuması (Merleau-Ponty, Foucault, Baudelaire çerçeveleri ödünç; Manet'nin bu düşünürlerden etkilendiği İDDİA EDİLMEZ).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C058",
+   "ifade": "itwiki'nin Cricco-Di Teodoro üzerinden aktardığı: son büyük tablo 'sanatsal ve ruhsal vasiyet'; siyah kullanımı, günlük temalar, kalibre kompozisyon, düz/homojen renkler, natürmort sevgisi; velatura'suz, neredeyse İzlenimci teknik.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C059",
+   "ifade": "itwiki'nin Giordano'ya atfen aktardığı: Suzon 'laik ve çağdaş bir ihtişam' (maestà laica e contemporanea); merkezi/piramidal kütle bakışı yüze yönlendirir; ellerin mermerle 'tanışıklığı'.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "Teknik: yağlıboya tuval (oil on canvas); WD P186 = oil paint (Q296955) + canvas/support (Q12321255, P518=Q861259).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S8",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q1245354",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1245354.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia EN",
+   "belge": "A Bar at the Folies-Bergère wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=A%20Bar%20at%20the%20Folies-Berg%C3%A8re&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia IT",
+   "belge": "Il bar delle Folies-Bergère wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Il%20bar%20delle%20Folies-Berg%C3%A8re&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Courtauld Gallery",
+   "belge": "Canlı eser sayfası (eski katalog URL 301 → /highlights/a-bar-at-the-folies-bergere/)",
+   "url": "https://courtauld.ac.uk/highlights/a-bar-at-the-folies-bergere/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "301→301→200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Courtauld Gallery",
+   "belge": "Eski katalog sayfası, Wayback 2021-04-15 (In the Making / röntgen)",
+   "url": "http://web.archive.org/web/20210415093300/https://courtauld.ac.uk/gallery/collection/impressionism-post-impressionism/edouard-manet-a-bar-at-the-folies-bergere",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2021-04-15)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Courtauld (Art & Architecture image library)",
+   "belge": "Katalog kaydı, Wayback 2022-02-14 (canlı 404)",
+   "url": "https://web.archive.org/web/20220214134211/http://www.artandarchitecture.org.uk/images/gallery/dfa40992.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2022-02-14); canlı 404",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "J. Paul Getty Museum",
+   "belge": "Manet's Bar at the Folies-Bergère: One Scholar's Perspective (Malcolm Park)",
+   "url": "https://www.getty.edu/art/exhibitions/manet_bar/looking_glass.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (canlı)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Art UK",
+   "belge": "a-bar-at-the-folies-bergere-207293; canlı 403 → Wayback 2025-09-14",
+   "url": "http://web.archive.org/web/20250914082646/https://artuk.org/discover/artworks/a-bar-at-the-folies-bergere-207293",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (2025-09-14)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S9",
+   "kurum": "visual-arts-cork.com",
+   "belge": "A Bar at the Folies-Bergere (1881-2) analizi",
+   "url": "http://www.visual-arts-cork.com/paintings-analysis/bar-at-the-folies-bergere.htm",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url|size|extmetadata), 3 dosya",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url|size|extmetadata",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata, İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "Fondation Louis Vuitton",
+   "belge": "2019 sergi sayfası (La Collection Courtauld. Le parti de l Impressionnisme)",
+   "url": "https://www.fondationlouisvuitton.fr/fr/expositions/exposition/la-collection-courtauld-le-parti-de-l-impressionnisme.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ERİŞİLMEDİ (yalnız S10 açıklamasında anılıyor)",
+   "tur": "ikincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Olympia",
+   "sanatci": "Édouard Manet",
+   "kurum": "Musée d'Orsay, Paris",
+   "mufredat_ici": false,
+   "gerekce": "S5: Olympia 1865 Salonu skandalı, Titian Urbino Venüsü parodisi; bakış/nesneleşme sürekliliği.",
+   "kanit": [
+    "C035"
+   ]
+  },
+  {
+   "eser": "Las Meninas",
+   "sanatci": "Diego Velázquez",
+   "kurum": "Museo del Prado, Madrid",
+   "mufredat_ici": false,
+   "gerekce": "Ayna paralelliği enwiki/itwiki'de atıfsız (belirsiz); Foucault'nun Manet ilgisi kaynaklı.",
+   "kanit": [
+    "C023",
+    "C055"
+   ]
+  },
+  {
+   "eser": "Picture for Women",
+   "sanatci": "Jeff Wall",
+   "kurum": "Tate Modern sergisi (2005–2006)",
+   "mufredat_ici": false,
+   "gerekce": "Belgeli çağdaş alımlama: Tate duvar metni iç yapı ve ayna motifini aktarır (1979).",
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Courtauld birincil canlı (S4, 301→200) + Wayback 2021 (S5, In the Making/röntgen) + A&A Wayback 2022 (S6, canlı 404) yeniden açıldı; künye/boyut/envanter/imza/edinme/model/röntgen/kariyer doğrulandı. Getty canlı (S7) Park rekonstrüksiyonu; Art UK Wayback 2025 (S8, canlı 403). en/it wikitext (S2/S3), VAC (S9), WD (S1: P571 precision=9, P195/P580=1934, P217, P6216, P4701, P135 blog, P136 ref'siz) ve Commons imageinfo (S10: IMG1 CC BY 2.0, IMG2/IMG3 PD) yeniden doğrulandı. Sekiz ihtilaf D (C036–C043) açık; salon/Chabrier/Suzon soyadı/elektrik/sarı eldiven E. Görsel İNCELENMEDİ (C049) → GZ TASLAK. Kitap/makale metinleri erişilmedi (C050); FLV (S11) erişilmedi.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data \"1882\" ✓ birincil; itwiki/VAC \"1881-1882\" (D, C036); WD P571 precision=yıl korundu.",
+  "Bass konumu (D, C041): data/basyapitlar.json \"bak\" → \"Tezgâhın sağ ucunda, Bass\" ↔ kaynaklar SOL (S4/S6). Düzeltilmesi önerilir (ana oturum kararı).",
+  "Meyve (D, C042): data/eser_ayrintilari.json \"mandalinalar\" ↔ data/basyapitlar.json \"portakallar\" ↔ kaynaklar oranges/arance. \"Portakal\" kaynaklara uygun.",
+  "Boyun aksesuarı (D, C043): data \"madalyonlu kurdele\" ↔ S3 \"nastro e cammeo\" (cameo). Kesinleştirilmedi.",
+  "Elektrik lambaları (E, C045): data \"Beyaz küreler yeni elektrik lambalarıdır\" birincilde yok; S3 avize, S9 (düşük otorite) electric lights, Tate metni \"light bulbs\". Doğrulanmadı.",
+  "Sarı eldiven (E, C046): data \"sarı eldivenli kadın\" ↔ S3/S5 renk vermez. \"Sarı\" doğrulanmadı.",
+  "\"Olympia'yı hatırlatır\" (E, C047) ve \"iki gül\" (E, C048): data hotspot yorumları erişilen kaynaklarda yok / tür belirsiz.",
+  "Kaymış yansıma hotspot: data \"Perspektif bilerek bozulmuştur\" → D (C037); Park'ın optik-tutarlılık okuması (S7) karşıt kanıt. İki okuma verilmeli.",
+  "Görsel lisans (C052): data/eserler_onbellek.json IMG1 lisans alanı boş ↔ CC BY 2.0 (atıf zorunlu); IMG2 daha yüksek çözünürlüklü PD alternatif. Görsel İNCELENMEDİ (C049); GZ TASLAK; insan editör zorunlu.",
+  "Salon (E, C044): S4 iç çelişkisi (LVMH Great Room L3 ↔ Blavatnik Room 5); derste salon adı kesin verilmedi.",
+  "Tür/akım (E, C031/C032; D, C040): WD P136 portrait ref'siz, P135 blog ref'li; data/eser_konulari.json \"gundelik\" Courtauld'un isimsiz-portre notuyla uyumlu ama WD ile gerilimli.",
+  "Chabrier provenance (E, C028) ve \"Suzon Tonnerre\" (E, C029): atıfsız/şüpheli kaynak; derste kesin kullanılmadı."
+ ]
+}

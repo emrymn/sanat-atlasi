@@ -1,0 +1,821 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3640080",
+ "sanatci_id": "mary-cassatt",
+ "baslik": "Mavi Koltukta Küçük Kız",
+ "ozgun_baslik": "Little Girl in a Blue Armchair",
+ "kunye": {
+  "sanatci": "Mary Cassatt",
+  "sanatci_yasam": "1844–1926",
+  "tarih": "1878",
+  "tarih_belirsizlik": "WD P571 precision=9 (yıl); P1480 yok",
+  "teknik": "Yağlıboya, tuval (oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 89.5,
+   "genislik": 129.8
+  },
+  "muze": "National Gallery of Art, Washington D.C.",
+  "envanter": "1983.1.18",
+  "edinim": "Collection of Mr. and Mrs. Paul Mellon; Kasım 1963 satın alma, 1983 hediye",
+  "konum": "Not on view (2026-11-03 snapshot)",
+  "telif_durumu": "Kamu malı (PD-Art; Cassatt ö.1926; NGA Open Access)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Cassat_-_Blue_Armchair_NGA.jpg",
+  "iiif_url": "https://www.nga.gov/api/v1/iiif/presentation/manifest.json?cultObj:id=61368",
+  "kaynak": "Wikimedia Commons (NGA Open Access); National Gallery of Art, Washington",
+  "lisans": "Public domain (PD-Art / PD-old-95-expired; NGA Open Access)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (Commons imageinfo, WD P6108); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "22206 × 14876 px (~139 MiB)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre; GZ TASLAK; D4/D5/D6/D10 (zemin/pencere/köpek/kuşak) görsel inceleme olmadan çözülemez; kompozisyon NGA Visual Description (A) + Smarthistory/ARTnews (B) metninden."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 471
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1314
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2679
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-sergiler-ve-provenance"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#4-radikal-çocukluk-imgeleri-yorum-ekolleri"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-degas-müdahalesi-kapsam-ve-kesinlik-tartışması"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-radikal-çocukluk-imgeleri-yorum-ekolleri"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-fırça-izleri-ve-kızılötesi-kanıt"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "NGA birincil kataloğuyla künyeyi (1878, yağlıboya tuval, 89,5×129,8, 1983.1.18, Breeskin 56) doğrular.",
+  "Cassatt'ın radikal çocukluk temsilini ve modelin Degas bağlantısını açıklar.",
+  "Provenance zincirini (Vollard→Brame→Mellon→NGA) ve ca. 1903 Vollard mektubunu izler.",
+  "Degas etkisini ve müdahalesinin tartışmalı kapsam/kesinliğini analiz eder.",
+  "Kaynak ihtilaflarını (red yeri, zemin/pencere/köpek/kuşak) ve görsel inceleme sınırını yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Empresyonizm",
+   "tanim": "Salon'a alternatif bağımsız sergiler açan; anlık izlenim, ışık ve gündelik hayatı resmeden grup. Cassatt resmî olarak ilişkili tek Amerikalı.",
+   "kanit": [
+    "C024",
+    "C013"
+   ]
+  },
+  {
+   "ad": "Japonisme",
+   "tanim": "Japon baskılarının asimetrik, kesik kadraj ve desen etkisi; Degas Cassatt'a tanıştırdı.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Catalogue raisonné",
+   "tanim": "Sanatçının eserlerinin numaralı bilimsel kataloğu; Breeskin 1970, no. 56.",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Sahiplik zinciri; Vollard→Brame→Mellon→NGA; şasi yazıtı fiziksel kanıt.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "ad": "Salon (Paris)",
+   "tanim": "Resmî Fransız sanat sergisi; Cassatt'ın 1877'de iki eseri reddedildi, Degas onu Empresyonistler'e davet etti.",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser Mary Cassatt'ın (American, 1844–1926) 1878 tarihli yağlıboya tuval (oil on canvas) tablosudur; overall 89,5 × 129,8 cm; NGA Washington, envanter 1983.1.18; Credit Line 'Collection of Mr. and Mrs. Paul Mellon'; Breeskin 1970 catalogue raisonné no. 56; tür portre.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Model, Edgar Degas'nın arkadaşlarının kızıdır (Degas da Cassatt'ın arkadaşıydı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Cassatt çocukları 'küçük yetişkinler' (miniature adults) gibi değil, ruh hâli ve kişiliği olan bireyler olarak resmetti.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Kız koltuğa yayılmış, bacaklar açık, bir eli başının arkasında, diğer dirseği kolçakta; bakış aşağı-sola; somurtkan ifade ve yayılmış beden dili can sıkıntısı/yorgunluk önerir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Giysi orta/üst sınıf göstergesi: ekose kuşak+fiyonk+çorap takımı, dantelli elbise, gümüş tokalı siyah ayakkabılar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "NGA'ya göre karşı koltukta uyuyan köpek Cassatt'ın kendi Brüksel grifonu Baptiste'dir; köpeği bulmasına Degas yardım etti; köpek birkaç tablosunda görünür (kesinlik ihtilafı C035/D7).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "NGA: Degas arka planda çalıştı — 'Degas probably worked on this part of the painting' (odanın arka köşesi), daha dinamik kompozisyon için köşe detayı ekledi ('probably' aynen korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Cassatt'ın ca. 1903 Vollard mektubu (alıntı S2 üzerinden; Bullard 1972 s.24 + Mathews 1994 s.125–6): Degas arka plan için öğüt verdi 'and he even worked on it'; tablo 1878 fuarının Amerikan bölümüne gönderildi, reddedildi; jüri 'three people of which one was a pharmacist!'; Cassatt 'furious'.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "NGA'da son temizlik + kızılötesi görüntüleme Degas'nın fırça izlerini doğruladı; zeminin arka duvarla dik değil açılı kesişmesini ekledi (beklenmedik negatif alanlar); Degas'nın Rehearsal in the Studio'su (ca. 1878–79, Shelburne) ile paralel (basın; teknik rapor metnine erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Provenance: sanatçıdan Ambroise Vollard (Paris) satın aldı → Hector Brame (Paris) → Kasım 1963'te Mr. ve Mrs. Paul Mellon'a (Upperville, Virginia) satıldı → 1983'te NGA'ya hediye; şasi çaprazında kurşun kalemle 'M. Vollard / 6 Rue Lafitte'.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "1879: 'Possibly Le 4e Exposition de Peinture [Fourth Impressionist Exhibition], Paris, 1879, no. 47 as Portrait de petite fille' ('Possibly' aynen korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Diğer sergiler (NGA Exhibition History): 1912 Hôtel de la Revue 'Les Arts' no.83; 1928 Galerie La Renaissance no.27; 1966 NGA no.121; 1970 NGA 'Mary Cassatt 1844-1926' no.11; 1986 Gifts to the Nation; 1987 American Women Artists no.41; 1990 Neue Pinakothek no.54; 1998–99 'Mary Cassatt: Modern Woman' no.11 ('Portrait of a Little Girl'); 1999 An Enduring Legacy; 2006 'Americans in Paris' no.34; 2009 American Stories fig.114; 2011 Houston/Tokyo/Kyoto no.7; 2014 NGA 'Degas/Cassatt' no.1; 2017 'Hokusai and Japonisme' (Tokyo) no.58; 2018 Musée Jacquemart-André no.4.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "1877'de Salon'a sunduğu iki eser de reddedildi; aynı yıl Degas onu Empresyonistler'e davet etti, kabul etti (Mathews 1994 s.98–114, metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Planlanan 1878 empresyonist sergisi Dünya Fuarı rekabeti gerekçesiyle yapılmadı; 1879 bahar sergisinde ~bir düzine yağlıboya/pastel sergiledi; bu tablonun aralarında olması 'likely', tam liste 'not now known with certainty' (MMA cat. vol.2 s.632–4).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Tablo 1878 Paris Dünya Fuarı Amerikan pavyonuna gönderildi, reddedildi (diğeri kabul edildi); Cassatt 'furious' (Mathews 1994 s.131–2; S7 mektup kaydı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Degas etkisi: asimetrik kompozisyon, desen kullanımı, Japon baskıları tarzı kadraj (Degas'nın tanıştırdığı); Smarthistory: L'Absinthe diyagonalleriyle paralel, çocuk/yetişkin bakış açısı belirsizliği (Bullard 1972 s.24; S9).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Bullard: koltuklar lunapark çarpışan arabalarına benzer; Degas'nın kısmı 'probably' koltuklar arası tuhaf biçimli zemin parçası + pencere ışığı; 'contented boredom of a comfortable bourgeois life'; çocuğun 'slightly languid and provocative' pozu rahatsız edici ('probably' aynen).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Pollock: dönemin en radikal çocukluk imgelerinden biri; Petra Chu (S9 içinden): 'a radically new image of childhood'; Pollitt: çocuğun yetişkin dünyasının kısıtları içindeki sıkıntısı (Pollock 1998 s.2129 [sayfa anomalisi C043]; Chu alıntısı S9).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Greer: 'As an icon of the awfulness of being at once controlled by adults and ignored by them, this bold work could hardly be bettered'; Cassatt'ın 'first real stunner'ı (Guardian 4 Ocak 2006; özgün metne erişilmedi, alıntı S2'den).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Barter: jürinin gerekçesi pozun fizikselliği değildi — Cluysenaar'ın benzer pozlu oğlu André portresi (1878, KMSKB 2647) Belçika pavyonunda kabul edilmişti; fark üslupta (konvansiyonel vs radikal arka plan + psikolojizm); kızın 'elusive sideways glance'ı bağımsızlığını ortaya koyar; Cassatt'ın çocuk imgelerinde güdü çocukların bakımı (Barter 1998 s.72–3).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Köpek Brüksel grifonu; Cassatt ırkla 'probably' 1873 Antwerp'te tanıştı; Degas, Lepic'ten edindiği yavruyu hediye etti; yavru 'probably' Baptiste/'Batty' (Bullard 1972 s.24; Mathews 1994 s.147, s.344 n.14; 'probably'ler aynen).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "NGA Visual Description + Look Closer: gök-mavisi kumaşta serbest lekeler (avokado/orman yeşili, şeftali pembe, kiraz kırmızı, erik moru, beyaz); 'just a few brushstrokes' ile karmaşık desenler; sağda dört pencereden gümüşümsü ışık; arka planda ek koltuk + kolsuz loveseat; 'peanut-brown floor'; köpek kıvrılmış uyur, gözler kapalı kulaklar dik; imza sol alt 'Mary Cassatt' (zemin/pencere/köpek rengi için C032/C033/C034).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "NYT Rosenberg (2014): 'it dazzles with its predominant hue of deep turquoise'; başyapıt sayıldı (NYT 29–30 Mayıs 2014; özgün metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Cassatt Empresyonistlerle 'officially associated' tek Amerikalı; grubun sonraki sergilerinin yarısında yer aldı (S11 satır içi atıf: Weinberg, Met Heilbrunn, Ekim 2004; essay'e erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Eser 2026-11-03 snapshot itibarıyla sergide değil ('Not on view').",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Jones 2014 makalesi 'Mary Cassatt's Little Girl in a Blue Armchair: Unraveling an Impressionist Puzzle' (AAA Journal 53/1&2: 116–121) eserin başlıca akademik incelemesi (S5 bibliyografyasında anıldı, metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "itwiki: poz 'sconveniente' (uygunsuz) bulundu ve tablo Paris Salon'u'nda reddedildi — satır içi atıf YOK, desteklenmez (D2/C030 ile ilişkili).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C028",
+   "ifade": "AAA katalog kaydı: Mary Cassatt'ın Ambroise Vollard'a ca. 1903 tarihli mektubu; el yazısı, 18 × 27 cm, Fransızca; Degas'dan ve 'mavi koltukta küçük kız' tablosundan söz eder; 'Mary Cassatt letters, 1892-1925' parçası; U.S. public domain; Digital ID 14775 (mektup görüntüsü/transkripsiyonu erişilmedi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "1879 sergisi kesinliği: NGA 'Possibly … no. 47' ↔ Smarthistory kesin ('included among them are … Little Girl in a Blue Armchair') ↔ enwiki 'likely'. NGA'nın 'Possibly'si esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S9",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C030",
+   "ifade": "Reddedilme yeri: itwiki 'Paris Salon'da reddedildi' (atıfsız) ↔ S2/S5/S7 red 1878 Dünya Fuarı Amerikan bölümünde; 1877 Salon redleri Cassatt'ın başka iki eseri içindi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S2",
+    "S5",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C031",
+   "ifade": "Genişlik: itwiki 130 cm (yuvarlanmış) ↔ NGA/WD/enwiki 129,8 cm.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S1",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C032",
+   "ifade": "Zemin rengi: NGA 'peanut-brown floor' ↔ Smarthistory 'grey mercurial dollop of negative space' ↔ data 'gri zemin'. Görsel incelenmedi; hüküm verilemez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C033",
+   "ifade": "Pencere sayısı: NGA 'four windows on the right side' ↔ Smarthistory 'only two large windows … heavily cropped by the upper edge'.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "Köpek rengi: data 'kahverengi' ↔ NGA 'scruffy black fur and a russet-brown face' (Visual Description girişi 'small brown dog') ↔ ARTnews 'scruffy black and brown dog'.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "Köpek kimliği kesinliği: NGA 'is Baptiste' (kesin) ↔ S2/Mathews 'probably the one she named Baptiste or Batty'.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "Vollard doğum yılı: NGA provenance '[1866-1939]' ↔ AAA '(1867-1939)'; NGA metninde 'Amboise Vollard' yazım hatası (Associated Names 'Vollard, Ambroise').",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "Degas müdahalesinin yeri/kesinliği: NGA 'corner of the room … probably' ↔ S2/Bullard 'probably … floor patch + window light' ↔ S10 (IR) 'floor intersect … at an angle' (kesin aktarım). Uyumlu ama vurgu/kesinlik farklı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S2",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "Kuşak renkleri: data hotspot 'Yeşil, mavi ve kırmızı lekeler' ↔ NGA kuşak 'pine-green, black, and sapphire-blue … burnt orange, light blue, and mustard yellow' (kiraz kırmızısı koltuk kumaşında). Görsel incelenmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); Commons dosyası PD, 22206×14876 px; GZ TASLAK; D4/D5/D6/D10 görsel inceleme olmadan çözülemez.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "Kitap/makale metinlerine erişilmedi (Mathews 1994, Bullard 1972, Barter 1998, Chessman 1993, Pollock 1998/1980, Breeskin 1970, Jones 2014, MMA cat. vol.2, Greer 2006, Rosenberg 2014, Weinberg 2004); alıntılar S2/S5/S11 üzerinden, atıf zinciri notuyla.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S5",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "Vollard mektubunun özgün Fransızca metnine erişilmedi (S7 yalnız katalog kaydı); çeviri varyantları: S2 'and he even worked on it' ↔ S9 'he even worked on the background' (altı çizili); Vollard satın alma tarihi yalnız S2'de 'around 1903', S5 provenance tarihsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S2",
+    "S9",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "Modelin adı hiçbir kaynakta yok; yalnız 'daughter of friends of Degas'.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "S2 sfn 'Pollock|1998|p=2129' — sayfa numarası kitap için anomalili görünüyor; doğrulanamadı, kesinleştirilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C044",
+   "ifade": "Yorum: kızın yayılmış, rahat pozu ile onu kuşatan gösterişli koltukların 'havasız' düzeni arasında, çocuğun bedensel özgürlüğü ↔ burjuva iç mekân disiplini gerilimi okunabilir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S9",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C045",
+   "ifade": "Yorum: Pollock/Chessman'ın 'spaces of femininity' çerçevesi ödünç alınırsa, drawing room'da kızın 'out of place' görünmesi kadınlık mekânlarının sınırlarını görünür kılar; bu bir yorum çerçevesidir, belgelenmiş etki iddiası değildir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C046",
+   "ifade": "Smarthistory: Cassatt Londra/Paris/Berlin'de eğitimli, Fransızca/Almanca bilen, Pennsylvania Academy of the Fine Arts'ta dört yıl okumuş, Gérôme/Couture gibi öğretmenlerden ders almış 'dünya vatandaşı' bir sanatçıydı; 1874'te Paris'e yerleşti.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C047",
+   "ifade": "Smarthistory: orta sınıf evlerde nursery (çocuk odası) erkeklerin nadiren girdiği, çocuk bakımının kadınlara özgü bir mekândı; bu tabloda ise bir drawing room (salon) vardır — temiz, neredeyse steril, kızın kostümü gibi onun da 'out of place' göründüğü, koltukların birbirini örtüp yön duygusunu bozduğu bir oda.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C048",
+   "ifade": "Smarthistory: Cassatt İtalya'da Correggio dahil eski ustaları kopyaladı; kızın pozunda Correggio'nun 'dreamy bambini'sinden bir iz 'perhaps' olabilir; klasik gelenek modern vizyonunun yanındadır (kesin değil).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C049",
+   "ifade": "Smarthistory: Cassatt, Durand-Ruel'e New York'ta satması için kontaklar verdi; aralarında şeker magnatı Henry O. Havemeyer ve eşi Louisine (Cassatt'ın yakın arkadaşı) vardı; Cassatt Havemeyer çiftinin ömür boyu sanat danışmanı oldu ve Metropolitan'ın Havemeyer koleksiyonunun (Degas'nın en eksiksiz grubu + 20 Cassatt) oluşumunda merkezî rol oynadı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C050",
+   "ifade": "ARTnews: Degas Cassatt'la 1877'de Montmartre atölyesinde tanıştı, ortak duyarlılık gördü, onu 'bağımsız' sergiye davet etti; ~40 yıl süren dostluk; aralarında az yazışma olduğundan etkileşimin ayrıntıları eserlerden okunur.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C051",
+   "ifade": "ARTnews: 1879–89 arası hem Degas hem Cassatt tempera/distemper/metalik boya gibi alışılmadık malzemelerle deney yaptı; Cassatt The Loge'da simüle altın boya kullandı; 's-curve' kompozisyon öğesini paylaştılar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C052",
+   "ifade": "ARTnews: Degas, Cassatt'ı en az sekiz eserinde resmetti; onu bir peer (akran) ve kendi başına başarılı sanatçı olarak kurdu; Jones: 'she's a much edgier artist than people give her credit for'.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q3640080",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3640080.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData JSON)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "Little Girl in a Blue Armchair (wikitext, satır içi akademik atıflı)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Little%20Girl%20in%20a%20Blue%20Armchair&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (it)",
+   "belge": "Bimba su una poltrona blu (wikitext, satır içi atıf YOK)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Bimba%20su%20una%20poltrona%20blu&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "National Gallery of Art",
+   "belge": "katalog sayfası (canlı)",
+   "url": "https://www.nga.gov/artworks/61368-little-girl-blue-armchair",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (Cloudflare \"Just a moment...\")",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "National Gallery of Art",
+   "belge": "katalog, Wayback 2026-11-03 (20261103033526); tam künye+provenance+sergi+bibliyografya+inscriptions",
+   "url": "https://web.archive.org/web/20261103033526/https://www.nga.gov/artworks/61368-little-girl-blue-armchair",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (snapshot 2026-11-03); canlı 403",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Archives of American Art (Smithsonian)",
+   "belge": "Vollard mektubu kaydı (canlı)",
+   "url": "https://www.aaa.si.edu/collections/images/detail/mary-cassatt-letter-to-ambroise-vollard-14775",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (\"Smithsonian site temporarily unavailable\")",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Archives of American Art (Smithsonian)",
+   "belge": "Vollard mektubu kaydı, Wayback 2014-01-09 (20140109165036); katalog kaydı (transkripsiyon YOK)",
+   "url": "https://web.archive.org/web/20140109165036/http://www.aaa.si.edu/collections/images/detail/mary-cassatt-letter-to-ambroise-vollard-14775",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (snapshot 2014-01-09); canlı 403",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: File:Cassat - Blue Armchair NGA.jpg (lisans/credit/çözünürlük)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File%3ACassat%20-%20Blue%20Armchair%20NGA.jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&formatversion=2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); görsel İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Smarthistory",
+   "belge": "Ben Pollitt, Cassatt's Little Girl in a Blue Armchair (Wayback 2013-12-18; CC BY-NC-SA 3.0)",
+   "url": "https://web.archive.org/web/20131218024329/http://smarthistory.khanacademy.org/cassatts-little-girl-in-a-blue-armchair.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (snapshot 2013-12-18)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "ARTnews",
+   "belge": "Stephanie Strasnick, Degas and Cassatt: The Untold Story of Their Artistic Friendship, 27 Mart 2014 (Wayback 2014-03-28)",
+   "url": "https://web.archive.org/web/20140328232545/http://www.artnews.com/2014/03/27/national-gallery-show-explores-artistic-friendship-of-degas-and-cassatt/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (snapshot 2014-03-28)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikipedia (en)",
+   "belge": "Mary Cassatt (wikitext; \"only American officially associated\" + Weinberg/Met atıfı)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Mary%20Cassatt&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (20 QID)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q3640080&props=labels&languages=en%7Ctr",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429 → 45 sn backoff → 200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "National Gallery of Art",
+   "belge": "eski URL art-object-page.61368.html (Wayback 2025-04-23 mevcut; çekilmedi, S5 daha yeni/tam)",
+   "url": "https://www.nga.gov/collection/art-object-page.61368.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "availability 200; çekilmedi (yedek)",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "L'Absinthe",
+   "sanatci": "Edgar Degas",
+   "kurum": "Musée d'Orsay, Paris",
+   "mufredat_ici": false,
+   "gerekce": "Karşıt diyagonaller ve kesik kadraj; Cassatt'ın mavi mobilyalarının kompozisyon mantığıyla paralel (Smarthistory).",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "eser": "Portrait of the Artist's Son André",
+   "sanatci": "Alfred Cluysenaar",
+   "kurum": "KMSKB (Royal Museums of Fine Arts of Belgium), Brüksel",
+   "envanter": "2647",
+   "mufredat_ici": false,
+   "gerekce": "Benzer poz Belçika pavyonunda kabul edildi; Cassatt'ınki reddedildi — fark üslupta (Barter).",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "eser": "Rehearsal in the Studio",
+   "sanatci": "Edgar Degas",
+   "kurum": "Shelburne Museum, Vermont",
+   "mufredat_ici": false,
+   "gerekce": "Zeminin arka duvarla açılı kesişimi; Cassatt'ın tablosundaki Degas müdahalesiyle paralel (ARTnews IR).",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "NGA birincil katalog Wayback 2026-11-03 (S5) tam metin yeniden açıldı: künye/provenance/sergi/bibliyografya/inscriptions doğrulandı (A). AAA Vollard mektubu kaydı Wayback 2014-01-09 (S7) yeniden açıldı (A). en/it wikitext (S2/S3), Smarthistory (S9), ARTnews (S10), Cassatt maddesi (S11), WD (S1), Commons imageinfo (S8) yeniden okundu; on ihtilaf D, altı belirsizlik E olarak açık. Canlı NGA/AAA 403; kitap/makale metinleri erişilmedi (C040). Görsel metadata-only, İNCELENEMEDİ (C039); GZ TASLAK.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data/basyapitlar.json Q3640080: başlık/1878/NGA Washington uyumlu (A); \"1878 Dünya Fuarı Amerikan bölümü jüri reddi\" uyumlu (C015); \"1903 mektubunda Degas arka plan\" uyumlu (S7 ca.1903; C008).",
+  "\"Grupla sergi açan tek Amerikalı\" → C024 B; kaynak nüansı \"only American officially associated\" korunmalı.",
+  "Zemin: data \"gri zemin\" + hotspot \"Boş zemin\" ↔ NGA \"peanut-brown floor\" (D4/C032); görsel inceleme gerekli.",
+  "Köpek: data \"kahverengi\" ↔ NGA \"black fur + russet-brown face\" (D6/C034); görsel inceleme gerekli.",
+  "Kuşak: data \"yeşil/mavi/kırmızı lekeler\" ↔ NGA kuşak renkleri (D10/C038); görsel inceleme gerekli.",
+  "İmza: data hotspot \"sol alt Mary Cassatt\" S5 Inscriptions ile TEYİT (A); ek şasi yazıtı \"M. Vollard / 6 Rue Lafitte\" data'da yok (provenance kanıtı, C010).",
+  "data/eser_konulari.json Q3640080 \"gundelik\" ↔ WD P136 \"portrait\" çelişmez (tür sınıflandırması farklı).",
+  "data/kunye.json, muze_numaralari.json, gorsel_kaynagi.json: Q3640080 kaydı yok.",
+  "data/ders_kaynaklari.json: \"Çoraplar ve ayakkabılar\" için \"yanlis — siyah ayakkabı: tersini gösteriyor\" bayrağı mevcut; NGA \"black shoes with silver buckles\" der (C005). Bayrak insan incelemesine sunulur; data değiştirilmedi.",
+  "Görsel İNCELENEMEDİ (C039); GZ TASLAK; insan editör görsel teyidi zorunlu."
+ ]
+}

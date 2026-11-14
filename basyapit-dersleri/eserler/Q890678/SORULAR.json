@@ -1,0 +1,592 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q890678",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi kurumda kayıtlıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Museum of Fine Arts, Boston"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée d'Orsay, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "National Gallery, Londra"
+    },
+    {
+     "harf": "D",
+     "metin": "Van Gogh Museum, Amsterdam"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9 birincil MFA nesne kaydı: \"Museum of Fine Arts, Boston\"; envanter 36.270, Gallery 255.",
+   "yanlis_gerekceleri": {
+    "B": "Musée d'Orsay bu eserin kayıtlı olduğu kurum değildir; birincil kayıt MFA Boston'ı ve 36.270 envanterini gösterir.",
+    "C": "National Gallery (Londra) birincil kayıtta geçmez; eser MFA Boston koleksiyonundadır (Collections: Europe).",
+    "D": "Van Gogh Museum birincil kayıtta geçmez; edinim kaydı MFA'nın 1936'da Harriman Gallery'den alışını gösterir."
+   },
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "MFA envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "36.270"
+    },
+    {
+     "harf": "B",
+     "metin": "561"
+    },
+    {
+     "harf": "C",
+     "metin": "32558"
+    },
+    {
+     "harf": "D",
+     "metin": "270"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9 Accession Number alanı \"36.270\"; WD P217 aynı değeri taşır.",
+   "yanlis_gerekceleri": {
+    "B": "561 catalogue raisonné numarasıdır (Wildenstein 561), müze envanteri değil.",
+    "C": "32558 MFA çevrimiçi nesne sayfasının kimliğidir (objects/32558); envanter numarası 36.270'tir.",
+    "D": "270 tek başına envanter değildir; MFA numarası yıl önekiyle \"36.270\" biçimindedir."
+   },
+   "kanit": [
+    "C008",
+    "C012"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil MFA kaydına göre eserin tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1897–98"
+    },
+    {
+     "harf": "B",
+     "metin": "1891"
+    },
+    {
+     "harf": "C",
+     "metin": "1903"
+    },
+    {
+     "harf": "D",
+     "metin": "1936"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9 tarih alanı \"1897–98\"; WD P571 aralık niteleyicileri (P1319 1897 / P1326 1898) bunu destekler.",
+   "yanlis_gerekceleri": {
+    "B": "1891 Gauguin'in Tahiti'ye gidiş yılıdır (enwiki), eserin yapım tarihi değil.",
+    "C": "1903 sanatçının ölüm yılıdır (MFA: French, 1848–1903); yapım tarihi değil.",
+    "D": "1936 eserin MFA'ya edinim yılıdır (16 Nisan 1936); yapım tarihi değil."
+   },
+   "kanit": [
+    "C003",
+    "C016",
+    "C002",
+    "C058"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "MFA küratöryal metni eserin desteğini nasıl tanımlar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kaba ve ağır çuval bezi (burlap)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ahşap pano"
+    },
+    {
+     "harf": "C",
+     "metin": "Kâğıt"
+    },
+    {
+     "harf": "D",
+     "metin": "Bakır levha"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"choice of a coarse and heavy burlap support\"; düzgün boya uygulamasıyla birlikte fresk etkisini güçlendirir.",
+   "yanlis_gerekceleri": {
+    "B": "Ahşap pano birincil kayıtta geçmez; kayıt tuval/çuval bezi desteğinden söz eder.",
+    "C": "Kâğıt destek birincil kayıtta geçmez; eser yağlıboya/tuval olarak sınıflanır (Classifications: Paintings).",
+    "D": "Bakır levha birincil kayıtta geçmez; destek kumaştır (burlap)."
+   },
+   "kanit": [
+    "C005",
+    "C037",
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "MFA kaydına göre kompozisyonun okuma yönü nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sağdan sola: uyuyan bebekten ölüme yaklaşan yaşlı kadına"
+    },
+    {
+     "harf": "B",
+     "metin": "Soldan sağa: yaşlı kadından bebeğe"
+    },
+    {
+     "harf": "C",
+     "metin": "Merkezden dışa doğru"
+    },
+    {
+     "harf": "D",
+     "metin": "Yukarıdan aşağıya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"the composition proceeding from right to left, beginning with the sleeping infant and ending with the huddled figure of 'an old woman nearing death'\".",
+   "yanlis_gerekceleri": {
+    "B": "Yön ters verilmiş; birincil metin sağdan sola okumayı açıkça belirtir.",
+    "C": "Merkezden dışa okuma birincil metinde yok; kompozisyon yatay bir sıra olarak tanımlanır.",
+    "D": "Dikey okuma birincil metinde yok; eser yatay friz düzenindedir (139.1 × 374.6 cm)."
+   },
+   "kanit": [
+    "C021",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "MFA, merkeze yakın meyveye uzanan figürü nasıl tanımlar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Androjen ayakta figür"
+    },
+    {
+     "harf": "B",
+     "metin": "Yaşlı kadın"
+    },
+    {
+     "harf": "C",
+     "metin": "Uyuyan bebek"
+    },
+    {
+     "harf": "D",
+     "metin": "Mavi idol"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"Near center, an androgynous standing figure reaches for a piece of fruit.\" Eve/giovinetto/Âdem okumaları ikincil ve tartışmalıdır.",
+   "yanlis_gerekceleri": {
+    "B": "Yaşlı kadın soldaki son gruptadır; merkeze yakın meyveye uzanan figür değil.",
+    "C": "Uyuyan bebek sağdaki ilk gruptadır; merkezdeki ayakta figür değil.",
+    "D": "Mavi idol arka planda kaide üstündedir; meyveye uzanan figür değil."
+   },
+   "kanit": [
+    "C024",
+    "C021",
+    "C026"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Gauguin'e göre mavi idol neyi gösterir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"the Beyond\" (öte)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ay tanrıçası Hina"
+    },
+    {
+     "harf": "C",
+     "metin": "Sözlerin boşunalığı"
+    },
+    {
+     "harf": "D",
+     "metin": "Anneliği"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"A blue idol with arms symmetrically outstretched atop a pedestal, Gauguin suggested, 'indicates the Beyond.'\"",
+   "yanlis_gerekceleri": {
+    "B": "Hina kimliklendirmesi itwiki'nin ders kitabı zincirine dayanır ve tartışmalıdır; Gauguin'in birincil aktarımdaki ifadesi işlevseldir (\"the Beyond\").",
+    "C": "Sözlerin boşunalığı beyaz kuşun işlevidir (pençelerinde kertenkele), idolün değil.",
+    "D": "Annelik bebeği çevreleyen figür grubuyla ilişkilendirilir; idol için kaynaklarda böyle bir işlev yok."
+   },
+   "kanit": [
+    "C026",
+    "C028",
+    "C031"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Kaynaklara göre yaşlı kadının yanındaki beyaz kuş neyi temsil eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sözlerin boşunalığı"
+    },
+    {
+     "harf": "B",
+     "metin": "Kutsal Ruh"
+    },
+    {
+     "harf": "C",
+     "metin": "Ölümün habercisi"
+    },
+    {
+     "harf": "D",
+     "metin": "Sadakat"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S3 (Boime 2008 p.140) ve S4 (Gauguin betimi): \"a strange white bird… represents the futility of words\"; kuş pençelerinde kertenkele tutar.",
+   "yanlis_gerekceleri": {
+    "B": "Kutsal Ruh okuması bu eserin çekilen kaynaklarında geçmez; kuş Gauguin'in betiminde \"sözlerin boşunalığı\"dır.",
+    "C": "Ölüm teması yaşlı kadın figürüne aittir; kuş için kaynaklarda böyle bir işlev tanımlanmaz.",
+    "D": "Sadakat okuması kaynaklarda yok; beyaz kuş kertenkeleyle birlikte \"vanità delle parole\" olarak verilir."
+   },
+   "kanit": [
+    "C028",
+    "C027"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "MFA eseri hangi fiyat ve hangi edinim tarihiyle aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "80.000 $, 16 Nisan 1936"
+    },
+    {
+     "harf": "B",
+     "metin": "2.500 frank, 1901"
+    },
+    {
+     "harf": "C",
+     "metin": "80.000 $, 9 Mayıs 1936"
+    },
+    {
+     "harf": "D",
+     "metin": "2.500 frank, 16 Nisan 1936"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9 Provenance: \"1936, sold by the Harriman Gallery to the MFA for $80,000. (Accession Date: April 16, 1936)\"; WD P195 P580 aynı tarihi verir.",
+   "yanlis_gerekceleri": {
+    "B": "2.500 frank, Frizeau'nun 1901'de Vollard'dan alış fiyatıdır (Thomson 1987); MFA edinimi değil.",
+    "C": "9 Mayıs 1936, Marie Harriman Gallery sergisinin kapanış tarihidir (22 Nisan – 9 Mayıs); edinim tarihi 16 Nisan'dır.",
+    "D": "Fiyat ile tarih yanlış eşleştirilmiş; 2.500 frank 1901 Frizeau alışı, 16 Nisan 1936 MFA edinimidir."
+   },
+   "kanit": [
+    "C058",
+    "C073",
+    "C057"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "MFA not 1'e göre eserin Galerie Ambroise Vollard sergisi hangi tarihlerdedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "17 Kasım – 10 Aralık 1898"
+    },
+    {
+     "harf": "B",
+     "metin": "22 Nisan – 9 Mayıs 1936"
+    },
+    {
+     "harf": "C",
+     "metin": "15 Haziran – 29 Eylül 1935"
+    },
+    {
+     "harf": "D",
+     "metin": "20 Şubat – 20 Mart 1932"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9 note 1: \"The painting was exhibited at the Galerie Ambroise Vollard, November 17 - December 10, 1898.\"",
+   "yanlis_gerekceleri": {
+    "B": "22 Nisan – 9 Mayıs 1936, Marie Harriman Gallery'nin New York sergisidir (note 5).",
+    "C": "15 Haziran – 29 Eylül 1935, Brüksel \"L'impressionisme\" sergisidir (Palais de Beaux-Arts, kat.28; note 4).",
+    "D": "20 Şubat – 20 Mart 1932, Kunsthaus Zürih ödünç sergisidir (Gold, Stang'ın temsilcisi; note 4)."
+   },
+   "kanit": [
+    "C047",
+    "C057",
+    "C056"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "MFA birincil kaydı eseri Gauguin'in denediği en büyük resim olarak tanımlar.",
+   "dogru": true,
+   "aciklama": "Doğru (S9): \"this monumental painting—the largest he ever attempted\".",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "MFA kaydının katalog Medium/Technique alanı desteği \"burlap\" (çuval bezi) olarak verir.",
+   "dogru": false,
+   "aciklama": "Yanlış: katalog alanı \"Oil on canvas\"; \"coarse and heavy burlap support\" küratöryal METİNDE geçer. Aynı birincil belgede iki betimleme düzeyi vardır ve ders bunu D olarak beyan eder (C064).",
+   "kanit": [
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Gauguin'in tuval üzerindeki başlık yazıtında soru işaretleri ve tireler vardır.",
+   "dogru": false,
+   "aciklama": "Yanlış (S9 Inscriptions): \"D'ou Venons Nous / Que Sommes Nous / Où Allons Nous\" — soru işareti ve tire yok, tüm sözcükler büyük harfli; sağ üstte \"P. Gauguin / 1897\".",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Eser 1936'da Harriman Gallery'den 80.000 dolara edinildi; edinim tarihi 16 Nisan 1936'dır.",
+   "dogru": true,
+   "aciklama": "Doğru (S9 Provenance + Accession Date); WD P195 P580 niteleyicisi aynı tarihi verir.",
+   "kanit": [
+    "C058"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "MFA provenance kaydı 1935 halkasını \"sold or consigned\" diye belirsiz bırakır.",
+   "dogru": true,
+   "aciklama": "Doğru (S9): kuşku ifadesi aynen korunur; enwiki'nin kesin \"sold … via Alfred Gold\" ifadesi birincilin belirsizliğini ortadan kaldırmaz.",
+   "kanit": [
+    "C055"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Birincil MFA kaydının kendi içindeki medium/destek gerilimini analiz edin: hangi ifadeyi, hangi gerekçeyle esas alırdınız?",
+   "beklenen_ogeler": [
+    "katalog alanı \"Oil on canvas\"",
+    "küratöryal \"coarse and heavy burlap support\"",
+    "jüt alıntısı atıfsız (E)",
+    "iki betimleme düzeyi / sınıflama dili",
+    "D olarak beyan, tek doğru cevap yok"
+   ],
+   "kanit": [
+    "C004",
+    "C005",
+    "C064",
+    "C044"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Provenance zincirini kuşku ifadelerini koruyarak yeniden kurun; ikincil kaynakların kesinleştirmelerini değerlendirin.",
+   "beklenen_ogeler": [
+    "probably 1913 ↔ around 1913",
+    "before 1920 ↔ WD 1920",
+    "sold or consigned ↔ enwiki \"sold\"",
+    "note 4 Seligmann mektubu (AAA kutu 426)",
+    "1936 MFA 80.000 $ / 16 Nisan"
+   ],
+   "kanit": [
+    "C053",
+    "C054",
+    "C055",
+    "C056",
+    "C071",
+    "C058"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Merkez figürün dört kimliklendirmesini kanıt düzeyine göre sıralayın; hangisinin quiz cevabı olabileceğini gerekçelendirin.",
+   "beklenen_ogeler": [
+    "MFA \"androgynous\" (A)",
+    "Eve/günah (B, Andersen 1967)",
+    "giovinetto (itwiki)",
+    "data \"Âdem\" kaynaksız",
+    "D → kesin cevaplı soru dışı"
+   ],
+   "kanit": [
+    "C024",
+    "C025",
+    "C066"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Gauguin'in \"librettosuz müzikal şiir\" beyanı ile Fontainas'ın yazıt bağımlılığı eleştirisini anlam kuramı açısından tartışın.",
+   "beklenen_ogeler": [
+    "alegori ↔ sembol farkı",
+    "yazıt olmadan allegori anlaşılmaz",
+    "pictorial language of feelings",
+    "Puvis \"Inter artes et naturam\" karşılaştırması",
+    "yorum olarak işaretleme (C)"
+   ],
+   "kanit": [
+    "C039",
+    "C049",
+    "C050",
+    "C076"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Görsel incelenmeden yazılmış bir derste gözlem sorularının sınırını değerlendirin; insan editörün teyit etmesi gereken noktaları listeleyin.",
+   "beklenen_ogeler": [
+    "GZ TASLAK",
+    "\"kaynakların betimlediği\" kalıbı",
+    "iki dosyanın oran farkı (2.72 ↔ 2.63)",
+    "kadraj/sürüm hipotezi",
+    "PD lisans ≠ görsel teyit"
+   ],
+   "kanit": [
+    "C078",
+    "C060",
+    "C061",
+    "C020"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betimine göre sağdan sola üç grubu bulun: uyuyan bebek + üç kadın, meyveye uzanan ayakta figür, büzülmüş yaşlı kadın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): MFA metni: \"proceeding from right to left, beginning with the sleeping infant and ending with the huddled figure of 'an old woman nearing death'\".",
+   "kanit": [
+    "C021",
+    "C023",
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Üst köşelerdeki sarı alanlarda başlık yazıtını ve imzayı bulun; soru işareti/tire olup olmadığını kontrol edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): MFA Inscriptions: sol üst \"D'ou Venons Nous / Que Sommes Nous / Où Allons Nous\", sağ üst \"P. Gauguin / 1897\"; köşeler sarı, fresk etkisi.",
+   "kanit": [
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Arka plandaki mavi idolü ve kaidesini bulun; kolların simetrik açıklığını not edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): MFA: \"A blue idol with arms symmetrically outstretched atop a pedestal\"; Gauguin'e göre \"indicates the Beyond\".",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Yaşlı kadının yanındaki beyaz kuşu ve pençelerindeki kertenkeleyi arayın; kadının duruşunu betimle karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Gauguin betimi (itwiki, loescher/cdt): \"uno strano uccello bianco, che tiene una lucertola con gli artigli\"; yaşlı kadın \"placata e presa dai suoi pensieri\".",
+   "kanit": [
+    "C028",
+    "C027"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Peyzaj zemininin mavi/Veronese yeşili tonunu ve figürlerin turuncu karşıtlığını kaynak betimiyle karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Gauguin: \"il tono del paesaggio è tutto blu e verde veronese. Su questo fondo tutti i nudi staccano in vivo arancione\"; dere, ağaçlar, deniz, yakın ada tepeleri.",
+   "kanit": [
+    "C032"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Paul Gauguin (1848–1903); 1897–98 (MFA); katalog \"Oil on canvas\" + küratöryal burlap; 139.1×374.6 cm; MFA Boston 36.270; Wildenstein 561; Tompkins Collection—Arthur Gordon Tompkins Fund; Tahiti.",
+   "kanit": [
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C008",
+    "C012",
+    "C009",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Okuma yönü + üç grup?",
+   "arka": "Sağdan sola: uyuyan bebek + üç kadın (yaşamın başlangıcı) → meyveye uzanan androjen figür (orta) → ölüme yaklaşan yaşlı kadın (son); beyaz kuş kertenkeleyle \"sözlerin boşunalığı\".",
+   "kanit": [
+    "C021",
+    "C023",
+    "C024",
+    "C027",
+    "C028"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "İdol + yazıt + köşeler?",
+   "arka": "Mavi idol kaide üstünde, Gauguin'e göre \"the Beyond\"; sol üst Fransız başlık (soru işareti/tire yok, büyük harf), sağ üst \"P. Gauguin / 1897\"; sarı köşeler → yaşlı fresk / altın duvar benzetmesi.",
+   "kanit": [
+    "C026",
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance zinciri?",
+   "arka": "1898 Monfreid → Vollard konsinye (sergi 17 Kas–10 Ara 1898); 1901 Frizeau (2.500 frank); probably 1913 Barbazanges; before 1920 Stang; 1935 sold or consigned Gold; Harriman Gallery; 1936 MFA 80.000 $, 16 Nisan.",
+   "kanit": [
+    "C046",
+    "C047",
+    "C052",
+    "C073",
+    "C053",
+    "C054",
+    "C055",
+    "C057",
+    "C058"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Teknik + anlam gerilimi?",
+   "arka": "Düzgün boya + kaba burlap → fresk etkisi; \"look like a mural\" + basit beyaz çerçeve; Gauguin \"librettosuz müzikal şiir, allegorisi yok\" ↔ Eve / doğum-günah-ölüm allegorik okumaları.",
+   "kanit": [
+    "C037",
+    "C036",
+    "C039",
+    "C029"
+   ]
+  }
+ ]
+}

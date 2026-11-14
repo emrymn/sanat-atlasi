@@ -1,0 +1,581 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q698487",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Belvedere'nin güncel nesne kaydında eserin adı nasıl geçer?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Der Kuss (Liebespaar) / The Kiss (Lovers)"
+    },
+    {
+     "harf": "B",
+     "metin": "Die drei Lebensalter"
+    },
+    {
+     "harf": "C",
+     "metin": "Judith"
+    },
+    {
+     "harf": "D",
+     "metin": "Hoffnung II"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S7 künye: \"The Kiss (Lovers)\" / \"Der Kuss (Liebespaar)\". 1908'deki ilk sergileme adı \"Liebespaar\", 1909 katalog ekinde \"Der Kuss\".",
+   "yanlis_gerekceleri": {
+    "B": "Die drei Lebensalter, Kunstschau 1908'de karşısına asılan 171 × 171 cm'lik başka bir Klimt tablosudur (Roma GNAM).",
+    "C": "Judith, altın+yağlıboya simbiyozunun ilk kurulduğu 1898–1901 tarihli başka bir Klimt tablosudur (Belvedere, envanter 3747).",
+    "D": "Hoffnung II, 2019 essay'ında aynı fon malzeme kombinasyonu için karşılaştırılan başka bir yapıttır."
+   },
+   "kanit": [
+    "C001",
+    "C045",
+    "C043",
+    "C047"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Tablo 1908 Kunstschau'da hangi başlıkla sergilendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Der Kuss"
+    },
+    {
+     "harf": "B",
+     "metin": "Liebespaar"
+    },
+    {
+     "harf": "C",
+     "metin": "Il bacio"
+    },
+    {
+     "harf": "D",
+     "metin": "Der Kuß der Sphinx"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S6 essay + Literatur: Kunstschau Wien 1908, Raum 22, Kat.-Nr. 2 \"Liebespaar\"; \"Der Kuss\" ilk kez 1909 Moderne Galerie katalog ekinde (Kat.-Nr. 322).",
+   "yanlis_gerekceleri": {
+    "A": "\"Der Kuss\" adı 1909 katalog ekinde ortaya çıktı; 1908 sergileme adı değildi.",
+    "C": "\"Il bacio / Der Kuß\", Roma 1911 Avusturya pavyonu kataloğunun (Kat.-Nr. 118) başlığıdır.",
+    "D": "\"Der Kuss der Sphinx\", Franz von Stuck'un 2019 essay'ında karşılaştırma olarak anılan başka bir yapıtıdır."
+   },
+   "kanit": [
+    "C001",
+    "C019",
+    "C013",
+    "C046"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Belvedere'nin güncel (2026 arşiv katmanı) kaydında tarih alanı nasıl yazılıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1907–1908"
+    },
+    {
+     "harf": "B",
+     "metin": "1908 (vollendet 1909)"
+    },
+    {
+     "harf": "C",
+     "metin": "c. 1907–1909"
+    },
+    {
+     "harf": "D",
+     "metin": "1901–1909"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S6 Date alanı \"c. 1907–1909\" (kapak alt yazısı \"um 1907-1909\"). Soru müzenin güncel alan ifadesini sorar; eserin kesin yılı kaynaklar arasında tartışmalıdır.",
+   "yanlis_gerekceleri": {
+    "A": "1907–1908, WD/enwiki/itwiki/Commons çizgisinin ifadesidir; müzenin güncel alanı değil.",
+    "B": "\"1908 (vollendet 1909)\" müzenin 2019 katmanındaki ifadedir.",
+    "D": "1901–1909, Altın Dönem'in yaklaşık aralığıdır; eserin tarihi değil."
+   },
+   "kanit": [
+    "C003",
+    "C010"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Tuvalin ölçüsü nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "171 × 171 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "180 × 180 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "184 × 184 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "73 × 39 cm"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S6 Dimensions / S7 Maße: 180 × 180 cm, kare tuval.",
+   "yanlis_gerekceleri": {
+    "A": "171 × 171 cm, Kunstschau'da karşısına asılan \"Die drei Lebensalter\"in ölçüsüdür.",
+    "C": "184 × 184 × 5,2 cm, 2019 katmanındaki çerçeve/Vitrinenbox ölçüsüdür; tuvalin değil.",
+    "D": "73 × 39 cm, MAK'taki Ikeda Taishin yelpaze biçimli duvar süslemesinin ölçüsüdür (maki-e karşılaştırması)."
+   },
+   "kanit": [
+    "C004",
+    "C045",
+    "C035",
+    "C044"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Müze kaydına göre imza nerede ve nasıl okunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sol altta tek satır \"GUSTAV KLIMT\""
+    },
+    {
+     "harf": "B",
+     "metin": "Sağ altta iki satır \"GVSTAV / KLIMT\""
+    },
+    {
+     "harf": "C",
+     "metin": "Sağ üstte \"GK\" monogramı"
+    },
+    {
+     "harf": "D",
+     "metin": "Kayıtta imza yok"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S6 Signature / S7 Signatur: \"Signed bottom right: GVSTAV / KLIMT\" — iki satır, V harfiyle.",
+   "yanlis_gerekceleri": {
+    "A": "Konum (alt) doğru ama müze transkripsiyonu iki satır ve \"GVSTAV\" biçimindedir; data'daki \"GUSTAV KLIMT\" yazımı transkripsiyonla aynı değil.",
+    "C": "\"GK\" monogramı bu tuvalin imza alanı olarak kayıtlı değildir; müze imzayı iki satır GVSTAV / KLIMT olarak verir.",
+    "D": "Kayıtta imza açıkça vardır: sağ alt, iki satır."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "1908 satın almasının bedeli ve ödeme biçimi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "15.000 Kron, peşin"
+    },
+    {
+     "harf": "B",
+     "metin": "16.900 Lire, tek ödeme"
+    },
+    {
+     "harf": "C",
+     "metin": "25.000 Kron, iki eşit taksit"
+    },
+    {
+     "harf": "D",
+     "metin": "20.000 Kron, üç taksit"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S6/S7: 25.000 Kron, iki eşit taksit; ikinci taksit 29.6.1909, teslim 22.7.1909. Moderne Galerie'nin yaşayan bir sanatçının tablosuna o güne dek ödediği en yüksek fiyat.",
+   "yanlis_gerekceleri": {
+    "A": "15.000 Kron, Klimt'in ünlü kadın portreleri için aldığı yaklaşık fiyattır; bu tablonun bedeli değil.",
+    "B": "16.900 Lire, 1911'de İtalyan kültür bakanlığının \"Die drei Lebensalter\" için ödediği tutardır.",
+    "D": "20.000 Kron, Olbrich'in 1898 Prater bisiklet kulübü binasının inşaat maliyetidir; müze bedeli ölçeklendirmek için anar."
+   },
+   "kanit": [
+    "C008",
+    "C042"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Müze betimine göre öpücük nasıl gerçekleşir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dudak dudağa"
+    },
+    {
+     "harf": "B",
+     "metin": "Adam kadının yanağını öper; dudaklar değmez"
+    },
+    {
+     "harf": "C",
+     "metin": "Adam kadının elini öper"
+    },
+    {
+     "harf": "D",
+     "metin": "Kadın adamın yanağını öper"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S6: \"Tatsächlich berühren sich die Lippen der beiden nicht, der Mann küsst die Geliebte lediglich auf die Wange\"; bu yüzden kadının yüzü örtülmez.",
+   "yanlis_gerekceleri": {
+    "A": "Müze dudakların birbirine değmediğini açıkça belirtir.",
+    "C": "Öpücük ele değil yanağadır.",
+    "D": "Öpen taraf adamdır; kadın diz çökmüş, gözleri kapalıdır."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Jahn'ın teknoloji raporuna göre fon nasıl kurulmuştur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnız altın varak, boyasız"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk üzerine yaldız"
+    },
+    {
+     "harf": "C",
+     "metin": "Altın tozu serpintisi, metal yaprak altlık yok"
+    },
+    {
+     "harf": "D",
+     "metin": "Pirinç yaprak (Schlagmetall) zemin + kahverengi yağlı-reçine lasür + serpilmiş altın/platin/pirinç pulları"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S6 (Jahn): Aussparung sonrası Anlegeöl ile Schlagmetall, yer yer altın/platin yaprak, kuruma sonrası koyu kahverengi Ölharzlasur, yaş lasüre altın/platin/pirinç pulları serpme.",
+   "yanlis_gerekceleri": {
+    "A": "Fon yalnız altın varak değildir; pirinç yaprak zemin ve lasür katmanı vardır.",
+    "B": "Eser fresk değil, zink beyazı astarlı tuvaldir.",
+    "C": "\"Altın tozu\" data'nın basitleştirmesidir; müze fonu pirinç yaprak zemin + lasür + metal yaprak pulları olarak tanımlar (2019'daki \"Goldfarbe/Goldpulver\" figürler alanına aittir)."
+   },
+   "kanit": [
+    "C011",
+    "C005"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Belvedere'nin güncel essay'ına göre yaprak metal tekniğinin \"muhtemelen en önemli öncüsü\" hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ravenna Bizans mozaikleri"
+    },
+    {
+     "harf": "B",
+     "metin": "Japon altın lak işleri (maki-e)"
+    },
+    {
+     "harf": "C",
+     "metin": "Orta Çağ tezhip altın zeminleri"
+    },
+    {
+     "harf": "D",
+     "metin": "Venedik cam mozaikleri"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S6: \"Das wahrscheinlich wichtigste Vorbild … waren japanische Goldlackarbeiten\"; Jahn serpme işlemini Maki-e/urushi tekniğine benzetir; MAK koleksiyonları ve Orlik'in 1901 Japonya kalışı anılır.",
+   "yanlis_gerekceleri": {
+    "A": "Ravenna/Bizans bağlantısı en/it Vikipedi'nin BBC/Treccani atıflı iddiasıdır; her iki müze katmanında \"Ravenna\"/\"Byzant\" hiç geçmez ve müze Japon lakını önceler.",
+    "C": "Ortaçağ altın zemin geleneğiyle biçim benzerliği kurulabilir ama müze bunu \"en önemli öncü\" olarak adlandırmaz.",
+    "D": "Venedik cam mozaikleri müze essay'ında öncü olarak anılmaz."
+   },
+   "kanit": [
+    "C017",
+    "C044"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Eserin ödünç verilme durumu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1997 Roma'dan sonra Belvedere'den hiç çıkmadı"
+    },
+    {
+     "harf": "B",
+     "metin": "Her yıl yurt dışı turneye çıkar"
+    },
+    {
+     "harf": "C",
+     "metin": "2014'te MoMA'ya ödünç verildi"
+    },
+    {
+     "harf": "D",
+     "metin": "Sürekli Unteres Belvedere'de sergilenir"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6: son ödünç 1997'de Roma'ya bir haftalık gösterimdi; \"Von da an sollte das Bild das Belvedere nicht mehr verlassen\". Kalıcı yer 1954'ten beri Oberes Belvedere.",
+   "yanlis_gerekceleri": {
+    "B": "Turneler 1956/57 ve 1959/60'ta kaldı; 1997'den sonra ödünç verilmedi.",
+    "C": "MoMA ödünçü 1986 \"Vienna 1900\" sergisi içindi; 2014'teki \"KLIMT & WARHOL – KUSS & KISS\" Belvedere'nin kendi sergisiydi.",
+    "D": "Unteres Belvedere erken dönem yeriydi; 1954'ten beri Oberes Belvedere'de sergilenir."
+   },
+   "kanit": [
+    "C013",
+    "C036",
+    "C037"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eserin envanter numarası 912'dir ve Oberes Belvedere'de sergilenir.",
+   "dogru": true,
+   "aciklama": "Doğru — S6/S7: Inventory number 912; Locations Upper Belvedere / Standort Oberes Belvedere.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Belvedere'nin güncel malzeme alanı figürlerde yalnız altın varak ve yağlıboya sayar.",
+   "dogru": false,
+   "aciklama": "Yanlış — figürlerde altın, gümüş ve platin varak ile yağlı-reçine boya (Ölharzfarben) sayılır; fon ayrıca Schlagmetall (pirinç) + lasür + metal pullarıdır. Yalnız \"yağlıboya + altın varak\" WD/enwiki infobox'ının eksik listesidir.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Tablo 1908 Kunstschau'ya tamamlanmış olarak yetiştirildi.",
+   "dogru": false,
+   "aciklama": "Yanlış — açılışa yetişmedi; Nähr fotoğrafı sol alt köşede boyanmamış yerler gösterir, bakanlık dosyası \"noch nicht ganz fertiggestellt\" notunu içerir; satın alma 10.7.1908'de bitmemişken yapıldı.",
+   "kanit": [
+    "C013",
+    "C008",
+    "C041"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Röntgen görüntüleri kadının baldırlarının sonradan birkaç santim uzatıldığını görünür kılar.",
+   "dogru": true,
+   "aciklama": "Doğru — S6 essay + Jahn; uzatma sayesinde bacaklar, haleyı ve çayır uçurumunu sınırlayan dalgalı konturu sağ tarafta kırar.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Belvedere'nin 2019 ve 2026 katmanları müze fotoğrafları için aynı lisansı verir.",
+   "dogru": false,
+   "aciklama": "Yanlış — 2019 \"CC BY-SA 4.0\" (Open Content), 2026 \"CC-BY-NC-ND 4.0\" (Foto Johannes Stoll). Commons'taki Google Art Project dosyası ise ayrı bir kamu malı katmanıdır.",
+   "kanit": [
+    "C053",
+    "C050"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D001 tarih ihtilafını kaynak katmanlarına göre haritalayın (müze 2026/2019, WD/en/it/Commons, WVZ'ler, Klimt-Foundation DB, data). Künyeye hangi ifadeyi alırdınız, neden?",
+   "beklenen_ogeler": [
+    "müze güncel c. 1907–1909",
+    "2019: 1908 (vollendet 1909)",
+    "WD/wiki/Commons 1907–1908",
+    "Dobai 144/154, Weidinger 189, Natter 179",
+    "DB 1908/09",
+    "data tek yıl 1907",
+    "hedge (c./presumably) korunmalı"
+   ],
+   "kanit": [
+    "C003",
+    "C015",
+    "C028",
+    "C032"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Ravenna ↔ maki-e tartışmasını kaynak hiyerarşisiyle değerlendirin: birincil teknik araştırma popüler soykütüğü nasıl dengeler?",
+   "beklenen_ogeler": [
+    "BBC/Treccani metinlerine erişilmedi",
+    "birincil kayıtta Ravenna/Bizans 0 kez",
+    "müze \"wahrscheinlich wichtigste Vorbild\"",
+    "Jahn maki-e/urushi benzetmesi",
+    "MAK + Orlik 1901",
+    "Ravenna C, müze ifadesi A, çatışma D"
+   ],
+   "kanit": [
+    "C016",
+    "C017",
+    "C030",
+    "C044",
+    "C052"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Model özdeşleştirmesinde 2019 \"eindeutig nachzuweisen\" ↔ 2026 \"nicht eindeutig entschieden\" farkını ve broş/Strobl kanıtlarının ağırlığını tartışın.",
+   "beklenen_ogeler": [
+    "Umarmung broşu Lg 1195",
+    "30.8.1908 = Flöge'nin 34. doğum günü",
+    "Strobl 1984 WVZ 3164/3165",
+    "sakallı adam + Nähr fotoğrafı",
+    "sembolik jest alternatifi",
+    "kesin değil → doğru cevaplı soruya girmez"
+   ],
+   "kanit": [
+    "C020",
+    "C034",
+    "C049"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Fliedl/Fischer'in ornament ve iktidar okumasını müzenin alegori okumasıyla karşılaştırın; betim ile yorumu ayırın.",
+   "beklenen_ogeler": [
+    "dikdörtgen ↔ eğrisel/oval ornament",
+    "etkin erkek / diz çöken edilgin kadın",
+    "\"kleiner Genickbruch\"",
+    "müze \"Allegorie der Liebe\"",
+    "atfedilmiş yorum (E)",
+    "tek doğru okuma ilan edilmez"
+   ],
+   "kanit": [
+    "C014",
+    "C022",
+    "C048"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Hak katmanlarını yazın: 1908 çoğaltma koşulu, müze fotoğraf lisansı değişimi, Commons PD. Dersin görsel politikası ne olmalı?",
+   "beklenen_ogeler": [
+    "1908 feragat + Graphische Lehr- und Versuchsanstalt",
+    "2019 CC BY-SA 4.0",
+    "2026 CC-BY-NC-ND 4.0",
+    "Commons PD (Google Art Project)",
+    "görsel incelenmedi → GZ TASLAK",
+    "URL + lisans referansı, kopyalama yok"
+   ],
+   "kanit": [
+    "C038",
+    "C053",
+    "C031",
+    "C050",
+    "C051"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betiminde iki bedenin tek altın kütleye dönüştüğü bölgeyi bulun; bedenleri ayıran desen farkını adlandırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Müze: \"melting into one\"; erkekte dikdörtgen siyah/altın/gümüş, kadında eğrisel/oval + renkli çiçek desenleri.",
+   "kanit": [
+    "C009",
+    "C048"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Öpücüğün yanağa olduğunu ve kadının yüzünün örtülmediğini doğrulayın; kadının gözlerinin kapalılığını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Müze: dudaklar birbirine değmez; kadın diz çökmüş, gözleri kapalı.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağ alt köşedeki iki satırlık imzayı bulun ve harfleri transkribe edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Müze transkripsiyonu: GVSTAV / KLIMT (U değil V).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Fondaki kare biçimli metal yaprak izlerini ve serpilmiş pulları arayın; \"gece gökyüzü\" okumasını sorgulayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Müze: kare formlar \"sözde rastlantısal çalışma izleri\"; tümüyle yapay/soyut öğe, el emeğine işaret.",
+   "kanit": [
+    "C044",
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Kadının bacak/ayak hattının çayırın sağa taşan bölümüyle ilişkisini inceleyin; sonradan uzatma izini tartışın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Jahn + röntgen: baldırlar birkaç cm uzatıldı; ayaklar ve çayır en son sağa, altlanmış fon üzerine genişletildi.",
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Der Kuss (Liebespaar) / The Kiss (Lovers); Gustav Klimt (1862 Wien – 1918 Wien); müze \"c. 1907–1909\" (2019: \"1908 (vollendet 1909)\"); 180 × 180 cm; Belvedere Inv. 912, Oberes Belvedere; imza sağ alt iki satır GVSTAV / KLIMT.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Malzeme?",
+   "arka": "Figürler: altın/gümüş/platin varak + yağlı-reçine boya (Ölharzfarben), zink beyazı astarlı tuval. Fon: Schlagmetall (pirinç) + kahverengi lasür + altın/platin/pirinç pulları. Pigment: Zinnober (kırmızı), Kobalt (mavi). 2019 ek: Goldfarbe, Blei.",
+   "kanit": [
+    "C005",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Edinim?",
+   "arka": "10.7.1908 komite kararı (tablo bitmemiş); k.k. Ministerium für Kultus und Unterricht; 25.000 Kron iki eşit taksit; yaşayan sanatçı için rekor; 2. taksit 29.6.1909; teslim 22.7.1909.",
+   "kanit": [
+    "C008",
+    "C041"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Başlık tarihi?",
+   "arka": "1908 Kunstschau Raum 22 Kat. 2 \"Liebespaar\" → 1909 Moderne Galerie Nachtrag Kat. 322 \"Der Kuß\" → Roma 1911 Kat. 118 \"Il bacio / Der Kuß\" → Dresden 1912 Kat. 1827.",
+   "kanit": [
+    "C001",
+    "C019",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Altının öncüsü?",
+   "arka": "Müze: Japon altın lak işleri \"muhtemelen en önemli öncü\" (maki-e/urushi); MAK koleksiyonları; Emil Orlik 1901 Japonya kalışı; Jahn: bambu tüpüyle taze lak yüzeyine metal tozu serpme.",
+   "kanit": [
+    "C017",
+    "C044",
+    "C011"
+   ]
+  }
+ ]
+}

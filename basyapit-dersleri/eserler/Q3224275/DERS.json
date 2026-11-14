@@ -1,0 +1,806 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3224275",
+ "sanatci_id": "jean-leon-gerome",
+ "baslik": "Köle Pazarı",
+ "ozgun_baslik": "The Slave Market (Le Marché d'esclaves)",
+ "kunye": {
+  "sanatci": "Jean-Léon Gérôme",
+  "sanatci_yasam": "1824–1904",
+  "tarih": "1866 (muhtemelen)",
+  "tarih_belirsizlik": "Katalog başlığı \"1866\"; metin \"probably painted … in 1866\"; it/ru \"intorno/ориентировочно\" (D2)",
+  "teknik": "Yağlıboya, tuval (oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 84.6,
+   "genislik": 63.3
+  },
+  "muze": "Clark Art Institute, Williamstown, Massachusetts",
+  "envanter": "1955.53",
+  "edinim": "Knoedler (Paris) → Robert Sterling Clark, 1 Mayıs 1930; enstitü 1955",
+  "konum": "Williamstown, Massachusetts (On View)",
+  "telif_durumu": "Kamu malı (PD-Art / PD-old-100; Gérôme ö. 1904)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Jean-L%C3%A9on_G%C3%A9r%C3%B4me_-_Le_March%C3%A9_d%27esclaves.jpg",
+  "kaynak": "Wikimedia Commons (The Clark)",
+  "lisans": "Public domain (PD-Art / PD-old-100)",
+  "dogrulama": {
+   "yontem": "metadata (S10/S11); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "4674 × 6265 px (~4,1 MB JPEG)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C046); GZ TASLAK; kompozisyon S9+S7/S8 metninden; değnek/giysi/köpek hotspot'ları doğrulanmadı"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 433
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1303
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2606
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-katalog-ve-ihtilaflar"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-belge-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-salondan-bugüne"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-biçimsel-analiz-ve-gerçekçilik-sorunu"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-diş-muayenesi-ve-bakış"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-rapor-malzeme-ve-konservasyon"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-versiyonlar"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Clark birincil kaydı + Lees 2012 kataloğuyla künyeyi (1866 muhtemelen, yağlıboya/tuval, 84,6×63,3, 1955.53) doğrular.",
+  "Boyut/tarih/başlık/versiyon ihtilaflarını (D1–D4) yönetir; Clark birincil değerini esas alır.",
+  "Köle pazarı sahnesini akademik düzeyde betimler; diş muayenesi ve insanı mala dönüştürme jestini analiz eder.",
+  "Nochlin↔Ackerman yorum kutuplaşmasını ve Oryantalizm eleştirisini kaynaklı sunar.",
+  "Provenance zincirini (Goupil→Gambart→Mayer→Knoedler→Clark) ve 2019 AfD kullanımını değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Oryantalizm",
+   "tanim": "Batı'nın \"Doğu\"yu kurgulayarak temsil etmesi; iktidar ve bakış ilişkisi. Said (1978) + Nochlin (1983) sonrası eleştirel çerçeve.",
+   "kanit": [
+    "C017",
+    "C021"
+   ]
+  },
+  {
+   "ad": "Provenance (kökenbilim)",
+   "tanim": "Eserin sahiplik geçmişi; Goupil'den Clark'a uzanan belge zinciri.",
+   "kanit": [
+    "C026",
+    "C031"
+   ]
+  },
+  {
+   "ad": "Nü",
+   "tanim": "Çıplak insan figürü; bu eserde akademik betimleme ile kölelik temsili iç içe.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "The Imaginary Orient (Hayali Doğu)",
+   "tanim": "Nochlin'in 1983 makalesi; Gérôme'un kurgu \"Doğu\"sunu ve bakış politikasını eleştirir.",
+   "kanit": [
+    "C017",
+    "C020"
+   ]
+  },
+  {
+   "ad": "Teknik rapor / konservasyon",
+   "tanim": "Malzeme ve koruma tarihini belgeleyen birincil araştırma; astar, vern, alt çizim.",
+   "kanit": [
+    "C035"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Jean-Léon Gérôme (1824–1904, Fransız).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Başlık: müze \"Slave Market\"; fr \"Le Marché d'esclaves\"; Goupil satışlarında \"Un marché d'esclaves\" (1866), \"Marchand d'esclaves\" (1867), \"Marché d'Esclaves\" (1930).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih: katalog başlığı \"1866\"; metin \"Gérôme probably painted Slave Market in 1866\" (muhtemelen; E1 aynen korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: yağlıboya / tuval (oil on canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut: 84,6 × 63,3 cm; çerçeve 114,3 × 93,3 × 10,2 cm (Clark birincil; → C041 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "İmza sağ altta: \"J. L. GEROME\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Clark Art Institute (Williamstown, MA), env. 1955.53.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S9",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Eser \"On View\" (sergileniyor).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Konu: avluda köle satışı; satıcı (sağda) çıplak genç kadını alıcıya sunar; alıcı parmağıyla dişlerini yoklar — insanı mala dönüştüren muayene (\"dehumanizing\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Mekân Near East'i çağrıştırır ama belirli/teşhis edilebilir bir yer DEĞİL; açıkça Avrupa-dışı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Sağ arka planda sırtı dönük koyu tenli erkek köle de muayene ediliyor; köle ticaretinin geniş kapsamı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Du Camp 1867 Salon: sahneyi Kahire köle pazarına, kadını Abyssinian'a yerleştirdi; Lees: bunlar Du Camp'ın kendi deneyiminden eklediği yorum, resimde yer belirtilmez (E12).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Gérôme 1856 ve 1862'de Mısır ve çevresine iki gezi; sivri kemerler gezi mimarisine dayanabilir (may have been, E2); sahne büyük olasılıkla anlatı kaynakları + eskiz + stüdyo modellerinden kurgu; figürler Kuzey Afrika giysi tipleri.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Nerval'in kısmen kurgusal Voyage en Orient'i (1851) ilham kaynağı OLABİLİR (diş muayenesi pasajı; may have, E4).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Strahan (1881): merkez figür modeli Cleopatra and Caesar'daki (1866) kadınla aynı olabilir; kraliçe/köle ironisi (may have been, E5).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "1857 klasik togalı alternatif versiyon (A 79, \"Buying a Slave\") statüsü belirsiz; Ackerman revize catalogue raisonné \"studio work\"; kaba işçilik; 1866 öncesi tarih \"problematic\"; bitmiş eserden sonra değiştirilmiş olabilir (E6).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Eser Snake Charmer ile Oryantalizmin ikonik imgelerinden; Said (1978) + Nochlin \"The Imaginary Orient\" (1983) sonrası; near-photographic üslup olgusal tarafsızlık amaçlar ama imalar nötr değil; cinsel/ırksal dinamikler kışkırtıcı, kutuplaşmış yorumlar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Yorum kutuplaşması: Nochlin (1983) Oryantalist/erkek-Avrupalı iktidar okuması; Ackerman karşıt \"abolitionist picture\" (1986c s.79; gözden geçirilmiş Fr baskı s.260); sonraki tartışmalar çoğunlukla bu iki kutup (→ C045 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Beaudan: alıcı, izleyici gibi kadını tam görebilen tek figür; baştan aşağı örtülü, yalnız gözleri görünür → izleyicinin röntgenci suç ortaklığı (yorum olarak sunulur).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Nochlin'in Gérôme'un ağzından kurguladığı alıntı (1983, s.125): \"…less enlightened races indulge in the trade in naked women—but isn't it arousing!\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Clark güncel küratoryal metni: hem hayal hem gözlemden kurgu; \"dehumanizing\"; İslam toplumunu yabancı/şiddetli/ahlaksız gösterir; Fransa'nın Kuzey Afrika sömürge genişlemesi ahlaki üstünlük varsayımlarına hitap.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Clark 2016 metni: belirsiz/uzak konum, 19. yy Fransız izleyicisine (Avrupa'da yasak) köleliği kınarken kadın bedenine bakma keyfi verdi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Gérôme'un böyle sahneyi fiilen gözlemlemesi OLASI DEĞİL; güvenilir belge yok denecek kadar az (It is unlikely / little if any, E3).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "1867 Salon resepsiyonu kutuplu; Exposition Universelle nedeniyle az eleştiri; Mantz \"femme en ivoire\" işçiliği küçümsedi; Du Camp \"scene done on the spot\" (une scène prise sur le fait) belge gibi okudu; iki bakış neredeyse karşıt.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Cham, Le Charivari (1867) parodi: \"Un Arabe qui a mal aux dents achète un esclave pour lui mâcher son dîner\"; Salon tuvallerini parodileştiren dizi (metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Sanatçı eseri 23 Ağustos 1866'da Goupil'e sattı (Goupil Stock Books, kitap 3, s.94, no.2355).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Goupil → Gambart (22 Eylül 1866); Gambart Kasım 1866'da Goupil'e iade (Louis XIV and Molière ikinci versiyonu A 139 takası).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Goupil → Mayer (Dresden) 27 Ocak 1867; alıcı kaydı yalnız \"M. Mayer, de Dresde\"; Salon 15 Nisan'da açıldığı için sergilemeden sonra teslim almış olabilir (may not, E8).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "1867 Paris Salonu'nda sergilendi (Salon kataloğu Paris 1867c, s.87, no.642).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Berlin 1868 sergisi OLASI; bilgi kaynağı bilinmiyor (possibly / source unknown, E7).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "Knoedler (Paris) → Robert Sterling Clark 1 Mayıs 1930; Clark 1930–55; enstitü 1955. Edinme tarihi görünür-farkı (WD 1930 / \"before 1955\" / 2016 \"1930\") provenance ile çözülür (D6, gerçek ihtilaf yok).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Clark alternatif versiyonu Ocak 1928'de Knoedler NY'de gördü (günlük 27 Ocak 1928 \"Roman buyer examining teeth … Beautifully drawn\"); teklif reddedildi; bu eseri Mayıs 1930'da aldı. Clark beceriye odaklanır, içeriği not etmez; Snake Charmer günlük övgüsü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Sonraki sergiler: Williamstown 1955 (no.53), 1958b, 2000–2001 (no.4), 2006; LA–Paris–Madrid 2010–11 (no.156; yalnız LA ve Paris'te).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "August Belmont koleksiyonu kaydı HATALI; Cincinnati versiyonuyla (A 217) karıştırılmasından doğar; Cincinnati de sıklıkla \"The Slave Market\" diye anılır (→ C044 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Teknik rapor (Webber): keten tuval (22 iplik/cm), tutkal astarlı (muhtemelen Beers Brothers 1942, E9); şasi değiştirilmiş; 2010 temizlik (1977 sentetik + sararmış doğal reçine vernik); kırık-beyaz ticari astar; anne-çocuk grubunda mavi mürekkep alt çizim; soldaki sarık özgününde koyu gri; boya ince/vehicular.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "AfD Berlin 2019 Avrupa seçimleri kırpılmış billboard (\"Europeans vote AfD!\", \"So Europe doesn't become Eurabia!\"); Clark direktörü Olivier Meslay güçlü kınadı + durdurma istedi; görüntü Clark tarafından sağlanmadı; kamu malı → hukuki kontrol yok. S13 bağlamı: \"Learning from Europe's history\" kampanyası, \"Eurabia\" terimi, Nochlin analizi, Zimmerer yorumu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Diğer versiyonlar: Cincinnati \"The Slave Market\" 1871 (Q46947494, CAM 1917.368); Hermitage \"Slave Market in Rome\" 1884 (Q536395, ГЭ-6294); Walters \"A Roman Slave Market\" 1884 (Q17096334, 37.885).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S3",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Tanzimat döneminde Osmanlı'da köle ticareti resmen ciddi biçimde sınırlıydı (itwiki bağlam iddiası; arteworld.it ikincil web, erişilmedi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C039",
+   "ifade": "Commons dosya açıklaması: \"Berber köle baskınlarında Avrupalı kadınlar kaçırılıp Kuzey Afrika köle pazarlarında satılırdı\" (yükleyici metni; müze doğrulaması yok, E11).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "itwiki {{cn}} atıfsız bölüm: stüdyo modelleri sürekli hazır, erkek egemenliği fantezisi, skandalın şöhreti artırması (E10).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "D1 BOYUT ihtilafı: Clark 84,6×63,3 ↔ WD/it/ru 84,8×63,5 (WD 2018 Commons içe aktarımı; güncel Commons'ta boyut alanı yok; asıl kaynak doğrulanamadı).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9",
+    "S1",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D2 TARİH hassasiyeti: Clark başlığı \"1866\" (circa'sız) ↔ metin \"probably\" ↔ it \"intorno\" / ru \"ориентировочно\" ↔ WD P571=1866 (P1480 yok).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S7",
+    "S4",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D3 BAŞLIK: Clark \"Slave Market\" ↔ fr \"Le Marché d'esclaves\" ↔ ru \"Арабский рынок наложниц\" ↔ it \"scelta di una concubina\" ↔ tarihsel satış başlıkları.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7",
+    "S1",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D4 VERSİYON karışıklığı: Clark 1866 ↔ Cincinnati 1871 (Belmont hatası) ↔ Hermitage/Walters 1884 (antik Roma); data/eser_adlari_tr'de Q3224275 ve Q46947494 aynı \"Köle Pazarı\" başlığı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S14",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "D5 YORUM kutuplaşması: Nochlin Oryantalist ↔ Ackerman \"abolitionist\"; belgelenmiş akademik tartışma, tek doğru okuma yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); Commons metadata (PD-Art/PD-old-100, 4674×6265); GZ TASLAK; kompozisyon kaynak metninden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "Erişilemeyen özgün metinler: Nochlin 1983, Mantz 1867, Du Camp 1867, Strahan 1881, Cham 1867, Nerval 1851, Beaudan 1994, Ackerman 1986a/b/c, arteworld.it, Haaretz (dead); alıntılar erişilen S9/S13'ten doğrulandı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q3224275 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3224275.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (37 QID)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q3224275",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia EN",
+   "belge": "The Slave Market (Gérôme painting) wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Slave%20Market%20(G%C3%A9r%C3%B4me%20painting)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429→backoff→200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia IT",
+   "belge": "Il mercato degli schiavi wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Il%20mercato%20degli%20schiavi",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikipedia RU",
+   "belge": "Арабский рынок наложниц wikitext",
+   "url": "https://ru.wikipedia.org/w/api.php?action=parse&page=Арабский%20рынок%20наложниц",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Clark Art Institute",
+   "belge": "Birincil eser sayfası (CANLI)",
+   "url": "https://www.clarkart.edu/ArtPiece/Detail/Slave-Market",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (Cloudflare); erişilemedi → S7/S8",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Clark Art Institute",
+   "belge": "Eser sayfası, Wayback 2025-11-02",
+   "url": "http://web.archive.org/web/20251102180354/https://www.clarkart.edu/ArtPiece/Detail/Slave-Market",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; arşiv 2025-11-02",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Clark Art Institute",
+   "belge": "Eski katalog URL, Wayback 2016-05-22",
+   "url": "https://web.archive.org/web/20160522054009/http://www.clarkart.edu/Collection/5538",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; arşiv 2016-05-22",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Clark Art Institute / Sarah Lees",
+   "belge": "Nineteenth-Century European Paintings at the Sterling and Francine Clark Art Institute (2012), cat. 152 \"Slave Market\", pp. 359–363 (PDF)",
+   "url": "https://media.clarkart.edu/1955.53_EuroCat.pdf",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (application/pdf; pypdf metin)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: P18 dosyası + File:Geromeslavemarket.jpg",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20Le%20March%C3%A9%20d%27esclaves.jpg%7CFile:Geromeslavemarket.jpg&prop=imageinfo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dosya sayfası wikitext",
+   "url": "https://commons.wikimedia.org/w/api.php?action=parse&page=File:Jean-L%C3%A9on%20G%C3%A9r%C3%B4me%20-%20Le%20March%C3%A9%20d%27esclaves.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S12",
+   "kurum": "Deutsche Welle",
+   "belge": "AfD in hot water with US museum over billboard (26 Nisan 2019)",
+   "url": "https://www.dw.com/en/afd-in-hot-water-with-us-museum-over-campaign-billboard/a-48508555",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "The Art Newspaper",
+   "belge": "C. Hickley, US museum criticises use of Gérôme's Slave Market (30 Nisan 2019)",
+   "url": "https://www.theartnewspaper.com/2019/04/30/us-museum-criticises-use-of-geromes-slave-market-in-german-right-wing-campaign",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Wikidata",
+   "belge": "İlgili versiyon QID'leri (Q46947494/Q536395/Q17096334)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q46947494%7CQ536395%7CQ17096334",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S15",
+   "kurum": "Sanat Atlası data/",
+   "belge": "basyapitlar, eser_adlari_tr, eser_ayrintilari, yerel_gorseller (salt-okunur)",
+   "url": "yerel (data/)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Snake Charmer (Yılan Oynatıcı)",
+   "sanatci": "Jean-Léon Gérôme",
+   "kurum": "Clark Art Institute",
+   "mufredat_ici": false,
+   "gerekce": "Aynı müzede, Oryantalizmin ikonik ikilisi; Lees cat. 154.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "eser": "The Slave Market (1871)",
+   "sanatci": "Jean-Léon Gérôme",
+   "kurum": "Cincinnati Art Museum",
+   "envanter": "1917.368",
+   "mufredat_ici": false,
+   "gerekce": "Aynı kompozisyonun versiyonu; versiyon ayrımı ve Belmont hatası.",
+   "kanit": [
+    "C037",
+    "C034"
+   ]
+  },
+  {
+   "eser": "Slave Market in Rome (1884)",
+   "sanatci": "Jean-Léon Gérôme",
+   "kurum": "Hermitage",
+   "envanter": "ГЭ-6294",
+   "mufredat_ici": false,
+   "gerekce": "Antik Roma konulu farklı kompozisyon; konu karşıtlığı.",
+   "kanit": [
+    "C037"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Clark birincil Wayback (S7 2025-11-02 + S8 2016-05-22) + Lees 2012 PDF (S9) yeniden açıldı; künye/konu/provenance/resepsiyon/teknik doğrulandı. DW (S12) + Art Newspaper (S13) AfD için doğrudan erişildi. en/it/ru wikitext + WD yeniden okundu; 5 D ihtilaf açık. Görsel metadata only, İNCELENEMEDİ (C046); GZ TASLAK. Özgün metinler (Nochlin/Mantz/Du Camp vb.) erişilmedi (C047).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data/basyapitlar \"1866\" (circa'sız) ↔ S9 \"probably\" (D2/E1, C003/C042); ders \"1866 (muhtemelen)\" kullanır.",
+  "Boyut: data/WD/it/ru 84,8×63,5 ↔ Clark birincil 84,6×63,3 (D1, C005/C041); Clark esas.",
+  "Versiyon: data/eser_adlari_tr Q46947494 (Cincinnati) de \"Köle Pazarı\" → aynı Türkçe başlık, iki eser (D4, C044); Belmont hatası (C034).",
+  "Konu nüansı: data/eser_notlari \"Doğu'ya özgü bir köle pazarında\" belge gibi okunabilir ↔ S9 mekân belirli değil + sahne kurgu (C010/C023).",
+  "Hotspot'lar: \"Dişleri yoklayan alıcı\" (C009 A), \"İmza\" (C006 A); \"değnek\"/\"giysi yığını\"/\"yatan köpek\" erişilen metinlerde yok → E, görsel teyit gerekli (C046).",
+  "Anlam ve semboller: data her iki okumaya değiniyor ↔ S9 Nochlin↔Ackerman ile uyumlu (C018/C045).",
+  "Görsel: İNCELENEMEDİ (C046); GZ TASLAK; PD; insan editör görsel teyidi zorunlu.",
+  "data/kunye.json, data/muze_numaralari.json Q3224275 kaydı YOK (brief özyinelemeli tarama)."
+ ]
+}
