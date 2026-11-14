@@ -90,7 +90,7 @@ test('Bugün: iOS izni hatırlıyorsa düğme çıkmaz, hareket hemen başlar', 
 test('Pekiştir: izin unutulmuşsa destenin altında “Hareketi aç”; dokununca çevirmek desteyi yelpaze açar (İş 47)', async ({ page, context }) => {
   await agiHazirla(context);
   await iPhoneIzni(context);
-  await page.goto('./#/pekistir');
+  await page.goto('./#/pekistir/donem'); // 1.79.0: bugünkü turun destesi Turlar sayfasında
   const sahne = page.locator('.pk-sahne');
   await expect(sahne.locator('.pk-kart').first()).toBeVisible();
   const dugme = sahne.locator('[data-egim-dugme]');

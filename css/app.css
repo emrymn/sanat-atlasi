@@ -18574,3 +18574,975 @@ a.zm-satir:active {
 .cark[data-donem='modern'] {
   --desen: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%2096%2096%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cg%20transform%3D%22translate(48%2048)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%200)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%200)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2096)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2096)%22%3E%3Ccircle%20cx%3D%220%22%20cy%3D%220%22%20r%3D%2210%22%2F%3E%3Cpath%20d%3D%22M-18%2016L18-16%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%200)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(0%2048)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(96%2048)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3Cg%20transform%3D%22translate(48%2096)%22%3E%3Cpath%20d%3D%22M0-9L8%206H-8Z%22%2F%3E%3Crect%20x%3D%22-4%22%20y%3D%22-4%22%20width%3D%228%22%20height%3D%228%22%20transform%3D%22rotate(20)%20translate(13%2010)%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
+
+/* ===== 1.79.0 · Çalış · Ders düzeni (js/ekranlar/ders.js). Her akım bir ders, dört adım: Gör → Öğren → Ayırt et → Sına.
+   Tasarım: https://claude.ai/artifact/VFJEDsgn6e7278NmuBgsYF. Bütün sınıflar .ders- önekli ve kendi içinde; renkler tema
+   token'larından, tek sabit vurgu altın (Gündüz'de yazıda koyu pirinç: açık zeminde 4,5:1 üstü). Köşeler 14/18 px,
+   dokunma hedefleri en az 44 px, alt çubuklar safe-area üstünde. Hareket: yalnız Gör'de kameranın kayması ve sayfaların
+   ortak giriş hareketi; "Kapalı"da ikisi de durur (İş 148 kuralları). ===== */
+:root,
+:root[data-tema='gece'] {
+  --ders-altin: #d9b56a;
+  --ders-altin-ustu: #121110;
+  --ders-altin-yazi: #d9b56a;
+  --ders-iz: #3d3935;
+  --ders-kenar: #4a4540;
+}
+:root[data-tema='gunduz'] {
+  --ders-altin: #7a5814;
+  --ders-altin-ustu: #fbf7ee;
+  --ders-altin-yazi: #6b4c10;
+  --ders-iz: color-mix(in srgb, var(--ink) 16%, transparent);
+  --ders-kenar: color-mix(in srgb, var(--ink) 34%, transparent);
+}
+
+.ders-etiket {
+  display: block;
+  font: 600 11px/1.3 var(--sans);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ders-altin-yazi);
+}
+.ders-etiket.soluk {
+  color: var(--ink-2);
+}
+.ders-etiket.dogru {
+  color: var(--right-ikon);
+}
+.ders-etiket.yanlis {
+  color: var(--wrong-ikon);
+}
+
+/* düğme: hap biçimli; dolu olan altın, yanında küçük sayaç ya da ok varsa iki uca yaslanır */
+.ders-dugme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 22px;
+  border: 1px solid var(--ders-kenar);
+  border-radius: 26px;
+  background: transparent;
+  color: var(--ink);
+  font: 600 16px/1.2 var(--sans);
+  text-decoration: none;
+  cursor: pointer;
+}
+.ders-dugme.dolu {
+  border-color: transparent;
+  background: var(--ders-altin);
+  color: var(--ders-altin-ustu);
+}
+.ders-dugme.dolu:has(> small, > svg) {
+  justify-content: space-between;
+}
+.ders-dugme small {
+  font: 400 14px/1 var(--sans);
+  font-variant-numeric: tabular-nums;
+}
+.ders-dugme:active {
+  transform: scale(0.985);
+}
+.ders-dugme:focus-visible,
+.ders-geri:focus-visible,
+.ders-adim:focus-visible,
+.ders-satir:focus-visible,
+.ders-adim-satir:focus-visible,
+.ders-tekrar:focus-visible,
+.ders-ikili-eser:focus-visible {
+  outline: 2px solid var(--ders-altin-yazi);
+  outline-offset: 3px;
+}
+
+/* --- Çalış'ın girişi --- */
+.ders-bas {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 52px;
+  padding-top: 8px;
+}
+.ders-bas h1 {
+  font: 400 44px/1 var(--serif);
+}
+.ders-konum {
+  padding-bottom: 6px;
+  font: 400 13px/1.3 var(--sans);
+  color: var(--ink-2);
+}
+.ders-bas + .devam-kart {
+  margin-top: 16px;
+}
+
+.ders-bugun,
+.ders-tekrar {
+  display: block;
+  margin-top: 16px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  overflow: hidden;
+}
+.ders-bugun-kapak {
+  position: relative;
+  display: block;
+  height: 250px;
+  color: #ebe5da;
+  text-decoration: none;
+  background: #1a1816;
+}
+.ders-kapak-resim {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.ders-kapak-resim img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.ders-bugun-kapak::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(18, 17, 16, 0) 35%, rgba(18, 17, 16, 0.92) 100%);
+}
+.ders-bugun-yazi {
+  position: absolute;
+  z-index: 1;
+  left: 18px;
+  right: 18px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ders-bugun-yazi .ders-etiket {
+  color: #d9b56a;
+}
+.ders-bugun-yazi b {
+  font: 400 40px/1.05 var(--serif);
+  text-wrap: balance;
+}
+.ders-bugun-yazi small {
+  font: 400 13px/1.3 var(--sans);
+  color: #cfc7bc;
+}
+
+.ders-adimlar {
+  list-style: none;
+  margin: 0;
+  padding: 14px 12px 2px;
+  display: grid;
+  grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr));
+  gap: 6px;
+}
+.ders-adim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-height: 68px;
+  padding-top: 4px;
+  color: var(--ink-3);
+  font: 400 13px/1.2 var(--sans);
+  text-decoration: none;
+}
+.ders-halka {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--ders-iz);
+  border-radius: 50%;
+  font: 400 13px/1 var(--sans);
+  font-variant-numeric: tabular-nums;
+}
+:is(.ders-adim, .ders-adim-satir).simdi .ders-halka {
+  border: 2px solid var(--ders-altin-yazi);
+  color: var(--ders-altin-yazi);
+  font-weight: 600;
+  font-size: 12px;
+}
+:is(.ders-adim, .ders-adim-satir).bitti .ders-halka {
+  border-color: transparent;
+  background: var(--right);
+  color: var(--bg);
+}
+.ders-adim.simdi .ders-adim-ad {
+  color: var(--ink);
+  font-weight: 600;
+}
+.ders-adim.bitti .ders-adim-ad {
+  color: var(--ink-2);
+}
+.ders-bugun-alt {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px 18px 18px;
+}
+.ders-davet {
+  margin: 0;
+  font: 400 17px/1.45 var(--okuma);
+  color: color-mix(in srgb, var(--ink) 84%, var(--bg));
+}
+
+.ders-tekrar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.ders-tekrar-ust {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ders-tekrar-ust small {
+  font: 400 13px/1.3 var(--sans);
+  color: var(--ink-3);
+}
+.ders-tekrar-govde {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.ders-tekrar-govde b {
+  font: 400 48px/1 var(--serif);
+  font-variant-numeric: lining-nums;
+}
+.ders-tekrar-yazi {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  font: 400 14px/1.3 var(--sans);
+  color: var(--ink-2);
+}
+.ders-tekrar-yazi small {
+  font-size: 13px;
+}
+.ders-tekrar-git {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  margin-left: auto;
+  padding: 0 20px;
+  border: 1px solid var(--ders-kenar);
+  border-radius: 22px;
+  font: 600 15px/1 var(--sans);
+}
+.ders-tekrar-cubuk {
+  display: flex;
+  gap: 2px;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.ders-tekrar-cubuk i {
+  min-width: 6px;
+}
+.ders-tekrar-cubuk .k-tekrar {
+  background: var(--ders-altin-yazi);
+}
+.ders-tekrar-cubuk .k-pek {
+  background: #a6774a;
+}
+.ders-tekrar-cubuk .k-yeni {
+  background: #5b6f7c;
+}
+
+.ders-liste-bolum {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 28px;
+}
+.ders-bolum-bas {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ders-bolum-bas h2 {
+  font: 400 30px/1.1 var(--serif);
+}
+.ders-bolum-bas span {
+  font: 400 13px/1.3 var(--sans);
+  color: var(--ink-3);
+}
+.ders-liste {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ders-satir {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 76px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+}
+.ders-satir-resim {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--ink) 6%, var(--bg));
+}
+.ders-satir-resim img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ders-satir-yazi {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ders-satir-yazi b {
+  font: 400 21px/1.15 var(--serif);
+}
+.ders-satir-yazi small {
+  font: 400 13px/1.3 var(--sans);
+}
+.ders-satir-hal {
+  flex: none;
+  padding-right: 4px;
+  font: 400 13px/1 var(--sans);
+  color: var(--ink-3);
+}
+.ders-satir.suruyor .ders-satir-hal {
+  color: var(--ders-altin-yazi);
+}
+.ders-satir.bitti .ders-satir-hal {
+  color: var(--right-ikon);
+}
+.ders-satir.kilitli {
+  border-style: dashed;
+  background: transparent;
+  color: var(--ink-3);
+}
+.ders-cizgiler {
+  display: flex;
+  gap: 4px;
+}
+.ders-cizgiler i {
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--ders-altin-yazi) var(--oran, 0%), var(--ders-iz) var(--oran, 0%));
+}
+.ders-cizgiler i.bitti {
+  background: var(--right);
+}
+.ders-kalan,
+.ders-not {
+  margin: 4px 2px 0;
+  font: 400 13px/1.45 var(--sans);
+  color: var(--ink-3);
+}
+.ders-liste-bolum + .pk-ek-turlar {
+  margin-top: 12px;
+}
+
+/* --- ders sayfası --- */
+.ders-sayfa-kapak {
+  position: relative;
+  height: 200px;
+  margin-top: 6px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.ders-kunye {
+  margin: 12px 2px 0;
+  font: 400 14px/1.4 var(--sans);
+  color: var(--ink-2);
+}
+.ders-kunye a {
+  display: inline-block;
+  padding: 8px 0;
+  color: var(--ink);
+}
+.ders-adim-liste {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ders-adim-satir {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 68px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+}
+.ders-adim-satir.simdi {
+  border-color: var(--ders-altin-yazi);
+}
+.ders-adim-yazi {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ders-adim-yazi b {
+  font: 400 21px/1.15 var(--serif);
+}
+.ders-adim-yazi span {
+  font: 400 14px/1.35 var(--sans);
+  color: var(--ink-2);
+}
+.ders-adim-hal {
+  flex: none;
+  font: 400 13px/1 var(--sans);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-3);
+}
+.ders-adim-satir.simdi .ders-adim-hal {
+  color: var(--ders-altin-yazi);
+}
+.ders-adim-satir.bitti .ders-adim-hal {
+  color: var(--right-ikon);
+}
+.ders-adim-liste ~ .ders-davet {
+  margin: 16px 2px 12px;
+}
+.ders-adim-liste ~ .metin-bag {
+  margin-top: 14px;
+}
+
+/* --- adım ekranlarının başlığı --- */
+.ders-ust {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  margin-bottom: 14px;
+}
+.ders-geri {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 22px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.ders-ust-yazi {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ders-ust-yazi .ders-etiket {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ders-ust h1 {
+  font: 400 22px/1.15 var(--serif);
+  white-space: nowrap;
+  outline: none;
+}
+.ders-ust .ders-cizgiler {
+  flex: none;
+}
+.ders-ust .ders-cizgiler i {
+  width: 18px;
+}
+.ders-ust .ders-cizgiler i.simdi:not(.bitti) {
+  background: linear-gradient(90deg, var(--ders-altin-yazi) max(var(--oran, 0%), 30%), color-mix(in srgb, var(--ders-altin-yazi) 45%, var(--ders-iz)) max(var(--oran, 0%), 30%));
+}
+
+.ders-alt-cubuk {
+  position: fixed;
+  z-index: 15;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  padding: 22px calc(env(safe-area-inset-right) + 16px) calc(env(safe-area-inset-bottom) + 14px) calc(env(safe-area-inset-left) + 16px);
+  background: linear-gradient(180deg, rgba(var(--bg-rgb), 0) 0, rgba(var(--bg-rgb), 0.96) 22px, var(--bg) 40px);
+  animation: none !important;
+}
+.ders-alt-cubuk .ders-dugme.dolu {
+  flex: 1;
+}
+
+/* --- 1. adım · Gör: sahne her temada koyu (görüntüleyici gibi) --- */
+.ders-gor {
+  --ink: #ebe5da;
+  --ink-2: #aca498;
+  --ink-3: #8a8379;
+  --surface: rgba(18, 17, 16, 0.6);
+  --right: #6fb487;
+  --bg: #0d0c0b;
+  --ders-altin: #d9b56a;
+  --ders-altin-ustu: #121110;
+  --ders-altin-yazi: #d9b56a;
+  --ders-iz: #4a4540;
+  --ders-kenar: #5a544d;
+  position: fixed;
+  z-index: 6;
+  inset: 0;
+  overflow: hidden;
+  background: #0d0c0b;
+  color: #ebe5da;
+  animation: none !important;
+}
+.ders-gor-sahne {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.ders-gor-sahne img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: none;
+  transform-origin: 0 0;
+  opacity: 0;
+  transition:
+    transform 0.9s cubic-bezier(0.3, 0.1, 0.2, 1),
+    opacity 0.4s ease;
+  will-change: transform;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.ders-gor.hazir .ders-gor-sahne img {
+  opacity: 1;
+}
+.ders-gor.resimsiz .ders-gor-sahne img {
+  display: none;
+}
+.ders-gor-perde {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(13, 12, 11, 0.86) 0, rgba(13, 12, 11, 0) 17%);
+}
+.ders-gor .ders-ust {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: var(--ust-bosluk) calc(env(safe-area-inset-right) + 16px) 0 calc(env(safe-area-inset-left) + 16px);
+}
+.ders-gor-panel {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 34px calc(env(safe-area-inset-right) + 22px) calc(env(safe-area-inset-bottom) + 18px) calc(env(safe-area-inset-left) + 22px);
+  background: linear-gradient(180deg, rgba(13, 12, 11, 0) 0, rgba(13, 12, 11, 0.94) 26px, #0d0c0b 52px);
+}
+.ders-gor-eser {
+  font: 400 13px/1.35 var(--sans);
+  color: #aca498;
+}
+.ders-gor-panel h2 {
+  font: 400 28px/1.1 var(--serif);
+  outline: none;
+}
+.ders-gor-metin {
+  margin: 0;
+  max-height: 34vh;
+  max-height: 34dvh;
+  overflow-y: auto;
+  font: 400 18px/1.5 var(--okuma);
+  color: #d8d1c6;
+}
+.ders-gor-alt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+.ders-noktalar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-right: auto;
+}
+.ders-noktalar i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4a4540;
+}
+.ders-noktalar i.gecti {
+  background: #8f7c4f;
+}
+.ders-noktalar i.simdi {
+  background: #ecd08f;
+}
+.ders-gor-alt .ders-dugme {
+  padding: 0 20px;
+}
+.ders-gor-alt .ders-dugme[hidden] {
+  display: none;
+}
+
+/* --- 2. adım · Öğren --- */
+.ders-ogren,
+.ders-ayirt {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 92px;
+}
+.ders-kanit-buyuk {
+  margin: 0;
+}
+.ders-kanit-buyuk button {
+  display: block;
+  width: 100%;
+  height: min(250px, 32vh);
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--ink) 7%, var(--bg));
+  cursor: zoom-in;
+}
+.ders-kanit-buyuk img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.ders-kanit-buyuk figcaption {
+  margin-top: 6px;
+  font: 400 13px/1.35 var(--sans);
+  color: var(--ink-2);
+}
+.ders-madde {
+  font: 400 27px/1.15 var(--serif);
+  outline: none;
+}
+.ders-kanit {
+  margin: 0;
+  padding: 12px 14px 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+}
+.ders-kanit p,
+.ders-aciklama p,
+.ders-fark-cumle p {
+  margin: 0;
+  font: 400 17px/1.5 var(--okuma);
+  color: color-mix(in srgb, var(--ink) 88%, var(--bg));
+}
+.ders-kanit p {
+  margin-top: 6px;
+}
+.ders-kanit-yok {
+  margin: 0;
+  font: italic 400 16px/1.45 var(--okuma);
+  color: var(--ink-2);
+}
+.ders-kanit-serit {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.ders-kanit-serit button {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--surface);
+  color: var(--ink-2);
+  font: 400 12px/1.25 var(--sans);
+  text-align: left;
+  cursor: pointer;
+}
+.ders-kanit-serit img {
+  display: block;
+  width: 100%;
+  height: 72px;
+  object-fit: cover;
+}
+.ders-kanit-serit span {
+  padding: 6px 8px 7px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ders-kanit-serit button[aria-pressed='true'] {
+  border-color: var(--ders-altin-yazi);
+  box-shadow: inset 0 0 0 1px var(--ders-altin-yazi);
+  color: var(--ink);
+}
+.ders-aciklama {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ders-aciklama b {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* --- 3. adım · Ayırt et --- */
+.ders-ayirt {
+  gap: 0;
+}
+.ders-soru {
+  font: 400 26px/1.15 var(--serif);
+  outline: none;
+}
+.ders-soru-alt {
+  margin: 4px 0 0;
+  font: 400 14px/1.35 var(--sans);
+  color: var(--ink-2);
+}
+.ders-ikili {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+.ders-ikili-eser {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.ders-ikili-eser.dogru {
+  border-color: var(--right);
+  box-shadow: inset 0 0 0 1px var(--right);
+}
+.ders-ikili-eser.yanlis {
+  border-color: var(--wrong);
+  box-shadow: inset 0 0 0 1px var(--wrong);
+}
+.ders-ikili-resim {
+  display: block;
+  width: 100%;
+  height: min(210px, 27vh);
+  background: color-mix(in srgb, var(--ink) 7%, var(--bg));
+}
+.ders-ikili-resim img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 35%;
+}
+.ders-ikili-ad {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 6px;
+  min-height: 44px;
+  padding: 8px 10px 10px;
+  font: 400 13px/1.3 var(--sans);
+}
+.ders-ikili-ad b {
+  font-weight: 600;
+}
+.ders-ikili-ad small {
+  flex-basis: 100%;
+  font-size: 12px;
+  color: var(--ink-2);
+}
+.ders-ikili-ad.bos {
+  color: var(--ink-3);
+}
+.ders-ikili-eser.dogru .ders-ikili-ad :is(b, svg) {
+  color: var(--right-ikon);
+}
+.ders-fark {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+}
+.ders-fark-sutunlar {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.ders-fark-sutunlar b {
+  display: block;
+  margin-bottom: 6px;
+  font: 600 13px/1.3 var(--sans);
+}
+.ders-fark-sutunlar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font: 400 14px/1.35 var(--sans);
+}
+.ders-fark-sutunlar li {
+  padding-left: 10px;
+  border-left: 1px solid var(--ders-kenar);
+}
+.ders-fark-sutunlar div + div {
+  color: var(--ink-2);
+}
+.ders-fark-cumle {
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.ders-fark-cumle small {
+  display: block;
+  margin-top: 4px;
+  font: 400 12px/1.3 var(--sans);
+  color: var(--ink-3);
+}
+.ders-fark-bag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font: 400 14px/1.3 var(--sans);
+  color: var(--ink-2);
+}
+
+/* --- adım sonu ve Sına özeti --- */
+.ders-son {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12vh;
+  text-align: center;
+}
+.ders-son-isaret {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--right);
+  color: var(--bg);
+}
+.ders-son h2 {
+  font: 400 34px/1.1 var(--serif);
+  outline: none;
+}
+.ders-son p {
+  margin: 0;
+  font: 400 17px/1.45 var(--okuma);
+  color: var(--ink-2);
+}
+.ders-son-dugmeler,
+.ders-ozet-menu {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+.ders-izler {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+  height: 26px;
+  margin: 10px 0 4px;
+}
+.ders-izler i {
+  width: 5px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--wrong);
+}
+.ders-izler i.dogru {
+  height: 26px;
+  background: var(--right);
+}
+.ders-neden {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ders-neden-bag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font: 400 14px/1.3 var(--sans);
+  color: var(--ink-2);
+}
+
+:root[data-yazi='buyuk'] :is(.ders-davet, .ders-kanit p, .ders-aciklama p, .ders-fark-cumle p, .ders-son p) {
+  font-size: 19px;
+}
+:root[data-yazi='buyuk'] .ders-gor-metin {
+  font-size: 20px;
+}
+:root[data-yazi='buyuk'] :is(.ders-fark-sutunlar ul, .ders-adim-yazi span, .ders-tekrar-yazi) {
+  font-size: 15.5px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ders-gor-sahne img {
+    transition: none;
+  }
+}

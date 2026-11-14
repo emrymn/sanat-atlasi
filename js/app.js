@@ -15,6 +15,7 @@ import { bildir, jsonGetir, d, bugun, kaydet, temaUygula, hataGoster, ekran, SEK
 import { ikonografiVeri } from './ekranlar/gozat.js';
 import { yarimYukle, olaylariBagla as pekistirOlaylari } from './ekranlar/pekistir.js';
 import { yonlendir } from './ekranlar/yonlendirme.js';
+import { olaylariBagla as dersOlaylari } from './ekranlar/ders.js';
 import { olaylariBagla as bugunOlaylari } from './ekranlar/bugun.js';
 import { olaylariBagla as ilerlemeOlaylari } from './ekranlar/ilerleme.js';
 import { olaylariBagla as ayarlarOlaylari, rozetiGuncelle, devasaSurdur } from './ekranlar/ayarlar.js';
@@ -126,6 +127,7 @@ async function basla() {
 ortakOlaylari();
 bugunOlaylari();
 pekistirOlaylari();
+dersOlaylari();
 ilerlemeOlaylari();
 ayarlarOlaylari();
 aramaOlaylari();

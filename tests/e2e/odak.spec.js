@@ -20,8 +20,11 @@ test('odak verisi gecikince Galeri ve Atölye görselleri yine hemen görünür;
   });
   await page.goto('./#/gozat');
   await expect(page.locator('.zaman-fon img').first()).toBeAttached({ timeout: 8000 });
-  await page.goto('./#/pekistir');
+  await page.goto('./#/pekistir/donem'); // 1.79.0: Atölye arka planı Turlar sayfasında
   await expect(page.locator('.pk-resim img')).toBeAttached({ timeout: 8000 });
+  // Çalış'ın girişindeki ders kapağı da odak verisini beklemez
+  await page.goto('./#/pekistir');
+  await expect(page.locator('.ders-kapak-resim img').first()).toBeAttached({ timeout: 8000 });
   birak();
 });
 
@@ -29,8 +32,10 @@ test('odak verisi hiç gelmese de (hata) görseller görünür', async ({ page, 
   await agiHazirla(context);
   await ilerlemeKur(context);
   await context.route(/data\/gorsel_odak\.json/, (r) => r.fulfill({ status: 500, body: '' }));
-  await page.goto('./#/pekistir');
+  await page.goto('./#/pekistir/donem');
   await expect(page.locator('.pk-resim img')).toBeAttached({ timeout: 8000 });
+  await page.goto('./#/pekistir');
+  await expect(page.locator('.ders-kapak-resim img').first()).toBeAttached({ timeout: 8000 });
   await page.goto('./#/gozat');
   await expect(page.locator('.zaman-fon img').first()).toBeAttached({ timeout: 8000 });
 });
@@ -38,7 +43,7 @@ test('odak verisi hiç gelmese de (hata) görseller görünür', async ({ page, 
 test('Atölye arka planı hedef değişince aynı kalır; yükleme sürerken sekme değişse de dönünce dolu', async ({ page, context }) => {
   await agiHazirla(context);
   await ilerlemeKur(context);
-  await page.goto('./#/pekistir');
+  await page.goto('./#/pekistir/donem');
   const resim = page.locator('.pk-resim img');
   await expect(resim).toBeAttached({ timeout: 8000 });
   const ilk = await resim.getAttribute('data-yedek'); // eserin kimliği (src keskinleşince büyük kopyaya geçebilir)
@@ -51,7 +56,8 @@ test('Atölye arka planı hedef değişince aynı kalır; yükleme sürerken sek
   await page.evaluate(() => (location.hash = '#/ilerleme'));
   await page.waitForTimeout(1500);
   await page.locator('#sekmeler a[href="#/pekistir"]').click();
-  await expect(page.locator('#uygulama .pk-resim img')).toBeAttached({ timeout: 8000 });
+  // 1.79.0: Çalış'ın girişi ders düzeni; sekmeden dönünce bugünün dersinin kapağı dolu
+  await expect(page.locator('#uygulama .ders-kapak-resim img').first()).toBeAttached({ timeout: 8000 });
 });
 
 test('basınca eser kartı yalnız bir kez küçülür (scale 0.965, transform yok)', async ({ page, context }) => {
