@@ -17,7 +17,7 @@ import { yarimSil } from './pekistir.js';
 import { SURUM } from '../surum.js';
 import { egimVar, izinGerekli, egimIzni, izinVarMi } from '../egim.js';
 import { titret, tik } from '../titresim.js';
-import { ikon } from '../tasarim.js';
+import { ikon, pgDisk } from '../tasarim.js';
 import { kacis } from '../yardimci.js';
 import { vadeSayisi, yarinVade } from '../gecmis.js';
 import { rozetDestekli, rozetYaz, rozetIzni } from '../rozet.js';
@@ -127,14 +127,14 @@ export function ayarlarSayfasi() {
       </div>` : ''}
       <div class="ayar"><b>Yedekle</b>
         <p>İlerlemen panoya kopyalanır ve aşağıda görünür. Notlar uygulamasına yapıştırıp sakla.</p>
-        <button class="dugme" type="button" data-yedekle>Yedekle</button>
+        <button class="dugme" type="button" data-yedekle>${pgDisk('muhur', 'okra')}Yedekle</button>
         <textarea id="yedek-cikti" readonly hidden aria-label="Yedek metni"></textarea>
         <p class="mesaj" id="yedek-mesaj" aria-live="polite"></p>
       </div>
       <div class="ayar"><b>Yedeği geri yükle</b>
         <p>Daha önce aldığın yedeği buraya yapıştır. Mevcut ilerlemenin yerine geçer.</p>
         <textarea id="yedek-girdi" aria-label="Geri yüklenecek yedek" placeholder='{"uygulama":"sanat-atlasi", …}'></textarea>
-        <button class="dugme" type="button" data-geri-yukle>Geri yükle</button>
+        <button class="dugme" type="button" data-geri-yukle>${pgDisk('kum-saati', 'umbra')}Geri yükle</button>
         <p class="mesaj" id="geri-mesaj" aria-live="polite"></p>
       </div>
       ${bildirimBolumu()}

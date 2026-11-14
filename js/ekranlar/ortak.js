@@ -499,6 +499,8 @@ export const sekmeKokuMu = (adres) => SEKME_ADRESLERI.includes(adres === '' || a
 
 // etkin: sekme kimliği; null → sekme çubuğu yok (pekiştirme kartı).
 // Çubuk bir kez kurulur; sonra yalnızca seçili sekme ve elmas işaret güncellenir (işaret kayarak geçer).
+// Pigment (1.80.0): Çalış'ın simgesi fırça (alıştırma). Galeri'nin simgesi Emre'nin isteğiyle değişmedi.
+const SEKME_IKONU = { pekistir: 'firca' };
 export function sekmeleriCiz(etkin) {
   const nav = document.getElementById('sekmeler');
   document.documentElement.classList.toggle('sekmesiz', etkin === null);
@@ -510,7 +512,7 @@ export function sekmeleriCiz(etkin) {
   if (!nav.querySelector('.sekme-isaret')) {
     nav.innerHTML =
       '<span class="sekme-isaret" aria-hidden="true"></span>' +
-      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}">${ikon('sekme-' + id, 22, 1.5)}<span>${ad}</span></a>`).join('');
+      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}">${ikon(SEKME_IKONU[id] || 'sekme-' + id, 22, 1.5)}<span>${ad}</span></a>`).join('');
     sekmeSurukle(nav);
     hizliAyarKur(nav); // İş 172: çubuğun üst kenarındaki dişli dil ve hızlı ayarlar yaprağı
   }

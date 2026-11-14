@@ -10,7 +10,7 @@ import { gunlukGuncelle, sonCalisilanEkle } from '../depo.js';
 import { gecmisEkle } from '../gecmis.js';
 import { bildirimSatiriHtml, bildirimTikla } from './bildirim.js';
 import { goruntuleyiciAc } from '../goruntuleyici.js';
-import { ikon } from '../tasarim.js';
+import { ikon, pgDisk } from '../tasarim.js';
 import { bilinenAd } from '../adlar.js';
 import { idbAl, idbKoy, idbSil } from '../idb.js';
 import { kayitYap, kayitGecerliMi, kayittanKur, devamOzeti, devamKonumu } from '../devam.js';
@@ -1129,7 +1129,7 @@ function tersGoster(o) {
       ${ipucu ? `<div class="ipucu-kutu" data-ipucu><p class="ipucu">${kacis(ipucu)}</p></div>` : ''}
       <p class="kaynak-satir">${kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler()))}</p>
       ${karsilastirBag}
-      <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="Sanatçı sayfası">Sanatçı</a><button class="dugme acik" type="button" data-sonraki>${sonrakiYazi}</button></div>
+      <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="Sanatçı sayfası">${pgDisk('portre', 'umbra')}Sanatçı</a><button class="dugme acik" type="button" data-sonraki>${sonrakiYazi}</button></div>
     </section>`;
   }
   const onceki = o.sonCizim;
@@ -1307,7 +1307,7 @@ function kartGoster(o) {
       }
       ${bildirimSatiriHtml(kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler())))}
       ${karsilastirBag}
-      <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="Sanatçı sayfası">Sanatçı</a>${ileri}</div>
+      <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="Sanatçı sayfası">${pgDisk('portre', 'umbra')}Sanatçı</a>${ileri}</div>
     </section>`;
   }
 

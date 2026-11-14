@@ -14549,10 +14549,11 @@ a {
 :is(.cerceve, .kucuk-kare, .galeri-eser img, .eser img, .tumu, .soru-resim img, .kars-eser img, .tanisma-eser, .karsi-kucukler > span, .konu-galeri-duvar img, .konu-durak-resim, .tanis-kareler .kucuk-kare, .zaman-sanatci .kucuk-kare, .tur-deste .kucuk-kare, .pk-kart .kucuk-kare, .duvar-kare, .kilitli-kare, .devam-resim, .gz-kare, .akim-eser .cerceve) {
   border-radius: var(--kose-gorsel);
 }
-:is(.dugme, .iki-dugme .dugme, .karisik-dugme, .devam-kart, .tuval-ekle, .zaman-kart, .tur, .tur-sahne, .tur-deste.bos,
+/* 1.80.0: .dugme bu listeden çıktı; düğmeler artık hap (dosyanın sonundaki Pigment bölümü) */
+:is(.karisik-dugme, .devam-kart, .tuval-ekle, .zaman-kart, .tur, .tur-sahne, .tur-deste.bos,
   .salon, .siradaki.resimli, .siradaki.resimli .siradaki-dugme, .akim-kart, .ed-govde, .harita-pencere-ic,
-  .harita-pencere-dugmeler .dugme, .harita-zaman, .harita-seviye, .basyapit-buyut, .konu-karti, .zaman-araclar,
-  .sergi-duvar, [data-teknik='rokoko'] .donem-sahne, .alt-yaprak .yaprak-dugmeler .dugme) {
+  .harita-zaman, .harita-seviye, .basyapit-buyut, .konu-karti, .zaman-araclar,
+  .sergi-duvar, [data-teknik='rokoko'] .donem-sahne) {
   border-radius: var(--kose-kart);
 }
 :is(.alt-yaprak, .gor-alt) {
@@ -19545,4 +19546,283 @@ a.zm-satir:active {
   .ders-gor-sahne img {
     transition: none;
   }
+}
+
+/* ============ Pigment düğmeleri (1.80.0) ============
+   Emre'nin seçtiği tasarım: her işlevin tarihî bir boyası var. Lapis (en değerli boya) = asıl eylem,
+   malakit = doğru, sinoper = yanlış, okra ve umbra = yardımcı eylemlerin diski. Düğmeler hap biçimli,
+   simgeler yuvarlak bir boya hokkasının (disk) içinde. Renkler soluk toprak ve boya tonları; parlak renk yok.
+   Tablodan gelen vurgu rengi (--vurgu) düğmelerde artık kullanılmaz; ilerleme çizgilerinde ve etiketlerde kalır. */
+:root,
+.gor {
+  --pg-lapis: #46618f;
+  --pg-lapis-yazi: #f1ece2;
+  --pg-okra: #c09a55;
+  --pg-sinoper: #b8654f;
+  --pg-malakit: #6fa585;
+  --pg-umbra: #8d7763;
+  --pg-disk-yazi: #14110e;
+  --pg-malakit-su: rgba(111, 165, 133, 0.14);
+  --pg-sinoper-su: rgba(184, 101, 79, 0.14);
+}
+:root[data-tema='gunduz'] {
+  --pg-lapis: #34507c;
+  --pg-okra: #8a6420;
+  --pg-sinoper: #8f3f2c;
+  --pg-malakit: #2f6a4b;
+  --pg-umbra: #5e4a3a;
+  --pg-disk-yazi: #f7f5f1;
+  --pg-malakit-su: rgba(47, 106, 75, 0.12);
+  --pg-sinoper-su: rgba(143, 63, 44, 0.1);
+}
+
+/* boya hokkası */
+.pg-disk {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--pg-umbra);
+  color: var(--pg-disk-yazi);
+}
+.pg-disk.pg-lapis {
+  background: var(--pg-lapis);
+  color: var(--pg-lapis-yazi);
+}
+.pg-disk.pg-okra {
+  background: var(--pg-okra);
+}
+.pg-disk.pg-sinoper {
+  background: var(--pg-sinoper);
+}
+.pg-disk.pg-malakit {
+  background: var(--pg-malakit);
+}
+
+/* genel düğme: hap */
+html .dugme,
+html .iki-dugme .dugme,
+html .yaprak-dugmeler .dugme,
+html .alt-yaprak .yaprak-dugmeler .dugme,
+html .harita-pencere-dugmeler .dugme,
+html .kp-dugmeler .dugme {
+  border-radius: 999px;
+}
+html .dugme:has(> .pg-disk) {
+  justify-content: flex-start;
+  gap: 10px;
+  padding-left: 8px;
+}
+html .dugme:active .pg-disk .ikon {
+  transform: none;
+}
+
+/* asıl eylem: lapis */
+html .dugme.vurgu,
+html .dugme.birincil,
+html .dugme.acik,
+html .alt-yaprak .yaprak-dugmeler .dugme.acik {
+  border: 0;
+  background: var(--pg-lapis);
+  color: var(--pg-lapis-yazi);
+  box-shadow: none;
+}
+html .dugme.vurgu:active,
+html .dugme.birincil:active,
+html .dugme.acik:active {
+  color: var(--pg-lapis-yazi);
+}
+@media (hover: hover) {
+  html .dugme.vurgu:hover,
+  html .dugme.birincil:hover,
+  html .dugme.acik:hover {
+    background: var(--pg-lapis);
+    filter: brightness(1.08);
+  }
+}
+html .alt-yaprak .yaprak-dugmeler .dugme.acik::before {
+  opacity: 0.35;
+}
+html .alt-yaprak .yaprak-dugmeler .yd-ok {
+  background: rgba(255, 255, 255, 0.16);
+  color: inherit;
+  box-shadow: none;
+}
+html .alt-yaprak .yaprak-dugmeler .dugme:first-child {
+  padding: 0 18px 0 8px;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+/* ince düğme: saydam hap, başında okra boya damlası (simgesi olan düğmede damla yok) */
+html .dugme.ince {
+  border-radius: 999px;
+  border-color: var(--border);
+  color: var(--ink-2);
+}
+html .dugme.ince:not(:has(svg))::before {
+  content: '';
+  position: static;
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--pg-okra);
+}
+
+/* sayı adımlayıcı: yuvarlak */
+html .adimlayici .dugme {
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+/* ders düğmeleri */
+html .ders-dugme {
+  border-radius: 999px;
+}
+html .ders-dugme.dolu,
+html .ders-alt-cubuk .ders-dugme.dolu {
+  border-color: transparent;
+  background: var(--pg-lapis);
+  color: var(--pg-lapis-yazi);
+}
+
+/* seçim hapları: seçili olan lapis */
+html .secim-hap button[aria-pressed='true'] {
+  background: var(--pg-lapis);
+  color: var(--pg-lapis-yazi);
+}
+
+/* üst çubuktaki simge düğmeleri: yuvarlak, ince çerçeveli */
+html .ust > .geri,
+html .ust > .kapat,
+html .ust-dugme {
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+/* tablonun üstündeki cam düğmeler: simge okra diskte */
+html .bugun-dugme,
+html .egim-dugme {
+  padding-left: 7px;
+  gap: 8px;
+  border-color: var(--border);
+}
+html .bugun-dugme .ikon,
+html .egim-dugme .ikon {
+  box-sizing: content-box;
+  padding: 7px;
+  border-radius: 50%;
+  background: var(--pg-okra);
+  color: var(--pg-disk-yazi);
+}
+
+/* tur kartlarının simgesi: her biri başka boyada disk */
+html .hatalar-sayi:has(> svg) {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  min-width: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--pg-umbra);
+  color: var(--pg-disk-yazi);
+}
+html .hatalar-satir:nth-child(4n + 1) .hatalar-sayi:has(> svg) {
+  background: var(--pg-lapis);
+  color: var(--pg-lapis-yazi);
+}
+html .hatalar-satir:nth-child(4n + 2) .hatalar-sayi:has(> svg) {
+  background: var(--pg-sinoper);
+}
+html .hatalar-satir:nth-child(4n + 3) .hatalar-sayi:has(> svg) {
+  background: var(--pg-malakit);
+}
+html .hatalar-satir:nth-child(4n) .hatalar-sayi:has(> svg) {
+  background: var(--pg-okra);
+}
+
+/* cevap seçenekleri: harf umbra halkada; doğru malakit, yanlış sinoper disk */
+html .secenek {
+  border-radius: 18px;
+  gap: 6px;
+}
+html .secenek .harf {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--pg-umbra);
+  border-radius: 50%;
+  color: var(--ink-2);
+  font: 600 12px/1 var(--sans);
+  letter-spacing: 0;
+}
+html .secenekler.daralmis .secenek .harf {
+  display: none;
+}
+html .secenek.dogru {
+  border-color: var(--pg-malakit);
+  background: var(--pg-malakit-su);
+}
+html .secenek.yanlis {
+  border-color: var(--pg-sinoper);
+  background: var(--pg-sinoper-su);
+}
+html .secenek.dogru,
+html .secenek.yanlis {
+  padding-right: 44px;
+}
+html .secenek.dogru > [role='img'],
+html .secenek.yanlis > [role='img'] {
+  top: 50%;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background: var(--pg-malakit);
+  color: var(--pg-disk-yazi);
+}
+html .secenek.yanlis > [role='img'] {
+  background: var(--pg-sinoper);
+}
+html .secenek.dogru > [role='img'] .ikon,
+html .secenek.yanlis > [role='img'] .ikon {
+  width: 16px;
+  height: 16px;
+  color: inherit;
+}
+html .hatalar-sayi:has(> svg) .ikon {
+  stroke: var(--pg-disk-yazi);
+}
+html .hatalar-satir:nth-child(4n + 1) .hatalar-sayi:has(> svg) .ikon {
+  stroke: var(--pg-lapis-yazi);
+}
+
+/* Ayarlar'daki seçenek kutuları (radyo): hap; seçili olan lapis çerçeveli ve lapis sulu zeminli */
+html .parcali label > span {
+  border-radius: 999px;
+}
+html .gunduz-renkleri label > span {
+  border-radius: 20px;
+}
+html .parcali input:checked + span {
+  border-color: var(--pg-lapis);
+  box-shadow: inset 0 0 0 1px var(--pg-lapis);
+  background: color-mix(in srgb, var(--pg-lapis) 30%, var(--surface));
+  color: var(--ink);
+}
+html .parcali input:focus-visible + span {
+  outline-color: var(--pg-lapis);
 }
