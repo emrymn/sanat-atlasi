@@ -310,7 +310,10 @@
    "ifade": "WD metadata: P571=1913 (precision=9/yıl), P1480 (circa) YOK; P217 (envanter) YOK; P571 ref DBpedia, P170 ref frwiki, P195 ref frwiki+itwiki, boyut ref Commons kategorisi (2018-06-26) — WD tek başına A yapılmadı, A değerleri S4/S5/S8'den teyit edildi.",
    "seviye": "A",
    "kaynak_id": [
-    "S1"
+    "S1",
+    "S4",
+    "S5",
+    "S8"
    ],
    "kullanim": "olgu"
   },

@@ -711,8 +711,8 @@
   },
   {
    "id": "C056",
-   "ifade": "E013 (yapısal): WD P571 ana değeri 1665, precision 8 (on yıl); 1665–1668 aralığı P1319/P1326 niteleyicilerinden; P1480 (circa) niteleyicisi YOK.",
-   "seviye": "A",
+   "ifade": "E013 (yapısal): WD P571 ana değeri 1665, precision 8 (on yıl); 1665–1668 aralığı P1319/P1326 niteleyicilerinden; P1480 (circa) niteleyicisi YOK. (WD yardımcı kaynak; yapısal gözlem B.)",
+   "seviye": "B",
    "kaynak_id": [
     "S1"
    ],

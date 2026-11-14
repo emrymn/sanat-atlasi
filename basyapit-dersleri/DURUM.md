@@ -480,7 +480,21 @@ Claude bağımsız denetim raporu (P0 kritik + P1 yüksek + sistematik) **ham ka
 
 **PARTİ 7 ÖZET (5/5):** Tümü "İnsan incelemesi bekliyor"; **dogrula 0 hata/0 uyarı** (5 eser), CJK 0, kelime TAMAMI aralıkta (dolgu yok). Toplam iddia **298 (A101/B80/C24/D33/E60)**; her eserde quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (CS/DY/GZ/TK yalnız A/B); `dogrula.py --test` 25/25. Birincil katalogların 5'i de AÇILDI (Reina Sofía, SMB, MoMA Wayback, LACMA, Tate) → güçlü A. **Vision bütçesi tükendiğinden 5 eserde görsel İNCELENEMEDİ (E)**; GZ 5/5 TASLAK. Şiddet/hassas konular (Guernica, Bacon) akademik ve açık ayrıntısız. Telif/adil-kullanım notu derslerde + `kunye.telif_durumu`'nda; görsel yeniden yayımlanmadı. Kalıcı sınır: insan editör görsel + birincil teyidi + telif/hak politikası onayı ZORUNLU; hiçbir eser "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1-6 değişmedi; yalnız `content-review` commit/push.
 
-**ÜRETİM SONU:** **107 eserin 107'si üretildi** (pilot Q167605 + Parti 1-7), tümü "İnsan incelemesi bekliyor", tüm repo dogrula **0 hata**, `--test` 25/25. Ders/JSON CJK 0 (3 KALITE notu kalıntısı kapanış denetiminde ele alınacak). M13 #103-107 telif-korumalı eserler kullanıcının adil-kullanım kararıyla üretildi (görsel yeniden yayımlanmadan; telif notu + atıf). **Hiçbir eser otomatik "Yayına aday" yapılmadı; insan editoryal onayı (görsel teyidi + birincil kaynak + telif/hak politikası) bekleniyor.** Ayrıntılı kapanış denetimi: `GENEL_KALITE_RAPORU.md` (hazırlanacak).
+**ÜRETİM SONU:** **107 eserin 107'si üretildi** (pilot Q167605 + Parti 1-7), tümü "İnsan incelemesi bekliyor", tüm repo dogrula **0 hata**, `--test` 25/25, CJK 0 (3 KALITE notu kalıntısı kapanış denetiminde temizlendi). M13 #103-107 telif-korumalı eserler kullanıcının adil-kullanım kararıyla üretildi (görsel yeniden yayımlanmadan; telif notu + atıf). **Hiçbir eser otomatik "Yayına aday" yapılmadı; insan editoryal onayı (görsel teyidi + birincil kaynak + telif/hak politikası) bekleniyor.** Ayrıntılı kapanış denetimi: `GENEL_KALITE_RAPORU.md`.
+
+## Kapanış Denetimi — 107 Eser (15 Kasım 2026)
+
+**Rapor:** `GENEL_KALITE_RAPORU.md` (12 adımlık bağımsız kapanış denetimi + Claude Opus için 15 eser kürasyonu). Yeni içerik üretilmedi; üretim tek seferde doğrulandı.
+
+- **Envanter:** 107/107 (eksik 0, fazla 0, mükerrer 0); eser başına 7 dosya (eksik 0); JSON parse hatası 0.
+- **dogrula:** 0 hata / 111 uyarı (63 heuristic kısaltma yanlış-pozitifi + 43 §8 bilinçli kısa ders + 5 kısmi seviye-tekrarı); `--test` 25/25 (jsonschema AKTİF).
+- **İddia:** 5428 (A1897/B1694/C398/D681/E758); quiz CS/DY/GZ/TK yalnız A/B (ihlal 0); totoloji 0; CJK 0.
+- **Görsel:** 98 eserde incelenemedi (vision bütçesi) → GZ %100 TASLAK; insan editör görsel teyidi ZORUNLU.
+- **Bu denetimde düzeltilen:** 3 CJK KALITE kalıntısı (Q2378534/Q2620028/Q285392) + Q2990634 C017 (birincil teyit kaynakları S4/S5/S8 eklendi, A korundu) + Q764831 C056 (WD yapısal gözlem A→B; Sayım/KALITE eşitlendi). dogrula 0 hata korundu.
+- **Opus-15:** kimlik/versiyon hatası (David-Toledo, Hokusai-Red Fuji, Guernica-reproduksiyon, Boucher-Münih, Cézanne-Courtauld, Munch-1893, Raimondi), zayıf birincil (Bosch, Fra Angelico, Giulio Romano), telif/adil-kullanım (Guernica, Magritte, Bacon), abstract-tek kanıt (Friedrich) — dönem/teknik çeşitliliğiyle. Ayrıntı: rapor §10/§15.
+- **Semantik sınır (dürüstlük):** otomatik testler olgusal doğruluğu KANITLAMAZ. 1078 wiki-tek B iddianın atıf zinciri + 21 içeriksiz (JS kabuğu) kaynak + 98 görsel + Friedrich C041 abstract'ı Opus/insan denetimi bekler. "URL açıldı ≠ iddia doğrulandı."
+- **Kısıtlar:** `main`/uygulama kodu/`data/` değişmedi; pilot + Parti 1-6 ders içerikleri dokunulmadı; deployment/yayın yok; "Yayına aday" yok. Yalnız `content-review` commit/push.
+- **Sonraki adım:** Claude Opus derin denetimi (15 eser + öncelikli alanlar) ve insan editoryal onayı. Onay olmadan yayımlanmaz.
 
 ### Veri Notları (mevcut veri DEĞİŞTİRİLMEDİ — onaya sunulur)
 

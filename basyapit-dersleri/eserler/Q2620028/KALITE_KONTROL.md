@@ -50,7 +50,7 @@ K2 (enwiki REST), K3 (itwiki REST), K4 (WD), K5 (Commons 1600px) 14 Kasım 2026'
 
 ## 5. Görsel doğrulama (Kural 6)
 
-Commons 1600px indirildi; **vision bütçesi tükendi → incelenemedi.** Görsel A iddiası yok (C025 E); betim K2/K3 kaynaklı. İnsan editör görsel teyidi ZORUNLU. Bir CJK karışması ("格子") yakalanıp düzeltildi. Görsel projeye kopyalanmadı.
+Commons 1600px indirildi; **vision bütçesi tükendi → incelenemedi.** Görsel A iddiası yok (C025 E); betim K2/K3 kaynaklı. İnsan editör görsel teyidi ZORUNLU. Bir CJK karakter karışması yakalanıp düzeltildi. Görsel projeye kopyalanmadı.
 
 ## 6. İnsan incelemesi gerektiren noktalar
 

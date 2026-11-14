@@ -97,12 +97,12 @@ Eser bir tuvaldir (Rijksmuseum, Amsterdam). **Birincil Rijksmuseum güncel nesne
 **C053** — S5 müze kısa açıklaması: "Jan Steen was een geboren verteller" (doğuştan hikâyeci); bilinen halk bayramının tüm öğelerini resme taşıdı; uslu çocuklar armağan, yaramazlar (soldaki ağlayan oğlan) ayakkabıda roe (takkenbos/dal demeti) alır; Sinterklaas Aralık'ta "al eeuwen op dezelfde manier" (yüzyıllardır aynı şekilde) kutlanır. **A.** S5.
 **C054** — 2012 ARIA sunumu 10 bölümlüydü; başlıklar: "For good children, sweets", "Duivekater", "Portrait of a saint", "Illegal celebrations", "Festivals and parties", "Sketches and combinations", "Portraits of Steen's family?", "Emulators", "Focus on the story"; alt sayfalar Wayback'te YOK (S13 404) → içerik OKUNAMADI; 2012 konumu "Room 11: Jan Steen". **A (arşiv; başlık varlığı).** S6, S13.
 **C055** — E012: S5 ilgili nesne (eski gravür) başlıklarında Steen tarihleri "Geb. omstreeks 1640, Overl. 1678" (güncel olmayan bilgi); S7 "omstr. 1626… 1679" ile çelişir; bunlar ilgili nesne başlıklarıdır, eserin künyesi değil. **E.** S5, S7. (belirsiz)
-**C056** — E013 (yapısal): WD P571 ana değeri 1665, precision 8 (on yıl → "1660'lar"); 1665–1668 aralığı P1319/P1326 niteleyicilerinden gelir; P1480 (circa) niteleyicisi YOK. **A (yapısal).** S1.
+**C056** — E013 (yapısal): WD P571 ana değeri 1665, precision 8 (on yıl → "1660'lar"); 1665–1668 aralığı P1319/P1326 niteleyicilerinden gelir; P1480 (circa) niteleyicisi YOK. (WD yardımcı kaynak; yapısal gözlem B.) **B (yapısal).** S1.
 **C057** — Yorum: sahne, ödül/ceza ahlak pedagojisini bir aile gösterisi olarak kurar; ağlayan oğlan ↔ zaferle ayakkabı kaldıran kız duygusal karşıtlık oluşturur; büyükannenin olası gizli armağanı cezayı yumuşatır. Müze betiminden çıkarım; olgu değil. **C.** S5, S6. (yorum)
 **C058** — Yorum: Steen'in "kaos"u kompozisyonel bir seçimdir; figürler kızın çevresinde kümelenir, hikâye jestlerle (işaret etme, gülme, ağlama, el etme, kolları uzatma) taşınır; müzenin "doğuştan hikâyeci" nitelemesi bu jest dramaturjisiyle uyumludur. Kaynak betimlerinden çıkarım; görsel teyit yok. **C.** S5, S6, S14. (yorum)
 **C059** — Yorum (felsefi/estetik ödünç): arife "eşik zamanı"dır (henüz armağan anı, kutlama öncesi); yortu, gündelik hayatın kendi kendini kutladığı bir an olarak okunabilir (Hegelci çerçeve ödünç; Steen'in Hegel'den etkilendiği İDDİA EDİLMEZ). PD dijital kopya (GAP) görüntüyü taşır, "aura"yı değil (Benjamin ödünç); kalıcı URL kurumsal kimliği çapalar. **C.** S5, S8, S14. (yorum)
 
-**Sayım:** 59 iddia · A=30 · B=5 · C=3 · D=5 · E=16.
+**Sayım:** 59 iddia · A=29 · B=6 · C=3 · D=5 · E=16.
 
 ## 3. Görsel doğrulama kaydı (Kural 6)
 

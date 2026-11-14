@@ -53,7 +53,7 @@ Eser bir tuvaldir (Tretyakov Gallery, Moskova). **Birincil Tretyakov katalog kay
 **C014** — Pompidou suluboya: "Sans titre / Première abstraction"; AM 1976-864; 49,6 × 64,8 cm; grafit + Çin mürekkebi + suluboya / kâğıt; Cabinet d'art graphique; 1976 Nina Kandinsky bağışı; Domaine public. **A.** S8.
 **C015** — Pompidou güncel kaydı "Date de création 1913"; inskripsiyon aynen "KANDINSKY i9i0//Aquarelle i9i0 /(abstraite)" (rendering normalize EDİLMEDİ; E008). Tutum → C043 (D). **A.** S8.
 **C016** — Görsel kamu malı (PD-Art; PD-old-auto-expired, PD-old-80-expired, CC-PD-Mark; AttributionRequired=false); kredi Google Art & Culture; 7015 × 4661 px, 22.019.538 bayt; featured. **A.** S6, S1.
-**C017** — WD metadata: P571=1913 (precision=9/yıl), P1480 YOK; P217 YOK; boyut ref Commons kategorisi (2018-06-26), P571 ref DBpedia — WD tek başına A yapılmadı, A değerleri S4/S5/S8'den teyit. **A.** S1.
+**C017** — WD metadata: P571=1913 (precision=9/yıl), P1480 YOK; P217 YOK; boyut ref Commons kategorisi (2018-06-26), P571 ref DBpedia — WD tek başına A yapılmadı, A değerleri S4/S5/S8'den teyit. **A.** S1, S4, S5, S8.
 **C018** — Nisan 1915: Tretyakov karma sergisinde (Mayakovski dahil) müze tarafından satın alma (Hermann pp. 224-225 atfı; kitaba erişilmedi). **B.** S3.
 **C019** — İlk sunum 1914 Odessa Sanat Müzesi, 60 eserle ("Bir Daire ile Resim", "Beyaz Çizgilerle Resim", "Doğaçlama 34"); olumlu karşılık (Hermann pp. 216-217). **B.** S3.
 **C020** — Kandinsky Rusya'ya döndü; Odessa Osmanlı donanmasınca bombalanırken 12–20 Aralık (1914) sergideki tablolarını kurtardı (Hermann pp. 221-222). **B.** S3.

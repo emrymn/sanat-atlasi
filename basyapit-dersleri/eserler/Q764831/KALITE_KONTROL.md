@@ -9,9 +9,9 @@
 ## 1. Denetim A — İddia-kaynak eşleştirmesi
 
 Olgusal cümleler `[C###]` ile KANIT envanterine bağlandı; dogrula.py çapraz kontrolü temiz.
-- **Toplam iddia:** 59 (C001–C059). **A=30, B=5, C=3, D=5, E=16.**
-- **A düzeyi:** Rijksmuseum güncel S5 + 2012 ARIA S6 + 1909 katalog S7 (künye/konu/provenans/imza/gravürler/biyografi başlığı) + WD yapısal (C056) + müze kısa açıklaması (C053) + ARIA başlık varlığı (C054).
-- **B düzeyi:** Kleiner atıf zinciri (C028, C040) + Cole 1893 betim/biyografi/Hogarth karşı-nüansı (C050, C051, C052). Kitap metinlerine erişilmedi; zincir notuyla.
+- **Toplam iddia:** 59 (C001–C059). **A=29, B=6, C=3, D=5, E=16.**
+- **A düzeyi:** Rijksmuseum güncel S5 + 2012 ARIA S6 + 1909 katalog S7 (künye/konu/provenans/imza/gravürler/biyografi başlığı) + müze kısa açıklaması (C053) + ARIA başlık varlığı (C054).
+- **B düzeyi:** Kleiner atıf zinciri (C028, C040) + Cole 1893 betim/biyografi/Hogarth karşı-nüansı (C050, C051, C052) + WD yapısal gözlem (C056). Kitap metinlerine erişilmedi; zincir notuyla.
 - **C düzeyi (yorum):** C057 (ahlak pedagojisi), C058 (jest dramaturjisi), C059 (Hegel/Benjamin ödünç). Olgusal anlatımdan ayrı, "(yorum)" işaretli.
 - **D düzeyi (tartışma):** C041 (D001 tarih), C042 (D002 ayakkabı), C043 (D003 versiyon), C044 (D004 saat), C045 (D006 inç). "(tartışma)" işaretli; kesin quiz cevabına girmez.
 - **E düzeyi (belirsiz):** 16 iddia (atıfsız betimler, erişilemeyen kaynaklar, görsel, literatür). "(belirsiz)" işaretli; kesin anlatıma ve doğru cevaba girmez.

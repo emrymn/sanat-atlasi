@@ -38,7 +38,7 @@ K2 (enwiki REST), K3 (itwiki REST), K4 (WD), K5 (Commons 1400px), K6 (polomuseal
 
 ## 5. Görsel doğrulama (Kural 6)
 
-Commons 1400px indirildi; **vision bütçesi tükendi → incelenemedi.** Görsel A iddiası yok (C027 E); betim K2/K3 kaynaklı. İnsan editör görsel teyidi ZORUNLU. Üretimde bir CJK karışması ("方法的") yakalanıp düzeltildi. Görsel projeye kopyalanmadı.
+Commons 1400px indirildi; **vision bütçesi tükendi → incelenemedi.** Görsel A iddiası yok (C027 E); betim K2/K3 kaynaklı. İnsan editör görsel teyidi ZORUNLU. Üretimde bir CJK karakter karışması yakalanıp düzeltildi. Görsel projeye kopyalanmadı.
 
 ## 6. İnsan incelemesi gerektiren noktalar
 

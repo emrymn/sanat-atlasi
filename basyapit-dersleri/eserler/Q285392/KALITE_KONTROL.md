@@ -28,7 +28,7 @@ K1 (Met API objects/470304), K2 (enwiki REST), K3 (WD), K4 (Commons 1200px) 14 K
 
 ## 3. Şema ve biçim
 
-`dogrula.py` (mini + jsonschema Draft 2020-12): **0 hata, 0 uyarı.** CJK taraması: 0 (üretimde "潘ofsky" karışması yakalanıp düzeltildi).
+`dogrula.py` (mini + jsonschema Draft 2020-12): **0 hata, 0 uyarı.** CJK taraması: 0 (üretimde "Panofsky" sözcüğüne CJK karakter karışması yakalanıp düzeltildi).
 
 ## 4. Kelime/süre
 
