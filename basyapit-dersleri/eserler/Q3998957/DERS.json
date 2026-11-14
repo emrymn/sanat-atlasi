@@ -1,0 +1,1007 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3998957",
+ "sanatci_id": "annibale-carracci",
+ "baslik": "Farnese Tavanı: Bakkhus ve Ariadne'nin Zaferi",
+ "ozgun_baslik": "Trionfo di Bacco e Arianna (The Triumph of Bacchus and Ariadne)",
+ "kunye": {
+  "sanatci": "Annibale Carracci (döngüde Agostino Carracci ve allievi)",
+  "sanatci_yasam": "1560–1609",
+  "tarih": "Döngü 1597–1608; volta açılışı 2 Haziran 1601; merkez panel 1597–1600 (Prater/Taschen atıflı, tek ikincil)",
+  "tarih_belirsizlik": "data \"1597–1601 (slayt altyazısı)\" zayıf (D4); itwiki 1597–1606/1607; WD P571=1586 anomalisi (D6); panel boyutu yok (E1)",
+  "teknik": "Fresk (affresco); a secco bitirmeler (atıfsız, C)",
+  "muze": "Galleria, Palazzo Farnese, Roma (in situ; Fransa Büyükelçiliği + École française de Rome)",
+  "envanter": "YOK — in situ fresk; müze nesnesi değil (WD P217 yok)",
+  "edinim": "Kardinal Odoardo Farnese komisyonu; 1592 çağrı (S6) / 1594 Roma (S2) — D5",
+  "konum": "Palazzo Farnese, Galleria (batı kanadı, piano nobile), Roma",
+  "telif_durumu": "Kamu malı (PD-Art / PD-old-100-expired; ölüm+100); Commons PD; WGA credit"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Rome_Palazzo_Farnese_ceiling_Carracci_frescos_04.jpg",
+  "kaynak": "Wikimedia Commons (credit: Web Gallery of Art)",
+  "lisans": "Public domain (PD-Art / PD-old-100-expired)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (S9/S10); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "3448×1753 px; 1.344.160 B; yükleme 2014-12-18",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C055); GZ TASLAK; kompozisyon S6/S7/S8 + S2/S4/S5 metninden; D1/D2/D3 görsel teyit bekler"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 426
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1425
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 3090
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-in-situ-freskin-birincil-kaydı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-komisyon-kronoloji-ihtilafları"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçı-kariyeri-ve-atölye",
+   "DERS_ILERI.md#6-etki-ve-alımlama-barok-için-köprü"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-tavan-sistemi-üç-şemanın-sentezi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-tiasos-yıldız-taç-ve-ilk-proje"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-fresk-puntinato-ve-kartonlar"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı-birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı-birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Merkez panonun künyesini birincil koruyucu kurum kaydıyla (Fransa Büyükelçiliği) doğrular: in situ fresk, döngü 1597–1608, envanter yok.",
+  "Döngünün illüzyonistik tavan sistemini (quadri riportati, ignudi, trompe-l'oeil) ve merkez panonun açık pencere (sfondato) kurgusunu ayırt eder.",
+  "Bakkhus-Ariadne tiasos ikonografisini ve yıldız taç (Corona Borealis / Aldobrandini) mitini kaynak zincirleriyle açıklar.",
+  "Epitalamik yorum ile Bellori'nin ahlakçı okumasını ve modern alternatifleri (Panofsky, Dempsey, Ginzburg) tartışma olarak yönetir.",
+  "D1–D7 ihtilaflarını ve E belirsizliklerini (quadro reported, koç/keçi, katır/eşek, tarih, 1586 anomalisi) beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Quadro reported",
+   "tanim": "Tavana \"taşınmış/yerleştirilmiş\" çerçeveli tablo izlenimi veren illüzyonistik pano; döngünün genel sistemi. Merkez pano için S2 \"değil\" der (D1).",
+   "kanit": [
+    "C009",
+    "C028"
+   ]
+  },
+  {
+   "ad": "Tiaso (thiasos)",
+   "tanim": "Dionysos/Bakkhus'un coşkulu alayı: menadi, satiri, eroti, Pan, Silenos; müzik aletleri, kaplar, yiyecek sepetleri.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "Trompe-l'oeil / quadratura",
+   "tanim": "Göz yanıltıcı boyalı mimari: mermer görünümlü atlanti, bronz taklidi madalyonlar, sahte çerçeveler.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "Puntinato",
+   "tanim": "Noktalı renk serimi + sık taramalar; ışık-gölgeyi güçlendirir; gravür pratiğinden ödünç (Ginzburg 2000 s.35).",
+   "kanit": [
+    "C035"
+   ]
+  },
+  {
+   "ad": "Epitalamik yorum",
+   "tanim": "Düğün kutlamacı eser okuması; Farnese-Aldobrandini evliliği (Ranuccio–Margherita); kurum koşullu kip, akademik tartışma.",
+   "kanit": [
+    "C013",
+    "C018"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser, Galleria Farnese tavanının merkez panosudur: Trionfo di Bacco e Arianna / The Triumph of Bacchus and Ariadne; Bakkhus-Ariadne zafer/düğün alayı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Ana sanatçı Annibale Carracci (1560–1609); döngü kardeşi Agostino ile; \"decorata principalmente da Annibale\"; \"il suo capolavoro\"; S7: \"la più perfetta conclusione di un secolo e mezzo d'innovazioni pittoriche in Europa\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S1",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Duvarlar büyük ölçüde allievi işi; Domenichino \"Vergine con l'unicorno\" freskinin yazarı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Döngü 1597–1608 (S6 kronoloji; S7; S5 infobox; WD preferred P571 P1319=1597/P1326=1608).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Volta açılışı 2 Haziran 1601; \"l'audacia degli affreschi stupisce nella Roma della Controriforma\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Teknik fresk (affresco); kurum \"a fresco\" açıklar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S8",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "In situ: Galleria, Palazzo Farnese, Roma; bina Fransa Büyükelçiliği + École française de Rome; müze envanter no YOK (P217 yok; müze nesnesi değil).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Döngü teması \"Amori degli Dei\"; konular Ovidius Metamorphoses'inden.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Galeri dar: ~20 m uzun × 7 m geniş (S7/S8; itwiki ~6 m der, küçük fark); beşik tonoz; trompe-l'oeil: monokrom atlanti mermer görünür, madalyonlar bronz taklidi, \"quadri riportati\" tonoz üzerine yerleştirilmiş izlenimi; Raffaello (Galatea) + Michelangelo/Sistina (ignudi) homajları.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Restorasyonlar: 1994 yapısal; 2013–2015 Galleria; 15 Mart 2014'ten itibaren ziyarete kapalı (12–18 ay öngörü).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "1994 deneme izleri görünür: merkez freskte açık şerit (striscia chiara); giriş sağ duvar pilaster başlıklarında temizlik dereceleri; duvarlar \"yaşlı\" görünüm için yağ + mumla kaplı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Komisyon: Kardinal Odoardo Farnese; S6 kronoloji 1592'de Carracci kardeşlere Bologna'dan çağrı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Kurum epitalamik yorumu KOŞULLU kiple aktarır: S7 \"sarebbe stata commissionata in vista del matrimonio di Ranuccio Farnese con Margherita Aldobrandini, nipote di papa Clemente VIII\" + \"celebrerebbe l'unione\"; S8 \"Pare che\". Amore terrestre (sağ altta uzanan kadın) + Amore celeste (Ariadne/Venere). Yorum tartışmalı (→ C018).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Panel 1597–1600 arasında yapıldı, in situ (S4; Prater \"El Barroco\", Taschen 2005, s.227 atfı; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Konu: corteo nuziale; çift iki arabada — Bakkhus altın araba + iki kaplan; Ariadne gümüşi araba (hayvan → C025 D); eroti, menadi, satiri, Pan, Sileno; müzik aletleri, kaplar, yiyecek sepetleri; Dionysos tiasosu (Ginzburg 2008 s.38-59).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Sarhoş Silenos alayın önünde bir binek üzerinde (S5 \"rides an ass\"; S2 \"a dorso di mulo\"; binek → C026 D).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Epitalamik tezin akademik tarihi: ilk Tietze 1906–07; Dempsey kararlı, Posner destekler; Ginzburg 2000 + Colonna 2007; düğün 7 Mayıs 1600; müzakereler Eylül 1599; Bellori/antik kaynaklarda iz yok.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Epitalamik yorum kesin değil: \"molto disputato\"/\"(supposto)\"; kronoloji itirazı (Briganti 1987); açık Aldobrandini arması yok (Marzik 1986); Martin alternatifi (Alessandro Farnese–Maria d'Aviz 1565) \"non ha avuto seguito\"; kurum koşullu kip.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C019",
+   "ifade": "Bellori ahlakçı okuma (Vite 1672): \"il vulgare e il celeste amore\" mücadelesi; dört köşe Eros/Anteros (amor profano/sacro); Anteros zafer taçlı; Trionfo = \"ebbrezza, madre di ogni vizio\"; S5/Wohl \"Human Love Governed by Celestial Love\" (Wohl çev. 2005 s.84; Borea 2009).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Panofsky: Rönesans Anteros'u ahlakileştirdi; klasik mitte Anteros = karşılıklı aşk (Eros'un tamamlayıcısı); iki kavrayış bir arada; bazı modern tarihçiler (Panofsky dahil) köşe puttolarını klasik okur.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Dempsey (1968; 1995) + Posner 1971: gizli ahlak dersi yok; aşkın hedonistik/erotik kutlaması; Martin 1965 esasen Bellori'yi sürdürür; Hoving: eğlenceli Olympus kutlaması + Odoardo antikalarına homaj.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Ginzburg 2000 sentezi: ruhsal/duyusal aşkın antagonizması → concordia (complementarità); Trionfo odak: Venere Celeste (Ariadne) + Venere Terrena (sağ altta uzanan kadın); mutlu evlilik dileği.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Ariadne yıldız diademi: Corona Borealis miti + Aldobrandini armasındaki yıldızlar; epitalamik metinler Margherita=Ariadne — Onorio Longhi Canzone 1600 (Colonna 2007 s.87-88).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Albertina (Viyana) hazırlık çizimi: \"Con ogni probabilità\" ilk proje farklı — Naxos'ta Hindistan'dan dönen Bakkhus + uyuyan Ariadne buluşması; değişim evlilik planlarıyla ilişkili olabilir (Ginzburg 2000 s.154).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "D2: Ariadne arabasını çeken hayvan: S2 \"due arieti\" (koç) ↔ S5 \"goats\" (keçi); data \"beyaz keçiler\"; \"beyaz\" hiçbir erişilen metinde yok (görsel incelenmedi).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C026",
+   "ifade": "D3: Silenos bineği: S2 \"mulo\" (katır; fresk + karton) ↔ S5 \"ass\" (eşek); data \"eşek\"; S2 BM rölyefi için de \"mulo\" der.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C027",
+   "ifade": "Merkez pano quadro reported DEĞİL (S2, atıfsız): sahte mimari çerçeve tavanın ışıklı dış mekâna açılmasını (sfondamento) simüle eder; alay kenarlardan \"kesilir\" (filin yalnız başı); izleyici fragman görür.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C028",
+   "ifade": "D1: data merkez pano \"quadro reported ... tekniğiyle yapılmış\" ↔ S2 \"il Trionfo non è un quadro riportato\"; S6/S7 quadri riportati'yi GENEL sistem olarak anlatır; S2 paragrafı atıfsız → Ginzburg 2008 + görsel teyit.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C029",
+   "ifade": "Modeller: Tiziano (Bacco e Arianna, Baccanale degli Andrii) + Dosso Dossi (Trionfo di Bacco in India, Mumbai); Camerini d'alabastro (Alfonso I d'Este); 1598 Ferrara devri → Pietro Aldobrandini; Agucchi dostluğu (Ginzburg 2000 s.83).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Garofalo Trionfo di Bacco (Raffaello fikrinden, 1540, Dresden Gemäldegalerie) — Dempsey 1995 s.44.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Giambologna rölyefi (Cosimo I atlı heykeli kaidesi; Siena'ya zafer girişi) olası kaynak — atıfsız.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C032",
+   "ifade": "Antik lahit modeli kesin değil (\"Incerto è invece se...\"): Bellori tanıklığı + BM mermer mezar rölyefi (1805,0703.130); sarhoş Silenos freske çok yakın (Rausa 2002 vol.II s.243); BM detay kısmi (→ C046).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Perin del Vaga çizimi (Giovanni Bernardi kaya kristali ovali, Cassetta Farnese) Silenos grubu için olası model (\"potrebbe essersi rifatto\") — atıfsız.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "Günümüze ulaşan tek kartonlar: Trionfo Silenos grubu parçası (Urbino, Galleria nazionale delle Marche) + Agostino kartonları (Londra National Gallery) — atıfsız.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "\"Puntinata\" renk serimi + sık taramalar (chiaroscuro); gravür pratiğinden ödünç (iki kardeş gravür ustası) — Ginzburg Carignani 2000 s.35.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Atıfsız teknik ayrıntıları: \"non poche rifiniture a secco\"; spolvero/cartoni; çok sayıda hazırlık çizimi (Louvre + Windsor); \"prestezza\" reddi; Bellori kil modelletti.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C037",
+   "ifade": "Tonoz sistemi: üç şema (friz + mimari + quadri riportati); modeller Sistina (erme-telamoni, ignudi, sahte bronz), Tibaldi Palazzo Poggi (quadri riportati + sfondato + köşe Eros/Anteros), Farnesina Psike Loggia; Correggio + Venedik; olası Palazzo Te; quadreria → \"müzeumsu\" hava (Posner 1971; Martin 1965).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "13 anlatı sahnesi + sahte bronz madalyonlar (S5: 12); merkez sıra: Pan e Diana (sol), Trionfo, Mercurio e Paride (sağ); betimler Ginzburg 2008'den.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Galeri ortamı: Via Giulia/Tiber tarafı kapalı loggia; Vignola tasarımından Della Porta; ışık tek uzun kenar (3 pencere); nişlerde Farnese antik heykelleri (çoğu Napoli MANN); muhtemelen müzik odası (gravicembali panelleri Londra NG) — Martin 1965 s.69-82.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Kariyer dizisi: Annibale 1594 Roma'ya çağrı (Posner 1971 s.77-79); 1595 kesin hizmet; Sala Grande projesi (Alessandro Farnese Flanders zaferleri) askıya → terk; ilk bezeme Camerino (Storie di Ercole + Ercole al bivio); Galleria 1597 \"secondo l'ipotesi più seguita\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Hoving: fresk ↔ Farnese antik heykel koleksiyonu eşleşmeleri (genel kabul); koleksiyon çoğu bugün Capodimonte + Napoli MANN; S2: antik heykel alıntıları bol.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Etki: Rönesans geri kazanımı + Barok dil temeli (Montanari 2012); Cortona Barberini borçlu (Posner 1971 s.101); Bernini homajları (Wittkower); 17. yy Roma tuval+fresk güçlü etki (Wittkower 1985 s.57); Sacchi↔Cortona tartışması (Accademia di San Luca); kompozisyon → Sacchi/Poussin, anlatım → Cortona.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "Agucchi formülü: \"il finissimo disegno romano con la bellezza del colorito lombardo\" (Ginzburg 2000 s.13-18).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "Erken alımlama: antik kaynaklarda oybirliği övgü (Malvasia \"statuino\" çekincesi); Bellori \"secolo d'oro della Pittura\"; gravür: Richelieu 1640–50, Cesi 1657, Aquila 1677 (Maratta apoteoz); XIV. Louis → Le Brun+Poussin Tuileries kopya (gerçekleşmedi); ikinci ekip Galleria di Diana (1871 yangını; kopyalar Louvre).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "Düşüş + toparlanma: 18. yy sonu–19. yy \"eklektikçilik\" suçlaması; 20. yy: Tietze 1906–07, Mahon 1947, Martin 1965, Dempsey, Posner 1971 (ilk/tek sistematik monografi); Briganti, Zapperi, Ginzburg.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "BM nesne detayı erişilemedi: canlı 403; beta detay arşivde 404; yalnız 2019-07-17 arşivden \"sarcophagus\" + museum number 1805,0703.130 (KISMİ).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "Ovid satır lokusu doğrulanamadı: S5 \"Metamorphoses (VIII; lines 160–182)\" → trionfi.com (S17); S17'de satır numarası YOK; Ovid metnine erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "Lorenzo de' Medici karnaval şarkısı \"Quest'è Bacco ed Arïanna\"; tarih \"indestinct\", \"about 1475\"; ruh paraleli (S5 → trionfi.com akademik değil; S17 Dempsey ~1475, Baccio Baldini gravürü).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S17"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C049",
+   "ifade": "Panel boyutu hiçbir erişilen kaynakta YOK; WD P2048/P2049 yok; yalnız oda ölçüsü (S7 ~20×7 m; S2 infobox 2014×659×980 cm, atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S7",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Görsel-bağımlı ayrıntılar doğrulanmadı (görsel İNCELENMEDİ): tacı uzatan putto, tef çalan menad, koşan çıplak çocuk, altın sarısı örtü, \"sıva çatlakları\" (data); S8 1994 deneme \"striscia chiara\" izini anlatır.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "data \"Sistina'dan sonra Roma'nın en etkili tavan resmi\" üstünlüğü erişilen kaynaklarda bu biçimde YOK; S7 \"più perfetta conclusione\"; S5 \"powerful formative influence\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "data/ikonografi.json \"Ovidius, Dönüşümler (ayrıca Aşk Sanatı; Heroides; Catullus)\": Metamorphoses A (C008); Ars Amatoria/Heroides/Catullus merkez pano için doğrulanmadı (enwiki Heroides'i başka paneller için anar).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "WMF \"Conserving the Carracci Gallery\" (S18): canlı + arşiv JS kabuğu, gövde YOK; hamilik yalnız arama anlatısında → kanıt olarak KULLANILMADI; restorasyon olguları S6/S8 (A).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "kullanilmadi"
+  },
+  {
+   "id": "C054",
+   "ifade": "Kitap tam metinleri erişilmedi (Ginzburg, Dempsey, Posner, Martin, Prater, Bellori, Montanari, Colonna, Briganti, Wittkower, Mahon, Cajano/Settimi): bibliyografyalarda anıldı; Dempsey/Posner/Martin archive.org metadata doğrulandı (S13–S15).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13",
+    "S14",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata + lisans + çözünürlük; GZ TASLAK; kompozisyon kaynak betiminden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "PD metadata: WD P6216=Q19652, P1001=Q60332278 (100 years pma or shorter), P459=Q29940705 (100+ after death); Commons PD-Art/PD-old-100-expired; Copyrighted False; AttributionRequired false.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Görsel metadata: Commons \"Rome Palazzo Farnese ceiling Carracci frescos 04.jpg\" 3448×1753 px, 1.344.160 B, yükleme 2014-12-18; ImageDescription \"The Triumph of Bacchus and Ariadne\" (Q123907); DateTimeOriginal \"between 1597 and 1608\"; Credit WGA farnes08.jpg (HEAD 301→200; içerik incelenmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "Diğer atölye adları (S5, atıfsız): Lanfranco, Albani, Badalocchio; Agostino 1597–1600 katıldı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C059",
+   "ifade": "Ercole e Iole: atribüt tersine çevrimi — Ercole kadın kıyafetiyle tef çalar, Iole sopa + Nemea aslanı postu (S5: Heroides 9 + Tasso; S8 aynı); S8: Jupiter/Junon sadık âşık çift (kurum ironik okuması).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "D7: panel adı: S2/S5 \"Ercole e Iole\"/\"Hercules and Iole\" ↔ S8 \"Hercule et Onphale\"; merkez panoyla ilgisiz, yalnız not.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S5",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C061",
+   "ifade": "Kurum (arşiv) işeyen putto'yu (\"Puto qui urine\") tonozun genel \"irreverente\" tonunun göstergesi olarak sunar; kardinal sarayında Kontra-Reform sonrası profan konu çağdaşları şaşırttı, istisnai kaldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "D4: tarih: data \"1597–1601 (slayt altyazısı)\" (zayıf) ↔ döngü 1597–1608 (S6/S7/S5/WD) ↔ itwiki 1597–1606/1607 ↔ panel 1597–1600 (S4/Prater); volta açılışı 2 Haziran 1601 data'yı kısmen açıklar; WD 1586 anomalisi (→ C063).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S2",
+    "S4",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C063",
+   "ifade": "D6: WD içi tutarsızlık: P571 normal=1586 (ref Q465 DBpedia) ↔ preferred 2. binyıl + P1319=1597/P1326=1608 (refsiz); 1586 hiçbir erişilen kaynakla desteklenmiyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C064",
+   "ifade": "D5: komisyon yılı: S6 1592 (kardeşlere çağrı) ↔ S2 1594 (Annibale Roma, Posner); farklı olaylar olabilir; kesinleştirilmedi; S2 1595 kesin hizmet.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C065",
+   "ifade": "Palazzo Farnese inşaatı: Kardinal Alessandro Farnese (1468–1549; 13 Ekim 1534 III. Paulus) isteğiyle 1513'te başladı; 76 yıl (1513–1589); Sangallo il Giovane, Michelangelo, Della Porta; 1589 cephe bitti.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q3998957 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3998957.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S1b",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (Q7824, Q848386, Q25631150, Q123907, Q3374376, Q19652 vb.)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Affreschi della Galleria Farnese (wikitext; akademik satır içi atıflı)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Affreschi%20della%20Galleria%20Farnese",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429 → backoff 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Trionfo di Bacco e Arianna (WD sitelink = disambigua; asıl madde S2)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Trionfo%20di%20Bacco%20e%20Arianna",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S4",
+   "kurum": "İspanyolca Vikipedi",
+   "belge": "Triunfo de Baco y Ariadna (Prater/Taschen 2005 atıflı)",
+   "url": "https://es.wikipedia.org/w/api.php?action=parse&page=Triunfo%20de%20Baco%20y%20Ariadna",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429 → backoff 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Loves of the Gods (Wittkower/Dempsey/Bellori-Wohl atıflı; kısmen trionfi.com)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Loves%20of%20the%20Gods",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (arama ile bulundu; WD sitelink yok)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Ambasciata di Francia in Italia",
+   "belge": "Palazzo Farnese + kronoloji (Publié 20 January 2026; etalab-2.0)",
+   "url": "https://it.diplomatie.gouv.fr/it/node/6/palazzo-farnese",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (canlı)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Ambasciata di Francia in Italia",
+   "belge": "Galleria dei Carracci (Publié 16 January 2026; S6 linkinden)",
+   "url": "https://it.diplomatie.gouv.fr/it/node/116/galleria-dei-carracci",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (canlı)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Ambasciata di Francia (eski site)",
+   "belge": "Galleria dei Carracci scheda + foto galeri (Wayback 2015-02-26)",
+   "url": "https://web.archive.org/web/20150226062755/http://www.ambafrance-it.org/Galleria-dei-Carracci",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı DNS ölü (curl 6, HTTP 000); arşiv 200 (2015-02-26)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Rome Palazzo Farnese ceiling Carracci frescos 04.jpg imageinfo",
+   "url": "https://commons.wikimedia.org/wiki/File:Rome_Palazzo_Farnese_ceiling_Carracci_frescos_04.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429,429 → 75s backoff 200; metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S10",
+   "kurum": "Web Gallery of Art",
+   "belge": "Commons credit orijinal görsel URL (yalnız HEAD)",
+   "url": "https://www.wga.hu/art/c/carracci/annibale/farnese/farnes08.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "301→https 200; image/jpeg 196.167 B; last-mod 2017-04-07; içerik incelenmedi",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "British Museum",
+   "belge": "sarcophagus image gallery, objectid=1655882, museum number 1805,0703.130 (Wayback 2019-07-17)",
+   "url": "http://web.archive.org/web/20190717070824/http://www.britishmuseum.org/research/collection_online/collection_object_details/collection_image_gallery.aspx?partid=1&assetid=975819&objectid=1655882",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403; arşiv 200 (2019-07-17), KISMİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "British Museum",
+   "belge": "beta_collection_object_details (S11 arşiv linki)",
+   "url": "http://web.archive.org/web/20190717070824/https://www.britishmuseum.org/system_pages/beta_collection_introduction/beta_collection_object_details.aspx?assetId=975819001&objectId=1655882&partId=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404 (arşivde yok); erişilemedi",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "archive.org",
+   "belge": "Dempsey 1995 metadata (Annibale Carracci, The Farnese Gallery, Rome; George Braziller)",
+   "url": "https://archive.org/metadata/annibalecarracci0000char_h7c5",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (kayıt doğrulama; tam metin erişilmedi)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "archive.org",
+   "belge": "Posner 1971 metadata (Annibale Carracci; a study in the reform...; Phaidon, ISBN 0714814717)",
+   "url": "https://archive.org/metadata/annibalecarracci0000posn",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (tam metin erişilmedi)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S15",
+   "kurum": "archive.org",
+   "belge": "Martin 1965 metadata (The Farnese Gallery; Princeton UP)",
+   "url": "https://archive.org/metadata/farnesegallery00mart",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (tam metin erişilmedi)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S16",
+   "kurum": "trionfi.com",
+   "belge": "Io Triumpe – Greeting a God (S5 ref; akademik DEĞİL)",
+   "url": "http://trionfi.com/0/t/01/index.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S17",
+   "kurum": "trionfi.com",
+   "belge": "Lorenzo de Medici's Bacchus and Ariadne (S5 ref; Ovid satır no YOK)",
+   "url": "http://trionfi.com/0/gg/103/t.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S18",
+   "kurum": "World Monuments Fund",
+   "belge": "Conserving the Carracci Gallery proje sayfası",
+   "url": "https://www.wmf.org/projects/carracci-gallery-palazzo-farnese",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı + arşiv (2026-04-14) 200 ama JS kabuğu; gövde YOK; kanıt olarak kullanılmadı",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Bacco e Arianna",
+   "sanatci": "Tiziano",
+   "gerekce": "Kompozisyon modeli (Ginzburg 2000 s.83 atıf zinciri); Camerini d'alabastro → 1598 sonrası Aldobrandini koleksiyonu, Agucchi aracılığı.",
+   "kanit": [
+    "C029"
+   ]
+  },
+  {
+   "eser": "Trionfo di Bacco in India",
+   "sanatci": "Dosso Dossi",
+   "kurum": "Mumbai (S2)",
+   "gerekce": "Bakkhanal kompozisyon modeli; Camerini d'alabastro; Aldobrandini koleksiyonu.",
+   "kanit": [
+    "C029"
+   ]
+  },
+  {
+   "eser": "Trionfo di Bacco",
+   "sanatci": "Garofalo (Raffaello tasarımından)",
+   "kurum": "Gemäldegalerie Alte Meister, Dresden",
+   "gerekce": "Raffaello fikrini tamamlayan model (Dempsey 1995 s.44); 1540.",
+   "kanit": [
+    "C030"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "S6/S7 (Fransa Büyükelçiliği canlı 200) + S8 (Wayback 2015) + S2/S4/S5 wikitext + S1 WD + S9 Commons metadata + S11 BM arşiv + S17 trionfi 14 Kasım 2026'da yeniden açılıp iddialarla karşılaştırıldı (ham cache). Künye/kronoloji/teknik/restorasyon A; panel 1597–1600 B (Prater, metne erişilmedi). D1–D7 ihtilafları ve E belirsizlikleri açık; görsel İNCELENMEDİ (C055) → GZ TASLAK. Kitap metinleri erişilmedi (C054); WMF JS kabuğu kanıt olarak kullanılmadı (C053).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih (D4/C062): data \"1597–1601 (slayt altyazısı)\" zayıf; kurum döngü 1597–1608 (A), volta açılışı 2 Haziran 1601 (A), panel 1597–1600 (B/Prater); itwiki 1597–1606/1607.",
+  "quadro reported (D1/C028, en güçlü): data merkez pano \"quadro reported\" ↔ S2 \"non è un quadro riportato\"; S2 paragrafı atıfsız → Ginzburg 2008 + görsel teyit.",
+  "Hayvan (D2/C025): data \"keçiler/beyaz keçiler\" ↔ S2 \"arieti\" (koç) / S5 \"goats\"; \"beyaz\" metinlerde yok (E3/C050).",
+  "Binek (D3/C026): data \"eşek\" ↔ S2 \"mulo\" (katır) / S5 \"ass\" (eşek).",
+  "Görsel ayrıntılar (E3/C050): data putto taç/tefli menad/koşan çocuk/altın sarısı örtü/çatlaklar doğrulanmadı; görsel İNCELENMEDİ; S8 1994 deneme şeridi anlatır (C011).",
+  "Üstünlük (E6/C051): data \"Sistina'dan sonra Roma'nın en etkili tavan resmi\" erişilen kaynaklarda yok; S7 \"più perfetta conclusione\", S5 \"formative influence\".",
+  "İkonografi ekleri (E11/C052): data/ikonografi.json \"Aşk Sanatı; Heroides; Catullus\" doğrulanmadı; Metamorphoses A (C008).",
+  "WD anomalisi (D6/C063): P571 normal=1586 (DBpedia) desteksiz; preferred 1597–1608 refsiz.",
+  "eserler_onbellek: yil:2000 ↔ tarih \"1597–1601\"; kaynaklar [\"kurs\",\"wikidata\"] → birincil/akademik yok; S6/S7+S2 önerilir (uygulanmadı).",
+  "eser_turleri: \"resim\" → teknik \"fresk\" hassaslaştırılabilir (WD P186=fresco); not.",
+  "Küçük fark: itwiki oda genişliği ~6 m ↔ S7/S8 7 m; kesinleştirilmedi (C009 not).",
+  "Görsel (C055): İNCELENMEDİ; GZ TASLAK; insan editör görsel teyidi zorunlu."
+ ]
+}

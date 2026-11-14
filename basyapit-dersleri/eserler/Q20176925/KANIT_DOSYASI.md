@@ -1,0 +1,119 @@
+# KANIT DOSYASI — Q20176925 · Lavta Çalan (The Lute Player / Suonatrice di liuto) · Orazio Gentileschi
+
+**Tarih:** 14 Kasım 2026 · **Parti:** 3 · **Standart:** `../../AKADEMIK_STANDART.md`
+**Durum:** İnsan incelemesi bekliyor.
+**Araştırma brief'i:** `.qwen/tmp/parti3/Q20176925-brief.md` (kaynak-arastirma agent; ham cache `.qwen/tmp/parti3/Q20176925-*`).
+
+---
+
+## 0. Yöntem ve kaynak hiyerarşisi
+
+Eser bir tuvaldir (National Gallery of Art, Washington). **Birincil NGA canlı sayfası 403 (Cloudflare challenge; hem eski S5 hem güncel S7 URL) → Wayback arşivleri AÇILDI: S6 (2017-03-09) + S8 (2025-01-09), her ikisi de tam kayıt (200).** Künye (c. 1612/1620, oil on canvas, 143.5×129 cm, 1962.8.1, Ailsa Mellon Bruce Fund), provenance (Cavazza → 1697 Liechtenstein → 1962 NGA), atıf tarihi ("always as Caravaggio"; Voss 1923 "tentatively as by Artemisia"), Overview, Image Description (yalnız 2025), Exhibition History, Technical Summary ve Bibliography **A** (arşiv tarihi beyan edilerek). Met MetPublications kaydı S12 (Wayback 2016-01-16) yayıncı kaydı olarak **A** (C&M kitabının künyesi, sergi coğrafyası, Orazio/Artemisia karakterizasyonu, katalog dönemlendirmesi); kitap METNİNE erişilmedi → en/it wiki'nin C&M'ye dayanan iddiaları **B** (atıf zinciri). NGA sistematik katalog PDF'i (S14, ~82 MB) İNDİRİLMEDİ → içerik doğrulanmadı; madde s. 96–101 bilgisi NGA sayfasının bibliyografyasından (A, kayıt).
+
+**Görsel İNCELENMEDİ** (vision kotası ana oturumda); yalnızca Commons metadata + lisans + çözünürlük çekildi (S9). Kompozisyon anlatımı "kaynakların betimlediği" formülüyle NGA metnine dayanır; **GZ TASLAK**.
+
+**Yedi ihtilaf D (C030–C036):** tarih aralığı (enwiki kendi içinde tutarsız), itwiki boyutu, akort/burgu jesti (data hatası), cinsiyet (data hatası), sergilenme durumu (zamansal + canlı doğrulanamadı), Caravaggio Hermitage tarihi, C&M yayın yılı. **Yedi belirsizlik E (C023–C026, C037–C039):** alegori/Harmonia, optik illüzyon, burgulara erişememe, 19 tel (dördü refsiz/doğrulanamaz); data'nın doğrulanmamış görsel ayrıntıları; görsel inceleme yokluğu + oran farkı; erişilemeyen kaynaklar. Brief'in D/E işaretleri ve ihtiyat sözcükleri (circa, may, presumably, possibly, most likely, probably, tentatively) AYNEN korunmuştur.
+
+## 1. Kaynak envanteri
+
+| ID | Kurum | Belge | URL | Erişim (14 Kas 2026) | Tür |
+|---|---|---|---|---|---|
+| S1 | Wikidata | EntityData Q20176925 | https://www.wikidata.org/wiki/Special:EntityData/Q20176925.json | 200 | yardımcı |
+| S2 | Wikidata | wbgetentities etiketler (14 QID) | https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q367360\|Q214867\|… | 429→backoff→200 | yardımcı |
+| S3 | Wikipedia (en) | "The Lute Player (Orazio Gentileschi)" wikitext | https://en.wikipedia.org/w/api.php?action=parse&page=The%20Lute%20Player%20(Orazio%20Gentileschi)&prop=wikitext&formatversion=2&redirects=1 | 429×3→backoff→200 | ikincil |
+| S4 | Wikipedia (it) | "Suonatrice di liuto (Orazio Gentileschi)" wikitext | https://it.wikipedia.org/w/api.php?action=parse&page=Suonatrice%20di%20liuto%20(Orazio%20Gentileschi)&prop=wikitext&… | 429→backoff→200 | ikincil |
+| S5 | NGA (canlı, eski URL) | art-object-page.46434 (legacy) | http://www.nga.gov/content/ngaweb/Collection/art-object-page.46434.html | 403 Cloudflare challenge (cf-mitigated: challenge) — ERİŞİLEMEDİ | birincil |
+| S6 | NGA (Wayback) | aynı sayfa, arşiv 2017-03-09 | http://web.archive.org/web/20170309103749/http://www.nga.gov:80/content/ngaweb/Collection/art-object-page.46434.html | 200 (arşiv 2017-03-09); yazım turunda yeniden açıldı (200) | birincil (arşiv) |
+| S7 | NGA (canlı, güncel URL) | art-object-page.46434 | https://www.nga.gov/collection/art-object-page.46434.html | 403 Cloudflare challenge — ERİŞİLEMEDİ | birincil |
+| S8 | NGA (Wayback) | aynı sayfa, arşiv 2025-01-09 (CDX'teki en yeni 200) | http://web.archive.org/web/20250109082451/https://www.nga.gov/collection/art-object-page.46434.html | 200 (arşiv 2025-01-09); yazım turunda yeniden açıldı (200) | birincil (arşiv) |
+| S9 | Commons | imageinfo: url\|size\|extmetadata | https://commons.wikimedia.org/w/api.php?action=query&titles=File:Orazio%20Gentileschi%20-%20Il%20suonatore%20di%20liuto%20(National%20Gallery%20of%20Art).jpg&prop=imageinfo&iiprop=url\|size\|extmetadata | 429→backoff→200 | görsel (metadata) |
+| S10 | Met (canlı) | MetPublications: Orazio and Artemisia Gentileschi | https://www.metmuseum.org/research/metpublications/Orazio_and_Artemisia_Gentileschi | 429 ×2 — ERİŞİLEMEDİ | birincil (yayıncı kaydı) |
+| S11 | Met (Wayback 2024-05-06) | aynı sayfa | http://web.archive.org/web/20240506121914/https://www.metmuseum.org/research/metpublications/Orazio_and_Artemisia_Gentileschi | 200 ama gövde Incapsula engel sayfası — İÇERİK YOK | birincil (arşiv, başarısız) |
+| S12 | Met (Wayback 2016-01-16) | aynı sayfa, tam kayıt | http://web.archive.org/web/20160116000343/http://www.metmuseum.org/research/metpublications/Orazio_and_Artemisia_Gentileschi | 200 (arşiv 2016-01-16) | birincil (yayıncı kaydı, arşiv) |
+| S13 | Internet Archive | availability + CDX API | http://archive.org/wayback/available?url=… ; http://web.archive.org/cdx/search/cdx?url=… | 200 | yardımcı |
+| S14 | NGA | sistematik katalog PDF (1996) | https://www.nga.gov/content/dam/ngaweb/research/publications/pdfs/italian-paintings-17th-and-18th-centuries.pdf · Wayback: http://web.archive.org/web/20250330191952/https://www.nga.gov/content/dam/ngaweb/research/publications/pdfs/italian-paintings-17th-and-18th-centuries.pdf | HEAD 200; Content-Length 82.071.115 bayt (~82 MB); İNDİRİLMEDİ — içerik doğrulanmadı | birincil |
+| S15 | Proje | data/*.json (salt-okunur tarama) | yerel | — | yardımcı (proje verisi) |
+
+**S6/S8 (NGA) doğrulanan:** "The Lute Player, c. 1612/1620"; "Gentileschi, Orazio / Florentine, 1563 - 1639"; "oil on canvas"; "overall: 143.5 x 129 cm (56 1/2 x 50 13/16 in.)"; "Ailsa Mellon Bruce Fund"; "1962.8.1"; 2025: "West Building, Main Floor — Gallery 29" + Image Description; 2017: "Not on View" (Image Description yok). Overview + Provenance + Exhibition History + Technical Summary + Bibliography iki kopyada büyük ölçüde aynı; 2025 kopyası provenance'a "by descent ... to Prince Franz Josef II [1906-1989]" ayrıntısını ve bibliyografyaya Wheelock 2021 maddesini ekler.
+**S3/S4 (wiki):** enwiki infobox "c. 1612–1626" ↔ giriş "c. 1612–1615" (iç tutarsızlık); itwiki "100×74" (hatalı boyut), "diciannove corde" (19 tel, NGA ref'li ama NGA metninde yok); alegori/Harmonia + optik illüzyon + "burgulara erişemez" satır içi refsiz; C&M 2002 p. VII/113/114 atıf zinciri; Caravaggio Hermitage caption en "c. 1600" ↔ it "1595-1596".
+**S12 (Met 2016):** Christiansen & Mann, "(2001)", "This title is out of print.", "Book of the Year Award (ForeWord) in Art (2001)"; sergi Roma–New York–Saint Louis; Orazio "one of the first and certainly the most individual of Caravaggio's followers", "ever more refined and elegant"; Artemisia "rhetorical form of dramatic presentation"; katalog bölüm başlıkları: "Orazio in Rome: 1599–1621", "Orazio in Genoa: 1621–24", "Orazio in Paris: 1624–26", "Orazio in London: 1626–39".
+**Erişilemeyen:** NGA canlı (S5/S7, 403), Met canlı (S10, 429), Met 2024 arşivi (S11, Incapsula), sistematik katalog PDF (S14, boyut/kota), C&M kitap metni ("out of print"; PDF yok), Getty/NGL/ArtIC arka plan ref'leri (çekilmedi; yalnız listelendi).
+
+## 2. İddia envanteri (A–E)
+
+**C001** — Eserin adı The Lute Player; İtalyanca Suonatrice di liuto (dişi form). Aynı adlı Met eseri Valentin de Boulogne'a aittir (Q19911949, Met 439933) — karıştırılmamalı (proje verisi notu). **A.** S6, S8, S1, S4, S15. "The Lute Player, c. 1612/1620"; WD P1476 "Suonatrice di liuto".
+**C002** — Orazio Gentileschi (1563–1639); NGA okul etiketi "Florentine, 1563 - 1639". **A.** S6, S8, S1.
+**C003** — Tarih "c. 1612/1620" (yaklaşık; kesin değil). WD P571=1612 (precision 7) + P1319=1612 / P1326=1620 (yıl) + P1480=circa (Q5727902). **A.** S6, S8, S1. (→ C030 D)
+**C004** — Yağlıboya, tuval (oil on canvas); WD P186 oil paint + canvas (P518=painting support). **A.** S6, S8, S1.
+**C005** — Boyut overall 143,5 × 129 cm (56 1/2 × 50 13/16 in.). **A.** S6, S8, S1, S3. (→ C031 D: itwiki 100×74)
+**C006** — NGA Washington, D.C.; 2025 arşivi "West Building, Main Floor — Gallery 29"; 2017 arşivi "Not on View". **A.** S8, S6. (→ C034 D)
+**C007** — Envanter 1962.8.1; Ailsa Mellon Bruce Fund; "purchased 1962 through (Feilchenfeldt, Zurich) by NGA". **A.** S6, S8, S1.
+**C008** — Provenance: Girolamo Cavazza [d. 1717], Bologna → 3 June 1697 (Marcantonio Franceschini) for Prince Johann Adam Andreas of Liechtenstein [1657-1712], Vienna → Liechtenstein prensleri (Vienna, sonra Vaduz; 2025: "by descent ... to Prince Franz Josef II [1906-1989]") → 1962 NGA. 1697 satış faturası imzası "now been deciphered to read Girolamo Cavazza"; Franceschini'nin May 1694–Dec 1698 mektupları kayıp → işlemler tam izlenemiyor. **A.** S6, S8.
+**C009** — Atıf tarihi: Liechtenstein kayıtlarında "always as Caravaggio" (Fanti 1767 no. 452; Dallinger/Lucchini 1780 no. 579; Waagen 1866; Falke 1873/1885; Kronfeld 1927; Strohmer 1943); bibliyografyada Bode 1896, Longhi 1914–1916 vb. "as by Caravaggio"; Marangoni 1922 "as not by Caravaggio"; Voss 1923 "tentatively as by Artemisia Gentileschi"; bugün NGA Orazio Gentileschi'ye atfeder. **A.** S6, S8.
+**C010** — Konu: genç kadın ("young woman"), arkadan/üç çeyrek dönük ("seen, unexpectedly, from the back, turned three–quarters away from the spectator"), profil; kulağı lavtanın armut biçimli gövdesine yakın, bir notayı dinliyor ("listens intently to a note as it resonates in the pear–shaped body"); masa ayakları ve kadının ayak bilekleri alt kenarda kesilir; arka plan koyu toprak kahvesi. **A.** S8 (Overview + Image Description), S6.
+**C011** — Sol el lavtanın SAPINI yukarıda tutuyor, parmaklar tellere basıyor (burgu çevirme DEĞİL): "She holds the neck of the lute up high with her left hand, her fingers pressing the strings, so she brings the rounded body of the instrument up to her ear." **A.** S8 (Image Description). (→ C032 D)
+**C012** — Akort etme OLASILIĞI (kesin değil): "She MAY be tuning her lute in anticipation of the concert promised by the assortment of recorders, a cornetto and violin, and the song books lying open on the table before her." **A (hedged; "may" aynen).** S6, S8.
+**C013** — Masada: blond wood keman (sapı izleyiciye dönük) + yay, en az üç ahşap recorder, cornetto (Overview), açık iki nota kitabı (biri sayfaları masadan sarkacak şekilde açık, diğeri recorder ile açık tutuluyor). **A.** S8, S6.
+**C014** — Kumaş ustalığı: "the sharp gold of the dress, the dull gleam of the scarlet velvet on the stool, and the matte softness of the dark–green cloth"; "voluminous, bright white blouse"; "Dutch painters ... improved their craft by studying Orazio's works". **A.** S6, S8.
+**C015** — Sol üst köşede çapraz ışık huzmesi; "PRESUMABLY from a high window in the wall out of our view" (varsayım, ihtiyat korunur). Technical Summary ayrıca "shaft of light at the bottom left"ten söz eder (overpaint bağlamında). **A (hedged).** S8. (→ C037 E: data ihtiyatı düşürmüş)
+**C016** — Orazio, Caravaggio'nun Roma genre sahnelerinden etkilenen en erken/yetenekli ressamlardan; "Here, he MUST have had in mind Caravaggio's famous picture on the same theme" (çıkarım, ihtiyat korunur). **A (hedged).** S6, S8; S3.
+**C017** — Caravaggio ile 1600'ler başı Roma'da temas; önde gelen Caravaggisti; ama yumuşak, soluk tonlarda kişisel lirik üslup. **B.** S3, S4 → Christiansen & Mann 2002, p. VII (harvnb; kitap metnine erişilmedi).
+**C018** — Gentileschi'nin tablosu Giuseppe Crespi'nin c. 1700–1705 "Woman Playing a Lute"una ilham verdi. **B.** S3 → C&M 2002 p. 113 (atıf zinciri; metne erişilmedi).
+**C019** — C&M: Gentileschi, ana akım Caravaggizm'den uzaklaşırken Caravaggio'nun erken Giorgione'sque dönemine (c. 1594–1596 Penitent Magdalene) döndü. **B.** S3 → C&M 2002 p. 114 (atıf zinciri; metne erişilmedi).
+**C020** — Teknik özet (ihtiyatlar AYNEN): destek, astardan önce yatay dikilmiş 3 parça orta ağırlıkta herringbone-twill kumaş; koyu grimsi-kahve astar; ince koyu underpaint "POSSIBLY throughout the composition"; akışkan opak katmanlar + glaze'ler; sağ diz tümüyle ince yarı saydam glaze; kalın boya wet-into-wet pastose; saç detayları kuru boya sürüklenerek; X-ray: yüzün sol profili + kemanın sağ ses deliği kaydırılmış; sol kenarda önceki kullanımdan kalma kumaş parçası "MOST LIKELY", masa örtüsü doğrudan üzerine boyanmış; XRF: sarı draperi "Naples yellow and lead white and POSSIBLY lead-tin yellow", kırmızı "MAY contain vermilion and lead white and POSSIBLY lead red"; sağa sonradan eklenen ~10 cm dikey şerit (butt-joined); cusping yalnız üst/alt/sağ → sol kenar trimlenmiş OLABİLİR ("suggesting"); vernik hafif sararmış; boya yer yer aşınmış; sol alt ışık huzmesi + ek şeritlerde overpaint sararmış; arka plan ışık huzmesi "MAY also have been heavily reinforced"; relining + 1963 restorasyon "PROBABLY by Frank Sullivan". **A (hedged).** S6, S8 (Technical Summary).
+**C021** — Sergi tarihi: 1911 Floransa (Palazzo Vecchio, no. 11, Caravaggio olarak); 1948 Luzern (no. 47); 1951 Londra NG (no. 31); 1969 NGA "In Memoriam, Ailsa Mellon Bruce"; 1979 SSCB turu (Hermitage/Puşkin/Kiev, Armand Hammer Foundation); 1990 Met "A Caravaggio Rediscovered: The Lute Player" no. 15; 1997 Prado "Los Cinco Sentidos y el Arte" no. V.7; 1999 NGA broşür no. 8; 2001–02 "Orazio and Artemisia Gentileschi" (Roma Palazzo Venezia/Met/Saint Louis) no. 22; 2010 Art Institute of Chicago ödünç; 2016–17 Cleveland 100. yıl. **A.** S6, S8.
+**C022** — NGA sistematik katalog maddesi: De Grazia & Garberson 1996, Italian Paintings of the Seventeenth and Eighteenth Centuries, s. 96–101 (color repro. 99); NGA sayfası ücretsiz PDF linki verir; bibliyografya ayrıca Wheelock 2021 (Artibus et historiae 42/83, "In Pursuit of Masterpieces: The NGA's Acquisitions from the Prince of Liechtenstein") ve Miller 1991 vb. listeler — KAYITLAR erişildi, METİNLER erişilmedi. **A (kayıt).** S8, S6, S14.
+**C023** — İşitme alegorisi / Harmonia (uyum ve concordia tanrıçası) okuması; genre mi portre mi belirsiz. en/it wiki'de satır içi ref YOK; erişilen NGA metinlerinde yok. **E.** S3, S4. (belirsiz)
+**C024** — Optik illüzyon: kemanın sapı izleyici nereden bakarsa baksın ona dönük görünür. en/it wiki refsiz; erişilen NGA metinlerinde yok. **E.** S3, S4. (belirsiz)
+**C025** — "Bu pozisyonda siyah akort burgularına erişemez" (enwiki). Refsiz; erişilen NGA metinlerinde yok; D003 ile bağlantılı. **E.** S3. (belirsiz)
+**C026** — Lavta 19 telli. itwiki "strumento a diciannove corde" (NGA ref'li ama 2017/2025 NGA metinlerinde geçmiyor); enwiki bozuk ifade "the nineteen [[stringed instrument]]". Doğrulanamadı. **E.** S4, S3. (belirsiz)
+**C027** — Eser ve görsel kamu malı: WD P6216=Q19652 (P1001=Q60332278 "100 years pma or shorter", P459=Q29940705); Commons PD-Art (PD-old-100), UsageTerms "Public domain", AttributionRequired=false; NGA "This image is in the public domain. You can copy, modify and distribute this image, even for commercial purposes." + Open Access. **A.** S1, S9, S8.
+**C028** — WD P180 depicts: lutenist (Q21166956), lute (Q180733), violin (Q8355) — refsiz WD iddiası. **C.** S1. (yorum)
+**C029** — Proje TR adı "Lavta Çalan"; WD'de Türkçe label yok. **C.** S15 (data/eser_adlari_tr.json), S1. (yorum)
+**C030** — TARİH İHTİLAFI (D001): NGA "c. 1612/1620" ↔ enwiki infobox "c. 1612–1626" ↔ enwiki giriş + Commons ImageDescription "c. 1612–1615" ↔ itwiki "1612-1620" ↔ WD 1612–1620 + circa. enwiki KENDİ İÇİNDE tutarsız. Prompttaki "c. 1610–1620" hiçbir erişilen kaynakta yok (E009); data tek yıl "1612". A esas: NGA. **D.** S6, S8, S3, S4, S1, S9, S15. (tartışma)
+**C031** — BOYUT İHTİLAFI (D002): itwiki infobox "altezza=100, larghezza=74" ↔ NGA/enwiki/WD 143.5×129. itwiki hatalı; A esas. **D.** S4, S6, S8, S3, S1. (tartışma)
+**C032** — AKORT/BURGU JESTİ (D003): data (basyapitlar "Sol eliyle lavtanın burgularını çeviriyor"; yuruyus + eser_ayrintilari "burgularını çeviriyor. Yani çalmıyor, akort ediyor" — KESİN) ↔ NGA 2025 "fingers pressing the strings" (C011) ↔ NGA Overview "She MAY be tuning" (C012) ↔ enwiki "cannot reach ... tuning pegs" (C025, refsiz). data'nın kesin burgu-çevirme iddiası A ile çelişiyor. **D.** S15, S8, S6, S3. (tartışma)
+**C033** — CİNSİYET (D004): data/eser_notlari "Genç bir ERKEK lavta çalar" ↔ NGA "young woman" (A), en/it wiki "young woman"/"giovane donna", WD P1476 "Suonatrice" (dişi). data hatası. **D.** S15, S8, S6, S3, S4, S1. (tartışma)
+**C034** — SERGİLENME DURUMU (D005, zamansal): 2017 arşivi "Not on View" ↔ 2025 arşivi "Gallery 29"; çelişki değil durum değişikliği; canlı sayfa 403 olduğundan güncel durum doğrulanamadı. Hangi arşive dayanıldığı beyan edilir. **D.** S6, S8, S5, S7. (tartışma)
+**C035** — ETKİ KAYNAĞI TARİHİ (D006, yan konu): Caravaggio Hermitage "Lute Player" enwiki "c. 1600" ↔ itwiki caption "1595-1596". Bu eser değil, etkilenilen eser; ana ders iddiası olarak kullanılmaz. **D.** S3, S4. (tartışma)
+**C036** — C&M YAYIN YILI (D007): Met kaydı (S12) "(2001)" + "This title is out of print." ↔ en/it wiki atıf 2002; sergi turu 2001–2002 (NGA S8). Bibliyografik yıl nüansı; iki form da beyan edilir. **D.** S12, S3, S4, S8. (tartışma)
+**C037** — DATA'NIN DOĞRULANMAMIŞ GÖRSEL AYRINTILARI (E008/E015): data "Işık, görünmeyen yüksek bir pencereden giriyor" (NGA "presumably" ihtiyatı düşürülmüş); "Açık nota kitabı ... satırlar ve notalar seçilebilir" + "Kemanın cilalı tahtası ışığı yakalar" — NGA metinlerinde yok, görsel inceleme yapılmadı. **E.** S15, S8. (belirsiz)
+**C038** — GÖRSEL İNCELENMEDİ (vision kotası ana oturumda); Commons 3385×4000 px PD-Art; oran farkları: yerel 0.87 ↔ Commons 3385/4000=0.846 ↔ tablo 129/143.5=0.899 (kırpma/sürüm farkı olabilir; E013). GZ TASLAK; kompozisyon "kaynakların betimlediği". **E.** S9, S15. (belirsiz)
+**C039** — ERİŞİLEMEYEN/DOĞRULANAMAYAN KALEMLER: NGA canlı 403 (S5/S7); Met canlı 429 (S10); Met 2024 arşivi Incapsula (S11); NGA sistematik katalog PDF ~82 MB indirilmedi (S14); C&M kitap metni "out of print", erişilmedi; Getty/NGL/ArtIC ref'leri çekilmedi; data "CC0" etiketi ↔ NGA "public domain" eşdeğerliği doğrulanmadı (E012). Kaynakçada anıldı, metne erişilmedi. **E.** S5, S7, S10, S11, S14, S15. (belirsiz)
+**C040** — MET YAYINCI KAYDI (S12, Wayback 2016-01-16): Christiansen & Mann, "Orazio and Artemisia Gentileschi" (2001), "This title is out of print.", "Book of the Year Award (ForeWord) in Art (2001)"; sergi Roma–New York–Saint Louis; Orazio "one of the first and certainly the most individual of Caravaggio's followers", sanatı "ever more refined and elegant"; Artemisia "a rhetorical form of dramatic presentation that is the basis of Baroque painting". **A (yayıncı kaydı, arşiv).** S12. (→ C036 D: yıl nüansı)
+**C041** — MET KATALOG DÖNEMLENDİRMESİ (S12 içindekiler): "Orazio in Rome: 1599–1621"; "Orazio in Genoa: 1621–24"; "Orazio in Paris: 1624–26"; "Orazio in London: 1626–39". **A (yayıncı kaydı, arşiv).** S12.
+**C042** — ESTETİK OKUMA (yorum): arkadan dönük figür ve dinleme jesti, izleyiciyi yüz yerine sese ortak eder; resim müziği "çalma"dan çok "dikkat ve beklenti" anı olarak temsil eder; Caravaggio'nun dramı yerine sessiz, içe dönük lirik anlatım — gündelik anın büyük sanat konusuna yükseltilmesi. A düzeyi betimlerden (C010/C016/C017) türetilmiş yorum; olgu değildir. **C.** S6, S8. (yorum)
+
+**Sayım:** 42 iddia · A=22 · B=3 · C=3 · D=7 · E=7.
+
+## 3. Görsel doğrulama kaydı (Kural 6)
+
+- S9 Commons metadata: `File:Orazio Gentileschi - Il suonatore di liuto (National Gallery of Art).jpg` · 3385 × 4000 px · 3.509.407 bayt · PD-Art (PD-old-100), UsageTerms "Public domain", Copyrighted=False, AttributionRequired=false, Restrictions boş · Credit: "National Gallery of Art, Washington, D. C., online collection" → güncel NGA URL'si buradan alındı · yükleme 2016-05-25 · Featured pictures en+ar.
+- **Görsel İNCELENMEDİ (C038 E):** vision kotası ana oturumda kullanılıyor; bu oturumda yalnızca metadata/lisans/çözünürlük. C011/C015/C037 ve oran farkı (E013) görsel teyit bekler. **GZ TASLAK** (gen.py gz_taslak otomatik).
+- Metadata notları (E011): Commons dosya adı ERİL form "Il suonatore di liuto" ↔ eser başlığı dişi "Suonatrice"; Commons Artist alanı "Unknown author" (fotoğrafçı bilinmiyor; ressam Orazio). ImageDescription "c. 1612–1615" (enwiki girişini yansıtır; C030 D).
+- Görsel projeye kopyalanmadı; derslerde URL + lisans + kaynak referans. NGA IIIF URL'si data/eserler_onbellek.json'dan alındı (doğrulanmadı).
+
+## 4. Kelime/süre sayımı
+
+| Seviye | Hedef | Ölçülen | Süre |
+|---|---|---|---|
+| Başlangıç | 400–500 | 414 | 3 dk |
+| Orta | 1300–1600 | 1316 | 10 dk |
+| İleri | 2600–3200 | 2660 | 20 dk |
+
+dogrula.py (venv-dogrula, jsonschema Draft 2020-12 AKTİF): Q20176925 için **0 hata / 0 uyarı** (ilk turdaki 5 heuristic "etiketsiz olgu" uyarısı kısaltma yeniden yazımıyla giderildi: s.→sayfa, p.→sayfa, K. Schönbauer→Schönbauer, 100. yıl→yüzyıl sergisi). CJK: 0. İddia 42 (A22/B3/C3/D7/E7); CS10 DY5 AU5 GZ5 TK5; quiz kanıtları yalnız A/B. Genel dogrula çıktısındaki öteki eser hataları paralel partilerin devam eden işleridir; bu parti yalnız Q20176925'e yazdı. Ayrıntı: KALITE_KONTROL.md.
+
+## 5. Veri notları (data/ dokunulmadı; insan onayına sunulur)
+
+1. **Cinsiyet (D004, C033):** data/eser_notlari.json "Genç bir ERKEK lavta çalar" ↔ NGA "young woman" + dişi başlık "Suonatrice". data hatası; düzeltme önerisi: "Genç bir kadın lavta çalıyor / dinliyor".
+2. **Akort/burgu (D003, C032):** basyapitlar "Sol eliyle lavtanın burgularını çeviriyor" + "Kadın çalmıyor, akort ediyor" (KESİN) ↔ NGA 2025 "fingers pressing the strings" + Overview "She MAY be tuning". Öneri: "Sol eli sapı tutuyor, parmakları tellerde; konser öncesi akort ediyor olabilir (NGA'nın ihtiyatlı formülü)". yuruyus + eser_ayrintilari aynı düzeltme.
+3. **Tarih (D001, C030):** basyapitlar tarih "1612" tek yıl; özet "yaklaşık 1612–1620" ✔; ders_kaynaklari yil 1612. NGA "c. 1612/1620" esas; enwiki iç tutarsızlığı (1612–1626 / 1612–1615) not edildi. Prompttaki "c. 1610–1620" kaynaklarda yok (E009).
+4. **Işık (E008, C037):** data "Işık, görünmeyen yüksek bir pencereden giriyor" kesin ↔ NGA "presumably". Öneri: "varsayılan" ihtiyatı geri eklenmeli.
+5. **Doğrulanmamış ayrıntılar (E015, C037):** "nota kitabı satırları/notaları seçilebilir", "kemanın cilalı tahtası ışığı yakalar" — NGA metninde yok; görsel inceleme bekler.
+6. **Lisans etiketi (E012):** eserler_onbellek "l":"CC0" ↔ NGA sayfası "public domain" + Open Access (sayfada "CC0" geçmiyor); Commons PD-Art. Eşdeğer uygulama varsayımı doğrulanmadı.
+7. **Adlandırma (E011):** Commons dosya adı eril "Il suonatore" ↔ başlık dişi "Suonatrice"; Artist "Unknown author" (fotoğrafçı). WD'de tr label yok; proje adı "Lavta Çalan" (C029).
+8. **Okul etiketi vs doğum yeri (E014):** NGA "Florentine" ↔ data/biyografiler "Pisa'da doğdu" (enwiki'ye atıflı). Okul etiketi ≠ doğum yeri; brief'te çözülmedi; ders doğum yeri iddiası kurmaz.
+9. **Oran farkı (E013):** gorsel_oranlari 0.87 ↔ Commons 0.846 ↔ tablo 0.899; kırpma/sürüm farkı olabilir; ana oturumda görsel kontrolü gerekir. gorsel_odak [73,26]; yerel eşleme `nga:https://api.nga.gov/iiif/adb08b6e-f3db-4d07-b538-7c704548adb9 → d0b69991aa09b052`.
+10. **Aynı adlı eser karışıklığı:** muze_numaralari.json'daki "The Lute Player" (satır ~314) Valentin de Boulogne'a ait (Q19911949, Met 439933) — bu eser DEĞİL. Q20176925 için muze_numaralari kaydı yok (doğru; eser NGA'da).
+11. **Tür etiketi:** eser_konulari {"t":"gundelik"} genre okumasıyla uyumlu ama portre/alegori okumaları da var (C023 E); kesin tür etiketi ihtiyatla kullanılmalı.
+12. **WD hassasiyet tuhaflığı (E010):** P571 ana değeri 1612, precision=7 (yüzyıl); yıl hassasiyetli P1319/P1326 aralık niteleyicileri + P1480=circa esas alındı; aynen kaydedildi.

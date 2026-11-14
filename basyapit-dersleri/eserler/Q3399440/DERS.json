@@ -1,0 +1,1141 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3399440",
+ "sanatci_id": "hyacinthe-rigaud",
+ "baslik": "XIV. Louis'nin Portresi",
+ "ozgun_baslik": "Portrait de Louis XIV en costume de sacre",
+ "kunye": {
+  "sanatci": "Hyacinthe Rigaud (dit aussi Rigau y Ros)",
+  "sanatci_yasam": "1659–1743 (Perpignan – Paris)",
+  "tarih": "1701",
+  "tarih_belirsizlik": "Louvre \"1e quart du XVIIIe siècle (1701)\"; WD P571 precision 9 (yıl), P1480 yok; asıl imzalı-tarihli 1701",
+  "teknik": "Yağlıboya, tuval (huile sur toile)",
+  "boyut_cm": {
+   "yukseklik": 277,
+   "genislik": 194
+  },
+  "muze": "Musée du Louvre, Paris (Département des Peintures)",
+  "envanter": "INV 7492 (principal); MR 2391 (autre)",
+  "edinim": "Collection de Louis XIV; Devrim'de müsadere; Louvre'a transfer 2 Mayıs 1814 (A.M.N., *P12, fol. 49)",
+  "konum": "Louvre kaydı \"non exposé\" (2026); WD/frwiki \"salle 602 Sully\" (ihtilaflı, C038)",
+  "telif_durumu": "Kamu malı (Rigaud ö. 1743; 100+ yıl pma); Commons PD-Art (credit Gallerix)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Louis_XIV_of_France_in_Coronation_Robes_(by_Hyacinthe_Rigaud)_-_Louvre_Museum.jpg",
+  "kaynak": "Wikimedia Commons (credit: Gallerix; Louvre değil)",
+  "lisans": "Public domain (PD-Art / PD-old-100-expired; CC-PD-Mark)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (S9); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "2883 × 4018 px; 2.732.885 bayt",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon S6/S16/wiki metinlerinin betiminden; GZ TASLAK; görsel teyit insan editöre (C059); SDC copyright status kategorileri eksik; Versailles dosyası (S10) ayrıca metadata only"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 427
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1349
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2765
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kaynağın-iç-çelişkileri"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-sipariş-ödeme-yerleştirme"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-atölye-ekonomisi-ve-orijinal-sorunu"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-iki-beden-yaşlı-yüz-genç-bacaklar"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-regalia-nesnelerin-itirazı"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#3-atölye-ekonomisi-ve-orijinal-sorunu"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-prado-varyantı-ve-kopyalar"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Louvre birincil kaydıyla künyeyi (1701, INV 7492, 277 × 194) doğrular; konum ihtilafını (non exposé ↔ salle 602) yönetir.",
+  "Sipariş zincirini (Philippe d'Anjou → V. Felipe) ve İspanya kopyasının akıbetini kaynak eleştirisiyle açıklar.",
+  "Regalia ikonografisini (cenaze tacı, ters asa, fildişi adalet eli) ve mutlakiyet temsilini analiz eder.",
+  "Atölye üretim modelini ve yüz desteği tekniği (marouflé ↔ cousue) ihtilafını değerlendirir.",
+  "Prado martial varyantını ve Versailles replikasını asıldan ayırır; data/ uyuşmazlıklarını raporlar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Regalia (ornements royaux)",
+   "tanim": "Taç giyme töreni nesneleri: taç, asa, adalet eli, kılıç, mahmuz; Saint-Denis'te saklanır, Reims'de kullanılırdı; PDF \"regalia\" adını \"à tort\" sayar.",
+   "kanit": [
+    "C065",
+    "C007"
+   ]
+  },
+  {
+   "ad": "Contre-plongée",
+   "tanim": "Başa aşağıdan bakış; figürü yükselten perspektif. Ayaklar vue plongeante (yukarıdan) görünür.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "Marouflage",
+   "tanim": "Küçük tuval parçasını ana tuvale yapıştırma; Rigaud'nun yüz desteği yöntemi (dikme alternatifi ihtilaflı).",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "ad": "Rhingrave",
+   "tanim": "Sedan brokarından geniş, bol kesimli pantolon; saray kıyafetinin parçası.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "Portrait d'apparat",
+   "tanim": "Törensel resmî portre; bu eser XIX. yüzyıla dek model oldu.",
+   "kanit": [
+    "C032",
+    "C018"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sipariş: Louis XIV, Rigaud'ya önce Philippe d'Anjou'yu (V. Felipe) resmettirdi (1700); Felipe aynı elden büyükbabasının portresini istedi; kral orijinali beğenip sakladı, İspanya'ya aynı boyda kopya sipariş etti (Mercure de France 1702; van Hulst 1716 / Bély 2015 wiki üzerinden). Prado anlatısı farklı → C046.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Pozlar: Mart 1701 – Ocak 1702, Maintenon'un dairesinde, kral gutlu; yüz canlı modelden (Dangeau 1856, Lavallée 1866 wiki üzerinden; Felipe V 3 Eylül 1703 mektubu). WD P1071 yaratım yeri Versailles (refsiz).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16",
+    "S3",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "1701 ödeme kaydı var (Livre de raison / Bâtiments); tutar ve atıf kaynaklarda farklı → C041.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Bâtiments ödemesi 16 Eylül 1702: iki büyük portre + küçük eskiz + İspanya kralı portresi için 10.000 livres (Guiffrey 1896 IV s.827, wiki üzerinden).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Tam boy, ayakta, sola üç çeyrek; baş contre-plongée, ayaklar vue plongeante; dikeyler (sütun, kral, taht) + piramidal kompozisyon; el kalçada, dirsek dışarı (güç işareti).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Kral, halı kaplı sekinin ÖNÜNDE durur, üstünde DEĞİL (\"et non sur l'estrade\"); taht seki üstünde, mor ipek baldaken altında; baldaken altın işlemeli, püsküllü kordonlu; taht mavi zambaklı kumaşla kaplı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Regalia taşınmaz: taç + adalet eli mavi zambaklı örtülü tabure/yastık üstünde; kral taçsız.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Taç, Charlemagne'ın taç giyme tacı değil; Fransız krallarının cenazeleri için yapılmış hafif, taşsız vermeil taç (frwiki \"peut-être\" → E003; Louvre+PDF kesin).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Asa: Henri IV'ün KISA asası, SAĞ elde TERS tutulur, baston/komuta batonu gibi dayanılır; zambak ucu yastığa dayanır. Anlamı → C053.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Adalet eli (main de justice): fildişi; Henri IV'e ait; tacın yanında. Törende asa sağ, adalet eli sol elde tutulurdu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Kılıç: \"Charlemagne kılıcı\" (Joyeuse) belde; S16 adı \"à tort\" der; kılıç Louvre'da saklanır; görünürlük → C049; Pinoteau 2005 (wiki): manto+kılıç \"incongruité manifeste\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S3",
+    "S5",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Taç giyme manto'su + Saint-Esprit tarikatı büyük üstat kıyafeti; tarikat kolyesi göğüste.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Manto: mavi kadife (\"cramoisi\" yoğunluk), altın iplikle zambak işlemeli, hermelin astar; SOL omuzda ritüel olarak sıyrılmış; kralların yalnız taç giymede bir kez giydiği parça; mavi Capet azure kalkanından, Meryem'e adanmış; PDF \"force de la couleur... toute catholique\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Saray kıyafeti: dantel jabot/manşetler, Sedan brokarı rhingrave/beyaz culotte, ipek çorap + jartiyer (dizde çorabı geren kurdele), elmas tokalı kırmızı topuklu ayakkabı, büyük \"de majesté\" peruk.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Beyaz kıyafet, Saint-Esprit çömez şövalyelerinin kıyafetidir (Henri III, 1578; 100 üye); burada yalnız beyaz brokar culotte kalmıştır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Kırmızı topuk: yalnız aristokrasinin izni olan ayrıcalık; rengin nedeni AÇIKLANAMAMIŞ; XV. Louis'de sürdü, XVI. Louis'de kayboldu; \"aile de moulin\" düğümleri.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Sütun = güç/istikrar sembolü; kaide rölyefleri: Adalet (önde, Themis terazi+kılıç) ve Güç (yanda, zor görünür); kırmızı-turuncu draperi teatralleştirir; perde \"kral görünmez ama belirir\" (S5).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Mutlakiyet temsili: kral, Güç ve Adalet erdemlerine dayanan egemenliğin cisimleşmesi; \"resmî portre\"/ikon; PDF: \"iki Louis XIV imgesi\" — insan ve kral.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S5",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Yüz yaşlı ve gerçekçi; kral hatların \"véritables\" olmasını istedi; bacaklar genç; PDF \"habile compromis\" (majesté/humanité). Yaş → C045.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Bacaklar \"yerine poz veren genç bir dansçının\" bacakları (yalnız S16; E015); \"allure efféminée\" ama \"royale virilité\" zedelenmez, \"somptuosité toute politique\". Dans → C044; bacak → C043.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16",
+    "S4",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Poz kaynağı: Desjardins Place des Victoires heykeli (1686; 1792 yıkıldı) — \"sans doute\"/\"probablement\"; Hydra artık ayak altında değil; alternatifler Namur portresi ve Van Dyck Charles I (1635, Louvre) \"peut faire penser\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S16"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C022",
+   "ifade": "Yüz, ana tuvale eklenen küçük destek üstünde: Louvre \"toile plus fine marouflé (27 × 23 cm)\"; wiki (Vittori 2010) \"cousue à petits points\" → C042; S16 \"papier marouflé\" MV 2041 içindir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S4",
+    "S5",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Tuval 12 × 14 iplik/cm²; eski tuvalden tuvale transpozisyon; restorasyon: Lucien Aubert 1967, pictural katman Lin Sourzac 1988.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "İki imza: Justice rölyefi üstü banderol \"PEINT PAR HYACINTHE RIGAUD. 1701\"; halı/manto birleşimi \"HYACINTUS RIG\" (commentaire) — inscriptions alanı \"Hyacinthe Rigaud\" (kürk kıvrımı) der → C057.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Salon de 1704 — Louvre TEMKİNLİ (\"à moins qu'il ne s'agisse de la version aujourd'hui à Versailles\"); WD P608 + frwiki kategorisi kesin → C051.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S1",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C026",
+   "ifade": "Gravür: Pierre Drevet 1714–1716 (S6) / 1714–1715 (wiki; ödeme 16 Şubat 1716, 5.000 livres) → C048; hazırlık çizimi Jean-Marc Nattier 1713 (500 livres), Phoenix Art Museum Inv. 65-62, 63,7 × 51,4 cm; galeri bir travée uzatıldı; Mariette övgüsü + 1733 nadirlik notu (wiki).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Provenance: Louis XIV koleksiyonu → Versailles Salon d'Apollon şömine üstü ~1705 (Dezallier 1755; Castelluccio 2018) → Devrim müsaderesi → Louvre 2 Mayıs 1814 (A.M.N., *P12, fol. 49); PDF \"probablement immédiatement\" (E008).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S1",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Versailles versiyonu: MV 2041 / INV 7494 / MR 2401, Salon d'Apollon; atölyeyle otograf replika; Louvre aslı \"la seule signée et datée\" → C047; boyut → C039; Louis-Philippe döneminde girdi (S5 notu); WD precision 8 + circa; Commons \"between circa 1701 and circa 1702\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S12",
+    "S5",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Prado P002343 \"Louis XIV of France\", 1701, tuval yağlıboya, 238 × 149 cm, Oda 019 (sergide): taç giyme portresi DEĞİL, zırhlı/Namur kuşatması arka planlı martial varyant (savaş Joseph Parrocel); miğfer taş üstünde, komuta batonu, Saint-Esprit bandı; imza \"Hyacinthus Rigaud pinxit 1701\"; \"he did not send either canvas\"; kraliyet ailesi zırhlı portreler serisi (Grand Dauphin, Bourgogne, Berry; sonuncusu Largillière); provenance Felipe V → La Granja (1727; 1746 n.407; 1794; 1814–1818; 1827 nº 407).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "itwiki \"İspanya kralı için yapılan kopya bugün hâlâ Madrid'de\" — erişilen kayıtlarla DESTEKLENMİYOR → C046.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "Diğer kopyalar (kaynaklı): Getty 70.PA.1 \"After Rigaud\" ~1750 (erişilmedi); Palais Rohan Strasbourg (Pierre Legendre; Recht/Geyer 1988 s.321); Fabre 837.1.71 (Jean Ranc, 77 × 62); Münih BSGS 3229 (130,5 × 97,3, 1722); Versailles MV 3563 (atölye, 130 × 97, 1706); Dangeau 1702 yarım boy (MV 3652, 162 × 130); Chantilly modello; Livre de Raison küçültmeleri (S6); Stiémart siparişi (wiki). Atıfsızlar → C056.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5",
+    "S12",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Etki: resmî devlet portresi kalıbı XIX. yüzyıla dek model; saraylılar pozu taklit etti (Dangeau 1702, MV 3652, 162 × 130); \"en tanınır kral portresi\"/\"portrait officiel\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16",
+    "S6",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Kral ~1,60 m boyunda; 2,77 m'lik portrede doğadan büyük resmedildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Bağlam: Charles II çocuksuz öldü, vasiyeti Philippe d'Anjou'yu (Grand Dauphin'in ikinci oğlu) işaret etti; ölüm veraset savaşına yol açtı; Felipe V tahta 16 Aralık 1700. Ölüm tarihi → C040.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Yüz, Antoine Benoît'in balmumu kabartmasına (MV 2167, 85,3 × 71 × 12 cm) çok yakın; PDF metni \"vers 1700\" → C061.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Atölye: 1716'ya dek 30+ sanatçı (La Penaye, Prieur, Bayeul, Huillot, Parrocel 1696–1703); iş bölümü; \"certains aides habillent même les originaux\"; Rigaud bazen yalnız başı küçük tuvale yapar, sonra \"insérée, cousue\"; bazı kopyalarda dikiş izi görünür.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Sergiler (Louvre): \"Hyacinthe Rigaud ou le portrait Soleil\" Versailles 17/11/2020–13/06/2021 (liste) vs 18/04/2021 (bibliyografya) → C057; \"Louis XIV. L'Homme et le Roi\" 20/10/2009–07/02/2010; \"Les regalia\" Richelieu 15/10/1987–11/01/1988; WD P608: Europeana 280, Salon 1704, Sun Portrait.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "(D001) Konum ihtilafı: Louvre 2026 \"non exposé\", room \"\" ↔ WD P276 \"Room 602\" (2022 ref) + frwiki \"Sully, 1er étage, salle 602\"; Louvre banner salon bilgisi güncel olmayabilir der (E016).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S1",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "(D002) MV 2041 boyut ihtilafı: 313 × 205 (Louvre commentaire + PDF) ↔ 276 × 194 (Joconde ref WD + Constans 1995 no 4269); aynı envanter; çerçeveli/çerçevesiz hipotezi DOĞRULANMADI; Joconde erişilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S12",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "(D003) Charles II ölüm tarihi: Louvre \"1er octobre 1700\" ↔ en/it \"18 novembre/November 1700\" ↔ fr \"1er novembre 1700\"; çözümlenmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "(D004) 1701 ödemesi: fr (Roman 1919 s.85) \"26.000 livres\" ↔ en (Roman 1919 s.83) \"12,000 pounds\" ↔ it (Guiffrey 1881 s.693) \"12.000 livre\"; tutar+sayfa+atıf farklı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "(D005) Yüz desteği tekniği: Louvre \"marouflé\" (27 × 23 cm ince tuval) ↔ wiki (Vittori 2010) \"cousue à petits points\"; S16 genel pratiği \"insérée, cousue\"; S16 \"papier marouflé\" MV 2041 için.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S4",
+    "S5",
+    "S16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "(D006) Öndeki bacak: it + PDF SOL ↔ Louvre heykelin \"jambe droite avancée\" pozunu \"repris\" (SAĞ ima); görsel incelenmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S16",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "(D007) Dans yorumu: Louvre \"paraît évoquer la passion ancienne du roi pour la danse\" + fr (Tsikounas) \"position de quatrième\" + it dans adımı ↔ PDF \"n'a rien à voir avec la danse\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S4",
+    "S16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "(D008) Yaş: en 62 ↔ fr/it/PDF/data 63; doğum 5 Eylül 1638, pozlar Mart 1701 – Ocak 1702 — iki yaş da savunulabilir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S4",
+    "S16",
+    "S19"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "(D009) İspanya kopyasının akıbeti: it \"ancora oggi si trova a Madrid\" ↔ Louvre ikinci versiyon Salon d'Apollon'da ↔ en \"never did get sent to Spain\" ↔ Prado \"he did not send either canvas\"; Prado sipariş anlatısı da farklı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S3",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "(D010) Replika imzası: wiki \"également signée\" ↔ Louvre aslı \"la seule signée et datée\"; imzalı-tarihsiz replika ile uzlaşabilir, doğrulanmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "(D011) Drevet tarihi: wiki 1714–1715 (ödeme 16 Şubat 1716) ↔ Louvre \"entre 1714 et 1716\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "(D012) Kılıç görünürlüğü: en/fr \"yalnız kabza\" ↔ it \"zengin kını içinde\" ↔ Louvre \"au côté\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S4",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "(D013) Seki konumu: data \"basamağın üzerinde\" + it \"piattaforma rialzata\" ↔ PDF \"devant une estrade... (et non sur l'estrade)\" + en taht platformda, kral önünde; data DEĞİŞTİRİLMEDİ.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S19",
+    "S4",
+    "S16",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "(D014) Salon 1704: WD P608 + frwiki kategorisi kesin ↔ Louvre \"hangi versiyon?\" temkinli.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "(D015) Prado/Namur tarihi: PDF \"En 1694... Namur (Prado)\" ↔ Prado P002343 \"Date 1701\" + \"with no documental basis\" erken tarih notu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S16",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C053",
+   "ifade": "(E004) Ters asanın anlamı: PDF \"Chose surprenante jamais explicitée\"; \"On ne sait toutefois expliquer pourquoi le roi le tient à l'envers !\" — açıklama yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "\"Zahmetsiz iktidar\" okuması: data \"kimi yorumculara göre... zahmetsiz ve doğal iktidar\" — yorum; S16 açıklamasız der (C053).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S19",
+    "S16"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C055",
+   "ifade": "(E007) Prado atıf/hipotez kipleri: \"probably conceived\" (seri, Veraset Savaşı 1701–1713); \"may have reconsidered\"; yüz \"attributed\"; geri kalan \"thought to\" (asistanlar); erken tarih + sonradan imza \"with no documental basis\" (Luna 2010 s.252 üzerinden).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "(E009/E010) Atıfsız kopyalar: Perpignan (9 Aralık 2023, refsiz); Herrenchiemsee (II. Ludwig, refsiz; it lead \"E giocava\" kalite notu); Observatuvar (Carrière); Maintenon; Negresco; Villemonteix; George Kilian gravürü.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S4",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "(E011) Louvre içi tutarsızlıklar: HTML \"20.04.2026\" ↔ JSON \"modified 2026-07-22\"; sergi bitişi 13/06/2021 ↔ 18/04/2021; ikinci imza inscriptions \"Hyacinthe Rigaud\" ↔ commentaire \"HYACINTUS RIG\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C058",
+   "ifade": "(E014) Akım: WD P135 Classicist + Baroque + Grand Siècle (bir ref blog); data \"Fransız Klasisizmi\" / \"Baroque Art Versailles\" — ikisi de kısmî.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S19"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C059",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); Commons P18 dosyası 2883 × 4018, PD-Art; credit Gallerix (Louvre değil); GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C060",
+   "ifade": "Kitap/makale metinlerine erişilmedi; yalnız erişilen kayıtların atıf/kaynakçalarında anıldılar (Bély 2015, Roman 1919, Guiffrey 1881/1896, Dangeau 1856, Lavallée 1866, Mercure 1702, Burke 1995, Pinoteau 2003/2005, Tsikounas 2008, Vittori 2010, da Vinha/Masson 2011, Constans 1995, Luna 2010, Brême/Lanoë 2013, Posner 1998, James-Sarazin 2016, Milovanovic 2021, Castelluccio 2018 vb.).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S15",
+    "S16"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "Benoît kabartma tarihi: PDF metni \"vers 1700\" ↔ görsel altı notu \"vers 1705\" (belge içi tutarsızlık; MV 2167).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C062",
+   "ifade": "\"Görsel manifesto / doruk noktası\" (data/eser_notlari) değerlendirmesi yorum; Kantorowicz \"kralın iki bedeni\" anakronistik okuma aracıdır, Rigaud'nun etkilendiği iddia edilmez.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S19",
+    "S6",
+    "S16"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C063",
+   "ifade": "Kariyer: Perpignan'da Antoine Ranc yanında çıraklık; Lyon (koşullar bilinmiyor); Paris 1681; Largillière ve de Troy ile portrede büyük başarı; başı iki saatte kurma hızı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "Atölye ekonomisi: 1690 \"habillement répété\" 150 livres ↔ 1726 Samuel Bernard \"composition entièrement originale\" 7200 livres; atölye işletme gibi yönetilir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C065",
+   "ifade": "Regalia terminolojisi/teolojisi: insignia Saint-Denis'te saklanır, Reims'de kullanılırdı; PDF \"ornements royaux (et à tort regalia)\"; kralın Tanrı'dan aldığı üç güç (dinsel, siyasal, yargısal).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C066",
+   "ifade": "Charlemagne'ın uzun asası: 1,84 m; ucunda küre+asa tutan Charlemagne heykelciği; Charles V 1380'de Saint-Denis'e bıraktı; 1380 sonrası Charles VII ve Henri IV hariç tüm taç giymelerde; Belle XV. Louis (1723) portresinde görünür; resimdeki asa BU DEĞİLDİR.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C067",
+   "ifade": "Belle XV. Louis taç giyme portresi (1723, Versailles): üç tören kıyafeti (gümüş kumaş soutane; mavi saten tunique/dalmatique; mavi kadife manto); kırmızı topuklar mahmuz + mavi zambaklı çizmelerin yerini almıştır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C068",
+   "ifade": "Saint-Esprit kolyesi: güvercin yüklü Malta haçı; kral büyük üstat olarak taç giymenin ertesi günü katılırdı; Reims'de manto üstünde kolye taşınmazdı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C069",
+   "ifade": "Dantel: Points de France kralliyet imalatı (Colbert edikleri, 1666); büyük peruk modası Louis XIII ile başladı, saray taklitle yayıldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C070",
+   "ifade": "Çekirdek künye: \"Louis XIV (1638-1715), roi de France\"; Rigaud \"dit aussi Rigau y Ros\" (Perpignan 1659 – Paris 1743), France, École de; 1701 (\"1e quart du XVIIIe siècle\"); huile sur toile; 277 × 194 cm (çerçeveli 339,5 × 245); INV 7492 + MR 2391; Département des Peintures, Louvre; propriétaire Etat; WD P571 precision 9, P1480 yok; cartelfr 8817 → cl010066115 yönlendirme kanıtı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S1",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C071",
+   "ifade": "Kamu malı: Rigaud ö. 1743 (100+ yıl pma); WD P6216=Q19652 (P459: 100 yıl pma); Commons PD-Art / PD-old-100-expired, CC-PD-Mark; AttributionRequired false.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q3399440 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3399440.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "etiketler (wbgetentities; 2 parti: wdlabels, wdlabels2)",
+   "url": "https://www.wikidata.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia EN",
+   "belge": "\"Portrait of Louis XIV\" wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Portrait%20of%20Louis%20XIV&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia IT",
+   "belge": "\"Ritratto di Luigi XIV\" wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Ritratto%20di%20Luigi%20XIV",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 → 200 (retry-after=7, backoff)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikipedia FR",
+   "belge": "\"Portrait de Louis XIV en costume de sacre\" wikitext",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=Portrait%20de%20Louis%20XIV%20en%20costume%20de%20sacre",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 → 200 (backoff)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Louvre",
+   "belge": "birincil katalog HTML, cl010066115",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010066115",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (83.618 B)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Louvre",
+   "belge": "notice JSON, cl010066115",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010066115.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Louvre",
+   "belge": "eski cartelfr notice 8817 (yönlendirme kanıtı; WD boyut refs)",
+   "url": "http://cartelfr.louvre.fr/cartelfr/visite?srv=car_not_frame&idNotice=8817",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "301 → 301 → 200 (S6 ile aynı sayfa)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: Louvre dosyası (P18); credit Gallerix",
+   "url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Louis_XIV_of_France_in_Coronation_Robes_(by_Hyacinthe_Rigaud)_-_Louvre_Museum.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: Versailles dosyası (MV 2041); credit Musée de l'Histoire de France",
+   "url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Louis_XIV_of_France_in_Coronation_Robes_(by_Hyacinthe_Rigaud)_%E2%80%93_National_Museum_of_the_Palace_of_Versailles.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikidata",
+   "belge": "Q27754874 (Prado versiyonu) EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q27754874.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wikidata",
+   "belge": "P4969 türevleri: Q117360045 (MV 2041), Q20178194 (Getty), Q117360393 (MV 3563), Q115658142 (Fabre), Q30093788 (Münih)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Prado",
+   "belge": "canlı katalog sayfası (P002343)",
+   "url": "https://www.museodelprado.es/en/the-collection/art-work/louis-xiv/eb9b8bf3-4e26-4539-aff5-e368222c3f98",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (bot/WAF engeli); ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Wayback",
+   "belge": "availability API (Prado)",
+   "url": "https://archive.org/wayback/available?url=museodelprado.es/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S15",
+   "kurum": "Prado (Wayback)",
+   "belge": "katalog kopyası, arşiv 2025-04-25 (sayfa içi güncelleme 08-04-2025)",
+   "url": "https://web.archive.org/web/20250425061920/https://www.museodelprado.es/en/the-collection/art-work/louis-xiv/eb9b8bf3-4e26-4539-aff5-e368222c3f98",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "curl 429×2 → 200 (191.572 B ham HTML); web_fetch çapraz",
+   "tur": "birincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "Château de Versailles",
+   "belge": "resmî pedagojik PDF, 7 s. (\"commentaire d'œuvre / Portrait de Louis XIV en grand costume royal par Hyacinthe Rigaud en 1701\")",
+   "url": "https://www.chateauversailles.fr/sites/default/files/presse/documents/ressource-pedagogique_commentaire-louis_xiv_par_hyacinthe_rigaud.pdf",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (1.478.565 B; pypdf metni)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "Versailles collections",
+   "belge": "permalink (MV 2041)",
+   "url": "https://collections.chateauversailles.fr/?permid=permobj_87c69f37-7e46-4861-b532-8c63aba5a510",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama JS kabuğu; nesne verisi YOK",
+   "tur": "birincil"
+  },
+  {
+   "id": "S18",
+   "kurum": "web_search",
+   "belge": "MV 2041 URL keşfi (PDF + permalink bulundu; tahmin değil)",
+   "url": "(arama adımı — URL yok)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "—",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S19",
+   "kurum": "yerel data/",
+   "belge": "salt-okunur tarama snapshot'ı (basyapitlar, eser_ayrintilari, eser_notlari, onbellek, sanatcilar)",
+   "url": ".qwen/tmp/parti3/Q3399440-data-snapshot.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "XIV. Louis portresi (otograf replika)",
+   "sanatci": "Hyacinthe Rigaud ve atölyesi",
+   "kurum": "Château de Versailles, Salon d'Apollon",
+   "envanter": "MV 2041 / INV 7494 / MR 2401",
+   "mufredat_ici": false,
+   "gerekce": "Aynı kompozisyonun atölye katkılı replikası; asıl–replika ayrımı ve boyut/imza ihtilafları karşılaştırma dersidir.",
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "eser": "Louis XIV of France (zırhlı Namur varyantı)",
+   "sanatci": "Hyacinthe Rigaud ve atölyesi",
+   "kurum": "Museo Nacional del Prado, Madrid",
+   "envanter": "P002343",
+   "mufredat_ici": false,
+   "gerekce": "Aynı pozun martial varyantı; taç giyme görkemi ↔ savaşçı hanedan mesajı karşıtlığı; taç giyme kopyası DEĞİL.",
+   "kanit": [
+    "C029"
+   ]
+  },
+  {
+   "eser": "XV. Louis en costume de sacre (1723)",
+   "sanatci": "Alexis-Simon Belle",
+   "kurum": "Château de Versailles",
+   "mufredat_ici": false,
+   "gerekce": "Gerçek taç giyme kıyafetlerini ve Charlemagne'ın uzun asasını gösterir; Rigaud'nun törensel sapmalarını ölçmek için referans.",
+   "kanit": [
+    "C067",
+    "C066"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — kaynaklar cache'ten yeniden açılıp iddialarla karşılaştırıldı: Louvre HTML+JSON (S6/S7) künye/iki imza/teknik/provenance/\"non exposé\" doğrulandı, HTML↔JSON güncelleme farkı (20.04.2026 ↔ 2026-07-22) not edildi (C057). Versailles PDF (S16) yeniden okundu: MV 2041 313×205, \"et non sur l'estrade\", dans reddi, 63 yaş, \"jamais explicitée\", atölye s.7 doğrulandı; Benoît caption \"vers 1705\" ↔ metin \"vers 1700\" farkı yakalandı (C061). Prado Wayback (S15) ham metin: P002343 1701, 238×149, Room 019, \"did not send either canvas\", attributed/thought to kipleri doğrulandı. en/fr/it wikitext yeniden okundu: 12.000↔26.000, üç ölüm tarihi, 62↔63, Drevet 1714–1715; itwiki \"piattaforma rialzata\" D013'e eklendi. WD+türevler: P276 Room 602, MV 2041 276×194 (Joconde ref), circa precision doğrulandı. Görsel İNCELENMEDİ (metadata only) → GZ TASLAK. Kitap metinleri erişilmedi (C060).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Yaş: data \"63 yaşındaki\" ↔ enwiki 62 (D008/C045); fr/it/PDF 63; ders tek sayı dayatmaz.",
+  "Seki: data \"basamağın üzerinde\" ↔ PDF \"et non sur l'estrade\" (D013/C050); itwiki de \"üstünde\" der; ders PDF'i esas alır, ihtilafı beyan eder.",
+  "Dans: data \"bale pozunu andırır\" ↔ PDF dans yorumunu reddeder (D007/C044); \"genç dansçı bacakları\" yalnız PDF'te (E015).",
+  "Ters asa: data \"zahmetsiz iktidar\" yorumu C054 (C); PDF \"jamais explicitée\" (C053 E).",
+  "Regalia nüansı: resimdeki taç cenaze vermeil tacı (C008), asa Henri IV'ün kısa asası (C009), kılıç adı \"à tort\" (C011); PDF \"regalia\" terimini de \"à tort\" sayar (C065).",
+  "Terminoloji: data \"adalet asası\" ↔ kaynaklar \"main de justice / adalet eli\"; data tanımı doğru, adlandırma farklı.",
+  "Sanatçı notu: sanatcilar.json \"1701 civarında... atölyesiyle\" → asıl 1701 imzalı-tarihli (C070); \"atölyesiyle\" kopyalar/replika için geçerli (E013).",
+  "Akım: \"Fransız Klasisizmi\" kısmî (E014/C058); WD üçlü etiket (Classicist + Baroque + Grand Siècle).",
+  "Envanter boşluğu: muze_numaralari.json'da Q3399440 / INV 7492 kaydı YOK (hata değil, boşluk).",
+  "Görsel: İNCELENMEDİ (C059); GZ TASLAK; credit Gallerix (Louvre değil); SDC copyright status kategorileri eksik; insan editör görsel teyidi zorunlu.",
+  "Benoît kabartması: PDF metni \"vers 1700\" ↔ görsel altı notu \"vers 1705\" (C061); belge içi tutarsızlık.",
+  "itwiki kalitesi: lead'de başıboş \"E giocava\" (C056); Madrid iddiası desteksiz (C030)."
+ ]
+}

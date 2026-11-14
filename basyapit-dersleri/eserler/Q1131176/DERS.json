@@ -1,0 +1,1017 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1131176",
+ "sanatci_id": "francois-boucher",
+ "baslik": "Sarışın Odalık (Louise O'Murphy)",
+ "ozgun_baslik": "L'Odalisque blonde / Ruhendes Mädchen (The Blonde Odalisque / Resting Girl)",
+ "kunye": {
+  "sanatci": "François Boucher",
+  "sanatci_yasam": "1703–1770 (Paris)",
+  "tarih": "1751 (Köln) / 1752 (Münih)",
+  "tarih_belirsizlik": "Seri WD P571=1752 (refsiz); data 1751; onbellek yil=1752/tarih=1751 çelişkili (D12). Köln imza+tarih 1751; Münih \"Dating 1752\".",
+  "teknik": "Yağlıboya, tuval (her iki versiyon)",
+  "boyut_cm": {
+   "yukseklik": 59.5,
+   "genislik": 73.5
+  },
+  "muze": "Wallraf-Richartz-Museum & Fondation Corboud, Köln (1751); Alte Pinakothek / BStGS, Münih (1752)",
+  "envanter": "WRM 2639 (Köln) · 1166 (Münih)",
+  "edinim": "Köln: Eylül 1941 Hildebrand Gurlitt'ten RM 100.000 (DHM CCP); 1946 iade. Münih: 1799 Galerie Zweibrücken.",
+  "konum": "Münih: AP OG Saal XII (2018 arşiv); Köln: oda bilgisi erişilen kayıtta yok",
+  "telif_durumu": "Kamu malı (Boucher ö. 1770, 100+ yıl pma); Commons 4 dosya PD; Pinakothek arşiv site metni CC BY-SA 4.0 (site içeriği; tablo PD)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Boucher,_Marie-Louise_O%27Murphy_de_Boisfaily.jpg",
+  "kaynak": "Wikimedia Commons — dosya credit: Bayerische Staatsgemäldesammlungen, Alte Pinakothek (MÜNİH versiyonu; data etiketi Köln → D1)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata + lisans (imageinfo API); görsel BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "ana dosya 1100×881; Köln 1186×965; Münih crop 3597×2871; Münih restorasyon sonrası 11350×9240",
+   "incelenen_bolgeler": [],
+   "sinirlar": "GZ TASLAK; kompozisyon müze betimlerinden; D1 (görsel-müze uyuşmazlığı) ve D10 (kumaş rengi) insan/görsel teyidi bekliyor"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 421
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1339
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2641
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-seri-öğesi-ve-birincil-kaynaklar"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-gurlitt-ccp-ve-iade"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-hazırlık-çizimi-ve-baskı-üretim-süreci"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-ve-versiyon-farkları-kaynak-betimi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-kitap-gül-kutu-ve-iconclass"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-hazırlık-çizimi-ve-baskı-üretim-süreci"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Q1131176'nın seri öğesi olduğunu; Köln 1751 (WRM 2639) ve Münih 1752 (inv 1166) versiyonlarını birincil kayıtlarla ayırt eder.",
+  "Köln provenance zincirini ve 1941 Gurlitt alımı / 1946 CCP iadesini (Mü-Nr 22809) belgeler.",
+  "Sitter kimliğinin kesin olmadığını (\"probably\"/\"nicht nachweisen\"; Louise ↔ Victoire) koruyarak aktarır.",
+  "Müze betimlerine dayalı biçimsel/ikonografik analizi görsel inceleme sınırıyla (GZ TASLAK) yürütür.",
+  "D1 (görsel-müze uyuşmazlığı), D10 (kumaş rengi) ve türev yönü gibi çelişkileri yönetir; data düzeltme önerilerini kanıtla sunar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Seri öğesi (painting series)",
+   "tanim": "Tek kompozisyonun birden çok otograf versiyonunu kapsayan Wikidata öğesi (P31=Q15727816); Q1131176 iki parçalı (P527).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "ad": "Central Collecting Point (CCP)",
+   "tanim": "II. Dünya Savaşı sonrası müttefik sanat toplama/iade merkezi; München Mü-Nr 22809, 1946 giriş/çıkış.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "ad": "Manière crayon",
+   "tanim": "Demarteau'nun tebeşir taklidi baskı tekniği; hazırlık çizimiyle birlikte satılmıştır.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "ad": "Odalık (odalisque)",
+   "tanim": "Batı resminde uzanmış çıplak kadın tipi; öncül Louvre Brown Odalisque (1745).",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "ad": "Iconclass",
+   "tanim": "Sanat tarihsel sınıflama sistemi; KE kodları (33 C 22 1 bekleyiş, 42 D 71 metres, 25 G 41 ROSE).",
+   "kanit": [
+    "C030"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Kompozisyonun iki otograf versiyonu vardır: Köln 1751 (Q95683812) ve Münih 1752 (Q110055074); Q1131176 bunların seri öğesidir (P31=Q15727816 painting series; P527 iki parça).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K5",
+    "K15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı François Boucher (Paris 1703–1770).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K8",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Köln versiyonu 1751 tarihli; sağ altta imza ve tarih: \"Signatur, unten rechts: F. Boucher / 1751\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Münih versiyonu 1752 tarihli (\"Dating 1752\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Her iki versiyon yağlıboya/tuval (oil on canvas / Öl, Leinwand / Öl auf Leinwand / Leinwand).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K8",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Köln boyut 59,5 × 73,5 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Münih boyut 59 × 73 cm (birincil Pinakothek; itwiki 58,5 der → C038).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Köln: Wallraf-Richartz-Museum & Fondation Corboud, Inv.-Nr. WRM 2639, Zugang 09.1941.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K1",
+    "K16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Münih: Bayerische Staatsgemäldesammlungen – Alte Pinakothek, inv 1166, teşhir \"AP OG Saal XII\"; köken \"1799 aus der Galerie Zweibrücken\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Köln provenance (KE): \"without date, Collection ?Marlborough (Duke)\" → \"until 1914, Charles Fairfax Murray, London\" → \"without date, Jean Charpentier, Paris\" → \"1941, Hildebrand Gurlitt, Hamburg\"; DHM: \"Bought by W.R.M. for RM 100.000,-- from Dr. Gurlitt in autumn 1941\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Köln eseri CCP München'de işlendi: Mü-Nr 22809; 1946.03.28 (Eingang) / 1946.10.03 (Ausgang); \"Köln (Interzonal-Exchange) ... ident. acc. to statement of British mission\"; nesne \"female nude\", Öl auf Leinwand, Künstler \"Boucher\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "WRM güncel: iki versiyondan biri ressamdan Pompadour'un erkek kardeşince satın alındı — \"although it is uncertain which\" (hangisi belirsiz).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Köln/Münih kayıtları eseri geleneksel olarak Marie-Louise O'Murphy (1737–1814) adıyla anar; Pinakothek \"Das wird seit langem vermutet – doch lässt es sich nicht nachweisen\" der; WD seri P180 niteleyicisi P1480=\"probably\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K1",
+    "K3",
+    "K15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Modelin Louise değil kardeşi Victoire O'Murphy olabileceği akademik olarak öne sürülmüştür (Laing, Christie's lot essay; Laing vd. 1986–87 pp. 258–263 atıf zinciri).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "WRM biyografisi: modelin adını Casanova vermiştir; Marie-Louise O'Murphy 1737 doğumlu, Paris'te terzilikle başlamış; Boucher onu 1751'de keşfetmiş olmalı (\"must have discovered\"), o tarihten itibaren modeli; sonradan XV. Louis'nin metresi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Modelin tablo yapıldığında yaklaşık 14 yaşında olduğu çıkarımı: WRM doğum 1737 + keşif 1751; KE \"no older than fourteen\"; enwiki \"14-15\" atıfsız (→ C056).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C017",
+   "ifade": "Tür/sınıflama: odalık (odalisque) / galant sahne / Rokoko; WD P136 nü+genre, P135 Rococo painting (refsiz); itwiki \"odalische e della scena galante\"; KE \"französische Rokoko-Gemälde\".",
+   "seviye": "C",
+   "kaynak_id": [
+    "K15",
+    "K12",
+    "K13",
+    "K3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C018",
+   "ifade": "Versiyonlar arası ikonografi farkları (itwiki, atıfsız): Köln sol altta açık kitap + alt ortada iki düşmüş kırmızı gül; Münih kitap yerine üstü aslanlı yaldızlı kutu + solda beyaz gül; yastık gölgeleri (Köln gölge/Münih ışık) ve boiserie (dikdörtgen ↔ oval) farklı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K12"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C019",
+   "ifade": "Münih betimlemesi (Pinakothek): \"Splitternackt liegt ein junges Mädchen auf einer Chaiselongue; für Wärme sorgt ein Kohlenbecken auf dem Boden\" — şezlongda çıplak genç kız; yerde kömür mangalı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Köln betimlemesi (WRM): yüzüstü uzanmış, bacakları zarifçe bükülü çıplak kız; \"sumptuously patterned yellow fabric\" kaplı kanepe; bakışlar arkalık üzerinden resmin dışına.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "\"Bu tablonun çok sayıda kopyası vardır, hepsi Boucher'nin elinden\" (itwiki/frwiki, atıfsız; → C046).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K12",
+    "K13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "Münih tablosu için hazırlık çizimi: açık kahverengi kâğıt üzerine kara kalem + kırmızı/beyaz tebeşir, 222 × 362 mm; aynı kompozisyonun Demarteau \"manière crayon\" baskısıyla birlikte; Christie's \"Drawn in preparation for ... The Blonde Odalisque now in the Alte Pinakothek, Munich, dated 1752 (Laing vd. 1986–87 no. 61)\"; Laing orijinalden Boucher atfını teyit, canlı model çizimi olabileceğini önerir; sade yastıklar ↔ tabloda gösterişli draperi/döşeme.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Öncül: L'Odalisque (brune) / Brown Odalisque, 1745, Louvre; WD Köln P144=Q18783512; frwiki/itwiki 1745 öncül der; model kimliği tartışmalı (Diderot: Mme Boucher); Faroult 2019 (Louvre éditions) + Utpictura18 atıf zinciri.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K14",
+    "K12",
+    "K16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Türev yönü çelişkisi (D5): WD Münih P144=Köln, Köln P4969=Münih (Münih türev) ↔ KE Köln \"Wiederholung von: Bild, Inventarnummer 1166\" (Köln, Münih'in tekrarı). Yön çözümsüz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K16",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C025",
+   "ifade": "Kamu malı: Boucher ö. 1770 (100+ yıl pma); Commons 4/4 dosya \"Public domain\"; WD P6216=Q19652, P459 \"100 years or more after death of author(s)\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K18",
+    "K15",
+    "K16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Köln literatürü (KE bibliyografyası; kaynakçada anıldı, metne erişilmedi): Sterling \"Boucher et les O'Murphy\" 1932 S.191ff; Voss \"Repliken\" 1959 S.159ff; Frankl \"Boucher's Girl on the Couch\" (Panofsky Festschrift) 1961; Melville \"Miss O'Murphy\" (Architectural Review) 1968; Cailleux \"Who was Boucher's Beloved\" (Burlington Magazine) 1966; Adhémar \"Sirette, Casanova et Boucher\" 1957; WRM Verzeichnis 1959 S.33 / 1973 S.30; Ananoff 1976 Kat.379; Ältere Pinakothek München Amtlicher Katalog 1936 S.26 zu 1166.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Münih katalog numarası: WD P528=\"433\" (katalog öğesi Q113997007; brief \"Ananoff 1980 catalogue raisonné\" diye çözümlüyor — etiket cache'te doğrulanamadı, insan teyidi gerekir); çizim: Ananoff & Wildenstein 1976 no. 411/2, Laing vd. 1986–87 no. 61 (Christie's literatürü).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K16",
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Köln sergileri (KE): \"France in the Eighteenth Century\" London Royal Academy 12.1967–03.1968; \"Tat Ort Museum\" WRM 01.07–25.09.2011; \"Auf Leben und Tod. Die Sammlung Teutloff\" 17.09.2010–09.01.2011 (+Dresden 2012–13, Salzburg 2014–15).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "enwiki O'Murphy biyografisi Panofsky Festschrift'e (1961, pp. 138–152) atıf verir; madde \"More citations needed (October 2019)\" ve \"Citation needed (October 2022)\" etiketli.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "KE kayıt metadata: Iconclass 31 AA 14 (+56) ideal oranlı kadın figürü/akademik nü; 33 C 22 1 \"ein Liebender wartet auf den anderen\"; 42 D 71 \"Konkubine, Mätresse\"; 25 G 41 (ROSE) (+1); 61 BB 2 (O'MURPHY, Louise) 11 (+55); 61 B 2 (LUDWIG <Frankreich, König, 15>) 3. \"Visual organization: barocke Lichtführung; Seitenlicht; Nahsicht\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "KE \"Further information\" metni \"Die Ahnherrin des Pin-Up / The Ancestress of the Pin-Up\": O'Murphy (terzi→model→metres) olarak tanır; \"no older than fourteen\"; yataktan sarkan iç çamaşırı, buruşuk örtüler, aşk armağanı güller, \"no doubt racy\" açık kitap → \"fırtınalı buluşma\"; \"by today's standards the eroticism ... highly provocative\". Kurum yorumu.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C032",
+   "ifade": "Christie's çizim provenance/literatür/sergi: \"Possibly Blondel d'Azincourt; Paris, 10 January 1783, lot 132\"; J.P. Heseltine (L.1507), Ekim 1912 koleksiyonunun büyük kısmıyla $150.000 Colnaghi; P. & D. Colnaghi London; \"Apparently H. de W. Collection\". Sergi: London National Loan Exhibition 1909–10 no.86; Paris Galerie Georges Petit 1913 no.11. Literatür: Heseltine 1900 no.8; Michel 1906 no.2318; Ananoff 1966 no.501 fig.93; Ananoff & Wildenstein 1976 no.411/2 fig.1159; Laing/Marandel/Rosenberg 1986–87 p.261 Drawing no.3; Laing 2003 p.235 under no.29 note 7.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "enwiki analiz paragrafı (Citation needed): pastel pembe/sarı/mavi; çiçeksi tonlar Rokoko'yu cisimlendirir; nü + suggestif semboller erotikizm iletir; sarı tonlar huzurlu ton + pembemsi teni vurgular; draperiler gözü kıza yöneltir; açık kitap/gül/ifade çeşitli okunabilir (şaşkın/kaygılı).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "itwiki renk karşılaştırması (atıfsız): 1751 daha sıcak/canlı/dolu, 1752 daha soğuk/yumuşak; pastel pembe/sarı/mavi Rokoko'nun gözdesi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K12"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "WRM okuması: resim merakı uyandırmak, tatmin etmemek üzere kuruludur (\"meant to awaken, not satisfy, our curiosity\"); kanepe aristokrat bir boudoir'de durmuş olmalı, kızın oradan gelip gelmediği açık soru. Kurum yorumu.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "frwiki/itwiki: \"Rokoko Fransız resminin en muzipçe erotik nü'sü\" diye anılmıştır (atıfsız süperlatif; alımlama yorumu).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K12",
+    "K13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C037",
+   "ifade": "D1 versiyon/müze/görsel karışıklığı: data \"1751, Wallraf-Richartz Museum, Köln\" etiketler; ana görsel O'Murphy_de_Boisfaily.jpg Commons credit'ine göre MÜNİH (BStGS/Alte Pinakothek, 1752); Q1131176 seri öğesi, Köln=Q95683812, Münih=Q110055074.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K18",
+    "K21",
+    "K15",
+    "K16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D2 Münih boyutu: itwiki infobox 58,5 × 73 ↔ Pinakothek (S15) + WD parça 59 × 73. Birincil 59 × 73.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K12",
+    "K5",
+    "K16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D3 1752 ↔ 1753: Commons crop dosya adı \"(1753)\" ↔ aynı dosya DateTimeOriginal \"1752\" + müze 1752; Pinakothek metninde \"König Ludwig XIV. 1753 zu einer Geliebten machte?\" — hem 1753 hem \"Ludwig XIV\" (XV olmalı) müze metni içi hata; AYNEN korundu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K18",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D4 Pompadour ↔ kardeşi: WRM 2014 (S10) \"bought from the painter by the Marquise de Pompadour\" ↔ WRM güncel (S08) \"by the Marquise de Pompadour`s brother\". Müze metni zaman içinde değişmiş.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D6 provenance sırası: KE \"?Marlborough → Fairfax Murray (until 1914) → Jean Charpentier (without date) → Gurlitt 1941\" ↔ WD P127 Charpentier (tarihsiz), Fairfax Murray (≤1914), Gurlitt (≤1941), WRM (≥1941-09); WD'de Marlborough yok. Charpentier konumu/tarihi belirsiz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D7 sitter kimliği: Louise O'Murphy geleneği (WRM/Casanova; wiki'ler \"probably\") ↔ Laing/Christie's Victoire olasılığı; Pinakothek \"lässt es sich nicht nachweisen\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K5",
+    "K9",
+    "K15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D8 metreslik süresi: enwiki \"two years\" ↔ itwiki/frwiki \"tre anni / trois ans\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K11",
+    "K12",
+    "K13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D9 Brown Odalisque tarihi: frwiki/itwiki 1745 ↔ Christie's Lot Essay \"The Dark Odalisque of 1743\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K14",
+    "K12",
+    "K9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "D10 kanepe kumaşı rengi: WRM \"sumptuously patterned yellow fabric\" ↔ data ders metni \"yeşil kadife kaplı ... sedir\". Görsel incelenmedi; çözümsüz (görsel kontrol gerekir).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K21"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "D11 versiyon sayısı: enwiki \"two oil-on-canvas paintings\" ↔ itwiki/frwiki \"numerous copies, all by Boucher\"; Christie's lotu TABLO kopyası değil hazırlık ÇİZİMİ + baskı; otograf tablo kopyaları birincil kaynakla doğrulanmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K11",
+    "K12",
+    "K13",
+    "K9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "D12 seri tarihi vs data: WD seri P571=1752 (yıl precision, refsiz) ↔ data basyapitlar tarih=\"1751\" ↔ onbellek yil=1752 + tarih=\"1751\" (kendi içinde çelişkili).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K15",
+    "K21"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "D13 Louvre öncülü: görev \"WRM veya Louvre\" der; erişilen kaynaklar Louvre'da Sarışın Odalık versiyonu göstermez; Louvre'daki ilgili eser 1745 Brown Odalisque (RF 2140).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K14",
+    "K12",
+    "K16",
+    "K21"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "E1 sitter: WD seri P180 qualifier P1480=\"probably\"; itwiki \"con ogni probabilità\"; frwiki \"probablement\"; Commons \"Probably a portrait of Marie-Louise O'Murphy\"; Pinakothek \"Das wird seit langem vermutet – doch lässt es sich nicht nachweisen.\" Kesinleştirme YAPILMAMALI.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K15",
+    "K12",
+    "K13",
+    "K18",
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "E2 hangi versiyonun Pompadour('un kardeşi) tarafından alındığı belirsiz: WRM \"although it is uncertain which\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "E3 KE provenance: \"without date, Collection ?Marlborough(Duke)\" — soru işareti kaynağın kendisinde; Marlborough öncesi provenance erişilen kaynaklarda yok (E7).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "E4 enwiki yorum paragrafı \"Citation needed (October 2022)\"; madde \"More citations needed (October 2019)\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "K11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "E5 itwiki ikonografi yorumları (açık kitap = \"simbolo della razionalità e della consapevolezza\", Aydınlanma okuması) atıfsız → doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "E6 KE canlı kaydı PoW engelli; doğrulama 2024-06-02 arşivinden (beyan edildi); güncel durum bilinmiyor.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4",
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "E8 D5 türev yönü çözümsüz; \"orijinal\" hangisi — erişilen kaynaklar karar vermiyor.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K16",
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "E9 enwiki yaş iddiası (14–15) atıfsız; modelin reşit olmama durumu kaynaklarda olgusal olarak geçer (WRM doğum 1737 + keşif 1751); ders dilinde akademik, ayrıntısız kalınmalı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K11",
+    "K1",
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "E10 Christie's çizim provenance: \"Possibly Blondel d'Azincourt; Paris, 10 January 1783, lot 132\" — \"Possibly\" korunur.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C058",
+   "ifade": "Louvre RF 2140 birincil tablo katalog URL'si bulunamadı/erişilmedi; RF 2140 / 53×64 cm / Richelieu salle 40 frwiki infobox (atıfsız); yalnız \"Le Réveil\" gravürü için collections.louvre.fr URL'si var (çekilmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C059",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); 4 Commons dosyası PD metadata only; GZ TASLAK; D10 (kumaş rengi) + ikonografi eşleşmesi görsel kontrol gerektirir.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K18"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C060",
+   "ifade": "Refs metinleri erişilmedi (Panofsky Festschrift 1961; Irish Times 2017; rijksmuseumamsterdam.blogspot 2012; Faroult 2019; Soulié 2011; Ananoff 1976/1980; Ananoff & Wildenstein 1976; Laing 1986–87/2003; Sterling 1932; Voss 1959; Frankl 1961; Melville 1968; WRM katalogları 1959/1973; Utpictura18 A1001; BStGS envanter PDF'leri S21 çekilmedi) — yalnız erişilen kayıtların bibliyografyasından aktarıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3",
+    "K9",
+    "K11",
+    "K14",
+    "K20"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "data \"mavi kurdele\" (saç+el) ve \"buhurdan\" ayrıntıları erişilen kaynak betimlerinde yok; buhurdan ↔ Münih Kohlenbecken (kömür mangalı) uyuşmazlığı; versiyon-spesifik görsel kontrol gerekir.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K21",
+    "K5",
+    "K1"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Wallraf-Richartz-Museum & Fondation Corboud",
+   "belge": "The Highlight — Resting Girl (Louise O'Murphy), 1751 (canlı)",
+   "url": "https://www.wallraf.museum/en/collections/baroque/masterpieces/francois-boucher-resting-girl-louise-o-murphy-1751/the-highlight/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; canlı",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Wallraf-Richartz-Museum (Wayback)",
+   "belge": "Eski scheda arşivi (2014-05-01)",
+   "url": "http://web.archive.org/web/20140501070829/http://www.wallraf.museum:80/index.php?id=226&L=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2014-05-01)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Kulturelles Erbe Köln / Rheinisches Bildarchiv (Wayback)",
+   "belge": "Nesne kaydı 05010986 arşivi (2024-06-02)",
+   "url": "http://web.archive.org/web/20240602084926/https://www.kulturelles-erbe-koeln.de/documents/obj/05010986",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2024-06-02); canlı PoW engelli",
+   "tur": "birincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Kulturelles Erbe Köln",
+   "belge": "Nesne kaydı 05010986 (canlı)",
+   "url": "https://www.kulturelles-erbe-koeln.de/documents/obj/05010986",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama \"Service Status - Proof-of-Work\" bot engeli",
+   "tur": "birincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "Bayerische Staatsgemäldesammlungen (Wayback)",
+   "belge": "Ruhendes Mädchen eser sayfası arşivi (2018-05-18)",
+   "url": "https://web.archive.org/web/20180518061452/https://www.sammlung.pinakothek.de/en/artist/franois-boucher/ruhendes-maedchen",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2018-05-18); canlı 404",
+   "tur": "birincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Bayerische Staatsgemäldesammlungen",
+   "belge": "sammlung.pinakothek.de eser sayfası (canlı)",
+   "url": "https://www.sammlung.pinakothek.de/en/artist/franois-boucher/ruhendes-maedchen",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404 (site yeniden yapılandırılmış)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K7",
+   "kurum": "Bayerische Staatsgemäldesammlungen",
+   "belge": "Güncel permalink (canlı)",
+   "url": "https://www.sammlung.pinakothek.de/en/bookmark/artwork/jWLpeXQDGK",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404",
+   "tur": "birincil"
+  },
+  {
+   "id": "K8",
+   "kurum": "Deutsches Historisches Museum",
+   "belge": "CCP München kartları, Mü-Nr 22809",
+   "url": "https://www.dhm.de/datenbank/ccp/mu.php?no=22809",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 3 kart (Kontrollnummernkartei/Restitutionskartei/Objektfotografien)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K9",
+   "kurum": "Christie's (Wayback)",
+   "belge": "Lot 4856090 — A female nude reclining on a chaise-longue (2026-05-26 arşivi)",
+   "url": "http://web.archive.org/web/20260526072904/https://www.christies.com/lot/lot-4856090",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2026-05-26); canlı timeout",
+   "tur": "birincil"
+  },
+  {
+   "id": "K10",
+   "kurum": "Christie's",
+   "belge": "Lot 4856090 (canlı)",
+   "url": "https://www.christies.com/lot/lot-4856090",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "HTTP 000, curl 28 timeout (90 s)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K11",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Blonde Odalisque (wikitext)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Blonde%20Odalisque&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K12",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Ragazza distesa (wikitext)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Ragazza%20distesa&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K13",
+   "kurum": "Fransızca Vikipedi",
+   "belge": "Jeune Fille allongée (wikitext)",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=Jeune%20Fille%20allongée&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K14",
+   "kurum": "Fransızca Vikipedi",
+   "belge": "L'Odalisque (Louvre, brune) wikitext",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=L%27Odalisque&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K15",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q1131176 (seri)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1131176.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K16",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities Q110055074 + Q95683812 (parçalar)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q110055074%7CQ95683812&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K17",
+   "kurum": "Wikidata",
+   "belge": "Etiket sorguları (varlıklar+özellikler)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&props=labels&ids=Q1131176%7CQ95683812%7CQ110055074&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K18",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo 4 dosya (url|size|extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&titles=File:Fran%C3%A7ois_Boucher,_Marie-Louise_O%27Murphy_de_Boisfaily.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata only, İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K19",
+   "kurum": "Internet Archive",
+   "belge": "Wayback availability sorguları (WRM, KE, Christie's)",
+   "url": "https://archive.org/wayback/available?url=wallraf.museum/index.php%3Fid%3D226%26L%3D1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K20",
+   "kurum": "Bayerische Staatsgemäldesammlungen",
+   "belge": "Envanter PDF'leri BStGS_A-E(1).pdf / (2).pdf (WD ref; arşiv 2015-09-24 / 2014-04-01)",
+   "url": "http://www.pinakothek.de/sites/default/files/files/BStGS_A-E(1).pdf",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ÇEKİLMEDİ (büyük PDF; S15 aynı künyeyi veriyor)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K21",
+   "kurum": "yerel (Sanat Atlası)",
+   "belge": "data/ 8 dosya (salt-okunur): basyapitlar, eserler_onbellek, eser_notlari, eser_adlari_tr, eser_ayrintilari vb.",
+   "url": "file:///Users/emrymn/Downloads/sanat-atlasi/data/basyapitlar.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel okuma (salt-okunur)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K22",
+   "kurum": "Wallraf-Richartz-Museum",
+   "belge": "Eski scheda (itwiki external link; bayat)",
+   "url": "http://www.wallraf.museum/index.php?id=226&L=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama Van Gogh sayfasına yönlendiriyor (kullanılamaz)",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "L'Odalisque (brune) / Brown Odalisque",
+   "sanatci": "François Boucher",
+   "kurum": "Musée du Louvre",
+   "envanter": "RF 2140",
+   "gerekce": "Öncül kompozisyon (1745); bakış yönü karşıtlığı (izleyiciye ↔ resim dışına); kutu motifi.",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "eser": "Ruhendes Mädchen (Münih versiyonu)",
+   "sanatci": "François Boucher",
+   "kurum": "Alte Pinakothek / BStGS",
+   "envanter": "1166",
+   "gerekce": "Aynı kompozisyonun 1752 versiyonu; ikonografi farkları (kitap ↔ kutu, gül rengi).",
+   "kanit": [
+    "C001",
+    "C009"
+   ]
+  },
+  {
+   "eser": "The Dark Odalisque için hazırlık çizimi",
+   "sanatci": "François Boucher",
+   "kurum": "Horvitz Collection",
+   "gerekce": "Çizim metodolojisi karşılaştırması (Christie's lot essay); estetik poz ↔ stüdyo gerçekliği.",
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "WRM canlı (K1) + KE Wayback 2024 (K3) + Pinakothek Wayback 2018 (K5) + DHM CCP (K8) + Christie's Wayback 2026 (K9) yeniden açıldı; künye/provenance/CCP/çizim doğrulandı. WD seri+parça (K15/K16), en/it/fr wikitext (K11-K14), Commons metadata (K18) yeniden okundu. 13 ihtilaf D, 13 belirsizlik E olarak açık; sitter \"probably/nicht nachweisen\" aynen korundu. Görsel metadata only → İNCELENEMEDİ (C059); GZ TASLAK. Louvre birincil yok (C058); refs metinleri erişilmedi (C060).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "D1: data \"1751, WRM Köln\" etiketi ↔ ana görsel (O'Murphy_de_Boisfaily.jpg) Commons credit Münih (BStGS, 1752); QID seri öğesi. Köln hassas QID Q95683812, Münih Q110055074. Görsel-müze etiketi düzeltilmeli (C037).",
+  "D12: onbellek yil=1752 ↔ tarih=\"1751\" kendi içinde çelişkili; WD seri P571=1752 (refsiz); data basyapitlar 1751 (C047).",
+  "D10: data ders metni \"yeşil kadife\" ↔ WRM \"yellow fabric\"; görsel incelenmedi, çözümsüz (C045).",
+  "data \"buhurdan\" ↔ Münih Kohlenbecken (kömür mangalı); \"mavi kurdele\" erişilen betimlerde yok; versiyon-spesifik görsel kontrol gerekir (C061).",
+  "D13: Louvre'da Sarışın Odalık versiyonu YOK; ilgili eser 1745 Brown Odalisque RF 2140; birincil Louvre URL bulunamadı (C048, C058).",
+  "E1: eser_notlari \"Louise O'Murphy'nin ... figürü\" sitter'ı kesin gibi yazıyor; kaynaklar \"probably/nicht nachweisen\" → yumuşatma önerilir (C049). data DEĞİŞTİRİLMEDİ.",
+  "Görsel İNCELENMEDİ (C059); GZ TASLAK; insan editör görsel teyidi zorunlu (özellikle D1, D10)."
+ ]
+}

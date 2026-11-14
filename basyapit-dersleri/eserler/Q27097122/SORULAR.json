@@ -1,0 +1,555 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q27097122",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Louvre kaydındaki birincil başlık (Titre) hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Entrée d'Alexandre dans Babylone"
+    },
+    {
+     "harf": "B",
+     "metin": "Les Reines de Perse aux pieds d'Alexandre"
+    },
+    {
+     "harf": "C",
+     "metin": "La Bataille du Granique"
+    },
+    {
+     "harf": "D",
+     "metin": "Entrée triomphale d'Henri IV dans Paris"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4/S5: Titre \"Entrée d'Alexandre dans Babylone\"; \"Le Triomphe d'Alexandre\" diğer adıdır (C001/C002).",
+   "yanlis_gerekceleri": {
+    "B": "Pers Kraliçeleri (Darius'un Çadırı) Le Brun'ün AYRI eseridir (Q18683143); bu tablo değil.",
+    "C": "Granique Savaşı, Bernini'nin 1665'te Gobelins'te gördüğü diğer büyük tablodur; bu eserin adı değil (C010).",
+    "D": "Rubens'in Henri IV girişidir (Uffizi); frwiki'nin önerdiği model, farklı sanatçı/eser (C032)."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin sanatçısı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Peter Paul Rubens"
+    },
+    {
+     "harf": "B",
+     "metin": "Charles Le Brun"
+    },
+    {
+     "harf": "C",
+     "metin": "Andrea Mantegna"
+    },
+    {
+     "harf": "D",
+     "metin": "Nicolas Poussin"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S5: creator \"Le Brun, Charles\", attributionLevel \"Attribution actuelle\" (C003).",
+   "yanlis_gerekceleri": {
+    "A": "Rubens, frwiki'nin \"il semble que\" ile önerdiği biçimsel modeldir; bu eserin sanatçısı değil (C032).",
+    "C": "Mantegna, Louvre'un andığı biçimsel kaynaktır (Triomphe de César); sanatçı değil (C017).",
+    "D": "Poussin, klasik düzen karşılaştırması için anılır; bu eserin sanatçısı değil (C034)."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Louvre birincil kaydının tarih ifadesi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1664 (kesin tek yıl)"
+    },
+    {
+     "harf": "B",
+     "metin": "1673"
+    },
+    {
+     "harf": "C",
+     "metin": "vers 1664–1665"
+    },
+    {
+     "harf": "D",
+     "metin": "1676"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S4/S5: \"3e quart du XVIIe siècle (vers 1664 - 1665)\"; JSON imprecision \"vers\" (C004).",
+   "yanlis_gerekceleri": {
+    "A": "1664, data'nın düzleştirmesidir; Louvre \"vers\" ile yaklaşık aralık verir, kesin tek yıl değil (C004/C036).",
+    "B": "1673, Salon'da sergilendiği yıldır; yapım tarihi değil (C018).",
+    "D": "1676, Audran gravürünün yılıdır; yapım tarihi değil (C020)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Birincil kayda göre teknik/destek nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlı boya (huile sur toile)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt üzerine suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4/S5: \"huile sur toile\" (C005).",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir; eser tuvaldir (C005).",
+    "C": "Pano/tempera değil; birincil \"huile sur toile\" der (C005).",
+    "D": "Suluboya/kâğıt değil; yağlı boya tuval (C005)."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Tablonun fiziksel boyutu (yükseklik × genişlik) nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "4,5 m × 7,52 m"
+    },
+    {
+     "harf": "B",
+     "metin": "7,07 m × 4,5 m"
+    },
+    {
+     "harf": "C",
+     "metin": "3 m × 5 m"
+    },
+    {
+     "harf": "D",
+     "metin": "4,5 m × 7,07 m"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S4/S5: Hauteur 4,5 m; Largeur 7,07 m (C006).",
+   "yanlis_gerekceleri": {
+    "A": "7,52 m aksesuarla (çerçeve) genişliktir; tablonun kendi genişliği 7,07 m (C006).",
+    "B": "Değerler yer değiştirmiş; yükseklik 4,5 m, genişlik 7,07 m (C006).",
+    "C": "Kaynaklarda böyle bir ölçü yok; birincil 4,5 × 7,07 m der (C006)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Ana envanter numarası (Numéro principal) hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "INV 2898"
+    },
+    {
+     "harf": "B",
+     "metin": "INV 2968"
+    },
+    {
+     "harf": "C",
+     "metin": "MR 1919"
+    },
+    {
+     "harf": "D",
+     "metin": "GG_274"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4/S5: Numéro principal INV 2898; MR 1919 diğer numara (C007).",
+   "yanlis_gerekceleri": {
+    "B": "INV 2968, aynı başlıklı \"D'après\" kopya/halı modeli kaydıdır (cl010056823); birincil tablo değil (C022).",
+    "C": "MR 1919 bu eserin diğer numarasıdır (Autre numéro); ana numara INV 2898 (C007).",
+    "D": "GG_274, Correggio'nun KHM'deki Jupiter und Io eseridir; bu eserle ilgisi yok."
+   },
+   "kanit": [
+    "C007",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Louvre birincil kaydına göre İskender'in arabasını kaç fil çeker?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bir fil"
+    },
+    {
+     "harf": "B",
+     "metin": "İki fil (deux éléphants)"
+    },
+    {
+     "harf": "C",
+     "metin": "Üç fil"
+    },
+    {
+     "harf": "D",
+     "metin": "Dört fil"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S4: \"char tiré par deux éléphants\" (C012).",
+   "yanlis_gerekceleri": {
+    "A": "Bir fil, data'nın tekil ifadesidir (D1); Louvre birincil kaydı iki fil der (C012/C035).",
+    "C": "Üç fil hiçbir kaynakta geçmez; birincil iki fil der (C012).",
+    "D": "Dört fil hiçbir kaynakta geçmez; birincil iki fil der (C012)."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Louvre betiminde Sémiramis heykelinin elindekiler nelerdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bir elde asa (sceptre), diğerinde nar (grenade)"
+    },
+    {
+     "harf": "B",
+     "metin": "Kılıç ve kalkan"
+    },
+    {
+     "harf": "C",
+     "metin": "Asa ve miğfer"
+    },
+    {
+     "harf": "D",
+     "metin": "Nar ve tütsü buhurdanı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"le sceptre dans une main, et dans l'autre une grenade, symbole de l'unité de l'État\" (C014).",
+   "yanlis_gerekceleri": {
+    "B": "Kılıç/kalkan betimde yok; asa + nar var (C014).",
+    "C": "Miğfer heykelin atribütü değil; asa + nar betimlenir (C014).",
+    "D": "Tütsü buhurdanı (tripod) ayrı bir öğedir; heykelin elinde asa + nar var (C014/C016)."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Konu, hangi zafer sonrası Babil'e giriştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Granique Savaşı"
+    },
+    {
+     "harf": "B",
+     "metin": "İssos Savaşı"
+    },
+    {
+     "harf": "C",
+     "metin": "Darius III'e karşı Arbelles (MÖ 331)"
+    },
+    {
+     "harf": "D",
+     "metin": "Hidaspes Savaşı"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S4: \"victoire décisive contre Darius III à Arbelles (331 av. J.-C.)\" (C011).",
+   "yanlis_gerekceleri": {
+    "A": "Granique, Bernini'nin gördüğü diğer tablonun konusudur; bu eserin konusu Arbelles (C010/C011).",
+    "B": "İssos başka bir İskender savaşıdır; Louvre Arbelles der (C011).",
+    "D": "Hidaspes başka bir savaştır; Louvre Arbelles der (C011)."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Tablo hangi yıl Salon'da sergilendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1664"
+    },
+    {
+     "harf": "B",
+     "metin": "1673"
+    },
+    {
+     "harf": "C",
+     "metin": "1676"
+    },
+    {
+     "harf": "D",
+     "metin": "1963"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S4: \"présenté au Salon de 1673\" (Loire, 1992b) (C018).",
+   "yanlis_gerekceleri": {
+    "A": "1664 yapım aralığıdır (vers 1664–1665); Salon yılı değil (C004).",
+    "C": "1676 Audran gravürünün yılıdır; Salon değil (C020).",
+    "D": "1963 Paulet restorasyonunun yılıdır; Salon değil (C021)."
+   },
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Louvre'da Département des Peintures, INV 2898 ile kayıtlıdır.",
+   "dogru": true,
+   "aciklama": "Doğru (S4/S5; C007).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Louvre birincil kaydı arabayı tek bir filin çektiğini söyler.",
+   "dogru": false,
+   "aciklama": "Yanlış: Louvre \"deux éléphants\" (iki fil) der; tek fil data'nın ifadesidir (D1, C035).",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Louvre tarihi \"vers 1664 - 1665\" olarak verir; kesin tek yıl yoktur.",
+   "dogru": true,
+   "aciklama": "Doğru (S4/S5; imprecision \"vers\", C004).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Louvre betiminde asa (sceptre) İskender'in elinde değil, Sémiramis heykelinin elindedir.",
+   "dogru": true,
+   "aciklama": "Doğru (S4; C014). İskender \"couronné\" (taçlı) betimlenir (C012).",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Louvre sitesindeki fotoğraflar kamu malıdır (PD) ve serbestçe yeniden yayımlanabilir.",
+   "dogru": false,
+   "aciklama": "Yanlış: Louvre sitesi fotoğrafları © GrandPalaisRmn teliflidir (C023); PD olan Commons dosyasıdır (C024).",
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D1 fil sayısı uyuşmazlığını (data \"bir fil\" ↔ Louvre \"deux éléphants\") kaynak hiyerarşisiyle değerlendirin; görsel teyit neden gerekli?",
+   "beklenen_ogeler": [
+    "data tekil \"bir fil\"",
+    "Louvre birincil \"deux éléphants\" (A)",
+    "frwiki \"deux éléphants\"",
+    "görsel incelenmedi",
+    "birincil öncelikli ama sayım görsel gerektirir"
+   ],
+   "kanit": [
+    "C035",
+    "C012",
+    "C038"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "D4 İskender başlığı/asa uyuşmazlığını (Louvre \"couronné\" ↔ data \"tüylü miğfer + asa\"; asa Sémiramis'te) tartışın.",
+   "beklenen_ogeler": [
+    "Louvre \"couronné\" (taçlı)",
+    "asa Sémiramis heykelinde (sceptre)",
+    "WD P180 \"helmet\"",
+    "data \"tüylü miğfer + elinde asa\"",
+    "görsel teyit çözer"
+   ],
+   "kanit": [
+    "C037",
+    "C012",
+    "C014",
+    "C033"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "D3 biçimsel kaynak ihtilafını (frwiki Rubens ↔ Louvre Mantegna/antik/Polidoro) değerlendirin; Rubens iddiası neden A gibi sunulmamalı?",
+   "beklenen_ogeler": [
+    "frwiki \"il semble que\" atıfsız",
+    "Louvre Rubens anmaz",
+    "Mantegna/antik/Polidoro A",
+    "Rubens hipotez olarak sınanır"
+   ],
+   "kanit": [
+    "C032",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "frwiki alegorik \"dört okuma\"sını (İskender=Louis XIV; Sémiramis=Anne d'Autriche; Hephaestion=Colbert; altın koç=Séguier) yorum olarak analiz edin; hedge'leri koruyun.",
+   "beklenen_ogeler": [
+    "atıfsız yorum",
+    "\"peut être\"/\"devrait\"/\"pourrait\" hedge",
+    "Louis XIV koleksiyonu kısmen temellendirir",
+    "anakronizm riski",
+    "olgu değil yorum"
+   ],
+   "kanit": [
+    "C031",
+    "C030",
+    "C009"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "D2 tarih düzleştirmesini (data \"1664\" ↔ Louvre \"vers 1664-1665\") ve belirsizliğin korunması ilkesini tartışın.",
+   "beklenen_ogeler": [
+    "data kesin tek yıl 1664",
+    "Louvre \"vers\" + 3e quart XVIIe",
+    "WD on yıl hassasiyeti + 1664/1665",
+    "circa korunur",
+    "data düzeltme önerisi"
+   ],
+   "kanit": [
+    "C036",
+    "C004",
+    "C025"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betiminde taçlı (couronné) İskender'in iki filin çektiği arabada duruşunu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Louvre: \"Alexandre couronné sur son char tiré par deux éléphants\".",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sur girişindeki anıtsal Sémiramis heykelini ve elindeki asa + narı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Louvre: sceptre + grenade, \"unité de l'État\"; model \"probablement\" Pudicité Mattei.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Arka planda Quinte-Curce'dan hayal edilen Asma Bahçeleri'ni (teraslı, tepesi ağaçlı yapı) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Louvre: \"jardins suspendus … d'après le récit de Quinte-Curce\".",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Yola serpilen çiçekleri ve tütsü dumanı tüten gümüş tripodları bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Louvre: \"trépieds d'argent tout fumants d'encens et les fleurs\".",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Solda arkadan görünen kadın figürünü (antik Amour et Psyché / Lit de Polyclète modeli) ve brancard üstündeki anıtsal vazoyu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Louvre: Mantegna fil üstünde genç; antik kabartma; Polidoro vazo.",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Entrée d'Alexandre dans Babylone / Le Triomphe d'Alexandre; Charles Le Brun (Paris 1619–1690); vers 1664–1665; huile sur toile; 4,5×7,07 m; Louvre INV 2898 (MR 1919), Salle 914 Sully; Collection de Louis XIV.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + edebi kaynak?",
+   "arka": "Arbelles (MÖ 331) Darius III zaferi sonrası Babil'e giriş; Le Brun \"paraît\" Quinte-Curce'u izledi (Vaugelas çevirisi 1661).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Kompozisyon (birincil betim)?",
+   "arka": "İskender taçlı (couronné), iki filin çektiği arabada; Sémiramis heykeli (asa+nar); Asma Bahçeler; gümüş tripodlar + çiçekler.",
+   "kanit": [
+    "C012",
+    "C014",
+    "C013",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Biçimsel kaynaklar?",
+   "arka": "Mantegna Triomphe de César (fil üstünde genç); antik Amour et Psyché / Lit de Polyclète (solda arkadan kadın); Polydore de Caravage (brancard üstü vazo).",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Eser tarihi?",
+   "arka": "1665'ten önce Gobelins'te Bernini gördü; Salon 1673; 29 çizim (Beauvais); Audran gravür 1676 (4 plaka); transpozisyon + Paulet restorasyonu 1963; dizi INV 2894/2895/2897.",
+   "kanit": [
+    "C010",
+    "C018",
+    "C019",
+    "C020",
+    "C021",
+    "C022"
+   ]
+  }
+ ]
+}

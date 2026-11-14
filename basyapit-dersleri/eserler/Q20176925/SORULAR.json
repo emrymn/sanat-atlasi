@@ -1,0 +1,547 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q20176925",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu eser hangi kurumdadır ve envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "National Gallery of Art, Washington — 1962.8.1"
+    },
+    {
+     "harf": "B",
+     "metin": "Metropolitan Museum of Art, New York — 439933"
+    },
+    {
+     "harf": "C",
+     "metin": "Uffizi Gallery, Floransa"
+    },
+    {
+     "harf": "D",
+     "metin": "Hermitage Müzesi, St. Petersburg"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA birincil kaydı (Wayback 2017/2025): envanter 1962.8.1; Ailsa Mellon Bruce Fund ile 1962 edinimi.",
+   "yanlis_gerekceleri": {
+    "B": "Met 439933, Valentin de Boulogne'un aynı adlı \"The Lute Player\"ına aittir; bu eser NGA'dadır.",
+    "C": "Uffizi bu eserin kurumu değildir; eser NGA Washington'dadır (1962.8.1).",
+    "D": "Hermitage, Caravaggio'nun aynı temalı model tablosunu barındırır; bu eser değil."
+   },
+   "kanit": [
+    "C001",
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "NGA birincil kaydına göre eserin tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "c. 1612/1620"
+    },
+    {
+     "harf": "B",
+     "metin": "c. 1612–1626"
+    },
+    {
+     "harf": "C",
+     "metin": "c. 1612–1615"
+    },
+    {
+     "harf": "D",
+     "metin": "1610–1620"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA sayfası (2017 ve 2025 arşivleri) \"The Lute Player, c. 1612/1620\" der; circa aynen korunur.",
+   "yanlis_gerekceleri": {
+    "B": "enwiki infobox varyantıdır; aynı maddenin girişi 1612–1615 der (iç tutarsızlık); NGA aralığı esastır.",
+    "C": "enwiki girişi ve Commons ImageDescription varyantıdır; NGA birincil kaydı c. 1612/1620 der.",
+    "D": "1610 başlangıcı hiçbir erişilen kaynakta yoktur; bu aralık desteksizdir."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tekniği ve boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval; 143,5 × 129 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "Yağlıboya, tuval; 100 × 74 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera, ahşap pano; 143,5 × 129 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "Fresk; 100 × 74 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA: \"oil on canvas\"; \"overall: 143.5 x 129 cm (56 1/2 x 50 13/16 in.)\".",
+   "yanlis_gerekceleri": {
+    "B": "100 × 74 cm itwiki infobox hatasıdır; NGA/WD 143,5 × 129 cm doğrular.",
+    "C": "Teknik yağlıboya-tuvaldir; tempera pano değil.",
+    "D": "Eser fresk değil tuvaldir; boyut da itwiki hatasını tekrarlar."
+   },
+   "kanit": [
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "NGA eseri nasıl edindi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1962'de Ailsa Mellon Bruce Fund ile, Feilchenfeldt (Zurich) üzerinden satın aldı"
+    },
+    {
+     "harf": "B",
+     "metin": "1697'de doğrudan Cavazza'dan satın aldı"
+    },
+    {
+     "harf": "C",
+     "metin": "1911 Floransa sergisinden bağış olarak aldı"
+    },
+    {
+     "harf": "D",
+     "metin": "1990 Met sergisinden devraldı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA provenance: \"purchased 1962 through (Feilchenfeldt, Zurich) by NGA\"; Credit Line: Ailsa Mellon Bruce Fund.",
+   "yanlis_gerekceleri": {
+    "B": "1697 alımı Liechtenstein prensi içindir (Franceschini aracılığıyla); NGA alımı 1962'dir.",
+    "C": "1911 Floransa bir sergi kaydıdır, edinim değil; eser o sırada Liechtenstein koleksiyonundaydı.",
+    "D": "1990 Met sergisi ödünç sergilemedir; edinim 1962 NGA satın almasıdır."
+   },
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "1697'de eseri Liechtenstein prensi için satın alan aracı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Marcantonio Franceschini"
+    },
+    {
+     "harf": "B",
+     "metin": "Walter M. Feilchenfeldt"
+    },
+    {
+     "harf": "C",
+     "metin": "Frank Sullivan"
+    },
+    {
+     "harf": "D",
+     "metin": "Vincenzio Fanti"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA provenance: \"purchased 3 June 1697 by (Marcantonio Franceschini) for Prince Johann Adam Andreas of Liechtenstein\".",
+   "yanlis_gerekceleri": {
+    "B": "Feilchenfeldt 1962 NGA satışının aracıdır; 1697 alımıyla ilgisi yoktur.",
+    "C": "Frank Sullivan 1963 restorasyonuyla anılır (\"probably\"); alım aracı değil.",
+    "D": "Fanti 1767 Liechtenstein katalog yazarıdır; alım aracı değil."
+   },
+   "kanit": [
+    "C008",
+    "C009",
+    "C020"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Hermann Voss 1923'te eseri geçici olarak kime atfetti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Artemisia Gentileschi"
+    },
+    {
+     "harf": "B",
+     "metin": "Caravaggio"
+    },
+    {
+     "harf": "C",
+     "metin": "Orazio Gentileschi"
+    },
+    {
+     "harf": "D",
+     "metin": "Giuseppe Crespi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA bibliyografya: Voss 1923 \"tentatively as by Artemisia Gentileschi\".",
+   "yanlis_gerekceleri": {
+    "B": "Caravaggio, Liechtenstein kayıtlarının geleneksel atfıdır; Voss 1923 bunu terk edip Artemisia önerir.",
+    "C": "Orazio bugünkü NGA atfıdır; Voss 1923'te değil.",
+    "D": "Crespi, bu tablodan etkilenen sonraki sanatçıdır; atıf önerisi değil."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "NGA 2025 Image Description betimine göre kadının sol eli ne yapar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Lavtanın sapını yukarıda tutar, parmakları tellere basar"
+    },
+    {
+     "harf": "B",
+     "metin": "Akort burgularını çevirir"
+    },
+    {
+     "harf": "C",
+     "metin": "Yayı tellere sürter"
+    },
+    {
+     "harf": "D",
+     "metin": "Nota sayfasını çevirir"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA 2025: \"She holds the neck of the lute up high with her left hand, her fingers pressing the strings\".",
+   "yanlis_gerekceleri": {
+    "B": "Burgu çevirme data iddiasıdır; NGA betimi parmakların tellere bastığını söyler, akort yalnızca olasılıktır (\"may be tuning\").",
+    "C": "Yay masada durur; kadın lavtayı yayla değil parmaklarıyla tutar.",
+    "D": "Nota kitapları masadadır; sol el lavtanın sapındadır."
+   },
+   "kanit": [
+    "C011",
+    "C012",
+    "C013"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "NGA betimine göre masada hangi çalgılar vardır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Keman (+yay), en az üç recorder, cornetto"
+    },
+    {
+     "harf": "B",
+     "metin": "İki lavta ve arp"
+    },
+    {
+     "harf": "C",
+     "metin": "Timpani ve yan flüt"
+    },
+    {
+     "harf": "D",
+     "metin": "Org ve viyola"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA Overview + Image Description: violin, bow, at least three wooden recorders, cornetto; açık nota kitapları.",
+   "yanlis_gerekceleri": {
+    "B": "Masada ikinci lavta/arp yoktur; lavta kadının kucağındadır.",
+    "C": "Timpani/yan flüt betimde geçmez; recorder ve cornetto vardır.",
+    "D": "Org/viyola betimde yoktur; keman ve nefesli çalgılar vardır."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Tuval desteği hakkında NGA Technical Summary ne söyler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Üç parça herringbone-twill kumaş yatay dikilmiş; sağa sonradan ~10 cm şerit eklenmiş"
+    },
+    {
+     "harf": "B",
+     "metin": "Tek parça düz dokuma kumaş"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap panodan tuvale aktarılmış"
+    },
+    {
+     "harf": "D",
+     "metin": "Sol kenara 20 cm şerit eklenmiş"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA: \"three pieces of medium-weight herringbone-twill fabric sewn horizontally\"; \"A vertical strip approximately 10 cm wide is butt-joined to the right side ... added at a later date\".",
+   "yanlis_gerekceleri": {
+    "B": "Destek tek parça değil, yatay dikilmiş üç parçadır.",
+    "C": "1963'te relining yapılmıştır ama eser zaten tuvaldir; panodan aktarım değildir.",
+    "D": "Ek şerit sağdadır ve ~10 cm'dir; sol kenar trimlenmiş olabilir."
+   },
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "XRF analizine göre sarı draperinin pigmentleri nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Naples yellow + lead white; olası lead-tin yellow"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnız ultramarin"
+    },
+    {
+     "harf": "C",
+     "metin": "Saf altın varak"
+    },
+    {
+     "harf": "D",
+     "metin": "Kesin olarak yalnız lead-tin yellow"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA: \"the yellow drapery consists of Naples yellow and lead white and possibly lead-tin yellow\" — ihtiyat korunur.",
+   "yanlis_gerekceleri": {
+    "B": "Ultramarin mavi pigmenttir; sarı draperide XRF Naples yellow + lead white önerir.",
+    "C": "Altın varak değil, boya katmanıdır; XRF pigment kimliği önerir.",
+    "D": "Lead-tin yellow \"possibly\"dir, kesin değil; ana bileşenler Naples yellow + lead white."
+   },
+   "kanit": [
+    "C020"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser NGA Washington'dadır; envanter 1962.8.1.",
+   "dogru": true,
+   "aciklama": "Doğru: NGA birincil kaydı (Wayback 2017/2025).",
+   "kanit": [
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "NGA 2025 betimi, kadının sol eliyle akort burgularını çevirdiğini söyler.",
+   "dogru": false,
+   "aciklama": "Yanlış: NGA \"fingers pressing the strings\" der; akort yalnızca \"may be tuning\" olasılığıdır; burgu çevirme data hatasıdır (D003).",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Tablo Liechtenstein koleksiyonunda uzun süre Caravaggio olarak kaydedildi.",
+   "dogru": true,
+   "aciklama": "Doğru: \"Recorded by the following, always as Caravaggio\" (Fanti 1767 ... Strohmer 1943).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "itwiki'nin 100 × 74 cm boyutu NGA kaydıyla uyuşur.",
+   "dogru": false,
+   "aciklama": "Yanlış: NGA 143,5 × 129 cm der; itwiki infobox hatalıdır (D002).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eser ve Commons görseli kamu malıdır; NGA Open Access ticari kullanıma izin verir.",
+   "dogru": true,
+   "aciklama": "Doğru: Commons PD-Art (PD-old-100); NGA \"public domain\" + Open Access.",
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih ihtilafını yönetin: NGA c. 1612/1620 ↔ enwiki iç tutarsızlığı (1612–1626 / 1612–1615) ↔ itwiki ↔ WD precision. Hangi aralık esas alınmalı, neden?",
+   "beklenen_ogeler": [
+    "NGA birincil esas",
+    "enwiki infobox/giriş çelişkisi",
+    "circa korunur",
+    "1610 başlangıcı desteksiz"
+   ],
+   "kanit": [
+    "C003",
+    "C030"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "data hatalarını (cinsiyet \"erkek\"; kesin burgu çevirme) NGA betimiyle karşılaştırın ve düzeltme önerisi yazın (data değiştirilmez).",
+   "beklenen_ogeler": [
+    "young woman / Suonatrice (dişi)",
+    "fingers pressing the strings",
+    "may be tuning (olasılık)",
+    "veri notu olarak rapor"
+   ],
+   "kanit": [
+    "C033",
+    "C032",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "İşitme alegorisi / Harmonia / genre-portre okumaları neden E düzeyinde? Hangi kanıt türü seviyeyi yükseltir?",
+   "beklenen_ogeler": [
+    "satır içi ref yok",
+    "erişilen NGA metninde yok",
+    "dönem ikonografi literatürü",
+    "görsel analiz + belge"
+   ],
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Technical Summary ihtiyat sözcüklerini (possibly / most likely / suggesting / may / probably) bulun ve epistemik işlevlerini açıklayın.",
+   "beklenen_ogeler": [
+    "XRF pigment önerisi",
+    "önceki destek kullanımı",
+    "sol kenar trim çıkarımı",
+    "Sullivan atfı ihtiyatı"
+   ],
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Atıf zincirini (Caravaggio → Artemisia? → Orazio) ve 1990/2001–02 sergilerini kanon oluşumu açısından tartışın.",
+   "beklenen_ogeler": [
+    "always as Caravaggio",
+    "Voss tentatively",
+    "1990 Met no.15",
+    "2001–02 no.22"
+   ],
+   "kanit": [
+    "C009",
+    "C021",
+    "C040"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Arkadan üç çeyrek dönük genç kadını ve kulağını lavtaya yaklaştırışını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NGA 2025): figür sağda, profil sola dönük, kulak lavta gövdesine yakın.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sol elin sapı yukarıda tutuşunu ve tellere basan parmakları inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: \"holds the neck ... up high ... fingers pressing the strings\".",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Masadaki kemanı (sapı izleyiciye dönük), yayı, recorder'ları ve açık nota kitaplarını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: blond wood keman; en az üç recorder; biri recorder ile açık tutulan kitap.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Altın elbise, kızıl kadife tabure, koyu yeşil masa örtüsü ve beyaz bluzun doku karşıtlığını izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: sharp gold / dull gleam scarlet velvet / matte dark-green.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Sol üst köşedeki çapraz ışık huzmesini ve koyu toprak kahvesi arka planı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: diagonal shaft of light, presumably high window; teknik özet sol alt huzmeden de söz eder.",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "The Lute Player / Suonatrice di liuto; Orazio Gentileschi (1563–1639); c. 1612/1620; yağlıboya-tuval; 143,5 × 129 cm; NGA Washington 1962.8.1; Gallery 29 (2025 arşivi).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Edinim + provenance?",
+   "arka": "Cavazza (Bologna) → 3 Haziran 1697 Franceschini aracılığıyla Prens Johann Adam Andreas (Liechtenstein) → Viyana/Vaduz → 1962 Feilchenfeldt üzerinden NGA; Ailsa Mellon Bruce Fund.",
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Atıf tarihi?",
+   "arka": "\"Always as Caravaggio\" (Fanti 1767–Strohmer 1943); Marangoni 1922 \"not by Caravaggio\"; Voss 1923 \"tentatively Artemisia\"; bugün NGA Orazio.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Jest + çalgılar?",
+   "arka": "Sol el sapı tutar, parmaklar tellerde; \"may be tuning\" (olasılık); masada keman+yay, en az üç recorder, cornetto, açık iki nota kitabı.",
+   "kanit": [
+    "C011",
+    "C012",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Teknik özet?",
+   "arka": "3 parça herringbone-twill yatay dikili; grimsi-kahve astar; sağa ~10 cm sonradan şerit; XRF Naples yellow + lead white (olası lead-tin); 1963 restorasyon \"probably Frank Sullivan\".",
+   "kanit": [
+    "C020"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,559 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3399440",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "XIV. Louis'nin Portresi (1701, Rigaud) bugün hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "B",
+     "metin": "Prado, Madrid"
+    },
+    {
+     "harf": "C",
+     "metin": "Versailles Şatosu"
+    },
+    {
+     "harf": "D",
+     "metin": "Uffizi, Floransa"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre birincil kaydı (cl010066115): Département des Peintures, INV 7492; eser Louvre koleksiyonundadır (C070, C027).",
+   "yanlis_gerekceleri": {
+    "B": "Prado'daki P002343, taç giyme portresi değil zırhlı Namur varyantıdır; ayrı bir eserdir.",
+    "C": "Versailles'daki MV 2041, Rigaud'nun atölyesiyle yaptığı otograf replikadır; asıl Louvre'dadır.",
+    "D": "Uffizi'de bu esere ait kayıt yoktur; eser Fransız kraliyet koleksiyonundan Louvre'a gelmiştir."
+   },
+   "kanit": [
+    "C070",
+    "C027"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Louvre aslının envanter numaraları hangileridir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "INV 7492 / MR 2391"
+    },
+    {
+     "harf": "B",
+     "metin": "MV 2041 / INV 7494"
+    },
+    {
+     "harf": "C",
+     "metin": "P002343"
+    },
+    {
+     "harf": "D",
+     "metin": "70.PA.1"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre kaydı: Numéro principal INV 7492; autre numéro MR 2391 (C070).",
+   "yanlis_gerekceleri": {
+    "B": "MV 2041 / INV 7494 / MR 2401, Versailles'daki otograf replikanın envanterleridir.",
+    "C": "P002343, Prado'daki zırhlı varyantın envanter numarasıdır.",
+    "D": "70.PA.1, Getty'deki \"After Rigaud\" kopyanın numarasıdır."
+   },
+   "kanit": [
+    "C070"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Portrenin sipariş zinciri hangi olayla başlar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Philippe d'Anjou'nun İspanya tahtına çıkması ve büyükbabasının portresini istemesi"
+    },
+    {
+     "harf": "B",
+     "metin": "XIV. Louis'nin taç giyme töreni"
+    },
+    {
+     "harf": "C",
+     "metin": "Barok bir saray düğünü"
+    },
+    {
+     "harf": "D",
+     "metin": "Place des Victoires heykelinin açılışı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "II. Charles'ın ölümüyle Philippe d'Anjou V. Felipe olarak İspanya tahtına çıktı; Felipe büyükbabasının aynı elden portresini istedi; Louis Rigaud'ya sipariş verdi (C001, C034).",
+   "yanlis_gerekceleri": {
+    "B": "XIV. Louis 1643'te tahta çıkmıştı; portre taç giyme töreni için değil, torununun isteği üzerine yapıldı.",
+    "C": "Sipariş bir düğünle ilgili değildir; İspanya veraset krizi bağlamındadır.",
+    "D": "Desjardins heykeli (1686) poz için olası modeldir; sipariş nedeni değildir."
+   },
+   "kanit": [
+    "C001",
+    "C034"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Resimdeki taç hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fransız krallarının cenazeleri için yapılmış hafif vermeil taç"
+    },
+    {
+     "harf": "B",
+     "metin": "Charlemagne'ın taç giyme tacı"
+    },
+    {
+     "harf": "C",
+     "metin": "Kralın başında duran kapalı imparatorluk tacı"
+    },
+    {
+     "harf": "D",
+     "metin": "Zambaklardan yapılmış bir çiçek tacı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre ve Versailles PDF'i: resimdeki taç Charlemagne'ın taç giyme tacı değil, cenazeler için yapılmış hafif vermeil taçtır; kral zaten taçsızdır (C008, C007).",
+   "yanlis_gerekceleri": {
+    "B": "Charlemagne'ın taç giyme tacı kemerlerle kapalı ve taşlıydı; korunmamıştır ve resimdeki değildir.",
+    "C": "Kral taçlı değildir; taç yastık üstündedir; imparatorluk tacı tamamen kapalıdır ve farklı bir gelenektir.",
+    "D": "Zambak amblemi kumaşlara işlenmiştir; taç vermeil metaldir, çiçek değil."
+   },
+   "kanit": [
+    "C008",
+    "C007"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Kralın sağ elinde ters tuttuğu asa hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Henri IV'ün kısa asası"
+    },
+    {
+     "harf": "B",
+     "metin": "Charlemagne'ın 1,84 m'lik uzun asası"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir mareşal batonu"
+    },
+    {
+     "harf": "D",
+     "metin": "Piskopos asası"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Louvre ve PDF: kral, taç giyme asası olan Charlemagne'ın uzun asasını değil, Henri IV'ün kısa asasını ters tutar; zambak ucu yastığa dayanır (C009).",
+   "yanlis_gerekceleri": {
+    "B": "Charlemagne'ın uzun asası (1,84 m, ucunda heykelcik) resimde yoktur; Belle'in XV. Louis portresinde görünür.",
+    "C": "PDF asayı \"sceptre (ou bâton de commandement)\" diye tanımlar; bu bir kraliyet asasıdır, mareşal batonu değil.",
+    "D": "Dinsel bir asa değildir; nesne kraliyet insigniasıdır."
+   },
+   "kanit": [
+    "C009",
+    "C066"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Taç ve adalet eli resimde nasıl gösterilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kralın yanında, mavi zambaklı örtülü yastık/tabure üstünde"
+    },
+    {
+     "harf": "B",
+     "metin": "Kralın başında ve sol elinde"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir uşak tarafından taşınırken"
+    },
+    {
+     "harf": "D",
+     "metin": "Tahtın oturacağı üstünde"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Kral regalia'yı taşımaz: taç ve fildişi adalet eli, mavi zambaklı örtülü tabure/yastık üstünde yanındadır (C007, C010).",
+   "yanlis_gerekceleri": {
+    "B": "Kral taçsızdır ve adalet elini tutmaz; törende asa sağ, adalet eli sol elde tutulurdu ama resimde ikisi de yastıktadır.",
+    "C": "Resimde uşak yoktur; nesneler tabure/yastık üstündedir.",
+    "D": "Nesneler tahtın oturacağında değil, kralın yanındaki ayrı tabure/yastık üstündedir."
+   },
+   "kanit": [
+    "C007",
+    "C010"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Kral pozlarını nerede verdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Madame de Maintenon'un dairesinde"
+    },
+    {
+     "harf": "B",
+     "metin": "Aynalar Galerisi'nde"
+    },
+    {
+     "harf": "C",
+     "metin": "Rigaud'nun Paris atölyesinde"
+    },
+    {
+     "harf": "D",
+     "metin": "Saint-Denis Bazilikası'nda"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Versailles PDF'i: gutlu kral, Mart 1701 – Ocak 1702 arasında Maintenon'un dairesinde birkaç kez poz verdi (C002).",
+   "yanlis_gerekceleri": {
+    "B": "Aynalar Galerisi tören salonudur; pozlar Maintenon'un özel dairesinde verildi.",
+    "C": "Pozlar Versailles'da verildi; atölye çalışması kompozisyonun tamamlanması içindi.",
+    "D": "Saint-Denis, insignia'nın saklandığı yerdir; poz mekânı değildir."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Versailles'daki MV 2041 versiyonu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Rigaud'nun atölyesiyle birlikte yaptığı otograf replika"
+    },
+    {
+     "harf": "B",
+     "metin": "Tamamen bağımsız ikinci bir kompozisyon"
+    },
+    {
+     "harf": "C",
+     "metin": "XIX. yüzyıl bir taklit"
+    },
+    {
+     "harf": "D",
+     "metin": "Drevet gravürünün büyütülmüş hâli"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Versailles PDF'i: asıl Louvre'dadır; şatodaki, ressama sipariş edilmiş ve atölyesiyle gerçekleştirilmiş kopyadır (C028).",
+   "yanlis_gerekceleri": {
+    "B": "Kompozisyon aynıdır; bağımsız yeni bir tasarım değildir.",
+    "C": "Replika Rigaud/atölye üretimidir (y. 1701–1702); XIX. yüzyıl taklidi değildir.",
+    "D": "Gravür Drevet'in 1714–1716 çalışmasıdır; MV 2041 yağlıboya tuvaldir."
+   },
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Prado'daki P002343 nasıl bir portredir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Zırhlı, Namur kuşatması arka planlı martial varyant"
+    },
+    {
+     "harf": "B",
+     "metin": "Taç giyme portresinin aynı boy kopyası"
+    },
+    {
+     "harf": "C",
+     "metin": "Yarım boy bir eskiz"
+    },
+    {
+     "harf": "D",
+     "metin": "At üstünde bir portre"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Prado katalog (Wayback 2025-04-25): P002343 zırhlı, Namur kuşatması fonlu (Joseph Parrocel) martial varyanttır; taç giyme kopyası değildir (C029).",
+   "yanlis_gerekceleri": {
+    "B": "İspanya'ya gönderilecek taç giyme kopyası gönderilmedi; Prado eseri farklı, zırhlı bir varyanttır.",
+    "C": "Eser 238 × 149 cm tam boy bir tuvaldir; eskiz değildir.",
+    "D": "Kral ayakta, zırhlı gösterilir; at yoktur."
+   },
+   "kanit": [
+    "C029"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Drevet gravürünün hazırlık çizimini kim yaptı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Jean-Marc Nattier (1713)"
+    },
+    {
+     "harf": "B",
+     "metin": "Pierre Drevet"
+    },
+    {
+     "harf": "C",
+     "metin": "Antoine Benoît"
+    },
+    {
+     "harf": "D",
+     "metin": "Joseph Parrocel"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Bâtiments kaydı (wiki üzerinden): genç Jean-Marc Nattier, Rigaud'dan kopya çizimi 1713'te yaptı, 500 livres ödendi; çizim Phoenix Art Museum'dadır (C026).",
+   "yanlis_gerekceleri": {
+    "B": "Drevet gravürü oydu; çizimi Nattier hazırladı.",
+    "C": "Benoît, kralın balmumu kabartmasını yapan sanatçıdır; gravür çizimiyle ilgisi yoktur.",
+    "D": "Parrocel, Prado varyantının savaş arka planını boyayan atölye sanatçısıdır."
+   },
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Kral resimde tacını başında taşır.",
+   "dogru": false,
+   "aciklama": "Yanlış: kral taçsızdır; taç ve adalet eli yastık/tabure üstündedir (C007).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Yüz, ana tuvale eklenen küçük bir tuval parçası üstünde boyanmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru: Louvre 27 × 23 cm'lik ince tuval parçasından söz eder; parçanın yapıştırma mı dikme mi olduğu ihtilaflıdır (C022; teknik tartışması C042).",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Versailles PDF'ine göre kral sekinin üstünde durur.",
+   "dogru": false,
+   "aciklama": "Yanlış: PDF açıkça \"devant une estrade... (et non sur l'estrade)\" der — sekinin önünde, üstünde değil (C006).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Beyaz brokar culotte, Saint-Esprit tarikatı çömez şövalye kıyafetinden kalan tek parçadır.",
+   "dogru": true,
+   "aciklama": "Doğru: PDF, beyaz kıyafetin çömez şövalye tenü olduğunu ve resimde yalnız culotte'un kaldığını söyler (C015).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Prado P002343, İspanya'ya gönderilen taç giyme kopyasıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Prado eseri zırhlı Namur varyantıdır; katalog \"he did not send either canvas\" der — iki tuval de gönderilmedi (C029).",
+   "kanit": [
+    "C029"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Sipariş anlatısını ve İspanya'ya giden kopyanın akıbetini Louvre/Mercure, wiki'ler ve Prado kaydı üzerinden karşılaştırın.",
+   "beklenen_ogeler": [
+    "Mercure 1702: kral aslı sakladı, kopya sipariş etti",
+    "Louvre: ikinci versiyon bugün Salon d'Apollon (MV 2041)",
+    "enwiki: never did get sent to Spain",
+    "Prado: he did not send either canvas; martial varyant",
+    "itwiki Madrid iddiası desteklenmiyor"
+   ],
+   "kanit": [
+    "C001",
+    "C028",
+    "C029",
+    "C046",
+    "C030"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "\"İki beden\" okumasını (yaşlı yüz / genç bacaklar) kaynaklarla analiz edin.",
+   "beklenen_ogeler": [
+    "Kral hatların idealize edilmemesini istedi",
+    "Bacaklar genç bir dansçının (yalnız PDF)",
+    "Dans yorumu PDF'te reddedilir",
+    "62/63 yaş ihtilafı",
+    "Majesté/humanité uzlaşması"
+   ],
+   "kanit": [
+    "C019",
+    "C020",
+    "C044",
+    "C045"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Yüz desteği tekniği ihtilafını (marouflé ↔ cousue) atölye pratiği bağlamında değerlendirin.",
+   "beklenen_ogeler": [
+    "Louvre: 27 × 23 cm ince tuval, marouflé",
+    "Vittori 2010: küçük dikişlerle dikme",
+    "PDF genel pratiği: insérée, cousue",
+    "PDF papier marouflé ifadesi MV 2041 için",
+    "Teknik görüntüleme gerekli; görsel incelenmedi"
+   ],
+   "kanit": [
+    "C022",
+    "C036",
+    "C042",
+    "C059"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Ters asa hakkında belgeli olguları yorumlardan ayırın.",
+   "beklenen_ogeler": [
+    "Henri IV'ün kısa asası, sağ elde ters",
+    "Baston/komuta batonu gibi dayanılır",
+    "jamais explicitée — anlamı açıklanamamış",
+    "Zahmetsiz iktidar okuması data yorumu (C)",
+    "Kesin cevap üretilemez"
+   ],
+   "kanit": [
+    "C009",
+    "C053",
+    "C054"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "MV 2041 boyut ihtilafını (313 × 205 ↔ 276 × 194) kaynak eleştirisiyle değerlendirin ve çözüm protokolü önerin.",
+   "beklenen_ogeler": [
+    "Louvre commentaire + PDF: 313 × 205",
+    "Joconde ref WD + Constans 1995: 276 × 194",
+    "Aynı envanter MV 2041/INV 7494/MR 2401",
+    "Çerçeveli/çerçevesiz hipotezi doğrulanmadı",
+    "Joconde kaydı açılmalı + fiziksel ölçüm"
+   ],
+   "kanit": [
+    "C028",
+    "C039"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Adalet rölyefinin üstündeki banderolde imza ve tarihi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S6): \"PEINT PAR HYACINTHE RIGAUD. 1701\".",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kralın yanındaki yastık/tabure üstünde taç ve fildişi adalet elini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S6/S16): mavi zambaklı örtü; kral taçsız.",
+   "kanit": [
+    "C007",
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Kralın sağ elindeki ters asayı bulun; zambak ucunun yastığa dayandığını not edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S16): Henri IV'ün kısa asası, baston gibi.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sol omuzda sıyrılan mantonun hermelin astarını ve altın zambak işlemesini inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S16): mavi kadife, \"cramoisi\" yoğunluk; beyaz volüt.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Elmas tokalı kırmızı topuklu ayakkabıları ve beyaz ipek çorapları bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S16/S6): kırmızı topuk ayrıcalığı; jartiyerli çoraplar.",
+   "kanit": [
+    "C014",
+    "C016"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Çekirdek künye?",
+   "arka": "Rigaud (1659–1743); 1701, imzalı-tarihli; yağlıboya tuval; 277 × 194 cm (çerçeveli 339,5 × 245); Louvre, Département des Peintures; INV 7492 / MR 2391.",
+   "kanit": [
+    "C070"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sipariş ve versiyonlar?",
+   "arka": "Philippe d'Anjou (V. Felipe) için portre; Felipe büyükbabasının portresini istedi; kral aslı sakladı; Versailles MV 2041 otograf replika; Prado P002343 zırhlı Namur varyantı (taç giyme kopyası değil).",
+   "kanit": [
+    "C001",
+    "C028",
+    "C029"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Regalia gerçekleri?",
+   "arka": "Taç: cenaze vermeil tacı (Charlemagne'ın değil); asa: Henri IV'ün kısa asası, sağ elde ters; adalet eli: fildişi, Henri IV; kılıç: \"Charlemagne\" adı à tort; regalia taşınmaz, yastık/tabure üstünde.",
+   "kanit": [
+    "C008",
+    "C009",
+    "C010",
+    "C011",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Teknik ve imzalar?",
+   "arka": "12 × 14 iplik/cm²; tuvalden tuvale transpozisyon; yüz ek küçük tuvalde (27 × 23 cm); Aubert 1967, Sourzac 1988; iki imza: banderol \"PEINT PAR HYACINTHE RIGAUD. 1701\" + halı/manto birleşimi.",
+   "kanit": [
+    "C023",
+    "C022",
+    "C024"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Etki ve yayılma?",
+   "arka": "XIX. yüzyıla dek resmî devlet portresi modeli; Dangeau 1702 aynı poz (MV 3652); Drevet gravürü (Nattier çizimi, Phoenix 65-62); kral ~1,60 m, portrede doğadan büyük.",
+   "kanit": [
+    "C032",
+    "C026",
+    "C033"
+   ]
+  }
+ ]
+}

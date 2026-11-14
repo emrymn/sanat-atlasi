@@ -1,0 +1,1040 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1140358",
+ "sanatci_id": "nicolas-poussin",
+ "baslik": "Arkadya'da Ben de Varım (Et in Arcadia ego)",
+ "ozgun_baslik": "Les Bergers d'Arcadie (Et in Arcadia ego)",
+ "kunye": {
+  "sanatci": "Nicolas Poussin",
+  "sanatci_yasam": "1594 Les Andelys – 1665 Roma",
+  "tarih": "y. 1638 (Louvre: \"vers 1638\")",
+  "tarih_belirsizlik": "Louvre \"vers 1638\" (A); enwiki 1637–1638; fr infobox 1638–1640; de \"um 1640\"; it \"circa 1640\"; data \"1637–39\" (1639 desteksiz) — D01/C042",
+  "teknik": "Tuval üzerine yağlıboya (huile sur toile)",
+  "boyut_cm": {
+   "yukseklik": 85,
+   "genislik": 121
+  },
+  "muze": "Musée du Louvre, Paris (Département des Peintures)",
+  "envanter": "INV 7300 ; MR 2339",
+  "edinim": "Louis XIV koleksiyonu girişi (1685, Hérault'dan satın alma); Rospigliosi → Avice → Hérault → Louis XIV → Versailles → Louvre 1816",
+  "konum": "Salle 825 \"Nicolas Poussin : les chefs-d'œuvre\", Aile Richelieu, Niveau 2 (güncel olmayabilir — E07)",
+  "telif_durumu": "Kamu malı (Poussin ö. 1665; ölüm+100); Commons PD-Art; Louvre/RMN fotoğrafları izinli (E14)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Les_Bergers_d%27Arcadie_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7300_;_MR_2339.jpg",
+  "kaynak": "Wikimedia Commons (photo Shonagon 2024-02-15; WD P18)",
+  "lisans": "Public domain (PD-Art / PD-old-100-expired; AttributionRequired: false)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (S11); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "10925×7605 px; 30.289.394 B (~30,3 MB); Fujifilm GFX100S",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C059); GZ TASLAK; kompozisyon Louvre commentaire (S2) + utpictura (S5) + wiki (S6–S9) metninden; Louvre/RMN fotoğrafları PD değil, izinli (E14); utpictura notice metni yeniden yayımlanmaz (E13)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 427
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1396
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2741
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-tutarlılığı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-bir-zincirin-eleştirisi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#3-yazıtın-dilbilgisi-ve-panofskynin-iki-denemesi",
+   "DERS_ILERI.md#5-pictura--mimesis-okumaları-brandt-ve-becht-jördenswehmeier"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-koruma-tarihi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Louvre birincil kaydıyla künyeyi (vers 1638, huile sur toile, 85×121, INV 7300/MR 2339, Salle 825) ve provenance zincirini doğrular.",
+  "İki versiyonu (Chatsworth/Louvre) ve Guercino öncülünü kafatası/kompozisyon üzerinden ayırt eder; sürüm karışmasını önler.",
+  "Yazıtın iki çevirisini (şimdiki/geçmiş) ve Panofsky–Brandt dilbilgisi tartışmasını yönetir.",
+  "Gölge/Plinius resmin-keşfi ikonografisini ve kadın figürü önerilerini (Cesi Juno/Pictura) kaynaklı ama uzlaşımsız olarak sunar.",
+  "Teknik/restorasyon verilerini ve 17 kaynak ihtilafını beyan eder; görsel incelenmediği için GZ TASLAK sınırını kabul eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Memento mori",
+   "tanim": "\"Ölümlü olduğunu hatırla\"; yazıtın şimdiki zaman okumasında Ölüm'ün sesi (Bellori).",
+   "kanit": [
+    "C015",
+    "C019"
+   ]
+  },
+  {
+   "ad": "Arkadya / pastoral",
+   "tanim": "İdealize çoban diyarı; Vergilius Bucolica V (Daphnis mezarı) ve Sannazaro Arcadia geleneği.",
+   "kanit": [
+    "C063",
+    "C009"
+   ]
+  },
+  {
+   "ad": "Elegyak gelenek",
+   "tanim": "Ağıt tonu; geçmiş zaman okuması (\"Ben de Arkadya'da yaşadım\"); Panofsky'nin Louvre versiyonu yorumu.",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "ad": "Pictura / mimesis",
+   "tanim": "Resim sanatının alegorisi ve taklit ilkesi; gölge siluetinin çizgisiyle resmin keşfi (Plinius); Brandt/Becht-Jördens–Wehmeier önerisi.",
+   "kanit": [
+    "C013",
+    "C012"
+   ]
+  },
+  {
+   "ad": "Vanitas",
+   "tanim": "Kafatası gibi ölüm sembolleriyle dünyanın geçiciliğini anlatan ahlakçı tür; Chatsworth'ta var, Louvre'da kaldırılmış.",
+   "kanit": [
+    "C021",
+    "C011"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Ad: \"Les Bergers d'Arcadie\"; diğer ad \"Et in Arcadia ego\" (Louvre denominationTitle; Joconde TITR).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Nicolas Poussin (Les Andelys 1594 – Rome 1665); \"Attribution actuelle\", doubt alanı boş; \"France, École de\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih: \"vers 1638\" (\"2e quart du XVIIe siècle (vers 1638)\"); JSON dateCreated startYear=1638, imprecision=\"vers\"; WD P571=1638 (yıl precision, P1480 yok).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tuval üzerine yağlıboya (huile sur toile); Joconde TECH: peinture à l'huile + toile.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "85 × 121 cm; çerçeve/aksesuarla 112 × 146 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "INV 7300 (esas), MR 2339 (diğer).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Louvre Département des Peintures; mülkiyet Etat; affectataire Musée du Louvre, Département des Peintures.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "\"Actuellement visible au Louvre\"; Salle 825 \"Nicolas Poussin (1594-1665) : les chefs-d'œuvre\", Aile Richelieu, Niveau 2; site banner'ı salon konumunun güncel olmayabileceğini belirtir (E07).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Konu: antik ideal çobanlar + bir kadın, yalın bir mezarın çevresinde; mezarda \"ET IN ARCADIA EGO\" yazıtı (utpictura annotation 1; Joconde INSC \"d'origine\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S6",
+    "S5",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "WD P180 (JocondeLab ref'li): shepherd, woman, man, reading, broad-leaved tree, mountain; Joconde REPR \"scène mythologique (homme, femme, berger, lecture) / fond de paysage (montagne, feuillu)\".",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C011",
+   "ifade": "Louvre versiyonunda kafatası YOK (\"où la tête de mort a disparu\"); Guercino'da ve Chatsworth versiyonunda var.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S8",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Çobanlardan biri, arkadaşının (\"his companion\"/\"son compagnon\") mezar üzerindeki gölgesini parmağıyla izler; resim sanatının keşfi anı (Plinius NH XXXV 5,15); gölgenin kime ait olduğu ihtilaflı (→ C048).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Kadın figürü için kaynaklı öneriler: \"possibly a shepherdess\" (S8); \"profil grec\" (S6/S9); antik \"Cesi Juno\" heykelinden esinlenme (S8, Barker 1999 inline); Brandt: Pictura / \"Daphne-Laura\" alegorisi (S7, Brandt 2001 inline); alegori atribütleri yok (S7).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S6",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "İkinci versiyon daha geometrik, figürler daha kontemplatif; birinci versiyon daha barok, hareketli; Mérot \"l'horizontalité et l'équilibre de la composition de 1638\"; dewiki ikinci resmi \"klassizistisch beruhigt\" sayar, \"tipik barok\" saymanın zorluğunu tartışır (kontrast, teatral-pathetik jest, Phantasiekunst, idealize doğa; Claude Lorrain paraleli).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S8",
+    "S7",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Yazıtta \"être\" fiilinin ellipsi; şimdiki zaman \"Même en Arcadie j'existe\" → Ölüm konuşur (memento mori, \"double mise en garde\", Orta Çağ ahlakçı geleneği); geçmiş zaman \"Moi aussi j'ai vécu en Arcadie\" → ölü konuşur (elegyak, Roma mezar adeti).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S8",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Panofsky: şimdiki zaman çevirisi \"la seule grammaticalement correcte\"; Louvre versiyonu için geçmiş zaman/elegyak okuma daha uygun; Brandt itirazı: geçmiş zaman \"grammatisch durchaus möglich … bereits von Poussin intendiert\" (→ C058).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S8",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Panofsky'nin Louvre yorumu (Louvre'un Panofsky 1969 s.295'e atfı): \"Les Arcadiens ne sont pas tant menacés par un futur implacable qu'ils ne méditent avec douce nostalgie sur un passé de pure beauté\"; iki versiyon Orta Çağ/modern duyarlılık sınırının iki yanında.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Aphorism antik edebiyattan gelmez; muhtemelen Paul V Borghese çevresinde üretildi (\"probablement dans l'entourage du pape Paul V Borghèse\"); ilk kez Guercino'nun 1618 tablosunda.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S6",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Bellori: 'I' = Ölüm (memento mori); Félibien: 'I' = mezardaki kişi (\"la personne enterrée dans cette tombe a vécu en Arcadie\"); Félibien okuması 18–19. yy'da yaygın.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S6",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Panofsky iki temel deneme: 1936 (Cassirer Festschrift, Oxford, Clarendon, s.223–254) ve 1955 (Meaning in the Visual Arts, s.295–320); Fr. çeviri 1969; metne erişilmedi (→ C060).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S8",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Mérot 2010 (Louvre'un atfı): Louvre tablosunun Hristiyan boyutu ihmal edilmemeli; Chatsworth dikey kompozisyon + kafatası/haç emblemi = geleneksel vanitas; 1638 yataylığı/dengesi = \"la majesté sereine d'un Virgile chrétien … Rome d'Urbain VIII Barberini\"; Marino (Poussin'in ilk koruyucusu) karşıtlığı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Bonnefoy 1995 (Dessin, couleur, lumière, Mercure de France, ISBN 2715219334) bu tablolara bir makale ayırır; Vieillard-Baron 2010 (Hermann, s.7–8): \"Moi, le peintre, je survis à la mort dans la patrie des artistes immortalisés par leurs œuvres\"; metne erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "fr/it wiki (atıfsız): \"Aujourd'hui, memento mori est le sens le plus généralement accepté\" / \"Attualmente, è la prima interpretazione a godere di maggiore riconoscimento\" (→ C055).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C024",
+   "ifade": "Herder/Schiller/Goethe'nin \"Auch ich war in Arkadien (geboren)\" okuması Panofsky'nin elegyak yorumundan sonra yaygınlaştı; Herder Ideen 7,1; Schiller Resignation 1787; Goethe Italienische Reise motto (1829 son baskıda çıkarıldı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Ezoterik anagram iddiaları: \"I! Tego arcana dei\" (Baigent/Leigh/Lincoln 1982); \"Iesu Arcam dei tango\" (Andrews/Schellenberger 1996); Rennes-le-Château (Gérard de Sède 1967); Plantard/Priory of Sion \"hoax\"; itwiki \"pseudostorici … scartata dagli storici dell'arte\". Ders olgusu DEĞİL, atıflı resepsiyon notu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S9",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C026",
+   "ifade": "Provenance (Louvre): Giulio Rospigliosi (1600–1669, kardinal, sonra Papa IX. Clemens) → Chevalier Henri Avice (ingénieur du Roi; cf. Thuillier 1960a) → Charles Antoine Hérault (1644–1718) → Louis XIV için satın alma 1685 (Le Brun env. no 441); Joconde APTN daha kısa: \"Avice chevalier d' (?) ; Hérault (vente : 1685) ; Louis XIV ; Couronne de France\" (→ C046).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Versailles: Petit Appartement vestibule 1695–1707; cabinet de la Pendule dessus-de-porte 1738; 1787 Durameau, 1794, 1797 env.; musée spécial de l'École française <1801 (Catalogue de l'an X no 187 s.47); Louvre'a dönüş 1816 (Forbin 9 Temmuz'da gördü, 20 Temmuz'da transfer; Notice 1816 no 122); 18 Mart 1950 Petit Palais'ya depozito.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "itwiki (atıfsız): tablo eskiden Nicolas Fouquet'nin mülküydü (\"che l'aveva avuto da Poussin stesso\"); A düzeyi Louvre/Joconde zinciriyle ÇELİŞİR; Fouquet adı S2/S3/S4'te geçmez; derste KULLANILMADI (→ C054).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "kullanilmadi"
+  },
+  {
+   "id": "C029",
+   "ifade": "Edinim: \"entrée - Collection de Louis XIV\"; önceki sahip Louis XIV (1685).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Teknik: toile sergée 21×10 fil/cm²; brun-rouge préparasyon; üstte 7 cm, altta 2 cm bantla büyütülmüş (utpictura sağda 4,5 cm ekler → C045).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Restorasyonlar: 1806 rentoilage Hacquin + couche picturale Hooghstoël (cf. Massing 2012); 1825 Hacquin/Maillol; 1940 Zezzos; 1967–68 Goulinat; 1995 Lutet (cire-résine, bandes de tension, yeni şasi); orijinal/rentoilage yapışması zayıf kalır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Étienne Picart tarafından ters yönde (en contrepartie) gravür; lejant \"Le souvenir de la mort au milieu des prosperitez de la vie\" (cf. Wildenstein G. 1957b); Joconde GENE \"reproduit en gravure\"; utpictura ilgili notice.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Chateaubriand'ın 1828'de Poussin'e adadığı anıt (San Lorenzo in Lucina, Roma; Poussin orada gömülü) Bergers imgelerini kullanır (en/it wiki 1832 rölyefi der → C049).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Verdi 1979 (Burlington Magazine 121/911, s.95–107, JSTOR 879536): tablonun kritik talihini izledi; 18. yy'da Versailles'da erişilmez konumda olduğu için uzun süre yanlış anlaşıldı; metne erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S6",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Shugborough House Shepherd's Monument rölyefi (18. yy ortası, mermer) gravürden ters kopya; Shugborough yazıtı \"as yet undeciphered\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S9",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Sergiler (Louvre listesi): Poussin et Dieu (Louvre 30/03–29/06/2015, cat.55); Lyon MBA \"prêt d'un an\" 29/03/2000–28/02/2001; Frick 1997–98; Royal Academy 1995; Grand Palais 1994–95; Budapest 2012–13; Denver/Atlanta 2007.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Louvre bibliyografyası (kayıt): Rosenberg 2015 n°15 s.150–159; Milovanovic 2021 n°430 s.205–206; Batalla-Lagleyre 2016 (Revue de l'art 192, s.31–39, \"Henry Avice…\"); Panofsky 1936 s.223–254 (başlıkta \"Edo\" dizgi hatası); metinlere erişilmedi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Joconde BIBL: \"BLUNT 120 ; C.P.I. 663\" (C.P.I. 663 ≈ S2'deki Compin 1974 n°663).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "utpictura18 bibliyografyası: P. Rosenberg & L. A. Prat, Nicolas Poussin (cat), RMN, 1994, n°93, s.283; metne erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Chatsworth ilk versiyon (Louvre commentaire): \"vers 1628\", huile sur toile, 98,5 × 72,5 cm, Chatsworth; WD Q11919094: 1628, 101×82 cm (→ C043/C044); fr wiki \"selon toute vraisemblance, une œuvre de commande\"; en/it \"probably commissioned as a reworking of Guercino's version\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S12",
+    "S6",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Guercino öncülü: 1618 (S2) / c.1618–1622 (S8/S9); GNAA Roma; S2 \"galerie Corsini … 81 × 91 cm\", S6/S8 Barberini/GNAA (→ C047); ön planda kafatası.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S6",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "D01 tarih ihtilafı: Louvre \"vers 1638\" (A) ↔ WD 1638 ↔ utpictura 1638 ↔ enwiki 1637–1638 (Braider 2015) ↔ frwiki gövde 1637–1638 / infobox 1638–1640 (iç çelişki) ↔ dewiki \"um 1640\" ↔ itwiki \"circa 1640\" ↔ data \"1637–39\" (1639 bitişini destekleyen çekilmiş kaynak YOK).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S1",
+    "S5",
+    "S8",
+    "S6",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D02 Chatsworth tarihi: en/it 1627 ↔ WD 1628 ↔ fr infobox 1628–1630 ↔ de \"um 1630\" ↔ Louvre \"vers 1628\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S9",
+    "S12",
+    "S6",
+    "S7",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D03 Chatsworth boyutu: WD+fr 101×82 ↔ Louvre commentaire 98,5×72,5; Chatsworth'in kendi birincil kaydı çekilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S12",
+    "S6",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "D04 büyütme bantları: Louvre \"7 cm en haut … 2 cm en bas\" ↔ utpictura \"7 cm en hauteur, 4,5 cm à droite, 2 cm en bas\"; hangisi güncel bilinmiyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "D05 provenance derinliği: Louvre Rospigliosi→Avice (cf. Thuillier 1960a)→Hérault→Louis XIV 1685 ↔ Joconde \"Avice chevalier d' (?)\" (Rospigliosi YOK, Avice şüpheli).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "D06 Guercino tablosunun yeri: Louvre \"galerie Corsini (GNAA; 81×91)\" ↔ fr \"palais Barberini\" ↔ en/it GNAA Roma (+ galleriaborghese.it/barberini); GNAA'nın iki sitesi var; hüküm verilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S6",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "D07 gölge kimin: en/fr \"the shadow of his companion\"/\"l'ombre de son compagnon\" ↔ data \"diz çöken çobanın gölgesi\"; görsel incelenmedi, akademik metne erişilmedi → çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "D08 Poussin anıtı/rölyef tarihi: Louvre Chateaubriand hommage \"en 1828\" ↔ en/it \"In 1832 another relief was sculpted\" (Warwick/Scott 1999); farklı olaylar olabilir; netleştirilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "D09 Plinius referansı: fr/en \"XXXV, V, 15\"/\"XXXV 5, 15\" ↔ de \"Buch 35, 16, 5\"; numaralandırma baskıya göre değişebilir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S8",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "D10 Sannazaro Arcadia tarihi: fr 1502 ↔ de/en/it 1504.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "D11 tür sınıflaması: WD P136 \"mythological painting\" ↔ utpictura \"Scène de genre. Pastorale\" ↔ Joconde REPR \"scène mythologique\"; etiketler kaynaklara göre değişiyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S5",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C053",
+   "ifade": "D12 itwiki boyut hatası: it \"122 per 85\" ↔ Louvre/Joconde/utpictura/WD/en 121×85; 121 esas alınmalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S1",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C054",
+   "ifade": "D13 itwiki Fouquet provenance: it (atıfsız) \"proprietà del … Nicolas Fouquet (che l'aveva avuto da Poussin stesso)\" ↔ Louvre/Joconde A zinciri (Fouquet YOK); ciddi çelişki; A zinciri esas, it iddiası kullanılmaz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C055",
+   "ifade": "D14 yorumun bugünkü durumu: fr/it (atıfsız) \"memento mori bugün en kabul gören\" ↔ Panofsky çizgisi (Louvre için elegyak/geçmiş zaman belirleyici); gerilim; yorumlar çoğul sunulmalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S9",
+    "S2",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C056",
+   "ifade": "D15 Louvre güncelleme tarihi: HTML \"03.09.2025\" ↔ JSON modified \"2026-08-11\"; metadata tutarsızlığı, içerik aynı notice.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C057",
+   "ifade": "D16 Brandt baskı yılı: en References 2000 ↔ de/it 2. Aufl. 2001; metne erişilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C058",
+   "ifade": "E06 dilbilgisi tartışması: Panofsky \"la traduction au présent est la seule grammaticalement correcte\" ↔ Brandt geçmiş zaman \"grammatisch durchaus möglich … bereits von Poussin intendiert\" ↔ de \"nur schwer mit der lateinischen Grammatik vereinbar\"; kesinleştirilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C059",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (yalnız metadata + lisans + çözünürlük); Commons PD dosyası 10925×7605 px; data'nın görsel betimlemeleri (ışık soldan, renkler, jestler, \"üç çoban\" sayımı) çekilen metin kaynaklarıyla doğrulanmadı (E15/E10); GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C060",
+   "ifade": "Kitap/makale metinlerine erişilmedi (Panofsky, Verdi, Mérot, Rosenberg, Rosenberg/Prat, Milovanovic, Batalla-Lagleyre, Bonnefoy, Vieillard-Baron, Brandt, Becht-Jördens/Wehmeier, Barker, Braider, Warwick/Scott, Bellori, Félibien, Massing, Thuillier, Wildenstein vb.); yalnızca erişilen kayıtların bibliyografyasında/atıflarında görüldü; ISBN/DOI/sayfa bilgileri kaynakta yazıldığı gibi aktarıldı, bağımsız doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "Kadın figürünün kimliği uzlaşımsız (E05): \"possibly a shepherdess\" / \"profil grec\" / Cesi Juno / Pictura–\"Daphne-Laura\" / Pictura ama Ölüm'ün sözüne gönderme (Becht-Jördens/Wehmeier); data \"Kadının kimliği tartışmalıdır\" uyumlu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S6",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C062",
+   "ifade": "WD öğe haritası (E11): Q1140358 = Louvre ikinci versiyon; Q11919094 = Chatsworth ilk versiyon (Q19969057 redirect); Q15805858 = \"group of two paintings\" (enwiki+frwiki canonical); Q111318187 = Latince fras (itwiki+de canonical); en/it maddeleri Q1140358'e sitelink DEĞİL; aynı fr sayfasına iki öğe iddiası.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S12",
+    "S13",
+    "S14",
+    "S6",
+    "S8"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C063",
+   "ifade": "Edebi kaynak: Arkadya'da yazıtlı mezar teması Vergilius Bucolica/Eclogae V 42 vd. (Daphnis); Theokritos Idyllia'nın Sicilya çobanları Arkadya'ya taşınır; Sannazaro Arcadia (1502/1504 → C051) Arkadya'yı yitirilmiş idil olarak sabitler; Lorenzo de' Medici çevresi 1460–70'lerde yeniden canlandırır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q1140358 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1140358.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Musée du Louvre",
+   "belge": "Katalog notice (HTML), cl010062528",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010062528",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML",
+   "tur": "birincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Musée du Louvre",
+   "belge": "Notice JSON (S2'deki \"Notice JSON\" linki)",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010062528.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Fransa Kültür Bakanlığı / Joconde (POP)",
+   "belge": "Notice 000PE002198",
+   "url": "https://pop.culture.gouv.fr/notice/joconde/000PE002198",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (JS; gömülü __next_f payload decode)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Aix-Marseille Üniv. / Utpictura18 (CIELAM)",
+   "belge": "Notice #000973 \"Les bergers d'Arcadie (version du Louvre, 1638)\"",
+   "url": "https://utpictura18.univ-amu.fr/notice/973-bergers-darcadie-version-louvre-1638-poussin",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikipedia fr",
+   "belge": "\"Les Bergers d'Arcadie\" → \"Et in Arcadia ego (Poussin)\" wikitext",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=Les%20Bergers%20d%27Arcadie&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikipedia de",
+   "belge": "\"Et in Arcadia ego (Poussin)\" → \"Et in Arcadia ego\" wikitext",
+   "url": "https://de.wikipedia.org/w/api.php?action=parse&page=Et%20in%20Arcadia%20ego%20(Poussin)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikipedia en",
+   "belge": "\"Et in Arcadia ego (Poussin)\" wikitext (wikibase_item=Q15805858; Q1140358 sitelink'i DEĞİL)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Et%20in%20Arcadia%20ego%20(Poussin)&prop=wikitext|properties&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 ilk; ~3 dk backoff sonra 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikipedia it",
+   "belge": "\"Et in Arcadia ego (Poussin)\" → \"Et in Arcadia ego\" wikitext (wikibase_item=Q111318187)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Et%20in%20Arcadia%20ego%20(Poussin)&prop=wikitext|properties&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikipedia en",
+   "belge": "\"Et in Arcadia ego\" disambiguation wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Et%20in%20Arcadia%20ego&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (WD P18 dosyası); İNCELENMEDİ",
+   "url": "https://commons.wikimedia.org/wiki/File:Les_Bergers_d%27Arcadie_-_Nicolas_Poussin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_7300_;_MR_2339.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wikidata",
+   "belge": "Q19969057 → Q11919094 (Chatsworth ilk versiyon) EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q19969057.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikidata",
+   "belge": "Q15805858 (\"group of two paintings by Nicolas Poussin\") EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q15805858.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "Wikidata",
+   "belge": "Q111318187 (\"Latin phrase\") EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q111318187.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S15",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiket çözümlemesi (23 QID)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q1140358&props=labels|descriptions",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Et in Arcadia ego",
+   "sanatci": "Guercino (Giovanni Francesco Barbieri)",
+   "kurum": "Galleria Nazionale d'Arte Antica, Roma",
+   "gerekce": "Konunun ilk resimsel örneği (1618); ön plandaki kafatası yazıtın şimdiki zaman/Ölüm okumasını somutlaştırır; Poussin'in öncülü.",
+   "kanit": [
+    "C041",
+    "C018",
+    "C011"
+   ]
+  },
+  {
+   "eser": "Et in Arcadia ego (ilk versiyon, Q11919094)",
+   "sanatci": "Nicolas Poussin",
+   "kurum": "Chatsworth House, Derbyshire",
+   "gerekce": "Aynı konunun ilk versiyonu (vers 1628); barok/dikey/kafataslı ↔ Louvre'un geometrik/yatay/kafatasız yorumu.",
+   "kanit": [
+    "C040",
+    "C014",
+    "C011"
+   ]
+  },
+  {
+   "eser": "İdeal manzara (ör. bir Claude Lorrain)",
+   "sanatci": "Claude Lorrain",
+   "mufredat_ici": true,
+   "gerekce": "Poussin'in idealize doğa anlayışının çağdaş paraleli (dewiki); pastoral/Arkadya manzara geleneği.",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Louvre birincil notice (S2) + JSON (S3) + Joconde POP (S4, gömülü payload) + utpictura18 (S5) + fr/de/en/it wikitext (S6–S9) + WD (S1/S12/S13/S14) + Commons metadata (S11) 14 Kasım 2026'da ham cache'den yeniden okunup iddialarla karşılaştırıldı. Künye/provenance/teknik/restorasyon/Picart/sergiler A; Panofsky/Mérot commentaire Louvre'un atfı olarak B (metne erişilmedi). 17 ihtilaf D (C042–C058) açık; data \"1637–39\" 1639 bitişi desteksiz; itwiki 122 cm + Fouquet reddedildi. Görsel İNCELENMEDİ (C059) → GZ TASLAK; kitap/makale metinleri erişilmedi (C060).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih (D01/C042): data/basyapitlar.json + harita.json \"1637–39\"; 1639 bitişini destekleyen çekilmiş kaynak YOK. Louvre \"vers 1638\" (A); en yaygın ikincil 1637–1638; fr infobox 1638–1640; de \"um 1640\"; it \"circa 1640\". data DEĞİŞTİRİLMEZ.",
+  "Gölge (D07/C048): data \"diz çöken çobanın gölgesi\" ↔ en/fr \"his companion\"/\"son compagnon\"; görsel incelenmedi → çözülmedi; ders gölge-atfını kesinleştirmez.",
+  "Figür sayımı (E10/C059): data \"üç çoban ve bir kadın\" ↔ en/fr gölge pasajı \"two shepherds\"/\"deux bergers\"; görsel doğrulama gerektirir; ders sayı dayatmaz.",
+  "Renk/yüzey (E15/C059): data \"Toprak tonlarındaki manzara…\" ders_kaynaklari.json'da zaten durum:\"yanlis\" (id d9a885c3c1); bu ders renk/yüzey yargısı vermez (görsel incelenmedi).",
+  "itwiki hataları (D12/C053, D13/C054): 122 cm (birincil 121) ve Fouquet provenance (A zincirinde yok); data'da yok ama ders S9'dan beslenmez; 121 esas, Fouquet kullanılmaz.",
+  "WD nuance: P195 = Q3044768 (Department of Paintings of the Louvre), Q19675 değil; P571=1638 yıl precision, P1480 yok; Joconde'da yıl alanı YOK (PERI 2e/3e quart 17e) → 1638 Louvre+utpictura'dan (E12).",
+  "WD öğe parçalanması (E11/C062): Q1140358 (Louvre) / Q11919094 (Chatsworth) / Q15805858 (grup) / Q111318187 (fras); en/it maddeleri Q1140358'e sitelink DEĞİL.",
+  "Önceki AI doğrulama seviyeleri devralınmadı: ders_kaynaklari.json adayları (7e862fcdac, 6c10f65ab4 dogrulandi; d9a885c3c1 yanlis) ham kanıtla yeniden değerlendirildi.",
+  "Görsel (C059): İNCELENMEDİ; GZ TASLAK; Louvre/RMN fotoğrafları izinli (E14); insan editör görsel teyidi zorunlu."
+ ]
+}

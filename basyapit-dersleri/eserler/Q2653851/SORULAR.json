@@ -1,0 +1,581 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2653851",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Çarmıhın Dikilişi triptiği bugün nerede sergileniyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Anvers Onze-Lieve-Vrouwekathedraal (in situ)"
+    },
+    {
+     "harf": "B",
+     "metin": "KMSKA (Anvers Güzel Sanatlar Kraliyet Müzesi)"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "St Walburga Kilisesi, Anvers"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10/S08/S09 birincil: katedralde in situ; envanter 947.",
+   "yanlis_gerekceleri": {
+    "B": "KMSKA'daki 10012 envanterli \"Kruisoprichting\" 1747 tarihli bir gravür+ets'tir (356×415 mm); triptik değil. WD'nin 10012'yi triptiğe bağlaması nesne karışıklığıdır.",
+    "C": "Louvre triptiği 1794–1815 arasında \"grande galerie\"de sergiledi; 1815'te iade edildi. Bugünkü yer katedraldir.",
+    "D": "St Walburga özgün sipariş yeridir ama 1797'de gümrük deposu oldu, 1817'de yıkılmak üzere satıldı; eser orada değil."
+   },
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Triptiğin katedral/Art in Flanders envanter numarası kaçtır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "947"
+    },
+    {
+     "harf": "B",
+     "metin": "10012"
+    },
+    {
+     "harf": "C",
+     "metin": "INV 20188"
+    },
+    {
+     "harf": "D",
+     "metin": "MNR 411"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S08/S09/S06: Inventarisnummer 947; Grieten 1996 \"nr. 947\".",
+   "yanlis_gerekceleri": {
+    "B": "10012, KMSKA'nın 1747 tarihli gravür+ets baskısının envanteridir; WD triptiğe yanlış bağlamıştır (nesne karışıklığı).",
+    "C": "INV 20188, Louvre'daki genel kompozisyon eskizinin (Recto) envanteridir; triptiğin değil.",
+    "D": "MNR 411, Louvre'daki modello'nun envanteridir; triptiğin değil."
+   },
+   "kanit": [
+    "C008",
+    "C039"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "KMSKA'nın 10012 envanterli \"Kruisoprichting\"i nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1747 tarihli gravür+ets baskı (356×415 mm)"
+    },
+    {
+     "harf": "B",
+     "metin": "Rubens'in triptiğinin kendisi"
+    },
+    {
+     "harf": "C",
+     "metin": "~1638 küçültülmüş versiyon"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre modello'sunun kopyası"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S11 birincil KMSKA kaydı: Datum 1747; Medium \"gravure en ets op papier\"; 356×415 mm; Max Rooses bağışı 1900; kategori \"grafiek\".",
+   "yanlis_gerekceleri": {
+    "B": "Triptik Anvers Katedrali'ndedir (env 947); 10012 ayrı bir nesnedir — WD karışıklığının konusu.",
+    "C": "~1638 küçültülmüş versiyon kâğıt üzerine yağlıboyadır ve Art Gallery of Ontario'dadır (1928'den beri); KMSKA baskısıyla karıştırılmamalıdır.",
+    "D": "Modello Louvre'dadır (MNR 411); KMSKA 10012 bir baskıdır, modello kopyası olarak kaydedilmemiştir."
+   },
+   "kanit": [
+    "C039"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Birincil kayıtlara göre eserin tekniği/desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, panel (ahşap)"
+    },
+    {
+     "harf": "B",
+     "metin": "Yağlıboya, tuval"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt üzerine yağlıboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10 \"Olieverf op paneel\"; S06 \"paneel\"; S02 \"Oil on wood\".",
+   "yanlis_gerekceleri": {
+    "B": "itwiki infobox'ı \"olio su tela\" (tuval) der ama lead'i \"olio su tavola\" (panel) ve birincil kayıtlar panel der; infobox hatalı görünür.",
+    "C": "Fresk (duvar resmi) değildir; eser taşınabilir panel sunaktır.",
+    "D": "Kâğıt üzerine yağlıboya, ~1638 küçültülmüş AGO versiyonunun tekniğidir; triptiğin değil."
+   },
+   "kanit": [
+    "C005",
+    "C036"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Katedralin resmî kaydına göre orta panelin boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "460×340 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "462×341 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "460×150 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "356×415 mm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10 \"middenpaneel: 460 x 340 cm\"; S06/S04 aynı.",
+   "yanlis_gerekceleri": {
+    "B": "462×341 en/itwiki varyantıdır; birincil kayıtla ~1–2 cm fark tartışmalıdır; katedral kaydı 460×340 der.",
+    "C": "460×150 cm kanatların (zijluiken) boyutudur; orta panelin değil.",
+    "D": "356×415 mm, KMSKA'nın 1747 baskısının boyutudur; triptik paneliyle karıştırılmamalıdır."
+   },
+   "kanit": [
+    "C006",
+    "C039"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Rooses'un arşiv dökümüne ve rubensonline'a göre Rubens'e ödenen toplam ücret ne kadardır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "2600 florin/gulden"
+    },
+    {
+     "harf": "B",
+     "metin": "1000 florin"
+    },
+    {
+     "harf": "C",
+     "metin": "500 florin"
+    },
+    {
+     "harf": "D",
+     "metin": "24 florin"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S14: 2600 için taahhüt; 17 Haziran 1610'da 1000 avans, 12 Ağustos 1611'de 500, 1611–1613'te 2×250+600; S06 toplam 2600 gulden (1610–1613 taksit).",
+   "yanlis_gerekceleri": {
+    "B": "1000 florin 17 Haziran 1610'daki ilk avanstır; toplam değil.",
+    "C": "500 florin 12 Ağustos 1611'deki ikinci ödemedir; toplam değil.",
+    "D": "24 florin, Ekim 1627'de Jan Baptist Bruno'ya ödenen temizlik ücretidir; Rubens'in ücreti değil."
+   },
+   "kanit": [
+    "C023",
+    "C033"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Siparişi sağlayan ve maliyetin çoğunu üstlenen kişi kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Cornelis van der Geest"
+    },
+    {
+     "harf": "B",
+     "metin": "Nicolaas Rockox"
+    },
+    {
+     "harf": "C",
+     "metin": "Jan Baptist Bruno"
+    },
+    {
+     "harf": "D",
+     "metin": "Willem Kerrickx"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S02 (Martin): zengin baharat tüccarı ve kilise yöneticisi van der Geest siparişi sağladı, maliyetin çoğunu üstlendi; S14 \"art is indebted to van der Geest\".",
+   "yanlis_gerekceleri": {
+    "B": "Rockox, Rubens'in başka işlerinin (ör. Çarmıhta İsa) patronudur; bu triptiğin siparişçisi olarak kaynaklarda geçmez.",
+    "C": "Bruno, 1627'de 24 florinle sunağı temizleyen kişidir; siparişçi değil.",
+    "D": "Kerrickx, 1735–1737 sunak modernizasyonunun ressam-heykeltıraşıdır; sipariş dönemiyle ilgisiz."
+   },
+   "kanit": [
+    "C021",
+    "C033",
+    "C026"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Triptik 1794'te nereye gönderildi ve 1815'e kadar nerede sergilendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Paris — Louvre \"grande galerie\""
+    },
+    {
+     "harf": "B",
+     "metin": "Berlin Sarayı"
+    },
+    {
+     "harf": "C",
+     "metin": "Madrid — Prado"
+    },
+    {
+     "harf": "D",
+     "metin": "Viyana — KHM"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S14: 1794'te Fransız Cumhuriyeti komiserleri Paris'e gönderdi; S06/S04: Louvre \"grande galerie\"de 1815'e kadar.",
+   "yanlis_gerekceleri": {
+    "B": "Berlin Sarayı, enwiki'nin atıfsız 1914 anlatısında geçer (doğrulanamadı); 1794 sevkiyatı Paris'edir.",
+    "C": "Prado'ya sevkiyat erişilen hiçbir kaynakta yoktur; 1794–1815 arası Louvre'dur.",
+    "D": "KHM'ye sevkiyat erişilen hiçbir kaynakta yoktur; 1794–1815 arası Louvre'dur."
+   },
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Kapalı görünümde dış kanatların tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Grisaille; yalnız Amandus'un kızıl cüppesi ve Eligius'un cope astarı renkli"
+    },
+    {
+     "harf": "B",
+     "metin": "Tam renkli yağlıboya"
+    },
+    {
+     "harf": "C",
+     "metin": "Renksiz, hiçbir istisna yok"
+    },
+    {
+     "harf": "D",
+     "metin": "Yaldızlı arka plan üzerine tempera"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S14 (Rooses): \"reverse of the shutters is painted in grisaille without bright colour, except for the scarlet robe of St Amandus and the red lining of the cope of St Eligius\"; S02/S04 dört aziz.",
+   "yanlis_gerekceleri": {
+    "B": "Dış kanatlar tam renkli değildir; grisaille'dir; renk yalnız iki istisnada.",
+    "C": "\"Hiçbir istisna yok\" yanlıştır: Rooses Amandus'un kızıl cüppesi ve Eligius'un kırmızı astarını açıkça istisna sayar.",
+    "D": "Yaldızlı arka plan/tempera erişilen kaynaklarda geçmez; yaldız yalnız taçlandırmadaki pelikanda anılır."
+   },
+   "kanit": [
+    "C013",
+    "C025"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Rubens'in ana konu haline getirdiği \"hırsızın çarmıhının dikilişi\" eylemi hangi eserde tali eylemdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tintoretto — San Rocco Crucifixion"
+    },
+    {
+     "harf": "B",
+     "metin": "Caravaggio — Entombment"
+    },
+    {
+     "harf": "C",
+     "metin": "Michelangelo — Sistine tavanı"
+    },
+    {
+     "harf": "D",
+     "metin": "Guido Reni — Ecce Homo"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S14 (Rooses)/S02 (Martin): Tintoretto'da İsa'nın çarmıhı dikilmiş, hırsızınki dikilmektedir; Rubens bu tali eylemi ana konu yapar.",
+   "yanlis_gerekceleri": {
+    "B": "Caravaggio Entombment diyagonal ve tenebrizm kaynağıdır; çarmıh dikme eylemi değil.",
+    "C": "Michelangelo Sistine nü'leri anıtsal beden kaynağıdır; kompozisyonun dikme eylemi değil.",
+    "D": "Guido Reni Ecce Homo, İsa'nın baş ifadesi için karşılaştırma noktasıdır (Rooses); dikme eylemi değil."
+   },
+   "kanit": [
+    "C064",
+    "C019"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser hâlâ özgün sipariş yeri olan St Walburga Kilisesi'ndedir.",
+   "dogru": false,
+   "aciklama": "Yanlış: St Walburga 1797'de gümrük deposu oldu, 1817'de yıkılmak üzere satıldı; triptik 1815 iadesinden sonra katedraldedir (yerleştirme 1815/1816 tartışmalı).",
+   "kanit": [
+    "C007",
+    "C029",
+    "C030"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Katedral kaydına göre orta panel 460×340 cm, her kanat 460×150 cm'dir.",
+   "dogru": true,
+   "aciklama": "Doğru (S10 \"middenpaneel: 460 x 340 cm / zijluiken: 460 x 150 cm\"; S06/S04 aynı).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Wikidata'nın P217=10012 envanter numarası triptiğe aittir.",
+   "dogru": false,
+   "aciklama": "Yanlış: 10012, KMSKA'nın 1747 tarihli gravür+ets baskısına (356×415 mm, Rooses bağışı 1900) aittir; triptiğin envanteri 947'dir. WD nesne karışıklığıdır (D005).",
+   "kanit": [
+    "C039",
+    "C008"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Rubens panoları kilisenin içinde, inananların gözünden bir gemi yelkeniyle gizlenerek boyadı.",
+   "dogru": true,
+   "aciklama": "Doğru (S06 \"scheepszeil\"; S14 kaptanın ödünç verdiği örtü; Wapper atölyesi henüz yoktu).",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "1627 rötuşu eserin tasarımını önemli ölçüde değiştirdi.",
+   "dogru": false,
+   "aciklama": "Yanlış: 1627'de önce Bruno temizliği (24 florin), sonra Rubens'in söz verdiği rötuşu; tasarımda değişiklik yok; icra birleşik (Rooses/enwiki).",
+   "kanit": [
+    "C033"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih kümesini (D001) ve sözleşme/temas ayrımını (D007) analiz edin: neden tek yıl dayatılamaz? rubensonline'ın alan-anlatı gerilimini değerlendirin.",
+   "beklenen_ogeler": [
+    "katedral 1609–1610",
+    "enwiki/Martin 1610–1611",
+    "nlwiki \"mogelijk begin 1611\"",
+    "WD preferred 1610'lar prec=8",
+    "1609 temas ↔ Haziran 1610 Klein Zeeland",
+    "alan \"1609-10\" ↔ anlatı 1610→1611"
+   ],
+   "kanit": [
+    "C003",
+    "C022",
+    "C058"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "WD nesne karışıklığını (D005) ve 430 cm genişliği (D004) kaynak eleştirisiyle değerlendirin: birincil kayıtlar ne diyor, WD neyi yanlış bağlıyor?",
+   "beklenen_ogeler": [
+    "P217/P4905=10012",
+    "KMSKA 1747 gravür+ets 356×415",
+    "Rooses bağışı 1900",
+    "triptik env 947",
+    "P2049=430 \"center region\" dayanaksız",
+    "birincil 460×340"
+   ],
+   "kanit": [
+    "C051",
+    "C045",
+    "C039",
+    "C008",
+    "C006"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Predella akıbetini (D008) dört kaynak üzerinden karşılaştırın: Rooses 1904 izleri, enwiki \"bilinmiyor\", rubensonline 2016 Leipzig/Flint, itwiki \"tek panel\". Hangisi güncel?",
+   "beklenen_ogeler": [
+    "1898 Valenciennes Foucart",
+    "1840 Gent Schamp d'Aveschoot",
+    "1881 Duchastel",
+    "Leipzig MdbK",
+    "Flint Institute of Arts",
+    "enwiki 1904'e dayalı/güncel değil",
+    "\"waarschijnlijk vernietigd\""
+   ],
+   "kanit": [
+    "C047",
+    "C027",
+    "C025",
+    "C026"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Otoportre yorumunu (E001) ve data/ görsel-içi iddialarını (E007: havlayan köpek, titulus, kızıl güneş, panolar arası boşluk) değerlendirin: görsel inceleme olmadan ne söylenebilir?",
+   "beklenen_ogeler": [
+    "enwiki \"may be\"",
+    "Rooses \"in whom we recognise Rubens\"",
+    "Sotheby's nü çalışma → zırhlı figür",
+    "köpek \"agitated/panting\"",
+    "titulus kaynaklarda yok",
+    "görsel İNCELENMEDİ → GZ TASLAK"
+   ],
+   "kanit": [
+    "C016",
+    "C018",
+    "C054",
+    "C060",
+    "C015",
+    "C035"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kutsal topografya okumasını (Lawrence: Holy Sepulchre→Golgotha; Heinen: Herolt 1435) ve Karşı-Reform bağlamını tartışın: tarihsel olgu ile yorumu ayırın.",
+   "beklenen_ogeler": [
+    "1613 şapel restorasyonu",
+    "yüksek sunak konumu",
+    "Trent guidelines",
+    "Judson \"ilk tam Barok mekân\"",
+    "Lawrence/Heinen metinleri açılmadı (B zinciri)",
+    "katedral bakış yorumu (A)"
+   ],
+   "kanit": [
+    "C063",
+    "C020",
+    "C014",
+    "C061",
+    "C037"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Orta panelde sağ alttan sol üste uzanan çapraz çarmıhı ve onu kaldıran dokuz adamı bulun; halat çeken celladı ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Rooses/enwiki): çarmıh paneli çapraz keser; dokuz adam tek çaba; halat yukarıdan çeker.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sol kanatta üstte Meryem ile Yuhanna'yı, altta yasçı kadınları (biri emziriyor) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Yuhanna Meryem'in ellerini okşar; altta çocuk + yaşlı kadın + üç genç kadın.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağ kanatta çarmıha hazırlanan iki hırsızı ve önde sopa ile emir veren atlı subayı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: iki atlı Romalı subay; biri sağ elinde baton; hırsızlardan biri bağlanırken diğeri itiliyor.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sol alt köşedeki büyük, kahverengi-beyaz kıvırcık tüylü köpeği bulun; davranışını betimleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Rooses \"curly brown and white hair\"; enwiki \"agitated… panting\" — \"havlayan\" kaynaklarda yok.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Kapalı görünümde grisaille dört azizi bulun; iki renk istisnasını (Amandus kızıl cüppe, Eligius cope astarı) işaretleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: sol Amandus+Walburga, sağ Katarina+Eligius (çoğunluk); Rooses eşleştirmesi farklı (tartışma).",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Temel künye?",
+   "arka": "De Kruisoprichting / The Elevation of the Cross; Peter Paul Rubens (1577–1640); kanatlı triptik; yağlıboya panel; orta 460×340, kanatlar 460×150; Anvers Katedrali in situ, env 947.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sipariş + ödeme + icra koşulu?",
+   "arka": "St Walburga yüksek sunak; Cornelis van der Geest (baharat tüccarı) sağladı, çoğunu ödedi; 2600 florin (17 Haziran 1610: 1000; 12 Ağustos 1611: 500; 1611–1613: 2×250+600); kilise içinde gemi yelkeni arkasında boyadı.",
+   "kanit": [
+    "C021",
+    "C023",
+    "C024"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Kompozisyon (kaynak betimi)?",
+   "arka": "Dokuz adam, çapraz çarmıh (sağ alt→sol üst), İsa çivilenmiş; sol kanat Meryem+Yuhanna+yasçı kadınlar; sağ kanat iki hırsız+iki atlı subay; sol altta köpek; kararan gökyüzü (Mt 27:45).",
+   "kanit": [
+    "C010",
+    "C011",
+    "C012",
+    "C015",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance + müdahaleler?",
+   "arka": "1794 Paris/Louvre grande galerie; 1815 Hollanda kralına iade → katedrale hediye; van Regemorter temizliği; 1849 hasar raporu; 1847–1854 Etienne Le Roy restorasyonu; 1735–37 modernizasyon, predellalar 1737'de satıldı.",
+   "kanit": [
+    "C028",
+    "C030",
+    "C031",
+    "C026"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Envanter karışıklığı uyarısı?",
+   "arka": "WD P217/P4905=10012 → KMSKA'nın 1747 gravür+ets baskısı (356×415 mm; Rooses bağışı 1900); triptiğin envanteri 947. İki ayrı nesne!",
+   "kanit": [
+    "C039",
+    "C008"
+   ]
+  }
+ ]
+}

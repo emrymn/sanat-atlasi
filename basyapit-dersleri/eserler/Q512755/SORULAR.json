@@ -1,0 +1,551 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q512755",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Hermitage Museum, San Petersburg"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Rijksmuseum, Amsterdam"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado, Madrid"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2 birincil katalog: Hermitage Museum, San Petersburg.",
+   "yanlis_gerekceleri": {
+    "B": "Louvre Paris'te bir başka müzedir; birincil katalog eseri Hermitage'ta kaydeder.",
+    "C": "Rijksmuseum Amsterdam'dadır; bu eserin kurumu değildir.",
+    "D": "Prado Madrid'dedir; eser San Petersburg Hermitage'tadır."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Birincil katalog tekniği ne olarak verir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "oil on canvas (tuval üzerine yağlıboya)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk (duvar resmi)"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera (yumurta bağlayıcılı)"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya (kâğıt)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: Technique oil on canvas.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar üzerine yapılan bir tekniktir; katalog oil on canvas der.",
+    "C": "Tempera yumurta bağlayıcılıdır; birincil kayıt yağlıboya/tuval verir.",
+    "D": "Suluboya kâğıt desteklidir; eser tuval üzerine yağlıboyadır."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil boyut nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "262 × 205 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "262 × 206 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "205 × 262 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "262 × 205 mm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: Dimensions 262x205 cm.",
+   "yanlis_gerekceleri": {
+    "B": "206 cm genişlik itwiki varyantıdır; birincil Hermitage 205 cm der (D2).",
+    "C": "Boyutlar yer değiştirmiş; eser yüksekliği 262, genişliği 205 olan dikey bir tuvaldir.",
+    "D": "Birim hatası; katalog cm verir (GAC mm'yi w2050×h2620 olarak yazar)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Konunun İncil kaynağı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Luka 15:11–32 (müsrif oğul meseli)"
+    },
+    {
+     "harf": "B",
+     "metin": "Yaratılış (Genesis)"
+    },
+    {
+     "harf": "C",
+     "metin": "Matta 25 (on bakire meseli)"
+    },
+    {
+     "harf": "D",
+     "metin": "Yuhanna 11 (Lazarus)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2/K3: Luka 15:11–32, Parable of the Prodigal Son.",
+   "yanlis_gerekceleri": {
+    "B": "Genesis Eski Ahit'tir; konu Yeni Ahit Luka meselidir.",
+    "C": "Matta 25 on bakire meselidir; farklı bir anlatı.",
+    "D": "Yuhanna 11 Lazarus'un diriltilmesidir; müsrif oğul değil."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Hermitage katalogu eserin ne zaman yapıldığını söyler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ölümünden hemen önce, aylar içinde"
+    },
+    {
+     "harf": "B",
+     "metin": "Erken kariyer, 1630'lar"
+    },
+    {
+     "harf": "C",
+     "metin": "Çıraklık dönemi, Leiden"
+    },
+    {
+     "harf": "D",
+     "metin": "Ölümünden sonra, atölye tarafından"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: \"The artist painted the work just months before his death.\"",
+   "yanlis_gerekceleri": {
+    "B": "1630'lar erken dönemdir; katalog eseri ölümünden hemen önceye koyar.",
+    "C": "Çıraklık Leiden dönemidir; eser geç döneme aittir.",
+    "D": "Katalog posthum atölye üretimi demez; Rembrandt'ın ölümünden hemen önce yaptığı kayıtlıdır."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Kataloga göre eser hangi bağlamda üretildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Siparişsiz, Protestan Hollanda'da büyük dinî tuval"
+    },
+    {
+     "harf": "B",
+     "metin": "Katolik kilisesi sunağı için sipariş"
+    },
+    {
+     "harf": "C",
+     "metin": "Hollanda kraliyet ailesi siparişi"
+    },
+    {
+     "harf": "D",
+     "metin": "Lonca siparişi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Protestant Holland, no painted altarpieces, \"without any commission a huge painting\".",
+   "yanlis_gerekceleri": {
+    "B": "Protestan Hollanda kiliselerinde resimli sunak yoktu; katalog siparişsiz der.",
+    "C": "Kraliyet siparişi kaydı yok; eser siparişsiz üretilmiştir.",
+    "D": "Lonca siparişi değil; katalog \"without any commission\" der."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Eser üzerine 1992'de 'The Return of the Prodigal Son' kitabını kim yazdı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Henri Nouwen"
+    },
+    {
+     "harf": "B",
+     "metin": "Kenneth Clark"
+    },
+    {
+     "harf": "C",
+     "metin": "H. W. Janson"
+    },
+    {
+     "harf": "D",
+     "metin": "John I. Durham"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K4 (Nouwen 65–66): Nouwen 1992 \"A Story of Homecoming\".",
+   "yanlis_gerekceleri": {
+    "B": "Clark eseri \"greatest picture\" diye öven sanat tarihçisidir; 1992 kitabı Nouwen yazdı.",
+    "C": "Janson History of Art yazarıdır; müsrif oğul kitabı Nouwen'indir.",
+    "D": "Durham The Biblical Rembrandt yazarıdır; 1992 \"Homecoming\" kitabı Nouwen'indir."
+   },
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "1636 gravürü hangi kaynaktan etkilenmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Martin van Heemskerck tahta baskısı"
+    },
+    {
+     "harf": "B",
+     "metin": "Dürer gravürü"
+    },
+    {
+     "harf": "C",
+     "metin": "Rubens tuvali"
+    },
+    {
+     "harf": "D",
+     "metin": "Caravaggio"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K4 (Durham 172): \"influenced by a woodcut by Martin van Heemskerck\".",
+   "yanlis_gerekceleri": {
+    "B": "Dürer bu etki bağlamında kaynakta anılmaz; Durham Heemskerck woodcut der.",
+    "C": "Rubens adı geçmez; kaynak Heemskerck tahta baskısını işaret eder.",
+    "D": "Caravaggio etkili değildir; kaynak Heemskerck'i adlandırır."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Commons görselinin lisansı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Public domain (kamu malı)"
+    },
+    {
+     "harf": "B",
+     "metin": "CC BY-SA 4.0"
+    },
+    {
+     "harf": "C",
+     "metin": "All rights reserved"
+    },
+    {
+     "harf": "D",
+     "metin": "CC BY-NC"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K6: LicenseShortName/UsageTerms \"Public domain\", License pd; WD P6216=Q19652.",
+   "yanlis_gerekceleri": {
+    "B": "CC BY-SA atıf+lisans paylaşımı ister; dosya PD'dir, atıf zorunlu değil.",
+    "C": "\"All rights reserved\" geçerli değil; Rembrandt 1669'da ölmüş, PD-old-100.",
+    "D": "CC BY-NC ticari olmayan lisansıdır; dosya kamu malıdır."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Eser müzenin neresinde sergilenir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "The New Hermitage, Room 254"
+    },
+    {
+     "harf": "B",
+     "metin": "Winter Palace, Room 100"
+    },
+    {
+     "harf": "C",
+     "metin": "General Staff Building"
+    },
+    {
+     "harf": "D",
+     "metin": "Menshikov Palace"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Building The New Hermitage, Room 254.",
+   "yanlis_gerekceleri": {
+    "B": "Winter Palace Hermitage kompleksinin başka binasıdır; katalog New Hermitage 254 der.",
+    "C": "General Staff Building ayrı bir Hermitage binasıdır; eser New Hermitage'ta.",
+    "D": "Menshikov Palace başka bir binadır; katalog Room 254 New Hermitage verir."
+   },
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Hermitage Museum'dadır; envanter ГЭ-742.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2): ГЭ-742, Hermitage Museum, San Petersburg.",
+   "kanit": [
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Birincil katalog tarihi kesin \"1668\" olarak verir.",
+   "dogru": false,
+   "aciklama": "Yanlış: katalog \"circa 1668\" der; belirsizlik işareti korunur (C002).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Hermitage kaydı eserin 1766'da Catherine the Great koleksiyonundan girdiğini belirtir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2): \"Entered the Hermitage in 1766; the collection of Catherine the Great\".",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "enwiki (Sawyer atıflı) babanın iki elini birbirinin aynısı olarak betimler.",
+   "dogru": false,
+   "aciklama": "Yanlış: sol el iri/erkeksi, sağ el yumuşak/alıcı; \"seem to suggest mothering and fathering\" (C016).",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Henri Nouwen 1986'da Hermitage'ı ziyaret etti ve eser üzerine 1992'de bir kitap yazdı.",
+   "dogru": true,
+   "aciklama": "Doğru (K4, Nouwen 65–66): 1986 ziyaret, 1992 \"A Story of Homecoming\".",
+   "kanit": [
+    "C021"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih ihtilafını (D1) kaynak sıralamasıyla envanterleyin; birincili esas alıp 'circa'yı koruyun.",
+   "beklenen_ogeler": [
+    "circa 1668 (Hermitage)",
+    "1663–1665 (GAC)",
+    "1661–1669 (en)",
+    "WD 1665/1668",
+    "data ~1665",
+    "circa korunur"
+   ],
+   "kanit": [
+    "C030",
+    "C002"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "İki-el yorumunu en 'seem' hedge ↔ it kesin ifade farkıyla analiz edin; neden E düzeyinde?",
+   "beklenen_ogeler": [
+    "seem to suggest (Sawyer 313)",
+    "una maschile ed una femminile (it)",
+    "görsel teyit yok",
+    "yorum farkı D5"
+   ],
+   "kanit": [
+    "C016",
+    "C034"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "1766/1767 edinim ihtilafını ve bozuk donor adını kaynak eleştirisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "1766 Hermitage girişi",
+    "1767 Paris (GAC/WD)",
+    "Duke d'Ancesuine bozuk",
+    "tek kaynak çok yansıma",
+    "arşiv belgesi gerekli"
+   ],
+   "kanit": [
+    "C032",
+    "C038",
+    "C007"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "'Manevi vasiyet' okumasını (Rosenberg/Janson/Nouwen) alımlama tarihi ↔ sanatçı niyeti ayrımıyla tartışın.",
+   "beklenen_ogeler": [
+    "Rosenberg spiritual testament",
+    "Janson quietest",
+    "Nouwen iki oğul",
+    "yorum ≠ niyet kanıtı"
+   ],
+   "kanit": [
+    "C022",
+    "C023",
+    "C021",
+    "C009"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Fetus baş ve kör göz yorumlarının neden E düzeyinde olduğunu açıklayın; hangi kanıt türü gerekir?",
+   "beklenen_ogeler": [
+    "come quella di un feto (atıfsız)",
+    "occhi di cieco ↔ blinded by tears",
+    "görsel teyit",
+    "akademik atıf"
+   ],
+   "kanit": [
+    "C035",
+    "C036",
+    "C039"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Diz çökmüş oğlunla öne eğilen babayı bulun; kırmızı örtünün oluşturduğu kanopiyi fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Hermitage): kırmızı örtü kanopi; dumanlı alacakaranlık; öne eğilen baba.",
+   "kanit": [
+    "C012",
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Babanın iki elini karşılaştırın: sol el omuzda, sağ el daha yumuşak; fark görünüyor mu?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Sawyer 313): sol iri/erkeksi, sağ yumuşak/alıcı; 'seem' hedge.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağda elleri kavuşmuş, yargılayıcı büyük oğlun duruşunu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: sağda dikey, elleri kavuşmuş büyük oğul; kucaklaşmanın dışında.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Işığın baba-oğul grubunda yoğunlaşmasını ve babanın 'yıldız gibi' parlayan yüzünü inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Hermitage): yüz yıldız gibi parlar; teselli ışığı oğlun üzerine iner.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Oturan zengin giysili figürü bulun; kimliği (danışman/vergi toplayıcısı?) tartışmalıdır.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Sawyer 313): oturan zengin adam; 'may be an advisor or a tax collector'.",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Rembrandt (1606–1669); Return of the Prodigal Son; circa 1668; oil on canvas; 262×205 cm; Hermitage ГЭ-742; New Hermitage Room 254.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + kaynak?",
+   "arka": "Luka 15:11–32 müsrif oğul meseli; diz çökmüş oğul, bağışlayıcı baba; büyük oğul itirazı (15:29–30), baba yanıtı (15:32).",
+   "kanit": [
+    "C010",
+    "C024",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Kariyerdeki yeri?",
+   "arka": "Geç dönem; katalog 'ölümünden hemen önce'; tema dizisi 1636 gravürü (Heemskerck); Brothel c.1637; 1642 deseni.",
+   "kanit": [
+    "C009",
+    "C019",
+    "C020"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Alımlama?",
+   "arka": "Clark 'greatest picture'; Rosenberg 'manevi vasiyet'; Janson 'quietest'; Nouwen 1986 ziyaret → 1992 kitap.",
+   "kanit": [
+    "C015",
+    "C022",
+    "C023",
+    "C021"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Edinim + görsel?",
+   "arka": "1766 Hermitage girişi, Catherine the Great koleksiyonu; görsel PD (22991×30000 px, ~250 MiB).",
+   "kanit": [
+    "C007",
+    "C013"
+   ]
+  }
+ ]
+}

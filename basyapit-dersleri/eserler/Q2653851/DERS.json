@@ -1,0 +1,1112 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2653851",
+ "sanatci_id": "peter-paul-rubens",
+ "baslik": "Çarmıhın Dikilişi",
+ "ozgun_baslik": "De Kruisoprichting (The Elevation of the Cross / Innalzamento della Croce)",
+ "kunye": {
+  "sanatci": "Peter Paul Rubens",
+  "sanatci_yasam": "1577–1640",
+  "tarih": "1609–1610 (katedral) ↔ 1610–1611 (enwiki/WD/Commons); tartışmalı",
+  "tarih_belirsizlik": "Katedral \"1609 - 1610\"; rubensonline alan \"1609-10\" ama anlatı 1610→1610 sonu/1611 başı; enwiki (Martin 1969) 1610–1611; nlwiki \"1610 en mogelijk begin 1611\"; itwiki 1610 (atıfsız); WD preferred 1610'lar (prec=8); tek yıl dayatılmaz (C003 D)",
+  "teknik": "Yağlıboya, panel (ahşap) — \"Olieverf op paneel\"; meşe türü doğrulanamadı (E)",
+  "boyut_cm": {
+   "yukseklik": 460,
+   "genislik": 340
+  },
+  "muze": "Onze-Lieve-Vrouwekathedraal, Anvers (in situ)",
+  "envanter": "947",
+  "edinim": "St Walburga Kilisesi siparişi (van der Geest); 1794 Paris/Louvre; 1815 Hollanda kralına iade → katedrale hediye (yerleştirme 1815/1816 tartışmalı)",
+  "konum": "Katedral içi güncel yerleşim doğrulanamadı; Rooses 1904 \"left part of the transept\" (E)",
+  "telif_durumu": "Kamu malı (Rubens ö. 1640); Commons PD; kurumsal fotoğraflar (Hugo Maertens) \"Contractuele beperkingen\" — serbest değil"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Raising_of_the_Cross_(Cathedral_of_Antwerp).jpg",
+  "kaynak": "Wikimedia Commons (WD P18); credit: artinflanders.be/en/artwork/raising-cross (Art in Flanders/meemoo; foto Hugo Maertens — kurumsal fotoğraf \"Contractuele beperkingen\"); Commons reprodüksiyonu PD",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata (3 dosya); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "2429×1792 (WD P18); 2700×1941 (enwiki); 1201×757 (WGA)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C060); GZ TASLAK; kompozisyon S10/S02/S06/S14 metninden; kurumsal fotoğraf serbest değil (C052); data/ görsel-içi iddiaları (titulus, havlayan köpek, kızıl güneş, boşluk) doğrulanamadı (C018/C054)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 414
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1408
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2727
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-nesne-karışıklığı-ve-birincil-hiyerarşisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-sözleşme-ve-ödeme-arşiv-belgeleri-ve-sınırları",
+   "DERS_ILERI.md#4-provenance-devrim-iade-restorasyon"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#5-tasarım-süreci-ve-atölye"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#5-tasarım-süreci-ve-atölye"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#6-ikonografi-ve-kutsal-topografya"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-nesne-karışıklığı-ve-birincil-hiyerarşisi",
+   "DERS_ILERI.md#2-tarih-sözleşme-ve-ödeme-arşiv-belgeleri-ve-sınırları"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#3-özgün-kompleks-ve-kayıp-bütünlük",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Katedral + Art in Flanders birincil kayıtlarıyla künyeyi (triptik, panel, 460×340 / 460×150, env 947, in situ) doğrular.",
+  "WD nesne karışıklığını (P217/P4905=10012 → KMSKA 1747 baskısı) ve tarih/boyut ihtilaflarını yönetir; tek yıl/tek sayı dayatmaz.",
+  "Rooses arşiv dökümleriyle sipariş-ödeme-rötuş-restorasyon zincirini (2600 florin, 1610–1613, 1627, 1847–54) kaynak eleştirisiyle okur.",
+  "Kompozisyon ve ikonografiyi kaynak betimleriyle analiz eder; görsel incelenmediği için GZ TASLAK sınırını beyan eder.",
+  "Özgün kompleksin (predella/Baba Tanrı/pelikan) kaybını ve provenanceı (1794 Paris, 1815 iade) küratöryel anlatıya bağlar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Triptik (retabel triptiek)",
+   "tanim": "Kanatlı üç panelli sunak resmi; açık ve kapalı görünüm.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "ad": "Grisaille",
+   "tanim": "Gri tonlu tek renk boyama; dış kanatlarda, iki renk istisnasıyla (Amandus cüppesi, Eligius astarı).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "Predella",
+   "tanim": "Sunak altlığındaki küçük panolar; özgün kompleksin kayıp parçaları (1737 satışı).",
+   "kanit": [
+    "C025",
+    "C026"
+   ]
+  },
+  {
+   "ad": "Modello",
+   "tanim": "Patrona sunulan ve asistanlara model olan yağlıboya eskiz; Louvre MNR 411.",
+   "kanit": [
+    "C035",
+    "C068"
+   ]
+  },
+  {
+   "ad": "In situ",
+   "tanim": "Eserin müze dışında işlevsel bir yapıda (katedral) yerinde sergilenmesi.",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Ad: nl \"De Kruisoprichting\"; en \"The Elevation of the Cross\" (alias \"Raising of the Cross\"); it \"Innalzamento della Croce\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S08",
+    "S09",
+    "S01",
+    "S02",
+    "S03"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Peter Paul Rubens (1577–1640; WD Q5599).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S06",
+    "S01",
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "İcra tarihi kümesi (D001): katedral \"1609 - 1610\" ↔ rubensonline alan \"1609-10\" ama anlatı \"In 1610 begon… op het einde van dit jaar of in het begin van 1611 voltooide hij het\" ↔ enwiki \"1610 and 1611\" [Martin 1969] ↔ nlwiki \"1610 en mogelijk begin 1611\" ↔ itwiki lead \"1610\" (atıfsız; infobox \"1610-1611\") ↔ WD preferred 1610'lar (prec=8; P1319 1610/P1326 1611) ↔ Commons \"between 1610 and 1611\" ↔ WGA/data \"1610\". Kesinleştirme YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S06",
+    "S02",
+    "S04",
+    "S03",
+    "S01",
+    "S13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C004",
+   "ifade": "Kanatlı triptik sunak (retabel triptiek); menteşeli kanatlar, \"open view\" ve \"closed view\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09",
+    "S06",
+    "S02",
+    "S01"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Yağlıboya, panel (ahşap): \"Olieverf op paneel\" / \"paneel\" / \"Oil on wood\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S06",
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Orta panel 460×340 cm; her kanat 460×150 cm (birincil kayıtlar).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S06",
+    "S04"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Anvers Onze-Lieve-Vrouwekathedraal'de in situ; rubensonline: katedralde Çarmıhtan İndiriliş'in \"waardige tegenhanger\"i (değerli karşıtı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S08",
+    "S09",
+    "S06",
+    "S01"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Katedral envanter no 947 (Art in Flanders NL+EN; rubensonline; Grieten 1996 \"nr. 947\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09",
+    "S06",
+    "S04"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Konu sınıflaması: dinî sanat / Yeni Ahit / Passie van Christus (rubensonline Thema/Subthema/Trefwoorden; Art in Flanders \"religies, Bijbels, jezus\" tag'leri; WD P136 Q2864737).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S06",
+    "S08",
+    "S01"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Açık görünüm: üç panele yayılan tek kompozisyon; ortada DOKUZ adam, İsa'nın çivilenmiş olduğu çarmıhı kaldırır; çarmıh paneli sağ alt köşeden sol üste çapraz keser; cellat halatı çeker; Rooses: büyük etki ışık-gölge oyunundan, İsa'nın bedeni kahverengimsi gölgelerle soluk bir ışıltıyla yıkanır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S14",
+    "S06"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Sol kanat: üstte Meryem + Yuhanna (Yuhanna Meryem'in ellerini okşayarak sakinleştirir; derin anlamın farkında, duygusal patlama olmadan); altta çocuk, yaşlı kadın, üç genç kadın (biri emziriyor); Rooses: dehşet ve şaşkınlığın kişileştirmeleri.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S06",
+    "S10",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Sağ kanat: iki hırsız çarmıha hazırlanıyor (biri sırtüstü yatırılmış bağlanırken, diğeri elleri bağlı itiliyor); önde iki atlı Romalı subay, biri sağ elinde sopa ile emir veriyor; yüzbaşı infazı yönetiyor.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S06",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Kapalı görünüm: dış kanatlarda grisaille dört aziz — sol Amandus + Walburga, sağ Aleksandriyalı Katarina + Eligius (Martin/rubensonline 101210/101214/nlwiki); yalnız Amandus'un kızıl cüppesi ve Eligius'un cope astarı renkli (Rooses).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S04",
+    "S06",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Katedral resmî yorumu: İsa'nın bakışı Yedi Çarmıh Sözü'nü çağrıştırır — \"Mijn God, mijn God, waarom hebt Gij mij verlaten?\" (Mt 27,46) → \"In Uw handen, Heer, beveel ik mijn geest\" (Lc 23,46); katedral izleyiciye \"hangi rolü üstleniyorum?\" diye sorar (sağda kötülük gücü, ortada kayıtsız cellatlar, solda Yuhanna/Meryem gibi sevgi dolu yakınlık); enwiki (Heinen): İsa Tanrı'yla konuşur, çarmıh sözlerinden birini söyler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10",
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Sol altta büyük, kahverengi-beyaz kıvırcık tüylü köpek; enwiki (Rooses): \"An agitated dog is panting in the left-hand corner\" — \"havlayan\" erişilen kaynaklarda YOK.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Zırhlı şövalye figürü Rubens otoportresi olarak yorumlanır: enwiki (Rooses) \"may be a self-portrait of Rubens\"; Rooses 1904 daha kesin \"in whom we recognise Rubens\"; yorum geleneği, doğrulanmadı (E001; hedge AYNEN).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S02",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C017",
+   "ifade": "Orta ve sağ panel aynı kararan gökyüzünü paylaşır: yaklaşan güneş tutulması (Matta 27:45).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S04"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Üç dilli titulus (İbranice/Yunanca/Latince \"Yahudilerin Kralı\") data/ iddiasıdır; erişilen hiçbir kaynakta (S02/S03/S04/S06/S10) bu esere ait titulus betimi yok; görsel incelenmedi (E007).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S02",
+    "S03",
+    "S04",
+    "S06",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C019",
+   "ifade": "Modeller/etkiler: antik Laocoön (İsa'nın yüz ifadesi baba figüründen), Niobidler, Farnese Boğası (Heinen); Michelangelo Sistine nü'leri (Belkin); Tintoretto San Rocco Crucifixion (Martin); Caravaggio Entombment diyagonali + tenebrizm (Belkin).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Trent Karşı-Reform bağlamı (Heinen); \"the first display of a fully Baroque interpretation of space in a northern European altarpiece\" (Judson 2000, 91); Flaman resmine büyük ölçekli Barok'u tanıttı, Rubens'in ününü kurdu (Rooses); Belkin: muzaffer ölüm + tanrısal doğa; Rooses: \"one of the last and greatest of the works of his first manner and his Italian period\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Sipariş: St Walburga Kilisesi yüksek sunağı; Rubens'in Anvers'e dönüşünden sonra ilk önemli dinî siparişi (enwiki, Rooses); Cornelis van der Geest (zengin baharat tüccarı + kilise yöneticisi) siparişi sağladı, maliyetin çoğunu üstlendi (Martin); Rooses: \"art is indebted to van der Geest for the existence of the Elevation of the Cross\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S14",
+    "S06"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Sözleşme/temas tarihi (D007): rubensonline/nlwiki \"contacteerde hem in 1609\" / \"Het contract… stamt uit 1609\" ↔ Rooses arşiv dökümü: 17 Mayıs 1610 parish koleksiyonu + Haziran 1610 ilk yarısı \"Klein Zeeland\" hanında sözleşme (9 florin 10 stuiver ile teyit). İki aşama (ön anlaşma 1609 / resmî sözleşme 1610) olabilir — çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S06",
+    "S04",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C023",
+   "ifade": "Ücret 2600 florin/gulden; Rooses arşiv dökümü: 17 Haziran 1610 1000; 12 Ağustos 1611 500; 1 Ekim 1611–1 Ekim 1613 arası 2×250 + 600; rubensonline: taksitler 1610–1613. Rooses hesapların 18. yy kopyalarını okudu (\"no longer in our possession but were copied in the last century\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S06",
+    "S04"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Rubens büyük panoları kilisenin içinde, bir gemi yelkeniyle (scheepszeil) inananların gözünden gizlenerek boyadı; Wapper atölyesi henüz yoktu; Rooses: kaptanın ödünç verdiği örtü koroyu korumak için gerildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S06",
+    "S04",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Özgün kompleks: 3 predella (Meleklerce taşınan Azize Katarina'nın bedeni; Azize Walburga mucizesi; Çarmıhta İsa) + niş içinde Baba Tanrı + konturları oyulmuş 2 melek + yaldızlı tahta pelikan; hepsi Rubens'in elinden (Rooses); Rooses: Baba Tanrı salt dekoratif değil — İsa gözlerini yakarışla ona kaldırıyordu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S02",
+    "S06"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "1733: kilise üç küçük resmi satma izni aldı (Rooses/enwiki); 1735–1737: sunak modernize edildi, Willem Kerrickx mermer çerçeve (rubensonline/nlwiki; enwiki \"Willem Ignatius Kerricx\"); taçlandırma + predellalar söküldü, 1737'de Bourse/Beurs'a satıldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S06",
+    "S04",
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Predellalar dağıldı; rubensonline (2016 arşivi): Walburga mucizesi → Museum der bildenden Künste Leipzig; bir melek → Flint Institute of Arts; Çarmıhta İsa, Katarina, Baba Tanrı, diğer melek \"onbekend, waarschijnlijk vernietigd\" (bilinmiyor, muhtemelen yok edildi); ayrı katalog kayıtları AÇILMADI.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S06",
+    "S14",
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "1794: Fransız Cumhuriyeti komiserleri triptiği Paris'e gönderdi; Louvre \"grande galerie\"de 1815'e kadar sergilendi (enwiki: Çarmıhtan İndiriliş ile birlikte); iade Napolyon'un yenilgisinden sonra (rubensonline).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S06",
+    "S04",
+    "S02",
+    "S01"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "St Walburga Kilisesi: 1797'de Fransız hükümeti gümrük deposuna çevirdi; 1817'de yıkılmak üzere satıldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "1815: Hollanda kralına iade → kral katedrale hediye etti; yerleştirme öncesi ressam van Regemorter temizledi; Rooses (1904): konum \"left part of the transept\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S01"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "1847: daha kapsamlı restorasyon kararı; Etienne Le Roy 1854'te bitirdi; 1849 bilirkişi raporu ciddi hasar tespit etmişti; Rooses: özgün parlaklık tam geri gelmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "1914: Alman işgalciler her iki triptiği Berlin Sarayı'na götürdü; 11 Kasım 1918 mütarekesinden sonra katedrale iade — enwiki'de satır içi atıf YOK; erişilen diğer kaynaklarda geçmiyor (E003).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S02"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C033",
+   "ifade": "Ekim 1627: kilise Jan Baptist Bruno'ya 24 florin temizlik ödemesi yaptı; ardından Rubens söz verdiği gibi (1610 sözleşmesi) rötuşladı; tasarımda değişiklik yok (enwiki \"he is believed not to have made any revisions\"); icra çarpıcı biçimde birleşik, \"a little dry in touch and rather grey-brown in tone\" (Rooses).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Rooses: \"The triptych is all the work of Rubens's own hand, though here again it has been claimed that Sallaert collaborated with him\"; enwiki: \"It is believed that the painting of the triptych itself was all by Rubens's own hand\" — el birliği kesin değil (E002; hedge AYNEN).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Tasarım süreci: Louvre genel kompozisyon eskizi INV 20188 Recto (çarmıh sol→sağ, 6 adam) → modello Louvre MNR 411 (üç panel aynı çerçevede ama ayrı; çarmıh sağ→sol) → değişiklikler: çarmıh konumu ayarlandı; arka planda İsa+hırsızların infaz alanına götürülüşü sahnesi çıkarıldı (Van Hout 2005, 180); dar kanatlar yan grupları sıkıştırdı (Rooses/enwiki); canlı modellerden tebeşir çalışmaları; Sotheby's 30 Ocak 2019 New York lot 15 nü çalışma (finalde zırhlı, Rubens yüz hatlı figür); Rooses ek izler: Holford painted sketch (Witdoeck 1638) + Christie's 1901 ikinci eskiz — enwiki'nin Louvre dizisiyle birebir örtüşmez; Louvre/Sotheby's kayıtları AÇILMADI.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Küçültülmüş versiyon ~1638, kâğıt üzerine yağlıboya, özgün 60×126,5 cm → sonradan 70×131,5 cm; Hans Witdoeck gravürüne modello oldu (3 plaka; Cornelis van der Geest'e ithaf, ö. 10 Mart 1638); 1928'den beri Art Gallery of Ontario (George Holford'dan satın alındı) — AYRI eser.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Özgün konum belgesi: Anton Gheringh'in 1664 St Walburga iç mekân tablosu (Anvers Sint-Pauluskerk); sunak çok yüksek bir koro üzerinde, uzun merdiven dizisi; Steen→Vierschaar sokağı sunağı taşıyan kemerin altından geçerdi; kript girişi merdivenin iki kanadı arasında; Rubens resmi uzaktan ve aşağıdan bakılacak şekilde tasarladı (Rooses).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S06",
+    "S04",
+    "S14",
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "St Walburga: Anvers'in en eski kilise sitesi (\"Church of the Bourg\", kale surları içinde); Walburga Anglo-Sakson, efsaneye göre kriptte münzevi yaşadı, ö. 776; 1182'den önce baş patrona (Rooses); nlwiki: sonra Beieren'de bir manastırın abdisi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S04"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "KMSKA inv. 10012 (PID mwkcqd) \"Kruisoprichting\": 1747, gravure en ets op papier (gravür+ets, kâğıt), 356×415 mm; inskripsiyon sol alt \"P.P. Rubens pinxit in/ Templo Societ. Jesu Antverpiae\"; Max Rooses bağışı, Antwerpen 1900; kategori \"grafiek\" — BASKI, triptik değil.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "WD konum zinciri: St Walburga (Q2686991) 1610–1794 → Louvre (Q19675) 1794–1815 → katedral (Q5901) 1815– (P580=1815); ilk iki halka refsiz; B kaynaklarla büyük ölçüde örtüşür (sentez).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S01"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C041",
+   "ifade": "Kamu malı: Rubens ö. 1640; 3 Commons dosyası \"Public domain\" (WGA: 2B PD eserin sadık fotoğrafik reprodüksiyonu, life+100); WD P6216 Q19652 (P459 Q29870196).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S13",
+    "S01"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Trivia: 12 Ekim 1605 tutulması Güney Avrupa'da tamdı, Rubens İtalya'daydı; sağ panel \"ilk gerçekçi güneş tutulması tasvirlerinden\" — nlwiki De Standaard'a (Senne Starckx, 8–9 Ağustos 2026) atıf verir; makale AÇILMADI; yorum niteliğinde (E011).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S04"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "Açık toplam ~460×640 cm: nlwiki infobox 460×640; WD P2048=460 / P2049=640 (ref lukasweb); 340+150+150=640 ile tutarlı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S04",
+    "S01",
+    "S06"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "Boyut varyantı (D003): enwiki/itwiki orta panel 462×341 ↔ birincil 460×340; ~1–2 cm fark; çerçeve/ölçüm konvansiyonu olabilir — çözülmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S02",
+    "S03",
+    "S10",
+    "S06"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "WD P2049=430 cm (P518 Q110910247 \"center region\"; ref rubensonline) dayanaksız (D004): S06 açıkça \"460 x 340 cm (middenpaneel)\"; 640 açık toplamla da tutarsız; WD hata adayı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S01",
+    "S06"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "Dış kanat aziz eşleştirmesi (D006): Rooses 1904 \"St Eligius and St Walburga on the left, St Catherine and St Amandus on the right\" ↔ Martin (enwiki)/rubensonline (101210/101214)/nlwiki: sol Amandus+Walburga, sağ Katarina+Eligius; çoğunluk + kurumsal katalog ikinci eşleştirmeyi destekler; Rooses sapması not edildi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S14",
+    "S02",
+    "S04",
+    "S06"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "Predella akıbeti (D008): enwiki (Rooses 1904) \"their current whereabout are unknown\" (güncel değil) ↔ Rooses 1904 satış izleri (Katarina 1898 Foucart, Valenciennes; Walburga 1840 Schamp d'Aveschoot, Gent; Baba Tanrı 1881 Baron A. Duchastel; İsa + iki melek \"disappeared without leaving any traces\") ↔ rubensonline 2016 (Leipzig MdbK; Flint Institute of Arts; diğerleri \"waarschijnlijk vernietigd\") ↔ itwiki \"oggi rimane solo uno dei tre pannelli della predella\" (atıfsız).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S02",
+    "S14",
+    "S06",
+    "S03"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "enwiki \"1693\" yazım hatası (D009): \"The St. Walburga Church was closed after French Revolutionary armies occupied Antwerp in 1693\" ↔ aynı paragraf \"taken to Paris in 1794\" + Rooses (1794/1797/1817) + WD P276 1794; 1794 olmalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S02",
+    "S14",
+    "S01"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "Katedrale yerleştirme yılı (D010): Rooses \"In 1815… presented it to the cathedral\" + WD P580=1815 + enwiki \"1815… placed in the Cathedral\" ↔ rubensonline/nlwiki \"het altaarstuk kreeg in 1816 een nieuwe bestemming in de kathedraal\"; iade 1815 ortak; yerleştirme 1815/1816 çözülmedi (nlwiki ayrıca \"sinds 1815… in de kathedraal\").",
+   "seviye": "D",
+   "kaynak_id": [
+    "S14",
+    "S06",
+    "S04",
+    "S01",
+    "S02"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "itwiki teknik çelişkisi (D002): infobox \"tecnica=olio su tela\" (tuval) ↔ lead \"olio su tavola\" (panel) ↔ birincil \"Olieverf op paneel\"/\"paneel\"; birincil paneli doğrular; infobox hatalı görünüyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S03",
+    "S10",
+    "S06"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "WD nesne karışıklığı (D005): P217=\"10012\" (P195=Q1471477 KMSKA; ref P248=Q131304080 KMSKA veritabanı + P4905=10012) ve P4905=10012, KMSKA baskısının numarasını triptiğe bağlar; aynı öğede P217=\"947\" (P195=Q5901 katedral) de var; 10012 bir 1747 gravür/ets (C039); triptiğin envanteri 947 (C008).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S01",
+    "S11",
+    "S08",
+    "S09"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "Art in Flanders kurumsal fotoğrafları (Hugo Maertens) \"Contractuele beperkingen\" (sözleşmesel kısıtlar) — serbest değil; atıf satırı: \"De Kruisoprichting, door Peter Paul Rubens, collectie Onze-Lieve-Vrouwekathedraal Antwerpen, artinflanders.be, foto: Hugo Maertens, Contractuele beperkingen.\"; NL beeldnummer 0090013020 / PID t43hx2z126; EN photo number 0090013000 / PID mk65449h8d (farklı fotoğraflar; ikisi de env 947).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S08",
+    "S09"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "Meşe (oak) türü (E004): WD P186 Q2075708, ref P3293=24 (BALaT object ID, KIK-IRPA); BALaT kaydı açılmadı; birincil kayıtlar yalnız \"paneel\" der; tür doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S01",
+    "S10",
+    "S06"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "data/ görsel-içi iddiaları (E007): \"havlayan\" köpek (kaynaklar: \"agitated… panting\" + kıvırcık kahverengi-beyaz tüy), \"kızıl güneş\" (kararma+tutulma destekli; \"kızıl\" renk doğrulanmadı), \"panolar arası boşluk\" (görsel incelenmedi); doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S02",
+    "S04"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "data/ \"yaklaşık sekiz yıllık İtalya dönemi\" (E008): erişilen kaynaklarda süre yok; enwiki \"a long stay in Italy\" + dönüş \"late 1608\"; rubensonline \"terugkeer uit Italië, in 1609\"; süre doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S02",
+    "S06"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "Katedral içi güncel konum (E010): Rooses 1904 \"left part of the transept\"; güncel katedral kaydı yerleşimi belirtmez; doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "Topstukken statüsü (E013): resmî Topstukken kaydı (S07) okunamadı (JS kabuğu; Wayback snapshot yok); dolaylı destek: S08 \"topstukken\" + S09 \"masterpiece\" tag'leri + S10 \"Vlaamse Meesters op hun Plek\" bağlantısı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S07",
+    "S08",
+    "S09",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C058",
+   "ifade": "WD preferred tarih kaynak zinciri zayıf (E006): P571 preferred (1610'lar, prec=8) refs: P248=Q97309629 (ETİKETLİ/iddiasız boş WD öğesi) + P854 beckchris.wordpress.com (blog, AÇILMADI); P248=Q17299580 RKDimages + P350=23186 (S12 ERİŞİLEMEDİ).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S01",
+    "S12",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C059",
+   "ifade": "WD P180 ek figürler (E012): Q128267 (Aziz Yusuf) refsiz — erişilen betimlemelerde yok; Q355121/Q284623 (Dismas/Gestas) geleneksel hırsız adları (enwiki adsız \"bandits or thieves\"); P608 Europeana 280 (Q20980830) doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S01",
+    "S02"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C060",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); 3 Commons dosyası PD, yalnız metadata; kompozisyon/ikonografi kaynak metinlerinden; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C061",
+   "ifade": "refs metinleri erişilmedi: Martin 1969, Wedgwood 1967, Belkin 1998, Heinen 1996/2016, Lawrence 2005, Judson 2000, Van Hout 2005, Sutton vd. 2004, Dunton 1896, Vlieghe 1977, d'Hulst 1992, Grieten 1996 (kaynakçada anıldı; DOI/ISBN uydurulmadı); Louvre INV 20188/MNR 411, Sotheby's lot 15, BAMPFA, De Standaard 2026, BALaT 24, Dunton archive.org AÇILMADI; rubensonline \"4 referenties\" JS popup erişilemedi (E009).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S02",
+    "S04",
+    "S06"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C062",
+   "ifade": "İkonografik program (Heinen, enwiki üzerinden): kaide/socle meyve çelenkleri = inananların İsa'nın şehadetinden kazanacağı meyveler; tepedeki yaldızlı tahta pelikan = İsa'nın yaygın simgesi (efsane: yavrularını öfkeyle öldürür, kendi kanıyla diriltir); Rooses da pelikanı betimler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "Kutsal topografya (Lawrence 2005, enwiki üzerinden): yüksek sunak, 1613'te restore edilen eski bir Holy Sepulchre (Kutsal Mezar) şapelinin üzerindeydi; triptik, Kudüs Kutsal Mezar kilisesinden yukarıdaki Golgotha şapeline yolculuğun bir tür yeniden-canlandırması; Heinen 2016: günah/yargı/çarmıhın dikilişi/bağışlanma yakarışı/kefaret görsel argümanı, Johannes Herolt'un 1435 vaaz derlemesini izler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "Öncüller ve yeniden kullanım (Rooses): Roma Santa Croce in Gerusalemme için daha önce yapılmış Çarmıhın Dikilişi (Rooses 1602 tarihler); kollarını kaldıran hayalet figür + yarı çıplak cellat neredeyse değişmeden alındı; \"The picture of 1610 is infinitely superior to that of 1602\"; Tintoretto San Rocco Crucifixion: hırsızın çarmıhının dikilişi tali eylem → Rubens'te ana konu; aletli marangozlar → \"gigantic heroes of a drama\"; İsa'nın başı Guido Reni Ecce Homo'sunu andırır (\"the first idea of which Rubens may perhaps have seen at Rome\" — hedge AYNEN), hastalıklı duygusallıktan arındırılmış.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C065",
+   "ifade": "Rooses alımlama yargıları: \"They are hate leagued against love\"; kutsal tarihte eşit fiziksel güç sergisi gerektiren başka konu yok; kaslar \"çok ağır bir emeğe\" uyarlanmış; işçiler \"living machines rather than thinking beings\"; Rubens yüz hatlı şövalye aynı işte çalışır ama \"his heart is not in the work\", şehide şefkatle bakar (Rooses okuması); Rubens bu konuyu bir daha resimlemedi; sonraki kuşaklar denemedi; Van Dyck'in denemesini Rooses \"a caricature\" diye niteler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C066",
+   "ifade": "Peyzaj sürekliliği (Martin, enwiki üzerinden): sol ve orta panel asma + meşe ağaçlarıyla kesintisiz kayalık çıkıntıyı paylaşır; Meryem ve Yuhanna, cellatlarla aynı kaya seviyesinde durur; orta ve sağ panel kararan gökyüzünü paylaşır; ortam karanlık ve huzursuz.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C067",
+   "ifade": "Azizlerin tarihi/attribütleri (nlwiki, rubensonline 101210/101214 refs + Rooses): Amandus Anvers'te vaaz eden ilk piskopos, 660'ta Borchtkerk'i kurdu (Normanlar yıktı, yerine St Walburga); Eligius 645'te Borchtkerk'te altı gün vaaz etti; Walburga İngiltere'den, kriptte münzevi, Beieren'de abdisi; Katarina kılıç + şehit palmiyesi, Walburga abbatial haç + rahibe kıyafeti (her iki kaynak); Eligius nlwiki çekiç+örs ↔ Rooses haç+kitap (betim farkı); Amandus nlwiki kitap+kromstaf ↔ Rooses haç+kızıl cüppe.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S04",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C068",
+   "ifade": "Atölye pratiği (Belkin, enwiki üzerinden): dönüş sonrası Rubens atölye başkanıydı; öğrenci/asistan/işbirlikçiler icrada önemli rol oynadı; tüm eskiz ve tasarımları Rubens yaptı; modello, patronlara yorum (özellikle ikonografik ayrıntı) için sunuldu ve asistanlara hazırlık modeli oldu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C069",
+   "ifade": "AGO versiyonu farkları (BAMPFA/Sutton, enwiki üzerinden): üç paneli tek tuvalde birleştirir; kompozisyona renk aksanları eklenir; yeni figürler + arka planda şehir; restorasyonda bulunan pentimenti yaratıcı yeniden çalışmayı gösterir; \"some have suggested\" van der Geest'e bağımsız hediye olarak tasarlanmış olabilir (hedge AYNEN).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C070",
+   "ifade": "Kanatların grisaille eskizi Dulwich Picture Gallery'de (enwiki; Rooses \"Dulwich College collection\"); Piet Verhaert çizimi (eski bir tablodan) St Walburga yüksek sunağını özgün yerleşiminde gösterir (enwiki, Rooses).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S02",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S01",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q2653851",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2653851.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:46:35Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S02",
+   "kurum": "Wikipedia (en)",
+   "belge": "wikitext \"The Elevation of the Cross (Rubens)\" (satır içi akademik atıflı)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Elevation%20of%20the%20Cross%20(Rubens)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 (15:47) → backoff → 200, 15:49:05Z",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S03",
+   "kurum": "Wikipedia (it)",
+   "belge": "wikitext \"Innalzamento della Croce\" (satır içi atıf YOK)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Innalzamento%20della%20Croce&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 → 200, 15:49:17Z",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S04",
+   "kurum": "Wikipedia (nl)",
+   "belge": "wikitext \"Kruisoprichting (Rubens)\" (rubensonline refs + literatuur)",
+   "url": "https://nl.wikipedia.org/w/api.php?action=parse&page=Kruisoprichting%20(Rubens)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:54:19Z",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S05",
+   "kurum": "Rubensonline (canlı)",
+   "belge": "showdetail.asp?artworkID=100298",
+   "url": "http://www.rubensonline.be/showdetail.asp?artworkID=100298",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404 ×3 (15:50:44/15:51:04/15:51:45Z); site Rubenshuis'a yönlenmiş, \"Pagina niet gevonden\" — ÖLÜ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S06",
+   "kurum": "Rubensonline (arşiv)",
+   "belge": "katalog kaydı, Wayback kopyası (ARŞİV TARİHİ 2016-12-03)",
+   "url": "http://web.archive.org/web/20161203060539/http://www.rubensonline.be/showdetail.asp?artworkID=100298",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:55:06Z (arşiv 2016-12-03)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S07",
+   "kurum": "Topstukken (Vlaanderen)",
+   "belge": "topstuk kaydı 86b42a69-9915-44d3-b98e-64b89283115a",
+   "url": "https://topstukken.vlaanderen.be/topstukken/topstuk/86b42a69-9915-44d3-b98e-64b89283115a",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:52:51Z ama JS kabuğu (yalnız \"TOPSTUKKEN\"); Wayback snapshot YOK — İÇERİK ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S08",
+   "kurum": "Art in Flanders / meemoo (eski Lukas, KIK-IRPA)",
+   "belge": "\"De Kruisoprichting\" NL kayıt",
+   "url": "https://artinflanders.be/nl/kunst/de-kruisoprichting-18",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:52:59Z (lukasweb.be/nl/foto/de-kruisoprichting yönlenmesi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S09",
+   "kurum": "Art in Flanders / meemoo",
+   "belge": "\"Raising of the Cross.\" EN kayıt",
+   "url": "https://artinflanders.be/en/artwork/raising-cross",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:55:17Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Anvers Katedrali (holding institution)",
+   "belge": "\"De Kruisoprichting\" sayfası",
+   "url": "https://www.dekathedraal.be/nl/rubens-kruisoprichting",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:55:11Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "KMSKA (Anvers Güzel Sanatlar Kraliyet Müzesi)",
+   "belge": "PID 10012 → mwkcqd → \"Kruisoprichting\" (1747 BASKI — AYRI nesne)",
+   "url": "https://kmska.be/nl/meesterwerk/kruisoprichting",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:55:22Z / 15:56:50Z / 15:56:56Z (resolver zinciri)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "RKDimages",
+   "belge": "kayıt 23186",
+   "url": "https://rkd.nl/images/23186",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 JS kabuğu; Wayback 200 (2025-12-07) tarayıcı doğrulama; CDX tek snapshot — İÇERİK ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (3 dosya): url, size, extmetadata",
+   "url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Raising_of_the_Cross_(Cathedral_of_Antwerp).jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:53:56Z (metadata); görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S14",
+   "kurum": "Max Rooses, Rubens (London, 1904)",
+   "belge": "tam metin (archive.org djvu.txt; rubens01roos; enwiki künyesinde \"Druckworth & Co.\" [sic])",
+   "url": "https://archive.org/download/rubens01roos/rubens01roos_djvu.txt",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:58:46Z (1.327.512 bayt) — DOĞRUDAN ERİŞİLDİ",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities: QID etiketleri; Q131304080/Q97309629/P4905/P350; P3293",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q131304080|Q97309629&props=labels|claims&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 → 200, 15:49:30Z; 200, 15:54:19Z; 200, 15:58:46Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S16",
+   "kurum": "Wayback (Internet Archive)",
+   "belge": "availability + CDX sorguları",
+   "url": "https://archive.org/wayback/available?url=rkd.nl/images/23186",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:53:56Z / 15:59:07Z",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Çarmıhtan İndiriliş (De Kruisafneming / The Descent from the Cross)",
+   "sanatci": "Peter Paul Rubens",
+   "kurum": "Onze-Lieve-Vrouwekathedraal, Anvers",
+   "mufredat_ici": false,
+   "gerekce": "Katedraldeki \"değerli karşıt\" (rubensonline); dikiliş gerilimi ↔ indiriliş ağırlığı; ikisi 1794'te birlikte Paris'e götürüldü.",
+   "kanit": [
+    "C007",
+    "C028"
+   ]
+  },
+  {
+   "eser": "Crucifixion",
+   "sanatci": "Tintoretto",
+   "kurum": "Scuola Grande di San Rocco, Venedik",
+   "mufredat_ici": false,
+   "gerekce": "Kompozisyon kaynağı: hırsızın çarmıhının dikilişi tali eylem → Rubens'te ana konu; marangozlar → dram kahramanları (Rooses/Martin).",
+   "kanit": [
+    "C019",
+    "C064"
+   ]
+  },
+  {
+   "eser": "Çarmıhın Dikilişi (Santa Croce in Gerusalemme versiyonu)",
+   "sanatci": "Peter Paul Rubens",
+   "kurum": "Santa Croce in Gerusalemme, Roma (Rooses; kayıt açılmadı)",
+   "mufredat_ici": false,
+   "gerekce": "Sanatçının kendi önceki işi (Rooses 1602 tarihler); figür yeniden kullanımı ve dramatik olgunlaşma karşılaştırması.",
+   "kanit": [
+    "C064"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Katedral (S10) + Art in Flanders NL/EN (S08/S09) + KMSKA (S11) birincil kayıtları ham cache'lerden yeniden açıldı: \"1609 - 1610\", \"Olieverf op paneel\", 460×340/460×150, env 947, retabel triptiek, KMSKA 10012=1747 gravür+ets 356×415 mm (Rooses bağışı 1900) doğrulandı. rubensonline Wayback 2016-12-03 (S06): 1609-10 alanı + 1610→1611 anlatısı, 2600 gulden, scheepszeil, 1794/1815/1816, Gheringh 1664, 1735–1737 Kerrickx, predella Leipzig/Flint doğrulandı. Rooses 1904 tam metin (S14): Klein Zeeland Haziran 1610, ödeme dökümü, 1627 Bruno 24 fl, 1794/1815/1817, van Regemorter, 1847–1854 Le Roy, 1849 raporu, dokuz adam/diyagonal, grisaille istisnaları, Santa Croce 1602, Sallaert, Dulwich doğrulandı. en/nl/it wikitext (S02/S04/S03) + WD (S01) + Commons (S13) yeniden okundu; 10 ihtilaf D, 13 belirsizlik E açık. Görsel metadata only → İNCELENMEDİ (C060); GZ TASLAK. refs metinleri erişilmedi (C061).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data \"1610\" ↔ katedral \"1609-1610\" ↔ enwiki/WD/Commons 1610–1611 (D, C003/D001); tek yıl kümenin en dar ifadesi; kesinleştirme önerilmez.",
+  "KRİTİK envanter/nesne karışıklığı: WD P217/P4905=10012 (KMSKA) triptiğe bağlanmış; KMSKA birincil 10012 = 1747 gravür+ets (356×415 mm, Rooses bağışı 1900) (C039 A, C051 D); triptik env 947 (C008). WD düzeltme önerisi insan onayına; data/ değiştirilmedi.",
+  "WD genişlik 430 \"center region\" dayanaksız (C045 D); birincil 460×340; 640 açık toplamla tutarsız.",
+  "Boyut: en/itwiki 462×341 ↔ birincil 460×340 (C044 D); ~1–2 cm, çözülmedi. boyut_cm alanı orta paneli verir; kanatlar 460×150, açık ~460×640.",
+  "\"havlayan köpek\": data ↔ S14 \"curly brown and white hair\" + S02 \"agitated… panting\" (C015 B, C054 E); görsel teyit gerekli.",
+  "Üç dilli titulus: data/ + bak iddiası erişilen hiçbir kaynakta yok (C018 E); görsel incelenmedi.",
+  "\"kızıl güneş\": kararma+tutulma destekli (C017 B); \"kızıl\" renk görsel iddia, incelenmedi (C054 E). \"panolar arası boşluk\" da görsel iddia (C054 E).",
+  "\"yaklaşık sekiz yıllık İtalya dönemi\": erişilen kaynaklarda süre yok (C055 E); enwiki \"long stay\" + dönüş late 1608; rubensonline 1609 der.",
+  "\"Sağda atlı bir Romalı subay\": S02 İKİ atlı subay der, biri emir verir (C012 B); data basitleştirmesi.",
+  "eserler_onbellek gorseller[0].l \"\" (boş lisans): Commons \"Public domain\" (S13) ile doldurulabilir (C041); değişiklik YAPILMADI. Kurumsal fotoğraflar \"Contractuele beperkingen\" (C052) — serbest değil.",
+  "itwiki infobox \"olio su tela\" hatalı görünüyor (C050 D); itwiki tamamen atıfsız; enwiki \"1693\" yazım hatası (C048 D).",
+  "Yerleştirme 1815 ↔ 1816 (C049 D); iade 1815 ortak. Katedral içi güncel konum doğrulanamadı (C056 E). 1914 Berlin enwiki atıfsız (C032 E).",
+  "Predella akıbeti: enwiki \"whereabout unknown\" güncel değil (C047 D); rubensonline 2016 Leipzig/Flint (C027 B); ayrı katalog kayıtları açılmadı. Topstukken resmî kayıt okunamadı (C057 E).",
+  "data/eser_konulari.json \"Haçın Dikilişi\" ↔ eser_adlari_tr.json \"Çarmıhın Dikilişi\" (küçük iç tutarsızlık). data/ders_kaynaklari.json \"dogrulandi\" işaretine güvenilmedi; bağımsız B desteği bulundu (C019).",
+  "Görsel İNCELENMEDİ (C060); GZ TASLAK; insan editör görsel teyidi ZORUNLU (titulus/köpek/güneş/boşluk)."
+ ]
+}

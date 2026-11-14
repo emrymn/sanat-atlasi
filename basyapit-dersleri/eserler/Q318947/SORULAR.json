@@ -1,0 +1,562 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q318947",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu tablo (Londra versiyonu) hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "National Gallery, Londra"
+    },
+    {
+     "harf": "B",
+     "metin": "Pinacoteca di Brera, Milano"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado, Madrid"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: National Gallery, London; Main Collection, NG172.",
+   "yanlis_gerekceleri": {
+    "B": "Brera/Milano 1606 tarihli ikinci versiyonun yeridir (Q2097931); bu eser Londra versiyonudur.",
+    "C": "Louvre bu eserin bulunduğu kurum değildir.",
+    "D": "Prado bu eserin bulunduğu kurum değildir."
+   },
+   "kanit": [
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "National Gallery envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "NG172"
+    },
+    {
+     "harf": "B",
+     "metin": "GG_274"
+    },
+    {
+     "harf": "C",
+     "metin": "INV 1444"
+    },
+    {
+     "harf": "D",
+     "metin": "NG651"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: Inventory number NG172.",
+   "yanlis_gerekceleri": {
+    "B": "GG_274 Correggio Jupiter und Io'nun (KHM) envanteridir; bu eserle karıştırılmamalıdır.",
+    "C": "INV 1444 bu eserin envanteri değildir; NG172 doğrudur.",
+    "D": "NG651 bu eserin envanteri değildir; kaynak NG172 der."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eser National Gallery koleksiyonuna hangi yıl girmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1839"
+    },
+    {
+     "harf": "B",
+     "metin": "1933"
+    },
+    {
+     "harf": "C",
+     "metin": "1601"
+    },
+    {
+     "harf": "D",
+     "metin": "1801"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"Presented by the Hon. George Vernon, 1839\"; NG'nin ilk Caravaggio'su. data'daki 1933 hatalıdır.",
+   "yanlis_gerekceleri": {
+    "B": "1933 data/basyapitlar.json'daki hatalı değerdir; hiçbir erişilen kaynakta yok (D1).",
+    "C": "1601 yapım tarihidir, edinme yılı değildir.",
+    "D": "1801 Camillo Borghese'den Durand'a satış yılıdır; NG'ye giriş değil."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Tablonun konu kaynağı hangi İncil pasajıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Luka 24:30–31"
+    },
+    {
+     "harf": "B",
+     "metin": "Mark 16:12"
+    },
+    {
+     "harf": "C",
+     "metin": "Matta 28:16–20"
+    },
+    {
+     "harf": "D",
+     "metin": "Yuhanna 21:1–14"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: Luka 24:30–31 — ekmeğin kutsanması, gözlerin açılması, tanınma ve kayboluş.",
+   "yanlis_gerekceleri": {
+    "B": "Mark 16:12 \"in another form\" sakalsızlık hipoteziyle ilişkilidir; sofradaki tanınma anlatısının kaynağı değildir.",
+    "C": "Matta 28 büyükcommission/dağ sahnesidir; Emmaus sofrası değil.",
+    "D": "Yuhanna 21 Celile gölünde kahvaltı sahnesidir; Emmaus değil."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Tabloyu 1601'de kim sipariş etti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ciriaco Mattei"
+    },
+    {
+     "harf": "B",
+     "metin": "Kardinal Scipione Borghese"
+    },
+    {
+     "harf": "C",
+     "metin": "Kardinal Del Monte"
+    },
+    {
+     "harf": "D",
+     "metin": "Vincenzo Giustiniani"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: Ciriaco Mattei (1542–1614) için yapıldı; Mattei 1601–2'de üç eser sipariş etti.",
+   "yanlis_gerekceleri": {
+    "B": "Scipione Borghese sonraki sahipdir (provenans \"likely\"); sipariş veren değil.",
+    "C": "Del Monte Caravaggio'nun erken patronudur ama bu eserin siparişçisi değildir.",
+    "D": "Giustiniani Caravaggio çevresinde anılır ama bu siparişin sahibi değildir."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "National Gallery kataloğunun ifadesiyle sağdaki havari \"sıklıkla\" kim olarak tanımlanır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Aziz Petrus"
+    },
+    {
+     "harf": "B",
+     "metin": "Aziz Yakup (Giacomo Maggiore)"
+    },
+    {
+     "harf": "C",
+     "metin": "Cleophas"
+    },
+    {
+     "harf": "D",
+     "metin": "Luka"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"the disciple on the right, who is often identified as Saint Peter\". Bu, NG'nin hedged ifadesidir; kimlik kaynaklar arasında tartışmalıdır (D4).",
+   "yanlis_gerekceleri": {
+    "B": "Aziz Yakup itwiki/Hibbard ve data'daki \"belki\" atıftır; NG'nin \"often identified\" seçeneği Petrus'tur.",
+    "C": "Cleophas NG'ye göre soldaki havaridir (\"thought to be Cleophas\").",
+    "D": "Luka enwiki/BBC'nin atıfıdır; NG'nin sağ için \"often identified\" ifadesi Petrus'tur."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Sağdaki havarinin göğsündeki sembol nedir ve neyi imler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Deniz kabuğu (scallop shell) — hacı"
+    },
+    {
+     "harf": "B",
+     "metin": "Haç — şehitlik"
+    },
+    {
+     "harf": "C",
+     "metin": "Anahtar — Petrus'un yetkisi"
+    },
+    {
+     "harf": "D",
+     "metin": "Kılıç — askerlik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 audio: \"This man wears a scallop shell brooch, an emblem of a pilgrim.\"",
+   "yanlis_gerekceleri": {
+    "B": "Haç bu figürün göğsündeki sembol değildir; kabuk hacı işaretidir.",
+    "C": "Anahtar Petrus ikonografisinde görülür ama bu eserde göğüste kabuk vardır.",
+    "D": "Kılıç bu figürle ilişkili değildir; kaynak kabuk der."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Meyve sepetinin beyaz örtü üzerindeki gölgesi hangi biçimdedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Balık"
+    },
+    {
+     "harf": "B",
+     "metin": "Kuş"
+    },
+    {
+     "harf": "C",
+     "metin": "Haç"
+    },
+    {
+     "harf": "D",
+     "metin": "Yaprak"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 audio: \"the bowl of fruit ... casts a fish-shaped shadow ... again a reference to Christ\" (Ichthys).",
+   "yanlis_gerekceleri": {
+    "B": "Kuş biçimli gölge kaynaklarda geçmez; NG balık der.",
+    "C": "Haç biçimli gölge değil; balık (Ichthys) göndermesi vardır.",
+    "D": "Yaprak biçimi kaynakların betimlediği gölge değildir."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "1606 Brera versiyonunda Londra versiyonuna göre masadan tamamen kaybolan öğe nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Meyve sepeti"
+    },
+    {
+     "harf": "B",
+     "metin": "Hancı figürü"
+    },
+    {
+     "harf": "C",
+     "metin": "İsa'nın kırmızı tuniği"
+    },
+    {
+     "harf": "D",
+     "metin": "Masa örtüsü"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7: \"The basket of fruit ... has vanished entirely from the table\"; jestler daha ölçülü, daha karanlık.",
+   "yanlis_gerekceleri": {
+    "B": "Hancı figürü her iki versiyonda da bulunur; BBC'nin \"tamamen kaybolduğunu\" söylediği öğe meyve sepetidir.",
+    "C": "İsa'nın kırmızı tuniği kaybolmaz; geç versiyonda renk ayrımları azalır ama kaybolan öğe sepettir.",
+    "D": "Masa örtüsü kaybolmaz; sepet masadan tamamen kalkmıştır."
+   },
+   "kanit": [
+    "C031"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "National Gallery'nin bu eser için kullandığı ışık-gölge terimi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Chiaroscuro"
+    },
+    {
+     "harf": "B",
+     "metin": "Tenebrizm"
+    },
+    {
+     "harf": "C",
+     "metin": "Sfumato"
+    },
+    {
+     "harf": "D",
+     "metin": "Unione"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"contrasts of light and shade (known as chiaroscuro)\". \"Tenebrizm\" erişilen kaynaklarda bu eser için geçmez.",
+   "yanlis_gerekceleri": {
+    "B": "Tenebrizm genel bir sanat tarihi terimidir ama erişilen kaynaklarda bu eser için kullanılmaz (E10); NG chiaroscuro der.",
+    "C": "Sfumato yumuşak/dumanlı geçiş terimidir (Leonardo); NG'nin bu eser için terimi değil.",
+    "D": "Unione renk birliği terimidir; NG bu eser için chiaroscuro der."
+   },
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser National Gallery, Londra'dadır (envanter NG172).",
+   "dogru": true,
+   "aciklama": "Doğru (S4): Main Collection, NG172, Room 32.",
+   "kanit": [
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "NG birincil katalog alanı (Details) tekniği \"Oil on canvas\" olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru (S4 Details). Not: aynı sayfanın audio description'ı \"oil and tempera\" der; bu bir iç ihtilaftır (D7).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser National Gallery koleksiyonuna 1933 yılında girmiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış: NG \"Presented by the Hon. George Vernon, 1839\" der. 1933 data/'daki hatalı değerdir (D1).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Bu eserde belirgin pentimenti azdır; tek önemli değişiklik sağdaki havarinin sol dizinin halının önünden arkasına alınmasıdır.",
+   "dogru": true,
+   "aciklama": "Doğru (S4 In-depth): \"the only significant change is the repositioning of the same apostle's left knee behind the carpet\".",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "NG audio description sepettedeki meyveler arasında elma, üzüm ve armut sayar.",
+   "dogru": true,
+   "aciklama": "Doğru (S4 audio): \"apples, grapes, and a pear\". data/'daki \"incir\" erişilen kaynaklarda geçmez (D6).",
+   "kanit": [
+    "C054"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Birincilin iç çelişkilerini (NG Details \"Oil on canvas\" ↔ audio \"oil and tempera\"; WD P2048/P2049 boyut yönünün ters olması) kaynak eleştirisiyle analiz edin; hangi alanı neden esas aldığınızı gerekçelendirin.",
+   "beklenen_ogeler": [
+    "Details vs audio",
+    "Keith 1998 gövdesi taranmış/erişilemedi",
+    "WD height/width ters",
+    "NG 141×196.2 esas",
+    "D7/D2 beyanı"
+   ],
+   "kanit": [
+    "C043",
+    "C038",
+    "C003",
+    "C004",
+    "C050"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Provenans hipotez zincirini (Mattei → Borghese \"likely\" → Acquaviva → Durand → Vernon) yazın; NG'deki \"likely\" ile itwiki'deki \"ipotizza\" ifadelerinin kanıt değerini karşılaştırın.",
+   "beklenen_ogeler": [
+    "1650 Villa Borghese",
+    "likely Scipione Borghese",
+    "1748 Acquaviva",
+    "1801 Durand",
+    "1839 Vernon",
+    "hipotez ≠ kesinlik"
+   ],
+   "kanit": [
+    "C023",
+    "C025",
+    "C007"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Dört kaynağın (NG/enwiki/itwiki/BBC) havari kimliği atıflarını bir tabloda karşılaştırın; neden tek bir kimlik atayamayacağınızı ve data'daki \"belki Aziz Yakup\" ile NG'nin \"often identified as Saint Peter\" seçeneklerini nasıl birlikte sunacağınızı açıklayın.",
+   "beklenen_ogeler": [
+    "NG Petrus/Cleophas",
+    "enwiki Luke/Cleopas",
+    "itwiki Cleofa/forse Giacomo",
+    "BBC Cleopas/Luke",
+    "tümü hedged",
+    "D4"
+   ],
+   "kanit": [
+    "C040",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Meyve envanteri ve sürahi uyuşmazlığını (data \"üzüm/incir/nar\" + \"şarap sürahisi\" ↔ NG audio elma/üzüm/armut + \"carafe of water and wine glass\" ↔ BBC nar/üzüm/russet/ayva) belgeleyin; görsel teyit için incelenmesi gereken bölgeleri önerin.",
+   "beklenen_ogeler": [
+    "incir hiçbir kaynakta yok",
+    "NG su sürahisi + şarap kadehi",
+    "data içi tutarsızlık",
+    "görsel inceleme YOK",
+    "D6"
+   ],
+   "kanit": [
+    "C042",
+    "C017",
+    "C035",
+    "C054"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Ichthys okumasının kanıt zincirini (NG audio balık gölgesi A + BBC sepet örgüsü B + Levi della Torre kasıt yorumu) ve BBC'nin \"yarım kavis / secret handshake\" izleyici katılımı okumasını değerlendirin; gözlem ile kasıt iddiasını ayırın.",
+   "beklenen_ogeler": [
+    "NG audio fish-shaped shadow (A)",
+    "BBC intersecting curves (B)",
+    "Levi della Torre kasıt",
+    "BBC appears/seems hedged",
+    "gözlem ≠ kasıt"
+   ],
+   "kanit": [
+    "C018",
+    "C028",
+    "C048"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Soldaki havarinin sandalyeden fırlamak üzere oluşunu (dirseği izleyiciye dönük) ve sağdaki havarinin iki yana açılan kollarını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): \"one is about to leap out of his chair ... the other throws out his arms\"; kollar aşırı kısaltımla.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "İsa'nın arkasındaki boş duvarda \"neredeyse ters bir hale\" gibi duran gölgeyi fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): \"almost like a reverse halo\"; itwiki/Levi della Torre bunun hancının gölgesi olduğunu okur.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Masanın kenarından taşan meyve sepetini ve beyaz örtü üzerindeki balık biçimli gölgesini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): \"basket of fruit teetering dangerously on the edge\"; audio: \"fish-shaped shadow\".",
+   "kanit": [
+    "C017",
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sağdaki havarinin göğsündeki deniz kabuğunu (hacı sembolü) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4 audio): \"scallop shell brooch, an emblem of a pilgrim\".",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Su sürahisi ve şarap kadehinde ışığın yansımasını/kırılmasını inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): \"reflected in and refracted through the carafe of water and wine glass\".",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "The Supper at Emmaus; Caravaggio (1571–1610); 1601; tuval/yağlıboya; 141×196.2 cm; National Gallery Londra NG172, Room 32; 1839 Vernon hediyesi (ilk Caravaggio). Londra versiyonu (Brera 1606 ayrı).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + anlatılan an?",
+   "arka": "Luka 24:30–31; dirilen İsa ekmeği kutsar/böler, öğrencilerin gözleri açılır, onu tanır ve o kaybolur. Caravaggio tanınma ânını dondurur.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Işık + kompozisyon?",
+   "arka": "Chiaroscuro, güçlü ışık soldan; içe dönük üçgen (İsa tepede); arkadan görünüş + açılan kollar \"tramvay rayı\"; aşırı kısaltım; duvarda \"neredeyse ters hale\" gölge; hancı üçgenin dışında, yüzü gölgede.",
+   "kanit": [
+    "C015",
+    "C016",
+    "C011",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Teknik?",
+   "arka": "Doğrudan tuvale boyama; kesin atfedilen çizim yok; abbozzo (şarap kadehi tabanı üstünde fırça çizimi); impasto çapraz darbeler; görünür incision yok (silik/gizli olabilir); pentimenti az (tek değişiklik: sağ havarinin sol dizi).",
+   "kanit": [
+    "C019",
+    "C020",
+    "C056",
+    "C021",
+    "C022"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "İkonografi?",
+   "arka": "Ichthys (sepet örgüsü iki kavis + balık gölgesi); hacı deniz kabuğu; Buon Pastore tipi genç/sakalsız/androjen İsa; kırmızı-beyaz-yeşil → teolojik erdemler (potrebbe); elma → İlk Günah/ticchiolatura.",
+   "kanit": [
+    "C018",
+    "C013",
+    "C027",
+    "C029",
+    "C030"
+   ]
+  }
+ ]
+}

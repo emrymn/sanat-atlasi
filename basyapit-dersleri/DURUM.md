@@ -1,6 +1,6 @@
 # DURUM — 107 Başyapıt İlerleme Takibi
 
-**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 2 üretimi — 20 eser, PARTI_2_URETIM_RAPORU) · Pilot: Q167605 (Süt Boşaltan Kadın)
+**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 3 üretimi — 20 eser, PARTI_3_URETIM_RAPORU) · Pilot: Q167605 (Süt Boşaltan Kadın)
 
 Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt envanteri hazır → Taslak hazır → Doğrulama bekliyor → İnsan incelemesi bekliyor → Yayına aday`. Hiçbir eser otomatik olarak "Yayına aday" yapılmaz; insan editoryal onayı gerekir.
 
@@ -39,7 +39,7 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 | 29 | M4 | Q18579333 | Paris'in Hükmü | marcantonio-raimondi | İnsan incelemesi bekliyor ✅ |
 | 30 | M5 | Q727875 | Urbino Venüsü (Venus of Urbino) | titian | İnsan incelemesi bekliyor ✅ |
 | 31 | M6 | Q2472983 | Son Akşam Yemeği | tintoretto | İnsan incelemesi bekliyor ✅ |
-| 32 | M6 | Q185255 | Kana'da Düğün | paolo-veronese | Araştırılmadı |
+| 32 | M6 | Q185255 | Kana'da Düğün | paolo-veronese | İnsan incelemesi bekliyor ✅ |
 | 33 | M6 | Q18572249 | Aziz Thomas'ın Şüphesi | francesco-salviati | İnsan incelemesi bekliyor ✅ |
 | 34 | M6 | Q3705703 | Çarmıhtan İndiriliş | jacopo-pontormo | İnsan incelemesi bekliyor ✅ |
 | 35 | M6 | Q23008305 | Satranç Oynayan Sanatçının Kız Kardeşlerinin Portresi | sofonisba-anguissola | İnsan incelemesi bekliyor ✅ |
@@ -49,27 +49,27 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 | 39 | M6 | Q94802 | Orgaz Kontu'nun Gömülmesi (El entierro del conde de Orgaz) | el-greco | İnsan incelemesi bekliyor ✅ |
 | 40 | M6 | Q1863885 | Musa, Yitro'nun Kızlarını Savunurken | rosso-fiorentino | İnsan incelemesi bekliyor ✅ |
 | 41 | M6 | Q19966572 | Aşk Sahnesi | giulio-romano | İnsan incelemesi bekliyor ✅ |
-| 42 | M7 | Q3998957 | Farnese Tavanı – Tanrıların Aşkları: Bakkhus ve Ariadne'nin Zaferi | annibale-carracci | Araştırılmadı |
-| 43 | M7 | Q318947 | Emmaus'ta Akşam Yemeği | caravaggio | Araştırılmadı |
-| 44 | M7 | Q63341 | Pezevenk Kadın | dirck-van-baburen | Araştırılmadı |
-| 45 | M7 | Q3769169 | Holofernes'in Kafasını Kesen Judith | artemisia-gentileschi | Araştırılmadı |
-| 46 | M7 | Q20176925 | Lavta Çalan | orazio-gentileschi | Araştırılmadı |
-| 47 | M7 | Q1240092 | Papa X. Innocentius'un Portresi | diego-velazquez | Araştırılmadı |
-| 48 | M7 | Q4693305 | Tanrı'nın Kuzusu (Agnus Dei) | francisco-de-zurbaran | Araştırılmadı |
-| 49 | M7 | Q2653851 | Çarmıhın Dikilişi | peter-paul-rubens | Araştırılmadı |
-| 50 | M7 | Q3998985 | I. Charles'ın Üç Pozisyonda Portresi | anthony-van-dyck | Araştırılmadı |
-| 51 | M8 | Q512755 | Müsrif Oğulun Dönüşü | rembrandt-van-rijn | Araştırılmadı |
+| 42 | M7 | Q3998957 | Farnese Tavanı – Tanrıların Aşkları: Bakkhus ve Ariadne'nin Zaferi | annibale-carracci | İnsan incelemesi bekliyor ✅ |
+| 43 | M7 | Q318947 | Emmaus'ta Akşam Yemeği | caravaggio | İnsan incelemesi bekliyor ✅ |
+| 44 | M7 | Q63341 | Pezevenk Kadın | dirck-van-baburen | İnsan incelemesi bekliyor ✅ |
+| 45 | M7 | Q3769169 | Holofernes'in Kafasını Kesen Judith | artemisia-gentileschi | İnsan incelemesi bekliyor ✅ |
+| 46 | M7 | Q20176925 | Lavta Çalan | orazio-gentileschi | İnsan incelemesi bekliyor ✅ |
+| 47 | M7 | Q1240092 | Papa X. Innocentius'un Portresi | diego-velazquez | İnsan incelemesi bekliyor ✅ |
+| 48 | M7 | Q4693305 | Tanrı'nın Kuzusu (Agnus Dei) | francisco-de-zurbaran | İnsan incelemesi bekliyor ✅ |
+| 49 | M7 | Q2653851 | Çarmıhın Dikilişi | peter-paul-rubens | İnsan incelemesi bekliyor ✅ |
+| 50 | M7 | Q3998985 | I. Charles'ın Üç Pozisyonda Portresi | anthony-van-dyck | İnsan incelemesi bekliyor ✅ |
+| 51 | M8 | Q512755 | Müsrif Oğulun Dönüşü | rembrandt-van-rijn | İnsan incelemesi bekliyor ✅ |
 | 52 | M8 | **Q167605** | **Süt Boşaltan Kadın** | johannes-vermeer | **İnsan incelemesi bekliyor** (pilot) |
-| 53 | M8 | Q764831 | Aziz Nicholas Yortusu | jan-steen | Araştırılmadı |
-| 54 | M8 | Q3399440 | XIV. Louis'nin Portresi | hyacinthe-rigaud | Araştırılmadı |
-| 55 | M8 | Q27097122 | İskender'in Babil'e Girişi | charles-le-brun | Araştırılmadı |
-| 56 | M8 | Q1140358 | Arkadya'da Ben de Varım (Et in Arcadia ego) | nicolas-poussin | Araştırılmadı |
-| 57 | M8 | Q7731855 | Saba Melikesi'nin Gemiye Binişi | claude-lorrain | Araştırılmadı |
+| 53 | M8 | Q764831 | Aziz Nicholas Yortusu | jan-steen | İnsan incelemesi bekliyor ✅ |
+| 54 | M8 | Q3399440 | XIV. Louis'nin Portresi | hyacinthe-rigaud | İnsan incelemesi bekliyor ✅ |
+| 55 | M8 | Q27097122 | İskender'in Babil'e Girişi | charles-le-brun | İnsan incelemesi bekliyor ✅ |
+| 56 | M8 | Q1140358 | Arkadya'da Ben de Varım (Et in Arcadia ego) | nicolas-poussin | İnsan incelemesi bekliyor ✅ |
+| 57 | M8 | Q7731855 | Saba Melikesi'nin Gemiye Binişi | claude-lorrain | İnsan incelemesi bekliyor ✅ |
 | 58 | M9 | Q19863024 | Banyosunda Batşeba | sebastiano-ricci | Araştırılmadı |
-| 59 | M9 | Q531329 | Kythera Adası'na Yolculuk (Pèlerinage à l'île de Cythère) | jean-antoine-watteau | Araştırılmadı |
-| 60 | M9 | Q1131176 | Sarışın Odalık (Louise O'Murphy) | francois-boucher | Araştırılmadı |
-| 61 | M9 | Q2629559 | Salıncak (L'Escarpolette) | jean-honore-fragonard | Araştırılmadı |
-| 62 | M9 | Q18167078 | Kleopatra'nın Ziyafeti | giovanni-battista-tiepolo | Araştırılmadı |
+| 59 | M9 | Q531329 | Kythera Adası'na Yolculuk (Pèlerinage à l'île de Cythère) | jean-antoine-watteau | İnsan incelemesi bekliyor ✅ |
+| 60 | M9 | Q1131176 | Sarışın Odalık (Louise O'Murphy) | francois-boucher | İnsan incelemesi bekliyor ✅ |
+| 61 | M9 | Q2629559 | Salıncak (L'Escarpolette) | jean-honore-fragonard | İnsan incelemesi bekliyor ✅ |
+| 62 | M9 | Q18167078 | Kleopatra'nın Ziyafeti | giovanni-battista-tiepolo | İnsan incelemesi bekliyor ✅ |
 | 63 | M9 | Q3212142 | Vatoz | jean-baptiste-simeon-chardin | Araştırılmadı |
 | 64 | M9 | Q4388208 | Kırık Testi | jean-baptiste-greuze | Araştırılmadı |
 | 65 | M9 | william-hogarth|Gin Lane | Cin Sokağı | william-hogarth | Araştırılmadı |
@@ -120,8 +120,8 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 
 | Durum | Adet |
 |---|---|
-| İnsan incelemesi bekliyor | 41 (Parti 1: 20 + Parti 2: 20 + pilot Q167605) |
-| Araştırılmadı | 66 |
+| İnsan incelemesi bekliyor | 61 (Parti 1: 20 + Parti 2: 20 + Parti 3: 20 + pilot Q167605) |
+| Araştırılmadı | 46 |
 | Toplam | 107 |
 
 ## Parti Günlüğü
@@ -282,6 +282,59 @@ Claude bağımsız denetim raporu (P0 kritik + P1 yüksek + sistematik) **ham ka
 - #20 Q2472983 (Tintoretto, Son Akşam Yemeği, San Giorgio Maggiore): 45 (A12/B16/C3/D4/E10) · 420/1303/2633 · 0/0. ICCD scheda 0500123375 arşiv 2025-01-20 A (canlı 403); tarih 1563↔1592–94 (D); yerleşim arkası↔presbiterio sağ (D). Agent yazımı. GZ TASLAK.
 
 **PARTİ 2 ÖZET (20/20):** Tümü "İnsan incelemesi bekliyor"; **dogrula 0 hata** (parti 2 eserleri), **19 uyarı** (13 kelime aralığı §8 — bilinçli kısa ders, dolgu yok; 6 Volterra kaynakça heuristic yanlış-pozitifi). CJK 0. Toplam iddia **876 (A260/B292/C80/D124/E120)**; her eserde quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (CS/DY/GZ/TK yalnız A/B). `dogrula.py --test` **25/25**. Birincil katalog erişimi: Louvre, KHM, Uffizi, National Gallery, Vatican, Cenacolo, Polo Museale, trinitadeimonti.net, mnp.art.pl, santotome.org, ICCD, Joconde AÇILDI → güçlü A; Hermitage (#17) + Stuttgart Raimondi (#5) birincil URL bulunamadı → E. **Vision bütçesi #3'ten sonra tükendi** → 18 eserde görsel indirildi ama İNCELENEMEDİ (E); kompozisyon birincil/ikincil METİNDEN; GZ 5/5 TASLAK. Erotik konular (Titian, Correggio, Giulio) akademik ve açık ayrıntısız betimlendi. Hata listesi (üretimde yakalanıp düzeltildi): quiz D/E-kanıt ihlalleri (A/B'ye çekildi), CJK karışmaları, "II. Dünya"/"inv." cümle bölünmesi, yakın-tekrar paragraflar, KANIT Sayım eşitleme. Kalıcı sınır: insan editör görsel + birincil teyidi ZORUNLU; hiçbir eser "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1 değişmedi; yalnız `content-review` commit/push.
+
+### Parti 3 (20 eser) — M6 son (Veronese) + M7 + M8 (pilot hariç) + M9 ilk 4
+
+**Kapsam:** MUFREDAT sırasında sıradaki 20 eser (Veronese Kana'da Düğün + M7 Barok 9 + M8 Hollanda/Fransa 6 [Vermeer pilot atlandı] + M9 Rokoko ilk 4). Ayrıntılı rapor: `PARTI_3_URETIM_RAPORU.md`. 20 araştırma brief'i `kaynak-arastirma` agent'larınca üretildi; 20 ders `ders-yazim` agent'larınca yazıldı; tümü ana oturumda bağımsız doğrulandı. Agent tanımları bu partide `<PARTI>` yol değişkeniyle parti-bağımsız hâle getirildi (`.qwen/tmp/parti3`).
+
+| Sıra | Anahtar | Eser | Sanatçı | Durum |
+|---|---|---|---|---|
+| 1 | Q185255 | Kana'da Düğün | Paolo Veronese | İnsan incelemesi bekliyor ✅ |
+| 2 | Q3998957 | Farnese Tavanı: Bakkhus ve Ariadne'nin Zaferi | Annibale Carracci | İnsan incelemesi bekliyor ✅ |
+| 3 | Q318947 | Emmaus'ta Akşam Yemeği | Caravaggio | İnsan incelemesi bekliyor ✅ |
+| 4 | Q3769169 | Holofernes'in Kafasını Kesen Judith | Artemisia Gentileschi | İnsan incelemesi bekliyor ✅ |
+| 5 | Q20176925 | Lavta Çalan | Orazio Gentileschi | İnsan incelemesi bekliyor ✅ |
+| 6 | Q63341 | Pezevenk Kadın | Dirck van Baburen | İnsan incelemesi bekliyor ✅ |
+| 7 | Q2653851 | Çarmıhın Dikilişi | Peter Paul Rubens | İnsan incelemesi bekliyor ✅ |
+| 8 | Q3998985 | I. Charles'ın Üç Pozisyonda Portresi | Anthony van Dyck | İnsan incelemesi bekliyor ✅ |
+| 9 | Q1240092 | Papa X. Innocentius'un Portresi | Diego Velázquez | İnsan incelemesi bekliyor ✅ |
+| 10 | Q4693305 | Tanrı'nın Kuzusu (Agnus Dei) | Francisco de Zurbarán | İnsan incelemesi bekliyor ✅ |
+| 11 | Q512755 | Müsrif Oğulun Dönüşü | Rembrandt | İnsan incelemesi bekliyor ✅ |
+| 12 | Q764831 | Aziz Nicholas Yortusu | Jan Steen | İnsan incelemesi bekliyor ✅ |
+| 13 | Q1140358 | Arkadya'da Ben de Varım | Nicolas Poussin | İnsan incelemesi bekliyor ✅ |
+| 14 | Q7731855 | Saba Melikesi'nin Gemiye Binişi | Claude Lorrain | İnsan incelemesi bekliyor ✅ |
+| 15 | Q27097122 | İskender'in Babil'e Girişi | Charles Le Brun | İnsan incelemesi bekliyor ✅ |
+| 16 | Q3399440 | XIV. Louis'nin Portresi | Hyacinthe Rigaud | İnsan incelemesi bekliyor ✅ |
+| 17 | Q531329 | Kythera Adası'na Yolculuk | Jean-Antoine Watteau | İnsan incelemesi bekliyor ✅ |
+| 18 | Q1131176 | Sarışın Odalık (Louise O'Murphy) | François Boucher | İnsan incelemesi bekliyor ✅ |
+| 19 | Q2629559 | Salıncak | Jean-Honoré Fragonard | İnsan incelemesi bekliyor ✅ |
+| 20 | Q18167078 | Kleopatra'nın Ziyafeti | Giovanni Battista Tiepolo | İnsan incelemesi bekliyor ✅ |
+
+**Parti 3 ilerleme:** 20/20 tamamlandı — **PARTİ 3 BİTTİ.** (Sıradaki: Parti 4, MUFREDAT sırasında M9 kalanı #63 Chardin Vatoz'dan itibaren.)
+
+**Üretim günlüğü (iddia A/B/C/D/E · kelime B/O/İ · dogrula hata/uyarı):**
+- 14 Kasım 2026 — #1 Q185255 (Veronese, Kana'da Düğün, Louvre): 73 (A19/B34/C2/D12/E6) · 410/1305/2621 · 0/0. Louvre birincil A (INV 142/MR 384, 6.77×9.94 m, Salle 711, 1798 conquête militaire). D: itwiki 666×990, gelin/damat sol↔sağ kanat, teslim ayı. GZ TASLAK.
+- #2 Q3998957 (Carracci, Farnese Tavanı, Palazzo Farnese in situ): 65 (A15/B26/C7/D7/E10) · 426/1425/3107 · 0/0. Fransa Büyükelçiliği birincil A (envanter yok). D1: data 'quadro reported' ↔ itwiki 'NON è quadro riportato'. WD P571=1586 anomalisi. GZ TASLAK.
+- #3 Q318947 (Caravaggio, Emmaus, NG Londra): 58 (A28/B12/C2/D8/E8) · 426/1351/2748 · 0/7 (heuristic). NG birincil A (NG172, Room 32; LONDRA versiyonu, Brera Q2097931 ayrı). D: data 1933↔NG 1839, havari kimliği hedged. GZ TASLAK.
+- #4 Q3769169 (Artemisia, Judith, Uffizi): 58 (A16/B26/C4/D4/E8) · 407/1354/2633 · 0/0. Uffizi birincil A (1890 n.1567, D29; Napoli Q2247406 ayrı). D001 boyut 146.5×108↔199×162.5; D004 data görseli CC BY-NC-SA (GAP PD alternatif). Şiddet akademik ayrıntısız. GZ TASLAK.
+- #5 Q20176925 (Orazio, Lavta Çalan, NGA Washington): 42 (A22/B3/C3/D7/E7) · 414/1316/2660 · 0/0. NGA canlı 403→Wayback 2017/2025 A (1962.8.1, Gallery 29). data cinsiyet hatası 'erkek'↔'young woman'; burgu↔'pressing strings/may be tuning'. GZ TASLAK.
+- #6 Q63341 (Baburen, Pezevenk Kadın, MFA Boston): 36 (A16/B5/C5/D4/E6) · 413/1385/2611 · 0/0. MFA 403→Wayback 2019-03-29 A (50.2721). KRİTİK: Vermeer arka planı The Concert + Lady Seated at a Virginal; Süt Boşaltan Kadın bağlantısı YOK (MUFREDAT öncülü hatalı). Erotik akademik. GZ TASLAK.
+- #7 Q2653851 (Rubens, Çarmıhın Dikilişi, Anvers Katedrali triptik): 70 (A10/B36/C1/D10/E13) · 414/1408/2727 · 0/0. Katedral + Art in Flanders A (env 947). KRİTİK: WD P217=10012 aslında 1747 gravür/ets (triptik değil). Rooses 1904 tam metin. GZ TASLAK.
+- #8 Q3998985 (Van Dyck, I. Charles Üç Poz, Royal Collection): 68 (A39/B9/C3/D8/E9) · 445/1419/2868 · 0/0. RCT 403→Wayback 2017/2024 A (RCIN 404420). Bernini bağlantısı A (1636 mektup/büst, 800£ yüzük, 1698 Whitehall yangını). D: konum Holyroodhouse↔Windsor, boyut ters. GZ TASLAK.
+- #9 Q1240092 (Velázquez, X. Innocentius, Doria Pamphilj): 60 (A11/B25/C9/D10/E5) · 416/1329/2677 · 0/7 (heuristic). Doria Pamphilj A (FC 289, 141×119). 'troppo vero' Kauffmann s.308 atfı ÇÜRÜTÜLDÜ (rivayet). D: inv.237↔FC 289, kâğıt tarihi. GZ TASLAK.
+- #10 Q4693305 (Zurbarán, Agnus Dei, Prado): 49 (A22/B8/C1/D8/E10) · 415/1382/2741 · 0/0. Prado 403→Wayback EN/ES A (P007293, 37.3×62, Sala 010A). Met 1987 Baticle tam metin (cat.52=San Diego versiyonu). D: boyut 37.3↔38↔37.5, 'taş seki' desteksiz. GZ TASLAK.
+- #11 Q512755 (Rembrandt, Müsrif Oğul, Hermitage): 41 (A13/B12/C4/D3/E9) · 433/1420/3103 · 0/0. Hermitage YENİ-FORMAT katalog A (ГЭ-742, circa 1668, 262×205, Room 254, 1766 Catherine). D: tarih/edinim 1766↔1767. GZ TASLAK.
+- #12 Q764831 (Jan Steen, Aziz Nicholas, Rijksmuseum): 59 (A30/B5/C3/D5/E16) · 423/1434/2821 · 0/0. Rijksmuseum A (SK-A-385, 82×70.5) + 1909 katalog no.2237. Provenans A (Tierens 1743→Van Heteren 1809). D: tarih, ayakkabı↔roe/gard, sabah↔arife. GZ TASLAK.
+- #13 Q1140358 (Poussin, Arkadya, Louvre): 63 (A19/B19/C2/D17/E6) · 427/1396/2741 · 0/0. Louvre A (INV 7300/MR 2339, vers 1638, 85×121, Salle 825; İKİNCİ versiyon, Chatsworth Q11919094 ayrı). D: data 1637–39 desteksiz, itwiki Fouquet/122cm hatalı. GZ TASLAK.
+- #14 Q7731855 (Claude, Saba Melikesi, NG Londra): 59 (A33/B7/C8/D6/E5) · 430/1310/2633 · 0/0. NG 4 sayfa A (NG14, 149.1×196.7, Room 36 Claude+Turner). D: WD genişlik 193.7↔196.7, melike giysi rengi, Turner vasiyet kapsamı. frwiki 'titanyum beyazı' anakronizmi (kullanılmadı). GZ TASLAK.
+- #15 Q27097122 (Le Brun, İskender Babil, Louvre): 41 (A24/B5/C2/D4/E6) · 482/1436/2690 · 0/0. Louvre A (INV 2898; INV 2968 'D'après' kopya ayrı). D: data 'bir fil'↔Louvre 'deux éléphants', '1664'↔'vers 1664–65', İskender couronné↔miğfer+asa. GZ TASLAK.
+- #16 Q3399440 (Rigaud, XIV. Louis, Louvre): 71 (A38/B5/C2/D15/E11) · 427/1349/2765 · 0/0. Louvre A (INV 7492/MR 2391, 277×194) + Versailles birincil PDF. D: konum non exposé↔salle 602, MV 2041 boyutu, 'basamak'↔'non sur l'estrade', bale yorumu reddi. GZ TASLAK.
+- #17 Q531329 (Watteau, Kythera, Louvre): 60 (A17/B24/C8/D5/E6) · 416/1310/2611 · 0/0. Louvre Wayback EN/FR + Joconde A (INV 8525, 129×194, Salle 917; Berlin Q41637000 ayrı). kabul parçası 28 Ağustos 1717, fête galante terimi. D: kabul unvanı, giriş 1793↔1795, gidiş↔dönüş. GZ TASLAK.
+- #18 Q1131176 (Boucher, Sarışın Odalık, SERİ: Köln 1751/Münih 1752): 61 (A21/B5/C9/D13/E13) · 421/1339/2641 · 0/16 (heuristic). WRM Köln + DHM CCP canlı A; Pinakothek Wayback. KRİTİK D1: data '1751 Köln' etiketi ↔ ana görsel Münih versiyonu; Louvre'da Sarışın Odalık YOK (1745 Brown Odalisque RF 2140). Erotik akademik. GZ TASLAK.
+- #19 Q2629559 (Fragonard, Salıncak, Wallace Collection): 68 (A38/B9/C3/D10/E8) · 424/1337/2724 · 0/0. Wallace eMuseumPlus A (P430, about 1767–68, 81×64.2). D: data 1766↔about 1767–68, yaşlı adam kimliği, Saint-Julien refsiz, 'yunuslu putto' kaynaksız. Erotik ima akademik. GZ TASLAK.
+- #20 Q18167078 (Tiepolo, Kleopatra Ziyafeti, NGV Melbourne): 67 (A23/B28/C1/D10/E5) · 415/1368/2650 · 0/0. NGV work 4409 + Tomory essay A (103-4, 250.3×357, Felton 1933). D: şarap↔sirke, edinim 1932 Colnaghi's↔1933 Sovyet, WD P11807 versiyon karışıklığı. GZ TASLAK.
+
+**PARTİ 3 ÖZET (20/20):** Tümü "İnsan incelemesi bekliyor"; **dogrula 0 hata**, **30 uyarı** (tamamı heuristic kısaltma-bölünmesi yanlış-pozitifi: Boucher 16, Velázquez 7, Caravaggio 7; tam cümleler [C###] etiketli). CJK 0. Toplam iddia **1169 (A454/B303/C79/D166/E167)**; her eserde quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (CS/DY/GZ/TK yalnız A/B); **kelime hedeflerinin TAMAMI aralıkta** (dolgu yok). `dogrula.py --test` **25/25**. Birincil katalog erişimi: Louvre (Veronese/Poussin/Le Brun/Rigaud/Watteau), NG Londra (Caravaggio/Claude), Uffizi (Artemisia), NGA Washington (Orazio), MFA Boston (Baburen), Anvers Katedrali (Rubens), Royal Collection (Van Dyck), Doria Pamphilj (Velázquez), Prado (Zurbarán), Hermitage (Rembrandt), Rijksmuseum (Steen), WRM/DHM (Boucher), Wallace (Fragonard), NGV (Tiepolo), Fransa Büyükelçiliği (Carracci) AÇILDI → güçlü A (çoğu canlı 403/404 → Wayback arşiv tarihli). **Vision bütçesi tüketildiğinden 20 eserin tümünde görsel İNCELENEMEDİ (E)**; kompozisyon birincil/ikincil METİNDEN; GZ 5/5 TASLAK. Erotik/şiddet konuları (Baburen, Boucher, Fragonard, Artemisia) akademik ve açık ayrıntısız. Hata listesi (üretimde yakalanıp düzeltildi): Fragonard 'bilinmeyen kaynak data' (5 iddia), Zurbarán kelime tutarsızlığı, Rigaud/Tiepolo heuristic uyarıları, CJK karışmaları. Kalıcı sınır: insan editör görsel + birincil teyidi ZORUNLU; hiçbir eser "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1-2 değişmedi; yalnız `content-review` commit/push.
 
 ### Veri Notları (mevcut veri DEĞİŞTİRİLMEDİ — onaya sunulur)
 

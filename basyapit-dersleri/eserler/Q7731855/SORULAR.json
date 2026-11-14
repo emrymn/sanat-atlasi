@@ -1,0 +1,551 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q7731855",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin güncel sergileme yeri neresidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "National Gallery, Londra, Room 36"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Uffizi, Floransa"
+    },
+    {
+     "harf": "D",
+     "metin": "Galleria Doria-Pamphilj, Roma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG birincil kaydı: Inventory number NG14, Location Room 36 (S5/S8).",
+   "yanlis_gerekceleri": {
+    "B": "Louvre'da Claude'un Seaport with Ulysses restoring Chrysalis to her Father'ı vardır; Sheba NG'dedir (C017).",
+    "C": "Uffizi bu eserin koleksiyonu değildir; NG birincil kaydı Room 36'yı gösterir (C006).",
+    "D": "Doria-Pamphilj'de The Mill'in yazıtsız bir versiyonu bulunur; Sheba NG14'tür (C057)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "NG14"
+    },
+    {
+     "harf": "B",
+     "metin": "NG12"
+    },
+    {
+     "harf": "C",
+     "metin": "NG498"
+    },
+    {
+     "harf": "D",
+     "metin": "1824"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG key facts: Inventory number NG14 (S5).",
+   "yanlis_gerekceleri": {
+    "B": "NG12, çiftin öteki üyesi The Mill'in envanter numarasıdır (C029).",
+    "C": "NG498, Turner'ın Dido building Carthage'ının numarasıdır (C034).",
+    "D": "1824 edinim yılıdır, envanter numarası değil; NG kaydı NG14 verir (C007)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin yapım tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1648"
+    },
+    {
+     "harf": "B",
+     "metin": "1600"
+    },
+    {
+     "harf": "C",
+     "metin": "1815"
+    },
+    {
+     "harf": "D",
+     "metin": "1824"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG: Date made 1648; Inscription summary \"Signed; Dated and inscribed\" (S5).",
+   "yanlis_gerekceleri": {
+    "B": "1600 sanatçının tahmini doğum yılıdır (Room 36 sayfası), eserin tarihi değil (C055).",
+    "C": "1815 Turner'ın Dido building Carthage'ının tarihidir (C034).",
+    "D": "1824 NG'nin satın alma yılıdır, yapım tarihi değil (C007)."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Konunun İncil kaynağı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1. Krallar 10:1–2"
+    },
+    {
+     "harf": "B",
+     "metin": "Yaratılış (Genesis) 24"
+    },
+    {
+     "harf": "C",
+     "metin": "Vergilius Aeneid"
+    },
+    {
+     "harf": "D",
+     "metin": "Ovidius Metamorphoses"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG: \"the Queen of Sheba embarking on her journey to see King Solomon in Jerusalem … (1 Kings 10: 1–2)\" (S5).",
+   "yanlis_gerekceleri": {
+    "B": "Yaratılış 24, çiftin öteki üyesi The Mill'in konusu Isaac-Rebekah düğünüdür (C057).",
+    "C": "Aeneid, Turner'ın Dido building Carthage'ının kaynağıdır (C034).",
+    "D": "Metamorphoses Claude'un başka mitolojik tablolarının kaynağıdır; Sheba Eski Ahit'tendir (C010)."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Çifti kim sipariş etmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Frédéric-Maurice, duc de Bouillon"
+    },
+    {
+     "harf": "B",
+     "metin": "John Julius Angerstein"
+    },
+    {
+     "harf": "C",
+     "metin": "J.M.W. Turner"
+    },
+    {
+     "harf": "D",
+     "metin": "XIV. Louis"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG provenans (Wine 2001): \"commissioned in 1647 by Frédéric-Maurice de la Tour d'Auvergne, duc de Bouillon\" (S6).",
+   "yanlis_gerekceleri": {
+    "B": "Angerstein 1803'te satın alan koleksiyoncu; sipariş veren değil (C032).",
+    "C": "Turner Claude'a özenen sonraki sanatçı; vasiyetle ilgili, siparişle değil (C035).",
+    "D": "Claude'un Fransız olması kraliyet siparişi çağrıştırsa da NG kaydı hamilin Bouillon dükü olduğunu belirtir; XIV. Louis siparişi kanıtı yok."
+   },
+   "kanit": [
+    "C029"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Teknik ve destek nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Kağıt üzerine suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG: Medium and support \"Oil on canvas\" (S5).",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir; NG kaydı oil on canvas der (C004).",
+    "C": "Pano/tempera değil; destek tuval, bağlayıcı yağdır (C004).",
+    "D": "Suluboya/kağıt değil; eser tuval üzerine yağlıboyadır (C004)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "NG birincil boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "149.1 × 196.7 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "152.3 × 200.6 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "155.5 × 230 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "200.6 × 152.3 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG key facts: Dimensions 149.1 × 196.7 cm (S5); 2015 arşiv ve Commons aynı (S9/S11).",
+   "yanlis_gerekceleri": {
+    "B": "152.3 × 200.6, çiftin öteki üyesi The Mill'in (NG12) boyutudur (C029).",
+    "C": "155.5 × 230, Turner Dido'nun NG boyutudur (C034).",
+    "D": "200.6 × 152.3, The Mill boyutlarının ters çevrilmiş biçimidir; Sheba 149.1 × 196.7'dir (C005)."
+   },
+   "kanit": [
+    "C005",
+    "C029",
+    "C034"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Turner vasiyetinin çekirdek koşulu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İki Turner tablosunun Claude'un iki tablosu yanında kalıcı (\"in perpetuity\") asılması"
+    },
+    {
+     "harf": "B",
+     "metin": "Tabloların satılıp gelirinin hayır kurumuna verilmesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Tabloların Tate Britain'a gönderilmesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Tabloların Turner ile birlikte gömülmesi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG provenans (Egerton 2000): \"placed by the side of Claude's Seaport and Mill\", in perpetuity, 12 ay koşulu (S7).",
+   "yanlis_gerekceleri": {
+    "B": "Vasiyet satış değil, kalıcı yan yana sergileme koşulu içerir (C035).",
+    "C": "Turner mirasının çoğu Tate'tedir ama Dido + Sun Rising NG'de Claude yanında kalmak üzere bırakılmıştır (C035/C036).",
+    "D": "Turner 1829'da Dido'ya sarılı gömülmeyi istemiş ama sonra vazgeçmiştir; nihai koşul NG'de sergilemedir (C058)."
+   },
+   "kanit": [
+    "C035"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Konuyu teşhis eden tek ipucu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sağdaki taş basamakta zar zor görünen yazıt"
+    },
+    {
+     "harf": "B",
+     "metin": "Melikenin tacı"
+    },
+    {
+     "harf": "C",
+     "metin": "Gemideki bayrak"
+    },
+    {
+     "harf": "D",
+     "metin": "Köprüdeki figürler"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG: \"The subject of this painting is identifiable only by the artist's inscription, barely visible on the stone step to the right\" (S5).",
+   "yanlis_gerekceleri": {
+    "B": "Taç melikeyi betimler ama konuyu tek başına teşhis etmez; NG yazıtı işaret eder (C015).",
+    "C": "Bayrak, NG betiminde teşhis aracı olarak geçmez; yazıt esastır (C015).",
+    "D": "Köprü figürleri sahne ayrıntısıdır; konu yazıtla belirlenir (C015/C021)."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Yuvarlak kule kimin amblemidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bouillon dükü (De la Tour d'Auvergne)"
+    },
+    {
+     "harf": "B",
+     "metin": "Kral Süleyman"
+    },
+    {
+     "harf": "C",
+     "metin": "John Julius Angerstein"
+    },
+    {
+     "harf": "D",
+     "metin": "Turner"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG: \"The round tower on the right was his principal emblem … family name was De la Tour d'Auvergne\" (S5).",
+   "yanlis_gerekceleri": {
+    "B": "Süleyman İncil konusunun kralıdır; kule amblemi Bouillon düküne aittir (C018).",
+    "C": "Angerstein sonraki koleksiyoncu; kule amblemi hamilin soyadıyla (De la Tour) ilgilidir (C018).",
+    "D": "Turner sonraki sanatçı; kule Bouillon amblemidir (C018)."
+   },
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser 1648'de imzalanmış ve tarih atılmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru: NG \"Signed; Dated and inscribed\", Date made 1648 (S5).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Konu, İncil'deki gibi çölde deveyle yolculuğu gösterir.",
+   "dogru": false,
+   "aciklama": "Yanlış: İncil'de çöl/deve yolculuğu vardır; Claude melikeyi denizden gönderir (S5).",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Tablo, NG'nin 1824'te Angerstein koleksiyonundan aldığı ilk eserler arasındadır.",
+   "dogru": true,
+   "aciklama": "Doğru: NG \"among the first works to be bought for the National Gallery in 1824 … Angerstein\" (S5).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Sheba ve The Mill, farklı İncil öykülerine ait ama birlikte sipariş edilmiş bir çifttir.",
+   "dogru": true,
+   "aciklama": "Doğru: NG seri yazısı \"commissioned as a pair … scenes belong to different biblical stories\" (S5).",
+   "kanit": [
+    "C029"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "The Mill (NG12) tablosunda da hamilin adı yazılıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: NG12'de hamil adı yoktur; ad yalnız NG14'te sağ alt köşedeki son basamağa yazılıdır (S6).",
+   "kanit": [
+    "C057"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D1 genişlik ihtilafını kaynak hiyerarşisiyle analiz edin: hangi kurum hangi değeri veriyor, neden NG esas?",
+   "beklenen_ogeler": [
+    "WD P2049 193.7 ref'siz",
+    "NG 2015 + 2026 = 196.7",
+    "enwiki/Commons 196.7",
+    "birincil > yardımcı veri",
+    "NG esas, WD aykırı"
+   ],
+   "kanit": [
+    "C045",
+    "C005"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Provenans zincirindeki belirsizlik işaretlerini (probably/possibly/apparently/but wrongly) sınıflandırın ve kanıt derecesini tartışın.",
+   "beklenen_ogeler": [
+    "1785 probably Dulaure",
+    "1787 possibly Thiéry garde-meuble",
+    "1801 probably/apparently M. Roy",
+    "Mireur 1805 but wrongly",
+    "Farington 3 Nisan 1803 Londra"
+   ],
+   "kanit": [
+    "C032",
+    "C031"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "D3 vasiyet kapsamı ihtilafında çekirdek koşul (A) ile adlandırma (D) ayrımını yapın; güncel Room 36 listesiyle karşılaştırın.",
+   "beklenen_ogeler": [
+    "NG Dido + Sun Rising",
+    "wiki Dido + Decline",
+    "çekirdek koşul aynı (in perpetuity/12 ay)",
+    "Room 36'da Sun Rising yok, Dido var",
+    "Smith 2009 kısıtlı"
+   ],
+   "kanit": [
+    "C047",
+    "C035",
+    "C036"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "D4 Pamphili anlatısını frwiki'nin titanyum beyazı anakronizmiyle (E7) birlikte kaynak eleştirisine tabi tutun.",
+   "beklenen_ogeler": [
+    "frwiki Pamphili → Bouillon satış",
+    "NG doğrudan Bouillon siparişi 1647",
+    "frwiki NG key-facts ref gösterir ama metinde Pamphili yok",
+    "blanc de titane anakronik",
+    "frwiki temkinle ele alınmalı"
+   ],
+   "kanit": [
+    "C033",
+    "C053",
+    "C029"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "İkonografik olasılığı (Godefroy de Bouillon bağlantısı) kesin bir program iddiasından ayırın.",
+   "beklenen_ogeler": [
+    "kule Bouillon amblemi",
+    "De la Tour d'Auvergne",
+    "Godefroy 1060–1100 Kudüs",
+    "\"He may have meant\" = olasılık",
+    "Ezgiler Ezgisi Süleyman bağı"
+   ],
+   "kanit": [
+    "C018",
+    "C015"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Sağdaki merdivenlerden inen taçlı melikeyi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NG): \"Crowned … the Queen is descending the steps on the right.\"",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Ön planda sandık taşıyan iki adamı ve kürek hazırlığındaki figürleri bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NG): \"in the foreground two men carry a chest, while other figures prepare to row.\"",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sütunların taşıdığı heykelli balkondan sahneyi izleyen figürleri bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NG): \"Columns support a balcony decorated with sculptures, from which figures watch.\"",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Şafak ışığının su dalgalanışı, bulut altları ve tekne siluetlerindeki etkisini inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NG): \"The soft warm light of sunrise … ripples … undersides of the clouds … silhouettes of the boats.\"",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Alt kenardaki deniz kabuklarını ve köprüdeki tek nokta seyircileri bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (NG): \"shells scattered along the bottom … bystanders on the bridge … single dots of paint.\"",
+   "kanit": [
+    "C021"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Seaport with the Embarkation of the Queen of Sheba; Claude (Gellée, le Lorrain); 1648 imzalı/tarihli; oil on canvas; 149.1 × 196.7 cm; NG14, Room 36; 1824 Angerstein edinimi.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + kaynak?",
+   "arka": "Saba Melikesi'nin Süleyman'ı ziyarete gemiye binişi; 1. Krallar 10:1–2; İncil'de çöl/deve, Claude denizden gönderir; biniş nadir konu; ancak yazıtla teşhis.",
+   "kanit": [
+    "C010",
+    "C011",
+    "C012",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Çift + hamil?",
+   "arka": "Bouillon Claudes: NG14 + NG12 The Mill; 1647 sipariş / 1648 tamamlanma; Frédéric-Maurice, duc de Bouillon (1605–1652); hamil adı NG14'te son basamakta.",
+   "kanit": [
+    "C029",
+    "C030"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Turner koşulu + bugün?",
+   "arka": "Turner vasiyeti: iki Turner, Claude çifti yanında \"in perpetuity\"; 12 ay koşulu; Court of Chancery 19 Mart 1856; bugün Sheba + Mill + Dido Room 36'da.",
+   "kanit": [
+    "C035",
+    "C036"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Işık + kompozisyon?",
+   "arka": "Şafak: yumuşak sıcak ışık, su/bulut/tekne siluetleri; iki yanda klasik yapılar simetrik-dengeli; Roma yıllarının yansıması; NG'nin üç hayali limanından biri.",
+   "kanit": [
+    "C024",
+    "C025",
+    "C016"
+   ]
+  }
+ ]
+}

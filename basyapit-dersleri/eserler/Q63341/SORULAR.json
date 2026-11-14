@@ -1,0 +1,565 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q63341",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Baburen'in The Procuress tablosunun Boston versiyonu hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Museum of Fine Arts, Boston"
+    },
+    {
+     "harf": "B",
+     "metin": "Rijksmuseum, Amsterdam"
+    },
+    {
+     "harf": "C",
+     "metin": "National Gallery, Londra"
+    },
+    {
+     "harf": "D",
+     "metin": "Courtauld Institute, Londra"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA birincil katalog kaydı (S7): envanter 50.2721, MFA Boston.",
+   "yanlis_gerekceleri": {
+    "B": "Rijksmuseum'daki SK-C-612 Amsterdam kopyasıdır (\"kopie naar… na 1623\"); Boston aslı değildir.",
+    "C": "National Gallery'de Vermeer'in Virginal tablosu (NG2568) vardır; Baburen Boston'dadır.",
+    "D": "Courtauld versiyonu Han van Meegeren sahtesidir; Boston aslı değildir."
+   },
+   "kanit": [
+    "C001",
+    "C012",
+    "C014",
+    "C026"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Boston versiyonunun envanter (accession) numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "50.2721"
+    },
+    {
+     "harf": "B",
+     "metin": "SK-C-612"
+    },
+    {
+     "harf": "C",
+     "metin": "NG2568"
+    },
+    {
+     "harf": "D",
+     "metin": "33414"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA accession number 50.2721 (S7); WD Q20539079 P217.",
+   "yanlis_gerekceleri": {
+    "B": "SK-C-612 Rijksmuseum Amsterdam kopyasının numarasıdır.",
+    "C": "NG2568 Vermeer'in A Young Woman seated at a Virginal tablosunun numarasıdır.",
+    "D": "33414 MFA web sayfasının URL kimliğidir (the-procuress-33414); envanter numarası değildir."
+   },
+   "kanit": [
+    "C001",
+    "C012",
+    "C026"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "MFA birincil kaydına göre tablonun tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1622"
+    },
+    {
+     "harf": "B",
+     "metin": "1656"
+    },
+    {
+     "harf": "C",
+     "metin": "1665"
+    },
+    {
+     "harf": "D",
+     "metin": "1624"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA düz 1622 der (S7); en/fr \"c. 1622\" ayrı bir tartışmadır (C021).",
+   "yanlis_gerekceleri": {
+    "B": "1656 Vermeer'in kendi The Procuress tablosunun tarihidir.",
+    "C": "1665–66 Vermeer'in The Concert tablosunun MFA tarih aralığıdır.",
+    "D": "1624 Baburen'in ölüm yılıdır."
+   },
+   "kanit": [
+    "C001",
+    "C010",
+    "C008",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Tablonun tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval (Oil on canvas)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Yumurta temperası, pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya, kağıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA \"Medium or Technique: Oil on canvas\" (S7).",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar resmidir; bu eser tuval üzerinedir.",
+    "C": "Tempera/pano farklı bağlayıcı ve destektir; kayıt yağlıboya tuval der.",
+    "D": "Suluboya/kağıt değildir; kayıt oil on canvas."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "MFA kataloguna göre lavta neyin sembolüdür ve nerede durur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Aşk sembolü; kompozisyonun merkezinde"
+    },
+    {
+     "harf": "B",
+     "metin": "Ölüm sembolü; sağ alt köşede"
+    },
+    {
+     "harf": "C",
+     "metin": "Savaş sembolü; sol üstte"
+    },
+    {
+     "harf": "D",
+     "metin": "Ölçülülük sembolü; arka planda"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA: \"The lute, symbol of love, occupies the center of the composition\" (S7).",
+   "yanlis_gerekceleri": {
+    "B": "MFA lavtayı aşk sembolü olarak merkezde verir; ölüm sembolü/ sağ alt değil.",
+    "C": "Savaş sembolü değil; aşk sembolü.",
+    "D": "Ölçülülük sembolü değil; aşk ve merkez."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "İmza nerede durur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sol altta, lavta gövdesinin alt kenarında"
+    },
+    {
+     "harf": "B",
+     "metin": "Sağ üst köşede"
+    },
+    {
+     "harf": "C",
+     "metin": "Tuvalin arka yüzünde"
+    },
+    {
+     "harf": "D",
+     "metin": "Çerçevede"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA Inscription: \"Lower left, on base of lute: TBaburen f 16 [...]\" (S7); Commons S9 aynı.",
+   "yanlis_gerekceleri": {
+    "B": "İmza sol altta, lavta tabanındadır; sağ üst değil.",
+    "C": "İmza tuvalin ön yüzünde lavta üzerindedir; arka yüzde değil.",
+    "D": "İmza lavta gövdesindedir; çerçevedeki eski İngilizce yazıt provenance notudur, imza değil."
+   },
+   "kanit": [
+    "C005",
+    "C028"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Vermeer, The Procuress'i (veya bir kopyasını) hangi iki tablosunun arka planına yerleştirdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "The Concert ve A Young Woman seated at a Virginal"
+    },
+    {
+     "harf": "B",
+     "metin": "The Milkmaid ve The Concert"
+    },
+    {
+     "harf": "C",
+     "metin": "Girl with a Pearl Earring ve The Concert"
+    },
+    {
+     "harf": "D",
+     "metin": "The Art of Painting ve The Milkmaid"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA not 2 (S7) ve NG (S10): The Concert (Gardner) + Lady Seated at the Virginals (NG).",
+   "yanlis_gerekceleri": {
+    "B": "The Milkmaid bağlantısı erişilen hiçbir kaynakta yok; MFA/NG yalnız Concert + Virginal sayar.",
+    "C": "Girl with a Pearl Earring bu iki tablodan biri değildir.",
+    "D": "The Art of Painting ve Milkmaid kaynaklarda sayılmaz."
+   },
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Rijksmuseum Amsterdam versiyonunu (SK-C-612) nasıl sınıflar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kopie naar Dirck van Baburen, na 1623 (kopya)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ototograf Baburen, 1622"
+    },
+    {
+     "harf": "C",
+     "metin": "Han van Meegeren sahtesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Vermeer atölyesi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Rijksmuseum güncel kayıt: \"kopie naar Dirck van Baburen, na 1623\" (S11).",
+   "yanlis_gerekceleri": {
+    "B": "Ototograf 1622 Boston aslıdır (MFA); Amsterdam kopyadır.",
+    "C": "Van Meegeren sahtesi Courtauld versiyonudur.",
+    "D": "Vermeer atölyesi atfı kaynaklarda yok; kayıt \"kopie naar Baburen\" der."
+   },
+   "kanit": [
+    "C012",
+    "C001",
+    "C014"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "1949 Christie's kataloğunda tablo kime atıflı satıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Honthorst"
+    },
+    {
+     "harf": "B",
+     "metin": "Baburen"
+    },
+    {
+     "harf": "C",
+     "metin": "Vermeer"
+    },
+    {
+     "harf": "D",
+     "metin": "Ter Brugghen"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA not 5: \"Attributed in the auction catalogue to Honthorst\" (S7).",
+   "yanlis_gerekceleri": {
+    "B": "Baburen doğru atıftır ama 1949 kataloğunda Honthorst yazılıydı; yeniden keşif 1949 sonrası.",
+    "C": "Vermeer atfı yoktur.",
+    "D": "Ter Brugghen atfı yoktur; katalog Honthorst der."
+   },
+   "kanit": [
+    "C006",
+    "C024"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Courtauld versiyonunun 2011 BBC incelemesindeki durumu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Han van Meegeren sahtesi (Bakelite tespiti)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ototograf 17. yüzyıl Baburen"
+    },
+    {
+     "harf": "C",
+     "metin": "Vermeer otografı"
+    },
+    {
+     "harf": "D",
+     "metin": "19. yüzyıl akademik kopyası"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BBC Fake or Fortune? (2011): Bakelite → modern sahte; van Meegeren'e atıf (S3).",
+   "yanlis_gerekceleri": {
+    "B": "2009 \"likely 17th-century\" sonucu 2011 Bakelite analiziyle çürütüldü.",
+    "C": "Vermeer otografı değil; van Meegeren sahtesi.",
+    "D": "19. yüzyıl kopyası değil; 20. yüzyıl modern sahtesi (Bakelite)."
+   },
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "MFA birincil kaydı tablonun tarihini düz 1622 olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru (S7): \"The Procuress 1622\". en/fr \"c. 1622\" ayrı tartışmadır (C021).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "The Procuress, Vermeer'in Süt Boşaltan Kadın (The Milkmaid) tablosunun arka planında görünür.",
+   "dogru": false,
+   "aciklama": "Yanlış: MFA ve NG yalnız The Concert + Lady Seated at a Virginal sayar; Milkmaid maddesinde bağlantı yok (C017 negatif).",
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Amsterdam SK-C-612, Rijksmuseum'a göre 1623 sonrası yapılmış bir kopyadır.",
+   "dogru": true,
+   "aciklama": "Doğru (S11): \"kopie naar Dirck van Baburen, na 1623\".",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "İmza lavta gövdesinin alt kenarındadır ve tarih kısmı kısmen okunur (\"16 [...]\").",
+   "dogru": true,
+   "aciklama": "Doğru (S7/S9): \"TBaburen f 16 [...]\" (T+B birleşik).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "MFA kataloğu, 1641 Thins belgesinin MFA tablosuyla teşhisini tartışmasız sunar.",
+   "dogru": false,
+   "aciklama": "Yanlış: MFA not 1 Blankert teşhisini ve Franits'in replika şüphesini birlikte verir (C019).",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Thins teşhis ihtilafını (Blankert 1978 ↔ Franits 2013) ve Vermeer bağlantısına etkisini değerlendirin.",
+   "beklenen_ogeler": [
+    "1641 belgesi",
+    "betimsel örtüşme (avuç)",
+    "Blankert MFA aslı",
+    "Franits replika",
+    "Vermeer arka planı: asıl mı kopya mı"
+   ],
+   "kanit": [
+    "C007",
+    "C019",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Müfredatın Milkmaid (Q167605) karşılaştırma öncülünün neden hatalı olduğunu açıklayın ve düzeltme önerin.",
+   "beklenen_ogeler": [
+    "pozitif kaynaklar: Concert + Virginal",
+    "Milkmaid maddesinde 0 geçiş",
+    "negatif kanıt sınırı",
+    "MUFREDAT 44↔52 düzeltmesi",
+    "pilota dokunmama"
+   ],
+   "kanit": [
+    "C017",
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Üç versiyonu (Boston/Amsterdam/Courtauld) atıf ve doğrulama yöntemleri açısından karşılaştırın.",
+   "beklenen_ogeler": [
+    "MFA katalog+imza+provenance",
+    "Rijks kopie na 1623 + craquelü + teknik",
+    "Courtauld Bakelite kimyasal",
+    "2009↔2011 çözülme",
+    "versiyonları karıştırmama"
+   ],
+   "kanit": [
+    "C001",
+    "C012",
+    "C014",
+    "C024",
+    "C020"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Vermeer'in \"resim içinde resim\" stratejisini ve Cole&Pardo karşıtlık okumasını tartışın.",
+   "beklenen_ogeler": [
+    "arka plan baskınlığı ~1/4",
+    "ön ışık (Vermeer'de nadir)",
+    "kaba ↔ zarif karşıtlığı",
+    "müzik-aşk bağlantısı",
+    "karşıt çift (standing/seated)"
+   ],
+   "kanit": [
+    "C011",
+    "C026",
+    "C033"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Provenance zincirindeki \"possibly\" işaretlerini ve 1949–1950 yeniden keşfi metodolojik olarak değerlendirin.",
+   "beklenen_ogeler": [
+    "Thins→Bolnes/Vermeer→oğul→Sloane possibly",
+    "Leeuwenhoek miras",
+    "çerçeve İngilizce yazıt",
+    "1949 Christie's Honthorst lot 52",
+    "Gowing 1951"
+   ],
+   "kanit": [
+    "C027",
+    "C028",
+    "C006",
+    "C024"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betimine göre üç figürü ve yerlerini bulun: solda lavtalı genç kadın, ortada sikkeli müşteri, sağda avucunu gösteren pezevenk.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): MFA (S7) + enwiki (S3) betimi; görsel incelenmedi.",
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kompozisyonun merkezindeki lavtayı ve onu çevreleyen el hareketlerini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): MFA: \"the gestures of the hands that surround it tell the painting's story\".",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Lavta gövdesinin alt kenarındaki imza bölgesini bulun (\"TBaburen f 16 [...]\").",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Commons ImageNote metadata: x1569,y4440,w459,h265 (5101×4826); bu metadata'dır, görsel inceleme değil.",
+   "kanit": [
+    "C005",
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Yakın plan yarım boy figürleri ve sert ışık-gölge karşıtlığını (Utrecht Caravaggizmi) fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): MFA üslup betimi (S7); kaynak metni.",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Vermeer'in A Young Woman seated at a Virginal tablosunda (NG) arka duvarda asılı Baburen resmini bulun; yüzeyin yaklaşık dörtte birini kaplar.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NG betimi (S10); bu başka bir eserin gözlemidir.",
+   "kanit": [
+    "C026",
+    "C009"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Boston versiyonunun künyesi?",
+   "arka": "The Procuress / De koppelaarster; Dirck van Baburen; 1622 (MFA); yağlıboya tuval; 101,6×107,6 cm; MFA Boston 50.2721; 8 Haziran 1950, Hopkins Fund, $1960.",
+   "kanit": [
+    "C001",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu ve tür?",
+   "arka": "Genelev pazarlığı: müşteri + lavtalı genç kadın + avucunu gösteren pezevenk; \"Bordeeltjes\"; lavta aşk sembolü, merkezde; el hareketleri hikâyeyi anlatır.",
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Vermeer bağlantısı?",
+   "arka": "The Concert (Gardner, çalındı) + A Young Woman seated at a Virginal (NG); MFA tablosu veya muhtemelen bir kopyası; kopya kayınvalide Thins'e aitti. Milkmaid DEĞİL.",
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Üç versiyon?",
+   "arka": "Boston MFA 50.2721 (1622, Baburen); Amsterdam SK-C-612 (kopie naar, na 1623); Courtauld (van Meegeren sahtesi, Bakelite 2011).",
+   "kanit": [
+    "C001",
+    "C012",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "İmza ve 1641 belgesi?",
+   "arka": "İmza lavta tabanında \"TBaburen f 16 [...]\" (T+B birleşik, tarih kısmen okunur); 27 Kasım 1641 Thins mal paylaşımı: \"Een schilderije daer en coppelerste die in de hant wijst\".",
+   "kanit": [
+    "C005",
+    "C007"
+   ]
+  }
+ ]
+}

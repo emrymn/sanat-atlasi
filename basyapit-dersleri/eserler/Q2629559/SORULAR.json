@@ -1,0 +1,569 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2629559",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi kurumda ve hangi envanter numarasıyla kayıtlıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Wallace Collection, Londra — P430"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée du Louvre, Paris — MI 1061"
+    },
+    {
+     "harf": "C",
+     "metin": "The Frick Collection, New York — 1915.1.46"
+    },
+    {
+     "harf": "D",
+     "metin": "Museo del Prado, Madrid — P430"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 eMuseumPlus: \"Inv: P430\", Wallace Collection (C005).",
+   "yanlis_gerekceleri": {
+    "B": "MI 1061, Fragonard'ın Louvre'daki abbé de Saint-Non portresidir (S13); Salıncak Wallace Collection'dadır. Louvre eseri 1859'da reddetmiştir (C025).",
+    "C": "1915.1.46, Frick Collection'daki The Progress of Love: The Meeting'dir (C034); Salıncak değil.",
+    "D": "P430 bir Wallace envanter numarasıdır; Prado bu eserin bulunduğu kurum değildir (C005)."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Müzenin güncel kaydında eserin tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "about 1767 - 1768"
+    },
+    {
+     "harf": "B",
+     "metin": "1766"
+    },
+    {
+     "harf": "C",
+     "metin": "y. 1750–52"
+    },
+    {
+     "harf": "D",
+     "metin": "1782"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5: \"Date: about 1767 - 1768\" (C002).",
+   "yanlis_gerekceleri": {
+    "B": "1766 data/basyapitlar.json'da geçer ama hiçbir erişilen kaynakta yoktur; müze about 1767–68 der (C052).",
+    "C": "y. 1750–52, Blind Man's Buff ve The See-Saw pendant'larının tarihidir (C034).",
+    "D": "1782, Nicolas de Launay gravürünün yayım tarihidir; eserin adı buradan gelir (C031)."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Sipariş süreci nasıl işledi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Doyen'e sipariş verildi, reddetti ve Fragonard'ı önerdi"
+    },
+    {
+     "harf": "B",
+     "metin": "Boucher'ye sipariş verildi, o da Watteau'ya devretti"
+    },
+    {
+     "harf": "C",
+     "metin": "Fragonard doğrudan kraliyet siparişi olarak aldı"
+    },
+    {
+     "harf": "D",
+     "metin": "Falconet heykeli için sipariş verdi, Fragonard resmi yaptı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Collé: isimsiz gentleman of the Court önce Doyen'e başvurdu; Doyen reddedip Fragonard'ı önerdi (C009).",
+   "yanlis_gerekceleri": {
+    "B": "Boucher Fragonard'ın hocasıdır ve Rokoko dağarcığını sağlar (C016); siparişi alan değildir. Watteau öncül bir göndermedir (C034).",
+    "C": "Eser kraliyet siparişi değil, isimsiz bir saray beyefendisinin özel siparişidir (C009); Fragonard kraliyet tarih ressamlığından uzaklaşıyordu (C033).",
+    "D": "Falconet Menacing Cupid heykelinin sanatçısıdır (C014); sipariş bir resim içindir, heykel için değil."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Collé'nin siparişi kaydettiği günlük girişinin tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ekim 1767"
+    },
+    {
+     "harf": "B",
+     "metin": "01 June 1865"
+    },
+    {
+     "harf": "C",
+     "metin": "1782"
+    },
+    {
+     "harf": "D",
+     "metin": "1859"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S13: \"It is dated October 1767 and states that Fragonard was already at work\" (C010).",
+   "yanlis_gerekceleri": {
+    "B": "01 June 1865, Morny satışının tarihidir (C023).",
+    "C": "1782, Launay gravürünün yayım tarihidir (C031).",
+    "D": "1859, Louvre'a teklif tarihidir (C025)."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Bitmiş resimde, ilk siparişe göre yaşlı adam açısından ne değişti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Artık rahip/piskopos değil, laik bir figür"
+    },
+    {
+     "harf": "B",
+     "metin": "Piskopos olarak kaldı"
+    },
+    {
+     "harf": "C",
+     "metin": "Resimden tamamen çıkarıldı"
+    },
+    {
+     "harf": "D",
+     "metin": "Genç âşıkla yer değiştirdi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5: \"the older man is no longer a priest\" (C013); Art UK: \"the impudent reference to the church has been omitted\" (C043).",
+   "yanlis_gerekceleri": {
+    "B": "Piskopos ilk sipariş isteğindeydi (C009); bitmiş eserde yaşlı adam artık rahip değildir (C013).",
+    "C": "Yaşlı adam bitmiş eserde vardır; sağda konumlanır (C022).",
+    "D": "Genç âşık ayrı bir figürdür; soldadır (C022); yaşlı adamla yer değiştirmez."
+   },
+   "kanit": [
+    "C013",
+    "C043"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Kadının şapkası müzede nasıl tanımlanır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bergère — söğüt/yonga/saman/ipekten hafif çoban güneş şapkası"
+    },
+    {
+     "harf": "B",
+     "metin": "Tricorn kunduz şapka"
+    },
+    {
+     "harf": "C",
+     "metin": "Bag wig"
+    },
+    {
+     "harf": "D",
+     "metin": "Sert cocked hat"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S15: \"lightweight Bergère hats of willow, chip, straw and silk (as depicted by Fragonard)\" (C018).",
+   "yanlis_gerekceleri": {
+    "B": "Tricorn kunduz şapka genç adamındır; havaya kaldırılmıştır (C019).",
+    "C": "Bag wig genç adamın peruğudur; resimde görünmez, 1782 gravüründe görünür (C019).",
+    "D": "Sert cocked hat, yaşlı adamın yanındaki yumuşak şapkayla karşıtlık kurar (C021)."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "2021 konservasyonu Fragonard'ın çalışma süreci hakkında ne ortaya çıkardı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Az underdrawing; doğrudan tuvale çalışma; pentimenti (diz/petticoat, sağ omuz)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ayrıntılı kömür underdrawing"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk tekniği"
+    },
+    {
+     "harf": "D",
+     "metin": "Panel üzerine tempera"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S17: \"Little was noted in the way of underdrawing … Scattered pentimenti … The woman's knee and petticoat … the young admirer's right shoulder\" (C028).",
+   "yanlis_gerekceleri": {
+    "B": "Tersi: az underdrawing saptandı, doğrudan tuvale çalışılmıştır (C028).",
+    "C": "Eser tuval üzerine yağlıboyadır (C003); fresk değil.",
+    "D": "Eser tuval üzerine yağlıboyadır (C003); panel/tempera değil."
+   },
+   "kanit": [
+    "C028",
+    "C003"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Eserin adı nereden gelir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1782'de yayımlanan Nicolas de Launay gravüründen"
+    },
+    {
+     "harf": "B",
+     "metin": "Collé'nin 1767 günlüğünden"
+    },
+    {
+     "harf": "C",
+     "metin": "1865 Morny satış kataloğundan"
+    },
+    {
+     "harf": "D",
+     "metin": "1908 Wallace kataloğundan"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5: \"The name of the work derives from an engraving by Nicolas de Launay … published in 1782\" (C031).",
+   "yanlis_gerekceleri": {
+    "B": "Collé günlüğü siparişi kaydeder, başlığı değil (C009/C010).",
+    "C": "Morny satış kataloğu sahneyi \"park enriched with statues\" diye tanımlar (C024); başlık kaynağı değildir.",
+    "D": "1908 Wallace kataloğu Rothschild kopyası için anılır (C039); başlık kaynağı değildir."
+   },
+   "kanit": [
+    "C031"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Eser Wallace Collection'a nasıl girdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Hertford 1865 Morny satışında aldı; Lady Wallace 1897'de ulusa bıraktı"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre 1859'da bağışladı"
+    },
+    {
+     "harf": "C",
+     "metin": "Fragonard İngiliz kraliyet ailesine hediye etti"
+    },
+    {
+     "harf": "D",
+     "metin": "1794 Pressigny satışında alındı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S19: Morny sale Paris 01 June 1865 no. 98 → Hertford; \"bequeathed to the nation by Lady Wallace, 1897\" (C023/C035).",
+   "yanlis_gerekceleri": {
+    "B": "Louvre 1859'da eseri reddetti, bağışlamadı (C025).",
+    "C": "Kaynaklarda böyle bir hediye yok; sipariş isimsiz bir saray beyefendisinindi (C009).",
+    "D": "Pressigny 1794'te giyotin edildi, eser devrim hükümetince el kondu (C037); Hertford alımı 1865'tir."
+   },
+   "kanit": [
+    "C023",
+    "C035"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Müze, sahnenin erotik etkisini neye bağlar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "18. yy giyim/decorum normlarına; eser mahrem bir iç mekânda birkaç kişi için tasarlandı"
+    },
+    {
+     "harf": "B",
+     "metin": "Salon'da kamusal sergileme için tasarlandı"
+    },
+    {
+     "harf": "C",
+     "metin": "Erotik içerik taşımaz"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir kilise için sipariş edildi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S15: \"erotic frisson caused by ankle, foot and even shoes\"; \"designed to be seen by a few in an intimate 18th-century interior\" (C020); P430 \"highly erotic works\" sınıfında (C015).",
+   "yanlis_gerekceleri": {
+    "B": "Eser kamusal Salon sergisi için değil, mahrem bir çevre için tasarlandı (C020).",
+    "C": "Müze P430'u \"highly erotic works\" sınıfında anar (C015).",
+    "D": "İlk siparişteki piskopos çıkarıldı; bitmiş eser laik bir sahnedir, kilise için değildir (C013/C043)."
+   },
+   "kanit": [
+    "C020",
+    "C015"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Müzenin güncel kaydı tarihi \"about 1767 - 1768\" olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru (S5, C002).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eserdeki imza açıkça okunabilir.",
+   "dogru": false,
+   "aciklama": "Yanlış: müze \"Signature: 'fr…..rd' Signed indistinctly\" der (S7, C007).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser Ağustos–Kasım 2021 arasında konservasyondan geçti ve 100 yıldan uzun süredir temizlenmemişti.",
+   "dogru": true,
+   "aciklama": "Doğru (S17, C026).",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Siparişverenin kimliği Collé'nin günlüğünde açıkça verilmiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış: \"What Collé does not deliver … is the name\"; kimlik varsayımdır (S13, C011).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Soldaki heykel, Pompadour için yapılmış ve 1757 Salonu'nda sergilenmiş Falconet Menacing Cupid'dir.",
+   "dogru": true,
+   "aciklama": "Doğru (S14, C014).",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih ihtilafını (data 1766 ↔ müze about 1767–68 ↔ WD 1761–1768) kaynak hiyerarşisiyle analiz edin.",
+   "beklenen_ogeler": [
+    "müze about 1767-1768 esas",
+    "1766 hiçbir kaynakta yok",
+    "WD circa/1761-1768",
+    "veri notu olarak raporla"
+   ],
+   "kanit": [
+    "C052",
+    "C002",
+    "C051"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Yaşlı adamın müze sayfaları arasındaki adlandırma kaymasını (2020 husband / Fashion cuckolded husband? / güncel older man / Art UK admirer) tartışın.",
+   "beklenen_ogeler": [
+    "2020 elderly husband",
+    "cuckolded husband? retorik",
+    "güncel nötr older man",
+    "Art UK admirer",
+    "kesinleştirme yok"
+   ],
+   "kanit": [
+    "C053",
+    "C022",
+    "C021",
+    "C043"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Siparişveren kimliğini (Saint-Julien) kaynak eleştirisiyle değerlendirin: allegedly/assumed/little evidence; ne tür kanıt gerekir?",
+   "beklenen_ogeler": [
+    "WD allegedly refsiz",
+    "müze long been assumed",
+    "enwiki little evidence",
+    "ödeme/mektup/envanter gerekir",
+    "quiz doğru cevabı olmaz"
+   ],
+   "kanit": [
+    "C044",
+    "C011",
+    "C038",
+    "C054"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "2021 konservasyonunun teknik bulgularını ve epistemik/kurumsal boyutunu analiz edin.",
+   "beklenen_ogeler": [
+    "pentimenti diz/petticoat/sağ omuz",
+    "az underdrawing",
+    "cleaning windows + komite",
+    "Martin Wyld",
+    "orijinal görünüm iddiası"
+   ],
+   "kanit": [
+    "C026",
+    "C027",
+    "C028",
+    "C068"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Eserin sonrası yaşamını (1782 gravür, kopyalar, Shonibare, Frozen) \"imge dolaşımı\" açısından değerlendirin; hangi bağlar güçlü/zayıf kanıtlı?",
+   "beklenen_ogeler": [
+    "Launay 1782 ters kompozisyon",
+    "Rothschild/Lambinet kopya",
+    "Shonibare Tate T07952",
+    "believed to reference zayıf",
+    "Medium/CBR zayıf ref"
+   ],
+   "kanit": [
+    "C031",
+    "C040",
+    "C039",
+    "C041",
+    "C059"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynakların betimlediği fırlayan terliği bulun: salıncağın kuvvetiyle ayakkabı nasıl hareket eder?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S10): \"The force of the swing caused one of her slippers to fly off.\" Görsel incelenmedi; piksel teyidi insan editöre.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kadının bergère şapkasını ve genç adamın havaya kaldırdığı tricorn şapkasını ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S15): bergère söğüt/yonga/saman/ipek; tricorn kunduz, havada. Bag wig resimde görünmez.",
+   "kanit": [
+    "C018",
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Müzenin solda tanımladığı Falconet Menacing Cupid heykelini bulun; hikâyeye nasıl \"yorum katıyor\"?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S14/S5): Pompadour için yapılmış, Salon 1757; \"comments on the story\".",
+   "kanit": [
+    "C014",
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Bitmiş esere eklendiği söylenen havlayan köpeği bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S5): \"a barking dog has been added\". Konum/sembolizm doğrulanmadı.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Pembe/mavi-yeşil karşıtlığını ve dönen diyagonalleri; bakımsız bahçe ve uzak çeşmeyi gözlemleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S14): Boucher Rokoko dağarcığı; overgrown garden + distant fountain.",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Salıncak künyesi?",
+   "arka": "The Swing / L'Escarpolette; Fragonard (1732–1806); about 1767–1768; tuval üzerine yağlı boya; 81×64.2 cm (object 81.8×64.8); Wallace Collection P430; konum \"Study\"; imza okunaklı değil.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sipariş hikâyesi?",
+   "arka": "Collé Ekim 1767; isimsiz gentleman of the Court; Doyen reddetti → Fragonard; piskopos → laik yaşlı adam; havlayan köpek + Falconet Menacing Cupid eklendi; siparişveren kimliği belirsiz (varsayım Saint-Julien).",
+   "kanit": [
+    "C009",
+    "C010",
+    "C013",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "İkonografi + moda?",
+   "arka": "Bergère şapka; tricorn havada; terlik fırlar; şapka sunumu \"symbolic offer\"; Menacing Cupid (Pompadour, Salon 1757); love triangle; erotik ima decorum normlarına bağlı; mahrem iç mekân.",
+   "kanit": [
+    "C018",
+    "C019",
+    "C022",
+    "C014",
+    "C020"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "2021 konservasyonu?",
+   "arka": "Ağustos–Kasım 2021; Martin Wyld; 100+ yıl; sararmış vernik; ilk onsite; cleaning windows + trustee; pentimenti (diz/petticoat, sağ omuz); az underdrawing; Bank of America; FixingFrago 2019 Jackall (8 eser, 5 temizlik).",
+   "kanit": [
+    "C026",
+    "C028",
+    "C029",
+    "C030"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Provenance + ad?",
+   "arka": "Pressigny → (possibly Saint-Marc) → Morny → 01 June 1865 no.98 → Hertford → Lady Wallace 1897; ad 1782 Launay gravüründen; Louvre 1859 reddetti.",
+   "kanit": [
+    "C023",
+    "C035",
+    "C031",
+    "C025"
+   ]
+  }
+ ]
+}

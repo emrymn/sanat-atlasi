@@ -1,0 +1,908 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1240092",
+ "sanatci_id": "diego-velazquez",
+ "baslik": "Papa X. Innocentius'un Portresi",
+ "ozgun_baslik": "Ritratto di papa Innocenzo X Pamphilj (Portrait of Pope Innocent X Pamphilj)",
+ "kunye": {
+  "sanatci": "Diego Velázquez (Diego Rodríguez de Silva y Velázquez)",
+  "sanatci_yasam": "1599–1660",
+  "tarih": "1649 sonu–Ocak 1650 (birincil \"probabilmente\"); c. 1650",
+  "tarih_belirsizlik": "Birincil \"probabilmente/probably\"; itwiki kesin 1650; Harris 26 Nisan 1649 başlangıç hipotezi; Pons 13 Ağustos 1650 oturma belgesi; kâğıt tarihi \"now illegible, read as 1650\" (D3/D4)",
+  "teknik": "Yağlıboya, tuval (olio su tela / oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 141,
+   "genislik": 119
+  },
+  "muze": "Galleria Doria Pamphilj, Roma",
+  "envanter": "FC 289",
+  "edinim": "Papa tarafından sipariş; başından beri Pamphilj ailesinde (Kauffmann 2009, no.185)",
+  "konum": "Galerinin birinci kolunun ucunda özel Camerino (19. yy ortası; mimar Andrea Busiri Vici)",
+  "telif_durumu": "Kamu malı (Velázquez ö. 1660; PD-art, life+100); Commons 4 dosya PD; galeri reproduksiyon yönetmeliği geçerli"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Pope_Innocent_X_(by_Diego_Vel%C3%A1zquez)_-_Doria_Pamphilj_Gallery,_Rome.jpg",
+  "kaynak": "Wikimedia Commons (credit: gallerix.org); proje ana görseli (data/yerel_gorseller hash a49e1d7acca971b6)",
+  "lisans": "Public domain (PD-art; life+100)",
+  "dogrulama": {
+   "yontem": "metadata-only (4 dosya); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "ana 1685×2000; diğerleri 5613×6731, 4545×5799, 491×600",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C052); GZ TASLAK; kompozisyon birincil + S9/S7/S2 metninden; en yüksek çözünürlüklü dosyanın dosya adı künyesi hatalı (140×120, inv.237); galeri kendi görseli indirilmedi, reproduksiyon yönetmeliği geçerli"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 416
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1329
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2677
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-katalog-ve-çelişki-envanteri"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-tartışması-kostüm-belge-ve-okunaklılık"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sanatçının-kariyeri-italya-ve-titianesque-çizgi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-kırmızı-tonalite-biçimsel-analiz-kaynak-betimi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-dilekçe-imza-ve-otorite"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-apsley-house-versiyonu-teknik-ve-provenans"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Doria Pamphilj birincil kataloğuyla künyeyi (FC 289, 141 × 119 cm, olio su tela, \"probabilmente\" tarih) doğrular.",
+  "Boyut/envanter/tarih ihtilaflarını (D1–D4) ve WD yüzyıl-precision artefaktını (D10) kaynak hiyerarşisiyle yönetir.",
+  "Kırmızı tonalite ve akıcı fırçayı Titianesque gelenek içinde analiz eder (Boschini 1660 → Kauffmann).",
+  "Apsley versiyonunun otograf/eskiz/replika tartışmasını (Curtis → Carr) kanıt türleriyle değerlendirir.",
+  "\"Troppo vero\" anekdotunu ve Juan de Pareja hikâyesini rivayet olarak ayırt eder; Bacon/Braun-Vega alımlamasını olgudan ayırır."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Mozzetta",
+   "tanim": "Omuzlarda kısa pelerin; papalık giysisi; Keith incelemesinde baş ile mozzetta boyası birlikte değerlendirildi.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Jübile",
+   "tanim": "Kutsal yıl; 1650'de 700.000 hacı Roma'ya aktı, Innocentius papalığının zirvesi sayıldı.",
+   "kanit": [
+    "C053"
+   ]
+  },
+  {
+   "ad": "Titianesque",
+   "tanim": "Titian'a özgü; kırmızı tonalite ve akıcı fırça; Boschini'nin 1660'tan beri taşıdığı etiket.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "Otrograf replika",
+   "tanim": "Sanatçının kendi eliyle yaptığı tekrar; Apsley versiyonunun eskiz mi replika mı olduğu tartışması açık.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Camerino",
+   "tanim": "Küçük özel oda; 19. yy ortasında Busiri Vici'ye tabloyu izole etmek için yaptırıldı.",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Birincil katalog değerlendirmesi: \"È il pezzo più importante della collezione ed in assoluto un capolavoro della ritrattistica del XVII secolo\" / \"the most important painting in the collection ... a masterpiece of the 17th-century portraiture\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Konu: Giovanni Battista Pamphilj, 1644–1655 arası papa; \"con realismo e senza nasconderne la bruttezza\" (gerçekçi, çirkinliğini gizlemeyen betimleme); çağdaşların \"quel suo aspetto satirico, saturnale, ruvido e bruttissimo\" ve \"spirito contumace\" ifadeleri aktarılır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih (birincil): \"l'eseguì probabilmente fra la fine del 1649 e il gennaio del 1650\" / \"probably painted this canvas between the end of 1649 and January of 1650\". Kesinleştirme YOK.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Bağlam: Vestfalya Barışı (1648) sonrası papalık Habsburg İspanyası'na yeniden yakınlaştı, Fransız yanlısı çizgiyi terk etti.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "\"Il dipinto piacque a Innocenzo X e ai contemporanei, come provano molte copie antiche del capolavoro\": tablo papa ve çağdaşlarınca beğenildi; çok sayıda eski kopya bunun kanıtı sayılır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Reynolds övgüsü eski bir İngiliz rehberine atfen (iç içe alıntı; rehber adı verilmez): \"the finest picture in Rome\". Taine: \"il capolavoro tra tutti i ritratti\" / \"una volta visto, è impossibile dimenticarlo\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Korunma durumu: \"ottimamente conservato\" / \"excellently preserved\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "19. yy ortasında Filippo Andrea V Doria Pamphilj tabloyu diğerlerinden ayırmak istedi; mimar Andrea Busiri Vici'ye Galerinin birinci kolunun ucunda özel bir Camerino yaptırdı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Künye: \"Ritratto di papa Innocenzo X Pamphilj\" / \"Portrait of Pope Innocent X Pamphilj\"; 141 × 119 cm; olio su tela / oil on canvas; env. FC 289; Galleria Doria Pamphilj, Roma (S6 I Capolavori listesinde de aynı; WD P217 P195 niteleyicili ve birincil ref'li).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "EN sayfada kurumsal değerlendirme: \"Many artists and art critics consider it the finest portrait ever created.\" (IT karşılığı yok; görüş olarak atıflandırılmalı.)",
+   "seviye": "A",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Kauffmann 2009, no.185, s.309: Doria tablosu \"has always belonged to the sitter's family and there has never been any doubt that it is the original painting commissioned by the Pope\"; papa, Velázquez'e kendi portreli altın bir madalyon hediye etti.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Kauffmann s.309: Doria versiyonu üç çeyrek boy, oturur, elinde kâğıt tutar (Wellington büst boyundan farklı); yazıt: \"Alla Santa di Nro Sigre / Innocencio X /Per /Diego di Silva y Velázquez de la Ca/mera di S. Mta. Cattca.\" + \"with the addition of a date, now illegible, which has been read as 1650\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Kauffmann s.309 (zincir: M. Boschini, Carta del Navigar pitoresco, 1660): kırmızı tonalitesi ve akıcı fırçasıyla 17. yy'dan beri \"the most Titianesque of Velázquez's paintings\" sayılır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Kauffmann s.309 (zincir: Harris 1999, s.210): Velázquez, Pamphilj'yi 1626–30'da Madrid'de papalık nunçyosu olarak tanımıştı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Kauffmann s.310 (zincir: Harris 1999 s.351; Pons 2002 s.320): Harris yaz kostümünden hareketle 26 Nisan 1649 kadar erken başlangıç önerir; Pons 13 Ağustos 1650 tarihli, papanın Velázquez'e oturduğunu belgeleyen bir doküman aktarır (birincilin Ocak 1650 üst sınırıyla gerilim → C043).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Kauffmann s.309–310 (zincir: Palomino 1724; Rospigliosi mektubu 8 Temmuz 1651, Harris 1958 s.186; Díaz del Valle 1656 notu): Velázquez Haziran 1651'de Madrid'e dönerken portrenin bir kopyasını yanında götürdü; nunçyo mektubu \"a very like portrait of our Lord (Innocent X)\" der ve kralın beğenisini bildirir; Velázquez'in ölüm envanterinde bir Innocent portresi kayıtlı, yapan belirtilmez; 1772 envanterindeki Ensenada kökeni, tablonun 1651'de krala hediye edilen kopya olup olmadığını şüpheli kılar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Kauffmann s.310 (zincir: Carr, London 2006 s.86, 222): Apsley tablosu otograf kabul edilmiş olmakla birlikte \"The debate remains open as to whether the Apsley House painting was the initial study made from the life or an autograph replica produced for the king\"; Larry Keith incelemesi baş ile mozzetta arasında ayrım bulmadı; Carr hangisinin önce boyandığına dair kanıt bulamadı; López-Rey 1999 \"Velázquez and workshop\"; Harris 1999 aynı el, Doria önce (Pons 2002 katılır); Curtis/Armstrong otograf, Justi baş+başka el, Beruete az taze, Allende-Salazar Pareja kopyası, Mayer tümüyle Velázquez, Camón Aznar Velázquez, López-Rey 1963 baş usta/kostüm asistan.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Kauffmann s.311: kopyaların çoğu büst boyunda (López-Rey 1963 no.446–57); Washington NGA kopyası no.448 (eski Horace Walpole → Katerina/Hermitage → Mellon); NGA Washington ve Wellington dışında otograf iddiası taşıyan kopya yok; Goya kopyası no.456; orijinalden Francis Bacon esinlendi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Apsley versiyonu künyesi (Kauffmann no.185): canvas 82 × 71.5 cm, WM 1590–1948; provenans: Marquis de la Ensenada → Charles III (PROV satırında 1768, tartışma metninde 1769 → C048) → Madrid Kraliyet Sarayı (1772 koridor/1789 Pieza del Oratorio no.384/1794/1811 no.756) → 1813 Vitoria'da ganimet; 1772 tanımı \"medio cuerpo de vara de alto\" (1 vara ≈ 84,7 cm).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Art UK kaydı (Wayback 2025-03-19): \"Pope Innocent X, 1650\", Diego Velázquez (1599–1660); Date: c.1651; oil on canvas; H 82 × W 71.5 cm; WM.1590-1948; English Heritage, Wellington Collection, Apsley House; 2004'te V&A'dan English Heritage'a yönetim devri; not: Jübile yılı, 700.000 hacı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "WGA: ikinci İtalya yolculuğu \"Between 1648 and 1651\" (1636'da kısa ziyaret olasılığı: \"the evidence is inconclusive\"); amaç kraliyet koleksiyonu için tablo ve antika satın almak; Roma'da Juan de Pareja (Metropolitan Museum, New York, 1650) ve Pope Innocent X (Doria-Pamphili Gallery, Rome, 1650); Juan de Pareja portresi papa portresine hazırlık/pratik olarak boyandı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "WGA değerlendirmesi: \"The Innocent X is by common consent one of the world's supreme masterpieces of portraiture, unsurpassed in its breathtaking handling of paint\"; aynı metin \"troppo vero\" anekdotunu ŞARTSIZ aktarır (→ C038/C039).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "WGA: Velázquez'in geç dönem teknik özgürlüğü 19. yy'dan itibaren ilerici ressamlara ilham verdi, \"above all Manet, who regarded him as the greatest of all painters\"; Villa Medici manzaraları empresyonizmi öncelediği şeklinde yorumlanır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Oturma izni anlatısı (zincir: Gombrich, The Story of Art, 1950): papa başta Velázquez'e oturmak istemedi; iki versiyondan birinde Juan de Pareja portresini görünce kabul etti; \"Experts doubt the veracity\" notu (→ C040).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Taine alıntıları (zincir: Bosky, Cyclopedia of World Authors); birincil S4/S5'te de var (C006).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "René Gimpel 1923 günlüğü (zincir: Gimpel, Diary of an Art Dealer, 1966:190, John Roseberg çev.): \"Morgan would have offered a million dollars for it ... That face is a whirlpool of flesh, and blood, and life; the eyes are searching.\" (varsayımsal ifade; kitap metnine erişilmedi → C051).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Bacon (zincir: Sotheby's 2019, Artnet 2022, francis-bacon.com, Geist; Schmied 17/20, Peppiatt 148): 1949–1971 arası düzinelerce (45+) varyant; Head VI (1949), Study after Velázquez's Portrait of Pope Innocent X (1953); Bacon orijinali görmekten kaçındı; Deleuze \"creative re-interpretation\" örneği dedi (Deleuze cümlesi doğrudan atıfsız).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Karşılaştırma (zincir: Montanari, RAI 5 \"Velázquez – L'ombra della vita\" ep.2): tablo Raffaello'nun II. Julius ve Tiziano'nun III. Paulus portreleriyle karşılaştırılır; Velázquez'in İtalyan 16. yy portreciliğini geliştirip yenilediği söylenir (belgesel metnine erişilmedi → C051).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Herman Braun-Vega'nın en az bir düzine eseri portreye gönderme yapar (zincir: Henry 1989 La Voix du Nord; Rivais 2004; LETRAS 2021 DOI 10.30920/letras.92.135.13 vb.): Hello Mister Bacon (1981), I love the neutron bomb (1982), La laïque (1984), Dar al Cesar (1992), Let the little children come to me (2003), El poder se nutre de dogmas (2006), L'argent des Andes (2010); ruhani liderlere/kiliselere eleştirel bakış; kaynak metinlerine erişilmedi (→ C051).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Hafif keten giysiler → muhtemelen yaz, \"most likely 1650\" (atıfsız wiki cümlesi; Harris hipoteziyle uyumlu ama çıkarım).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C031",
+   "ifade": "Tablo önce yalnızca papanın yakın ailesine gösterildi; 17–18. yy boyunca büyük ölçüde kamuoyundan gizli kaldı (atıfsız; S9 \"always belonged to the sitter's family\" ile uyumlu).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C032",
+   "ifade": "itwiki: Innocenzo X 1574–1655 (S9 s.309 da 1574–1655 verir → C053 B desteği).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "itwiki kâğıt transkripsiyonu (atıfsız): \"alla Santà di N.ro Sign.re / Innocentiox/ per Diego de Silva / Velàzsquez de la Camera di S. M.tà Catt.ca\" + \"Sotto, viene riportata la data di esecuzione 1650\" (S9 transkripsiyonundan farklı; tarih okunaklılığı çelişkili → C044).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "\"Bacon avoided seeing the original\" (yakın atıflar Schmied/Peppiatt'a ait; cümle doğrudan atıfsız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "Ghost grubunun Prequelle (2018) albüm kapağında portrenin ters çevrilmiş biçimi var (atıfsız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "Washington NGA'daki kopya \"Velázquez's circle\" / \"Circle of Diego Velázquez\" diye etiketli (görsel alt yazısı; S9 \"copies by other hands\" ile uyumlu).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C037",
+   "ifade": "WD refsiz ifadeler: P180 depicts=Q101266, P276 location=Q1203458, P18 dosya adı (dosya adı kendi içinde çelişkili → C042).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C038",
+   "ifade": "\"È troppo vero! È troppo vero!\" anekdotu (E1): S2/S3 \"Experts doubt the veracity of this story\"; S7 şartsız aktarır; erişilen Kauffmann kataloğunda bulunamadı. Rivayet; şüphe notuyla verilmeli.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "Atıf zinciri ihtilafı (D5): enwiki anekdotu Kauffmann 2009 s.308'e atfeder; erişilen arşiv PDF'inde (2015 snapshot, 2009 baskı, ISBN 978-1-9034-7078-7) basılı s.308 = Juan Nieto maddesi (no.184); Innocent X maddesi no.185 basılı s.309–312; tam metinde \"troppo vero\"/\"too true\" geçmez. Atıf doğrulanamadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "Juan de Pareja \"kanıt/portre prova\" hikâyesi (E2): \"There are two versions of the story\"; uzmanlar papa'nın zaten saray mensuplarını (berberi dahil) başarıyla boyadığı için izin verdiğini önerir; S7 \"practice before tackling that of the pope\" der. Doğruluk belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "Boyut ihtilafı (D1): 141×119 cm (birincil S4/S5/S6; WD P2048/P2049; enwiki) ↔ 140×120 cm (itwiki infobox+gövde; Commons dosya adı; data \"yaklaşık 140×120\"; data muze \"55×47 inç\" ≈ 139,7×119,4). Birincil A ağır basar: 141×119.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "Envanter ihtilafı (D2): FC 289 (S4/S5/S6; WD P217) ↔ \"inv. 237\" (Commons dosya adı; WD P18; itwiki bu dosyayı kullanır). S6'ya göre FC 237 Claude Lorrain'in \"Matrimonio di Isacco e Rebecca\" tablosudur → dosya adı metadata'sı hatalı görünüyor; WD içi tutarsızlık (P18 ↔ P217).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "Tarih ihtilafı (D3): birincil \"probabilmente fine 1649 – gennaio 1650\" ↔ itwiki \"1650\" (kesin) ↔ enwiki \"c. 1650\" ↔ WD yüzyıl + 1649–1650 ↔ Harris 26 Nisan 1649 başlangıç hipotezi ↔ Pons 13 Ağustos 1650 oturma belgesi (birincilin Ocak 1650 üst sınırının DIŞINDA). Çözülmedi; belirsizlikler aynen korunur (E3).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "Kâğıttaki tarih ihtilafı (D4): itwiki \"Sotto, viene riportata la data di esecuzione 1650\" (tarih yazılı, kesin) ↔ enwiki \"the date is not readable\" ↔ Kauffmann \"a date, now illegible, which has been read as 1650\". Transkripsiyonlar da farklı (itwiki \"Innocentiox / Velàzsquez\" ↔ Kauffmann \"Innocencio X / Velázquez\"). Kauffmann+enwiki uyumlu: tarih artık okunaklı değil, 1650 olarak okunmuş (E6).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "Apsley versiyonunun statüsü (D6): enwiki \"A study is on display at Apsley House\" ↔ Art UK sanatçı=Velázquez, tarih c.1651 (başlıkta 1650) ↔ Kauffmann \"accepted as autograph\" ama López-Rey 1999 \"Velázquez and workshop\"; study mi otograf replika mı \"debate remains open\" (Carr 2006) (E4).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "Yolculuk tarihleri (D7): enwiki/itwiki ikinci İtalya yolculuğu 1649–1651 ↔ WGA \"Between 1648 and 1651\" ↔ Kauffmann \"Early in 1649\". Tablonun tarihi değil, yolculuğun başlangıcı tartışmalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "enwiki içi (D8): Bacon varyantları \"from 1949 to 1971\" (giriş) ↔ \"1950s and early 1960s\" (Influence); \"dozens\" ↔ \"more than forty-five\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "Kauffmann içi (D9): Ensenada koleksiyonundan Charles III satın alma yılı PROV satırında 1768, tartışma metninde 1769 (Apsley provenansı; ikincil önem).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "WD ham değer artefaktı (D10): P571 +1700-00-00, precision 7 (yüzyıl); ham yıl gibi okunursa 1700 çıkar; data/eserler_onbellek yil=1700 bu artefaktı taşır. Gerçek iddia: yüzyıl düzeyi + P580=1649/P582=1650 aralığı; P1480 (circa) niteleyicisi YOK (E11); belirsizlik kaynak metindeki \"probabilmente\" ile taşınır.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "RKD images/226530 erişilemedi: 403 \"Request blocked by security policy\"; Wayback 2026-10-11 snapshot'ı yalnız SPA kabuğu, veri yok. WD P170/P186/P136 ref'i kaynakta DOĞRULANAMADI.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "Kitap metinlerine ERİŞİLMEDİ; yalnız erişilen kayıtların bibliyografyasında görüldüğü için anılıyor: Gombrich 1950/1995, Bosky, Gimpel 1966, Peppiatt 1996, Schmied 1996, Harris 1958/1978/1999, Pons 2002, López-Rey 1963/1999, Boschini 1660, Palomino 1715–24, Carr (London 2006), Montanari RAI 5. Alıntı/DOI/ISBN uydurulmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (yalnız metadata+lisans); 4 Commons dosyası PD; en yüksek çözünürlüklü dosyanın (5613×6731) dosya adı künyesi hatalı (140×120, inv.237); GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "Kauffmann s.309 + Art UK notu: Innocent X (Giambattista Pamphilj, 1574–1655); 1650 Jübile yılı, \"the high-water mark of Innocent's papacy\", 700.000 hacı Roma'ya aktı; reformcu papa sayılır ama kararsız ve baldızı Olimpia Maidalchini'nin etkisinde.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "Kauffmann no.185 CONDITION: ince boya katmanı, özellikle arka planda aşınma; Larry Keith (National Gallery) Haziran 2006 temizliği; teknik analiz London 2006 s.85–86. McKim-Smith'in (1980) portre eskizi olarak doğruladığı sekiz çizim Harris (1999) tarafından reddedildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "I Capolavori listesi: aynı koleksiyonda Bernini'nin \"Ritratto di Innocenzo X\" mermer büstü (Carrara) ve Algardi'nin \"Ritratto di Olimpia Maidalchini Pamphilj\" mermer portresi var; FC 237 envanteri Claude Lorrain'in \"Paesaggio con figure danzanti (Matrimonio di Isacco e Rebecca)\" tablosuna ait (150,5×198 cm).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "WGA erken kariyer: Sevilla; 1610/11 Pacheco'ya çıraklık; 1617 usta; 1618 Pacheco'nun kızıyla evlilik; 1623'te IV. Felipe'nin saray ressamı; bodegones bırakıldı, esas olarak portreci; kraliyet koleksiyonundaki Titianların etkisiyle fırça genişledi/akıcılaştı; Mor/Coello saray portresi geleneği insanileştirildi; erken dini resimlerde Caravaggio ve takipçileriyle ışık-gölge/natüralizm yakınlığı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "WGA: ilk İtalya yolculuğu 1629–1631 (Cenova, Venedik, Napoli; çoğunluk Roma); Venedikli ustaların etkisiyle fırça daha da gevşedi; Joseph's Coat (Escorial) ve The Forge of Vulcan (Prado) bu dönemden.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "WGA geç dönem: 1659 Santiago Şövalyesi; Las Meninas (Prado, y. 1656) — Giordano \"the Theology of Painting\"; geç eserlerde ayrıntı genel etkiye tabi, Clark \"a fricassee of beautiful brushstrokes\"; Palomino \"one cannot understand it if standing too close, but from a distance it is a miracle\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C059",
+   "ifade": "Velázquez 1599–1660 (Art UK sanatçı alanı; Commons Artist metadata \"Spanish painter (1599–1660)\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S8",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "enwiki gövde betimi (atıfsız): keten giysiler; üst giysi, başlık ve asılı perdelerde zengin kırmızılar (\"rich reds\"); görsel inceleme YOK (C052).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q1240092 (P170/571/186/2048/2049/195/217/276/18/6216/136/180/1476/350/973 + sitelinks)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1240092.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:46Z",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S1b",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (Q297, Q1203458, Q101266)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 15:47Z → 200 15:50:28Z (backoff)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikipedia (en)",
+   "belge": "Portrait of Innocent X (wikitext)",
+   "url": "https://en.wikipedia.org/wiki/Portrait_of_Innocent_X",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 → 200 15:49:17Z (API parse wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (it)",
+   "belge": "Ritratto di Innocenzo X (wikitext)",
+   "url": "https://it.wikipedia.org/wiki/Ritratto_di_Innocenzo_X",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 → 200 15:50:08Z (API parse wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Galleria Doria Pamphilj",
+   "belge": "VELÁZQUEZ portfolio sayfası (IT) — BİRİNCİL",
+   "url": "https://www.doriapamphilj.it/portfolio/velazquez/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:48:13Z; Denetim B canlı yeniden açma 200 (birebir)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Galleria Doria Pamphilj",
+   "belge": "VELÁZQUEZ portfolio sayfası (EN) — BİRİNCİL",
+   "url": "https://www.doriapamphilj.it/en/portfolio/velazquez/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:48:17Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Galleria Doria Pamphilj",
+   "belge": "I Capolavori listesi (FC 289 teyidi; Bernini büstü; Algardi Olimpia; FC 237=Claude Lorrain) — BİRİNCİL",
+   "url": "https://www.doriapamphilj.it/roma/le-opere/i-capolavori/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:49:48Z",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Web Gallery of Art",
+   "belge": "Life and Art of Velázquez (2nd Italian journey bölümü)",
+   "url": "https://www.wga.hu/tours/spain/velazqu1.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200, 15:51:04Z (http→https)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Art UK (English Heritage / Wellington Collection)",
+   "belge": "Pope Innocent X, 1650 kaydı (Apsley House versiyonu)",
+   "url": "http://web.archive.org/web/20250319085900/https://artuk.org/discover/artworks/pope-innocent-x-1650-144442",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "doğrudan 403 (bot) → Wayback 200 15:53:18Z, snapshot 2025-03-19",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "English Heritage / Paul Holberton (Kauffmann, rev. Susan Jenkins)",
+   "belge": "Catalogue of Paintings in the Wellington Museum, Apsley House, 2009, ISBN 978-1-9034-7078-7, no.185 (basılı s.309–312 = PDF s.308–311); pypdf tam metin",
+   "url": "http://web.archive.org/web/20150924012007id_/http://www.english-heritage.org.uk/content/imported-docs/a-e/apsleyhouseartcatalogue.pdf",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "doğrudan 404 → Wayback 2026-08-15 HTML-404 → Wayback 2015-09-24 gerçek PDF 200 15:56:42Z",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (4 dosya; url/size/extmetadata) — ana görsel: Portrait of Pope Innocent X (by Diego Velázquez) - Doria Pamphilj Gallery, Rome.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Portrait_of_Pope_Innocent_X_(by_Diego_Vel%C3%A1zquez)_-_Doria_Pamphilj_Gallery,_Rome.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 15:50:49Z + 15:52:46Z; metadata-only, İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "RKD",
+   "belge": "images/226530 (WD P170/P186/P136 ref'i)",
+   "url": "https://rkd.nl/explore/images/226530",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 15:52:17Z; Wayback 2026-10-11 yalnız SPA kabuğu, veri YOK → erişilemedi",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S12",
+   "kurum": "Internet Archive",
+   "belge": "Wayback availability/CDX snapshot sorguları",
+   "url": "https://archive.org/wayback/available",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 15:50–15:55Z; içerik indirmeleri 429 → backoff 200",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Ritratto di Innocenzo X (mermer büst)",
+   "sanatci": "Gian Lorenzo Bernini",
+   "kurum": "Galleria Doria Pamphilj, Roma",
+   "mufredat_ici": false,
+   "gerekce": "Aynı sitter, aynı koleksiyon; mermer ↔ yağlıboya, idealizasyon ↔ gerçekçilik karşılaştırması.",
+   "kanit": [
+    "C055",
+    "C002"
+   ]
+  },
+  {
+   "eser": "Portrait of Juan de Pareja",
+   "sanatci": "Diego Velázquez",
+   "kurum": "Metropolitan Museum of Art, New York",
+   "mufredat_ici": false,
+   "gerekce": "Aynı yolculuğun hazırlık/pratik portresi (WGA); fırça özgürlüğü ve karakter derinliği karşılaştırması.",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "eser": "Ritratto di Giulio II",
+   "sanatci": "Raffaello Sanzio",
+   "mufredat_ici": false,
+   "gerekce": "Montanari belgeselinde (itwiki üzerinden) anılan papalık portresi geleneği; oturur üç çeyrek kompozisyon soyu (yorum).",
+   "kanit": [
+    "C028"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Denetim B: birincil IT sayfası canlı yeniden açıldı (2026-11-14, HTTP 200; metin cache ile birebir: 141×119, FC 289, probabilmente, Camerino/Busiri Vici). EN + I Capolavori, Kauffmann 2009 arşiv PDF tam metni (no.185 basılı s.309–312; s.308 = Juan Nieto no.184; \"troppo vero\" tam metinde YOK), Art UK Wayback, WGA, en/it wikitext, WD EntityData ve Commons metadata ham cache'lerden bağımsız yeniden okunup iddialarla karşılaştırıldı. 10 D + 5 E aynen korundu; RKD ve kitap metinleri erişilemedi (C050/C051); görsel İNCELENMEDİ (C052), GZ TASLAK.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data/eserler_onbellek.json (diego-velazquez/eserler[1]): yil=1700 — WD P571 yüzyıl-precision artefaktı (D10, C049); doğru ifade 1649–1650 / c. 1650. \"1650 (slayt)\" birincil \"probabilmente\"den daha kesin (E3).",
+  "data/basyapitlar.json (eserler[46]) ve onbellek muze alanı: \"yaklaşık 55 × 47 inç\" / \"yaklaşık 140 × 120 cm\" ↔ birincil 141 × 119 cm (D1, C041); resmî ad Galleria Doria Pamphilj.",
+  "Commons dosya adı \"inv. 237\" ↔ FC 289 (D2, C042); S6'ya göre FC 237 = Claude Lorrain. WD'den künye çekerken P18 dosya adı değil P217 esas alınmalı.",
+  "data/eser_ayrintilari.json: \"fazla gerçek\" anekdotu zaten \"ama bu bir rivayettir\" diye şartlı — E1/D5 ile uyumlu, korunmalı. \"Dilekçe\" noktası Kauffmann \"date now illegible\" ile uyumlu; itwiki \"tarih 1650 yazılı\" kullanılmamalı (D4). Nokta koordinatları (x/y/w/h) görsel incelenmeden doğrulanamaz.",
+  "data/eser_notlari.json: \"kırmızı-mor tonlar\" — \"mor\" için erişilen kaynaklarda destek YOK; birincil/S9 \"red tonality\", enwiki \"rich reds\" der. data/ders_kaynaklari.json bu notu \"gümüşi gri tonlar\" maddesi için zaten durum:\"yanlis\" işaretlemiş.",
+  "data/ders_kaynaklari.json: \"ikinci İtalya yolculuğunda boyadı\" cümlesinin \"yanlis\" işareti, \"gümüşi gri tonlar\" maddesinin kanıtı olarak UYGUNSUZLUĞU ile ilgili; olgunun kendisi (ikinci yolculukta boyama) erişilen kaynaklarla uyumlu (C021).",
+  "Görsel İNCELENMEDİ (C052); GZ TASLAK; en yüksek çözünürlüklü dosya (5613×6731) dosya adı künyesi hatalı; insan editör görsel teyidi zorunlu.",
+  "data/kunye.json ve data/muze_numaralari.json'da Q1240092 kaydı YOK; FC 289 envanter no yalnız WD P217 ve birincil kaynakta."
+ ]
+}
