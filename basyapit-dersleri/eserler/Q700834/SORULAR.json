@@ -1,0 +1,541 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q700834",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "KHM Viyana, Gemäldegalerie"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: KHM.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi farklı.",
+    "C": "Louvre farklı.",
+    "D": "Prado farklı."
+   },
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Envanter?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "GG_274"
+    },
+    {
+     "harf": "B",
+     "metin": "GG_276"
+    },
+    {
+     "harf": "C",
+     "metin": "NG651"
+    },
+    {
+     "harf": "D",
+     "metin": "INV 1444"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Gemäldegalerie 274.",
+   "yanlis_gerekceleri": {
+    "B": "GG_276 pendant Ganymede.",
+    "C": "NG651 Bronzino.",
+    "D": "INV 1444 Metsys."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Pendant hangisi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ganymede'nin Kaçırılışı (GG_276)"
+    },
+    {
+     "harf": "B",
+     "metin": "Danaë"
+    },
+    {
+     "harf": "C",
+     "metin": "Leda"
+    },
+    {
+     "harf": "D",
+     "metin": "Venus+Cupid"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Gegenstück Entführung des Ganymed GG_276.",
+   "yanlis_gerekceleri": {
+    "B": "Danaë Borghese'de (dizi ama pendant değil).",
+    "C": "Leda Berlin'de.",
+    "D": "Venus+Cupid farklı eser."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Konu kaynağı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ovidius Metamorphoses I"
+    },
+    {
+     "harf": "B",
+     "metin": "Genesis"
+    },
+    {
+     "harf": "C",
+     "metin": "İlyada"
+    },
+    {
+     "harf": "D",
+     "metin": "Aeneid"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K4/K5/K6: Ovid Met. I.",
+   "yanlis_gerekceleri": {
+    "B": "Genesis bu soruda doğru değildir; kaynakların doğruladığı yanıt Ovidius Metamorphoses I.",
+    "C": "İlyada bu soruda doğru değildir; kaynakların doğruladığı yanıt Ovidius Metamorphoses I.",
+    "D": "Aeneid bu soruda doğru değildir; kaynakların doğruladığı yanıt Ovidius Metamorphoses I."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Jüpiter Io'yu nasıl kucaklar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kara sis/bulut kılığında"
+    },
+    {
+     "harf": "B",
+     "metin": "Açık insan bedeni"
+    },
+    {
+     "harf": "C",
+     "metin": "Kartal olarak"
+    },
+    {
+     "harf": "D",
+     "metin": "Altın yağmur olarak"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: dunkle Nebel; bulut kılığı.",
+   "yanlis_gerekceleri": {
+    "B": "Açık beden değil; sis.",
+    "C": "Kartal Ganymede mitinde.",
+    "D": "Altın yağmur Danaë mitinde."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Dizi kimin için?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Federico II Gonzaga"
+    },
+    {
+     "harf": "B",
+     "metin": "II. Julius"
+    },
+    {
+     "harf": "C",
+     "metin": "Karl V"
+    },
+    {
+     "harf": "D",
+     "metin": "Rudolf II"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K4/K5: Federico II Gonzaga.",
+   "yanlis_gerekceleri": {
+    "B": "Julius Raphael/Michelangelo patronu.",
+    "C": "Karl V devir alıcısı (hipotez).",
+    "D": "Rudolf II sonraki sahip."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Io'un poz modeli?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ara Grimani Cupid-Psyche kabartması"
+    },
+    {
+     "harf": "B",
+     "metin": "Laokoön"
+    },
+    {
+     "harf": "C",
+     "metin": "Belvedere Apollo"
+    },
+    {
+     "harf": "D",
+     "metin": "Venus de Milo"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K5/K7: Ara Grimani.",
+   "yanlis_gerekceleri": {
+    "B": "Laokoön bu soruda doğru değildir; kaynakların doğruladığı yanıt Ara Grimani Cupid-Psyche kabartması.",
+    "C": "Belvedere Apollo bu soruda doğru değildir; kaynakların doğruladığı yanıt Ara Grimani Cupid-Psyche kabartması.",
+    "D": "Venus de Milo değil."
+   },
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Sağ alttaki geyik ne olabilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Inachos (ırmak tanrısı baba) göndermesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Aziz Hubertus"
+    },
+    {
+     "harf": "C",
+     "metin": "Diana"
+    },
+    {
+     "harf": "D",
+     "metin": "Actaeon"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K6: belki Inachos (bilmece).",
+   "yanlis_gerekceleri": {
+    "B": "Aziz Hubertus bu soruda doğru değildir; kaynakların doğruladığı yanıt Inachos (ırmak tanrısı baba) göndermesi.",
+    "C": "Diana bu soruda doğru değildir; kaynakların doğruladığı yanıt Inachos (ırmak tanrısı baba) göndermesi.",
+    "D": "Actaeon bu soruda doğru değildir; kaynakların doğruladığı yanıt Inachos (ırmak tanrısı baba) göndermesi."
+   },
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "KHM tarih ifadesi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "um 1530"
+    },
+    {
+     "harf": "B",
+     "metin": "1514"
+    },
+    {
+     "harf": "C",
+     "metin": "1538"
+    },
+    {
+     "harf": "D",
+     "metin": "1555"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: um 1530.",
+   "yanlis_gerekceleri": {
+    "B": "1514 Metsys.",
+    "C": "1538 Titian.",
+    "D": "1555 Anguissola."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Destek (birincil)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval (Leinwand)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ahşap pano"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Material Leinwand.",
+   "yanlis_gerekceleri": {
+    "B": "Pano değil; tuval.",
+    "C": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Tuval (Leinwand).",
+    "D": "Kâğıt bu soruda doğru değildir; kaynakların doğruladığı yanıt Tuval (Leinwand)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser KHM Viyana'dadır (GG_274).",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Birincil KHM kaydı \"yağlıboya\"yı açıkça belirtir.",
+   "dogru": false,
+   "aciklama": "Yanlış (K1): yalnız Leinwand; yağ wiki'den (C005).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Pendant Ganymede'nin Kaçırılışı'dır (GG_276).",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "KHM Io'nun kaçmak istediğini söyler.",
+   "dogru": true,
+   "aciklama": "Doğru (K1: wollte fliehen).",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Boyut tüm kaynaklarda aynıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: 7 varyant (C033).",
+   "kanit": [
+    "C006"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Birincilin iç çelişkisini (KHM-DE ↔ EN boyut) analiz edin.",
+   "beklenen_ogeler": [
+    "DE 162,5",
+    "EN 162",
+    "7 varyant",
+    "kadraj farkı"
+   ],
+   "kanit": [
+    "C033",
+    "C006"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Provenance hipotez zincirini (vielleicht → Leoni → Rudolf) yazın.",
+   "beklenen_ogeler": [
+    "1532 vielleicht",
+    "1584 Leoni",
+    "vor 1603 Rudolf",
+    "1605 arşiv farkı"
+   ],
+   "kanit": [
+    "C011",
+    "C035"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "İstemsiz birleşme etik okumasını tarihsel ↔ modern olarak tartışın.",
+   "beklenen_ogeler": [
+    "wollte fliehen",
+    "Kline raped",
+    "modern rıza",
+    "anakronizm riski"
+   ],
+   "kanit": [
+    "C029",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Geyik/data uyuşmazlığını değerlendirin (görsel teyit gerekli).",
+   "beklenen_ogeler": [
+    "dewiki su içen geyik",
+    "data toprak testi",
+    "Inachos?",
+    "görsel YOK"
+   ],
+   "kanit": [
+    "C037",
+    "C026"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Gould/Verheyen atıf yer değiştirmesini kaynak eleştirisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "en Gould",
+    "it Verheyen",
+    "belge yok",
+    "atıf zinciri"
+   ],
+   "kanit": [
+    "C036",
+    "C017"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Io'nun arkadan kavisli pozunu ve Jüpiter'in bulut-kucaklayışını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Ara Grimani pozu; sis bedeni.",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Ön plandaki berrak dereyi ve alacakaranlık ışığını fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: ruscello + crepuscolare.",
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağ alt köşedeki geyiği bulun (Inachos? bilmece).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: su içen geyik (dewiki).",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Jüpiter'in Io'yu kara sis/bulut kılığında kucaklayışını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: dunkle Nebel; sis bedeni.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Bulut/sis dokusunu üslup şifresi olarak inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: San Giovanni kubbesi şifresi.",
+   "kanit": [
+    "C024"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Jupiter und Io; Correggio; um 1530; tuval; 162,5×73,5 (DE); KHM GG_274 Kabinett 3; pendant Ganymede GG_276.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C004",
+    "C008",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + dizi?",
+   "arka": "Ovid Met. I; Jüpiter Io'yu kara sisle kucaklar; Federico II Gonzaga 4 tuval (Io/Ganymede/Danaë/Leda).",
+   "kanit": [
+    "C012",
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Üslup + model?",
+   "arka": "Bulut/sfumato şifresi (San Giovanni); Io arkadan Ara Grimani Cupid-Psyche pozu; dere + alacakaranlık.",
+   "kanit": [
+    "C024",
+    "C023",
+    "C025"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance?",
+   "arka": "1532 vielleicht Gonzaga→Karl V; 1584 Leone Leoni; vor 1603 Rudolf II; Lomazzo 1584; 1603 Prag/1703 Viyana.",
+   "kanit": [
+    "C011",
+    "C018",
+    "C019"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Etki + etik?",
+   "arka": "Bernini/Rubens öncüsü (yorum); Mola desen + 1860 Dombrowski; Io istemsiz birleşme (wollte fliehen).",
+   "kanit": [
+    "C028",
+    "C012"
+   ]
+  }
+ ]
+}

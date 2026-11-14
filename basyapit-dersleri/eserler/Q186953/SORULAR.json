@@ -1,0 +1,548 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q186953",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Stanza della Segnatura, Vatikan"
+    },
+    {
+     "harf": "B",
+     "metin": "Sistina Şapeli tavanı"
+    },
+    {
+     "harf": "C",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: Segnatura.",
+   "yanlis_gerekceleri": {
+    "B": "Sistina tavanı Michelangelo.",
+    "C": "Uffizi farklı.",
+    "D": "Louvre farklı."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Merkezdeki iki figür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Platon (Timaeus) + Aristoteles (Etica)"
+    },
+    {
+     "harf": "B",
+     "metin": "Socrates + Diogenes"
+    },
+    {
+     "harf": "C",
+     "metin": "Öklid + Pythagoras"
+    },
+    {
+     "harf": "D",
+     "metin": "Zoroastro + Tolomeo"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Platon Timaeus + Aristoteles Etica.",
+   "yanlis_gerekceleri": {
+    "B": "Socrates/Diogenes yan figürler.",
+    "C": "Öklid/Pythagoras yan gruplar.",
+    "D": "Zoroastro/Tolomeo sağda."
+   },
+   "kanit": [
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Platon'un jesti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Parmakla yukarıyı gösterir"
+    },
+    {
+     "harf": "B",
+     "metin": "Kolu yatay uzatır"
+    },
+    {
+     "harf": "C",
+     "metin": "Başını eğer"
+    },
+    {
+     "harf": "D",
+     "metin": "Kitabı kapatır"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: punta con un dito verso l'alto.",
+   "yanlis_gerekceleri": {
+    "B": "Yatay kol Aristoteles'in.",
+    "C": "Baş eğme yok.",
+    "D": "Kitap açık (Timaeus)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Herakleitos kimin özelliklerini taşır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Michelangelo"
+    },
+    {
+     "harf": "B",
+     "metin": "Leonardo"
+    },
+    {
+     "harf": "C",
+     "metin": "Bramante"
+    },
+    {
+     "harf": "D",
+     "metin": "Raphael"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: ha i tratti di Michelangelo.",
+   "yanlis_gerekceleri": {
+    "B": "Leonardo Platon'da (forse).",
+    "C": "Bramante Öklid'de.",
+    "D": "Raphael en sağ otoportre."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "En sağ siyah bereli figür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Raphael otoportresi"
+    },
+    {
+     "harf": "B",
+     "metin": "Protogenes"
+    },
+    {
+     "harf": "C",
+     "metin": "Sodoma"
+    },
+    {
+     "harf": "D",
+     "metin": "Perugino"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: autoritratto di Raffaello.",
+   "yanlis_gerekceleri": {
+    "B": "Protogenes yanında (yüzü D).",
+    "C": "Sodoma adayı (D).",
+    "D": "Perugino adayı (D)."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Mimari neyden esinli?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bramante yeni S. Pietro projesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Antik Roma hamamı"
+    },
+    {
+     "harf": "C",
+     "metin": "Gotik katedral"
+    },
+    {
+     "harf": "D",
+     "metin": "Bizans bazilika"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: progetto di Bramante per S. Pietro.",
+   "yanlis_gerekceleri": {
+    "B": "Antik Roma hamamı bu soruda doğru değildir; kaynakların doğruladığı yanıt Bramante yeni S. Pietro projesi.",
+    "C": "Gotik katedral bu soruda doğru değildir; kaynakların doğruladığı yanıt Bramante yeni S. Pietro projesi.",
+    "D": "Bizans bazilika bu soruda doğru değildir; kaynakların doğruladığı yanıt Bramante yeni S. Pietro projesi."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Basamaklarda kâseli uzanan figür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Diogenes"
+    },
+    {
+     "harf": "B",
+     "metin": "Herakleitos"
+    },
+    {
+     "harf": "C",
+     "metin": "Socrates"
+    },
+    {
+     "harf": "D",
+     "metin": "Averroè"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Diogene con la scodella.",
+   "yanlis_gerekceleri": {
+    "B": "Herakleitos önde yazan.",
+    "C": "Socrates solda yeşil.",
+    "D": "Averroè sarıklı."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Hazırlık kartonu nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pinacoteca Ambrosiana, Milano"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Vatikan"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3/K4: Ambrosiana.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Pinacoteca Ambrosiana, Milano.",
+    "C": "Vatikan fresk; karton Milano'da.",
+    "D": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Pinacoteca Ambrosiana, Milano."
+   },
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Oda aslen neydi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "II. Julius kütüphanesi/studiolosu"
+    },
+    {
+     "harf": "B",
+     "metin": "Yemek salonu"
+    },
+    {
+     "harf": "C",
+     "metin": "Şapel"
+    },
+    {
+     "harf": "D",
+     "metin": "Taht odası"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: biblioteca e studio privato.",
+   "yanlis_gerekceleri": {
+    "B": "Yemek salonu bu soruda doğru değildir; kaynakların doğruladığı yanıt II. Julius kütüphanesi/studiolosu.",
+    "C": "Şapel bu soruda doğru değildir; kaynakların doğruladığı yanıt II. Julius kütüphanesi/studiolosu.",
+    "D": "Taht odası bu soruda doğru değildir; kaynakların doğruladığı yanıt II. Julius kütüphanesi/studiolosu."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Geleneksel ad kimin?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Raphael'in değil; ~18. yy Protestan çevreler"
+    },
+    {
+     "harf": "B",
+     "metin": "Raphael'in kendi"
+    },
+    {
+     "harf": "C",
+     "metin": "II. Julius'un"
+    },
+    {
+     "harf": "D",
+     "metin": "Vasari'nin"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3/K4: title not Raphael's; 18th c. Protestant.",
+   "yanlis_gerekceleri": {
+    "B": "Raphael'in kendi bu eserin sanatçısı değildir; doğru sanatçı Raphael'in değil; ~18. yy Protestan çevreler.",
+    "C": "II. Julius'un bu soruda doğru değildir; kaynakların doğruladığı yanıt Raphael'in değil; ~18. yy Protestan çevreler.",
+    "D": "Vasari'nin bu soruda doğru değildir; kaynakların doğruladığı yanıt Raphael'in değil; ~18. yy Protestan çevreler."
+   },
+   "kanit": [
+    "C024"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser bir fresktir (Segnatura duvarı).",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Herakleitos figürü Ambrosiana kartonunda da vardır.",
+   "dogru": false,
+   "aciklama": "Yanlış (K3/K4): kartonda YOK; sonradan eklendi.",
+   "kanit": [
+    "C008",
+    "C026"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "En sağ siyah bereli figür Raphael otoportresidir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Mimari Bramante'nin yeni S. Pietro projesinden esinlenir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Oda aslen II. Julius kütüphanesi/studiolosuydu.",
+   "dogru": true,
+   "aciklama": "Doğru (K2). Beyaz figür kimliği ise tartışmalıdır (C019, derste).",
+   "kanit": [
+    "C002"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Beyaz figür kimlik önerilerini listeleyin; hiçbirini kesin saymayın.",
+   "beklenen_ogeler": [
+    "Ipazia WD",
+    "Francesco Maria itwiki",
+    "Pico/Kalokagathia/Verità/Fedone",
+    "ideal figür Oberhuber",
+    "D açık"
+   ],
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Herakleitos ekleme nedenini (omaggio ↔ dileggio) tartışın.",
+   "beklenen_ogeler": [
+    "kartonda yok",
+    "intonaco+1996",
+    "omaggio De Vecchi",
+    "dileggio Fiorillo",
+    "Vasari sessiz"
+   ],
+   "kanit": [
+    "C009",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Jest dilini (idealizm/empirizm) olgu/yorum olarak ayırın.",
+   "beklenen_ogeler": [
+    "Platon yukarı Timaeus",
+    "Aristoteles yatay Etica",
+    "müze betimi A",
+    "felsefe etiketi C"
+   ],
+   "kanit": [
+    "C004",
+    "C005",
+    "C032"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Ambrosiana kartonunun eksik figürlerini freskle karşılaştırın.",
+   "beklenen_ogeler": [
+    "mimari eksik",
+    "Herakleitos eksik",
+    "Raphael+Protogenes eksik",
+    "WD 6306a karton"
+   ],
+   "kanit": [
+    "C026",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "WD koşulsuz Ipazia ↔ itwiki reddini kaynak hiyerarşisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "WD yardımcı",
+    "itwiki akademik",
+    "medya yayılımı",
+    "D açık"
+   ],
+   "kanit": [
+    "C019",
+    "C031"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Platon (yukarı jest) ve Aristoteles (yatay kol) çiftini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: merkezî eksen; Timaeus/Etica.",
+   "kanit": [
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Önde yazan çizmeli Herakleitos'u ve basamaklarda Diogenes'i bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Herakleitos Michelangelo traits.",
+   "kanit": [
+    "C007",
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "En sağ siyah bereli Raphael otoportresini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: izleyiciye bakan.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Solda Pythagoras grubunu (kitap/levha) ve sağda Öklid grubunu (pergel) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: Pythagoras diatesseron/tetraktys; Öklid geometri.",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Bramante-esinli mimariyi (kemer/kubbe/niş) ve arka heykelleri (Apollo/Minerva) izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: S. Pietro esinli; Apollo lir, Minerva.",
+   "kanit": [
+    "C003",
+    "C025"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Scuola di Atene; Raphael; y.1509–11; fresk; ~500×770; Segnatura Vatikan; in situ envanter yok; ad ~18.yy.",
+   "kanit": [
+    "C001",
+    "C024"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Merkez + jest?",
+   "arka": "Platon Timaeus yukarı + Aristoteles Etica yatay; idealizm/empirizm yorumu; Bramante-esinli mimari.",
+   "kanit": [
+    "C004",
+    "C005",
+    "C003"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Çağdaş maskeler?",
+   "arka": "Platon=Leonardo (forse), Herakleitos=Michelangelo (sonradan eklendi), Öklid=Bramante, en sağ=Raphael.",
+   "kanit": [
+    "C006",
+    "C007",
+    "C013",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Yan figürler + küreler?",
+   "arka": "Diogenes kâseli basamaklarda; Öklid pergelle geometri; Zoroastro gök küresi + Tolomeo yer küresi; Socrates yeşil tunik (büstlerden).",
+   "kanit": [
+    "C010",
+    "C012",
+    "C016",
+    "C020"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Program + karton?",
+   "arka": "II. Julius kütüphane/studiolo; dört duvar dört bilgi; tondo Causarum Cognitio; Ambrosiana kartonu eksik figürler.",
+   "kanit": [
+    "C002",
+    "C024",
+    "C026"
+   ]
+  }
+ ]
+}

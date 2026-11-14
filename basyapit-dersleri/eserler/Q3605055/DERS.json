@@ -1,0 +1,475 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3605055",
+ "sanatci_id": "lucas-cranach-yasl",
+ "baslik": "Âdem ile Havva",
+ "ozgun_baslik": "Adamo ed Eva (Adam and Eve)",
+ "kunye": {
+  "sanatci": "Lucas Cranach (yaşlı)",
+  "sanatci_yasam": "1472–1553",
+  "tarih": "1528",
+  "tarih_belirsizlik": "İmza+tarih Âdem panelinde (kanatlı yılan markasıyla)",
+  "teknik": "Yağlıboya, ahşap pano (olio su tavola); iki ayrı pano (pendant)",
+  "boyut_cm": {
+   "yukseklik": 167,
+   "genislik": 61
+  },
+  "muze": "Galleria degli Uffizi, Floransa",
+  "envanter": "inv. 1890, 1459 (Âdem) / 1458 (Havva)",
+  "edinim": "Toskana grandükaları koleksiyonu (≥1688); Uffizi 18. yy başı",
+  "konum": "Uffizi, Dürer and German painting hall 20 (WD)",
+  "telif_durumu": "Kamu malı (Cranach ö.1553); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Cranach,_adamo_ed_eva,_uffizi.jpg",
+  "kaynak": "Wikimedia Commons (Web Gallery of Art credit)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "özgün 1100×1525 indirildi; BU OTURUMDA İNCELENEMEDİ (vision köprüsü bütçesi tükendi)",
+   "cozunurluk": "1100×1525",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C017); GZ TASLAK; kompozisyon itwiki/enwiki metninden; canlı katalog URL ölü, arşiv 2022 (C023)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 405
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1302
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2539
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-arşiv-birincilin-statüsü"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#4-düşüş-eşiği-ikonografinin-zamanı"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-nü-geleneği-dürercranachbaldung"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynakların-betimlediği",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynakların-betimlediği",
+   "DERS_ILERI.md#5-pendant-ve-cinsiyet-iki-pano-iki-tavır"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-düşüş-eşiği-ikonografinin-zamanı"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-restorasyon-ve-yüzeyin-tarihi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Resmî katalog (arşiv) ile çiftin künyesini (iki envanter, 167×61, 1528) doğrular.",
+  "Atıf tarihini (Baldinucci Dürer → 1784 Cranach → kanatlı yılan markası) belgeye dayandırır.",
+  "Kaynak betiminden düşüş eşiği ikonografisini (elma/yılan/dallar) analiz eder.",
+  "Dürer→Cranach→Baldung nü geleneğini ve pendant formatını değerlendirir.",
+  "Boyut/ağaç adı ihtilaflarını D; arşiv/görsel sınırlarını E olarak yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Pendant / diptych",
+   "tanim": "Birbirini tamamlayan iki ayrı pano; anlam ikisinin arasında üretilir.",
+   "kanit": [
+    "C001",
+    "C002"
+   ]
+  },
+  {
+   "ad": "Serpentello alato",
+   "tanim": "Kanatlı yılan; Cranach atölye markası; atıf/tarihleme belgesi.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "ad": "Connoisseurship",
+   "tanim": "Uzman gözüyle atıf; Baldinucci'nin Dürer atfı buna örnektir.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "ad": "Düşüş eşiği",
+   "tanim": "Elmanın uzatıldığı ama henüz alınmadığı karar anı; ikonografik zaman seçimi.",
+   "kanit": [
+    "C009",
+    "C020"
+   ]
+  },
+  {
+   "ad": "Disinvoltura",
+   "tanim": "Rahatlık/kayıtsızlık; itwiki'nin Cranach nüleri için vurguladığı ton.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Resmî katalog (arşiv) Âdem: Cranach Lucas il Vecchio; \"Adamo\"; dipinto; Uffizi Firenze; 167 × 61 cm; inv. 1890, 1459.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Resmî katalog (arşiv) Havva: \"Eva\"; 167 × 61 cm; inv. 1890, 1458; pendant Âdem inv. 1459.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Resmî katalog: eski envanterler + Baldinucci Dürer atfı; 1784 envanteri Cranach; Havva scheda: atıf + tarihleme, markanın ve tarihin bulunduğu Âdem pendantından gelir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Resmî katalog: Cranach atölye markası = kanatlı yılan (serpentello alato); Âdem panelinde tarihin yanında.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "itwiki: doppio dipinto, olio su tavola; siglato e datato 1528 (Âdem paneli, serpentello alato); Uffizi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Boyut ihtilafı: resmî her iki panel 167×61 ↔ itwiki Âdem 172×63 / Havva 167×61 ↔ enwiki 172×124 (çift) ↔ WD 167×61.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C007",
+   "ifade": "enwiki: 1528 çift (tarih Âdem panelinde görülür); oil on panel; Uffizi Floransa.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "enwiki/itwiki: iki ayrı panel, koyu fon, zar zor görünen zemin; her ikisi cinsel organları örten küçük dallar tutar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "itwiki: Havva yasak meyveyi (elma) tutar; yılan yukarıdan, hayat ağacı dalından sarkarak insidi eder; Havva elmayı Âdem'e uzatır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "enwiki: Âdem başının sağ tepe kısmını kaşır; itwiki: Âdem sciolta/disinvolta, sağ dirseği kalkık resmin kenarına dayanır gibi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "itwiki: nü, kayda değer anatomik precision ile, disinvoltura (rahatlık) ile sergilenir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "enwiki/itwiki: Toskana grandükaları koleksiyonlarında en az 1688'den; Uffizi'de 18. yy başından (Settecento).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "itwiki: konu Dürer'in anatomi çalışmalarını sürdürür; 1507 Prado tavole (Alman sanatının ilk doğal boyut nüleri); Baldung Grien kopyası aynı Uffizi salonunda.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "itwiki: Cranach Viyana'da 1501–1503 Dürer'e yakın hümanist çevrelerde bulundu; ilk küçük versiyon 1510 (59×44 cm) Varşova müzesinde.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "itwiki: Uffizi'nin iki tavolesi 1999'da restore edildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Bibliyografya (metne erişilmedi): itwiki Fossi, Uffizi, Giunti 2004 (ISBN 88-09-03675-1); enwiki Zuffi, Il Cinquecento, Electa 2005 (ISBN 88-370-3468-7).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision köprüsü bütçesi tükendi); insan editör görsel teyidi ZORUNLU.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C018",
+   "ifade": "Görsel kamu malı (Cranach ö.1553); Commons \"Public domain\"; credit Web Gallery of Art; özgün 1100×1525 px.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Yorum: dalların örtüsü utanç/mahremiyet jesti; çıplaklığın \"disinvoltura\" ile sergilenmesi Rönesans beden idealini yansıtır; alternatif masumiyet okuması.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C020",
+   "ifade": "Yorum: yılanın yukarıdan inmesi + elmanın uzatılması, düşüş anının eşiğini kurar; determinizm ↔ özgürlük gerilimi.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C021",
+   "ifade": "WD: P170 Q191748; P571 1528; P186 oil+panel; P2048 167/P2049 61; P195 Uffizi; P276 hall 20 (Dürer and German painting); P31 pendant+group; P6216 PD.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "WD tr etiketi \"Haffs\" (anlamsız/hatalı); data ozgun alanı \"Haffs\" taşır; doğru başlık enwiki \"Adam and Eve\", itwiki \"Adamo ed Eva\", resmî \"Adamo\"+\"Eva\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Canlı polomuseale katalog URL'si ölü (urlmorto); 2022-01-16 arşiv kopyası kullanıldı; güncel Uffizi çevrimiçi kaydı yeniden doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C024",
+   "ifade": "Yorum: Baldung kopyasının aynı salonda durması, Dürer–Cranach–Baldung atölye/öğrenci dolaşımını görünür kılar.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "Ağaç adı ihtilafı: itwiki \"albero della vita\" (hayat ağacı) ↔ enwiki \"tree of knowledge\" (bilgi ağacı); aynı dal farklı adlandırılır; görsel teyit yok, çözülmez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Polo Museale Firenze (resmî katalog, arşiv)",
+   "belge": "scheda NCTN 00286589 (Adamo) + 00286591 (Eva), web.archive.org 2022-01-16",
+   "url": "https://web.archive.org/web/20220116154031/http://www.polomuseale.firenze.it/catalogo/scheda.asp?nctn=00286589&value=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (arşiv); canlı polomuseale URL ölü (urlmorto)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Adamo ed Eva (Cranach) — Fossi 2004 atıflı",
+   "url": "https://it.wikipedia.org/wiki/Adamo_ed_Eva_(Cranach)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); Fossi metni açılmadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Adam and Eve (Cranach, Florence) — Zuffi 2005 kaynaklı",
+   "url": "https://en.wikipedia.org/wiki/Adam_and_Eve_(Cranach,_Florence)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); Zuffi metni açılmadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikidata",
+   "belge": "Q3605055",
+   "url": "https://www.wikidata.org/wiki/Q3605055",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikimedia Commons",
+   "belge": "Cranach, adamo ed eva, uffizi.jpg (WGA credit)",
+   "url": "https://commons.wikimedia.org/wiki/File:Cranach,_adamo_ed_eva,_uffizi.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; özgün 1100×1525 indirildi; İNCELENEMEDİ (vision bütçesi)",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Âdem ile Havva (1507 panolar)",
+   "sanatci": "Albrecht Dürer",
+   "kurum": "Museo del Prado",
+   "gerekce": "Alman nü geleneğinin öncüsü; Cranach bu hattı sürdürür.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "eser": "Âdem ile Havva (1510 küçük versiyon)",
+   "sanatci": "Lucas Cranach (yaşlı)",
+   "kurum": "National Museum, Varşova",
+   "gerekce": "Temanın erken hâli; 1528 çiftinin öncüsü.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "eser": "Dürer Âdem-Havva kopyası",
+   "sanatci": "Hans Baldung Grien",
+   "kurum": "Uffizi (aynı salon)",
+   "gerekce": "Atölye/öğrenci dolaşımı; salon üçgeni.",
+   "kanit": [
+    "C013",
+    "C024"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Resmî katalog arşiv kopyası (K1, 2022-01-16) yeniden açıldı; iki scheda künye/envanter/boyut/atıf/marka alanları iddialarla karşılaştırıldı; canlı URL ölü (C023). itwiki/enwiki wikitext yeniden okundu; boyut (C006) ve ağaç adı (C025) D olarak açık. Görsel K5 indirildi ama vision bütçesi tükendi → İNCELENEMEDİ (C017); kompozisyon kaynak metninden, GZ TASLAK. Fossi/Zuffi metinleri erişilmedi (C016).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "ozgun başlık HATASI: data \"Haffs\" (WD tr etiketi); öneri \"Adamo ed Eva (Adam and Eve)\" (C022).",
+  "Tarih 1528 ✓ (imza Âdem panelinde).",
+  "Boyut: resmî 167×61 her iki (A) ↔ itwiki Âdem 172×63 ↔ enwiki 172×124 (D, C006).",
+  "Envanter 1459/1458 data'da yok; eklenmeli (C001/C002).",
+  "Salon hall 20 (WD) + Baldung kopyası aynı salon (itwiki) (C021/C013).",
+  "Birincil katalog canlı URL ölü; arşiv 2022; güncel teyit insan editöre (C023).",
+  "Görsel İNCELENEMEDİ (C017); GZ TASLAK; insan editör görsel teyidi ZORUNLU."
+ ]
+}

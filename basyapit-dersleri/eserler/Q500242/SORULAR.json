@@ -1,0 +1,544 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q500242",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin konusu (ayet)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Genesis 1:26–27 (suret + yaşam)"
+    },
+    {
+     "harf": "B",
+     "metin": "Genesis 3 (düşüş)"
+    },
+    {
+     "harf": "C",
+     "metin": "Exodus 20 (on emir)"
+    },
+    {
+     "harf": "D",
+     "metin": "Psalm 23"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: Genesis 1:26-27.",
+   "yanlis_gerekceleri": {
+    "B": "Düşüş Genesis 3, farklı sahne.",
+    "C": "On emir Exodus, farklı.",
+    "D": "Psalm 23 farklı."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sistina Şapeli tavanı, Vatikan"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Sixtinische Kapelle volta.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi Titian/Cranach.",
+    "C": "Louvre Metsys.",
+    "D": "Prado Dürer."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Boyut?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "280 × 570 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "460 × 880 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "119 × 165 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "207 × 209 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K4/K5: 280×570.",
+   "yanlis_gerekceleri": {
+    "B": "460×880 Leonardo Last Supper.",
+    "C": "119×165 Titian Venüs.",
+    "D": "207×209 Holbein Elçiler."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Sipariş kimden?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Papa II. Julius"
+    },
+    {
+     "harf": "B",
+     "metin": "Papa X. Leo"
+    },
+    {
+     "harf": "C",
+     "metin": "Ludovico Sforza"
+    },
+    {
+     "harf": "D",
+     "metin": "Guidobaldo della Rovere"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K4/K5: Julius II.",
+   "yanlis_gerekceleri": {
+    "B": "Leo X farklı patron.",
+    "C": "Sforza Leonardo patronu.",
+    "D": "Guidobaldo Titian alıcısı."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Âdem'in durumu (Emison/De Tolnay)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Zaten yaratılmış ama inert (hareketsiz)"
+    },
+    {
+     "harf": "B",
+     "metin": "Henüz yaratılmamış"
+    },
+    {
+     "harf": "C",
+     "metin": "Uyuyor"
+    },
+    {
+     "harf": "D",
+     "metin": "Ölü"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K4: already created but inert.",
+   "yanlis_gerekceleri": {
+    "B": "Yaratılmış; inert.",
+    "C": "Uyku değil; inert.",
+    "D": "Ölü değil; canlanma öncesi."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "BM Âdem eskizi tekniği?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kırmızı tebeşir + stylus, kâğıt"
+    },
+    {
+     "harf": "B",
+     "metin": "Yağlıboya tuval"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Gümüş uç"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K6: red chalk + stylus, paper 193×259.",
+   "yanlis_gerekceleri": {
+    "B": "Tuval değil; kâğıt eskiz.",
+    "C": "Fresk değil; eskiz.",
+    "D": "Gümüş uç değil; kırmızı tebeşir."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Âdem'in gözü nasıl yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Taze intonaco rialzando (kabartma)"
+    },
+    {
+     "harf": "B",
+     "metin": "Boyalı pigment"
+    },
+    {
+     "harf": "C",
+     "metin": "Altın varak"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K5: occhio non dipinto, rialzando intonaco.",
+   "yanlis_gerekceleri": {
+    "B": "Boyalı değil; kabartma.",
+    "C": "Altın varak bu soruda doğru değildir; kaynakların doğruladığı yanıt Taze intonaco rialzando (kabartma).",
+    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Taze intonaco rialzando (kabartma)."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Dokuz Genesis sahnesinde kaçıncı (sunak tarafından)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dördüncü"
+    },
+    {
+     "harf": "B",
+     "metin": "Birinci"
+    },
+    {
+     "harf": "C",
+     "metin": "Dokuzuncu"
+    },
+    {
+     "harf": "D",
+     "metin": "Altıncı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3/K4: fourth.",
+   "yanlis_gerekceleri": {
+    "B": "Birinci bu soruda doğru değildir; kaynakların doğruladığı yanıt Dördüncü.",
+    "C": "Dokuzuncu bu soruda doğru değildir; kaynakların doğruladığı yanıt Dördüncü.",
+    "D": "Altıncı değil; dördüncü."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Tavan bütünü hangi yıllarda boyandı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1508–1512 (~4 yıl)"
+    },
+    {
+     "harf": "B",
+     "metin": "1495–1498"
+    },
+    {
+     "harf": "C",
+     "metin": "1534–1538"
+    },
+    {
+     "harf": "D",
+     "metin": "1482–1483"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K4: ceiling 1508–1512, ~4 years.",
+   "yanlis_gerekceleri": {
+    "B": "1495–98 Leonardo Last Supper.",
+    "C": "1534–38 Titian Venüs.",
+    "D": "1482–83 Perugino Anahtarlar."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Sipariş başlangıçta ne planlanmıştı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "12 Havari"
+    },
+    {
+     "harf": "B",
+     "metin": "9 Genesis sahnesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Son Yargı"
+    },
+    {
+     "harf": "D",
+     "metin": "Peygamberler only"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K4/K5: originally Twelve Apostles, then complex scheme.",
+   "yanlis_gerekceleri": {
+    "B": "9 Genesis sonradan önerilen şema.",
+    "C": "Son Yargı duvarı farklı proje.",
+    "D": "Peygamberler şemanın parçası, başlangıç planı değil."
+   },
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser bir fresktir (Sistina tavanı).",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K4).",
+   "kanit": [
+    "C006",
+    "C002"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Birincil Vatikan sayfası tarih ve boyut verir.",
+   "dogru": false,
+   "aciklama": "Yanlış (K1): sayfada tarih/boyut/sanatçı/envanter YOK; bu alanlar ikincil.",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "İki işaret parmağı arasında küçük bir boşluk vardır (~1,9 cm).",
+   "dogru": true,
+   "aciklama": "Doğru (K4); birincil \"temas\" der, ikincil boşluk (D, C025).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "BM'de Âdem için kırmızı tebeşir eskizi vardır.",
+   "dogru": true,
+   "aciklama": "Doğru (K6).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Tavan bütünü yaklaşık dört yılda (1508–1512) boyandı.",
+   "dogru": true,
+   "aciklama": "Doğru (K4). Beyin hipotezi ise bir yorumdur, olgu değil (C013).",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Birincil kaynağın sınırını (tarih/boyut/sanatçı yok) analiz edin.",
+   "beklenen_ogeler": [
+    "birincil seçici",
+    "konu/yer A",
+    "künye B/C",
+    "arşiv birincil"
+   ],
+   "kanit": [
+    "C002",
+    "C006",
+    "C024"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Parmak temas ↔ boşluk okumalarını teolojik olarak karşılaştırın.",
+   "beklenen_ogeler": [
+    "birincil contact/Lebenshauch",
+    "ikincil gap 1,9cm",
+    "eşik/potentia",
+    "erişilmezlik yorumu"
+   ],
+   "kanit": [
+    "C025",
+    "C011",
+    "C010"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Dört anatomik hipotezi kanıt düzeyiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "beyin Meshberger",
+    "rahim Stokes/Bruschini",
+    "kaburga Campos",
+    "cameo Sutherland",
+    "hepsi C"
+   ],
+   "kanit": [
+    "C013",
+    "C014",
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Tanrı figürü kimlik tartışmasını (Havva/Meryem/ruh) sunun.",
+   "beklenen_ogeler": [
+    "Pater Havva",
+    "Steinberg/Givens",
+    "ruh önceden varlık sapkın",
+    "Meryem/Sophia"
+   ],
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Tarih belirsizliğini (tavan ↔ sahne) ve veri notunu yazın.",
+   "beklenen_ogeler": [
+    "tavan 1508–12",
+    "sahne y.1511–12",
+    "WD 1511/en c.1512",
+    "data 1511 riski"
+   ],
+   "kanit": [
+    "C024",
+    "C007"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Âdem'i (solda uzanan) ve Tanrı'yı (sağda süzülen) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: dinlenen atlet ↔ süzülen pelerinli Tanrı.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "İki işaret parmağı arasındaki boşluğu fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: ~1,9 cm gap; kompozisyon odağı.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Tanrı'nın pelerini içindeki figürleri (kadın + melekler) bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: sol kolda kadın figürü; kimliği tartışmalı (C012).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Âdem'in uzanan kolunun gevşekliğini ve Tanrı kolunun gerginliğini karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: alan ↔ veren.",
+   "kanit": [
+    "C003",
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Tavan narratifinde sahnenin komşularını (Havva / Kara-Su) hatırlayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: dokuz sahne, dördüncü.",
+   "kanit": [
+    "C004"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Creazione di Adamo; Michelangelo; y.1511–12 (tavan 1508–12); fresk; 280×570; Sistina volta Vatikan; envanter yok.",
+   "kanit": [
+    "C002",
+    "C006",
+    "C018"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + kompozisyon?",
+   "arka": "Genesis 1:26–27; dokuz sahnenin 4.; Âdem inert solda, Tanrı süzülen sağda; parmak eşiği.",
+   "kanit": [
+    "C001",
+    "C004",
+    "C003",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Parmak jesti?",
+   "arka": "İki işaret parmağı arası ~1,9 cm boşluk; kompozisyon odağı; yaşam kıvılcımı eşiği (temas/boşluk tartışması derste).",
+   "kanit": [
+    "C011",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Sipariş ve şema?",
+   "arka": "II. Julius; önce 12 Havari, sonra karmaşık Genesis+peygamber+sibil şeması; tavan 1508–12 ~4 yıl.",
+   "kanit": [
+    "C008",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Teknik + eskiz?",
+   "arka": "Fresk tavan; göz rialzando (kabartma, boyalı değil); BM kırmızı tebeşir eskiz 1926,1009.1 (c.1511).",
+   "kanit": [
+    "C006",
+    "C017",
+    "C005"
+   ]
+  }
+ ]
+}

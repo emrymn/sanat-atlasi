@@ -1,0 +1,1042 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q18579333",
+ "sanatci_id": "marcantonio-raimondi",
+ "baslik": "Paris'in Hükmü",
+ "ozgun_baslik": "The Judgment of Paris (Das Urteil des Paris / Il giudizio di Paride / [Le jugement de Pâris])",
+ "kunye": {
+  "sanatci": "Marcantonio Raimondi (gravür); Raffaello Sanzio'dan sonra (tasarım)",
+  "sanatci_yasam": "Raimondi: kurumlar arası ihtilaf (NGA c. 1480–c. 1534; Met \"Argini (?) ca. 1480–before 1534 Bologna (?)\"; Berlin 1475–1534) — C046; Raffaello: Urbino 1483–1520 Roma",
+  "tarih": "c. 1510–1520 (Met \"ca. 1510–20\"; NGA \"c. 1510/1520\")",
+  "tarih_belirsizlik": "D1/C036: 1510-1511 (BnF/Vasari-Delaborde) ↔ 1513-15 (Uffizi) ↔ um 1515 (Kunsthalle) ↔ 1515-1516 (Mason/Oberhuber) ↔ 1515-1518 [circa] (Berlin) ↔ c. 1517-1520 (Boijmans/Shoemaker); data tek yıl \"1510\" savunulamaz",
+  "teknik": "Bakır gravür (Engraving / Kupferstich); Uffizi \"Acquaforte e bulino\" der (ihtilaf, C039); destek kâğıt",
+  "boyut_cm": {
+   "yukseklik": 29.1,
+   "genislik": 43.7
+  },
+  "muze": "Çok nüshalı: Met (19.74.1 — gösterilen görsel), NGA (1941.1.63), Boijmans (L 1966/16 PK), Uffizi (346 st. sc.), Hamburger Kunsthalle (Inv. 246), BnF (btv1b6953298k), Berlin (165-1891); data \"Staatsgalerie Stuttgart\" der (birincil kayıt bulunamadı, C043/C048)",
+  "envanter": "19.74.1 (Met — birincil görselin nüshası); Bartsch XIV.197.245 (orijinal)",
+  "edinim": "Met: Rogers Fund, 1919 (Earls Spencer koleksiyonu; satıcı P. & D. Colnaghi & Co.; Lugt 1532)",
+  "konum": "Met Fifth Avenue, Gallery 899 (2026-06-07 arşiv kaydı; güncel durum teyitsiz, C055)",
+  "telif_durumu": "Kamu malı (tüm kurumlar); Met+NGA görselleri CC0; BnF PD; Kunsthalle fotoğrafı CC-BY-NC-SA 4.0 (bpk/Christoph Irrgang)"
+ },
+ "gorsel": {
+  "url": "https://images.metmuseum.org/CRDImages/dp/web-large/DP-18212-001.jpg",
+  "kaynak": "The Metropolitan Museum of Art, Open Access (Met nüshası 19.74.1); Commons: The Judgment of Paris MET DP-18212-001.jpg",
+  "lisans": "CC0",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (Commons imageinfo + data p:100 + Met ham HTML); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "Met 3758×2545 (CC0); BnF 10700×7200 (PD); NGA 4000×2749 (CC0); Stuttgart 1790×1200 (PD); WGA 1042×675 (PD); MFA 1600×1076 (PD)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C050); GZ TASLAK; kompozisyon birincil kurum metinlerinden (Met başlığı C032, Kunsthalle C020, Berlin C021); nüsha/baskı durumu/kırpma farkları görsel incelemeyle netleşmeli; Kunsthalle fotoğrafı CC-BY-NC-SA (yeniden yayımlanmadı)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 417
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1417
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2616
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik-tek-plaka-çok-nüsha",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-çok-nüshalı-eserde-birincil-nedir"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam-roma-raffaello-ve-baskı",
+   "DERS_ILERI.md#2-tarihleme-tartışmasının-anatomisi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-lahitten-manetye"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-kayıp-tasarım-antik-model-ve-yenilik"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi-yarışma-elma-ve-motto",
+   "DERS_ILERI.md#5-motto-monogram-ve-yazıt-tartışmaları"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme-kadife-ton-heykelsi-beden",
+   "DERS_ILERI.md#4-teknik-kadife-ton-heykelsi-beden-ve-plakanın-ömrü"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-hangi-nüsha-hangi-hikâye"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Yedi kurumun birincil nüsha kaydıyla künyeyi doğrular; Bartsch 245 ↔ \"246\" kategori adı ↔ Inv. 246 karışıklığını ayırt eder.",
+  "Tarihleme ihtilafını (1510–1520 spekumu) yönetir; Kunsthalle fn6 teknik argümanını ve \"denkbar\" belirsizlik sınırını değerlendirir.",
+  "Pomza + burin tekniğini, kadife tonu ve plaka aşınması → Dente Nachstich zincirini açıklar; Uffizi teknik ihtilafını beyan eder.",
+  "Kompozisyonu ve mottoyu kaynak betimleriyle analiz eder (görsel incelenmedi); birincil kayıtlı halkaları atıfsız dewiki yorumundan ayırır.",
+  "data/kaynak uyuşmazlıklarını (Stuttgart müze alanı, yazıt levhası, sırtı dönük figür, Frigya başlığı) veri notu olarak raporlar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Bakır gravür (Kupferstich / engraving)",
+   "tanim": "Bakır levhaya burin (Grabstichel) ile çizgi oyarak yapılan baskı; bu eserin birincil teknik tanımı (Uffizi'nin \"acquaforte e bulino\" kaydı ihtilaflıdır).",
+   "kanit": [
+    "C002",
+    "C005",
+    "C022"
+   ]
+  },
+  {
+   "ad": "Bartsch numarası",
+   "tanim": "Adam Bartsch, Le peintre graveur (21 cilt, Viyana 1802-1821) katalog numaralandırması; orijinal B. XIV.197.245.",
+   "kanit": [
+    "C009",
+    "C003"
+   ]
+  },
+  {
+   "ad": "State (baskı durumu)",
+   "tanim": "Plakanın yeniden işlenme aşamaları; Met nüshası Shoemaker/Broun 1981 no.43'te \"first state of two\" (iki durumun ilki).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "ad": "Nachstich (yeniden oyma)",
+   "tanim": "Aşınmış plakanın yerine yeni plaka oyma; Marco Dente'nin kopyası doğru ama teknik olarak daha basittir (pürüzlendirme yok).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "Motto: SORDENT PRAE FORMA",
+   "tanim": "\"Güzellik karşısında akıl, erdem ve krallıklar/altın sönümlenir\"; Kunsthalle çevirisi: güzellik; erdem, akıl ve zenginlik karşısında üstündür.",
+   "kanit": [
+    "C011",
+    "C024"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser, Marcantonio Raimondi'nin Raffaello (Raffaello Sanzio or Santi, Urbino 1483–1520 Roma) tasarımından sonra oyduğu gravürdür; kayıtlarda \"After Raphael\" / \"Dessinateur du modèle\" / \"Designer: Rafaël\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S12",
+    "S14",
+    "S16",
+    "S18",
+    "S20"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Met nüshası 19.74.1: \"ca. 1510–20\", Engraving, Sheet 29.1 x 43.7 cm (11 7/16 x 17 3/16 in.), Rogers Fund 1919, Drawings and Prints, \"On view at The Met Fifth Avenue in Gallery 899\" (2026-06-07 arşiv); Shoemaker and Broun 1981 no.43 \"first state of two\"; uzun betimleyici başlık.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "NGA nüshası 1941.1.63: \"c. 1510/1520\", engraving, sheet 29.1 x 43.2 cm (11 7/16 x 17 in.), Gift of W.G. Russell Allen, \"Bartsch, no. 245\", Not on view, Open Access; yazıt \"RAPH VRBI INVEN\" birleşik M ve A harflerinin üstünde (bottom center).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boijmans nüshası L 1966/16 (PK): \"in circa 1517 - 1520\", Engraving on paper, Height 295 mm Width 438 mm, \"Purchased with the support of Lucas van Leyden Foundation, 1966\", depoda (\"This object is in storage\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Uffizi nüshası 346 st. sc.: Data \"1513-15\", Tecnica \"Acquaforte e bulino\", Dimensioni 295 x 443 mm, Gabinetto dei Disegni e delle Stampe; Raimondi \"Argine, Bologna 1480 ca. – Bologna 1534\", \"da Raffaello\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Hamburger Kunsthalle nüshası Inv. Nr. 246: \"Das Urteil des Paris, um 1515\", Kupferstich, 292mm x 435mm (Blatt), KK Druckgraphik, Italien, 15.-19. Jh.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "BnF/Gallica nüshası ark btv1b6953298k: DC.date \"1510-1511\"; \"[Le jugement de Pâris] : [estampe] / RAPH. URBI. INVEN. [d'après Raphaël] ; MAF [monogr.]\"; Bartsch 245, Illustrated Bartsch 245, Delaborde 114, Courboin 11633; \"domaine public\"; Raimondi \"1480?-1534?\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S20"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Berlin Kupferstichkabinett nüshası 165-1891: \"1515-1518 [circa]\", Kupferstich, \"Höhe: 29,2 cm, Breite: 44,7 cm, Höhe: 29,5 cm, Breite: 44,7 cm\" (iki çift); akademik tanıtım metni Schulze Altcappenberg 1994, Kat. V.18; Raimondi \"1475-1534\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Orijinalin Bartsch numarası 245'tir (B. XIV.197.245): Met \"Bartsch XIV.197.245\", NGA \"Bartsch, no. 245\", BnF \"Bartsch, 245\", Kunsthalle \"B. XIV.197.245\" + verso \"B. 245-I\" (kurşun kalem).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S20",
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Tarihleme zinciri (Met overview): Vasari 1510-1511 erken Roma işleri → Delaborde destekler; Shoemaker 1517-1520; Mason ve Oberhuber 1515-1516.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Plakada motto bloğu (\"SORDENT PRAE FORMA / INGENIVM·VIRTVS· / REGNA·AVRVM\" — Kunsthalle okuması) + \"RAPH VRBI / INVEN\" + MAF monogramı vardır; okuma/konum varyantları C040/C041/C042'de.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18",
+    "S20",
+    "S14",
+    "S16",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Raffaello'nun ön çizimi kayıptır; kompozisyon antik sarkofaj kabartmalarına (Villa Medici, Palazzo/Villa Doria Pamphilj) dayanır; müelliflik Vasari notu + plaka yazıtı + sanatsal ilişkilerle belgeli; Berlin: Raffael um 1515/18'de kompozisyonla uğraşmış olmalı; Villa Medici kabartması en yakın ilişki.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18",
+    "S16",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Plaka büyük talep nedeniyle aşındığı için Marco Dente Nachstich (yeniden oyma) yaptı; Dente'nin çok iyi reproduksiyonu doğru ama teknik olarak daha basittir (plaka pürüzlendirmesinden vazgeçti). (Kunsthalle ana metni \"16. Jahrhundert\" der; \"1520'ler\" tarihi dewiki'dedir → C035.)",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Manet, 1863'te sağda yatan figür grubundan \"Das Frühstück im Grünen\" (Le Déjeuner sur l'herbe) için esinlendi (Kunsthalle); Berlin aynı grubu Behams \"Jungbrunnen\"inden Manet 1863'e uzanan etkinin taşıyıcısı sayar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Vasari'ye göre kompozisyon \"bütün Roma'yı şaşırttı\": Met \"amazed all of Rome\"; Uffizi \"stupì tutta Roma\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Met nüshası provenance: \"Collection of Earls Spencer (British); Vendor: P. & D. Colnaghi & Co.\"; koleksiyon damgası Earl Spencer (Lugt 1532), recto sağ alt.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Uygulamanın birincil görseli Met 19.74.1 nüshasıdır: data/eserler_onbellek.json p:100 \"https://images.metmuseum.org/CRDImages/dp/web-large/DP-18212-001.jpg\" (l: CC0); Commons dosyası Met Open Access bağışı; Met ham HTML'de DP-18212-001.jpg aynı objede (337058).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S27",
+    "S4",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Met overview: Rönesans baskı sanatının başyapıtı; Raphael–Raimondi işbirliğinin zirvesi; Raffaello'nun özellikle Marcantonio için tasarladığı bir grup kompozisyondan; titizlikle düzenlenmiş tarama (hatching) sistemleri → mümkün olan en zengin ton etkileri → kuşaklar boyu gravürcüleri etkiledi. Kunsthalle: \"kongeniale Zusammenarbeit\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Konu: Truva Savaşı'nı başlatan olay — Paris, Juno/Minerva/Venüs arasında en güzelini seçmek zorunda; Venüs'ü seçer, altın elmayı alır; Venüs ona yaşayan en güzel kadın Trovalı Helena'yı vaat etmiştir (Met overview); Uffizi aynı mit.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Kunsthalle betimi: Paris altın elmayı Venüs'e uzatır; Victoria çelenkle taçlandırmak üzere gökten süzülür; Venüs'ün sağında sırtı dönük Minerva, sol geride tavus kuşuyla Juno; sol/sağ kenarlarda najadlar ve ırmak tanrıları; gök bölgesinde sağda Aeolus'un taşıdığı Jupiter, solda Kastor ve Pollux + Sol'un atlı arabası.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Berlin betimi: orta eksen = Minerva'nın kıvrımlı sırtı dönük nü'sü + Victoria + Sol; iki bölgede friz benzeri ritmik düzen, belirsiz mekân, atmosferik ön plan; solda Paris-Venüs, tavuslu Juno, Merkür, üç naiad; sağda iki ırmak tanrısı + bir nymph (Behams \"Jungbrunnen\" → Manet 1863 etkinin taşıyıcısı); üstte Aeolus'un taşıdığı tahtta Jupiter, Ganymed, Diana, adı konmamış bir tanrıça.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Teknik: plaka bir tür pomza taşıyla (Bimsstein) pürüzlendirilir, yalnız beyaz kalacak yerler cilalanır → özellikle erken baskılarda kadifemsi zemin tonu, kompozisyon öğelerini bağlar (Kunsthalle); Uffizi \"granitura della lastra\" + yeniden işleme/cilalama → geniş gri yelpazesi, aşılmamış \"pittorici\" etkiler; Berlin: sıcak tonlu resimsel etkiler, hassas çeşitli sivri Stichel, çoğu yatay ince çizik izleri (olasılıkla pomza); çeşitli burin → güçlü heykelsi (skulpturale) bedenler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18",
+    "S14",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Uffizi: sahne, Vatikan Stanza della Segnatura'da Parnassus freskinin altında Leo X için yapılmış bir grisaille ile ilişkilidir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Kunsthalle: üç tanrıça tam çıplaklığını ancak Raffaello ile kazanır; motto çevirisi \"Schönheit siegt über Tugend, Klugheit und Reichtum\" (güzellik; erdem, akıl ve zenginlik karşısında üstündür); Raffaello insan bedenini bütün görünüm biçimleriyle kutlar; kompozisyon Michelangelo'nun Cascina Savaşı kartonuyla (yalnız erkek nü'ler) hesaplaşmadır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Berlin: nüsha \"birkaç sürtünme izi dışında olağanüstü, tamamen korunmuş bir baskı\"; Raimondi burada, yaklaşık 1520'den itibaren sertleşen/rutinleşen üsluptan önceki yaratım zirvesindedir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Kunsthalle fn6: Raimondi'nin yüksek gelişmiş tekniği Vasari'nin \"en erken Roma işleri\" iddiasını çürütür; üslup 1520 sonrası kuru/akademik geç dönemden uzaktır; \"Eine Datierung des Kupferstichs um 1515 scheint daher denkbar\"; Segnatura tasviri 1511 sonrası düşündürür ama kompozisyonun dikkat çekici dengesizliği Segnatura'nın klasik düzeninden uzaktır; antika ilgisi + Roma kuruluş miti → Quos Ego ve Il Morbetto (ikisi de um 1515).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Kunsthalle provenance: Georg Ernst Harzen (1790-1863), Hamburg (L. 1244); Legat Harzen 1863 → \"Städtische Gallerie\"; 1868 şehre mülk olarak verildi; 1869'da açılan Kunsthalle'ye; verso altta \"B. 245-I\" (kurşun kalem).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Telif: eser tüm kurumlarda kamu malı (Met Public Domain; NGA Open Access; BnF \"domaine public\"; Wikidata P6216 public domain); Met ve NGA Commons görselleri CC0; BnF/Stuttgart/MFA dosyaları PD; Kunsthalle fotoğrafı © Hamburger Kunsthalle / bpk, Christoph Irrgang, CC-BY-NC-SA 4.0.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S20",
+    "S4",
+    "S5",
+    "S6",
+    "S18",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Uffizi: gravür, Raimondi–Raffaello işbirliğinin niteliksel zirvesi; Raffaello gravür çevirisi için özel desen yaptı, bu konuyla modellerini yayma pratiği başladı; ani başarı → yüzyıllar boyu kopya ve türevler; Cinquecento'nun en ünlü baskı imgelerinden; kompozisyon öğeleri Raffaello'nun 1510-15 civarı önceki işlerinde karşılık bulur; farklı kaynakları yeniden işleme özgürlüğü o yıllar için \"tümüyle yeni\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Boijmans 22638 \"The Judgment of Paris\" FARKLI bir eserdir: Giorgio Ghisi, 1555, tasarımcı Giovanni Battista Bertani, yayımcı Hieronymus Cock, BdH 3708 (PK), 398 x 528 mm, \"From the estate of Dr J.C.J. Bierens de Haan, 1951\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Kunsthalle: 16. yüzyılda Dente Nachstich'i yanında tek figür reproduksiyonları çıktı; çağdaş majolikalar motifleri kullandı; Degas ve Picasso da eserle yoğun biçimde hesaplaştı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S18"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Met başlığı/görsel betimi: Paris solda oturuyor, yanında Venus, Juno ve Pallas Athena; yukarıda kanatlı Zafer; üst bölümde Güneş arabası, önünde atlı Castor ve Pollux; sağ altta iki ırmak tanrısı ve bir naiad, üzerlerinde Jupiter, bir kartal, Ganymede, Diana ve başka bir tanrıça.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "\"B.246\" Marco Dente kopyasının numarasıdır (orijinal değil): Commons kategori metni \"Bartsch verzeichnet zwei Stiche: B. 245 von Marcantonio Raimondi, B. 246 als von Marco Dente da Ravenna gestochene Kopie\" der; birincil kaynakta B.246 numarası açıkça görülmedi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "MAF monogramı \"belki yanlış yazılmış\" olabilir (dewiki: \"vielleicht falsch geschriebenes Monogramm\"); \"Marc Antonio de' Franci\" açılımı Francesco Francia'ya gönderme hipotezi (\"könnte auch für ... stehen\") — satır içi atıf YOK.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "dewiki'nin atıfsız ek ayrıntıları: Dente Nachstich 1520'lerde; Luca Penni kopyası → Jean Mignon gravürü; Bertani kompozisyona daha olumsuz konotasyon verdi (Venüs'ün güzelliği yıkıcı yanılsama) → Ghisi gravürü; sol kenar üç najad + Paris'in çoban köpeği + Amor, Doria-Pamphilj kabartmasından; diğer figürler Villa Medici kabartmasında (bazı tanrıçalarda yeniden anlamlandırma); sırtı dönük kadın nü ekseni antik modelsiz, Raffaello yeniliği; önden/arkadan/yandan üç görünüm bedenin çevresel görünümü fikrini verir; Merkür Hermes asası + kanatlı başlık; Juno'nun tehditkâr parmak hareketi; Sol arabasının zodyak kuşağı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "D1 Tarih ihtilafı: data/Wikidata preferred 1510 (circa, P1319 1510/P1326 1520, NGA ref) ↔ BnF/Vasari-Delaborde 1510-1511 ↔ Uffizi 1513-15 ↔ Kunsthalle um 1515 ↔ Mason/Oberhuber 1515-1516 (Met overview + WD Met ref + Gallica SDC) ↔ Berlin 1515-1518 [circa] ↔ dewiki 1515-1520 ↔ Boijmans/Shoemaker c. 1517-1520 ↔ Met ca. 1510-20 / NGA c. 1510/1520.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S12",
+    "S14",
+    "S16",
+    "S18",
+    "S20",
+    "S3",
+    "S1",
+    "S27"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "D2 Bartsch: orijinal B. XIV.197.245 (Met/NGA/BnF/Kunsthalle) ↔ Commons kategori ADI \"Raimondi (Bartsch 246)\"; kategori metni 246'yı Dente kopyasına verir (C033); Kunsthalle \"Inv. Nr. 246\" envanter numarasıdır, Bartsch değil.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S18",
+    "S20",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D3 Yaprak ölçüleri (nüsha bazlı): NGA 29.1×43.2 ↔ Met 29.1×43.7 ↔ Boijmans 29.5×43.8 ↔ Uffizi 29.5×44.3 ↔ Kunsthalle 29.2×43.5 ↔ Berlin 29.2×44.7 + 29.5×44.7 (iki çift; Platte/Blatt ayrımı belirtilmemiş) ↔ dewiki 29.2×43.5; WD P2048 29.1, P2049 43.2/43.7; farklar kısmen nüsha/kenar kesimi kaynaklı olabilir; \"sheet\" etiketi yalnız Met/NGA/Kunsthalle'de açık.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S12",
+    "S14",
+    "S16",
+    "S18",
+    "S3",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D4 Teknik: Uffizi \"Acquaforte e bulino\" (asit + kalem) ↔ diğer tüm birincil kayıtlar \"Engraving/Kupferstich\" (saf gravür); Wikidata P31 \"copper engraving print\" + \"engraving\"; P186 (malzeme) YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S14",
+    "S9",
+    "S10",
+    "S12",
+    "S18",
+    "S16",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D5 Monogram okuması: MAF (BnF; Kunsthalle \"MAF (ligiert)\"; Uffizi; Met) ↔ MAP (Berlin \"RAPH-URBI/ INVEN/ MAP\") ↔ \"conjoined letters M and A\" (NGA) ↔ dewiki \"vielleicht falsch geschrieben\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S20",
+    "S18",
+    "S14",
+    "S9",
+    "S16",
+    "S10",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D6 Motto transkripsiyonu: \"SORDENT PRAE FORMA\" (Kunsthalle — \"S\" seitenverkehrt; Berlin; dewiki) ↔ \"SORDENT PAE FORMA\" (Uffizi) ↔ \"SORDENT PRARE FORMA\" (Met meta description).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S18",
+    "S16",
+    "S3",
+    "S14",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D7 Yazıt konumu: Met \"within plate lower left of center\" ↔ NGA \"bottom center\" ↔ Kunsthalle \"unten in der Mitte\" ↔ Berlin \"unten, rechts von der Mitte\"; motto bloğu: hepsi \"sol alt\" (Kunsthalle \"unten links\", Met \"at lower left on block\", Berlin \"unten links in der Platte\").",
+   "seviye": "D",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S18",
+    "S16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D8 data müze alanı: \"Staatsgalerie Stuttgart\" ↔ gösterilen birincil görsel Met 19.74.1; Stuttgart'ın dört aynı başlıklı sayfası BAŞKA eserler (Cranach atölyesi tablo L 1255; Lommelin/Rubens A 2014/7944; de Wael C 2017/5756,208; Tardieu/Moitte/Rubens A 19875); Raimondi için Stuttgart birincil kaydı bulunamadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S27",
+    "S21",
+    "S22",
+    "S23",
+    "S24",
+    "S4",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D9 Sırtı dönük figür: data (basyapitlar/yuruyus/eser_ayrintilari) \"sırtı dönük olanın hangisi olduğu tartışmalıdır\" ↔ dewiki \"Die dritte Göttin, Minerva ... als gewundener Rückenakt\" ve Kunsthalle \"Rechts von Venus sieht man Minerva, den Betrachtenden den Rücken zuwendend\" (kesin tanımlama).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S27",
+    "S3",
+    "S18"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "D10 data yazıt levhası: data \"Sol alt köşedeki küçük levha ... tasarımın Raffaello'ya ait olduğunu belirten bir kayıt taşır\" ↔ birincil kayıtlar: sol alt blok SORDENT motosunu taşır; Raffaello atfı \"RAPH VRBI INVEN\" alt ortada/merkeze yakın solda (konum varyantları C042).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S27",
+    "S9",
+    "S14",
+    "S18",
+    "S16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "D11 Raimondi yaşam tarihleri: NGA \"c. 1480 - c. 1534\" ↔ Met \"Argini (?) ca. 1480–before 1534 Bologna (?)\" ↔ BnF \"1480?-1534?\" ↔ Kunsthalle \"vor 1480 - zwischen 1527 und 1534\" ↔ Berlin \"1475-1534\" ↔ Boijmans \"Argini 1480 - Bologna voor 1534\" ↔ Uffizi \"Argine, Bologna 1480 ca. – Bologna 1534\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S9",
+    "S20",
+    "S18",
+    "S16",
+    "S12",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "D12 Boijmans 22638 karışması: web aramasında aynı başlıkla listelenen 22638 = Ghisi 1555 (Bertani'den sonra, Cock yayımcı), Raimondi nüshası DEĞİL; Raimondi nüshası 62913 = L 1966/16 (PK).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S13",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "E3 Stuttgart A 85.1: yalnız Commons credit (\"Staatsgalerie Stuttgart (A 85.1), 24 January 2006\") + referanssız Wikidata P195 Q14917275; birincil katalog kaydı bulunamadı; URL tahmin edilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S1",
+    "S21",
+    "S22",
+    "S23",
+    "S24"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "E4 MFA Boston 27.1390: yalnız Commons dosya adı + ImageDescription (\"Engravings by Marcantonio Raimondi in the Museum of Fine Arts, Boston\"); MFA kaydı 403; accession biçimi kurumca teyitsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S25"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "Görseller bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); 6 Commons dosyası yalnız metadata/lisans/çözünürlük; kompozisyon birincil kurum metinlerinden; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "E7-E10 Literatür metinlerine erişilmedi (kaynakçada anıldı): Met References (Delaborde 1887; Shoemaker/Broun 1981; Raphael Invenit 1985 cat. Mito II.1 s.242; Massari 1989 cat.7 s.22-29; Changing Impressions 1999-2000 cat.24 s.78); Kunsthalle LIT (Bartsch XIV 1813 S.197 Nr.245; Shoemaker 1981 S.146-147 Nr.43; Bernini Pezzini vd. 1985 S.242 Nr.II.1; Landau/Parshall 1994 S.123-131; Mantua/Wien 1999 S.94 Nr.33 Gnann; Gramaccini/Meier 2009 S.155-156 Nr.65 Meier; Knaus 2016 S.36-37; Brescia 2020 S.50-51 Nr.2; Rom 2020 S.315 Nr.VII.13 Farinella; Raffael Katalog 2021 S.114-115 Kat.2; Meyer 1878 S.11); Berlin (Schulze Altcappenberg 1994 S.259-260 Kat.V.18; Massari/Prosperi Valenti Rodinò 1989 S.29 Abb.5); dewiki Literatur (Kopp 2017 KIT ISBN 978-3-7315-0637-9 S.104-111; Thoenes 2016 Taschen ISBN 978-3-8365-3228-0 S.70).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9",
+    "S18",
+    "S16",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "E5 data \"Frigya başlıklı çoban Paris\": erişilen hiçbir kaynak metninde başlık açıkça doğrulanmadı; görsel incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S27"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "E6 Wikidata P571 \"1517\" claim'i REFERANSSIZ (precision 7, P1319 1500/P1326 1534); Boijmans güncel \"c. 1517-1520\" ile kısmen örtüşür, birebir değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "E11 Gallica tam notice JS ile yükleniyor; arşiv kopyasından yalnız DC meta etiketleri okundu (boyut/teknik detayı alınamadı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S20"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "E12 Met canlı sayfası açılamadı (429 ×4); kullanılan kopya 2026-06-07 arşivlidir; \"Gallery 899 / On view\" güncel olmayabilir. NGA için ham HTML yok (curl 403; web_fetch transkripsiyonu).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q18579333 JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q18579333.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler",
+   "url": "https://www.wikidata.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wbgetentities)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (de)",
+   "belge": "\"Urteil des Paris von Raimondi nach Raffael\" wikitext (satır içi ref YOK; en/it sitelink YOK)",
+   "url": "https://de.wikipedia.org/w/api.php?action=parse&page=Urteil%20des%20Paris%20von%20Raimondi%20nach%20Raffael",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: 2 P18 dosyası (MET DP-18212-001 CC0 3758×2545; Gallica PD 10700×7200)",
+   "url": "https://commons.wikimedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (imageinfo); İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: Urteil des Paris.jpg (Stuttgart A 85.1 credit, PD 1790×1200); Giudizio di Paride.jpg (WGA+Stuttgart, PD 1042×675); NGA 641.jpg (CC0 4000×2749)",
+   "url": "https://commons.wikimedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (imageinfo); İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: Raimondi - The Judgment of Paris, 27.1390.jpg (MFA Boston açıklaması; PD 1600×1076)",
+   "url": "https://commons.wikimedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (imageinfo); İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikimedia Commons",
+   "belge": "Category:Raimondi (Bartsch 246) wikitext",
+   "url": "https://commons.wikimedia.org/w/api.php?action=parse",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S8",
+   "kurum": "The Metropolitan Museum of Art",
+   "belge": "canlı katalog 337058",
+   "url": "https://www.metmuseum.org/art/collection/search/337058",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ERİŞİLEMEDİ: curl 429 ×3 + web_fetch 429 (50/75 sn backoff)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "The Metropolitan Museum of Art (arşiv)",
+   "belge": "Wayback snapshot 2026-06-07 14:07:48, ham HTML 362026 B (tombstone + overview + RSC payload)",
+   "url": "https://web.archive.org/web/20260607140748/https://www.metmuseum.org/art/collection/search/337058",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (curl ham + web_fetch)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "National Gallery of Art",
+   "belge": "canlı katalog 641 (web_fetch transkripsiyonu; ham HTML yok)",
+   "url": "https://www.nga.gov/artworks/641-judgment-paris",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "curl 403; web_fetch 200 (transkripsiyon)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Museum Boijmans Van Beuningen (eski)",
+   "belge": "collectie.boijmans.nl/object/62913 (Wikidata P854 ref)",
+   "url": "http://collectie.boijmans.nl/object/62913",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ÖLÜ: curl (6) DNS çözümlenemedi; Wayback snapshot YOK",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Museum Boijmans Van Beuningen",
+   "belge": "güncel katalog 62913 (L 1966/16 PK)",
+   "url": "https://www.boijmans.nl/en/collection/artworks/62913/the-judgment-of-paris",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Museum Boijmans Van Beuningen",
+   "belge": "katalog 22638 (FARKLI eser: Ghisi 1555, Bertani, Cock, BdH 3708 PK)",
+   "url": "https://www.boijmans.nl/en/collection/artworks/22638/the-judgment-of-paris",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Gallerie degli Uffizi",
+   "belge": "Il giudizio di Paride (346 st. sc.)",
+   "url": "https://www.uffizi.it/opere/il-giudizio-di-paride",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "museum-digital",
+   "belge": "object 582349 (Berlin kaydı aynası)",
+   "url": "https://nat.museum-digital.de/object/582349?navlang=de",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S16",
+   "kurum": "Staatliche Museen zu Berlin, Kupferstichkabinett",
+   "belge": "object 93765 (165-1891; Schulze Altcappenberg tanıtım metni)",
+   "url": "https://smb.museum-digital.de/object/93765?navlang=de",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "Hamburger Kunsthalle",
+   "belge": "canlı online-sammlung objekt/246",
+   "url": "https://online-sammlung.hamburger-kunsthalle.de/de/objekt/246/das-urteil-des-paris",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ENGELLİ: 200 ama Anubis bot challenge (JS proof-of-work)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S18",
+   "kurum": "Hamburger Kunsthalle (arşiv)",
+   "belge": "Wayback snapshot 2025-04-26 21:18:28, ham HTML (betim + fn1-9 + LIT + provenance)",
+   "url": "https://web.archive.org/web/20250426211828/https://online-sammlung.hamburger-kunsthalle.de/de/objekt/246/das-urteil-des-paris",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S19",
+   "kurum": "BnF / Gallica",
+   "belge": "canlı ark btv1b6953298k",
+   "url": "https://gallica.bnf.fr/ark:/12148/btv1b6953298k",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ENGELLİ: 403",
+   "tur": "birincil"
+  },
+  {
+   "id": "S20",
+   "kurum": "BnF / Gallica (arşiv)",
+   "belge": "Wayback snapshot 2025-12-12 21:39:20, ham HTML (yalnız DC meta okunabildi)",
+   "url": "https://web.archive.org/web/20251212213920/https://gallica.bnf.fr/ark:/12148/btv1b6953298k",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (DC meta)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S21",
+   "kurum": "Staatsgalerie Stuttgart",
+   "belge": "urteil-des-paris (FARKLI eser: Cranach atölyesi tablo, L 1255)",
+   "url": "https://www.staatsgalerie.de/de/sammlung-digital/urteil-des-paris",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "web_fetch 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S22",
+   "kurum": "Staatsgalerie Stuttgart",
+   "belge": "urteil-des-paris-1 (FARKLI eser: Lommelin/Rubens, A 2014/7944)",
+   "url": "https://www.staatsgalerie.de/de/sammlung-digital/urteil-des-paris-1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "web_fetch 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S23",
+   "kurum": "Staatsgalerie Stuttgart",
+   "belge": "urteil-des-paris-2 (FARKLI eser: Cornelis de Wael çizim, C 2017/5756,208)",
+   "url": "https://www.staatsgalerie.de/de/sammlung-digital/urteil-des-paris-2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "web_fetch 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S24",
+   "kurum": "Staatsgalerie Stuttgart",
+   "belge": "urteil-des-paris-3 (FARKLI eser: Tardieu/Moitte/Rubens 1750, A 19875)",
+   "url": "https://www.staatsgalerie.de/de/sammlung-digital/urteil-des-paris-3",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "web_fetch 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S25",
+   "kurum": "Museum of Fine Arts, Boston",
+   "belge": "objects/38170 (arama adayı)",
+   "url": "https://collections.mfa.org/objects/38170",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ERİŞİLEMEDİ: web_fetch 403",
+   "tur": "birincil"
+  },
+  {
+   "id": "S27",
+   "kurum": "yerel repo (salt-okunur)",
+   "belge": "data/eserler_onbellek.json (p:100), basyapitlar.json, yuruyus.json, eser_ayrintilari.json, eser_notlari.json, ders_kaynaklari.json; basyapit-dersleri/DURUM.md, MUFREDAT.md",
+   "url": "data/eserler_onbellek.json (yerel repo; salt-okunur)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel okuma; data DEĞİŞTİRİLMEDİ",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Le Déjeuner sur l'herbe (Çimende Kahvaltı), 1863",
+   "sanatci": "Édouard Manet",
+   "gerekce": "Kunsthalle ve Berlin kayıtlarına göre sağdaki figür grubundan doğrudan esinlenme; alıntı ilişkisi belgeli (kurum/envanter bu kaynaklarda verilmedi).",
+   "kanit": [
+    "C014",
+    "C021"
+   ]
+  },
+  {
+   "eser": "The Judgment of Paris (1555)",
+   "sanatci": "Giorgio Ghisi (Giovanni Battista Bertani'den sonra)",
+   "kurum": "Museum Boijmans Van Beuningen, Rotterdam",
+   "envanter": "BdH 3708 (PK)",
+   "mufredat_ici": false,
+   "gerekce": "Aynı konunun farklı yorumu (yayımcı Hieronymus Cock); Raimondi nüshasıyla karıştırılmamalı (D12); karşılaştırma için doğrulanmış ayrı eser.",
+   "kanit": [
+    "C030",
+    "C047"
+   ]
+  },
+  {
+   "eser": "Atina Okulu (La scuola di Atene)",
+   "sanatci": "Raffaello Sanzio",
+   "kurum": "Vatikan, Stanza della Segnatura",
+   "mufredat_ici": true,
+   "gerekce": "Aynı odanın \"klasik düzeni\" ↔ Paris'in Hükmü'nın dengesizliği (Kunsthalle fn6 karşılaştırması); Uffizi'nin Parnassus altı grisaille ilişkisi de aynı odaya işaret eder.",
+   "kanit": [
+    "C026",
+    "C023"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam (cache tabanlı) — aynı gün (2026-11-14) indirilmiş ham cache'ler bağımsız turda yeniden açılıp metin çıkarımı yapıldı: Met wayback ham HTML (tombstone/overview/provenance/RSC), NGA web_fetch transkripsiyonu, Boijmans 62913+22638, Uffizi, Kunsthalle wayback (betim+fn1-9+LIT), Gallica wayback DC meta, SMB Berlin, dewiki wikitext, Commons imageinfo ×3, Wikidata JSON. Bulgular: brief C013'teki \"1520'lerde\" ifadesi Kunsthalle'de YOK (ana metin \"16. Jahrhundert\"; 1520'ler atıfsız dewiki'de) → C035'e taşındı; NGA \"third woman stands with her back\" betimi cache'de yeniden doğrulanamadı → C044'ten çıkarıldı. Canlı yeniden erişim Met 429 / NGA 403 / Kunsthalle Anubis / Gallica 403 nedeniyle sınırlı; tam bağımsız canlı teyit insan editöre kaldı. Görseller İNCELENEMEDİ (C050); GZ TASLAK.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data müze alanı \"Staatsgalerie Stuttgart\" ↔ gösterilen birincil görsel Met 19.74.1 (DP-18212-001, CC0); Stuttgart birincil kaydı bulunamadı, dört aynı başlıklı sayfa farklı eserler (C043, C048). Müze alanı nüsha bağlamıyla yeniden değerlendirilmeli.",
+  "data tarih/yil \"1510\" (tek yıl, dört dosyada) ↔ tüm birincil kaynaklar aralık/circa veriyor (C036); tek yıl savunulamaz; en geniş uzlaşma \"c. 1510–1520\", modern eğilim \"um 1515 / 1515–16\".",
+  "data gorseller lisans alanları: Gallica commons dosyası l:\"\" (gerçek PD), MET commons dosyası l:\"\" (gerçek CC0) — S4/S5 metadata ile doldurulabilir (ana oturum kararı); birincil met girişi l:\"CC0\" zaten dolu.",
+  "Raimondi_-_The_Judgment_of_Paris,_27.1390.jpg: Commons açıklaması MFA Boston'ı işaret eder; MFA kaydı 403, accession kurumca teyitsiz (C049).",
+  "data \"sırtı dönük olanın hangisi olduğu tartışmalıdır\" ↔ Kunsthalle ve dewiki Minerva'yı kesin tanımlar (C044).",
+  "data \"sol alt köşedeki küçük levha ... Raffaello'ya ait olduğunu belirten kayıt\" ↔ birincil kayıtlar: sol alt blok SORDENT motosunu taşır; RAPH VRBI INVEN alt ortada/merkeze yakın solda (C045, C042).",
+  "data \"Frigya başlıklı çoban Paris\" erişilen metinlerde doğrulanmadı; görsel incelenmedi (C052).",
+  "data/ders_kaynaklari.json Q18579333 \"dogrulandi\" etiketli 0.5 puanlı cümleler bu briefte ESAS ALINMADI; Kunsthalle \"skulpturale Körper\" / Berlin \"warmtonigen, malerischen Effekten\" ile kısmen örtüşür; yeniden değerlendirme ana oturumda.",
+  "Wikidata P571 \"1517\" claim'i referanssız (C053); P1343 Heilbrunn kaydı var ama P973 URL yok — Heilbrunn denemesi YAPILMADI (URL tahmini yasağı).",
+  "Boijmans 22638 (Ghisi 1555, Bertani, Cock) aynı başlıklı FARKLI eser; arama sonuçlarında Raimondi nüshası 62913 ile karıştırılmamalı (C047, C030)."
+ ]
+}

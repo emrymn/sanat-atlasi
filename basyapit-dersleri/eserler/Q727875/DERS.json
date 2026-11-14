@@ -1,0 +1,470 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q727875",
+ "sanatci_id": "titian",
+ "baslik": "Urbino Venüsü",
+ "ozgun_baslik": "Venere di Urbino (Venus of Urbino)",
+ "kunye": {
+  "sanatci": "Titian (Tiziano Vecellio)",
+  "sanatci_yasam": "c.1488/90–1576",
+  "tarih": "1534 (satış 1538)",
+  "tarih_belirsizlik": "begun 1532/34, completed 1534, sold 1538 (D)",
+  "teknik": "Yağlıboya, tuval",
+  "boyut_cm": {
+   "yukseklik": 119,
+   "genislik": 165
+  },
+  "muze": "Galleria degli Uffizi, Floransa",
+  "envanter": "inv. 1890, 1437",
+  "edinim": "1631 Vittoria della Rovere mirası → Firenze; 1694 gallery",
+  "konum": "Uffizi",
+  "telif_durumu": "Kamu malı (Titian ö.1576); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Art Project)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "metadata",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C022); GZ TASLAK; kompozisyon enwiki/itwiki metninden; refs metinleri erişilmedi (C023)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 402
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1305
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2524
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-arşiv-birincil--süreç-tarih"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-sipariş-zinciri-ippolito--guidobaldo"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-vasarinin-soğuk-övgüsü-ve-model-sorusu"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#5-bakış-agency-ve-objectification"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-köpek-ve-nesneler-sembolizmin-sınırı"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#3-yorum-bölünmesi-courtesan--evlilik--saf-nü"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Arşiv birincil katalogla künyeyi (119×165, inv.1437, 1631 provenance) doğrular.",
+  "Sipariş zincirini (Ippolito ↔ Guidobaldo) ve süreç tarihi (1534/1538) açıklar.",
+  "Bakış/agency ve yorum bölünmesini (courtesan/evlilik/saf nü) analiz eder.",
+  "Köpek/cassone/jest sembolizminin sınırını ve model sorusunu değerlendirir.",
+  "Beş ihtilafı (D) ve görsel/literatür sınırlarını (E) yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Uzanmış nü",
+   "tanim": "Yatar/uzanır çıplak figür geleneği; Titian kurucu örnek.",
+   "kanit": [
+    "C004",
+    "C010"
+   ]
+  },
+  {
+   "ad": "Cassone / corredo",
+   "tanim": "Çeyiz sandığı; evlilik okumasının nesnesi.",
+   "kanit": [
+    "C005",
+    "C011"
+   ]
+  },
+  {
+   "ad": "Male gaze / agency",
+   "tanim": "Erkeksi bakış ↔ figürün özne kontrolü tartışması.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "ad": "Courtesan",
+   "tanim": "Rönesans Venedik yüksek statülü eşlikçi; Zaffetta adayı.",
+   "kanit": [
+    "C006",
+    "C010"
+   ]
+  },
+  {
+   "ad": "Colore",
+   "tanim": "Venedik okulunun renk önceliği; Titian imzası.",
+   "kanit": [
+    "C003"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Arşiv katalog: Tiziano; \"Venere\"; dipinto; Uffizi Firenze; 119 × 165 cm; inv. 1890, 1437.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Arşiv provenance: Firenze 1631 Vittoria della Rovere eredità; 1635/1638 envanterlerinde kesin değil; Poggio Imperiale 1654-55; Guardaroba 1656; 1694.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "enwiki: Venus of Urbino / Reclining Venus; oil on canvas; Titian; begun 1532/1534, perhaps completed 1534, sold 1538; Uffizi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "enwiki: poz Giorgione Dresden Sleeping Venus (c.1510–11, manzara Titian); iç mekân, bakışı karşılar, sensuality açık.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "enwiki: izleyiciye bakar utanmaz; sağ el gül demeti; öteki el mahrem bölgede; köpek (fidelity); iki hizmetçi cassone sandığında; iç mekân ayrıntılı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "enwiki: sipariş Ippolito de' Medici (kardinal); 20 Oct 1532 Venedik gecesi Angela Zaffetta (courtesan); Titian Ippolito portresi + muhtemelen Zaffetta nü; 20 Dec 1534 mektup; Ippolito Aug 1535 öldü görmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "enwiki: Guidobaldo II della Rovere (24) Jan 1538 portre için geldi, satın almaya istekli, aylar sonra aldı, \"the nude woman\"; 1538 Urbino devraldı → ad; çoğunlukla Pesaro; alternatif 1534 Giulia Varano (10) evliliği/consummation siparişi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "itwiki: Guidobaldo March 1538 ajanı \"donna nuda\" sıkıştırdı; annesi Eleonora para reddetti; bottega kaldı; ödeme garantisi; aylar sonra Urbino; Giulia da Varano (1534 politik evlilik) için eğitici model, connubio amoroso alegorik ikna.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "itwiki: Vasari yalnız \"certi panni sottili\" övdü; Milanesi \"en güzel Venüs/nü\"; favorita portresi riscontri yok; model ≥3 tuvalde tekrar (La Bella Urbino).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "enwiki: yorum iki grup courtesan (Zaffetta) ↔ evlilik kutlaması; ikisi de erotik yükte hemfikir; Venedik uzanmış nü geleneği Titian yarattı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "enwiki: Goffen evlilik okuması cassone=corredo/trousseau; el jesti=konsepsiyon inancı (female emission); köpek Eleonora Gonzaga portresiyle aynı → della Rovere + sessiz köpek=izleyici koca; Hale köpek \"absurd\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "enwiki: Hope \"beautiful nude on bed, devoid classical/allegorical\"; Wind \"undisguised hedonism dispelled Platonic metaphors\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "itwiki: etki Ingres Grande Odalisque, Goya Maja Desnuda, Manet Olympia; Ingres kopya 1821 Walters; Verdi reproduksiyon.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "enwiki (Smarthistory Jewitt 2020): mahrem jestin Rönesans evlilik/üreme tıbbı bağlamında yorumlanması (female arousal conception inancı) — akademik yorum.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Tarih ihtilafı: begun 1532/34 – completed 1534 – sold 1538 ↔ itwiki/WD/data 1538 ↔ infobox 1534.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K3",
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C016",
+   "ifade": "Yorum ihtilafı: courtesan ↔ evlilik ↔ Hope saf nü (alegori yok).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C017",
+   "ifade": "Köpek sembolizmi ihtilafı: fidelity/della Rovere/koca (Goffen) ↔ Hale \"absurd\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C018",
+   "ifade": "Sipariş ihtilafı: Ippolito/Zaffetta ↔ Guidobaldo evlilik.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C019",
+   "ifade": "Boyut: enwiki/itwiki/arşiv 119×165 ↔ WD 119×165,5 (0,5 fark).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3",
+    "K4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C020",
+   "ifade": "Yorum: bakış = özne/agency ↔ objectification tartışması; izleyiciyi karşılayan bakış; davet ile kontrol iç içe.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C021",
+   "ifade": "Yorum: iç mekân evcilleştirmesi ↔ Giorgione dış mekân = Venüs sekülerleşmesi.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision bütçesi); GZ TASLAK; insan editör teyidi ZORUNLU.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C023",
+   "ifade": "refs monografi/makale metinleri (Goffen, Hale, Hope, Wind, Gronau 1904, Zuffi, Smarthistory) erişilmedi; kaynakçada anıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C024",
+   "ifade": "Görsel kamu malı (Titian ö.1576); Commons PD.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "WD: P170 Q47551; P571 1538; P186 oil+canvas; P2048 119/P2049 165.5; P195/P276 Uffizi; P217 1437; P6216 PD.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Polo Museale Firenze (resmî katalog, arşiv)",
+   "belge": "scheda NCTN 00131831 (Venere), web.archive.org 2022",
+   "url": "https://web.archive.org/web/2022/http://www.polomuseale.firenze.it/catalogo/scheda.asp?nctn=00131831&value=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (arşiv); canlı polomuseale URL ölü",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Venus of Urbino — Goffen/Hale/Hope/Wind/Smarthistory atıflı",
+   "url": "https://en.wikipedia.org/wiki/Venus_of_Urbino",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); refs metinleri açılmadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Venere di Urbino — Vasari/Milanesi/Gronau/Zuffi atıflı",
+   "url": "https://it.wikipedia.org/wiki/Venere_di_Urbino",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikidata",
+   "belge": "Q727875",
+   "url": "https://www.wikidata.org/wiki/Q727875",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikimedia Commons",
+   "belge": "Tiziano - Venere di Urbino - Google Art Project.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Tiziano_-_Venere_di_Urbino_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "metadata; İNCELENEMEDİ (vision bütçesi)",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Uyuyan Venüs (Dresden)",
+   "sanatci": "Giorgione (manzara Titian)",
+   "gerekce": "Poz kaynağı; dış/uyuyan ↔ iç/uyanık sekülerleşme ekseni.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "eser": "Büyük Odalık",
+   "sanatci": "J.-A.-D. Ingres",
+   "mufredat_ici": true,
+   "gerekce": "Uzanmış nü tipinin devamı; etki hattı.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "eser": "La Bella",
+   "sanatci": "Titian",
+   "gerekce": "Modelin tekrar ettiği öteki tuval; portre ↔ tip sorusu.",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Arşiv resmî katalog (K1, 2022) yeniden açıldı; künye/envanter/boyut/provenance doğrulandı; canlı URL ölü (C023 not). enwiki/itwiki wikitext yeniden okundu; beş ihtilaf (C015–C019) D olarak açık. Görsel K5 metadata only, vision bütçesi tükendi → İNCELENEMEDİ (C022); kompozisyon metinden, GZ TASLAK. Refs monografi metinleri erişilmedi (C023).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data 1538 = satış; öneri \"1534 (satış 1538)\" (C015).",
+  "Boyut 119×165 (arşiv) ↔ WD 165,5 (D, C019).",
+  "Envanter 1437 data'da yok; eklenmeli (C001).",
+  "Provenance 1631 Vittoria della Rovere (C002).",
+  "Beş ihtilaf D: C015–C019.",
+  "Görsel İNCELENEMEDİ (C022); GZ TASLAK; insan editör zorunlu."
+ ]
+}

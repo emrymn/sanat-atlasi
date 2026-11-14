@@ -1,0 +1,584 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q18579333",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu gravürü kim oydu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Marcantonio Raimondi"
+    },
+    {
+     "harf": "B",
+     "metin": "Raffaello Sanzio"
+    },
+    {
+     "harf": "C",
+     "metin": "Marco Dente"
+    },
+    {
+     "harf": "D",
+     "metin": "Giorgio Ghisi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil kayıtlar gravürcüyü Marcantonio Raimondi, tasarımcıyı Raffaello olarak verir (\"After Raphael\"; BnF \"Dessinateur du modèle\"; Boijmans \"Designer: Rafaël\").",
+   "yanlis_gerekceleri": {
+    "B": "Raffaello tasarımcıdır (kayıp desenin sahibi), gravürcü değil; plakayı Raimondi oydu.",
+    "C": "Marco Dente, plaka aşındıktan sonra yapılan Nachstich'in (yeniden oyma kopyanın) sahibidir; orijinalin değil.",
+    "D": "Ghisi, 1555 tarihli ayrı bir Paris'in Hükmü gravürünü (Bertani'den sonra, Cock yayımcı) yaptı; bu eserin gravürcüsü değil."
+   },
+   "kanit": [
+    "C001",
+    "C013",
+    "C030"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Orijinal gravürün Bartsch numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "B. XIV.197.245"
+    },
+    {
+     "harf": "B",
+     "metin": "B. XIV.197.246"
+    },
+    {
+     "harf": "C",
+     "metin": "Delaborde 114"
+    },
+    {
+     "harf": "D",
+     "metin": "Courboin 11633"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met, NGA, BnF ve Kunsthalle birincil kayıtları orijinali Bartsch XIV.197.245'te birleştirir.",
+   "yanlis_gerekceleri": {
+    "B": "246 orijinalin Bartsch numarası değildir; Kunsthalle'deki \"246\" envanter numarasıdır (Inv. Nr. 246); Commons kategori adı karışıklık kaynağıdır.",
+    "C": "114, Delaborde 1887 raisonnée numarasıdır (Met/BnF kaydı); Bartsch numarası değil.",
+    "D": "11633, BnF kaydındaki Courboin numarasıdır; Bartsch numarası değil."
+   },
+   "kanit": [
+    "C009",
+    "C006",
+    "C002",
+    "C007"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Metropolitan Museum nüshasının envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "19.74.1"
+    },
+    {
+     "harf": "B",
+     "metin": "1941.1.63"
+    },
+    {
+     "harf": "C",
+     "metin": "L 1966/16 (PK)"
+    },
+    {
+     "harf": "D",
+     "metin": "165-1891"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met kaydı: Object Number 19.74.1; Rogers Fund, 1919; Drawings and Prints.",
+   "yanlis_gerekceleri": {
+    "B": "1941.1.63, NGA nüshasının accession numarasıdır (Gift of W.G. Russell Allen).",
+    "C": "L 1966/16 (PK), Boijmans nüshasının numarasıdır (Lucas van Leyden Foundation desteği, 1966).",
+    "D": "165-1891, Berlin Kupferstichkabinett nüshasının numarasıdır."
+   },
+   "kanit": [
+    "C002",
+    "C003",
+    "C004",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Tekniği \"Acquaforte e bulino\" (asit + kalem) olarak veren kurum hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "B",
+     "metin": "Metropolitan Museum"
+    },
+    {
+     "harf": "C",
+     "metin": "National Gallery of Art"
+    },
+    {
+     "harf": "D",
+     "metin": "Hamburger Kunsthalle"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Uffizi kaydı Tecnica alaninda \"Acquaforte e bulino\" der; bu, diğer kayıtların saf gravür ifadesiyle ihtilaflıdır (C039) ve ders bu ihtilafı çözmez.",
+   "yanlis_gerekceleri": {
+    "B": "Met \"Engraving\" der.",
+    "C": "NGA \"engraving\" der.",
+    "D": "Kunsthalle \"Kupferstich\" der."
+   },
+   "kanit": [
+    "C005",
+    "C002",
+    "C003",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Kunsthalle kaydına göre Marco Dente'nin yeniden oyması (Nachstich) neden gerekli oldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Raimondi'nin plakası büyük talep nedeniyle aşındı"
+    },
+    {
+     "harf": "B",
+     "metin": "Raffaello kompozisyonu yeniden çizdi"
+    },
+    {
+     "harf": "C",
+     "metin": "Orijinal plaka eritildi"
+    },
+    {
+     "harf": "D",
+     "metin": "Dente ikonografiyi düzeltmek istedi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Kunsthalle fn9: \"Der Nachstich war notwendig geworden, weil die Kupferplatte mit Raimondis Stich aufgrund der großen Nachfrage abgenutzt war.\"",
+   "yanlis_gerekceleri": {
+    "B": "Kunsthalle, Dente kopyasını \"doğru ama teknik olarak daha basit\" diye tanımlar; tasarım değişikliği kaydı yoktur.",
+    "C": "Plakanın eritildiğine dair kayıt yoktur; aşınma nedeniyle yeni plaka oyulmuştur.",
+    "D": "Dente reproduksiyonu \"genau\" (doğru) olarak nitelenir; ikonografik düzeltme amacı belirtilmez."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "1863'te sağdaki figür grubundan esinlenen \"skandal resim\" hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Manet — Le Déjeuner sur l'herbe (Çimende Kahvaltı)"
+    },
+    {
+     "harf": "B",
+     "metin": "Degas — Bale Dersi"
+    },
+    {
+     "harf": "C",
+     "metin": "Picasso — Guernica"
+    },
+    {
+     "harf": "D",
+     "metin": "Ghisi — Paris'in Hükmü (1555)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Kunsthalle: \"Édouard Manet ließ sich 1863 von der rechts lagernden Gruppe zu seinem Skandalbild Das Frühstück im Grünen ... inspirieren\"; Berlin aynı grubu Manet 1863'e bağlar.",
+   "yanlis_gerekceleri": {
+    "B": "Degas gravürle yoğun biçimde hesaplaştı (Kunsthalle), ama 1863 sağ grup esini Manet için kayıtlıdır.",
+    "C": "Picasso gravürle hesaplaştı (Kunsthalle); 1863 esini Manet'ye aittir.",
+    "D": "Ghisi'nin 1555 gravürü Bertani'den sonra yapılmış ayrı bir eserdir (Boijmans BdH 3708 PK)."
+   },
+   "kanit": [
+    "C014",
+    "C031",
+    "C030"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Met overview'a göre Vasari'nin 1510-1511 tarihini kim destekledi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Delaborde"
+    },
+    {
+     "harf": "B",
+     "metin": "Shoemaker"
+    },
+    {
+     "harf": "C",
+     "metin": "Mason"
+    },
+    {
+     "harf": "D",
+     "metin": "Oberhuber"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met: \"Recognized by Vasari as one of Marcantonio's early Roman works of 1510-1511, and this date was supported by Delaborde.\"",
+   "yanlis_gerekceleri": {
+    "B": "Shoemaker eseri 1517-1520 arasına tarihledi.",
+    "C": "Mason, Oberhuber ile birlikte 1515-1516 önerdi.",
+    "D": "Oberhuber, Mason ile birlikte 1515-1516 önerdi."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Berlin betimine göre görüntüyü ikiye bölen orta ekseni hangi figürler oluşturur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Minerva (sırtı dönük nü) + Victoria + Sol"
+    },
+    {
+     "harf": "B",
+     "metin": "Paris + Venüs + Merkür"
+    },
+    {
+     "harf": "C",
+     "metin": "Jupiter + Ganymede + Diana"
+    },
+    {
+     "harf": "D",
+     "metin": "Juno + tavus kuşu + naiadlar"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Berlin: \"Eine Mittelachse - aufgebaut aus dem gewundenen Rückenakt der Minerva, der heranschwebenden Victoria und dem Sonnengott Sol - teilt das Bild.\"",
+   "yanlis_gerekceleri": {
+    "B": "Paris-Venüs (-Merkür) soldaki ana gruptur; orta eksen değil.",
+    "C": "Jupiter-Ganymede-Diana gök bölgesinin sağ üst grubudur.",
+    "D": "Juno sol geride, naiadlar kenardadır; eksen Minerva-Victoria-Sol üçlüsüdür."
+   },
+   "kanit": [
+    "C021",
+    "C020"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Met nüshasının yaprak (sheet) ölçüsü nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "29,1 × 43,7 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "29,1 × 43,2 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "29,5 × 44,3 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "29,2 × 43,5 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met: \"Sheet: 11 7/16 x 17 3/16 in. (29.1 x 43.7 cm)\". Ölçüler nüshaya göre değişir (C038).",
+   "yanlis_gerekceleri": {
+    "B": "29,1 × 43,2 cm NGA nüshasının yaprak ölçüsüdür.",
+    "C": "29,5 × 44,3 cm (295 × 443 mm) Uffizi nüshasının ölçüsüdür.",
+    "D": "29,2 × 43,5 cm (292 × 435 mm) Kunsthalle nüshasının Blatt ölçüsüdür."
+   },
+   "kanit": [
+    "C002",
+    "C003",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Kunsthalle kaydının motto çevirisi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Güzellik; erdem, akıl ve zenginlik karşısında üstündür"
+    },
+    {
+     "harf": "B",
+     "metin": "Akıl; güzellik ve zenginlik karşısında üstündür"
+    },
+    {
+     "harf": "C",
+     "metin": "Zenginlik; güzellik ve erdem karşısında üstündür"
+    },
+    {
+     "harf": "D",
+     "metin": "Erdem; güzellik ve akıl karşısında üstündür"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Kunsthalle: \"SORDENT PRAE FORMA / INGENIVM·VIRTVS· / REGNA·AVRVM\" = \"Schönheit siegt über Tugend, Klugheit und Reichtum\".",
+   "yanlis_gerekceleri": {
+    "B": "Üstün olan akıl (ingenium) değil güzelliktir (forma); motto \"SORDENT PRAE FORMA\" der.",
+    "C": "Üstün olan zenginlik (regna/aurum) değil güzelliktir; Kunsthalle çevirisi açıktır.",
+    "D": "Üstün olan erdem (virtus) değil güzelliktir; Kunsthalle çevirisi açıktır."
+   },
+   "kanit": [
+    "C024",
+    "C011"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser, Raffaello'nun tasarımından sonra Marcantonio Raimondi'nin oyduğu bir gravürdür.",
+   "dogru": true,
+   "aciklama": "Doğru: yedi birincil kayıt \"After Raphael\" / \"Dessinateur du modèle\" / \"Designer: Rafaël\" formülleriyle bunu doğrular.",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Orijinal gravürün Bartsch numarası 246'dır.",
+   "dogru": false,
+   "aciklama": "Yanlış: birincil kayıtlar B. XIV.197.245'te birleşir; \"246\" Kunsthalle'nin envanter numarasıdır (Inv. Nr. 246), Commons kategori adı ise karışıklık kaynağıdır.",
+   "kanit": [
+    "C009",
+    "C006"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Raffaello'nun bu kompozisyon için yaptığı ön çizim bugün korunmaktadır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Kunsthalle \"die sich allerdings nicht erhalten hat\", Berlin \"Obwohl dieses Original verloren ist\" der; tasarım kayıptır.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Met nüshası 1919'da Rogers Fund ile edinilmiştir.",
+   "dogru": true,
+   "aciklama": "Doğru: Met Credit Line \"Rogers Fund, 1919\"; provenance Earls Spencer koleksiyonu, satıcı P. & D. Colnaghi & Co.",
+   "kanit": [
+    "C002",
+    "C016"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Birincil kurum kayıtları eserin tarihi için tek bir değer verir.",
+   "dogru": false,
+   "aciklama": "Yanlış: Met \"ca. 1510–20\", NGA \"c. 1510/1520\", Uffizi \"1513-15\", Kunsthalle \"um 1515\", BnF \"1510-1511\", Berlin \"1515-1518 [circa]\", Boijmans \"in circa 1517 - 1520\" — açık ihtilaf.",
+   "kanit": [
+    "C002",
+    "C003",
+    "C005",
+    "C006",
+    "C007",
+    "C008",
+    "C004"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarihleme ihtilafını analiz edin: Vasari'den Mason/Oberhuber'e pozisyonları listeleyin ve Kunsthalle fn6'nın teknik argümanını değerlendirin.",
+   "beklenen_ogeler": [
+    "Vasari/Delaborde 1510-1511",
+    "Shoemaker 1517-1520",
+    "Mason/Oberhuber 1515-1516",
+    "yüksek gelişmiş teknik → erken tarih çürür",
+    "\"um 1515 scheint daher denkbar\" (kesinlik yok)",
+    "Segnatura dengesizlik karşılaştırması"
+   ],
+   "kanit": [
+    "C010",
+    "C026",
+    "C036"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "data müze alanı (Staatsgalerie Stuttgart) ile gösterilen görsel (Met 19.74.1) uyuşmazlığını değerlendirin; insan editör ne yapmalıdır?",
+   "beklenen_ogeler": [
+    "görsel Met DP-18212-001 CC0",
+    "Stuttgart dört sayfa farklı eserler",
+    "A 85.1 yalnız Commons credit + referanssız WD",
+    "birincil kayıt bulunamadı",
+    "müze alanı nüsha bağlamıyla yeniden değerlendirilmeli"
+   ],
+   "kanit": [
+    "C043",
+    "C048",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Pomza + burin tekniğini ve plaka ömrü → Dente Nachstich zincirini açıklayın; nüsha kalitesiyle ilişkisini tartışın.",
+   "beklenen_ogeler": [
+    "Bimsstein/granitura pürüzlendirme",
+    "beyaz alanların cilalanması",
+    "kadifemsi zemin tonu (erken baskılar)",
+    "çeşitli burin → skulpturale Körper",
+    "aşınma → Dente, pürüzlendirme yok",
+    "first state of two"
+   ],
+   "kanit": [
+    "C022",
+    "C013",
+    "C002",
+    "C025"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Mottonun anlamını ve \"güzelliğin zaferi\" programını tanrıçaların çıplaklığıyla ilişkilendirerek tartışın; transkripsiyon varyantlarını değerlendirin.",
+   "beklenen_ogeler": [
+    "SORDENT PRAE FORMA / INGENIVM VIRTVS / REGNA AVRVM",
+    "Kunsthalle çevirisi",
+    "üç tanrıcanın tam çıplaklığı (Raffaello yeniliği)",
+    "PRAE/PAE/PRARE varyantları",
+    "\"S\" ters (seitenverkehrt)"
+   ],
+   "kanit": [
+    "C024",
+    "C011",
+    "C041"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Antik lahit kabartmalarından Manet'ye alımlama zincirini çizin; hangi halkalar birincil kayıtlı, hangileri yorum?",
+   "beklenen_ogeler": [
+    "Villa Medici + Doria Pamphilj",
+    "kayıp desen → Raimondi gravürü",
+    "Dente Nachstich (birincil)",
+    "Penni/Mignon + Bertani/Ghisi (dewiki, atıfsız)",
+    "Ghisi 1555 Boijmans (birincil)",
+    "Behams → Manet 1863 (birincil)"
+   ],
+   "kanit": [
+    "C012",
+    "C013",
+    "C035",
+    "C030",
+    "C021",
+    "C014"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Paris'in altın elmayı Venüs'e uzattığı anı ve çelenkle süzülen Victoria'yı bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Kunsthalle): \"Gerade reicht Paris der Venus den goldenen Apfel und vom Himmel schwebt Victoria heran.\"",
+   "kanit": [
+    "C020",
+    "C032"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sırtı dönük figürü (Minerva) ve orta ekseni (Minerva–Victoria–Sol) belirleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Berlin): \"Eine Mittelachse - aufgebaut aus dem gewundenen Rückenakt der Minerva, der heranschwebenden Victoria und dem Sonnengott Sol.\"",
+   "kanit": [
+    "C021",
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağ alttaki iki ırmak tanrısı ve nymph grubunu bulun; Manet'nin esinlendiği grup budur.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Berlin/Kunsthalle): sağda iki Flußgötter + bir Nymphe; Manet 1863 bu gruptan esinlendi.",
+   "kanit": [
+    "C021",
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Plakanın sol altındaki SORDENT motto bloğunu ve RAPH VRBI INVEN + MAF monogramını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Kunsthalle): motto \"unten links\"; RAPH VRBI INVEN \"unten in der Mitte\"; MAF altında. Konum nüshaya göre değişir (Met: merkeze yakın sol; Berlin: merkezin sağı) — karşılaştırın.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Gök bölgesini inceleyin: solda Sol'un dört atlı arabası (önünde Castor ve Pollux), sağda Aeolus'un taşıdığı Jupiter.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Kunsthalle/Met): \"In der Himmelszone schwebt rechts der vom Windgott Aeolus getragene Jupiter heran, während links davon Kastor und Pollux und der Sonnengott Sol mit dem Pferdespann ihre Bahnen ziehen.\"",
+   "kanit": [
+    "C020",
+    "C032"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Marcantonio Raimondi, Raffaello'nun kayıp tasarımından sonra; bakır gravür; Met \"ca. 1510–20\" (tarih ihtilaflı); Met nüshası 19.74.1, yaprak 29,1 × 43,7 cm; Bartsch XIV.197.245; nüshalar: Met/NGA/Boijmans/Uffizi/Kunsthalle/BnF/Berlin.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + motto?",
+   "arka": "Truva Savaşı'nı başlatan hüküm: Paris Venüs'ü seçer, altın elma, Helena vaadi; motto SORDENT PRAE FORMA: güzellik; erdem, akıl ve zenginlik karşısında üstündür (Kunsthalle çevirisi).",
+   "kanit": [
+    "C019",
+    "C024",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Teknik + plaka ömrü?",
+   "arka": "Pomza (Bimsstein/granitura) pürüzlendirme + beyazların cilası → kadifemsi ton (erken baskılar); çeşitli burin → heykelsi bedenler; büyük talep → plaka aşınması → Marco Dente Nachstich (daha basit teknik).",
+   "kanit": [
+    "C022",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Tarihleme zinciri?",
+   "arka": "Vasari 1510-1511 → Delaborde destekler; Shoemaker 1517-1520; Mason/Oberhuber 1515-1516; Kunsthalle fn6: gelişmiş teknik erken tarihi çürütür, \"um 1515 scheint daher denkbar\".",
+   "kanit": [
+    "C010",
+    "C026"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Etki zinciri?",
+   "arka": "16. yy: Dente Nachstich + tek figür kopyaları + majolika; Berlin: sağ grup Behams \"Jungbrunnen\" → Manet 1863 \"Le Déjeuner sur l'herbe\"; Degas ve Picasso hesaplaşması (Kunsthalle).",
+   "kanit": [
+    "C014",
+    "C031",
+    "C021"
+   ]
+  }
+ ]
+}

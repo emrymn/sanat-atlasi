@@ -1,0 +1,842 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q867403",
+ "sanatci_id": "parmigianino",
+ "baslik": "Uzun Boyunlu Meryem",
+ "ozgun_baslik": "Madonna with the Long Neck (Madonna and Child with Angels / Madonna dal collo lungo)",
+ "kunye": {
+  "sanatci": "Francesco Mazzola, gen. Parmigianino",
+  "sanatci_yasam": "Parma 1503 – Casalmaggiore 1540",
+  "tarih": "1534–1540",
+  "tarih_belirsizlik": "Uffizi 1534–1540; enwiki c.1535–1540; WD P1480 \"circa\" (D005)",
+  "teknik": "Pano üzerine yağlıboya (oil on panel)",
+  "boyut_cm": {
+   "yukseklik": 216.5,
+   "genislik": 132.5
+  },
+  "muze": "Gallerie degli Uffizi, Floransa",
+  "envanter": "Palatina n. 230 (N. Cat. 00287693)",
+  "edinim": "1698 Grand Prince Ferdinando de' Medici (Medici koleksiyonu); 1948'den beri Uffizi",
+  "konum": "D4. Correggio and Parmigianino",
+  "telif_durumu": "Kamu malı (Parmigianino ö.1540, 100+ yıl pma); Commons P18 dosyası Public domain"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Parmigianino_-_Madonna_and_Child_with_Angels,_known_as_the_Madonna_with_the_Long_Neck.jpg",
+  "kaynak": "Wikimedia Commons (Credit: Uffizi)",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata (S10); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "1490×2336 px",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C053); GZ TASLAK; kompozisyon S4 (A) + S3/S9 (B) metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 423
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1325
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2720
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-sınırları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-sipariş-ve-provenance-belge-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-biçimsel-analiz-maniyerist-oran-ve-sanatdan-sanat"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-boyun-sütun-vazo--yorum-ekolleri"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-bitmemişlik-ve-yazıt"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#5-tomarlı-figür-bilmecesi-jeromefrancis--peygamber",
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Uffizi birincil kataloguyla künyeyi (1534–1540, oil on panel, 216.5×132.5, Palatina n. 230, salon D4) doğrular.",
+  "İki birincil kayıt (güncel Uffizi ↔ eski Polo Museale) boyut/siparişveren farkını ve yedi ihtilafı (D) yönetir.",
+  "Maniyerist oran bozumunu, figura serpentinata'yı ve \"sanatdan sanat\" okumasını analiz eder.",
+  "Uyuyan Çocuk/sütun ilahisi/Jerome-Francis ikonografisini ve tomarlı figür ihtilafını (İşaya kaynaklandırılmamış) beyan eder.",
+  "Bitmemişlik + yazıt + provenance belge zincirini ve veri notlarını (yil:1600, fildişi kule, tek sütun) raporlar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Maniyerizm",
+   "tanim": "Yüksek Rönesans doğallığını bilinçle bozan, zarif ve yapay üslup; uzatılmış oranlar.",
+   "kanit": [
+    "C018",
+    "C034"
+   ]
+  },
+  {
+   "ad": "Non-finito",
+   "tanim": "Bitmemişlik; burada ölümle kesilmiş durum, yazıtla gerekçelendirilir.",
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "ad": "Figura serpentinata",
+   "tanim": "Kıvrılan, burgulu figür pozu; Meryem'in oran bozumunda.",
+   "kanit": [
+    "C034"
+   ]
+  },
+  {
+   "ad": "Collum tuum ut columna",
+   "tanim": "\"Boynun bir sütun gibi\" Meryem ilahisi; uzun boyun/sütun göndermesi (olabilir).",
+   "kanit": [
+    "C012",
+    "C030"
+   ]
+  },
+  {
+   "ad": "Altarpiece",
+   "tanim": "Sunak resmi; Santa Maria dei Servi şapeli için sipariş.",
+   "kanit": [
+    "C008",
+    "C010"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Francesco Mazzola, known as Parmigianino (Parma 1503 – Casalmaggiore 1540); Correggio yanında yetişti, Roma'da Michelangelo/Raphael inceledi, Emilia Maniyerizminin önde gelen figürü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Tarih: 1534–1540 (güncel Uffizi; WD P1480=\"circa\" → C050/D005).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik: Oil on panel (pano üzerine yağlıboya).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut: 216.5 × 132.5 cm (güncel Uffizi; → C046/D001).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Konum: The Uffizi, salon \"D4. Correggio and Parmigianino\" (→ C051/D006).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Envanter: Palatina n. 230; ulusal katalog no 00287693; \"Palatina 230 (1912)\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Yazıt: \"FATO PRAEVENTUS F. MAZZOLI PARMENSIS ABSOLVERE NEQUIVIT\" (→ C049/D004).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "1534'te Elena Baiardi Tagliaferri tarafından Parma, Santa Maria dei Servi kilisesi için sipariş edildi (→ C047/D002).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Sözleşmede 5 ayda bitirme taahhüdü; 1540'ta ölümünde altarpiece stüdyoda bitmemişti; Pentecost 1535 teslim hedefi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "1542'de (\"Two years later\") sunağa yerleştirildi; bitmemişliği gerekçelendiren yazıt sütun tabanına eklendi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Uyuyan Çocuk çarmıh ölümünü önceler; meleğin Meryem'e gösterdiği urn'de Crucifixion yansıması vardır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Sütun, Meryem'in büst/boyun esnekliğini vurgular; \"Collum tuum ut columna\" ilahisine gönderme olabilir (S4 \"could also be\"; belirsizlik korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Sağ altta küçük figür = Aziz Jerome, tomarını açarken bitmemiş Aziz Francis figürüne döner (Francis'in yalnızca bir ayağı boyanmış) (→ C048/D003).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "St Francis varlığı, Immaculate Conception dogmasına gönderme olabilir (S4 \"could be\"; kültü Franciscan tarikatı yaydı; belirsizlik korundu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "1698'de Medici koleksiyonuna katıldı; Grand Prince Ferdinando satın aldı; mektuplarında eseri över.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "1674'te Kardinal Leopoldo'nun emisarı Annibale Ranuzzi, Serviti rahiplerinden satın alma görüşmesine başladı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Eski resmî katalog boyutu: 219 × 135 (Altezza per Larghezza) (→ C046/D001).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Müze tanımı: uzatılmış uzuvlar, zarif pozlar, \"subtle eroticism\" (vücuda yapışan drapery, göğse kalkık ince el, öndeki genç meleğin çıplak bacağı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Sözleşme 23 Aralık 1534; 33 scudi peşin; Pentecost 1535'e kadar bitirme, gecikmede ev teminatı (tarih+Pentecost S6'da A).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "1540'ta ani Casalmaggiore yolculuğu, orada ölüm; stüdyo envanterinde 22 tablo, 495 çizim.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "1542 yerleştirme, Ireneo Affò'nun 1784'te aktardığı (bugün kayıp) lapide dayanır; yazıt \"probabilmente\" o sırada eklendi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Vasari 1550 kısa değinme; Dalla Torre 1564 \"non perfectam\" ama \"mirae pulchritudinis et excellentiae\"; 1568 Vite daha geniş; Barri 1671.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "1698 alımı: aracı conte Calvi, Francesco Farnese onayı; Cerati kontlarının itirazı aşıldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "1799 Napolyon yağmasıyla Paris'e götürüldü, 1815'e kadar kaldı; Giovanni degli Alessandri + Pietro Benvenuti geri getirdi (S6 arşiv \">>\" kesik, birincilden doğrulanamadı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Hazırlık çizimleri: Ashmolean (Oxford), Accademia Venezia (n. 378 r/v), Louvre Cabinet des Dessins (n. 6378); British Museum suluboya (n. 1978-3-4-6) \"prima idea\" olabilir (belirsizlik korundu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Çocuk bedeni alışılmadık olgunlukta, \"sui sei anni\" (~6 yaş).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Solda (Meryem'in sağında) altı melek sıkışık; altıncı meleğin başı bitmemiş (sağ dirsek altında); öndeki melek gümüş vazo sunar, içinde crucifix yansıması; Hauser'e göre \"efebi\" okuması da var.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Sütunlar: başlıksız, tabanda çok sayıda (gölgeli), üstte yalnızca biri boyanmış; Süleyman Tapınağı'na gönderme olabilir (S3 \"forse\"; belirsizlik korundu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Tomarlı figür \"forse in qualità di profeta o forse quale San Girolamo\"; ikinci figürün yalnızca bir ayağı boyandı, \"forse era un san Francesco\" (→ C048/D003; belirsizlik korundu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Uzun boyun vurgusu, Ezgiler Ezgisi'nden türetilen \"Collum tuum ut colonna\" Meryem ilahisiyle açıklanır (→ C052/D007).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Elizabeth Cooper: Vitruvius \"De architectura\" oran okuması; Béguin: Pseudo-Bonaventura (Meryem sütuna dayanarak ayakta doğurdu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Fagiolo dell'Arco: tema Immaculate Conception; vazo = \"vas Mariae\"; simyasal \"in vitro\" yorumu (yorum; kaynak metne erişilmedi).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "Gombrich: boyun \"like that of a swan\"; peygamber figürü \"hardly reaches the Madonna's knee\"; \"were perhaps the first 'modern' artists\" (→ C048/D003; belirsizlik korundu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Meryem meleklerin ~2 katı; sağ ayak resim düzleminin ötesine taşar; figura serpentinata; tipik Maniyerist oran bozumu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Smarthistory: 1534–40, 216.5×132.5 cm; sağdaki sütun dizisi derinlikten \"wall or a single column\" gibi görünür, o bölüm bitmemiş; küçük figür \"the prophet in the lower right corner\" (→ C046/D001, C048/D003).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "1948'den beri Uffizi'de sergileniyor (güncel S4'te 1948 geçmez).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S7",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Vito Franco (Palermo Üniv.) modelde Marfan sendromu teşhisi öne sürdü (retrospektif tıbbi hipotez; basın).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C038",
+   "ifade": "Grove: eser 1534'te Parma'da Francesco Tagliaferri'nin funerary chapel'i için başladı (metne erişilemedi — abonelik; → C047/D002).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "\"A depiction of St. Jerome was required by the commissioner...\" (satır içi atıf YOK; S4/S6'da bu gereklilik ifadesi geçmez).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "Restorasyon sonrası: bitmemiş melek yüzü daha görünür; ortadaki melek vazoya bakar (silik haç); vazo tutan melek Antea portresine benzer (paragraf {{cn span}} ATIFSIZ; \"faint image of a cross\" korundu).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "Meryem yüzünde Paola Gonzaga (Fontanellato kontesi) portresi hipotezi (itwiki kuşkulu: \"inspiegato ... eccessivo, per non dire eretico\"; link ölü, metne erişilmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "WD P571 ana değeri yüzyıl hassasiyetinde (+1600, precision 7); 1534–1540 yalnızca P580/P582 niteleyicilerinde, P1480=\"circa\" (repo onbellek yil:1600 buradan).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "itwiki Google Art Project dış linki \"madonna-of-san-zaccaria-129\" slug'ı taşıyor (farklı esere — San Zaccaria — işaret ediyor görünüyor; izlenmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C044",
+   "ifade": "Virtual Uffizi sanatçı PERIOD \"1504-1540\" yazar; güncel Uffizi \"Parma 1503\" (üçüncül kaynakta doğum yılı varyantı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "WD P170 (creator) referansı wordpress blog (beckchris.wordpress.com, etiketsiz); atıf zayıf, ancak sanatçı atfı S4'ten bağımsız olarak A.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "Boyut ihtilafı (D001): güncel Uffizi/Smarthistory 216.5×132.5 ↔ eski katalog/Virtual Uffizi 219×135 ↔ en/it wiki 216×132 ↔ WD melez 219×132.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S7",
+    "S2",
+    "S3",
+    "S1",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C047",
+   "ifade": "Siparişveren ihtilafı (D002): Elena Baiardi Tagliaferri (S4/S6/S3) ↔ Francesco Tagliaferri funerary chapel (enwiki/Grove, erişilemedi) ↔ \"Bajardi\" yazım varyantı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S3",
+    "S2",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C048",
+   "ifade": "Tomarlı figür kimliği ihtilafı (D003): müze Jerome+Francis (A) ↔ akademik/geleneksel \"peygamber\" (Gombrich/Smarthistory B) ↔ itwiki \"forse profeta o forse Girolamo\"; \"İşaya\" adı hiçbir çekilen kaynakta yok (yalnız repo data).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C049",
+   "ifade": "Yazıt spelling ihtilafı (D004): \"F. MAZZOLI PARMENSIS\" (S4) ↔ \"F. MATTOLI PARMENSIS\" (S3).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C050",
+   "ifade": "Tarih aralığı/başlangıç ihtilafı (D005): 1534–1540 (S4/S3/S9) ↔ c.1535–1540 (enwiki) ↔ WD \"circa\"; sözleşme 23.12.1534 (A).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S2",
+    "S3",
+    "S9",
+    "S1",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C051",
+   "ifade": "Salon numarası farkı (D006): \"D4. Correggio and Parmigianino\" (güncel S4/S1) ↔ \"ROOM 29\" (2012 Virtual Uffizi); dönem farkı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C052",
+   "ifade": "Uzun boynun metinsel kaynağı + sütun sayısı (D007): repo data \"fildişi kule\" (Ezgiler Ezgisi) ↔ kaynaklar \"Collum tuum ut columna\" (sütun ilahisi); data \"tek sütun\" ↔ S3/S9 tabanda çok sütun, üstte tek boyanmış.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S3",
+    "S9"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C053",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); Commons P18 dosyası 1490×2336 px, Public domain; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "Erişilemeyen kaynaklar: S5 canlı 522, S8 canlı 403, S11 Grove abonelik; kitaplar (Fossi, DGF, Viola, Gombrich, 100 Masterpieces, Freedberg, Hauser, Fagiolo) kaynakçada anıldı, metne erişilmedi; S6 \"Notizie\" \">>\" kesik (Paris bölümü birincilden doğrulanamadı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S8",
+    "S11",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q867403 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q867403.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Madonna with the Long Neck (wikitext)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Madonna%20with%20the%20Long%20Neck&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Madonna dal collo lungo (wikitext)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Madonna%20dal%20collo%20lungo&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Gallerie degli Uffizi",
+   "belge": "Eser katalog sayfası (en), metin: Monica Alderotti",
+   "url": "https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Polo Museale Fiorentino",
+   "belge": "Scheda N. Cat. 00287693 (canlı)",
+   "url": "http://www.polomuseale.firenze.it/catalogo/scheda.asp?nctn=00287693&value=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "522 (Cloudflare origin timeout); erişilemedi",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Polo Museale Fiorentino → Wayback",
+   "belge": "Scheda 00287693 arşiv kopyası",
+   "url": "http://web.archive.org/web/20250120051432/http://www.polomuseale.firenze.it/catalogo/scheda.asp?nctn=00287693&value=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2025-01-20)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Virtual Uffizi → Wayback",
+   "belge": "Uffizi_Pictures.asp?Contatore=324",
+   "url": "https://web.archive.org/web/20121113211351/http://www.virtualuffizi.com/uffizi1/Uffizi_Pictures.asp?Contatore=324",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2012-11-13); canlı ölü",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S8",
+   "kurum": "Smarthistory",
+   "belge": "Parmigianino, Madonna of the Long Neck (canlı)",
+   "url": "https://smarthistory.org/parmigianino-madonna-of-the-long-neck/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (bot koruması); engellendi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Smarthistory → Wayback",
+   "belge": "Madonna with the Long Neck (Zucker & Harris, 2015-11-28)",
+   "url": "http://web.archive.org/web/20251130043203/https://smarthistory.org/parmigianino-madonna-of-the-long-neck/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2025-11-30)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "P18 dosyası imageinfo (url|size|extmetadata)",
+   "url": "https://commons.wikimedia.org/wiki/File:Parmigianino_-_Madonna_and_Child_with_Angels,_known_as_the_Madonna_with_the_Long_Neck.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "Grove Art Online (OUP)",
+   "belge": "Ekserdjian, Parmigianino [Mazzola...] DOI",
+   "url": "https://doi.org/10.1093/gao/9781884446054.article.T065539",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "302 → OUP abonelik duvarı; curl exit 47; erişilemedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wikidata API",
+   "belge": "wbgetentities etiket çözümlemesi",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q867403&props=labels%7Cdescriptions",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Pietà",
+   "sanatci": "Michelangelo",
+   "kurum": "Vatikan (St. Peter's)",
+   "mufredat_ici": false,
+   "gerekce": "Uyuyan/ölü İsa pozu ve anne kucağı; Çocuğun gevşek bedeni Pietà'yı önceler (Smarthistory).",
+   "kanit": [
+    "C035",
+    "C011"
+   ]
+  },
+  {
+   "eser": "Jüpiter ve Io",
+   "sanatci": "Correggio",
+   "kurum": "Kunsthistorisches Museum, Viyana",
+   "envanter": "GG_274",
+   "mufredat_ici": true,
+   "gerekce": "Hoca-öğrenci (Parmigianino Correggio yanında yetişti); Emilia okulu duyusallığı.",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "eser": "Bir Alegori (Venüs, Aşk Tanrısı, Zaman ve Akılsızlık)",
+   "sanatci": "Agnolo Bronzino",
+   "kurum": "National Gallery, Londra",
+   "mufredat_ici": true,
+   "gerekce": "Maniyerist zarafet/erotizm karşıtlığı; \"subtle eroticism\" ortak dili.",
+   "kanit": [
+    "C018",
+    "C034"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Uffizi birincil (S4, 200) + Polo Museale Wayback 2025-01-20 (S6) + Smarthistory Wayback 2025-11-30 (S9) yeniden açıldı; künye/sipariş/bitmemişlik/ikonografi/provenance doğrulandı. en/it wikitext (S2/S3) yeniden okundu; yedi ihtilaf D olarak açık (boyut, siparişveren, tomarlı figür, yazıt, tarih, salon, boyun imgesi). \"İşaya\" adı hiçbir çekilen kaynakta yok (yalnız repo data). Görsel S10 metadata only, vision kotası ana oturumda → İNCELENEMEDİ (C053); GZ TASLAK. Kitap metinleri + Grove (S11) erişilemedi (C054); S6 Paris bölümü \">>\" kesik.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "eserler_onbellek.json yil:1600 — WD P571 yüzyıl-hassasiyetli ham ana değer (+1600/7); gerçek aralık 1534–1540 (\"circa\"). basyapitlar.json \"1534–1540\" ile iç çelişki. (C042/D005)",
+  "eserler_onbellek.json gorseller[0].l:\"\" — lisans boş; Commons Public domain doğruladı. kaynaklar:[\"wikidata\"], birincil müze kaydı eklenmemiş. (C053)",
+  "Tomarlı figür \"İşaya mı, Aziz Hieronymus mu\" (basyapitlar/eser_ayrintilari) — S4 \"St Jerome + St Francis\" der; \"peygamber\" okuması B ama \"İşaya\" hiçbir çekilen kaynakta yok, kaynaklandırılmamış. (C048/D003)",
+  "Uzun boyun \"boynun fildişi kule gibi\" (data) — kaynaklar \"Collum tuum ut columna\" (sütun ilahisi) veriyor; farklı imgeler. (C052/D007)",
+  "\"yalnızca tek bir sütun yükselir\" (data) — S3/S9 tabanda çok sütun (gölgeli), üstte tek boyanmış; \"tek sütun\" diziyi atlıyor. (C052/D007)",
+  "eser_adlari_tr.json \"Uzun Boyunlu Madonna\" vs basyapitlar.json \"Uzun Boyunlu Meryem\" — iç adlandırma tutarsızlığı (WD tr \"Uzun Boyunlu Meryem\").",
+  "Görsel İNCELENEMEDİ (C053); GZ TASLAK; insan editör görsel teyidi zorunlu. Hiçbir data dosyasına yazılmadı."
+ ]
+}

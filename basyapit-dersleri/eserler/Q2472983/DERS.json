@@ -1,0 +1,759 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2472983",
+ "sanatci_id": "tintoretto",
+ "baslik": "Son Akşam Yemeği",
+ "ozgun_baslik": "Ultima cena (The Last Supper)",
+ "kunye": {
+  "sanatci": "Jacopo Robusti, detto Tintoretto",
+  "sanatci_yasam": "1518/1519–1594 (doğum belirsiz; ICCD \"1518/ 1594\")",
+  "tarih": "1592–1594 (itwiki \"intorno al\"; data/Wikidata 1563 — tartışma)",
+  "tarih_belirsizlik": "D1/C035: data/WD 1563 (Zeri 44056 + Guida 2019 s.88, erişilemedi) ↔ WGA/wiki/Commons 1592–94; ICCD \"Una delle ultime opere (1594)\"; çözülmedi",
+  "teknik": "Tuval üzerine yağlıboya (tela/pittura a olio)",
+  "boyut_cm": {
+   "yukseklik": 365,
+   "genislik": 568
+  },
+  "muze": "Basilica di San Giorgio Maggiore, Venedik",
+  "envanter": "ICCD 0500123375",
+  "edinim": "proprietà Ente religioso cattolico (ICCD); 1590 sonrası San Giorgio atölye siparişleri, 1592 şapel (WGA)",
+  "konum": "Presbiterio sağ duvarı (WGA/FU Berlin); data \"ana sunağının arkası\" der (tartışma, C036)",
+  "telif_durumu": "Kamu malı (Tintoretto ö.1594; PD-art + PD-old-100-expired); Commons PD; ICCD metadata CC-BY 4.0"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Jacopo_Tintoretto_-_The_Last_Supper_-_WGA22649.jpg",
+  "kaynak": "Wikimedia Commons (Web Gallery of Art, WGA22649)",
+  "lisans": "Public domain (PD-art + PD-old-100-expired)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (imageinfo); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "1337×850 px, 771.329 bayt",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C041); GZ TASLAK; kompozisyon K5/K6/K7 metninden; ICCD canlı 403, arşiv 2025-01-20; orijinal upload.wikimedia.org/wikipedia/commons/4/46/Jacopo_Tintoretto_-_The_Last_Supper_-_WGA22649.jpg"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 420
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1303
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2633
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kaydın-sınırları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ihtilafı-1563--15921594"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-modeller-ve-öncülük-yorum"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-ışık-düzeni-üç-mertebe-ve-diyagonal"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-efkaristiya-manna-ve-reddeden-adam"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-eskizden-bitmiş-sahneye"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "ICCD birincil kataloguyla künyeyi (Ultima cena, Robusti detto Tintoretto, tela/pittura a olio, 0500123375, San Giorgio Maggiore) doğrular.",
+  "1563 ↔ 1592–94 tarih ihtilafını ve 1563'ün erişilemeyen dayanaklarını (Zeri/Guida) yönetir; kesin yıl dayatmaz.",
+  "Oblik masa + iki/üç ışık düzenini ve presbiterio yerleşiminin perspektif mantığını analiz eder.",
+  "Efkaristiya'nın kurulması + manna tipolojisini (Ivanoff okuması) ikonografik olarak açıklar.",
+  "Otografi, duman/ışık ve Yahuda teşhisi ihtilaflarını beyan eder; görsel incelenmediği için GZ TASLAK sınırını uygular."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Efkaristiya",
+   "tanim": "Ekmek ve şarabın İsa'nın bedeni/kanı olarak sunulduğu ayin; sahnenin konusu (ihanetin ilanı değil).",
+   "kanit": [
+    "C011",
+    "C028"
+   ]
+  },
+  {
+   "ad": "Transubstantiation",
+   "tanim": "Ekmek/şarabın özde bedene/kana dönüşmesi; Trento 1551 dekreti; \"görünmez lütfun görünür biçimi\".",
+   "kanit": [
+    "C011",
+    "C028"
+   ]
+  },
+  {
+   "ad": "Presbiterio",
+   "tanim": "Kilisenin sunak bölümü; tuval sağ duvarda, masa ana sunağın perspektif uzantısı.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "Tipoloji (typos)",
+   "tanim": "Eski Ahit sahnesinin Yeni Ahit öncülü olarak okunması; manna ↔ Efkaristiya; reddetme ↔ kabul.",
+   "kanit": [
+    "C014",
+    "C032"
+   ]
+  },
+  {
+   "ad": "Luminismo",
+   "tanim": "ICCD'nin ışık etkisi terimi; kandil + İsa'nın haresi; FU Berlin üç mertebeye genişletir.",
+   "kanit": [
+    "C009",
+    "C026"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eserin adı \"Ultima cena\" (ICCD) / Last Supper / Son Akşam Yemeği.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Jacopo Robusti, detto Tintoretto (ICCD \"1518/ 1594\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik: tuval üzerine yağlıboya (tela/ pittura a olio).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K6",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut: 365 × 568 cm (yükseklik × genişlik); erişilen tüm kaynaklar uyumlu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6",
+    "K2",
+    "K3",
+    "K8",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Tarih: 1592–1594, son dönem eseri; itwiki \"realizzato intorno al 1592-1594\" (civarı belirsizliği korundu); ICCD \"Una delle ultime opere di Jacopo Tintoretto (1594)\" (kesin yıl vermez).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6",
+    "K3",
+    "K8",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Konum: Basilica di San Giorgio Maggiore, Isola di San Giorgio Maggiore, Venedik (VE).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Kilise içi yerleşim: presbiterio'nun sağ duvarı; masa ana sunağın perspektif uzantısı (WGA); masa sunak ekseninin ideel uzantısında + izleyicinin oblik görüşü (FU Berlin).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Masa sert bir oblik/diyagonal düzen çizer (ICCD \"posizione obliqua della tavola\"; Leonardo'nun cepheden kurgusundan kopuş).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K6",
+    "K2",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "İki ışık kaynağı: tavandan sarkan yağ kandili + İsa'nın haresi (ICCD \"luminismo determinato dalla lampada e dall'aureola del Cristo\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K2",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Melekler salt ışıktan, yarı saydam varlıklar (ICCD \"entità puramente luminose e trasparenti\"; FU Berlin hızlı eskiz, alt tabakayı gösteren ince boya).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K7",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Sahne ihanetin ilanını değil Efkaristiya'nın kurulmasını (transubstantiation) gösterir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6",
+    "K7",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Karşı Reform idealleriyle uyumlu didaktik işlev: enwiki Gardner alıntısı (Vol. II, 13th ed., s.494 — kitaba erişilmedi, zincir notuyla B); FU Berlin Trento 1551 dekreti bağlamını bağımsız verir; Stoichita görüşü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Gündelik figürler (hizmetkârlar, kadınlar) ve hayvanlar (köpek, kedi) kutsal sahneyle aynı mekânda; ICCD Comparse/Animali/Oggetti listeleri; itwiki \"taverna veneziana\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "San Giorgio Efkaristiya döngüsünün parçası; karşı duvar \"Gli Ebrei che Rifiutano la Manna nel Deserto\"; cantorie ilişkisi; LaRossi (1981) Ivanoff'u (1975) izler (metne erişilmedi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Ivanoff okuması (ICCD aktarımı): sağ ön plandaki adam, kadının kupada sunduğu manayı reddeder; Eski/Yeni Ahit paralelliği.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Kilise 1566–1600 Palladio tasarımı; 1590 sonrası atölyeye büyük tuval siparişleri; 1592'de kutsanan şapelde üç tuval: The Jews in the Desert, The Last Supper, The Entombment.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "OTOGRAFİ İHTİLAFI (D3): WGA \"certainly painted by Tintoretto himself\" ↔ ICCD \"Alcuni Autori Sostengono La Tesi Di Un Largo Intervento Diaiuti\" [sic; hangi yazarlar belirsiz, E2 korundu].",
+   "seviye": "D",
+   "kaynak_id": [
+    "K6",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C018",
+   "ifade": "Kompozisyon modeli Giulio Romano Passover duvar halısı; titrek kandil detayı Titian Crowning with Thorns (Alte Pinakothek, Münih; ustanın mirasından edinilmiş).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Önceki Last Supper'lar: San Marcuola 1547, San Felice 1559, cepheden (enwiki atıfsız; E9).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C020",
+   "ifade": "Lucca (San Martino) versiyonu bu eserden türer; \"probabilmente completata dal figlio\" (itwiki atıfsız; E4 korundu).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C021",
+   "ifade": "Masada \"mumlu kek\" benzeri nesne; \"non si è riusciti a capirne il significato\" (itwiki atıfsız; E3); Amalteo 1574 (Castello di Udine) emsali.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C022",
+   "ifade": "Data Yahuda teşhisi (\"genellikle Yahuda olarak yorumlanır\") erişilen hiçbir kaynakta (K2/K3/K5/K6/K7) yok (E5).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C023",
+   "ifade": "Origenes/Neoplatonik ışık okuması AÇIKÇA hipotez (\"im Bewusstsein, uns auf dem Boden des Hypothetischen zu befinden\", E6); Stoichita (Kritische Berichte 4/2002) yalnız anılıyor, erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C024",
+   "ifade": "Mülkiyet proprietà Ente religioso cattolico; kataloglama/tutela Soprintendenza Venezia; CODICE 0500123375; derleme 1990, güncelleme 2002/2006; metadata CC-BY 4.0; scheda'da açık kronoloji alanı yok.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "ICCD fiziksel betim: dikdörtgen format, yaldızlı çerçeve (\"Dipinto di formato rettangolare entro cornice dorata\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "FU Berlin üç ışık düzeni: kandil (dünyevi), haleler (kutsal), ışık-melekler (ruhsal); hizmetkârlar \"rilievo\" ile plastik; ışık bölgeleri \"Bilddiagonale von links oben nach rechts unten\"; itwiki üç luminosité düzeyiyle örtüşür.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "FU Berlin teknik: disegno'nun idealist önceliği (Sebastiano del Piombo/Michelangelo); Tintoretto'da eskiz darbeleri bitmiş resme girer; şeffaf yağ katmanları, koyu zemin; mesafe etkisi (yakında eskiz/uzakta bitmiş); atmosferik olgular hayaletimsi varlıklara dönüşür.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "FU Berlin bağlam: Trento Konsili (1545–1563); 11 Ekim 1551, 13. oturum Efkaristiya dekreti (Julius III); transubstantiation; Realpräsenz; sakrament \"görünmez lütfun görünür biçimi\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "FU Berlin: Lomazzo Trattato 1585 iki ışık geleneğini birleştirir (Aristotelesçi temsil ortamı + Neoplatonik ışık metaphysik); Tintoretto'nun kuramsal bağlılığı az bilinir (\"Leider weiß man wenig...\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Takma ad: babasının mesleği \"il tintore\" (boyacı) → Tintoretto (FU Berlin).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "WGA \"fest of the poors\": İsa havari kalabalığına karışır; küçük yan masada litürjik kaplar; İsa'nın rahip duruşu sunak bağlantısını pekiştirir; doğaüstü kanatlı figürler baş çevresindeki ışıkla belirir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Manna sahnesi Son Akşam Yemeği'nin tipolojik öncülü (typos/Präfiguration); sunağın diğer tarafında (FU Berlin; ICCD döngü kaydıyla uyumlu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Görsel kamu malı: PD-art + PD-old-100-expired (Tintoretto ö.1594; 100+ yıl pma); AttributionRequired=false; Commons 1337×850; Wikidata P6216=public domain.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K8",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Eser Leonardo gibi önceki ressamların aynı konu betimlerinden \"vizyonel\" karakteriyle ayrılır (WGA); Maniyerist asimetri + gündelik vurgu Barok'a işaret (enwiki).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "TARİH İHTİLAFI (D1): data/WD 1563 (precision 9; ref Zeri 44056 + Guida 2019 s.88, erişilemedi) ↔ WGA/wiki/Commons 1592–94 + ICCD \"Una delle ultime opere (1594)\"; data içi çelişki (ozet 1592–1594); ICCD kronoloji alanı yok; SIGEC PDF erişilemedi; ÇÖZÜLMEDİ.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K11",
+    "K1",
+    "K6",
+    "K3",
+    "K8",
+    "K5",
+    "K10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "YERLEŞİM İHTİLAFI (D2): data \"ana sunağının arkası\" ↔ WGA \"right wall of the presbytery\" + FU Berlin sunak ekseninin ideel uzantısı; data ozet \"yan duvarında\"; \"arkası\" desteklenmiyor.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K11",
+    "K6",
+    "K7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "ARACI MADDE İHTİLAFI (D4): data \"duman→melek\" ↔ FU Berlin/ICCD/itwiki \"ışık→melek\"; FU Berlin kandili \"Rauchgefäß\" anar ama dönüşüm ortamı ışık/ateş; data formülasyonu erişilen kaynaklarda birebir yok; görsel teyit yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K11",
+    "K7",
+    "K5",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "Doğum yılı belirsizliği (E7): Wikidata \"1518/1519–1594\"; ICCD \"1518/ 1594\"; WGA \"b. 1518\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K5",
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "1563 dayanakları erişilemedi (E8): Zeri 44056 (URL yok); Guida 2019 s.88 (kitap); SIGEC PDF (arşiv 404, canlı HTTP 000); ICCD canlı 403 (Anubis).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K10",
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "Scheda güncelliği sınırlı (E10): derleme 1990, güncelleme 2002/2006; canlı katalog 403 olduğundan daha yeni güncelleme bilinmiyor.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız metadata + lisans + çözünürlük; GZ TASLAK; kompozisyon kaynak metinlerinden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "İkincil literatür metinleri erişilmedi: Gardner, Ivanoff 1975/LaRossi 1981, Stoichita (Kritische Berichte 4/2002), Lies 1985, Lomazzo Trattato 1585; kaynakçada anıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K2",
+    "K5",
+    "K7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "Yorum: ışık hiyerarşisi ontolojik bir merdiven olarak okunabilir (Tanrı'nın görünmez ışığı → İsa'nın haresi → meleklerin ışık-bedenleri → insanların opak bedenleri); olgu değil yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C044",
+   "ifade": "Yorum: gündelik ile kutsalın aynı mekânda buluşması \"kutsalın sıradan hayata inişi\" olarak okunabilir; WGA \"fest of the poors\" bunu destekler.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K6",
+    "K7",
+    "K3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C045",
+   "ifade": "Yorum: eser \"görünmez olanı görünür kılma\" paradoksunu deneyimletir; ışık varlıkları hem belirir hem maddesiz kalır; izleyici yakınlık/uzaklıkla değişen belirişi estetik olarak tamamlar.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K7"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Wikidata",
+   "belge": "Q2472983 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2472983.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K2",
+   "kurum": "Wikipedia (en)",
+   "belge": "Last Supper (Tintoretto) wikitext",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Last%20Supper%20(Tintoretto)&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (tek ref Gardner)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikipedia (it)",
+   "belge": "Ultima Cena (Tintoretto) wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Ultima%20Cena%20(Tintoretto)&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (satır içi atıf YOK)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikipedia (it)",
+   "belge": "render edilmiş HTML (Collegamenti esterni; ICCD URL kaynağı)",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Ultima%20Cena%20(Tintoretto)&prop=text&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K5",
+   "kurum": "Ministero della Cultura / ICCD",
+   "belge": "Scheda 0500123375 \"ultima cena\" (BİRİNCİL)",
+   "url": "https://web.archive.org/web/20250120105358/https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/0500123375",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (Anubis v1.28.1); arşiv 200 (snapshot 2025-01-20)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Web Gallery of Art",
+   "belge": "Tintoretto, The Last Supper, 1592-94",
+   "url": "https://www.wga.hu/html/t/tintoret/5_1580s/3lastsup.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K7",
+   "kurum": "Freie Universität Berlin — fundiert 01/2003",
+   "belge": "Bohlmann/Fink/Weiß, Das Unsichtbare sichtbar machen — Die Lichtgeister des Jacopo Tintoretto",
+   "url": "https://www.fu-berlin.de/presse/publikationen/fundiert/archiv/2003_01/03_01_bohlmann_fink_weiss/index.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K8",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Jacopo Tintoretto - The Last Supper - WGA22649.jpg (imageinfo)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:Jacopo%20Tintoretto%20-%20The%20Last%20Supper%20-%20WGA22649.jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K9",
+   "kurum": "Internet Archive",
+   "belge": "Wayback CDX (ICCD snapshot sorgusu)",
+   "url": "http://web.archive.org/cdx/search/cdx?url=catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/0500123375&output=json&limit=30",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (availability API timeout)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K10",
+   "kurum": "ICCD / SIGEC",
+   "belge": "Tam scheda PDF (ICCD2814578) + RDF (ArCo)",
+   "url": "https://sigecweb.beniculturali.it/sigec/item/print/ICCD2814578",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 404; canlı HTTP 000 (60 sn zaman aşımı) — ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "K11",
+   "kurum": "Yerel repo (salt-okunur)",
+   "belge": "data/basyapitlar.json, eserler_onbellek.json, eser_ayrintilari.json, ders_kaynaklari.json, ikonografi.json",
+   "url": "(yerel)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel okuma (doğrulama nesnesi)",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Son Akşam Yemeği",
+   "sanatci": "Leonardo da Vinci",
+   "kurum": "Santa Maria delle Grazie, Milano",
+   "mufredat_ici": true,
+   "gerekce": "Cepheden simetri/ilan ↔ oblik asimetri/Efkaristiya; aynı konunun iki teolojik-anlatısal seçimi.",
+   "kanit": [
+    "C034",
+    "C011"
+   ]
+  },
+  {
+   "eser": "Gli Ebrei che Rifiutano la Manna nel Deserto",
+   "sanatci": "Tintoretto",
+   "kurum": "San Giorgio Maggiore, Venedik (karşı duvar)",
+   "gerekce": "Tipolojik eş; reddetme ↔ kabul; Ivanoff paralelliği.",
+   "kanit": [
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "eser": "Crowning with Thorns",
+   "sanatci": "Titian",
+   "kurum": "Alte Pinakothek, Münih",
+   "gerekce": "WGA: titrek kandil detayının modeli; Tintoretto ustanın mirasından edinmişti.",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "ICCD birincil (K5) Wayback 2025-01-20 arşivinden yeniden açıldı; künye/atıf/teknik/konum/mülkiyet/ikonografi (Ivanoff, döngü, karşı duvar) doğrulandı; kronoloji alanı yok. WGA (K6) + FU Berlin (K7) + en/it wikitext (K2/K3) + Wikidata (K1) + Commons (K8) ham cache'lerden yeniden okundu; 1592–94 majority, 1563 dayanakları erişilemedi (C039). Dört ihtilaf D (C017/C035/C036/C037) açık. Görsel K8 metadata only, vision kotası ana oturumda → İNCELENEMEDİ (C041); GZ TASLAK. SIGEC PDF (K10) erişilemedi; ikincil literatür (Gardner/Ivanoff/LaRossi/Stoichita/Lies/Lomazzo) metinleri erişilmedi (C042).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih (D1, C035): data \"1563\" ↔ ozet \"(1592–1594)\"; önbellek yil 1563 → WD P571=1563 (Zeri 44056 + Guida 2019 s.88, erişilemedi). Ders 1592–94 majority + 1563 D beyanı; data düzeltmesi onaya sunulur.",
+  "Yerleşim (D2, C036): data \"ana sunağının arkası\" ↔ ozet \"yan duvarında\" ↔ WGA \"right wall of the presbytery\"; \"arkası\" desteklenmiyor.",
+  "Duman/ışık (D4, C037): data \"duman→melek\" ↔ kaynaklar \"ışık→melek\"; görsel teyit gerekli.",
+  "Yahuda teşhisi (E5, C022): data \"Anlam ve semboller\" teşhisi erişilen kaynaklarda yok; kesin bilgi olarak kullanılmadı.",
+  "İkonografik okuma farkı: data \"tabak taşıyan kadın\" ↔ ICCD Ivanoff okuması (kupada manna sunumu + reddeden adam, C015); \"sepet ve hayvan\" ICCD Ceste/Cane/Gatto ile uyumlu.",
+  "Masa yönü: data \"sol alt→sağ üst\" ↔ FU Berlin ışık diyagonali \"sol üst→sağ alt\"; farklı eksenler olabilir; görsel incelenmediğinden yön dayatılmaz (C008).",
+  "Otomatik bayrak: ders_kaynaklari.json iki kayıt \"durum\":\"yanlis\" + not \"dinî yemek sahnesi; çıplak figür, mitoloji ya da şölen yok\" (olduğu gibi raporlandı).",
+  "Görsel/lisans: data \"Public domain\" + WGA22649.jpg Commons ile uyumlu (C033); ikonografi.json Q2472983→tintoretto uyumlu.",
+  "Görsel İNCELENEMEDİ (C041); GZ TASLAK; insan editör görsel teyidi zorunlu."
+ ]
+}

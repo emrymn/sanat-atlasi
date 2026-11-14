@@ -1,0 +1,563 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1863885",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Galleria degli Uffizi, Floransa"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Museo del Prado, Madrid"
+    },
+    {
+     "harf": "D",
+     "metin": "Vatikan Müzeleri"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Birincil Uffizi kaydı (K1) ve arşiv katalog (K2) eseri Uffizi'de, inv. 1890 n. 2151 ile kaydeder.",
+   "yanlis_gerekceleri": {
+    "B": "Louvre Paris'tedir; oysa birincil kayıt eseri Floransa Uffizi'de gösterir (C001).",
+    "C": "Prado Madrid'dedir; eser Uffizi koleksiyonundadır (C001).",
+    "D": "Vatikan Müzeleri farklı kurumdur; eser Uffizi'dedir (C009)."
+   },
+   "kanit": [
+    "C001",
+    "C009"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1890 n. 2151"
+    },
+    {
+     "harf": "B",
+     "metin": "00099571"
+    },
+    {
+     "harf": "C",
+     "metin": "14610F"
+    },
+    {
+     "harf": "D",
+     "metin": "SBAS FI 5549"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: envanter \"1890 n. 2151\" (inv. 1890, 2151, 1890 post).",
+   "yanlis_gerekceleri": {
+    "B": "00099571 genel katalog numarasıdır (N. Cat.), envanter değil (C008).",
+    "C": "14610F, Salviati'nin Rebecca eskizinin Uffizi çizim kabinesi numarasıdır (C025).",
+    "D": "SBAS FI 5549, katalog scheda'daki siyah-beyaz fotoğraf arşiv numarasıdır (K2)."
+   },
+   "kanit": [
+    "C007",
+    "C008",
+    "C025"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Teknik nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1 \"Oil on canvas\"; K5 \"olio su tela\"; tüm kaynaklar uyumlu (C005).",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar resmidir; oysa eser taşınabilir bir tuvaldir, Fransa'ya gönderilip geri dönmüştür (C010).",
+    "C": "Pano/tempera değil; kaynaklar \"olio su tela\" der; tuval destek Natali hipotezinde de kritiktir (C016).",
+    "D": "Mozaik tekniği hiçbir kaynakta geçmez; eser yağlıboya tuvaldir (C005)."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Sahnenin biblik kaynağı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Çıkış (Exodus) 2:16–22 — Yitro'nun kızlarının kuyu başında savunulması"
+    },
+    {
+     "harf": "B",
+     "metin": "Yaratılış (Genesis) — kuyu başında buluşma"
+    },
+    {
+     "harf": "C",
+     "metin": "Ovidius Metamorphoses — mitolojik dönüşüm"
+    },
+    {
+     "harf": "D",
+     "metin": "Filone Vita di Mosè — birincil konu kaynağı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Konu Çıkış kitabından: Yitro'nun yedi kızı, çoban tacizi, Musa'nın müdahalesi, ödül Zipporah (C018). enwiki 2:16–22, itwiki \"I, 16-22\" yazar (notasyon farkı C040'ta not edildi).",
+   "yanlis_gerekceleri": {
+    "B": "Genesis'te kuyu başında buluşma (Rebekka) vardır ama bu eserin konusu Exodus'tur (C018).",
+    "C": "Ovid mitolojik bir kaynaktır; bu eser biblik bir sahnedir (C018).",
+    "D": "Filone'nin Vita di Mosè'si hümanist çevrelerde dolaşan bir yorum geleneğidir; sahnenin biblik kaynağı Exodus'tur (C021, C018)."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Uffizi'nin \"most accredited interpretation\"ına göre öndeki yarı çıplak Herkülvari figür kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Musa"
+    },
+    {
+     "harf": "B",
+     "metin": "Yitro"
+    },
+    {
+     "harf": "C",
+     "metin": "Mısırlı bir çoban"
+    },
+    {
+     "harf": "D",
+     "metin": "Midyanlı rahip"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Uffizi \"most accredited interpretation\" öndeki yarı çıplak Herkülvari figürü açıkça Musa olarak tanımlar (C019).",
+   "yanlis_gerekceleri": {
+    "B": "Yitro kızların babasıdır; sahnede boğuşan figür Musa'dır (C018, C019).",
+    "C": "Çobanlar yenilip yerde yatan figürlerdir; boğuşan kahraman Musa'dır (C019).",
+    "D": "Midyanlı rahip Yitro'dur; öndeki figür Musa olarak tanımlanır (C019)."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "1523 circa tarihlendirme neye dayanır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "San Lorenzo'daki Sposalizio della Vergine ile stil/renk yakınlığı"
+    },
+    {
+     "harf": "B",
+     "metin": "Vasari'nin kesin yıl kaydı"
+    },
+    {
+     "harf": "C",
+     "metin": "1995 reflektografileri"
+    },
+    {
+     "harf": "D",
+     "metin": "Bandini sipariş kontratı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Arşiv katalog: \"La datazione al 1523 circa è suggerita dalla vicinanza stilistica con lo Sposalizio della Vergine\" (C014).",
+   "yanlis_gerekceleri": {
+    "B": "Vasari yıl vermez; eseri anlatır ve Fransa'ya gönderildiğine \"inandığını\" söyler (C013).",
+    "C": "1995 reflektografileri alt çizim/kopya tartışmasıyla ilgilidir, tarihlendirmeyle değil (C016).",
+    "D": "Sipariş Bandini'ye atfedilir (\"It is thought\") ama erişilen kaynaklarda kontrat tarihi yoktur (C010, C044)."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Natali hipotezine göre (arşiv katalogda kayıtlı) Uffizi tuvali nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fransa'da satın alınmış bir Rosso orijinalinin \"copia fedelissima e coeva\"sı"
+    },
+    {
+     "harf": "B",
+     "metin": "19. yüzyıl sahtesi"
+    },
+    {
+     "harf": "C",
+     "metin": "Pontormo'nun atölye replikası"
+    },
+    {
+     "harf": "D",
+     "metin": "Bitmemiş bir orijinal"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Arşiv katalog kritik notu: \"A. Natali ritiene che il dipinto sia copia fedelissima e coeva di un originale di Rosso acquistato in Francia\" (C016).",
+   "yanlis_gerekceleri": {
+    "B": "19. yüzyıl sahtesi iddiası hiçbir kaynakta yoktur; Natali çağdaş (coeva) kopya der (C016).",
+    "C": "Pontormo replikası iddiası kaynaklarda yoktur; Pontormo yalnız atölye arkadaşıdır (C041).",
+    "D": "Bitmemiş alanlar Marchetti'nin ayrı bir olasılığıdır; Natali'nin hipotezi sadık çağdaş kopyadır (C024, C016)."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Uffizi metninde bedenlerin dolanmışlığı hangi kayıp eserle karşılaştırılır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Michelangelo'nun Battaglia di Cascina kartonu"
+    },
+    {
+     "harf": "B",
+     "metin": "Leonardo'nun Battaglia di Anghiari'si"
+    },
+    {
+     "harf": "C",
+     "metin": "Masaccio'nun kayıp freski"
+    },
+    {
+     "harf": "D",
+     "metin": "Raphael'in halı kartonu"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Uffizi metni bedenlerin Cascina kartonundaki \"tangle of soldiers\"ı andırdığını söyler (C017). Anghiari wiki/Marchetti zincirinden gelir, Uffizi metninde yoktur.",
+   "yanlis_gerekceleri": {
+    "B": "Anghiari, enwiki/itwiki'de (Marchetti) ifade gücü kaynağı olarak eklenir; ama soru Uffizi metnini sorar, Uffizi yalnız Cascina'yı anar (C017).",
+    "C": "Masaccio freski kaynaklarda geçmez (C017).",
+    "D": "Raphael halı kartonu kaynaklarda geçmez (C017)."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Pendant \"Rebecca al pozzo\" hakkında Natali ne der?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Rosso'dan kopya, Lappoli'ye atfedilen eser (Pisa Palazzo Reale)"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi'de bir Rosso orijinali"
+    },
+    {
+     "harf": "C",
+     "metin": "Salviati'nin orijinali"
+    },
+    {
+     "harf": "D",
+     "metin": "Bronzino'nun kopyası"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Natali: pendant \"quasi certamente copia da Rosso attribuita a Giovanni Antonio Lappoli\", Pisa Palazzo Reale (C025).",
+   "yanlis_gerekceleri": {
+    "B": "Pendant Uffizi'de değil Pisa'dadır ve orijinal değil \"quasi certamente\" kopyadır (C025).",
+    "C": "Salviati pendant'ı değil, onun ön eskizini yapmıştır (Uffizi 14610F) (C025).",
+    "D": "Bronzino, öndeki figürden etkilenen sanatçıdır; pendant'ın kopyacısı değil (C026, C025)."
+   },
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "1568–1588'de Floransa'ya dönen tuval kimin koleksiyonuna girdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Don Antonio de' Medici"
+    },
+    {
+     "harf": "B",
+     "metin": "Cosimo I de' Medici"
+    },
+    {
+     "harf": "C",
+     "metin": "Lorenzo de' Medici"
+    },
+    {
+     "harf": "D",
+     "metin": "Giovanni Bandini"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Uffizi: 1568–1588'de Floransa'ya dönen tuval, Francesco I + Bianca Cappello'nun oğlu Don Antonio de' Medici'nin koleksiyonuna girdi (C010).",
+   "yanlis_gerekceleri": {
+    "B": "Cosimo I kaynaklarda bu eserin sahibi olarak geçmez; koleksiyon Don Antonio'nundur (C010).",
+    "C": "Lorenzo de' Medici kaynaklarda geçmez (C010).",
+    "D": "Bandini (varsayılan) siparişçidir; eserin Floransa'ya dönüşündeki koleksiyoncu değil (C010)."
+   },
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser tuval üzerine yağlıboyadır.",
+   "dogru": true,
+   "aciklama": "Doğru: K1 \"Oil on canvas\", K5 \"olio su tela\" (C005).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Canlı Uffizi kaydı ile 2022 arşiv katalog aynı tarih aralığını verir.",
+   "dogru": false,
+   "aciklama": "Yanlış: canlı \"1523 - 1527\", arşiv \"1523 circa\"; tarih ihtilaflıdır (C033).",
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser Uffizi'ye 1632'de girmiştir (wiki/Fossi zinciri).",
+   "dogru": true,
+   "aciklama": "Doğru: enwiki \"acquired it in 1632\", itwiki \"nel 1632 pervenne in galleria\"; arşiv katalog metninde 1632 yok, atıf zinciri wiki→Fossi/katalog (C011).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Vasari, eserin Fransa'ya gönderildiğini kesin olarak belirtir.",
+   "dogru": false,
+   "aciklama": "Yanlış: Vasari \"credo che in Francia fosse mandato\" / \"I believe it was sent to France\" der; bu bir inanç ifadesidir, kesinlik değil (C013).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Uffizi'nin \"most accredited interpretation\"ına göre Musa resimde iki kez görünür (önde ve arkada).",
+   "dogru": true,
+   "aciklama": "Doğru: önde çobanlarla boğuşur, arkada Zipporah'ya koşar (C019). Wiki ikinci görünüm için \"Probably\" der ama Uffizi açıktır.",
+   "kanit": [
+    "C019"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih ihtilafını (D1) analiz edin: her kaynağın verdiği aralığı listeleyin ve hangisinin esas alınması gerektiğini gerekçelendirin.",
+   "beklenen_ogeler": [
+    "canlı 1523 - 1527",
+    "arşiv 1523 circa",
+    "wiki c. 1523–1524",
+    "WD 1523 P1480 yok",
+    "Goldschmidt–Pevsner Roma dönemi",
+    "kesinleştirme yok"
+   ],
+   "kanit": [
+    "C003",
+    "C004",
+    "C033",
+    "C015",
+    "C027"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Atıf/orijinallik ihtilafını (D2) değerlendirin: Uffizi ↔ Natali ↔ Marchetti; her biri hangi kanıta dayanır?",
+   "beklenen_ogeler": [
+    "Uffizi doğrudan atıf + arşiv belgesi",
+    "wiki attribuito",
+    "Natali copia fedelissima e coeva",
+    "reflektografi zayıf alt çizim",
+    "tuval Fransa öncesi yok",
+    "çözülmedi"
+   ],
+   "kanit": [
+    "C034",
+    "C016",
+    "C044",
+    "C024"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "İkonografi tartışmasını (D5) tartışın: Mugnaini ↔ Uffizi; sürekli anlatım ne demektir?",
+   "beklenen_ogeler": [
+    "Mugnaini Mısırlıyı öldürme ES I 11–12",
+    "iki Yahudi kavgası ES I 13–15",
+    "Uffizi most accredited",
+    "önde + arkada Musa",
+    "data hangi figür Musa farkı",
+    "Probably"
+   ],
+   "kanit": [
+    "C037",
+    "C020",
+    "C019"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Vasari alıntısı çeviri farkını (D4) ve provenance etkisini izleyin.",
+   "beklenen_ogeler": [
+    "enwiki lived in Egypt / commissioned",
+    "itwiki + Uffizi kills the Egyptian / sent",
+    "Vasari credo ihtiyatı",
+    "Milanesi ilk eşleştirme",
+    "Bandini"
+   ],
+   "kanit": [
+    "C036",
+    "C013",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Görsel betimin sınırlarını değerlendirin: hangi iddialar metin kaynaklı, insan editör neyi teyit etmeli?",
+   "beklenen_ogeler": [
+    "görsel incelenemedi",
+    "GZ TASLAK",
+    "data siyah kumaş / pembe pelerin metinlerde yok",
+    "Zipporah robe / göğüs (K1)",
+    "dikey perspektifler",
+    "insan editör teyidi"
+   ],
+   "kanit": [
+    "C038",
+    "C045",
+    "C022",
+    "C031"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Öndeki yarı çıplak Herkülvari Musa figürünü ve yerde yenik çobanları bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Uffizi): Musa önde çobanlarla boğuşur; bedenler dolanmış.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Arka planda Zipporah'ya koşan ikinci Musa görünümünü bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Uffizi): kahraman arkada müstakbel gelinine koşar; wiki \"Probably\".",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Zipporah'nın zarif, vücudu gösteren dar robesini ve açık göğsünü bulun; kavganın vahşetini nasıl dengeler?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Uffizi): duyusal esneklik; bir göğüs açık.",
+   "kanit": [
+    "C045"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Üç katmanlı kompozisyonu ve komplementer renk juxtapozisyonunu inceleyin; derinlik nasıl iptal edilir?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Marchetti/wiki): tripartit; komplementer renkler; anti-klasik.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Öndeki şiddetle scorcialı yatan figürü bulun; Bronzino'ya kaynak olan figür.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (wiki): violent scorcio; Floransalı Maniyeristlere kaynak.",
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Temel künye?",
+   "arka": "Moses Defends the Daughters of Jethro (Uffizi); Rosso Fiorentino (Floransa 1495–Paris 1540); yağlıboya tuval; 160×117 cm; inv. 1890 n. 2151; D12 Pontormo–Rosso Fiorentino (WD \"Room 27\" ihtilaflı).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C005",
+    "C006",
+    "C007",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + anlatım?",
+   "arka": "Exodus 2:16–22: Yitro'nun yedi kızı, kuyu başında çoban tacizi, Musa'nın müdahalesi; ödül Zipporah. Sürekli anlatım: önde Musa + arkada Zipporah'ya koşan Musa (Uffizi).",
+   "kanit": [
+    "C018",
+    "C019"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Tarih ihtilafı (D1)?",
+   "arka": "Canlı Uffizi 1523–1527 ↔ arşiv \"1523 circa\" ↔ wiki c. 1523–1524 ↔ WD 1523 (P1480 yok). 1523 circa çıpası: San Lorenzo Sposalizio. Goldschmidt–Pevsner Roma dönemi.",
+   "kanit": [
+    "C003",
+    "C004",
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenans?",
+   "arka": "Bandini siparişi (thought) → Francis I'e hediye → 1568–1588 Floransa'ya dönüş → Don Antonio de' Medici (Casino di San Marco 1587) → Uffizi 1632 (wiki/Fossi). Vasari–Milanesi eşleştirmesi.",
+   "kanit": [
+    "C010",
+    "C012",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Kopya hipotezi + teknik kanıt?",
+   "arka": "Natali: Fransa'da alınmış Rosso orijinalinin \"copia fedelissima e coeva\"sı. 1995 reflektografi: zayıf alt çizim; özet pasajlar; dozzinale koyunlar; tuval Fransa öncesi yok. Wiki \"attribuito\".",
+   "kanit": [
+    "C016",
+    "C024"
+   ]
+  }
+ ]
+}

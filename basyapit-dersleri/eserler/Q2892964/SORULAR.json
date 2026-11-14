@@ -1,0 +1,554 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2892964",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Louvre resmî kaydının özgün başlığı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Le prêteur et sa femme"
+    },
+    {
+     "harf": "B",
+     "metin": "La Joconde"
+    },
+    {
+     "harf": "C",
+     "metin": "Le Sacre de Napoléon"
+    },
+    {
+     "harf": "D",
+     "metin": "Les Ménines"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Titre \"Le prêteur et sa femme\".",
+   "yanlis_gerekceleri": {
+    "B": "La Joconde Leonardo'nun Louvre portresidir; bu eserle ilgisi yok.",
+    "C": "Le Sacre David'in Napolyon taç giyme töreni resmidir; konu ve sanatçı farklı.",
+    "D": "Les Ménines Velázquez'in Prado eseridir; kurum ve sanatçı farklı."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Louvre envanter numarası?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "INV 1444 ; MR 821"
+    },
+    {
+     "harf": "B",
+     "metin": "NG1314"
+    },
+    {
+     "harf": "C",
+     "metin": "GG_2636"
+    },
+    {
+     "harf": "D",
+     "metin": "SK-A-2344"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Numéro principal INV 1444, autre MR 821.",
+   "yanlis_gerekceleri": {
+    "B": "NG1314 Holbein Elçiler'in National Gallery envanteridir.",
+    "C": "GG_2636 Baldung'un KHM envanteridir.",
+    "D": "SK-A-2344 Vermeer pilotunun Rijksmuseum envanteridir."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Teknik ve destek?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, ahşap pano (huile sur bois)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera, tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: \"huile sur bois\".",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir; bu eser taşınabilir ahşap panodur.",
+    "C": "Tempera/tuval farklı bağlayıcı ve destektir; Louvre yağ/ahşap kaydeder.",
+    "D": "Mozaik tessera tekniğidir; bu resimle ilgisi yok."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Louvre kaydının panel boyutu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "70,5 × 67 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "207 × 209 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "117 × 162 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "48,2 × 32,8 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Hauteur 0,705 m ; Largeur 0,67 m.",
+   "yanlis_gerekceleri": {
+    "B": "207 × 209 cm Holbein Elçiler'in boyutudur.",
+    "C": "117 × 162 cm Bruegel Karda Avcılar'ın boyutudur.",
+    "D": "48,2 × 32,8 cm Baldung Üç Çağ ve Ölüm'ün boyutudur."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Louvre künyesine göre sanatçının yaşamı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louvain 1465 – Anvers 1530"
+    },
+    {
+     "harf": "B",
+     "metin": "Delft 1632 – Delft 1675"
+    },
+    {
+     "harf": "C",
+     "metin": "Bonn 1770 – Viyana 1827"
+    },
+    {
+     "harf": "D",
+     "metin": "Vinci 1452 – Amboise 1519"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: (Louvain, 1465 - Anvers, 1530).",
+   "yanlis_gerekceleri": {
+    "B": "Delft 1632–1675 Vermeer'in yaşamıdır.",
+    "C": "Bonn 1770–1827 Beethoven'ın yaşamıdır; ressam değil.",
+    "D": "Vinci 1452–1519 Leonardo'nun yaşamıdır."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Kadının kitabındaki minyatürde ne görüldü (görsel inceleme)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İki haleli figür: Meryem ve Çocuk"
+    },
+    {
+     "harf": "B",
+     "metin": "Tek başına Aziz Jerome"
+    },
+    {
+     "harf": "C",
+     "metin": "Son Yargı sahnesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir harita"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K6 kitap kırpması: yeşil zeminli, altın çerçeveli iki haleli figür; K2 de Virgin and Child der.",
+   "yanlis_gerekceleri": {
+    "B": "Aziz Jerome tek figürlü bir ikonografidir; minyatürde iki haleli figür var.",
+    "C": "Son Yargı kalabalık bir kompozisyondur; minyatür iki figürlü.",
+    "D": "Harita minyatürde yok; betim kaynaklarla uyumlu değil."
+   },
+   "kanit": [
+    "C028",
+    "C013"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Convex aynada ne yansır (görsel inceleme)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Elmas kafesli pencere, dış mekân ve kırmızı başlıklı bir figür"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca boş bir duvar"
+    },
+    {
+     "harf": "C",
+     "metin": "Resmin kendi çerçevesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir deniz manzarası"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K6 ayna kırpması: pencere (mavi/kırmızı cam), ağaç/gökyüzü, kırmızı başlıklı figür.",
+   "yanlis_gerekceleri": {
+    "B": "Boş duvar yok; yansıma pencere ve figür içerir.",
+    "C": "Çerçeve yansıması gözlenmedi; yansıma dış mekâna açılır.",
+    "D": "Deniz manzarası yok; dış mekân ağaç/gökyüzü."
+   },
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Çerçeve yazıtının bugünkü durumu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "17. yüzyılda okunabilen İncil yazıtı vardı; bugün korunmadı"
+    },
+    {
+     "harf": "B",
+     "metin": "Bugün hâlâ okunabilir"
+    },
+    {
+     "harf": "C",
+     "metin": "Hiç yazıt olmadı"
+    },
+    {
+     "harf": "D",
+     "metin": "Yazıt 20. yüzyılda eklendi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: \"inscription biblique sur le cadre lisible au XVIIe s.\"; 1806 satışı Lévitique anısı.",
+   "yanlis_gerekceleri": {
+    "B": "Bugün okunabilir değil; Louvre yazıtın 17. yy'da okunabildiğini kaydeder.",
+    "C": "Yazıt vardı; Louvre inscription alanı bunu belgeler.",
+    "D": "Yazıt sonradan eklenmedi; eski çerçeveye aitti ve korunmadı."
+   },
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Louvre eseri hangi yıl satın aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1806"
+    },
+    {
+     "harf": "B",
+     "metin": "1890"
+    },
+    {
+     "harf": "C",
+     "metin": "1668"
+    },
+    {
+     "harf": "D",
+     "metin": "1956"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Acquisition date 1806; 9 VI 1806 satışı n°1.",
+   "yanlis_gerekceleri": {
+    "B": "1890 Holbein Elçiler'in National Gallery edinim yılıdır.",
+    "C": "1668 Pieter Stevens ölüm sonrası satış yılıdır; Louvre edinimi değil.",
+    "D": "1956 Campin Mérode Triptiği'nin Cloisters edinim yılıdır."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "WGA'ya göre nesnelere verilen baskın rol eseri hangi yöne adım yapar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Saf natürmorta"
+    },
+    {
+     "harf": "B",
+     "metin": "Soyutlamaya"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk döngüsüne"
+    },
+    {
+     "harf": "D",
+     "metin": "Minyatür geleneğine"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K4: \"important step along the path towards the pure still life\".",
+   "yanlis_gerekceleri": {
+    "B": "Soyutlama 20. yy yönelimidir; WGA natürmort der.",
+    "C": "Fresk döngüsü duvar resmidir; bu eser panodur.",
+    "D": "Minyatür el yazması geleneğidir; WGA natürmort tezini savunur."
+   },
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Louvre kaydı eseri 1514 olarak tarihler.",
+   "dogru": true,
+   "aciklama": "Doğru (K1): Date \"Fin du XVe siècle - début du XVIe siècle (1514)\".",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Çift, soylu sınıfına özgü giysilerle betimlenmiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış (K2): soylu değil, Antwerp'ün varlıklı burgher'ları gibi giyinirler.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Görsel incelemede convex aynada bir pencere ve kırmızı başlıklı bir figür yansıması görüldü.",
+   "dogru": true,
+   "aciklama": "Doğru (K6 ayna kırpması). Figürün kimliği ise doğrulanamadı (C025 yorum).",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Louvre bu paneli 1806 yılında satın aldı.",
+   "dogru": true,
+   "aciklama": "Doğru (K1): achat, 1806; Delacoux de Marivault satışı n°1.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Çerçevedeki İncil kaynaklı yazıt bugün okunabilir durumdadır.",
+   "dogru": false,
+   "aciklama": "Yanlış (K1): yazıt 17. yüzyılda okunabiliyordu; bugünkü çerçevede korunmadı.",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Nüsha problemini değerlendirin: Louvre paneli ile Van der Geest/Rubens nüshaları aynı nesne mi?",
+   "beklenen_ogeler": [
+    "Louvre \"peut-être bien distinct\"",
+    "enwiki Van der Geest sahipliği",
+    "Van Haecht galeri betimi",
+    "RKD/Schwartz belgesi erişilmedi (E)",
+    "D olarak açık tutma"
+   ],
+   "kanit": [
+    "C012",
+    "C017",
+    "C033"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Aynadaki figür için kimlik hipotezleri kurun ve her birinin kanıt tabanını belirtin.",
+   "beklenen_ogeler": [
+    "WGA otoportre yorumu",
+    "görselde kırmızı başlıklı figür",
+    "yüz dönük → kimlik doğrulanamaz",
+    "Belting sembolik eşik okuması",
+    "C katmanı"
+   ],
+   "kanit": [
+    "C025",
+    "C027",
+    "C018"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Üç anlam okumasını (teknik-tarihsel, ekonomik, ahlaki) ayrı kanıt tabanlarıyla savunun.",
+   "beklenen_ogeler": [
+    "WGA natürmort tezi",
+    "Antwerp ticaret bağlamı",
+    "Moxey avarice literatürü",
+    "yorum etiketi",
+    "tek doğru anlamda eritmeme"
+   ],
+   "kanit": [
+    "C022",
+    "C015",
+    "C031"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Kayıp çerçeve yazıtını \"varlığı belgeli, metni yok\" formülüyle bir sergi etiketine dönüştürün.",
+   "beklenen_ogeler": [
+    "17. yy okunabilirlik kaydı",
+    "1806 Lévitique anısı",
+    "eski çerçeve korunmadı",
+    "uydurma Latince metin yok"
+   ],
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kanıt mimarisini değerlendirin: birincil Louvre (A) + ikincil aktarım (B) + yorum (C) + ihtilaf (D) + erişilemeyen (E).",
+   "beklenen_ogeler": [
+    "künye kesin / zincir olasılıklı",
+    "très probablement ×2",
+    "boyut ve salon D",
+    "monografi metne erişilmedi",
+    "görsel incelendi ama transkripsiyon lossy"
+   ],
+   "kanit": [
+    "C009",
+    "C024",
+    "C030",
+    "C032",
+    "C026"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Masadaki terazi kefelerini, altın sikkeleri, metal ağırlıkları ve kapaklı kutuyu bulun.",
+   "ipucu": "Adamın işi para: tartı araçları masanın sol-orta grubunda.",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kadının kitabında sol sayfadaki minyatürü ve sağ sayfadaki tezhipli baş harfi bulun.",
+   "ipucu": "Minyatür yeşil zeminli, altın çerçeveli, iki haleli figürlü.",
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Convex aynayı bulun; içinde pencereyi, dış mekânı ve kırmızı başlıklı figürü izleyin.",
+   "ipucu": "Ayna kitabın solunda; yansıma dış dünyayı içeri taşır.",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Yeşil masa örtüsünün kenarındaki metal çivili şeridi ve iki figürün yüzüklerini fark edin.",
+   "ipucu": "Örtü kenarı kırmızımsı, çiviler düzenli aralıklı.",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Arka duvar raflarındaki cam, metal kap ve sikke grubunu bulun.",
+   "ipucu": "WGA bu nesnelerin \"kendi hayatıyla dolu\" olduğunu söyler; görselde ışıltıyı izleyin.",
+   "kanit": [
+    "C022",
+    "C026"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, envanter?",
+   "arka": "Le prêteur et sa femme (Tefeci ve Karısı); Quentin Metsys (Louvain 1465–Anvers 1530); 1514; huile sur bois; 70,5×67 cm; Louvre INV 1444 ; MR 821.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Provenance ve edinim zinciri?",
+   "arka": "\"Très probablement\" Pieter Stevens (1668 satış n°11) → Diego Duarte (1676/1682/1693/1696) → Delacoux de Marivault → Louvre achat 1806 (9 VI 1806 satış n°1).",
+   "kanit": [
+    "C009",
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Görsel üçlü: tartı, kitap, ayna?",
+   "arka": "Terazi+sikke+ağırlık+kapaklı kutu; kitapta Meryem-Çocuk minyatürü + Gotik yazı + tezhip; convex aynada pencere + dış mekân + kırmızı başlıklı figür.",
+   "kanit": [
+    "C026",
+    "C027",
+    "C028"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Çerçeve yazıtı?",
+   "arka": "17. yy'da okunabilen İncil yazıtı; 1806 satışında Lévitique anısı; eski çerçeve korunmadı; tam metin doğrulanmadı (uydurma yok).",
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Tür resmi / natürmort tezi?",
+   "arka": "WGA: tür resminin erken örneği; nesnelere baskın rol → saf natürmorta adım; yüzler kayıtsız, eşyalar canlı; Reymerswaele 25 yıl sonra aynı motif.",
+   "kanit": [
+    "C019",
+    "C022",
+    "C021",
+    "C016"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1064 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q23008305",
+ "sanatci_id": "sofonisba-anguissola",
+ "baslik": "Satranç Oynayan Kız Kardeşler",
+ "ozgun_baslik": "Gra w szachy / Partita a scacchi / The Chess Game (Portrait of the Artist's Sisters Playing Chess)",
+ "kunye": {
+  "sanatci": "Sofonisba Anguissola",
+  "sanatci_yasam": "1532–1625 (S6)",
+  "tarih": "1555",
+  "tarih_belirsizlik": "enwiki {{circa|1555}} / 'around 1555' (D001/E001); birincil S6 + yazıt MDLV 1555; circa aynen korundu",
+  "teknik": "Tuval üzerine yağlıboya ve tempera (olej i tempera na płótnie)",
+  "boyut_cm": {
+   "yukseklik": 72,
+   "genislik": 97
+  },
+  "muze": "Muzeum Narodowe w Poznaniu (National Museum in Poznań)",
+  "envanter": "FR 434 (Commons Artwork / Wikidata P217; birincil S6 sayfasında görünmüyor — E006)",
+  "edinim": "1823 Atanazy Raczyński satın alması (S6 Berlin; S8 Paris — D005); 1903 Poznań; mülkiyet Fundacja im. Raczyńskich przy MNP",
+  "konum": "Poznań, Polonya",
+  "telif_durumu": "Kamu malı (PD-art / PD-old-100-expired); fotoğraf Mortendrak 2021-04-26, source alanında CC-BY-SA-4.0 beyanı"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/The_Chess_Game_%28Sofonisba_Anguissola%29_1555_%284096x3236px%29.jpg",
+  "kaynak": "Wikimedia Commons (Wikidata P18 / data p50); fotoğraf Mortendrak, 2021-04-26",
+  "lisans": "Public domain (PD-art / PD-old-100-expired); fotoğrafçı source alanında CC-BY-SA-4.0 beyan eder",
+  "dogrulama": {
+   "yontem": "metadata + lisans (S7/S8/S9); GÖRSEL BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "P18 4096×3236 (5.961.229 bayt); WGA00697 3214×2436",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon/jest/renk betimleri kaynak metinlerine dayanır ('kaynakların betimlediği'); GZ TASLAK; insan editör görsel teyidi bekler (C056). Görsel projeye kopyalanmadı."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 420
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1353
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2630
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-tanıklığı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-proveniens-hipotez-zinciri"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyeri",
+   "DERS_ILERI.md#3-vasari-tanıklığı-ve-yıl-ihtilafı"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-konservasyon-stratigrafisi-hizmetçinin-yer-değiştirmesi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-satranç-bilmecesi-imkânsız-diziliş-ve-alegori",
+   "DERS_ILERI.md#6-ikonografi-ve-alegori-sembol-yaş-kimlik"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#4-konservasyon-stratigrafisi-hizmetçinin-yer-değiştirmesi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Birincil müze kaydıyla künyeyi (1555/MDLV, yağlıboya+tempera, 72×97, MNP, Raczyński Vakfı) doğrular.",
+  "Yazıtın \"ex vera effigie\" portre iddiasını ve transkripsiyon varyantlarını (D004) yönetir.",
+  "Konservasyon stratigrafisini (hizmetçinin sonradan eklenmesi) ve sol↔orta ihtilafını analiz eder.",
+  "Satrancın eril bağlamını, imkânsız dizilişi ve Vida alegorisini feminist okumayla ilişkilendirir.",
+  "Proveniens hipotez zincirini ve D/E envanterini (11 D, 16 E) kesinleştirmeden sunar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "ex vera effigie",
+   "tanim": "Yazıtın \"gerçek suretten / doğadan\" portre iddiası.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "ad": "ancilla",
+   "tanim": "Latince hizmetçi; yazıtta geçen, oyunu izleyen figür.",
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "ad": "ridipinture",
+   "tanim": "Yeniden boyama; eserin hassas (precarious) durumuna işaret eder.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "stratigrafi",
+   "tanim": "Boya katmanlarının incelenmesi; hizmetçinin sonradan eklendiğini gösterir.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Scacchia Ludus",
+   "tanim": "Vida’nın 1550 satranç poeması; vezir virgo/amazon; olası ikonografik ilham.",
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı Sofonisba Anguissola’dır; eser imzalıdır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Eser 1555 tarihlidir; tarih satranç tahtası kenarındaki yazıtta MDLV olarak yer alır (enwiki circa → C032/C043).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik: tuval üzerine yağlıboya VE tempera (olej i tempera na płótnie); en/it \"oil on canvas\" → C033.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S11",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut 72 × 97 cm (yükseklik 72, genişlik 97); tüm kaynaklar mutabık.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S4",
+    "S5",
+    "S11",
+    "S12",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Eser Poznań Ulusal Müzesi’ndedir (Muzeum Narodowe w Poznaniu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Mülkiyet MNP bünyesindeki Raczyński Vakfı’nındır (Fundacja im. Raczyńskich przy MNP); müzenin değil.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Envanter numarası FR 434’tür (Commons Artwork + Wikidata P217); birincil S6 sayfasında görünmüyor → C048.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S8",
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C008",
+   "ifade": "Yazıt, üç kız kardeşi ve bir hizmetçiyi (ancilla) \"ex vera effigie\" (gerçek suretten/doğadan) resmettiğini bildirir; transkripsiyon → C035.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Betimlenenler: Lucia solda, Europa ortada, Minerva sağda; yaşlı hizmetçi sağ üstte.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5",
+    "S8",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Doğum sırası: Lucia üçüncü, Minerva dördüncü, Europa beşinci çocuk; en büyük Lucia, en küçük Europa.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Yaşlar: Lucia 15, Minerva 13, Europa 10 (atıf zinciri: Studia Muzealne 2018, Oczko 2024, Pizzagalli 2005; metinlere erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Sofonisba eseri 23 yaşında yaptı (atıfsız/çelişkili; birincilde bu eser için yaş beyanı yok → C047).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S11",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C013",
+   "ifade": "Vasari, Cremona’da Amilcare’nin evinde eseri gördü ve övdü (S6 birincil); görüş yılı → C034.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Vasari alıntısı (İtalyanca): \"…che paiono vive, e che non manchi loro altro che la parola\" (S4, ref Sofonisba 1994 s.190; erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Proveniens: muhtemelen Asdrubale satışı → Roma (Orsini → Farnese 1653/1662 → Parma → Napoli/Borboni) → Lucien Bonaparte (1815 satış) → 1823 Raczyński → 1884–1903 Berlin Nationalgalerie depozito → 1903 Poznań; 1823 satın alma A (S6), yer → C036, zincir → C039.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Eser belirgin yeniden boyamalarla (ridipinture) günümüze ulaştı; durum \"precarious\"; üç bilinen gravürü var.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Poznań konservatörleri (rentgen + stratigrafi): solda karanlık ağaç bölgesinde başlıklı kadın silueti üzerine boyanmış; görünen hizmetçi bitmiş manzaraya sonradan eklendi; ilk figürün yeri → C037.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Tahtadaki diziliş gerçek bir oyunda ulaşılamaz; tahta yönü yanlış (büyük kardeş tarafında köşe beyaz olmalı); yenmiş taşlar görünür (WD checkmate → C038).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Lucia elinde yenmiş bir vezir (królowa/hetman) tutar; \"zapewne\" (muhtemelen) belirleyici hamleyi yapmaktadır (yorum).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S10",
+    "S12"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C020",
+   "ifade": "Minerva elini kaldırmıştır: itiraz VEYA teslimiyet jesti (yorum; kaynaklara göre değişir → C040).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C021",
+   "ifade": "Europa oyunu gülerek/heyecanla izler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5",
+    "S11",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Hizmetçinin adı bilinmez; \"zapewne ukochanej niani\" (muhtemelen sevgili dadı); aynı yüz başka eserlerde (spinet/Althorp) → C044/C055.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S4",
+    "S5",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C023",
+   "ifade": "Minerva’nın kolyesi, annesi Bianca Ponzoni Anguissola’nın (Berlin) portresindekiyle aynıdır; 1557 tarihi atıfsız → C051.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Meşe/ağaçlar aile bağlarının sürekliliği ve büyük hanedanların kalıcılığı sembolü; baba Amilcare ailesini büyük hanedan saydırma arayışında (S6); arka planda dağlık manzara ve belirgin meşeler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Rönesans İtalya’sında satranç erkek/entelektüel uğraş sayılırdı; tümü kadın satranç sahnesi istisnadır; eser feminist sanat tarihi okumalarının merkezindedir (Garrard/Simons/Cole/Chadwick/Perlingieri atıf zinciri; erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Vida Scacchia Ludus (1550): vezir \"virgo\"/\"amazon\"; beyaz vezir ölür-dirilir; siyah vezir mat eder; Amazon savaşı alegorisi; Vida \"być może\" (belki) ilham → C045; yenmiş taşlar vanitas okumasına açılır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Sofonisba en büyük çocuk; beş kız kardeş + bir erkek (Asdrubale); erkek resme alınmamış; Elena (Mantova tarikatta) ve Anna Maria (henüz doğmamış) sahnede yok.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S11",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Manzara düş ürünü; \"alla fiamminga\" mavimsi manzara; Cremona’daki gerçek yapılardan esinli binalar seçilebilir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S11",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Eser, Varşova Ulusal Müzesi’ndeki \"Brescia. The Renaissance in Northern Italy\" geçici sergisinde gösterildi (Commons notu, atıfsız → C052).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C030",
+   "ifade": "Telif: kamu malı (PD-art / PD-old-100-expired; yazar ölümünden 100+ yıl).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Vasari’nin sözleri eserden söz eden en eski belgedir; eser Anguissola evinde uzun yıllar asılı kaldı (S3 ref Sofonisba 1994 s.190; erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "D001 Tarih: enwiki {{circa|1555}}/\"around 1555\" ↔ S6/S4/S5/S1 \"1555\" + MDLV; circa aynen korundu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S6",
+    "S4",
+    "S5",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C033",
+   "ifade": "D002 Teknik: en/it \"oil on canvas\" ↔ S6/S5/S11/S1 yağlıboya+tempera+tuval; S12 gövdede \"panel\" der.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S6",
+    "S5",
+    "S11",
+    "S1",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "D003 Vasari görüş yılı: S6/S3 1556 ↔ S5/S11 1566; S4 \"quest'anno\" (yıl yazmaz).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S3",
+    "S5",
+    "S11",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "D004 Yazıt transkripsiyonu: SOPHONISBA/SEPHONISBA, ANGUSSOLA/ANGVSSOLA, AMILCARIS/AMICLARIS, EFFIGIE/EFIGIE, MDLV/MDVL, ANCILLAM/ANCILAM; S6 yalnız Lehçe paraphrase.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5",
+    "S11",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "D005 1823 satın alma yeri: S6/S5 Berlin ↔ S8 ProvenanceEvent Paris.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S5",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "D006 İlk hizmetçi figürünün yeri: S6 SOLDA (karanlık ağaç) ↔ S5 ORTADA (centralna część, üzerine meşe); görünen figürün sonradan eklendiğinde mutabık.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D007 Satranç konumu: WD P180 \"checkmate\" (ref’siz) ↔ S5/S10 imkânsız diziliş + yanlış yön; S6 \"rastgele dizilmiş\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S5",
+    "S10",
+    "S6",
+    "S12"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D008 Proveniens zinciri: S3 eksik (Raczyński/1815/1884–1903/1903 yok) ↔ S5 tam ↔ S6 vakıf mülkiyeti; S4 \"1823’te bir kez daha el değiştirme\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S6",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D009 Minerva’nın jesti: S3 \"protest\" ↔ S5 \"teslimiyet/protest\" ↔ S11 \"sprzeciw\" ↔ data \"şaşkınlık/itiraz\" (veri notu).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D010 Bastek yayın tarihi: S5 ref 2023-02-27 ↔ S10 sayfa 27/03/2023.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D011 Miller & Yavneh edisyonu: S3 Ashgate 2006 ISBN 0754640108 s.173 ↔ S11 New York 2016 s.175.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "E001 \"circa 1555\"/\"around 1555\" (S3 infobox + lead).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C044",
+   "ifade": "E002 Hizmetçinin kimliği/rolü kesin değil; S6 \"zapewne ukochanej niani\" (muhtemelen sevgili dadı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "E003 Lehçe hedge’ler: prawdopodobnie (Asdrubale satışı), zapewne (belirleyici hamle), przypuszczać, być może (Vida ilham), mogłoby (alegori).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "E004 İtalyanca hedge’ler: \"forse\" (Lucia’nın Europa portresi ertesi yıl), \"ventenne\" (Sofonisba yaşı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "E005 Sofonisba yaşı/doğum yılı: S3/S5/S11 \"23\" ↔ S4 \"ventenne\" ↔ S6 doğum 1532; birincilde bu eser için yaş beyanı yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S11",
+    "S6",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "E006 FR 434 birincil S6 sayfasında doğrulanamadı (tam metin tarandı); S8 + S1’de var.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S1",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "E007 Wikidata \"checkmate\" betimlemesi ref’siz (P180 Q20819848); C038 ile bağlantılı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "E008 Hizmetçi \"gülümsüyor\" (data, veri notu) ↔ S5 \"zakłopotanie niani\" (sıkılganlık) ↔ S11 \"z ciekawością\" (merak); görsel incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "E009 Bianca Ponzoni portresi \"1557\" tarihi S3’de atıfsız; S4/S5 tarih vermez.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "E010 Brescia/MNW sergi notu S8 \"notes\" atıfsız; S5 lead ref (wpoznaniu.pl 2025) erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "E011 Yaş alegorisi yorumu: S6 \"nasuwają skojarzenia\" (çağrıştırır), S11 \"jak sugeruje wielu badaczy\" (önerilir); kesin program değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S11",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "E012 Bastek yorumu: kızlar satranç oynamayı \"taklit ediyor\" (udają) ve onay arıyor; yorum, olgu değil.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "E013 Hizmetçi = spinet otoportresindeki / Althorp’taki (1561) kadın; S4 atıfsız + S12 blog; birincil doğrulama yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata/lisans; kompozisyon kaynak betimi; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "data \"Anadolu halısı\" özgülüğü (veri notu) erişilen kaynaklarda yok; kaynaklar \"Doğu halısı\" (S5 wzorzystym wschodnim kobiercem) der; doğrulanmamış özgülük.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C058",
+   "ifade": "Sofonisba 1532’de Cremona’da doğdu, 1625’te Palermo’da öldü (S6).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C059",
+   "ifade": "Babası Amilcare dönemin kadınları için istisnai sanat eğitimi sağladı; Sofonisba ve Elena Bernardino Campi’den ders aldı (S6).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "Müze kaydı: babasının çabalarıyla yeteneği Michelangelo tarafından takdir edildi; eserlerinde Michelangelo ve Leonardo da Vinci etkileri görülür (S6).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C061",
+   "ifade": "İspanya’ya II. Felipe sarayına, Elisabeth de Valois’nın ressamı ve nedimesi olarak gitti; 14 yaşındaki kraliçeye resim/çizim dersleri verdi (S6).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "Palermo’da son 10 yılını geçirdi; ölümünden bir yıl önce Rubens’in öğrencisi Anton van Dyck ziyaret etti; 92 yaşında, görme kaybından yakınıyordu (S6).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "Ölümünden sonra uzun süre unutuldu; imzasız eserleri başka ressamlara atfedildi (Elena portresi Titian sanıldı) (S6).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "Polonya’da iki Sofonisba eseri: Satranç (MNP) + 1554 Otoportre (Łańcut Zamek Müzesi) (S6).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C065",
+   "ifade": "Tümü kadın kadro, önceki satranç sahnelerinden (Giulio Campi \"Satranç\", Lucas van Leyden \"Satranç\") farklıdır (enwiki, ref Garrard 2005; erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C066",
+   "ifade": "15. yy sonunda vezir en güçlü taş oldu; oyun \"kadın satrancı\"/\"çılgın satranç\" diye anıldı (Simons 1993 atıf zinciri; erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C067",
+   "ifade": "Hizmetçi kısmen kırpılmış; sararmış ten, kırışık alın, bembeyaz giysiyle kızların zenginliği karşıtlığı; oynamaz, izler (enwiki + Miller&Yavneh 2006; Burke).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C068",
+   "ifade": "Eser Roma’ya \"Spinet Otoportresi\" ve \"Istakoz Isıran Çocuk\" çizimiyle birlikte geldi; Fulvio Orsini koleksiyonuna girdi (S3/S4).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C069",
+   "ifade": "Anguissola kızlarının eğitimi: şövalede resim, klavsen müzik, Latince/İtalyanca şiir, dokuma/nakış; Cremona’nın entelektüel çekirdeği (S4).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C070",
+   "ifade": "Figür yönelimleri: Europa en face, Minerva profil, Lucia yarım profil, hizmetçi çapraz (ukosa); Lucia izleyiciye bakar (S5, ref Pizzagalli 2005).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C071",
+   "ifade": "İtalyanca Vikipedi: Minerva \"Anguissola Aile Portresi\"nde ergen olarak döner; Europa Uffizi’deki \"Alfabe öğrenen yaşlı kadın ve alay eden çocuk\" çiziminde de vardır (S4).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C072",
+   "ifade": "Burke blogu: Sofonisba ~40 yaşına dek evlenmedi, iki kız kardeşi evlenince resmi bıraktı; Moderata Fonte’nin evlilik eleştirisi hatırlatılır (S12; yorum, olgu değil).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q23008305 JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q23008305.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (iddia değer QID’leri)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Game of Chess (Sofonisba Anguissola) wikitext (action=parse, redirects=1)",
+   "url": "https://en.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia (it)",
+   "belge": "Partita a scacchi (Sofonisba Anguissola) wikitext (action=parse)",
+   "url": "https://it.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikipedia (pl)",
+   "belge": "Gra w szachy wikitext (action=parse)",
+   "url": "https://pl.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Muzeum Narodowe w Poznaniu",
+   "belge": "Sofonisba Anguissola, Gra w szachy, 1555 (eğitim serisi 18; haz. Katarzyna Drozdowska-Sawińska, Dział Edukacji MNP)",
+   "url": "https://mnp.art.pl/sofonisba-anguissola-gra-w-szachy-1555",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (78.578 bayt, canlı; URL Wikidata P854/P973’ten bulundu, tahmin değil)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo P18 dosyası (url|size|extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "ilk 429 → backoff 200; metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dosya sayfası wikitext (Artwork şablonu, lisans başlığı)",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Chess_Game_(Sofonisba_Anguissola)_1555_(4096x3236px).jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo WGA00697 dosyası (data p70)",
+   "url": "https://commons.wikimedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata, İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S10",
+   "kurum": "Grażyna Bastek (Polskie Radio \"Jest taki obraz\")",
+   "belge": "Sofonisba Anguissola, „Gra w szachy”, 1555 (sayfa tarihi 27/03/2023)",
+   "url": "https://www.grazynabastek.pl/sofonisba-anguissola-%E2%80%9Egra-w-szachy%E2%80%9D-1555-%E2%80%93-w-audycji-%E2%80%9Ejest-taki-obraz%E2%80%9D",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Niezła Sztuka (Michalina Peruga)",
+   "belge": "Sofonisba Anguissola „Gra w szachy” (6 czerwca 2022)",
+   "url": "https://niezlasztuka.net/o-sztuce/sofonisba-anguissola-gra-w-szachy/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Jill Burke (tarihçi blogu)",
+   "belge": "Overlooking Women's Labour in Sofonisba Anguissola's Chess Game (28 June 2020)",
+   "url": "https://renresearch.wordpress.com/2020/06/28/overlooking-womens-labour-in-sofonisba-anguissolas-chess-game/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Bianca Ponzoni Anguissola Portresi",
+   "sanatci": "Sofonisba Anguissola",
+   "kurum": "Berlin (Gemäldegalerie)",
+   "gerekce": "Minerva’nın kolyesi bu portredekiyle aynı; aile mücevherinin portreler arası bağı.",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "eser": "Europa Portresi",
+   "sanatci": "Lucia Anguissola",
+   "gerekce": "Kardeşlerin birbirini portrelemesi; aile içi sanatsal üretim (tarih \"forse\" ertesi yıl).",
+   "kanit": [
+    "C010",
+    "C027"
+   ]
+  },
+  {
+   "eser": "Scacchia Ludus (satranç poeması)",
+   "sanatci": "Marco Girolamo Vida",
+   "gerekce": "1550 poeması; vezir virgo/amazon; Amazon alegorisi; olası ikonografik ilham (belki).",
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Ham cache’ler 14 Kasım 2026’da yeniden açıldı: S6 (mnp.txt birincil), S3/S4/S5 (en/it/pl wikitext), S7/S8/S9 (Commons), S10/S11/S12 (blog). Künye/yazıt/konservasyon/mülkiyet/biyografi (1532–1625) S6’dan A doğrulandı. itwiki/plwiki/niezla yazıtta \"ANCILAM\" (tek L), enwiki \"ANCILLAM\" (çift L) → D004’e ek varyant notu. 11 D + 16 E korundu; görsel İNCELENEMEDİ (C056), GZ TASLAK. Refs metinleri erişilmedi.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data tarih \"1555\": enwiki {{circa|1555}} nüansı data’da yok (D001/E001); circa korunmalı.",
+  "data ozet hizmetçi de oynuyormuş gibi okunabilir; kaynaklar hizmetçinin OYNAMADIĞINI, izlediğini söyler (S12 \"She's not playing chess\"; S3; S5).",
+  "harita_motifler \"yüz yaşına yaklaşırken\" ↔ S6 \"92 yaşında\" + \"ölümünden bir yıl önce\" (Van Dyck); birincille uyuşmuyor.",
+  "eser_ayrintilari \"hizmetçi gülümsüyor\" ↔ S5 \"sıkılganlık\" / S11 \"merak\"; görsel incelenmedi (E008/C050).",
+  "\"Anadolu halısı\" özgülüğü erişilen kaynaklarda yok; kaynaklar \"Doğu halısı\" der (S5); doğrulanmamış özgülük (C057).",
+  "data \"Minerva şaşkınlık/itiraz\" ↔ S5 belirsizliğiyle uyumlu; S3 yalnız \"protest\" der (D009/C040).",
+  "eserler_onbellek 4096px dosyasında lisans alanı boş; Commons \"Public domain\" (PD-art/PD-old-100-expired) raporlar (S7/S8).",
+  "eser_notlari \"mürebbiye\" ↔ kaynaklar ancilla/housemaid/piastunka/domownica kullanır; \"mürebbiye\" birincilde geçmez (E002).",
+  "data/ dosyalarına HİÇBİR yazma/değişiklik yapılmadı; repo kodu/main/pilot dokunulmadı."
+ ]
+}

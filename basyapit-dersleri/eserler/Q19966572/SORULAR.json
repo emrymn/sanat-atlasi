@@ -1,0 +1,543 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q19966572",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Hermitage, San Petersburg"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2/K3: Hermitage.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Hermitage, San Petersburg.",
+    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Hermitage, San Petersburg.",
+    "D": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer Hermitage, San Petersburg."
+   },
+   "kanit": [
+    "C001",
+    "C003"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Envanter?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "ГЭ-223"
+    },
+    {
+     "harf": "B",
+     "metin": "GG_274"
+    },
+    {
+     "harf": "C",
+     "metin": "NG651"
+    },
+    {
+     "harf": "D",
+     "metin": "INV 1444"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3: ГЭ-223.",
+   "yanlis_gerekceleri": {
+    "B": "GG_274 Correggio.",
+    "C": "NG651 Bronzino.",
+    "D": "INV 1444 Metsys."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Teknik geçmişi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Panodan tuvale aktarılmış (1834)"
+    },
+    {
+     "harf": "B",
+     "metin": "Hep tuval"
+    },
+    {
+     "harf": "C",
+     "metin": "Hep pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Fresk"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: panel transferred to canvas 1834.",
+   "yanlis_gerekceleri": {
+    "B": "Hep tuval değil; aktarım.",
+    "C": "Hep pano değil; aktarım.",
+    "D": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Panodan tuvale aktarılmış (1834)."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Yatak altında ne var?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kedi"
+    },
+    {
+     "harf": "B",
+     "metin": "Köpek"
+    },
+    {
+     "harf": "C",
+     "metin": "Tavşan"
+    },
+    {
+     "harf": "D",
+     "metin": "Kuş"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: cat (Madonna of the Cat motifi).",
+   "yanlis_gerekceleri": {
+    "B": "Köpek bu soruda doğru değildir; kaynakların doğruladığı yanıt Kedi.",
+    "C": "Tavşan bu soruda doğru değildir; kaynakların doğruladığı yanıt Kedi.",
+    "D": "Kuş bu soruda doğru değildir; kaynakların doğruladığı yanıt Kedi."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Kapıda kim izler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yaşlı hizmetçi"
+    },
+    {
+     "harf": "B",
+     "metin": "Çocuk"
+    },
+    {
+     "harf": "C",
+     "metin": "Rahip"
+    },
+    {
+     "harf": "D",
+     "metin": "Asker"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: elderly female servant; K2 terza figura.",
+   "yanlis_gerekceleri": {
+    "B": "Çocuk bu soruda doğru değildir; kaynakların doğruladığı yanıt Yaşlı hizmetçi.",
+    "C": "Rahip bu soruda doğru değildir; kaynakların doğruladığı yanıt Yaşlı hizmetçi.",
+    "D": "Asker bu soruda doğru değildir; kaynakların doğruladığı yanıt Yaşlı hizmetçi."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "1920'ye kadar neden sergilenmedi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Konu (erotik) nedeniyle"
+    },
+    {
+     "harf": "B",
+     "metin": "Hasar nedeniyle"
+    },
+    {
+     "harf": "C",
+     "metin": "Boyut nedeniyle"
+    },
+    {
+     "harf": "D",
+     "metin": "Sahip izin vermedi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: off display because of subject matter until 1920.",
+   "yanlis_gerekceleri": {
+    "B": "Hasar var ama neden konu.",
+    "C": "Boyut nedeniyle bu soruda doğru değildir; kaynakların doğruladığı yanıt Konu (erotik) nedeniyle.",
+    "D": "Sahip değil; konu."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Kimin için satın alındı (18.yy)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Catherine the Great"
+    },
+    {
+     "harf": "B",
+     "metin": "II. Julius"
+    },
+    {
+     "harf": "C",
+     "metin": "Federico Gonzaga"
+    },
+    {
+     "harf": "D",
+     "metin": "Napolyon"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Reiffenstein for Catherine the Great.",
+   "yanlis_gerekceleri": {
+    "B": "II. Julius bu soruda doğru değildir; kaynakların doğruladığı yanıt Catherine the Great.",
+    "C": "Gonzaga sipariş hipotezi (16.yy), satın alma değil.",
+    "D": "Napolyon bu soruda doğru değildir; kaynakların doğruladığı yanıt Catherine the Great."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Berlin versiyonu ne oldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İkinci Dünya Savaşı'nda kayıp"
+    },
+    {
+     "harf": "B",
+     "metin": "Hermitage'a taşındı"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre'a satıldı"
+    },
+    {
+     "harf": "D",
+     "metin": "Hâlâ Berlin'de"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: presumed lost WWII.",
+   "yanlis_gerekceleri": {
+    "B": "Hermitage'a taşınmadı.",
+    "C": "Louvre'a satılmadı.",
+    "D": "Hâlâ Berlin'de değil; kayıp."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Boyut?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "163 × 337 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "460 × 880 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "280 × 570 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "119 × 165 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: 163×337.",
+   "yanlis_gerekceleri": {
+    "B": "460×880 Leonardo.",
+    "C": "280×570 Michelangelo.",
+    "D": "119×165 Titian."
+   },
+   "kanit": [
+    "C002",
+    "C003"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Kedi motifi hangi eserle paylaşılır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Madonna of the Cat (Capodimonte)"
+    },
+    {
+     "harf": "B",
+     "metin": "Sistina Tavanı"
+    },
+    {
+     "harf": "C",
+     "metin": "Atina Okulu"
+    },
+    {
+     "harf": "D",
+     "metin": "Urbino Venüsü"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: Madonna of the Cat.",
+   "yanlis_gerekceleri": {
+    "B": "Sistina Tavanı bu soruda doğru değildir; kaynakların doğruladığı yanıt Madonna of the Cat (Capodimonte).",
+    "C": "Atina Okulu bu soruda doğru değildir; kaynakların doğruladığı yanıt Madonna of the Cat (Capodimonte).",
+    "D": "Urbino Venüsü bu soruda doğru değildir; kaynakların doğruladığı yanıt Madonna of the Cat (Capodimonte)."
+   },
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Hermitage'dadır (ГЭ-223).",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K3).",
+   "kanit": [
+    "C001",
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser 1920'den önce halka açık sergileniyordu.",
+   "dogru": false,
+   "aciklama": "Yanlış (K1): konu nedeniyle 1920'ye kadar gizli.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser panodan tuvale aktarılmıştır (1834).",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Yatak altında kedi vardır.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Başlık kesindir ve tek adlıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış (K1): tentative, çok ad (C006).",
+   "kanit": [
+    "C006"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Birincilsiz eserin künye sınırını analiz edin.",
+   "beklenen_ogeler": [
+    "Hermitage URL yok",
+    "Rusça katalog refs",
+    "B düzeyi",
+    "insan teyidi"
+   ],
+   "kanit": [
+    "C016",
+    "C002",
+    "C003"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Erotik resmin alımlama utancı (1920) ↔ prestij (Catherine) gerilimini yazın.",
+   "beklenen_ogeler": [
+    "gizli 1920",
+    "kamusal 1920",
+    "Catherine prestij",
+    "hasar"
+   ],
+   "kanit": [
+    "C005",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Konu okumalarını (mitoloji/edebiyat/gündelik) karşılaştırın.",
+   "beklenen_ogeler": [
+    "Mars&Venus",
+    "Boccaccio",
+    "kortizan aksesuar",
+    "bas-relif"
+   ],
+   "kanit": [
+    "C006",
+    "C009",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Berlin kayıp versiyonun orijinallik sorununu analiz edin.",
+   "beklenen_ogeler": [
+    "Milanese 1880 Berlin",
+    "1920 Hermitage orijinal",
+    "Berlin kayıp",
+    "karşılaştırma imkânsız"
+   ],
+   "kanit": [
+    "C017",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kedi motifinin bağlam-bağımsızlığını tartışın.",
+   "beklenen_ogeler": [
+    "Madonna of the Cat",
+    "dinsel↔erotik",
+    "evcil tanık"
+   ],
+   "kanit": [
+    "C010",
+    "C014"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Yatağı, yeşil cibinliği ve spalliera bas-reliflerini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: baldacchino ima; satyr kabartmaları.",
+   "kanit": [
+    "C008",
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kadının kortizan aksesuarlarını (bilezik/band/küpe) fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: aksesuarlar kortizan kimliği (yorum).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Yatak altındaki kediyi ve kapıdaki hizmetçiyi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: iki tanık (evcil + insan).",
+   "kanit": [
+    "C010",
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "İki bedenin simetrik kucaklaşmasını izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: erkek/kadın poz aynası.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Yüzeydeki hasar/aktarım izlerini fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: 3 kırık + kaba sıva (ters yüz).",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "The Lovers/Due amanti; Giulio Romano; y.1524–25; oil panel→tuval (1834); 163×337; Hermitage ГЭ-223.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + kompozisyon?",
+   "arka": "İki çıplak sevgili yatakta; erotik bas-relifler; yeşil cibinlik; kedi + hizmetçi tanık.",
+   "kanit": [
+    "C008",
+    "C018",
+    "C010",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Alımlama?",
+   "arka": "1920'ye kadar konu nedeniyle gizli/hasarlı; 1920 kamusal; Catherine the Great prestij (Hamilton 1780).",
+   "kanit": [
+    "C005",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Başlık/kimlik?",
+   "arka": "Tentative: Gallant Scene/Boccaccio/Mars&Venus/Alexander&Roxane/kortizan; mitoloji/edebiyat/gündelik okumaları.",
+   "kanit": [
+    "C006",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Orijinallik + motif?",
+   "arka": "Hermitage=orijinal (1920), Berlin=kopya (kayıp WWII); kedi Madonna of the Cat motifi.",
+   "kanit": [
+    "C011",
+    "C010"
+   ]
+  }
+ ]
+}

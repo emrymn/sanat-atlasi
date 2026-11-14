@@ -1,0 +1,428 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q128910",
+ "sanatci_id": "leonardo-da-vinci",
+ "baslik": "Son Akşam Yemeği",
+ "ozgun_baslik": "Il Cenacolo (L'Ultima Cena / The Last Supper)",
+ "kunye": {
+  "sanatci": "Leonardo da Vinci",
+  "sanatci_yasam": "1452–1519",
+  "tarih": "y. 1495–1498",
+  "tarih_belirsizlik": "Başlangıç belirsiz (arşiv yok); 1497 nearly complete; WD 1494–1498",
+  "teknik": "Tempera on gesso/pitch/mastic, duvar sıvası (true fresco DEĞİL)",
+  "boyut_cm": {
+   "yukseklik": 460,
+   "genislik": 880
+  },
+  "muze": "Santa Maria delle Grazie, Milano (in situ); Museo del Cenacolo Vinciano (Brera yönetimi)",
+  "envanter": "in situ duvar (envanter yok)",
+  "edinim": "Sforza siparişi (mozole projesi)",
+  "konum": "Refectory uç duvarı",
+  "telif_durumu": "Kamu malı (Leonardo ö.1519); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_(1452-1519)_-_The_Last_Supper_(1495-1498).jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public domain",
+  "dogrulama": {
+   "yontem": "metadata alındı; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "metadata",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C019); GZ TASLAK; kompozisyon enwiki metninden; refs metinleri erişilmedi (C021)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 411
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1300
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2476
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-in-situ-eserin-kanıt-sorunu"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#5-hanedan-projesi-ve-ölümlülük-gerilimi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-bitmemişlik-ve-mükemmeliyetçilik"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-psikolojik-an-ihanet-duyurusunun-dramaturjisi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-psikolojik-an-ihanet-duyurusunun-dramaturjisi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#2-teknik-trajedi-temperanın-seçimi-ve-sonucu"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "In situ mural kimliğini (refectory duvarı, Cenacolo/Brera yönetimi) doğrular.",
+  "Tempera-on-plaster tekniğini ve fresk yanılgısını açıklar.",
+  "İhanet-duyurusu anının dramaturjisini ve Judas ikonografisini analiz eder.",
+  "Teknik trajedi + restorasyon + orijinal sorununu değerlendirir.",
+  "Boyut/teknik/tarih ihtilaflarını (D) ve veri hatalarını yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Mural / duvar resmi",
+   "tanim": "Duvara doğrudan uygulanan resim; taşınabilir tablo değil.",
+   "kanit": [
+    "C003",
+    "C005"
+   ]
+  },
+  {
+   "ad": "Tempera on plaster",
+   "tanim": "Gesso/pitch/mastic zemin üzerine tempera; true fresco değil; Cennini riskli sayar.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "ad": "Refectory",
+   "tanim": "Manastır yemek salonu; eserin mekânı.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "Chiaroscuro",
+   "tanim": "Işık-gölge karşıtlığıyla hacim/duygu; Leonardo'nun tempera tercih gerekçesi.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "İhanet duyurusu anı",
+   "tanim": "Yuhanna'da \"biriniz beni ele verecek\" sonrası tepki anı; konu seçimi.",
+   "kanit": [
+    "C009",
+    "C016"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Cenacolo resmî site: Museo del Cenacolo Vinciano; Leonardo's Last Supper Museum; Aralık 2024'ten Pinacoteca di Brera yönetimi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Cenacolo: koruma optimal ortam (air treatment) + kontrollü ziyaretçi erişimi; rezervasyon zorunlu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "enwiki: başlık Il Cenacolo / L'Ultima Cena; mural; Leonardo; c.1495–1498; Santa Maria delle Grazie refectory, Milano.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "enwiki: teknik tempera on gesso/pitch/mastic on wall plaster (true fresco DEĞİL); stone wall double layer + white lead undercoat; Cennini riskier-than-fresco.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "enwiki: boyut 460 × 880 cm; yemek salonu uç duvarı; oda o sırada refectory değil; kilise inşa hâlinde.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "enwiki: patron Ludovico Sforza; aile mozolesi planı (perhaps Bramante); lunettes Sforza arms; karşı duvar Montorfano Crucifixion + Leonardo Sforza aile tempera figürleri (bozuldu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "enwiki: ~1495–98 kesintili çalışma; başlangıç belirsiz (manastır arşivi yok); 1497 belgesi nearly complete; prior şikâyeti + Judas yüzü anekdotu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "enwiki: 1557 Lomazzo: Zenale, Christ yüzünü bitirmeme tavsiyesi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "enwiki: konu = ihanet duyurusundan sonraki an (Gospel John); apostol sırası (Bartholomew, James Less, Andrew, Judas, Peter, John | Jesus | Thomas, James Great, Philip, Matthew, Jude, Simon).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "enwiki: High Renaissance; geçişte pivotal (Hartt/Frommel); mekân/perspektif/hareket/duygu ustalığı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "enwiki: orijinalden çok az kaldı; çok restorasyon, son 1999; Leonardo'nun en büyük işi (Sala delle Asse hariç).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "enwiki: medium gerekçesi — oil yavaş/değişiklik; fresco elverişsiz; chiaroscuro luminosity; tempera panel-mediumu duvara taşındı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "WD: P571 1490 prec8 + P580 1494/P582 1498; P186 tempera+gesso; P31 wall+fresco painting; P195/P276 Santa Maria delle Grazie; P6216 PD.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Boyut ihtilafı: WD 700×880 ↔ enwiki 460×880.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C015",
+   "ifade": "Teknik sınıflama ihtilafı: WD P31 \"fresco painting\" ↔ enwiki tempera-on-plaster (true fresco değil); \"fresk\" etiketi yanıltıcı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C016",
+   "ifade": "Yorum: ihanet anının seçimi psikolojik dram kurar; apostol grupları duygu dalgası; Judas içeride; perspektif dramaturji.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C017",
+   "ifade": "Yorum: tempera tercihi = kontrol/revizyon arzusu; ama aynı tercih bozulmanın nedeni (teknik trajedi).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C018",
+   "ifade": "Yorum: restorasyonlar (1999) orijinali yeniden kuramaz; bugünkü yüzey bir restorasyon yorumudur; aura bağlama kayar.",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C019",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision bütçesi); GZ TASLAK; insan editör teyidi ZORUNLU.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C020",
+   "ifade": "Görsel kamu malı (Leonardo ö.1519); Commons PD.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "K2 refs monografi/makale metinleri (King, Clark, Wallace, Hartt, Frommel, Durant, Smart History) erişilmedi; kaynakçada anıldı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C022",
+   "ifade": "Veri notu: data tarih \"1490\" ↔ enwiki c.1495–1498 / WD 1494–1498; \"1490\" onyıl hassasiyeti, kesin yıl değil.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Museo del Cenacolo Vinciano",
+   "belge": "resmî site (Brera yönetimi; koruma/erişim)",
+   "url": "https://cenacolovinciano.org/en/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Last Supper (Leonardo) — King/Clark/Wallace/Hartt/Frommel/Durant atıflı",
+   "url": "https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); refs metinleri açılmadı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "Q128910",
+   "url": "https://www.wikidata.org/wiki/Q128910",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikimedia Commons",
+   "belge": "Leonardo da Vinci (1452-1519) - The Last Supper (1495-1498).jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_(1452-1519)_-_The_Last_Supper_(1495-1498).jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "metadata; İNCELENEMEDİ (vision bütçesi)",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Crucifixion (karşı duvar)",
+   "sanatci": "Giovanni Donato da Montorfano",
+   "kurum": "Santa Maria delle Grazie",
+   "gerekce": "Gerçek fresk ↔ Leonardo tempera; aynı odada iki teknik iki kader.",
+   "kanit": [
+    "C006",
+    "C004"
+   ]
+  },
+  {
+   "eser": "Son Akşam Yemeği",
+   "sanatci": "Tintoretto",
+   "mufredat_ici": true,
+   "gerekce": "Mmaniyerist dinamizm + farklı an seçimi karşılaştırması.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "eser": "Sala delle Asse",
+   "sanatci": "Leonardo da Vinci",
+   "gerekce": "Leonardo'nun öteki büyük duvar işi; ölçek ekseni.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Cenacolo resmî site (K1) ham HTML yeniden açıldı; kurumsal kimlik/Brera yönetimi/koruma rejimi doğrulandı. enwiki wikitext yeniden okundu; teknik/tarih/boyut/konu/restorasyon iddialarla karşılaştırıldı; boyut (C014) ve teknik sınıflama (C015) D olarak açık. Görsel K4 metadata only, vision bütçesi tükendi → İNCELENEMEDİ (C019); kompozisyon enwiki metninden, GZ TASLAK. Refs monografi metinleri erişilmedi (C021).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih HATASI: data \"1490\" ↔ y.1495–1498 (enwiki)/1494–1498 (WD); öneri \"y. 1495–1498\" (C022).",
+  "Boyut: enwiki 460×880 (B) ↔ WD 700×880 (D, C014).",
+  "Teknik: \"fresk\" DEĞİL; tempera-on-plaster (C004/C015); data tekniği düzeltilmeli.",
+  "Müze: in situ Santa Maria delle Grazie; müze Brera yönetimi (C001).",
+  "Görsel İNCELENEMEDİ (C019); GZ TASLAK; insan editör zorunlu."
+ ]
+}

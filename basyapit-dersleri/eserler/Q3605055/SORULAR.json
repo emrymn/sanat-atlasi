@@ -1,0 +1,540 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3605055",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin formatı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İki ayrı pano (pendant çift): Âdem + Havva"
+    },
+    {
+     "harf": "B",
+     "metin": "Tek tuval"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk döngüsü"
+    },
+    {
+     "harf": "D",
+     "metin": "Triptik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: iki ayrı scheda/invanter (1459/1458); K2 doppio dipinto.",
+   "yanlis_gerekceleri": {
+    "B": "Tek tuval değil; iki ayrı pano.",
+    "C": "Fresk değil; yağlıboya pano.",
+    "D": "Triptik (üç) değil; iki pano."
+   },
+   "kanit": [
+    "C001",
+    "C002"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Âdem panelinin envanteri?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "inv. 1890, 1459"
+    },
+    {
+     "harf": "B",
+     "metin": "inv. 1890, 1458"
+    },
+    {
+     "harf": "C",
+     "metin": "INV 1444"
+    },
+    {
+     "harf": "D",
+     "metin": "NG1314"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Adamo inv. 1890, 1459.",
+   "yanlis_gerekceleri": {
+    "B": "1458 Havva panelinin envanteridir.",
+    "C": "INV 1444 Metsys Louvre envanteridir.",
+    "D": "NG1314 Holbein National Gallery envanteridir."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Cranach atölye markası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kanatlı yılan (serpentello alato)"
+    },
+    {
+     "harf": "B",
+     "metin": "Aslan"
+    },
+    {
+     "harf": "C",
+     "metin": "Kartal"
+    },
+    {
+     "harf": "D",
+     "metin": "Çift başlı kartal"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: \"il marchio dei Cranach, un serpentello alato\".",
+   "yanlis_gerekceleri": {
+    "B": "Aslan değil; kanatlı yılan.",
+    "C": "Kartal değil; kanatlı yılan.",
+    "D": "Çift başlı kartal Habsburg imgesidir; Cranach markası kanatlı yılan."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "1784 envanteri atfı ne yaptı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dürer'den Cranach'a çevirdi"
+    },
+    {
+     "harf": "B",
+     "metin": "Cranach'dan Dürer'e çevirdi"
+    },
+    {
+     "harf": "C",
+     "metin": "Baldung'a çevirdi"
+    },
+    {
+     "harf": "D",
+     "metin": "Anonim bıraktı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: Baldinucci/eski envanter Dürer; 1784 Cranach.",
+   "yanlis_gerekceleri": {
+    "B": "Ters yön değil; Dürer→Cranach.",
+    "C": "Baldung değil; Cranach.",
+    "D": "Anonim değil; Cranach atfı verildi."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "İmza ve tarih hangi panoda?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Âdem panelinde (kanatlı yılanla)"
+    },
+    {
+     "harf": "B",
+     "metin": "Havva panelinde"
+    },
+    {
+     "harf": "C",
+     "metin": "Her ikisinde"
+    },
+    {
+     "harf": "D",
+     "metin": "Hiçbirinde"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: siglato e datato 1528 sulla tavola di Adamo; K1 marka Âdem'de.",
+   "yanlis_gerekceleri": {
+    "B": "Havva'da değil; Âdem'de.",
+    "C": "Her ikisinde değil; Âdem'de.",
+    "D": "Var; Âdem panelinde."
+   },
+   "kanit": [
+    "C005",
+    "C004"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Kaynak betimine göre Havva ne tutar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yasak meyve (elma)"
+    },
+    {
+     "harf": "B",
+     "metin": "Kum saati"
+    },
+    {
+     "harf": "C",
+     "metin": "Ayna"
+    },
+    {
+     "harf": "D",
+     "metin": "Kitap"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Eva tiene il frutto proibito (una mela).",
+   "yanlis_gerekceleri": {
+    "B": "Kum saati Baldung resminin nesnesidir.",
+    "C": "Ayna Baldung/Metsys nesnesidir.",
+    "D": "Kitap Metsys kadınının nesnesidir."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Dürer'in 1507 Âdem-Havva panoları nerededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Museo del Prado"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "KHM"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: Dürer 1507 tavole oggi al Prado.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi Cranach çiftinin kurumudur.",
+    "C": "Louvre Metsys'in kurumudur.",
+    "D": "KHM Baldung'un kurumudur."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Cranach'ın ilk küçük Âdem-Havva versiyonu (1510) nerededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Varşova müzesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Prado"
+    },
+    {
+     "harf": "D",
+     "metin": "Viyana"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: prima piccola versione 1510 (59x44) oggi a Varsavia.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi 1528 çiftidir.",
+    "C": "Prado Dürer panolarıdır.",
+    "D": "Viyana Cranach'ın hümanist çevre dönemidir; versiyon Varşova'da."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "İki tavole hangi yıl restore edildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1999"
+    },
+    {
+     "harf": "B",
+     "metin": "1784"
+    },
+    {
+     "harf": "C",
+     "metin": "1688"
+    },
+    {
+     "harf": "D",
+     "metin": "1528"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: restaurate nel 1999.",
+   "yanlis_gerekceleri": {
+    "B": "1784 atıf envanteri yılıdır.",
+    "C": "1688 granducali koleksiyon kaydı yılıdır.",
+    "D": "1528 eserin tarihidir."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Resmî katalog (arşiv) panel boyutu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "167 × 61 cm (her iki)"
+    },
+    {
+     "harf": "B",
+     "metin": "172 × 124 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "70,5 × 67 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "48,2 × 32,8 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: (Altezza per Larghezza) 167 x 61 her iki scheda.",
+   "yanlis_gerekceleri": {
+    "B": "172×124 enwiki infobox (çift toplamı olabilir; D).",
+    "C": "70,5×67 Metsys panelidir.",
+    "D": "48,2×32,8 Baldung panelidir."
+   },
+   "kanit": [
+    "C001",
+    "C002"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser iki ayrı panodan oluşan bir pendant çiftidir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2): Adamo + Eva, ayrı envanter.",
+   "kanit": [
+    "C001",
+    "C002"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Cranach atölye markası kanatlı yılandır ve Âdem panelinde tarihin yanında durur.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Baldinucci eseri Cranach'a atfetmiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış (K1/K2): Baldinucci Dürer'e atfetti; 1784 envanteri Cranach'a çevirdi.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Kaynak betimine göre Havva elmayı Âdem'e uzatır ve yılan yukarıdan sarkar.",
+   "dogru": true,
+   "aciklama": "Doğru (K2). Görsel bu oturumda incelenemedi (C017).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "İki tavole 1999'da restore edilmiştir.",
+   "dogru": true,
+   "aciklama": "Doğru (K2).",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Atıf zincirini (Baldinucci→1784→marka) üç kanıt türü olarak karşılaştırın.",
+   "beklenen_ogeler": [
+    "stilistik tahmin",
+    "envanter kararı",
+    "atölye markası",
+    "marka atölye düzeyinde"
+   ],
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Boyut ihtilafını \"ölçüm birimi\" hipoteziyle test edin.",
+   "beklenen_ogeler": [
+    "resmî 167×61 her iki",
+    "itwiki Âdem 172×63",
+    "enwiki 172×124 çift",
+    "D olarak açık"
+   ],
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Dalların örtüsünü utanç ↔ masumiyet olarak iki okuyun.",
+   "beklenen_ogeler": [
+    "düşüş öncesi örtü",
+    "kaçınılmazlık ima",
+    "doğa ile bütün",
+    "iki okuma çoğul"
+   ],
+   "kanit": [
+    "C008",
+    "C019"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Pendant formatının anlamı nasıl ürettiğini yazın.",
+   "beklenen_ogeler": [
+    "iki ayrı pano",
+    "birbirine yönelim",
+    "arasındaki boşluk",
+    "izleyici birleştirici"
+   ],
+   "kanit": [
+    "C001",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Arşiv birincilin statüsünü ve görsel sınırını değerlendirin.",
+   "beklenen_ogeler": [
+    "canlı URL ölü",
+    "arşiv 2022",
+    "güncel teyit bekliyor",
+    "görsel incelenemedi",
+    "GZ TASLAK"
+   ],
+   "kanit": [
+    "C023",
+    "C017"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "İki figürün ayrı panolarda, koyu fon önünde duruşunu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: koyu fon, zar zor görünen zemin.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Havva'nın elmayı uzatışını ve yukarıdan sarkan yılanı izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: yılan ağaç dalından sarkar.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Her iki figürün cinsel organları örten küçük dalları tutuşunu fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: rametti örtü.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Âdem'in rahat pozunu (dirsek kalkık / başını kaşır) karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): İki kaynak betimi farklı ayrıntı verir.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Âdem panelindeki kanatlı yılan markasını ve tarihi arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Marka tarihin yanında; atıf belgesi.",
+   "kanit": [
+    "C004"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Çiftin künyesi?",
+   "arka": "Adamo ed Eva; Lucas Cranach (yaşlı); 1528 (Âdem panelinde imza+kanatlı yılan); olio su tavola; resmî 167×61 her iki; Uffizi inv. 1459 (Âdem)/1458 (Havva).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C005",
+    "C004"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Atıf tarihi?",
+   "arka": "Baldinucci + eski envanter Dürer → 1784 envanter Cranach; kanıt Âdem panelindeki serpentello alato + tarih; marka atölye düzeyinde.",
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "İkonografi?",
+   "arka": "Havva elma + yılan yukarıdan (ağaç dalı) + elmayı Âdem'e uzatır; dallar örtü; koyu fon; iki ayrı panel.",
+   "kanit": [
+    "C009",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Nü geleneği?",
+   "arka": "Dürer anatomi → 1507 Prado (ilk doğal boyut Alman nü); Baldung kopyası aynı salon; Cranach Viyana 1501–03 hümanist; 1510 Varşova küçük versiyon.",
+   "kanit": [
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Provenance/restorasyon?",
+   "arka": "Granducali ≥1688 → Uffizi 18. yy başı → 1999 restorasyon; iki tavole ayrı envanterle kayıtlı.",
+   "kanit": [
+    "C012",
+    "C015"
+   ]
+  }
+ ]
+}

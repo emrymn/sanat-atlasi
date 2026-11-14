@@ -1,6 +1,6 @@
 # DURUM — 107 Başyapıt İlerleme Takibi
 
-**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 1 toplu düzeltme — PARTI_1_CLAUDE_DENETIM) · Pilot: Q167605 (Süt Boşaltan Kadın)
+**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 2 üretimi — 20 eser, PARTI_2_URETIM_RAPORU) · Pilot: Q167605 (Süt Boşaltan Kadın)
 
 Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt envanteri hazır → Taslak hazır → Doğrulama bekliyor → İnsan incelemesi bekliyor → Yayına aday`. Hiçbir eser otomatik olarak "Yayına aday" yapılmaz; insan editoryal onayı gerekir.
 
@@ -25,30 +25,30 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 | 15 | M3 | Q285392 | Mérode Triptiği | robert-campin | İnsan incelemesi bekliyor ✅ |
 | 16 | M3 | Q220859 | Arnolfini Portresi (Arnolfini Portrait) | jan-van-eyck | İnsan incelemesi bekliyor ✅ |
 | 17 | M3 | Q2409245 | Genç Bir Kızın Portresi | petrus-christus | İnsan incelemesi bekliyor ✅ |
-| 18 | M4 | Q2892964 | Tefeci ve Karısı | quentin-metsys | Araştırılmadı |
-| 19 | M4 | Q27978197 | Üç Çağ ve Ölüm | hans-baldung-grien | Araştırılmadı |
-| 20 | M4 | Q3605055 | Âdem ile Havva | lucas-cranach-yasl | Araştırılmadı |
-| 21 | M4 | Q1212937 | Elçiler (The Ambassadors) | hans-holbein-genc | Araştırılmadı |
+| 18 | M4 | Q2892964 | Tefeci ve Karısı | quentin-metsys | İnsan incelemesi bekliyor ✅ |
+| 19 | M4 | Q27978197 | Üç Çağ ve Ölüm | hans-baldung-grien | İnsan incelemesi bekliyor ✅ |
+| 20 | M4 | Q3605055 | Âdem ile Havva | lucas-cranach-yasl | İnsan incelemesi bekliyor ✅ |
+| 21 | M4 | Q1212937 | Elçiler (The Ambassadors) | hans-holbein-genc | İnsan incelemesi bekliyor ✅ |
 | 22 | M3 | hieronymus-bosch|Garden of Earthly Delights | Dünyevi Zevkler Bahçesi (The Garden of Earthly Delights) | hieronymus-bosch | İnsan incelemesi bekliyor ✅ |
 | 23 | M3 | Q500985 | Karda Avcılar | pieter-bruegel-yasl | İnsan incelemesi bekliyor ✅ |
-| 24 | M5 | Q128910 | Son Akşam Yemeği | leonardo-da-vinci | Araştırılmadı |
-| 25 | M5 | Q500242 | Âdem'in Yaratılışı | michelangelo | Araştırılmadı |
+| 24 | M5 | Q128910 | Son Akşam Yemeği | leonardo-da-vinci | İnsan incelemesi bekliyor ✅ |
+| 25 | M5 | Q500242 | Âdem'in Yaratılışı | michelangelo | İnsan incelemesi bekliyor ✅ |
 | 26 | M2 | Q3697588 | Sütundaki İsa | donato-bramante | İnsan incelemesi bekliyor ✅ |
-| 27 | M5 | Q186953 | Atina Okulu (La scuola di Atene) | raphael | Araştırılmadı |
-| 28 | M5 | Q700834 | Jüpiter ve Io | correggio | Araştırılmadı |
-| 29 | M4 | Q18579333 | Paris'in Hükmü | marcantonio-raimondi | Araştırılmadı |
-| 30 | M5 | Q727875 | Urbino Venüsü (Venus of Urbino) | titian | Araştırılmadı |
-| 31 | M6 | Q2472983 | Son Akşam Yemeği | tintoretto | Araştırılmadı |
+| 27 | M5 | Q186953 | Atina Okulu (La scuola di Atene) | raphael | İnsan incelemesi bekliyor ✅ |
+| 28 | M5 | Q700834 | Jüpiter ve Io | correggio | İnsan incelemesi bekliyor ✅ |
+| 29 | M4 | Q18579333 | Paris'in Hükmü | marcantonio-raimondi | İnsan incelemesi bekliyor ✅ |
+| 30 | M5 | Q727875 | Urbino Venüsü (Venus of Urbino) | titian | İnsan incelemesi bekliyor ✅ |
+| 31 | M6 | Q2472983 | Son Akşam Yemeği | tintoretto | İnsan incelemesi bekliyor ✅ |
 | 32 | M6 | Q185255 | Kana'da Düğün | paolo-veronese | Araştırılmadı |
-| 33 | M6 | Q18572249 | Aziz Thomas'ın Şüphesi | francesco-salviati | Araştırılmadı |
-| 34 | M6 | Q3705703 | Çarmıhtan İndiriliş | jacopo-pontormo | Araştırılmadı |
-| 35 | M6 | Q23008305 | Satranç Oynayan Sanatçının Kız Kardeşlerinin Portresi | sofonisba-anguissola | Araştırılmadı |
-| 36 | M6 | Q140161127 | Çarmıhtan İndiriliş | daniele-da-volterra | Araştırılmadı |
-| 37 | M6 | Q1430990 | Bir Alegori (Venüs, Aşk Tanrısı, Zaman ve Akılsızlık) | agnolo-bronzino | Araştırılmadı |
-| 38 | M6 | Q867403 | Uzun Boyunlu Meryem | parmigianino | Araştırılmadı |
-| 39 | M6 | Q94802 | Orgaz Kontu'nun Gömülmesi (El entierro del conde de Orgaz) | el-greco | Araştırılmadı |
-| 40 | M6 | Q1863885 | Musa, Yitro'nun Kızlarını Savunurken | rosso-fiorentino | Araştırılmadı |
-| 41 | M6 | Q19966572 | Aşk Sahnesi | giulio-romano | Araştırılmadı |
+| 33 | M6 | Q18572249 | Aziz Thomas'ın Şüphesi | francesco-salviati | İnsan incelemesi bekliyor ✅ |
+| 34 | M6 | Q3705703 | Çarmıhtan İndiriliş | jacopo-pontormo | İnsan incelemesi bekliyor ✅ |
+| 35 | M6 | Q23008305 | Satranç Oynayan Sanatçının Kız Kardeşlerinin Portresi | sofonisba-anguissola | İnsan incelemesi bekliyor ✅ |
+| 36 | M6 | Q140161127 | Çarmıhtan İndiriliş | daniele-da-volterra | İnsan incelemesi bekliyor ✅ |
+| 37 | M6 | Q1430990 | Bir Alegori (Venüs, Aşk Tanrısı, Zaman ve Akılsızlık) | agnolo-bronzino | İnsan incelemesi bekliyor ✅ |
+| 38 | M6 | Q867403 | Uzun Boyunlu Meryem | parmigianino | İnsan incelemesi bekliyor ✅ |
+| 39 | M6 | Q94802 | Orgaz Kontu'nun Gömülmesi (El entierro del conde de Orgaz) | el-greco | İnsan incelemesi bekliyor ✅ |
+| 40 | M6 | Q1863885 | Musa, Yitro'nun Kızlarını Savunurken | rosso-fiorentino | İnsan incelemesi bekliyor ✅ |
+| 41 | M6 | Q19966572 | Aşk Sahnesi | giulio-romano | İnsan incelemesi bekliyor ✅ |
 | 42 | M7 | Q3998957 | Farnese Tavanı – Tanrıların Aşkları: Bakkhus ve Ariadne'nin Zaferi | annibale-carracci | Araştırılmadı |
 | 43 | M7 | Q318947 | Emmaus'ta Akşam Yemeği | caravaggio | Araştırılmadı |
 | 44 | M7 | Q63341 | Pezevenk Kadın | dirck-van-baburen | Araştırılmadı |
@@ -120,8 +120,8 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 
 | Durum | Adet |
 |---|---|
-| İnsan incelemesi bekliyor | 21 (Parti 1: 20 + pilot Q167605) |
-| Araştırılmadı | 86 |
+| İnsan incelemesi bekliyor | 41 (Parti 1: 20 + Parti 2: 20 + pilot Q167605) |
+| Araştırılmadı | 66 |
 | Toplam | 107 |
 
 ## Parti Günlüğü
@@ -229,6 +229,59 @@ Claude bağımsız denetim raporu (P0 kritik + P1 yüksek + sistematik) **ham ka
 - **Sistematik (20 eser):** S-4 dolgu → 45 yakın-kopya paragraf kaldırıldı (8 eser); S-7 totolojik çeldirici → 295 gerekçe bağlamsal gerekçeye çevrildi (gen.py kalıcı); S-5 görsel incelenmeyen 14 eserde GZ "TASLAK" işaretli; S-8 KANIT Sayım satırları DERS.json ile eşitlendi (domenico B=10/E=8 düzeltildi); Q5856992 Başlangıç 533→499.
 - **dogrula.py geliştirildi:** §8 kelime aralığı uyarısı, yakın tekrar (difflib>0.6) + seviyeler arası tekrar kontrolü, boş quiz kanıtı hatası, KANIT↔DERS.json sayım tutarlılığı, totoloji tespiti. Testler 20→**25/25**.
 - **Sonuç:** dogrula **0 hata, 35 uyarı** (30 kelime aralığı — dolgu kaldırınca kısa ders, bilinçli tercih; 5 seviyeler arası kısmi tekrar). CJK içerik 0. Durum "İnsan incelemesi bekliyor" korundu; uygulama kodu/`data/` değişmedi; pilot değişmedi. Yalnız `content-review` branch'ine commit/push (main'e merge/yayın yok).
+
+### Parti 2 (20 eser) — M4 kalanı + M5 + M6 ilk 10
+
+**Kapsam:** Vermeer pilotu ve Parti 1'in 20 eseri atlandı; MUFREDAT sırasında sıradaki 20 eser üretildi. Ayrıntılı rapor: `PARTI_2_URETIM_RAPORU.md`. 10 eser ana oturumda, 10 eser `ders-yazim` alt-agent'larında (araştırma brief'leri `kaynak-arastirma` agent'larından) yazıldı; tümü ana oturumda bağımsız doğrulandı.
+
+| Sıra | Anahtar | Eser | Sanatçı | Durum |
+|---|---|---|---|---|
+| 1 | Q2892964 | Tefeci ve Karısı | Quentin Metsys | İnsan incelemesi bekliyor ✅ |
+| 2 | Q27978197 | Üç Çağ ve Ölüm | Hans Baldung Grien | İnsan incelemesi bekliyor ✅ |
+| 3 | Q3605055 | Âdem ile Havva | Lucas Cranach (yaşlı) | İnsan incelemesi bekliyor ✅ |
+| 4 | Q1212937 | Elçiler | Hans Holbein (genç) | İnsan incelemesi bekliyor ✅ |
+| 5 | Q18579333 | Paris'in Hükmü (baskı) | Marcantonio Raimondi | İnsan incelemesi bekliyor ✅ |
+| 6 | Q128910 | Son Akşam Yemeği | Leonardo da Vinci | İnsan incelemesi bekliyor ✅ |
+| 7 | Q500242 | Âdem'in Yaratılışı | Michelangelo | İnsan incelemesi bekliyor ✅ |
+| 8 | Q186953 | Atina Okulu | Raphael | İnsan incelemesi bekliyor ✅ |
+| 9 | Q700834 | Jüpiter ve Io | Correggio | İnsan incelemesi bekliyor ✅ |
+| 10 | Q727875 | Urbino Venüsü | Titian | İnsan incelemesi bekliyor ✅ |
+| 11 | Q3705703 | Çarmıhtan İndiriliş | Pontormo | İnsan incelemesi bekliyor ✅ |
+| 12 | Q1863885 | Musa, Yitro'nun Kızlarını Savunurken | Rosso Fiorentino | İnsan incelemesi bekliyor ✅ |
+| 13 | Q867403 | Uzun Boyunlu Meryem | Parmigianino | İnsan incelemesi bekliyor ✅ |
+| 14 | Q1430990 | Bir Alegori (Venüs, Cupid, Zaman, Akılsızlık) | Bronzino | İnsan incelemesi bekliyor ✅ |
+| 15 | Q140161127 | Çarmıhtan İndiriliş | Daniele da Volterra | İnsan incelemesi bekliyor ✅ |
+| 16 | Q18572249 | Aziz Thomas'ın Şüphesi | Francesco Salviati | İnsan incelemesi bekliyor ✅ |
+| 17 | Q19966572 | Aşk Sahnesi | Giulio Romano | İnsan incelemesi bekliyor ✅ |
+| 18 | Q23008305 | Satranç Oynayan Kız Kardeşler | Sofonisba Anguissola | İnsan incelemesi bekliyor ✅ |
+| 19 | Q94802 | Orgaz Kontu'nun Gömülmesi | El Greco | İnsan incelemesi bekliyor ✅ |
+| 20 | Q2472983 | Son Akşam Yemeği | Tintoretto | İnsan incelemesi bekliyor ✅ |
+
+**Parti 2 ilerleme:** 20/20 tamamlandı — **PARTİ 2 BİTTİ.** (Sıradaki: Parti 3, MUFREDAT sırasında #32 Q185255 Veronese Kana'da Düğün.)
+
+**Üretim günlüğü (iddia A/B/C/D/E · kelime B/O/İ · dogrula hata/uyarı):**
+- 14 Kasım 2026 — #1 Q2892964 (Metsys, Tefeci ve Karısı, Louvre): 37 (A16/B15/C2/D3/E1) · 500/1325/2656 · 0/0. Louvre birincil A (INV 1444/MR 821, Salle 814, 70.5×67). Görsel İNCELENDİ (ilk 2 eser; vision bütçesi sonra tükendi).
+- #2 Q27978197 (Baldung, Üç Çağ ve Ölüm, KHM): 25 (A10/B10/C2/D2/E1) · 439/1304/2604 · 0/0. KHM birincil A (GG_2636, Kabinett 16, Lindenholz 48.2×32.8). Görsel İNCELENDİ.
+- #3 Q3605055 (Cranach, Âdem ile Havva, Uffizi): 25 (A5/B13/C3/D2/E2) · 405/1302/2539 · 0/1 (İ §8). Uffizi arşiv birincil A (inv 1459/1458). data "Haffs" yazım hatası not edildi. Vision tükendi → GZ TASLAK.
+- #4 Q1212937 (Holbein, Elçiler, National Gallery): 33 (A12/B12/C2/D5/E2) · 405/1311/2551 · 0/1 (İ §8). NG birincil A (NG1314, Room 4, 207×209.5 meşe). Anamorfik kafatası; GZ TASLAK.
+- #5 Q18579333 (Raimondi, Paris'in Hükmü, çok nüsha baskı): 55 (A32/B0/C3/D12/E8) · 417/1417/2616 · 0/0. 7 nüsha kaydı açıldı (Met/Kunsthalle/BnF/NGA/Boijmans/Uffizi/Berlin); Stuttgart birincil BULUNAMADI (E). B=0 (dewiki satır içi atıfsız → C/E). Gösterilen nüsha Met 19.74.1 ↔ data Stuttgart uyuşmazlığı (D). Agent yazımı.
+- #6 Q128910 (Leonardo, Son Akşam Yemeği, Cenacolo): 22 (A3/B12/C3/D2/E2) · 411/1300/2476 · 0/1 (İ §8). Cenacolo birincil A; data 1490 hatası; teknik tempera (fresk DEĞİL). GZ TASLAK.
+- #7 Q500242 (Michelangelo, Âdem'in Yaratılışı, Sistina): 28 (A5/B8/C9/D4/E2) · 411/1300/2485 · 0/1 (İ §8). Vatican birincil A; birincilde tarih/boyut yok. GZ TASLAK.
+- #8 Q186953 (Raphael, Atina Okulu, Vatikan): 33 (A10/B10/C2/D9/E2) · 411/1257/2339 · 0/2 (O/İ §8). Vatican arşiv A; WD P217 6306a = Ambrosiana KARTON (fresk değil) not edildi. GZ TASLAK.
+- #9 Q700834 (Correggio, Jüpiter ve Io, KHM): 41 (A12/B16/C4/D7/E2) · 378/981/1720 · 0/3 (§8 kısa). KHM birincil A (GG_274, Kabinett 3, um 1530); DE↔EN boyut çelişkisi (D). Erotik konu akademik. GZ TASLAK.
+- #10 Q727875 (Titian, Urbino Venüsü, Uffizi): 25 (A3/B13/C2/D5/E2) · 402/1305/2524 · 0/1 (İ §8). Uffizi arşiv A (inv 1437). Erotik konu akademik açık ayrıntısız. GZ TASLAK.
+- #11 Q3705703 (Pontormo, Çarmıhtan İndiriliş, Santa Felicita): 90 (A8/B48/C5/D14/E15) · 486/1411/3158 · 0/0. Polo Museale arşiv 2024-02-14 A (00156026, 313×192); oil↔egg-tempera (D). Agent yazımı. GZ TASLAK.
+- #12 Q1863885 (Rosso, Musa Yitro'nun Kızları, Uffizi): 46 (A23/B10/C1/D5/E7) · 410/1317/2661 · 0/0. Uffizi canlı + 2022 arşiv A; tarih 1523↔1523–27 (D); Natali "copia fedelissima e coeva" (D). Agent yazımı. GZ TASLAK.
+- #13 Q867403 (Parmigianino, Uzun Boyunlu Meryem, Uffizi): 54 (A18/B17/C2/D7/E10) · 423/1325/2720 · 0/0. Uffizi canlı + arşiv A; tomarlı figür Jerome+Francis↔peygamber↔data "İşaya" (D, kaynaklandırılmamış). Agent yazımı. GZ TASLAK.
+- #14 Q1430990 (Bronzino, Bir Alegori, National Gallery): 56 (A28/B10/C4/D8/E6) · 466/1422/2658 · 0/0. NG canlı A (NG651, Room 2, About 1545, 146.1×116.2); 8 D (tarih/boyut/Jealousy/putto/Oblivion-Verità-Gece/hibrit eller/provenans/başlık). Agent yazımı. GZ TASLAK.
+- #15 Q140161127 (Volterra, Çarmıhtan İndiriliş, Trinità dei Monti): 48 (A12/B18/C6/D6/E6) · 441/1379/2785 · 0/6 (kaynakça heuristic). trinitadeimonti.net canlı + Treccani DBI A/B; boyut hiçbir kaynakta yok (E); Michelangelo hipotezi reddedildi (D). Agent yazımı. GZ TASLAK.
+- #16 Q18572249 (Salviati, Aziz Thomas'ın Şüphesi, Louvre): 40 (A18/B3/C7/D5/E7) · 424/1334/2805 · 0/0. Louvre arşiv + Joconde POP A; data/WD 1537 Joconde'da YOK ("2e quart 16e siècle") (D); pano→tuval 1806. Agent yazımı. GZ TASLAK.
+- #17 Q19966572 (Giulio Romano, Aşk Sahnesi, Hermitage): 19 (A1/B12/C2/D2/E2) · 363/769/1247 · 0/3 (§8 kısa). Hermitage birincil URL BULUNAMADI (E); ГЭ-223; Berlin kayıp versiyon orijinallik (D). Erotik konu akademik. Agent içerik filtresine takıldığı için ana oturumda yazıldı. GZ TASLAK.
+- #18 Q23008305 (Anguissola, Satranç Oynayan Kız Kardeşler, Poznań): 72 (A17/B22/C6/D11/E16) · 420/1353/2630 · 0/0. mnp.art.pl canlı A (72×97, Raczyński, 1823 Berlin); Vasari 1556↔1566, yazıt, hizmetçi konumu (D). Agent yazımı. GZ TASLAK.
+- #19 Q94802 (El Greco, Orgaz Kontu'nun Gömülmesi, Santo Tomé): 82 (A15/B27/C12/D11/E17) · 416/1329/3119 · 0/0. santotome.org canlı A (sözleşme 15 Mar 1586, teslim bahar 1588, 1200 dukat); tarih 1586↔1586–88 (D). Agent yazımı. GZ TASLAK.
+- #20 Q2472983 (Tintoretto, Son Akşam Yemeği, San Giorgio Maggiore): 45 (A12/B16/C3/D4/E10) · 420/1303/2633 · 0/0. ICCD scheda 0500123375 arşiv 2025-01-20 A (canlı 403); tarih 1563↔1592–94 (D); yerleşim arkası↔presbiterio sağ (D). Agent yazımı. GZ TASLAK.
+
+**PARTİ 2 ÖZET (20/20):** Tümü "İnsan incelemesi bekliyor"; **dogrula 0 hata** (parti 2 eserleri), **19 uyarı** (13 kelime aralığı §8 — bilinçli kısa ders, dolgu yok; 6 Volterra kaynakça heuristic yanlış-pozitifi). CJK 0. Toplam iddia **876 (A260/B292/C80/D124/E120)**; her eserde quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (CS/DY/GZ/TK yalnız A/B). `dogrula.py --test` **25/25**. Birincil katalog erişimi: Louvre, KHM, Uffizi, National Gallery, Vatican, Cenacolo, Polo Museale, trinitadeimonti.net, mnp.art.pl, santotome.org, ICCD, Joconde AÇILDI → güçlü A; Hermitage (#17) + Stuttgart Raimondi (#5) birincil URL bulunamadı → E. **Vision bütçesi #3'ten sonra tükendi** → 18 eserde görsel indirildi ama İNCELENEMEDİ (E); kompozisyon birincil/ikincil METİNDEN; GZ 5/5 TASLAK. Erotik konular (Titian, Correggio, Giulio) akademik ve açık ayrıntısız betimlendi. Hata listesi (üretimde yakalanıp düzeltildi): quiz D/E-kanıt ihlalleri (A/B'ye çekildi), CJK karışmaları, "II. Dünya"/"inv." cümle bölünmesi, yakın-tekrar paragraflar, KANIT Sayım eşitleme. Kalıcı sınır: insan editör görsel + birincil teyidi ZORUNLU; hiçbir eser "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1 değişmedi; yalnız `content-review` commit/push.
 
 ### Veri Notları (mevcut veri DEĞİŞTİRİLMEDİ — onaya sunulur)
 

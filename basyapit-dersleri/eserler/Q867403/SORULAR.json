@@ -1,0 +1,554 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q867403",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gallerie degli Uffizi, Floransa"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Prado, Madrid"
+    },
+    {
+     "harf": "D",
+     "metin": "Kunsthistorisches Museum, Viyana"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 (Uffizi): Museum \"The Uffizi\", salon D4.",
+   "yanlis_gerekceleri": {
+    "B": "Louvre Paris'tedir; bu eser Uffizi'dedir (S4). Hazırlık çizimlerinden biri Louvre'dadır, pano değil.",
+    "C": "Prado Madrid'dedir; eserin müzesi Uffizi'dir (S4).",
+    "D": "KHM Viyana'dadır; Correggio Jüpiter ve Io oradadır, bu eser Uffizi'de (S4)."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Güncel Uffizi envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Palatina n. 230"
+    },
+    {
+     "harf": "B",
+     "metin": "GG_274"
+    },
+    {
+     "harf": "C",
+     "metin": "NG651"
+    },
+    {
+     "harf": "D",
+     "metin": "INV 1444"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: Inventory \"Palatina n. 230\"; S6 ulusal katalog 00287693.",
+   "yanlis_gerekceleri": {
+    "B": "GG_274, KHM'deki Correggio Jüpiter ve Io'nun envanteridir; bu eser Palatina n. 230 (S4).",
+    "C": "NG651 farklı bir eserin envanteridir; Uffizi kaydı Palatina n. 230 verir (S4).",
+    "D": "INV 1444 bu esere ait değildir; doğru envanter Palatina n. 230 (S4)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin teknik ve desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pano üzerine yağlıboya (oil on panel)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk (duvar resmi)"
+    },
+    {
+     "harf": "D",
+     "metin": "Yumurta temperası"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: Technique \"Oil on panel\"; WD oil paint + panel.",
+   "yanlis_gerekceleri": {
+    "B": "Destek tuval değil panodur; S4 \"Oil on panel\" der.",
+    "C": "Fresk duvar resmidir; bu eser pano üzerine yağlıboyadır (S4).",
+    "D": "Tempera değil yağlıboya; S4 \"Oil on panel\" der."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Güncel birincil Uffizi kaydına göre eseri kim sipariş etti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Elena Baiardi Tagliaferri"
+    },
+    {
+     "harf": "B",
+     "metin": "Francesco Tagliaferri"
+    },
+    {
+     "harf": "C",
+     "metin": "Kardinal Leopoldo de' Medici"
+    },
+    {
+     "harf": "D",
+     "metin": "Grand Prince Ferdinando de' Medici"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: 1534'te Elena Baiardi Tagliaferri, Santa Maria dei Servi (Parma) için sipariş etti.",
+   "yanlis_gerekceleri": {
+    "B": "Francesco Tagliaferri, enwiki'nin Grove atıflı varyantıdır; birincil kayıt Elena Baiardi Tagliaferri der (D002).",
+    "C": "Kardinal Leopoldo 1674'te satın alma görüşmesini başlatan kişidir, siparişveren değil (S6).",
+    "D": "Ferdinando 1698'de eseri satın alan kişidir, siparişveren değil (S4)."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Uffizi'ye göre sanatçı sözleşmede ne taahhüt etti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Beş ayda bitirme"
+    },
+    {
+     "harf": "B",
+     "metin": "Bir yılda bitirme"
+    },
+    {
+     "harf": "C",
+     "metin": "Ömür boyu süre"
+    },
+    {
+     "harf": "D",
+     "metin": "Teslim tarihi yok"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"undertook to finish the painting in five months\"; S6 Pentecost 1535 hedefi.",
+   "yanlis_gerekceleri": {
+    "B": "Süre bir yıl değil beş aydır (S4); hedef Pentecost 1535 (S6).",
+    "C": "Ömür boyu taahhüt yok; sözleşme beş ay der (S4).",
+    "D": "Teslim tarihi vardır: Pentecost 1535 / beş ay (S4/S6)."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Eser neden bitmemiş kaldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1540'ta sanatçının ölümü"
+    },
+    {
+     "harf": "B",
+     "metin": "Siparişveren iptal etti"
+    },
+    {
+     "harf": "C",
+     "metin": "Savaşta tahrip oldu"
+    },
+    {
+     "harf": "D",
+     "metin": "Restorasyonda silindi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: 1540'ta ölümünde altarpiece stüdyoda bitmemişti; 1542'de bitmemiş hâliyle sunağa kondu.",
+   "yanlis_gerekceleri": {
+    "B": "Sipariş iptal edilmedi; eser 1542'de sunağa yerleştirildi (S4/S6).",
+    "C": "Savaş tahribi değil; bitmemişlik sanatçının 1540'taki ölümündendir (S4).",
+    "D": "Restorasyonda silinmedi; eser ölümünde yarım kalmıştı (S4)."
+   },
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Uffizi'ye göre uyuyan Çocuğun uykusu neyi önceler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Çarmıh ölümünü"
+    },
+    {
+     "harf": "B",
+     "metin": "Vaftizini"
+    },
+    {
+     "harf": "C",
+     "metin": "İlk mucizesini"
+    },
+    {
+     "harf": "D",
+     "metin": "Dirilişini"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"The Child's slumber prefigures his death on the cross\"; urn'de Crucifixion yansıması.",
+   "yanlis_gerekceleri": {
+    "B": "Vaftiz değil; uyku çarmıh ölümünü önceler (S4).",
+    "C": "İlk mucize değil; çarmıh ölümü öncelenir (S4).",
+    "D": "Diriliş değil; uyku ölümü (Crucifixion) önceler (S4)."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Güncel müze kaydına göre sağ alttaki tomarlı küçük figür kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Aziz Jerome"
+    },
+    {
+     "harf": "B",
+     "metin": "Aziz Peter"
+    },
+    {
+     "harf": "C",
+     "metin": "Aziz Paul"
+    },
+    {
+     "harf": "D",
+     "metin": "Aziz John"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"The small figure at the bottom on the right is St Jerome\", tomarını açar; yanında bitmemiş St Francis.",
+   "yanlis_gerekceleri": {
+    "B": "Aziz Peter değil; güncel kayıt figürü St Jerome olarak tanımlar (S4).",
+    "C": "Aziz Paul değil; kayıt St Jerome der (S4).",
+    "D": "Aziz John değil; kayıt St Jerome der (S4)."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Sütun tabanındaki yazıt neyi gerekçelendirir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Eserin bitmemişliğini"
+    },
+    {
+     "harf": "B",
+     "metin": "Sanatçının doğumunu"
+    },
+    {
+     "harf": "C",
+     "metin": "Siparişverenin ölümünü"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir restorasyonu"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: yazıt \"kaderin engellemesi... completing this work\" — bitmemişliği gerekçelendirir; 1542'de eklendi.",
+   "yanlis_gerekceleri": {
+    "B": "Doğumu değil; yazıt eserin tamamlanamamasını (bitmemişliği) açıklar (S4).",
+    "C": "Siparişverenin ölümünü değil; sanatçının eseri bitirememesini açıklar (S4).",
+    "D": "Restorasyonu değil; bitmemişliği \"kaderin engellemesi\"yle gerekçelendirir (S4)."
+   },
+   "kanit": [
+    "C007",
+    "C010"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "1698'de eseri satın alarak Medici koleksiyonuna katan kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Grand Prince Ferdinando de' Medici"
+    },
+    {
+     "harf": "B",
+     "metin": "Kardinal Leopoldo de' Medici"
+    },
+    {
+     "harf": "C",
+     "metin": "Francesco Farnese"
+    },
+    {
+     "harf": "D",
+     "metin": "Napolyon Bonapart"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: 1698'de Grand Prince Ferdinando satın aldı; mektuplarında eseri över.",
+   "yanlis_gerekceleri": {
+    "B": "Kardinal Leopoldo 1674'te görüşme başlattı ama alımı Ferdinando 1698'de yaptı (S6/S4).",
+    "C": "Francesco Farnese alıma onay veren dukadır; satın alan Ferdinando'dur (S3/S4).",
+    "D": "Napolyon 1799'da eseri Paris'e yağmaladı; 1698 alıcısı Ferdinando'dur (S3/S4)."
+   },
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Uffizi'dedir ve envanteri Palatina n. 230'dur.",
+   "dogru": true,
+   "aciklama": "Doğru (S4): Museum The Uffizi, Inventory Palatina n. 230.",
+   "kanit": [
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser tuval üzerine yağlıboyadır.",
+   "dogru": false,
+   "aciklama": "Yanlış (S4): teknik \"Oil on panel\" — pano üzerine yağlıboya, tuval değil.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Sanatçı 1540'ta öldüğünde eser stüdyoda bitmemişti.",
+   "dogru": true,
+   "aciklama": "Doğru (S4): 1540 ölümünde altarpiece bitmemişti; 1542'de sunağa kondu.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Güncel Uffizi kaydına göre boyut 219 × 135 cm'dir.",
+   "dogru": false,
+   "aciklama": "Yanlış: güncel Uffizi 216.5 × 132.5 cm der (S4); 219 × 135 eski Polo katalogudur (D001).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Uyuyan Çocuğun uykusu çarmıh ölümünü önceler.",
+   "dogru": true,
+   "aciklama": "Doğru (S4): slumber prefigures his death on the cross; urn'de Crucifixion yansıması.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "İki birincil kaydın (güncel Uffizi ↔ eski Polo Museale) boyut ve siparişveren farkını kaynak eleştirisiyle analiz edin.",
+   "beklenen_ogeler": [
+    "216.5×132.5 ↔ 219×135",
+    "Elena Baiardi ↔ Bajardi",
+    "güncel kayıt esas",
+    "D001/D002"
+   ],
+   "kanit": [
+    "C046",
+    "C047",
+    "C004",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Tomarlı figürde Jerome/Francis ↔ peygamber ↔ \"İşaya\" katmanlarını ayrıştırın; \"İşaya\"nın neden kaynaklandırılmamış olduğunu gösterin.",
+   "beklenen_ogeler": [
+    "S4 Jerome+Francis",
+    "Gombrich/Smarthistory peygamber",
+    "itwiki forse",
+    "İşaya hiçbir kaynakta yok"
+   ],
+   "kanit": [
+    "C048",
+    "C013",
+    "C029",
+    "C033"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "\"Collum tuum ut columna\" ilahisi ile data'daki \"fildişi kule\" imgesini ve sütun sayısı betimlerini karşılaştırın.",
+   "beklenen_ogeler": [
+    "sütun ilahisi (S4/S3)",
+    "fildişi kule (data)",
+    "tabanda çok sütun üstte tek",
+    "D007"
+   ],
+   "kanit": [
+    "C052",
+    "C030",
+    "C028"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Bitmemişliğin belge/biçim/anlam/alımlama katmanlarını birleştirici tema olarak yazın.",
+   "beklenen_ogeler": [
+    "1540 ölüm",
+    "yarım mimari",
+    "yazıt FATO PRAEVENTUS",
+    "Dalla Torre non perfectam ama güzel"
+   ],
+   "kanit": [
+    "C009",
+    "C022",
+    "C007",
+    "C010"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Wikidata P571 temsil hatasını (yil:1600), link anomalisini ve erişilemeyen kaynakları veri notu olarak raporlayın.",
+   "beklenen_ogeler": [
+    "P571 +1600/7",
+    "P580/P582 1534–1540 circa",
+    "san-zaccaria slug",
+    "S5/S8/S11 erişilemedi"
+   ],
+   "kanit": [
+    "C042",
+    "C043",
+    "C054"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Meryem'in uzatılmış boynunu, ince uzun parmaklarını ve göğse kalkık elini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): uzatılmış uzuvlar, \"subtle eroticism\", göğse kalkık ince el.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Solda dar alana sıkışmış melekleri ve öndeki meleğin sunduğu gümüş vazoyu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S3): altı melek sıkışık; öndeki melek gümüş vazo sunar, crucifix yansıması.",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağdaki başlıksız sütun dizisini ve tabandaki ışık/gölge sırasını inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S3/S9): tabanda çok sütun gölgeli, üstte tek boyanmış; \"wall or a single column\".",
+   "kanit": [
+    "C028",
+    "C035"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sağ alttaki tomarlı küçük figürü ve yanındaki yalnızca bir ayağı boyanmış bitmemiş figürü bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4): St Jerome tomar açar, bitmemiş St Francis'e döner (bir ayak).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Uyuyan Çocuğun gevşek, sarkık kolunu ve kucağın \"Pietà\" çağrışımını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (S4/S9): uyku çarmıhı önceler; sol kol Michelangelo Pietà'sındaki ölü İsa'yı andırır.",
+   "kanit": [
+    "C011",
+    "C035"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Parmigianino (Francesco Mazzola, 1503–1540); 1534–1540; oil on panel; 216.5×132.5 cm; Uffizi Palatina n. 230, salon D4.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sipariş + bitmemişlik?",
+   "arka": "1534 Elena Baiardi Tagliaferri, Santa Maria dei Servi (Parma); 5 ay taahhüt; 1540 ölümünde bitmemiş; 1542 sunağa + yazıt.",
+   "kanit": [
+    "C008",
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "İkonografi?",
+   "arka": "Uyuyan Çocuk çarmıhı önceler, urn'de Crucifixion; sütun \"Collum tuum ut columna\" olabilir; sağ altta Jerome + bitmemiş Francis.",
+   "kanit": [
+    "C011",
+    "C012",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Maniyerist biçim?",
+   "arka": "Uzatılmış uzuvlar; Meryem meleklerin ~2 katı; sağ ayak resim düzlemi ötesi; figura serpentinata; \"subtle eroticism\".",
+   "kanit": [
+    "C018",
+    "C034"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Provenance?",
+   "arka": "1674 Ranuzzi görüşmesi; 1698 Grand Prince Ferdinando de' Medici alımı; 1948'den beri Uffizi.",
+   "kanit": [
+    "C016",
+    "C015",
+    "C036"
+   ]
+  }
+ ]
+}
