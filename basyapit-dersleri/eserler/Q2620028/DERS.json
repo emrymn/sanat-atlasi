@@ -35,17 +35,17 @@
   "baslangic": {
    "dosya": "DERS_BASLANGIC.md",
    "hedef_sure_dk": 3,
-   "kelime_sayisi": 397
+   "kelime_sayisi": 379
   },
   "orta": {
    "dosya": "DERS_ORTA.md",
    "hedef_sure_dk": 10,
-   "kelime_sayisi": 1254
+   "kelime_sayisi": 1276
   },
   "ileri": {
    "dosya": "DERS_ILERI.md",
    "hedef_sure_dk": 20,
-   "kelime_sayisi": 2481
+   "kelime_sayisi": 2526
   }
  },
  "bolum_eslesme": {
@@ -111,7 +111,7 @@
  "temel_kavramlar": [
   {
    "ad": "Anahtarlar",
-   "tanim": "Altın (gök)/demir (yer); bağışlama ve papalık yetkisi.",
+   "tanim": "Altın (gök) + ikinci anahtar (gümüş/demir tartışmalı, C023); bağışlama ve papalık yetkisi.",
    "kanit": [
     "C008",
     "C023"
@@ -219,7 +219,7 @@
   },
   {
    "id": "C008",
-   "ifade": "Matta 16; altın+gümüş anahtarlar; bağışlama gücü; diz çökmüş Petrus",
+   "ifade": "Matta 16; altın+gümüş anahtarlar (enwiki \"silver and gold\" + itwiki betimi \"d'oro e d'argento\"); bağışlama gücü; diz çökmüş Petrus. İkinci anahtarın malzemesi tartışmalı (C023)",
    "seviye": "B",
    "kaynak_id": [
     "K2",
@@ -359,12 +359,13 @@
   },
   {
    "id": "C023",
-   "ifade": "Petrus iki anahtar: altın (gök) / demir (yer); sarı elbise + mavi manto",
-   "seviye": "B",
+   "ifade": "İkinci anahtarın malzemesi tartışmalı: enwiki + itwiki betimi \"gümüş\" (argento) der; itwiki'nin Marco Rizzi kaynaklı yorumu \"demir\" (ferro) der (gök/yer ayrımı). Altın anahtar ortak; Petrus sarı elbise + mavi manto",
+   "seviye": "D",
    "kaynak_id": [
+    "K2",
     "K3"
    ],
-   "kullanim": "olgu"
+   "kullanim": "tartisma"
   },
   {
    "id": "C024",
@@ -486,14 +487,15 @@
  "durum": "İnsan incelemesi bekliyor",
  "kalite_kontrol": {
   "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
-  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "denetim_b": "Parti 1 düzeltme: anahtar çelişkisi kaynakla çözüldü — enwiki \"silver and gold\" + itwiki betimi \"d'oro e d'argento\" ↔ itwiki Rizzi yorumu \"ferro\"; C023 D (tartışma). DY04 malzeme iddiası kaldırıldı, TK02 kanit düzeltildi. Boyut farkı not edildi (330/335/340). Görsel incelenemedi (E); GZ taslak. Kanıt zinciri KANIT §2.",
   "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
  },
  "veri_notlari": [
   "data tarih → 1481–1482 (K2/K3); WD 1480'ler.",
-  "Boyut 335×550 K3/K4 uyumlu; Vatican föyü teyidi (C026 E).",
+  "Boyut 335×550 (K3/K4); kaynaklar arası küçük fark (enwiki 330, itwiki 340); Vatican föyü teyidi (C026 E).",
   "Müze alanı: \"Sistine Şapeli, Vatikan — kuzey duvarı\" (K2/K3).",
+  "ANAHTAR ÇELİŞKİSİ ÇÖZÜLDÜ (D): ikinci anahtar gümüş (enwiki + itwiki betimi) ↔ demir (itwiki Rizzi yorumu); altın ortak. DY04 malzeme iddiası kaldırıldı; TK02 kanit C023 çıkarıldı; C023 D.",
   "Otoportre kimliği D; conclave efsanesi B (belgeli).",
-  "Görsel teyit bu oturumda yapılamadı (C025) — insan editör zorunlu."
+  "Görsel teyit bu oturumda yapılamadı (C025) — insan editör zorunlu; GZ soruları TASLAK."
  ]
 }

@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K1: 1434.",
    "yanlis_gerekceleri": {
-    "B": "1500 değil.",
-    "C": "1400 değil.",
-    "D": "1600 değil."
+    "B": "1500 bu eserin tarihi değildir; kaynakların doğruladığı tarih 1434.",
+    "C": "1400, erken Quattrocento'nun tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1434.",
+    "D": "1600, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1434."
    },
    "kanit": [
     "C001"
@@ -58,9 +58,9 @@
    "dogru": "A",
    "gerekce": "K1: oil on wood (oak).",
    "yanlis_gerekceleri": {
-    "B": "Tempera değil.",
-    "C": "Fresk değil.",
-    "D": "Mozaik değil."
+    "B": "Tempera, tuval (yumurta bağlayıcılı pigment) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "C": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano."
    },
    "kanit": [
     "C002"
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: National Gallery.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi değil.",
-    "C": "Louvre değil.",
-    "D": "Prado değil."
+    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer National Gallery, Londra.",
+    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer National Gallery, Londra.",
+    "D": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer National Gallery, Londra."
    },
    "kanit": [
     "C003"
@@ -124,7 +124,7 @@
    "yanlis_gerekceleri": {
     "B": "İmzalı.",
     "C": "fecit değil, fuit hic.",
-    "D": "Hubert değil."
+    "D": "Hubert van Eyck bu eserin sanatçısı değildir; doğru sanatçı Johannes de eyck fuit hic 1434."
    },
    "kanit": [
     "C004"
@@ -155,8 +155,8 @@
    "gerekce": "K1: bought 1842.",
    "yanlis_gerekceleri": {
     "B": "1434 tarih.",
-    "C": "1900 değil.",
-    "D": "2000 değil."
+    "C": "1900 bu eserin tarihi değildir; kaynakların doğruladığı tarih 1842 (600 Guineas).",
+    "D": "2000 bu eserin tarihi değildir; kaynakların doğruladığı tarih 1842 (600 Guineas)."
    },
    "kanit": [
     "C003"
@@ -188,7 +188,7 @@
    "yanlis_gerekceleri": {
     "B": "di Arrigo alternatif (D).",
     "C": "Costanza memorial hipotezi (D).",
-    "D": "van Eyck değil."
+    "D": "Jan van Eyck bu eserin sanatçısı değildir; doğru sanatçı Giovanni di Nicolao Arnolfini + eşi."
    },
    "kanit": [
     "C005"
@@ -218,8 +218,8 @@
    "dogru": "A",
    "gerekce": "K1: two men entering.",
    "yanlis_gerekceleri": {
-    "B": "Boş değil.",
-    "C": "Manzara değil.",
+    "B": "Boş oda bu soruda doğru değildir; kaynakların doğruladığı yanıt Odaya giren iki adam.",
+    "C": "Manzara bu soruda doğru değildir; kaynakların doğruladığı yanıt Odaya giren iki adam.",
     "D": "İki figür."
    },
    "kanit": [
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K2: Donatello/Masaccio.",
    "yanlis_gerekceleri": {
-    "B": "Raphael değil.",
-    "C": "Titian değil.",
-    "D": "Michelangelo değil."
+    "B": "Raphael bu eserin sanatçısı değildir; doğru sanatçı Donatello/Masaccio.",
+    "C": "Titian bu soruda doğru değildir; kaynakların doğruladığı yanıt Donatello/Masaccio.",
+    "D": "Michelangelo bu eserin sanatçısı değildir; doğru sanatçı Donatello/Masaccio."
    },
    "kanit": [
     "C012"
@@ -383,7 +383,7 @@
   {
    "id": "GZ01",
    "soru": "Adamı, kadını ve kalkık eli bulun.",
-   "ipucu": "Özel oda; selam jesti.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Özel oda; selam jesti.",
    "kanit": [
     "C005",
     "C006"
@@ -392,7 +392,7 @@
   {
    "id": "GZ02",
    "soru": "Dışbükey aynadaki iki yansımayı bulun.",
-   "ipucu": "Arka duvar; odaya girenler.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Arka duvar; odaya girenler.",
    "kanit": [
     "C007"
    ]
@@ -400,7 +400,7 @@
   {
    "id": "GZ03",
    "soru": "Aynanın üstündeki imzayı okuyun.",
-   "ipucu": "Johannes de eyck fuit hic 1434.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Johannes de eyck fuit hic 1434.",
    "kanit": [
     "C004"
    ]
@@ -408,7 +408,7 @@
   {
    "id": "GZ04",
    "soru": "Pirinç avizeyi inceleyin.",
-   "ipucu": "Büyük/gösterişli; makara mekanizması.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Büyük/gösterişli; makara mekanizması.",
    "kanit": [
     "C016"
    ]
@@ -416,7 +416,7 @@
   {
    "id": "GZ05",
    "soru": "Köpeği (Affenpinscher erken formu) bulun.",
-   "ipucu": "Çiftin ayakları önünde.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Çiftin ayakları önünde.",
    "kanit": [
     "C017"
    ]

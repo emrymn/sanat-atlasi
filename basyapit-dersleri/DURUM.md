@@ -1,6 +1,6 @@
 # DURUM — 107 Başyapıt İlerleme Takibi
 
-**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (hakem revizyonu) · Pilot: Q167605 (Süt Boşaltan Kadın)
+**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 1 toplu düzeltme — PARTI_1_CLAUDE_DENETIM) · Pilot: Q167605 (Süt Boşaltan Kadın)
 
 Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt envanteri hazır → Taslak hazır → Doğrulama bekliyor → İnsan incelemesi bekliyor → Yayına aday`. Hiçbir eser otomatik olarak "Yayına aday" yapılmaz; insan editoryal onayı gerekir.
 
@@ -120,8 +120,8 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 
 | Durum | Adet |
 |---|---|
-| İnsan incelemesi bekliyor | 1 (pilot) |
-| Araştırılmadı | 106 |
+| İnsan incelemesi bekliyor | 21 (Parti 1: 20 + pilot Q167605) |
+| Araştırılmadı | 86 |
 | Toplam | 107 |
 
 ## Parti Günlüğü
@@ -217,6 +217,18 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 - 14 Kasım 2026 — #20 Q1755464 (Albrecht Dürer, Şövalye Ölüm ve Şeytan, gravür 1513, çok nüsha): tamam. 23 iddia (A1/B17/C2/D1/E2), 4 kaynak (K1 enwiki B ana kaynak; K2 WD; K3 Commons NGA; K4 Met 429 AÇILAMADI). Kelime 413/1365/2953 (tümü aralıkta). dogrula 0/0; CJK 0 (TK04 C-kanıt hatası düzeltildi). ÖNEMLİ: birincil Met katalog 429 → A yalnız lisans (C021 E); çok nüshalı gravür; kanıt konumu zayıf. vision bütçesi tükendi → görsel incelenemedi (C022 E); kompozisyon enwiki (B) metninden. Üç Meisterstiche; tablet "S. 1513"; Erasmus Enchiridion + Ephesians 6/Psalm 23; Vasari. Anlam tartışması (Hristiyan asker/hümanist/Nietzsche 1872/Nazi sahiplenmesi) D. Met + refs erişilemedi — insan editör teyidi özellikle kritik.
 
 **PARTİ 1 ÖZET (20/20):** Tümü "İnsan incelemesi bekliyor"; dogrula 0 hata/0 uyarı; CJK 0. Toplam iddia ~518. Birincil katalog erişimi: Uffizi (#5, #14), Met API (#15), National Gallery (#16), SMB (#17) AÇILDI → güçlü A; Condé (#13), Prado (#18, 403), KHM (#19, JS), Met (#20, 429) erişilemedi → A yalnız lisans, B ağırlıklı. Vision bütçesi #7'den sonra tükendi → tüm görseller indirildi ama İNCELENEMEDİ (E); kompozisyon birincil/ikincil METİNDEN. Hata listesi (üretimde yakalanıp düzeltildi): kunye boyut_notu şema hatası; temel_kavramlar 6→5; quiz D/E kanıt (TK05 Q546297, TK04 Q1755464, CS3 Q5856992); "1890 nos."/"200." cümle bölünmesi; "II. Philip"→"Philip II"; CJK karışmaları (方法的, 格子, mantо, 潘ofsky, often); E/D belirsizlik işareti post-pass. Kalıcı sınır: insan editör görsel + birincil katalog teyidi ZORUNLU; hiçbir eser "Yayına aday" değil.
+
+### Parti 1 Düzeltme Turu (14 Kasım 2026) — PARTI_1_CLAUDE_DENETIM.md
+
+Claude bağımsız denetim raporu (P0 kritik + P1 yüksek + sistematik) **ham kaynaklarla doğrulanarak** uygulandı; bulgular körü körüne kabul edilmedi. Ayrıntı: `PARTI_1_DUZELTME_RAPORU.md`.
+
+- **Q1755464 Dürer (K-1):** yanlış Met nesnesi `search/336420` (= "A Death Scene", anonim 17. yy İspanyol çizimi) → doğru `objects/336223` (43.106.2) Met Collection API ile açıldı; levha 24.3×18.8, kâğıt 25×19.6 → C003 **A**. Karşıt okumalar eklendi (Thausing dört mizaç/sanguineus, Karling+Meyer Raubritter, Getlein obsolescence; enwiki satır içi kaynaklı, C025). Nietzsche GT §20 birincil metin (Gutenberg #7206, K5) → Schopenhauer bağlamı C026 **A**. "S" anlamı D (C024); C020 anlam tartışması alımlamadan ayrıldı. İleri dolgu temizlendi. 26 iddia (A3/B16/C3/D2/E2).
+- **Q546297 Mantegna (K-2):** yanlış Brera URL (`opere/cristo-morto`, 404) → doğru kayıt 200; teknik/boyut/yer/envanter/Sala VI **A** (C003–C007, C028). Tarih "Brera c.1483" + literatür tartışması D (C030); "data 1483→aralık" önerisi GERİ ÇEKİLDİ. Provenance belgeli 1806/1824 (A, C023) ↔ hipotez bottega/Gonzaga/1628 Carlo I/Mazarin (D, C031); Aldobrandini 1603 diğer versiyon. Magdalene "büyük olasılıkla"; ışık sağdan itwiki (K3); Eisler/Steinberg atfı daraltıldı; yenilgi/zafer C. 31 iddia (A8/B16/C2/D4/E1).
+- **Q979440 Martini:** 1799 "Peter Leopold" anakronizmi (Pietro Leopoldo 1790'da ayrıldı, 1792'de öldü) → grandük kimliği D (C034; itwiki Ferdinando III çapraz, K5). Avignon nedenselliği {{Citation needed}} → C (C035). Panel oranı enwiki "double" ↔ itwiki "triplo" → D (C036). C005 "orta panel" niteliği kaldırıldı (Uffizi yalnız "Size 184×168"); "lak"→"lacca". 36 iddia (A20/B10/C1/D4/E1).
+- **Q2620028 Perugino (S-8):** anahtar çelişkisi kaynakla çözüldü — enwiki "silver and gold" + itwiki betimi "d'oro e d'argento" ↔ itwiki Rizzi yorumu "ferro"; C023 **D**. DY04 malzeme iddiası kaldırıldı; TK02 kanit düzeltildi. 27 iddia (A1/B22/D2/E2).
+- **Sistematik (20 eser):** S-4 dolgu → 45 yakın-kopya paragraf kaldırıldı (8 eser); S-7 totolojik çeldirici → 295 gerekçe bağlamsal gerekçeye çevrildi (gen.py kalıcı); S-5 görsel incelenmeyen 14 eserde GZ "TASLAK" işaretli; S-8 KANIT Sayım satırları DERS.json ile eşitlendi (domenico B=10/E=8 düzeltildi); Q5856992 Başlangıç 533→499.
+- **dogrula.py geliştirildi:** §8 kelime aralığı uyarısı, yakın tekrar (difflib>0.6) + seviyeler arası tekrar kontrolü, boş quiz kanıtı hatası, KANIT↔DERS.json sayım tutarlılığı, totoloji tespiti. Testler 20→**25/25**.
+- **Sonuç:** dogrula **0 hata, 35 uyarı** (30 kelime aralığı — dolgu kaldırınca kısa ders, bilinçli tercih; 5 seviyeler arası kısmi tekrar). CJK içerik 0. Durum "İnsan incelemesi bekliyor" korundu; uygulama kodu/`data/` değişmedi; pilot değişmedi. Yalnız `content-review` branch'ine commit/push (main'e merge/yayın yok).
 
 ### Veri Notları (mevcut veri DEĞİŞTİRİLMEDİ — onaya sunulur)
 

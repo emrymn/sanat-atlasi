@@ -24,11 +24,11 @@
     }
    ],
    "dogru": "A",
-   "gerekce": "K3: tempera su tela; tuval nadir.",
+   "gerekce": "Brera birincil künye: \"tempera su tela\"; tuval dönem için nadir.",
    "yanlis_gerekceleri": {
-    "B": "Fresk değil.",
-    "C": "Yağlıboya pano değil.",
-    "D": "Mozaik değil."
+    "B": "Fresk duvar resmidir; bu, tuval üzerine tempera bir panodur (morg mekânı tasvir eder, duvara uygulanmaz).",
+    "C": "Yağlıboya pano Mantegna'nın başka işlerinde görülür; Brera bu eseri \"tempera su tela\" olarak kaydeder.",
+    "D": "Mozaik farklı bir tekniktir; eser tempera-tuvaldir."
    },
    "kanit": [
     "C004"
@@ -56,11 +56,11 @@
     }
    ],
    "dogru": "B",
-   "gerekce": "K2/K3: Brera, Milano.",
+   "gerekce": "Brera birincil künye: Pinacoteca di Brera, Milano (Sala VI).",
    "yanlis_gerekceleri": {
-    "A": "Uffizi değil.",
-    "C": "Louvre değil.",
-    "D": "Prado değil."
+    "A": "Uffizi Floransa'dadır (Martini Müjde, Gentile Müneccimler); bu eser Milano Brera'dadır.",
+    "C": "Louvre Paris'tedir; Mantegna'nın bu eseri Brera'dadır.",
+    "D": "Prado Madrid'dedir (Bosch); eser Brera'dadır."
    },
    "kanit": [
     "C006"
@@ -88,11 +88,11 @@
     }
    ],
    "dogru": "A",
-   "gerekce": "K3/K4: 68×81.",
+   "gerekce": "Brera birincil künye: 68×81 cm.",
    "yanlis_gerekceleri": {
-    "B": "Giotto Ağıt.",
-    "C": "Martini Müjde.",
-    "D": "Fra Angelico."
+    "B": "200×185 civarı Giotto Ağıt'ın ölçeğidir; bu eser çok daha küçüktür.",
+    "C": "184×168 Martini Müjde'nin orta panel boyutudur; karıştırılmamalıdır.",
+    "D": "230×297 Fra Angelico Müjde ölçeğidir; bu eser 68×81'dir."
    },
    "kanit": [
     "C005"
@@ -120,11 +120,11 @@
     }
    ],
    "dogru": "B",
-   "gerekce": "K2/K3: scorcio, ayaklar izleyiciye dönük.",
+   "gerekce": "K2/K3: scorcio; ayaklar izleyiciye dönük, göz hizası ayaklarda.",
    "yanlis_gerekceleri": {
-    "A": "Panorama değil.",
-    "C": "Kuşbakışı değil.",
-    "D": "İzometrik değil."
+    "A": "Yatay panorama bir manzara düzenidir; bu eser uçtan kısaltılmış bir figür sunar.",
+    "C": "Kuşbakışı yukarıdan bakıştır; burada bakış ayak hizasından, uçtandır.",
+    "D": "İzometrik ölçümeli bir tekniktir; Mantegna dramatik bir scorcio kullanır."
    },
    "kanit": [
     "C011"
@@ -136,7 +136,7 @@
    "secenekler": [
     {
      "harf": "A",
-     "metin": "Meryem, Yuhanna, Magdalene"
+     "metin": "Meryem, Yuhanna, (büyük olasılıkla) Magdalene"
     },
     {
      "harf": "B",
@@ -152,19 +152,20 @@
     }
    ],
    "dogru": "A",
-   "gerekce": "K2/K3: Virgin, John, Magdalene.",
+   "gerekce": "K2/K3: Meryem, Yuhanna ve itwiki'ye göre büyük olasılıkla Magdalene.",
    "yanlis_gerekceleri": {
-    "B": "Havariler değil.",
-    "C": "Melek değil.",
-    "D": "Aziz değil."
+    "B": "Petrus/Paulus/Yakup havari grubudur; sahnede üç yasçı (Meryem, Yuhanna, Magdalene) vardır.",
+    "C": "Melekler bazı compianto'larda görülür; bu eserde yasçılar insan figürlerdir.",
+    "D": "Azizler değil; Meryem, Yuhanna ve Magdalene'dir."
    },
    "kanit": [
-    "C008"
+    "C008",
+    "C018"
    ]
   },
   {
    "id": "CS06",
-   "soru": "Işık hangi yönden gelir?",
+   "soru": "Işık hangi yönden gelir? (kaynak betimi; görsel teyit bekliyor)",
    "secenekler": [
     {
      "harf": "A",
@@ -184,11 +185,11 @@
     }
    ],
    "dogru": "B",
-   "gerekce": "K2/K3: light from right.",
+   "gerekce": "K3 (itwiki): \"luce proveniente da destra\" — sağdan. Görsel bu oturumda incelenemedi.",
    "yanlis_gerekceleri": {
-    "A": "Sol değil.",
-    "C": "Yukarı değil.",
-    "D": "Ön değil."
+    "A": "Soldan okuması itwiki'nin \"destra\" (sağ) ifadesiyle çelişir.",
+    "C": "Yukarıdan ışık farklı bir dramatik etki kurar; kaynak sağdan der.",
+    "D": "Önden ışık gölgeleri düzleştirir; kaynak sağdan ışık ve derin pathos betimler."
    },
    "kanit": [
     "C015"
@@ -216,11 +217,11 @@
     }
    ],
    "dogru": "A",
-   "gerekce": "K3: vasetto degli unguenti.",
+   "gerekce": "K3/Brera: \"vasetto degli unguenti\" — merhem kavanozu; beden zaten mesh edilmiştir.",
    "yanlis_gerekceleri": {
-    "B": "Kitap değil.",
-    "C": "Haç değil.",
-    "D": "Taç değil."
+    "B": "Kitap bir aziz/âlim atribütüdür; sahnede mesh kavanozu vardır.",
+    "C": "Haç Passion simgesidir ama sağ üstteki nesne merhem kavanozudur.",
+    "D": "Taç hükümranlık simgesidir; burada mesh/gömme hazırlığı kodlanır."
    },
    "kanit": [
     "C010"
@@ -248,11 +249,11 @@
     }
    ],
    "dogru": "B",
-   "gerekce": "K2/K3: face follows viewer.",
+   "gerekce": "K2/K3: yüz, açıya göre izleyiciyi \"takip eder\".",
    "yanlis_gerekceleri": {
-    "A": "Sabit değil.",
-    "C": "Kapalı değil.",
-    "D": "Yana değil."
+    "A": "Sabit bakış perspektif etkisini kaçırır; kaynak yüzün izleyiciyi takip ettiğini söyler.",
+    "C": "Gözler kapalı değildir; yüz izleyiciye yöneliktir.",
+    "D": "Yana dönük değildir; bakış izleyiciyi takip eder."
    },
    "kanit": [
     "C012"
@@ -280,11 +281,11 @@
     }
    ],
    "dogru": "A",
-   "gerekce": "K3: Camera degli Sposi illusionism.",
+   "gerekce": "K3/K2: Camera degli Sposi oculus illüzyonizmi (Kristeller önerisi).",
    "yanlis_gerekceleri": {
-    "B": "San Zeno değil.",
-    "C": "Studiolo değil.",
-    "D": "Ovetari değil."
+    "B": "San Zeno sunağı Mantegna'nın başka bir işidir; scorcio bağlantısı Camera Sposi ile kurulur.",
+    "C": "Isabella d'Este studiolo farklı bir bağlamdır; kaynak Camera Sposi oculus'u işaret eder.",
+    "D": "Ovetari freskleri erken dönem işidir; kısaltma ilişkisi Camera Sposi iledir."
    },
    "kanit": [
     "C025"
@@ -312,11 +313,11 @@
     }
    ],
    "dogru": "A",
-   "gerekce": "K3: arrived 1824.",
+   "gerekce": "Brera belgeli provenance (\"indizi sicuri\"): 1806 Bossi/Canova girişimi → 1824 Pinacoteca.",
    "yanlis_gerekceleri": {
-    "B": "1507 Gonzaga satın aldı.",
-    "C": "1628 Carlo I satış.",
-    "D": "1483 tarih."
+    "B": "1507 Gonzaga bağlantısı hipotez zincirine aittir; Brera'ya belgeli geliş 1824'tür.",
+    "C": "1628 Carlo I'e satış Brera'nın \"kesin olmayan hipotez\"idir (C031); belgeli geliş tarihi değildir.",
+    "D": "1483 Brera'nın verdiği yapım tarihidir (c.1483); müzeye geliş yılı değil."
    },
    "kanit": [
     "C023"
@@ -328,7 +329,7 @@
    "id": "DY01",
    "ifade": "Eser tempera-tuval üzerine yapılmıştır.",
    "dogru": true,
-   "aciklama": "Doğru (K3).",
+   "aciklama": "Doğru; Brera birincil künye \"tempera su tela\" (K6).",
    "kanit": [
     "C004"
    ]
@@ -337,7 +338,7 @@
    "id": "DY02",
    "ifade": "Eser Pinacoteca di Brera'dadır.",
    "dogru": true,
-   "aciklama": "Doğru (K2/K3).",
+   "aciklama": "Doğru; Brera birincil künye (K6).",
    "kanit": [
     "C006"
    ]
@@ -346,16 +347,16 @@
    "id": "DY03",
    "ifade": "Perspektif kurallara tam uygundur.",
    "dogru": false,
-   "aciklama": "Yanlış; ayaklar küçük, bacaklar kısa vb. (K3).",
+   "aciklama": "Yanlış; ayaklar küçük, bacaklar kısa, kollar uzun, göğüs geniş (K3).",
    "kanit": [
     "C013"
    ]
   },
   {
    "id": "DY04",
-   "ifade": "Üç yasçı Meryem, Yuhanna ve Magdalene'dir.",
+   "ifade": "Üç yasçı Meryem, Yuhanna ve (büyük olasılıkla) Magdalene'dir.",
    "dogru": true,
-   "aciklama": "Doğru (K3).",
+   "aciklama": "Doğru; itwiki Magdalene için \"in tutta probabilità\" (büyük olasılıkla) der — kesin kimlik değil (K3).",
    "kanit": [
     "C018"
    ]
@@ -364,7 +365,7 @@
    "id": "DY05",
    "ifade": "Yasçılar bedene sıkı sıkı temas eder.",
    "dogru": false,
-   "aciklama": "Yanlış; az temas (K2).",
+   "aciklama": "Yanlış; az temas vardır (K2); Schrade mahremiyet reddini vurgular.",
    "kanit": [
     "C017"
    ]
@@ -395,7 +396,8 @@
     "Sembolik ortogonaller"
    ],
    "kanit": [
-    "C013"
+    "C013",
+    "C014"
    ]
   },
   {
@@ -414,29 +416,31 @@
   },
   {
    "id": "AU04",
-   "soru": "Yaralar ve İnsanlık vurgusunu (Eisler/Steinberg) çözümleyin.",
+   "soru": "Yaralar ve İnsanlık vurgusunu (Eisler/Steinberg) çözümleyin; tabloya özgü okumanın Eisler'e ait olduğunu belirtin.",
    "beklenen_ogeler": [
     "Çivi/mızrak yaraları",
     "Enkarnasyon kanıtı",
-    "İnsanlık (yorum)",
-    "Gerçekçilik=teoloji"
+    "Eisler (bu tablo) / Steinberg (genel)",
+    "Gerçekçilik=teoloji (yorum)"
    ],
    "kanit": [
-    "C009"
+    "C009",
+    "C021"
    ]
   },
   {
    "id": "AU05",
-   "soru": "Provenance ve iki versiyon hipotezini değerlendirin.",
+   "soru": "Provenance'ı belgeli çekirdek ve hipotez olarak ayırın; iki versiyon hipotezini değerlendirin.",
    "beklenen_ogeler": [
-    "1506 bottega",
-    "1507 Gonzaga",
-    "1628 Carlo I",
-    "1824 Brera",
-    "Versiyon (tartışma)"
+    "Belgeli: 1806 Bossi/Canova → 1824 Brera",
+    "Hipotez: bottega/Gonzaga/1627",
+    "1628 Carlo I + Mazarin \"kesin olmayan hipotez\"",
+    "Aldobrandini 1603 diğer versiyon; iki versiyon (tartışma)"
    ],
    "kanit": [
-    "C023"
+    "C023",
+    "C031",
+    "C024"
    ]
   }
  ],
@@ -444,7 +448,7 @@
   {
    "id": "GZ01",
    "soru": "Ayak ve el yaralarını bulun.",
-   "ipucu": "Çivi delikleri; mızrak böğürde.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim K2/K3): çivi delikleri; mızrak böğürde.",
    "kanit": [
     "C009"
    ]
@@ -452,7 +456,7 @@
   {
    "id": "GZ02",
    "soru": "Üç yasçıyı ve jestlerini bulun.",
-   "ipucu": "Mendil, birleşik eller, gölge.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): mendil, birleşik eller, gölge.",
    "kanit": [
     "C018"
    ]
@@ -460,7 +464,7 @@
   {
    "id": "GZ03",
    "soru": "Merhem kavanozunu bulun.",
-   "ipucu": "Sağ üst.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): sağ üst.",
    "kanit": [
     "C010"
    ]
@@ -468,7 +472,7 @@
   {
    "id": "GZ04",
    "soru": "Işığın yönünü ve gölgeleri izleyin.",
-   "ipucu": "Sağdan.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): itwiki sağdan der.",
    "kanit": [
     "C015"
    ]
@@ -476,7 +480,7 @@
   {
    "id": "GZ05",
    "soru": "Yüzün izleyiciyi takip etmesini deneyin.",
-   "ipucu": "Açı değiştirin.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): açı değiştirin.",
    "kanit": [
     "C012"
    ]
@@ -486,20 +490,22 @@
   {
    "id": "TK01",
    "on": "Eser, sanatçı, tarih, teknik, boyut, yer?",
-   "arka": "Ölü İsa; Mantegna; c.1475–1501 (tartışmalı); tempera-tuval; 68×81; Brera, Milano.",
+   "arka": "Ölü İsa (Cristo morto nel sepolcro e tre dolenti); Mantegna; c.1483 (Brera birincil; literatür tartışmalı); tempera-tuval; 68×81; Brera Milano, Sala VI, inv.352.",
    "kanit": [
     "C001",
     "C002",
     "C003",
     "C004",
     "C005",
-    "C006"
+    "C006",
+    "C007",
+    "C028"
    ]
   },
   {
    "id": "TK02",
    "on": "Konu/yasçılar?",
-   "arka": "İsa Stone of Unction üzerinde; Meryem+Yuhanna+Magdalene; merhem kavanozu.",
+   "arka": "İsa Stone of Unction üzerinde; Meryem+Yuhanna+(büyük olasılıkla) Magdalene; merhem kavanozu (mesh tamam).",
    "kanit": [
     "C008",
     "C018",
@@ -509,7 +515,7 @@
   {
    "id": "TK03",
    "on": "Perspektif?",
-   "arka": "Scorcio ayaklardan; göz hizası ayaklarda; yüz takip; orantı \"hatası\" dramatik.",
+   "arka": "Scorcio ayaklardan; göz hizası ayaklarda; yüz takip; orantı \"hatası\" dramatik (tartışma).",
    "kanit": [
     "C011",
     "C012",
@@ -519,7 +525,7 @@
   {
    "id": "TK04",
    "on": "Işık/pathos?",
-   "arka": "Sağdan ışık; monokrom kahve; morg mekân; von Einem \"spooky\"; Schrade paradoks.",
+   "arka": "Sağdan ışık (itwiki); monokrom kahve; morg mekân; von Einem \"spooky\"; Schrade yakınlık/mahremiyet paradoksu.",
    "kanit": [
     "C015",
     "C016",
@@ -530,7 +536,7 @@
   {
    "id": "TK05",
    "on": "Provenance?",
-   "arka": "1506 bottega; 1507 Gonzaga; 1628 Carlo I; Mazarino; 1824 Brera.",
+   "arka": "Belgeli: 1806 Bossi/Canova → 1824 Brera. Hipotez: bottega 1506 → Ludovico → Sigismondo Gonzaga → 1627; 1628 Carlo I + Mazarin \"kesin olmayan hipotez\"; Aldobrandini 1603 diğer versiyon.",
    "kanit": [
     "C023"
    ]

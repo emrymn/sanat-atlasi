@@ -27,8 +27,8 @@
    "gerekce": "K2/K3: affresco/fresco.",
    "yanlis_gerekceleri": {
     "A": "Tempera pano değil; duvar freski.",
-    "C": "Yağlıboya tuval değil.",
-    "D": "Mozaik değil."
+    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) bu eserin tekniği/desteği değildir; doğru yanıt Fresk.",
+    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Fresk."
    },
    "kanit": [
     "C004"
@@ -58,9 +58,9 @@
    "dogru": "B",
    "gerekce": "K1/K3: Scrovegni Şapeli, Padova; Musei Civici kompleksi.",
    "yanlis_gerekceleri": {
-    "A": "Uffizi değil.",
-    "C": "Vatikan değil.",
-    "D": "Louvre değil."
+    "A": "Uffizi, Floransa (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Scrovegni Şapeli, Padova.",
+    "C": "Vatikan bu soruda doğru değildir; kaynakların doğruladığı yanıt Scrovegni Şapeli, Padova.",
+    "D": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Scrovegni Şapeli, Padova."
    },
    "kanit": [
     "C006"
@@ -123,8 +123,8 @@
    "gerekce": "K3: ayaklarını Magdalene tutar.",
    "yanlis_gerekceleri": {
     "A": "Meryem başı tutar.",
-    "C": "Anna değil.",
-    "D": "Veronica değil."
+    "C": "Anna bu soruda doğru değildir; kaynakların doğruladığı yanıt Mecdelli Meryem (Magdalene).",
+    "D": "Veronica bu soruda doğru değildir; kaynakların doğruladığı yanıt Mecdelli Meryem (Magdalene)."
    },
    "kanit": [
     "C009"
@@ -186,9 +186,9 @@
    "dogru": "B",
    "gerekce": "K3: Nikodemus ve Arimatealı Yusuf (Yuhanna 19:38–42).",
    "yanlis_gerekceleri": {
-    "A": "Petrus/Paulus değil.",
-    "C": "Yusuf/Yakup değil.",
-    "D": "Musa/Harun değil."
+    "A": "Petrus ve Paulus bu soruda doğru değildir; kaynakların doğruladığı yanıt Nikodemus ve Arimatealı Yusuf.",
+    "C": "Yusuf ve Yakup bu soruda doğru değildir; kaynakların doğruladığı yanıt Nikodemus ve Arimatealı Yusuf.",
+    "D": "Musa ve Harun bu soruda doğru değildir; kaynakların doğruladığı yanıt Nikodemus ve Arimatealı Yusuf."
    },
    "kanit": [
     "C011"
@@ -219,8 +219,8 @@
    "gerekce": "K2: duygusal merkez = Meryem'in ölü oğluna sarılışı.",
    "yanlis_gerekceleri": {
     "A": "Gök değil; merkez alt-sol.",
-    "C": "Sağ değil.",
-    "D": "Bordür değil."
+    "C": "Sağdaki erkeklere bu soruda doğru değildir; kaynakların doğruladığı yanıt Anne-oğul kucaklaşmasına.",
+    "D": "Bordüre bu soruda doğru değildir; kaynakların doğruladığı yanıt Anne-oğul kucaklaşmasına."
    },
    "kanit": [
     "C012"
@@ -251,7 +251,7 @@
    "gerekce": "K2: espediente inedito; kütleler, gerçek mekân.",
    "yanlis_gerekceleri": {
     "A": "Süs değil; yapısal.",
-    "C": "İmza değil.",
+    "C": "İmza bu soruda doğru değildir; kaynakların doğruladığı yanıt Heykelsi kütle + gerçek mekân + izleyici konumu.",
     "D": "Hata değil; bilinçli araç."
    },
    "kanit": [
@@ -282,9 +282,9 @@
    "dogru": "B",
    "gerekce": "K2: kışın ölen doğa baharda dirilir; İsa üç gün sonra.",
    "yanlis_gerekceleri": {
-    "A": "Savaş değil.",
-    "C": "Zenginlik değil.",
-    "D": "Yolculuk değil."
+    "A": "Savaşı bu soruda doğru değildir; kaynakların doğruladığı yanıt Doğanın ölümü ve dirilişi (kış→bahar).",
+    "C": "Zenginliği bu soruda doğru değildir; kaynakların doğruladığı yanıt Doğanın ölümü ve dirilişi (kış→bahar).",
+    "D": "Yolculuğu bu soruda doğru değildir; kaynakların doğruladığı yanıt Doğanın ölümü ve dirilişi (kış→bahar)."
    },
    "kanit": [
     "C015"

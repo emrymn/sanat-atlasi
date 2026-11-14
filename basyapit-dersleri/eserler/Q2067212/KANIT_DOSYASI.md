@@ -55,7 +55,7 @@ Eser in situ (Scrovegni Şapeli, Padova). **Eser-özel birincil müze kataloğu 
 **C029** — K2 ilgili eserler listesi: Assisi Deposizione (c.1290) ve Berenson koleksiyonu Deposizione (c.1320–1325). **B.** K2.
 **C030** — Eser-özel birincil katalog/envanter erişilemedi; boyut/tarih ikincil kaynaklara dayanır — birincille doğrulanamadı. **E.** K1, K2. (belirsiz)
 
-**Sayım:** 30 iddia · A=7 · B=20 · D=2 · E=1 · C=0.
+**Sayım:** 30 iddia · A=7 · B=20 · C=0 · D=2 · E=1.
 
 ## 3. Görsel doğrulama kaydı (Kural 6)
 

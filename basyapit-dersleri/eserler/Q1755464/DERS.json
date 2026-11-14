@@ -8,14 +8,14 @@
   "sanatci": "Albrecht Dürer",
   "sanatci_yasam": "1471–1528",
   "tarih": "1513 (imzalı/tarihli)",
-  "tarih_belirsizlik": "tablet \"S. (Salus) 1513\"",
+  "tarih_belirsizlik": "tablet \"S. 1513\"; S anlamı tartışmalı (Salus ↔ Thausing sanguineus)",
   "teknik": "Gravür (bakır levha baskı)",
   "boyut_cm": {
    "yukseklik": 24.3,
    "genislik": 18.8
   },
   "muze": "Çok nüsha (Met, NGA, British Museum vb.)",
-  "envanter": "çoklu nüsha (ör. Met 43.106.2)",
+  "envanter": "çoklu nüsha (ör. Met 43.106.2 = API objects/336223)",
   "edinim": "Maximilian hizmetinde; sipariş değil; çeşitli koleksiyonlar",
   "konum": "çeşitli print room",
   "telif_durumu": "Kamu malı (Dürer ö.1528); Commons PD"
@@ -28,24 +28,24 @@
    "yontem": "1200px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
    "cozunurluk": "1200px indirme",
    "incelenen_bolgeler": [],
-   "sinirlar": "Görsel teyit insan editöre (C022); Met katalog 429 (C021); kompozisyon enwiki (B) metninden"
+   "sinirlar": "Görsel teyit insan editöre (C022); Met web sayfası 429 (C021); birincil künye Met API objects/336223 ile doğrulandı (C003 A); kompozisyon enwiki (B) metninden"
   }
  },
  "seviyeler": {
   "baslangic": {
    "dosya": "DERS_BASLANGIC.md",
    "hedef_sure_dk": 3,
-   "kelime_sayisi": 413
+   "kelime_sayisi": 447
   },
   "orta": {
    "dosya": "DERS_ORTA.md",
    "hedef_sure_dk": 10,
-   "kelime_sayisi": 1365
+   "kelime_sayisi": 1071
   },
   "ileri": {
    "dosya": "DERS_ILERI.md",
    "hedef_sure_dk": 20,
-   "kelime_sayisi": 2953
+   "kelime_sayisi": 1992
   }
  },
  "bolum_eslesme": {
@@ -73,7 +73,7 @@
   ],
   "6": [
    "DERS_ORTA.md#6-teknik-ve-malzeme",
-   "DERS_ILERI.md#6-alımlama-nietzsche-ve-nazi-sahiplenmesi"
+   "DERS_ILERI.md#6-alımlama-tarihi-nietzsche-wagner-ve-nazi-sahiplenmesi"
   ],
   "7": [
    "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
@@ -102,11 +102,11 @@
   ]
  },
  "ogrenme_kazanimlari": [
-  "Gravürün kimliğini (Dürer, 1513, Meisterstiche) ikincil kaynakla doğrular.",
+  "Gravürün kimliğini (Dürer, 1513, Meisterstiche) birincil künye (Met API) ve ikincil kaynakla doğrular.",
   "Gotik + Rönesans sentezini ve kompozisyonun kararlılığını analiz eder.",
   "Hristiyan asker alegorisini (Erasmus/İncil) çözümler.",
-  "Anlam tartışması ve Nietzsche/Nazi alımlamasını değerlendirir.",
-  "Birincil katalog yokluğu + çok nüshalılığın kanıt sınırını kavrar."
+  "Karşıt akademik okumaları (Thausing, Karling/Meyer, Getlein) ve alımlama tarihini (Nietzsche/Schopenhauer, Nazi) ayırır.",
+  "Birincil künye (A) ile web/görsel sınırının (E) kanıt konumunu kavrar."
  ],
  "temel_kavramlar": [
   {
@@ -140,10 +140,10 @@
    ]
   },
   {
-   "ad": "alegori",
-   "tanim": "Soyut bir fikrin figürlerle temsili; şövalye = Hristiyan yolculuk.",
+   "ad": "Raubritter",
+   "tanim": "\"Soyguncu şövalye\"; Karling/Meyer'in karşı okuması; tilki kuyruğu simgesi.",
    "kanit": [
-    "C018"
+    "C025"
    ]
   }
  ],
@@ -153,7 +153,8 @@
    "ifade": "Başlık: Knight, Death and the Devil (Ritter, Tod und Teufel); Albrecht Dürer; 1513; büyük gravür; Alman Rönesansı.",
    "seviye": "B",
    "kaynak_id": [
-    "K1"
+    "K1",
+    "K4"
    ],
    "kullanim": "olgu"
   },
@@ -168,26 +169,28 @@
   },
   {
    "id": "C003",
-   "ifade": "Teknik: gravür; 24.3×18.8 cm (wiki); WD 24.8×19.",
-   "seviye": "B",
+   "ifade": "Teknik: gravür (engraving). Met 43.106.2 (API objects/336223) birincil künye: levha 24.3×18.8 cm, kâğıt 25×19.6 cm, 1513. Nüshaya göre fark: Met 19.73.110 (24.5×19), Met 66.521.95 (24.7×18.9), WD 24.8×19; levha/kâğıt ve nüsha kaynaklı.",
+   "seviye": "A",
    "kaynak_id": [
     "K1",
-    "K2"
+    "K2",
+    "K4"
    ],
    "kullanim": "olgu"
   },
   {
    "id": "C004",
-   "ifade": "Tarihli/imzalı; tabletin sol altı \"S. (=Salus/in the year of grace) 1513\".",
+   "ifade": "Tarihli ve imzalı; 1513; tabletin sol altı \"S. 1513\" yazıtı (Met + enwiki). \"S\" harfinin anlamı ayrı tartışma konusudur (C024).",
    "seviye": "B",
    "kaynak_id": [
-    "K1"
+    "K1",
+    "K4"
    ],
    "kullanim": "olgu"
   },
   {
    "id": "C005",
-   "ifade": "Zırhlı şövalye gururlu at + sadık köpekle; dar vahşi geçit; keçi başlı şeytan + soluk atta Ölüm; Ölüm'ün çürüyen leşi kum saati tutar (memento mori).",
+   "ifade": "Kompozisyon (enwiki betimi): zırhlı şövalye gururlu at + sadık köpekle dar vahşi geçit; keçi başlı şeytan + soluk atta Ölüm; Ölüm'ün çürüyen leşi kum saati tutar (memento mori); tepede şehir; binici yaratıklara bakmadan dosdoğru ilerler.",
    "seviye": "B",
    "kaynak_id": [
     "K1"
@@ -196,12 +199,12 @@
   },
   {
    "id": "C006",
-   "ifade": "Binici tehditlere bakmaz, küçümser → cesaret sembolü; zırh + dev at + meşe yaprakları = inancın direnci; şövalyenin durumu = Cennet Krallığı'na (tepedeki şehir) dünyevi yolculuk.",
-   "seviye": "B",
+   "ifade": "Binici tehditleri küçümser gibi görünür → sıklıkla cesaret sembolü olarak görülür; zırh + dev at + meşe yaprakları inancın direnci; tepedeki şehir Cennet Krallığı'na dünyevi yolculuk (yorum).",
+   "seviye": "C",
    "kaynak_id": [
     "K1"
    ],
-   "kullanim": "olgu"
+   "kullanim": "yorum"
   },
   {
    "id": "C007",
@@ -214,7 +217,7 @@
   },
   {
    "id": "C008",
-   "ifade": "Gotik üslup; formlar karışır; at iç içe eğriler; şövalye çenesi miğfer çizgisine örülü; dallar/koşum/saç karmaşası; Stites \"değişen formlar dünyasında somut fikir\"; adam dosdoğru bakar.",
+   "ifade": "Gotik üslup; formlar karışır; at iç içe eğriler; şövalye çenesi miğfer çizgisine örülü; dallar/koşum/saç karmaşası; Stites \"değişen formlar dünyasında somut fikir\"; adam dosdoğru bakar, dikkat dağıtmaz.",
    "seviye": "B",
    "kaynak_id": [
     "K1"
@@ -241,7 +244,7 @@
   },
   {
    "id": "C011",
-   "ifade": "Panofsky: Erasmus Elkitabı'ndan esinlenmiş (Dürer'in müstakbel dostu); üç düşman beden/Şeytan/dünya; köpek = Tanrı'ya sadakat.",
+   "ifade": "Panofsky (1969): Erasmus Elkitabı'ndan esinlenmiş (Dürer'in müstakbel dostu); üç düşman beden/Şeytan/dünya; köpek = Tanrı'ya sadakat. Kaynak \"some art historians\" der; baskın ama tek olmayan yorum.",
    "seviye": "B",
    "kaynak_id": [
     "K1"
@@ -268,7 +271,7 @@
   },
   {
    "id": "C014",
-   "ifade": "Genişçe kopyalandı; Alman yazarlara etki; Nietzsche Birth of Tragedy (1872) pesimizm örneği; Nazis tarafından kullanıldı.",
+   "ifade": "Alımlama: genişçe kopyalandı (Jan Wierix 1563 kopyası); Alman yazarlara etki; Nietzsche 1870 Wagner'e hediye (\"brave future\"), BT 1872 pesimizm (Woodward); Mann/Bertram WWI sonrası; Luther hayranlığı (Snyder); Nazi Rosenberg 1927 mitingi + Nürnberg 1933 Hitler'e baskı (Brockmann, Dennis).",
    "seviye": "B",
    "kaynak_id": [
     "K1"
@@ -287,7 +290,7 @@
   },
   {
    "id": "C016",
-   "ifade": "Bibliyografya: Panofsky; Stites; Lunday; Vasari — erişilmedi.",
+   "ifade": "Bibliyografya refs: Panofsky (1969); Stites; Lunday; Vasari; Getlein; Karling; Meyer; Thausing; Woodward; Bertram; Shapiro; Brockmann; Dennis — özgün metinlere erişilmedi.",
    "seviye": "B",
    "kaynak_id": [
     "K1"
@@ -319,7 +322,7 @@
   },
   {
    "id": "C020",
-   "ifade": "Anlam tartışması: yüzyıllardır tartışılıyor; Hristiyan asker ↔ hümanist ↔ Nietzsche pesimizm ↔ Nazi sahiplenmesi.",
+   "ifade": "Anlam tartışması (akademik yorumlar): miles Christianus/Erasmus (Panofsky) ↔ dört mizaç/sanguineus (Thausing) ↔ Raubritter/soyguncu şövalye (Karling 1970, Ursula Meyer) ↔ eskimiş/teslimiyetçi şövalye (Getlein). Alımlama (Nietzsche/Nazi) ayrı katmandır (C014/C026).",
    "seviye": "D",
    "kaynak_id": [
     "K1"
@@ -328,7 +331,7 @@
   },
   {
    "id": "C021",
-   "ifade": "Met birincil katalog bu oturumda açılamadı (429 Too Many Requests).",
+   "ifade": "Met web koleksiyon sayfası bu oturumda 429 (erişilemedi); birincil künye Met Collection API objects/336223 ile doğrulandı (C003 A). Web sayfası küratöryel metni insan editör teyidi bekler.",
    "seviye": "E",
    "kaynak_id": [
     "K4"
@@ -352,16 +355,43 @@
     "K3"
    ],
    "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "\"S\" yazıtının anlamı tartışmalı: enwiki \"Salus/in the year of grace\" okumasını verir; Thausing dört mizaç döngüsünde \"sanguineus\" okur; kesin değil.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C025",
+   "ifade": "Karşı okumalar (enwiki satır içi kaynaklı historiografi): Thausing dört mizaç/sanguineus (\"S\" buradan); Getlein \"obsolescence\"/teslimiyetçi şövalye; Karling (1970) + Ursula Meyer \"Raubritter\" (soyguncu şövalye; mızrakta tilki kuyruğu = Physiologus açgözlülük/kurnazlık/hainlik; Hristiyan simge yokluğu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Nietzsche, Die Geburt der Tragödie (1872) §20 (birincil metin, Gutenberg #7206): şövalye Schopenhauer'un umutsuz ama hakikat arayan tutumunun simgesi — \"Ein solcher Dürerscher Ritter war unser Schopenhauer: ihm fehlte jede Hoffnung, aber er wollte die Wahrheit.\" Basit \"pesimizm örneği\" indirgemesi nüansı bozar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
   }
  ],
  "kaynaklar": [
   {
    "id": "K1",
    "kurum": "İngilizce Vikipedi",
-   "belge": "Knight, Death and the Devil — kaynaklı madde",
+   "belge": "Knight, Death and the Devil — satır içi kaynaklı madde",
    "url": "https://en.wikipedia.org/wiki/Knight,_Death_and_the_Devil",
    "erisim_tarihi": "2026-11-14",
-   "erisim_durumu": "200 (REST HTML); refs erişilmedi",
+   "erisim_durumu": "200 (wikitext); refs özgün metinlerine erişilmedi",
    "tur": "ikincil"
   },
   {
@@ -385,10 +415,19 @@
   {
    "id": "K4",
    "kurum": "Metropolitan Museum of Art",
-   "belge": "koleksiyon sayfası (hedef, ör. 43.106.2)",
-   "url": "https://www.metmuseum.org/art/collection/search/336420",
+   "belge": "Collection API objects/336223 — Knight, Death, and the Devil; 43.106.2; levha 24.3×18.8, kâğıt 25×19.6; 1513; engraving",
+   "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/336223",
    "erisim_tarihi": "2026-11-14",
-   "erisim_durumu": "429 Too Many Requests; AÇILAMADI",
+   "erisim_durumu": "200 (API); web sayfası search/336223 429",
+   "tur": "birincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "Project Gutenberg",
+   "belge": "Nietzsche, Die Geburt der Tragödie §20 (#7206) — Dürer şövalyesi / Schopenhauer",
+   "url": "https://www.gutenberg.org/cache/epub/7206/pg7206.txt",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; birincil metin okundu",
    "tur": "birincil"
   }
  ],
@@ -413,14 +452,14 @@
  "durum": "İnsan incelemesi bekliyor",
  "kalite_kontrol": {
   "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
-  "denetim_b": "Birincil Met katalog 429 açılamadı (E); kanıt ağırlıklı enwiki kaynaklı B + WD yardımcı; Commons indirildi ama incelenemedi (vision). Kompozisyon enwiki metninden (data betimi yok). Anlam tartışması D. Çok nüshalı gravür. A yalnız lisans. Kanıt zinciri KANIT §2.",
+  "denetim_b": "Parti 1 düzeltme: Met birincil künye API objects/336223 (43.106.2) ile doğrulandı (C003 A); yanlış nesne 336420 düzeltildi. Karşıt okumalar (Thausing/Karling-Meyer/Getlein) enwiki satır içi kaynaklı eklendi (C025); Nietzsche GT §20 birincil metin (K5, C026 A). Anlam tartışması D, alımlama ayrı. Görsel incelenemedi (E); Met web 429 (E). Kanıt zinciri KANIT §2.",
   "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
  },
  "veri_notlari": [
-  "Tarih 1513 (K1/WD); tablet \"S. 1513\" imza.",
-  "Boyut 24.3×18.8 (K1) ↔ WD 24.8×19 — küçük fark; nüshaya göre değişebilir.",
-  "Çok nüshalı gravür; Met birincil katalog 429 → insan editör teyidi ZORUNLU (C021).",
-  "Anlam tartışması (Hristiyan asker/hümanist/Nietzsche/Nazi) D — uzman editör.",
-  "Görsel teyit bu oturumda yapılamadı (C022) — insan editör zorunlu."
+  "Tarih 1513 (Met birincil künye + enwiki); tablet \"S. 1513\"; S anlamı tartışmalı (Salus ↔ sanguineus, C024).",
+  "Boyut: Met 43.106.2 levha 24.3×18.8, kâğıt 25×19.6 (API objects/336223, A); nüsha farkları (24.5×19; 24.7×18.9; WD 24.8×19) levha/kâğıt kaynaklı.",
+  "Önceki yanlış Met bağlantısı (search/336420 = anonim İspanyol çizimi) düzeltildi → objects/336223 (43.106.2).",
+  "Anlam tartışması (Panofsky/Thausing/Karling-Meyer/Getlein) D; alımlama (Nietzsche/Nazi) ayrı katman.",
+  "Görsel teyit bu oturumda yapılamadı (C022); Met web 429 (C021) — insan editör zorunlu."
  ]
 }

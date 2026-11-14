@@ -58,7 +58,7 @@ Formül ve tekrar: pozların kartonla tekrarı, zarif ama formülsel bir dil ür
 
 Judas ve ihanet: sırtı dönük, zıt renkli Judas, kompozisyonun "karanlık" kutbudur; Petrus'un ışığıyla karşıtlık kurar (yorum) [C009]. Bu, ahlaki bir renk kodudur (yorum) [C009]. Seminer sorusu: bir figür, nasıl "ihanet" kodlanır? Burada duruş+renk, Judas'ı ayırır (yorum) [C009].
 
-Renk ve ahlak: Judas'ın zıt renkleri + sırtı dönüklüğü, ihaneti kodlar; Petrus'un sarı+mavi'siyle karşıtlık (yorum) [C009][C023]. Bu, ahlaki bir renk dilidir (yorum) [C009]. Seminer sorusu: renk, nasıl "ahlak" bildirir? Burada karşıtlık, iyi/kötü ayrımıdır (yorum) [C009].
+Renk ve ahlak: Judas'ın zıt renkleri + sırtı dönüklüğü, ihaneti kodlar; Petrus'un sarı+mavi'siyle karşıtlık (yorum) [C009][C023] (tartışma). Bu, ahlaki bir renk dilidir (yorum) [C009]. Seminer sorusu: renk, nasıl "ahlak" bildirir? Burada karşıtlık, iyi/kötü ayrımıdır (yorum) [C009].
 
 Meydan ve kozmos: kareli zemin, ölçülebilir bir dünya kurar; merkez tapınak, bu dünyanın odak noktasıdır (yorum) [C012]. Perspektif, dünyayı "okunabilir" kılar: düzen, anlamın koşuludur (yorum) [C012]. Seminer sorusu: bir zemin, nasıl "dünya" kurar? Burada kareler, kozmosun ızgarasıdır — ölçülebilir düzen (yorum) [C012].
 
@@ -88,7 +88,7 @@ Formül ve zarafet: kartonla tekrar, zarif ama formülsel figürler üretir; bu,
 
 **İktidarın estetiği (yorum).** Anahtar+tapınak+yazıt+simetri, birlikte bir "iktidar estetiği" kurar; görüntü, otoriteyi kutsar ve doğallaştırır (yorum) [C008][C012][C011]. Seminer sorusu: bir estetik, nasıl "iktidar" doğallaştırır? Burada düzen, otoriteyi kaçınılmaz gösterir (yorum) [C018].
 
-Petrus ve anahtar: diz çökmüş Petrus, yetkiyi "alan" tarafır; İsa "veren" taraf; bu asimetri, otoritenin kaynağını gösterir (yorum) [C008]. Altın gök / demir yer, yetkinin iki alanıdır (yorum) [C023]. Seminer sorusu: bir jest, nasıl "yetki aktarımı" olur? Burada diz çökme, kabulün bedensel dilidir (yorum) [C008].
+Petrus ve anahtar: diz çökmüş Petrus, yetkiyi "alan" tarafır; İsa "veren" taraf; bu asimetri, otoritenin kaynağını gösterir (yorum) [C008]. Altın gök / ikinci anahtar (gümüş ya da demir, tartışmalı) yer, yetkinin iki alanıdır (yorum) [C023] (tartışma). Seminer sorusu: bir jest, nasıl "yetki aktarımı" olur? Burada diz çökme, kabulün bedensel dilidir (yorum) [C008].
 
 ## 8. Karşılaştırmalı metodoloji
 
@@ -109,6 +109,7 @@ Conclave ve belge: efsane belgeli (üç papa) ama "efsane" olarak sunulur; belge
 3. **Vatican föyü (E):** açılmadı (belirsiz) [C026] (belirsiz).
 4. **Conclave efsanesi (B):** belgeli (üç papa) ama "efsane" olarak sunulur [C022].
 5. **Erişilmeyen:** K2/K3 refs [C027].
+6. **Anahtar malzemesi (D):** ikinci anahtarın malzemesi tartışmalı — enwiki ve itwiki betimi "gümüş" (argento) der; itwiki'nin Marco Rizzi kaynaklı yorumu "demir" (ferro) der (gök/yer ayrımı). Altın anahtar ortak; gümüş mü demir mi kesin değil (tartışma) [C023] (tartışma)[C008].
 
 Bu envanter, dersin kanıt sınırını şeffaf kılar: B omurga, D kimlik, E boşluk. Seminer, bu katmanları karıştırmamayı öğrenir (yorum).
 
@@ -128,7 +129,7 @@ Anahtarlar'ın küratöryel gücü, program içindeki konumudur: pendant + yazı
 
 Ziyaret deneyimi: Sistine'de resim, döngünün parçası olarak okunur; pendant + yazıt + tapınak birlikte anlam kurar (yorum) [C018]. Seminerin kapanış görevi: "iktidar+perspektif+uğur" üçgenini ve belirsizlik notlarını taşıyan bir duvar metni yazmak (yorum) [C025] (belirsiz).
 
-Sentez: Anahtarların Teslimi, Rönesans'ın "iktidar+perspektif+miras" üçgenini tek yüzeyde birleştirir: anahtarlar papalık otoritesini, tapınak+meydan ölçülebilir dünyayı, karton+konvansiyon atölye dilini, sonsuz ufuk ise evrensellik iddiasını kurar (yorum) [C008][C012][C015][C016]. Bu üçgen, eseri hem bir "iktidar belgesi" hem bir "mekân dersi" hem de bir "okul kurucusu" yapar (yorum) [C018][C017]. Seminerin kapanış görevi: bu sentezi, belirsizlik notlarıyla (otoportre, görsel, föy) birlikte 250 kelimeyle özetlemek (yorum) [C010][C025][C026].
+Sentez: Anahtarların Teslimi, Rönesans'ın "iktidar+perspektif+miras" üçgenini tek yüzeyde birleştirir: anahtarlar papalık otoritesini, tapınak+meydan ölçülebilir dünyayı, karton+konvansiyon atölye dilini, sonsuz ufuk ise evrensellik iddiasını kurar (yorum) [C008][C012][C015][C016]. Bu üçgen, eseri hem bir "iktidar belgesi" hem bir "mekân dersi" hem de bir "okul kurucusu" yapar (yorum) [C018][C017]. Seminerin kapanış görevi: bu sentezi, belirsizlik notlarıyla (otoportre, görsel, föy) birlikte 250 kelimeyle özetlemek (yorum) [C010] (tartışma)[C025] (belirsiz)[C026] (belirsiz).
 
 ## 11. Seminer etkinlikleri
 

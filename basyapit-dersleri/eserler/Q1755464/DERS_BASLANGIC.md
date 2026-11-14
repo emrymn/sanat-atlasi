@@ -8,18 +8,18 @@
 - **Sanatçı:** Albrecht Dürer (1471–1528) [C017].
 - **Tarih:** 1513; tarihli ve imzalı [C001][C004].
 - **Teknik:** gravür (bakır levha baskı) [C003].
-- **Boyut:** 24.3×18.8 cm (WD 24.8×19) [C003].
+- **Boyut:** levha 24.3×18.8 cm, kâğıt 25×19.6 cm (Met 43.106.2, birincil kayıt); nüshaya göre küçük farklar vardır [C003].
 - **Yer:** çok nüshalı; Met, NGA, British Museum gibi birçok koleksiyonda [C015].
 
-Bu gravür, Dürer'in üç "Meisterstiche"sinden (usta baskı) biridir; resim ve woodcut'ı neredeyse bırakıp gravüre odaklandığı bir dönemde yapılmıştır [C002]. Görüntü, karmaşık ikonografi ve sembolizmle doludur; kesin anlamı yüzyıllardır tartışılmaktadır (tartışma) [C020] (tartışma). Tabletlerin sol altında "S. (=Salus/in the year of grace) 1513" yazar; eser tarihli ve imzalıdır [C004].
+Bu gravür, Dürer'in üç "Meisterstiche"sinden (usta baskı) biridir; resim ve woodcut'ı neredeyse bırakıp gravüre odaklandığı bir dönemde yapılmıştır [C002]. Görüntü, karmaşık ikonografi ve sembolizmle doludur; kesin anlamı yüzyıllardır tartışılmaktadır (tartışma) [C020] (tartışma). Tabletin sol altında "S. 1513" yazar; eser tarihli ve imzalıdır, ama "S" harfinin anlamı tartışmalıdır (tartışma) [C004][C024] (tartışma).
 
 ## Ne görüyoruz
 
-enwiki'nin betimlediği gibi: zırhlı, dosdoğru bir şövalye gururlu bir atın üstünde, sadık köpeğiyle birlikte dar ve vahşi bir geçitten geçer; yanında keçi başlı bir şeytan ve soluk bir ata binmiş Ölüm figürü vardır [C005]. Ölüm'ün çürüyen leşi bir kum saati tutar — hayatın kısalığının hatırlatıcısı (memento mori) [C005]. Binici, etrafındaki yaratıklara bakmaz, tehditleri küçümser gibidir; bu yüzden sıklıkla cesaretin sembolü olarak görülür [C006]. Şövalyenin zırhı, yaratıkların üzerinde yükselen atı ve meşe yaprakları, inancın direncini simgeler; şövalyenin durumu, tepedeki şehirle simgelenen Cennet Krallığı'na doğru Hristiyanların dünyevi yolculuğunu temsil edebilir (yorum) [C006][C018]. (Görsel bu oturumda incelenemedi; betim enwiki'ye dayanır, belirsiz; Met katalog açılamadı) [C022] (belirsiz)[C021] (belirsiz).
+enwiki'nin betimlediği gibi: zırhlı, dosdoğru bir şövalye gururlu bir atın üstünde, sadık köpeğiyle birlikte dar ve vahşi bir geçitten geçer; yanında keçi başlı bir şeytan ve soluk bir ata binmiş Ölüm figürü vardır [C005]. Ölüm'ün çürüyen leşi bir kum saati tutar — hayatın kısalığının hatırlatıcısı (memento mori); tepede bir şehir görünür ve binici etrafındaki yaratıklara bakmadan dosdoğru ilerler [C005]. Binicinin tehditleri küçümseyen bu duruşu sıklıkla cesaretin sembolü olarak yorumlanır; zırh ve meşe yaprakları inancın direncine, tepedeki şehir Cennet Krallığı'na yolculuğa yorulur (yorum) [C006]. (Görsel bu oturumda incelenemedi; betim enwiki'ye dayanır, belirsiz) [C022] (belirsiz). Birincil künye Met Collection API ile doğrulanmıştır; Met web sayfası 429 verdi (belirsiz) [C003][C021] (belirsiz).
 
 ## Neden bu kadar önemli
 
-Birincisi, teknik: gravür, Dürer'in usta baskılarının doruğudur; Vasari onu "öyle mükemmel birkaç levha ki daha iyisi yapılamaz" diye över [C013][C002]. İkincisi, sembolizm: Hristiyan askerin (miles Christianus) alegorisi olarak okunur; Erasmus'un Elkitabı ve İncil (Ephesians 6, Psalm 23) ile ilişkilidir [C010][C018]. Üçüncüsü, anlam tartışması: eser yüzyıllardır yorumlanmıştır; Nietzsche pesimizm örneği olarak andı, Naziler davalarını şövalyeyle özdeşleştirdi (tartışma) [C020] (tartışma)[C014]. Dördüncüsü, etki: genişçe kopyalandı ve Alman yazarları etkiledi; birçok büyük koleksiyonda nüshası vardır [C014][C015]. Bu yüzden gravür, hem bir teknik şaheser hem de bitmeyen bir yorum bilmecesidir (yorum) [C020] (tartışma).
+Birincisi, teknik: gravür, Dürer'in usta baskılarının doruğudur; Vasari onu "öyle mükemmel birkaç levha ki daha iyisi yapılamaz" diye över [C013][C002]. İkincisi, sembolizm: Hristiyan askerin (miles Christianus) alegorisi olarak okunur; Erasmus'un Elkitabı ve İncil (Ephesians 6, Psalm 23) ile ilişkilidir [C010][C018]. Üçüncüsü, yorum çeşitliliği: Panofsky'nin Hristiyan asker okuması yanında Thausing'in dört mizaç, Karling ve Meyer'in "soyguncu şövalye" (Raubritter), Getlein'in "eskimiş şövalye" okumaları vardır (tartışma) [C020] (tartışma)[C025]. Dördüncüsü, alımlama: Nietzsche gravürü Schopenhauer'un umutsuz ama hakikat arayan tutumunun simgesi olarak andı; Naziler onu politik olarak sahiplendi (tartışma) [C014][C026]. Bu yüzden gravür, hem bir teknik şaheser hem de bitmeyen bir yorum bilmecesidir (yorum) [C020] (tartışma).
 
 ## Küçük sözlük
 
@@ -33,5 +33,5 @@ Birincisi, teknik: gravür, Dürer'in usta baskılarının doruğudur; Vasari on
 
 1. Zırhlı şövalyeyi, atı ve sadık köpeği bulun [C005].
 2. Keçi başlı şeytanı ve kum saati tutan Ölüm'ü izleyin [C005].
-3. Şövalyenin tehditlere bakmayışını ve tepedeki şehri arayın [C006].
-4. Eserin Hristiyan askeri mi, pesimizm mi simgelediğini tartışın: kesin değil (tartışma) [C020] (tartışma).
+3. Şövalyenin dosdoğru bakışını ve tepedeki şehri arayın [C005][C008].
+4. Eserin Hristiyan askeri mi, "soyguncu şövalye" mi, yoksa başka bir şey mi simgelediğini tartışın: kesin değil (tartışma) [C020] (tartışma)[C025].

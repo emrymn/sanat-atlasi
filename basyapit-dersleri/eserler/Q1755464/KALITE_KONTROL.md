@@ -5,6 +5,17 @@
 
 ---
 
+## 0. PARTİ 1 DÜZELTME NOTU (14 Kasım 2026 — PARTI_1_CLAUDE_DENETIM)
+
+Bu dosya Claude bağımsız denetimi sonrası revize edildi; aşağıdaki §1–§7'deki eski sayı/atıflar bu notla güncellenir.
+- **K-1 düzeltildi:** yanlış Met nesnesi `search/336420` ("A Death Scene", anonim 17. yy İspanyol çizimi, 80.3.507) → doğru `objects/336223` (43.106.2) Met Collection API ile açıldı (200). Levha 24.3×18.8, kâğıt 25×19.6, 1513, engraving → **C003 A**. "Birincil katalog erişimi yok / A yalnız lisans" ifadeleri kaldırıldı; Met web sayfası hâlâ 429 (C021 E).
+- **Karşıt okumalar eklendi (C025 B):** Thausing (dört mizaç/sanguineus), Karling 1970 + Ursula Meyer (Raubritter, tilki kuyruğu), Getlein (obsolescence) — enwiki satır içi kaynaklı. C020 anlam tartışması alımlamadan (Nietzsche/Nazi) ayrıldı.
+- **Nietzsche GT §20 birincil metin (K5, Gutenberg #7206):** şövalye = Schopenhauer'un umutsuz ama hakikat arayan tutumu → **C026 A**. "S" anlamı D (C024: Salus ↔ sanguineus).
+- **S-4:** İleri yakın-kopya paragraflar kaldırıldı. **Quiz:** CS07 "Panofsky'ye göre" atfı; CS09/CS10 karşıt okuma; DY03 olgusal bakış; totolojik gerekçeler gerçek gerekçeye çevrildi; GZ taslak (görsel incelenemedi).
+- **Güncel:** 26 iddia (A3/B16/C3/D2/E2), 5 kaynak. Kelime 447/1071/1992 (Orta/İleri hedef altı — dolgu kaldırıldı, §8 bilinçli kısa ders). dogrula 0 hata; CJK 0. Durum "İnsan incelemesi bekliyor".
+
+---
+
 ## 1. Denetim A — İddia-kaynak eşleştirmesi
 
 Olgusal cümleler `[C###]` ile KANIT envanterine bağlandı; dogrula.py çapraz kontrolü temiz.

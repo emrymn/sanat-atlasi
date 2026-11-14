@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K1: tempera on wood.",
    "yanlis_gerekceleri": {
-    "B": "Fresk değil.",
-    "C": "Yağlıboya tuval değil.",
-    "D": "Mozaik değil."
+    "B": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Tempera, ahşap pano.",
+    "C": "Yağlıboya, tuval (yağ bağlayıcılı boya) bu eserin tekniği/desteği değildir; doğru yanıt Tempera, ahşap pano.",
+    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Tempera, ahşap pano."
    },
    "kanit": [
     "C003"
@@ -59,8 +59,8 @@
    "gerekce": "K1: imzalı, Mayıs 1423.",
    "yanlis_gerekceleri": {
     "B": "İmzalı.",
-    "C": "1503 değil.",
-    "D": "1490 değil."
+    "C": "1503 bu eserin tarihi değildir; kaynakların doğruladığı tarih OPUS GENTILIS DE FABRIANO MCCCCXXIII (1423).",
+    "D": "1490 bu eserin tarihi değildir; kaynakların doğruladığı tarih OPUS GENTILIS DE FABRIANO MCCCCXXIII (1423)."
    },
    "kanit": [
     "C002"
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: Palla Strozzi.",
    "yanlis_gerekceleri": {
-    "B": "Medici değil.",
+    "B": "Medici bu soruda doğru değildir; kaynakların doğruladığı yanıt Palla Strozzi.",
     "C": "Ghiberti şapeli tamamladı, hami değil.",
-    "D": "Rucellai değil."
+    "D": "Rucellai bu soruda doğru değildir; kaynakların doğruladığı yanıt Palla Strozzi."
    },
    "kanit": [
     "C006"
@@ -123,8 +123,8 @@
    "gerekce": "K1: özgün Louvre; Uffizi'deki kopya.",
    "yanlis_gerekceleri": {
     "B": "Uffizi'deki kopya.",
-    "C": "Prado değil.",
-    "D": "Vatican değil."
+    "C": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer Louvre.",
+    "D": "Vatican (Vatikan) bu eserin bulunduğu kurum değildir; doğru yer Louvre."
    },
    "kanit": [
     "C009"
@@ -155,8 +155,8 @@
    "gerekce": "K1: International Gothic.",
    "yanlis_gerekceleri": {
     "B": "Rönesans değil (eşik).",
-    "C": "Barok değil.",
-    "D": "Maniyerizm değil."
+    "C": "Barok bu soruda doğru değildir; kaynakların doğruladığı yanıt Uluslararası Gotik.",
+    "D": "Maniyerizm bu soruda doğru değildir; kaynakların doğruladığı yanıt Uluslararası Gotik."
    },
    "kanit": [
     "C010"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K2: 300 florin.",
    "yanlis_gerekceleri": {
-    "B": "30 değil.",
-    "C": "3000 değil.",
-    "D": "100 değil."
+    "B": "30 florin bu soruda doğru değildir; kaynakların doğruladığı yanıt 300 florin.",
+    "C": "3000 florin bu soruda doğru değildir; kaynakların doğruladığı yanıt 300 florin.",
+    "D": "100 florin bu soruda doğru değildir; kaynakların doğruladığı yanıt 300 florin."
    },
    "kanit": [
     "C014"
@@ -250,8 +250,8 @@
    "dogru": "A",
    "gerekce": "K2: Golden Spur.",
    "yanlis_gerekceleri": {
-    "B": "Savaş değil.",
-    "C": "Av değil.",
+    "B": "Savaş bu soruda doğru değildir; kaynakların doğruladığı yanıt Palla'nın Order of the Golden Spur üyeliği.",
+    "C": "Av bu soruda doğru değildir; kaynakların doğruladığı yanıt Palla'nın Order of the Golden Spur üyeliği.",
     "D": "Tarikat üyeliği."
    },
    "kanit": [
@@ -382,7 +382,7 @@
   {
    "id": "GZ01",
    "soru": "Diz çökmüş üç Müneccim'i ve Kutsal Aile'yi bulun.",
-   "ipucu": "Merkez + sol.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Merkez + sol.",
    "kanit": [
     "C007"
    ]
@@ -390,7 +390,7 @@
   {
    "id": "GZ02",
    "soru": "Arka plandaki üç yolculuk sahnesini ve çerçevenin üç kemerini izleyin.",
-   "ipucu": "Yıldız/Herod/dönüş.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Yıldız/Herod/dönüş.",
    "kanit": [
     "C008"
    ]
@@ -398,7 +398,7 @@
   {
    "id": "GZ03",
    "soru": "Altın mahmuz takan uşağı bulun.",
-   "ipucu": "Golden Spur göndermesi.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Golden Spur göndermesi.",
    "kanit": [
     "C020"
    ]
@@ -406,7 +406,7 @@
   {
    "id": "GZ04",
    "soru": "Ağızlıklı beyaz alaunt'u (köpek) bulun.",
-   "ipucu": "Alt sağ köşe.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Alt sağ köşe.",
    "kanit": [
     "C021"
    ]
@@ -414,7 +414,7 @@
   {
    "id": "GZ05",
    "soru": "Predelladaki mavi gökyüzünü inceleyin.",
-   "ipucu": "Altın fon yerine mavi.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Altın fon yerine mavi.",
    "kanit": [
     "C011"
    ]

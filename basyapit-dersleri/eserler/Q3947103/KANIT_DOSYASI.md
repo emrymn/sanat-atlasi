@@ -78,6 +78,8 @@
 
 **C024** — Görsel kamu malı (sanatçı ö. 1287 → TR/AB/ABD PD); Commons dosyası PD. Analiz için indirilen geçici kopya `.qwen/tmp/parti1/Q3947103/` (teslimata girmez). Kaynak: K3. **A.**
 
+**Sayım:** 24 iddia · A=3 · B=20 · C=0 · D=1 · E=0.
+
 ## 3. Görsel Doğrulama Kaydı (Kural 6)
 
 - **İncelenen görüntü:** K3 Commons dosyası, 1280×1747 px (vision köprüsü transkripsiyonu, 14 Kasım 2026). Tam kare incelendi.

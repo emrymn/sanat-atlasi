@@ -55,7 +55,7 @@ Eser in situ (San Marco Manastırı, Floransa). **Birincil katalog erişilemedi:
 **C028** — Görsel kamu malı (Fra Angelico ö.1455); Commons PD; geçici kopya .qwen/tmp/parti1/Q2378534/. **A.** K5 (lisans).
 **C029** — Merdiven, ressamın ölümünden sonra yapıldı → konum özgün planı yansıtmaz (K3). **B.** K3.
 
-**Sayım:** 29 iddia · A=1 · B=25 · D=0 · E=3 · C=0.
+**Sayım:** 29 iddia · A=1 · B=25 · C=0 · D=0 · E=3.
 
 ## 3. Görsel doğrulama kaydı (Kural 6)
 

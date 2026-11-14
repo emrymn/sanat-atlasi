@@ -5,6 +5,17 @@
 
 ---
 
+## 0. PARTİ 1 DÜZELTME NOTU (14 Kasım 2026 — PARTI_1_CLAUDE_DENETIM)
+
+Bu dosya Claude bağımsız denetimi sonrası revize edildi; aşağıdaki §1–§7'deki eski sayı/atıflar bu notla güncellenir.
+- **K-2 düzeltildi:** yanlış Brera URL (`opere/cristo-morto`, 404) → doğru kayıt `collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/` (200). Teknik/boyut/yer/envanter/Sala VI → **A (C003–C007, C028)**. "Brera föyü erişilemedi / envanter yalnız WD" ifadeleri kaldırıldı.
+- **Tarih:** Brera birincil "1483 circa" (C003 A); literatür tartışması D (C030). **"data 1483→aralık" önerisi GERİ ÇEKİLDİ** (Brera c.1483 ile data uyumlu).
+- **Provenance:** belgeli 1806 Bossi/Canova → 1824 Brera (A, C023); bottega/Gonzaga "en kabul gören hipotez", 1628 Carlo I + Mazarin "non risolutive ipotesi" (D, C031). **Aldobrandini 1603 diğer versiyon** (itwiki "sdoppiarsi") — Brera zincirinden çıkarıldı. TK05/CS10 düzeltildi.
+- **S-3:** Magdalene "in tutta probabilità" → büyük olasılıkla (DY04); ışık sağdan itwiki K3 (CS06 atfı); Eisler/Steinberg atfı daraltıldı (C021); yenilgi/zafer C (C022). **S-4:** İleri dolgu (34 "Seminer sorusu" tekrarı) temizlendi.
+- **Güncel:** 31 iddia (A8/B16/C2/D4/E1), 5 kaynak. Kelime 410/957/1552 (Orta/İleri hedef altı — dolgu kaldırıldı, §8). dogrula 0 hata; CJK 0. Durum "İnsan incelemesi bekliyor".
+
+---
+
 ## 1. Denetim A — İddia-kaynak eşleştirmesi
 
 Olgusal cümleler `[C###]` ile KANIT envanterine bağlandı; dogrula.py çapraz kontrolü temiz.

@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K1: oil on oak.",
    "yanlis_gerekceleri": {
-    "B": "Fresk değil.",
-    "C": "Tempera tuval değil.",
-    "D": "Mozaik değil."
+    "B": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "C": "Tempera, tuval (yumurta bağlayıcılı pigment) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano."
    },
    "kanit": [
     "C003"
@@ -59,8 +59,8 @@
    "gerekce": "K1: ca. 1427–32.",
    "yanlis_gerekceleri": {
     "B": "1500 WD yüzyıl, güvenilmez.",
-    "C": "1600 değil.",
-    "D": "1300 değil."
+    "C": "1600, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt c. 1427–1432.",
+    "D": "1300, Giotto/Cimabue döneminin tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt c. 1427–1432."
    },
    "kanit": [
     "C002"
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: Cloisters/Met.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi değil.",
+    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer The Cloisters, Met, New York.",
     "C": "Louvre değil (Brüksel versiyonu farklı).",
-    "D": "Prado değil."
+    "D": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer The Cloisters, Met, New York."
    },
    "kanit": [
     "C005"
@@ -154,9 +154,9 @@
    "dogru": "A",
    "gerekce": "K2: rays of light.",
    "yanlis_gerekceleri": {
-    "B": "Güvercin heykeli değil.",
-    "C": "Altın fon değil.",
-    "D": "Bulut değil."
+    "B": "Güvercin heykeli bu soruda doğru değildir; kaynakların doğruladığı yanıt Sol pencereden ışık hüzmeleri.",
+    "C": "Altın fon bu soruda doğru değildir; kaynakların doğruladığı yanıt Sol pencereden ışık hüzmeleri.",
+    "D": "Bulut bu soruda doğru değildir; kaynakların doğruladığı yanıt Sol pencereden ışık hüzmeleri."
    },
    "kanit": [
     "C009"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K2: assumed Campin.",
    "yanlis_gerekceleri": {
-    "B": "van Eyck değil.",
+    "B": "Jan van Eyck bu eserin sanatçısı değildir; doğru sanatçı Robert Campin.",
     "C": "Rogier tartışmalı.",
-    "D": "Daret değil."
+    "D": "Daret bu soruda doğru değildir; kaynakların doğruladığı yanıt Robert Campin."
    },
    "kanit": [
     "C014"
@@ -219,8 +219,8 @@
    "gerekce": "K1: 1956.",
    "yanlis_gerekceleri": {
     "B": "1427 tarih.",
-    "C": "1890 değil.",
-    "D": "2000 değil."
+    "C": "1890 bu eserin tarihi değildir; kaynakların doğruladığı tarih 1956 (Cloisters Collection).",
+    "D": "2000 bu eserin tarihi değildir; kaynakların doğruladığı tarih 1956 (Cloisters Collection)."
    },
    "kanit": [
     "C005"
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K2: Early Netherlandish.",
    "yanlis_gerekceleri": {
-    "B": "İtalyan Rönesans değil.",
-    "C": "Barok değil.",
-    "D": "Empresyonizm değil."
+    "B": "İtalyan Rönesans bu soruda doğru değildir; kaynakların doğruladığı yanıt Erken Netherlandish.",
+    "C": "Barok bu soruda doğru değildir; kaynakların doğruladığı yanıt Erken Netherlandish.",
+    "D": "Empresyonizm bu soruda doğru değildir; kaynakların doğruladığı yanıt Erken Netherlandish."
    },
    "kanit": [
     "C013"
@@ -382,7 +382,7 @@
   {
    "id": "GZ01",
    "soru": "Üç paneli soldan sağa adlandırın: donorlar, Müjde, Joseph.",
-   "ipucu": "Triptik düzeni.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Triptik düzeni.",
    "kanit": [
     "C008"
    ]
@@ -390,7 +390,7 @@
   {
    "id": "GZ02",
    "soru": "Zambak, çeşme ve pencereden giren ışık hüzmelerini bulun.",
-   "ipucu": "Meryem saflığı + Kutsal Ruh.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Meryem saflığı + Kutsal Ruh.",
    "kanit": [
     "C009"
    ]
@@ -398,7 +398,7 @@
   {
    "id": "GZ03",
    "soru": "Joseph'in fare kapanını bulun.",
-   "ipucu": "Sağ panel; Augustinus metaforu.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Sağ panel; Augustinus metaforu.",
    "kanit": [
     "C019"
    ]
@@ -406,7 +406,7 @@
   {
    "id": "GZ04",
    "soru": "Arka plandaki Liège kent manzarasını izleyin.",
-   "ipucu": "İki kilise kulesi.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): İki kilise kulesi.",
    "kanit": [
     "C020"
    ]
@@ -414,7 +414,7 @@
   {
    "id": "GZ05",
    "soru": "Donorların bahçede dua edişini bulun.",
-   "ipucu": "Sol panel.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Sol panel.",
    "kanit": [
     "C008"
    ]

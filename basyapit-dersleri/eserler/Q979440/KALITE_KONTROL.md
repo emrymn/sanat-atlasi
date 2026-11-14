@@ -5,6 +5,16 @@
 
 ---
 
+## 0. PARTİ 1 DÜZELTME NOTU (14 Kasım 2026 — PARTI_1_CLAUDE_DENETIM)
+
+Bu dosya Claude bağımsız denetimi sonrası revize edildi; aşağıdaki §1–§7'deki eski sayı/atıflar bu notla güncellenir.
+- **C011 anakronizm düzeltildi:** 1799 "Grandük Peter Leopold" (Pietro Leopoldo 1790'da Toskana'dan ayrıldı, 1792'de öldü → 1799'da emir veremez) → grandük kimliği **D (C034)**; itwiki "Ferdinando III" çapraz (K5). Taşıma olgusu (1799, iki Giordano tuvali) B (C011). TK04 düzeltildi.
+- **C027 nedensellik:** "Kuzey üslup → Avignon daveti" cümlesi enwiki'de {{Citation needed}} → **C (C035)**; "belgeli halka"/"davetin nedeni" ifadeleri yoruma çevrildi. Avignon müşterileri Uffizi A (C028).
+- **C005:** Uffizi yalnız "Size 184 x 168 cm" verir, "orta panel" niteliği YOK → nitelik kaldırıldı. **C004 oranı:** enwiki "double" ↔ itwiki "triplo" → **D (C036)**. **C013:** "lak" → "lacca" (lake pigmenti; terim birincil teyit yok).
+- **Güncel:** 36 iddia (A20/B10/C1/D4/E1), 5 kaynak (K5 itwiki eklendi). Kelime 435/1365/2723 (aralıkta). Görsel K4 incelenmişti (A). dogrula 0 hata; CJK 0. Durum "İnsan incelemesi bekliyor".
+
+---
+
 ## 1. Denetim A — İddia-kaynak eşleştirmesi
 
 Olgusal cümleler `[C###]` ile KANIT envanterine bağlandı; dogrula.py çapraz kontrolü temiz.

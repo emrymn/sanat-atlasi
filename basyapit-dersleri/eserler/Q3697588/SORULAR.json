@@ -27,8 +27,8 @@
    "gerekce": "K2/K3: attributed Bramante; debated.",
    "yanlis_gerekceleri": {
     "B": "Leonardo etkisi var ama atıf değil.",
-    "C": "Raphael değil.",
-    "D": "Titian değil."
+    "C": "Raphael bu eserin sanatçısı değildir; doğru sanatçı Bramante (tartışmalı).",
+    "D": "Titian bu soruda doğru değildir; kaynakların doğruladığı yanıt Bramante (tartışmalı)."
    },
    "kanit": [
     "C002"
@@ -58,9 +58,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: Brera.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi değil.",
-    "C": "Louvre değil.",
-    "D": "Prado değil."
+    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Brera, Milano.",
+    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Brera, Milano.",
+    "D": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer Brera, Milano."
    },
    "kanit": [
     "C006"
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: oil on panel.",
    "yanlis_gerekceleri": {
-    "B": "Fresk değil.",
+    "B": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, pano.",
     "C": "Tempera tuval değil (WD tempera der, fark).",
-    "D": "Mozaik değil."
+    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, pano."
    },
    "kanit": [
     "C004"
@@ -122,9 +122,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: tied to column before scourging.",
    "yanlis_gerekceleri": {
-    "B": "Çarmıh değil.",
-    "C": "Doğum değil.",
-    "D": "Diriliş değil."
+    "B": "Çarmıh bu soruda doğru değildir; kaynakların doğruladığı yanıt Flagellasyon öncesi sütuna bağlanma.",
+    "C": "Doğum bu soruda doğru değildir; kaynakların doğruladığı yanıt Flagellasyon öncesi sütuna bağlanma.",
+    "D": "Diriliş bu soruda doğru değildir; kaynakların doğruladığı yanıt Flagellasyon öncesi sütuna bağlanma."
    },
    "kanit": [
     "C010"
@@ -154,9 +154,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: same as San Satiro fake choir.",
    "yanlis_gerekceleri": {
-    "B": "Tempietto değil.",
-    "C": "St Peter's değil.",
-    "D": "Belvedere değil."
+    "B": "Tempietto bu soruda doğru değildir; kaynakların doğruladığı yanıt San Satiro sahte korosu.",
+    "C": "St Peter's bu soruda doğru değildir; kaynakların doğruladığı yanıt San Satiro sahte korosu.",
+    "D": "Belvedere bu soruda doğru değildir; kaynakların doğruladığı yanıt San Satiro sahte korosu."
    },
    "kanit": [
     "C011"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: golden pyx, Eucharist.",
    "yanlis_gerekceleri": {
-    "B": "Taç değil.",
-    "C": "Kupa değil.",
-    "D": "Kitap değil."
+    "B": "Taç bu soruda doğru değildir; kaynakların doğruladığı yanıt Pyx (Ökaristi).",
+    "C": "Kupa bu soruda doğru değildir; kaynakların doğruladığı yanıt Pyx (Ökaristi).",
+    "D": "Kitap bu soruda doğru değildir; kaynakların doğruladığı yanıt Pyx (Ökaristi)."
    },
    "kanit": [
     "C015"
@@ -219,8 +219,8 @@
    "gerekce": "K2/K3: double lighting, fading view, detail.",
    "yanlis_gerekceleri": {
     "B": "Altın zemin Gotik.",
-    "C": "Düz figür değil.",
-    "D": "Gotik değil."
+    "C": "Düz figür bu soruda doğru değildir; kaynakların doğruladığı yanıt Çift ışık + sfumato + detay.",
+    "D": "Gotik kemer bu soruda doğru değildir; kaynakların doğruladığı yanıt Çift ışık + sfumato + detay."
    },
    "kanit": [
     "C013"
@@ -252,7 +252,7 @@
    "yanlis_gerekceleri": {
     "B": "Perspektif Bramante.",
     "C": "Sfumato Flaman.",
-    "D": "Renk değil."
+    "D": "Renk bu soruda doğru değildir; kaynakların doğruladığı yanıt İfade yüzü + aşırı gerçekçilik."
    },
    "kanit": [
     "C014"
@@ -314,9 +314,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: heating malfunction damage.",
    "yanlis_gerekceleri": {
-    "B": "Satış değil.",
+    "B": "Satış bu soruda doğru değildir; kaynakların doğruladığı yanıt Isıtma arızası → hasar + restorasyon.",
     "C": "Yangın değil (1771 Brera başka).",
-    "D": "Taşınma değil."
+    "D": "Taşınma bu soruda doğru değildir; kaynakların doğruladığı yanıt Isıtma arızası → hasar + restorasyon."
    },
    "kanit": [
     "C009"
@@ -447,7 +447,7 @@
   {
    "id": "GZ01",
    "soru": "Boyundaki ipi ve sıkılan eti bulun.",
-   "ipucu": "Aşırı gerçekçilik.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Aşırı gerçekçilik.",
    "kanit": [
     "C010",
     "C014"
@@ -456,7 +456,7 @@
   {
    "id": "GZ02",
    "soru": "Altın pyx'i bulun.",
-   "ipucu": "Pencere kenarı.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Pencere kenarı.",
    "kanit": [
     "C015"
    ]
@@ -464,7 +464,7 @@
   {
    "id": "GZ03",
    "soru": "Çift ışığın yönlerini izleyin.",
-   "ipucu": "Ön + arka pencere.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Ön + arka pencere.",
    "kanit": [
     "C013"
    ]
@@ -472,7 +472,7 @@
   {
    "id": "GZ04",
    "soru": "Şeffaf gözyaşlarını bulun.",
-   "ipucu": "Leonardo gerçekçiliği.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Leonardo gerçekçiliği.",
    "kanit": [
     "C014"
    ]
@@ -480,7 +480,7 @@
   {
    "id": "GZ05",
    "soru": "Mekânın sınırlar ötesi genişliğini düşünün.",
-   "ipucu": "San Satiro yöntemi.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): San Satiro yöntemi.",
    "kanit": [
     "C011"
    ]

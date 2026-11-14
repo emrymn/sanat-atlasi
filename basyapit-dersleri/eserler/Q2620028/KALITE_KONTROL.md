@@ -5,6 +5,16 @@
 
 ---
 
+## 0. PARTİ 1 DÜZELTME NOTU (14 Kasım 2026 — PARTI_1_CLAUDE_DENETIM)
+
+Bu dosya Claude bağımsız denetimi sonrası revize edildi; aşağıdaki §1–§7'deki eski sayı/atıflar bu notla güncellenir.
+- **S-8 anahtar çelişkisi kaynakla çözüldü (D):** ikinci anahtarın malzemesi — enwiki "silver and gold" + itwiki betimi "chiavi d'oro e d'argento" (gümüş) ↔ itwiki'nin Marco Rizzi kaynaklı yorumu "una d'oro... e una di ferro" (demir). Altın anahtar ortak. **C023 B→D**.
+- **Quiz:** DY04 "altın/demir anahtar" malzeme iddiası kaldırıldı → "İsa diz çökmüş Petrus'a anahtarları verir" (C008 B); TK02 kanit C023 çıkarıldı; §9 envanterine anahtar malzemesi tartışması eklendi.
+- **S-4/S-7:** Başlangıç yetim "Sekizincisi/Dokuzuncusu" parçaları temizlendi; totolojik çeldirici gerekçeleri gerçek gerekçeye çevrildi; GZ taslak (görsel incelenemedi). Boyut farkı not edildi (enwiki 330 / itwiki 340 / 335).
+- **Güncel:** 27 iddia (A1/B22/C0/D2/E2), 5 kaynak. Kelime 379/1276/2526 (hedef altı — §8). dogrula 0 hata; CJK içerik 0. Durum "İnsan incelemesi bekliyor".
+
+---
+
 ## 1. Denetim A — İddia-kaynak eşleştirmesi
 
 Olgusal cümleler `[C###]` ile KANIT envanterine bağlandı; dogrula.py çapraz kontrolü temiz.

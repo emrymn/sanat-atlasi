@@ -74,6 +74,8 @@
 
 **C025** — Görsel kamu malı (Duccio ö. 1318/19 → TR/AB/ABD PD); Commons/WGA dosyası PD; geçici kopya `.qwen/tmp/parti1/duccio/` (teslimata girmez). Kaynak: K2. **A.**
 
+**Sayım:** 25 iddia · A=8 · B=17 · C=0 · D=0 · E=0.
+
 ## 3. Görsel Doğrulama Kaydı (Kural 6)
 
 - **İncelenen görüntü:** K2 Commons/WGA "WGA06783.jpg", 562×1010 (vision köprüsü, 14 Kasım 2026). Tam kare incelendi.

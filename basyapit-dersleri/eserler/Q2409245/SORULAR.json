@@ -58,9 +58,9 @@
    "dogru": "A",
    "gerekce": "K1: um 1470.",
    "yanlis_gerekceleri": {
-    "B": "1400 değil.",
-    "C": "1500 değil.",
-    "D": "1600 değil."
+    "B": "1400, erken Quattrocento'nun tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt um 1470.",
+    "C": "1500 bu eserin tarihi değildir; kaynakların doğruladığı tarih um 1470.",
+    "D": "1600, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt um 1470."
    },
    "kanit": [
     "C002"
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: Eichenholz (oil on oak).",
    "yanlis_gerekceleri": {
-    "B": "Fresk değil.",
-    "C": "Tempera tuval değil.",
-    "D": "Mozaik değil."
+    "B": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "C": "Tempera, tuval (yumurta bağlayıcılı pigment) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano.",
+    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, meşe pano."
    },
    "kanit": [
     "C003"
@@ -122,8 +122,8 @@
    "dogru": "A",
    "gerekce": "K1: Gemäldegalerie.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi değil.",
-    "C": "Louvre değil.",
+    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Gemäldegalerie, Berlin.",
+    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Gemäldegalerie, Berlin.",
     "D": "NG değil (Grimston orada)."
    },
    "kanit": [
@@ -155,8 +155,8 @@
    "gerekce": "K1: 1821 Solly.",
    "yanlis_gerekceleri": {
     "B": "1492 Medici envanteri (provenance).",
-    "C": "1900 değil.",
-    "D": "2000 değil."
+    "C": "1900 hibe bu soruda doğru değildir; kaynakların doğruladığı yanıt 1821, Edward Solly koleksiyonundan satın alma.",
+    "D": "2000 bu eserin tarihi değildir; kaynakların doğruladığı tarih 1821, Edward Solly koleksiyonundan satın alma."
    },
    "kanit": [
     "C004"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K1: tek kadın portresi.",
    "yanlis_gerekceleri": {
-    "B": "Erkek değil.",
-    "C": "Manzara değil.",
-    "D": "Fresk değil."
+    "B": "Tek erkek portresi bu soruda doğru değildir; kaynakların doğruladığı yanıt Bilinen tek kadın portresi.",
+    "C": "Tek manzarası bu soruda doğru değildir; kaynakların doğruladığı yanıt Bilinen tek kadın portresi.",
+    "D": "Tek freski (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Bilinen tek kadın portresi."
    },
    "kanit": [
     "C006"
@@ -218,9 +218,9 @@
    "dogru": "A",
    "gerekce": "K1: Brügge.",
    "yanlis_gerekceleri": {
-    "B": "Floransa değil.",
-    "C": "Paris değil.",
-    "D": "Roma değil."
+    "B": "Floransa bu soruda doğru değildir; kaynakların doğruladığı yanıt Brügge.",
+    "C": "Paris bu soruda doğru değildir; kaynakların doğruladığı yanıt Brügge.",
+    "D": "Roma bu soruda doğru değildir; kaynakların doğruladığı yanıt Brügge."
    },
    "kanit": [
     "C005"
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K2: polished pearl.",
    "yanlis_gerekceleri": {
-    "B": "Altın heykel değil.",
-    "C": "Mermer değil.",
-    "D": "Gümüş ayna değil."
+    "B": "Altın heykel bu soruda doğru değildir; kaynakların doğruladığı yanıt Siyah kadife yastıkta cilalı inci.",
+    "C": "Mermer büst bu soruda doğru değildir; kaynakların doğruladığı yanıt Siyah kadife yastıkta cilalı inci.",
+    "D": "Gümüş ayna bu soruda doğru değildir; kaynakların doğruladığı yanıt Siyah kadife yastıkta cilalı inci."
    },
    "kanit": [
     "C010"
@@ -384,7 +384,7 @@
   {
    "id": "GZ01",
    "soru": "Kızın bakışını ve göz hizasızlığını izleyin.",
-   "ipucu": "İlgi çekici bakış; hafif asimetri.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): İlgi çekici bakış; hafif asimetri.",
    "kanit": [
     "C012"
    ]
@@ -392,7 +392,7 @@
   {
    "id": "GZ02",
    "soru": "Siyah kadife başlığı (hennin) ve altın şeridi bulun.",
-   "ipucu": "En güçlü gölgeyi verir.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): En güçlü gölgeyi verir.",
    "kanit": [
     "C006"
    ]
@@ -400,7 +400,7 @@
   {
    "id": "GZ03",
    "soru": "Soldan gelen ışığı ve başlığın gölgesini takip edin.",
-   "ipucu": "Mekân derinliği.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Mekân derinliği.",
    "kanit": [
     "C015"
    ]
@@ -408,7 +408,7 @@
   {
    "id": "GZ04",
    "soru": "Lambri ve dado rayı inceleyin.",
-   "ipucu": "Koyu kahve duvar; ahşap.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Koyu kahve duvar; ahşap.",
    "kanit": [
     "C014"
    ]
@@ -416,7 +416,7 @@
   {
    "id": "GZ05",
    "soru": "Kızın soluk tenini ve badem gözlerini bulun.",
-   "ipucu": "Aristokrat zarafet.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Aristokrat zarafet.",
    "kanit": [
     "C016"
    ]

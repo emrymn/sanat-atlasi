@@ -24,7 +24,8 @@ bir iddiayı gerçekten destekleyip desteklemediği OTOMATİK çözülemez — i
 denetimi ve ham kaynak kontrolü (AKADEMIK_BAGIMSIZ_DENETIM.md, PILOT_SON_DOGRULAMA.md) gerekir.
 Çıkış kodu: 0 = temiz, 1 = hata.
 """
-import json, os, re, sys
+import json, os, re, sys, difflib
+from collections import Counter
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
@@ -144,6 +145,67 @@ def etiketsiz_olgu_tespit(metin):
             out.append(c[:140])
     return out
 
+# ---------- Parti 1 düzeltme: yeni kalite katmanları (UYARI ağırlıklı) ----------
+# §8 kelime hedef aralıkları (hedef dışı = UYARI; kısa ders bilinçli tercih olabilir)
+KELIME_ARALIK = {'baslangic': (400, 500), 'orta': (1300, 1600), 'ileri': (2600, 3200)}
+
+def paragraflar(metin):
+    out = []
+    for blok in re.split(r'\n\s*\n', metin):
+        b = blok.strip()
+        if not b or b.startswith('#'):
+            continue
+        out.append(b)
+    return out
+
+def yakin_tekrar_kontrol(metin, fn, eser_id, U):
+    """Ardışık yakın-kopya paragraflar (difflib > 0.6) → §8 dolgu UYARISI (heuristic)."""
+    ps = paragraflar(metin)
+    for i in range(len(ps) - 1):
+        a, b = ps[i], ps[i + 1]
+        if len(a) < 80 or len(b) < 80:
+            continue
+        r = difflib.SequenceMatcher(None, a, b).ratio()
+        if r > 0.6:
+            U.append(f'{eser_id}: {fn} yakın tekrar ardışık paragraf (benzerlik {r:.2f}, §8 dolgu): "{a[:55]}..."')
+
+def seviye_tekrar_kontrol(metinler, eser_id, U):
+    """Seviyeler arası birebir uzun cümle tekrarı (§8) → UYARI (heuristic)."""
+    def sset(m):
+        return {c.strip() for c in cümleler(m) if len(c.strip()) > 60 and not c.strip().startswith('#') and '|' not in c}
+    sets = {fn: sset(m) for fn, m in metinler.items()}
+    fns = list(sets)
+    for i in range(len(fns)):
+        for j in range(i + 1, len(fns)):
+            ortak = sets[fns[i]] & sets[fns[j]]
+            if len(ortak) >= 5:
+                U.append(f'{eser_id}: {fns[i]} ↔ {fns[j]} seviyeler arası {len(ortak)} birebir ortak uzun cümle (§8 tekrar)')
+
+def sayim_kontrol(ders, kanit_metni, eser_id, U):
+    """KANIT 'Sayım:' satırı ↔ DERS.json iddia seviyeleri tutarlılığı → UYARI."""
+    if eser_id == 'Q167605':
+        return  # pilot: kendi biçimi var, değiştirilmez
+    m = re.search(r'\*\*Sayım:\*\*\s*(\d+)\s*iddia[^\n]*', kanit_metni)
+    if not m:
+        U.append(f'{eser_id}: KANIT "Sayım:" satırı bulunamadı (sayım tutarlılığı denetlenemedi)')
+        return
+    actual = Counter(i['seviye'] for i in ders.get('iddialar', []))
+    if int(m.group(1)) != len(ders.get('iddialar', [])):
+        U.append(f'{eser_id}: KANIT Sayım toplam {m.group(1)} ≠ DERS.json {len(ders.get("iddialar", []))}')
+    line = m.group(0)
+    for sev in 'ABCDE':
+        dm = re.search(sev + r'\s*=\s*(\d+)', line)
+        if dm and int(dm.group(1)) != actual.get(sev, 0):
+            U.append(f'{eser_id}: KANIT Sayım {sev}={dm.group(1)} ≠ DERS.json {sev}={actual.get(sev, 0)}')
+
+def totoloji_kontrol(sorular, eser_id, U):
+    """≤3 kelimelik 'X değil.' çeldirici gerekçeleri (§10) → UYARI (heuristic)."""
+    for q in sorular.get('coktan_secmeli', []):
+        for harf, g in q.get('yanlis_gerekceleri', {}).items():
+            gs = g.strip()
+            if len(gs.split()) <= 3 and re.search(r'değil\.?$', gs):
+                U.append(f'{eser_id}: CS {q["id"]} {harf} totolojik çeldirici gerekçesi (§10): "{gs}"')
+
 # ---------- çapraz tutarlılık ----------
 def capraz_kontrol(ders, sorular, kanit_metni, ders_metinleri, eser_id):
     H, U = [], []
@@ -187,8 +249,18 @@ def capraz_kontrol(ders, sorular, kanit_metni, ders_metinleri, eser_id):
             olculen = kelime(metin)
             if abs(olculen - beklenen) > max(10, beklenen * 0.05):
                 hata(H, f'{eser_id}: {fn} kelime sayısı tutarsız (json {beklenen}, ölçülen {olculen})')
+            lo, hi = KELIME_ARALIK[seviye_map[fn]]
+            if not (lo <= olculen <= hi):
+                uyari(U, f'{eser_id}: {fn} kelime {olculen} hedef aralık {lo}–{hi} dışında (§8; kısa ders bilinçli tercih olabilir)')
+        yakin_tekrar_kontrol(metin, fn, eser_id, U)
+
+    seviye_tekrar_kontrol(ders_metinleri, eser_id, U)
+    sayim_kontrol(ders, kanit_metni, eser_id, U)
+    totoloji_kontrol(sorular, eser_id, U)
 
     def kanit_seviye_kontrol(q, grup):
+        if not q.get('kanit'):
+            hata(H, f'{eser_id}: {grup} {q["id"]} boş quiz kanıtı (kanit dizisi boş)')
         for cid in q.get('kanit', []):
             if cid not in iddialar:
                 hata(H, f'{eser_id}: {grup} {q["id"]} bilinmeyen kanit {cid}')
@@ -342,6 +414,23 @@ def testler():
     d, s, k, m = temel_fixture(); d['iddialar'][0]['seviye'] = 'X'; calis('sema_negatif_seviye', d, s, k, m, 'enum dışında')
     d, s, k, m = temel_fixture(); d['iddialar'][0]['kullanim'] = 'gecersiz'; calis('sema_negatif_kullanim', d, s, k, m, 'enum dışında')
     d, s, k, m = temel_fixture(); d['durum'] = 'Bilinmiyor'; calis('sema_negatif_durum', d, s, k, m, 'enum dışında')
+
+    # --- YENİ: Parti 1 düzeltme kalite katmanları ---
+    def uyari_test(ad, ders, sorular, kanit, metinler, beklenen_substr):
+        H, U = capraz_kontrol(ders, sorular, kanit, metinler, 'TEST')
+        ok = any(beklenen_substr in x for x in U)
+        sonuclar.append((ad, ok, next((x for x in U if beklenen_substr in x), 'BEKLENEN UYARI YOK')))
+    d, s, k, m = temel_fixture()
+    para = 'Bu bir test paragrafıdır ve yeterince uzundur ki benzerlik ölçülebilsin diye bazı kelimeler içerir burada [C001].'
+    m['DERS_ORTA.md'] = para + '\n\n' + para
+    uyari_test('yakin_tekrar_yakalanir', d, s, k, m, 'yakın tekrar')
+    d, s, k, m = temel_fixture(); k = '**C001** — x\n**C002** — x\n**C003** — x\n**C004** — x\n**Sayım:** 9 iddia · A=5 · B=0 · C=0 · D=0 · E=0.'
+    uyari_test('sayim_tutarsizligi', d, s, k, m, 'Sayım')
+    d, s, k, m = temel_fixture(); s['coktan_secmeli'][0]['yanlis_gerekceleri'] = {'B': 'Bosch değil.', 'C': 'Bruegel değil.', 'D': 'Holbein değil.'}
+    uyari_test('totoloji_yakalanir', d, s, k, m, 'totolojik')
+    d, s, k, m = temel_fixture(); s['dogru_yanlis'][0]['kanit'] = []; calis('bos_quiz_kaniti', d, s, k, m, 'boş quiz kanıtı')
+    d, s, k, m = temel_fixture(); m['DERS_BASLANGIC.md'] = 'Kısa [C001].'
+    uyari_test('kelime_aralik_disi', d, s, k, m, 'hedef aralık')
 
     print('=== NEGATİF + UYUM TESTLERİ ===')
     hepsi = True

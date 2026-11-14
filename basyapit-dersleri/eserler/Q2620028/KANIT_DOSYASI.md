@@ -1,13 +1,13 @@
 # KANIT DOSYASI — Q2620028 · İsa'nın Anahtarları Petrus'a Vermesi · Pietro Perugino
 
 **Tarih:** 14 Kasım 2026 · **Parti:** 1 (M2) · **Standart:** `../../AKADEMIK_STANDART.md`
-**Durum:** İnsan incelemesi bekliyor.
+**Durum:** İnsan incelemesi bekliyor. **Revizyon:** Parti 1 toplu düzeltme (PARTI_1_CLAUDE_DENETIM S-8 anahtar çelişkisi).
 
 ---
 
 ## 0. Yöntem ve kaynak hiyerarşisi
 
-Eser in situ (Sistine Şapeli, Vatikan). **Birincil katalog (Vatican Museums) bu oturumda açılmadı → E.** enwiki (K2) ve itwiki (K3) kaynaklı ikincil (B); WD (K4) yardımcı; Commons (K5) görsel. **SINIR:** vision köprüsü bütçesi tükendi → K5 indirildi ama İNCELENEMEDİ (C025 E); görsel A iddiası yok. Otoportre kimliği "presumed" → D.
+Eser in situ (Sistine Şapeli, Vatikan). **Birincil katalog (Vatican Museums) bu oturumda açılmadı → E.** enwiki (K2) ve itwiki (K3) kaynaklı ikincil (B); WD (K4) yardımcı; Commons (K5) görsel. **SINIR:** vision köprüsü bütçesi tükendi → K5 indirildi ama İNCELENEMEDİ (C025 E); görsel A iddiası yok. Otoportre kimliği "presumed" → D. **ANAHTAR ÇELİŞKİSİ ÇÖZÜLDÜ (D):** ikinci anahtarın malzemesi kaynaklar arası tartışmalı — enwiki "silver and gold" + itwiki betimi "chiavi d'oro e d'argento" (gümüş) ↔ itwiki'nin Marco Rizzi kaynaklı yorumu "una d'oro... e una di ferro" (demir). Altın anahtar ortak. C023 B→D; DY04 malzeme iddiası kaldırıldı; TK02 kanit C023 çıkarıldı.
 
 ## 1. Kaynak envanteri
 
@@ -28,10 +28,10 @@ Eser in situ (Sistine Şapeli, Vatikan). **Birincil katalog (Vatican Museums) bu
 **C002** — Sanatçı: Pietro Perugino + aiuti (genç Pinturicchio). **B.** K2, K3.
 **C003** — 1481–1482. **B.** K2, K3.
 **C004** — Teknik: fresk. **B.** K2, K3.
-**C005** — Boyut: 335×550 cm. **B.** K3 (+K4).
+**C005** — Boyut: 335×550 cm (K3/K4); kaynaklar arası küçük fark: enwiki infobox 330×550, itwiki infobox 340×550. **B.** K3 (+K4).
 **C006** — Yer: Sistine Şapeli, Vatikan; kuzey duvarı, altar'dan 5., registro mediano; in situ. **B.** K2, K3.
 **C007** — Sipariş 1480 Sixtus IV; Old St Peter's başarısı; Floransa ekibi (Botticelli, Ghirlandaio) Lorenzo de' Medici aracılığıyla. **B.** K2, K3.
-**C008** — Matta 16; altın+gümüş anahtarlar; bağışlama gücü; diz çökmüş Petrus. **B.** K2, K3.
+**C008** — Matta 16; altın+gümüş anahtarlar (enwiki "silver and gold" + itwiki betimi "d'oro e d'argento"); bağışlama gücü; diz çökmüş Petrus. İkinci anahtarın malzemesi tartışmalı (C023). **B.** K2, K3.
 **C009** — Judas (İsa'nın solunda 5.), sırtı dönük, zıt renk; haleler; çağdaş portreler. **B.** K2, K3.
 **C010** — Otoportre (sağdan 5., siyah giysili, izleyiciye bakan) "presumed". **D.** K2, K3. (tartışma)
 **C011** — Yazıt: CONTVRBATIO IESV CHRISTI LEGISLATORIS (ilahi yasa aktarımı). **B.** K3.
@@ -46,13 +46,13 @@ Eser in situ (Sistine Şapeli, Vatikan). **Birincil katalog (Vatican Museums) bu
 **C020** — Ortak konvansiyonlar: aynı ölçek/ritim/peyzaj; tek renk gamı + altın (meşale ışığı). **B.** K3.
 **C021** — Alfonso II (Napoli) sola eklendi; denge için Petrus üstüne bir havari. **B.** K2.
 **C022** — Conclave efsanesi: altındaki hücrede kalan kardinal seçilirdi (Clement VII, Julius II, Paul III). **B.** K2.
-**C023** — Petrus iki anahtar: altın (gök) / demir (yer); sarı elbise + mavi manto. **B.** K3.
+**C023** — İkinci anahtarın malzemesi tartışmalı: enwiki + itwiki betimi "gümüş" (argento) der; itwiki'nin Marco Rizzi kaynaklı yorumu "demir" (ferro) der (gök/yer ayrımı). Altın anahtar ortak; Petrus sarı elbise + mavi manto. **D.** K2, K3. (tartışma)
 **C024** — Görsel kamu malı (Perugino ö.1523); Commons PD; geçici kopya .qwen/tmp/parti1/Q2620028/. **A.** K5 (lisans).
 **C025** — Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu. **E.** K5. (belirsiz)
 **C026** — Vatican resmî föyü bu oturumda açılmadı. **E.** K6. (belirsiz)
 **C027** — Bibliyografya (K2/K3 refs) — erişilmedi. **B.** K2, K3.
 
-**Sayım:** 27 iddia · A=1 · B=23 · C=0 · D=1 · E=2.
+**Sayım:** 27 iddia · A=1 · B=22 · C=0 · D=2 · E=2.
 
 ## 3. Görsel doğrulama kaydı (Kural 6)
 
@@ -64,14 +64,15 @@ Eser in situ (Sistine Şapeli, Vatikan). **Birincil katalog (Vatican Museums) bu
 
 | Seviye | Hedef | Ölçülen (üretim sonrası) |
 |---|---|---|
-| Başlangıç | 400–500 | 397 (3 alt) |
-| Orta | 1300–1600 | 1254 (46 alt) |
-| İleri | 2600–3200 | 2481 (119 alt, §8 tahmini) |
+| Başlangıç | 400–500 | 379 (21 alt — dolgu kaldırıldı) |
+| Orta | 1300–1600 | 1276 (24 alt) |
+| İleri | 2600–3200 | 2524 (76 alt) |
 
 ## 5. Veri notları (data/ dokunulmadı; insan onayına sunulur)
 
 1. data tarih → 1481–1482 (K2/K3); WD 1480'ler.
-2. Boyut 335×550 K3/K4 uyumlu; Vatican föyü teyidi (C026 E).
+2. Boyut 335×550 (K3/K4); kaynaklar arası küçük fark (enwiki 330, itwiki 340); Vatican föyü teyidi (C026 E).
+2b. ANAHTAR ÇELİŞKİSİ ÇÖZÜLDÜ (D): ikinci anahtar gümüş (enwiki + itwiki betimi) ↔ demir (itwiki Rizzi yorumu); altın ortak. DY04 malzeme iddiası kaldırıldı; TK02 kanit C023 çıkarıldı; C023 D.
 3. Müze alanı: "Sistine Şapeli, Vatikan — kuzey duvarı" (K2/K3).
 4. Otoportre kimliği D; conclave efsanesi B (belgeli).
 5. Görsel teyit bu oturumda yapılamadı (C025) — insan editör zorunlu.

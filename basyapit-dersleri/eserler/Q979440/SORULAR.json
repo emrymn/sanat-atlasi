@@ -91,8 +91,8 @@
    "gerekce": "K1: Uffizi Galleries, salon A5.",
    "yanlis_gerekceleri": {
     "A": "Orijinal yer; 1799'da taşındı.",
-    "C": "Louvre değil.",
-    "D": "Vatikan değil."
+    "C": "Louvre, Paris (Paris) bu eserin bulunduğu kurum değildir; doğru yer Uffizi, Floransa.",
+    "D": "Vatikan Pinakotekası bu soruda doğru değildir; kaynakların doğruladığı yanıt Uffizi, Floransa."
    },
    "kanit": [
     "C008"
@@ -218,7 +218,7 @@
    "dogru": "B",
    "gerekce": "K1: Ansanus, Siena koruyucusu; şehir renklerinde sancak.",
    "yanlis_gerekceleri": {
-    "A": "Petrus değil.",
+    "A": "Aziz Petrus bu soruda doğru değildir; kaynakların doğruladığı yanıt Aziz Ansanus.",
     "C": "Victor, Bulgarini sunağının azizi.",
     "D": "Crescentius, Ambrogio sunağının azizi."
    },
@@ -251,8 +251,8 @@
    "gerekce": "K1: soldan sağa Yeremya, Hezekiel, Yeşaya, Daniel.",
    "yanlis_gerekceleri": {
     "A": "Eski Ahit figürleri ama tondolar değil.",
-    "C": "İncil yazarları; değil.",
-    "D": "Patrikler; değil."
+    "C": "Matta, Markos, Luka, Yuhanna bu soruda doğru değildir; kaynakların doğruladığı yanıt Yeremya, Hezekiel, Yeşaya, Daniel.",
+    "D": "İbrahim, İshak, Yakup, Yusuf bu soruda doğru değildir; kaynakların doğruladığı yanıt Yeremya, Hezekiel, Yeşaya, Daniel."
    },
    "kanit": [
     "C018"
@@ -284,7 +284,7 @@
    "yanlis_gerekceleri": {
     "B": "Scrovegni Padua'da, Giotto.",
     "C": "Uffizi bugünkü yer; orijinal değil.",
-    "D": "Assisi değil."
+    "D": "Assisi Bazilikası bu soruda doğru değildir; kaynakların doğruladığı yanıt Siena Katedrali St. Ansanus sunağı."
    },
    "kanit": [
     "C009"
@@ -315,8 +315,8 @@
    "gerekce": "K1: Meryem'in saflığı ve Tanrı Oğlu.",
    "yanlis_gerekceleri": {
     "A": "Savaş değil; zeytin barışı.",
-    "C": "Zenginlik değil.",
-    "D": "Ölüm değil."
+    "C": "Zenginliği bu soruda doğru değildir; kaynakların doğruladığı yanıt Saflığı.",
+    "D": "Ölümü bu soruda doğru değildir; kaynakların doğruladığı yanıt Saflığı."
    },
    "kanit": [
     "C026"
@@ -406,13 +406,14 @@
     "Dört sunak",
     "Maestà taç",
     "Lapis/yaldız prestiji",
-    "Avignon daveti"
+    "Avignon daveti (C028) + nedensellik yorumu (C035)"
    ],
    "kanit": [
     "C009",
     "C010",
     "C013",
-    "C027"
+    "C028",
+    "C035"
    ]
   },
   {
@@ -432,16 +433,17 @@
   },
   {
    "id": "AU05",
-   "soru": "Üslup coğrafyasını haritalayın: Kuzey çizgisi ↔ İtalyan hacim; etki ↔ akrabalık ayrımı.",
+   "soru": "Üslup coğrafyasını haritalayın: Kuzey çizgisi ↔ İtalyan hacim; etki ↔ akrabalık ayrımı; Avignon nedenselliğinin yorum olduğunu belirtin.",
    "beklenen_ogeler": [
     "Fransız minyatürleri",
-    "Avignon daveti",
+    "Avignon daveti (C028) / nedensellik yorumu (C035)",
     "Giotto karşıtlığı",
     "Etki belgesi yok"
    ],
    "kanit": [
     "C027",
-    "C029"
+    "C029",
+    "C035"
    ]
   }
  ],
@@ -494,7 +496,7 @@
   {
    "id": "TK01",
    "on": "Eser, sanatçılar, tarih, teknik, yer?",
-   "arka": "Müjde (Triptik); Simone Martini + Lippo Memmi; 1333; tempera/altın, ahşap; Uffizi (orta panel 184×168; Inv. 1890 nos. 451–453).",
+   "arka": "Müjde (Triptik); Simone Martini + Lippo Memmi; 1333; tempera/altın, ahşap; Uffizi (boyut 184×168, panel niteliği belirtilmemiş; Inv. 1890 nos. 451–453).",
    "kanit": [
     "C001",
     "C002",
@@ -528,7 +530,7 @@
   {
    "id": "TK04",
    "on": "Orijinal bağlam ve taşınma?",
-   "arka": "Siena Katedrali St. Ansanus sunağı; dört sunaklık döngü 1330–1350; 1799 Leopold takası (iki Giordano tuvali) → Floransa.",
+   "arka": "Siena Katedrali St. Ansanus sunağı; dört sunaklık döngü 1330–1350; 1799'da iki Giordano tuvali karşılığında Floransa'ya taşındı (grandük kimliği tartışmalı: enwiki Peter Leopold anakronik ↔ itwiki Ferdinando III, C034).",
    "kanit": [
     "C009",
     "C010",

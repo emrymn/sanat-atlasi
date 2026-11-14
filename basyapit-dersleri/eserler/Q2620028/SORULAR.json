@@ -26,7 +26,7 @@
    "dogru": "A",
    "gerekce": "K2/K3: 1481–82.",
    "yanlis_gerekceleri": {
-    "B": "1442 değil.",
+    "B": "1442 bu eserin tarihi değildir; kaynakların doğruladığı tarih 1481–82.",
     "C": "1506 Mantegna ölümü.",
     "D": "1465 Domenico."
    },
@@ -58,9 +58,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: Sistine, kuzey duvarı.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi değil.",
-    "C": "Brera değil.",
-    "D": "Louvre değil."
+    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Sistine Şapeli, Vatikan.",
+    "C": "Brera (Milano) bu eserin bulunduğu kurum değildir; doğru yer Sistine Şapeli, Vatikan.",
+    "D": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Sistine Şapeli, Vatikan."
    },
    "kanit": [
     "C006"
@@ -90,9 +90,9 @@
    "dogru": "B",
    "gerekce": "K2/K3: keys = power to forgive; papal authority.",
    "yanlis_gerekceleri": {
-    "A": "Savaş değil.",
-    "C": "Ticaret değil.",
-    "D": "Yolculuk değil."
+    "A": "Savaşı bu soruda doğru değildir; kaynakların doğruladığı yanıt Bağışlama/Tanrı sözü gücü (papalık).",
+    "C": "Ticareti bu soruda doğru değildir; kaynakların doğruladığı yanıt Bağışlama/Tanrı sözü gücü (papalık).",
+    "D": "Yolculuğu bu soruda doğru değildir; kaynakların doğruladığı yanıt Bağışlama/Tanrı sözü gücü (papalık)."
    },
    "kanit": [
     "C008"
@@ -122,8 +122,8 @@
    "dogru": "A",
    "gerekce": "K2/K3: fifth left of Christ, back turned.",
    "yanlis_gerekceleri": {
-    "B": "Sağda değil.",
-    "C": "Merkez değil.",
+    "B": "Sağda önde bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın solunda 5., sırtı dönük.",
+    "C": "Merkezde bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın solunda 5., sırtı dönük.",
     "D": "Var."
    },
    "kanit": [
@@ -154,9 +154,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: octagonal temple, Alberti ideal.",
    "yanlis_gerekceleri": {
-    "B": "Gotik değil.",
-    "C": "Hamam değil.",
-    "D": "Kule değil."
+    "B": "Gotik katedral bu soruda doğru değildir; kaynakların doğruladığı yanıt Sekizgen/kubbeli tapınak.",
+    "C": "Roma hamamı bu soruda doğru değildir; kaynakların doğruladığı yanıt Sekizgen/kubbeli tapınak.",
+    "D": "Kule bu soruda doğru değildir; kaynakların doğruladığı yanıt Sekizgen/kubbeli tapınak."
    },
    "kanit": [
     "C012"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K2: aligning Sixtus IV to Solomon.",
    "yanlis_gerekceleri": {
-    "B": "Lorenzo değil.",
-    "C": "Alfonso değil.",
-    "D": "Petrus değil."
+    "B": "Lorenzo bu soruda doğru değildir; kaynakların doğruladığı yanıt Sixtus IV.",
+    "C": "Alfonso II bu soruda doğru değildir; kaynakların doğruladığı yanıt Sixtus IV.",
+    "D": "Petrus bu soruda doğru değildir; kaynakların doğruladığı yanıt Sixtus IV."
    },
    "kanit": [
     "C013"
@@ -218,9 +218,9 @@
    "dogru": "A",
    "gerekce": "K2: Tribute Money left, stoning right.",
    "yanlis_gerekceleri": {
-    "B": "Doğum/Çarmıh değil.",
-    "C": "Müjde/Ağıt değil.",
-    "D": "Son Yargı değil."
+    "B": "Doğum + Çarmıh bu soruda doğru değildir; kaynakların doğruladığı yanıt Vergi Parası + taşlanma.",
+    "C": "Müjde + Ağıt bu soruda doğru değildir; kaynakların doğruladığı yanıt Vergi Parası + taşlanma.",
+    "D": "Son Yargı + Cennet bu soruda doğru değildir; kaynakların doğruladığı yanıt Vergi Parası + taşlanma."
    },
    "kanit": [
     "C014"
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K2: same cartoon, reversed poses.",
    "yanlis_gerekceleri": {
-    "B": "Rastgele değil.",
+    "B": "Rastgelelik bu soruda doğru değildir; kaynakların doğruladığı yanıt Aynı karton kullanımı.",
     "C": "Tek el değil; atölye.",
-    "D": "Hata değil."
+    "D": "Hata bu soruda doğru değildir; kaynakların doğruladığı yanıt Aynı karton kullanımı."
    },
    "kanit": [
     "C015"
@@ -314,9 +314,9 @@
    "dogru": "A",
    "gerekce": "K2: cardinal housed beneath elected.",
    "yanlis_gerekceleri": {
-    "B": "Yanma değil.",
-    "C": "Kaybolma değil.",
-    "D": "Görünme değil."
+    "B": "Resim yanardı bu soruda doğru değildir; kaynakların doğruladığı yanıt Altındaki hücrede kalan kardinal seçilirdi.",
+    "C": "Anahtarlar kaybolurdu bu soruda doğru değildir; kaynakların doğruladığı yanıt Altındaki hücrede kalan kardinal seçilirdi.",
+    "D": "Petrus görünürdü bu soruda doğru değildir; kaynakların doğruladığı yanıt Altındaki hücrede kalan kardinal seçilirdi."
    },
    "kanit": [
     "C022"
@@ -354,11 +354,11 @@
   },
   {
    "id": "DY04",
-   "ifade": "Petrus altın (gök) ve demir (yer) anahtarları tutar.",
+   "ifade": "İsa, diz çökmüş Petrus'a cennetin anahtarlarını verir (Matta 16).",
    "dogru": true,
-   "aciklama": "Doğru (K3).",
+   "aciklama": "Doğru (K2/K3). İkinci anahtarın malzemesi (gümüş/demir) tartışmalıdır — C023; bu yüzden malzeme iddiası quiz dışı.",
    "kanit": [
-    "C023"
+    "C008"
    ]
   },
   {
@@ -445,7 +445,7 @@
   {
    "id": "GZ01",
    "soru": "Anahtarları ve diz çökmüş Petrus'u bulun.",
-   "ipucu": "Merkez grup.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim K2/K3): merkez grup.",
    "kanit": [
     "C008"
    ]
@@ -453,7 +453,7 @@
   {
    "id": "GZ02",
    "soru": "Judas'ı ve sırtı dönük halini bulun.",
-   "ipucu": "İsa'nın solunda 5.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): İsa'nın solunda 5.",
    "kanit": [
     "C009"
    ]
@@ -461,7 +461,7 @@
   {
    "id": "GZ03",
    "soru": "Merkez tapınağın simetrisini izleyin.",
-   "ipucu": "Sekizgen/kubbe.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): sekizgen/kubbe.",
    "kanit": [
     "C012"
    ]
@@ -469,7 +469,7 @@
   {
    "id": "GZ04",
    "soru": "İki küçük sahneyi bulun.",
-   "ipucu": "Vergi Parası / taşlanma.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): Vergi Parası / taşlanma.",
    "kanit": [
     "C014"
    ]
@@ -477,7 +477,7 @@
   {
    "id": "GZ05",
    "soru": "Zafer taklarını ve yazıtlarını inceleyin.",
-   "ipucu": "Sixtus IV ↔ Süleyman.",
+   "ipucu": "TASLAK (görsel teyit bekliyor): Sixtus IV ↔ Süleyman.",
    "kanit": [
     "C013"
    ]
@@ -500,10 +500,9 @@
   {
    "id": "TK02",
    "on": "Konu/anahtarlar?",
-   "arka": "Matta 16; altın+gümüş anahtar; diz çökmüş Petrus; bağışlama gücü; Judas sırtı dönük.",
+   "arka": "Matta 16; altın+gümüş anahtar (betim; ikinci anahtarın malzemesi gümüş/demir tartışmalı, C023); diz çökmüş Petrus; bağışlama gücü; Judas sırtı dönük.",
    "kanit": [
     "C008",
-    "C023",
     "C009"
    ]
   },

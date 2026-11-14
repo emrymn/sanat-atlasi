@@ -26,7 +26,7 @@
    "dogru": "B",
    "gerekce": "K1: Maestà sunağının arka yüz paneli.",
    "yanlis_gerekceleri": {
-    "A": "Assisi freskleri değil.",
+    "A": "Assisi freskleri (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Maestà.",
     "C": "Scrovegni Giotto'nun fresk döngüsü.",
     "D": "Santa Croce Çarmıhı Cimabue'nin."
    },
@@ -91,7 +91,7 @@
    "gerekce": "K1: hem ön hem arka yüzü olan ilk altarpiece.",
    "yanlis_gerekceleri": {
     "A": "Yağlıboya değil, tempera.",
-    "C": "Perspektif değil.",
+    "C": "İlk perspektif bu soruda doğru değildir; kaynakların doğruladığı yanıt Hem ön hem arka yüzü olan ilk sunak.",
     "D": "Tuval değil, ahşap pano."
    },
    "kanit": [
@@ -123,8 +123,8 @@
    "gerekce": "K2/K1: eşekli İsa, pelerin/palmiye kalabalığı — Kudüs'e Giriş.",
    "yanlis_gerekceleri": {
     "A": "Son Akşam Yemeği masa sahnesi olurdu.",
-    "C": "Çarmıh sahnesi değil.",
-    "D": "Doğum sahnesi değil."
+    "C": "Çarmıha Geriliş bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın Kudüs'e Girişi (Palmiye Pazarı).",
+    "D": "Doğum bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın Kudüs'e Girişi (Palmiye Pazarı)."
    },
    "kanit": [
     "C024"
@@ -155,8 +155,8 @@
    "gerekce": "K2: gri eşek (ve sıpa).",
    "yanlis_gerekceleri": {
     "A": "At değil; eşek alçakgönüllülük simgesi.",
-    "C": "Deve değil.",
-    "D": "Araba değil."
+    "C": "Deve bu soruda doğru değildir; kaynakların doğruladığı yanıt Eşek.",
+    "D": "Araba bu soruda doğru değildir; kaynakların doğruladığı yanıt Eşek."
    },
    "kanit": [
     "C017"
@@ -220,8 +220,8 @@
    "gerekce": "K1: Siena Opera del Duomo müzesi.",
    "yanlis_gerekceleri": {
     "A": "Uffizi Floransa'da.",
-    "C": "Vatikan değil.",
-    "D": "Louvre değil."
+    "C": "Vatikan bu soruda doğru değildir; kaynakların doğruladığı yanıt Museo dell'Opera del Duomo, Siena.",
+    "D": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Museo dell'Opera del Duomo, Siena."
    },
    "kanit": [
     "C006"
@@ -253,7 +253,7 @@
    "yanlis_gerekceleri": {
     "A": "Papalık değil, şehir.",
     "C": "Floransa değil (Siena).",
-    "D": "Milano değil."
+    "D": "Milano bu soruda doğru değildir; kaynakların doğruladığı yanıt Siena şehri."
    },
    "kanit": [
     "C007"
@@ -283,9 +283,9 @@
    "dogru": "B",
    "gerekce": "K2: görme arzusu; kalabalık İsa'yı görmek için ağaca çıkar.",
    "yanlis_gerekceleri": {
-    "A": "Meyve değil.",
-    "C": "Saklanma değil.",
-    "D": "Odun değil."
+    "A": "Meyve toplamak bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'yı daha iyi görmek.",
+    "C": "Saklanmak bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'yı daha iyi görmek.",
+    "D": "Odun kesmek bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'yı daha iyi görmek."
    },
    "kanit": [
     "C021"
@@ -315,8 +315,8 @@
    "dogru": "B",
    "gerekce": "K1: 43 küçük panel (+6 melek).",
    "yanlis_gerekceleri": {
-    "A": "12 değil.",
-    "C": "100 değil.",
+    "A": "12 bu soruda doğru değildir; kaynakların doğruladığı yanıt 43.",
+    "C": "100 bu soruda doğru değildir; kaynakların doğruladığı yanıt 43.",
     "D": "6 melek paneli; asıl sahneler 43."
    },
    "kanit": [

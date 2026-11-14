@@ -11,12 +11,12 @@
   "tarih_belirsizlik": "İmza yazıtı yılı doğrudan verir (C003)",
   "teknik": "Ahşap üzerine tempera, altın zemin",
   "boyut_cm": {
-   "yukseklik": 168,
-   "genislik": 184
+   "yukseklik": 184,
+   "genislik": 168
   },
   "muze": "Uffizi Galleries, Floransa",
   "envanter": "Inv. 1890 nos. 451, 452, 453",
-  "edinim": "Siena Katedrali St. Ansanus sunağı; 1799 Leopold takası (iki Luca Giordano tuvali)",
+  "edinim": "Siena Katedrali St. Ansanus sunağı; 1799'da iki Luca Giordano tuvali karşılığında Floransa'ya taşındı (grandük kimliği tartışmalı, C034)",
   "konum": "Sala A5 (Lorenzetti - Simone Martini)",
   "telif_durumu": "Kamu malı (14. yy); Commons PD"
  },
@@ -39,17 +39,17 @@
   "baslangic": {
    "dosya": "DERS_BASLANGIC.md",
    "hedef_sure_dk": 3,
-   "kelime_sayisi": 427
+   "kelime_sayisi": 435
   },
   "orta": {
    "dosya": "DERS_ORTA.md",
    "hedef_sure_dk": 10,
-   "kelime_sayisi": 1309
+   "kelime_sayisi": 1365
   },
   "ileri": {
    "dosya": "DERS_ILERI.md",
    "hedef_sure_dk": 20,
-   "kelime_sayisi": 2597
+   "kelime_sayisi": 2723
   }
  },
  "bolum_eslesme": {
@@ -122,7 +122,7 @@
   },
   {
    "ad": "Triptik",
-   "tanim": "Üç panelli sunak resmi; orta panel iki kat büyüklükte.",
+   "tanim": "Üç panelli sunak resmi; orta panel yanlardan büyük (oran tartışmalı: enwiki iki kat, itwiki üç kat, C036).",
    "kanit": [
     "C004"
    ]
@@ -179,7 +179,7 @@
   },
   {
    "id": "C004",
-   "ifade": "Ahşap üzerine tempera, altın zemin; triptik, orta panel yanların iki katı büyüklükte",
+   "ifade": "Ahşap üzerine tempera, altın zemin; triptik (Uffizi \"Tempera on wood, gold background\")",
    "seviye": "A",
    "kaynak_id": [
     "K1",
@@ -189,7 +189,7 @@
   },
   {
    "id": "C005",
-   "ifade": "Orta panel boyutu 184×168 cm (Uffizi resmî föy)",
+   "ifade": "Boyut 184×168 cm (Uffizi resmî föy \"Size 184 x 168 cm\"; panel niteliği kaynakta belirtilmemiş, orta panel olarak yorumlanır)",
    "seviye": "A",
    "kaynak_id": [
     "K1"
@@ -244,10 +244,11 @@
   },
   {
    "id": "C011",
-   "ifade": "1799: Grandük Peter Leopold, iki Luca Giordano tuvali karşılığında Floransa'ya taşıttı",
+   "ifade": "1799'da iki Luca Giordano tuvali karşılığında Floransa'ya taşındı (enwiki+itwiki uzlaşır); taşıma emrini veren grandük tartışmalı (C034)",
    "seviye": "B",
    "kaynak_id": [
-    "K2"
+    "K2",
+    "K5"
    ],
    "kullanim": "olgu"
   },
@@ -262,7 +263,7 @@
   },
   {
    "id": "C013",
-   "ifade": "Pahalı lak, yoğun altın yaprak, zor bulunan lapis lazuli → komün prestiji",
+   "ifade": "Pahalı lake pigmenti (enwiki \"lacquer\"; İtalyanca \"lacca\" — kırmızı lake pigmenti olası, terim birincil kaynakla teyit edilemedi), yoğun altın yaprak, zor bulunan lapis lazuli → komün prestiji",
    "seviye": "B",
    "kaynak_id": [
     "K2"
@@ -393,7 +394,7 @@
   },
   {
    "id": "C027",
-   "ifade": "Çağdaş İtalya'da boyut/üslup benzeri yok; Fransız minyatürleri, Alman/İngiliz resmiyle karşılaştırılır; \"Kuzey\" üslup → Avignon papalık saray daveti",
+   "ifade": "Çağdaş İtalya'da boyut/üslup benzeri yok; Fransız minyatürleri, Alman/İngiliz resmiyle karşılaştırılır (\"Kuzey\" üslup). Avignon daveti nedenselliği ayrı yorumdur (C035)",
    "seviye": "B",
    "kaynak_id": [
     "K2"
@@ -454,6 +455,36 @@
     "K2"
    ],
    "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "1799 taşıma emrini veren grandük tartışmalı: enwiki \"Peter Leopold\" (anakronik — Pietro Leopoldo 1790'da Toskana'dan ayrıldı, 1792'de öldü); itwiki \"Ferdinando III\". Birincil kaynak bulunana dek kesin değil",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "\"Kuzey üslubun Avignon papalık saray davetini sağladığı\" nedensel okuması: enwiki cümlesi {{Citation needed}} etiketli, satır içi kaynak yok → yorum (\"belgeli halka\" değil)",
+   "seviye": "C",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "Orta panel yan panellerden büyük; oran kaynaklar arası çelişkili: enwiki \"double\" (iki kat), itwiki \"triplo\" (üç kat); Uffizi oran vermez",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K5",
+    "K1"
+   ],
+   "kullanim": "tartisma"
   }
  ],
  "kaynaklar": [
@@ -492,6 +523,15 @@
    "erisim_tarihi": "2026-11-14",
    "erisim_durumu": "200; 1400px (kaynak 1920×1667) + 2 kırpım incelendi",
    "tur": "gorsel"
+  },
+  {
+   "id": "K5",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Annunciazione tra i santi Ansano e Margherita — çapraz kontrol (1799 Ferdinando III; \"triplo\"; lacca)",
+   "url": "https://it.wikipedia.org/wiki/Annunciazione_tra_i_santi_Ansano_e_Margherita",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
   }
  ],
  "karsilastirma_onerileri": [
@@ -529,13 +569,15 @@
  "durum": "İnsan incelemesi bekliyor",
  "kalite_kontrol": {
   "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
-  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "denetim_b": "Parti 1 düzeltme: Uffizi birincil kayıt yeniden açıldı (200; Size 184×168 panel niteliği yok). 1799 \"Peter Leopold\" anakronizmi düzeltildi → grandük kimliği D (C034; itwiki Ferdinando III çapraz, K5). Avignon nedenselliği {{Citation needed}} → C (C035). Panel oranı enwiki double ↔ itwiki triplo → D (C036). \"lak\" → \"lacca\" (C013). Görsel K4 incelenmişti (A). Kanıt zinciri KANIT §2.",
   "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
  },
  "veri_notlari": [
   "data başlığı \"Aziz Maxima ve Aziz Ansanus ile Müjde (Triptik)\": Uffizi Maxima/Margaret varyantlarını birlikte kullanır; kadın aziz kimliği belirsiz (C015); \"Judith\" yazıtı hatalı (C016). Belirsizlik notu önerilir.",
-  "Boyut: resmî föy 184×168 (orta panel); WD 158/265 ve 48/184/305 uzlaşmıyor (C006, E) — insan teyidi gerekli.",
+  "Boyut: resmî föy 184×168 (panel niteliği belirtilmemiş); WD 158/265 ve 48/184/305 uzlaşmıyor (C006, E) — insan teyidi gerekli. Orta panel oranı enwiki \"double\" ↔ itwiki \"triplo\" (C036, D).",
+  "1799 taşıma: iki Giordano tuvali karşılığı Floransa (B); grandük kimliği tartışmalı — enwiki \"Peter Leopold\" anakronik ↔ itwiki \"Ferdinando III\" (C034, D).",
   "Envanter: WD 00284557 iç katalog ID; resmî Inv. 1890 nos. 451–453 önerilir.",
-  "Salon: resmî JSON \"A5. Lorenzetti - Simone Martini\"."
+  "Salon: resmî JSON \"A5. Lorenzetti - Simone Martini\".",
+  "Avignon daveti nedenselliği (\"Kuzey üslup → davet\") enwiki {{Citation needed}} → yorum (C035); \"lak\" terimi \"lacca\" (lake pigmenti) olarak düzeltildi, birincil teyit yok (C013)."
  ]
 }

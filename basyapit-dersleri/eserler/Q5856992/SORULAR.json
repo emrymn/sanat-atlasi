@@ -27,8 +27,8 @@
    "gerekce": "K2/K3: takvim minyatürü.",
    "yanlis_gerekceleri": {
     "B": "Tablo değil, el yazması sayfası.",
-    "C": "Fresk değil.",
-    "D": "Heykel değil."
+    "C": "Bir fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Très Riches Heures (book of hours) takvim sayfası.",
+    "D": "Bir heykel bu soruda doğru değildir; kaynakların doğruladığı yanıt Très Riches Heures (book of hours) takvim sayfası."
    },
    "kanit": [
     "C001",
@@ -59,9 +59,9 @@
    "dogru": "A",
    "gerekce": "K2: Pognon.",
    "yanlis_gerekceleri": {
-    "B": "Vasari değil.",
-    "C": "Panofsky değil.",
-    "D": "Gombrich değil."
+    "B": "Vasari bu soruda doğru değildir; kaynakların doğruladığı yanıt Pognon.",
+    "C": "Panofsky (ahşap destek) bu eserin tekniği/desteği değildir; doğru yanıt Pognon.",
+    "D": "Gombrich bu soruda doğru değildir; kaynakların doğruladığı yanıt Pognon."
    },
    "kanit": [
     "C008"
@@ -91,9 +91,9 @@
    "dogru": "A",
    "gerekce": "K2: faksimile.",
    "yanlis_gerekceleri": {
-    "B": "Yeni tablo değil.",
-    "C": "Boş çerçeve değil.",
-    "D": "Video değil."
+    "B": "Yeni bir tablo bu soruda doğru değildir; kaynakların doğruladığı yanıt Faksimile.",
+    "C": "Boş çerçeve bu soruda doğru değildir; kaynakların doğruladığı yanıt Faksimile.",
+    "D": "Video bu soruda doğru değildir; kaynakların doğruladığı yanıt Faksimile."
    },
    "kanit": [
     "C009"
@@ -123,9 +123,9 @@
    "dogru": "A",
    "gerekce": "K2: sansür.",
    "yanlis_gerekceleri": {
-    "B": "Güneş arabası değil.",
-    "C": "Kar değil.",
-    "D": "Altın değil."
+    "B": "Güneş arabasını bu soruda doğru değildir; kaynakların doğruladığı yanıt Köylü genitalini.",
+    "C": "Karı bu soruda doğru değildir; kaynakların doğruladığı yanıt Köylü genitalini.",
+    "D": "Altını bu soruda doğru değildir; kaynakların doğruladığı yanıt Köylü genitalini."
    },
    "kanit": [
     "C010"
@@ -155,9 +155,9 @@
    "dogru": "A",
    "gerekce": "K2: Uluslararası Gotik.",
    "yanlis_gerekceleri": {
-    "B": "Rönesans değil.",
-    "C": "Barok değil.",
-    "D": "Empresyonizm değil."
+    "B": "Rönesans bu soruda doğru değildir; kaynakların doğruladığı yanıt Uluslararası Gotik.",
+    "C": "Barok bu soruda doğru değildir; kaynakların doğruladığı yanıt Uluslararası Gotik.",
+    "D": "Empresyonizm bu soruda doğru değildir; kaynakların doğruladığı yanıt Uluslararası Gotik."
    },
    "kanit": [
     "C007"
@@ -288,7 +288,7 @@
   {
    "id": "GZ01",
    "soru": "Köylü figürlerinin açık saçık hâlini bulun; bir dergi bunu retuşladı.",
-   "ipucu": "Sansür kaydı (K2).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Sansür kaydı (K2).",
    "kanit": [
     "C010"
    ]
@@ -296,7 +296,7 @@
   {
    "id": "GZ02",
    "soru": "Altın ve pahalı pigment kullanımını izleyin.",
-   "ipucu": "Uluslararası Gotik lüksü.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Uluslararası Gotik lüksü.",
    "kanit": [
     "C007"
    ]
@@ -304,7 +304,7 @@
   {
    "id": "GZ03",
    "soru": "Sayfanın book of hours takvim yapısını inceleyin.",
-   "ipucu": "Dua kitabı sayfası.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Dua kitabı sayfası.",
    "kanit": [
     "C004"
    ]
@@ -312,7 +312,7 @@
   {
    "id": "GZ04",
    "soru": "Courtly ↔ rustic üslup farkını diğer takvim sayfalarıyla karşılaştırın.",
-   "ipucu": "Atıf adları.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Atıf adları.",
    "kanit": [
     "C008"
    ]

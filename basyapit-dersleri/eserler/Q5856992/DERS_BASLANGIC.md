@@ -13,7 +13,7 @@
 
 Bu bir tablo değil, bir dua kitabının (book of hours) tek sayfasıdır [C004]. Berry Dükü Jean için yapılmış, Uluslararası Gotik'in en lüks el yazmalarından birinin parçasıdır [C002][C007]. Şubat, Batı sanatının ilk büyük kar manzaralarından sayılır (yorum) [C017].
 
-Bu sayfa, bir kitabın içindeki resimdir; yani müzede çerçevelenmiş bir tablo gibi değil, bir dua kitabının yaprağı olarak tasarlanmıştır [C004]. Kitabın adı Très Riches Heures'dur ve Berry Dükü Jean için yapılmıştır [C002]. Jean, Fransa Kralı V. Charles'ın kardeşi ve büyük bir koleksiyonerdi; Limbourg Kardeşler onun sarayında çalışıyordu [C002]. Sayfanın üstündeki yarım daire bir takvimdir, altındaki sahne ise o ayın "işini" gösterir: Şubat'ta köylüler soğuktan korunur ve odun toplar (mevcut betim, belirsiz) [C015] (belirsiz). Böylece gök (burçlar) ile yer (köylü işleri) tek sayfada birleşir (yorum).
+Jean, Fransa Kralı V. Charles'ın kardeşi ve büyük bir koleksiyonerdi; Limbourg Kardeşler onun sarayında çalışıyordu [C002]. Sayfanın üstündeki yarım daire takvimi, altındaki sahne o ayın "işini" gösterir: Şubat'ta köylüler soğuktan korunur ve odun toplar (mevcut betim, belirsiz) [C015] (belirsiz). Böylece gök (burçlar) ile yer (köylü işleri) tek sayfada birleşir (yorum).
 
 ## Ne görüyoruz
 

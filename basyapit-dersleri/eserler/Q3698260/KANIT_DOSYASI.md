@@ -83,6 +83,8 @@
 
 **C027** — Görsel kamu malı (Cimabue ö. 1302 → TR/AB/ABD PD); Commons dosyası PD; geçici kopya `.qwen/tmp/parti1/Q3698260/` (teslimata girmez). Kaynak: K3. **A.**
 
+**Sayım:** 27 iddia · A=1 · B=23 · C=0 · D=3 · E=0.
+
 ## 3. Görsel Doğrulama Kaydı (Kural 6)
 
 - **İncelenen görüntü:** K3 Commons "Cimabue 025.jpg", 960×1102 (vision köprüsü, 14 Kasım 2026). **Bu görsel 1966 seli öncesi durumu gösterir** (K1 caption); mevcut nesnenin hasarlı hali değil.

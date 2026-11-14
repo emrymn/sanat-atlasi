@@ -3,21 +3,21 @@
  "eser_id": "Q546297",
  "sanatci_id": "andrea-mantegna",
  "baslik": "Ölü İsa (Cristo morto)",
- "ozgun_baslik": "Lamentation of Christ (Cristo morto)",
+ "ozgun_baslik": "Lamentation of Christ (Cristo morto nel sepolcro e tre dolenti)",
  "kunye": {
   "sanatci": "Andrea Mantegna",
   "sanatci_yasam": "c. 1431–1506",
-  "tarih": "c. 1475–1501 (muhtemelen 1480'ler başı)",
-  "tarih_belirsizlik": "Tarih tartışmalı; K3 1470–74/1483; data 1483 (C003)",
+  "tarih": "c. 1483 (Brera birincil kayıt)",
+  "tarih_belirsizlik": "Brera \"1483 circa\"; literatürde 1470–74/1480'ler başı/1475–1501 tartışmalı (C030)",
   "teknik": "Tempera, tuval",
   "boyut_cm": {
    "yukseklik": 68,
    "genislik": 81
   },
   "muze": "Pinacoteca di Brera, Milano",
-  "envanter": "352 (yalnız WD; Brera föyü 404)",
-  "edinim": "1824 Brera; önce Gonzaga/Aldobrandini/Mazarino",
-  "konum": "Brera",
+  "envanter": "352 (Brera birincil kayıt)",
+  "edinim": "1824 Brera (belgeli); 1806 Bossi/Canova; erken zincir (Gonzaga/1628 Carlo I/Mazarin) hipotez; Aldobrandini diğer versiyon",
+  "konum": "Brera, Sala VI",
   "telif_durumu": "Kamu malı (Mantegna ö.1506); Commons PD"
  },
  "gorsel": {
@@ -28,24 +28,24 @@
    "yontem": "1400px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
    "cozunurluk": "1400px indirme",
    "incelenen_bolgeler": [],
-   "sinirlar": "Görsel teyit insan editöre (C027); betim K2/K3"
+   "sinirlar": "Görsel teyit insan editöre (C027); betim K2/K3; birincil künye Brera resmî kaydı ile doğrulandı (C003-C007, C028 A)"
   }
  },
  "seviyeler": {
   "baslangic": {
    "dosya": "DERS_BASLANGIC.md",
    "hedef_sure_dk": 3,
-   "kelime_sayisi": 401
+   "kelime_sayisi": 410
   },
   "orta": {
    "dosya": "DERS_ORTA.md",
    "hedef_sure_dk": 10,
-   "kelime_sayisi": 1281
+   "kelime_sayisi": 957
   },
   "ileri": {
    "dosya": "DERS_ILERI.md",
    "hedef_sure_dk": 20,
-   "kelime_sayisi": 2503
+   "kelime_sayisi": 1552
   }
  },
  "bolum_eslesme": {
@@ -102,11 +102,11 @@
   ]
  },
  "ogrenme_kazanimlari": [
-  "Eserin kimliğini (Mantegna, tempera-tuval, 68×81, Brera) ve tartışmalı tarihi açıklar.",
+  "Eserin kimliğini (Mantegna, tempera-tuval, 68×81, Brera inv.352) birincil künyeyle doğrular; tartışmalı tarihi açıklar.",
   "Scorcio ve izleyici konumunu (ayak dibi) analiz eder.",
   "Orantı teorilerini ve perspektif \"hatası\"nı değerlendirir.",
-  "İnsanlık/yaralar ikonografisini ve pathos estetiğini yorumlar.",
-  "Tarih/versiyon/envanter/görsel belirsizliklerini kanıt katmanlarıyla değerlendirir."
+  "İnsanlık/yaralar ikonografisini (Eisler/Steinberg atıf ayrımı) ve pathos estetiğini yorumlar.",
+  "Belgeli provenance ile hipotezleri ayırır; tarih/versiyon/görsel belirsizliklerini kanıt katmanlarıyla değerlendirir."
  ],
  "temel_kavramlar": [
   {
@@ -148,39 +148,41 @@
  "iddialar": [
   {
    "id": "C001",
-   "ifade": "Başlık: Lamentation of Christ / Cristo morto / Ölü İsa; \"Foreshortened Christ\" varyantı",
+   "ifade": "Başlık: Lamentation of Christ / Cristo morto / Ölü İsa; Brera \"Cristo morto nel sepolcro e tre dolenti\"; \"Foreshortened Christ\" varyantı",
    "seviye": "B",
    "kaynak_id": [
     "K2",
-    "K3"
+    "K3",
+    "K6"
    ],
    "kullanim": "olgu"
   },
   {
    "id": "C002",
-   "ifade": "Sanatçı: Andrea Mantegna",
+   "ifade": "Sanatçı: Andrea Mantegna (c. 1431–1506)",
    "seviye": "B",
    "kaynak_id": [
     "K2",
-    "K3"
+    "K3",
+    "K6"
    ],
    "kullanim": "olgu"
   },
   {
    "id": "C003",
-   "ifade": "Tarih tartışmalı: 1475–1501, muhtemelen 1480'ler başı (K2); K3 1470–74 veya 1483",
-   "seviye": "B",
+   "ifade": "Tarih: Brera birincil künye \"1483 circa\"",
+   "seviye": "A",
    "kaynak_id": [
-    "K2",
-    "K3"
+    "K6"
    ],
    "kullanim": "olgu"
   },
   {
    "id": "C004",
-   "ifade": "Teknik: tempera, tuval (dönem için nadir destek)",
-   "seviye": "B",
+   "ifade": "Teknik: tempera, tuval (Brera \"tempera su tela\"; dönem için nadir destek)",
+   "seviye": "A",
    "kaynak_id": [
+    "K6",
     "K3",
     "K4"
    ],
@@ -188,9 +190,10 @@
   },
   {
    "id": "C005",
-   "ifade": "Boyut: 68×81 cm",
-   "seviye": "B",
+   "ifade": "Boyut: 68×81 cm (Brera birincil künye)",
+   "seviye": "A",
    "kaynak_id": [
+    "K6",
     "K3",
     "K4"
    ],
@@ -199,8 +202,9 @@
   {
    "id": "C006",
    "ifade": "Yer: Pinacoteca di Brera, Milano",
-   "seviye": "B",
+   "seviye": "A",
    "kaynak_id": [
+    "K6",
     "K2",
     "K3"
    ],
@@ -208,20 +212,22 @@
   },
   {
    "id": "C007",
-   "ifade": "Envanter 352 (yalnız WD)",
-   "seviye": "E",
+   "ifade": "Envanter 352 (Brera birincil künye \"Inventario 352\"; WD çapraz)",
+   "seviye": "A",
    "kaynak_id": [
+    "K6",
     "K4"
    ],
-   "kullanim": "belirsiz"
+   "kullanim": "olgu"
   },
   {
    "id": "C008",
-   "ifade": "Konu: İsa mermer/Stone of Unction üzerinde sırtüstü; Meryem, Yuhanna, Magdalene yas tutar",
+   "ifade": "Konu: İsa Stone of Unction üzerinde sırtüstü; yasçılar; Compianto şeması; Brera \"muhtemelen özel devozyon için\"",
    "seviye": "B",
    "kaynak_id": [
     "K2",
-    "K3"
+    "K3",
+    "K6"
    ],
    "kullanim": "olgu"
   },
@@ -236,10 +242,11 @@
   },
   {
    "id": "C010",
-   "ifade": "Sağ üstte merhem kavanozu (zaten mesh edilmiş)",
+   "ifade": "Sağ üstte merhem kavanozu (zaten mesh edilmiş; itwiki \"vasetto degli unguenti in alto a destra\")",
    "seviye": "B",
    "kaynak_id": [
-    "K3"
+    "K3",
+    "K6"
    ],
    "kullanim": "olgu"
   },
@@ -283,10 +290,9 @@
   },
   {
    "id": "C015",
-   "ifade": "Işık sağdan; koyu monokrom kahveler; pathos; keskin drapery",
+   "ifade": "Işık sağdan (itwiki \"luce proveniente da destra\"); koyu monokrom kahveler; pathos; keskin drapery",
    "seviye": "B",
    "kaynak_id": [
-    "K2",
     "K3"
    ],
    "kullanim": "olgu"
@@ -311,7 +317,7 @@
   },
   {
    "id": "C018",
-   "ifade": "Üç yasçı: Meryem mendille yaş siler, Yuhanna eller birleşik ağlar, Magdalene gölgede",
+   "ifade": "Üç yasçı: Meryem mendille yaş siler, Yuhanna eller birleşik ağlar, Magdalene (itwiki \"in tutta probabilità\" — büyük olasılıkla) gölgede",
    "seviye": "B",
    "kaynak_id": [
     "K3"
@@ -338,32 +344,34 @@
   },
   {
    "id": "C021",
-   "ifade": "Eisler/Steinberg: İsa'nın İnsanlığı vurgusu (genital merkez)",
+   "ifade": "Eisler: BU tabloda genital merkez İsa'nın insan bedenini vurgular; Steinberg tezi genel (İsa figürlerinde enkarnasyon). Tabloya özgü okuma Eisler'indir (yorum)",
    "seviye": "C",
-   "kaynak_id": [],
+   "kaynak_id": [
+    "K2"
+   ],
    "kullanim": "yorum"
   },
   {
    "id": "C022",
-   "ifade": "Ayak-önde perspektif = yenilgi simgesi; ama burada kutsal figür (tersine çevirme)",
-   "seviye": "B",
+   "ifade": "Ayak-önde perspektif = yenilgi simgesi; kutsal figürün bu konumda oluşu tersine çevirme (yorum; enwiki dayanağı zayıf)",
+   "seviye": "C",
    "kaynak_id": [
     "K2"
    ],
-   "kullanim": "olgu"
+   "kullanim": "yorum"
   },
   {
    "id": "C023",
-   "ifade": "provenance: bottega 1506; Sigismondo Gonzaga 1507; 1628 Carlo I; Mazarino; Bossi/Canova; Brera 1824",
-   "seviye": "B",
+   "ifade": "Belgeli provenance (Brera \"indizi sicuri\"): 1806 Bossi, Canova aracılığıyla satın alma girişimi; 1824'te Pinacoteca di Brera'ya geldi",
+   "seviye": "A",
    "kaynak_id": [
-    "K3"
+    "K6"
    ],
    "kullanim": "olgu"
   },
   {
    "id": "C024",
-   "ifade": "İki versiyon hipotezi; Glenn Head (NY) kopya; British Museum drawing",
+   "ifade": "İki versiyon hipotezi (itwiki \"con molta probabilità... due\"); Glenn Head (NY) kopya (dolenti yok); British Museum drawing; prototip belirsiz",
    "seviye": "D",
    "kaynak_id": [
     "K3"
@@ -372,10 +380,11 @@
   },
   {
    "id": "C025",
-   "ifade": "Camera degli Sposi oculus illüzyonizmiyle ilişki",
+   "ifade": "Camera degli Sposi oculus illüzyonizmiyle ilişki (Kristeller önerisi)",
    "seviye": "B",
    "kaynak_id": [
-    "K3"
+    "K3",
+    "K2"
    ],
    "kullanim": "olgu"
   },
@@ -399,22 +408,43 @@
   },
   {
    "id": "C028",
-   "ifade": "Brera resmî föyü HTTP 404 — erişilemedi",
-   "seviye": "E",
+   "ifade": "Brera birincil kayıt: Sala VI'da sergilenir",
+   "seviye": "A",
    "kaynak_id": [
     "K6"
    ],
-   "kullanim": "belirsiz"
+   "kullanim": "olgu"
   },
   {
    "id": "C029",
-   "ifade": "Bibliyografya (K2/K3 refs) — erişilmedi",
+   "ifade": "Bibliyografya (K2/K3 refs: Kristeller, Ward, Jantzen, Manca, von Einem, Schrade, Eisler, Steinberg) — özgün metinlere erişilmedi",
    "seviye": "B",
    "kaynak_id": [
     "K2",
     "K3"
    ],
    "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Tarihlendirme tartışmalı: Brera c.1483; literatürde 1470–74 (K3), 1480'ler başı / 1475–1501 (K2) önerileri; kesin tarih yok",
+   "seviye": "D",
+   "kaynak_id": [
+    "K6",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C031",
+   "ifade": "Provenance hipotezleri (Brera): en kabul gören hipotez bottega 1506 \"Cristo in scurto\" → Ludovico → Sigismondo Gonzaga → 1627 envanter; 1628 Carlo I + Mazarin \"non risolutive ipotesi\" (kesin olmayan); 1603 Aldobrandini kaydı DİĞER versiyona ait (itwiki \"sdoppiarsi\")",
+   "seviye": "D",
+   "kaynak_id": [
+    "K6",
+    "K3"
+   ],
+   "kullanim": "tartisma"
   }
  ],
  "kaynaklar": [
@@ -424,7 +454,7 @@
    "belge": "Lamentation of Christ (Mantegna) — kaynaklı madde",
    "url": "https://en.wikipedia.org/wiki/Lamentation_of_Christ_(Mantegna)",
    "erisim_tarihi": "2026-11-14",
-   "erisim_durumu": "200 (REST HTML)",
+   "erisim_durumu": "200 (wikitext); refs erişilmedi",
    "tur": "ikincil"
   },
   {
@@ -433,7 +463,7 @@
    "belge": "Cristo morto (Mantegna) — kaynaklı madde",
    "url": "https://it.wikipedia.org/wiki/Cristo_morto_(Mantegna)",
    "erisim_tarihi": "2026-11-14",
-   "erisim_durumu": "200 (REST HTML)",
+   "erisim_durumu": "200 (wikitext); refs erişilmedi",
    "tur": "ikincil"
   },
   {
@@ -457,10 +487,10 @@
   {
    "id": "K6",
    "kurum": "Pinacoteca di Brera",
-   "belge": "resmî eser sayfası (hedef)",
-   "url": "https://pinacotecabrera.org/collezioni/opere/cristo-morto/",
+   "belge": "Cristo morto nel sepolcro e tre dolenti — birincil künye (1483 circa; 68×81; Inv.352; tempera su tela; Sala VI) + küratöryel metin (provenance)",
+   "url": "https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/",
    "erisim_tarihi": "2026-11-14",
-   "erisim_durumu": "HTTP 404 — ERİŞİLEMEDİ",
+   "erisim_durumu": "200; birincil künye + küratöryel metin okundu",
    "tur": "birincil"
   }
  ],
@@ -499,14 +529,14 @@
  "durum": "İnsan incelemesi bekliyor",
  "kalite_kontrol": {
   "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
-  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "denetim_b": "Parti 1 düzeltme: Brera birincil kaydı doğru URL ile açıldı (200); teknik/boyut/yer/envanter/Sala VI A (C003-C007,C028). Tarih c.1483 (Brera) + literatür tartışması D (C030). Provenance belgeli 1806/1824 (A) ↔ hipotez bottega/Gonzaga/1628/Mazarin (D, C031); Aldobrandini diğer versiyon. Magdalene \"büyük olasılıkla\"; ışık sağdan itwiki (K3); Eisler/Steinberg atıf daraltıldı; yenilgi/zafer C. Görsel incelenemedi (E). Kanıt zinciri KANIT §2.",
   "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
  },
  "veri_notlari": [
-  "data tarih \"1483\" → tartışmalı aralık (1475–1501 / 1480'ler başı) önerilir; \"y.1483\" veya aralık.",
-  "Boyut 68×81 K3/K4 uyumlu; envanter 352 yalnız WD (C007 E) → Brera föyü teyidi.",
-  "Müze alanı: \"Pinacoteca di Brera, Milano\" (K2/K3).",
-  "Tarih/orantı teorileri/iki versiyon D; İnsanlık vurgusu C.",
+  "Brera birincil kaydı c.1483 verir; data/ 1483 ile uyumlu. Önceki \"1483 → aralık önerilir\" notu GERİ ÇEKİLDİ; literatür aralığı yalnız tartışma notu (C030), data değişikliği ÖNERİLMEZ.",
+  "Boyut 68×81, envanter 352, teknik tempera-tuval, Sala VI: Brera birincil künye (A). Önceki yanlış URL (opere/cristo-morto, 404) düzeltildi → doğru kayıt 200.",
+  "Provenance: belgeli 1806/1824 (A); bottega/Gonzaga/1628 Carlo I/Mazarin hipotez (D, C031); Aldobrandini 1603 diğer versiyon.",
+  "Tarih/orantı teorileri/iki versiyon/provenance hipotezleri D; İnsanlık vurgusu ve yenilgi/zafer tersine çevirme C.",
   "Görsel teyit bu oturumda yapılamadı (C027) — insan editör zorunlu."
  ]
 }

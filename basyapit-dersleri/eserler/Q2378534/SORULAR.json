@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: affresco/fresco.",
    "yanlis_gerekceleri": {
-    "B": "Tempera pano değil.",
-    "C": "Yağlıboya tuval değil.",
-    "D": "Mozaik değil."
+    "B": "Tempera pano (yumurta bağlayıcılı pigment) bu eserin tekniği/desteği değildir; doğru yanıt Fresk.",
+    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) bu eserin tekniği/desteği değildir; doğru yanıt Fresk.",
+    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Fresk."
    },
    "kanit": [
     "C004"
@@ -58,9 +58,9 @@
    "dogru": "B",
    "gerekce": "K2/K3: San Marco, kuzey koridoru.",
    "yanlis_gerekceleri": {
-    "A": "Uffizi değil.",
+    "A": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer San Marco Manastırı, Floransa.",
     "C": "Prado'da başka bir Müjde var.",
-    "D": "Vatikan değil."
+    "D": "Vatikan bu soruda doğru değildir; kaynakların doğruladığı yanıt San Marco Manastırı, Floransa."
    },
    "kanit": [
     "C006"
@@ -91,7 +91,7 @@
    "gerekce": "K2: Cosimo de' Medici.",
    "yanlis_gerekceleri": {
     "A": "Lorenzo değil, Cosimo.",
-    "C": "Papa değil.",
+    "C": "Papa V. Martin bu soruda doğru değildir; kaynakların doğruladığı yanıt Cosimo de' Medici.",
     "D": "Brancacci başka şapel."
    },
    "kanit": [
@@ -154,9 +154,9 @@
    "dogru": "B",
    "gerekce": "K2/K3: Meryem'in bakireliği.",
    "yanlis_gerekceleri": {
-    "A": "Savaş değil.",
-    "C": "Zenginlik değil.",
-    "D": "Ölüm değil."
+    "A": "Savaşı bu soruda doğru değildir; kaynakların doğruladığı yanıt Bakireliği.",
+    "C": "Zenginliği bu soruda doğru değildir; kaynakların doğruladığı yanıt Bakireliği.",
+    "D": "Ölümü bu soruda doğru değildir; kaynakların doğruladığı yanıt Bakireliği."
    },
    "kanit": [
     "C016"
@@ -186,9 +186,9 @@
    "dogru": "B",
    "gerekce": "K2/K3: geçen rahibe Ave hatırlatması.",
    "yanlis_gerekceleri": {
-    "A": "İmza değil.",
-    "C": "Tarih değil.",
-    "D": "Satış değil."
+    "A": "İmza bu soruda doğru değildir; kaynakların doğruladığı yanıt Ave demeyi hatırlatmak.",
+    "C": "Tarih bu soruda doğru değildir; kaynakların doğruladığı yanıt Ave demeyi hatırlatmak.",
+    "D": "Satış bu soruda doğru değildir; kaynakların doğruladığı yanıt Ave demeyi hatırlatmak."
    },
    "kanit": [
     "C019"
@@ -220,7 +220,7 @@
    "yanlis_gerekceleri": {
     "A": "Süs değil; yapısal/anlamsal.",
     "C": "Kaçış noktası portikoda.",
-    "D": "Işık değil."
+    "D": "Işık bu soruda doğru değildir; kaynakların doğruladığı yanıt İki mekânı ayırır ama birlikte tutar."
    },
    "kanit": [
     "C017"
@@ -250,9 +250,9 @@
    "dogru": "B",
    "gerekce": "K2: royal status + purity.",
    "yanlis_gerekceleri": {
-    "A": "Yas değil.",
-    "C": "Savaş değil.",
-    "D": "Ticaret değil."
+    "A": "Yas bu soruda doğru değildir; kaynakların doğruladığı yanıt Kraliyet+saflık.",
+    "C": "Savaş bu soruda doğru değildir; kaynakların doğruladığı yanıt Kraliyet+saflık.",
+    "D": "Ticaret bu soruda doğru değildir; kaynakların doğruladığı yanıt Kraliyet+saflık."
    },
    "kanit": [
     "C015"
@@ -283,7 +283,7 @@
    "gerekce": "K2: Cosimo özel hücre + kamusal koridor.",
    "yanlis_gerekceleri": {
     "A": "Hücreler sade.",
-    "C": "Yalnız sunak değil.",
+    "C": "Yalnız sunakta bu soruda doğru değildir; kaynakların doğruladığı yanıt Cosimo'nun hücresi + kamusal koridorlar.",
     "D": "Kullanıldı."
    },
    "kanit": [
@@ -315,8 +315,8 @@
    "gerekce": "K2: darker = reflection/prayer.",
    "yanlis_gerekceleri": {
     "A": "Açık ton dekorasyon.",
-    "C": "Satış değil.",
-    "D": "Işık değil."
+    "C": "Satış bu soruda doğru değildir; kaynakların doğruladığı yanıt Tefekkür/dua.",
+    "D": "Işık bu soruda doğru değildir; kaynakların doğruladığı yanıt Tefekkür/dua."
    },
    "kanit": [
     "C012"
@@ -446,7 +446,7 @@
   {
    "id": "GZ01",
    "soru": "Yazıtı bulun: geçen rahibe ne deniyor?",
-   "ipucu": "Altta, orta sütun dibinde.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Altta, orta sütun dibinde.",
    "kanit": [
     "C019"
    ]
@@ -454,7 +454,7 @@
   {
    "id": "GZ02",
    "soru": "Cebrail ve Meryem'in katlı kollarını karşılaştırın.",
-   "ipucu": "Jest aynası.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Jest aynası.",
    "kanit": [
     "C014",
     "C015"
@@ -463,7 +463,7 @@
   {
    "id": "GZ03",
    "soru": "Çitli bahçeyi (hortus conclusus) ve servileri bulun.",
-   "ipucu": "Arka plan; bakirelik.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Arka plan; bakirelik.",
    "kanit": [
     "C016"
    ]
@@ -471,7 +471,7 @@
   {
    "id": "GZ04",
    "soru": "Orta sütunun iki figürü nasıl ayırdığını/birleştirdiğini izleyin.",
-   "ipucu": "Karşı uçlar.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Karşı uçlar.",
    "kanit": [
     "C017"
    ]
@@ -479,7 +479,7 @@
   {
    "id": "GZ05",
    "soru": "Başlıklardaki ışık vurgusunu gözleyin.",
-   "ipucu": "İyon/Korint; Alberti atfı.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): İyon/Korint; Alberti atfı.",
    "kanit": [
     "C021"
    ]

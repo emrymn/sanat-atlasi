@@ -59,7 +59,7 @@
    "gerekce": "K1/K2: Siena Opera del Duomo.",
    "yanlis_gerekceleri": {
     "A": "Uffizi Floransa'da.",
-    "C": "Vatikan değil.",
+    "C": "Vatikan bu soruda doğru değildir; kaynakların doğruladığı yanıt Museo dell'Opera del Duomo, Siena.",
     "D": "Brera Milano'da."
    },
    "kanit": [
@@ -91,8 +91,8 @@
    "gerekce": "K1/K3: Aziz Anna (Meryem'in annesi) yatakta.",
    "yanlis_gerekceleri": {
     "A": "Meryem bebek olarak yıkanıyor, yatakta değil.",
-    "C": "Elizabeth değil.",
-    "D": "Mecdelli Meryem değil."
+    "C": "Elizabeth bu soruda doğru değildir; kaynakların doğruladığı yanıt Aziz Anna.",
+    "D": "Mecdelli Meryem bu soruda doğru değildir; kaynakların doğruladığı yanıt Aziz Anna."
    },
    "kanit": [
     "C016"
@@ -122,9 +122,9 @@
    "dogru": "B",
    "gerekce": "K1: Joachim, Meryem'in babası.",
    "yanlis_gerekceleri": {
-    "A": "Petrus değil.",
+    "A": "Petrus bu soruda doğru değildir; kaynakların doğruladığı yanıt Joachim (Meryem'in babası).",
     "C": "Yusuf değil (Meryem'in babası Joachim).",
-    "D": "Zekeriya değil."
+    "D": "Zekeriya bu soruda doğru değildir; kaynakların doğruladığı yanıt Joachim (Meryem'in babası)."
    },
    "kanit": [
     "C015"
@@ -154,9 +154,9 @@
    "dogru": "B",
    "gerekce": "K1/K3: önde iki beyaz ayak; hem çerçeve hem mimari.",
    "yanlis_gerekceleri": {
-    "A": "Perde değil.",
+    "A": "Perde bu soruda doğru değildir; kaynakların doğruladığı yanıt İki beyaz ayak (pier).",
     "C": "Duvar değil, ayak.",
-    "D": "Boşluk değil."
+    "D": "Boşluk bu soruda doğru değildir; kaynakların doğruladığı yanıt İki beyaz ayak (pier)."
    },
    "kanit": [
     "C012"
@@ -188,7 +188,7 @@
    "yanlis_gerekceleri": {
     "A": "Bulut değil, yıldız.",
     "C": "Melek değil (kubbe yıldızlı).",
-    "D": "Boş değil."
+    "D": "Boş bu soruda doğru değildir; kaynakların doğruladığı yanıt Yıldızlı gece göğü."
    },
    "kanit": [
     "C013"
@@ -218,9 +218,9 @@
    "dogru": "B",
    "gerekce": "K1: Siena Katedrali, koruyucu azizlere dört sunak (1330–1350).",
    "yanlis_gerekceleri": {
-    "A": "Assisi değil.",
+    "A": "Assisi freskleri (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Siena Katedrali dört sunaklık döngü.",
     "C": "Scrovegni Padua'da.",
-    "D": "Vatikan değil."
+    "D": "Vatikan odaları bu soruda doğru değildir; kaynakların doğruladığı yanıt Siena Katedrali dört sunaklık döngü."
    },
    "kanit": [
     "C008"
@@ -250,9 +250,9 @@
    "dogru": "B",
    "gerekce": "K1/K3: iki kadın bebek Meryem'i mavi leğende yıkar.",
    "yanlis_gerekceleri": {
-    "A": "Uyku değil.",
-    "C": "Emzirme değil.",
-    "D": "Oyun değil."
+    "A": "Uyurken bu soruda doğru değildir; kaynakların doğruladığı yanıt Yıkanırken.",
+    "C": "Emzirilirken bu soruda doğru değildir; kaynakların doğruladığı yanıt Yıkanırken.",
+    "D": "Oynarken bu soruda doğru değildir; kaynakların doğruladığı yanıt Yıkanırken."
    },
    "kanit": [
     "C022"
@@ -282,9 +282,9 @@
    "dogru": "B",
    "gerekce": "K1: Duccio'nun Maestà'sı.",
    "yanlis_gerekceleri": {
-    "A": "Giotto Ağıt değil.",
+    "A": "Giotto Ağıt bu eserin sanatçısı değildir; doğru sanatçı Duccio Maestà.",
     "C": "Martini Müjde döngüde ama taç değil.",
-    "D": "Cimabue Çarmıh değil."
+    "D": "Cimabue Çarmıh bu eserin sanatçısı değildir; doğru sanatçı Duccio Maestà."
    },
    "kanit": [
     "C010"
@@ -314,9 +314,9 @@
    "dogru": "B",
    "gerekce": "K1/K2: tempera on panel.",
    "yanlis_gerekceleri": {
-    "A": "Fresk değil.",
-    "C": "Yağlıboya tuval değil.",
-    "D": "Mozaik değil."
+    "A": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Tempera ahşap pano.",
+    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) bu eserin tekniği/desteği değildir; doğru yanıt Tempera ahşap pano.",
+    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Tempera ahşap pano."
    },
    "kanit": [
     "C004"

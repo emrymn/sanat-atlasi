@@ -60,7 +60,7 @@
    "yanlis_gerekceleri": {
     "A": "Domenico yürütücü.",
     "C": "Fra Angelico öğretmen.",
-    "D": "Botticelli değil."
+    "D": "Botticelli bu eserin sanatçısı değildir; doğru sanatçı Alesso Baldovinetti."
    },
    "kanit": [
     "C004"
@@ -90,9 +90,9 @@
    "dogru": "B",
    "gerekce": "K2: katedral kuzey duvarı, in situ.",
    "yanlis_gerekceleri": {
-    "A": "Uffizi değil.",
-    "C": "Prado değil.",
-    "D": "Vatikan değil."
+    "A": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Santa Maria del Fiore, Floransa (kuzey duvarı).",
+    "C": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer Santa Maria del Fiore, Floransa (kuzey duvarı).",
+    "D": "Vatikan bu soruda doğru değildir; kaynakların doğruladığı yanıt Santa Maria del Fiore, Floransa (kuzey duvarı)."
    },
    "kanit": [
     "C005"
@@ -122,9 +122,9 @@
    "dogru": "A",
    "gerekce": "K2: Domenico di Michelino (1417–1491).",
    "yanlis_gerekceleri": {
-    "B": "Giotto değil.",
-    "C": "Masaccio değil.",
-    "D": "Perugino değil."
+    "B": "Giotto bu eserin sanatçısı değildir; doğru sanatçı Domenico di Michelino.",
+    "C": "Masaccio bu eserin sanatçısı değildir; doğru sanatçı Domenico di Michelino.",
+    "D": "Perugino bu eserin sanatçısı değildir; doğru sanatçı Domenico di Michelino."
    },
    "kanit": [
     "C002"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K2: Hell, Purgatory, Paradise as in poem.",
    "yanlis_gerekceleri": {
-    "B": "Kentler değil.",
-    "C": "Doğa öğeleri değil.",
-    "D": "Ülkeler değil."
+    "B": "Roma/Floransa/Venedik bu soruda doğru değildir; kaynakların doğruladığı yanıt Cehennem/Araf/Cennet.",
+    "C": "Yeraltı/Deniz/Gök bu soruda doğru değildir; kaynakların doğruladığı yanıt Cehennem/Araf/Cennet.",
+    "D": "Mısır/Yunanistan/İtalya bu soruda doğru değildir; kaynakların doğruladığı yanıt Cehennem/Araf/Cennet."
    },
    "kanit": [
     "C007"
@@ -220,7 +220,7 @@
    "yanlis_gerekceleri": {
     "B": "Arte della Lana değil.",
     "C": "Giudici sonra (1484).",
-    "D": "Misericordia değil."
+    "D": "Misericordia bu soruda doğru değildir; kaynakların doğruladığı yanıt Compagnia di San Luca."
    },
    "kanit": [
     "C016"
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K2: Vasari reports pupil of Fra Angelico.",
    "yanlis_gerekceleri": {
-    "B": "Giotto değil.",
-    "C": "Masaccio değil.",
-    "D": "Donatello değil."
+    "B": "Giotto bu eserin sanatçısı değildir; doğru sanatçı Fra Angelico.",
+    "C": "Masaccio bu eserin sanatçısı değildir; doğru sanatçı Fra Angelico.",
+    "D": "Donatello bu soruda doğru değildir; kaynakların doğruladığı yanıt Fra Angelico."
    },
    "kanit": [
     "C015"
@@ -444,7 +444,7 @@
   {
    "id": "GZ01",
    "soru": "Üç dünyayı (Cehennem/Araf/Cennet) bulun.",
-   "ipucu": "Şiirdeki gibi arka planda.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Şiirdeki gibi arka planda.",
    "kanit": [
     "C007"
    ]
@@ -452,7 +452,7 @@
   {
    "id": "GZ02",
    "soru": "Dante'nin sunduğu kitabı bulun.",
-   "ipucu": "İlahi Komedya.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): İlahi Komedya.",
    "kanit": [
     "C007"
    ]
@@ -460,7 +460,7 @@
   {
    "id": "GZ03",
    "soru": "Dante'yi üç dünya ve kent arasında konumlandırın.",
-   "ipucu": "Eksen figür.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Eksen figür.",
    "kanit": [
     "C007"
    ]
@@ -468,7 +468,7 @@
   {
    "id": "GZ04",
    "soru": "Floransa'yı ve kubbesini arayın (mevcut betim).",
-   "ipucu": "Sağda; görsel teyit bekliyor.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Sağda; görsel teyit bekliyor.",
    "kanit": [
     "C007"
    ]
@@ -476,7 +476,7 @@
   {
    "id": "GZ05",
    "soru": "Eserin kuzey duvarı konumunu düşünün.",
-   "ipucu": "Katedral, in situ.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Katedral, in situ.",
    "kanit": [
     "C005"
    ]

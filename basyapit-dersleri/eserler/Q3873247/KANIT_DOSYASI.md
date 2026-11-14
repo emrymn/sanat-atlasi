@@ -83,6 +83,8 @@
 
 **C027** — K1 bibliyografyası: De Vecchi & Cerchiari, *I tempi dell'arte* (Bompani, 1999) — anıldı, metnine erişilmedi. Kaynak: K1. **B** (künye aktarımı).
 
+**Sayım:** 27 iddia · A=6 · B=21 · C=0 · D=0 · E=0.
+
 ## 3. Görsel Doğrulama Kaydı (Kural 6)
 
 - **İncelenen görüntü:** K3 Commons, 1275×1300 (vision köprüsü, 14 Kasım 2026). Tam kare.

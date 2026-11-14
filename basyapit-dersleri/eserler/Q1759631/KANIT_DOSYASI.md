@@ -57,7 +57,7 @@ Eser in situ (Brancacci Şapeli, Santa Maria del Carmine, Floransa). Kurumsal bi
 **C030** — Bibliyografya: K2 Vasari (Le Vite) alıntısı; K3 Smarthistory — tam metinler erişilmedi. **B.** K2, K3.
 **C031** — K1 resmî: döngü, tüccar Felice Brancacci tarafından Masolino ve Masaccio'ya 1420'lerde sipariş edildi. **A.** K1.
 
-**Sayım:** 31 iddia · A=3 · B=24 · D=2 · E=2 · C=0.
+**Sayım:** 31 iddia · A=3 · B=24 · C=0 · D=2 · E=2.
 
 ## 3. Görsel doğrulama kaydı (Kural 6)
 

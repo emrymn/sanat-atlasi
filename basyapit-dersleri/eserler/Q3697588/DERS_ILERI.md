@@ -92,8 +92,6 @@ Sentez ve kavşak: Urbino klasik + Flaman ışık + Leonardo gerçekçilik + Bra
 
 **Acı ve beden (yorum).** İp, gözyaşı, sıkılan et — beden, acının kanıtıdır; gerçekçilik, enkarnasyonun iddiasıdır (yorum) [C014]. Seminer sorusu: bir beden, nasıl "hakikat" taşır? Burada acı, gerçek insanlığın imzasıdır (yorum) [C014]. Bu, temsilin etiğidir: acı, süslenmez (yorum) [C014].
 
-**Beden ve hakikat (yorum).** İp, gözyaşı, sıkılan et — acı, gerçek bedenle kanıtlanır; gerçekçilik, enkarnasyonun iddiasıdır (yorum) [C014]. Seminer sorusu: bir beden, nasıl "hakikat" taşır? Burada acı, süslenmez; gerçek, güzelden önce gelir (yorum) [C014].
-
 İki acı dili: Mantegna scorcio (perspektif şoku) ↔ Bramante yakın plan (yüz/beden gerçekçiliği); karşılaştırma, empatinin iki biçimini gösterir (yorum) [C010]. Seminer sorusu: acı, kaç şekilde yakın kılınır? Burada iki usta, iki yakınlık dili kurar; ikisi de compassio'dur (yorum) [C010].
 
 ## 8. Karşılaştırmalı metodoloji
@@ -101,10 +99,6 @@ Sentez ve kavşak: Urbino klasik + Flaman ışık + Leonardo gerçekçilik + Bra
 Üç eksen: (1) San Satiro (Bramante): aynı perspektif yöntemi (B) [C011]. (2) Bramantino Cristo dolente: atıf tartışması (D) [C008] (tartışma). (3) Flaman/Leonardo: ışık+gerçekçilik etkileri (B) [C013][C014]. Kanıt disiplini: mekân yöntemi, Bramante'ye bağlayan üslup kanıtı (B); atıf ise D [C011][C008] (tartışma). Seminer, üslup (B) ↔ kimlik (D) ayrımını korur (yorum) [C008] (tartışma).
 
 **Mekân ve sonsuzluk (yorum).** Sınırlar ötesi mekân, dar yüzeyde sonsuzluk ima eder; mimarın perspektifi teolojik bir açılımdır (yorum) [C011]. Seminer sorusu: bir mekân, nasıl "sonsuz" olur? Burada illüzyon, anlamı genişletir (yorum) [C011].
-
-**Mekân ve açılım (yorum).** Sınırlar ötesi mekân, dar yüzeyde sonsuzluk ima eder; perspektif, teolojik bir açılımdır (yorum) [C011]. Seminer sorusu: bir mekân, nasıl "sonsuz" olur? Burada illüzyon, anlamı genişletir; dünya, yüzeyi aşar (yorum) [C011].
-
-**Mekân ve sonsuzluk (yorum).** Sınırlar ötesi mekân, dar yüzeyde sonsuzluk ima eder; perspektif, teolojik açılımdır (yorum) [C011]. Seminer sorusu: bir mekân, nasıl "sonsuz" olur? Burada illüzyon, anlamı genişletir; dünya, yüzeyi aşar (yorum) [C011].
 
 Eksik halkalar: birincil föy (JS), görsel teyit, teknik farkı (oil/tempera), atıf belgesi, refs — hepsi açık (belirsiz) [C018] (belirsiz)[C017] (belirsiz)[C004][C008] (tartışma)[C019]. İnsan editör, birincil arşiv (Brera, MiC, teknik yayınlar) ile kapatır. Seminer, her E/D'yi arşiv sorusuna çevirir (yorum).
 
@@ -122,8 +116,6 @@ Bu envanter, dersin kanıt sınırını şeffaf kılar. Seminer, bu katmanları 
 Envanterin eksik halkaları: birincil föy (JS), görsel teyit (bu oturum), teknik farkı (oil/tempera), atıf belgesi, K2/K3 refs — hepsi açık (belirsiz) [C018] (belirsiz)[C017] (belirsiz)[C004][C008] (tartışma)[C019]. Bu eksikler, insan editörün birincil arşiv (Brera envanteri, MiC katalog, teknik yayınlar) kontrolüyle kapanabilir. Seminer, her E/D maddesini bir arşiv sorusuna çevirir (yorum).
 
 Karşılaştırmanın kanıt türleri: San Satiro (B üslup), Bramantino (D atıf), Flaman/Leonardo (B etki) [C011][C008] (tartışma)[C013]. Seminer, üslup (B) ↔ kimlik (D) ↔ etki (B) ayrımını korur (yorum). Bu, dersin kanıt disiplinidir (yorum).
-
-Kanıt türleri: San Satiro (B üslup), Bramantino (D atıf), Flaman/Leonardo (B etki), hasar (B) [C011][C008] (tartışma)[C013][C009]. Seminer, üslup/kimlik/etki ayrımını korur (yorum). Bu, dersin kanıt disiplinidir (yorum).
 
 Küratöryel dörtlü: nadirlik+psikoloji+mekân+teoloji; etiket bu dörtlüyü ve belirsizlikleri (atıf, teknik, görsel, föy) açıkça taşır (belirsiz/tartışma) [C007][C010][C011][C015][C008] (tartışma)[C004][C017] (belirsiz)[C018] (belirsiz). Seminerin kapanış görevi: bu dörtlüyü taşıyan 200 kelimelik şeffaf etiket yazmak (yorum).
 

@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K1: Bruegel the Elder.",
    "yanlis_gerekceleri": {
-    "B": "Bosch değil.",
-    "C": "van Eyck değil.",
-    "D": "Dürer değil."
+    "B": "Bosch bu eserin sanatçısı değildir; doğru sanatçı Pieter Bruegel (yaşlı).",
+    "C": "van Eyck bu eserin sanatçısı değildir; doğru sanatçı Pieter Bruegel (yaşlı).",
+    "D": "Dürer bu eserin sanatçısı değildir; doğru sanatçı Pieter Bruegel (yaşlı)."
    },
    "kanit": [
     "C001"
@@ -58,9 +58,9 @@
    "dogru": "A",
    "gerekce": "K1: 1565.",
    "yanlis_gerekceleri": {
-    "B": "1434 değil.",
-    "C": "1600 değil.",
-    "D": "1500 değil."
+    "B": "1434, Van Eyck Arnolfini Portresi'nin tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1565.",
+    "C": "1600, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1565.",
+    "D": "1500 bu eserin tarihi değildir; kaynakların doğruladığı tarih 1565."
    },
    "kanit": [
     "C001"
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: oil on wood.",
    "yanlis_gerekceleri": {
-    "B": "Fresk değil.",
-    "C": "Tempera tuval değil.",
-    "D": "Mozaik değil."
+    "B": "Fresk (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, ahşap pano.",
+    "C": "Tempera, tuval (yumurta bağlayıcılı pigment) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, ahşap pano.",
+    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Yağlıboya, ahşap pano."
    },
    "kanit": [
     "C002"
@@ -122,9 +122,9 @@
    "dogru": "A",
    "gerekce": "K1: KHM Vienna.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi değil.",
-    "C": "Louvre değil.",
-    "D": "Prado değil."
+    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Kunsthistorisches Museum, Viyana.",
+    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Kunsthistorisches Museum, Viyana.",
+    "D": "Prado (Madrid) bu eserin bulunduğu kurum değildir; doğru yer Kunsthistorisches Museum, Viyana."
    },
    "kanit": [
     "C003"
@@ -154,9 +154,9 @@
    "dogru": "A",
    "gerekce": "K1: six months, five survive.",
    "yanlis_gerekceleri": {
-    "B": "Tek değil.",
-    "C": "Portre değil.",
-    "D": "Fresk değil."
+    "B": "Tek manzara bu soruda doğru değildir; kaynakların doğruladığı yanıt Altı aylık mevsim serisi (beşi extant).",
+    "C": "Bir portre serisi bu soruda doğru değildir; kaynakların doğruladığı yanıt Altı aylık mevsim serisi (beşi extant).",
+    "D": "Bir fresk döngüsü (duvar resmi) bu eserin tekniği/desteği değildir; doğru yanıt Altı aylık mevsim serisi (beşi extant)."
    },
    "kanit": [
     "C004"
@@ -186,9 +186,9 @@
    "dogru": "A",
    "gerekce": "K1: Dec/Jan winter.",
    "yanlis_gerekceleri": {
-    "B": "Yaz değil.",
-    "C": "İlkbahar değil.",
-    "D": "Sonbahar değil."
+    "B": "Yaz bu soruda doğru değildir; kaynakların doğruladığı yanıt Aralık/Ocak kışı.",
+    "C": "İlkbahar bu soruda doğru değildir; kaynakların doğruladığı yanıt Aralık/Ocak kışı.",
+    "D": "Sonbahar bu soruda doğru değildir; kaynakların doğruladığı yanıt Aralık/Ocak kışı."
    },
    "kanit": [
     "C004"
@@ -218,9 +218,9 @@
    "dogru": "A",
    "gerekce": "K1: meager fox corpse.",
    "yanlis_gerekceleri": {
-    "B": "Geyik değil.",
-    "C": "Balık değil.",
-    "D": "Kazan değil."
+    "B": "Geyik bu soruda doğru değildir; kaynakların doğruladığı yanıt Zayıf bir tilki leşi.",
+    "C": "Büyük bir balık bu soruda doğru değildir; kaynakların doğruladığı yanıt Zayıf bir tilki leşi.",
+    "D": "Kazan bu soruda doğru değildir; kaynakların doğruladığı yanıt Zayıf bir tilki leşi."
    },
    "kanit": [
     "C006"
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K1: not in Low Countries.",
    "yanlis_gerekceleri": {
-    "B": "Yerel değil.",
+    "B": "Gerçek yerel dağlar bu soruda doğru değildir; kaynakların doğruladığı yanıt Low Countries'da yoktur (hayali).",
     "C": "Hayali Alp.",
-    "D": "Volkanik değil."
+    "D": "Volkanik bu soruda doğru değildir; kaynakların doğruladığı yanıt Low Countries'da yoktur (hayali)."
    },
    "kanit": [
     "C009"
@@ -386,7 +386,7 @@
   {
    "id": "GZ01",
    "soru": "Üç avcıyı, zayıf köpekleri ve tilki leşini bulun.",
-   "ipucu": "Başarısız av; yorgunluk.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Başarısız av; yorgunluk.",
    "kanit": [
     "C006"
    ]
@@ -394,7 +394,7 @@
   {
    "id": "GZ02",
    "soru": "Karın üstündeki tavşan ayak izlerini izleyin.",
-   "ipucu": "Kaçmış/ıskalanmış tavşan.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaçmış/ıskalanmış tavşan.",
    "kanit": [
     "C006"
    ]
@@ -402,7 +402,7 @@
   {
    "id": "GZ03",
    "soru": "Handa dış ateşte domuz yakma sahnesini bulun.",
-   "ipucu": "Yetişkinler + çocuk; tabela.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Yetişkinler + çocuk; tabela.",
    "kanit": [
     "C007"
    ]
@@ -410,7 +410,7 @@
   {
    "id": "GZ04",
    "soru": "Kargaları ve uçan saksağanı bulun.",
-   "ipucu": "Uğursuzluk; Şeytan çağrışımı.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Uğursuzluk; Şeytan çağrışımı.",
    "kanit": [
     "C010"
    ]
@@ -418,7 +418,7 @@
   {
    "id": "GZ05",
    "soru": "Donmuş değirmeni ve buz oyunu figürlerini izleyin.",
-   "ipucu": "Çark donmuş; kolf/eisstock.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Çark donmuş; kolf/eisstock.",
    "kanit": [
     "C011"
    ]

@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: affresco/fresco.",
    "yanlis_gerekceleri": {
-    "B": "Tempera pano değil.",
-    "C": "Yağlıboya tuval değil.",
-    "D": "Mozaik değil."
+    "B": "Tempera pano (yumurta bağlayıcılı pigment) bu eserin tekniği/desteği değildir; doğru yanıt Fresk.",
+    "C": "Yağlıboya tuval (yağ bağlayıcılı boya) bu eserin tekniği/desteği değildir; doğru yanıt Fresk.",
+    "D": "Mozaik (tessera tekniği) bu eserin tekniği/desteği değildir; doğru yanıt Fresk."
    },
    "kanit": [
     "C004"
@@ -58,9 +58,9 @@
    "dogru": "B",
    "gerekce": "K1/K3: Brancacci Şapeli, Carmine, Floransa; in situ.",
    "yanlis_gerekceleri": {
-    "A": "Uffizi değil.",
-    "C": "Vatikan değil.",
-    "D": "Brera değil."
+    "A": "Uffizi, Floransa (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Brancacci Şapeli, Santa Maria del Carmine, Floransa.",
+    "C": "Vatikan bu soruda doğru değildir; kaynakların doğruladığı yanıt Brancacci Şapeli, Santa Maria del Carmine, Floransa.",
+    "D": "Brera, Milano (Milano) bu eserin bulunduğu kurum değildir; doğru yer Brancacci Şapeli, Santa Maria del Carmine, Floransa."
    },
    "kanit": [
     "C006"
@@ -122,9 +122,9 @@
    "dogru": "B",
    "gerekce": "K2/K3: çizgiler İsa'nın başında birleşir.",
    "yanlis_gerekceleri": {
-    "A": "Memur değil.",
-    "C": "Mimari değil.",
-    "D": "Dağ değil."
+    "A": "Memurun eli bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın başı.",
+    "C": "Sağdaki mimari bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın başı.",
+    "D": "Soldaki dağ bu soruda doğru değildir; kaynakların doğruladığı yanıt İsa'nın başı."
    },
    "kanit": [
     "C012"
@@ -154,9 +154,9 @@
    "dogru": "A",
    "gerekce": "K2/K3: solda Petrus, balığın ağzından para.",
    "yanlis_gerekceleri": {
-    "B": "Vaaz değil.",
+    "B": "İsa vaaz verir bu soruda doğru değildir; kaynakların doğruladığı yanıt Petrus balıktan parayı çıkarır.",
     "C": "Ödeme sağda.",
-    "D": "Uyku değil."
+    "D": "Havariler uyur bu soruda doğru değildir; kaynakların doğruladığı yanıt Petrus balıktan parayı çıkarır."
    },
    "kanit": [
     "C011"
@@ -188,7 +188,7 @@
    "yanlis_gerekceleri": {
     "A": "Mucize solda.",
     "C": "Çarmıh yok.",
-    "D": "Uyku değil."
+    "D": "Petrus uyur bu soruda doğru değildir; kaynakların doğruladığı yanıt Petrus vergiyi öder."
    },
    "kanit": [
     "C011"
@@ -219,8 +219,8 @@
    "gerekce": "K2/K3: kısa vermilion tunik; pastel havarilere karşıt.",
    "yanlis_gerekceleri": {
     "A": "Mavi robe havarilerin.",
-    "C": "Zırh değil.",
-    "D": "Cübbe değil."
+    "C": "Zırh bu soruda doğru değildir; kaynakların doğruladığı yanıt Kısa vermilion tunik.",
+    "D": "Rahip cübbesi bu soruda doğru değildir; kaynakların doğruladığı yanıt Kısa vermilion tunik."
    },
    "kanit": [
     "C014"
@@ -250,9 +250,9 @@
    "dogru": "B",
    "gerekce": "K2/K3: sağdaki gerçek pencere; gölgeler buna göre.",
    "yanlis_gerekceleri": {
-    "A": "Sol değil.",
-    "C": "Yukarı değil.",
-    "D": "Ön değil."
+    "A": "Soldan bu soruda doğru değildir; kaynakların doğruladığı yanıt Sağdan (şapel penceresi).",
+    "C": "Yukarıdan bu soruda doğru değildir; kaynakların doğruladığı yanıt Sağdan (şapel penceresi).",
+    "D": "Önden bu soruda doğru değildir; kaynakların doğruladığı yanıt Sağdan (şapel penceresi)."
    },
    "kanit": [
     "C017"
@@ -282,9 +282,9 @@
    "dogru": "B",
    "gerekce": "K2: 32 giornata.",
    "yanlis_gerekceleri": {
-    "A": "12 değil.",
-    "C": "50 değil.",
-    "D": "100 değil."
+    "A": "12 bu soruda doğru değildir; kaynakların doğruladığı yanıt 32.",
+    "C": "50 bu soruda doğru değildir; kaynakların doğruladığı yanıt 32.",
+    "D": "100 bu soruda doğru değildir; kaynakların doğruladığı yanıt 32."
    },
    "kanit": [
     "C018"
@@ -315,8 +315,8 @@
    "gerekce": "K3: Filippino Lippi.",
    "yanlis_gerekceleri": {
     "A": "Masolino daha önce ayrıldı.",
-    "C": "Ghirlandaio değil.",
-    "D": "Botticelli değil."
+    "C": "Ghirlandaio bu eserin sanatçısı değildir; doğru sanatçı Filippino Lippi.",
+    "D": "Botticelli bu eserin sanatçısı değildir; doğru sanatçı Filippino Lippi."
    },
    "kanit": [
     "C009"
@@ -446,7 +446,7 @@
   {
    "id": "GZ01",
    "soru": "Kaçış noktasını bulun: çizgiler nerede birleşiyor?",
-   "ipucu": "İsa'nın başı.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): İsa'nın başı.",
    "kanit": [
     "C012"
    ]
@@ -454,7 +454,7 @@
   {
    "id": "GZ02",
    "soru": "Jest zincirini izleyin: İsa→Petrus→sol; orada ne oluyor?",
-   "ipucu": "Balık mucizesi solda.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Balık mucizesi solda.",
    "kanit": [
     "C011"
    ]
@@ -462,7 +462,7 @@
   {
    "id": "GZ03",
    "soru": "Memur ile Petrus'un pozlarını karşılaştırın: ters açı farkı.",
-   "ipucu": "Aynı jest, iki yön.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Aynı jest, iki yön.",
    "kanit": [
     "C015"
    ]
@@ -470,7 +470,7 @@
   {
    "id": "GZ04",
    "soru": "Soldaki dağların ve Petrus'un solukluğunu gözleyin.",
-   "ipucu": "Atmosferik perspektif.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Atmosferik perspektif.",
    "kanit": [
     "C016"
    ]
@@ -478,7 +478,7 @@
   {
    "id": "GZ05",
    "soru": "Gölgelerin yönünü izleyin: ışık nereden?",
-   "ipucu": "Sağdaki pencere.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Sağdaki pencere.",
    "kanit": [
     "C017"
    ]

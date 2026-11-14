@@ -26,9 +26,9 @@
    "dogru": "A",
    "gerekce": "K1: Bosch.",
    "yanlis_gerekceleri": {
-    "B": "van Eyck değil.",
-    "C": "Bruegel değil.",
-    "D": "Dürer değil."
+    "B": "Jan van Eyck bu eserin sanatçısı değildir; doğru sanatçı Hieronymus Bosch.",
+    "C": "Bruegel bu eserin sanatçısı değildir; doğru sanatçı Hieronymus Bosch.",
+    "D": "Dürer bu eserin sanatçısı değildir; doğru sanatçı Hieronymus Bosch."
    },
    "kanit": [
     "C001"
@@ -58,9 +58,9 @@
    "dogru": "A",
    "gerekce": "K1: five-panel.",
    "yanlis_gerekceleri": {
-    "B": "Tek değil.",
-    "C": "İki değil.",
-    "D": "Yedi değil."
+    "B": "Tek bu soruda doğru değildir; kaynakların doğruladığı yanıt Beş (açık 3, kapalı 2).",
+    "C": "İki bu soruda doğru değildir; kaynakların doğruladığı yanıt Beş (açık 3, kapalı 2).",
+    "D": "Yedi bu soruda doğru değildir; kaynakların doğruladığı yanıt Beş (açık 3, kapalı 2)."
    },
    "kanit": [
     "C002"
@@ -90,9 +90,9 @@
    "dogru": "A",
    "gerekce": "K1: 1490–1510.",
    "yanlis_gerekceleri": {
-    "B": "1400 değil.",
-    "C": "1600 değil.",
-    "D": "1300 değil."
+    "B": "1400–1420, erken Quattrocento'nun tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1490–1510.",
+    "C": "1600–1620, Bosch Dünyevi Zevkler Bahçesi'nin (tahmini) tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1490–1510.",
+    "D": "1300, Giotto/Cimabue döneminin tarihidir; bu eserle karıştırılmamalıdır. Doğru yanıt 1490–1510."
    },
    "kanit": [
     "C003"
@@ -122,8 +122,8 @@
    "dogru": "A",
    "gerekce": "K1: Prado since 1939.",
    "yanlis_gerekceleri": {
-    "B": "Uffizi değil.",
-    "C": "Louvre değil.",
+    "B": "Uffizi (Floransa) bu eserin bulunduğu kurum değildir; doğru yer Museo del Prado, Madrid.",
+    "C": "Louvre (Paris) bu eserin bulunduğu kurum değildir; doğru yer Museo del Prado, Madrid.",
     "D": "El Escorial 342 yıl kaldı, sonra Prado."
    },
    "kanit": [
@@ -154,7 +154,7 @@
    "dogru": "A",
    "gerekce": "K1: Third Day grisaille.",
    "yanlis_gerekceleri": {
-    "B": "Son Yargı değil.",
+    "B": "Son Yargı bu soruda doğru değildir; kaynakların doğruladığı yanıt Yaratılış'ın Üçüncü Günü (grisaille).",
     "C": "Cehennem iç sağda.",
     "D": "Eden iç solda."
    },
@@ -187,8 +187,8 @@
    "gerekce": "K1: God absent.",
    "yanlis_gerekceleri": {
     "B": "Tanrı yok.",
-    "C": "Tahtta değil.",
-    "D": "Meleklerle değil."
+    "C": "Tahtta bu soruda doğru değildir; kaynakların doğruladığı yanıt Yok (insanlık özgür iradeyle).",
+    "D": "Meleklerle bu soruda doğru değildir; kaynakların doğruladığı yanıt Yok (insanlık özgür iradeyle)."
    },
    "kanit": [
     "C007"
@@ -250,9 +250,9 @@
    "dogru": "A",
    "gerekce": "K1: broken eggshell.",
    "yanlis_gerekceleri": {
-    "B": "Tahta değil.",
-    "C": "Taş değil.",
-    "D": "Metal değil."
+    "B": "Tahta bu soruda doğru değildir; kaynakların doğruladığı yanıt Kırık yumurta kabuğu.",
+    "C": "Taş bu soruda doğru değildir; kaynakların doğruladığı yanıt Kırık yumurta kabuğu.",
+    "D": "Metal (New York) bu eserin bulunduğu kurum değildir; doğru yer Kırık yumurta kabuğu."
    },
    "kanit": [
     "C024"
@@ -381,7 +381,7 @@
   {
    "id": "GZ01",
    "soru": "Kapalı kanatlardaki grisaille Yaratılış sahnesini izleyin.",
-   "ipucu": "Yeşil-gri; hayvan/insan öncesi.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Yeşil-gri; hayvan/insan öncesi.",
    "kanit": [
     "C005"
    ]
@@ -389,7 +389,7 @@
   {
    "id": "GZ02",
    "soru": "Sol panelde Tanrı/Eden'i bulun.",
-   "ipucu": "Yaratıcı; azalan etki.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Yaratıcı; azalan etki.",
    "kanit": [
     "C006"
    ]
@@ -397,7 +397,7 @@
   {
    "id": "GZ03",
    "soru": "Merkezde çıplak figürleri ve çileği bulun.",
-   "ipucu": "Tanrı yok; özgür irade.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Tanrı yok; özgür irade.",
    "kanit": [
     "C007"
    ]
@@ -405,7 +405,7 @@
   {
    "id": "GZ04",
    "soru": "Sağ panelde ağaç-adamı bulun.",
-   "ipucu": "Yumurta kabuğu gövde.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Yumurta kabuğu gövde.",
    "kanit": [
     "C024"
    ]
@@ -413,7 +413,7 @@
   {
    "id": "GZ05",
    "soru": "Müzik aletlerini inceleyin.",
-   "ipucu": "Erotik çağrışım; bedenin müziği.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Erotik çağrışım; bedenin müziği.",
    "kanit": [
     "C011"
    ]

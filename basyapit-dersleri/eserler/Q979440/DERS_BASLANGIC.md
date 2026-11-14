@@ -9,7 +9,7 @@
 - **Tarih:** 1333; çerçevedeki imza yazıtı yılı verir [C003].
 - **Teknik:** ahşap üzerine tempera ve altın zemin [C004].
 - **Yer:** Uffizi Galerisi, Floransa [C008].
-- **Biçim:** triptik; orta panel yanların iki katı büyüklükte [C004].
+- **Biçim:** triptik; orta panel yanlardan büyük (oran kaynaklar arası tartışmalı: enwiki iki kat, itwiki üç kat) [C004][C036] (tartışma).
 
 Bu resim bir "müjde" anını gösterir: Cebrail (Gabriel) meleği, Meryem'e Tanrı'nın oğlunu doğuracağını bildirir [C019]. Ama olağandışı bir şey vardır: meleğin sözleri havada, altın zemin üzerinde kabartma harflerle görünür [C021].
 

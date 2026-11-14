@@ -45,7 +45,7 @@ Eser in situ (Floransa Katedrali, Santa Maria del Fiore, kuzey duvarı). Eser-ö
 **C021** — Bibliyografya: Casini Wanrooij DBI 1991; Berenson 1963 — erişilmedi. **B.** K2, K3.
 **C022** — "Floransa kültür kahramanını kutluyor; şiir kutsal mekâna giriyor" okuması. **C.** (yorum).
 
-**Sayım:** 22 iddia · A=1 · B=9 · C=2 · D=1 · E=9.
+**Sayım:** 22 iddia · A=1 · B=10 · C=2 · D=1 · E=8.
 
 ## 3. Görsel doğrulama kaydı (Kural 6)
 
