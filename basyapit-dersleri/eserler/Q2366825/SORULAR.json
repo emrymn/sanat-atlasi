@@ -1,0 +1,625 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2366825",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu tablonun National Gallery envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "NG1207"
+    },
+    {
+     "harf": "B",
+     "metin": "987-1900"
+    },
+    {
+     "harf": "C",
+     "metin": "589-1888"
+    },
+    {
+     "harf": "D",
+     "metin": "986-1900"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG Key facts: \"Inventory number NG1207\".",
+   "yanlis_gerekceleri": {
+    "B": "987-1900, V&A'daki tam boy yağlı eskizin envanteridir (güncel kayıt O81405); bitmiş tablo değil, ayrı nesne.",
+    "C": "589-1888, V&A'nın 2009 tarihli \"Constable's Studies for the Hay-Wain\" sayfasında anılan Daniel Gardner'ın 1796 tarihli Constable portresinin numarasıdır.",
+    "D": "986-1900, V&A'daki The Leaping Horse tam boy eskizinin numarasıdır; başka bir eserin hazırlık çalışması."
+   },
+   "kanit": [
+    "C003",
+    "C073",
+    "C088"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Constable tabloyu Royal Academy'ye 1821'de hangi adla gönderdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Landscape: Noon"
+    },
+    {
+     "harf": "B",
+     "metin": "The Hay Wain"
+    },
+    {
+     "harf": "C",
+     "metin": "Stratford Mill"
+    },
+    {
+     "harf": "D",
+     "metin": "The White Horse"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG: \"When it was sent to the Royal Academy in 1821 with its given title 'Landscape: Noon'\".",
+   "yanlis_gerekceleri": {
+    "B": "The Hay Wain, arkadaşı Archdeacon Fisher'ın takma adıdır; sonradan yaygınlaşan addır, sergi adı değil.",
+    "C": "Stratford Mill, dizinin ikinci \"six-footer\"ıdır ve 1820'de, yani bir önceki yıl sergilenmiştir.",
+    "D": "The White Horse, dizinin ilk \"six-footer\"ıdır (1819); ayrı bir eserdir."
+   },
+   "kanit": [
+    "C005",
+    "C020"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "NG kaydına göre sudan geçen arabanın yükü nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Boş"
+    },
+    {
+     "harf": "B",
+     "metin": "Samanla yüklü"
+    },
+    {
+     "harf": "C",
+     "metin": "Keresteyle yüklü"
+    },
+    {
+     "harf": "D",
+     "metin": "Yük değil, yolcu taşıyor"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG Overview: \"The empty wagon is making its way through the shallow water\"; audio: \"The wooden slatted cart is empty\".",
+   "yanlis_gerekceleri": {
+    "B": "Samanla yüklü araba tabloda vardır ama UZAK ÇAYIRDADIR; orakçılar ona yaba ile saman atar. Sudaki araba boştur.",
+    "C": "NG arabanın kereste taşımaya uygun TASARIMINI (alçak yanlar) söyler, kereste yüklü olduğunu değil.",
+    "D": "NG iki işçinin arabayı yönlendirdiğini belirtir; araba yolcu taşıma aracı olarak betimlenmez."
+   },
+   "kanit": [
+    "C007",
+    "C012",
+    "C016"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "1824 Paris Salonu'ndaki sergileme için Constable'a altın madalyayı kim verdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fransa Kralı Charles X"
+    },
+    {
+     "harf": "B",
+     "metin": "John Arrowsmith"
+    },
+    {
+     "harf": "C",
+     "metin": "Archdeacon Fisher"
+    },
+    {
+     "harf": "D",
+     "metin": "Henry Vaughan"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG: \"He was awarded a gold medal by the French king, Charles X, for his exhibits at the Salon, but chiefly for The Hay Wain.\"",
+   "yanlis_gerekceleri": {
+    "B": "Arrowsmith, tabloyu 1824'te £250 karşılığında satın alıp Salon'a gönderen Anglo-Fransız dealer'dır; ödül veren makam değil.",
+    "C": "Fisher, tabloya \"The Hay Wain\" takma adını veren Constable'ın arkadaşıdır; madalyayla ilgisi yoktur.",
+    "D": "Vaughan, tabloyu 1866'da Cox aracılığıyla edinen ve 1886'da NG'ye sunan koleksiyoncudur; 1824 Salonu'yla ilgisi yoktur."
+   },
+   "kanit": [
+    "C024",
+    "C023",
+    "C005",
+    "C030"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Charles X'in verdiği altın madalya bugün nerede korunuyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "National Gallery Archives"
+    },
+    {
+     "harf": "B",
+     "metin": "Victoria and Albert Museum"
+    },
+    {
+     "harf": "C",
+     "metin": "Royal Academy of Arts"
+    },
+    {
+     "harf": "D",
+     "metin": "Tate Gallery"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG In-depth: \"The medal is now in the National Gallery Archives.\" Çerçevedeki iki döküm 2024'te yeniden konmuştur.",
+   "yanlis_gerekceleri": {
+    "B": "V&A, tablonun tam boy yağlı eskizini (987-1900) tutar; madalyayı değil.",
+    "C": "Royal Academy, tablonun 1821'de \"Landscape: Noon\" adıyla sergilendiği kurumdur; madalyanın korunduğu yer olarak NG kaydında geçmez.",
+    "D": "Tate Gallery, NG bibliyografyasındaki 1976 ve 1991 Constable sergi kataloglarının yayıncısıdır; madalyanın yeri değildir."
+   },
+   "kanit": [
+    "C024",
+    "C025",
+    "C073"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "The Hay Wain'in tam boyutlu yağlı eskizi hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Victoria and Albert Museum, Londra"
+    },
+    {
+     "harf": "B",
+     "metin": "Yale Center for British Art, New Haven"
+    },
+    {
+     "harf": "C",
+     "metin": "National Gallery, Londra"
+    },
+    {
+     "harf": "D",
+     "metin": "National Gallery of Art, Washington"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG: \"a full-scale oil sketch to develop the composition (Victoria and Albert Museum, London)\"; güncel V&A kaydı O81405 / 987-1900.",
+   "yanlis_gerekceleri": {
+    "B": "Yale Center for British Art, arabanın KÜÇÜK hazırlık yağlı eskizini (~1820, Paul Mellon Collection) tutar; tam boy eskizi değil.",
+    "C": "National Gallery Londra, bitmiş tabloyu (NG1207) tutar; eskiz ayrı nesnedir.",
+    "D": "NGA Washington, NG kaydına göre The White Horse'un (1819) bulunduğu kurumdur; Hay Wain eskizinin değil."
+   },
+   "kanit": [
+    "C018",
+    "C073",
+    "C019",
+    "C013"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Tablo Paris Salonu'nda hangi yıl sergilendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1824"
+    },
+    {
+     "harf": "B",
+     "metin": "1821"
+    },
+    {
+     "harf": "C",
+     "metin": "1828"
+    },
+    {
+     "harf": "D",
+     "metin": "1886"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG: \"In 1824 Constable agreed to sell… Arrowsmith sent them to the 1824 Paris Salon, where they caused a sensation.\"",
+   "yanlis_gerekceleri": {
+    "B": "1821, Royal Academy sergisinin yılıdır (Londra); Paris Salonu değil.",
+    "C": "1828, NG provenansındaki Henry/Paris anon. satışının yılıdır (Boursault satın aldı); sergileme yılı değil.",
+    "D": "1886, Henry Vaughan'ın tabloyu National Gallery'ye sunduğu yıldır."
+   },
+   "kanit": [
+    "C023",
+    "C005",
+    "C030",
+    "C004"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "NG provenans kaydına göre tabloyu 1886'da National Gallery'ye kim sundu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Henry Vaughan"
+    },
+    {
+     "harf": "B",
+     "metin": "Edmund Higginson"
+    },
+    {
+     "harf": "C",
+     "metin": "Thomas Rought"
+    },
+    {
+     "harf": "D",
+     "metin": "John Arrowsmith"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG Key facts: \"Acquisition credit Presented by Henry Vaughan, 1886\"; provenans: 1866 Christie's satışında Cox tarafından Vaughan için satın alındı.",
+   "yanlis_gerekceleri": {
+    "B": "Higginson, ~1838'de Artaria aracılığıyla 80 resimlik koleksiyonuna bu tabloyu katan sahibidir; 1846'da satılmıştır, NG'ye sunan değildir.",
+    "C": "Rought, 1846 Higginson satışında (lot 77) tabloyu satın alan dealer'dır; sonraki halkalarda el değiştirmiştir.",
+    "D": "Arrowsmith, 1824'te sanatçıdan satın alıp Paris'e götüren dealer'dır; zincirin ilk halkasıdır."
+   },
+   "kanit": [
+    "C004",
+    "C030"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "The Hay Wain, Constable'ın RA'ya gönderdiği büyük Stour peyzajları (\"six-footers\") dizisinde kaçıncıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Üçüncü"
+    },
+    {
+     "harf": "B",
+     "metin": "Birinci"
+    },
+    {
+     "harf": "C",
+     "metin": "İkinci"
+    },
+    {
+     "harf": "D",
+     "metin": "Altıncı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG In-depth: \"This is the third of the large landscapes set around the River Stour that Constable exhibited at the Royal Academy between 1819 and 1825… shown in 1821, the year after Stratford Mill.\"",
+   "yanlis_gerekceleri": {
+    "B": "Birinci, The White Horse'dur (1819); NGA bu eserin eleştirel övgü getirdiğini ve associate üyelik yolunu açtığını söyler.",
+    "C": "İkinci, Stratford Mill'dir (1820); NG sayfası \"Not on display\" olarak listeler.",
+    "D": "Altıncı değildir: dizi 1819–1825 arasında altı büyük Stour peyzajını kapsar ve bu tablo 1821 ile üçüncü sıradadır."
+   },
+   "kanit": [
+    "C020",
+    "C078",
+    "C075"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "NG kaydına göre bitmiş tablo nerede yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Londra'daki atölyesinde"
+    },
+    {
+     "harf": "B",
+     "metin": "Flatford'da, açık havada"
+    },
+    {
+     "harf": "C",
+     "metin": "East Bergholt'taki değirmende"
+    },
+    {
+     "harf": "D",
+     "metin": "Paris'te, Arrowsmith'in galerisinde"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NG: \"Although the painting evokes a Suffolk scene, it was created in the artist's studio in London.\" BBC atölyenin Hampstead'de olduğunu ekler.",
+   "yanlis_gerekceleri": {
+    "B": "Açık havada yıllar içinde eskizler yapıldı, ama bitmiş tuval atölyede kuruldu; NG bu ayrımı açıkça yapar.",
+    "C": "Değirmen East Bergholt'a ~1 mil uzaklıkta, Flatford'dadır ve tabloda görünmez; yapım yeri olarak verilmez.",
+    "D": "Paris'te 1824 Salonu'nda SERGİLENDİ; yapılmadı. NG yapım yerini açıkça \"the artist's studio in London\" olarak verir."
+   },
+   "kanit": [
+    "C017",
+    "C009",
+    "C023"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Tablo, NG1207 envanter numarasıyla National Gallery Londra'nın Main Collection'ındadır ve güncel kayda göre Room 40'tadır.",
+   "dogru": true,
+   "aciklama": "Doğru. NG Key facts: \"Inventory number NG1207\", \"Collection Main Collection\", \"Location Room 40\". 2009 arşivindeki Room 34 zamansal değişimdir (C058).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "NG kaydına göre sudan geçen araba samanla yüklüdür.",
+   "dogru": false,
+   "aciklama": "Yanlış. NG \"The empty wagon\" ve \"The wooden slatted cart is empty\" der. Samanla yüklü araba uzak çayırda, orakçıların yanındadır.",
+   "kanit": [
+    "C007",
+    "C012"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "\"The Hay Wain\", Constable'ın tabloya verdiği ve Royal Academy'ye gönderdiği özgün addır.",
+   "dogru": false,
+   "aciklama": "Yanlış. RA 1821'deki ad \"Landscape: Noon\" idi; \"The Hay Wain\" arkadaşı Archdeacon Fisher'ın takma adıdır ve sonradan yaygınlaşmıştır.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "1824 Paris Salonu'ndaki sergileme Constable'a Charles X'ten altın madalya kazandırdı; madalya bugün National Gallery Archives'tadır.",
+   "dogru": true,
+   "aciklama": "Doğru. NG: \"awarded a gold medal by the French king, Charles X… chiefly for The Hay Wain\"; \"The medal is now in the National Gallery Archives\".",
+   "kanit": [
+    "C024",
+    "C023"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Tam boyutlu yağlı eskiz de bitmiş tabloyla aynı envanter numarasını (NG1207) taşır.",
+   "dogru": false,
+   "aciklama": "Yanlış. Eskiz AYRI nesnedir: güncel V&A kaydı O81405 / 987-1900, \"ca. 1821\", 137 × 188 cm (estimate). 2009 arşivindeki 987-1888 numarası güncel kayıtla çelişir (C062).",
+   "kanit": [
+    "C073",
+    "C018"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "NG/Egerton provenans zincirini \"reputedly\" ve \"possibly\" kuşku işaretlerini koruyarak yazın; enwiki (Kay 1933 zinciri) ve itwiki varyantlarının hangi halkaları atladığını veya değiştirdiğini değerlendirin.",
+   "beklenen_ogeler": [
+    "Arrowsmith 1824",
+    "reputedly 1825 anon. / possibly başka dealer",
+    "1828 Henry Paris → Boursault",
+    "~1838 Artaria → Higginson",
+    "1846 Christie's (77) Rought",
+    "D.T. White → 1853 Young",
+    "1866 Christie's (25) Cox → Vaughan",
+    "1886 NG",
+    "enwiki Boursault/Higginson/Rought atlar",
+    "\"Young'ın ölümü\" ↔ 1866 müzayede"
+   ],
+   "kanit": [
+    "C030",
+    "C054",
+    "C067"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "\"Doğaya sadakat\" (Carver) ile \"kurgulanmış peyzaj\" (Riding) arasındaki gerilimi, NG'in kendi audio betimindeki sıfatları da kullanarak tartışın. Bu iki okuma neden birbirini dışlamaz?",
+   "beklenen_ogeler": [
+    "true to nature / bağlılık",
+    "highly curated / fiction",
+    "all man-made / managed landscape",
+    "evocation ↔ mimetic optical-truth",
+    "NG audio: idyllic + quite at odds",
+    "Londra atölyesi + yirmi yıllık eskiz birikimi",
+    "görünmeyen sahipler / yalnız işçiler"
+   ],
+   "kanit": [
+    "C080",
+    "C081",
+    "C028",
+    "C029",
+    "C017",
+    "C082"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Eskiz–final ilişkisini NG, NGA ve V&A kayıtlarıyla karşılaştırın. Silinen ön figürün kimliğindeki belirsizliği koruyun ve \"full-scale\" teriminin ölçüsel karşılığını güncel V&A verisiyle sınayın.",
+   "beklenen_ogeler": [
+    "1802 probably ev etüdü",
+    "1811 üç eskiz / kadın aynı poz",
+    "~1820 Yale küçük eskiz",
+    "V&A tam boy: kahverengi ast açık",
+    "at+binici geç aşamada boyanarak çıkarıldı",
+    "kimlik: rider/boy/figure on horseback",
+    "137×188 (estimate) ↔ 130.2×185.4",
+    "Leaping Horse eskizi daha bitmiş",
+    "eskizler sergilenmedi/satılmadı"
+   ],
+   "kanit": [
+    "C037",
+    "C010",
+    "C019",
+    "C018",
+    "C046",
+    "C066",
+    "C073",
+    "C088",
+    "C078"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "data/ ile birincil/ikincil kaynaklar arasındaki uyuşmazlıkları kaynak hiyerarşisi ilkesiyle değerlendirin ve düzeltme önerilerini gerekçelendirin (data değiştirilmez).",
+   "beklenen_ogeler": [
+    "eser_notlari \"saman yüklü\" ↔ NG \"empty\"",
+    "basyapitlar/ayrintilar \"neredeyse yarısı\" ↔ NG \"upper third\"",
+    "biyografiler \"natüralist\" ↔ sanatcilar/BBC Romantizm",
+    "Barbizon/İzlenimci yalnız C kaynak",
+    "\"büyük ilgi görmedi\" ↔ övgü + satılmama ayrımı",
+    "A ezmez, bağlamlandırır"
+   ],
+   "kanit": [
+    "C056",
+    "C055",
+    "C057",
+    "C041",
+    "C059",
+    "C007",
+    "C015"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Alımlama tarihini 1824 Salonu → 2005 anketi → Kennard → 2013/2022 protestoları zinciriyle kurun. Her halkada arabanın ne \"taşıdığını\" yazın ve imgenin siyasal kullanılabilirliğini yorumlayın.",
+   "beklenen_ogeler": [
+    "1824 sansasyon + Charles X madalyası",
+    "2005: 21.711 oy, ikinci; toplam 118.111",
+    "Kennard: arabada üç nükleer başlık",
+    "V&A 1980 ↔ BBC 1983 ihtilafı",
+    "2013: çocuk fotoğrafı, orijinal boyada hasar yok",
+    "2022: nehir→asfalt yol, bacalar, uçaklar; vernik + çerçeve hasarı",
+    "boş saman arabası → yük taşıyan kap esnekliği"
+   ],
+   "kanit": [
+    "C023",
+    "C024",
+    "C089",
+    "C031",
+    "C063",
+    "C084",
+    "C033",
+    "C034",
+    "C090",
+    "C007"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynakların betimlediği üç siyah atı ve BOŞ ahşap arabayı bulun; NG'nin söylediği gibi ön tekerleğin sağa, sığ geçide doğru dönüp dönmediğini sınayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NG In-depth: \"The front wheel of the wagon is already turning to the right towards the ford\"; audio: \"three sturdy black horses… The wooden slatted cart is empty\".",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Soldaki evi ve önündeki ahşap platformda sürahiyle su alan kadını bulun; NG'nin betimlediği açık kurşun çerçeveli pencereyi ve üçgen alınlığı işaretleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NG: kadın 1811 eskizinden aynı poz/konumda korunmuştur; audio evin beyaz duvar, kırmızı kiremit ve açık penceresini betimler.",
+   "kanit": [
+    "C010",
+    "C077"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Kıyıdaki siyah-beyaz köpeği ve sağdaki küçük boş kayığı bulun; NG'nin \"kayık soldaki evi ve ortadaki arabayı dengeler\" iddiasını görselde sınayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NG audio: \"a fluffy black and white farm dog, looking out attentively at the hay cart\"; In-depth: \"the boat balances the house on the left and the hay wagon in the centre\".",
+   "kanit": [
+    "C011",
+    "C077"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Uzak çayırda orakçıları ve SAMAN YÜKLÜ arabayı bulun; tırpan bileyen figürü ve tepeden yükü istifleyen adamı seçmeye çalışın. Sudaki arabanın boşluğuyla karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NG: \"one sharpens his scythe, others are pitchforking hay into an already laden wagon in the distance\"; \"just possible to make out one man stacking the load from the top\".",
+   "kanit": [
+    "C012",
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Yapraklardaki ve sudaki küçük beyaz fırça lekelerini (\"Constable's snow\") ve atların deri tasmalarındaki kırmızı püskülleri bulun; NG'nin \"üst üçte bir\" dediği bulut alanını kaynak betimiyle karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): NG audio: \"tiny dabs of white paint… his critics called it 'Constable's snow'\"; \"thick red fringes decorating the horses' leather collars\"; \"the upper third… billowing clouds\". Bulut oranı data ile ihtilaflıdır (C055), görsel teyit yapılmadı.",
+   "kanit": [
+    "C014",
+    "C077",
+    "C015"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye ve ad tarihi?",
+   "arka": "The Hay Wain · John Constable (1776–1837) · 1821 · oil on canvas · 130.2 × 185.4 cm · Signed; Dated · NG1207 · Main Collection, Room 40 · Presented by Henry Vaughan, 1886. RA 1821 özgün adı \"Landscape: Noon\"; \"The Hay Wain\" Archdeacon Fisher'ın takma adı.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu ve sahne öğeleri?",
+   "arka": "Flatford millpond, River Stour (Suffolk–Essex sınırı). BOŞ araba, üç siyah at, iki işçi; solda kiracı Willy Lott'un oturduğu ev + platformda su alan kadın; kıyıda köpek; sağda küçük boş kayık + oltalı adam; uzak çayırda orakçılar ve yüklü araba; değirmen görünmez (sağ uçta kırmızı tuğla kenarı); bulutlar üst üçte bir.",
+   "kanit": [
+    "C006",
+    "C007",
+    "C008",
+    "C009",
+    "C010",
+    "C011",
+    "C012",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Eskiz zinciri ve ayrı nesneler?",
+   "arka": "Ev etüdü \"probably\" 1802 → 1811 üç küçük eskiz (kadın aynı poz) → ~1820 araba eskizi (Yale, Paul Mellon) → tam boy yağlı eskiz (V&A, AYRI nesne: 987-1900, ca. 1821, 137 × 188 cm estimate) → final (NG1207). Kahverengi ast açık bırakıldı; öndeki at+binici geç aşamada boyanarak çıkarıldı.",
+   "kanit": [
+    "C037",
+    "C010",
+    "C019",
+    "C018",
+    "C073"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "1824 Paris Salonu ve madalya?",
+   "arka": "Üç eser (Hay Wain + View on the Stour near Dedham + Yarmouth Jetty) Arrowsmith'a £250; 1824 Salonu'nda sansasyon; Charles X altın madalya \"chiefly for The Hay Wain\"; madalya NG Archives'ta; kopyalar 1927'de çerçeveye kondu, çıkarıldı, 2024'te NG'nin ikiyüzüncü yılı için iki döküm yeniden kondu. RA 1821'de övgü aldı ama satılmadı.",
+   "kanit": [
+    "C023",
+    "C024",
+    "C025",
+    "C021"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Teknik, etki ve alımlama?",
+   "arka": "Londra atölyesinde, yılların açık hava eskizlerinden; \"Constable's snow\" beyaz lekeler; Delacroix dahil yeni Fransız neslini doğadan boyamaya esinledi. 2005 BBC/NG anketinde ikinci (21.711 oy; birinci Fighting Temeraire). 2013 fotoğraf yapıştırma (orijinal boyada hasar yok); 2022 Just Stop Oil (çerçeve + vernik hasarı, giderildi).",
+   "kanit": [
+    "C017",
+    "C014",
+    "C026",
+    "C031",
+    "C033",
+    "C034"
+   ]
+  }
+ ]
+}

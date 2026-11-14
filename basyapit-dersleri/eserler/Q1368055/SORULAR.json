@@ -1,0 +1,563 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1368055",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Musée d'Orsay, Paris"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée du Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Rijksmuseum, Amsterdam"
+    },
+    {
+     "harf": "D",
+     "metin": "National Gallery, Londra"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S2: Eser 1986'dan beri Musée d'Orsay'da (RF 592); Louvre 1890–1986 arası önceki ev sahibiydi.",
+   "yanlis_gerekceleri": {
+    "B": "Louvre eserin 1890–1986 arası önceki ev sahibiydi; 1986'da Orsay'a devredildi, güncel yer değil (S1/S2).",
+    "C": "Rijksmuseum 1988–89 \"Van Gogh and Millet\" sergisine ev sahipliği yaptı; eserin sürekli koleksiyonu değil (S1).",
+    "D": "National Gallery (Londra) 2025 \"Millet: Life on the Land\" sergisine ev sahipliği yaptı; eserin bulunduğu kurum değil (S1)."
+   },
+   "kanit": [
+    "C008",
+    "C023",
+    "C028"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "RF 592"
+    },
+    {
+     "harf": "B",
+     "metin": "000PE002031"
+    },
+    {
+     "harf": "C",
+     "metin": "342"
+    },
+    {
+     "harf": "D",
+     "metin": "M5060"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S2/S3: envanter RF 592.",
+   "yanlis_gerekceleri": {
+    "B": "000PE002031 Joconde/POP kayıt referansıdır (WD P347), envanter numarası değil (S3/S5).",
+    "C": "342 Orsay katalog notice kimliğidir (Identifiant 342), envanter değil (S1).",
+    "D": "M5060 Joconde müze kodudur (musée d'Orsay), eser envanteri değil (S3)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tekniği/desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlı boya"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt üzerine suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S3: huile sur toile (tuval üzerine yağlı boya).",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir; eser tuval üzerine yağlı boyadır (S1/S3).",
+    "C": "Ahşap pano/tempera değil; destek tuval, bağlayıcı yağdır (S1/S3).",
+    "D": "Kâğıt/suluboya değil; eser tuval üzerine yağlı boyadır (S1/S3)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eser Salon 1857'de hangi katalog numarasıyla sergilendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1936"
+    },
+    {
+     "harf": "B",
+     "metin": "474"
+    },
+    {
+     "harf": "C",
+     "metin": "68"
+    },
+    {
+     "harf": "D",
+     "metin": "518"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 livret + S1/S3: Salon 1857, Peinture, n°1936.",
+   "yanlis_gerekceleri": {
+    "B": "474, eserin 1867 Exposition Universelle katalog numarasıdır (S1/S3).",
+    "C": "68, eserin 1883 Georges Petit sergisi katalog numarasıdır (S1).",
+    "D": "518, eserin 1889 Centennale katalog numarasıdır (S1/S3)."
+   },
+   "kanit": [
+    "C027",
+    "C028"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Orsay kataloguna göre üç figür yan yana neyi gösterir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tekrarlayan hareketin üç evresini: eğilme, toplama, doğrulma"
+    },
+    {
+     "harf": "B",
+     "metin": "Üç farklı başak toplama aracını"
+    },
+    {
+     "harf": "C",
+     "metin": "Üç kuşağı: büyükanne, anne, kız"
+    },
+    {
+     "harf": "D",
+     "metin": "Üç farklı mevsimi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: \"se baisser, ramasser, se relever\" — üç hareket evresi yan yana.",
+   "yanlis_gerekceleri": {
+    "B": "Orsay araçlardan değil, hareketin üç evresinden söz eder (S1).",
+    "C": "Orsay figürleri kuşaklar olarak değil, aynı hareketin evreleri olarak sunar (S1).",
+    "D": "Mevsim betimi yok; sahne hasat sonrası tek bir anı gösterir (S1)."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Orsay kataloguna göre sağdaki atlı figür büyük olasılıkla kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bir kâhya (régisseur)"
+    },
+    {
+     "harf": "B",
+     "metin": "Toprağın sahibi"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir rahip"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir asker"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: \"vraisemblablement un régisseur\" — büyük olasılıkla kâhya; işleri ve glaneuse kurallarını denetler.",
+   "yanlis_gerekceleri": {
+    "B": "Orsay figürü sahip değil, sahiplerin emanasyonu olan bir kâhya olarak tanımlar (S1).",
+    "C": "Rahip betimi yok; figür denetim görevlisi olarak yorumlanır (S1).",
+    "D": "Asker betimi yok; figür sivil bir kâhya olarak yorumlanır (S1)."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Eser 1890'da kamuya nasıl geçti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Mme Pommery'nin usufruit şartlı bağışı"
+    },
+    {
+     "harf": "B",
+     "metin": "Devletin açık artırmada satın alması"
+    },
+    {
+     "harf": "C",
+     "metin": "Sanatçının vasiyeti"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir takas"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S3: \"donation sous réserve d'usufruit Mme Pommery, 1890\" (comité 30/01/1890).",
+   "yanlis_gerekceleri": {
+    "B": "Devlet eseri satın almadı; bağış olarak kabul etti (comité 30/01/1890) (S1).",
+    "C": "Bağışçı sanatçı değil, koleksiyoner Mme Pommery'dir (S1).",
+    "D": "Takas kaydı yok; edinim usufruit şartlı bağıştır (S1/S3)."
+   },
+   "kanit": [
+    "C009",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Orsay provenance kaydına göre sahiplik sırası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Binder → Tesse (1865) → Bischoffsheim (1867–1889) → Pommery → Louvre (1890–1986) → Orsay (1986)"
+    },
+    {
+     "harf": "B",
+     "metin": "Binder → Bischoffsheim → Tesse → Pommery → Orsay → Louvre"
+    },
+    {
+     "harf": "C",
+     "metin": "Pommery → Binder → Tesse → Bischoffsheim → Louvre → Orsay"
+    },
+    {
+     "harf": "D",
+     "metin": "Tesse → Binder → Pommery → Bischoffsheim → Orsay → Louvre"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S2 provenance: Binder → 1865 Tesse → 1867–1889 Bischoffsheim → Pommery → 1890 Louvre → 1986 Orsay.",
+   "yanlis_gerekceleri": {
+    "B": "Tesse (1865) Bischoffsheim'dan (1867–1889) önce gelir; Louvre Orsay'dan önce gelir (S1/S2).",
+    "C": "Pommery ilk sahip değil, son özel sahiptir; Binder ilk halkadır (S1/S2).",
+    "D": "Tesse Binder'dan sonra gelir; Louvre Orsay'dan önce gelir (S1/S2)."
+   },
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Orsay kataloguna göre ön plan/arka plan ilişkisi nasıldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ön plan yoksunluğu ↔ arka plan hasat bolluğu; ani ölçek değişimi"
+    },
+    {
+     "harf": "B",
+     "metin": "Ön plan bolluğu ↔ arka plan yoksulluğu"
+    },
+    {
+     "harf": "C",
+     "metin": "Ön ve arka plan aynı ölçekte"
+    },
+    {
+     "harf": "D",
+     "metin": "Arka plan yok, yalnızca figürler"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: \"Leur austérité s'oppose à l'abondance de la moisson au loin\"; ölçek değişimi ani.",
+   "yanlis_gerekceleri": {
+    "B": "Orsay tam tersini söyler: ön plan yoksun, arka plan bol (S1).",
+    "C": "Orsay ölçek değişiminin ani olduğunu, bolluğun uzak göründüğünü vurgular (S1).",
+    "D": "Arka planda yığınlar, demetler, araba ve hasatçı kalabalığı betimlenir (S1)."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Smarthistory'ye göre figürler neden bir \"karışık mesaj\" taşır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bel kırıcı emeğe rağmen paçavra içinde değil, görünüşte iyi beslenmiş ve güçlüler"
+    },
+    {
+     "harf": "B",
+     "metin": "Paçavralar içinde ve açlar"
+    },
+    {
+     "harf": "C",
+     "metin": "Neşeli ve dans ediyorlar"
+    },
+    {
+     "harf": "D",
+     "metin": "İzleyiciye bakıp gülümsüyorlar"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S12: \"they're not in rags. They are seemingly well-fed and strong ... mixed message\".",
+   "yanlis_gerekceleri": {
+    "B": "Smarthistory tam tersini söyler: paçavra içinde değiller (S12).",
+    "C": "Dans/neşe betimi yok; sahne bel kırıcı emektir (S12).",
+    "D": "Figürler izleyiciye bakmaz; Orsay bakışların yere sabitlendiğini söyler (S1)."
+   },
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Musée d'Orsay'dadır ve envanter numarası RF 592'dir.",
+   "dogru": true,
+   "aciklama": "Doğru (S1/S2/S3): güncel yer Orsay, envanter RF 592.",
+   "kanit": [
+    "C008",
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser sağ altta \"J.F. Millet\" imzalıdır.",
+   "dogru": true,
+   "aciklama": "Doğru (S1/S2/S3): \"S.b.d. : J.F. Millet\".",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Orsay kaydı eseri glaneuses teması üzerine on yıllık araştırmanın sonucu olarak sunar.",
+   "dogru": true,
+   "aciklama": "Doğru (S1/S11): \"le résultat de dix années de recherches\".",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Orsay kaydı figürleri sefaletçi (misérabilisme) bir üslupla betimler.",
+   "dogru": false,
+   "aciklama": "Yanlış (S1/S11): Orsay \"dénuée de tout misérabilisme\" der; figürler yoksul ama onurludur.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Smarthistory'ye göre figürler paçavralar içindedir.",
+   "dogru": false,
+   "aciklama": "Yanlış (S12): \"they're not in rags ... seemingly well-fed and strong\" — karışık mesaj.",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "İki birincil devlet kaydının (Orsay ↔ Joconde) boyut çelişkisini analiz edin; hangi kaydı, neden esas alırsınız?",
+   "beklenen_ogeler": [
+    "Orsay 110",
+    "Joconde 111",
+    "wiki 111/111.8/112",
+    "sahip kurum + tarihli kayıt",
+    "çözülmedi/D"
+   ],
+   "kanit": [
+    "C005",
+    "C040",
+    "C049"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Pommery bağış/ölüm anlatılarındaki ihtilafı (1890 usufruit ↔ 1891 vasiyet) provenance yöntemiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "Orsay 1890 usufruit sonu",
+    "enwiki 1891 ölüm+vasiyet",
+    "frwiki décret 15/03/1890",
+    "WD (1819-1890)",
+    "birincil ile çözülmedi"
+   ],
+   "kanit": [
+    "C009",
+    "C023",
+    "C025",
+    "C044",
+    "C055"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Ruth/Boaz hipotezi ile \"İncil dindarlığı değil\" okumasını ikonografi yöntemiyle karşılaştırın.",
+   "beklenen_ogeler": [
+    "\"a pu\" hipotez (E)",
+    "enwiki rural poverty not biblical piety (B)",
+    "Ruth geleneği",
+    "seküler okuma",
+    "hipotezi olguya yükseltmeme"
+   ],
+   "kanit": [
+    "C022",
+    "C052",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "1857 alımlamasını Saint-Victor ↔ About ↔ sağ/sol basını üzerinden tartışın; anıtsal ölçek neden provokatifti?",
+   "beklenen_ogeler": [
+    "Saint-Victor Parques du paupérisme",
+    "About miette à miette",
+    "sağ/sol split",
+    "1848/1793 korkusu",
+    "tarih resmi ölçeği"
+   ],
+   "kanit": [
+    "C030",
+    "C031",
+    "C032",
+    "C054"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Görsel inceleme sınırını beyan edin: data \"noktalar\" betimlerini hangi kaynaklarla, nasıl teyit edersiniz?",
+   "beklenen_ogeler": [
+    "görsel İNCELENEMEDİ",
+    "GZ TASLAK",
+    "data noktalar doğrulanmadı",
+    "itwiki atıf boşluğu",
+    "vizyon teyidi insan editör"
+   ],
+   "kanit": [
+    "C050",
+    "C015",
+    "C057",
+    "C058"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Üç figürün üç hareket evresini (eğilme, toplama, doğrulma) kaynak betiminde eşleştirin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Orsay): \"se baisser, ramasser, se relever\".",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Ön plandaki yoksunluk ile arka plandaki hasat bolluğunu ve ani ölçek değişimini fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Orsay): yığınlar, demetler, araba, hasatçı kalabalığı.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağda, tek başına duran atlı figürü bulun; müzeye göre büyük olasılıkla bir kâhya.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Orsay): \"vraisemblablement un régisseur\".",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Batan güneşin sıyırıcı ışığının ellerde, enselerde, omuzlarda ve sırtlarda yarattığı heykelsi hacmi inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Orsay): lumière rasante, aspect sculptural.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Figürlerin ufuk çizgisinin altında, manzarayla bütünleşik duruşunu ve sağdaki küçük demetleri fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Smarthistory): below the horizon line; small bundles to their right.",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Des glaneuses / Les glaneuses; Jean-François Millet (1814–1875); 1857; tuval üzerine yağlı boya; 83,5×110 cm (Orsay); RF 592; Musée d'Orsay, Salle 5; sağ alt imza J.F. Millet.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + glanage hakkı?",
+   "arka": "Hasat sonrası başak toplayan üç köylü kadın; kırsal proletarya; glanage çok eski geleneksel hak, güneş batmadan önce tarlalarda başak toplama izni.",
+   "kanit": [
+    "C011",
+    "C019",
+    "C020"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Kompozisyon + ışık?",
+   "arka": "Üç hareket evresi (eğilme/toplama/doğrulma); ön plan yoksunluğu ↔ arka plan bolluğu, ani ölçek; sıyırıcı ışık heykelsi hacim, altın/tozlu arka plan.",
+   "kanit": [
+    "C012",
+    "C013",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance + edinim?",
+   "arka": "Binder → Tesse 1865 → Bischoffsheim 1867–1889 → Pommery → 1890 usufruit şartlı bağış (comité 30/01/1890) → Louvre 1890–1986 → Orsay 1986; Louvre salle des États 8 Mayıs 1890.",
+   "kanit": [
+    "C023",
+    "C009",
+    "C026"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Salon 1857 + alımlama?",
+   "arka": "Salon 1857 Peinture n°1936; Delaroche öğrencisi, 1853 madalya; üst sınıflarca olumsuz (1848/1793 korkusu, anıtsal ölçek); Saint-Victor \"trois Parques du paupérisme\".",
+   "kanit": [
+    "C027",
+    "C030",
+    "C031"
+   ]
+  }
+ ]
+}

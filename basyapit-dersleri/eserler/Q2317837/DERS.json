@@ -1,0 +1,562 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2317837",
+ "sanatci_id": "henry-fuseli",
+ "baslik": "Kabus (The Nightmare)",
+ "ozgun_baslik": "The Nightmare",
+ "kunye": {
+  "sanatci": "Henry Fuseli (Johann Heinrich Füssli)",
+  "sanatci_yasam": "1741–1825",
+  "tarih": "1781",
+  "tarih_belirsizlik": "DIA 1781 (kesin); data girdisi \"yaklaşık 1781–1782\" iki versiyonu birleştirir (C030, D)",
+  "teknik": "Yağlıboya, tuval (oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 101.6,
+   "genislik": 126.7
+  },
+  "muze": "Detroit Institute of Arts",
+  "envanter": "55.5.A",
+  "edinim": "Founders Society Purchase; Mr. and Mrs. Bert L. Smokler ve Mr. and Mrs. Lawrence A. Fleischman fonları (1955)",
+  "konum": "Era of Revolution S331, Level 3 (2018 arşiv kaydı; güncel teyit gerekli)",
+  "telif_durumu": "Kamu malı (Fuseli ö. 1825; WD P6216 public domain); data \"CC BY 2.5\" notu kontrol edilmeli"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:John_Henry_Fuseli_-_The_Nightmare.JPG",
+  "kaynak": "Wikimedia Commons (WD P18); enwiki infobox DIA 2019 fotoğrafını kullanır (55.5.A-d1-2019)",
+  "lisans": "Public domain (WD P6216 Q19652)",
+  "dogrulama": {
+   "yontem": "yalnız metadata (WD P18/P6216 + DIA arşiv kaydı); BU OTURUMDA İNCELENEMEDİ (vision kotası)",
+   "cozunurluk": "bilinmiyor (dosya açılmadı)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C031); GZ TASLAK; kompozisyon K2 kaynak metninden; görsel projeye kopyalanmadı"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 416
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1348
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2619
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-arşivdeki-birincil"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-eser-tarihi-boothbyden-detroite-provenance"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-kariyer-bağlamı-ve-antik-kaynak-önerileri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-gravürden-psikanalize"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-mara-incubus-ve-uyku-felci-folkloru"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-malzeme-ve-boyut-tartışması"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-versiyonlar-ve-parodiler"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "DIA birincil (arşiv) kaydıyla künyeyi doğrular: 1781, oil on canvas, 55.5.A, 101,6×126,7 cm, edinim.",
+  "Kompozisyonu kaynak betimi üzerinden okur; görsel inceleme sınırını beyan eder (GZ TASLAK).",
+  "Incubus/mara folklorunu ve etimolojiyi eserin ikonografisiyle bağdaştırır.",
+  "1782 sergisi, gravür yayılımı, parodi ve Gotik roman alımlama zincirini açıklar.",
+  "Boyut ihtilafını (D), versiyon alt sınırını (hedge) ve psikanalitik yorumun anakronizm sınırını (C) yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Incubus",
+   "tanim": "Uyuyanları ziyaret edip göğsüne çöktüğüne inanılan erkek iblis (folklor); resimde kadının göğsündeki figür.",
+   "kanit": [
+    "C011",
+    "C020"
+   ]
+  },
+  {
+   "ad": "Mara / night-mare",
+   "tanim": "Uyuyanları ezen İskandinav ruhu; \"nightmare\" sözcüğünün kökeni; at başı, mare (kısrak) kelime oyunudur.",
+   "kanit": [
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "ad": "Kiyaroskuro (chiaroscuro)",
+   "tanim": "Güçlü ışık-gölge karşıtlığı; kaynak betiminde kadının parlak figürü koyu fona karşı.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "Gravür",
+   "tanim": "Levhadan basılarak çoğaltılan görüntü; Burke'un 1783 gravürü eseri yaygınlaştırdı.",
+   "kanit": [
+    "C014",
+    "C008"
+   ]
+  },
+  {
+   "ad": "Uyku felci",
+   "tanim": "Uykuda göğüste ağırlık ve hareketsizlik deneyimi; \"nightmare\"ın erken anlamı ve folklorik zemin.",
+   "kanit": [
+    "C020"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Kimlik: Henry Fuseli (Johann Heinrich Füssli; İsviçreli, 1741–1825), The Nightmare, 1781, oil on canvas (yağlıboya, tuval), Detroit Institute of Arts.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Boyut (DIA): çerçevesiz 40 × 49 7/8 in (101.6 × 126.7 cm); çerçeveli 47 5/8 × 58 × 3 1/2 in (121 × 147.3 × 8.9 cm).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Envanter 55.5.A; Department: European Painting; On View (2018 arşiv kaydı): Era of Revolution S331, Level 3.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Edinim: Founders Society Purchase with funds from Mr. and Mrs. Bert L. Smokler and Mr. and Mrs. Lawrence A. Fleischman; 1955 DIA satın alımı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Provenance (DIA; kuşku işaretleri aynen): until ca. 1845 Sir Brooke Boothby (1744–1824, Ashbourne Hall, Derbyshire); by 1879 H. Haskett Smith (Troweswell, Goudhurst); 9 May 1896 Christie's lot 78 (Viscount Eversley and other collections); Earl of Harrowby (Stafford); by November 1947 Roland, Browse and Delbanco (Londra); 1950–1955 Durlacher Bros. (New York); 1955–present DIA.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "DIA Published References: Royal Academy (exhibition), London 1782, no. 64; Royal Academy 1879, no. 15 (lent by H. Haskett Smith).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "DIA betimi: imge \"kadının şeytani kâbus pençesindeyken hissettiklerini gösterir, gördüklerini değil\"; \"vague and disturbing familiarity\"; anahtar sözcükler: allegory, dreams, woman, painting, bed.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "DIA: The Nightmare gravür olarak reprodukte edildi; bir kopya 1920'lerde Sigmund Freud'un Viyana dairesinde asılıydı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "DIA bibliyografyası (liste olgusu A; metinler erişilmedi → C033): RA 1782/1879; Darwin 1789; Christie's 1896 kataloğu s.16 no.78; Richardson, Bulletin of the DIA 34,1 (1954–55); Antal, Fuseli Studies (1956); Janson (1963); Allentuck, \"Eroticism or Pornography?\" (1972); Schiff, catalogue raisonné (1972/73, no. 757); Powell (1973); Kiessling, The Incubus in English Literature (1977); Chappell, Burlington Magazine (1986); Moffitt, Gazette des Beaux-Arts (1990); Hufford (1982); Klingender (1945; Harrowby versiyonu reproduksiyonu notu); Durlacher, Romanticism in Eighteenth Century England (1953); Donald (1996); Myrone (2001); Kunsthaus Zürih (1969; 2005–06); Tate, Gothic Nightmares (2006).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "WD Q2317837: P170 Q122382; P571 1781 (precision 9, yıl); P195 Q1201549 (DIA); P217 \"55.5.A\"; P186 Q296955 (yağlıboya) + Q12321255 (tuval); P2048 101 cm; P2049 127 cm; P2610 2.1 cm (DIA ref, 2019); P6216 Q19652 (public domain; P1001/P459 niteleyicili); P135/P2348 Q37068 (Romantizm); P18 \"John Henry Fuseli - The Nightmare.JPG\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Kompozisyon (kaynak betimi; görsel incelenmedi): derin uykuda kadın, yatağın ucuna serilmiş, başı sarkık, uzun boynu açık, kolları aşağıda; göğsünde şeytani/maymunsu incubus izleyiciye bakar; kırmızı perde aralığından gözbebekleri çizilmemiş at başı (\"night-mare\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "İç mekân/ışık (kaynak betimi): dönemin moda iç mekânı; küçük masada ayna, şişe (phial), kitap; yatağın arkasına dökülen kırmızı kadife perdeler; kiyaroskuro (chiaroscuro); kadının parlak renkleri koyu kırmızı/sarı/okra fona karşı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "1782 RA sergisi (yıl ayrıca A: C006) → geniş şöhret; Fuseli'nin ilk ticari başarısı; eleştirmenler \"horrified fascination\"; önceki RA denemeleri başarısız; dönem yazar/eleştirmenleri skandal sayılan erotik temalara odaklandı (Stewart 2002, atfen).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Orijinal 20 guineaya satıldı; Thomas Burke gravürü Ocak 1783'ten itibaren yaygın dolaştı; yayımcı John Raphael Smith 500+ pound kazandı (Knowles 1831, atfen).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Versiyonlar: \"en az üç\" başka versiyon (hedge; kesin sayı değil); en önemlisi c. 1790–91 Frankfurt Goethe Museum: daha küçük, baş solda, ayna sağda, iblis kadına bakar, sivri kedi kulakları; diğer iki versiyonda masada bir çift heykelciği (Murray 2004, atfen).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Parodi/uyarlama: Rowlandson (The Covent Garden Night Mare 1784, Fox), Cruikshank; Pitt, Napoleon, Louis XVIII; Nelson iblis / Emma Hamilton uyuyan; Tomory (1972): hedef Fuseli değil karikatür konusu; Abildgaard 1800 (Sorø Art Museum); Blunck 1846 (Nivaagaard Museum).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Mary Shelley, Frankenstein (1818): Elizabeth'in ölüm sahnesi imgeleri resimden beslenmiş olabilir (Ward 2000, atfen); ebeveynler Wollstonecraft/Godwin Fuseli'yi tanıyordu; evliliği engelleme teması paralel.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Poe, The Fall of the House of Usher (1839): olası çağrışım; \"incubus of utterly causeless alarm\"; Fuseli sözü: \"one of the most unexplored regions of art are dreams\" (Shackelford 1986, atfen).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Psikanalitik alımlama: Eastman 1926'da Freud'un dairesinde baskıyı Rembrandt Anatomi Dersi yanında gördü; Jones, On the Nightmare (1931) frontispiece; Jung, Man and His Symbols (1964); Freud ve Jones rüya yazılarında resmi anmadı (Packer 2002, atfen).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Etimoloji/folklor: nightmare < mara (İskandinav; uyuyanları ezen/boğan ruh); Albtraum \"elf rüyası\"; erken anlam: göğüste ağırlık + uyku felci + nefes darlığı + dehşet (Stewart 2002); Cermen iblis/cadı anlatıları; hag-riding/mare-riding; incubus geleneği.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Kaynak önerileri (aktarılan atıflar): poz → Vatikan Uyuyan Ariadne (Powell); incubus → Selinunte terrakotta; kadın → Giulio Romano, Hecuba'nın Rüyası (Chappell 1986); at → Baldung tahta baskısı / Quirinal At Terbiyecileri; ön tebeşir eskizinde at yok → sonradan ekleme hipotezi; at = \"nightmare\" görsel kelime oyunu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Kariyer: atanmış din adamı (ordained minister); uyku/rüya sık konu; Nightmare edebî/dinî kaynaksız tek istisna; ilk bilinen resim Joseph Interpreting the Dreams (1768); sonraki rüya işleri (Tate Shepherd's Dream; V&A Richard III); 1782 sergisi Shakespeare temalı işler + Boydell Shakespeare Gallery 8 resim siparişi; bir versiyon Joseph Johnson'ın evinde (haftalık yemekler).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Landholdt biyografisi: Zürih'te Anna Landholdt (Lavater'in yeğeni); 1779 Lavater mektupları; baba evliliği onaylamadı; Landholdt bir aile dostuyla evlendi; tuvalin arkasında bitmemiş kız portresi (Landholdt olabilir → C027).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Kamu malı: Fuseli ö. 1825 (DIA, A); WD P6216 = public domain (Q19652); ölüm+70 çok aşılmış. Brief A işaretledi; hiyerarşi gereği WD yardımcı → B olarak kaydedildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Psikanalitik \"bilinçdışını önceler\" okuması: anakronik ödünç çerçeve (kuram 1781'den çok sonra); Freud/Jones'un rüya yazılarında anmaması (C019) doğrudan bağ iddiasını zayıflatır; Freud dairesindeki kopya alımlama olgusudur, kuramsal etki kanıtı değil.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C026",
+   "ifade": "Erotik okuma tartışması: Allentuck 1972 \"Eroticism or Pornography?\" (başlık DIA'da A, C009); süblimasyon/libido sembolü okumaları (Palumbo/Chu, atfen); dönem eleştirmenlerinin erotik tema odağı (C013, B). Ders açık cinsel ayrıntı üretmez; tartışma yorum statüsünde kayıtlı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K2",
+    "K1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C027",
+   "ifade": "Janson kimliklendirmesi: uyuyan kadın = Anna Landholdt, iblis = Fuseli; verso portresi Landholdt olabilir — biyografik hipotez, olgu değil.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C028",
+   "ifade": "Estetik/felsefi yorumlar: \"evcilleştirilmiş yüce\" (Burke ödünç çerçeve; etki iddiası yok); Aydınlanma aklının gölge yüzü / Romantik öncülük; Ellis (2000) çift okuma (rüyanın imgeleri ↔ bir rüya imgesi); folklorik uyku felci sahnelemesi; moda iç mekân ↔ tekinsizlik paradoksu; versiyon bakış yönü okuması.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "Boyut ihtilafı: DIA 101.6 × 126.7 ↔ enwiki 101.6 × 127 ↔ WD P2048 101 / P2049 127 (yuvarlama; birincil esas).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C030",
+   "ifade": "Data uyuşmazlığı: data/basyapitlar.json \"yaklaşık 1781–1782\" + \"The Nightmare (iki versiyon)\" + iki müze (DIA; Freies Deutsches Hochstift, Frankfurt) ↔ DIA 1781 tek versiyon Detroit; Frankfurt c. 1790–91 ayrı versiyon (enwiki). Data değiştirilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C031",
+   "ifade": "Görsel bu oturumda İNCELENEMEDİ (vision kotası); kompozisyon kaynak metninden; incelenen_bolgeler=[]; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C032",
+   "ifade": "DIA canlı 403 (Cloudflare); birincil Wayback 2018-10-20 (20181020201319) arşivinden açıldı; eski object-info URL Wayback 404; güncel kayıt farklı olabilir.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C033",
+   "ifade": "Atıf zinciri metinleri erişilmedi (Knowles 1831, Ward 2000, Stewart 2002, Moffitt, Chappell 1986, Allentuck 1972, Schiff, Powell 1973, Packer 2002, Murray 2004, Tomory 1972, Kiessling 1977, Hufford 1982, Donald 1996, Myrone 2001); \"kaynakçada anıldı, metnine erişilmedi\"; teknik/konservasyon raporu yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Detroit Institute of Arts",
+   "belge": "The Nightmare koleksiyon kaydı (kanonik: dia.org/art/collection/object/nightmare-45573)",
+   "url": "https://web.archive.org/web/20181020201319/https://www.dia.org/art/collection/object/nightmare-45573",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "canlı 403 (Cloudflare); Wayback arşiv 200 (2018-10-20); cache Q2317837-primary.txt / Q2317837-dia-wb2.html",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Nightmare (wikitext; satır içi akademik atıflar)",
+   "url": "https://en.wikipedia.org/wiki/The_Nightmare",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext); cache Q2317837-enwiki.txt",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "Q2317837 EntityData",
+   "url": "https://www.wikidata.org/wiki/Q2317837",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData); cache Q2317837-wd.json",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Incubo (Füssli) — WD sitelink",
+   "url": "https://it.wikipedia.org/wiki/Incubo_(F%C3%BCssli)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "erişilmedi (yalnız sitelink; B adayı); hiçbir iddia buna dayanmaz",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikimedia Commons",
+   "belge": "John Henry Fuseli - The Nightmare.JPG (WD P18); enwiki infobox: Johann Heinrich Füssli - The Nightmare 55.5.A-d1-2019-04-15.jpg (DIA 2019 fotoğrafı)",
+   "url": "https://commons.wikimedia.org/wiki/File:John_Henry_Fuseli_-_The_Nightmare.JPG",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "metadata (WD P18/P6216 + brief); sayfa açılmadı; İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K6",
+   "kurum": "Sanat Atlası (uygulama verisi)",
+   "belge": "data/basyapitlar.json Q2317837 girdisi + data/sanatcilar.json henry-fuseli",
+   "url": "data/basyapitlar.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel dosya; salt-okunur (değiştirilmedi)",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "The Nightmare (Frankfurt versiyonu, c. 1790–91)",
+   "sanatci": "Henry Fuseli",
+   "kurum": "Goethe Museum, Frankfurt",
+   "mufredat_ici": false,
+   "gerekce": "Aynı kompozisyonun varyantı: baş solda, ayna sağda, iblis kadına bakar; versiyon karşılaştırma yöntemi.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "eser": "The Covent Garden Night Mare (1784)",
+   "sanatci": "Thomas Rowlandson",
+   "mufredat_ici": false,
+   "gerekce": "Politik hiciv parodisi (Charles James Fox); imgenin kamusal tanınırlığının kanıtı.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "eser": "Frankenstein (1818)",
+   "sanatci": "Mary Shelley",
+   "mufredat_ici": false,
+   "gerekce": "Edebî alımlama: Elizabeth'in ölüm sahnesi imgeleri resimle paralel (Ward 2000, atfen); disiplinlerarası karşılaştırma.",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Ham cache (DIA Wayback 2018-10-20, enwiki wikitext, WD EntityData) brief'ten bağımsız yeniden okundu: künye/provenance/RA 1782 no. 64/Freud 1920'ler doğrulandı; WD boyut 101×127 düzeltmesi ve RA A-yükseltmesi işlendi; canlı yeniden erişim bu oturumda yapılamadı (DIA canlı 403 zaten kayıtlı) — insan editör teyidi bekler.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data/basyapitlar.json Q2317837: tarih \"yaklaşık 1781–1782\", özgün \"The Nightmare (iki versiyon)\", müze \"DIA; Freies Deutsches Hochstift, Frankfurt\" ↔ DIA birincil 1781 tek Detroit versiyonu; Frankfurt c. 1790–91 ayrı varyant (C030, D). Data DEĞİŞTİRİLMEZ; insan onayına sunulur.",
+  "Boyut: DIA 101,6×126,7 ↔ enwiki 101,6×127 ↔ WD P2048 101 / P2049 127 (C029, D); birincil esas. Brief WD'yi 101,6×127 yazmıştı; ham cache 101×127 gösterir (düzeltildi).",
+  "Lisans: data/sanatcilar.json kurs_eserleri \"CC BY 2.5\" ↔ WD P6216 public domain (C024, B); Commons dosya adı da farklı (data: Henry_Fuseli_(1741–1825),_The_Nightmare,_1781.jpg ↔ WD P18: John Henry Fuseli - The Nightmare.JPG). İnsan kontrolü gerekli.",
+  "DIA canlı 403; birincil Wayback 2018-10-20 arşivinden açıldı; güncel kayıt (konum/boyut/yorum) farklı olabilir (C032, E). İnsan editör teyidi.",
+  "Görsel İNCELENEMEDİ (C031, E); GZ TASLAK; data \"bak\" hotspot'ları bu derste kanıt olarak kullanılmadı. Görsel teyit zorunlu.",
+  "Brief RA 1782'yi B işlemişti; DIA Published References \"no. 64\" ile A'ya yükseltildi (C006). Brief lisansı A işaretledi; hiyerarşi gereği B kaydedildi (C024).",
+  "Atıf zinciri metinleri (Knowles, Ward, Stewart, Schiff, Allentuck vb.) erişilmedi (C033, E); yalnız bibliyografya olguları A (C009)."
+ ]
+}

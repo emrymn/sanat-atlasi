@@ -1,0 +1,565 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2317837",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "The Nightmare (1781) birincil kayda göre hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Detroit Institute of Arts (DIA)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tate Britain, Londra"
+    },
+    {
+     "harf": "C",
+     "metin": "Goethe Museum, Frankfurt"
+    },
+    {
+     "harf": "D",
+     "metin": "Kunsthaus, Zürih"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1 (DIA, Wayback 2018): eser DIA koleksiyonunda, 55.5.A envanteriyle kayıtlıdır.",
+   "yanlis_gerekceleri": {
+    "B": "Tate Britain 2006 Gothic Nightmares sergisine ev sahipliği yaptı; 1781 tarihli eser orada değildir (C009).",
+    "C": "Goethe Museum c. 1790–91 tarihli varyantı barındırır; 1781 orijinali değil (C015).",
+    "D": "Kunsthaus Zürih 1969 ve 2005–06 Fuseli sergileriyle anılır; eser orada değildir (C009)."
+   },
+   "kanit": [
+    "C001",
+    "C003",
+    "C015",
+    "C009"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin DIA envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "55.5.A"
+    },
+    {
+     "harf": "B",
+     "metin": "757"
+    },
+    {
+     "harf": "C",
+     "metin": "64"
+    },
+    {
+     "harf": "D",
+     "metin": "15"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Accession Number 55.5.A.",
+   "yanlis_gerekceleri": {
+    "B": "757, Schiff catalogue raisonné'deki (1973) eser numarasıdır; müze envanteri değil (C009).",
+    "C": "64, 1782 Royal Academy sergisi katalog numarasıdır (C006).",
+    "D": "15, 1879 Royal Academy sergisi numarasıdır (C006)."
+   },
+   "kanit": [
+    "C003",
+    "C006",
+    "C009"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "DIA kaydına göre eserin tarihi ve tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1781, yağlıboya tuval (oil on canvas)"
+    },
+    {
+     "harf": "B",
+     "metin": "1782, fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "c. 1790–91, yağlıboya pano"
+    },
+    {
+     "harf": "D",
+     "metin": "1768, suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Date 1781; Medium oil on canvas.",
+   "yanlis_gerekceleri": {
+    "B": "1782 ilk sergi yılıdır, üretim yılı değil; teknik fresk değildir (C006, C001).",
+    "C": "c. 1790–91 Frankfurt varyantının tarihidir; destek pano değil tuvaldir (C015, C001).",
+    "D": "1768, Fuseli'nin bilinen ilk resminin (Joseph) tarihidir; bu eserin değil (C022)."
+   },
+   "kanit": [
+    "C001",
+    "C006",
+    "C015",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Kaynak betiminde uyuyan kadının göğsüne çömelmiş şeytani/maymunsu figürün folklorik adı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Incubus"
+    },
+    {
+     "harf": "B",
+     "metin": "Mare (at başı)"
+    },
+    {
+     "harf": "C",
+     "metin": "Sfenks"
+    },
+    {
+     "harf": "D",
+     "metin": "Harpi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: göğüste şeytani, maymunsu bir incubus çömelir; incubus, uyuyanları ziyaret eden erkek iblis geleneğidir (C020).",
+   "yanlis_gerekceleri": {
+    "B": "Mare, perdeden beliren at başına verilen addır; göğüsteki figür değil (C011, C021).",
+    "C": "Sfenks, eserin kaynak betiminde yer almaz; betim incubus figürünü adlandırır.",
+    "D": "Harpi, eserin kaynak betiminde yer almaz; betim incubus figürünü adlandırır."
+   },
+   "kanit": [
+    "C011",
+    "C020"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eser ilk hangi sergide, hangi yıl gösterildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Royal Academy, Londra, 1782"
+    },
+    {
+     "harf": "B",
+     "metin": "Paris Salonu, 1781"
+    },
+    {
+     "harf": "C",
+     "metin": "Royal Academy, 1879"
+    },
+    {
+     "harf": "D",
+     "metin": "Tate Britain, 2006"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1 Published References: Royal Academy, London 1782, no. 64; K2: ilk sergi ve şöhret.",
+   "yanlis_gerekceleri": {
+    "B": "Paris Salonu kaydı kaynaklarda yoktur; ilk sergi Londra'dadır (C006, C013).",
+    "C": "1879 Royal Academy sergisi sonraki bir gösterimdir; Haskett Smith ödünç verisi (C006).",
+    "D": "Tate Britain 2006, Gothic Nightmares sergisidir; iki yüzyıldan fazla sonra (C009)."
+   },
+   "kanit": [
+    "C006",
+    "C013",
+    "C009"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Ocak 1783'ten itibaren yaygınlaşan ve yayımcısına 500 poundun üzerinde kazanç sağlayan gravürü kim yaptı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Thomas Burke"
+    },
+    {
+     "harf": "B",
+     "metin": "George Cruikshank"
+    },
+    {
+     "harf": "C",
+     "metin": "Thomas Rowlandson"
+    },
+    {
+     "harf": "D",
+     "metin": "William Blake"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2 (Knowles 1831, atfen): Thomas Burke gravürü; yayımcı John Raphael Smith.",
+   "yanlis_gerekceleri": {
+    "B": "Cruikshank, imgenin politik parodilerini üreten karikatüristlerdendir (C016).",
+    "C": "Rowlandson, 1784 Fox parodisinin (The Covent Garden Night Mare) sahibidir (C016).",
+    "D": "Blake, Tate 2006 sergi başlığında anılır; bu gravürün yapımcısı değildir (C009)."
+   },
+   "kanit": [
+    "C014",
+    "C016",
+    "C009"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "c. 1790–91 tarihli en önemli varyant hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Goethe Museum, Frankfurt"
+    },
+    {
+     "harf": "B",
+     "metin": "Detroit Institute of Arts"
+    },
+    {
+     "harf": "C",
+     "metin": "Sorø Art Museum"
+    },
+    {
+     "harf": "D",
+     "metin": "Nivaagaard Museum"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2 (Murray 2004, atfen): en önemli versiyon c. 1790–91, Frankfurt Goethe Museum.",
+   "yanlis_gerekceleri": {
+    "B": "DIA, 1781 orijinalini barındırır (55.5.A) (C001, C003).",
+    "C": "Sorø, Abildgaard'ın 1800 tarihli uyarlamasını barındırır (C016).",
+    "D": "Nivaagaard, Blunck'ın 1846 tarihli versiyonunu barındırır (C016)."
+   },
+   "kanit": [
+    "C015",
+    "C001",
+    "C016"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Hangi 1818 tarihli Gotik romanın eserin imgelerinden etkilendiği düşünülür (Ward 2000, atfen)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Frankenstein (Mary Shelley)"
+    },
+    {
+     "harf": "B",
+     "metin": "The Castle of Otranto"
+    },
+    {
+     "harf": "C",
+     "metin": "Dracula"
+    },
+    {
+     "harf": "D",
+     "metin": "Melmoth the Wanderer"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Shelley'in Frankenstein'ında (1818) Elizabeth'in ölüm sahnesi imgeleri tuvali yankılar; ebeveynleri Fuseli'yi tanıyordu.",
+   "yanlis_gerekceleri": {
+    "B": "The Castle of Otranto, kaynaklarda bu resimden etkilenen bir eser olarak anılmaz.",
+    "C": "Dracula, kaynaklarda bu resimle ilişkilendirilmez.",
+    "D": "Melmoth the Wanderer, kaynaklarda bu resimle ilişkilendirilmez."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Perdeden beliren at başı, kaynaklara göre neye göndermedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Nightmare\" sözcüğündeki \"mare\" (kısrak) ile görsel kelime oyunu"
+    },
+    {
+     "harf": "B",
+     "metin": "Bir yarış atı portresi"
+    },
+    {
+     "harf": "C",
+     "metin": "Atlı bir aziz figürü"
+    },
+    {
+     "harf": "D",
+     "metin": "Mitolojik Pegasus"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: at, \"nightmare\" sözcüğü üzerine görsel bir kelime oyunu ve folklorik \"night-mare\" göndermesidir.",
+   "yanlis_gerekceleri": {
+    "B": "Kaynak betimi at başını folklorik/kelime oyunlu bir imge olarak verir; yarış atı portresi değil (C011, C021).",
+    "C": "Atlı aziz figürü, eserin kaynak betiminde yer almaz.",
+    "D": "Pegasus, eserin kaynak betiminde anılmaz."
+   },
+   "kanit": [
+    "C021",
+    "C011"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "DIA kaydına göre gravürün bir kopyası 1920'lerde kimin Viyana dairesinde asılıydı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sigmund Freud"
+    },
+    {
+     "harf": "B",
+     "metin": "Carl Gustav Jung"
+    },
+    {
+     "harf": "C",
+     "metin": "Ernest Jones"
+    },
+    {
+     "harf": "D",
+     "metin": "Max Eastman"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1 (DIA): bir kopya 1920'lerde Freud'un Viyana dairesinde asılıydı.",
+   "yanlis_gerekceleri": {
+    "B": "Jung, eseri 1964'te Man and His Symbols'a aldı; daire bilgisi Freud'a aittir (C019).",
+    "C": "Jones, bir versiyonu 1931'de On the Nightmare'a frontispiece yaptı (C019).",
+    "D": "Eastman, 1926'da Freud'u ziyaret edip baskıyı gören Amerikalı yazardır (C019)."
+   },
+   "kanit": [
+    "C008",
+    "C019"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser, Detroit Institute of Arts'ta 55.5.A envanter numarasıyla kayıtlıdır.",
+   "dogru": true,
+   "aciklama": "Doğru: DIA birincil kaydı (K1; Wayback 2018-10-20).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eserin boyutları tüm kaynaklarda birebir aynıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: DIA 101,6×126,7 cm; enwiki 101,6×127; WD 101×127 verir — yuvarlama ihtilafı (C029, D).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser, 1782'de Londra Royal Academy sergisinde gösterildi (katalog no. 64).",
+   "dogru": true,
+   "aciklama": "Doğru: DIA Published References (K1); enwiki ile uyumlu.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "The Nightmare, enwiki'ye göre Fuseli'nin ilk ticari başarısıdır.",
+   "dogru": true,
+   "aciklama": "Doğru: K2 (Knowles 1831, atfen); 1782 sergisi dönüm noktası.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Fuseli, eserin tam olarak üç başka versiyonunu üretmiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış: kaynaklar \"en az üç\" der; bu bir alt sınırdır, kesin sayı değil (C015, hedge).",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Boyut uyuşmazlığını üç yönlü analiz edin (DIA ↔ enwiki ↔ WD): hangi kaynak esas alınmalı, neden?",
+   "beklenen_ogeler": [
+    "DIA 101,6×126,7",
+    "enwiki 127",
+    "WD 101×127",
+    "yuvarlama çıkarımı",
+    "birincil esas"
+   ],
+   "kanit": [
+    "C002",
+    "C029",
+    "C010"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "\"Resim psikanalizi önceledi\" okumasını anakronizm açısından eleştirin; Freud/Jones'un rüya yazılarında resmi anmaması olgusunu kullanın.",
+   "beklenen_ogeler": [
+    "ödünç çerçeve",
+    "kuramın sonra doğuşu",
+    "Freud/Jones anmıyor",
+    "dairedeki kopya alımlama olgusu"
+   ],
+   "kanit": [
+    "C025",
+    "C019",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Politik hiciv parodilerini değerlendirin: Tomory'ye göre hedef Fuseli mi, karikatürize edilen kişi mi? Parodi neyin kanıtıdır?",
+   "beklenen_ogeler": [
+    "Rowlandson/Cruikshank",
+    "Fox/Pitt/Napoleon",
+    "hedef konu",
+    "tanınırlık kanıtı"
+   ],
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Provenance zincirini Boothby'den Detroit'e kuşku işaretlerini koruyarak yeniden kurun; 1879 sergisi ve 1896 müzayedesi erken tarihe ne katar?",
+   "beklenen_ogeler": [
+    "until ca. 1845",
+    "by 1879 Haskett Smith",
+    "1896 Christie's lot 78",
+    "Harrowby",
+    "1955 DIA"
+   ],
+   "kanit": [
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Görsel incelenmedi: insan editör için görsel doğrulama protokolü tasarlayın; hangi iddialar görsel teyit ister?",
+   "beklenen_ogeler": [
+    "kompozisyon (kadın/incubus/at)",
+    "ışık ve iç mekân",
+    "verso portre",
+    "GZ TASLAK",
+    "versiyon karşılaştırma riski (Klingender)"
+   ],
+   "kanit": [
+    "C031",
+    "C011",
+    "C012",
+    "C023",
+    "C009"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Uyuyan kadının sarkık başını ve aşağı düşen kollarını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: yatağın ucuna serilmiş beden, baş aşağı sarkar, uzun boyun açığa çıkar.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kadının göğsüne çömelmiş incubus'u ve izleyiciye yönelen bakışını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: şeytani/maymunsu figür; bakış izleyiciye dönük.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Kırmızı perdenin aralığından beliren at başını bulun; gözlerini inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: gözbebekleri çizilmemiş at başı (\"night-mare\").",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Küçük masadaki nesneleri (ayna, şişe, kitap) ve kırmızı kadife perdeleri inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: moda iç mekân; perdeler yatağın arkasına dökülür.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Kadının figürüne düşen ışık ile karanlık fonu karşılaştırın (kiyaroskuro).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: parlak renkler, koyu kırmızı/sarı/okra fona karşı.",
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "The Nightmare künyesi?",
+   "arka": "Henry Fuseli (1741–1825); 1781; oil on canvas; 101,6×126,7 cm (DIA); Detroit Institute of Arts, 55.5.A; 1955 Founders Society Purchase (Smokler + Fleischman fonları).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + folklor?",
+   "arka": "Uyuyan kadın; göğsünde incubus; perdeden at başı (\"night-mare\"); mara etimolojisi; uyku felci deneyimi.",
+   "kanit": [
+    "C011",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "İlk sergi + ticari başarı?",
+   "arka": "Royal Academy 1782 (no. 64); ilk ticari başarı; orijinal 20 guinea; Burke gravürü Ocak 1783; J. R. Smith 500+ pound.",
+   "kanit": [
+    "C006",
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Versiyonlar + parodi?",
+   "arka": "En az üç başka versiyon (alt sınır); en önemlisi Frankfurt c. 1790–91; Rowlandson/Cruikshank politik parodi; Tomory: hedef konu, Fuseli değil.",
+   "kanit": [
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Alımlama (edebiyat + psikanaliz)?",
+   "arka": "Shelley Frankenstein 1818 (Ward); Poe Usher 1839; Freud dairesinde kopya 1920'ler (DIA); Jones 1931 frontispiece; Jung 1964; Freud/Jones rüya yazılarında anmadı.",
+   "kanit": [
+    "C017",
+    "C018",
+    "C008",
+    "C019"
+   ]
+  }
+ ]
+}

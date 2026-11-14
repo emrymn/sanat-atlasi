@@ -1,0 +1,814 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3212142",
+ "sanatci_id": "jean-baptiste-simeon-chardin",
+ "baslik": "Vatoz",
+ "ozgun_baslik": "La Raie (The Ray)",
+ "kunye": {
+  "sanatci": "Jean-Baptiste-Siméon Chardin",
+  "sanatci_yasam": "1699–1779 (Paris)",
+  "tarih": "1728 (Louvre güncel); Joconde \"1727 vers\"; 2014 cartel \"Vers 1725 - 1726\"",
+  "tarih_belirsizlik": "D001/C027: üç küme tarih; vers/circa/avant aynen korundu; WD preferred 1727, normal circa 1725–1726; data 1727",
+  "teknik": "Tuval üzerine yağlı boya (huile sur toile)",
+  "boyut_cm": {
+   "yukseklik": 114.5,
+   "genislik": 146
+  },
+  "muze": "Musée du Louvre, Département des Peintures, Paris",
+  "envanter": "INV 3197 (principal); MR 1323 (autre)",
+  "edinim": "Académie royale kabul parçası (1728); Devrim'de saisie; Louvre'da Haziran 1796'dan beri sergileniyor (2014 notice: 1793 giriş; Joconde: 1851 maddi kayıt)",
+  "konum": "Sully, 2. kat, Salle 919 \"Les peintres de Louis XV\" (site uyarısı: konum güncel olmayabilir)",
+  "telif_durumu": "Kamu malı (yazar ölümü 1779); Commons fotoğrafı PD-old-auto-expired + CC0; Louvre/RMN fotoğrafları © kısıtlı"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/La_Raie_-_Jean_Baptiste_Sim%C3%A9on_Chardin_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3197.jpg",
+  "kaynak": "Wikimedia Commons (photo Shonagon 2022-06-21)",
+  "lisans": "Public domain (PD-old-auto-expired, deathyear=1779; fotoğraf CC0)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (imageinfo + dosya sayfası); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda); Denetim B'de yeniden çekildi",
+   "cozunurluk": "3565×2782 px; 3.496.414 bayt JPEG",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C043); GZ TASLAK; kompozisyon S4/S7 (A) + S5/S6 (B) metninden; Louvre/RMN görselleri © kısıtlı (PD değil); Commons DateTimeOriginal 1727 (D001 notu)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 414
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1450
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2861
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-çelişkisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-kilometre-taşları"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-kabul-parçası-ve-kurum-tarihi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-geometri-ve-mortified"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-yüz-bakış-canlı-cansız"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-dokunsal-boya"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Louvre + Joconde birincil kayıtlarıyla künyeyi (INV 3197, huile sur toile, 114,5×146, Sully Salle 919) doğrular.",
+  "Tarih ihtilafını (1728 / \"1727 vers\" / \"Vers 1725-1726\") \"vers/circa\" ifadelerini koruyarak yönetir; tek yıl dayatmaz.",
+  "Kompozisyonu (piramidal, elmas/grid, \"mortified geometry\") ve Joconde konu listesini kaynak betimleriyle analiz eder.",
+  "Kabul parçası bağlamını ve alımlama zincirini (Diderot–Proust–Matisse) atıf zinciriyle izler.",
+  "Yorumu (cinsiyetli okuma, frwiki atıfsız betim) olgudan ayırır; görsel doğrulama sınırını ve data uyuşmazlıklarını beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Morceau de réception",
+   "tanim": "Académie royale'a kabul için sunulan eser; lonca chef-d'œuvre'ünün akademi karşılığı; akademi binasında saklanırdı.",
+   "kanit": [
+    "C010",
+    "C033"
+   ]
+  },
+  {
+   "ad": "Natürmort (nature morte)",
+   "tanim": "Cansız nesneleri konu alan resim türü; Joconde konu listesi (raie, chat, poireau …).",
+   "kanit": [
+    "C009",
+    "C014"
+   ]
+  },
+  {
+   "ad": "Exposition de la Jeunesse",
+   "tanim": "Place Dauphine × Pont Neuf köşesinde, Fête-Dieu günü birkaç saat süren ücretsiz açık hava sergisi; yağmurda octave'a ertelenir.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "ad": "Rentoilage",
+   "tanim": "Tuvalin yeni bir destek tuvaline astarlanması; 1952 Maison Lepage müdahalesi.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "\"Mortified geometry\"",
+   "tanim": "Cottom'un terimi: elmas/grid gibi geleneksel biçimlerin vatozun ağzının makaber açıklığıyla bozulması.",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eserin adı \"La Raie\"; diğer başlık \"Intérieur de cuisine\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı Jean-Baptiste-Siméon Chardin (Paris 1699 – Paris 1779), Fransız okulu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Louvre güncel kaydı tarihi \"2e quart du XVIIIe siècle (1728)\" olarak verir (→ C027 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: tuval üzerine yağlı boya (\"huile sur toile\"; Joconde \"peinture à l'huile ; toile\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut: 114,5 × 146 cm; aksesuarlı 145,5 × 177,5 cm, kalınlık 10 cm (→ C028 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Envanter: INV 3197 (ana), MR 1323 (diğer).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Eser Louvre Département des Peintures'te; mülkiyet devlete ait (\"Etat\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Güncel konum: Sully, 2. kat, Salle 919 \"Les peintres de Louis XV\"; \"Actuellement visible au Louvre\" (E001/C042 uyarısı; → C030 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Tür: natürmort (\"nature morte\"); WD P136 = Q170571 (still life).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Chardin'in Académie royale'a kabul parçası (morceau de réception), 1728; pendant Le Buffet (2014 notice); akademi koleksiyonuna girdi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "İlk sergileme: 3 Haziran 1728, Exposition de la Jeunesse (Place Dauphine × Pont Neuf, birkaç saatlik ücretsiz açık hava sergisi); Joconde \"place Dauphine, Paris, 1728\" (kısmi A); frwiki: Fête-Dieu, yağmurda octave (→ C037 E).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Köken: Académie koleksiyonunda Devrim'e kadar kaldı; Devrim'de el kondu (saisie révolutionnaire); Haziran 1796'dan itibaren Louvre'da sergilendi (→ C029 D).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Restorasyon: 1798 Edme André Michau; 1952 Maison Lepage (rentoilage); 1953 Jean-Gabriel Goulinat.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Konu (Joconde): raie, chat, poireau, poisson, huître, marmite cuivre, bouteille, pot; 2014 Louvre: sağda sürahi/kazan (inert), solda tüyleri kabarmış kedi (tablo dışı sahneden korkmuş), \"raie écorchée\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Kompozisyon (atıflı): \"ambitious pyramidal structure\" (Rosenberg 1979 s.117); vatoz elmas/rombus, taş duvar dikdörtgen grid; \"mortified\" geometri (Cottom 1999 s.3,14); \"inside/out\" derinlik + tehlikeli dengede kap kulpları (Lajer-Burcharth 2022 s.95).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Vatozun solungaç/ağız düzeni insan yüzünü andırır; \"a face caught in the tragic rictus of a grin\" (Cottom 1999 s.5); solungaçlar öne dönük \"gözler\" (Lajer-Burcharth 2022 s.99).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "2014 Louvre (Pomarède): Rembrandt \"Le Boeuf écorché\" ile karşılaştırılır; \"digne des plus beaux modèles flamands (Snyders, Fyt)\"; \"a étonné tous les peintres - jusqu'à Matisse\"; \"fausse nature morte\"; Cohen 2004 (s.46–48) Hollanda etkisi (B zinciri).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Diderot (Salon de 1763): \"L'objet est dégoûtant, mais c'est la chair même du poisson, c'est sa peau, c'est son sang\"; \"couches épaisses de couleurs\"; \"On n'entend rien à cette magie\"; yaklaş/uzaklaş; Greuze iç çekişi; \"sauver par le talent le dégoût\"; Pascal Pensées (Lafuma 40 / Brunschvicg 134).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Proust: vatoz \"comme la nef d'une cathédrale polychrome\"; \"architecture délicate et vaste, teintée de sang rouge, de nerfs bleus et de muscles blancs\"; metin \"vers 1895\" yazıldı, ilk kez 1954'te yayımlandı (éd. 1971, s.375–376); 2014 Louvre de alıntılar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Matisse: \"C'est l'œuvre de Chardin que j'y étudie le plus … pour étudier sa technique\" (Écrits et propos sur l'art, Paris, 1972 — atıflı); 2014 Louvre \"jusqu'à Matisse\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Teknik: kalın katmanlı boya (Diderot); Lajer-Burcharth parmak ucuyla dokunsal uygulama, \"sticky chewiness\" (s.99); Mulligan 2020 (s.485) boyayı gerçekçi ete dönüştürme.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Lajer-Burcharth cinsiyetli okuması: \"violence\"/\"maternal kitchen\"/\"feminine sphere\"/\"eternal son\" gerilimi; açık yara kadın cinsel organı sunumu; cinsiyet rollerinin sorgulanması; \"far more complex\" zanaatkâr hanesi; 18. yy natürmort geleneklerini sorgulama (s.98–99,105–106).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C023",
+   "ifade": "Modern sergiler: Paris Grand Palais 1979 + 1999; New York Met 2000; Madrid Prado 2011 (gezici sergi etapları).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Bibliyografya (erişilen kaydın listesi; metinlere erişilmedi): Wildenstein 1933 ill.74 n°678; Compin/Reynaud 1972 s.67; Compin/Reynaud/Rosenberg 1974 s.68,262 n°122; Compin/Roquebert 1986 s.122; Roland-Michel 1994; Rosenberg/Temperini 1999 n°13; Rosenberg 1999 kat. n°2; Koenig 2011 n°120; Merle du Bourg 2020; Gaillard 2024 s.183,287; Dictionnaire restaurateurs 2020; Joconde \"WILDENSTEIN 46 ; C.P.I. 122\" (→ C036 E).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Telif: kamu malı (yazar ölümü 1779, >100 yıl pma); Commons fotoğrafı PD-old-auto-expired (deathyear=1779) + CC0; AttributionRequired false.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S8",
+    "S9"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C026",
+   "ifade": "data/ nesne ayrıntıları (E003): \"kevgir\", \"kepçe\", \"koyu yeşil sırlı testi\", \"ışık soldan geliyor\" erişilen kaynaklarda yok; görsel incelenmedi, doğrulanamadı. (\"pırasa\"/\"bakır tencere\" Joconde ile A, C014.)",
+   "seviye": "E",
+   "kaynak_id": [
+    "S16",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C027",
+   "ifade": "Tarih ihtilafı (D001): Louvre güncel \"2e quart du XVIIIe siècle (1728)\" ↔ Joconde \"1727 vers\" (kabul 1728) ↔ 2014 \"Vers 1725 - 1726\" ↔ WD preferred 1727 + normal \"circa\" 1725–1726 (P1480; base Atlas) ↔ enwiki 1728 / frwiki \"peint avant 1728\" + infobox 1728 ↔ Commons 1727 ↔ data 1727. vers/circa/avant aynen korundu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S16"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C028",
+   "ifade": "Yükseklik ihtilafı (D002/E005): 114,5 cm (Louvre \"1,145 m\"; Joconde \"114.5 H\"; WD P2048) ↔ 114 cm (en/fr infobox; 2014 \"H. : 1,14 m.\"); genişlik her kaynakta 146 cm.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C029",
+   "ifade": "Devrim/Louvre giriş kilometre taşları (D003): güncel \"exposé au Louvre dès juin 1796\" (WD P195 P580=1796) ↔ 2014 \"en 1793, au Muséum central des arts\" ↔ Joconde \"Date de dépôt 1851 Entrée matérielle\"; tek tarih dayatılmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C030",
+   "ifade": "Salon numarası (D004): güncel Salle 919 (WD P276 Q19019185, ref cartelfr 2016) ↔ 2014 \"Salle 38\"; ikisi de Sully, 2. kat, \"Les peintres de Louis XV\"; numaralama değişikliği olası; E001 uyarısı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S7"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C031",
+   "ifade": "data/ müze alanı (D005): basyapitlar + onbellek \"muze\": \"Académie royale de peinture et de sculpture\" ↔ güncel birincil Louvre; Académie tarihsel sahip (Louvre \"Propriétaire, 1728\"; Joconde \"Anciennes appartenances\"; WD P195 Q337579); data DEĞİŞTİRİLMEDİ.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S16",
+    "S2",
+    "S3",
+    "S4",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C032",
+   "ifade": "Notice güncelleme metadata'sı (D006): S2 HTML \"Dernière mise à jour le 14.10.2025\" ↔ S3 JSON \"modified : 2026-07-22\"; aynı erişimde iki farklı metadata; küçük iç tutarsızlık.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C033",
+   "ifade": "25 Eylül 1728 kabul (Rosenberg 1979 s.117): Chardin birkaç resim sundu; Vatoz + Le Buffet kabul parçası seçildi; aynı gün akademiye alındı (alışılmadık hızlı); Vatoz daha geleneksel Buffet ile eşleştirildi; frwiki: morceau de réception = lonca chef-d'œuvre karşılığı, akademi binasında saklanırdı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Ayrıntılı yerleşim (Rosenberg 1979 s.118): kanlı alt yüzüyle vatoz taş duvardaki kancaya asılı; sağda beyaz örtü üzerinde iki metal tava, seramik sürahi, şişe, bıçak; altta iki balık; solda açılmış istiridyeler + sırtı kamburlaşmış, tüyleri diken diken, korkmuş gibi kedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "frwiki atıfsız betim/sembolizm (E004 kısmı): dikey bölünme (solda canlı kedi/istiridye, sağda cansız sürahi/tencere); vatoz geçiş; iç içe piramitler; duvar köşesi ön planla çelişir; bıçak sapı resim alanından taşar; \"flash\" ritmi; \"peinture pour la peinture\", 19. yy sonu öncüsü (atıfsız).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "Wildenstein numaralama (E006): Joconde \"WILDENSTEIN 46\" ↔ Louvre \"1933, ill. 74, n°678\"; farklı baskı/numara olabilir; açıklanamadı; ikisi de aynen kaydedildi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C037",
+   "ifade": "Sergi günü nüansı (E007): enwiki \"on the day of Corpus Christi\" ↔ frwiki \"3 juin 1728, jour de la Petite Fête-Dieu\" (yağmurda erteleme → octave); sert çelişki değil; iki ifade de korundu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C038",
+   "ifade": "Akademik tam metinler erişilmedi (E008): Cohen 2004 (MUSE verify), Cottom 1999 (403), Mulligan 2020 (403); Rosenberg 1979 / Lajer-Burcharth 2022 / Denham 2010 kitapları; Diderot 1966 / Proust 1971 / Matisse 1972 / notice bibliyografyası; B iddiaları atıf zinciriyle; DOI/ISBN wikitext'ten aynen, uydurulmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S13",
+    "S14",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "data/ \"salon izleyicisini şaşırtmıştır\" (E009): eser Salon'da değil Exposition de la Jeunesse + Académie kabulü bağlamında öne çıktı; 2014 Louvre \"a étonné tous les peintres\" (ressamlar); \"Salon izleyicisi\" çerçevesi doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S16",
+    "S5",
+    "S6",
+    "S7",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "data/ yorum cümleleri (E010 + genişletme): \"Cézanne'a uzanan … öncülerinden\", \"Kedi motifi Flaman … geleneğinden gelir\" (2014 Louvre yalnız genel Snyders/Fyt anıyor), \"türler hiyerarşisinde en alt … natürmort\"; erişilen kaynaklarda doğrudan destek yok; frwiki sembolizm atıfsız.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S16",
+    "S6",
+    "S7"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "frwiki atıfsız alımlama (E004): Matisse'in 1896 kopyası Musée Matisse du Cateau-Cambrésis'te; Boudin ve Soutine pastişleri — satır içi ref yok; doğrulanmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "Louvre site uyarıları (E001, aynen): \"…les informations présentes sur les notices d'œuvres - notamment leur localisation en salle - sont susceptibles de ne pas être à jour.\" + \"Le contenu de cette notice ne reflète pas nécessairement le dernier état des connaissances.\" → salon/konum güncel olmayabilir.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); Commons metadata + lisans (3565×2782, PD-old-auto-expired + CC0, Shonagon 2022-06-21, DateTimeOriginal 1727); Louvre/RMN © kısıtlı (PD değil); GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S9",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q3212142 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3212142.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Musée du Louvre",
+   "belge": "Katalog notice HTML (cl010065938)",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010065938",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML",
+   "tur": "birincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Musée du Louvre",
+   "belge": "Notice JSON (sayfa içi permalink)",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010065938.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; modified 2026-07-22",
+   "tur": "birincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Ministère de la Culture / Joconde (POP)",
+   "belge": "POP notice 000PE000411 (güncelleme 21 mai 2025)",
+   "url": "https://pop.culture.gouv.fr/notice/joconde/000PE000411",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikipedia en",
+   "belge": "The Ray (Chardin) wikitext (API parse)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Ray%20(Chardin)&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikipedia fr",
+   "belge": "La Raie wikitext (API parse)",
+   "url": "https://fr.wikipedia.org/w/api.php?action=parse&page=La%20Raie&prop=wikitext&formatversion=2&redirects=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Musée du Louvre (arşiv)",
+   "belge": "2014 notice, Wayback (arşiv 2014-03-04; WD P973 ref; Pomarède metni + cartel)",
+   "url": "https://web.archive.org/web/20140304134539/http://www.louvre.fr/oeuvre-notices/la-raie",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2014-03-04); canlı 404",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (url/size/extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&titles=File:La%20Raie%20-%20Jean%20Baptiste%20Sim%C3%A9on%20Chardin%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%203197.jpg&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata; İNCELENMEDİ; Denetim B yeniden çekildi (Q3212142-commons-imageinfo.json)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dosya sayfası wikitext (lisans/credit)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=parse&page=File:La%20Raie%20-%20Jean%20Baptiste%20Sim%C3%A9on%20Chardin%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%203197.jpg&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (Q207447, Q3044768, Q337579, Q19019185, Q170571, Q3323788, Q7585771, Q809825, Q5727902)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q207447%7CQ3044768%7CQ337579%7CQ19019185%7CQ170571%7CQ3323788%7CQ7585771%7CQ809825%7CQ5727902",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 → backoff 200 → qid-labels-2.json",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S11",
+   "kurum": "Musée du Louvre (eski)",
+   "belge": "cartelfr notice idNotice=11531 (WD P276 ref)",
+   "url": "http://cartelfr.louvre.fr/cartelfr/visite?srv=car_not_frame&idNotice=11531",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 → S2'ye yönlendirme",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Musée du Louvre (eski)",
+   "belge": "louvre.fr oeuvre-notices (WD P973)",
+   "url": "http://www.louvre.fr/oeuvre-notices/la-raie",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404 (ölü) → S7 kullanıldı",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Project MUSE",
+   "belge": "Cohen 2004 DOI çözümleme (yalnız HTTP)",
+   "url": "https://doi.org/10.1353/ecs.2004.0054",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 → muse.jhu.edu/verify (doğrulama duvarı); tam metin yok",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Duke University Press",
+   "belge": "Cottom 1999 DOI çözümleme",
+   "url": "https://doi.org/10.1215/10407391-11-2-1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (read.dukeupress.edu); tam metin yok",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Oxford University Press",
+   "belge": "Mulligan 2020 DOI çözümleme",
+   "url": "https://doi.org/10.1093/notesj/gjaa141",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 (academic.oup.com); tam metin yok",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "Sanat Atlası (proje)",
+   "belge": "data/ (basyapitlar, eser_ayrintilari, eser_adlari_tr, eser_konulari, eser_notlari, eser_zorluk, eserler_onbellek)",
+   "url": "yerel: data/ (salt-okunur)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel, salt-okunur; DEĞİŞTİRİLMEDİ",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Le Buffet",
+   "sanatci": "Jean-Baptiste-Siméon Chardin",
+   "kurum": "Musée du Louvre",
+   "mufredat_ici": false,
+   "gerekce": "Pendant; 1728'te birlikte kabul parçası seçildi; Rosenberg Buffet'yi yapısal olarak daha geleneksel, Vatoz'u daha cüretkâr olarak aktarır.",
+   "kanit": [
+    "C010",
+    "C033"
+   ]
+  },
+  {
+   "eser": "Le Boeuf écorché (Slaughtered Ox)",
+   "sanatci": "Rembrandt",
+   "mufredat_ici": false,
+   "gerekce": "2014 Louvre notice'i Vatoz'u bu tabloyla karşılaştırır (asılı, karnı yarılmış hayvan gövdesi motifi); Cohen 2004 Hollanda etkisini tartışır.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "eser": "Bocal d'olives",
+   "sanatci": "Jean-Baptiste-Siméon Chardin",
+   "kurum": "Musée du Louvre",
+   "mufredat_ici": false,
+   "gerekce": "Diderot 1763'te pedagojik sıra önerir: önce Bocal d'olives kopyalanmalı, sonra Raie dépouillée; her ikisi de Louvre'da (frwiki alıntısı).",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Louvre güncel HTML+JSON (S2/S3), Joconde/POP (S4), Wayback 2014 (S7), en/fr wikitext (S5/S6), WD (S1), Commons (S8/S9) 14 Kasım 2026'da yeniden açıldı; künye/konu/provenance/restorasyon/sergiler doğrulandı. Cache çakışması: commons-imageinfo.json Ingres ile üzerine yazılmıştı → La Raie imageinfo Q3212142-commons-imageinfo.json olarak yeniden çekildi (200), brief S8 değerleri birebir teyit. Altı ihtilaf D (C027–C032) açık. Görsel metadata-only, İNCELENMEDİ (C043); GZ TASLAK. Akademik tam metinler erişilmedi (C038); DOI/ISBN wikitext'ten aynen.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data 1727 ↔ Louvre güncel 1728 / Joconde \"1727 vers\" / 2014 \"Vers 1725-1726\" (D, C027); vers/circa korunmalı.",
+  "Müze: data \"Académie royale\" (tarihsel sahip) ↔ güncel Louvre (D, C031); data düzeltme önerisi insan onayına.",
+  "Nesne: \"pırasa\"/\"bakır tencere\" Joconde ile doğrulandı (A, C014); \"kevgir/kepçe/sırlı testi/ışık yönü\" doğrulanmadı (E, C026).",
+  "Salon izleyicisi: data çerçevesi doğrulanmadı (E, C039); bağlam Exposition de la Jeunesse + Académie.",
+  "Yorum cümleleri: Cézanne öncülük / kedi-Flaman / türler hiyerarşisi destek yok (E, C040).",
+  "Matisse 1896 kopya + Boudin/Soutine pastişleri atıfsız (E, C041); Matisse'in Chardin'i çalıştığı atıflı (B, C020).",
+  "Görsel İNCELENMEDİ (C043); GZ TASLAK; onbellek lisans alanı boş → Commons PD-old + CC0 teyit (C025); RMN © PD değil; insan editör zorunlu."
+ ]
+}

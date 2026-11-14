@@ -1,0 +1,565 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1978815",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Musée du Louvre, Paris"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée d'Orsay, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Museo del Prado, Madrid"
+    },
+    {
+     "harf": "D",
+     "metin": "Galleria degli Uffizi, Floransa"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S7/S8: Musée du Louvre, Département des Peintures; envanter RF 1158.",
+   "yanlis_gerekceleri": {
+    "B": "Orsay, Paris'te farklı bir müzedir; bu eser Louvre'un Peintures departmanındadır (RF 1158).",
+    "C": "Prado, 2015–16 Ingres sergisine ev sahipliği yapmıştır ama eserin sahibi Louvre'dur.",
+    "D": "Uffizi Floransa'dadır; eserin koleksiyonu Louvre'dur."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Birincil envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "RF 1158"
+    },
+    {
+     "harf": "B",
+     "metin": "000PE001565"
+    },
+    {
+     "harf": "C",
+     "metin": "cl010065566"
+    },
+    {
+     "harf": "D",
+     "metin": "Wildenstein 205"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S7/S8: Numéro principal RF 1158.",
+   "yanlis_gerekceleri": {
+    "B": "000PE001565 Joconde notice referansıdır, envanter numarası değildir.",
+    "C": "cl010065566 Louvre collections ark kimliğidir, envanter değildir.",
+    "D": "205 Wildenstein katalog numarasıdır (Louvre bibliyografyası); müze envanteri değildir, ayrıca Joconde 93 der (ihtilaflı)."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eseri kim, hangi yıl sipariş etti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Napoli Kraliçesi Caroline Murat, 1813"
+    },
+    {
+     "harf": "B",
+     "metin": "Napolyon Bonapart, 1813"
+    },
+    {
+     "harf": "C",
+     "metin": "Caroline Murat, 1819"
+    },
+    {
+     "harf": "D",
+     "metin": "Pourtalès-Gorgier kontu, 1899"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S8/S9/S6: Caroline Murat (Napolyon'un kız kardeşi, Napoli Kraliçesi) 1813'te sipariş etti.",
+   "yanlis_gerekceleri": {
+    "B": "Sipariş Napolyon'dan değil, kız kardeşi Caroline Murat'tandır.",
+    "C": "1819 ilk sergileme (Salon) yılıdır; sipariş 1813'tür.",
+    "D": "Pourtalès-Gorgier provenans zincirindeki bir sahiptir; sipariş veren Caroline Murat'tır; 1899 Louvre'un satın alma yılıdır."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "İlk sergileme hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Salon de 1819"
+    },
+    {
+     "harf": "B",
+     "metin": "Salon de 1814"
+    },
+    {
+     "harf": "C",
+     "metin": "Salon de 1806"
+    },
+    {
+     "harf": "D",
+     "metin": "Bazar Bonne Nouvelle, 1846"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S8/S9: Salon de 1819; sert eleştiri aldı.",
+   "yanlis_gerekceleri": {
+    "B": "1814 yapım yılıdır; ilk sergileme 1819 Salonu'dur (birincil kayıtlar).",
+    "C": "1806, Ingres'in Roma'ya gidiş yılıdır; bu eserin sergilenmesi değildir.",
+    "D": "1846 Bazar Bonne Nouvelle sonraki bir sergilemedir, ilki değildir."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Teknik ve destek nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera, ahşap pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya, kâğıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S8: \"huile sur toile\"; \"peinture à l'huile ; toile\".",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir; eser tuval üzerinedir (huile sur toile).",
+    "C": "Joconde \"peinture à l'huile ; toile\" der; tempera/pano değildir.",
+    "D": "Eser suluboya/kâğıt değil, yağlıboya/tuvaldir."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Birincil kayıtlara göre tuvalin boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "91 × 162 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "88,9 × 162,56 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "137,2 × 206,7 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "162 × 91 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S7/S8: H. 0,91 m; L. 1,62 m (Joconde H. 91, l. 162).",
+   "yanlis_gerekceleri": {
+    "B": "enwiki infobox değeridir; birincil Louvre/Joconde 91×162'de birleşir (ihtilaflı).",
+    "C": "Çerçeveli (aksesuarlı) boyuttur; tuvalin kendi boyutu değildir.",
+    "D": "Değerler yer değiştirmiştir; yükseklik 91, genişlik 162 cm'dir (yatay format)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Kératry'nin geleneksel eleştirisi ve Maigne vd. (2004) ölçümü sırasıyla kaç fazla omur söyler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Üç / beş"
+    },
+    {
+     "harf": "B",
+     "metin": "Beş / üç"
+    },
+    {
+     "harf": "C",
+     "metin": "İki / üç"
+    },
+    {
+     "harf": "D",
+     "metin": "Üç / yedi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Kératry \"üç fazla lomber omur\" dedi (PMC aktarımı, C022); Maigne vd. 2004 ölçümü beş buldu (C023). Sayı ihtilafı C043'te tartışma olarak kayıtlıdır.",
+   "yanlis_gerekceleri": {
+    "B": "Sıralama tersidir; geleneksel üç, ölçüm beştir.",
+    "C": "\"İki\" yalnız enwiki'de (\"two or three\") geçer; geleneksel sayı üçtür.",
+    "D": "Yedi sayısı hiçbir erişilen kaynakta yoktur."
+   },
+   "kanit": [
+    "C022",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Louvre betimine göre figürün sağ elinde ne vardır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tavus tüyü yelpaze"
+    },
+    {
+     "harf": "B",
+     "metin": "Uzun çubuk (pipe)"
+    },
+    {
+     "harf": "C",
+     "metin": "Tütsü kabı"
+    },
+    {
+     "harf": "D",
+     "metin": "Ayna"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S6/S7: \"la main droite tenant un éventail en plumes de paon\".",
+   "yanlis_gerekceleri": {
+    "B": "Uzun çubuk aksesuarlar arasındadır ama Louvre betimi sağ elde yelpaze tutulduğunu söyler.",
+    "C": "Tütsü kabı (bruciaprofumi) yalnız itwiki betiminde geçer; Louvre betiminde yoktur.",
+    "D": "Ayna hiçbir erişilen betimde geçmez."
+   },
+   "kanit": [
+    "C017",
+    "C018"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Ingres'in hocası kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Jacques-Louis David"
+    },
+    {
+     "harf": "B",
+     "metin": "Raphael"
+    },
+    {
+     "harf": "C",
+     "metin": "Parmigianino"
+    },
+    {
+     "harf": "D",
+     "metin": "Antonio Canova"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"his teacher, Jacques Louis David (1748-1825)\".",
+   "yanlis_gerekceleri": {
+    "B": "Raphael, itwiki'nin işaret ettiği baş/sarık kaynağıdır; öğretmen değil.",
+    "C": "Parmigianino, Maniyerist üslup etkisidir; öğretmen değil.",
+    "D": "Canova, Louvre metninde üslup karşılaştırması yapılan heykeltıraştır; öğretmen değil."
+   },
+   "kanit": [
+    "C032"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Eserin yapım yeri neresidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Roma"
+    },
+    {
+     "harf": "B",
+     "metin": "Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Napoli"
+    },
+    {
+     "harf": "D",
+     "metin": "Montauban"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S8: \"Italie ; Rome (lieu d'exécution)\"; imzada \".Rom\".",
+   "yanlis_gerekceleri": {
+    "B": "Paris, Ingres'in öldüğü ve eserin sergilendiği şehirdir; yapım yeri Roma'dır.",
+    "C": "Napoli, siparişi veren Caroline Murat'ın krallığıdır; yapım yeri değil.",
+    "D": "Montauban, Ingres'in doğum yeridir; yapım yeri değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser 1814'te Roma'da yapıldı.",
+   "dogru": true,
+   "aciklama": "Doğru: Louvre/Joconde 1814; Joconde \"Italie ; Rome (lieu d'exécution)\".",
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser ilk kez 1814'te sergilendi.",
+   "dogru": false,
+   "aciklama": "Yanlış: ilk sergileme Salon 1819'dur (birincil); 1814 yapım yılıdır. enwiki'nin \"first shown 1814\" ifadesi kendi içinde çelişkilidir (C042, tartışma).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Maigne vd. (2004) ölçümü sırt ve pelviste toplam yaklaşık 15 cm uzama buldu.",
+   "dogru": true,
+   "aciklama": "Doğru: sırt +8,20 cm, pelvis +6,77 cm; toplam 14,97 cm; üç değil beş fazla omur.",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Louvre kaydı eserin 1899'da satın alma (achat) ile koleksiyona girdiğini belirtir.",
+   "dogru": true,
+   "aciklama": "Doğru: Mode d'acquisition \"achat\", date 1899; 2008 arşivi \"Purchased 1899\".",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Louvre betimine göre eserin konusu mitolojik bir tanrıçadır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Louvre \"Femme nue … odalisque\" diye betimler; mitolojik nü teması hayalî Doğu'ya taşınmıştır, konu bir tanrıça değil odalıktır.",
+   "kanit": [
+    "C017",
+    "C020"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Birincil kayıtlar (Louvre/Joconde) ile enwiki infobox arasındaki boyut ve ilk sergileme ihtilaflarını kaynak eleştirisiyle değerlendirin.",
+   "beklenen_ogeler": [
+    "91×162 birincil",
+    "88,9×162,56 enwiki (inç yuvarlaması olasılığı)",
+    "1814 yapım ↔ 1819 Salon",
+    "enwiki iç çelişki"
+   ],
+   "kanit": [
+    "C006",
+    "C015",
+    "C041",
+    "C042"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Kératry'nin \"üç omur\" eleştirisini Maigne vd. (2004) ölçümüyle karşılaştırın; ölçüm yöntemini (model, perspektif düzeltmesi, baş yüksekliği birimi) açıklayın.",
+   "beklenen_ogeler": [
+    "üç ↔ beş",
+    "9 model, baş yüksekliği birimi",
+    "perspektif %9.4/%4.7",
+    "sırt +8,20 / pelvis +6,77 cm",
+    "yeniden üretilemeyen eğrilik/rotasyon"
+   ],
+   "kanit": [
+    "C022",
+    "C023",
+    "C024",
+    "C043"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Oryantalist fantezi okumasını tartışın: \"hayalî Doğu\", odalık tanım farkları, Mernissi iddiasının atıf zinciri ve nü'nün Batı bakışıyla ilişkisi.",
+   "beklenen_ogeler": [
+    "imaginary Orient (A)",
+    "tanım farkları (cariye/hizmetçi/köle)",
+    "Mernissi B zinciri erişilmedi",
+    "refnec cümlesi kullanılamaz",
+    "erotik nü akademik betim"
+   ],
+   "kanit": [
+    "C020",
+    "C019",
+    "C021",
+    "C052"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Eserin alımlama tarihini yazın: 1819 eleştirisi, ~on yıl sonra kabul (circa), 19–20. yüzyıl varyasyonları (Flandrin, Raysse, Modigliani, Guerrilla Girls) ve kaynak zincirlerinin erişim durumu.",
+   "beklenen_ogeler": [
+    "circa dieci anni / mid-1820s",
+    "Flandrin 1903 (C)",
+    "Raysse 1964 (B)",
+    "Modigliani 1917 (B)",
+    "Guerrilla 1989 (B, Met erişilmedi)"
+   ],
+   "kanit": [
+    "C031",
+    "C034",
+    "C036",
+    "C037",
+    "C038",
+    "C049"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "data/ ile birincil kaynaklar arasındaki uyuşmazlıkları (nargile↔chibouk, imza konumu/transkripsiyonu, \"hiç Doğu'ya gitmedi\", \"çizginin simgesi\") veri notu olarak değerlendirin; hangileri görsel inceleme olmadan kesinleştirilemez?",
+   "beklenen_ogeler": [
+    "nargile ≠ chibouk (D006)",
+    "imza sağ alt / transkripsiyon varyantları (D004)",
+    "\"hiç gitmedi\" çıkarım (E010)",
+    "\"çizginin simgesi\" desteksiz (E009)",
+    "görsel incelenmedi, GZ TASLAK"
+   ],
+   "kanit": [
+    "C046",
+    "C044",
+    "C050",
+    "C051",
+    "C048"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynakların betimlediği kompozisyonda figürün duruşunu bulun: sırtı dönük, yarı uzanmış, yüz izleyiciye üç çeyrek dönük.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Louvre betimi: \"Femme nue, visage de 3/4 … à demi allongée sur un lit bleu\".",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sağ elde tutulan tavus tüyü yelpazeyi ve sağdaki mavi perdeyi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Louvre betimi: \"éventail en plumes de paon … à droite un rideau bleu\".",
+   "kanit": [
+    "C017",
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Mavi yatağı, mavi yastıkları ve dağınık beyaz/kahverengi çarşafları fark edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Louvre betimi: \"lit bleu … coussins bleus … draps en désordre blanc et brun\".",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sağ alt köşedeki imza ve tarihi arayın (kayıtlara göre \"J.A.Ingres … 1814 … Rom\"; transkripsiyon varyantları tartışmalı).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Louvre: \"en bas à droite\"; transkripsiyon Pxit/Pat/P.AT (tartışma).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Uzun kıvrımlı sırt çizgisini ve eşit ışığı izleyin; hacimsiz derinliği tartışın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Louvre 2008: \"long, sinuous lines … even light … space without depth\".",
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Une odalisque, dite La grande odalisque; Ingres (1780–1867); 1814, Roma; yağlıboya/tuval; 91×162 cm; Louvre RF 1158; 1899 achat.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C008",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sipariş + ilk sergileme?",
+   "arka": "Caroline Murat (Napoli Kraliçesi, Napolyon'un kız kardeşi) 1813 siparişi; 1814 Roma'da yapım; ilk sergileme Salon 1819, sert eleştiri.",
+   "kanit": [
+    "C012",
+    "C004",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Omur tartışması?",
+   "arka": "Geleneksel eleştiri (Kératry): \"üç fazla lomber omur\"; Maigne vd. 2004 ölçümü: beş; sırt +8,20 cm, pelvis +6,77 cm (~15 cm); fazlalık bel+pelviste.",
+   "kanit": [
+    "C022",
+    "C023"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Konu + betim?",
+   "arka": "Odalık = harem kadını (tanım kaynaklarda farklı); hayalî Doğu; sırtı dönük yarı uzanmış nü, üç çeyrek yüz, sarık, tavus tüyü yelpaze, mavi yatak/perde.",
+   "kanit": [
+    "C019",
+    "C020",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Provenans + sergiler?",
+   "arka": "Pourtalès-Gorgier → Goupil → Fau → Seillière → Sagan → Devlet (1899 achat); Salon 1819, Bazar Bonne Nouvelle 1846, Ingres 1867, Algérie hayır 1874, Prado 2015–16, Louvre Napoléon 2006.",
+   "kanit": [
+    "C011",
+    "C010",
+    "C016"
+   ]
+  }
+ ]
+}

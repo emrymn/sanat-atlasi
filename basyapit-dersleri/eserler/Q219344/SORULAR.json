@@ -1,0 +1,567 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q219344",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Köle Gemisi bugün hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Museum of Fine Arts, Boston"
+    },
+    {
+     "harf": "B",
+     "metin": "Tate Britain, Londra"
+    },
+    {
+     "harf": "C",
+     "metin": "Metropolitan Museum of Art, New York"
+    },
+    {
+     "harf": "D",
+     "metin": "Musée du Louvre, Paris"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA birincil katalog kaydı (99.22) eserin Museum of Fine Arts, Boston'da olduğunu ve Gallery 251'de sergilendiğini doğrular.",
+   "yanlis_gerekceleri": {
+    "B": "Tate Britain bu provenans zincirinde geçmez; MFA kaydı eserin Boston'da olduğunu doğrular.",
+    "C": "New York bağlantısı provenansta vardır (1872 Johnston satışı; 1876 American Art Association) ama eser 1899'da MFA'ya girdi.",
+    "D": "Louvre bu provenans zincirinde geçmez; birincil kayıt MFA Boston'dır."
+   },
+   "kanit": [
+    "C007",
+    "C009"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "MFA envanter numarası (Accession Number) hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "99.22"
+    },
+    {
+     "harf": "B",
+     "metin": "31102"
+    },
+    {
+     "harf": "C",
+     "metin": "251"
+    },
+    {
+     "harf": "D",
+     "metin": "1840"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA katalog alanında Accession Number 99.22'dir.",
+   "yanlis_gerekceleri": {
+    "B": "31102, collections.mfa.org adresindeki nesne kimliğidir (objects/31102); envanter numarası değildir.",
+    "C": "251, eserin sergilendiği galeri numarasıdır (Gallery 251); envanter değildir.",
+    "D": "1840 eserin tarihidir; envanter numarası değildir."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil kayda göre teknik nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval (oil on canvas)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Suluboya, kâğıt"
+    },
+    {
+     "harf": "D",
+     "metin": "Tempera, ahşap pano"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA Medium/Technique alanı \"Oil on canvas\" der.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar tekniğidir; MFA kaydı bu eseri tuval üzerine yağlıboya olarak verir.",
+    "C": "Turner'ın suluboya çalışmaları vardır (Monro dönemi eğitimi) ama bu eser yağlıboya-tuvaldir.",
+    "D": "Tempera/pano farklı bir tekniktir; birincil kayıt oil on canvas der."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Tablo ilk kez hangi yıl Royal Academy'de sergilendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1840"
+    },
+    {
+     "harf": "B",
+     "metin": "1843"
+    },
+    {
+     "harf": "C",
+     "metin": "1872"
+    },
+    {
+     "harf": "D",
+     "metin": "1899"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA: Turner bu resmi 1840'ta Royal Academy'de sergiledi ve Fallacies of Hope dizeleriyle eşledi.",
+   "yanlis_gerekceleri": {
+    "B": "1843, Griffith'ten John James Ruskin'e satış yılıdır (provenans); sergi yılı değildir.",
+    "C": "1872, Ruskin'den Johnston'a satış yılıdır; sergi yılı değildir.",
+    "D": "1899, eserin MFA'ya giriş yılıdır; ilk sergi değildir."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Turner, 1840 sergisinde tabloyu hangi şiirden dizelerle birlikte sundu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fallacies of Hope"
+    },
+    {
+     "harf": "B",
+     "metin": "Summer (James Thomson)"
+    },
+    {
+     "harf": "C",
+     "metin": "The Dying Negro (Thomas Day)"
+    },
+    {
+     "harf": "D",
+     "metin": "Modern Painters"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA'ya göre Turner, bitmemiş/yayımlanmamış şiiri Fallacies of Hope'tan (1812) bir alıntıyı tabloyla eşledi.",
+   "yanlis_gerekceleri": {
+    "B": "Summer, itwiki'nin işaret ettiği edebi kaynaklardan biridir ama sergide eşlenen dizeler Fallacies of Hope'tandır.",
+    "C": "The Dying Negro, dönemin kölelik karşıtı şiiridir (McCoubrey bağlamı); sergide eşlenen metin değildir.",
+    "D": "Modern Painters, Ruskin'in kitabıdır; Turner'ın şiiri değildir."
+   },
+   "kanit": [
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "MFA'ya göre tablonun konusu neye dayanır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Zong'un gerçek hikâyesi + tayfunlu köle gemisi şiiri"
+    },
+    {
+     "harf": "B",
+     "metin": "Yalnızca Amistad ayaklanması"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnızca Thomson'ın Summer'ı"
+    },
+    {
+     "harf": "D",
+     "metin": "1840 Londra kongreleri"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA: tablo, tayfuna yakalanan köle gemisini anlatan 18. yüzyıl şiirine VE Zong'un gerçek hikâyesine dayanır.",
+   "yanlis_gerekceleri": {
+    "B": "Amistad, Smiles'a göre olası etkiler arasındadır (\"possibly\"); MFA'nın belirttiği konu temeli değildir.",
+    "C": "Summer itwiki'de anılır ama MFA hem şiiri hem Zong'u birlikte temel sayar; \"yalnızca\" yanlıştır.",
+    "D": "Kongreler serginin bağlamıdır, tablonun konusu değildir."
+   },
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "MFA provenansına göre Aralık 1843'te eseri Griffith'ten kim satın aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "John James Ruskin (oğlu John Ruskin için)"
+    },
+    {
+     "harf": "B",
+     "metin": "John Ruskin (doğrudan)"
+    },
+    {
+     "harf": "C",
+     "metin": "Thomas Griffith"
+    },
+    {
+     "harf": "D",
+     "metin": "Alice Sturgis Hooper"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA provenansı: \"December, 1843, sold by Griffith to John James Ruskin ... for his son, John Ruskin\".",
+   "yanlis_gerekceleri": {
+    "B": "MFA kaydında alıcı baba John James Ruskin'dir; eser oğlu John Ruskin İÇİN satın alınmıştır; \"doğrudan\" ifadesi kaydı karşılamaz.",
+    "C": "Thomas Griffith satıcıdır (sanatçının satıcısı); alıcı değil.",
+    "D": "Alice Hooper eseri 1876 Johnston satışında aldı; 1843 alıcısı değildir."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "MFA eseri 1899'da kimden, kaça aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "William Lothrop, 65.000 $"
+    },
+    {
+     "harf": "B",
+     "metin": "John Ruskin, 250 gine"
+    },
+    {
+     "harf": "C",
+     "metin": "John Taylor Johnston, 65.000 $"
+    },
+    {
+     "harf": "D",
+     "metin": "Alice Hooper, 250 gine"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA: \"1899, sold by William Lothrop to the MFA for $65,000. (Accession Date: February 24, 1899)\".",
+   "yanlis_gerekceleri": {
+    "B": "250 gine, itwiki'nin 1843 Ruskin satın alması için verdiği fiyattır; MFA'nın 1899 edinimi değil.",
+    "C": "Johnston 1872'de Ruskin'den alan kişidir; MFA'ya satan Lothrop'tur.",
+    "D": "Hooper 1876'da aldı; MFA'ya satan yeğeni Lothrop'tur."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "MFA'ya göre Zong'un kaptanı insanları neden denize attırdı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yalnızca \"denizde kayıp\" için ödenen sigorta parasını almak"
+    },
+    {
+     "harf": "B",
+     "metin": "Fırtınada gemiyi hafifletmek"
+    },
+    {
+     "harf": "C",
+     "metin": "Salgın hastalığı önlemek"
+    },
+    {
+     "harf": "D",
+     "metin": "Ayaklanmayı cezalandırmak"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MFA: kaptan, sigorta parasını almak için attırdı; sigorta yalnızca \"lost at sea\" sayılanlar için ödenebiliyordu.",
+   "yanlis_gerekceleri": {
+    "B": "Gerçek olay fırtınada değil sakin sularda oldu; MFA'nın belirttiği gerekçe sigortadır.",
+    "C": "itwiki \"epidemia\" çerçevesini kullanır ama MFA'nın belirttiği gerekçe sigortadır; doğal ölümler zaten sigorta dışıydı.",
+    "D": "Ayaklama gerekçesi çekilen kaynaklarda geçmez; MFA sigorta gerekçesini verir."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "\"Turner'ın ölümsüzlüğünü tek bir esere dayandırmak zorunda kalsam, bunu seçerdim\" diyen eleştirmen kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "John Ruskin"
+    },
+    {
+     "harf": "B",
+     "metin": "Mark Twain"
+    },
+    {
+     "harf": "C",
+     "metin": "George Landow"
+    },
+    {
+     "harf": "D",
+     "metin": "New York Times eleştirmeni"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Alıntı MFA katalog sayfasında John Ruskin'e atfedilir.",
+   "yanlis_gerekceleri": {
+    "B": "Twain, A Tramp Abroad'da tabloyu \"manifest impossibility ... a lie\" diye eleştirmiştir; övgü alıntısı onun değildir.",
+    "C": "Landow'un aktarılan okuması izleyici-doğa ilişkisi üzerinedir; bu övgü alıntısı Ruskin'indir.",
+    "D": "NYT eleştirmeni \"bir ışık ve renk mucizesi\" ifadesini eleştirel bağlamda kullanır; alıntı Ruskin'indir."
+   },
+   "kanit": [
+    "C016"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Tablo 1840'ta Royal Academy'de sergilendi.",
+   "dogru": true,
+   "aciklama": "Doğru: MFA, Turner'ın resmi 1840 RA'de Fallacies of Hope dizeleriyle sergilediğini yazar.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "MFA kaydı, tablonun yalnızca Zong olayına dayandığını, şiirsel bir kaynağı olmadığını söyler.",
+   "dogru": false,
+   "aciklama": "Yanlış: MFA hem 18. yüzyıl tayfun şiirini hem Zong'un gerçek hikâyesini temel sayar.",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Tablo, 15 Nisan 1869 Christie's satışında (lot 50) satılmadı (unsold).",
+   "dogru": true,
+   "aciklama": "Doğru: MFA provenansı \"unsold\" kaydeder.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "MFA'ya giriş, 1899'da William Lothrop'tan 65.000 $ satın alma ile oldu.",
+   "dogru": true,
+   "aciklama": "Doğru: Accession Date 24 Şubat 1899.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Zong olayı fırtınalı havada gerçekleşti; Turner fırtınayı olduğu gibi resmetti.",
+   "dogru": false,
+   "aciklama": "Yanlış: gerçek olay sakin sularda oldu; tayfun ve gün batımını Turner ekledi.",
+   "kanit": [
+    "C028"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D1'i kaynak eleştirisiyle analiz edin: Ruskin'e geçiş 1843 satın alma mı, 1844 hediye mi? \"First owner\" ifadesinin gerilimini tartışın.",
+   "beklenen_ogeler": [
+    "MFA Aralık 1843, baba John James Ruskin",
+    "enwiki 1844 hediye (Walker)",
+    "itwiki 250 gine",
+    "first owner ↔ alıcı baba gerilimi",
+    "birincil tercih"
+   ],
+   "kanit": [
+    "C056",
+    "C019",
+    "C035",
+    "C034",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Zong kurban sayısı neden kesinleştirilmez? 132/142/\"unknown\" kayıtlarını ve etik boyutu tartışın.",
+   "beklenen_ogeler": [
+    "132 (McCoubrey/Manderson)",
+    "142 (Walvin/Kelsall)",
+    "number of deaths is unknown",
+    "MFA sayı vermez",
+    "kesin sayı kullanılmaz"
+   ],
+   "kanit": [
+    "C057",
+    "C026",
+    "C029",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Estetik-etik tartışmayı Landow ↔ Döring/Frost hattında münazara edin.",
+   "beklenen_ogeler": [
+    "Landow: doğa hem yargıç hem cellat",
+    "Döring: terror/connoisseur suç ortaklığı",
+    "yücenin sömürgecilik bağlamı",
+    "güzellik acıyı görünmez kılar mı"
+   ],
+   "kanit": [
+    "C045",
+    "C046",
+    "C041",
+    "C042"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Özgün başlığın şimdiki zamanı (\"Throwing\") ve Typhon yazımı, izleyici-konumu okumasını nasıl destekler?",
+   "beklenen_ogeler": [
+    "Typhon dönem yazımı",
+    "şimdiki zaman eylemi",
+    "Fallacies \"throw overboard\" çağrısı",
+    "ontolojik belirsizlik",
+    "izleyici gemide (yorum)"
+   ],
+   "kanit": [
+    "C002",
+    "C015",
+    "C042"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "data/ uyuşmazlıklarını raporlayın: empasto, habercilik, \"yanlis\" bayrağı, gemi konumu; görsel sınırı nedir?",
+   "beklenen_ogeler": [
+    "empasto doğrulanmadı (E)",
+    "habercilik doğrulanmadı (E)",
+    "1840 kölelik karşıtı bağlam destekli → bayrak hatalı",
+    "gemi solda ↔ uzakta",
+    "görsel incelenmedi → GZ TASLAK"
+   ],
+   "kanit": [
+    "C061",
+    "C031",
+    "C014",
+    "C048",
+    "C059"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Ön planda sağ köşedeki zincirli bacağı ve çevresindeki balık/martıları bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: bileğinde demir zincir olan bir bacak sudan çıkar (McCoubrey/Gardner).",
+   "kanit": [
+    "C047"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Uzak arka plandaki gemiyi ve toplanmış yelkenleri bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: \"low, lean lines and clipper bow\" hızlı köle gemisi; yelkenler tayfun için toplanmış.",
+   "kanit": [
+    "C048"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Deniz ile göğün birleştiği, \"sıcak, çalkantılı\" renk alanını inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): MFA betimi: \"hot, churning color and light that merge sea and sky\".",
+   "kanit": [
+    "C068"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Kan kırmızısı gün batımını ve soldan sokulan fırtına bulutunu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: koyu kırmızı gün batımı; bulut soldan görünür alana sokulur.",
+   "kanit": [
+    "C053"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Figürlerin kenarda/küçük, geminin uzakta oluşunu karşılaştırın; vurgu nerede?",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: kompozisyon vurguyu insanlardan doğanın gücüne kayar.",
+   "kanit": [
+    "C053"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Köle Gemisi künyesi?",
+   "arka": "Turner (1775–1851); 1840; oil on canvas; 90,8×122,6 cm; MFA Boston 99.22; Henry Lillie Pierce Fund; Gallery 251.",
+   "kanit": [
+    "C001",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu + edebi kaynak?",
+   "arka": "Zong'un gerçek hikâyesi (1781, sigorta \"lost at sea\") + 18. yüzyıl tayfun şiiri (itwiki: Thomson, Summer); 1840 RA'de Fallacies of Hope (1812) dizeleriyle.",
+   "kanit": [
+    "C011",
+    "C012",
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Provenans zinciri?",
+   "arka": "Griffith (konsinye) → Aralık 1843 John James Ruskin (oğlu için) → 1869 Christie's unsold → 1872 Johnston (Blodgett) → 1876 Hooper → Lothrop (miras) → 1899 MFA 65.000 $.",
+   "kanit": [
+    "C018",
+    "C019",
+    "C020",
+    "C021",
+    "C022",
+    "C023",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Ruskin alıntısı + etkisi?",
+   "arka": "\"If I were reduced to rest Turner's immortality upon any single work, I should choose this.\" Modern Painters sonraki baskıya övgü eklendi; kamuoyu algısı biçimlendi.",
+   "kanit": [
+    "C016",
+    "C036"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "1840 bağlamı?",
+   "arka": "RA sergisi, Londra'daki iki uluslararası kölelik karşıtı kongreyle zamandaş; ticaret 1807, kölelik 1833'te kaldırılmıştı; Zong davası hareket için dönüm noktası.",
+   "kanit": [
+    "C031",
+    "C032",
+    "C027"
+   ]
+  }
+ ]
+}

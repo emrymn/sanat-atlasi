@@ -1,0 +1,582 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3937621",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser bugün nerede sergileniyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Versailles, Antichambre du Grand Couvert (Kraliçenin Grand Appartement'i)"
+    },
+    {
+     "harf": "B",
+     "metin": "Versailles, Aynalı Salon (Galerie des Glaces)"
+    },
+    {
+     "harf": "C",
+     "metin": "Versailles, Mars Room (Salon de Mars)"
+    },
+    {
+     "harf": "D",
+     "metin": "Paris, Louvre"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5 (GAP): \"This painting is presented in the Antechamber of the Grand Couvert\"; S10 arşiv: \"Localisation : Antichambre du Grand Couvert\"; WD P276 = Q2853149.",
+   "yanlis_gerekceleri": {
+    "B": "Aynalı Salon, kaynakların betimlediği arka plan mekânıdır (solda, Louis XIV göndermesi); eserin sergilendiği oda değil.",
+    "C": "Mars Room, Salon 1787 sonrası Haziran 1789'a kadar sergilendiği yerdir; bugünkü konum değil.",
+    "D": "Louvre, 1787 Salonu'nun yapıldığı yerdir; eser devlet malı olarak Versailles-Trianon ulusal müzelerine kayıtlıdır."
+   },
+   "kanit": [
+    "C007",
+    "C014",
+    "C013",
+    "C017"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "POP/Joconde notice referansı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "000PE008060"
+    },
+    {
+     "harf": "B",
+     "metin": "656654"
+    },
+    {
+     "harf": "C",
+     "metin": "GMTT-347-000"
+    },
+    {
+     "harf": "D",
+     "metin": "RQE3s9ANo6GnTg"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: \"Référence de la notice 000PE008060\", base \"Collections des musées de France (Joconde)\", güncelleme 2 Kasım 2026.",
+   "yanlis_gerekceleri": {
+    "B": "656654, Met'in Versailles ödünç/sergi kaydı numarasıdır (Credit Line MV 4520); POP notice referansı değil.",
+    "C": "GMTT-347-000, Mobilier national'ın Gobelins tapestry kaydıdır (enwiki atfı); tablonun POP notice'ı değil.",
+    "D": "RQE3s9ANo6GnTg, Google Arts & Culture asset kimliğidir; GAP bu kaydın External Link alanında Versailles koleksiyon URL'sini verir."
+   },
+   "kanit": [
+    "C031",
+    "C025",
+    "C040",
+    "C032"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil kayda göre teknik ve destek nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "B",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk (duvar resmi)"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt üzerine suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 Matériaux et techniques: \"peinture à l'huile ; toile\"; S7 Medium: \"Oil on canvas\"; S5 Medium: \"Oil on canvas\".",
+   "yanlis_gerekceleri": {
+    "B": "POP \"peinture à l'huile ; toile\" der; destek pano değil tuvaldir, bağlayıcı tempera değil yağdır.",
+    "C": "Eser taşınabilir bir tablodur (POP \"Domaine: peinture / Dénomination: tableau\"); duvar resmi değildir.",
+    "D": "Met ve GAP \"Oil on canvas\" der; kâğıt/suluboya hiçbir birincil kayıtta geçmez."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Boş beşik kimi anar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sophie-Hélène-Béatrice (9 Temmuz 1786 – 19 Haziran 1787)"
+    },
+    {
+     "harf": "B",
+     "metin": "Marie-Thérèse (Madame Royale)"
+    },
+    {
+     "harf": "C",
+     "metin": "Louis-Charles (duc de Normandie)"
+    },
+    {
+     "harf": "D",
+     "metin": "Louis-Joseph (dauphin)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10: \"princesse Sophie Hélène Beatrix, née le 9 juillet 1786 et morte le 19 juin 1787\"; S5: \"died … in 1787, at the age of eleven months\"; S7: \"The empty bassinet alludes to her fourth child, who had recently died.\"",
+   "yanlis_gerekceleri": {
+    "B": "Marie-Thérèse tabloda yaşayan ve annesine yaslanan kızdır; beşik onun için değildir.",
+    "C": "Louis-Charles kraliçenin kucağındadır; sonraki XVII. Louis olarak Temple'de 1795'te ölmüştür, beşikte değil.",
+    "D": "Louis-Joseph beşiğin yanında duran/gösteren veliahttır; beşik onun kız kardeşi Sophie içindir."
+   },
+   "kanit": [
+    "C011",
+    "C010"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Sipariş hangi yıl verildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1785"
+    },
+    {
+     "harf": "B",
+     "metin": "1787"
+    },
+    {
+     "harf": "C",
+     "metin": "1789"
+    },
+    {
+     "harf": "D",
+     "metin": "1814"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4 Historique: \"commandé par Louis XVI en 1785\"; S5 Provenance: \"Commissioned in September 1785…\". Not: siparişverenin kimliği/atfı ihtilaflıdır (D3); bu soru yalnız yılı sorar.",
+   "yanlis_gerekceleri": {
+    "B": "1787 yapım/imza yılı ve Salon yılıdır; POP siparişi ayrı alanda 1785 olarak kaydeder.",
+    "C": "1789, Mars Room sergilemesinin bittiği ve tablonun depoya kaldırıldığı yıldır (GAP provenance).",
+    "D": "1814, POP'un \"traduit en tapisserie en 1814\" kaydındaki tapestry'ye çevrilme yılıdır."
+   },
+   "kanit": [
+    "C008",
+    "C001",
+    "C014",
+    "C022"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "NGC ve Cornette'ye göre kompozisyon şeması ve tavsiye kaynağı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Rönesans Kutsal Aile betimlerini anımsatan üçgen/piramit düzen; Jacques-Louis David'in tavsiyesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Yatay, tek sıralı conversation piece dizilişi"
+    },
+    {
+     "harf": "C",
+     "metin": "Rokoko bahçe sahnesinin dönen diyagonalleri"
+    },
+    {
+     "harf": "D",
+     "metin": "Merkezi perspektifli mimari veduta"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S8: \"On the advice of … Jacques-Louis David … triangular composition recalling Renaissance depictions of the Holy Family\"; S9: \"ils choisissent comme modèle une Sainte Famille de Raphaël\". Modelin Raffaello mu Giulio Romano mu olduğu ihtilaflıdır (D4); doğru şık yalnız şemayı ve tavsiyeyi içerir.",
+   "yanlis_gerekceleri": {
+    "B": "Kaynaklar üçgen/piramit şeması der; kraliçe merkezde ve şemanın tepesinde oturur, figürler tek yatay şeride dizilmez.",
+    "C": "Dönen diyagonaller Boucher/Fragonard dağarcığıdır; bu eser için NGC ve Cornette Kutsal Aile şemasını ve David'in tavsiyesini bildirir.",
+    "D": "Eser bir grup portresidir; mimari yalnız arka planda betimlenir (solda Aynalı Salon), kompozisyonun şeması değildir."
+   },
+   "kanit": [
+    "C015",
+    "C017"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Met'in 656654 sayfası neyi gösterir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Versailles'ın ödünç/sergi kaydını; eser Met mülkiyetinde değildir"
+    },
+    {
+     "harf": "B",
+     "metin": "Met'in satın aldığı ve kalıcı koleksiyonunda tuttuğu eseri"
+    },
+    {
+     "harf": "C",
+     "metin": "Met'in yaptırdığı bir kopyayı"
+    },
+    {
+     "harf": "D",
+     "metin": "GAP gigapixel görüntüsünün Met arşivini"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S7 (Wayback 2025-07-20): \"Returned to lender\", \"Not on view\", Credit Line \"Musée National des Châteaux de Versailles et de Trianon (MV 4520)\"; Exhibition History 2015–16 üç durak. Canlı API 404, canlı HTML 429 → arşivden doğrulandı.",
+   "yanlis_gerekceleri": {
+    "B": "Sayfa \"Returned to lender\" ve \"Not on view\" der; Credit Line Versailles (MV 4520)'dir, yani satın alma değil ödünç.",
+    "C": "Kayıt kopya değil, Versailles'dan gelen ödünç eserin sergi sayfasıdır; POP iki küçültülmüş kopyayı ayrı kaydeder.",
+    "D": "Gigapixel görüntü Commons/GAP kaynaklıdır (RQE3s9ANo6GnTg); Met sayfası bir nesne/sergi kaydıdır, görüntü arşivi değil."
+   },
+   "kanit": [
+    "C025",
+    "C024",
+    "C022",
+    "C026"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Elbisenin kırmızısı hangi portreden ödünç alındı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Jean-Marc Nattier'in Marie Leszczyńska portresi"
+    },
+    {
+     "harf": "B",
+     "metin": "Rubens'in bir Marie de Médicis portresi"
+    },
+    {
+     "harf": "C",
+     "metin": "Van Dyck'in bir İngiliz saray portresi"
+    },
+    {
+     "harf": "D",
+     "metin": "Raffaello'nun bir Kutsal Aile'si"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S8: \"She borrowed the red of the queen's dress from Jean-Marc Nattier's portrait of Marie Leszczyńska, wife of Louis XV, who was beloved for her generosity and piety.\"",
+   "yanlis_gerekceleri": {
+    "B": "Rubens, NGC'ye göre sanatçının incelediği ustalar arasındadır; ancak elbise kırmızısının kaynağı olarak Nattier'in Marie Leszczyńska portresi gösterilir.",
+    "C": "Van Dyck de incelenen ustalar arasındadır; kırmızı ödünçü için kaynak Nattier'dir.",
+    "D": "Raffaello (veya Giulio Romano) kompozisyon modeli olarak anılır, renk kaynağı olarak değil."
+   },
+   "kanit": [
+    "C020",
+    "C023",
+    "C015"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "GAP'e göre ressam tabloyu Salon 1787 açılışına neden göndermedi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kraliçenin itibarı o kadar kötüydü ki halkın kraliçe imgesine saldırmasından korktu"
+    },
+    {
+     "harf": "B",
+     "metin": "Tuval henüz kurumamıştı"
+    },
+    {
+     "harf": "C",
+     "metin": "Sipariş ödemesi yapılmamıştı"
+    },
+    {
+     "harf": "D",
+     "metin": "Tablo o sırada Mars Room'da asılıydı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S5: \"the reputation of Marie-Antoinette was so bad that the portraitist did not dare send it. She feared that the public would attack the Queen's image.\"; S10: \"Mme Vigée-Le Brun, inquiète, n'avait pas osé envoyer la toile.\"",
+   "yanlis_gerekceleri": {
+    "B": "GAP gerekçeyi itibar/korku olarak verir; kuruma/vernik gibi teknik bir gerekçe hiçbir erişilen kaynakta yoktur.",
+    "C": "Kaynaklarda ödeme sorununa ilişkin bir ifade yok; gerekçe kraliçenin kötüleşen itibarıdır.",
+    "D": "Mars Room sergilemesi Salon sonrasıdır ve Haziran 1789'a kadar sürer; açılışta tablonun orada olması söz konusu değildir."
+   },
+   "kanit": [
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "enwiki'nin saydığı Gobelins tapestry versiyonlarının yılları hangileri?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1814, 1822, 1897"
+    },
+    {
+     "harf": "B",
+     "metin": "1785, 1787, 1789"
+    },
+    {
+     "harf": "C",
+     "metin": "1868, 1877, 1902"
+    },
+    {
+     "harf": "D",
+     "metin": "1814, 1868, 1897"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S2: \"Three Gobelin tapestry versions were produced in 1814, 1822 and 1897\" (Mobilier national GMTT-347-000 atfı; kayıt açılmadı). S4: \"traduit en tapisserie en 1814\".",
+   "yanlis_gerekceleri": {
+    "B": "Bunlar sipariş, yapım/Salon ve Mars Room sergilemesinin bitişiyle ilgili yıllardır; tapestry dokuma yılları değil.",
+    "C": "Bunlar armağan/yer değiştirme tarihleridir: 1868 Avusturya İmparatoriçesi Elisabeth'e veriliş, 1877 ikincisinin Élysée'ye yerleşmesi, 1902 Loubet'in Rusya'ya armağanı.",
+    "D": "1868 bir armağan yılıdır, dokuma yılı değil; enwiki üç dokuma yılını 1814/1822/1897 olarak verir."
+   },
+   "kanit": [
+    "C040",
+    "C041",
+    "C022"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser bugün Versailles'da Antichambre du Grand Couvert'te sergilenir.",
+   "dogru": true,
+   "aciklama": "Doğru: GAP \"presented in the Antechamber of the Grand Couvert\"; arşiv müze \"Localisation : Antichambre du Grand Couvert\"; WD P276 = Q2853149 (Antichambre du Grand Couvert).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Met'in 656654 kaydı eserin Met mülkiyetinde olduğunu gösterir.",
+   "dogru": false,
+   "aciklama": "Yanlış: sayfa \"Returned to lender\" ve \"Not on view\" der; Credit Line \"Musée National des Châteaux de Versailles et de Trianon (MV 4520)\". Bu bir ödünç/sergi kaydıdır; canlı API 404, canlı HTML 429 olduğundan Wayback 2025-07-20 ile doğrulandı.",
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Boş beşik, resim tamamlanmadan önce ölen Sophie-Hélène-Béatrice'i anar.",
+   "dogru": true,
+   "aciklama": "Doğru: S10 doğum/ölüm tarihlerini verir (9 Temmuz 1786 – 19 Haziran 1787); GAP \"on bir aylıkken\"; Met \"dördüncü çocuk, kısa süre önce ölmüş\".",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "POP Joconde kaydı ölçüyü \"275 H ; 215 L\" olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru: POP Mesures \"275 H ; 215 L\"; arşiv müze \"275x215 cm\". Met/NGC 275×216.5, GAP 195×271, WD/Commons 271×195/210 der → boyut ihtilaflıdır, tek sayı dayatılmaz.",
+   "kanit": [
+    "C033"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Tablo 1787 Salonu'nun açılışında hemen sergilendi.",
+   "dogru": false,
+   "aciklama": "Yanlış: açılışta gönderilmedi; boş yer \"Here's the Deficit!\" göndermesine yol açtı; idare ısrarıyla sonradan teslim edildi (GAP + arşiv müze + POP). itwiki'nin \"hiç sergilenmedi\" anlatımı birincil kaynaklarla gerilimlidir (D2).",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Boyut varyantlarını kaynak hiyerarşisiyle çözümleyin: hangi ölçü birincil envanter, hangisi sergi ölçümü, hangisi üçüncül/gigapixel metadata? Hangi kanıt türü sorunu kesin çözer?",
+   "beklenen_ogeler": [
+    "POP 275 H × 215 L (birincil)",
+    "Met/NGC 275×216.5 (sergi ölçümü)",
+    "GAP w1950×h2710 mm / WD 271×210 / Commons 271×195 (aykırı)",
+    "histoire-image başlık 275,2×216,5 ↔ editör 2,75×2,15",
+    "konservasyon ölçüm raporu gerekli (erişilmedi)"
+   ],
+   "kanit": [
+    "C044",
+    "C033",
+    "C063",
+    "C066"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Salon 1787 anlatılarındaki çelişkiyi ve \"boş çerçeve/Deficit\" anekdotunun kaynak zincirini değerlendirin: hangi kurum ne diyor, hangisi kitaba dayanıyor?",
+   "beklenen_ogeler": [
+    "POP/GAP/arşiv müze: sonradan sergilendi",
+    "itwiki (Fraser s.284): cornice vuota, hiç sergilenmedi",
+    "boş yer/çerçeve tüm kaynaklarda ortak",
+    "Fraser metnine erişilmedi",
+    "Salon broşürleri birincil değil, aktarım"
+   ],
+   "kanit": [
+    "C045",
+    "C013",
+    "C029",
+    "C064"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Siparişverenin kimliğini tartışın: POP, Met, NGC, GAP (iki alan) ve itwiki atıflarını karşılaştırın. \"Kraliçe sipariş etti\" ifadesi neden tek başına sorunlu?",
+   "beklenen_ogeler": [
+    "POP: commandé par Louis XVI en 1785",
+    "Met: office of royal households (Maison du Roi)",
+    "NGC/GAP provenance: Bâtiments du Roi / d'Angiviller",
+    "GAP viewing notes + itwiki: kraliçe",
+    "kraliçenin isteği ≠ resmî sipariş kanalı",
+    "sipariş belgesine erişilmedi"
+   ],
+   "kanit": [
+    "C046",
+    "C008",
+    "C009",
+    "C035"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "data/'daki Rousseau atfını erişilen kaynaklarla sınayın. GAP'in \"childhood interest\" ifadesi neyi destekler, neyi desteklemez? Kanıtsız bir düşünür atfı nasıl kurulmalı?",
+   "beklenen_ogeler": [
+    "erişilen kaynaklarda Rousseau adı yok",
+    "GAP: new interest shown in childhood",
+    "data hotspot + basyapitlar Rousseau der",
+    "atıf yorum olarak işaretlenmeli",
+    "Émile metnine erişilmeden etki iddia edilemez"
+   ],
+   "kanit": [
+    "C055",
+    "C009",
+    "C062"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Cornelia ↔ Lambert ve Raffaello ↔ Giulio Romano varyantlarını kaynak eleştirisiyle tartışın. Bu iki sorunu çözmek için hangi kanıt türleri gerekir ve görsel teyit neden zorunlu?",
+   "beklenen_ogeler": [
+    "NGC/enwiki Cornelia",
+    "histoire-image \"Peut-être\" Lambert / Phocion annesi",
+    "Commons atıfsız Madonna della Gatta",
+    "NGC/Cornette/itwiki Raffaello + David",
+    "görsel incelenmedi → piksel karşılaştırması",
+    "Souvenirs metni ve eskizler gerekli"
+   ],
+   "kanit": [
+    "C049",
+    "C047",
+    "C018",
+    "C015",
+    "C065"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kraliçenin kucağındaki Louis-Charles ile annesine yaslanan Marie-Thérèse'i bulun; üç figürün oluşturduğu üçgenin tepesini işaretleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: kraliçe merkezde oturur; üçgen/piramit şema, David'in tavsiyesi (NGC/Cornette).",
+   "kanit": [
+    "C010",
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sağdaki boş beşiği ve yanındaki veliaht Louis-Joseph'i bulun; jestin \"gösterme\" mi \"sarma\" mı olduğunu ve örtünün rengini not edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimleri farklı: S10 \"désigne\", itwiki \"indica\", Commons \"bras protecteur\" + \"crêpe noir\"; data/ \"koyu yeşil örtü\" der. Görsel teyit insan editöre.",
+   "kanit": [
+    "C011",
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sol arka plandaki Aynalı Salon pasajını ve sağda gölgede duran mücevher dolabını (serre-bijoux) bulun; dolabın üstündeki tacı arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: NGC solda Hall of Mirrors, sağda gölgede jewellery cabinet; taç yalnız itwiki'de (atıfsız). S10 mekânı \"salon de la Paix\" diye betimler (ihtilaf).",
+   "kanit": [
+    "C017",
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Kraliçenin kadife elbisesinin kürk astarını ve tüylü bereyi inceleyin; kürk türü (samur/sansar) ve kumaş rengi (kırmızı/puce) için kaynak betimlerini piksellerle sınayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: NGC \"sable-lined red velvet\", Commons \"velours puce bordé de marte\". Hangi Commons versiyonunu (ana gigapixel ↔ Remastered color) incelediğinizi kaydedin.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Kraliçenin takılarını sayın: kolye var mı, küpe var mı? \"Az takı\" betimini sınayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: GAP \"deliberately did not wear much jewellery\"; itwiki kolye yok ama damla küpe var der. \"Hiç takı yok\" kesinleştirmesinden kaçının.",
+   "kanit": [
+    "C016",
+    "C009"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Élisabeth Louise Vigée Le Brun (1755–1842); 1787, imzalı-tarihli sol alt (\"L. Vigée Le Brun 1787\"); tuval üzerine yağlıboya; MV 4520 ; INV 3059 ; AC 1945; Versailles, Antichambre du Grand Couvert; birincil ölçü 275×215 cm.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C005",
+    "C004",
+    "C007",
+    "C033"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sipariş ve amaç?",
+   "arka": "1785, Louis XVI buyruğuyla (POP); Eylül 1785, Bâtiments du Roi genel müdürü aracılığıyla (GAP). Temmuz 1785 Gerdanlık Skandalı sonrası kraliçeyi hem kraliçe hem şefkatli anne olarak gösterip imajı onarmak; hanedan sürekliliği.",
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Figürler ve boş beşik?",
+   "arka": "Marie-Thérèse (Madame Royale) annesine yaslanır; Louis-Joseph (dauphin) beşiğin yanında; Louis-Charles (duc de Normandie, sonraki XVII. Louis) kucağında. Boş beşik Sophie-Hélène-Béatrice'i anar (9 Temmuz 1786 – 19 Haziran 1787, ~11 ay).",
+   "kanit": [
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance?",
+   "arka": "Salon 1787 (açılışta yok, idare ısrarıyla sonradan) → Mars Room, Haziran 1789'a kadar → aynı ay depo → Devrim'de ulusal koleksiyonlar → Louis-Philippe'de Versailles müzesi → bugün Antichambre du Grand Couvert.",
+   "kanit": [
+    "C013",
+    "C014",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Kompozisyon ve ikonografi?",
+   "arka": "Üçgen/piramit, Rönesans Kutsal Aile şeması (David'in tavsiyesi); solda Aynalı Salon (Louis XIV göndermesi), sağda gölgede serre-bijoux → Cornelia \"çocuklarım benim mücevherlerim\"; kolye yok, az takı; elbisenin kırmızısı Nattier'in Marie Leszczyńska portresinden.",
+   "kanit": [
+    "C015",
+    "C017",
+    "C018",
+    "C016",
+    "C020"
+   ]
+  }
+ ]
+}

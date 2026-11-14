@@ -1,0 +1,761 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3228340",
+ "sanatci_id": "honore-daumier",
+ "baslik": "Üçüncü Mevki Vagon",
+ "ozgun_baslik": "The Third-Class Carriage (Le Wagon de troisième classe)",
+ "kunye": {
+  "sanatci": "Honoré Daumier",
+  "sanatci_yasam": "1808–1879 (Marseilles–Valmondois)",
+  "tarih": "c. 1862–1864",
+  "tarih_belirsizlik": "Met yayını \"ca. 1862–64\"; API objectDate \"1864\"; WD 1862/1868 anomalileri (D1/C037). Kesinleştirilmedi.",
+  "teknik": "Oil on canvas (yağlıboya, tuval)",
+  "boyut_cm": {
+   "yukseklik": 65.4,
+   "genislik": 90.2
+  },
+  "muze": "Metropolitan Museum of Art, New York, NY",
+  "envanter": "29.100.129",
+  "edinim": "H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929",
+  "konum": "Gallery 812 (API 2026; TOAH 2014 arşiv \"802\" — D3)",
+  "telif_durumu": "Kamu malı (Daumier ö. 1879; Met Open Access isPublicDomain=true; Commons PD/CC0)"
+ },
+ "gorsel": {
+  "url": "https://images.metmuseum.org/CRDImages/ep/original/DP-21027-001.jpg",
+  "kaynak": "Metropolitan Museum of Art (Open Access); Commons Met bağışlı dosya + GAP",
+  "lisans": "Public domain (Met Open Access / CC0)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (Met API + Commons imageinfo); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "Met DP-21027-001 (API boyut vermedi); Commons Met bağışlı 3811×2756; GAP 3812×2757; Yorck 2024×1463",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C041); GZ TASLAK; kompozisyon Met etiketi (A) + NGC (A) + enwiki (C) metninden; data/ hotspot ve ışık betimleri doğrulanmadı; doğru versiyon DP-21027-001 (C038)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 440
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1378
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2741
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kayda-erişim"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-d1-anatomisi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-1878-ve-kanıtsız-iddialar"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-bitmemişlik-ve-kareleme-teknik-estetik-okuma"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-sınıf-okuması-işçi-mi-köylü-mü"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#3-versiyon-filolojisi-üç-ayrı-eser"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı-ve-veri-notları"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Met birincil API + TOAH arşiviyle künyeyi doğrular: ad, sanatçı, oil on canvas, 65,4×90,2, 29.100.129, 1929 Havemeyer vasiyeti, Gallery 812.",
+  "Tarih ihtilafını (API \"1864\" ↔ müze yayını \"ca. 1862–64\" ↔ WD anomalileri) yönetir; \"c. 1862–1864\" kullanır, kesinleştirmez.",
+  "Üç versiyonu (Met/Ottawa/SF) ayırt eder; bu dersin yalnız Met 29.100.129 olduğunu bilir ve karıştırma riskini beyan eder.",
+  "Bitmemişlik + kareleme + Walters denkliğini teknik bağlamda açıklar; aktarım hipotezlerini belirsizlik koruyarak tartışır.",
+  "NGC'nin işçi sınıfı okuması ile enwiki'nin köylü/Millet olasılığını ve data/ \"üç kuşak\" yorumunu kaynak seviyeleriyle değerlendirir; görsel betimin sınırını beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Kareleme (squared for transfer)",
+   "tanim": "Bir taslağı büyüterek ya da birebir başka bir yüzeye aktarmak için çizilen ızgara; Met etiketi bu eserde izlerini kaydeder.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "Realizm",
+   "tanim": "19. yüzyıl Avrupa sanatında sıradan insanların gündelik hayatını konu alan akım; Met Index Terms \"Realism in Nineteenth–Century European Art\".",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "Tür sahnesi (genre scene)",
+   "tanim": "Gündelik hayat sahnesi; Met sınıflaması \"Genre Scenes; Secular Figure\".",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "Üçüncü mevki (third class)",
+   "tanim": "Demiryolunda en ucuz yolculuk sınıfı; enwiki betimi dar, kirli, ahşap banklı açık bölmeler (yorum).",
+   "kanit": [
+    "C024",
+    "C013"
+   ]
+  },
+  {
+   "ad": "Provenans",
+   "tanim": "Sahiplik zinciri; bu eserde Duz → Durand-Ruel → Borden → Havemeyer → Met (1929) olarak aktarılır; son halka birincil kayıtla A.",
+   "kanit": [
+    "C020",
+    "C006"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Ad (en): \"The Third-Class Carriage\" (Met resmî başlığı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S3",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Honoré Daumier (French, Marseilles 1808–1879 Valmondois).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Bu QID Met versiyonudur; envanter 29.100.129; Metropolitan Museum of Art, New York, NY; Met API objectID 436095.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Yağlıboya, tuval (oil on canvas; WD P186 oil paint + canvas, P518 painting support).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "65,4 × 90,2 cm (25 3/4 × 35 1/2 in.).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "1929; \"H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Güncel galeri 812 (API 2026; metadataDate 2026-10-10).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Müze yayını tarihi \"ca. 1862–64\" (TOAH December 2008 metni, 2014 arşiv; Commons \"circa 1862–64\" P1480=circa; enwiki circa 1862–1864); API objectDate \"1864\" (→ C037 D1). TOAH erişimi: canlı 429 → Wayback 2014-08-18 (web_fetch AI aracılı; 2022-12-08 kopyası Incapsula engel sayfası, CDX ile seçildi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Tablo tamamlanmamış ve kareleme (squared for transfer) izli.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "1864 tarihli Walters suluboyasıyla (Walters Art Museum, Baltimore) yakın denklik (\"closely corresponds\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Diğer yağlıboya versiyon (Ottawa, NGC) bitmiş ama yoğun biçimde yeniden işlenmiş (extensively reworked).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Daumier modern kent hayatının kronikçisi; 19. yy ortası Paris'inde sanayileşmenin etkilerini resmetti; demiryolu imgeleri sanatında ilk kez 1840'larda.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Konu etiketleri: Women, Men, Children, Nursing, Trains (WD P180 woman/child/man/breastfeeding/train).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Realism in Nineteenth–Century European Art; Genre Scenes; Secular Figure; classification Paintings.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Kamu malı (Met Open Access isPublicDomain=true; WD P6216=Q19652, P1001 100 yıl pma, P459 ölümden ≥100 yıl; Commons PD/CC0).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Ottawa versiyonu: NGC 4633, \"Purchased 1946\", c. 1863–1865, oil on canvas, 65,4 × 90,2 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "NGC yorumu: işçi sınıfına sempati; burjuva/politikacı karikatürlerinde sert (caustic), burada duyarlı; içine kapanık, yoksul, izole yolcular; loş vagon; düşüncelerine dalmış.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Louisine Havemeyer mülkiyetindeydi (WD P127=Q539280; ref P248=Q160236 + P3634=436095).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Met koleksiyonuna giriş 1929 (WD P195 qual P580=1929; S4 ile uyumlu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Provenance zinciri (enwiki, satır içi atıf yok): J. Duz (1888 École des Beaux-Arts sergisi) → Durand-Ruel Paris 1892 → NY şubesi 1893 → M.C.D. Borden 1896 → 1912 ölümü sonrası estate satışı 1913 (40.000 $) → Louisine Havemeyer; son halka 1929 Met C006 ile A.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C021",
+   "ifade": "Daumier illüstratör olarak tanınıyordu; resimleri 1878 Durand-Ruel Paris sergisine dek bilinmiyordu (ölümünden bir yıl önce).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "Daumier 1840'lardan beri demiryolu imgeleri çizdi/resmetti, odak araçlarda değil yolculardaydı; \"Les Chemins de Fer\" litografi serisi Le Charivari'de 1843–1858; Aralık 1856 üçüncü mevki baskıları (\"Voyageurs appréciant de moins en moins les wagons de troisième classe, pendant l'hiver\"; \"Intérieur d'un wagon de troisième classe pendent l'hiver\").",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C023",
+   "ifade": "Walters suluboyaları (üç: birinci/ikinci/üçüncü mevki) 1864'te George A. Lucas aracılığıyla William Thompson Walters için sipariş edildi; 1864 suluboyanın varlığı C010 ile A.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C024",
+   "ifade": "Üçüncü mevki vagonları: dar, kirli, sert ahşap banklı açık bölmeler; ikinci/birinci mevki bileti alamayanlar için.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "Ön sıra betimi (enwiki): izleyiciye dönük ahşap bankta soldan emziren kadın, sepet üstünde elleri kenetli yaşlı kadın, uyuyan oğlan; arkada anonim erkek/kadın sıraları; konu etiketleri C013 ile A; görsel inceleme YOK.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C026",
+   "ifade": "Ottawa: sağ altta bagaj üstünde imzalı; Hector Brame sahipliği; 1878 Durand-Ruel sergisi; 1946'da Gordon Cameron Edwards'tan alım (\"Purchased 1946\" C016 ile A).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C027",
+   "ifade": "San Francisco versiyonu: oil on panel, 26 × 33,9 cm, c. 1856–1858, 1996 alımı (FAMSF, bağış fonları); ana üç figür farklı düzeni (gözleri kapalı yaşlı kadın, şapkasını kucağında tutan sakallı adam, önündeki çocuğa bakan genç kadın); FAMSF birincil URL refs'te var, açılmadı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C028",
+   "ifade": "NY–Ottawa küçük farkları: silindir şapkalı adamın (sol pencere) ve uyuyan çocuğun (orta-sağ) konumu; başörtülü kadın Ottawa'da daha yaşlı; mavi başlıklı adam (en sağ) Ottawa'da daha genç; arka plan figürleri farklı.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "Üç working drawing günümüze ulaşmış; \"perhaps tracings\"; biri BnF'de.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C030",
+   "ifade": "\"It seems two of the oil paintings were worked on concurrently, but the sequence of the paintings is not clear\"; NY bitmemiş bırakılmış.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C031",
+   "ifade": "NY karelemesi \"possibly from the Walters watercolor or another earlier work\"; siyah konturlu alanlar.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C032",
+   "ifade": "\"The figures may be intended to be peasants, influenced by Jean-François Millet\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C033",
+   "ifade": "WD tarih anomalileri: P571 1868 (ref P143=Q465 DBpedia import) ve 1862 (qual P1319 en erken 1862 / P1326 en geç 2001; ref beckchris.wordpress.com blog + P248=Q97309629); referans öğesi Q97309629 \"missing\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C034",
+   "ifade": "Kleiner, Gardner's Art Through the Ages: The Western Perspective (Cengage Learning, 2010), PA634 Google Books linki enwiki refs'te; kaynakçada anıldı, metne ERİŞİLMEDİ.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "data/ \"yorgun işçi aileleri\" / \"üç kuşak\" yorumu: akrabalık belirsiz (data zaten not eder); NGC \"working class\" der, enwiki \"may be … peasants\" — sınıf/köylü okuması kaynaklar arasında farklı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S9",
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C036",
+   "ifade": "data/ \"Van Gogh mektuplarında Daumier'ye hayranlık\" iddiası bu brief'te erişilen hiçbir kaynakta desteklenmiyor.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C037",
+   "ifade": "D1 tarih ihtilafı: API objectDate \"1864\" ↔ TOAH/Commons/enwiki \"ca. 1862–64\" ↔ WD 1862 (P1326=2001 anomali) ve 1868 (DBpedia). Ders \"c. 1862–1864\" + not kullanır; kesinleştirme YOK.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S7",
+    "S3",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D2 versiyon karışması riski: enwiki üç versiyonu tek maddede anlatır (Met bitmemiş / Ottawa bitmiş-imzalı / SF panel); WD Q3228340 yalnız Met; data/ görsel hash'i (585ff6078a75a57a) doğru Met versiyonuna (DP-21027-001) işaret eder; aynı sanatçı cache'inde Ottawa görseli (Honoré_Daumier_034.jpg) ve Walters suluboyası da var; gunun_resimleri \"The Connoisseur\" (333915) farklı eser.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S1",
+    "S4",
+    "S14"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D3 galeri: TOAH 2014 arşiv \"Gallery 802\" ↔ API 2026 \"812\"; zaman içi değişim; güncel değer 812.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D4 data/ yılı: basyapitlar[81] tarih \"1862\" ve eserler_onbellek yil 1862 (tek yıl) ↔ kaynaklar \"ca. 1862–64\" / API \"1864\"; terminoloji Mevki ↔ Sınıf tutarsızlığı; data DEĞİŞTİRİLMEDİ; düzeltme önerisi ana oturuma.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S14",
+    "S6",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (yalnız metadata + lisans); data/ görsel içerik betimleri (\"Ne görüyoruz?\", \"ışık soldaki pencerelerden süzülür\", hotspot koordinatları) doğrulanmadı; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S7",
+    "S4",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "FAMSF, Walters (3 kayıt), NGC magazine, Kleiner Google Books açılmadı (URL'ler enwiki refs'te BULUNDU, tahmin edilmedi); ilgili ayrıntılar C/E'de; it/de/fr WD sitelink yok (yalnız etiket), enwiki ile yetinildi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "Fransızca başlık \"Le Wagon de troisième classe\" (WD P1476, Commons referanslı; enwiki).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q3228340",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q3228340.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:35:14Z)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (21 QID)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q187506%7CQ296955%7CQ12321255%7CQ861259%7CQ29188408%7CQ539280%7CQ1047337%7CQ2642826%7CQ467%7CQ7569%7CQ8441%7CQ174876%7CQ870%7CQ19652%7CQ60332278%7CQ29940705%7CQ106429444%7CQ465%7CQ97309629%7CQ160236%7CQ565&props=labels&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:35:57Z); URL cache parametrelerinden kuruldu",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Third-Class Carriage wikitext (action=parse, redirects=1)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Third-Class%20Carriage&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:35:58Z); satır içi atıf YOK",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Metropolitan Museum of Art (resmî API)",
+   "belge": "object 436095 (metadataDate 2026-10-10)",
+   "url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436095",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:36:57Z); Denetim B yeniden 200, birebir aynı",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Metropolitan Museum of Art (TOAH, canlı)",
+   "belge": "works-of-art/29.100.129",
+   "url": "http://www.metmuseum.org/toah/works-of-art/29.100.129",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 Vercel Security Checkpoint (17:36:57/17:39:44Z); Denetim B 429 — ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Metropolitan Museum of Art (TOAH, arşiv)",
+   "belge": "Wayback 2014-08-18; sayfa Citation December 2008",
+   "url": "http://web.archive.org/web/20140818030707/http://www.metmuseum.org/toah/works-of-art/29.100.129",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "web_fetch 200 (~17:43Z, 62.376 bayt); AI aracılı çıkarım; ham HTML cache yok",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo (3 dosya: Met bağışlı / GAP / Yorck); Met galeri etiketi",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&titles=File:Honor%C3%A9%20Daumier%2C%20The%20Third-Class%20Carriage%20-%20The%20Metropolitan%20Museum%20of%20Art.jpg%7CFile:Honor%C3%A9%20Daumier%20(French%2C%20Marseilles%201808%E2%80%931879%20Valmondois)%20-%20The%20Third-Class%20Carriage%20-%20Google%20Art%20Project.jpg%7CFile:Honor%C3%A9%20Daumier%20001.jpg&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:36:57Z); görsel metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S8",
+   "kurum": "National Gallery of Canada (canlı)",
+   "belge": "collection/artwork/the-third-class-carriage",
+   "url": "https://www.gallery.ca/collection/artwork/the-third-class-carriage",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 Cloudflare (17:37:48Z) — ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "National Gallery of Canada (arşiv)",
+   "belge": "Wayback 2026-09-07 (Ottawa versiyonu)",
+   "url": "http://web.archive.org/web/20260907162928/https://www.gallery.ca/collection/artwork/the-third-class-carriage",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "web_fetch 200 (~17:42Z, 70.696 bayt); AI aracılı çıkarım; ham HTML cache yok",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Internet Archive (Wayback)",
+   "belge": "availability + CDX (TOAH 96 kayıt; NGC)",
+   "url": "https://archive.org/wayback/available?url=metmuseum.org/toah/works-of-art/29.100.129",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:37:48/17:39:16Z); CDX web_fetch 200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S11",
+   "kurum": "Metropolitan Museum of Art (koleksiyon, canlı)",
+   "belge": "objectURL (S4 yanıtından)",
+   "url": "https://www.metmuseum.org/art/collection/search/436095",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 Vercel (17:44:31Z) — ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Metropolitan Museum of Art (resmî API)",
+   "belge": "v1 search 410 (retired) → v1.1 q=29.100.200 → object 333915 \"The Connoisseur\"",
+   "url": "https://collectionapi.metmuseum.org/public/collection/v1.1/search?q=29.100.200",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "410 (v1, 17:43:45Z); 200 (v1.1, 17:44:47Z); data notu",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikidata",
+   "belge": "Q97309629 (S1 P248 referans öğesi)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q97309629&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:40:44Z); yanıt \"missing\":\"\"; Denetim B yeniden missing",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "Proje (iç veri)",
+   "belge": "data/*.json (basyapitlar, eser_ayrintilari, eser_notlari, eserler_onbellek, yerel_gorseller, gorsel_oranlari vb.)",
+   "url": "— (yerel dosya; URL yok)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel; salt-okunur; DEĞİŞTİRİLMEDİ",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "The Third-Class Carriage (Ottawa versiyonu)",
+   "sanatci": "Honoré Daumier",
+   "kurum": "National Gallery of Canada, Ottawa",
+   "envanter": "4633",
+   "mufredat_ici": false,
+   "gerekce": "Aynı kompozisyonun bitmiş ama yoğun yeniden işlenmiş hali; c. 1863–1865, 1946 alımı; NGC işçi sınıfı okuması.",
+   "kanit": [
+    "C011",
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "eser": "The Third Class Carriage (suluboya, 1864)",
+   "sanatci": "Honoré Daumier",
+   "kurum": "Walters Art Museum, Baltimore",
+   "mufredat_ici": false,
+   "gerekce": "Met etiketinin yakın denklik kurduğu 1864 tarihli suluboya; aktarım zinciri tartışması.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "eser": "Başak Toplayanlar (Des glaneuses)",
+   "sanatci": "Jean-François Millet",
+   "kurum": "Musée d'Orsay, Paris",
+   "mufredat_ici": true,
+   "gerekce": "Realizm ve köylü emeği bağlamı; enwiki'nin Millet etkisiyle köylü figür olasılığı (E, kesin değil) bu karşılaştırmayı motive eder.",
+   "kanit": [
+    "C014",
+    "C032"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Met resmî API (S4) canlı yeniden açıldı (200, birebir aynı; metadataDate 2026-10-10); TOAH canlı hâlâ 429 → Wayback 2014-08-18 (S6) ve NGC Wayback 2026-09-07 (S9) cache'leri yeniden okundu; künye/etiket/Ottawa doğrulandı. WD EntityData (S1) + Q97309629 (S13) yeniden sorgulandı (missing teyit). enwiki wikitext (S3), Commons imageinfo (S7) yeniden okundu. D1/D2/D3/D4 ihtilafları D olarak açık; WD anomalileri E. Görsel metadata only → İNCELENMEDİ (C041); GZ TASLAK. FAMSF/Walters/NGC magazine/Kleiner açılmadı (C042).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih (D4): basyapitlar[81] tarih \"1862\" tek yıl + eserler_onbellek yil 1862 ↔ kaynaklar \"ca. 1862–64\" / API \"1864\" (C040); data DEĞİŞTİRİLMEDİ, düzeltme önerisi ana oturuma.",
+  "Versiyon (D2): data/ görseli Met DP-21027-001 → doğru; aynı sanatçı cache'inde Ottawa görseli (Honoré_Daumier_034.jpg) + Walters suluboyası → karıştırma riski (C038).",
+  "Terminoloji: eser_adlari_tr.json \"Üçüncü Mevki Vagon\" ↔ eser_konulari.json \"Üçüncü Sınıf Vagon\" — küçük tutarsızlık; ders \"Mevki\"yi esas alır (C040).",
+  "Yorumlar: \"üç kuşak/aile\" belirsizlik notuyla (C035); \"yorgun işçi aileleri\" NGC working class ↔ enwiki peasants okuma farkı (C035); \"Van Gogh mektupları\" bu brief'te kaynaksız (C036).",
+  "Görsel içerik (E8): \"Ne görüyoruz?\", \"ışık soldaki pencerelerden süzülür\", hotspot koordinat/metinleri görsel incelenmeden doğrulanamaz (C041); GZ TASLAK.",
+  "imzalar.json honore-daumier=null — Met versiyonunun bitmemiş/imzasız olmasıyla uyumlu (Ottawa imzalı, C026).",
+  "gunun_resimleri.json / yuruyus.json honore-daumier seçimi \"The Connoisseur\" (Met 333915, 29.100.200; S12) — farklı eser; Q3228340 için hata değil, not (C038).",
+  "muze_numaralari.json bu eser için Met 29.100.129 kaydı YOK; muze_tercih.json Daumier yok — veri boşluğu (C003).",
+  "WD anomalileri (E5): P571 1868 (DBpedia) + P1326=2001; P248 Q97309629 missing; blog zayıf (C033).",
+  "gorsel_oranlari 585ff…=1.37 ≈ 90.2/65.4=1.379 ✓; eserler_onbellek kaynak URL = S4 objectURL ✓; lisans CC0 ✓ (Met Open Access)."
+ ]
+}

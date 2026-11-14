@@ -1,0 +1,886 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q19863024",
+ "sanatci_id": "sebastiano-ricci",
+ "baslik": "Banyosunda Batşeba",
+ "ozgun_baslik": "Bathseba im Bade (Bathsheba at Her Bath / Betsabea al bagno)",
+ "kunye": {
+  "sanatci": "Sebastiano Ricci",
+  "sanatci_yasam": "1659 Belluno – 1734 Venezia",
+  "tarih": "y. 1725 (um 1725 / circa 1725)",
+  "tarih_belirsizlik": "SMB \"um 1725\"; WD P571=1725 + P1480 circa; itwiki Berlin için 1726 der (D, C034); görev başlığı c.1720 eşleşmiyor",
+  "teknik": "Tuval (Leinwand); yağlı boya birincil SMB alanında açık değil (WGA/WD; C)",
+  "boyut_cm": {
+   "yukseklik": 111.8,
+   "genislik": 144.3
+  },
+  "muze": "Gemäldegalerie, Staatliche Museen zu Berlin (kamusal)",
+  "envanter": "454",
+  "edinim": "1829/30 Kraliyet Prusya Sarayları'ndan devir; II. Friedrich 1764–1773 Sanssouci için sözde Veronese olarak aldı",
+  "konum": "Sergi salonu SMB kaydında belirtilmemiş (E)",
+  "telif_durumu": "Kamu malı (Ricci ö. 1734); SMB görseli Public Domain Mark 1.0 (foto: Christoph Schmidt); Budapeşte müze fotoğrafları ©"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Sebastiano_Ricci_(1659_-_1734)_-_Bathseba_in_her_Bath_-_454_-_Gem%C3%A4ldegalerie.jpg",
+  "kaynak": "Wikimedia Commons (SMB Gemäldegalerie / Christoph Schmidt); alternatif: Yorck (Sebastiano Ricci 009.jpg), anagoria 4408×3384",
+  "lisans": "Public domain / Public Domain Mark 1.0 (SMB)",
+  "dogrulama": {
+   "yontem": "metadata + lisans (3 Commons dosyası); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "Yorck 2024×1561; anagoria 4408×3384; SMB 2064×1600",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon yalnız SMB (A) + WGA/itwiki (C) metninden; GZ TASLAK; data görsel ayrıntıları E (C041); insan editör görsel teyidi gerekli"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 440
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1326
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2636
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-yapısı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-bir-atıf-yanlışı-nasıl-tarih-oldu"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-kariyer-ve-alımlama-yeni-veronese-olarak-ricci"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-versiyonlar-ve-replikalar-iki-kompozisyon-dört-yanlış-okuma"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-ve-etik-okuma-mektup-çarşaf-bakış"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-yapısı"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri",
+   "DERS_ILERI.md#5-üslup-tartışması-geç-barok-mu-rokoko-mu-pastel-mi"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Birincil SMB kaydıyla künyeyi doğrular (um 1725, tuval, 111,8×144,3, env. 454, kamusal müze).",
+  "Berlin ve Budapeşte versiyonlarını ayırt eder; itwiki/jawiki versiyon karıştırma risklerini (D2/D3/D4) yönetir.",
+  "Mektuplu kadın haberci üzerinden ikonografik tanımlamayı ve data–birincil çelişkisini (D6) analiz eder.",
+  "Ricci'nin kariyer güzergâhını ve Veronese çağrışımını birincil kaynakla bağlamlandırır.",
+  "Boyut/tarih/replika/üslup ihtilaflarını (D) ve görsel inceleme sınırını (E) beyan eder; yorumu olgudan ayırır."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Settecento",
+   "tanim": "18. yüzyıl İtalyan/Venedik sanatı; Ricci, 17. yy geleneğinden çıkışı başlatan ilk ressam (SMB).",
+   "kanit": [
+    "C032"
+   ]
+  },
+  {
+   "ad": "İkonografi",
+   "tanim": "Konuyu tanımlayan figür/öğe; Berlin'de en soldaki mektuplu kadın haberci (Botin).",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "Rückenfigur",
+   "tanim": "Arkadan görülen figür; izleyiciyi resim mekânına sokar (SMB betimi).",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Replika",
+   "tanim": "Aynı kompozisyonun tekrarı; Budapeşte'nin 2 replikası, en az biri eigenhändig (ihtiyatlı).",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Sahiplik/edinme zinciri; Sanssouci (sözde Veronese) → 1829/30 kamusal devir.",
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı Sebastiano Ricci (1659 Belluno – 1734 Venezia); SMB kaydı Schleier 2019 DE+EN, güncelleme 06.08.2026.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S7w"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Berlin tablosu \"um 1725\"/\"circa 1725\"; Ricci'nin geç Venedik dönemi; WD P571=1725 prec=9 + P1480=circa.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Destek tuval (Leinwand); SMB teknik alanında \"yağlı boya\" açıkça yazmaz.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "\"Oil on canvas\" WGA + WD'den (P186 Q296955, Commons import); birincil alanla tam örtüşmez.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C005",
+   "ifade": "Bildmaß 111,8 × 144,3 cm (birincil); jawiki infobox 111.8/144.3.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Gemäldegalerie, Staatliche Museen zu Berlin (kamusal; özel koleksiyon değil); envanter 454; WD P195/P276 Q165631, P217 \"454\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "1829/30 Kraliyet Prusya Sarayları'ndan (Königlich Preußischen Schlössern) müzeye devir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "II. Friedrich 1764–1773 arasında Sanssouci Bildergalerie için \"sözde Veronese\" (als vermeintlichen Veronese / putative Veronese) olarak satın aldı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Ricci atfı ancak 20. yy başında; SMB EN \"(Molmenti 1909)\" (künye C045 E).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "1830–1921 katalogları \"Nach dem Bade\"/\"After the Bath\"; 1931 \"Toilette der Venus\"/\"The Toilet of Venus\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Konu 2 Samuel 11–12 Batşeba–Davud; Berlin'de Davud figürü YOK (geleneksel betimde mazgallardan gözetler).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S1",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Konuyu en solda arka planda Davud'un aşk mektubunu taşıyan kadın haberci (Botin) tanımlar; WGA \"far left … letter from the king\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "SMB/Schleier yorumu: ahlaki ders (Davud'un cezalandırılması) geri plana itilmiş, kadın bedeninin güzelliğine övgü öne çıkar; Susanna/Lucretia/Kleopatra aynı çizgide.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Sahne Veronese tipi Venedik Rönesans villası; figür üslubu, görkemli giysiler, şen-ışıklı renk (beyaz-sarı-mavi-kırmızı akoru) Veronese'yi çağrıştırır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Berlin: baş cepheden, incili topuz + arkadan başörtüsü; havuz yanlardan yuvarlatılmış; nişli/pilasterli beyaz duvar sağa kavisli yükselir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Hizmetçi beyaz çarşafı Batşeba'yı istenmeyen bakışlardan korumak için gerer; izleyici için geçerli değil — Rückenfigur izleyiciyi resim mekânına sokar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Budapeşte ikinci versiyon (Q50890343; 1724; 118,5×199 cm; env. 57.9; oil on canvas; Old Master Paintings; 2. kat European Art 1700–1850 Gallery XXX).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S7w",
+    "S8w",
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Budapeşte: Batşeba profil, uzun dağınık sarı saç (hizmetçi tarar); havuz dikdörtgen; mimari resim düzlemine paralel.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Budapeşte tablosunun 2 replikası bilinir; en az biri Ricci'nin kendi elinden (\"zumindest die eine eigenhändig\"/\"at least one … own hand\"; ihtiyat korunur).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Berlin: 4 hizmetçi + en sağda ayna tutan oğlan; \"kapalı bahçe\" (WGA; birincil sayı vermez, \"bahçe\" demez).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C021",
+   "ifade": "itwiki Berlin: 5 hizmetçi + paggetto; paggetto ile mücevher kutusu uzatan hizmetçi arasında mermer karyatid; mektupcu solda yarı karanlıkta; \"giyinmenin başlangıcı\".",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "WGA: Ricci üslubu Giordano Barok'u ile Tiepolo Rokoko zarafeti arasında köprü; form/renk inceliği 16. yy Venedik altın çağı (Veronese); kariyer kentleri listesi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5",
+    "S2"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C023",
+   "ifade": "Budapeşte müzesi Ricci'yi \"Venedik Rokoko'sunun çok yönlü, üretken ustası\" olarak niteler; açık renkler, havadar gruplandırma, uzamış figürler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8w"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Budapeşte'de Davud zorlukla görünen gözetleyen figür (WGA \"barely visible\"; itwiki \"dal tetto\"); Berlin'de yok — versiyon farkı; WGA \"Venüs tuvaleti\" şeması; itwiki \"vanitosa\" okuması.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6",
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "Budapeşte: açık havada ritüel abdestin son anları; 4 hizmetçi (bacak kurulayan/ayna/saç); solda yağ tepsisi + sadakat simgesi limon bitkisi (Santucci 2008 s.49; kitaba erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "itwiki (Daniels 1976 s.125 scheda 414): Berlin belirgin Veroneseci renk + figürlerde Tintoretto esintileri; bir zamanlar Veronese'ye atfedildi (eski atıf S2 A; kitaba erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Ricci güzergâhı (SMB EN): Roma 1690–94 (Cortona/Gaulli); Milano (Magnasco); Floransa (Giordano); 1697 Venedik; Mocenigo tavanları y.1700 (Berlin); Schönbrunn 1702; Floransa 1706–08; San Giorgio 1708 (Veronese + Titian Pesaro); 1716 Paris (Watteau/Lafosse \"yeni Veronese\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "SMB görseli Public Domain Mark 1.0; foto SMB Gemäldegalerie / Christoph Schmidt; WD P6216 public domain; Commons credit slug bozuk (anasayfa redirect).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Budapeşte müze fotoğrafları telifli (\"copyright of the Museum of Fine Arts\" / \"szerzői jogi védelme alatt áll\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7w",
+    "S8w"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "MFAB/Macar kayıtlar \"ongoing research\" nedeniyle değişebilir ibaresi taşır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S7w",
+    "S8w"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "SMB EN öykü: Davud Batşeba'yı baştan çıkarır; hamile kalınca Urias'ı savaşın en şiddetli yerine gönderir, Urias ölür; ahlaki ders Davud'un cezalandırılması.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "SMB: Ricci, Venedik Settecento'sunu 17. yy karanlıkçı geleneğinden çıkarıp Tiepolo'da doruğa ulaşan yeni dönemi başlatan ilk ressam; Tiepolo'dan bir kuşak eski.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "D1 boyut: 111,8×144,3 (S2; S3) ↔ 109×142 (S5 WGA; S1 WD ref Commons Yorck→WGA; S4). Birincil esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3",
+    "S5",
+    "S1",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "D2 Berlin tarih: um 1725 (S2; S5; S1; S3) ↔ 1726 (S4 itwiki). Görev başlığı \"c.1720\" eşleşmiyor. Birincil um 1725.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S5",
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "D3 Budapeşte tarih: 1724 (S7w; S8w \"1724 körül\"; S12; S6; S10/S11) ↔ \"intorno al 1720\" (S4 atıfsız). Müze 1724.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7w",
+    "S8w",
+    "S12",
+    "S6",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "D4 replika: S2 Budapeşte'ye bağlar ↔ S3 jawiki Berlin der. Birincil Budapeşte; jawiki yanlış okuma adayı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "D5 hizmetçi sayısı: S5 \"four maids\" ↔ S4 \"cinque ancelle + paggetto\"; S2 sayı vermez; görsel inceleme yok. Açık.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S4",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D6 haberci: data \"sağdaki genç haberci (düşünülebilir, kesin değil)\" ↔ S2 \"soldaki kadın haberci\" + S5 \"sağda ayna tutan oğlan\". Data spekülasyonu birincille çelişir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S14",
+    "S2",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D7 Budapeşte boyut: 118,5×199 (S7w; S8w; S12) ↔ 119×199 (S6 yuvarlama). Müze esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S7w",
+    "S8w",
+    "S12",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "D8 üslup: data \"geç Barok\" ↔ eser_notlari \"Rokoko\" ↔ ders_kaynaklari \"pastel\" (dogrulandi). S2 \"festlich-heiter Weiß-Gelb-Blau-Rot\" (pastel demez); S8w Rokoko birincil destekli; pastel birincilde yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S14",
+    "S2",
+    "S5",
+    "S8w"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "E2 data görsel ayrıntıları doğrulanamadı (altın vazo, hayvan başlı çeşme, mermer havuz, el saçta, bilezik, selviler, bulutlu gökyüzü, korkuluk, turuncu/sarı elbise, pembe yastık); WD P180 kısmi; \"mermer\" karyatid için.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S1",
+    "S4",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "E3 Berlin sergi salonu SMB kaydında yok (Budapeşte için var).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "E4 iki replikanın yeri erişilen kaynaklarda belirtilmemiş.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C044",
+   "ifade": "E5 itwiki infobox dosya adı \"1725– Bathsheba.jpg\" ama metadata 1724, 2500×1502 (Budapeşte); dosya adı yanıltıcı; credit muvtor.btk.ppke.hu (erişilmedi).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S11",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "E7 \"Molmenti 1909\" yalnız S2 EN'de anılış; tam künye erişilmedi; bibliyografya uydurulmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "E9 en/de/fr madde YOK (WD sitelink yalnız jawiki); itwiki Budapeşte maddesi; it label her iki WD'de aynı → versiyon karıştırma riski.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S15",
+    "S1",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata/lisans; Berlin PD, Budapeşte ©; GZ TASLAK; kompozisyon kaynak metninden.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S9",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "E10 WD P140=Q5043 (Christianity) olağandışı; iddia olarak kullanılmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "kullanilmadi"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q19863024",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q19863024.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (~17:18Z)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Staatliche Museen zu Berlin",
+   "belge": "Bathseba im Bade, obj-865260 (DE+EN, Erich Schleier 2019)",
+   "url": "https://search.smb.museum/object/obj-865260",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:20:05Z); Denetim B yeniden 200",
+   "tur": "birincil"
+  },
+  {
+   "id": "S2b",
+   "kurum": "SMB",
+   "belge": "aynı kayıt; jawiki ref URL (recherche)",
+   "url": "https://recherche.smb.museum/detail/865260/bathseba-im-bade?language=de",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:20:45Z) → obj-865260",
+   "tur": "birincil"
+  },
+  {
+   "id": "S2c",
+   "kurum": "SMB",
+   "belge": "canonical permalink",
+   "url": "https://id.smb.museum/object/865260",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:21:22Z) → aynı kayıt",
+   "tur": "birincil"
+  },
+  {
+   "id": "S2d",
+   "kurum": "SMB",
+   "belge": "Commons credit slug'lı URL (bozuk)",
+   "url": "https://id.smb.museum/object/865260/batseba-im-bade",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama anasayfaya redirect (bozuk slug)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia ja",
+   "belge": "Bathseba im Bade (Ricci) wikitext (tek WD sitelink; özgün Japonca başlık brief'te)",
+   "url": "https://ja.wikipedia.org/w/api.php?action=parse&page=%E3%83%90%E3%83%86%E3%82%B7%E3%83%90%E3%81%AE%E6%B0%B4%E6%B5%B4%20%28%E3%83%AA%E3%83%83%E3%83%81%29&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (~17:19Z)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia it",
+   "belge": "Betsabea al bagno (Ricci) wikitext — Budapeşte versiyonu maddesi",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=Betsabea%20al%20bagno%20(Ricci)&prop=wikitext",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (~17:23Z)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Web Gallery of Art",
+   "belge": "Bathsheba (Berlin)",
+   "url": "https://www.wga.hu/html/r/ricci/sebastia/2/3bathshe.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:23:29Z); Denetim B yeniden 200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "Web Gallery of Art",
+   "belge": "Bathsheba at her Bath (Budapeşte)",
+   "url": "https://www.wga.hu/html/r/ricci/sebastia/2/2bathshe.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (~17:24Z)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Museum of Fine Arts Budapest",
+   "belge": "artworks/8986 (canlı)",
+   "url": "https://www.mfab.hu/artworks/8986/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "520 (17:20:46Z) — erişilemedi",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7w",
+   "kurum": "MFAB (Wayback)",
+   "belge": "artworks/8986 arşiv kopyası",
+   "url": "https://web.archive.org/web/20240708210351/https://www.mfab.hu/artworks/8986/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2024-07-08; 17:22:13Z)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "Szépművészeti Múzeum",
+   "belge": "Betsabe a fürdőben (canlı)",
+   "url": "https://www.szepmuveszeti.hu/mutargyak/betsabe-a-furdoben/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "520 (17:24:35Z) — erişilemedi",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8w",
+   "kurum": "Szépművészeti (Wayback)",
+   "belge": "Betsabe a fürdőben arşiv kopyası",
+   "url": "https://web.archive.org/web/20221203133347/https://www.szepmuveszeti.hu/mutargyak/betsabe-a-furdoben/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2022-12-03; 17:26:47Z)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: 3 P18 dosyası (Berlin)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (~17:19Z); metadata, İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: WGA19431 + WGA19430",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 → 30sn backoff → 200 (~17:21:50Z); İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: itwiki infobox dosyası",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (~17:25Z); metadata, İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wikidata",
+   "belge": "Q50890343 (Budapeşte versiyonu)",
+   "url": "https://www.wikidata.org/wiki/Q50890343",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (~17:22Z, wbgetentities)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities labels (Q506483, Q165631, Q840886, Q69805487)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (~17:19Z / 17:23:13Z)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S14",
+   "kurum": "Yerel data/",
+   "belge": "basyapitlar[57], eserler_onbellek, eser_notlari, eser_ayrintilari[61], eser_adlari_tr, eser_konulari, ders_kaynaklari, ikonografi",
+   "url": "data/basyapitlar.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel, salt-okunur",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S15",
+   "kurum": "Wikipedia",
+   "belge": "opensearch: it tek sonuç; en/de boş",
+   "url": "https://it.wikipedia.org/w/api.php?action=opensearch",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:23:13Z / ~17:25Z)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S16",
+   "kurum": "Web Gallery of Art",
+   "belge": "frameset + Ricci index",
+   "url": "https://www.wga.hu/html/r/ricci/sebastia/index.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (~17:22Z)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S17",
+   "kurum": "Internet Archive",
+   "belge": "wayback availability API (mfab + szep)",
+   "url": "https://archive.org/wayback/available",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (17:21:22Z / ~17:25Z)",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Bathsheba at her Bath (Budapeşte versiyonu)",
+   "sanatci": "Sebastiano Ricci",
+   "kurum": "Museum of Fine Arts, Budapeşte",
+   "envanter": "57.9",
+   "mufredat_ici": false,
+   "gerekce": "Aynı konu, farklı kompozisyon (profil/dikdörtgen havuz); replikalar bu versiyona ait.",
+   "kanit": [
+    "C017",
+    "C018",
+    "C019"
+   ]
+  },
+  {
+   "eser": "Palazzo Mocenigo tavan resimleri",
+   "sanatci": "Sebastiano Ricci",
+   "kurum": "Gemäldegalerie, Berlin",
+   "mufredat_ici": false,
+   "gerekce": "Aynı müzede Ricci'nin erken Venedik dönemi (y. 1700, Giordano etkisi); kariyer karşılaştırması.",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "eser": "Susanna / Lucretia / Kleopatra betimleri (İtalyan 17–18. yy geleneği)",
+   "sanatci": "Çeşitli",
+   "mufredat_ici": false,
+   "gerekce": "Ahlaki dersin kadın bedeni övgüsüne dönüşmesi geleneği (SMB/Schleier karşılaştırması).",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "SMB birincil (S2, obj-865260 DE+EN) ve WGA Berlin (S5) Denetim B'de YENİDEN AÇILDI (200, 2026-11-14; denetimB-smb.html / denetimB-wga.html); künye/um 1725/Leinwand/111,8×144,3/env 454/1829-30/sözde Veronese 1764-73/Molmenti 1909/eski başlıklar/Botin solda/Weiß-Gelb-Blau-Rot/pearl-studded/rounded basin/Two replicas eigenhändig/PDM 1.0 birebir teyit. Budapeşte birincil MFAB+szep canlı 520 → Wayback (2024-07-08 / 2022-12-03) yeniden okundu; 1724/118,5×199/57.9/Rokoko nitelemesi doğrulandı. itwiki/jawiki wikitext yeniden okundu; D1-D8 açık. Görsel metadata only → İNCELENMEDİ (C047); GZ TASLAK. Kitaplara (Daniels/Santucci/NHK/Ōshima/Pigler/Schleier/Molmenti) erişilmedi.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: data \"1725\" → birincil \"um 1725\" (circa eklenmeli, C034); görev başlığı \"c.1720\" eşleşmiyor (C034/C035).",
+  "Müze: Gemäldegalerie Berlin ✓ A, kamusal (özel koleksiyon değil); env. 454 (C006).",
+  "Haberci (D6): data \"sağdaki genç haberci\" ↔ birincil \"en solda kadın haberci\" (C012/C038); sağdaki genç WGA'ya göre ayna tutan oğlan.",
+  "Görsel ayrıntılar (E2): altın vazo, hayvan başlı çeşme, mermer havuz, el saçta, bilezik, selviler, bulutlu gökyüzü, korkuluk, turuncu/sarı elbise, pembe yastık → doğrulanamadı (C041); görsel incelenmedi.",
+  "Üslup (D8): \"geç Barok\" ↔ \"Rokoko\" ↔ \"pastel\" (dogrulandi); birincil \"pastel\" demez (C040); Rokoko S8w/S5 destekli; önceki dogrulandi yeniden değerlendirilmeli.",
+  "eser_notlari: \"beyaz örtü\" ✓ A (C016); \"mermer havuz\" → E2 (C041).",
+  "kunye/muze_numaralari: bu QID için kayıt yok (boşluk); env. 454 artık A kaynaklı (C006).",
+  "Görsel İNCELENMEDİ (C047); GZ TASLAK; Berlin PD / Budapeşte ©; insan editör zorunlu."
+ ]
+}

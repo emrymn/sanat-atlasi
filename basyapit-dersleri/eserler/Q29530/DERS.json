@@ -1,0 +1,1212 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q29530",
+ "sanatci_id": "eugene-delacroix",
+ "baslik": "Halka Yol Gösteren Özgürlük",
+ "ozgun_baslik": "Le 28 juillet 1830. La Liberté guidant le peuple (Liberty Leading the People / La Libertà che guida il popolo)",
+ "kunye": {
+  "sanatci": "Eugène Delacroix",
+  "sanatci_yasam": "1798–1863 (Charenton-Saint-Maurice – Paris)",
+  "tarih": "1830",
+  "tarih_belirsizlik": "Eylül–Aralık 1830 (K1); tamamlanma Ekim–Aralık (K3/K7 P571); Mayıs 1831 Salonu",
+  "teknik": "Tuval üzerine yağlıboya (huile sur toile)",
+  "boyut_cm": {
+   "yukseklik": 260,
+   "genislik": 325
+  },
+  "muze": "Musée du Louvre, Département des Peintures, Paris",
+  "envanter": "RF 129",
+  "edinim": "Devlet satın alması, Ağustos 1831, 3.000 frank (Commerce et Travaux publics); Louvre'a transfer Kasım 1874; envanter 1875",
+  "konum": "Salle 700 (Salle Mollien, romantisme), Aile Denon, Niveau 1 (K1; site oda bilgisi güncel olmayabilir uyarısı)",
+  "telif_durumu": "Kamu malı (Delacroix ö. 1863; 100+ yıl pma); Commons PD (Shonagon 2024)"
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
+  "kaynak": "Wikimedia Commons — photo Shonagon 2024-05-02 (2024 restorasyonu sonrası); WD P18",
+  "lisans": "Public domain (AttributionRequired false; kredi önerilir: Shonagon 2024)",
+  "dogrulama": {
+   "yontem": "metadata only (API imageinfo); BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "10128×8103 px; ~31,2 MB JPEG",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre/ana oturuma; GZ TASLAK; K9 restorasyon öncesi 3133×2480 (ticari reproduksiyon zinciri zayıf); yerel 400×320 sürümü doğrulanmadı; D10/C073 renk farkı nedeniyle sürüm kontrolü önerilir; kompozisyon K1/K3/K4/K5/K6 metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 434
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1362
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2624
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kayıt-ve-iç-çelişkiler"
+  ],
+  "2": [
+   "DERS_BASLANGIC.md#hangi-devrim-1830-mu-1789-mu",
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-tam-zincir"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-biçimsel-analiz-derinliği-piramit-ve-hareket"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-derinliği-alegori-ve-gerçekçilik"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-ve-malzeme-restorasyon-tarihi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Louvre birincil kaydıyla künyeyi (RF 129, 260×325, 1830, Salle 700, Ağustos 1831 alımı 3.000 frank) doğrular.",
+  "1830 Temmuz Devrimi (Trois Glorieuses) bağlamını kurar ve 1789 yanılgısını ayırt eder.",
+  "Piramidal kompozisyonu, renk birliğini ve alegori-gerçekçilik sentezini kaynak betimiyle analiz eder.",
+  "Provenans zincirini (1831→2024) ve restorasyon tarihini (1920/1949/1999/2023–24) izler.",
+  "D1–D13 ihtilaflarını ve E belirsizliklerini yönetir; görsel inceleme sınırını ve GZ TASLAK durumunu beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Alegori",
+   "tanim": "Soyut bir kavramın figürle temsili; burada Özgürlük, halktan genç kadın / Marianne.",
+   "kanit": [
+    "C022",
+    "C024"
+   ]
+  },
+  {
+   "ad": "Frig başlığı (bonnet phrygien)",
+   "tanim": "1789 Devrimi'nden beri özgürlük simgesi olan başlık; sans-culotte ve halk egemenliği çağrışımı.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "ad": "Trois Glorieuses",
+   "tanim": "27–29 Temmuz 1830 \"Üç Şanlı Gün\"; Charles X'ı deviren Temmuz Devrimi.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "ad": "Tarih resmi (history painting)",
+   "tanim": "Tarihsel/alegorik anlatı türü; Delacroix belge+sembol, gerçeklik+alegori karışımıyla modernleştirir.",
+   "kanit": [
+    "C015",
+    "C038"
+   ]
+  },
+  {
+   "ad": "Rentoilage",
+   "tanim": "Tuvalin yeni bir destek tuvale yapıştırılması (konservasyon); 1949 Lepage/Maridat müdahalesi.",
+   "kanit": [
+    "C050"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Özgün başlık \"Le 28 juillet 1830. La Liberté guidant le peuple\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Diğer başlık \"Une Barricade\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Sanatçı Eugène Delacroix (Charenton-Saint-Maurice 1798 – Paris 1863), Fransız okulu.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarih 1830 (\"2e quart du XIXe siècle (1830)\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Eylül–Aralık 1830, Paris 15 quai Voltaire kiralık atölye; kapı no \"au 15 (actuel n°17 ?)\" kuşku işareti korundu (E1).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Eylül 1830 başlandı, Ekim–Aralık 1830 tamamlandı; Mayıs 1831 Salonu; WD P571 qualifiers tamamlanma penceresi (E17).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Tuval üzerine yağlıboya (huile sur toile).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K5",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "260 × 325 cm (H 2,6 m; L 3,25 m).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Aksesuarlı 297 × 365 cm; 1831 kaydı 293×358, 1999 nakil 2,99×3,62 m farklı (→ C069 D6).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "İmza \"Eug. Delacroix.1830\", kırmızı yağlıboya, sağda yarı yükseklik (ön yüz); K3 \"on the back\" (→ C070 D7).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Envanter RF 129; ilk envanter 1875.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Louvre Département des Peintures; mülkiyet Etat (devlet).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Salle 700 (Salle Mollien, romantisme), Denon, Niveau 1; site oda bilgisi güncel olmayabilir uyarısı (E8).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Ağustos 1831 devlet satın alması (Commerce et Travaux publics), 3.000 frank.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Tür: tarih resmi (P136 Q742333); akım: Romantizm (P135 Q37068); Delacroix Romantic okul lideri (Noon 2003 s.58, atıf zinciri).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K7",
+    "K5",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "TR ad \"Halka Yol Gösteren Özgürlük\" (WD tr label + yerel data; birincil kayıtta TR yok).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K7",
+    "K13"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C017",
+   "ifade": "Kamu malı (ölüm 1863; 100+ yıl pma; WD P6216 Q19652 + P459 Q29940705; Commons PD).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K7",
+    "K8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Konu: 27–29 Temmuz 1830 Temmuz Devrimi (Trois Glorieuses); X. Charles devrildi, yerine Louis-Philippe d'Orléans.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Bağlam: Polignac; basın özgürlüğünü kaldıran + seçim yasasını değiştiren dört ordonans; \"adresse des 221\"; Le National (Cricco-Di Teodoro s.1496).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K4",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Delacroix tanık oldu, savaşmadı; \"ülkem için savaşmadıysam en azından onun için resim yapacağım\" (kardeşe mektup; tarih → C064 D1).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Louvre koleksiyonlarının korunmasına yardım etti; Notre-Dame'a çekilen tricolor'dan etkilendi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Özgürlük alegorisi: halktan genç kadın; Frig başlığı; 1789 Devrimi, sans-culotte, halk egemenliği çağrışımı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Sağda tricolor bayrak (ışığa alev gibi açılır), solda süngülü piyade tüfeği (1816 model); yalınayak (ağırlık sol ayakta); giysi göğüs altına kaymış, göğsü açık alegorik figür; başını erkeklere çevirip son zafere teşvik eder, savaşın gerçek protagoniştir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Figür Marianne olarak okunur: Fransa/Cumhuriyet simgesi (K6 Loescher; K4 anahtar kelime; K7 P180 preferred Q325956).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6",
+    "K4",
+    "K7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Gerçekçilik: koltuk altı tüyleri klasikçilerce \"vulgar\"; antik kanatlı Zaferler (Victoires ailées) ile \"erotic realism\"/\"réalisme érotique\"; Yunan profil (açık ayrıntıya girilmez).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Sağdaki çocuk: iki süvari tabancası, siyah kadife öğrenci beresi (faluche), büyük fişeklik, savaş çığlığı, sağ ayak önde (Gavroche → C077).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Soldaki ikinci çocuk: parke taşlarına tutunmuş, hafif piyade (voltigeur) başlığı, geniş açılmış gözler.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Silindir şapkalı adam: burjuva/moda kentli; bol pantolon, kırmızı flanel kuşak; çift namlulu av tüfeği (tromblon); K3/K4 diz çökmüş; kimlik belirsiz (→ C071/C072/C076).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Bereli işçi: beyaz monarşist kokard + kırmızı liberal kurdele; 1816 briquet piyade kılıcı; önlük + denizci pantolonu; Cholet mendili (Charette/Vendée).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Mendilli yaralı adam: Özgürlük'ü görünce doğrulur; mavi bluz/ceket, kırmızı flanel kuşak, beyaz gömlek → bayrak renkleri yankısı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Ön plan cesetleri: solda pantolonu çıkarılmış, kolları açık, tuniği sıyrılmış yarı çıplak isyancı (\"Hector\" akademi modeli; K6 çorap); sağda İsviçreli muhafız (gri-mavi palto, kırmızı yaka, beyaz tozluk, shako) + yüzükoyun kürasir (beyaz apolet).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Arka plan solda öğrenciler (Bonapartist bikornlu École Polytechnique) + gri paltolu grenadier müfrezesi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Notre-Dame kuleleri Paris'i konumlar; Sol Yaka yönü TARİHSEL HATALI, katedral-nehir arası evler hayal ürünü (ikinci tricolor → C078).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Piramidal kompozisyon; cesetli taban kaide gibi; sıkı şema coşkulu fırça vuruşlarını/impetuous ritmi dengeler; Medusa'nın Salı + Missolonghi karşılaştırması (Argan → C079).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Renk birliği: mavi-beyaz-kırmızı karşıtlıkları; beyaz kayışlar ↔ tozluklar ↔ soldaki cesedin gömleği; gri ton kırmızıyı yüceltir; gün batımı + top dumanı Özgürlük/çocuk/bayrak aurası.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "İkonografik kaynaklar: Medusa'nın Salı (piramit, iki ön plan cesedi, çorap) + Venere di Milo (K6) / Women of Algiers modeli (K3) → C074 D11.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Yaygın yanlış: tablo 1789 DEĞİL, 1830 ayaklanmasını gösterir (Guardian Jones 2005; Yalom 1997 s.122).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Eleştirmenlerce reddedildi; Louis-Philippe rejimi gizledi; belge+sembol/güncellik+kurgu/gerçeklik+alegori karışımı; Ancien Régime ölüm sancıları tanığı; Argan \"ilk politik tablo\"; Guernica öncüsü (yorum).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "\"Elle remplace d'Arcole\" — pont de la Grève'e tricolor diken \"Arcole\" isyancı efsanesi (Lazare 1844; editör yanıtı).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "Ocak 1831: Temmuz yaralıları 2. sergi (Chambre des Pairs, Luxembourg) düşünüldü, livret 508 \"Une Barricade\"; gerçekte ödünç verilmedi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C041",
+   "ifade": "Jüri 13 Nisan 1831; Salon 1831 (1 Mayıs–15 Ağustos), Musée royal, livret 511; giriş kaydı 1380 \"La Liberté guidant le peuple au 29 juillet\" [sic], \"293 x 358 cm\" çerçeve dahil (E3; D6).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C042",
+   "ifade": "Temmuz 1831 Liste civile 2.000 frank teklif; Ağustos 1831 bakanlık 3.000 franka satın aldı (iptal Valmy kulübesi komandası yerine).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "Luxembourg 1832–33 (kat. ek 160); ~1833–34 depo; ~1839 sanatçıya emanet; teyze Félicité Riesener + kuzen Léon Riesener, Frépillon (D2 → C065).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "Mart 1848 Musées nationaux geri istedi; Delacroix toplam 10.000 frank istedi, reddedildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "Mayıs 1848–Mart 1849 Lyon sergisi için Alphonse Jame'e 1.000 frank ödünç (ödemeler 11 Eylül 1849 + 8 Mart 1850); Mart 1849 idareye iade.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C046",
+   "ifade": "Haziran 1849–1850 muhtemelen Luxembourg (katalogda yok; \"possiblement\" E2); 1850–1855 Louvre depoları.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C047",
+   "ifade": "1855 Exposition universelle, Palais de l'Industrie et des Beaux-arts, livret 2926 (D3 → C066).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C048",
+   "ifade": "1856–63 depo; 1863–74 Luxembourg; Kasım 1874 Louvre transfer; 1875 envanter; salle des États (D4 → C067, D5 → C068).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C049",
+   "ifade": "I. Dünya Savaşı Toulouse Jacobins 1914–18; 1920 Lucien Aubert; II. Dünya Savaşı Chambord 1939 → Sourches 29 Eylül 1943 → 16 Haziran 1945 dönüş.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C050",
+   "ifade": "Yaz 1949 Lepage/Maridat (rentoilage) + Zezzos; Mollien Ekim 1949–1969; Daru Haziran 1969–Haziran 1994; Aralık 1995'ten beri Mollien.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C051",
+   "ifade": "Ocak–Şubat 1999 Cueco/Bergeaud (şasi değişimi, kenar gergi bandları); Tokyo 26 Şubat–28 Mart 1999 (Musée d'art occidental) (Beluga → C080).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C052",
+   "ifade": "Strasbourg 15 Eylül–12 Aralık 2004 \"Icônes de la révolution\"; Louvre-Lens Galerie du Temps 4 Aralık 2012–2 Aralık 2013; Louvre/Met Delacroix 2018–19 (vandalizm → C081).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "Ekim 2023–Nisan 2024 restorasyonu (Bénédicte Trémolières / Laurence Mugniot, temizlik + réintégration) (bulgular → C082).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "1974–75 \"French Painting 1774–1830: The Age of Revolution\": Grand Palais / Detroit / Met (K1 sergi listesinde YOK; liste seçici olabilir, E15).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Marianne'ın en bilinen erken tasviri; Cumhuriyet/Fransa simgesi (Warner 2000 s.270–71).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "Bartholdi Özgürlük Heykeli'ne ilham (BBC 2005; ölü URL → arşiv 2011-01-06); heykel meşale tutar, daha sabit/kıpıdamaz duruş.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5",
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "100 frank banknotu 1978–1995 (K5 atıfsız cümle; K6 1993 görseli).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5",
+    "K6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C058",
+   "ifade": "1944 Kurtuluş afişleri; de Gaulle broşürleri; Mitterrand 1981; 1968; kadın hakları; İspanya İç Savaşı cumhuriyetçileri; Milva 1965 (K6 zayıf/uyumsuz ref mlkmuggio; E16).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C059",
+   "ifade": "Coldplay \"Viva la Vida\" (2008) albüm kapağı (Guardian 2008).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "Zeki Faik İzler \"İnkılap Yolunda\" (1933) etkilendi; sanatçı kabul etti (Şenol 2016 s.163–164; Cantay 1994).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C061",
+   "ifade": "George Antheil Senfoni No. 6 \"After Delacroix\" (classical.net; ref ölü/erişilmedi) (İrlanda pulu → C084).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "2024 Olimpiyat açılışı Conciergerie canlandırması (sortiraparis); John Wick 4 Louvre çekimi (Looper) (Gazze → C083).",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C063",
+   "ifade": "Ghost in the Shell SAC 2045, Vincenzo (2021), Maaveeran (2023) — {{cn|date=July 2026}} ATIFSIZ; kullanılmaz (E13).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "kullanilmadi"
+  },
+  {
+   "id": "C064",
+   "ifade": "D1 mektup tarihi: K5 \"21 October\" ↔ K3 \"October 28\" (aynı alıntı); K3 yeğen Verninac'a ayrı mektup; K6 tarihsiz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K5",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C065",
+   "ifade": "D2 sanatçıya iade: K5 \"1832 Haziran Ayaklanması sonrası\" ↔ K1 \"vers 1839\"; K3 Louis-Philippe dönemi gizleme.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K5",
+    "K1",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C066",
+   "ifade": "D3 1855 sergisi: K5 \"Salon of 1855\" ↔ K1 \"Exposition universelle, Palais de l'Industrie, n° 2926\" ↔ K6 \"Esposizione Universale, Napoleone III\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K5",
+    "K1",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C067",
+   "ifade": "D4 1874: K5 \"Third Republic finally acquired\" ↔ K1 mülkiyet 1831'den beri devlette, \"déplacé ... novembre 1874\", envanter 1875; K6 transferle uyumlu.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K5",
+    "K1",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C068",
+   "ifade": "D5 Luxembourg ilk giriş: K3 \"only entered ... 1863\" + K4 \"Elle entra en 1863\" ↔ K1 \"1832 et 1833\" (+ muhtemelen 1849–50); Louvre İÇİ.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C069",
+   "ifade": "D6 çerçeveli boyut: K1 Salon 1831 \"293 x 358 cadre compris\" ↔ K1 güncel 297×365 \"avec accessoire\" ↔ K5 1999 \"2.99 × 3.62 m\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C070",
+   "ifade": "D7 imza yeri: K1 \"à droite à mi-hauteur\" (ön yüz) ↔ K3 \"Signed on the back, middle right\"; K13 data ön yüz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C071",
+   "ifade": "D8 silindir şapkalı kimliği: K5 otoportre reddi (Toussaint 1982) + Arago/Villot, \"no firm consensus\" (Pool 1969) ↔ K3 \"may be Delacroix or friend\" ↔ K4 soru ↔ K6 \"forse Guillemardet\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K5",
+    "K3",
+    "K4",
+    "K6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C072",
+   "ifade": "D9 diz çöken figür: K3/K4 silindir şapkalı \"à genoux\" ↔ K6 deri önlüklü genç işçi (Cricco s.1498); görsel inceleme YOK, çözüm önerilmez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K6",
+    "K13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C073",
+   "ifade": "D10 elbise rengi: K3/K4 \"yellow dress\"/\"habit jaune\" ↔ K5 2024 \"light grey with bits of gold\" (1949 atfı) ↔ K7 P180 \"ecru\" (Q1970335); K13 kahverengi/gri.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K4",
+    "K5",
+    "K7",
+    "K13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C074",
+   "ifade": "D11 model: K6 Venere di Milo (1820/1821 Louvre, Morante ölü URL arşiv 2016-12-11) ↔ K3 Women of Algiers modeli; birincil kayıtta yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K6",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C075",
+   "ifade": "D12 karanlık yan: K4 FR \"flanc droit sombre\" ↔ K3 EN \"dark left side\"; aynı yazar, sağ/sol çelişkisi; ikisi de sağdan aydınlatma.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K4",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C076",
+   "ifade": "D13 silah terminolojisi: K3 \"double-barreled hunting gun\" ↔ K6 \"doppietta\" ↔ K4 \"tromblon à deux canons\" ↔ K7 \"blunderbuss\" (Q1148444) ↔ K13 \"tüfek\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "K3",
+    "K6",
+    "K4",
+    "K7",
+    "K13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C077",
+   "ifade": "E7 Gavroche etkisi: K5 \"may have influenced/widely believed\", K6 \"Si dice\", K4 \"évoque ... trente ans plus tard\"; K3 anakronik \"Gavroche\" adlandırma (roman 1862); belgelenmemiş.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5",
+    "K6",
+    "K3",
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C078",
+   "ifade": "Notre-Dame kulelerinde ikinci küçük tricolor (Boime 2004 s.237, atıf zinciri).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C079",
+   "ifade": "Argan 1970 s.59–60: Medusa hareket önden arkaya, Özgürlük izleyiciye doğru \"si precipita verso lo spettatore\" (atıf zinciri).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C080",
+   "ifade": "1999 Tokyo nakli Airbus Beluga (~20 saat, Bahreyn/Kalküta, 2,99×3,62 m, basınçlı izotermal konteyner) — K5 allaboutguppys ref ölü/erişilmedi, zayıf; quizde kullanılmaz.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C081",
+   "ifade": "7 Şubat 2013 Louvre-Lens \"AE911\" vandalizmi; <2 saatte restoratörce özgün boya zarar görmeden temizlendi (Independent 2013).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C082",
+   "ifade": "2023–24 bulguları: 8 kat vernik/kir; elbise sarı değil açık gri + altın (1949 atfı); sol altta park taşına karışmış bot; canlı beyaz bulutlar (Smithsonian/artnet/Le Monde/France24).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C083",
+   "ifade": "2018 Gazze fotoğrafı (Aed Abu Amro, Mustafa Hassona, 22 Ekim 2018) tabloya benzetildi (BBC 2018).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C084",
+   "ifade": "1979 İrlanda pulu (Robert Ballagh, Pearse 100. yıl) — heindorff ref ölü → arşiv 2017-07-19, çekilmedi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C085",
+   "ifade": "Görsel İNCELENMEDİ (vision kotası ana oturumda); K8 2024 sonrası Shonagon 10128×8103 PD; K9 öncesi 3133×2480 PD (zayıf ticari zincir); K13 yerel 400×320 sürümü doğrulanmadı; GZ TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K8",
+    "K9",
+    "K13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C086",
+   "ifade": "Kitap/refs metinlerine ERİŞİLMEDİ (Toussaint, Boime, Pool, Warner, Mould, Berg, Néret, Noon, Yalom, Cricco-Di Teodoro, Argan, Calvino, Lee Johnson, Compin/Roquebert, Sérullaz, Robaut, Fabre, Allard/Fabre, Jobert, Bory, Furet, Vigier, Joubin, Hadjinicolaou); kaynakçada anıldı, alıntı üretilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K3",
+    "K4",
+    "K5",
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C087",
+   "ifade": "E10: K3 \"Acquired in 1983 , 1831\" bariz dizgi hatası; sessizce düzeltilmedi; K1 kazanım 08/1831.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3",
+    "K1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C088",
+   "ifade": "E11: K6 \"3.000 franchi ... (tra i 6000 e gli 8000€ del 2024)\" atıfsız/şüpheli dönüşüm; KULLANILMAZ.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C089",
+   "ifade": "E6: \"Several figures probably borrowed from a print by Nicolas Charlet\" (BBC ref ölü → arşiv 2011-01-06; \"probably\" korundu).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C090",
+   "ifade": "E12: K3 \"his personal ambiguity probably confined him to ... simple bystander (noted by Alexandre Dumas)\" — \"probably\" korundu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Musée du Louvre",
+   "belge": "Güncel katalog EN, ARK cl010065872; \"Last updated on 09.09.2025\"",
+   "url": "https://collections.louvre.fr/en/ark:/53355/cl010065872",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML+TXT",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Musée du Louvre",
+   "belge": "Aynı kaydın JSON'u (sayfada linkli); \"modified: 2026-08-11\"",
+   "url": "https://collections.louvre.fr/ark:/53355/cl010065872.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "birincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Musée du Louvre / M. B. Dorbani",
+   "belge": "Eski EN notice \"July 28: Liberty Leading the People\" (© 2009), Wayback kopyası",
+   "url": "http://web.archive.org/web/20210116102855/https://www.louvre.fr/en/oeuvre-notices/july-28-liberty-leading-people",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ARŞİV 2021-01-16 (canlı URL ölü/yönlendiriyor)",
+   "tur": "birincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Histoire par l'image (GrandPalaisRmn)",
+   "belge": "Dorbani-Bouabdellah analizi, Aralık 2011; görsel © GrandPalaisRmn (musée du Louvre) / Didierjean / Rabeau; RF 129 - 24-513281",
+   "url": "https://histoire-image.org/etudes/liberte-guidant-peuple-eugene-delacroix?m=libert%C3%A9%20guidant%20le%20peuple&d=1&i=234",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikipedia (en)",
+   "belge": "\"Liberty Leading the People\" wikitext (action=parse, redirects=1)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Liberty%20Leading%20the%20People&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K6",
+   "kurum": "Wikipedia (it)",
+   "belge": "\"La Libertà che guida il popolo\" wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=La%20Libert%C3%A0%20che%20guida%20il%20popolo&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K7",
+   "kurum": "Wikidata",
+   "belge": "Q29530 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q29530.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K8",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: WD P18 (2024 restorasyonu sonrası, Shonagon 2024-05-02)",
+   "url": "https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K9",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: restorasyon öncesi dosya (K5 thumb)",
+   "url": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K10",
+   "kurum": "Wikidata",
+   "belge": "P9394 property (P1630 formatter doğrulama)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/P9394.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K11",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiket çözümlemesi (2 parti; Q325956/Q1970335/Q1148444/Q4032385/Q3044768/Q742333/Q37068 vb.)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (labels)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K12",
+   "kurum": "Internet Archive",
+   "belge": "Wayback availability API (ölü notice için)",
+   "url": "http://archive.org/wayback/available?url=www.louvre.fr/en/oeuvre-notices/july-28-liberty-leading-people",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K13",
+   "kurum": "Yerel (salt-okunur)",
+   "belge": "data/basyapitlar.json, eser_ayrintilari.json, eser_notlari.json, eser_konulari.json, gorsel_kaynagi.json vb.; gorseller/k/d95b0d9ccf1fd331.jpg (sips metadata)",
+   "url": "— (yerel dosya; URL yok)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "salt-okunur; metadata; içerik İNCELENMEDİ",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Medusa'nın Salı (Le Radeau de la Méduse)",
+   "sanatci": "Théodore Géricault",
+   "kurum": "Musée du Louvre, Département des Peintures",
+   "mufredat_ici": true,
+   "gerekce": "Piramidal şema, iki ön plan cesedi, çorap detayı; Argan hareket yönü tersine çevirme (Medusa geri, Özgürlük ileri).",
+   "kanit": [
+    "C034",
+    "C036",
+    "C079"
+   ]
+  },
+  {
+   "eser": "Guernica",
+   "sanatci": "Pablo Picasso",
+   "kurum": "Museo Nacional Centro de Arte Reina Sofía, Madrid",
+   "mufredat_ici": true,
+   "gerekce": "Argan \"modern resmin ilk politik tablosu\" / Guernica öncüsü önermesi (yorum); politik şiddetin alegorik temsili.",
+   "kanit": [
+    "C038"
+   ]
+  },
+  {
+   "eser": "İnkılap Yolunda (On the Path to Revolution)",
+   "sanatci": "Zeki Faik İzler",
+   "mufredat_ici": false,
+   "gerekce": "1933; Delacroix'den etkilendi, sanatçı kabul etti; kadın figürü ve devrim teması Marianne'la paralel (Türk sanatına bağ).",
+   "kanit": [
+    "C060"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Louvre birincil K1/K2 (200) + Wayback K3 (2021-01-16) + histoire-image K4 (2011) yeniden açıldı; künye/konu/provenans/restorasyon doğrulandı. K5/K6 wikitext yeniden okundu; D1–D13 (C064–C076) ve E (C077/C085–C090) açık. Görsel K8/K9/K13 metadata only, İNCELENMEDİ (C085) → GZ TASLAK. Kitap metinleri erişilmedi (C086).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Özgün başlık alanı: data/basyapitlar.json \"ozgun\" = TR tekrarı; özgün başlık K1 \"Le 28 juillet 1830. La Liberté guidant le peuple\" (C001).",
+  "Renk: data \"kahverengi ve gri tonlar\" → 2024 restorasyonu ÖNCESİ görünüm; sonrası açık gri + altın (C082/C073 D10); yerel görsel sürümü doğrulanmadı.",
+  "İmza: data \"sağ ortada kırmızı\" ✓ K1 (C010); D7 (C070) K3 \"on the back\".",
+  "Notre-Dame: data \"sağ arkada\" ✓ ama topoğrafya hatası/hayal ürünü evler nüansı data'da yok (C033).",
+  "Diz çökmüş figür: data \"mavi gömlek/kırmızı kuşak/beyaz\" ✓ yaralı figür (C030); D9 (C072) itwiki deri önlüklü işçi der.",
+  "Silindir şapkalı silahı: data \"tüfek\" → tromblon/blunderbuss terminoloji (D13, C076).",
+  "Eksik kayıtlar: data/kunye.json + muze_numaralari.json Q29530 YOK; RF 129 + 260×325 K1'den (C008/C011).",
+  "Konu: eser_konulari t=\"tarih\" ✓ ama alegori boyutu da var (C022/C024); sınıflandırma nüansı.",
+  "Görsel zinciri: d95b0d9ccf1fd331 → noracloud \"d63570d9\"; yerel 400×320; WD P18 = 2024 sonrası Shonagon (K8); sürüm DOĞRULANMADI (C085).",
+  "Kaynak dizgi/şüpheli: K3 \"Acquired in 1983 , 1831\" (C087); K6 euro dönüşümü (C088, KULLANILMAZ); K1/K2 metadata tarih farkı (E9).",
+  "Görsel İNCELENMEDİ (C085); GZ TASLAK; insan editör görsel teyidi + D1–D13 editoryal kararı zorunlu."
+ ]
+}

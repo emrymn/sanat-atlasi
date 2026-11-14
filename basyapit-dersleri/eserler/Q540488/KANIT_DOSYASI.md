@@ -1,0 +1,173 @@
+# KANIT DOSYASI — Q540488 · Ornans'ta Cenaze (Un enterrement à Ornans / A Burial at Ornans) · Gustave Courbet
+
+**Tarih:** 14 Kasım 2026 · **Parti:** 4 · **Standart:** `../../AKADEMIK_STANDART.md`
+**Durum:** İnsan incelemesi bekliyor.
+**Araştırma brief'i:** `.qwen/tmp/parti4/Q540488-brief.md` (kaynak-arastirma agent; ham cache `.qwen/tmp/parti4/Q540488-*`).
+
+---
+
+## 0. Yöntem ve kaynak hiyerarşisi
+
+Eser bir tuvaldir (Musée d'Orsay, Paris). Birincil URL keşfi **tahminle değil**, itwiki satır içi ref'inden (eski "opere commentate" sayfası) ve WD P4659 formatter'ından (notice n°924 → `/fr/oeuvres/un-enterrement-ornans-924`) yapıldı. **Orsay canlı URL'leri 403 (Cloudflare bot koruması) → Wayback arşivleri AÇILDI:** 2016-12-20 (IT yorumlu eser sayfası, S7), 2018-03-23 (tam katalog notice 924, S8), 2026-11-08 (güncel FR notice 924, S9). Bu üç birincil arşiv + JocondeLab ulusal DB kaydı (S13, Wayback 2025-10-26) künyeyi **A** düzeyinde doğrular: "entre 1849 et 1850", huile sur toile, 315×668 cm, RF 325, Salle 7, 1881 Juliette Courbet bağışı, Realizm manifestosu, türler hiyerarşisi ihlali, teknik, provenance, sergileme tarihi, tespitli figürler.
+
+**Denetim B (bu oturumda bağımsız yeniden erişim, 2026-11-14):** S9/S8/S7 Wayback URL'leri yeniden çekildi → üçü de HTTP 200 (124878 / 57393 / 30580 bayt); S9 içeriğinde "entre 1849 et 1850", "H. 315 ; L. 668", "RF 325", "Salle 7", "Don Mlle Juliette Courbet, 1881", "Manifeste d'une nouvelle esthétique", "grandeur nature", "laideur vulgaire", "couteau à palette", "noirs profonds", "images d'Épinal", "identité est un mystère", "il pourrait s'agir", "Pludermarcher", "S.b.g", "1882 à 1986", "affecté", "pavillon du Réalisme", "n°661", çerçeveli 371/724 alanları tek tek doğrulandı; **"restauration" ve "Pasquali" güncel notice'ta YOK** (E4/C042 geçerli). Canlı Orsay yeniden denendi → 403 (5686 bayt, Cloudflare). Ham cache'ler (S7/S8/S9/S13 txt, en/fr/it wikitext, Commons imageinfo, WD EntityData) yeniden okundu; brief'in C001–C042 iddiaları kaynak pasajlarıyla karşılaştırıldı, D/E hedge'leri ("most likely", "peut-être", "probablement", "il pourrait s'agir") AYNEN korundu. Cache'de brief'in kaçırdığı ek birincil/ikincil pasajlar ve yöntem/konu kayıtları C050–C073 olarak envantere eklendi.
+
+**Görsel İNCELENMEDİ** (vision kotası ana oturumda); yalnız Commons metadata/lisans/çözünürlük çekildi (2 GAP dosyası, PD). Kompozisyon betimleri "kaynakların betimlediği" formuyla verilir; GZ soruları TASLAK. data/ SALT-OKUNUR tarandı, hiçbir dosya değiştirilmedi.
+
+**Sekiz ihtilaf D:** genişlik 660↔668 (C043), figür sayısı 27/~30/50/40+ (C044), data tarihi 1840↔1849–50 (C045), gaziler 1789↔'93 (C046), enwiki iç tutarsızlığı 1850–51↔1849–50 (C047), başlık histoire↔historique (C048), köpek rengi (C049), kafatası konumu/sayısı (C063). **On altı E:** atıfsız frwiki ayrıntıları, WD P571 anomalisi, doğrulanmamış 2025–26 restorasyonu, erişilemeyen literatür, görsel sınırı.
+
+## 1. Kaynak envanteri
+
+| ID | Kurum | Belge | URL | Erişim (2026-11-14) | Tür |
+|---|---|---|---|---|---|
+| S1 | Wikidata | EntityData Q540488 | https://www.wikidata.org/wiki/Special:EntityData/Q540488.json | 200 | yardımcı |
+| S2 | Wikidata | wbgetentities labels (32 QID) | https://www.wikidata.org/w/api.php?action=wbgetentities&ids=...&props=labels | 200 | yardımcı |
+| S3 | Wikipedia EN | "A Burial at Ornans" wikitext | https://en.wikipedia.org/w/api.php?action=parse&page=A_Burial_at_Ornans&prop=wikitext&formatversion=2&redirects=1 | 200 | ikincil |
+| S4 | Wikipedia FR | "Un enterrement à Ornans" wikitext | https://fr.wikipedia.org/w/api.php?action=parse&page=Un_enterrement_%C3%A0_Ornans&prop=wikitext&formatversion=2&redirects=1 | 200 | ikincil |
+| S5 | Wikipedia IT | "Funerale a Ornans" wikitext | https://it.wikipedia.org/w/api.php?action=parse&page=Funerale_a_Ornans&prop=wikitext&formatversion=2&redirects=1 | 200 | ikincil |
+| S6 | Musée d'Orsay | eski "opere commentate" sayfası (canlı) | http://www.musee-orsay.fr/it/collezioni/opere-commentate/cerca/commentaire_id/un-enterrement-a-ornans-130.html?no_cache=1 | 403 Cloudflare — ENGELLİ | birincil (erişilemedi) |
+| S7 | Musée d'Orsay / Wayback | S6 arşiv kopyası (IT yorumlu eser sayfası) | https://web.archive.org/web/20161220124330/http://www.musee-orsay.fr/it/collezioni/opere-commentate/cerca/commentaire_id/un-enterrement-a-ornans-130.html?no_cache=1 | arşiv 200 (2016-12-20); Denetim B yeniden 200 | birincil (arşiv) |
+| S8 | Musée d'Orsay / Wayback | tam katalog notice nnumid=924 (IT arayüz, FR kayıt) | https://web.archive.org/web/20180323200522/http://www.musee-orsay.fr/it/collezioni/catalogo-delle-opere/notice.html?no_cache=1&nnumid=924 | arşiv 200 (2018-03-23); Denetim B yeniden 200 | birincil (arşiv) |
+| S9 | Musée d'Orsay / Wayback | GÜNCEL katalog /fr/oeuvres/un-enterrement-ornans-924 | https://web.archive.org/web/20261108183021/https://www.musee-orsay.fr/fr/oeuvres/un-enterrement-ornans-924 | canlı 403; arşiv 200 (2026-11-08); Denetim B yeniden 200 + alan doğrulama | birincil (arşiv, güncel) |
+| S10 | Wikimedia Commons | imageinfo (url/size/extmetadata), 2 GAP dosyası | https://commons.wikimedia.org/w/api.php?action=query&titles=File:Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project.jpg|File:Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project_2.jpg&prop=imageinfo&iiprop=url|size|extmetadata | 200; metadata — İNCELENMEDİ | görsel |
+| S11 | The New York Times | Sciolino & Verdier, "Bringing a Giant Canvas Back to Life, as Museum Visitors Watch", 2026-05-27 (baskı 2026-05-31, A14-A15) | https://www.nytimes.com/2026/05/27/arts/design/courbet-a-burian-at-ornans-musee-dorsay.html | canlı 403; WB 20260604135157 "Not Authorized" bot sayfası → makale metni YOK | ikincil (erişilemedi) |
+| S12 | Le Monde | Max Blanc, "Au Musée d'Orsay, un tableau de Courbet fait peau neuve sous les yeux des visiteurs", 2025-07-21 | https://www.lemonde.fr/culture/article/2025/07/21/au-musee-d-orsay-un-tableau-de-courbet-fait-peau-neuve-sous-les-yeux-des-visiteurs_6622847_3246.html | canlı 402 (paywall); WB 20250828015604 406, 0 bayt → kopya YOK | ikincil (erişilemedi) |
+| S13 | JocondeLab (Joconde / Direction des musées de France) | notice 54423 | https://web.archive.org/web/20251026050617/https://jocondelab.iri-research.org/jocondelab/notice/54423/ | canlı 502; arşiv 200 (2025-10-26) | birincil-ulusal DB (arşiv) |
+| S14 | Wikidata | P4659 property (formatter URL) | https://www.wikidata.org/w/api.php?action=wbgetentities&ids=P4659&props=labels|claims | 200 | yardımcı |
+| S15 | yerel data/ | basyapitlar, eserler_onbellek, yuruyus, eser_ayrintilari, ders_kaynaklari, eser_notlari, eser_konulari, eser_zorluk, ders_ayirt_eserleri | data/ (salt-okunur tarama; bu oturumda yeniden doğrulandı) | — | yerel veri (yardımcı) |
+
+**S7 (2016 IT yorumu) doğrulanan:** 1849-1850; 315×668; "esposizione di principio"; ilk anıtsal tablo (1849 yaz sonu); Hollanda civic guard portreleri + İspanyol sanatı (siyahların ihtişamı); koyu yeşiller/sönük griler → austerite; kalın corporea facture → yoğunluk/ağırlık; "fregio" dizilişi; açık mezar + kenarda kemikler; Salon 1850-51 "bruttezza"/trivialità eleştirileri; tek bir kritik "colonne d'Ercole del Realismo" kehaneti; antiklerikal → "intesa universale" yorum tarihi (Krist haç, ruhban+belediye başkanı+masan yargıç, 1848 kuşağı).
+**S8 (2018 notice 924) doğrulanan:** künye alanları (RF 325, "entre 1849 et 1850", huile sur toile, H. 3.15/L. 6.68 m, çerçeve 3,71/7,24 m (2003), "S.b.g. : G. Courbet"); provenance (1877–1881 Juliette → 1881 don → Louvre → 1986 Orsay); sergileme listesi; ikonografi: "scène de la vie moderne" + 11 tespitli figür (Oudot, Promayet, Max Buchon, abbé Bonnet, Régis Courbet, Proudhon Claude Melchior, Teste de Sagey, Juliette/Zoé/Zélie, Sylvie Oudot); bibliyografya (Nochlin 1965, Ferrier 1980, Mainzer 1988, Compin-Roquebert 1986/1990, Mayaud 1981, Fernier 1978).
+**S9 (2026 güncel notice) doğrulanan:** S8 alanlarına ek olarak güncel yorum (yazar Isolde Pludermarcher, conservatrice générale Peinture; son değişiklik 2026-11-05): "Manifeste d'une nouvelle esthétique, le réalisme"; grandeur nature + idealleştirmeme + kırmızı yüzlü bedeaux; kalın boya/fırça-palet bıçağı/görünür facture/derin siyahlar ↔ akademik lisse+glacis; "laideur vulgaire"/"trivialité odieuse"; "identité est un mystère"; politik yorum hedge'i ("il pourrait s'agir ... Seconde République ... bonapartistes"); Hollanda grup portreleri + images d'Épinal "Degrés des âges"; 1849 Salon madalyası (Après-dînée) + jüri muafiyeti + üç anıtsal tuval; "Rez-de-chaussée, Salle 7"; tam sergileme listesi (1850 Ornans/Besançon/Dijon → 2007-08 n°48; 2026 Leopold Museum/Folkwang ve Hyères katalogları bibliyografyada). **"restauration"/"Pasquali" geçmez.**
+**S13 (JocondeLab) doğrulanan:** "UN ENTERREMENT A ORNANS"; "1849 ; 1850 et"; "H. 315, l. 668"; peinture à l'huile, toile; Paris, musée d'Orsay; © Direction des musées de France 1986; foto "© H. Lewandowski ; RMN - utilisation soumise à autorisation".
+**S3/S4/S5 (wiki):** B düzeyi satır içi atıf zincirleri (Mack 1989, Chu 1996, Clark 1973, McCarthy 1975, Schapiro 1941, Fried 1983, Kselman 1993, Brooks 2005, Wright 2011, Massonnaud 2005, Brocvielle 2017, Mayaud 1998, Cocchi) + atıfsız frwiki pasajları (E). Metinlerine ERİŞİLMEDİ (C066).
+**Erişilemeyen:** S6 canlı (403), S11 NYT (403 + WB bot), S12 Le Monde (402 + WB 406/0 bayt), JocondeLab canlı (502), tüm kitap/makale metinleri (yalnız bibliyografyada görüldü).
+
+## 2. İddia envanteri (A–E)
+
+**C001** — Sanatçı: Gustave Courbet (Ornans, Doubs 1819 – La Tour-de-Peilz, İsviçre 1877). **A.** S8, S9.
+**C002** — Ana başlık "Un enterrement à Ornans"; diğer başlık "Tableau de figures humaines, historique d'un enterrement à Ornans". **A.** S8, S9.
+**C003** — Tarih: "entre 1849 et 1850" (1849–1850); Joconde "1849 ; 1850 et"; itwiki 1849-1850. **A.** S7, S8, S9, S13.
+**C004** — Teknik: huile sur toile (tuval üzerine yağlıboya). **A.** S8, S9, S13.
+**C005** — Boyut: H. 315; L. 668 cm; çerçeveli H. 371; L. 724 cm (S8'de "(2003)" notu). **A.** S8, S9, S13.
+**C006** — İmza: sol altta "S.b.g. : G. Courbet". **A.** S8, S9.
+**C007** — Envanter RF 325; Orsay notice n°924 (WD P217/P4659 teyit). **A.** S8, S9, S1.
+**C008** — Musée d'Orsay, Paris; zemin kat (Rez-de-chaussée), Salle 7. **A.** S9, S8.
+**C009** — 1849 yaz sonunda ilk anıtsal tablosuna başladı; "esposizione di principio" (ilke bildirisi) niyeti. **A.** S7.
+**C010** — Salon 1850–1851 (palais Royal), n°661; skandal; eleştirmenler "laideur vulgaire" / "la glorification (…) de la trivialité odieuse" diye kınadı; eser Courbet'e Paris sanat çevresinde istediği yeri "de façon fracassante" (gürültülü biçimde) kazandırdı; eleştiriler kırsala ve emekçi sınıflara duyulan güvensizliği açığa çıkardı. **A.** S9, S7.
+**C011** — Güncel Orsay notice'ı: "Manifeste d'une nouvelle esthétique, le réalisme" (Realizm, yeni bir estetiğin manifestosu). **A.** S9.
+**C012** — Türler hiyerarşisi ihlali: köylüler life-size (grandeur nature) — normalde İncil/mitoloji figürlerine ayrıcalık — ve idealleştirilmeden; kırmızı giysili iki bedeaux'nun kırmızı yüzleri eleştirmenleri güldürdü. **A.** S9.
+**C013** — Teknik: kalın boya (matière picturale épaisse), fırça veya palet bıçağı; görünür facture; derin siyahlar; akademik lisse (pürüzsüz) + glacis saydamlığı tekniğine karşı. **A.** S9.
+**C014** — Modeller: Hollanda büyük grup portreleri (Pays-Bas yolculuğunda görülmüş) + images d'Épinal "Degrés des âges" (beşikten mezara insan ömrü); kompozisyon toprağa kazılmış mezar çevresinde örgütlenir. **A.** S9.
+**C015** — Provenance: 1877–1881 Juliette Courbet (kız kardeş) koleksiyonu; 1881 devletçe bağış (don) olarak kabul; 1881 Louvre'a atfedildi; 1882–1986 Louvre; 1986 Orsay'a devredildi (affecté). **A.** S8, S9.
+**C016** — Sergileme tarihi: Ornans (chapelle du Séminaire)/Besançon/Dijon 1850; Salon 1850-51 n°661; Besançon 1852 (4 tablo); 1855 Exposition Universelle pavillon du Réalisme n°2; 1867 pavillon Courbet n°3; Viyana 1873; Paris 1881 (Théâtre de la Gaîté); Zürih 1935-36 (n°22); Paris 1977-78 (n°21); Paris 2007-08 (n°48). **A.** S8, S9.
+**C017** — Açık mezar; kenarında kemikler görünür ("l'apertura della fossa sul bordo della quale si intravedono delle ossa"); insan durumunu düşünmeye davet. **A.** S7.
+**C018** — Tespitli figürler (Orsay ikonografisi): Oudot Jean Antoine (anne tarafından büyükbaba, 1768–1848), Promayet Alphonse (1822–1872), Max Buchon (1818–1869), abbé Bonnet, Régis Courbet (baba, 1798–1882), Proudhon Claude Melchior, Teste de Sagey Prosper, kız kardeşler Juliette (1831–1915)/Zoé (1824–1905)/Zélie (1828–1875), anne Sylvie Oudot (1794–1871). **A.** S8, S9.
+**C019** — Gömülen kişinin kimliği bilinmiyor: "l'enterrement d'un personnage dont l'identité est un mystère". **A.** S9.
+**C020** — Politik yorum kesin değil: "Il demeure néanmoins difficile d'établir une interprétation politique de ce tableau avec certitude (il pourrait s'agir d'une allégorie de l'enterrement de la Seconde République par les bonapartistes)" — hedge aynen korundu. **A.** S9.
+**C021** — İlk kamu başarısı Salon 1849: Après-dînée à Ornans madalya aldı → sonraki yıllar jüri muafiyeti; 1850-51 Salonu'na Ornans gündelik hayatından üç anıtsal tuval gönderildi. **A.** S9.
+**C022** — Orsay yorumunda (2016): az sayıdaki hayran arasında yalnız bir kritik, eserin "nella storia moderna le colonne d'Ercole del Realismo" (modern tarihte Realizmin Herkül Sütunları) olacağını kehanet etti; kritik adı verilmez. **A.** S7.
+**C023** — Bu sözü söyleyen Paul Mantz'dır (L'Illustration, Salon de 1850): "l'Enterrement sera dans l'histoire moderne les Colonnes d'Hercule du Réalisme" — frwiki → Massonnaud 2005, p. 203 (ISBN 2-84310-067-4, Ellug); kaynakçada anıldı, metne erişilmedi. **B.** S4.
+**C024** — Champfleury'ye mektup (Şubat–Mart 1850): "je suis sur le point de finir 50 personnages grandeur nature, avec paysage et ciel pour fond, sur une toile de 20 pieds de longueur sur 10 de hauteur" — frwiki → Chu 1996, Correspondance de Courbet, Flammarion, p. 86; erişilmedi. **B.** S4.
+**C025** — Courbet, beyaz köpekle duran iki figürü "two old veterans of the Revolution of '93" olarak tanımladı; "the clothes of their time" giysili; Secrétan ve Cardet (büyükbabanın dostları) olarak tespit edildiler; McCarthy: figürler küçümseme+şefkat, "old-fashioned intransigence" taşır; Courbet'in pasifizmi rol oynamış olabilir — enwiki → McCarthy 1975, Art Journal 35(1): 12–16; erişilmedi. **B.** S3.
+**C026** — İlham: Mack "most likely" büyükbaba Oudot'un cenazesi (bir yıl önce ölmüştü); alternatif teori: Proudhon ailesi üyesinin cenazesi — enwiki → Mack 1989: 88–93 (ISBN 978-0-306-80375-8), McCarthy 1975: 13; erişilmedi; "most likely" korundu. **B.** S3.
+**C027** — Courbet: "Il funerale a Ornans è stato in realtà il funerale del Romanticismo" (Ornans'ta Cenaze aslında Romantizmin cenazesiydi) — itwiki → Mack 1989, p. 89 (ref'te Google Books linki); erişilmedi. **B.** S5.
+**C028** — Spesifik modeller: Banquet of Captain Bicker (1648), Company of Captain Allaert Cloek (1632), Meagre Company (1637); Souvenir Mortuaire (1830) ve Degrés des Âges (1830) woodcut'ları — enwiki → Fried 1983, Critical Inquiry 9(4): 635–83; Schapiro 1941, JWCI 4(3): 164–191, doi:10.2307/750414; erişilmedi. **B.** S3.
+**C029** — Çağdaş sosyalist/demokratik okuma: realizm + temsil ettiği demokratik/sosyalist idealler için övüldü; yatay format + aynı düzeydeki figürler = eşitlikçi mesaj — enwiki → Schapiro 1941; Kselman 1993 (Princeton UP, 291–302); Wright 2011, Burlington Magazine 153(1298): 330–34; erişilmedi. **B.** S3.
+**C030** — T.J. Clark: sosyopolitik mesaj karmaşık; stillness, ambiguity, irony; kırsal burjuvazi; sol/sağ politikası değil class konusu; aile tam burjuva değil ama iki ev sahibi olacak kadar varlıklı — enwiki → Clark 1973, Image of the People, Princeton UP, p. 114, 80–83; Fried 1983; erişilmedi. **B.** S3.
+**C031** — Champfleury: "there is not a trace of socialism in A Burial at Ornans ... It represents death of a citizen who is escorted to his last resting place by other citizens ..." — enwiki → Mack 1989: 80–81; erişilmedi. **B.** S3.
+**C032** — 1855 Exposition universelle'de reddedildi; Courbet avenue Montaigne'de kendi pavyonunu finanse etti, 40 tablo sergiledi, "réalisme" ilan etti — frwiki → Brocvielle 2017, RMN-GP, ISBN 9782711864331, p. 24–27; erişilmedi. S9 (A) 1855 "pavillon du Réalisme, n°2" sergilemesini doğrular (C016) — red + kendi pavyonu tutarlı. **B.** S4, S9.
+**C033** — frwiki (atıfsız): taslak yaz 1849; kompozisyon 1850'nin büyük kısmını aldı; Salon Aralık 1850'de açıldı. **E.** S4. (belirsiz)
+**C034** — frwiki (atıfsız): sahne köy dışındaki yeni mezarlıkta (Eylül 1848'de açıldı); arka planda Loue vadisinin kireçtaşı yarları; Ornans ~4000 nüfus, Besançon'a 25 km. **E.** S4. (belirsiz)
+**C035** — frwiki (satır içi atıf yok; belediye arşivi/noter kayıtlarına dayandırıldığı yazılı): 27 figür, çift sıra; hepsi Ornanslı, atölyede tek tek poz verdi; erkekler solda/kadınlar sağda; mezarcı Antoine Joseph Cassard, belediye başkanı Prosper Teste, anne+3 kız kardeş+sağ uçta küçük kuzen. **E.** S4. (belirsiz)
+**C036** — frwiki (atıfsız): aile evinin tavan arasında (grenier) yapıldı; çatı eğimi nedeniyle tuval rulo halinde boyandı; tuvali dikey üç bölüme ayıran dikişler; aynı grenier sonradan L'Atelier du peintre (1855) için de kullanıldı. **E.** S4. (belirsiz)
+**C037** — frwiki (atıfsız; "probablement" korundu): kurşun beyazı astar (iri taneli, yanık amber tonu; tabloyu karartmış); yüz/eller fırça + bistre; ön plan/arka plan "probablement ... au couteau" (muhtemelen bıçakla). **E.** S4. (belirsiz)
+**C038** — frwiki: büyükbaba Oudot en solda, taşıyıcıların arkasında "peut-être" (belki) temsil ediliyor; nüans: Orsay ikonografisi (A, C018) Oudot'u tespitli figür sayar; enwiki "has also been identified as Oudot" (B) — belirsizlik not edildi. **E.** S4, S8, S3. (belirsiz)
+**C039** — frwiki ölen kişi hipotezleri (soru kipleri): kız kardeş Clarisse (Courbet 15 yaşındayken ölmüş)? İkinci Cumhuriyet'in gömülüsü "prédiction" (1852)? Romantizmin gömülüsü? Akademik geleneğin gömülüsü? (son hipotez Brocvielle 2017 ref'i taşır). **E.** S4. (belirsiz)
+**C040** — frwiki Courbet alıntıları (satır içi atıf yok; birincil metne erişilmedi): "Je n'ai jamais eu d'autres maîtres en peinture que la nature et la tradition, que le public et le travail." / "Je tiens ainsi que la peinture est un art essentiellement concret et ne peut consister que dans la représentation des choses réelles et existantes [...]". **E.** S4. (belirsiz)
+**C041** — frwiki: Courbet "en 1847" realizmin chef de file'i oldu — atıfsız; olağan tarihlendirmeden (1849–50 Salon bağlamı) farklı; derslerde kullanılmadı. **E.** S4. (belirsiz)
+**C042** — 2025–2026 konservasyon (Cinzia Pasquali liderliğinde, ziyaretçiler izledi): yalnız enwiki lead + NYT 2026/Le Monde 2025 başlıkları; her iki metin erişilemez (403/402; WB bot sayfası/0 bayt); güncel Orsay notice'ında (WB 2026-11-08, Denetim B teyit) "restauration" geçmiyor → DOĞRULANMADI. **E.** S3, S11, S12, S9. (belirsiz)
+**C043** — Genişlik ihtilafı: enwiki infobox 660 cm ↔ Orsay S7/S8/S9 668 cm (WD 6.68 m; itwiki 668; Joconde "l. 668"); Orsay (A) esas alındı, enwiki infobox hatası. **D.** S3, S7, S8, S9, S13, S1. (tartışma)
+**C044** — Figür sayısı ihtilafı: frwiki 27 ↔ itwiki "una trentina" (~30) ↔ Courbet mektubu 50 (B, Chu 1996) ↔ data "kırkı aşkın" (40+); Orsay sayı vermez; ÇÖZÜLMEDİ. **D.** S4, S5, S3, S15. (tartışma)
+**C045** — Tarih ihtilafı: data "1840" (basyapitlar.tarih, eserler_onbellek.yil, yuruyus.yil, ders_kaynaklari "gor") ↔ Orsay/WD qualifier/itwiki/frwiki 1849–1850 (A); data hatası (basyapitlar.ozet zaten "künyedeki 1840 tarihi hatalıdır" diyor). **D.** S15, S7, S8, S9, S1. (tartışma)
+**C046** — Gazilerin kuşağı: data "1789 Devrimi kuşağı" ↔ Courbet alıntısı "Revolution of '93" (B, McCarthy) ↔ frwiki 1792–1793 kostümü; data ifadesi kaynaklarla uyuşmuyor. **D.** S15, S3, S4. (tartışma)
+**C047** — enwiki iç tutarsızlığı: short description "1850–1851" ↔ infobox "1849–50" ↔ Orsay "entre 1849 et 1850" (A); 1850–51 SALON tarihidir, eser tarihi 1849–50. **D.** S3, S9. (tartışma)
+**C048** — Salon başlığı varyantı: itwiki "Tableau de figures humaines, histoire d'un enterrement à Ornans" ↔ Orsay "historique d'un enterrement à Ornans" (A); Orsay resmî başlığı esas. **D.** S5, S8, S9. (tartışma)
+**C049** — Köpek rengi: data "beyaz-kahverengi av köpeği" ↔ frwiki "chien blanc tacheté de noir" (siyah lekeli beyaz) ↔ enwiki "white dog"; görsel İNCELENMEDİ; çözümsüz. **D.** S15, S4, S3. (tartışma)
+**C050** — Orsay yorumu (2016): XVII. yy Hollanda civic guard portreleri modeli; "la sontuosità dei neri ricorda invece l'arte spagnola" (siyahların ihtişamı İspanyol sanatını anımsatır); koyu yeşiller/sönük griler → ton austeritesi; kalın, corporea facture → varlıklara/doğaya yoğunluk ve ağırlık; figürler "fregio" (friz) halinde dizili (itwiki'nin Orsay atıflı aktarımı: "antik bir friz gibi", arka plana sıkıştırılıp düzleştirilmiş). **A.** S7, S5.
+**C051** — Orsay yorumu (2016) yorum tarihi: başta antiklerikal sayıldı; sonra Krist haçının egemen olduğu kompozisyonda ruhban, belediye başkanı ve masan yargıç yan yana, her sosyal durumdan erkek/kadın → "intesa universale" (evrensel uzlaşı) ideali; XIX. yy'ın, özellikle 1848 kuşağının sürekli kaygısı. **A.** S7.
+**C052** — enwiki kompozisyon betimi: alt ortada açık mezar, kenarında kafatası+kemikler; üç grup (kilise mensupları; köpekli gaziler; görevliler+yas tutanlar); crucifix figürlerin üstünde yükselir; doğrusal/"additive" kompozisyon ↔ yakınlık+benzer kostüm renkleriyle birleşmiş figürler; her figüre göreli eşit vurgu → anti-hiyerarşik; yanal hareket; alışılmadık en/boy oranı — McCarthy 1975: 12; Fried 1983; erişilmedi. **B.** S3.
+**C053** — enwiki kafatası okuması: gazilerle ruhban arasında; "human aspirations and failures", ideolojik çekişmelerin anlamsızlığı; gazilere yakın kenarda; crucifixion resimlerinde kafatasının bulunduğu taraf "thrive on death" olanları simgeler → devrim şiddetine olası yorum — McCarthy 1975: 15; erişilmedi. **B.** S3.
+**C054** — enwiki crucifix okuması: belirgin crucifix = Katoliklik/geleneksel toplumsal değerler; dikkatsiz kilise figürleri → ritüelin boşluğuna ironik yorum (McCarthy 1975: 14); Clark: ritüelin tüm öğeleri var ama birliktelikleri yok (Clark 1973: 80–83); Proudhon: Fransa inancını yitiriyor; Toussaint: 1848 sonrası Hristiyan temelde Fransız birliği yeniden inşası umudu (çoğunlukla göz ardı edilir) (Kselman 1993); erişilmedi. **B.** S3.
+**C055** — enwiki tartışma bağlamı: anıtsal boyut (tarih resmi ayrıcalığı) skandal yarattı; kompozisyon kalabalık, dağınık, odak noktasız bulundu (Brooks 2005); ölümün impious sunumu; 1849 kolera salgını, cenaze endüstrisine fiyat şişirme suçlamaları; kilisenin etkinliğinin sorgulanması (Kselman 1993); erişilmedi. **B.** S3.
+**C056** — enwiki etki: Courbet Fransız Realizminin lideri sayılır; Burial, Realizmi kamuoyunun dikkatine sundu; Mack: İzlenimcilik üzerinde etki (yeni resim yapma yolları + yeni konular) — Mack 1989; erişilmedi. **B.** S3.
+**C057** — frwiki kritik tepkileri: Daumier çiziminde "Est-il possible de peindre des gens si affreux ?"; "d'ignobles caricatures inspirant le dégoût et provoquant le rire"; Du Pays: "un amour du laid endimanché, toutes les trivialités de notre costume disgracieux et ridicule, prises au sérieux" (Massonnaud 2005, p. 203); kritiklerin çoğu Courbet resmini "sosyalist" sanatla ilişkilendirdi (Mayaud 1998, p. 243 ref); erişilmedi. **B.** S4.
+**C058** — itwiki: Rönesans tipi perspektif/hacim kurgusu yok; dönemin fotoğraf gelişimine bağlı yanal "fotografik" kesmeler; kahverengi/topraksı renkler, ağır pastoz fırça darbeleri — A. Cocchi, Geometrie fluide ref; erişilmedi. **B.** S5.
+**C059** — frwiki (atıfsız) renk/malzeme ayrıntıları: siyah tek kütle değil, kömürsü/mavimsi nüanslar; mavimsi saten örtü (siyah/mor geleneği dışı) beyaz-siyah dengesizliğini "rattraper" (toparlamak) için; "phrase colorée": vermillon kırmızı (bedeaux, kor çocukları), bakır sarısı (crucifix vazosu), zeytin yeşili (mezarcı bluzu), mavi çoraplar, yeşil külot, gri redingot, kahverengi yelek. **E.** S4. (belirsiz)
+**C060** — frwiki (atıfsız) geometrik/sembolik okuma: tabut diyagonali crucifix'in yatay koluna paralel, mezarcıya "dalar"; topraktan "göklere" eksen: kutsal su vazosu → komünyon alan kor çocuğu → evli haç taşıyıcısı → crucifix (sakramentler yolu olabilir); iki karanlık haç (crucifix ↔ tabut üstü çapraz kemikler: Hristiyan sembolü ↔ Masonluk sorusu); kafatası "à droite de la fosse"; apokrif Adem kafatası geleneği; Delacroix Hamlet ve Horatio Mezarlıkta (1839) karşılaştırması; vanité/Masonluk iması sorusu; köpek öte dünyada rehber (Mısır/İnka örnekleri). **E.** S4. (belirsiz)
+**C061** — frwiki (atıfsız) 1848 bağlamı: Louis-Philippe Şubat 1848'de devrildi, İkinci Cumhuriyet ilan edildi, Louis-Napoléon Bonaparte Aralık'ta cumhurbaşkanı seçildi; Courbet Haziran 1848'de siyasi eyleme girdi, Baudelaire ve Champfleury ile Le Salut public gazetesini kurdu; Salon kuralları değişti, Courbet sergileyebildi; 1849 yazında hayal kırıklığı ve öfkeyle Ornans'a döndü; on yıllık bohème sonrası. **E.** S4. (belirsiz)
+**C062** — WD P571 anomalisi: preferred değer +1900 (precision 7=yüzyıl), qualifier P1319=1849/P1326=1850; deprecated +0201 (DBpedia importu); WD'nin kendi verisi tutarsız; A kaynaklar 1849–1850'de birleşiyor; Commons DateTimeOriginal da aynı anomalili yapıyı taşır. **E.** S1, S10. (belirsiz)
+**C063** — Kafatası konumu/sayısı ihtilafı: frwiki "à droite de la fosse" (tek kafatası) ↔ enwiki "bottom center ... between the veterans and the clergymen" (kafatası+kemikler) ↔ itwiki "alcuni teschi" (çoğul) ↔ data "alt orta" (x=0.53); görsel incelenmedi; çözümsüz. **D.** S4, S3, S5, S15. (tartışma)
+**C064** — Görsel bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); yalnız Commons metadata (2 GAP dosyası, PD); GZ TASLAK; data nokta koordinatları doğrulanmadı. **E.** S10, S15. (belirsiz)
+**C065** — Görsel hakları: Commons GAP dosyaları public domain (UsageTerms "Public domain", AttributionRequired=false; Courbet ö. 1877, 100+ yıl pma; WD P6216=Q19652, P459=Q29940705); müzenin kendi fotoğrafı © RMN-Grand Palais (Musée d'Orsay) / Hervé Lewandowski — FARKLI fotoğraf; Joconde "utilisation soumise à autorisation" (kullanım izne bağlı). **A.** S10, S1, S13, S9.
+**C066** — Refs metinleri erişilmedi (kaynakçada anıldı): Mack 1989; Chu 1996; Clark 1973; McCarthy 1975; Schapiro 1941; Fried 1983; Kselman 1993; Brooks 2005; Wright 2011; Massonnaud 2005; Brocvielle 2017; Mayaud 1998; Cocchi (Geometrie fluide); Orsay bibliyografyası: Nochlin 1965, Ferrier 1980, Mainzer 1988, Mondenard 2000, Roubert 2001/2006, Toussaint 1977, Fernier 1978 (cat. raisonné n°91), Vignon 1851 (Salon n°661) vb.; NYT 2026 (403)/Le Monde 2025 (402) metinleri erişilemez. **E.** S3, S4, S5, S8, S9, S11, S12. (belirsiz)
+**C067** — Güncel Orsay notice'ı (n°924) yorum yazarı: Isolde Pludermarcher (conservatrice générale Peinture); son değişiklik 2026-11-05. **A.** S9.
+**C068** — Yorum: life-size figürler + alt kenardaki açık mezar, izleyiciyi uzaktan gözlemci değil mezar kıyısında duran bir katılımcı konumuna yerleştirir; Orsay'ın "face à face imposé" (dayatılan yüz yüzelik) ifadesi bu okumayı destekler; izleyici etkisi yorumdur. **C.** S9, S7. (yorum)
+**C069** — Yorum: yatay friz ↔ dikey crucifix gerilimi, dünyevi topluluk ↔ dinsel vaat olarak okunabilir; figürlere eşit vurgu anti-hiyerarşik bir estetik tercihtir; bu sentez yorumdur (Fried temelli betim B, C052). **C.** S9, S3. (yorum)
+**C070** — Yorum: "Romantizmin gömülüsü"/"akademik geleneğin gömülüsü" okumaları metaforik sanat tarihi yorumlarıdır; Courbet'in kendi ifadesi (B, C027) ve Orsay'ın "manifesto" çerçevesi (A, C011) destekler; tarihsel olgu değildir. **C.** S5, S9. (yorum)
+**C071** — Felsefi okuma (ödünç çerçeve, etki iddiası yok): kahramansızlık + figürlerin eşit değeri, 1848'in eşitlikçi idealinin estetik ifadesi olarak okunabilir; ancak Orsay (A, C020) politik yorumun kesin kurulamadığını söyler; bu okuma yorumdur. **C.** S9, S3. (yorum)
+**C072** — Orsay ikonografisi: nesne türü tableau; ana konu "scène de la vie moderne" (modern hayat sahnesi); temsil edilen yer Ornans (Franche-Comté, Doubs); detaylar: cenaze, yas, tabut, kor çocuğu, kutsal su kovası, köpek, yar, haç, kemik, kafatası, gözyaşı. **A.** S8, S9.
+**C073** — Erişim yöntemi: Orsay canlı URL'leri 403 (Cloudflare); birincil kayıt Wayback 2016-12-20 (S7), 2018-03-23 (S8), 2026-11-08 (S9) arşivlerinden AÇILDI; Denetim B (2026-11-14) yeniden erişim 200 + alan doğrulama; canlı 403 teyit. **A.** S6, S7, S8, S9.
+
+**Sayım:** 73 iddia · A=28 · B=17 · C=4 · D=8 · E=16.
+
+## 3. Görsel doğrulama kaydı (Kural 6)
+
+| Dosya | Çözünürlük | Bayt | Lisans | Credit | Metadata tarihi |
+|---|---|---|---|---|---|
+| File:Gustave Courbet - A Burial at Ornans - Google Art Project.jpg (WD P18; data/eserler_onbellek bunu kullanır) | 6045×2779 | 6.394.259 | Public domain (pd; UsageTerms "Public domain"; AttributionRequired=false) | Google Arts & Culture — jwESwQ4qvb87oQ | "between 1849 and 1850" |
+| File:Gustave Courbet - A Burial at Ornans - Google Art Project 2.jpg (en/it infobox görseli) | 6042×2777 | 8.193.230 | Public domain (pd; AttributionRequired=false) | Google Art Project: Home - pic Maximum resolution. | "1849-50." |
+
+- Commons ObjectName (dosya 1): "A Burial at Ornans"; alternative titles: "Painting of Human Figures, the History of a Burial at Ornans" / "Un enterrement à Ornans, dit aussi Tableau de figures humaines, historique d'un enterrement à Ornans". Dosya 2 kategorileri arasında "Featured pictures on Wikipedia, Turkish" var.
+- WD P6216=Q19652 (public domain), P1001=Q60332278 (100 yıl pma veya kısa ülkeler), P459=Q29940705 (yazar ölümünden 100+ yıl) — Courbet ö. 1877.
+- Müzenin kendi fotoğraf kredisi (S7/S9): "© RMN-Grand Palais (Musée d'Orsay) / Hervé Lewandowski" — Commons GAP dosyasından FARKLI fotoğraf; Joconde (S13) "utilisation soumise à autorisation" der. Kullanım koşulları farklı olabilir; dersler müze fotoğrafını yeniden yayımlamaz.
+- **NOT: Görseller İNCELENMEDİ** (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük çekildi (S10, 200). Kompozisyon/renk/detay betimleri Orsay (A) + wiki (B/E) METNİNDEN; "kaynakların betimlediği" formu kullanılır. data'daki nokta koordinatları (kafatası x=0.53/y=0.86, köpek x=0.69/y=0.75 vb.) görsel üzerinden doğrulanmadı. Köpek rengi (C049) ve kafatası konumu/sayısı (C063) çözümsüz D; GZ soruları TASLAK. Görsel projeye kopyalanmadı; URL+lisans+ kaynak referans verilir.
+
+## 4. Kelime / terim listesi (derslerde ilk kullanımda kısa tanımlı)
+
+| Terim | Kısa tanım | Dayanak |
+|---|---|---|
+| Realizm (réalisme) | Gündelik hayatı, sıradan insanı idealleştirmeden temsil eden 19. yy akımı; Orsay bu eseri "yeni estetiğin manifestosu" sayar | C011 |
+| Tarih resmi (peinture d'histoire) | Akademik hiyerarşinin en üst türü; kahramanlık/din/mitoloji konuları, anıtsal boyut | C012, C055 |
+| Türler hiyerarşisi (hiérarchie des genres) | Türleri konuya göre sıralayan akademik doktrin; boyut ayrıcalığı türe bağlı | C012 |
+| Grandeur nature (life-size) | Gerçek insan boyutunda figür; normalde kutsal/mitolojik figürlere ayrılmış ayrıcalık | C012 |
+| Facture | Boyanın uygulanış biçimi, işçilik; burada görünür bırakılmış | C013 |
+| Glacis | Saydam üst katman tekniği; akademik pürüzsüzlüğün aracı; Courbet karşıtı | C013 |
+| Images d'Épinal | Popüler Fransız baskı resimleri; "Degrés des âges" ömrün evrelerini gösterir | C014 |
+| Bedeaux | Kilisenin laik görevlileri; tören düzenini sağlar; kırmızı giysili iki figür | C012 |
+| Friz (fregio) | Yatay şerit halinde figür dizilişi; antik kabartma düzeni | C050 |
+| Additive kompozisyon | Figürleri yan yana ekleyerek kuran, odak noktasız doğrusal düzen (Fried tartışması) | C052 |
+| Memento mori / vanité | "Ölümü hatırla" geleneği; kafatası simgesi; geçicilik teması | C053, C060 |
+| Salon | Resmî Paris sergisi; 1850–51 Salonu palais Royal'de, eser n°661 | C010 |
+| Pavillon du Réalisme | Courbet'in 1855'te kendi finanse ettiği sergi pavyonu | C032, C016 |
+
+## 5. Veri notları (data/ — DEĞİŞTİRİLMEDİ, salt-okunur; bu oturumda yeniden doğrulandı)
+
+| Dosya | Alan | data değeri | Kanıt | Not |
+|---|---|---|---|---|
+| basyapitlar.json | tarih | "1840" | 1849–1850 (A: S7/S8/S9) | HATALI (C045 D); ozet zaten hatayı beyan ediyor |
+| basyapitlar.json | ozet/bolumler | "kırkı aşkın insan" | 27 (frwiki) / ~30 (itwiki) / 50 (mektup, B) | C044 D — sayı ihtilaflı; Orsay sayı vermiyor |
+| basyapitlar.json | "Anlam ve semboller" | "1789 Devrimi kuşağı" | "Revolution of '93" (Courbet alıntısı, B); 1792–93 (frwiki) | C046 D — '93 kuşağı |
+| basyapitlar.json | "Ne görüyoruz?" | "Jura'nın kireçtaşı yarları" | frwiki "falaises calcaires" (Loue vadisi, atıfsız) | "Jura" adı kaynakta yok (C034 E); coğrafi etiket doğrulanmadı |
+| basyapitlar.json | "Ne görüyoruz?" | "kız kardeşleri ve babasının bulunduğu kabul edilir" | Orsay ikonografisi (A, C018): anne+baba+3 kız kardeş tespitli | data'dan DAHA GÜÇLÜ: A ile doğrulanıyor |
+| basyapitlar.json | "Neden önemli?" | "1850–51 Salonu'nda büyük skandal" | A (C010) | uyumlu |
+| eserler_onbellek.json | yil | 1840 | 1849–1850 (A) | HATALI (C045); gorsel dosya adı WD P18 ile aynı (uyumlu) |
+| yuruyus.json | yil | 1840 | 1849–1850 (A) | HATALI (C045); noktalar kaynak betimleriyle genel uyumlu; köpek rengi C049 D; kafatası konumu C063 D; koordinatlar görsel doğrulamasız |
+| eser_ayrintilari.json | gorsel/noktalar | e4527ac8da257ed7; aynı noktalar | — | yerel asset hash'i doğrulanmadı; betimlemeler yuruyus ile aynı |
+| ders_kaynaklari.json | "gor" listesi yil | 1840 | 1849–1850 (A) | HATALI (C045) |
+| eser_notlari.json | Q540488 notu | "Realizmin manifestosu sayılır" | Orsay (A): "Manifeste d'une nouvelle esthétique, le réalisme" | A ile DOĞRULANDI (C011) |
+| eser_konulari.json | Q540488 | t:"gundelik" | Orsay "scène de la vie moderne" (A); WD genre art | uyumlu |
+| ders_ayirt_eserleri.json | "Barbizon ve Realizm" | Q540488 listeli | Realizm (A) | uyumlu |
+| eser_zorluk.json | Q540488 | 10 | — | olgusal iddia değil |
+
+Ek: enwiki infobox genişliği 660 (C043) ve short description 1850–1851 (C047) Wikipedia tarafında hatalı/tutarsız — data'da bu değerler kullanılmamış. WD P571 preferred değeri anomalili (C062); data düzeltmesi önerilirken qualifier 1849–1850 + Orsay A kaydı esas alınmalı. frwiki'nin "üretimindeki en büyük tuval" ifadesi atıfsız ve birincilce doğrulanmadı → kullanılmadı (Orsay A yalnız "ilk anıtsal tablo" der, C009). data/ ve derslere HİÇBİR yazma yapılmadı; uyuşmazlıklar KALITE_KONTROL.md'de onaya sunulur.

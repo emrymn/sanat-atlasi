@@ -1,0 +1,578 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2324840",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "The Ancient of Days'ın üreticisi/sanatçısı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "William Blake"
+    },
+    {
+     "harf": "B",
+     "metin": "Francis Turner Palgrave"
+    },
+    {
+     "harf": "C",
+     "metin": "\"After William Blake\" (6442 suluboyasının üretici etiketi)"
+    },
+    {
+     "harf": "D",
+     "metin": "John Thomas Smith"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "British Museum: \"Print made by: William Blake\" (S8); WD P170=Q41513.",
+   "yanlis_gerekceleri": {
+    "B": "Palgrave, BM'nin 1859'da Copy D'yi satın aldığı satıcıdır; sanatçı değildir (C020).",
+    "C": "\"After William Blake\", BM'nin ayrı suluboya nesnesi 6442'nin üretici etiketidir; bu baskının değildir (C023).",
+    "D": "John Thomas Smith, Nollekens and His Times'ın yazarı ve erken betimleyicidir; üretici değildir (C037)."
+   },
+   "kanit": [
+    "C001",
+    "C020",
+    "C023",
+    "C037"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser hangi kitabın önispisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Europe a Prophecy"
+    },
+    {
+     "harf": "B",
+     "metin": "America a Prophecy"
+    },
+    {
+     "harf": "C",
+     "metin": "The Song of Los"
+    },
+    {
+     "harf": "D",
+     "metin": "Milton a Poem"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BM \"Series: Europe: a Prophecy\"; \"Copy D, plate 1, frontispiece\"; BA copy K object 1 (S8/S15).",
+   "yanlis_gerekceleri": {
+    "B": "America, Continental Prophecies'in başka bir kitabıdır; bu önispis Europe'a aittir (C002).",
+    "C": "The Song of Los, Continental Prophecies'in üçüncü kitabıdır; bu önispis Europe'a aittir (C002).",
+    "D": "Milton, Blake'in ayrı bir kitabıdır; BM edinim notunda Palgrave'in Europe D ile birlikte Milton A'yı sattığı belirtilir (C020)."
+   },
+   "kanit": [
+    "C002",
+    "C020"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "İlk baskı tarihi ve yeri nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1794, London"
+    },
+    {
+     "harf": "B",
+     "metin": "1821, Cambridge"
+    },
+    {
+     "harf": "C",
+     "metin": "1795, London"
+    },
+    {
+     "harf": "D",
+     "metin": "1885, London"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BM \"Production date 1794 / Published in: London\"; BA \"first printed the eighteen plates of Europe in 1794\" (S8/S16).",
+   "yanlis_gerekceleri": {
+    "B": "1821, gösterilen Copy K'nın muhtemel baskı tarihidir (Fitzwilliam); ilk baskı değildir (C005).",
+    "C": "1795, BA'ya göre ikinci baskıdır (Copy A ve H); ilk baskı 1794'tür (C005).",
+    "D": "1885, BM'nin ayrı suluboya nesnesi 6442'nin edinim yılıdır; baskı tarihi değildir (C023)."
+   },
+   "kanit": [
+    "C003",
+    "C005",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Gösterilen görsel (WD P18 / uygulama) hangi nüshadır ve nerededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Copy K — Fitzwilliam Museum, Cambridge"
+    },
+    {
+     "harf": "B",
+     "metin": "Copy D — British Museum"
+    },
+    {
+     "harf": "C",
+     "metin": "Copy B — Glasgow University Library"
+    },
+    {
+     "harf": "D",
+     "metin": "Copy E — Library of Congress"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Commons/WD P18 \"copy K, in the collection of the Fitzwilliam Museum\"; BA \"copy K, 1821 (Fitzwilliam Museum)\" (S5/S15).",
+   "yanlis_gerekceleri": {
+    "B": "Copy D, WD P195/P217 referanslı BM nüshasıdır (1859,0625.72); gösterilen görsel Copy K'dır (C006).",
+    "C": "Copy B, Glasgow University Library nüshasıdır (BA listesi); gösterilen görsel değildir (C004).",
+    "D": "Copy E, Library of Congress nüshasıdır (BA listesi); gösterilen görsel değildir (C004)."
+   },
+   "kanit": [
+    "C004",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "British Museum Copy D'nin envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1859,0625.72"
+    },
+    {
+     "harf": "B",
+     "metin": "1936,1116.32–39"
+    },
+    {
+     "harf": "C",
+     "metin": "1885,0509.1619"
+    },
+    {
+     "harf": "D",
+     "metin": "1936,1002.1"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BM \"Registration number 1859,0625.72\" (Copy D, plate 1) (S8).",
+   "yanlis_gerekceleri": {
+    "B": "1936,1116.32–39, BM'deki copy a (proofs) grubunun kayıt numaralarıdır (C022).",
+    "C": "1885,0509.1619, \"After William Blake\" suluboyası 6442'nin kayıt numarasıdır (C023).",
+    "D": "1936,1002.1, \"Plague\" levhasının ayrı baskısının kayıt numarasıdır (C022)."
+   },
+   "kanit": [
+    "C006",
+    "C022",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "British Museum Copy D'nin boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "233×168 mm"
+    },
+    {
+     "harf": "B",
+     "metin": "23.4×16.9 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "30.8×24.8 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "296×188 mm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BM \"Height: 233 millimetres / Width: 168 millimetres\" (Copy D) (S8).",
+   "yanlis_gerekceleri": {
+    "B": "23.4×16.9 cm, Blake Archive'ın Copy K boyutudur; BM Copy D değildir (C008).",
+    "C": "30.8×24.8 cm, Commons metadata'sındaki Copy K boyutudur; BA ile çelişir, BM Copy D değildir (C008).",
+    "D": "296×188 mm, 6442 suluboyasının boyutudur (C023)."
+   },
+   "kanit": [
+    "C007",
+    "C008",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "British Museum'ın teknik tanımı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Renkli rölyef gravür + white-line etching + elle renklendirme"
+    },
+    {
+     "harf": "B",
+     "metin": "Yağlıboya tuval"
+    },
+    {
+     "harf": "C",
+     "metin": "Suluboya + kalem/gri mürekkep"
+    },
+    {
+     "harf": "D",
+     "metin": "Fresk"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BM \"Colour relief etching and white-line etching in blue, black, red and yellow; with added hand colouring\"; Technique: relief etching, hand-coloured, colour (S8).",
+   "yanlis_gerekceleri": {
+    "B": "Yağlıboya tuval erişilen kayıtlarda yoktur; BM nesneyi \"print; frontispiece; book\" olarak sınıflar (C009).",
+    "C": "Suluboya + kalem/gri mürekkep, BM 6442 suluboyasının tekniğidir; bu baskının değildir (C023).",
+    "D": "Fresk duvar tekniğidir; bu eser kâğıt üzerine baskıdır (C010)."
+   },
+   "kanit": [
+    "C009",
+    "C010",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "BM betimine göre figür ne yapmaktadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Küre içinde çömelmiş, pergelle karanlığı ölçüyor"
+    },
+    {
+     "harf": "B",
+     "metin": "Ayakta, kılıçla bulutları yarıyor"
+    },
+    {
+     "harf": "C",
+     "metin": "Tahtta oturmuş, kitap okuyor"
+    },
+    {
+     "harf": "D",
+     "metin": "Yüzüstü düşmüş, kanatlarını açmış"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BM \"a bearded nude male … crouching in a heavenly sphere … his left arm holding a pair of compasses and reaching down with them, measuring the surrounding darkness\" (S8).",
+   "yanlis_gerekceleri": {
+    "B": "BM betiminde kılıç yoktur; figür çömelmiş ve pergel tutar (C011).",
+    "C": "BM betiminde taht/kitap yoktur; figür küre içinde çömelir (C011).",
+    "D": "BM betiminde kanat/düşüş yoktur; figür çömelmiş, ölçme halindedir (C011)."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "BM betiminde figürün kimliği nasıl verilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"probably Urizen\" (muhtemelen Urizen)"
+    },
+    {
+     "harf": "B",
+     "metin": "Kesin olarak Newton"
+    },
+    {
+     "harf": "C",
+     "metin": "Kesin olarak Tanrı (Daniel)"
+    },
+    {
+     "harf": "D",
+     "metin": "Orc"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BM betimi figürü \"(probably Urizen)\" olarak, kuşku işaretiyle verir (S8); hedge korunur.",
+   "yanlis_gerekceleri": {
+    "B": "Newton BM betiminde geçmez; figür \"probably Urizen\" olarak tanımlanır (C012).",
+    "C": "BM kesin bir Tanrı kimliği vermez; \"(probably Urizen)\" kuşkusu korunur (C012).",
+    "D": "Orc adı BM betiminde yer almaz; figür \"probably Urizen\" olarak tanımlanır (C012)."
+   },
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "BM Copy D'nin edinimi nasıldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1859, Francis Turner Palgrave'den satın alma"
+    },
+    {
+     "harf": "B",
+     "metin": "1885, Sotheby's üzerinden William Bell Scott'tan"
+    },
+    {
+     "harf": "C",
+     "metin": "1936, müze bağışı"
+    },
+    {
+     "harf": "D",
+     "metin": "2010, Commons yüklemesi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "BM \"Purchased from: Francis Turner Palgrave\"; \"Acquisition date 1859\" (S8); Europeana da taşır (S10).",
+   "yanlis_gerekceleri": {
+    "B": "1885/Scott/Sotheby's, 6442 suluboyasının edinimidir; Copy D 1859 Palgrave'dir (C023).",
+    "C": "1936, BM'deki copy a (proofs) kayıt numarasıyla (1936,1116.32–39) ilişkilidir; Copy D edinimi 1859'dur (C022).",
+    "D": "2010-03-27, Commons görselinin yükleme tarihidir; müze edinimi değildir (C028)."
+   },
+   "kanit": [
+    "C020",
+    "C023",
+    "C022",
+    "C028"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "The Ancient of Days, Europe a Prophecy'nin önispisidir (plate 1).",
+   "dogru": true,
+   "aciklama": "BM \"Copy D, plate 1, frontispiece\"; BA copy K object 1 (Bentley 1, Erdman i, Keynes i).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Gösterilen görsel (Commons/WD P18) British Museum'daki Copy D'dir.",
+   "dogru": false,
+   "aciklama": "Görsel Copy K, Fitzwilliam Museum'dır; BM nüshası Copy D (1859,0625.72) ayrıdır (D1).",
+   "kanit": [
+    "C004",
+    "C006"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Europe ilk kez 1794'te basıldı; gösterilen Copy K'nın baskısı ise muhtemelen 1821'dir.",
+   "dogru": true,
+   "aciklama": "BA \"first printed … 1794\"; \"Dates are the probable dates of printing\"; iki sonraki baskı 1795 (A,H) ve 1821 (K).",
+   "kanit": [
+    "C003",
+    "C005"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "BM kaydına göre figür kesin olarak Urizen'dir.",
+   "dogru": false,
+   "aciklama": "BM \"(probably Urizen)\" yazar; kuşku işareti korunur, kimlik kesin değildir.",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "BM Copy D, 1859'da Francis Turner Palgrave'den satın alınmıştır.",
+   "dogru": true,
+   "aciklama": "BM \"Purchased from: Francis Turner Palgrave\"; \"Acquisition date 1859\"; Europeana da taşır.",
+   "kanit": [
+    "C020"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D1 nüsha/kurum uyuşmazlığını analiz edin: gösterilen görsel Copy K (Fitzwilliam) iken data/WD \"British Museum\" (Copy D) etiketi neden sorunludur?",
+   "beklenen_ogeler": [
+    "Copy K Fitzwilliam (görsel)",
+    "Copy D BM 1859,0625.72 (referanslı kayıt)",
+    "WD P18 ↔ P195/P217 ayrımı",
+    "boyut/tarih/edinim nüshaya göre ayrışır",
+    "tek muze alanı yetersiz"
+   ],
+   "kanit": [
+    "C004",
+    "C006",
+    "C007",
+    "C008",
+    "C043"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Urizen kimliğindeki hedge'i (\"probably Urizen\") ve Blake mitolojisindeki yerini tartışın; kesinleştirme neden yanlıştır?",
+   "beklenen_ogeler": [
+    "BM \"(probably Urizen)\"",
+    "Kaiser 1997 atfı (metne erişilmedi)",
+    "BA: Urizen \"Eternals\"/Zoas",
+    "kesin kimlik iddiası kanıtsız"
+   ],
+   "kanit": [
+    "C011",
+    "C012",
+    "C040"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Provenance belirsizliğini değerlendirin: Humphry (?) ↔ Butts (?) ↔ Viscomi ↔ Keynes & Wolf.",
+   "beklenen_ogeler": [
+    "BM (?) kuşku işaretleri",
+    "Viscomi: Humphry",
+    "Keynes & Wolf: probably Butts",
+    "1859 Palgrave satın alması",
+    "kesin sahiplik zinciri kurulamaz"
+   ],
+   "kanit": [
+    "C020",
+    "C021",
+    "C040"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Teknik/malzeme sınırını tartışın: \"elle suluboya\" özgüllemesi neden kanıtsız? Rölyef gravür + white-line etching + hand colouring ile ne doğrulanır?",
+   "beklenen_ogeler": [
+    "BM \"added hand colouring\" (malzeme yok)",
+    "suluboya özgüllemesi kaynaksız (E4)",
+    "6442 suluboya ayrı nesne",
+    "Copy A opak suluboyalar muhtemelen Blake dışı (BA)"
+   ],
+   "kanit": [
+    "C009",
+    "C023",
+    "C035",
+    "C039"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kaynak eleştirisi: BM \"dokuz nüsha/17 levha\" ↔ enwiki \"on üç nüsha\" ↔ BA \"18 levha/13+untraced N\"; Butlin 1981↔1982; \"proof copy\" etiketi. Hangi kurum neyi destekler?",
+   "beklenen_ogeler": [
+    "BM nine copies/17",
+    "enwiki thirteen",
+    "BA 18 plates/13+N",
+    "copy a proofs ayrı nesne",
+    "Butlin yılı ihtilafı (D8)",
+    "D olarak sunulur, uzlaştırılmaz"
+   ],
+   "kanit": [
+    "C019",
+    "C030",
+    "C025",
+    "C026",
+    "C022"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betimindeki göksel küreyi ve ışığını kısmen örten bulutları bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): BM betimi: \"crouching in a heavenly sphere, its light partially covered by clouds\".",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sol kolun aşağı uzanışını ve pergeli bulun; pergelin karanlığı ölçme hareketini izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): BM: \"his left arm holding a pair of compasses and reaching down with them, measuring the surrounding darkness\".",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Figürün sakallı, çıplak erkek olarak betimlenen bedenini ve çömelmiş duruşunu inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): BM: \"a bearded nude male (probably Urizen) crouching\".",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Baskı yüzeyinde renkli rölyef gravür + white-line etching izlerini ve elle eklenen renkleri ayırt etmeye çalışın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): BM teknik: \"Colour relief etching and white-line etching in blue, black, red and yellow; with added hand colouring\".",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Gösterilen Copy K görselini, British Museum'daki Copy D ile karşılaştırın (aynı levhanın farklı nüshaları).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Görsel Copy K (Fitzwilliam); BM Copy D 1859,0625.72. Nüshalar ayrı tutulur (D1); boyutlar ayrışır.",
+   "kanit": [
+    "C004",
+    "C006"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "The Ancient of Days (Günlerin Atası); William Blake (1757–1827); Europe a Prophecy önispisi (plate 1); ilk baskı 1794, London; renkli rölyef gravür + white-line etching + elle renklendirme; kâğıt.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Gösterilen nüsha ↔ BM nüshası?",
+   "arka": "Görsel = Copy K, Fitzwilliam Museum (muhtemel baskı 1821; BA 23.4×16.9 ↔ Commons 30.8×24.8 cm). BM = Copy D, 1859,0625.72, 233×168 mm, 1859 Palgrave satın alması.",
+   "kanit": [
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C008",
+    "C020"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Betim + figür?",
+   "arka": "Küre içinde çömelmiş sakallı çıplak erkek; sol kol pergelle aşağı uzanır, karanlığı ölçer; ışık kısmen bulutlarla örtülü. BM: \"(probably Urizen)\" — kesin değil.",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Baskı tarihçesi (BA)?",
+   "arka": "1794 ilk baskı (18 levha; proof a–c; B–G aynı yıl); 1795 (A,H); 1821 (K); I,L,M posthumous. Tarihler \"probable dates of printing\". Pl.3 yalnız H/K.",
+   "kanit": [
+    "C003",
+    "C005",
+    "C029"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "BM 6442 nedir?",
+   "arka": "Ayrı nesne: \"After William Blake\", suluboya + pen/gri mürekkep, 296×188 mm, 1885 edinim (1885,0509.1619); Butlin kataloğunda yok. Copy D edinimi ise 1859.",
+   "kanit": [
+    "C023",
+    "C020"
+   ]
+  }
+ ]
+}

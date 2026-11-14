@@ -1,0 +1,1386 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q956541",
+ "sanatci_id": "benjamin-west",
+ "baslik": "General Wolfe'un Ölümü",
+ "ozgun_baslik": "The Death of General Wolfe",
+ "kunye": {
+  "sanatci": "Benjamin West",
+  "sanatci_yasam": "1738–1820; NGC ulusalite \"American; British\"; NT \"Swarthmore, Pennsylvania – London\" ↔ WGA \"Springfield\" (tartışma, C072)",
+  "tarih": "1770",
+  "tarih_belirsizlik": "WD P571 precision=yıl, circa yok. Savaşla tablo arası süre sayımları kaynaklarda farklı: 11 yıl (EN) ↔ 12 yıl (Stacey) ↔ ~18 yıl (UMich, 1776 için) — tartışma C073.",
+  "teknik": "oil on canvas (tuval üzerine yağlıboya)",
+  "boyut_cm": {
+   "yukseklik": 152.6,
+   "genislik": 214.5
+  },
+  "muze": "National Gallery of Canada, Ottawa",
+  "envanter": "8007",
+  "edinim": "Gift of the 2nd Duke of Westminster to the Canadian War Memorials, 1918; Transfer from the Canadian War Memorials, 1921 (önce Lord Grosvenor satın aldı)",
+  "konum": "National Gallery of Canada, 380 Sussex Drive, Ottawa; galeri içi sergilenme konumu erişilen kayıtta belirtilmedi",
+  "telif_durumu": "Kamu malı (West ö. 1820; Commons PD-Art / PD-old-auto-expired deathyear=1820); hukuki değerlendirme C seviyesi (C047)"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Benjamin_West_-_The_Death_of_General_Wolfe_-_WGA25558.jpg",
+  "kaynak": "Wikimedia Commons / Web Gallery of Art (WGA25558; Artwork şablonu: 1770, oil/canvas, 152.6 × 214.5 cm, NGC Ottawa, wikidata=Q956541)",
+  "lisans": "Public domain (PD-Art / PD-old-auto-expired, deathyear=1820)",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (Commons imageinfo S13, WGA dosya sayfası S14, WGA wolfe.html S15); GÖRSEL BU OTURUMDA İNCELENMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "WGA25558 957 × 660 (112.827 bayt); Benjamin West 005.jpg (Yorck Project) 3456 × 2304 (4.405.151 bayt)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon/renk/ışık ifadeleri \"kaynakların betimlediği\" kalıbıyla verilir; GZ soruları TASLAK; D08 yelek rengi ve data ışık/dövme/başlık betimleri görsel teyit gerektirir; Yorck dosyasının hangi versiyonu gösterdiği metadata'da yok; görsel projeye kopyalanmadı (C074, C076)."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 442
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1374
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 3074
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincili-arşivden-okumak"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-üç-koleksiyon-üç-rejim"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-ilk-anlatısının-kuruluşu-ve-sökülüşü"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#5-kompozisyonun-kaynakları-ödünçleme-mi-sentez-mi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#6-yerli-figürün-politikası-kurgu-kese-kanata"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-versiyon-gravür-yeniden-yorum"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz-beş-versiyon-ve-bir-gravür",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji-versiyon-gravür-yeniden-yorum"
+  ],
+  "9": [
+   "DERS_ORTA.md#9-belgesellik-sorunu-kısa-giriş",
+   "DERS_ILERI.md#4-belgesellik-krizi-figür-figür-stacey",
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-etiket-çerçeve-sergi"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça-ve-erişilemeyenler"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "NGC birincil kaydıyla künyeyi (1770, oil on canvas, 152.6 × 214.5 cm, env. 8007, 1918/1921 edinim) doğrular ve 1770 \"prime version\"ı diğer autograf versiyonlardan ayırt eder.",
+  "Çağdaş kıyafet tartışmasını ve \"modern kıyafette ilk\" anlatısının Romney/Penny ile nasıl çürütüldüğünü (Stacey 1966) açıklar.",
+  "Üçgen kompozisyon ve Pietà/Lamentation şemasını, görsel inceleme yapılmadığı için \"kaynakların betimlediği\" sınırıyla analiz eder.",
+  "Stacey'nin belgesellik eleştirisini ve figür kimliği ihtilaflarını (cerrah, yeşil giysili figür, Smythe; 13/14 sayımı) kanıt seviyeleriyle yönetir.",
+  "Yerli figürün kurgusallığını, noble savage ikonografisini ve Robert Houle'un Kanata (1992) müdahalesini etik-politik çerçevede tartışır."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Tarih resmi (history painting)",
+   "tanim": "Kahramanlık ya da ahlak dersi veren büyük konulu resim geleneği; 18. yüzyılda çağdaş giysi uygunsuz sayılırdı.",
+   "kanit": [
+    "C061",
+    "C013"
+   ]
+  },
+  {
+   "ad": "Pietà / Lamentation (Ağıt)",
+   "tanim": "Ölü İsa'nın yasının tutulduğu Hristiyan sahne şeması; Wolfe'un bedeni çarmıhtan indirilişe gönderme yapar.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "ad": "Autograf versiyon / prime version",
+   "tanim": "Sanatçının kendi elinden çıkan tam boy tekrar; prime version ilk/ana sürüm (NGC 1770).",
+   "kanit": [
+    "C005",
+    "C029"
+   ]
+  },
+  {
+   "ad": "Noble savage",
+   "tanim": "\"Soylu vahşi\" idealizasyonu; Yerli figürün kurgusal, düşünen doğal insan olarak sunulması.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Gravür (engraving)",
+   "tanim": "Bakır levha baskı yoluyla çoğaltma; Woollett'in 1776 baskısı resmin şöhretini taşıyan araç.",
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Eser: The Death of General Wolfe (TR: General Wolfe'un Ölümü); Benjamin West; 1770.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Teknik: \"oil on canvas\" (tuval üzerine yağlıboya); Medium: Painting.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Boyut: 152.6 × 214.5 cm (WD P2048/P2049, ref NGC, P813 2020-01-07).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S8",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "National Gallery of Canada, Ottawa; accession number 8007.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S8",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Q956541 = 1770 \"prime version\"; West'in kamuya açık sergilediği ilk resim (RA 1771); diğer tam boy autograf versiyonlar ayrı eserlerdir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17",
+    "S23"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Credit line: \"Gift of the 2nd Duke of Westminster to the Canadian War Memorials, 1918; Transfer from the Canadian War Memorials, 1921\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Orijinali Lord Grosvenor satın aldı; soyundan gelen 2. Duke of Westminster, Lord Beaverbrook aracılığıyla Kanada'ya, Dominion'un Birinci Dünya Savaşı'ndaki katkısına tribute olarak sundu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "İlk sergi: Royal Academy Exhibition 1771, Pall Mall, London.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17",
+    "S23",
+    "S10",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Çerçeve: \"carved and gilded pine. Britain, c. 1775–1800\" (\"c.\" korundu); NGC Üyeleri + anonim bağışçı desteğiyle satın alındı; onlarca yıl kaba bir antik çerçeve reproduksiyonu içindeydi; yaldız özgün ama aşınmış, kısmen parlak (burnished) kısmen mat.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Konu: Wolfe'un 1759'da Quebec'i fethetme savaşında ölümü; NGC: \"still resonated when West painted this work, its defining image\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S23"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Wolfe Christ-benzeri şehit; Lamentation (Ağıt) / deposizione / Pietà çağrışımı; Britannica: beden \"Christ's descent from the cross\"a gönderme; bulutların biçimi yığılmış bedeni yankılar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S26"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Üçgen kompozisyon: apeks bayrağın ucu/direği, diğer köşeleri figür grupları tamamlar; merkezde Wolfe.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Çağdaş kıyafet tercihi tartışmalıydı; Reynolds (IT: Drummond ile) klasik giysi önerdi, West reddetti; George III orijinali almadı; sonradan itibar kazandı (→ C070).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S26"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "\"Modern kıyafette ilk\" iddiası Stacey'de \"has long been exploded\": Romney yaklaşık yedi yıl önce (resim kayıp), Edward Penny en az iki kez önceledi; West'i etkilemiş olabilirler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Belgesel değil: Stacey \"not more than four or possibly five persons were present\"; \"In West's group there are 13\"; orta kesinlikle tanımlananlardan yalnız biri orada (bayrağı taşıyan Lieut Henry Browne); Wolfe'un maiyetinden kimsenin yanında olduğuna dair kanıt yok.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S10",
+    "S26"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Yerli savaşçı: NT \"not known to be the likeness of a particular individual\"; Britannica \"a wholly fictional Native American (possibly Mohawk)\"; çene yumruk üstünde, düşünce/zekâ pozu; \"noble savage\" idealizasyonu okuması (Fryd ref, eksik künye).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S17",
+    "S26"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "(Ickworth versiyonu) Savaşçının kesesi sanatçının kendi koleksiyonundan; Great Lakes Northeast Peoples yapımı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "(NGC versiyonu) Giysilerin özgün örneklerinin British Museum'da olduğu iddiası: EN wiki ref + {{Failed verification|date=September 2026}} — doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C019",
+   "ifade": "Koşan haberci: bir elinde şapkasını sallar, ötekinde ele geçirilmiş fleur-de-lis'li Fransız bayrağı; zafer haberini ölmekte olan Wolfe'a ulaştırır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Montcalm'ın vuruluşu yalnız sonraki versiyonlarda (EN wiki: \"Later versions also show General Montcalm … being shot from his horse in the far background\"; RC 1771 kopyasında \"very faint\"); NGC orijinalinde betimlenmez.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Wolfe: kırmızı ceket, kırmızı yelek (red waistcoat), kırmızı pantolon (breeches), beyaz gömlek; sol kolda babası için siyah yas bandı; komutan için sade (→ C067: data \"sarı yelek\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Yerde musket, fişeklik (cartridge box), süngü; Wolfe savaşa askerleri gibi silahlanmış girdi ama musketi daha kaliteliydi; Stacey: \"at his feet the 'fusil' and bayonet\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Cerrah figürü kimliği (D05): EN/IT Dr Thomas Hinde (mavi ceket) ↔ NT özeti + RCT subjects Robert Adair ↔ Stacey: Grosvenor kataloğunda \"Surgeon Adair\", Robert mı John mı belirsiz (\"Let us hope…\"); NT subjects listesinde ayrıca \"Doctor Thomas Hinde (1737-1828)\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S17",
+    "S23",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C024",
+   "ifade": "Yeşil giysili figür (D06): EN/IT Sir William Johnson (powder-horn) ↔ NT/RCT Sir William Howe ↔ Stacey: \"almost certainly is not Sir William Howe\", American Ranger giysisi, boynuzda \"sr. wm. Johnson\"/\"Mohawk River\" haritası (Dale keşfi), Johnson Oswego'daydı, \"probably … local colour\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S17",
+    "S23",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C025",
+   "ifade": "Simon Fraser (78th Fraser Highlanders, Lieutenant Colonel) resimde Fraser tartanıyla var; savaşta değildi, önceki yaralarından iyileşiyordu; Wolfe'un alayı övdüğü aktarılır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Hervey Smythe (D13): EN/IT + NT/RCT geleneksel anahtarı Wolfe'un sağ kolunu tutan figürü Smythe/Smyth sayar; Stacey: \"I cannot say whether or not the portrait is that of Smyth\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S17",
+    "S23",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C027",
+   "ifade": "Woollett'in Boydell için yaptığı 1776 gravürü en ünlü kopya; Stacey: \"the picture acquired its chief reputation … through the famous engraving\"; \"engraved in the year of the Declaration of Independence\"; Brodick Castle (Arran) siyah-beyaz kopya.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S10",
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Gillray parodisi \"The Death of the Great Wolf\" (WD P4969 → Q100593824) türev olarak listelenir; metne/görsele erişilmedi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "Toplam beş tam boy autograf versiyon: ROM \"one of only five original versions\"; U-M \"four other full-sized versions\"; EN/IT wiki aynı (→ C064).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S19",
+    "S21",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Royal Collection versiyonu: 1771; George III aynı yıl bu autograf tekrarı 300 guineas'a sipariş etti; Warm Room (Buckingham Palace) 1774 (RCIN 926308), 1790, 1819 (no 764); Hampton Court Queen's Drawing Room 1835 (no 416), 1861 (no 497).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S23"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "RC versiyonu bugün \"On loan, Spencer House [London]\"; 153.5 × 245.9 cm (support, external; eklemeler dahil), 153.5 × 213.5 cm (excluding additions); çerçeve 187.9 × 279.6 × 10.7 cm; \"lined canvas, augmented (canvas)\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S23"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "Clements versiyonu: 1776; Friedrich, Prince of Waldeck siparişi; Arolsen Castle'da ~150 yıl; 1928'de William L. Clements hediye etti; ABD'deki tek tam boy orijinal; ~8.5 feet genişlik; 2012–13 UMMA \"Benjamin West: General Wolfe and the Art of Empire\" sergisi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S21"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Toronto versiyonu: Monckton familyası için; ROM Sigmund Samuel Gallery of Canada (Stacey 1966: \"Sigmund Samuel Collection, Toronto\") (→ C065).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10",
+    "S19"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Ickworth versiyonu: 1779, imzalı-tarihli (sol alt \"B. West 1779\"); 1525 × 2160 mm (60 × 85 in); oil on canvas; England; NT 851783; The Bristol Collection; 1956'da HM Treasury \"in lieu of tax\" → National Trust (National Land Fund); sergiler: Entangled Pasts (RA 2024), American Adversaries (MFA Houston 2013–2014, no. 61).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Robert Houle (Saulteaux), Kanata (1992): appropriation; tuvalin çoğu sepya, kalan renk Delaware savaşçının battaniyesinde; 1993 \"Kanata: Robert Houle's Histories\", Carleton University Art Gallery (Madill 2018 ACI ref, ISBN 978-1-4871-0170-1).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Simon Schama, Dead Certainties: Unwarranted Speculations (1991): kitabın yarısı Wolfe'un ölümü ve West'in betimi (satır içi ref yok).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C037",
+   "ifade": "West'e atfedilen söz (Stacey, Galt 1820'ye atfen): \"the same truth that guides the pen of the historian should govern the pencil of the artist\"; Stacey şerhi: \"If he really said this, he did not practise what he preached\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "West'in Reynolds/Drummond'a yanıtı (IT wiki, Smith 2000 ss. 11–12'ye atfen): \"… il 13 settembre del 1758 [in realtà nel 1759] … come potrei essere compreso dai posteri?!\" — kaynağın kendi düzeltme notu AYNEN korundu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Reynolds sonradan \"rivoluzione nell'arte\" dedi; Smith: modern giysilerin ardında bir Pietà; David'ın Marat'nın Ölümü ile karşılaştırma; tablo \"geçmişte kalmış olduğu kadar devrimci\" görünür.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "Savaş süresi (D07): EN \"fifteen minutes\" ↔ IT \"appena mezzora\" (IT ref: CCBN). Her ikisi ikincil; birincil çözüm yok.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "EN wiki lead \"one of the best-known images in 18th-century art\" → {{citation needed|date=January 2025}}; Britannica \"one of the most famous paintings of the 18th century\" (üçüncül); Stacey Hubbard 1957'ye atfen \"probably the most famous of all historical paintings\". Kesin sıralama kurulmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S26",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "NGC koleksiyonunda ilgili eserler: Study for \"The Death of General Wolfe\", 43 × 61.4 cm irregular; Self-portrait 78.7 × 67.9 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C043",
+   "ifade": "Kompozisyon kaynakları (Stacey/Mitchell): grenadier başı Le Brun \"Compassion\" (Tinney gravürü) \"almost beyond doubt\" / \"impression of plagiarism\"; Wolfe modeli Van Dyck \"Deposition\" (Münih) \"This is possible\"; Raphael \"Madonna Canigiani\" alternatifi + \"School of Athens\" \"less convincingly\"; Fuseli Niagara suluboya (McCord) \"identical twin\", yön \"seems impossible to say\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C044",
+   "ifade": "NGC yorumu: \"His goal was not to persuade viewers of the literal truth of his painting, but to move them to emulate Wolfe's self-sacrifice. The canvas made the artist's reputation.\"; subay portreleri + temsili tipler (enlisted soldiers, a settler in green, an Indigenous warrior); çağdaş giysi/silah ayrıntıları gerçekliğe bağlar; jest aralığı \"stoic reserve to tears\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C045",
+   "ifade": "WD P180 (depicts): James Wolfe (Q379812) + Battle of the Plains of Abraham (Q311726); refsiz; S6/S23 ile A düzeyinde örtüşür.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C046",
+   "ifade": "WD P136 (genre): history painting (Q742333); refsiz (A/B destek için C061).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C047",
+   "ifade": "Kamu malı değerlendirmesi: WD P6216 public domain (P1001 pma≤100 ülkeler, P459 ölümden 100+ yıl); Commons PD-Art / PD-old-auto-expired (deathyear=1820). Hukuki değerlendirme yazarın çıkarımıdır.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S13",
+    "S14"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C048",
+   "ifade": "West 1763'te İtalya'dan İngiltere'ye geldi; ulusal tarih resmi okulu arayışı; George III'ün West himayesi ile Royal Academy'nin 1768 kuruluşu iç içeydi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S23"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C049",
+   "ifade": "West, George III için 1768–1801 arasında ~60 resim yaptı; 1772'den itibaren \"Historical Painter to the King\"; 1780'den itibaren yıllık £100; 1780'lerde prenseslere çizim dersi; 1791'de Richard Dalton'un yerine Surveyor of the King's Pictures; 1792'de Reynolds'un yerine PRA.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S23"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C050",
+   "ifade": "Kral'ın talimatıyla The Departure of Regulus (OM 1152, 405614) ilk RA sergisinde (1769) gösterildi; 1769–1773'te Warm Room için üç çift neoklasik tarih resmi toplandı; Wolfe bu sete katıldı ve sonraki çifti (OM 1156-7, 407524-5; \"the exemplary death\") açıkça etkiledi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S23"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C051",
+   "ifade": "NGC sanatçı alanı: Benjamin West; Nationality \"American; British\"; 1738–1820. NT: \"Swarthmore, Pennsylvania 1738 - London 1820\" (→ C072).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S6",
+    "S8",
+    "S17"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C052",
+   "ifade": "RCT alternatif başlıkları: \"The Death of General Wolfe\"; \"The Death of Major-General James Wolfe, 13 September 1759\"; RCIN 407297; diğer numara OM 1167 (Millar 1963/1969).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S23"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C053",
+   "ifade": "Üniforma (Stacey): Wolfe'un kostümü J. S. C. Schaak'ın 1766 tarihli (Smyth çizimine dayandığı söylenen) resmindekiyle birebir aynı; Ranger hariç bütün subaylar \"improperly dressed\" — savaşa şapkasız girmişler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C054",
+   "ifade": "\"Katılım ücreti\" olasılığı (Stacey): Hale'in kızının mektubu (£100, gravür bağlamında); \"we have to face the possibility … a not altogether nominal admission fee\"; Murray reddi (\"No, no! I was not by; I was leading the left\"); Sligo aile geleneği: Browne'un yüzü \"foreshortened and in deep shadow\" çünkü ücret ödemedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "Diğer anahtar figürleri (Stacey): Isaac Barré (portre karşılaştırması \"seems to confirm\"; yüzünden ağır yaralıydı); \"Adam\" Williamson (topçu üniforması doğru, adı George); Hugh Debbieg (Army List'te mühendis); \"Colonel Napier\" (Quebec'te Napier yok; 68th Foot Channel Islands; \"I suspect … never been accurately identified\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "Monckton: üç brigadierden biri; yaralıydı ve bir fırkateyne taşınıyordu; Stacey: varlığı resmin aktardığı belki tek gerçek tarihsel bilgi (Wolfe'a ciddi düşmanlık beslemediğine işaret); Townshend ve Murray resimde belirgin biçimde yok.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Wolfe Legend (Stacey): ilk raporlar İngiltere'ye Ekim 1759'da romantik ayrıntılarla ulaştı (karanlık nehir, gece yarısı tırmanışı, iki komutanın ölümü); tablo savaştan \"12 years\" sonra, Amerikan meselelerinin öne çıktığı anda; Bağımsızlık Bildirgesi yılında gravür edildi; EN wiki: Wolfe ulusal kahraman/zafer ikonu oldu (→ C073).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "İlk Londra sergisinde kuyruklar kapıdan dışarı taşıyordu (EN wiki; NYT, Jason Fargo, 25 Kasım 2020 ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C059",
+   "ifade": "Erken anahtarlar: Woollett'in 1776 gravürü yanı anahtar yalnız 6 kişiyi adlandırır; Grosvenor House kataloğu 7 (Jones 1920, Canadian Magazine LVI, ss. 106–112'ye atfen); Sligo tam anahtar denemesi yapar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S12"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "Yeniden yorum: Walton Ford, Dying Words (2005) — soyu tükenmiş Carolina parakeet'i konu alır (EN wiki; Fairfield University Art Museum videosu 2021 ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C061",
+   "ifade": "Tür/bağlam: çağdaş giysinin uygunsuz sayıldığı \"history painting\" geleneği; olay üzerinden yalnız on bir yıl geçmişti; Britannica \"monumental Neoclassical painting\", kompozisyon tümüyle Neoklasik gelenek içinde.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S26"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "Britannica: tabloda savaş generalin hemen arkasında tüm şiddetiyle sürer; oysa Wolfe savaş bitmek üzereyken daha uzakta öldü; West dramı yükseltmek için olayları çarpıttı; figürlerin hepsi savaşta mevcut değildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S26"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "Boyut (D01): EN/IT infobox 151 × 213 cm ↔ NGC (S6/S8) + WGA 152.6 × 214.5 cm; birincil esas, wiki yuvarlanmış.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S6",
+    "S8",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C064",
+   "ifade": "Versiyon sayısı (D02): Stacey 1966 orijinal + 3 kopya = 4; Britannica \"Three full-scale copies\" ↔ ROM/UMich/EN-IT 5 autograf; IT lead \"cinque copie\" ↔ IT versions \"totale di cinque tele\"; Ickworth 1779 sonradan eklenen 5. versiyon.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S26",
+    "S19",
+    "S21",
+    "S3",
+    "S4",
+    "S17"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C065",
+   "ifade": "Toronto kurumu (D03): EN wiki ROM ↔ WD Q28031178 P195/P276 Art Gallery of Ontario (Q670250), P217=931.26.1 niteliği P195=ROM (Q649250), P18=\"Royal Ontario Museum-9492.jpg\"; ROM (S19) + Stacey \"Sigmund Samuel Collection\" ROM'u destekler; WD kendi içinde tutarsız.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S1",
+    "S2",
+    "S19",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C066",
+   "ifade": "Figür sayısı/ölçüt (D04): EN/IT \"14 figürün 4'ü savaş alanındaydı\" ↔ Stacey \"In West's group there are 13 … only one [ölüm anında] … Henry Browne\"; \"not more than four or possibly five persons were present\"; ölçüt + sayım farkı, kesinleştirilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C067",
+   "ifade": "Yelek rengi (D08): data/eser_ayrintilari + basyapitlar \"sarı yelek\" ↔ EN wiki \"red waistcoat\" + Stacey \"red coat, waistcoat and breeches\"; görsel inceleme YOK; data DEĞİŞTİRİLMEDİ, düzeltme önerisi insan onayına.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S10",
+    "S27"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C068",
+   "ifade": "RC yeri (D09): Stacey 1966 Kensington Palace ↔ RCT 2025 \"On loan, Spencer House\" (WD P276 Spencer House); yer zaman içinde değişmiş, güncel A kayıt S23.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S10",
+    "S23",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C069",
+   "ifade": "Fryd 1995 sayfa aralığı (D10): EN pp. 72–85 ↔ IT pp. 73–85; makale metnine erişilemedi (JSTOR bot).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S24"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C070",
+   "ifade": "George III anlatısı (D11): EN \"refused to purchase\" + \"fifth autograph copy commissioned … 1771\" ↔ IT \"commissionata … desistette dall'acquistarla\" ↔ Stacey (Galt 1820): Kral displeased, resim Grosvenor'daydı, kopya o zaman sipariş edildi; RCT 1771/300 guineas'ı A düzeyinde doğrular.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S10",
+    "S23"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C071",
+   "ifade": "WD Q28031178 tarihi (D12): P571=1776 ↔ 1776 Clements versiyonuna ait (S21); ROM/Monckton kopyasının tarihi erişilen kaynaklarda yok; WD'de olası tarih karışması.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S21",
+    "S19"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C072",
+   "ifade": "Doğum yeri adı: NT \"Swarthmore, Pennsylvania 1738\" ↔ WGA \"b. 1738, Springfield\"; aynı yerin farklı dönem adları olabilir; erişilen kaynaklarda açıklanmadı, kesinleştirilmedi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S17",
+    "S15"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C073",
+   "ifade": "Kronoloji sayımları: EN \"only eleven years\" (1759→1770) ↔ Stacey \"appeared 12 years after the battle\" ↔ U-M \"About 18 years after the conflict\" (1759→1776 = 17); yaklaşık/yuvarlanmış, tek sayı dayatılmaz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S11",
+    "S21"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C074",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata/lisans/çözünürlük; kompozisyon/renk ifadeleri kaynak betimlerine dayanır; GZ TASLAK; Yorck dosyasının hangi versiyonu gösterdiği metadata'da yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C075",
+   "ifade": "Canlı birincil erişim engelleri: gallery.ca 403 (S5/S7/S9), rct.uk 403 (S22), rom.on.ca 404 (S18), news.umich.edu 403 (S20), britannica.com 403 (S25), jstor.org bot kabuğu (S24), NT 200 ama SPA \"Page Not Found\" (S16); Wayback arşiv sürümleri kullanıldı, tarihler beyan; canlı teyit yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S9",
+    "S16",
+    "S18",
+    "S20",
+    "S22",
+    "S24",
+    "S25"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C076",
+   "ifade": "data/ görsel betim ayrıntıları doğrulanmadı: \"dövmeli\" savaşçı, \"tüylü başlık\", \"en güçlü ışık yüz+yelek\", \"yeşil giyimli asker haberciyi gösteriyor\", \"sağda koyu fırtına bulutları / solda aydınlık açıklık\"; NT gökyüzü betimi Ickworth versiyonuna ait → versiyonlar arası betim karışması riski; görsel inceleme gerekli.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S27",
+    "S13",
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C077",
+   "ifade": "WD veri kalitesi: P170/P571/P1476 refs = beckchris.wordpress.com (blog, zayıf); birçok dilde description \"painting by William Woollett\" (Woollett gravürcü, ressam değil — hatalı); NGC kaydı bağımsız A teyidi sağlar.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C078",
+   "ifade": "data/basyapitlar.json \"Copley'nin ve Trumbull'un çağdaş savaş sahneleri bu yolu izledi\" iddiası erişilen kaynaklarda doğrulanmadı; ders metnine alınmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S27"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C079",
+   "ifade": "Ickworth provenance: \"Possibly commissioned by the Earl-Bishop (Frederick, 4th Earl of Bristol & Bishop of Derry) and sent to Ballyscullion, 1802\" — \"Possibly\" korundu; ardından 1st Marquess of Bristol (~1837 listesi) → mirasla 4th Marquess (1863–1951) → 1956 in lieu of tax.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S17"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C080",
+   "ifade": "Erişilemeyen literatür (yalnız bibliyografyada anıldı): Fryd 1995, Montagna 1981 (Internet Archive access-restricted-item=true; DOI 10.2307/1594250 bağımsız doğrulanmadı), Madill 2018, Von Erffa & Staley 1986 (ss. 214–15 no. 96), Laskin & Pantazzi 1987 (Vol. 1 ss. 299–305), Solkin 2015, Artist and Empire (Tate 2015–16), Sarah Lee (RA 2024 cat. 76), Hubbard 1957, Galt 1820, Mitchell 1944, Webster 1930, Sligo 1922, Jones 1920, Smith 2000, Piper 2000, Marsand 1823. NGC orijinalinin catalogue raisonné numarası erişilen hiçbir kayıtta görülmedi — üretilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S12",
+    "S17",
+    "S24",
+    "S28"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C081",
+   "ifade": "Stacey'nin kuşku ifadeleri aynen korundu: \"apparently identified\", \"Let us hope that the one shown is not Robert … but John\", \"we have to face the possibility\", \"probably\", \"I suspect\", \"seems impossible to say\", \"This is possible\", \"less convincingly\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10",
+    "S11"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C082",
+   "ifade": "Savaş bağlamı: 13 Eylül 1759, Plains of Abraham (Quebec Savaşı); Yedi Yıl Savaşları / Fransız ve Yerli Savaşı'nın dönüm noktası; Fransa'nın Kuzey Amerika kolonilerinin kaderini belirledi, Kanada İngiliz denetimine geçti; iki komutan da yaralarından öldü (Wolfe aynı gün, Montcalm ertesi gün — IT).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S26",
+    "S23"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C083",
+   "ifade": "Seküler şehitlik okuması (yorum): dinsel Ağıt şeması korunurken içerik sekülerleştirilir; Wolfe \"ulus için fedakârlık\" ikonuna dönüşür; Smith'in Pietà/Marat karşılaştırmasıyla uyumlu.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4",
+    "S26",
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C084",
+   "ifade": "Benjamin'in \"aura\" kavramı ödünç alınırsa (yorum): şöhretin tekil tuvalden değil gravür çoğaltmasından doğması, \"aura\"nın çoğaltmayla kaybolacağı beklentisini tersine çevirir; çoğaltma tekilin şöhretini kurar. Kuramsal ödünç, tarihsel etki iddiası değil.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S10",
+    "S11",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C085",
+   "ifade": "Kant'ın sublime (yücelik) kavramı ödünç alınırsa (yorum): ölümün dehşeti ile kompozisyonun düzeni arasındaki gerilim, hem ürperti hem hayranlık uyandıran etki olarak okunabilir; NGC \"stoic reserve to tears\" aralığı bu duygusal mimariyi betimler. West'in Kant'tan etkilendiği iddia edilmez.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6",
+    "S11"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C086",
+   "ifade": "Değer ölçütü karşıtlığı (yorum): Stacey \"doubtful as art and entirely contemptible as history\" ↔ NGC \"emulate Wolfe's self-sacrifice\"; eserin değeri belgesel doğrulukta mı retorik/ahlaki etkide mi aranmalı sorusunu açar.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S10",
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C087",
+   "ifade": "Yerli figürün \"düşünen doğal insan\" olarak kurgulanması (yorum): Aydınlanma'nın noble savage söyleminin görsel politikası; figür tanıklık etmez, Avrupalı izleyicinin kendi düşüncesini sahneye yerleştirir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S26"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C088",
+   "ifade": "Stacey etkiyi üç şeye bağlar: tuvalin büyük boyutu, etkili kompozisyon ve kuşkuyla (\"I suspect\") parlak renk kullanımı; ayrıca gücün şöhret ve tanıdıklıktan (\"an object we have all known from childhood\") gelmiş olabileceğini söyler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S11"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C089",
+   "ifade": "Provenance'ın anlam boyutu (yorum): 1770'te imparatorluk zaferini imgelenmiş tuval, 1918/1921'de başka bir savaşın minnettarlığıyla Kanada'ya aktarılarak ulusal anıta dönüştürülmüştür; aynı kompozisyon Ottawa'da ulusal anıt, Ickworth/RA'da imparatorluk eleştirisi bağlamı, Ann Arbor'da emperyal zirve belgesi olarak okunur.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6",
+    "S10",
+    "S17",
+    "S21"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "Q956541 EntityData",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q956541.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData); refs zayıf (blog) → C077",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiketler (3 çağrı) + versiyon claim'leri (Q28031178 / Q52213416 / Q81337990)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q28031178%7CQ52213416%7CQ81337990",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (cache: wd-etiketler*.json, wd-versiyonlar.json)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia EN",
+   "belge": "\"The Death of General Wolfe\" wikitext (action=parse, redirects=1)",
+   "url": "https://en.wikipedia.org/w/api.php?action=parse&page=The%20Death%20of%20General%20Wolfe&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; bu oturumda yeniden çekildi (Q956541-enwiki-wikitext.json)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia IT",
+   "belge": "\"La morte del generale Wolfe\" wikitext",
+   "url": "https://it.wikipedia.org/w/api.php?action=parse&page=La%20morte%20del%20generale%20Wolfe&prop=wikitext&formatversion=2&redirects=1&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; bu oturumda yeniden çekildi (Q956541-itwiki-wikitext.json)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "National Gallery of Canada",
+   "belge": "Eser katalog sayfası (CANLI)",
+   "url": "https://www.gallery.ca/collection/artwork/the-death-of-general-wolfe-0",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 Cloudflare \"Just a moment...\" → S6 arşiv",
+   "tur": "birincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "National Gallery of Canada",
+   "belge": "Eser katalog sayfası (Wayback 2026-07-03)",
+   "url": "http://web.archive.org/web/20260703174027/https://www.gallery.ca/collection/artwork/the-death-of-general-wolfe-0",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2026-07-03); bu oturumda yeniden açıldı, künye dizgeleri teyit",
+   "tur": "birincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "National Gallery of Canada",
+   "belge": "Eski katalog URL'si mkey=5363 (CANLI; S3 ref'i)",
+   "url": "http://www.gallery.ca/en/see/collections/artwork.php?mkey=5363",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 Cloudflare → S8 arşiv",
+   "tur": "birincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "National Gallery of Canada",
+   "belge": "mkey=5363 (Wayback 2017-04-30): künye + çerçeve anlatısı + \"More from Benjamin West\"",
+   "url": "http://web.archive.org/web/20170430045924/http://www.gallery.ca/en/see/collections/artwork.php?mkey=5363",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2017-04-30)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "National Gallery of Canada",
+   "belge": "Bulletin 7, Stacey (CANLI)",
+   "url": "https://www.gallery.ca/bulletin/num7/stacey1.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 Cloudflare → S10 arşiv",
+   "tur": "birincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "National Gallery of Canada",
+   "belge": "C. P. Stacey, \"Benjamin West and 'The Death of Wolfe'\", Bulletin 7 (IV:1), 1966, s. 1 (Wayback 2018-08-09)",
+   "url": "https://web.archive.org/web/20180809021702/https://www.gallery.ca/bulletin/num7/stacey1.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2018-08-09); kurum yayını",
+   "tur": "birincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "National Gallery of Canada",
+   "belge": "Stacey, a.g.e., s. 2 (Wayback 2018-08-09)",
+   "url": "https://web.archive.org/web/20180809211032/https://www.gallery.ca/bulletin/num7/stacey2.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2018-08-09); bu oturumda yeniden istendi (başlık teyidi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "National Gallery of Canada",
+   "belge": "Stacey, a.g.e., s. 3 — notlar/kaynakça (Wayback 2018-08-09)",
+   "url": "https://web.archive.org/web/20180809211058/https://www.gallery.ca/bulletin/num7/stacey3.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2018-08-09); bu oturumda yeniden istendi (başlık teyidi)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: Benjamin West 005.jpg + WGA25558.jpg (url|size|extmetadata)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&titles=File%3ABenjamin%20West%20005.jpg%7CFile%3ABenjamin%20West%20-%20The%20Death%20of%20General%20Wolfe%20-%20WGA25558.jpg&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; bu oturumda yeniden çekildi; GÖRSEL İNCELENMEDİ (yalnız metadata/lisans)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S14",
+   "kurum": "Wikimedia Commons",
+   "belge": "WGA25558 dosya sayfası wikitext (Artwork şablonu: 1770, oil/canvas, 152.6×214.5, NGC Ottawa, wikidata=Q956541; WGA link)",
+   "url": "https://commons.wikimedia.org/w/api.php?action=parse&page=File%3ABenjamin%20West%20-%20The%20Death%20of%20General%20Wolfe%20-%20WGA25558.jpg&prop=wikitext&format=json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (cache: commons-wga-filepage.json); görsel İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S15",
+   "kurum": "Web Gallery of Art",
+   "belge": "wolfe.html (S14 credit'indeki info-url; tahmin değil): 1770, oil on canvas, 152,6 × 214,5 cm, NGC Ottawa; \"b. 1738, Springfield\"",
+   "url": "http://www.wga.hu/html/w/west/wolfe.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; üçüncül (şemada ikincil)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "National Trust",
+   "belge": "851783 nesne sayfası (CANLI)",
+   "url": "https://www.nationaltrustcollections.org.uk/object/851783",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama SPA kabuğu, gövde \"Page Not Found\" → S17 arşiv",
+   "tur": "birincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "National Trust",
+   "belge": "851783 Ickworth versiyonu tam kayıt (Wayback 2026-09-13)",
+   "url": "http://web.archive.org/web/20260913125859/https://www.nationaltrustcollections.org.uk/object/851783",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2026-09-13); bu oturumda yeniden açıldı, dizgeler teyit",
+   "tur": "birincil"
+  },
+  {
+   "id": "S18",
+   "kurum": "Royal Ontario Museum",
+   "belge": "\"Iconic: The Death of General Wolfe\" (CANLI)",
+   "url": "https://www.rom.on.ca/learn/resource-hub/iconic-death-general-wolfe",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "404 → S19 arşiv",
+   "tur": "birincil"
+  },
+  {
+   "id": "S19",
+   "kurum": "Royal Ontario Museum",
+   "belge": "\"Iconic: The Death of General Wolfe\" (Wayback 2026-01-23)",
+   "url": "http://web.archive.org/web/20260123174615/https://www.rom.on.ca/learn/resource-hub/iconic-death-general-wolfe",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2026-01-23)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S20",
+   "kurum": "University of Michigan News",
+   "belge": "Clements Library 1776 versiyonu haberi (CANLI)",
+   "url": "https://news.umich.edu/u-m-clements-library-celebrates-the-death-of-general-wolfe-iconic-1776-painting-by-benjamin-west/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 Cloudflare → S21 arşiv",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S21",
+   "kurum": "University of Michigan News",
+   "belge": "Sydney Hawkins, 15 Ekim 2019 (Wayback 2025-04-28)",
+   "url": "http://web.archive.org/web/20250428050552/https://news.umich.edu/u-m-clements-library-celebrates-the-death-of-general-wolfe-iconic-1776-painting-by-benjamin-west/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2025-04-28)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S22",
+   "kurum": "Royal Collection Trust",
+   "belge": "407297 (CANLI; royalcollection.org.uk → rct.uk yönlandı)",
+   "url": "https://www.royalcollection.org.uk/collection/407297/the-death-of-wolfe",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 → S23 arşiv",
+   "tur": "birincil"
+  },
+  {
+   "id": "S23",
+   "kurum": "Royal Collection Trust",
+   "belge": "RCIN 407297, \"The Death of Wolfe\" 1771 (Wayback 2025-01-20; __NEXT_DATA__ JSON'undan çözüldü)",
+   "url": "http://web.archive.org/web/20250120190041/https://www.rct.uk/collection/407297/the-death-of-wolfe",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2025-01-20); bu oturumda yeniden açıldı, dizgeler teyit",
+   "tur": "birincil"
+  },
+  {
+   "id": "S24",
+   "kurum": "JSTOR",
+   "belge": "Fryd 1995, American Art 9(1), stable/3109196",
+   "url": "https://www.jstor.org/stable/3109196",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 ama bot doğrulama kabuğu; makale metni YOK",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S25",
+   "kurum": "Encyclopaedia Britannica",
+   "belge": "topic/The-Death-of-General-Wolfe (CANLI)",
+   "url": "https://www.britannica.com/topic/The-Death-of-General-Wolfe",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "403 → S26 arşiv",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S26",
+   "kurum": "Encyclopaedia Britannica",
+   "belge": "\"The Death of General Wolfe\", yazar William Davies (Wayback 2025-06-11); üçüncül ansiklopedi",
+   "url": "http://web.archive.org/web/20250611190836/https://www.britannica.com/topic/The-Death-of-General-Wolfe",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "arşiv 200 (2025-06-11); üçüncül (şemada ikincil)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S27",
+   "kurum": "Sanat Atlası yerel veri (data/)",
+   "belge": "basyapitlar, eserler_onbellek, eser_ayrintilari, eser_notlari, ikonografi, kopya_eserler, kunye, muze_numaralari — salt-okunur; iddia kaynağı değil, uyuşmazlık tespiti",
+   "url": "file:///Users/emrymn/Downloads/sanat-atlasi/data/basyapitlar.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "yerel dosya (data/basyapitlar.json vb.); salt-okunur tarandı, DEĞİŞTİRİLMEDİ",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S28",
+   "kurum": "Internet Archive",
+   "belge": "sim_american-art-journal_spring-1981_13_2 metadata (Montagna 1981 sayısı; S4 ref'i)",
+   "url": "https://archive.org/metadata/sim_american-art-journal_spring-1981_13_2",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (metadata); access-restricted-item=true → makale metnine erişilmedi",
+   "tur": "ikincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "The Death of Wolfe (George III versiyonu)",
+   "sanatci": "Benjamin West",
+   "kurum": "Royal Collection (RCIN 407297); Spencer House, Londra (ödünç)",
+   "envanter": "RCIN 407297",
+   "gerekce": "Aynı kompozisyonun 1771 autograf tekrarı: Montcalm ayrıntısı, habercinin görünürlüğü ve astar/ekleme (lined, augmented) durumu üzerinden versiyon farklarını ve \"hangi resim?\" sorusunu sınamak için.",
+   "kanit": [
+    "C030",
+    "C031",
+    "C020"
+   ]
+  },
+  {
+   "eser": "The Death of General Wolfe (Woollett gravürü)",
+   "sanatci": "William Woollett (West'in tuvalinden)",
+   "kurum": "Alderman Boydell için basıldı, 1776; Brodick Castle, Isle of Arran (siyah-beyaz kopya)",
+   "gerekce": "Şöhretin asıl kanalı: tekil tuval ↔ çoğaltma ilişkisini ve \"aura\" tartışmasını (C084) sınamak için; Stacey'ye göre resim başlıca ününü bu gravürden kazandı.",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "eser": "Kanata",
+   "sanatci": "Robert Houle",
+   "kurum": "1992; 1993 \"Kanata: Robert Houle's Histories\", Carleton University Art Gallery",
+   "gerekce": "Yerli figürün kurgusallığına çağdaş bir yanıt: appropriation, sepya indirgeme ve battaniyede kalan renk üzerinden temsil politikası karşılaştırması.",
+   "kanit": [
+    "C035",
+    "C016"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — S6 (NGC Wayback 2026-07-03), S17 (NT Wayback 2026-09-13), S23 (RCT Wayback 2025-01-20) bu oturumda yeniden indirildi: HTTP 200 + künye/prime version/300 guineas/Spencer House/Northeast Peoples/in lieu of tax dizgeleri teyit. S3/S4 (EN/IT wikitext) ve S13 (Commons imageinfo) canlı 200 ile yeniden çekildi; S11/S12 Wayback URL'leri yeniden istendi (200 + başlık). Montagna 1981 için Internet Archive metadata: access-restricted-item=true (metne erişilmedi). 15 D ihtilafı ve 10 E sınırı açık; görsel İNCELENMEDİ → GZ TASLAK (KALITE_KONTROL.md).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Künye UYUMLU: data/basyapitlar.json (tarih 1770, müze NGC Ottawa) ve data/eserler_onbellek.json (yil 1770, qid Q956541) birincil NGC kaydıyla örtüşür (C001–C006).",
+  "D08 / C067: data/eser_ayrintilari.json + basyapitlar.json \"sarı yeleğine\" ↔ EN wiki \"red waistcoat\" + Stacey \"red coat, waistcoat and breeches\" (C021). Görsel inceleme ana oturumda; data DEĞİŞTİRİLMEDİ, düzeltme önerisi insan onayına sunulur.",
+  "C014: data/eser_notlari.json \"dönemi için devrimcidir\" ifadesi \"devrimci etki\" olarak desteklenebilir (C013/C027/C039); \"ilk\" iddiası KURULMAMALI (Stacey: \"long been exploded\"; Romney/Penny önceledi).",
+  "C015/C066: data \"çoğunun aslında orada olmadığı bilinir\" B ile uyumlu; 13/14 ve 4/1 sayımları D04 farkları korunarak yazıldı. \"1771 RA'da büyük ilgi\" C008/C058 ile uyumlu.",
+  "C076: data'nın \"dövmeli\", \"tüylü başlık\", \"en güçlü ışık\", \"yeşil giyimli asker haberciyi gösteriyor\", \"sağda fırtına bulutları / solda aydınlık açıklık\" betimleri erişilen kaynaklarda doğrulanmadı; NT gökyüzü betimi Ickworth versiyonuna ait → görsel inceleme + versiyon ayrımı gerekli.",
+  "C078: data \"Copley'nin ve Trumbull'un çağdaş savaş sahneleri bu yolu izledi\" iddiası erişilen kaynaklarda yok; ders metnine alınmadı.",
+  "data/kopya_eserler.json: Q52213416 (Ickworth) ve Q81337990 (Royal Collection) görselleri WGA25558'e (NGC orijinali) konsolide edilmiş; versiyonlar QID düzeyinde ayrı. Q956541'in NGC orijinali olduğu S17/S23 ile A düzeyinde teyitli (C005).",
+  "data/ikonografi.json \"death-of-general-wolfe\" motifi (Q956541, Q81337990, Q28031178, Q52213416) WD P4969 türevleriyle uyumlu.",
+  "data/muze_numaralari.json: Q956541 kaydı YOK; NGC env. 8007 işlenmemiş — eksiklik notu, uyuşmazlık değil.",
+  "WD tutarsızlıkları (C065/C071/C077): Q28031178 AGO/ROM çelişkisi, P571=1776 olası karışması, \"painting by William Woollett\" description hatası — data'yı değil WD'yi ilgilendirir.",
+  "Lisans (C047): her iki Commons dosyası PD; data/eserler_onbellek.json'da Yorck dosyasının lisans alanı boş → doldurma önerisi onaya sunulur. Görsel projeye kopyalanmadı.",
+  "Cache notu: parti dizinindeki enwiki/itwiki/commons-imageinfo dosyaları başka eser tarafından üzerine yazılmıştı; S3/S4/S13 bu oturumda canlı yeniden çekildi (Q956541-*.json)."
+ ]
+}

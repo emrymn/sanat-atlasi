@@ -1,0 +1,546 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1091086",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Museo del Prado, Madrid"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée du Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Galleria degli Uffizi, Floransa"
+    },
+    {
+     "harf": "D",
+     "metin": "Museo Reina Sofía, Madrid"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1 Prado kaydı: eser Prado koleksiyonunda, P00749.",
+   "yanlis_gerekceleri": {
+    "B": "Louvre Paris'te farklı bir kurumdur; eser Prado'dadır (P00749).",
+    "C": "Uffizi Floransa'da farklı bir kurumdur; eser Prado koleksiyonundadır.",
+    "D": "Reina Sofía da Madrid'dedir ama bu eser Prado'dadır; Reina Sofía Guernica gibi 20. yy eserleriyle bilinir."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Envanter (katalog) numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "P00749"
+    },
+    {
+     "harf": "B",
+     "metin": "P00748"
+    },
+    {
+     "harf": "C",
+     "metin": "P00750"
+    },
+    {
+     "harf": "D",
+     "metin": "P00746"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Num. de catálogo P00749.",
+   "yanlis_gerekceleri": {
+    "B": "P00748 kardeş eser El 2 de mayo'nun numarasıdır.",
+    "C": "P00750 bu eserin katalog numarası değildir; Prado kaydı P00749 verir.",
+    "D": "P00746 bu eserin katalog numarası değildir; Prado kaydı P00749 verir."
+   },
+   "kanit": [
+    "C001",
+    "C036"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Tablonun yapım yılı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1814"
+    },
+    {
+     "harf": "B",
+     "metin": "1808"
+    },
+    {
+     "harf": "C",
+     "metin": "1819"
+    },
+    {
+     "harf": "D",
+     "metin": "1820"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1 Cronología 1814; WD P571 1814 (yıl hassasiyeti).",
+   "yanlis_gerekceleri": {
+    "B": "1808 betimlenen olayların tarihidir (2–3 Mayıs 1808), yapım yılı değil.",
+    "C": "1819 Prado'nun açılış yılıdır; tablo 1814'te yapıldı.",
+    "D": "1820 Disasters of War baskı dizisinin tamamlandığı yıldır; tablonun tarihi değil."
+   },
+   "kanit": [
+    "C001",
+    "C024",
+    "C021"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Teknik ve destek nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval (óleo/lienzo)"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk (duvar resmi)"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera, ahşap pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya, kâğıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Técnica Óleo, Soporte Lienzo.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk duvar resmi tekniğidir; bu eser tuval üzerine yağlıboyadır.",
+    "C": "Tempera/pano farklı teknik ve destektir; Prado óleo/lienzo kaydeder.",
+    "D": "Suluboya/kâğıt farklıdır; eser yağlıboya tuvaldir."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Boyut nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "268 × 347 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "162 × 73 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "200 × 250 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "300 × 400 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1 Medidas 268 cm x 347 cm; WD P2048/P2049.",
+   "yanlis_gerekceleri": {
+    "B": "162×73 bu eserin boyutu değildir; Prado 268×347 cm verir.",
+    "C": "200×250 bu eserin boyutu değildir; Prado 268×347 cm verir.",
+    "D": "300×400 bu eserin boyutu değildir; Prado 268×347 cm verir."
+   },
+   "kanit": [
+    "C001",
+    "C037"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Prado birincil kaydına göre Goya, 2 Mayıs 1808 olayları için kaç tablo yaptı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İki"
+    },
+    {
+     "harf": "B",
+     "metin": "Dört"
+    },
+    {
+     "harf": "C",
+     "metin": "Altı"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: \"Goya pintó solamente dos cuadros ... y no cuatro\"; faturalar yalnız iki çerçeve içindir.",
+   "yanlis_gerekceleri": {
+    "B": "Dört, bibliyografideki yaygın hatadır; Prado birincil kaydı iki olarak düzeltir.",
+    "C": "Altı sayısı kaynaklarda desteklenmez; Prado iki der.",
+    "D": "Bir değil; kardeş eser El 2 de mayo ile birlikte iki tablo vardır."
+   },
+   "kanit": [
+    "C005",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Prado belgelerine göre çerçeveleri (\"Quarto del rey\") kim finanse etti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fernando VII"
+    },
+    {
+     "harf": "B",
+     "metin": "Goya'nın kendisi"
+    },
+    {
+     "harf": "C",
+     "metin": "Madrid Belediyesi"
+    },
+    {
+     "harf": "D",
+     "metin": "Napolyon"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: çerçeve faturaları \"Quarto del rey\" gideri → Fernando VII finanse, Palacio salonları için.",
+   "yanlis_gerekceleri": {
+    "B": "Goya'ya ödeme yapıldı (1500 reales/ay); çerçeveleri o değil, kral karşıladı.",
+    "C": "Belediye anma hazırlıklarına katıldı ama çerçeve faturaları kralın \"Quarto del rey\" gideridir.",
+    "D": "Napolyon işgalci taraftı; İspanyol kralı Fernando VII finanse etti."
+   },
+   "kanit": [
+    "C004",
+    "C014"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "24 Şubat 1814 belgesine göre Goya'ya aylık tazminat ne kadardı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1500 reales de vellón"
+    },
+    {
+     "harf": "B",
+     "metin": "500 reales de vellón"
+    },
+    {
+     "harf": "C",
+     "metin": "3000 reales de vellón"
+    },
+    {
+     "harf": "D",
+     "metin": "100 reales de vellón"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Juan Álvarez Guerra belgesi \"mil y quinientos reales de vellón mensuales\" (1500/ay).",
+   "yanlis_gerekceleri": {
+    "B": "Belge 1500 reales de vellón/ay der; 500 bu eserin ödeme kaydı değildir.",
+    "C": "Belge 1500 reales de vellón/ay der; 3000 bu eserin ödeme kaydı değildir.",
+    "D": "Belge 1500 reales de vellón/ay der; 100 bu eserin ödeme kaydı değildir."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Kardeş eser (pendant) hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "El 2 de mayo en Madrid (P00748)"
+    },
+    {
+     "harf": "B",
+     "metin": "La maja desnuda"
+    },
+    {
+     "harf": "C",
+     "metin": "Satürn Oğlunu Yerken"
+    },
+    {
+     "harf": "D",
+     "metin": "Disasters of War (baskı dizisi)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: kardeş eser El 2 de mayo en Madrid (P00748); provenance birlikte.",
+   "yanlis_gerekceleri": {
+    "B": "La maja desnuda Goya'nın başka bir eseridir; kardeş pano değil.",
+    "C": "Satürn Oğlunu Yerken Goya'nın Kara Resimler'inden biridir; kardeş pano değil.",
+    "D": "Disasters of War bir gravür dizisidir; kardeş tuval değil."
+   },
+   "kanit": [
+    "C036",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "enwiki'ye göre Manet, \"İmparator Maximilian'ın İdamı\" için doğrudan hangi eserden beslenmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "3 Mayıs 1808 (Goya)"
+    },
+    {
+     "harf": "B",
+     "metin": "Guernica (Picasso)"
+    },
+    {
+     "harf": "C",
+     "metin": "Halka Yol Gösteren Özgürlük (Delacroix)"
+    },
+    {
+     "harf": "D",
+     "metin": "Horatii Yemini (David)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Manet'in Maximilian serisi tematik ve teknik olarak Goya'nın 3 Mayıs'ından beslenir.",
+   "yanlis_gerekceleri": {
+    "B": "Guernica Picasso'nundur ve Goya'dan etkilenmiştir; Manet'in kaynağı değil (Manet 1867–69, Guernica 1937).",
+    "C": "Delacroix'nın 1830 tarihli eseri farklı bir hattır; Manet'in doğrudan kaynağı Goya'dır.",
+    "D": "David'in Horatii'si Goya için olası kaynak olarak anılır; Manet'in kaynağı değil."
+   },
+   "kanit": [
+    "C008",
+    "C028"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Museo del Prado'dadır ve envanter numarası P00749'dur.",
+   "dogru": true,
+   "aciklama": "Doğru (K1 Prado kaydı; künye).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Prado birincil kaydına göre Goya, 2 Mayıs 1808 olayları için dört tablo yapmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Prado \"yalnızca iki, dört değil\" diye düzeltir; faturalar iki çerçeve içindir (C005).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Tablolar Madrid sokaklarında kamusal sergileme amacıyla yapılmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: Prado sokak destino fikrini yanlış sayar; eserler Palacio salonları içindir, çerçeveler \"Quarto del rey\" (C005, C004).",
+   "kanit": [
+    "C005",
+    "C004"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Goya'nın infazları bizzat izlediği kesin olarak belgelenmiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış: görüp görmediği bilinmez (Licht); onu olay yerinde gösteren sonraki anlatılar şüphelidir (C026).",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eser kamu malıdır (PD); Goya 1828'de ölmüştür.",
+   "dogru": true,
+   "aciklama": "Doğru: 100+ yıl pma; WD P6216 PD; Commons dosyaları PD (C038).",
+   "kanit": [
+    "C038"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Sipariş kökeni ihtilafını (Goya önerisi ↔ Regency) belge durumuyla değerlendirin.",
+   "beklenen_ogeler": [
+    "enwiki/Clark: Goya önerisi",
+    "Prado: Regency girişi",
+    "öneri mektubu bulunamadı",
+    "Pintor de Cámara için alışılmadık girişim"
+   ],
+   "kanit": [
+    "C010",
+    "C003",
+    "C014"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Mekân belirleme tartışmasını (Príncipe Pío ↔ Moncloa ↔ Puerta de la Vega) Prado'nun gerekçeleriyle yazın.",
+   "beklenen_ogeler": [
+    "Yriarte Príncipe Pío varsayımı",
+    "Puerta de la Vega analizi",
+    "San Ginés / Santa María kuleleri",
+    "Corona savunması iması (ihtiyatlı)"
+   ],
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Işığın geleneksel \"ilahi ışık\" rolünden tersine çevrilmesini (Licht) yorum olarak tartışın.",
+   "beklenen_ogeler": [
+    "Caravaggio/chiaroscuro geleneği",
+    "fener mucize göstermez",
+    "tanıklık için ışık",
+    "ruhsal rolün tersine çevrilmesi"
+   ],
+   "kanit": [
+    "C029",
+    "C013"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "İki ↔ dört tablo düzeltmesinin belge temelini (çerçeve faturaları) ve bibliyografi hatasını analiz edin.",
+   "beklenen_ogeler": [
+    "Prado: yalnız iki çerçeve faturası",
+    "Caveda 1867 dört tablo",
+    "Ferriz iki konu daha",
+    "Tomlinson kaybolma hipotezi"
+   ],
+   "kanit": [
+    "C005",
+    "C023",
+    "C004"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Goya'nın tanıklığı belirsizliğini ve \"Yo lo vi\" baskısının iddiasını değerlendirin.",
+   "beklenen_ogeler": [
+    "Licht: görüp görmediği bilinmez",
+    "Trueba/Isidoro şüpheli anlatı",
+    "Yo lo vi (pl.44) tanıklık iddiası",
+    "baskılar siparişten önce"
+   ],
+   "kanit": [
+    "C026",
+    "C024"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betimine göre merkezde beyaz gömlekli, kollarını açmış figürü bulun; avuç içlerini ve duruşunu inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Licht: beyaz gömlek + sarı giysi, güneş yanığı yüz (işçi); yakarış ya da meydan okuma.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "İki grup arasındaki yere konmuş kare feneri bulun; ışığın hangi figürlere düştüğünü izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): En parlak ışık soldaki kurbanlara düşer; fener yerde.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağda yüzleri görünmeyen infaz mangasını bulun; süngü ve shako dizisini, gri paltoları inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Prado: hat grenadyerleri + muhafız denizcileri, capote gris.",
+   "kanit": [
+    "C009",
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Solda dua eden keşiş figürünü ve yüzlerini kapatan kurbanları bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kurbanlar arasında keşiş; bazıları yüzünü kapatır.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Arka planda karanlıkta seçilen kent siluetini ve çan kulesini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Gece uzakta çan kuleli kent; arkada meşaleli kalabalık (belirsiz).",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Goya, El 3 de mayo en Madrid: Los fusilamientos de patriotas madrileños; 1814; óleo/lienzo; 268×347 cm; Prado P00749; kardeşi El 2 de mayo P00748.",
+   "kanit": [
+    "C001",
+    "C036"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sipariş ve ödeme?",
+   "arka": "Regency girişi (Şubat–Mart 1814); 24 Şubat 1814 Álvarez Guerra: 1500 reales de vellón/ay + malzeme; çerçeveler \"Quarto del rey\" (Fernando VII), 29 Kasım 1814 tamam; Prado: iki tablo (dört değil), Palacio için.",
+   "kanit": [
+    "C003",
+    "C014",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Kompozisyon (kaynak betimi)?",
+   "arka": "İki kütle: sağda yüzsüz infaz mangası (gri palto, süngü/shako), solda dağınık kurbanlar; merkezde beyaz gömlekli işçi kolları açık; yerde kare fener; dua eden keşiş; karanlıkta kent + çan kulesi.",
+   "kanit": [
+    "C009",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Etki zinciri?",
+   "arka": "Holtom barış işareti; Manet Maximilian İdamı (1867–69); Picasso Kore'de Katliam (1951) + Guernica (1937); Rockwell Murder in Mississippi (1965); 2006 Prado/Reina Sofía ortak sergisi.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Provenance?",
+   "arka": "Palacio Real 1814 → Prado (1834 öncesi; 1834 Depósito Grande); Gautier 1840/1843; Clément de Ris 1850; Yriarte 1867; katalog 1872; 2008 restorasyon.",
+   "kanit": [
+    "C002",
+    "C019"
+   ]
+  }
+ ]
+}

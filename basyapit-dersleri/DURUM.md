@@ -1,6 +1,6 @@
 # DURUM — 107 Başyapıt İlerleme Takibi
 
-**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 3 üretimi — 20 eser, PARTI_3_URETIM_RAPORU) · Pilot: Q167605 (Süt Boşaltan Kadın)
+**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 4 üretimi — 20 eser, PARTI_4_URETIM_RAPORU) · Pilot: Q167605 (Süt Boşaltan Kadın)
 
 Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt envanteri hazır → Taslak hazır → Doğrulama bekliyor → İnsan incelemesi bekliyor → Yayına aday`. Hiçbir eser otomatik olarak "Yayına aday" yapılmaz; insan editoryal onayı gerekir.
 
@@ -65,33 +65,33 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 | 55 | M8 | Q27097122 | İskender'in Babil'e Girişi | charles-le-brun | İnsan incelemesi bekliyor ✅ |
 | 56 | M8 | Q1140358 | Arkadya'da Ben de Varım (Et in Arcadia ego) | nicolas-poussin | İnsan incelemesi bekliyor ✅ |
 | 57 | M8 | Q7731855 | Saba Melikesi'nin Gemiye Binişi | claude-lorrain | İnsan incelemesi bekliyor ✅ |
-| 58 | M9 | Q19863024 | Banyosunda Batşeba | sebastiano-ricci | Araştırılmadı |
+| 58 | M9 | Q19863024 | Banyosunda Batşeba | sebastiano-ricci | İnsan incelemesi bekliyor ✅ |
 | 59 | M9 | Q531329 | Kythera Adası'na Yolculuk (Pèlerinage à l'île de Cythère) | jean-antoine-watteau | İnsan incelemesi bekliyor ✅ |
 | 60 | M9 | Q1131176 | Sarışın Odalık (Louise O'Murphy) | francois-boucher | İnsan incelemesi bekliyor ✅ |
 | 61 | M9 | Q2629559 | Salıncak (L'Escarpolette) | jean-honore-fragonard | İnsan incelemesi bekliyor ✅ |
 | 62 | M9 | Q18167078 | Kleopatra'nın Ziyafeti | giovanni-battista-tiepolo | İnsan incelemesi bekliyor ✅ |
-| 63 | M9 | Q3212142 | Vatoz | jean-baptiste-simeon-chardin | Araştırılmadı |
-| 64 | M9 | Q4388208 | Kırık Testi | jean-baptiste-greuze | Araştırılmadı |
-| 65 | M9 | william-hogarth|Gin Lane | Cin Sokağı | william-hogarth | Araştırılmadı |
-| 66 | M9 | Q956541 | General Wolfe'un Ölümü | benjamin-west | Araştırılmadı |
-| 67 | M9 | angelica-kauffman|Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures) | Gracchusların Annesi Kornelia | angelica-kauffman | Araştırılmadı |
-| 68 | M10 | Q28797801 | Horas Kardeşlerin Yemini (Le Serment des Horaces) | jacques-louis-david | Araştırılmadı |
-| 69 | M10 | Q3937621 | Marie Antoinette ve Çocukları | elisabeth-vigee-le-brun | Araştırılmadı |
-| 70 | M10 | Q2324840 | Günlerin Atası | william-blake | Araştırılmadı |
-| 71 | M10 | Q311243 | Sis Denizi Üzerinde Gezgin (Der Wanderer über dem Nebelmeer) | caspar-david-friedrich | Araştırılmadı |
-| 72 | M10 | Q2317837 | Kabus (The Nightmare) | henry-fuseli | Araştırılmadı |
-| 73 | M10 | Q2366825 | Saman Arabası | john-constable | Araştırılmadı |
-| 74 | M10 | Q29530 | Halka Yol Gösteren Özgürlük | eugene-delacroix | Araştırılmadı |
-| 75 | M10 | Q1091086 | 3 Mayıs 1808 (El tres de mayo de 1808) | francisco-de-goya | Araştırılmadı |
-| 76 | M10 | Q212616 | Medusa'nın Salı (Le Radeau de la Méduse) | theodore-gericault | Araştırılmadı |
-| 77 | M10 | Q219344 | Köle Gemisi (The Slave Ship) | j-m-w-turner | Araştırılmadı |
+| 63 | M9 | Q3212142 | Vatoz | jean-baptiste-simeon-chardin | İnsan incelemesi bekliyor ✅ |
+| 64 | M9 | Q4388208 | Kırık Testi | jean-baptiste-greuze | İnsan incelemesi bekliyor ✅ |
+| 65 | M9 | william-hogarth|Gin Lane | Cin Sokağı | william-hogarth | İnsan incelemesi bekliyor ✅ |
+| 66 | M9 | Q956541 | General Wolfe'un Ölümü | benjamin-west | İnsan incelemesi bekliyor ✅ |
+| 67 | M9 | angelica-kauffman|Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures) | Gracchusların Annesi Kornelia | angelica-kauffman | İnsan incelemesi bekliyor ✅ |
+| 68 | M10 | Q28797801 | Horas Kardeşlerin Yemini (Le Serment des Horaces) | jacques-louis-david | İnsan incelemesi bekliyor ✅ |
+| 69 | M10 | Q3937621 | Marie Antoinette ve Çocukları | elisabeth-vigee-le-brun | İnsan incelemesi bekliyor ✅ |
+| 70 | M10 | Q2324840 | Günlerin Atası | william-blake | İnsan incelemesi bekliyor ✅ |
+| 71 | M10 | Q311243 | Sis Denizi Üzerinde Gezgin (Der Wanderer über dem Nebelmeer) | caspar-david-friedrich | İnsan incelemesi bekliyor ✅ |
+| 72 | M10 | Q2317837 | Kabus (The Nightmare) | henry-fuseli | İnsan incelemesi bekliyor ✅ |
+| 73 | M10 | Q2366825 | Saman Arabası | john-constable | İnsan incelemesi bekliyor ✅ |
+| 74 | M10 | Q29530 | Halka Yol Gösteren Özgürlük | eugene-delacroix | İnsan incelemesi bekliyor ✅ |
+| 75 | M10 | Q1091086 | 3 Mayıs 1808 (El tres de mayo de 1808) | francisco-de-goya | İnsan incelemesi bekliyor ✅ |
+| 76 | M10 | Q212616 | Medusa'nın Salı (Le Radeau de la Méduse) | theodore-gericault | İnsan incelemesi bekliyor ✅ |
+| 77 | M10 | Q219344 | Köle Gemisi (The Slave Ship) | j-m-w-turner | İnsan incelemesi bekliyor ✅ |
 | 78 | M11 | Q1065493 | Ophelia | john-everett-millais | Araştırılmadı |
-| 79 | M10 | Q1978815 | Büyük Odalık (La Grande Odalisque) | jean-auguste-dominique-ingres | Araştırılmadı |
+| 79 | M10 | Q1978815 | Büyük Odalık (La Grande Odalisque) | jean-auguste-dominique-ingres | İnsan incelemesi bekliyor ✅ |
 | 80 | M11 | Q3224275 | Köle Pazarı | jean-leon-gerome | Araştırılmadı |
 | 81 | M11 | Q1283024 | Venüs'ün Doğuşu | william-adolphe-bouguereau | Araştırılmadı |
-| 82 | M11 | Q3228340 | Üçüncü Mevki Vagon | honore-daumier | Araştırılmadı |
-| 83 | M11 | Q540488 | Ornans'ta Cenaze | gustave-courbet | Araştırılmadı |
-| 84 | M11 | Q1368055 | Başak Toplayanlar (Des glaneuses) | jean-francois-millet | Araştırılmadı |
+| 82 | M11 | Q3228340 | Üçüncü Mevki Vagon | honore-daumier | İnsan incelemesi bekliyor ✅ |
+| 83 | M11 | Q540488 | Ornans'ta Cenaze | gustave-courbet | İnsan incelemesi bekliyor ✅ |
+| 84 | M11 | Q1368055 | Başak Toplayanlar (Des glaneuses) | jean-francois-millet | İnsan incelemesi bekliyor ✅ |
 | 85 | M11 | Q1452762 | Paris Sokağı, Yağmurlu Hava (Rue de Paris, temps de pluie) | gustave-caillebotte | Araştırılmadı |
 | 86 | M11 | Q1245354 | Folies-Bergère'de Bir Bar (Un Bar aux Folies-Bergère) | edouard-manet | Araştırılmadı |
 | 87 | M11 | Q3821820 | Bale Dersi | edgar-degas | Araştırılmadı |
@@ -120,8 +120,8 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 
 | Durum | Adet |
 |---|---|
-| İnsan incelemesi bekliyor | 61 (Parti 1: 20 + Parti 2: 20 + Parti 3: 20 + pilot Q167605) |
-| Araştırılmadı | 46 |
+| İnsan incelemesi bekliyor | 81 (Parti 1: 20 + Parti 2: 20 + Parti 3: 20 + Parti 4: 20 + pilot Q167605) |
+| Araştırılmadı | 26 |
 | Toplam | 107 |
 
 ## Parti Günlüğü
@@ -335,6 +335,59 @@ Claude bağımsız denetim raporu (P0 kritik + P1 yüksek + sistematik) **ham ka
 - #20 Q18167078 (Tiepolo, Kleopatra Ziyafeti, NGV Melbourne): 67 (A23/B28/C1/D10/E5) · 415/1368/2650 · 0/0. NGV work 4409 + Tomory essay A (103-4, 250.3×357, Felton 1933). D: şarap↔sirke, edinim 1932 Colnaghi's↔1933 Sovyet, WD P11807 versiyon karışıklığı. GZ TASLAK.
 
 **PARTİ 3 ÖZET (20/20):** Tümü "İnsan incelemesi bekliyor"; **dogrula 0 hata**, **30 uyarı** (tamamı heuristic kısaltma-bölünmesi yanlış-pozitifi: Boucher 16, Velázquez 7, Caravaggio 7; tam cümleler [C###] etiketli). CJK 0. Toplam iddia **1169 (A454/B303/C79/D166/E167)**; her eserde quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (CS/DY/GZ/TK yalnız A/B); **kelime hedeflerinin TAMAMI aralıkta** (dolgu yok). `dogrula.py --test` **25/25**. Birincil katalog erişimi: Louvre (Veronese/Poussin/Le Brun/Rigaud/Watteau), NG Londra (Caravaggio/Claude), Uffizi (Artemisia), NGA Washington (Orazio), MFA Boston (Baburen), Anvers Katedrali (Rubens), Royal Collection (Van Dyck), Doria Pamphilj (Velázquez), Prado (Zurbarán), Hermitage (Rembrandt), Rijksmuseum (Steen), WRM/DHM (Boucher), Wallace (Fragonard), NGV (Tiepolo), Fransa Büyükelçiliği (Carracci) AÇILDI → güçlü A (çoğu canlı 403/404 → Wayback arşiv tarihli). **Vision bütçesi tüketildiğinden 20 eserin tümünde görsel İNCELENEMEDİ (E)**; kompozisyon birincil/ikincil METİNDEN; GZ 5/5 TASLAK. Erotik/şiddet konuları (Baburen, Boucher, Fragonard, Artemisia) akademik ve açık ayrıntısız. Hata listesi (üretimde yakalanıp düzeltildi): Fragonard 'bilinmeyen kaynak data' (5 iddia), Zurbarán kelime tutarsızlığı, Rigaud/Tiepolo heuristic uyarıları, CJK karışmaları. Kalıcı sınır: insan editör görsel + birincil teyidi ZORUNLU; hiçbir eser "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1-2 değişmedi; yalnız `content-review` commit/push.
+
+### Parti 4 (20 eser) — M9 kalanı + M10 + M11 ilk 3
+
+**Kapsam:** MUFREDAT sırasında sıradaki 20 eser (M9 Rokoko kalanı 6 [Chardin, Greuze, Ricci, Hogarth, West, Kauffman] + M10 Neoklasizm/Romantizm 11 + M11 Realizm ilk 3 [Courbet, Millet, Daumier]). Ayrıntılı rapor: `PARTI_4_URETIM_RAPORU.md`. 18 QID'li eser agent'larla; 2 bileşik-anahtarlı eser (Hogarth, Kauffman) ana oturumda tamamlandı (Hogarth yazım agent'ı içerik filtresine takıldı). Fuseli/Goya araştırma agent'ları da filtrelenince brief'leri ana oturumda hazırlandı, yazım agent'larla üretildi.
+
+| Sıra | Anahtar | Eser | Sanatçı | Durum |
+|---|---|---|---|---|
+| 1 | Q3212142 | Vatoz (La Raie) | Jean-Baptiste-Siméon Chardin | İnsan incelemesi bekliyor ✅ |
+| 2 | Q4388208 | Kırık Testi | Jean-Baptiste Greuze | İnsan incelemesi bekliyor ✅ |
+| 3 | Q19863024 | Banyosunda Batşeba | Sebastiano Ricci | İnsan incelemesi bekliyor ✅ |
+| 4 | william-hogarth\|Gin Lane | Cin Sokağı | William Hogarth | İnsan incelemesi bekliyor ✅ |
+| 5 | Q956541 | General Wolfe'un Ölümü | Benjamin West | İnsan incelemesi bekliyor ✅ |
+| 6 | angelica-kauffman\|Cornelia | Gracchusların Annesi Kornelia | Angelica Kauffman | İnsan incelemesi bekliyor ✅ |
+| 7 | Q28797801 | Horas Kardeşlerin Yemini | Jacques-Louis David | İnsan incelemesi bekliyor ✅ |
+| 8 | Q3937621 | Marie Antoinette ve Çocukları | Élisabeth Vigée-Le Brun | İnsan incelemesi bekliyor ✅ |
+| 9 | Q1978815 | Büyük Odalık | J.-A.-D. Ingres | İnsan incelemesi bekliyor ✅ |
+| 10 | Q2324840 | Günlerin Atası | William Blake | İnsan incelemesi bekliyor ✅ |
+| 11 | Q2317837 | Kabus | Henry Fuseli | İnsan incelemesi bekliyor ✅ |
+| 12 | Q311243 | Sis Denizi Üzerinde Gezgin | Caspar David Friedrich | İnsan incelemesi bekliyor ✅ |
+| 13 | Q2366825 | Saman Arabası | John Constable | İnsan incelemesi bekliyor ✅ |
+| 14 | Q29530 | Halka Yol Gösteren Özgürlük | Eugène Delacroix | İnsan incelemesi bekliyor ✅ |
+| 15 | Q1091086 | 3 Mayıs 1808 | Francisco de Goya | İnsan incelemesi bekliyor ✅ |
+| 16 | Q212616 | Medusa'nın Salı | Théodore Géricault | İnsan incelemesi bekliyor ✅ |
+| 17 | Q219344 | Köle Gemisi | J. M. W. Turner | İnsan incelemesi bekliyor ✅ |
+| 18 | Q540488 | Ornans'ta Cenaze | Gustave Courbet | İnsan incelemesi bekliyor ✅ |
+| 19 | Q1368055 | Başak Toplayanlar | Jean-François Millet | İnsan incelemesi bekliyor ✅ |
+| 20 | Q3228340 | Üçüncü Mevki Vagon | Honoré Daumier | İnsan incelemesi bekliyor ✅ |
+
+**Parti 4 ilerleme:** 20/20 tamamlandı — **PARTİ 4 BİTTİ.** (Sıradaki: Parti 5, MUFREDAT sırasında M11 kalanı #78 Millais Ophelia'dan itibaren.)
+
+**Üretim günlüğü (iddia A/B/C/D/E · kelime B/O/İ · dogrula hata/uyarı):**
+- 14 Kasım 2026 — #1 Q3212142 (Chardin, Vatoz, Louvre): 43 (A16/B10/C2/D6/E9) · 414/1450/2861 · 0/0. Louvre + Joconde A (INV 3197, 114.5×146, Salle 919). D: tarih 1728↔"1727 vers"↔"Vers 1725-1726". GZ TASLAK.
+- #2 Q4388208 (Greuze, Kırık Testi, Louvre): 42 (A19/B6/C7/D3/E7) · 438/1319/2793 · 0/0. Louvre A (INV 5036, vers 1771-1772, 109×87). Sembolizm yorumu C/D (olgu değil). GZ TASLAK.
+- #3 Q19863024 (Ricci, Batşeba, Gemäldegalerie Berlin): 48 (A25/B2/C5/D8/E8) · 440/1326/2636 · 0/0. SMB birincil A (env 454, um 1725, 111.8×144.3). c.1720 DEĞİL um 1725; Budapeşte Q50890343 ayrı. GZ TASLAK.
+- #4 hogarth (Hogarth, Cin Sokağı, NGA Washington): 55 (A16/B15/C9/D6/E9) · 431/1339/2612 · 0/5 (heuristic). NGA/MET/RA/OBO Wayback A (gösterilen nüsha 1944.5.87 State iii/iv). D: state sayımı, broşür başlığı, Gin Act başarısı, slayt≠nüsha (Davenport kopyası). Bileşik anahtar; yazım agent'ı filtrelenince ana oturum tamamladı. GZ TASLAK.
+- #5 Q956541 (West, General Wolfe, NGC Ottawa): 89 (A20/B33/C11/D15/E10) · 442/1374/3074 · 0/0. NGC Wayback A (env 8007, 1770 prime version, 152.6×214.5). 5 autograf versiyon; "modern kıyafette ilk" iddiası çürütüldü. GZ TASLAK.
+- #6 kauffman (Kauffman, Kornelia, VMFA Richmond): 58 (A16/B20/C4/D6/E12) · 452/1366/2776 · 0/0. VMFA Wayback A (env 75.22, ca.1785, 101.6×127). Üç versiyon (VMFA/Weimar/Varşova). Bileşik anahtar. GZ TASLAK.
+- #7 Q28797801 (David, Horas, Toledo replikası): 57 (A21/B11/C7/D7/E11) · 427/1327/3102 · 0/0. KRİTİK: Q28797801 = Toledo 1786 replika (Girodet after David); Louvre orijinali Q476458. Louvre + Toledo Wayback A. Kimlik D olarak beyan edildi. GZ TASLAK.
+- #8 Q3937621 (Vigée-Le Brun, Marie Antoinette, Versailles): 67 (A20/B18/C5/D8/E16) · 444/1476/2966 · 0/0. Joconde POP + GAP A (MV 4520, 275×215, Salon 1787). 8 D (boyut/sipariş/model/mekân/kürk). GZ TASLAK.
+- #9 Q1978815 (Ingres, Büyük Odalık, Louvre): 56 (A22/B15/C5/D7/E7) · 412/1317/2643 · 0/0. Louvre + Joconde A (RF 1158, 91×162, 1814). Maigne 2004 "omur" PMC tam metin. Erotik nü akademik. GZ TASLAK.
+- #10 Q2324840 (Blake, Günlerin Atası, çok nüsha baskı): 43 (A16/B9/C2/D8/E8) · 420/1338/2658 · 0/0. BM Wayback A (Copy D); gösterilen görsel Copy K Fitzwilliam (nüsha D). GZ TASLAK.
+- #11 Q2317837 (Fuseli, Kabus, DIA Detroit): 33 (A9/B15/C4/D2/E3) · 416/1348/2619 · 0/0. DIA Wayback 2018 A (55.5.A, 1781, 101.6×126.7). Araştırma agent'ı filtrelenince brief ana oturumda. Erotik/şeytani ima akademik. GZ TASLAK.
+- #12 Q311243 (Friedrich, Sis Denizi, Hamburger Kunsthalle): 71 (A19/B28/C3/D13/E8) · 412/1356/2682 · 0/0. Kunsthalle Wayback A (HK-5161, um 1817, 94.8×74.8). D: tarih um 1817↔1818, yükseklik 94.8↔67↔98.4, ~120 yıl provenance boşluğu. CS10 dogru düzeltildi. GZ TASLAK.
+- #13 Q2366825 (Constable, Saman Arabası, NG Londra): 94 (A35/B22/C10/D14/E13) · 430/1427/3093 · 0/0. NG A (NG1207, 1821, 130.2×185.4, Room 40). 1824 Paris Salon altın madalya A. D: "saman yüklü"↔"empty wagon", V&A eskiz envanteri. GZ TASLAK.
+- #14 Q29530 (Delacroix, Özgürlük, Louvre): 90 (A45/B18/C5/D13/E9) · 434/1362/2624 · 0/0. Louvre A (RF 129, 260×325, 1830, Salle 700). 13 D (mektup tarihi, 1855 Salon, imza, şapkalı figür, elbise rengi). GZ TASLAK.
+- #15 Q1091086 (Goya, 3 Mayıs, Prado): 41 (A11/B19/C4/D4/E3) · 413/1312/2618 · 0/0. Prado Wayback 2012 A (P00749, 1814, 268×347). Birincil düzeltme: iki tablo (dört değil), Palacio için, sipariş Regency. Araştırma agent'ı filtrelenince brief ana oturumda. Şiddet akademik. GZ TASLAK.
+- #16 Q212616 (Géricault, Medusa, Louvre): 81 (A30/B36/C2/D10/E3) · 420/1304/2658 · 0/0. Louvre A (INV 4884, 491×716, 1818-19). 10 D (gün 12↔13, yer Sénégal↔Moritanya, halat, kurtarılan 15↔10). GZ TASLAK.
+- #17 Q219344 (Turner, Köle Gemisi, MFA Boston): 71 (A27/B32/C5/D3/E4) · 424/1349/2619 · 0/0. MFA Wayback A (99.22, 90.8×122.6). Zong 132↔142 (kesinleştirilmedi); Ruskin 1843↔1844. GZ TASLAK.
+- #18 Q540488 (Courbet, Ornans, Orsay): 73 (A28/B17/C4/D8/E16) · 416/1366/2669 · 0/0. Orsay Wayback A (RF 325, 315×668, 1849-50). D: data "1840" hatası, figür sayısı 27/30/50. 2025-26 restorasyon doğrulanmadı (E). GZ TASLAK.
+- #19 Q1368055 (Millet, Başak Toplayanlar, Orsay): 59 (A23/B15/C6/D7/E8) · 438/1469/2634 · 0/9 (heuristic). Orsay Wayback + Joconde A (RF 592, 83.5×110, 1857). D: boyut 110↔111, salon 4→5. GZ TASLAK.
+- #20 Q3228340 (Daumier, Üçüncü Mevki, Met New York): 43 (A17/B3/C10/D4/E9) · 440/1378/2741 · 0/0. Met API A (29.100.129). Ottawa/San Francisco versiyonları ayrı. D: tarih 1864↔ca.1862-64. GZ TASLAK.
+
+**PARTİ 4 ÖZET (20/20):** Tümü "İnsan incelemesi bekliyor"; **dogrula 0 hata**, **14 uyarı** (tamamı heuristic kısaltma-bölünmesi yanlış-pozitifi: Hogarth 5, Millet 9). CJK 0. Toplam iddia **1214 (A435/B344/C110/D152/E173)**; her eserde quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (CS/DY/GZ/TK yalnız A/B); **kelime hedeflerinin TAMAMI aralıkta** (Hogarth İleri ana oturumda gerçek içerikle genişletildi, dolgu yok). `dogrula.py --test` **25/25**. Birincil katalog erişimi: Louvre (Chardin/Greuze/Ingres/Delacroix/Géricault), SMB Berlin (Ricci), NGA/MET/RA/OBO (Hogarth), NGC (West), VMFA (Kauffman), Versailles (Vigée-Le Brun), BM (Blake), DIA (Fuseli), Kunsthalle (Friedrich), NG (Constable), Prado (Goya), MFA (Turner), Orsay (Courbet/Millet), Met (Daumier) AÇILDI → güçlü A (çoğu canlı 403/404 → Wayback arşiv tarihli). **Vision bütçesi tüketildiğinden 20 eserin tümünde görsel İNCELENEMEDİ (E)**; GZ 5/5 TASLAK. Erotik/şiddet konuları (Ingres, Fuseli, Goya, Géricault, Turner, Hogarth) akademik ve açık ayrıntısız. Kritik kimlik bulguları: David Q28797801 = Toledo replikası (Louvre orijinali Q476458); Ricci Berlin um 1725; Hogarth slayt görseli Davenport kopyası. Hata listesi (üretimde yakalanıp düzeltildi): Friedrich CS10 dogru şıkkı, Hogarth/Kauffman CJK, İleri kelime genişletmesi. Kalıcı sınır: insan editör görsel + birincil teyidi ZORUNLU; hiçbir eser "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1-3 değişmedi; yalnız `content-review` commit/push.
 
 ### Veri Notları (mevcut veri DEĞİŞTİRİLMEDİ — onaya sunulur)
 

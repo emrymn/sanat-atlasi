@@ -1,0 +1,552 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q311243",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Hamburger Kunsthalle"
+    },
+    {
+     "harf": "B",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "C",
+     "metin": "Uffizi, Floransa"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado, Madrid"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2 birincil: Hamburger Kunsthalle, 19. Jahrhundert koleksiyonu.",
+   "yanlis_gerekceleri": {
+    "B": "Louvre Paris'te bir Fransız müzesidir; bu eser Hamburg'dadır (K1).",
+    "C": "Uffizi Floransa'dadır; eser Hamburger Kunsthalle'dedir (K1).",
+    "D": "Prado Madrid'dedir; eser Hamburg'dadır (K1)."
+   },
+   "kanit": [
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Müze birincil kaydına göre envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "HK-5161"
+    },
+    {
+     "harf": "B",
+     "metin": "HK-516167"
+    },
+    {
+     "harf": "C",
+     "metin": "GG_274"
+    },
+    {
+     "harf": "D",
+     "metin": "INV 1444"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: Inv. Nr. HK-5161. HK-516167 Wikidata'nın hatalı değeridir (C050).",
+   "yanlis_gerekceleri": {
+    "B": "HK-516167 Wikidata P217 değeridir; müze HK-5161 der ve WD'nin kendi referansı da HK-5161 sayfasıdır (C050).",
+    "C": "GG_274 başka bir eserin (KHM Viyana) envanteridir; bu eserle ilgisi yoktur.",
+    "D": "INV 1444 farklı bir envanter biçimidir; bu eserin numarası HK-5161'dir (K1)."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Müze kataloğundaki tarih ifadesi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "um 1817"
+    },
+    {
+     "harf": "B",
+     "metin": "1818 (kesin)"
+    },
+    {
+     "harf": "C",
+     "metin": "1815"
+    },
+    {
+     "harf": "D",
+     "metin": "um 1820"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2 müze başlığı \"Wanderer über dem Nebelmeer, um 1817\" + \"Die Datierung ist nicht gesichert\".",
+   "yanlis_gerekceleri": {
+    "B": "1818 Wikidata/literatür değeridir; müze kataloğu \"um 1817\" der ve tarihleme kesin değildir (C048).",
+    "C": "1815 Grote 1950 önerisidir; müze kataloğunun ifadesi değildir (C021).",
+    "D": "um 1820 Geismeier 1966 önerisidir; müze \"um 1817\" der (C021)."
+   },
+   "kanit": [
+    "C002",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Birincil kayda göre teknik/destek nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlıboya (Öl auf Leinwand)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Kâğıt üzerine suluboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: Öl auf Leinwand.",
+   "yanlis_gerekceleri": {
+    "B": "Pano/tempera değil; birincil kayıt tuval+yağ der (K1).",
+    "C": "Fresk duvar tekniğidir; bu bir tuval resmidir (K1).",
+    "D": "Suluboya/kâğıt değil; Öl auf Leinwand (K1)."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eserin imza/tarih durumu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İmzasız ve tarihsiz"
+    },
+    {
+     "harf": "B",
+     "metin": "İmzalı ve tarihli"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız imzalı"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnız tarihli"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1 prov. not 1: \"Das Werk ist vom Künstler weder signiert noch datiert.\"",
+   "yanlis_gerekceleri": {
+    "B": "İmzalı/tarihli değil; müze açıkça imzasız+tarihsiz der (K1).",
+    "C": "Yalnız imzalı değil; imza da tarih de yoktur (K1).",
+    "D": "Yalnız tarihli değil; tarih de yoktur, \"Die Datierung ist nicht gesichert\" (K1)."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Birincil kayda göre mülkiyet/edinim nasıldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Stiftung Hamburger Kunstsammlungen (1970), Kunsthalle'de Dauerleihgabe"
+    },
+    {
+     "harf": "B",
+     "metin": "Kunsthalle doğrudan satın aldı (1970)"
+    },
+    {
+     "harf": "C",
+     "metin": "Tate Gallery (1959)"
+    },
+    {
+     "harf": "D",
+     "metin": "Özel koleksiyon, sergilenmiyor"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: Stiftung satın aldı, Dauerleihgabe; \"Ausgestellt in der Sammlung\".",
+   "yanlis_gerekceleri": {
+    "B": "\"Kunsthalle edindi\" basitleştirmesi birincil kayıtla tam örtüşmez; Stiftung+Dauerleihgabe (C053).",
+    "C": "Tate 1959'da ödünç gösterimdir; mülkiyet değildir (C023).",
+    "D": "Eser sergilenmektedir (\"Ausgestellt in der Sammlung\"); özel koleksiyonda değildir (K1)."
+   },
+   "kanit": [
+    "C007",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "1947 CCP Wiesbaden sergisinde eser kimin eseri olarak listelendi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Carl Gustav Carus"
+    },
+    {
+     "harf": "B",
+     "metin": "Caspar David Friedrich"
+    },
+    {
+     "harf": "C",
+     "metin": "Johan Christian Dahl"
+    },
+    {
+     "harf": "D",
+     "metin": "Goethe"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: CCP Wiesbaden 1947, Nr. 9 \"als Carl Gustav Carus\", \"Wanderer am Abgrund\".",
+   "yanlis_gerekceleri": {
+    "B": "Friedrich bugün çoğunlukla atfedilen sanatçıdır ama 1947 CCP kataloğu Carus olarak listelemiştir (K1).",
+    "C": "Dahl Friedrich'in dostudur; 1947 listelemesinde adı geçmez (K1).",
+    "D": "Goethe bir kimlik hipotezidir; 1947 CCP atfı Carus'tur (K1)."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Müze kaydına (Bertsch) göre manzara nasıl oluşmuştur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Farklı eskizlerden atölyede kurgusal montaj"
+    },
+    {
+     "harf": "B",
+     "metin": "Tek bir gerçek manzaranın birebir kopyası"
+    },
+    {
+     "harf": "C",
+     "metin": "Tamamen hayal ürünü, eskizsiz"
+    },
+    {
+     "harf": "D",
+     "metin": "Fotoğraftan aktarma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1 Bertsch: Kaiserkrone/Rosenberg/Gamrig çizimlerinden montaj.",
+   "yanlis_gerekceleri": {
+    "B": "Tek gerçek yer değildir; müze kurgusal montaj der (K1).",
+    "C": "Eskizsiz değildir; üç ana eskiz belgelenmiştir (C033).",
+    "D": "Fotoğraf değil; 1813/1808 tarihli çizimlerden montajdır (K1)."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Figürün durduğu kaya kaidesi hangi çizimden alınmıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "3 Haziran 1813 Kaiserkrone çıkışı çizimi"
+    },
+    {
+     "harf": "B",
+     "metin": "Mayıs 1808 Rosenberg etüdü"
+    },
+    {
+     "harf": "C",
+     "metin": "1808 Gamrig çizimi"
+    },
+    {
+     "harf": "D",
+     "metin": "Zirkelstein fotoğrafı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1 Bertsch: Felssockel, 3.6.1813 Kaiserkrone çıkışı çiziminden.",
+   "yanlis_gerekceleri": {
+    "B": "Rosenberg Mayıs 1808 etüdü sol arka koni dağ içindir; kaya kaidesi değildir (K1).",
+    "C": "Gamrig 1808 çizimi sol orta plan içindir; kaya kaidesi değildir (K1).",
+    "D": "Zirkelstein sağ arka plandadır; kaya kaidesi Kaiserkrone çizimindendir (K1)."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "\"Der Wanderer über dem Nebelmeer\" başlığı ne zaman oluştu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1950'de, yeniden keşiften sonra"
+    },
+    {
+     "harf": "B",
+     "metin": "1818'de yapıldığında"
+    },
+    {
+     "harf": "C",
+     "metin": "1959 Tate sergisinde"
+    },
+    {
+     "harf": "D",
+     "metin": "1970 Kunsthalle alımında"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K5 (Grote 1950; Leppien 1993): başlık ancak 1950'de, yeniden keşiften sonra oluştu.",
+   "yanlis_gerekceleri": {
+    "B": "1818'de yapıldığında bu başlık yoktu; eser uzun süre başlıksızdı (C022).",
+    "C": "1959 Tate'de \"Mountaineer in a misty Landscape\" kullanıldı; bugünkü başlık değildir (C023).",
+    "D": "1970 alımında başlık zaten vardı; 1950'de oluşmuştu (C022)."
+   },
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser Hamburger Kunsthalle'de, Stiftung Hamburger Kunstsammlungen'a ait Dauerleihgabe olarak sergilenir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2): Stiftung mülkiyeti, 1970 edinim, \"Ausgestellt in der Sammlung\".",
+   "kanit": [
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser sanatçı tarafından imzalanmış ve tarihlenmiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış (K1): \"weder signiert noch datiert\"; \"Die Datierung ist nicht gesichert\".",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Müze birincil kaydına göre resim boyutu 94,8 × 74,8 cm'dir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2). WD 67 ve itwiki 98,4 ihtilaflıdır ama müze değeri 94,8'dir (C049).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Manzara tek bir gerçek noktadan birebir kopyalanmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış (K1 Bertsch): Kaiserkrone/Rosenberg/Gamrig eskizlerinden kurgusal montaj.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "1970 alım bedeli 600.000 Deutsche Mark'tır.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K2 not): \"Die Ankaufssumme betrug 600.000 Deutsche Mark.\"",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih ihtilafını (müze um 1817 ↔ WD/literatür 1818) ve Wikidata'nın kendi referansıyla çelişmesini analiz edin.",
+   "beklenen_ogeler": [
+    "müze um 1817",
+    "WD 1818 circa",
+    "WD ref kendi kaynağıyla çelişiyor",
+    "literatür 1815–um 1820"
+   ],
+   "kanit": [
+    "C048",
+    "C002",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "~120 yıllık provenance boşluğunu ve NS dönemi Luz/Henke/CCP zincirini değerlendirin.",
+   "beklenen_ogeler": [
+    "1813/1817–1938 boşluk",
+    "Luz NS bilirkişisi",
+    "Henke/CCP/MFA&A",
+    "ungeklärt bedenklich"
+   ],
+   "kanit": [
+    "C063",
+    "C010",
+    "C041",
+    "C042"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Atıf (authorship) belirsizliğini ve kunsttechnologische Untersuchung eksikliğini tartışın.",
+   "beklenen_ogeler": [
+    "imzasız/tarihsiz",
+    "1947 Carus",
+    "Bahners problematisch",
+    "malzeme incelemesi yok",
+    "çoğunluk Friedrich"
+   ],
+   "kanit": [
+    "C061",
+    "C008",
+    "C040",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Figür kimliği hipotezlerini (von den Brinken, Goethe, Jäger) Bertsch'in \"güvenilir işaret yok\" bulgusuyla karşılaştırın.",
+   "beklenen_ogeler": [
+    "vi sarebbe/könnte/vermutet",
+    "Bertsch güvenilir işaret yok",
+    "Gedächtnisbild",
+    "Neidhardt müßig"
+   ],
+   "kanit": [
+    "C062",
+    "C027",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "İzleyici özdeşleşmesi yorumu ile Grave'in \"görme refleksi\" okuması arasındaki nüansı değerlendirin.",
+   "beklenen_ogeler": [
+    "yaygın özdeşleşme",
+    "Grave Reflexion des Sehens",
+    "figürün yeri ulaşılır değil",
+    "neye baktığı saklı"
+   ],
+   "kanit": [
+    "C059",
+    "C016",
+    "C026"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynak betimine göre figürün kompozisyonun merkezinde, dikey eksende duruşunu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Bertsch: Mittelsenkrechte figürle vurgulanır; yamaçlar figüre yönelir.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Figürün durduğu kaya kaidesini ve sol orta plandaki Gamrig kayalığını kaynak betiminden izleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Müze: kaya kaidesi Kaiserkrone 1813 çiziminden; Gamrig 1808.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sağ arka plandaki Zirkelstein ile sol arka plandaki koni dağı (Rosenberg/Kaltenberg) ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Topografya: sağ Zirkelstein; sol Rosenberg ya da Kaltenberg (belirsiz).",
+   "kanit": [
+    "C018",
+    "C032"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sis denizinin katmanlarını ve sisin içinden çıkan kayaları/dağları kaynak betiminden inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Bertsch: Nebelschwaden ile aksanlanmış Mittelgebirgslandschaft.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Figürün giysisini kaynak betiminden inceleyin; Bertsch giysiyi \"kentli\" (Städter) olarak okur.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Bertsch: Kleidung als Städter; giysi yorumları ihtilaflı (C055).",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Der Wanderer über dem Nebelmeer; C. D. Friedrich (1774–1840); müze \"um 1817\"; Öl auf Leinwand; 94,8×74,8; Hamburger Kunsthalle HK-5161; Wvz BS/J 250.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Mülkiyet + imza?",
+   "arka": "Stiftung Hamburger Kunstsammlungen (1970), Kunsthalle'de Dauerleihgabe; imzasız+tarihsiz, \"Die Datierung ist nicht gesichert\".",
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Manzara nasıl oluştu?",
+   "arka": "Kurgusal montaj: kaya kaidesi Kaiserkrone (3.6.1813), sol arka Rosenberg (Mayıs 1808), sol orta Gamrig (1808); kenar notu ufuk hizasını verir.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance durumu + 1947?",
+   "arka": "\"in Bearbeitung … ungeklärt, bedenklich\"; ~120 yıl boşluk; 1947 CCP Wiesbaden'de Carus olarak listelendi.",
+   "kanit": [
+    "C011",
+    "C012",
+    "C041"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Rückenfigur + görme refleksi?",
+   "arka": "Friedrich'in en prominent Rückenfigur'ü (Bertsch); Grave: özdeşleşmeden çok \"Reflexion des Sehens\" — manzaraya değil, bakana bakarız.",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  }
+ ]
+}

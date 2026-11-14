@@ -1,0 +1,567 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q540488",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Ornans'ta Cenaze bugün nerede sergileniyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "B",
+     "metin": "Musée d'Orsay, Paris — zemin kat, Salle 7"
+    },
+    {
+     "harf": "C",
+     "metin": "Musée Gustave Courbet, Ornans"
+    },
+    {
+     "harf": "D",
+     "metin": "Metropolitan Museum of Art, New York"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S9 güncel Orsay kaydı: \"Rez-de-chaussée, Salle 7\"; envanter RF 325.",
+   "yanlis_gerekceleri": {
+    "A": "Eser 1882–1986 arasında Louvre'daydı; 1986'da Orsay'a devredildi (affecté). Bugünkü kalıcı yer Orsay'dır.",
+    "C": "Ornans sanatçının memleketidir ama bu tuvalin sahibi/kalıcı yeri olarak kaynaklarda geçmez; eser 1881'den beri ulusal koleksiyondadır.",
+    "D": "Met, 2007–08 Courbet turnesinin duraklarından biriydi (S9 bibliyografyası); eserin kalıcı yeri değil."
+   },
+   "kanit": [
+    "C008",
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Orsay birincil kaydına göre eserin tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1840"
+    },
+    {
+     "harf": "B",
+     "metin": "1849–1850 (\"entre 1849 et 1850\")"
+    },
+    {
+     "harf": "C",
+     "metin": "1850–1851"
+    },
+    {
+     "harf": "D",
+     "metin": "1855"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S7/S8/S9 üç arşiv anında da \"entre 1849 et 1850\"; Joconde \"1849 ; 1850 et\" der.",
+   "yanlis_gerekceleri": {
+    "A": "1840, yerel data dosyalarının hatasıdır; birincil Orsay kaydıyla çelişir (basyapitlar.ozet hatayı zaten beyan eder).",
+    "C": "1850–1851, Salon sergileme tarihidir (palais Royal, n°661); eserin yapım tarihi değil.",
+    "D": "1855, Courbet'nin Realizm pavyonundaki sergileme yılıdır; yapım tarihi değil."
+   },
+   "kanit": [
+    "C003",
+    "C010",
+    "C016"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "RF 924"
+    },
+    {
+     "harf": "B",
+     "metin": "n°924"
+    },
+    {
+     "harf": "C",
+     "metin": "RF 325"
+    },
+    {
+     "harf": "D",
+     "metin": "n°661"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S8/S9: \"Numéro(s) d'inventaire RF 325\"; 924 ise Orsay notice (fiche) numarasıdır.",
+   "yanlis_gerekceleri": {
+    "A": "924, Orsay'ın eser fişi (notice) numarasıdır; envanter RF 325'tir — ikisi karıştırılmamalıdır.",
+    "B": "n°924 Orsay fiş numarasıdır; envanter numarası olarak kayıtlı değildir.",
+    "D": "n°661, 1850–51 Salon katalog numarasıdır; envanter değil."
+   },
+   "kanit": [
+    "C007",
+    "C010"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eser 1850–51 Salonu'nda neden skandal yarattı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Mitolojik bir çıplak sahne içerdiği için"
+    },
+    {
+     "harf": "B",
+     "metin": "Napolyon III'ü karikatürize ettiği için"
+    },
+    {
+     "harf": "C",
+     "metin": "Dinsel bir mucizeyi alaya aldığı için"
+    },
+    {
+     "harf": "D",
+     "metin": "Sıradan köylüleri tarih resmi boyutlarında ve idealleştirmeden resmettiği için"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S9: köylüler grandeur nature ve idealleştirilmeden; tarih resmi ölçeği ihlali; \"laideur vulgaire\" / \"trivialité odieuse\" eleştirisi.",
+   "yanlis_gerekceleri": {
+    "A": "Eserde mitolojik çıplak yok; konu bir köy cenazesi, Orsay indeksiyle \"scène de la vie moderne\".",
+    "B": "Napolyon III karikatürü yok; politik alegori okuması bile Orsay'ca kesin değildir (\"il pourrait s'agir\").",
+    "C": "Eser bir mucizeyi alaya almaz; cenaze ritüelinin sıradan, dalgın sunumu eleştiri konusu olmuştur (impious sunum)."
+   },
+   "kanit": [
+    "C012",
+    "C010",
+    "C072"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Orsay kaydına göre Courbet'nin tekniği hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kalın boya, fırça/palet bıçağı, görünür facture, derin siyahlar"
+    },
+    {
+     "harf": "B",
+     "metin": "Pürüzsüz akademik boyama ve saydam glacis katmanları"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk (duvar resmi) tekniği"
+    },
+    {
+     "harf": "D",
+     "metin": "Yumurta temperası ve altın varak"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"matière picturale, épaisse, appliquée au pinceau ou au couteau à palette\"; facture görünür; noirs profonds — akademik tekniğin karşıtı.",
+   "yanlis_gerekceleri": {
+    "B": "Bu, Courbet'nin karşı çıktığı akademik tekniktir (lisse + glacis); Orsay bunu açıkça karşıtlık olarak kurar.",
+    "C": "Eser tuval üzerine yağlıboyadır (huile sur toile); fresk değil.",
+    "D": "Tempera/altın varak kayıtlarda yok; teknik huile sur toile'dir."
+   },
+   "kanit": [
+    "C013",
+    "C004"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Eser ulusal koleksiyona nasıl girdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1881'de devlet tarafından satın alınarak"
+    },
+    {
+     "harf": "B",
+     "metin": "1986'da Orsay tarafından satın alınarak"
+    },
+    {
+     "harf": "C",
+     "metin": "1881'de Juliette Courbet'nin bağışı olarak"
+    },
+    {
+     "harf": "D",
+     "metin": "1855 Salonu'nda devletçe el konularak"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S8/S9 provenance: \"1881, accepté par l'Etat à titre de don de Mlle Juliette Courbet\"; modalité d'acquisition \"don\".",
+   "yanlis_gerekceleri": {
+    "A": "Kayıt \"don\" (bağış) der; satın alma değil.",
+    "B": "1986'da satın alma değil, Louvre'dan Orsay'a devir (affecté) vardır.",
+    "D": "El koyma yok; 1855'te eser Courbet'nin kendi pavyonunda (pavillon du Réalisme, n°2) sergilendi."
+   },
+   "kanit": [
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Courbet, köpekle duran iki yaşlı figürü nasıl tanımladı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"93 Devrimi'nin iki yaşlı gazisi\""
+    },
+    {
+     "harf": "B",
+     "metin": "\"1789 Devrimi'nin iki gazisi\""
+    },
+    {
+     "harf": "C",
+     "metin": "\"1848 Devrimi'nin iki gazisi\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"1830 Devrimi'nin iki gazisi\""
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "enwiki, McCarthy 1975 atfıyla Courbet'in \"two old veterans of the Revolution of '93\" ve \"the clothes of their time\" ifadesini aktarır; figürler Secrétan ve Cardet olarak tespit edildi.",
+   "yanlis_gerekceleri": {
+    "B": "Data dosyaları \"1789 kuşağı\" der ama Courbet'in alıntısı '93'tür; frwiki kostümü 1792–1793 olarak verir.",
+    "C": "1848 Courbet'nin kendi zamanıdır; figürler yarım yüzyıl öncesinin kostümünü taşır.",
+    "D": "1830 kaynaklarda geçmez; alıntı \"Revolution of '93\"tür."
+   },
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Orsay'ın güncel yorumuna göre eserin beslendiği iki model ailesi hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İtalyan Rönesans freskleri + Bizans mozaikleri"
+    },
+    {
+     "harf": "B",
+     "metin": "Japon ukiyo-e baskıları + Çin paravanları"
+    },
+    {
+     "harf": "C",
+     "metin": "Antik Yunan vazoları + Roma kabartmaları"
+    },
+    {
+     "harf": "D",
+     "metin": "Hollanda grup portreleri + images d'Épinal \"Degrés des âges\""
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "S9: \"des grands portraits de groupe hollandais que Courbet a pu voir lors d'un voyage au Pays Bas ... des images d'Épinal des Degrés des âges\".",
+   "yanlis_gerekceleri": {
+    "A": "Fresk/mozaik modeli Orsay yorumunda yok; kaynaklar Hollanda portreleri ve popüler baskılardır.",
+    "B": "Ukiyo-e/paravan kaynaklarda geçmez.",
+    "C": "Antik vazo/Roma kabartması kaynak modeli olarak sayılmaz; \"antik friz\" benzetmesi bir kompozisyon gözlemidir, model ailesi değil."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Orsay kaydına göre gömülen kişinin kimliği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Büyükbaba Oudot"
+    },
+    {
+     "harf": "B",
+     "metin": "Bilinmiyor — \"kimliği bir muamma\""
+    },
+    {
+     "harf": "C",
+     "metin": "Max Buchon"
+    },
+    {
+     "harf": "D",
+     "metin": "Proudhon"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "S9: \"l'enterrement d'un personnage dont l'identité est un mystère\".",
+   "yanlis_gerekceleri": {
+    "A": "Oudot, resimde tespitli figürler arasındadır (Orsay ikonografisi); gömülen kişi olarak değil.",
+    "C": "Max Buchon tespitli figürlerdendir; gömülen kişi olarak kayıtlı değil.",
+    "D": "Proudhon ailesi üyesinin cenazesi yalnızca bir hipotezdir (Mack/McCarthy aktarımı, B); kesin kimlik değil."
+   },
+   "kanit": [
+    "C019",
+    "C018",
+    "C026"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Güncel Orsay notice'ı eseri hangi kavramla tanımlar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Romantizmin zirvesi\""
+    },
+    {
+     "harf": "B",
+     "metin": "\"Akademik geleneğin sürdürülmesi\""
+    },
+    {
+     "harf": "C",
+     "metin": "\"Yeni bir estetiğin, Realizmin manifestosu\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"İzlenimciliğin ilk örneği\""
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "S9: \"Manifeste d'une nouvelle esthétique, le réalisme\".",
+   "yanlis_gerekceleri": {
+    "A": "Tam tersi: Courbet'in sözü \"Romantizmin cenazesi\" olarak aktarılır (B); Orsay Realizm manifestosu der.",
+    "B": "Eser akademik tekniğe (lisse/glacis) ve türler hiyerarşisine karşıdır.",
+    "D": "İzlenimcilik etkisi Mack'in tezidir (B); Orsay eseri Realizm manifestosu olarak çerçeveler, İzlenimcilik örneği olarak değil."
+   },
+   "kanit": [
+    "C011",
+    "C027",
+    "C013"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Orsay kaydı eserin tarihini \"entre 1849 et 1850\" olarak verir.",
+   "dogru": true,
+   "aciklama": "Doğru: S7/S8/S9 ve Joconde aynı aralıkta birleşir.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eserin genişliği tüm kaynaklarda 660 cm olarak geçer.",
+   "dogru": false,
+   "aciklama": "Yanlış: Orsay/WD/itwiki/Joconde 668 cm der; 660 yalnız enwiki infobox'ındadır (ihtilaf, C043).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser 1881'de bağış olarak kabul edildi, 1882–1986 arasında Louvre'da kaldı, 1986'da Orsay'a devredildi.",
+   "dogru": true,
+   "aciklama": "Doğru: S8/S9 provenance zinciri (don → Louvre → affecté Orsay).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Orsay kaydına göre gömülen kişinin kimliği kesin olarak bilinmektedir.",
+   "dogru": false,
+   "aciklama": "Yanlış: Orsay \"identité est un mystère\" der; hipotezler (Clarisse, Proudhon vb.) kesin değildir.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Orsay, boyanın fırça veya palet bıçağıyla kalın uygulandığını ve facture'un görünür bırakıldığını söyler.",
+   "dogru": true,
+   "aciklama": "Doğru: S9 teknik pasajı (matière épaisse, pinceau/couteau à palette, facture visible).",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Data dosyalarındaki \"1840\" tarihini birincil kaynakla karşılaştırın; hangi kanıt neden önceliklidir? WD P571 anomalisini de değerlendirin.",
+   "beklenen_ogeler": [
+    "Orsay \"entre 1849 et 1850\" (A)",
+    "data 1840 hatalı (D)",
+    "WD preferred +1900/yüzyıl anomalili",
+    "qualifier P1319/P1326 = 1849–1850",
+    "müze kaydı yapılandırılmış veriden önce gelir"
+   ],
+   "kanit": [
+    "C045",
+    "C003",
+    "C062"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Figür sayısı ihtilafını (27 / ~30 / 50 / 40+) kaynak düzeyleriyle haritalayın; müze neden sayı vermiyor olabilir?",
+   "beklenen_ogeler": [
+    "frwiki 27 (atıfsız, E)",
+    "itwiki \"una trentina\" (~30)",
+    "mektup 50 (B, Chu 1996)",
+    "data \"kırkı aşkın\"",
+    "Orsay sayı vermez",
+    "görsel teyit gerekir"
+   ],
+   "kanit": [
+    "C044",
+    "C024",
+    "C035",
+    "C064"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Politik okuma tartışmasını karşılaştırın: sosyalist/demokratik okuma ↔ Clark ↔ Champfleury ↔ Orsay'ın hedge'i.",
+   "beklenen_ogeler": [
+    "Schapiro/Kselman/Wright (B)",
+    "Clark: class, stillness, ambiguity (B)",
+    "Champfleury \"sosyalizm izi yok\" (B)",
+    "Orsay \"il pourrait s'agir\" (A)",
+    "yorum ≠ olgu; kesin cevap kurulamaz"
+   ],
+   "kanit": [
+    "C029",
+    "C030",
+    "C031",
+    "C020"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "2025–26 restorasyon iddiası neden E düzeyinde? Doğrulamak için hangi adımlar gerekir?",
+   "beklenen_ogeler": [
+    "NYT 403 / Le Monde 402",
+    "arşiv kopyaları bot sayfası / 0 bayt",
+    "güncel notice'ta \"restauration\" yok",
+    "erişilebilir metin veya müze teyidi gerekir",
+    "etikete konmaz"
+   ],
+   "kanit": [
+    "C042",
+    "C066",
+    "C073"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kafatası konumu/sayısı ve köpek rengi ihtilafları için görsel teyit planı yazın: hangi bölgeler, hangi çözünürlük, hangi kaynak?",
+   "beklenen_ogeler": [
+    "frwiki \"mezarın sağı\" / enwiki \"alt orta\" / itwiki çoğul",
+    "data x=0.53 koordinatı",
+    "köpek: beyaz-kahverengi ↔ siyah lekeli beyaz",
+    "GAP 6045×2779 / 6042×2777",
+    "görsel incelenmedi; GZ TASLAK"
+   ],
+   "kanit": [
+    "C063",
+    "C049",
+    "C064"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Açık mezarı ve kenarındaki kemikleri bulun; izleyiciyi mezarın kıyısına yerleştiren etkiyi tartışın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Orsay 2016): \"l'apertura della fossa sul bordo della quale si intravedono delle ossa\".",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kırmızı giysili iki bedeaux'yu ve kırmızı yüzlerini bulun; eleştirmenlerin tepkisini hatırlayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Orsay): \"trognes aussi rouges que leurs habits\" — eleştirmenleri güldürdü.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Üç gruplu dizilişi (kilise / gaziler+köpek / görevliler+yas) ve üstlerinde yükselen crucifix'i bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (enwiki, McCarthy/Fried): alt ortada mezar, üç grup, yukarıda crucifix.",
+   "kanit": [
+    "C052"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "İki yaşlı gaziyi ve köpeği bulun; kaynak betimlerindeki renk farkını not edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi: \"two old veterans of the Revolution of '93\" + white dog (enwiki) ↔ \"chien blanc tacheté de noir\" (frwiki).",
+   "kanit": [
+    "C025",
+    "C052"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Kalın boya, fırça/palet bıçağı izleri ve derin siyahları inceleyin; akademik pürüzsüzlükle karşıtlığını görün.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (Orsay): \"matière picturale, épaisse, appliquée au pinceau ou au couteau à palette\".",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Ornans'ta Cenaze — tam künye?",
+   "arka": "Gustave Courbet (1819–1877); Un enterrement à Ornans / Tableau de figures humaines, historique d'un enterrement à Ornans; 1849–1850 (\"entre 1849 et 1850\"); huile sur toile; 315×668 cm; Musée d'Orsay, RF 325, Salle 7; 1881 Juliette Courbet bağışı.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C007",
+    "C008",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Neden \"Realizmin manifestosu\"?",
+   "arka": "Sıradan köylüler life-size (grandeur nature), idealleştirilmeden; tarih resmi ölçeğinin türler hiyerarşisi ihlali; Orsay: \"Manifeste d'une nouvelle esthétique, le réalisme\"; 1850–51 Salon skandalı (\"laideur vulgaire\").",
+   "kanit": [
+    "C011",
+    "C012",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Teknik çekirdek (Orsay, A)?",
+   "arka": "Kalın boya; fırça veya palet bıçağı; görünür facture; derin siyahlar; akademik lisse + glacis'ye karşı; \"effet de réel\" madde işçiliğiyle.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance zinciri?",
+   "arka": "1877–1881 Juliette Courbet (kız kardeş); 1881 devletçe bağış kabulü; 1881 Louvre'a atif; 1882–1986 Louvre; 1986 Orsay'a devir.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Modeller + Salon + kimlik?",
+   "arka": "Hollanda grup portreleri (Pays-Bas yolculuğu) + images d'Épinal \"Degrés des âges\"; Salon 1850–51 palais Royal n°661; gömülen kişi: kimliği muamma.",
+   "kanit": [
+    "C014",
+    "C010",
+    "C019"
+   ]
+  }
+ ]
+}

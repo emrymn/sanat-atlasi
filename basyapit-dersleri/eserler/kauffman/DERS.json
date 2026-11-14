@@ -1,0 +1,957 @@
+{
+ "surum": "1.0",
+ "eser_id": "angelica-kauffman|Cornelia, Mother of the Gracchi (slaytta: Cornelia Pointing to Her Children as Her Treasures)",
+ "sanatci_id": "angelica-kauffman",
+ "baslik": "Gracchusların Annesi Kornelia",
+ "ozgun_baslik": "Cornelia, Mother of the Gracchi, Pointing to Her Children as Her Treasures",
+ "kunye": {
+  "sanatci": "Angelica Kauffman",
+  "sanatci_yasam": "1741–1807",
+  "tarih": "ca. 1785",
+  "tarih_belirsizlik": "VMFA \"ca. 1785\"; WD P1480=circa; wiki galerileri circa'sız \"1785\" (D, C041)",
+  "teknik": "Tuval üzerine yağlıboya (oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 101.6,
+   "genislik": 127
+  },
+  "muze": "Virginia Museum of Fine Arts, Richmond",
+  "envanter": "75.22",
+  "edinim": "Adolph D. and Wilkins C. Williams Fund; 1975 edinim yılı yalnız numara formatından çıkarım (belirsiz, C049)",
+  "konum": "G213 - Center Great Hall",
+  "telif_durumu": "Kamu malı (Kauffman ö. 1807); Commons PD-old-70/100; VMFA PD görsel credit: \"Image courtesy of the Virginia Museum of Fine Arts.\""
+ },
+ "gorsel": {
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Cornelia%2C_Gracchus_Karde%C5%9Flerini_G%C3%B6steriyor.jpg",
+  "kaynak": "Wikimedia Commons (proje görseli S13; source=\"wikipedia\" belirsiz)",
+  "lisans": "Public domain (PD-old-70)",
+  "dogrulama": {
+   "yontem": "metadata (imageinfo+wikitext); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "S13 1516×1200; karşılaştırma: S11 1538×1217 (VMFA), S12 3200×2355 (Varşova)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "VMFA versiyonu olduğu yalnız en-boy oranı + başlık çıkarımı (C020 E); kompozisyon kaynak metinlerinden (S14 betimi Varşova versiyonuna ait); GZ TASLAK; VMFA PD görsel credit koşulu (C021); insan editör görsel teyidi zorunlu"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 452
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1366
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2776
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincilin-iç-durumu"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarihsel-bağlam-ve-exemplum-virtutis"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-kariyer-ve-tarih-resmi-hiyerarşisi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçimsel-analiz-ve-versiyon-sınırı"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-sempronia-ve-ev-erdemleri"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-malzeme-ve-belge-sınırı"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-ve-alımlama"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "VMFA birincil (arşiv) kaydıyla künyeyi doğrular: ca. 1785, oil on canvas, 101.6×127 cm, 75.22, G213, Williams Fund.",
+  "Valerius Maximus IV.4 anekdotunu Latince kaynağından izler; popüler varyant ve söz dizimi ihtilaflarını yönetir.",
+  "Üç versiyonu (VMFA/Bowles, Weimar, Varşova/Poniatowski) ayırt eder; Commons metadata kirliliği riskini tanır.",
+  "Neoklasik exemplum virtutis bağlamını, Pompei etkisini ve David karşılaştırmasını kaynaklı kurar.",
+  "Sempronia ikonografisini ve cinsiyetli erdem tartışmasını kanıt sınırını koruyarak yorumlar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "exemplum virtutis",
+   "tanim": "Antik öykülerden erdem dersi çıkaran tarih resmi teması; 18. yy sonu Neoklasik resminin gözde konusu.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Tarih resmi (history painting)",
+   "tanim": "Akademik hiyerarşinin en üst türü; tarih, mitoloji, edebiyat, kutsal metin konuları; Kauffman'ın kendini tanımladığı tür.",
+   "kanit": [
+    "C010",
+    "C030"
+   ]
+  },
+  {
+   "ad": "haec ornamenta sunt mea",
+   "tanim": "\"Bunlar benim mücevherlerim\"; Valerius Maximus IV.4.init'te Cornelia'nın sözü.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "Neoklasizm",
+   "tanim": "18. yy sonu antik dönüş üslubu; Pompei duvar resmi etkisi; sığ mekân, sıcak renk, yalın figür dizilimi.",
+   "kanit": [
+    "C016",
+    "C022"
+   ]
+  },
+  {
+   "ad": "provenance",
+   "tanim": "Eserin sahiplik/dolaşım geçmişi; Varşova versiyonunda belgeli (sipariş→satış→müze), VMFA sayfasında zincir yok.",
+   "kanit": [
+    "C015",
+    "C014"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı Angelica Kauffman (İsviçreli, 1741–1807; İngiltere ve İtalya'da çalıştı); Chur (Graubünden) doğumlu, Roma'da öldü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S14",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Birincil başlık: \"Cornelia, Mother of the Gracchi, Pointing to Her Children as Her Treasures\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih: \"ca. 1785\" (WD P571=1785, precision=yıl; P1480=Q5727902 \"circa\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: oil on canvas (WD P186: oil paint Q296955 + canvas Q12321255, P518=painting support).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut: çerçevesiz 40 × 50 in. (101.6 × 127 cm); çerçeveli 45 1/4 × 55 in. (114.94 × 139.7 cm).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "VMFA, Richmond; Collection: European Art; Object Number: 75.22; Location: G213 - Center Great Hall.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Credit Line: \"Adolph D. and Wilkins C. Williams Fund\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "İmza: sağdaki sütun kaidesinde \"Angelica Kauffman pinxt\" (\"Signed on base of column at right\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Culture: English; Category: Paintings.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Tür: tarih resmi (history painting). S5 satırı \"History\"; S14 \"history paintings\"; S1 P136 (refsiz, destek).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S5",
+    "S14",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Cornelia (Africana): Scipio Africanus'un kızı, Ti. Sempronius Gracchus'un eşi; 12 çocuk, yalnız 3'ü yetişkinliğe ulaştı (Sempronia, Tiberius, Gaius).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S14",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Anekdot kaynağı Valerius Maximus, Factorum ac dictorum memorabilium IV.4.init; söz: \"haec ornamenta sunt mea\" (\"Bunlar benim mücevherlerim\").",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Anekdot örgüsü: Campanialı matrona konuk dönemin en güzel mücevherlerini gösterir; Cornelia çocuklar okuldan dönene kadar sohbeti uzatır, sonra çocukları gösterir; ahlaki: \"omnia nimirum habet qui nihil concupiscit\" (hiçbir şeyi arzulamayan her şeye sahiptir).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Kauffman konuyu 1785–1788'de üç kez resmetti: (1) Napoli 1785, George Bowles için → VMFA; (2) Napoli Kraliçesi Caroline siparişi, kız kardeşi Maria Christina'ya hediye → Weimar Schlossmuseum (kompozisyon ters); (3) Roma 1788, Prens Stanislaus Poniatowski için → Varşova.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Varşova versiyonu: \"signed and dated 'Angelica Kauffman / pinxit Rome / 1788' (lower right)\"; 110 × 152 cm; Ocak 1788 Poniatowski siparişi; İsveç özel koleksiyon → Rafael Valls (by 1994) → Simon Dickinson (1995); ZKW/6045; 2021'de Zamek Królewski satın aldı; özgün çerçeve Lamont & Son, Chester.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S14",
+    "S2",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Neoklasik bağlam: konu 18. yy sonu Neoklasik resminin gözde exemplum virtutis'i; Zamek kaydı David'in \"Horatiusların Yemini\" ile karşılaştırır (cumhuriyetçi ahlak didaktiği); 1780'lerde Pompei duvar resmi keşfinin etkisi; Aydınlanma etiğiyle örtüşme.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Kauffman, Mary Moser ile birlikte Londra Royal Academy'nin (1768) iki kadın kurucu üyesinden biri.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "VMFA sergi geçmişi: RA London 1786 \"(No. 86 or 196)\"; \"Women Artistis, 1550-1950\" LACMA 1976–77 (+Austin/Carnegie/Brooklyn); \"Art in the Age of Jefferson\" 1976; Smart Gallery 1978; Spotlight Loans 1988; \"Goethe und die Kunst\" 1994; Kauffman Retrospective Düsseldorf/Münih/Chur 1998–99; \"Art in Rome in the 18th Century\" Philadelphia/Houston 2000; \"Woman Masters, Old and Modern\" Thyssen 2024 (tarih tutarsızlığı → C044).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Kamu malı: sanatçı 1807'de öldü; Commons PD-old-100 (S11) / PD-old-70 (S13) / PD-Art deathyear=1807 (S12); WD P6216=Q19652, P459=\"100 years or more after death of author(s)\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S11",
+    "S13",
+    "S12",
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Projedeki görsel (S13) VMFA versiyonunu gösterir — yalnız metadata çıkarımı: oran 1516/1200≈1.263 ≈ S11 1538/1217≈1.264 (S12 Varşova 3200/2355≈1.359 farklı); S13 açıklaması VMFA birincil başlığıyla aynı; görsel incelenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13",
+    "S11",
+    "S12"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C021",
+   "ifade": "VMFA görsel koşulu (aynen): \"Public domain images downloaded from the VMFA web site should be credited: 'Image courtesy of the Virginia Museum of Fine Arts.'\"; site metni ayrıca CC BY-NC.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "VARŞOVA versiyonunun kompozisyonu (S14 lot essay betimi): sert, penceresiz taş iç mekân; Cornelia merkezin hafif sağında ayakta; matrona solunda oturuyor, kucağında açık mücevher kutusu; iki oğul el ele, tomar ve okul kitaplarıyla giriyor; sığ mekân, sıcak renklendirme, seyrek figür dizilimi Pompei bilgisini yansıtıyor; üslup \"elegantly restrained and austere\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Varşova versiyonunda en önemli değişiklik: kız Sempronia'nın belirgin rolü (anne ile dönen kardeşler arasında küçük masada; distaff + dikiş sepeti = ev sanatları simgeleri, genellikle Cornelia'ya verilen öznitelikler). Kız Valerius Maximus metninde ANILMAZ (\"the girl is not mentioned by Valerius Maximus\"; S16 yalnız \"liberi\" der).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S16"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Cornelia'nın jesti, oğulları kadar kızı da \"mücevherleri\" arasında kapsayacak biçimde okunabilir (S14 \"may be understood\") — yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "Memorandum of Paintings (Ocak 1788): Varşova Cornelia'sı pendant'ı \"Brutus Condemning his Sons to Death for Treason\" (bugün kayıp) ile not edildi; erdemli anneliğin sevinçleri ↔ erdemli babalığın trajik sorumlulukları karşıtlığı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Çocukların sonraki yaşamları: Sempronia, Scipio Aemilianus ile evlendi; Tiberius ve Gaius radikal toprak reformunu savunan senatörler oldular, cumhuriyet karşıtı güçlere direnirken öldüler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S6",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Prens Stanislaus Poniatowski (1754–1833): Polonyalı soylu, diplomat, son Polonya kralının yeğeni; serflerin özgürleşmesi ve tarım reformunu savunan liberal aktivist; konuyu ikinci Roma ziyaretinde (1788) sipariş etti.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Konunun Poniatowski'nin liberal reformculuğuna hitap etmiş olması muhtemeldir (S14 \"may have appealed\") — yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "Dr. Bettina Baumgärtel eserin hazırlanan catalogue raisonné'ye dahil edileceğini doğruladı; Prof. Wendy Wassyng Roworth kataloglamaya yardımcı oldu, atfı fotoğraflar temelinde destekledi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Kauffman kariyeri: 1766 Londra; 1769 ilk RA kataloğunda \"R.A.\"; 1769–1782 yıllık sergileyici; kendini öncelikle tarih ressamı olarak tanımladı; tarih resmi en üst türdü; kadınlar nü modelden çalışmaya kabul edilmezdi, Kauffman erkek anatomisini kopya/gravür/alçı üzerinden öğrendi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Roma yılları: 1781'de Antonio Zucchi ile evlendi; 1782'de İtalya'ya temelli döndü; Roma'da Winckelmann ve Gavin Hamilton ile tanışmıştı; Goethe ile dost oldu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7",
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "1807'de Roma'da öldü; cenazesi Canova yönetiminde, Raphael modeline göre düzenlendi; Sant'Andrea delle Fratte'ye gömüldü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Varşova sergisi: \"Arcydzieła na Zamku\" dizisi, 8 Mart – 21 Eylül 2022, Antyszambra, Kraliyet Rotası'na dahil; satın alma Başbakanlık Kancelaryası + Kültür ve Ulusal Miras Bakanlığı fonlarıyla desteklendi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Zamek sayfasının andığı diğer Kauffman tarih resimleri: Hektor-Andromakhe Vedası (1768, National Trust Saltram); Telemakhos'un Hüznü (1783, Met); Yaşlı Plinius ve Annesi Misenum'da (1785, Princeton); Vergilius'un Aeneis'i Augustus ve Octavia'ya Okuması (1788, Ermitaj; Kral Stanisław August siparişi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S15"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C035",
+   "ifade": "Cornelia'nın edebî mirası: Cicero yazarlık yeteneğini övdü; Nepos'ta ona atfedilen mektup parçaları korunur; özgünlük tartışmalı (optimate propagandası / sonradan uydurma / retorik alıştırma hipotezleri).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S14",
+    "S6",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C036",
+   "ifade": "Cornelia'nın belleği inşa edilmiştir: Hemelrijk \"the Cornelia we know is to a high degree a creation of later times\"; eğitimli aristokrat kadın imgesinden idealize annelik örneğine kayış.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C037",
+   "ifade": "Cornelia'ya adanan yazıtlı heykel kaidesi Capitoline Musei'nde; yazıt \"Cornelia Africani f(ilia) Gracchorum\"; kaynaklara göre Roma'da çağdaşlarınca kamusal alanda heykel dikilen ilk laik kadın.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6",
+    "S9"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C038",
+   "ifade": "Modern alımlama: Ohio Statehouse \"These Are My Jewels\" anıtı (Levi Scofield, 1894; Cornelia eyaletin yedi önemli adamını gösterir); Judy Chicago, The Dinner Party (1974–79) Heritage Floor'da \"Cornelia Gracchi\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C039",
+   "ifade": "Diğer Cornelia tasvirleri: Philipp Friedrich Hetsch, Cornelia (1794, Staatsgalerie Stuttgart, 112 × 136 cm, aynı Valerius motifi); Joseph-Benoît Suvée, Cornelia (1795, Louvre).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S9",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C040",
+   "ifade": "D001 versiyon karışıklığı / metadata kirliliği: S11 (VMFA görseli, 101x127) açıklaması Varşova versiyonunu anlatan dewiki maddesine (S9: 1788, 110×152, Königliches Schloss Warschau) bağlanıyor; Varşova WD S2 tüm iddiaları Commons'tan ithal (P143=Q565, P813=2023-08-24); P217 refsiz → zayıf atıf zinciri.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S11",
+    "S9",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D002 tarih gösterimi: S4 \"ca. 1785\" + S1 circa ↔ S6/S7 galeri \"(1785)\", S8 galeri \"1785\", S11 dosya tarihi \"1785\" (circa'sız); birincil \"ca.\" der, kesinleştirme yapılmamalı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S6",
+    "S7",
+    "S8",
+    "S11"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D003 boyut yuvarlama: S11 \"101x127 cm\" ↔ S4/S1 \"101.6 × 127 cm\".",
+   "seviye": "D",
+   "kaynak_id": [
+    "S11",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D004 anekdot varyantı: S6 \"Modern representations\" (Anthon 1847): \"When women friends questioned Cornelia about her mode of dress…\" ↔ S16: tek Campanialı konuk + mücevher gösterisi; söz dizimi \"haec ornamenta sunt mea\" ↔ \"haec ornamenta mea [sunt]\". Ders S16 varyantını izler.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S6",
+    "S16",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D005 VMFA sergi tarihi iç tutarsızlığı (aynen): \"Woman Masters, Old and Modern\", Thyssen-Bornemisza, \"October 31, 2024 - February 4, 2024\" (bitiş başlangıçtan önce; muhtemel müze yazım hatası — düzeltilmedi, beyan edildi).",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "D006 oran uyuşmazlığı: data/gorsel_oranlari.json \"1.27\" ↔ S13 orijinali 1516/1200≈1.263; yerel türev (hash cba7efe328d094ed) kırpılmış olabilir; doğrulanmadı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C046",
+   "ifade": "E009 Cornelia yaşam tarihleri kaynaklar arasında farklı yaklaşık değerler: S6 \"c. 190s–c. 115 BC\" ↔ S10 \"189 a.C.?\" / \"110 a.C. circa\" ↔ S9 \"um 190 v. Chr.\" / \"um 100 v. Chr.\" — belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S10",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "E002 RA 1786 katalog numarası belirsiz: S4 aynen \"(No. 86 or 196)\" — hangi numara olduğu çözümlenmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "E003 VMFA uyarısı aynen: \"Some object records are not complete and do not reflect VMFA's full and current knowledge. VMFA makes routine updates as records are reviewed and enhanced.\" — kayıt eksik olabilir.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "E004 VMFA sayfasında provenance zinciri YOK (yalnız Credit Line); Bowles siparişi S14 lot essay'inden (B); 1975 edinim yılı yalnız \"75.22\" numara formatından çıkarım — açıkça yazılı değil, belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "E005 Weimar versiyonu: erişilen kaynaklarda tarih/boyut yok; WD maddesi bulunamadı (\"Cornelia Weimar\" araması 0 sonuç); birincil URL bulunamadı — belirsiz; uydurma URL üretilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S18"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "E006 Varşova açık artırma tarihi 2021-10-14 ve fiyat USD 1,110,000 yalnız S12 Commons provenance şablonundan; çekilen S14 metninde tarih/fiyat görünmüyor — belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S12",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "E007 S13 (proje görseli) source=\"wikipedia\" (hangi dosya/sayfa belirsiz), credit=\"wikipedia\", kategorisiz (\"All media needing categories as of 2025\"), \"PD-old missing SDC copyright status\" — belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "E008 data/ derslerindeki görsel betimlemeler (bulla/madalyon, tomar, beyaz elbise–sarı pelerin, kırmızı misafir, altın zincir, jest yönleri) görsel incelenmeden doğrulanamaz — bu oturumda incelenmedi, belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "E010 Resimdeki küçük kızın \"Sempronia\" özdeşliği geleneksel/çıkarımsal: S11/S12 Commons kategorisi; S14 \"the girl is not mentioned by Valerius Maximus\" → antik metinde yok; özdeşlik belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11",
+    "S12",
+    "S14"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "Görseller bu oturumda İNCELENEMEDİ (vision kotası ana oturumda); üç Commons dosyası PD; GZ TASLAK; kompozisyon kaynak metinlerinden — görsel teyit belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S11",
+    "S12",
+    "S13"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "Kitaplar kaynakçada anıldı, metne erişilmedi (Manners & Williamson 1924; Roworth 1992/2003; Knight 1998; Anthon 1847; Dixon 2007; Hemelrijk 1999/2004; Stockton 1979; Fantham vd. 1994; Plutarch) — içerik doğrulaması belirsiz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S14",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C057",
+   "ifade": "Anekdotun ahlaki (\"hiçbir şeyi arzulamayan her şeye sahiptir\"), esere Stoacılaşmış bir mülkiyet/arzu etiği okuması sağlar: mücevher ↔ çocuk karşıtlığı lüks eleştirisi ve içsel zenginlik övgüsü olarak okunabilir — yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S16",
+    "S14"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C058",
+   "ifade": "Kauffman'ın erdemi annelik ve ev üzerinden kurması, David'in Horatiuslarında erkeksi fedakârlıkla karşıtlık oluşturan \"kadınsı cumhuriyetçilik\" olarak okunabilir; distaff/dikiş özniteliklerinin kıza aktarılması erdemin kuşaklararası aktarımı olarak yorumlanabilir — yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S14",
+    "S15",
+    "S7"
+   ],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q134603748 (VMFA versiyonu; sitelink YOK)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q134603748.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData JSON)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q121814832 (Varşova versiyonu; refs Commons ithal)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q121814832.json",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (EntityData JSON)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "VMFA",
+   "belge": "Canlı katalog kaydı",
+   "url": "https://www.vmfa.museum/piction/6027262-75485071/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "000 — DNS SERVFAIL (www+apex); ERİŞİLEMEDİ",
+   "tur": "birincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "VMFA (Wayback)",
+   "belge": "Katalog kaydı arşiv kopyası, arşiv 2025-06-16 (20250616094534)",
+   "url": "http://web.archive.org/web/20250616094534/https://vmfa.museum/piction/6027262-75485071/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; arşiv 2025-06-16",
+   "tur": "birincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "List of paintings by Angelica Kauffman (Cornelia satırı + VMFA katalog linki)",
+   "url": "https://en.wikipedia.org/wiki/List_of_paintings_by_Angelica_Kauffman",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Cornelia (mother of the Gracchi)",
+   "url": "https://en.wikipedia.org/wiki/Cornelia_(mother_of_the_Gracchi)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Angelica Kauffman",
+   "url": "https://en.wikipedia.org/wiki/Angelica_Kauffman",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S8",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Virginia Museum of Fine Arts (galeri: \"Cornelia…, 1785\")",
+   "url": "https://en.wikipedia.org/wiki/Virginia_Museum_of_Fine_Arts",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S9",
+   "kurum": "Almanca Vikipedi",
+   "belge": "Cornelia (Mutter der Gracchen) (tablo: Varşova 1788, 110×152; Hetsch 1794)",
+   "url": "https://de.wikipedia.org/wiki/Cornelia_(Mutter_der_Gracchen)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Cornelia (anekdot: «haec ornamenta mea» – \"ecco i miei gioielli\")",
+   "url": "https://it.wikipedia.org/wiki/Cornelia",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Kauffmann Cornelia mater Gracchorum.jpg (VMFA görseli; imageinfo+wikitext)",
+   "url": "https://commons.wikimedia.org/wiki/File:Kauffmann_Cornelia_mater_Gracchorum.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata only; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S12",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Angelica kauffman ra cornelia mother of the gracchi060808).jpg (Varşova görseli)",
+   "url": "https://commons.wikimedia.org/wiki/File:Angelica_kauffman_ra_cornelia_mother_of_the_gracchi060808).jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata only; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S13",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Cornelia, Gracchus Kardeşlerini Gösteriyor.jpg (proje görseli)",
+   "url": "https://commons.wikimedia.org/wiki/File:Cornelia,_Gracchus_Karde%C5%9Flerini_G%C3%B6steriyor.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; metadata only; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S14",
+   "kurum": "Christie's",
+   "belge": "Lot 6338032, Live Auction 19994 \"Old Master Paintings and Sculpture\", Lot 62 (Varşova versiyonu; lot essay üç versiyonu belgeler)",
+   "url": "https://www.christies.com/en/lot/lot-6338032",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (canlı)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Zamek Królewski w Warszawie (Wayback)",
+   "belge": "Angelica Kauffman – Kornelia, matka Grakchów sergi sayfası, arşiv 2023-05-20 (20230520164436)",
+   "url": "https://web.archive.org/web/20230520164436/https://www.zamek-krolewski.pl/angelica-kauffman-kornelia-matka-grakchow",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; arşiv 2023-05-20",
+   "tur": "birincil"
+  },
+  {
+   "id": "S16",
+   "kurum": "The Latin Library",
+   "belge": "Valerius Maximus, Factorum ac dictorum memorabilium libri IX, IV.4.init (Latince)",
+   "url": "http://www.thelatinlibrary.com/valmax4.html",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (Latince metin)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S17",
+   "kurum": "archive.org",
+   "belge": "Wayback availability API (VMFA)",
+   "url": "https://archive.org/wayback/available?url=vmfa.museum/piction/6027262-75485071/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (availability API)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S18",
+   "kurum": "Wikidata",
+   "belge": "wbsearchentities + tam metin aramaları (\"Cornelia Weimar\" → 0 sonuç)",
+   "url": "https://www.wikidata.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (arama API)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S19",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Arama (\"Cornelia Gracchi\") → doğru başlık \"Cornelia\"",
+   "url": "https://it.wikipedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (arama API)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S20",
+   "kurum": "Wikidata",
+   "belge": "wbgetentities etiket çözümlemesi (Q123098, Q4013975, Q756098, Q5727902)",
+   "url": "https://www.wikidata.org/w/api.php",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (etiket API)",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Horatiusların Yemini (Le Serment des Horaces)",
+   "sanatci": "Jacques-Louis David",
+   "kurum": "Louvre, Paris",
+   "mufredat_ici": true,
+   "gerekce": "Zamek kaydı iki eseri aynı cumhuriyetçi ahlak didaktiği çizgisinde karşılaştırır; erkeksi fedakârlık ↔ annelik erdemi.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "eser": "Cornelia, Mother of the Gracchi (Varşova versiyonu)",
+   "sanatci": "Angelica Kauffman",
+   "kurum": "Zamek Królewski w Warszawie",
+   "envanter": "ZKW/6045",
+   "gerekce": "Aynı konu, imzalı-tarihli 1788; Sempronia farkı ve versiyon karşılaştırması için kontrollü örnek.",
+   "kanit": [
+    "C015",
+    "C022",
+    "C023"
+   ]
+  },
+  {
+   "eser": "Cornelia (Hetsch)",
+   "sanatci": "Philipp Friedrich Hetsch",
+   "kurum": "Staatsgalerie Stuttgart",
+   "gerekce": "Aynı Valerius Maximus motifi; konunun Neoklasik alımlama yayılımı.",
+   "kanit": [
+    "C039"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "VMFA Wayback (2025-06-16), Christie's lot 6338032 (canlı), Zamek Wayback (2023-05-20), Valerius Maximus IV.4 Latince metin yeniden açıldı; künye/üç versiyon/anekdot/imza doğrulandı. en/de/it wikitext + WD EntityData + Commons metadata yeniden okundu; D001 metadata kirliliği (S11→dewiki Varşova; S2 Commons ithal refs) teyit edildi. Görseller İNCELENEMEDİ (C055); GZ TASLAK. Weimar birincil URL bulunamadı (C050); kitaplar kaynakçada anıldı, metne erişilmedi (C056).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Anahtar: data'daki gerçek anahtar slayt notu içerir (\"…(slaytta: Cornelia Pointing to Her Children as Her Treasures)\"); DERS.json eser_id bu bileşik anahtardır, dizin adı kauffman.",
+  "QID yok: data'da bu eser için QID yok → Q134603748 bulundu (data'ya YAZILMADI). gunun_resimleri.json'daki Q23008414 Kauffman otoportresidir, bu eserle ilgisi yok.",
+  "Müze alanı data'da \"(slayt altyazısı)\" notlu; birincil teyit S4 arşiv kaydıyla yapıldı. Envanter (75.22), boyut (101.6×127), credit line data'da yok.",
+  "Uyumlu: tarih \"yaklaşık 1785\" ↔ S4 \"ca. 1785\"; lisans \"Public domain\" ↔ S13; Valerius Maximus ↔ S16; Tiberius+Gaius ↔ S6/S14; RA iki kadın kurucu ↔ S7; David karşılaştırması ↔ S15.",
+  "Doğrulanamadı: data derslerindeki görsel betimlemeler (bulla, tomar, renk/kostüm, jest yönleri) — C053 (E008); görsel incelenmedi.",
+  "Küçük uyuşmazlık: gorsel_oranlari.json 1.27 ↔ Commons orijinali ≈1.263 (C045, D006).",
+  "Önceki doğrulama izleri: ders_kaynaklari.json'da \"dogrulandi\" durumlu adaylar (ör. 616f7df806, 4dcff5e9c2) bağımsız kanıt SAYILMADI.",
+  "data/ dosyalarına, uygulama koduna, main branch'e dokunulmadı; commit/push yapılmadı."
+ ]
+}

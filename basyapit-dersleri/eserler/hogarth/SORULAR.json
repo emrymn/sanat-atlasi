@@ -1,0 +1,546 @@
+{
+ "surum": "1.0",
+ "eser_id": "william-hogarth|Gin Lane",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Gösterilen nüsha hangi kurum ve envanter numarasıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "NGA Washington, 1944.5.87"
+    },
+    {
+     "harf": "B",
+     "metin": "MET, 32.35(124)"
+    },
+    {
+     "harf": "C",
+     "metin": "RA, 12/456"
+    },
+    {
+     "harf": "D",
+     "metin": "British Museum"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA katalogu (S9) gösterilen nüshayı 1944.5.87, Rosenwald Collection, State iii/iv olarak kaydeder; IIIF UUID katalogla eşleşti.",
+   "yanlis_gerekceleri": {
+    "B": "MET 32.35(124) başka bir nüshadır (\"third state of three\"); gösterilen nüsha değildir.",
+    "C": "RA 12/456 başka bir nüshadır (350×302 mm); gösterilen nüsha değildir.",
+    "D": "British Museum nüshası için erişilen kaynaklarda katalog URL bulunamadı; gösterilen nüsha NGA'dır."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Baskının yayım tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1 Şubat 1751"
+    },
+    {
+     "harf": "B",
+     "metin": "27 Şubat 1734"
+    },
+    {
+     "harf": "C",
+     "metin": "1759"
+    },
+    {
+     "harf": "D",
+     "metin": "1811"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "MET ve RA \"1 February 1751\" der; NGA yalnız \"1751\" (yıl) yazar (C003).",
+   "yanlis_gerekceleri": {
+    "B": "27 Şubat 1734, Judith Defour davasının tarihidir; baskı yayımı değildir.",
+    "C": "1759, Beer Street'in 3. state reissue tarihidir; ilk yayım değildir.",
+    "D": "1811, Lamb'in The Reflector yazısının tarihidir; baskı yayımı değildir."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Etching and engraving"
+    },
+    {
+     "harf": "B",
+     "metin": "Yağlıboya tuval"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Tahta baskı (woodcut)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA/MET/RA \"etching and engraving\" (oyma + asitle yedirme) olarak kaydeder (C004).",
+   "yanlis_gerekceleri": {
+    "B": "Yağlıboya tuval değildir; iki sahnenin tablosu yoktur, doğrudan çizimden gravürlenmiştir.",
+    "C": "Fresk değildir; metal levha baskı tekniğidir.",
+    "D": "Woodcut değildir; bakır levha etching/engraving'dir."
+   },
+   "kanit": [
+    "C004",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Gin Lane'in kardeş (pendant) baskısı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Beer Street"
+    },
+    {
+     "harf": "B",
+     "metin": "The Four Stages of Cruelty"
+    },
+    {
+     "harf": "C",
+     "metin": "Marriage A-la-Mode"
+    },
+    {
+     "harf": "D",
+     "metin": "Industry and Idleness"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGA seri başlığı \"Beer Street and Gin Lane\"; RA \"published as a pair with Beer Street\" (C001).",
+   "yanlis_gerekceleri": {
+    "B": "Four Stages of Cruelty izleyen hafta yayımlandı; pendant değildir.",
+    "C": "Marriage A-la-Mode önceki hiciv dizisidir; pendant değildir.",
+    "D": "Industry and Idleness hareketin öncüsüdür; pendant değildir."
+   },
+   "kanit": [
+    "C001",
+    "C011"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Baskıların altındaki dizeleri kim yazmıştır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Rev. James Townley"
+    },
+    {
+     "harf": "B",
+     "metin": "Henry Fielding"
+    },
+    {
+     "harf": "C",
+     "metin": "Charles Lamb"
+    },
+    {
+     "harf": "D",
+     "metin": "William Hogarth"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "RA: dizeler Hogarth'ın arkadaşı Rev. James Townley tarafından yazılmıştır (C012).",
+   "yanlis_gerekceleri": {
+    "B": "Fielding, Inquiry'nin yazarı ve Hogarth'ın arkadaşıdır; dizeleri yazan değildir.",
+    "C": "Lamb, Gin Lane'i \"sublime\" bulan eleştirmendir; dize yazarı değildir.",
+    "D": "Hogarth baskıyı tasarlayıp gravürlemiştir; dizeler Townley'nindir."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Özgün bakır levhalar bugün nerededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Metropolitan Museum of Art, New York"
+    },
+    {
+     "harf": "B",
+     "metin": "National Gallery of Art, Washington"
+    },
+    {
+     "harf": "C",
+     "metin": "Royal Academy, London"
+    },
+    {
+     "harf": "D",
+     "metin": "British Museum"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "RA: \"the original copperplates are now in the Metropolitan Museum of Art, New York\" (C036).",
+   "yanlis_gerekceleri": {
+    "B": "NGA gösterilen baskı nüshasını tutar; özgün levhaları değil.",
+    "C": "RA baskı nüshasını tutar (12/456); levhalar MET'tedir.",
+    "D": "BM nüshası için URL bulunamadı; levhalar MET'tedir."
+   },
+   "kanit": [
+    "C036"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "\"Gin Royal\" mahzeninin yazıtı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "\"Drunk for a Penny / Dead Drunk for two pence / Clean Straw for Nothing\""
+    },
+    {
+     "harf": "B",
+     "metin": "\"Beer, happy Produce of our Isle\""
+    },
+    {
+     "harf": "C",
+     "metin": "\"Gin, cursed Fiend, with Fury fraught\""
+    },
+    {
+     "harf": "D",
+     "metin": "\"Here all is joyous and thriving\""
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "RA katalogu Gin Royal yazıtını birebir verir (C017).",
+   "yanlis_gerekceleri": {
+    "B": "Bu, Townley'nin Beer Street dizelerinin ilk satırıdır; Gin Royal yazıtı değildir.",
+    "C": "Bu, Townley'nin Gin Lane dizelerinin ilk satırıdır; mahzen yazıtı değildir.",
+    "D": "Bu, Beer Street betiminin alıntısıdır (Hogarth p.64); Gin Royal yazıtı değildir."
+   },
+   "kanit": [
+    "C017",
+    "C012"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "1734'te kızını boğup giysilerini cin parasına satan kadın kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Judith Defour"
+    },
+    {
+     "harf": "B",
+     "metin": "Mary Estwick"
+    },
+    {
+     "harf": "C",
+     "metin": "Jane Prig"
+    },
+    {
+     "harf": "D",
+     "metin": "Elizabeth Scot"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "OBO t17340227-32: Judith Defour, guilty/death; giysileri satıp cin aldı (C016).",
+   "yanlis_gerekceleri": {
+    "B": "Mary Estwick başka bir cin davasıdır (toddler yanarak öldü); Defour değildir.",
+    "C": "Jane Prig, Defour davasında workhouse tanığıdır; sanık değildir.",
+    "D": "Elizabeth Scot, Defour davasında tanık (iş arkadaşı)dır; sanık değildir."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Kalın çizgi işçiliği neden tercih edilmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Popüler pazar ve çok nüsha baskı için"
+    },
+    {
+     "harf": "B",
+     "metin": "Yağlıboya etkisi vermek için"
+    },
+    {
+     "harf": "C",
+     "metin": "Tuval dokusunu taklit etmek için"
+    },
+    {
+     "harf": "D",
+     "metin": "Fresk tekniğine yaklaşmak için"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "RA prospectus: kalın çizgi, kalite kaybı olmadan çok nüsha basmak ve popüler baskı üslubuna yaklaşmak içindir (C037).",
+   "yanlis_gerekceleri": {
+    "B": "Yağlıboya etkisi değildir; baskı tekniği ve pazar stratejisidir.",
+    "C": "Tuval dokusu taklidi değildir; çizgi kalınlığı baskı dayanıklılığı içindir.",
+    "D": "Fresk tekniği değildir; metal levha baskıdır."
+   },
+   "kanit": [
+    "C037"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Beer Street'te tek iflas eden işletme hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Rehinci Pinch"
+    },
+    {
+     "harf": "B",
+     "metin": "Demirci"
+    },
+    {
+     "harf": "C",
+     "metin": "Balıkçılar"
+    },
+    {
+     "harf": "D",
+     "metin": "Terzi atölyesi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Beer Street'te tek iflas eden rehinci Pinch'tir; Gin Lane'in zengin rehincisi Gripe'ın tersine (C025).",
+   "yanlis_gerekceleri": {
+    "B": "Demirci/cooper sağlıklı ve neşelidir; iflas eden değildir.",
+    "C": "Balıkçılar bolluk içindedir (New Ballad on the Herring Fishery); iflas değildir.",
+    "D": "Terziler çalışmaya devam eder; iflas eden rehinci Pinch'tir."
+   },
+   "kanit": [
+    "C025"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Gösterilen nüsha NGA Washington 1944.5.87'dir (Rosenwald, State iii/iv).",
+   "dogru": true,
+   "aciklama": "Doğru (S9; C005).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eserin özgün bakır levhaları NGA Washington'dadır.",
+   "dogru": false,
+   "aciklama": "Yanlış: özgün bakır levhalar Metropolitan Museum of Art, New York'tadır (S11/S12; C036).",
+   "kanit": [
+    "C036"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Gin Lane, Beer Street ile çift olarak yayımlanmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru (S9/S11; C001).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Eserin tekniği yağlıboya tuvaldir.",
+   "dogru": false,
+   "aciklama": "Yanlış: etching and engraving (baskı); iki sahnenin tablosu yoktur (C004/C008).",
+   "kanit": [
+    "C004",
+    "C008"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Baskıların altındaki dizeleri Henry Fielding yazmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış: dizeler Rev. James Townley'nindir (S11/S12; C012).",
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "State sayımı ihtilafını (MET 3/3 ↔ NGA iii/iv ↔ Vanderbilt 3) katalog raisonné gelenekleri açısından analiz edin.",
+   "beklenen_ogeler": [
+    "MET \"third state of three\"",
+    "NGA \"State iii/iv\" (Paulson)",
+    "Vanderbilt \"state 3\"",
+    "farklı şema; kesinleştirme yok"
+   ],
+   "kanit": [
+    "C040",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Gin Act başarısı tartışmasını (Dillon ↔ Warner 2001) nedensellik açısından değerlendirin.",
+   "beklenen_ogeler": [
+    "Dillon \"considered a success\"",
+    "üretim 7M→4.25M",
+    "Warner \"by accident rather than by design\"",
+    "yalnız kısa vadeli başarı"
+   ],
+   "kanit": [
+    "C042",
+    "C030",
+    "C031"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Slayt görseli (Davenport kopyası) ↔ gösterilen nüsha (NGA) farkını ve broşür başlığı ihtilafını tartışın.",
+   "beklenen_ogeler": [
+    "Davenport c.1806–09 / reprint c.1880",
+    "NGA 1944.5.87 orijinal",
+    "\"Mr Gin\" ↔ \"Mrs Gin\"",
+    "data içi tutarsızlık"
+   ],
+   "kanit": [
+    "C044",
+    "C041",
+    "C024"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Paulson'ın sınıfsal okumasını ve Lamb/Hazlitt \"sublime\" alımlamasını estetik teoriyle ilişkilendirin.",
+   "beklenen_ogeler": [
+    "orta sınıf iyi/kötü",
+    "işçi sınıfı refah-yoksulluk",
+    "sedan chair ↔ cinli anne",
+    "Lamb sublime; Hazlitt"
+   ],
+   "kanit": [
+    "C028",
+    "C034",
+    "C015"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Görsel incelenemediği için kompozisyon betimlerinin kaynak sınırını ve BM/WD belirsizliklerini değerlendirin.",
+   "beklenen_ogeler": [
+    "görsel İNCELENEMEDİ",
+    "GZ TASLAK",
+    "BM URL yok",
+    "WD V&A \"imported\" zayıf"
+   ],
+   "kanit": [
+    "C046",
+    "C047",
+    "C048"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Merkezde sarhoş annenin enfiye alırken bebeğini düşürdüğü sahneyi bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (RA): \"a drunken mother dropping her baby to take a pinch of snuff\".",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "\"Gin Royal\" mahzen girişindeki \"Drunk for a Penny…\" yazıtını bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (RA): Gin Royal sloganı.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Kalın çizgi işçiliğini ve popüler baskı üslubunu inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (RA): kalın çizgi, çok nüsha baskı.",
+   "kanit": [
+    "C037"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Beer Street'te demircinin kaldırdığı Fransız'ın (1./2. state) 1759'da koyun buduna dönüşmesini karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (RA): Frenchman → shoulder of mutton.",
+   "kanit": [
+    "C026"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "St Giles yoksul mahallesi betimini ve çöken mimariyi kaynak metniyle karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Kaynak betimi (RA/enwiki): Ruins of St Giles; çöken binalar.",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "Gin Lane; Hogarth (1697–1764); 1 Şubat 1751; etching and engraving; NGA 1944.5.87, State iii/iv; Beer Street çift.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Dizeler + levhalar?",
+   "arka": "Dizeler Rev. James Townley; özgün bakır levhalar Metropolitan Museum of Art, New York.",
+   "kanit": [
+    "C012",
+    "C036"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Gin Royal + Defour?",
+   "arka": "\"Drunk for a Penny / Dead Drunk for two pence / Clean Straw for Nothing\"; Judith Defour 1734 (giysileri satıp cin aldı; guilty/death).",
+   "kanit": [
+    "C017",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Teknik / pazar?",
+   "arka": "Kalın çizgi, popüler pazar, çok nüsha; ucuz 1s / 1s 6d; \"lower Class of People\".",
+   "kanit": [
+    "C037",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Beer Street karşıtlığı?",
+   "arka": "Sağlıklı, müreffeh; tek iflas rehinci Pinch; 1759 Frenchman → koyun budu.",
+   "kanit": [
+    "C025",
+    "C026"
+   ]
+  }
+ ]
+}

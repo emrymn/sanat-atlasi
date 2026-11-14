@@ -1,0 +1,560 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q4388208",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Birincil Louvre kaydı eserin tarihini nasıl verir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "vers 1771 - 1772 (yaklaşık; tablo tarihsiz)"
+    },
+    {
+     "harf": "B",
+     "metin": "1771 (kesin yıl)"
+    },
+    {
+     "harf": "C",
+     "metin": "1773 (kesin yıl)"
+    },
+    {
+     "harf": "D",
+     "metin": "1777 (kesin yıl)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: displayDateCreated \"3e quart du XVIIIe siècle (vers 1771 - 1772)\", imprecision \"vers\"; objectHistory \"Le tableau n'est pas daté\".",
+   "yanlis_gerekceleri": {
+    "B": "data/WD'nin aşırı kesin formudur; birincil \"vers\" der ve tablonun tarihsiz olduğunu belirtir (C036).",
+    "C": "1773, Massard gravürünün tarihidir; tablonun yapım yılı değildir (C012).",
+    "D": "1777, Greuze'ün Louvre atölyesindeki sergileme tarihidir; yapım yılı değildir (C012)."
+   },
+   "kanit": [
+    "C003",
+    "C012"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin tekniği ve formatı (birincil kayıt) nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tuval üzerine yağlı boya; oval"
+    },
+    {
+     "harf": "B",
+     "metin": "Ahşap pano; dikdörtgen"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk; oval"
+    },
+    {
+     "harf": "D",
+     "metin": "Tuval üzerine yağlı boya; dikdörtgen"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"huile sur toile\" + \"Format : ovale\".",
+   "yanlis_gerekceleri": {
+    "B": "Birincil kayıt tuval ve oval der; ahşap pano/dikdörtgen değildir (C004, C005).",
+    "C": "Teknik fresk değil, tuval üzerine yağlı boyadır (C004).",
+    "D": "Format dikdörtgen değil ovaldir (C005)."
+   },
+   "kanit": [
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil kayda göre çıplak tuval boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "109 × 87 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "110 × 85 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "135,5 × 116 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "43 × 37 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: Hauteur 1,09 m; Largeur 0,87 m.",
+   "yanlis_gerekceleri": {
+    "B": "WD P2048/P2049 değeridir; birincil ve wikilerle çelişir (C037).",
+    "C": "Aksesuarlı (çerçeveli) ölçüdür; çıplak tuval boyutu değildir (C006).",
+    "D": "RF 3801 eskizinin boyutudur (C029)."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin envanter numaraları hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "INV 5036 / MR 1779"
+    },
+    {
+     "harf": "B",
+     "metin": "MNR 861"
+    },
+    {
+     "harf": "C",
+     "metin": "RF 3801"
+    },
+    {
+     "harf": "D",
+     "metin": "INV 1779 / MR 5036"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: objectNumber INV 5036 (Numéro principal), MR 1779 (autre numéro).",
+   "yanlis_gerekceleri": {
+    "B": "MNR 861, Louvre orijinalinin kopyasının numarasıdır (C014).",
+    "C": "RF 3801, eskizin numarasıdır (C013).",
+    "D": "Numaralar yer değiştirmiştir; kayıtta ana numara INV 5036, diğer MR 1779'dur (C007)."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eser Louvre'e nasıl kazandırıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1794'te du Barry koleksiyonundan devrimci el koyma (Louveciennes)"
+    },
+    {
+     "harf": "B",
+     "metin": "1922'de Rothschild vasiyet bağışı"
+    },
+    {
+     "harf": "C",
+     "metin": "1951'de MNR tahsisi"
+    },
+    {
+     "harf": "D",
+     "metin": "1773'te Massard'dan satın alma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"Saisie révolutionnaire de la comtesse du Barry à Louveciennes\", acquisition date 1794.",
+   "yanlis_gerekceleri": {
+    "B": "1922 Rothschild legado'su RF 3801 eskizi içindir (C013, C029).",
+    "C": "1951 MNR tahsisi MNR 861 kopyası içindir (C014, C028).",
+    "D": "Massard 1773'te gravür yaptı; satın alma kaydı yoktur (C012)."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Birincil kayda göre komiser/önceki sahip kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Comtesse du Barry (Bécu, Jeanne)"
+    },
+    {
+     "harf": "B",
+     "metin": "Marquis de Verri"
+    },
+    {
+     "harf": "C",
+     "metin": "Baronne Salomon de Rothschild"
+    },
+    {
+     "harf": "D",
+     "metin": "Louis XV"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: previousOwner \"Bécu, Jeanne, comtesse du Barry\" (commanditaire).",
+   "yanlis_gerekceleri": {
+    "B": "Verri, kompozisyonun diğer özgün versiyonunun sahibiydi; bu eserin komiseri değildir (C011).",
+    "C": "Rothschild, eskizi (RF 3801) vasiyetle bağışlayan koleksiyonerdir (C013).",
+    "D": "Kayıtta komiser/önceki sahip du Barry'dir; Louis XV siparişçi olarak geçmez (C010)."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Greuze tabloyu Ekim 1777'de nerede sergiledi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louvre'deki kendi atölyesinde (Salon kapandıktan sonra)"
+    },
+    {
+     "harf": "B",
+     "metin": "Resmî Salon'da"
+    },
+    {
+     "harf": "C",
+     "metin": "Petit Palais'de"
+    },
+    {
+     "harf": "D",
+     "metin": "Louveciennes şatosunda"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9: \"exposé par Greuze dans son atelier du Louvre en octobre 1777, après la fermeture du Salon\".",
+   "yanlis_gerekceleri": {
+    "B": "Sergileme Salon'un kapanışından SONRA olmuştur; resmî Salon'da değildir (C012).",
+    "C": "Petit Palais sergisi 2025–26'dadır; 1777 değildir (C030).",
+    "D": "Louveciennes provenans mekânıdır; 1777 sergileme yeri değildir (C010)."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "MNR 861 nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louvre orijinalinin (INV 5036) kopyası; MNR statülü, sergilenmiyor"
+    },
+    {
+     "harf": "B",
+     "metin": "Kompozisyonun özgün ikinci versiyonu"
+    },
+    {
+     "harf": "C",
+     "metin": "Hazırlık eskizi"
+    },
+    {
+     "harf": "D",
+     "metin": "Massard gravürü"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S10: \"Copie de La Cruche cassée du Louvre (inv. 5036)\", linkType \"D'après\", \"non exposé\", MNR.",
+   "yanlis_gerekceleri": {
+    "B": "İkinci özgün versiyon marquis de Verri'ye aitti; MNR 861 kopyadır (C011, C014).",
+    "C": "Hazırlık eskizi RF 3801'dir (C013).",
+    "D": "Massard gravürü 1773 tarihli ayrı bir nesnedir; MNR 861 tuval kopyadır (C012, C014)."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "RF 3801 eskizi Louvre'e nasıl geldi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1922'de baronne Salomon de Rothschild vasiyet bağışı (legs)"
+    },
+    {
+     "harf": "B",
+     "metin": "1794 devrimci el koyma"
+    },
+    {
+     "harf": "C",
+     "metin": "1950 Wiesbaden iadesi"
+    },
+    {
+     "harf": "D",
+     "metin": "1959 Mobilier national tahsisi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S11: acquisition mode \"legs\", 1922; S9 \"léguée en 1922 par la baronne Salomon de Rothschild\".",
+   "yanlis_gerekceleri": {
+    "B": "1794 el koyma ana tablo (INV 5036) içindir (C010).",
+    "C": "1950 Wiesbaden iadesi MNR 861 kopyası içindir (C028).",
+    "D": "1959 Mobilier national depozitosu MNR 861 içindir (C028)."
+   },
+   "kanit": [
+    "C013",
+    "C029"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Kırık testi sembolizmi kaynaklarda nasıl sunulur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yorum olarak; birincil kayıt sembolizmden söz etmez, ikincil kaynaklar çekinceli ifade kullanır"
+    },
+    {
+     "harf": "B",
+     "metin": "Birincil kayıtta kesin olgu olarak"
+    },
+    {
+     "harf": "C",
+     "metin": "Tüm kaynaklarda kesin alegori olarak"
+    },
+    {
+     "harf": "D",
+     "metin": "Kaynaklarda hiç geçmez"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S9 betimleme sembolizm içermez; S2/S3/S4/S13/S14 \"presume / on peut imaginer / si può immaginare / que l'on devine\" der (C027).",
+   "yanlis_gerekceleri": {
+    "B": "Birincil betimleme yalnız giysi/aksesuar sayar; sembolizm yoktur (C015, C027).",
+    "C": "data/Commons kesin sunar ama bu, kaynakların çekincesi ve birincil sessizlikle çelişir (C038).",
+    "D": "en/it/fr wikileri ve FC okumayı tartışır; \"hiç geçmez\" yanlıştır (C027)."
+   },
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Birincil Louvre kaydı tarihi \"vers 1771 - 1772\" olarak verir ve tablonun tarihsiz olduğunu belirtir.",
+   "dogru": true,
+   "aciklama": "Doğru (S9: imprecision \"vers\"; \"Le tableau n'est pas daté\").",
+   "kanit": [
+    "C003",
+    "C012"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser dikdörtgen formatlıdır.",
+   "dogru": false,
+   "aciklama": "Yanlış: birincil kayıt \"Format : ovale\" der (S9).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "MNR 861, Louvre orijinalinin (INV 5036) kopyasıdır; MNR statüsüyle Louvre'e emanettir ve sergilenmez.",
+   "dogru": true,
+   "aciklama": "Doğru (S10: \"Copie… inv. 5036\", \"D'après\", \"non exposé\", MNR).",
+   "kanit": [
+    "C014",
+    "C028"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Birincil Louvre kaydı, kırık testinin kaybedilmiş bekâreti simgelediğini açıkça yazar.",
+   "dogru": false,
+   "aciklama": "Yanlış: birincil betimleme sembolizmden söz etmez; okuma ikincil kaynaklarda çekinceli yorumdur (C027).",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Kompozisyonun iki özgün versiyonu vardı; diğeri marquis de Verri'ye aitti.",
+   "dogru": true,
+   "aciklama": "Doğru (S9 objectHistory).",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih uyuşmazlığını (data/WD \"1771\" ↔ birincil \"vers 1771–1772\") kaynak hiyerarşisi ve WD precision/qualifier modeliyle analiz edin.",
+   "beklenen_ogeler": [
+    "vers korunmalı",
+    "P571 prec 9",
+    "P1480 circa yok",
+    "Massard 1773 terminus",
+    "birincil esas"
+   ],
+   "kanit": [
+    "C036",
+    "C003",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Bekâret okumasının kanıt zincirini (Barker 2005/2012 → wiki → FC) değerlendirin; \"anıldı ama okunmadı\" düğümlerini ve birincil sessizliği beyan edin.",
+   "beklenen_ogeler": [
+    "hedged ifadeler",
+    "birincil sessiz",
+    "Barker erişilmedi",
+    "yorum statüsü",
+    "data/Commons olgulaştırma"
+   ],
+   "kanit": [
+    "C017",
+    "C027",
+    "C038",
+    "C034"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Orijinal–kopya–eskiz üçlüsünü (INV 5036 / MNR 861 / RF 3801) statü ve provenans açısından karşılaştırın.",
+   "beklenen_ogeler": [
+    "D'après kopya",
+    "copie ou esquisse belirsiz",
+    "legs 1922",
+    "MNR iade",
+    "boyut farkı"
+   ],
+   "kanit": [
+    "C014",
+    "C028",
+    "C029",
+    "C013"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "MNR 861 iade provenansını (Dorotheum → Wiesbaden 7990 → 1950/51 → Mobilier national → Louvre) ve WWII hırsızlığı aktarımının kanıt düzeyini değerlendirin.",
+   "beklenen_ogeler": [
+    "26 Haziran 1950",
+    "1951 OBIP",
+    "1959–1989 Mobilier",
+    "non exposé",
+    "hırsızlık B (ima)"
+   ],
+   "kanit": [
+    "C028",
+    "C020",
+    "C014"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Greuze'ün \"innocence volée\" kız imgelerinin etik okumasını FC 2025 çerçevesinde (adult gaze, Mulvey, atasözü) tartışın.",
+   "beklenen_ogeler": [
+    "adult gaze",
+    "male gaze atfı",
+    "abusée ou violée hedged",
+    "atasözü",
+    "yorum"
+   ],
+   "kanit": [
+    "C031",
+    "C033",
+    "C026",
+    "C017"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynakların betimlediği beyaz dekolteli elbiseyi, balon kolları ve önlük ucundaki gül demetini bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Birincil betimleme (S9): robe blanche décolletée, manches ballons, brassée de roses.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kırık testinin figürün sağ kolunda asılı duruşunu ve kırık kenarını inceleyin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): İkincil betim (S2/S3/S4): cruche cassée au bras droit.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Aslan başlı çeşmeyi ve akan suyu bulun; figürün solunda olduğunu not edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): İkincil betim (S2/S3/S4): fontaine, tête de lion, sur sa gauche.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Saçtaki kurdele ile üç çiçeği ve göğüsteki gülü ayırt edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Birincil betimleme (S9): ruban et trois fleurs, rose à la poitrine.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Oval formatın tek figürü nasıl çerçevelediğini inceleyin; dikdörtgen bir kadraj olsaydı ne değişirdi, düşünün.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Birincil format (S9): ovale; tek figür.",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "La Cruche cassée.; Greuze (1725–1805); vers 1771–1772; tuval üzerine yağlı boya; oval; 109×87 cm; Louvre INV 5036 / MR 1779, Salle 932.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Provenans + tarihlendirme?",
+   "arka": "du Barry siparişi → 1794 Louveciennes devrimci el koyma; iki özgün versiyon (diğeri Verri); tablo tarihsiz, Massard 1773 gravürü; Ekim 1777 Louvre atölye sergisi.",
+   "kanit": [
+    "C010",
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Bağlı kayıtlar?",
+   "arka": "RF 3801 eskiz (43×37, 1922 Rothschild legs, \"copie ou esquisse originale\" belirsiz); MNR 861 kopya (111,5×85, \"D'après\", 1950 Wiesbaden iade, 1951 Louvre, non exposé).",
+   "kanit": [
+    "C013",
+    "C014",
+    "C028",
+    "C029"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Betim?",
+   "arka": "Beyaz dekolteli elbise, balon kol, önlükte gül, kurdele+3 çiçek, göğüste gül, écharpe (birincil); kırık testi sağ kolda, aslan başlı çeşme figürün solunda (ikincil, B).",
+   "kanit": [
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Sembolizm kaynaklarda nasıl sunulur?",
+   "arka": "Birincil kayıt sembolizmden söz etmez; ikincil kaynaklar \"presume / on peut imaginer / si può immaginare / que l'on devine\" gibi çekinceli ifadelerle bekâret okumasını YORUM olarak önerir.",
+   "kanit": [
+    "C027"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,571 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3228340",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Bu dersin konusu olan eser (Q3228340) hangi kurumdadır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Metropolitan Museum of Art, New York"
+    },
+    {
+     "harf": "B",
+     "metin": "National Gallery of Canada, Ottawa"
+    },
+    {
+     "harf": "C",
+     "metin": "Fine Arts Museums of San Francisco"
+    },
+    {
+     "harf": "D",
+     "metin": "Musée du Louvre, Paris"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met resmî API kaydı repository \"Metropolitan Museum of Art, New York, NY\" ve envanter 29.100.129 verir; bu QID Met versiyonudur.",
+   "yanlis_gerekceleri": {
+    "B": "Ottawa versiyonu NGC 4633'tür ve ayrı bir eserdir (c. 1863–1865, 1946 alımı); bu QID onu kapsamaz.",
+    "C": "San Francisco versiyonu (panel) ayrı bir eserdir; bu ders Met 29.100.129'u konu alır.",
+    "D": "Louvre bu eserin provenance zincirinde geçmez; birincil kayıt Met'tir."
+   },
+   "kanit": [
+    "C003",
+    "C016"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Met envanter numarası (Accession Number) hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "29.100.129"
+    },
+    {
+     "harf": "B",
+     "metin": "4633"
+    },
+    {
+     "harf": "C",
+     "metin": "436095"
+    },
+    {
+     "harf": "D",
+     "metin": "1929"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met API accessionNumber \"29.100.129\".",
+   "yanlis_gerekceleri": {
+    "B": "4633, Ottawa versiyonunun NGC envanter numarasıdır; Met versiyonunun değil.",
+    "C": "436095, Met API nesne kimliğidir (objectID); envanter numarası değildir.",
+    "D": "1929, eserin koleksiyona giriş yılıdır (accessionYear); envanter numarası değildir."
+   },
+   "kanit": [
+    "C003",
+    "C016",
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Birincil kayda göre teknik/destek nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, tuval (oil on canvas)"
+    },
+    {
+     "harf": "B",
+     "metin": "Suluboya, kâğıt"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya, ahşap pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Fresk"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met API medium \"Oil on canvas\"; WD P186 oil paint + canvas (P518 painting support).",
+   "yanlis_gerekceleri": {
+    "B": "Walters'taki 1864 tarihli çalışma suluboyadır; bu eser birincil kayda göre yağlıboya-tuvaldir.",
+    "C": "San Francisco versiyonu enwiki'ye göre paneldir; Met versiyonu birincil kayda göre tuvaldir.",
+    "D": "Fresk duvar tekniğidir; birincil kayıt oil on canvas der."
+   },
+   "kanit": [
+    "C004",
+    "C010"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Met versiyonunun boyutları hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "65,4 × 90,2 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "90,2 × 65,4 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "35 1/2 × 25 3/4 in. (yükseklik × genişlik)"
+    },
+    {
+     "harf": "D",
+     "metin": "26 × 33,9 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met API dimensions 65.4 x 90.2 cm (25 3/4 x 35 1/2 in.); measurements Height 65.4 / Width 90.2.",
+   "yanlis_gerekceleri": {
+    "B": "Met kaydı yükseklik 65,4 / genişlik 90,2 verir; bu seçenek yönü ters çeviriyor.",
+    "C": "İnç ölçüleri de aynı yönü korur: 25 3/4 yükseklik × 35 1/2 genişlik; seçenek ters.",
+    "D": "Bu ölçü enwiki'nin San Francisco versiyonu (panel) için verdiği ölçüdür; Met versiyonunun ölçüsü değildir."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eser Met koleksiyonuna hangi yıl, nasıl girdi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1929, Mrs. H. O. Havemeyer vasiyeti"
+    },
+    {
+     "harf": "B",
+     "metin": "1946, satın alma"
+    },
+    {
+     "harf": "C",
+     "metin": "1879, sanatçının ölümü"
+    },
+    {
+     "harf": "D",
+     "metin": "1896, Borden satışı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met creditLine \"H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929\"; accessionYear 1929.",
+   "yanlis_gerekceleri": {
+    "B": "1946, Ottawa versiyonunun NGC'ye satın alma yılıdır (\"Purchased 1946\"); Met girişi değil.",
+    "C": "1879, Daumier'nin ölüm yılıdır; koleksiyona giriş değil.",
+    "D": "1896, enwiki'nin aktardığı Borden satışıdır (provenance halkası); müzeye giriş değil."
+   },
+   "kanit": [
+    "C006",
+    "C016",
+    "C002"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Met galeri etiketi tablonun durumunu nasıl tanımlar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tamamlanmamış ve kareleme (squared for transfer) izli"
+    },
+    {
+     "harf": "B",
+     "metin": "Tamamlanmış ve sağ altta imzalı"
+    },
+    {
+     "harf": "C",
+     "metin": "Suluboya ve mürekkeple"
+    },
+    {
+     "harf": "D",
+     "metin": "Ahşap pano üzerine yağlıboya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met TOAH etiketi \"unfinished and squared for transfer\" der.",
+   "yanlis_gerekceleri": {
+    "B": "Bitmiş/imzalı betimi Ottawa versiyonu içindir (enwiki); Met etiketi bu eseri unfinished and squared for transfer olarak verir.",
+    "C": "Suluboya/mürekkep Walters çalışmalarının tekniğidir; bu eser yağlıboya-tuvaldir.",
+    "D": "Pano betimi San Francisco versiyonu içindir (enwiki); Met versiyonu tuvaldir."
+   },
+   "kanit": [
+    "C009",
+    "C004"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Met etiketine göre bu yağlıboya hangi çalışmayla yakın denklik (\"closely corresponds\") içindedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1864 tarihli Walters suluboyası (Baltimore)"
+    },
+    {
+     "harf": "B",
+     "metin": "Ottawa versiyonu (NGC 4633)"
+    },
+    {
+     "harf": "C",
+     "metin": "1856 tarihli Le Charivari litografisi"
+    },
+    {
+     "harf": "D",
+     "metin": "San Francisco paneli"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met TOAH etiketi \"closely corresponds to a watercolor of 1864 (Walters Art Museum, Baltimore)\" der.",
+   "yanlis_gerekceleri": {
+    "B": "Ottawa versiyonu ayrı bir yağlıboyadır (\"another oil version … finished but extensively reworked\"); etiket \"closely corresponds\" ifadesini Walters suluboyası için kullanır.",
+    "C": "Le Charivari litografileri enwiki'de anılır; etiketin denklik kurduğu çalışma Walters suluboyasıdır.",
+    "D": "San Francisco paneli ayrı bir versiyondur; etiketin denklik ifadesi Walters suluboyası içindir."
+   },
+   "kanit": [
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Met galeri etiketine göre demiryolu imgeleri Daumier sanatında ilk ne zaman görünür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1840'lar"
+    },
+    {
+     "harf": "B",
+     "metin": "1864"
+    },
+    {
+     "harf": "C",
+     "metin": "1878"
+    },
+    {
+     "harf": "D",
+     "metin": "1856"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met TOAH etiketi \"Images of railway travel first appeared in his art in the 1840s.\" der.",
+   "yanlis_gerekceleri": {
+    "B": "1864, Walters suluboyasının tarihidir; demiryolu imgelerinin ilk görünümü değil.",
+    "C": "1878, enwiki'nin aktardığı Durand-Ruel sergisi yılıdır (resimlerin tanınması); ilk demiryolu imgeleri değil.",
+    "D": "1856, enwiki'nin aktardığı Les Chemins de Fer baskı yılıdır; etiketin \"ilk\" ifadesi 1840'laradır."
+   },
+   "kanit": [
+    "C012",
+    "C010"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "NGC (Ottawa) kaydı yolcuları nasıl betimler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İçine kapanık, yoksul ve izole; loş vagonda düşüncelerine dalmış"
+    },
+    {
+     "harf": "B",
+     "metin": "Neşeli ve sohbet eden"
+    },
+    {
+     "harf": "C",
+     "metin": "Burjuva ve politikacılar"
+    },
+    {
+     "harf": "D",
+     "metin": "Askerler ve subaylar"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "NGC kaydı \"withdrawn, impoverished and isolated passengers … dimly lit carriage … absorbed in their thoughts\" der.",
+   "yanlis_gerekceleri": {
+    "B": "NGC yolcuların \"absorbed in their thoughts\" (düşüncelerine dalmış) olduğunu söyler; sohbet/neşe betimi kayda aykırıdır.",
+    "C": "NGC, Daumier'nin burjuva ve politikacıları sert karikatürize ettiğini ama burada işçi sınıfı yolcuları duyarlı resmettiğini söyler.",
+    "D": "Asker/subay betimi NGC kaydında geçmez; kayıt yoksul, izole yolcuları anlatır."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Met API'nin güncel galeri numarası (GalleryNumber, 2026) hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "812"
+    },
+    {
+     "harf": "B",
+     "metin": "802"
+    },
+    {
+     "harf": "C",
+     "metin": "436095"
+    },
+    {
+     "harf": "D",
+     "metin": "1929"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "Met API GalleryNumber \"812\" (metadataDate 2026-10-10).",
+   "yanlis_gerekceleri": {
+    "B": "802, TOAH'ın 2014 arşivindeki değerdir; güncel API 812 verir (galeri zaman içinde değişti, D3).",
+    "C": "436095, Met API objectID'dir; galeri numarası değil.",
+    "D": "1929, accessionYear'dır; galeri numarası değil."
+   },
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Bu eser (Q3228340) Metropolitan Museum of Art'ın 29.100.129 envanterli versiyonudur.",
+   "dogru": true,
+   "aciklama": "Doğru: Met API repository + accessionNumber; WD P195/P276=Q160236.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Met galeri etiketi tabloyu tamamlanmış ve imzalı olarak tanımlar.",
+   "dogru": false,
+   "aciklama": "Yanlış: Met etiketi \"unfinished and squared for transfer\" der; bitmiş/imzalı betimi Ottawa versiyonuna aittir.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser 1929'da Mrs. H. O. Havemeyer'in vasiyetiyle (H. O. Havemeyer Collection) koleksiyona girdi.",
+   "dogru": true,
+   "aciklama": "Doğru: creditLine + accessionYear 1929.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Met etiketine göre demiryolu imgeleri Daumier sanatında ilk kez 1864'te görüldü.",
+   "dogru": false,
+   "aciklama": "Yanlış: etiket \"first appeared … in the 1840s\" der; 1864 Walters suluboyasının tarihidir.",
+   "kanit": [
+    "C012",
+    "C010"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Ottawa versiyonu (NGC 4633) 1946'da satın alındı ve Met versiyonuyla aynı boyutlardadır (65,4 × 90,2 cm).",
+   "dogru": true,
+   "aciklama": "Doğru: NGC \"Purchased 1946\", 4633, 65.4 x 90.2 cm; Met API de 65.4 x 90.2 cm.",
+   "kanit": [
+    "C016",
+    "C005"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "D1 tarih ihtilafını kaynak eleştirisiyle analiz edin: API \"1864\" ↔ TOAH \"ca. 1862–64\" ↔ WD 1862/1868 + P1326=2001 + Q97309629 missing.",
+   "beklenen_ogeler": [
+    "API objectDate 1864",
+    "TOAH/Commons/enwiki ca. 1862–64",
+    "WD 1868 DBpedia import",
+    "P1326=2001 anomali",
+    "Q97309629 missing",
+    "birincil yayın aralığı korunur"
+   ],
+   "kanit": [
+    "C037",
+    "C008",
+    "C033"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Üç versiyonu (Met/Ottawa/SF) karıştırmadan karşılaştırın; hangi ayrıntı hangi kaynağa ve seviyeye ait?",
+   "beklenen_ogeler": [
+    "Met 29.100.129 bitmemiş (A)",
+    "Ottawa NGC 4633 bitmiş/reworked (A)",
+    "SF panel 26×33,9 (C, FAMSF açılmadı)",
+    "imza/Brame/Edwards yalnız enwiki (C)",
+    "WD yalnız Met"
+   ],
+   "kanit": [
+    "C038",
+    "C011",
+    "C016",
+    "C027",
+    "C026"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "\"İşçi aileleri / üç kuşak\" okumasını değerlendirin: NGC \"working class\" ↔ enwiki \"may be peasants (Millet)\" ↔ data yorumu.",
+   "beklenen_ogeler": [
+    "NGC işçi sınıfı (A)",
+    "enwiki köylü/Millet olasılığı (E)",
+    "data üç kuşak akrabalık belirsiz (E)",
+    "tek doğru cevap dayatılmaz",
+    "kaynak-atıflı sunum"
+   ],
+   "kanit": [
+    "C035",
+    "C017",
+    "C032",
+    "C025"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Bitmemişlik + kareleme + Walters denkliğini bir aktarım hipotezi olarak tartışın; \"possibly\"/\"perhaps\" korunarak hangi yön kanıtsız?",
+   "beklenen_ogeler": [
+    "unfinished + squared (A)",
+    "Walters denkliği (A)",
+    "kareleme kaynağı possibly (E)",
+    "working drawings perhaps tracings (E)",
+    "eşzamanlılık/sıra not clear (E)"
+   ],
+   "kanit": [
+    "C009",
+    "C010",
+    "C031",
+    "C029",
+    "C030"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Provenance zincirini kaynak seviyeleriyle değerlendirin ve Van Gogh mektupları iddiasının kanıt durumunu raporlayın.",
+   "beklenen_ogeler": [
+    "Duz 1888 → Durand-Ruel 1892/93 → Borden 1896 → estate 1913 40.000$ → Louisine (C)",
+    "1929 Met (A)",
+    "Louisine WD P127 (B)",
+    "Van Gogh iddiası kaynaksız (E)",
+    "Kleiner yalnız anıldı"
+   ],
+   "kanit": [
+    "C020",
+    "C006",
+    "C018",
+    "C036",
+    "C034"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Tuval yüzeyindeki kareleme (squared for transfer) ızgara izlerini arayın; eserin bitmemişliğiyle ilişkisini düşünün.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Met galeri etiketi: \"unfinished and squared for transfer\".",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Ön sıradaki figür gruplarında emzirme (nursing) temasını ve çocuk figürlerini bulun; konu etiketleriyle eşleştirin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Met konu etiketleri: Women, Men, Children, Nursing, Trains; enwiki ön sıra betimi (yorum).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Vagon içi mekânı ve tren/yolculuk temasını taşıyan öğeleri (sıralar, pencereler) arayın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Met konu etiketi Trains; kaynak betimi vagon içi.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Eserin yatay formatını (65,4 × 90,2 cm) ve figür sıralarının bu formata yerleşimini kaynak betimi üzerinden düşünün.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Met API boyut 65.4 x 90.2 cm; enwiki ön sıra + arka sıralar betimi (yorum).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Met etiketinin \"closely corresponds\" dediği 1864 Walters suluboyasıyla (Baltimore) kompozisyon denkliğini karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Met etiketi: Walters suluboyasıyla yakın denklik; görsel karşılaştırma insan editöre.",
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye (Met versiyonu)?",
+   "arka": "The Third-Class Carriage (Le Wagon de troisième classe); Honoré Daumier (1808–1879); oil on canvas; 65,4 × 90,2 cm; Met NY 29.100.129; H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929; Gallery 812 (API 2026).",
+   "kanit": [
+    "C001",
+    "C043",
+    "C002",
+    "C004",
+    "C005",
+    "C003",
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Tarih kaynaklarda nasıl geçer?",
+   "arka": "Met TOAH/Commons/enwiki \"ca. 1862–64\" der (A); Met API objectDate \"1864\" der; WD 1862/1868 anomalileri vardır. Ders \"c. 1862–1864\" kullanır, kesinleştirmez (D1).",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Met galeri etiketi ne der?",
+   "arka": "Daumier modern kent hayatının kronikçisi; sanayileşmenin etkileri; demiryolu imgeleri ilk 1840'lar; bu yağlıboya bitmemiş + kareleme izli; 1864 Walters suluboyasıyla (Baltimore) yakın denklik; Ottawa'daki diğer yağlıboya bitmiş ama yoğun yeniden işlenmiş.",
+   "kanit": [
+    "C012",
+    "C009",
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Ottawa versiyonu (AYRI eser)?",
+   "arka": "NGC 4633; c. 1863–1865; oil on canvas; 65,4 × 90,2 cm; Purchased 1946; NGC yorumu: işçi sınıfına sempati, içine kapanık/yoksul/izole yolcular, loş vagon.",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Konu etiketleri + sınıflama + telif?",
+   "arka": "Women, Men, Children, Nursing, Trains; Paintings; Genre Scenes / Secular Figure; Realism in Nineteenth–Century European Art; kamu malı (Met Open Access / CC0).",
+   "kanit": [
+    "C013",
+    "C014",
+    "C015"
+   ]
+  }
+ ]
+}
