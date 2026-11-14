@@ -1,0 +1,832 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1061035",
+ "sanatci_id": "rene-magritte",
+ "baslik": "İmgelerin İhaneti",
+ "ozgun_baslik": "La trahison des images (Ceci n'est pas une pipe)",
+ "kunye": {
+  "sanatci": "René Magritte",
+  "sanatci_yasam": "1898–1967 (Belçika)",
+  "tarih": "1929",
+  "tarih_belirsizlik": "LACMA 1929 (A); WikiArt içeriği \"1928–1929\", URL slug \"-1948\" (D, C038); 1948 versiyonu doğrulanmadı (E, C049)",
+  "teknik": "Yağlıboya / tuval (Oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 60.3,
+   "genislik": 81.1
+  },
+  "muze": "Los Angeles County Museum of Art (LACMA), Los Angeles",
+  "envanter": "78.7",
+  "edinim": "1978; Mr. & Mrs. William Preston Harrison Collection fonlarıyla satın alma; 17 Mayıs 1978 Sotheby's Parke-Bernet New York (Sale 4124, Lot 70)",
+  "konum": "BCAM 3rd Floor, Modern Art (LACMA)",
+  "telif_durumu": "Tablo © C. Herscovici/Artists Rights Society (ARS), New York; fotoğraf © Museum Associates/LACMA. Magritte ö.1967 → TR/AB 2038 (ölüm+70). ABD kamu malı statüsü BELİRSİZ (Duke CSPD 2025; 1929 \"published\" sorusu çözülmedi; 2026 sayfası güncellemedi). Ders adil-kullanım (eğitim/eleştiri) çerçevesindedir; görsel yeniden yayımlanmaz. Hukuki tavsiye değildir."
+ },
+ "gorsel": {
+  "url": "https://collections.lacma.org/object/31931",
+  "kaynak": "LACMA koleksiyon kaydı (object/31931); tablo © C. Herscovici/ARS, fotoğraf © Museum Associates/LACMA. Alternatif referanslar: enwiki File:MagrittePipe.jpg (non-free fair use, 378×264); Commons File:La Trahison des images.jpg (CC BY 2.0, yalnız fotoğraf, Jason Eppink, 720×480).",
+  "lisans": "Fair use (eğitim/eleştiri); tablo © C. Herscovici/ARS, New York; fotoğraf © Museum Associates/LACMA. Görsel yeniden yayımlanmaz/kopyalanmaz; URL+lisans+kaynak referansı. Commons \"Magritte treachery.jpg\" PD iddiası çelişkili + silme talepli → güvenilir değil (C040).",
+  "dogrulama": {
+   "yontem": "Metadata + lisans + çözünürlük (API/HTML) + LACMA alt metni; görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda).",
+   "cozunurluk": "LACMA webp çekilmedi; enwiki 378×264; Commons La Trahison 720×480; Commons Magritte treachery 3264×2448 (PD çelişkili); WikiArt max 1442×1005.",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Kompozisyon yalnız kaynakların betimlediği (S1/A alt metin + S3/S4/B); GZ 5/5 TASLAK; imza konumu doğrulanmadı (C045); data hotspot betimleri doğrulanmadı; hangi görselin hangi versiyonu gösterdiği incelenmeden doğrulanamaz (C042)."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 424
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1303
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2613
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem--birincil-kayıt-ve-sınırları"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-provenance-ve-edinim-zinciri",
+   "DERS_ILERI.md#3-1929-bağlamı--sürrealizm-ve-la-révolution-surréaliste"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-1929-bağlamı--sürrealizm-ve-la-révolution-surréaliste"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#4-biçimsel-analiz--kaynakların-betimlediği",
+   "DERS_ILERI.md#4-biçimsel-düzen--afiş-üslubu-ve-el-yazısı-kaynak-betimi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi--pipo-motif-ve-devamı"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-malzeme-ve-koruma--kanıtın-sınırı"
+  ],
+  "7": [
+   "DERS_ORTA.md#7-felsefi-ve-estetik-analiz-yorum",
+   "DERS_ILERI.md#7-felsefi-analiz--temsil-dil-nesne-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji--foucault-kosuth-kavramsal-sanat"
+  ],
+  "9": [
+   "DERS_ORTA.md#9-akademik-tartışmalar",
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri-de"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-ve-alımlama"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "LACMA birincil kaydıyla künyeyi (1929, Belçika, yağlıboya/tuval, ≈60.3×81.1 cm, 78.7, BCAM 3rd Floor) doğrular.",
+  "İmge-nesne-dil uzlaşmazlığını ve yazıtın paradoksunu Magritte'ın kendi açıklaması ve Foucault'nun okumasıyla açıklar.",
+  "Provenance zincirini köşeli parantezli kayıt biçimiyle ve 1978 ediniminin iki kanıtıyla aktarır.",
+  "D/E ihtilaflarını (boyut, tarih/slug, konum, lisans, Bowman yılı, versiyon) kaynak hiyerarşisiyle yönetir.",
+  "Telif/adil-kullanım çerçevesini (TR/AB 2038, ABD belirsiz) ve görsel inceleme sınırını beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Sürrealizm",
+   "tanim": "Rüya, bilinçdışı ve dil oyunlarına odaklanan 20. yüzyıl akımı; LACMA eseri \"a key Surrealist work\" sayar.",
+   "kanit": [
+    "C017",
+    "C013"
+   ]
+  },
+  {
+   "ad": "Temsil (representation)",
+   "tanim": "Bir şeyin imgesi; nesnenin kendisi değil. Magritte: \"it's just a representation\".",
+   "kanit": [
+    "C021",
+    "C014"
+   ]
+  },
+  {
+   "ad": "Meta-mesaj",
+   "tanim": "Mesajın kendi mesaj olma durumu hakkında mesaj; enwiki eseri örnek gösterir (Haiman 2004 ref zinciri).",
+   "kanit": [
+    "C028"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Sahiplik zinciri; köşeli parantezler müze kaydındaki belirsiz/ara halkaları korur.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "Adil kullanım (fair use)",
+   "tanim": "Eğitim/eleştiri amaçlı sınırlı kullanım çerçevesi; telifli eserde görsel yeniden yayımlanmaz, URL+lisans+kaynak referansı verilir.",
+   "kanit": [
+    "C018",
+    "C027"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı René Magritte (Belçika, 1898–1967).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Müze başlığı: The Treachery of Images (This is Not a Pipe) (La trahison des images [Ceci n'est pas une pipe]).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih 1929 (Date Made; WD P571 precision 9, ref LACMA).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Yapım yeri Belçika (Place Made).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Yağlıboya / tuval (Oil on canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Boyut 23 3/4 × 31 15/16 × 1 in. ≈ 60.3 × 81.1 cm (+2.5 cm derinlik; cm aritmetik dönüşüm).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Envanter no 78.7 (Accession Number; WD P217).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "LACMA edinimi 1978: Harrison Collection fonları; 17 Mayıs 1978 Sotheby's Parke-Bernet NY (Sale 4124, Lot 70). Açık edinim-tarihi alanı yok; 78. öneki + provenance.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Provenance: sanatçı (Paris/Brüksel) → [Galerie Le Centaure, Brussels] → 1932 E.L.T. Mesens (London) → 1957 William & Noma Copley → [1978 Sotheby's Parke-Bernet NY, Sale 4124, Lot 70] → LACMA. Köşeli parantezler müze kaydındaki gibi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Sınıflama Paintings; Collecting Area Modern Art.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Sergileme: On view BCAM 3rd Floor Modern Art (JSON-LD: Broad Contemporary Art Museum, floor 3).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Yazıt \"Ceci n'est pas une pipe\", pipo imgesinin altında, düzgün el yazısıyla, reklam sloganı gibi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "\"a Magritte masterpiece, a key Surrealist work, and an icon of modern art\" (Wall label, 2021).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "İmge-nesne-dil: \"A treatise on the impossibility of reconciling word, image, and object\"; nesnenin imgesini nesnenin kendisi sayma konvansiyonuna itiraz.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Reklam afişi üslubunda sunum: \"Presented in the style of an advertisement\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Metin kullanımı Baldessari, Broodthaers, Johns, Lichtenstein, Ruscha'yı etkiledi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Sürrealizm akımı (\"a key Surrealist work\"; WD P135 Q39427 refsiz yardımcı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Telif beyanı © C. Herscovici/Artists Rights Society (ARS), New York; fotoğraf © Museum Associates/LACMA.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "LACMA görsel alt metni betimi: kahverengi içim piposu, bej zemin, altta el yazısı \"Ceci n'est pas une pipe\" (müze metadata betimi; görsel incelenmedi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Foucault'nun 1973 \"Ceci n'est pas une pipe\" denemesi başlığını tablodan alır (itwiki; SE 1988 çeviri ref zinciri, metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Magritte pipo açıklaması: \"could you stuff my pipe? No, it's just a representation... if I had written 'This is a pipe', I'd have been lying!\" (Torczyner 1977 s.71; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Diğer adlar: This Is Not a Pipe; Ceci n'est pas une pipe; The Wind and the Song (Bowman; tam metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Éluard & Breton, 15 Aralık 1929, La Révolution surréaliste: \"Poetry is a pipe\" (Valéry \"Poetry is a survival\" yanıtı; Valéry metni Les Nouvelles littéraires 28 Eylül 1929).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Motif devamı: Les Mots et Les Images, La Clé des Songes, Ceci n'est pas une pipe (L'air et la chanson), The Tune and Also the Words (AIC 1964), Ceci n'est pas une pomme, Les Deux Mystères.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "ABD kamu malı statüsü, telif hukuku anlamında 1929'da \"published\" sayılmasına bağlı (Duke kuralı; \"published\" bir term of art).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Variétés dergisinde pipo yönü ters çevrilmiş AYRI versiyon; o imge 2025'te ABD kamu malı (LACMA tablosuyla karıştırılmaz).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S13"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "TR/AB koruma 2038 (Magritte ö.1967 + 70; Duke AB life+70; S7 \"Out of copyright in 2038\"; TR mevzuatı cache'de yok, görev çerçevesi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S1",
+    "S13",
+    "S7"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Meta-mesaj örneği; Korzybski \"The map is not the territory\"/\"The word is not the thing\" ve Diderot \"This Is Not a Story\" karşılaştırması (Haiman 2004 ref zinciri, metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Foucault betimi (itwiki→SE 1988): \"pipa disegnata minuziosamente\", \"calligrafia... da amanuense\" (okul defteri/kara tahta); yazıt çift paradoksal — adlandırmaya gerek olmayanı adlandırır, ad verirken reddeder (metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Magritte itwiki açıklamaları: \"Chi potrebbe fumare la pipa del mio quadro? Nessuno\" ve \"non vedo niente di paradossale... l'immagine di una pipa non è una pipa\" (Negri 1984 s.53; Scritti 2005 c.2 s.258; metne erişilmedi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Aynı sayıda (La Révolution surréaliste) Magritte \"Les mots et les images\", aşk anketi yanıtı ve \"Je ne vois pas la [femme] cachée dans la forêt\" (16 Sürrealist fotoğrafı) yayımlandı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "itwiki betimi: monokrom zemin (sfondo monocromo); yazıt \"corsivo manierato ed elegante\" (LACMA alt metni \"beige\" ile uyumlu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Belçika millî takım 2026 Dünya Kupası deplasman forması: yakada \"Ceci n'est pas un maillot\"; RBFA \"Magritte ve Belçika Sürrealizmine saygı\" (shop.rbfa.be ref'i çekilmedi; enwiki gövdesi).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C034",
+   "ifade": "Felsefi yorum: imge nesnenin kendisi değil temsilidir; Korzybski harita-bölge ve Diderot çerçeveleri karşılaştırmalı yorum analojisidir (etkilenme iddiası DEĞİL).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "Yorum: reklam afişi üslubu, \"nesne değil temsil\" mesajını ticari slogan mantığıyla sahneleyen ironi; izleyiciyi tanıma alışkanlığıyla yüzleştirir.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "Yorum: LACMA etki listesi (C016), eseri kavramsal/Pop sanatın söz-imge araştırmalarının öncüsü sayan okumayı destekler; liste olgu, öncülük yorum.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C037",
+   "ifade": "Boyut ihtilafı (D1): LACMA ≈60.3×81.1 (WD 60.3/81.12; enwiki 60.33×81.12; itwiki 60,3×81,1) ↔ WikiArt 63.5×93.98. A kazanır; WikiArt reddedilir.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "Tarih/sürüm etiketi (D2+E3): birincil 1929 ↔ WikiArt \"1928–1929\" + \"-1948\" slug + enwiki dosya \"(1928-9)\". Aralık/slug birincil/akademik destekli değil.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "Konum (D3): BCAM (A canlı) ↔ WD P276 normal-rank Ahmanson (refsiz/bayat); preferred P276=LACMA. Birincil esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "Görsel lisansı (D4): Commons \"Magritte treachery.jpg\" extmetadata PD-1923 ↔ self|cc-by-sa-4.0 + PD-old-auto-expired + 15 Mayıs 2026 silme talebi (ABD belirsiz, Fransa PD değil). PD iddiasına güvenilmez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "Bowman atıf yılı (D5): basılı 1985 (Art Journal 45(4)) ↔ çevrimiçi 2014; enwiki year=2014 yanıltıcı. DOI 302→301→403.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S9",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "Versiyon karışıklığı (D6): data görseli WikiArt \"-1948\" slug'lı; sayfa içeriği 1928–1929/LACMA. Hangi versiyon incelenmeden doğrulanamaz; ders LACMA 1929.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S8",
+    "S2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "ABD kamu malı statüsü BELİRSİZ (E1). Duke: \"we have not yet found definitive historical information\"; \"out of an abundance of caution\"; 1929 \"published\" koşulu, 1933 örneği/95 yıl, hiç yayımlanmamışsa ölüm+70. S15 (2026) Magritte'yi anmaz; \"not official legal advice\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S13",
+    "S15"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C044",
+   "ifade": "Motif kökeni (E2): Le Corbusier Vers une architecture (1923) \"likely\" ya da \"Ceci n'est pas de l'Art\" tabelası \"may also\" (Art Story; birincil doğrulama yok; ihtiyat korunur).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C045",
+   "ifade": "İmza konumu (E5): data \"sağ alt\" der; metin kaynaklarında yok, görsel incelenmedi → doğrulanamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "Kosuth One and Three Chairs (1965) karşılaştırması (üçüncül Art Story, refsiz); doğrulanmadı, karşılaştırma hipotezi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası ana oturumda); yalnız metadata+lisans+çözünürlük+müze alt metni. GZ 5/5 TASLAK; kompozisyon \"kaynakların betimlediği\".",
+   "seviye": "E",
+   "kaynak_id": [
+    "S5",
+    "S6",
+    "S7",
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "Erişilemeyen metinler: Foucault özgün 1973 + İngilizce 1983 (ISBN 0-520-04916-0) + İtalyanca 1988 SE (ISBN 88-7710-104-0); Torczyner 1977 s.71; Negri 1984 s.53; Scritti 2005 c.2 s.258; Bowman tam metni; JSTOR 776809; Sylvester & Whitfield Catalogue Raisonné 1992; LACMA ~40 künye. Kaynakçada anıldı, metne erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S10",
+    "S11",
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "1948 versiyonu (E4): tek iz WikiArt \"-1948\" slug + \"Vache Period\" etiketi; sayfa içeriği 1928–1929 ile çelişir. 1948 versiyonu belgelenmedi; Catalogue Raisonné (1992) tek yetkili araç, metne erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "enwiki ad anomalisi (E6): \"See also\"da \"Julius Benda's 1927 essay\"; doğrulayan kaynak yok. Ders içeriğine TAŞINMADI.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "kullanilmadi"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "LACMA",
+   "belge": "Birincil katalog kaydı (künye/provenance/Wall label 2021/telif/alt metin/JSON-LD)",
+   "url": "https://collections.lacma.org/object/31931",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 canlı; Denetim B recheck 2026-11-15 (200, 98.364 B); eski node/239578 → 301",
+   "tur": "birincil"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "EntityData Q1061035 (P170/P571/P186/P2048/P2049/P195/P217/P276/P18/P135)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q1061035.json",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "cache 2026-11-14 23:59 (HTTP kodu kaydedilmedi; içerik geçerli; ref LACMA)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S2b",
+   "kurum": "Wikidata",
+   "belge": "Etiketler (Q7836/Q296955/Q12321255/Q861259/Q57657304/Q1641836/Q60276691/Q39427)",
+   "url": "https://www.wikidata.org/w/api.php?action=wbgetentities",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "cache 2026-11-15 (QID önekli)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia EN",
+   "belge": "The Treachery of Images wikitext (action=parse, prop=wikitext, redirects)",
+   "url": "https://en.wikipedia.org/wiki/The_Treachery_of_Images",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "cache 2026-11-15 00:00 (wikitext; satır içi refs)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia IT",
+   "belge": "Il tradimento delle immagini wikitext",
+   "url": "https://it.wikipedia.org/wiki/Il_tradimento_delle_immagini",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "cache 2026-11-15 00:00 (wikitext; satır içi refs)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: MagrittePipe.jpg (missing), La Trahison des images.jpg, Magritte treachery.jpg",
+   "url": "https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "cache 2026-11-15 00:01 (url|size|extmetadata); İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikimedia Commons",
+   "belge": "File:Magritte treachery.jpg sayfa wikitext (Art photo + self|cc-by-sa-4.0 + delete 2026-05-15)",
+   "url": "https://commons.wikimedia.org/wiki/File:Magritte_treachery.jpg",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "cache 2026-11-15 00:01 (action=parse); İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikipedia EN (yerel)",
+   "belge": "File:MagrittePipe.jpg imageinfo (non-free Fair use Old-50; Commons'ta yok)",
+   "url": "https://en.wikipedia.org/wiki/File:MagrittePipe.jpg",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "cache 2026-11-15 00:02; 378×264; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S8",
+   "kurum": "WikiArt",
+   "belge": "Eser sayfası (slug \"-1948\"; içerik \"1928–1929\"; 63.5×93.98; Art Story metni)",
+   "url": "https://www.wikiart.org/en/rene-magritte/the-treachery-of-images-this-is-not-a-pipe-1948",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "cache 2026-11-15 00:02; tam HTML 370 KB (HTTP kodu kaydedilmedi)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S9",
+   "kurum": "DOI",
+   "belge": "10.1080/00043249.1985.10792322 çözümleme zinciri (Bowman)",
+   "url": "https://doi.org/10.1080/00043249.1985.10792322",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "302→301→403 Cloudflare; 2026-11-14 21:03:21 GMT",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S10",
+   "kurum": "Taylor & Francis (Wayback)",
+   "belge": "Bowman, Words and Images: A Persistent Paradox, Art Journal 45(4) 1985 s.335–343 (başlık/özet/metadata)",
+   "url": "http://web.archive.org/web/20230601220356/https://www.tandfonline.com/doi/abs/10.1080/00043249.1985.10792322",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "arşiv 200 (2023-06-01 22:03:56); tam metin ücret duvarı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Monoskop",
+   "belge": "Foucault, This Is Not a Pipe PDF (yalnız HEAD)",
+   "url": "https://monoskop.org/images/9/99/Foucault_Michel_This_Is_Not_a_Pipe.pdf",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "HEAD 200, application/pdf, 26.530.127 B; metne erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S12",
+   "kurum": "Duke Law CSPD (canlı)",
+   "belge": "Public Domain Day 2025 — canlı deneme",
+   "url": "https://web.law.duke.edu/cspd/publicdomainday/2025/",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "WordPress DB hata sayfası (2482 B; HTTP kodu kaydedilmedi); başarısız",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S13",
+   "kurum": "Duke Law CSPD (Wayback)",
+   "belge": "Public Domain Day 2025 (Jenkins & Boyle; CC BY 4.0; Magritte pasajı tam)",
+   "url": "http://web.archive.org/web/20260907082713/https://web.law.duke.edu/cspd/publicdomainday/2025/",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "arşiv 200 (2026-09-07 08:27:13)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S14",
+   "kurum": "Duke Law CSPD (canlı)",
+   "belge": "Public Domain Day 2026 — canlı deneme",
+   "url": "https://web.law.duke.edu/cspd/publicdomainday/2026/",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "301→500 (DB hata); başarısız",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S15",
+   "kurum": "Duke Law CSPD (Wayback)",
+   "belge": "Public Domain Day 2026 (Magritte/Treachery 0 eşleşme; negatif teyit)",
+   "url": "http://web.archive.org/web/20261111023207/https://cspd.law.duke.edu/publicdomainday/2026",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "arşiv 200, 351.440 B (2026-11-11 02:32:07)",
+   "tur": "ikincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Les Deux Mystères",
+   "sanatci": "René Magritte",
+   "gerekce": "Pipo/söz motifinin devamı; \"Bu bir pipo değildir\" formülünün genişletilmesi.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "eser": "The Tune and Also the Words (L'air et la chanson)",
+   "sanatci": "René Magritte",
+   "kurum": "Art Institute of Chicago",
+   "gerekce": "AIC 1964; motif devamı, söz-imge ilişkisinin sürdürülmesi.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "eser": "La Clé des Songes",
+   "sanatci": "René Magritte",
+   "gerekce": "Sözcük-imge eşleşmesi temasının devamı.",
+   "kanit": [
+    "C024"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "LACMA birincil (S1) 15 Kasım 2026 canlı YENİDEN çekildi (HTTP 200, 98.364 B; Q1061035-lacma-recheck.html): künye/provenance/Wall label 2021/telif/JSON-LD teyit; müze alt metni (C019) eklendi. Ham cache'ler (S2 WD, S3/S4 wikitext, S5/S6/S7 görsel metadata, S8 WikiArt, S9/S10 Bowman, S11 Monoskop HEAD, S13/S15 Duke) yeniden okunup iddialarla karşılaştırıldı. Duke 2026 (S15) Magritte 0 eşleşme (negatif teyit). Görsel İNCELENMEDİ (C047) → GZ TASLAK. Erişilemeyen metinler C048 (E).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Görsel 1 (D6, C042): data/eserler_onbellek.json (p:40) + eser_ayrintilari.json görsel URL'si WikiArt \"-1948\" slug'lı; lisans alanı boş. Sayfa içeriği 1928–1929/LACMA. Hangi versiyon incelenmeden doğrulanamaz; ders LACMA 1929 versiyonudur.",
+  "Görsel 2 (D4, C040): data/eserler_onbellek.json (p:5) Commons \"Magritte_treachery.jpg\" — PD iddiası çelişkili + 15 Mayıs 2026 silme talebi; lisans alanı boş. \"Kamu malı\" diye kullanılmamalı.",
+  "data kaynaklar [\"wikidata\",\"wikiart\"] — LACMA birincil kaydı listede yok; brief/ders ekler (S1).",
+  "data noktalar (ışık şeridi x0.1/y0.14; altın bilezik x0.55/y0.26; yazıt x0.13/y0.81; imza x0.92/y0.965) görsel betimi; görsel incelenmediğinden doğrulanmadı. Yazıt/el yazısı metinsel A (C012, C019); imza konumu E (C045).",
+  "data künye: basyapitlar.json tarih 1929 ✓, muze LACMA ✓, özet LACMA notuyla uyumlu (C012–C015); Foucault ✓ (C020); motif devamı ✓ (C024); Kosuth/Pop öncülüğü ihtiyatlı (C046, E); \"sağ alt imza\" → C045 (E). ozgun alanı TR başlık içeriyor (şema notu, olgu hatası değil).",
+  "data boyut/envanter/edinim alanı yok → D1/D3 data'yı etkilemiyor; brief değerleri (60.3×81.1 cm, 78.7, 1978) kullanıldı.",
+  "E6 (C050): enwiki \"Julius Benda\" anomalisi ders içeriğine TAŞINMADI.",
+  "1948 versiyonu (C049) doğrulanmadı; Catalogue Raisonné (Sylvester & Whitfield 1992) metne erişilmedi; Variétés ters pipolu imge AYRI versiyondur (C026).",
+  "Telif/adil-kullanım: tablo © C. Herscovici/ARS; TR/AB 2038; ABD PD belirsiz (Duke). Görsel yeniden yayımlanmaz/kopyalanmaz; URL+lisans+kaynak referansı; atıf zorunlu. Hukuki tavsiye değildir.",
+  "Hiçbir data dosyasına yazılmadı; uygulama kodu/main/pilot Q167605/öteki eserler değiştirilmedi."
+ ]
+}

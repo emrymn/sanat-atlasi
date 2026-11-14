@@ -1,6 +1,6 @@
 # DURUM — 107 Başyapıt İlerleme Takibi
 
-**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 6 üretimi — Kandinsky; üretim tamam, M13 telif-korumalı 5 eser politika kararı bekliyor) · Pilot: Q167605 (Süt Boşaltan Kadın)
+**Sürüm:** 1.0 · **Son güncelleme:** 15 Kasım 2026 (Parti 7 üretimi — M13 telif-korumalı 5 eser adil kullanım çerçevesiyle; ÜRETİM TAMAM 107/107) · Pilot: Q167605 (Süt Boşaltan Kadın)
 
 Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt envanteri hazır → Taslak hazır → Doğrulama bekliyor → İnsan incelemesi bekliyor → Yayına aday`. Hiçbir eser otomatik olarak "Yayına aday" yapılmaz; insan editoryal onayı gerekir.
 
@@ -110,18 +110,18 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 | 100 | M12 | Q471379 | Çığlık (The Scream) | edvard-munch | İnsan incelemesi bekliyor ✅ |
 | 101 | M13 | Q3476580 | Berlin Sokak Sahnesi | ernst-ludwig-kirchner | İnsan incelemesi bekliyor ✅ |
 | 102 | M13 | Q2990634 | Kompozisyon VII | wassily-kandinsky | İnsan incelemesi bekliyor ✅ |
-| 103 | M13 | Q175036 | Guernica | pablo-picasso | Araştırılmadı |
-| 104 | M13 | hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic | Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek | hannah-hoch | Araştırılmadı |
-| 105 | M13 | salvador-dali|The Persistence of Memory | Belleğin Azmi (The Persistence of Memory) | salvador-dali | Araştırılmadı |
-| 106 | M13 | Q1061035 | İmgelerin İhaneti (La trahison des images) | rene-magritte | Araştırılmadı |
-| 107 | M13 | francis-bacon|Three Studies for Figures at the Base of a Crucifixion | Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma (Three Studies for Figures at the Base of a Crucifixion) | francis-bacon | Araştırılmadı |
+| 103 | M13 | Q175036 | Guernica | pablo-picasso | İnsan incelemesi bekliyor ✅ |
+| 104 | M13 | hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic | Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek | hannah-hoch | İnsan incelemesi bekliyor ✅ |
+| 105 | M13 | salvador-dali|The Persistence of Memory | Belleğin Azmi (The Persistence of Memory) | salvador-dali | İnsan incelemesi bekliyor ✅ |
+| 106 | M13 | Q1061035 | İmgelerin İhaneti (La trahison des images) | rene-magritte | İnsan incelemesi bekliyor ✅ |
+| 107 | M13 | francis-bacon|Three Studies for Figures at the Base of a Crucifixion | Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma (Three Studies for Figures at the Base of a Crucifixion) | francis-bacon | İnsan incelemesi bekliyor ✅ |
 
 ## Özet Sayılar
 
 | Durum | Adet |
 |---|---|
-| İnsan incelemesi bekliyor | 102 (Parti 1-5: 100 + Parti 6 Kandinsky: 1 + pilot Q167605) |
-| Araştırılmadı | 5 (M13 telif-korumalı: #103 Picasso, #104 Höch, #105 Dalí, #106 Magritte, #107 Bacon — politika kararı bekliyor) |
+| İnsan incelemesi bekliyor | 107 (Parti 1-6: 101 + Parti 7 M13 telif-korumalı: 5 + pilot Q167605) |
+| Araştırılmadı | 0 |
 | Toplam | 107 |
 
 ## Parti Günlüğü
@@ -457,7 +457,30 @@ Claude bağımsız denetim raporu (P0 kritik + P1 yüksek + sistematik) **ham ka
 
 **PARTİ 6 ÖZET (1/1):** "İnsan incelemesi bekliyor"; dogrula 0 hata/0 uyarı; CJK 0 (Kiril korundu); kelime aralıkta; quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (yalnız A/B). `dogrula.py --test` 25/25. **Tüm repo dogrula 0 hata.** Birincil Tretyakov A. Kalıcı sınır: insan editör görsel + birincil teyidi ZORUNLU; "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1-5 değişmedi; yalnız `content-review` commit/push.
 
-**ÜRETİM SONU:** 107 eserin 102'si üretildi (pilot + Parti 1-6), tümü "İnsan incelemesi bekliyor". Kalan 5 (M13 #103-107: Picasso Guernica, Höch Weimar, Dalí Belleğin Azmi, Magritte İmgelerin İhaneti, Bacon Çarmıha Geriliş) TR/AB'de telif korumalı (Picasso 2044, Höch 2049, Dalí 2060, Magritte 2038, Bacon 2063); MUFREDAT gereği görsel yeniden yayımlamadan ve hak politikası kararına bağlı olarak hazırlanabilir — **kullanıcının telif politikası kararı bekleniyor.**
+### Parti 7 (5 eser) — M13 telif-korumalı (adil kullanım çerçevesi)
+
+**Kapsam:** MUFREDAT sırasında kalan 5 telif-korumalı eser (#103-107). Kullanıcının **adil kullanım** politikası kararıyla (eğitim/eleştiri; atıf + telif notu; görsel yeniden yayımlanmaz) üretildi. Ayrıntılı rapor: `PARTI_7_URETIM_RAPORU.md`. 5 araştırma brief'i `kaynak-arastirma` agent'larınca (ham cache'ten), 5 ders `ders-yazim` agent'larınca yazıldı; tümü ana oturumda bağımsız doğrulandı.
+
+| Sıra | Anahtar | Eser | Sanatçı | Durum |
+|---|---|---|---|---|
+| 1 | Q175036 | Guernica | Pablo Picasso | İnsan incelemesi bekliyor ✅ |
+| 2 | hannah-hoch\|Cut with the Kitchen Knife | Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek | Hannah Höch | İnsan incelemesi bekliyor ✅ |
+| 3 | salvador-dali\|The Persistence of Memory | Belleğin Azmi | Salvador Dalí | İnsan incelemesi bekliyor ✅ |
+| 4 | Q1061035 | İmgelerin İhaneti | René Magritte | İnsan incelemesi bekliyor ✅ |
+| 5 | francis-bacon\|Three Studies | Çarmıha Geriliş'in Dibindeki Figürler İçin Üç Çalışma | Francis Bacon | İnsan incelemesi bekliyor ✅ |
+
+**Parti 7 ilerleme:** 5/5 tamamlandı — **PARTİ 7 BİTTİ. ÜRETİM TAMAM (107/107).**
+
+**Üretim günlüğü (iddia A/B/C/D/E · kelime B/O/İ · dogrula hata/uyarı):**
+- 15 Kasım 2026 — #1 Q175036 (Picasso, Guernica, Reina Sofía): 66 (A20/B24/C2/D8/E12) · 443/1351/2714 · 0/0. Reina Sofía canlı 200 + Rethinking Guernica 200 A (DE00050, 349,3×776,6, Sala 205.10, 1937). KRİTİK: WD P18/Commons görseli Gernika seramik REPRODÜKSİYONU (orijinal değil); orijinal enwiki non-free fair use. D4 ödeme 150.000 frank↔300.000 peseta; D6 bombardıman süresi 3s15dk↔~2s. E1 sembolizm (Picasso sabit anlamı reddetti). Telif © Sucesión Picasso/VEGAP (TR/AB 2044, İspanya 2054). GZ TASLAK.
+- #2 hoch (Höch, Mutfak Bıçağı, Neue Nationalgalerie/SMB): 55 (A15/B24/C2/D5/E9) · 448/1304/2757 · 0/0. SMB canlı 200 A (obj 961048, NG 57/61, 114×90, 1919, 1961 Nierendorf/BASF). İki WD item: Q107450751 (esas) / Q126126939 (plwiki ikiz). D001 1919↔1919–1920; D002 akwarel birincilde yok; D004 enwiki "90×144" hatalı; D005 oy hakkı haritası yönü. PD-US yalnız ABD (TR/AB 2049, © VG Bild-Kunst). GZ TASLAK.
+- #3 dali (Dalí, Belleğin Azmi, MoMA): 69 (A19/B13/C16/D5/E16) · 486/1427/2714 · 0/0. MoMA canlı 403→Wayback 2026-11-02 TAM A (162.1934, 24.1×33, 1931, Given anonymously 1934). D1 fiyat $250↔$350 (birincilde yok, kırık atıf zinciri); Disintegration (1952–54) + Wrocław "Profile of Time" AYRI eser. E2 görelilik spekülasyon + Dalí reddi. Telif © Dalí Foundation/ARS (2060). GZ TASLAK.
+- #4 Q1061035 (Magritte, İmgelerin İhaneti, LACMA): 50 (A19/B14/C3/D6/E8) · 424/1303/2613 · 0/0. LACMA canlı 200 A (78.7, ≈60.3×81.1, 1929, 1978 Harrison). "1948" yalnız WikiArt slug (doğrulanmadı); ABD PD belirsiz (Duke CSPD); Commons "Magritte treachery.jpg" PD çelişkili + silme talebi. Telif © C. Herscovici/ARS (TR/AB 2038). GZ TASLAK.
+- #5 bacon (Bacon, Üç Çalışma, Tate Britain): 58 (A28/B5/C1/D9/E15) · 423/1422/3126 · 0/0. Tate API v2 + canlı 200 A (Gale Nov 1998 katalog + Eylül 2023 etiket). KRİTİK: envanter **N06171** (görevdeki T05858 = 1988 "Second Version", AYRI eser; Gale'de T03073 → Tate içi tutarsızlık). Katalog "c.1943-4" AYNEN korundu (Petersfield yazıtı 1942-4). Eumenides/Oresteia; çarmıh sahnesi yok (Bacon ateist). Telif © Estate of Francis Bacon/DACS 2026 (2063). GZ TASLAK.
+
+**PARTİ 7 ÖZET (5/5):** Tümü "İnsan incelemesi bekliyor"; **dogrula 0 hata/0 uyarı** (5 eser), CJK 0, kelime TAMAMI aralıkta (dolgu yok). Toplam iddia **298 (A101/B80/C24/D33/E60)**; her eserde quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (CS/DY/GZ/TK yalnız A/B); `dogrula.py --test` 25/25. Birincil katalogların 5'i de AÇILDI (Reina Sofía, SMB, MoMA Wayback, LACMA, Tate) → güçlü A. **Vision bütçesi tükendiğinden 5 eserde görsel İNCELENEMEDİ (E)**; GZ 5/5 TASLAK. Şiddet/hassas konular (Guernica, Bacon) akademik ve açık ayrıntısız. Telif/adil-kullanım notu derslerde + `kunye.telif_durumu`'nda; görsel yeniden yayımlanmadı. Kalıcı sınır: insan editör görsel + birincil teyidi + telif/hak politikası onayı ZORUNLU; hiçbir eser "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1-6 değişmedi; yalnız `content-review` commit/push.
+
+**ÜRETİM SONU:** **107 eserin 107'si üretildi** (pilot Q167605 + Parti 1-7), tümü "İnsan incelemesi bekliyor", tüm repo dogrula **0 hata**, `--test` 25/25. Ders/JSON CJK 0 (3 KALITE notu kalıntısı kapanış denetiminde ele alınacak). M13 #103-107 telif-korumalı eserler kullanıcının adil-kullanım kararıyla üretildi (görsel yeniden yayımlanmadan; telif notu + atıf). **Hiçbir eser otomatik "Yayına aday" yapılmadı; insan editoryal onayı (görsel teyidi + birincil kaynak + telif/hak politikası) bekleniyor.** Ayrıntılı kapanış denetimi: `GENEL_KALITE_RAPORU.md` (hazırlanacak).
 
 ### Veri Notları (mevcut veri DEĞİŞTİRİLMEDİ — onaya sunulur)
 

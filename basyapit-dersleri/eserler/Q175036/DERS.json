@@ -1,0 +1,937 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q175036",
+ "sanatci_id": "pablo-picasso",
+ "baslik": "Guernica",
+ "ozgun_baslik": "Guernica",
+ "kunye": {
+  "sanatci": "Pablo Picasso (Pablo Ruiz Picasso)",
+  "sanatci_yasam": "1881–1973",
+  "tarih": "1937 (1 Mayıs–4 Haziran, Paris)",
+  "tarih_belirsizlik": "S1 gün aralığı verir (A); S5 P571 precision=9 (yalnız yıl); itwiki '1 maggio - 4 giugno 1937' uyumlu",
+  "teknik": "Yağlıboya / tuval (Óleo sobre lienzo)",
+  "boyut_cm": {
+   "yukseklik": 349.3,
+   "genislik": 776.6
+  },
+  "muze": "Museo Nacional Centro de Arte Reina Sofía, Madrid",
+  "envanter": "DE00050",
+  "edinim": "1937 İspanyol devletince satın alma; II. Dünya Savaşı boyunca MoMA emaneti; 1958 süresiz ödünç; 1981 İspanya (Casón del Buen Retiro); 1992 Reina Sofía",
+  "konum": "Sala 205.10",
+  "telif_durumu": "© Sucesión Pablo Picasso, VEGAP, Madrid, 2026. TR/AB (70 yıl pma) 2044-01-01'e dek; İspanya (80 yıl pma) 2053-12-31'e dek korumalı. Dersler adil kullanım (eğitim/eleştiri) çerçevesinde: görsel yeniden yayımlanmaz/kopyalanmaz, URL+lisans+kaynak referansı ve atıf verilir; bu hukuki tavsiye değildir."
+ },
+ "gorsel": {
+  "url": "https://en.wikipedia.org/wiki/File:PicassoGuernica.jpg",
+  "kaynak": "en.wikipedia non-free dosya (orijinal tablonun düşük çözünürlüklü reprodüksiyonu); alternatif: Reina Sofía 'Rethinking Guernica' gigapixel — https://guernica.museoreinasofia.es/en",
+  "lisans": "Fair use (enwiki NFUR); © Sucesión Pablo Picasso, VEGAP, Madrid. Görsel yeniden yayımlanmaz/kopyalanmaz; yalnız URL+lisans+kaynak referansı (adil kullanım: eğitim/eleştiri). Bu not hukuki tavsiye değildir.",
+  "dogrulama": {
+   "yontem": "metadata + lisans + çözünürlük (S6/S7/S8); görsel bu oturumda İNCELENMEDİ (vision kotası); kompozisyon S1 (A) + S3 (B) metninden",
+   "cozunurluk": "enwiki PicassoGuernica.jpg 464×211 px (40.651 bayt); Commons Mural 4520×2060 px (reprodüksiyon fotoğrafı)",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Orijinalin Commons'ta serbest dosyası YOK (S8 missing:true); Commons/P18 dosyası Gernika seramik karo REPRODÜKSİYONUNUN fotoğrafı (CC BY-SA 4.0 yalnız fotoğrafı kapsar; alttaki Picasso eseri telifli). GZ 5/5 TASLAK; insan editör görsel teyidi zorunlu."
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 443
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1351
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2714
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kayıt-ve-kaynak-hiyerarşisi"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-sipariş-bombardıman-ve-oluşum-tartışması"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#2-sipariş-bombardıman-ve-oluşum-tartışması",
+   "DERS_ILERI.md#5-ikonografi-sabit-sembolün-reddi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynakların-betimlediği",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#4-biçim-piramit-grisaille-ve-basin-imgesi"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-sabit-sembolün-reddi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-boyadan-desteğe"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-analiz"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı",
+   "DERS_ILERI.md#10-küratöryel-anlatı-ve-alımlama"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Reina Sofía birincil kaydıyla künyeyi doğrular (1937, 1 Mayıs–4 Haziran; yağlıboya/tuval; 349,3 × 776,6 cm; DE00050; Sala 205.10; giriş 1992).",
+  "Sipariş–bombardıman–yapım zincirini açıklar (Cumhuriyet siparişi; 26 Nisan 1937 Gernika; basın fotoğrafları; 1 Mayıs–4 Haziran).",
+  "İkonografik okumaları yorum olarak ayırır; Picasso'nun sabit sembol reddini değerlendirir; tek anlam dayatmaz.",
+  "Provenans zincirini ve dönüşün siyasal koşulunu izler (1937 satın alma → MoMA emaneti → 1958 süresiz ödünç → 1981 → 1992).",
+  "Kaynak ihtilaflarını (teknik, boyut, ödeme, süre) ve görsel/telif sınırını (P18 reproduksiyon; adil kullanım) yönetir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Grisaille",
+   "tanim": "Siyah-beyaz-gri tonlarla boyama; Guernica'da sinema ve basın fotoğrafı çağrışımı (S1).",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "Tarih resmi",
+   "tanim": "Büyük ölçekli, tarihsel/siyasal olayları anlatan resim türü; piramidal kurgu; Rubens/Delacroix/David/Goya geleneği.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "Minotauromaquia",
+   "tanim": "1935 tarihli aguafuerte; Minotaur döngüsünün sentezi; Guernica'nın en doğrudan öncülü (S1).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "Provenans",
+   "tanim": "Eserin sahiplik/emanet zinciri: 1937 devlet satın alma → MoMA emaneti → 1958 süresiz ödünç → 1981 İspanya → 1992 Reina Sofía.",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "ad": "Adil kullanım",
+   "tanim": "Telifli eserin eğitim/eleştiri amaçlı kullanım çerçevesi; görsel yeniden yayımlanmaz, URL+lisans+atıf verilir; hukuki tavsiye değildir.",
+   "kanit": [
+    "C019"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı Pablo Picasso'dur (Pablo Ruiz Picasso).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Eser 1937'de, 1 Mayıs–4 Haziran arasında Paris'te yapıldı; S2'ye göre Picasso yaklaşık bir buçuk ayda elli kadar çizim/eskiz üretti ve dev tuvalde çeşitli değişiklikler yaptı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik yağlıboya/tuvaldir (Óleo sobre lienzo).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut 349,3 × 776,6 cm'dir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Kayıt numarası DE00050'dir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Eser Reina Sofía'da, Sala 205.10'da sergilenir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Müzeye giriş yılı 1992'dir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Eser, İspanya Cumhuriyeti hükümetinin 1937 Paris Uluslararası Sergisi İspanyol Pavyonu siparişi olarak doğdu (sipariş 1937 başında/Ocak).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Gernika 26 Nisan 1937'de Alman (Legion Condor) ve İtalyan kuvvetlerince bombalandı; olay esere ilham verdi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S1",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Picasso haberi basın fotoğraflarından, aralarında L'Humanité'nin de olduğu gazetelerden öğrendi; Steer'in tanıklık raporu 28 Nisan'da The Times/NYT'de, 29 Nisan'da L'Humanité'de yayımlandı; Picasso 1 Mayıs'ta okuyup eskizlere başladı (S3).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Eskizler ve tablo belirli olaylara gönderme içermez; savaş barbarlığına karşı genel/universal bir bildiridir; S1 eseri 'dev bir afiş' (gigantesco cartel) olarak tasarlanmış sayar; S2 'zamansız, evrensel simge' der.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Grisaille (siyah-beyaz-gri) ve yatay format sinema ve basın fotoğrafını çağrıştırır; dramatik karakteri güçlendirir.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Piramidal yapı tarih resmi geleneğindendir; Rubens, Delacroix, David, Goya etkileri taşır; müze denemesi eseri 'geç Kübist ve sürrealist' olarak niteler; S5 P136=history painting.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "İkonografi envanteri (Anthony Blunt, S1'de aktarılan): üç hayvan (boğa, yaralı at, solda belirsiz kanatlı kuş) + insanlar (ölü asker; pencereden lamba uzatan kadın; ölü çocuğunu tutup haykıran anne; sağdan giren kadın; yanan ev önünde kollarını kaldıran kadın).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "1935 tarihli aguafuerte Minotauromaquia, Guernica'nın en doğrudan öncülüdür; tablonun çeşitli öğeleri Picasso'nun önceki eserlerinde de görünür.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "1937'de İspanyol devletince satın alındı; II. Dünya Savaşı nedeniyle MoMA emanetinde kaldı; 1958'de ödünç süresiz yenilendi (İspanya'da demokratik özgürlükler yeniden tesis edilene dek); 1981'de İspanya'ya döndü.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "1981'de Casón del Buen Retiro'ya, 1992'den itibaren Reina Sofía'ya yerleştirildi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Bugünkü salon (205.10), İç Savaş sırasında Legión Cóndor bombardımanından sağ kurtulanların tedavi/bakım gördüğü bir mekândı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Eser telif altındadır: © Sucesión Pablo Picasso, VEGAP, Madrid, 2026 (S2 footer). TR/AB (70 yıl pma) 2044-01-01'e dek; İspanya (80 yıl pma) 2053-12-31'e dek korumalı (S5 P6216/P3893, yardımcı).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2",
+    "S5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Picasso 35 gün çalıştı, 4 Haziran 1937'de bitirdi (Richardson 2016 ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Mat, mümkün olan en az parlaklıkta özel formüle edilmiş ev boyası kullanıldı (Richardson 2016 ref); John Ferren dev tuvalin hazırlanmasına yardım etti (Guggenheim ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Dora Maar atölyeyi buldu (Rue des Grands-Augustins) ve süreci fotoğrafladı (11 Mayıs–4 Haziran 1937); kareler Cahiers d'art 1937/4-5'te yayımlandı; Picasso'nun isteğiyle ölmekte olan atın bir bölümünü Maar boyadı; Richardson'a göre fotoğraflar renkten vazgeçişte ve siyah-beyazın fotoğrafik dolaysızlığında etkili oldu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Cumhuriyet hükümeti masraflar için 150.000 frank ödedi (Max Aub'un 28 Mayıs 1937 tarihli notu; Van Hensbergen 2005 s.83; Malgat 2007 s.61); Aub notuna göre Picasso önce ödemeyi reddetti, tabloyu bağışladı, ısrar üzerine sembolik masraf çeki kabul etti (→ C035 D).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "İlk kez Temmuz 1937'de İspanyol Pavyonu'nda halka gösterildi (itwiki: 12 Temmuz 1937) (→ C036 D).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Pavyondaki ilk gösterim sınırlı ilgi gördü; eleştiriler karışıktı (kalabalık pavyon, kötü konum, Calder çeşmesi; Greenberg 'jerky', 'too compressed for its size'; Charnel House 1944–48 karşılaştırması); bazı Marksist gruplar eseri siyasal bağlılık eksikliği ve daha iyi bir gelecek vizyonu sunmaması nedeniyle eleştirdi; Max Aub eseri, geleneksel bir tabloyla (Ferrer de Morgado, 'Madrid 1937') değiştirmek isteyen yetkililere karşı savundu (Greeley 2006; Richardson 2016).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4",
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Sergiden sonra Avrupa/ABD turnesi (1938 İskandinavya; 30 Eylül 1938 Londra Whitechapel — Münih Antlaşması günü; 1939 ABD); MoMA 'Picasso: 40 Years of His Art' 15 Kasım 1939–7 Ocak 1940; turne İspanyol mülteci yardımı için fon topladı; 1939–1952 arasında ABD'de geniş turne; 1953–56 Brezilya/Milano ve Avrupa; MoMA 75. yaş retrospektifi; koruma kaygısıyla MoMA'da tek odada sabitlendi (eskizler + Maar fotoğrafları eşliğinde).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Eylül 1981'de İspanya'ya vardı (itwiki: 10 Eylül 1981); Casón'da kurşun/cam koruma arkasında, Picasso'nun doğumunun 100. yılı (25 Ekim) için sergilendi; ilk yıl ~1 milyon ziyaretçi (El País ref); MoMA monarşi/cumhuriyet koşulu gerekçesiyle direnmişti; 1968'de Franco ilgi gösterdi, Picasso cumhuriyet koşuluyla reddetti, sonra 'kamu özgürlükleri ve demokratik kurumlar' koşulunu ekledi; Picasso ö. 1973, Franco ö. 1975, 1978 anayasası (S3).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Picasso sabit sembol okumalarını reddetti: 'bu bir boğadır, bu bir attır... nesneleri oldukları şeyler olarak boyarım' (PBS Treasures of the World, arşiv ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Vietnam Savaşı sırasında MoMA'daki oda ara sıra savaş karşıtı nöbetlere sahne oldu; 28 Şubat 1974'te Tony Shafrazi kırmızı sprey boyayla 'KILL LIES ALL' yazdı; boya vernikli yüzeyden görece kolay çıkarıldı (Hoberman 2004 ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "UN'deki tam boy halı kopya (Jacqueline de la Baume Dürrbach): 1955 Rockefeller siparişi (Picasso orijinali satmayı reddetti), 1985 UN ödünç, 5 Şubat 2003 mavi perdeyle örtme (Powell/Negroponte Irak basın toplantıları), Şubat 2021 Rockefeller Jr. geri alma, Şubat 2022 yeniden UN.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Bask talebi sürüyor ('Guernica Gernikara'); Reina Sofía tuvalin taşınmak için fazla kırılgan olduğunu belirtiyor; Gernika'daki seramik karo reproduksiyon bu talebin simgesidir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "D1 teknik ihtilafı: itwiki infobox 'Tempera su tela' ↔ S1 'Óleo sobre lienzo' (A) + S3 'Oil on canvas' + S5 oil paint. Birincil kazanır; itwiki atıfsız/hatalı. Mat ev boyası (C021) ayrı teknik ayrıntı, çelişki değil.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S1",
+    "S3",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C033",
+   "ifade": "D2 genişlik: S3 infobox 776,5 cm ↔ S1 776,6 cm; yükseklik 349,3 her ikisinde aynı; 0,1 cm fark; müze değeri esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C034",
+   "ifade": "D3 yuvarlama: S5 P2048=349 / P2049=776; S7 dosya açıklaması '349 cm × 776 cm' ↔ S1 ondalıklı değerler; yuvarlama; S1 esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S5",
+    "S7",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C035",
+   "ifade": "D4 ödeme: 150.000 frank (S3 Van Hensbergen 2005; S4 Max Aub notu/Malgat 2007) ↔ 300.000 peseta (S4 Focus.it); ayrıca 50.000 frank ön ödeme ve De la Puente 'pavyon maliyetinin %15'i'; cache'lerde çözülmemiş; tek rakam kesinleştirilmez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S4",
+    "S1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C036",
+   "ifade": "D5 ilk gösterim: S4 '12 luglio 1937' ↔ S3 'July 1937'; hassasiyet farkı, uyumlu; gün düzeyi B.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S4",
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C037",
+   "ifade": "D6 bombardıman süresi: Steer çağdaş raporu (28 Nisan 1937) 'precisely three hours and a quarter' ↔ S3 'about two hours' (Ray 2006); çağdaş tanıklık ↔ sonraki historiografi; ikisi de kaynaklı verilir, kesinleştirilmez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C038",
+   "ifade": "D7 fail kapsamı: S1 denemesi yalnız 'aviación alemana'/Legión Cóndor ↔ S2 'German and Italian armies' + S4 Aviazione Legionaria; aynı kurumun araştırma sitesi daha kapsamlı; ayrıntı farkı, çelişki değil; Alman+İtalyan kullanılır.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C039",
+   "ifade": "D8 dönüş tarihi: S1 '1981' ↔ S3 'September 1981' (UNED) ↔ S4 '10 settembre 1981' (history.com); uyumlu; tam gün B.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C040",
+   "ifade": "E1 sembolizm: boğa/at/lamba/ampul anlamları tartışmalı; sabit okuma yok. itwiki 'boğa=savaşın çılgınlığı, at=İspanya, ampul=umut' ↔ Ray 2006 'ampul=güneş' ↔ data 'boğa vahşet ya da İspanya, at acı çeken halk'; S3 Failing alıntısı atıfsız. Yalnız yorum olarak sunulur, tek anlam dayatılmaz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S4",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C041",
+   "ifade": "E2 Joselito tezi: S4 'Secondo una tesi minoritaria' — eserin 1935 Málaga siparişi 'Lamento en muerte del torero Joselito' olduğu tezi; S4 aynı maddede Dora Maar fotoğraflarıyla çürütüldüğünü belirtir. Marjinal tez; olgu gibi sunulmaz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C042",
+   "ifade": "E3 Palermo Trionfo della Morte esini: S4 'Si pensa che l'affresco Trionfo della Morte sia valso da ispirazione' — hedge aynen korunur.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C043",
+   "ifade": "E4 Arnheim alıntı zinciri bozuk: S3 ref 'Arhheim, (1973) p. ???' (sayfa yer tutucu); kitap kaynakçada anıldı, metne erişilmedi; alıntı/sayfa KULLANILMADI.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "kullanilmadi"
+  },
+  {
+   "id": "C044",
+   "ifade": "E5 'gizli imgeler' (atın burun/dişlerinde kafatası; alttan boğan): S3 spokenvision.com ref (zayıf web); müze kaydında yok; ders çekirdeğine ALINMADI.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "kullanilmadi"
+  },
+  {
+   "id": "C045",
+   "ifade": "E6 'bombilla/bomba' söz oyunu: data/basyapitlar.json'da var; hiçbir cache kaynağında geçmiyor; kaynaksız → KULLANILMADI.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "kullanilmadi"
+  },
+  {
+   "id": "C046",
+   "ifade": "E7 genez tartışması: S2 Nisan'da kişisel/yaratıcı kriz + Gernika katalizörü anlatır; S4 'La genesi, l'evoluzione e l'ispirazione ... ancora oggi oggetto di dibattiti' + Renau'nun 19 Nisan ziyareti ↔ S3 Ocak'tan beri atölye temalı eskizler + Larrea'nın ısrarı; süreç anlatıları ayrıntıda farklı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S3",
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "E8 Tusell müzakereci: S3 'Javier Tusell was one of the negotiators.{{citation needed}}' → atıfsız; KULLANILMADI.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "kullanilmadi"
+  },
+  {
+   "id": "C048",
+   "ifade": "E9 Alman subay anekdotu: S3 'A widely repeated story' — 'Did you do that? / No, you did.' (Guardian kitap incelemesi ref); anekdot, hedge korunur.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "E10 destek 'iuta grezza' (ham jüt): S4 Cabrera–Garrido mikroskop incelemesi anlatısı, satır içi atıf yok; S1 'lienzo' der; teknik literatüre erişilmedi.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4",
+    "S1"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "İkonografik okuma önerileri (boğa/at/lamba/ampul; anne-çocuk/Pietà çağrışımı; çiçek=umut) yorumdur; tek anlam dayatılmaz.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S4",
+    "S10"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C051",
+   "ifade": "Estetik/felsefi okuma (acı temsili etiği; tanıklık ↔ propaganda gerilimi; grisaille'in belgesel/zamansız etkisi; aura ↔ reproduksiyon; Kant/Benjamin çerçeveleri ödünç) yorumdur; etki iddiası yoktur.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C052",
+   "ifade": "Görsel bu oturumda İNCELENMEDİ (vision kotası); yalnız metadata+lisans+çözünürlük; orijinalin Commons'ta serbest dosyası yok (S8 missing:true); P18 reproduksiyon; GZ 5/5 TASLAK.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S6",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "S3/S4 kaynakçalarındaki kitap/dergiler (Arnheim, Richardson, Van Hensbergen, Preston, Ray, Greenberg, Sandberg, Becht-Jördens vb.) kaynakçada anıldı; metinlerine erişilmedi; B düzeyi atıf zinciri notu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "S3 kompozisyon betimi: ölü askerin kopuk sağ elinde kırık kılıç ve kılıçtan çıkan çiçek; sol avucunda stigma (şehitlik simgesi); at, boğa ve yaslı kadının dilleri hançer biçiminde.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C055",
+   "ifade": "S3 kompozisyon betimi: atın başının üstünde 'her şeyi gören göz' biçiminde çıplak ampul; sağ üstte pencereden lamba uzatan kadın; atın gövdesinde gazete baskısını andıran işaretler (Ray 2006).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C056",
+   "ifade": "Sandberg (Daedalus 1960, S3'te alıntılanan): Kübist dil (diyagonaller; 'hem iç hem dış' belirsiz mekân) + ekspresyonist mesaj; 11 Mayıs hazır tuval, boğa gövdesi sola çevrildi, 20 Mayıs at başını kaldırdı, 4 Haziran asker gövdesi yer değiştirdi; son anda diyagonaller güçlendirildi, lamba 'açık göz' gibi asıldı, askerin eline umut çiçeği kondu; izleyici eseri 'duvar süsü' gibi gördü.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Becht-Jördens ve Wehmeier (2003, S3'te aktarılan): öncül atölye eskizlerindeki merkezi üçgen üzerinden Guernica'yı Las Meninas geleneğinde öz-göndermeli bir kompozisyon olarak okur; sanatçının siyasal güç/şiddet karşısındaki rolü ve sanatın özgürleştirici katkısı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "S3 (Preston 2007 ref): bombardıman pazartesi pazar gününe denk geldi; erkeklerin çoğu cephede olduğundan kasabada ağırlıkla kadın ve çocuklar vardı; yollar enkazla kapalı, köprüler yıkıktı; kaçış engellendi; en yakın askerî hedef (kasaba dışındaki silah fabrikası) saldırıdan yara almadan çıktı; saldırı geniş biçimde 'terör bombardımanı' olarak kınandı (Saul 2018; Overy 2013 ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C059",
+   "ifade": "Reina Sofía'nın 'Rethinking Guernica / Repensar Guernica' araştırma sitesi yaklaşık 2.000 belge ve çoklu dalga boyu gigapixel görüntüleme sunar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C060",
+   "ifade": "itwiki (Preston 1999; Southworth 1977 ref): yıkımın İtalyan-Alman bombardımanıyla gerçekleştiği tarihsel olarak kesinleşmiştir; Francoistlerin 'çekilen anarchist milisler yaktı' tezi çürütülmüştür.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C061",
+   "ifade": "1992 taşıması tartışmalıydı: Picasso'nun vasiyeti Prado'yu işaret ediyordu; taşıma, Prado'nun 19. yy sonrası koleksiyonlarının yer nedeniyle aktarılmasının parçasıydı; Reina Sofía 20. yy ulusal koleksiyonunun doğal yeriydi; ~iki düzine hazırlık eseri de taşındı (Prado sitesi ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "Franco'nun Düşü ve Yalanı (1937) gravür dizisinde Franco önce kendi atını yiyen, sonra öfkeli bir boğayla dövüşen bir canavar olarak çizilir; sonradan eklenen dört panelden üçü Guernica ile doğrudan ilişkilidir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C063",
+   "ifade": "Olumlu ilk okumalar: Cassou ve Bergamín eseri 'özünde İspanyol' buldu; Leiris siyah-beyaz tuvalde 'kader mektubu' öngörüsü gördü; Cocteau eseri Franco'nun omzunda taşıyacağı bir haç olarak niteledi (Martin 2003; Arnaud 2016 ref).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C064",
+   "ifade": "Picasso'nun 1937'deki açıklaması (Tóibín 2006 ref, S3; çeviri): 'İspanya mücadelesi gericiliğin halka, özgürlüğe karşı mücadelesidir... Üzerinde çalıştığım ve Guernica diyeceğim panoda ve tüm son eserlerimde, İspanya'yı bir acı ve ölüm okyanusuna batıran askerî kasttan nefretimi açıkça ifade ediyorum.'",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C065",
+   "ifade": "Richthofen'in günlükleri (Beevor 2006; Oppler 1988 ref, S3): 26 Nisan hedefi 'Kızıl geri çekilmeyi durdurmak ve bozmak'; 27 Nisan 'Guernica yanıyor'; 30 Nisan 'her yerde duman... yollar/köprüler görünmediğinden her şeyi merkeze bıraktılar'; bombalar evleri yıktı, su şebekesini bozdu; yangın bombaları ahşap/kiremit yapıların yayılmasına yol açtı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C066",
+   "ifade": "1970'lerde Guernica, İspanyollar için hem Franco rejiminin sonunun hem Bask milliyetçiliğinin simgesiydi; Bask solu eserin imgelerini tekrar tekrar kullandı; eser savaşın acı ve yıkımına karşı evrensel bir uyarı simgesi oldu (S3).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "Museo Reina Sofía",
+   "belge": "Koleksiyon kaydı (ES) + küratoryal deneme (Paloma Esteban Leal)",
+   "url": "https://www.museoreinasofia.es/colecciones/obra/guernica/",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "canlı 200 (301→200; 2026-11-15 yoklama + bu oturumda yeniden); cache tam metin",
+   "tur": "birincil"
+  },
+  {
+   "id": "S2",
+   "kurum": "Museo Reina Sofía",
+   "belge": "Rethinking Guernica / Repensar Guernica araştırma sitesi (EN giriş; ~2.000 belge, gigapixel)",
+   "url": "https://guernica.museoreinasofia.es/en",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "canlı 200 (2026-11-15; bu oturumda yeniden)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (en)",
+   "belge": "Guernica (Picasso) wikitext (action=parse)",
+   "url": "https://en.wikipedia.org/wiki/Guernica_(Picasso)",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "wikitext cache (2026-11-15); HTTP kodu indirilme anında kaydedilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia (it)",
+   "belge": "Guernica (Picasso) wikitext",
+   "url": "https://it.wikipedia.org/wiki/Guernica_(Picasso)",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "wikitext cache (2026-11-15); HTTP kodu indirilme anında kaydedilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Wikidata",
+   "belge": "Q175036 EntityData (modified 2026-11-11T14:32:55Z)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q175036.json",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "EntityData cache (2026-11-15 okundu)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S6",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo: File:Mural del \"Guernica\" de Picasso.jpg (Gernika seramik reproduksiyon fotoğrafı)",
+   "url": "https://commons.wikimedia.org/wiki/File:Mural_del_%22Guernica%22_de_Picasso.jpg",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "imageinfo metadata (2026-11-15); İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikipedia (en)",
+   "belge": "imageinfo: File:PicassoGuernica.jpg (non-free; orijinalin düşük çözünürlüklü reprodüksiyonu)",
+   "url": "https://en.wikipedia.org/wiki/File:PicassoGuernica.jpg",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "imageinfo metadata (2026-11-15); non-free fair use; İNCELENMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "imageinfo yoklaması: File:PicassoGuernica.jpg → missing:true (Commons'ta YOK)",
+   "url": "https://commons.wikimedia.org/w/api.php",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "API yanıtı cache (2026-11-15); missing:true",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikidata",
+   "belge": "QID etiket çözümü (Q5593, Q460889, Q296955, Q12321255, Q50423863 vb.)",
+   "url": "https://www.wikidata.org/w/api.php",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "API yanıtı cache (2026-11-15)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S10",
+   "kurum": "Sanat Atlası (iç)",
+   "belge": "data/basyapitlar.json Q175036 kaydı (satır ~3270)",
+   "url": "data/basyapitlar.json (yerel, salt-okunur)",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "2026-11-15 okundu (salt-okunur; data değiştirilmedi)",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "3 Mayıs 1808 (El tres de mayo de 1808)",
+   "sanatci": "Francisco de Goya",
+   "kurum": "Museo del Prado",
+   "mufredat_ici": true,
+   "gerekce": "S1 denemesi Goya'yı Guernica'nın tarih resmi geleneğindeki kaynakları arasında sayar; her iki eser de savaşın sivil kurbanlarını merkeze alır (karşılaştırma yorumu).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "eser": "Halka Yol Gösteren Özgürlük",
+   "sanatci": "Eugène Delacroix",
+   "kurum": "Louvre, Paris",
+   "mufredat_ici": true,
+   "gerekce": "S1 Delacroix'yı etkiler arasında sayar; güncel siyasal olayı büyük ölçekli tarih resmine taşıma ortaklığı; alegori ↔ tanıklık farkı.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "eser": "The Charnel House",
+   "sanatci": "Pablo Picasso",
+   "mufredat_ici": false,
+   "gerekce": "Greenberg, Guernica'yı bu sonraki savaş karşıtı tabloyla karşılaştırıp 'jerky' ve 'boyutuna göre fazla sıkışık' bulmuştu; alımlama tartışması için.",
+   "kanit": [
+    "C025"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "S1/S2 birincil URL'ler bu oturumda yeniden yoklandı (200; 2026-11-15) ve ham cache'ler (S1 ES kayıt+deneme, S2 EN giriş, S3/S4 wikitext, S5 EntityData, S6/S7/S8 imageinfo) ders metninden bağımsız yeniden okunup iddialarla karşılaştırıldı: künye/provenans/ikonografi/telif doğrulandı; itwiki tempera hatası (C032), boyut yuvarlamaları (C033/C034), ödeme (C035) ve süre (C037) ihtilafları D olarak açık. Görsel metadata only; vision kotası tükendi → İNCELENMEDİ (C052); GZ TASLAK. S3/S4 refs metinlerine erişilmedi (C053).",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data tarih '20. yüzyıl' belirsiz → birincil '1937 (1 Mayıs–4 Haziran, Paris)' (A, S1); netleştirme önerilir; data değiştirilmedi.",
+  "data boyut 'yaklaşık 3,5 × 7,8 m' ≈ 349,3 × 776,6 cm ✓ (A, S1).",
+  "data 'boğa vahşet ya da İspanya, at acı çeken halk' → yorum eşlemeleri kaynaklar arasında farklı (E1/C040); Picasso sabit anlam vermedi (C028); derste yorum olarak korundu.",
+  "data 'bombilla/bomba söz oyunu' → hiçbir cache kaynağında yok (E6/C045); KULLANILMADI; kaynak bulunmadan kullanılmamalı.",
+  "data 'tapınak alınlıkları' benzetmesi → S1 yalnız 'estructura piramidal' (A); alınlık benzetmesi yorum (C); derste kullanılmadı.",
+  "Görsel riski: S5 P18 = Gernika seramik reproduksiyonu (S6); orijinalin Commons'ta serbest dosyası yok (S8 missing:true); uygulama P18'den beslenirse reproduksiyon gösterilir (Q227494 Red Fuji örüntüsü); künye/görsel eşleşmesi kontrol edilmeli.",
+  "itwiki infobox 'Tempera su tela' (D1/C032) hatalı; data 'tuval/yağlıboya' doğru tarafta (A, S1).",
+  "itwiki UN halı 'Eylül 2013 reinstall' ↔ S3 'Mart 2015 return' uyuşmazlığı: ders yalnız uzlaşımlı zinciri kullandı (1955/1985/2003/2021/2022); 2013/2015 ayrıntısı kullanılmadı.",
+  "Görsel İNCELENMEDİ (C052); GZ 5/5 TASLAK; telif/adil kullanım çerçevesi (C019); insan editör görsel teyidi zorunlu."
+ ]
+}

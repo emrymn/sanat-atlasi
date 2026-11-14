@@ -1,0 +1,562 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1061035",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "LACMA envanter numarası nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "78.7"
+    },
+    {
+     "harf": "B",
+     "metin": "31931"
+    },
+    {
+     "harf": "C",
+     "metin": "4124"
+    },
+    {
+     "harf": "D",
+     "metin": "239578"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: Accession Number 78.7.",
+   "yanlis_gerekceleri": {
+    "B": "31931, LACMA web sayfasının nesne kimliğidir (object/31931); envanter numarası değildir.",
+    "C": "4124, Sotheby's Parke-Bernet satış numarasıdır (Sale No. 4124); envanter değil.",
+    "D": "239578, LACMA'nın eski node kimliğidir (node/239578 → 301); envanter değil."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "LACMA birincil kaydına göre eserin yapım yılı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1929"
+    },
+    {
+     "harf": "B",
+     "metin": "1928"
+    },
+    {
+     "harf": "C",
+     "metin": "1933"
+    },
+    {
+     "harf": "D",
+     "metin": "1948"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1 Date Made: 1929 (birincil).",
+   "yanlis_gerekceleri": {
+    "B": "1928, WikiArt aralığının başlangıcıdır; birincil kayıt yalnız 1929 der (D2).",
+    "C": "1933, Duke'un olası ilk yayın örneğidir (Palais des Beaux-Arts sergisi); yapım yılı değil.",
+    "D": "1948, yalnız WikiArt URL slug'ında geçen doğrulanmamış versiyon etiketidir; LACMA 1929 der."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tekniği ve desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya / tuval"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Ahşap pano / tempera"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya / kâğıt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1 Medium: Oil on canvas.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk, duvar üzerine pigment tekniğidir; bu eser tuval üzerine yağlıboyadır.",
+    "C": "Ahşap pano/tempera farklı destek ve bağlayıcıdır; LACMA tuval + yağ kaydeder.",
+    "D": "Suluboya/kâğıt farklı teknik ve destektir; eser yağlıboya/tuvaldir."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Tablonun yazıtı hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ceci n'est pas une pipe"
+    },
+    {
+     "harf": "B",
+     "metin": "Ceci est une pipe"
+    },
+    {
+     "harf": "C",
+     "metin": "Ceci n'est pas de l'Art"
+    },
+    {
+     "harf": "D",
+     "metin": "Poetry is a pipe"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1/S3: yazıt \"Ceci n'est pas une pipe\".",
+   "yanlis_gerekceleri": {
+    "B": "\"Ceci est une pipe\" (Bu bir pipodur), Magritte'ın yazsaydı yalan söylemiş olacağını belirttiği karşıt ifadedir.",
+    "C": "\"Ceci n'est pas de l'Art\", motif kökeni anlatısında geçen galeri tabelasıdır (belirsiz); tablonun yazıtı değil.",
+    "D": "\"Poetry is a pipe\", Éluard/Breton'ın 1929'daki yanıtıdır; tablonun yazıtı değil."
+   },
+   "kanit": [
+    "C012",
+    "C021",
+    "C023"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "LACMA küratoryal notuna göre yazıt nasıl sunulmuştur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pipo imgesinin altında, düzgün el yazısı, slogan gibi"
+    },
+    {
+     "harf": "B",
+     "metin": "Pipo imgesinin üstünde, büyük harflerle"
+    },
+    {
+     "harf": "C",
+     "metin": "Pipo imgesinin içinde, kazınmış"
+    },
+    {
+     "harf": "D",
+     "metin": "Tuvalin arka yüzünde, imzalı"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: \"neat cursive text forming a slogan-like caption under the image of the pipe\".",
+   "yanlis_gerekceleri": {
+    "B": "Yazıt üstte değil, pipo imgesinin altındadır (S1).",
+    "C": "Yazıt piponun içinde kazınmış değil, altında el yazısıdır (S1).",
+    "D": "Yazıt arka yüzde/imzalı değil; ön yüzde piponun altındadır (S1)."
+   },
+   "kanit": [
+    "C012",
+    "C015"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "LACMA'ya göre eser hangi konvansiyona itiraz eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Nesnenin imgesini nesnenin kendisi sayma konvansiyonuna"
+    },
+    {
+     "harf": "B",
+     "metin": "Perspektif ve derinlik yanılsamasını artırma"
+    },
+    {
+     "harf": "C",
+     "metin": "Mitolojik bir sahneyi betimleme"
+    },
+    {
+     "harf": "D",
+     "metin": "Renk uyumunu ve ışık etkisini araştırma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: \"challenges the convention of identifying an image of an object as the thing itself\".",
+   "yanlis_gerekceleri": {
+    "B": "Eser perspektif/derinlik yanılsamasını artırmaz; temsil-nesne ayrımını sorgular.",
+    "C": "Mitolojik sahne yoktur; gündelik bir nesne (pipo) ve yazıt vardır.",
+    "D": "Eser renk/ışık araştırması değil, sözcük-imge-nesne uzlaşmazlığı üzerine bir tezdir."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "LACMA'nın saydığı, Magritte'ın metin kullanımından etkilenen sanatçılar hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Baldessari, Broodthaers, Johns, Lichtenstein, Ruscha"
+    },
+    {
+     "harf": "B",
+     "metin": "Dalí, Ernst, Miró, Tanguy, Masson"
+    },
+    {
+     "harf": "C",
+     "metin": "Warhol, Oldenburg, Wesselmann, Rosenquist, Indiana"
+    },
+    {
+     "harf": "D",
+     "metin": "Kosuth, Weiner, Huebler, Barry, LeWitt"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1: \"influenced a younger generation of artists, including John Baldessari, Marcel Broodthaers, Jasper Johns, Roy Lichtenstein, and Ed Ruscha\".",
+   "yanlis_gerekceleri": {
+    "B": "Bu Sürrealist kuşak listesidir; LACMA'nın saydığı etkilenen genç kuşak değildir.",
+    "C": "Bu Pop Art listesidir; LACMA etki listesinde bu adlar yok.",
+    "D": "Bu kavramsal sanat listesidir; LACMA etki listesinde bu adlar yok."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Foucault'nun 1973 \"Ceci n'est pas une pipe\" denemesi başlığını nereden alır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bu tablodan (La trahison des images)"
+    },
+    {
+     "harf": "B",
+     "metin": "Diderot'nun bir romanından"
+    },
+    {
+     "harf": "C",
+     "metin": "Korzybski'nin bir kitabından"
+    },
+    {
+     "harf": "D",
+     "metin": "Valéry'nin şiir denemesinden"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S4: Foucault'nun 1973 denemesi başlığını tablodan alır.",
+   "yanlis_gerekceleri": {
+    "B": "Diderot karşılaştırma çerçevesidir; Foucault denemesinin başlık kaynağı değil.",
+    "C": "Korzybski meta-mesaj bağlamında anılır; başlık kaynağı değil.",
+    "D": "Valéry \"Poetry is a survival\" der; Foucault başlığının kaynağı değil."
+   },
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "LACMA eseri nasıl edindi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1978, Harrison fonları + Sotheby's Parke-Bernet (Sale 4124, Lot 70)"
+    },
+    {
+     "harf": "B",
+     "metin": "1932, Mesens bağışı"
+    },
+    {
+     "harf": "C",
+     "metin": "1957, Copley bağışı"
+    },
+    {
+     "harf": "D",
+     "metin": "Sanatçıdan doğrudan satın alma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1 Credit Line + Provenance: 1978 Harrison fonları; Sotheby's 17 Mayıs 1978, Sale 4124, Lot 70.",
+   "yanlis_gerekceleri": {
+    "B": "1932'de Mesens satın aldı (LACMA değil); bu bir provenance halkasıdır.",
+    "C": "1957'de Copley çifti satın aldı (LACMA değil); bağış değil.",
+    "D": "LACMA eseri sanatçıdan doğrudan almadı; 1978 açık artırmasıyla edindi."
+   },
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "TR/AB'de telif koruması ne zamana kadar sürer?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "2038 (ölüm 1967 + 70)"
+    },
+    {
+     "harf": "B",
+     "metin": "2025 (ABD 1929 yayın varsayımı)"
+    },
+    {
+     "harf": "C",
+     "metin": "2017 (ölüm + 50)"
+    },
+    {
+     "harf": "D",
+     "metin": "1967 (ölüm yılı)"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "S1 ölüm 1967 + S13 AB life+70 → TR/AB 2038; S7 kategorisi \"Out of copyright in 2038\".",
+   "yanlis_gerekceleri": {
+    "B": "2025, Duke'un koşullu ABD senaryosudur (1929 \"published\" ise); TR/AB koruması değil ve ABD statüsü belirsiz.",
+    "C": "2017 ölüm+50 hesabıdır; TR/AB ölüm+70 uygular.",
+    "D": "1967 ölüm yılıdır; koruma ölümle bitmez, ölüm+70 sürer."
+   },
+   "kanit": [
+    "C027",
+    "C001"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser LACMA'da, BCAM 3rd Floor Modern Art'ta sergilenmektedir.",
+   "dogru": true,
+   "aciklama": "Doğru (S1: On view BCAM 3rd Floor Modern Art; JSON-LD floor 3).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "LACMA birincil kaydı boyutu 63.5 × 93.98 cm olarak verir.",
+   "dogru": false,
+   "aciklama": "Yanlış: 63.5×93.98 WikiArt'ın reddedilen değeridir (D1); LACMA \"23 3/4 × 31 15/16 × 1 in.\" ≈60.3×81.1 der.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Yazıt \"Ceci n'est pas une pipe\" pipo imgesinin altında, düzgün el yazısıyla yer alır.",
+   "dogru": true,
+   "aciklama": "Doğru (S1/S3: neat cursive, slogan-like caption under the pipe).",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Magritte, resme \"Bu bir pipodur\" yazsaydı yalan söylemiş olacağını belirtmiştir.",
+   "dogru": true,
+   "aciklama": "Doğru (S3, Torczyner 1977 s.71 aktarımı; kitap metnine erişilmedi).",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Tablonun ABD'de kamu malı olduğu kesinleşmiştir.",
+   "dogru": false,
+   "aciklama": "Yanlış: Duke statünün 1929 \"published\" koşuluna bağlı olduğunu ve kesin tarihsel bilgi bulunamadığını belirtir (E1); 2026 sayfası güncelleme getirmedi.",
+   "kanit": [
+    "C025"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "İmge-nesne-dil uzlaşmazlığını Magritte'ın pipo açıklaması ve Foucault'nun çift paradoksuyla analiz edin.",
+   "beklenen_ogeler": [
+    "temsil ≠ nesne",
+    "\"could you stuff my pipe?\"",
+    "Foucault çift paradoks",
+    "Magritte \"paradoks yok\" gerilimi"
+   ],
+   "kanit": [
+    "C014",
+    "C021",
+    "C029",
+    "C034"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Provenance zincirini köşeli parantezleriyle yazın; 1978 ediniminin iki kanıtını belirtin.",
+   "beklenen_ogeler": [
+    "[Galerie Le Centaure]",
+    "1932 Mesens",
+    "1957 Copley",
+    "[1978 Sotheby's 4124/70]",
+    "envanter 78. öneki + satış kaydı"
+   ],
+   "kanit": [
+    "C009",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "ABD kamu malı belirsizliğini Duke pasajlarıyla değerlendirin; Variétés versiyonunun neden ayrı tutulduğunu açıklayın.",
+   "beklenen_ogeler": [
+    "\"published\" 1929 koşulu",
+    "\"out of an abundance of caution\"",
+    "1933/95 yıl senaryosu",
+    "Variétés ters pipo AYRI versiyon",
+    "2026 negatif teyit"
+   ],
+   "kanit": [
+    "C025",
+    "C026",
+    "C043"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Reklam afişi üslubunun ironisini ve Foucault'nun el yazısı betimini tartışın.",
+   "beklenen_ogeler": [
+    "afiş üslubu",
+    "slogan gibi başlık",
+    "kâtip/okul defteri el yazısı",
+    "çift paradoks"
+   ],
+   "kanit": [
+    "C015",
+    "C029",
+    "C035"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "D1/D2/D6 ihtilaflarını kaynak hiyerarşisiyle çözün; Catalogue Raisonné'ün rolünü ve erişilemezliğini değerlendirin.",
+   "beklenen_ogeler": [
+    "LACMA birincil kazanır",
+    "WikiArt 63.5×93.98 reddi",
+    "\"-1948\" slug desteklenmez",
+    "Catalogue Raisonné tek yetkili",
+    "metne erişilmedi (E)"
+   ],
+   "kanit": [
+    "C037",
+    "C038",
+    "C042",
+    "C049",
+    "C048"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaynakların betimlediği kompozisyonda pipo imgesini ve altındaki yazıtı bulun; yazıtın konumunu tarif edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): LACMA alt metni: kahverengi pipo, bej zemin, altta el yazısı \"Ceci n'est pas une pipe\".",
+   "kanit": [
+    "C012",
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Zemini inceleyin: LACMA alt metni \"beige\", itwiki \"monokrom\" der; renk/doku hakkında kesin gözlem yazmayın, kaynak betimini not edin.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): C019 (A) + C032 (B); görsel incelenmedi.",
+   "kanit": [
+    "C019",
+    "C032"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Yazıtın el yazısı üslubunu Foucault'nun (itwiki aktarımı) okul defteri/kara tahta benzetmesiyle karşılaştırın.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): S1 \"neat cursive\"; C029 \"calligrafia da amanuense\".",
+   "kanit": [
+    "C012",
+    "C029"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Eserin yatay formatını (≈60.3×81.1 cm) afiş üslubuyla ilişkilendirin; \"slogan\" vurgusunu bulun.",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): C006 boyut + C015 \"style of an advertisement\".",
+   "kanit": [
+    "C006",
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Pipo imgesinin \"nesne\" değil \"temsil\" olduğunu gösteren ipuçlarını kaynak betiminden listeleyin (doldurulabilir mi?).",
+   "ipucu": "TASLAK (görsel bu oturumda incelenemedi; betim kaynak metni): Magritte \"could you stuff my pipe?\" (C021); C014 tez.",
+   "kanit": [
+    "C014",
+    "C021"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Künye?",
+   "arka": "René Magritte (Belçika 1898–1967); La trahison des images; 1929, Belçika; yağlıboya/tuval; ≈60.3×81.1 cm (+2.5 derinlik); LACMA 78.7; BCAM 3rd Floor Modern Art.",
+   "kanit": [
+    "C001",
+    "C003",
+    "C004",
+    "C005",
+    "C006",
+    "C007",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Yazıt + tez?",
+   "arka": "\"Ceci n'est pas une pipe\" pipo altında, düzgün el yazısı, slogan gibi; imge-nesne-dil uzlaşmazlığı; nesnenin imgesini nesne sayma konvansiyonuna itiraz; afiş üslubu.",
+   "kanit": [
+    "C012",
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Provenance + edinim?",
+   "arka": "sanatçı (Paris/Brüksel) → [Le Centaure] → 1932 Mesens → 1957 Copley → [1978 Sotheby's Parke-Bernet NY, Sale 4124 Lot 70] → LACMA; Harrison fonları; envanter 78. öneki.",
+   "kanit": [
+    "C009",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Foucault + Magritte açıklaması?",
+   "arka": "Foucault 1973 \"Ceci n'est pas une pipe\" denemesi başlığını tablodan alır (B); Magritte: \"pipomu doldurabilir miydiniz? ... yalnızca bir temsil ... 'Bu bir pipodur' yazsaydım yalan olurdu\" (Torczyner 1977 s.71, B).",
+   "kanit": [
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Telif / adil-kullanım?",
+   "arka": "Tablo © C. Herscovici/ARS; TR/AB 2038 (1967+70); ABD PD BELİRSİZ (Duke 1929 \"published\" sorusu; 2026 güncellemedi); Variétés ters pipo AYRI versiyon (ABD PD 2025); görsel yeniden yayımlanmaz, adil-kullanım.",
+   "kanit": [
+    "C018",
+    "C027",
+    "C025",
+    "C026"
+   ]
+  }
+ ]
+}

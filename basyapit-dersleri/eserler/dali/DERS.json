@@ -1,0 +1,997 @@
+{
+ "surum": "1.0",
+ "eser_id": "salvador-dali|The Persistence of Memory",
+ "sanatci_id": "salvador-dali",
+ "baslik": "Belleğin Azmi (The Persistence of Memory)",
+ "ozgun_baslik": "The Persistence of Memory",
+ "kunye": {
+  "sanatci": "Salvador Dalí",
+  "sanatci_yasam": "1904–1989",
+  "tarih": "1931",
+  "tarih_belirsizlik": "WD P571 precision=yıl; P1480 yok; birincil 1931 (A)",
+  "teknik": "Tuval üzerine yağlıboya (oil on canvas)",
+  "boyut_cm": {
+   "yukseklik": 24.1,
+   "genislik": 33
+  },
+  "muze": "The Museum of Modern Art (MoMA), New York",
+  "envanter": "162.1934",
+  "edinim": "1934, Julien Levy'den anonim bir Müze dostunun hibe olarak satın alması (Given anonymously)",
+  "konum": "MoMA, Floor 5, Gallery 517 (The Alfred H. Barr, Jr. Galleries) — 2026-11-02 snapshot",
+  "telif_durumu": "© 2026 Salvador Dalí, Gala-Salvador Dalí Foundation / Artists Rights Society (ARS), New York; Dalí ö.1989 → TR/AB ölüm+70: 2060'a kadar korumalı. Dijital görsel © MoMA (Scala/Art Resource lisanslı); enwiki dosyası non-free fair use. Adil kullanım çerçevesi (eğitim/eleştiri): görsel yeniden yayımlanmaz, URL+lisans+atıf zorunlu; hukuki tavsiye değildir."
+ },
+ "gorsel": {
+  "url": "https://en.wikipedia.org/wiki/File:The_Persistence_of_Memory.jpg",
+  "kaynak": "Wikipedia (en) non-free dosya; kredi MoMA (fotoğraf 2004)",
+  "lisans": "Fair use (enwiki NFUR); © Gala-Salvador Dalí Foundation/ARS; dijital görsel © MoMA/Scala/Art Resource — serbest değil; yeniden yayımlanmaz",
+  "dogrulama": {
+   "yontem": "metadata (imageinfo extmetadata); BU OTURUMDA İNCELENEMEDİ (vision kotası ana oturumda)",
+   "cozunurluk": "371×268 px, 36.722 bayt",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre; GZ 5/5 TASLAK; kompozisyon S1 (A) + S3/S4/S6 (B/C) metninden (\"kaynakların betimlediği\"); MoMA dijital görseli Scala/Art Resource lisanslı; data görseli WikiArt reprodüksiyonu (lisans doğrulanmadı); görsel projeye kopyalanmadı"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 486
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1427
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2714
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem-birincil-kaydın-kapsamı"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-tarih-ve-provenance-zincir-boşluklar-ihtilaflar"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#6-etki-ve-alımlama-öncüllük-popüler-kültür-ihraç"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz-kaynak-betimi",
+   "DERS_ORTA.md#4-biçimsel-analiz-kaynak-betimi",
+   "DERS_ILERI.md#3-biçimsel-analiz-kesinlik-öfkesi-ile-rüya"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#4-ikonografi-katmanları-çürüme-zaman-profil"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#5-teknik-ve-malzeme-küçük-tuval-büyük-etki"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_BASLANGIC.md#telif-ve-adil-kullanım-notu",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma-ve-telif"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_BASLANGIC.md#şimdi-sıra-sizde",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "MoMA birincil kaydıyla künyeyi (1931, oil on canvas, 24.1×33 cm, 162.1934, Given anonymously, Gallery 517) doğrular.",
+  "Provenance zincirini ve 1934 edinimini birincil kayıtla; fiyat/ilk sergi ihtilaflarını (D1/D2) kaynak adlarıyla yönetir.",
+  "Paranoyak-eleştirel yöntemi ve \"el yapımı rüya fotoğrafları\" kavramını Sürrealizm bağlamında açıklar.",
+  "Karıncalı saat, eriyen saatler ve merkezdeki profil okumasını kaynak betimiyle, yorum katmanını ayırarak analiz eder.",
+  "Görelilik yorumu (E2) ve Camembert anlatısı farklarını (D5) belirsizlik işaretleriyle tartışır; telif/adil kullanım sınırını beyan eder."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Sürrealizm",
+   "tanim": "Breton öncülüğünde 1924–II. Dünya Savaşı; Freud psikanalizi; bilinçdışının \"üst gerçekliği\" (sur réalisme).",
+   "kanit": [
+    "C056",
+    "C009"
+   ]
+  },
+  {
+   "ad": "Paranoyak-eleştirel yöntem",
+   "tanim": "Dalí'nin 1930'da formüle ettiği, kendiliğinden indüklenen halüsinasyonlarla irrasyonel bilgi üretme yöntemi.",
+   "kanit": [
+    "C013",
+    "C030"
+   ]
+  },
+  {
+   "ad": "Yumuşak saat / \"the camembert of time\"",
+   "tanim": "Eriyen cep saati imgesi; Dalí'nin güneşte eriyen Camembert'ten esinlenme anlatısı.",
+   "kanit": [
+    "C011",
+    "C016"
+   ]
+  },
+  {
+   "ad": "\"El yapımı rüya fotoğrafları\"",
+   "tanim": "Dalí'nin hipergerçekçi kesinlikle rüya imgelerini \"fotoğraflama\" ideali (hand-painted dream photographs).",
+   "kanit": [
+    "C030",
+    "C058"
+   ]
+  },
+  {
+   "ad": "Provenance",
+   "tanim": "Eserin sahiplik/edinim zinciri; MoMA Provenance Research Project kaydı.",
+   "kanit": [
+    "C007",
+    "C006"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Sanatçı: Salvador Dalí (İspanyol, 1904–1989).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Eser: \"The Persistence of Memory\", 1931.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik: tuval üzerine yağlıboya (oil on canvas).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut: 24.1 × 33 cm (9½ × 13 inç).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Envanter 162.1934; kredi \"Given anonymously\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "MoMA'ya 1934'te, Julien Levy'den anonim bir Müze dostunun hibe olarak satın almasıyla girdi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Provenance: Dalí (Paris, 1931) → Galerie Pierre Colle (Paris, 1931–?) → Gallery Julien Levy (NY, \"By 1934\", Pierre Colle'den satın alma) → MoMA (1934).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Snapshot anında (2026-11-02) MoMA Floor 5, Gallery 517 (The Alfred H. Barr, Jr. Galleries), \"On view\".",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Akım: Sürrealizm; MoMA etiketleri Landscape, Surrealism, Painting, Gallery 517, 1930–1940; WD P136 landscape painting + still life (RKD ref'li).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Telif: © 2026 Salvador Dalí, Gala-Salvador Dalí Foundation / Artists Rights Society (ARS), New York.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1",
+    "S2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "MoMA küratoryal: eriyen saatler \"the camembert of time\"; karıncalar çürümeyi temsil eder (özellikle altın saate saldırırken); uzaktaki altın kayalıklar Katalonya kıyısı (Dalí'nin memleketi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Merkezdeki yaratık, Dalí'nin kendi profilinin \"bir yaklaşıklığı\"dır (an approximation; kesin özportre denmez); uzun kirpikler; burundan sarkan \"dil\" olabilir de olmayabilir de (MoMA'nın kuşkusu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Dalí \"paranoiac-critical method\"u bu tablodan bir yıl önce (1930) formüle etti; \"The difference between a madman and me ... is that I am not mad.\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Küratoryal metin MoMA Highlights: 375 Works from The Museum of Modern Art, New York (2019) kitabından alıntıdır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "MoMA görsellerinin yeniden üretimi için Art Resource (K. Amerika) / Scala Archives (diğer bölgeler) lisansı gerekir; künyede obje kimlik numarası bulunmalıdır.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Dalí, Prigogine'e yumuşak saatlerin görelilikten değil güneşte eriyen Camembert'in sürrealist algısından ilham aldığını söyledi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Adès: yumuşak saatler uzay-zaman göreliliğinin bilinçdışı sembolü; sabit kozmik düzenin çöküşü üzerine Sürrealist meditasyon.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Merkezdeki figür Bosch'un Garden of Earthly Delights'inin \"Paradise\" bölümündeki bir figürden modellenmiş olabilir (\"seems to have been originally modeled\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Karınca=çürüme yinelenen tema; çocukluk anıları: 3–4 yaşta kertenkele (1929 \"La Libération des doigts\", L'amic de les arts) ve yarasa (The Secret Life); S4'te böcek (coleottero) varyantı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Tablo iki saatte, baş ağrısı nedeniyle Gala sinemaya gittikten sonra, Camembert'in \"ipermollezza\"sı üzerine düşünmeyle yapıldı; tuvalde başlangıçta bir Port Lligat manzarası + budanmış yapraksız zeytin vardı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "İlk ad \"Gli orologi molli\" idi; Levy 1932'de satın alıp NY galerisinde sergiledi ve yeni ad verdi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "MoMA 1934'te eseri 350 dolara satın aldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Manzara: Costa Brava (Katalonya), Port Lligat yakınları; sarı-gök mavisi gökyüzü; ıssız, bitkisiz; toprak rengi paralelkenar blok; yapraksız zeytin (forse senza vita); uzun kirpikli uyuyan göz; arka planda denizle eşleşen mavi plint; üç eriyen saat + karıncalı katı dördüncü saat.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Soldaki saatin üstünde bir sinek var; M. R. Taylor'ın \"time flies\" şakası.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "İlk sergi 1932 Julien Levy Gallery; 250 $'a satıldı; 1934'te anonim bağışçı MoMA'ya verdi (S3'ün atıf verdiği S1'de bu bilgiler YOK → D1/D2/E1).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Britannica: boyut 9.5×13 in (24×33 cm); sahne Cape Creus kıyısı, \"Mount Pani\" gölgesiyle.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C027",
+   "ifade": "Görelilik bağlantısı spekülasyondur (\"Some art historians speculate\").",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C028",
+   "ifade": "1932 NY'de ilk sergi, 250 $ satış; alıcı iki yıl sonra MoMA'ya bağışladı; eser o zamandan beri koleksiyonun \"centerpiece\"i.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C029",
+   "ifade": "1954'te devam eseri Disintegration; Dalí bir konferansta kendi eserinin anlamını bilmediğini söyledi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C030",
+   "ifade": "Paranoyak-eleştirel yöntem tanımı (\"spontaneous method of irrational knowledge based on the critical and systematic objectivity of the associations and interpretations of delirious phenomena\"); \"hand-painted dream photographs\".",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C031",
+   "ifade": "1932'de Julien Levy Gallery'de Sürrealist grup sergisinde ilk sergi; Levy tabloyu Paris gezisinde edinmişti; iki yıl sonra MoMA.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C032",
+   "ifade": "Cap de Creus + Puig Pení coğrafi göndermeleri; merkezdeki \"ectoplasmic turkey-necked form\" birçok kişinin gizli özportre sandığı profil; Bosch antropomorfik kaya modeli.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C033",
+   "ifade": "Üç eriyen saat (figür, dal, blok) + karıncalı, katı, turuncu dördüncü saat (ortadaki deliğe ışınsal toplanan karıncalar); \"camembert of time and space\"; güneşte yumuşayan peynir tabağını gözlemleme.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C034",
+   "ifade": "Görsel telif künyesi: dijital görsel © MoMA (Scala/Art Resource lisanslı); eser © 2025 Dalí/Fundació/ARS.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C035",
+   "ifade": "Alternatif adlar: \"Melting Clocks\", \"Soft Watches\" (S5 \"Also known as\"); S3'te \"The Melting Watches\" dahil üç ad (atıf destekli değil → E8).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C036",
+   "ifade": "Sağdaki kayalıklar Cap de Creus yarımadasının ucu (S3 bu cümlede atıfsız; S5/S6 C desteği).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C037",
+   "ifade": "Sinek \"insan gölgesi düşürüyor gibi\" (\"appears to be casting a human shadow\"; atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C038",
+   "ifade": "1936 MoMA \"Fantastic Art, Dada, Surrealism\" sergisinde yer aldı (WD P608=Q60230869, ref'siz; S1 doğrulamıyor).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C039",
+   "ifade": "Yardımcı kimlikler: catalogue raisonné P 265 (P528/P972/P6595, ref'siz), WikiArt P6002, Smarthistory P6405, Britannica P1417, RKDartists 19752 (P136 ref'inde), MoMA object 79018 (P2014).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C040",
+   "ifade": "D1 — Satış fiyatı/edinim niteliği: $250 (S3/S5, 1932 satış?) ↔ $350 (S4/Zalman, 1934 MoMA alımı); S1'de fiyat YOK; \"donated\" ↔ \"purchased ... as a gift\". Farklı işlemler olabilir; kesinleştirilemez.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C041",
+   "ifade": "D2 — Levy edinim tarihi/ilk sergi: S4 \"1932 satın aldı\" ↔ S1 \"By 1934\" (Pierre Colle'den); S3/S5/S6 \"ilk sergi 1932 NY\" ↔ S1 provenance Paris 1931. \"By 1934\" üst sınır; ilk sergi NY 1932 teyitsiz.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C042",
+   "ifade": "D3 — Boyut yuvarlaması: S1/S2/S3/S4 24.1×33 ↔ S5 24×33 ↔ data \"24 x 33 cm civarında\". Birincil 24.1×33 esas.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S13"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C043",
+   "ifade": "D4 — Disintegration tarihi (AYRI eser): S3/S5 \"1954\" ↔ S10 infobox \"1952–1954\" (metinde 1954). Bu brief'in konusu değil; ayrı eser dersinde birincil Dalí Museum kaydıyla çözülmeli.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S10"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C044",
+   "ifade": "D5 — Camembert anlatısı ifade farkı: S5 \"yedikten sonra halüsinasyon\" ↔ S4 (Vita segreta) yemek sonrası peynirin \"ipermollezza\"sı üzerine düşünme ↔ S6 \"güneşte yumuşayan peyniri gözlemleme\" ↔ S1 \"the camembert of time\". Dalí'nin kendi anlatısı (S4) esas; Britannica ifadesi kaynak adıyla.",
+   "seviye": "D",
+   "kaynak_id": [
+    "S1",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C045",
+   "ifade": "E1 — İlk sergi yeri/tarihi: S1'de sergi bilgisi yok; \"first exhibited ... 1932\" (S3/S5/S6) birincil kayıtla teyitsiz (D2).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C046",
+   "ifade": "E2 — Einstein/görelilik yorumu: S3 \"suggests\", S5 \"Some art historians speculate\", S6 \"some have also suggested\"; Dalí'nin reddi (S3 C016 + S10 \"although Dalí himself denied the connection\"). Spekülatif yorum + sanatçı reddi birlikte; kesinleştirme yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S5",
+    "S6",
+    "S10"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C047",
+   "ifade": "E3 — Özportre okuması: S1 \"an approximation of Dalí's own face in profile\"; S6 \"many take as a hidden self-portrait\"; S4 \"possibilmente interpretata da molti come un autoritratto amorfo\"; S3 \"something of a self-portrait\". Kesin özportre denmez.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S4",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C048",
+   "ifade": "E4 — Bosch kökeni: S3 \"The creature seems to have been originally modeled after...\" (C018).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C049",
+   "ifade": "E5 — Sinek gölgesi: S3 \"appears to be casting a human shadow\" — atıfsız (C037).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C050",
+   "ifade": "E6 — \"İki saatte yapıldı\" anekdotu: S4 \"in sole due ore\" — tek zincir (Dalí otobiyografisi → Nicosia/Brook → itwiki); bağımsız doğrulama yok.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C051",
+   "ifade": "E7 — Manzara yer adları: S4 \"nei pressi di Port Lligat\" + Vita segreta \"veduta di Port Lligat\"; S3/S5/S6 \"Cap de Creus\"/\"Cape Creus\"; gölge S3/S6 \"Puig Pení\" ↔ S5 \"Mount Pani\"; S1 yalnız \"coast of Catalonia\". Coğrafi olarak komşu ama hiçbir erişilen kaynak uzlaştırmıyor; tek kesin ad dayatılmaz.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S1",
+    "S3",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C052",
+   "ifade": "E8 — Alternatif adlar: S3 atıfsız (C035); S5 \"Also known as\" (C).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3",
+    "S5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C053",
+   "ifade": "E9 — WD envanter çift değeri: P217 \"162.1934\" (MoMA ref'li, P195 qualifier'lı) + \"162.1934.0\" (biçimsel hatalı görünümlü duplike; cache'te MoMA ref'li ama P195 qualifier'sız — brief \"ref'siz\" der, düzeltildi). Birincil değer 162.1934.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C054",
+   "ifade": "E10 — WD 1936 sergisi: P608=Q60230869 ref'siz (C038); S1 doğrulamıyor.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S2"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C055",
+   "ifade": "E11 — Zeytin ağacı: S4 \"un ulivo senza foglie (forse senza vita)\" — \"forse\" korunmalı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C056",
+   "ifade": "Sürrealizm (MoMA tanımı): André Breton öncülüğünde 1924–II. Dünya Savaşı; Freud'un psikanalitik kuramlarından beslenir; modern toplumun baskıcı rasyonalizmini bilinçdışının \"üst gerçekliği\" (sur réalisme) ile aşmayı hedefler; 1924'te Breton Sürrealizm Manifestosu'nu yayımladı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C057",
+   "ifade": "Dalí 1929'da sanat sahnesine çıktı ve yaklaşık altmış yıl, ölümüne kadar kamuoyunun odağından nadiren uzaklaştı (MoMA sanatçı biyografisi).",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C058",
+   "ifade": "MoMA küratoryal betim: \"kasvetli ve sonsuz rüya manzarasında sert nesneler açıklanamaz biçimde yumuşar; metal, çürüyen et gibi karıncaları çeker\"; Dalí \"göz aldatmanın olağan felç edici hileleri\"ni ustalıkla kullanarak \"en emperyalist kesinlik öfkesi\"yle resim yaptı, ama yalnızca \"kafa karışıklığını sistemleştirmek ve böylece gerçeklik dünyasını tamamen gözden düşürmek\" için.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C069",
+   "ifade": "MoMA Gallery 517 \"A Surrealist Lens\": aynı galeride de Chirico, Tanguy, Miró, Magritte, Giacometti, Masson gibi Sürrealist/öncü eserler; 1924 Breton Manifestosu bağlamı.",
+   "seviye": "A",
+   "kaynak_id": [
+    "S1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C059",
+   "ifade": "Merkezdeki profil imgesi Dalí'nin daha önceki eseri The Great Masturbator'da (1929) da görünür.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C060",
+   "ifade": "Britannica kariyer: 1922'de Madrid Residencia de Estudiantes'te okudu; Buñuel ve Lorca ile lifelong partnerships; Un Chien andalou (1929); 20. yyın en önemli ressamlarından; moda/reklam/tiyatro/sinema etkisi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S5"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C063",
+   "ifade": "ARTnews: Miró, Dalí'yi Breton ile tanıştırdı; Dalí 1939'da Hitler'e hayranlık ifadeleri nedeniyle Sürrealist gruptan ihraç edildi.",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C064",
+   "ifade": "ARTnews: Dalí'nin hipergerçekçi detaycılığı Yves Tanguy'nin cilalı biyomorfik soyutlamalarına borçlu; Dalí'nin Tanguy'nin yeğenine \"I pinched everything from your uncle\" dediği aktarılır (\"allegedly\").",
+   "seviye": "C",
+   "kaynak_id": [
+    "S6"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C065",
+   "ifade": "itwiki yorumu: Dalí Bergson ve Freud'dan etkilenmişti; yumuşak saatler zamanın göreliliği/özneliği/plastisitesi; karıncalı saat zaman nesnelliğinin iptali; \"kaçıp giden zamanın dehşeti\" (İnterpretazione bölümü; satır içi akademik atıf yok).",
+   "seviye": "C",
+   "kaynak_id": [
+    "S4"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C061",
+   "ifade": "Yumuşak saat imgesinin ilk görünümü bu eserdir; Bradbury \"belki en kalıcı imgesi\" der (\"perhaps his most enduring image\").",
+   "seviye": "B",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C066",
+   "ifade": "Orijinal tablonun serbest lisanslı Commons reprodüksiyonu YOK (kategori yalnız türevler); WD P18 yok (P6802 Wrocław heykel fotoğrafı); enwiki dosyası non-free \"Fair use\" (371×268, 36.722 bayt; \"Out of copyright in 2060\"); MoMA dijital görseli © MoMA/Scala-Art Resource; görsel bu oturumda İNCELENEMEDİ (GZ TASLAK).",
+   "seviye": "B",
+   "kaynak_id": [
+    "S2",
+    "S6",
+    "S7",
+    "S8"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C068",
+   "ifade": "The Disintegration of the Persistence of Memory (infobox 1952–1954; metinde 1954) Salvador Dalí Museum, St. Petersburg FL'dedir; 25.4×33 cm; ilk sergi Carstairs Gallery NY 1954; nükleer fizik/kuantum teması; orijinal MoMA'dadır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "S10"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C062",
+   "ifade": "\"Softness\"/\"hardness\" (yumuşaklık/sertlik) teorisi Dalí'nin o dönem düşüncesinin merkezindeydi (S3, bu cümlede atıfsız).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C067",
+   "ifade": "Wrocław \"Profile of Time\" (Profil czasu) heykeli (Q136701577) bu tablodan türev (WD P144=Q25729); bronz, ~385 cm; tablonun kendisi DEĞİLDİR (WD ref'siz; ayrı eser).",
+   "seviye": "E",
+   "kaynak_id": [
+    "S8",
+    "S9"
+   ],
+   "kullanim": "belirsiz"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "S1",
+   "kurum": "The Museum of Modern Art (MoMA)",
+   "belge": "Birincil katalog kaydı, object 79018 (Wayback 2026-11-02)",
+   "url": "http://web.archive.org/web/20261102203538/https://www.moma.org/collection/works/79018",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "Canlı 403 (Cloudflare, 2026-11-15); Wayback 200, snapshot 2026-11-02 (tam: künye+provenance+küratoryal+telif)",
+   "tur": "birincil"
+  },
+  {
+   "id": "S2",
+   "kurum": "Wikidata",
+   "belge": "Q25729 EntityData JSON",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q25729.json",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 (cache dali-Q25729-wd.json)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S3",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Persistence of Memory (wikitext)",
+   "url": "https://en.wikipedia.org/wiki/The_Persistence_of_Memory",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 (action=parse wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S4",
+   "kurum": "Wikipedia (it)",
+   "belge": "La persistenza della memoria (wikitext)",
+   "url": "https://it.wikipedia.org/wiki/La_persistenza_della_memoria",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 (action=parse wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S5",
+   "kurum": "Encyclopaedia Britannica",
+   "belge": "The Persistence of Memory (Jessica Gromley; güncelleme 2026-07-28; Wayback 2026-09-16)",
+   "url": "http://web.archive.org/web/20260916014127/https://www.britannica.com/topic/The-Persistence-of-Memory",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "Canlı 403 (2026-11-15); Wayback 200, snapshot 2026-09-16",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S6",
+   "kurum": "ARTnews",
+   "belge": "Howard Halle, \"Why Is Salvador Dalí's Persistence of Memory So Important?\" (2025-06-27)",
+   "url": "https://www.artnews.com/art-news/artists/salvador-dali-the-persistence-of-memory-why-so-important-1234745589/",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 canlı",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S7",
+   "kurum": "Wikipedia (en)",
+   "belge": "File:The Persistence of Memory.jpg imageinfo (extmetadata)",
+   "url": "https://en.wikipedia.org/wiki/File:The_Persistence_of_Memory.jpg",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 (metadata; İNCELENEMEDİ)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S8",
+   "kurum": "Wikimedia Commons",
+   "belge": "Category:The Persistence of Memory üyeleri",
+   "url": "https://commons.wikimedia.org/wiki/Category:The_Persistence_of_Memory",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 (action=query; 5 üye, serbest reprodüksiyon yok)",
+   "tur": "gorsel"
+  },
+  {
+   "id": "S9",
+   "kurum": "Wikidata",
+   "belge": "Q136701577 (Wrocław \"Profile of Time\" heykeli — AYRI eser)",
+   "url": "https://www.wikidata.org/wiki/Special:EntityData/Q136701577.json",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 (cache; ref'siz)",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S10",
+   "kurum": "Wikipedia (en)",
+   "belge": "The Disintegration of the Persistence of Memory (wikitext — AYRI eser)",
+   "url": "https://en.wikipedia.org/wiki/The_Disintegration_of_the_Persistence_of_Memory",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200 (action=parse wikitext)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "S11",
+   "kurum": "Wayback Machine",
+   "belge": "Availability API yanıtları (MoMA, Britannica)",
+   "url": "https://archive.org/wayback/available?url=moma.org/collection/works/79018",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S12",
+   "kurum": "— (yerel probe)",
+   "belge": "Canlı probe logu (MoMA 403, Britannica 403, WikiArt görsel HEAD 200)",
+   "url": ".qwen/tmp/parti7/dali-live-probe-20261115.txt",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "2026-11-14T21:12Z yerel probe",
+   "tur": "yardimci"
+  },
+  {
+   "id": "S13",
+   "kurum": "Sanat Atlası (proje)",
+   "belge": "data/basyapitlar.json [104], data/eser_ayrintilari.json [104], harita.json, eser_notlari.json; DURUM.md #105",
+   "url": "data/basyapitlar.json",
+   "erisim_tarihi": "2026-11-15",
+   "erisim_durumu": "yerel, salt-okunur (muze alanı BOŞ)",
+   "tur": "yardimci"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "The Great Masturbator",
+   "sanatci": "Salvador Dalí",
+   "gerekce": "Merkezdeki profil imgesinin öncülü (1929); aynı \"uyuyan yüz\" motifi.",
+   "kanit": [
+    "C059",
+    "C012"
+   ]
+  },
+  {
+   "eser": "The Disintegration of the Persistence of Memory",
+   "sanatci": "Salvador Dalí",
+   "kurum": "Salvador Dalí Museum, St. Petersburg FL",
+   "gerekce": "Aynı temanın nükleer/kuantum çağrışımlı yeniden yorumu (1952–54); ad benzerliği karışıklığı riski (D4).",
+   "kanit": [
+    "C068",
+    "C043"
+   ]
+  },
+  {
+   "eser": "The Garden of Earthly Delights",
+   "sanatci": "Hieronymus Bosch",
+   "gerekce": "Merkezdeki figürün olası modeli (\"Paradise\" bölümü; antropomorfik kaya).",
+   "kanit": [
+    "C018",
+    "C048"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "MoMA birincil (S1, Wayback 2026-11-02) + en/it wikitext (S3/S4) + Britannica (S5, Wayback 2026-09-16) + ARTnews (S6) + WD (S2/S9) + görsel metadata (S7/S8) + Disintegration (S10) 2026-11-15 yeniden açıldı; künye/provenance/küratoryal/telif doğrulandı. D1–D5 ve E1–E11 açık; S3 $250 atfı S1'de yok (kırık zincir); WD P217 duplike; brief E9/P4969 düzeltmeleri KANIT §5. Görsel metadata only → İNCELENEMEDİ (C066); GZ TASLAK. Kitap refs metinleri erişilmedi.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data/basyapitlar.json [104] muze alanı BOŞ; birincil S1 MoMA'yı doğruluyor (C005–C008). data değiştirilmedi; doldurma insan onayına sunulur.",
+  "data boyut '24 x 33 cm civarında' ↔ S1 24.1×33 cm (D3 yuvarlama); birincil esas.",
+  "data görseli WikiArt reprodüksiyonu (!HalfHD.jpg, HEAD 200, 76.061 bayt); lisans doğrulanmadı; eser telifli → adil kullanım notu; görsel yeniden yayımlanmaz.",
+  "AYRI ESERLER: The Disintegration of the Persistence of Memory (1952–54, Salvador Dalí Museum, St. Petersburg FL) ve Wrocław 'Profile of Time' (Profil czasu) heykeli (Q136701577, bronz ~385 cm, P144=Q25729 türev) BU ESER DEĞİLDİR; ad benzerliği karışıklığı riski (C043, C067, C068).",
+  "WD P217 duplike '162.1934.0' (E9/C053): brief 'ref'siz' der, cache'te MoMA ref'li ama P195 qualifier'sız — düzeltildi. Birincil değer 162.1934.",
+  "WD P18 yok; P6802 Wrocław heykel fotoğrafı (tablo değil); P608 ref'siz (E10/C054).",
+  "Görsel İNCELENEMEDİ (vision kotası ana oturumda); GZ 5/5 TASLAK; kompozisyon kaynak betimi; insan editör görsel teyidi zorunlu.",
+  "Telif: Dalí ö.1989 → TR/AB 2060'a kadar; © Gala-Salvador Dalí Foundation/ARS; dijital görsel © MoMA/Scala-Art Resource; enwiki non-free fair use. Adil kullanım çerçevesi seçildi; hukuki tavsiye değildir.",
+  "Brief Q136701577 için P4969/P1480 der; cache'te bu özellikler yok (P144 var, ref'siz) — KANIT §5'te düzeltildi.",
+  "ARTnews 'Paris'e beş yıl önce taşındı' (1926 ima) ↔ S1 1929 sahneye çıkış gerilimi; '1934 İspanya İç Savaşı' anakronizmi; itwiki 'Emanuele Rinaldi' atfı kuşkulu → derslerde kullanılmadı (KANIT §5).",
+  "DURUM.md #105 'Araştırılmadı'; durum güncellemesi ana oturumun işi."
+ ]
+}
