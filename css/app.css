@@ -14925,8 +14925,9 @@ html:has(.bugun-tek) body {
   box-sizing: border-box;
   overflow: hidden;
 }
-/* C1: yalnız kısa ad, eser ve yıl; tam ad ve imza sanatçı sayfasında kalır */
-.bugun-tek .bugun-alt :is(.ad-tam, .imza-kap) {
+/* C1: yalnız kısa ad, eser ve yıl; tam ad sanatçı sayfasında kalır.
+   1.80.0: imza Emre'nin isteğiyle ana sayfaya geri geldi (adın altında); imzası olmayan ressamda yalnız eserin adı */
+.bugun-tek .bugun-alt .ad-tam {
   display: none;
 }
 .bugun-tek .sahne-yapiskan.bugun-kahraman {
@@ -19564,6 +19565,8 @@ a.zm-satir:active {
   --pg-disk-yazi: #14110e;
   --pg-malakit-su: rgba(111, 165, 133, 0.14);
   --pg-sinoper-su: rgba(184, 101, 79, 0.14);
+  --pg-asil: var(--vurgu-acik);
+  --pg-asil-yazi: var(--vurgu-acik-yazi);
 }
 :root[data-tema='gunduz'] {
   --pg-lapis: #34507c;
@@ -19619,26 +19622,27 @@ html .dugme:active .pg-disk .ikon {
   transform: none;
 }
 
-/* asıl eylem: lapis */
+/* asıl eylem: o günün tablosunun rengi (--pg-asil = --vurgu-acik). İlk sürümde hep lapisti; Emre "resme göre
+   değişsin" dedi. Lapis artık yalnız disklerde. */
 html .dugme.vurgu,
 html .dugme.birincil,
 html .dugme.acik,
 html .alt-yaprak .yaprak-dugmeler .dugme.acik {
   border: 0;
-  background: var(--pg-lapis);
-  color: var(--pg-lapis-yazi);
+  background: var(--pg-asil);
+  color: var(--pg-asil-yazi);
   box-shadow: none;
 }
 html .dugme.vurgu:active,
 html .dugme.birincil:active,
 html .dugme.acik:active {
-  color: var(--pg-lapis-yazi);
+  color: var(--pg-asil-yazi);
 }
 @media (hover: hover) {
   html .dugme.vurgu:hover,
   html .dugme.birincil:hover,
   html .dugme.acik:hover {
-    background: var(--pg-lapis);
+    background: var(--pg-asil);
     filter: brightness(1.08);
   }
 }
@@ -19687,14 +19691,14 @@ html .ders-dugme {
 html .ders-dugme.dolu,
 html .ders-alt-cubuk .ders-dugme.dolu {
   border-color: transparent;
-  background: var(--pg-lapis);
-  color: var(--pg-lapis-yazi);
+  background: var(--pg-asil);
+  color: var(--pg-asil-yazi);
 }
 
 /* seçim hapları: seçili olan lapis */
 html .secim-hap button[aria-pressed='true'] {
-  background: var(--pg-lapis);
-  color: var(--pg-lapis-yazi);
+  background: var(--pg-asil);
+  color: var(--pg-asil-yazi);
 }
 
 /* üst çubuktaki simge düğmeleri: yuvarlak, ince çerçeveli */
@@ -19818,11 +19822,17 @@ html .gunduz-renkleri label > span {
   border-radius: 20px;
 }
 html .parcali input:checked + span {
-  border-color: var(--pg-lapis);
-  box-shadow: inset 0 0 0 1px var(--pg-lapis);
-  background: color-mix(in srgb, var(--pg-lapis) 30%, var(--surface));
+  border-color: var(--pg-asil);
+  box-shadow: inset 0 0 0 1px var(--pg-asil);
+  background: color-mix(in srgb, var(--pg-asil) 30%, var(--surface));
   color: var(--ink);
 }
 html .parcali input:focus-visible + span {
-  outline-color: var(--pg-lapis);
+  outline-color: var(--pg-asil);
+}
+
+/* Ana sayfa (1.80.0): imzası olan ressamda eserin adı yazmaz (Emre: "ekran çok kalabalıklaşıyor");
+   imzası olmayanda eserin adı ve yılı eskisi gibi görünür */
+.bugun-alt:has(.imza-kap) .bugun-eser {
+  display: none;
 }

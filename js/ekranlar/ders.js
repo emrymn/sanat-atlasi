@@ -39,6 +39,8 @@ import {
   gorselTercihi,
   yuruyusEserAdi,
   hataGoster,
+  ekranRengi,
+  akimRenk,
 } from './ortak.js';
 import { turBilgisi } from './bugun.js';
 import { durumlar as bolumDurumu } from './harita.js';
@@ -274,6 +276,7 @@ export async function dersMenusu() {
 // [data-ders-kapak="<akım>"]: dersin temsilci eseri (Ayırt et için elle seçilen birinci eser); olmazsa açık ilk sanatçının
 // en bilinen eseri
 function kapaklariDoldur(kaynak) {
+  const buyukKapak = ekran.querySelector('[data-ders-kapak][data-genislik="960"]');
   for (const el of ekran.querySelectorAll('[data-ders-kapak]')) {
     const ders = dersBul(kaynak, el.dataset.dersKapak);
     if (!ders) continue;
@@ -287,6 +290,8 @@ function kapaklariDoldur(kaynak) {
       })
       .then((e) => {
         if (e && e.gorseller && e.gorseller.length) odakliGorsel(el, e, genislik);
+        // 1.80.0: dolu düğmeler dersin kapak tablosunun rengini alır (büyük kapak: Çalış'ta bugünün dersi, ders sayfası)
+        if (e && el === buyukKapak) ekranRengi(e, akimRenk(ders.akim));
       })
       .catch(() => {});
   }
