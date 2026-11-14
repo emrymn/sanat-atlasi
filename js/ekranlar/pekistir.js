@@ -55,6 +55,7 @@ import {
   eserAdi,
   paletHtml,
   yaprakDugmeYazisi,
+  yaprakAyrinti,
   kaynakSatiri,
   ekranRengi,
   renkSabitle,
@@ -1125,10 +1126,9 @@ function tersGoster(o) {
       <p class="sonuc" data-test="sonuc" data-dogru="${dogru}">${ikon(dogru ? 'dogru' : 'yanlis', 18, 2)}<b>${sonuc[0]}</b>${sonuc[1] ? `<span class="sonuc-not">${kacis(sonuc[1])}</span>` : ''}</p>
       <p class="bilgi"><b>${kacis(eserAdi(k.eser))}</b><i>${kacis(`${s.ad} · ${s.akim}`)}</i></p>
       ${secilen ? `<p class="ters-secilen" data-test="ters-secilen">Seçtiğin: ${kacis(eserAdi(secilen.eser))} · ${kacis(d.harita.get(cevap).ad)}</p>` : ''}
-      ${seviyeSatiri(k)}
       ${ipucu ? `<div class="ipucu-kutu" data-ipucu><p class="ipucu">${kacis(ipucu)}</p></div>` : ''}
-      <p class="kaynak-satir">${kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler()))}</p>
       ${karsilastirBag}
+      ${yaprakAyrinti(`${seviyeSatiri(k)}<p class="kaynak-satir">${kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler()))}</p>`)}
       <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="Sanatçı sayfası">${pgDisk('portre', 'umbra')}Sanatçı</a><button class="dugme acik" type="button" data-sonraki>${sonrakiYazi}</button></div>
     </section>`;
   }
@@ -1292,9 +1292,6 @@ function kartGoster(o) {
     yaprak = `<section class="alt-yaprak" aria-live="polite">
       <p class="sonuc" data-test="sonuc" data-dogru="${ikinci || !karisik ? tumDogru : dogru}">${ikon(dogru ? 'dogru' : 'yanlis', 18, 2)}<b>${sonuc[0]}</b>${sonuc[1] ? `<span class="sonuc-not">${kacis(sonuc[1])}</span>` : ''}</p>
       <p class="bilgi"><b>${kacis(bilgi[0])}</b><i>${kacis(bilgi[1])}</i></p>
-      ${kutuSatiri(skor(k.id)[ikinci ? 'akim' : 'sanatci'])}
-      ${seviyeSatiri(k)}
-      <div data-yaprak-palet>${paletHtml(k.palet)}</div>
       ${
         not
           ? o.kip === 'ders'
@@ -1305,8 +1302,8 @@ function kartGoster(o) {
             : `<div class="ipucu-kutu" data-ipucu><p class="ipucu">${kacis(not)}</p></div>`
           : ''
       }
-      ${bildirimSatiriHtml(kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler())))}
       ${karsilastirBag}
+      ${yaprakAyrinti(`${kutuSatiri(skor(k.id)[ikinci ? 'akim' : 'sanatci'])}${seviyeSatiri(k)}<div data-yaprak-palet>${paletHtml(k.palet)}</div>${bildirimSatiriHtml(kaynakSatiri(k.eser, secilenGorsel(k.eser, kotuler())))}`)}
       <div class="yaprak-dugmeler"><a class="dugme" href="#/sanatci/${encodeURIComponent(s.id)}" aria-label="Sanatçı sayfası">${pgDisk('portre', 'umbra')}Sanatçı</a>${ileri}</div>
     </section>`;
   }

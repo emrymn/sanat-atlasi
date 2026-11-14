@@ -287,6 +287,13 @@ function adlariSigdir() {
 
 // Resmin renkleri: genişlik renk payına göre
 // İş 108: cevap yaprağının ana düğmesi: yazı ve yuvarlak içinde ok (ya da bitişte ✓); ok kıpırdar, basınca ileri kayar
+// Cevap yaprağının ikincil satırları (tekrar kutusu, seviye, palet, kaynak ve "hatalı mı?") kapalı bir "Ayrıntılar"
+// başlığının altında durur (1.80.0; Emre: "bu kısım çok kalabalık ve büyük"). Boş içerikte hiçbir şey çizilmez.
+export function yaprakAyrinti(icerik) {
+  if (!icerik.trim()) return '';
+  return `<details class="yaprak-ayrinti" data-test="yaprak-ayrinti"><summary><span>Ayrıntılar</span>${ikon('asagi', 16, 1.8)}</summary><div class="yaprak-ayrinti-ic">${icerik}</div></details>`;
+}
+
 export function yaprakDugmeYazisi(yazi) {
   const bitis = yazi === 'Turu bitir';
   return `<span class="yd-yazi">${yazi}</span><span class="yd-ok" aria-hidden="true">${ikon(bitis ? 'dogru' : 'ileri', 18, 2)}</span>`;

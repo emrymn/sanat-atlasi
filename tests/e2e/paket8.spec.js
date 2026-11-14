@@ -116,6 +116,7 @@ test('İ5: cevap yaprağında ⋯ → "Heykel/mimari" bildirimi', async ({ page 
   await page.goto('./#/pekistir/donem/hepsi');
   await page.locator('[data-test="sanatci-secenekleri"] button').first().click();
   await expect(page.locator('[data-test="sonuc"]')).toBeVisible();
+  await page.locator('[data-test="yaprak-ayrinti"] summary').click(); // 1.80.0: ikincil satırlar "Ayrıntılar"ın altında
   const ac = page.locator('[data-bildir-ac]');
   await expect(ac).toBeVisible();
   // yaprak açılırken hafifçe ölçeklenir; giriş hareketi bitince ölçülür
