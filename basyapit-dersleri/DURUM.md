@@ -1,6 +1,6 @@
 # DURUM — 107 Başyapıt İlerleme Takibi
 
-**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 5 üretimi — 20 eser, PARTI_5_URETIM_RAPORU) · Pilot: Q167605 (Süt Boşaltan Kadın)
+**Sürüm:** 1.0 · **Son güncelleme:** 14 Kasım 2026 (Parti 6 üretimi — Kandinsky; üretim tamam, M13 telif-korumalı 5 eser politika kararı bekliyor) · Pilot: Q167605 (Süt Boşaltan Kadın)
 
 Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt envanteri hazır → Taslak hazır → Doğrulama bekliyor → İnsan incelemesi bekliyor → Yayına aday`. Hiçbir eser otomatik olarak "Yayına aday" yapılmaz; insan editoryal onayı gerekir.
 
@@ -109,7 +109,7 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 | 99 | M12 | Q698487 | Öpücük (Der Kuss) | gustav-klimt | İnsan incelemesi bekliyor ✅ |
 | 100 | M12 | Q471379 | Çığlık (The Scream) | edvard-munch | İnsan incelemesi bekliyor ✅ |
 | 101 | M13 | Q3476580 | Berlin Sokak Sahnesi | ernst-ludwig-kirchner | İnsan incelemesi bekliyor ✅ |
-| 102 | M13 | Q2990634 | Kompozisyon VII | wassily-kandinsky | Araştırılmadı |
+| 102 | M13 | Q2990634 | Kompozisyon VII | wassily-kandinsky | İnsan incelemesi bekliyor ✅ |
 | 103 | M13 | Q175036 | Guernica | pablo-picasso | Araştırılmadı |
 | 104 | M13 | hannah-hoch|Cut with the Kitchen Knife Through the Beer-Belly of the Weimar Republic | Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek | hannah-hoch | Araştırılmadı |
 | 105 | M13 | salvador-dali|The Persistence of Memory | Belleğin Azmi (The Persistence of Memory) | salvador-dali | Araştırılmadı |
@@ -120,8 +120,8 @@ Durum sözlüğü: `Araştırılmadı → Kaynak araştırılıyor → Kanıt en
 
 | Durum | Adet |
 |---|---|
-| İnsan incelemesi bekliyor | 101 (Parti 1: 20 + Parti 2: 20 + Parti 3: 20 + Parti 4: 20 + Parti 5: 20 + pilot Q167605) |
-| Araştırılmadı | 6 (Kandinsky #102 + M13 telif-korumalı 5: #103-107) |
+| İnsan incelemesi bekliyor | 102 (Parti 1-5: 100 + Parti 6 Kandinsky: 1 + pilot Q167605) |
+| Araştırılmadı | 5 (M13 telif-korumalı: #103 Picasso, #104 Höch, #105 Dalí, #106 Magritte, #107 Bacon — politika kararı bekliyor) |
 | Toplam | 107 |
 
 ## Parti Günlüğü
@@ -441,6 +441,23 @@ Claude bağımsız denetim raporu (P0 kritik + P1 yüksek + sistematik) **ham ka
 - #20 Q3476580 (Kirchner, Berlin Sokak Sahnesi, Neue Galerie NY): 76 (A22/B32/C3/D12/E7) · 438/1335/2729 · 0/0. NG canlı + Christie's Wayback 2026-02-22 ($38.096.000, 121.6×91.1) + MoMA Wayback + iade dosyası A. boyut 121×95↔121.6×91.1; tarih 1913↔1913-14; dizi 11↔7. PD (ö.1938). GZ TASLAK.
 
 **PARTİ 5 ÖZET (20/20):** Tümü "İnsan incelemesi bekliyor"; **dogrula 0 hata**, **13 uyarı** (tamamı Munch heuristic kısaltma-bölünmesi yanlış-pozitifi). CJK 0 (Hiroshige/Hokusai KANIT özgün kanji ana oturumda romanize edildi). Toplam iddia **1211 (A492/B292/C74/D165/E188)**; her eserde quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (CS/DY/GZ/TK yalnız A/B); **kelime hedeflerinin TAMAMI aralıkta** (dolgu yok). `dogrula.py --test` **25/25**. Birincil katalog erişimi: Tate (Millais), Clark (Gérôme), Orsay (Bouguereau/Degas/Morisot), ARTIC (Caillebotte), Courtauld (Manet/Cézanne), NGA (Cassatt), Marmottan (Monet), Met API (Hiroshige/Hokusai/Toulouse-Lautrec), NG (Seurat), MoMA (Van Gogh), MFA (Gauguin), Kröller-Müller (Redon), Belvedere (Klimt), Nasjonalmuseet (Munch), Neue Galerie (Kirchner) AÇILDI → güçlü A (çoğu canlı 403/404 → Wayback arşiv tarihli). **Vision bütçesi tüketildiğinden 20 eserin tümünde görsel İNCELENEMEDİ (E)**; GZ 5/5 TASLAK. Erotik/şiddet/hassas konular (Bouguereau, Klimt, Gauguin, Gérôme, Munch) akademik ve açık ayrıntısız. Kritik kimlik bulguları: Hokusai gösterilen baskı Red Fuji (~1930 reprodüksiyon); Cézanne seri maddesi Courtauld versiyonu; Munch resim grubu 1893 NM versiyonu; Hiroshige gösterilen nüsha LoC. Kalıcı sınır: insan editör görsel + birincil teyidi ZORUNLU; hiçbir eser "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1-4 değişmedi; yalnız `content-review` commit/push. **M13 #103-107 telif politikası kararına kadar ertelendi.**
+
+### Parti 6 (1 eser) — M13 Kandinsky (üretim tamamlandı)
+
+**Kapsam:** MUFREDAT sırasında kalan tek üretilebilir eser: Kandinsky Kompozisyon VII (#102). Ayrıntılı rapor: `PARTI_6_URETIM_RAPORU.md`. M13 #103-107 (Picasso/Höch/Dalí/Magritte/Bacon) TR/AB'de telif korumalı olduğundan MUFREDAT telif uyarısı gereği **kullanıcının telif politikası kararına kadar ERTELENDİ**.
+
+| Sıra | Anahtar | Eser | Sanatçı | Durum |
+|---|---|---|---|---|
+| 1 | Q2990634 | Kompozisyon VII | Wassily Kandinsky | İnsan incelemesi bekliyor ✅ |
+
+**Parti 6 ilerleme:** 1/1 tamamlandı — **PARTİ 6 BİTTİ. ÜRETİM TAMAMLANDI (102/107).** Kalan 5 eser (M13 #103-107) telif politikası kararı bekliyor.
+
+**Üretim günlüğü:**
+- 14 Kasım 2026 — #1 Q2990634 (Kandinsky, Kompozisyon VII, Tretyakov): 54 (A17/B24/C2/D4/E7) · 416/1329/2714 · 0/0. Tretyakov canlı 200 + Wayback 2026-01-02 + Pompidou 200 A (İnv.13230, 200×300, 1913, 1929 GMNZI girişi; 30+ eskiz, 25-28 Kasım 1913 icrası). D: boyut 200×300↔200.6×302.2, Pompidou tarih tutumu, provenans, tema, icra süresi. E003: itwiki "Münih" + "ilk üç Kompozisyon WWII" atıf zinciri doğrulanamadı. Görsel PD (GAC), İNCELENEMEDİ → GZ TASLAK.
+
+**PARTİ 6 ÖZET (1/1):** "İnsan incelemesi bekliyor"; dogrula 0 hata/0 uyarı; CJK 0 (Kiril korundu); kelime aralıkta; quiz 10 CS + 5 DY + 5 GZ + 5 AU + 5 TK (yalnız A/B). `dogrula.py --test` 25/25. **Tüm repo dogrula 0 hata.** Birincil Tretyakov A. Kalıcı sınır: insan editör görsel + birincil teyidi ZORUNLU; "Yayına aday" değil. Uygulama kodu/`data/`/pilot/Parti 1-5 değişmedi; yalnız `content-review` commit/push.
+
+**ÜRETİM SONU:** 107 eserin 102'si üretildi (pilot + Parti 1-6), tümü "İnsan incelemesi bekliyor". Kalan 5 (M13 #103-107: Picasso Guernica, Höch Weimar, Dalí Belleğin Azmi, Magritte İmgelerin İhaneti, Bacon Çarmıha Geriliş) TR/AB'de telif korumalı (Picasso 2044, Höch 2049, Dalí 2060, Magritte 2038, Bacon 2063); MUFREDAT gereği görsel yeniden yayımlamadan ve hak politikası kararına bağlı olarak hazırlanabilir — **kullanıcının telif politikası kararı bekleniyor.**
 
 ### Veri Notları (mevcut veri DEĞİŞTİRİLMEDİ — onaya sunulur)
 

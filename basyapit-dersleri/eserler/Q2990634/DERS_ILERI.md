@@ -1,0 +1,109 @@
+# KOMPOZİSYON VII — İleri Düzey Ders (20 dakika)
+
+**Eser:** Wassily Kandinsky, *Композиция VII / Composition VII*, 1913 · Tretyakov Gallery, Moskova · İnv.13230 [C001][C002][C005][C006]
+
+**Ön koşul:** Başlangıç + Orta dersler. **Yöntem beyanı:** Bu ders birincil katalog (S4/S5), Pompidou kaydı (S8) ve atıf zincirli itwiki (S3) üzerinden kurulur; görsel bu oturumda İNCELENMEMİŞTİR, biçimsel her betim kaynak metnine dayanır ve GZ soruları TASLAK'tır [C051] (belirsiz). S3 kaynakçasındaki literatürün metinlerine erişilmemiştir [C052] (belirsiz).
+
+## 1. Kimlik ve yöntem: birincilin iç sınırları
+
+Birincil Tretyakov kaydı (masterpiece 10873) canlı olarak açılmıştır (HTTP 200, 2026-11-14); `lang=en` parametresi Rusça SSR içerik döndürdüğünden künye Rusça aslından alınmıştır [S4]. itwiki kaynakçasının atıf verdiği 2026-01-02 tarihli Wayback kopyası da çekilmiş ve aynı künyeyi teyit etmiştir [S5]. Bu arşiv kopyası canlı erişim engelli olduğu için değil, itwiki'nin atıf verdiği sürümü doğrulamak için çekilmiştir; arşiv tarihi 2026-01-02T11:02:01Z olarak beyan edilir [S5]. Kayıt şu alanları birebir verir: "Кандинский Василий (1866-1944)", "Композиция VII", "1913", "Размер - 200 x 300", "Материал - холст", "Техника - масло", "Инвентарный номер - Инв.13230" [C001][C002][C003][C004][C006]. Giriş alanı: "Поступило из Государственного музея нового западного искусства. 1929" [C007]. `__NUXT__` nesnesindeki `invnum` ve `waydat` alanları görünür metinle örtüşür [C006][C007].
+
+Wikidata tek başına A düzeyi için yeterli görülmemiştir: P571=1913 (precision=yıl) ve P1480 "circa" niteleyicisi YOKTUR; P217 (envanter) hiç yoktur; boyut referansı 2018 tarihli Commons kategorisidir, P571 referansı DBpedia'dır [C017]. Bu yüzden envanter ve boyut birincilden teyit edilmiştir [C004][C006]. Boyut ihtilafı açıktır: birincil 200 × 300 cm ↔ en/it infobox 200,6 × 302,2 cm (satır içi atıfsız) ↔ kandinsky.net 200,0 × 300,0 cm (78,7 × 118,1 inç); birincil değer esas alınır, infobox değeri ancak atıf zinciri kurulursa kullanılabilir [C042] (tartışma). Alternatif başlık "Zu Komposition 7" itwiki'de Dabrowski & Oldenburg pp. 40-41 atfıyla verilir; bu B düzeyli bir aktarımdır [C053]. Hareket (movement) sınıflandırmasında da kaynak eleştirisi gerekir: WD P135'in Expressionism + abstract art referansı bir wordpress blogudur, akademik değildir; bu yüzden hareket bağlamı için itwiki'nin Blaue Reiter / ekspresyonizm çerçevesi tercih edilir [C047] (belirsiz).
+
+## 2. Tarih ve provenans: Odessa'dan Moskova'ya
+
+Eserin kamusal hayatı savaşla iç içedir. İlk sunum 1914'te Odessa Sanat Müzesi'nde, altmış başka eserle birlikte gerçekleşmiş; eleştirmenler tabloyu "tükenmez potansiyeli" olan bir müzik kompozisyonuna benzetmiştir [C019][C034]. Birinci Dünya Savaşı başlayınca Kandinsky Rusya'ya dönmüş ve Odessa Osmanlı donanmasının bombardımanı altındayken, 12–20 Aralık 1914 arasında sergide kalan tablolarını kurtarmıştır [C020]. Nisan 1915'te Tretyakov'da, Mayakovski'nin de katıldığı karma sergide tuval müze tarafından satın alınmıştır [C018]. Birincil kaydın verdiği giriş ise 1929'da GMNZI'dendir [C007]. Bu iki olay çelişmez, farklı olaylardır; ancak 1915 satın almasından 1929 GMNZI girişine uzanan ara dönem — eserin GMNZI'ye ne zaman ve nasıl geçtiği — erişilen hiçbir kaynakta belgelenmez ve bu boşluk uydurulmaz [C050] (belirsiz). Yöntemsel ders şudur: provenans zincirinde belgeli halkalar (1914 sunum, 1915 satın alma, 1929 giriş) ile belgesiz ara adım açıkça ayrılır; ikincil bir anlatının akıcılığı, kanıt boşluğunu doldurma yetkisi vermez.
+
+Yapım yeri ve dizi kronolojisi itwiki üzerinden gelir: ilk yedi Kompozisyon Ocak 1910 – Kasım 1913'te Münih'te; VIII 1923 Weimar Bauhaus; IX 1936, X 1939 Paris [C021]. İlk üç Kompozisyon'un (1910, Alman özel koleksiyonları) İkinci Dünya Savaşı'nda yok edildiği, geriye yalnız siyah-beyaz fotoğraflar ve hazırlık eskizleri kaldığı aktarılır [C033]. Kaynak eleştirisi zorunludur: itwiki bu iki ifadeyi Tretyakov kaynağına atfeder, oysa canlı ve arşiv katalog metinlerinde bu cümleler yoktur; canlı HTML'deki "Мюнхен" geçişleri başka eserlerin (Vereshchagin vb.) kayıtlarına aittir. Atıf zinciri doğrulanamadığından bu iddialar B düzeyinde, notla tutulur [C049] (belirsiz).
+
+## 3. Hazırlık süreci: doğrusal olmayan otuz çalışma
+
+Müze metni hazırlık birikimini "otuzdan fazla eskiz, etüt ve eskiz" olarak sayar: küçük kurşun kalem taslakları, kalem çizimleri, suluboyalar ve bir metreyi aşan yağlıboya tuval etütleri; çoğu 1913 sonbaharına tarihlenir [C008]. itwiki/Dabrowski & Oldenburg bu birikimi üç teknik gruba ayırır — otuzdan fazla çizim, altı büyük yağlıboya etüdü, benzer konulu on beş varyant — ve kesin kronolojik sıranın kurulamayığını vurgular: süreç doğrusal değildir, sanatçı kimi çalışmalara yoğunlaşıp kimilerini bırakır, motifleri aynı anda defalarca eler ve geri alır; hangi denemenin nihai esere ne götürdüğüne dair kesin bir kanıt yoktur [C022]. Masoero'nun yorumu paradoksaldır: hazırlık bolluğuna karşın yaratıcı süreç sanatçının zihninde zaten tamamlanmıştır; kimi hazırlıklar başlı başına bağımsız resim sayılabilir [C022]. Bu geniş eskiz corpusu, "kompozisyon"ların yavaş ve bilinçli kurulması ilkesinin somut arşividir; hazırlık niceliği ile icra kısalığı arasındaki bağ bu arşiv üzerinden okunabilir (yorum) [C008][C028].
+
+Bu plastik çözümleme, büyük tuvalin icrasını kısaltmıştır: müze "kelimenin tam anlamıyla birkaç gün — 25 ile 28 Kasım 1913 arası" der [C009]. Gün sayısı söylemi kaynaklar arasında ayrışır: müze "birkaç gün", Bell (Münter tanıklığına dayanarak) "üç buçuk gün", kandinsky.net "yalnızca dört gün"; tarih aralığı tümünde aynıdır, ifade farkı ihtilaflıdır [C045] (tartışma). Sürecin görsel belgeleri Münter'in fotoğraflarıdır; Münter o dönem sanatçının yol arkadaşıdır ve tanıklığı Bell üzerinden aktarılır [C023]. Kandinsky'nin kendi ifadesiyle biçimler "kendiliğinden" gelmiştir: "Kullandığım tüm biçimler bana 'kendiliğinden' geldi; ya gözümün önünde tümüyle hazır belirirdi — onları kopyalamak kalırdı — ya da çalışmanın mutlu saatlerinde, işin içinde oluşurlardı" [C011]. Bu beyan, hazırlığın niceliğiyle icranın kısalığı arasındaki gerilimi aydınlatır: uzun hazırlık, biçimlerin "hazır" belirmesini mümkün kılan zihinsel olgunlaşmadır; kısa icra ise bu olgunluğun tuvale aktarımıdır (yorum) [C011][C022].
+
+## 4. İkonografi tartışması: Apokalips mi, Son Yargı mı?
+
+Üç okuma katmanı vardır. (a) Müze metni (A): tema Apokalips birliğidir; önceki figüratif eserlerin yankıları — borazan melekler, atlı, İlyas peygamberin ateş arabası — maddenin gözümüzün önünde dönüşmesi hissini üretir [C010]. (b) Dabrowski & Oldenburg (B): V–VI–VII üçlemesi dinsel altyapı paylaşır; V Diriliş (17 Kasım 1911), VI Tufan (5 Mart 1913), VII'nin genel teması Son Yargı'dır; 1912 "Giudizio finale" ile kompozisyon/tema/ikonografi sürekliliği vardır [C024]. (c) kandinsky.net/enwiki (C, zayıf zincir): Diriliş + Son Yargı + Tufan + Cennet kombinasyonu (yorum) [C040]. Bu vurgular arasındaki gerilim bir "kesin hata" değil yorum farkıdır; data/eser_notlari'nin "tufan temasını işleyen" ifadesi kombinasyon görüşüyle kısmen uyumlu, Dabrowski'nin VI'ya özgülediği Tufan vurgusuyla gerilimlidir [C044] (tartışma).
+
+Gizli ikonografi ayrı bir tartışmadır. Washton Long'un aktardığına göre Kandinsky "örtülü ikonografi"nin "ifade araçları cephaneliğini" zenginleştirdiğini düşünüyordu [C032]. Robbins, gençlik eserlerindeki motiflerin (atlılar, kubbeli şehirler, sütunlar, yelkenliler, kürekler, toplar, duman, şimşekler, dağlar, çan kuleleri) 1910'da bile öylesine dönüştürüldüğünü, bugün çoğu izleyicinin onları tanımakta zorlandığını yazar; VII'de dış kabuktan içsel anlama geçiş o denli tamamdır ki "atlı" (sol alt), "şimşek" (sağ üst/orta), "tepedeki kubbeli şehir" (merkezin hemen üstü) gibi belirli figürleri izlemek "yersiz — hatta düpedüz yanlış" olabilir [C032]. Yine de bazı araştırmacılar kalıntıların, fenomenal dünyayla giderek dolaylılaşan bir ilişkide de olsa sürdüğünü savunur; soyut ile figüratif arasında yalnızca derece ve incelikli niyet farkı vardır [C032]. Bu, Kandinsky'nin gizli motif kuramıyla örtüşür: başlangıç figürasyonu renk ve özgür biçimde çözülürken, figürasyon kalıntıları izleyicinin özgün figüratif temaları (V, VI, VII'de) bulmasına hâlâ izin verir [C054]. data'nın "bu izlerin ne kadar okunabilir olduğu tartışmalıdır" notu bu literatürle uyumludur [C032].
+
+## 5. Renk, ses ve "kürelerin müziği"
+
+Müze metni, büyük boyutun "dalma" ve olaya katılma etkisi yarattığını söyler; sanatçıyı yalnızca seyretmeye değil yaratıcı sürece katılmaya davet eden alıntı şudur: "Resim, farklı dünyaların gürültülü çarpışmasıdır; bu dünyalar mücadele yoluyla ve bu mücadelenin ortasında, eser denilen yeni bir dünya yaratmaya çağrılmıştır. Her eser teknik olarak da kozmosun doğduğu gibi doğar; bir orkestranın kaotik uğultusuna benzer felaketlerden geçer ve sonunda kürelerin müziği adlı bir senfoniye dökülür. Eserin yaratılması, evrenin yaratılmasıdır" [C013]. Renk–ses eşdeğerliği literatürde somutlanır: Kandinsky mavi üzerine "açık mavi flüte benzer, mavi viyolonselye, çok koyulaşınca kontrbasa, en koyu ve ağır boyutunda orgun derin sesine" der [C027]. "Titreşim" kavramı teosofik bir yankı taşır: ruhun, elementlerin gürültüsünde kaotik tınlayan kozmosun sesiyle uyumu [C027]. VI ve VII, renk araştırmasının zirvesi ve "içsel tını"nın somut ilk tam ifadesi sayılır; biçim ne denli soyutsa "saf ses" o denli derinden duyulur, biçimlerin anlamına baskın gelir ve ruhu doğrudan sarsarak "nesnesiz bir duygu" üretir [C027]. Müzikal bağ kişiseldir: Kandinsky viyolonsel çalardı; Wagner (Lohengrin), Schönberg, Skryabin ve Debussy'de "doğal güzellikten kurtuluş"u, akustik değil psişik deneyimi görürdü [C034]. Bu müzikal soyutlama, resmin "içerik"ten kurtuluşu arayışıyla paraleldir; Odessa eleştirmenlerinin tabloyu bir müzik kompozisyonuna benzetmesi bu algının erken bir tanığıdır [C034].
+
+## 6. "Kompozisyon" kavramı ve içsel zorunluluk
+
+"Kompozisyon" Kandinsky için en yüksek ve en karmaşık sanat formudur [C011]. "Sanatta Ruhsallık Üzerine" (Aralık 1911) üç türü tanımlar: İzlenimler dış doğanın doğrudan izlenimleri; Doğaçlamalar çoğunlukla bilinçsiz, iç doğanın izlenimleri; Kompozisyonlar ise ilk taslaklardan sonra uzun süre ve neredeyse titizlikle yeniden ele alınan, yavaş oluşan ifadelerdir — bilinç, niyet ve etkililik baskındır, ama "son tahlilde her zaman duygu üstün gelir" [C028]. "İçsel zorunluluk" (innere Notwendigkeit) 1910'da formüle edilmiştir: biçimin yaratılışına, içsel hayatın belirlenimi olarak başkanlık eden aciliyet [C028]. Malquori'nin çerçevesinde Kandinsky içsel içerik ile dışsal araçlar arasındaki ayrımı kaldırır: içeriğin kendisi dünyanın bir parçası olmadığı gibi, bu görünmez içeriği ifade eden araçlar da anlam ve derin gerçekliklerinde "içsel" olarak tasarlanmalıdır [C027][C028].
+
+Bu kuramın tarihsel zemini 1910 dönüşüdür: Kandinsky klasik Rus edebiyatının motif ve temalarından uzaklaşmış, daha imalı ve ruhsal, Sembolizm'i andıran bir öğeye yönelmiştir; mistik nüanslı Rus sembolizmi işinin içine doğuşmuştur [C054]. Temsil dışı sanatı, ruhsalı iletmek için tek uygun araç olarak görmüş; resimleri gizli motiflerden türeyen soyutlamalar olarak kurmuştur — figürasyon renk ve özgür biçimde çözülürken kalıntılar izleyicinin özgün temayı bulmasına izin verir [C054]. Sanatçının beyanı bu kuramı doğrular: VII'de biçimler icat edilmemiş, imgelenimde beliren şey yalnızca yönlendirilmiş ve düzeltilmiştir [C011]. Böylece "kompozisyon", rastgele bir biçim yığını değil, içsel zorunluluğun bilinçli ve uzun emekle dışsallaşmasıdır (yorum) [C011][C028].
+
+## 7. Felsefi ve estetik analiz (açıkça yorum)
+
+Bu bölüm olgusal iddia değil, açıkça işaretli yorumdur (yorum). Müzenin aktardığı "eserin yaratılması evrenin yaratılmasıdır" alıntısı, bir kozmogoni estetiği olarak okunabilir: tuval, kaotik uğultudan senfoniye geçen bir kozmos modeli gibidir [C013]. Bu okumada "kürelerin müziği" (musica universalis) geleneği, eserin başlığındaki müzik terimiyle birleşir; yapıt, duyulur bir armoni değil, renk ve çizginin gerilimli uzlaşısı olarak bir "dünya kurma" önerisi gibi durur (yorum) [C013][C011]. Kant'ın "yüce" (sublime) kavramı gibi ödünç kavramlar burada yalnızca bir okuma merceğidir; Kandinsky'nin bu düşünürlerden etkilendiği iddia EDİLMEZ, tarihsel kanıt sunulmamıştır (yorum). Kaos ile düzen arasındaki geçiş, yüce deneyiminin klasik yapısını — önce kavrayışı aşan bir bolluk, sonra bu bolluğun bir biçim altında toplanması — çağrıştırır; ne var ki bu bir benzetmedir, eserin felsefi kaynağı değil (yorum) [C013].
+
+"Nesnesiz duygu" (Malquori) ve "içsel tını" (Masoero) ifadeleri, eserin temsil dışı bir duygulanım üretme savını destekler; bu sav, izleyicinin etkin imgelenimini zorunlu kılan müze betimiyle örtüşür [C027][C012]. İzleyici, tanınabilir bir nesnenin güvenliğinden yoksun bırakıldığında, anlamı kendi sezgisiyle kurmak zorunda kalır; müzenin "aktif fantazi katılımı" vurgusu bu estetik sözleşmeyi tarif eder (yorum) [C012]. Apokaliptik tema ile "kaotik sevincin olası yeniden doğuşu" (Bell) arasındaki gerilim, eseri bir yıkım imgeleri toplamı olmaktan çıkarıp umut çığlığı olarak okumaya olanak tanır; bu, kaynaklı bir yorumdur ve kesin ikonografik sonuç değildir (yorum) [C038]. Son olarak, "kenar"ın yapıya sızması (Turchin), sanatçının kendi resmini bir seyirci gibi izleme girişimi (Hermann) olarak okunabilir: resim, hem sahne hem de sahneye bakan bir bilinç gibi katmanlaşır (yorum) [C037].
+
+## 8. Karşılaştırmalı metodoloji
+
+Üçleme karşılaştırması tema üzerinden kurulur: VI'nın yıkıcı tufan dalgalarına karşılık VII'de "kaotik sevincin olası yeniden doğuşu" seçilebildiği; eserin, yaklaşan Birinci Dünya Savaşı ve Rus Devrimi'nin şiddetine karşı coşkulu bir umut çığlığı olarak okunduğu aktarılır [C038]. Dabrowski, eserin materyalist çağa dair kaygıları ve yeni ruhsal çağa dair umutları ifade ettiğini, sanatı kurtuluş aracı kıldığını yazar [C038]. Düchting'in karşıt okuması, sanatçının nadiren bu denli müzikal ve neredeyse oyuncu bir ruh halinde olduğunu; koyu/açık, karmaşık/elementer karşıtlıklarının gerçek bir "senfoni" kurduğunu, eskizler ve Münter tanıklığı ışığında sanatçının bu eseri yaratırken eğlenmiş olabileceğini söyler [C039]. İkonografik kaynak karşılaştırması için Cornelius'un "Son Yargı" freski (1836–39, Münih Ludwigskirche, altar üstü), 17. yüzyıldan beri popüler Rus lubok baskıları, 15. yüzyıl Almanca İncil gravürleri, Fransız/Rus Sembolizmi ve Jugendstil (Peter Behrens'in evokatif ama esasen düz, iki boyutlu, ilk bakışta okuma anahtarı vermeyen işleri) sayılır [C031].
+
+"Kenar" motifi karşılaştırmalı bir seri oluşturur: çizili kenar, "Beyaz Kenarlı Resim" ve "Kırmızı-Mavi Halkalı Doğaçlama" (1913) ile başlar, "Üç Lekeli Resim" (1914, Thyssen) ile açıkça görünür olur; bu, sanatçının kendi resmini seyirci olarak izleme niyetinin gelişimidir [C037]. Suluboya karşılaştırması yöntemsel bir uyarı taşır: Pompidou kaydı eseri "Sans titre / Première abstraction" olarak, "Composition VII" adı geçmeden kaydeder; VII ile bağ yalnız Dabrowski kataloğunun alternatif başlığıyla kurulur [C014][C030]. Suluboyanın grafit + Çin mürekkebi + suluboya / kâğıt tekniği, büyük tuvalin yağlıboya yoğunluğundan farklı bir hazırlık katmanıdır; kâğıt üzerindeki bu çalışma kompozisyonun çizgisel iskeletini önceler (yorum) [C014][C003]. Tarih tartışması açıktır: imza "1910", güncel kayıt "1913"; Nina 1910, Dabrowski 1913 der; itwiki Pompidou'nun "1910 o 1913" temkinini aktarır ama canlı kayıt "1913" gösterir [C029][C043] (tartışma). "İlk soyut eser" iddiası kesinleştirilmemiştir; enwiki Context af Klint, Delaunay, Kupka gibi öncüleri birlikte anar [C048] (belirsiz). enwiki'nin eseri Kübizm ve Fütürizm özellikleriyle ve Delaunay/Picabia/Kupka/Survage/Mondrian/af Klint'in soyut işleriyle benzeştirmesi, Artsy atıflı zayıf zincirli bir konumlandırmadır ve yorum olarak alınmalıdır (yorum) [C041].
+
+## 9. Akademik tartışmaların envanteri
+
+- **D001 Boyut (C042):** birincil 200 × 300 ↔ infobox 200,6 × 302,2 (atıfsız) ↔ S7 200,0 × 300,0; birincil esas [C042] (tartışma).
+- **D002 Pompidou tarih tutumu (C043):** itwiki "1910 o 1913" temkinini aktarır ↔ canlı kayıt "Date de création 1913"; inskripsiyonda 1910 imzası ayrıca kayıtlı [C043] (tartışma).
+- **D004 Tema vurgusu (C044):** Son Yargı (S3) ↔ kombinasyon (S2/S7) ↔ Apokalips (S4) ↔ data "tufan"; yorum farkı [C044] (tartışma).
+- **D005 İcra süresi (C045):** "birkaç gün" ↔ "üç buçuk" ↔ "dört"; aralık 25–28 Kasım'ta aynı [C045] (tartışma).
+- **E001 "İlk soyut eser" (C048):** kesinleştirilmedi; "kurucu eserlerinden" ifadesi kaynaklarla uyumlu [C048] (belirsiz).
+- **E002 Suluboya tarihi (C029/C043):** 1910 imza ↔ 1913 kayıt/stil; ihtilaf aynen korunur [C029][C043] (tartışma).
+- **E003 Atıf zinciri (C049):** Münih + ilk üçün yok oluşu Tretyakov'a atıflı ama katalog metninde yok; doğrulanamadı [C049] (belirsiz).
+- **E004 Kronoloji (C022):** hazırlıkların kesin sırası kurulamaz; süreç doğrusal değil [C022].
+- **E005 İkonografi okunabilirliği (C032):** Robbins figür izlemeyi yanlış bulur; bazıları kalıntıları savunur [C032].
+- **E006 WD P135 (C047):** hareket referansı wordpress blogu; akademik değil, zayıf [C047] (belirsiz).
+- **E007 data etki iddiası (C046):** "soyut ekspresyonizmi etkiledi" erişilen kaynaklarda desteksiz [C046] (belirsiz).
+- **E008 inskripsiyon rendering (C015):** "KANDINSKY i9i0//Aquarelle i9i0 /(abstraite)" sitenin kendi gösterimi; normalize EDİLMEDİ, aynen korundu [C015].
+- **D003 provenans boşluğu (C050):** 1915→1929 ara adımı belgesiz; uydurulmaz [C050] (belirsiz).
+
+## 10. Küratöryel anlatı — birleştirici okuma
+
+Birleştirici çerçeve şudur: Kompozisyon VII, uzun ve doğrusal olmayan bir hazırlık birikiminin [C008][C022] birkaç günlük yoğun icraya [C009] sıkıştığı, "kompozisyon"u en yüksek form olarak kuran bir olgunluk eseridir [C011][C012]. Teması Apokalips/Son Yargı ekseninde, gizli ikonografisi tartışmalı bir soyutlamadır [C010][C024][C032]. Renk–ses eşdeğerliği ve "kürelerin müziği" kozmogonisi, eseri temsil dışı bir içsel zorunluluk sanatı olarak konumlar [C027][C013][C028]. Boyut ihtilafı ve provenans boşluğu gibi sınırlar, sunum metninde dipnot olarak değil, anlatının açık bir parçası olarak verilmelidir (yorum) [C042] (tartışma)[C050] (belirsiz). Provenansı savaş, kurtarma, satın alma ve müze devriyle örülüdür; belgesiz ara adımlar ve atıf zinciri kırıkları açıkça beyan edilir [C050] (belirsiz)[C049] (belirsiz). Görsel incelenmediğinden biçimsel her betim kaynaklıdır ve insan editör teyidi bekler [C051] (belirsiz). Küratöryel sunumda eserin "ilk soyut" mitiyle değil, kaynakların desteklediği "kurucu ve olgunluk eseri" çerçevesiyle anılması önerilir (yorum) [C025][C048] (belirsiz).
+
+## 11. Seminer etkinlikleri
+
+1. Birincil kayıt ile infobox boyutunu karşılaştırın; hangi değerin neden esas alındığını kaynak hiyerarşisiyle savunun [C004][C042] (tartışma)[C017].
+2. Apokalips (A), Son Yargı (B), kombinasyon (C) okumalarını düzeyleriyle eşleyin; data "tufan" notunu bu çerçevede değerlendirin [C010][C024][C040][C044] (tartışma).
+3. itwiki'nin Tretyakov atıflı Münih/WWII ifadelerini canlı+arşiv katalogla sınayın; atıf zinciri kırığını raporlayın [C021][C033][C049] (belirsiz).
+4. Suluboya tarih tartışmasını (imza/kayıt/Nina/Dabrowski/Pompidou tutumu) kaynaklara atfederek yazın; "i9i0" rendering'ini normalize etmeden koruyun [C015][C029][C030][C043] (tartışma).
+5. "Eserin yaratılması evrenin yaratılmasıdır" alıntısını bir kozmogoni estetiği olarak yorumlayın; etki iddiası kurmadan felsefi okuma yapın [C013][C011].
+
+## 12. Kaynakça
+
+**Erişilen birincil:** Tretyakov Gallery, masterpiece 10873 (canlı, 200, 2026-11-14) [S4]; aynı kaydın Wayback kopyası (arşiv 2026-01-02, 200) [S5]; Centre Pompidou, "Sans titre / Première abstraction" (AM 1976-864, 200) [S8].
+**Erişilen ikincil:** itwiki "Composizione VII" (Vetrina, akademik kaynakçalı) [S3]; enwiki "Composition VII" ("Expand Italian", May 2026) [S2]; wassilykandinsky.net work-36 (zayıf derleme) [S7].
+**Yardımcı/görsel:** Wikidata EntityData + labels [S1][S9]; Commons imageinfo (PD-Art; Google Art & Culture kredisi; 7015 × 4661; İNCELENMEDİ) [S6]; yerel data (salt-okunur) [S10].
+**Kaynakçada anıldı, metnine erişilmedi [C052] (belirsiz):**
+
+| Eser | Künye (yalnız S3 bibliyografyasından) | Statü |
+|---|---|---|
+| Bell 2021 | "1001 dipinti", Atlante, p. 618 | metne erişilmedi |
+| Dabrowski 1995 | MoMA dergi no. 19, pp. 10-13 | metne erişilmedi |
+| Dabrowski & Oldenburg 1995 | "Kandinsky Compositions", MoMA | metne erişilmedi |
+| Düchting 2017 | Taschen | metne erişilmedi |
+| Fallone 2015 | Milwaukee Art Museum blog | metne erişilmedi |
+| Fiorino 2020 | iltempoimpresso.com | metne erişilmedi |
+| Hermann 2023 | Silvana Editoriale | metne erişilmedi |
+| Kandinskij | "Du Spirituel dans l'art", Sers ed., Gallimard 1989 | metne erişilmedi |
+| Malquori 2016 | Areté I, pp. 229-243 | metne erişilmedi |
+| Masoero 2017 | MUDEC/24 ORE Cultura, pp. 38-55 | metne erişilmedi |
+| Guggenheim 1982 | "Kandinsky in Munich 1896-1914" | metne erişilmedi |
+| Nigro Covre 2012 / 2014 | Art e Dossier 287 / Giunti | metne erişilmedi |
+| Robbins 1963 | Art Journal 22/3, pp. 145-147 | metne erişilmedi |
+| Tanzola 2023 | Il Chaos | metne erişilmedi |
+| Tordella 1992 | Pockets Electa | metne erişilmedi |
+| Turchin 2013 | InCoRM Journal, pp. 40-44 | metne erişilmedi |
+| Washton Long 1975 | Art Journal 34/3, pp. 217-228 | metne erişilmedi |
+| Weiss 1975 | Burlington Magazine 117/866, pp. 270-279 | metne erişilmedi |
+
+Bu künyeler yalnız erişilen S3 kaydının bibliyografyasından alınmıştır; uydurma bibliyografya yoktur. Ayrıntılı envanter ve iddia–kaynak eşlemesi: `KANIT_DOSYASI.md`.
