@@ -287,6 +287,13 @@ function adlariSigdir() {
 
 // Resmin renkleri: genişlik renk payına göre
 // İş 108: cevap yaprağının ana düğmesi: yazı ve yuvarlak içinde ok (ya da bitişte ✓); ok kıpırdar, basınca ileri kayar
+// Cevap yaprağının ikincil satırları (tekrar kutusu, seviye, palet, kaynak ve "hatalı mı?") kapalı bir "Ayrıntılar"
+// başlığının altında durur (1.80.0; Emre: "bu kısım çok kalabalık ve büyük"). Boş içerikte hiçbir şey çizilmez.
+export function yaprakAyrinti(icerik) {
+  if (!icerik.trim()) return '';
+  return `<details class="yaprak-ayrinti" data-test="yaprak-ayrinti"><summary><span>Ayrıntılar</span>${ikon('asagi', 16, 1.8)}</summary><div class="yaprak-ayrinti-ic">${icerik}</div></details>`;
+}
+
 export function yaprakDugmeYazisi(yazi) {
   const bitis = yazi === 'Turu bitir';
   return `<span class="yd-yazi">${yazi}</span><span class="yd-ok" aria-hidden="true">${ikon(bitis ? 'dogru' : 'ileri', 18, 2)}</span>`;
@@ -499,6 +506,8 @@ export const sekmeKokuMu = (adres) => SEKME_ADRESLERI.includes(adres === '' || a
 
 // etkin: sekme kimliği; null → sekme çubuğu yok (pekiştirme kartı).
 // Çubuk bir kez kurulur; sonra yalnızca seçili sekme ve elmas işaret güncellenir (işaret kayarak geçer).
+// Pigment (1.80.0): Çalış'ın simgesi fırça (alıştırma). Galeri'nin simgesi Emre'nin isteğiyle değişmedi.
+const SEKME_IKONU = { pekistir: 'firca' };
 export function sekmeleriCiz(etkin) {
   const nav = document.getElementById('sekmeler');
   document.documentElement.classList.toggle('sekmesiz', etkin === null);
@@ -510,7 +519,7 @@ export function sekmeleriCiz(etkin) {
   if (!nav.querySelector('.sekme-isaret')) {
     nav.innerHTML =
       '<span class="sekme-isaret" aria-hidden="true"></span>' +
-      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}">${ikon('sekme-' + id, 22, 1.5)}<span>${ad}</span></a>`).join('');
+      SEKMELER.map(([id, ad, hash]) => `<a href="${hash}" draggable="false" data-sekme="${id}">${ikon(SEKME_IKONU[id] || 'sekme-' + id, 22, 1.5)}<span>${ad}</span></a>`).join('');
     sekmeSurukle(nav);
     hizliAyarKur(nav); // İş 172: çubuğun üst kenarındaki dişli dil ve hızlı ayarlar yaprağı
   }
