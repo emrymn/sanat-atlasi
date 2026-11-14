@@ -264,6 +264,9 @@ function devasaGoster() {
   dugme('[data-devasa-durdur]').hidden = !suruyor;
   dugme('[data-devasa-sil]').hidden = suruyor;
   if (!mesaj) return;
+  // İş 174: indirme sürerken her görselde değişen sayaç ekran okuyucuda art arda okunmasın (ilerleme çubuğu var);
+  // sonuç iletisi (bitti, durdu, yer yok) yine okunur
+  mesaj.setAttribute('aria-live', suruyor ? 'off' : 'polite');
   mesaj.className = 'mesaj' + (i.yerYok || i.inemedi || (i.bitti && i.hata) ? ' hata' : i.bitti ? ' tamam' : '');
   const toplam = telefonToplamBayt();
   const kac = toplam && i.hepsi ? ` · ~${gb(Math.min(toplam, i.oncedenBayt + i.bitenBayt))} / ${gb(toplam)} GB` : '';

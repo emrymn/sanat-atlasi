@@ -15,7 +15,13 @@ export function genisEserSorgusu(qid) {
   ${resimSuzgeci('?item')}
   ?item wdt:P18 ?img .
   ?item wikibase:sitelinks ?sl .
-  OPTIONAL { ?item wdt:P571 ?inc . }
+  # İş 174: on yıl ya da daha ince hassasiyetteki (precision >= 8) tarih; yüzyıl ve binyıl alınmaz; "15. yüzyıl" 1500 diye okunmasın
+  # kaba tarihte (yüzyıl) "en erken tarih" (P1319) ya da başlangıç (P580) niteleyicisi on yıl ya da daha inceyse o; o da
+  # yoksa ve değer yuvarlak değilse (1529 gibi; yanlışlıkla yüzyıl hassasiyetiyle girilmiş) değerin kendisi. 1500, 1650 alınmaz.
+  OPTIONAL { ?item p:P571 ?incSt . ?incSt a wikibase:BestRank ; psv:P571 ?incD . ?incD wikibase:timeValue ?inc0 ; wikibase:timePrecision ?incP .
+    OPTIONAL { ?incSt pqv:P1319|pqv:P580 ?incE . ?incE wikibase:timeValue ?incEn ; wikibase:timePrecision ?incEP . FILTER(?incEP >= 8) }
+    BIND(YEAR(?inc0) AS ?incY)
+    BIND(IF(?incP >= 8, ?inc0, IF(BOUND(?incEn), ?incEn, IF(?incY - 50 * FLOOR(?incY / 50) != 0, ?inc0, ?yok))) AS ?inc) }
   OPTIONAL { ?item rdfs:label ?ltr . FILTER(LANG(?ltr) = "tr") }
   OPTIONAL { ?item rdfs:label ?len . FILTER(LANG(?len) = "en") }
   OPTIONAL { ?item rdfs:label ?lmul . FILTER(LANG(?lmul) = "mul") }
@@ -23,7 +29,10 @@ export function genisEserSorgusu(qid) {
   OPTIONAL { ?item wdt:P4610 ?aic . }
   OPTIONAL { ?item wdt:P11110 ?cma . }
   OPTIONAL { ?item wdt:P4683 ?nga . }
-  OPTIONAL { ?item wdt:P195 ?kol . ?kol rdfs:label ?kolL . FILTER(LANG(?kolL) = "en") }
+  # İş 174: bitiş tarihli (eski) koleksiyonlar ve savaş dönemi el koyma yerleri (Führermuseum, Münih Toplama Noktası) alınmaz
+  OPTIONAL { ?item p:P195 ?kolSt . ?kolSt ps:P195 ?kol ; wikibase:rank ?kolR . FILTER(?kolR != wikibase:DeprecatedRank)
+    FILTER NOT EXISTS { ?kolSt pq:P582 ?kolBitis } FILTER(?kol NOT IN (wd:Q475667, wd:Q1053735))
+    ?kol rdfs:label ?kolL . FILTER(LANG(?kolL) = "en") }
 } GROUP BY ?item ORDER BY DESC(?sitelinks) LIMIT 40`;
 }
 

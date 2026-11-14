@@ -675,13 +675,32 @@ export function bellektenGeriKoy(adres, yon) {
   const gecis = geriGecisi(ekran, eski, yon);
   if (gecis) gecis();
   kaydirmaSonu();
+  // İş 174: bellekten dönen sayfada da odak başlığa (ileri çizimdeki gibi); yoksa odak BODY'ye düşüyordu (VoiceOver)
+  const h = ekran.querySelector('h1');
+  if (h) {
+    if (!h.hasAttribute('tabindex')) h.setAttribute('tabindex', '-1');
+    h.focus({ preventScroll: true });
+  }
   return true;
+}
+
+// İş 174: kullanıcıya teknik İngilizce ileti ("Failed to fetch") yerine Türkçe açıklama ve "Yeniden dene";
+// teknik ayrıntı katlanmış durur (hata günlüğüne zaten düşer). Bizim yazdığımız düz Error iletileri olduğu gibi.
+export function hataAciklamasi(e) {
+  const ileti = e && e.message ? String(e.message) : String(e);
+  if (/failed to fetch|load failed|networkerror|network request failed|internet|err_/i.test(ileti) || (e && e.name === 'AbortError'))
+    return { metin: 'Bağlantı kurulamadı. İnternet bağlantını denetleyip yeniden dene; indirilmiş bölümler çevrimdışı da açılır.', teknik: ileti };
+  if (e && e.name && e.name !== 'Error') return { metin: 'Beklenmeyen bir hata oluştu. Yeniden denemek çoğu zaman yeter.', teknik: `${e.name}: ${ileti}` };
+  return { metin: ileti, teknik: '' };
 }
 
 export function hataGoster(e) {
   console.error(e);
   sekmeleriCiz('bugun');
-  ekran.innerHTML = `${ust('Bir sorun oldu')}<p>${kacis(e && e.message ? e.message : String(e))}</p><p><a class="dugme" href="#/">Bugün</a></p>`;
+  const { metin, teknik } = hataAciklamasi(e);
+  ekran.innerHTML = `${ust('Bir sorun oldu')}<p data-test="hata-metni">${kacis(metin)}</p>${teknik ? `<details class="kucuk ikincil"><summary>Ayrıntı</summary><p>${kacis(teknik)}</p></details>` : ''}<p><button class="dugme" type="button" data-hata-yeniden data-test="hata-yeniden">Yeniden dene</button> <a class="dugme ince" href="#/">Bugün</a></p>`;
+  const yeniden = ekran.querySelector('[data-hata-yeniden]');
+  if (yeniden) yeniden.addEventListener('click', () => location.reload());
 }
 
 export function geriDugmesi(yedek) {

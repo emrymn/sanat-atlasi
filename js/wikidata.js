@@ -1,6 +1,6 @@
 // Wikidata erişimi: QID çözümleme ve eser listesi.
 // Hem tarayıcıda (uygulama) hem Node'da (scripts/onbellek.mjs) çalışır.
-// Doğruluk kuralı: bir eser yalnızca doğrulanmış QID için P170/P84 ile bağlıysa alınır.
+// Doğruluk kuralı: bir eser yalnızca doğrulanmış QID için P170 (yaratıcı) ile bağlıysa alınır (P84 bırakıldı, KARARLAR 40).
 
 export const API = 'https://www.wikidata.org/w/api.php';
 export const SPARQL = 'https://query.wikidata.org/sparql';
@@ -171,7 +171,13 @@ export function eserSorgusu(qid) {
   ${resimSuzgeci('?item')}
   ?item wdt:P18 ?img .
   ?item wikibase:sitelinks ?sl .
-  OPTIONAL { ?item wdt:P571 ?inc . }
+  # İş 174: on yıl ya da daha ince hassasiyetteki (precision >= 8) tarih; yüzyıl ve binyıl alınmaz; "15. yüzyıl" 1500 diye okunmasın
+  # kaba tarihte (yüzyıl) "en erken tarih" (P1319) ya da başlangıç (P580) niteleyicisi on yıl ya da daha inceyse o; o da
+  # yoksa ve değer yuvarlak değilse (1529 gibi; yanlışlıkla yüzyıl hassasiyetiyle girilmiş) değerin kendisi. 1500, 1650 alınmaz.
+  OPTIONAL { ?item p:P571 ?incSt . ?incSt a wikibase:BestRank ; psv:P571 ?incD . ?incD wikibase:timeValue ?inc0 ; wikibase:timePrecision ?incP .
+    OPTIONAL { ?incSt pqv:P1319|pqv:P580 ?incE . ?incE wikibase:timeValue ?incEn ; wikibase:timePrecision ?incEP . FILTER(?incEP >= 8) }
+    BIND(YEAR(?inc0) AS ?incY)
+    BIND(IF(?incP >= 8, ?inc0, IF(BOUND(?incEn), ?incEn, IF(?incY - 50 * FLOOR(?incY / 50) != 0, ?inc0, ?yok))) AS ?inc) }
   OPTIONAL { ?item rdfs:label ?ltr . FILTER(LANG(?ltr) = "tr") }
   OPTIONAL { ?item rdfs:label ?len . FILTER(LANG(?len) = "en") }
   OPTIONAL { ?item rdfs:label ?lmul . FILTER(LANG(?lmul) = "mul") }

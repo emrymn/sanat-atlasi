@@ -70,6 +70,10 @@ function sadelestir(e) {
   return o;
 }
 
+// İş 174: atlanan kaynaklar (403, eksik NGA CSV'si): sonunda en az biri varsa eski dosya geri yazılır; yoksa o
+// kaynağın eserleri sessizce kaybolurdu (ör. AIC 467, NGA 340 eser). EKSIK_KABUL=1 ile yine de yazılır.
+const atlananlar = [];
+const hataliSanatcilar = [];
 let i = 0;
 for (const s of sanatcilar) {
   i++;
@@ -91,6 +95,7 @@ for (const s of sanatcilar) {
     const guvenli = (ad, soz) =>
       soz.catch((e) => {
         console.log(`   ${s.id}: ${ad} atlandı (${e.message})`);
+        atlananlar.push(`${s.id}: ${ad}`);
         return [];
       });
     const [wd, met, aic, cma, nga] = await Promise.all([
@@ -113,11 +118,19 @@ for (const s of sanatcilar) {
     );
   } catch (e) {
     console.log(`${i}/${sanatcilar.length} ${s.id}: HATA ${e.message} (atlandı)`);
+    hataliSanatcilar.push(s.id);
   }
   onbellek.olusturma = new Date().toISOString();
   await writeFile(hedef, JSON.stringify(onbellek));
 }
 // WikiArt (data/wikiart.json, scripts/kaynaklar/wikiart.mjs) ağa gitmeden eklenir
 wikiartiUygula(onbellek, await oku('data/wikiart.json', { sanatcilar: {} }));
-await writeFile(hedef, JSON.stringify(onbellek));
+if ((atlananlar.length || hataliSanatcilar.length) && process.env.EKSIK_KABUL !== '1') {
+  if (eski.sanatcilar && Object.keys(eski.sanatcilar).length) await writeFile(hedef, JSON.stringify(eski));
+  console.log(`\nUYARI: ${atlananlar.length} kaynak atlandı, ${hataliSanatcilar.length} sanatçı hata verdi; eksik veriyle yazılmadı, eski dosya geri konuldu.`);
+  const kaynaklar = [...new Set(atlananlar.map((x) => x.split(': ')[1]))];
+  if (kaynaklar.length) console.log(`Atlanan kaynaklar: ${kaynaklar.join(', ')} (ilk: ${atlananlar[0]})`);
+  console.log('Sorunu giderip yeniden çalıştır; bilerek eksik yazmak için EKSIK_KABUL=1.');
+  process.exitCode = 1;
+} else await writeFile(hedef, JSON.stringify(onbellek));
 console.log('Bitti:', Object.keys(onbellek.sanatcilar).length, 'sanatçı');

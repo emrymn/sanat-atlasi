@@ -176,9 +176,14 @@ test.describe('görüntüleyici ve kenardan kaydırma', () => {
     await page.goto('./#/sanatci/giotto-di-bondone');
     const eser = page.locator('.eser').nth(3);
     await expect(eser).toBeAttached();
-    await eser.evaluate((e) => e.scrollIntoView({ block: 'center' }));
+    // sayfa uzayana dek (eserler yüklenirken yük altında 50 px'e varmayabiliyordu) kaydırma yinelenir
+    await expect
+      .poll(async () => {
+        await eser.evaluate((e) => e.scrollIntoView({ block: 'center' }));
+        return y(page);
+      })
+      .toBeGreaterThan(50);
     const once = await y(page);
-    expect(once).toBeGreaterThan(50);
     await eser.evaluate((e) => e.click());
     await page.locator('.gor').getByRole('button', { name: 'Kapat' }).click();
     await expect(page.locator('.gor')).toHaveCount(0);
