@@ -1,0 +1,483 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3698260",
+ "sanatci_id": "cimabue",
+ "baslik": "Santa Croce Çarmıhı",
+ "ozgun_baslik": "Crocifisso di Santa Croce",
+ "kunye": {
+  "sanatci": "Cimabue'ye atfedilir",
+  "sanatci_yasam": "c. 1240–1302",
+  "tarih": "c. 1265 (tartışmalı)",
+  "tarih_belirsizlik": "enwiki c.1265 erken dönem; WD 1272/1300; kesin yıl yok (C004, D)",
+  "teknik": "Distemper (tempera) ahşap pano",
+  "boyut_cm": {
+   "yukseklik": 448,
+   "genislik": 390
+  },
+  "muze": "Basilica di Santa Croce / Museo dell'Opera di Santa Croce, Floransa",
+  "envanter": "yok (Opera müzesi)",
+  "edinim": "Franciscan siparişi; 13.yy sonundan beri Santa Croce",
+  "konum": "Floransa, Santa Croce; 1966 sonrası Museo dell'Opera",
+  "telif_durumu": "Kamu malı (Cimabue ö.1302); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Cimabue_025.jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (Cimabue ö.1302)",
+  "dogrulama": {
+   "yontem": "Commons 960×1102 tam kare vision köprüsü (1966 seli ÖNCESİ durum)",
+   "cozunurluk": "960×1102",
+   "incelenen_bolgeler": [
+    "tam kare",
+    "Christ figürü",
+    "terminaller",
+    "peştamal"
+   ],
+   "sinirlar": "Görsel sel öncesi ideal hali gösterir, bugünkü hasarlı nesneyi değil; titulus yazıtı okunamıyor"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 412
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1305
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2594
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-atıf-ve-tarih-bir-epistemoloji-sorunu"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-bizanstan-kopuş-bir-geçiş-anlatısının-anatomisi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-biçimsel-analiz-ağırlık-uzam-geometri"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-acının-teolojisi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-sel-koruma-ve-maddi-travma"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (atıf, tartışmalı tarih, yer, teknik, boyut) sayar ve atıf/tarih/boyut ihtilaflarını açıklar.",
+  "Christus patiens ikonografisini ve Bizans'tan kopuşu tanır.",
+  "Franciscan bağlamının acı/insanlık vurgusunu eserle ilişkilendirir.",
+  "Bedenin ağırlığı/uzamı ve geometrik plan-doğalcılık uzlaşmasını analiz eder.",
+  "1966 seli travmasını ve koruma etiğini kanıt türleri açısından değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Croce dipinta",
+   "tanim": "Ahşap üzerine boyanmış, sunak üstüne asılan büyük boyalı çarmıh; Orta Çağ İtalya'sına özgü tür.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "ad": "Christus patiens",
+   "tanim": "\"Acı çeken Mesih\"; İsa'yı ölü/ölmek üzere, acı içinde gösteren ikonografi (Christus triumphans karşıtı).",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "Distemper",
+   "tanim": "Tutkal/yumurta bağlayıcılı pigment; tempera ailesinden, yağlıboyadan önceki teknik.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "Perizoma",
+   "tanim": "İsa'nın belindeki peştamal/örtü; burada beyaz, şeffaf.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "Rood screen",
+   "tanim": "Koro perdesi; nef ile koroyu ayıran, üstüne çarmıh asılan bölme.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Crucifix by Cimabue, Santa Croce / Santa Croce Çarmıhı (croce dipinta)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Cimabue'ye atfedilir (Floransalı ressam ve mozaikçi)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Atıf tartışmalı: üslup + Vasari/Albertini (Cimabue) ↔ Crowe & Cavalcaselle 1903 red",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarih: enwiki c.1265 (erken dönem); WD 1272/1300; data 1300; kesin yıl yok",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C005",
+   "ifade": "Teknik: distemper (tempera benzeri) ahşap pano",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Boyut: enwiki 448×390 / WD 433×390; yükseklik ihtilaflı, en 390 uzlaşma",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C007",
+   "ifade": "Yer: Basilica di Santa Croce Floransa; 1966 seli sonrası Museo dell'Opera di Santa Croce",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Tür: dinsel sanat / boyalı çarmıh (croce dipinta)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Santa Croce Franciscan friarları siparişi; Cimabue'nin iki büyük çarmıhından biri",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Beş ana + sekiz yardımcı ahşap tahtanın karmaşık düzeni",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Boyut nedeniyle rood screen üstüne asılmış olmalı; sonra kuzey transept/sakristi/güney giriş",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Geç Orta Çağ Bizans üslubundan kopan ilk İtalyan eserlerinden; teknik yenilik + hümanist ikonografi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Altın varak + anıtsallık Bizans'a bağlar; Christ statik duruşu Bizans; bütün olarak yeni doğalcı yönler",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Christus patiens: neredeyse çıplak, gözler kapalı, yüz cansız/mağlup, beden ıstırapla bükülmüş",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Beyaz şeffaf peştamal (Arezzo kırmızıdan örtük); Giunta Pisano etkisi olabilir; çıplaklık kırılganlık",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Beden daha cismani/anatomik; el-ayak resim uzamı ötesine; beden+hale dışa/yukarı açılı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Beden yaylanır, gövde yükselir; ellerden kan; baş yana düşer",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Terminaller: yas tutan Meryem (sol) + Yuhanna (sağ)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Soluk tonlar; koyu saç/sakal yüzü odak yapar",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Oranlar kare/dinamik dikdörtgen; Christ salınımı için alt tahtalar yeniden konumlandı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "1966 Arno selinde ağır hasar; korumaya rağmen kötü durumda",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "K3 görseli 1966 seli ÖNCESİ durumu gösterir; mevcut nesne hasarlı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Franciscan idealleri (sadelik/doğalcılık/hümanizm) Bizans yenilmez Christ'ine karşı; iki çarmıh da Franciscan",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Arezzo çarmıhı (c.1268–1271) Cimabue'ye atfedilen iki çarmıhın daha erken olanı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "K1 resepsiyon iddiası: Michelangelo/Caravaggio/Velázquez/Francis Bacon'a etki (bağımsız doğrulanmadı)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Vasari: çarmıhın başarısı Cimabue'nin ününü kuran Pisa siparişlerine yol açtı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Görsel kamu malı (Cimabue ö.1302); Commons PD; geçici kopya .qwen/tmp",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Crucifix (Cimabue, Santa Croce) — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Crucifix_(Cimabue,_Santa_Croce)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Wikidata",
+   "belge": "Q3698260 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q3698260",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikimedia Commons",
+   "belge": "Cimabue 025.jpg (1966 seli öncesi durum)",
+   "url": "https://commons.wikimedia.org/wiki/File:Cimabue_025.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 960×1102 incelendi",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Arezzo Çarmıhı",
+   "sanatci": "Cimabue",
+   "kurum": "Arezzo",
+   "mufredat_ici": false,
+   "gerekce": "Aynı sanatçının daha erken çarmıhı; peştamal rengi ve acı grafikleşmesi karşıtlığı (yorum).",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "eser": "Ağıt",
+   "sanatci": "Giotto",
+   "kurum": "Scrovegni Şapeli, Padua",
+   "mufredat_ici": true,
+   "gerekce": "Cimabue erken doğalcılığı ↔ Giotto ileri hacim/mekân/duygu (yorum).",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "eser": "Çarmıhlar",
+   "sanatci": "Giunta Pisano",
+   "kurum": "çeşitli",
+   "mufredat_ici": false,
+   "gerekce": "Christus patiens geleneğinin erken kolu; etki hipotezi (K1).",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data Q3698260 tarih \"1300\" → enwiki c.1265, WD 1272/1300; kesin yıl yok, erken dönem (C004).",
+  "muze \"Museo dell'Opera di Santa Croce\" doğru (1966 sonrası); orijinal Basilica di Santa Croce; her ikisi belirtilmeli.",
+  "Boyut enwiki 448×390 / WD 433×390 ihtilaflı; yükseklik teyidi gerekli (C006).",
+  "Atıf \"Cimabue\" genel kabul ama tartışmalı (C003); \"Cimabue'ye atfedilir\" önerilir."
+ ]
+}

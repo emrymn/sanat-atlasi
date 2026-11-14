@@ -1,0 +1,477 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q500985",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Resmin sanatçısı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pieter Bruegel (yaşlı)"
+    },
+    {
+     "harf": "B",
+     "metin": "Bosch"
+    },
+    {
+     "harf": "C",
+     "metin": "van Eyck"
+    },
+    {
+     "harf": "D",
+     "metin": "Dürer"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Bruegel the Elder.",
+   "yanlis_gerekceleri": {
+    "B": "Bosch değil.",
+    "C": "van Eyck değil.",
+    "D": "Dürer değil."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Resmin tarihi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1565"
+    },
+    {
+     "harf": "B",
+     "metin": "1434"
+    },
+    {
+     "harf": "C",
+     "metin": "1600"
+    },
+    {
+     "harf": "D",
+     "metin": "1500"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: 1565.",
+   "yanlis_gerekceleri": {
+    "B": "1434 değil.",
+    "C": "1600 değil.",
+    "D": "1500 değil."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Teknik/destek?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, ahşap pano"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera, tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: oil on wood.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk değil.",
+    "C": "Tempera tuval değil.",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eser hangi müzede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kunsthistorisches Museum, Viyana"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: KHM Vienna.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi değil.",
+    "C": "Louvre değil.",
+    "D": "Prado değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Resim hangi serinin parçası?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Altı aylık mevsim serisi (beşi extant)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tek manzara"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir portre serisi"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir fresk döngüsü"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: six months, five survive.",
+   "yanlis_gerekceleri": {
+    "B": "Tek değil.",
+    "C": "Portre değil.",
+    "D": "Fresk değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Sahne hangi mevsim?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Aralık/Ocak kışı"
+    },
+    {
+     "harf": "B",
+     "metin": "Yaz"
+    },
+    {
+     "harf": "C",
+     "metin": "İlkbahar"
+    },
+    {
+     "harf": "D",
+     "metin": "Sonbahar"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Dec/Jan winter.",
+   "yanlis_gerekceleri": {
+    "B": "Yaz değil.",
+    "C": "İlkbahar değil.",
+    "D": "Sonbahar değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Avcılardan biri ne taşır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Zayıf bir tilki leşi"
+    },
+    {
+     "harf": "B",
+     "metin": "Geyik"
+    },
+    {
+     "harf": "C",
+     "metin": "Büyük bir balık"
+    },
+    {
+     "harf": "D",
+     "metin": "Kazan"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: meager fox corpse.",
+   "yanlis_gerekceleri": {
+    "B": "Geyik değil.",
+    "C": "Balık değil.",
+    "D": "Kazan değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Sivri dağ zirveleri hakkında ne doğrudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Low Countries'da yoktur (hayali)"
+    },
+    {
+     "harf": "B",
+     "metin": "Gerçek yerel dağlar"
+    },
+    {
+     "harf": "C",
+     "metin": "Alp'te değil"
+    },
+    {
+     "harf": "D",
+     "metin": "Volkanik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: not in Low Countries.",
+   "yanlis_gerekceleri": {
+    "B": "Yerel değil.",
+    "C": "Hayali Alp.",
+    "D": "Volkanik değil."
+   },
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Resim 1565 tarihlidir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Resim altı aylık mevsim serisinin parçasıdır.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Avcılar başarılı bir avdan döner.",
+   "dogru": false,
+   "aciklama": "Yanlış; av başarısız (K1).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Han tabelası \"Altın Geyik\" yazar.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Sivri dağ zirveleri Low Countries'da bulunur.",
+   "dogru": false,
+   "aciklama": "Yanlış; hayali/Alp (K1).",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Kışın melankolisini (yorgun avcılar, uğursuz kuşlar, soğuk) analiz edin.",
+   "beklenen_ogeler": [
+    "Soluk palet",
+    "Yorgun figürler",
+    "Uğursuz kuşlar",
+    "Ruh hâli (yorum)"
+   ],
+   "kanit": [
+    "C016",
+    "C007",
+    "C010"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Hayali coğrafyayı (Alp zirveleri + yerel vadi) değerlendirin.",
+   "beklenen_ogeler": [
+    "Low Countries'da yok",
+    "Kompozit manzara",
+    "Gerçekçilik ↔ ideal",
+    "Manzara ideası (yorum)"
+   ],
+   "kanit": [
+    "C017",
+    "C009",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Han tabelası aziz kimliği tartışmasını değerlendirin.",
+   "beklenen_ogeler": [
+    "Altın Geyik",
+    "Aziz Hubertus",
+    "Aziz Eustace",
+    "Avcı koruyucusu (D)"
+   ],
+   "kanit": [
+    "C021",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "İnsan/doğa ve gerçek/ideal gerilimini tartışın.",
+   "beklenen_ogeler": [
+    "İnsanın küçüklüğü",
+    "Başarısız av",
+    "Gözlem ayrıntıları",
+    "İdeal çerçeve (yorum)"
+   ],
+   "kanit": [
+    "C016",
+    "C017",
+    "C006"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kanıt mimarisini değerlendirin: KHM JS (E) + görsel (E) + ikincil (B).",
+   "beklenen_ogeler": [
+    "KHM JS çıkarılamadı E",
+    "Görsel incelenemedi E",
+    "enwiki B",
+    "A yalnız lisans"
+   ],
+   "kanit": [
+    "C018",
+    "C019",
+    "C001"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Üç avcıyı, zayıf köpekleri ve tilki leşini bulun.",
+   "ipucu": "Başarısız av; yorgunluk.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Karın üstündeki tavşan ayak izlerini izleyin.",
+   "ipucu": "Kaçmış/ıskalanmış tavşan.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Handa dış ateşte domuz yakma sahnesini bulun.",
+   "ipucu": "Yetişkinler + çocuk; tabela.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Kargaları ve uçan saksağanı bulun.",
+   "ipucu": "Uğursuzluk; Şeytan çağrışımı.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Donmuş değirmeni ve buz oyunu figürlerini izleyin.",
+   "ipucu": "Çark donmuş; kolf/eisstock.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, yer?",
+   "arka": "Karda Avcılar; Bruegel (yaşlı); 1565; yağlıboya ahşap; 117×162; KHM Viyana GG_1838.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Seri/takvim?",
+   "arka": "Altı aylık mevsim serisi (beşi extant); Ara/Oca; Labours of the Months; Küçük Buzul Çağı 1565.",
+   "kanit": [
+    "C004",
+    "C005",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Av sahnesi?",
+   "arka": "Üç avcı + zayıf köpekler; başarısız av; tilki leşi; tavşan izleri; handa domuz yakma.",
+   "kanit": [
+    "C006",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Sembolizm?",
+   "arka": "Kargalar/saksağan (uğursuzluk, Şeytan); han tabelası Altın Geyik (Hubertus/Eustace, koruyucu).",
+   "kanit": [
+    "C010",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Coğrafya/oyunlar?",
+   "arka": "Hayali Alp zirveleri (Low Countries'da yok); düz vadi + nehir; donmuş değirmen; buz pateni/kolf/eisstock.",
+   "kanit": [
+    "C009",
+    "C011"
+   ]
+  }
+ ]
+}

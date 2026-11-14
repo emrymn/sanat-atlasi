@@ -1,0 +1,533 @@
+{
+ "surum": "1.0",
+ "eser_id": "domenico-di-michelino|Dante'yi Divine Comedy ile gösteren resim",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi yılda yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1302"
+    },
+    {
+     "harf": "B",
+     "metin": "1465"
+    },
+    {
+     "harf": "C",
+     "metin": "1491"
+    },
+    {
+     "harf": "D",
+     "metin": "1442"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: 1465; sipariş 30 Ocak 1465.",
+   "yanlis_gerekceleri": {
+    "A": "1302 Dante'nin sürgünü.",
+    "C": "1491 sanatçının ölümü.",
+    "D": "1442 lonca kaydı."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Tasarım kime aittir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Domenico di Michelino"
+    },
+    {
+     "harf": "B",
+     "metin": "Alesso Baldovinetti"
+    },
+    {
+     "harf": "C",
+     "metin": "Fra Angelico"
+    },
+    {
+     "harf": "D",
+     "metin": "Botticelli"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: tasarım Baldovinetti.",
+   "yanlis_gerekceleri": {
+    "A": "Domenico yürütücü.",
+    "C": "Fra Angelico öğretmen.",
+    "D": "Botticelli değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eser nerede bulunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "B",
+     "metin": "Santa Maria del Fiore, Floransa (kuzey duvarı)"
+    },
+    {
+     "harf": "C",
+     "metin": "Prado"
+    },
+    {
+     "harf": "D",
+     "metin": "Vatikan"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: katedral kuzey duvarı, in situ.",
+   "yanlis_gerekceleri": {
+    "A": "Uffizi değil.",
+    "C": "Prado değil.",
+    "D": "Vatikan değil."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Sanatçı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Domenico di Michelino"
+    },
+    {
+     "harf": "B",
+     "metin": "Giotto"
+    },
+    {
+     "harf": "C",
+     "metin": "Masaccio"
+    },
+    {
+     "harf": "D",
+     "metin": "Perugino"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Domenico di Michelino (1417–1491).",
+   "yanlis_gerekceleri": {
+    "B": "Giotto değil.",
+    "C": "Masaccio değil.",
+    "D": "Perugino değil."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Dante neyi Floransa'ya sunar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bir harita"
+    },
+    {
+     "harf": "B",
+     "metin": "İlahi Komedya'yı"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir kubbe"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir sancak"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: Dante presents his poem to Florence.",
+   "yanlis_gerekceleri": {
+    "A": "Harita değil; şiir.",
+    "C": "Kubbe kentte.",
+    "D": "Sancak Cehennem'de."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Arka planda hangi üç dünya var?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Cehennem/Araf/Cennet"
+    },
+    {
+     "harf": "B",
+     "metin": "Roma/Floransa/Venedik"
+    },
+    {
+     "harf": "C",
+     "metin": "Yeraltı/Deniz/Gök"
+    },
+    {
+     "harf": "D",
+     "metin": "Mısır/Yunanistan/İtalya"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Hell, Purgatory, Paradise as in poem.",
+   "yanlis_gerekceleri": {
+    "B": "Kentler değil.",
+    "C": "Doğa öğeleri değil.",
+    "D": "Ülkeler değil."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Domenico 1442'de hangi birliğe kaydoldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Compagnia di San Luca"
+    },
+    {
+     "harf": "B",
+     "metin": "Arte della Lana"
+    },
+    {
+     "harf": "C",
+     "metin": "Arte dei Giudici"
+    },
+    {
+     "harf": "D",
+     "metin": "Misericordia"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Compagnia di San Luca by 1442.",
+   "yanlis_gerekceleri": {
+    "B": "Arte della Lana değil.",
+    "C": "Giudici sonra (1484).",
+    "D": "Misericordia değil."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Vasari'ye göre Domenico kimin öğrencisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fra Angelico"
+    },
+    {
+     "harf": "B",
+     "metin": "Giotto"
+    },
+    {
+     "harf": "C",
+     "metin": "Masaccio"
+    },
+    {
+     "harf": "D",
+     "metin": "Donatello"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Vasari reports pupil of Fra Angelico.",
+   "yanlis_gerekceleri": {
+    "B": "Giotto değil.",
+    "C": "Masaccio değil.",
+    "D": "Donatello değil."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Berenson, Domenico'nun eserlerini yanlışlıkla kime atfetti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Giusto d'Andrea"
+    },
+    {
+     "harf": "B",
+     "metin": "Zanobi Strozzi"
+    },
+    {
+     "harf": "C",
+     "metin": "Pesellino"
+    },
+    {
+     "harf": "D",
+     "metin": "Tosini"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Berenson assigned all to Giusto d'Andrea.",
+   "yanlis_gerekceleri": {
+    "B": "Zanobi Strozzi tersine atfedildi.",
+    "C": "Pesellino etkisi.",
+    "D": "Tosini repaint yaptı."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Sipariş tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "30 Ocak 1465"
+    },
+    {
+     "harf": "B",
+     "metin": "18 Nisan 1491"
+    },
+    {
+     "harf": "C",
+     "metin": "1444"
+    },
+    {
+     "harf": "D",
+     "metin": "1302"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: commissioned 30 January 1465.",
+   "yanlis_gerekceleri": {
+    "B": "1491 ölüm.",
+    "C": "1444 guild.",
+    "D": "1302 sürgün."
+   },
+   "kanit": [
+    "C003"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser 1465'te Floransa Katedrali için yapıldı.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C003",
+    "C005"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Tasarım Alesso Baldovinetti'ye aittir.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser, Uffizi Galerisi'nde sergilenmektedir.",
+   "dogru": false,
+   "aciklama": "Yanlış; katedral kuzey duvarında in situ.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Arka planda Cehennem/Araf/Cennet, şiirdeki gibi gösterilir.",
+   "dogru": true,
+   "aciklama": "Doğru (K2).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Berenson, Domenico'nun eserlerini doğru biçimde atfetti.",
+   "dogru": false,
+   "aciklama": "Yanlış; Berenson yanlışlıkla Giusto d'Andrea'ya atfetti.",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "\"Kentin şairle barışması\" okumasını sürgün/onurlandırma bağlamıyla tartışın.",
+   "beklenen_ogeler": [
+    "1302 sürgün (genel)",
+    "1465 onurlandırma",
+    "Kamusal özür (yorum)",
+    "Panteon"
+   ],
+   "kanit": [
+    "C003",
+    "C005"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Şiirin kutsal mekâna girişini (kilise duvarı) analiz edin.",
+   "beklenen_ogeler": [
+    "Katedral konumu",
+    "Laik-kutsal sentez (yorum)",
+    "Defne=şairlik onuru",
+    "Yazıt=ölümsüzlük"
+   ],
+   "kanit": [
+    "C005",
+    "C007"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Üç dünyanın topografyasını \"şema olarak şiir\" kavramıyla çözümleyin.",
+   "beklenen_ogeler": [
+    "Cehennem/Araf/Cennet",
+    "Dante eksen",
+    "Okunabilirlik>derinlik (yorum)",
+    "Harita mantığı"
+   ],
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Domenico'nun tutucu/öğretici dilini Masaccio/Botticelli karşıtlığıyla değerlendirin.",
+   "beklenen_ogeler": [
+    "Kuru şema",
+    "Işık-gölge hacim farkı",
+    "Fra Angelico kökeni (B)",
+    "Didaktik tercih (yorum)"
+   ],
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Giovanni di Paolo minyatürü ilham hipotezini kanıt disipliniyle sınayın.",
+   "beklenen_ogeler": [
+    "Yates Thompson Paradiso 17",
+    "Ters ayrıntılar",
+    "Öneri (D)",
+    "Aktarım belgesi yok"
+   ],
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Üç dünyayı (Cehennem/Araf/Cennet) bulun.",
+   "ipucu": "Şiirdeki gibi arka planda.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Dante'nin sunduğu kitabı bulun.",
+   "ipucu": "İlahi Komedya.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Dante'yi üç dünya ve kent arasında konumlandırın.",
+   "ipucu": "Eksen figür.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Floransa'yı ve kubbesini arayın (mevcut betim).",
+   "ipucu": "Sağda; görsel teyit bekliyor.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Eserin kuzey duvarı konumunu düşünün.",
+   "ipucu": "Katedral, in situ.",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, tasarım, yer?",
+   "arka": "Dante'yi İlahi Komedya ile Gösteren Resim; Domenico di Michelino; 1465; tasarım Baldovinetti; Santa Maria del Fiore kuzey duvarı.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu?",
+   "arka": "Dante, İlahi Komedya'yı Floransa'ya sunar; arka planda Cehennem/Araf/Cennet şiirdeki gibi.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Sanatçı eğitimi/lonca?",
+   "arka": "Vasari: Fra Angelico öğrencisi; Lippi/Pesellino etkisi; San Luca 1442; Arte 1444; Via delle Terme.",
+   "kanit": [
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Atıf tarihi?",
+   "arka": "Berenson tüm eserleri yanlışlıkla Giusto d'Andrea'ya atfetti; kimlik geç kuruldu.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Sipariş/tasarım?",
+   "arka": "30 Ocak 1465 sipariş; tasarım Baldovinetti, yürütme Domenico (ortak üretim).",
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  }
+ ]
+}

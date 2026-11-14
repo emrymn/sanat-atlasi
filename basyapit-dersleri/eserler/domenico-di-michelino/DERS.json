@@ -1,0 +1,425 @@
+{
+ "surum": "1.0",
+ "eser_id": "domenico-di-michelino|Dante'yi Divine Comedy ile gösteren resim",
+ "sanatci_id": "domenico-di-michelino",
+ "baslik": "Dante'yi İlahi Komedya ile Gösteren Resim",
+ "ozgun_baslik": "La Divina Commedia illumina Firenze",
+ "kunye": {
+  "sanatci": "Domenico di Michelino",
+  "sanatci_yasam": "1417–1491",
+  "tarih": "1465",
+  "tarih_belirsizlik": "Sipariş 30 Ocak 1465 (K2); data tarih boş",
+  "teknik": "birincil föyden doğrulanamadı",
+  "muze": "Santa Maria del Fiore (Opera del Duomo), Floransa — kuzey duvarı",
+  "envanter": "birincil föy bu oturumda açılmadı",
+  "edinim": "in situ; 1465 siparişi; tasarım Baldovinetti",
+  "konum": "Katedral kuzey duvarı",
+  "telif_durumu": "Kamu malı (Domenico ö.1491); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Dante_Domenico_di_Michelino_Duomo_Florence.jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (Domenico ö.1491)",
+  "dogrulama": {
+   "yontem": "1400px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1400px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Ayrıntılı ikonografi (C008–C012) mevcut data betimi; görsel/birincil teyit insan editöre"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 392
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1292
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2554
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-kent-ve-şair-sürgün-barışma-panteon"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-şiirin-kutsal-mekâna-girişi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-üç-dünyanın-topografyası-şema-olarak-şiir"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-floransa-ve-kubbe-kent-şiirin-hedefi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-üslup-tutucu-öğretici-şematik"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (Domenico, 1465, Baldovinetti tasarımı, Duomo) açıklar.",
+  "Üç dünyanın şema-topografyasını ve Dante eksenini çözümler.",
+  "Sürgün→onurlandırma \"barışma\" okumasını yorumlar.",
+  "Şiirin kutsal mekâna girişini ve kültürel panteonu tartışır.",
+  "Teknik/ikonografi/görsel belirsizliklerini ve minyatür hipotezini kanıt katmanlarıyla değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "İlahi Komedya",
+   "tanim": "Dante'nin Cehennem-Araf-Cennet yolculuğu; resmin konusu.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "ad": "Pano/şema",
+   "tanim": "Tek düz yüzeye şema gibi yerleştirilmiş anlatı; okunabilirlik amaçlı.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "Kültürel barışma",
+   "tanim": "Kentin sürgün şairi ölümünden sonra onurlandırması (yorum).",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Defne tacı",
+   "tanim": "Şairlik onurunun antik simgesi.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "ad": "Ortak üretim",
+   "tanim": "Tasarım Baldovinetti + yürütme Domenico; atölye işbölümü.",
+   "kanit": [
+    "C004"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: La Divina Commedia illumina Firenze / Dante'yi İlahi Komedya ile Gösteren Resim",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Domenico di Michelino (1417–1491), Floransa; doğum adı Domenico di Francesco",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "1465; sipariş 30 Ocak 1465 (K2 belgeleri)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tasarım: Alesso Baldovinetti; yürütme Domenico di Michelino",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Yer: Santa Maria del Fiore, Floransa; kuzey duvarı; in situ",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Teknik/boyut: bu oturumda birincil/görsel teyit yok",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C007",
+   "ifade": "Dante, İlahi Komedya'yı Floransa'ya sunar; arka planda Cehennem/Araf/Cennet, şiirdeki gibi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Dante kırmızı cübbe + defne tacı + açık kitap (mevcut data betimi; görsel teyit yok)",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C009",
+   "ifade": "Üç bölgeli pano kompozisyonu (kızıl sol / yeşil orta / altın sağ); ışık tek kaynaktan değil; düz/anlatısal (data betimi; teyit yok)",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C010",
+   "ifade": "Sağda Floransa + Brunelleschi kubbesi (data betimi; teyit yok)",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C011",
+   "ifade": "Araf terasları + kapıda melek + tepede Âdem-Havva (data betimi; teyit yok)",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C012",
+   "ifade": "Altta Latince yazıt, şairi över (data betimi; teyit yok)",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C013",
+   "ifade": "Giovanni di Paolo, Paradiso 17 minyatürü (Yates Thompson MS, c.1444–50) ilham hipotezi; aynı ayrıntılar ters",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C014",
+   "ifade": "Berenson, Domenico'nun tüm eserlerini yanlışlıkla Giusto d'Andrea'ya atfetti (atıf tarihi)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Vasari: Fra Angelico öğrencisi; Filippo Lippi + Pesellino etkisi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Compagnia di San Luca (1442); Arte dei Medici e Speziali (1444); Via delle Terme atölyesi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "\"Kentin şairle ölümünden sonra barışması\" okuması",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C018",
+   "ifade": "Dante 1302 sürgün / 1321 Ravenna ölümü (genel tarihsel bilgi; bu dosyada kaynak yok)",
+   "seviye": "E",
+   "kaynak_id": [],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C019",
+   "ifade": "Görsel kamu malı (Domenico ö.1491); Commons PD; geçici kopya .qwen/tmp/parti1/domenico/",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C021",
+   "ifade": "Bibliyografya: Casini Wanrooij DBI 1991; Berenson 1963 — erişilmedi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "\"Floransa kültür kahramanını kutluyor; şiir kutsal mekâna giriyor\" okuması",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Domenico di Michelino — kaynaklı madde (DBI/Berenson atıflı)",
+   "url": "https://en.wikipedia.org/wiki/Domenico_di_Michelino",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Domenico di Michelino — kaynaklı madde (DBI atıflı)",
+   "url": "https://it.wikipedia.org/wiki/Domenico_di_Michelino",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikimedia Commons",
+   "belge": "Dante Domenico di Michelino Duomo Florence.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Dante_Domenico_di_Michelino_Duomo_Florence.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1400px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K5",
+   "kurum": "Opera del Duomo Firenze",
+   "belge": "eser-özel föy (hedef)",
+   "url": "https://operaduomo.firenze.it/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "bu oturumda açılmadı",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Vergi Parası",
+   "sanatci": "Masaccio",
+   "kurum": "Brancacci Şapeli, Floransa",
+   "mufredat_ici": true,
+   "gerekce": "Işık-gölge hacim ↔ Domenico'nun kuru şeması (yorum).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "eser": "Paradiso 17 minyatürü",
+   "sanatci": "Giovanni di Paolo",
+   "kurum": "British Library (Yates Thompson MS 36)",
+   "mufredat_ici": false,
+   "gerekce": "İlham hipotezi; aynı ayrıntılar ters (D).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "eser": "Müjde (San Marco)",
+   "sanatci": "Fra Angelico",
+   "kurum": "San Marco, Floransa",
+   "mufredat_ici": true,
+   "gerekce": "Vasari: Domenico, Angelico öğrencisi; üslup kökeni (B).",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data tarih \"\" ve muze \"\" BOŞ → doldurulmalı: 1465; \"Santa Maria del Fiore (Opera del Duomo), Floransa — kuzey duvarı\".",
+  "Teknik/boyut birincil föyden doğrulanmalı (C006 E).",
+  "Ayrıntılı ikonografi (C008–C012) görsel + birincil teyit bekliyor (E); data bir kaynak değildir.",
+  "Giovanni di Paolo ilham hipotezi D; Berenson atıf tarihi B.",
+  "Görsel teyit bu oturumda yapılamadı (C020) — insan editör zorunlu."
+ ]
+}

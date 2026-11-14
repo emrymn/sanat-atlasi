@@ -1,0 +1,474 @@
+{
+ "surum": "1.0",
+ "eser_id": "hieronymus-bosch|Garden of Earthly Delights",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Triptiğin sanatçısı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Hieronymus Bosch"
+    },
+    {
+     "harf": "B",
+     "metin": "Jan van Eyck"
+    },
+    {
+     "harf": "C",
+     "metin": "Bruegel"
+    },
+    {
+     "harf": "D",
+     "metin": "Dürer"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Bosch.",
+   "yanlis_gerekceleri": {
+    "B": "van Eyck değil.",
+    "C": "Bruegel değil.",
+    "D": "Dürer değil."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Triptik kaç panoludur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Beş (açık 3, kapalı 2)"
+    },
+    {
+     "harf": "B",
+     "metin": "Tek"
+    },
+    {
+     "harf": "C",
+     "metin": "İki"
+    },
+    {
+     "harf": "D",
+     "metin": "Yedi"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: five-panel.",
+   "yanlis_gerekceleri": {
+    "B": "Tek değil.",
+    "C": "İki değil.",
+    "D": "Yedi değil."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Tarih aralığı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1490–1510"
+    },
+    {
+     "harf": "B",
+     "metin": "1400–1420"
+    },
+    {
+     "harf": "C",
+     "metin": "1600–1620"
+    },
+    {
+     "harf": "D",
+     "metin": "1300"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: 1490–1510.",
+   "yanlis_gerekceleri": {
+    "B": "1400 değil.",
+    "C": "1600 değil.",
+    "D": "1300 değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eser 1939'dan beri nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Museo del Prado, Madrid"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "El Escorial"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Prado since 1939.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi değil.",
+    "C": "Louvre değil.",
+    "D": "El Escorial 342 yıl kaldı, sonra Prado."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Dış paneller neyi gösterir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yaratılış'ın Üçüncü Günü (grisaille)"
+    },
+    {
+     "harf": "B",
+     "metin": "Son Yargı"
+    },
+    {
+     "harf": "C",
+     "metin": "Cehennem"
+    },
+    {
+     "harf": "D",
+     "metin": "Eden"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Third Day grisaille.",
+   "yanlis_gerekceleri": {
+    "B": "Son Yargı değil.",
+    "C": "Cehennem iç sağda.",
+    "D": "Eden iç solda."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Merkez panelde Tanrı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yok (insanlık özgür iradeyle)"
+    },
+    {
+     "harf": "B",
+     "metin": "Var, merkezde"
+    },
+    {
+     "harf": "C",
+     "metin": "Tahtta"
+    },
+    {
+     "harf": "D",
+     "metin": "Meleklerle"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: God absent.",
+   "yanlis_gerekceleri": {
+    "B": "Tanrı yok.",
+    "C": "Tahtta değil.",
+    "D": "Meleklerle değil."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "II. Philip eseri ne zaman aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1591 (açık artırma)"
+    },
+    {
+     "harf": "B",
+     "metin": "1490"
+    },
+    {
+     "harf": "C",
+     "metin": "1939"
+    },
+    {
+     "harf": "D",
+     "metin": "1568"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: 1591 auction.",
+   "yanlis_gerekceleri": {
+    "B": "1490 tarih.",
+    "C": "1939 Prado.",
+    "D": "1568 Alba el koydu."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Ağaç-adamın gövdesi neden?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kırık yumurta kabuğu"
+    },
+    {
+     "harf": "B",
+     "metin": "Tahta"
+    },
+    {
+     "harf": "C",
+     "metin": "Taş"
+    },
+    {
+     "harf": "D",
+     "metin": "Metal"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: broken eggshell.",
+   "yanlis_gerekceleri": {
+    "B": "Tahta değil.",
+    "C": "Taş değil.",
+    "D": "Metal değil."
+   },
+   "kanit": [
+    "C024"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Triptik beş panoludur.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Merkez panelde Tanrı vardır.",
+   "dogru": false,
+   "aciklama": "Yanlış; Tanrı yok (K1).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser 1939'dan beri Prado'dadır.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Dış paneller yeşil-gri grisaille'dir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "II. Philip eseri 1591'de açık artırmada aldı.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Merkez panel yorum tartışmasını (uyarı/cennet/Gombrich/Fraenger) karşılaştırın.",
+   "beklenen_ogeler": [
+    "Ahlak uyarısı",
+    "Yitirilmiş cennet",
+    "Gombrich Tufan arifesi",
+    "Fraenger ezoterik + 2016 eleştiri (D)"
+   ],
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "İşaret eden adamın kimlik tartışmasını değerlendirin.",
+   "beklenen_ogeler": [
+    "Hami (Fraenger)",
+    "Adam (Bax)",
+    "Vaftizci Yahya (Mateo Gómez)",
+    "Otoportre (D)"
+   ],
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Belting masumiyet okumasını uyarı çerçevesiyle karşılaştırın.",
+   "beklenen_ogeler": [
+    "Düşüş öncesi sınır yok",
+    "Masumiyet",
+    "Uyarı ↔ cennet",
+    "Teolojik çerçeve (yorum)"
+   ],
+   "kanit": [
+    "C018",
+    "C019"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Tarihleme tartışmasını (Baldass/De Tolnay) değerlendirin.",
+   "beklenen_ogeler": [
+    "Baldass erken iş",
+    "De Tolnay uzlaşı",
+    "1490–1510",
+    "Özgünlük sorunu (D)"
+   ],
+   "kanit": [
+    "C017",
+    "C003"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kanıt mimarisini değerlendirin: birincil katalog yok (E) + görsel (E) + ikincil (B).",
+   "beklenen_ogeler": [
+    "Prado 403 E",
+    "Görsel incelenemedi E",
+    "enwiki B",
+    "A yalnız lisans"
+   ],
+   "kanit": [
+    "C020",
+    "C021",
+    "C001"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kapalı kanatlardaki grisaille Yaratılış sahnesini izleyin.",
+   "ipucu": "Yeşil-gri; hayvan/insan öncesi.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Sol panelde Tanrı/Eden'i bulun.",
+   "ipucu": "Yaratıcı; azalan etki.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Merkezde çıplak figürleri ve çileği bulun.",
+   "ipucu": "Tanrı yok; özgür irade.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sağ panelde ağaç-adamı bulun.",
+   "ipucu": "Yumurta kabuğu gövde.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Müzik aletlerini inceleyin.",
+   "ipucu": "Erotik çağrışım; bedenin müziği.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, yer?",
+   "arka": "Dünyevi Zevkler Bahçesi; Bosch; 1490–1510; yağlıboya meşe; 205.5×384.9; Prado P002823 (1939).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C023"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Üç panel anlatı?",
+   "arka": "Dış: grisaille Yaratılış; sol: Tanrı/Eden; merkez: Tanrı yok/özgür irade; sağ: Cehennem.",
+   "kanit": [
+    "C005",
+    "C006",
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Grotesk imgeler?",
+   "arka": "Ağaç-adam (yumurta kabuğu); müzik aletleri (bedenin müziği); fil/zürafa (Reuwich/Cyriac).",
+   "kanit": [
+    "C024",
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance?",
+   "arka": "Henry III → William Silent → Alba 1568 → Philip II 1591 → El Escorial 1593 (Del Madroño) → 342 yıl → Prado 1939.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Triptik geleneği?",
+   "arka": "Üç büyük triptik (Last Judgment/Haywain); soldan sağa; sunak olup olmadığı bilinmez; aşırı konu.",
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  }
+ ]
+}

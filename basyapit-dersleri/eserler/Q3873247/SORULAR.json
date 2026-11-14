@@ -1,0 +1,551 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3873247",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin en çarpıcı yapısal özelliği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Üç ayrı mekân"
+    },
+    {
+     "harf": "B",
+     "metin": "Triptik ama tek mekânda birleşen sahneler"
+    },
+    {
+     "harf": "C",
+     "metin": "Tek panel"
+    },
+    {
+     "harf": "D",
+     "metin": "Fresk"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: triptik ama sahneler aynı mekânda (dönem için olağandışı).",
+   "yanlis_gerekceleri": {
+    "A": "Üç ayrı mekân değil, tek mekân.",
+    "C": "Tek panel değil, triptik.",
+    "D": "Fresk değil, tempera pano."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "B",
+     "metin": "Museo dell'Opera del Duomo, Siena"
+    },
+    {
+     "harf": "C",
+     "metin": "Vatikan"
+    },
+    {
+     "harf": "D",
+     "metin": "Brera"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K2: Siena Opera del Duomo.",
+   "yanlis_gerekceleri": {
+    "A": "Uffizi Floransa'da.",
+    "C": "Vatikan değil.",
+    "D": "Brera Milano'da."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Orta sahnede yatakta uzanan kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Meryem"
+    },
+    {
+     "harf": "B",
+     "metin": "Aziz Anna"
+    },
+    {
+     "harf": "C",
+     "metin": "Elizabeth"
+    },
+    {
+     "harf": "D",
+     "metin": "Mecdelli Meryem"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K3: Aziz Anna (Meryem'in annesi) yatakta.",
+   "yanlis_gerekceleri": {
+    "A": "Meryem bebek olarak yıkanıyor, yatakta değil.",
+    "C": "Elizabeth değil.",
+    "D": "Mecdelli Meryem değil."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Sol sahnede bekleyen figür kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Petrus"
+    },
+    {
+     "harf": "B",
+     "metin": "Joachim (Meryem'in babası)"
+    },
+    {
+     "harf": "C",
+     "metin": "Yusuf"
+    },
+    {
+     "harf": "D",
+     "metin": "Zekeriya"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: Joachim, Meryem'in babası.",
+   "yanlis_gerekceleri": {
+    "A": "Petrus değil.",
+    "C": "Yusuf değil (Meryem'in babası Joachim).",
+    "D": "Zekeriya değil."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Panelleri önde ne ayırır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Perde"
+    },
+    {
+     "harf": "B",
+     "metin": "İki beyaz ayak (pier)"
+    },
+    {
+     "harf": "C",
+     "metin": "Duvar"
+    },
+    {
+     "harf": "D",
+     "metin": "Boşluk"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K3: önde iki beyaz ayak; hem çerçeve hem mimari.",
+   "yanlis_gerekceleri": {
+    "A": "Perde değil.",
+    "C": "Duvar değil, ayak.",
+    "D": "Boşluk değil."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Kubbelerde ne görülür?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bulutlar"
+    },
+    {
+     "harf": "B",
+     "metin": "Yıldızlı gece göğü"
+    },
+    {
+     "harf": "C",
+     "metin": "Melekler"
+    },
+    {
+     "harf": "D",
+     "metin": "Boş"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K3: yıldızlı gece göğü (Gotik).",
+   "yanlis_gerekceleri": {
+    "A": "Bulut değil, yıldız.",
+    "C": "Melek değil (kubbe yıldızlı).",
+    "D": "Boş değil."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Eser hangi döngünün parçasıydı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Assisi freskleri"
+    },
+    {
+     "harf": "B",
+     "metin": "Siena Katedrali dört sunaklık döngü"
+    },
+    {
+     "harf": "C",
+     "metin": "Scrovegni"
+    },
+    {
+     "harf": "D",
+     "metin": "Vatikan odaları"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: Siena Katedrali, koruyucu azizlere dört sunak (1330–1350).",
+   "yanlis_gerekceleri": {
+    "A": "Assisi değil.",
+    "C": "Scrovegni Padua'da.",
+    "D": "Vatikan değil."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Bebek Meryem ne yapılırken gösterilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uyurken"
+    },
+    {
+     "harf": "B",
+     "metin": "Yıkanırken"
+    },
+    {
+     "harf": "C",
+     "metin": "Emzirilirken"
+    },
+    {
+     "harf": "D",
+     "metin": "Oynarken"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K3: iki kadın bebek Meryem'i mavi leğende yıkar.",
+   "yanlis_gerekceleri": {
+    "A": "Uyku değil.",
+    "C": "Emzirme değil.",
+    "D": "Oyun değil."
+   },
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Döngüyü hangi eser taçlandırıyordu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Giotto Ağıt"
+    },
+    {
+     "harf": "B",
+     "metin": "Duccio Maestà"
+    },
+    {
+     "harf": "C",
+     "metin": "Martini Müjde"
+    },
+    {
+     "harf": "D",
+     "metin": "Cimabue Çarmıh"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: Duccio'nun Maestà'sı.",
+   "yanlis_gerekceleri": {
+    "A": "Giotto Ağıt değil.",
+    "C": "Martini Müjde döngüde ama taç değil.",
+    "D": "Cimabue Çarmıh değil."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "B",
+     "metin": "Tempera ahşap pano"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K2: tempera on panel.",
+   "yanlis_gerekceleri": {
+    "A": "Fresk değil.",
+    "C": "Yağlıboya tuval değil.",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Triptikte her panel ayrı bir mekân gösterir.",
+   "dogru": false,
+   "aciklama": "Yanlış. Üç panel aynı odada birleşir (dönem için olağandışı).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Çerçevenin ayakları, boyalı odanın sütunları olarak işlev görür.",
+   "dogru": true,
+   "aciklama": "Doğru; çerçeve mimarinin parçası olur (K1/K3).",
+   "kanit": [
+    "C012",
+    "C014"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Eser orijinalde Siena Katedrali St. Sabinus sunağındaydı.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Meryem'in Doğumu İncil'de anlatılan bir olaydır.",
+   "dogru": false,
+   "aciklama": "Yanlış. Apokrif Protoevangelium of James geleneğine dayanır; İncil'de anlatılmaz.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Zemin karoları ve yatak paneller arası kesintisiz devam eder.",
+   "dogru": true,
+   "aciklama": "Doğru (K3 görsel); mekân sürekliliğinin kanıtı.",
+   "kanit": [
+    "C019",
+    "C021"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Mekânsal yeniliği analiz edin: çerçeve nasıl mimariye dönüşür? \"Yüzey ↔ pencere\" karşıtlığını tartışın.",
+   "beklenen_ogeler": [
+    "Ayaklar=sütun",
+    "Kubbe/zemin sürekliliği",
+    "Çerçeve=eşik",
+    "Alberti pencere metaforu"
+   ],
+   "kanit": [
+    "C011",
+    "C012",
+    "C014"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Siena döngüsünü bir kamusal program olarak değerlendirin: eser tek başına mı, programın parçası olarak mı anlam taşır?",
+   "beklenen_ogeler": [
+    "Dört sunak",
+    "Koruyucu azizler",
+    "Meryem'in Hayatı",
+    "Maestà taç",
+    "Müze bağlamdan kopuş"
+   ],
+   "kanit": [
+    "C008",
+    "C010",
+    "C006"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Apokrif ikonografiyi (Protoevangelium of James) çözümleyin: yıkama sahnesi ve Joachim'in bekleyişi neyi vurgular?",
+   "beklenen_ogeler": [
+    "Apokrif kaynak",
+    "Saflık/özen",
+    "Kadınların alanı",
+    "Kutsalın evcilleşmesi"
+   ],
+   "kanit": [
+    "C024",
+    "C016",
+    "C015"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "\"Kutsalın evcilleşmesi\" yorumunu (ev odası + yıldızlı kubbe) kendi estetik deneyiminizle sınayın.",
+   "beklenen_ogeler": [
+    "Gündelik jest",
+    "Kozmik kubbe",
+    "Affective dindarlık",
+    "Yorum sınırı"
+   ],
+   "kanit": [
+    "C016",
+    "C013",
+    "C022"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kaba geometrik perspektif ile matematiksel perspektif farkını tartışın: bu eser hangisini örnekler?",
+   "beklenen_ogeler": [
+    "Sezgisel ↔ matematiksel",
+    "Zemin küçülme",
+    "Brunelleschi/Alberti 15.yy",
+    "Perspektif öncesi"
+   ],
+   "kanit": [
+    "C012",
+    "C014"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Üç panelin aynı odada birleştiğini nasıl anlıyorsunuz? Kanıtları sayın.",
+   "ipucu": "Yatak/zemin/kubbe sürekliliği; ayaklar.",
+   "kanit": [
+    "C019",
+    "C021",
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Bebek Meryem'i yıkayan kadınları ve araçları bulun.",
+   "ipucu": "Mavi leğen, yeşil sürahi, kundak.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sol paneldeki açık lunetin gösterdiği dış mekânı inceleyin.",
+   "ipucu": "Gotik saray avlusu; iç→dış katman.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Yıldızlı kubbenin odaya kattığı havayı düşünün.",
+   "ipucu": "Kozmik boyut; gündelik oda + gökkubbe.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Zemin karolarının derinlik hissini nasıl kurduğunu izleyin.",
+   "ipucu": "Küçülen karolar; geometrik perspektif.",
+   "kanit": [
+    "C021",
+    "C012"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, yer?",
+   "arka": "Meryem'in Doğumu; Pietro Lorenzetti; c.1335–1342; Museo dell'Opera del Duomo, Siena; tempera pano 187×182.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C006",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Yapısal yenilik?",
+   "arka": "Triptik ama tek mekân: çerçeve ayakları sütun olur, kubbe/zemin paneller arası birleşir; \"pencere\" etkisi.",
+   "kanit": [
+    "C011",
+    "C012",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Sahnede kimler var?",
+   "arka": "Aziz Anna yatakta; iki kadın bebek Meryem'i yıkar; Joachim solda bekler; sağda kadınlar.",
+   "kanit": [
+    "C016",
+    "C022",
+    "C015",
+    "C018"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Hangi programın parçası?",
+   "arka": "Siena Katedrali dört sunaklık döngü (koruyucu azizler, 1330–1350); Meryem'in Hayatı; Maestà taç.",
+   "kanit": [
+    "C008",
+    "C010",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "İkonografi kaynağı?",
+   "arka": "Meryem'in Doğumu apokrif Protoevangelium of James geleneğinden; İncil'de anlatılmaz.",
+   "kanit": [
+    "C024"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,538 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1759631",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "B",
+     "metin": "Tempera pano"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: affresco/fresco.",
+   "yanlis_gerekceleri": {
+    "B": "Tempera pano değil.",
+    "C": "Yağlıboya tuval değil.",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser nerede bulunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uffizi, Floransa"
+    },
+    {
+     "harf": "B",
+     "metin": "Brancacci Şapeli, Santa Maria del Carmine, Floransa"
+    },
+    {
+     "harf": "C",
+     "metin": "Vatikan"
+    },
+    {
+     "harf": "D",
+     "metin": "Brera, Milano"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K3: Brancacci Şapeli, Carmine, Floransa; in situ.",
+   "yanlis_gerekceleri": {
+    "A": "Uffizi değil.",
+    "C": "Vatikan değil.",
+    "D": "Brera değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Sahne hangi İncil pasajından gelir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Matta 17:24–27"
+    },
+    {
+     "harf": "B",
+     "metin": "Luka 2"
+    },
+    {
+     "harf": "C",
+     "metin": "Yuhanna 19"
+    },
+    {
+     "harf": "D",
+     "metin": "Markos 12"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: Matta 17, balığın ağzındaki para.",
+   "yanlis_gerekceleri": {
+    "B": "Luka 2 doğum anlatısı.",
+    "C": "Yuhanna 19 gömme.",
+    "D": "Markos 12 farklı."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Perspektifin kaçış noktası neresidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Memurun eli"
+    },
+    {
+     "harf": "B",
+     "metin": "İsa'nın başı"
+    },
+    {
+     "harf": "C",
+     "metin": "Sağdaki mimari"
+    },
+    {
+     "harf": "D",
+     "metin": "Soldaki dağ"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: çizgiler İsa'nın başında birleşir.",
+   "yanlis_gerekceleri": {
+    "A": "Memur değil.",
+    "C": "Mimari değil.",
+    "D": "Dağ değil."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Sol sahnede ne olur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Petrus balıktan parayı çıkarır"
+    },
+    {
+     "harf": "B",
+     "metin": "İsa vaaz verir"
+    },
+    {
+     "harf": "C",
+     "metin": "Memur vergiyi alır"
+    },
+    {
+     "harf": "D",
+     "metin": "Havariler uyur"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: solda Petrus, balığın ağzından para.",
+   "yanlis_gerekceleri": {
+    "B": "Vaaz değil.",
+    "C": "Ödeme sağda.",
+    "D": "Uyku değil."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Sağ sahnede ne olur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Balık mucizesi"
+    },
+    {
+     "harf": "B",
+     "metin": "Petrus vergiyi öder"
+    },
+    {
+     "harf": "C",
+     "metin": "İsa çarmıha gerilir"
+    },
+    {
+     "harf": "D",
+     "metin": "Petrus uyur"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: sağda ödeme, mimari çerçeve içinde.",
+   "yanlis_gerekceleri": {
+    "A": "Mucize solda.",
+    "C": "Çarmıh yok.",
+    "D": "Uyku değil."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Vergi memurunun giysisi nasıldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uzun mavi robe"
+    },
+    {
+     "harf": "B",
+     "metin": "Kısa vermilion tunik"
+    },
+    {
+     "harf": "C",
+     "metin": "Zırh"
+    },
+    {
+     "harf": "D",
+     "metin": "Rahip cübbesi"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: kısa vermilion tunik; pastel havarilere karşıt.",
+   "yanlis_gerekceleri": {
+    "A": "Mavi robe havarilerin.",
+    "C": "Zırh değil.",
+    "D": "Cübbe değil."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Işık hangi yönden gelir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Soldan"
+    },
+    {
+     "harf": "B",
+     "metin": "Sağdan (şapel penceresi)"
+    },
+    {
+     "harf": "C",
+     "metin": "Yukarıdan"
+    },
+    {
+     "harf": "D",
+     "metin": "Önden"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: sağdaki gerçek pencere; gölgeler buna göre.",
+   "yanlis_gerekceleri": {
+    "A": "Sol değil.",
+    "C": "Yukarı değil.",
+    "D": "Ön değil."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Fresk kaç giornata'da yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "12"
+    },
+    {
+     "harf": "B",
+     "metin": "32"
+    },
+    {
+     "harf": "C",
+     "metin": "50"
+    },
+    {
+     "harf": "D",
+     "metin": "100"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: 32 giornata.",
+   "yanlis_gerekceleri": {
+    "A": "12 değil.",
+    "C": "50 değil.",
+    "D": "100 değil."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Şapeli 1480'lerde kim tamamladı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Masolino"
+    },
+    {
+     "harf": "B",
+     "metin": "Filippino Lippi"
+    },
+    {
+     "harf": "C",
+     "metin": "Ghirlandaio"
+    },
+    {
+     "harf": "D",
+     "metin": "Botticelli"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K3: Filippino Lippi.",
+   "yanlis_gerekceleri": {
+    "A": "Masolino daha önce ayrıldı.",
+    "C": "Ghirlandaio değil.",
+    "D": "Botticelli değil."
+   },
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Sahne, üç eşzamanlı episod'u tek yüzeyde birleştirir.",
+   "dogru": true,
+   "aciklama": "Doğru; sürekli anlatı (K2/K3).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser, Floransa'da bir müze salonuna taşınmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış; in situ, şapel duvarında.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "1771 yangını fresklere zarar verdi; 1980'ler restorasyonu renkleri geri getirdi.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Vergi memuru, kutsal yarım dairenin içinde durur.",
+   "dogru": false,
+   "aciklama": "Yanlış; memur kutsal alanın dışında (K3).",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Michelangelo, ödeyen Petrus figürünü kopyaladı.",
+   "dogru": true,
+   "aciklama": "Doğru; Münih drawing (K2).",
+   "kanit": [
+    "C020"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Perspektifi analiz edin: kaçış noktası İsa'nın başında olmasının anlamı; Masolino karşılaştırması.",
+   "beklenen_ogeler": [
+    "Tek nokta perspektifi",
+    "Geometri+teoloji",
+    "Karşı duvar dağılımı",
+    "Yarım daire/apsis"
+   ],
+   "kanit": [
+    "C012",
+    "C013"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Chiaroscuro + atmosferik perspektifi tartışın: ışık hacmi nasıl kurar?",
+   "beklenen_ogeler": [
+    "Sağdan ışık",
+    "Gölge=beden kanıtı",
+    "Soluk dağlar",
+    "Antik teknik yeniden buluş"
+   ],
+   "kanit": [
+    "C017",
+    "C016"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Pro-papal programı ve konu teorilerini (catasto/Martin V) kanıtla sınayın.",
+   "beklenen_ogeler": [
+    "Felice siparişi (K1)",
+    "Konstanz 1418",
+    "Petrus=vekil",
+    "Teoriler D (tartışma)"
+   ],
+   "kanit": [
+    "C031",
+    "C022"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Sürekli anlatı + jest gramerini çözümleyin: üç zaman nasıl birleşir?",
+   "beklenen_ogeler": [
+    "Talep/balık/ödeme",
+    "İşaret zinciri",
+    "Memur-Petrus ters açı",
+    "Mucize ikincil (K2)"
+   ],
+   "kanit": [
+    "C011",
+    "C015"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Restorasyon tarihini ve \"karanlık Masaccio\" yargısını sorgulayın.",
+   "beklenen_ogeler": [
+    "1746 overpaint",
+    "1771 yangın",
+    "1980'ler restorasyon",
+    "A secco kayıplar",
+    "Yargı=durum bağımlı (yorum)"
+   ],
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaçış noktasını bulun: çizgiler nerede birleşiyor?",
+   "ipucu": "İsa'nın başı.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Jest zincirini izleyin: İsa→Petrus→sol; orada ne oluyor?",
+   "ipucu": "Balık mucizesi solda.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Memur ile Petrus'un pozlarını karşılaştırın: ters açı farkı.",
+   "ipucu": "Aynı jest, iki yön.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Soldaki dağların ve Petrus'un solukluğunu gözleyin.",
+   "ipucu": "Atmosferik perspektif.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Gölgelerin yönünü izleyin: ışık nereden?",
+   "ipucu": "Sağdaki pencere.",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, yer?",
+   "arka": "Vergi Parası; Masaccio; 1420'ler (1424); fresk; Brancacci Şapeli, Carmine, Floransa (in situ).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Üç episod?",
+   "arka": "Merkez talep; sol balıktan para; sağ ödeme; Matta 17:24–27; jest/bakış sistemi.",
+   "kanit": [
+    "C011",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Perspektif ve ışık?",
+   "arka": "Kaçış noktası İsa'nın başı; yarım daire/apsis; sağdan birleşik ışık; chiaroscuro; atmosferik perspektif.",
+   "kanit": [
+    "C012",
+    "C017",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Tarihçe: yangın/restorasyon?",
+   "arka": "1746 Meucci overpaint; 1771 yangın; 1981–1990 restorasyon; a secco kayıplar; 1480'ler Filippino.",
+   "kanit": [
+    "C010",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Program ve sipariş?",
+   "arka": "Felice Brancacci (tüccar) → Masolino+Masaccio 1420'ler (K1); pro-papal; Petrus vekil; Konstanz 1418.",
+   "kanit": [
+    "C031",
+    "C022"
+   ]
+  }
+ ]
+}

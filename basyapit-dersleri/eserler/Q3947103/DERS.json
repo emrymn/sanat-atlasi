@@ -1,0 +1,468 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3947103",
+ "sanatci_id": "bonaventura-berlinghieri",
+ "baslik": "Assisi'li Aziz Franciscus ve Yaşamından Sahneler",
+ "ozgun_baslik": "San Francesco e storie della sua vita",
+ "kunye": {
+  "sanatci": "Bonaventura Berlinghieri",
+  "sanatci_yasam": "yaklaşık 1210–1287",
+  "tarih": "1235",
+  "tarih_belirsizlik": "İmzalı/yazıtlı 1235 (MCCXXXV); Wikidata'da 1298 alternatifi çelişir (C004, D)",
+  "teknik": "Tempera ve altın, ahşap pano",
+  "boyut_cm": {
+   "yukseklik": 160,
+   "genislik": 123
+  },
+  "muze": "Chiesa di San Francesco, Pescia (in situ kilise)",
+  "envanter": "yok (kilise panosu; Mainardi sunağı)",
+  "edinim": "1235; Mainardi şapeli bağlamı (çıkarım)",
+  "konum": "Pescia, San Francesco Kilisesi, nef sağ son sunak",
+  "telif_durumu": "Kamu malı (sanatçı ö.1287); Commons görseli PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Bonaventura_Berlinghieri,_San_Francesco_e_storie_della_sua_vita,_1235,_01b.jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (sanatçı ö.1287)",
+  "dogrulama": {
+   "yontem": "Commons 1280×1747 tam kare vision köprüsüyle incelendi",
+   "cozunurluk": "1280×1747",
+   "incelenen_bolgeler": [
+    "tam kare",
+    "merkez figür",
+    "yan sahneler",
+    "alt yazıt"
+   ],
+   "sinirlar": "Stigmata ve imza satırı tam transkripsiyonu bu çözünürlükte net değil; sahne içerikleri K1 betimiyle eşleştirildi; MCCXXXV yazıtı görselde desteklenir"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 419
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1485
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2606
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-eser-tarihi-bir-keşif-ve-yerleşme-sorunu"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-ilk-olmanın-epistemolojisi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-biçimsel-analiz-cephesellik-ve-anlatı"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-stigmata-ve-alter-christus"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-koruma-katmanlar-arası-bir-eser"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (sanatçı, 1235 tarih, yer, teknik, boyut) sayar ve yazıt/veri-tabanı tarih ihtilafını kanıt hiyerarşisiyle açıklar.",
+  "Maniera greca (Italo-Bizans) üslubun özelliklerini (altın zemin, cephesellik, şematik figür) tanır.",
+  "Eseri Franciscus ikonografisinin bilinen başlangıcı olarak önemini açıklar.",
+  "Merkez figür + yan anlatı sahneleri düzenini ve üç yemin/stigmata işaretlerini analiz eder.",
+  "Keşif ve restorasyon tarihini kanıt türleri ve koruma etiği açısından değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Maniera greca",
+   "tanim": "\"Yunan/Bizans tarzı\"; altın zemin, düz ve katı cephesel figürlerle çalışan Orta Çağ İtalyan üslubu.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "ad": "Tempera",
+   "tanim": "Yumurta sarısı gibi bağlayıcılı pigmentle boyama; yağlıboyadan önceki baskın teknik.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "Agiografik pano",
+   "tanim": "Bir azizin hayatını ve mucizelerini merkez figür + yan sahnelerle anlatan sunak panosu.",
+   "kanit": [
+    "C008",
+    "C016"
+   ]
+  },
+  {
+   "ad": "Stigmata",
+   "tanim": "Franciscus'un el/ayaklarında belirdiğine inanılan, İsa'nın çarmıh yaralarını taklit eden izler.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "In situ",
+   "tanim": "Eserin özgün bağlamında (burada bir kilise sunağında) yerinde durması; müzeye taşınmamış.",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: San Francesco e storie della sua vita / Assisi'li Aziz Franciscus ve Yaşamından Sahneler",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Bonaventura Berlinghieri",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih 1235; imzalı ve tarihli; alt kenarda MCCXXXV yazıtı görselde okunur",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Wikidata ikinci inception değeri 1298; imzalı 1235 ile çelişir; yazıt esas",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K1",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C005",
+   "ifade": "Teknik: tempera ve altın, ahşap pano",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Boyut: 160 × 123 cm",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Yer: Chiesa di San Francesco, Pescia; Mainardi sunağı (nef sağ, son sunak)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Tür: dinsel/agiyografik sunak panosu",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Assisi'li Franciscus'un günümüze ulaşan en eski tasviri; ölümünden (1226) 9 yıl sonra",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "1880'lerde Michele Ridolfi, 17.yy Bardelli tuvalini kaldırınca keşfedildi; imza/tarih alt kenarda bulundu",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Mainardi ailesi 1235'te San Francesco şapeli yaptırdı; kalıcı yerleşim çıkarımı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Üçgen alınlı (cuspidata) biçim; ortada tam boy ayakta Franciscus",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Kapüşonlu saio, üç düğümlü kordon; sol elde İncil, sağ el kutsama + stigmata",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Üç düğüm = üç yemin: itaat, iffet, yoksulluk",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Omuz hizasında iki melek madalyonu; işlevi belirsiz (cimasa hipotezi)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Altı hayat sahnesi, üçerli iki sütun, kronolojik; 2 hayatta (Kuşlara Vaaz, Stigmata) + 4 ölüm sonrası mucize",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Sahneler (saat yönü, sağ üst): storpi, zoppi, ossessi mucizeleri, bir kızın iyileşmesi, Kuşlara Vaaz, Stigmata",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Bizans yatay çerçevesi kaldırıldı; sahneler açık bölmelere (quadretti) dağıtıldı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Üslup arkaik Italo-Bizans (maniera greca): cephesel duruş, şematik yüz, altın zemin, düz perspektif",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Franciscus Hikâyeleri'ni işleyen bilinen ilk eser; hazır Bizans modeli yoktu; minyatür ilişkisi sonradan kanıtlandı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "1937 Giotto sergisi kataloğu: halele sonradan yeniden yapılmış, kapüşon ucunu örtmüş",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Restorasyon Alfio del Serra, 19 Kasım 1981–3 Ekim 1982; aşınmış kapüşon sahte hale altında bulundu, hale kaldırıldı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Berlinghieri İtalyan ressam; WD yaşam 1210–1287 (yaklaşık); belgeli etkinlik 1235–1270'ler",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Görsel kamu malı (sanatçı ö.1287); Commons PD; geçici kopya .qwen/tmp (teslimata girmez)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "İtalyan Vikipedi",
+   "belge": "San Francesco e storie della sua vita (kaynaklı madde)",
+   "url": "https://it.wikipedia.org/wiki/San_Francesco_e_storie_della_sua_vita",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Wikidata",
+   "belge": "Q3947103 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q3947103",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikimedia Commons",
+   "belge": "Bonaventura Berlinghieri, San Francesco e storie della sua vita, 1235, 01b.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bonaventura_Berlinghieri,_San_Francesco_e_storie_della_sua_vita,_1235,_01b.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1280×1747 indirilip incelendi",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K4",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Bonaventura Berlinghieri",
+   "url": "https://en.wikipedia.org/wiki/Bonaventura_Berlinghieri",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Santa Croce Çarmıhı",
+   "sanatci": "Cimabue",
+   "kurum": "Museo dell'Opera di Santa Croce, Floransa",
+   "mufredat_ici": true,
+   "gerekce": "Aynı Duecento dünyasının Bizans kökenli kolu; figür dili karşıtlığı (yorum).",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "eser": "Ağıt",
+   "sanatci": "Giotto",
+   "kurum": "Scrovegni Şapeli, Padua",
+   "mufredat_ici": true,
+   "gerekce": "Maniera greca ↔ doğalcılık geçişinin karşıtı: hacimli/mekânsal/duygusal figür (yorum).",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "eser": "Müjde (Triptik)",
+   "sanatci": "Simone Martini",
+   "kurum": "Uffizi, Floransa",
+   "mufredat_ici": true,
+   "gerekce": "Aynı altın zemin geleneğinin zarif çizgisel kolu; katı üslupla karşıtlık (yorum).",
+   "kanit": [
+    "C019"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler C001–C024 ile eşleştirildi; desteklenmeyen yorum C olarak işaretlendi (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — K1/K2/K3 yeniden açılıp iddialarla karşılaştırıldı; birincil kilise envanteri erişilemedi (açıkça işaretli)",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data/basyapitlar.json Q3947103 tarih \"1235\" imzalı/yazıtlı 1235 ile uyumlu; WD 1298 alternatifi veri notu (C004).",
+  "muze \"Church of Saint Francis\" → Pescia, San Francesco (in situ kilise, müze değil); yer alanı önerisi.",
+  "Boyut/teknik data'da eksikse K1/K2'den tamamlanabilir (160×123, tempera-altın/ahşap) — onaya sunulur."
+ ]
+}

@@ -1,0 +1,483 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3873247",
+ "sanatci_id": "pietro-lorenzetti",
+ "baslik": "Meryem'in Doğumu",
+ "ozgun_baslik": "Natività della Vergine",
+ "kunye": {
+  "sanatci": "Pietro Lorenzetti",
+  "sanatci_yasam": "c. 1280–1348",
+  "tarih": "c. 1335–1342",
+  "tarih_belirsizlik": "WD 1335+1342; yaklaşık aralık (C003)",
+  "teknik": "Tempera, ahşap pano",
+  "boyut_cm": {
+   "yukseklik": 187,
+   "genislik": 182
+  },
+  "muze": "Museo dell'Opera del Duomo, Siena",
+  "envanter": "birincil kaynaktan doğrulanamadı",
+  "edinim": "Siena Katedrali St. Sabinus sunağı; dört sunaklık döngü (1330–1350)",
+  "konum": "Siena, Opera del Duomo müzesi",
+  "telif_durumu": "Kamu malı (Pietro ö.1348); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Nativity_of_the_Virgin_(1335-42)_by_Pietro_Lorenzetti.jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (Pietro Lorenzetti ö.1348)",
+  "dogrulama": {
+   "yontem": "Commons 1275×1300 tam kare vision köprüsü",
+   "cozunurluk": "1275×1300",
+   "incelenen_bolgeler": [
+    "tam kare",
+    "orta sahne (Anna/bebek)",
+    "sol (Joachim)",
+    "sağ (kadınlar)",
+    "kubbe/zemin"
+   ],
+   "sinirlar": "Yazıt tam transkripsiyonu ve yüz ifadeleri net değil; kakmalı nesne kimliği belirsiz (K1 perhaps)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 412
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1313
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2568
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-siena-döngüsü-bir-kamusal-program"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-mekânsal-yenilik-çerçeve-mimariye-dönüşür"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-sahnelerin-okunması-iç-dış-eşik"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-apokrif-bir-doğum"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-üslup-siena-çizgisi-ve-mekân"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (Lorenzetti, c.1335–1342, Siena, teknik, boyut) ve orijinal sunak bağlamını açıklar.",
+  "Triptiğin tek mekânda birleşme yeniliğini ve çerçeve-mimari ilişkisini analiz eder.",
+  "Siena Katedrali dört sunaklık döngüsünü kamusal program olarak tanır.",
+  "Apokrif Meryem'in Doğumu ikonografisini (Anna, Joachim, yıkama) çözümler.",
+  "Kaba geometrik perspektif ile mekân birliğini ve yorum sınırlarını değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Triptik",
+   "tanim": "Üç panelden oluşan resim; burada sahneler tek mekânda birleşir (olağandışı).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "ad": "Tempera",
+   "tanim": "Yumurta bağlayıcılı pigment; yağlıboyadan önceki teknik.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "ad": "Protoevangelium of James",
+   "tanim": "Meryem'in doğum/çocukluğunu anlatan apokrif metin; bu ikonografinin kaynağı.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "ad": "Geometrik perspektif",
+   "tanim": "Mekânı birleştirme çabası; burada kaba/sezgisel, matematiksel değil.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "Pier (ayak)",
+   "tanim": "Öndeki iki beyaz ayak; hem çerçeve hem boyalı odanın sütunu.",
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Nativity of the Virgin / Meryem'in Doğumu (Natività della Vergine)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Pietro Lorenzetti (Sieneli geç Orta Çağ ressamı)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih: c.1335–1342 (WD 1335+1342; yaklaşık aralık)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: tempera, ahşap pano",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut: 187×182 cm",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Yer: Museo dell'Opera del Duomo, Siena",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Orijinal: Siena Katedrali St. Sabinus sunağı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Şehrin koruyucu azizlerine (Ansanus/Sabinus/Crescentius/Victor) dört sunaklık döngü; 1330–1350",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Döngü: Martini/Memmi Müjde; Ambrogio Lorenzetti Tapınakta Sunum (1342); Bulgarini Doğum (1351, sökülmüş)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Döngü tümü Meryem'in Hayatı; Duccio Maestà taçlandırır",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Triptik ama sahneler AYNI mekânda (dönem için olağandışı); oda kubbeleri panel biçimini izler",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Kaba geometrik perspektif; önde iki beyaz ayak (pier) ile ayrım",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Kubbelerde yıldızlı gece göğü (Gotik)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Mekânsal yenilik: çerçeve boyalı mimarinin parçası; üç panel tek iç mekân",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Sol: Joachim bir çocuk+yaşlı adamla bekler; lunet/kemer Gotik saray avlusu",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Orta: Aziz Anna yatakta (Orta Çağ sandığı) beyaz örtü; iki kadın newborn yıkar",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Sağ ayak ardı kırmızı giysili kadın Anna ile konuşur; kakmalı nesne (sancak/çalgı belirsiz)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Sağ panel: yıkama aksesuarlı iki kadın",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Görsel: tek iç mekân sürekliliği — yatak/zemin/kubbe paneller arası devam",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Görsel: Gotik sivri kemer, yaldızlı çerçeve, tepe madalyonları",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Görsel: geometrik zemin karoları (kırmızı/siyah/krem)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Görsel: mavi leğende bebek yıkama; yeşil sürahili kadın; kundaklı bebek Meryem",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Görsel: tabanda Latince yazıt bandı (kısmen okunur)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "İkonografi: Meryem'in Doğumu (Anna, bebek Meryem, Joachim, yıkama; apokrif Protoevangelium of James)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Pietro Lorenzetti Sieneli; Ambrogio Lorenzetti'nin kardeşi (Siena okulu)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Görsel kamu malı (Pietro ö.1348); Commons PD; geçici kopya .qwen/tmp",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "K1 bibliyografya: De Vecchi & Cerchiari, I tempi dell'arte (Bompani 1999) — erişilmedi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Nativity of the Virgin (Pietro Lorenzetti) — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Nativity_of_the_Virgin_(Pietro_Lorenzetti)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Wikidata",
+   "belge": "Q3873247 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q3873247",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikimedia Commons",
+   "belge": "Nativity of the Virgin (1335-42) by Pietro Lorenzetti.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Nativity_of_the_Virgin_(1335-42)_by_Pietro_Lorenzetti.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1275×1300 incelendi",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Müjde (Triptik)",
+   "sanatci": "Simone Martini",
+   "kurum": "Uffizi, Floransa",
+   "mufredat_ici": true,
+   "gerekce": "Aynı Siena döngüsü; çizgisel zarafet ↔ mekânsal derinlik (yorum).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "eser": "Tapınakta Sunum",
+   "sanatci": "Ambrogio Lorenzetti",
+   "kurum": "Uffizi (Siena döngüsü)",
+   "mufredat_ici": false,
+   "gerekce": "Aynı döngü, kardeş; ortak perspektif arayışı (yorum).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "eser": "Maestà",
+   "sanatci": "Duccio",
+   "kurum": "Siena, Opera del Duomo",
+   "mufredat_ici": true,
+   "gerekce": "Döngünün tacı; iki nesil karşıtlığı (yorum).",
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data Q3873247 tarih \"1342\" → c.1335–1342 aralığı (WD 1335+1342); \"y.1342\" veya aralık önerilir.",
+  "muze \"Siena Katedrali'nden; Museo dell'O...\" → Museo dell'Opera del Duomo, Siena (orijinal Katedral St. Sabinus sunağı).",
+  "Boyut 187×182 K1/K2 uyumlu; envanter numarası birincilden doğrulanamadı."
+ ]
+}

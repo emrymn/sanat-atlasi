@@ -1,0 +1,442 @@
+{
+ "surum": "1.0",
+ "eser_id": "duccio-di-buoninsegna|Christ's Entry into Jerusalem (Maestà arka yüzü)",
+ "sanatci_id": "duccio-di-buoninsegna",
+ "baslik": "İsa'nın Kudüs'e Girişi (Maestà arka yüzü)",
+ "ozgun_baslik": "Christ's Entry into Jerusalem (Maestà arka yüzü)",
+ "kunye": {
+  "sanatci": "Duccio di Buoninsegna",
+  "sanatci_yasam": "c. 1255–1318/19",
+  "tarih": "1308–1311 (Maestà)",
+  "tarih_belirsizlik": "Maestà 1308 sipariş, 1311 yerleştirme; panel bu bütüne ait",
+  "teknik": "Tempera ve altın, ahşap pano",
+  "muze": "Museo dell'Opera Metropolitana del Duomo, Siena",
+  "envanter": "panel envanteri birincil kaynaktan doğrulanamadı",
+  "edinim": "Siena şehri siparişi (1308); Maestà arka paneli",
+  "konum": "Siena, Duomo müzesi (Maestà arka yüz paneli)",
+  "telif_durumu": "Kamu malı (Duccio ö.1318/19); Commons/WGA PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Duccio_di_Buoninsegna_-_Entry_into_Jerusalem_-_WGA06783.jpg",
+  "kaynak": "Wikimedia Commons / WGA",
+  "lisans": "Public Domain (Duccio ö.1318/19)",
+  "dogrulama": {
+   "yontem": "Commons/WGA 562×1010 tam kare vision köprüsü",
+   "cozunurluk": "562×1010",
+   "incelenen_bolgeler": [
+    "tam kare",
+    "İsa/eşek",
+    "kalabalık",
+    "ağaç figürleri",
+    "mimari"
+   ],
+   "sinirlar": "WGA reproduksiyonu; panelin müzedeki güncel durumu farklı olabilir; uzak figürler belirsiz; yazıt yok"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 402
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1290
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2572
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-maestà-bir-şehir-projesi-olarak-sanat"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-ön-ve-arka-iki-görüntü-rejimi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-anlatı-panelinin-yöntemleri-kompozisyon-ve-jest"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-palmiye-pazarının-katmanları"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-üslup-bizans-ile-gerçeklik-arasında"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (Duccio, Maestà 1308–1311, Siena, teknik) ve sunak içindeki yerini açıklar.",
+  "Maestà'nın ön/arka yapısını ve kamusal işlevini (şehir siparişi, tören) tanır.",
+  "Palmiye Pazarı ikonografisini ve görsel öğeleri (eşek, pelerin, palmiye, ağaç) analiz eder.",
+  "Anlatı panelinin kompozisyon/jest yöntemlerini ve Bizans-gerçeklik melez üslubunu değerlendirir.",
+  "Parça-bütün ilişkisini ve müze bağlamını kanıt türleri açısından tartışır."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Maestà",
+   "tanim": "\"Majeste\"; tahtta Meryem ve Çocuk İsa'yı gösteren büyük sunak; Duccio'nunki Siena için, ön+arka yüzlü.",
+   "kanit": [
+    "C009",
+    "C008"
+   ]
+  },
+  {
+   "ad": "Palmiye Pazarı",
+   "tanim": "İsa'nın Kudüs'e eşekle girişinin kutlandığı gün; halk pelerin ve palmiye dallarıyla karşılar.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "ad": "Croce/panel anlatısı",
+   "tanim": "Sunak arka yüzünde kutsal hayatı kronolojik anlatan küçük panel dizisi.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "ad": "Tempera",
+   "tanim": "Yumurta bağlayıcılı pigment; yağlıboyadan önceki teknik.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "Hiyeratik",
+   "tanim": "Kutsal, törensel, katı ve cephesel temsil; Bizans üslubunun özelliği.",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: İsa'nın Kudüs'e Girişi / Christ's Entry into Jerusalem; Maestà arka yüzü paneli",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Duccio di Buoninsegna (Sieneli ressam)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Maestà arka yüzündeki Christ'in Hayatı sahnelerinden biri; arka yüz 43 küçük panel",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarih: Maestà 1308 sipariş, 9 Haziran 1311 yerleştirme (1308–1311)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Teknik: tempera ve altın, ahşap pano (Maestà bütünü)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Yer: Museo dell'Opera Metropolitana del Duomo, Siena",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Maestà Siena şehri siparişi (1308); Duccio'nun başlıca eseri",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Maestà hem ön hem arka yüzü olan ilk sunak",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Ön yüz: tahtta Meryem+Çocuk İsa, azizler/melekler + predella Christ'in Çocukluğu",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Arka yüz: 43 panel (Meryem/Christ Hayatı) + 6 melek; bazıları dağılmış/kayıp",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Maestà bütün boyutu 213×396 cm (tek panel değil, sunak)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Taban yazıtı: \"Tanrı'nın Kutsal Annesi, Siena'ya barışın ve Duccio'ya hayatın nedeni ol...\"",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "9 Haziran 1311 yerleştirme; şehir töreni (dükkânlar kapalı, alay, mumlar, çanlar, sadaka)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Duccio asistanlarıyla Via Stalloreggi atölyesinde (katedral yanı) çalıştı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Maestà İtalyan resmini Italo-Bizans hiyeratikten gerçekliğe yöneltti (Giotto/Trecento)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Paneller Duomo müzesinde; merkez/alt/arka ayrı sergilenir",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Görsel: İsa altın haleli, gri eşekte; kırmızı tunik+koyu giysi; sağ el kutsama",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Görsel: haleli havariler izler; sol altta sıpa (ikinci eşek)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Görsel: yola kırmızı pelerinler serilir; adam eğilip örtü yayar",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Görsel: kent kapısı önünde palmiye dallı kalabalık İsa'yı karşılar",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Görsel: ağaca tırmanan figürler; pencere/balkondan bakanlar",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Görsel: stilize mimari — tepede kubbeli yapı, mazgallı sur, kemerli giriş",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Görsel: sıcak toprak tonları; craquelure + pigment kaybı",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "İkonografi: Palmiye Pazarı / Kudüs'e Giriş (eşek, pelerin, palmiye; Matta 21 vb.)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Görsel kamu malı (Duccio ö.1318/19); Commons/WGA PD; geçici kopya .qwen/tmp",
+   "seviye": "A",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Maestà (Duccio) — kaynaklı madde (needs-more-citations bandı notlu)",
+   "url": "https://en.wikipedia.org/wiki/Maest%C3%A0_(Duccio)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML); atıf bandı var, çekirdek olgular standart literatürle uyumlu",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Wikimedia Commons / WGA",
+   "belge": "Duccio di Buoninsegna - Entry into Jerusalem - WGA06783.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Duccio_di_Buoninsegna_-_Entry_into_Jerusalem_-_WGA06783.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 562×1010 incelendi",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Maestà ön yüz (tahtta Meryem)",
+   "sanatci": "Duccio",
+   "kurum": "Siena, Duomo müzesi",
+   "mufredat_ici": false,
+   "gerekce": "Aynı sunağın ön yüzü; ikon ↔ anlatı rejimi karşıtlığı (yorum).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "eser": "Ağıt / Scrovegni freskleri",
+   "sanatci": "Giotto",
+   "kurum": "Scrovegni Şapeli, Padua",
+   "mufredat_ici": true,
+   "gerekce": "Aynı geçiş dönemi; hacim/mekân ↔ çizgisel zarafet (yorum).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "eser": "Santa Croce Çarmıhı",
+   "sanatci": "Cimabue",
+   "kurum": "Floransa, Santa Croce",
+   "mufredat_ici": true,
+   "gerekce": "Bizans'tan dönüşümün başka kolu; beden/acı ↔ anlatı/canlılık (yorum).",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data anahtar bileşik (QID yok); tarih \"slaytta c1308–11\" → \"1308–1311 (Maestà)\" önerilir (\"slaytta\" ifadesi temizlik gerektirir).",
+  "muze \"Maestà, Siena\" → \"Museo dell'Opera Metropolitana del Duomo, Siena (Maestà arka paneli)\" önerilir.",
+  "Panel boyutu/envanteri birincil kaynaktan doğrulanamadı; Maestà bütünü 213×396 (C011) tek panel boyutu DEĞİL."
+ ]
+}

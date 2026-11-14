@@ -1,0 +1,369 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q5856992",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Şubat hangi tür nesnenin parçasıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Très Riches Heures (book of hours) takvim sayfası"
+    },
+    {
+     "harf": "B",
+     "metin": "Bağımsız bir tablo"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Bir heykel"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: takvim minyatürü.",
+   "yanlis_gerekceleri": {
+    "B": "Tablo değil, el yazması sayfası.",
+    "C": "Fresk değil.",
+    "D": "Heykel değil."
+   },
+   "kanit": [
+    "C001",
+    "C004"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Şubat'ı \"rustic painter\"a veren yorum kime aittir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pognon"
+    },
+    {
+     "harf": "B",
+     "metin": "Vasari"
+    },
+    {
+     "harf": "C",
+     "metin": "Panofsky"
+    },
+    {
+     "harf": "D",
+     "metin": "Gombrich"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Pognon.",
+   "yanlis_gerekceleri": {
+    "B": "Vasari değil.",
+    "C": "Panofsky değil.",
+    "D": "Gombrich değil."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "1980'lerde Condé erişimi kısıtlayınca ne kondu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Faksimile"
+    },
+    {
+     "harf": "B",
+     "metin": "Yeni bir tablo"
+    },
+    {
+     "harf": "C",
+     "metin": "Boş çerçeve"
+    },
+    {
+     "harf": "D",
+     "metin": "Video"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: faksimile.",
+   "yanlis_gerekceleri": {
+    "B": "Yeni tablo değil.",
+    "C": "Boş çerçeve değil.",
+    "D": "Video değil."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Bir dergi Şubat'ta neyi retuşladı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Köylü genitalini"
+    },
+    {
+     "harf": "B",
+     "metin": "Güneş arabasını"
+    },
+    {
+     "harf": "C",
+     "metin": "Karı"
+    },
+    {
+     "harf": "D",
+     "metin": "Altını"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: sansür.",
+   "yanlis_gerekceleri": {
+    "B": "Güneş arabası değil.",
+    "C": "Kar değil.",
+    "D": "Altın değil."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Şubat hangi üslubun doruğudur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uluslararası Gotik"
+    },
+    {
+     "harf": "B",
+     "metin": "Rönesans"
+    },
+    {
+     "harf": "C",
+     "metin": "Barok"
+    },
+    {
+     "harf": "D",
+     "metin": "Empresyonizm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Uluslararası Gotik.",
+   "yanlis_gerekceleri": {
+    "B": "Rönesans değil.",
+    "C": "Barok değil.",
+    "D": "Empresyonizm değil."
+   },
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Şubat bağımsız bir tablodur.",
+   "dogru": false,
+   "aciklama": "Yanlış; el yazması minyatürü (K2).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Şubat'ın atfı tartışmalıdır (rustic painter).",
+   "dogru": true,
+   "aciklama": "Doğru; Pognon (K2).",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Bir dergi köylü genitalini retuşladı.",
+   "dogru": true,
+   "aciklama": "Doğru; sansür (K2).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "1980'lerde Condé erişimi kısıtlandı, faksimile kondu.",
+   "dogru": true,
+   "aciklama": "Doğru (K2).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Şubat, Uluslararası Gotik'in lüks bir el yazması sayfasıdır.",
+   "dogru": true,
+   "aciklama": "Doğru (K2).",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Book of hours + saray lüksü bağlamını açıklayın.",
+   "beklenen_ogeler": [
+    "Kanonik saat duası",
+    "Berry Dükü Jean",
+    "Pahalı pigment + altın",
+    "Prestij nesnesi (yorum)"
+   ],
+   "kanit": [
+    "C004",
+    "C002",
+    "C007"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Atıf/atölye tartışmasını üslup adlarıyla sınayın.",
+   "beklenen_ogeler": [
+    "Pognon rustic painter",
+    "courtly/rustic/pious",
+    "1416 ölüm + sonra tamamlama",
+    "Kimlik belirsiz (yorum)"
+   ],
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Kış sahnesi betiminin belirsizliğini kanıt katmanıyla açıklayın.",
+   "beklenen_ogeler": [
+    "Mevcut data betimi",
+    "Görsel/birincil teyit yok",
+    "E/belirsiz",
+    "İnsan editör zorunlu"
+   ],
+   "kanit": [
+    "C011",
+    "C019"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Atmosfer perspektifi + palet soğuğu nasıl hissettirir?",
+   "beklenen_ogeler": [
+    "Sınırlı palet + beyaz kar",
+    "Uzakta solgunluk",
+    "Fiziksel deneyim",
+    "Manzara öncüsü (yorum)"
+   ],
+   "kanit": [
+    "C013",
+    "C014",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Köylü \"öteki\" bakışı + sansür bağlantısını çözümleyin.",
+   "beklenen_ogeler": [
+    "Aristokrat öteki bakışı",
+    "Beden + erişim politikası",
+    "Dergi retuşu",
+    "Temsilin politikası (yorum)"
+   ],
+   "kanit": [
+    "C016",
+    "C010"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Köylü figürlerinin açık saçık hâlini bulun; bir dergi bunu retuşladı.",
+   "ipucu": "Sansür kaydı (K2).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Altın ve pahalı pigment kullanımını izleyin.",
+   "ipucu": "Uluslararası Gotik lüksü.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Sayfanın book of hours takvim yapısını inceleyin.",
+   "ipucu": "Dua kitabı sayfası.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Courtly ↔ rustic üslup farkını diğer takvim sayfalarıyla karşılaştırın.",
+   "ipucu": "Atıf adları.",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, yer?",
+   "arka": "Şubat; Limbourg Kardeşler; c.1412–16; el yazması minyatürü; ~29×21; Musée Condé MS65 f.2v.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Atıf tartışması?",
+   "arka": "Pognon \"rustic painter\"; Limbourg genel kabul; kardeşler 1416 öldü, sonra tamamlandı.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Alımlama + sansür?",
+   "arka": "1980'ler Condé kısıtlama + faksimile; Camille reprodüksiyon; dergi genital retuşu.",
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Üslup + malzeme?",
+   "arka": "Uluslararası Gotik geç evre; pahalı pigment + altın; ultramarin.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Bibliyografya + erişim sınırı?",
+   "arka": "Cazelles/Rathofer 1988; Camille; Pognon (erişilmedi); Condé katalog açılmadı; görsel incelenemedi.",
+   "kanit": [
+    "C021"
+   ]
+  }
+ ]
+}

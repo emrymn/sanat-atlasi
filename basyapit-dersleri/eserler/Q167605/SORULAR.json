@@ -1,0 +1,566 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q167605",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Rijksmuseum'un güncel koleksiyon kaydına göre Süt Boşaltan Kadın'ın tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1632"
+    },
+    {
+     "harf": "B",
+     "metin": "y. 1660 (c. 1660)"
+    },
+    {
+     "harf": "C",
+     "metin": "1675"
+    },
+    {
+     "harf": "D",
+     "metin": "1696"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "Rijksmuseum koleksiyon sayfası ve Linked Art kaydı 'c. 1660' verir; Wikidata P571 yıl hassasiyetinde (precision 9) ve 'circa' niteleyicili olarak 1660 taşır. Kesin yıl değildir.",
+   "yanlis_gerekceleri": {
+    "A": "1632, Vermeer'in doğum yılıdır; eserin tarihi değil.",
+    "C": "1675, Vermeer'in ölüm yılıdır; eserin tarihi değil.",
+    "D": "1696, eserin satıldığı Dissius açık artırmasının yılıdır; yapım tarihi değil."
+   },
+   "kanit": [
+    "C003",
+    "C002"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin Rijksmuseum envanter numarası hangisidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "SK-A-385"
+    },
+    {
+     "harf": "B",
+     "metin": "RF 926"
+    },
+    {
+     "harf": "C",
+     "metin": "SK-A-2344"
+    },
+    {
+     "harf": "D",
+     "metin": "NK2334"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "Rijksmuseum kaydı, Linked Art ve Wikidata P217 numarası SK-A-2344'tür.",
+   "yanlis_gerekceleri": {
+    "A": "SK-A-385, Jan Steen'in Aziz Nicholas Yortusu eserinin numarasıdır (aynı müze, farklı eser).",
+    "B": "RF 926, bu eserin numarası değildir. Rijksmuseum resimleri SK-A- önekli envanter numaraları taşır; bu eserin numarası SK-A-2344'tür (K1/K2).",
+    "D": "NK2334, bu eserin numarası değildir; Rijksmuseum resimleri SK-A- önekli numaralar taşır (K1/K2)."
+   },
+   "kanit": [
+    "C007",
+    "C061"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "B",
+     "metin": "Ahşap pano üzerine tempera"
+    },
+    {
+     "harf": "C",
+     "metin": "Tuval üzerine yağlıboya"
+    },
+    {
+     "harf": "D",
+     "metin": "Suluboya"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "Müze kaydı 'oil on canvas / olieverf op doek' verir; Linked Art malzeme ifadesi ve Wikidata P186 (tuval + yağlıboya) bunu doğrular.",
+   "yanlis_gerekceleri": {
+    "A": "Fresk, duvar sıvasına boyama tekniğidir; bu eser taşınabilir bir tuvaldir.",
+    "B": "Pano tempera, 15. yüzyıl İtalyan geleneğinde yaygındır; bu eser tuval üzerine yağlıboyadır.",
+    "D": "Suluboya değil; kalın opak boya dokunuşları (pointillé) yağlıboya tekniğiyle kurulur."
+   },
+   "kanit": [
+    "C005",
+    "C031"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin boyutları nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "82 × 70,5 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "45,5 × 41 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "100 × 80 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "30 × 25 cm"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "Rijksmuseum kaydı ve Linked Art: height 45.5 cm × width 41 cm; Wikidata P2048/P2049 aynı değerleri verir.",
+   "yanlis_gerekceleri": {
+    "A": "Bu boyutlar Jan Steen'in Aziz Nicholas Yortusu eserine aittir (Rijksmuseum Linked Art kaydı 2006398: 82 × 70,5 cm); Milkmaid daha küçüktür.",
+    "C": "Kaynaklarda böyle bir değer yok; eser küçük boyutludur.",
+    "D": "Kaynaklarda böyle bir değer yok; gerçek boyutların altında."
+   },
+   "kanit": [
+    "C006",
+    "C061"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Rijksmuseum eseri hangi yıl satın aldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1696"
+    },
+    {
+     "harf": "B",
+     "metin": "1765"
+    },
+    {
+     "harf": "C",
+     "metin": "1813"
+    },
+    {
+     "harf": "D",
+     "metin": "1908"
+    }
+   ],
+   "dogru": "D",
+   "gerekce": "Provenance kaydı: Six mirasçılarından, Vereniging Rembrandt desteğiyle, 38 başka resimle birlikte 1908'de satın alındı (550.000 florin). Wikidata P195 başlangıç yılı da 1908'dir.",
+   "yanlis_gerekceleri": {
+    "A": "1696, Dissius satışının yılıdır; eser o satışta özel bir alıcıya (Rooleeuw) geçti.",
+    "B": "1765, De Neufville satışının yılıdır; provenance zincirindeki ara halkalardan biri.",
+    "C": "1813, Muilman satışının yılıdır; eser Van Winter koleksiyonuna o yıl geçti."
+   },
+   "kanit": [
+    "C008",
+    "C015"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "1696 Dissius satışında Süt Boşaltan Kadın kaç florine satıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "126 florin"
+    },
+    {
+     "harf": "B",
+     "metin": "175 florin"
+    },
+    {
+     "harf": "C",
+     "metin": "320 florin"
+    },
+    {
+     "harf": "D",
+     "metin": "550.000 florin"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "Rijksmuseum provenance kaydı: 16 Mayıs 1696, no. 2, fl. 175, alıcı Isaac Rooleeuw. Bu, satıştaki en yüksek ikinci Vermeer fiyatıydı.",
+   "yanlis_gerekceleri": {
+    "A": "126 florin, eserin 1719 Van Hoek satışındaki fiyatıdır (K1 provenance: 12 Nisan 1719, no. 20, fl. 126); 1696 değil. (Eski çeldiricideki 200 florin — View of Delft için Wikipedia→Met zincirinde geçen doğrulanmamış sayı — belleğe yerleşmemesi için kaldırıldı; C071 E olarak kanıt dosyasında kayıtlı.)",
+    "C": "320 florin, eserin 1701 Rooleeuw satışındaki fiyatıdır; 1696 değil.",
+    "D": "550.000 florin, 1908'deki müze satınalmasının bedelidir (38 resimle birlikte)."
+   },
+   "kanit": [
+    "C015",
+    "C016",
+    "C008"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "2022 Rijksmuseum araştırması, resmin sağ alt köşesinde üzeri boyanmış nesneyi ne olarak tanımladı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Çamaşır sepeti (eski yorum)"
+    },
+    {
+     "harf": "B",
+     "metin": "Duvar haritası"
+    },
+    {
+     "harf": "C",
+     "metin": "Ateş sepeti (vuurmand)"
+    },
+    {
+     "harf": "D",
+     "metin": "Köpek yatağı"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "8 Eylül 2022 basın bülteni: sağ altta, daha önce röntgenle bilinen sepet, söğüt dallarından örülü ateş sepeti (vuurmand) olarak tanımlandı; içine közlü bir kap (vuurtest) konurdu; Vermeer'in ev envanterinde kayıtlı. Üzeri ayak ısıtıcısı, çiniler ve zeminle kapatılmış.",
+   "yanlis_gerekceleri": {
+    "A": "Eski literatür nesneyi çamaşır/giysi sepeti olarak yorumluyordu (EV: \"a large, open clothes basket with laundry issuing from it\" + Taylor alıntısı). \"Dikiş sepeti\" adı ise yalnız Wikipedia'nın eski müze sayfasına atfında geçer; doğrulanamadı (C073 E). 2022 birincil kaynağı nesneyi vuurmand olarak tanımlar.",
+    "B": "Duvar haritası, başın arkasında boyanıp kapatılan nesne için öne sürülmüş eski bir yorumdur (K6; EV \"mantelpiece\" olasılığı da anar). 2022'de bu bölgedeki eskiz kannenbord (sürahi rafı) olarak tanımlandı. Soru sağ alttaki nesneyi soruyor; orası vuurmand.",
+    "D": "Böyle bir bulgu yok; kaynaklarda geçmez."
+   },
+   "kanit": [
+    "C050",
+    "C049",
+    "C078"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "2022 araştırmasında hangi tarama teknolojileri kullanıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dendrokronoloji"
+    },
+    {
+     "harf": "B",
+     "metin": "Karbon-14 tarihleme"
+    },
+    {
+     "harf": "C",
+     "metin": "Macro-XRF (MA-XRF) ve RIS"
+    },
+    {
+     "harf": "D",
+     "metin": "Yalnızca UV fotoğrafı"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "Basın bülteni: Rijksmuseum + Mauritshuis (NL bülteninde ayrıca Antwerpen Üniversitesi), Operation Night Watch'ta kullanılan Macro-XRF ve RIS tarama teknolojileri (SWIR görüntüleme de anılır).",
+   "yanlis_gerekceleri": {
+    "A": "Dendrokronoloji ahşap panoların yaşını ölçer; bu eser tuvaldir ve bültende geçmez.",
+    "B": "Karbon-14 bu araştırmanın yöntemi değildir; bültende geçmez.",
+    "D": "UV tek başına kullanılmadı; MA-XRF ve RIS asıl yöntemlerdir."
+   },
+   "kanit": [
+    "C047"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Resimde ışık nereden gelir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sağdaki pencereden"
+    },
+    {
+     "harf": "B",
+     "metin": "Soldaki kurşun çerçeveli pencereden"
+    },
+    {
+     "harf": "C",
+     "metin": "Masadaki bir mumdan"
+    },
+    {
+     "harf": "D",
+     "metin": "Tavandaki bir açıklıktan"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "Görsel inceleme (Rijksmuseum taraması) ve Essential Vermeer: duvardaki çivi sağa gölge düşürür — \"signaling the light originates from the left\". Müzenin Hollandaca betimi yalnız \"links een venster\" (solda bir pencere) der; ışık yönü EV'nin gölge çıkarımı + görselle desteklenir.",
+   "yanlis_gerekceleri": {
+    "A": "Sağda pencere yok; sağ altta çiniler ve ayak ısıtıcısı var.",
+    "C": "Resimde mum yok; tek ışık kaynağı gündüz ışığıdır.",
+    "D": "Tavan açıklığı yok; ışık yandan gelir."
+   },
+   "kanit": [
+    "C030",
+    "C037"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Eserin imza durumu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Ayak ısıtıcısında IVMeer imzası var"
+    },
+    {
+     "harf": "B",
+     "metin": "Sürahide imza var"
+    },
+    {
+     "harf": "C",
+     "metin": "Eser imzasızdır"
+    },
+    {
+     "harf": "D",
+     "metin": "Çinilerde monogram var"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "Essential Vermeer katalog maddesi açıkça \"No signature appears on this work\" der; Rijksmuseum sayfasında imza alanı yoktur. Atıf yine de tartışmasız Vermeer'dir (C002: müze kaydı + Wikidata P170, niteleyicisiz).",
+   "yanlis_gerekceleri": {
+    "A": "Yaygın bir yanlış bellek; hiçbir erişilen kaynak bu eserde imza bildirmez.",
+    "B": "Sürahide imza bildirilmez; eser imzasızdır.",
+    "D": "Çinilerde monogram değil, mavi figürlü dekor (Cupid dahil) vardır; imza değildir."
+   },
+   "kanit": [
+    "C010",
+    "C034",
+    "C002"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Süt Boşaltan Kadın bugün Paris'teki Louvre müzesindedir.",
+   "dogru": false,
+   "aciklama": "Yanlış. Eser Amsterdam'daki Rijksmuseum'dadır (SK-A-2344), Onur Galerisi'nde sergilenir.",
+   "kanit": [
+    "C007",
+    "C009"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Resimde süt akıntısı dışında her şey dingindir; tek hareket sütün dökülmesidir.",
+   "dogru": true,
+   "aciklama": "Doğru. Rijksmuseum küratöryel metni: 'Except for the stream of milk, everything else is still.' Görsel inceleme bunu doğrular.",
+   "kanit": [
+    "C027"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Vermeer bu eserde, çağdaşlarının kullandığı ucuz azurit yerine pahalı doğal ultramarin kullandı.",
+   "dogru": true,
+   "aciklama": "Doğru. Teknik rapor (Essential Vermeer üzerinden; 1995 NGA/Mauritshuis kataloğu aktarımı): Afgan lapis lazulisinden doğal ultramarin, monokrom alt boyama üzerine saydam glazürler; çağdaşlar GENELLİKLE daha ucuz azurit kullanıyordu (EV \"usually employed\").",
+   "kanit": [
+    "C043"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Cupid çinisine bakarak eserin kesin olarak erotik bir anlam taşıdığı söylenmiştir ve bu anlam kanıtlanmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış. Cupid çinisinin varlığı belgelidir ama anlamı tartışmalıdır: Liedtke erotik ima okur (EV), Wheelock onur ideali okur (EV), Dibbits çininin yaygın bir dekor olduğunu ve özel anlam taşımayabileceğini söyler (EV). Cant'in pratik/çalışkanlık okuması yalnız Wikipedia üzerinden (Cant 2009, kitap erişilmedi). Kesin cevap yok.",
+   "kanit": [
+    "C065",
+    "C034"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "2022 araştırması, Vermeer'in sahneyi önce açık/koyu tonlarda hızlı bir alt boyamayla kurduğunu gösterdi.",
+   "dogru": true,
+   "aciklama": "Doğru. Basın bülteni: sol kolun altında aceleyle sürülmüş kalın siyah çizgi; 'yavaş ve titiz Vermeer' varsayımı revize edildi.",
+   "kanit": [
+    "C048",
+    "C047"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Tarih önerilerini (Blankert 1660–61, Wheelock c. 1658–60, Liedtke c. 1657–58, Franits c. 1658–59, Rijksmuseum c. 1660) karşılaştırın: 'c. 1660' ifadesi bir olgu mu, kurumsal bir uzlaşma mı? Savunun.",
+   "beklenen_ogeler": [
+    "Yaklaşıklık niteleyicisinin korunması",
+    "Üslup analizi ve belge kanıtının ayrımı",
+    "Aynı kurum içindeki tarih varyasyonu (2022 bülteni)",
+    "Wikidata precision/circa örneği"
+   ],
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "2022 alt boyama bulgusu 'Vermeer hep yavaş ve titiz çalıştı' varsayımını nasıl değiştirir? Teknik kanıtın bir sanatçı mitini düzeltmesine örnek verin.",
+   "beklenen_ogeler": [
+    "Hızlı açık/koyu blokaj",
+    "MA-XRF/RIS yöntemi",
+    "Mit ile kanıt ayrımı",
+    "Vazgeçilmiş nesneler (kannenbord, vuurmand)"
+   ],
+   "kanit": [
+    "C048",
+    "C047",
+    "C049",
+    "C050"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Vermeer ateş sepetini ve sürahi rafını neden boyamış olabilir? Bültenin 'tranquil atmosphere' (huzurlu atmosfer) vurgusunu değerlendirin ve kendi gerekçeli okumanızı ekleyin. (Not: Dibbits'in 'meer rust en verstilling' — daha fazla sakinlik ve dinginlik — alıntısı Rijksmuseum'un Hollandaca bülteninde (K14) vardır; İngilizce bültende (K3) yoktur. Aynı kurumun iki dildeki bülteni farklı içerik taşıyabilir; alıntı bir müdürün niyet yorumudur.)",
+   "beklenen_ogeler": [
+    "Bültenin atmosfer vurgusu (yorum olarak)",
+    "Kompozisyonel arındırma",
+    "Niyet okumasının kanıt sınırı",
+    "Alternatif açıklamalar",
+    "İki dil sürümünün karşılaştırılması (K3 ↔ K14)"
+   ],
+   "kanit": [
+    "C050",
+    "C049",
+    "C028"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Süt Boşaltan Kadın ile Jan Steen'in Aziz Nicholas Yortusu'nu (SK-A-385, 1665–1668) kompozisyon, figür sayısı ve atmosfer açısından karşılaştırın.",
+   "beklenen_ogeler": [
+    "Tek figür/tek eylem ↔ kalabalık anlatı",
+    "Dinginlik ↔ hareket",
+    "Aynı tür geleneği içinde iki strateji",
+    "Işık kurgusu farkı"
+   ],
+   "kanit": [
+    "C061",
+    "C027",
+    "C028"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Camera obscura tartışmasında Liedtke'nin karşı argümanlarını (iğne deliği, ~10 saniye izdüşüm, iğne-ip yöntemi — Wikipedia üzerinden aktarılan, özgün kayıt erişilemedi) sıralayın. Teknik kanıt hangi soruları çözer, hangilerini açık bırakır?",
+   "beklenen_ogeler": [
+    "Pointillé/optik tutarsızlık iddiası",
+    "Liedtke'nin üç karşı argümanı",
+    "İzdüşüm süresi ↔ yapım süresi",
+    "Teknik görüntülemenin niyet ölçememesi"
+   ],
+   "kanit": [
+    "C053",
+    "C046",
+    "C031"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Işık hangi yönden geliyor? En parlak üç yüzeyi bulun ve ışığın soldan geldiğini hangi gölgeler ele veriyor?",
+   "ipucu": "Başlık, korse ve kolluklara bakın; duvardaki sepet ile metal kabın ışığı farklı taşımasına dikkat edin.",
+   "kanit": [
+    "C030",
+    "C037"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kadın ne yapıyor ve bakışları nerede? Yüz ifadesini tek kelimeyle adlandırın; sonra ikinci bir kelime önerin — hangisi daha savunulabilir?",
+   "ipucu": "Başın eğikliği ve gözlerin sütte oluşu; ifadenin okunamazlığı üzerine düşünün.",
+   "kanit": [
+    "C027",
+    "C028"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Masadaki nesneleri listeleyin. Hangi nesne ışığı yansıtıyor, hangisi emiyor? Ekmek kabuğundaki küçük ışık beneklerini arayın.",
+   "ipucu": "Sepet, somunlar, kırık parçalar, benekli stoneware sürahi, toprak kap; nokta tekniği (pointillé) ipucu.",
+   "kanit": [
+    "C032",
+    "C031"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sağ alt köşede ne var? Kutunun kapağındaki deliklerin ve içindeki kırmızımsı alanın (köz kabı) işlevini düşünün; duvar dibindeki çinileri sayın.",
+   "ipucu": "Stoofje (ayak ısıtıcısı): delikli ahşap kutu, içinde köz kabı (EV betimi; görselde kırmızımsı iç alan). Delft çinileri; 2022'de bu bölgenin altında bir ateş sepeti (vuurmand) tanımlandığını hatırlayın.",
+   "kanit": [
+    "C035",
+    "C034",
+    "C050"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Pencerenin yanındaki duvarda asılı iki nesneyi bulun. Metal ile hasırın ışıkla ilişkisi nasıl farklı? Duvardaki küçük kusurları (lekeler, delikler) arayın.",
+   "ipucu": "Hasır sepet ve pirinç/bakır kap; duvarın 'boş' olmadığına dikkat.",
+   "kanit": [
+    "C037",
+    "C033"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Süt Boşaltan Kadın — sanatçı, tarih, müze, envanter?",
+   "arka": "Johannes Vermeer (1632–1675); y. 1660 (c. 1660); Rijksmuseum, Amsterdam; SK-A-2344. Tuval üzerine yağlıboya, 45,5 × 41 cm. 1908'de Vereniging Rembrandt desteğiyle satın alındı.",
+   "kanit": [
+    "C002",
+    "C003",
+    "C005",
+    "C006",
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Pointillé nedir ve bu eserde nerede görülür?",
+   "arka": "Işığı taklit eden küçük, kalın, opak boya dokunuşları. Ekmek kabuğu, sepet örgüsü, stoneware yüzeylerde ışık benekleri; Rijksmuseum \"yüzlerce renkli nokta\" der; Essential Vermeer \"spherical dabs of thick opaque paint\" olarak betimler.",
+   "kanit": [
+    "C031",
+    "C032"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Vuurmand nedir; bu resimde neden önemlidir?",
+   "arka": "Söğüt dallarından örülü ateş sepeti; içine közlü bir kap (vuurtest/kom) konurdu, bebek ısıtma/beze kurutma için kullanılırdı (K3/K14). Sepet daha önce röntgenle biliniyordu; 2022 MA-XRF/RIS araştırması onu vuurmand olarak tanımladı; Vermeer'in ev envanterinde kayıtlı. Üzeri stoofje + çiniler + zeminle kapatılmış.",
+   "kanit": [
+    "C050",
+    "C047"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "1696 Dissius satışı — numara, fiyat, anlam?",
+   "arka": "16 Mayıs 1696, Amsterdam, no. 2, 175 florin; alıcı Isaac Rooleeuw. Satıştaki en yüksek ikinci Vermeer fiyatı (birinci: View of Delft — sıralama Essential Vermeer'de doğrulanır; fiyatı bu dosyada birincil kaynakla doğrulanmadı). Eserin erken başyapıt statüsünün kanıtı.",
+   "kanit": [
+    "C015",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Stoofje (ayak ısıtıcısı) — nesne ve kültürel kod?",
+   "arka": "Delikli kapaklı ahşap kutu; içinde köz kabı bulunurdu (EV genel betimi; görselde kırmızımsı iç alan). Roemer Visscher, Sinnepoppen (1614): 'Mignon des Dames'. Yorum tartışmalı: erotik ima (Liedtke, EV) ↔ pratik amaç/çalışkanlık (Cant 2009, yalnız Wikipedia aracılığıyla; kitap erişilmedi) ↔ yaygın dekor, özel anlam yok (Dibbits, çini için).",
+   "kanit": [
+    "C035",
+    "C066",
+    "C065"
+   ]
+  }
+ ]
+}

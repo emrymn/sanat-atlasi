@@ -1,0 +1,429 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3697588",
+ "sanatci_id": "donato-bramante",
+ "baslik": "Sütundaki İsa",
+ "ozgun_baslik": "Cristo alla colonna (Christ at the Column)",
+ "kunye": {
+  "sanatci": "Donato Bramante (atıf; tartışmalı)",
+  "sanatci_yasam": "c. 1444–1514",
+  "tarih": "c. 1490",
+  "tarih_belirsizlik": "K2/K3 c.1490; WD 1487 (yüzyıl) güvenilmez",
+  "teknik": "Yağlıboya, pano (wiki); WD tempera der — fark",
+  "boyut_cm": {
+   "yukseklik": 93,
+   "genislik": 62
+  },
+  "muze": "Pinacoteca di Brera, Milano",
+  "envanter": "birincil föy JS kabuğu, çıkarılamadı",
+  "edinim": "Chiaravalle Abbazia siparişi; 1915 Brera depozitosu",
+  "konum": "Brera",
+  "telif_durumu": "Kamu malı (Bramante ö.1514); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Bramante-cristo-alla-colonna.jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (Bramante ö.1514)",
+  "dogrulama": {
+   "yontem": "1200px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1200px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C017); betim K2/K3"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 392
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1271
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2475
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-nadirlik-ve-atıf-bramante-mi-bramantino-mi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-mimarın-dili-san-satiro-yöntemi-resimde"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-yakın-kadraj-ve-psikoloji-acının-estetiği"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-üç-etki-urbino-flaman-leonardo"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-ışık-ve-pyx-teolojik-optik"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (Bramante atıf, c.1490, yağlıboya-pano, Brera) ve nadirliğini açıklar.",
+  "Yakın kadraj + gerçekçilik ile acı estetiğini analiz eder.",
+  "San Satiro perspektif yönteminin resme aktarımını tartışır.",
+  "Urbino/Flaman/Leonardo sentezini ve pyx teolojisini çözümler.",
+  "Atıf/teknik/görsel/föy belirsizliklerini kanıt katmanlarıyla değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Flagellasyon",
+   "tanim": "İsa'nın kırbaçlanması; sütuna bağlanma öncesi an.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "ad": "Pyx",
+   "tanim": "Ökaristi kabı; altın, pencere kenarında; kurban anlamı.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "San Satiro yöntemi",
+   "tanim": "Sınırlar ötesi + derin ima; mimari perspektif illüzyonu.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "ad": "Sfumato",
+   "tanim": "Uzakta bulanıklaşma; Flaman/Leonardo etkisi.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "Atıf",
+   "tanim": "Eserin kime ait olduğunun belirlenmesi; burada tartışmalı.",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Christ at the Column / Cristo alla colonna / Sütundaki İsa",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Atıf: Donato Bramante (mimar/ressam); tartışmalı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "c.1490",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: yağlıboya, pano (wiki); WD \"tempera\" der — fark notu",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut: 93×62 cm (K3) / 93.7×62.5 (WD)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Yer: Brera, Milano; 1915'ten beri Chiaravalle depozitosu (abbeyde kopya)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Sipariş: Chiaravalle Abbazia; Bramante'ye atfedilen bilinen tek pano",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Atıf tartışması: Suida → Bramantino; evrensel kabul yok",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C009",
+   "ifade": "15 Ocak 2017 ısıtma arızası → 40 eserde hasar; restorasyon lab",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "İsa, klasik bas-rölyefli sütuna bağlı (flagellasyon öncesi); çok yakın kadraj, psikolojik gerilim; boyundan sarkan ip",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Geniş kolonlu mekân = San Satiro sahte korosuyla aynı yöntem (sınırlar ötesi + derinlik)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Klasik modellaj = Urbino kültürü",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Flaman etkisi: çift ışık (ön soldan→sağa + arka pencere), sfumato, detay; saç/sakalda renkli yansımalar",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Leonardo etkisi: ifade yüzü, aşırı gerçekçilik (iple sıkılan et, şeffaf gözyaşı)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Pencere kenarında altın pyx = Ökaristi; kurbanın anlamı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Görsel kamu malı (Bramante ö.1514); Commons PD; geçici kopya .qwen/tmp/parti1/Q3697588/",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C018",
+   "ifade": "Birincil föy (Lombardia/MiC) indirildi ama JS kabuğu, çıkarılamadı",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C019",
+   "ifade": "Bibliyografya: De Vecchi/Cerchiari 1999; Brera guida Electa 2004 — erişilmedi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Christ at the Column (Bramante) — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Christ_at_the_Column_(Bramante)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Cristo alla colonna (Bramante) — kaynaklı madde",
+   "url": "https://it.wikipedia.org/wiki/Cristo_alla_colonna_(Bramante)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikidata",
+   "belge": "Q3697588 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q3697588",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikimedia Commons",
+   "belge": "Bramante-cristo-alla-colonna.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Bramante-cristo-alla-colonna.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1200px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K6",
+   "kurum": "Lombardia Beni Culturali / MiC",
+   "belge": "resmî föy (RL480-00056 / 0300097732)",
+   "url": "https://www.lombardiabeniculturali.it/opere-arte/schede/RL480-00056/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "indirildi; JS kabuğu, çıkarılamadı",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Santa Maria presso San Satiro (sahte koro)",
+   "sanatci": "Bramante",
+   "kurum": "Milano",
+   "mufredat_ici": false,
+   "gerekce": "Aynı perspektif yöntemi; mimari ↔ resim.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "eser": "Cristo dolente",
+   "sanatci": "Bramantino",
+   "kurum": "—",
+   "mufredat_ici": false,
+   "gerekce": "Atıf tartışmasının diğer tarafı (D).",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "eser": "Ölü İsa",
+   "sanatci": "Mantegna",
+   "kurum": "Brera, Milano",
+   "mufredat_ici": true,
+   "gerekce": "Yakın kadraj + acı estetiği karşıtlığı (yorum).",
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data tarih → c.1490 (K2/K3); WD 1487 (yüzyıl) güvenilmez.",
+  "Teknik wiki \"oil\" ↔ WD \"tempera\" farkı; birincil föy teyidi (C018 E).",
+  "Boyut 93×62 (K3) / 93.7×62.5 (WD) küçük fark.",
+  "Atıf (Bramante/Bramantino) D; insan editör teyidi.",
+  "Görsel teyit bu oturumda yapılamadı (C017) — insan editör zorunlu."
+ ]
+}

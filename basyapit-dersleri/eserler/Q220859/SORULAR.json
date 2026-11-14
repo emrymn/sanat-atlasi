@@ -1,0 +1,477 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q220859",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Panonun tarihi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1434"
+    },
+    {
+     "harf": "B",
+     "metin": "1500"
+    },
+    {
+     "harf": "C",
+     "metin": "1400"
+    },
+    {
+     "harf": "D",
+     "metin": "1600"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: 1434.",
+   "yanlis_gerekceleri": {
+    "B": "1500 değil.",
+    "C": "1400 değil.",
+    "D": "1600 değil."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Teknik/destek?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, meşe pano"
+    },
+    {
+     "harf": "B",
+     "metin": "Tempera, tuval"
+    },
+    {
+     "harf": "C",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: oil on wood (oak).",
+   "yanlis_gerekceleri": {
+    "B": "Tempera değil.",
+    "C": "Fresk değil.",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eser hangi müzede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "National Gallery, Londra"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: National Gallery.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi değil.",
+    "C": "Louvre değil.",
+    "D": "Prado değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Aynanın üstündeki imza?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Johannes de eyck fuit hic 1434"
+    },
+    {
+     "harf": "B",
+     "metin": "İmzasız"
+    },
+    {
+     "harf": "C",
+     "metin": "Jan van Eyck fecit"
+    },
+    {
+     "harf": "D",
+     "metin": "Hubert van Eyck"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: \"Jan van Eyck buradaydı 1434\".",
+   "yanlis_gerekceleri": {
+    "B": "İmzalı.",
+    "C": "fecit değil, fuit hic.",
+    "D": "Hubert değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eser NG'ye ne zaman alındı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1842 (600 Guineas)"
+    },
+    {
+     "harf": "B",
+     "metin": "1434"
+    },
+    {
+     "harf": "C",
+     "metin": "1900"
+    },
+    {
+     "harf": "D",
+     "metin": "2000"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: bought 1842.",
+   "yanlis_gerekceleri": {
+    "B": "1434 tarih.",
+    "C": "1900 değil.",
+    "D": "2000 değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "NG'ye göre sitter muhtemelen kim?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Giovanni di Nicolao Arnolfini + eşi"
+    },
+    {
+     "harf": "B",
+     "metin": "Giovanni di Arrigo"
+    },
+    {
+     "harf": "C",
+     "metin": "Costanza Trenta"
+    },
+    {
+     "harf": "D",
+     "metin": "Jan van Eyck"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: probably di Nicolao.",
+   "yanlis_gerekceleri": {
+    "B": "di Arrigo alternatif (D).",
+    "C": "Costanza memorial hipotezi (D).",
+    "D": "van Eyck değil."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Dışbükey ayna neyi yansıtır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Odaya giren iki adam"
+    },
+    {
+     "harf": "B",
+     "metin": "Boş oda"
+    },
+    {
+     "harf": "C",
+     "metin": "Manzara"
+    },
+    {
+     "harf": "D",
+     "metin": "Tek figür"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: two men entering.",
+   "yanlis_gerekceleri": {
+    "B": "Boş değil.",
+    "C": "Manzara değil.",
+    "D": "İki figür."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Gombrich resmi kimin işi kadar devrimci bulur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Donatello/Masaccio"
+    },
+    {
+     "harf": "B",
+     "metin": "Raphael"
+    },
+    {
+     "harf": "C",
+     "metin": "Titian"
+    },
+    {
+     "harf": "D",
+     "metin": "Michelangelo"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Donatello/Masaccio.",
+   "yanlis_gerekceleri": {
+    "B": "Raphael değil.",
+    "C": "Titian değil.",
+    "D": "Michelangelo değil."
+   },
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Pano 1434 tarihli ve imzalıdır.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C001",
+    "C004"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser National Gallery'nin ilk Netherlandish resmidir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Pano tempera ile yapılmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış; yağlıboya (K1).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Ayna odaya giren iki adamı yansıtır.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "İmza aynanın üstündedir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C004"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Yorum tartışmasını (Panofsky/Hall/Carroll/memorial) kanıtlarıyla karşılaştırın.",
+   "beklenen_ogeler": [
+    "Evlilik sözleşmesi",
+    "Nişan",
+    "Yasal yetki",
+    "Memorial (Costanza Trenta) — D"
+   ],
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Sitter kimliği tartışmasını değerlendirin.",
+   "beklenen_ogeler": [
+    "İki Giovanni kuzen",
+    "di Arrigo ↔ di Nicolao",
+    "Kadın: eşi ↔ Costanza",
+    "NG probably sınırı (D)"
+   ],
+   "kanit": [
+    "C021",
+    "C005"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Gizli sembolizmi (Panofsky) ve sınırını tartışın.",
+   "beklenen_ogeler": [
+    "Nesneler = anlam",
+    "Avize/ayna/köpek",
+    "Evlilik tezi tartışmalı",
+    "Sembolik analiz geniş kabul (yorum)"
+   ],
+   "kanit": [
+    "C022",
+    "C016"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Tüccar öz-temsilini (servet/statü, aristokrasi taklidi olmadan) analiz edin.",
+   "beklenen_ogeler": [
+    "Nesneler servet ilanı",
+    "Aristokrasi taklidi yok",
+    "Burjuva öz-temsil",
+    "Burgonya sarayı adaylığı (yorum)"
+   ],
+   "kanit": [
+    "C023",
+    "C006"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kanıt mimarisini değerlendirin: NG (A) + görsel sınırı (E).",
+   "beklenen_ogeler": [
+    "NG föyü A",
+    "enwiki B",
+    "Görsel incelenemedi E",
+    "Yorum D açık"
+   ],
+   "kanit": [
+    "C001",
+    "C024",
+    "C020"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Adamı, kadını ve kalkık eli bulun.",
+   "ipucu": "Özel oda; selam jesti.",
+   "kanit": [
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Dışbükey aynadaki iki yansımayı bulun.",
+   "ipucu": "Arka duvar; odaya girenler.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Aynanın üstündeki imzayı okuyun.",
+   "ipucu": "Johannes de eyck fuit hic 1434.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Pirinç avizeyi inceleyin.",
+   "ipucu": "Büyük/gösterişli; makara mekanizması.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Köpeği (Affenpinscher erken formu) bulun.",
+   "ipucu": "Çiftin ayakları önünde.",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, yer?",
+   "arka": "Arnolfini Portresi; Jan van Eyck; 1434; yağlıboya meşe; 82.2×60; National Gallery NG186.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C026"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "İmza + ayna?",
+   "arka": "\"Johannes de eyck fuit hic 1434\" aynanın üstünde; dışbükey ayna iki adamı yansıtır; Passion çerçeve.",
+   "kanit": [
+    "C004",
+    "C007",
+    "C016"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Teknik?",
+   "arka": "İnce glazür katmanları; wet-in-wet (alla prima); doku/ışık; 3 dikey meşe tahta; en erken yağlıboya gerçekçilik.",
+   "kanit": [
+    "C014",
+    "C010",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Sitter?",
+   "arka": "Muhtemelen Giovanni di Nicolao Arnolfini (Bruges İtalyan tüccar) + eşi; iki Giovanni kuzen; kimlik D.",
+   "kanit": [
+    "C005",
+    "C015"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Önem + Gombrich?",
+   "arka": "En özgün/karmaşık; ortogonal perspektif + ayna mekânı; Gombrich \"Donatello/Masaccio kadar devrimci, mükemmel görgü tanığı\".",
+   "kanit": [
+    "C012",
+    "C013",
+    "C011"
+   ]
+  }
+ ]
+}

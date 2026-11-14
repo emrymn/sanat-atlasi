@@ -1,0 +1,545 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2067212",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tempera pano"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: affresco/fresco.",
+   "yanlis_gerekceleri": {
+    "A": "Tempera pano değil; duvar freski.",
+    "C": "Yağlıboya tuval değil.",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser nerede bulunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uffizi, Floransa"
+    },
+    {
+     "harf": "B",
+     "metin": "Scrovegni Şapeli, Padova"
+    },
+    {
+     "harf": "C",
+     "metin": "Vatikan"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K3: Scrovegni Şapeli, Padova; Musei Civici kompleksi.",
+   "yanlis_gerekceleri": {
+    "A": "Uffizi değil.",
+    "C": "Vatikan değil.",
+    "D": "Louvre değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "İsa'nın başını kim tutar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Magdalene"
+    },
+    {
+     "harf": "B",
+     "metin": "Meryem (annesi)"
+    },
+    {
+     "harf": "C",
+     "metin": "Yuhanna"
+    },
+    {
+     "harf": "D",
+     "metin": "Nikodemus"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K3: başını annesi Meryem tutar.",
+   "yanlis_gerekceleri": {
+    "A": "Magdalene ayakları tutar.",
+    "C": "Yuhanna kollarını açar.",
+    "D": "Nikodemus sağda bekler."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "İsa'nın ayaklarını kim tutar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Meryem"
+    },
+    {
+     "harf": "B",
+     "metin": "Mecdelli Meryem (Magdalene)"
+    },
+    {
+     "harf": "C",
+     "metin": "Anna"
+    },
+    {
+     "harf": "D",
+     "metin": "Veronica"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K3: ayaklarını Magdalene tutar.",
+   "yanlis_gerekceleri": {
+    "A": "Meryem başı tutar.",
+    "C": "Anna değil.",
+    "D": "Veronica değil."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Yuhanna'nın jesti nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sakin duruş"
+    },
+    {
+     "harf": "B",
+     "metin": "Kolları umutsuzlukla iki yana açık"
+    },
+    {
+     "harf": "C",
+     "metin": "Kitap okuma"
+    },
+    {
+     "harf": "D",
+     "metin": "Dua"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K3: kollarını umutsuzlukla iki yana açar.",
+   "yanlis_gerekceleri": {
+    "A": "Sakin değil; dramatik.",
+    "C": "Kitap yok.",
+    "D": "Dua değil; yas jesti."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Sağdaki iki sakallı figür kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Petrus ve Paulus"
+    },
+    {
+     "harf": "B",
+     "metin": "Nikodemus ve Arimatealı Yusuf"
+    },
+    {
+     "harf": "C",
+     "metin": "Yusuf ve Yakup"
+    },
+    {
+     "harf": "D",
+     "metin": "Musa ve Harun"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K3: Nikodemus ve Arimatealı Yusuf (Yuhanna 19:38–42).",
+   "yanlis_gerekceleri": {
+    "A": "Petrus/Paulus değil.",
+    "C": "Yusuf/Yakup değil.",
+    "D": "Musa/Harun değil."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Kaya diyagonali gözümüzü nereye yönlendirir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gökyüzüne"
+    },
+    {
+     "harf": "B",
+     "metin": "Anne-oğul kucaklaşmasına"
+    },
+    {
+     "harf": "C",
+     "metin": "Sağdaki erkeklere"
+    },
+    {
+     "harf": "D",
+     "metin": "Bordüre"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: duygusal merkez = Meryem'in ölü oğluna sarılışı.",
+   "yanlis_gerekceleri": {
+    "A": "Gök değil; merkez alt-sol.",
+    "C": "Sağ değil.",
+    "D": "Bordür değil."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Sırtı dönük ön figürlerin işlevi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Süsleme"
+    },
+    {
+     "harf": "B",
+     "metin": "Heykelsi kütle + gerçek mekân + izleyici konumu"
+    },
+    {
+     "harf": "C",
+     "metin": "İmza"
+    },
+    {
+     "harf": "D",
+     "metin": "Hata"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: espediente inedito; kütleler, gerçek mekân.",
+   "yanlis_gerekceleri": {
+    "A": "Süs değil; yapısal.",
+    "C": "İmza değil.",
+    "D": "Hata değil; bilinçli araç."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Kurumuş ağaç neyi ima eder?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Savaşı"
+    },
+    {
+     "harf": "B",
+     "metin": "Doğanın ölümü ve dirilişi (kış→bahar)"
+    },
+    {
+     "harf": "C",
+     "metin": "Zenginliği"
+    },
+    {
+     "harf": "D",
+     "metin": "Yolculuğu"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: kışın ölen doğa baharda dirilir; İsa üç gün sonra.",
+   "yanlis_gerekceleri": {
+    "A": "Savaş değil.",
+    "C": "Zenginlik değil.",
+    "D": "Yolculuk değil."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Eserin boyutu nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "184×168 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "200×185 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "305×265 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "187×182 cm"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K4: 200×185 cm.",
+   "yanlis_gerekceleri": {
+    "A": "Martini Müjde'nin orta paneli.",
+    "C": "Martini triptiği (WD).",
+    "D": "Lorenzetti paneli."
+   },
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser 200×185 cm boyutunda bir fresktir.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K4).",
+   "kanit": [
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser, Padova'da bir müze salonuna taşınmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış; in situ: şapel duvarında. Şapel müze kompleksinin parçasıdır ama eser yerindedir.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Gökyüzündeki melekler yas sahnesine katılır.",
+   "dogru": true,
+   "aciklama": "Doğru; kozmik dramatiklik (K2/K5).",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Freskte okunur bir imza yazıtı vardır.",
+   "dogru": false,
+   "aciklama": "Yanlış; görselde yazıt/imza yok (K5).",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Şapel, Scrovegni ailesinin özel şapeli olarak 1305'te kutsanmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru (K3).",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Kaya diyagonali + bakış çizgilerini analiz edin: duygusal merkez nasıl kurulur?",
+   "beklenen_ogeler": [
+    "Kuru ağaç→kaya→kucaklaşma",
+    "Bakış/güç çizgileri",
+    "Huni kompozisyon (yorum)"
+   ],
+   "kanit": [
+    "C012",
+    "C022"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Sırtı dönük figürlerin izleyici konumunu nasıl kurduğunu tartışın.",
+   "beklenen_ogeler": [
+    "Heykelsi kütle",
+    "Gerçek mekân",
+    "İzleyici=yas tutan (yorum)",
+    "Empati vektörü"
+   ],
+   "kanit": [
+    "C013",
+    "C020"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Kozmik yası çözümleyin: melekler + kuru ağaç; umut katmanı.",
+   "beklenen_ogeler": [
+    "Melek poz repertuvarı",
+    "Kış-bahar analojisi",
+    "Diriliş iması",
+    "Yas=bekleyiş (yorum)"
+   ],
+   "kanit": [
+    "C014",
+    "C015",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Meleagro lahiti ve Assisi atfı hipotezlerini değerlendirin: belge ↔ akrabalık ayrımı.",
+   "beklenen_ogeler": [
+    "\"forse\" sınırı",
+    "Antik jest aktarımı",
+    "Aktarım belgesi yok",
+    "Karşılaştırma disiplini"
+   ],
+   "kanit": [
+    "C010",
+    "C029"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "In situ bağlamı ve aile programını tartışın: şapel, register, altar yönü.",
+   "beklenen_ogeler": [
+    "Musei Civici kompleksi",
+    "Sol duvar/orta-alt register",
+    "Joachim-Anna üst register",
+    "Aile yatırımı (yorum)"
+   ],
+   "kanit": [
+    "C006",
+    "C007",
+    "C008"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kaya diyagonalini ve kuru ağacı izleyin; yönü çizin.",
+   "ipucu": "Sağ üst→sol alt; duygusal merkez.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Meryem'in yüz yakınlığını ve Magdalene'in ayak tutuşunu bulun.",
+   "ipucu": "Alt-sol köşe; iki uç.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Meleklerin yas pozlarını sınıflayın: kaç farklı hareket?",
+   "ipucu": "Dalış, açık kol, yüze kapanma.",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sırtı dönük iki figürü ve kütle etkisini inceleyin.",
+   "ipucu": "Yeşil + krem; ön plan.",
+   "kanit": [
+    "C020",
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Bordürü ve fresk çatlaklarını gözleyin: bugünkü durum.",
+   "ipucu": "Elmas bandı; yaşlanma izleri.",
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, yer?",
+   "arka": "Ağıt (Compianto); Giotto; c.1303–1305; fresk; 200×185; Scrovegni Şapeli, Padova (in situ).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sahne figürleri?",
+   "arka": "Meryem başta, Magdalene ayaklarda; Yuhanna açık kollar; Nikodemus+Yusuf sağda; dindar kadınlar ellerde; sırtı dönük iki figür önde.",
+   "kanit": [
+    "C009",
+    "C010",
+    "C011",
+    "C028"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Kompozisyon araçları?",
+   "arka": "Kaya diyagonali + bakış çizgileri → anne-oğul merkezi; sırtı dönük kütleler = gerçek mekân.",
+   "kanit": [
+    "C012",
+    "C013",
+    "C022"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Kozmik yas?",
+   "arka": "~On melek çeşitli yas pozları; kuru ağaç = doğanın ölümü/dirilişi (kış→bahar; İsa üç gün).",
+   "kanit": [
+    "C014",
+    "C015",
+    "C021"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Şapel programı?",
+   "arka": "Scrovegni aile şapeli, 1305 kutsama; Giotto 1304–1306; üst register Joachim/Anna; Passion orta-alt, sol duvar.",
+   "kanit": [
+    "C007",
+    "C008"
+   ]
+  }
+ ]
+}

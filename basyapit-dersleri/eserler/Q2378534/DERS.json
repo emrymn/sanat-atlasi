@@ -1,0 +1,513 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2378534",
+ "sanatci_id": "fra-angelico",
+ "baslik": "Meryem'e Müjde (San Marco Koridoru)",
+ "ozgun_baslik": "Annunciazione del corridoio Nord",
+ "kunye": {
+  "sanatci": "Fra Angelico (Beato Angelico)",
+  "sanatci_yasam": "c. 1395–1455",
+  "tarih": "c. 1440–1445",
+  "tarih_belirsizlik": "K2 c.1440–1445; K3 1440–1450+; WD 1500 güvenilmez (C003)",
+  "teknik": "Fresk",
+  "boyut_cm": {
+   "yukseklik": 230,
+   "genislik": 297
+  },
+  "muze": "San Marco Manastırı (Museo Nazionale di San Marco), Floransa",
+  "envanter": "birincil föy erişilemedi (nctn 00297878, HTTP 522)",
+  "edinim": "in situ; Cosimo de' Medici siparişi (~50 fresk)",
+  "konum": "Kuzey koridoru, merdiven tepesi",
+  "telif_durumu": "Kamu malı (Fra Angelico ö.1455); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Angelico_-_Annunciation_-_San_Marco_north_corridor.jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (Fra Angelico ö.1455)",
+  "dogrulama": {
+   "yontem": "1400px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1400px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C027); betim K2/K3"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 411
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1292
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2522
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-manastır-programı-cosimo-tefekkür-malzeme-hiyerarşisi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-açık-hava-müjdenin-icadı"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-mekân-loggia-orta-sütun-diyagonal"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-hortus-conclusus-ve-jest-aynası"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-ışık-ve-tefekkür-düşük-ışık-estetiği"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (Fra Angelico, c.1440–1445, fresk, San Marco) ve Cosimo programını açıklar.",
+  "Açık-hava Müjde türünün icadını Gotik karşıtlığıyla analiz eder.",
+  "Malzeme hiyerarşisini (hücre/koridor) ve tefekkür işlevini yorumlar.",
+  "Hortus conclusus, jest aynası ve yazıtı ibadet eylemi olarak çözümler.",
+  "Boyut/tarih/föy/görsel belirsizliklerini kanıt katmanlarıyla değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Hortus conclusus",
+   "tanim": "Kapalı bahçe; Meryem'in bakireliğinin simgesi.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "ad": "Loggia",
+   "tanim": "Dışa açık sütunlu galeri; sahnenin mekânı.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Fresk",
+   "tanim": "Islak sıva üzerine pigment; in situ kalır.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "ad": "Tefekkür",
+   "tanim": "Derin düşünme/dua; manastır fresklerinin işlevi.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "ad": "Jest aynası",
+   "tanim": "Cebrail ve Meryem'in aynı katlı kol pozisyonu; selam+kabul.",
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Annunciation / Annunciazione del corridoio Nord / Müjde (San Marco)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Fra Angelico (Beato Angelico)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Tarih: c.1440–1445 (K2); K3 1440↔1450+ (Roma dönüşü); WD 1500 güvenilmez",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: fresk",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut: 230×297 (WD) ↔ 230×321 (K3) — uzlaşmaz",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C006",
+   "ifade": "Yer: San Marco Manastırı, Floransa; kuzey koridoru, merdiven tepesi (birinci kat); in situ",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Cosimo de' Medici manastırı yeniden yaptırdı; Angelico'ya ~50 fresk siparişi (sunak, hücreler, cloister, chapter house, koridorlar); Angelico veya doğrudan gözetimi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Koridorun (hücre dışı) üç freskinden biri; manastırın en ünlüsü",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Açık havada Müjde kompozisyonunun mucidi (Gotik: iç mekân, tahtta, düz/statik)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Mekân/ışık devrimci; Gotik→Rönesans geçişi; \"singular elegance\"",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Düşük ışık için yapıldı; görünmez ışık kaynağı; merdiven/pencere tadilatı → bugünkü çok açılı ışık \"otantik değil\"",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Koyu = tefekkür/dua; açık = dekorasyon; konum, rahiplerin günlük hayatına taşır",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Hücreler sade/yoksulluk; altın+azurit yalnız Cosimo'nun özel hücresi + kamusal koridorlar",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Cebrail pembe/altın, çok renkli kanatlar, eğilmiş, bakışı Meryem'de, kollar göğüste çapraz",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Meryem mavi (kraliyet+saflık), şaşırmış; kollar katlı = kabul/alçakgönüllülük/boyun eğme",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Hortus conclusus (çitli bahçe) = bakirelik; servi korusu",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Loggia/sütunlar (K2 Composite; K3 İyon+Korint) + Roma kemerleri; orta sütun iki mekânı ayırır (ayrı ama birlikte)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Kaçış noktası portikonun içinde; protagonister diyagonal boyunca (K3)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Yazıt: VIRGINIS INTACTAE CUM VENERIS ANTE FIGURAM PRETEREUNDO CAVE NE SILEATUR AVE; altta, orta sütun dibinde, göz hizası; \"Ave demeyi unutma\" — günlük dua hatırlatması",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Pahalı azurit + altın insertler; figürlerin monumentalliği; sessiz maneviyat",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Başlıklar İyon+Korint → Alberti'nin orders'ına atıf; bazıları Roma dönemi eserleriyle ilişkilendirir (K3 yorumu)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "Arka plan, 1430'lar Müjde panolarına benzer (Prado, Cortona, San Giovanni Valdarno)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Meryem jesti hücre 3'ten; meleğin analog kol pozisyonu = boyun eğme",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Henry James alıntısı (K2): \"spiritual decency... yearning a view of the Christian story\"",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Bibliyografya: Hood 1993/1986/2003, Damiani 1997, Craven 1952 (K2); Pope-Hennessy 1981, Cornini 2000 (K3) — erişilmedi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Resmî katalog föyü (polomuseale, nctn 00297878) HTTP 522 — erişilemedi",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C027",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); betim K2/K3'ten — insan editör teyidi zorunlu",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C028",
+   "ifade": "Görsel kamu malı (Fra Angelico ö.1455); Commons PD; geçici kopya .qwen/tmp/parti1/Q2378534/",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Merdiven, ressamın ölümünden sonra yapıldı → konum özgün planı yansıtmaz (K3)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Annunciation (Fra Angelico, San Marco) — kaynaklı madde (Hood/Damiani atıflı)",
+   "url": "https://en.wikipedia.org/wiki/Annunciation_(Fra_Angelico,_San_Marco)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Annunciazione del corridoio Nord — kaynaklı madde (Pope-Hennessy/Cornini atıflı)",
+   "url": "https://it.wikipedia.org/wiki/Annunciazione_del_corridoio_Nord",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikidata",
+   "belge": "Q2378534 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q2378534",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikimedia Commons",
+   "belge": "Angelico - Annunciation - San Marco north corridor.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Angelico_-_Annunciation_-_San_Marco_north_corridor.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1400px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K6",
+   "kurum": "Polo Museale Firenze",
+   "belge": "resmî katalog föyü (nctn 00297878)",
+   "url": "http://www.polomuseale.firenze.it/catalogo/scheda.asp?nctn=00297878&value=1",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "HTTP 522 — ERİŞİLEMEDİ",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Müjde (Triptik)",
+   "sanatci": "Simone Martini",
+   "kurum": "Uffizi, Floransa",
+   "mufredat_ici": true,
+   "gerekce": "Gotik iç-mekân/taht/altın ↔ açık-hava/derin mekân/hacim (yorum).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "eser": "Müjde (Prado)",
+   "sanatci": "Fra Angelico",
+   "kurum": "Prado, Madrid",
+   "mufredat_ici": false,
+   "gerekce": "Aynı arka plan dili (servi/bahçe); pano ↔ fresk.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "eser": "Müjde (hücre 3)",
+   "sanatci": "Fra Angelico",
+   "kurum": "San Marco, Floransa",
+   "mufredat_ici": false,
+   "gerekce": "Aynı jest repertuvarı; mahrem ↔ kamusal.",
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data tarihi tek yıl ise → c.1440–1445 (K2) / 1440–1450+ (K3); WD 1500 güvenilmez, kullanılmaz.",
+  "Boyut WD 230×297 ↔ K3 230×321 uzlaşmaz (C005 E); resmî föy (K6) erişilemedi → insan teyidi.",
+  "Müze alanı: \"San Marco Manastırı (Museo Nazionale di San Marco), Floransa — kuzey koridoru\" önerilir.",
+  "Sütun orderi K2 Composite ↔ K3 İyon+Korint; kaynak farkı not edilir.",
+  "Görsel teyit bu oturumda yapılamadı (C027) — insan editör zorunlu."
+ ]
+}

@@ -1,0 +1,473 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1055117",
+ "sanatci_id": "gentile-da-fabriano",
+ "baslik": "Müneccimlerin Tapınması",
+ "ozgun_baslik": "Adoration of the Magi (Adorazione dei Magi)",
+ "kunye": {
+  "sanatci": "Gentile da Fabriano",
+  "sanatci_yasam": "c. 1370–1427",
+  "tarih": "1423 (Mayıs; imzalı)",
+  "tarih_belirsizlik": "imza MCCCCXXIII MENSIS MAII",
+  "teknik": "Tempera, ahşap pano (altın varak + pastiglia)",
+  "boyut_cm": {
+   "yukseklik": 300,
+   "genislik": 282
+  },
+  "muze": "Uffizi Gallery, Floransa",
+  "envanter": "1890 n. 8364",
+  "edinim": "Palla Strozzi siparişi (Santa Trinita); Uffizi",
+  "konum": "A7. Lorenzo Monaco - Gentile da Fabriano",
+  "telif_durumu": "Kamu malı (Gentile ö.1427); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Gentile_da_Fabriano_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Art Project)",
+  "lisans": "Public Domain (Gentile ö.1427)",
+  "dogrulama": {
+   "yontem": "1200px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1200px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C027); kompozisyon Uffizi föyü (A) + enwiki (B) metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 401
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1341
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2628
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-sipariş-hami-ve-toplumsal-bağlam"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sanatçının-kariyeri-ve-atölye-yeniliği"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-biçimsel-analiz-katmanlama-kısaltma-alay"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-yolculuk-doğu-ve-antikite"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-pastiglia-altın-mavi-gök"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Panonun kimliğini (Gentile, 1423, tempera-ahşap, Uffizi) birincil föyle doğrular.",
+  "Strozzi siparişi ve servetin dindar transferini açıklar.",
+  "Katmanlama/kısaltma/alay ile biçimsel analizi yapar.",
+  "Yolculuk/Doğu/mahmuz ikonografisini çözümler.",
+  "Gotik-Rönesans kavşağını ve kanıt sınırlarını değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "sunak panosu (altarpiece)",
+   "tanim": "Kilise sunağı için yapılmış büyük resim; burada Strozzi şapeli için.",
+   "kanit": [
+    "C001",
+    "C006"
+   ]
+  },
+  {
+   "ad": "predella",
+   "tanim": "Sunak panosunun altındaki küçük sahneler şeridi; Nativity, Flight into Egypt, Presentation.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "pastiglia",
+   "tanim": "Kabartma rölyef oluşturan teknik; mahmuz ve kılıç kabzasında üç boyut.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "ad": "Uluslararası Gotik",
+   "tanim": "Geç Orta Çağ'ın zarif, lüks saray üslubu; pano İtalya'daki doruk örnek.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "ad": "Pseudo-Kufic",
+   "tanim": "Sahte Kufi yazı; Avrupai Doğu tasavvurunu yansıtan süsleme.",
+   "kanit": [
+    "C016"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Müneccimlerin Tapınması / Adoration of the Magi; Gentile da Fabriano.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Tarih 1423; imza \"OPUS GENTILIS DE FABRIANO MCCCCXXIII MENSIS MAII\" (Mayıs 1423).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik: tempera, ahşap pano.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut 300×282 cm (K1); WD 301.5×283 (fark notu).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Uffizi, Floransa; envanter 1890 sayımı 8364; konum A7.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Palla Strozzi siparişi; Santa Trinita sakristisindeki aile şapeli.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Müneccimler Kutsal Aile önünde diz çöker, armağan sunar; zengin giysiler; çok etnikli alay + egzotik hayvanlar.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Yolculuk üç arka plan sahnesi (yıldız/Herod/dönüş); çerçevenin üç kemeriyle ayrılır; kayalık ufuk.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Predella: Nativity, Flight into Egypt, Presentation at the Temple; Presentation modern kopya, özgün Louvre.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "İtalya'da Uluslararası Gotik'in en önemli örneği; Gentile'nin en iyi eseri.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Metal varak kabartma (pastiglia) rölyef (mahmuz, kılıç kabzası); predellada altın fon yerine mavi gök.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Gentile da Fabriano (Fabriano c. 1370 – Roma 1427).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "1420'de, Gentile Floransa'ya varışından kısa süre sonra sipariş; Palla en zengin Floransalılardan.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Palla 300 florin ödedi (≈ nitelikli işçinin yıllık ücretinin 6 katı).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Santa Trinita'nın Ghiberti'nin tamamladığı yeni şapeli için.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Pseudo-Kufic yazı; Doğu imgeleri; altın varaklı çerçeve Gotik ornamentik mimari.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Natüralist yaklaşım; çeşitli yüz ifadeleri; hafif fırça darbeleri (yumuşak kürk/yaprak/kumaş/gölge).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Büyük figürleri küçüğün üstüne katmanlayarak 3B; atlarda kısaltma; saat yönünde alay; Müneccimler taçlarını çıkarır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Bilinen ilk pano+çerçeve iki ayrı parça sunak; kendi kendini taşıyan çerçeve etkili.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Altın Mahmuz göndermesi: uşak Müneccim'e altın mahmuz takar → Palla, Order of the Golden Spur üyesi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Ağızlıklı beyaz alaunt (soyu tükenmiş köpek); köpekler ↔ klasik antikite (Roma lahitleri).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Floransa Rönesans resmini etkiledi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Bibliyografya: Baldwin; Strehlke; Brogi vb. — erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Portre kimliği tartışması: Baldwin (Palla kırmızı şapka + babası Onofrio doğancı) ↔ diğerleri (doğancı = Palla + oğlu Lorenzo).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C025",
+   "ifade": "Tüccar sınıfı İncil kralları örneğiyle meşruiyet; servetin kiliseye \"dindar transferi\" (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C026",
+   "ifade": "Uluslararası Gotik doruğu ↔ Rönesans şafağı gerilimi (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C027",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C028",
+   "ifade": "Görsel kamu malı (Gentile ö.1427); Commons PD; geçici kopya .qwen/tmp/parti1/Q1055117/.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Uffizi Gallery",
+   "belge": "resmî koleksiyon föyü \"Adoration of the Magi\" (metin: Daniela Parenti)",
+   "url": "https://www.uffizi.it/en/artworks/adoration-of-the-magi",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML doğrulandı",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Adoration of the Magi (Gentile da Fabriano) — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Adoration_of_the_Magi_(Gentile_da_Fabriano)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML); refs erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "Q1055117 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q1055117",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikimedia Commons",
+   "belge": "Gentile da Fabriano - Adorazione dei Magi - Google Art Project.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Gentile_da_Fabriano_-_Adorazione_dei_Magi_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1200px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Meryem'e Müjde (San Marco)",
+   "sanatci": "Fra Angelico",
+   "mufredat_ici": true,
+   "gerekce": "Lüks saray üslubu ↔ yalın dindarlık.",
+   "kanit": [
+    "C010",
+    "C022"
+   ]
+  },
+  {
+   "eser": "Vergi Parası",
+   "sanatci": "Masaccio",
+   "mufredat_ici": true,
+   "gerekce": "Gotik katmanlama ↔ Rönesans perspektifi (yorum).",
+   "kanit": [
+    "C026",
+    "C022"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil Uffizi föyü açıldı ve ham HTML doğrulandı (A); enwiki kaynaklı B; WD yardımcı; Commons indirildi ama incelenemedi (vision). Kompozisyon Uffizi/enwiki metninden (data betimi yok). Portre kimliği D. Kanıt zinciri KANIT §2.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Boyut 300×282 (Uffizi K1) ↔ WD 301.5×283 — küçük fark; Uffizi birincil tercih.",
+  "Envanter \"1890 n. 8364\" (K1); konum A7.",
+  "Predella Presentation özgünü Louvre; Uffizi'deki modern kopya (K1).",
+  "Portre kimliği (Palla/Onofrio/Lorenzo) D — uzman editör.",
+  "Görsel teyit bu oturumda yapılamadı (C027) — insan editör zorunlu."
+ ]
+}

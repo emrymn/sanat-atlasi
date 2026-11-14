@@ -1,0 +1,434 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2409245",
+ "sanatci_id": "petrus-christus",
+ "baslik": "Genç Bir Kızın Portresi",
+ "ozgun_baslik": "Portrait of a Young Girl (Bildnis einer jungen Dame)",
+ "kunye": {
+  "sanatci": "Petrus Christus",
+  "sanatci_yasam": "c. 1410/20–1475",
+  "tarih": "c. 1470",
+  "tarih_belirsizlik": "SMB um 1470; wiki c. 1465–1470; WD 1470",
+  "teknik": "Yağlıboya, meşe pano",
+  "boyut_cm": {
+   "yukseklik": 29.1,
+   "genislik": 22.7
+  },
+  "muze": "Gemäldegalerie, Staatliche Museen zu Berlin",
+  "envanter": "532",
+  "edinim": "1821, Edward Solly koleksiyonundan satın alma",
+  "konum": "Gemäldegalerie, Berlin",
+  "telif_durumu": "Kamu malı (SMB PD Mark 1.0); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Petrus_Christus_-_Portrait_of_a_Young_Woman_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Art Project)",
+  "lisans": "Public Domain (SMB PD Mark 1.0)",
+  "dogrulama": {
+   "yontem": "1200px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1200px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C022); kompozisyon SMB (A) + enwiki (B) metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 410
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1344
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2963
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-üslup-ilerlemesi-ve-psikolojik-mevcudiyet"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-miras-ve-sadeleştirme-van-eyckten-christusa"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-biçimsel-analiz-mimari-çerçeve-ve-ışık"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-sitter-kimliği-kayıp-yazıt-ve-tartışma"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-ışığın-optiği"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Portrenin kimliğini (Christus, um 1470, yağlıboya meşe, Gemäldegalerie) SMB kaydıyla doğrular.",
+  "Mimari çerçeve + ışık/gölge ile biçimsel analizi yapar.",
+  "Sitter kimliği tartışmasını kanıt katmanlarıyla değerlendirir.",
+  "Psikolojik mevcudiyet ve aristokrat öz-sunumu yorumlar.",
+  "van Eyck/Rogier mirasını ve sadeleştirmeyi açıklar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "hennin",
+   "tanim": "15. yy kadın başlığı; konik/silindirik, çoğunlukla kadife; burada siyah + altın şerit.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "ad": "lambri (wainscot)",
+   "tanim": "Duvarın alt kısmını kaplayan ahşap panel; iç mekânı ima eder.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "dado ray",
+   "tanim": "Lambriyi duvardan ayıran yatay ahşap şerit.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "opalesan",
+   "tanim": "İnci gibi ışıldayan parlaklık; Upton'ın kız benzetmesi.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "ad": "Kuzey Rönesansı",
+   "tanim": "Alpler'in kuzeyinde (Flaman/Hollanda) Rönesans üslubu; zarif portre.",
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Bildnis einer jungen Dame / Portrait of a Young Girl; Petrus Christus.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Petrus Christus (um 1410/20 – um 1475); tarih um 1470.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik: yağlıboya, meşe pano (Eichenholz); 29.1×22.7 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Gemäldegalerie, Berlin; Ident. Nr. 532; 1821'de Edward Solly koleksiyonundan satın alma.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Yapım yeri: Brügge, Niederlande.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Christus'un bilinen tek kadın portresi; gri-kahve duvar + kahve ahşap lambri iç mekân; soldan önden ışık; siyah kadife başlık + altın şerit.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Kamu malı (SMB Public Domain Mark 1.0).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "c. 1465–1470 (wiki), yaşamının sonuna doğru; WD 1470.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Portrede büyük üslup ilerlemesi; havadar, 3B, gerçekçi mekân; çekingen ama zeki/uyanık karmaşık ifade.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Kuzey Rönesansı'nın en zarif portrelerinden; Upton \"siyah kadife yastıkta cilalı inci, neredeyse opalesan\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Jan van Eyck + Rogier van der Weyden'in işini geliştirir; tamamlandıktan sonraki on yıllarda çok etkili.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "İlgi çekici bakış; gözlerde hafif hizasızlık; kaşlar hafif çarpık.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Katı/dengeli mimari çerçeve; dar dikdörtgen mekân; lambrili duvar; yatay çizgiler elbise yakasının ters üçgeninde birleşir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Koyu kahve duvar, az detay (van Eyck'in ayrıntılı iç mekânlarına karşıt); ahşap dado ray + lambri; gerçekçi iç mekân, belki evi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Işık soldan; en güçlü gölge hennin'den; Sterling van Eyck'e borçlu görür; bulanık kavisli gölge yanak/saç çizgisine karşıt.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Soluk ten, badem/hafif oryantal gözler, aksi ağız; aristokrat, mağrur, sofistike, zarif giysili.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Provenance: 1492 Medici envanteri \"Fransız leydi\"/\"Bruges'li Pietro Cresci\"; 40 florin yüksek fiyat; estetik ilgi, tarihsel değil.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Bibliyografya: Upton; Kemperdick; Sterling; Campbell; Ring — erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Sitter kimliği tartışması: Waagen (1824/25, kayıp çerçeve yazıtı) \"ünlü Talbot'un yeğeni\" ↔ Scharf 1863 Grimston diptiği/Alice ↔ Ring 1913 red ↔ Upton Talbot/Ankaret (1421 bebek ölümü) ↔ Campbell yanlış okuma.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C020",
+   "ifade": "Aristokrat öz-sunum ↔ orta sınıf seküler portre; kız aristokrat ideal olarak (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C021",
+   "ifade": "Psikolojik mevcudiyet/bireysellik; portre iç hayatın kaydı (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C022",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C023",
+   "ifade": "Görsel kamu malı; Commons PD; geçici kopya .qwen/tmp/parti1/Q2409245/.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Karşılaştırma: Fouquet Melun Diptych (1452, Gotik ideal); Rogier Portrait of a Woman (c. 1460, yontulmuş hatlar/ifade).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Staatliche Museen zu Berlin / Gemäldegalerie",
+   "belge": "recherche koleksiyon kaydı \"Bildnis einer jungen Dame\" (obj:870214)",
+   "url": "https://recherche.smb.museum/detail/870214/bildnis-einer-jungen-dame",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML doğrulandı",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Portrait of a Young Girl (Christus) — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Portrait_of_a_Young_Girl_(Christus)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML); refs erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "Q2409245 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q2409245",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikimedia Commons",
+   "belge": "Petrus Christus - Portrait of a Young Woman - Google Art Project.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Petrus_Christus_-_Portrait_of_a_Young_Woman_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1200px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Arnolfini Portresi",
+   "sanatci": "Jan van Eyck",
+   "mufredat_ici": true,
+   "gerekce": "Ayrıntılı iç mekân ↔ Christus sadeleştirme + psikolojik odak.",
+   "kanit": [
+    "C014",
+    "C011"
+   ]
+  },
+  {
+   "eser": "Portrait of a Woman",
+   "sanatci": "Rogier van der Weyden",
+   "gerekce": "Yontulmuş hatlar + ifade benzerliği (c. 1460).",
+   "kanit": [
+    "C024"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil SMB recherche koleksiyon kaydı (obj:870214) açıldı ve ham HTML doğrulandı (A); enwiki kaynaklı B; WD yardımcı; Commons indirildi ama incelenemedi (vision). Kompozisyon SMB/enwiki metninden (data betimi yok). Sitter kimliği D. Kanıt zinciri KANIT §2.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: SMB um 1470 (K1); wiki c. 1465–1470; WD 1470 — aralık.",
+  "Boyut: SMB 29.1×22.7 (K1) ↔ wiki/WD 29×22.5 — küçük fark; SMB birincil tercih.",
+  "Christus'un bilinen tek kadın portresi (K1); 1821 Edward Solly edinimi.",
+  "Sitter kimliği (Talbot/Grimston/Alice) D — uzman editör; kayıp çerçeve yazıtı.",
+  "Görsel teyit bu oturumda yapılamadı (C022) — insan editör zorunlu."
+ ]
+}

@@ -1,0 +1,407 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q5856992",
+ "sanatci_id": "limbourg-kardesler",
+ "baslik": "Şubat",
+ "ozgun_baslik": "February (Très Riches Heures)",
+ "kunye": {
+  "sanatci": "Limbourg Kardeşler",
+  "sanatci_yasam": "ö.1416",
+  "tarih": "c. 1412–1416",
+  "tarih_belirsizlik": "yaklaşık; WD 1410'lar",
+  "teknik": "El yazması minyatürü (parşömen)",
+  "boyut_cm": {
+   "yukseklik": 29,
+   "genislik": 21
+  },
+  "muze": "Musée Condé, Chantilly",
+  "envanter": "MS65, f.2v",
+  "edinim": "Berry Dükü Jean için; Condé koleksiyonu",
+  "konum": "Chantilly, Fransa",
+  "telif_durumu": "Kamu malı (Limbourg ö.1416); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_f%C3%A9vrier.jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (Limbourg ö.1416)",
+  "dogrulama": {
+   "yontem": "1200px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1200px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C019); kış sahnesi betimi mevcut data (E)"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 533
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1308
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2533
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-book-of-hours-ve-saray-lüksü-nesnenin-bağlamı"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-atıf-ve-atölye-rustic-painter-kim"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-manzara-ve-atmosfer-perspektifi-ilk-kar"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ay-işleri-ve-takvim-zamanın-görsel-düzeni"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-sınıf-bakışı-köylü-öteki"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Şubat'ı book of hours takvim sayfası olarak tanımlar.",
+  "Atıf tartışmasını (rustic painter) açıklar.",
+  "Kış sahnesi betiminin belirsizliğini kanıt katmanıyla kavrar.",
+  "Atmosfer perspektifi + paleti analiz eder.",
+  "Köylü \"öteki\" bakışını ve sansürü yorumlar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "book of hours",
+   "tanim": "Laiklerin kanonik saatlerde duası için el yazması kitap; Très Riches Heures en lüks örnek.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "ad": "ay işleri",
+   "tanim": "Her aya özgü mevsimlik köylü işleri; Şubat = ısınma/odun (mevcut betim).",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "atmosfer perspektifi",
+   "tanim": "Uzaklığı renk solgunluğuyla gösterme; erken deneme (mevcut betim).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "ultramarin",
+   "tanim": "Lapis lazuliden pahalı mavi pigment; soğuk sahnede odak (mevcut betim).",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "Uluslararası Gotik",
+   "tanim": "Geç Orta Çağ saray üslubu; pahalı pigment + altın, zarif figür.",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Şubat / February; Très Riches Heures takvim sayfası (P361).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Limbourg Kardeşler (Paul/Johan/Herman); Berry Dükü Jean için.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "c.1412–1416 (manuscript); WD 1410'lar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "El yazması minyatürü (book of hours), parşömen.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Sayfa ~29×21 cm (WD); manuscript 30×21.5 (K2).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Musée Condé, Chantilly; MS65, f.2v.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Uluslararası Gotik geç evre; pahalı pigment + altın.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Atıf tartışması: Şubat \"rustic painter\" (Pognon); Limbourg genel kabul; kardeşler 1416 öldü, sonra tamamlandı (Colombe vb.).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Alımlama: 1980'lerde Condé erişimi kısıtladı, faksimile; Camille \"reprodüksiyon\" argümanı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Sansür: bir dergi Şubat köylüsünün genitalini retuşladı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Kış sahnesi: açık kulübede 3 kişi ateşte ısınır; mavi elbiseli kadın eteğini kaldırır (mevcut betim; görsel teyit yok).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C012",
+   "ifade": "Karlı çiftlik: ağıl, kovan, güvercinlik, fıçı, araba; oduncu, eşek, koşan kadın (mevcut betim; teyit yok).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C013",
+   "ifade": "Yüksek ufuk + atmosfer perspektifi (renkler uzakta grileşir) (mevcut betim; teyit yok).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C014",
+   "ifade": "Sınırlı palet (beyaz/kahve/kurşuni); ultramarin (lapis) odak (mevcut betim; teyit yok).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C015",
+   "ifade": "Üst yarım daire takvim: Kova/Balık + güneş arabası; ay işleri (mevcut betim; teyit yok).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C016",
+   "ifade": "Köylü açıklığı = aristokrat bakışın \"öteki\"si (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C017",
+   "ifade": "Manzara resminin öncüsü; Bruegel habercisi (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C018",
+   "ifade": "Görsel kamu malı (Limbourg ö.1416); Commons PD; geçici kopya .qwen/tmp/parti1/Q5856992/.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C020",
+   "ifade": "Musée Condé birincil katalog bu oturumda açılmadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C021",
+   "ifade": "Bibliyografya: Cazelles/Rathofer 1988; Camille; Pognon — erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Très Riches Heures du Duc de Berry — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Tr%C3%A8s_Riches_Heures_du_Duc_de_Berry",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML); refs erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "Q5856992 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q5856992",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikimedia Commons",
+   "belge": "Les Très Riches Heures du duc de Berry février.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_f%C3%A9vrier.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1200px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K5",
+   "kurum": "Musée Condé",
+   "belge": "resmî katalog (hedef)",
+   "url": "https://www.domainedechantilly.com/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "bu oturumda açılmadı",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Karda Avcılar",
+   "sanatci": "Pieter Bruegel",
+   "mufredat_ici": true,
+   "gerekce": "Kış manzarası geleneğinin devamı (yorum).",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "eser": "Très Riches Heures diğer takvim sayfaları",
+   "gerekce": "courtly ↔ rustic painter karşıtlığı.",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil Condé katalog açılmadı (E); enwiki kaynaklı B; WD yardımcı; Commons indirildi ama incelenemedi (vision); kış sahnesi betimi mevcut data (E). Atıf tartışması B. Kanıt zinciri KANIT §2.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data tarih \"1410\" → c.1412–1416 aralığı önerilir (K2); WD 1410'lar.",
+  "Boyut ~29×21 (WD)/30×21.5 (K2 manuscript) — sayfa boyutu; Condé teyidi (C020 E).",
+  "Ayrıntılı kış sahnesi (C011–C015) görsel + birincil teyit bekliyor (E).",
+  "Görsel teyit bu oturumda yapılamadı (C019) — insan editör zorunlu."
+ ]
+}

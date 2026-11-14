@@ -1,0 +1,472 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q285392",
+ "sanatci_id": "robert-campin",
+ "baslik": "Mérode Triptiği",
+ "ozgun_baslik": "Annunciation Triptych (Merode Altarpiece)",
+ "kunye": {
+  "sanatci": "Robert Campin (ve atölyesi; atıf tartışmalı)",
+  "sanatci_yasam": "c. 1375–1444",
+  "tarih": "c. 1427–1432",
+  "tarih_belirsizlik": "Met ca.1427–32; wiki c.1422–1432; WD 1500 (yüzyıl) güvenilmez; imzasız/tarihsiz",
+  "teknik": "Yağlıboya, meşe pano",
+  "boyut_cm": {
+   "yukseklik": 64.5,
+   "genislik": 117.8
+  },
+  "muze": "The Cloisters, Metropolitan Museum of Art, New York",
+  "envanter": "56.70a–c",
+  "edinim": "The Cloisters Collection, 1956",
+  "konum": "The Cloisters, New York",
+  "telif_durumu": "Kamu malı (Met PD); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Robert_Campin_-_Triptych_with_the_Annunciation,_known_as_the_%22Merode_Altarpiece%22_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Art Project)",
+  "lisans": "Public Domain (Met isPublicDomain)",
+  "dogrulama": {
+   "yontem": "1200px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1200px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C026); kompozisyon Met (A) + enwiki (B) metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 433
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1318
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2609
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-ev-içi-kutsal-bağlam-ve-dindarlık"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-atıf-ve-atölye-çok-elin-kanıtı"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-biçimsel-analiz-mekân-ışık-yeniden-işleme"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-gizli-sembolizm-ve-sınırı"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-ahşabın-tanıklığı"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Triptiğin kimliğini (Campin/atölye, c.1427–1432, yağlıboya meşe, Cloisters) Met kaydıyla doğrular.",
+  "Ev içi kutsal ve gizli sembolizmi analiz eder.",
+  "Atıf/donor/kapan tartışmalarını kanıt katmanlarıyla değerlendirir.",
+  "Ahşap/menteşe kanıtının atölye tarihini nasıl yazdığını açıklar.",
+  "Erken Netherlandish üslubun kurucu önemini yorumlar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "triptik",
+   "tanim": "Üç panolu resim; kanatlar kapanabilir; burada donorlar + Müjde + Joseph.",
+   "kanit": [
+    "C001",
+    "C008"
+   ]
+  },
+  {
+   "ad": "Müjde (Annunciation)",
+   "tanim": "Cebrail'in Meryem'e İsa'yı müjdelemesi; burada ev içi mekânda.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "ad": "donor (hami)",
+   "tanim": "Eseri sipariş eden; bahçede dua eden çift; Mechelen burjuvazisi.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "ad": "Erken Netherlandish",
+   "tanim": "15. yy Kuzey Avrupa (Flaman) resim üslubu; triptik kurucu örnek.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "gizli sembolizm",
+   "tanim": "Sıradan nesnelerin dinsel anlam taşıması (Panofsky); tartışmalı.",
+   "kanit": [
+    "C025"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Annunciation Triptych (Merode Altarpiece) / Mérode Triptiği; Robert Campin.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Tarih c. 1427–1432 (Met); wiki c. 1422–1432; WD 1500 (yüzyıl) güvenilmez; imzasız/tarihsiz.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik: yağlıboya, meşe pano.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Boyut: açık 64.5×117.8; orta panel 64.1×63.2; her kanat 64.5×27.3 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "The Cloisters, Met, New York; envanter 56.70a–c; The Cloisters Collection 1956.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Kamu malı (Met isPublicDomain True).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "İmzasız/tarihsiz; Robert Campin + asistan/atölyeye atfedilir.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Üç panel: solda bahçede dua eden donorlar; ortada ev içi Müjde; sağda marangoz Aziz Joseph.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Sembolizm: zambak + çeşme (Meryem saflığı); Kutsal Ruh = sol pencereden ışık hüzmeleri.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Orta panel 1422 sonrası, muhtemelen 1425–1428; belki 1432 (Ghent Altarpiece ile aynı yıl).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Brüksel'de daha erken versiyon, Campin özgünü olabilir; bir zamanlar Jacques Daret'ye atfedildi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Dış kanatlar atölye üyesince sonradan eklendi (donor isteği); Liège görünümleri.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Erken Netherlandish üslubun kurucu eseri; \"iki dönem arasında kilometre taşı; Orta Çağ geleneğini özetler, modern resmin temelini atar\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Master of Flémalle grubu = Robert Campin varsayılır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Teknik: çok el; orta panel ahşabı kanatlardan farklı/eski; menteşe bağımsız tasarımı önerir; orta panel kopya olabilir; kanatlar sonradan sipariş.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Yeniden işlenmiş: kadın donor + sol kanattaki sakallı adam manzara üstüne boyandı; Meryem arkası pencere özgünde altındı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Donorlar Mechelen burjuvazisi; Tournai'de 1427 belgeli; orta panel vitrayındaki armadan tanımlanır.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Donor kimliği tartışmalı: Jan Engelbrecht ↔ Peter Engelbrecht + Margarete Scrynmaker; ad anlamları (\"melek getirir\"/\"dolapçı\").",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C019",
+   "ifade": "Joseph fare kapanı; Augustinus metaforu \"yem = Rab'bin ölümü\"; Schapiro öncülük etti, Panofsky genişletti.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Arka plan kent manzarası muhtemelen kurgu; iki kilise kulesi (Liège).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Bibliyografya: Schapiro Oud Holland 1970; Panofsky; Campbell; Jacobs 2002; Harbison 1995 — erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Atıf tartışması: Campin ↔ Rogier van der Weyden ↔ Campbell \"incoherent in design\" (Flémalle ilişkisinden emin değil).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C023",
+   "ifade": "Fare kapanı ↔ marangoz rendesi: Zupnick 1966 (rende) ↔ Jacob replika ile fare yakaladı.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C024",
+   "ifade": "Ev içi kutsal: Müjde'nin çağdaş burjuva evinde kurulması = kutsalın gündelikleşmesi (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C025",
+   "ifade": "\"Gizli sembolizm\" (Panofsky) ↔ aşırı yorum tartışması (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C026",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C027",
+   "ifade": "Görsel kamu malı; Commons PD; geçici kopya .qwen/tmp/parti1/Q285392/.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Robert Campin c. 1375–1444 (WD yardımcı; yaygın kabul).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "koleksiyon API object 470304 \"Annunciation Triptych (Merode Altarpiece)\"",
+   "url": "https://www.metmuseum.org/art/collection/search/470304",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (API objects/470304); search endpoint 410",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Mérode Altarpiece — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/M%C3%A9rode_Altarpiece",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML); refs erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "Q285392 + Q80442 (Campin)",
+   "url": "https://www.wikidata.org/wiki/Q285392",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikimedia Commons",
+   "belge": "Robert Campin - Triptych with the Annunciation (Merode Altarpiece) - Google Art Project.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Robert_Campin_-_Triptych_with_the_Annunciation,_known_as_the_%22Merode_Altarpiece%22_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1200px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Arnolfini Portresi",
+   "sanatci": "Jan van Eyck",
+   "mufredat_ici": true,
+   "gerekce": "Çağdaş Erken Netherlandish ev içi gerçekçilik + sembolizm.",
+   "kanit": [
+    "C010",
+    "C013"
+   ]
+  },
+  {
+   "eser": "Brüksel Müjde versiyonu",
+   "sanatci": "Robert Campin (olası)",
+   "gerekce": "Daha erken versiyon; Campin özgünü olabilir.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil Met koleksiyon API (object 470304) açıldı ve doğrulandı (A); enwiki kaynaklı B; WD yardımcı (1500 güvenilmez); Commons indirildi ama incelenemedi (vision). Kompozisyon Met/enwiki metninden (data betimi yok). Atıf/donor/kapan D. Kanıt zinciri KANIT §2.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih: Met c. 1427–1432 (K1) tercih; wiki c. 1422–1432; WD 1500 (yüzyıl) güvenilmez → düzeltilmeli.",
+  "Boyut: açık 64.5×117.8; orta 64.1×63.2; kanat 64.5×27.3 (K1). WD 64.5×64.5 yalnız orta panel.",
+  "Atıf: Campin + atölye; Master of Flémalle; Rogier/Campbell tartışması D.",
+  "Donor kimliği (Jan/Peter Engelbrecht) D; fare kapanı/rende D.",
+  "Görsel teyit bu oturumda yapılamadı (C026) — insan editör zorunlu."
+ ]
+}

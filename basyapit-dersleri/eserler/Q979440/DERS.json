@@ -1,0 +1,541 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q979440",
+ "sanatci_id": "simone-martini",
+ "baslik": "Müjde (Triptik)",
+ "ozgun_baslik": "Annunciation with Saint Margaret and Saint Ansanus",
+ "kunye": {
+  "sanatci": "Simone Martini ve Lippo Memmi",
+  "sanatci_yasam": "Simone: c.1284–1344; Memmi: 1317–1347 arası belgeli",
+  "tarih": "1333",
+  "tarih_belirsizlik": "İmza yazıtı yılı doğrudan verir (C003)",
+  "teknik": "Ahşap üzerine tempera, altın zemin",
+  "boyut_cm": {
+   "yukseklik": 168,
+   "genislik": 184
+  },
+  "muze": "Uffizi Galleries, Floransa",
+  "envanter": "Inv. 1890 nos. 451, 452, 453",
+  "edinim": "Siena Katedrali St. Ansanus sunağı; 1799 Leopold takası (iki Luca Giordano tuvali)",
+  "konum": "Sala A5 (Lorenzetti - Simone Martini)",
+  "telif_durumu": "Kamu malı (14. yy); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Simone_Martini_%E2%80%94_Annunciation_with_St._Margaret_and_St._Ansanus.jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (14. yy sanatçıları)",
+  "dogrulama": {
+   "yontem": "Commons 1400px tam kare + iki kırpım (yazıt, Gabriel) vision köprüsü",
+   "cozunurluk": "1920×1667 kaynak; 1400px indirme",
+   "incelenen_bolgeler": [
+    "tam kare",
+    "üst orta (güvercin/yazıt)",
+    "Gabriel (dal/kanat/pelerin)"
+   ],
+   "sinirlar": "Tondo ve taban yazıtları tam okunamadı; mandorla melek sayısı görselden sayılamadı (K2 sekiz der); ilk transkripsiyondaki lily-branch/SPIRITUS SANCTUS tahminleri kırpımla çürütüldü"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 427
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1309
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2597
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-imza-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-siena-döngüsü-ve-uluslararası-gotik"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-imza-atıf-ve-işbölümü-tartışması"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-anın-biçimi-jest-yazıt-zaman"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-ikonografi-sözün-görselleşmesi"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-üslup-kuzey-çizgisi-italyan-mekânı"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (Martini+Memmi, 1333, Uffizi, teknik, envanter) ve imza yazıtını açıklar.",
+  "Siena döngüsü ve uluslararası Gotik bağlamını analiz eder.",
+  "Görünür söz (kabartma yazıt) ve jest (irkilme) biçimlerini yorumlar.",
+  "İkonografiyi (zeytin, zambak, güvercin, peygamberler, azizler) çözümler.",
+  "İşbölümü, aziz kimliği ve boyut belirsizliklerini kanıt katmanlarıyla değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Müjde (Annunciation)",
+   "tanim": "Cebrail'in Meryem'e İsa'nın doğumunu bildirmesi; Luka İncili kaynaklı.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "ad": "Triptik",
+   "tanim": "Üç panelli sunak resmi; orta panel iki kat büyüklükte.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "ad": "Tempera",
+   "tanim": "Yumurta bağlayıcılı pigment; altın zeminle birlikte Gotik pano tekniği.",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "ad": "Kabartma yazıt",
+   "tanim": "Altın zemin üzerinde yükselen harfler; burada meleğin selamı görünür söz olur.",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "ad": "Tondo",
+   "tanim": "Yuvarlak madalyon; dört peygamber büstü enkarnasyona işaret eder.",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Annunciation with St. Margaret and St. Ansanus; Uffizi \"Maxima\" varyantını da kullanır (Müjde Triptiği)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçılar: Simone Martini (Siena c.1284–Avignon 1344) ve Lippo Memmi (Siena, 1317–1347 arası belgeli); ortak atölye; kayınbiraderler (Simone, Memmi'nin kız kardeşiyle evli)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "1333; özgün imza yazıtı: SYMON MARTINI ET LIPPUS MEMMIS DE SENIS ME PINCXERUNT ANNO DOMINI MCCCXXXIII",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Ahşap üzerine tempera, altın zemin; triptik, orta panel yanların iki katı büyüklükte",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Orta panel boyutu 184×168 cm (Uffizi resmî föy)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Bütün triptik boyutları kaynaklar arası farklı: WD 265×305 ve yan paneller 48 cm; resmî sayfa yalnız 184×168 verir — birincil/ikincil uzlaşmasıyla doğrulanamadı",
+   "seviye": "E",
+   "kaynak_id": [
+    "K1",
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C007",
+   "ifade": "Envanter: Inv. 1890 nos. 451, 452, 453 (üç panel)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Yer: Uffizi Galleries, Floransa; salon \"A5. Lorenzetti - Simone Martini\"",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Orijinal: Siena Katedrali transepti, St. Ansanus sunağı (Meryem'in Göğe Kabulü'ne adalı katedral)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "1330–1350 koruyucu azizlere dört sunaklık döngü: Ambrogio Lorenzetti Tapınakta Sunum 1342 (Crescentius), Pietro Lorenzetti Meryem'in Doğumu 1342 (Sabinus), Bulgarini Doğum 1351 (Victor, sökülmüş); tümü Meryem'in Hayatı; Duccio Maestà taç",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "1799: Grandük Peter Leopold, iki Luca Giordano tuvali karşılığında Floransa'ya taşıttı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Özgün çerçeve: Paolo di Camporegio oyma, Memmi yaldız; 1420 onarım; 19. yy'da modern çerçeveyle değişim; tarih yazıtı parçası 19. yy yenilemesine gömülü",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Pahalı lak, yoğun altın yaprak, zor bulunan lapis lazuli → komün prestiji",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "İmza özgün ama işbölümü bilinmez; eleştirmenler tasarım/yürütmenin çoğunu Simone'ye verir; hipotez: orta panel=Martini, yan azizler+tondolar=Memmi",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C015",
+   "ifade": "Kadın aziz kimliği belirsiz: Maxima (Ansanus'un annesi) ya da Margaret",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C016",
+   "ifade": "Kadın azizin ayağı dibindeki \"Judith\" yazıtı yanlış (Uffizi kabulü)",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Sol panel: Ansanus, Siena'nın koruyucu azizlerinden/martir; şehir renklerinde sancak taşır",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Tondolar: soldan sağa Yeremya, Hezekiel, Yeşaya, Daniel; tomarlar enkarnasyon gizemine işaret eder",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Cebrail zeytin dalı taşır (geleneksel barış simgesi), öbür eliyle güvercini işaret eder; Meryem'e İsa'nın doğumunu bildirir",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Görsel: Cebrail diz çökmüş, yeşil yapraklı dal, desenli pelerin, yaldızlı tüylü kanatlar, başta yaprak çelenk",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Kabartma yazıt AVE GRATIA PLENA DOMINUS TECUM; güvercin yolunda Cebrail'den Meryem'e uzanır",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Güvercin (Kutsal Ruh) melek mandorlası ortasında; zambak vazosuyla aynı hizada",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "K2: güvercin Meryem'in sağ kulağına girmek üzere; mandorlada sekiz melek",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Meryem tahtta, kitaptan irkilmiş, geri çekilir, pelerinine sarınır; Cebrail'in ani girişi: dalgalı pelerin, açık kanatlar",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Mekân tanımsız; mermer döşeme, oymalı taht, değerli kumaşlar, kitap → 14. yy en varlıklı sınıfların yaşam biçimi",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Zambak vazosu: Tanrı Oğlu ve Meryem'in saflığı simgesi",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C027",
+   "ifade": "Çağdaş İtalya'da boyut/üslup benzeri yok; Fransız minyatürleri, Alman/İngiliz resmiyle karşılaştırılır; \"Kuzey\" üslup → Avignon papalık saray daveti",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C028",
+   "ifade": "Simone, Petrarch'ın dostu; Anjou hanedanı ve Avignon papalığı gibi seçkin müşteriler",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C029",
+   "ifade": "Gotik çizgi + gerçekçi öğeler (kitap, vazo, taht, perspektifli döşeme, jest nüansları) → Bizans iki boyutluluğundan kopuş; K1: 14. yy Avrupa resminin en büyük başyapıtlarından",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C030",
+   "ifade": "Görsel: bükülü sütunlar, tam altın zemin, yan azizler (solda sancaklı erkek, sağda haç+palmiyeli kadın), dört peygamber tondosu, mermer desenli döşeme",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C031",
+   "ifade": "Görsel kamu malı (14. yy sanatçıları); Commons PD; geçici kopya .qwen/tmp/parti1/Q979440/",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C032",
+   "ifade": "K2 bibliyografya: Cricco & Di Teodoro, Itinerario nell'arte (Zanichelli 2004); Fossi, Uffizi (Giunti 2004); Smarthistory (2011) — erişilmedi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C033",
+   "ifade": "Cebrail pelerininde \"tartar kumaşı\" deseni + ince yaldızlı tüyler; Meryem giysisinde arabesk desen",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "Uffizi Galleries",
+   "belge": "Annunciation with St. Margaret and St. Ansanus — resmî eser kaydı (teknik föy gömülü JSON)",
+   "url": "https://www.uffizi.it/en/artworks/annunciation-with-st-margaret-and-st-ansanus",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML 129567 bayt",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Annunciation with Saint Margaret and Saint Ansanus — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Annunciation_with_Saint_Margaret_and_Saint_Ansanus",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "Q979440 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q979440",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikimedia Commons",
+   "belge": "Simone Martini — Annunciation with St. Margaret and St. Ansanus.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Simone_Martini_%E2%80%94_Annunciation_with_St._Margaret_and_St._Ansanus.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1400px (kaynak 1920×1667) + 2 kırpım incelendi",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Maestà",
+   "sanatci": "Duccio",
+   "kurum": "Siena, Opera del Duomo",
+   "mufredat_ici": true,
+   "gerekce": "Aynı Siena geleneği, önceki nesil; ikonik durağanlık ↔ çizgisel zarafet (yorum).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "eser": "Meryem'in Doğumu",
+   "sanatci": "Pietro Lorenzetti",
+   "kurum": "Siena, Opera del Duomo",
+   "mufredat_ici": true,
+   "gerekce": "Aynı döngü; mekânsal derinlik ↔ çizgisel zarafet (yorum).",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "eser": "Ağıt",
+   "sanatci": "Giotto",
+   "kurum": "Scrovegni Şapeli, Padua",
+   "mufredat_ici": true,
+   "gerekce": "Floransa hacim/duygu dili ↔ Kuzey çizgisi (yorum).",
+   "kanit": [
+    "C027"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data başlığı \"Aziz Maxima ve Aziz Ansanus ile Müjde (Triptik)\": Uffizi Maxima/Margaret varyantlarını birlikte kullanır; kadın aziz kimliği belirsiz (C015); \"Judith\" yazıtı hatalı (C016). Belirsizlik notu önerilir.",
+  "Boyut: resmî föy 184×168 (orta panel); WD 158/265 ve 48/184/305 uzlaşmıyor (C006, E) — insan teyidi gerekli.",
+  "Envanter: WD 00284557 iç katalog ID; resmî Inv. 1890 nos. 451–453 önerilir.",
+  "Salon: resmî JSON \"A5. Lorenzetti - Simone Martini\"."
+ ]
+}

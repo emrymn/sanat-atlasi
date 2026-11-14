@@ -1,0 +1,538 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2620028",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi yılda yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1481–82"
+    },
+    {
+     "harf": "B",
+     "metin": "1442"
+    },
+    {
+     "harf": "C",
+     "metin": "1506"
+    },
+    {
+     "harf": "D",
+     "metin": "1465"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: 1481–82.",
+   "yanlis_gerekceleri": {
+    "B": "1442 değil.",
+    "C": "1506 Mantegna ölümü.",
+    "D": "1465 Domenico."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sistine Şapeli, Vatikan"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Brera"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: Sistine, kuzey duvarı.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi değil.",
+    "C": "Brera değil.",
+    "D": "Louvre değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Anahtarlar neyi simgeler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Savaşı"
+    },
+    {
+     "harf": "B",
+     "metin": "Bağışlama/Tanrı sözü gücü (papalık)"
+    },
+    {
+     "harf": "C",
+     "metin": "Ticareti"
+    },
+    {
+     "harf": "D",
+     "metin": "Yolculuğu"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: keys = power to forgive; papal authority.",
+   "yanlis_gerekceleri": {
+    "A": "Savaş değil.",
+    "C": "Ticaret değil.",
+    "D": "Yolculuk değil."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Judas nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İsa'nın solunda 5., sırtı dönük"
+    },
+    {
+     "harf": "B",
+     "metin": "Sağda önde"
+    },
+    {
+     "harf": "C",
+     "metin": "Merkezde"
+    },
+    {
+     "harf": "D",
+     "metin": "Yok"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: fifth left of Christ, back turned.",
+   "yanlis_gerekceleri": {
+    "B": "Sağda değil.",
+    "C": "Merkez değil.",
+    "D": "Var."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Merkezdeki bina nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sekizgen/kubbeli tapınak"
+    },
+    {
+     "harf": "B",
+     "metin": "Gotik katedral"
+    },
+    {
+     "harf": "C",
+     "metin": "Roma hamamı"
+    },
+    {
+     "harf": "D",
+     "metin": "Kule"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: octagonal temple, Alberti ideal.",
+   "yanlis_gerekceleri": {
+    "B": "Gotik değil.",
+    "C": "Hamam değil.",
+    "D": "Kule değil."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Zafer takları kimi Süleyman'la hizalar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sixtus IV"
+    },
+    {
+     "harf": "B",
+     "metin": "Lorenzo"
+    },
+    {
+     "harf": "C",
+     "metin": "Alfonso II"
+    },
+    {
+     "harf": "D",
+     "metin": "Petrus"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: aligning Sixtus IV to Solomon.",
+   "yanlis_gerekceleri": {
+    "B": "Lorenzo değil.",
+    "C": "Alfonso değil.",
+    "D": "Petrus değil."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Orta plandaki iki sahne?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Vergi Parası + taşlanma"
+    },
+    {
+     "harf": "B",
+     "metin": "Doğum + Çarmıh"
+    },
+    {
+     "harf": "C",
+     "metin": "Müjde + Ağıt"
+    },
+    {
+     "harf": "D",
+     "metin": "Son Yargı + Cennet"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Tribute Money left, stoning right.",
+   "yanlis_gerekceleri": {
+    "B": "Doğum/Çarmıh değil.",
+    "C": "Müjde/Ağıt değil.",
+    "D": "Son Yargı değil."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Pozların tekrarı neyi gösterir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Aynı karton kullanımı"
+    },
+    {
+     "harf": "B",
+     "metin": "Rastgelelik"
+    },
+    {
+     "harf": "C",
+     "metin": "Tek el"
+    },
+    {
+     "harf": "D",
+     "metin": "Hata"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: same cartoon, reversed poses.",
+   "yanlis_gerekceleri": {
+    "B": "Rastgele değil.",
+    "C": "Tek el değil; atölye.",
+    "D": "Hata değil."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Peyzaj kimi etkiledi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Raphael"
+    },
+    {
+     "harf": "B",
+     "metin": "Giotto"
+    },
+    {
+     "harf": "C",
+     "metin": "Cimabue"
+    },
+    {
+     "harf": "D",
+     "metin": "Duccio"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: instructive for Raphael.",
+   "yanlis_gerekceleri": {
+    "B": "Giotto önce.",
+    "C": "Cimabue önce.",
+    "D": "Duccio önce."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Conclave efsanesi neydi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Altındaki hücrede kalan kardinal seçilirdi"
+    },
+    {
+     "harf": "B",
+     "metin": "Resim yanardı"
+    },
+    {
+     "harf": "C",
+     "metin": "Anahtarlar kaybolurdu"
+    },
+    {
+     "harf": "D",
+     "metin": "Petrus görünürdü"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: cardinal housed beneath elected.",
+   "yanlis_gerekceleri": {
+    "B": "Yanma değil.",
+    "C": "Kaybolma değil.",
+    "D": "Görünme değil."
+   },
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser 1481–82'de yapılmış bir fresktir.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser Sistine Şapeli'nin kuzey duvarındadır.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Otoportre kimliği kesindir.",
+   "dogru": false,
+   "aciklama": "Yanlış; \"presumed\" (tartışma).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Petrus altın (gök) ve demir (yer) anahtarları tutar.",
+   "dogru": true,
+   "aciklama": "Doğru (K3).",
+   "kanit": [
+    "C023"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Program Musa/İsa paralelliği kurar.",
+   "dogru": true,
+   "aciklama": "Doğru (K3).",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Musa/İsa paralelliği + pendant + yazıt ile \"iktidar teolojisi\"ni çözümleyin.",
+   "beklenen_ogeler": [
+    "Paralel program",
+    "Pendant Botticelli",
+    "Yazıt CONTVRBATIO",
+    "Papalık meşruiyeti (yorum)"
+   ],
+   "kanit": [
+    "C018",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Perspektif + merkez tapınak + zafer taklarını \"mimari teoloji\" olarak analiz edin.",
+   "beklenen_ogeler": [
+    "Kareli zemin",
+    "Alberti tapınak",
+    "Süleyman hizalama",
+    "Otorite simgesi (yorum)"
+   ],
+   "kanit": [
+    "C012",
+    "C013"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Atölye/karton/konvansiyon ile \"tek el\" izlenimini tartışın.",
+   "beklenen_ogeler": [
+    "Karton tekrarı",
+    "Ortak konvansiyon",
+    "Altın+meşale",
+    "Kolektif üretim (yorum)"
+   ],
+   "kanit": [
+    "C015",
+    "C020"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Tapınak formülünün Raphael/Bramante'ye mirasını değerlendirin.",
+   "beklenen_ogeler": [
+    "Sposalizio Caen/Brera",
+    "Pinturicchio Bufalini",
+    "Bramante Tempietto",
+    "Mekân formülü (yorum)"
+   ],
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Conclave efsanesini ve otoriteyle ilişkisini tartışın.",
+   "beklenen_ogeler": [
+    "Üç papa",
+    "Uğur nesnesi",
+    "Doğaüstü mühür (yorum)",
+    "Efsane≠belge"
+   ],
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Anahtarları ve diz çökmüş Petrus'u bulun.",
+   "ipucu": "Merkez grup.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Judas'ı ve sırtı dönük halini bulun.",
+   "ipucu": "İsa'nın solunda 5.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Merkez tapınağın simetrisini izleyin.",
+   "ipucu": "Sekizgen/kubbe.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "İki küçük sahneyi bulun.",
+   "ipucu": "Vergi Parası / taşlanma.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Zafer taklarını ve yazıtlarını inceleyin.",
+   "ipucu": "Sixtus IV ↔ Süleyman.",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, yer?",
+   "arka": "Anahtarların Teslimi; Perugino+aiuti; 1481–82; fresk; 335×550; Sistine kuzey duvarı.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu/anahtarlar?",
+   "arka": "Matta 16; altın+gümüş anahtar; diz çökmüş Petrus; bağışlama gücü; Judas sırtı dönük.",
+   "kanit": [
+    "C008",
+    "C023",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Perspektif/mimari?",
+   "arka": "Kareli meydan; sekizgen tapınak (Alberti+Kudüs); zafer takları (Sixtus↔Süleyman).",
+   "kanit": [
+    "C012",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Program?",
+   "arka": "Musa/İsa paralelliği; papalık üstünlüğü; pendant Botticelli; yazıt CONTVRBATIO.",
+   "kanit": [
+    "C018",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Etki/efsane?",
+   "arka": "Raphael Sposalizio + Bramante Tempietto; conclave uğuru (üç papa).",
+   "kanit": [
+    "C017",
+    "C022"
+   ]
+  }
+ ]
+}

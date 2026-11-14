@@ -1,0 +1,547 @@
+{
+ "surum": "1.0",
+ "eser_id": "duccio-di-buoninsegna|Christ's Entry into Jerusalem (Maestà arka yüzü)",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Panel hangi büyük sunağın parçasıdır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Assisi freskleri"
+    },
+    {
+     "harf": "B",
+     "metin": "Maestà"
+    },
+    {
+     "harf": "C",
+     "metin": "Scrovegni Şapeli"
+    },
+    {
+     "harf": "D",
+     "metin": "Santa Croce Çarmıhı"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: Maestà sunağının arka yüz paneli.",
+   "yanlis_gerekceleri": {
+    "A": "Assisi freskleri değil.",
+    "C": "Scrovegni Giotto'nun fresk döngüsü.",
+    "D": "Santa Croce Çarmıhı Cimabue'nin."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Maestà hangi yıllarda yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1235–1240"
+    },
+    {
+     "harf": "B",
+     "metin": "1308–1311"
+    },
+    {
+     "harf": "C",
+     "metin": "1420–1430"
+    },
+    {
+     "harf": "D",
+     "metin": "1500–1510"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: 1308 sipariş, 1311 yerleştirme.",
+   "yanlis_gerekceleri": {
+    "A": "1235 Berlinghieri dönemi.",
+    "C": "1420 Masaccio dönemi.",
+    "D": "1500 Yüksek Rönesans."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Maestà'nın yapısal yeniliği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İlk yağlıboya"
+    },
+    {
+     "harf": "B",
+     "metin": "Hem ön hem arka yüzü olan ilk sunak"
+    },
+    {
+     "harf": "C",
+     "metin": "İlk perspektif"
+    },
+    {
+     "harf": "D",
+     "metin": "İlk tuval"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: hem ön hem arka yüzü olan ilk altarpiece.",
+   "yanlis_gerekceleri": {
+    "A": "Yağlıboya değil, tempera.",
+    "C": "Perspektif değil.",
+    "D": "Tuval değil, ahşap pano."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Panel hangi olayı anlatır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Son Akşam Yemeği"
+    },
+    {
+     "harf": "B",
+     "metin": "İsa'nın Kudüs'e Girişi (Palmiye Pazarı)"
+    },
+    {
+     "harf": "C",
+     "metin": "Çarmıha Geriliş"
+    },
+    {
+     "harf": "D",
+     "metin": "Doğum"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K1: eşekli İsa, pelerin/palmiye kalabalığı — Kudüs'e Giriş.",
+   "yanlis_gerekceleri": {
+    "A": "Son Akşam Yemeği masa sahnesi olurdu.",
+    "C": "Çarmıh sahnesi değil.",
+    "D": "Doğum sahnesi değil."
+   },
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "İsa neye binmiştir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "At"
+    },
+    {
+     "harf": "B",
+     "metin": "Eşek"
+    },
+    {
+     "harf": "C",
+     "metin": "Deve"
+    },
+    {
+     "harf": "D",
+     "metin": "Araba"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: gri eşek (ve sıpa).",
+   "yanlis_gerekceleri": {
+    "A": "At değil; eşek alçakgönüllülük simgesi.",
+    "C": "Deve değil.",
+    "D": "Araba değil."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Kalabalık İsa'yı nasıl karşılar?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sessizce"
+    },
+    {
+     "harf": "B",
+     "metin": "Pelerin serip palmiye sallayarak"
+    },
+    {
+     "harf": "C",
+     "metin": "Taşlayarak"
+    },
+    {
+     "harf": "D",
+     "metin": "Kaçarak"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: yere kırmızı pelerinler, palmiye dallı kalabalık.",
+   "yanlis_gerekceleri": {
+    "A": "Sessiz değil, coşkulu.",
+    "C": "Taşlama yok.",
+    "D": "Kaçma yok."
+   },
+   "kanit": [
+    "C019",
+    "C020"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Maestà bugün nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "B",
+     "metin": "Museo dell'Opera del Duomo, Siena"
+    },
+    {
+     "harf": "C",
+     "metin": "Vatikan"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: Siena Opera del Duomo müzesi.",
+   "yanlis_gerekceleri": {
+    "A": "Uffizi Floransa'da.",
+    "C": "Vatikan değil.",
+    "D": "Louvre değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Maestà'yı kim sipariş etti?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Papalık"
+    },
+    {
+     "harf": "B",
+     "metin": "Siena şehri"
+    },
+    {
+     "harf": "C",
+     "metin": "Floransa"
+    },
+    {
+     "harf": "D",
+     "metin": "Milano"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: Siena şehri (1308).",
+   "yanlis_gerekceleri": {
+    "A": "Papalık değil, şehir.",
+    "C": "Floransa değil (Siena).",
+    "D": "Milano değil."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "İnsanlar neden ağaçlara tırmanır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Meyve toplamak"
+    },
+    {
+     "harf": "B",
+     "metin": "İsa'yı daha iyi görmek"
+    },
+    {
+     "harf": "C",
+     "metin": "Saklanmak"
+    },
+    {
+     "harf": "D",
+     "metin": "Odun kesmek"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: görme arzusu; kalabalık İsa'yı görmek için ağaca çıkar.",
+   "yanlis_gerekceleri": {
+    "A": "Meyve değil.",
+    "C": "Saklanma değil.",
+    "D": "Odun değil."
+   },
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Arka yüz kaç küçük panelden oluşur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "12"
+    },
+    {
+     "harf": "B",
+     "metin": "43"
+    },
+    {
+     "harf": "C",
+     "metin": "100"
+    },
+    {
+     "harf": "D",
+     "metin": "6"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: 43 küçük panel (+6 melek).",
+   "yanlis_gerekceleri": {
+    "A": "12 değil.",
+    "C": "100 değil.",
+    "D": "6 melek paneli; asıl sahneler 43."
+   },
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Maestà yalnızca ön yüzden oluşur.",
+   "dogru": false,
+   "aciklama": "Yanlış. Hem ön hem arka yüzü olan ilk sunaktır; arka yüzde 43 panel var.",
+   "kanit": [
+    "C008",
+    "C010"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Panelde İsa bir eşeğe binmiştir.",
+   "dogru": true,
+   "aciklama": "Doğru (K2 görsel); alçakgönüllü krallık simgesi.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Maestà 1311'de katedrale törenle yerleştirildi.",
+   "dogru": true,
+   "aciklama": "Doğru; bütün şehir alayla katıldı (K1 görgü tanığı).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Maestà tempera ve altınla ahşap üzerine yapılmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Kalabalık İsa'yı palmiye dalları ve serilen pelerinlerle karşılar.",
+   "dogru": true,
+   "aciklama": "Doğru (K2 görsel + Palmiye Pazarı ikonografisi).",
+   "kanit": [
+    "C019",
+    "C020"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Maestà'nın kamusal işlevini (şehir siparişi, tören, yazıt) tartışın: sanat nasıl bir şehrin ortak projesi olur?",
+   "beklenen_ogeler": [
+    "Siena siparişi",
+    "1311 töreni",
+    "Yazıtın üç öznesi",
+    "Kamusal bağlam"
+   ],
+   "kanit": [
+    "C007",
+    "C013",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Ön yüz (ikon) ↔ arka yüz (anlatı) karşıtlığını analiz edin: iki görüntü rejimi anlamı nasıl değiştirir?",
+   "beklenen_ogeler": [
+    "Tahtta Meryem statik",
+    "Arka 43 panel anlatısal",
+    "İkon ↔ anlatı",
+    "İşlev farkı"
+   ],
+   "kanit": [
+    "C009",
+    "C010",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Palmiye Pazarı ikonografisinin katmanlarını (İncil + Zekeriya kehaneti + Zacchaeus) çözümleyin.",
+   "beklenen_ogeler": [
+    "Eşek/alçakgönüllü kral",
+    "Pelerin saygısı",
+    "Ağaç/görme arzusu",
+    "Teolojik yorum"
+   ],
+   "kanit": [
+    "C024",
+    "C017",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Duccio'nun Bizans ile gerçeklik arasındaki \"melez\" üslubunu tartışın: kopuş mu dönüşüm mü?",
+   "beklenen_ogeler": [
+    "Altın/hale korunur",
+    "Anlatısal canlılık yeni",
+    "Cimabue/Giotto karşıtlığı",
+    "Etki iddiasının sınırı"
+   ],
+   "kanit": [
+    "C015",
+    "C023"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Müzede tek panel olarak sergilenen eserin orijinal bağlamı (sunak/şehir/tören) nasıl yeniden kurulur?",
+   "beklenen_ogeler": [
+    "Parça ↔ bütün",
+    "Müze bağlamdan koparır",
+    "Tarihsel yeniden kurma"
+   ],
+   "kanit": [
+    "C016",
+    "C010",
+    "C013"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "İsa'nın duruşunu ve jestini inceleyin; kalabalığın coşkusuyla karşıtlığı ne anlatıyor?",
+   "ipucu": "Sakin/vakur İsa ↔ heyecanlı kalabalık.",
+   "kanit": [
+    "C017",
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Yere serilen kırmızı örtüleri ve palmiyeleri bulun; bunlar neyi simgeler?",
+   "ipucu": "Krallara saygı; Palmiye Pazarı.",
+   "kanit": [
+    "C019",
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Ağaca tırmanan ve pencerelerden bakan figürleri bulun; ne yapıyorlar?",
+   "ipucu": "Görme arzusu; İsa'yı görmek.",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Sahnenin yönünü izleyin: soldan sağa akış neyi kodlar?",
+   "ipucu": "Yolculuk/varış; kent kapısına yöneliş.",
+   "kanit": [
+    "C017",
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Mimariyi inceleyin: gerçekçi perspektif mi, simgesel şehir mi?",
+   "ipucu": "Kubbe, sur, kemer; katmanlı ama simgesel.",
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, yer?",
+   "arka": "İsa'nın Kudüs'e Girişi; Duccio di Buoninsegna; Maestà 1308–1311; Museo dell'Opera del Duomo, Siena.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C004",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Maestà'nın yapısal yeniliği?",
+   "arka": "Hem ön hem arka yüzü olan ilk sunak; ön tahtta Meryem, arka 43 anlatı paneli + 6 melek.",
+   "kanit": [
+    "C008",
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Panel hangi olayı anlatır?",
+   "arka": "Palmiye Pazarı / İsa'nın Kudüs'e Girişi: eşekli İsa, pelerin seren ve palmiye sallayan kalabalık.",
+   "kanit": [
+    "C024",
+    "C017",
+    "C019",
+    "C020"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Maestà nasıl karşılandı?",
+   "arka": "1311'de katedrale törenle: dükkânlar kapandı, alay, mumlar, çanlar, sadaka; Siena'nın ortak projesi.",
+   "kanit": [
+    "C013",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Duccio'nun üslup önemi?",
+   "arka": "Bizans altın dilini korurken anlatısal canlılık/insani vurgu kattı; İtalyan resmini gerçekliğe yöneltti (Giotto/Trecento).",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ]
+}

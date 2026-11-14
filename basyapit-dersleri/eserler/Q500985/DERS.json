@@ -1,0 +1,408 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q500985",
+ "sanatci_id": "pieter-bruegel-yasl",
+ "baslik": "Karda Avcılar",
+ "ozgun_baslik": "The Hunters in the Snow (Jagers in de Sneeuw)",
+ "kunye": {
+  "sanatci": "Pieter Bruegel (yaşlı)",
+  "sanatci_yasam": "c. 1525–1569",
+  "tarih": "1565",
+  "tarih_belirsizlik": "1565 (seri); WD 1565",
+  "teknik": "Yağlıboya, ahşap pano",
+  "boyut_cm": {
+   "yukseklik": 117,
+   "genislik": 162
+  },
+  "muze": "Kunsthistorisches Museum, Viyana",
+  "envanter": "GG_1838",
+  "edinim": "KHM koleksiyonu (birincil JS, çıkarılamadı)",
+  "konum": "Kunsthistorisches Museum, Viyana",
+  "telif_durumu": "Kamu malı (Bruegel ö.1569); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg",
+  "kaynak": "Wikimedia Commons (Google Art Project)",
+  "lisans": "Public Domain (Bruegel ö.1569)",
+  "dogrulama": {
+   "yontem": "1200px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1200px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C019); KHM katalog JS çıkarılamadı (C018); kompozisyon enwiki (B) metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 427
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1295
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2900
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-takvim-geleneği-ve-küçük-buzul-çağı"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-manzaranın-özneleşmesi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-biçimsel-analiz-ruh-hâlinin-optiği"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-sembolizm-uğursuzluk-ve-koruma"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-hayali-coğrafya-ve-gerçekçilik"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Resmin kimliğini (Bruegel, 1565, yağlıboya ahşap, KHM) ikincil kaynakla doğrular.",
+  "Mevsim serisi + Ayın İşleri + Küçük Buzul Çağı bağlamını açıklar.",
+  "Soluk palet + figürlerle ruh hâlinin optiğini analiz eder.",
+  "Uğursuz kuşlar + koruyucu aziz sembolizmini yorumlar.",
+  "Hayali coğrafya ve birincil katalog sınırını kavrar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Labours of the Months",
+   "tanim": "Her ayın kırsal işlerini gösteren Orta Çağ geleneği; seri bunun parçası.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "Küçük Buzul Çağı",
+   "tanim": "14–19. yy arası sert kışlar dönemi; 1565 başlangıç.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "kolf",
+   "tanim": "Buz üstünde oynanan, bandy/hokeyin öncüsü oyun.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "ad": "eisstock",
+   "tanim": "\"Buz çubuğu\", curling benzeri kış oyunu.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "ad": "soluk palet",
+   "tanim": "Beyaz-gri tonlarla soğuk atmosfer kurma; kışın ruh hâli.",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: The Hunters in the Snow (Jagers in de Sneeuw) / The Return of the Hunters; Pieter Bruegel (yaşlı); 1565.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Teknik: yağlıboya, ahşap pano; 117×162 cm; Kuzey Rönesansı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Kunsthistorisches Museum, Viyana; envanter GG_1838.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Altı aylık serinin parçası (beşi günümüze ulaşır); Aralık/Ocak kışı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Labours of the Months geleneği; 1565 Küçük Buzul Çağı sert kışlarının başlangıcı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Üç avcı köpeklerle döner; başarısız av; yorgun avcılar; zayıf köpekler; zayıf tilki leşi; tavşan ayak izleri (kaçmış).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Sakin, soğuk, kapalı gün; soluk beyaz/gri; yapraksız ağaçlar; odun dumanı; handa dış ateşte domuz yakan yetişkinler + çocuk.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Han tabelası \"Dit Is Gu(l)den Hert\" (Altın Geyik; \"l\" aşınmış); aziz vizyonu (avcıların koruyucusu).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Sivri dağ zirveleri Low Countries'da yoktur (hayali/Alp manzarası).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Çıplak ağaçlarda kargalar + üst ortada uçan saksağan; uğursuzluk; Holland kültüründe saksağan Şeytan'la ilişkili.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Düz tabanlı vadi, kıvrılan nehir, uzakta sivri zirveler; su değirmeni çarkı donmuş; buz pateni/kolf/eisstock figürleri.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Seri: Gloomy Day (Şub–Mar), Spring (1565 çizim, hiç boyanmadı), Hay Harvest (Haz–Tem), Harvesters (Ağu–Eyl), Return of the Herd (Eki–Kas), Hunters (Ara–Oca).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "BBC'nin 100 Great Paintings listesinde.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Bibliyografya: refs — erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Pieter Bruegel (yaşlı) c. 1525–1569 (WD yardımcı; yaygın kabul).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Melankoli/ruh hâli: yorgun avcılar + uğursuz kuşlar + soğuk = kış zorluğunun ruh hâli (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C017",
+   "ifade": "Hayali manzara (Low Countries'da Alp zirveleri) = kompozit/ideal manzara (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C018",
+   "ifade": "KHM birincil katalog indirildi ama JS kabuğu, veri çıkarılamadı.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C019",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C020",
+   "ifade": "Görsel kamu malı (Bruegel ö.1569); Commons PD; geçici kopya .qwen/tmp/parti1/Q500985/.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Han tabelası aziz kimliği: Aziz Hubertus ↔ Aziz Eustace (avcıların koruyucusu).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "tartisma"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "The Hunters in the Snow — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/The_Hunters_in_the_Snow",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML); refs erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Wikidata",
+   "belge": "Q500985 + Q43270 (Bruegel)",
+   "url": "https://www.wikidata.org/wiki/Q500985",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikimedia Commons",
+   "belge": "Pieter Bruegel the Elder - Hunters in the Snow (Winter) - Google Art Project.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1200px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K4",
+   "kurum": "Kunsthistorisches Museum",
+   "belge": "objectdb detail/1838 (hedef)",
+   "url": "https://www.khm.at/en/objectdb/detail/1838/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; indirildi; JS kabuğu, veri çıkarılamadı",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Şubat (Très Riches Heures)",
+   "sanatci": "Limbourg Kardeşler",
+   "mufredat_ici": true,
+   "gerekce": "Kış manzarasının erken öncüsü; Bruegel geleneği geliştirir.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "eser": "The Harvesters",
+   "sanatci": "Pieter Bruegel (yaşlı)",
+   "gerekce": "Aynı mevsim serisi; kış ↔ hasat karşıtlığı.",
+   "kanit": [
+    "C012",
+    "C004"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil KHM objectdb indirildi ama JS kabuğu, veri çıkarılamadı (E); kanıt ağırlıklı enwiki kaynaklı B + WD yardımcı; Commons indirildi ama incelenemedi (vision). Kompozisyon enwiki metninden (data betimi yok). Aziz kimliği D. A yalnız lisans. Kanıt zinciri KANIT §2.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih 1565 (K1/WD); seri (altı ay, beşi extant).",
+  "Boyut 117×162 (K1/WD).",
+  "KHM birincil katalog JS → insan editör teyidi ZORUNLU (C018).",
+  "Han tabelası aziz kimliği (Hubertus/Eustace) D — uzman editör.",
+  "Görsel teyit bu oturumda yapılamadı (C019) — insan editör zorunlu."
+ ]
+}

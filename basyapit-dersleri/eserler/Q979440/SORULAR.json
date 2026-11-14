@@ -1,0 +1,549 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q979440",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser hangi yılda tamamlandı ve bunu nasıl biliyoruz?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1311; Maestà yazıtından"
+    },
+    {
+     "harf": "B",
+     "metin": "1333; imza yazıtından"
+    },
+    {
+     "harf": "C",
+     "metin": "1342; katedral kaydından"
+    },
+    {
+     "harf": "D",
+     "metin": "1351; Bulgarini yazıtından"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: imza yazıtı ANNO DOMINI MCCCXXXIII (1333).",
+   "yanlis_gerekceleri": {
+    "A": "1311 Maestà'nın yılı.",
+    "C": "1342 Lorenzetti panellerinin yılı.",
+    "D": "1351 Bulgarini Doğum'unun yılı."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin sanatçıları kimlerdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Giotto ve Cimabue"
+    },
+    {
+     "harf": "B",
+     "metin": "Simone Martini ve Lippo Memmi"
+    },
+    {
+     "harf": "C",
+     "metin": "Duccio ve Segna"
+    },
+    {
+     "harf": "D",
+     "metin": "Ambrogio ve Pietro Lorenzetti"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: Simone Martini ve Lippo Memmi; kayınbiraderler.",
+   "yanlis_gerekceleri": {
+    "A": "Floransa geleneği, bu eser değil.",
+    "C": "Siena ama bu eserin imzası değil.",
+    "D": "Lorenzetti kardeşler döngünün diğer halkaları."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eser bugün nerede sergileniyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Siena Katedrali"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi, Floransa"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre, Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "Vatikan Pinakotekası"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: Uffizi Galleries, salon A5.",
+   "yanlis_gerekceleri": {
+    "A": "Orijinal yer; 1799'da taşındı.",
+    "C": "Louvre değil.",
+    "D": "Vatikan değil."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Cebrail elinde ne taşır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Zambak"
+    },
+    {
+     "harf": "B",
+     "metin": "Zeytin dalı"
+    },
+    {
+     "harf": "C",
+     "metin": "Palmiye"
+    },
+    {
+     "harf": "D",
+     "metin": "Tomar"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: zeytin dalı, barış simgesi; zambak vazoda.",
+   "yanlis_gerekceleri": {
+    "A": "Zambak vazoda, elinde değil.",
+    "C": "Palmiye yan azizlerde.",
+    "D": "Tomar peygamber tondolarında."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Güvercin yolundaki kabartma selam yazıtı nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "AVE GRATIA PLENA DOMINUS TECUM"
+    },
+    {
+     "harf": "B",
+     "metin": "SYMON MARTINI ET LIPPUS MEMMIS"
+    },
+    {
+     "harf": "C",
+     "metin": "MAGNIFICAT ANIMA MEA"
+    },
+    {
+     "harf": "D",
+     "metin": "GLORIA IN EXCELSIS DEO"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K4: kabartma selam AVE GRATIA PLENA DOMINUS TECUM.",
+   "yanlis_gerekceleri": {
+    "B": "Bu, çerçevedeki imza yazıtı; selam değil.",
+    "C": "Meryem'in ilahisi; sahnede yok.",
+    "D": "Meleklerin ilahisi; sahnede yok."
+   },
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Meryem haber karşısında nasıl tepki verir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sakin kabul"
+    },
+    {
+     "harf": "B",
+     "metin": "Kitaptan irkilip geri çekilme"
+    },
+    {
+     "harf": "C",
+     "metin": "Uyku"
+    },
+    {
+     "harf": "D",
+     "metin": "Yüksek sesle okuma"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K4: irkilme, geri çekilme, pelerinine sarınma.",
+   "yanlis_gerekceleri": {
+    "A": "Sakin değil; irkilmiş.",
+    "C": "Uyku değil; okuyordu.",
+    "D": "Okuma kesildi."
+   },
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Sol paneldeki aziz kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Aziz Petrus"
+    },
+    {
+     "harf": "B",
+     "metin": "Aziz Ansanus"
+    },
+    {
+     "harf": "C",
+     "metin": "Aziz Victor"
+    },
+    {
+     "harf": "D",
+     "metin": "Aziz Crescentius"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: Ansanus, Siena koruyucusu; şehir renklerinde sancak.",
+   "yanlis_gerekceleri": {
+    "A": "Petrus değil.",
+    "C": "Victor, Bulgarini sunağının azizi.",
+    "D": "Crescentius, Ambrogio sunağının azizi."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Tepedeki tondolarda hangi peygamberler var?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Musa, Harun, Davud, Süleyman"
+    },
+    {
+     "harf": "B",
+     "metin": "Yeremya, Hezekiel, Yeşaya, Daniel"
+    },
+    {
+     "harf": "C",
+     "metin": "Matta, Markos, Luka, Yuhanna"
+    },
+    {
+     "harf": "D",
+     "metin": "İbrahim, İshak, Yakup, Yusuf"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: soldan sağa Yeremya, Hezekiel, Yeşaya, Daniel.",
+   "yanlis_gerekceleri": {
+    "A": "Eski Ahit figürleri ama tondolar değil.",
+    "C": "İncil yazarları; değil.",
+    "D": "Patrikler; değil."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Eserin orijinal yeri neresidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Siena Katedrali St. Ansanus sunağı"
+    },
+    {
+     "harf": "B",
+     "metin": "Scrovegni Şapeli"
+    },
+    {
+     "harf": "C",
+     "metin": "Uffizi sunağı"
+    },
+    {
+     "harf": "D",
+     "metin": "Assisi Bazilikası"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Siena Katedrali transepti, St. Ansanus sunağı.",
+   "yanlis_gerekceleri": {
+    "B": "Scrovegni Padua'da, Giotto.",
+    "C": "Uffizi bugünkü yer; orijinal değil.",
+    "D": "Assisi değil."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Zambak vazosu neyi simgeler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Savaşı"
+    },
+    {
+     "harf": "B",
+     "metin": "Saflığı"
+    },
+    {
+     "harf": "C",
+     "metin": "Zenginliği"
+    },
+    {
+     "harf": "D",
+     "metin": "Ölümü"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: Meryem'in saflığı ve Tanrı Oğlu.",
+   "yanlis_gerekceleri": {
+    "A": "Savaş değil; zeytin barışı.",
+    "C": "Zenginlik değil.",
+    "D": "Ölüm değil."
+   },
+   "kanit": [
+    "C026"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser, hem Martini hem Memmi imzalıdır ve 1333 tarihlidir.",
+   "dogru": true,
+   "aciklama": "Doğru; imza yazıtı özgündür (K1).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Kadın azizin ayağı dibindeki \"Judith\" yazıtı Uffizi'ye göre doğrudur.",
+   "dogru": false,
+   "aciklama": "Yanlış; Uffizi yazıtın hatalı olduğunu kabul eder.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Güvercin ile zambak vazosu aynı dikey hizada durur.",
+   "dogru": true,
+   "aciklama": "Doğru (K1/K4); ruh-saflık ekseni.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Eser orijinalde Uffizi Galerisi için yapılmıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış; Siena Katedrali St. Ansanus sunağı için; 1799'da Floransa'ya taşındı.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Simone Martini ile Lippo Memmi kayınbiraderdi ve ortak atölye paylaşıyordu.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C002"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Yazıtı \"görünür söz\" olarak analiz edin: yön, kabartma, izleyici etkisi.",
+   "beklenen_ogeler": [
+    "Harfler Cebrail→Meryem",
+    "Kabartma harfler",
+    "İzleyici selamı tekrarlar",
+    "Performatif okuma (yorum)"
+   ],
+   "kanit": [
+    "C021",
+    "C022"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Meryem'in jestini tartışın: korku-kabul eşiği, empati, affective dindarlık.",
+   "beklenen_ogeler": [
+    "Geri çekilme",
+    "Pelerinine sarınma",
+    "Kesilen okuma",
+    "Affective dindarlık (yorum)"
+   ],
+   "kanit": [
+    "C024",
+    "C025"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Eseri Siena döngüsünün parçası olarak değerlendirin: yerel program + uluslararası dil.",
+   "beklenen_ogeler": [
+    "Dört sunak",
+    "Maestà taç",
+    "Lapis/yaldız prestiji",
+    "Avignon daveti"
+   ],
+   "kanit": [
+    "C009",
+    "C010",
+    "C013",
+    "C027"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "İmza ↔ işbölümü gerilimini ve \"usta\" kavramını sorgulayın; hatalı Judith yazıtında kanıt hiyerarşisini tartışın.",
+   "beklenen_ogeler": [
+    "Özgün imza",
+    "İşbölümü hipotezi (tartışma)",
+    "Judith hatası",
+    "Müze kaydının önceliği"
+   ],
+   "kanit": [
+    "C003",
+    "C016",
+    "C002"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Üslup coğrafyasını haritalayın: Kuzey çizgisi ↔ İtalyan hacim; etki ↔ akrabalık ayrımı.",
+   "beklenen_ogeler": [
+    "Fransız minyatürleri",
+    "Avignon daveti",
+    "Giotto karşıtlığı",
+    "Etki belgesi yok"
+   ],
+   "kanit": [
+    "C027",
+    "C029"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kabartma yazıtı izleyin: harfler kimden kime uzanıyor?",
+   "ipucu": "Güvercin yolu; AVE GRATIA PLENA.",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Cebrail'in dalını, kanatlarını ve pelerin desenini inceleyin.",
+   "ipucu": "Yeşil yapraklı zeytin; yaldızlı tüyler; tartar deseni.",
+   "kanit": [
+    "C020",
+    "C033"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Meryem'in kitabını ve irkilme jestini bulun.",
+   "ipucu": "El göğüste; pelerin; taht.",
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Bükülü sütunları ve yan azizlerin atribütlerini tanımlayın.",
+   "ipucu": "Solda sancak (Ansanus); sağda haç+palmiye.",
+   "kanit": [
+    "C030",
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Güvercin ile zambak vazosunun hizalanmasını doğrulayın.",
+   "ipucu": "Dikey eksen; saflık simgesi.",
+   "kanit": [
+    "C022",
+    "C026"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçılar, tarih, teknik, yer?",
+   "arka": "Müjde (Triptik); Simone Martini + Lippo Memmi; 1333; tempera/altın, ahşap; Uffizi (orta panel 184×168; Inv. 1890 nos. 451–453).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C007",
+    "C008"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "İmza yazıtını transkribe et.",
+   "arka": "SYMON MARTINI ET LIPPUS MEMMIS DE SENIS ME PINCXERUNT ANNO DOMINI MCCCXXXIII.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Orta sahnenin öğeleri?",
+   "arka": "Diz çökmüş Cebrail + zeytin dalı; tahtta irkilen Meryem + kitap; zambak vazosu; güvercin + mandorla; AVE GRATIA PLENA yazıtı.",
+   "kanit": [
+    "C020",
+    "C024",
+    "C026",
+    "C022",
+    "C021"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Orijinal bağlam ve taşınma?",
+   "arka": "Siena Katedrali St. Ansanus sunağı; dört sunaklık döngü 1330–1350; 1799 Leopold takası (iki Giordano tuvali) → Floransa.",
+   "kanit": [
+    "C009",
+    "C010",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Peygamberler ve azizler?",
+   "arka": "Tondolar: Yeremya, Hezekiel, Yeşaya, Daniel; sol Ansanus (sancak); sağ kadın aziz (Maxima/Margaret belirsiz; Judith yazıtı hatalı).",
+   "kanit": [
+    "C018",
+    "C017",
+    "C016"
+   ]
+  }
+ ]
+}

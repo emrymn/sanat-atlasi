@@ -1,0 +1,531 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3947103",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Panonun imzalı/yazıtlı tarihi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1226"
+    },
+    {
+     "harf": "B",
+     "metin": "1235"
+    },
+    {
+     "harf": "C",
+     "metin": "1298"
+    },
+    {
+     "harf": "D",
+     "metin": "1333"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "Alt kenarda MCCXXXV (1235) yazıtı ve imza bulunur (K1, K3).",
+   "yanlis_gerekceleri": {
+    "A": "1226, Franciscus'un ölüm yılıdır; pano 9 yıl sonra yapıldı.",
+    "C": "1298, Wikidata'daki alternatif değerdir; yazıtlı 1235 ile çelişir (C004).",
+    "D": "1333, başka bir eserle (Martini Müjde) karıştırılmıştır."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin sanatçısı kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Giotto"
+    },
+    {
+     "harf": "B",
+     "metin": "Cimabue"
+    },
+    {
+     "harf": "C",
+     "metin": "Bonaventura Berlinghieri"
+    },
+    {
+     "harf": "D",
+     "metin": "Duccio"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "Kaynaklar sanatçıyı Bonaventura Berlinghieri olarak verir (K1/K2/K4).",
+   "yanlis_gerekceleri": {
+    "A": "Giotto, Ağıt'ın sanatçısıdır (müfredat #6).",
+    "B": "Cimabue, Santa Croce Çarmıhı'nın sanatçısıdır (#2).",
+    "D": "Duccio, Maestà'nın sanatçısıdır (#3)."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "B",
+     "metin": "Tempera ve altın, ahşap pano"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya, tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K2: tempera e oro su tavola (tempera ve altın, ahşap pano).",
+   "yanlis_gerekceleri": {
+    "A": "Fresk duvar sıvasına boyamadır; bu taşınabilir ahşap panodur.",
+    "C": "Yağlıboya tuval daha geç bir tekniktir; bu eser tempera/ahşaptır.",
+    "D": "Mozaik değil, boyalı panodur."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eserin boyutları nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "160 × 123 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "45,5 × 41 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "300 × 200 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "82 × 70,5 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K2: 160 × 123 cm.",
+   "yanlis_gerekceleri": {
+    "B": "45,5×41, Vermeer Süt Boşaltan Kadın'ın boyutudur.",
+    "C": "Kaynaklarda böyle bir değer yok.",
+    "D": "82×70,5, Steen Aziz Nicholas Yortusu boyutudur."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eser bugün nerede bulunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uffizi, Floransa"
+    },
+    {
+     "harf": "B",
+     "metin": "Scrovegni Şapeli, Padua"
+    },
+    {
+     "harf": "C",
+     "metin": "Chiesa di San Francesco, Pescia"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre, Paris"
+    }
+   ],
+   "dogru": "C",
+   "gerekce": "K1/K2: Pescia, San Francesco Kilisesi, Mainardi sunağı (in situ).",
+   "yanlis_gerekceleri": {
+    "A": "Uffizi başka eserleri barındırır; bu pano Pescia'dadır.",
+    "B": "Scrovegni, Giotto Ağıt'ın yeridir.",
+    "D": "Louvre'da değildir."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Azizin iki yanında kaç hayat sahnesi vardır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "4"
+    },
+    {
+     "harf": "B",
+     "metin": "6"
+    },
+    {
+     "harf": "C",
+     "metin": "8"
+    },
+    {
+     "harf": "D",
+     "metin": "12"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K3: üçerli iki sütunda altı sahne.",
+   "yanlis_gerekceleri": {
+    "A": "4 değil, altı sahne vardır.",
+    "C": "8 değil.",
+    "D": "12 değil."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Kordondaki üç düğüm neyi simgeler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Üç meleği"
+    },
+    {
+     "harf": "B",
+     "metin": "Üç yemini: itaat, iffet, yoksulluk"
+    },
+    {
+     "harf": "C",
+     "metin": "Üç mucizeyi"
+    },
+    {
+     "harf": "D",
+     "metin": "Üç azizi"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: üç düğüm friarların üç yeminini (obbedienza, castità, povertà) simgeler.",
+   "yanlis_gerekceleri": {
+    "A": "Melekler madalyonlardadır, kordonda değil.",
+    "C": "Mucizeler yan sahnelerdedir.",
+    "D": "Üç aziz değil, üç yemin."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Eser neden önemlidir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Franciscus'un günümüze ulaşan en eski tasviri olması"
+    },
+    {
+     "harf": "B",
+     "metin": "İlk yağlıboya olması"
+    },
+    {
+     "harf": "C",
+     "metin": "İlk çizgisel perspektif olması"
+    },
+    {
+     "harf": "D",
+     "metin": "İlk bireysel portre olması"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: azizin ölümünden 9 yıl sonra yapılmış, günümüze ulaşan en eski Franciscus tasviri.",
+   "yanlis_gerekceleri": {
+    "B": "Yağlıboya değil, tempera; \"ilk yağlıboya\" iddiası yanlış.",
+    "C": "Çizgisel perspektif bu eserde yok; düz/cephesel üslup.",
+    "D": "Bireysel portre değil, agiografik tip."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Eserin üslubu hangi gelenektendir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Maniera greca (Italo-Bizans)"
+    },
+    {
+     "harf": "B",
+     "metin": "İzlenimcilik"
+    },
+    {
+     "harf": "C",
+     "metin": "Barok tenebrizm"
+    },
+    {
+     "harf": "D",
+     "metin": "Rokoko"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1/K3: altın zemin, cephesel duruş, şematik figür — arkaik Italo-Bizans üslup.",
+   "yanlis_gerekceleri": {
+    "B": "İzlenimcilik 19. yy'a aittir.",
+    "C": "Tenebrizm Barok'a aittir.",
+    "D": "Rokoko 18. yy'a aittir."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Pano nasıl yeniden keşfedildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1880'lerde Ridolfi, Bardelli tuvalini kaldırınca"
+    },
+    {
+     "harf": "B",
+     "metin": "1937 sergisinde"
+    },
+    {
+     "harf": "C",
+     "metin": "1982 restorasyonunda"
+    },
+    {
+     "harf": "D",
+     "metin": "1235'te yapıldığında"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: 1880'lerde Michele Ridolfi, 17.yy Bardelli tuvalini kaldırınca imza/tarih ortaya çıktı.",
+   "yanlis_gerekceleri": {
+    "B": "1937 kataloğu haleleyi kaydetti; keşif 1880'ler.",
+    "C": "1982 restorasyonu kapüşonu ortaya çıkardı; keşif değil.",
+    "D": "1235 yapım yılıdır; keşif değil."
+   },
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Pano bugün bir müzede sergilenmektedir.",
+   "dogru": false,
+   "aciklama": "Yanlış. Pano Pescia'daki San Francesco Kilisesi'nde, yerinde (in situ) bir sunaktadır; müzede değildir.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Pano imzalıdır ve 1235 tarihlidir.",
+   "dogru": true,
+   "aciklama": "Doğru. Alt kenarda MCCXXXV (1235) yazıtı ve sanatçı imzası bulunur.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Franciscus 1226'da öldü; pano ondan dokuz yıl sonra yapıldı.",
+   "dogru": true,
+   "aciklama": "Doğru. K1: azizin ölümünden yalnızca dokuz yıl sonra, 1235.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Yan sahnelerin hepsi Franciscus hayattayken gerçekleşen olaylardır.",
+   "dogru": false,
+   "aciklama": "Yanlış. İki sahne hayatta (Kuşlara Vaaz, Stigmata), dördü ölüm sonrası mucizelerdir.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Üç düğümlü kordon, friarların üç yeminini simgeler.",
+   "dogru": true,
+   "aciklama": "Doğru. İtaat, iffet, yoksulluk (K1).",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Yazıtlı 1235 ile Wikidata'daki 1298 alternatifi çelişir. Kanıt hiyerarşisi açısından hangisi üstündür? Gerekçelendirin.",
+   "beklenen_ogeler": [
+    "Birincil yazıt > ikincil veri tabanı",
+    "İmza/yazıtın doğrudanlığı",
+    "İhtilafın D olarak açık tutulması"
+   ],
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "\"Bilinen ilk\" ile \"mutlak ilk\" arasındaki farkı bu eser üzerinden açıklayın.",
+   "beklenen_ogeler": [
+    "Günümüze ulaşanlar içinde öncelik",
+    "Kayıp eser olasılığı",
+    "Kanıtın sınırlılığı"
+   ],
+   "kanit": [
+    "C020",
+    "C009"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Merkezdeki cephesel figür ile yan anlatı sahneleri arasındaki gerilimi yorumlayın.",
+   "beklenen_ogeler": [
+    "İkon ↔ anlatı",
+    "Kutsallığın sabitliği ↔ hayatın hareketi",
+    "Yorumun olgudan ayrılması"
+   ],
+   "kanit": [
+    "C016",
+    "C019"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Restorasyon katmanları (1235 / 17.yy hale / 1982 kaldırma) ışığında \"orijinal hangisi?\" sorusunu tartışın.",
+   "beklenen_ogeler": [
+    "Katmanlı tarih",
+    "Restorasyonun yeni katman üretmesi",
+    "Koruma etiği"
+   ],
+   "kanit": [
+    "C021",
+    "C022"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Stigmata olgusu ile \"alter Christus\" yorumu arasındaki kanıt/yorum sınırını çizin.",
+   "beklenen_ogeler": [
+    "Stigmata kaynaklı (B)",
+    "alter Christus etiketi yorum (C)",
+    "Sınırın açıkça işaretlenmesi"
+   ],
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Ortadaki figürün duruşu ve bakışı nasıl? Size yakın mı uzak mı geliyor?",
+   "ipucu": "Cephesel, katı duruş; izleyiciye dönük.",
+   "kanit": [
+    "C012",
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Kordondaki düğümleri sayın ve neyi simgelediğini düşünün.",
+   "ipucu": "Üç düğüm; üç yemin.",
+   "kanit": [
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Yan sahnelerden birini seçip ne anlattığını tahmin edin; sonra kaynakla karşılaştırın.",
+   "ipucu": "Kuşlara Vaaz veya bir mucize sahnesi.",
+   "kanit": [
+    "C016",
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Altın zemin figürleri daha gerçekçi mi, daha kutsal mı gösteriyor?",
+   "ipucu": "Düz perspektif, altın zemin; gündelik mekândan kopuş.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Alt kenardaki yazıtı okuyun: hangi yıl?",
+   "ipucu": "MCCXXXV = 1235.",
+   "kanit": [
+    "C003"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Sanatçı, tarih, yer, teknik?",
+   "arka": "Bonaventura Berlinghieri; 1235 (imzalı); Chiesa di San Francesco, Pescia; tempera ve altın, ahşap pano; 160×123 cm.",
+   "kanit": [
+    "C002",
+    "C003",
+    "C007",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Eser neden önemli?",
+   "arka": "Franciscus'un günümüze ulaşan en eski tasviri (ölümünden 9 yıl sonra, 1235); Franciscus Hikâyeleri'ni işleyen bilinen ilk eser.",
+   "kanit": [
+    "C009",
+    "C020"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Üç düğümlü kordon neyi simgeler?",
+   "arka": "Friarların üç yemini: itaat, iffet, yoksulluk.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Eserin üslubu?",
+   "arka": "Maniera greca (Italo-Bizans): altın zemin, cephesel katı duruş, şematik yüz, düz perspektif.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Pano nasıl yeniden keşfedildi?",
+   "arka": "1880'lerde Michele Ridolfi, 17.yy Alessandro Bardelli tuvalini kaldırınca; imza ve tarih alt kenarda bulundu.",
+   "kanit": [
+    "C010"
+   ]
+  }
+ ]
+}

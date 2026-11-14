@@ -1,0 +1,473 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q285392",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Triptiğin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, meşe pano"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera, tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: oil on oak.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk değil.",
+    "C": "Tempera tuval değil.",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Met'e göre tarih?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "c. 1427–1432"
+    },
+    {
+     "harf": "B",
+     "metin": "1500"
+    },
+    {
+     "harf": "C",
+     "metin": "1600"
+    },
+    {
+     "harf": "D",
+     "metin": "1300"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: ca. 1427–32.",
+   "yanlis_gerekceleri": {
+    "B": "1500 WD yüzyıl, güvenilmez.",
+    "C": "1600 değil.",
+    "D": "1300 değil."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Eser nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "The Cloisters, Met, New York"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Cloisters/Met.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi değil.",
+    "C": "Louvre değil (Brüksel versiyonu farklı).",
+    "D": "Prado değil."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Sağ panelde kim var?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Marangoz Aziz Joseph"
+    },
+    {
+     "harf": "B",
+     "metin": "Cebrail"
+    },
+    {
+     "harf": "C",
+     "metin": "Meryem"
+    },
+    {
+     "harf": "D",
+     "metin": "Donor"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Joseph carpenter.",
+   "yanlis_gerekceleri": {
+    "B": "Cebrail ortada.",
+    "C": "Meryem ortada.",
+    "D": "Donor solda."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Kutsal Ruh nasıl temsil edilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sol pencereden ışık hüzmeleri"
+    },
+    {
+     "harf": "B",
+     "metin": "Güvercin heykeli"
+    },
+    {
+     "harf": "C",
+     "metin": "Altın fon"
+    },
+    {
+     "harf": "D",
+     "metin": "Bulut"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: rays of light.",
+   "yanlis_gerekceleri": {
+    "B": "Güvercin heykeli değil.",
+    "C": "Altın fon değil.",
+    "D": "Bulut değil."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Master of Flémalle kim varsayılır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Robert Campin"
+    },
+    {
+     "harf": "B",
+     "metin": "Jan van Eyck"
+    },
+    {
+     "harf": "C",
+     "metin": "Rogier van der Weyden"
+    },
+    {
+     "harf": "D",
+     "metin": "Daret"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: assumed Campin.",
+   "yanlis_gerekceleri": {
+    "B": "van Eyck değil.",
+    "C": "Rogier tartışmalı.",
+    "D": "Daret değil."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Eser Met'e ne zaman kazandırıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1956 (Cloisters Collection)"
+    },
+    {
+     "harf": "B",
+     "metin": "1427"
+    },
+    {
+     "harf": "C",
+     "metin": "1890"
+    },
+    {
+     "harf": "D",
+     "metin": "2000"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: 1956.",
+   "yanlis_gerekceleri": {
+    "B": "1427 tarih.",
+    "C": "1890 değil.",
+    "D": "2000 değil."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Triptik hangi üslubun kurucu eseri?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Erken Netherlandish"
+    },
+    {
+     "harf": "B",
+     "metin": "İtalyan Rönesans"
+    },
+    {
+     "harf": "C",
+     "metin": "Barok"
+    },
+    {
+     "harf": "D",
+     "metin": "Empresyonizm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Early Netherlandish.",
+   "yanlis_gerekceleri": {
+    "B": "İtalyan Rönesans değil.",
+    "C": "Barok değil.",
+    "D": "Empresyonizm değil."
+   },
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Triptik yağlıboya meşe panodur.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Pano imzalı ve tarihlidir.",
+   "dogru": false,
+   "aciklama": "Yanlış; imzasız/tarihsiz (K2).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Müjde çağdaş bir ev içi mekânda kurulur.",
+   "dogru": true,
+   "aciklama": "Doğru (K2).",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Kutsal Ruh ışık hüzmeleriyle temsil edilir.",
+   "dogru": true,
+   "aciklama": "Doğru (K2).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eser 1956'da Cloisters Collection olarak Met'e kazandırıldı.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Ev içi kutsalı (Müjde'nin burjuva evinde kurulması) analiz edin.",
+   "beklenen_ogeler": [
+    "Çağdaş ev mekânı",
+    "Kutsalın gündelikleşmesi",
+    "Özel dindarlık",
+    "Donor eşiği (yorum)"
+   ],
+   "kanit": [
+    "C024",
+    "C008"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Gizli sembolizm (Panofsky) ve aşırı yorum sınırını tartışın.",
+   "beklenen_ogeler": [
+    "Zambak/çeşme",
+    "Fare kapanı = Augustinus",
+    "Schapiro/Panofsky",
+    "Aşırı yorum sınırı (yorum)"
+   ],
+   "kanit": [
+    "C025",
+    "C019"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Atıf tartışmasını (Campin/Rogier/Campbell) sınayın.",
+   "beklenen_ogeler": [
+    "İmzasız",
+    "Rogier gerçekçilik",
+    "Campbell tutarsız tasarım",
+    "Flémalle şüphesi (D)"
+   ],
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Donor kimliği ve fare kapanı/rende tartışmasını değerlendirin.",
+   "beklenen_ogeler": [
+    "Jan ↔ Peter Engelbrecht",
+    "Ad anlamları",
+    "Zupnick rende",
+    "Jacob replika (D)"
+   ],
+   "kanit": [
+    "C018",
+    "C023"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kanıt mimarisini değerlendirin: Met (A) + görsel sınırı (E).",
+   "beklenen_ogeler": [
+    "Met API A",
+    "enwiki B",
+    "Görsel incelenemedi E",
+    "WD 1500 güvenilmez"
+   ],
+   "kanit": [
+    "C001",
+    "C026",
+    "C002"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Üç paneli soldan sağa adlandırın: donorlar, Müjde, Joseph.",
+   "ipucu": "Triptik düzeni.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Zambak, çeşme ve pencereden giren ışık hüzmelerini bulun.",
+   "ipucu": "Meryem saflığı + Kutsal Ruh.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Joseph'in fare kapanını bulun.",
+   "ipucu": "Sağ panel; Augustinus metaforu.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Arka plandaki Liège kent manzarasını izleyin.",
+   "ipucu": "İki kilise kulesi.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Donorların bahçede dua edişini bulun.",
+   "ipucu": "Sol panel.",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, yer?",
+   "arka": "Mérode Triptiği; Campin + atölye; c. 1427–1432; yağlıboya meşe; 64.5×117.8 (açık); Cloisters/Met 56.70a–c.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Üç panel + sembolizm?",
+   "arka": "Donorlar / ev içi Müjde / Joseph; zambak + çeşme + ışık = saflık + Kutsal Ruh.",
+   "kanit": [
+    "C008",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Atölye/teknik tarihi?",
+   "arka": "Çok el; orta panel ahşabı eski; kanatlar sonradan; yeniden işleme; Brüksel versiyonu.",
+   "kanit": [
+    "C015",
+    "C016",
+    "C011"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Fare kapanı sembolizmi?",
+   "arka": "Augustinus \"yem = Rab'bin ölümü\"; Schapiro öncü, Panofsky genişletti; kapan/rende tartışması (D, ayrıca).",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Üslup + önem?",
+   "arka": "Erken Netherlandish kurucu; \"kilometre taşı\"; Master of Flémalle = Campin varsayımı.",
+   "kanit": [
+    "C013",
+    "C014"
+   ]
+  }
+ ]
+}

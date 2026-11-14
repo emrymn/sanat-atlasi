@@ -1,0 +1,476 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1055117",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Panonun tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tempera, ahşap pano"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya, tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: tempera on wood.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk değil.",
+    "C": "Yağlıboya tuval değil.",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Panonun imza ve tarihi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "OPUS GENTILIS DE FABRIANO MCCCCXXIII (1423)"
+    },
+    {
+     "harf": "B",
+     "metin": "İmzasız"
+    },
+    {
+     "harf": "C",
+     "metin": "1503"
+    },
+    {
+     "harf": "D",
+     "metin": "1490"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: imzalı, Mayıs 1423.",
+   "yanlis_gerekceleri": {
+    "B": "İmzalı.",
+    "C": "1503 değil.",
+    "D": "1490 değil."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Pano kimin siparişiyle yapıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Palla Strozzi"
+    },
+    {
+     "harf": "B",
+     "metin": "Medici"
+    },
+    {
+     "harf": "C",
+     "metin": "Ghiberti"
+    },
+    {
+     "harf": "D",
+     "metin": "Rucellai"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Palla Strozzi.",
+   "yanlis_gerekceleri": {
+    "B": "Medici değil.",
+    "C": "Ghiberti şapeli tamamladı, hami değil.",
+    "D": "Rucellai değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Predelladaki Presentation'ın özgünü nerede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Prado"
+    },
+    {
+     "harf": "D",
+     "metin": "Vatican"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: özgün Louvre; Uffizi'deki kopya.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi'deki kopya.",
+    "C": "Prado değil.",
+    "D": "Vatican değil."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Pano hangi üslubun İtalya'daki doruğu sayılır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uluslararası Gotik"
+    },
+    {
+     "harf": "B",
+     "metin": "Rönesans"
+    },
+    {
+     "harf": "C",
+     "metin": "Barok"
+    },
+    {
+     "harf": "D",
+     "metin": "Maniyerizm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: International Gothic.",
+   "yanlis_gerekceleri": {
+    "B": "Rönesans değil (eşik).",
+    "C": "Barok değil.",
+    "D": "Maniyerizm değil."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Palla Strozzi sunak için ne kadar ödedi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "300 florin"
+    },
+    {
+     "harf": "B",
+     "metin": "30 florin"
+    },
+    {
+     "harf": "C",
+     "metin": "3000 florin"
+    },
+    {
+     "harf": "D",
+     "metin": "100 florin"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: 300 florin.",
+   "yanlis_gerekceleri": {
+    "B": "30 değil.",
+    "C": "3000 değil.",
+    "D": "100 değil."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Çerçeve konusunda yenilik nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pano + çerçeve iki ayrı parça"
+    },
+    {
+     "harf": "B",
+     "metin": "Çerçeve yok"
+    },
+    {
+     "harf": "C",
+     "metin": "Altın fon"
+    },
+    {
+     "harf": "D",
+     "metin": "Tek parça"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: bilinen ilk ayrı çerçeve.",
+   "yanlis_gerekceleri": {
+    "B": "Çerçeve var.",
+    "C": "Altın fon predella değil.",
+    "D": "İki ayrı parça."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Altın mahmuz takan uşak neye göndermedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Palla'nın Order of the Golden Spur üyeliği"
+    },
+    {
+     "harf": "B",
+     "metin": "Savaş"
+    },
+    {
+     "harf": "C",
+     "metin": "Av"
+    },
+    {
+     "harf": "D",
+     "metin": "Tarikat değil"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: Golden Spur.",
+   "yanlis_gerekceleri": {
+    "B": "Savaş değil.",
+    "C": "Av değil.",
+    "D": "Tarikat üyeliği."
+   },
+   "kanit": [
+    "C020"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Pano imzalı ve 1423 tarihlidir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Predelladaki Presentation'ın özgünü Louvre'dadır.",
+   "dogru": true,
+   "aciklama": "Doğru; Uffizi'deki kopya (K1).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Pano Masaccio'ya aittir.",
+   "dogru": false,
+   "aciklama": "Yanlış; Gentile da Fabriano (K1).",
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Predellada altın fon yerine mavi gökyüzü kullanılır.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Palla Strozzi sunak için 300 florin ödedi.",
+   "dogru": true,
+   "aciklama": "Doğru (K2).",
+   "kanit": [
+    "C014"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Lüks malzeme ve \"servetin dindar transferi\"ni analiz edin.",
+   "beklenen_ogeler": [
+    "Altın + pastiglia",
+    "Strozzi serveti",
+    "Tüccar meşruiyeti",
+    "İktidar gösterisi (yorum)"
+   ],
+   "kanit": [
+    "C025",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Panoyu Gotik doruğu ↔ Rönesans şafağı kavşağında değerlendirin.",
+   "beklenen_ogeler": [
+    "Uluslararası Gotik zirve",
+    "Predellada mavi gök",
+    "Natüralizm",
+    "Floransa Rönesans etkisi (yorum)"
+   ],
+   "kanit": [
+    "C026",
+    "C022",
+    "C011"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Portre kimliği tartışmasını (Baldwin ↔ diğerleri) sınayın.",
+   "beklenen_ogeler": [
+    "Palla kırmızı şapka",
+    "Onofrio doğancı",
+    "Alternatif: Palla + Lorenzo",
+    "Kimlik D (tartışma)"
+   ],
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Doğu imgelerini ve Pseudo-Kufic yazıyı çözümleyin.",
+   "beklenen_ogeler": [
+    "Egzotik hayvanlar",
+    "Lüks giysi desenleri",
+    "Pseudo-Kufic",
+    "Avrupai Doğu fantezisi (yorum)"
+   ],
+   "kanit": [
+    "C016",
+    "C007"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kanıt mimarisini değerlendirin: birincil föy (A) + görsel sınırı (E).",
+   "beklenen_ogeler": [
+    "Uffizi föyü A",
+    "enwiki B",
+    "Görsel incelenemedi E",
+    "İnsan editör teyidi"
+   ],
+   "kanit": [
+    "C001",
+    "C027"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Diz çökmüş üç Müneccim'i ve Kutsal Aile'yi bulun.",
+   "ipucu": "Merkez + sol.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Arka plandaki üç yolculuk sahnesini ve çerçevenin üç kemerini izleyin.",
+   "ipucu": "Yıldız/Herod/dönüş.",
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Altın mahmuz takan uşağı bulun.",
+   "ipucu": "Golden Spur göndermesi.",
+   "kanit": [
+    "C020"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Ağızlıklı beyaz alaunt'u (köpek) bulun.",
+   "ipucu": "Alt sağ köşe.",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Predelladaki mavi gökyüzünü inceleyin.",
+   "ipucu": "Altın fon yerine mavi.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, yer?",
+   "arka": "Müneccimlerin Tapınması; Gentile da Fabriano; 1423 (imzalı); tempera-ahşap; 300×282; Uffizi 8364.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Sipariş + hami?",
+   "arka": "Palla Strozzi; Santa Trinita aile şapeli; 1420 sipariş; 300 florin.",
+   "kanit": [
+    "C006",
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Teknik yenilik?",
+   "arka": "Pastiglia rölyef; ayrı çerçeve (ilk); predellada mavi gök.",
+   "kanit": [
+    "C011",
+    "C019"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "İkonografi?",
+   "arka": "Üç yolculuk sahnesi; Doğu imgeleri + Pseudo-Kufic; altın mahmuz; alaunt.",
+   "kanit": [
+    "C008",
+    "C016",
+    "C020",
+    "C021"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Predella?",
+   "arka": "Nativity, Flight into Egypt, Presentation; Presentation kopya, özgün Louvre.",
+   "kanit": [
+    "C009"
+   ]
+  }
+ ]
+}

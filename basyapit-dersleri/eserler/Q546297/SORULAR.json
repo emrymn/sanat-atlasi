@@ -1,0 +1,539 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q546297",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin tekniği/desteği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tempera, tuval"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya, pano"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3: tempera su tela; tuval nadir.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk değil.",
+    "C": "Yağlıboya pano değil.",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "B",
+     "metin": "Pinacoteca di Brera, Milano"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: Brera, Milano.",
+   "yanlis_gerekceleri": {
+    "A": "Uffizi değil.",
+    "C": "Louvre değil.",
+    "D": "Prado değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Boyut nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "68×81 cm"
+    },
+    {
+     "harf": "B",
+     "metin": "200×185 cm"
+    },
+    {
+     "harf": "C",
+     "metin": "184×168 cm"
+    },
+    {
+     "harf": "D",
+     "metin": "230×297 cm"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3/K4: 68×81.",
+   "yanlis_gerekceleri": {
+    "B": "Giotto Ağıt.",
+    "C": "Martini Müjde.",
+    "D": "Fra Angelico."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "En belirgin perspektif özelliği?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yatay panorama"
+    },
+    {
+     "harf": "B",
+     "metin": "Ayaklardan şiddetli kısaltma (scorcio)"
+    },
+    {
+     "harf": "C",
+     "metin": "Kuşbakışı"
+    },
+    {
+     "harf": "D",
+     "metin": "İzometrik"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: scorcio, ayaklar izleyiciye dönük.",
+   "yanlis_gerekceleri": {
+    "A": "Panorama değil.",
+    "C": "Kuşbakışı değil.",
+    "D": "İzometrik değil."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Yasçılar kimlerdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Meryem, Yuhanna, Magdalene"
+    },
+    {
+     "harf": "B",
+     "metin": "Petrus, Paulus, Yakup"
+    },
+    {
+     "harf": "C",
+     "metin": "Melekler"
+    },
+    {
+     "harf": "D",
+     "metin": "Azizler"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: Virgin, John, Magdalene.",
+   "yanlis_gerekceleri": {
+    "B": "Havariler değil.",
+    "C": "Melek değil.",
+    "D": "Aziz değil."
+   },
+   "kanit": [
+    "C008"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Işık hangi yönden gelir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Soldan"
+    },
+    {
+     "harf": "B",
+     "metin": "Sağdan"
+    },
+    {
+     "harf": "C",
+     "metin": "Yukarıdan"
+    },
+    {
+     "harf": "D",
+     "metin": "Önden"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: light from right.",
+   "yanlis_gerekceleri": {
+    "A": "Sol değil.",
+    "C": "Yukarı değil.",
+    "D": "Ön değil."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Sağ üstteki nesne nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Merhem kavanozu"
+    },
+    {
+     "harf": "B",
+     "metin": "Kitap"
+    },
+    {
+     "harf": "C",
+     "metin": "Haç"
+    },
+    {
+     "harf": "D",
+     "metin": "Taç"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3: vasetto degli unguenti.",
+   "yanlis_gerekceleri": {
+    "B": "Kitap değil.",
+    "C": "Haç değil.",
+    "D": "Taç değil."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "İsa'nın yüzü için ne söylenir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Sabit bakış"
+    },
+    {
+     "harf": "B",
+     "metin": "İzleyiciyi takip eder"
+    },
+    {
+     "harf": "C",
+     "metin": "Gözler kapalı"
+    },
+    {
+     "harf": "D",
+     "metin": "Yana dönük"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: face follows viewer.",
+   "yanlis_gerekceleri": {
+    "A": "Sabit değil.",
+    "C": "Kapalı değil.",
+    "D": "Yana değil."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Eser hangi Mantegna işiyle ilişkilendirilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Camera degli Sposi oculus"
+    },
+    {
+     "harf": "B",
+     "metin": "San Zeno"
+    },
+    {
+     "harf": "C",
+     "metin": "Isabella d'Este studiolo"
+    },
+    {
+     "harf": "D",
+     "metin": "Ovetari"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3: Camera degli Sposi illusionism.",
+   "yanlis_gerekceleri": {
+    "B": "San Zeno değil.",
+    "C": "Studiolo değil.",
+    "D": "Ovetari değil."
+   },
+   "kanit": [
+    "C025"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Eser Brera'ya hangi yıl geldi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1824"
+    },
+    {
+     "harf": "B",
+     "metin": "1507"
+    },
+    {
+     "harf": "C",
+     "metin": "1628"
+    },
+    {
+     "harf": "D",
+     "metin": "1483"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K3: arrived 1824.",
+   "yanlis_gerekceleri": {
+    "B": "1507 Gonzaga satın aldı.",
+    "C": "1628 Carlo I satış.",
+    "D": "1483 tarih."
+   },
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser tempera-tuval üzerine yapılmıştır.",
+   "dogru": true,
+   "aciklama": "Doğru (K3).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser Pinacoteca di Brera'dadır.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Perspektif kurallara tam uygundur.",
+   "dogru": false,
+   "aciklama": "Yanlış; ayaklar küçük, bacaklar kısa vb. (K3).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Üç yasçı Meryem, Yuhanna ve Magdalene'dir.",
+   "dogru": true,
+   "aciklama": "Doğru (K3).",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Yasçılar bedene sıkı sıkı temas eder.",
+   "dogru": false,
+   "aciklama": "Yanlış; az temas (K2).",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Scorcio + izleyici konumunu (ayak dibi) analiz edin.",
+   "beklenen_ogeler": [
+    "Ayaklar izleyiciye dönük",
+    "Göz hizası ayaklarda",
+    "Yüz takip eder",
+    "Compassio konumu (yorum)"
+   ],
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Orantı \"hatasını\" teorilerle (Kristeller/Ward/Jantzen/Manca) değerlendirin.",
+   "beklenen_ogeler": [
+    "Ayak küçük/bacak kısa",
+    "Hata↔tercih (tartışma)",
+    "Dram/empati",
+    "Sembolik ortogonaller"
+   ],
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Yakınlık/mahremiyet paradoksunu (Schrade) tartışın.",
+   "beklenen_ogeler": [
+    "Yakın ama dokunulmaz",
+    "Az temas",
+    "Compassio sınırı (yorum)",
+    "Kısaltma=davet+engel"
+   ],
+   "kanit": [
+    "C020",
+    "C017"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Yaralar ve İnsanlık vurgusunu (Eisler/Steinberg) çözümleyin.",
+   "beklenen_ogeler": [
+    "Çivi/mızrak yaraları",
+    "Enkarnasyon kanıtı",
+    "İnsanlık (yorum)",
+    "Gerçekçilik=teoloji"
+   ],
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Provenance ve iki versiyon hipotezini değerlendirin.",
+   "beklenen_ogeler": [
+    "1506 bottega",
+    "1507 Gonzaga",
+    "1628 Carlo I",
+    "1824 Brera",
+    "Versiyon (tartışma)"
+   ],
+   "kanit": [
+    "C023"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Ayak ve el yaralarını bulun.",
+   "ipucu": "Çivi delikleri; mızrak böğürde.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Üç yasçıyı ve jestlerini bulun.",
+   "ipucu": "Mendil, birleşik eller, gölge.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Merhem kavanozunu bulun.",
+   "ipucu": "Sağ üst.",
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Işığın yönünü ve gölgeleri izleyin.",
+   "ipucu": "Sağdan.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Yüzün izleyiciyi takip etmesini deneyin.",
+   "ipucu": "Açı değiştirin.",
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, yer?",
+   "arka": "Ölü İsa; Mantegna; c.1475–1501 (tartışmalı); tempera-tuval; 68×81; Brera, Milano.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu/yasçılar?",
+   "arka": "İsa Stone of Unction üzerinde; Meryem+Yuhanna+Magdalene; merhem kavanozu.",
+   "kanit": [
+    "C008",
+    "C018",
+    "C010"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Perspektif?",
+   "arka": "Scorcio ayaklardan; göz hizası ayaklarda; yüz takip; orantı \"hatası\" dramatik.",
+   "kanit": [
+    "C011",
+    "C012",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Işık/pathos?",
+   "arka": "Sağdan ışık; monokrom kahve; morg mekân; von Einem \"spooky\"; Schrade paradoks.",
+   "kanit": [
+    "C015",
+    "C016",
+    "C019",
+    "C020"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Provenance?",
+   "arka": "1506 bottega; 1507 Gonzaga; 1628 Carlo I; Mazarino; 1824 Brera.",
+   "kanit": [
+    "C023"
+   ]
+  }
+ ]
+}

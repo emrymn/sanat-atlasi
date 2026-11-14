@@ -1,0 +1,540 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2378534",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "B",
+     "metin": "Tempera pano"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: affresco/fresco.",
+   "yanlis_gerekceleri": {
+    "B": "Tempera pano değil.",
+    "C": "Yağlıboya tuval değil.",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser nerede bulunur?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "B",
+     "metin": "San Marco Manastırı, Floransa"
+    },
+    {
+     "harf": "C",
+     "metin": "Prado"
+    },
+    {
+     "harf": "D",
+     "metin": "Vatikan"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: San Marco, kuzey koridoru.",
+   "yanlis_gerekceleri": {
+    "A": "Uffizi değil.",
+    "C": "Prado'da başka bir Müjde var.",
+    "D": "Vatikan değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Manastır programının hamisi kimdir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Lorenzo de' Medici"
+    },
+    {
+     "harf": "B",
+     "metin": "Cosimo de' Medici"
+    },
+    {
+     "harf": "C",
+     "metin": "Papa V. Martin"
+    },
+    {
+     "harf": "D",
+     "metin": "Felice Brancacci"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: Cosimo de' Medici.",
+   "yanlis_gerekceleri": {
+    "A": "Lorenzo değil, Cosimo.",
+    "C": "Papa değil.",
+    "D": "Brancacci başka şapel."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Kompozisyonun yeniliği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İç mekân/taht"
+    },
+    {
+     "harf": "B",
+     "metin": "Açık havada Müjde"
+    },
+    {
+     "harf": "C",
+     "metin": "Altın zemin"
+    },
+    {
+     "harf": "D",
+     "metin": "Düz figürler"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: açık-hava türünün mucidi; Gotik iç-mekâna karşı.",
+   "yanlis_gerekceleri": {
+    "A": "Gotik tip, bu değil.",
+    "C": "Altın zemin Gotik.",
+    "D": "Düz figür Gotik."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Hortus conclusus neyi simgeler?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Savaşı"
+    },
+    {
+     "harf": "B",
+     "metin": "Bakireliği"
+    },
+    {
+     "harf": "C",
+     "metin": "Zenginliği"
+    },
+    {
+     "harf": "D",
+     "metin": "Ölümü"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: Meryem'in bakireliği.",
+   "yanlis_gerekceleri": {
+    "A": "Savaş değil.",
+    "C": "Zenginlik değil.",
+    "D": "Ölüm değil."
+   },
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Yazıtın işlevi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İmza"
+    },
+    {
+     "harf": "B",
+     "metin": "Ave demeyi hatırlatmak"
+    },
+    {
+     "harf": "C",
+     "metin": "Tarih"
+    },
+    {
+     "harf": "D",
+     "metin": "Satış"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2/K3: geçen rahibe Ave hatırlatması.",
+   "yanlis_gerekceleri": {
+    "A": "İmza değil.",
+    "C": "Tarih değil.",
+    "D": "Satış değil."
+   },
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Orta sütunun işlevi nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Süs"
+    },
+    {
+     "harf": "B",
+     "metin": "İki mekânı ayırır ama birlikte tutar"
+    },
+    {
+     "harf": "C",
+     "metin": "Kaçış noktası"
+    },
+    {
+     "harf": "D",
+     "metin": "Işık"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: ayrı ama birlikte.",
+   "yanlis_gerekceleri": {
+    "A": "Süs değil; yapısal/anlamsal.",
+    "C": "Kaçış noktası portikoda.",
+    "D": "Işık değil."
+   },
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Meryem'in mavisi neyi belirtir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yas"
+    },
+    {
+     "harf": "B",
+     "metin": "Kraliyet+saflık"
+    },
+    {
+     "harf": "C",
+     "metin": "Savaş"
+    },
+    {
+     "harf": "D",
+     "metin": "Ticaret"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: royal status + purity.",
+   "yanlis_gerekceleri": {
+    "A": "Yas değil.",
+    "C": "Savaş değil.",
+    "D": "Ticaret değil."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Altın+azurit nerede kullanıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Tüm hücrelerde"
+    },
+    {
+     "harf": "B",
+     "metin": "Cosimo'nun hücresi + kamusal koridorlar"
+    },
+    {
+     "harf": "C",
+     "metin": "Yalnız sunakta"
+    },
+    {
+     "harf": "D",
+     "metin": "Hiç"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: Cosimo özel hücre + kamusal koridor.",
+   "yanlis_gerekceleri": {
+    "A": "Hücreler sade.",
+    "C": "Yalnız sunak değil.",
+    "D": "Kullanıldı."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Koyu ton ne için tasarlandı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dekorasyon"
+    },
+    {
+     "harf": "B",
+     "metin": "Tefekkür/dua"
+    },
+    {
+     "harf": "C",
+     "metin": "Satış"
+    },
+    {
+     "harf": "D",
+     "metin": "Işık"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K2: darker = reflection/prayer.",
+   "yanlis_gerekceleri": {
+    "A": "Açık ton dekorasyon.",
+    "C": "Satış değil.",
+    "D": "Işık değil."
+   },
+   "kanit": [
+    "C012"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser, San Marco Manastırı'nda in situ bir fresktir.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser, Gotik iç-mekân/taht tipindedir.",
+   "dogru": false,
+   "aciklama": "Yanlış; açık-hava türü (K2).",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Yazıt, geçen rahibe Ave demeyi hatırlatır.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Altın ve azurit, tüm rahip hücrelerinde kullanıldı.",
+   "dogru": false,
+   "aciklama": "Yanlış; hücreler sade; lüks yalnız Cosimo + kamusal (K2).",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Eser, koridorun (hücre dışı) üç freskinden biridir.",
+   "dogru": true,
+   "aciklama": "Doğru (K2).",
+   "kanit": [
+    "C008"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Açık-hava Müjde türünün icadını Gotik karşıtlığıyla analiz edin.",
+   "beklenen_ogeler": [
+    "Gotik iç-mekân/taht/düz",
+    "Açık hava/derin mekân/hacim",
+    "Gotik→Rönesans",
+    "Tür icadı (B)"
+   ],
+   "kanit": [
+    "C009",
+    "C010"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Malzeme hiyerarşisini (hücre sade / koridor lüks) tartışın.",
+   "beklenen_ogeler": [
+    "Yoksulluk mahremde",
+    "Cömertlik kamusalda",
+    "Cosimo hücresi",
+    "Ruhsal ekonomi (yorum)"
+   ],
+   "kanit": [
+    "C013",
+    "C020"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Yazıt + jest aynasını \"ibadet eylemi\" olarak çözümleyin.",
+   "beklenen_ogeler": [
+    "Ave hatırlatması",
+    "Performatif yazıt",
+    "Katlı kollar aynası",
+    "Temsil→eylem (yorum)"
+   ],
+   "kanit": [
+    "C019",
+    "C015"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Düşük ışık estetiğini ve tadilatın etkisini tartışın.",
+   "beklenen_ogeler": [
+    "Loş=tefekkür",
+    "Görünmez kaynak",
+    "Tadilat→otantik değil",
+    "Deneyimsel tarih (yorum)"
+   ],
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Orta sütun + diyagonal + kaçış noktasını mekân-anlam ilişkisiyle analiz edin.",
+   "beklenen_ogeler": [
+    "Ayrı ama birlikte",
+    "Diyagonal katılım",
+    "Kaçış noktası portiko",
+    "Eşik (yorum)"
+   ],
+   "kanit": [
+    "C017",
+    "C018"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Yazıtı bulun: geçen rahibe ne deniyor?",
+   "ipucu": "Altta, orta sütun dibinde.",
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Cebrail ve Meryem'in katlı kollarını karşılaştırın.",
+   "ipucu": "Jest aynası.",
+   "kanit": [
+    "C014",
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Çitli bahçeyi (hortus conclusus) ve servileri bulun.",
+   "ipucu": "Arka plan; bakirelik.",
+   "kanit": [
+    "C016"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Orta sütunun iki figürü nasıl ayırdığını/birleştirdiğini izleyin.",
+   "ipucu": "Karşı uçlar.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Başlıklardaki ışık vurgusunu gözleyin.",
+   "ipucu": "İyon/Korint; Alberti atfı.",
+   "kanit": [
+    "C021"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, yer?",
+   "arka": "Müjde (San Marco kuzey koridoru); Fra Angelico; c.1440–1445; fresk; San Marco, Floransa (in situ).",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Program ve hami?",
+   "arka": "Cosimo de' Medici; ~50 fresk; hücre sade / koridor lüks; altın+azurit Cosimo+kamusal.",
+   "kanit": [
+    "C007",
+    "C013"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Kompozisyon?",
+   "arka": "Açık-hava Müjde (Gotik karşıtı); loggia; orta sütun ayrı+birlik; diyagonal; kaçış noktası portiko.",
+   "kanit": [
+    "C009",
+    "C017",
+    "C018"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "İkonografi?",
+   "arka": "Hortus conclusus=bakirelik; mavi=kraliyet+saflık; katlı kollar=kabul; yazıt=Ave hatırlatması.",
+   "kanit": [
+    "C016",
+    "C015",
+    "C019"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Işık ve işlev?",
+   "arka": "Düşük ışık=tefekkür; görünmez kaynak; tadilat→otantik değil; koyu=dua, açık=dekorasyon.",
+   "kanit": [
+    "C011",
+    "C012"
+   ]
+  }
+ ]
+}

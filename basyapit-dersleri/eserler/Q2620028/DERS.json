@@ -1,0 +1,499 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2620028",
+ "sanatci_id": "pietro-perugino",
+ "baslik": "İsa'nın Anahtarları Petrus'a Vermesi",
+ "ozgun_baslik": "Consegna delle chiavi (Delivery of the Keys)",
+ "kunye": {
+  "sanatci": "Pietro Perugino (+ aiuti)",
+  "sanatci_yasam": "c. 1446–1523",
+  "tarih": "1481–1482",
+  "tarih_belirsizlik": "K2/K3 1481–82; WD 1480'ler",
+  "teknik": "Fresk",
+  "boyut_cm": {
+   "yukseklik": 335,
+   "genislik": 550
+  },
+  "muze": "Sistine Şapeli, Vatikan",
+  "envanter": "Vatican föyü bu oturumda açılmadı",
+  "edinim": "in situ; Sixtus IV siparişi (1480)",
+  "konum": "Kuzey duvarı, altar'dan 5., registro mediano",
+  "telif_durumu": "Kamu malı (Perugino ö.1523); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Entrega_de_las_llaves_a_San_Pedro_(Perugino).jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (Perugino ö.1523)",
+  "dogrulama": {
+   "yontem": "1600px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1600px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C025); betim K2/K3"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 397
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1254
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2481
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-program-musa-isa-paralelliği-ve-papalık-otoritesi"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-sipariş-ve-atölye-sixtus-iv-floransa-ekibi-kartonlar"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-perspektif-ve-mimari-meydan-tapınak-zafer-takları"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-kompozisyon-friz-simetri-tekrar"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-peyzaj-ve-etki-sonsuz-ufuk-raphael-bramante"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Eserin kimliğini (Perugino, 1481–82, fresk, 335×550, Sistine) ve sipariş bağlamını açıklar.",
+  "Musa/İsa paralelliği ve papalık otorite programını çözümler.",
+  "Perspektif + merkez tapınak + zafer taklarını analiz eder.",
+  "Atölye/karton/konvansiyon üretimini ve Raphael/Bramante etkisini tartışır.",
+  "Otoportre/görsel/föy belirsizliklerini kanıt katmanlarıyla değerlendirir."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "Anahtarlar",
+   "tanim": "Altın (gök)/demir (yer); bağışlama ve papalık yetkisi.",
+   "kanit": [
+    "C008",
+    "C023"
+   ]
+  },
+  {
+   "ad": "Pendant",
+   "tanim": "Karşı duvardaki eş sahne; otorite↔ceza simetrisi.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "ad": "Karton",
+   "tanim": "Poz tekrarında ortak çizim şablonu; atölye verimliliği.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "ad": "Zafer takı",
+   "tanim": "Roma zafer anıtı; Sixtus IV↔Süleyman hizalaması.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "ad": "Conclave",
+   "tanim": "Papa seçim meclisi; fresk uğur efsanesi.",
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Delivery of the Keys / Consegna delle chiavi / İsa'nın Anahtarları Petrus'a Vermesi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Sanatçı: Pietro Perugino + aiuti (genç Pinturicchio)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "1481–1482",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Teknik: fresk",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Boyut: 335×550 cm",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3",
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Yer: Sistine Şapeli, Vatikan; kuzey duvarı, altar'dan 5., registro mediano; in situ",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Sipariş 1480 Sixtus IV; Old St Peter's başarısı; Floransa ekibi (Botticelli, Ghirlandaio) Lorenzo de' Medici aracılığıyla",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Matta 16; altın+gümüş anahtarlar; bağışlama gücü; diz çökmüş Petrus",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Judas (İsa'nın solunda 5.), sırtı dönük, zıt renk; haleler; çağdaş portreler",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Otoportre (sağdan 5., siyah giysili, izleyiciye bakan) \"presumed\"",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C011",
+   "ifade": "Yazıt: CONTVRBATIO IESV CHRISTI LEGISLATORIS (ilahi yasa aktarımı)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Perspektifli mermer kareli zemin; merkezde sekizgen/kubbeli tapınak = Alberti ideal kilisesi + Kudüs Tapınağı",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Zafer takları, Sixtus IV'ü Süleyman'la hizalar",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Orta planda iki sahne: solda Vergi Parası, sağda İsa'nın taşlanması",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Üslup Verrocchio esinli; tekrarlanan/ters pozlar = aynı karton; zarif, küçük başlar",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Sonsuz ufuk peyzajı; tüylü ağaçlar; Raphael için öğretici",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Merkez bina: Sposalizio (Caen) + Pinturicchio Bufalini + Raphael Sposalizio (Brera) + Bramante Tempietto'yu etkiledi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Program: Musa/İsa paralelliği; papalık üstünlüğü; Botticelli \"İsyancıların Cezası\" ile pendant",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Bağlam: Büyük Bölünme çözümü + Konstanz dekretlerinin iptali (Sixtus IV) → papalık tam güç",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Ortak konvansiyonlar: aynı ölçek/ritim/peyzaj; tek renk gamı + altın (meşale ışığı)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C021",
+   "ifade": "Alfonso II (Napoli) sola eklendi; denge için Petrus üstüne bir havari",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C022",
+   "ifade": "Conclave efsanesi: altındaki hücrede kalan kardinal seçilirdi (Clement VII, Julius II, Paul III)",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C023",
+   "ifade": "Petrus iki anahtar: altın (gök) / demir (yer); sarı elbise + mavi manto",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C024",
+   "ifade": "Görsel kamu malı (Perugino ö.1523); Commons PD; geçici kopya .qwen/tmp/parti1/Q2620028/",
+   "seviye": "A",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C025",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu",
+   "seviye": "E",
+   "kaynak_id": [
+    "K5"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C026",
+   "ifade": "Vatican resmî föyü bu oturumda açılmadı",
+   "seviye": "E",
+   "kaynak_id": [
+    "K6"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C027",
+   "ifade": "Bibliyografya (K2/K3 refs) — erişilmedi",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2",
+    "K3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Delivery of the Keys — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Delivery_of_the_Keys",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "İtalyanca Vikipedi",
+   "belge": "Consegna delle chiavi (Perugino) — kaynaklı madde",
+   "url": "https://it.wikipedia.org/wiki/Consegna_delle_chiavi_(Perugino)",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML)",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikidata",
+   "belge": "Q2620028 (wbgetentities)",
+   "url": "https://www.wikidata.org/wiki/Q2620028",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K5",
+   "kurum": "Wikimedia Commons",
+   "belge": "Entrega de las llaves a San Pedro (Perugino).jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Entrega_de_las_llaves_a_San_Pedro_(Perugino).jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1600px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K6",
+   "kurum": "Vatican Museums",
+   "belge": "resmî Sistine föyü (hedef)",
+   "url": "https://www.museivaticani.va/",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "bu oturumda açılmadı",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "İsyancıların Cezası (Musa)",
+   "sanatci": "Botticelli",
+   "kurum": "Sistine Şapeli (karşı duvar)",
+   "mufredat_ici": false,
+   "gerekce": "Pendant: otorite temeli ↔ karşı gelene ceza.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "eser": "Sposalizio della Vergine",
+   "sanatci": "Raphael",
+   "kurum": "Brera, Milano",
+   "mufredat_ici": false,
+   "gerekce": "Perugino tapınak formülünün öğrenci yeniden kullanımı.",
+   "kanit": [
+    "C017"
+   ]
+  },
+  {
+   "eser": "Tempietto",
+   "sanatci": "Bramante",
+   "kurum": "San Pietro in Montorio, Roma",
+   "mufredat_ici": false,
+   "gerekce": "Perugino tapınağının mimariye yansıması.",
+   "kanit": [
+    "C017"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Tamam — kaynaklar yeniden açılıp iddialarla karşılaştırıldı (KALITE_KONTROL.md)",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "data tarih → 1481–1482 (K2/K3); WD 1480'ler.",
+  "Boyut 335×550 K3/K4 uyumlu; Vatican föyü teyidi (C026 E).",
+  "Müze alanı: \"Sistine Şapeli, Vatikan — kuzey duvarı\" (K2/K3).",
+  "Otoportre kimliği D; conclave efsanesi B (belgeli).",
+  "Görsel teyit bu oturumda yapılamadı (C025) — insan editör zorunlu."
+ ]
+}

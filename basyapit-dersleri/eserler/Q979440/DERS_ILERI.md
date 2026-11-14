@@ -1,0 +1,100 @@
+# MÜJDE (TRİPTİK) — İleri Ders (20 dakika)
+
+**Eser:** Simone Martini ve Lippo Memmi, *Müjde (Triptik)*, 1333 · Uffizi, Floransa [C002][C003][C008]
+
+## 1. Kimlik, imza ve yöntem
+
+Bu dersin nesnesi, imzalı ve tarihli bir Orta Çağ başyapıtıdır: SYMON MARTINI ET LIPPUS MEMMIS DE SENIS ME PINCXERUNT ANNO DOMINI MCCCXXXIII — "Sieneli Simone Martini ve Lippo Memmi beni 1333 yılında yaptı" [C003]. Yazıt özgündür; Uffizi bunu teknik föyünde transkribe eder [C003]. İmza, iki ustanın ortak atölyesini ve kayınbiraderlik bağını belgeler [C002]. Teknik föy ahşap üzerine tempera ve altın zemin verir; orta panel 184×168 cm, envanter 1890/451–453, salon A5'tir [C004][C005][C007][C008]. Bütün triptiğin boyutları ise kaynaklar arası uzlaşmaz: WD 265×305 ve yan paneller 48 cm verir, resmî föy yalnız 184×168'i belgeler (belirsiz; insan teyidi gerekli) [C006]. Yöntemsel olarak bu eser, birincil müze kaydının erişilebildiği ender Orta Çağ örneklerindendir: kimlik çekirdeği A düzeyindedir [C001][C003][C005]. Buna karşılık üslup ve atıf yorumları B/D düzeyinde kalır; ders, bu katman ayrımını açık tutar. Orijinal bağlam Siena Katedrali transepti, St. Ansanus sunağıdır [C009]; 1799'da Leopold takasıyla Floransa'ya taşınmıştır [C011]. Çerçeve tarihi (Camporegio oyması, Memmi yaldızı, 1420 onarımı, 19. yy değişimi) eserin maddi biyografisini verir [C012].
+
+Yöntemsel not: bu dosyada birincil kayıt (K1) ile ikincil (K2) ve yardımcı (K3) katmanları ayrı tutuldu. K1'in teknik föyü ham HTML'den doğrulandı; boyut ve envanter doğrudan okundu [C005][C007]. K2'nin anlatısal zenginliği (döngü, çerçeve tarihi, Kuzey üslup) B düzeyinde kullanıldı [C010][C012][C027]. K3 yalnız çapraz kontrol içindir; tek başına iddia temeli yapılmadı (belirsiz) [C006]. Görsel (K4) tam kare ve iki kırpımla incelendi; yazıt ve dal doğrulandı [C021][C020]. Bu katman disiplini, dersin akademik omurgasıdır (yorum).
+
+## 2. Siena döngüsü ve uluslararası Gotik
+
+Müjde, tek başına bir resim değil, bir programın parçasıdır: 1330–1350 arasında Siena'nın koruyucu azizlerine adalı dört sunaklık döngü [C010]. Ambrogio Lorenzetti'nin Tapınakta Sunum'u (1342), Pietro Lorenzetti'nin Meryem'in Doğumu (1342) ve Bulgarini'nin sökülmüş Doğum'u (1351), Meryem'in Hayatı'nı tamamlar; Duccio'nun Maestà'sı taçtır [C010]. Bu program, şehrin kutsal kimliğini kurar: Meryem, Siena'nın koruyucu annesidir; sunaklar, bu himayenin görsel garantileridir (yorum). Malzeme zenginliği — lapis lazuli, yoğun yaldız, pahalı lak — komünal prestijin maddi ifadesidir [C013]. İkinci bağlam uluslararasıdır: Martini'nin "Kuzey" üslubu, çağdaş İtalya'da benzersizdir; Fransız minyatürleri ve Alman/İngiliz resmiyle akrabadır [C027]. Bu dil, Avignon papalık sarayına davet edilmesini açıklar: bölge Gotik kültürü, Giotto'nun klasik tavrına ilgi duymaz [C027]. Petrarch dostluğu ve Anjou müşterileri, Martini'nin saray-sanatçı profilini tamamlar [C028]. Seminer sorusu: bir eser, hem yerel bir komün programının hem uluslararası bir saray dilinin parçası olabilir mi? Müjde, bu ikiliğin en güçlü örneklerindendir (yorum).
+
+Programın teolojik mantığı şudur: Meryem'in hayatı, şehrin kutsal tarihini kurar; müjde, bu tarihin başlangıç anıdır (yorum). Ansanus sunağında müjde, şehrin koruyucusuyla Meryem'i yan yana getirir: yerel martir, evrensel anne [C009][C017]. Döngünün bütünlüğü, tek tek panellerden büyüktür; bugün paneller müzelere dağılmıştır ve program yalnızca zihinsel olarak yeniden kurulabilir (yorum) [C010]. Seminer sorusu: dağılmış bir programı "yeniden birleştirmek", küratöryel bir sorumluluk mudur? Bu ders, programı bu yüzden anlatır (yorum).
+
+Uluslararası Gotik kavramı burada yöntemsel bir araçtır: üslubu, tek bir ulusal okuldan çok, saraylar ve ticaret yolları üzerinden dolaşan bir dil olarak görmeyi sağlar (yorum). Martini'nin Avignon daveti, bu dolaşımın belgeli halkasıdır [C027]. Petrarch dostluğu ise sanatçının entelektüel çevresini gösterir: ressam, şairle aynı saray kültürünü paylaşır [C028]. Seminer sorusu: bir üslup, "uluslararası" olduğunda yerel bağlamını kaybeder mi? Müjde, ikisini birden taşır: Siena sunağı + saray dili (yorum) [C009][C027].
+
+## 3. İmza, atıf ve işbölümü tartışması
+
+İmza özgündür ama işbölümü şeffaf değildir (tartışma) [C014]. Uffizi, eleştirmenlerin tasarım ve yürütmenin çoğunu Simone'ye verme eğilimini kaydeder (tartışma) [C014]. K2'deki hipotez: orta panel Martini, yan azizler ve tondolar Memmi [C014]. Bu bir hipotezdir, belge değil (tartışma) [C014]. Yöntemsel ders: imza, ortak üretimi belgeler ama paylaşımda bulunmaz; "usta" kavramı, atölye gerçekliğiyle gerilim içindedir. Orta Çağ atölyesi, modern "tek deha" modeline direnir: iki ad, bir nesne, bir aile bağı [C002]. Kadın aziz kimliği de benzer bir belirsizlik taşır: Maxima (Ansanus'un annesi) ya da Margaret (tartışma) [C015]; ayağı dibindeki "Judith" yazıtı yanlıştır ve Uffizi bunu açıkça kabul eder [C016]. Yani eserin kendi yazıtları bile her zaman güvenilir değildir: imza yazıtı özgün ve doğru, aziz yazıtı hatalı [C003][C016]. Seminer sorusu: bir eserin iç kanıtı (yazıt) ile dış kanıtı (müze kaydı) çeliştiğinde hangisi öncelenir? Burada müze kaydı, hatalı yazıtı düzeltir; ama imza yazıtını da o doğrular. Kanıt hiyerarşisi, bağlama göre işler (yorum).
+
+Atıf tartışmasının yöntemsel sonucu şudur: üslup analizi, imzanın söylemediğini söylemeye çalışır; ama üslup, atölye içinde dolaşan bir dildir, kişisel bir mülk değil (yorum). Memmi'nin yan panellerini "daha zayıf" saymak, modern deha önyargısı olabilir (yorum). K1'in "çoğunu Simone'ye verme eğilimi" notu, bu önyargının kurumsal izidir (yorum) [C014]. Seminer, imzayı bir "ortak üretim belgesi" olarak okumayı önerir: iki ad, bir aile, bir atölye, bir nesne [C002].
+
+## 4. Anın biçimi: jest, yazıt, zaman
+
+Müjde, bir "şimdi"yi biçimlendirir: Cebrail'in ani girişi dalgalı pelerin ve açık kanatlarla, Meryem'in irkilmesi geri çekilen beden ve pelerinine sarınmayla verilir [C024]. Bu, anlatısal resmin zaman sorusuna Gotik bir yanıttır: an, jestte dondurulur. Kitap, zamansal bir katman daha ekler: Meryem okuyordu; haber, okumayı keser [C024][C025]. Kitap, aynı zamanda peygamberlik geleneğine işaret eder: söz, yazıdan bedene geçer (yorum). Kabartma yazıt, zamanı mekâna yayar: AVE GRATIA PLENA DOMINUS TECUM harfleri, Cebrail'in ağzından Meryem'e doğru bir yol izler [C021]. Söz, havada bir nesne gibi durur; izleyici, selamın "yolculuğunu" görür. Güvercin bu yola dikey bir eksen ekler: yukarıdan aşağı, mandorladan kulağa [C022][C023]. Böylece kompozisyon iki vektörün kesişimidir: yatay söz (melek→Meryem), dikey ruh (gök→beden) (yorum). Mekân tanımsızdır ama döşeme, taht, kumaşlar gerçekçidir [C025]. Bu gerçekçilik, haberi tarihsel kılar: kutsal olay, varlıklı bir 14. yüzyıl odasında yaşanır [C025]. Seminer sorusu: bir "an", jest ve yazıtla ne kadar süreklilik kazanır? Müjde, anı bir olay örgüsüne dönüştürür (yorum).
+
+Zamanın üç katmanı vardır: (1) okumanın zamanı — kitap, Meryem'in önceki anını taşır; (2) haberin zamanı — yazıt ve jest, şimdiyi kurar; (3) bekleyişin zamanı — peygamber tomarları, geçmişi geleceğe bağlar [C024][C021][C018]. Bu üç katman, tek yüzeyde eşzamanlıdır: resim, zamanı mekâna yayar (yorum). Sürekli anlatı (continuous narrative) geleneğinin Gotik bir biçimidir bu: aynı anda, önce-şimdi-sonra (yorum). Seminer sorusu: bir yüzey, kaç zamanı taşıyabilir? Müjde, üçünü taşır ve izleyiciye dördüncüyü — okuma zamanını — armağan eder (yorum).
+
+Jestlerin okunması, beden dili tarihinin bir parçasıdır: Orta Çağ jest repertuvarı, retorik el hareketlerinden beslenir (yorum). Cebrail'in selam eli, bir hitabet jestidir; Meryem'in göğsüne çekilen eli, kabul ile ürperme arası bir jesttir [C020][C024]. Bu jestler, izleyiciye duyguyu "okutur": resim, bir duygu alfabesi gibi çalışır (yorum). Seminer sorusu: jest, ne zaman "doğal", ne zaman "kodlanmış"tır? Burada ikisi iç içedir: kodlanmış retorik, doğal irkilme gibi görünür (yorum).
+
+## 5. İkonografi: sözün görselleşmesi
+
+Müjde ikonografisinin çekirdeği Luka İncili'dir: meleğin selamı ve Meryem'in kabulü [C019]. Ama resim, selamı harfe çevirerek ikonografiye bir katman ekler: AVE GRATIA PLENA DOMINUS TECUM, kabartma olarak görünür [C021]. Bu, Orta Çağ resminde nadir bir "ses göstergesi"dir: söz, imgelenmez, yazılır; ama yazı, imgelenmiş bir ses gibi yol alır (yorum). Zeytin dalı barışı, zambak saflığı ve Tanrı Oğlu'nu simgeler [C019][C026]. Güvercinin zambak vazosuyla hizalanması, iki simgeyi tek eksende bağlar: ruh ve saflık, aynı dikeyde buluşur [C022]. K2'nin "sağ kulak" ayrıntısı, enkarnasyonun Gotik formülünü verir: söz, kulaktan bedene girer [C023]. Bu formül, teolojik bir iddiayı (bakireden doğuş) görsel bir mantığa çevirir (yorum). Dört peygamber tondosu — Yeremya, Hezekiel, Yeşaya, Daniel — tomarlarıyla enkarnasyonu önceler: Eski Ahit, Yeni Ahit'i bekler [C018]. Yan azizler ise eseri Siena'ya bağlar: Ansanus, şehrin koruyucusu, sancakta şehir renklerini taşır [C017]. Kadın aziz (Maxima/Margaret, belirsiz) bu yerel bağın ikinci halkasıdır (tartışma) [C015]. İkonografi böylece üç katmanlıdır: evrensel (enkarnasyon), yerel (Siena), kişisel (Meryem'in bedeni) (yorum).
+
+Sözün görselleşmesi, ikonografiye bir "medya katmanı" ekler: yazı, burada imge değil ama imge gibi davranır — yol alır, yükselir, ışık yakalar [C021]. Bu, harfin ikonikleşmesidir: harf, temsil ettiği sesi taşımakla kalmaz, sesin hareketini de temsil eder (yorum). Orta Çağ yazı kültüründe kabartma yazıt, litürjik sesin nesneleşmesidir (yorum). Seminer sorusu: bir yazıt, ne zaman "resim" olur? Burada yazıt, kompozisyonun taşıyıcı öğesidir: onsuz iki figür arasındaki boşluk anlamını yitirir (yorum) [C021][C022].
+
+## 6. Üslup: Kuzey çizgisi, İtalyan mekânı
+
+Martini'nin çizgisi, İtalyan hacim geleneğinden ayrılır: zarif, akıcı, süslemeci bir hat [C027][C029]. K2, eseri çağdaş İtalya'da benzersiz bulur; Fransız minyatürleri ve Kuzey resmiyle karşılaştırır [C027]. Bu "Kuzey" dil, Avignon davetinin nedenidir [C027]. Ama eser, İtalyan gerçekçiliğini de taşır: perspektifli döşeme, oymalı taht, jest nüansları [C025][C029]. K2 bunu Bizans iki boyutluluğundan "önemli bir kopuş" olarak okur [C029]. Tartar kumaşı deseni ve yaldızlı tüyler, yüzey zenginliğinin zirvesidir [C033]; bu desenler, doğu ticaret yollarının malzeme kültürüne işaret eder (yorum). Üslup böylece melezdir: Kuzey çizgisi + İtalyan mekân iması + doğu kumaş deseni (yorum). Seminer sorusu: "uluslararası Gotik" bir üslup birliği mi, yoksa bir dolaşım ağı mı? Müjde, ikincisini destekler: desenler, davetler, minyatürler, atölye bağları — bir ağ, bir okul değil (yorum). Perspektif burada matematiksel değil sezgiseldir; döşeme derinlik ima eder ama altın zemin onu askıya alır (yorum). Bu askıya alma, Gotik "öte" mekânının bilinçli bir aracı olarak okunabilir (yorum).
+
+Desen kültürü ayrıca ticaret tarihine açılır: "tartar kumaşı" deseni, doğu ipeklerinin İtalyan resmindeki yansımasıdır [C033]. Bu desenler, resmin yalnızca üslup değil, malzeme ağı olduğunu gösterir: kumaş, pigment, yaldız, minyatür — hepsi dolaşım nesneleri (yorum). K2'nin Kuzey karşılaştırması da bir dolaşım okumasıdır: Fransız minyatürleri, saray ağları üzerinden İtalya'ya ulaşır [C027]. Seminer sorusu: üslup, bir "okul" mu yoksa bir "ağ" mı? Müjde, ağ modelini güçlendirir (yorum).
+
+Çizgi ile hacim karşıtlığı, sanat tarihinin klasik ikiliğidir; ama bu ders, ikiliği bir "ilerleme" şemasına bağlamaz (yorum). Martini'nin çizgisi, hacimden yoksun değil, hacmi farklı kurar: kumaş kıvrımları ve jest yayları, bedeni çizgiyle modeller [C020][C024]. K2'nin Bizans karşıtlığı da bu farkı vurgular: iki boyutluluk değil, "farklı bir üç boyutluluk" (yorum) [C029]. Seminer, çizgi/hacim ikiliğini bir değer sıralaması olarak değil, bir dil çeşitliliği olarak okur (yorum).
+
+## 7. Felsefi ve estetik analiz (açıkça yorum)
+
+**Sözün etiği (yorum).** Bir sesi harfe çevirmek, onu nesneleştirmektir; ama bu nesne, izleyiciyi konuşmaya çağırır: okuyan, selamı tekrarlar. Müjde, izleyiciyi pasif seyirciden aktif muhataba dönüştürür (yorum). Bu, dilin performatif gücünün görsel bir sezgisidir: yazıt, bir temsil değil, bir eylemdir — selamlama eylemi (yorum). Seminer sorusu: bir resim, izleyicisine "söz verebilir" mi? Burada yazıt, Meryem'e yönelen selamı izleyiciye de açar; izleyici, selamın tanığı değil, taşıyıcısı olur (yorum).
+
+**İrkilmenin estetiği (yorum).** Meryem'in geri çekilişi, korku ile kabulün eşiğidir. Estetik olarak bu jest, "zarif direnç"tir: beden geri çekilir ama yüz dinler. Bu gerilim, kutsal haberin insani ağırlığını taşır (yorum). Kantçı bir çerçevede, yüce olanın karşısında öznenin ilk ürperişi olarak okunabilir; ama bu anakronik bir okumadır ve yalnızca yorum olarak sunulur (yorum). Tarihsel olarak daha güvenli okuma, affective dindarlıktır: izleyici, Meryem'in irkilmesine empatiyle katılır (yorum).
+
+**Altın ve ışık (yorum).** Altın zemin, ışığı temsil etmez; ışığın kendisidir. Bu, Gotik metafiziğin maddeye yüklediği anlamdır: yaldız, kutsal ışığın maddi taşıyıcısı (yorum). Gerçekçi döşeme ile tanımsız altın, "burası" ile "öte"yi aynı yüzeyde tutar; estetik deneyim, bu ikilikte salınır (yorum).
+
+**Tanıklık ve muhataplık (yorum).** Yazıt, izleyiciyi selamın muhatabı yapar: Meryem'e yönelen söz, izleyicinin gözünden geçer. Bu, resmin izleyiciyi "içeri" almasıdır: seyirci, tanık değil, taşıyıcı olur (yorum). Benjamin'in "aura" kavramıyla anakronik bir karşılaştırma kurulabilir: sunak nesnesinin kült değeri, müzede sergi değerine dönüşür; ama yazıt, kültün sesini korur (yorum). Bu okuma kurum dışıdır; yalnızca felsefi yorum olarak sunulur ve editör onayı gerektirir (yorum).
+
+## 8. Karşılaştırmalı metodoloji
+
+Karşılaştırma üç eksende kurulur. (1) Nesil ekseni: Duccio Maestà (1311) → Martini/Memmi (1333) → Lorenzetti kardeşler (1342): Siena geleneğinin iç dönüşümü [C010]. (2) Coğrafya ekseni: Giotto'nun Floransa hacim dili ↔ Martini'nin Kuzey çizgisi: İtalyan Gotik'inin iki kanadı [C027]. (3) Malzeme ekseni: aynı döngünün lapis lazuli/yaldız ekonomisi: prestijin maddi dili [C013]. Metodolojik uyarı: karşılaştırma, "ilerleme" anlatısına direnmelidir; Martini, Giotto'nun "öncüsü" ya da "ardılı" değil, farklı bir dilin ustasıdır (yorum). K2'nin Avignon notu bunu destekler: bölge, Giotto diline ilgi duymaz; tercih, kültüreldir, evrimsel değil [C027]. Seminer sorusu: sanat tarihi, "üslup coğrafyası"nı nasıl haritalar? Müjde, bu haritanın Kuzey-Güney eksenini görünür kılar (yorum). Karşılaştırmanın kanıt sınırı: üslup akrabalıkları K2'nin yorumudur (B); doğrudan etki belgesi yoktur [C027].
+
+Karşılaştırmanın kanıt disiplini: her karşılaştırma cümlesi, ya bir kaynak iddiasına (B) ya da açık bir yoruma dayanmalıdır. "Martini, Giotto'dan etkilenmedi" demek, belge yokluğundan çıkarım yapılamayacağı için yanlıştır; "etki belgesi yok, akrabalık yorumu var" demek doğrudur [C027]. Bu ders, karşılaştırmayı bir "ilişki envanteri" olarak kurar: nesil, coğrafya, malzeme — üç eksen, üç kanıt türü [C010][C027][C013]. Seminer sorusu: karşılaştırma, ne zaman "tarih" olur, ne zaman "yorum" kalır? Cevap: belge varsa tarih, yoksa yorum (yorum).
+
+Malzeme ekseni, karşılaştırmanın somut tabanıdır: aynı döngünün panelleri, aynı lapis/yaldız ekonomisini paylaşır [C013]. Bu, üslup farklarının altında ortak bir maddi kültür olduğunu gösterir: Siena'nın prestij bütçesi, farklı dilleri finanse eder (yorum). Seminer sorusu: malzeme, üsluptan daha mı "nesnel" bir karşılaştırma ölçütüdür? Fatura ve pigment analizi, üslup yorumundan daha güçlü kanıt sağlar; ama bu dosyada pigment analizi yoktur (belirsiz) [C013].
+
+## 9. Akademik tartışmaların envanteri
+
+1. **İşbölümü (D):** imza iki ad verir; paylaşımda bulunmaz. Hipotez: orta=Martini, yanlar+tondolar=Memmi; eleştirmenler çoğunu Simone'ye verir (tartışma) [C014]. Kanıt: üslup analizi; belge yok (tartışma).
+2. **Kadın aziz kimliği (D):** Maxima mı Margaret mı? Uffizi her iki adı da kullanır; "Judith" yazıtı hatalı (tartışma) [C015][C016]. Kanıt: yazıt çelişkisi; çözüm yok (tartışma).
+3. **Boyut uzlaşmazlığı (E):** resmî 184×168, WD 265×305/48/158 verir; orta/bütün/yan ayrımı net değil (belirsiz) [C006].
+4. **Kuzey üslup yorumu (B):** Fransız/Kuzey akrabalığı K2'nin karşılaştırmalı okuması; doğrudan etki belgesi değil [C027].
+5. **Sağ kulak/sekiz melek (B):** K2'nin ikonografik ayrıntısı; görselden sayı teyidi yapılamadı [C023].
+6. **Erişilmeyen bibliyografya:** Cricco & Di Teodoro 2004, Fossi 2004, Smarthistory 2011 açılmadı; insan editör teyidi gerekli [C032].
+
+Bu envanter, dersin kanıt sınırını şeffaf kılar: kimlik çekirdeği A, üslup/atıf katmanı B/D, boyut E. Seminer, bu katmanları karıştırmamayı öğrenir (yorum).
+
+Envanterin eksik halkaları: çerçeve onarımının (1420) üsluba etkisi belgelenmedi; 1799 takasının koşulları (Giordano tuvali seçimi) K2'de özet; tondo yazıtlarının tam transkripsiyonu görselden yapılamadı [C012][C011][C018]. Bu eksikler, insan editörün birincil arşiv (Opera del Duomo, Uffizi envanter defterleri) kontrolüyle kapanabilir. Seminer, bu eksikleri "araştırma önerisi" olarak listeler: her E/D maddesi, bir arşiv sorusuna dönüşür (yorum).
+
+Kanıt envanterinin yöntemsel dersi: A düzeyi (kimlik, yazıt, görsel) dersin omurgasıdır; B düzeyi (döngü, üslup, taşınma) anlatıyı kurar; D/E düzeyi (işbölümü, aziz kimliği, boyut) seminerin soru alanıdır (tartışma/belirsiz) [C003][C010][C014][C006]. Bu üç düzeyi karıştırmamak, akademik dürüstlüğün asgari koşuludur (yorum). Her ders cümlesi, hangi düzeyde konuştuğunu bilmelidir (yorum).
+
+## 10. Küratöryel anlatı — birleştirici okuma
+
+İyi bir küratöryel anlatı, eseri üç bağlama oturtur: sunak (Siena döngüsü), saray (Avignon/Anjou), müze (Uffizi A5) [C009][C028][C008]. Sunakta eser, komünün kutsal programının halkasıydı [C010]; sarayda, uluslararası dilin vitriniydi [C027]; müzede, "başyapıt" olarak estetik seyirin nesnesidir [C029]. Bu üç bağlam, eserin anlamını katmanlar: ibadet, prestij, estetik (yorum). 1799 takası, bu katmanlaşmanın maddi eşiğidir: kutsal nesne, koleksiyon nesnesine dönüşür [C011]. Bugünün izleyicisi için yazıt hâlâ çalışır: selam okunur, jest empati kurar, altın ışık taşır [C021][C024]. Küratöryel etiket, belirsizlikleri de taşımalıdır: kadın aziz adı, işbölümü, boyut farkı — açık notlarla (tartışma/belirsiz) [C015][C014][C006]. Seminerin kapanış sorusu: bir başyapıt, bağlamından kopunca ne kaybeder, ne kazanır? Müjde, sunağını kaybeder ama sesini korur: yazıt, hâlâ selamlar (yorum).
+
+Müze salonu A5, eseri Lorenzetti kardeşlerle yan yana getirir: bu, küratöryel olarak Siena döngüsünün kısmi yeniden kurulumudur [C008][C010]. Salon adı, bir "okul" anlatısı taşır; ama Müjde'nin Kuzey dili, bu okul anlatısını aşar [C027]. İyi etiket, bu gerilimi gösterir: yerel program + uluslararası dil. Seminerin kapanış görevi: A5 salonu için, belirsizlik notlu bir duvar metni yazmak; metin, hem sunağı hem ağı hem de yazıtın sesini anlatmalıdır (yorum) [C015][C006].
+
+## 11. Seminer etkinlikleri
+
+1. **Kanıt katmanı haritası:** her iddiayı A/B/D/E olarak sınıflayın; KANIT envanteriyle karşılaştırın (tartışma/belirsiz) [C006][C014].
+2. **Yazıt analizi:** AVE GRATIA PLENA'nın yönünü, kabartmasını, izleyici etkisini tartışın [C021].
+3. **Atıf semineri:** imza ↔ işbölümü gerilimini; "usta" kavramını sorgulayın (tartışma) [C003][C014].
+4. **Üslup coğrafyası:** Kuzey/Güney eksenini haritalayın; etki ↔ akrabalık ayrımını koruyun [C027].
+5. **Küratöryel etiket yazımı:** belirsizlik notlu 200 kelimelik etiket tasarlayın [C015][C006].
+6. **Arşiv sorusu üretimi:** her D/E maddesini bir birincil arşiv sorusuna çevirin (tartışma/belirsiz) [C006][C014][C015]; hangi defter/kayıt cevaplar?
+
+## 12. Kaynakça
+
+- (K1) Uffizi Galleries, resmî eser kaydı (birincil; teknik föy + açıklama).
+- (K2) İngilizce Vikipedi, "Annunciation with Saint Margaret and Saint Ansanus" (ikincil; Cricco & Di Teodoro 2004, Fossi 2004, Smarthistory 2011'e atıflı — erişilmedi).
+- (K3) Wikidata Q979440 (yardımcı).
+- (K4) Wikimedia Commons, tam kare + kırpımlar (birincil görsel; PD).

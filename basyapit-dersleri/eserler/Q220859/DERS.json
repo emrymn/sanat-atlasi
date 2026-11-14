@@ -1,0 +1,452 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q220859",
+ "sanatci_id": "jan-van-eyck",
+ "baslik": "Arnolfini Portresi",
+ "ozgun_baslik": "The Arnolfini Portrait",
+ "kunye": {
+  "sanatci": "Jan van Eyck",
+  "sanatci_yasam": "c. 1390–1441",
+  "tarih": "1434 (imzalı/tarihli)",
+  "tarih_belirsizlik": "imza \"Johannes de eyck fuit hic 1434\"",
+  "teknik": "Yağlıboya, meşe pano (3 dikey tahta)",
+  "boyut_cm": {
+   "yukseklik": 82.2,
+   "genislik": 60
+  },
+  "muze": "National Gallery, Londra",
+  "envanter": "NG186",
+  "edinim": "1842'de 600 Guineas'a satın alındı; ilk Netherlandish resim",
+  "konum": "Gallery C",
+  "telif_durumu": "Kamu malı (van Eyck ö.1441); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Van_Eyck_-_Arnolfini_Portrait.jpg",
+  "kaynak": "Wikimedia Commons",
+  "lisans": "Public Domain (van Eyck ö.1441)",
+  "dogrulama": {
+   "yontem": "1200px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1200px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C024); kompozisyon NG (A) + enwiki (B) metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 419
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1330
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2848
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-teknik-devrim-ve-görgü-tanıklığı"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-imza-ayna-ve-tanıklık"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-gerçekçilik-ve-tutarsızlık-kurgulanmış-oda"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-yorum-tartışması-evlilik-nişan-memorial-yetki"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-teknik-ve-malzeme-glazürün-optiği"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Portrenin kimliğini (van Eyck, 1434, yağlıboya meşe, NG) birincil föyle doğrular.",
+  "İmza/ayna/tanıklık temasını analiz eder.",
+  "Glazür + ıslak-üstüne-ıslak tekniğinin gerçekçiliğini açıklar.",
+  "Yorum (evlilik/nişan/memorial) ve sitter tartışmalarını kanıt katmanlarıyla değerlendirir.",
+  "Gizli sembolizm ve tüccar öz-temsilini yorumlar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "çift portre",
+   "tanim": "İki kişiyi birlikte gösteren portre; burada tam boy Arnolfini ve eşi.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "ad": "dışbükey ayna",
+   "tanim": "Tümsek ayna; geniş açıyı yansıtır, resim mekânını genişletir.",
+   "kanit": [
+    "C007",
+    "C011"
+   ]
+  },
+  {
+   "ad": "glazür",
+   "tanim": "İnce yarı saydam boya katmanı; ton/renk yoğunluğu ve gerçekçilik verir.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "ad": "gizli sembolizm",
+   "tanim": "Sıradan nesnelerin dinsel/toplumsal anlam taşıması (Panofsky); tartışmalı.",
+   "kanit": [
+    "C022"
+   ]
+  },
+  {
+   "ad": "Netherlandish",
+   "tanim": "Kuzey Avrupa (Flaman/Hollanda) resim geleneği; yağlıboya gerçekçilik.",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: The Arnolfini Portrait; Jan van Eyck; 1434.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Teknik: yağlıboya, ahşap (muhtemelen meşe); 82.2×60 cm.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "National Gallery, Londra; NG186; Gallery C; 1842'de 600 Guineas'a satın alındı; ilk Netherlandish resim.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "İmza/tarih/yazıt: \"Johannes de eyck fuit hic 1434\" (\"Jan van Eyck buradaydı 1434\"), aynanın üstünde.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Muhtemelen Giovanni di Nicolao di Arnolfini (Bruges'de çalışan İtalyan tüccar) ve eşi.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Oda tutarsızlıkları: avize için yer yok, şömine izi yok; nesneler servet/statü ilan eder (aristokrasiyi taklit etmeden).",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Dışbükey ayna odaya giren iki adamı yansıtır (biri kolunu kaldırır); imza aynanın üstünde.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Batı Avrupa'da yağlıboyanın gerçekçi betim gücünü gösteren en erken resimlerden.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "Tam boy çift portre; başlık varyantları (Wedding/Marriage); Bruges konutu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "3 dikey tahtalı meşe pano; panel 84.5×62.5 cm.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "En özgün/karmaşık resimlerden: ikonografi, geometrik ortogonal perspektif, aynayla resim mekânının genişletilmesi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "Gombrich: \"Donatello/Masaccio kadar yeni ve devrimci... sanatçı ilk kez tam anlamıyla mükemmel görgü tanığı\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Ghent Altarpiece ile birlikte, tempera değil yağlıboya yapılmış en eski çok ünlü pano resim.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Teknik: ince yarı saydam glazür katmanları; wet-in-wet (alla prima); uzun kuruma; doku; doğrudan/dağınık ışık.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "İki Giovanni kuzen (di Arrigo / di Nicolao), Lucca tüccarı, en az 1419'dan beri Bruges'de.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Pirinç avize büyük/gösterişli/pahalı; makara mekanizması yer yokluğundan atlanmış olabilir; ayna çerçevesinde cam arkası Passion sahneleri.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Köpek, bugün Affenpinscher olarak bilinen ırkın erken formu.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "İmza duvarda büyük harflerle (atasözü tarzı) boyanmış gibi; diğer van Eyck imzaları çerçevede trompe-l'œil.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C019",
+   "ifade": "Bibliyografya: Panofsky; Hall; Carroll; Gombrich — erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C020",
+   "ifade": "Yorum tartışması: Panofsky evlilik sözleşmesi ↔ Hall nişan ↔ Carroll yasal yetki/tüccar karakteri ↔ memorial portre (Costanza Trenta ö.1433; sönmüş mum, Passion sonrası sahneler, siyah giysi).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C021",
+   "ifade": "Sitter kimliği tartışması: hangi Giovanni (di Arrigo ↔ di Nicolao); kadın (eşi ↔ Costanza Trenta).",
+   "seviye": "D",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C022",
+   "ifade": "\"Gizli sembolizm\" (Panofsky): nesneler sembolik anlam taşıyıcısı; evlilik tezi tartışmalı ama sembolik analiz geniş kabul (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C023",
+   "ifade": "Aristokrasiyi taklit etmeden servet/statü: tüccar öz-temsili (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C024",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C025",
+   "ifade": "Görsel kamu malı (van Eyck ö.1441); Commons PD; geçici kopya .qwen/tmp/parti1/Q220859/.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C026",
+   "ifade": "Jan van Eyck c. 1390–1441 (WD yardımcı; yaygın kabul).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "National Gallery, London",
+   "belge": "resmî koleksiyon sayfası + katalog föyü \"The Arnolfini Portrait\"",
+   "url": "https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; ham HTML doğrulandı",
+   "tur": "birincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Arnolfini Portrait — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Arnolfini_Portrait",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML); refs erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikidata",
+   "belge": "Q220859 + Q102272 (van Eyck)",
+   "url": "https://www.wikidata.org/wiki/Q220859",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K4",
+   "kurum": "Wikimedia Commons",
+   "belge": "Van Eyck - Arnolfini Portrait.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Van_Eyck_-_Arnolfini_Portrait.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1200px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Mérode Triptiği",
+   "sanatci": "Robert Campin",
+   "mufredat_ici": true,
+   "gerekce": "Çağdaş Erken Netherlandish ev içi gerçekçilik + gizli sembolizm.",
+   "kanit": [
+    "C011",
+    "C022"
+   ]
+  },
+  {
+   "eser": "Ghent Altarpiece",
+   "sanatci": "Jan van Eyck",
+   "gerekce": "Aynı sanatçı; yağlıboya tekniğinin doruğu (1432).",
+   "kanit": [
+    "C013"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil National Gallery katalog föyü açıldı ve ham HTML doğrulandı (A); enwiki kaynaklı B; WD yardımcı; Commons indirildi ama incelenemedi (vision). Kompozisyon NG/enwiki metninden (data betimi yok). Yorum + sitter D. Kanıt zinciri KANIT §2.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Boyut 82.2×60 (NG K1 + WD); wiki panel 84.5×62.5 (çerçeve/panel farkı) — not.",
+  "İmza \"Johannes de eyck fuit hic 1434\" (K1); NG186; Gallery C; 1842/600 Guineas.",
+  "Sitter \"probably Giovanni di Nicolao\" (K1); hangi Giovanni + kadın kimliği D.",
+  "Yorum (evlilik/nişan/memorial/yasal yetki) D — uzman editör.",
+  "Görsel teyit bu oturumda yapılamadı (C024) — insan editör zorunlu."
+ ]
+}

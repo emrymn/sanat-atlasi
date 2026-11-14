@@ -1,0 +1,542 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3697588",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Eser kime atfedilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bramante (tartışmalı)"
+    },
+    {
+     "harf": "B",
+     "metin": "Leonardo"
+    },
+    {
+     "harf": "C",
+     "metin": "Raphael"
+    },
+    {
+     "harf": "D",
+     "metin": "Titian"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: attributed Bramante; debated.",
+   "yanlis_gerekceleri": {
+    "B": "Leonardo etkisi var ama atıf değil.",
+    "C": "Raphael değil.",
+    "D": "Titian değil."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eser hangi müzededir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Brera, Milano"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "Prado"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: Brera.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi değil.",
+    "C": "Louvre değil.",
+    "D": "Prado değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Teknik/destek (wiki)?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, pano"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera, tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: oil on panel.",
+   "yanlis_gerekceleri": {
+    "B": "Fresk değil.",
+    "C": "Tempera tuval değil (WD tempera der, fark).",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Sahne hangi an?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Flagellasyon öncesi sütuna bağlanma"
+    },
+    {
+     "harf": "B",
+     "metin": "Çarmıh"
+    },
+    {
+     "harf": "C",
+     "metin": "Doğum"
+    },
+    {
+     "harf": "D",
+     "metin": "Diriliş"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: tied to column before scourging.",
+   "yanlis_gerekceleri": {
+    "B": "Çarmıh değil.",
+    "C": "Doğum değil.",
+    "D": "Diriliş değil."
+   },
+   "kanit": [
+    "C010"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Mekân yöntemi hangi Bramante işiyle aynı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "San Satiro sahte korosu"
+    },
+    {
+     "harf": "B",
+     "metin": "Tempietto"
+    },
+    {
+     "harf": "C",
+     "metin": "St Peter's"
+    },
+    {
+     "harf": "D",
+     "metin": "Belvedere"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: same as San Satiro fake choir.",
+   "yanlis_gerekceleri": {
+    "B": "Tempietto değil.",
+    "C": "St Peter's değil.",
+    "D": "Belvedere değil."
+   },
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Pencere kenarındaki altın nesne?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Pyx (Ökaristi)"
+    },
+    {
+     "harf": "B",
+     "metin": "Taç"
+    },
+    {
+     "harf": "C",
+     "metin": "Kupa"
+    },
+    {
+     "harf": "D",
+     "metin": "Kitap"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: golden pyx, Eucharist.",
+   "yanlis_gerekceleri": {
+    "B": "Taç değil.",
+    "C": "Kupa değil.",
+    "D": "Kitap değil."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Flaman etkisi hangisi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Çift ışık + sfumato + detay"
+    },
+    {
+     "harf": "B",
+     "metin": "Altın zemin"
+    },
+    {
+     "harf": "C",
+     "metin": "Düz figür"
+    },
+    {
+     "harf": "D",
+     "metin": "Gotik kemer"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: double lighting, fading view, detail.",
+   "yanlis_gerekceleri": {
+    "B": "Altın zemin Gotik.",
+    "C": "Düz figür değil.",
+    "D": "Gotik değil."
+   },
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Leonardo etkisi hangisi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İfade yüzü + aşırı gerçekçilik"
+    },
+    {
+     "harf": "B",
+     "metin": "Perspektif"
+    },
+    {
+     "harf": "C",
+     "metin": "Sfumato yalnız"
+    },
+    {
+     "harf": "D",
+     "metin": "Renk"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: expressive face, realism (tears, flesh).",
+   "yanlis_gerekceleri": {
+    "B": "Perspektif Bramante.",
+    "C": "Sfumato Flaman.",
+    "D": "Renk değil."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Eser Brera'ya ne zaman geldi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1915"
+    },
+    {
+     "harf": "B",
+     "metin": "1490"
+    },
+    {
+     "harf": "C",
+     "metin": "1824"
+    },
+    {
+     "harf": "D",
+     "metin": "2017"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: since 1915 deposit.",
+   "yanlis_gerekceleri": {
+    "B": "1490 tarih.",
+    "C": "1824 Mantegna.",
+    "D": "2017 hasar."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "2017'de ne oldu?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Isıtma arızası → hasar + restorasyon"
+    },
+    {
+     "harf": "B",
+     "metin": "Satış"
+    },
+    {
+     "harf": "C",
+     "metin": "Yangın"
+    },
+    {
+     "harf": "D",
+     "metin": "Taşınma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2/K3: heating malfunction damage.",
+   "yanlis_gerekceleri": {
+    "B": "Satış değil.",
+    "C": "Yangın değil (1771 Brera başka).",
+    "D": "Taşınma değil."
+   },
+   "kanit": [
+    "C009"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Eser c.1490 tarihli bir yağlıboya-panodur.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Bramante'ye atfedilen bilinen tek pano resmidir.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Atıf evrensel olarak kabul edilir.",
+   "dogru": false,
+   "aciklama": "Yanlış; Suida Bramantino der (tartışma).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Mekân, San Satiro sahte korosuyla aynı yöntemle kurulur.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Pencere kenarındaki pyx, Ökaristi'ye göndermedir.",
+   "dogru": true,
+   "aciklama": "Doğru (K2/K3).",
+   "kanit": [
+    "C015"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Yakın kadraj + ip + gözyaşı ile \"acı estetiği\"ni analiz edin.",
+   "beklenen_ogeler": [
+    "Yakın kadraj",
+    "Psikolojik gerilim",
+    "Gerçekçilik (Leonardo)",
+    "Compassio (yorum)"
+   ],
+   "kanit": [
+    "C010",
+    "C014"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "San Satiro yönteminin resme aktarımını tartışın.",
+   "beklenen_ogeler": [
+    "Sınırlar ötesi",
+    "Derinlik ima",
+    "Mimarın dili",
+    "İllüzyon (yorum)"
+   ],
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Üç etkiyi (Urbino/Flaman/Leonardo) sentez olarak değerlendirin.",
+   "beklenen_ogeler": [
+    "Klasik modellaj",
+    "Çift ışık/sfumato",
+    "İfade/gerçekçilik",
+    "Kavşak üslup (yorum)"
+   ],
+   "kanit": [
+    "C012",
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Pyx + ışık ile \"teolojik optik\"i çözümleyin.",
+   "beklenen_ogeler": [
+    "Pyx=Ökaristi",
+    "Kurban anlamı",
+    "Işık=kutsal",
+    "Nesne=anahtar (yorum)"
+   ],
+   "kanit": [
+    "C015",
+    "C013"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Atıf tartışmasını (Bramante/Bramantino) üslupla sınayın.",
+   "beklenen_ogeler": [
+    "Suida",
+    "Nadirlik",
+    "Üslup kanıtı (San Satiro)",
+    "Kimlik D (tartışma)"
+   ],
+   "kanit": [
+    "C002",
+    "C011"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Boyundaki ipi ve sıkılan eti bulun.",
+   "ipucu": "Aşırı gerçekçilik.",
+   "kanit": [
+    "C010",
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Altın pyx'i bulun.",
+   "ipucu": "Pencere kenarı.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Çift ışığın yönlerini izleyin.",
+   "ipucu": "Ön + arka pencere.",
+   "kanit": [
+    "C013"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Şeffaf gözyaşlarını bulun.",
+   "ipucu": "Leonardo gerçekçiliği.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Mekânın sınırlar ötesi genişliğini düşünün.",
+   "ipucu": "San Satiro yöntemi.",
+   "kanit": [
+    "C011"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, atıf, tarih, teknik, boyut, yer?",
+   "arka": "Sütundaki İsa; Bramante (tartışmalı); c.1490; yağlıboya-pano; 93×62; Brera.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004",
+    "C005",
+    "C006"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Konu?",
+   "arka": "Flagellasyon öncesi sütuna bağlı İsa; yakın kadraj; ip; gözyaşı.",
+   "kanit": [
+    "C010",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Mekân yöntemi?",
+   "arka": "San Satiro sahte korosuyla aynı; sınırlar ötesi + derinlik.",
+   "kanit": [
+    "C011"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Üç etki?",
+   "arka": "Urbino klasik + Flaman ışık + Leonardo gerçekçilik.",
+   "kanit": [
+    "C012",
+    "C013",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Teoloji/provenance?",
+   "arka": "Pyx=Ökaristi; Chiaravalle siparişi; 1915 Brera; 2017 hasar.",
+   "kanit": [
+    "C015",
+    "C007",
+    "C006",
+    "C009"
+   ]
+  }
+ ]
+}

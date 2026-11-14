@@ -1,0 +1,426 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q1755464",
+ "sanatci_id": "albrecht-durer",
+ "baslik": "Şövalye, Ölüm ve Şeytan",
+ "ozgun_baslik": "Knight, Death and the Devil (Ritter, Tod und Teufel)",
+ "kunye": {
+  "sanatci": "Albrecht Dürer",
+  "sanatci_yasam": "1471–1528",
+  "tarih": "1513 (imzalı/tarihli)",
+  "tarih_belirsizlik": "tablet \"S. (Salus) 1513\"",
+  "teknik": "Gravür (bakır levha baskı)",
+  "boyut_cm": {
+   "yukseklik": 24.3,
+   "genislik": 18.8
+  },
+  "muze": "Çok nüsha (Met, NGA, British Museum vb.)",
+  "envanter": "çoklu nüsha (ör. Met 43.106.2)",
+  "edinim": "Maximilian hizmetinde; sipariş değil; çeşitli koleksiyonlar",
+  "konum": "çeşitli print room",
+  "telif_durumu": "Kamu malı (Dürer ö.1528); Commons PD"
+ },
+ "gorsel": {
+  "url": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_Knight,_Death_and_Devil,_1513,_NGA_6637.jpg",
+  "kaynak": "Wikimedia Commons (NGA)",
+  "lisans": "Public Domain (Dürer ö.1528)",
+  "dogrulama": {
+   "yontem": "1200px indirildi; BU OTURUMDA İNCELENEMEDİ (vision bütçesi)",
+   "cozunurluk": "1200px indirme",
+   "incelenen_bolgeler": [],
+   "sinirlar": "Görsel teyit insan editöre (C022); Met katalog 429 (C021); kompozisyon enwiki (B) metninden"
+  }
+ },
+ "seviyeler": {
+  "baslangic": {
+   "dosya": "DERS_BASLANGIC.md",
+   "hedef_sure_dk": 3,
+   "kelime_sayisi": 413
+  },
+  "orta": {
+   "dosya": "DERS_ORTA.md",
+   "hedef_sure_dk": 10,
+   "kelime_sayisi": 1365
+  },
+  "ileri": {
+   "dosya": "DERS_ILERI.md",
+   "hedef_sure_dk": 20,
+   "kelime_sayisi": 2953
+  }
+ },
+ "bolum_eslesme": {
+  "1": [
+   "DERS_BASLANGIC.md#bir-bakışta-kimlik",
+   "DERS_ORTA.md#1-kimlik",
+   "DERS_ILERI.md#1-kimlik-ve-yöntem"
+  ],
+  "2": [
+   "DERS_ORTA.md#2-tarihsel-bağlam",
+   "DERS_ILERI.md#2-meisterstiche-ve-teknik-doruk"
+  ],
+  "3": [
+   "DERS_ORTA.md#3-sanatçının-kariyerindeki-yeri",
+   "DERS_ILERI.md#3-gotik-ve-rönesans-sentezi"
+  ],
+  "4": [
+   "DERS_BASLANGIC.md#ne-görüyoruz",
+   "DERS_ORTA.md#4-biçimsel-analiz-yakın-okuma",
+   "DERS_ILERI.md#4-kompozisyon-kararlılığın-optiği"
+  ],
+  "5": [
+   "DERS_ORTA.md#5-ikonografi",
+   "DERS_ILERI.md#5-alegori-hristiyan-asker-ve-erasmus"
+  ],
+  "6": [
+   "DERS_ORTA.md#6-teknik-ve-malzeme",
+   "DERS_ILERI.md#6-alımlama-nietzsche-ve-nazi-sahiplenmesi"
+  ],
+  "7": [
+   "DERS_ILERI.md#7-felsefi-ve-estetik-analiz-açıkça-yorum"
+  ],
+  "8": [
+   "DERS_ORTA.md#8-karşılaştırmalı-analiz",
+   "DERS_ILERI.md#8-karşılaştırmalı-metodoloji"
+  ],
+  "9": [
+   "DERS_ILERI.md#9-akademik-tartışmaların-envanteri"
+  ],
+  "10": [
+   "DERS_BASLANGIC.md#neden-bu-kadar-önemli",
+   "DERS_ORTA.md#10-küratöryel-anlatı--birleştirici-okuma",
+   "DERS_ILERI.md#10-küratöryel-anlatı--birleştirici-okuma"
+  ],
+  "11": [
+   "SORULAR.json",
+   "DERS_ORTA.md#11-öğrenme-etkinlikleri",
+   "DERS_ILERI.md#11-seminer-etkinlikleri"
+  ],
+  "12": [
+   "KANIT_DOSYASI.md",
+   "DERS_ORTA.md#12-kaynakça-bu-derste-kullanılanlar",
+   "DERS_ILERI.md#12-kaynakça"
+  ]
+ },
+ "ogrenme_kazanimlari": [
+  "Gravürün kimliğini (Dürer, 1513, Meisterstiche) ikincil kaynakla doğrular.",
+  "Gotik + Rönesans sentezini ve kompozisyonun kararlılığını analiz eder.",
+  "Hristiyan asker alegorisini (Erasmus/İncil) çözümler.",
+  "Anlam tartışması ve Nietzsche/Nazi alımlamasını değerlendirir.",
+  "Birincil katalog yokluğu + çok nüshalılığın kanıt sınırını kavrar."
+ ],
+ "temel_kavramlar": [
+  {
+   "ad": "gravür",
+   "tanim": "Bakır levhaya oyularak yapılan baskı; Meisterstiche = usta baskı.",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "ad": "memento mori",
+   "tanim": "\"Ölümü hatırla\"; kum saati bu hatırlatıcıdır.",
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "ad": "miles Christianus",
+   "tanim": "\"Hristiyan asker\"; İncil'in zırh metaforu (Ephesians 6).",
+   "kanit": [
+    "C018",
+    "C010"
+   ]
+  },
+  {
+   "ad": "Meisterstiche",
+   "tanim": "Dürer'in üç usta gravürü: Knight, St Jerome, Melencolia I.",
+   "kanit": [
+    "C002",
+    "C007"
+   ]
+  },
+  {
+   "ad": "alegori",
+   "tanim": "Soyut bir fikrin figürlerle temsili; şövalye = Hristiyan yolculuk.",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "iddialar": [
+  {
+   "id": "C001",
+   "ifade": "Başlık: Knight, Death and the Devil (Ritter, Tod und Teufel); Albrecht Dürer; 1513; büyük gravür; Alman Rönesansı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C002",
+   "ifade": "Üç Meisterstiche'den (usta baskı) biri; resim/woodcut'ı bırakıp gravüre odaklandığı dönem.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C003",
+   "ifade": "Teknik: gravür; 24.3×18.8 cm (wiki); WD 24.8×19.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C004",
+   "ifade": "Tarihli/imzalı; tabletin sol altı \"S. (=Salus/in the year of grace) 1513\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C005",
+   "ifade": "Zırhlı şövalye gururlu at + sadık köpekle; dar vahşi geçit; keçi başlı şeytan + soluk atta Ölüm; Ölüm'ün çürüyen leşi kum saati tutar (memento mori).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C006",
+   "ifade": "Binici tehditlere bakmaz, küçümser → cesaret sembolü; zırh + dev at + meşe yaprakları = inancın direnci; şövalyenin durumu = Cennet Krallığı'na (tepedeki şehir) dünyevi yolculuk.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C007",
+   "ifade": "Üç Meisterstiche: Knight (1513), St Jerome in His Study (1514), Melencolia I (1514); hepsi aynı boy; üçünde kafatası nesnesi + köpek + kum saati.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C008",
+   "ifade": "Gotik üslup; formlar karışır; at iç içe eğriler; şövalye çenesi miğfer çizgisine örülü; dallar/koşum/saç karmaşası; Stites \"değişen formlar dünyasında somut fikir\"; adam dosdoğru bakar.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C009",
+   "ifade": "At geometrik biçimlerle → Leonardo + Rönesans doğa bilimleri/anatomi ilgisi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C010",
+   "ifade": "Erasmus Enchiridion militis Christiani (Hristiyan Askerin Elkitabı); Ephesians 6:13-17 \"Tanrı'nın tüm zırhı\"; Psalm 23 \"ölüm gölgesi vadisi\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C011",
+   "ifade": "Panofsky: Erasmus Elkitabı'ndan esinlenmiş (Dürer'in müstakbel dostu); üç düşman beden/Şeytan/dünya; köpek = Tanrı'ya sadakat.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C012",
+   "ifade": "İmparator Maximilian hizmetindeyken yaptı; sipariş değil; açık politik mesaj yok; Orta Çağ ahlakı; Gotik imgeler.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C013",
+   "ifade": "Vasari: \"öyle mükemmel birkaç levha ki daha iyisi yapılamaz\".",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C014",
+   "ifade": "Genişçe kopyalandı; Alman yazarlara etki; Nietzsche Birth of Tragedy (1872) pesimizm örneği; Nazis tarafından kullanıldı.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C015",
+   "ifade": "Önemli koleksiyonlu çoğu print room'da nüsha var; çoklu müze (Met/NGA/BM vb.).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1",
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C016",
+   "ifade": "Bibliyografya: Panofsky; Stites; Lunday; Vasari — erişilmedi.",
+   "seviye": "B",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C017",
+   "ifade": "Albrecht Dürer 1471–1528 (WD yardımcı; yaygın kabul).",
+   "seviye": "B",
+   "kaynak_id": [
+    "K2"
+   ],
+   "kullanim": "olgu"
+  },
+  {
+   "id": "C018",
+   "ifade": "Hristiyan inancı + hümanizm idealleri alegorisi (miles Christianus) (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C019",
+   "ifade": "Cesaret/inancın direnci ↔ ölümlülük: varoluşsal okuma (yorum).",
+   "seviye": "C",
+   "kaynak_id": [],
+   "kullanim": "yorum"
+  },
+  {
+   "id": "C020",
+   "ifade": "Anlam tartışması: yüzyıllardır tartışılıyor; Hristiyan asker ↔ hümanist ↔ Nietzsche pesimizm ↔ Nazi sahiplenmesi.",
+   "seviye": "D",
+   "kaynak_id": [
+    "K1"
+   ],
+   "kullanim": "tartisma"
+  },
+  {
+   "id": "C021",
+   "ifade": "Met birincil katalog bu oturumda açılamadı (429 Too Many Requests).",
+   "seviye": "E",
+   "kaynak_id": [
+    "K4"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C022",
+   "ifade": "Görsel bu oturumda incelenemedi (vision bütçesi); insan editör teyidi zorunlu.",
+   "seviye": "E",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "belirsiz"
+  },
+  {
+   "id": "C023",
+   "ifade": "Görsel kamu malı (Dürer ö.1528); Commons PD; geçici kopya .qwen/tmp/parti1/Q1755464/.",
+   "seviye": "A",
+   "kaynak_id": [
+    "K3"
+   ],
+   "kullanim": "olgu"
+  }
+ ],
+ "kaynaklar": [
+  {
+   "id": "K1",
+   "kurum": "İngilizce Vikipedi",
+   "belge": "Knight, Death and the Devil — kaynaklı madde",
+   "url": "https://en.wikipedia.org/wiki/Knight,_Death_and_the_Devil",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200 (REST HTML); refs erişilmedi",
+   "tur": "ikincil"
+  },
+  {
+   "id": "K2",
+   "kurum": "Wikidata",
+   "belge": "Q1755464 + Q5580 (Dürer)",
+   "url": "https://www.wikidata.org/wiki/Q1755464",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200",
+   "tur": "yardimci"
+  },
+  {
+   "id": "K3",
+   "kurum": "Wikimedia Commons",
+   "belge": "Albrecht Dürer, Knight, Death and Devil, 1513, NGA 6637.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_Knight,_Death_and_Devil,_1513,_NGA_6637.jpg",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "200; 1200px indirildi; BU OTURUMDA İNCELENEMEDİ",
+   "tur": "gorsel"
+  },
+  {
+   "id": "K4",
+   "kurum": "Metropolitan Museum of Art",
+   "belge": "koleksiyon sayfası (hedef, ör. 43.106.2)",
+   "url": "https://www.metmuseum.org/art/collection/search/336420",
+   "erisim_tarihi": "2026-11-14",
+   "erisim_durumu": "429 Too Many Requests; AÇILAMADI",
+   "tur": "birincil"
+  }
+ ],
+ "karsilastirma_onerileri": [
+  {
+   "eser": "Melencolia I",
+   "sanatci": "Albrecht Dürer",
+   "gerekce": "Aynı Meisterstiche üçlüsü; melankoli ↔ cesaret; ortak semboller.",
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "eser": "St Jerome in His Study",
+   "sanatci": "Albrecht Dürer",
+   "gerekce": "Üçlünün çalışma/tevazu teması (1514).",
+   "kanit": [
+    "C007"
+   ]
+  }
+ ],
+ "durum": "İnsan incelemesi bekliyor",
+ "kalite_kontrol": {
+  "denetim_a": "Tamam — olgusal cümleler kanıt envanteriyle eşleştirildi; yorumlar C olarak işaretli (KALITE_KONTROL.md)",
+  "denetim_b": "Birincil Met katalog 429 açılamadı (E); kanıt ağırlıklı enwiki kaynaklı B + WD yardımcı; Commons indirildi ama incelenemedi (vision). Kompozisyon enwiki metninden (data betimi yok). Anlam tartışması D. Çok nüshalı gravür. A yalnız lisans. Kanıt zinciri KANIT §2.",
+  "insan_onayi": "Bekliyor — haricî model/insan editör denetimi gerekli"
+ },
+ "veri_notlari": [
+  "Tarih 1513 (K1/WD); tablet \"S. 1513\" imza.",
+  "Boyut 24.3×18.8 (K1) ↔ WD 24.8×19 — küçük fark; nüshaya göre değişebilir.",
+  "Çok nüshalı gravür; Met birincil katalog 429 → insan editör teyidi ZORUNLU (C021).",
+  "Anlam tartışması (Hristiyan asker/hümanist/Nietzsche/Nazi) D — uzman editör.",
+  "Görsel teyit bu oturumda yapılamadı (C022) — insan editör zorunlu."
+ ]
+}

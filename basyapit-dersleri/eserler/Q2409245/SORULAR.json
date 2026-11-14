@@ -1,0 +1,477 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q2409245",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Portrenin sanatçısı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Petrus Christus"
+    },
+    {
+     "harf": "B",
+     "metin": "Jan van Eyck"
+    },
+    {
+     "harf": "C",
+     "metin": "Rogier van der Weyden"
+    },
+    {
+     "harf": "D",
+     "metin": "Fouquet"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Petrus Christus.",
+   "yanlis_gerekceleri": {
+    "B": "van Eyck selefi.",
+    "C": "Rogier karşılaştırma.",
+    "D": "Fouquet karşılaştırma."
+   },
+   "kanit": [
+    "C001"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "SMB'ye göre tarih?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "um 1470"
+    },
+    {
+     "harf": "B",
+     "metin": "1400"
+    },
+    {
+     "harf": "C",
+     "metin": "1500"
+    },
+    {
+     "harf": "D",
+     "metin": "1600"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: um 1470.",
+   "yanlis_gerekceleri": {
+    "B": "1400 değil.",
+    "C": "1500 değil.",
+    "D": "1600 değil."
+   },
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "Teknik/destek?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yağlıboya, meşe pano"
+    },
+    {
+     "harf": "B",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "C",
+     "metin": "Tempera, tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Eichenholz (oil on oak).",
+   "yanlis_gerekceleri": {
+    "B": "Fresk değil.",
+    "C": "Tempera tuval değil.",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Eser hangi müzede?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Gemäldegalerie, Berlin"
+    },
+    {
+     "harf": "B",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "C",
+     "metin": "Louvre"
+    },
+    {
+     "harf": "D",
+     "metin": "National Gallery"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Gemäldegalerie.",
+   "yanlis_gerekceleri": {
+    "B": "Uffizi değil.",
+    "C": "Louvre değil.",
+    "D": "NG değil (Grimston orada)."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Eser Berlin'e nasıl kazandırıldı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "1821, Edward Solly koleksiyonundan satın alma"
+    },
+    {
+     "harf": "B",
+     "metin": "1492 Medici"
+    },
+    {
+     "harf": "C",
+     "metin": "1900 hibe"
+    },
+    {
+     "harf": "D",
+     "metin": "2000"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: 1821 Solly.",
+   "yanlis_gerekceleri": {
+    "B": "1492 Medici envanteri (provenance).",
+    "C": "1900 değil.",
+    "D": "2000 değil."
+   },
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Bu pano Christus'un neyi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bilinen tek kadın portresi"
+    },
+    {
+     "harf": "B",
+     "metin": "Tek erkek portresi"
+    },
+    {
+     "harf": "C",
+     "metin": "Tek manzarası"
+    },
+    {
+     "harf": "D",
+     "metin": "Tek freski"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: tek kadın portresi.",
+   "yanlis_gerekceleri": {
+    "B": "Erkek değil.",
+    "C": "Manzara değil.",
+    "D": "Fresk değil."
+   },
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Yapım yeri?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Brügge"
+    },
+    {
+     "harf": "B",
+     "metin": "Floransa"
+    },
+    {
+     "harf": "C",
+     "metin": "Paris"
+    },
+    {
+     "harf": "D",
+     "metin": "Roma"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Brügge.",
+   "yanlis_gerekceleri": {
+    "B": "Floransa değil.",
+    "C": "Paris değil.",
+    "D": "Roma değil."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "Upton kızı neye benzetir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Siyah kadife yastıkta cilalı inci"
+    },
+    {
+     "harf": "B",
+     "metin": "Altın heykel"
+    },
+    {
+     "harf": "C",
+     "metin": "Mermer büst"
+    },
+    {
+     "harf": "D",
+     "metin": "Gümüş ayna"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K2: polished pearl.",
+   "yanlis_gerekceleri": {
+    "B": "Altın heykel değil.",
+    "C": "Mermer değil.",
+    "D": "Gümüş ayna değil."
+   },
+   "kanit": [
+    "C010"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Pano Christus'un bilinen tek kadın portresidir.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eser 1821'de Edward Solly koleksiyonundan alındı.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C004"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "Pano fresktir.",
+   "dogru": false,
+   "aciklama": "Yanlış; yağlıboya meşe pano (K1).",
+   "kanit": [
+    "C003"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Kız siyah kadife, altın şeritli başlık takar.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Pano Brügge'de yapıldı.",
+   "dogru": true,
+   "aciklama": "Doğru (K1).",
+   "kanit": [
+    "C005"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "Sitter kimliği tartışmasını (Waagen/Scharf/Ring/Upton/Campbell) kanıtlarıyla karşılaştırın.",
+   "beklenen_ogeler": [
+    "Kayıp çerçeve yazıtı",
+    "Talbot yeğeni",
+    "Grimston/Alice diptik",
+    "Ring red + Ankaret sorunu (D)"
+   ],
+   "kanit": [
+    "C019"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Psikolojik mevcudiyeti (bakış, asimetri, ifade) analiz edin.",
+   "beklenen_ogeler": [
+    "Çekingen ama zeki ifade",
+    "Göz hizasızlığı",
+    "Kaş çarpıklığı",
+    "İç hayatın kaydı (yorum)"
+   ],
+   "kanit": [
+    "C021",
+    "C012",
+    "C009"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Aristokrat öz-sunumu orta sınıf seküler portre geleneğiyle karşılaştırın.",
+   "beklenen_ogeler": [
+    "Mağrur/sofistike",
+    "Zarif giysi",
+    "Orta sınıf sekülerleşme",
+    "Statü imgesi (yorum)"
+   ],
+   "kanit": [
+    "C020",
+    "C016"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "van Eyck/Rogier mirasını ve Christus'un sadeleştirmesini değerlendirin.",
+   "beklenen_ogeler": [
+    "van Eyck ayrıntılı mekân",
+    "Christus sade duvar",
+    "Rogier yontulmuş hatlar",
+    "Psikolojik odak (yorum)"
+   ],
+   "kanit": [
+    "C011",
+    "C014",
+    "C024"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Kanıt mimarisini değerlendirin: SMB (A) + görsel sınırı (E).",
+   "beklenen_ogeler": [
+    "SMB kaydı A",
+    "enwiki B",
+    "Görsel incelenemedi E",
+    "Sitter D açık"
+   ],
+   "kanit": [
+    "C001",
+    "C022",
+    "C019"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "Kızın bakışını ve göz hizasızlığını izleyin.",
+   "ipucu": "İlgi çekici bakış; hafif asimetri.",
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Siyah kadife başlığı (hennin) ve altın şeridi bulun.",
+   "ipucu": "En güçlü gölgeyi verir.",
+   "kanit": [
+    "C006"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Soldan gelen ışığı ve başlığın gölgesini takip edin.",
+   "ipucu": "Mekân derinliği.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Lambri ve dado rayı inceleyin.",
+   "ipucu": "Koyu kahve duvar; ahşap.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Kızın soluk tenini ve badem gözlerini bulun.",
+   "ipucu": "Aristokrat zarafet.",
+   "kanit": [
+    "C016"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, tarih, teknik, boyut, yer?",
+   "arka": "Genç Bir Kızın Portresi; Petrus Christus; um 1470; yağlıboya meşe; 29.1×22.7; Gemäldegalerie Berlin 532.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C003",
+    "C004"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Tek kadın portresi + mekân?",
+   "arka": "Christus'un bilinen tek kadın portresi; gri-kahve duvar + lambri; sade iç mekân (van Eyck'e karşıt).",
+   "kanit": [
+    "C006",
+    "C014"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Teknik/ışık?",
+   "arka": "Glazür + soldan ışık; hennin gölgesi; soluk ten/badem göz; hafif göz hizasızlığı/kaş çarpıklığı.",
+   "kanit": [
+    "C003",
+    "C015",
+    "C016",
+    "C012"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "Provenance?",
+   "arka": "1492 Medici envanteri (\"Fransız leydi\"/Pietro Cresci, 40 florin); 1821 Edward Solly → Berlin.",
+   "kanit": [
+    "C004",
+    "C017"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Üslup + miras?",
+   "arka": "Büyük üslup ilerlemesi; havadar 3B mekân + psikolojik ifade; van Eyck/Rogier mirası; Upton \"cilalı inci\".",
+   "kanit": [
+    "C009",
+    "C011",
+    "C010"
+   ]
+  }
+ ]
+}

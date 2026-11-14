@@ -1,0 +1,537 @@
+{
+ "surum": "1.0",
+ "eser_id": "Q3698260",
+ "coktan_secmeli": [
+  {
+   "id": "CS01",
+   "soru": "Çarmıh hangi tarikat tarafından sipariş edildi?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Dominikanlar"
+    },
+    {
+     "harf": "B",
+     "metin": "Franciscanlar"
+    },
+    {
+     "harf": "C",
+     "metin": "Benediktenler"
+    },
+    {
+     "harf": "D",
+     "metin": "Jesuitler"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: Santa Croce'nin Franciscan friarları sipariş etti.",
+   "yanlis_gerekceleri": {
+    "A": "Dominikanlar değil; Santa Croce Franciscan kilisesidir.",
+    "C": "Benediktenler değil.",
+    "D": "Jesuitler 16. yy'da kuruldu; anakronik."
+   },
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "CS02",
+   "soru": "Eserin tekniği nedir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Fresk"
+    },
+    {
+     "harf": "B",
+     "metin": "Distemper (tempera) ahşap pano"
+    },
+    {
+     "harf": "C",
+     "metin": "Yağlıboya tuval"
+    },
+    {
+     "harf": "D",
+     "metin": "Mozaik"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K2: distemper on wood panel.",
+   "yanlis_gerekceleri": {
+    "A": "Fresk duvar sıvasıdır; bu ahşap panodur.",
+    "C": "Yağlıboya tuval değil.",
+    "D": "Mozaik değil."
+   },
+   "kanit": [
+    "C005"
+   ]
+  },
+  {
+   "id": "CS03",
+   "soru": "İsa hangi ikonografik tipte gösterilir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Christus triumphans (yenilmez)"
+    },
+    {
+     "harf": "B",
+     "metin": "Christus patiens (acı çeken)"
+    },
+    {
+     "harf": "C",
+     "metin": "Pantokrator"
+    },
+    {
+     "harf": "D",
+     "metin": "Çocuk İsa"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K3: Christus patiens — baş düşmüş, gözler kapalı, beden sarkmış.",
+   "yanlis_gerekceleri": {
+    "A": "Christus triumphans dimdik/yenilmezdir; burada tersi.",
+    "C": "Pantokrator tahtta kutsal yargıçtır.",
+    "D": "Çocuk İsa değil, çarmıhtaki yetişkin."
+   },
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "CS04",
+   "soru": "Çarmıh 1966'da ne yaşadı?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Yangın"
+    },
+    {
+     "harf": "B",
+     "metin": "Arno seli ağır hasar"
+    },
+    {
+     "harf": "C",
+     "metin": "Deprem"
+    },
+    {
+     "harf": "D",
+     "metin": "Hırsızlık"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: 1966 Arno selinde ağır hasar; hâlâ kötü durumda.",
+   "yanlis_gerekceleri": {
+    "A": "Yangın değil, sel.",
+    "C": "Deprem değil.",
+    "D": "Hırsızlık değil."
+   },
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "CS05",
+   "soru": "Çarmıh kollarının uçlarında kimler var?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İki melek"
+    },
+    {
+     "harf": "B",
+     "metin": "Meryem ve Yuhanna"
+    },
+    {
+     "harf": "C",
+     "metin": "Petrus ve Pavlus"
+    },
+    {
+     "harf": "D",
+     "metin": "İki aziz"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K3/K1: solda yas tutan Meryem, sağda Yuhanna.",
+   "yanlis_gerekceleri": {
+    "A": "Melek değil, Meryem/Yuhanna.",
+    "C": "Petrus/Pavlus değil.",
+    "D": "Genel \"iki aziz\" değil, spesifik Meryem/Yuhanna."
+   },
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "CS06",
+   "soru": "Eser bugün nerede korunuyor?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Uffizi"
+    },
+    {
+     "harf": "B",
+     "metin": "Museo dell'Opera di Santa Croce"
+    },
+    {
+     "harf": "C",
+     "metin": "Vatikan"
+    },
+    {
+     "harf": "D",
+     "metin": "Louvre"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K2: 1966 seli sonrası restorasyondan beri Museo dell'Opera di Santa Croce.",
+   "yanlis_gerekceleri": {
+    "A": "Uffizi değil.",
+    "C": "Vatikan değil.",
+    "D": "Louvre değil."
+   },
+   "kanit": [
+    "C007"
+   ]
+  },
+  {
+   "id": "CS07",
+   "soru": "Eser neden sanat tarihinde dönüm noktası sayılır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "İlk yağlıboya"
+    },
+    {
+     "harf": "B",
+     "metin": "Bizans üslubundan kopuşun ilk örneklerinden"
+    },
+    {
+     "harf": "C",
+     "metin": "İlk perspektif"
+    },
+    {
+     "harf": "D",
+     "metin": "İlk portre"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1: geç Bizans üslubundan kopan ilk İtalyan eserlerinden; teknik yenilik + hümanist ikonografi.",
+   "yanlis_gerekceleri": {
+    "A": "İlk yağlıboya değil (distemper).",
+    "C": "İlk perspektif değil.",
+    "D": "İlk portre değil."
+   },
+   "kanit": [
+    "C012"
+   ]
+  },
+  {
+   "id": "CS08",
+   "soru": "İsa'nın peştamalı nasıldır?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Kırmızı, kalın"
+    },
+    {
+     "harf": "B",
+     "metin": "Beyaz, şeffaf/tülbent benzeri"
+    },
+    {
+     "harf": "C",
+     "metin": "Mor, işlemeli"
+    },
+    {
+     "harf": "D",
+     "metin": "Yok"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1/K3: beyaz, şeffaf, tülbent benzeri perizoma (Arezzo'daki kırmızıdan örtük).",
+   "yanlis_gerekceleri": {
+    "A": "Kırmızı Arezzo çarmıhındadır; Santa Croce beyaz.",
+    "C": "Mor/işlemeli değil.",
+    "D": "Peştamal var, çıplak değil tümüyle."
+   },
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "CS09",
+   "soru": "Cimabue'ye atfedilen diğer büyük çarmıh nerede ve hangisi daha erken?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Arezzo, daha erken"
+    },
+    {
+     "harf": "B",
+     "metin": "Assisi, daha geç"
+    },
+    {
+     "harf": "C",
+     "metin": "Padova, aynı"
+    },
+    {
+     "harf": "D",
+     "metin": "Siena, daha erken"
+    }
+   ],
+   "dogru": "A",
+   "gerekce": "K1: Arezzo çarmıhı (c.1268–1271) iki çarmıhın daha erken olanı.",
+   "yanlis_gerekceleri": {
+    "B": "Assisi değil; Arezzo daha erken.",
+    "C": "Padova değil.",
+    "D": "Siena değil."
+   },
+   "kanit": [
+    "C024"
+   ]
+  },
+  {
+   "id": "CS10",
+   "soru": "Kullandığımız görsel (Cimabue 025.jpg) neyi gösterir?",
+   "secenekler": [
+    {
+     "harf": "A",
+     "metin": "Bugünkü hasarlı hali"
+    },
+    {
+     "harf": "B",
+     "metin": "1966 seli öncesi durumu"
+    },
+    {
+     "harf": "C",
+     "metin": "Bir kopyayı"
+    },
+    {
+     "harf": "D",
+     "metin": "Detayı"
+    }
+   ],
+   "dogru": "B",
+   "gerekce": "K1 caption: \"prior to the 1966 flood damage\"; görsel sel öncesi ideal hali gösterir.",
+   "yanlis_gerekceleri": {
+    "A": "Bugünkü hasarlı hali değil; sel öncesi.",
+    "C": "Kopya değil, eserin sel öncesi reproduksiyonu.",
+    "D": "Detay değil, tam çarmıh."
+   },
+   "kanit": [
+    "C022"
+   ]
+  }
+ ],
+ "dogru_yanlis": [
+  {
+   "id": "DY01",
+   "ifade": "Çarmıh İsa'yı yenilmez, dimdik (Christus triumphans) gösterir.",
+   "dogru": false,
+   "aciklama": "Yanlış. Christus patiens: acı çeken, başı düşmüş, bedeni sarkmış İsa.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "DY02",
+   "ifade": "Eseri Santa Croce'nin Franciscan friarları sipariş etti.",
+   "dogru": true,
+   "aciklama": "Doğru (K1). Her iki Cimabue çarmıhı da Franciscan siparişi.",
+   "kanit": [
+    "C009"
+   ]
+  },
+  {
+   "id": "DY03",
+   "ifade": "1966 Arno seli çarmıha ağır hasar verdi.",
+   "dogru": true,
+   "aciklama": "Doğru; koruma çabalarına rağmen kötü durumda (K1).",
+   "kanit": [
+    "C021"
+   ]
+  },
+  {
+   "id": "DY04",
+   "ifade": "Eserin Cimabue'ye atfı kesindir ve hiçbir kaynak tarafından tartışılmamıştır.",
+   "dogru": false,
+   "aciklama": "Yanlış. Eser Cimabue'ye \"atfedilir\" (kesin değil, C002 B); atıf Crowe & Cavalcaselle (1903) tarafından tartışılmıştır (C003, D — bağlam).",
+   "kanit": [
+    "C002"
+   ]
+  },
+  {
+   "id": "DY05",
+   "ifade": "Çarmıhın uçlarında yas tutan Meryem ve Yuhanna tasvirleri vardır.",
+   "dogru": true,
+   "aciklama": "Doğru (K3 görsel + K1).",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ],
+ "acik_uclu": [
+  {
+   "id": "AU01",
+   "soru": "İmzasız bir eseri \"Cimabue\"ye atfetmenin epistemolojisini tartışın: üslup + Vasari/Albertini ↔ Crowe & Cavalcaselle.",
+   "beklenen_ogeler": [
+    "Belge yokluğu",
+    "Üslup karşılaştırması",
+    "Erken kaynak anmaları",
+    "Atıfın D olarak açık tutulması"
+   ],
+   "kanit": [
+    "C003",
+    "C002"
+   ]
+  },
+  {
+   "id": "AU02",
+   "soru": "Eser Bizans'tan \"kopar\" mı yoksa melez mi? Kanıtla gerekçelendirin.",
+   "beklenen_ogeler": [
+    "Altın/anıtsallık Bizans",
+    "Beden doğalcılığı yeni",
+    "Melez gerçeklik",
+    "Geçiş anlatısının eleştirisi"
+   ],
+   "kanit": [
+    "C012",
+    "C013"
+   ]
+  },
+  {
+   "id": "AU03",
+   "soru": "Temsil edilen acı (Christus patiens) ile eserin maddi acısı (1966 seli) arasındaki bağı tartışın.",
+   "beklenen_ogeler": [
+    "Acı ikonografisi",
+    "Sel travması",
+    "Anlama eklenen katman",
+    "Koruma etiği"
+   ],
+   "kanit": [
+    "C014",
+    "C021"
+   ]
+  },
+  {
+   "id": "AU04",
+   "soru": "Geometrik plan (kare/dinamik dikdörtgen) ile Christ'in doğalcı salınımı arasındaki uzlaşmayı analiz edin.",
+   "beklenen_ogeler": [
+    "Soyut oran sistemi",
+    "Tahta konumlarının esnetilmesi",
+    "Kural ↔ gözlem"
+   ],
+   "kanit": [
+    "C020",
+    "C016"
+   ]
+  },
+  {
+   "id": "AU05",
+   "soru": "Sel öncesi görsel ile bugünkü hasarlı nesne: bir eserin \"doğru hali\" hangisi? Koruma etiği açısından tartışın.",
+   "beklenen_ogeler": [
+    "İdeal geçmiş ↔ yaralı şimdi",
+    "Restorasyonun sınırı",
+    "Görüntünün tarihsel tercihi"
+   ],
+   "kanit": [
+    "C022",
+    "C021"
+   ]
+  }
+ ],
+ "gozlem_sorulari": [
+  {
+   "id": "GZ01",
+   "soru": "İsa'nın başı ve bedeni nasıl duruyor? Bu size ne hissettiriyor?",
+   "ipucu": "Baş yana düşmüş, beden sarkmış — Christus patiens.",
+   "kanit": [
+    "C014",
+    "C017"
+   ]
+  },
+  {
+   "id": "GZ02",
+   "soru": "Peştamalın rengini ve şeffaflığını inceleyin; çıplaklık neyi vurguluyor?",
+   "ipucu": "Beyaz, şeffaf; kırılganlık.",
+   "kanit": [
+    "C015"
+   ]
+  },
+  {
+   "id": "GZ03",
+   "soru": "Çarmıh kollarının uçlarındaki iki figürü bulun; jestleri ne anlatıyor?",
+   "ipucu": "Solda Meryem, sağda Yuhanna; yas.",
+   "kanit": [
+    "C018"
+   ]
+  },
+  {
+   "id": "GZ04",
+   "soru": "Altın bordürler ile soluk beden arasındaki karşıtlığı düşünün.",
+   "ipucu": "İlahi çerçeve ↔ insani acı.",
+   "kanit": [
+    "C013",
+    "C019"
+   ]
+  },
+  {
+   "id": "GZ05",
+   "soru": "Ellerden ve ayaklardan akan kanı bulun; bu gerçekçilik neyi amaçlar?",
+   "ipucu": "Acının grafikleşmesi; empati.",
+   "kanit": [
+    "C017",
+    "C014"
+   ]
+  }
+ ],
+ "tekrar_kartlari": [
+  {
+   "id": "TK01",
+   "on": "Eser, sanatçı, yer, teknik?",
+   "arka": "Santa Croce Çarmıhı; Cimabue'ye atfedilir; Basilica di Santa Croce / Museo dell'Opera, Floransa; distemper ahşap pano; büyük boyutlu çarmıh.",
+   "kanit": [
+    "C001",
+    "C002",
+    "C007",
+    "C005"
+   ]
+  },
+  {
+   "id": "TK02",
+   "on": "Neden dönüm noktası?",
+   "arka": "Bizans üslubundan kopuşun ilk İtalyan örneklerinden; Christus patiens (acı çeken İsa); hümanist ikonografi; Franciscan siparişi.",
+   "kanit": [
+    "C012",
+    "C014",
+    "C009"
+   ]
+  },
+  {
+   "id": "TK03",
+   "on": "Christus patiens nedir?",
+   "arka": "\"Acı çeken Mesih\": baş düşmüş, gözler kapalı, beden sarkmış, neredeyse çıplak İsa; yenilmez Christus triumphans'ın karşıtı.",
+   "kanit": [
+    "C014"
+   ]
+  },
+  {
+   "id": "TK04",
+   "on": "1966'da ne oldu?",
+   "arka": "Arno seli çarmıhı ağır hasarladı; hâlâ kötü durumda; Museo dell'Opera'da korunuyor. Görselimiz sel öncesi hali gösterir.",
+   "kanit": [
+    "C021",
+    "C022",
+    "C007"
+   ]
+  },
+  {
+   "id": "TK05",
+   "on": "Terminallerde kimler var?",
+   "arka": "Çarmıh kollarının uçlarında yas tutan Meryem (sol) ve Yuhanna (sağ).",
+   "kanit": [
+    "C018"
+   ]
+  }
+ ]
+}
