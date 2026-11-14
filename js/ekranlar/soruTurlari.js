@@ -62,7 +62,7 @@ export function soruTurlariHtml(hatalar = '') {
       <div class="pk-bolum-bas"><h2 class="pk-baslik">Başka turlar</h2></div>
       <div class="tur-izgara">
       ${hatalar}
-      <button class="hatalar-satir" type="button" data-salonlara data-test="donem-turu"><span class="hatalar-sayi" aria-hidden="true">${ikon('sekme-harita', 18, 1.6)}</span><span class="metin"><b>Döneme göre</b><span>Salon salon çalış</span></span></button>
+      <a class="hatalar-satir" href="#/pekistir/donem" data-salonlara data-test="donem-turu"><span class="hatalar-sayi" aria-hidden="true">${ikon('sekme-harita', 18, 1.6)}</span><span class="metin"><b>Döneme göre</b><span>Salon salon çalış</span></span></a>
       ${satir(TUR.bolum.rota, 'bolum-turu', nb, 'Bölüm turu', 'Hangi bölümde?')}
       ${satir(TUR.ikonografi.rota, 'konu-turu', ikon('kitap', 18, 1.6), 'Konu turu', 'İncil, mitoloji, tarih')}
       ${kars ? satir(kars.href, 'gz-karsilastir', ikon('karsilastir', 18, 1.6), 'Karşılaştır', kars.alt) : ''}

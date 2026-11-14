@@ -38,18 +38,22 @@ export function adimIsle(ilerleme, akim, adim, oran, bugun) {
   return { once, sonra, bitti: adimBittiMi(sonra, adim), yeniBitti };
 }
 
-// Ekrandaki durum: her adımın ilerlemesi, sıradaki (ilk bitmemiş) adım, biten adım sayısı
-export function dersDurumu(kayit) {
-  const adimlar = DERS_ADIMLARI.map((a) => ({ adim: a, ad: ADIM_ADLARI[a], i: kayit[a].i, bitti: adimBittiMi(kayit, a) }));
-  const siradaki = (adimlar.find((x) => !x.bitti) || null)?.adim ?? null;
-  const biten = adimlar.filter((x) => x.bitti).length;
-  return { adimlar, siradaki, biten, bitti: biten === DERS_ADIMLARI.length };
+// Ekrandaki durum: her adımın ilerlemesi, sıradaki (ilk bitmemiş) adım, biten adım sayısı.
+// adimlar (1.79.0): dersin var olan adımları. Gör verisi olmayan derste (Dada, Sürrealizm, Savaş sonrası figürasyon)
+// ['ogren', 'ayirt', 'sina'] verilir: ders üç adımla gösterilir ve üç adımla biter. Verilmezse dört adım.
+export function dersDurumu(kayit, adimlar = DERS_ADIMLARI) {
+  const liste = DERS_ADIMLARI.filter((a) => adimlar.includes(a));
+  const durumlar = liste.map((a) => ({ adim: a, ad: ADIM_ADLARI[a], i: kayit[a].i, bitti: adimBittiMi(kayit, a) }));
+  const siradaki = (durumlar.find((x) => !x.bitti) || null)?.adim ?? null;
+  const biten = durumlar.filter((x) => x.bitti).length;
+  return { adimlar: durumlar, siradaki, biten, bitti: biten === liste.length };
 }
 
 // "Bugünün dersi": Yolculuk'taki "Buradasın" durağının akımı (dersi bitmemişse); yoksa dönem sırasıyla ilk bitmemiş açık
-// akım; hepsi bittiyse null. acikAkimlar: kronolojik sırayla açık akım adları.
-export function bugununDersi({ acikAkimlar, ilerleme, yolculukAkimi = null }) {
-  const bitmedi = (ad) => !dersDurumu(dersKaydi(ilerleme, ad)).bitti;
+// akım; hepsi bittiyse null. acikAkimlar: kronolojik sırayla açık akım adları. adimlar: (akım) => o dersin adımları
+// (verilmezse her ders dört adım).
+export function bugununDersi({ acikAkimlar, ilerleme, yolculukAkimi = null, adimlar = null }) {
+  const bitmedi = (ad) => !dersDurumu(dersKaydi(ilerleme, ad), adimlar ? adimlar(ad) : DERS_ADIMLARI).bitti;
   if (yolculukAkimi && acikAkimlar.includes(yolculukAkimi) && bitmedi(yolculukAkimi)) return yolculukAkimi;
   return acikAkimlar.find(bitmedi) ?? null;
 }
