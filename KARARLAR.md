@@ -2185,7 +2185,7 @@ Emre: "Çalış sekmesini ders düzenine çevir." Tasarım: https://claude.ai/ar
   - Kanıtsız 35 maddeye eser aranmadı. Her biri için görsele bakıp `ders_dogrulama.json`'a karar yazmak gerekir; bu sürümün işi arayüzdü, veri ayrı bir iş.
   - Karşılaştırma cümlesi olmayan 27 ikiliye cümle yazılmadı. İki madde listesi yan yana zaten aynı bilgiyi veriyor; listelerden cümle türetmek yeni bilgi katmaz, yanlış genelleme riski taşır.
   - Mockup'taki "Arka plan / Figür / Mekân" fark tablosu yapılmadı: maddeler bu başlıklara ayrılmış değil; ayırmak yeni içerik yazmak olurdu.
-  - Mockup'taki "Kıvrımlar gölgeyle değil, ince altın çizgilerle çizilir…" gibi örnek metinler kullanılmadı (tasarım dolgusu). Gotik'in o maddesi için veride tam bu cümle "yanlış" işaretli bir aday; madde kanıtsız gösteriliyor.
+  - Mockup'taki "Kıvrımlar gölgeyle değil, ince altın çizgilerle çizilir…" gibi örnek metinler kullanılmadı (tasarım dolgusu). Gotik'in o maddesi için veride buna benzer bir cümle ("Cüppe kıvrımları gölgeyle değil, çizgiyle belirtilir.") "yanlış" işaretli bir aday; madde kanıtsız gösteriliyor.
   - Mockup'taki adım süreleri ("~4 dk") yazılmadı: ölçülmüş bir süre yok.
   - Sına'da "VI. özelliğe dön" gibi maddeye özel bağlantı yok: sanatçı ile madde arasında doğrulanmış bir eşleme yok; bağlantı Öğren'in başına gider.
   - Tek sanatçılı derslerde (Kübizm, Art Nouveau, Savaş sonrası figürasyon) Sına'nın cevabı hep aynı sanatçı; şıklar komşu akımlardan gelir. Akım sorusu eklenmedi (dersin akımı zaten belli); bu dersler konular işlendikçe kalabalıklaşacak.
