@@ -142,3 +142,22 @@ test('sanatçı sayfasındaki eser ızgarasından açılan görüntüleyicide de
   await expect(incele).toBeHidden();
   expect(await olcek(page)).toBeCloseTo(1, 1);
 });
+
+// İş 179: akım sayfasındaki "En bilinen eserler" dörtlüsü başyapıt; oradan açılan görüntüleyicide de İncele olmalı
+// (gerçek data/eser_ayrintilari.json; dörtlü görünsün diye geliştirici modu bütün konuları açar)
+test('akım sayfasındaki en bilinen eserlerden açılan görüntüleyicide de İncele var', async ({ page, context }) => {
+  await agiHazirla(context);
+  await page.goto('./#/ayarlar');
+  const gel = page.locator('[data-ayar-gelistirici]');
+  await gel.scrollIntoViewIfNeeded();
+  await gel.check({ force: true });
+  await expect(page.locator('#gelistirici-mesaj')).toContainText('Açıldı');
+  await page.goto('./#/akim/' + encodeURIComponent('Sembolizm'));
+  const kart = page.locator('.akim-bolum [data-kimlik-eser]').first();
+  await expect(kart).toBeVisible();
+  await kart.click();
+  const incele = page.locator('[data-test="gor-incele"]');
+  await expect(incele).toBeVisible();
+  await incele.click();
+  await expect(page.locator('.gor-nokta').first()).toBeVisible();
+});

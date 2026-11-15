@@ -2294,3 +2294,10 @@ uzun kenar ≥ max(1,25 × elimizdeki, 1600). Adaylar elimizdekiyle yan yana gö
   → `python3 scripts/ayrinti/yardimci/koordinat_uygula.py` → `python3 scripts/ayrinti/denetle.py` → gönder (gorsel_kaynagi, b_yenilenen,
   eser_ayrintilari, bekleyen_koordinatlar).
 
+### İş 179 · Akım sayfasındaki en bilinen eserlerde "İncele" (sürüm 1.81.4)
+
+Emre: akım sayfasında Çok Zengin Saatler'i açınca "İncele" gelmedi. İş 175–177'de dörtlünün bütün eserleri rehberli inceleme aldı, ama
+akım sayfası (`js/ekranlar/akim.js`) görüntüleyiciye `ayrintilar` vermiyordu (yalnız başyapıt, sanatçı, konu sayfaları ve günün sanatçısı
+veriyordu). Şimdi dörtlüden ve akım karşılaştırmasındaki eserlerden açılan görüntüleyici de `ayrintiBulucu` alır; inceleme verisi akım
+sayfası çizilirken yüklenir. Uçtan uca test: Sembolizm dörtlüsünün ilk eseri → İncele → noktalar (düzeltmesiz düştüğü görüldü).
+

@@ -24,7 +24,7 @@ import {
   jsonGetir,
   hataGoster,
 } from './ortak.js';
-import { ikonografiVeri } from './gozat.js';
+import { ikonografiVeri, ayrintiVeri, ayrintiBulucu } from './gozat.js';
 import { akimBilgisiBirlestir, ozellikleriBirlestir } from '../birlesme.js';
 
 let ozellikSozu = null;
@@ -462,7 +462,8 @@ export async function kimlikDoldur(ad) {
   const ustKutu = ekran.querySelector('[data-kimlik-ust]');
   const altKutu = ekran.querySelector('[data-kimlik-alt]');
   if (!ustKutu) return;
-  const [v] = await Promise.all([akimVerisi(ad), akimBilgisi()]);
+  // İş 179: rehberli inceleme noktaları da yüklensin (en bilinen eserler başyapıt; görüntüleyicide "İncele")
+  const [v] = await Promise.all([akimVerisi(ad), akimBilgisi(), ayrintiVeri()]);
   if (!ustKutu.isConnected) return;
   kimlikEserleri = v.eserler;
   dugmeyiGiydir(ad, v.eserler);
@@ -546,6 +547,7 @@ export function olaylariBagla() {
           eserler: kimlikEserleri.map((y) => y.e),
           baslangic: Number(k.dataset.kimlikEser),
           notu: (eser) => notuIcin(eser.sid)(eser),
+          ayrintilar: ayrintiBulucu,
           ...gorselTercihi(),
         });
       return;
@@ -558,6 +560,7 @@ export function olaylariBagla() {
           eserler: l,
           baslangic: Number(b.getAttribute(`data-karsi-eser-${i}`)),
           notu: (eser) => notuIcin(eser.sid)(eser),
+          ayrintilar: ayrintiBulucu,
           ...gorselTercihi(),
         });
         return;
