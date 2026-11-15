@@ -2301,3 +2301,23 @@ akım sayfası (`js/ekranlar/akim.js`) görüntüleyiciye `ayrintilar` vermiyord
 veriyordu). Şimdi dörtlüden ve akım karşılaştırmasındaki eserlerden açılan görüntüleyici de `ayrintiBulucu` alır; inceleme verisi akım
 sayfası çizilirken yüklenir. Uçtan uca test: Sembolizm dörtlüsünün ilk eseri → İncele → noktalar (düzeltmesiz düştüğü görüldü).
 
+
+### İş 180 · İncele yeniden: yazısız kamera ve buzlu yazı kartı (sürüm 1.82.0)
+
+Emre, İncele'yi Design tuvalinde birkaç turda birlikte çizdi ("1 2 3 gibi değil, ana sayfadaki gibi yakınlaştırma usulüyle"). Varılan
+tasarım uygulamaya geçti (`js/goruntuleyici.js`, `css/app.css` sonundaki İş 180 bölümü):
+- **İşaret yok:** numaralı noktalar kalktı; tablonun üstünde hiçbir şey çizilmez (köşelikler "çok köşeli", haleler "vazgeçtim" ile
+  denendi ve bırakıldı). Ayrıntıların yeri görünmez dokunma alanı olarak durur: genel bakışta ayrıntının üstüne dokununca kamera oraya gider.
+- **Karartma yok:** seçili ayrıntının çevresi kararmaz. Tablo bütün ekranı alır; arkasında tablonun kendi bulanık ışığı (İş 69) daha
+  belirgin.
+- **Yazı kartı:** Bugün'deki yürüyüş kartının dili: yarı saydam, buzlu kart; üst satır ("2 / 6", genel bakışta "6 ayrıntı"), Bodoni
+  başlık, Newsreader metin. Her adımda süzülerek belirir. Ayrıntının ortası tablonun alt %38'indeyse kart üste geçer. Başlığa dokununca yalnız
+  başlık kalır (kamera ayrıntıyı yeni boşluğa göre yeniden yerleştirir). Genel bakışta kartta eserin adı.
+- **Kamera kartın dışına bakar:** `noktaOdagi` artık `alan: { ust, alt }` alır: ayrıntı kartın ve düğmelerin dışındaki boşluğa sığdırılıp
+  onun ortasına konur; kenardaki ayrıntı (ör. alttaki imza) için tablo o pay kadar fazladan kayabilir. Yakınlaşmanın çözünürlük sınırı
+  (İş 165) aynen geçerli.
+- **Gezinme:** altta küçük geri düğmesi, ayrıntı başına bir parçalı ilerleme çubuğu (parçaya dokununca o ayrıntı), ilerlemeyi halkasında
+  gösteren yuvarlak ilerle düğmesi. "Bitir" yazılı düğme yerine kapat düğmesinin solunda küçült simgeli yuvarlak düğme. İki parmakla
+  yakınlaştırma ve kaydırma görüntüleyicide zaten vardı, aynen çalışır. Otomatik ilerleme denendi; Emre düğmeli ilerlemeyi seçti.
+- Hikâye karakterleri (İş 169) aynı görünümü kullanır. Test: `tests/e2e/ayrinti.spec.js` (kart ayrıntıyı kapatmıyor, üste geçiyor,
+  katlanıyor, çubukla atlanıyor), `tests/unit/ayrinti.test.mjs` (`alan`).

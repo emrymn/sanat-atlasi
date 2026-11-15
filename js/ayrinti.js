@@ -55,21 +55,29 @@ export function eserinAyrintisi(liste, e) {
 // hedef ölçek ve kayma. Ölçek: kutunun sahneye payla (pay) sığdığı en büyük değer, [enAz, enCok] arasında. Kayma:
 // kutunun ortası sahnenin ortasına gelir (görüntüleyicide transform-origin ortadadır); kenarlar sahneyi aşmasın diye
 // sınırlandırılır (küçük ölçekte görsel sahneden küçükse kayma 0).
-export function noktaOdagi(nokta, taban, sahne, { pay = 0.78, enAz = 1.15, enCok = 6 } = {}) {
+// İş 180: alan = { ust, alt } (px): sahnenin üstünde ve altında yazı kartı ya da düğmelerin kapladığı pay. Ayrıntı
+// sahnenin geri kalanına sığdırılır ve onun ortasına konur (kart ayrıntının önünü kapatmasın).
+export function noktaOdagi(nokta, taban, sahne, { pay = 0.78, enAz = 1.15, enCok = 6, alan = null } = {}) {
   if (!nokta || !taban || !sahne || !taban.w || !taban.h || !sahne.w || !sahne.h) return null;
+  const ust = alan ? Math.max(0, alan.ust || 0) : 0;
+  const alt = alan ? Math.max(0, alan.alt || 0) : 0;
+  const bosH = Math.max(sahne.h * 0.25, sahne.h - ust - alt);
   const kw = Math.max(0.02, nokta.w) * taban.w;
   const kh = Math.max(0.02, nokta.h) * taban.h;
-  let olcek = Math.min((sahne.w * pay) / kw, (sahne.h * pay) / kh);
+  let olcek = Math.min((sahne.w * pay) / kw, (bosH * pay) / kh);
   olcek = Math.min(enCok, Math.max(enAz, olcek));
   // kutunun ortasının görselin ortasına uzaklığı (ölçek 1'de, px)
   const mx = (nokta.x + nokta.w / 2 - 0.5) * taban.w;
   const my = (nokta.y + nokta.h / 2 - 0.5) * taban.h;
   let tx = -mx * olcek;
-  let ty = -my * olcek;
+  let ty = -my * olcek + (ust - alt) / 2;
   const sx = Math.max(0, (taban.w * olcek - sahne.w) / 2);
-  const sy = Math.max(0, (taban.h * olcek - sahne.h) / 2);
+  // kart varken sahneden kısa görsel de kartın dışındaki boşluğa kayabilir (sahnenin içinde kalarak)
+  const sy = alan ? Math.abs(taban.h * olcek - sahne.h) / 2 : Math.max(0, (taban.h * olcek - sahne.h) / 2);
   tx = Math.min(sx, Math.max(-sx, tx));
-  ty = Math.min(sy, Math.max(-sy, ty));
+  // kart varken resmin kenarındaki ayrıntı (ör. alttaki imza) kartın ya da düğmelerin arkasında kalmasın: tablo o pay
+  // kadar daha kayabilir (açılan yerde tablonun bulanık ışığı görünür)
+  ty = Math.min(sy + ust, Math.max(-(sy + alt), ty));
   return { olcek: Math.round(olcek * 1000) / 1000, tx: Math.round(tx) || 0, ty: Math.round(ty) || 0 };
 }
 
