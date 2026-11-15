@@ -8177,6 +8177,62 @@
      "metin": "Altta ortada Man Ray'in imzası ve 1913 tarihi okunuyor. Man Ray bu yıl New York'taki Armory Show'da Avrupa modern sanatını görmüştü."
     }
    ]
+  },
+  {
+   "anahtar": "Q19820268",
+   "sanatci": "pierre-puvis-de-chavannes",
+   "baslik": "Çölde Mecdelli Meryem",
+   "gorsel": "3c14bc73ccac8644",
+   "noktalar": [
+    {
+     "ad": "Kafatası",
+     "x": 0.52,
+     "y": 0.24,
+     "w": 0.12,
+     "h": 0.1,
+     "metin": "Mecdelli Meryem sol elinde bir kafatası tutuyor ve ona bakıyor. Kafatası ölümü ve dünya hayatının geçiciliğini düşünmeyi anlatır; tövbekâr Meryem'in geleneksel eşyalarından biridir."
+    },
+    {
+     "ad": "Yüz ve hale",
+     "x": 0.38,
+     "y": 0.14,
+     "w": 0.14,
+     "h": 0.12,
+     "metin": "Başın çevresinde ince, altın bir hale var. Yüz sakin ve düşünceli; ağlayan ya da coşkulu değildir. Puvis duyguyu abartısız, ölçülü bir ifadeyle verir."
+    },
+    {
+     "ad": "Saçlar ve el",
+     "x": 0.28,
+     "y": 0.28,
+     "w": 0.24,
+     "h": 0.14,
+     "metin": "Altın sarısı, çok uzun saçlar göğsün bir kısmını örtüyor; sağ el göğse konmuş. Uzun saçlar Mecdelli Meryem'in geleneksel simgesidir ve tövbenin işareti sayılır."
+    },
+    {
+     "ad": "Kertenkele",
+     "x": 0.02,
+     "y": 0.83,
+     "w": 0.08,
+     "h": 0.08,
+     "metin": "Sol alt köşede bir kayanın üstünde küçük yeşil bir kertenkele duruyor. Anlamı kesin değildir; ıssız, güneşli kayalığın sakini olarak yerin yalnızlığını vurgular."
+    },
+    {
+     "ad": "Geniş manzara",
+     "x": 0.62,
+     "y": 0.36,
+     "w": 0.36,
+     "h": 0.3,
+     "metin": "Sağda, aşağıda açık renkli, kayalık ve uçsuz bucaksız bir ova uzanıyor. Puvis manzarayı ayrıntıya girmeden, soluk mavi ve beyaz lekelerle kurar; bu boşluk yalnızlığı vurgular."
+    },
+    {
+     "ad": "İmza",
+     "x": 0.0,
+     "y": 0.955,
+     "w": 0.18,
+     "h": 0.04,
+     "metin": "Sol alt köşede \"Puvis de Chavannes\" imzası okunuyor. Kırmızı harflerle, kayanın dibine küçük yazılmış."
+    }
+   ]
   }
  ]
 }

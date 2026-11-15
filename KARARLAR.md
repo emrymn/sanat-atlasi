@@ -2258,3 +2258,14 @@ Emre: "devam et hepsini bitir". İş 175'in kalan üç partisi (İtalyan Barok �
 - Doğrulamada 12 kutu düzeltildi (Gece Devriyesi'nde yanlış tanınan "bayraktar" ve Seurat'da maymun yerine köpeği gösteren kutu dahil).
   Ayrıntılar ve emin olunmayanlar `scripts/ayrinti/DEVIR.md` "Tur 7"de.
 
+### İş 177 · Akım dörtlüsünde elle seçim: Puvis için Çölde Mecdelli Meryem (sürüm 1.81.3)
+
+Emre: Sembolizm dörtlüsündeki Puvis eseri (Tatlı Manzara) kötü görünüyor; görseli 500 px. Yerine Çölde Mecdelli Meryem'i istedi.
+
+- **`js/akim.js` · `DORTLU_SECIMI`:** sanatçı id → dörtlüde gösterilecek eserin anahtarı (QID ya da `sanatçıId|başlık`). Sanatçının
+  dörtlüdeki sırası yine en bilinen eserinin sl'sine göre hesaplanır (Puvis yerini korur); yalnız gösterilen eser değişir. Seçilen eser
+  bulunamazsa (görseli düşmüş, temsil dışı) eski davranış. `enBilinenEserler`'e üçüncü parametre olarak verilebilir; birim testi eklendi.
+- **Q19820268 Çölde Mecdelli Meryem** (Städel, 1870; görsel 1726×2553): yakın okuma (260 kelime) ve 6 nokta. Kırpıntıda sol alttaki
+  hayvanın yılan değil **kertenkele** olduğu, arka planın deniz değil kayalık bir ova olduğu görüldü; metin buna göre yazıldı.
+- Tatlı Manzara'nın başyapıt kaydı ve noktaları yerinde kaldı (Başyapıtlar listesinde görünmeye devam eder). Toplam 154 başyapıt, 875 nokta.
+

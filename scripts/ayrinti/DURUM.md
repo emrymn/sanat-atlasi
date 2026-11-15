@@ -2,7 +2,7 @@
 
 Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-15). Elle düzenleme.
 
-**Toplam: 153 / 153 başyapıt bitti (869 nokta; eser başına ortalama 5.7).** Kalan: 0.
+**Toplam: 154 / 154 başyapıt bitti (875 nokta; eser başına ortalama 5.7).** Kalan: 0.
 
 ## Akım akım
 
@@ -253,7 +253,7 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-15). Elle düzenle
 | Moulin Rouge: La Goulue | Henri de Toulouse-Lautrec | ✓ 6 nokta |
 | Nereden Geliyoruz? Neyiz? Nereye Gidiyoruz? | Paul Gauguin | ✓ 6 nokta |
 
-### Sembolizm · 4 / 4
+### Sembolizm · 5 / 5
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
@@ -261,6 +261,7 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-15). Elle düzenle
 | Ölüler Adası | Arnold Böcklin | ✓ 5 nokta |
 | Oidipus ile Sfenks | Gustave Moreau | ✓ 6 nokta |
 | Tatlı Manzara (Doux pays) | Pierre Puvis de Chavannes | ✓ 5 nokta |
+| Çölde Mecdelli Meryem | Pierre Puvis de Chavannes | ✓ 6 nokta |
 
 ### Art Nouveau ve Viyana Secession · 1 / 1
 

@@ -7,6 +7,7 @@
 **Tur 5 · 5 Kasım 2026 · Claude (Claude Code).** Plan Parti 4 + Parti 5 (Ingres → Bacon): 27 eser, 153 nokta. Sürüm 1.71.4, KARARLAR İş 155. **107 / 107 bitti.**
 **Tur 6 · 15 Kasım 2026 · Claude (Claude Code).** Akım dörtlüsü, Parti A (Gotik → Maniyerizm): 9 yeni başyapıt (yakın okuma + 53 nokta). Sürüm 1.81.1, KARARLAR İş 175. **116 / 116**; dörtlüden kalan 37 eser `akim_secim.json`'da.
 **Tur 7 · 15 Kasım 2026 · Claude (Claude Code).** Akım dörtlüsü, Parti B + C + D (İtalyan Barok → Dada): 37 yeni başyapıt (yakın okuma + 197 nokta). Sürüm 1.81.2, KARARLAR İş 176. **153 / 153**; dörtlüde yerel görselli eksik kalmadı.
+**Tur 8 · 15 Kasım 2026 · Claude (Claude Code).** Puvis dörtlüsü elle seçimle Çölde Mecdelli Meryem (`js/akim.js` · `DORTLU_SECIMI`), 1 başyapıt + 6 nokta. Sürüm 1.81.3, KARARLAR İş 177. **154 / 154**.
 Bir sonraki model önce `TALIMAT.md`'yi, sonra bu dosyayı, sonra `DURUM.md`'yi okur; **güncel hazır istem en altta** (Tur 7 bölümü).
 
 ## 1. Yapılanlar
@@ -495,4 +496,15 @@ Emre: "devam et hepsini bitir". Tur 6'nın planındaki üç parti tek turda yap�
 > kayıt (künye önbellekten; `ozet`; dört bölüm 250–350 kelime; `bak` 3) ve `data/eser_ayrintilari.json`'a 4–6 nokta ekle (iki aşamalı
 > doğrulama). Yerel görseli olmayan 7 eser (`yerel_gorseli_olmayan`) ancak görseli yerel kopyaya alınınca yapılabilir. `denetle.py` sıfır
 > hata, `durum.py`, `npm run test:unit`, yama sürümü, PR. `tools/` ve `data/sanatcilar.json`'a dokunma.
+
+# Tur 8 · Dörtlüde elle seçim (Puvis)
+
+- Emre Tatlı Manzara'nın (500 px) yerine Puvis'in **Çölde Mecdelli Meryem**'ini (Q19820268) istedi. `js/akim.js`'ye `DORTLU_SECIMI` eklendi:
+  sanatçının sırası en bilinen eserine göre kalır, yalnız gösterilen eser değişir. Başka bir sanatçı için aynı şey bu nesneye bir satırla yapılır;
+  sonra `akim_secim.mjs` yeni eseri listeler ve o eser için başyapıt + nokta yazılır.
+- Q19820268: künye önbellekten (1870, Städel Museum; Commons dosya adında 1869 geçiyor, künyeye yazılmadı). 6 nokta, 4096'dan doğrulandı;
+  sol alttaki hayvan kertenkele (ilk taslakta "yılan" yazılmıştı, kırpıntıda bacakları görüldü), arka plan kayalık ova.
+- Düşük çözünürlüklü öteki başyapıt görselleri (ölçüm: en büyük kopyanın uzun kenarı) 1280'in altında: Puvis · Tatlı Manzara 500,
+  Simone Martini 844, Fra Angelico · Müjde 955, Pietro Lorenzetti 1021, Preti 1099, Boucher · Sarışın Odalık 1100, Rosso 1140, Salviati 1200,
+  Holman Hunt 1224 (genişlik 600). Daha büyük Commons dosyası aranıp görsel değiştirilirse noktalar yeniden doğrulanmalı.
 

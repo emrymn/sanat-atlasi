@@ -34,15 +34,24 @@ export function tipikKonular(konular, uyeIdler, adet = 4) {
     .slice(0, adet);
 }
 
+// Akım dörtlüsünde bilinirliğe (sl) göre değil elle seçilen eser (sanatçı id → eser anahtarı: QID ya da "sanatçıId|başlık").
+// Sanatçının dörtlüdeki sırası yine en bilinen eserinin sl'sine göredir; yalnız gösterilen eser değişir. Bkz. KARARLAR "İş 177".
+export const DORTLU_SECIMI = {
+  'pierre-puvis-de-chavannes': 'Q19820268', // Çölde Mecdelli Meryem: Tatlı Manzara'nın tek görseli 500 px
+};
+
 // En bilinen eserler: her sanatçıdan en çok bir (çeşitlilik), sonra bilinirliğe (sl) göre; en çok `adet`
-// listeler: [{ s, eserler }]
-export function enBilinenEserler(listeler, adet = 4) {
+// listeler: [{ s, eserler }]; secim: DORTLU_SECIMI biçiminde (sanatçı → gösterilecek eser)
+export function enBilinenEserler(listeler, adet = 4, secim = DORTLU_SECIMI) {
   const ilk = [];
   for (const { s, eserler } of listeler) {
-    const e = (eserler || []).filter((x) => x.gorseller && x.gorseller.length && temsilOlabilir(x)).sort((a, b) => (b.sl || 0) - (a.sl || 0))[0];
-    if (e) ilk.push({ s, e });
+    const l = (eserler || []).filter((x) => x.gorseller && x.gorseller.length && temsilOlabilir(x)).sort((a, b) => (b.sl || 0) - (a.sl || 0));
+    if (!l.length) continue;
+    const istenen = secim && secim[s.id];
+    const e = (istenen && l.find((x) => (x.qid || `${s.id}|${x.baslik}`) === istenen)) || l[0];
+    ilk.push({ s, e, sl: l[0].sl || 0 });
   }
-  return ilk.sort((a, b) => (b.e.sl || 0) - (a.e.sl || 0)).slice(0, adet);
+  return ilk.sort((a, b) => b.sl - a.sl).slice(0, adet).map(({ s, e }) => ({ s, e }));
 }
 
 // Akım karşılaştırma adresi (sıra korunur: soru sorulan akım solda)
