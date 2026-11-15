@@ -20223,3 +20223,255 @@ html .parcali input:focus-visible + span {
     animation: none;
   }
 }
+
+/* ===== İş 180 · İncele yeniden (Emre'nin tasarımı, Design tuvalinde birlikte çizildi): numaralı noktalar ve alttaki
+   düz panel kalktı. Tablo bütün ekranı alır (arkasında tablonun kendi bulanık ışığı), kamera ayrıntıdan ayrıntıya kayar;
+   tablonun üstünde işaret yok (dokunma alanları görünmez). Yazı yarı saydam, buzlu bir kartta (Bugün'deki yürüyüş
+   kartıyla aynı dil); ayrıntı resmin altındaysa kart üste geçer. Altta geri düğmesi, ilerleme çubuğu ve halkalı
+   ilerle düğmesi. ===== */
+.gor.inceleme .gor-alt {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  padding: 0 calc(env(safe-area-inset-right) + 16px) calc(env(safe-area-inset-bottom) + 22px) calc(env(safe-area-inset-left) + 16px);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  pointer-events: none;
+  justify-content: flex-end;
+  gap: 0;
+}
+.gor.inceleme .gor-alt > :not(.gor-inceleme) {
+  display: none;
+}
+.gor.inceleme .gor-inceleme {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 14px;
+}
+.gor-inceleme > * {
+  pointer-events: auto;
+}
+.gor-noktalar .gor-nokta,
+.gor-noktalar .gor-nokta.aktif {
+  background: transparent;
+}
+.gor-nokta i {
+  display: none;
+}
+.gor-inc-kart {
+  border-radius: 20px;
+  border: 1px solid rgba(235, 229, 218, 0.14);
+  background: rgba(24, 22, 20, 0.52);
+  -webkit-backdrop-filter: blur(14px) saturate(1.1);
+  backdrop-filter: blur(14px) saturate(1.1);
+  color: #ebe5da;
+  overflow: hidden;
+}
+.gor-inc-kart.yukari {
+  order: -1;
+  margin-top: calc(env(safe-area-inset-top) + 66px);
+  margin-bottom: auto;
+}
+.gor-inc-kart.gel {
+  animation: gor-inc-gel 0.9s cubic-bezier(0.22, 0.61, 0.36, 1) 0.45s both;
+}
+@keyframes gor-inc-gel {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+.gor-inc-katla {
+  display: flex;
+  width: 100%;
+  min-height: 44px;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 18px 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.gor-inc-kart.kapali .gor-inc-katla {
+  padding-bottom: 16px;
+}
+.gor-inc-ust {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+.gor-inc-no {
+  font: 500 11px/1.2 var(--sans);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(235, 229, 218, 0.68);
+}
+.gor-inc-ad {
+  font: 400 24px/1.12 var(--serif);
+  color: #f3efe9;
+}
+.gor-inc-ok {
+  flex: none;
+  margin-top: 2px;
+  color: rgba(235, 229, 218, 0.7);
+  transition: transform 0.4s ease;
+}
+.gor-inc-kart.kapali .gor-inc-ok {
+  transform: rotate(180deg);
+}
+.gor-inc-metin {
+  margin: 0;
+  min-height: 0;
+  padding: 10px 18px 18px;
+  font: 400 17px/1.5 var(--okuma);
+  color: #ebe5da;
+}
+.gor-inc-metin[hidden],
+.gor-inc-kart.kapali .gor-inc-metin {
+  display: none;
+}
+.gor-inc-kart:has(.gor-inc-metin[hidden]) .gor-inc-katla {
+  padding-bottom: 16px;
+}
+.gor-inc-dugmeler {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 6px;
+}
+.gor-inc-dugmeler button {
+  min-height: 0;
+  padding: 0;
+  font: inherit;
+}
+.gor-inc-dugmeler .gor-inc-geri,
+.gor-inc-dugmeler .gor-inc-ileri {
+  flex: none;
+  border-radius: 50%;
+  color: #f3efe9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+.gor-inc-dugmeler .gor-inc-geri {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(243, 239, 233, 0.14);
+  background: rgba(30, 27, 24, 0.28);
+}
+.gor-inc-dugmeler .gor-inc-ileri {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  background: rgba(30, 27, 24, 0.32);
+}
+.gor-inc-dugmeler button:disabled {
+  opacity: 0.35;
+}
+.gor-inc-halka {
+  position: absolute;
+  inset: 0;
+  transform: rotate(-90deg);
+  fill: none;
+  stroke-width: 1.5;
+  stroke: rgba(243, 239, 233, 0.16);
+}
+.gor-inc-halka .dolu {
+  stroke: #f3efe9;
+  stroke-linecap: round;
+  stroke-dasharray: 175.93;
+  stroke-dashoffset: 175.93;
+  transition: stroke-dashoffset 0.9s cubic-bezier(0.45, 0, 0.2, 1);
+}
+.gor-inc-serit {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.gor-inc-serit button {
+  flex: 1 1 0;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: flex-grow 0.45s cubic-bezier(0.45, 0, 0.2, 1);
+}
+.gor-inc-serit button.aktif {
+  flex-grow: 2.4;
+}
+.gor-inc-serit i {
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(243, 239, 233, 0.22);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.45s ease;
+}
+.gor-inc-serit .gecti i {
+  background: rgba(243, 239, 233, 0.55);
+}
+.gor-inc-serit .aktif i {
+  background: #f3efe9;
+}
+/* incelemeyi bitir: kapat düğmesinin solunda, aynı buzlu yuvarlak */
+.gor-inc-dugmeler ~ .gor-inc-bitir {
+  position: absolute;
+  top: calc(env(safe-area-inset-top) + 10px);
+  right: calc(env(safe-area-inset-right) + 64px);
+  width: 44px;
+  height: 44px;
+  min-height: 0;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(243, 239, 233, 0.16);
+  background: rgba(30, 27, 24, 0.38);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  color: #f3efe9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.gor.inceleme .gor-sahne::before {
+  opacity: calc(var(--isik-op, 0) * 0.85);
+}
+.gor.inceleme.sade .gor-alt {
+  opacity: 0;
+  pointer-events: none;
+}
+.gor.inceleme.sade .gor-alt * {
+  pointer-events: none;
+}
+@media (prefers-reduced-transparency: reduce) {
+  .gor-inc-kart {
+    background: rgba(24, 22, 20, 0.92);
+  }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .gor-inc-kart {
+    max-width: 420px;
+  }
+  .gor-inc-kart.yukari {
+    margin-top: calc(env(safe-area-inset-top) + 12px);
+  }
+}
