@@ -6,7 +6,8 @@
 **Tur 4 · 5 Kasım 2026 · Claude (Claude Code).** Plan Parti 3 (Claude Lorrain → Millais): 20 eser, 117 nokta. Sürüm 1.71.3, KARARLAR İş 154.
 **Tur 5 · 5 Kasım 2026 · Claude (Claude Code).** Plan Parti 4 + Parti 5 (Ingres → Bacon): 27 eser, 153 nokta. Sürüm 1.71.4, KARARLAR İş 155. **107 / 107 bitti.**
 **Tur 6 · 15 Kasım 2026 · Claude (Claude Code).** Akım dörtlüsü, Parti A (Gotik → Maniyerizm): 9 yeni başyapıt (yakın okuma + 53 nokta). Sürüm 1.81.1, KARARLAR İş 175. **116 / 116**; dörtlüden kalan 37 eser `akim_secim.json`'da.
-Bir sonraki model önce `TALIMAT.md`'yi, sonra bu dosyayı, sonra `DURUM.md`'yi okur; **güncel hazır istem en altta** (Tur 6 bölümü).
+**Tur 7 · 15 Kasım 2026 · Claude (Claude Code).** Akım dörtlüsü, Parti B + C + D (İtalyan Barok → Dada): 37 yeni başyapıt (yakın okuma + 197 nokta). Sürüm 1.81.2, KARARLAR İş 176. **153 / 153**; dörtlüde yerel görselli eksik kalmadı.
+Bir sonraki model önce `TALIMAT.md`'yi, sonra bu dosyayı, sonra `DURUM.md`'yi okur; **güncel hazır istem en altta** (Tur 7 bölümü).
 
 ## 1. Yapılanlar
 
@@ -432,3 +433,66 @@ Akım dörtlüsü yalnız açık sanatçılardan seçilir; betik bütün konular
 > sıfır hata, `python3 scripts/ayrinti/durum.py`, `npm run test:unit`; DEVIR'e tur notu, KARARLAR'a iş notu, README sayıları, yama
 > sürümü (`sw.js`, `js/surum.js`, `tests/unit/paket8.test.mjs` iki yerde, `tests/e2e/paket8.spec.js`), PR. `tools/` ve
 > `data/sanatcilar.json`'a dokunma. Yarım eser bırakma.
+
+---
+
+# Tur 7 · Akım dörtlüsü, Parti B + C + D (Claude, Claude Code)
+
+Emre: "devam et hepsini bitir". Tur 6'nın planındaki üç parti tek turda yapıldı. `akim_secim.json`'da yerel görselli eksik kalmadı
+(96 eserin 89'u başyapıtta; kalan 7'nin yerel görseli yok, kapsam dışı).
+
+## Yapılanlar
+
+- **37 yeni başyapıt**, Tur 6 ile aynı biçim: künye `eserler_onbellek.json`'dan, `ozet`, dört bölüm (250–264 kelime), `bak` 3; ayrıntı
+  kaydında 4–6 nokta (`bak`'taki üç ayrıntı her kayıtta bir noktada). Kayıtlar aynı sanatçının mevcut kaydının, yoksa aynı akımın son
+  kaydının arkasına kondu.
+  - **B · Barok (16 eser, 83 nokta):** Caravaggio · Matta'nın Çağrılışı, Artemisia · Judith (Napoli), Ribera · Yakup'un Rüyası, Honthorst ·
+    Aracı Kadın, Velázquez · Nedimeler, van Dyck · Eros ve Psykhe, Vermeer · İnci Küpeli Kız, Rembrandt · Gece Devriyesi, Hals · Neşeli İçici,
+    Ruisdael · Yel Değirmeni, Poussin · Mısır'a Kaçış, Claude · Aziz Ursula, Rosa · Talih Alegorisi, Preti · Aziz Sebastian, Giordano ·
+    Meryem'in Evliliği, Solimena · Diana ve Endymion.
+  - **C · Rokoko → Realizm (9 eser, 51 nokta):** Gainsborough · Mavi Çocuk, Boucher · Banyodan Çıkan Diana, David · Sokrates'in Ölümü,
+    Kauffman · Terk Edilen Ariadne, Holman Hunt · Dünyanın Işığı, Rossetti · Proserpina, Cabanel · Venüs'ün Doğuşu, Courbet · Dünyanın
+    Kökeni (4 nokta, sade dil), Corot · Narni Köprüsü.
+  - **D · Empresyonizm → Dada (12 eser, 63 nokta):** Manet · Çimenler Üzerinde Öğle Yemeği, Renoir · Moulin de la Galette, Degas · Absent,
+    Hokusai · Büyük Dalga, Hiroshige · Tōkaidō: Hara, Seurat · Grande Jatte, Böcklin · Ölüler Adası, Moreau · Oidipus ile Sfenks, Puvis ·
+    Tatlı Manzara, Marc · Mavi Atlar Kulesi, Höch · Boyun Eğiş, Man Ray · Fovist Manzara.
+- **Yazıtlar** 4096'dan okundu: Boucher "1742 f. Boucher", David'in sekideki "L D"si, Hals'in "FH" monogramı, Cabanel'in "ALEX. CABANEL"i,
+  Degas'nın imzası, Höch'ün "H.H."si, Man Ray'in imzası, Rossetti'nin yazı şeridi ve şiir kartuşu, Hiroshige'nin başlık kartuşu.
+- **İki aşamalı doğrulama:** 1280 ızgara → en büyük kopyadan %30 paylı kırpıntı. Düzeltilenler: Honthorst lavtası dardı; Vermeer türbanı
+  mavi bandın solunu almıyordu; **Gece Devriyesi'nde "Bayraktar" sanılan figür bayraktar değildi** → nokta "Mızraklar" ile değiştirildi;
+  Hals monogramı kaydırıldı; Poussin meleğinin kanadı dışarıdaydı; Rosa'da incilerin ve tacın kenarda kalması; Boucher imzası kutunun
+  altındaydı; David'in zincir kutusu dardı; Holman Hunt'ta kapıyı çalan el kenardaydı; **Seurat'da "Maymun" kutusu küçük köpeği
+  çerçeveliyordu** (maymun sağında, 0,69–0,78); Renoir'da "Benekli ışık" dans eden çiftle aynı yeri gösteriyordu, sol alta alındı.
+- **Denetim geçişi** (olgu, yorum, Türkçe): Ribera'nın Murillo atfı "bir dönem"; Artemisia kılıcına yüklenen Hristiyan imgesi yorumu
+  çıkarıldı; Ruisdael'de "değirmen bugün yoktur" çıkarıldı (kasabada bugün başka bir değirmen var, ilişkisi tartışmalı); Rosa'daki tacın
+  "havada" durduğu yanlıştı (bir hayvanın sırtında); Degas'da "kibrit kabı" görsele dayanmıyordu, çıkarıldı; Degas modellerine dair
+  sonraki açıklama yumuşatıldı; Gece Devriyesi restorasyonu "2019'da başlayan" diye zamandan bağımsız yazıldı.
+
+## Emin olunmayanlar ve künye sapmaları
+
+- **Artemisia (Q2247406):** önbellekteki `tarih` kurs notundan ("yaklaşık 1620 (metinde ayrıca 1612–1613 tarihli bir versiyon da anılır)"),
+  Uffizi versiyonuna ait. Görsel ve QID Napoli versiyonu; `tarih` **1612–1613** yazıldı (önbellek metnindeki tarih), başlığa "(Napoli)" eklendi.
+- **Böcklin:** künye önbellekteki gibi "1886 · Berlin". Berlin'deki versiyon 1883, 1886'daki Leipzig'dedir; görselin hangisi olduğu
+  kesinleştirilmedi, metin versiyon adı vermez ("beş versiyon: Basel, New York, Berlin, Leipzig, biri kayıp").
+- **Hokusai:** görsel Chicago Sanat Enstitüsü nüshası (CC0), künye önbellekteki gibi British Museum; metin bunu söyler.
+- **Hiroshige:** kayıt bütün diziyi anar; görsel `Tokaido53_Hara.jpg`, yani **Hara: Sabah Fuji'si** yaprağı. Başlık ve özet bunu söyler;
+  `muze` önbellekte yok, boş.
+- **Franz Marc:** tablo 1945'ten beri kayıp; görsel eski bir renkli reprodüksiyon. Künye önbellekteki gibi Alte Nationalgalerie (eski yeri).
+  "Hilal" göğüsteki açık renkli kavis için kullanıldı; bir yıldız da olduğu söylenir, görselde seçilmediği için yazılmadı.
+- **Höch ve Man Ray lisansı:** Commons sayfalarında ikisi de "Public domain" etiketli (bu turda API'den bakıldı). Höch'ün tablosu hakkında
+  kaynak az; yorumlar "okunabilir / bir yorumdur" diye yumuşatıldı.
+- **Küçük görseller:** Puvis 500 px (metin ve noktada söylendi), Holman Hunt 600 px, Preti 770 px; Caravaggio, Artemisia, Poussin, Preti,
+  Holman Hunt, Puvis, Marc'ın 4096'sı yok, doğrulama 1280'den. Van Dyck ve Proserpina'nın en büyük kopyaları da 2300 px civarında.
+- **Yorum düzeyindekiler:** Caravaggio'da Matta'nın kimliği, Vermeer incisinin malzemesi, Hals madalyonundaki prens, Rosa'daki yırtıcı kuş
+  (türü yazılmadı), Seurat'nın maymunu, Böcklin'in beyaz figürü, Courbet modelinin kimliği (2018 önerisi), Puvis'in Bonnat için yapılması
+  ("aktarılır"), Gainsborough'nun Reynolds'a cevabı ("şüpheli").
+- **Velázquez `muze`:** önbellekteki uzun metnin ("Konusu: … bugün Museo del Prado, Madrid") son kısmı alındı: "Museo del Prado, Madrid" (künye satırında tüm metin çok uzun görünüyordu).
+
+## Sonraki modele hazır istem
+
+> Akım dörtlüsü işi bitti (KARARLAR İş 175–176). Yeni bir akım ya da sanatçı eklenirse `node scripts/ayrinti/yardimci/akim_secim.mjs`
+> ile `scripts/ayrinti/akim_secim.json`'u yenile; `eserler` listesinde çıkan her eser için Tur 6–7'deki gibi `data/basyapitlar.json`'a
+> kayıt (künye önbellekten; `ozet`; dört bölüm 250–350 kelime; `bak` 3) ve `data/eser_ayrintilari.json`'a 4–6 nokta ekle (iki aşamalı
+> doğrulama). Yerel görseli olmayan 7 eser (`yerel_gorseli_olmayan`) ancak görseli yerel kopyaya alınınca yapılabilir. `denetle.py` sıfır
+> hata, `durum.py`, `npm run test:unit`, yama sürümü, PR. `tools/` ve `data/sanatcilar.json`'a dokunma.
+

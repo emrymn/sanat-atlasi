@@ -2245,3 +2245,16 @@ Emre: akım sayfalarındaki "En bilinen eserler" dörtlüsünü 107 başyapıtla
 - Uygulama kodu değişmedi (sanatçı sayfası birden çok yakın okumayı zaten listeliyor). Yalnız veri, betik, DEVIR/DURUM, README
   satırları ve yama sürümü; Yenilikler listesine girmedi. Birim 369/369; `ayrinti` ve `paket8` uçtan uca 13/14 (düşen K4 `--sal`
   testi 1.80.0 notundaki gibi main'de de düşüyor).
+
+### İş 176 · Akım dörtlüsü, Parti B + C + D: 37 yakın okuma daha (sürüm 1.81.2)
+
+Emre: "devam et hepsini bitir". İş 175'in kalan üç partisi (İtalyan Barok → Dada) tek turda yapıldı.
+
+- 37 yeni başyapıt (Barok 16, Rokoko → Realizm 9, Empresyonizm → Dada 12), İş 8 biçiminde yakın okuma (dört bölüm 250–264 kelime,
+  3 "Yakından bak") ve İş 151 biçiminde 4–6 nokta (197 nokta). Toplam **153 başyapıt, 869 nokta**. Akım dörtlüsünde yerel görselli
+  eksik kalmadı (96'nın 89'u başyapıt; 7'sinin yerel görseli yok).
+- Yaprak/nüsha durumları açıkça yazıldı: Hiroshige kaydının görseli Hara yaprağı; Hokusai görseli Chicago nüshası; Marc'ın tablosu kayıp
+  (eski reprodüksiyon). Künye sapması tek: Artemisia'nın Napoli versiyonu için `tarih` 1612–1613 (önbellekteki kurs notu Uffizi versiyonuna ait).
+- Doğrulamada 12 kutu düzeltildi (Gece Devriyesi'nde yanlış tanınan "bayraktar" ve Seurat'da maymun yerine köpeği gösteren kutu dahil).
+  Ayrıntılar ve emin olunmayanlar `scripts/ayrinti/DEVIR.md` "Tur 7"de.
+

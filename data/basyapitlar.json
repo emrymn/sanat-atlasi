@@ -1928,7 +1928,7 @@
    "baslik": "Nedimeler (Las Meninas)",
    "ozgun": "Las Meninas",
    "tarih": "y. 1656",
-   "muze": "Konusu: büyük olasılıkla Alcázar of Madrid'deki Velázquez atölyesi (alternatif: El Escorial kütüphanesi); bugün Museo del Prado, Madrid",
+   "muze": "Museo del Prado, Madrid",
    "ozet": "Diego Velázquez'in Prado'daki Nedimeler'i, İspanya kralının sarayında küçük prenses Margarita'yı nedimeleri ve ressamın kendisiyle birlikte gösterir; aynadaki kral ve kraliçeyle izleyiciyi de sahnenin içine çeken, resim tarihinin en çok tartışılan tablolarından biridir.",
    "bolumler": [
     {
@@ -3843,6 +3843,38 @@
    ]
   },
   {
+   "anahtar": "Q152509",
+   "sanatci": "edouard-manet",
+   "baslik": "Çimenler Üzerinde Öğle Yemeği (Le Déjeuner sur l'herbe)",
+   "ozgun": "Le Déjeuner sur l'herbe",
+   "tarih": "1863 (slayt etiketi)",
+   "muze": "Musée d'Orsay",
+   "ozet": "Édouard Manet'nin Musée d'Orsay'daki bu büyük tuvali, ormanda giyimli iki erkekle oturan çıplak bir kadını hiçbir mitolojik bahane olmadan gösterir; 1863'te Reddedilenler Salonu'nda skandala yol açan eser, modern resmin başlangıç noktalarından biri sayılır.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Bir ormanın açıklığında, çimenlerin üstünde üç kişi oturuyor. Soldaki kadın çıplaktır; dizini kucaklamış, çenesini eline dayamış ve doğrudan bize bakıyor. Yanında koyu ceketli, kravatlı iki genç adam var; sağdaki konuşur gibi elini uzatmış, başında püsküllü bir şapka var. Sol önde kadının giysileri, bir hasır şapka ve devrilmiş bir sepetten dökülen meyveler, ekmek ve bir şişe görülüyor. Arkada, derede eğilmiş ince gömlekli bir kadın yıkanıyor. En üstte bir kuş uçuyor."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Manet derinliği bilerek düzleştirir. Arkadaki yıkanan kadın, uzaklığına göre fazla büyüktür ve sanki ön plana yakın asılı durur. Çıplak kadının teni sert, düz bir ışıkla aydınlatılmıştır; yumuşak geçişler yerine açık ve koyu alanlar yan yana konur. Erkeklerin siyah giysileri bu açık tenle keskin bir karşıtlık kurar. Orman ve arka plan geniş, gevşek fırça vuruşlarıyla boyanmıştır. Sol alttaki natürmort ise canlı, hızlı vuruşlarla yapılmış bağımsız bir resim gibidir. Işık sanki stüdyodan gelir gibi önden düşer; ormanın gölgeli havasıyla uyuşmaz."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Kompozisyon, Raffaello'nun bir tasarımına dayanan Marcantonio Raimondi'nin Paris'in Yargısı gravüründeki üç figürden alınmıştır; Tiziano'ya atfedilen Kır Konseri de esin kaynakları arasında sayılır. Manet bu klasik düzeni çağdaş Parislilere giydirir. Sorun çıplaklığın kendisi değil, kadının bir tanrıça değil, izleyiciye utanmadan bakan gerçek bir kadın olmasıydı. Model Victorine Meurent'tir; erkekler için ressamın yakınları poz vermiştir."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Tablo 1863 Salonu'nun jürisince reddedildi ve imparatorun izniyle açılan Reddedilenler Salonu'nda sergilendi. Seyirci ve eleştirmenler hem konusuna hem de \"bitmemiş\" görünen tekniğine öfkelendi. Aynı yıl Cabanel'in pürüzsüz Venüs'ü övgü topluyordu. Manet'nin cesareti genç Empresyonist ressamları etkiledi; Monet aynı adla kendi büyük tablosunu yaptı. Tablonun boyutu da şaşırtıcıydı: bu ölçek o güne dek tarih ve mitoloji resimlerine ayrılmıştı."
+    }
+   ],
+   "bak": [
+    "Çıplak kadının izleyiciye doğrudan bakışı",
+    "Sol alttaki devrilmiş sepet, meyveler ve giysiler",
+    "Arkada dereye eğilmiş, ölçeği tuhaf duran yıkanan kadın"
+   ]
+  },
+  {
    "anahtar": "Q3821820",
    "sanatci": "edgar-degas",
    "baslik": "Bale Dersi",
@@ -3872,6 +3904,38 @@
     "Sol alt köşedeki yeşil sulama kabı: tozu bastırmak için zemini ıslatmaya yarar, üzerinde Degas'nın imzası okunur.",
     "Ön plandaki dansçının ayaklarının yanında, alt ortadaki küçük köpek: ciddi derse karışan sevimli, gündelik bir ayrıntı.",
     "Soldaki piyanonun üstünde oturup sırtını kaşıyan dansçı: Degas'nın zarafet yerine doğal ve sıradan bir hareketi seçtiğini gösterir."
+   ]
+  },
+  {
+   "anahtar": "Q1239950",
+   "sanatci": "edgar-degas",
+   "baslik": "Absent İçenler (L'Absinthe)",
+   "ozgun": "L'Absinthe",
+   "tarih": "1875",
+   "muze": "Musée d'Orsay",
+   "ozet": "Edgar Degas'nın Musée d'Orsay'daki bu tablosu, bir Paris kafesinde yan yana oturan ama birbirine bakmayan bir kadınla bir adamı gösterir; önündeki bir bardak absentle boşluğa bakan kadın, modern kentteki yalnızlığın simgesi olmuştur.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Bir kafenin köşesinde, deri bir sedirde bir kadın ve bir adam oturuyor. Kadının başında süslü bir şapka var, omuzları düşmüş, gözleri boş bir noktaya dalmış. Önündeki masada açık yeşil bir içkiyle dolu bir bardak, yani absent duruyor. Yanındaki adam şapkalı, sakallı, ağzında pipo; sağa, çerçevenin dışına bakıyor. Önde iki boş mermer masa var; birinin üstünde sopalara takılı gazeteler duruyor. Arkadaki aynada ikisinin bulanık gölgeleri görülüyor. Kadının ayakları masanın altından görünüyor, ayakkabıları eskimiş."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Kompozisyon tuhaf biçimde kaydırılmıştır: figürler sağ üst köşeye itilmiş, önü boş masalar kaplamıştır. Masaların ayakları görünmez; zigzag çizerek izleyiciyi figürlere doğru yönlendirirler. Bu kesik, asimetrik düzen fotoğrafların ve Japon baskılarının etkisini gösterir. Renkler soluk ve kirlidir: gri, kahverengi, krem ve yalnız bardaktaki yeşil. Işık donuk ve gündüz ışığıdır. Adam çerçeve tarafından kesilmiştir. Adamın önünde de koyu renkli bir içki duruyor; iki bardak masanın üstünde birbirinden uzak durur."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Absent, 19. yüzyıl Paris'inde çok içilen, güçlü ve bağımlılık yapan bir içkiydi; zararları sık tartışılırdı. Kadının yorgun duruşu ve boş bakışı bir yalnızlık ve çöküş havası verir. İki figür yan yana ama birbirinden kopuktur. Modeller, aktris Ellen Andrée ile ressam ve gravürcü Marcellin Desboutin'dir. Tablo İngiltere'de ilk gösterildiğinde ahlaksız bulundu; modellerin gerçekte içki düşkünü olmadığı sonradan özellikle vurgulandı."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Degas, Empresyonistlerle birlikte sergi açtı ama açık hava manzarasından çok kent içi sahneleri, kafeleri, tiyatroları ve dansçıları resmetti. Bu tablo onun modern hayata bakışını en iyi özetleyen eserlerden biridir. Sahne, sanatçıların buluştuğu Nouvelle Athènes kafesinde geçer. Sol alttaki masanın üstünde Degas'nın imzası okunur. Degas aynı yıllarda kafelerde çalışan şarkıcıları ve kadınları da resmetti."
+    }
+   ],
+   "bak": [
+    "Kadının önündeki açık yeşil absent bardağı",
+    "Boş masaların ayaksız, zigzag çizen yüzeyleri",
+    "Pipolu adamın çerçevenin dışına kayan bakışı"
    ]
   },
   {
@@ -3971,6 +4035,38 @@
    ]
   },
   {
+   "anahtar": "Q683274",
+   "sanatci": "pierre-auguste-renoir",
+   "baslik": "Moulin de la Galette'de Balo (Bal du moulin de la Galette)",
+   "ozgun": "Bal du moulin de la Galette",
+   "tarih": "1876",
+   "muze": "Musée d'Orsay",
+   "ozet": "Pierre-Auguste Renoir'ın Musée d'Orsay'daki bu büyük tablosu, Paris'in Montmartre semtindeki açık hava dans yeri Moulin de la Galette'te bir pazar öğleden sonrasını, ağaçların arasından süzülen benekli güneş ışığıyla gösterir.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Ağaçların gölgesinde kalabalık bir bahçe. Önde bir bankta ve masada gençler oturuyor: çizgili elbiseli bir kız arkasındaki kadına yaslanmış, bir genç adam sırtı bize dönük konuşuyor. Sağdaki masada hasır şapkalı adamlar sohbet ediyor, masada bardaklar ve şişeler var. Solda pembe elbiseli bir kız bir adamla dans ediyor. Arkada daha birçok çift dönüyor. Yukarıda ağaç dalları arasında yuvarlak gaz lambaları asılı. Kalabalığın arasında hasır şapkalar, silindir şapkalar ve çiçekli bonelerle her sınıftan insan görülür."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Resmin asıl konusu ışıktır. Güneş yaprakların arasından süzülür ve giysilere, yüzlere, zemine açık lekeler halinde düşer. Renoir bu benekli ışığı hızlı, kısa fırça vuruşlarıyla verir; siyah gölge kullanmaz, gölgeler mavi ve mor tonlardadır. Figürlerin hatları yumuşak ve bulanıktır, kalabalık bir titreşim gibi görünür. Önde figürler büyük ve yakın, arkada küçük ve dağınıktır. Mavi, pembe ve sarı tonlar bütün yüzeye yayılır. Ağaçların yeşili ile giysilerin koyu mavisi resmin genel tonunu belirler; pembe ve beyaz vurgular ışığın düştüğü yerleri gösterir."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Moulin de la Galette, Montmartre'ın eski değirmenlerinden birinin yanında kurulmuş, işçilerin, sanatçıların ve genç Parislilerin pazar günleri dansa gittiği bir yerdi. Renoir burada modern şehir hayatının sıradan bir eğlencesini gösterir. Figürler arasında ressamın dostlarının ve semtin gençlerinin poz verdiği bilinir. Tablo herhangi bir ders ya da hikâye anlatmaz; amacı bir anın neşesini ve havasını yakalamaktır."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Tablo 1877'deki üçüncü Empresyonist sergide gösterildi. Empresyonizmin en tanınmış eserlerinden biridir: açık hava ışığı, modern hayat konusu ve görünür fırça vuruşları bir arada. Renoir'ın dostu ressam Gustave Caillebotte tarafından alındı ve onun vasiyetiyle Fransız devletine geçti. Renoir'ın daha küçük bir versiyonu özel bir koleksiyondadır. Renoir tabloyu yerinde, bahçede çalışarak hazırladı; tuvali her gün dostlarının yardımıyla oraya taşıdığı anlatılır."
+    }
+   ],
+   "bak": [
+    "Giysilere ve zemine düşen benekli güneş ışığı",
+    "Ağaç dallarına asılmış yuvarlak gaz lambaları",
+    "Önde bankta oturan çizgili elbiseli kız"
+   ]
+  },
+  {
    "anahtar": "Q5826309",
    "sanatci": "utagawa-hiroshige",
    "baslik": "Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak",
@@ -4003,6 +4099,38 @@
    ]
   },
   {
+   "anahtar": "Q243248",
+   "sanatci": "utagawa-hiroshige",
+   "baslik": "Tōkaidō'nun Elli Üç Durağı: Hara, Sabah Fuji'si",
+   "ozgun": "The Fifty-three Stations of the Tōkaidō",
+   "tarih": "1833",
+   "muze": "",
+   "ozet": "Utagawa Hiroshige'nin Tōkaidō yolunun elli üç konak yerini gösteren ünlü baskı dizisinden bu yaprak, Hara konağını anlatır: sabah ışığında pirinç tarlalarının yanından geçen yolcuların arkasında Fuji Dağı yükselir; uygulamadaki görsel dizinin bütünü değil, bu tek yapraktır.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Bir yolda üç yolcu yürüyor: başlarında geniş hasır şapkalar olan iki kadın ve sırtında iki kutu taşıyan bir hamal. Öndeki kadın arkasına dönmüş, eliyle bir şey gösteriyor. Yolun arkasında pirinç tarlaları uzanıyor; tarlada iki turna duruyor. Arkada beyaz, büyük Fuji Dağı yükseliyor; tepesi resmin üst çerçevesini aşıyor. Sağda daha koyu dağlar, solda mavi bir deniz şeridi var. Gökyüzünde bir kuş sürüsü uçuyor. Sol üstte başlık, sağda imza yazılı. Yolun kenarında yeşil otlar, sol alt köşede yuvarlak bir yayıncı mührü var."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Hiroshige geniş, sade alanlar kullanır: beyaz dağ, düz tarla ve boş gökyüzü. Fuji o kadar büyüktür ki tepesi çerçeveden dışarı taşar; bu cesur kesme dağın yüceliğini vurgular. Üstteki kırmızı şerit sabah ışığını anlatır. Figürler küçük ve canlı desenli giysileriyle önde dikkat çeker. Renkler yumuşaktır: soluk pembe, gri, mavi ve beyaz. Çizgiler ince ve akıcıdır. Yolcuların sırtları Fuji'ye dönüktür; büyük dağ, yolculuğun sessiz bir tanığı gibi arkada yükselir."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Tōkaidō, şogunun başkenti Edo'yu (bugünkü Tokyo) imparatorluk kenti Kyoto'ya bağlayan büyük kıyı yoluydu. Yolcular konak yerlerinde dinlenir, yemek yer, geceler. Hiroshige yolu bizzat yolculuk ederek tanıdı. Hara, Fuji'nin en iyi göründüğü duraklardan biriydi. Turnalar Japonya'da uzun ömrün ve iyi talihin simgesidir. Dizi, yolculuğun mevsimlerini, havasını ve günlük hayatını anlatır."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Dizi 1830'larda yayımlandı ve büyük bir başarı kazandı; Hiroshige'yi manzara baskısının ustası yaptı. Seyahat etmenin popüler olduğu Edo döneminde bu baskılar bir hatıra ve rehber gibi alınırdı. Hiroshige'nin şiirsel manzaraları daha sonra Van Gogh'u, Monet'yi ve Whistler'ı etkiledi. Van Gogh Hiroshige'nin iki baskısını yağlı boyayla kopyaladı. Hiroshige'nin Tōkaidō dizisi yolun başından sonuna kadar elli beş yapraktan oluşur: elli üç konak, başlangıç ve varış."
+    }
+   ],
+   "bak": [
+    "Tepesi çerçeveyi aşan Fuji Dağı",
+    "Pirinç tarlasındaki iki turna",
+    "Arkasına dönen kadın ve kutu taşıyan hamal"
+   ]
+  },
+  {
    "anahtar": "Q227494",
    "sanatci": "katsushika-hokusai",
    "baslik": "Fuji Dağı'nın 36 Manzarası",
@@ -4032,6 +4160,38 @@
     "Zirvedeki kar şeritleri (sağ üst): kenarları düzensiz, damar gibi aşağı akan beyaz çizgiler.",
     "Eteklerdeki orman (sol alt): binlerce küçük koyu işaretin, yakına bakınca tek tek ağaç gibi okunması.",
     "Kızıldan yeşile geçiş (resmin alt ortası): kalıpta elle yapılmış bokashi geçişinin yumuşaklığı."
+   ]
+  },
+  {
+   "anahtar": "Q252485",
+   "sanatci": "katsushika-hokusai",
+   "baslik": "Kanagawa Açıklarında Büyük Dalga (Kanagawa oki nami ura)",
+   "ozgun": "Kanagawa oki nami ura",
+   "tarih": "1830",
+   "muze": "British Museum",
+   "ozet": "Katsushika Hokusai'nin Fuji Dağı'nın Otuz Altı Manzarası dizisinden bu renkli ağaç baskı, üç teknenin üstüne kıvrılan dev bir dalgayı ve uzaktaki küçük Fuji'yi gösterir; dünyada en çok tanınan Japon sanat eseridir.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Solda dev bir dalga yükseliyor; tepesi pençeye benzeyen köpüklerle kıvrılmış, aşağıdaki teknelerin üstüne çökmek üzere. Dalganın altında uzun, dar tekneler var; içlerindeki kürekçiler eğilip tutunmuş. Sağda ve ortada daha küçük dalgalar kabarıyor. Uzakta, ortada, karla kaplı küçük bir Fuji Dağı görülüyor; dalganın çukuru onu bir çerçeve gibi kuşatır. Gökyüzü gri. Sol üstte bir kartuşta dizinin ve baskının adı, yanında sanatçının imzası yazılı. Dalganın gölgesindeki deniz koyu mavi, köpükler beyazdır; renkler birkaç tonla sınırlıdır."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Kompozisyon büyük ile küçüğün karşıtlığına dayanır: öndeki dev dalga ve uzaktaki küçük dağ. Fuji, uzaktaki bir dalga gibi aynı üçgen biçimini tekrarlar. Hokusai Avrupa'dan gelen bir pigment olan Prusya mavisini kullanmıştır; bu koyu ve kalıcı mavi dizinin dikkat çeken yeniliğiydi. Çizgiler keskin ve süslüdür, köpükler küçük beyaz noktalar halinde dağılır. Ufuk çok alçaktır ve izleyici dalgaların arasında, denizin seviyesindeymiş gibi hisseder. Baskıyı yapmak için her renk ayrı bir tahta kalıba oyulur ve kâğıda sırayla basılırdı."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Fuji Japonya'da kutsal sayılan, ölümsüzlükle ilişkilendirilen bir dağdır. Burada, doğanın yıkıcı gücü karşısında sakin ve değişmez durur. Teknelerin, balığı hızla pazara taşıyan kayıklar olduğu düşünülür. Dalganın pençeye benzeyen köpükleri onu canlı bir varlık gibi gösterir. Eser hem doğanın korkutucu gücünü hem de insanın ona karşı direnişini anlatır. Kürekçilerin dalganın altında eğilmesi tehlike karşısında birlikte direnmeyi anlatır. Dalga ile dağ arasındaki karşıtlık, geçici olanla kalıcı olanı yan yana koyar."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Baskı tahta kalıplarla binlerce kez basıldı ve ucuza satıldı; bugün dünyanın birçok müzesinde nüshaları vardır. Uygulamadaki görsel Chicago Sanat Enstitüsü'ndeki bir nüshadan gelir. 19. yüzyılın sonunda Avrupa'ya ulaşan Japon baskıları Empresyonistleri ve Van Gogh'u derinden etkiledi; bu etkiye Japonizm denir. Hokusai diziyi yetmiş yaşlarındayken yaptı."
+    }
+   ],
+   "bak": [
+    "Dalganın pençeye benzeyen köpüklü tepesi",
+    "Dalganın çukurunda küçücük görünen Fuji",
+    "Sol üstteki başlık kartuşu ve imza"
    ]
   },
   {
@@ -4096,6 +4256,38 @@
     "Sağdaki kırmızı şapkalı çocuk: şapkada sonradan eklenmiş turuncu ve mavi noktaları arayın.",
     "Arka plan ortası: fabrika bacalarından yükselen dumanın gökyüzüne yumuşakça karışışı.",
     "Ortadaki gencin sırtı ile su arasındaki sınır: ten ve su renklerinin birbirini nasıl belirginleştirdiğine bakın."
+   ]
+  },
+  {
+   "anahtar": "Q1044742",
+   "sanatci": "georges-seurat",
+   "baslik": "Grande Jatte Adası'nda Bir Pazar Öğleden Sonrası",
+   "ozgun": "A Sunday Afternoon on the Island of La Grande Jatte",
+   "tarih": "1884",
+   "muze": "Art Institute of Chicago",
+   "ozet": "Georges Seurat'nın Chicago Sanat Enstitüsü'ndeki bu büyük tablosu, Seine nehrindeki Grande Jatte adasında dinlenen Parislileri küçük renk noktalarından oluşan yeni bir teknikle gösterir; Neo-Empresyonizmin ya da noktacılığın simgesidir.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Nehir kıyısında, ağaçların gölgesinde düzinelerce insan dinleniyor. Sağda siyah giysili bir kadın ve silindir şapkalı bir adam profilden duruyor; kadının ayağının dibinde tasmalı bir maymun var. Solda kıyıda bir kadın olta tutuyor. Önde biri pipo içen, uzanmış bir işçi ve oturan bir çift görülüyor. Ortada beyaz elbiseli küçük bir kız bize bakıyor. Çimenlerde siyah bir köpek koşuyor. Nehirde yelkenliler ve kayıklar var. Tablonun kenarını renkli noktalardan bir çerçeve kuşatır. Arkada ağaçların arasında yürüyen, oturan ve şemsiyesini açan daha birçok küçük figür var."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Seurat renkleri paletinde karıştırmaz; saf renkleri yan yana küçük noktalar halinde koyar. Uzaktan bakınca bu noktalar gözde birleşir ve daha parlak bir renk yaratır. Bu tekniğe noktacılık (pointillisme) denir. Figürler kesin hatlı, durağan ve neredeyse heykel gibidir; çoğu profilden ya da önden görülür. Işık ve gölge alanları açıkça ayrılmıştır. Tablo iki yıldan uzun bir sürede, onlarca hazırlık çalışmasıyla tamamlandı."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Grande Jatte, Paris'in hemen dışında, her sınıftan insanın pazar günleri gezintiye çıktığı bir yerdi. Seurat burada kentli burjuvayı, askerleri, işçileri ve çocukları bir arada gösterir. Figürlerin katı, birbirinden kopuk duruşu bazı yorumcularca modern toplumun yabancılaşması olarak okunur. Maymun ve olta tutan kadın, bazı yorumlarda ahlak dışı ilişkilere gönderme sayılır; bu okuma tartışmalıdır. Kimse kimseyle konuşmuyor gibidir; herkes kendi içine dönük, sessiz bir an yaşar."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Tablo 1886'da son Empresyonist sergide gösterildiğinde büyük ilgi ve tartışma yarattı. Seurat Empresyonistlerin anlık izlenimine karşı renk biliminden yararlanan düzenli, kalıcı bir resim istiyordu. Yalnızca 31 yaşında öldü ama tekniği Signac, Pissarro ve genç Matisse gibi ressamları etkiledi. Kenardaki boyalı çerçeve sonradan eklenmiştir. Tablo bugün Chicago'daki müzenin en tanınmış eserlerinden biridir."
+    }
+   ],
+   "bak": [
+    "Kadının ayağının dibindeki tasmalı maymun",
+    "Saf renk noktalarından oluşan yüzey ve kenardaki boyalı bordür",
+    "Ortada bize bakan beyaz elbiseli kız"
    ]
   },
   {
@@ -4227,6 +4419,102 @@
    ]
   },
   {
+   "anahtar": "Q669994",
+   "sanatci": "arnold-bocklin",
+   "baslik": "Ölüler Adası",
+   "ozgun": "Isle of the Dead",
+   "tarih": "1886",
+   "muze": "Berlin",
+   "ozet": "İsviçreli ressam Arnold Böcklin'in Ölüler Adası, karanlık selvilerle dolu, kayalık bir adaya sessizce yaklaşan bir kayığı ve içindeki beyaz örtülü figürü gösterir; ressamın birkaç versiyonunu yaptığı bu imge, Sembolizmin en tanınmış resimlerinden biridir.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Durgun, koyu bir denizin ortasında kayalık bir ada yükseliyor. Kayaların içine kapılar ve pencereler oyulmuş, mezar odalarına benziyorlar. Adanın ortasında uzun, koyu selviler göğe uzanıyor. Önde küçük bir kayık adaya yaklaşıyor: bir kürekçi kürek çekiyor, önünde beyaz örtülü, ayakta duran bir figür var. Kayığın burnunda beyaz örtüyle kaplı bir tabut duruyor. Adanın önünde alçak bir iskele duvarı ve basamaklar var. Gökyüzü bulutlu ve gri. Adada hiçbir canlı görünmez; kuş, rüzgâr ya da dalga yoktur."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Kompozisyon neredeyse simetriktir: iki büyük kaya iki yanda, ortada karanlık selviler. Kayık bu karanlık kapının tam önüne doğru ilerler. Kayaların açık gri ve pembe tonları, selvilerin neredeyse siyah yeşiliyle güçlü bir karşıtlık kurar. Beyaz örtülü figür resmin en parlak noktasıdır. Deniz durgundur, adanın yansıması suya düşer. Hiçbir hareket yoktur; bu sessizlik sahneye rüya gibi bir hava verir. Böcklin ışığı kaynağı belirsiz bırakır: akşam mı sabah mı olduğu anlaşılmaz."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Böcklin resme açık bir anlam vermedi; onu \"bir rüya resmi\" olarak tanımladığı aktarılır. Ada genellikle ölülerin dinlenme yeri, kayık ise son yolculuk olarak okunur. Antik mitolojideki, ölülerin ruhlarını Styks ırmağından geçiren kayıkçı Kharon akla gelir. Selviler Akdeniz'de mezarlıkların ağacıdır ve yası simgeler. Beyaz figürün kim olduğu bilinmez; ölüyü götüren bir yakın ya da ruhun kendisi olabilir."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Böcklin bu resmin 1880 ile 1886 arasında beş versiyonunu yaptı; bunlar bugün Basel, New York, Berlin ve Leipzig'deki müzelerde bulunur, biri ise kayıptır. Resim 20. yüzyılın başında Almanya'da çok sevildi; baskıları birçok evde asılıydı. Besteci Rahmaninov ondan esinlenerek aynı adlı bir senfonik şiir yazdı. Freud ve Lenin'in de bu resmin bir baskısına sahip olduğu anlatılır."
+    }
+   ],
+   "bak": [
+    "Kayıktaki beyaz örtülü figür ve tabut",
+    "Adanın ortasında göğe uzanan karanlık selviler",
+    "Kayalara oyulmuş mezar kapıları"
+   ]
+  },
+  {
+   "anahtar": "Q293990",
+   "sanatci": "gustave-moreau",
+   "baslik": "Oidipus ile Sfenks",
+   "ozgun": "Oedipus and the Sphinx",
+   "tarih": "1864",
+   "muze": "Metropolitan Museum of Art",
+   "ozet": "Gustave Moreau'nun New York'taki Metropolitan Müzesi'nde bulunan bu tablosu, kanatlı Sfenks'in genç Oidipus'un göğsüne sıçrayıp gözlerinin içine baktığı anı gösterir; 1864 Salonu'nda Moreau'yu ünlü yapan eser, Sembolizmin habercisi sayılır.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Dar bir kaya geçidinde çıplak bir genç, Oidipus, elinde uzun bir mızrakla duruyor. Kanatlı, kadın başlı ve aslan gövdeli Sfenks onun göğsüne sıçramış, pençeleriyle tutunmuş. İkisi birbirinin gözlerine bakıyor. Sfenks'in başında küçük bir taç, gövdesinde kırmızı bir boncuk dizisi var. Sağda bir sütunun tepesinde süslü bir vazo duruyor, sütuna bir yılan sarılmış. En altta, kayaların arasında önceki kurbanların ayakları ve bir eli görülüyor. Solda bir incir dalı uzanıyor. Arka planda yüksek, sarp kayalar ve bulutlu bir gökyüzü var."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Figürler dikey, dar bir tuvalde sıkışık bir düzen içindedir. Oidipus'un dik bedeni ve mızrağı bir eksen kurar; Sfenks'in kanatları ve gövdesi bu eksene çapraz yaslanır. İki yüz tablonun üst bölümünde, aynı hizada karşı karşıyadır. Moreau ayrıntıları mücevher gibi titiz ve ince işler: tüyler, boncuklar, vazo. Oidipus'un açık teni ile Sfenks'in koyu tüyleri ve kayaların kahverengi tonları karşıtlık kurar."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Mite göre Sfenks Teb kenti yakınında yolculara bir bilmece sorar ve bilemeyenleri öldürür. Oidipus bilmeceyi çözer: sabah dört, öğle iki, akşam üç ayakla yürüyen insandır. Yenilen Sfenks kendini uçurumdan atar. Moreau burada sonucu değil, ikisinin karşılaştığı gergin anı gösterir. Sfenks hem çekici hem tehlikelidir; bu yüzden resim aklın tutku ve ölüm karşısındaki sınavı olarak okunur. Alttaki ayaklar ve taç, bilmeceyi çözemeyenlerin sonunu hatırlatır."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Tablo 1864 Salonu'nda büyük ilgi gördü ve madalya kazandı. Moreau mitoloji konularını gerçek bir hikâye anlatmak için değil, iç dünyayı ve düşünceleri imgelerle anlatmak için kullandı. Bu yaklaşım sonraki yıllarda Sembolist ressamları ve yazarları etkiledi. Moreau sonradan Güzel Sanatlar Okulu'nda Matisse'in de hocası oldu. Oidipus'un hikâyesi daha sonra babasını öldürüp annesiyle evlenmesiyle trajediye dönüşecektir; bu bilgi sahneye karanlık bir gölge düşürür."
+    }
+   ],
+   "bak": [
+    "Sfenks ile Oidipus'un karşı karşıya gelen bakışları",
+    "Sfenks'in Oidipus'un göğsüne geçirdiği pençeler",
+    "En alttaki kurbanların ayakları ve eli"
+   ]
+  },
+  {
+   "anahtar": "Q56377683",
+   "sanatci": "pierre-puvis-de-chavannes",
+   "baslik": "Tatlı Manzara (Doux pays)",
+   "ozgun": "The Sweet Landscape",
+   "tarih": "1882",
+   "muze": "Musée Bonnat-Helleu",
+   "ozet": "Pierre Puvis de Chavannes'ın Bayonne'daki Musée Bonnat-Helleu'de bulunan Tatlı Manzara'sı, bir deniz kıyısında dinlenen, oynayan ve meyve toplayan insanları zamansız ve huzurlu bir dünyada gösterir; ressamın duvar resmi havasındaki solgun, sade dilinin tipik örneğidir.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Bir koyun kıyısında, sakin ve mavi bir denizin önünde birkaç figür var. Solda bir kadın kollarını kaldırmış, ağaçtan meyve topluyor. Önde iki genç kadın yere oturmuş, dinleniyor. Ortada iki çocuk güreşir gibi oynuyor. Arkada beyaz giysili bir kadın ayakta durup onlara bakıyor; yanında portakal dolu bir sepet var. Sağda çıplak bir genç oturmuş. Uzakta denizde bir yelkenli, sağ kıyıda başka bir tekne görülüyor. Yerde birkaç meyve saçılmış. Sağ arkada kıyıya çekilmiş bir teknenin yelkeni ve yanında küçük figürler seçiliyor."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Puvis renkleri soluk ve mat tutar: açık toprak sarısı, soluk mavi, krem ve gri. Resim bir fresk gibi düz ve sakin görünür; derin gölgeler ve parlak ışık yoktur. Figürler basitleştirilmiş, hatları yumuşaktır. Kompozisyon yataydır ve ufuk çizgisi düz bir bant olarak uzanır. Figürler aralarında boşluk bırakılarak dağıtılmıştır, bu da sahneye bir dinginlik verir. Uygulamadaki görsel küçük olduğu için ayrıntılar yakınlaşınca bulanıklaşır. Gölgeler yumuşak, figürler neredeyse düz bir yüzeyde durur."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Tablo belirli bir hikâye anlatmaz. Puvis, antik dünyayı ya da bir altın çağı anımsatan, zamanın dışında huzurlu bir yaşam imgesi kurar. Çalışma, oyun ve dinlenme bir aradadır. Meyveler doğanın bolluğunu anlatır. Bu tür sahneler sanayileşen modern kentin karşısında yitirilmiş bir uyumun özlemi olarak okunur. Başlığın \"tatlı ülke\" anlamı da bu huzur duygusunu vurgular."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Puvis, 19. yüzyıl Fransa'sının en önemli duvar resmi ustasıydı; Panthéon ve Sorbonne gibi yapılar için büyük resimler yaptı. Tatlı Manzara'nın ressam Léon Bonnat için yapıldığı aktarılır; eser onun adını taşıyan Bayonne müzesine geçmiştir. Puvis'in sade, düz renkli dili Sembolistleri, Gauguin'i ve genç Picasso'yu etkiledi. Puvis, Paris'teki Salon'da da düzenli olarak sergilendi ve hem akademik çevreden hem de genç ressamlardan saygı gördü."
+    }
+   ],
+   "bak": [
+    "Ayakta durup oynayan çocuklara bakan beyaz giysili kadın",
+    "Uzaktaki yelkenli",
+    "Ağaçtan meyve toplayan kadın"
+   ]
+  },
+  {
    "anahtar": "Q698487",
    "sanatci": "gustav-klimt",
    "baslik": "Öpücük (Der Kuss)",
@@ -4355,6 +4643,38 @@
    ]
   },
   {
+   "anahtar": "Q1197647",
+   "sanatci": "franz-marc",
+   "baslik": "Mavi Atlar Kulesi (Der Turm der blauen Pferde)",
+   "ozgun": "The Tower of Blue Horses",
+   "tarih": "1913",
+   "muze": "Alte Nationalgalerie",
+   "ozet": "Alman Ekspresyonist Franz Marc'ın Mavi Atlar Kulesi, birbirinin üstünde bir kule gibi yükselen dört mavi atı parlak renkli bir manzaranın önünde gösterir; Naziler tarafından el konulan tablo 1945'ten beri kayıptır ve bugün yalnızca fotoğraflardan bilinir.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Tuvalin neredeyse tamamını dört mavi at kaplıyor. Atlar birbirinin önünde ve üstünde durarak yukarı doğru yükselen bir kule oluşturuyor. En öndeki atın göğsü büyük ve yuvarlaktır, üstünde açık renkli bir hilal biçimi görülüyor. Başlar yukarıda üst üste diziliyor; en üstteki at başını yana çevirmiş. Arkada sarı bir gökyüzü, sol üstte bir gökkuşağı yayı, solda pembe, kahverengi ve yeşil tepeler var. Altta turuncu ve yeşil biçimler uzanıyor. Atların bacakları ve gövdeleri birbirine geçmiş, hepsi tek bir büyük biçim gibi görünür."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Marc renkleri doğadaki gibi kullanmaz; atlar mavi, gök sarıdır. Biçimler köşeli parçalara bölünmüştür; bu, Kübizm'in ve Fütürizm'in etkisini gösterir. Atların bedenleri kavisli ve dinamik çizgilerle kurulmuştur. Kompozisyon dikeydir ve yukarı doğru yükselir. Mavi, sarı ve turuncu birbirini tamamlayan renkler olarak yan yana durur. Uygulamadaki görsel eski bir renkli fotoğraftan gelir; asıl renkler biraz farklı olabilir. Fırça vuruşları geniş ve görünürdür; renkler birbirine yumuşak geçişlerle karışır."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Marc renklere duygusal ve ruhsal anlamlar verirdi: maviyi erkek ilkesine, ciddiyete ve ruhsallığa, sarıyı kadın ilkesine, yumuşaklığa ve neşeye bağladı. Hayvanları insanlardan daha saf ve masum varlıklar olarak gördü; atlar onun en sevdiği konuydu. Hilal ve gökkuşağı gibi kozmik işaretler, atları evrenle uyum içinde gösterir. Kule biçimi yükselişi ve ruhsal bir dönüşümü anlatır."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Marc, Kandinsky ile birlikte Münih'te Mavi Süvari (Der Blaue Reiter) grubunu kurdu. Bu tablo Berlin'deki Nationalgalerie'nin koleksiyonundaydı; 1937'de Naziler onu \"yozlaşmış sanat\" diye müzeden çıkardı. 1945'ten sonra izi kayboldu. Marc 1916'da Birinci Dünya Savaşı'nda Verdun'de öldü; otuz altı yaşındaydı. Tablo bugün birçok kitapta ve afişte yeniden basılır; kayıp bir eser olarak yaygın biçimde tanınması ilginç bir durumdur."
+    }
+   ],
+   "bak": [
+    "Atların üst üste dizilen başları",
+    "En öndeki atın göğsündeki hilal biçimi",
+    "Sol üstteki gökkuşağı yayı"
+   ]
+  },
+  {
    "anahtar": "Q175036",
    "sanatci": "pablo-picasso",
    "baslik": "Guernica",
@@ -4416,6 +4736,70 @@
     "Sağ üstteki bıyıklı yüz ve çevresindeki 'Die anti-dada' yazısı: düzen ve otorite tarafının nasıl kurulduğuna bakın.",
     "Ortadaki dans eden, akrobatik kadın bedeni: başı ile gövdesinin farklı kaynaklardan geldiğini fark edin.",
     "Sağ alttaki 'DADAisten' yazısı ve hemen altındaki harita parçası: kadınların siyasal varlığına yapılan göndermeyi arayın."
+   ]
+  },
+  {
+   "anahtar": "Q114143498",
+   "sanatci": "hannah-hoch",
+   "baslik": "Boyun Eğiş",
+   "ozgun": "Resignation",
+   "tarih": "1928",
+   "muze": "Germanisches Nationalmuseum",
+   "ozet": "Fotomontajlarıyla tanınan Hannah Höch'ün Nürnberg'deki Germanisches Nationalmuseum'da bulunan bu yağlı boya tablosu, gözleri kapalı, başları eğik dört solgun figürü kalın, ezik boya katmanları içinde gösterir.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Tuvalde dört figür var: üçü üst sırada yan yana, biri sağ altta, öne doğru. Başları kel ve yuvarlak, yüzleri solgun, gri ve pembe tonlarda. Gözleri kapalı ya da yere bakıyor, başları hafifçe eğik. Yüzler ifadesiz ve birbirine benziyor, çocuk ya da maske yüzlerini andırıyor. Figürlerin çevresinde turuncu ve kırmızı, ışın gibi dağılan bir zemin var. Sol alt köşe koyu mavi ve siyah parçalarla doludur. Sağ altta \"H.H.\" harfleri okunuyor. Figürlerin bedenleri yüzlerden daha belirsizdir; çevreyle karışır."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Boya kalın ve ezik bir doku halinde sürülmüştür; büyük olasılıkla bir spatulayla. Bu kırık yüzey, figürleri parçalara bölünmüş gibi gösterir; Höch'ün kolajlarındaki kesik parçaları hatırlatır. Sıcak turuncu zemin ile figürlerin soğuk, gri-mavi yüzleri güçlü bir karşıtlık kurar. Kompozisyon sıkışık ve yüzeye yakındır; derinlik yoktur. Figürlerin eğik başları, aşağı doğru inen bir hareket duygusu yaratır. Yüzler en açık alanlardır; bakış önce onlara, sonra çevredeki kırık renk parçalarına gider."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Başlık \"teslimiyet\" ya da \"boyun eğme\" anlamına gelir. Kapalı gözler ve eğik başlar bu duyguyu görünür kılar: figürler direnmeyen, içine kapanmış görünür. Yüzlerin birbirine benzemesi bireyliğin silinmesi olarak okunabilir. Eserin belirli bir olaya ya da kişiye bağlanıp bağlanmadığı bilinmiyor; 1920'lerin sonundaki Almanya'nın ruh hâliyle ilişkilendirilmesi bir yorumdur."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Höch, Berlin Dada grubunun tek kadın üyesiydi ve fotomontajın öncülerindendir. Dada grubu 1920'lerin başında dağıldıktan sonra da hem kolaj hem resim yapmayı sürdürdü. Bu tablo onun boyayla çalışan, daha az bilinen yüzünü gösterir. Nazi döneminde eserleri \"yozlaşmış\" sayıldı; Höch Berlin'in kenarındaki evinde sessizce çalışmaya devam etti. Höch'ün geç dönem resimleri ve kolajları, 20. yüzyılın sonunda yeniden değer kazandı ve büyük sergilere konu oldu."
+    }
+   ],
+   "bak": [
+    "Dört figürün kapalı gözleri ve eğik başları",
+    "Spatulayla sürülmüş kalın, ezik boya dokusu",
+    "Sağ alttaki H.H. monogramı"
+   ]
+  },
+  {
+   "anahtar": "Q20527532",
+   "sanatci": "man-ray",
+   "baslik": "Manzara (Fovist Manzara)",
+   "ozgun": "Landscape (Paysage Fauve)",
+   "tarih": "1913",
+   "muze": "Smithsonian American Art Museum",
+   "ozet": "Man Ray'in Washington'daki Smithsonian Amerikan Sanatı Müzesi'nde bulunan bu suluboya çalışması, bir manzarayı kavisli biçimlere ve parlak, doğa dışı renklere ayırır; ressamın Dada'dan ve fotoğraflarından önceki, Avrupa modernizmini keşfettiği ilk yıllarına aittir.",
+   "bolumler": [
+    {
+     "baslik": "Ne görüyoruz?",
+     "metin": "Kâğıdın yüzeyini kavisli, sivri uçlu biçimler kaplıyor. Ortada büyük bir yay gibi kıvrılan sarı ve turuncu bir biçim var, içinde zeytin yeşili ve mavi alanlar. Yukarıda turuncu, mor, yeşil ve mavi uzun biçimler ağaç gövdeleri ya da tepeler gibi yükseliyor. Biçimlerin kenarları kalın, siyah ve tırtıklı çizgilerle çevrilmiş. Sol alt köşede kırmızı bir yuvarlak var. Yüzeyde beyaz, ince benekler dağılıyor. Altta ortada imza ve tarih okunuyor. Biçimler kâğıdın kenarlarına kadar uzanır; boş alan neredeyse yoktur."
+    },
+    {
+     "baslik": "Kompozisyon, ışık ve renk",
+     "metin": "Renkler doğadaki gibi değil, güçlü ve parlaktır: turuncu, sarı, mor, yeşil. Bu tutum Fovizm'den gelir; başlıktaki \"fauve\" (vahşi) kelimesi de bunu anar. Biçimler parçalanmış ve iç içe geçmiştir; Kübizm'in etkisi de görülür. Siyah çizgiler biçimleri ayırır ve yüzeye hareket verir. Kâğıdın pürüzlü dokusu, boyanın taneli görünmesine ve beyaz beneklerin oluşmasına yol açar. Manzara ancak kabaca seçilir. Suluboya hızlı uygulanmış, renkler yer yer üst üste binerek koyulaşmıştır."
+    },
+    {
+     "baslik": "Anlam ve semboller",
+     "metin": "Başlık bir manzarayı anar, ama resim bir yeri tarif etmekten çok renk ve biçim üzerine bir denemedir. Kavisli biçimlerin tepeler, ağaçlar ya da bir nehir olarak okunması mümkündür, ancak kesin değildir. Man Ray burada gördüğünü değil, ona dair duygusunu ve izlenimini resmeder. Bu, modern sanatın soyutlamaya doğru ilerleyişinin bir adımıdır."
+    },
+    {
+     "baslik": "Neden önemli?",
+     "metin": "Man Ray, 1913'te New York'taki Armory Show'da Avrupalı modern ressamların eserlerini gördükten sonra bu tarzda çalışmaya başladı. Kısa bir süre sonra Marcel Duchamp ile tanıştı ve New York Dada'sının öncülerinden oldu. 1921'de Paris'e yerleşti ve fotoğrafları, rayograf adını verdiği kamerasız fotoğraf denemeleriyle ünlendi. Bu çalışma, onun ressam olarak başladığını hatırlatır. Man Ray'in asıl adı Emmanuel Radnitzky'dir; Philadelphia'da doğdu, New York'ta büyüdü."
+    }
+   ],
+   "bak": [
+    "Ortadaki sarı ve turuncu yay biçimi",
+    "Biçimleri ayıran kalın, tırtıklı siyah çizgiler",
+    "Alttaki imza ve tarih"
    ]
   },
   {

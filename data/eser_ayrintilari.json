@@ -7577,6 +7577,606 @@
      "metin": "Sağ kıyıda küçük hayvanlar otluyor. Bu küçük lekeler manzaraya ölçek ve günlük hayat katar."
     }
    ]
+  },
+  {
+   "anahtar": "Q152509",
+   "sanatci": "edouard-manet",
+   "baslik": "Çimenler Üzerinde Öğle Yemeği",
+   "gorsel": "63083d990db300e3",
+   "noktalar": [
+    {
+     "ad": "Bize bakan kadın",
+     "x": 0.31,
+     "y": 0.43,
+     "w": 0.13,
+     "h": 0.15,
+     "metin": "Çıplak kadın çenesini eline dayamış, doğrudan izleyiciye bakıyor. Bir tanrıça gibi değil, sakin ve rahat bir Parisli gibi bakar. Model Victorine Meurent'tir; bu bakış seyirciyi en çok rahatsız eden ayrıntı oldu."
+    },
+    {
+     "ad": "Konuşan adam",
+     "x": 0.57,
+     "y": 0.41,
+     "w": 0.28,
+     "h": 0.2,
+     "metin": "Sağdaki genç adam püsküllü bir şapka takmış, elini uzatarak konuşuyor; ama kimse onu dinlemiyor gibidir. Siyah giysileri kadının açık teniyle keskin bir karşıtlık kurar."
+    },
+    {
+     "ad": "Sepet ve natürmort",
+     "x": 0.04,
+     "y": 0.76,
+     "w": 0.38,
+     "h": 0.22,
+     "metin": "Sol önde devrilmiş bir sepetten meyveler ve ekmek dökülmüş; yanında bir şişe, kadının mavi giysisi ve hasır şapkası var. Hızlı, canlı vuruşlarla yapılmış bu köşe bağımsız bir natürmort gibidir."
+    },
+    {
+     "ad": "Yıkanan kadın",
+     "x": 0.48,
+     "y": 0.32,
+     "w": 0.15,
+     "h": 0.17,
+     "metin": "Arkada dereye eğilmiş bir kadın yıkanıyor. Uzaklığına göre fazla büyüktür ve ön plana yakın asılı durur gibidir. Manet geleneksel derinliği bilerek bozar."
+    },
+    {
+     "ad": "Kuş",
+     "x": 0.45,
+     "y": 0.02,
+     "w": 0.06,
+     "h": 0.04,
+     "metin": "Tablonun en üstünde, ağaçların arasında küçük bir kuş kanat çırpıyor. Hızla boyanmış bu ayrıntı, sahneye canlı bir an duygusu katar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q683274",
+   "sanatci": "pierre-auguste-renoir",
+   "baslik": "Moulin de la Galette'de Balo",
+   "gorsel": "2026542e5482c401",
+   "noktalar": [
+    {
+     "ad": "Çizgili elbiseli kız",
+     "x": 0.38,
+     "y": 0.5,
+     "w": 0.2,
+     "h": 0.2,
+     "metin": "Önde bankta çizgili elbiseli bir kız arkasındaki kadına yaslanmış, konuşanı dinliyor. Elbisesinin üstünde yaprakların arasından süzülen ışık lekeleri görülür. Renoir yüzleri yumuşak, sıcak tonlarla boyar."
+    },
+    {
+     "ad": "Benekli ışık",
+     "x": 0.0,
+     "y": 0.5,
+     "w": 0.22,
+     "h": 0.25,
+     "metin": "Dans eden çiftlerin çevresinde zemine ve giysilere açık ışık lekeleri düşüyor. Renoir gölgeleri siyah değil mavi ve mor yapar. Bu benekli ışık, tablonun asıl konusudur."
+    },
+    {
+     "ad": "Dans eden çift",
+     "x": 0.13,
+     "y": 0.22,
+     "w": 0.17,
+     "h": 0.33,
+     "metin": "Solda pembe elbiseli bir kız koyu ceketli bir adamla dans ediyor; başını ona doğru çevirmiş. Arkadaki kalabalıkta başka çiftler de dönüyor."
+    },
+    {
+     "ad": "Gaz lambaları",
+     "x": 0.15,
+     "y": 0.05,
+     "w": 0.4,
+     "h": 0.1,
+     "metin": "Yukarıda ağaç dallarına yuvarlak gaz lambaları asılmış. Akşam olunca bahçeyi aydınlatırlar. Lambaların camları da güneş ışığını yansıtıyor."
+    },
+    {
+     "ad": "Masadaki dostlar",
+     "x": 0.8,
+     "y": 0.38,
+     "w": 0.2,
+     "h": 0.35,
+     "metin": "Sağdaki masada hasır şapkalı genç adamlar sohbet ediyor; önlerinde bardaklar ve bir şişe var. Bu figürler için Renoir'ın dostlarının poz verdiği bilinir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1239950",
+   "sanatci": "edgar-degas",
+   "baslik": "Absent İçenler",
+   "gorsel": "1c21870ed64ad05e",
+   "noktalar": [
+    {
+     "ad": "Kadının yüzü",
+     "x": 0.4,
+     "y": 0.06,
+     "w": 0.2,
+     "h": 0.2,
+     "metin": "Süslü şapkalı kadının omuzları düşmüş, gözleri boş bir noktaya dalmış. Model aktris Ellen Andrée'dir. Yüzündeki yorgunluk modern kentteki yalnızlığın simgesi olarak okunur."
+    },
+    {
+     "ad": "Absent bardağı",
+     "x": 0.61,
+     "y": 0.33,
+     "w": 0.09,
+     "h": 0.09,
+     "metin": "Kadının önünde açık yeşil bir içkiyle dolu bardak duruyor: absent. Güçlü ve bağımlılık yapan bu içki 19. yüzyıl Paris'inde çok yaygındı. Bardaktaki yeşil, soluk tablonun tek canlı rengidir."
+    },
+    {
+     "ad": "Pipolu adam",
+     "x": 0.7,
+     "y": 0.06,
+     "w": 0.3,
+     "h": 0.27,
+     "metin": "Yanındaki sakallı adam ağzında pipo, sağa, çerçevenin dışına bakıyor. Model ressam Marcellin Desboutin'dir. İkisi yan yana oturur ama birbirine hiç bakmaz."
+    },
+    {
+     "ad": "Boş masalar",
+     "x": 0.0,
+     "y": 0.48,
+     "w": 0.7,
+     "h": 0.2,
+     "metin": "Önde boş mermer masalar zigzag çizerek figürlere doğru uzanıyor; ayakları görünmez. Bu kaydırılmış, kesik düzen fotoğrafların ve Japon baskılarının etkisini gösterir."
+    },
+    {
+     "ad": "Gazeteler ve imza",
+     "x": 0.0,
+     "y": 0.69,
+     "w": 0.42,
+     "h": 0.29,
+     "metin": "Ön masada sopalara takılı gazeteler duruyor; kafelerde gazeteler böyle okunurdu. Masanın kenarında Degas'nın imzası okunur. Boş masalar figürlerle izleyici arasında bir mesafe kurar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q252485",
+   "sanatci": "katsushika-hokusai",
+   "baslik": "Büyük Dalga",
+   "gorsel": "7de1ea60cd498981",
+   "noktalar": [
+    {
+     "ad": "Dalganın tepesi",
+     "x": 0.38,
+     "y": 0.12,
+     "w": 0.22,
+     "h": 0.33,
+     "metin": "Dev dalganın tepesi pençeye benzeyen köpüklerle kıvrılıyor; köpükler küçük beyaz noktalar halinde dağılır. Bu pençeler dalgayı aşağıdaki teknelere uzanan canlı bir varlık gibi gösterir."
+    },
+    {
+     "ad": "Fuji",
+     "x": 0.56,
+     "y": 0.62,
+     "w": 0.13,
+     "h": 0.12,
+     "metin": "Uzakta, dalganın çukurunun içinde karla kaplı küçük Fuji Dağı görülüyor. Japonya'nın kutsal dağı, doğanın yıkıcı gücü karşısında sakin ve değişmez durur. Biçimi uzaktaki bir dalgayı andırır."
+    },
+    {
+     "ad": "Soldaki tekne",
+     "x": 0.03,
+     "y": 0.46,
+     "w": 0.2,
+     "h": 0.25,
+     "metin": "Dalganın altında uzun, dar bir tekne var; kürekçiler eğilip tutunmuş. Tablodaki üç tekne, balığı hızla pazara taşıyan kayıklar olarak düşünülür."
+    },
+    {
+     "ad": "Ortadaki tekne",
+     "x": 0.44,
+     "y": 0.82,
+     "w": 0.3,
+     "h": 0.12,
+     "metin": "Önde başka bir tekne dalganın eteğinde kayıyor; kürekçilerin başları küçük, yan yana noktalar gibi dizilmiş. İnsanın ölçeği dalganın büyüklüğünü daha da belirgin kılar."
+    },
+    {
+     "ad": "Başlık ve imza",
+     "x": 0.02,
+     "y": 0.08,
+     "w": 0.09,
+     "h": 0.26,
+     "metin": "Sol üstteki kartuşta dizinin adı, Fuji'nin Otuz Altı Manzarası ve baskının adı, Kanagawa açıklarında dalganın altı yazılı. Yanında Hokusai'nin o dönemde kullandığı adla imzası var."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q243248",
+   "sanatci": "utagawa-hiroshige",
+   "baslik": "Hara, Sabah Fuji'si",
+   "gorsel": "01f922faba33d1dc",
+   "noktalar": [
+    {
+     "ad": "Çerçeveyi aşan Fuji",
+     "x": 0.5,
+     "y": 0.0,
+     "w": 0.33,
+     "h": 0.33,
+     "metin": "Beyaz Fuji Dağı o kadar büyük çizilmiş ki tepesi resmin üst çerçevesini aşıyor. Bu cesur kesme dağın yüceliğini vurgular. Hara, Tōkaidō yolunda Fuji'nin en iyi göründüğü duraklardan biriydi."
+    },
+    {
+     "ad": "Turnalar",
+     "x": 0.6,
+     "y": 0.55,
+     "w": 0.11,
+     "h": 0.12,
+     "metin": "Pirinç tarlasında iki turna duruyor; biri başını eğmiş. Turnalar Japonya'da uzun ömrün ve iyi talihin simgesidir. Tarlanın ince çizgileri sabah sisini andırır."
+    },
+    {
+     "ad": "Yolcu kadınlar",
+     "x": 0.2,
+     "y": 0.53,
+     "w": 0.18,
+     "h": 0.37,
+     "metin": "Geniş hasır şapkalı iki kadın yolda yürüyor; öndeki arkasına dönmüş, eliyle bir şey gösteriyor. Desenli giysileri sade manzaranın önünde canlı bir ayrıntıdır."
+    },
+    {
+     "ad": "Hamal",
+     "x": 0.35,
+     "y": 0.54,
+     "w": 0.2,
+     "h": 0.34,
+     "metin": "Sırtındaki sırığa iki kutu asmış bir hamal yürüyor. Tōkaidō'da yolcuların eşyalarını taşıyan hamallar yolun günlük hayatının parçasıydı."
+    },
+    {
+     "ad": "Başlık",
+     "x": 0.13,
+     "y": 0.12,
+     "w": 0.16,
+     "h": 0.16,
+     "metin": "Sol üstte \"Tōkaidō'nun Elli Üç Durağı\" ve \"Hara\" yazılı; kırmızı mühürde baskının adı \"Sabah Fuji'si\" okunur. Sağ kenarda ise Hiroshige'nin imzası ve mührü var."
+    },
+    {
+     "ad": "Kuş sürüsü",
+     "x": 0.42,
+     "y": 0.05,
+     "w": 0.14,
+     "h": 0.2,
+     "metin": "Gökyüzünde bir kuş sürüsü uçuyor. Birkaç küçük işaretle çizilen kuşlar, boş gökyüzüne hareket ve derinlik katar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1044742",
+   "sanatci": "georges-seurat",
+   "baslik": "Grande Jatte",
+   "gorsel": "529c025ff29483e4",
+   "noktalar": [
+    {
+     "ad": "Profildeki çift",
+     "x": 0.73,
+     "y": 0.12,
+     "w": 0.22,
+     "h": 0.75,
+     "metin": "Sağda siyah giysili, şemsiyeli bir kadın ve silindir şapkalı bir adam profilden duruyor. Katı, heykel gibi duruşları Seurat'nın figürlerinin tipik özelliğidir. Kadının giysisinin arkası dönemin moda kabarık eteğidir."
+    },
+    {
+     "ad": "Maymun",
+     "x": 0.69,
+     "y": 0.78,
+     "w": 0.09,
+     "h": 0.12,
+     "metin": "Kadının ayağının dibinde tasmalı bir maymun sıçrıyor. Egzotik bir evcil hayvan olan maymun, bazı yorumlarda ahlak dışı ilişkilere gönderme olarak okunur; ama bu yorum tartışmalıdır."
+    },
+    {
+     "ad": "Beyaz elbiseli kız",
+     "x": 0.42,
+     "y": 0.38,
+     "w": 0.07,
+     "h": 0.2,
+     "metin": "Ortada beyaz elbiseli küçük bir kız bize bakıyor; yanında bir kadın yürüyor. Kalabalıkta izleyiciye doğrudan bakan az sayıdaki figürden biridir."
+    },
+    {
+     "ad": "Olta tutan kadın",
+     "x": 0.06,
+     "y": 0.29,
+     "w": 0.08,
+     "h": 0.31,
+     "metin": "Solda kıyıda bir kadın olta tutuyor. Profilden, dimdik duruşu ve kırmızı giysisi onu nehrin mavisi önünde belirgin kılar."
+    },
+    {
+     "ad": "Pipolu adam",
+     "x": 0.15,
+     "y": 0.66,
+     "w": 0.16,
+     "h": 0.24,
+     "metin": "Önde uzanmış bir işçi pipo içiyor; kolsuz bir giysi giymiş. Yanındaki silindir şapkalı burjuva ile birlikte farklı sınıfların aynı yerde dinlendiğini gösterir."
+    },
+    {
+     "ad": "Noktalar ve bordür",
+     "x": 0.82,
+     "y": 0.82,
+     "w": 0.18,
+     "h": 0.18,
+     "metin": "Yakından bakınca çimenin yeşil, mavi ve sarı noktalardan oluştuğu görülür. Kenarda kırmızı, mavi ve turuncu noktalardan boyalı bir bordür var; Seurat onu sonradan ekledi."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q669994",
+   "sanatci": "arnold-bocklin",
+   "baslik": "Ölüler Adası",
+   "gorsel": "53498322e4721302",
+   "noktalar": [
+    {
+     "ad": "Beyaz figür ve kayık",
+     "x": 0.3,
+     "y": 0.76,
+     "w": 0.13,
+     "h": 0.15,
+     "metin": "Küçük bir kayık adaya yaklaşıyor: arkada bir kürekçi, önde beyaz örtülü, ayakta duran bir figür ve beyaz örtüyle kaplı bir tabut. Beyaz figür resmin en parlak noktasıdır; kim olduğu bilinmez."
+    },
+    {
+     "ad": "Selviler",
+     "x": 0.35,
+     "y": 0.05,
+     "w": 0.31,
+     "h": 0.62,
+     "metin": "Adanın ortasında uzun, koyu selviler göğe uzanıyor. Selviler Akdeniz'de mezarlıkların ağacıdır ve yası simgeler. Karanlıkları adanın içine açılan bir kapı gibidir."
+    },
+    {
+     "ad": "Mezar kapıları",
+     "x": 0.2,
+     "y": 0.38,
+     "w": 0.14,
+     "h": 0.2,
+     "metin": "Sol kayaya kapılar ve pencereler oyulmuş; mezar odalarına benziyorlar. Bu ayrıntı adanın ölülerin dinlenme yeri olduğunu düşündürür."
+    },
+    {
+     "ad": "Sağdaki giriş",
+     "x": 0.66,
+     "y": 0.42,
+     "w": 0.1,
+     "h": 0.23,
+     "metin": "Sağ kayada da bir kapı ve sütunlu bir giriş seçiliyor; üstünde kayalara yapışmış kızıl bitkiler var. Simetrik iki kaya karanlık selvileri çerçeveler."
+    },
+    {
+     "ad": "İskele",
+     "x": 0.38,
+     "y": 0.72,
+     "w": 0.25,
+     "h": 0.08,
+     "metin": "Adanın önünde alçak bir taş iskele duvarı ve basamaklar var. Kayık buraya yanaşacaktır: son yolculuğun varış noktası."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q293990",
+   "sanatci": "gustave-moreau",
+   "baslik": "Oidipus ile Sfenks",
+   "gorsel": "323b670e731f6a5f",
+   "noktalar": [
+    {
+     "ad": "Bakışma",
+     "x": 0.42,
+     "y": 0.2,
+     "w": 0.3,
+     "h": 0.17,
+     "metin": "Sfenks başını kaldırmış, Oidipus başını eğmiş; ikisi birbirinin gözlerine bakıyor. Moreau sonucu değil, bilmece sorulurken yaşanan bu gergin karşılaşmayı gösterir."
+    },
+    {
+     "ad": "Pençeler",
+     "x": 0.48,
+     "y": 0.34,
+     "w": 0.24,
+     "h": 0.16,
+     "metin": "Aslan gövdeli Sfenks, pençelerini Oidipus'un göğsüne ve karnına geçirmiş, ona tutunuyor. Kadın başı ve göğüsleri onu hem çekici hem tehlikeli bir varlık yapar."
+    },
+    {
+     "ad": "Kurbanlar",
+     "x": 0.44,
+     "y": 0.9,
+     "w": 0.46,
+     "h": 0.1,
+     "metin": "En altta, kayaların arasında önceki kurbanların ayakları, bir eli ve bir taç görülüyor. Bilmeceyi çözemeyenleri Sfenks öldürmüştü; bu ayrıntı Oidipus'u bekleyen tehlikeyi hatırlatır."
+    },
+    {
+     "ad": "Vazo ve yılan",
+     "x": 0.8,
+     "y": 0.54,
+     "w": 0.16,
+     "h": 0.3,
+     "metin": "Sağda bir sütunun tepesinde süslü bir vazo duruyor, sütuna küçük bir yılan sarılmış. Moreau'nun mücevher gibi titiz ayrıntılarından biridir; yılan tehlikeyi ve ölümü anımsatır."
+    },
+    {
+     "ad": "Kanatlar",
+     "x": 0.17,
+     "y": 0.12,
+     "w": 0.27,
+     "h": 0.3,
+     "metin": "Sfenks'in büyük, mavi ve gümüş tonlu kanatları yukarı açılmış. Tüyler tek tek, ince fırça vuruşlarıyla işlenmiştir."
+    },
+    {
+     "ad": "Mızrak",
+     "x": 0.78,
+     "y": 0.17,
+     "w": 0.08,
+     "h": 0.22,
+     "metin": "Oidipus sağ elinde uzun bir mızrak tutuyor ama onu kullanmıyor. Sfenks'i silahla değil, bilmeceyi çözerek, yani akılla yenecektir."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q56377683",
+   "sanatci": "pierre-puvis-de-chavannes",
+   "baslik": "Tatlı Manzara",
+   "gorsel": "40be8f517f5e0727",
+   "noktalar": [
+    {
+     "ad": "Ayaktaki kadın",
+     "x": 0.54,
+     "y": 0.15,
+     "w": 0.12,
+     "h": 0.55,
+     "metin": "Beyaz giysili bir kadın ayakta durup oynayan çocuklara bakıyor. Dimdik, sakin duruşu antik bir heykeli andırır. Yanında portakal dolu bir sepet var."
+    },
+    {
+     "ad": "Yelkenli",
+     "x": 0.84,
+     "y": 0.28,
+     "w": 0.1,
+     "h": 0.16,
+     "metin": "Uzakta, sakin denizde beyaz bir yelkenli süzülüyor. Puvis denizi ve gökyüzünü düz, soluk renk bantları olarak boyar."
+    },
+    {
+     "ad": "Meyve toplayan kadın",
+     "x": 0.01,
+     "y": 0.12,
+     "w": 0.13,
+     "h": 0.68,
+     "metin": "Solda bir kadın kollarını kaldırmış, ağaçtan meyve topluyor. Çalışma burada yorucu bir iş değil, doğanın bolluğunun bir parçasıdır."
+    },
+    {
+     "ad": "Oturan kadınlar",
+     "x": 0.08,
+     "y": 0.48,
+     "w": 0.24,
+     "h": 0.4,
+     "metin": "Önde iki genç kadın yere oturmuş, dinleniyor. Yanlarında meyveler duruyor. Basitleştirilmiş hatlar ve mat renkler resme fresk gibi bir görünüm verir."
+    },
+    {
+     "ad": "Oynayan çocuklar",
+     "x": 0.44,
+     "y": 0.53,
+     "w": 0.18,
+     "h": 0.37,
+     "metin": "Ortada iki çocuk güreşir gibi oynuyor. Oyun, dinlenme ve çalışma bu zamansız dünyada bir aradadır. Görsel küçük olduğu için ayrıntılar yakınlaşınca bulanıklaşır."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q1197647",
+   "sanatci": "franz-marc",
+   "baslik": "Mavi Atlar Kulesi",
+   "gorsel": "698228f05523f7b5",
+   "noktalar": [
+    {
+     "ad": "Üst üste başlar",
+     "x": 0.29,
+     "y": 0.0,
+     "w": 0.48,
+     "h": 0.3,
+     "metin": "Atların başları yukarıda üst üste diziliyor; en üstteki başını yana çevirmiş. Birbirinin üstünde yükselen başlar tabloya adını veren kuleyi oluşturur."
+    },
+    {
+     "ad": "Ortadaki baş",
+     "x": 0.43,
+     "y": 0.29,
+     "w": 0.3,
+     "h": 0.19,
+     "metin": "Bir at başını eğmiş, sola bakıyor. Yüzü köşeli parçalara bölünmüştür; bu Kübizm'in etkisidir. Mavi, Marc için ruhsallığın ve ciddiyetin rengiydi."
+    },
+    {
+     "ad": "Hilal",
+     "x": 0.68,
+     "y": 0.6,
+     "w": 0.24,
+     "h": 0.22,
+     "metin": "En öndeki atın göğsünde açık renkli bir hilal biçimi görülüyor. Hilal ve gökkuşağı gibi kozmik işaretler atları evrenle uyum içinde gösterir."
+    },
+    {
+     "ad": "Gökkuşağı",
+     "x": 0.0,
+     "y": 0.0,
+     "w": 0.3,
+     "h": 0.17,
+     "metin": "Sol üstte sarı gökyüzünün içinden turuncu ve kırmızı bir gökkuşağı yayı geçiyor. Kavisli çizgi atların kıvrımlı bedenlerini yankılar."
+    },
+    {
+     "ad": "Renkli tepeler",
+     "x": 0.0,
+     "y": 0.3,
+     "w": 0.2,
+     "h": 0.4,
+     "metin": "Solda pembe, kahverengi ve yeşil tepeler köşeli biçimlerle verilmiş. Bir yuvarlak, güneşi ya da bir gök cismini andırır. Marc doğayı gerçekçi değil, duygusal renklerle kurar."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q114143498",
+   "sanatci": "hannah-hoch",
+   "baslik": "Boyun Eğiş",
+   "gorsel": "03bfbbbad07554d6",
+   "noktalar": [
+    {
+     "ad": "Öndeki yüz",
+     "x": 0.6,
+     "y": 0.46,
+     "w": 0.3,
+     "h": 0.27,
+     "metin": "Sağ altta, öne çıkan figürün gözleri kapalı, başı eğik. Yüzü ifadesiz, bir maske ya da çocuk yüzü gibidir. Başlık teslimiyet duygusunu anlatır; kapalı gözler bunu görünür kılar."
+    },
+    {
+     "ad": "Ortadaki yüz",
+     "x": 0.32,
+     "y": 0.17,
+     "w": 0.25,
+     "h": 0.27,
+     "metin": "Üst sıranın ortasındaki figürün gözleri yere bakıyor. Yüz gri, pembe ve krem parçalardan oluşur; boya kalın ve ezik bir doku halinde sürülmüştür."
+    },
+    {
+     "ad": "Soldaki yüz",
+     "x": 0.06,
+     "y": 0.21,
+     "w": 0.23,
+     "h": 0.25,
+     "metin": "Soldaki figürün başı eğik, gözleri kapalı. Dört yüzün birbirine benzemesi bireyliğin silinmesi olarak okunabilir."
+    },
+    {
+     "ad": "Sağ üstteki yüz",
+     "x": 0.59,
+     "y": 0.2,
+     "w": 0.2,
+     "h": 0.22,
+     "metin": "Sağ üstteki figür de başını eğmiş. Çevresindeki turuncu ve kırmızı zemin ışın gibi dağılır ve soğuk tonlu yüzlerle karşıtlık kurar."
+    },
+    {
+     "ad": "Monogram",
+     "x": 0.62,
+     "y": 0.91,
+     "w": 0.12,
+     "h": 0.07,
+     "metin": "Sağ altta kalın boyanın üstüne \"H.H.\" harfleri kazınmış gibi yazılmış: Hannah Höch'ün monogramı. Çevresindeki yüzeyde spatula izleri açıkça görülür."
+    }
+   ]
+  },
+  {
+   "anahtar": "Q20527532",
+   "sanatci": "man-ray",
+   "baslik": "Fovist Manzara",
+   "gorsel": "e3207ef92beac9fd",
+   "noktalar": [
+    {
+     "ad": "Sarı yay",
+     "x": 0.15,
+     "y": 0.42,
+     "w": 0.58,
+     "h": 0.4,
+     "metin": "Ortada büyük bir yay gibi kıvrılan sarı ve turuncu bir biçim var; içinde zeytin yeşili ve mavi alanlar görülüyor. Bir tepe ya da bir nehir kıvrımı olarak okunabilir, ama kesin değildir."
+    },
+    {
+     "ad": "Siyah çizgiler",
+     "x": 0.44,
+     "y": 0.0,
+     "w": 0.28,
+     "h": 0.35,
+     "metin": "Biçimlerin kenarları kalın, tırtıklı siyah çizgilerle çevrilmiş. Bu çizgiler biçimleri ayırır ve yüzeye hareket verir. Kâğıdın pürüzlü dokusu beyaz benekler oluşturur."
+    },
+    {
+     "ad": "Kırmızı yuvarlak",
+     "x": 0.0,
+     "y": 0.85,
+     "w": 0.2,
+     "h": 0.15,
+     "metin": "Sol alt köşede kırmızı bir yuvarlak var. Güneşi andırabilir. Fovistlerden gelen bu parlak, doğa dışı renkler duyguyu öne çıkarır."
+    },
+    {
+     "ad": "Mor ve yeşil biçimler",
+     "x": 0.72,
+     "y": 0.3,
+     "w": 0.26,
+     "h": 0.35,
+     "metin": "Sağda mor ve yeşil uzun biçimler yükseliyor. Ağaç gövdelerini ya da tepeleri anımsatırlar. Renkler doğadaki gibi değil, Fovizm'in serbestliğiyle seçilmiştir."
+    },
+    {
+     "ad": "İmza",
+     "x": 0.3,
+     "y": 0.94,
+     "w": 0.22,
+     "h": 0.05,
+     "metin": "Altta ortada Man Ray'in imzası ve 1913 tarihi okunuyor. Man Ray bu yıl New York'taki Armory Show'da Avrupa modern sanatını görmüştü."
+    }
+   ]
   }
  ]
 }
