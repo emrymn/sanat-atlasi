@@ -177,6 +177,13 @@ test('Akımlar hapı Galeri\'nin ana ekranına götürür; çark ve bütün akı
   await expect(cark.locator('[data-cark-no]')).toHaveText('01');
   // dizin: her akım bir satır; açıklar bağlantı, kilitliler "Konu N'de açılır"
   const akimSayisi = await page.evaluate(() => window.__atlas.akimlar.length);
+  // 1.81.0: dizin kapalı gelir; "Tümünü gör" açar, "Gizle" kapatır
+  const ac = page.locator('[data-test="akim-dizin-ac"]');
+  await expect(ac).toHaveText('Tümünü gör');
+  await expect(page.locator('#akim-dizin-liste')).toBeHidden();
+  await ac.click();
+  await expect(ac).toHaveText('Gizle');
+  await expect(ac).toHaveAttribute('aria-expanded', 'true');
   const satirlar = page.locator('[data-test="akim-dizin-satir"]');
   await expect(satirlar).toHaveCount(akimSayisi);
   expect(await page.locator('a[data-test="akim-dizin-satir"]').count()).toBeGreaterThan(0);
