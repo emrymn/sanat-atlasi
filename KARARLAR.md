@@ -2225,3 +2225,23 @@ Emre tuvalde (Design) üç şey istedi ve onayladı ("tam istediğim gibi oldu, 
 - **Galeri:** tasarım aynı; "Bütün akımlar" dizini kapalı gelir, başlığın sağındaki **Tümünü gör** ile yerinde açılır ("Gizle" ile kapanır). Seçim oturum boyunca hatırlanır (Galeri'ye geri dönünce aynı hâlde). "zaman sırasıyla" yazısı düğmeye yer açmak için kalktı.
 - **Akım sayfası:** açılışta dönemin en bilinen eseri (akım kimliğindeki `enBilinenEserler` sıralamasının ilki; yalnız açık sanatçılardan) kenardan kenara durur; yüzyıl etiketi ve başlık resmin altına oturur, geri düğmesi resmin üstünde. Palet şeridi 8 px'e indi; altında "Arkadaki eser: …" künyesi (dokununca görüntüleyicide açılır). Açık sanatçısı ya da görseli olmayan akımda sahne çizilmez, sayfa eskisi gibi. Sahne her temada koyu (görüntüleyici gibi).
 - **Hareket:** hepsi `data-hareket` (Sade: bir kez oynar; Kapalı: durur) ve `prefers-reduced-motion` kurallarına uyar.
+
+### İş 175 · Akım dörtlüsü için yakın okumalar, Parti A (sürüm 1.81.1)
+
+Emre: akım sayfalarındaki "En bilinen eserler" dörtlüsünü 107 başyapıtla aynı düzeye getir; bu turda Gotik → Maniyerizm.
+
+- **Seçim betiği:** `scripts/ayrinti/yardimci/akim_secim.mjs` uygulamanın kendi `enBilinenEserler`'ini ve eser boru hattını bütün konular
+  açık sayarak çalıştırır; başyapıtta olmayanları `scripts/ayrinti/akim_secim.json`'a yazar (anahtar, sanatçı, akım, yerel görsel adı,
+  4096 var mı; yerel görseli olmayanlar ayrı listede). Eşleşme `eserEslestir` gibi QID ya da `sanatçı|başlık` (Bosch'un Zevk Bahçesi
+  kopya birleşmesi yüzünden başlıkla eşleşir). İlk ölçüm: 96 eserin 43'ü başyapıttaydı; 46 yerel görselli, 7 görselsiz eksik.
+- **9 yeni başyapıt** (Limbourg · Çok Zengin Saatler'in zodyak insanı yaprağı, Giotto · Ognissanti Madonnası, Botticelli · Venüs'ün Doğuşu,
+  Piero · Kırbaçlanma, Dürer · Gergedan, Mona Lisa, Giorgione · Uyuyan Venüs, Bellini · Tanrıların Şöleni, Giulio Romano · Ziyaret):
+  İş 8 biçiminde yakın okuma (özet, dört bölüm 255–281 kelime, 3 "Yakından bak") ve İş 151 biçiminde 5–6 rehberli inceleme noktası
+  (53 nokta). Toplam 116 başyapıt, 672 nokta. Metinler görsele bakılarak yazıldı, yazıtlar 4096'dan okundu, ayrı bir geçişte denetlendi.
+  İki aşamalı doğrulamada 12 kutu düzeltildi. Ayrıntılar, emin olunmayanlar ve kalan üç parti `scripts/ayrinti/DEVIR.md` "Tur 6"da.
+- **Künye:** önbellekten. Tek bilinçli sapma Dürer: önbellekte 1512 (Wikidata), baskıda okunan ve gerçek tarih 1515 yazıldı.
+  Bellini'nin müzesi önbellekte olmadığı için boş. Ziyaret önbellekteki gibi Giulio Romano'ya bağlı; görseldeki "RAPHAEL VRBINAS F"
+  yazısı metinde anılır ("Raffaello atölyesinde, büyük ölçüde Giulio Romano'nun elinden çıktığı düşünülür").
+- Uygulama kodu değişmedi (sanatçı sayfası birden çok yakın okumayı zaten listeliyor). Yalnız veri, betik, DEVIR/DURUM, README
+  satırları ve yama sürümü; Yenilikler listesine girmedi. Birim 369/369; `ayrinti` ve `paket8` uçtan uca 13/14 (düşen K4 `--sal`
+  testi 1.80.0 notundaki gibi main'de de düşüyor).

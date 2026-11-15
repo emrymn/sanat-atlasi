@@ -1,12 +1,12 @@
 # Rehberli inceleme · durum
 
-Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenleme.
+Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-15). Elle düzenleme.
 
-**Toplam: 107 / 107 başyapıt bitti (619 nokta; eser başına ortalama 5.8).** Kalan: 0.
+**Toplam: 116 / 116 başyapıt bitti (672 nokta; eser başına ortalama 5.8).** Kalan: 0.
 
 ## Akım akım
 
-### Gotik · 6 / 6
+### Gotik · 7 / 7
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
@@ -16,15 +16,17 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenle
 | Meryem'in Doğumu | Pietro Lorenzetti | ✓ 6 nokta |
 | Aziz Maxima ve Aziz Ansanus ile Müjde (Triptik) | Simone Martini | ✓ 6 nokta |
 | Ağıt | Giotto di Bondone | ✓ 6 nokta |
+| Ognissanti Madonnası (Tahtta Meryem) | Giotto di Bondone | ✓ 5 nokta |
 
-### Uluslararası Gotik · 2 / 2
+### Uluslararası Gotik · 3 / 3
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Şubat | Limbourg kardeşler | ✓ 6 nokta |
+| Berry Dükü'nün Çok Zengin Saatleri: Zodyak İnsanı | Limbourg kardeşler | ✓ 6 nokta |
 | Müneccimlerin Tapınması | Gentile da Fabriano | ✓ 6 nokta |
 
-### Erken Rönesans · 5 / 5
+### Erken Rönesans · 7 / 7
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
@@ -33,12 +35,15 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenle
 | Ölü İsa (Cristo morto) | Andrea Mantegna | ✓ 6 nokta |
 | Meryem'e Müjde | Fra Angelico | ✓ 6 nokta |
 | İsa'nın Anahtarları Petrus'a Vermesi | Pietro Perugino | ✓ 5 nokta |
+| Venüs'ün Doğuşu | Sandro Botticelli | ✓ 6 nokta |
+| İsa'nın Kırbaçlanması | Piero della Francesca | ✓ 6 nokta |
 
-### Kuzey Rönesansı · 10 / 10
+### Kuzey Rönesansı · 11 / 11
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Şövalye, Ölüm ve Şeytan | Albrecht Dürer | ✓ 6 nokta |
+| Gergedan | Albrecht Dürer | ✓ 6 nokta |
 | Mérode Triptiği | Robert Campin | ✓ 6 nokta |
 | Arnolfini Portresi (Arnolfini Portrait) | Jan van Eyck | ✓ 6 nokta |
 | Genç Bir Kızın Portresi | Petrus Christus | ✓ 5 nokta |
@@ -49,26 +54,29 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenle
 | Dünyevi Zevkler Bahçesi (The Garden of Earthly Delights) | Hieronymus Bosch | ✓ 6 nokta |
 | Karda Avcılar | Pieter Bruegel (Yaşlı) | ✓ 6 nokta |
 
-### Yüksek Rönesans · 6 / 6
+### Yüksek Rönesans · 7 / 7
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Son Akşam Yemeği | Leonardo da Vinci | ✓ 6 nokta |
+| Mona Lisa | Leonardo da Vinci | ✓ 6 nokta |
 | Âdem'in Yaratılışı | Michelangelo | ✓ 5 nokta |
 | Sütundaki İsa | Donato Bramante | ✓ 6 nokta |
 | Atina Okulu (La scuola di Atene) | Raphael | ✓ 6 nokta |
 | Jüpiter ve Io | Correggio | ✓ 6 nokta |
 | Paris'in Hükmü | Marcantonio Raimondi | ✓ 6 nokta |
 
-### Venedik Rönesansı · 3 / 3
+### Venedik Rönesansı · 5 / 5
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Urbino Venüsü (Venus of Urbino) | Titian | ✓ 6 nokta |
 | Son Akşam Yemeği | Tintoretto | ✓ 6 nokta |
 | Kana'da Düğün | Paolo Veronese | ✓ 6 nokta |
+| Uyuyan Venüs | Giorgione | ✓ 6 nokta |
+| Tanrıların Şöleni | Giovanni Bellini | ✓ 6 nokta |
 
-### Maniyerizm · 9 / 9
+### Maniyerizm · 10 / 10
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
@@ -81,6 +89,7 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenle
 | Orgaz Kontu'nun Gömülmesi (El entierro del conde de Orgaz) | El Greco | ✓ 6 nokta |
 | Musa, Yitro'nun Kızlarını Savunurken | Rosso Fiorentino | ✓ 6 nokta |
 | Aşk Sahnesi | Giulio Romano | ✓ 6 nokta |
+| Meryem'in Elizabet'i Ziyareti | Giulio Romano | ✓ 6 nokta |
 
 ### İtalyan Barok ve Caravaggizm · 5 / 5
 
