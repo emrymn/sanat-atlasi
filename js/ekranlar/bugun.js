@@ -52,7 +52,7 @@ import {
 import { ayrintiVeri, ayrintiBulucu, rozetleriEkle } from './gozat.js';
 import { SURUM } from '../surum.js';
 import { gosterilecekler, yenilikYazisi } from '../yenilikler.js';
-import { egimBaslat } from '../egim.js';
+import { egimBaslat, egimVar, egimIzni, hareketKisik } from '../egim.js';
 import { imzaGoster } from '../imza.js';
 import { kunyeGoster, dinleEkle } from '../kunye.js';
 
@@ -98,7 +98,7 @@ const yuruyusYili = (gs, kayit) => (kayit && !yilSupheliMi(kayit.yil, gs) ? kayi
 function kapakHtml(gs, kayit) {
   const eser = kayit ? [yuruyusEserAdi(gs.id, kayit), yuruyusYili(gs, kayit)].filter(Boolean).join(' · ') : '';
   return `<button class="bugun-buyut" type="button" data-bugun-buyut aria-label="Resmi tam ekran aç" disabled></button>
-        <div class="bugun-notlar"><button class="egim-dugme" type="button" data-egim-dugme data-test="egim-dugme">${ikon('hareket', 18, 1.6)}Hareketi aç</button>${yenilikHtml()}${yedekHatirlatHtml()}</div>
+        <div class="bugun-notlar"><button class="egim-dugme" type="button" data-egim-dugme data-egim-anahtar data-test="egim-dugme" aria-pressed="false" aria-label="Hareketi aç" hidden>${ikon('hareket', 18, 1.6)}</button>${yenilikHtml()}${yedekHatirlatHtml()}</div>
         <div class="bugun-alt">
           <a class="sahne-isim isim-blok" href="#/gunun">${isimHtml(gs)}</a>
           <p class="bugun-eser" data-bugun-eser${eser ? '' : ' hidden'}>${kacis(eser)}</p>
@@ -186,6 +186,7 @@ export function anaSayfa() {
   if (gs) {
     // telefonu eğince tablo döner, ışık üstünden kayar (İş 32); izin Ayarlar'dan verilir
     egimBaslat(ekran.querySelector('[data-gunun-gorsel]'), d.ilerleme.ayarlar.egim !== false);
+    egimAnahtari(ekran.querySelector('[data-gunun-gorsel]'));
     if (kayit) yuruyusKur(gs, kayit, perde);
     else gununKartGorseli(gs);
     imzaGoster(gs, ekran.querySelector('.sahne-isim')); // İş 48: tablonun üstünde adın altında imza
@@ -508,4 +509,34 @@ export function olaylariBagla() {
     eserKareleriDoldur();
     bildir(`${d.harita.get(id).ad} pekiştirmeye eklendi.`);
   });
+}
+
+// İş 182 (Emre: "Hareketi aç tuşu kalkmış, geri ekle ama yazı olarak değil, sadece simge"): tablonun sağ üstünde yazısız,
+// her zaman duran bir anahtar. Basılıyken (aria-pressed) hareket açık; dokununca kapanır ya da (iOS izniyle) açılır ve
+// seçim Ayarlar'daki "Telefonu eğince tablo oynasın" ayarına yazılır.
+function egimAnahtari(el) {
+  const b = ekran.querySelector('[data-egim-anahtar]');
+  if (!b || !el) return;
+  if (!egimVar() || hareketKisik()) return;
+  b.hidden = false;
+  const kutu = el.closest('.bugun-yuruyus') || el;
+  const yaz = () => {
+    const acik = kutu.classList.contains('egimli');
+    b.setAttribute('aria-pressed', String(acik));
+    b.setAttribute('aria-label', acik ? 'Hareketi kapat' : 'Hareketi aç');
+  };
+  yaz();
+  new MutationObserver(yaz).observe(kutu, { attributes: true, attributeFilter: ['class'] });
+  b.onclick = async () => {
+    if (b.getAttribute('aria-pressed') === 'true') {
+      d.ilerleme.ayarlar.egim = false;
+      kaydet();
+      egimBaslat(el, false);
+      return yaz();
+    }
+    if (!(await egimIzni())) return;
+    d.ilerleme.ayarlar.egim = true;
+    kaydet();
+    egimBaslat(el, true);
+  };
 }
