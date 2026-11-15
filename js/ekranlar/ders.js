@@ -156,11 +156,21 @@ function davet(b) {
   return `${b.sinaSoru} soru: “Bu eser kimin?” Geçmek için %${Math.round(SINA_GECME * 100)} doğru.`;
 }
 
-function devamDugmesi(b, test = 'ders-devam') {
+function devamDugmesi(b, test = 'ders-devam', sahne = false) {
   const a = b.durum.siradaki || b.adimlar[0];
   const suruyor = b.kayit[a].i > 0 && !b.durum.adimlar.find((x) => x.adim === a).bitti;
   const yazi = !b.durum.siradaki ? 'Dersi yeniden aç' : suruyor ? `${ADIM_ADLARI[a]} adımına devam` : `${ADIM_ADLARI[a]} adımını aç`;
   const say = b.durum.siradaki ? adimSayisi(b, a) : null;
+  // 1.81.0 (Emre): Çalış'taki düğme adımın kendisini anlatır: içinde dersin resmi ayrıntıdan ayrıntıya yakınlaşır
+  if (sahne) {
+    const alt = [say && say.yazi, b.durum.siradaki ? adimAciklamasi(b, a) : ''].filter(Boolean).join(' · ');
+    return `<a class="gor-dugme" href="${dersAdresi(b.akim, a)}" data-test="${test}" data-adim="${a}">
+        <span class="gor-dugme-resim" data-ders-kapak="${kacis(b.akim)}" data-genislik="960" aria-hidden="true"></span>
+        <span class="gor-dugme-parilti" aria-hidden="true"></span>
+        <span class="gor-dugme-yazi"><b>${yazi}</b>${alt ? `<small>${kacis(alt)}</small>` : ''}</span>
+        <span class="gor-dugme-ok" aria-hidden="true">${ikon('ileri', 22, 1.8)}</span>
+      </a>`;
+  }
   return `<a class="ders-dugme dolu" href="${dersAdresi(b.akim, a)}" data-test="${test}" data-adim="${a}"><span>${yazi}</span>${say && say.yazi ? `<small>${say.yazi}</small>` : ikon('ileri', 18, 1.8)}</a>`;
 }
 
@@ -180,13 +190,18 @@ function bugunKarti(b) {
       </a>
       ${adimHalkalari(b)}
       <div class="ders-bugun-alt">
-        <p class="ders-davet">${davet(b)}</p>
-        ${devamDugmesi(b)}
+        ${b.durum.siradaki === 'gor' ? '' : `<p class="ders-davet">${davet(b)}</p>`}
+        ${devamDugmesi(b, 'ders-devam', true)}
       </div>
     </section>`;
 }
 
-function tekrarKarti(tur) {
+function tekrarKarti(tur, dersler = []) {
+  // 1.81.0: solda açık derslerin kapaklarından küçük bir deste; yelpaze gibi açılıp kapanır
+  const deste = dersler
+    .slice(0, 3)
+    .map((x) => `<i data-ders-kapak="${kacis(x.akim)}"></i>`)
+    .join('');
   const pek = tur.zayif + tur.diger;
   const dk = Math.max(1, Math.round((tur.toplam * 20) / 60));
   const parca = [
@@ -197,9 +212,10 @@ function tekrarKarti(tur) {
   return `<a class="ders-tekrar" href="#/pekistir/karisik" data-test="karisik-dugme" aria-label="Günlük tekrar: ${tur.toplam} kart, başlat">
       <span class="ders-tekrar-ust"><span class="ders-etiket soluk">Günlük tekrar</span><small>bütün açık sanatçılardan</small></span>
       <span class="ders-tekrar-govde">
+        ${deste ? `<span class="ders-deste" aria-hidden="true">${deste}</span>` : ''}
         <b data-test="tur-sayi">${tur.toplam}</b>
         <span class="ders-tekrar-yazi">${tur.toplam ? `kart · ~${dk} dk` : 'kart'}<small data-test="tur-alt">${kacis(turAltYazisi(tur))}</small></span>
-        <span class="ders-tekrar-git">Başlat</span>
+        <span class="ders-tekrar-git" aria-hidden="true">${ikon('ileri', 20, 1.8)}</span>
       </span>
       ${parca.length ? `<span class="ders-tekrar-cubuk" aria-hidden="true">${parca.map(([cls, n]) => `<i class="k-${cls}" style="flex-grow:${n}"></i>`).join('')}</span>` : ''}
     </a>`;
@@ -265,7 +281,7 @@ export async function dersMenusu() {
   ciz(`${baslik}
     ${devamKarti()}
     ${b ? bugunKarti(b) : aciklar.length ? `<section class="ders-bugun bitti" data-test="bugunun-dersi" data-akim=""><div class="ders-bugun-alt"><span class="ders-etiket">Bugünün dersi</span><p class="ders-davet">Açık derslerin hepsi tamam. Aşağıdan istediğini yeniden açabilir ya da günlük tekrarı yapabilirsin.</p></div></section>` : ''}
-    ${tekrarKarti(turBilgisi('karisik'))}
+    ${tekrarKarti(turBilgisi('karisik'), aciklar)}
     ${dersler}
     ${soruTurlariHtml(hatalarSatiri())}`);
   kapaklariDoldur(kaynak);

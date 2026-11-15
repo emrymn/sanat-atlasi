@@ -15,6 +15,7 @@ import {
   ust,
   cerceve,
   kucukGorsel,
+  odakliGorsel,
   akimRenk,
   akimNoktasi,
   eserPaleti,
@@ -466,7 +467,18 @@ export async function kimlikDoldur(ad) {
   kimlikEserleri = v.eserler;
   dugmeyiGiydir(ad, v.eserler);
   const komsular = karsilastirmaKomsulari(ad, d.akimlar).slice(0, 3);
-  ustKutu.innerHTML = `${paletSeridi(v.palet)}
+  // Açılış sahnesi: en bilinen eser sayfanın başında; künyesi paletin altında (dokununca büyür)
+  const sahne = ekran.querySelector('[data-akim-sahne]');
+  const ilk = v.eserler[0];
+  if (sahne) {
+    if (ilk) odakliGorsel(sahne.querySelector('[data-akim-sahne-resim]'), ilk.e, 960);
+    else sahne.classList.remove('dolu');
+  }
+  const sahneKunyesi =
+    sahne && ilk
+      ? `<button type="button" class="akim-sahne-kunye" data-kimlik-eser="0" data-test="akim-sahne-kunye">Arkadaki eser: ${kacis(bilinenAd(ilk.s.ad, d.kisaAdlar[ilk.s.id]))}, <i>${kacis(eserBaslik(ilk.e))}</i>${ilk.e.tarih ? `, ${kacis(ilk.e.tarih)}` : ''}</button>`
+      : '';
+  ustKutu.innerHTML = `${paletSeridi(v.palet)}${sahneKunyesi}
       ${donemHikayesi(ad)}
       ${
         v.ozellikler.length
