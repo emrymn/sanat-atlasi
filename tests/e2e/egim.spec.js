@@ -82,6 +82,14 @@ test('Bugün: iOS izni hatırlıyorsa düğme çıkmaz, hareket hemen başlar', 
   await page.goto('./#/');
   await expect(page.locator('[data-gunun-gorsel]')).toHaveClass(/egimli/);
   await expect(page.locator('[data-egim-dugme]')).toBeHidden();
+  // İş 181: yürüyüşlü Bugün'de resmi kamera taşır; eğim de kameranın içinde: resim kayar ve döner
+  const resim = page.locator('.bugun-yuruyus .yur-sahne > img');
+  await expect(resim).toBeVisible();
+  const transform = () => resim.evaluate((el) => el.style.transform);
+  const once = await transform();
+  await donus(page, 80, 0.4);
+  await expect.poll(transform).toMatch(/rotateY\(\d/);
+  expect(await transform()).not.toBe(once);
   await page.goto('./#/ayarlar');
   await expect(page.locator('[data-ayar-egim]')).toBeChecked();
   await expect(page.locator('[data-egim-izin]')).toBeHidden();

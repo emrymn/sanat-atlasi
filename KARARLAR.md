@@ -2321,3 +2321,10 @@ tasarım uygulamaya geçti (`js/goruntuleyici.js`, `css/app.css` sonundaki İş 
   yakınlaştırma ve kaydırma görüntüleyicide zaten vardı, aynen çalışır. Otomatik ilerleme denendi; Emre düğmeli ilerlemeyi seçti.
 - Hikâye karakterleri (İş 169) aynı görünümü kullanır. Test: `tests/e2e/ayrinti.spec.js` (kart ayrıntıyı kapatmıyor, üste geçiyor,
   katlanıyor, çubukla atlanıyor), `tests/unit/ayrinti.test.mjs` (`alan`).
+### İş 181 · Bugün'de "Hareketi aç" resmi de oynatır (sürüm 1.82.1)
+
+Emre: "hareketi aç desen bile resimde hareket oluşmuyor, sadece ışık süzmesi hareket ediyor". İş 171'den beri Bugün yürüyüşünde resmi
+kamera taşıyor (`transform`) ve CSS, kamerayla çakışmasın diye eğimin dönüş/kaymasını resme uygulamıyordu (`translate/rotate: none`);
+yalnız ışık ve ad oynuyordu. Şimdi kamera her karede eğimi `js/egim.js`'ten (`egimDegeri`) okur: resim telefonla en çok 14 px kayar ve
+ekranın ortası çevresinde en çok 3° döner (perspektifli). Kenar görünmesin diye eğim açıkken resim ekrandan her yana 26 px taşar (kamera
+kenarı bu payla sınırlar); eğim kapalıyken kamera eskisi gibi. Test: `tests/e2e/egim.spec.js` (jiroskop olayıyla resmin dönmesi).
