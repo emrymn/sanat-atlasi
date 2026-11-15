@@ -1,0 +1,266 @@
+{
+  "madde_id": "NES-002",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (nes-a) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Kum saati (hourglass/sandglass), dikey olarak dar bir boyunla birleşen iki cam hazneden oluşan, üst haznedeki dolgunun (tarihsel olarak kum) yerçekimi etkisiyle alta akmasıyla süreyi ölçen ters çevrilebilir bir alettir; modern cam yapım tekniklerinden önce iki ayrı cam hazne, dolgunun geçmesi için delinmiş bir disk etrafında birleştirilir, iki cam mumla mühürlenir ve ek yeri sıkıca sarılırdı; çift konik tek parça cam şişe y. 1800'e kadar üflenememiştir; ölçülen süreyi dolgu miktarı ile iki hazne arasındaki deliğin boyutu belirler ve aletin en büyük düşmanı nemdir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "NES-002-K03",
+      "kaynak_baslik": "Wikipedia, 'Hourglass' (+ 'Marine sandglass')",
+      "url": "https://en.wikipedia.org/wiki/Hourglass",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "(K03) \"An hourglass (or sandglass, sand timer, or sand clock) is a device used to measure the passage of time. It comprises two glass bulbs connected vertically by a narrow neck that allows a regulated flow of a substance (historically sand) from the upper bulb to the lower one due to gravity.\" · (K01/AHS) \"Before modern glass making techniques developed, sand-glasses were made using two separate bulbs bound together around a disc with a hole for the 'sand' to pass through… The two glasses were sealed together with wax and the joint covered and tightly bound.\" · (K02/Gale) \"The two-coned glass phial could not be blown as one piece until about 1800.\"",
+      "pasaj_konum": "Wikipedia 'Hourglass', giriş; AHS 'The Sands of Time', yapım paragrafı; Gale 'Hourglass', History/Manufacturing",
+      "belirsizlik_ifadeleri": [
+        "all manner of different materials were tried (K01, dolgu denemeleri için)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-002-K01", "NES-002-K02"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C001 (tanım) ve C002 (imalat) aday iddiaları tek TEKNIK_TANIM iddiasında birleştirildi: ikisi de DOGRULANDI düzeyinde ve kaynakları örtüşüyor (K01 + K02 bağımsız iki kaynak; tanım için K03). Süreyi dolgu miktarı ve delik boyutunun belirlediği ile nemin en büyük düşman olduğu bilgisi K01/K02'den aktarılır."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Kum saatinin Avrupa'da Geç Orta Çağ öncesine ait kaydı yoktur; bilinen en erken belgelenmiş örnek 14. yüzyıldandır: Ambrogio Lorenzetti'nin Siena Palazzo Pubblico'daki 'Allegory of Good Government' freskinde kum saati tutan bir figür görülür; freskin tarihi kaynaklarda 1338 ya da 1337–1339 olarak verilir ve aletin kökeni belirsizdir.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "NES-002-K03",
+      "kaynak_baslik": "Wikipedia, 'Hourglass' (History/Middle Ages bölümü)",
+      "url": "https://en.wikipedia.org/wiki/Hourglass",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "(K03) \"There are no records of the hourglass existing in Europe prior to the Late Middle Ages; the first documented example dates from the 14th century, a depiction in the 1338 fresco Allegory of Good Government by Ambrogio Lorenzetti.\" · \"The origin of the hourglass is unclear\" · (K01/AHS) \"The earliest known illustration of such a device exists in an Italian fresco dating from between 1337 and 1339 in the Palazzo Publico in Siena.\"",
+      "pasaj_konum": "Wikipedia 'Hourglass', History/Middle Ages; AHS 'The Sands of Time', giriş paragrafı",
+      "belirsizlik_ifadeleri": [
+        "The origin of the hourglass is unclear",
+        "dating from between 1337 and 1339"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-002-K01", "NES-002-K02"],
+      "celisen_kaynaklar": [
+        "İlk betim tarihi: 1338 (Wikipedia/Guinness aktarımı) ↔ 1337–1339 (AHS, NES-002-K01) ↔ fresk dizisi için y. 1337–1340 — madde her iki biçimi ihtiyatla verir"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "K01 (AHS) figürün kum saati tuttuğunu doğrular ama figürü ADLANDIRMAZ. 'Avrupa'da Geç Orta Çağ öncesi kayıt yoktur' ifadesi 'antikçağda yoktu' anlamına gelmez; antikçağ iddiaları ayrı bir HIPOTEZ kaydında (C003) tutulmuştur."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Kum saatinin antikçağda kullanıldığına dair iddialar (MÖ y. 150'de İskenderiye'de 'clepsammia'nın icadı; Aziz Hieronymus öncesinde, MS 335'te kullanım; y. MS 350 tarihli Peleus-Thetis lahiti üzerindeki Morpheus betimi) ikincil literatürde aktarılır, ancak bu araştırmada doğrulanamamıştır; Wikipedia'nın ana maddesi kum saatinin kökenini belirsiz olarak verir ve Avrupa için Geç Orta Çağ öncesi kayıt bulunmadığını belirtir.",
+      "iddia_turu": "HIPOTEZ",
+      "kaynak_id": "NES-002-K03",
+      "kaynak_baslik": "Wikipedia, 'Marine sandglass' (antikçağ iddiaları) ve 'Hourglass' (köken belirsizliği)",
+      "url": "https://en.wikipedia.org/wiki/Marine_sandglass",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "(K02/Gale) \"Hourglasses… may have been used by the ancient Greeks and Romans, but history can only document the fact that both cultures had the technology to make the glass.\" · \"The first claims to sand glasses are credited to the Greeks\" · (K03) \"The origin of the hourglass is unclear\"",
+      "pasaj_konum": "Gale 'Hourglass', History bölümü; Wikipedia 'Hourglass' giriş; antikçağ iddiaları (clepsammia/İskenderiye MÖ y. 150; MS 335; Peleus-Thetis lahiti y. MS 350 — M. Llauradó) Wikipedia 'Marine sandglass' zincirinde aktarılır",
+      "belirsizlik_ifadeleri": [
+        "may have been used",
+        "history can only document",
+        "The first claims to sand glasses are credited to the Greeks",
+        "The origin of the hourglass is unclear"
+      ],
+      "destek_duzeyi": "DESTEKLEMIYOR",
+      "ikincil_kaynak_ids": ["NES-002-K02"],
+      "celisen_kaynaklar": [
+        "Wikipedia 'Marine sandglass' zincirindeki antikçağ iddiaları ↔ aynı külliyatın ana 'Hourglass' maddesi: 'origin is unclear' + Avrupa'da Geç Orta Çağ öncesi kayıt yok"
+      ],
+      "dogrulama_sonucu": "DOGRULANAMADI",
+      "notlar": "İddia HIPOTEZ türünde ve DOGRULANAMADI statüsünde tutuldu; kesin anlatıya dayanak YAPILMADI. Madde metni 'antik çağda kum saati YOKTU' biçiminde bir kesin olumsuzlama kurmaz; kullanılan biçim: 'antikçağ kullanımına dair iddialar belgelenememiştir / bunları destekleyen arkeolojik-kayıtsal kanıt ortaya konamamıştır'. Llauradó araştırması ve Journal of the British Archaeological Association atfı birincil olarak açılmadı."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Deniz kum saatine kesin olarak atfedilebilen en erken yazılı kayıt y. 1345 tarihlidir: III. Edward döneminde kral gemisi La George'un kâtibi Thomas de Stetesham'ın Sluis'te (Flandre) 12 ve ayrıca 4 adet 'orlogiis vitreis' (cam horologe) satın aldığına dair makbuz; deniz kum saatleri gemi hareketinden etkilenmedikleri ve su saatlerinden (clepsydra) daha güvenilir oldukları için denizde yaygınlaşmıştır.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "NES-002-K03",
+      "kaynak_baslik": "Wikipedia, 'Hourglass' (Middle Ages) — zincir: N. H. Nicolas, History of the Royal Navy, 1847; A. J. Turner, Of Time and Measurement, 1993; Britten",
+      "url": "https://en.wikipedia.org/wiki/Hourglass",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "(K03) \"The earliest recorded reference that can be said with certainty to refer to a marine sandglass dates from c. 1345, in a receipt of Thomas de Stetesham, clerk of the King's ship La George… 'pro xii. orlogiis vitreis', price of each 4½ gross'… For four horologes of the same sort…\" · (K02/Gale) \"The earliest writings referring to sand glasses are from 1345 when Thomas de Stetsham… ordered 16 hourglasses.\"",
+      "pasaj_konum": "Wikipedia 'Hourglass', Middle Ages; Gale 'Hourglass', History",
+      "belirsizlik_ifadeleri": [
+        "c. 1345",
+        "that can be said with certainty"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-002-K02"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İki kaynak sayı bakımından uyumlu: K03'ün aktardığı makbuz 12 + 4 = 16 toplamıyla K02'deki '16 hourglasses' ifadesini karşılar. Birincil belge (1345 makbuzu) bu araştırmada doğrudan açılmadı; Nicolas 1847 / Turner 1993 künyeleri zincir üzerinden aktarılır."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Kum saatinin belgelenen kullanım alanları arasında kiliselerde vaaz süresini ölçen 'sermon glass'lar, gemilerde vardiya takibi ('keep the watch'), evlerde mutfak ve günlük işler, zanaatkâr dükkânlarında çalışma süreleri, İngiltere Avam Kamarası'nda süre ölçümü ve hekim ile eczacıların nabız ölçümü için taşıdığı cep kum saatleri vardır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-002-K02",
+      "kaynak_baslik": "Gale / Macmillan, 'How Products Are Made' — 'Hourglass' (History/Uses)",
+      "url": "https://www.encyclopedia.com/science-and-technology/technology/technology-terms-and-concepts/hourglass",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"Sermonglasses were used in churches to track the length of the minister's sermon… used by the navies of several nations to 'keep the watch'… doctors, apothecaries, and other medical practitioners carried miniature or pocket sand glasses… to use when timing pulses.\"",
+      "pasaj_konum": "Gale 'Hourglass', History/Uses bölümü",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-002-K03"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "KULLANIM ALANLARININ ÇOĞU TEK KAYNAĞA (K02) dayanır; denizcilik kullanımı K03 ile de desteklenir. Brief'in not ettiği çip-log ile HIZ ÖLÇÜMÜ alt-detayı Wikipedia'da '[citation needed]' işaretli olduğundan bu iddiaya ve madde metnine ALINMAMIŞTIR (KISMEN düzeyde kalması gerekirdi). İkinci bağımsız akademik kaynak (Balmer 1978/1979; Turner 1993) açılmadı."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Müze koleksiyonlarında tarihsel kum saati nesneleri kayıtlıdır: Victoria and Albert Museum'da İtalya yapımı (1550–1600) bir sandglass (envanter 83-1880) — tornalanmış fildişi çerçevede iki yarımküremsi cam ampul, bel kısmı ipek olduğu düşünülen tekstil ve iple sarılı, içindeki turuncumsu-kırmızı parçacıklar artık serbest akmıyor, yükseklik 8.3 cm ve çap 5 cm; Metropolitan Museum'da ise 18. yüzyıldan cam ve lake bir hourglass kaydı vardır (envanter 59.208.78).",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-002-K09",
+      "kaynak_baslik": "Victoria and Albert Museum, Collection record: 'Sandglass' (83-1880), İtalya, 1550–1600",
+      "url": "https://collections.vam.ac.uk/item/O120000/",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "(K09/V&A) \"Glass in turned ivory frame… The two glass ampoules of semi-globular shape… The glass contains orangy-red particles which no longer run freely… lashed around the waist with textile (apparently silk, now degraded) and thread.\" · (K04/Met API) Hourglass, 18. yüzyıl, cam+lake, envanter 59.208.78",
+      "pasaj_konum": "V&A O120000 kayıt sayfası (Physical description + ölçüler); Met API nesne kaydı 202374",
+      "belirsizlik_ifadeleri": [
+        "apparently silk, now degraded",
+        "presumed to be glued in place"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-002-K04"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Nesne koleksiyonu kaydı — resim örneklerinden AYRI tutuldu. V&A'daki ikinci sand-glass kaydı (O119999, 82-1880, İtalya 1575–1625) yalnız API listesinde görüldü, sayfası açılmadı → TEYİTSİZ, maddeye alınmadı."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "Moretto da Brescia'nın 'Portrait of a Man' tablosunda (Metropolitan Museum envanter 28.79, Rogers Fund 1928; y. 1520–25) halı örtülü parapet üzerinde bir kum saati durur; Met küratöryel metni kum saatini 'zamanın geçişinin ve dolayısıyla ölümlülüğün amblemi' olarak yorumlar ve modelin kimliği belirsizdir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-002-K05",
+      "kaynak_baslik": "The Metropolitan Museum of Art, Collection page: Moretto da Brescia, 'Portrait of a Man' (küratöryel metin)",
+      "url": "http://web.archive.org/web/20260422150848/https://www.metmuseum.org/art/collection/search/437158",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-04-22"
+      },
+      "pasaj": "\"the parapet decorated with a carpet and hourglass… (an emblem of the passage of time and thus of mortality)\"",
+      "pasaj_konum": "Met koleksiyon sayfası, açıklama bloğu (Wayback snapshot 2026-04-22)",
+      "belirsizlik_ifadeleri": [
+        "ca. 1520–25",
+        "model kimliği isimsiz ('Portrait of a Man')"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-002-K04"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI'nın kapsamı: nesnenin betimi ve KÜNYE doğrulanmıştır; 'zamanın geçişi/ölümlülük amblemi' ifadesi MÜZENİN YORUMUDUR ve madde metninde 'Met küratöryel metni … olarak yorumlar' biçiminde sahiplendirilmiştir. Met API kaydı (K04) etiketler arasında 'Hourglass' taşır."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Rijksmuseum'daki 'Vanitas Still Life' (Stevers, 1630–1660; tuval üzerine yağlıboya; envanter SK-A-2358; 1908-05 satın alma) masa köşesinde keman, kafatası, Gouda piposu, kitaplar, kum saati (zandloper), şamdanda mum, kutu ve iki şişe betimler.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-002-K06",
+      "kaynak_baslik": "Rijksmuseum Amsterdam, Collection record: Stevers, 'Vanitas Still Life' (SK-A-2358)",
+      "url": "https://www.rijksmuseum.nl/en/collection/SK-A-2358",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"Op de hoek van een tafel staan een viool, schedel, Goudse pijp, boeken, zandloper, kaars in kandelaar, kistje en twee flessen.\"",
+      "pasaj_konum": "Rijksmuseum nesne kaydı SK-A-2358, object description",
+      "belirsizlik_ifadeleri": [
+        "kayıtta sanatçı 'Stevers' için yaşam tarihi verilmemiş",
+        "tarih aralığı geniş: 1630–1660",
+        "kayıtta BOYUT verilmemiş"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kayıtta boyut verilmediği için maddeye boyut EKLENMEDİ. Vanitas bağlamının sembolik çözümlemesi bu maddede yapılmaz; IKO-004 (vanitas-sembolleri) maddesine çapraz bağ kuruldu. TUZAK NOTU: Pieter Claesz'ın Rijksmuseum'daki 'Vanitas Still Life with the Spinario' eseri (SK-A-3930, 1628) kum saati DEĞİL cep saati içerir; bu nedenle Claesz örneği kullanılmadı."
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "Aziz Hieronymus betimlerinde kum saati çalışma masası nesneleri arasında yer alır: Detroit Institute of Arts'taki 'Saint Jerome in His Study' (y. 1435; meşe panel üzerine ketin kâğıtta yağlıboya; 20.6×13.3 cm; envanter 25.4; Jan van Eyck'e/atölyesine atfı tartışmalı) masasında bir kum saati betimler ve müze metni kum saatini 'geleneksel olarak zamanın geçişi ve insanın ölümlülüğü ile özdeşleştirilir' diye açıklar; Walters Art Museum'daki 'Saint Jerome in His Study' (Pieter Coecke van Aelst; y. 1530; panel üzerine yağlıboya; 75.3×121.8 cm; envanter 37.256) ise kum saati ve mum betimler ve müze metninde duvara asılı 'Cogita Mori' (ölümü düşün) uyarısını kafatasının somutlaştırdığı, kum saati ile mumun 'zamanın geçişinin ve ölümün yakınlığının ek hatırlatıcıları' olduğu belirtilir; Coecke'nin Antwerp atölyesi bu konunun çok sayıda varyasyonunu üretmiştir; Dürer'in 1514 tarihli 'St Jerome in his Study' eseri bakır baskı olduğu için bu maddenin resim örnekleri kapsamı dışındadır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-002-K07",
+      "kaynak_baslik": "Detroit Institute of Arts, 'Saint Jerome in His Study' (25.4); The Walters Art Museum, 'Saint Jerome in His Study' (37.256)",
+      "url": "https://dia.org/collection/saint-jerome-his-study-44739",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "(K07/DIA) \"On the table in front of him is an hourglass, traditionally equated with the passage of time and human mortality.\" · (K08/Walters) \"The admonition that Jerome has fixed to the wall, 'Cogita Mori' (Think upon death), is made explicit by the skull… the hourglass and candle, objects commonly found on a desk, are further reminders of the passage of time and the imminence of death.\"",
+      "pasaj_konum": "DIA kayıt sayfası (curatorial text + published references); Walters object 37.256 (description + inscription)",
+      "belirsizlik_ifadeleri": [
+        "ca. 1435 (DIA)",
+        "[attrib. to Jan van Eyck and Workshop] / [as by 'Jan Coene (?)'] / [as follower of Van Eyck]",
+        "likely a reference to Cardinal Niccolò Albergati",
+        "considered an antidote (TYRIRICA kavanozu)",
+        "ca. 1530 (Walters)",
+        "large studio… produced many variations"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-002-K08"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C010 (DIA), C011 (Walters) ve C013 (Hieronymus betim geleneği + Dürer kapsam notu) aday iddiaları tek OLGU iddiasında birleştirildi; her iki müze kaydı da canlı okundu. Atıf belirsizliği (van Eyck/atölye/takipçi) ve Walters'taki atölye nüansı KORUNDU. Anlam atıfları kurum yorumudur: 'traditionally equated with…' ve 'further reminders of…' ihtiyat kalıpları madde metnine 'geleneksel olarak' ve kurum atfıyla taşındı. Dürer'in 1514 bakır baskısı bağımsız baskı sanatı olduğu için ÖRNEK LİSTESİNE ALINMADI; yalnız kapsam notu olarak anıldı (AKADEMIK_DOGRULAMA_KURALLARI §11)."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Lorenzetti freskinde kum saatini tutan figürün 'Temperantia' (Ilımlılık) alegorisi olduğu yönünde ikincil kaynaklarda aktarımlar vardır; ancak bu araştırmada açılan kurumsal kaynaklar yalnız 'figürlerden biri kum saati tutarken görülür' der ve figürü adlandırmaz; bu nedenle özdeşleştirme teyitsizdir ve madde metninde kesin iddia olarak kullanılmamıştır.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "NES-002-K01",
+      "kaynak_baslik": "Antiquarian Horological Society — David Thompson, 'The Sands of Time'",
+      "url": "https://www.ahsoc.org/blog/the-sands-of-time/",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"one of the figures can be seen holding a sand-glass.\"",
+      "pasaj_konum": "AHS blog, ilk paragraf",
+      "belirsizlik_ifadeleri": [
+        "figürün Temperantia olarak özdeşleştirilmesi açılan kaynaklarda YOK → TEYİTSİZ"
+      ],
+      "destek_duzeyi": "KISMEN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-002-K03"],
+      "celisen_kaynaklar": [
+        "İkincil aktarımlar (arama ajanı raporunda Delancey Place/Guinness/ResearchGate üzerinden 'Temperance' olarak geçtiği bildirildi — bu kaynaklar AÇILMADI) ↔ açılan kurumsal kaynaklar (K01, K03) figürü adlandırmıyor"
+      ],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "Madde metni figürü ADLANDIRMAZ ('kum saati tutan bir figür'). 'Temperantia' adı kullanılacaksa ek birincil/kurumsal kaynak (ör. C. Frugoni, Pietro et Ambrogio Lorenzetti, 1988 veya Palazzo Pubblico kataloğu) doğrulanmalıdır. K03'ün atıf zincirinde Frugoni 1988 bulunmasına karşın ilgili içerik açılmadı."
+    }
+  ]
+}

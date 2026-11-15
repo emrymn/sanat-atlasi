@@ -1,0 +1,261 @@
+{
+  "madde_id": "MIT-003",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (mit-a) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "British Museum EA10470,3 (Ani Papirüsü, 3. çerçeve) 'Ani'nin Yargısı' sahnesini gösterir: terazinin bir kefesinde Ani'nin kalbi, diğerinde Maat'ı temsil eden tüy; terazinin üstünde çömelmiş babun (Thoth'un bir biçimi); sağ kefeyi tutan çakal başlı Anubis; kâtip paleti ve kamışıyla sonucu yazmaya hazır ibis başlı Thoth; arkasında kalbi yemeye hazır timsah başlı/aslan ön gövdeli/su aygırı art gövdeli canavar; üstte tahtlarında oturan büyük tanrılar (Ra-Horakhty, Atum, Shu, Tefnut, Geb, Nut, İsis, Nephthys, Horus, Hathor ile Hu ve Sia) ve Shay, Renenutet, Meskhenet; Ani'nin ba kuşu; soldan giren Ani ve karısı Tutu (Ani Spell 30B'yi fısıldar). Kayıt: 19. Hanedan, y. MÖ 1250, Thebes (Ani mezarı), boyalı papirüs, çerçeve 67 × 42 cm.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-003-K01",
+      "kaynak_baslik": "British Museum, Object EA10470,3 — 'Book of the Dead', Papyrus of Ani (frame 3): Ani's Judgment",
+      "url": "https://www.britishmuseum.org/collection/object/Y_EA10470-3",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-06-19"
+      },
+      "pasaj": "\"'Book of the Dead', Papyrus of Ani (frame 3): Ani's Judgment: the scene is the Hall of Judgment. Centrally placed is a balance, holding in its two pans Ani's heart (on the left) and a feather (on the right) representing Maat…\"",
+      "pasaj_konum": "BM nesne kaydı: Description + Cultures/periods + Dimensions",
+      "belirsizlik_ifadeleri": [
+        "snapshot tarihinde 'Not on display' → güncel sergileme durumu hakkında iddia kurulmadı",
+        "çerçeve ölçüsü bu snapshot'a aittir; BM'nin diğer çerçeve kayıtlarında farklı değerler (ör. 66,2 × 43,1 cm camlı çerçeve) görülebilir"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Canlı British Museum sayfası HTTP 403 (Cloudflare) verdiği için Wayback snapshot (2026-06-19 16:40:41, id_ ucu; gzip gövde açıldı) okundu. Bu madde 'çerçeve ölçüsü' ifadesini bilinçli olarak kullanır (cam/çerçeve ölçüsü farkı ihtiyatı)."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "British Museum EA10470,4 (Ani Papirüsü, 4. çerçeve) yargının sonucunu, Ani'nin Osiris'e takdimini gösterir; kayıtta Osiris 'yazıtta adı geçen ve betimlenen', İsis ve Nephthys 'temsili', Horus'un oğulları 'yazıtta adı geçen ve betimlenen' olarak listelenir; reg. no. 1888,0515.1.4, 19. Hanedan, Thebes, çerçeve 65 × 42 cm.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-003-K02",
+      "kaynak_baslik": "British Museum, Object EA10470,4 — Book of the Dead of Ani, frame 4: Ani introduced to Osiris",
+      "url": "https://www.britishmuseum.org/collection/object/Y_EA10470-4",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-06-19"
+      },
+      "pasaj": "\"Book of the Dead of Ani; frame 4; full colour vignettes; red borders. Vignette showing the conclusion of the judgement, with Ani introduced to Osiris.\" + Associated names: \"Named in inscription & portrayed: Osiris; Representation of: Isis; Representation of: Nephthys; Named in inscription & portrayed: Sons of Horus\".",
+      "pasaj_konum": "BM nesne kaydı: Description + Associated names + Registration number",
+      "belirsizlik_ifadeleri": [
+        "kayıt İsis/Nephthys için 'Representation of' (temsili) ifadesini kullanır; Osiris ve Horus'un oğulları için 'Named in inscription & portrayed'",
+        "snapshot tarihinde 'Not on display'"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Canlı sayfa HTTP 403 → Wayback snapshot (2026-06-19 17:43:34). Kaydın 'Associated names' sözlüğü aynen korundu; Osiris'in 'yazıtta adı geçen ve betimlenen' olarak işaretlenmesi, ikonografi iddiasının müze kaydıyla belgelendiğini gösterir."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "British Museum EA20868'in küratör yorumuna göre mumya biçimli ahşap Osiris figürünün yüzü yeşildir — bitki örtüsünün rengi ve bu tanrıyla ilişkilendirilen yeni yaşamın bir başka simgesi; aynı tipin bazı örnekleri siyah boyanmıştır — Osiris'in ilişkilendirildiği toprağın bereketi; figür atef taç takar ve krallığın asası ile dövenini (crook and flail) taşır; mezar içinde varlığının dirilişi ve yeni yaşamı güvenceye almaya yardım ettiği belirtilir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "MIT-003-K03",
+      "kaynak_baslik": "British Museum, Object EA20868 — Painted wooden Osiris figure (kaide içinde Anhay papirüsüyle), Curator's comments",
+      "url": "https://www.britishmuseum.org/collection/object/Y_EA20868",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2022-06-28"
+      },
+      "pasaj": "\"As in many other depictions, Osiris' face is green - the colour of vegetation, another symbol of new life associated with this deity. Some other figurines of this type are painted black, symbolizing the fertility of the earth with which Osiris was associated. He carries the crook and flail of kingship.\"",
+      "pasaj_konum": "BM nesne kaydı, Curator's comments (Strudwick 2006 alıntılı)",
+      "belirsizlik_ifadeleri": [
+        "\"another symbol of new life associated with this deity\" (ilişkilendirme dili)",
+        "\"symbolizing\" (sembol atfı)",
+        "menşe ihtiyatı: kayıt 'Akhmim' der ve ekler \"the original provenance—of the papyrus—is surely Thebes\""
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-003-K09"],
+      "celisen_kaynaklar": [
+        "Kucharek (MIT-003-K07, OIMP 39 s. 118): Osiris'in uzun süre varsayıldığı gibi bir bitki örtüsü tanrısı OLMADIĞINI, özgün işlevinin kraliyet cenaze dininin tanrılığı olduğunu yazar → renk/bereket atfına karşı akademik eleştiri (C005)."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "YORUM türü: DOGRULANDI, bu renk yorumunun BM küratör kaydına AİDİYETİNİN doğrulanmasıdır; 'yeşil ten = bitki örtüsü/yeniden doğuş' anlamının nesnel kanıtı değildir. Madde metni bu nedenle karşıt görüşü (C005) zorunlu dengeleyici olarak verir ve otomatik sembol atfı kurmaz. Nesne ahşap figürdür (resim değil) → Kural 11 gereği doğrulanmış resim örnekleri listesine alınmadı; ikonografi/renk kanıtı olarak kullanıldı."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "UCL Researchers in Museums (Petrie Museum bağlamlı) yazısına göre yeşil, Mısır'da hem yaşam ve bitki örtüsüyle hem ölümle ilişkilendirilir; 'bereket, ölüm ve öte dünya tanrısı Osiris genellikle yeşil tenli betimlenirdi'; örnek olarak Petrie Museum UC14226 (Neskhons'un yeşil tenli Osiris'e adak sunduğu boyalı ahşap stel) verilir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "MIT-003-K09",
+      "kaynak_baslik": "Anna Pokorska, 'Colours of Ancient Egypt – Green', UCL Researchers in Museums, 6 Mart 2019",
+      "url": "https://blogs.ucl.ac.uk/researchers-in-museums/2019-03-06/colours-of-ancient-egypt-green/",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"In Ancient Egypt… the colour green was associated with life and vegetation. However, it was also linked with the ideas of death. In fact, Osiris, the Egyptian god of fertility, death and afterlife, was commonly portrayed as having green skin.\"",
+      "pasaj_konum": "UCL blog yazısı, 2. paragraf",
+      "belirsizlik_ifadeleri": [
+        "kaynak blog düzeyindedir (üniversite blogu, Petrie Museum bağlamlı); müze kaydı veya hakemli yayın değildir",
+        "\"commonly portrayed\" (genelleme dili)"
+      ],
+      "destek_duzeyi": "DOLAYLI_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "Kucharek (MIT-003-K07): 'bitki örtüsü/bereket tanrısı' çerçevesini eleştirir (C005)."
+      ],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "Brief'in değerlendirmesi aynen uygulandı: tek başına KISMEN_DESTEKLENIYOR; BM küratör kaydı (K03) ile birlikte renk iddiasına destek olarak kullanılabilir. Blog, Kural 2 gereği tek başına akademik doğrulama sayılmaz. Anılan Petrie Museum UC14226 steli bu araştırmada müze kaydından DOĞRULANMADI → örnek listesine alınmadı."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Kucharek'in karşıt/eleştirel görüşüne göre yenilenme ve yeniden canlanma Osiris'in çekirdek yönleriyken, uzun süre varsayıldığı gibi bir bitki örtüsü (vegetation) tanrısı DEĞİLDİ; özgün işlevi kraliyet cenaze dininin tanrısı olmaktı ve Abydos ile bağı işlevseldi (yerel tanrı konumu Khentamenti'deydi).",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "MIT-003-K07",
+      "kaynak_baslik": "Andrea Kucharek, 'The Mysteries of Osiris', in: Scalf (ed.), Book of the Dead: Becoming God in Ancient Egypt (OIMP 39), ch. 10, ss. 117–126",
+      "url": "https://oi-idb-static.uchicago.edu/multimedia/239131/oimp39.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "\"While regeneration and rejuvenation were core aspects of Osiris, he was not, as has long been assumed, a god of vegetation. His original function had been as a god of the royal funerary religion, and he became associated with Abydos as the site of the earliest royal burial ground.\"",
+      "pasaj_konum": "OIMP 39, ch. 10, s. 118",
+      "belirsizlik_ifadeleri": [
+        "\"as has long been assumed\" (eski kabulün eleştirisi — karşıt görüş olarak işaretli)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "British Museum küratör yorumu (MIT-003-K03): yeşil = bitki örtüsü/yeni yaşam, siyah = toprağın bereketi (C003).",
+        "UCL blog yazısı (MIT-003-K09): Osiris'i 'bereket, ölüm ve öte dünya tanrısı' olarak anar ve yeşil tenli betimi geneller (C004).",
+        "OIMP 39 (MIT-003-K06, Cat. 6 s. 188; Cat. 13 s. 199–200): yeşili taze bitki örtüsünün büyümesi, altını tanrısallık simgesi olarak açıklar — aynı cilt içinde farklı yazarların vurgusu (brief C012, taşınmadı)."
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "YORUM türü: DOGRULANDI, eleştirinin SAHİBİNE (Kucharek) aidiyetinin ve metinde bu biçimde yer aldığının doğrulanmasıdır. Madde metni bu görüşü 'Kucharek savunur/yazar' kalıbıyla verir ve renk anlamını kesinleştirmez."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Mısır kaynaklarında Osiris mitinin süreklilikli, tutarlı bir anlatısı yoktur; Mısır kökenli en kapsamlı sunum Louvre'daki 18. Hanedan (MÖ 1550–1295) stelasında korunur; tutarlı anlatılar klasik yazarlara, başta erken 2. yüzyıl MS Plutarkhos'un De Iside et Osiride'sine dayanır; 'ana akım' versiyonda Osiris, Mısır kralı ve kız kardeşi İsis'in kocasıdır ve küçük kardeşi Seth tarafından öldürülür.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-003-K07",
+      "kaynak_baslik": "Andrea Kucharek, 'The Mysteries of Osiris', OIMP 39, ch. 10, ss. 117–126",
+      "url": "https://oi-idb-static.uchicago.edu/multimedia/239131/oimp39.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "\"there is hardly anything approaching what we would call a narrative… The most comprehensive presentation of the myth attested in Egyptian sources is preserved on a stela now in the Louvre… Coherent accounts we owe to classical authors, first and foremost Plutarch… Sketching the myth in its barest outlines and following the 'mainstream' version, Osiris, king of Egypt and husband to his sister Isis, was killed by their younger brother Seth.\"",
+      "pasaj_konum": "OIMP 39, ch. 10, s. 118–119",
+      "belirsizlik_ifadeleri": [
+        "\"mainstream version\" (ana akım versiyon — birden çok anlatı olduğunun işareti)",
+        "\"Many details are confirmed by native sources, lending credence to other, yet unsubstantiated points.\""
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İki düzey ayrıldı: (a) mitografinin kaynak durumu (Mısır'da süreklilikli anlatı yok; Plutarkhos geç klasik derleme) bir OLGU olarak doğrulandı; (b) anlatının içeriği GELENEKSEL_ANLATI olarak işaretlendi ve tarihsel gerçek gibi sunulmadı. İsis'in mumyalaması / Horus'un intikamı gibi ayrıntılar bu maddeye yalnız OIMP 39 Cat. 35'in (brief C009, taşınmadı) aktardığı biçimde akademik_tartismalar alanına not edildi; Plutarkhos metni bu araştırmada doğrudan AÇILMADI."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "'Osiris çevresi'ni oluşturan çekirdek aile şudur: ebeveynler gök tanrıçası Nut ve yeryüzü tanrısı Geb; kardeşler Osiris, İsis, Nephthys ve Seth; İsis ile Osiris'in oğlu Horus.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-003-K07",
+      "kaynak_baslik": "Andrea Kucharek, 'The Mysteries of Osiris', OIMP 39, ch. 10, ss. 117–126",
+      "url": "https://oi-idb-static.uchicago.edu/multimedia/239131/oimp39.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "\"the myths concerning the Osirian nuclear family — the parents, Geb and Nut, the siblings Osiris, Isis, Nephthys, and Seth, and the son of Isis and Osiris, Horus.\"",
+      "pasaj_konum": "OIMP 39, ch. 10, s. 117",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-003-K02"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "GELENEKSEL_ANLATI türü: mit içeriği tarihsel olgu gibi sunulmadı. Aile üyelerinin aynı kadro halinde bir vignette'te bulunması ayrıca BM EA10470,4 kaydıyla (K02, C002) belgelenir; EA10470,3'teki tanrılar meclisinde de Geb, Nut, İsis, Nephthys, Horus adları geçer (K01, C001)."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Oriental Institute cildi (OIMP 39, Cat. 33: OIM E14292 taş Osiris heykeli, Medinet Habu, 26. Hanedan y. MÖ 664–525) Osiris'i 'tartışmasız antik Mısır cenaze dininin en önemli tanrısı' ve 'doğruluğu yargılanan ölülerin ilahi mahkemesine başkanlık eden ölüler tanrısı' olarak tanımlar; aynı kayıt Roma dönemi Demotik Setna/Si-Osire öyküsünün mahkeme betimini aktarır: Osiris ince altın tahtında ve atef taçlı, solunda Anubis, sağında Thoth, terazi ortada.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-003-K06",
+      "kaynak_baslik": "Scalf (ed.), Book of the Dead: Becoming God in Ancient Egypt, OIMP 39, Catalog No. 33 (OIM E14292)",
+      "url": "https://oi-idb-static.uchicago.edu/multimedia/239131/oimp39.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "\"Osiris was arguably the most important god in ancient Egyptian funerary religion. He was the god of the dead who presided over the divine tribunal during which the righteousness of the deceased was judged… Setna saw the secret form of Osiris, the great god, seated upon his throne of fine gold and crowned with the atef-crown, with Anubis… on his left, the great god Thoth on his right… the balance being set up in the center before them.\"",
+      "pasaj_konum": "OIMP 39, Catalog No. 33, s. 336",
+      "belirsizlik_ifadeleri": [
+        "\"arguably\" (tartışmasız değil, 'savunulabilir ki' anlamında ihtiyat — madde metni bu ihtiyatı korumak için tanımı yayına atfeder)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-003-K01"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İki katman: (a) müze yayınının tanımı ve katalog kaydı (OLGU); (b) alıntılanan Setna/Si-Osire öyküsünün içeriği GELENEKSEL_ANLATI — madde metninde 'öykünün betimlediği biçimde' kalıbıyla verildi. 'Ölülerin yargıcı' iddiası brief'in önerisiyle iki bağımsız kaynağa dayandırıldı: K06 (bu kayıt) + K01 (BM EA10470,3 yargı sahnesi vignette'i, C001). Katalogdaki taş heykel (OIM E14292) resim değildir → örnek listesine alınmadı."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "'Book of the Dead' modern bir adlandırmadır (19. yüzyıl Almanca Totenbuch'undan türetilir; Arapça 'kutub al-umwat' etkisi de anılır); antik Mısırlılar bileşime 'Book of Going Forth by Day' (tꜢ mḏꜢ.t n.t prı͗.t m hrw) veya 'Spells for Going Forth by Day' (rꜢ.w n.w prı͗.t m hrw) derdi; başlık teknik bir ad değildir, Coffin Texts'te de görünür ve Ptolemaik dönemde Books of Breathing'de sürer.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "MIT-003-K08",
+      "kaynak_baslik": "Foy Scalf, 'What Is the Book of the Dead', OIMP 39, ch. 1, ss. 21–28",
+      "url": "https://oi-idb-static.uchicago.edu/multimedia/239131/oimp39.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "\"The title 'Book of the Dead' is a modern designation, derived from the German name Totenbuch used in the nineteenth century… Ancient Egyptians called the composition the 'Book of Going Forth by Day' (tꜢ mḏ.t n.t prı͗.t m hrw) (fig. 1.2) or the 'Spells for Going Forth by Day' (r.w n.w prı͗.t m hrw).\"",
+      "pasaj_konum": "OIMP 39, ch. 1, s. 22–23 (+ fig. 1.2: Met 30.3.31 papirüsündeki başlık satırı)",
+      "belirsizlik_ifadeleri": [
+        "çeviri varyantı: 'Going Forth by Day' ↔ 'Coming Forth by Day' (aynı ciltte s. 29 ve s. 167'de ikinci biçim de geçer)",
+        "transliterasyon yazım farkı: kaynak 'rꜢ.w n.w prı͗.t m hrw' biçimini verir; brief'te/promptta anılan 'rw nw prt m hrw' kısaltılmış yazımı aynı adın başka bir transliterasyonudur"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["MIT-003-K04"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Madde metni tek 'doğru' transliterasyon/çeviri iddiası kurmaz; varyantları birlikte verir (Kural 6). Görsel kanıt: fig. 1.2, Metropolitan Museum 30.3.31 (Nauny papirüsü) başındaki başlık satırıdır → doğrulanmış resim örneği 3 (K04) ve C011'in taşınmayan içeriği."
+    },
+    {
+      "claim_id": "C013",
+      "iddia": "Ölü, tanrıyla özdeşleştirilerek 'Osiris N.' adıyla anılır: Nany'nin Amduat papirüsünde (P. MMA 30.3.32) kırk ayakta mumya biçimli tanrı betimi arasında on dokuz kez 'The Osiris Nany as one who is justified (true of voice)' adı yinelenir; zafer kazanmış Nany doğrudan tanrıyla eşitlenir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-003-K06",
+      "kaynak_baslik": "Scalf (ed.), Book of the Dead: Becoming God in Ancient Egypt, OIMP 39, ch. 9 (Ritner)",
+      "url": "https://oi-idb-static.uchicago.edu/multimedia/239131/oimp39.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "\"In the 'Book of Amduat' ('What is in the Underworld') of the woman Nany (P. MMA 30.3.32), a series of forty standing mummiform gods are represented… Repeatedly alternating (nineteen times) with these divine symbols is the name 'The Osiris Nany as one who is justified ('true of voice')'.\"",
+      "pasaj_konum": "OIMP 39, ch. 9 (Ritner), s. 113",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İki katman: papirüsün betim içeriği OLGU (akademik müze yayını kaydı); ölünün tanrıyla özdeşleşmesi inancı GELENEKSEL_ANLATI niteliğindedir ve madde metninde 'özdeşleştirilerek anılır' biçiminde verilmiştir. Ad yazımı: Met kaydı 'Nauny' (30.3.31), OIMP 39 'Nany' → fark örnek versiyon_notunda belirtildi. P. MMA 30.3.32 (Amduat papirüsü) bu araştırmada ayrı bir müze kaydından doğrulanmadı; yalnız OIMP 39'un aktarımıyla kullanıldı."
+    }
+  ]
+}

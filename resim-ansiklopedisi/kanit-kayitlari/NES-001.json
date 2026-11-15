@@ -1,0 +1,279 @@
+{
+  "madde_id": "NES-001",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (nes-a) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Avrupa lavtası; derin armut biçimli gövdesi, geriye kıvrık burguluğu (pegbox) olan sapı, ses tahtasına (gövde karnına) yapıştırılmış germe yani gitar tipi eşiği ve ses tahtasının ahşabından oyulmuş delikli bir 'gül' ile süslenen büyük yuvarlak ses deliğiyle tanımlanan, 16. ve 17. yüzyıllarda yaygın olan mızraplı telli bir çalgıdır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "NES-001-K05",
+      "kaynak_baslik": "Encyclopaedia Britannica, 'Lute'",
+      "url": "http://web.archive.org/web/20261109132925/https://www.britannica.com/art/lute",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-11-09"
+      },
+      "pasaj": "\"In Europe, lute refers to a plucked stringed musical instrument popular in the 16th and 17th centuries… deep, pear-shaped body… a neck with a bent-back pegbox… strings hitched to a tension, or guitar-type, bridge glued to the instrument's belly… large, circular sound hole cut into the belly and ornamented with a perforated rose carved from the belly's wood.\"",
+      "pasaj_konum": "Britannica 'Lute', giriş + yapı paragrafları",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-001-K09"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kaynak 'In Europe, lute refers to…' ifadesiyle Avrupa lavtasını diğer saplı telli çalgılardan ayırır; bu nedenle madde 'lavta' teriminin organolojide daha geniş bir aile adı olarak da kullanıldığına dair kapsam notunu bu ayrıma dayandırır. K09 (Wikipedia 'Lute') yapı detaylarını genişletir (KISMEN düzeyde; rib ayrıntısı yalnız orada). Basit teknik tanım için kurumsal/uzmanlık kaynağı yeterlidir (Kural 7 istisnası)."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Avrupa lavtası Arap ʿūd'undan kaynaklanır ve 13. yüzyılda İspanya yoluyla, ayrıca dönen haçlılar aracılığıyla Avrupa'ya gelmiştir; buna karşılık 'lavta' ve 'ʿūd' sözcüklerinin türeyişi tartışmalıdır: Arapça al-ʿoud önerisinin yanı sıra Farsça rōd, Sanskritçe rudrī ve Süryanice ʿoud-a türetmeleri de ileri sürülmüş, kaynaklar 'possibly' ve 'may' ihtiyat kalıplarını kullanmıştır.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "NES-001-K05",
+      "kaynak_baslik": "Encyclopaedia Britannica, 'Lute'",
+      "url": "http://web.archive.org/web/20261109132925/https://www.britannica.com/art/lute",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-11-09"
+      },
+      "pasaj": "\"It originated as the Arab ʿūd, which was taken to Europe in the 13th century by way of Spain and by returning crusaders.\" (K09/Wikipedia 'Lute' etimoloji pasajı: \"The words lute and oud possibly derive from Arabic al-ʿoud… may refer to the wooden plectrum… or to the thin strips of wood…\")",
+      "pasaj_konum": "Britannica 'Lute', tarihçe girişi; Wikipedia 'Lute', Etymology bölümü (NES-001-K09)",
+      "belirsizlik_ifadeleri": [
+        "possibly derive from Arabic al-ʿoud",
+        "may refer to the wooden plectrum",
+        "may refer … to the thin strips of wood"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-001-K09"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Çalgının KÖKENİ konusunda iki kaynak da ʿūd bağlantısını verir (Britannica kesin dille, Wikipedia aktarımla). Çelişki çalgının kökeninde değil SÖZCÜK etimolojisindedir: K09 çoklu teori sayar (Arapça al-ʿoud, Farsça rōd, Sanskritçe rudrī, Süryanice ʿoud-a) ve ihtiyatlı dil kullanır. Madde metni bu ayrımı korur ve etimolojiyi kesinleştirmez. Aktarım yollarına dair ayrıntılar (Endülüs 711 sonrası; Sicilya ve II. Roger'ın 1140 tarihli Cappella Palatina tavan resimleri) yalnız K09'da bulunduğu için claim'e taşınmadı (tek yardımcı kaynak)."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Erken Avrupa lavtaları mızrapla (tüy plectrum) çalınan dört telli çalgılardı; 14. yüzyıl ortasında teller çiftlere ('koro'/course) dönüştü, 15. yüzyılda mızrap bırakılıp parmakla çalmaya geçildi ve beşinci koro eklendi, 16. yüzyılda altı korolu klasik biçim (G–c–f–a–d′–g′ akordu) yerleşti; lavta 16. yüzyılın önde gelen solo çalgısıyken Barok dönemde giderek basso continuo eşliğine indirgendi, 18. yüzyılda klavyeli çalgıların gölgesinde kaldı, 1800'den sonra neredeyse kullanımdan düştü ve 20. yüzyılda Julian Bream ile Walter Gerwig tarafından repertuvarıyla birlikte yeniden canlandırıldı.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "NES-001-K05",
+      "kaynak_baslik": "Encyclopaedia Britannica, 'Lute'",
+      "url": "http://web.archive.org/web/20261109132925/https://www.britannica.com/art/lute",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-11-09"
+      },
+      "pasaj": "\"By the mid-14th century the strings had become pairs, or courses… During the 15th century the plectrum was abandoned in favour of playing with the fingers… six courses of strings… tuned to G–c–f–a–d′–g′, beginning with the second G below middle C.\" · \"popular in the 16th and 17th centuries… By the 18th century, keyboard instruments eclipsed the lute in popularity… [Bream ve Gerwig] successfully revived the lute and its repertory.\" (K09: \"The lute almost fell out of use after 1800.\")",
+      "pasaj_konum": "Britannica 'Lute', tarihsel gelişim paragrafları + kapanış; Wikipedia 'Lute', Baroque bölümü (NES-001-K09)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-001-K09"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C005 (gelişim) ve C007 (dönemler/canlanma) aday iddiaları tek iddiada birleştirildi: ikisi de TARIH türünde, DOGRULANDI düzeyinde ve aynı kaynak çiftine (K05 + K09) dayanıyor. K09 ayrıca Rönesans sonunda 10 koro, Barok'ta 13–14 koro bilgisini verir; bu ayrıntı claim'e alınmadı (ikincil detay)."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Müze koleksiyonlarında tarihsel Avrupa lavtaları nesne kayıtlarıyla belgelenir: Metropolitan Museum müzik aletleri koleksiyonunda Pietro Railich yapımı lavta (1669, İtalyan; ladin, yılanyılan ağacı, abanoz; env. 2008.3a,b), Wendelin Tieffenbrucker'a atfedilen lavta (kayıtta '16. yüzyıl sonu'; porsuk, ladin, abanoz, akçaağaç; env. 1989.13) ve Sixtus Rauchwolff yapımı lavta (1596, Alman; env. 89.2.157); Victoria and Albert Museum'da ise Laux Maler'in (1518–1552 arasında çalıştı) y. 1540 tarihli, 11 figürlü-akçaağaç ribden oluşan lavtası (env. 194:1, 2-1882) vardır; V&A kaydına göre yalnız ribler özgündür, boyun ve burguluk y. 1967'de sergileme için eklenmiş olabilir ve çalgının standart akordun üç yarım ses altında (G yerine E) akortlanmış olduğu düşünülmektedir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-001-K08",
+      "kaynak_baslik": "Victoria and Albert Museum, Collection record: Lute, Laux Maler, Bologna, ca. 1540 (194:1, 2-1882)",
+      "url": "https://collections.vam.ac.uk/item/O122435/lute-laux-maler/",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "(K08/V&A) \"Only the ribs of this lute are original, and they were made by Laux Maler, who worked between 1518 and 1552 in Bologna… The neck and head-stock were probably added in about 1967 in preparation for display… this instrument is thought to have been tuned three semitones below the standard tuning (i.e. E instead of G).\" · (K07/Met API alanları) \"Lute; Pietro Railich; 1669; Spruce, snakewood, ebony; Musical Instruments; 2008.3a, b\"",
+      "pasaj_konum": "V&A kayıt sayfası, Physical description + küratöryel notlar; Met açık API nesne kayıtları 505741, 503357, 500554",
+      "belirsizlik_ifadeleri": [
+        "probably added (neck and head-stock, in about 1967)",
+        "thought to have been tuned three semitones below the standard tuning",
+        "it is likely that the lute was made for a professional rather than princely player",
+        "Tieffenbrucker kaydında objectDate 'late 16th century', begin/end 1650–1700"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-001-K07"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Brief'in C008 (Met çalgı kayıtları) ve C009 (V&A Maler lavtası) aday iddiaları tek OLGU iddiasında birleştirildi: her ikisi de müze NESNE koleksiyonu kaydıdır ve resim örneklerinden ayrı tutulmuştur. Met API'deki Tieffenbrucker kaydında tarih alanı ile begin/end aralığı arasındaki tutarsızlık madde metninde de aktarıldı (kayıt içi çelişki, nesnenin kendisine dair bir iddia değildir)."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Johannes Vermeer'in 'Young Woman with a Lute' tablosu (Metropolitan Museum env. 25.110.24; tuval üzerine yağlıboya, 51.4×45.7 cm; Collis P. Huntington Bequest 1900; müze tarihi y. 1662–63) pencere önünde oturan ve lavtasını akort eden genç bir kadını betimler; Met küratöryel metnine göre yerdeki açık nota kitapları ve viola da gamba kadının bir düet için hazırlandığına işaret eder ve Hollanda Cumhuriyeti'nde varlıklı gençler eğitimlerinin parçası olarak müzik çalışırken amatör konserler flört fırsatı sağlıyordu; tarihleme literatürde ihtilaflıdır (Met/Liedtke 1662–63; Wheelock y. 1664; Franits y. 1662–65; Waiboer y. 1662–64).",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-001-K02",
+      "kaynak_baslik": "The Metropolitan Museum of Art, Collection page: Johannes Vermeer, 'Young Woman with a Lute' (küratöryel metin)",
+      "url": "http://web.archive.org/web/20260411181931/https://www.metmuseum.org/art/collection/search/437880",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-04-11"
+      },
+      "pasaj": "\"A young woman glances out a window while tuning her lute… Open songbooks and a viola da gamba on the floor indicate that she is preparing for a duet. Wealthy young people in the Dutch Republic studied music as part of their education, and amateur concerts provided a welcome opportunity for flirtation.\"",
+      "pasaj_konum": "Met koleksiyon sayfası, küratöryel açıklama (Wayback snapshot 2026-04-11); künye alanları Met API kaydından (NES-001-K01)",
+      "belirsizlik_ifadeleri": [
+        "ca. 1662–63",
+        "indicate that (çıkarımsal dil)",
+        "Wheelock 'ca. 1664'; Franits 'ca. 1662–65'; Waiboer 'ca. 1662–64'"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-001-K01", "NES-001-K10", "NES-001-K14"],
+      "celisen_kaynaklar": [
+        "Tarihleme: Met/Liedtke 'ca. 1662–63' (NES-001-K02) ↔ Wheelock 'ca. 1664' ↔ Franits 'ca. 1662–65' ↔ Waiboer 'ca. 1662–64' (NES-001-K14, JHNA 9:1, 2017)"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI'nın kapsamı: künye (API), betim ve küratöryel okumanın VARLIĞI doğrulanmıştır; 'düet hazırlığı' ve 'flört' çıkarımı müzenin yorumudur ve madde metninde 'Met küratöryel metnine göre' kaydıyla verilmiştir (bkz. C010). İddianın son cümlesi literatürdeki tarihleme farklılığının varlığını ileri sürer; bu farklılık brief'te Wheelock/Franits için K10 literatür listesi, Waiboer için ayrıca açılan JHNA makalesi (K14) üzerinden belgelenmiştir. Waiboer'ın Van Mieris 'Woman Playing a Theorbo-Lute' (1663) kompozisyon-kaynağı önerisi HİPOTEZ düzeyindedir ve iddiaya alınmamıştır (akademik_tartismalar 5)."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Caravaggio'nun 'Lute-Player' tablosunun Hermitage versiyonu (State Hermitage Museum dijital koleksiyon kaydı 31511; müze kaydına göre 1595–1596; tuval üzerine yağlıboya, 94×119 cm; env. ГЭ-45; 1808'de Paris'teki Giustiniani koleksiyonu satışından müzeye girdi) beyaz gömlekli bir genci koyu fon önünde keskin yandan ışıkla gösterir ve masadaki notalarda dönemin moda şarkısı olan Jacques Arcadelt'in 'You know that I love you' parçası yazılıdır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-001-K03",
+      "kaynak_baslik": "The State Hermitage Museum, Digital collection: Caravaggio, 'Lute-Player' (kayıt 31511)",
+      "url": "https://www.hermitagemuseum.org/digital-collection/31511?lng=en",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"the damaged pear, the crack in the lute, the crumpled pages of the music. The melody written on those pages is that of a then fashionable song by Jacques Arcadelt…\"",
+      "pasaj_konum": "Hermitage digital collection 31511, küratöryel metin + künye bloğu (1595–1596; tuval üzerine yağlıboya; 94×119 cm; ГЭ-45; 1808 Giustiniani satışı)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "TARİH: Hermitage kaydı 1595–1596 (NES-001-K03) ↔ Wikipedia versiyon tablosu y. 1600 (NES-001-K06) — bu çelişki C008'de CELISKILI olarak kayıtlıdır; madde metni tarihi 'y. 1595–1600 (kaynaklar arasında ihtilaflı)' biçiminde verir"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Erişim notu: web_fetch SSL sertifika hatası verdi; curl tam metin döndürdü (200). Kayıt kendi versiyonunu kesin dille vermektedir; versiyonlar arası tarih ihtilafı bu kaydın doğrulanmış içeriğini ortadan kaldırmaz, o nedenle ihtilaf ayrı iddiada (C008) CELISKILI olarak tutulur. Çatlak-lavta metaforu bu iddiada değil, YORUM türündeki C010'da kayıtlıdır."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "Orazio Gentileschi'nin 'The Lute Player' tablosu (National Gallery of Art, Washington, env. 1962.8.1; Ailsa Mellon Bruce Fund; y. 1612/1620; tuval üzerine yağlıboya, 143.5×129 cm) lavta çalan genç kadını beklenmedik biçimde arkadan gösterir; masada blokflütler, bir cornetto, keman ve açık nota kitapları vardır ve NGA küratöryel metnine göre kadın bu çalgıların haber verdiği konser için lavtasını akort ediyor olabilir; eser uzun süre Liechtenstein koleksiyonunda Caravaggio'ya atfedilmiş, 1923'te Hermann Voss tarafından geçici olarak Artemisia Gentileschi'ye yorulmuş ve 1922'den itibaren Orazio Gentileschi'ye bağlanmıştır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "NES-001-K04",
+      "kaynak_baslik": "National Gallery of Art, Washington — Artwork record: Orazio Gentileschi, 'The Lute Player' (1962.8.1)",
+      "url": "http://web.archive.org/web/20261103161337/https://www.nga.gov/artworks/46434-lute-player",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-11-03"
+      },
+      "pasaj": "\"The graceful musician and her lute are seen, unexpectedly, from the back… She may be tuning her lute in anticipation of the concert promised by the assortment of recorders, a cornetto and violin, and the song books lying open on the table before her… Orazio Gentileschi was one of the earliest and most gifted painters to be inspired by the genre scenes of Caravaggio in Rome.\"",
+      "pasaj_konum": "NGA artwork 46434, küratöryel giriş + provenans notları",
+      "belirsizlik_ifadeleri": [
+        "c. 1612/1620",
+        "may be tuning",
+        "must have had in mind",
+        "tentatively as by Artemisia Gentileschi",
+        "apparently a wealthy Bolognese merchant",
+        "it is not possible to follow the exact transactions"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Canlı nga.gov 403 verdiği için Wayback snapshot'ı (2026-11-03) okundu. 'Akort ediyor olabilir' okuması NGA küratöryel metninin yorumudur ve madde metninde 'NGA küratöryel metnine göre' kaydıyla verilmiştir. Atıf geçmişi (Caravaggio → Artemisia Gentileschi geçici yorumu → Orazio) kaydın provenans notlarından aktarılır; ihtiyat kalıpları korunmuştur."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Caravaggio'nun 'The Lute Player' kompozisyonunun literatürde üç versiyonu tartışılır: Wildenstein Koleksiyonu versiyonu (y. 1596; uzun yıllar Metropolitan Museum'da sergilenmiştir), Hermitage versiyonu ve genellikle Hermitage tablosunun kopyası sayılan Badminton House versiyonu (y. 1596; 2001'de Sotheby's New York'ta 'Caravaggio çevresi' olarak satılmıştır); Hermitage versiyonunun tarihlemesi kaynaklar arasında çelişkilidir (Hermitage kaydı 1595–1596 ↔ Wikipedia versiyon tablosu y. 1600); eserin Kardinal Francesco Maria del Monte için yapıldığı Baglione'nin erken kaydına dayanılarak aktarılır ve Metropolitan Museum'daki 'The Musicians' (1597; env. 52.81) bu versiyonlardan biri değil, ayrı bir kompozisyondur.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "NES-001-K06",
+      "kaynak_baslik": "Wikipedia, 'The Lute Player (Caravaggio)' (atıf zinciri: Baglione 1642; Christiansen, Burlington Magazine 1990; Whitfield, Paragone 2008)",
+      "url": "https://en.wikipedia.org/wiki/The_Lute_Player_(Caravaggio)",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"A third version called the Badminton House version is seen as a copy of The Hermitage picture…\" · versiyon tablosu: Wildenstein 'c. 1596', Hermitage 'c. 1600', Badminton House 'c. 1596'",
+      "pasaj_konum": "Wikipedia 'The Lute Player (Caravaggio)', versiyonlar + otantiklik bölümleri",
+      "belirsizlik_ifadeleri": [
+        "seen as a copy",
+        "c. 1596 / c. 1600",
+        "Most likely (del Monte siparişi — Met küratöryel metni, 'The Musicians' kaydı)"
+      ],
+      "destek_duzeyi": "KISMEN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-001-K03", "NES-001-K11", "NES-001-K13"],
+      "celisen_kaynaklar": [
+        "Hermitage dijital koleksiyon kaydı (NES-001-K03) eseri 1595–1596 olarak tarihler ↔ Wikipedia versiyon tablosu (NES-001-K06) Hermitage versiyonunu y. 1600 olarak verir",
+        "Del Monte siparişi: Baglione 1642 kaydına dayanılarak aktarılır (birincil metin bu araştırmada okunmadı); Met 'The Musicians' kaydında 'Most likely' ihtiyatı vardır"
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "Versiyon varlığı ve Badminton House satış bilgisi tek YARDIMCI kaynağa (Wikipedia, atıf zincirli) dayanır → KISMEN destek. Tarihleme çelişkisi nedeniyle iddia CELISKILI işaretlendi; madde metni hiçbir tarihi kesinleştirmez ve hangi versiyonun örneklediğini açıkça belirtir (Hermitage). 'The Musicians' (1597, Met 52.81) ayrımı Met API kaydı (K11) ve küratöryel metin (K13) ile doğrulandı; bu tablo 'Lute Player' versiyonu değildir."
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "Badminton House versiyonunun otografisi tartışmalıdır: genel görüş bu tablonun Hermitage versiyonunun kopyası olduğu yönündeyken Clovis Whitfield atfı sorgulamış ve Badminton House tablosunun Caravaggio'nun kendisi tarafından yapılmış olabileceğini öne sürmüştür; modelin kimliği de belirsizdir — androjen modelin Pedro Montoya olabileceği belirtilmiş, Peter Robb ise onu Mario Minniti olarak özdeşleştirmiştir.",
+      "iddia_turu": "HIPOTEZ",
+      "kaynak_id": "NES-001-K06",
+      "kaynak_baslik": "Wikipedia, 'The Lute Player (Caravaggio)'",
+      "url": "https://en.wikipedia.org/wiki/The_Lute_Player_(Caravaggio)",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"A third version called the Badminton House version is seen as a copy of The Hermitage picture… Clovis Whitfield… has questioned the attribution and suggested the Badminton House painting may actually be by Caravaggio.\" · \"The rather androgynous model could be Pedro Montoya… Peter Robb has identified him as Mario Minniti\"",
+      "pasaj_konum": "Wikipedia 'The Lute Player (Caravaggio)', otantiklik + model bölümleri",
+      "belirsizlik_ifadeleri": [
+        "seen as a copy",
+        "may actually be by Caravaggio",
+        "could be Pedro Montoya",
+        "Peter Robb has identified him as Mario Minniti"
+      ],
+      "destek_duzeyi": "KISMEN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "Genel görüş: Badminton House versiyonu Hermitage tablosunun kopyası sayılır (NES-001-K06) ↔ Clovis Whitfield: otograf olabilir (K06 üzerinden aktarılır; Whitfield, Paragone 2008 — metnine erişilmedi)"
+      ],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "TEK YARDIMCI KAYNAK: Whitfield'ın Paragone 2008 makalesi ve Van Edwards (Lute News 1999) açılmadı. Brief, Whitfield'ın itirazını pentimenti kanıtına dayandırdığını aktarır; ancak bu kanıt kaydına alınan pasajda pentimenti ayrıntısı YER ALMAZ → madde metninde pentimenti gerekçesi olgu olarak yazılmadı, ek doğrulama notu akademik_tartismalar 2'ye kondu. İddia HİPOTEZ düzeyinde tutuldu; kesinleştirme yapılmadı."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Lavta betimlerine atfedilen anlamlar eser-özeldir ve ancak kaynaklarına atıfla verilebilir: Hermitage küratöryel metni Caravaggio tablosundaki çatlak lavtayı 'başarısız olan aşkın metaforu' olarak yorumlar; Metropolitan Museum'un küratöryel metni Vermeer tablosundaki nota kitaplarını ve viola da gambayı düet hazırlığı ve flört bağlamında okur; Walter Liedtke (Jonathan Janson'ın Essential Vermeer sitesinde aktarılan okumasında) akort eyleminin ılımlılığa (temperance) işaret edebileceğini 'If tuning the lute hints at moderation' ihtiyatıyla önerir; Lawrence Gowing'e göre ise Vermeer'in lavta ya da gitar tutan kadınları müzik icrasından çok 'dikkatin dağılması' temasına aittir; bu araştırmada genel bir 'müzik-uyum sembolizmi' iddiasını doğrulayan bağımsız akademik kaynak açılamamıştır.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "NES-001-K10",
+      "kaynak_baslik": "Essential Vermeer (Jonathan Janson), 'What is the Meaning of the Woman with a Lute?' (Liedtke 2001 ve Gowing 1950 alıntılarıyla)",
+      "url": "https://www.essentialvermeer.com/cat_about/lute.html",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "(K10/Liedtke) \"If tuning the lute hints at moderation, the thought seems appropriate, and consistent with the reminders of temperance in The Glass of Wine, Young Woman with a Wineglass, and Woman with a Balance.\" · (K10/Gowing) \"Vermeer's ladies who hold a lute or a guitar are not occupied with music-making. They turn away; there is some momentary distraction in the air…\" · (K03/Hermitage) \"the cracked lute was a metaphor for the love that fails\" · (K02/Met) \"Open songbooks and a viola da gamba on the floor indicate that she is preparing for a duet… amateur concerts provided a welcome opportunity for flirtation.\"",
+      "pasaj_konum": "Essential Vermeer, 'What is the Meaning of the Woman with a Lute?'; Hermitage dijital koleksiyon kaydı 31511 küratöryel metni; Met koleksiyon sayfası (Wayback 2026-04-11)",
+      "belirsizlik_ifadeleri": [
+        "If tuning the lute hints at moderation…",
+        "one has the impression",
+        "The hypothesis is fraught with hazards",
+        "the map may imply a man's absence, but Vermeer offers allusions rather than signs",
+        "indicate that (Met küratöryel metni)",
+        "the cracked lute was a metaphor for the love that fails (Hermitage müze yorumu)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["NES-001-K02", "NES-001-K03"],
+      "celisen_kaynaklar": [
+        "Akort/lavta okumaları birbirinin yerine geçmez: kur-flört (Met küratöryel metni; Liedtke 'a modern Venus in search of an Adonis or Mars') ↔ ılımlılık/temperance (Liedtke, ihtiyatlı) ↔ dikkatin dağılması (Gowing) ↔ çatlak lavta = başarısız aşk (Hermitage, tek örnek üzerinden)"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI'nın kapsamı: bu YORUM iddiasında doğrulanan şey, söz konusu okumaların ADI GEÇEN KAYNAKLARA AİT OLDUĞUDUR; okumaların içeriğinin genel kabul olduğu DEĞİLDİR. Madde metninde her okuma sahibine atıfla verilmiş, tek bir anlamda birleştirilmemiştir. 'Temperance' okuması tek yorumcu zincirine (Liedtke → Janson'ın aktarımı) dayanır; Liedtke kataloğunun (NES-001-K15) metnine erişilmedi. Negatif bulgu: genel 'müzik-uyum sembolizmi' için bağımsız akademik kaynak açılamadı (brief C017); bu nedenle tür düzeyinde otomatik anlam atfı yapılmaz."
+    }
+  ]
+}

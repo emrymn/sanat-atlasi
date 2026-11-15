@@ -1,0 +1,238 @@
+{
+  "madde_id": "IKO-003",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (iko) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Britannica tanımına göre ejder, çeşitli kültürlerin mitolojilerinde büyük kertenkele/yılan benzeri bir yaratıktır ve 'bazı geleneklerde kötü, bazılarında hayırhah' tasarlanır; ortaçağ Avrupa'sında kanatlı, dikenli kuyruklu ve ateş soluyan biçim baskındır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "IKO-003-K03",
+      "kaynak_baslik": "Encyclopaedia Britannica — Dragon (mythological creature)",
+      "url": "https://www.britannica.com/topic/dragon-mythological-creature",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-11-11"
+      },
+      "pasaj": "a large lizard- or serpent-like creature, conceived in some traditions as evil and in others as beneficent. In medieval Europe, dragons were usually depicted with wings and a barbed tail and as breathing fire.",
+      "pasaj_konum": "'Dragon' giriş paragrafı",
+      "belirsizlik_ifadeleri": ["conceived in some traditions", "usually"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kavram ayrımının çerçevesi: aynı ad farklı geleneklerde farklı anlam taşır (TAKSONOMI §5.5)."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Çin ejderi (long) hayırhah bir yaratıktır; yin-yang kozmolojisinde yang'ı — gök, etkinlik ve erillik ilkesini — temsil eder; eski çağlardan beri imparatorluk ailesinin amblemidir ve 1911'e kadar Çin bayrağında yer almıştır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-003-K03",
+      "kaynak_baslik": "Encyclopaedia Britannica — Dragon (mythological creature)",
+      "url": "https://www.britannica.com/topic/dragon-mythological-creature",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-11-11"
+      },
+      "pasaj": "In East Asian mythologies the dragon retains its prestige and is conceived as a beneficent creature. The Chinese dragon, lung, represents yang, the principle of heaven, activity, and maleness … From ancient times it was the emblem of the imperial family, and until the founding of the republic (1911) the dragon adorned the Chinese flag.",
+      "pasaj_konum": "'Dragon' gövde metni (Doğu Asya bölümü)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-003-K07"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İmparatorluk sembolizmi için ikinci ayak: Qing kaftan/rütbe düzeni (IKO-003-K07, C007)."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Çin ve Japon ejderleri 'havanın güçleri' sayılmakla birlikte genellikle kanatsızdır ve Daoizm'de doğanın tanrısallaştırılmış güçleri arasındadır; ejder Çin kültürüyle birlikte Japonya'ya gelmiş, orada (ryū veya tatsu) istediği boyuta girebilen, görünmez olabilen bir varlığa dönüşmüştür.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-003-K03",
+      "kaynak_baslik": "Encyclopaedia Britannica — Dragon (mythological creature)",
+      "url": "https://www.britannica.com/topic/dragon-mythological-creature",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-11-11"
+      },
+      "pasaj": "Both Chinese and Japanese dragons, though regarded as powers of the air, are usually wingless. They are among the deified forces of nature in Daoism. … The dragon came to Japan with much of the rest of Chinese culture, and there (as ryū or tatsu) it became capable of changing its size at will, even to the point of becoming invisible.",
+      "pasaj_konum": "'Dragon' gövde metni",
+      "belirsizlik_ifadeleri": ["usually wingless"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Japon alımlanması (ryū/tatsu) MIT-005 çapraz bağ adayıdır; hedef madde henüz diskte olmadığı için ilgili_maddeler'e eklenmedi (uretim_notu)."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Avrupa/Hristiyan geleneğinde ejder günah ve paganlığın sembolü olmuş, aziz ve şehitlerin ayakları altında ezilmiş betimlenmiştir; Orta Doğu dünyasında yılan/ejder kötülük ilkesiydi.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-003-K03",
+      "kaynak_baslik": "Encyclopaedia Britannica — Dragon (mythological creature)",
+      "url": "https://www.britannica.com/topic/dragon-mythological-creature",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-11-11"
+      },
+      "pasaj": "In Christian art the dragon came to be symbolic of sin and paganism and, as such, was depicted prostrate beneath the heels of saints and martyrs. … the serpent or dragon was symbolic of the principle of evil.",
+      "pasaj_konum": "'Dragon' gövde metni",
+      "belirsizlik_ifadeleri": ["On the whole, however"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kavram ayrımının Avrupa kanadı. Avrupa ejderi için ayrı madde bu partide yoktur; bağ kurulmadı (uretim_notu)."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Kaplan-ejder eşleşmesinin kökeni Zhou dönemi (MÖ 1046–256) ile ilişkilendirilen Değişimler Kitabı'nın (Yijing) ilk heksagramı qian'dadır: bulutlar ejderi, rüzgâr kaplanı izler; kaplan 'yin', ejder 'yang' ile ilişkilenir; Han döneminde (MÖ 206–MS 220) ikisi, Beş Element ve Daoizm gibi öğretilerle birlikte Dört İlahi Hayvan içinde yönleri temsil eder — kaplan batı/beyaz, ejder doğu/mavi.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "IKO-003-K02",
+      "kaynak_baslik": "Metropolitan Museum, Heilbrunn Timeline; Kim Hae Yeun — East Asian Cultural Exchange in Tiger and Dragon Paintings",
+      "url": "https://www.metmuseum.org/essays/east-asian-cultural-exchange-in-tiger-and-dragon-paintings",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-03-11"
+      },
+      "pasaj": "appearing in the first hexagram, 乾 (qian), from The Book of Changes, thought to have been written during the Zhou dynasty (1046–256 B.C.). Here, the clouds trail behind the dragon while the wind follows the tiger … the tiger represents 'yin' and the dragon denotes 'yang'. … During the Han dynasty (206 B.C.–220 A.D.), they became part of the Four Divine Animals … Tigers were associated with 'west' and the color white, dragons with 'east' and the color blue.",
+      "pasaj_konum": "Essay gövdesi (kaplan-ejder kökeni bölümü)",
+      "belirsizlik_ifadeleri": ["thought to have been written"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "TEK KAYNAK: Değişimler Kitabı atfı için ikinci bağımsız akademik kaynak bu batch'te açılmadı; madde metninde 'Metropolitan Museum denemesine göre' atfıyla verildi. Pasajdaki Çince karakter yalnız alıntıdır; Türkçe anlatı alanlarına taşınmadı (CJK politikası)."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "Qing döneminde kaftan (robe) desenleri ve renkleri rütbeye göre düzenlenirdi: yalnız imparator, veliaht, imparatoriçe ve imparatoriçe ana sarı kaftan giyebilirdi; dokuz ejderli kaftanlar yalnız imparatorluk ailesi ve yüksek rütbeli prenslere; beş pençeli ejderler yalnız üst kademelere ayrılırdı, alt sınıflar dört pençeli ejder giyerdi.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-003-K07",
+      "kaynak_baslik": "Denver Art Museum — Summer Dragon Robe (Qing, 1736–1795; acc. 1977.191)",
+      "url": "https://www.denverartmuseum.org/en/edu/object/summer-dragon-robe",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "Designs and colors were regulated by rank; for example, only the emperor, the heir apparent, empress, and empress dowager could wear yellow robes. Only the imperial family and high-ranking princes were allowed to wear robes with nine dragons. Only the upper echelons were allowed to wear dragons with five claws; the lower orders wore four-clawed dragons.",
+      "pasaj_konum": "Denver 'Summer Dragon Robe' eğitim metni",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-003-K05"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Denver metni 'mang' terimini KULLANMIYOR; mang/dört pençeli 'python' ayrımı bu kaynakla doğrulanamaz ve maddeye yazılmadı. Popüler 'pençe merdiveni' DOGRULANAMADI. Kaftanlar tekstildir (Kural 11): resim örneği olarak listelenmedi, yalnız bağlam notu."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Beş pençeli Çin ejderinin 'klasik versiyonu' en geç Yuan hanedanı (1206–1368) kadar erken bir dönemde tamamen gelişmişti ve geç Çin sanatında pençe sayısı tipik olarak beşti (1371'de ölen Wang Xingzu'nun mezar plakalarında altı pençeli istisnalarla).",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "IKO-003-K05",
+      "kaynak_baslik": "Encyclopaedia Iranica; Manuel Keene — JADE iii. Jade Carving, 4th century B.C.E. to 15th century C.E.",
+      "url": "https://www.iranicaonline.org/articles/jade-iii/",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "This classic version of the five-toed Chinese dragon was fully developed at least as early as the Yuan dynasty (1206-1368), and was standard by the time the discussed pieces were made. … these have six toes, rather than five, which was the typical number in later Chinese art.",
+      "pasaj_konum": "JADE iii, PLATE XI tartışması",
+      "belirsizlik_ifadeleri": ["at least as early as"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-003-K07"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Pençe-rütbe iddiasının iki bağımsız ayağı: sanatsal kanon (K05) + giysi düzeni (K07)."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Chen Rong'un 'Nine Dragons' el ruloları geleneği: MFA Boston'daki rulo sanatçının kendi yazıtıyla 1244'e tarihlenir; imparator Qianlong'un rulo üzerindeki sonradan yazıtı, eseri övmenin yanında bir saray ressamına KOPYASINI yaptırdığını söyler (bu bilgi K10/Wikipedia üzerinden UChicago DSPP arşiv kaynağına dayanır — birincil yazıt metni bu araştırmada açılmadı).",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "IKO-003-K01",
+      "kaynak_baslik": "Museum of Fine Arts, Boston — Nine dragons (Chen Rong), acc. 17.1697",
+      "url": "https://collections.mfa.org/objects/28526",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2024-12-03"
+      },
+      "pasaj": "Chen Rong (Chinese, about 1200 – 1266) … dated 1244 … Accession Number 17.1697. — K10: A later inscription by the Qianlong Emperor says that besides praising Chen Rong's painting, Qianlong ordered a court painter to make a copy of it.",
+      "pasaj_konum": "K01 katalog alanları (Wayback 2024-12-03); K10 gövde metni (referans: UChicago DSPP arşivi)",
+      "belirsizlik_ifadeleri": ["about 1200 – 1266", "may even be a rainmaking ritual (K10)"],
+      "destek_duzeyi": "KISMEN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-003-K09", "IKO-003-K10"],
+      "celisen_kaynaklar": [
+        "IKO-003-K01 (okunan kayıt metni) Qianlong'un kopya siparişinden söz etmez; kopya bilgisi yalnız K10 yardımcı zincirinde geçer"
+      ],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "Rulo tarihlemesi (1244) ve künye müze kaydından DOĞRUDAN desteklidir; kopya siparişi iddiası tek yardımcı zincire dayandığı için genel iddia KISMEN_DESTEKLENIYOR olarak işaretlendi ve madde metninde 'aktarılır' ihtiyatıyla verildi. Birincil teyit adayı: Wu Tung, Tales from the Land of Dragons (MFA 1997, s. 197–201) — metnine erişilmedi."
+    },
+    {
+      "claim_id": "C011",
+      "iddia": "Ejder-kaplan ruloları Doğu Asya'da çok versiyonlu bir gelenektir: Cleveland'daki 'Dragon' Museum kaydıyla Fachang Muqi'ye (Chinese, 1220–1280) verilir ve y. 1250–79'a tarihlenir; Met'teki bir çift (1986.345.1/.2) 'Unidentified artist', 14. yy, Çin kayıtlıdır ve Met denemesi bu çiftin başlangıçta 'Song dönemi sanatçısı Muqi'nin (y. 1210–1269 sonrası) eseri sayıldığını', Çin/Kore/Japon olabileceğine dair kuramlar bulunduğunu yazar; Met'teki başka bir çift (12.123.1/.2) 'Muqi' adıyla ama 16.–17. yy ve 'Korea or possibly Japan' kültür kaydıyla listelenir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-003-K04",
+      "kaynak_baslik": "Cleveland Museum of Art — Open Access API kayıtları (1958.427.1 ve diğerleri)",
+      "url": "https://openaccess-api.clevelandart.org/api/artworks/135431/",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "K04 tombstone: 'Dragon (龍圖), c. 1250–79. Fachang Muqi (Chinese, 1220–1280). Hanging scroll; ink on silk'. K02: 'Initially, these paintings were thought to be the work of the Song-dynasty artist Muqi (ca. 1210–after 1269). There was, however, the possibility that these hanging scrolls were either Chinese or Korean, with an additional theory proposed that they could be Japanese'.",
+      "pasaj_konum": "K04 API tombstone alanı; K02 essay (atıf/attribution bölümü)",
+      "belirsizlik_ifadeleri": ["thought to be", "possibility", "Korea or possibly Japan", "c./y. (yaklaşık) tarihler"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-003-K08", "IKO-003-K02"],
+      "celisen_kaynaklar": [
+        "Cleveland (K04) 'Fachang Muqi (Chinese, 1220–1280)' atfı ile Met denemesinin (K02) 'Muqi (ca. 1210–after 1269)' tarihleri ve Met API kayıtlarının (K08) 16.–17. yy / 'Korea or possibly Japan' kültür atfı birbirinden farklıdır"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "KURAL 10 örneği: iddia, farklı MÜZE KAYITLARININ VARLIĞINI doğrular; Muqi atfının kendisini kesinleştirmez. Madde metni hangi rulodan söz ettiğini envanter numarasıyla belirtir. Pasajdaki Çince karakter yalnız alıntıdır (CJK politikası)."
+    },
+    {
+      "claim_id": "C012",
+      "iddia": "Muqi modellerinin etkisi Japonya'da sürmüştür: Japon sanatçılar, ejder-kaplan çifti geleneğinde 'yükselen ejder bulut üretir, kükreyen kaplan rüzgâr çıkarır' kavramını izleyen ve Muqi'ye dayandırılan erken Çin modellerine bağlı kalmış görünür; Cleveland'daki Sesson Shūkei 'Dragon and Tiger' altı panelli paravanı (y. 1546–56) bu Japon alımlanmasının teyitli bir örneğidir.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "IKO-003-K02",
+      "kaynak_baslik": "Metropolitan Museum, Heilbrunn Timeline; Kim Hae Yeun — East Asian Cultural Exchange in Tiger and Dragon Paintings",
+      "url": "https://www.metmuseum.org/essays/east-asian-cultural-exchange-in-tiger-and-dragon-paintings",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-03-11"
+      },
+      "pasaj": "Japanese artists seem to have adhered to the initial Chinese models developed by Muqi (1986.345.1), whose works were highly influential and considered the fundamental standard. — K04 tombstone: 'Dragon and Tiger (龍虎図屏風), c. 1546–56. Sesson Shūkei … One of a pair of six-panel folding screens; ink on paper'.",
+      "pasaj_konum": "K02 essay (Japon alımlanması bölümü); K04 API tombstone alanı",
+      "belirsizlik_ifadeleri": ["seem to have adhered", "c./y. (yaklaşık) tarih"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-003-K04"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Japon ayağı iki kaynakla (K02 essay + K04 müze kaydı) desteklidir. Kaynağın 'seem to have' ihtiyatı madde metninde 'bağlı kalmış görünür' ile korundu. MIT-005 çapraz bağ notu için hazır kanıt (hedef madde diskte yok)."
+    }
+  ]
+}

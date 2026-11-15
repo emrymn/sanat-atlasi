@@ -1,0 +1,230 @@
+{
+  "madde_id": "TEK-004",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (TEK-004) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Doğu Asya mürekkep resminde temel malzeme, çam isi (kurum) ile tutkalın kalıplanmasıyla elde edilen mürekkep çubuğunun hokka taşında (inkstone) az suyla sürtülmesiyle hazırlanan karbon esaslı siyah mürekkeptir; elde edilen sıvının siyahlığı eklenen su miktarına göre değişir, karbon siyahı küçük ve düzenli partikül boyutlu olduğu için yüksek hassasiyetle karıştırılıp kademelendirilebilir ve nemli fırçanın ucu mürekkebe batırıldığında fırçadaki su mürekkebi seyrelterek uçtan uzaklaşıldıkça daha açık tonlar üretir; 'yan mürekkep' (side-ink) tekniğinde fırça açık bir yıkamayla yüklenir, eğik tutulur ve yalnız yanları mürekkebe değdirilir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-004-K02",
+      "kaynak_baslik": "'Chinese painting' — bölüm: 'Characteristics of painting'",
+      "url": "https://www.britannica.com/art/Chinese-painting",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2015-09-05"
+      },
+      "pasaj": "K02: 'The basic material is ink, formed into a short stick of hardened pine soot and glue, which is rubbed to the required consistency on an inkstone with a little water.' · K08: 'The resulting liquid ink varies in blackness according to the amount of water added.'",
+      "pasaj_konum": "K02 'Characteristics of painting'; K08 'Making and Using Ink'; K09 s.45 'Inking Techniques' (PDF sayfa numarası)",
+      "belirsizlik_ifadeleri": [
+        "K08 ek bilgi: Doğu Asya'da bağlayıcı 'protein-based animal skin glue', Güney/Orta Asya'da bitkisel zamk",
+        "K09: 'a special black ink (mo) that is said to contain \"infinite gradations of color\"'"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-004-K08", "TEK-004-K09"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Üç bağımsız kurum metni aynı malzeme zincirini verir. Ton kademelendirmesi (nemli fırça ucunun seyreltmesi) ve side-ink tekniği K09 s.45'ten; karbon siyahının küçük/düzenli partikül boyutu ve yüksek hassasiyetle kademelendirme K08'den. K09 eğitim paketi olduğu için tek başına dayanak yapılmadı."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Fırça, bambu sap içine oturtulmuş hayvan kılından yapılır ve ucu sivridir (kıl türü listesi kaynaklar arasında değişir: keçi, geyik, kurt; tavşan ve keçi); aşağı yönde baskı uygulanarak vuruş kalınlaştırılır, fırça yüzeye farklı açılarda tutulup bilek farklı biçimde hareket ettirilerek her vuruş tipi üretilir. Resim yüzeyi emici ipek ya da kâğıttır; yüzey silmeye ve düzeltmeye izin vermediği için ressam ne yapacağını önceden bilmek zorundadır ve uygulama güven, hız ile uzun pratikle kazanılmış teknik ustalık gerektirir. Mineral kaynaklı, daha opak ve parlak pigmentler ipek üzerinde, bitkisel yarı saydam pigmentler kâğıt üzerinde tercih edilir; renk kullanılıyorsa etkiyi gerçeğe yaklaştırmak ya da süsleyici vurgu eklemek içindir ve kompozisyonun kurucu öğesi olarak nadiren kullanılır. Smithsonian'a göre Doğu Asya'da geleneksel olarak mürekkep ile boya arasına kesin bir çizgi çekilmez, çünkü hem resim hem yazı fırçayla yapılır; Metropolitan Museum denemesi de resmin 'en ekonomik araçlarla, kâğıt üzerine fırça ve mürekkep'le gerçekleştirilebildiğini yazar.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-004-K02",
+      "kaynak_baslik": "'Chinese painting' — bölüm: 'Characteristics of painting'",
+      "url": "https://www.britannica.com/art/Chinese-painting",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2015-09-05"
+      },
+      "pasaj": "K02: 'He paints on a length of silk or a sheet of paper, the surface of which is absorbent, allowing no erasure or correction.' · K02: 'The painter uses a pointed-tipped brush made of the hair of goats, deer, or wolves set in a shaft of bamboo.'",
+      "pasaj_konum": "K02 'Characteristics of painting'; K09 s.3 'Calligraphy Tools' + s.6; K08 'Painting with Ink'; K01 açılış bölümü",
+      "belirsizlik_ifadeleri": [
+        "kıl türü listesi kaynaklar arasında değişiyor: K02 'goats, deer, or wolves' / K09 'soft rabbit or goat hair' → tek liste kesinleştirilmedi",
+        "K01 yorum dili: 'the Chinese artist regarded color as distraction', 'more often than not' — Hearn'ın genellemesi, madde metnine olgu olarak alınmadı"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-004-K09", "TEK-004-K08", "TEK-004-K01"],
+      "celisen_kaynaklar": [
+        "Fırça kılı türü listesi: K02 (keçi/geyik/kurt) ↔ K09 (tavşan/keçi) — çelişki değil kapsam farkı; madde tek liste vermez"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İpek-mineral / kâğıt-bitkisel pigment eşleşmesi K02'den; 'no line is traditionally drawn between ink and paint, as both painting and writing were carried out using a brush' cümlesi K08'den; 'en ekonomik araçlar: kâğıt üzerine fırça ve mürekkep' K01'den (dolaylı destek). Aşağı baskıyla vuruş kalınlaştırma ve fırça açısı/bilek hareketi K02 + K09 s.6."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "cun (Wade-Giles ts'un; Çince karşılığı 'kırışıklıklar'), Çin resminde resim öğelerine doku ya da yüzey kazandıran fırça vuruşları veya lekeleridir; Çin sanatçısı ışık-gölge manipülasyonuna dayanan yanılsamacı modellemeye yönelmez, biçimler konturlandıktan sonra karakter vermek için doku vuruşları kullanılır; ressamlar ve eleştirmenler cun'u 25 temel tür dahil çok sayıda tipe kodlamıştır ve sanatçının seçtiği 'doku yöntemi' (cunfa) onun üslubunu ile ifade niyetini belirtir. Taipei Ulusal Saray Müzesi'nin Fan Kuan'a ilişkin Travelers Among Mountains and Streams kaydında teknik, cetvel-çizim (jiehua) ve cunfa başlığı altında 'yağmur noktası' doku vuruşu (yudian cun) olarak listelenir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-004-K04",
+      "kaynak_baslik": "'cun' (Wade-Giles: ts'un; 'wrinkles')",
+      "url": "https://www.britannica.com/art/cun",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2025-09-15"
+      },
+      "pasaj": "K04: 'cun, in Chinese painting, brushstrokes or dabs that give texture, or surface, to the pictorial elements.' · K04: 'Over the ages, Chinese painters and critics have codified cun into many different types—including 25 basic ones.'",
+      "pasaj_konum": "K04 madde gövdesi (tek paragraf); K06 kayıt sekmeleri: teknik / ölçü / zemin / temel bilgiler",
+      "belirsizlik_ifadeleri": [
+        "K06: sanatçının doğum-ölüm tarihleri belirsiz bırakılmış ('yaşam tarihleri bilinmiyor'; İngilizce açıklama: 'he was still living around 1025')"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-004-K06"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Basit teknik tanım için Kural 7'ye göre tek güvenilir uzmanlık kaynağı yeterli; ayrıca NPM kaydı (K06) terimi eser düzeyinde belgeler: teknik alanında cetvel-çizim (jiehua) ve cunfa başlığı altında 'yağmur noktası' doku vuruşu (yudian cun), zemin ipek, ölçü 206.3 x 103.3 cm, tek asılı tomar. 'cunfa sanatçının üslubunu/ifade niyetini belirtir' cümlesi K04'te 'the artist's personality and expressive intent is thus specified by the texture method (cun fa)' biçimindedir. Ran (boyama) terimi bu kaynak setinde tanımlı olmadığı için maddeye alınmadı."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Pekin Saray Müzesi'nin terim sözlüğüne göre 'beş renk' (mo fen wu se) bir Çin resim tekniği terimidir ve mürekkep renginin koyuluk-açıklık ile kuruluk-ıslaklık farklarıyla ortaya çıkan farklı etkileri anlatır; terimin kaynağı Tang dönemi yazarı Zhang Yanyuan'ın Lidai minghua ji adlı eserindeki 'yun mo er wu se ju' ifadesidir. Aynı kayıt 'beş renk'in hangileri olduğu konusunda görüş birliği olmadığını açıkça belirtir: kimi kaynak jiao-nong-zhong-dan-qing, kimi nong-dan-gan-shi-hei sayar, 'beyaz'ı ekleyip 'altı renk' (liu cai) diyenler de vardır; terim gerçekte mürekkep tonunun kullanımındaki zengin değişimi anlatır. Bu nedenle madde tek ve sabit bir 'beş ton' listesi vermez.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-004-K07",
+      "kaynak_baslik": "Resmî terim sözlüğü maddesi: 'mo fen wu se' (beş renk)",
+      "url": "https://www.dpm.org.cn/lemmas/240484.html",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "K07: '中国画技法名。指以水墨色的浓淡干湿所表现出的不同效果。' · K07: \"'五色'说法不一，或指焦、浓、重、淡、清，或指浓、淡、干、湿、黑，也有加'白'而合称'六彩'者，实际乃指墨色运用上的丰富变化。\"",
+      "pasaj_konum": "dpm.org.cn terim maddesinin tek gövde paragrafı",
+      "belirsizlik_ifadeleri": [
+        "'说法不一' (görüşler/listeler farklıdır) — kaynağın kendi ihtiyat ifadesi, aynen korunmalı"
+      ],
+      "destek_duzeyi": "KISMEN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "K07 kendi içinde birden çok liste verir: jiao-nong-zhong-dan-qing / nong-dan-gan-shi-hei / 'beyaz' eklenerek liu cai (altı renk) → tek sabit liste yok",
+        "K14 (Smithsonian, 'Scientific Studies of Pigments in Chinese Paintings', 2023 PDF) ikinci kurumsal kaynak olacaktı; HTTP 301 → 403, metnine erişilmedi",
+        "Popüler internet kaynakları (ScienceDirect/RSIS/Atlantis/drpress türevleri, Baidu Baike) sabit liste verir; hiyerarşi 5–6 → kanıt olarak kullanılmadı",
+        "K09 alternatif çerçeve: özel siyah mürekkebin 'sonsuz ton kademesi içerdiği söylenir' (ihtiyatlı ifade)"
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "Terimin varlığı ve işlevi tek kurumsal kaynakla (Pekin Saray Müzesi sözlüğü) doğrulanıyor; 'beş ton'un içeriği kaynaklar arasında ihtilaflı olduğu ve ikinci bağımsız akademik kaynak bu turda açılamadığı için iddia CELISKILI bırakıldı ve madde metni sabit liste vermedi."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Japonca suibokuga (Çincesi shuimohua; Japonya'da bokuga, gündelik dilde sumi-e) 'su-mürekkep resmi' anlamına gelir ve ipek ya da kâğıt üzerine siyah mürekkebin koyu ve açık tonlarıyla yapılan resimdir; JAANUS'a göre renkli resim (saishikiga) ve kontur çizgi resmi (hakubyō) ile karşıtlık içinde, ton kademeleriyle ışık-gölge duygusu, modüle fırça vuruşları ve çizgilerle hacim ile ritim duygusu yaratır, hat ile çok sayıda özellik paylaşır ve esas olarak monokrom bir ortamdır. Britannica suiboku-ga'yı Japon monokrom mürekkep resmi olarak tanımlar ve tekniğin Çin'de Song hanedanı sırasında geliştirilip 14. yüzyıl ortasında Zen Budist rahipler tarafından Japonya'ya taşındığını yazar; Japon müze kayıtlarında ise malzeme tanımı olarak 'kâğıt üzerine mürekkep resmi' (shihon bokuga) ifadesi geçer.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-004-K12",
+      "kaynak_baslik": "'suibokuga' maddesi (Çince karşılığı, haboku/hatsuboku, Japonya'da dört gelişim aşaması)",
+      "url": "https://www.aisf.or.jp/~jaanus/deta/s/suibokuga.htm",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "K12: 'Lit. water-ink painting. Painting in sumi (black ink) in dark and light shades on silk or paper.' · K03: 'suiboku-ga, Japanese monochrome ink painting, a technique first developed in China during the Sung dynasty (960–1274) and taken to Japan by Zen Buddhist monks in the mid-14th century.'",
+      "pasaj_konum": "K12 maddenin ilk iki paragrafı; K03 madde girişi; K05 kayıt başlıkları (malzeme tanımı olarak shihon bokuga)",
+      "belirsizlik_ifadeleri": [
+        "K03 Song tarihini '960–1274' olarak verir (Met API kayıtları Güney Song için 1127–1279 kullanır) → tarih ihtilafı C008'de",
+        "K12: 'essentially a monochrome medium'; beğenilen nitelikler listesi kurum/sözlük değerlendirmesidir"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-004-K03", "TEK-004-K05"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Terminoloji iki bağımsız uzmanlık kaynağıyla (JAANUS + Britannica) ve birincil müze kayıtlarıyla (e-Museum) doğrulandı. Madde metni Britannica'nın dönem tarihini kesinleştirmez; tarih ihtilafı ayrı iddiada (C008) tutulur."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Tokyo Ulusal Müzesi'nin Sesshū kaydı (A-282) bu resmi 'fırlatılmış mürekkep' (Japonca hatsuboku) yöntemini kullanan bir resim olarak tanımlar: konturlardan kaçınılır, mürekkep kâğıda kontrolsüz biçimde fırlatılmış gibi görünür; açık ve koyu tonlar kullanılmakla birlikte resim güçlü bir iskelete sahiptir. Sesshū ithafında bu yöntemi 'kırık mürekkep' (Japonca haboku) diye adlandırdığı için eser geleneksel olarak 'Broken-ink Landscape' olarak anılır; aynı ithaf Meiō 4 (1495) yılını ve ressamın 76 yaşını verir, Çin'e gidip Li Zai (faal yaklaşık 1425–1470) ve Zhang Yousheng'in resimlerini çalıştığını, Japonya'da rahip-ressamlar Josetsu ve Shūbun'ün geleneğini sürdürdüğünü kaydeder. JAANUS her iki terimin de Çince'de pomo okunabildiğini, belgelerde karışıklık doğduğunu ve Japonya'da iki terimin sonunda ardışık mürekkep yıkamalarıyla yapılan aynı tekniği anlatır hâle geldiğini yazar; bu nedenle iki terim kesin olarak eşitlenemez.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "TEK-004-K05",
+      "kaynak_baslik": "e-Museum kaydı: Tokyo National Museum A-282 (base id 101224), Sesshū Tōyō",
+      "url": "https://emuseum.nich.go.jp/detail?langId=en&webView=0&content_base_id=101224",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "K05: 'This landscape painting employs the splashed-ink (J. hatsuboku) method, in which outlines are eschewed and ink appears to be flung at the paper in an uncontrolled manner.' · K05: 'In his dedication, Sesshû calls this the \"broken-ink\" (J. haboku) method, thus this painting has traditionally been known as the \"Broken-ink Landscape.\"'",
+      "pasaj_konum": "K05 A-282 kayıt açıklama metni; K12 'origins' paragrafı (terim karışıklığı); ithaf bilgileri aynı kayıt açıklamasında",
+      "belirsizlik_ifadeleri": [
+        "'traditionally been known as'",
+        "K12: 'can be read pomo in Chinese', 'considerable confusion has arisen', 'eventually came to refer to'",
+        "K05: Li Zai 'active c. 1425-1470', Zhang Yousheng 'dates unknown', Sesshū için '1420-1506?'"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-004-K12"],
+      "celisen_kaynaklar": [
+        "Terim kullanımı kurum içinde bile farklı: TNM kaydı 'splashed-ink (hatsuboku)' der, eserin geleneksel adı 'broken-ink (haboku)' → kesin eşitleme yapılmadı"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İki bağımsız kaynak (birincil müze kaydı + JAANUS) yöntemi tanımlar. JAANUS'un 'immediacy of execution mirrors the belief of the Chan sect in spontaneous spiritual enlightenment' cümlesi 13.–14. yüzyıl Chan rahip-ressamlarının genpitsu tarzı içindir; Sesshū'ya taşınmadı ve madde metnine alınmadı."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "JAANUS'a göre suibokuga'nın kökenleri belirsiz olmakla birlikte Çin'e izlenebilir ve teknikler oradan Kore ile Japonya'ya aktarılmıştır; Song ressamlarının teknik ilerlemeleri 12.–13. yüzyıllarda Koreli ve Japon ressamlar üzerinde belirgin etki yapmış, Japonya'da geç Kamakura döneminde Zen rahipleri arasında hızla yaygınlaşmış ve Muromachi döneminde ressamların tercih ettiği anlatım biçimi olmuştur; aynı sözlük Shūbun'un Güney Song akademisyen ressamları Ma Yuan ve Xia Gui'nin üslubunu Japon suibokugasına katmakla anıldığını, öğrencisi Sesshū'nun Çin modellerini tam olarak bütünleştirdiğinin kabul edildiğini ve gelişimin son aşamasında büyük ölçekli suibokuga'nın sürme kapak, panel ve paravan süslemesinde yaygınlaştığını yazar. Smithsonian mürekkep monokromisini Çin üsluplarıyla, özellikle Zen Budizmi yoluyla Japonya'ya taşınanlarla ilişkilendirir; Metropolitan Museum Muromachi döneminde Çin'le temasın yeniden kurulduğunu ve Zen Budizmi'nin uzak etkili sonuçlar doğuran ithallerden biri olduğunu belirtir; Britannica Çin resminde son binyılın yaygın formatlarını dikey asılı tomar (Budist adanma sancaklarından türemiş olabilir), yaklaşık 15 metreye kadar uzayabilen yatay el tomarı, yelpaze resmi ve albüm yaprağı olarak verir ve tomarlara geçirmenin başlı başına uzmanlık gerektiren bir zanaat olduğunu kaydeder.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "TEK-004-K12",
+      "kaynak_baslik": "'suibokuga' maddesi (Çince karşılığı, haboku/hatsuboku, Japonya'da dört gelişim aşaması)",
+      "url": "https://www.aisf.or.jp/~jaanus/deta/s/suibokuga.htm",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "K12: 'The origins of suibokuga, although obscure, can be traced to China, from where the techniques were transmitted to Korea and Japan.' · K12: 'It became the favored mode of painters in the Muromachi period.'",
+      "pasaj_konum": "K12 'origins' ve dört gelişim aşaması paragrafları; K08 'Painting with Ink'; K11 Muromachi girişi; K02 'Characteristics of painting' (formatlar ve mounting)",
+      "belirsizlik_ifadeleri": [
+        "'although obscure'",
+        "'is credited with assimilating the style…', 'is considered to have fully integrated Chinese models'",
+        "K11: 'In large part, the success … was due to'",
+        "K02: 'perhaps derived from the Buddhist devotional banner', 'may be of any length up to about 15 metres'"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["TEK-004-K08", "TEK-004-K11", "TEK-004-K02"],
+      "celisen_kaynaklar": [
+        "Muromachi döneminin başlangıç tarihi: K11 başlığı 1392–1573 ↔ K03 1338–1573 → C008'de CELISKILI olarak ayrıca tutuldu"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Aktarım zinciri dört bağımsız kaynakla destekleniyor (JAANUS, Smithsonian, Met Heilbrunn, Britannica). K01 ve K11 aynı kurum (Met) olduğundan birbirine bağımsız ikinci kaynak sayılmadı. Ma Yuan adı yalnız JAANUS ve Britannica'da geçtiği, birincil müze kaydı açılamadığı için Ma Yuan doğrulanmış resim örneği olarak yazılmadı. Kore geleneği yalnız aktarım halkası olarak anıldı; ayrı bölüm açılmadı."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Bu geleneklerin dönem ve sanatçı tarihleri kaynaklar arasında tutarsızdır ve madde tek bir değeri kesinleştirmez: Britannica Song hanedanını 960–1274 ve Muromachi dönemini 1338–1573 olarak verirken Metropolitan Museum'un Heilbrunn denemesi Muromachi'yi 1392–1573 olarak başlıklandırır; Metropolitan Museum'un katalog kayıtları Kuzey Song 960–1127 ve Güney Song 1127–1279 tarihlerini kullanır. Sanatçı tarihlerinde de aynı ihtiyat gerekir: Taipei Ulusal Saray Müzesi Fan Kuan için 10. yüzyılı verir, doğum-ölüm tarihlerini belirsiz bırakır ve yaklaşık 1025'te hayatta olduğunu söylerken JAANUS yaklaşık 960–yaklaşık 1030 tarihlerini verir; Sesshū için kaynaklarda 1420–1506 ve '1420-1506?' biçimleri birlikte görülür.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "TEK-004-K03",
+      "kaynak_baslik": "'suiboku-ga' (Also called: Sumi-e; Key People: Sesshū, Shūbun)",
+      "url": "https://www.britannica.com/art/suiboku-ga",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-11-05"
+      },
+      "pasaj": "K03: 'a technique first developed in China during the Sung dynasty (960–1274)' · K03: 'Suiboku-ga reached its height in the Muromachi period (1338–1573).'",
+      "pasaj_konum": "K03 madde girişi; K11 deneme başlığı; K10 API dönem alanları; K06 'temel bilgiler' sekmesi; K12 sanatçı tarihleri",
+      "belirsizlik_ifadeleri": [
+        "'ca.' / 'yaklaşık' (K12: Fan Kuan 'ca.960–ca.1030')",
+        "'1420-1506?' (K05/K12, Sesshū)",
+        "K06: doğum-ölüm tarihi bilinmiyor; 'he was still living around 1025'"
+      ],
+      "destek_duzeyi": "DESTEKLEMIYOR",
+      "ikincil_kaynak_ids": ["TEK-004-K11", "TEK-004-K10", "TEK-004-K06", "TEK-004-K12"],
+      "celisen_kaynaklar": [
+        "K03: Song 960–1274, Muromachi 1338–1573",
+        "K11: Muromachi 1392–1573 (deneme başlığı)",
+        "K10: Northern Song 960–1127, Southern Song 1127–1279",
+        "K06: Fan Kuan 10. yüzyıl, doğum-ölüm belirsiz, yaklaşık 1025'te hayattaydı",
+        "K12: Fan Kuan yaklaşık 960–yaklaşık 1030; Sesshū 1420–1506"
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "Kaynaklar tek bir değer üzerinde birleşmediği için destek düzeyi DESTEKLEMIYOR ve sonuç CELISKILI; madde metni tarihleri kaynak farkıyla ve 'yaklaşık' kaydıyla verir, hiçbir dönemi tek kaynağa göre kesinleştirmez."
+    }
+  ]
+}

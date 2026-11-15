@@ -1,0 +1,235 @@
+{
+  "madde_id": "IKO-004",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (iko) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Vanitas, 17. yüzyılda Felemenk (Hollanda) bölgesinde gelişen, ölümün kaçınılmazlığını ve dünyevi başarı ile hazların geçiciliğini ve boşluğunu simgeleyen nesneler topluluğu içeren bir natürmort türüdür; izleyiciyi ölümlülüğü düşünmeye ve tövbeye çağırır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "IKO-004-K07",
+      "kaynak_baslik": "Encyclopaedia Britannica — Vanitas",
+      "url": "https://www.britannica.com/art/vanitas-art",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-10-20"
+      },
+      "pasaj": "in art, a genre of still-life painting that flourished in the Netherlands in the early 17th century. A vanitas painting contains collections of objects symbolic of the inevitability of death and the transience and vanity of earthly achievements and pleasures; it exhorts the viewer to consider mortality and to repent.",
+      "pasaj_konum": "K07 madde gövdesi, 1. paragraf",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-004-K08"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkinci bağımsız kurum (Tate glossary): 'A still life artwork which includes various symbolic objects designed to remind the viewer of their mortality and of the worthlessness of worldly goods and pleasures'."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Vanitas türü, geç Rönesans'ta portrelerin arka yüzlerine boyanan kurukafa ve benzeri basit ölüm/geçicilik imgelerinden gelişmiş; yaklaşık 1550'de bağımsız statü kazanmış, 1620'de popüler bir tür olmuş ve yaklaşık 1650'de gerilemiştir; gelişimi, Kalvinciliğin önemli bir merkezi olan Leiden'da yoğunlaşmıştır.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "IKO-004-K07",
+      "kaynak_baslik": "Encyclopaedia Britannica — Vanitas",
+      "url": "https://www.britannica.com/art/vanitas-art",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-10-20"
+      },
+      "pasaj": "The vanitas evolved from simple pictures of skulls and other symbols of death and transience frequently painted on the reverse sides of portraits during the late Renaissance. It had acquired an independent status by c. 1550 and by 1620 had become a popular genre. Its development until its decline about 1650 was centred in Leiden … an important seat of Calvinism.",
+      "pasaj_konum": "K07 madde gövdesi, 1. paragraf",
+      "belirsizlik_ifadeleri": ["c. 1550", "about 1650"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kaynağın yaklaşık tarihleri madde metninde 'yaklaşık 1550', 'yaklaşık 1650' olarak ihtiyatla verildi."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Britannica'ya göre vanitas resimlerinin standart öğeleri şunlardır: sanat ve bilimler (kitap, harita, çalgı), zenginlik ve güç (keseler, mücevher, altın nesneler), dünyevi hazlar (kadeh, pipo, oyun kartı), ölüm/geçicilik (kurukafa, saat, yanan mum, sabun köpüğü, çiçek) ve bazen diriliş/sonsuz yaşam (başak, sarmaşık veya defne dalları).",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-004-K07",
+      "kaynak_baslik": "Encyclopaedia Britannica — Vanitas",
+      "url": "https://www.britannica.com/art/vanitas-art",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-10-20"
+      },
+      "pasaj": "symbols of death or transience (skulls, clocks, burning candles, soap bubbles, and flowers) … symbols of the arts and sciences … symbols of wealth and power … symbols of earthly pleasures … and sometimes symbols of resurrection and eternal life (ears of corn, ivy or laurel).",
+      "pasaj_konum": "K07 madde gövdesi, 2. paragraf",
+      "belirsizlik_ifadeleri": ["sometimes (diriliş öğeleri için)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "ÖNEMLİ: bu listede KUM SAATİ YOKTUR; madde metni listeyi 'kum saati dahil' diye genişletmez (bkz. C013). Liste bir kurum derlemesidir (YORUM türü) ve kapalı kanon gibi sunulmaz."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Edwaert Collier'in 1662 tarihli vanitas natürmortunda (Art Institute of Chicago) sönmüş mum, kırık telli keman, cep saati ve kum saati, tablonun sağındaki Ecclesiastes alıntısını ('Vanitas vanitatum et omnia vanitas' — 'Boşların boşu, her şey boş') temsil eder.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-004-K06",
+      "kaynak_baslik": "Art Institute of Chicago — Edwaert Collier, A Vanitas Still Life with … Globes, and Hourglass, 1662 (env. 2020.317)",
+      "url": "https://api.artic.edu/api/v1/artworks/258490",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "The extinguished candle, violin with a broken string, pocket watch, and hourglass all represent the biblical passage from Ecclesiastes at far right: Vanitas vanitatum et omnia vanitas (Vanity of vanities, all is vanity).",
+      "pasaj_konum": "K06 küratoryal 'description' alanı, 2. paragraf",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "KUM SAATİ için birincil kurum kanıtı. Simgesel okuma kurum küratöryal metnine aittir; madde metninde 'müze metnine göre' diye sahiplendirildi (YORUM)."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Harmen Steenwyck'ın NG1256 sayılı vanitas natürmortunda kurukafa yaşamın kısalığını, müzik aletleri hazzı, cep saati zamanın geçişini hatırlatır; tablonun 'vanitas' başlığı Eski Ahit'te Vaiz (Ecclesiastes) kitabının 'All is vanity…' sözlerine göndermedir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-004-K05",
+      "kaynak_baslik": "National Gallery, Londra — Harmen Steenwyck, Still Life: An Allegory of the Vanities of Human Life (NG1256)",
+      "url": "https://www.nationalgallery.org.uk/paintings/harmen-steenwyck-still-life-an-allegory-of-the-vanities-of-human-life",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "The skull reminds us of the brevity of life, the musical instruments suggesting pleasure, the pocket watch, the passing of time. … The word refers to a passage in the Book of Ecclesiastes … 'All is vanity. What profit hath a man of all his labour which he taketh under the sun?'",
+      "pasaj_konum": "K05 Audio description transkripti + Overview/In-depth bölümleri",
+      "belirsizlik_ifadeleri": ["can be seen as", "likely to have been seen as", "might be seen as", "perhaps"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "In-depth metnindeki ihtiyat kalıpları madde metnine taşındı. Aynı kaynağın yöntem ihtiyatı ('It's always difficult to be sure why the elements depicted in a painting were chosen') brief'te C012 idi; claim üst sınırı nedeniyle akademik_tartismalar alanında kaynak atfıyla verildi."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "Jacques de Gheyn II'nin 1603 tarihli paneli (Met) genellikle bilinen en erken bağımsız vanitas natürmortu sayılır; kurukafa, büyük sabun köpüğü, kesme çiçekler ve tüten urna yaşamın kısalığını çağrıştırır; köpükte yüzen imgeler (işkence çarkı, cüzzamlı çıngırağı) insan ahmaklığına göndermedir; kemerde antik Yunan'ın gülen ve ağlayan filozofları Demokritos ve Herakleitos yer alır.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-004-K02",
+      "kaynak_baslik": "Metropolitan Museum of Art — Jacques de Gheyn II, Vanitas Still Life, 1603 (env. 1974.1)",
+      "url": "https://www.metmuseum.org/art/collection/search/436485",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-04-13"
+      },
+      "pasaj": "This panel is generally considered to be the earliest known independent still-life painting of a vanitas subject … The skull, large bubble, cut flowers, and smoking urn all evoke the brevity of life, while images floating in the bubble—such as a wheel of torture and a leper's rattle—refer to human folly.",
+      "pasaj_konum": "K02 küratoryal açıklama",
+      "belirsizlik_ifadeleri": ["generally considered"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "'Genellikle … sayılır' ihtiyatı madde metninde korundu; 'en erken' iddiası kesin olgu olarak sunulmadı. API kaydı canlı 200, nesne sayfası canlı 429 → Wayback (20260413012804)."
+    },
+    {
+      "claim_id": "C011",
+      "iddia": "Nesneleri tek tek simge olarak çözme yaklaşımına karşı uyarı vardır: 17. yy Hollanda Cumhuriyeti küresel ticaretle zenginleşmiş bir tüketim toplumudur; natürmortlardaki nesneler pazarda bulunan lüks mallar olarak da okunabilir ve resimler sanatçının virtuozitesinin (cam yansıması, kül dokusu, buruşuk kâğıt) sergilenmesi olarak da anlaşılmalıdır; bu resimleri basit ahlakî mesaja indirgemek anlayışı sınırlar.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-004-K09",
+      "kaynak_baslik": "Smarthistory — Dr. Beth Harris & Dr. Steven Zucker, Willem Claesz Heda, Still Life with Glasses and Tobacco / Symbolism and meaning in Dutch still life painting",
+      "url": "https://smarthistory.org/willem-claesz-head-still-life-with-glasses-and-tobacco/",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2023-12-01"
+      },
+      "pasaj": "But I think we have to be careful about reading every object in a painting like this as a symbol. … instead of just seeing these as symbols of death and transience, we might also see them as celebrations of the wealth and the reach of the Dutch Republic, as evidence of a consumer society. … we limit our understanding of these paintings if we reduce them to simple moralizing messages.",
+      "pasaj_konum": "K09 transkript [1:01]–[2:42]",
+      "belirsizlik_ifadeleri": ["might also see", "may give plausible explanations (K10)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-004-K10", "IKO-004-K05"],
+      "celisen_kaynaklar": [
+        "YÖNTEMSEL karşıtlık: IKO-004-K02/K03/K04/K05/K06/K11 kurum metinleri belirli eserler için simgesel okumayı açıkça savunur — çelişki olgusal değil yöntemsel düzeydedir"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkinci bağımsız kaynak: Grootenboer (JHNA, hakemli): 'such conventional iconographic readings may give plausible explanations for the paintings' subject matter, but they do not account for the specificity of Coorte's work'. DOGRULANDI statüsü KARŞI YORUMUN varlığına ve sahiplerine aidiyetine ilişkindir; madde metninde genel kabul gibi yazılmadı."
+    },
+    {
+      "claim_id": "C013",
+      "iddia": "Kum saati, incelenen kurumsal tür tanımlarının (Britannica, Tate, NG, Met Heilbrunn) vanitas/memento mori öğe listelerinde geçmez; buna karşılık bireysel eser kayıtlarında doğrulanır: ARTIC Collier 1662 (başlıkta ve metinde 'hourglass'), Met 437158 ve 437206 portre kayıtlarında 'Hourglass' etiketi.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-004-K06",
+      "kaynak_baslik": "Art Institute of Chicago — Collier 1662 kaydı (başlık ve küratoryal metin)",
+      "url": "https://api.artic.edu/api/v1/artworks/258490",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "A Vanitas Still Life with a Flag, Candlestick, Musical Instruments, Books, Writing Paraphernalia, Globes, and Hourglass. — K12 etiket alanı: tags: ['Men', 'Portraits', 'Hourglass'].",
+      "pasaj_konum": "K06 başlık + description; K12 API tags alanı",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-004-K07", "IKO-004-K08", "IKO-004-K12", "IKO-004-K01", "IKO-004-K05"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "NEGATİF BULGU + kayıt düzeyinde pozitif bulgu bir arada. Madde metni 'kum saati vanitasın standart atribüsüdür' genellemesini KURMAZ; kum saatinin nicel yaygınlığına dair kaynak bulunamadığı için nicel iddia da kurulmadı. Nesne tarihi NES-002 maddesine bırakıldı (hedef dosya henüz yok)."
+    },
+    {
+      "claim_id": "C014",
+      "iddia": "Georges de La Tour'un 'The Penitent Magdalen' tablosunda (Met, y. 1640) ayna gösteriş/vanitas simgesi, kurukafa ölümlülük amblemi olarak kullanılır; mum ise 'muhtemelen' manevi aydınlanmaya göndermedir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-004-K11",
+      "kaynak_baslik": "Metropolitan Museum of Art — Georges de La Tour, The Penitent Magdalen, y. 1640 (env. 1978.517)",
+      "url": "https://www.metmuseum.org/art/collection/search/436839",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-06-14"
+      },
+      "pasaj": "She is shown with a mirror, symbol of vanity; a skull, emblem of mortality; and a candle that probably references her spiritual enlightenment.",
+      "pasaj_konum": "K11 küratoryal açıklama, son cümle",
+      "belirsizlik_ifadeleri": ["probably (mum için)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "IKO-005 (ayna) maddesiyle ORTAK örnek ve ortak kaynak; kategori içi çapraz bağ bu kayda dayanır. API kaydı canlı 200, nesne sayfası Wayback (20260614042759)."
+    },
+    {
+      "claim_id": "C015",
+      "iddia": "'Vanitas' adı, İncil'de Vaiz (Ecclesiastes) kitabının açılış dizelerinden gelir: 'Vanity of vanities, saith the Preacher, vanity of vanities, all is vanity.'",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "IKO-004-K08",
+      "kaynak_baslik": "Tate — Art terms glossary: Vanitas",
+      "url": "https://www.tate.org.uk/art/art-terms/v/vanitas",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "The term originally comes from the opening lines of the Book of Ecclesiastes in the Bible: 'Vanity of vanities, saith the Preacher, vanity of vanities, all is vanity.'",
+      "pasaj_konum": "K08 glossary, 2. paragraf",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-004-K05", "IKO-004-K06"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Üç kurum kaydı aynı göndermeyi verir (Tate glossary; NG NG1256 başlık açıklaması; ARTIC Collier 1662'de tablonun içindeki Ecclesiastes alıntısı). Brief'te tür 'TEKNIK_TANIM / GELENEKSEL_ANLATI' olarak önerilmişti; terim kökeni kurumsal kayıtlarla belgelendiği için TEKNIK_TANIM olarak taşındı."
+    }
+  ]
+}

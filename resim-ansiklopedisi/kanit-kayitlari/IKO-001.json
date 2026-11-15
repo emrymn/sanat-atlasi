@@ -1,0 +1,242 @@
+{
+  "madde_id": "IKO-001",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (iko) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Kutsal lotus, Nelumbonaceae familyasından Nelumbo nucifera türü su bitkisidir; nilüferlerle (Nymphaeaceae) yüzeysel benzerliğine rağmen uzak akrabadır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "IKO-001-K03",
+      "kaynak_baslik": "Encyclopaedia Britannica — Sacred lotus",
+      "url": "https://www.britannica.com/plant/sacred-lotus",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-10-25"
+      },
+      "pasaj": "sacred lotus, (Nelumbo nucifera), attractive edible aquatic plant of the lotus-lily family (Nelumbonaceae) … The sacred lotus has a superficial resemblance but a distant relationship to the water lilies (family Nymphaeaceae).",
+      "pasaj_konum": "'Sacred lotus' giriş cümlesi + gövde (taksonomi paragrafı)",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Canlı Britannica erişimi 403 (2026-11-15); arşiv kopyası (2026-10-25) okundu. Botanik kimlik, Mısır 'lotus'u ile kavram ayrımının (C010) dayanağıdır."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Britannica'ya göre çamurlu sudan yükselip suyun üstünde açan çiçek 'manevi aydınlanmaya yükseliş ve onun yayılışı'nı temsil eder; Hinduizm ve Budizm'de kutsaldır; antik Mısır'da yeniden doğuşu temsil için kullanılmıştır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-001-K03",
+      "kaynak_baslik": "Encyclopaedia Britannica — Sacred lotus",
+      "url": "https://www.britannica.com/plant/sacred-lotus",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-10-25"
+      },
+      "pasaj": "Representing the rise to and spread of spiritual enlightenment, the large elevated and spreading flower, flourishing above the muddy waters of its roots, is sacred in both Hinduism and Buddhism and was used in ancient Egypt to represent rebirth.",
+      "pasaj_konum": "'Sacred lotus' giriş paragrafı",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-001-K02"],
+      "celisen_kaynaklar": [
+        "IKO-001-K04 (Britannica 'Blue lotus'): Mısır sanatındaki baskın lotusun Nymphaea caerulea olduğunu yazar — K03'ün Mısır cümlesiyle ifade gerilimi (bkz. C010 ve akademik_tartismalar 3)"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İddia, Britannica'nın BEYANI olarak yazıldı (belgelenmiş sembol atfı). Bağımsız ikinci destek: Smarthistory/Menon'un Ajanta bağlamındaki saflık yorumu (K02, C003). Mısır cümlesi madde metninde kavram ayrımı (C010) ile birlikte verildi."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Ajanta Cave 1'deki Bodhisattva Padmapani (Avalokiteşvara) betiminde eldeki lotus, Smarthistory yazarına göre saflığın sembolüdür: çamurlu suda büyür ama suyun üstünde lekesiz açar; figürün duruşu ve ifadesi 'manevi uyanış ve şefkat' izlenimi verir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-001-K02",
+      "kaynak_baslik": "Smarthistory; Dr. Arathi Menon — The Caves of Ajanta",
+      "url": "https://smarthistory.org/the-caves-of-ajanta/",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-01-16"
+      },
+      "pasaj": "Padmapani holds a lotus flower in his hand. The lotus is a symbol of purity; it grows from muddy water but blossoms above the surface, unblemished. The bodhisattva's graceful posture and serene expression suggest spiritual awakening and compassion.",
+      "pasaj_konum": "Cave 1 bölümü (Bodhisattva Padmapani betimi)",
+      "belirsizlik_ifadeleri": ["suggest"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "IKO-001-K07 (V&A IS.52-1885, Robert Gill kopyası 1856): aynı betimdeki çiçeği 'blue lily' olarak verir — tür kimliği farklı ifade edilir"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI statüsü YORUMUN KENDİSİNE değil, yorumun yazara (A. Menon) aidiyetine ilişkindir; madde metninde 'Smarthistory yazarına göre' kalıbıyla sahiplendirildi. Kaynağın 'suggest' ihtiyatı metinde 'izlenimi verir' ile korundu."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Ajanta mağaraları iki evrede kazılmıştır: en erken mağaralar (8, 9, 10, 12, 13, 15A) MÖ 2.–1. yy, Satavahana dönemi; mağaraların çoğu 5. yy'da Vakataka hanedanı, özellikle İmparator Harishena (y. 460–477) döneminde; site Harishena'nın ölümünden kısa süre sonra (y. 480 civarı) terk edilmiş görünmektedir.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "IKO-001-K02",
+      "kaynak_baslik": "Smarthistory; Dr. Arathi Menon — The Caves of Ajanta",
+      "url": "https://smarthistory.org/the-caves-of-ajanta/",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-01-16"
+      },
+      "pasaj": "The earliest caves … date to the second and first centuries B.C.E., during the Satavahana dynasty. The majority of the caves, however, were carved during the fifth century C.E., under the patronage of the Vakataka dynasty, particularly during the reign of Emperor Harishena (c. 460–477 C.E.) … The site appears to have been abandoned shortly after Harishena's death, perhaps around 480 C.E.",
+      "pasaj_konum": "Tarihleme bölümü",
+      "belirsizlik_ifadeleri": ["appears to have been", "perhaps around 480", "likely sponsored"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kaynağın ihtiyatlı ifadeleri madde metninde korunmuştur ('terk edilmiş görünmektedir', 'y. 480 civarı')."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Ajanta resimleri gerçek fresk (buon fresco) değil secco fresktir: kaya yüzeye kil+organik malzeme katmanı, üzerine ince kireç sıva; pigmentler kuru yüzeye bağlayıcıyla (olasılıkla zamk veya tutkal) uygulanmıştır; palet ağırlıkla mineral/bitki kökenlidir (kırmızı/sarı aşı, malakit, lapis lazuli, kireç beyazı, is siyahı).",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "IKO-001-K02",
+      "kaynak_baslik": "Smarthistory; Dr. Arathi Menon — The Caves of Ajanta",
+      "url": "https://smarthistory.org/the-caves-of-ajanta/",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-01-16"
+      },
+      "pasaj": "The paintings at Ajanta are not true frescoes (buon fresco) … Instead, they are often described as dry frescoes (fresco secco). … Pigments were then applied to this dry surface using a binding medium, possibly gum or glue.",
+      "pasaj_konum": "Teknik bölümü",
+      "belirsizlik_ifadeleri": ["often described as", "possibly gum or glue", "may have been imported"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "TEK-001 (fresk) maddesi açıldığında çapraz bağ adayı; hedef dosya henüz diskte olmadığı için ilgili_maddeler'e eklenmedi (uretim_notu'na yazıldı)."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Budist ikonografide Avalokiteşvara elinde lotus taşır (tacında küçük bir Buddha imgesiyle birlikte); Tara da lotus tutar.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-001-K01",
+      "kaynak_baslik": "Metropolitan Museum, Heilbrunn Timeline; Vidya Dehejia — Recognizing the Gods",
+      "url": "https://www.metmuseum.org/essays/recognizing-the-gods",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-03-10"
+      },
+      "pasaj": "Thus Avalokiteshvara (the Bodhisattva of Infinite Compassion) carries a lotus and has a small Buddha image adorning his crown … Goddesses, too, were introduced into this later Buddhism, and Tara, who holds a lotus, is one of the most deeply venerated.",
+      "pasaj_konum": "'Buddhist Deities' bölümü",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Dehejia lotusu sembolik anlamdan çok TANIMA İŞARETİ (atribü) olarak ele alır; madde metninde bu yaklaşım farkı ayrıca belirtildi (akademik_tartismalar 1)."
+    },
+    {
+      "claim_id": "C007",
+      "iddia": "Lotus motifi Hindu ve Budist betimlerinde ortaktır: Buddha, cinalar ve Shiva 'sıklıkla' bağdaş kurmuş lotus oturuşunda (padmasana) betimlenir; gözler lotus yaprağına benzetilerek modellenir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-001-K01",
+      "kaynak_baslik": "Metropolitan Museum, Heilbrunn Timeline; Vidya Dehejia — Recognizing the Gods",
+      "url": "https://www.metmuseum.org/essays/recognizing-the-gods",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-03-10"
+      },
+      "pasaj": "Meditating gods—the Buddha, the jinas, Shiva—often sit in a special cross-legged lotus posture (padmasana). … Eyes were modeled on the lotus petal or the fish.",
+      "pasaj_konum": "'Recognizing the Gods' ana gövde",
+      "belirsizlik_ifadeleri": ["often"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-001-K03"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İkinci destek: K03 'sacred in both Hinduism and Buddhism'. DİKKAT: bu ortaklık, Budist kullanıma ÖZGÜ ayrışan bir anlam farkı iddiasını DESTEKLEMEZ; böyle bir iddia için bağımsız ikinci kaynak bulunamadığından madde farkı yalnız ortaklık düzeyinde yazar (brief §5.4)."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "Lotus Sutra (Sanskrit Saddharmapuṇḍarīka-sūtra, 'İyi Yasasının Lotusu Sutra'ı) erken Mahayana metinlerindendir; Japon Tendai (Çin Tiantai) ve Nichiren mezheplerince hakikatin özü sayılır; 3. yy'da Çinceye çevrilmiş, Çin ve Japonya'da son derece popüler olmuştur; 25. bölüm (Avalokiteşvara/Kuan-yin/Kannon) ayrı bir metin olarak (Kuan-yin Ching / Kannon-gyō) yaşamıştır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-001-K05",
+      "kaynak_baslik": "Encyclopaedia Britannica — Lotus Sutra (Saddharmapuṇḍarīka-sūtra)",
+      "url": "https://www.britannica.com/topic/Lotus-Sutra",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-07-23"
+      },
+      "pasaj": "one of the earlier Mahāyāna Buddhist texts venerated as the quintessence of truth by the Japanese Tendai (Chinese T'ien-t'ai) and Nichiren sects … It was first translated into Chinese in the 3rd century ad and became extremely popular in China and Japan.",
+      "pasaj_konum": "'Lotus Sutra' giriş paragrafı",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kaynak genel tanıtım düzeyindedir; sutra metnindeki lotus metaforunun birincil kullanımı bu araştırmada doğrulanmadı (eksik olarak raporlandı)."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Mısır resminde baskın 'lotus' betimi mavi lotustur (Nymphaea caerulea); bu, Budist/Hindu kutsal lotusu (Nelumbo nucifera) ile farklı cinsten, ayrı bir kavramdır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "IKO-001-K04",
+      "kaynak_baslik": "Encyclopaedia Britannica — Blue lotus",
+      "url": "https://www.britannica.com/plant/blue-lotus",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2025-05-15"
+      },
+      "pasaj": "The blue lotus (N. caerulea) was the dominant lotus in Egyptian art.",
+      "pasaj_konum": "'Blue lotus' gövde metni",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-001-K03"],
+      "celisen_kaynaklar": [
+        "IKO-001-K03 (Britannica 'Sacred lotus'): kutsal lotusun 'antik Mısır'da yeniden doğuşu temsil için kullanıldığını' yazar; K04 ise Mısır sanatındaki baskın lotusun Nymphaea caerulea olduğunu belirtir — ifade gerilimi (CELISKILI değil, nüans)"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kavram ayrımı (TAKSONOMI §5.5) bu iddiaya dayanır: Mısır 'lotus'u bu maddeyle birleştirilmedi."
+    },
+    {
+      "claim_id": "C011",
+      "iddia": "Tibet thangka resminde lotus tahtı ve lotus niteliği standart görsel öğelerdir: V&A'daki 14. yy Padmasambhava tangkasında 'içinde oturduğu gösterişli lotus tahtı sudan büyüyor görünür'; 1770–1800 Avalokiteşvara ipek thangkapında tanrısal figürlerden biri lotus çiçeği tutar, altı küçük figür lotus kaideleri üzerinde oturur.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-001-K07",
+      "kaynak_baslik": "Victoria and Albert Museum — Collections API v2 nesne kayıtları (IS.20-1970 / O455994; 1479-1902 / O106459)",
+      "url": "https://api.vam.ac.uk/v2/museumobject/O455994",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "IS.20-1970: the elaborate lotus throne in which he sits appears to grow out of water … 1479-1902: the others holding respectively a praying wheel, a rosary, a lotus flower, a bow and arrow and a vase … Above seated upon lotus pedestals and supported on clouds are six smaller figures.",
+      "pasaj_konum": "API physicalDescription alanları (her iki kayıt)",
+      "belirsizlik_ifadeleri": ["appears to grow out of water"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "1479-1902 kaydındaki 'double halo' ifadesi IKO-002 (nimbus) maddesinde C012 olarak ayrıca kullanıldı — iki madde arasında ortak örnek."
+    }
+  ]
+}

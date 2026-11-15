@@ -1,0 +1,235 @@
+{
+  "madde_id": "MIT-004",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (MIT-004) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Krishna, Hindu tanrısı Vişnu'nun sekizinci avatarı (avatara) olarak tapınım görür; aynı zamanda kendi başına yüce bir tanrı olarak da kabul edilir.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-004-K06",
+      "kaynak_baslik": "'Krishna', Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/topic/Krishna-Hindu-deity",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2023-09-07"
+      },
+      "pasaj": "\"…worshipped as the eighth incarnation (avatar, or avatara) of the Hindu god Vishnu and also as a supreme god in his own right.\" (K06) · \"Krishna is one of the many avatars (forms or manifestations) of the Hindu god Vishnu.\" (K04)",
+      "pasaj_konum": "K06 giriş paragrafı; K04 giriş paragrafı",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "MIT-004-K04"
+      ],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İki bağımsız yayıncı (Britannica ve Smarthistory) aynı tanımı verir. İnanç/tapınım içeriği olduğu için madde türü GELENEKSEL_ANLATI olarak korundu; tarihsel olgu gibi sunulmadı."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Krishna mitolojisinin temel yazılı kaynakları Mahabharata destanı, onun eki Harivamşa ve Purana'lar — özellikle Bhagavata Purana'nın X. ve XI. kitapları — olarak gösterilir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-004-K06",
+      "kaynak_baslik": "'Krishna', Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/topic/Krishna-Hindu-deity",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2023-09-07"
+      },
+      "pasaj": "\"The basic sources of Krishna's mythology are the epic Mahabharata and its 5th-century-ce appendix, the Harivamsha, and the Puranas, particularly Books X and XI of the Bhagavata-purana.\"",
+      "pasaj_konum": "K06, 1. paragraf",
+      "belirsizlik_ifadeleri": [
+        "5th-century-ce appendix (Harivamşa tarihlemesi — bkz. C004)"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "MIT-004-K04"
+      ],
+      "celisen_kaynaklar": [
+        "MIT-004-K08 (LACMA Curatorial Notes): Harivamşa'yı 'MS 1. yüzyıl' olarak tarihler — Britannica'nın 'MS 5. yüzyıl eki' ifadesiyle çelişir; tarihleme ayrıca C004'te CELISKILI olarak kaydedildi"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Doğrulanan kısım kaynak/metin listesidir; Harivamşa'nın tarihi bu claim'in kapsamında kesinleştirilmedi."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Harivamşa'nın tarihlendirmesi kaynaklarda çelişir: Britannica onu Mahabharata'nın 'MS 5. yüzyıla ait eki' olarak verirken LACMA küratoryal notu 'MS 1. yüzyıl' olarak verir.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "MIT-004-K06",
+      "kaynak_baslik": "'Krishna', Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/topic/Krishna-Hindu-deity",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2023-09-07"
+      },
+      "pasaj": "\"…its 5th-century-ce appendix, the Harivamsha…\" (K06) · \"…the Harivamsha (Lineage of Hari [Vishnu]), 1st century…\" (K08)",
+      "pasaj_konum": "K06, 1. paragraf; K08 'Curatorial Notes', 1. paragraf",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "KISMEN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "MIT-004-K08"
+      ],
+      "celisen_kaynaklar": [
+        "MIT-004-K06 (Britannica): '5th-century-ce appendix' ↔ MIT-004-K08 (LACMA): '1st century' — yaklaşık dört yüzyıllık fark; üçüncü bağımsız bir kaynak bu turda açılamadı"
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "Madde metni iki tarihi de kaynak adıyla verir ve tek tarafı kesinleştirmez (Kural 6/8)."
+    },
+    {
+      "claim_id": "C013",
+      "iddia": "Govardhan epizodu: Krishna Braj halkını Indra'ya kurban hazırlamaktan vazgeçirip ineklere, Brahmanalara ve tepeye sunu yapmaya yöneltir; öfkelenen Indra Vrindavana'ya yağmur, fırtına ve dolu gönderir; Krishna Govardhana tepesini tek eliyle kaldırır, halk ve inekler mağarada barınır; yedi gün süren yağmurun ardından Indra geri çekilir ve Krishna'nın ayaklarına kapanır. Metinde Krishna bu sırada 'yedi yaşında' bir çocuktur.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "MIT-004-K07",
+      "kaynak_baslik": "A Study of the Bhâgavata Purâna; or, Esoteric Hinduism (Skandha X çevirisi), Sinha (ed.), 1901 — Project Gutenberg #39442",
+      "url": "https://www.gutenberg.org/cache/epub/39442/pg39442.txt",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "\"Krishna carelessly lifted up the Govardhana hill with one hand and the people of Vrindavana with their cows took shelter in the cave. For seven days it rained incessantly…\"",
+      "pasaj_konum": "K07, Govardhana bölümü (Skandha X, bu baskının numaralandırmasında Chap. 22 başlığı altında); K03 'Shri Nathji' paragrafı",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "MIT-004-K03",
+        "MIT-004-K04"
+      ],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "K03 aynı sahneyi müze küratörü diliyle 'the auspicious seven-year old Shri Nathji in the act of lifting up Mount Govardhan to protect his devotees from a violent storm invoked by the god Indra (2005.342)' diye tarif eder. Anlatı GELENEKSEL_ANLATI türündedir; 'yedi yaş' ayrıntısı K07 metninin kendi ifadesidir. Bölüm numaralandırması modern kritik basımlardan farklı olabilir (brief §7 uyarısı)."
+    },
+    {
+      "claim_id": "C019",
+      "iddia": "17. ve 18. yüzyıl Rajasthani ve Pahari resminde Krishna karakteristiği olarak mavi-siyah tenle, sarı bir dhoti (peştamal) ve tavuskuşu tüylerinden bir taçla betimlenir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-004-K06",
+      "kaynak_baslik": "'Krishna', Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/topic/Krishna-Hindu-deity",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2023-09-07"
+      },
+      "pasaj": "\"In 17th- and 18th-century Rajasthani and Pahari painting, Krishna is characteristically depicted with blue-black skin, wearing a yellow dhoti (loincloth) and a crown of peacock feathers.\"",
+      "pasaj_konum": "K06, son paragraf; K04 2. paragraf; K01 IS.6-1970 physicalDescription",
+      "belirsizlik_ifadeleri": [
+        "characteristically (K06)",
+        "often (K04: 'He often wears a yellow- or orange-colored hip wrapper')"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "MIT-004-K04",
+        "MIT-004-K01"
+      ],
+      "celisen_kaynaklar": [
+        "Giysi rengi nitelemesi kaynaklar arasında değişir (sarı ↔ turuncu ↔ 'altın gibi sarı') → ayrıca C041 (CELISKILI)"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Üç kaynak; ikisi hiyerarşi-1 (V&A nesne kaydı IS.6-1970: 'the blue-skinned Krishna dressed in a dhoti, wearing a crown, and royal scarves and jewellery'). İkonografik öğelere kaynaksız sembolik anlam atfedilmedi."
+    },
+    {
+      "claim_id": "C022",
+      "iddia": "Krishna'nın 'mavi' teninin nedeni kaynaklarda birden fazla ve birbirinden farklı biçimde açıklanır: Vişnu'nun kozmosun/kara fırtına bulutlarının/ayın rengini yansıtması; bazı araştırmacıların ters yönde, yani Vişnu'nun maviliğinin Krishna'nın koyu teninden türediğini düşünmesi; Kali Yuga'da Vişnu'nun siyah tenle göründüğü inancı; gece ve muson mevsiminde doğum; Braj coğrafyasının koyu dağları; zehir içme anlatıları; ve mavi pigmentlerin (akuamarin, indigo, lapis lazuli) bulunabilirliği/popülaritesi.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "MIT-004-K05",
+      "kaynak_baslik": "'Understanding divine \"blueness\" in South Asia', Smarthistory (Dr. Cristin McKnight Sethi), 15 Ağustos 2021",
+      "url": "https://smarthistory.org/understanding-divine-blueness-in-south-asia/",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2025-10-03"
+      },
+      "pasaj": "\"Some scholars believe that Vishnu's 'blueness' is a result of Krishna's dark complexion… it may be that Krishna's 'blueness' came first.\" · \"The choice to depict Krishna as blue (rather than black) may have been a result of the availability and popularity of these materials.\"",
+      "pasaj_konum": "K05, madde listesi + sonuç paragrafı",
+      "belirsizlik_ifadeleri": [
+        "Some scholars believe",
+        "may be",
+        "Some believe",
+        "may also be related",
+        "may have been",
+        "we don't necessarily know what the term Kṛṣṇa meant to early artists"
+      ],
+      "destek_duzeyi": "DOLAYLI_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "MIT-004-K06 (Britannica) ten rengini 'blue-black skin' diye tek bir nitelemeyle verir; K05 ise 'soluk gümüşî maviden gece yarısı siyahına' uzanan bir ton çeşitliliği anlatır — madde tek renge indirgemez"
+      ],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "TEK PLATFORM: K04 ile aynı yayıncı ve aynı yazar olduğundan bağımsız ikinci kaynak sayılmaz (Kural 7). Kaynak bu açıklamaları 'popüler anlayışlar' olarak listeler; hiçbiri madde metninde kesin neden gibi yazılmadı. YORUM türü olduğu için DOGRULANDI statüsüne yükseltilmedi."
+    },
+    {
+      "claim_id": "C033",
+      "iddia": "Krishna betimleri minyatürde opak suluboya (guaj) ve çoğu kez altın ile kâğıt üzerine çalışılır; müze kayıtlarında malzeme 'opaque watercolour and gold on paper' (V&A), 'Ink and opaque watercolor on paper' / 'Opaque watercolor and gold on paper' (Met), 'gum tempera and gold on paper' (CMA) biçiminde geçer.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "MIT-004-K01",
+      "kaynak_baslik": "V&A Collections API v2 nesne kayıtları (IS.150-1949 / O73808 dahil)",
+      "url": "https://api.vam.ac.uk/v2/objects/search?q=krishna",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "\"This painting, in opaque watercolour on paper, done in extremely fine work shows Krishna raising Mount Govardhan…\" (K01, IS.150-1949)",
+      "pasaj_konum": "K01 IS.150-1949 physicalDescription; K02 objectID 37906 (1985.398.12) medium alanı; K09 1989.333 materials/tombstone",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "MIT-004-K02",
+        "MIT-004-K09"
+      ],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Met kayıtları: 37906 'Ink and opaque watercolor on paper'; 65584 opak suluboya + gümüş. Cleveland kaydı 1989.333: 'Gum tempera and gold on paper'. LACMA M.71.49.7: opak suluboya + altın / kâğıt. 'wasli' terimi bu kayıtların hiçbirinde GEÇMİYOR → terim eşlemesi kurulmadı (TEK-005'in kendi kaynağına bırakıldı; TEK-005 dosyası üretim sırasında diskte yoktu)."
+    },
+    {
+      "claim_id": "C041",
+      "iddia": "Krishna'nın giysisi kaynaklarda farklı renklerle tanımlanır: Britannica 'yellow dhoti', Smarthistory 'yellow- or orange-colored hip wrapper', V&A IM.88-1930 katalog metni 'orange dhoti', Bhagavata Purana çevirisi 'cloth yellow like gold'. Giysi rengi tek bir renge sabitlenmemelidir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "MIT-004-K06",
+      "kaynak_baslik": "'Krishna', Encyclopaedia Britannica",
+      "url": "https://www.britannica.com/topic/Krishna-Hindu-deity",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2023-09-07"
+      },
+      "pasaj": "\"…wearing a yellow dhoti (loincloth) and a crown of peacock feathers.\" (K06) · \"Krishna in an orange dhoti stands with three gopis, his arms around two of them.\" (K01, IM.88-1930)",
+      "pasaj_konum": "K06 son paragraf; K01 IM.88-1930 physicalDescription; K04 2. paragraf; K07 Skandha X flüt bölümü",
+      "belirsizlik_ifadeleri": [
+        "often (K04: 'He often wears a yellow- or orange-colored hip wrapper')"
+      ],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [
+        "MIT-004-K04",
+        "MIT-004-K01",
+        "MIT-004-K07"
+      ],
+      "celisen_kaynaklar": [
+        "MIT-004-K06 (Britannica): 'yellow dhoti'",
+        "MIT-004-K04 (Smarthistory): 'yellow- or orange-colored hip wrapper'",
+        "MIT-004-K01 (V&A IM.88-1930 katalog metni): 'orange dhoti'",
+        "MIT-004-K07 (Sinha 1901, Bhagavata Purana Skandha X çevirisi): 'his cloth yellow like gold'"
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "Renk nitelemesi kaynaklar arasında değişir; madde metni dört nitelemeyi de kaynak adıyla verir ve tek renge sabitlemez. Brief'te kaynaksız olduğu belirtilen Sanskritçe 'sarı giysi' terimi hiçbir açılan kaynakta geçmediği için iddia metninden çıkarıldı ve maddeye alınmadı (Kural 12)."
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "madde_id": "IKO-005",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (iko) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Arnolfini Portresi'nin (NG186) arka duvarında, yüzeyine on İsa Passion sahnesi işlenmiş on kenarlı (muhtemelen boyalı ahşap) çerçeveli dışbükey cam bir ayna asılıdır; ayna odanın geri kalanını ve açık kapıdan giren iki erkeği yansıtır.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-005-K02",
+      "kaynak_baslik": "Lorne Campbell, National Gallery Catalogues: The Fifteenth Century Netherlandish Schools (1998), NG186 katalog maddesi (çevrimiçi, güncelleme Eylül 2021)",
+      "url": "https://www.nationalgallery.org.uk/paintings/catalogues/campbell-1998/the-arnolfini-portrait",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "The convex glass mirror is surrounded by a decorative red and blue border … The frame is ten-sided and is perhaps of painted wood. … Ten roundels have been cut into its surface and in the roundels are ten scenes of the Passion of Christ. … The mirror reflects the rest of the room and the space seen through the open door. … Two men are entering.",
+      "pasaj_konum": "K02 katalog maddesi, 'The mirror' betimleme bölümü",
+      "belirsizlik_ifadeleri": ["perhaps of painted wood"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-005-K01"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Aynı kaynak (K02) aynanın üretimi (cam küre üflenip üfleçten antimon/kalay/reçine karışımı verilerek iç yüzeyin kaplanması, kürenin soğutulup daireler halinde kesilmesi), dönemin resim ve el yazmalarındaki aynaların neredeyse istisnasız sade yuvarlak çerçeveli olması ve Bruges'te aynacılar ile ressamların aynı loncaya bağlı olması bilgilerini de verir. Bu içerik brief'te C007 aday iddiasıydı; claim üst sınırı (10) nedeniyle ayrı iddia olarak taşınmadı."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Panofsky'ye (1934) göre tablo bir 'resimli evlilik belgesi'dir (pictorial marriage certificate); 'Jan van Eyck buradaydı' imzası, modern bir nüfus memuru önünde tanığın verdiği beyannameyle aynı hukuki sonucu ima eder; aynadaki ikinci bey ikinci bir tanık olarak yorumlanabilir; odadaki nesneler örtük (disguised) simgelerdir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-005-K04",
+      "kaynak_baslik": "Erwin Panofsky — Jan van Eyck's Arnolfini Portrait, The Burlington Magazine LXIV/372 (1934), ss. 117–127 (tarama PDF)",
+      "url": "https://monoskop.org/images/1/1d/Jan_van_Eycs_Arnolfini_Portrait.pdf",
+      "erisim": {
+        "durum": "ERISILDI_KISMEN",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "s. 124: the portrait meant no less than a 'pictorial marriage certificate' in which the statement that 'Jan van Eyck had been there' had the same importance and implied the same legal consequences as an 'affidavit' deposed by a witness at a modern registrar's office. — s. 126: the very fact that these significant attributes are not emphasized as what they actually are, but are disguised, so to speak, as ordinary pieces of furniture. — K02 aktarımı: the artist has set down his signature … as a witness rather than as a painter. In fact, we see him in the mirror entering the room in the company of another gentleman who may be interpreted as a second witness.",
+      "pasaj_konum": "K04 Burlington Magazine ss. 124 ve 126 (görsel olarak okundu); K02 yorum bölümü (not 292)",
+      "belirsizlik_ifadeleri": ["may be interpreted (Panofsky'nin kendi metninde)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-005-K02", "IKO-005-K05"],
+      "celisen_kaynaklar": [
+        "IKO-005-K02 (Campbell 1998/2021, NG katalog maddesi): tablonun bir evlilik töreni kaydı OLMADIĞINI savunur — kadın hamile değil, oda yatak odası değil kabul odası, jestler ritüel gerektirmez, aynadaki mavi giysili adam tanık değil ziyaretçi; ayrıca 'The portrait was certainly not conceived according to any carefully worked out programme'",
+        "IKO-005-K01 (NG sayfa metni): 'for many years the painting was understood as representing a marriage ceremony, though not anymore'",
+        "IKO-005-K05 (Smarthistory): 'Panofsky's interpretation has been widely disputed by later scholars. Art historians now generally agree that the painting is not a record of a marriage ceremony.'"
+      ],
+      "dogrulama_sonucu": "CELISKILI",
+      "notlar": "Kaynak ERISILDI_KISMEN: tarama PDF'te metin katmanı yok, ss. 123–127 görsel olarak okundu, ss. 117–122 OKUNMADI. İddia yalnız Panofsky'nin GÖRÜŞÜ olarak yazıldı; madde metninde Campbell/NG'nin karşı argümanlarıyla birlikte verildi. CELISKILI statüsü bu nedenle akademik_tartismalar alanının dolu olmasını gerektirir (madde karşılar)."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "National Gallery'nin güncel pozisyonuna (Campbell 1998 + sayfa metni) göre tablo bir evlilik töreni kaydı değildir: kadın hamile değildir (elbisesinin bolluğunu tutmaktadır), oda bir yatak odası değil kabul odasıdır, çiftin jestleri evlilik/nişan ritüeli gerektirmez; aynadaki mavi giysili adam ritüeli izleyen bir tanık değil, odaya giren bir ziyaretçidir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-005-K01",
+      "kaynak_baslik": "National Gallery, Londra — Jan van Eyck, The Arnolfini Portrait (NG186), Overview / In-depth",
+      "url": "https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "K01: 'They are clearly husband and wife, and for many years the painting was understood as representing a marriage ceremony, though not anymore.' / 'She is not pregnant, though she might look it'. — K02: 'The man in blue is moving towards the couple and is a visitor entering the room, not a witness standing still to watch a ritual.'",
+      "pasaj_konum": "K01 In-depth bölümü; K02 yorum bölümü",
+      "belirsizlik_ifadeleri": ["probably his second wife", "may have been friends of van Eyck", "though she might look it"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-005-K02"],
+      "celisen_kaynaklar": [
+        "IKO-005-K04 (Panofsky 1934): evlilik belgesi okuması (C003, CELISKILI)"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI statüsü NG'nin GÜNCEL KURUMSAL POZİSYONUNUN bu olduğuna ilişkindir; iddianın içeriği YORUM türündedir ve madde metninde 'National Gallery'nin güncel pozisyonuna göre' diye sahiplendirilmiştir."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Kızılötesi reflektogram incelemesi, 'simgesel açıdan merkezi' sayılan birçok mimari ayrıntının ve nesnenin (mum, azize Margret oyması, portakallar, çıkarılmış pattens, köpek) çizim (underdrawing) olmadan geç aşamada boyandığını gösterir; ayna ilk çizimde daha büyük ve sekizgendir. Bu, tablonun önceden kurgulanmış bir simgesel programa göre tasarlanmadığına işaret eder.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-005-K03",
+      "kaynak_baslik": "Rachel Billinge & Lorne Campbell — The Infra-red Reflectograms of Jan van Eyck's Portrait of Giovanni(?) Arnolfini and his Wife Giovanna Cenami(?), NG Technical Bulletin 16 (1995), ss. 47–60 (özet sayfası)",
+      "url": "https://www.nationalgallery.org.uk/research/publications/technical-bulletin/the-infra-red-reflectograms-of-jan-van-eyck-s-portrait-of-giovanni-arnolfini-and-his-wife-giovanna-cenami",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "K03 özet: 'Many architectural details, long considered to have symbolism central to the portrait, turn out to have been painted at a late stage, without underdrawing.' — K02: 'Most of the objects which, according to Panofsky and his followers, have symbolic significance, turn out not to have been underdrawn … The portrait was certainly not conceived according to any carefully worked out programme.'",
+      "pasaj_konum": "K03 özet sayfası; K02 teknik/yorum bölümü",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-005-K02"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "BULGU olgu düzeyindedir; 'önceden kurgulanmış simgesel program yok' ÇIKARIMI Campbell'e aittir ve madde metninde bu ayrım açıkça belirtilmiştir. K03 için yalnız ÖZET sayfası okundu, makale PDF'i indirilmedi."
+    },
+    {
+      "claim_id": "C006",
+      "iddia": "Campbell'e göre NG186'daki ayna 'gerçek bir aynanın betimi olması pek olası değildir': çerçeve çapı bank ile zemin arası mesafeye (~45 cm) eşittir ve cam en az ~28 cm çapındadır; bu, dönem için aşırı büyüktür; van Eyck boyutu abartmış ve çerçeveyi daha gösterişli kurgulamış olabilir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-005-K02",
+      "kaynak_baslik": "Lorne Campbell, National Gallery Catalogues (1998/2021), NG186 katalog maddesi — 'The mirror' ve 'The room' bölümleri",
+      "url": "https://www.nationalgallery.org.uk/paintings/catalogues/campbell-1998/the-arnolfini-portrait",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "the mirror glass is at least 28 cm in diameter and is therefore extremely large. It is, of course, impossible to say whether Arnolfini owned so big a mirror or whether van Eyck exaggerated its size. … the mirror may be impossibly large and is unlikely to be a depiction of a real mirror.",
+      "pasaj_konum": "K02 ayna bölümü + 'The room' değerlendirme paragrafı",
+      "belirsizlik_ifadeleri": ["impossible to say", "may be", "unlikely"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI statüsü bu değerlendirmenin CAMPBELL'E ait olduğunun doğrulanmasına ilişkindir; ihtiyat kalıpları madde metninde korunmuştur ('pek olası değildir', 'olabilir')."
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "Petrus Christus'un 'A Goldsmith in his Shop' tablosunda (Met, 1449) dışbükey ayna, resim uzamını dışarıdaki sokağa bağlar; şahinli (gurur ve açgözlülük simgesi) iki genç erkeği yansıtır ve izleyicinin kusurlu dünyası ile tabloda betimlenen erdem ve denge dünyası arasında ahlakî bir karşılaştırma kurar.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-005-K06",
+      "kaynak_baslik": "Metropolitan Museum of Art — Petrus Christus, A Goldsmith in his Shop, 1449 (env. 1975.1.110, Robert Lehman Collection)",
+      "url": "https://www.metmuseum.org/art/collection/search/459052",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-01-08"
+      },
+      "pasaj": "The convex mirror, which links the pictorial space to the street outside, reflects two young men with a falcon (a symbol of pride and greed) and establishes a moral comparison between the imperfect world of the viewer and the world of virtue and balance depicted here.",
+      "pasaj_konum": "K06 küratoryal açıklama, son cümle",
+      "belirsizlik_ifadeleri": ["possibly Saint Eligius", "likely a vocational painting", "may well be depicted"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Simgesel okuma kurum küratöryal metnine aittir; madde metninde 'Metropolitan Museum'un küratoryal metnine göre' diye sahiplendirildi. API kaydı canlı 200; nesne sayfası canlı 429 → Wayback (20260108213341)."
+    },
+    {
+      "claim_id": "C011",
+      "iddia": "Georges de La Tour'un 'The Penitent Magdalen' tablosunda (Met, y. 1640) ayna gösteriş/vanitas (vanity) simgesi, kurukafa ölümlülük amblemi olarak kullanılır; mum ise 'muhtemelen' manevi aydınlanmaya göndermedir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-005-K08",
+      "kaynak_baslik": "Metropolitan Museum of Art — Georges de La Tour, The Penitent Magdalen, y. 1640 (env. 1978.517)",
+      "url": "https://www.metmuseum.org/art/collection/search/436839",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-06-14"
+      },
+      "pasaj": "She is shown with a mirror, symbol of vanity; a skull, emblem of mortality; and a candle that probably references her spiritual enlightenment.",
+      "pasaj_konum": "K08 küratoryal açıklama, son cümle",
+      "belirsizlik_ifadeleri": ["probably"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "IKO-004 (vanitas-sembolleri) maddesiyle ORTAK örnek ve ortak kaynak; kategori içi çapraz bağ bu kayda dayanır. Kaynak IKO-004'te IKO-004-K11 kimliğiyle kayıtlıdır."
+    },
+    {
+      "claim_id": "C012",
+      "iddia": "Cesare Ripa'nın Iconologia'sında (1603) Prudenza (İhtiyat) kişiileştirmesi sol elinde, içinde kendini seyredip tefekkür ettiği bir ayna tutar; Ripa'ya göre ayna, 'ihtiyatlı kişinin bilgisini' ve kişinin kendi kusurlarını bilmeden eylemlerini düzenleyemeyeceğini simgeler; Ripa bunu Sokrates'in öğrencilerini her sabah aynaya bakmaya teşvik etmesiyle ilişkilendirir.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "IKO-005-K09",
+      "kaynak_baslik": "Cesare Ripa — Iconologia overo Descrittione dell'Imagini… (Roma 1603), tam metin (OCR)",
+      "url": "https://archive.org/download/iconologiaouerod00ripa/iconologiaouerod00ripa_djvu.txt",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "nella sinistra terrà lo specchio, nel quale mirando, contempla sé stessa … Lo Specchio, significa la cognitione del prudente, [che] non poter regolar le sue actioni, se i proprii suoi diffetti non conosce, & corregge. Et questo intendeva Socrate quando esortava i suoi Scolari à riguardar sé medesimi ogni mattina nello specchio.",
+      "pasaj_konum": "K09 'Prudenza' maddesi (OCR metni; başlık küçük kapitalize dizgide)",
+      "belirsizlik_ifadeleri": ["OCR kaynaklı harf bozulmaları (uzun s → f/s)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Birincil ikonografi elkitabı; iddia Ripa'nın BEYANI olarak (GELENEKSEL_ANLATI) kaydedildi, tarihsel olgu gibi sunulmadı. İkinci bağımsız akademik 'speculum prudentiae' çalışması bu turda açılamadı — brief'in eksikler notunda belirtildiği gibi."
+    },
+    {
+      "claim_id": "C013",
+      "iddia": "Ripa'da ayna, kendini beğenmişlik/boş gösteriş tarafında da atribüdür: Superbia (Gurur) sağ elinde tavus kuşu, sol elinde kendini seyrettiği bir ayna tutar; Lussuria (Şehvet) aynaya dikkatle bakıp yüzünü güzelleştiren kadın olarak betimlenir; Falsità d'amore'da ise 'Lo specchio è vero simbolo di falsità' (ayna sahteliğin gerçek simgesidir) denir; Tempo (Zaman) elindeki aynayla yalnız şimdinin görüldüğünü anlatır.",
+      "iddia_turu": "GELENEKSEL_ANLATI",
+      "kaynak_id": "IKO-005-K09",
+      "kaynak_baslik": "Cesare Ripa — Iconologia (Roma 1603), Superbia / Lussuria / Falsità d'amore / Tempo maddeleri",
+      "url": "https://archive.org/download/iconologiaouerod00ripa/iconologiaouerod00ripa_djvu.txt",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "Superbia: 'nella destra mano tiene vn pauone, & nella sinistra vn specchio nel quale miri, & contempli sé stessa' · Falsità: 'Lo specchio è vero simbolo di falsità' · Tempo: 'terrà vn specchio in mano, il quale ci fa conoscere, che del tempo solo il presente si vede'.",
+      "pasaj_konum": "K09 ilgili maddeler (OCR metni)",
+      "belirsizlik_ifadeleri": ["OCR kaynaklı harf bozulmaları (uzun s → f/s)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Maddenin 'çok anlamlılık' omurgası: aynı nesne Ripa'da hem öz-bilgi/ihtiyat (C012) hem kendini beğenmişlik hem sahtelik hem zaman için kullanılır. Bu nedenle tek anlamlı 'ayna = X' cümlesi kurulmadı."
+    },
+    {
+      "claim_id": "C016",
+      "iddia": "Arnolfini aynası üzerine rakip okumalar bibliyografik olarak mevcuttur ancak metinlerine bu araştırmada erişilememiştir: Seidel 1989 ('Business as Usual?'), Carroll 1993 ('In the Name of God and Profit'), Bedaux 1986 ('The Reality of Symbols'), Baldwin 1984 (ayna = Passion'ın sakramental yansıması), Hall 1994 (nişan), Schabacker 1972 / Dhanens 1980 (morganatik evlilik). Campbell 1998 Schabacker/Dhanens ve Hall'ın argümanlarını özetleyip eleştirir.",
+      "iddia_turu": "YORUM",
+      "kaynak_id": "IKO-005-K02",
+      "kaynak_baslik": "Lorne Campbell, National Gallery Catalogues (1998/2021), NG186 katalog maddesi — yorum bölümü (rakip okumaların özeti ve eleştirisi)",
+      "url": "https://www.nationalgallery.org.uk/paintings/catalogues/campbell-1998/the-arnolfini-portrait",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "Schabacker and Dhanens were puzzled that the couple did not join their right hands … they therefore suggested that the picture represented a morganatic marriage. … Hall, successfully demolishing Panofsky's and Schabacker's arguments, preferred to see the picture as the representation of a betrothal.",
+      "pasaj_konum": "K02 yorum bölümü; künyeler K01'in Bibliography bloğundan",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "KISMEN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-005-K11"],
+      "celisen_kaynaklar": [
+        "Anılan okumalar birbirleriyle ve Campbell/NG pozisyonuyla (C004) çelişir; ancak hiçbiri birincil metninden okunamadı"
+      ],
+      "dogrulama_sonucu": "KISMEN_DESTEKLENIYOR",
+      "notlar": "IKO-005-K11 (Seidel/Carroll/Bedaux/Baldwin/Hall/Schabacker/Dhanens) ERISILEMEDI durumundadır: yalnız künye (NG186 bibliyografya bloğu) ve Campbell'in aktardığı özetler kullanılabilir. Bu adlar madde metninde yalnız 'öne sürmüştür (metnine erişilmedi)' kaydıyla anıldı; hiçbir iddiaya DOGRULANDI desteği verilmedi. DÜZELTME: pilot tanımındaki 'Steinberg' atfı kaynaklarda yoktur; Critical Inquiry 1989 makalesinin yazarı LINDA SEIDEL'dir."
+    }
+  ]
+}

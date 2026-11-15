@@ -1,0 +1,243 @@
+{
+  "madde_id": "IKO-002",
+  "arastirma_tarihi": "2026-11-15",
+  "ureten": "ansiklopedi-madde-yazim (iko) — bağımsız denetim değildir",
+  "kayitlar": [
+    {
+      "claim_id": "C001",
+      "iddia": "Halo/nimbus, dini resimde kutsal bir figürün başı çevresindeki, genellikle dairesel ışık alanıdır; ışık sembolizmi üzerinden manevi karakteri görselleştirir.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "IKO-002-K02",
+      "kaynak_baslik": "The National Gallery, Londra — Glossary: Halos",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/halos",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "A halo is an area of light, usually circular, around the head of a holy figure in religious painting.",
+      "pasaj_konum": "NG glossary girişi",
+      "belirsizlik_ifadeleri": ["usually circular"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-002-K03", "IKO-002-K01"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Üç bağımsız kaynak aynı tanımı verir. Britannica: 'radiant circle or disk surrounding the head of a holy person, a representation of spiritual character through the symbolism of light'. Catholic Encyclopedia: nimbus 'signifies a shining light implying great dignity. Closely related are the halo, glory, and aureole.' NG sözlüğü 'nimbus' terimini kullanmaz; terim farkı madde metninde belirtildi."
+    },
+    {
+      "claim_id": "C002",
+      "iddia": "Biçim ayrımları: içine haç çizilmiş halo (cruciform aureole) İsa'yı belirtir; üçgen halo Tanrı Baba'yı belirtir; bütün gövdeyi saran oval ışık alanı aureola/mandorladır.",
+      "iddia_turu": "TEKNIK_TANIM",
+      "kaynak_id": "IKO-002-K02",
+      "kaynak_baslik": "The National Gallery, Londra — Glossary: Halos",
+      "url": "https://www.nationalgallery.org.uk/paintings/glossary/halos",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "A halo with a cross inscribed in it (or cruciform aureole) denotes Christ; a triangular halo denotes God the Father.",
+      "pasaj_konum": "NG glossary (biçim tanımları)",
+      "belirsizlik_ifadeleri": ["occasionally it is given to the other Persons of the Trinity (CathEnc, haçlı nimbus için)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-002-K01", "IKO-002-K03"],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Catholic Encyclopedia desteği: 'Since the sixth century it has characterized Christ and the Lamb of God'; 'The aureole obtained the Italian name of mandorla from its almond shape.'; Tanrı Baba için 'typified … by an equilateral triangle, or two interlaced triangles, also by a hexagon'. CathEnc ihtiyatı (haçlı nimbusun bazen Teslis'in diğer kişilerine verilmesi) madde metninde korunmuştur."
+    },
+    {
+      "claim_id": "C003",
+      "iddia": "Hristiyan sanatında halo kronolojisi (Britannica): 4. yy ortasından itibaren İsa (imparator niteliği olarak); 4. yy sonundan itibaren Tanrı Kuzusu; 5. yy'da bazen melekler; 6. yy'a kadar Meryem ve azizler için teamül haline gelmedi; Orta Çağ boyunca düzenli kullanım.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "IKO-002-K03",
+      "kaynak_baslik": "Encyclopaedia Britannica — Halo (art)",
+      "url": "https://www.britannica.com/art/halo-art",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-10-12"
+      },
+      "pasaj": "From the middle of the 4th century, Christ was also shown with this imperial attribute, as was his symbol, the Lamb of God, from the end of the 4th century. In the 5th century it was sometimes given to angels, but it was not until the 6th century that the halo became customary for the Virgin Mary and other saints.",
+      "pasaj_konum": "Britannica 'Halo' gövde metni",
+      "belirsizlik_ifadeleri": ["sometimes"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "IKO-002-K02 (NG glossary): hale'nin ilk olarak 5. yüzyılda göründüğünü yazar",
+        "IKO-002-K01 (Catholic Encyclopedia): ilk örnekleri 4. yüzyılın ilk yarısına (tahtta İsa) ve Constantinus'tan beri imparator resimlerine bağlar"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "İddia Britannica kronolojisine AÇIKÇA atıfla yazıldı; kaynaklar arasındaki yüzyıl farkı madde metninde 'kesin bir başlangıç tarihi ileri sürülmez' ihtiyatıyla verildi (CELISKILI statüsü verilmedi)."
+    },
+    {
+      "claim_id": "C004",
+      "iddia": "Kare nimbus, yaşayan seçkin kişileri işaretler: Britannica'ya göre 5. yy'da bir dönem; Catholic Encyclopedia'ya belge zinciri Papa I. Gregorius (y. 600) ve Johannes Diaconus'tur ('yaşayan kişi işareti'). CathEnc ihtiyatı: kare nimbus, yaşayanları azizlerle eşitlememek için dairesel halonun bir varyantı 'görünmektedir'.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-002-K03",
+      "kaynak_baslik": "Encyclopaedia Britannica — Halo (art)",
+      "url": "https://www.britannica.com/art/halo-art",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-10-12"
+      },
+      "pasaj": "For a period during the 5th century, living persons of eminence were depicted with a square nimbus.",
+      "pasaj_konum": "Britannica 'Halo' gövde metni",
+      "belirsizlik_ifadeleri": ["For a period", "appears to be (CathEnc)", "almost without exception (CathEnc)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-002-K01"],
+      "celisen_kaynaklar": [
+        "IKO-002-K01 (Catholic Encyclopedia) kare nimbus için belge zincirini Papa I. Gregorius (y. 600) ve Johannes Diaconus'a dayandırır — Britannica'nın 5. yüzyıl tarihlemesiyle yüzyıl farkı"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Catholic Encyclopedia pasajları: Gregory the Great '(about 600) permitted himself to be painted with a square nimbus'; Johannes Diaconus alıntısı 'quod viventis insigne est'; ihtiyat cümlesi 'Judging by the principal monuments, however, the square nimbus appears to be only a variant of the round halo used to preserve a distinction'. Bu ihtiyat madde metninde düşürülmedi."
+    },
+    {
+      "claim_id": "C005",
+      "iddia": "Köken: nimbus Hristiyanlık öncesinde yaygındır — Helen ve Roma anıtlarında tanrı/kahraman/seçkin başlarında disk-halo, ışık çemberi veya ışınlu çelenk görülür; Roma'da önce ölü imparatorlar (göksel mutluluk işareti), sonra yaşayan hükümdarlar, 3. yy sonrası yalın ışınlu nimbus. Stephani'ye göre Helen çağının icadıdır.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "IKO-002-K01",
+      "kaynak_baslik": "The Catholic Encyclopedia (1911); Gerhard Gietmann — Nimbus",
+      "url": "https://www.newadvent.org/cathen/11080b.htm",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "the nimbus was in use long before the Christian era. According to the exhaustive researches of Stephani it was an invention of the Hellenic epoch. … In Rome the halo was first used only for deceased emperors as a sign of celestial bliss, but afterwards living rulers also were given the rayed crown.",
+      "pasaj_konum": "CathEnc 'Origin' / 'In art' bölümleri",
+      "belirsizlik_ifadeleri": ["according to … Stephani (19. yy bilim tarihine ait görüş)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Kaynağın 1911 tarihli olduğu madde metninde beyan edildi; Stephani atfı GÖRÜŞ olarak işaretlendi, olgu gibi sunulmadı."
+    },
+    {
+      "claim_id": "C008",
+      "iddia": "KÖKEN HİPOTEZİ A (Ramsden 1941): Halo hem Budist hem Hristiyan sanatında 'kendine özgü anlamı olmaksızın' görüldüğünden ortak kaynaktan türetilmiş olabilir; Ramsden bu kaynağı Pers/Zerdüşt hvarenah'ında ('egemenlik ışığı, yukarıdan gelen ihtişam') arar; Kuşan kralları (MS 50–225) sikkelerinde hem Mithras'ı (ışınlu/yalın halo) hem Buddha'yı (disk halo ve aureola) betimlemiştir; Gandhara heykelinde halo yaygındır ve Phrygia başlıklı Mithra figürleri sık görülür.",
+      "iddia_turu": "HIPOTEZ",
+      "kaynak_id": "IKO-002-K04",
+      "kaynak_baslik": "E. H. Ramsden (1941), CAIS yeniden yayını — The Halo: A Further Enquiry into Its Origin",
+      "url": "https://www.cais-soas.com/CAIS/Religions/iranian/Zarathushtrian/halo_its_origin.htm",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "it seems reasonable to suppose that it was derived by both from a common source … then it is in Persia that its origin must be sought … the Hvareno is properly the light of sovereignty, the glory from above, which makes the king an earthly god … It was used in particular as a mark of distinction by the Kushan kings (A.D. 50-225), who depicted among their coin types both Mithras and the Buddha.",
+      "pasaj_konum": "CAIS yayını, makale gövdesi",
+      "belirsizlik_ifadeleri": ["it seems reasonable to suppose", "presumably", "probably in Bactria at an early, but still undetermined, date", "with some confidence"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "IKO-002-K03 (Britannica): motifin doğuya 'Yunan istilacılarla' getirildiği inancını aktarır — aktarım yönü farklı",
+        "IKO-002-K05 (Chumak 2020): Gandhara→Bizans (Doğu→Batı) etkileşim hattını savunur"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI statüsü HİPOTEZİN KENDİSİNE değil, bu görüşün Ramsden'e (1941) ait olduğunun kaynak metninden doğrulanmasına ilişkindir. Madde metninde HIPOTEZ olarak ve sahibine atıfla yazıldı; olgu gibi sunulmadı. Makalenin orijinal dergi/sayfa künyesi CAIS sayfasında görünmüyor — uydurma künye EKLENMEDİ."
+    },
+    {
+      "claim_id": "C009",
+      "iddia": "KÖKEN HİPOTEZİ B (Chumak 2020): Erken Hristiyan ikonografisinde Gandhara Budist görsel geleneğinin etkisi küçümsenmiştir; Grek heykeltraşlar/ressamlar Budist geleneğe ikonik biçim verdikten sonra bu biçimler Bizans üzerinden Hristiyanlığa geri akmış olabilir. Chumak, Strzygowski'nin 'İsa'nın nimbuslu başı ↔ Gandhara Budist betimleri' bağlantısını 'kanıt eksikliği nedeniyle eleştirilmiş' diye aktarır; disk-halo Hristiyanlıkta 'Yaratılmamış Işık' sembolü olur; Romalılar ışınları Apollo-Helios için kullanmıştır; mandorla, İtalyanca 'bademden' anlamıyla Sanskrit maṇḍala ile ilişkili OLABİLİR.",
+      "iddia_turu": "HIPOTEZ",
+      "kaynak_id": "IKO-002-K05",
+      "kaynak_baslik": "Maria Chumak — Influences of the East on Early Christian Iconography, Open Journal for Studies in History 3(1), 2020, s. 11–24",
+      "url": "https://centerprode.com/ojsh/ojsh0301/coas.ojsh.0301.02011c.pdf",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "PDF"
+      },
+      "pasaj": "One of these is the Buddhist visual representations of Gandhara art … One can observe the oscillating movement of Greek visual representations from the East … and later back to Christianity on Byzantine territory. … The only report by Strzygowski, criticized for its lack of evidence, tries to connect Early Buddhist and early Christian depictions – for example, the head of Christ framed in a nimbus with Buddhist depictions of Gandhara art. … (4) The depiction of a halo in the shape of a disc … became the symbol of the Uncreated Light … The Romans used the rays to symbolize the radiance around the head of Apollo-Helios. … The aureola or mandorla … are first known in the artistic representations of the Indian subcontinent … could be interrelated with the Sanskrit मण्डल, maṇḍala.",
+      "pasaj_konum": "PDF s. 11 (özet), s. 17–18 (bölüm 4)",
+      "belirsizlik_ifadeleri": ["It is highly probable that", "could be interrelated", "probably found their way", "The relationship of the Gandhara visuals with those of Byzantine icons has not so far been investigated in depth"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [
+        "IKO-002-K03 (Britannica): Batı→Doğu aktarım inancını aktarır",
+        "IKO-002-K04 (Ramsden 1941): ortak Pers/Zerdüşt kaynağı hipotezini savunur"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "DOGRULANDI statüsü görüşün Chumak'a aidiyetine ilişkindir; hipotez madde metninde sahibine atıfla ve ihtiyat ifadeleri korunarak yazıldı. Mandorla↔maṇḍala ilişkisi 'OLABİLİR' düzeyinde bırakıldı (OLGU gibi yazılmadı). Pasajdaki Sanskrit sözcük alıntı özgün biçiminde korunmuştur; Türkçe anlatı alanına taşınmadı."
+    },
+    {
+      "claim_id": "C010",
+      "iddia": "Budist paraleli: Halo, Hindistan'ın Budist sanatında da görülür ve MS 3. yy sonlarından itibaren belirir; Britannica motifin doğuya 'Yunan istilacılarla' getirildiğine inanıldığını yazar — bu yön iddiası K04/K05'in aktarım anlatılarıyla tartışmalıdır.",
+      "iddia_turu": "TARIH",
+      "kaynak_id": "IKO-002-K03",
+      "kaynak_baslik": "Encyclopaedia Britannica — Halo (art)",
+      "url": "https://www.britannica.com/art/halo-art",
+      "erisim": {
+        "durum": "WAYBACK_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "WAYBACK",
+        "arsiv_tarihi": "2026-10-12"
+      },
+      "pasaj": "The halo is also found in Buddhist art of India, appearing from the late 3rd century ce. It is believed that the motif was brought to the East by Greek invaders.",
+      "pasaj_konum": "Britannica 'Halo' gövde metni sonu",
+      "belirsizlik_ifadeleri": ["It is believed"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": ["IKO-002-K05"],
+      "celisen_kaynaklar": [
+        "IKO-002-K04 (Ramsden 1941) ve IKO-002-K05 (Chumak 2020): aktarım yönü/köken konusunda Britannica'nın aktardığı inançla çelişen anlatılar sunar"
+      ],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Paralelin VARLIĞI doğrudan desteklidir; yön iddiası ('Yunan istilacılarla') Britannica'nın aktardığı bir inançtır ve madde metninde tartışmalı olarak işaretlendi."
+    },
+    {
+      "claim_id": "C011",
+      "iddia": "Orta Çağ panel resminde halo altın yaldızla ve zımba/punç tekniğiyle işlenirdi: Wilton Diptych'te azizlerin haloları düz parlatılmış altındır; Meryem'in halosuna ışınlar kazınmıştır; İsa Çocuk'un halosuna çivi ve dikenli taç (arma Christi) zımbalanmıştır — 'daha alışıldık haç'ın yerine; YAŞAYAN kral II. Richard ise halosuz betimlenmiştir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-002-K06",
+      "kaynak_baslik": "National Gallery, Londra; Dillian Gordon — The Wilton Diptych (Online Entries, 2024)",
+      "url": "https://www.nationalgallery.org.uk/paintings/catalogues/national-gallery-2024/the-wilton-diptych",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "CANLI"
+      },
+      "pasaj": "his halo is stippled with emblems of his Passion: three nails and a crown of thorns … the punch has been used to create a crown of thorns and three nails (fig. 8), which replace the more customary cross … contrast with the plain burnished gold in the haloes of the three saints … Richard II … kneels on bare earth.",
+      "pasaj_konum": "NG katalog girdisi, teknik ve ikonografi bölümleri",
+      "belirsizlik_ifadeleri": ["may also be French in origin (motif kökeni için)"],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "Eser atfı ('English or French (?)') ve tarihi ('probably 1397 or 1398') müze kaydındaki ihtiyatla aynen taşındı. Yaşayan kralın halosuz betimlenmesi kayıtta 'halo atfı yok' biçiminde teyitlidir."
+    },
+    {
+      "claim_id": "C012",
+      "iddia": "Nimbus Budist Tibet resminde de standarttır: V&A'daki 1770–1800 Avalokiteşvara thangkapında merkezî figür ve üstteki altı figür 'double halo' ile betimlenir.",
+      "iddia_turu": "OLGU",
+      "kaynak_id": "IKO-002-K08",
+      "kaynak_baslik": "Victoria and Albert Museum — Collections API v2, kayıt 1479-1902 (O106459)",
+      "url": "https://api.vam.ac.uk/v2/museumobject/O106459",
+      "erisim": {
+        "durum": "ERISILDI_OKUNDU",
+        "tarih": "2026-11-15",
+        "http_kod": 200,
+        "yontem": "API"
+      },
+      "pasaj": "Behind are radiating hands with eyes, a double halo … Above seated upon lotus pedestals and supported on clouds are six smaller figures, also with double halos.",
+      "pasaj_konum": "API physicalDescription alanı",
+      "belirsizlik_ifadeleri": [],
+      "destek_duzeyi": "DOGRUDAN_DESTEK",
+      "ikincil_kaynak_ids": [],
+      "celisen_kaynaklar": [],
+      "dogrulama_sonucu": "DOGRULANDI",
+      "notlar": "IKO-001 (lotus) maddesiyle ortak örnek: aynı kayıtta lotus kaideleri de belgelenir — kategori içi çapraz bağ bu esere dayanır."
+    }
+  ]
+}
