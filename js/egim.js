@@ -208,6 +208,13 @@ export function egimBaslat(el, acik, degisince = null) {
   });
 }
 
+// İş 181: Bugün yürüyüşünde resmi kamera taşır (js/yuruyus.js); CSS'teki dönüş/kayma resme uygulanamaz. Kamera her
+// karede eğimi buradan okur ve resmi kendisi kaydırıp hafifçe döndürür. Eğim dinlenmiyorsa null.
+export function egimDegeri() {
+  if (!kok || !kok.isConnected || !dis(kok) || !dis(kok).classList.contains('egimli')) return null;
+  return { x: anlik.x, y: anlik.y };
+}
+
 export function egimDurdur() {
   window.removeEventListener('devicemotion', hareket);
   window.removeEventListener('deviceorientation', yon);
