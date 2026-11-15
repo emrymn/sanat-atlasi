@@ -2284,6 +2284,12 @@ uzun kenar ≥ max(1,25 × elimizdeki, 1600). Adaylar elimizdekiyle yan yana gö
   fotoğrafları (Boucher · Sarışın Odalık, Rosso, Lorenzetti); filigranlı müze fotoğrafı (Artemisia); başka versiyon olabilecekler (Holman
   Hunt adayı eşleşmedi, Cézanne adayı Orsay versiyonu, bizimki değil); Marc'ın kayıp tablosunun yalnız eskizleri var. Puvis · Tatlı Manzara'nın
   en büyük dosyası 1024 px (1600 eşiğinin altında). Preti, Cranach, Ziyaret, Baldung, van Dyck, Metsys, Kauffman: aday yok.
+- **Düzeltme (Emre: "emin misin bak"):** `b_yenile.py` 1280'liği yalnız küçükse (< 1216 px) yeniliyordu; Caravaggio ve Michelino'nun
+  1280'liği büyük olduğundan eski kadrajda kalacaktı (görüntüleyici önce onu, sonra yeni en büyük kopyayı gösterir: tablo kayar, noktalar
+  ilkinde yanlış yerde durur; Michelino'da oran %5 değişiyor). Artık `gorsel_iyilestirme.json`'daki görsellerde 1280'liğin oranı en büyük
+  kopyadan binde 3'ten çok farklıysa da yeniden üretilir (sahte dosyalarla denendi). İlk çalıştırmada daha önceki iyileştirmelerden oranı
+  değişmiş olanların 1280'likleri de yenilenebilir (yeni adla yüklenir; zararsız). 400 px ızgara kopyaları (`gorseller/k`, depoda) ve
+  `gorsel_oranlari.json` eski kadrajda kalır: ızgarada fark yalnız kenarda, birkaç yüzde.
 - **Mac'te sıra:** `caffeinate -i python3 scripts/devasa_indir.py` → `python3 scripts/b_yenile.py` → `python3 scripts/r2_yukle.py --10gb-ustu`
   → `python3 scripts/ayrinti/yardimci/koordinat_uygula.py` → `python3 scripts/ayrinti/denetle.py` → gönder (gorsel_kaynagi, b_yenilenen,
   eser_ayrintilari, bekleyen_koordinatlar).
