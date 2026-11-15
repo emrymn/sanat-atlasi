@@ -508,3 +508,10 @@ Emre: "devam et hepsini bitir". Tur 6'nın planındaki üç parti tek turda yap�
   Simone Martini 844, Fra Angelico · Müjde 955, Pietro Lorenzetti 1021, Preti 1099, Boucher · Sarışın Odalık 1100, Rosso 1140, Salviati 1200,
   Holman Hunt 1224 (genişlik 600). Daha büyük Commons dosyası aranıp görsel değiştirilirse noktalar yeniden doğrulanmalı.
 
+# Tur 9 · Zayıf görseller (İş 178)
+
+- 4 başyapıtın görseli daha büyük Commons dosyasına geçecek (Caravaggio · Matta, Simone Martini · Müjde, Fra Angelico · Müjde, Domenico di
+  Michelino · Dante). Noktaların yeni kadraja göre dönüştürülmüş hâli `bekleyen_koordinatlar.json`'da; görsel R2'de yenilenince
+  `yardimci/koordinat_uygula.py` yazar. **Bir model bu dosyayı elle uygulamamalı:** görsel yenilenmeden uygulanırsa noktalar kayar.
+- Aday bulunamayan ya da reddedilen zayıf görseller ve nedenleri KARARLAR İş 178'de.
+

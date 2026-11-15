@@ -2269,3 +2269,22 @@ Emre: Sembolizm dörtlüsündeki Puvis eseri (Tatlı Manzara) kötü görünüyo
   hayvanın yılan değil **kertenkele** olduğu, arka planın deniz değil kayalık bir ova olduğu görüldü; metin buna göre yazıldı.
 - Tatlı Manzara'nın başyapıt kaydı ve noktaları yerinde kaldı (Başyapıtlar listesinde görünmeye devam eder). Toplam 154 başyapıt, 875 nokta.
 
+### İş 178 · Zayıf başyapıt görselleri için daha büyük dosyalar (veri; yükleme Mac'te)
+
+Emre: "yap hepsini" (başyapıtlarda görseli 1700 px'in altında kalanlar). 21 zayıf görsel için Commons'ta aynı eserin daha büyük
+dosyası arandı: Wikidata kaydı (P18, P373 kategorisi), "digital representation of" (P6243) ve metin araması; oran farkı ≤ %6,
+uzun kenar ≥ max(1,25 × elimizdeki, 1600). Adaylar elimizdekiyle yan yana gözle karşılaştırıldı, kadraj SIFT eşleştirmesiyle ölçüldü.
+
+- **Alınanlar (4):** Caravaggio · Matta'nın Çağrılışı (1280 → 8792 px), Simone Martini · Müjde (844 → 10416), Fra Angelico · San Marco
+  Müjdesi (955 → 8646), Domenico di Michelino · Dante (1280 → 5477). `data/gorsel_iyilestirme.json`'a eklendi (İş 84 boru hattı).
+- **Noktalar:** yeni fotoğrafların kadrajı biraz farklı (Simone Martini'de kenar boşlukları %4–7). Noktalar adayın Commons'taki küçük hâline
+  dönüştürülüp kırpıntıyla doğrulandı ve `scripts/ayrinti/bekleyen_koordinatlar.json`'da bekletiliyor; görsel R2'de yenilenince
+  `scripts/ayrinti/yardimci/koordinat_uygula.py` yazar (görsel yenilenmeden noktalar değişmez, yanlış yere kaymaz).
+- **Alınmayanlar:** Emre'nin daha önce reddettiği dosyalar (Salviati'nin Louvre dosyası, Poussin'in Lyon dosyası); çerçeveli ya da salon
+  fotoğrafları (Boucher · Sarışın Odalık, Rosso, Lorenzetti); filigranlı müze fotoğrafı (Artemisia); başka versiyon olabilecekler (Holman
+  Hunt adayı eşleşmedi, Cézanne adayı Orsay versiyonu, bizimki değil); Marc'ın kayıp tablosunun yalnız eskizleri var. Puvis · Tatlı Manzara'nın
+  en büyük dosyası 1024 px (1600 eşiğinin altında). Preti, Cranach, Ziyaret, Baldung, van Dyck, Metsys, Kauffman: aday yok.
+- **Mac'te sıra:** `caffeinate -i python3 scripts/devasa_indir.py` → `python3 scripts/b_yenile.py` → `python3 scripts/r2_yukle.py --10gb-ustu`
+  → `python3 scripts/ayrinti/yardimci/koordinat_uygula.py` → `python3 scripts/ayrinti/denetle.py` → gönder (gorsel_kaynagi, b_yenilenen,
+  eser_ayrintilari, bekleyen_koordinatlar).
+
