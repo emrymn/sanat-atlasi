@@ -1,0 +1,100 @@
+{
+ "aciklama": "Akım sayfalarındaki \"En bilinen eserler\" dörtlüsünden data/basyapitlar.json'da yakın okuması olmayanlar (bütün konular açık). scripts/ayrinti/yardimci/akim_secim.mjs üretir.",
+ "olusturma": "2026-11-15",
+ "dortlu_toplam": 96,
+ "basyapitta_olan": 89,
+ "eserler": [],
+ "yerel_gorseli_olmayan": [
+  {
+   "anahtar": "Q977200",
+   "sanatci": "masaccio",
+   "akim": "Erken Rönesans",
+   "sira": 4,
+   "baslik": "Trinity with Donors",
+   "ad": "Bağışçılarla Teslis",
+   "yil": 1420,
+   "muze": "Santa Maria Novella, Floransa",
+   "sl": 20,
+   "gorsel": null,
+   "devasa": false
+  },
+  {
+   "anahtar": "Q20816340",
+   "sanatci": "marcel-duchamp",
+   "akim": "Dada",
+   "sira": 1,
+   "baslik": "Chocolate Grinder (No. 1)",
+   "ad": "Çikolata Öğütücü (No. 1)",
+   "yil": 1913,
+   "muze": "Philadelphia Museum of Art",
+   "sl": 2,
+   "gorsel": null,
+   "devasa": false
+  },
+  {
+   "anahtar": "jean-arp|Abstract Composition",
+   "sanatci": "jean-arp",
+   "akim": "Dada",
+   "sira": 3,
+   "baslik": "Abstract Composition",
+   "ad": "Soyut Kompozisyon",
+   "yil": 1915,
+   "muze": "",
+   "sl": 0,
+   "gorsel": null,
+   "devasa": false
+  },
+  {
+   "anahtar": "Q167536",
+   "sanatci": "salvador-dali",
+   "akim": "Sürrealizm",
+   "sira": 2,
+   "baslik": "The Great Masturbator",
+   "ad": "Büyük Mastürbatör (The Great Masturbator)",
+   "yil": 1929,
+   "muze": "Museo Nacional Centro de Arte Reina Sofía",
+   "sl": 18,
+   "gorsel": null,
+   "devasa": false
+  },
+  {
+   "anahtar": "Q20100734",
+   "sanatci": "joan-miro",
+   "akim": "Sürrealizm",
+   "sira": 3,
+   "baslik": "Mural for IBM",
+   "ad": "IBM İçin Duvar Resmi",
+   "yil": 1978,
+   "muze": "Museu Nacional d'Art de Catalunya",
+   "sl": 1,
+   "gorsel": null,
+   "devasa": false
+  },
+  {
+   "anahtar": "max-ernst|The Elephant Celebes",
+   "sanatci": "max-ernst",
+   "akim": "Sürrealizm",
+   "sira": 4,
+   "baslik": "The Elephant Celebes",
+   "ad": "Celebes Fili (The Elephant Celebes)",
+   "yil": 1921,
+   "muze": "",
+   "sl": 0,
+   "gorsel": null,
+   "devasa": false
+  },
+  {
+   "anahtar": "francis-bacon|Three Studies for a Crucifixion",
+   "sanatci": "francis-bacon",
+   "akim": "Savaş sonrası figürasyon",
+   "sira": 1,
+   "baslik": "Three Studies for a Crucifixion",
+   "ad": "Çarmıha Geriliş İçin Üç Çalışma",
+   "yil": 1962,
+   "muze": "",
+   "sl": 0,
+   "gorsel": null,
+   "devasa": false
+  }
+ ]
+}

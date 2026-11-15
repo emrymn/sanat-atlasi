@@ -2225,3 +2225,72 @@ Emre tuvalde (Design) üç şey istedi ve onayladı ("tam istediğim gibi oldu, 
 - **Galeri:** tasarım aynı; "Bütün akımlar" dizini kapalı gelir, başlığın sağındaki **Tümünü gör** ile yerinde açılır ("Gizle" ile kapanır). Seçim oturum boyunca hatırlanır (Galeri'ye geri dönünce aynı hâlde). "zaman sırasıyla" yazısı düğmeye yer açmak için kalktı.
 - **Akım sayfası:** açılışta dönemin en bilinen eseri (akım kimliğindeki `enBilinenEserler` sıralamasının ilki; yalnız açık sanatçılardan) kenardan kenara durur; yüzyıl etiketi ve başlık resmin altına oturur, geri düğmesi resmin üstünde. Palet şeridi 8 px'e indi; altında "Arkadaki eser: …" künyesi (dokununca görüntüleyicide açılır). Açık sanatçısı ya da görseli olmayan akımda sahne çizilmez, sayfa eskisi gibi. Sahne her temada koyu (görüntüleyici gibi).
 - **Hareket:** hepsi `data-hareket` (Sade: bir kez oynar; Kapalı: durur) ve `prefers-reduced-motion` kurallarına uyar.
+
+### İş 175 · Akım dörtlüsü için yakın okumalar, Parti A (sürüm 1.81.1)
+
+Emre: akım sayfalarındaki "En bilinen eserler" dörtlüsünü 107 başyapıtla aynı düzeye getir; bu turda Gotik → Maniyerizm.
+
+- **Seçim betiği:** `scripts/ayrinti/yardimci/akim_secim.mjs` uygulamanın kendi `enBilinenEserler`'ini ve eser boru hattını bütün konular
+  açık sayarak çalıştırır; başyapıtta olmayanları `scripts/ayrinti/akim_secim.json`'a yazar (anahtar, sanatçı, akım, yerel görsel adı,
+  4096 var mı; yerel görseli olmayanlar ayrı listede). Eşleşme `eserEslestir` gibi QID ya da `sanatçı|başlık` (Bosch'un Zevk Bahçesi
+  kopya birleşmesi yüzünden başlıkla eşleşir). İlk ölçüm: 96 eserin 43'ü başyapıttaydı; 46 yerel görselli, 7 görselsiz eksik.
+- **9 yeni başyapıt** (Limbourg · Çok Zengin Saatler'in zodyak insanı yaprağı, Giotto · Ognissanti Madonnası, Botticelli · Venüs'ün Doğuşu,
+  Piero · Kırbaçlanma, Dürer · Gergedan, Mona Lisa, Giorgione · Uyuyan Venüs, Bellini · Tanrıların Şöleni, Giulio Romano · Ziyaret):
+  İş 8 biçiminde yakın okuma (özet, dört bölüm 255–281 kelime, 3 "Yakından bak") ve İş 151 biçiminde 5–6 rehberli inceleme noktası
+  (53 nokta). Toplam 116 başyapıt, 672 nokta. Metinler görsele bakılarak yazıldı, yazıtlar 4096'dan okundu, ayrı bir geçişte denetlendi.
+  İki aşamalı doğrulamada 12 kutu düzeltildi. Ayrıntılar, emin olunmayanlar ve kalan üç parti `scripts/ayrinti/DEVIR.md` "Tur 6"da.
+- **Künye:** önbellekten. Tek bilinçli sapma Dürer: önbellekte 1512 (Wikidata), baskıda okunan ve gerçek tarih 1515 yazıldı.
+  Bellini'nin müzesi önbellekte olmadığı için boş. Ziyaret önbellekteki gibi Giulio Romano'ya bağlı; görseldeki "RAPHAEL VRBINAS F"
+  yazısı metinde anılır ("Raffaello atölyesinde, büyük ölçüde Giulio Romano'nun elinden çıktığı düşünülür").
+- Uygulama kodu değişmedi (sanatçı sayfası birden çok yakın okumayı zaten listeliyor). Yalnız veri, betik, DEVIR/DURUM, README
+  satırları ve yama sürümü; Yenilikler listesine girmedi. Birim 369/369; `ayrinti` ve `paket8` uçtan uca 13/14 (düşen K4 `--sal`
+  testi 1.80.0 notundaki gibi main'de de düşüyor).
+
+### İş 176 · Akım dörtlüsü, Parti B + C + D: 37 yakın okuma daha (sürüm 1.81.2)
+
+Emre: "devam et hepsini bitir". İş 175'in kalan üç partisi (İtalyan Barok → Dada) tek turda yapıldı.
+
+- 37 yeni başyapıt (Barok 16, Rokoko → Realizm 9, Empresyonizm → Dada 12), İş 8 biçiminde yakın okuma (dört bölüm 250–264 kelime,
+  3 "Yakından bak") ve İş 151 biçiminde 4–6 nokta (197 nokta). Toplam **153 başyapıt, 869 nokta**. Akım dörtlüsünde yerel görselli
+  eksik kalmadı (96'nın 89'u başyapıt; 7'sinin yerel görseli yok).
+- Yaprak/nüsha durumları açıkça yazıldı: Hiroshige kaydının görseli Hara yaprağı; Hokusai görseli Chicago nüshası; Marc'ın tablosu kayıp
+  (eski reprodüksiyon). Künye sapması tek: Artemisia'nın Napoli versiyonu için `tarih` 1612–1613 (önbellekteki kurs notu Uffizi versiyonuna ait).
+- Doğrulamada 12 kutu düzeltildi (Gece Devriyesi'nde yanlış tanınan "bayraktar" ve Seurat'da maymun yerine köpeği gösteren kutu dahil).
+  Ayrıntılar ve emin olunmayanlar `scripts/ayrinti/DEVIR.md` "Tur 7"de.
+
+### İş 177 · Akım dörtlüsünde elle seçim: Puvis için Çölde Mecdelli Meryem (sürüm 1.81.3)
+
+Emre: Sembolizm dörtlüsündeki Puvis eseri (Tatlı Manzara) kötü görünüyor; görseli 500 px. Yerine Çölde Mecdelli Meryem'i istedi.
+
+- **`js/akim.js` · `DORTLU_SECIMI`:** sanatçı id → dörtlüde gösterilecek eserin anahtarı (QID ya da `sanatçıId|başlık`). Sanatçının
+  dörtlüdeki sırası yine en bilinen eserinin sl'sine göre hesaplanır (Puvis yerini korur); yalnız gösterilen eser değişir. Seçilen eser
+  bulunamazsa (görseli düşmüş, temsil dışı) eski davranış. `enBilinenEserler`'e üçüncü parametre olarak verilebilir; birim testi eklendi.
+- **Q19820268 Çölde Mecdelli Meryem** (Städel, 1870; görsel 1726×2553): yakın okuma (260 kelime) ve 6 nokta. Kırpıntıda sol alttaki
+  hayvanın yılan değil **kertenkele** olduğu, arka planın deniz değil kayalık bir ova olduğu görüldü; metin buna göre yazıldı.
+- Tatlı Manzara'nın başyapıt kaydı ve noktaları yerinde kaldı (Başyapıtlar listesinde görünmeye devam eder). Toplam 154 başyapıt, 875 nokta.
+
+### İş 178 · Zayıf başyapıt görselleri için daha büyük dosyalar (veri; yükleme Mac'te)
+
+Emre: "yap hepsini" (başyapıtlarda görseli 1700 px'in altında kalanlar). 21 zayıf görsel için Commons'ta aynı eserin daha büyük
+dosyası arandı: Wikidata kaydı (P18, P373 kategorisi), "digital representation of" (P6243) ve metin araması; oran farkı ≤ %6,
+uzun kenar ≥ max(1,25 × elimizdeki, 1600). Adaylar elimizdekiyle yan yana gözle karşılaştırıldı, kadraj SIFT eşleştirmesiyle ölçüldü.
+
+- **Alınanlar (4):** Caravaggio · Matta'nın Çağrılışı (1280 → 8792 px), Simone Martini · Müjde (844 → 10416), Fra Angelico · San Marco
+  Müjdesi (955 → 8646), Domenico di Michelino · Dante (1280 → 5477). `data/gorsel_iyilestirme.json`'a eklendi (İş 84 boru hattı).
+- **Noktalar:** yeni fotoğrafların kadrajı biraz farklı (Simone Martini'de kenar boşlukları %4–7). Noktalar adayın Commons'taki küçük hâline
+  dönüştürülüp kırpıntıyla doğrulandı ve `scripts/ayrinti/bekleyen_koordinatlar.json`'da bekletiliyor; görsel R2'de yenilenince
+  `scripts/ayrinti/yardimci/koordinat_uygula.py` yazar (görsel yenilenmeden noktalar değişmez, yanlış yere kaymaz).
+- **Alınmayanlar:** Emre'nin daha önce reddettiği dosyalar (Salviati'nin Louvre dosyası, Poussin'in Lyon dosyası); çerçeveli ya da salon
+  fotoğrafları (Boucher · Sarışın Odalık, Rosso, Lorenzetti); filigranlı müze fotoğrafı (Artemisia); başka versiyon olabilecekler (Holman
+  Hunt adayı eşleşmedi, Cézanne adayı Orsay versiyonu, bizimki değil); Marc'ın kayıp tablosunun yalnız eskizleri var. Puvis · Tatlı Manzara'nın
+  en büyük dosyası 1024 px (1600 eşiğinin altında). Preti, Cranach, Ziyaret, Baldung, van Dyck, Metsys, Kauffman: aday yok.
+- **Düzeltme (Emre: "emin misin bak"):** `b_yenile.py` 1280'liği yalnız küçükse (< 1216 px) yeniliyordu; Caravaggio ve Michelino'nun
+  1280'liği büyük olduğundan eski kadrajda kalacaktı (görüntüleyici önce onu, sonra yeni en büyük kopyayı gösterir: tablo kayar, noktalar
+  ilkinde yanlış yerde durur; Michelino'da oran %5 değişiyor). Artık `gorsel_iyilestirme.json`'daki görsellerde 1280'liğin oranı en büyük
+  kopyadan binde 3'ten çok farklıysa da yeniden üretilir (sahte dosyalarla denendi). İlk çalıştırmada daha önceki iyileştirmelerden oranı
+  değişmiş olanların 1280'likleri de yenilenebilir (yeni adla yüklenir; zararsız). 400 px ızgara kopyaları (`gorseller/k`, depoda) ve
+  `gorsel_oranlari.json` eski kadrajda kalır: ızgarada fark yalnız kenarda, birkaç yüzde.
+- **Mac'te sıra:** `caffeinate -i python3 scripts/devasa_indir.py` → `python3 scripts/b_yenile.py` → `python3 scripts/r2_yukle.py --10gb-ustu`
+  → `python3 scripts/ayrinti/yardimci/koordinat_uygula.py` → `python3 scripts/ayrinti/denetle.py` → gönder (gorsel_kaynagi, b_yenilenen,
+  eser_ayrintilari, bekleyen_koordinatlar).
+

@@ -1,12 +1,12 @@
 # Rehberli inceleme · durum
 
-Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenleme.
+Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-15). Elle düzenleme.
 
-**Toplam: 107 / 107 başyapıt bitti (619 nokta; eser başına ortalama 5.8).** Kalan: 0.
+**Toplam: 154 / 154 başyapıt bitti (875 nokta; eser başına ortalama 5.7).** Kalan: 0.
 
 ## Akım akım
 
-### Gotik · 6 / 6
+### Gotik · 7 / 7
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
@@ -16,15 +16,17 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenle
 | Meryem'in Doğumu | Pietro Lorenzetti | ✓ 6 nokta |
 | Aziz Maxima ve Aziz Ansanus ile Müjde (Triptik) | Simone Martini | ✓ 6 nokta |
 | Ağıt | Giotto di Bondone | ✓ 6 nokta |
+| Ognissanti Madonnası (Tahtta Meryem) | Giotto di Bondone | ✓ 5 nokta |
 
-### Uluslararası Gotik · 2 / 2
+### Uluslararası Gotik · 3 / 3
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Şubat | Limbourg kardeşler | ✓ 6 nokta |
+| Berry Dükü'nün Çok Zengin Saatleri: Zodyak İnsanı | Limbourg kardeşler | ✓ 6 nokta |
 | Müneccimlerin Tapınması | Gentile da Fabriano | ✓ 6 nokta |
 
-### Erken Rönesans · 5 / 5
+### Erken Rönesans · 7 / 7
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
@@ -33,12 +35,15 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenle
 | Ölü İsa (Cristo morto) | Andrea Mantegna | ✓ 6 nokta |
 | Meryem'e Müjde | Fra Angelico | ✓ 6 nokta |
 | İsa'nın Anahtarları Petrus'a Vermesi | Pietro Perugino | ✓ 5 nokta |
+| Venüs'ün Doğuşu | Sandro Botticelli | ✓ 6 nokta |
+| İsa'nın Kırbaçlanması | Piero della Francesca | ✓ 6 nokta |
 
-### Kuzey Rönesansı · 10 / 10
+### Kuzey Rönesansı · 11 / 11
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Şövalye, Ölüm ve Şeytan | Albrecht Dürer | ✓ 6 nokta |
+| Gergedan | Albrecht Dürer | ✓ 6 nokta |
 | Mérode Triptiği | Robert Campin | ✓ 6 nokta |
 | Arnolfini Portresi (Arnolfini Portrait) | Jan van Eyck | ✓ 6 nokta |
 | Genç Bir Kızın Portresi | Petrus Christus | ✓ 5 nokta |
@@ -49,26 +54,29 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenle
 | Dünyevi Zevkler Bahçesi (The Garden of Earthly Delights) | Hieronymus Bosch | ✓ 6 nokta |
 | Karda Avcılar | Pieter Bruegel (Yaşlı) | ✓ 6 nokta |
 
-### Yüksek Rönesans · 6 / 6
+### Yüksek Rönesans · 7 / 7
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Son Akşam Yemeği | Leonardo da Vinci | ✓ 6 nokta |
+| Mona Lisa | Leonardo da Vinci | ✓ 6 nokta |
 | Âdem'in Yaratılışı | Michelangelo | ✓ 5 nokta |
 | Sütundaki İsa | Donato Bramante | ✓ 6 nokta |
 | Atina Okulu (La scuola di Atene) | Raphael | ✓ 6 nokta |
 | Jüpiter ve Io | Correggio | ✓ 6 nokta |
 | Paris'in Hükmü | Marcantonio Raimondi | ✓ 6 nokta |
 
-### Venedik Rönesansı · 3 / 3
+### Venedik Rönesansı · 5 / 5
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Urbino Venüsü (Venus of Urbino) | Titian | ✓ 6 nokta |
 | Son Akşam Yemeği | Tintoretto | ✓ 6 nokta |
 | Kana'da Düğün | Paolo Veronese | ✓ 6 nokta |
+| Uyuyan Venüs | Giorgione | ✓ 6 nokta |
+| Tanrıların Şöleni | Giovanni Bellini | ✓ 6 nokta |
 
-### Maniyerizm · 9 / 9
+### Maniyerizm · 10 / 10
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
@@ -81,73 +89,94 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenle
 | Orgaz Kontu'nun Gömülmesi (El entierro del conde de Orgaz) | El Greco | ✓ 6 nokta |
 | Musa, Yitro'nun Kızlarını Savunurken | Rosso Fiorentino | ✓ 6 nokta |
 | Aşk Sahnesi | Giulio Romano | ✓ 6 nokta |
+| Meryem'in Elizabet'i Ziyareti | Giulio Romano | ✓ 6 nokta |
 
-### İtalyan Barok ve Caravaggizm · 5 / 5
+### İtalyan Barok ve Caravaggizm · 9 / 9
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Farnese Tavanı – Tanrıların Aşkları: Bakkhus ve Ariadne'nin Zaferi | Annibale Carracci | ✓ 6 nokta |
 | Emmaus'ta Akşam Yemeği | Caravaggio | ✓ 6 nokta |
+| Aziz Matta'nın Çağrılışı | Caravaggio | ✓ 5 nokta |
 | Pezevenk Kadın | Dirck van Baburen | ✓ 6 nokta |
 | Holofernes'in Kafasını Kesen Judith | Artemisia Gentileschi | ✓ 6 nokta |
+| Holofernes'i Öldüren Judith (Napoli) | Artemisia Gentileschi | ✓ 5 nokta |
 | Lavta Çalan | Orazio Gentileschi | ✓ 6 nokta |
+| Yakup'un Rüyası | Jusepe de Ribera | ✓ 5 nokta |
+| Aracı Kadın | Gerrit van Honthorst | ✓ 5 nokta |
 
-### İspanyol Barok · 2 / 2
+### İspanyol Barok · 3 / 3
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Papa X. Innocentius'un Portresi | Diego Velázquez | ✓ 6 nokta |
+| Nedimeler (Las Meninas) | Diego Velázquez | ✓ 5 nokta |
 | Tanrı'nın Kuzusu (Agnus Dei) | Francisco de Zurbarán | ✓ 4 nokta |
 
-### Flaman Barok · 2 / 2
+### Flaman Barok · 3 / 3
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Çarmıhın Dikilişi | Peter Paul Rubens | ✓ 6 nokta |
 | I. Charles'ın Üç Pozisyonda Portresi | Anthony van Dyck | ✓ 6 nokta |
+| Eros ve Psykhe | Anthony van Dyck | ✓ 5 nokta |
 
-### Hollanda Altın Çağı · 3 / 3
+### Hollanda Altın Çağı · 7 / 7
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Müsrif Oğulun Dönüşü | Rembrandt van Rijn | ✓ 6 nokta |
+| Gece Devriyesi | Rembrandt van Rijn | ✓ 5 nokta |
 | Süt Boşaltan Kadın | Johannes Vermeer | ✓ 6 nokta |
+| İnci Küpeli Kız | Johannes Vermeer | ✓ 5 nokta |
 | Aziz Nicholas Yortusu | Jan Steen | ✓ 6 nokta |
+| Neşeli İçici | Frans Hals | ✓ 6 nokta |
+| Wijk bij Duurstede'deki Yel Değirmeni | Jacob van Ruisdael | ✓ 5 nokta |
 
-### Fransız Klasisizmi · 4 / 4
+### Fransız Klasisizmi · 6 / 6
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | XIV. Louis'nin Portresi | Hyacinthe Rigaud | ✓ 6 nokta |
 | İskender'in Babil'e Girişi | Charles Le Brun | ✓ 6 nokta |
 | Arkadya'da Ben de Varım (Et in Arcadia ego) | Nicolas Poussin | ✓ 5 nokta |
+| Mısır'a Kaçış | Nicolas Poussin | ✓ 5 nokta |
 | Saba Melikesi'nin Gemiye Binişi | Claude Lorrain | ✓ 6 nokta |
+| Aziz Ursula'nın Gemiye Binişi ile Liman Manzarası | Claude Lorrain | ✓ 6 nokta |
 
-### Geç İtalyan Barok · 1 / 1
+### Geç İtalyan Barok · 5 / 5
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Banyosunda Batşeba | Sebastiano Ricci | ✓ 6 nokta |
+| Talih Alegorisi | Salvator Rosa | ✓ 5 nokta |
+| Aziz Sebastian | Mattia Preti | ✓ 5 nokta |
+| Meryem'in Evliliği | Luca Giordano | ✓ 5 nokta |
+| Diana ve Endymion | Francesco Solimena | ✓ 6 nokta |
 
-### Rokoko · 7 / 7
+### Rokoko · 9 / 9
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Kythera Adası'na Yolculuk (Pèlerinage à l'île de Cythère) | Jean-Antoine Watteau | ✓ 6 nokta |
 | Sarışın Odalık (Louise O'Murphy) | François Boucher | ✓ 5 nokta |
+| Banyodan Çıkan Diana | François Boucher | ✓ 6 nokta |
 | Salıncak (L'Escarpolette) | Jean-Honoré Fragonard | ✓ 6 nokta |
 | Kleopatra'nın Ziyafeti | Giovanni Battista Tiepolo | ✓ 6 nokta |
 | Vatoz | Jean-Baptiste-Siméon Chardin | ✓ 6 nokta |
 | Kırık Testi | Jean-Baptiste Greuze | ✓ 6 nokta |
 | Cin Sokağı | William Hogarth | ✓ 6 nokta |
+| Mavi Çocuk | Thomas Gainsborough | ✓ 6 nokta |
 
-### Neoklasisizm · 4 / 4
+### Neoklasisizm · 6 / 6
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | General Wolfe'un Ölümü | Benjamin West | ✓ 6 nokta |
 | Gracchusların Annesi Kornelia | Angelica Kauffman | ✓ 6 nokta |
+| Theseus Tarafından Terk Edilen Ariadne | Angelica Kauffman | ✓ 5 nokta |
 | Horas Kardeşlerin Yemini (Le Serment des Horaces) | Jacques-Louis David | ✓ 6 nokta |
+| Sokrates'in Ölümü | Jacques-Louis David | ✓ 6 nokta |
 | Marie Antoinette ve Çocukları | Élisabeth Vigée Le Brun | ✓ 6 nokta |
 
 ### Romantizm · 8 / 8
@@ -163,61 +192,76 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenle
 | Medusa'nın Salı (Le Radeau de la Méduse) | Théodore Géricault | ✓ 6 nokta |
 | Köle Gemisi (The Slave Ship) | J. M. W. Turner | ✓ 5 nokta |
 
-### Prerafaelitler · 1 / 1
+### Prerafaelitler · 3 / 3
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Ophelia | John Everett Millais | ✓ 6 nokta |
+| Dünyanın Işığı | William Holman Hunt | ✓ 6 nokta |
+| Proserpina | Dante Gabriel Rossetti | ✓ 6 nokta |
 
-### Akademizm ve Oryantalizm · 3 / 3
+### Akademizm ve Oryantalizm · 4 / 4
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Büyük Odalık (La Grande Odalisque) | Jean-Auguste-Dominique Ingres | ✓ 6 nokta |
 | Köle Pazarı | Jean-Léon Gérôme | ✓ 6 nokta |
 | Venüs'ün Doğuşu | William-Adolphe Bouguereau | ✓ 6 nokta |
+| Venüs'ün Doğuşu (Cabanel) | Alexandre Cabanel | ✓ 6 nokta |
 
-### Barbizon ve Realizm · 3 / 3
+### Barbizon ve Realizm · 5 / 5
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Üçüncü Mevki Vagon | Honoré Daumier | ✓ 6 nokta |
 | Ornans'ta Cenaze | Gustave Courbet | ✓ 6 nokta |
+| Dünyanın Kökeni (L'Origine du monde) | Gustave Courbet | ✓ 4 nokta |
 | Başak Toplayanlar (Des glaneuses) | Jean-François Millet | ✓ 6 nokta |
+| Narni Köprüsü | Camille Corot | ✓ 6 nokta |
 
-### Empresyonizm · 6 / 6
+### Empresyonizm · 9 / 9
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Paris Sokağı, Yağmurlu Hava (Rue de Paris, temps de pluie) | Gustave Caillebotte | ✓ 6 nokta |
 | Folies-Bergère'de Bir Bar (Un Bar aux Folies-Bergère) | Édouard Manet | ✓ 6 nokta |
+| Çimenler Üzerinde Öğle Yemeği (Le Déjeuner sur l'herbe) | Édouard Manet | ✓ 5 nokta |
 | Bale Dersi | Edgar Degas | ✓ 6 nokta |
+| Absent İçenler (L'Absinthe) | Edgar Degas | ✓ 5 nokta |
 | Mavi Koltukta Küçük Kız | Mary Cassatt | ✓ 6 nokta |
 | Beşik | Berthe Morisot | ✓ 5 nokta |
 | İzlenim, Gün Doğumu (Impression, soleil levant) | Claude Monet | ✓ 6 nokta |
+| Moulin de la Galette'de Balo (Bal du moulin de la Galette) | Pierre-Auguste Renoir | ✓ 5 nokta |
 
-### Ukiyo-e (Japon baskısı) · 2 / 2
+### Ukiyo-e (Japon baskısı) · 4 / 4
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Shin-Ōhashi Köprüsü ve Atake'de Ani Sağanak | Utagawa Hiroshige | ✓ 6 nokta |
+| Tōkaidō'nun Elli Üç Durağı: Hara, Sabah Fuji'si | Utagawa Hiroshige | ✓ 6 nokta |
 | Fuji Dağı'nın 36 Manzarası | Katsushika Hokusai | ✓ 5 nokta |
+| Kanagawa Açıklarında Büyük Dalga (Kanagawa oki nami ura) | Katsushika Hokusai | ✓ 5 nokta |
 
-### Post-Empresyonizm · 5 / 5
+### Post-Empresyonizm · 6 / 6
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Kâğıt Oynayanlar (Les Joueurs de cartes) | Paul Cézanne | ✓ 5 nokta |
 | Asnières'de Yıkananlar | Georges Seurat | ✓ 6 nokta |
+| Grande Jatte Adası'nda Bir Pazar Öğleden Sonrası | Georges Seurat | ✓ 6 nokta |
 | Yıldızlı Gece | Vincent van Gogh | ✓ 6 nokta |
 | Moulin Rouge: La Goulue | Henri de Toulouse-Lautrec | ✓ 6 nokta |
 | Nereden Geliyoruz? Neyiz? Nereye Gidiyoruz? | Paul Gauguin | ✓ 6 nokta |
 
-### Sembolizm · 1 / 1
+### Sembolizm · 5 / 5
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Kiklop | Odilon Redon | ✓ 5 nokta |
+| Ölüler Adası | Arnold Böcklin | ✓ 5 nokta |
+| Oidipus ile Sfenks | Gustave Moreau | ✓ 6 nokta |
+| Tatlı Manzara (Doux pays) | Pierre Puvis de Chavannes | ✓ 5 nokta |
+| Çölde Mecdelli Meryem | Pierre Puvis de Chavannes | ✓ 6 nokta |
 
 ### Art Nouveau ve Viyana Secession · 1 / 1
 
@@ -225,13 +269,14 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenle
 |---|---|---|
 | Öpücük (Der Kuss) | Gustav Klimt | ✓ 6 nokta |
 
-### Ekspresyonizm · 3 / 3
+### Ekspresyonizm · 4 / 4
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Çığlık (The Scream) | Edvard Munch | ✓ 5 nokta |
 | Berlin Sokak Sahnesi | Ernst Ludwig Kirchner | ✓ 6 nokta |
 | Kompozisyon VII | Wassily Kandinsky | ✓ 5 nokta |
+| Mavi Atlar Kulesi (Der Turm der blauen Pferde) | Franz Marc | ✓ 5 nokta |
 
 ### Kübizm · 1 / 1
 
@@ -239,11 +284,13 @@ Bu dosyayı `python3 scripts/ayrinti/durum.py` yazar (2026-11-06). Elle düzenle
 |---|---|---|
 | Guernica | Pablo Picasso | ✓ 6 nokta |
 
-### Dada · 1 / 1
+### Dada · 3 / 3
 
 | Eser | Sanatçı | Durum |
 |---|---|---|
 | Weimar Cumhuriyeti'nin Bira Göbeğini Mutfak Bıçağıyla Kesmek | Hannah Höch | ✓ 6 nokta |
+| Boyun Eğiş | Hannah Höch | ✓ 5 nokta |
+| Manzara (Fovist Manzara) | Man Ray | ✓ 5 nokta |
 
 ### Sürrealizm · 2 / 2
 

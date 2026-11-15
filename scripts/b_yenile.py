@@ -44,6 +44,11 @@ def main():
     B.mkdir(parents=True, exist_ok=True)
     adlar = sorted(set(json.loads((KOK / 'data' / 'yerel_gorseller.json').read_text())['gorseller'].values()))
     liste = set(json.loads(LISTE.read_text()).get('adlar', [])) if LISTE.exists() else set()
+    # İş 178: daha büyük dosyası bulunan (data/gorsel_iyilestirme.json) görsellerde yeni fotoğrafın kadrajı farklı olabilir;
+    # 1280'lik büyük olsa da oranı en büyük kopyadan binde 3'ten çok farklıysa yeniden üretilir (görüntüleyici 1280'likten en
+    # büyük kopyaya geçerken tablo kaymasın, rehberli incelemenin noktaları ikisinde de aynı yere düşsün).
+    iy_yolu = KOK / 'data' / 'gorsel_iyilestirme.json'
+    iyilesen = set(json.loads(iy_yolu.read_text()).get('gorseller', {})) if iy_yolu.exists() else set()
     yenilenen = atlanan = 0
     for n, ad in enumerate(adlar, 1):
         d = DEVASA / f'{ad}.jpg'
@@ -51,10 +56,16 @@ def main():
             continue
         b = B / f'{ad}.jpg'
         bb = boyut(b) if b.exists() else None
+        kadraj = False
         if bb and max(bb) >= KUCUK:
-            continue
+            if ad not in iyilesen:
+                continue
+            db = boyut(d)
+            if not db or abs((db[0] / db[1]) / (bb[0] / bb[1]) - 1) <= 0.003:
+                continue
+            kadraj = True
         db = boyut(d)
-        if not db or (bb and max(db) <= max(bb) * 1.05):
+        if not db or (bb and not kadraj and max(db) <= max(bb) * 1.05):
             atlanan += 1  # en büyük kopya elimizdekinden anlamlı büyük değil
             continue
         if dene:

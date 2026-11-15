@@ -1,0 +1,4 @@
+{
+ "aciklama": "Görseli data/gorsel_iyilestirme.json ile daha büyük bir dosyaya geçecek başyapıtların yeni kadraja göre dönüştürülmüş noktaları (İş 178). Görsel R2'de yenilenince (gorsel_kaynagi.json'da sürümü değişince) scripts/ayrinti/yardimci/koordinat_uygula.py bunları data/eser_ayrintilari.json'a yazar ve kaydı buradan siler.",
+ "eserler": {}
+}
