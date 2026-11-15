@@ -2328,3 +2328,12 @@ kamera taşıyor (`transform`) ve CSS, kamerayla çakışmasın diye eğimin dö
 yalnız ışık ve ad oynuyordu. Şimdi kamera her karede eğimi `js/egim.js`'ten (`egimDegeri`) okur: resim telefonla en çok 14 px kayar ve
 ekranın ortası çevresinde en çok 3° döner (perspektifli). Kenar görünmesin diye eğim açıkken resim ekrandan her yana 26 px taşar (kamera
 kenarı bu payla sınırlar); eğim kapalıyken kamera eskisi gibi. Test: `tests/e2e/egim.spec.js` (jiroskop olayıyla resmin dönmesi).
+
+### İş 182 · Bugün'de "Hareketi aç" yazısız simge anahtarı (sürüm 1.82.2)
+
+Emre: "ana sayfada Hareketi aç tuşu kalkmış, geri ekle ama yazı olarak değil, sadece simge olarak". Düğme yalnız iOS izni unuttuğunda
+çıkıyor, izin verilince ya da iOS hatırlıyorsa kayboluyordu. Şimdi tablonun sağ üstünde ("Ben"in altında) yazısız, yuvarlak bir simge
+anahtarı hep durur: hareket açıkken simge okra diskte (`aria-pressed="true"`, "Hareketi kapat"), kapalıyken diski boş ("Hareketi aç").
+Dokununca hareket kapanır ya da (gerekirse iOS izni istenerek) açılır; seçim Ayarlar'daki "Telefonu eğince tablo oynasın" ayarına yazılır.
+Hareket azaltma açıksa ya da cihazda algılayıcı yoksa anahtar görünmez. `js/egim.js` bu düğmenin dokunuşunu artık yönetmez
+(`data-egim-anahtar`); Pekiştir ve sergi duvarındaki düğmeler eskisi gibi. Test: `tests/e2e/egim.spec.js`.

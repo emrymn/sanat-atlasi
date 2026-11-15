@@ -40,9 +40,14 @@ test('Bugün: izin unutulmuşsa “Hareketi aç” düğmesi; dokununca tablo d�
   await page.locator('.bugun-ust .etiket').click();
   await expect(kutu).not.toHaveClass(/egimli/);
   await expect(dugme).toBeVisible();
+  await expect(dugme).toHaveAttribute('aria-pressed', 'false');
+  await expect(dugme).toHaveAttribute('aria-label', 'Hareketi aç');
+  await expect(dugme).toHaveText('');
   await dugme.click();
   await expect(kutu).toHaveClass(/egimli/);
-  await expect(dugme).toBeHidden();
+  // İş 182: düğme kalkmaz; yazısız simge anahtarı basılı kalır
+  await expect(dugme).toBeVisible();
+  await expect(dugme).toHaveAttribute('aria-pressed', 'true');
   await donus(page, 80, 0.4); // sağa çevir
   const deger = (ad) => kutu.evaluate((el, a) => parseFloat(el.style.getPropertyValue(a)) || 0, ad);
   // ad tablodan geride kalır (daha yavaş izler), ama o da sağa kayar
@@ -81,7 +86,10 @@ test('Bugün: iOS izni hatırlıyorsa düğme çıkmaz, hareket hemen başlar', 
   await iPhoneIzni(context, true);
   await page.goto('./#/');
   await expect(page.locator('[data-gunun-gorsel]')).toHaveClass(/egimli/);
-  await expect(page.locator('[data-egim-dugme]')).toBeHidden();
+  // İş 182: simge anahtar hep durur, basılı; dokununca hareket kapanır ve ayara yazılır, yeniden dokununca açılır
+  const anahtar = page.locator('[data-egim-dugme]');
+  await expect(anahtar).toBeVisible();
+  await expect(anahtar).toHaveAttribute('aria-pressed', 'true');
   // İş 181: yürüyüşlü Bugün'de resmi kamera taşır; eğim de kameranın içinde: resim kayar ve döner
   const resim = page.locator('.bugun-yuruyus .yur-sahne > img');
   await expect(resim).toBeVisible();
@@ -90,6 +98,13 @@ test('Bugün: iOS izni hatırlıyorsa düğme çıkmaz, hareket hemen başlar', 
   await donus(page, 80, 0.4);
   await expect.poll(transform).toMatch(/rotateY\(\d/);
   expect(await transform()).not.toBe(once);
+  await anahtar.click();
+  await expect(page.locator('[data-gunun-gorsel]')).not.toHaveClass(/egimli/);
+  await expect(anahtar).toHaveAttribute('aria-pressed', 'false');
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem('sanat-atlasi:ilerleme')).ayarlar.egim)).toBe(false);
+  await anahtar.click();
+  await expect(page.locator('[data-gunun-gorsel]')).toHaveClass(/egimli/);
+  await expect(anahtar).toHaveAttribute('aria-pressed', 'true');
   await page.goto('./#/ayarlar');
   await expect(page.locator('[data-ayar-egim]')).toBeChecked();
   await expect(page.locator('[data-egim-izin]')).toBeHidden();
