@@ -462,7 +462,9 @@ def main():
     yenilenecek = 0
     for ad, iy in iyilestirme.items():
         yol = HEDEF / f'{ad}.jpg'
-        beklenen = min(EN_BUYUK, max(iy['g'], iy['y']))
+        # İş 178: Commons özgünden genişse 3840 px küçük resmi verir (commons_adresleri); yatay görselde uzun kenar 3840
+        # kalır, 4096'ya hiç ulaşmaz: beklenen boy indirilecek adresin boyu, yoksa her çalıştırmada yeniden inerdi
+        beklenen = min(EN_BUYUK, max([b for _, b in commons_adresleri(iy['dosya'], [iy['g'], iy['y']])] or [max(iy['g'], iy['y'])]))
         b = boyut(yol) if yol.exists() else None
         if b and max(b) < beklenen * 0.95:
             yol.replace(yol.with_suffix('.eski'))  # yenisi inemezse geri konur
